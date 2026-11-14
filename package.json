@@ -2,7 +2,7 @@
   "name": "kimya-yks-3d",
   "private": true,
   "version": "1.0.0",
-  "description": "TYT & AYT Kimya 3D Molekül & Kristal Simülasyonu, 216 Görselli Konu Slaytı, 62 Deneme Sınavı & Çevrimdışı 8 Dilli Eğitim Platformu (3072 Soru)",
+  "description": "TYT & AYT Kimya 3D Molekül & Kristal Simülasyonu, 216 Görselli Konu Slaytı, 80 Deneme Sınavı (40 TYT + 40 AYT) & Çevrimdışı 8 Dilli Eğitim Platformu (3072 Soru/Dil)",
   "type": "module",
   "scripts": {
     "dev": "vite",
