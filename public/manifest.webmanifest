@@ -1,0 +1,21 @@
+{
+  "name": "Kimya YKS 3D — TYT & AYT Kimya Laboratuvarı",
+  "short_name": "Kimya 3D",
+  "description": "TYT ve AYT Kimya tüm konular, 3D moleküler simülasyonlar, flashcardlar, mini oyunlar ve 3072 soruluk çevrimdışı sınav platformu.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b0f19",
+  "theme_color": "#0b0f19",
+  "lang": "tr",
+  "categories": ["education", "science", "games"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

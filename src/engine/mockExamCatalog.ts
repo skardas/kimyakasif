@@ -1,0 +1,713 @@
+import { L } from '../data/units/L';
+import { compileUnitQuestions } from './questionGenerator';
+import type {
+  CompiledQuestion,
+  LanguageCode,
+  LocalizedText,
+  MockExamCategory,
+  MockExamDefinition,
+  MockExamDifficultyTier,
+} from '../types/chemistry';
+import type { ChemistryUnitSeedData } from '../data/units/types';
+
+export interface MockExamSeedSpec {
+  id: string;
+  category: MockExamCategory;
+  examNumber: number;
+  difficultyTier: MockExamDifficultyTier;
+  questionCount: number;
+  durationMinutes: number;
+  accentColor: string;
+  visualFocus?: boolean;
+  unitIds?: string[];
+  title: LocalizedText;
+  subtitle: LocalizedText;
+  customBadge?: LocalizedText;
+}
+
+const TIER_BADGES: Record<MockExamDifficultyTier, LocalizedText> = {
+  temel: L(
+    'Temel & Kavram',
+    'Foundation & Core',
+    'Basis & Konzepte',
+    'Base & Concepts',
+    'База и понятия',
+    'تأسيسي ومفاهيم',
+    '基础与概念巩固',
+    'Bingehîn & Têgeh'
+  ),
+  standart: L(
+    'Standart Karma',
+    'Standard Exam Mix',
+    'Prüfungsstandard',
+    'Standard Examen',
+    'Стандарт экзамена',
+    'المستوى القياسي',
+    '标准大纲分布',
+    'Standarda Ezmûnê'
+  ),
+  ileri: L(
+    'İleri & Şekilli',
+    'Advanced & Visual',
+    'Fortgeschritten & Grafik',
+    'Avancé & Schémas',
+    'Продвинутый и схемы',
+    'متقدم ومصوّر',
+    '进阶与图表解析',
+    'Pêşketî & bi Şema'
+  ),
+  'osym-prova': L(
+    'TG Derece Provası',
+    'Top-Rank Rehearsal',
+    'Spitzenrang-Probe',
+    'Simulation Élite',
+    'Генеральная проба',
+    'بروفة التفوق العام',
+    '全国高分冲刺模考',
+    'Provaya Dereceyê'
+  ),
+};
+
+const VISUAL_BADGE: LocalizedText = L(
+  '%100 Şekilli & Grafikli',
+  '100% Visual & Diagrams',
+  '100 % Diagramme & Grafiken',
+  '100 % Schémas & Graphiques',
+  '100% Схемы и графики',
+  '100% رسوم ومخططات',
+  '100% 图表与解剖题',
+  '%100 bi Şema & Grafîk'
+);
+
+function resolveBranchTier(n: number): {
+  tier: MockExamDifficultyTier;
+  visualFocus: boolean;
+} {
+  if (n <= 10) return { tier: 'temel', visualFocus: false };
+  if (n <= 25) return { tier: 'standart', visualFocus: false };
+  if (n <= 35) return { tier: 'ileri', visualFocus: true };
+  return { tier: 'osym-prova', visualFocus: false };
+}
+
+function buildTytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
+  switch (tier) {
+    case 'temel':
+      return L(
+        'Temel & kavram oturtma: Kimya bilimi, atom, periyodik sistem, güçlü/zayıf bağlar, maddenin halleri ve karışımlar.',
+        'Core concept mastery: Chemistry as science, atomic structure, bonds, states of matter and mixtures.',
+        'Grundlagen & Konzepte: Chemie als Wissenschaft, Atomstruktur, Bindungen, Aggregatzustände und Gemische.',
+        'Maîtrise des concepts : Chimie science, atome, liaisons chimiques, états de la matière et mélanges.',
+        'Базовые понятия: Химия как наука, строение атома, связи, агрегатные состояния и смеси.',
+        'ترسيخ المفاهيم الأساسية: علم الكيمياء، الذرة، الروابط الكيميائية، حالات المادة والمخاليط.',
+        '基础与核心概念巩固：化学科学导论、原子周期律、化学键、物态变化与混合物分离。',
+        'Zanista kîmyayê, atom, bendên kîmyewî, rewşên madeyê û têkelyan.'
+      );
+    case 'standart':
+      return L(
+        'Tam ÖSYM müfredat dengesi: 7 özgün soruyla 9. ve 10. sınıf TYT kimya genel tarama provası.',
+        'Standard ÖSYM exam balance: 7 curated questions spanning Grade 9 & 10 TYT chemistry.',
+        'Standardmäßige ÖSYM-Prüfungsverteilung: 7 kuratierte Fragen für die Klassen 9 und 10.',
+        'Équilibre officiel de l examen : 7 questions types couvrant la chimie de 9e et 10e années.',
+        'Стандартный баланс экзамена: 7 выверенных заданий по химии 9–10 классов.',
+        'توزيع قياسي وفق معايير الاختبار: 7 أسئلة متوازنة في كيمياء الصفين التاسع والعاشر.',
+        '标准大纲权重分布：7 道严选全真模拟题，覆盖高一高二基础化学全部核心考点。',
+        '7 pirsên orîjînal ji bo pola 9 û 10 a kîmyaya TYT.'
+      );
+    case 'ileri':
+      return L(
+        '%100 Şekilli & grafikli: Laboratuvar düzenekleri, Bohr yörüngeleri, faz grafikleri ve pistonlu kaplar.',
+        '100% Visual & diagrams: Laboratory apparatus, Bohr orbits, phase diagrams and piston cylinders.',
+        '100 % Visuell & Grafiken: Laboraufbauten, Bohr-Orbitale, Phasendiagramme und Kolbenbehälter.',
+        '100 % Schémas et graphiques : Verrerie de labo, modèle de Bohr, diagrammes de phase et pistons.',
+        '100% Схемы и графики: Лабораторная посуда, орбиты Бора, фазовые диаграммы и поршневые сосуды.',
+        '100% أسئلة مصوّرة ومخططات: أجهزة المختبر، مدارات بور، منحنيات الأطوار والأسطوانات المزودة بمكبس.',
+        '100% 图表与实验装置：化学实验仪器、玻尔原子轨道、相变曲线与活塞汽缸模型。',
+        '100% bi Şema û Grafîk: Amûrên laboratûwarê, gerîneyên Bohr, grafîkên fazê û piston.'
+      );
+    case 'osym-prova':
+      return L(
+        'Türkiye Geneli Derece Provası: Tuzaklı kazanımlar, molekül polarlığı, mol hesapları ve asit-baz tuzakları.',
+        'National Rank Simulation: Tricky traps, molecular polarity, mole stoichiometry and acid-base metal reactions.',
+        'Nationale Rang-Simulation: Prüfungsfallen, Molekülpolarität, Molrechnungen und Säure-Base-Metalle.',
+        'Simulation Concours National : Pièges d examen, polarité, stœchiométrie et réactions acides-métaux.',
+        'Генеральная репетиция национального уровня: Ловушки, полярность молекул, расчеты молей и реакции кислот.',
+        'محاكاة اختبار التفوق الوطني: أسئلة الفخاخ، قطبية الجزيئات، حسابات المولات وتفاعلات الأحماض مع المعادن.',
+        '全国排位模拟大考：全真陷阱命题、分子极性辨析、摩尔计算与金属酸碱反应深度综合。',
+        'Provaya Dereceyê ya Giştî ya Tirkiyeyê: Xefikên azmûnê, molekul û bertekên asîd-metal.'
+      );
+  }
+}
+
+function buildAytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
+  switch (tier) {
+    case 'temel':
+      return L(
+        'Temel & kavram oturtma: Kuantum orbitalleri, ideal gaz yasası, molarite, entalpi ve denge bağıntısı.',
+        'Core concept mastery: Quantum orbitals, ideal gas law, molarity, enthalpy and equilibrium expressions.',
+        'Grundlagen & Konzepte: Quantenorbitale, ideales Gasgesetz, Molarität, Enthalpie und Gleichgewichtskonstante.',
+        'Maîtrise des concepts : Orbitales quantiques, gaz parfaits, molarité, enthalpie et constante d équilibre.',
+        'Базовые понятия: Квантовые орбитали, закон идеального газа, молярность, энтальпия и константа равновесия.',
+        'ترسيخ المفاهيم الأساسية: المدارات الكمومية، قانون الغاز المثالي، المولارية، الإنثالبيا وثابت الاتزان.',
+        '基础与核心概念巩固：量子轨道理论、理想气体定律、摩尔浓度、反应热焓与平衡常数表达。',
+        'Orbîtalên kuantumê, zagona gaza îdeal, molarîte, entalpî û hevsengî.'
+      );
+    case 'standart':
+      return L(
+        'Tam ÖSYM müfredat dengesi: 13 özgün soruyla 11. ve 12. sınıf AYT kimya tam kapsamlı alan provası.',
+        'Standard ÖSYM exam balance: 13 curated questions spanning Grade 11 & 12 AYT chemistry comprehensive test.',
+        'Standardmäßige ÖSYM-Prüfungsverteilung: 13 kuratierte Fragen für die Klassen 11 und 12 im Fach Chemie.',
+        'Équilibre officiel de l examen : 13 questions types couvrant toute la chimie AYT de 11e et 12e années.',
+        'Стандартный баланс экзамена: 13 заданий полного охвата химии 11–12 классов экзамена AYT.',
+        'توزيع قياسي وفق معايير الاختبار: 13 سؤالاً متكاملاً تغطي منهج الكيمياء للصفين الحادي عشر والثاني عشر.',
+        '标准大纲权重分布：13 道全真模拟试题，覆盖高二高三高考进阶化学全部重点领域。',
+        '13 pirsên orîjînal ji bo pola 11 û 12 a kîmyaya AYT.'
+      );
+    case 'ileri':
+      return L(
+        '%100 Şekilli & grafikli: Potansiyel enerji eğrileri, Maxwell-Boltzmann, titrasyon büreti, Daniell pili ve Hoffman hücresi.',
+        '100% Visual & diagrams: Potential energy curves, Maxwell-Boltzmann, titration burettes, Daniell cells and Hoffman voltameter.',
+        '100 % Visuell & Grafiken: Potenzialenergiekurven, Maxwell-Boltzmann, Titrationsbürette, Daniell-Element und Hofmann-Zelle.',
+        '100 % Schémas et graphiques : Énergie potentielle, Maxwell-Boltzmann, burette de titrage, pile Daniell et cellule de Hoffman.',
+        '100% Схемы и графики: Кривые потенциальной энергии, Максвелл-Больцман, титрование, элемент Даниэля и вольтаметр Гофмана.',
+        '100% أسئلة مصوّرة ومخططات: منحنيات طاقة الوضع، ماكسويل-بولتزمان، سحاحة المعايرة، خلية دانيال وفولتامتر هوفمان.',
+        '100% 图表与微观机理：反应势能曲线、麦克斯韦分布、滴定管装置、丹尼尔原电池与霍夫曼电解器。',
+        '100% bi Şema û Grafîk: Grafîkên enerjiya potansiyel, tîtrasyon, pîla Daniell û elektrolîza Hoffman.'
+      );
+    case 'osym-prova':
+      return L(
+        'Türkiye Geneli Derece Provası: Nernst denklemi, Kçç ortak iyon, Le Chatelier şokları, VSEPR ve Markovnikov mekanizmaları.',
+        'National Rank Simulation: Nernst equation, Ksp common ion, Le Chatelier shifts, VSEPR and Markovnikov mechanisms.',
+        'Nationale Rang-Simulation: Nernst-Gleichung, Ksp-Gemeinsamer-Ion-Effekt, Le Chatelier, VSEPR und Markovnikov.',
+        'Simulation Concours National : Équation de Nernst, effet d ion commun Ksp, Le Chatelier, VSEPR et Markovnikov.',
+        'Генеральная репетиция национального уровня: Уравнение Нернста, одноименный ион Ksp, Ле Шателье, VSEPR и Марковников.',
+        'محاكاة اختبار التفوق الوطني: معادلة نيرنست، الأيون المشترك Ksp، مبدأ لوشاتيليه، أشكال VSEPR وقاعدة ماركوفنيكوف.',
+        '全国排位模拟大考：能斯特方程计算、同离子沉淀溶解平衡、勒夏特列移动、VSEPR杂化与马氏加成全真压轴。',
+        'Provaya Dereceyê ya Giştî ya Tirkiyeyê: Hevkêşeya Nernst, bandora îyona hevpar di Kçç de û Markovnikov.'
+      );
+  }
+}
+
+// Exactly 40 TYT Practice Exams (7 questions each)
+const TYT_SPECS: MockExamSeedSpec[] = Array.from({ length: 40 }, (_, i) => {
+  const n = i + 1;
+  const padded = String(n).padStart(2, '0');
+  const { tier, visualFocus } = resolveBranchTier(n);
+  const colors: Record<MockExamDifficultyTier, string> = {
+    temel: '#0d9488',
+    standart: '#3b82f6',
+    ileri: '#06b6d4',
+    'osym-prova': '#8b5cf6',
+  };
+  return {
+    id: `tyt-trial-${padded}`,
+    category: 'TYT_BRANCH',
+    examNumber: n,
+    difficultyTier: tier,
+    questionCount: 7,
+    durationMinutes: 10,
+    accentColor: colors[tier],
+    visualFocus,
+    title: L(
+      `TYT Kimya Branş Denemesi #${n}`,
+      `TYT Chemistry Branch Mock #${n}`,
+      `TYT Chemie Fachprobe #${n}`,
+      `Examen Blanc TYT Chimie #${n}`,
+      `Пробный экзамен TYT Химия №${n}`,
+      `اختبار TYT التجريبي في الكيمياء #${n}`,
+      `TYT 化学专项模考 #${n}`,
+      `Denemeya Branşê ya Kîmyaya TYT #${n}`
+    ),
+    subtitle: buildTytSubtitle(tier),
+  };
+});
+
+// Exactly 40 AYT Practice Exams (13 questions each)
+const AYT_SPECS: MockExamSeedSpec[] = Array.from({ length: 40 }, (_, i) => {
+  const n = i + 1;
+  const padded = String(n).padStart(2, '0');
+  const { tier, visualFocus } = resolveBranchTier(n);
+  const colors: Record<MockExamDifficultyTier, string> = {
+    temel: '#059669',
+    standart: '#6366f1',
+    ileri: '#f59e0b',
+    'osym-prova': '#ec4899',
+  };
+  return {
+    id: `ayt-trial-${padded}`,
+    category: 'AYT_BRANCH',
+    examNumber: n,
+    difficultyTier: tier,
+    questionCount: 13,
+    durationMinutes: 20,
+    accentColor: colors[tier],
+    visualFocus,
+    title: L(
+      `AYT Kimya Branş Denemesi #${n}`,
+      `AYT Chemistry Branch Mock #${n}`,
+      `AYT Chemie Fachprobe #${n}`,
+      `Examen Blanc AYT Chimie #${n}`,
+      `Пробный экзамен AYT Химия №${n}`,
+      `اختبار AYT التجريبي في الكيمياء #${n}`,
+      `AYT 化学专项模考 #${n}`,
+      `Denemeya Branşê ya Kîmyaya AYT #${n}`
+    ),
+    subtitle: buildAytSubtitle(tier),
+  };
+});
+
+export const ALL_MOCK_EXAM_SPECS: MockExamSeedSpec[] = [
+  ...TYT_SPECS,
+  ...AYT_SPECS,
+];
+
+// Mulberry32 deterministic pseudo-random generator
+function mulberry32(seed: number): () => number {
+  return function () {
+    let t = (seed += 0x6d2b79f5);
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function hashSeed(str: string): number {
+  let hash = 1779033703 ^ str.length;
+  for (let i = 0; i < str.length; i++) {
+    hash = Math.imul(hash ^ str.charCodeAt(i), 3432918353);
+    hash = (hash << 13) | (hash >>> 19);
+  }
+  return hash >>> 0;
+}
+
+function seededShuffle<T>(array: readonly T[], rng: () => number): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    const tmp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = tmp;
+  }
+  return arr;
+}
+
+function scoreCandidate(
+  q: CompiledQuestion,
+  tier: MockExamDifficultyTier,
+  visualFocus: boolean,
+  jitter: number
+): number {
+  const hasDiagram = q.diagram !== undefined;
+  let score = jitter;
+
+  if (visualFocus && hasDiagram) {
+    score += 1000;
+  }
+
+  switch (tier) {
+    case 'temel':
+      if (q.difficulty === 'easy') score += 50;
+      else if (q.difficulty === 'medium') score += 35;
+      else if (q.difficulty === 'hard') score += 10;
+      else score += 15;
+      if (!hasDiagram) score += 15;
+      break;
+    case 'standart':
+      if (q.difficulty === 'medium') score += 40;
+      else if (q.difficulty === 'hard') score += 35;
+      else if (q.difficulty === 'osym') score += 35;
+      else score += 20;
+      break;
+    case 'ileri':
+      if (hasDiagram) score += 1000;
+      if (q.difficulty === 'hard') score += 45;
+      else if (q.difficulty === 'osym') score += 40;
+      else if (q.difficulty === 'medium') score += 25;
+      break;
+    case 'osym-prova':
+      if (q.difficulty === 'osym') score += 50;
+      else if (q.difficulty === 'hard') score += 45;
+      else if (q.difficulty === 'medium') score += 20;
+      if (hasDiagram) score += 25;
+      break;
+  }
+
+  return score;
+}
+
+function pickBestFromUnit(
+  pool: CompiledQuestion[],
+  seedKey: string,
+  tier: MockExamDifficultyTier,
+  visualFocus: boolean,
+  usedIds: Set<string>
+): CompiledQuestion | null {
+  if (pool.length === 0) return null;
+  const rng = mulberry32(hashSeed(seedKey));
+  const ranked = pool
+    .map((q) => ({ q, s: scoreCandidate(q, tier, visualFocus, rng() * 10) }))
+    .sort((a, b) => b.s - a.s);
+
+  const unused = ranked.find((entry) => !usedIds.has(entry.q.id));
+  const chosen = (unused ?? ranked[0]).q;
+  usedIds.add(chosen.id);
+  return chosen;
+}
+
+// TYT Chemistry units are u01 through u10
+const TYT_UNIT_IDS = ['u01', 'u02', 'u03', 'u04', 'u05', 'u06', 'u07', 'u08', 'u09', 'u10'];
+
+// AYT Chemistry units are u11 through u24
+const AYT_UNIT_IDS = [
+  'u11', 'u12', 'u13', 'u14', 'u15', 'u16', 'u17',
+  'u18', 'u19', 'u20', 'u21', 'u22', 'u23', 'u24'
+];
+
+/**
+ * Builds the 7 questions for a specific TYT trial by sampling across 7 distinct TYT units.
+ */
+function buildTytTrialQuestions(
+  spec: MockExamSeedSpec,
+  getPool: (uId: string) => CompiledQuestion[],
+  usedIds: Set<string>
+): CompiledQuestion[] {
+  const rng = mulberry32(hashSeed(spec.id));
+  // Deterministically rotate/shuffle 7 distinct units from the 10 TYT units
+  const offset = (spec.examNumber - 1) % TYT_UNIT_IDS.length;
+  const rotated = [
+    ...TYT_UNIT_IDS.slice(offset),
+    ...TYT_UNIT_IDS.slice(0, offset),
+  ];
+  // Select first 7 units
+  const chosenUnits = rotated.slice(0, 7);
+
+  const picked: CompiledQuestion[] = [];
+  for (let i = 0; i < chosenUnits.length; i++) {
+    const uId = chosenUnits[i];
+    const q = pickBestFromUnit(
+      getPool(uId),
+      `${spec.id}::slot${i}`,
+      spec.difficultyTier,
+      Boolean(spec.visualFocus),
+      usedIds
+    );
+    if (q) picked.push(q);
+  }
+
+  return picked.sort((a, b) => {
+    const numA = parseInt(a.unitId.replace('u', ''), 10);
+    const numB = parseInt(b.unitId.replace('u', ''), 10);
+    return numA - numB;
+  });
+}
+
+/**
+ * Builds the 13 questions for a specific AYT trial by sampling across 13 distinct AYT units (out of 14).
+ */
+function buildAytTrialQuestions(
+  spec: MockExamSeedSpec,
+  getPool: (uId: string) => CompiledQuestion[],
+  usedIds: Set<string>
+): CompiledQuestion[] {
+  const rng = mulberry32(hashSeed(spec.id));
+  // Deterministically rotate/shuffle 13 distinct units from the 14 AYT units
+  const skipIndex = (spec.examNumber - 1) % AYT_UNIT_IDS.length;
+  const chosenUnits = AYT_UNIT_IDS.filter((_, idx) => idx !== skipIndex);
+
+  const picked: CompiledQuestion[] = [];
+  for (let i = 0; i < chosenUnits.length; i++) {
+    const uId = chosenUnits[i];
+    const q = pickBestFromUnit(
+      getPool(uId),
+      `${spec.id}::slot${i}`,
+      spec.difficultyTier,
+      Boolean(spec.visualFocus),
+      usedIds
+    );
+    if (q) picked.push(q);
+  }
+
+  return picked.sort((a, b) => {
+    const numA = parseInt(a.unitId.replace('u', ''), 10);
+    const numB = parseInt(b.unitId.replace('u', ''), 10);
+    return numA - numB;
+  });
+}
+
+/**
+ * Retrieves the full 80 mock exams catalog localized to the specified language.
+ */
+export function getMockExamCatalog(lang: LanguageCode = 'tr'): MockExamDefinition[] {
+  return ALL_MOCK_EXAM_SPECS.map((spec) => ({
+    id: spec.id,
+    category: spec.category,
+    examNumber: spec.examNumber,
+    title: spec.title[lang] || spec.title.tr,
+    subtitle: spec.subtitle[lang] || spec.subtitle.tr,
+    badgeText: (spec.customBadge ?? TIER_BADGES[spec.difficultyTier])[lang] || TIER_BADGES[spec.difficultyTier].tr,
+    difficultyTier: spec.difficultyTier,
+    questionCount: spec.questionCount,
+    durationMinutes: spec.durationMinutes,
+    accentColor: spec.accentColor,
+    visualFocus: spec.visualFocus,
+  }));
+}
+
+/**
+ * Compiles and assembles the exact questions for any specified mock exam.
+ * Returns 7 questions for TYT trials, 13 questions for AYT trials.
+ */
+export function buildMockExamQuestions(
+  examId: string,
+  units: ChemistryUnitSeedData[],
+  lang: LanguageCode = 'tr'
+): CompiledQuestion[] {
+  const spec =
+    ALL_MOCK_EXAM_SPECS.find((s) => s.id === examId) ??
+    (examId === TG_PROVA_SPEC.id ? TG_PROVA_SPEC : ALL_MOCK_EXAM_SPECS[0]);
+  const unitById = new Map(units.map((u) => [u.id, u]));
+  const compiledCache = new Map<string, CompiledQuestion[]>();
+
+  const getPool = (uId: string): CompiledQuestion[] => {
+    const cached = compiledCache.get(uId);
+    if (cached) return cached;
+    const u = unitById.get(uId);
+    const built = u ? compileUnitQuestions(u, lang) : [];
+    compiledCache.set(uId, built);
+    return built;
+  };
+
+  const usedIds = new Set<string>();
+
+  if (spec.id === TG_PROVA_SPEC.id || spec.category === 'YKS_FULL') {
+    return buildTgProvaQuestions(units, lang);
+  }
+
+  if (spec.category === 'TYT_BRANCH') {
+    return buildTytTrialQuestions(spec, getPool, usedIds);
+  }
+
+  if (spec.category === 'AYT_BRANCH') {
+    return buildAytTrialQuestions(spec, getPool, usedIds);
+  }
+
+  return [];
+}
+
+export interface TgPercentileResult {
+  netScore: number;
+  percentile: number;
+  percentileFormatted: string;
+  estimatedRankRange: string;
+  tierTitle: string;
+  tierColor: string;
+  badgeIcon: string;
+  feedbackMessage: string;
+}
+
+export const TG_PROVA_SPEC: MockExamSeedSpec = {
+  id: 'tg-derece-provası',
+  category: 'YKS_FULL',
+  examNumber: 1,
+  difficultyTier: 'osym-prova',
+  questionCount: 20,
+  durationMinutes: 30,
+  accentColor: '#f59e0b',
+  visualFocus: true,
+  title: L(
+    'Türkiye Geneli YKS Kimya Derece Provası',
+    'Nationwide YKS Chemistry Elite Trial Exam',
+    'Bundesweite YKS Chemie Spitzenrang-Probe',
+    'Examen Blanc National YKS Chimie Élite',
+    'Всероссийская проба YKS Химия Высший ранг',
+    'بروفة التفوق العامة لامتحان YKS كيمياء',
+    '全境 YKS 化学全国高分模拟统考',
+    'Provaya Giştî ya Tirkiyeyê ya Kîmyayê ya Dereceyê'
+  ),
+  subtitle: L(
+    '20 Soru (7 TYT + 13 AYT) • 30 Dakika • Gerçek YKS Zorluğu & ÖSYM Yüzdelik Dilim Tahmini',
+    '20 Questions (7 TYT + 13 AYT) • 30 Minutes • Realistic YKS Difficulty & Rank Percentile Estimation',
+    '20 Fragen (7 TYT + 13 AYT) • 30 Minuten • Reale Prüfungsschwere & Perzentil-Schätzung',
+    '20 Questions (7 TYT + 13 AYT) • 30 Minutes • Difficulté Réelle & Estimation de Rang',
+    '20 Вопросов (7 TYT + 13 AYT) • 30 Минут • Реальная сложность и расчет процентиля',
+    '20 سؤالاً (7 TYT + 13 AYT) • 30 دقيقة • صعوبة حقيقية وحساب النسبة المئوية',
+    '20 题（7 题 TYT + 13 题 AYT）• 30 分钟 • 真实大考难度与全国位次估算',
+    '20 Pirs (7 TYT + 13 AYT) • 30 Xulek • Zehmetiya Rastîn & Texmîna Rêzê'
+  ),
+  customBadge: L(
+    '🏆 TG Derece Provası',
+    '🏆 Elite National Trial',
+    '🏆 Spitzenrang-Probe',
+    '🏆 Élite Nationale',
+    '🏆 Высший ранг',
+    '🏆 بروفة التفوق',
+    '🏆 全国精英冲刺',
+    '🏆 Provaya Dereceyê'
+  ),
+};
+
+export function estimateTgPercentile(netScore: number): TgPercentileResult {
+  const net = Number(netScore.toFixed(2));
+  if (net >= 19.5) {
+    return {
+      netScore: net,
+      percentile: 0.05,
+      percentileFormatted: 'İlk %0.05',
+      estimatedRankRange: 'İlk 500',
+      tierTitle: 'Şampiyonlar Ligi & Türkiye Derecesi',
+      tierColor: '#f59e0b',
+      badgeIcon: '👑',
+      feedbackMessage: 'Kusursuz performans! Türkiye genelinde ilk 500 bandında, zirvede bir sonuç.',
+    };
+  }
+  if (net >= 18.0) {
+    return {
+      netScore: net,
+      percentile: 0.8,
+      percentileFormatted: 'İlk %0.8',
+      estimatedRankRange: '500 - 2.500',
+      tierTitle: 'Tıp Fakülteleri & Boğaziçi / ODTÜ Düzeyi',
+      tierColor: '#10b981',
+      badgeIcon: '🏆',
+      feedbackMessage: 'Olağanüstü başarı! Hedeflediğin en prestijli tıp ve mühendislik bölümleri için fazlasıyla yeterli.',
+    };
+  }
+  if (net >= 16.0) {
+    return {
+      netScore: net,
+      percentile: 2.5,
+      percentileFormatted: 'İlk %2.5',
+      estimatedRankRange: '2.500 - 8.000',
+      tierTitle: 'Prestijli Mühendislik & Diş / Eczacılık',
+      tierColor: '#3b82f6',
+      badgeIcon: '🥇',
+      feedbackMessage: 'Çok güçlü bir net! İlk 10.000 derece bandındasın, 1-2 küçük eksiği Hata Defteri ile kapattığında zirvedesin.',
+    };
+  }
+  if (net >= 13.5) {
+    return {
+      netScore: net,
+      percentile: 6.0,
+      percentileFormatted: 'İlk %6.0',
+      estimatedRankRange: '8.000 - 18.000',
+      tierTitle: 'Üst Düzey Başarı Dilimi',
+      tierColor: '#8b5cf6',
+      badgeIcon: '🥈',
+      feedbackMessage: "Harika bir temel! Türkiye genelinde adayların %94'ünü geride bıraktın.",
+    };
+  }
+  if (net >= 10.0) {
+    return {
+      netScore: net,
+      percentile: 15.0,
+      percentileFormatted: 'İlk %15.0',
+      estimatedRankRange: '18.000 - 45.000',
+      tierTitle: 'Güçlü Temel & Gelişime Açık',
+      tierColor: '#06b6d4',
+      badgeIcon: '🎯',
+      feedbackMessage: 'Temel kavramlar sağlam. AYT denge, elektrokimya ve organik reaksiyon tekrarlarıyla netini hızla artırabilirsin.',
+    };
+  }
+  if (net >= 6.0) {
+    return {
+      netScore: net,
+      percentile: 35.0,
+      percentileFormatted: 'İlk %35.0',
+      estimatedRankRange: '45.000 - 100.000',
+      tierTitle: 'Temel Yeterlilik Düzeyi',
+      tierColor: '#eab308',
+      badgeIcon: '📚',
+      feedbackMessage: 'Konu eksiklerini tamamlama aşamasındasın. Görsel ders slaytlarını ve ünite test setlerini çözmelisin.',
+    };
+  }
+  return {
+    netScore: net,
+    percentile: 55.0,
+    percentileFormatted: 'Alt %50',
+    estimatedRankRange: '100.000+',
+    tierTitle: 'Başlangıç Aşaması',
+    tierColor: '#ef4444',
+    badgeIcon: '🌱',
+    feedbackMessage: 'Düzenli konu çalışması ve flashcard tekrarlarıyla kimya netlerini adım adım inşa edeceğiz.',
+  };
+}
+
+export function calculateOsymNet(correct: number, wrong: number): number {
+  return Number((correct - wrong / 4.0).toFixed(2));
+}
+
+/**
+ * Builds the 20 questions for TG Derece Provası:
+ * Exactly 7 TYT questions (from u01..u10) + 13 AYT questions (from u11..u24).
+ * Prioritizes high difficulty ('osym' / 'hard') and diagram questions.
+ */
+export function buildTgProvaQuestions(
+  units: ChemistryUnitSeedData[],
+  lang: LanguageCode = 'tr',
+  seed = 1
+): CompiledQuestion[] {
+  const unitById = new Map(units.map((u) => [u.id, u]));
+  const compiledCache = new Map<string, CompiledQuestion[]>();
+
+  const getPool = (uId: string): CompiledQuestion[] => {
+    const cached = compiledCache.get(uId);
+    if (cached) return cached;
+    const u = unitById.get(uId);
+    const built = u ? compileUnitQuestions(u, lang) : [];
+    compiledCache.set(uId, built);
+    return built;
+  };
+
+  const usedIds = new Set<string>();
+
+  // 7 TYT units sampled from u01..u10
+  const tytOffset = (seed - 1) % TYT_UNIT_IDS.length;
+  const rotatedTyt = [
+    ...TYT_UNIT_IDS.slice(tytOffset),
+    ...TYT_UNIT_IDS.slice(0, tytOffset),
+  ];
+  const chosenTytUnits = rotatedTyt.slice(0, 7);
+
+  // 13 AYT units sampled from u11..u24
+  const aytSkip = (seed - 1) % AYT_UNIT_IDS.length;
+  const chosenAytUnits = AYT_UNIT_IDS.filter((_, idx) => idx !== aytSkip);
+
+  const tytQuestions: CompiledQuestion[] = [];
+  for (let i = 0; i < chosenTytUnits.length; i++) {
+    const uId = chosenTytUnits[i];
+    const q = pickBestFromUnit(
+      getPool(uId),
+      `tg-prova::tyt::slot${i}::seed${seed}`,
+      'osym-prova',
+      true,
+      usedIds
+    );
+    if (q) tytQuestions.push(q);
+  }
+
+  const aytQuestions: CompiledQuestion[] = [];
+  for (let i = 0; i < chosenAytUnits.length; i++) {
+    const uId = chosenAytUnits[i];
+    const q = pickBestFromUnit(
+      getPool(uId),
+      `tg-prova::ayt::slot${i}::seed${seed}`,
+      'osym-prova',
+      true,
+      usedIds
+    );
+    if (q) aytQuestions.push(q);
+  }
+
+  tytQuestions.sort((a, b) => {
+    const numA = parseInt(a.unitId.replace('u', ''), 10);
+    const numB = parseInt(b.unitId.replace('u', ''), 10);
+    return numA - numB;
+  });
+
+  aytQuestions.sort((a, b) => {
+    const numA = parseInt(a.unitId.replace('u', ''), 10);
+    const numB = parseInt(b.unitId.replace('u', ''), 10);
+    return numA - numB;
+  });
+
+  return [...tytQuestions, ...aytQuestions];
+}

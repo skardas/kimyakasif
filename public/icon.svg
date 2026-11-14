@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="116" fill="#0b0f19"/>
+  <!-- Beaker / Flask Silhouette -->
+  <path d="M216 96h80v48h-16l68 180c12 32-12 68-46 68H210c-34 0-58-36-46-68l68-180h-16V96z" fill="#06b6d4" fill-opacity="0.2" stroke="#06b6d4" stroke-width="16" stroke-linejoin="round"/>
+  <!-- Liquid Level with meniscus -->
+  <path d="M192 270c20-6 40 6 64 6s44-12 64-6l32 86c5 14-6 30-22 30H182c-16 0-27-16-22-30l32-86z" fill="#06b6d4" fill-opacity="0.8"/>
+  <!-- Atom Orbit Rings -->
+  <ellipse cx="256" cy="270" rx="90" ry="32" transform="rotate(-30 256 270)" fill="none" stroke="#f59e0b" stroke-width="8" stroke-dasharray="16 8"/>
+  <ellipse cx="256" cy="270" rx="90" ry="32" transform="rotate(30 256 270)" fill="none" stroke="#f59e0b" stroke-width="8" stroke-dasharray="16 8"/>
+  <!-- Atom Nucleus / Sparkle -->
+  <circle cx="256" cy="270" r="14" fill="#fbbf24"/>
+  <circle cx="230" cy="310" r="6" fill="#ffffff" opacity="0.8"/>
+  <circle cx="280" cy="330" r="8" fill="#ffffff" opacity="0.6"/>
+</svg>

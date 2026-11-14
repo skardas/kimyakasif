@@ -1,0 +1,37 @@
+{
+  "name": "kimya-yks-3d",
+  "private": true,
+  "version": "1.0.0",
+  "description": "TYT & AYT Kimya 3D Molekül & Kristal Simülasyonu, 216 Görselli Konu Slaytı, 62 Deneme Sınavı & Çevrimdışı 8 Dilli Eğitim Platformu (3072 Soru)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "tsx scripts/e2eTestRunner.ts",
+    "test:e2e": "tsx scripts/e2eTestRunner.ts",
+    "verify-bank": "npx tsx scripts/verifyBank.ts"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/ios": "^8.6.2",
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/figtree": "^5.3.0",
+    "lucide-react": "^1.72.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.2",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
