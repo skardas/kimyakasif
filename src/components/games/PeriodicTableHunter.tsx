@@ -28,9 +28,12 @@ export interface ElementInfo {
   electronegativity: number | null;
   electronAffinityKj: number;
   metallicCharacter: number; // 1-10 scale
+  /** Table-only element: placed on the hunt grid / used as a hunt target, never drawn for trend duels. */
+  huntOnly?: boolean;
 }
 
-// Canonical dataset including 1-36 and key elements up to Og 118
+// Canonical dataset: Z 1-36, the main-group elements of periods 5-6, key heavy
+// transition metals (Ag, Au, Hg) and the boundary element Og 118.
 const ELEMENTS_DB: ElementInfo[] = [
   { z: 1, symbol: 'H', nameTr: 'Hidrojen', nameEn: 'Hydrogen', period: 1, group: '1A', groupNum: 1, category: 'nonmetal', atomicRadiusPm: 37, ie1Kj: 1312, electronegativity: 2.20, electronAffinityKj: 73, metallicCharacter: 1 },
   { z: 2, symbol: 'He', nameTr: 'Helyum', nameEn: 'Helium', period: 1, group: '8A', groupNum: 18, category: 'noble', atomicRadiusPm: 31, ie1Kj: 2372, electronegativity: null, electronAffinityKj: 0, metallicCharacter: 0 },
@@ -68,14 +71,25 @@ const ELEMENTS_DB: ElementInfo[] = [
   { z: 34, symbol: 'Se', nameTr: 'Selenyum', nameEn: 'Selenium', period: 4, group: '6A', groupNum: 16, category: 'nonmetal', atomicRadiusPm: 116, ie1Kj: 941, electronegativity: 2.55, electronAffinityKj: 195, metallicCharacter: 2.5 },
   { z: 35, symbol: 'Br', nameTr: 'Brom', nameEn: 'Bromine', period: 4, group: '7A', groupNum: 17, category: 'halogen', atomicRadiusPm: 114, ie1Kj: 1140, electronegativity: 2.96, electronAffinityKj: 325, metallicCharacter: 1 },
   { z: 36, symbol: 'Kr', nameTr: 'Kripton', nameEn: 'Krypton', period: 4, group: '8A', groupNum: 18, category: 'noble', atomicRadiusPm: 110, ie1Kj: 1351, electronegativity: 3.00, electronAffinityKj: 0, metallicCharacter: 0 },
-  // Key heavy elements & boundary element Og 118
+  { z: 37, symbol: 'Rb', nameTr: 'Rubidyum', nameEn: 'Rubidium', period: 5, group: '1A', groupNum: 1, category: 'alkali', atomicRadiusPm: 248, ie1Kj: 403, electronegativity: 0.82, electronAffinityKj: 47, metallicCharacter: 9.8, huntOnly: true },
+  { z: 38, symbol: 'Sr', nameTr: 'Stronsiyum', nameEn: 'Strontium', period: 5, group: '2A', groupNum: 2, category: 'alkaline', atomicRadiusPm: 215, ie1Kj: 550, electronegativity: 0.95, electronAffinityKj: 5, metallicCharacter: 7.8, huntOnly: true },
   { z: 47, symbol: 'Ag', nameTr: 'Gümüş', nameEn: 'Silver', period: 5, group: '1B', groupNum: 11, category: 'transition', atomicRadiusPm: 144, ie1Kj: 731, electronegativity: 1.93, electronAffinityKj: 126, metallicCharacter: 6.5 },
+  { z: 49, symbol: 'In', nameTr: 'İndiyum', nameEn: 'Indium', period: 5, group: '3A', groupNum: 13, category: 'post-transition', atomicRadiusPm: 167, ie1Kj: 558, electronegativity: 1.78, electronAffinityKj: 37, metallicCharacter: 5.8, huntOnly: true },
+  { z: 50, symbol: 'Sn', nameTr: 'Kalay', nameEn: 'Tin', period: 5, group: '4A', groupNum: 14, category: 'post-transition', atomicRadiusPm: 140, ie1Kj: 709, electronegativity: 1.96, electronAffinityKj: 107, metallicCharacter: 5.2, huntOnly: true },
+  { z: 51, symbol: 'Sb', nameTr: 'Antimon', nameEn: 'Antimony', period: 5, group: '5A', groupNum: 15, category: 'metalloid', atomicRadiusPm: 140, ie1Kj: 834, electronegativity: 2.05, electronAffinityKj: 101, metallicCharacter: 4, huntOnly: true },
+  { z: 52, symbol: 'Te', nameTr: 'Tellür', nameEn: 'Tellurium', period: 5, group: '6A', groupNum: 16, category: 'metalloid', atomicRadiusPm: 138, ie1Kj: 869, electronegativity: 2.10, electronAffinityKj: 190, metallicCharacter: 3, huntOnly: true },
   { z: 53, symbol: 'I', nameTr: 'İyot', nameEn: 'Iodine', period: 5, group: '7A', groupNum: 17, category: 'halogen', atomicRadiusPm: 133, ie1Kj: 1008, electronegativity: 2.66, electronAffinityKj: 295, metallicCharacter: 1.5 },
+  { z: 54, symbol: 'Xe', nameTr: 'Ksenon', nameEn: 'Xenon', period: 5, group: '8A', groupNum: 18, category: 'noble', atomicRadiusPm: 130, ie1Kj: 1170, electronegativity: 2.60, electronAffinityKj: 0, metallicCharacter: 0, huntOnly: true },
   { z: 55, symbol: 'Cs', nameTr: 'Sezyum', nameEn: 'Caesium', period: 6, group: '1A', groupNum: 1, category: 'alkali', atomicRadiusPm: 265, ie1Kj: 376, electronegativity: 0.79, electronAffinityKj: 45, metallicCharacter: 10 },
   { z: 56, symbol: 'Ba', nameTr: 'Baryum', nameEn: 'Barium', period: 6, group: '2A', groupNum: 2, category: 'alkaline', atomicRadiusPm: 222, ie1Kj: 503, electronegativity: 0.89, electronAffinityKj: 14, metallicCharacter: 8 },
   { z: 79, symbol: 'Au', nameTr: 'Altın', nameEn: 'Gold', period: 6, group: '1B', groupNum: 11, category: 'transition', atomicRadiusPm: 144, ie1Kj: 890, electronegativity: 2.54, electronAffinityKj: 223, metallicCharacter: 5 },
   { z: 80, symbol: 'Hg', nameTr: 'Cıva', nameEn: 'Mercury', period: 6, group: '2B', groupNum: 12, category: 'transition', atomicRadiusPm: 151, ie1Kj: 1007, electronegativity: 2.00, electronAffinityKj: 0, metallicCharacter: 5.5 },
+  { z: 81, symbol: 'Tl', nameTr: 'Talyum', nameEn: 'Thallium', period: 6, group: '3A', groupNum: 13, category: 'post-transition', atomicRadiusPm: 170, ie1Kj: 589, electronegativity: 1.62, electronAffinityKj: 36, metallicCharacter: 6.5, huntOnly: true },
   { z: 82, symbol: 'Pb', nameTr: 'Kurşun', nameEn: 'Lead', period: 6, group: '4A', groupNum: 14, category: 'post-transition', atomicRadiusPm: 175, ie1Kj: 716, electronegativity: 2.33, electronAffinityKj: 35, metallicCharacter: 6 },
+  { z: 83, symbol: 'Bi', nameTr: 'Bizmut', nameEn: 'Bismuth', period: 6, group: '5A', groupNum: 15, category: 'post-transition', atomicRadiusPm: 156, ie1Kj: 703, electronegativity: 2.02, electronAffinityKj: 91, metallicCharacter: 5, huntOnly: true },
+  { z: 84, symbol: 'Po', nameTr: 'Polonyum', nameEn: 'Polonium', period: 6, group: '6A', groupNum: 16, category: 'post-transition', atomicRadiusPm: 168, ie1Kj: 812, electronegativity: 2.00, electronAffinityKj: 136, metallicCharacter: 4.5, huntOnly: true },
+  { z: 85, symbol: 'At', nameTr: 'Astatin', nameEn: 'Astatine', period: 6, group: '7A', groupNum: 17, category: 'halogen', atomicRadiusPm: 150, ie1Kj: 899, electronegativity: 2.20, electronAffinityKj: 233, metallicCharacter: 2, huntOnly: true },
+  { z: 86, symbol: 'Rn', nameTr: 'Radon', nameEn: 'Radon', period: 6, group: '8A', groupNum: 18, category: 'noble', atomicRadiusPm: 145, ie1Kj: 1037, electronegativity: null, electronAffinityKj: 0, metallicCharacter: 0, huntOnly: true },
   { z: 118, symbol: 'Og', nameTr: 'Oganesson', nameEn: 'Oganesson', period: 7, group: '8A', groupNum: 18, category: 'noble', atomicRadiusPm: 152, ie1Kj: 860, electronegativity: null, electronAffinityKj: 5, metallicCharacter: 2 },
 ];
 
@@ -127,6 +141,9 @@ const DUEL_NOTE: Record<DuelKind, keyof GamesStrings> = {
 
 const byZ = (z: number) => ELEMENTS_DB.find((e) => e.z === z)!;
 const pickRandom = () => ELEMENTS_DB[Math.floor(Math.random() * ELEMENTS_DB.length)];
+// Trend duels keep to the curated set whose trend values are checked against YKS rules.
+const DUEL_POOL = ELEMENTS_DB.filter((e) => !e.huntOnly);
+const pickDuel = () => DUEL_POOL[Math.floor(Math.random() * DUEL_POOL.length)];
 
 export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
   lang,
@@ -185,10 +202,10 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
     const battleTypes = ['ie', 'radius', 'electronegativity', 'metallic', 'affinity'];
     const chosenType = battleTypes[Math.floor(Math.random() * battleTypes.length)];
 
-    let elemA = pickRandom();
-    let elemB = pickRandom();
+    let elemA = pickDuel();
+    let elemB = pickDuel();
     while (elemA.z === elemB.z) {
-      elemB = pickRandom();
+      elemB = pickDuel();
     }
 
     // High-yield YKS Traps selection

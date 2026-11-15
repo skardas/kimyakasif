@@ -205,7 +205,7 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
         <GameStat
           key={combo}
           icon={<Zap size={14} fill="currentColor" aria-hidden="true" />}
-          label={g.streakN}
+          label=""
           value={fmt(g.streakN, { n: combo })}
           tone="gold"
           mono={false}
@@ -343,7 +343,8 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
           aria-live="polite"
         >
           {currentQ && <span className="ky-chip ky-chip--accent gm-statement-unit">{unitTitles[currentQ.unitId] ?? ''}</span>}
-          <p className={`ky-disp gm-statement-text ${sizeClass}`}>&ldquo;{formatChemText(statement)}&rdquo;</p>
+          {/* <q> takes the quote marks of the page language, so RTL/Arabic gets the right pair */}
+          <p className={`ky-disp gm-statement-text ${sizeClass}`}><q>{formatChemText(statement)}</q></p>
           <p className="ky-fs-14 gm-statement-ask">{g.zAsk}</p>
         </section>
       </main>

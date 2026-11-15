@@ -960,6 +960,7 @@ export interface RedesignExtraLocale {
   listAria: string;
   wrongChip: string;
   correctIs: string;
+  yourAnswerIs: string;
   solution: string;
   retryAll: (n: number) => string;
   solveAllStarred: (n: number) => string;
@@ -1084,6 +1085,7 @@ export const REDESIGN_EXTRA_STRINGS: Record<LanguageCode, RedesignExtraLocale> =
     listAria: 'Liste',
     wrongChip: 'Yanlış',
     correctIs: 'Doğru:',
+    yourAnswerIs: 'Senin cevabın:',
     solution: 'Çözüm',
     retryAll: (n) => `Tekrar sınavını başlat · ${n} soru`,
     solveAllStarred: (n) => `Yıldızlıları çöz · ${n} soru`,
@@ -1204,6 +1206,7 @@ export const REDESIGN_EXTRA_STRINGS: Record<LanguageCode, RedesignExtraLocale> =
     listAria: 'List',
     wrongChip: 'Wrong',
     correctIs: 'Correct:',
+    yourAnswerIs: 'Your answer:',
     solution: 'Solution',
     retryAll: (n) => `Start review test · ${n} questions`,
     solveAllStarred: (n) => `Solve starred · ${n} questions`,
@@ -1324,6 +1327,7 @@ export const REDESIGN_EXTRA_STRINGS: Record<LanguageCode, RedesignExtraLocale> =
     listAria: 'Liste',
     wrongChip: 'Falsch',
     correctIs: 'Richtig:',
+    yourAnswerIs: 'Deine Antwort:',
     solution: 'Lösung',
     retryAll: (n) => `Wiederholungstest starten · ${n} Fragen`,
     solveAllStarred: (n) => `Markierte lösen · ${n} Fragen`,
@@ -1444,6 +1448,7 @@ export const REDESIGN_EXTRA_STRINGS: Record<LanguageCode, RedesignExtraLocale> =
     listAria: 'Liste',
     wrongChip: 'Faux',
     correctIs: 'Juste :',
+    yourAnswerIs: 'Ta réponse :',
     solution: 'Solution',
     retryAll: (n) => `Lancer la révision · ${n} questions`,
     solveAllStarred: (n) => `Résoudre les favoris · ${n} questions`,
@@ -1564,6 +1569,7 @@ export const REDESIGN_EXTRA_STRINGS: Record<LanguageCode, RedesignExtraLocale> =
     listAria: 'Список',
     wrongChip: 'Неверно',
     correctIs: 'Верно:',
+    yourAnswerIs: 'Твой ответ:',
     solution: 'Решение',
     retryAll: (n) => `Начать повтор · ${n} вопр.`,
     solveAllStarred: (n) => `Решить избранные · ${n} вопр.`,
@@ -1684,6 +1690,7 @@ export const REDESIGN_EXTRA_STRINGS: Record<LanguageCode, RedesignExtraLocale> =
     listAria: 'القائمة',
     wrongChip: 'خطأ',
     correctIs: 'الصحيح:',
+    yourAnswerIs: 'إجابتك:',
     solution: 'الحل',
     retryAll: (n) => `ابدأ اختبار المراجعة · ${n} أسئلة`,
     solveAllStarred: (n) => `حلّ المميزة بنجمة · ${n} أسئلة`,
@@ -1804,6 +1811,7 @@ export const REDESIGN_EXTRA_STRINGS: Record<LanguageCode, RedesignExtraLocale> =
     listAria: '列表',
     wrongChip: '错误',
     correctIs: '正确：',
+    yourAnswerIs: '你的答案：',
     solution: '解析',
     retryAll: (n) => `开始错题重做 · ${n} 题`,
     solveAllStarred: (n) => `做收藏题 · ${n} 题`,
@@ -1924,6 +1932,7 @@ export const REDESIGN_EXTRA_STRINGS: Record<LanguageCode, RedesignExtraLocale> =
     listAria: 'Lîste',
     wrongChip: 'Şaş',
     correctIs: 'Rast:',
+    yourAnswerIs: 'Bersiva te:',
     solution: 'Çareserî',
     retryAll: (n) => `Testa dubarekirinê dest pê bike · ${n} pirs`,
     solveAllStarred: (n) => `Yên stêrkdar çareser bike · ${n} pirs`,

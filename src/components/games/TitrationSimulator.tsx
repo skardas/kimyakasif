@@ -291,7 +291,7 @@ export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
             </div>
             <div className="gm-readout">
               <p className="gm-readout-label">{g.tAdded}</p>
-              <p className="ky-mono gm-readout-vol">
+              <p className="ky-mono gm-readout-vol" dir="ltr">
                 {num(volumeDispensed, 2)} <span>mL</span>
               </p>
             </div>

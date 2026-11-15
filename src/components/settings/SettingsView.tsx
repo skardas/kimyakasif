@@ -27,6 +27,8 @@ export interface SettingsViewProps {
   onSetDailyGoal: (g: DailyGoal) => void;
   onSetReduceMotion: (r: boolean) => void;
   onRelaunchOnboarding: () => void;
+  /** Extra progress kept outside the store (today's answer count, card boxes); cleared with the store reset. */
+  onResetProgress?: () => void;
   onOpenProfiles: () => void;
   onBack: () => void;
   onInstall?: () => void;
@@ -63,6 +65,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
   onSetDailyGoal,
   onSetReduceMotion,
   onRelaunchOnboarding,
+  onResetProgress,
   onOpenProfiles,
   onBack,
   onInstall,
@@ -426,6 +429,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           onCancel={() => setConfirmReset(false)}
           onConfirm={() => {
             store.resetAllProgress();
+            onResetProgress?.();
             setConfirmReset(false);
           }}
         />

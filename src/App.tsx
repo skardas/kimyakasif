@@ -9,6 +9,7 @@ import { useAppStore } from './store/useAppStore';
 import { usePreferences } from './store/usePreferences';
 import { Onboarding, type ExamPreference } from './components/onboarding/Onboarding';
 import { FlaskMark } from './components/common/FlaskMark';
+import { LeitnerBoxEngine } from './engine/leitnerEngine';
 import { Confetti } from './components/common/Confetti';
 
 import { CurriculumView } from './components/study/CurriculumView';
@@ -41,7 +42,8 @@ export const App: React.FC = () => {
     setDailyGoal,
     setReduceMotion,
     bumpToday,
-  } = usePreferences();
+    resetToday,
+  } = usePreferences(store.activeProfileId);
 
   const lang = store.language;
   const t = UI_TRANSLATIONS[lang];
@@ -330,8 +332,8 @@ export const App: React.FC = () => {
               wrongQuestionIds={store.mistakeQuestionIds}
               bookmarkedQuestionIds={store.bookmarkedQuestionIds}
               mockBestScores={store.mockBestScores}
-              onRecordQuestion={(qId, isCorrect) => {
-                store.recordQuestionResult(qId, isCorrect);
+              onRecordQuestion={(qId, isCorrect, picked) => {
+                store.recordQuestionResult(qId, isCorrect, picked);
                 bumpToday();
               }}
               onToggleBookmark={store.toggleBookmark}
@@ -361,8 +363,8 @@ export const App: React.FC = () => {
                 setActiveTab('cards');
               }}
               onOpenSlides={() => setActiveTab('curriculum')}
-              onRecordQuestion={(qId, isCorrect) => {
-                store.recordQuestionResult(qId, isCorrect);
+              onRecordQuestion={(qId, isCorrect, picked) => {
+                store.recordQuestionResult(qId, isCorrect, picked);
                 bumpToday();
               }}
             />
@@ -387,6 +389,10 @@ export const App: React.FC = () => {
               onSetDailyGoal={setDailyGoal}
               onSetReduceMotion={setReduceMotion}
               onRelaunchOnboarding={() => setShowOnboarding(true)}
+              onResetProgress={() => {
+                resetToday();
+                new LeitnerBoxEngine().reset();
+              }}
               onOpenProfiles={() => openProfile('profiles')}
               onBack={() => setActiveTab('curriculum')}
               onInstall={

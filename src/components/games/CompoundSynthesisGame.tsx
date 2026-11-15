@@ -283,6 +283,12 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
     setLastResult(null);
   };
 
+  // Open-ended bench: the session score is recorded (best score + XP) once, on leaving.
+  const handleBack = () => {
+    if (score > 0) onFinish(score);
+    onBack();
+  };
+
   const total = CANONICAL_RECIPES.length;
   const tempPct = ((temperatureC - 25) / (450 - 25)) * 100;
   const label = (r: string) => content.reactantLabels[r] ?? toSub(r);
@@ -300,12 +306,13 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
   const atomLabel = (r: string | undefined) => (r ? label(r) : '?');
   const atomClass = (r: string | undefined) => {
     const len = atomLabel(r).length;
-    return len > 8 ? ' is-xs' : len > 5 ? ' is-sm' : '';
+    const word = r && /[a-z]{3}/.test(r) ? ' is-word' : '';
+    return (len > 8 ? ' is-xs' : len > 5 ? ' is-sm' : '') + word;
   };
 
   return (
     <div className="gm-play synthesis-game-container">
-      <GameHud title={t.games.synthesisTitle} backLabel={t.games.backToHub} onBack={onBack}>
+      <GameHud title={t.games.synthesisTitle} backLabel={t.games.backToHub} onBack={handleBack}>
         <GameStat label={g.score} value={fmt(g.pts, { n: score })} tone="accent" />
         <button
           type="button"
@@ -349,7 +356,7 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
             <React.Fragment key={i}>
               {i > 0 && <span className="gm-slot-op" aria-hidden="true">+</span>}
               {r ? (
-                <button type="button" className="gm-slot is-filled" onClick={() => toggleReactant(r)} aria-label={`${label(r)} ×`}>
+                <button type="button" className={`gm-slot is-filled${/[a-z]{3}/.test(r) ? ' is-word' : ''}`} onClick={() => toggleReactant(r)} aria-label={`${label(r)} ×`}>
                   <span dir="ltr">{label(r)}</span>
                 </button>
               ) : (
@@ -358,7 +365,7 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
             </React.Fragment>
           ))}
           <span className="gm-slot-op gm-flip" aria-hidden="true">→</span>
-          <span className={`ky-mono gm-slot-out${recipe ? ' is-ok' : ''}`} dir="ltr">
+          <span className={`ky-mono gm-slot-out${recipe ? ' is-ok' : ''}`} dir={recipe ? 'ltr' : undefined}>
             {recipe ? toSub(recipe.productFormula) : selectedReactants.length ? `${selectedReactants.map(label).join(' + ')} ?` : '?'}
           </span>
         </section>
@@ -375,15 +382,18 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
           {AVAILABLE_REACTANTS.map((r) => {
             const isSelected = selectedReactants.includes(r);
             const txt = label(r);
+            // A named reactant (Trigliserit) is a word, not a formula: it takes two
+            // columns, keeps its own text direction and never breaks mid-word.
+            const isWord = /[a-z]{3}/.test(r);
             return (
               <button
                 key={r}
                 type="button"
                 onClick={() => toggleReactant(r)}
-                className={`gm-tray-key${isSelected ? ' on' : ''}${txt.length > 6 ? ' is-long' : ''}`}
+                className={`gm-tray-key${isSelected ? ' on' : ''}${isWord ? ' is-word' : txt.length > 6 ? ' is-long' : ''}`}
                 aria-pressed={isSelected}
               >
-                <span dir="ltr">{txt}</span>
+                <span dir={isWord ? 'auto' : 'ltr'}>{txt}</span>
               </button>
             );
           })}

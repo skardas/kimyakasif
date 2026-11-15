@@ -47,7 +47,7 @@ export interface ProfileViewProps {
   onOpenCards?: () => void;
   onOpenSlides?: () => void;
   /** Records an answer (defaults to the store; App wraps it to also bump today's count). */
-  onRecordQuestion?: (qId: string, isCorrect: boolean) => void;
+  onRecordQuestion?: (qId: string, isCorrect: boolean, pickedIndex?: number) => void;
 }
 
 /** Avatar colours (face, edge) for new profiles; stored on the profile as "c0".."c5". */
@@ -123,6 +123,8 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
     subtitle?: string;
     examType: 'MISTAKE' | 'BOOKMARK';
     questions: CompiledQuestion[];
+    /** Opens the question in solution review with the stored wrong pick shown. */
+    reviewPicks?: Record<string, number | undefined>;
   } | null>(null);
   const [newName, setNewName] = useState('');
   const [newColor, setNewColor] = useState(1);
@@ -444,7 +446,28 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
       subtitle: unitLabel(q.unitId),
       examType: kind,
       questions: [q],
+      ...(kind === 'MISTAKE' ? { reviewPicks: { [q.id]: store.mistakeDetails[q.id]?.picked } } : {}),
     });
+
+  // "Bugün / Dün / 2 gün önce" from the stored wrong-answer time, in the app language.
+  // Skipped when the record predates tracking or the runtime has no locale data for the language.
+  const whenLabel = (iso?: string): string | null => {
+    if (!iso) return null;
+    const t = Date.parse(iso);
+    if (!Number.isFinite(t)) return null;
+    try {
+      const rtf = new Intl.RelativeTimeFormat(lang, { numeric: 'auto' });
+      if (!rtf.resolvedOptions().locale.toLowerCase().startsWith(lang)) return null;
+      const startOf = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+      const days = Math.round((startOf(new Date(t)) - startOf(new Date())) / 86400000);
+      return rtf.format(Math.min(0, days), 'day');
+    } catch {
+      return null;
+    }
+  };
+
+  const optionLabel = (q: CompiledQuestion, idx: number) =>
+    `${String.fromCharCode(65 + idx)}) ${q.options[idx] ?? ''}`;
 
   const renderMistakes = () => (
     <div className="pf-stack">
@@ -476,6 +499,9 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
                   <span className="ky-chip ky-chip--bad">{rx.wrongChip}</span>
                 )}
                 <span className="ky-chip pf-q__unit">{unitLabel(q.unitId)}</span>
+                {!showStarred && whenLabel(store.mistakeDetails[q.id]?.at) && (
+                  <span className="ky-fs-12 pf-q__when">{whenLabel(store.mistakeDetails[q.id]?.at)}</span>
+                )}
                 {showStarred && (
                   <button
                     type="button"
@@ -490,8 +516,25 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
               </div>
               <p className="ky-fs-15 pf-q__stem">{formatChemText(q.stem)}</p>
               <div className="pf-q__foot">
-                <span className="ky-fs-13 pf-q__right">
-                  {rx.correctIs} {formatChemText(q.options[q.correctIndex] ?? '')}
+                <span className="ky-fs-13 pf-q__answers">
+                  {!showStarred &&
+                    (() => {
+                      const picked = store.mistakeDetails[q.id]?.picked;
+                      if (picked === undefined || picked === q.correctIndex || !q.options[picked]) return null;
+                      return (
+                        <>
+                          <span className="pf-q__mine">
+                            {rx.yourAnswerIs} {formatChemText(optionLabel(q, picked))}
+                          </span>
+                          <span className="pf-q__sep" aria-hidden="true">
+                            ·
+                          </span>
+                        </>
+                      );
+                    })()}
+                  <span className="pf-q__right">
+                    {rx.correctIs} {formatChemText(optionLabel(q, q.correctIndex))}
+                  </span>
                 </span>
                 <button
                   type="button"
@@ -704,6 +747,7 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
           durationMinutes={Math.max(10, Math.ceil(session.questions.length * 1.5))}
           lang={lang}
           bookmarkedQuestionIds={store.bookmarkedQuestionIds}
+          reviewPicks={session.reviewPicks}
           onRecordQuestion={onRecordQuestion ?? store.recordQuestionResult}
           onToggleBookmark={store.toggleBookmark}
           onClose={() => setSession(null)}

@@ -32,7 +32,7 @@ export const GameHud: React.FC<GameHudProps> = ({ title, backLabel, onBack, chil
 export interface GameStatProps {
   /** Optional leading icon. */
   icon?: React.ReactNode;
-  /** Accessible name (read before the value). */
+  /** Accessible name (read before the value). Pass "" when the value already names itself. */
   label: string;
   value: React.ReactNode;
   tone?: 'gold' | 'accent' | 'bad' | 'violet';
@@ -42,9 +42,9 @@ export interface GameStatProps {
 
 /** Header chip (artboard: 36px tall chip, mono digits). */
 export const GameStat: React.FC<GameStatProps> = ({ icon, label, value, tone, mono = true }) => (
-  <span className={`ky-chip gm-stat${tone ? ` ky-chip--${tone} gm-stat--${tone}` : ''}${mono ? ' ky-mono' : ''}`} title={label}>
+  <span className={`ky-chip gm-stat${tone ? ` ky-chip--${tone} gm-stat--${tone}` : ''}${mono ? ' ky-mono' : ''}`} title={label || undefined}>
     {icon}
-    <span className="gm-sr">{label}: </span>
+    {label ? <span className="gm-sr">{label}: </span> : null}
     <span>{value}</span>
   </span>
 );

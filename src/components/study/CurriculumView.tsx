@@ -116,18 +116,21 @@ export const CurriculumView: React.FC<CurriculumViewProps> = ({
         <div className="ky-card cur-goal">
           <svg role="img" aria-label={r.goalRing(todayCount, dailyGoal)} width="52" height="52" viewBox="0 0 52 52" className="cur-goal__ring">
             <circle cx="26" cy="26" r="21" fill="none" stroke="var(--raised)" strokeWidth="7" />
-            <circle
-              cx="26"
-              cy="26"
-              r="21"
-              fill="none"
-              stroke="var(--accent)"
-              strokeWidth="7"
-              strokeLinecap="round"
-              strokeDasharray={ringLen}
-              strokeDashoffset={ringLen * (1 - Math.max(0.03, goalPct))}
-              transform="rotate(-90 26 26)"
-            />
+            {/* Nothing answered today = empty track (no 3% stub that reads as progress after a reset) */}
+            {goalPct > 0 && (
+              <circle
+                cx="26"
+                cy="26"
+                r="21"
+                fill="none"
+                stroke="var(--accent)"
+                strokeWidth="7"
+                strokeLinecap="round"
+                strokeDasharray={ringLen}
+                strokeDashoffset={ringLen * (1 - Math.max(0.03, goalPct))}
+                transform="rotate(-90 26 26)"
+              />
+            )}
           </svg>
           <div className="cur-goal__text">
             <p className="ky-fs-16 cur-goal__title">{cs.goalEyebrow}</p>

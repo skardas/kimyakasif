@@ -32,7 +32,7 @@ export interface ExamCenterProps {
   wrongQuestionIds: string[];
   bookmarkedQuestionIds: string[];
   mockBestScores: Record<string, MockBestScore>;
-  onRecordQuestion: (qId: string, isCorrect: boolean) => void;
+  onRecordQuestion: (qId: string, isCorrect: boolean, pickedIndex?: number) => void;
   onToggleBookmark: (qId: string) => void;
   onSaveAttempt: (attempt: Omit<ExamResultRecord, 'id' | 'dateIso'>) => void;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { LucideIcon } from 'lucide-react';
-import { LayoutGrid, Scale, Atom, Droplet, FlaskConical, Zap, Trophy, Play } from 'lucide-react';
+import { LayoutGrid, Scale, Atom, Droplet, FlaskConical, Zap, Play } from 'lucide-react';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { GAMES_STRINGS } from '../../i18n/gamesStrings';
@@ -118,39 +118,31 @@ export const GamesHub: React.FC<GamesHubProps> = ({
     );
   }
 
-  // 6 Mini-Games roster (artboard order)
-  const gamesList: {
-    id: MiniGameId;
-    title: string;
-    desc: string;
-    icon: LucideIcon;
-    tile: string;
-    tag: string;
-  }[] = [
-    { id: 'periodic-hunter', title: t.games.periodicTitle, desc: t.games.periodicDesc, icon: LayoutGrid, tile: '', tag: 'TYT & AYT' },
-    { id: 'equation-balancer', title: t.games.balancerTitle, desc: t.games.balancerDesc, icon: Scale, tile: 'ky-tile--gold', tag: 'TYT' },
-    { id: 'compound-synthesis', title: t.games.synthesisTitle, desc: t.games.synthesisDesc, icon: FlaskConical, tile: 'ky-tile--violet', tag: 'AYT' },
-    { id: 'lewis-builder', title: t.games.lewisTitle, desc: t.games.lewisDesc, icon: Atom, tile: 'ky-tile--blue', tag: 'VSEPR' },
-    { id: 'titration-simulator', title: t.games.titrationTitle, desc: t.games.titrationDesc, icon: Droplet, tile: 'ky-tile--rose', tag: 'AYT' },
-    { id: 'chem-blitz', title: t.games.blitzTitle, desc: t.games.blitzDesc, icon: Zap, tile: 'ky-tile--ok', tag: '60s' },
+  // 6 Mini-Games roster (artboard order): coloured tile icon, name, best score
+  const gamesList: { id: MiniGameId; title: string; icon: LucideIcon; tile: string }[] = [
+    { id: 'periodic-hunter', title: t.games.periodicTitle, icon: LayoutGrid, tile: '' },
+    { id: 'equation-balancer', title: t.games.balancerTitle, icon: Scale, tile: 'ky-tile--gold' },
+    { id: 'compound-synthesis', title: t.games.synthesisTitle, icon: FlaskConical, tile: 'ky-tile--violet' },
+    { id: 'lewis-builder', title: t.games.lewisTitle, icon: Atom, tile: 'ky-tile--blue' },
+    { id: 'titration-simulator', title: t.games.titrationTitle, icon: Droplet, tile: 'ky-tile--rose' },
+    { id: 'chem-blitz', title: t.games.blitzTitle, icon: Zap, tile: 'ky-tile--ok' },
   ];
 
   return (
-    <section className="ky-screen gm-hub" aria-label={t.games.title}>
+    <section className="ky-screen gm-hub" aria-label={g.hubTitle}>
       <div className="ky-fit">
         <div className="gm-hub__body">
           <header className="gm-hub__head">
             <p className="ky-eyebrow">{g.miniGames}</p>
-            <h1 className="ky-disp ky-fs-28">{t.games.title}</h1>
+            <h1 className="ky-disp">{g.hubTitle}</h1>
           </header>
 
           {/* Daily challenge */}
           <section className="ky-stage gm-hero ky-persp" aria-label={g.daily}>
             <div className="ky-floor" aria-hidden="true" />
             <div className="gm-hero-orb" aria-hidden="true">
-              <span className="ky-orbit3d gm-hero-ring" />
               <span className="ky-atom ky-float" style={{ ['--c' as string]: '#FFD873', ['--cd' as string]: '#A86A08' }} />
-              <Zap size={30} fill="currentColor" />
+              <Zap size={34} fill="currentColor" />
             </div>
             <span className="ky-chip ky-chip--gold">{g.daily}</span>
             <h2>{g.dailyTitle}</h2>
@@ -162,7 +154,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({
           </section>
 
           {/* Game tiles */}
-          <ul className="gm-tiles" aria-label={t.games.title}>
+          <ul className="gm-tiles" aria-label={g.hubTitle}>
             {gamesList.map((game) => {
               const GameIcon = game.icon;
               const bestScore = highScores[game.id] || 0;
@@ -173,18 +165,13 @@ export const GamesHub: React.FC<GamesHubProps> = ({
                     className="ky-card gm-tile"
                     data-sfx="start"
                     onClick={() => setActiveGame(game.id)}
-                    aria-label={`${g.play}: ${game.title}`}
                   >
                     <span className={`ky-tile ${game.tile}`} aria-hidden="true">
-                      <GameIcon size={26} />
+                      <GameIcon size={24} />
                     </span>
                     <strong className="ky-fs-15">{game.title}</strong>
-                    <span className="gm-tile__desc ky-fs-13">{game.desc}</span>
-                    <span className="gm-tile__foot">
-                      <span className="ky-chip gm-tag">{game.tag}</span>
-                      <span className="gm-tile__best ky-fs-12">
-                        <Trophy size={13} aria-hidden="true" /> {g.best}: {bestScore > 0 ? bestScore : '\u2014'}
-                      </span>
+                    <span className="gm-tile__best ky-fs-12">
+                      {g.bestShort}: {bestScore > 0 ? bestScore : '\u2014'}
                     </span>
                   </button>
                 </li>

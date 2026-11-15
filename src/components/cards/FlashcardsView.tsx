@@ -208,11 +208,8 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   // Pointer handlers for desktop mouse / pen drag
   const onPointerDown = (e: React.PointerEvent) => {
     if (e.pointerType === 'touch') return;
-    try {
-      (e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId);
-    } catch {
-      // ignore
-    }
+    // No pointer capture yet: capturing on pointerdown retargets the click to this stage, so a
+    // plain mouse/trackpad tap never reached the card button and the card did not turn.
     pointerStartRef.current = {
       x: e.clientX,
       y: e.clientY,
@@ -227,8 +224,13 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     if (e.pointerType === 'touch' || !pointerStartRef.current) return;
     const dx = e.clientX - pointerStartRef.current.x;
     const dy = e.clientY - pointerStartRef.current.y;
-    if (Math.abs(dx) > 5) {
+    if (Math.abs(dx) > 5 && !pointerSwipedRef.current) {
       pointerSwipedRef.current = true;
+      try {
+        (e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId);
+      } catch {
+        // ignore
+      }
     }
     setDragOffset({ x: dx, y: dy });
   };

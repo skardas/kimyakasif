@@ -221,6 +221,12 @@
 
 .qz-diagram .chemical-diagram-container { margin: 0; }
 .qz-diagram svg { max-inline-size: 100%; block-size: auto; }
+/* Quiz artboard: the figure is a short stage above the stem (132px on the 390 phone);
+   the full drawing opens from the corner expand control. */
+.qz-diagram .is-compact .chemical-diagram-svg { max-block-size: clamp(112px, 17dvh, 140px); }
+@media (min-width: 900px) {
+  .qz-diagram .is-compact .chemical-diagram-svg { max-block-size: 300px; }
+}
 
 .qz-meta { display: flex; flex-wrap: wrap; gap: 8px; }
 
@@ -234,9 +240,20 @@
   white-space: pre-line;
 }
 
+.qz-stem { line-height: 1.4; }
+/* Artboard size (20px/700) is for a one-line stem. Real YKS stems with I./II./III. statements
+   run 8-12 lines on a phone, so long stems step down to 17px/600 and paragraphs get a small gap
+   instead of an empty line. */
+.qz-stem--long { font-size: calc(17px * var(--fs, 1)); font-weight: 600; line-height: 1.42; }
+.qz-stem__p { display: block; }
+.qz-stem__p + .qz-stem__p { margin-block-start: 0.45em; }
+@media (min-width: 900px) {
+  .qz-stem--long { font-size: calc(18px * var(--fs, 1)); }
+}
+
 .qz-options { display: flex; flex-direction: column; gap: 10px; }
 .qz-opt { min-block-size: 56px; padding: 10px 14px; }
-.qz-opt-text { flex: 1; min-inline-size: 0; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
+.qz-opt-text { flex: 1; min-inline-size: 0; font-weight: 600; line-height: 1.3; overflow-wrap: anywhere; }
 .qz-opt-mark { flex: none; display: inline-flex; }
 .ky-opt.right .qz-opt-mark { color: var(--ok); }
 .ky-opt.wrong .qz-opt-mark { color: var(--bad); }

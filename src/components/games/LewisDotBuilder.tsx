@@ -375,6 +375,9 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
             <span className="ky-chip ky-chip--gold">
               <Trophy size={14} aria-hidden="true" /> {g.best}: {best}
             </span>
+            <p className="gm-result-meta">
+              {g.solved}: {total} / {total}
+            </p>
           </section>
         </main>
         <footer className="ky-screen-foot gm-foot">

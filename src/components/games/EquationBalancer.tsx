@@ -248,6 +248,9 @@ const HINT_ORDER: { key: EqHintKey; label: keyof GamesStrings }[] = [
   { key: 'oksijen', label: 'bHintO' },
 ];
 
+// Highest coefficient a stepper reaches: butane combustion needs 13 O₂ (2 C₄H₁₀ + 13 O₂).
+const MAX_COEF = 15;
+
 export const EquationBalancer: React.FC<EquationBalancerProps> = ({
   lang,
   highScore = 0,
@@ -347,7 +350,7 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
   const adjustReactant = (idx: number, delta: number) => {
     setReactantsCoefs((prev) => {
       const copy = [...prev];
-      copy[idx] = Math.max(1, Math.min(10, copy[idx] + delta));
+      copy[idx] = Math.max(1, Math.min(MAX_COEF, copy[idx] + delta));
       return copy;
     });
   };
@@ -355,7 +358,7 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
   const adjustProduct = (idx: number, delta: number) => {
     setProductsCoefs((prev) => {
       const copy = [...prev];
-      copy[idx] = Math.max(1, Math.min(10, copy[idx] + delta));
+      copy[idx] = Math.max(1, Math.min(MAX_COEF, copy[idx] + delta));
       return copy;
     });
   };
@@ -418,7 +421,7 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
 
   const hud = (
     <GameHud title={t.games.balancerTitle} backLabel={t.games.backToHub} onBack={onBack}>
-      <GameStat label={g.level} value={fmt(g.level, { n: Math.min(equationIndex + 1, total) })} tone="accent" mono={false} />
+      <GameStat label="" value={fmt(g.level, { n: Math.min(equationIndex + 1, total) })} tone="accent" mono={false} />
       <GameStat label={g.score} value={fmt(g.pts, { n: score })} />
     </GameHud>
   );

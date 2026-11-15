@@ -21,6 +21,7 @@ import type { LanguageCode, QuestionDiagramSpec } from '../../types/chemistry';
 import { ChemicalDiagram, CLOSE_MODAL_I18N } from '../diagrams/ChemicalDiagram';
 import { formatChemText } from '../common/ChemFormula';
 import { redesignStrings } from '../../i18n/redesignStrings';
+import { playCorrect, playWrong } from '../../audio/sfx';
 
 export interface UnitSlideDeckModalProps {
   unit: ChemistryUnitSeedData | null;
@@ -459,8 +460,15 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                         type="button"
                         role="radio"
                         aria-checked={isSelected}
-                        className={`ky-opt ${optClass} ${isSelected && !optClass ? 'on' : ''}`}
-                        onClick={() => setSelectedTwinOpt(oIdx)}
+                        disabled={selectedTwinOpt !== null}
+                        className={`ky-opt ${optClass} ${isSelected && !optClass ? 'on' : ''} ${optClass === 'wrong' ? 'ky-shake' : ''}`}
+                        onClick={() => {
+                          // Answer once (like the quiz): correct / wrong feedback instead of the plain UI click
+                          if (selectedTwinOpt !== null) return;
+                          if (isCorrect) playCorrect();
+                          else playWrong();
+                          setSelectedTwinOpt(oIdx);
+                        }}
                       >
                         <span className="ky-key">{String.fromCharCode(65 + oIdx)}</span>
                         <span className="ky-fs-16 sl-opt-text">

@@ -25,6 +25,9 @@ import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { EXAM_STRINGS } from '../../i18n/examStrings';
 import { redesignStrings, redesignExtra } from '../../i18n/redesignStrings';
 
+/** Stems with statements (line breaks) or more than ~2 phone lines use the smaller reading size. */
+const isLongStem = (stem: string) => stem.length > 110 || /\n/.test(stem.trim());
+
 export interface QuizSessionModalProps {
   title: string;
   subtitle?: string;
@@ -36,9 +39,14 @@ export interface QuizSessionModalProps {
   durationMinutes?: number;
   lang: LanguageCode;
   bookmarkedQuestionIds: string[];
-  onRecordQuestion: (qId: string, isCorrect: boolean) => void;
+  onRecordQuestion: (qId: string, isCorrect: boolean, pickedIndex?: number) => void;
   onToggleBookmark: (qId: string) => void;
   onSaveAttempt?: (attempt: Omit<ExamResultRecord, 'id' | 'dateIso'>) => void;
+  /**
+   * Opens straight into solution review (Hata defteri → Çözüm) with these earlier picks
+   * marked; an undefined pick (records saved before picks were stored) shows only the answer.
+   */
+  reviewPicks?: Record<string, number | undefined>;
   onClose: () => void;
 }
 
@@ -61,6 +69,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
   onRecordQuestion,
   onToggleBookmark,
   onSaveAttempt,
+  reviewPicks,
   onClose,
 }) => {
   const t = UI_TRANSLATIONS[lang];
@@ -72,13 +81,21 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // User selections: questionId -> chosen index (0..4)
-  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({});
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>(() => {
+    const init: Record<string, number> = {};
+    Object.entries(reviewPicks ?? {}).forEach(([qId, v]) => {
+      if (typeof v === 'number') init[qId] = v;
+    });
+    return init;
+  });
 
   // Practice Mode: questions evaluated and frozen
   const [evaluatedQuestions, setEvaluatedQuestions] = useState<Record<string, boolean>>({});
 
   // Exam Mode Status: 'in-progress' | 'submitted' | 'review'
-  const [examStatus, setExamStatus] = useState<'in-progress' | 'submitted' | 'review'>('in-progress');
+  const [examStatus, setExamStatus] = useState<'in-progress' | 'submitted' | 'review'>(
+    reviewPicks ? 'review' : 'in-progress'
+  );
 
   // Timer: seconds remaining for exam mode; elapsed seconds for practice mode
   const totalDurationSeconds = durationMinutes * 60;
@@ -140,7 +157,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
           onRecordQuestion(q.id, true);
         } else {
           wrong++;
-          onRecordQuestion(q.id, false);
+          onRecordQuestion(q.id, false, answer);
         }
       });
 
@@ -230,7 +247,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
   // Option selection handler
   const handleSelectOption = useCallback(
     (optionIndex: number) => {
-      if (!currentQ) return;
+      if (!currentQ || examStatus === 'review') return;
 
       if (!isExamMode) {
         // Practice mode: freeze after first selection
@@ -247,7 +264,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
           sfx.playWrong();
         }
 
-        onRecordQuestion(currentQ.id, isCorrect);
+        onRecordQuestion(currentQ.id, isCorrect, optionIndex);
       } else {
         // Exam mode: silent answer selection (can toggle/change while in-progress)
         if (examStatus !== 'in-progress') return;
@@ -508,7 +525,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
     </span>
   );
 
-  const showNavigator = isExamMode || inReview;
+  const showNavigator = (isExamMode || inReview) && questions.length > 1;
 
   return (
     <div className="ky-immersive qz" role="dialog" aria-modal="true" aria-label={title}>
@@ -525,7 +542,8 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                 <p className="ky-meta ky-fs-12">{kindLabel}</p>
                 <p className="ky-head-sub ky-fs-16">{r.questionOf(currentIndex + 1, questions.length)}</p>
               </div>
-              {timerChip}
+              {/* Çözüm incelemesi (artboard): no clock, nothing is being timed */}
+              {!inReview && timerChip}
               {currentQ && (
                 <button
                   type="button"
@@ -556,7 +574,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                 <div className="ky-lead qz-lead">
                   {currentQ.diagram && (
                     <div className="qz-diagram">
-                      <ChemicalDiagram spec={currentQ.diagram} allowZoom={true} />
+                      <ChemicalDiagram spec={currentQ.diagram} allowZoom={true} lang={lang} controls="expand" />
                     </div>
                   )}
                   <div className="qz-meta">
@@ -569,7 +587,15 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                     </span>
                     <span className="ky-chip ky-mono">{currentQ.unitId.toUpperCase()}</span>
                   </div>
-                  <h1 className="ky-fs-20 qz-stem">{formatChemText(currentQ.stem)}</h1>
+                  <h1 className={`ky-fs-20 qz-stem ${isLongStem(currentQ.stem) ? 'qz-stem--long' : ''}`}>
+                    {currentQ.stem
+                      .split(/\n\s*\n/)
+                      .map((para, i) => (
+                        <span key={i} className="qz-stem__p">
+                          {formatChemText(para.trim())}
+                        </span>
+                      ))}
+                  </h1>
                 </div>
 
                 <div className="qz-options" role="radiogroup" aria-label={x.options}>

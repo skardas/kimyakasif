@@ -266,7 +266,13 @@
 .pf-q__star { margin-inline-start: auto; color: var(--gold); }
 .pf-q__stem { font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
 .pf-q__foot { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
-.pf-q__right { flex: 1 1 160px; color: var(--ok); font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
+/* Mistakes artboard: "Senin cevabın: … · Doğru: …" on one wrapping line, Çözüm chip at the end */
+.pf-q__answers { flex: 1 1 160px; min-inline-size: 0; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; row-gap: 2px; font-weight: 600; line-height: 1.35; }
+.pf-q__mine { color: var(--bad); overflow-wrap: anywhere; }
+.pf-q__sep { color: var(--muted); }
+.pf-q__right { color: var(--ok); overflow-wrap: anywhere; }
+.pf-q__when { margin-inline-start: auto; display: inline-block; color: var(--muted); font-weight: 600; }
+.pf-q__when::first-letter { text-transform: uppercase; }
 .pf-q__go { margin-inline-start: auto; }
 
 .pf-foot { max-inline-size: 760px; margin-inline: auto; inline-size: 100%; box-sizing: border-box; }

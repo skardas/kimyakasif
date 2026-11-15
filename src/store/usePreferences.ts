@@ -18,10 +18,14 @@ interface Prefs {
   textSize: TextSizeStep;
 }
 
+/** Answers given today, per learner profile (the daily-goal ring belongs to the active profile). */
 interface DailyCount {
   date: string;
-  count: number;
+  counts: Record<string, number>;
 }
+
+/** Count saved by older builds as a single `{date, count}`; adopted by the first profile that reads it. */
+const LEGACY_SLOT = '__legacy';
 
 function todayStamp(): string {
   const d = new Date();
@@ -55,19 +59,32 @@ function loadDaily(): DailyCount {
     if (raw) {
       const d = JSON.parse(raw);
       if (d && typeof d === 'object' && !Array.isArray(d)) {
-        if (d.date === today && typeof d.count === 'number' && Number.isFinite(d.count) && d.count >= 0) {
-          return { date: today, count: Math.round(d.count) };
+        if (d.date === today) {
+          const counts: Record<string, number> = {};
+          if (d.counts && typeof d.counts === 'object' && !Array.isArray(d.counts)) {
+            Object.entries(d.counts as Record<string, unknown>).forEach(([k, v]) => {
+              if (typeof v === 'number' && Number.isFinite(v) && v >= 0) counts[k] = Math.round(v);
+            });
+          } else if (typeof d.count === 'number' && Number.isFinite(d.count) && d.count > 0) {
+            counts[LEGACY_SLOT] = Math.round(d.count);
+          }
+          return { date: today, counts };
         }
       }
     }
   } catch {
     // Default fallback
   }
-  return { date: today, count: 0 };
+  return { date: today, counts: {} };
+}
+
+function countFor(daily: DailyCount, profileId: string): number {
+  if (daily.date !== todayStamp()) return 0;
+  return daily.counts[profileId] ?? daily.counts[LEGACY_SLOT] ?? 0;
 }
 
 /** Günlük hedef, bugün çözülen soru sayısı, "hareketi azalt" ve yazı boyutu tercihleri. */
-export function usePreferences() {
+export function usePreferences(profileId = 'profile-default') {
   const [prefs, setPrefs] = useState<Prefs>(loadPrefs);
   const [daily, setDaily] = useState<DailyCount>(loadDaily);
 
@@ -97,9 +114,18 @@ export function usePreferences() {
   const bumpToday = useCallback(() => {
     setDaily((d) => {
       const today = todayStamp();
-      return d.date === today ? { date: today, count: d.count + 1 } : { date: today, count: 1 };
+      if (d.date !== today) return { date: today, counts: { [profileId]: 1 } };
+      const { [LEGACY_SLOT]: _legacy, ...rest } = d.counts;
+      return { date: today, counts: { ...rest, [profileId]: countFor(d, profileId) + 1 } };
     });
-  }, []);
+  }, [profileId]);
+  /** Clears today's answer count of the active profile (used by "reset progress"). */
+  const resetToday = useCallback(() => {
+    setDaily((d) => {
+      const { [LEGACY_SLOT]: _legacy, ...rest } = d.date === todayStamp() ? d.counts : {};
+      return { date: todayStamp(), counts: { ...rest, [profileId]: 0 } };
+    });
+  }, [profileId]);
 
   return {
     dailyGoal: prefs.dailyGoal,
@@ -109,9 +135,10 @@ export function usePreferences() {
     textSize: prefs.textSize,
     textScale: TEXT_SIZE_SCALES[prefs.textSize],
     setTextSize,
-    todayCount: daily.date === todayStamp() ? daily.count : 0,
+    todayCount: countFor(daily, profileId),
     setDailyGoal,
     setReduceMotion,
     bumpToday,
+    resetToday,
   };
 }

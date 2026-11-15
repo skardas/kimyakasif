@@ -14,16 +14,16 @@
   gap: 14px;
   padding-block-start: max(16px, env(safe-area-inset-top, 0px));
 }
-.gm-hub__head h1 { margin: 4px 0 0; font-weight: 800; }
+.gm-hub__head h1 { margin: 4px 0 0; font-size: calc(26px * var(--fs, 1)); font-weight: 800; line-height: 1.15; overflow-wrap: anywhere; }
 .gm-hub__head p { margin: 0; }
 
+/* Daily challenge stage (artboard: 18px padding, 92px orb top-end) */
 .gm-hero {
-  padding: 20px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  min-block-size: 200px;
 }
 .gm-hero > * { position: relative; z-index: 1; }
 .gm-hero .ky-floor { position: absolute; z-index: -1; }
@@ -35,9 +35,10 @@
   line-height: 1.15;
   max-inline-size: 15em;
   padding-inline-end: 84px;
+  overflow-wrap: break-word;
 }
-.gm-hero p { margin: 0; font-size: calc(14px * var(--fs, 1)); color: var(--text2); line-height: 1.45; max-inline-size: 30em; padding-inline-end: 24px; }
-.gm-hero .ky-btn { margin-block-start: 6px; }
+.gm-hero p { margin: 0; font-size: calc(14px * var(--fs, 1)); color: var(--text2); line-height: 1.4; max-inline-size: 30em; padding-inline-end: 24px; }
+.gm-hero .ky-btn { margin-block: 4px 5px; min-block-size: 48px; }
 .gm-hero-orb {
   position: absolute !important;
   inset-block-start: 14px;
@@ -45,12 +46,11 @@
   inline-size: 92px;
   block-size: 92px;
   z-index: 0 !important;
-  transform-style: preserve-3d;
 }
 .gm-hero-orb .ky-atom { inset: 10px; inline-size: 72px; block-size: 72px; }
 .gm-hero-orb svg { position: absolute; inset: 0; margin: auto; color: #2a1800; z-index: 2; }
-.gm-hero-ring { inset: 0; }
 
+/* Six tiles: coloured icon, name, best score */
 .gm-tiles {
   list-style: none;
   margin: 0;
@@ -59,9 +59,10 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
+.gm-tiles > li { display: flex; min-inline-size: 0; }
 .gm-tile {
   inline-size: 100%;
-  block-size: 100%;
+  min-block-size: 44px;
   padding: 14px;
   border-radius: 22px;
   display: flex;
@@ -77,19 +78,8 @@
   transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
 .gm-tile:active { transform: translateY(4px); box-shadow: inset 0 1px 0 var(--hi), 0 1px 0 var(--edge); }
-.gm-tile strong { line-height: 1.2; overflow-wrap: anywhere; }
-.gm-tile__desc {
-  color: var(--text2);
-  line-height: 1.35;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.gm-tile__foot { margin-block-start: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
-.gm-tile__best { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-weight: 600; }
-.gm-tile__best svg { color: var(--gold); }
-.gm-tag { max-inline-size: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gm-tile strong { line-height: 1.2; overflow-wrap: break-word; hyphens: auto; max-inline-size: 100%; }
+.gm-tile__best { margin-block-start: auto; color: var(--muted); font-weight: 600; }
 @media (min-width: 900px) {
   .gm-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 }
@@ -107,21 +97,24 @@
   position: relative;
 }
 
-/* Header (artboard: back key · title · 36px stat chips) */
-.gm-hud { flex-wrap: nowrap; gap: 10px; padding-block-end: 0; }
-.gm-hud-title {
-  flex: 1 1 0;
+/* Header (artboard: back key · title · 36px stat chips). The title's flex-basis is in
+   em, so it grows with the text-size setting: when title + chips no longer fit one row
+   (largest text, long names, German/Russian), the chips wrap to a second row instead
+   of breaking the name mid-word or truncating the chips. */
+.gm-hud { flex-wrap: wrap; gap: 8px 10px; padding-block-end: 0; }
+.gm-hud .gm-hud-title {
+  flex: 1 1 5.5em;
   min-inline-size: 0;
   margin: 0;
   font-weight: 800;
   line-height: 1.12;
   overflow: hidden;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.gm-stats { display: flex; gap: 8px; flex: none; max-inline-size: 58%; }
+.gm-stats { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; flex: 0 1 auto; max-inline-size: 100%; margin-inline-start: auto; }
 .gm-stat {
   min-block-size: 36px;
   padding: 0 12px;
@@ -132,7 +125,8 @@
   text-overflow: ellipsis;
 }
 @media (max-width: 400px) {
-  .gm-hud-title { font-size: calc(18px * var(--fs, 1)); }
+  .gm-hud { column-gap: 8px; }
+  .gm-hud-title { font-size: calc(17px * var(--fs, 1)); }
   .gm-stat { padding: 0 10px; font-size: calc(13px * var(--fs, 1)); }
   .gm-stats { gap: 6px; }
 }
@@ -278,6 +272,9 @@
   text-align: center;
   animation: kyPop2 0.35s cubic-bezier(0.2, 1.4, 0.4, 1) both;
 }
+/* A lone result card sits in the optical centre of the reading area (auto margins
+   collapse to 0 when the content is taller, so nothing is clipped). */
+.gm-main--center > .gm-result:only-child { margin-block: auto; }
 .gm-result h2 { margin: 0; font-size: calc(22px * var(--fs, 1)); font-weight: 800; }
 .gm-score {
   font-family: var(--font-display);
@@ -430,7 +427,8 @@
 .gm-eq-arrow { color: #2dd9c3; }
 .gm-eq-progress { block-size: 6px; margin-block-start: 8px; }
 
-.gm-coefs { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: 10px; }
+/* Cards follow the equation, which always reads left to right (also in Arabic) */
+.gm-coefs { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: 10px; direction: ltr; }
 .gm-coef-card { padding: 12px 10px; border-radius: 20px; display: flex; flex-direction: column; align-items: center; gap: 8px; min-inline-size: 0; }
 .gm-coef-formula { margin: 0; font-size: calc(16px * var(--fs, 1)); font-weight: 700; text-align: center; overflow-wrap: anywhere; line-height: 1.2; }
 .gm-coef-btn { inline-size: 100%; block-size: 44px; }
@@ -443,7 +441,7 @@
 .gm-tally { padding: 6px 16px; }
 .gm-tally-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 64px 64px minmax(84px, auto);
+  grid-template-columns: minmax(0, 1fr) calc(64px * var(--fs, 1)) calc(64px * var(--fs, 1)) minmax(84px, auto);
   align-items: center;
   column-gap: 6px;
   min-block-size: 52px;
@@ -452,7 +450,8 @@
 .gm-tally-row > span:nth-child(3) { text-align: center; font-weight: 700; }
 .gm-tally-row > span:last-child { display: flex; justify-content: flex-end; text-align: end; }
 .gm-tally-row + .gm-tally-row { border-block-start: 1px solid var(--line); }
-.gm-tally-head { min-block-size: 40px; font-weight: 700; color: var(--muted); }
+.gm-tally-head { min-block-size: 40px; font-weight: 700; color: var(--muted); font-size: calc(12px * var(--fs, 1)); line-height: 1.2; }
+.gm-tally-head > span { overflow-wrap: normal; min-inline-size: 0; }
 .gm-tally-head > span:nth-child(2),
 .gm-tally-head > span:nth-child(3) { font-weight: 700; }
 .gm-tally-atom { font-weight: 700; }
@@ -492,6 +491,7 @@
 .gm-syn-b b { color: #03301a; }
 .gm-syn-a.is-sm b, .gm-syn-b.is-sm b { font-size: 15px; }
 .gm-syn-a.is-xs b, .gm-syn-b.is-xs b { font-size: 12px; }
+.gm-syn-a.is-word b, .gm-syn-b.is-word b { font-family: var(--font-sans); overflow-wrap: normal; line-height: 1.1; }
 .gm-syn-a.is-empty, .gm-syn-b.is-empty { --c: #8593a8; --cd: #2a3446; opacity: 0.55; }
 .gm-syn-a.is-empty b, .gm-syn-b.is-empty b { color: #0b1220; font-size: 26px; }
 .gm-syn-pair.is-mixing .gm-syn-a { animation: gmMixA 0.6s ease-in-out infinite alternate; }
@@ -500,7 +500,7 @@
 @keyframes gmMixA { to { transform: translateX(16px) rotate(-8deg); } }
 @keyframes gmMixB { to { transform: translateX(-12px) rotate(8deg) scale(0.96); } }
 
-.gm-slots { padding: 14px 16px; display: flex; align-items: center; gap: 10px; min-inline-size: 0; }
+.gm-slots { padding: 14px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; min-inline-size: 0; }
 .gm-slot {
   flex: none;
   min-inline-size: 52px;
@@ -527,21 +527,40 @@
   cursor: pointer;
   animation: kyPop 0.25s var(--ease-out) both;
 }
+/* A named reactant in a slot wraps at spaces (two lines max) instead of being cut */
+.gm-slot.is-word {
+  flex: 0 1 auto;
+  max-inline-size: min(48%, 180px);
+  block-size: auto;
+  min-block-size: 52px;
+  padding-block: 4px;
+  font-family: var(--font-sans);
+  font-size: calc(13px * var(--fs, 1));
+  line-height: 1.15;
+  white-space: normal;
+}
+.gm-slot.is-word > span {
+  overflow-wrap: normal;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 .gm-slot-op { flex: none; font-size: 22px; font-weight: 800; color: var(--muted); }
+/* The product formula takes the rest of the row, or a row of its own when long (CH₃COOC₂H₅) */
 .gm-slot-out {
-  flex: 1;
+  flex: 1 0 auto;
+  max-inline-size: 100%;
   min-inline-size: 0;
   text-align: end;
   font-size: calc(18px * var(--fs, 1));
   font-weight: 700;
   color: var(--muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: break-word;
 }
 .gm-slot-out.is-ok { color: var(--ok); }
 
-.gm-tray { display: grid; grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 10px; }
+.gm-tray { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, calc(72px * var(--fs, 1))), 1fr)); grid-auto-flow: row dense; gap: 10px; }
 .gm-tray-key {
   block-size: 62px;
   padding: 0 4px;
@@ -564,6 +583,24 @@
 .gm-tray-key > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .gm-tray-key.is-long { font-size: calc(13px * var(--fs, 1)); letter-spacing: -0.02em; line-height: 1.1; }
 .gm-tray-key.is-long > span { white-space: normal; overflow-wrap: anywhere; text-align: center; }
+/* Word labels (Trigliserit / دهن ثلاثي …): two columns wide, wrap only at spaces */
+.gm-tray-key.is-word {
+  grid-column: span 2;
+  padding-inline: 10px;
+  font-family: var(--font-sans);
+  font-size: calc(15px * var(--fs, 1));
+  line-height: 1.15;
+}
+.gm-tray-key.is-word > span {
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  hyphens: manual;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 .gm-tray-key:active { transform: translateY(4px); box-shadow: inset 0 1px 0 var(--hi), 0 1px 0 var(--edge); }
 .gm-tray-key.on {
   background: var(--accent-soft);
@@ -697,6 +734,8 @@
 .gm-readout-ph { margin: 0; font-size: calc(34px * var(--fs, 1)); font-weight: 800; line-height: 1.1; transition: color 0.3s ease; }
 .gm-readout-vol { margin: 0; font-size: calc(22px * var(--fs, 1)); font-weight: 700; color: #f2f6fb; white-space: nowrap; }
 .gm-readout-vol span { font-size: calc(13px * var(--fs, 1)); color: #9fb0c6; }
+/* "0,00 mL" always reads number-then-unit; in RTL it still sits on the start (right) edge */
+:root[dir="rtl"] .gm-readout-vol { text-align: right; }
 .gm-ph-tag { display: inline-block; margin-block-start: 4px; padding: 2px 8px; border-radius: 8px; font-size: calc(11px * var(--fs, 1)); font-weight: 800; background: rgba(255, 255, 255, 0.1); color: #f2f6fb; }
 .gm-ph-tag.is-equivalence { background: rgba(167, 139, 250, 0.2); color: #c9b6ff; }
 .gm-ph-tag.is-basic { background: rgba(45, 217, 195, 0.16); color: #8cf5e7; }
@@ -707,7 +746,15 @@
 .gm-task-title { margin: 0; font-weight: 700; }
 .gm-task-desc { margin: 0; color: var(--text2); line-height: 1.4; }
 
-.gm-ind > button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; line-height: 1.15; }
+/* Indicator keys: three across, two across once the text size makes a column narrower
+   than ~7.5em, so "Fenolftalein" never splits mid-word */
+.gm-ind {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.5em), 1fr));
+  font-size: calc(13px * var(--fs, 1));
+}
+.gm-ind > button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; line-height: 1.15; overflow-wrap: normal; }
+.gm-ind > button .gm-dot { flex: none; }
 .gm-doses { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .gm-dose {
   min-block-size: 60px;
@@ -727,6 +774,9 @@
 }
 :root[data-theme="light"] .gm-dose.is-on { color: var(--accent-deep); }
 .gm-stir { padding: 8px 14px; min-block-size: 56px; display: flex; align-items: center; justify-content: space-between; gap: 12px; font-weight: 700; }
+/* 32px switch, 44px touch target */
+.gm-stir .ky-switch { position: relative; flex: none; }
+.gm-stir .ky-switch::before { content: ""; position: absolute; inset: -6px; }
 
 /* ============================================================================
    Chem-Blitz
@@ -800,7 +850,7 @@
   .gm-target-orb { inline-size: 56px; block-size: 56px; }
   .gm-blitz-stage { gap: 14px; }
   .gm-ring { inline-size: 92px; block-size: 92px; }
-  .gm-tally-row { grid-template-columns: minmax(0, 1fr) 56px 56px minmax(80px, auto); }
+  .gm-tally-row { grid-template-columns: minmax(0, 1fr) calc(56px * var(--fs, 1)) calc(56px * var(--fs, 1)) minmax(80px, auto); }
 }
 
 /* ---------- Reduced motion: hold every 3D element still ---------- */
@@ -827,6 +877,7 @@
   .gm-foot .ky-btn:has(> .gm-narrow-sr) { flex: none; padding-inline: 16px; }
 }
 .gm-foot .ky-btn { white-space: nowrap; }
+.gm-foot .ky-btn svg { flex: none; }
 .gm-foot .gm-tf-key, .gm-foot .gm-cta { white-space: normal; }
 
 /* iPad landscape / desktop: the lead stage fills the left pane */

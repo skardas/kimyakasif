@@ -1389,7 +1389,8 @@ button.ky-chip.on, button.ky-chip[aria-pressed="true"] {
   align-items: center;
   justify-content: center;
   gap: 4px;
-  font-size: 0.6875rem;
+  /* Tab labels stay at their base size so five tabs fit at every text step. */
+  font-size: calc(0.6875rem / var(--fs, 1));
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.12s var(--ease-out), background-color 0.12s ease, color 0.12s ease;
@@ -1645,15 +1646,16 @@ button.ky-chip.on, button.ky-chip[aria-pressed="true"] {
   inset: 0;
   z-index: 90;
   background: var(--bg);
-  overflow-y: auto;
+  overflow: hidden;
   overscroll-behavior: contain;
   display: flex;
   justify-content: center;
 }
 
+/* One viewport: hero and footer stay put, only the step body scrolls (large text, short phones). */
 .onboarding-sheet {
   inline-size: min(100%, 520px);
-  min-block-size: 100dvh;
+  block-size: 100dvh;
   display: flex;
   flex-direction: column;
 }
@@ -1676,7 +1678,7 @@ button.ky-chip.on, button.ky-chip[aria-pressed="true"] {
 }
 
 .onboarding-hero.compact {
-  block-size: calc(170px + env(safe-area-inset-top, 0px));
+  block-size: calc(190px + env(safe-area-inset-top, 0px));
   min-block-size: 0;
   border-radius: 0 0 36px 36px;
 }
@@ -1745,28 +1747,26 @@ button.ky-chip.on, button.ky-chip[aria-pressed="true"] {
   display: flex;
   align-items: flex-end;
   gap: 16px;
-  block-size: 110px;
+  block-size: 126px;
 }
 
+/* OnboardingGoal artboard: 56px keycap columns 30 + n×2.4 tall; the chosen goal lit teal,
+   the others dark slate. */
 .hero-goal-bar {
-  inline-size: 34px;
-  border-radius: 10px 10px 7px 7px;
-  background: linear-gradient(180deg, #5ff2df, #0c8073);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 5px 0 #07564e, 0 14px 20px -10px rgba(0, 0, 0, 0.7);
-  transform: rotateX(14deg);
-  transform-origin: 50% 100%;
-  opacity: 0.6;
-  transition: block-size 0.35s var(--ease-out), opacity 0.2s ease, background 0.2s ease;
+  inline-size: 56px;
+  border-radius: 14px;
+  background: linear-gradient(160deg, #2a3a57 0%, #141e33 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 6px 0 #070c17;
+  transition: block-size 0.35s var(--ease-out), background 0.2s ease, box-shadow 0.2s ease;
 }
 
-.hero-goal-bar.bar-0 { block-size: 36%; }
-.hero-goal-bar.bar-1 { block-size: 62%; }
-.hero-goal-bar.bar-2 { block-size: 100%; }
+.hero-goal-bar.bar-0 { block-size: 54px; }
+.hero-goal-bar.bar-1 { block-size: 78px; }
+.hero-goal-bar.bar-2 { block-size: 126px; }
 
 .hero-goal-bar.on {
-  opacity: 1;
-  background: linear-gradient(180deg, #ffe08a, #c47f0c);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 5px 0 #7a4a02, 0 0 24px rgba(246, 183, 60, 0.45);
+  background: linear-gradient(160deg, #5ff2df 0%, #0c8073 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 6px 0 #07564e, 0 0 24px rgba(45, 217, 195, 0.35);
   animation: kyPop2 0.35s cubic-bezier(0.2, 1.4, 0.4, 1) both;
 }
 
@@ -1798,16 +1798,23 @@ button.ky-chip.on, button.ky-chip[aria-pressed="true"] {
 }
 
 .onboarding-body {
-  flex: 1 0 auto;
-  padding: 28px 24px 8px;
+  flex: 1 1 auto;
+  min-block-size: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  padding: 26px 24px 8px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+.onboarding-body::-webkit-scrollbar { display: none; }
+.onboarding-body > * { flex-shrink: 0; }
+
 .onboarding-body h1 {
   margin: 0;
-  font-size: clamp(1.75rem, 7.6vw, 2.125rem);
+  font-size: clamp(1.75rem, 7.6vw, 1.875rem);
   font-weight: 800;
 }
 
@@ -1815,15 +1822,17 @@ button.ky-chip.on, button.ky-chip[aria-pressed="true"] {
 
 .onboarding-body p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.94rem;
   line-height: 1.5;
   color: var(--text2);
 }
 
+.onboarding-body.step-0 p { font-size: 1rem; }
+
 .onboarding-options {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
   margin-block-start: 12px;
 }
 
