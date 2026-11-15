@@ -528,7 +528,9 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
     </span>
   );
 
-  const showNavigator = (isExamMode || inReview) && questions.length > 1;
+  // The numbered question grid took a third of a phone screen; the header ("Soru 6 / 13"), the
+  // progress bar and the previous/next buttons already cover navigation, so it is not shown.
+  const showNavigator = false;
 
   return (
     <div className="ky-immersive qz" role="dialog" aria-modal="true" aria-label={title}>
