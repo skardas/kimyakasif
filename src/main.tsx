@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { App } from './App';
 import { Capacitor } from '@capacitor/core';
 import { App as NativeApp } from '@capacitor/app';
-import { hasBackLayers } from './hooks/useBackDismiss';
+import { dismissTopLayer } from './hooks/useBackDismiss';
 import { readStoredLanguage } from './store/useAppStore';
 import { ensureUnitLanguage } from './data/units/loader';
 import '@fontsource-variable/figtree';
@@ -43,8 +43,7 @@ if ('serviceWorker' in navigator && Capacitor.isNativePlatform()) {
 // nothing open, send the app to the background instead of killing it.
 if (Capacitor.isNativePlatform()) {
   NativeApp.addListener('backButton', () => {
-    if (hasBackLayers()) window.history.back();
-    else NativeApp.minimizeApp().catch(() => {});
+    if (!dismissTopLayer()) NativeApp.minimizeApp().catch(() => {});
   }).catch(() => {});
 }
 

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Capacitor } from '@capacitor/core';
 
 /**
  * Makes the system back gesture / Android back button close the top-most open layer
@@ -8,6 +9,12 @@ import { useEffect, useRef } from 'react';
  * close handler; only the top-most layer reacts. When a layer is closed from the UI, its history
  * entry is removed again so the stack never grows. If the close handler keeps the layer open
  * (e.g. it only shows an "are you sure?" dialog), the entry is re-armed.
+ *
+ * In the Android/iOS app no history entries are used: the Android back button calls
+ * dismissTopLayer() directly (main.tsx) and iOS has no back navigation in the WebView. History
+ * traversals are asynchronous, and on a busy Android WebView a back() could land seconds later,
+ * after the next layer had pushed its own entry, and close that layer instead (tap the Cards tab
+ * right after closing a slide deck with the back button → thrown back to the home tab).
  */
 interface Layer {
   id: number;
@@ -18,6 +25,7 @@ const layers: Layer[] = [];
 let nextId = 1;
 let ignorePops = 0;
 let listening = false;
+const useHistory = !Capacitor.isNativePlatform();
 
 function onPopState(): void {
   if (ignorePops > 0) {
@@ -33,9 +41,15 @@ function onPopState(): void {
   }, 0);
 }
 
-/** True while at least one layer would react to a back navigation. */
-export function hasBackLayers(): boolean {
-  return layers.length > 0;
+/**
+ * Native back button: closes the top-most layer at once. Returns false when there is none.
+ * (A layer whose close handler keeps it open, e.g. behind an "are you sure?" dialog, simply stays.)
+ */
+export function dismissTopLayer(): boolean {
+  const top = layers[layers.length - 1];
+  if (!top) return false;
+  top.close();
+  return true;
 }
 
 export function useBackDismiss(open: boolean, onClose: () => void): void {
@@ -43,7 +57,16 @@ export function useBackDismiss(open: boolean, onClose: () => void): void {
   closeRef.current = onClose;
 
   useEffect(() => {
-    if (!open || typeof window === 'undefined' || !window.history?.pushState) return undefined;
+    if (!open || typeof window === 'undefined') return undefined;
+    if (!useHistory) {
+      const layer: Layer = { id: nextId++, close: () => closeRef.current() };
+      layers.push(layer);
+      return () => {
+        const idx = layers.indexOf(layer);
+        if (idx >= 0) layers.splice(idx, 1);
+      };
+    }
+    if (!window.history?.pushState) return undefined;
     if (!listening) {
       window.addEventListener('popstate', onPopState);
       listening = true;

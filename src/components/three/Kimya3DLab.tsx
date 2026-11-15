@@ -487,7 +487,14 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
     // 'default' lets the OS pick the GPU ('high-performance' forces the discrete GPU on laptops and
     // buys nothing on phones). Touch devices render at most 1.5x: with 4x MSAA a 2x drawing buffer
     // costs roughly twice the GPU memory for a difference that is hard to see on a phone screen.
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'default' });
+    let renderer: THREE.WebGLRenderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'default' });
+    } catch {
+      // No usable WebGL context (blocked, GPU process gone, too many contexts): 2D fallback.
+      setWebglSupported(false);
+      return;
+    }
     renderer.setSize(width, height);
     const coarsePointer = typeof window.matchMedia === 'function' && window.matchMedia('(pointer: coarse)').matches;
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, coarsePointer ? 1.5 : 2));
@@ -574,6 +581,19 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
       const frameAt = timestamp ?? performance.now();
       if (frameAt - lastFrameAt < MIN_FRAME_MS) return;
       lastFrameAt = frameAt;
+      try {
+        drawFrame(timestamp);
+      } catch (err) {
+        // A WebGL failure mid-flight (lost context, shader that will not compile on this GPU)
+        // must not take the whole app down: stop the loop and switch to the 2D fallback.
+        if (animFrameIdRef.current) cancelAnimationFrame(animFrameIdRef.current);
+        animFrameIdRef.current = null;
+        console.error('3D lab render failed, using fallback', err);
+        setWebglSupported(false);
+      }
+    };
+
+    const drawFrame = (timestamp?: number) => {
 
       timer.update(timestamp);
       const elapsedTime = timer.getElapsed();
