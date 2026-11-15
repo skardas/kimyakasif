@@ -147,6 +147,17 @@ const bareTip = (s: string) => {
   return t.charAt(0).toLocaleUpperCase('tr') + t.slice(1);
 };
 
+// Some non-Turkish seed tips still carry a Turkish exam label ("ÖSYM trap: ...", "ÖSYM-Regel: ...",
+// "Xefika ÖSYM-ê: ..."). The template already supplies a localized "Exam note" label, so drop the seed
+// label; tips without one are returned unchanged.
+const bareForeignTip = (s: string, lang: LanguageCode) => {
+  const b = bare(s);
+  // Leading tip labels ("ÖSYM trap:", or the neutral "Exam trap:" / "Prüfungsfalle:" /
+  // "Piège d’examen :" / "Xefika azmûnê:" used in unit seeds) duplicate the template's own "Exam note".
+  const t = b.replace(/^(?:[^:：]*ÖSYM[^:：]*|Exam (?:trap|rule)|Prüfungs(?:falle|regel)|(?:Piège|Règle) d[’']examen|(?:Xefika|Qaîdeya) azmûnê)\s*[:：]\s*/u, '');
+  return t === b ? b : t.charAt(0).toLocaleUpperCase(lang) + t.slice(1);
+};
+
 export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> = {
   tr: {
     romanTrue: (combo) => `Buna göre doğru olan yargıları içeren seçenek "${combo}" seçeneğidir.`,
@@ -170,11 +181,11 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
   en: {
     romanTrue: (combo) => `Therefore, the option containing exactly the correct statements is "${combo}".`,
     romanFalse: (combo) => `Therefore, the option containing exactly the incorrect statements is "${combo}".`,
-    romanValid: (n, fact, tip) => `${n}. Correct: ${bare(fact)}.${tip ? ` (Exam note: ${bare(tip)}.)` : ''}`,
+    romanValid: (n, fact, tip) => `${n}. Correct: ${bare(fact)}.${tip ? ` (Exam note: ${bareForeignTip(tip, 'en')}.)` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. Incorrect: ${why ? `${bare(why)}. ` : ''}Correct version: ${bare(fact)}.`,
     negativeTrapWhy: (opt, why, fact) => `The incorrect statement is "${bare(opt)}". ${bare(why)}. Correct version: ${bare(fact)}. All the other options are correct.`,
     negativeTrapDefault: (opt, fact) => `The incorrect statement is "${bare(opt)}". Correct version: ${bare(fact)}. All the other options are correct.`,
-    positiveConceptTip: (opt, tip) => `The correct statement is "${bare(opt)}". Exam note: ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `The correct statement is "${bare(opt)}". Exam note: ${bareForeignTip(tip, 'en')}.`,
     positiveConceptDefault: (opt) => `The correct statement is "${bare(opt)}".`,
     otherOptionsIntro: 'The other options are incorrect; the correct versions are:',
     otherOptionsWhyIntro: 'The other options are incorrect:',
@@ -189,11 +200,11 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
   de: {
     romanTrue: (combo) => `Die Antwort, die genau die richtigen Aussagen enthält, ist daher "${combo}".`,
     romanFalse: (combo) => `Die Antwort, die genau die falschen Aussagen enthält, ist daher "${combo}".`,
-    romanValid: (n, fact, tip) => `${n}. Richtig: ${bare(fact)}.${tip ? ` (Prüfungshinweis: ${bare(tip)}.)` : ''}`,
+    romanValid: (n, fact, tip) => `${n}. Richtig: ${bare(fact)}.${tip ? ` (Prüfungshinweis: ${bareForeignTip(tip, 'de')}.)` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. Falsch: ${why ? `${bare(why)}. ` : ''}Richtig ist: ${bare(fact)}.`,
     negativeTrapWhy: (opt, why, fact) => `Die falsche Aussage lautet "${bare(opt)}". ${bare(why)}. Richtig ist: ${bare(fact)}. Alle übrigen Aussagen sind zutreffend.`,
     negativeTrapDefault: (opt, fact) => `Die falsche Aussage lautet "${bare(opt)}". Richtig ist: ${bare(fact)}. Alle übrigen Aussagen sind zutreffend.`,
-    positiveConceptTip: (opt, tip) => `Die zutreffende Aussage ist "${bare(opt)}". Prüfungshinweis: ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `Die zutreffende Aussage ist "${bare(opt)}". Prüfungshinweis: ${bareForeignTip(tip, 'de')}.`,
     positiveConceptDefault: (opt) => `Die zutreffende Aussage ist "${bare(opt)}".`,
     otherOptionsIntro: 'Die übrigen Antworten sind falsch; richtig wäre:',
     otherOptionsWhyIntro: 'Die übrigen Antworten sind falsch:',
@@ -208,11 +219,11 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
   fr: {
     romanTrue: (combo) => `La réponse qui contient exactement les affirmations exactes est donc « ${combo} ».`,
     romanFalse: (combo) => `La réponse qui contient exactement les affirmations fausses est donc « ${combo} ».`,
-    romanValid: (n, fact, tip) => `${n}. Exact : ${bare(fact)}.${tip ? ` (Conseil : ${bare(tip)}.)` : ''}`,
+    romanValid: (n, fact, tip) => `${n}. Exact : ${bare(fact)}.${tip ? ` (Conseil : ${bareForeignTip(tip, 'fr')}.)` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. Faux : ${why ? `${bare(why)}. ` : ''}Version exacte : ${bare(fact)}.`,
     negativeTrapWhy: (opt, why, fact) => `L'affirmation incorrecte est « ${bare(opt)} ». ${bare(why)}. Version exacte : ${bare(fact)}. Toutes les autres propositions sont exactes.`,
     negativeTrapDefault: (opt, fact) => `L'affirmation incorrecte est « ${bare(opt)} ». Version exacte : ${bare(fact)}. Toutes les autres propositions sont exactes.`,
-    positiveConceptTip: (opt, tip) => `L'affirmation exacte est « ${bare(opt)} ». Conseil d'examen : ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `L'affirmation exacte est « ${bare(opt)} ». Conseil d'examen : ${bareForeignTip(tip, 'fr')}.`,
     positiveConceptDefault: (opt) => `L'affirmation exacte est « ${bare(opt)} ».`,
     otherOptionsIntro: 'Les autres propositions sont fausses ; les versions exactes sont :',
     otherOptionsWhyIntro: 'Les autres propositions sont fausses :',
@@ -227,11 +238,11 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
   ru: {
     romanTrue: (combo) => `Следовательно, верны именно утверждения варианта «${combo}».`,
     romanFalse: (combo) => `Следовательно, неверны именно утверждения варианта «${combo}».`,
-    romanValid: (n, fact, tip) => `${n}. Верно. ${bare(fact)}.${tip ? ` (Подсказка: ${bare(tip)}.)` : ''}`,
+    romanValid: (n, fact, tip) => `${n}. Верно. ${bare(fact)}.${tip ? ` (Подсказка: ${bareForeignTip(tip, 'ru')}.)` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. Неверно. ${why ? `${bare(why)}. ` : ''}Верная формулировка: «${bare(fact)}».`,
     negativeTrapWhy: (opt, why, fact) => `Неверное утверждение — «${bare(opt)}». ${bare(why)}. Верная формулировка: «${bare(fact)}». Остальные утверждения верны.`,
     negativeTrapDefault: (opt, fact) => `Неверное утверждение — «${bare(opt)}». Верная формулировка: «${bare(fact)}». Остальные утверждения верны.`,
-    positiveConceptTip: (opt, tip) => `Верное утверждение — «${bare(opt)}». Совет к экзамену: ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `Верное утверждение — «${bare(opt)}». Совет к экзамену: ${bareForeignTip(tip, 'ru')}.`,
     positiveConceptDefault: (opt) => `Верное утверждение — «${bare(opt)}».`,
     otherOptionsIntro: 'Остальные варианты неверны; верные формулировки:',
     otherOptionsWhyIntro: 'Остальные варианты неверны:',
@@ -246,11 +257,11 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
   ar: {
     romanTrue: (combo) => `وعليه فالخيار الذي يضم العبارات الصحيحة كلها ولا يضم غيرها هو "${combo}".`,
     romanFalse: (combo) => `وعليه فالخيار الذي يضم العبارات الخاطئة كلها ولا يضم غيرها هو "${combo}".`,
-    romanValid: (n, fact, tip) => `${n}. صحيحة: ${bare(fact)}.${tip ? ` (ملاحظة: ${bare(tip)}.)` : ''}`,
+    romanValid: (n, fact, tip) => `${n}. صحيحة: ${bare(fact)}.${tip ? ` (ملاحظة: ${bareForeignTip(tip, 'ar')}.)` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. خاطئة: ${why ? `${bare(why)}. ` : ''}الصواب: ${bare(fact)}.`,
     negativeTrapWhy: (opt, why, fact) => `العبارة غير الصحيحة هي "${bare(opt)}". ${bare(why)}. الصواب: ${bare(fact)}. جميع العبارات الأخرى صحيحة.`,
     negativeTrapDefault: (opt, fact) => `العبارة غير الصحيحة هي "${bare(opt)}". الصواب: ${bare(fact)}. جميع العبارات الأخرى صحيحة.`,
-    positiveConceptTip: (opt, tip) => `العبارة الصحيحة هي "${bare(opt)}". تنبيه للامتحان: ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `العبارة الصحيحة هي "${bare(opt)}". تنبيه للامتحان: ${bareForeignTip(tip, 'ar')}.`,
     positiveConceptDefault: (opt) => `العبارة الصحيحة هي "${bare(opt)}".`,
     otherOptionsIntro: 'الخيارات الأخرى خاطئة، والصواب فيها:',
     otherOptionsWhyIntro: 'الخيارات الأخرى خاطئة:',
@@ -265,11 +276,11 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
   zh: {
     romanTrue: (combo) => `因此，恰好包含全部正确说法的选项是“${combo}”。`,
     romanFalse: (combo) => `因此，恰好包含全部错误说法的选项是“${combo}”。`,
-    romanValid: (n, fact, tip) => `${n}. 正确：${bare(fact)}。${tip ? `解题要点：${bare(tip)}。` : ''}`,
+    romanValid: (n, fact, tip) => `${n}. 正确：${bare(fact)}。${tip ? `解题要点：${bareForeignTip(tip, 'zh')}。` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. 错误：${why ? `${bare(why)}。` : ''}正确说法：${bare(fact)}。`,
     negativeTrapWhy: (opt, why, fact) => `不正确的说法是“${bare(opt)}”。${bare(why)}。正确说法：${bare(fact)}。其余选项均正确。`,
     negativeTrapDefault: (opt, fact) => `不正确的说法是“${bare(opt)}”。正确说法：${bare(fact)}。其余选项均正确。`,
-    positiveConceptTip: (opt, tip) => `正确的说法是“${bare(opt)}”。解题要点：${bare(tip)}。`,
+    positiveConceptTip: (opt, tip) => `正确的说法是“${bare(opt)}”。解题要点：${bareForeignTip(tip, 'zh')}。`,
     positiveConceptDefault: (opt) => `正确的说法是“${bare(opt)}”。`,
     otherOptionsIntro: '其余选项均错误，正确说法分别为：',
     otherOptionsWhyIntro: '其余选项均错误：',
@@ -284,11 +295,11 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
   ku: {
     romanTrue: (combo) => `Ji ber vê yekê vebijarka ku tenê gotinên rast dihewîne "${combo}" e.`,
     romanFalse: (combo) => `Ji ber vê yekê vebijarka ku tenê gotinên şaş dihewîne "${combo}" e.`,
-    romanValid: (n, fact, tip) => `${n}. Rast e: ${bare(fact)}.${tip ? ` (Nîşe: ${bare(tip)}.)` : ''}`,
+    romanValid: (n, fact, tip) => `${n}. Rast e: ${bare(fact)}.${tip ? ` (Nîşe: ${bareForeignTip(tip, 'ku')}.)` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. Şaş e: ${why ? `${bare(why)}. ` : ''}Ya rast: ${bare(fact)}.`,
     negativeTrapWhy: (opt, why, fact) => `Gotina şaş "${bare(opt)}" e. ${bare(why)}. Ya rast: ${bare(fact)}. Hemû gotinên din rast in.`,
     negativeTrapDefault: (opt, fact) => `Gotina şaş "${bare(opt)}" e. Ya rast: ${bare(fact)}. Hemû gotinên din rast in.`,
-    positiveConceptTip: (opt, tip) => `Gotina rast "${bare(opt)}" e. Serişteya azmûnê: ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `Gotina rast "${bare(opt)}" e. Serişteya azmûnê: ${bareForeignTip(tip, 'ku')}.`,
     positiveConceptDefault: (opt) => `Gotina rast "${bare(opt)}" e.`,
     otherOptionsIntro: 'Vebijarkên din şaş in; rastiyên wan ev in:',
     otherOptionsWhyIntro: 'Vebijarkên din şaş in:',

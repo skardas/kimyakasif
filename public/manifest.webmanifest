@@ -1,6 +1,6 @@
 {
-  "name": "Kimya YKS 3D — TYT & AYT Kimya Laboratuvarı",
-  "short_name": "Kimya 3D",
+  "name": "Kimolab — Kimya 3D",
+  "short_name": "Kimolab",
   "description": "TYT ve AYT Kimya tüm konular, 3D moleküler simülasyonlar, flashcardlar, mini oyunlar ve 3072 soruluk çevrimdışı sınav platformu.",
   "start_url": "/",
   "scope": "/",

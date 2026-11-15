@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Check } from 'lucide-react';
-import { LANGUAGES } from '../../i18n/translations';
+import { LANGUAGES, UI_TRANSLATIONS } from '../../i18n/translations';
 import { SHELL_STRINGS } from '../../i18n/shellStrings';
 import { APP_SHELL_STRINGS } from '../../i18n/appShellStrings';
 import { DAILY_GOAL_OPTIONS, type DailyGoal } from '../../store/usePreferences';
@@ -15,7 +15,7 @@ export interface OnboardingProps {
 }
 
 /** Dark 3D hero per step: NH3 molecule → TYT→AYT tiles → goal bars → lit atom. */
-const OnboardingHero: React.FC<{ step: number; chip: string; goalIndex: number }> = ({ step, chip, goalIndex }) => (
+const OnboardingHero: React.FC<{ step: number; chip: string; goalIndex: number; tiles: [string, string] }> = ({ step, chip, goalIndex, tiles }) => (
   <div
     className={`onboarding-hero hero-3d-stage ky-stage step-${step} ${step > 0 ? 'compact' : ''}`}
     aria-hidden="true"
@@ -42,9 +42,9 @@ const OnboardingHero: React.FC<{ step: number; chip: string; goalIndex: number }
     )}
     {step === 1 && (
       <div className="hero-track">
-        <span className="ky-tile ky-float">TYT</span>
+        <span className="ky-tile ky-float">{tiles[0]}</span>
         <ArrowRight className="hero-track-arrow" size={28} strokeWidth={2.6} />
-        <span className="ky-tile ky-tile--violet ky-float">AYT</span>
+        <span className="ky-tile ky-tile--violet ky-float">{tiles[1]}</span>
       </div>
     )}
     {step === 2 && (
@@ -72,9 +72,13 @@ export const Onboarding: React.FC<OnboardingProps> = ({ lang, onSetLanguage, onF
   const [examPref, setExamPref] = useState<ExamPreference>('ALL');
   const [goal, setGoal] = useState<DailyGoal>(20);
 
+  const f = (UI_TRANSLATIONS[lang] ?? UI_TRANSLATIONS.tr).filters;
+  // Keycap badges and hero tiles: Turkish shows the exam names; other languages
+  // show the stage number, because the level names do not fit a keycap.
+  const tiles: [string, string] = lang === 'tr' ? ['TYT', 'AYT'] : ['1', '2'];
   const examOptions: { id: ExamPreference; badge: string; title: string; desc: string }[] = [
-    { id: 'TYT', badge: 'TYT', title: 'TYT Kimya', desc: s.tytDesc },
-    { id: 'AYT', badge: 'AYT', title: 'AYT Kimya', desc: s.aytDesc },
+    { id: 'TYT', badge: tiles[0], title: f.tyt, desc: s.tytDesc },
+    { id: 'AYT', badge: tiles[1], title: f.ayt, desc: s.aytDesc },
     { id: 'ALL', badge: '1→2', title: s.both, desc: s.bothDesc },
   ];
 
@@ -83,7 +87,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ lang, onSetLanguage, onF
   return (
     <div className="onboarding-overlay" role="dialog" aria-modal="true" aria-labelledby="onboarding-title">
       <div className="onboarding-sheet">
-        <OnboardingHero step={step} chip={sh.obChips[0]} goalIndex={DAILY_GOAL_OPTIONS.indexOf(goal)} />
+        <OnboardingHero step={step} chip={sh.obChips[0]} goalIndex={DAILY_GOAL_OPTIONS.indexOf(goal)} tiles={tiles} />
 
         {step === 0 && (
           <div key="step-body-0" className="onboarding-body step-0 onboarding-3d-enter">

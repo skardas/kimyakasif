@@ -127,5 +127,8 @@ button.ky-row.st-link {
 /* Tap targets: every segment key at least 44px wide, and the 32px-tall switch
    gets an invisible 44px hit area (look unchanged). */
 .st .ky-seg > button { min-inline-size: 44px; }
+/* Exam-preference choices: level names ("Fondamentaux → Approfondissement") are longer than
+   TYT/AYT, so the keys wrap onto a second line instead of overflowing a 320–430px card. */
+.st-track-seg { flex-wrap: wrap; max-inline-size: 100%; }
 .st .ky-switch { position: relative; flex: none; }
 .st .ky-switch::before { content: ''; position: absolute; inset: -6px -4px; }

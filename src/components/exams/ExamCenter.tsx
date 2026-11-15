@@ -436,14 +436,14 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
               <optgroup label={rx.tytUnitsGroup}>
                 {ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'TYT').map((u) => (
                   <option key={u.id} value={u.id}>
-                    {u.id.toUpperCase()} · {u.title[lang] || u.title.tr} ({rx.gradeN(u.grade)})
+                    {u.id.toUpperCase()} · {u.title[lang] || u.title.tr}{lang === 'tr' ? ` (${rx.gradeN(u.grade)})` : ''}
                   </option>
                 ))}
               </optgroup>
               <optgroup label={rx.aytUnitsGroup}>
                 {ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'AYT').map((u) => (
                   <option key={u.id} value={u.id}>
-                    {u.id.toUpperCase()} · {u.title[lang] || u.title.tr} ({rx.gradeN(u.grade)})
+                    {u.id.toUpperCase()} · {u.title[lang] || u.title.tr}{lang === 'tr' ? ` (${rx.gradeN(u.grade)})` : ''}
                   </option>
                 ))}
               </optgroup>

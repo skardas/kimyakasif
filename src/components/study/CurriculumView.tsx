@@ -6,6 +6,7 @@ import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { CURRICULUM_STRINGS } from '../../i18n/curriculumStrings';
 import { SLIDE_DECK_STRINGS } from '../../i18n/slideDeckStrings';
 import { redesignStrings } from '../../i18n/redesignStrings';
+import { levelLabel } from '../../i18n/examLevels';
 import { ALL_CHEMISTRY_UNITS } from '../../data/units';
 import type { ChemistryUnitSeedData } from '../../data/units/types';
 import { UnitSlideDeckModal } from './UnitSlideDeckModal';
@@ -23,7 +24,7 @@ export const UNIT_ACTION_PILLS: Record<LanguageCode, UnitActionPillLabels> = {
   en: { slide: 'Slide', quiz: 'Test', lab3d: '3D', cards: 'Card' },
   de: { slide: 'Folie', quiz: 'Test', lab3d: '3D', cards: 'Karte' },
   fr: { slide: 'Diapo', quiz: 'Test', lab3d: '3D', cards: 'Carte' },
-  ru: { slide: 'Слайды', quiz: 'Тест', lab3d: '3D', cards: 'Карточки' },
+  ru: { slide: 'Слайды', quiz: 'Тест', lab3d: '3D', cards: 'Карты' },
   ar: { slide: 'شريحة', quiz: 'اختبار', lab3d: '3D', cards: 'بطاقة' },
   zh: { slide: '幻灯片', quiz: '测验', lab3d: '3D', cards: '闪卡' },
   ku: { slide: 'Slayt', quiz: 'Test', lab3d: '3D', cards: 'Kart' },
@@ -46,7 +47,7 @@ export interface CurriculumViewProps {
 }
 
 /**
- * Home: title + profile + settings, one "today's goal" row, a Tümü/TYT/AYT filter
+ * Home: title + profile + settings, one "today's goal" row, a Tümü/TYT/AYT filter (level names via levelLabel)
  * and the unit list. Each unit card has four equal action keys.
  */
 export const CurriculumView: React.FC<CurriculumViewProps> = ({
@@ -153,8 +154,8 @@ export const CurriculumView: React.FC<CurriculumViewProps> = ({
           {(
             [
               ['ALL', `${r.all} · ${ALL_CHEMISTRY_UNITS.length}`],
-              ['TYT', `TYT · ${tytCount}`],
-              ['AYT', `AYT · ${aytCount}`],
+              ['TYT', `${levelLabel('TYT', lang)} · ${tytCount}`],
+              ['AYT', `${levelLabel('AYT', lang)} · ${aytCount}`],
             ] as const
           ).map(([key, label]) => (
             <button
@@ -183,7 +184,7 @@ export const CurriculumView: React.FC<CurriculumViewProps> = ({
             return (
               <article key={u.id} className="ky-card cur-unit">
                 <div>
-                  <p className="ky-fs-12 cur-unit__meta">{r.unitMeta(no, u.exam, u.grade)}</p>
+                  <p className="ky-fs-12 cur-unit__meta">{r.unitMeta(no, levelLabel(u.exam, lang), u.grade)}</p>
                   <h2 className="ky-fs-20 cur-unit__title">{title}</h2>
                   <p className="ky-fs-14 cur-unit__sub">{formatChemText(u.subtitle[lang] || u.subtitle.tr)}</p>
                 </div>

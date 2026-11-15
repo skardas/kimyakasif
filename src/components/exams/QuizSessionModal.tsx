@@ -167,7 +167,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
 
       let tgResult: TgPercentileResult | undefined;
       if (examType === 'TG') {
-        tgResult = estimateTgPercentile(net);
+        tgResult = estimateTgPercentile(net, lang);
       }
 
       setFinalResult({
@@ -221,6 +221,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
       unitId,
       title,
       onSaveAttempt,
+      lang,
     ]
   );
 
@@ -442,9 +443,11 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
 
             {finalResult.tgPercentile && (
               <div className="ky-card qz-tg">
-                <p className="ky-fs-14">
-                  <strong>{finalResult.tgPercentile.estimatedRankRange}</strong>
-                </p>
+                {finalResult.tgPercentile.estimatedRankRange && (
+                  <p className="ky-fs-14">
+                    <strong>{finalResult.tgPercentile.estimatedRankRange}</strong>
+                  </p>
+                )}
                 <p className="ky-fs-14 qz-muted">“{finalResult.tgPercentile.feedbackMessage}”</p>
               </div>
             )}

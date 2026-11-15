@@ -206,7 +206,7 @@ export const App: React.FC = () => {
             </div>
           </div>
           <strong className="splash-word">
-            Kimya <em>3D</em>
+            Kimo<em>lab</em>
           </strong>
           <span className="splash-subtitle">{sh.splashSubtitle}</span>
           <div className="splash-footer" aria-hidden="true">
@@ -226,7 +226,7 @@ export const App: React.FC = () => {
           </div>
           <div className="sidebar-brand-text">
             <strong>
-              Kimya <em>3D</em>
+              Kimo<em>lab</em>
             </strong>
             <span>{sh.brandTagline}</span>
           </div>

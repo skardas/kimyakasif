@@ -1303,11 +1303,11 @@ export async function runTier2Tests(): Promise<void> {
 
       // Translation dictionary active strings reflect valid Turkish labels
       const t = UI_TRANSLATIONS[store.language];
-      expect(t.appName).toBe('Kimya 3D');
+      expect(t.appName).toBe('Kimolab');
 
       // Verify harness translation resolver handles unknown lang and non-existent keys
       expect(resolveTranslationKey('de', 'nonExistentKey')).toBe('nonExistentKey');
-      expect(resolveTranslationKey('unknownLang', 'appName')).toBe('Kimya 3D');
+      expect(resolveTranslationKey('unknownLang', 'appName')).toBe('Kimolab');
 
       // Verify 100% dictionary completeness across all 8 languages against Turkish baseline
       const trKeys = Object.keys(UI_TRANSLATIONS.tr) as (keyof typeof UI_TRANSLATIONS.tr)[];

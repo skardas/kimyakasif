@@ -31,6 +31,7 @@ import {
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { redesignStrings, redesignExtra, type LabCategoryId } from '../../i18n/redesignStrings';
+import { levelLabel } from '../../i18n/examLevels';
 import {
   PRIMARY_32_SCENES,
   getSceneById,
@@ -824,7 +825,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                       <bdi>{formatChemText(sc.title[lang] || sc.title.tr)}</bdi>
                     </span>
                     <span className="lab-tile__meta">
-                      <span className={`ky-chip ${sc.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'}`}>{sc.badge}</span>
+                      <span className={`ky-chip ${sc.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'}`}>{levelLabel(sc.badge, lang)}</span>
                       <span className="ky-fs-12">{catLabel(sc.category)}</span>
                     </span>
                   </span>
@@ -922,7 +923,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
             <h2 className="ky-fs-24 lab-info__title">
               <bdi>{formatChemText(sceneTitle)}</bdi>{' '}
               <span className={`ky-chip ${currentScene.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'} lab-info__badge`}>
-                {currentScene.badge}
+                {levelLabel(currentScene.badge, lang)}
               </span>
             </h2>
             <p className="ky-fs-14 lab-info__sub">

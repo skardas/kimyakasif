@@ -27,6 +27,8 @@ export interface SlideDeckLocale {
   recallWrongMsg: string;
   recallScoreLabel: (score: number, total: number) => string;
   twinQuizTag: string;
+  /** Chip on the past-exam twin slide ("ÖSYM #1" in Turkish). */
+  twinChip: string;
   nextTwinBtn: (idx: number, total: number) => string;
   markCompleteBtn: string;
   completedEarnedLabel: string;
@@ -73,6 +75,7 @@ export const SLIDE_DECK_STRINGS: Record<LanguageCode, SlideDeckLocale> = {
     recallWrongMsg: 'Dikkat! Bu bir ÖSYM tuzağıydı.',
     recallScoreLabel: (s, t) => `Skorunuz: ${s} / ${t}`,
     twinQuizTag: 'ÖSYM ÇIKMIŞ SINAV SORUSU İKİZİ',
+    twinChip: 'ÖSYM',
     nextTwinBtn: (i, t) => `Sıradaki Soru İkizi (${i}/${t})`,
     markCompleteBtn: 'Slayt Çalışmasını Tamamla (+50 XP)',
     completedEarnedLabel: '✓ Bu Ünitenin Slayt Rehberi Tamamlandı!',
@@ -117,6 +120,7 @@ export const SLIDE_DECK_STRINGS: Record<LanguageCode, SlideDeckLocale> = {
     recallWrongMsg: 'Caution! This was an exam trap.',
     recallScoreLabel: (s, t) => `Score: ${s} / ${t}`,
     twinQuizTag: 'NATIONAL EXAM TWIN PRACTICE',
+    twinChip: 'Exam',
     nextTwinBtn: (i, t) => `Next Exam Twin (${i}/${t})`,
     markCompleteBtn: 'Complete Slide Study (+50 XP)',
     completedEarnedLabel: '✓ Study Slide Deck Completed!',
@@ -161,6 +165,7 @@ export const SLIDE_DECK_STRINGS: Record<LanguageCode, SlideDeckLocale> = {
     recallWrongMsg: 'Achtung! Das war eine typische Falle.',
     recallScoreLabel: (s, t) => `Punktzahl: ${s} / ${t}`,
     twinQuizTag: 'PRÜFUNGSZWILLING',
+    twinChip: 'Prüfung',
     nextTwinBtn: (i, t) => `Nächste Frage (${i}/${t})`,
     markCompleteBtn: 'Lerneinheit abschließen (+50 XP)',
     completedEarnedLabel: '✓ Foliensatz abgeschlossen!',
@@ -205,6 +210,7 @@ export const SLIDE_DECK_STRINGS: Record<LanguageCode, SlideDeckLocale> = {
     recallWrongMsg: 'Attention ! C’était un piège classique.',
     recallScoreLabel: (s, t) => `Score: ${s} / ${t}`,
     twinQuizTag: 'QUESTION JUMELLE D EXAMEN',
+    twinChip: 'Examen',
     nextTwinBtn: (i, t) => `Question suivante (${i}/${t})`,
     markCompleteBtn: 'Terminer cette révision (+50 XP)',
     completedEarnedLabel: '✓ Module de diapositives validé!',
@@ -249,6 +255,7 @@ export const SLIDE_DECK_STRINGS: Record<LanguageCode, SlideDeckLocale> = {
     recallWrongMsg: 'Внимание! Это была экзаменационная ловушка.',
     recallScoreLabel: (s, t) => `Твой результат: ${s} / ${t}`,
     twinQuizTag: 'АНАЛОГ ЗАДАЧИ ИЗ ПРОШЛЫХ ЭКЗАМЕНОВ',
+    twinChip: 'Экзамен',
     nextTwinBtn: (i, t) => `Следующая задача (${i}/${t})`,
     markCompleteBtn: 'Завершить слайды (+50 XP)',
     completedEarnedLabel: '✓ Слайды этой темы пройдены!',
@@ -293,6 +300,7 @@ export const SLIDE_DECK_STRINGS: Record<LanguageCode, SlideDeckLocale> = {
     recallWrongMsg: 'انتبه! هذا فخ شائع في الامتحان.',
     recallScoreLabel: (s, t) => `النتيجة: ${s} من ${t}`,
     twinQuizTag: 'سؤال على نمط امتحان القبول',
+    twinChip: 'امتحان',
     nextTwinBtn: (i, t) => `السؤال التالي (${i}/${t})`,
     markCompleteBtn: 'إتمام دراسة الشرائح (+50 نقطة)',
     completedEarnedLabel: '✓ تم إنهاء دراسة شرائح الوحدة بنجاح!',
@@ -337,6 +345,7 @@ export const SLIDE_DECK_STRINGS: Record<LanguageCode, SlideDeckLocale> = {
     recallWrongMsg: '注意！这是一个考试陷阱。',
     recallScoreLabel: (s, t) => `得分：${s} / ${t}`,
     twinQuizTag: '真题同类题',
+    twinChip: '真题',
     nextTwinBtn: (i, t) => `下一道同类题(${i}/${t})`,
     markCompleteBtn: '完成幻灯片学习(+50经验)',
     completedEarnedLabel: '✓ 本单元幻灯片已学完！',
@@ -380,7 +389,8 @@ export const SLIDE_DECK_STRINGS: Record<LanguageCode, SlideDeckLocale> = {
     recallCorrectMsg: 'Aferîn, te rast dît!',
     recallWrongMsg: 'Hişyar be! Ev xefikeke azmûnê bû.',
     recallScoreLabel: (s, t) => `Pûana te: ${s} / ${t}`,
-    twinQuizTag: 'CÊWIYA PIRSEKE ÖSYM-Ê YA BERÊ',
+    twinQuizTag: 'CÊWIYA PIRSEKE AZMÛNÊ YA BERÊ',
+    twinChip: 'Azmûn',
     nextTwinBtn: (i, t) => `Pirsa cêwî ya din (${i}/${t})`,
     markCompleteBtn: 'Xebata slaytan biqedîne (+50 XP)',
     completedEarnedLabel: '✓ Slaytên vê yekîneyê qediyan!',
