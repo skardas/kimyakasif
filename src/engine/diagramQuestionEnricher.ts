@@ -29,7 +29,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Основная лабораторная посуда',
         ar: 'الأدوات الزجاجية المخبرية الأساسية',
         zh: '常用实验室玻璃仪器',
-        ku: 'Amûrên Camî yên Bingehîn ên Laboratuvarê',
+        ku: 'Amûrên Camî yên Bingehîn ên Laboratuwarê',
       },
       caption: {
         tr: 'Büret hassas hacimle sıvı eklemeye, erlenmayer çalkalayarak karıştırmaya, balon joje belirli hacimde çözelti hazırlamaya, ayırma hunisi birbirine karışmayan sıvıları ayırmaya yarar.',
@@ -39,7 +39,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Бюретка служит для добавления жидкости точно отмеренными объёмами, колба Эрленмейера — для перемешивания встряхиванием, мерная колба — для приготовления раствора заданного объёма, делительная воронка — для разделения несмешивающихся жидкостей.',
         ar: 'تُستخدم السحاحة لإضافة حجوم دقيقة من السائل، والدورق المخروطي للخلط بالرج، والدورق الحجمي لتحضير محلول بحجم محدد، وقمع الفصل لفصل السوائل غير الممتزجة.',
         zh: '滴定管用于准确滴加一定体积的液体，锥形瓶用于振荡混合，容量瓶用于配制一定体积的溶液，分液漏斗用于分离互不相溶的液体。',
-        ku: 'Pîvandina qebareya rast û amadekirina helawê bi buret, erlenmayer û balon jojeyê.',
+        ku: 'Bi buretê şile bi qebareya rast tê zêdekirin, di erlenmeyerê de bi hejandinê tê tevlihevkirin, bi balona pîvanê çareseriya bi qebareya diyar tê amadekirin, bi qîfa veqetandinê jî şileyên ku tev li hev nabin tên veqetandin.',
       },
       labels: {
         tr: { item1: 'Büret', item2: 'Erlenmayer', item3: 'Balon joje', item4: 'Ayırma hunisi' },
@@ -49,7 +49,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { item1: 'Бюретка', item2: 'Колба Эрленмейера', item3: 'Мерная колба', item4: 'Делительная воронка' },
         ar: { item1: 'سحاحة', item2: 'دورق مخروطي', item3: 'دورق حجمي', item4: 'قمع فصل' },
         zh: { item1: '滴定管', item2: '锥形瓶', item3: '容量瓶', item4: '分液漏斗' },
-        ku: { item1: 'Buret', item2: 'Erlenmayer', item3: 'Balon joje', item4: 'Huniya veqetandinê' },
+        ku: { item1: 'Buret', item2: 'Erlenmeyer', item3: 'Balona pîvanê', item4: 'Qîfa veqetandinê' },
       },
     },
     {
@@ -62,7 +62,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'От алхимии к химии: перегонный куб',
         ar: 'من الخيمياء إلى الكيمياء: الإنبيق',
         zh: '从炼金术到化学：蒸馏器',
-        ku: 'Ji Sîmyayê ber bi Kîmyayê: Înbîq',
+        ku: 'Ji Alkîmiyê ber bi Kîmyayê: Înbîqa Distîlasyonê',
       },
       caption: {
         tr: 'İmbikte ısıtılan karışımın buharı başlıkta yoğuşur ve toplama kabına akar; Cabir bin Hayyan’a atfedilen bu düzenekle zaç yağı (H₂SO₄) ve kezzap (HNO₃) elde edilmiştir.',
@@ -72,7 +72,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Пар нагретой смеси конденсируется в шлеме перегонного куба и стекает в приёмник; с помощью этой установки, которую приписывают Джабиру ибн Хайяну, получали купоросное масло (H₂SO₄) и крепкую водку (HNO₃).',
         ar: 'في الإنبيق يتكاثف بخار المخلوط المسخَّن في الرأس ويسيل إلى إناء الاستقبال؛ وبهذا الجهاز المنسوب إلى جابر بن حيان حُضِّر حمض الكبريتيك (H₂SO₄) وحمض النتريك (HNO₃).',
         zh: '蒸馏器中被加热混合物的蒸气在顶部冷凝后流入接收器；人们用这种相传由贾比尔·伊本·哈扬发明的装置制得了矾油(H₂SO₄)和硝镪水(HNO₃)。',
-        ku: 'Dizgeha înbiqê ya Cabir bîn Heyyan bo bidestxistina zaç yağı û kezzapê.',
+        ku: 'Di înbîqê de buhara tevliheviya germkirî di serî de şile dibe û diherike firaxa berhevkirinê; bi vê amûrê ku bi Câbir bin Heyyan ve tê girêdan, asîda sulfurîk (H₂SO₄) û asîda nîtrîk (HNO₃) hatine bidestxistin.',
       },
       labels: {
         tr: { top: 'Başlık: buhar yoğuşur', bottom: 'Ocak', left: 'Kazan: karışım', right: 'Toplama kabı: damıtık' },
@@ -82,7 +82,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { top: 'Шлем: пар конденсируется', bottom: 'Печь', left: 'Куб: смесь', right: 'Приёмник: дистиллят' },
         ar: { top: 'الرأس: يتكاثف البخار', bottom: 'الموقد', left: 'القرعة: المخلوط', right: 'إناء الاستقبال: ناتج التقطير' },
         zh: { top: '蒸馏头：蒸气冷凝', bottom: '炉', left: '蒸馏釜：混合物', right: '接收器：馏出液' },
-        ku: { top: 'Serî: hilm şil dibe', bottom: 'Argûn', left: 'Qazan: tevlihevî', right: 'Firaxa berhevkirinê: distîlat' },
+        ku: { top: 'Serî: buhar şile dibe', bottom: 'Ocax', left: 'Qazan: tevlihevî', right: 'Firaxa berhevkirinê: distîlat' },
       },
     },
   ],
@@ -107,7 +107,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'В модели Бора электрон находится на определённых энергетических уровнях (электронных слоях); переходя с верхнего уровня на нижний, он испускает разность энергий в виде света (фотона).',
         ar: 'في نموذج بور يوجد الإلكترون في مستويات طاقة محددة (أغلفة)؛ وعندما ينتقل من مستوى أعلى إلى مستوى أدنى يُطلق فرق الطاقة بينهما على هيئة ضوء (فوتون).',
         zh: '在玻尔模型中，电子处于一定的能级（电子层）上；电子从高能级跃迁到低能级时，以光（光子）的形式放出两能级间的能量差。',
-        ku: 'Qatên xelekî yên li dora navikê û tîrêjdayîna fotonan bi hişyarbûna elektronan.',
+        ku: 'Di modela Bohr de elektron li astên enerjiyê yên diyar (qatan) cih digire; dema ji asteke jor dadikeve asteke jêr, cudahiya enerjiyê wek ronahî (foton) belav dike.',
       },
       labels: {
         tr: { n1: 'n = 1 (K)', n2: 'n = 2 (L)', n3: 'n = 3 (M)', photon: 'Foton yayılır: E = E₃ − E₂', nucleus: 'Çekirdek (+)' },
@@ -117,7 +117,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { n1: 'n = 1 (K)', n2: 'n = 2 (L)', n3: 'n = 3 (M)', photon: 'Испускается фотон: E = E₃ − E₂', nucleus: 'Ядро (+)' },
         ar: { n1: 'n = 1 (K)', n2: 'n = 2 (L)', n3: 'n = 3 (M)', photon: 'ينبعث فوتون: E = E₃ − E₂', nucleus: 'النواة (+)' },
         zh: { n1: 'n = 1 (K)', n2: 'n = 2 (L)', n3: 'n = 3 (M)', photon: '发射光子：E = E₃ − E₂', nucleus: '原子核(+)' },
-        ku: { n1: 'n = 1 (K)', n2: 'n = 2 (L)', n3: 'n = 3 (M)', photon: 'Foton tê belavkirin: E = E₃ − E₂', nucleus: 'Navik (+)' },
+        ku: { n1: 'n = 1 (K)', n2: 'n = 2 (L)', n3: 'n = 3 (M)', photon: 'Foton belav dibe: E = E₃ − E₂', nucleus: 'Navok (+)' },
       },
     },
     {
@@ -130,7 +130,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Изменение свойств элементов в периодической системе',
         ar: 'تدرج الخواص في الجدول الدوري',
         zh: '元素性质的周期性变化',
-        ku: 'Guhertina Taybetmendiyan di Tabloya Periyodîk de',
+        ku: 'Guherîna Taybetmendiyan di Tabloya Periyodîk de',
       },
       caption: {
         tr: 'Genel eğilim: aynı periyotta soldan sağa atom yarıçapı küçülür, iyonlaşma enerjisi ve elektronegatiflik artar; aynı grupta yukarıdan aşağıya atom yarıçapı ve metalik özellik artar.',
@@ -140,7 +140,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Общая закономерность: в периоде слева направо радиус атома уменьшается, энергия ионизации и электроотрицательность растут; в группе сверху вниз растут радиус атома и металлические свойства.',
         ar: 'الاتجاه العام: في الدورة الواحدة من اليسار إلى اليمين يقل نصف القطر الذري وتزداد طاقة التأين والسالبية الكهربائية؛ وفي المجموعة الواحدة من الأعلى إلى الأسفل يزداد نصف القطر الذري وتزداد الصفة الفلزية.',
         zh: '总体趋势：同周期从左到右，原子半径减小，电离能和电负性增大；同主族从上到下，原子半径增大，金属性增强。',
-        ku: 'Nîveşkêla atomê ji çepê ber bi rastê kêm dibe, enerjiya îyonîzasyonê û elektronegatîvî zêde dibe.',
+        ku: 'Meyla giştî: di periyodekê de ji çepê ber bi rastê nîvçapa atomê kêm dibe, enerjiya îyonîzasyonê û elektronegatîfî zêde dibin; di komekê de ji jor ber bi jêr nîvçapa atomê û taybetmendiya metalîk zêde dibin.',
       },
       labels: {
         tr: { radius: 'Atom yarıçapı artar', ie: 'İyonlaşma enerjisi artar', eneg: 'Elektronegatiflik artar', metallic: 'Metalik özellik artar' },
@@ -150,7 +150,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { radius: 'Атомный радиус растёт', ie: 'Энергия ионизации растёт', eneg: 'Электроотрицательность растёт', metallic: 'Металлические свойства растут' },
         ar: { radius: 'يزداد نصف القطر الذري', ie: 'تزداد طاقة التأين', eneg: 'تزداد السالبية الكهربائية', metallic: 'تزداد الصفة الفلزية' },
         zh: { radius: '原子半径增大', ie: '电离能增大', eneg: '电负性增大', metallic: '金属性增强' },
-        ku: { radius: 'Tîrêjnîva atomê zêde dibe', ie: 'Enerjiya îyonîzasyonê zêde dibe', eneg: 'Elektronegatîfî zêde dibe', metallic: 'Taybetiya metalî zêde dibe' },
+        ku: { radius: 'Nîvçapa atomê zêde dibe', ie: 'Enerjiya îyonîzasyonê zêde dibe', eneg: 'Elektronegatîfî zêde dibe', metallic: 'Taybetmendiya metalîk zêde dibe' },
       },
     },
   ],
@@ -165,7 +165,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Химические связи и структуры Льюиса',
         ar: 'الروابط الكيميائية وتراكيب لويس',
         zh: '化学键与路易斯结构式',
-        ku: 'Bendên Kîmyewî û Avahiya Lewis',
+        ku: 'Girêdanên Kîmyewî û Avahiya Lewis',
       },
       caption: {
         tr: 'İyonik bağda elektron aktarılır, kovalent bağda ortaklaşa kullanılır; polar moleküller arasında dipol–dipol etkileşimi, H’nin F, O veya N’ye bağlı olduğu moleküller arasında hidrojen bağı kurulur.',
@@ -175,7 +175,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'При ионной связи электроны переходят от одного атома к другому, при ковалентной — становятся общими; между полярными молекулами действует диполь-дипольное взаимодействие, а между молекулами, в которых H связан с F, O или N, — водородная связь.',
         ar: 'في الرابطة الأيونية ينتقل الإلكترون، وفي الرابطة التساهمية تُشارَك الإلكترونات؛ وتتجاذب الجزيئات القطبية بقوى ثنائي القطب–ثنائي القطب، أما الجزيئات التي يرتبط فيها H بـ F أو O أو N فتنشأ بينها روابط هيدروجينية.',
         zh: '离子键中电子发生转移，共价键中电子被共用；极性分子之间存在偶极-偶极作用，H与F、O或N相连的分子之间形成氢键。',
-        ku: 'Torra krîstalî ya îyonî li hember molekula kovalant û danûstandina dîpolan.',
+        ku: 'Di girêdana îyonîk de elektron tê veguhastin, di girêdana kovalent de bi hev re tê parvekirin; di navbera molekulên polar de hêzên dîpol–dîpol, di navbera molekulên ku tê de H bi F, O an N ve girêdayî ye de girêdana hîdrojenê çêdibe.',
       },
       labels: {
         tr: { bond1: 'İyonik bağ: elektron aktarılır', bond2: 'Kovalent bağ: elektron ortaklaşılır', hbond: 'Hidrojen bağı (H ile F, O, N)', dipole: 'Dipol–dipol etkileşimi' },
@@ -185,7 +185,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { bond1: 'Ионная связь: перенос электрона', bond2: 'Ковалентная связь: общая пара', hbond: 'Водородная связь (H при F, O, N)', dipole: 'Диполь-дипольное взаимодействие' },
         ar: { bond1: 'رابطة أيونية: انتقال إلكترون', bond2: 'رابطة تساهمية: مشاركة إلكترونات', hbond: 'رابطة هيدروجينية (H مع F أو O أو N)', dipole: 'تجاذب ثنائي القطب–ثنائي القطب' },
         zh: { bond1: '离子键：电子转移', bond2: '共价键：共用电子对', hbond: '氢键(H与F、O、N)', dipole: '偶极-偶极作用' },
-        ku: { bond1: 'Benda îyonî: elektron tê veguhastin', bond2: 'Benda kovalent: elektron tên parvekirin', hbond: 'Benda hîdrojenê (H bi F, O, N re)', dipole: 'Têkiliya dîpol–dîpol' },
+        ku: { bond1: 'Girêdana îyonîk: elektron tê veguhastin', bond2: 'Girêdana kovalent: elektron tê parvekirin', hbond: 'Girêdana hîdrojenê (H bi F, O, N re)', dipole: 'Têkiliya dîpol–dîpol' },
       },
     },
     {
@@ -198,7 +198,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Водородные связи и аномалия воды',
         ar: 'الروابط الهيدروجينية وشذوذ الماء',
         zh: '氢键与水的反常性质',
-        ku: 'Benda Hîdrojenê û Anomaliya Avê',
+        ku: 'Girêdana Hîdrojenê û Anomaliya Avê',
       },
       caption: {
         tr: 'Su molekülleri arasındaki hidrojen bağları suyun kaynama noktasını yükseltir; buzda moleküller düzenli ve boşluklu bir örgüde tutulduğu için buzun yoğunluğu sıvı sudan küçüktür.',
@@ -208,7 +208,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Водородные связи между молекулами воды повышают её температуру кипения; во льду молекулы удерживаются в упорядоченной рыхлой решётке, поэтому плотность льда меньше, чем у жидкой воды.',
         ar: 'ترفع الروابط الهيدروجينية بين جزيئات الماء درجة غليانه؛ وفي الجليد تُحفظ الجزيئات في شبكة منتظمة كثيرة الفراغات، لذلك تكون كثافة الجليد أقل من كثافة الماء السائل.',
         zh: '水分子间的氢键使水的沸点升高；冰中的分子排列成规则而多空隙的晶格，因此冰的密度比液态水小。',
-        ku: 'Kêşana navmolekûlî ya di navbera hîdrojena bi FONê ve girêdayî û cotên elektronan yên cîran de.',
+        ku: 'Girêdanên hîdrojenê yên di navbera molekulên avê de xala kelînê ya avê bilind dikin; di qeşayê de molekul di toreke rêkûpêk û valahîdar de ne, loma çiriya qeşayê ji ya ava şile kêmtir e.',
       },
       labels: {
         tr: { doner: 'H verici (O–H)', acceptor: 'H alıcı (O üzerindeki e⁻ çifti)', bp: 'Hidrojen bağı kaynama noktasını yükseltir', ice: 'Buz: altıgen, boşluklu örgü' },
@@ -218,7 +218,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { doner: 'Донор H (O–H)', acceptor: 'Акцептор H (пара электронов O)', bp: 'Водородные связи повышают температуру кипения', ice: 'Лёд: рыхлая гексагональная решётка' },
         ar: { doner: 'مانح H (O–H)', acceptor: 'مستقبل H (زوج إلكتروني حر على O)', bp: 'الرابطة الهيدروجينية ترفع درجة الغليان', ice: 'الجليد: شبكة سداسية كثيرة الفراغات' },
         zh: { doner: '氢供体(O–H)', acceptor: '氢受体(O上的孤电子对)', bp: '氢键使沸点升高', ice: '冰：多空隙的六方晶格' },
-        ku: { doner: 'H-bexşîner (O–H)', acceptor: 'H-wergir (cota e⁻ ya li ser O)', bp: 'Benda hîdrojenê xala kelînê bilind dike', ice: 'Qeşa: tora şeşgoşeyî ya vala' },
+        ku: { doner: 'Dayînerê H (O–H)', acceptor: 'Wergirê H (cotê e⁻ yê li ser O)', bp: 'Girêdana hîdrojenê xala kelînê bilind dike', ice: 'Qeşa: tora şeşgoşe ya valahîdar' },
       },
     },
   ],
@@ -243,7 +243,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Кривая нагревания воды при 1 атм: температура растёт только на участках, где вещество находится в одном агрегатном состоянии, и остаётся постоянной при плавлении (0 °C) и кипении (100 °C).',
         ar: 'منحنى تسخين الماء عند 1 atm: ترتفع درجة الحرارة فقط في المناطق التي توجد فيها حالة واحدة، وتبقى ثابتة أثناء الانصهار (0 °C) والغليان (100 °C).',
         zh: '1 atm下水的加热曲线：只有单一状态存在时温度才升高；在熔化(0 °C)和沸腾(100 °C)过程中温度保持不变。',
-        ku: 'Qonaxên req, şil û gaz bi germiya sabît li ser xalên helîn û kelînê.',
+        ku: 'Xêza germbûna avê di 1 atm de: germahî tenê li herêmên ku tenê rewşek tê de heye bilind dibe; di dema helînê (0 °C) û kelînê (100 °C) de sabît dimîne.',
       },
       labels: {
         tr: { solid: 'Katı', melt: 'Erime (katı + sıvı)', liquid: 'Sıvı', boil: 'Kaynama (sıvı + gaz)', gas: 'Gaz' },
@@ -266,7 +266,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Давление пара и температура кипения',
         ar: 'ضغط البخار ودرجة الغليان',
         zh: '蒸气压与沸点',
-        ku: 'Zexta Hilmê û Xala Kelînê',
+        ku: 'Zexta Buharê û Xala Kelînê',
       },
       caption: {
         tr: 'Sıcaklık arttıkça sıvının buhar basıncı artar; buhar basıncı dış basınca eşit olduğunda sıvı kaynar. Aynı sıcaklıkta buhar basıncı yüksek olan sıvının kaynama noktası düşüktür.',
@@ -276,7 +276,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'С ростом температуры давление пара жидкости увеличивается; когда оно становится равным внешнему давлению, жидкость кипит. Из двух жидкостей при одной температуре ниже температура кипения у той, давление пара которой выше.',
         ar: 'يزداد ضغط بخار السائل بارتفاع درجة الحرارة، ويغلي السائل عندما يتساوى ضغط بخاره مع الضغط الخارجي. وعند درجة الحرارة نفسها تكون درجة غليان السائل ذي ضغط البخار الأعلى أدنى.',
         zh: '温度升高，液体的蒸气压增大；蒸气压等于外界压强时液体沸腾。同一温度下蒸气压较大的液体，沸点较低。',
-        ku: 'Dema zexta hilmê bi zexta derve re yeksan bibe kelîn dest pê dike.',
+        ku: 'Germahî çiqas zêde bibe, zexta buhara şileyê ewqas zêde dibe; dema zexta buharê bigihîje zexta derve, şile dikele. Di heman germahiyê de, şileya ku zexta buhara wê bilindtir e, xala kelînê ya wê nizmtir e.',
       },
       labels: {
         tr: { pvap: 'Buhar basıncı', pext: 'Dış basınç 1 atm: buhar basıncı buna eşitlenince sıvı kaynar', tb: 'Kaynama noktaları', visc: 'Sıcaklık artınca viskozite azalır' },
@@ -286,7 +286,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { pvap: 'Давление пара', pext: 'Внешнее давление 1 атм: жидкость кипит, когда давление пара достигает его', tb: 'Температуры кипения', visc: 'С ростом температуры вязкость уменьшается' },
         ar: { pvap: 'ضغط البخار', pext: 'الضغط الخارجي 1 atm: يغلي السائل عندما يساويه ضغط بخاره', tb: 'درجات الغليان', visc: 'تقل اللزوجة بارتفاع درجة الحرارة' },
         zh: { pvap: '蒸气压', pext: '外压 1 atm：蒸气压与之相等时液体沸腾', tb: '沸点', visc: '温度升高，黏度减小' },
-        ku: { pvap: 'Zexta hilmê', pext: 'Zexta derve 1 atm: dema zexta hilmê bigihîje wê, şile dikele', tb: 'Xalên kelînê', visc: 'Bi bilindbûna germahiyê vîskozîte kêm dibe' },
+        ku: { pvap: 'Zexta buharê', pext: 'Zexta derve 1 atm: dema zexta buharê bigihîje wê, şile dikele', tb: 'Xalên kelînê', visc: 'Germahî zêde dibe, vîskozîte kêm dibe' },
       },
     },
   ],
@@ -301,7 +301,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Жёсткость воды и цикл очистки',
         ar: 'عسر الماء ودورة المعالجة',
         zh: '水的硬度与软化',
-        ku: 'Hişkiya Avê û Çerxa Parzûnkirinê',
+        ku: 'Hişkiya Avê û Çerxa Paqijkirinê',
       },
       caption: {
         tr: 'Sert su Ca²⁺ ve Mg²⁺ iyonları içerir. Bikarbonat kaynaklı geçici sertlik kaynatılarak, kalıcı sertlik iyon değiştirici reçineyle giderilir.',
@@ -311,7 +311,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Жёсткая вода содержит ионы Ca²⁺ и Mg²⁺. Временную (гидрокарбонатную) жёсткость устраняют кипячением, постоянную — ионообменной смолой.',
         ar: 'يحتوي الماء العسر على أيونات Ca²⁺ وMg²⁺. يُزال العسر المؤقت الناتج عن البيكربونات بالغليان، ويُزال العسر الدائم براتنج التبادل الأيوني.',
         zh: '硬水中含有Ca²⁺ 和Mg²⁺。由碳酸氢盐引起的暂时硬度可通过煮沸除去，永久硬度可用离子交换树脂除去。',
-        ku: 'Rakirina hişkiya demkî bi kelandinê û ya domdar bi rezînên guhêrbarên îyonî.',
+        ku: 'Ava hişk îyonên Ca²⁺ û Mg²⁺ dihewîne. Hişkiya demkî ya ji bîkarbonatê bi kelandinê, hişkiya domdar jî bi reçîneya îyonguhêr tê rakirin.',
       },
       labels: {
         tr: { ion1: 'Sert su: Ca²⁺ ve Mg²⁺ iyonları', boil: 'Geçici sertlik: kaynatma', resin: 'Kalıcı sertlik: iyon değiştirici reçine', pure: 'Sonuç: yumuşak su' },
@@ -321,7 +321,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { ion1: 'Жёсткая вода: ионы Ca²⁺ и Mg²⁺', boil: 'Временная жёсткость: кипячение', resin: 'Постоянная жёсткость: ионообменная смола', pure: 'Результат: мягкая вода' },
         ar: { ion1: 'ماء عسر: أيونات Ca²⁺ و Mg²⁺', boil: 'العسر المؤقت: الغلي', resin: 'العسر الدائم: راتنج التبادل الأيوني', pure: 'النتيجة: ماء يسر' },
         zh: { ion1: '硬水：Ca²⁺ 和 Mg²⁺ 离子', boil: '暂时硬度：煮沸', resin: '永久硬度：离子交换树脂', pure: '结果：软水' },
-        ku: { ion1: 'Ava hişk: îyonên Ca²⁺ û Mg²⁺', boil: 'Hişkiya demkî: kelandin', resin: 'Hişkiya mayînde: reçîneya îyon-guhêr', pure: 'Encam: ava nerm' },
+        ku: { ion1: 'Ava hişk: îyonên Ca²⁺ û Mg²⁺', boil: 'Hişkiya demkî: kelandin', resin: 'Hişkiya domdar: reçîneya îyonguhêr', pure: 'Encam: ava nerm' },
       },
     },
     {
@@ -344,7 +344,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Парниковые газы, такие как CO₂ и CH₄, удерживают тепло, излучаемое земной поверхностью. SO₂ и NO₂ из ископаемого топлива превращаются в атмосфере в H₂SO₄ и HNO₃ и вызывают кислотные дожди.',
         ar: 'تحبس غازات الاحتباس الحراري مثل CO₂ وCH₄ الحرارة المنبعثة من سطح الأرض. أما SO₂ وNO₂ الناتجان عن الوقود الأحفوري فيتحولان في الغلاف الجوي إلى H₂SO₄ وHNO₃ ويسببان الأمطار الحمضية.',
         zh: 'CO₂、CH₄等温室气体能吸收地面辐射的热量。化石燃料燃烧产生的SO₂和NO₂在大气中转化为H₂SO₄和HNO₃，形成酸雨。',
-        ku: 'Veguhertina gazên sotemeniya fosîlî di atmosferê de ber bi asîdên H₂SO₄ û HNO₃.',
+        ku: 'Gazên serayê yên wek CO₂ û CH₄ germa ku ji rûyê erdê belav dibe digirin. SO₂ û NO₂ yên ji sotemeniyên fosîl derdikevin jî di atmosferê de vediguherin H₂SO₄ û HNO₃ û barana asîdî çêdikin.',
       },
       labels: {
         tr: { so2: 'SO₂ → SO₃ → H₂SO₄', no2: 'NO₂ → HNO₃', rain: 'Asit yağmuru: pH < 5,6', co2: 'Sera etkisi: CO₂ ve CH₄ ısıyı tutar' },
@@ -369,7 +369,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Основные законы химии и сохранение массы',
         ar: 'القوانين الأساسية للكيمياء وحفظ الكتلة',
         zh: '化学基本定律与质量守恒',
-        ku: 'Zagonên Bingehîn û Hevsengiya Komê',
+        ku: 'Zagonên Bingehîn ên Kîmyayê û Hevsengiya Girseyê',
       },
       caption: {
         tr: 'Kimyasal tepkimede atomlar yok olmaz, yeniden düzenlenir: girenlerin toplam kütlesi ürünlerin toplam kütlesine eşittir ve bir bileşikteki elementlerin kütle oranı sabittir.',
@@ -379,7 +379,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'В химической реакции атомы не исчезают, а перегруппировываются: общая масса реагентов равна общей массе продуктов, а массовое отношение элементов в соединении постоянно.',
         ar: 'في التفاعل الكيميائي لا تفنى الذرات بل يُعاد ترتيبها: الكتلة الكلية للمواد المتفاعلة تساوي الكتلة الكلية للمواد الناتجة، ونسبة كتل العناصر في المركب ثابتة.',
         zh: '化学反应中原子不会消失，只是重新组合：反应物的总质量等于生成物的总质量，化合物中各元素的质量比是固定的。',
-        ku: 'Di sîstema girtî de koma giştî ya keresteyên dikevin bertekê yeksanî ya berheman e.',
+        ku: 'Di reaksiyona kîmyewî de atom winda nabin, ji nû ve tên rêzkirin: girseya giştî ya reaktantan bi girseya giştî ya hilberan re wekhev e û di pêkhateyekê de rêjeya girseyî ya elementan sabît e.',
       },
       labels: {
         tr: { mreact: 'Girenlerin kütlesi: 36 g', mprod: 'Ürünlerin kütlesi: 36 g', balance: 'Kütlenin korunumu (Lavoisier): toplam kütle değişmez', ratio: 'Sabit oranlar (Proust): m(H) / m(O) = 1 / 8' },
@@ -389,7 +389,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { mreact: 'Масса реагентов: 36 г', mprod: 'Масса продуктов: 36 г', balance: 'Сохранение массы (Лавуазье): общая масса не меняется', ratio: 'Постоянство состава (Пруст): m(H) / m(O) = 1 / 8' },
         ar: { mreact: 'كتلة المواد المتفاعلة: 36 g', mprod: 'كتلة المواد الناتجة: 36 g', balance: 'حفظ الكتلة (لافوازييه): الكتلة الكلية لا تتغير', ratio: 'النسب الثابتة (بروست): m(H) / m(O) = 1 / 8' },
         zh: { mreact: '反应物质量：36 g', mprod: '生成物质量：36 g', balance: '质量守恒（拉瓦锡）：总质量不变', ratio: '定比定律（普鲁斯特）：m(H) / m(O) = 1 / 8' },
-        ku: { mreact: 'Girseya reaktantan: 36 g', mprod: 'Girseya berheman: 36 g', balance: 'Parastina girseyê (Lavoisier): girseya giştî naguhere', ratio: 'Rêjeyên sabît (Proust): m(H) / m(O) = 1 / 8' },
+        ku: { mreact: 'Girseya reaktantan: 36 g', mprod: 'Girseya hilberan: 36 g', balance: 'Parastina girseyê (Lavoisier): girseya giştî naguhere', ratio: 'Rêjeyên sabît (Proust): m(H) / m(O) = 1 / 8' },
       },
     },
     {
@@ -402,7 +402,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Понятие моля и пересчёты с числом Авогадро',
         ar: 'مفهوم المول وعلاقات أفوجادرو',
         zh: '物质的量与阿伏加德罗常数',
-        ku: 'Têgeha Molê û Veguherîna Avogadro',
+        ku: 'Têgeha Molê û Veguherînên Avogadro',
       },
       caption: {
         tr: 'Mol; kütle, tanecik sayısı ve gaz hacmi arasındaki köprüdür: n = m / MA = N / Nₐ = V / 22,4 (gaz, normal koşullar).',
@@ -412,7 +412,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Моль связывает массу, число частиц и объём газа: n = m / M = N / Nₐ = V / 22,4 (газ, н. у.).',
         ar: 'المول حلقة الوصل بين الكتلة وعدد الجسيمات وحجم الغاز: n = m / M = N / Nₐ = V / 22.4 (للغاز في الظروف القياسية).',
         zh: '物质的量是联系质量、粒子数和气体体积的桥梁：n = m / M = N / Nₐ = V / 22.4（气体，标准状况）。',
-        ku: 'Hesabên molê: n = m/MA = N/NA = V/22,4 L di mercên asayî de.',
+        ku: 'Mol pira di navbera girse, hejmara perçeyan û qebareya gazê de ye: n = m / MA = N / Nₐ = V / 22,4 (gaz, şertên normal).',
       },
       labels: {
         tr: { mol: '1 mol = 6,02 × 10²³ tanecik (Nₐ)', na: 'Tanecik: N = n · Nₐ', vmol: 'Gaz hacmi (NK: 0 °C, 1 atm): V = n · 22,4 L', ma: 'Kütle: m = n · MA' },
@@ -422,7 +422,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { mol: '1 моль = 6,02 × 10²³ частиц (Nₐ)', na: 'Частицы: N = n · Nₐ', vmol: 'Объём газа (н. у.: 0 °C, 1 атм): V = n · 22,4 л', ma: 'Масса: m = n · M' },
         ar: { mol: '1 mol = 6.02 × 10²³ جسيم (Nₐ)', na: 'الجسيمات: N = n · Nₐ', vmol: 'حجم الغاز (0 °C، 1 atm): V = n · 22.4 L', ma: 'الكتلة: m = n · M' },
         zh: { mol: '1 mol = 6.02 × 10²³ 个粒子 (Nₐ)', na: '粒子数：N = n · Nₐ', vmol: '气体体积(0 °C, 1 atm)：V = n · 22.4 L', ma: '质量：m = n · M' },
-        ku: { mol: '1 mol = 6,02 × 10²³ tanecik (Nₐ)', na: 'Tanecik: N = n · Nₐ', vmol: 'Qebareya gazê (0 °C, 1 atm): V = n · 22,4 L', ma: 'Girse: m = n · MA' },
+        ku: { mol: '1 mol = 6,02 × 10²³ perçe (Nₐ)', na: 'Perçe: N = n · Nₐ', vmol: 'Qebareya gazê (ŞN: 0 °C, 1 atm): V = n · 22,4 L', ma: 'Girse: m = n · MA' },
       },
     },
   ],
@@ -437,7 +437,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Химические реакции и лимитирующий реагент',
         ar: 'التفاعلات الكيميائية والمادة المحددة للتفاعل',
         zh: '化学反应与限量反应物',
-        ku: 'Hesabên Kîmyewî û Keresteya Sînordar',
+        ku: 'Reaksiyonên Kîmyewî û Reaktanta Sînordar',
       },
       caption: {
         tr: 'Tepkimede ilk tükenen madde sınırlayıcı bileşendir; oluşan ürün miktarını o belirler, diğer maddeden artan olur.',
@@ -447,7 +447,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Вещество, которое расходуется первым, — лимитирующий реагент; оно определяет количество образующегося продукта, а другое вещество остаётся в избытке.',
         ar: 'المادة التي تُستهلك أولًا في التفاعل هي المادة المحددة للتفاعل؛ فهي التي تحدد كمية الناتج، ويتبقى فائض من المادة الأخرى.',
         zh: '反应中最先耗尽的物质是限量反应物，它决定生成物的量，另一种物质有剩余。',
-        ku: 'Madeya ku berê diqede sînordar e û hejmara berhema dawî diyar dike.',
+        ku: 'Di reaksiyonê de madeya ku pêşî diqede reaktanta sînordar e; mîqdara hilberê ew diyar dike, ji madeya din jî hinek zêde dimîne.',
       },
       labels: {
         tr: { limit: 'Sınırlayıcı bileşen: H₂ (tamamen tükenir)', excess: 'Artan madde: 1 O₂ molekülü', yield: '% verim = (gerçek ürün / teorik ürün) × 100', comb: 'Yanma: 2H₂ + O₂ → 2H₂O' },
@@ -457,7 +457,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { limit: 'Лимитирующий реагент: H₂ (расходуется полностью)', excess: 'В избытке: 1 молекула O₂', yield: 'Выход, % = (практический / теоретический) × 100', comb: 'Горение: 2H₂ + O₂ → 2H₂O' },
         ar: { limit: 'المادة المحددة للتفاعل: H₂ (تُستهلك كليًا)', excess: 'المادة الفائضة: جزيء O₂ واحد', yield: 'المردود % = (الفعلي / النظري) × 100', comb: 'احتراق: 2H₂ + O₂ → 2H₂O' },
         zh: { limit: '限量反应物：H₂（完全消耗）', excess: '剩余物质：1 个 O₂ 分子', yield: '产率% = (实际产量 / 理论产量) × 100', comb: '燃烧：2H₂ + O₂ → 2H₂O' },
-        ku: { limit: 'Pêkhateya sînorker: H₂ (bi temamî diqede)', excess: 'Zêde dimîne: 1 molekula O₂', yield: '% berhemdarî = (rastîn / teorîk) × 100', comb: 'Şewitîn: 2H₂ + O₂ → 2H₂O' },
+        ku: { limit: 'Reaktanta sînordar: H₂ (bi tevahî diqede)', excess: 'Reaktanta zêde: 1 molekula O₂', yield: '% berhem = (rastîn / teorîk) × 100', comb: 'Şewitîn: 2H₂ + O₂ → 2H₂O' },
       },
     },
     {
@@ -470,7 +470,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Растворение, осаждение и сокращённое ионное уравнение',
         ar: 'الترسيب والمعادلة الأيونية الصافية',
         zh: '沉淀反应与净离子方程式',
-        ku: 'Hilweşîn-Nişîn û Hevkêşeya Net a Îyonî',
+        ku: 'Helbûn-Niştin û Hevkêşeya Îyonî ya Net',
       },
       caption: {
         tr: 'İki çözelti karıştırıldığında Ag⁺ ve Cl⁻ iyonları AgCl katısı olarak çöker; Na⁺ ve NO₃⁻ iyonları tepkimeye girmeden çözeltide kalır.',
@@ -480,7 +480,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'При смешивании двух растворов ионы Ag⁺ и Cl⁻ выпадают в осадок AgCl, а ионы Na⁺ и NO₃⁻ не участвуют в реакции и остаются в растворе.',
         ar: 'عند مزج المحلولين تترسب أيونات Ag⁺ وCl⁻ على هيئة AgCl صلب، بينما تبقى أيونات Na⁺ وNO₃⁻ في المحلول دون أن تتفاعل.',
         zh: '两种溶液混合时，Ag⁺ 和Cl⁻ 以AgCl固体的形式沉淀；Na⁺ 和NO₃⁻ 不参加反应，留在溶液中。',
-        ku: 'Madeya req a dikişe hevkêşeya net a îyonî pêk tîne, îyonên din temaşevan dimînin.',
+        ku: 'Dema du çareserî tev li hev dibin, îyonên Ag⁺ û Cl⁻ wek AgCl ya hişk dinişin; îyonên Na⁺ û NO₃⁻ bêyî ku bikevin reaksiyonê di çareseriyê de dimînin.',
       },
       labels: {
         tr: { ppt: 'Çökelek: AgCl(k)', spec1: 'Na⁺: seyirci iyon', spec2: 'NO₃⁻: seyirci iyon', net: 'Net iyon denklemi: Ag⁺(suda) + Cl⁻(suda) → AgCl(k)' },
@@ -490,7 +490,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { ppt: 'Осадок: AgCl↓', spec1: 'Na⁺: ион-наблюдатель', spec2: 'NO₃⁻: ион-наблюдатель', net: 'Сокращённое ионное уравнение: Ag⁺ + Cl⁻ → AgCl↓' },
         ar: { ppt: 'راسب: AgCl(s)', spec1: 'Na⁺: أيون متفرج', spec2: 'NO₃⁻: أيون متفرج', net: 'المعادلة الأيونية الصافية: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)' },
         zh: { ppt: '沉淀：AgCl(s)', spec1: 'Na⁺：旁观离子', spec2: 'NO₃⁻：旁观离子', net: '净离子方程式：Ag⁺(aq) + Cl⁻(aq) → AgCl(s)' },
-        ku: { ppt: 'Nişîn: AgCl', spec1: 'Na⁺: îyona temaşevan', spec2: 'NO₃⁻: îyona temaşevan', net: 'Hevkêşeya îyonî ya net: Ag⁺ + Cl⁻ → AgCl↓' },
+        ku: { ppt: 'Niştek: AgCl(s)', spec1: 'Na⁺: îyona temaşevan', spec2: 'NO₃⁻: îyona temaşevan', net: 'Hevkêşeya îyonî ya net: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)' },
       },
     },
   ],
@@ -505,7 +505,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Фракционная перегонка и разделение смесей',
         ar: 'التقطير التجزيئي وفصل المخاليط',
         zh: '分馏与混合物的分离',
-        ku: 'Parzûnkirina Beşî û Veqetandina Tevliheviyan',
+        ku: 'Distîlasyona Perçeyî û Veqetandina Tevliheviyan',
       },
       caption: {
         tr: 'Kaynama noktaları farklı, birbiri içinde çözünen sıvılar ayrımsal damıtmayla ayrılır: kaynama noktası düşük olan önce buharlaşır, soğutucuda yoğuşur ve toplama kabında birikir.',
@@ -515,7 +515,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Взаимно растворимые жидкости с разными температурами кипения разделяют фракционной перегонкой: жидкость с более низкой температурой кипения испаряется первой, конденсируется в холодильнике и собирается в приёмнике.',
         ar: 'تُفصل السوائل الممتزجة ذات درجات الغليان المختلفة بالتقطير التجزيئي: يتبخر السائل ذو درجة الغليان الأدنى أولًا، ثم يتكاثف في المكثف ويتجمع في إناء الاستقبال.',
         zh: '沸点不同、互溶的液体可用分馏法分离：沸点低的组分先汽化，在冷凝管中冷凝后收集在接收器中。',
-        ku: 'Veqetandina şile-şile yên bi xalên kelînê yên cuda bi riya stûna fraksiyonê.',
+        ku: 'Şileyên ku di nav hev de dihelin û xalên kelînê yên wan cuda ne, bi distîlasyona perçeyî tên veqetandin: ya ku xala kelînê ya wê nizmtir e pêşî buhar dibe, di sarkerê de şile dibe û di firaxa berhevkirinê de kom dibe.',
       },
       labels: {
         tr: { col: 'Ayrımsal damıtma kolonu', cond: 'Soğutucu (Liebig)', vap1: 'Damıtık: etanol (KN 78 °C)', vap2: 'Balonda kalan: su (KN 100 °C)' },
@@ -525,7 +525,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { col: 'Ректификационная колонка', cond: 'Холодильник Либиха', vap1: 'Дистиллят: этанол (Tкип 78 °C)', vap2: 'Остаётся в колбе: вода (Tкип 100 °C)' },
         ar: { col: 'عمود التجزئة', cond: 'مكثف ليبيغ', vap1: 'ناتج التقطير: إيثانول (درجة الغليان 78 °C)', vap2: 'يبقى في الدورق: ماء (درجة الغليان 100 °C)' },
         zh: { col: '分馏柱', cond: '直形冷凝管', vap1: '馏出液：乙醇(沸点 78 °C)', vap2: '留在烧瓶中：水(沸点 100 °C)' },
-        ku: { col: 'Stûna fraksiyonê', cond: 'Sarker (Liebig)', vap1: 'Distîlat: etanol (XK 78 °C)', vap2: 'Di balonê de dimîne: av (XK 100 °C)' },
+        ku: { col: 'Stûna distîlasyona perçeyî', cond: 'Sarker (Liebig)', vap1: 'Distîlat: etanol (XK 78 °C)', vap2: 'Di balonê de dimîne: av (XK 100 °C)' },
       },
     },
     {
@@ -538,7 +538,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Делительная воронка и разность плотностей',
         ar: 'قمع الفصل وفرق الكثافة',
         zh: '分液漏斗与密度差',
-        ku: 'Huniya Veqetandinê û Ciyawaziya Tîrbûnê',
+        ku: 'Qîfa Veqetandinê û Cudahiya Çiriyê',
       },
       caption: {
         tr: 'Birbiri içinde çözünmeyen ve yoğunlukları farklı iki sıvı ayırma hunisinde iki faz oluşturur; yoğunluğu büyük olan altta toplanır ve musluktan önce o alınır.',
@@ -548,7 +548,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Две взаимно нерастворимые жидкости с разной плотностью образуют в делительной воронке два слоя; более плотная жидкость собирается внизу, и её первой сливают через кран.',
         ar: 'يكوّن سائلان غير ممتزجين مختلفا الكثافة طبقتين في قمع الفصل؛ فيستقر الأكثر كثافة في الأسفل ويُسحب أولًا من الصنبور.',
         zh: '两种互不相溶、密度不同的液体在分液漏斗中分为两层；密度大的在下层，打开活塞时先放出下层液体。',
-        ku: 'Veqetandina qatên şile yên di nav hev de nahelin li gorî tîrbûnê bi mifteyê.',
+        ku: 'Du şileyên ku di nav hev de nahelin û çiriya wan cuda ye, di qîfa veqetandinê de du qat çêdikin; ya ku çiriya wê mezintir e li jêr kom dibe û pêşî ew ji şîrê tê berdan.',
       },
       labels: {
         tr: { top: 'Zeytinyağı (d = 0,92 g/mL): üst faz', bot: 'Su (d = 1,00 g/mL): alt faz', valve: 'Musluk: alt faz önce alınır', flask: 'Toplama kabı (beher)' },
@@ -558,7 +558,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { top: 'Оливковое масло (d = 0,92 г/мл): верхний слой', bot: 'Вода (d = 1,00 г/мл): нижний слой', valve: 'Кран: сначала сливают нижний слой', flask: 'Стакан-приёмник' },
         ar: { top: 'زيت الزيتون (d = 0.92 g/mL): الطبقة العليا', bot: 'الماء (d = 1.00 g/mL): الطبقة السفلى', valve: 'الصنبور: تُسحب الطبقة السفلى أولًا', flask: 'إناء التجميع (كأس زجاجية)' },
         zh: { top: '橄榄油 (d = 0.92 g/mL)：上层', bot: '水 (d = 1.00 g/mL)：下层', valve: '活塞：先放出下层', flask: '收集烧杯' },
-        ku: { top: 'Rûnê zeytûnê (d = 0,92 g/mL): qata jorîn', bot: 'Av (d = 1,00 g/mL): qata jêrîn', valve: 'Muslix: pêşî qata jêrîn tê girtin', flask: 'Behera berhevkirinê' },
+        ku: { top: 'Rûnê zeytûnê (d = 0,92 g/mL): qata jor', bot: 'Av (d = 1,00 g/mL): qata jêr', valve: 'Şîr: pêşî qata jêr tê berdan', flask: 'Firaxa berhevkirinê (beher)' },
       },
     },
   ],
@@ -573,7 +573,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Нейтрализация и шкала pH',
         ar: 'التعادل الحمضي القاعدي ومقياس الرقم الهيدروجيني',
         zh: '酸碱中和与pH',
-        ku: 'Bêalîbûna Asîd-Baz û Pîvana pH',
+        ku: 'Neutralîzasyona Asîd-Baz û Pîvana pH',
       },
       caption: {
         tr: '25 °C’ta pH değeri 7’den küçük çözeltiler asidik, 7 olanlar nötr, 7’den büyük olanlar baziktir; asit ile baz tepkimeye girince tuz ve su oluşur.',
@@ -583,7 +583,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'При 25 °C растворы с pH меньше 7 кислые, с pH = 7 нейтральные, с pH больше 7 щелочные; при взаимодействии кислоты с основанием образуются соль и вода.',
         ar: 'عند 25 °C يكون المحلول حمضيًا إذا كانت قيمة pH أقل من 7، ومتعادلًا إذا كانت 7، وقاعديًا إذا كانت أكبر من 7؛ وعند تفاعل الحمض مع القاعدة يتكون ملح وماء.',
         zh: '25 °C时，pH小于7的溶液呈酸性，等于7的呈中性，大于7的呈碱性；酸与碱反应生成盐和水。',
-        ku: 'Yekbûna îyonên H⁺ û OH⁻ bo çêkirina av û xwê li xala pH 7.',
+        ku: 'Li 25 °C çareseriyên ku pH-a wan ji 7 kêmtir e asîdî, yên ku pH-a wan 7 e notr, yên ku ji 7 mezintir e bazîk in; asîd û baz bi hev re dikevin reaksiyonê û xwê û av çêdibin.',
       },
       labels: {
         tr: { acid: 'Asidik: pH < 7', neutral: 'Nötr: pH = 7 (25 °C)', base: 'Bazik: pH > 7', hplus: 'Nötralleşme: asit + baz → tuz + su' },
@@ -593,7 +593,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { acid: 'Кислая: pH < 7', neutral: 'Нейтральная: pH = 7 (25 °C)', base: 'Щелочная: pH > 7', hplus: 'Нейтрализация: кислота + основание → соль + вода' },
         ar: { acid: 'حمضي: pH < 7', neutral: 'متعادل: pH = 7 (25 °C)', base: 'قاعدي: pH > 7', hplus: 'التعادل: حمض + قاعدة → ملح + ماء' },
         zh: { acid: '酸性：pH < 7', neutral: '中性：pH = 7 (25 °C)', base: '碱性：pH > 7', hplus: '中和：酸 + 碱 → 盐 + 水' },
-        ku: { acid: 'Asîdî: pH < 7', neutral: 'Notr: pH = 7 (25 °C)', base: 'Bazîk: pH > 7', hplus: 'Notralîzasyon: asîd + baz → xwê + av' },
+        ku: { acid: 'Asîdî: pH < 7', neutral: 'Notr: pH = 7 (25 °C)', base: 'Bazîk: pH > 7', hplus: 'Neutralîzasyon: asîd + baz → xwê + av' },
       },
     },
     {
@@ -606,7 +606,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Реакции металлов с кислотами и выделение газов',
         ar: 'تفاعلات الفلزات مع الأحماض وتصاعد الغازات',
         zh: '金属与酸的反应及生成的气体',
-        ku: 'Bertekên Metal û Asîdan û Derketina Gazê',
+        ku: 'Reaksiyonên Metalan bi Asîdan re û Gazên Derdikevin',
       },
       caption: {
         tr: 'Aktif metaller asitlerle H₂ gazı verir. Bakır gibi yarı soy metaller HCl ile tepkime vermez; HNO₃ ile tepkimelerinde H₂ değil NO₂ veya NO gazı çıkar. Amfoter metaller kuvvetli bazlarla da H₂ verir.',
@@ -616,7 +616,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Активные металлы с кислотами выделяют H₂. Полублагородные металлы, например медь, с HCl не реагируют, а в реакциях с HNO₃ выделяют не H₂, а NO₂ или NO. Амфотерные металлы выделяют H₂ и с сильными основаниями.',
         ar: 'تتفاعل الفلزات النشطة مع الأحماض فيتصاعد غاز H₂. أما الفلزات شبه النبيلة مثل النحاس فلا تتفاعل مع HCl، وعند تفاعلها مع HNO₃ يتصاعد غاز NO₂ أو NO لا H₂. وتُطلق الفلزات الأمفوتيرية غاز H₂ مع القواعد القوية أيضًا.',
         zh: '活泼金属与酸反应放出H₂。铜等不活泼金属不与HCl反应；与HNO₃反应时放出的是NO₂或NO，而不是H₂。两性金属与强碱反应也放出H₂。',
-        ku: 'Metalên çalak gaza H₂ derdixin; nîv-esîl (Cu) bi HNO₃ re gaza NO/NO₂ çêdike.',
+        ku: 'Metalên çalak bi asîdan re gaza H₂ didin. Metalên nîvesîl ên wek sifir bi HCl re nakevin reaksiyonê; di reaksiyona wan a bi HNO₃ re ne H₂, lê gaza NO₂ an NO derdikeve. Metalên amfoter bi bazên bihêz re jî H₂ didin.',
       },
       labels: {
         tr: { active: 'Aktif metal + asit → tuz + H₂', cu_conc: 'Cu + derişik HNO₃ → NO₂ (H₂ çıkmaz)', cu_dil: 'Cu + seyreltik HNO₃ → NO (H₂ çıkmaz)', amph: 'Amfoter metal + kuvvetli baz → H₂' },
@@ -626,7 +626,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { active: 'Активный металл + кислота → соль + H₂', cu_conc: 'Cu + конц. HNO₃ → NO₂ (H₂ не выделяется)', cu_dil: 'Cu + разб. HNO₃ → NO (H₂ не выделяется)', amph: 'Амфотерный металл + щёлочь → H₂' },
         ar: { active: 'فلز نشط + حمض → ملح + H₂', cu_conc: 'Cu + HNO₃ مركز → NO₂ (لا ينطلق H₂)', cu_dil: 'Cu + HNO₃ مخفف → NO (لا ينطلق H₂)', amph: 'فلز أمفوتيري + قاعدة قوية → H₂' },
         zh: { active: '活泼金属 + 酸 → 盐 + H₂', cu_conc: 'Cu + 浓 HNO₃ → NO₂(不放出 H₂)', cu_dil: 'Cu + 稀 HNO₃ → NO(不放出 H₂)', amph: '两性金属 + 强碱 → H₂' },
-        ku: { active: 'Metala aktîf + asîd → xwê + H₂', cu_conc: 'Cu + HNO₃ ya xest → NO₂ (H₂ dernakeve)', cu_dil: 'Cu + HNO₃ ya şilkirî → NO (H₂ dernakeve)', amph: 'Metala amfoter + baza xurt → H₂' },
+        ku: { active: 'Metala çalak + asîd → xwê + H₂', cu_conc: 'Cu + HNO₃ ya tîr → NO₂ (H₂ dernakeve)', cu_dil: 'Cu + HNO₃ ya sist → NO (H₂ dernakeve)', amph: 'Metala amfoter + baza bihêz → H₂' },
       },
     },
   ],
@@ -641,7 +641,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Мицелла мыла и механизм удаления грязи',
         ar: 'ميسيل الصابون وآلية تنظيف الأوساخ',
         zh: '肥皂胶束与去污原理',
-        ku: 'Mîsela Sabûnê û Mekanîzmaya Paqijkirinê',
+        ku: 'Mîsela Sabûnê û Mekanîzmaya Paqijkirina Qirêjê',
       },
       caption: {
         tr: 'Sabunun hidrofob kuyruğu yağa, hidrofil başı suya yönelir; yağ damlası misel içinde sarılarak suyla birlikte uzaklaştırılır.',
@@ -651,7 +651,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Гидрофобный хвост мыла направлен к жиру, гидрофильная головка — к воде; капля жира оказывается внутри мицеллы и удаляется вместе с водой.',
         ar: 'يتجه الذيل الكاره للماء في الصابون نحو الدهن، والرأس المحب للماء نحو الماء؛ فتُحاط قطيرة الدهن داخل الميسيل وتُزال مع الماء.',
         zh: '肥皂的疏水尾伸向油污，亲水头朝向水；油滴被包裹在胶束中，随水一起被除去。',
-        ku: 'Dûvikê hîdrofob bi rûnê digire, serê hîdrofîl ber bi avê ve diçe û pîsbûnê radike.',
+        ku: 'Dûvikê hîdrofob ê sabûnê ber bi rûn ve, serê wê yê hîdrofîl ber bi avê ve dizivire; dilopa rûn di nav mîselê de tê pêçandin û bi avê re tê rakirin.',
       },
       labels: {
         tr: { head: 'Hidrofil baş (–COO⁻ Na⁺): suya yönelir', tail: 'Hidrofob kuyruk: yağın içine girer', dirt: 'Yağ (kir) damlası', water: 'Su' },
@@ -661,7 +661,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { head: 'Гидрофильная головка (–COO⁻ Na⁺): к воде', tail: 'Гидрофобный хвост: в жир', dirt: 'Капля жира (грязь)', water: 'Вода' },
         ar: { head: 'رأس محب للماء (–COO⁻ Na⁺): نحو الماء', tail: 'ذيل كاره للماء: داخل الدهن', dirt: 'قطيرة دهن (أوساخ)', water: 'ماء' },
         zh: { head: '亲水头 (–COO⁻ Na⁺)：朝向水', tail: '疏水尾：伸入油污', dirt: '油污液滴', water: '水' },
-        ku: { head: 'Serê hîdrofîl (–COO⁻ Na⁺): ber bi avê', tail: 'Dûvê hîdrofob: dikeve nav rûn', dirt: 'Dilopa rûn (qirêj)', water: 'Av' },
+        ku: { head: 'Serê hîdrofîl (–COO⁻ Na⁺): ber bi avê', tail: 'Dûvikê hîdrofob: dikeve nav rûn', dirt: 'Dilopa rûn (qirêj)', water: 'Av' },
       },
     },
     {
@@ -674,7 +674,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Полимерные цепи и мономеры',
         ar: 'سلاسل البوليمرات والمونومرات',
         zh: '聚合物链与单体',
-        ku: 'Zencîreyên Polîmer û Monomeran',
+        ku: 'Zincîrên Polîmeran û Monomer',
       },
       caption: {
         tr: 'Katılma polimerleşmesinde monomerlerdeki C=C çift bağı açılır ve birimler uç uca eklenerek uzun zincirli polimeri (PE, PVC, teflon) oluşturur.',
@@ -684,7 +684,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'При полимеризации двойная связь C=C в мономерах раскрывается, и звенья присоединяются друг к другу, образуя полимер с длинной цепью (ПЭ, ПВХ, тефлон).',
         ar: 'في البلمرة بالإضافة تنفتح الرابطة الثنائية C=C في المونومرات، وتتصل الوحدات طرفًا بطرف مكوّنة بوليمرًا طويل السلسلة (PE وPVC والتفلون).',
         zh: '加聚反应中，单体的C=C双键打开，单元首尾相连，形成长链聚合物(PE、PVC、聚四氟乙烯)。',
-        ku: 'Vekirina bendên pî yên monomeran bo çêkirina zencîreyên dirêj ên PE, PVC û Teflonê.',
+        ku: 'Di polîmerîzasyona lêzêdekirinê de girêdana ducar a C=C ya her monomerê vedibe û monomer dawî bi dawî bi hev ve tên girêdan; bi vî awayî polîmerên zincîrdirêj (PE, PVC, teflon) çêdibin.',
       },
       labels: {
         tr: { mono: 'Monomer: etilen (CH₂=CH₂)', poly: 'Polimer: polietilen (PE)', teflon: 'Tetrafloroetilen → teflon (PTFE)', pvc: 'Vinil klorür → PVC' },
@@ -709,7 +709,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Современная теория строения атома и квантовые числа',
         ar: 'النظرية الذرية الحديثة وأعداد الكم',
         zh: '现代原子理论与量子数',
-        ku: 'Teoriya Atomê ya Nûjen û Hejmarên Kuantûmê',
+        ku: 'Teoriya Atomê ya Nûjen û Hejmarên Kuantumê',
       },
       caption: {
         tr: 'Orbital türünü açısal momentum kuantum sayısı (ℓ) belirler: s küresel, p çift loblu, d çoğunlukla dört lobludur. Bir orbitalde zıt spinli en çok iki elektron bulunur.',
@@ -719,7 +719,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Тип орбитали определяется орбитальным квантовым числом (ℓ): s-орбиталь сферическая, p-орбиталь гантелеобразная, d-орбитали в основном четырёхлепестковые. На одной орбитали может быть не более двух электронов с противоположными спинами.',
         ar: 'يحدد عدد الكم الثانوي (ℓ) نوع المدار: s كروي، وp ثنائي الفص، وd رباعي الفصوص في الغالب. ويتسع المدار الواحد لإلكترونين على الأكثر متعاكسين في الغزل.',
         zh: '角量子数(ℓ)决定轨道类型：s轨道呈球形，p轨道呈哑铃形，d轨道大多为四叶形。一个轨道中最多容纳两个自旋相反的电子。',
-        ku: 'Hejmarên kuantûmê yên serekî (n), goşeyî (l), magnetîk (ml) û spîn (ms).',
+        ku: 'Cureyê orbîtalê hejmara kuantumê ya momenta goşeyî (ℓ) diyar dike: s gogî ye, p du lobî ye, d bi piranî çar lobî ye. Di orbîtalekê de herî zêde du elektronên bi spînên dijber hene.',
       },
       labels: {
         tr: { s_orb: 's orbitali (ℓ = 0): küresel, 1 orbital', p_orb: 'p orbitalleri (ℓ = 1): çift loblu, 3 orbital', d_orb: 'd orbitalleri (ℓ = 2): 5 orbital', spin: 'Pauli: bir orbitalde en çok 2 e⁻, zıt spinli' },
@@ -729,7 +729,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { s_orb: 's-орбиталь (ℓ = 0): сфера, 1 орбиталь', p_orb: 'p-орбитали (ℓ = 1): гантель, 3 орбитали', d_orb: 'd-орбитали (ℓ = 2): 5 орбиталей', spin: 'Паули: не более 2 e⁻ на орбитали, спины противоположны' },
         ar: { s_orb: 'مدار s (ℓ = 0): كروي، مدار واحد', p_orb: 'مدارات p (ℓ = 1): ثنائية الفص، 3 مدارات', d_orb: 'مدارات d (ℓ = 2): 5 مدارات', spin: 'باولي: إلكترونان على الأكثر في المدار، متعاكسان في الغزل' },
         zh: { s_orb: 's 轨道 (ℓ = 0)：球形，1 个', p_orb: 'p 轨道 (ℓ = 1)：哑铃形，3 个', d_orb: 'd 轨道 (ℓ = 2)：5 个', spin: '泡利：每个轨道最多 2 个电子，自旋相反' },
-        ku: { s_orb: 'Orbîtala s (ℓ = 0): gogî, 1 orbîtal', p_orb: 'Orbîtalên p (ℓ = 1): du lob, 3 orbîtal', d_orb: 'Orbîtalên d (ℓ = 2): 5 orbîtal', spin: 'Pauli: di orbîtalekê de herî zêde 2 e⁻, spînên dijber' },
+        ku: { s_orb: 'Orbîtala s (ℓ = 0): gogî, 1 orbîtal', p_orb: 'Orbîtalên p (ℓ = 1): du lobî, 3 orbîtal', d_orb: 'Orbîtalên d (ℓ = 2): 5 orbîtal', spin: 'Pauli: di orbîtalekê de herî zêde 2 e⁻, spînên dijber' },
       },
     },
     {
@@ -742,7 +742,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Принцип наименьшей энергии, правило Хунда и сферическая симметрия (Cr и Cu)',
         ar: 'مبدأ أوفباو وقاعدة هوند والتماثل الكروي (Cr وCu)',
         zh: '构造原理、洪特规则与球形对称(Cr和Cu)',
-        ku: 'Prensîba Aufbau, Hund û Sîmetriya Gilover',
+        ku: 'Aufbau, Qaîdeya Hund û Sîmetriya Gogî (Cr û Cu)',
       },
       caption: {
         tr: '₂₄Cr ve ₂₉Cu’da yarı dolu ve tam dolu 3d alt kabuğu (küresel simetri) daha kararlı olduğundan temel hâl dizilimleri 4s¹ 3d⁵ ve 4s¹ 3d¹⁰ şeklindedir.',
@@ -752,7 +752,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'У ₂₄Cr и ₂₉Cu наполовину и полностью заполненный 3d-подуровень (сферическая симметрия) более устойчив, поэтому их конфигурации в основном состоянии — 4s¹ 3d⁵ и 4s¹ 3d¹⁰.',
         ar: 'في ₂₄Cr و₂₉Cu يكون المستوى الفرعي 3d نصف الممتلئ والممتلئ (التماثل الكروي) أكثر استقرارًا، لذا يكون توزيعهما الإلكتروني في الحالة الأرضية 4s¹ 3d⁵ و4s¹ 3d¹⁰.',
         zh: '₂₄Cr和₂₉Cu中半充满和全充满的3d亚层（球形对称）更稳定，因此其基态电子排布为4s¹ 3d⁵和4s¹ 3d¹⁰。',
-        ku: '₂₄Cr û ₂₉Cu ji ber sîmetriya gilover xwedî aramiya zêde ne û di rewşa bingehîn de ne.',
+        ku: 'Di ₂₄Cr û ₂₉Cu de binqata 3d ya nîvtijî û tijî (sîmetriya gogî) aramtir e, loma rêzkirina elektronan a rewşa bingehîn 4s¹ 3d⁵ û 4s¹ 3d¹⁰ e.',
       },
       labels: {
         tr: { cr: 'Cr: [Ar] 4s¹ 3d⁵ (yarı dolu 3d)', cu: 'Cu: [Ar] 4s¹ 3d¹⁰ (tam dolu 3d)', aufbau: 'Aufbau: orbitaller artan enerji sırasıyla dolar (1s 2s 2p 3s 3p 4s 3d …)', hund: 'Hund: eş enerjili orbitallere önce birer elektron, aynı spinle yerleşir' },
@@ -762,7 +762,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { cr: 'Cr: [Ar] 4s¹ 3d⁵ (3d заполнен наполовину)', cu: 'Cu: [Ar] 4s¹ 3d¹⁰ (3d заполнен)', aufbau: 'Принцип наименьшей энергии: орбитали заполняются по возрастанию энергии (1s 2s 2p 3s 3p 4s 3d …)', hund: 'Хунд: орбитали одной энергии сначала получают по одному e⁻ с одинаковым спином' },
         ar: { cr: 'Cr: [Ar] 4s¹ 3d⁵ (3d نصف ممتلئ)', cu: 'Cu: [Ar] 4s¹ 3d¹⁰ (3d ممتلئ)', aufbau: 'أوفباو: تُملأ المدارات حسب تزايد الطاقة (1s 2s 2p 3s 3p 4s 3d …)', hund: 'هوند: تُملأ المدارات المتساوية الطاقة فرادى أولًا وبغزل متوازٍ' },
         zh: { cr: 'Cr: [Ar] 4s¹ 3d⁵(3d 半充满)', cu: 'Cu: [Ar] 4s¹ 3d¹⁰(3d 全充满)', aufbau: '构造原理：按能量由低到高填充 (1s 2s 2p 3s 3p 4s 3d …)', hund: '洪特规则：等能量轨道先各填 1 个电子且自旋平行' },
-        ku: { cr: 'Cr: [Ar] 4s¹ 3d⁵ (3d nîv-tijî)', cu: 'Cu: [Ar] 4s¹ 3d¹⁰ (3d tijî)', aufbau: 'Aufbau: orbîtal li gorî enerjiya zêdebûyî tijî dibin (1s 2s 2p 3s 3p 4s 3d …)', hund: 'Hund: orbîtalên hev-enerjî pêşî yek bi yek, bi spîna paralel tijî dibin' },
+        ku: { cr: 'Cr: [Ar] 4s¹ 3d⁵ (3d nîvtijî)', cu: 'Cu: [Ar] 4s¹ 3d¹⁰ (3d tijî)', aufbau: 'Aufbau: orbîtal li gorî enerjiya zêdebûyî tijî dibin (1s 2s 2p 3s 3p 4s 3d …)', hund: 'Hund: orbîtalên hevenerjî pêşî yek bi yek û bi spîna paralel tijî dibin' },
       },
     },
   ],
@@ -777,7 +777,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Законы идеального газа и цилиндр с поршнем',
         ar: 'قوانين الغاز المثالي والأسطوانة ذات المكبس',
         zh: '理想气体定律与活塞容器',
-        ku: 'Zagonên Gazên Îdeal û Sîlîndira Pîstonê',
+        ku: 'Zagonên Gaza Îdeal û Firaxa bi Piston',
       },
       caption: {
         tr: 'Sabit sıcaklıkta P ile V ters orantılıdır (Boyle); sabit basınçta V mutlak sıcaklıkla doğru orantılıdır (Charles). İkisi ideal gaz denkleminde birleşir.',
@@ -787,7 +787,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'При постоянной температуре P и V обратно пропорциональны (закон Бойля — Мариотта); при постоянном давлении V прямо пропорционален абсолютной температуре (закон Шарля). Оба закона объединяются в уравнении состояния идеального газа.',
         ar: 'عند ثبوت درجة الحرارة يتناسب P عكسيًا مع V (قانون بويل)، وعند ثبوت الضغط يتناسب V طرديًا مع درجة الحرارة المطلقة (قانون شارل). ويجتمع القانونان في معادلة الغاز المثالي.',
         zh: '恒温时P与V成反比（波义耳定律）；恒压时V与热力学温度成正比（查理定律）。二者统一为理想气体状态方程。',
-        ku: 'Yekbûna zagonên Boyle, Charles û Avogadro di hevkêşeya P · V = n · R · T de.',
+        ku: 'Di germahiya sabît de P û V berevajî rêjeyî ne (Boyle); di zexta sabît de V bi germahiya mutleq re rasterast rêjeyî ye (Charles). Her du jî di hevkêşeya gaza îdeal de dicivin.',
       },
       labels: {
         tr: { boyle: 'Boyle: P · V sabit (T, n sabit)', charles: 'Charles: V / T sabit (P, n sabit)', piston: 'Sürtünmesiz piston: Pgaz = Pdış', rconst: 'P · V = n · R · T;  R = 0,082 L·atm/(mol·K)' },
@@ -797,7 +797,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { boyle: 'Бойль: P · V постоянно (T, n пост.)', charles: 'Шарль: V / T постоянно (P, n пост.)', piston: 'Поршень без трения: Pгаза = Pвнеш', rconst: 'P · V = n · R · T;  R = 0,082 л·атм/(моль·K)' },
         ar: { boyle: 'بويل: P · V ثابت (T, n ثابتان)', charles: 'شارل: V / T ثابت (P, n ثابتان)', piston: 'مكبس عديم الاحتكاك: Pgas = Pext', rconst: 'P · V = n · R · T;  R = 0.082 L·atm/(mol·K)' },
         zh: { boyle: '波义耳：P · V 恒定(T、n 不变)', charles: '查理：V / T 恒定(P、n 不变)', piston: '无摩擦活塞：P气 = P外', rconst: 'P · V = n · R · T;  R = 0.082 L·atm/(mol·K)' },
-        ku: { boyle: 'Boyle: P · V sabît (T, n sabît)', charles: 'Charles: V / T sabît (P, n sabît)', piston: 'Pistona bê xişandin: Pgaz = Pderve', rconst: 'P · V = n · R · T;  R = 0,082 L·atm/(mol·K)' },
+        ku: { boyle: 'Boyle: P · V sabît (T, n sabît)', charles: 'Charles: V / T sabît (P, n sabît)', piston: 'Pistona bê sûrtin: Pgaz = Pderve', rconst: 'P · V = n · R · T;  R = 0,082 L·atm/(mol·K)' },
       },
     },
     {
@@ -810,7 +810,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Манометры и атмосферное давление',
         ar: 'المانومترات والضغط الجوي',
         zh: '压强计与大气压',
-        ku: 'Manometre û Zexta Hewayê ya Vekirî',
+        ku: 'Manometre û Zexta Atmosferê',
       },
       caption: {
         tr: 'Kapalı uçlu manometrede gaz basıncı cıva düzeyleri farkına eşittir; açık uçlu manometrede bu fark, gaz tarafındaki düzey düşükse açık hava basıncına eklenir, yüksekse ondan çıkarılır.',
@@ -820,7 +820,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'В манометре с запаянным концом давление газа равно разности уровней ртути; в открытом манометре эту разность прибавляют к атмосферному давлению, если уровень со стороны газа ниже, и вычитают, если выше.',
         ar: 'في المانومتر ذي الطرف المغلق يساوي ضغط الغاز فرق مستويي الزئبق؛ وفي المانومتر ذي الطرف المفتوح يُضاف هذا الفرق إلى الضغط الجوي إذا كان مستوى الزئبق في جهة الغاز أدنى، ويُطرح منه إذا كان أعلى.',
         zh: '闭口压强计中，气体压强等于两侧水银面的高度差；开口压强计中，若气体一侧液面较低，则在大气压上加上此差值，若较高则减去。',
-        ku: 'Pîvandina zexta gazê bi bilindahiya stûna cîvayê di lûleya U de: P = P₀ ± h.',
+        ku: 'Di manometreya serîgirtî de zexta gazê bi cudahiya astên cîvayê re wekhev e; di manometreya serîvekirî de, heke asta li aliyê gazê nizmtir be ev cudahî li zexta atmosferê tê zêdekirin, heke bilindtir be jê tê kêmkirin.',
       },
       labels: {
         tr: { p0: 'Açık hava basıncı (P₀)', gas: 'Gaz', hdiff: 'h: iki koldaki cıva düzeyleri farkı (cmHg)', eq: 'Açık uç: Pgaz = P₀ + h' },
@@ -830,7 +830,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { p0: 'Атмосферное давление (P₀)', gas: 'Газ', hdiff: 'h: разность уровней ртути (см рт. ст.)', eq: 'Открытый конец: Pгаза = P₀ + h' },
         ar: { p0: 'الضغط الجوي (P₀)', gas: 'غاز', hdiff: 'h: فرق مستويي الزئبق (cmHg)', eq: 'طرف مفتوح: Pgas = P₀ + h' },
         zh: { p0: '大气压(P₀)', gas: '气体', hdiff: 'h：两侧汞面高度差(cmHg)', eq: '开口端：P气 = P₀ + h' },
-        ku: { p0: 'Zexta hewayê (P₀)', gas: 'Gaz', hdiff: 'h: cudahiya asta cîvayê (cmHg)', eq: 'Serê vekirî: Pgaz = P₀ + h' },
+        ku: { p0: 'Zexta atmosferê (P₀)', gas: 'Gaz', hdiff: 'h: cudahiya astên cîvayê di her du milan de (cmHg)', eq: 'Serê vekirî: Pgaz = P₀ + h' },
       },
     },
   ],
@@ -855,7 +855,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'При одинаковой температуре скорость диффузии газов обратно пропорциональна квадратному корню из их молярных масс: CH₄ диффундирует в 2 раза быстрее SO₂, и газы встречаются ближе к концу с SO₂.',
         ar: 'عند درجة الحرارة نفسها تتناسب سرعة انتشار الغازات عكسيًا مع الجذر التربيعي لكتلها المولية: ينتشر CH₄ أسرع من SO₂ بمرتين، فيلتقي الغازان عند نقطة أقرب إلى طرف SO₂.',
         zh: '同温下气体的扩散速率与摩尔质量的平方根成反比：CH₄的扩散速率是SO₂的2倍，两种气体在靠近SO₂一端的位置相遇。',
-        ku: 'Leza belavbûna gazan bi koka çarçikî ya germahiyê re rast, bi ya koma molar re çewt guncaw e.',
+        ku: 'Di heman germahiyê de leza belavbûna gazan bi koka çargoşe ya girseya wan a molî re berevajî rêjeyî ye: CH₄ 2 qat ji SO₂ zûtir belav dibe û her du gaz li xaleke nêzîkî serê SO₂ digihîjin hev.',
       },
       labels: {
         tr: { vratio: 'v(CH₄) / v(SO₂) = √(64 / 16) = 2', ch4: 'CH₄ (16 g/mol): hızlı', so2: 'SO₂ (64 g/mol): yavaş', temp: 'Aynı sıcaklıkta hafif gaz daha hızlı yayılır: v ∝ 1/√M' },
@@ -878,7 +878,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Закон парциальных давлений Дальтона и реальные газы',
         ar: 'قانون دالتون للضغوط الجزئية والغازات الحقيقية',
         zh: '道尔顿分压定律与实际气体',
-        ku: 'Zextên Beşî yên Dalton û Gazên Rastî',
+        ku: 'Zextên Beşî yên Dalton û Gazên Rastîn',
       },
       caption: {
         tr: 'Karışımdaki her gaz, kabı tek başına dolduruyormuş gibi basınç yapar; toplam basınç kısmi basınçların toplamıdır. Su üstünde toplanan gazın basıncına su buharının basıncı da eklenir.',
@@ -888,7 +888,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Каждый газ в смеси создаёт такое давление, как если бы он один занимал весь сосуд; общее давление равно сумме парциальных давлений. К давлению газа, собранного над водой, добавляется давление водяного пара.',
         ar: 'يُحدث كل غاز في المخلوط ضغطًا كما لو كان يملأ الوعاء وحده، والضغط الكلي يساوي مجموع الضغوط الجزئية. وعند جمع غاز فوق الماء يُضاف ضغط بخار الماء إلى ضغطه.',
         zh: '混合物中每种气体产生的压强与它单独充满容器时相同；总压等于各分压之和。用排水法收集气体时，总压中还包括水蒸气的压强。',
-        ku: 'Zexta giştî berhema zextên beşî ye: Pi = Xi . Ptop. Di germahiya bilind û zexta nizm de nêzîkî îdealbûnê dibe.',
+        ku: 'Her gaza di tevliheviyê de wisa zextê dide wek ku bi tena serê xwe firaxê dagirtibe; zexta giştî serhevdana zextên beşî ye. Li zexta gaza ku li ser avê tê berhevkirin, zexta buhara avê jî zêde dibe.',
       },
       labels: {
         tr: { ptop: 'Ptoplam = P₁ + P₂', molefrac: 'Pᵢ = Xᵢ · Ptoplam', water: 'Su üstünde toplanan gaz: Ptoplam = Pgaz + Psu buharı', jt: 'Joule–Thomson: hızla genleşen gerçek gaz soğur' },
@@ -898,7 +898,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { ptop: 'Pобщ = P₁ + P₂', molefrac: 'Pᵢ = Xᵢ · Pобщ', water: 'Газ, собранный над водой: Pобщ = Pгаза + Pпаров воды', jt: 'Джоуль–Томсон: реальный газ охлаждается при быстром расширении' },
         ar: { ptop: 'Ptotal = P₁ + P₂', molefrac: 'Pᵢ = Xᵢ · Ptotal', water: 'غاز مجمَّع فوق الماء: Ptotal = Pgas + PH₂O', jt: 'جول–طومسون: الغاز الحقيقي يبرد عند تمدده السريع' },
         zh: { ptop: 'P总 = P₁ + P₂', molefrac: 'Pᵢ = Xᵢ · P总', water: '排水集气：P总 = P气 + P水蒸气', jt: '焦耳-汤姆孙：实际气体迅速膨胀时降温' },
-        ku: { ptop: 'Pgiştî = P₁ + P₂', molefrac: 'Pᵢ = Xᵢ · Pgiştî', water: 'Gaza li ser avê hatî berhevkirin: Pgiştî = Pgaz + Philma avê', jt: 'Joule–Thomson: gaza rastîn dema zû fireh dibe sar dibe' },
+        ku: { ptop: 'Pgiştî = P₁ + P₂', molefrac: 'Pᵢ = Xᵢ · Pgiştî', water: 'Gaza li ser avê berhevkirî: Pgiştî = Pgaz + Pbuhara avê', jt: 'Joule–Thomson: gaza rastîn dema bi lez fireh dibe sar dibe' },
       },
     },
   ],
@@ -913,7 +913,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Жидкие растворы и единицы концентрации',
         ar: 'المحاليل السائلة ووحدات التركيز',
         zh: '溶液与浓度单位',
-        ku: 'Helawên Şil û Yekeyên Xestiyê',
+        ku: 'Çareseriyên Şile û Yekeyên Tîrbûnê',
       },
       caption: {
         tr: 'Molarite 1 L çözeltideki, molalite 1 kg çözücüdeki çözünen mol sayısıdır; balon joje ölçü çizgisine kadar doldurularak belirli hacimde çözelti hazırlanır.',
@@ -923,7 +923,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Молярная концентрация — количество растворённого вещества в 1 л раствора, моляльность — в 1 кг растворителя; раствор заданного объёма готовят в мерной колбе, доливая её до метки.',
         ar: 'المولارية عدد مولات المذاب في 1 L من المحلول، والمولالية عدد مولات المذاب في 1 kg من المذيب؛ ويُحضَّر محلول بحجم محدد بملء الدورق الحجمي حتى علامة التدريج.',
         zh: '物质的量浓度是1 L溶液中所含溶质的物质的量，质量摩尔浓度是1 kg溶剂中所含溶质的物质的量；将容量瓶加水至刻度线，可配制一定体积的溶液。',
-        ku: 'Molarîte (M = n/V) û molalîte (m = n/kg) ligel mekanîzmaya entalpiya helandinê.',
+        ku: 'Molarîte hejmara molên madeya helbûyî ya di 1 L çareseriyê de ye, molalîte jî ya di 1 kg helkerê de ye; çareseriya bi qebareya diyar bi dagirtina balona pîvanê heta xêza nîşanê tê amadekirin.',
       },
       labels: {
         tr: { molar: 'Molarite: M = n / V (L çözelti)', molal: 'Molalite: m = n / kg çözücü', dens: 'M = (% · d · 10) / MA', mix: 'Karıştırma: M₁V₁ + M₂V₂ = Mson · Vson' },
@@ -946,7 +946,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Концентрации ионов в растворе',
         ar: 'تراكيز الأيونات في المحلول',
         zh: '溶液中的离子浓度',
-        ku: 'Xestiya Îyonan di Çareseriyê de',
+        ku: 'Tîrbûna Îyonan di Çareseriyê de',
       },
       caption: {
         tr: 'Al₂(SO₄)₃ suda tamamen iyonlaşır: 1 mol tuzdan 2 mol Al³⁺ ve 3 mol SO₄²⁻ oluşur; iyon derişimleri tuzun derişiminin 2 ve 3 katıdır.',
@@ -956,7 +956,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Al₂(SO₄)₃ в воде полностью диссоциирует: из 1 моль соли образуется 2 моль Al³⁺ и 3 моль SO₄²⁻; концентрации ионов в 2 и 3 раза больше концентрации соли.',
         ar: 'يتأين Al₂(SO₄)₃ في الماء تأينًا تامًا: ينتج 1 mol من الملح 2 mol من Al³⁺ و3 mol من SO₄²⁻، فيكون تركيزا الأيونين ضعفي تركيز الملح وثلاثة أمثاله.',
         zh: 'Al₂(SO₄)₃在水中完全电离：1 mol该盐生成2 mol Al³⁺ 和3 mol SO₄²⁻；离子浓度分别是盐浓度的2倍和3倍。',
-        ku: 'Veqetîna xwêyan di nav avê de: hesabên xestiya îyonan li gorî katsayiyan.',
+        ku: 'Al₂(SO₄)₃ di avê de bi tevahî îyonîze dibe: ji 1 mol xwê 2 mol Al³⁺ û 3 mol SO₄²⁻ çêdibin; tîrbûnên îyonan 2 û 3 qatên tîrbûna xwêyê ne.',
       },
       labels: {
         tr: { salt: '1 M Al₂(SO₄)₃ çözeltisi', al: '[Al³⁺] = 2 M', so4: '[SO₄²⁻] = 3 M', total: 'Toplam iyon derişimi = 5 M' },
@@ -966,7 +966,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { salt: '1 M раствор Al₂(SO₄)₃', al: '[Al³⁺] = 2 M', so4: '[SO₄²⁻] = 3 M', total: 'Суммарная концентрация ионов = 5 M' },
         ar: { salt: 'محلول Al₂(SO₄)₃ بتركيز 1 M', al: '[Al³⁺] = 2 M', so4: '[SO₄²⁻] = 3 M', total: 'التركيز الكلي للأيونات = 5 M' },
         zh: { salt: '1 M Al₂(SO₄)₃ 溶液', al: '[Al³⁺] = 2 M', so4: '[SO₄²⁻] = 3 M', total: '离子总浓度 = 5 M' },
-        ku: { salt: 'Çareseriya 1 M Al₂(SO₄)₃', al: '[Al³⁺] = 2 M', so4: '[SO₄²⁻] = 3 M', total: 'Xestiya giştî ya îyonan = 5 M' },
+        ku: { salt: 'Çareseriya 1 M Al₂(SO₄)₃', al: '[Al³⁺] = 2 M', so4: '[SO₄²⁻] = 3 M', total: 'Tîrbûna giştî ya îyonan = 5 M' },
       },
     },
   ],
@@ -981,7 +981,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Коллигативные свойства: температуры кипения и замерзания',
         ar: 'الخواص التجميعية: ارتفاع درجة الغليان وانخفاض درجة التجمد',
         zh: '依数性：沸点升高与凝固点降低',
-        ku: 'Taybetmendiyên Kolîgatîf: Kelîn û Cemidîn',
+        ku: 'Taybetmendiyên Kolîgatîf: Xala Kelînê û Xala Cemidînê',
       },
       caption: {
         tr: 'Çözelti saf sudan daha yüksek sıcaklıkta kaynar, daha düşük sıcaklıkta donar; fark çözünen tanecik derişimine bağlıdır.',
@@ -991,7 +991,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Раствор кипит при более высокой и замерзает при более низкой температуре, чем чистая вода; сдвиг зависит от концентрации частиц.',
         ar: 'يغلي المحلول عند درجة أعلى ويتجمد عند درجة أدنى من الماء النقي؛ ويعتمد الفرق على تركيز جسيمات المذاب.',
         zh: '溶液的沸点比纯水高、凝固点比纯水低；变化量取决于溶质粒子的浓度。',
-        ku: 'Çareserî ji ava saf di germahiyeke bilindtir de dikele û di ya nizmtir de dicemide; cudahî bi tîrbûna perçeyan ve girêdayî ye.',
+        ku: 'Çareserî ji ava paqij di germahiyeke bilindtir de dikele û di germahiyeke nizmtir de dicemide; ev cudahî bi tîrbûna perçeyên helbûyî ve girêdayî ye.',
       },
       labels: {
         tr: { dtk: 'ΔTk = Kk·m·i', dtd: 'ΔTd = Kd·m·i', vanthoff: 'i: çözünenin verdiği tanecik sayısı (NaCl için 2)', osmotic: 'Ozmotik basınç: π = i·M·R·T' },
@@ -1001,7 +1001,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { dtk: 'ΔTкип = Kэб·m·i', dtd: 'ΔTзам = Kкр·m·i', vanthoff: 'i: число частиц на формульную единицу (NaCl: 2)', osmotic: 'Осмотическое давление: π = i·M·R·T' },
         ar: { dtk: 'ΔTb = Kb·m·i', dtd: 'ΔTf = Kf·m·i', vanthoff: 'i: عدد الجسيمات التي يعطيها المذاب (2 لـ NaCl)', osmotic: 'الضغط الأسموزي: π = i·M·R·T' },
         zh: { dtk: 'ΔTb = Kb·m·i', dtd: 'ΔTf = Kf·m·i', vanthoff: 'i：每个化学式单位产生的粒子数(NaCl 为 2)', osmotic: '渗透压：π = i·M·R·T' },
-        ku: { dtk: 'ΔTk = Kk·m·i', dtd: 'ΔTd = Kd·m·i', vanthoff: 'i: hejmara perçeyên ku helbûyî dide (ji bo NaCl 2)', osmotic: 'Zexta osmotîk: π = i·M·R·T' },
+        ku: { dtk: 'ΔTk = Kk·m·i', dtd: 'ΔTd = Kd·m·i', vanthoff: 'i: hejmara perçeyên ji madeya helbûyî (ji bo NaCl 2)', osmotic: 'Zexta osmotîk: π = i·M·R·T' },
       },
     },
     {
@@ -1024,7 +1024,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Растворимость большинства твёрдых веществ растёт с температурой; растворение газов в воде обычно экзотермично, поэтому их растворимость падает при нагревании.',
         ar: 'تزداد ذائبية معظم المواد الصلبة بارتفاع درجة الحرارة؛ أما ذوبان الغازات في الماء فطارد للحرارة غالبًا، لذا تقل ذائبيتها بارتفاع درجة الحرارة.',
         zh: '多数固体的溶解度随温度升高而增大；气体溶于水通常放热，因此气体溶解度随温度升高而减小。',
-        ku: 'Helbûniya piraniya hişkan bi germahiyê zêde dibe; helîna gazan di avê de bi gelemperî ekzotermîk e, loma helbûniya wan bi zêdebûna germahiyê kêm dibe.',
+        ku: 'Helbûniya piraniya madeyên hişk bi germahiyê re zêde dibe; helbûna gazan di avê de bi gelemperî ekzotermîk e, loma helbûniya wan bi zêdebûna germahiyê kêm dibe.',
       },
       labels: {
         tr: { endo: 'Katıların çoğu: T↑ çözünürlük↑', exo: 'Gazlar: T↑ çözünürlük↓', henry: 'Henry yasası: gaz basıncı↑ → gazın çözünürlüğü↑', sat: 'Eğri üzeri: doymuş çözelti' },
@@ -1049,7 +1049,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Потенциальная энергия — координата реакции',
         ar: 'طاقة الوضع - مسار التفاعل',
         zh: '势能-反应进程图',
-        ku: 'Enerjiya Potansiyel - Koordînata Bertekê',
+        ku: 'Enerjiya Potansiyel - Koordînata Reaksiyonê',
       },
       caption: {
         tr: 'Ekzotermik bir tepkimenin enerji profili: ileri ve geri aktifleşme enerjileri ile ΔH = Eai − Eag bağıntısı.',
@@ -1059,7 +1059,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Энергетический профиль экзотермической реакции: энергии активации прямой и обратной реакций, ΔH = Ea(пр) − Ea(обр).',
         ar: 'مخطط طاقة تفاعل طارد للحرارة: طاقتا التنشيط الأمامية والعكسية والعلاقة ΔH = Eai − Eag.',
         zh: '放热反应的能量图：正、逆反应活化能与 ΔH = Eai − Eag。',
-        ku: 'Profîla enerjiyê ya reaksiyoneke ekzotermîk: enerjiyên çalakkirinê yên pêş û paş û ΔH = Eai − Eag.',
+        ku: 'Profîla enerjiyê ya reaksiyoneke ekzotermîk: enerjiyên aktîvasyonê yên pêş û paş û pêwendiya ΔH = Eai − Eag.',
       },
       labels: {
         tr: { eai: 'Eai (ileri)', eag: 'Eag (geri)', dh: 'ΔH = Eai − Eag < 0 (ekzotermik)', ak: 'Aktifleşmiş kompleks' },
@@ -1069,7 +1069,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { eai: 'Ea(пр)', eag: 'Ea(обр)', dh: 'ΔH = Ea(пр) − Ea(обр) < 0 (экзотермическая)', ak: 'Активированный комплекс' },
         ar: { eai: 'Eai (الأمامي)', eag: 'Eag (العكسي)', dh: 'ΔH = Eai − Eag < 0 (طارد للحرارة)', ak: 'المعقد المنشط' },
         zh: { eai: 'Eai（正反应）', eag: 'Eag（逆反应）', dh: 'ΔH = Eai − Eag < 0（放热）', ak: '活化络合物' },
-        ku: { eai: 'Eai (pêş)', eag: 'Eag (paş)', dh: 'ΔH = Eai − Eag < 0 (ekzotermîk)', ak: 'Kompleksa çalakbûyî' },
+        ku: { eai: 'Eai (pêş)', eag: 'Eag (paş)', dh: 'ΔH = Eai − Eag < 0 (ekzotermîk)', ak: 'Kompleksa aktîvkirî' },
       },
     },
     {
@@ -1092,7 +1092,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Энтальпия реакции равна сумме энтальпий отдельных стадий и не зависит от пути реакции.',
         ar: 'التغير في المحتوى الحراري للتفاعل يساوي مجموع التغيرات في المحتوى الحراري لخطواته، ولا يعتمد على المسار.',
         zh: '反应的焓变等于各步反应焓变之和，与反应途径无关。',
-        ku: 'Entalpiya reaksiyonê bi koma entalpiyên qonaxan re wekhev e; bi rê ve ne girêdayî ye.',
+        ku: 'Entalpiya reaksiyonê serhevdana entalpiyên qonaxan e; bi rêya reaksiyonê ve ne girêdayî ye.',
       },
       labels: {
         tr: { hess: 'Hess yasası: ΔH = ΔH₁ + ΔH₂', std: 'Elementler: ΔHf° = 0', rev: 'Ters çevrilirse: −ΔH', mult: 'n ile çarpılırsa: n·ΔH' },
@@ -1102,7 +1102,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { hess: 'Закон Гесса: ΔH = ΔH₁ + ΔH₂', std: 'Простые вещества: ΔHf° = 0', rev: 'Обратная реакция: −ΔH', mult: 'Умножение на n: n·ΔH' },
         ar: { hess: 'قانون هس: ΔH = ΔH₁ + ΔH₂', std: 'العناصر: ΔHf° = 0', rev: 'عند العكس: −ΔH', mult: 'عند الضرب في n: n·ΔH' },
         zh: { hess: '盖斯定律：ΔH = ΔH₁ + ΔH₂', std: '单质：ΔHf° = 0', rev: '反应逆写：−ΔH', mult: '乘以 n：n·ΔH' },
-        ku: { hess: 'Zagona Hess: ΔH = ΔH₁ + ΔH₂', std: 'Element: ΔHf° = 0', rev: 'Berevajî bibe: −ΔH', mult: 'Bi n were carandin: n·ΔH' },
+        ku: { hess: 'Zagona Hess: ΔH = ΔH₁ + ΔH₂', std: 'Element: ΔHf° = 0', rev: 'Berevajîkirin: −ΔH', mult: 'Bi n lêxistin: n·ΔH' },
       },
     },
   ],
@@ -1117,7 +1117,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Действие катализатора и энергия активации',
         ar: 'تأثير العامل الحفاز وخفض طاقة التنشيط',
         zh: '催化剂的作用与活化能',
-        ku: 'Bandora Katalîzorê û Kêmkirina Enerjiya Çalakkirinê',
+        ku: 'Bandora Katalîzorê û Enerjiya Aktîvasyonê',
       },
       caption: {
         tr: 'Pozitif katalizör eşik enerjisini düşürerek tepkimeyi hızlandırır, ΔH değerini değiştirmez.',
@@ -1127,7 +1127,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Положительный катализатор ускоряет реакцию, снижая энергию активации, и не меняет ΔH.',
         ar: 'يخفض العامل الحفاز طاقة التنشيط دون أن يغيّر المحتوى الحراري للتفاعل ΔH.',
         zh: '正催化剂降低活化能，使反应加快，但不改变ΔH。',
-        ku: 'Katalîzor bi kêmkirina enerjiya sînorê leza bertekê zêde dike, ΔH naguherîne.',
+        ku: 'Katalîzora pozîtîf enerjiya aktîvasyonê kêm dike û reaksiyonê bileztir dike; nirxa ΔH naguherîne.',
       },
       labels: {
         tr: { uncat: 'Katalizörsüz', cat: 'Katalizörlü', dh_const: 'ΔH değişmez', k_inc: 'Katalizör Ea değerini düşürür; hız sabiti k büyür' },
@@ -1137,7 +1137,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { uncat: 'Без катализатора', cat: 'С катализатором', dh_const: 'ΔH не меняется', k_inc: 'Катализатор снижает Ea; константа скорости k растёт' },
         ar: { uncat: 'بدون حفاز', cat: 'مع حفاز', dh_const: 'ΔH لا يتغير', k_inc: 'الحفاز يخفض Ea فيزداد ثابت السرعة k' },
         zh: { uncat: '无催化剂', cat: '有催化剂', dh_const: 'ΔH 不变', k_inc: '催化剂降低 Ea，速率常数 k 增大' },
-        ku: { uncat: 'Bê katalîzator', cat: 'Bi katalîzator', dh_const: 'ΔH naguhere', k_inc: 'Katalîzator Ea kêm dike; sabîta lezê k mezin dibe' },
+        ku: { uncat: 'Bê katalîzor', cat: 'Bi katalîzor', dh_const: 'ΔH naguhere', k_inc: 'Katalîzor Ea kêm dike; sabîta lezê k mezin dibe' },
       },
     },
     {
@@ -1150,7 +1150,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Кинетическое уравнение и медленная стадия',
         ar: 'قانون السرعة والخطوة المحددة للسرعة',
         zh: '速率方程与慢反应步骤',
-        ku: 'Hevkêşeya Leza Bertekê û Qonaxa Hêdî',
+        ku: 'Hevkêşeya Lezê û Qonaxa Hêdî',
       },
       caption: {
         tr: 'Mekanizmalı tepkimelerde hızı en yüksek aktifleşme enerjisine sahip yavaş basamak belirler.',
@@ -1160,7 +1160,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'В многостадийных реакциях скорость определяет медленная стадия с наибольшей энергией активации.',
         ar: 'في التفاعلات التي تحدث في عدة خطوات، تحدد الخطوة البطيئة ذات طاقة التنشيط الأعلى سرعة التفاعل.',
         zh: '多步反应的速率由活化能最高的慢反应步骤决定。',
-        ku: 'Di bertekên mekanîzmî de lezê qonaxa hêdî ya bi enerjiya herî bilind diyar dike.',
+        ku: 'Di reaksiyonên bi mekanîzma de, lezê qonaxa hêdî ya ku enerjiya aktîvasyonê ya wê herî bilind e diyar dike.',
       },
       labels: {
         tr: { slow: '1. basamak (yavaş)', fast: '2. basamak (hızlı)', intermediate: 'Ara ürün', rate_eq: 'Hız denklemi yavaş basamağa göre yazılır (Ea₁ > Ea₂)' },
@@ -1170,7 +1170,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { slow: 'Стадия 1 (медленная)', fast: 'Стадия 2 (быстрая)', intermediate: 'Промежуточный продукт', rate_eq: 'Уравнение скорости записывают по медленной стадии (Ea₁ > Ea₂)' },
         ar: { slow: 'الخطوة 1 (بطيئة)', fast: 'الخطوة 2 (سريعة)', intermediate: 'مركب وسطي', rate_eq: 'يُكتب قانون السرعة من الخطوة البطيئة (Ea₁ > Ea₂)' },
         zh: { slow: '第 1 步（慢）', fast: '第 2 步（快）', intermediate: '中间产物', rate_eq: '速率方程由慢反应步骤写出(Ea₁ > Ea₂)' },
-        ku: { slow: 'Qonax 1 (hêdî)', fast: 'Qonax 2 (bilez)', intermediate: 'Berhema navber', rate_eq: 'Wekheviya rêjeyê ji qonaxa hêdî tê nivîsandin (Ea₁ > Ea₂)' },
+        ku: { slow: 'Qonaxa 1. (hêdî)', fast: 'Qonaxa 2. (bilez)', intermediate: 'Hilbera navber', rate_eq: 'Hevkêşeya lezê li gorî qonaxa hêdî tê nivîsîn (Ea₁ > Ea₂)' },
       },
     },
   ],
@@ -1195,7 +1195,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Если на систему в равновесии оказать внешнее воздействие, равновесие смещается в сторону, ослабляющую это воздействие.',
         ar: 'عند التأثير في نظام متزن بمؤثر خارجي ينزاح الاتزان في الاتجاه الذي يقلل هذا التأثير.',
         zh: '改变平衡体系的条件，平衡就向减弱这种改变的方向移动。',
-        ku: 'Gava destwerdanek li sîstema hevseng bê kirin, sîstem ber bi kêmkirina wê bandorê ve diçe.',
+        ku: 'Dema ji derve destwerdan li sîstemeke di hevsengiyê de tê kirin, sîstem ber bi aliyê ku vê bandorê kêm dike ve diçe.',
       },
       labels: {
         tr: { spike: 'N₂ eklendi', shift: 'Denge ürünlere kayar', kc_t: 'Derişimler değişir, Kc değişmez; Kc yalnızca sıcaklıkla değişir', kp_kc: 'Kp = Kc·(RT)^Δn' },
@@ -1205,7 +1205,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { spike: 'Добавлен N₂', shift: 'Равновесие смещается к продуктам', kc_t: 'Концентрации меняются, Kc — нет; Kc зависит только от температуры', kp_kc: 'Kp = Kc·(RT)^Δn' },
         ar: { spike: 'إضافة N₂', shift: 'ينزاح الاتزان نحو النواتج', kc_t: 'تتغير التراكيز ولا يتغير Kc؛ يتغير Kc بدرجة الحرارة فقط', kp_kc: 'Kp = Kc·(RT)^Δn' },
         zh: { spike: '加入 N₂', shift: '平衡向生成物移动', kc_t: '浓度改变而 Kc 不变；Kc 只随温度变化', kp_kc: 'Kp = Kc·(RT)^Δn' },
-        ku: { spike: 'N₂ hat zêdekirin', shift: 'Hevsengî ber bi berheman ve diçe', kc_t: 'Tîrbûn diguherin, Kc naguhere; Kc tenê bi germahiyê diguhere', kp_kc: 'Kp = Kc·(RT)^Δn' },
+        ku: { spike: 'N₂ hat zêdekirin', shift: 'Hevsengî ber bi hilberan ve diçe', kc_t: 'Tîrbûn diguherin, Kc naguhere; Kc tenê bi germahiyê diguhere', kp_kc: 'Kp = Kc·(RT)^Δn' },
       },
     },
     {
@@ -1218,7 +1218,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Коэффициент реакции (Qc) и направление смещения',
         ar: 'حاصل التفاعل (Qc) واتجاه انزياح الاتزان',
         zh: '浓度商(Qc)与平衡移动方向',
-        ku: 'Qada Hevsengiyê (Qc) û Hêla Sîstemê',
+        ku: 'Pişka Reaksiyonê (Qc) û Aliyê Guherînê',
       },
       caption: {
         tr: 'Qc < Kc ise sistem ürünlere (sağa), Qc > Kc ise girenlere (sola) kayarak dengeye ulaşır.',
@@ -1228,7 +1228,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Если Qc < Kc, система приходит к равновесию, смещаясь к продуктам (вправо); если Qc > Kc — к реагентам (влево).',
         ar: 'إذا كان Qc < Kc ينزاح النظام نحو النواتج (اليمين)، وإذا كان Qc > Kc ينزاح نحو المتفاعلات (اليسار) حتى يبلغ الاتزان.',
         zh: 'Qc < Kc时，平衡向生成物方向（向右）移动；Qc > Kc时，向反应物方向（向左）移动，直至达到平衡。',
-        ku: 'Heke Qc < Kc be sîstem ber bi rastê ve, heke Qc > Kc be ber bi çepê ve diçe.',
+        ku: 'Heke Qc < Kc be sîstem ber bi hilberan (rastê), heke Qc > Kc be ber bi reaktantan (çepê) ve diçe û digihîje hevsengiyê.',
       },
       labels: {
         tr: { qc_less: 'Qc < Kc: ürünlere (sağa) kayar', qc_eq: 'Qc = Kc: denge', qc_more: 'Qc > Kc: girenlere (sola) kayar', cat_effect: 'Katalizör Kc değerini ve denge derişimlerini değiştirmez' },
@@ -1238,7 +1238,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { qc_less: 'Qc < Kc: вправо (к продуктам)', qc_eq: 'Qc = Kc: равновесие', qc_more: 'Qc > Kc: влево (к реагентам)', cat_effect: 'Катализатор не меняет ни Kc, ни равновесные концентрации' },
         ar: { qc_less: 'Qc < Kc: نحو اليمين (النواتج)', qc_eq: 'Qc = Kc: اتزان', qc_more: 'Qc > Kc: نحو اليسار (المتفاعلات)', cat_effect: 'الحفاز لا يغيّر Kc ولا تراكيز الاتزان' },
         zh: { qc_less: 'Qc < Kc：向右（生成物）移动', qc_eq: 'Qc = Kc：平衡', qc_more: 'Qc > Kc：向左（反应物）移动', cat_effect: '催化剂不改变 Kc，也不改变平衡浓度' },
-        ku: { qc_less: 'Qc < Kc: ber bi rastê (berhem)', qc_eq: 'Qc = Kc: hevsengî', qc_more: 'Qc > Kc: ber bi çepê (reaktant)', cat_effect: 'Katalîzator ne Kc ne jî tîrbûnên hevsengiyê diguherîne' },
+        ku: { qc_less: 'Qc < Kc: ber bi hilberan (rastê) diçe', qc_eq: 'Qc = Kc: hevsengî', qc_more: 'Qc > Kc: ber bi reaktantan (çepê) diçe', cat_effect: 'Katalîzor ne Kc ne jî tîrbûnên hevsengiyê diguherîne' },
       },
     },
   ],
@@ -1253,7 +1253,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Кислотно-основное титрование и установка с бюреткой',
         ar: 'معايرة الحمض بالقاعدة وجهاز السحاحة',
         zh: '酸碱滴定与滴定装置',
-        ku: 'Tîtrasyona Asîd-Baz û Xêza Buretê',
+        ku: 'Tîtrasyona Asîd-Baz û Amûra Buretê',
       },
       caption: {
         tr: 'Büretten damlatılan baz ile erlendeki asidin nötralleşmesi ve pH = 7 olan eşdeğerlik noktası.',
@@ -1263,7 +1263,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Нейтрализация кислоты в колбе основанием, добавляемым по каплям из бюретки, и точка эквивалентности при pH = 7.',
         ar: 'تعادل الحمض في الدورق المخروطي بالقاعدة المضافة قطرة قطرة من السحاحة، ونقطة التكافؤ عند pH = 7.',
         zh: '从滴定管滴入的碱中和锥形瓶中的酸，化学计量点时pH = 7。',
-        ku: 'Dilopkirina baz ji buretê û bêalîbûna asîdê li xala pH 7.',
+        ku: 'Neutralîzasyona asîda di erlenmeyerê de bi baza ku ji buretê tê dilopkirin û xala hevtayê ya ku pH = 7 e.',
       },
       labels: {
         tr: { burette: '0,1 M NaOH', flask: '100 mL 0,1 M HCl', eqpt: 'Eşdeğerlik noktası: pH = 7', buffer: 'Tampon bölgesi yoktur (kuvvetli asit – kuvvetli baz)' },
@@ -1273,7 +1273,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { burette: '0,1 M NaOH', flask: '100 мл 0,1 M HCl', eqpt: 'Точка эквивалентности: pH = 7', buffer: 'Буферной области нет (сильная кислота – сильное основание)' },
         ar: { burette: '0.1 M NaOH', flask: '100 mL من HCl 0.1 M', eqpt: 'نقطة التكافؤ: pH = 7', buffer: 'لا توجد منطقة منظِّمة (حمض قوي – قاعدة قوية)' },
         zh: { burette: '0.1 M NaOH', flask: '100 mL 0.1 M HCl', eqpt: '化学计量点：pH = 7', buffer: '无缓冲区（强酸-强碱）' },
-        ku: { burette: '0,1 M NaOH', flask: '100 mL 0,1 M HCl', eqpt: 'Xala wekheviyê: pH = 7', buffer: 'Herêma tampon tune (asîda xurt – baza xurt)' },
+        ku: { burette: '0,1 M NaOH', flask: '100 mL 0,1 M HCl', eqpt: 'Xala hevtayê: pH = 7', buffer: 'Herêma tampon tune (asîda bihêz – baza bihêz)' },
       },
     },
     {
@@ -1286,7 +1286,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Диссоциация слабых кислот и буферные растворы',
         ar: 'تأين الأحماض الضعيفة والمحاليل المنظمة',
         zh: '弱酸的电离与缓冲溶液',
-        ku: 'Îyonîzasyona Asîda Qels û Helawên Tampon',
+        ku: 'Îyonîzasyona Asîda Qels û Çareseriyên Tampon',
       },
       caption: {
         tr: 'Zayıf asit seyreltildikçe iyonlaşma yüzdesi artar; tampon çözelti pH değişimine direnir.',
@@ -1296,7 +1296,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'При разбавлении слабой кислоты степень её диссоциации растёт; буферный раствор противостоит изменению pH.',
         ar: 'تزداد النسبة المئوية لتأين الحمض الضعيف كلما خُفِّف؛ ويقاوم المحلول المنظِّم تغير pH.',
         zh: '弱酸溶液越稀，电离度越大；缓冲溶液能抵抗pH的变化。',
-        ku: 'Bi tenikkirinê re ji sedî ya îyonîzasyona asîda qels zêde dibe; tampon li hember guherîna pH radiweste.',
+        ku: 'Asîda qels çiqas sist bibe, rêjeya îyonîzasyonê ya ji sedî ewqas zêde dibe; çareseriya tampon li hember guherîna pH-ê radiweste.',
       },
       labels: {
         tr: { henderson: 'Tampon bölgesinde: pH = pKa + log([tuz]/[asit])', ka_eq: '[H⁺] = √(Ka·Ca)', dil_pct: 'Seyreltme: iyonlaşma yüzdesi artar', salt_hydro: 'Eşdeğerlik: pH > 7 (tuz hidrolizi)' },
@@ -1306,7 +1306,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { henderson: 'В буферной области: pH = pKa + lg([соль]/[кислота])', ka_eq: '[H⁺] = √(Ka·Ca)', dil_pct: 'Разбавление: степень диссоциации растёт', salt_hydro: 'Эквивалентность: pH > 7 (гидролиз соли)' },
         ar: { henderson: 'في المنطقة المنظِّمة: pH = pKa + log([الملح]/[الحمض])', ka_eq: '[H⁺] = √(Ka·Ca)', dil_pct: 'التخفيف: تزداد نسبة التأين', salt_hydro: 'التكافؤ: pH > 7 (التحلل المائي للملح)' },
         zh: { henderson: '缓冲区：pH = pKa + lg([盐]/[酸])', ka_eq: '[H⁺] = √(Ka·Ca)', dil_pct: '稀释：电离度增大', salt_hydro: '化学计量点：pH > 7（盐类水解）' },
-        ku: { henderson: 'Di herêma tampon de: pH = pKa + log([xwê]/[asîd])', ka_eq: '[H⁺] = √(Ka·Ca)', dil_pct: 'Tenikkirin: sedî ya îyonîzasyonê zêde dibe', salt_hydro: 'Wekhevî: pH > 7 (hîdrolîza xwêyê)' },
+        ku: { henderson: 'Di herêma tampon de: pH = pKa + log([xwê]/[asîd])', ka_eq: '[H⁺] = √(Ka·Ca)', dil_pct: 'Sistkirin: îyonîzasyona ji sedî zêde dibe', salt_hydro: 'Xala hevtayê: pH > 7 (hîdrolîza xwêyê)' },
       },
     },
   ],
@@ -1321,7 +1321,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Равновесие растворимости (Ksp) и осаждение',
         ar: 'حاصل الإذابة (Ksp) والترسيب',
         zh: '沉淀溶解平衡(Ksp)与沉淀生成',
-        ku: 'Hevsengiya Helbûniyê (Ksp) û Nişîn',
+        ku: 'Hevsengiya Helbûniyê (Ksp) û Niştin',
       },
       caption: {
         tr: 'İyon çarpımı Qi > Kçç olduğunda sistem doygunluğu aşar ve çökelme meydana gelir.',
@@ -1331,7 +1331,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Когда ионное произведение Qi больше Ksp, раствор становится пересыщенным и выпадает осадок.',
         ar: 'عندما يصبح الحاصل الأيوني Qi أكبر من Ksp يتجاوز المحلول حد التشبع ويحدث الترسيب.',
         zh: '离子积Qi > Ksp时，溶液过饱和，有沉淀生成。',
-        ku: 'Dema ku berhema îyonan Qi > Ksp bibe, sîstem têrbûnê derbas dike û nişîn pêk tê.',
+        ku: 'Dema hasila îyonan Qi > Ksp be, sîstem têrbûnê derbas dike û niştin çêdibe.',
       },
       labels: {
         tr: { ksp_xy: 'XY: Kçç = s²', ksp_xy2: 'XY₂: Kçç = 4s³', ksp_x2y3: 'X₂Y₃: Kçç = 108s⁵', q_precip: 'Qi > Kçç ise çökelme olur; Qi = Kçç ise çözelti doygundur' },
@@ -1341,7 +1341,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { ksp_xy: 'XY: Ksp = s²', ksp_xy2: 'XY₂: Ksp = 4s³', ksp_x2y3: 'X₂Y₃: Ksp = 108s⁵', q_precip: 'Qi > Ksp: выпадает осадок; Qi = Ksp: насыщенный раствор' },
         ar: { ksp_xy: 'XY: Ksp = s²', ksp_xy2: 'XY₂: Ksp = 4s³', ksp_x2y3: 'X₂Y₃: Ksp = 108s⁵', q_precip: 'Qi > Ksp: يتكوّن راسب؛ Qi = Ksp: محلول مشبع' },
         zh: { ksp_xy: 'XY：Ksp = s²', ksp_xy2: 'XY₂：Ksp = 4s³', ksp_x2y3: 'X₂Y₃：Ksp = 108s⁵', q_precip: 'Qi > Ksp：有沉淀生成；Qi = Ksp：溶液饱和' },
-        ku: { ksp_xy: 'XY: Ksp = s²', ksp_xy2: 'XY₂: Ksp = 4s³', ksp_x2y3: 'X₂Y₃: Ksp = 108s⁵', q_precip: 'Qi > Ksp: nişîn çêdibe; Qi = Ksp: çareserî têr e' },
+        ku: { ksp_xy: 'XY: Ksp = s²', ksp_xy2: 'XY₂: Ksp = 4s³', ksp_x2y3: 'X₂Y₃: Ksp = 108s⁵', q_precip: 'Qi > Ksp: niştin çêdibe; Qi = Ksp: çareserî têr e' },
       },
     },
     {
@@ -1364,7 +1364,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Одноимённый ион уменьшает растворимость, но произведение растворимости Ksp не меняется.',
         ar: 'يقلل الأيون المشترك الذائبية، لكن حاصل الإذابة Ksp لا يتغير.',
         zh: '同离子效应使溶解度减小，但溶度积Ksp不变。',
-        ku: 'Îyona hevpar helbûniyê kêm dike; lê sabîta Ksp naguhere.',
+        ku: 'Îyona hevpar helbûniyê kêm dike; lê sabîta hasila helbûniyê Ksp naguhere.',
       },
       labels: {
         tr: { common: 'Ortak iyon Cl⁻ dengeyi katı AgCl yönüne kaydırır', pure: 'Saf suda: çözünürlük büyük', ion_sol: 'NaCl çözeltisinde: çözünürlük küçük', ksp_const: 'Kçç değişmez; yalnızca sıcaklıkla değişir' },
@@ -1374,7 +1374,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { common: 'Одноимённый ион Cl⁻ смещает равновесие к твёрдому AgCl', pure: 'В чистой воде: растворимость больше', ion_sol: 'В растворе NaCl: растворимость меньше', ksp_const: 'Ksp не меняется; он зависит только от температуры' },
         ar: { common: 'الأيون المشترك Cl⁻ يزيح الاتزان نحو AgCl الصلب', pure: 'في الماء النقي: ذائبية أكبر', ion_sol: 'في محلول NaCl: ذائبية أقل', ksp_const: 'Ksp لا يتغير؛ يتغير بدرجة الحرارة فقط' },
         zh: { common: '同离子 Cl⁻ 使平衡向固体 AgCl 方向移动', pure: '纯水中：溶解度较大', ion_sol: 'NaCl 溶液中：溶解度较小', ksp_const: 'Ksp 不变；它只随温度变化' },
-        ku: { common: 'Îyona hevpar Cl⁻ hevsengiyê ber bi AgCl ya hişk ve dibe', pure: 'Di ava saf de: helbûnî mezin e', ion_sol: 'Di çareseriya NaCl de: helbûnî biçûk e', ksp_const: 'Ksp naguhere; tenê bi germahiyê diguhere' },
+        ku: { common: 'Îyona hevpar Cl⁻ hevsengiyê ber bi AgCl ya hişk ve dikişîne', pure: 'Di ava paqij de: helbûnî mezin e', ion_sol: 'Di çareseriya NaCl de: helbûnî biçûk e', ksp_const: 'Ksp naguhere; tenê bi germahiyê diguhere' },
       },
     },
   ],
@@ -1399,7 +1399,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Zn окисляется на аноде, Cu²⁺ восстанавливается на катоде; во внешней цепи электроны движутся от анода к катоду.',
         ar: 'يتأكسد Zn عند المصعد، وتُختزل أيونات Cu²⁺ عند المهبط؛ وتنتقل الإلكترونات في الدائرة الخارجية من المصعد إلى المهبط.',
         zh: 'Zn在负极被氧化，Cu²⁺ 在正极被还原；外电路中电子由负极流向正极。',
-        ku: 'Zn li anotê tê bilindkirin, Cu li katotê tê daxistin; elektron ji anotê diçin katotê.',
+        ku: 'Zn li anodê dikeve oksîdasyonê, Cu²⁺ li katodê dikeve redûksiyonê; di çerxa derve de elektron ji anodê ber bi katodê ve diherikin.',
       },
       labels: {
         tr: { anode: 'Anot (−): Zn → Zn²⁺ + 2e⁻', cathode: 'Katot (+): Cu²⁺ + 2e⁻ → Cu', bridge: 'Tuz köprüsü (KNO₃)', volt: 'Elektronlar dış devrede anottan katoda akar; E°pil = 1,10 V' },
@@ -1409,7 +1409,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { anode: 'Анод (−): Zn → Zn²⁺ + 2e⁻', cathode: 'Катод (+): Cu²⁺ + 2e⁻ → Cu', bridge: 'Солевой мостик (KNO₃)', volt: 'Электроны идут по проводу от анода к катоду; E° = 1,10 В' },
         ar: { anode: 'المصعد (−): Zn → Zn²⁺ + 2e⁻', cathode: 'المهبط (+): Cu²⁺ + 2e⁻ → Cu', bridge: 'القنطرة الملحية (KNO₃)', volt: 'تنتقل الإلكترونات في السلك من المصعد إلى المهبط؛ E°cell = 1.10 V' },
         zh: { anode: '负极(−)：Zn → Zn²⁺ + 2e⁻', cathode: '正极(+)：Cu²⁺ + 2e⁻ → Cu', bridge: '盐桥(KNO₃)', volt: '电子在外电路中由负极流向正极；E° = 1.10 V' },
-        ku: { anode: 'Anot (−): Zn → Zn²⁺ + 2e⁻', cathode: 'Katot (+): Cu²⁺ + 2e⁻ → Cu', bridge: 'Pira xwê (KNO₃)', volt: 'Elektron di têlê de ji anotê diçin katotê; E° = 1,10 V' },
+        ku: { anode: 'Anod (−): Zn → Zn²⁺ + 2e⁻', cathode: 'Katod (+): Cu²⁺ + 2e⁻ → Cu', bridge: 'Pira xwê (KNO₃)', volt: 'Elektron di çerxa derve de ji anodê diçin katodê; E°pîl = 1,10 V' },
       },
     },
     {
@@ -1422,7 +1422,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Концентрационные элементы',
         ar: 'خلايا التركيز',
         zh: '浓差电池',
-        ku: 'Pîlên Xestiyê',
+        ku: 'Pîlên Tîrbûnê',
       },
       caption: {
         tr: 'Gerilimi yalnızca derişim farkı oluşturur. Derişimi az olan kap anot, derişik kap katottur.',
@@ -1432,7 +1432,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Напряжение создаётся только разностью концентраций. Полуэлемент с меньшей концентрацией — анод, с большей — катод.',
         ar: 'ينشأ الجهد من فرق التركيز فقط. نصف الخلية الأقل تركيزًا هو المصعد، ونصف الخلية الأكثر تركيزًا هو المهبط.',
         zh: '电压只由浓度差产生。稀溶液一侧为负极，浓溶液一侧为正极。',
-        ku: 'Volt tenê ji cudahiya xestiyê çêdibe. Qaba bi xestiya kêm anot e, qaba xest katot e.',
+        ku: 'Voltajê tenê cudahiya tîrbûnê çêdike. Firaxa sist anod e, firaxa tîr katod e.',
       },
       labels: {
         tr: { nernst: 'Gerilimi yalnızca derişim farkı oluşturur', conc_anode: 'Anot (−): seyreltik kap', conc_cath: 'Katot (+): derişik kap', stop: 'Derişimler eşitlenince gerilim sıfır olur' },
@@ -1442,7 +1442,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { nernst: 'Напряжение создаёт только разность концентраций', conc_anode: 'Анод (−): разбавленный раствор', conc_cath: 'Катод (+): концентрированный раствор', stop: 'При равных концентрациях напряжение равно нулю' },
         ar: { nernst: 'ينشأ الجهد من فرق التركيز فقط', conc_anode: 'المصعد (−): المحلول المخفف', conc_cath: 'المهبط (+): المحلول المركز', stop: 'عند تساوي التركيزين يصبح الجهد صفرًا' },
         zh: { nernst: '电压只由浓度差产生', conc_anode: '负极(−)：稀溶液一侧', conc_cath: '正极(+)：浓溶液一侧', stop: '两侧浓度相等时电压为零' },
-        ku: { nernst: 'Voltaj tenê ji cudahiya tîrbûnê tê', conc_anode: 'Anot (−): qaba tenik', conc_cath: 'Katot (+): qaba tîr', stop: 'Dema tîrbûn wekhev bibin voltaj dibe sifir' },
+        ku: { nernst: 'Voltajê tenê cudahiya tîrbûnê çêdike', conc_anode: 'Anod (−): firaxa sist', conc_cath: 'Katod (+): firaxa tîr', stop: 'Dema tîrbûn wekhev dibin, voltaj dibe sifir' },
       },
     },
   ],
@@ -1467,7 +1467,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Разложение воды электрическим током: на катоде собирается 2 объёма H₂, на аноде — 1 объём O₂.',
         ar: 'تحلل الماء بالكهرباء: يتجمع حجمان من غاز H₂ عند المهبط مقابل حجم واحد من غاز O₂ عند المصعد.',
         zh: '用电分解水：阴极收集到2体积H₂，阳极收集到1体积O₂。',
-        ku: 'Veqetandina avê bi elektrîkê: li katotê 2 qebare H₂, li anotê 1 qebare O₂ kom dibe.',
+        ku: 'Perçebûna avê bi elektrîkê: li katodê 2 qebare gaza H₂, li anodê 1 qebare gaza O₂ kom dibe.',
       },
       labels: {
         tr: { cathode_h2: '4H₂O + 4e⁻ → 2H₂ + 4OH⁻ (indirgenme)', anode_o2: '2H₂O → O₂ + 4H⁺ + 4e⁻ (yükseltgenme)', faraday: 'Net: 2H₂O → 2H₂ + O₂ (4 mol e⁻ = 4 F)', dc: 'Doğru akım kaynağı' },
@@ -1500,7 +1500,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'm = (I·t·MA) / (96500·z). Для защиты от коррозии к железу присоединяют более активный металл — протектор.',
         ar: 'm = (I·t·MA) / (96500·z). ولمنع تآكل الحديد يوصل به قطب مضحٍّ أكثر نشاطًا منه.',
         zh: 'm = (I·t·MA) / (96500·z)。为防止腐蚀，将更活泼的金属作为牺牲阳极与铁相连。',
-        ku: 'Hesaba komê bi qanûna Faraday û girêdana elektroda qurbanê ji bo rêgirtina korozyonê.',
+        ku: 'm = (I·t·MA) / (96500·z). Ji bo pêşîgirtina li korozyonê, elektrodeke qurbanê ya çalaktir bi hesin ve tê girêdan.',
       },
       labels: {
         tr: { faraday_law: 'm = (I·t·MA) / (96500·z)', sac_anode: 'Kurban elektrot: Mg (anot, yükseltgenir)', fe_pipe: 'Demir boru: katot, korunur', electroplate: 'Elektrolizle kaplama: Ag⁺ + e⁻ → Ag' },
@@ -1510,7 +1510,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { faraday_law: 'm = (I·t·MA) / (96500·z)', sac_anode: 'Протектор: Mg (анод, окисляется)', fe_pipe: 'Железная труба: катод, защищена', electroplate: 'Гальваническое покрытие: Ag⁺ + e⁻ → Ag' },
         ar: { faraday_law: 'm = (I·t·MA) / (96500·z)', sac_anode: 'القطب المضحي: Mg (مصعد، يتأكسد)', fe_pipe: 'أنبوب الحديد: مهبط، محمي', electroplate: 'الطلاء الكهربائي: Ag⁺ + e⁻ → Ag' },
         zh: { faraday_law: 'm = (I·t·MA) / (96500·z)', sac_anode: '牺牲阳极：Mg（被氧化）', fe_pipe: '铁管：阴极，受保护', electroplate: '电镀：Ag⁺ + e⁻ → Ag' },
-        ku: { faraday_law: 'm = (I·t·MA) / (96500·z)', sac_anode: 'Elektroda qurban: Mg (oksîde dibe)', fe_pipe: 'Lûleya hesin: katot, tê parastin', electroplate: 'Rûkêşkirina elektrolîtîk: Ag⁺ + e⁻ → Ag' },
+        ku: { faraday_law: 'm = (I·t·MA) / (96500·z)', sac_anode: 'Elektroda qurbanê: Mg (anod, oksîdasyon)', fe_pipe: 'Boriya hesin: katod, tê parastin', electroplate: 'Rûpoşkirin bi elektrolîzê: Ag⁺ + e⁻ → Ag' },
       },
     },
   ],
@@ -1525,7 +1525,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Геометрия молекул по VSEPR и валентные углы',
         ar: 'الأشكال الهندسية للجزيئات (VSEPR) وزوايا الروابط',
         zh: 'VSEPR分子构型与键角',
-        ku: 'Geometriya Molekûlan a VSEPR û Goşeyên Bendan',
+        ku: 'Geometriya Molekulê ya VSEPR û Goşeyên Girêdanê',
       },
       caption: {
         tr: 'AX₂ doğrusal (180°), AX₃ düzlem üçgen (120°), AX₄ düzgün dörtyüzlü (109,5°), AX₃E üçgen piramit (107°), AX₂E₂ kırık doğru (104,5°).',
@@ -1535,7 +1535,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'AX₂ — линейная (180°), AX₃ — плоский треугольник (120°), AX₄ — правильный тетраэдр (109,5°), AX₃E — тригональная пирамида (107°), AX₂E₂ — угловая (104,5°).',
         ar: 'AX₂ خطي (180°)، AX₃ مثلث مستوٍ (120°)، AX₄ رباعي الأوجه منتظم (109.5°)، AX₃E هرم ثلاثي (107°)، AX₂E₂ منحنٍ (104.5°).',
         zh: 'AX₂直线形(180°)，AX₃平面三角形(120°)，AX₄正四面体形(109.5°)，AX₃E三角锥形(107°)，AX₂E₂ V形(104.5°)。',
-        ku: 'Goşeyên bendan li gorî VSEPR: rast (180°), sêgoşe (120°), çaralî (109.5°) û xwar (104.5°).',
+        ku: 'AX₂ xêzikî (180°), AX₃ sêgoşeya pelî (120°), AX₄ tetrahedral (109,5°), AX₃E pîramîda sêgoşe (107°), AX₂E₂ goşeyî (104,5°).',
       },
       labels: {
         tr: { ax2: 'AX₂ doğrusal 180°', ax3: 'AX₃ düzlem üçgen 120°', ax4: 'AX₄ düzgün dörtyüzlü 109,5°', ax2e2: 'AX₂E₂ kırık doğru 104,5°' },
@@ -1545,7 +1545,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { ax2: 'AX₂ линейная 180°', ax3: 'AX₃ плоский треугольник 120°', ax4: 'AX₄ тетраэдр 109,5°', ax2e2: 'AX₂E₂ угловая 104,5°' },
         ar: { ax2: 'AX₂ خطي 180°', ax3: 'AX₃ مثلث مستوٍ 120°', ax4: 'AX₄ رباعي الأوجه 109.5°', ax2e2: 'AX₂E₂ منحنٍ 104.5°' },
         zh: { ax2: 'AX₂ 直线形 180°', ax3: 'AX₃ 平面三角形 120°', ax4: 'AX₄ 正四面体形 109.5°', ax2e2: 'AX₂E₂ V 形 104.5°' },
-        ku: { ax2: 'AX₂ xêzik 180°', ax3: 'AX₃ sêgoşeya rast 120°', ax4: 'AX₄ çarrû 109,5°', ax2e2: 'AX₂E₂ xwar 104,5°' },
+        ku: { ax2: 'AX₂ xêzikî 180°', ax3: 'AX₃ sêgoşeya pelî 120°', ax4: 'AX₄ tetrahedral 109,5°', ax2e2: 'AX₂E₂ goşeyî 104,5°' },
       },
     },
     {
@@ -1568,7 +1568,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Алмаз (sp3-гибридизация) — диэлектрик; графит благодаря слоям из sp2-атомов и π-электронам проводит электрический ток.',
         ar: 'الماس بتهجين sp3 عازل للكهرباء؛ أما الجرافيت فيوصل الكهرباء بطبقاته ذات التهجين sp2 وإلكترونات باي.',
         zh: '金刚石中碳原子为sp³杂化，不导电；石墨为sp²杂化的层状结构，有π电子，能导电。',
-        ku: 'Elmas bi hîbrîda sp3 îzole ye; grafît bi qatên sp2 û elektronên pî elektrîkê dikişîne.',
+        ku: 'Elmas bi hîbrîdîzasyona sp3 îzolator e; grafît bi qatên sp2 û elektronên pî elektrîkê diguhezîne.',
       },
       labels: {
         tr: { diamond: 'Elmas: sp³, çok sert, yalıtkan', graphite: 'Grafit: sp², tabakalı, iletken', graphene: 'Grafen: tek grafit tabakası', nanotube: 'Karbon nanotüp: silindir biçiminde kıvrılmış tabaka' },
@@ -1578,7 +1578,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { diamond: 'Алмаз: sp³, очень твёрдый, диэлектрик', graphite: 'Графит: sp², слоистый, проводник', graphene: 'Графен: один слой графита', nanotube: 'Углеродная нанотрубка: слой, свёрнутый в цилиндр' },
         ar: { diamond: 'الماس: sp³، شديد الصلابة، عازل', graphite: 'الجرافيت: sp²، طبقات، موصل', graphene: 'الجرافين: طبقة واحدة من الجرافيت', nanotube: 'أنبوب الكربون النانوي: طبقة ملفوفة أسطوانيًا' },
         zh: { diamond: '金刚石：sp³，极硬，不导电', graphite: '石墨：sp²，层状，导电', graphene: '石墨烯：单层石墨', nanotube: '碳纳米管：卷成圆筒的单层' },
-        ku: { diamond: 'Elmas: sp³, pir hişk, îzolator', graphite: 'Grafît: sp², qatqatî, gihîner', graphene: 'Grafen: yek qata grafîtê', nanotube: 'Nanotûba karbonê: qata ku wek silindir hatiye pêçandin' },
+        ku: { diamond: 'Elmas: sp³, pir hişk, îzolator', graphite: 'Grafît: sp², qatqatî, gihîner', graphene: 'Grafen: yek qata grafîtê', nanotube: 'Nanotûba karbonê: qateke wek silindir pêçayî' },
       },
     },
   ],
@@ -1603,7 +1603,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Спирты (-OH), простые эфиры (-O-), альдегиды и кетоны (-C=O), карбоновые кислоты (-COOH) и сложные эфиры (-COOR).',
         ar: 'الكحول (-OH)، والإيثر (-O-)، والألدهيد/الكيتون (-C=O)، والحمض الكربوكسيلي (-COOH)، والإستر (-COOR).',
         zh: '醇(-OH)、醚(-O-)、醛/酮(C=O)、羧酸(-COOH)和酯(-COOR)。',
-        ku: 'Komên hîdroksîl, karbonîl, karboksîl û esterê di kîmyaya organîk de.',
+        ku: 'Alkol (-OH), Eter (-O-), Aldehîd/Keton (-C=O), Asîda karboksîlîk (-COOH) û Ester (-COOR).',
       },
       labels: {
         tr: { alcohol: 'Alkol: R–OH', ether: 'Eter: R–O–R′', carbonyl: 'Aldehit: R–CHO · Keton: R–CO–R′', acid: 'Karboksilik asit: R–COOH · Ester: R–COO–R′' },
@@ -1626,7 +1626,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'Правило Марковникова для алкенов и реактив Толленса',
         ar: 'قاعدة ماركوفنيكوف واختبار تولنز',
         zh: '马氏规则与托伦试剂',
-        ku: 'Zagona Markovnikov û Testa Tollens',
+        ku: 'Qaîdeya Markovnikov li Alkenan û Reaktîfa Tollens',
       },
       caption: {
         tr: 'Asimetrik alkene HX katıldığında H hidrojence zengin karbona bağlanır; uç alkinler Tollens ayıracıyla beyaz çökelek verir.',
@@ -1636,7 +1636,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: 'При присоединении HX к несимметричному алкену H присоединяется к атому углерода, связанному с большим числом атомов водорода; концевые алкины с реактивом Толленса дают белый осадок.',
         ar: 'عند إضافة HX إلى ألكين غير متماثل يرتبط H بذرة الكربون الأغنى بالهيدروجين؛ وتعطي الألكاينات الطرفية راسبًا أبيض مع كاشف تولنز.',
         zh: '不对称烯烃与HX加成时，H加到含氢较多的碳原子上；端炔与托伦试剂生成白色沉淀。',
-        ku: 'Li gorî Markovnikov H diçe ser karbona bi hîdrojena zêde; alkînên serî bi Tollens re nişîna spî didin.',
+        ku: 'Dema HX li alkeneke asîmetrîk zêde dibe, H bi karbona ku hîdrojenên wê zêdetir in ve girê dibe; alkînên dawî bi reaktîfa Tollens re niştekeke spî didin.',
       },
       labels: {
         tr: { markov: 'Markovnikov: H, hidrojeni çok olan karbona bağlanır', tollens_alkyne: 'Uç alkin + Tollens: beyaz çökelek', tollens_ald: 'Aldehit + Tollens: gümüş aynası', internal: 'İç alkin + Tollens: tepkime vermez' },
@@ -1646,7 +1646,7 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ru: { markov: 'Марковников: H — к атому C, у которого больше атомов H', tollens_alkyne: 'Концевой алкин + Толленс: белый осадок', tollens_ald: 'Альдегид + Толленс: серебряное зеркало', internal: 'Внутренний алкин + Толленс: нет реакции' },
         ar: { markov: 'ماركوفنيكوف: يرتبط H بالكربون الأغنى بالهيدروجين', tollens_alkyne: 'ألكاين طرفي + تولنز: راسب أبيض', tollens_ald: 'ألدهيد + تولنز: مرآة فضية', internal: 'ألكاين داخلي + تولنز: لا تفاعل' },
         zh: { markov: '马氏规则：H 加到含氢较多的碳上', tollens_alkyne: '端炔 + 托伦试剂：白色沉淀', tollens_ald: '醛 + 托伦试剂：银镜', internal: '内炔 + 托伦试剂：不反应' },
-        ku: { markov: 'Markovnikov: H diçe ser karbona ku hîdrojena wê zêdetir e', tollens_alkyne: 'Alkîna serî + Tollens: nişîna spî', tollens_ald: 'Aldehîd + Tollens: neynika zîv', internal: 'Alkîna hundirîn + Tollens: reaksiyon nade' },
+        ku: { markov: 'Markovnikov: H bi karbona ku hîdrojenên wê zêdetir in ve girê dibe', tollens_alkyne: 'Alkîna dawî + Tollens: niştekeke spî', tollens_ald: 'Aldehîd + Tollens: neynika zîv', internal: 'Alkîna navîn + Tollens: reaksiyon çênabe' },
       },
     },
   ],

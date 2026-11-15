@@ -113,9 +113,9 @@ export const ZOOM_FIT_I18N: Record<
   },
   ku: {
     zoomIn: 'Nêzîk bike',
-    zoomOut: 'Dûr bixe',
-    fitScreen: 'Li ser ekranê bicîh bike',
-    reset: 'Reset',
+    zoomOut: 'Biçûk bike',
+    fitScreen: 'Li ekranê bicih bike',
+    reset: 'Ji nû ve saz bike',
   },
 };
 

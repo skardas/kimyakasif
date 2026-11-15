@@ -282,23 +282,23 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     missingStep: (opt, title, full) => `缺失的步骤是“${bare(opt)}”。“${title}”的正确步骤顺序：${full}。`,
   },
   ku: {
-    romanTrue: (combo) => `Ji ber vê yekê vebijarka ku tam gotinên rast dihewîne "${combo}" e.`,
-    romanFalse: (combo) => `Ji ber vê yekê vebijarka ku tam gotinên şaş dihewîne "${combo}" e.`,
+    romanTrue: (combo) => `Ji ber vê yekê vebijarka ku tenê gotinên rast dihewîne "${combo}" e.`,
+    romanFalse: (combo) => `Ji ber vê yekê vebijarka ku tenê gotinên şaş dihewîne "${combo}" e.`,
     romanValid: (n, fact, tip) => `${n}. Rast e: ${bare(fact)}.${tip ? ` (Nîşe: ${bare(tip)}.)` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. Şaş e: ${why ? `${bare(why)}. ` : ''}Ya rast: ${bare(fact)}.`,
     negativeTrapWhy: (opt, why, fact) => `Gotina şaş "${bare(opt)}" e. ${bare(why)}. Ya rast: ${bare(fact)}. Hemû gotinên din rast in.`,
     negativeTrapDefault: (opt, fact) => `Gotina şaş "${bare(opt)}" e. Ya rast: ${bare(fact)}. Hemû gotinên din rast in.`,
-    positiveConceptTip: (opt, tip) => `Gotina rast "${bare(opt)}" e. Serişteya ezmûnê: ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `Gotina rast "${bare(opt)}" e. Serişteya azmûnê: ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `Gotina rast "${bare(opt)}" e.`,
     otherOptionsIntro: 'Vebijarkên din şaş in; rastiyên wan ev in:',
     otherOptionsWhyIntro: 'Vebijarkên din şaş in:',
     optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. Ya rast: ` : ''}${bare(fact)}.`,
-    structureMatch: (opt, a, b, dist) => `Bersiva rast "${bare(opt)}" e. Ciyawaziya sereke di navbera ${a} û ${b} de: ${bare(dist)}.`,
-    structureTrait: (b, a, dist) => `Gotina rast li ser "${b}" ew e ku ciyawaziya navbera ${a} û ${b} dide: ${bare(dist)}.`,
+    structureMatch: (opt, a, b, dist) => `Bersiva rast "${bare(opt)}" e. Cudahiya sereke ya di navbera "${a}" û "${b}" de: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `Gotina rast a derbarê "${b}" de ew e ku cudahiya "${a}" û "${b}" diyar dike: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
-      ? `Rêzkirina rast "${opt}" e. Rêza rast a qonaxên "${title}": ${full}.`
-      : `Rêzkirina rast "${opt}" e.`,
-    missingStep: (opt, title, full) => `Qonaxa kêm "${bare(opt)}" e. Rêza rast a qonaxên "${title}": ${full}.`,
+      ? `Rêza rast "${opt}" e. Rêza rast a gavên "${title}": ${full}.`
+      : `Rêza rast "${opt}" e.`,
+    missingStep: (opt, title, full) => `Gava kêm "${bare(opt)}" e. Rêza rast a gavên "${title}": ${full}.`,
   },
 };
 
@@ -975,12 +975,12 @@ function getNegativeTrapStem(title: string, lang: LanguageCode, variant = 0): st
       return `依据“${title}”的基本原理，下列说法错误的是哪一项？`;
     }
     case 'ku': {
-      if (v === 0) return `Derbarê mijara "${title}" de, kîjan ji van gotinên jêrîn şaş e (ne rast e)?`;
-      if (v === 1) return `Gava mijara "${title}" bê nirxandin, kîjan ji van darazên jêrîn şaşiyek zanistî dihewîne?`;
-      if (v === 2) return `Di çarçoveya "${title}" de, kîjan îdîa ne rast e?`;
-      if (v === 3) return `Dema prensîbên "${title}" tên lêkolîn, kîjan gotin şaş e?`;
-      if (v === 4) return `Kîjan ji gotinên jêrîn bi rastiyên zanistî yên "${title}" re nakok e?`;
-      return `Li gorî prensîbên bingehîn ên kîmyayê di "${title}" de, kîjan daraz çewt e?`;
+      if (v === 0) return `Derbarê mijara "${title}" de, kîjan ji gotinên jêrîn şaş e?`;
+      if (v === 1) return `Dema mijara "${title}" tê nirxandin, kîjan ji gotinên jêrîn şaşiyeke zanistî dihewîne?`;
+      if (v === 2) return `Di çarçoveya mijara "${title}" de, kîjan gotin ne rast e?`;
+      if (v === 3) return `Li gorî prensîbên mijara "${title}", kîjan ji gotinên jêrîn şaş e?`;
+      if (v === 4) return `Kîjan ji gotinên jêrîn bi rastiyên zanistî yên mijara "${title}" re nakok e?`;
+      return `Li gorî prensîbên bingehîn ên kîmyayê, kîjan gotina derbarê mijara "${title}" de şaş e?`;
     }
   }
 }
@@ -1045,12 +1045,12 @@ function getPositiveConceptStem(title: string, lang: LanguageCode, variant = 0):
       return `下列选项中，符合“${title}”基本规律的是哪一项？`;
     }
     case 'ku': {
-      if (v === 0) return `Li gorî prensîbên bingehîn ên kîmyayê di beşa "${title}" de, kîjan ji van gotinan bê guman rast e?`;
-      if (v === 1) return `Dema ku beşa "${title}" tê lêkolîn, kîjan ji van gotinên jêrîn rastiyek zanistî ye?`;
-      if (v === 2) return `Di çarçoveya zanistiya "${title}" de, kîjan şîrove bi temamî rast e?`;
-      if (v === 3) return `Li gorî zagonên kîmyewî, kîjan îfadeya li ser "${title}" bê şik rast e?`;
-      if (v === 4) return `Kîjan ji vebijarkên jêrîn rastiyeke zanistî ya piştrastkirî li ser "${title}" nîşan dide?`;
-      return `Kîjan îfade li gorî prensîbên bingehîn ên "${title}" bi tevahî bê kêmasî û rast e?`;
+      if (v === 0) return `Li gorî prensîbên bingehîn ên kîmyayê yên mijara "${title}", kîjan ji gotinên jêrîn bê guman rast e?`;
+      if (v === 1) return `Dema mijara "${title}" tê lêkolînkirin, kîjan ji gotinên jêrîn rastiyeke zanistî ye?`;
+      if (v === 2) return `Di çarçoveya mijara "${title}" de, kîjan şirove bi tevahî rast e?`;
+      if (v === 3) return `Li gorî zagonên kîmyayê, kîjan gotina derbarê mijara "${title}" de bê guman rast e?`;
+      if (v === 4) return `Kîjan ji vebijarkên jêrîn derbarê mijara "${title}" de rastiyeke zanistî ya îspatkirî ye?`;
+      return `Li gorî qaîdeyên bingehîn ên mijara "${title}", kîjan ji vebijarkên jêrîn bi tevahî rast e?`;
     }
   }
 }
@@ -1064,7 +1064,7 @@ function getMatchStemA(title: string, clue: string, lang: LanguageCode): string 
     case 'ru': return `Какому понятию темы «${title}» соответствует описание: «${clue}»?`;
     case 'ar': return `في موضوع "${title}"، أي نوع كيميائي أو مفهوم يتميز بالخاصية: "${clue}"؟`;
     case 'zh': return `在“${title}”中，下列哪一项具有以下显著特征：“${clue}”？`;
-    case 'ku': return `Di mijara "${title}" de, kîjan cûreyê kîmyewî an têgeh bi taybetmendiya "${clue}" tê veqetandin?`;
+    case 'ku': return `Di mijara "${title}" de, kîjan cureya kîmyewî an têgeh bi vê taybetmendiyê ji yên din cuda dibe: "${clue}"?`;
   }
 }
 
@@ -1077,7 +1077,7 @@ function getMatchStemB(title: string, conceptName: string, lang: LanguageCode): 
     case 'ru': return `Какое из утверждений о понятии «${conceptName}» (тема «${title}») верно?`;
     case 'ar': return `أيّ العبارات الآتية تصف "${conceptName}" وصفًا صحيحًا في موضوع "${title}"؟`;
     case 'zh': return `在“${title}”中，下列关于“${conceptName}”的说法正确的是哪一项？`;
-    case 'ku': return `Derbarê "${conceptName}" ya ku di çarçoveya "${title}" de tê lêkolînkirin de kîjan taybetmendî rast e?`;
+    case 'ku': return `Di çarçoveya mijara "${title}" de, kîjan ji gotinên jêrîn derbarê "${conceptName}" de rast e?`;
   }
 }
 
@@ -1090,7 +1090,7 @@ function getSequenceOrderStem(title: string, seqTitle: string, lang: LanguageCod
     case 'ru': return `Тема «${title}», последовательность «${seqTitle}». В каком варианте указан правильный порядок?`;
     case 'ar': return `أيّ الخيارات الآتية يبيّن الترتيب الصحيح لخطوات "${seqTitle}" في وحدة "${title}"؟`;
     case 'zh': return `在“${title}”单元中，正确表示“${seqTitle}”各步骤先后顺序的是哪一项？`;
-    case 'ku': return `Rêza rast a qonaxên "${seqTitle}" di beşa "${title}" de di kîjan vebijarkê de hatiye dayîn?`;
+    case 'ku': return `Di mijara "${title}" de, rêza rast a gavên "${seqTitle}" di kîjan vebijarkê de hatiye dayîn?`;
   }
 }
 
@@ -1103,7 +1103,7 @@ function getSequenceMissingStepStem(title: string, seqTitle: string, lang: Langu
     case 'ru': return `Тема «${title}», последовательность «${seqTitle}». Какой этап пропущен на месте [ ? ]?`;
     case 'ar': return `في خطوات "${seqTitle}" ضمن "${title}"، ما الخطوة الناقصة المشار إليها بالرمز [ ؟ ]؟`;
     case 'zh': return `在“${title}”中，“${seqTitle}”的各步骤里用 [ ? ] 表示的缺失步骤是哪一项？`;
-    case 'ku': return `Di pêvajoya "${seqTitle}" ya di nav "${title}" de, qonaxa kêm a ku bi [ ? ] hatiye nîşankirin kîjan e?`;
+    case 'ku': return `Di mijara "${title}" de, di pêvajoya "${seqTitle}" de gava kêm a ku bi [ ? ] hatiye nîşankirin kîjan e?`;
   }
 }
 

@@ -14,7 +14,7 @@ export const unit24: ChemistryUnitSeedData = {
     "ru": "Органические соединения: углеводороды и функциональные группы",
     "ar": "المركبات العضوية: الهيدروكربونات والمجموعات الوظيفية",
     "zh": "有机化合物与官能团",
-    "ku": "Madeyên Organîk û Komên Fonksiyonel"
+    "ku": "Pêkhateyên Organîk: Hîdrokarbon û Komên Fonksiyonel"
   },
   "subtitle": {
     "tr": "Alkan, Alken, Alkin, Alkol, Ester ve Markovnikov",
@@ -37,7 +37,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Алканы (парафины, CnH2n+2) — предельные углеводороды; они содержат только σ-связи и не вступают в реакции присоединения.",
         "ar": "الألكانات (البارافينات، CnH2n+2) هيدروكربونات مشبعة؛ تحتوي على روابط سيجما فقط ولا تدخل في تفاعلات الإضافة.",
         "zh": "烷烃(CnH2n+2，又称石蜡烃)是饱和烃；分子中只含σ键，不发生加成反应。",
-        "ku": "Alkan (parafîn, CnH2n+2) hîdrokarbonên têrbûyî ne; Ew tenê girêdanên sigma dihewîne û reaksiyonek lêzêdekirinê NADE."
+        "ku": "Alkan (parafîn, CnH2n+2) hîdrokarbonên têr in; tenê girêdanên sigma dihewînin û reaksiyona lêzêdekirinê NADIN."
       },
       "trap": {
         "tr": "Alkanlar bromlu suyun kırmızı rengini hızla giderir.",
@@ -57,7 +57,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "В алканах есть только σ-связи; π-связей, которые могли бы разорваться, нет, поэтому Br2 не присоединяется и бромная вода при комнатных условиях не обесцвечивается. Обесцвечивание указывает на наличие связи C=C или C≡C.",
         "ar": "تحتوي الألكانات على روابط سيجما فقط؛ ولعدم وجود رابطة باي يمكن فتحها لا يُضاف Br2 ولا يزول لون ماء البروم في ظروف الغرفة. زوال اللون دليل على وجود رابطة C=C أو C≡C.",
         "zh": "烷烃只含σ键，没有可打开的π键，Br2 无法加成，室温下溴水不褪色。溴水褪色说明存在 C=C 或 C≡C 键。",
-        "ku": "Di alkanan de tenê girêdanên sigma hene; ji ber ku girêdana pi ya ku vebe tune, Br2 lê zêde nabe û di şert û mercên odeyê de rengê ava bromê naçe. Çûna rengê nîşana girêdana C=C an C≡C e."
+        "ku": "Di alkanan de tenê girêdanên sigma hene; ji ber ku girêdana pî ya ku vebe tune ye, Br2 lê zêde nabe û di şertên odeyê de rengê ava bromê naçe. Çûna rengê nîşan dide ku girêdana C=C an C≡C heye."
       }
     },
     {
@@ -70,7 +70,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Алкены (олефины, CnH2n) содержат хотя бы одну двойную связь C=C; они вступают в реакции присоединения и полимеризации.",
         "ar": "تحتوي الألكينات (الأوليفينات، CnH2n) على رابطة ثنائية واحدة على الأقل (C=C)؛ وتدخل في تفاعلات الإضافة والبلمرة.",
         "zh": "烯烃(CnH2n)分子中至少含有一个碳碳双键(C=C)；能发生加成反应和聚合反应。",
-        "ku": "Alken (olefîn, CnH2n) herî kêm girêdanek ducarî dihewîne (C=C); Ew reaksiyona zêdebûn û polîmerîzasyonê dide."
+        "ku": "Alken (olefîn, CnH2n) herî kêm girêdaneke ducarî (C=C) dihewînin; reaksiyonên lêzêdekirinê û polîmerîzasyonê didin."
       },
       "trap": {
         "tr": "Alkenler doymuş hidrokarbonlar sınıfındadır.",
@@ -80,7 +80,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Алкены относятся к классу предельных углеводородов.",
         "ar": "تنتمي الألكينات إلى فئة الهيدروكربونات المشبعة.",
         "zh": "烯烃属于饱和烃类。",
-        "ku": "Alken di çîna hîdrokarbonên têrbûyî de ne."
+        "ku": "Alken di çîna hîdrokarbonên têr de ne."
       },
       "whyTrapIsFalse": {
         "tr": "Doymuş, bütün karbon–karbon bağlarının tekli olması demektir. Alkenlerde en az bir C=C ikili bağı bulunduğu için doymamış hidrokarbonlardır.",
@@ -90,7 +90,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Предельными называют углеводороды, в которых все связи углерод–углерод одинарные. В алкенах есть хотя бы одна двойная связь C=C, поэтому они относятся к непредельным углеводородам.",
         "ar": "المشبع يعني أن جميع روابط كربون–كربون أحادية. تحتوي الألكينات على رابطة ثنائية C=C واحدة على الأقل، لذا فهي هيدروكربونات غير مشبعة.",
         "zh": "饱和是指所有碳–碳键都是单键。烯烃至少含有一个 C=C 双键，因此属于不饱和烃。",
-        "ku": "Têr tê wateya ku hemû girêdanên karbon–karbon yekane ne. Di alkenan de herî kêm girêdanek dualî ya C=C heye, ji ber vê yekê ew hîdrokarbonên netêr in."
+        "ku": "Têr tê wê wateyê ku hemû girêdanên karbon–karbon yekane ne. Di alkenan de herî kêm girêdaneke ducarî ya C=C heye, loma ew hîdrokarbonên netêr in."
       }
     },
     {
@@ -103,7 +103,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Правило Марковникова: при присоединении HX к несимметричному алкену атом H присоединяется к тому атому углерода двойной связи, у которого больше атомов водорода, а атом X — к тому, у которого их меньше.",
         "ar": "قاعدة ماركوفنيكوف: عند إضافة HX إلى ألكين غير متماثل ترتبط ذرة H بذرة الكربون التي تحمل عددًا أكبر من ذرات الهيدروجين، وترتبط ذرة X بذرة الكربون التي تحمل عددًا أقل منها.",
         "zh": "马氏规则（马尔可夫尼科夫规则）：HX 与不对称烯烃加成时，H 原子加到含氢较多的双键碳原子上，X 原子加到含氢较少的双键碳原子上。",
-        "ku": "Qaîdeya Markovnikov: dema HX li alkenên nesîmetrîk tê zêdekirin, atoma H diçe ser karbona ku hîdrojenên wê ZÊDETIR in, atoma X jî diçe ser karbona ku hîdrojenên wê KÊMTIR in."
+        "ku": "Qaîdeya Markovnikov: dema HX li alkenên nesîmetrîk tê zêdekirin, atoma H bi karbona ku hîdrojenên wê ZÊDETIR in, atoma X jî bi karbona ku hîdrojenên wê KÊMTIR in ve girê dibe."
       },
       "trap": {
         "tr": "Asimetrik bir alkene HX katılırken H atomu, ikili bağ karbonlarından hidrojeni az olana bağlanır.",
@@ -113,7 +113,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "При присоединении HX к несимметричному алкену атом H присоединяется к тому атому углерода двойной связи, у которого меньше атомов водорода.",
         "ar": "عند إضافة HX إلى ألكين غير متماثل ترتبط ذرة H بكربون الرابطة الثنائية الذي يحمل هيدروجينًا أقل.",
         "zh": "HX 与不对称烯烃加成时，H 原子加到双键上含氢较少的碳原子上。",
-        "ku": "Dema HX li alkeneke nesîmetrîk zêde dibe, atoma H bi karbona girêdana dualî ya ku hîdrojenên wê kêmtir in ve girê dibe."
+        "ku": "Dema HX li alkeneke nesîmetrîk zêde dibe, atoma H bi wê karbona girêdana ducarî ve girê dibe ku hîdrojenên wê kêmtir in."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak kuralı tersine çeviriyor. Markovnikov kuralına göre HX'in H atomu ikili bağ karbonlarından hidrojeni çok olana, X atomu hidrojeni az olana bağlanır; propen + HBr tepkimesinde ana ürün 2-bromopropandır.",
@@ -123,7 +123,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Здесь правило перевёрнуто. По правилу Марковникова H из HX присоединяется к атому C двойной связи, у которого больше атомов водорода, а X — к атому, у которого их меньше; из пропена и HBr образуется в основном 2-бромпропан.",
         "ar": "الفخ يعكس القاعدة. وفق قاعدة ماركوفنيكوف ترتبط ذرة H من HX بكربون الرابطة الثنائية الذي يحمل هيدروجينًا أكثر، وترتبط X بالذي يحمل هيدروجينًا أقل؛ فينتج من البروبين + HBr أساسًا 2-برومو بروبان.",
         "zh": "该说法把规则说反了。按马氏规则，HX 中的 H 加到双键上含氢较多的碳原子上，X 加到含氢较少的碳原子上；丙烯 + HBr 的主产物是 2-溴丙烷。",
-        "ku": "Xefik qaîdeyê berevajî dike. Li gorî qaîdeya Markovnikov H ya HX diçe ser karbona girêdana dualî ya ku hîdrojenên wê zêdetir in, X jî diçe ser ya ku hîdrojenên wê kêmtir in; propen + HBr bi giranî 2-bromopropan dide."
+        "ku": "Xefik qaîdeyê berevajî dike. Li gorî qaîdeya Markovnikov atoma H ya HX bi wê karbona girêdana ducarî ve girê dibe ku hîdrojenên wê zêdetir in, X jî bi ya ku hîdrojenên wê kêmtir in; propen + HBr bi piranî 2-bromopropan dide."
       },
       "osymTip": {
         "tr": "Zengin daha zengin olur kuralı: Hidrojen çok olana H gider!",
@@ -133,7 +133,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Атом H присоединяется к тому атому углерода двойной связи, который уже несёт больше атомов водорода.",
         "ar": "باختصار: تذهب ذرة H إلى كربون الرابطة الثنائية الأغنى بالهيدروجين.",
         "zh": "H 加到原本含氢较多的双键碳原子上！",
-        "ku": "Desthilatdariya dewlemend dewlemendtir dibe: H diçe ba yê ku hîdrojenê wî zêde heye!"
+        "ku": "Ji bo bîranînê: H diçe ser wê karbonê ku jixwe hîdrojenên wê zêdetir in!"
       }
     },
     {
@@ -166,7 +166,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Тройная связь тоже содержит π-связи, причём две. Поэтому алкины тоже присоединяют Br2 и обесцвечивают бромную воду, как и алкены.",
         "ar": "الرابطة الثلاثية تحتوي أيضًا على روابط باي، بل على رابطتين. لذلك تضيف الألكاينات Br2 وتزيل لون ماء البروم مثل الألكينات.",
         "zh": "三键中同样含有π键，而且有两个。因此炔烃也能与 Br2 加成，像烯烃一样使溴水褪色。",
-        "ku": "Di girêdana sêalî de jî girêdanên pi hene, du heb jî. Ji ber vê yekê alkîn jî Br2 lê zêde dikin û wek alkenan rengê ava bromê dibin."
+        "ku": "Di girêdana sêcarî de jî girêdanên pî hene, hem jî du heb. Loma alkîn jî Br2 li xwe zêde dikin û wek alkenan rengê ava bromê radikin."
       }
     },
     {
@@ -179,7 +179,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Алкины (ряд ацетилена, CnH2n-2) содержат хотя бы одну тройную связь; концевые алкины дают белый осадок с аммиачным раствором AgNO3 и красный осадок с аммиачным раствором CuCl.",
         "ar": "تحتوي الألكاينات (الأسيتيلينات، CnH2n-2) على رابطة ثلاثية واحدة على الأقل؛ وتعطي الألكاينات الطرفية راسبًا أبيض مع محلول AgNO3 النشادري وراسبًا أحمر مع محلول CuCl النشادري.",
         "zh": "炔烃(CnH2n-2)至少含有一个碳碳三键；端炔与银氨溶液(氨性 AgNO3 溶液)生成白色沉淀，与氨性 CuCl 溶液生成红色沉淀。",
-        "ku": "Alkîn (asetîlen, CnH2n-2) herî kêm girêdanek sêcarî dihewînin; alkînên dawiyê bi çareseriya AgNO3 ya amonyakî re niştekî spî, bi çareseriya CuCl ya amonyakî re niştekî sor didin."
+        "ku": "Alkîn (asetîlen, CnH2n-2) herî kêm girêdaneke sêcarî dihewînin; alkînên dawiyê bi çareseriya AgNO3 ya amonyakî re niştekeke spî, bi çareseriya CuCl ya amonyakî re niştekeke sor didin."
       },
       "trap": {
         "tr": "İç alkinler amonyaklı AgNO3 (Tollens) çözeltisiyle çökelek verir.",
@@ -189,7 +189,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Внутренние алкины дают осадок с аммиачным раствором AgNO3 (реактив Толленса).",
         "ar": "تعطي الألكاينات الداخلية راسبًا مع محلول AgNO3 النشادري (كاشف تولنز).",
         "zh": "内炔（三键不在链端）也能与银氨溶液（托伦试剂）生成沉淀。",
-        "ku": "Alkînên navîn bi çareseriya AgNO3 ya amonyakî (Tollens) re nişt didin."
+        "ku": "Alkînên navîn bi çareseriya AgNO3 ya amonyakî (Tollens) re niştek didin."
       },
       "whyTrapIsFalse": {
         "tr": "Çökelek, üçlü bağ karbonuna bağlı H atomunun Ag+ ile yer değiştirmesiyle oluşur. İç alkinlerde üçlü bağ karbonlarında H bulunmadığından çökelek oluşmaz; bu test uç alkini iç alkinden ayırır.",
@@ -199,7 +199,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Осадок образуется, когда атом H при атоме углерода тройной связи замещается на Ag+. У внутренних алкинов при атомах углерода тройной связи нет H, поэтому осадок не образуется; эта реакция позволяет отличить концевые алкины от внутренних.",
         "ar": "يتكون الراسب عندما تُستبدل ذرة H المرتبطة بكربون الرابطة الثلاثية بأيون Ag+. لا توجد ذرة H على كربونات الرابطة الثلاثية في الألكاينات الداخلية، فلا يتكون راسب؛ وبهذا يميز الاختبار الألكاين الطرفي من الداخلي.",
         "zh": "沉淀是三键碳上的 H 被 Ag+ 取代而生成的。内炔的三键碳上没有 H，不生成沉淀；该实验可区分端炔和内炔。",
-        "ku": "Çîp çêdibe dema ku H ya li ser karbona girêdana sêalî bi Ag+ tê guhertin. Di alkînên navîn de li ser karbonên girêdana sêalî H tune, loma çîp çênabe; ev test alkîna dawî ji ya navîn cuda dike."
+        "ku": "Niştek çêdibe dema ku atoma H ya li ser karbona girêdana sêcarî cihê xwe dide Ag+. Di alkînên navîn de li ser karbonên girêdana sêcarî H tune ye, loma niştek çênabe; ev test alkîna dawiyê ji alkîna navîn cuda dike."
       }
     },
     {
@@ -212,7 +212,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Бензол (C6H6) — родоначальник ароматических соединений; его строение описывают резонансными структурами Кекуле, он очень устойчив и с трудом вступает в реакции присоединения.",
         "ar": "البنزين (C6H6) هو أصل المركبات الأروماتية؛ له بنى رنين كيكوليه، وهو شديد الثبات ولا يميل إلى تفاعلات الإضافة.",
         "zh": "苯(C6H6)是芳香族化合物的母体；具有凯库勒共振结构，非常稳定，不易发生加成反应。",
-        "ku": "Benzen (C6H6) bavê pêkhateyên aromatîk e; xwedî avahiyên rezonansê yên Kekulé ye, pir aram e û naxwaze beşdarî reaksiyonên lêzêdekirinê bibe."
+        "ku": "Benzen (C6H6) pêkhateya bingehîn a pêkhateyên aromatîk e; avahiyên rezonansê yên Kekulé hene, pir stabîl e û bi zehmetî dikeve reaksiyonên lêzêdekirinê."
       },
       "trap": {
         "tr": "Benzen, üç ikili bağ içeren sıradan bir alken gibi bromlu suyun rengini kolayca giderir.",
@@ -222,7 +222,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Бензол обесцвечивает бромную воду так же легко, как обычный алкен с тремя двойными связями.",
         "ar": "يزيل البنزين لون ماء البروم بسهولة مثل ألكين عادي يحتوي على ثلاث روابط ثنائية.",
         "zh": "苯像含三个双键的普通烯烃一样，很容易使溴水褪色。",
-        "ku": "Benzen wek alkeneke asayî ya bi sê girêdanên ducarî, rengê ava bromê bi hêsanî radike."
+        "ku": "Benzen wek alkeneke asayî ya bi sê girêdanên ducarî rengê ava bromê bi hêsanî radike."
       },
       "whyTrapIsFalse": {
         "tr": "Benzende pi elektronları halka boyunca dağılmıştır (rezonans); bu kararlılık kolay bozulmadığından benzen sıradan alkenler gibi Br2 katmaz, bromlu suyun rengini gidermez ve daha çok yer değiştirme tepkimesi verir.",
@@ -232,7 +232,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "В бензоле π-электроны распределены по всему кольцу (резонанс); эту устойчивость нелегко нарушить, поэтому бензол не присоединяет Br2, как обычные алкены, не обесцвечивает бромную воду и вступает преимущественно в реакции замещения.",
         "ar": "في البنزين تتوزع إلكترونات باي على الحلقة كلها (الرنين)؛ ولا تُفقد هذه الاستقرارية بسهولة، لذا لا يضيف البنزين Br2 كالألكين العادي ولا يزيل لون ماء البروم ويفضّل تفاعلات الاستبدال.",
         "zh": "苯中的π电子分布在整个环上（共振），这种稳定性不易被破坏，所以苯不像普通烯烃那样与 Br2 加成，不使溴水褪色，而主要发生取代反应。",
-        "ku": "Di benzenê de elektronên pi li seranserê xelekê belav in (rezonans); ev aramî bi hêsanî xera nabe, loma benzen wek alkenên asayî Br2 lê zêde nake, rengê ava bromê nabe û bêtir reaksiyona cihguhertinê dide."
+        "ku": "Di benzenê de elektronên pî li seranserê xelekê belav bûne (rezonans); ji ber ku ev stabîlî bi hêsanî xera nabe, benzen wek alkenên asayî Br2 li xwe zêde nake, rengê ava bromê ranake û bêtir reaksiyona cihguhertinê dide."
       }
     },
     {
@@ -245,7 +245,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Спирты (R-OH) образуют водородные связи между молекулами; их температуры кипения значительно выше, чем у простых эфиров с тем же числом атомов углерода.",
         "ar": "تكوّن الكحولات (R-OH) روابط هيدروجينية بين جزيئاتها؛ ودرجات غليانها أعلى بكثير من درجات غليان الإيثرات التي لها العدد نفسه من ذرات الكربون.",
         "zh": "醇(R-OH)分子间能形成氢键；其沸点比碳原子数相同的醚高得多。",
-        "ku": "Alkol (R-OH) di navbera molekulên xwe de girêdanên hîdrojenê çêdikin; xalên kelandinê yên wan ji yên eterên bi heman hejmara karbonê pir bilindtir in."
+        "ku": "Alkol (R-OH) di navbera molekulên xwe de girêdanên hîdrojenê çêdikin; xalên wan ên kelînê ji yên eterên bi heman hejmara karbonan gelek bilindtir in."
       },
       "trap": {
         "tr": "Eterlerin kaynama noktası, aynı karbon sayılı alkollerinkinden daha yüksektir.",
@@ -255,7 +255,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Простые эфиры имеют более высокую температуру кипения, чем спирты с тем же числом атомов углерода.",
         "ar": "للإيثرات درجة غليان أعلى من الكحولات التي لها العدد نفسه من ذرات الكربون.",
         "zh": "醚的沸点高于碳原子数相同的醇。",
-        "ku": "Xala kelandinê ya eteran ji ya alkolên bi heman hejmara karbonê bilindtir e."
+        "ku": "Xala kelînê ya eteran ji ya alkolên bi heman hejmara karbonan bilindtir e."
       },
       "whyTrapIsFalse": {
         "tr": "Eter moleküllerinde oksijene bağlı H atomu yoktur, bu yüzden eterler kendi aralarında hidrojen bağı kuramaz. Hidrojen bağı yapan alkollerin kaynama noktası daha yüksektir (etanol 78 °C, dimetil eter −24 °C).",
@@ -265,7 +265,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "В молекулах простых эфиров нет атома H, связанного с кислородом, поэтому эфиры не образуют водородных связей между собой. Спирты, образующие водородные связи, кипят выше (этанол 78 °C, диметиловый эфир −24 °C).",
         "ar": "لا تحتوي جزيئات الإيثر على ذرة H مرتبطة بالأكسجين، لذا لا تكوّن الإيثرات روابط هيدروجينية فيما بينها. أما الكحولات فتكوّنها وتغلي عند درجة أعلى (الإيثانول 78 °C، ثنائي ميثيل الإيثر −24 °C).",
         "zh": "醚分子中没有与氧相连的 H，醚分子之间不能形成氢键。能形成氢键的醇沸点更高(乙醇 78 °C，二甲醚 −24 °C)。",
-        "ku": "Di molekulên eterê de H ya bi oksîjenê ve girêdayî tune, loma eter di navbera xwe de girêdana hîdrojenê çênakin. Alkol ku girêdana hîdrojenê çêdikin, li germahiya bilindtir dikelin (etanol 78 °C, dîmetîl eter −24 °C)."
+        "ku": "Di molekulên eteran de atoma H ya bi oksîjenê ve girêdayî tune ye, loma eter di navbera xwe de girêdana hîdrojenê çênakin. Xala kelînê ya alkolan ku girêdana hîdrojenê çêdikin bilindtir e (etanol 78 °C, dîmetîl eter −24 °C)."
       }
     },
     {
@@ -278,7 +278,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Первичные спирты при окислении на одну ступень образуют альдегиды, а при окислении на две ступени — карбоновые кислоты.",
         "ar": "تتأكسد الكحولات الأولية بخطوة واحدة إلى ألدهيدات، وبخطوتين إلى أحماض كربوكسيلية.",
         "zh": "伯醇经一步氧化生成醛，再经一步氧化生成羧酸。",
-        "ku": "Alkolên seretayî dema ku yek gav oksîde dibin aldehîd û dema ku du gavan têne oksîdan asîdên karboksîlîk ava dikin."
+        "ku": "Dema alkolên seretayî gavekê oksîde dibin aldehîd, dema du gavan oksîde dibin asîda karboksîlîk çêdikin."
       },
       "trap": {
         "tr": "Sekonder alkoller yükseltgendiğinde önce aldehite, ardından karboksilik aside dönüşür.",
@@ -288,7 +288,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Вторичные спирты при окислении превращаются сначала в альдегид, а затем в карбоновую кислоту.",
         "ar": "عند أكسدة الكحولات الثانوية تتحول أولًا إلى ألدهيد ثم إلى حمض كربوكسيلي.",
         "zh": "仲醇被氧化时先生成醛，再生成羧酸。",
-        "ku": "Dema alkolên duyemîn oksîd dibin, pêşî dibin aldehîd û paşê dibin asîda karboksîlîk."
+        "ku": "Dema alkolên duyemîn oksîde dibin, pêşî vediguherin aldehîdê û paşê asîda karboksîlîk."
       },
       "whyTrapIsFalse": {
         "tr": "Aldehit ve ardından karboksilik asit veren primer alkollerdir. Sekonder alkolde OH'lı karbona iki karbon bağlı olduğundan yükseltgenme ketonda durur; keton ılımlı koşullarda daha fazla yükseltgenmez.",
@@ -298,7 +298,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Альдегид, а затем карбоновую кислоту дают первичные спирты. Во вторичном спирте атом C с группой OH связан с двумя атомами углерода, поэтому окисление останавливается на кетоне, который в мягких условиях дальше не окисляется.",
         "ar": "الكحولات الأولية هي التي تعطي ألدهيدًا ثم حمضًا كربوكسيليًا. في الكحول الثانوي يرتبط الكربون الحامل لـ OH بذرتي كربون، فتتوقف الأكسدة عند الكيتون الذي لا يتأكسد أكثر في الظروف المعتدلة.",
         "zh": "先生成醛、再生成羧酸的是伯醇。仲醇中连 OH 的碳与两个碳相连，氧化停在酮这一步，温和条件下酮不再被氧化。",
-        "ku": "Alkolên seretayî ne ku pêşî aldehîd û paşê asîda karboksîlîk didin. Di alkola duyemîn de karbona bi OH ve bi du karbonan ve girêdayî ye, loma oksîdasyon li ketonê disekine; keton di şertên nerm de bêtir oksîd nabe."
+        "ku": "Yên ku aldehîd û paşê asîda karboksîlîk didin alkolên seretayî ne. Di alkola duyemîn de karbona bi OH bi du karbonan ve girêdayî ye, loma oksîdasyon li ketonê disekine; keton di şertên nerm de êdî oksîde nabe."
       }
     },
     {
@@ -311,7 +311,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Вторичные спирты окисляются с образованием кетонов; третичные спирты устойчивы к окислению.",
         "ar": "تتأكسد الكحولات الثانوية مكوّنة الكيتونات؛ أما الكحولات الثالثية فمقاومة للأكسدة.",
         "zh": "仲醇被氧化生成酮；叔醇难以被氧化。",
-        "ku": "Alkolên duyemîn têne oksîd kirin ku ketonan çêbikin; alkolên sêyem li hember oksîdasyonê berxwedêr in."
+        "ku": "Alkolên duyemîn bi oksîdasyonê keton çêdikin; alkolên sêyemîn li hember oksîdasyonê berxwedêr in."
       },
       "trap": {
         "tr": "Tersiyer alkoller kolayca yükseltgenerek keton verir.",
@@ -321,7 +321,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Третичные спирты легко окисляются с образованием кетонов.",
         "ar": "تتأكسد الكحولات الثالثية بسهولة فتعطي الكيتونات.",
         "zh": "叔醇很容易被氧化生成酮。",
-        "ku": "Alkolên sêyemîn bi hêsanî têne oksîd kirin da ku ketonan bidin."
+        "ku": "Alkolên sêyemîn bi hêsanî oksîde dibin û keton didin."
       },
       "whyTrapIsFalse": {
         "tr": "Tersiyer alkolde OH'ın bağlı olduğu karbonda H atomu yoktur; yükseltgenme bu karbondaki H'nin uzaklaşmasını gerektirdiği için tersiyer alkoller ılımlı koşullarda yükseltgenmez. Keton, sekonder alkolün yükseltgenmesiyle oluşur.",
@@ -331,7 +331,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "В третичном спирте у атома C с группой OH нет атома H; окисление требует отщепления H от этого атома C, поэтому третичные спирты в мягких условиях не окисляются. Кетоны получаются окислением вторичных спиртов.",
         "ar": "في الكحول الثالثي لا توجد ذرة H على الكربون الحامل لمجموعة OH؛ والأكسدة تتطلب نزع H من هذا الكربون، لذا تقاوم الكحولات الثالثية الأكسدة في الظروف المعتدلة. تنتج الكيتونات من أكسدة الكحولات الثانوية.",
         "zh": "叔醇中连有 OH 的碳原子上没有 H；氧化需要除去该碳上的 H，所以叔醇在温和条件下不被氧化。酮是由仲醇氧化得到的。",
-        "ku": "Di alkola sêyemîn de li ser karbona ku OH pê ve girêdayî ye H tune; oksîdasyon rakirina H ya li ser vê karbonê dixwaze, loma alkolên sêyemîn di şertên nerm de oksîd nabin. Keton ji oksîdasyona alkola duyemîn çêdibe."
+        "ku": "Di alkola sêyemîn de li ser karbona ku OH pê ve girêdayî ye atoma H tune ye; ji ber ku oksîdasyon rakirina H ya li ser vê karbonê dixwaze, alkolên sêyemîn di şertên nerm de oksîde nabin. Keton ji oksîdasyona alkola duyemîn çêdibe."
       }
     },
     {
@@ -344,7 +344,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Альдегиды (R-CHO) дают реакцию «серебряного зеркала» с реактивом Толленса и красный осадок Cu2O с реактивом Фелинга; кетоны этих реакций не дают.",
         "ar": "تكوّن الألدهيدات (R-CHO) مرآة فضية مع كاشف تولنز وراسبًا أحمر من Cu2O مع محلول فهلنج؛ أما الكيتونات فلا تعطي هذين التفاعلين.",
         "zh": "醛(R-CHO)能与托伦试剂发生银镜反应，与斐林试剂生成砖红色 Cu2O 沉淀；酮不发生这些反应。",
-        "ku": "Aldehîd (R-CHO) bi reagenta Tollens re neynika zîvîn û bi çareseriya Fehling re jî barîna Cu2O ya sor ava dike; Keton vê reaksiyonê nade."
+        "ku": "Aldehîd (R-CHO) bi reaktîfa Tollens re neynika zîv, bi çareseriya Fehling re jî niştekeke sor a Cu2O çêdikin; keton van reaksiyonan nadin."
       },
       "trap": {
         "tr": "Aseton (keton) Tollens reaktifiyle gümüş aynası verir.",
@@ -354,7 +354,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Ацетон (кетон) даёт реакцию «серебряного зеркала» с реактивом Толленса.",
         "ar": "الأسيتون (كيتون) يعطي مرآة فضية مع كاشف تولنز.",
         "zh": "丙酮（一种酮）能与托伦试剂反应生成银镜。",
-        "ku": "Aceton (ketone) bi reagenta Tollens neynika zîv dide."
+        "ku": "Aseton (keton) bi reaktîfa Tollens re neynika zîv dide."
       },
       "whyTrapIsFalse": {
         "tr": "Tollens testini, karbonil karbonunda H atomu bulunan aldehitler verir. Asetonda karbonil karbonu iki CH3 grubuna bağlıdır, kolay yükseltgenemez; bu yüzden Ag+ indirgenmez ve gümüş aynası oluşmaz.",
@@ -364,7 +364,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Реакцию с реактивом Толленса дают альдегиды, у которых при карбонильном атоме углерода есть атом H. В ацетоне карбонильный углерод связан с двумя группами CH3 и трудно окисляется, поэтому Ag+ не восстанавливается и серебряное зеркало не образуется.",
         "ar": "الألدهيدات التي تحمل ذرة H على كربون الكربونيل هي التي تعطي اختبار تولنز. أما في الأسيتون فيرتبط كربون الكربونيل بمجموعتي CH3 ولا يتأكسد بسهولة، فلا يُختزل Ag+ ولا تتكون مرآة الفضة.",
         "zh": "能发生银镜反应的是羰基碳上带 H 的醛。丙酮的羰基碳连着两个 CH3，不易被氧化，Ag+ 不被还原，不生成银镜。",
-        "ku": "Testa Tollens ji aldehîdan tê ku li ser karbona karbonîlê H heye. Di asetonê de karbona karbonîlê bi du komên CH3 ve girêdayî ye û bi hêsanî oksîd nabe; loma Ag+ kêm nabe û neynika zîv çênabe."
+        "ku": "Testa Tollens ji aldehîdan re derbasdar e ku li ser karbona karbonîlê atoma H heye. Di asetonê de karbona karbonîlê bi du komên CH3 ve girêdayî ye û bi hêsanî oksîde nabe; loma Ag+ redûkte nabe û neynika zîv çênabe."
       }
     },
     {
@@ -377,7 +377,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Карбоновые кислоты (R-COOH) реагируют со спиртами в присутствии кислотного катализатора с образованием сложных эфиров (R-COO-R') с приятным запахом (реакция этерификации).",
         "ar": "تتفاعل الأحماض الكربوكسيلية (R-COOH) مع الكحولات بوجود حمض حفاز مكوّنة إسترات ذات رائحة طيبة (R-COO-R') (الأسترة).",
         "zh": "羧酸(R-COOH)在酸催化下与醇反应，生成有香味的酯(R-COO-R')，即酯化反应。",
-        "ku": "Asîdên karboksîlîk (R-COOH) di bin katalîzasyona asîdê de bi alkolan re reaksiyonê dikin û esterên bîhnxweş (R-COO-R') çê dikin (esterîkirin)."
+        "ku": "Asîdên karboksîlîk (R-COOH) bi katalîzora asîdê bi alkolan re dikevin reaksiyonê û esterên bîhnxweş (R-COO-R') çêdikin (esterbûn)."
       },
       "trap": {
         "tr": "Esterleşme tepkimesinde baz katalizörlüğünde tuz açığa çıkar.",
@@ -387,7 +387,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "В реакции этерификации в присутствии основного катализатора образуется соль.",
         "ar": "في تفاعل الأسترة يتكون ملح بوجود قاعدة حفازة.",
         "zh": "酯化反应在碱催化下进行，产物是盐。",
-        "ku": "Di reaksiyona esterîfîkasyonê de, xwê di bin katalîzatora bingehîn de tê berdan."
+        "ku": "Di reaksiyona esterbûnê de bi katalîzora bazê xwê derdikeve."
       },
       "whyTrapIsFalse": {
         "tr": "Esterleşme asit (genellikle derişik H2SO4) katalizörlüğünde yürür ve ürünler ester ile sudur. Karboksilik asidin bazla tepkimesinde ise tuz ve su oluşur; bu esterleşme değil nötrleşmedir.",
@@ -397,7 +397,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Этерификация идёт в присутствии кислотного катализатора (обычно концентрированной H2SO4), продукты — сложный эфир и вода. При взаимодействии карбоновой кислоты с основанием образуются соль и вода; это нейтрализация, а не этерификация.",
         "ar": "تجري الأسترة بوجود حمض حفاز (عادة H2SO4 المركّز) ونواتجها إستر وماء. أما تفاعل الحمض الكربوكسيلي مع قاعدة فيعطي ملحًا وماءً، وهذا تعادل وليس أسترة.",
         "zh": "酯化反应在酸(通常为浓 H2SO4)催化下进行，产物是酯和水。羧酸与碱反应生成盐和水，那是中和反应，不是酯化反应。",
-        "ku": "Esterkirin bi katalîzora asîdê (bi giranî H2SO4 ya tîr) pêk tê û berhemên wê ester û av in. Reaksiyona asîda karboksîlîk bi bazê re xwê û av dide; ev netralîzasyon e, ne esterkirin."
+        "ku": "Esterbûn bi katalîzora asîdê (bi piranî H2SO4 ya tîr) pêk tê û hilberên wê ester û av in. Di reaksiyona asîda karboksîlîk bi bazê re jî xwê û av çêdibin; ev ne esterbûn, neutralîzasyon e."
       }
     },
     {
@@ -410,7 +410,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Молекулы карбоновых кислот связываются друг с другом двумя водородными связями (образуют димеры), поэтому температуры кипения кислот довольно высоки.",
         "ar": "تكوّن جزيئات الأحماض الكربوكسيلية فيما بينها روابط هيدروجينية مزدوجة (ثنائيات جزيئية)، لذا تكون درجات غليانها مرتفعة إلى حد كبير.",
         "zh": "羧酸分子之间能形成两个氢键而缔合成二聚体，因此沸点相当高。",
-        "ku": "Ji ber ku molekulên asîda karboksîlîk di nav xwe de dubendên hîdrojenê (dimer) çêdikin, xalên kelandinê yên wan pir zêde ne."
+        "ku": "Ji ber ku molekulên asîda karboksîlîk di navbera xwe de girêdana hîdrojenê ya ducarî (dîmer) çêdikin, xalên wan ên kelînê pir bilind in."
       },
       "trap": {
         "tr": "Karboksilik asitlerin kaynama noktası, mol kütlesi yakın olan alkanlarınkinden düşüktür.",
@@ -420,7 +420,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Карбоновые кислоты имеют более низкие температуры кипения, чем алканы с близкой молярной массой.",
         "ar": "درجات غليان الأحماض الكربوكسيلية أقل من درجات غليان الألكانات المقاربة لها في الكتلة المولية.",
         "zh": "羧酸的沸点低于摩尔质量相近的烷烃。",
-        "ku": "Xala kelandinê ya asîdên karboksîlîk ji ya alkanên bi girseya molî ya nêzîk kêmtir e."
+        "ku": "Xala kelînê ya asîdên karboksîlîk ji ya alkanên bi girseya molî ya nêzîk nizmtir e."
       },
       "whyTrapIsFalse": {
         "tr": "Karboksilik asit molekülleri polardır ve çift hidrojen bağıyla dimer oluşturur; yalnızca London kuvvetleri bulunan alkanlardan kaynama noktaları çok daha yüksektir (asetik asit 118 °C, mol kütlesi yakın bütan yaklaşık −1 °C).",
@@ -430,7 +430,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Молекулы карбоновых кислот полярны и образуют димеры за счёт двух водородных связей; они кипят намного выше алканов, между молекулами которых действуют только лондоновские (дисперсионные) силы (уксусная кислота — 118 °C, бутан с близкой молярной массой — около −1 °C).",
         "ar": "جزيئات الأحماض الكربوكسيلية قطبية وتكوّن ثنائيات عبر رابطتين هيدروجينيتين؛ فتغلي عند درجات أعلى بكثير من الألكانات التي لا تملك سوى قوى لندن (حمض الأسيتيك 118 °C، والبيوتان المقارب له في الكتلة المولية نحو −1 °C).",
         "zh": "羧酸分子有极性，并通过两个氢键形成二聚体，沸点远高于分子间只有色散力的烷烃(乙酸 118 °C，摩尔质量相近的丁烷约 −1 °C)。",
-        "ku": "Molekulên asîda karboksîlîk polar in û bi girêdana hîdrojenê ya ducar dîmer çêdikin; ew ji alkanan ku tenê hêzên London hene pir bilindtir dikelin (asîda asetîk 118 °C, bûtana bi girseya molar a nêzîk nêzîkî −1 °C)."
+        "ku": "Molekulên asîda karboksîlîk polar in û bi girêdana hîdrojenê ya ducarî dîmer çêdikin; xala wan a kelînê ji ya alkanan ku tenê hêzên London tê de hene gelek bilindtir e (asîda asetîk 118 °C, bûtana bi girseya molî ya nêzîk nêzîkî −1 °C)."
       }
     },
     {
@@ -443,7 +443,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Одноатомные спирты и простые эфиры с одинаковым числом атомов углерода (не менее 2) — межклассовые изомеры (например, этанол C2H5OH и диметиловый эфир CH3-O-CH3).",
         "ar": "الكحولات الأحادية والإيثرات التي لها العدد نفسه من ذرات الكربون (2 على الأقل) متماكبات مجموعة وظيفية (مثل الإيثانول C2H5OH وثنائي ميثيل الإيثر CH3-O-CH3).",
         "zh": "碳原子数相同(至少 2 个碳)的一元醇和醚互为官能团异构体(例如乙醇 C2H5OH 和二甲醚 CH3-O-CH3)。",
-        "ku": "Monoalkol û eterên bi heman hejmara karbonê (herî kêm 2 karbon) îzomerên koma fonksiyonel ên hev in (mînak etanol C2H5OH û dîmetîl eter CH3-O-CH3)."
+        "ku": "Monoalkol û eterên bi heman hejmara karbonan (herî kêm 2 karbon) îzomerên koma fonksiyonel ên hev in (mînak etanol C2H5OH û dîmetîl eter CH3-O-CH3)."
       },
       "trap": {
         "tr": "Etanol ve dimetil eter aynı kimyasal özelliklere sahiptir.",
@@ -453,7 +453,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Этанол и диметиловый эфир имеют одинаковые химические свойства.",
         "ar": "للإيثانول وثنائي ميثيل الإيثر الخواص الكيميائية نفسها.",
         "zh": "乙醇和二甲醚具有相同的化学性质。",
-        "ku": "Etanol û dimethyl ether xwedî heman taybetmendiyên kîmyewî ne."
+        "ku": "Etanol û dîmetîl eter xwedî heman taybetmendiyên kîmyewî ne."
       },
       "whyTrapIsFalse": {
         "tr": "İzomerlerde yalnızca molekül formülü aynıdır; fonksiyonel grupları farklı olduğundan kimyasal özellikleri de farklıdır. Örneğin etanol Na metaliyle H2 gazı açığa çıkarır, dimetil eter çıkarmaz.",
@@ -463,7 +463,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "У изомеров одинакова только молекулярная формула; функциональные группы разные, значит, различаются и химические свойства. Например, этанол с натрием выделяет H2, а диметиловый эфир — нет.",
         "ar": "لا تشترك المتماكبات إلا في الصيغة الجزيئية؛ وتختلف مجموعاتها الوظيفية فتختلف خواصها الكيميائية. فمثلًا يُطلق الإيثانول غاز H2 مع فلز الصوديوم، ولا يُطلقه ثنائي ميثيل الإيثر.",
         "zh": "同分异构体只是分子式相同；官能团不同，化学性质也不同。例如乙醇与金属钠反应放出 H2，二甲醚则不能。",
-        "ku": "Di îzomeran de tenê formula molekulî yek e; komên wan ên fonksiyonel cuda ne, loma taybetiyên wan ên kîmyayî jî cuda ne. Bo nimûne etanol bi metala Na re gaza H2 derdixe, dîmetîl eter dernaxe."
+        "ku": "Di îzomeran de tenê formula molekulî yek e; komên wan ên fonksiyonel cuda ne, loma taybetmendiyên wan ên kîmyewî jî cuda ne. Mînak etanol bi metala Na re gaza H2 derdixe, dîmetîl eter dernaxe."
       }
     },
     {
@@ -476,7 +476,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Альдегиды и кетоны с одинаковым числом атомов углерода (не менее 3) — межклассовые изомеры (например, пропаналь и пропанон).",
         "ar": "الألدهيدات والكيتونات التي لها العدد نفسه من ذرات الكربون (3 على الأقل) متماكبات مجموعة وظيفية (مثل البروبانال والبروبانون).",
         "zh": "碳原子数相同(至少 3 个碳)的醛和酮互为官能团异构体（例如丙醛和丙酮）。",
-        "ku": "Aldehîd û ketonên bi heman hejmara karbonê (herî kêm 3 karbon) îzomerên koma fonksiyonel ên hev in (mînak propanal û propanon)."
+        "ku": "Aldehîd û ketonên bi heman hejmara karbonan (herî kêm 3 karbon) îzomerên koma fonksiyonel ên hev in (mînak propanal û propanon)."
       },
       "trap": {
         "tr": "Aldehit ve keton izomerliği 2 karbonlu üyeden başlar.",
@@ -486,7 +486,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Изомерия альдегидов и кетонов начинается с соединений, содержащих 2 атома углерода.",
         "ar": "يبدأ تماكب الألدهيد والكيتون من المركبات ذات ذرتي الكربون.",
         "zh": "醛和酮之间的同分异构从含 2 个碳原子的化合物开始。",
-        "ku": "Îzomerîzma aldehîd û ketonê ji endamê 2-karbonê dest pê dike."
+        "ku": "Îzomeriya aldehîd û ketonê ji endamê bi 2 karbonan dest pê dike."
       },
       "whyTrapIsFalse": {
         "tr": "Karbonil grubunun zincir ortasında olabilmesi için en az 3 karbon gerekir; en küçük keton propanondur. Bu nedenle aldehit–keton izomerliği 3 karbonlu üyelerden (propanal–propanon) başlar.",
@@ -496,7 +496,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Чтобы карбонильная группа находилась в середине цепи, нужно не менее 3 атомов углерода; простейший кетон — пропанон. Поэтому изомерия альдегид–кетон начинается с членов C3 (пропаналь–пропанон).",
         "ar": "لكي تقع مجموعة الكربونيل في وسط السلسلة يلزم 3 ذرات كربون على الأقل؛ وأصغر كيتون هو البروبانون. لذلك يبدأ تماكب الألدهيد–الكيتون من المركبات ذات 3 ذرات كربون (بروبانال–بروبانون).",
         "zh": "羰基要位于碳链中间至少需要 3 个碳，最简单的酮是丙酮。因此醛–酮异构从三碳成员（丙醛–丙酮）开始。",
-        "ku": "Ji bo ku koma karbonîlê di nîvê zincîrê de be herî kêm 3 karbon pêwîst in; ketona herî biçûk propanon e. Ji ber vê yekê îzomeriya aldehîd–keton ji endamên 3 karbonî (propanal–propanon) dest pê dike."
+        "ku": "Ji bo ku koma karbonîlê di nîvê zincîrê de be herî kêm 3 karbon hewce ne; ketona herî piçûk propanon e. Loma îzomeriya aldehîd–keton ji endamên bi 3 karbonan (propanal–propanon) dest pê dike."
       }
     },
     {
@@ -509,7 +509,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Одноосновные карбоновые кислоты и сложные эфиры с одинаковым числом атомов углерода (не менее 2) — межклассовые изомеры (например, уксусная кислота и метилформиат).",
         "ar": "الأحماض الكربوكسيلية الأحادية والإسترات التي لها العدد نفسه من ذرات الكربون (2 على الأقل) متماكبات مجموعة وظيفية (مثل حمض الأسيتيك وفورمات الميثيل).",
         "zh": "碳原子数相同(至少 2 个碳)的一元羧酸和酯互为官能团异构体（例如乙酸和甲酸甲酯）。",
-        "ku": "Asîdên monokarboksîlîk û esterên bi heman hejmara karbonê (herî kêm 2 karbon) îzomerên koma fonksiyonel ên hev in (mînak asîda asetîk û metîl format)."
+        "ku": "Asîdên monokarboksîlîk û esterên bi heman hejmara karbonan (herî kêm 2 karbon) îzomerên koma fonksiyonel ên hev in (mînak asîda asetîk û metîl format)."
       },
       "trap": {
         "tr": "Esterlerin en küçük üyesi 1 karbonludur.",
@@ -519,7 +519,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Простейший сложный эфир содержит 1 атом углерода.",
         "ar": "أصغر إستر يحتوي على ذرة كربون واحدة.",
         "zh": "最简单的酯只含 1 个碳原子。",
-        "ku": "Endamê herî piçûk ê esteran 1 karbon heye."
+        "ku": "Endamê herî piçûk ê esteran 1 karbon e."
       },
       "whyTrapIsFalse": {
         "tr": "Ester grubunda (-COO-) asitten gelen karbonil karbonu ile alkolden gelen en az bir karbon birlikte bulunur. Bu yüzden en küçük ester, 2 karbonlu metil metanoattır (H-COO-CH3).",
@@ -529,7 +529,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Сложноэфирная группа (-COO-) включает карбонильный углерод из кислоты и хотя бы один углерод из спирта. Поэтому простейший сложный эфир — метилметаноат с 2 атомами углерода (H-COO-CH3).",
         "ar": "تضم مجموعة الإستر (-COO-) كربون الكربونيل القادم من الحمض وذرة كربون واحدة على الأقل من الكحول. لذا فإن أصغر إستر هو ميثانوات الميثيل ذو ذرتي الكربون (H-COO-CH3).",
         "zh": "酯基(-COO-)中既有来自酸的羰基碳，又至少有一个来自醇的碳。因此最简单的酯是含 2 个碳的甲酸甲酯(H-COO-CH3)。",
-        "ku": "Koma esterê (-COO-) karbona karbonîlê ya ji asîdê û herî kêm karbonek ji alkolê dihewîne. Loma estera herî biçûk metîl metanoat a 2 karbonî ye (H-COO-CH3)."
+        "ku": "Di koma esterê (-COO-) de karbona karbonîlê ya ji asîdê û herî kêm karbonek ji alkolê bi hev re hene. Loma estera herî piçûk metîl metanoata bi 2 karbonan e (H-COO-CH3)."
       }
     },
     {
@@ -562,7 +562,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Если при одном атоме углерода двойной связи два одинаковых заместителя, оба расположения совмещаются, то есть это одна и та же молекула. Для цис-транс-изомерии у каждого атома C двойной связи должны быть два разных заместителя.",
         "ar": "إذا حمل أحد كربوني الرابطة الثنائية مجموعتين متماثلتين، ينطبق الترتيبان أحدهما على الآخر فيكونان الجزيء نفسه. يتطلب تماكب سيس-ترانس وجود مجموعتين مختلفتين على كل من كربوني الرابطة الثنائية.",
         "zh": "若双键的一个碳上连有两个相同基团，两种排列可以重合，是同一种分子。顺反异构要求双键两端的每个碳上都连有两个不同的基团。",
-        "ku": "Heke li ser karbonek ji girêdana dualî du komên wekhev hebin, her du rêzkirin li ser hev rûdinin, yanî heman molekul in. Ji bo îzomeriya cis-trans divê li ser her du karbonên girêdana dualî du komên cuda hebin."
+        "ku": "Heke li ser karboneke girêdana ducarî du komên wekhev hebin, her du rêzbûn li ser hev rûdinin, ango heman molekul in. Ji bo îzomeriya cis-trans divê li ser her du karbonên girêdana ducarî du komên cuda hebin."
       }
     }
   ],
@@ -597,7 +597,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Альдегид содержит карбонильную группу на конце цепи (даёт реакцию «серебряного зеркала» с реактивом Толленса); кетон содержит карбонильную группу внутри цепи, между двумя атомами углерода (с реактивом Толленса не реагирует).",
         "ar": "في الألدهيد تقع مجموعة الكربونيل في طرف السلسلة (يعطي مرآة فضية مع كاشف تولنز)؛ وفي الكيتون تقع داخل السلسلة بين ذرتي كربون (لا يتفاعل مع كاشف تولنز).",
         "zh": "醛的羰基位于碳链末端（能与托伦试剂发生银镜反应）；酮的羰基位于碳链中间（不与托伦试剂反应）。",
-        "ku": "Di aldehîdê de koma karbonîl li dawiya zincîrê ye (bi Tollens re neynika zîvîn dide); di ketonê de koma karbonîl di nav zincîrê de ye (bi Tollens re reaksiyon nade)."
+        "ku": "Di aldehîdê de koma karbonîlê li dawiya zincîrê ye (bi Tollens re neynika zîv dide); di ketonê de koma karbonîlê di nav zincîrê de, di navbera du atomên karbonê de ye (bi Tollens re reaksiyonê nade)."
       }
     },
     {
@@ -630,7 +630,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Алкан относится к предельным углеводородам и не вступает в реакции присоединения; алкен относится к непредельным углеводородам, обесцвечивает бромную воду и полимеризуется.",
         "ar": "الألكان مشبع ولا يدخل في تفاعلات الإضافة؛ والألكين غير مشبع يزيل لون ماء البروم ويتبلمر.",
         "zh": "烷烃是饱和烃，不发生加成反应；烯烃是不饱和烃，能使溴水褪色并能发生聚合。",
-        "ku": "Alkan têrbûyî ye û lêzêdekirinê nake; alken netêr e, rengê ava bromê radike û polîmerîze dibe."
+        "ku": "Alkan têr e û reaksiyona lêzêdekirinê nade; alken netêr e, rengê ava bromê radike û polîmerîze dibe."
       }
     },
     {
@@ -663,7 +663,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Изомерия углеродного скелета означает, что функциональная группа одинакова, а углеродный скелет (разветвление) различен (например, бутан и 2-метилпропан); межклассовая изомерия означает, что молекулярная формула одинакова, а функциональные группы разные (например, этанол и диметиловый эфир).",
         "ar": "في تماكب السلسلة تكون المجموعة الوظيفية نفسها لكن الهيكل الكربوني (التفرع) مختلف (مثل البيوتان و2-ميثيل بروبان)؛ أما في تماكب المجموعة الوظيفية فالصيغة الجزيئية نفسها والمجموعات الوظيفية مختلفة (مثل الإيثانول وثنائي ميثيل الإيثر).",
         "zh": "碳链异构中官能团相同而碳骨架（支链）不同(如丁烷与 2-甲基丙烷)；官能团异构中分子式相同而官能团不同（如乙醇与二甲醚）。",
-        "ku": "Di îzomeriya zincîrê de koma fonksiyonel heman e lê îskeleta karbonê (şaxbûn) cuda ye (mînak bûtan û 2-metîlpropan); di îzomeriya koma fonksiyonel de formula molekulî heman e lê komên fonksiyonel cuda ne (mînak etanol û dîmetîl eter)."
+        "ku": "Di îzomeriya zincîrê de koma fonksiyonel yek e, lê îskeleta karbonê (şaxbûn) cuda ye (mînak bûtan û 2-metîlpropan); di îzomeriya koma fonksiyonel de formula molekulî yek e, lê koma fonksiyonel cuda ye (mînak etanol û dîmetîl eter)."
       }
     },
     {
@@ -696,7 +696,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Алкин содержит тройную связь (CnH2n-2) и легко вступает в реакции присоединения; бензол из-за резонансной стабилизации с трудом присоединяет другие вещества и в основном вступает в реакции замещения.",
         "ar": "الألكاين هيدروكربون يحتوي على رابطة ثلاثية (CnH2n-2) ويدخل بسهولة في تفاعلات الإضافة؛ أما البنزين فلا يميل إلى الإضافة بسبب الثبات الرنيني ويدخل غالبًا في تفاعلات الاستبدال.",
         "zh": "炔烃含碳碳三键(CnH2n-2)，容易发生加成反应；芳香烃（苯）因共振而稳定，不易加成，主要发生取代反应。",
-        "ku": "Alkîn girêdana sêcarî dihewînin (CnH2n-2) û bi hêsanî reaksiyonên lêzêdekirinê didin; benzen ji ber aramiya rezonansê naxwaze lêzêdekirinê bike, bi piranî reaksiyonên cihguhertinê (sûbstîtûsyon) dide."
+        "ku": "Alkîn girêdana sêcarî dihewînin (CnH2n-2) û bi hêsanî reaksiyonên lêzêdekirinê didin; benzen ji ber stabîliya rezonansê bi zehmetî lêzêdekirinê qebûl dike û bi piranî reaksiyonên cihguhertinê (sûbstîtûsyon) dide."
       }
     },
     {
@@ -709,7 +709,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Первичный спирт",
         "ar": "الكحول الأولي",
         "zh": "伯醇",
-        "ku": "Alkola seretayî"
+        "ku": "Alkola Seretayî"
       },
       "conceptB": {
         "tr": "Sekonder Alkol",
@@ -719,7 +719,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Вторичный спирт",
         "ar": "الكحول الثانوي",
         "zh": "仲醇",
-        "ku": "Alkola duyemîn"
+        "ku": "Alkola Duyemîn"
       },
       "distinction": {
         "tr": "Primer alkolde OH'ın bağlı olduğu karbona en fazla bir karbon atomu bağlıdır (metanolde hiç yoktur) ve aldehit üzerinden karboksilik aside kadar yükseltgenir; sekonder alkolde bu karbona iki karbon atomu bağlıdır ve yalnızca ketona yükseltgenir.",
@@ -729,7 +729,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Первичный спирт содержит атом C с группой OH, связанный не более чем с одним атомом углерода (в метаноле — ни с одним), и окисляется через альдегид до карбоновой кислоты; вторичный спирт содержит такой атом C, связанный с двумя атомами углерода, и окисляется только до кетона.",
         "ar": "في الكحول الأولي يرتبط الكربون الحامل لـ OH بذرة كربون واحدة على الأكثر (ولا يرتبط بأي ذرة في الميثانول) ويتأكسد عبر الألدهيد حتى الحمض الكربوكسيلي؛ وفي الكحول الثانوي يرتبط هذا الكربون بذرتي كربون ويتأكسد إلى كيتون فقط.",
         "zh": "伯醇中连 OH 的碳最多连一个其他碳原子（甲醇中没有），可经醛一直氧化到羧酸；仲醇中该碳连两个碳原子，只能被氧化成酮。",
-        "ku": "Di alkola seretayî de karbona ku OH pê ve girêdayî ye herî zêde bi karbonek din ve girêdayî ye (di metanolê de qet tune) û bi riya aldehîdê heta asîda karboksîlîk oksîd dibe; di alkola duyemîn de ev karbon bi du karbonan ve girêdayî ye û tenê dibe keton."
+        "ku": "Di alkola seretayî de bi karbona ku OH pê ve girêdayî ye herî zêde karbonek din ve girêdayî ye (di metanolê de qet tune ye) û bi riya aldehîdê heta asîda karboksîlîk oksîde dibe; di alkola duyemîn de bi vê karbonê ve du atomên karbonê girêdayî ne û tenê heta ketonê oksîde dibe."
       }
     },
     {
@@ -762,7 +762,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Карбоновая кислота содержит группу -COOH и образует водородные связи; сложный эфир — душистое соединение (-COOR), образующееся при конденсации кислоты и спирта.",
         "ar": "يحتوي الحمض الكربوكسيلي على مجموعة -COOH ويكوّن روابط هيدروجينية؛ والإستر مركب ذو رائحة طيبة (-COOR) يتكون من تكاثف حمض مع كحول.",
         "zh": "羧酸含有羧基(-COOH)，分子间能形成氢键；酯是由酸和醇发生酯化反应生成的有香味的化合物(-COOR)。",
-        "ku": "Asîda karboksîlîk koma -COOH dihewîne û girêdanên hîdrojenê çêdike; ester pêkhateyeke bîhnxweş e (-COOR) ku ji kondensasyona asîd û alkolê çêdibe."
+        "ku": "Asîda karboksîlîk koma -COOH dihewîne û girêdanên hîdrojenê çêdike; ester pêkhateyeke bîhnxweş e (-COOR) ku bi kondensasyona asîd û alkolê çêdibe."
       }
     },
     {
@@ -775,7 +775,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Реакция присоединения",
         "ar": "تفاعل الإضافة",
         "zh": "加成反应",
-        "ku": "Reaksiyona lêzêdekirinê"
+        "ku": "Reaksiyona Lêzêdekirinê"
       },
       "conceptB": {
         "tr": "Ayrılma Tepkimesi",
@@ -785,7 +785,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Реакция отщепления",
         "ar": "تفاعل الحذف",
         "zh": "消去反应",
-        "ku": "Reaksiyona veqetandinê"
+        "ku": "Reaksiyona Elîmînasyonê"
       },
       "distinction": {
         "tr": "Katılma tepkimesinde doymamış bileşiğin pi bağı açılır ve atom ya da gruplar ikili/üçlü bağ karbonlarına bağlanır (örn. CH2=CH2 + H2O → CH3-CH2-OH); ayrılma tepkimesinde komşu iki karbondan küçük bir molekül (H2O, HX) ayrılır ve ikili bağ oluşur (örn. etanolden derişik H2SO4 ile eten eldesi).",
@@ -795,7 +795,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Реакция присоединения идёт с разрывом π-связи непредельного соединения: атомы или группы присоединяются к атомам углерода двойной или тройной связи (например, CH2=CH2 + H2O → CH3-CH2-OH); в реакции отщепления от двух соседних атомов углерода отщепляется малая молекула (H2O, HX) и образуется двойная связь (например, получение этена из этанола при действии концентрированной H2SO4).",
         "ar": "في تفاعل الإضافة تنفتح رابطة باي في المركب غير المشبع وترتبط ذرات أو مجموعات بكربونات الرابطة الثنائية/الثلاثية (مثل CH2=CH2 + H2O → CH3-CH2-OH)؛ وفي تفاعل الحذف يُنزع جزيء صغير (H2O أو HX) من ذرتي كربون متجاورتين وتتكون رابطة ثنائية (مثل تحضير الإيثين من الإيثانول بحمض H2SO4 المركّز).",
         "zh": "加成反应中不饱和化合物的π键打开，原子或基团连到双键/三键碳上(如 CH2=CH2 + H2O → CH3-CH2-OH)；消去反应中从相邻两个碳上脱去一个小分子(H2O、HX)，生成双键(如乙醇与浓 H2SO4 共热制乙烯)。",
-        "ku": "Di reaksiyona lêzêdekirinê de girêdana pi ya pêkhateya netêr vedibe û atom an kom bi karbonên girêdana dualî/sêalî ve girê dibin (bo nimûne CH2=CH2 + H2O → CH3-CH2-OH); di reaksiyona veqetandinê de ji du karbonên cîran molekulek biçûk (H2O, HX) vediqete û girêdana dualî çêdibe (bo nimûne bidestxistina etenê ji etanolê bi H2SO4 ya tîr)."
+        "ku": "Di reaksiyona lêzêdekirinê de girêdana pî ya pêkhateya netêr vedibe û atom an kom bi karbonên girêdana ducarî/sêcarî ve girê dibin (mînak CH2=CH2 + H2O → CH3-CH2-OH); di reaksiyona elîmînasyonê de ji du karbonên cîran molekuleke piçûk (H2O, HX) vediqete û girêdana ducarî çêdibe (mînak bidestxistina etenê ji etanolê bi H2SO4 ya tîr)."
       }
     },
     {
@@ -874,7 +874,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "H из HX присоединяется к атому углерода, у которого больше атомов водорода, а X — к атому, у которого их меньше",
           "ar": "يرتبط H من HX بذرة الكربون الأكثر هيدروجينًا ويرتبط X بذرة الكربون الأقل هيدروجينًا",
           "zh": "HX 中的 H 加到含氢较多的碳原子上，X 加到含氢较少的碳原子上",
-          "ku": "H ya HX diçe ser karbona bi hîdrojenên zêdetir, X jî diçe ser karbona bi hîdrojenên kêmtir"
+          "ku": "H ya HX bi karbona ku hîdrojenên wê zêdetir in, X jî bi karbona ku hîdrojenên wê kêmtir in ve girê dibe"
         },
         {
           "tr": "Oluşan ana ürün adlandırılır (örn. propen + HBr → 2-bromopropan)",
@@ -884,7 +884,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Называют образовавшийся основной продукт (например, пропен + HBr → 2-бромпропан)",
           "ar": "يُسمى الناتج الرئيسي المتكون (مثل بروبين + HBr → 2-برومو بروبان)",
           "zh": "命名生成的主要产物(如丙烯 + HBr → 2-溴丙烷)",
-          "ku": "Berhema sereke ya çêbûyî tê binavkirin (mînak propen + HBr → 2-bromopropan)"
+          "ku": "Hilbera sereke ya ku çêdibe tê binavkirin (mînak propen + HBr → 2-bromopropan)"
         }
       ]
     },
@@ -919,7 +919,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Нумеруют атомы углерода, начиная с конца, ближайшего к разветвлению",
           "ar": "تُرقَّم ذرات الكربون بدءًا من الطرف الأقرب إلى التفرع",
           "zh": "从离支链最近的一端开始给主链碳原子编号",
-          "ku": "Karbon ji dawiya herî nêzî şaxê dest pê dikin têne jimartin."
+          "ku": "Karbon ji wê dawiyê ku herî nêzî şaxê ye dest pê dikin û têne hejmarkirin"
         },
         {
           "tr": "Bağlı alkil gruplarının adları ve karbon numaraları yazılır",
@@ -929,7 +929,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Записывают названия алкильных заместителей и номера атомов углерода, при которых они находятся",
           "ar": "تُكتب أسماء مجموعات الألكيل المرتبطة وأرقام ذرات الكربون التي ترتبط بها",
           "zh": "写出取代基（烷基）的位次和名称",
-          "ku": "Nav û hejmarên karbonê yên komên alkil ên girêdayî têne nivîsandin"
+          "ku": "Nav û hejmarên karbonan ên komên alkîl ên girêdayî têne nivîsandin"
         },
         {
           "tr": "Ana zincirdeki karbon sayısına karşılık gelen alkan adı sona eklenir",
@@ -939,7 +939,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "В конце добавляют название алкана, соответствующее числу атомов углерода в главной цепи",
           "ar": "يُضاف في النهاية اسم الألكان المطابق لعدد ذرات الكربون في السلسلة الرئيسية",
           "zh": "最后写出与主链碳原子数对应的烷烃名称",
-          "ku": "Navê alkanê ku bi hejmara karbonên di zincîra sereke de têkildar e, li dawiyê tê zêdekirin"
+          "ku": "Navê alkanê ku li gorî hejmara karbonên zincîra sereke ye li dawiyê tê zêdekirin"
         }
       ]
     },
@@ -964,7 +964,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Карбид кальция обрабатывают водой: CaC2 + 2H2O → C2H2 + Ca(OH)2",
           "ar": "يُفاعَل كربيد الكالسيوم مع الماء: CaC2 + 2H2O → C2H2 + Ca(OH)2",
           "zh": "碳化钙与水反应：CaC2 + 2H2O → C2H2 + Ca(OH)2",
-          "ku": "Karbîda kalsiyûmê bi avê re tê reaksiyonkirin: CaC2 + 2H2O → C2H2 + Ca(OH)2"
+          "ku": "Karbîda kalsiyûmê bi avê re dikeve reaksiyonê: CaC2 + 2H2O → C2H2 + Ca(OH)2"
         },
         {
           "tr": "Oluşan asetilene (etin) 1 mol HCl katılır",
@@ -974,7 +974,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "К образовавшемуся ацетилену (этину) присоединяют 1 моль HCl",
           "ar": "يُضاف 1 mol من HCl إلى الأسيتيلين (الإيثاين) الناتج",
           "zh": "生成的乙炔与 1 mol HCl 加成",
-          "ku": "1 mol HCl li asetîlena (etîn) ku çêbûye tê zêdekirin"
+          "ku": "1 mol HCl li asetîlena (etîn) çêbûyî tê zêdekirin"
         },
         {
           "tr": "Vinil klorür (kloreten, CH2=CH-Cl) monomeri elde edilir",
@@ -994,7 +994,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Хлорэтен полимеризацией превращают в поливинилхлорид (ПВХ)",
           "ar": "يتحول كلورو الإيثين إلى بولي كلوريد الفينيل (PVC) بالبلمرة بالإضافة",
           "zh": "氯乙烯经加聚反应生成聚氯乙烯(PVC)",
-          "ku": "Kloreten bi polîmerbûna lêzêdekirinê dibe polîvînîl klorîd (PVC)"
+          "ku": "Kloreten bi polîmerîzasyona lêzêdekirinê vediguhere polîvînîl klorîdê (PVC)"
         }
       ]
     },
@@ -1008,7 +1008,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Ступенчатое окисление первичного спирта (на примере этанола)",
         "ar": "الأكسدة المتدرجة لكحول أولي (الإيثانول)",
         "zh": "伯醇的逐步氧化（乙醇）",
-        "ku": "Oksîdasyona Qonax bi Qonax a Alkola Primer (Etanol)"
+        "ku": "Oksîdasyona Gav bi Gav a Alkola Seretayî (Etanol)"
       },
       "steps": [
         {
@@ -1019,7 +1019,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Этанол (первичный спирт) обрабатывают окислителем, например подкисленным KMnO4",
           "ar": "يُعالج الإيثانول (كحول أولي) بعامل مؤكسد مثل KMnO4 المحمض",
           "zh": "用酸性 KMnO4 等氧化剂处理乙醇（伯醇）",
-          "ku": "Etanol (alkoleke primer) bi oksîdkerekî wek KMnO4 ya asîdî re tê reaksiyonkirin"
+          "ku": "Etanol (alkoleke seretayî) bi oksîdanteke wek KMnO4 ya asîdî re dikeve reaksiyonê"
         },
         {
           "tr": "Etanol bir basamak yükseltgenerek etanale (asetaldehit) dönüşür",
@@ -1029,7 +1029,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Этанол окисляется на одну ступень до этаналя (уксусного альдегида)",
           "ar": "يتأكسد الإيثانول خطوة واحدة إلى الإيثانال (الأسيتالدهيد)",
           "zh": "乙醇被氧化一步生成乙醛",
-          "ku": "Etanol bi qonaxekê oksîd dibe û dibe etanal (asetaldehîd)"
+          "ku": "Etanol gavekê oksîde dibe û vediguhere etanalê (asetaldehîd)"
         },
         {
           "tr": "Etanal bir basamak daha yükseltgenerek etanoik aside (asetik asit) dönüşür",
@@ -1039,7 +1039,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Этаналь окисляется ещё на одну ступень до этановой (уксусной) кислоты",
           "ar": "يتأكسد الإيثانال خطوة أخرى إلى حمض الإيثانويك (حمض الأسيتيك)",
           "zh": "乙醛再被氧化一步生成乙酸",
-          "ku": "Etanal bi qonaxeke din oksîd dibe û dibe asîda etanoîk (asîda asetîk)"
+          "ku": "Etanal gaveke din oksîde dibe û vediguhere asîda etanoîk (asîda asetîk)"
         },
         {
           "tr": "Oluşan karboksilik asit bu koşullarda daha fazla yükseltgenmez; zincirin son ürünüdür",
@@ -1049,7 +1049,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Образовавшаяся карбоновая кислота в этих условиях дальше не окисляется; это конечный продукт",
           "ar": "لا يتأكسد الحمض الكربوكسيلي الناتج أكثر في هذه الظروف؛ فهو الناتج النهائي",
           "zh": "生成的羧酸在该条件下不再被进一步氧化，是最终产物",
-          "ku": "Asîda karboksîlîk a çêbûyî di van şertan de êdî oksîd nabe; berhema dawî ye"
+          "ku": "Asîda karboksîlîk a çêbûyî di van şertan de êdî oksîde nabe; ew hilbera dawî ya rêzê ye"
         }
       ]
     }
@@ -1065,7 +1065,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Какой продукт, согласно правилу Марковникова, будет основным при присоединении воды (H2O) к газообразному пропену (CH3-CH=CH2) в кислой среде?",
         "ar": "عند إضافة الماء (H2O) إلى غاز البروبين (CH3-CH=CH2) في وسط حمضي، ما الناتج الرئيسي وفق قاعدة ماركوفنيكوف؟",
         "zh": "在酸催化下，丙烯(CH3-CH=CH2)与水(H2O)发生加成反应。根据马氏规则，主要产物是下列哪一项？",
-        "ku": "Dema ku av (H2O) li gaza propene (CH3-CH=CH2) di hawîrdora asîdî de tê zêdekirin, li gorî qaîdeya Markovnikov kîjan ji van hilbera sereke ye?"
+        "ku": "Dema av (H2O) di hawîrdora asîdî de li gaza propenê (CH3-CH=CH2) tê zêdekirin, li gorî qaîdeya Markovnikov hilbera sereke kîjan e?"
       },
       "options": [
         {
@@ -1128,7 +1128,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "По правилу Марковникова атом H воды присоединяется к атому углерода =CH2 — тому из атомов двойной связи, у которого больше атомов водорода; группа OH присоединяется к среднему атому -CH=, и основным продуктом становится пропанол-2 (CH3-CH(OH)-CH3). Пропанол-1 был бы продуктом с группой OH при концевом атоме углерода, вопреки правилу; пропаналь и пропанон — продукты окисления спиртов, при присоединении воды они не образуются.",
         "ar": "وفقًا لقاعدة ماركوفنيكوف ترتبط ذرة H من الماء بذرة الكربون =CH2، وهي ذرة كربون الرابطة الثنائية التي تحمل هيدروجينًا أكثر؛ وترتبط مجموعة OH بذرة الكربون الوسطى -CH=، فيكون الناتج الرئيسي 2-بروبانول (CH3-CH(OH)-CH3). أما 1-بروبانول فهو الناتج الذي ترتبط فيه OH بالكربون الطرفي خلافًا للقاعدة؛ والبروبانال والبروبانون ناتجا أكسدة الكحولات ولا يتكوّنان بإضافة الماء.",
         "zh": "根据马氏规则，水中的 H 原子加到双键碳中含氢较多的 =CH2 碳上，OH 加到中间的 -CH= 碳上，主要产物是 2-丙醇(CH3-CH(OH)-CH3)。1-丙醇是 OH 连在端位碳上的产物，与该规则相反；丙醛和丙酮是醇的氧化产物，不能由加水生成。",
-        "ku": "Li gorî qaîdeya Markovnikov atoma H ya avê bi karbona =CH2 ve tê girêdan, ango bi wê karbona girêdana ducarî ya ku hîdrojena wê zêdetir e; koma OH jî bi karbona navîn -CH= ve tê girêdan û berhema sereke 2-propanol (CH3-CH(OH)-CH3) e. 1-propanol berhema ku tê de OH bi karbona dawî ve girêdayî ye û li dijî qaîdeyê ye; propanal û propanon jî berhemên oksîdasyona alkolan in û bi lêzêdekirina avê çênabin."
+        "ku": "Li gorî qaîdeya Markovnikov atoma H ya avê bi karbona =CH2 ve girê dibe, ango bi wê karbona girêdana ducarî ya ku hîdrojenên wê zêdetir in; koma OH jî bi karbona navîn -CH= ve girê dibe û hilbera sereke 2-propanol (CH3-CH(OH)-CH3) e. 1-propanol hilbera ku OH bi karbona dawiyê ve girêdayî ye û li dijî qaîdeyê ye; propanal û propanon jî hilberên oksîdasyona alkolan in û bi lêzêdekirina avê çênabin."
       }
     },
     {
@@ -1141,7 +1141,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Какой из следующих классов органических соединений реагирует с реактивом Толленса с образованием серебряного зеркала?",
         "ar": "أيّ فئات المركبات العضوية الآتية تتفاعل مع كاشف تولنز مكوّنة مرآة فضية؟",
         "zh": "下列哪一类有机化合物能与托伦试剂发生银镜反应？",
-        "ku": "Kîjan ji çînên jêrîn ên pêkhateyên organîk bi reagenta Tollens re reaksiyonê dike û neynika zîvîn çêdike?"
+        "ku": "Kîjan ji van çînên pêkhateyên organîk bi reaktîfa Tollens re dikeve reaksiyonê û neynika zîv çêdike?"
       },
       "options": [
         {
@@ -1204,7 +1204,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "В альдегидах с карбонильным атомом углерода связан атом H; поэтому альдегиды легко окисляются до карбоновых кислот и восстанавливают ионы Ag+ реактива Толленса до металлического серебра (серебряное зеркало). У кетонов при карбонильном атоме углерода нет атома H, поэтому эта реакция не идёт; кетоны не дают реакции с реактивом Толленса.",
         "ar": "في الألدهيدات ترتبط ذرة H بكربون مجموعة الكربونيل؛ ولذلك تتأكسد الألدهيدات بسهولة إلى أحماض كربوكسيلية وتختزل أيونات Ag+ في كاشف تولنز إلى فضة فلزية (مرآة فضية). أما الكيتونات فلا توجد ذرة H على كربون الكربونيل فيها، فلا يحدث هذا التفاعل؛ والكيتونات لا تعطي اختبار تولنز.",
         "zh": "醛的羰基碳上连有一个 H 原子，因此醛很容易被氧化为羧酸，并将托伦试剂中的 Ag+ 还原为金属银（银镜）。酮的羰基碳上没有 H 原子，所以不发生这一反应；酮不发生银镜反应。",
-        "ku": "Di aldehîdan de atomeke H bi karbona karbonîlê ve girêdayî ye; ji ber vê yekê aldehîd bi hêsanî dibin asîda karboksîlîk û îyonên Ag+ yên di reagenta Tollensê de dadixin zîvê metalîk (neynika zîvîn). Di ketonan de li ser karbona karbonîlê atoma H tune ye, loma ev reaksiyon pêk nayê; keton testa Tollensê nadin."
+        "ku": "Di aldehîdan de atoma H bi karbona karbonîlê ve girêdayî ye; bi saya vê aldehîd bi hêsanî oksîde dibin û vediguherin asîda karboksîlîk û îyonên Ag+ yên di reaktîfa Tollens de redûkte dikin û dikin zîvê metalîk (neynika zîv). Di ketonan de li ser karbona karbonîlê atoma H tune ye, loma ev reaksiyon pêk nayê; keton testa Tollens nadin."
       }
     },
     {
@@ -1217,7 +1217,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Как называется по номенклатуре ИЮПАК алкан с сокращённой структурной формулой CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3?",
         "ar": "ما اسم IUPAC للألكان الذي صيغته البنائية المختصرة CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3؟",
         "zh": "结构简式为 CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3 的烷烃的 IUPAC 名称是下列哪一个？",
-        "ku": "Navê IUPAC yê alkana ku formula wê ya avahiyî ya kurt CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3 e kîjan e?"
+        "ku": "Navê IUPAC ê alkana ku formula wê ya avahiyê ya kurt CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3 e kîjan e?"
       },
       "options": [
         {
@@ -1280,7 +1280,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Самая длинная непрерывная углеродная цепь — шестиуглеродная, включающая оба атома углерода этильной группы; поэтому родоначальное название — гексан, и этил не указывается как заместитель. При нумерации с конца, ближайшего к разветвлению, метильные группы оказываются при C2 и C4 (с другого конца было бы 3 и 5): 2,4-диметилгексан. Названия с пентаном возникают, если выбрана не самая длинная цепь; 3,5-диметилгексан — результат нумерации не с того конца.",
         "ar": "أطول سلسلة كربونية متصلة هي سلسلة من 6 ذرات كربون تضم ذرتي كربون مجموعة الإيثيل، لذا فالاسم الأصلي هكسان ولا يُكتب الإيثيل فرعًا. وعند الترقيم من الطرف الأقرب إلى التفرع تقع مجموعتا الميثيل على C2 وC4 (ومن الطرف الآخر 3 و5): 2,4-ثنائي ميثيل هكسان. الأسماء المنتهية بالبنتان تنتج عن عدم اختيار أطول سلسلة، و3,5-ثنائي ميثيل هكسان ينتج عن الترقيم من الطرف الخطأ.",
         "zh": "最长碳链是包含乙基两个碳在内的六碳链，所以母体名为己烷，乙基不作为取代基写出。从离支链最近的一端编号，两个甲基位于 2 号和 4 号碳(从另一端编号则为 3 和 5)：2,4-二甲基己烷。以戊烷结尾的名称源于没有选出最长碳链；3,5-二甲基己烷源于从错误的一端编号。",
-        "ku": "Zincîra karbonê ya herî dirêj a bênavber zincîra 6 karbonî ye ku her du karbonên koma etîl dihewîne; loma navê bingehîn heksan e û etîl wek şax nayê nivîsîn. Dema zincîr ji aliyê herî nêzîkî şaxê ve tê hejmartin, komên metîl dikevin ser C2 û C4 (ji aliyê din 3 û 5 dibûn): 2,4-dîmetîlheksan. Navên bi pentan ji hilnebijartina zincîra herî dirêj, 3,5-dîmetîlheksan jî ji hejmartina ji aliyê şaş çêdibin."
+        "ku": "Zincîra karbonê ya herî dirêj a bênavber zincîra bi 6 karbonan e ku her du karbonên koma etîl jî dihewîne; loma navê bingehîn heksan e û etîl wek şaxeke cuda nayê nivîsandin. Dema zincîr ji wê dawiyê ku herî nêzî şaxê ye tê hejmarkirin, komên metîl dikevin ser karbonên 2. û 4. (ji dawiya din dê 3 û 5 bûna): 2,4-dîmetîlheksan. Navên bi pentan ji hilnebijartina zincîra herî dirêj, 3,5-dîmetîlheksan jî ji hejmarkirina ji dawiya şaş tê."
       }
     },
     {
@@ -1293,7 +1293,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "При полном сгорании 0,2 моль алкина образуется 35,2 г CO2. Сколько моль O2 израсходовано при этом сгорании? (C: 12, O: 16)",
         "ar": "عند الاحتراق التام لـ 0.2 mol من ألكاين يتكوّن 35.2 g من CO2. كم مولًا من O2 استُهلك في هذا الاحتراق؟ (C: 12، O: 16)",
         "zh": "0.2 mol 某炔烃完全燃烧生成 35.2 g CO2。此燃烧消耗了多少摩尔 O2？(C = 12，O = 16)",
-        "ku": "Dema 0,2 mol ji alkînekê bi temamî dişewite, 35,2 g CO2 çêdibe. Di vê şewitandinê de çend mol O2 tê xerckirin? (C: 12, O: 16)"
+        "ku": "Dema 0,2 mol ji alkînekê bi tevahî dişewite, 35,2 g CO2 çêdibe. Li gorî vê, ji bo vê şewitînê çend mol O2 hatiye xerckirin? (C: 12, O: 16)"
       },
       "options": [
         {
@@ -1356,7 +1356,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "n(CO2) = 35,2 / 44 = 0,8 моль. Раз из 0,2 моль алкина получается 0,8 моль CO2, в молекуле 4 атома C; общая формула алкинов CnH2n-2, значит, это C4H6. По уравнению C4H6 + 11/2 O2 → 4CO2 + 3H2O на 0,2 моль C4H6 нужно 0,2 × 5,5 = 1,1 моль O2. Если принять вещество за алкен (C4H8), получится 1,2, за алкан (C4H10) — 1,3; если забыть перевести моль атомов O в O2 — 2,2; если не учесть кислород воды — 0,8.",
         "ar": "n(CO2) = 35.2 / 44 = 0.8 mol. وبما أن 0.2 mol من الألكاين تعطي 0.8 mol من CO2 ففي الجزيء 4 ذرات C؛ والصيغة العامة للألكاينات CnH2n-2، إذن المركب C4H6. ووفق C4H6 + 11/2 O2 → 4CO2 + 3H2O يلزم لـ 0.2 mol من C4H6 مقدار 0.2 × 5.5 = 1.1 mol من O2. اعتباره ألكينًا (C4H8) يعطي 1.2، واعتباره ألكانًا (C4H10) يعطي 1.3؛ ونسيان تحويل مولات ذرات O إلى O2 يعطي 2.2؛ وإهمال أكسجين الماء يعطي 0.8.",
         "zh": "n(CO2) = 35.2 / 44 = 0.8 mol。0.2 mol 炔烃生成 0.8 mol CO2，说明分子中有 4 个 C；炔烃通式为 CnH2n-2，故该化合物为 C4H6。由 C4H6 + 11/2 O2 → 4CO2 + 3H2O，0.2 mol C4H6 需要 0.2 × 5.5 = 1.1 mol O2。误当成烯烃(C4H8)得 1.2，误当成烷烃(C4H10)得 1.3；忘记把 O 原子的物质的量换算成 O2 得 2.2；忽略水中的氧得 0.8。",
-        "ku": "n(CO2) = 35,2 / 44 = 0,8 mol. Ji ber ku 0,2 mol alkîn 0,8 mol CO2 dide, di molekulê de 4 C hene; formula giştî ya alkînan CnH2n-2 e, loma pêkhate C4H6 e. Li gorî C4H6 + 11/2 O2 → 4CO2 + 3H2O, ji bo 0,2 mol C4H6 0,2 × 5,5 = 1,1 mol O2 pêwîst e. Wek alken (C4H8) hesibandin 1,2, wek alkan (C4H10) hesibandin 1,3 dide; jibîrkirina veguherandina mol atomên O bo O2 2,2 dide; nehesibandina oksîjena avê 0,8 dide."
+        "ku": "n(CO2) = 35,2 / 44 = 0,8 mol. Ji ber ku 0,2 mol alkîn 0,8 mol CO2 dide, di molekulê de 4 C hene; formula giştî ya alkînan CnH2n-2 ye, loma pêkhate C4H6 ye. Li gorî hevkêşeya C4H6 + 11/2 O2 → 4CO2 + 3H2O, ji bo 0,2 mol C4H6 0,2 × 5,5 = 1,1 mol O2 hewce ye. Girtina pêkhateyê wek alken (C4H8) 1,2, wek alkan (C4H10) 1,3 dide; jibîrkirina veguherandina mola atomên O bo O2 2,2 dide; nehesibandina oksîjena avê 0,8 dide."
       }
     },
     {
@@ -1369,7 +1369,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "В сосудах X, Y и Z с отклеившимися этикетками находятся пропан, пропен и пропин (в каждом свой газ). При пропускании газов через бромную воду X и Y её обесцвечивают, а Z — нет; при пропускании через аммиачный раствор AgNO3 белый осадок образует только Y. Какие газы находятся в X, Y и Z соответственно?",
         "ar": "تحتوي الأوعية X وY وZ التي سقطت ملصقاتها على غازات البروبان والبروبين والبروباين (غاز مختلف في كل وعاء). عند إمرار الغازات في ماء البروم يزيل X وY لونه ولا يزيله Z؛ وعند إمرارها في محلول AgNO3 النشادري يكوّن Y وحده راسبًا أبيض. ما الغازات X وY وZ على الترتيب؟",
         "zh": "标签脱落的容器 X、Y、Z 中分别装有丙烷、丙烯和丙炔（各不相同）。将气体通入溴水时，X 和 Y 使溴水褪色，Z 不能；通入银氨溶液(氨性 AgNO3 溶液)时，只有 Y 生成白色沉淀。X、Y、Z 依次是什么？",
-        "ku": "Di firaxên X, Y û Z de ku etîketên wan ketine, gazên propan, propen û propîn hene (di her yekê de gazek cuda). Dema gaz di ava bromê re têne derbaskirin X û Y rengê wê dibin, Z nabe; dema di çareseriya AgNO3 ya amonyakî re têne derbaskirin tenê Y çîpeke spî çêdike. Li gorî vê, X, Y û Z bi rêzê kîjan in?"
+        "ku": "Di firaxên X, Y û Z de ku etîketên wan ketine, gazên propan, propen û propîn hene (di her firaxê de gazeke cuda). Dema gaz di ava bromê re têne derbaskirin, X û Y rengê wê radikin, Z ranake; dema di çareseriya AgNO3 ya amonyakî re têne derbaskirin, tenê Y niştekeke spî çêdike. Li gorî vê, X, Y û Z bi rêzê kîjan in?"
       },
       "options": [
         {
@@ -1432,7 +1432,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Z, не обесцвечивающий бромную воду, — пропан, насыщенный углеводород. X и Y ненасыщенные (пропен и пропин). Белый осадок с аммиачным раствором AgNO3 характерен для концевых алкинов, у которых при углероде тройной связи есть H; пропин (CH≡C-CH3) — концевой алкин, поэтому Y — пропин, а X — пропен. Самая частая ошибка — считать, что газ с тройной связью не обесцвечивает бромную воду.",
         "ar": "Z الذي لا يزيل لون ماء البروم هو البروبان، الهيدروكربون المشبع. أما X وY فغير مشبعين (البروبين والبروباين). الراسب الأبيض مع AgNO3 النشادري سمة الألكاينات الطرفية التي تحمل ذرة H على كربون الرابطة الثلاثية؛ والبروباين (CH≡C-CH3) ألكاين طرفي، لذا Y بروباين وX بروبين. أكثر الأخطاء شيوعًا الظن بأن الغاز ذا الرابطة الثلاثية لا يزيل لون ماء البروم.",
         "zh": "不使溴水褪色的 Z 是饱和烃丙烷。X 和 Y 是不饱和烃（丙烯和丙炔）。与银氨溶液生成白色沉淀是三键碳上带 H 的端炔的特征；丙炔(CH≡C-CH3)是端炔，所以 Y 是丙炔，X 是丙烯。最常见的错误是认为含三键的气体不能使溴水褪色。",
-        "ku": "Z ku rengê ava bromê nabe propan e, hîdrokarbona têr. X û Y netêr in (propen û propîn). Çîpa spî bi AgNO3 ya amonyakî taybetiya alkînên dawî ye ku li ser karbona girêdana sêalî H heye; propîn (CH≡C-CH3) alkîneke dawî ye, loma Y propîn e û X propen e. Şaşiya herî zêde ev e ku mirov difikire gaza bi girêdana sêalî rengê ava bromê nabe."
+        "ku": "Z ku rengê ava bromê ranake propan e, ango hîdrokarbona têr. X û Y netêr in (propen û propîn). Niştekeke spî bi AgNO3 ya amonyakî re taybetmendiya alkînên dawiyê ye ku li ser karbona girêdana sêcarî H heye; propîn (CH≡C-CH3) alkîneke dawiyê ye, loma Y propîn e û X propen e. Şaşiya herî berbelav ew e ku mirov difikire gaza bi girêdana sêcarî rengê ava bromê ranake."
       }
     },
     {
@@ -1445,7 +1445,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "О молекуле бензола (C6H6):\nI. Все атомы углерода в кольце находятся в состоянии sp2-гибридизации.\nII. С Br2 в присутствии FeBr3 вступает в реакцию замещения с образованием бромбензола и HBr.\nIII. При полном сгорании 1 моль образуется 6 моль CO2 и 3 моль H2O.\nКакие из утверждений верны?",
         "ar": "فيما يتعلق بجزيء البنزين (C6H6):\nI. جميع ذرات الكربون في الحلقة مهجّنة sp2.\nII. يتفاعل مع Br2 بوجود FeBr3 تفاعل استبدال فيتكوّن البروموبنزين وHBr.\nIII. عند الاحتراق التام لـ 1 mol منه يتكوّن 6 mol من CO2 و3 mol من H2O.\nأيّ العبارات صحيحة؟",
         "zh": "关于苯(C6H6)分子：\nI. 环上所有碳原子均为 sp2 杂化。\nII. 在 FeBr3 催化下与 Br2 发生取代反应，生成溴苯和 HBr。\nIII. 1 mol 苯完全燃烧生成 6 mol CO2 和 3 mol H2O。\n以上说法中哪些正确？",
-        "ku": "Derbarê molekula benzenê (C6H6) de:\nI. Hemû atomên karbonê yên di xelekê de hîbrîdbûna sp2 kirine.\nII. Bi katalîzora FeBr3 bi Br2 re reaksiyona cihguhertinê dide û bromobenzen û HBr çêdike.\nIII. Dema 1 mol bi temamî dişewite 6 mol CO2 û 3 mol H2O çêdibin.\nKîjan ji van gotinan rast in?"
+        "ku": "Derbarê molekula benzenê (C6H6) de:\nI. Hemû atomên karbonê yên di xelekê de hîbrîdîzasyona sp2 kirine.\nII. Bi katalîzora FeBr3 bi Br2 re reaksiyona cihguhertinê dide û bromobenzen û HBr çêdike.\nIII. Dema 1 mol jê bi tevahî dişewite, 6 mol CO2 û 3 mol H2O çêdibin.\nKîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1508,7 +1508,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "I верно: каждый атом углерода связан с тремя атомами (два C, один H) и в плоском кольце находится в sp2-гибридизации. II верно: сохраняя резонансную устойчивость, бензол вступает в замещение, а не в присоединение; C6H6 + Br2 → C6H5Br + HBr. III верно: C6H6 + 15/2 O2 → 6CO2 + 3H2O; 6 атомов C дают 6 CO2, 6 атомов H — 3 H2O. Все три утверждения верны.",
         "ar": "I صحيحة: كل ذرة كربون مرتبطة بثلاث ذرات (ذرتا C وذرة H) ومهجّنة sp2 في الحلقة المستوية. II صحيحة: يحافظ البنزين على استقرار الرنين فيتفاعل بالاستبدال لا بالإضافة؛ C6H6 + Br2 → C6H5Br + HBr. III صحيحة: C6H6 + 15/2 O2 → 6CO2 + 3H2O؛ ذرات C الست تعطي 6 CO2 وذرات H الست تعطي 3 H2O. العبارات الثلاث صحيحة.",
         "zh": "I 正确：每个碳与三个原子(两个 C、一个 H)相连，在平面环中为 sp2 杂化。II 正确：为保持共振稳定性，苯发生取代而非加成；C6H6 + Br2 → C6H5Br + HBr。III 正确：C6H6 + 15/2 O2 → 6CO2 + 3H2O，6 个 C 原子生成 6 CO2，6 个 H 原子生成 3 H2O。三种说法都正确。",
-        "ku": "I rast e: her karbon bi sê atoman (du C, yek H) ve girêdayî ye û di xeleka rast de hîbrîdbûna sp2 dike. II rast e: benzen ji bo parastina aramiya rezonansê li şûna lêzêdekirinê reaksiyona cihguhertinê dide; C6H6 + Br2 → C6H5Br + HBr. III rast e: C6H6 + 15/2 O2 → 6CO2 + 3H2O; 6 atomên C 6 CO2, 6 atomên H 3 H2O didin. Her sê gotin rast in."
+        "ku": "I rast e: her karbon bi sê atoman (du C, yek H) ve girêdayî ye û di xeleka pelî de hîbrîdîzasyona sp2 dike. II rast e: benzen ji bo parastina stabîliya rezonansê li şûna lêzêdekirinê reaksiyona cihguhertinê dide; C6H6 + Br2 → C6H5Br + HBr. III rast e: C6H6 + 15/2 O2 → 6CO2 + 3H2O; 6 atomên C 6 CO2, 6 atomên H 3 H2O didin. Her sê gotin rast in."
       }
     },
     {
@@ -1521,7 +1521,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Сколько соединений с открытой цепью (алкенов) имеют молекулярную формулу C4H8, если цис-транс (геометрические) изомеры считать отдельно? (Циклические структуры не учитываются.)",
         "ar": "كم عدد المركبات ذات السلسلة المفتوحة (الألكينات) التي صيغتها الجزيئية C4H8 إذا عُدّت متشكلات سيس-ترانس (الهندسية) كلٌّ على حدة؟ (لا تُحسب البنى الحلقية.)",
         "zh": "分子式为 C4H8 的链状化合物（烯烃）共有几种（顺反异构体分别计数，不计环状结构）？",
-        "ku": "Hejmara pêkhateyên bi zincîra vekirî (alken) ku formula wan a molekulî C4H8 e çend e, heke îzomerên cis-trans (geometrîk) cuda bêne hejmartin? (Avahiyên xelekî nayên hejmartin.)"
+        "ku": "Heke îzomerên cis-trans (geometrîk) cuda werin hejmartin, hejmara pêkhateyên bi zincîra vekirî (alken) ku formula wan a molekulî C4H8 e çend e? (Avahiyên xelekî nayên hejmartin.)"
       },
       "options": [
         {
@@ -1584,7 +1584,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Для C4H8 можно записать три разных алкеновых скелета: CH2=CH-CH2-CH3 (бутен-1), CH3-CH=CH-CH3 (бутен-2) и CH2=C(CH3)-CH3 (2-метилпропен). Только в бутене-2 у каждого атома C двойной связи два разных заместителя (H и CH3), поэтому у него два геометрических изомера — цис- и транс-бутен-2. Всего 1 + 2 + 1 = 4. Без геометрических изомеров получается 3; если искать цис-транс и у бутена-1 — 5; если добавить циклические циклобутан и метилциклопропан — 6.",
         "ar": "يمكن كتابة ثلاثة هياكل ألكينية مختلفة لـ C4H8: CH2=CH-CH2-CH3 (1-بيوتين) وCH3-CH=CH-CH3 (2-بيوتين) وCH2=C(CH3)-CH3 (2-ميثيل بروبين). في 2-بيوتين وحده يحمل كل من كربوني الرابطة الثنائية مجموعتين مختلفتين (H وCH3)، فله متشكلان هندسيان: سيس-2-بيوتين وترانس-2-بيوتين. المجموع 1 + 2 + 1 = 4. إهمال المتشكلات الهندسية يعطي 3، والبحث عن سيس-ترانس في 1-بيوتين أيضًا يعطي 5، وإضافة البنيتين الحلقيتين البيوتان الحلقي وميثيل البروبان الحلقي يعطي 6.",
         "zh": "C4H8 可写出三种烯烃碳骨架：CH2=CH-CH2-CH3(1-丁烯)、CH3-CH=CH-CH3(2-丁烯)和 CH2=C(CH3)-CH3(2-甲基丙烯)。只有 2-丁烯双键两端的碳各连两个不同基团(H 和 CH3)，因此有顺-2-丁烯和反-2-丁烯两种几何异构体。共 1 + 2 + 1 = 4 种。不计几何异构得 3；误认为 1-丁烯也有顺反异构得 5；再加上环丁烷和甲基环丙烷两种环状结构得 6。",
-        "ku": "Ji bo C4H8 sê skeletên alkenê yên cuda têne nivîsîn: CH2=CH-CH2-CH3 (1-bûten), CH3-CH=CH-CH3 (2-bûten) û CH2=C(CH3)-CH3 (2-metîlpropen). Tenê di 2-bûtenê de li ser her du karbonên girêdana dualî du komên cuda (H û CH3) hene, loma du îzomerên geometrîk hene: cis-2-bûten û trans-2-bûten. Bi giştî 1 + 2 + 1 = 4. Nehejmartina îzomerên geometrîk 3; li 1-bûtenê jî cis-trans gerîn 5; lêzêdekirina sîklobûtan û metîlsîklopropana xelekî 6 dide."
+        "ku": "Ji bo C4H8 sê îskeletên alkenê yên cuda têne nivîsandin: CH2=CH-CH2-CH3 (1-bûten), CH3-CH=CH-CH3 (2-bûten) û CH2=C(CH3)-CH3 (2-metîlpropen). Ji van tenê di 2-bûtenê de li ser her du karbonên girêdana ducarî du komên cuda (H û CH3) hene, loma du îzomerên geometrîk hene: cis-2-bûten û trans-2-bûten. Bi tevahî 1 + 2 + 1 = 4. Nehejmartina îzomerên geometrîk 3; li 1-bûtenê jî li cis-trans gerîn 5; lêzêdekirina sîklobûtan û metîlsîklopropana xelekî 6 dide."
       }
     },
     {
@@ -1597,7 +1597,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Какое из следующих соответствий мономер → полимер присоединения неверно?",
         "ar": "أيّ المطابقات الآتية بين المونومر → بوليمر الإضافة خاطئة؟",
         "zh": "下列单体 → 加聚产物的对应关系中，哪一项是错误的？",
-        "ku": "Kîjan ji van lihevanînên monomer → polîmera lêzêdekirinê şaş e?"
+        "ku": "Kîjan ji van hevanînên monomer → polîmera lêzêdekirinê şaş e?"
       },
       "options": [
         {
@@ -1660,7 +1660,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "При полимеризации раскрывается π-связь двойной связи C=C мономера, и молекулы соединяются в цепь, поэтому мономер должен содержать двойную связь. Мономер ПВХ — винилхлорид (хлорэтен, CH2=CH-Cl). CH3-CH2-Cl (хлорэтан) — насыщенное соединение: π-связи у него нет, и полимер присоединения он не образует. К ошибке приводит смешение винилхлорида с этилхлоридом. Пары этен–полиэтилен, пропен–полипропилен, тетрафторэтен–тефлон и стирол–полистирол верны.",
         "ar": "في البلمرة بالإضافة تنفتح رابطة باي في الرابطة C=C للمونومر وتتصل الجزيئات بعضها ببعض، لذا يجب أن يحتوي المونومر على رابطة ثنائية. مونومر PVC هو كلوريد الفينيل (كلورو إيثين، CH2=CH-Cl). أما CH3-CH2-Cl (كلورو إيثان) فمركب مشبع لا يملك رابطة باي تنفتح، فلا يكوّن بوليمر إضافة؛ والخلط بين كلوريد الفينيل وكلوريد الإيثيل يؤدي إلى هذا الخطأ. المطابقات إيثين–بولي إيثيلين، بروبين–بولي بروبيلين، رباعي فلورو إيثين–التفلون، ستايرين–بولي ستايرين صحيحة.",
         "zh": "加聚反应中单体 C=C 中的π键打开，分子首尾相连，因此单体必须含有双键。PVC 的单体是氯乙烯(CH2=CH-Cl)。CH3-CH2-Cl（氯乙烷）是饱和化合物，没有可打开的π键，不能发生加聚；把氯乙烯与氯乙烷混淆会导致此错误。乙烯–聚乙烯、丙烯–聚丙烯、四氟乙烯–聚四氟乙烯、苯乙烯–聚苯乙烯的对应都正确。",
-        "ku": "Di polîmerbûna lêzêdekirinê de girêdana pi ya C=C ya monomerê vedibe û molekul bi hev ve girê dibin; loma divê di monomerê de girêdana dualî hebe. Monomera PVC vînîl klorîd e (kloreten, CH2=CH-Cl). CH3-CH2-Cl (kloroetan) pêkhateyeke têr e; ji ber ku girêdana pi ya ku vebe tune, polîmera lêzêdekirinê çênake. Tevlihevkirina vînîl klorîdê bi etîl klorîdê re dibe sedema vê şaşiyê. Lihevanînên eten–polîetîlen, propen–polîpropîlen, tetrafloreten–teflon û stîren–polîstîren rast in."
+        "ku": "Di polîmerîzasyona lêzêdekirinê de girêdana pî ya di C=C ya monomerê de vedibe û molekul ser bi ser ve bi hev ve girê dibin; loma divê di monomerê de girêdana ducarî hebe. Monomera PVC vînîl klorîd e (kloreten, CH2=CH-Cl). CH3-CH2-Cl (kloroetan) pêkhateyeke têr e; ji ber ku girêdana pî ya ku vebe tune ye, nikare polîmera lêzêdekirinê çêke. Tevlihevkirina vînîl klorîdê bi etîl klorîdê re dibe sedema vê şaşiyê. Hevanînên eten–polîetîlen, propen–polîpropîlen, tetrafloreten–teflon û stîren–polîstîren rast in."
       }
     },
     {
@@ -1673,7 +1673,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Пропан (CH3-CH2-CH3, 44 г/моль), этаналь (CH3-CHO, 44 г/моль), этанол (CH3-CH2-OH, 46 г/моль) и метановая кислота (H-COOH, 46 г/моль) имеют близкие молярные массы. Какой ряд располагает их температуры кипения при одинаковом внешнем давлении в порядке возрастания?",
         "ar": "للبروبان (CH3-CH2-CH3، 44 g/mol) والإيثانال (CH3-CHO، 44 g/mol) والإيثانول (CH3-CH2-OH، 46 g/mol) وحمض الميثانويك (H-COOH، 46 g/mol) كتل مولية متقاربة. أيّ الترتيبات الآتية يرتّب درجات غليانها عند الضغط الخارجي نفسه تصاعديًا؟",
         "zh": "丙烷(CH3-CH2-CH3，44 g/mol)、乙醛(CH3-CHO，44 g/mol)、乙醇(CH3-CH2-OH，46 g/mol)和甲酸(H-COOH，46 g/mol)的摩尔质量相近。在相同外压下，它们的沸点由低到高的顺序是下列哪一项？",
-        "ku": "Girseyên molar ên propan (CH3-CH2-CH3, 44 g/mol), etanal (CH3-CHO, 44 g/mol), etanol (CH3-CH2-OH, 46 g/mol) û asîda metanoîk (H-COOH, 46 g/mol) nêzîkî hev in. Rêzkirina xalên kelînê yên wan di heman zexta derve de ji biçûk ber bi mezin kîjan e?"
+        "ku": "Girseyên molî yên propan (CH3-CH2-CH3, 44 g/mol), etanal (CH3-CHO, 44 g/mol), etanol (CH3-CH2-OH, 46 g/mol) û asîda metanoîk (H-COOH, 46 g/mol) nêzîkî hev in. Rêzkirina xalên kelînê yên van pêkhateyan di heman zexta derve de ji piçûk ber bi mezin kîjan e?"
       },
       "options": [
         {
@@ -1736,7 +1736,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "При близких молярных массах порядок определяют межмолекулярные взаимодействия. Пропан неполярен, между его молекулами действуют только лондоновские силы (около −42 °C). Этаналь полярен, для него характерно диполь-дипольное взаимодействие, но у кислорода нет атома H, и водородных связей нет (около 20 °C). Этанол образует водородные связи (78 °C). Молекулы метановой кислоты образуют димеры за счёт двух водородных связей и кипят выше всех (около 101 °C). Ставить этанол выше кислоты — значит упустить две водородные связи карбоксильной группы; ставить этаналь ниже пропана — упустить диполь-дипольное взаимодействие.",
         "ar": "بما أن الكتل المولية متقاربة فإن القوى بين الجزيئات هي التي تحدد الترتيب. البروبان غير قطبي ولا يملك إلا قوى لندن (نحو −42 °C). الإيثانال قطبي وله تجاذب ثنائي القطب، لكنه لا يكوّن روابط هيدروجينية لعدم وجود H مرتبطة بالأكسجين (نحو 20 °C). الإيثانول يكوّن روابط هيدروجينية (78 °C). جزيئات حمض الميثانويك تكوّن ثنائيات عبر رابطتين هيدروجينيتين ولها أعلى درجة غليان (نحو 101 °C). وضع الإيثانول فوق الحمض إغفال للرابطة الهيدروجينية المزدوجة لمجموعة الكربوكسيل، ووضع الإيثانال تحت البروبان إغفال لتجاذب ثنائي القطب.",
         "zh": "摩尔质量相近时，沸点顺序由分子间作用力决定。丙烷为非极性分子，只有色散力(约 −42 °C)。乙醛是极性分子，有偶极–偶极作用，但氧上没有 H，不能形成氢键(约 20 °C)。乙醇能形成氢键(78 °C)。甲酸分子通过两个氢键形成二聚体，沸点最高(约 101 °C)。把乙醇排在甲酸之上，是忽略了羧基的双氢键；把乙醛排在丙烷之下，是忽略了偶极–偶极作用。",
-        "ku": "Ji ber ku girseyên molar nêzîk in, hêzên di navbera molekulan de rêzê diyar dikin. Propan nepolar e û tenê hêzên London hene (nêzîkî −42 °C). Etanal polar e û têkiliya dîpol–dîpol dike, lê ji ber ku H ya bi oksîjenê ve tune girêdana hîdrojenê çênake (nêzîkî 20 °C). Etanol girêdana hîdrojenê çêdike (78 °C). Molekulên asîda metanoîk bi du girêdanên hîdrojenê dîmer çêdikin û xala kelînê ya herî bilind a wan e (nêzîkî 101 °C). Danîna etanolê li ser asîdê girêdana hîdrojenê ya ducar a koma karboksîl ji bîr dike; danîna etanalê li bin propanê jî têkiliya dîpol–dîpol ji bîr dike."
+        "ku": "Ji ber ku girseyên molî nêzîk in, rêzê hêzên navmolekulî diyar dikin. Propan nepolar e û tenê hêzên London hene (nêzîkî −42 °C). Etanal polar e û hêzên dîpol–dîpol hene, lê ji ber ku atoma H ya bi oksîjenê ve girêdayî tune ye, nikare girêdana hîdrojenê çêke (nêzîkî 20 °C). Etanol girêdana hîdrojenê çêdike (78 °C). Molekulên asîda metanoîk bi du girêdanên hîdrojenê dîmer çêdikin û xala wan a kelînê herî bilind e (nêzîkî 101 °C). Bilindtir hesibandina etanolê ji asîdê girêdana hîdrojenê ya ducarî ya koma karboksîl, nizmtir hesibandina etanalê ji propanê jî hêzên dîpol–dîpol ji ber çav direvîne."
       }
     },
     {
@@ -1749,7 +1749,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "При нагревании уксусной кислоты (CH3-COOH) с этанолом (CH3-CH2-OH) в присутствии концентрированной H2SO4 как катализатора образуется вода и органический продукт. Как он называется?",
         "ar": "عند تسخين حمض الأسيتيك (CH3-COOH) مع الإيثانول (CH3-CH2-OH) بوجود H2SO4 المركّز حفازًا، ما اسم الناتج العضوي الذي يتكوّن مع الماء؟",
         "zh": "乙酸(CH3-COOH)与乙醇(CH3-CH2-OH)在浓 H2SO4 催化下加热，与水一同生成的有机产物名称是下列哪一个？",
-        "ku": "Dema asîda asetîk (CH3-COOH) û etanol (CH3-CH2-OH) bi katalîzora H2SO4 ya tîr têne germkirin, navê berhema organîk a ku bi avê re çêdibe kîjan e?"
+        "ku": "Dema asîda asetîk (CH3-COOH) û etanol (CH3-CH2-OH) bi katalîzora H2SO4 ya tîr têne germkirin, navê hilbera organîk a ku bi avê re çêdibe kîjan e?"
       },
       "options": [
         {
@@ -1812,7 +1812,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Это реакция этерификации: CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. Сложный эфир называют по алкильной группе спирта и названию кислоты с суффиксом -оат: этил — от спирта, этаноат — от этановой (уксусной) кислоты; продукт — этилэтаноат (этилацетат). Метилпропаноат, пропилметаноат и бутановая кислота — изомеры с той же формулой C4H8O2; они получаются, если перепутать кислотную и спиртовую части. Диэтиловый эфир образуется при отщеплении воды от двух молекул этанола и не содержит остатка уксусной кислоты.",
         "ar": "هذا تفاعل أسترة: CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. يُسمّى الإستر باسم الحمض بالمقطع «-وات» مضافًا إلى مجموعة الألكيل القادمة من الكحول: الإيثانوات من حمض الإيثانويك (الأسيتيك) والإيثيل من الكحول؛ فالناتج إيثانوات الإيثيل (أسيتات الإيثيل). بروبانوات الميثيل وميثانوات البروبيل وحمض البيوتانويك متشكلات لها الصيغة الجزيئية نفسها (C4H8O2) وتنتج عن الخلط بين جزأي الحمض والكحول. أما ثنائي إيثيل الإيثر فيتكوّن بنزع الماء من جزيئي إيثانول ولا يحتوي على جزء الأسيتيك.",
         "zh": "这是酯化反应：CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O。酯按“某酸某酯”命名：酸部分来自乙酸，醇部分来自乙醇，产物为乙酸乙酯。丙酸甲酯、甲酸丙酯和丁酸是分子式同为 C4H8O2 的同分异构体，源于把酸和醇两部分弄混。乙醚由两分子乙醇脱水生成，不含乙酸部分。",
-        "ku": "Ev reaksiyona esterkirinê ye: CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. Ester bi navê koma alkîl a ji alkolê û navê asîdê yê bi paşgira -oat têne binavkirin: etîl ji alkolê, etanoat ji asîda etanoîk (asetîk); berhem etîl etanoat e (etîl asetat). Metîl propanoat, propîl metanoat û asîda bûtanoîk îzomerên bi heman formula molekulî (C4H8O2) ne û ji tevlihevkirina beşên asîd û alkolê çêdibin. Dîetîl eter ji du molekulên etanolê bi veqetîna avê çêdibe û beşa asetîk nahewîne."
+        "ku": "Ev reaksiyona esterbûnê ye: CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. Ester bi berhevkirina navê koma alkîl a ji alkolê û navê asîdê yê bi paşgira -oat têne binavkirin: etîl ji alkolê, etanoat ji asîda etanoîk (asetîk) tê; hilber etîl etanoat e (etîl asetat). Metîl propanoat, propîl metanoat û asîda bûtanoîk îzomerên bi heman formula molekulî (C4H8O2) ne û ji tevlihevkirina beşên asîd û alkolê tên. Dîetîl eter ji du molekulên etanolê bi veqetîna avê çêdibe û beşa asîda asetîk tê de tune ye."
       }
     },
     {
@@ -1825,7 +1825,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "О глицерине (пропантриол-1,2,3; HO-CH2-CH(OH)-CH2-OH):\nI. Это трёхатомный спирт (многоатомный спирт).\nII. Одна группа OH находится при вторичном атоме углерода, две — при первичных.\nIII. Он не растворяется в воде, так как между его молекулами нет водородных связей.\nКакие из утверждений верны?",
         "ar": "فيما يتعلق بالغليسرين (بروبان-1,2,3-تريول؛ HO-CH2-CH(OH)-CH2-OH):\nI. هو كحول ثلاثي الهيدروكسيل (كحول متعدد الهيدروكسيل).\nII. إحدى مجموعات OH مرتبطة بكربون ثانوي واثنتان بكربونين أوليين.\nIII. لا يذوب في الماء لعدم وجود روابط هيدروجينية بين جزيئاته.\nأيّ العبارات صحيحة؟",
         "zh": "关于甘油(丙三醇，1,2,3-丙三醇；HO-CH2-CH(OH)-CH2-OH)：\nI. 它是三元醇（多元醇）。\nII. 其中一个 OH 连在仲碳上，两个连在伯碳上。\nIII. 分子间不存在氢键，因此不溶于水。\n以上说法中哪些正确？",
-        "ku": "Derbarê glîserînê (1,2,3-propantrîol; HO-CH2-CH(OH)-CH2-OH) de:\nI. Alkoleke sê-hîdroksîlî ye (polîalkol).\nII. Yek ji komên OH bi karbona duyemîn, du jî bi karbonên seretayî ve girêdayî ne.\nIII. Ji ber ku di navbera molekulên wê de girêdana hîdrojenê tune, di avê de nahele.\nKîjan ji van gotinan rast in?"
+        "ku": "Derbarê glîserînê (1,2,3-propantrîol; HO-CH2-CH(OH)-CH2-OH) de:\nI. Alkoleke sê-hîdroksîlî ye (polîalkol).\nII. Yek ji komên OH bi karboneke duyemîn, du jî bi karbonên seretayî ve girêdayî ne.\nIII. Ji ber ku di navbera molekulên wê de girêdana hîdrojenê tune ye, di avê de nahele.\nKîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1888,7 +1888,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "I верно: в молекуле три группы OH, значит, это трёхатомный спирт. II верно: каждый концевой атом C группы CH2 связан только с одним атомом углерода (первичный), а средний атом C группы CH — с двумя (вторичный). III неверно: благодаря трём группам OH глицерин образует много водородных связей и между своими молекулами, и с водой и смешивается с водой в любых соотношениях; этим же объясняются его высокие температура кипения и вязкость.",
         "ar": "I صحيحة: في الجزيء ثلاث مجموعات OH، فهو كحول ثلاثي الهيدروكسيل. II صحيحة: كل من كربوني CH2 الطرفيين مرتبط بذرة كربون واحدة فقط (أولي)، وكربون CH الأوسط مرتبط بذرتي كربون (ثانوي). III خاطئة: بفضل مجموعات OH الثلاث يكوّن الغليسرين روابط هيدروجينية كثيرة بين جزيئاته ومع الماء، ويمتزج بالماء بأي نسبة؛ وهذا يفسر أيضًا ارتفاع درجة غليانه ولزوجته.",
         "zh": "I 正确：分子中有三个 OH，是三元醇。II 正确：两端的 CH2 碳各只与一个碳相连（伯碳），中间的 CH 碳与两个碳相连（仲碳）。III 错误：甘油的三个 OH 使其分子之间以及与水之间都能形成大量氢键，能与水以任意比例互溶，这也是其沸点高、黏度大的原因。",
-        "ku": "I rast e: di molekulê de sê komên OH hene, loma alkoleke sê-hîdroksîlî ye. II rast e: her yek ji karbonên CH2 yên dawî tenê bi karbonekê ve girêdayî ye (seretayî), karbona CH ya navîn bi du karbonan ve girêdayî ye (duyemîn). III şaş e: bi saya sê komên OH glîserîn hem bi molekulên xwe hem jî bi avê re gelek girêdanên hîdrojenê çêdike û bi her rêjeyê bi avê re tevlî dibe; xala kelînê û vîskozîteya wê ya bilind jî ji vê ye."
+        "ku": "I rast e: di molekulê de sê komên OH hene, loma alkoleke sê-hîdroksîlî ye. II rast e: her yek ji karbonên CH2 yên li dawiyê tenê bi karbonekê ve girêdayî ye (seretayî), karbona CH ya navîn bi du karbonan ve girêdayî ye (duyemîn). III şaş e: bi saya sê komên OH glîserîn hem bi molekulên xwe hem jî bi avê re gelek girêdanên hîdrojenê çêdike û bi her rêjeyê bi avê re tevlihev dibe; xala kelînê û vîskozîteya wê ya bilind jî ji vê yekê ye."
       }
     },
     {
@@ -1901,7 +1901,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "12,8 г карбида кальция (CaC2) полностью реагируют с избытком воды. Какое наименьшее количество H2 (в моль) нужно, чтобы на никелевом катализаторе превратить весь образовавшийся ацетилен в этан (C2H6)? (C: 12, Ca: 40)",
         "ar": "يتفاعل 12.8 g من كربيد الكالسيوم (CaC2) تفاعلًا تامًا مع كمية وافرة من الماء. ما أقل عدد مولات من H2 يلزم لتحويل كل الأسيتيلين الناتج إلى إيثان (C2H6) بوجود حفاز Ni؟ (C: 12، Ca: 40)",
         "zh": "12.8 g 碳化钙(CaC2)与足量水完全反应。要在 Ni 催化下把生成的乙炔全部转化为乙烷(C2H6)，至少需要多少摩尔 H2？(C = 12，Ca = 40)",
-        "ku": "12,8 g karbîda kalsiyûmê (CaC2) bi têra avê re bi temamî reaksiyonê dike. Ji bo ku hemû gaza asetîlenê ya çêbûyî bi katalîzora Ni bibe etan (C2H6), herî kêm çend mol H2 pêwîst e? (C: 12, Ca: 40)"
+        "ku": "12,8 g karbîda kalsiyûmê (CaC2) bi têra avê re bi tevahî dikeve reaksiyonê. Ji bo ku hemû gaza asetîlenê ya çêbûyî bi katalîzora Ni vediguhere etanê (C2H6), herî kêm çend mol H2 hewce ye? (C: 12, Ca: 40)"
       },
       "options": [
         {
@@ -1964,7 +1964,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Молярная масса CaC2 равна 40 + 2·12 = 64 г/моль, n(CaC2) = 12,8 / 64 = 0,2 моль. По уравнению CaC2 + 2H2O → C2H2 + Ca(OH)2 образуется 0,2 моль C2H2. Тройная связь содержит две π-связи, поэтому для насыщения до этана на 1 моль C2H2 нужно 2 моль H2: C2H2 + 2H2 → C2H6. Требуется H2 = 0,2 × 2 = 0,4 моль. Если присоединить только 1 моль H2 и остановиться на этене, получится 0,2; если принять 2 моль воды за 2 моль ацетилена — 0,8.",
         "ar": "الكتلة المولية لـ CaC2 هي 40 + 2·12 = 64 g/mol، إذن n(CaC2) = 12.8 / 64 = 0.2 mol. ووفق CaC2 + 2H2O → C2H2 + Ca(OH)2 يتكوّن 0.2 mol من C2H2. تحتوي الرابطة الثلاثية على رابطتي باي، لذا يلزم 2 mol من H2 لكل 1 mol من C2H2 لإشباعه حتى الإيثان: C2H2 + 2H2 → C2H6. الـ H2 اللازم = 0.2 × 2 = 0.4 mol. إضافة مول واحد من H2 والتوقف عند الإيثين يعطي 0.2، واعتبار مولي الماء مولين من الأسيتيلين يعطي 0.8.",
         "zh": "CaC2 的摩尔质量为 40 + 2·12 = 64 g/mol，n(CaC2) = 12.8 / 64 = 0.2 mol。由 CaC2 + 2H2O → C2H2 + Ca(OH)2，生成 0.2 mol C2H2。三键含两个π键，完全加氢生成乙烷时每摩尔 C2H2 需 2 mol H2：C2H2 + 2H2 → C2H6。所需 H2 = 0.2 × 2 = 0.4 mol。只加 1 mol H2 停在乙烯得 0.2；把方程式中的 2 mol 水当作 2 mol 乙炔得 0.8。",
-        "ku": "Girseya molar a CaC2 40 + 2·12 = 64 g/mol e, loma n(CaC2) = 12,8 / 64 = 0,2 mol. Li gorî CaC2 + 2H2O → C2H2 + Ca(OH)2, 0,2 mol C2H2 çêdibe. Girêdana sêalî du girêdanên pi dihewîne; ji bo têrkirina heta etanê ji her mol C2H2 re 2 mol H2 lê zêde dibe: C2H2 + 2H2 → C2H6. H2 ya pêwîst = 0,2 × 2 = 0,4 mol. Tenê 1 mol H2 lê zêdekirin û li etenê sekinîn 0,2; hesibandina 2 mol avê wek 2 mol asetîlen 0,8 dide."
+        "ku": "Girseya molî ya CaC2 40 + 2·12 = 64 g/mol e, loma n(CaC2) = 12,8 / 64 = 0,2 mol. Li gorî CaC2 + 2H2O → C2H2 + Ca(OH)2, 0,2 mol C2H2 çêdibe. Ji ber ku girêdana sêcarî du girêdanên pî dihewîne, ji bo têrkirina wê heta etanê li her mol C2H2 2 mol H2 tê zêdekirin: C2H2 + 2H2 → C2H6. H2 ya hewce = 0,2 × 2 = 0,4 mol. Zêdekirina tenê 1 mol H2 û rawestîna li etenê 0,2; girtina 2 mol ava di reaksiyonê de wek 2 mol asetîlen 0,8 dide."
       }
     },
     {
@@ -1977,7 +1977,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "При присоединении HBr к какому из следующих алкенов образуется только одно вещество (один структурный изомер) независимо от направления присоединения?",
         "ar": "عند إضافة HBr إلى أيّ الألكينات الآتية يتكوّن ناتج بنائي واحد فقط بغض النظر عن اتجاه الإضافة؟",
         "zh": "HBr 与下列哪种烯烃加成时，无论加成方向如何都只生成一种结构的产物？",
-        "ku": "Dema HBr li kîjan ji van alkenan zêde dibe, bêyî ku aliyê lêzêdekirinê girîng be tenê berhemeke avahiyî ya yekane çêdibe?"
+        "ku": "Dema HBr li kîjan ji van alkenan tê zêdekirin, aliyê lêzêdekirinê çi dibe bila bibe, tenê yek îzomera avahîsal (heman hilber) çêdibe?"
       },
       "options": [
         {
@@ -2040,7 +2040,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Чтобы образовался один продукт, алкен должен быть симметричен относительно двойной связи: какой бы атом углерода ни получил H, образуется одна и та же молекула. В бутене-2 (CH3-CH=CH-CH3) оба атома C двойной связи несут по одному H и одному CH3; продукт всегда 2-бромбутан. Пропен, бутен-1, 2-метилпропен и 2-метилбутен-2 несимметричны: с HBr возможны два разных структурных продукта, и основной определяется правилом Марковникова.",
         "ar": "لكي يتكوّن ناتج واحد يجب أن يكون الألكين متماثلًا حول الرابطة الثنائية، فيتكوّن الجزيء نفسه أيًّا كان الكربون الذي ترتبط به H. في 2-بيوتين (CH3-CH=CH-CH3) يحمل كل من كربوني الرابطة الثنائية ذرة H ومجموعة CH3؛ فالناتج دائمًا 2-برومو بيوتان. أما البروبين و1-بيوتين و2-ميثيل بروبين و2-ميثيل-2-بيوتين فغير متماثلة: يمكن أن يتكوّن ناتجان بنائيان مختلفان مع HBr، وتحدد قاعدة ماركوفنيكوف الناتج الرئيسي.",
         "zh": "要只生成一种产物，烯烃必须关于双键对称，无论 H 加到哪个双键碳上都得到同一分子。2-丁烯(CH3-CH=CH-CH3)双键两端的碳各连一个 H 和一个 CH3，产物总是 2-溴丁烷。丙烯、1-丁烯、2-甲基丙烯和 2-甲基-2-丁烯都不对称，与 HBr 加成可能生成两种不同结构的产物，主产物由马氏规则决定。",
-        "ku": "Ji bo ku tenê berhemek çêbibe divê alken li gorî girêdana dualî sîmetrîk be, da ku H bi kîjan karbonê ve girê bibe jî heman molekul derkeve. Di 2-bûtenê (CH3-CH=CH-CH3) de her du karbonên girêdana dualî yek H û yek CH3 hildigirin; berhem her tim 2-bromobûtan e. Propen, 1-bûten, 2-metîlpropen û 2-metîl-2-bûten nesîmetrîk in: bi HBr re du berhemên avahiyî yên cuda mimkun in û qaîdeya Markovnikov diyar dike ka kîjan berhema sereke ye."
+        "ku": "Ji bo ku tenê yek hilber çêbibe, divê alken li gorî girêdana ducarî sîmetrîk be; H bi kîjan karbona girêdana ducarî ve girê bibe jî, divê heman molekul derkeve. Di 2-bûtenê (CH3-CH=CH-CH3) de her du karbonên girêdana ducarî yek H û yek CH3 hildigirin; hilber her tim 2-bromobûtan e. Propen, 1-bûten, 2-metîlpropen û 2-metîl-2-bûten nesîmetrîk in: dema HBr lê zêde dibe du hilberên avahîsal ên cuda mimkun in û qaîdeya Markovnikov diyar dike ka kîjan dê bibe hilbera sereke."
       }
     },
     {
@@ -2053,7 +2053,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "В двух склянках без этикеток находятся водный раствор уксусной кислоты и водный раствор этанола. Какие из следующих действий позволяют различить эти растворы?\nI. Добавить раствор гидрокарбоната натрия (NaHCO3)\nII. Добавить металлический натрий\nIII. Опустить синюю лакмусовую бумажку",
         "ar": "في قارورتين بلا ملصقات محلول مائي لحمض الأسيتيك ومحلول مائي للإيثانول. أيّ العمليات الآتية يمكن استخدامها للتمييز بين المحلولين؟\nI. إضافة محلول بيكربونات الصوديوم (NaHCO3)\nII. إضافة فلز الصوديوم\nIII. غمس ورقة تبّاع الشمس الزرقاء",
         "zh": "两个无标签的瓶中分别装有乙酸水溶液和乙醇水溶液。下列哪些操作可用来区分这两种溶液？\nI. 加入碳酸氢钠(NaHCO3)溶液\nII. 加入金属钠\nIII. 浸入蓝色石蕊试纸",
-        "ku": "Di du şûşeyên bêetîket de, di yekê de çareseriya avî ya asîda asetîk, di ya din de çareseriya avî ya etanolê heye. Kîjan ji van karan dikarin ji bo ji hev cudakirina van her du çareseriyan bêne bikaranîn?\nI. Lêzêdekirina çareseriya sodyûm bîkarbonatê (NaHCO3)\nII. Lêzêdekirina metala sodyûmê\nIII. Têxistina kaxeza turnusolê ya şîn"
+        "ku": "Di yek ji du şûşeyên bêetîket de çareseriya avî ya asîda asetîk, di ya din de çareseriya avî ya etanolê heye.\nI. Lêzêdekirina çareseriya sodyûm bîkarbonatê (NaHCO3)\nII. Lêzêdekirina metala sodyûmê\nIII. Têxistina kaxeza turnusolê ya şîn\nKîjan ji van karan dikarin ji bo ji hev cudakirina van her du çareseriyan werin bikaranîn?"
       },
       "options": [
         {
@@ -2116,7 +2116,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "I подходит: уксусная кислота с NaHCO3 выделяет CO2 (CH3-COOH + NaHCO3 → CH3-COONa + H2O + CO2), этанол не проявляет кислотных свойств, газа нет. II не подходит: натрий реагирует и с уксусной кислотой, и с этанолом, и с водой растворов с выделением H2; в обеих склянках наблюдается одно и то же. III подходит: раствор уксусной кислоты окрашивает синий лакмус в красный цвет, а нейтральный раствор этанола цвет не меняет.",
         "ar": "I يمكن استخدامها: يُطلق حمض الأسيتيك غاز CO2 مع NaHCO3 (CH3-COOH + NaHCO3 → CH3-COONa + H2O + CO2)، أما الإيثانول فليس حمضيًا ولا يُلاحظ خروج غاز. II لا يمكن استخدامها: يتفاعل فلز الصوديوم مع حمض الأسيتيك ومع الإيثانول وأيضًا مع ماء المحلولين فيُطلق غاز H2، فتُلاحظ النتيجة نفسها في القارورتين. III يمكن استخدامها: يحوّل محلول حمض الأسيتيك ورقة تبّاع الشمس الزرقاء إلى الأحمر، ومحلول الإيثانول متعادل فلا يتغير اللون.",
         "zh": "I 可以：乙酸与 NaHCO3 反应放出 CO2(CH3-COOH + NaHCO3 → CH3-COONa + H2O + CO2)，乙醇不显酸性，无气体产生。II 不可以：金属钠与乙酸、乙醇以及溶液中的水都能反应放出 H2，两瓶现象相同。III 可以：乙酸溶液使蓝色石蕊试纸变红，乙醇溶液呈中性，颜色不变。",
-        "ku": "I dikare bê bikaranîn: asîda asetîk bi NaHCO3 re gaza CO2 derdixe (CH3-COOH + NaHCO3 → CH3-COONa + H2O + CO2), etanol ne asîdî ye û gaz dernakeve. II nikare bê bikaranîn: metala sodyûmê hem bi asîda asetîk, hem bi etanolê û hem jî bi ava çareseriyan re reaksiyonê dike û gaza H2 derdixe; di her du şûşeyan de heman tişt tê dîtin. III dikare bê bikaranîn: çareseriya asîda asetîk turnusola şîn sor dike, çareseriya etanolê neutral e û reng naguhere."
+        "ku": "I dikare were bikaranîn: asîda asetîk bi NaHCO3 re gaza CO2 derdixe (CH3-COOH + NaHCO3 → CH3-COONa + H2O + CO2), lê ji ber ku etanol ne asîdî ye derketina gazê nayê dîtin. II nikare were bikaranîn: metala sodyûmê hem bi asîda asetîk, hem bi etanolê û hem jî bi ava di çareseriyan de dikeve reaksiyonê û gaza H2 derdixe; di her du şûşeyan de heman tişt tê dîtin. III dikare were bikaranîn: çareseriya asîda asetîk turnusola şîn sor dike, çareseriya etanolê neutral e û reng naguhere."
       }
     },
     {
@@ -2129,7 +2129,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "При окислении спирта X с неразветвлённой цепью и формулой C4H10O подкисленным раствором KMnO4 образуется вещество Y с формулой C4H8O. Y не даёт реакции серебряного зеркала с реактивом Толленса. Что такое X и Y?",
         "ar": "عند أكسدة كحول ذي سلسلة مستقيمة X صيغته الجزيئية C4H10O بمحلول KMnO4 المحمّض يتكوّن المركب Y الذي صيغته الجزيئية C4H8O. لا يكوّن Y مرآة فضية مع كاشف تولنز. ما X وY؟",
         "zh": "分子式为 C4H10O 的直链醇 X 被酸性 KMnO4 氧化，生成分子式为 C4H8O 的化合物 Y。Y 不能与托伦试剂发生银镜反应。X 和 Y 分别是什么？",
-        "ku": "Dema alkoleke bi zincîra rast X ku formula wê ya molekulî C4H10O e bi KMnO4 ya asîdî tê oksîdkirin, pêkhateya Y ku formula wê C4H8O ye çêdibe. Y bi reaktîfa Tollens re neynika zîv çênake. Li gorî vê, X û Y kîjan in?"
+        "ku": "Dema alkoleke bi zincîra rast (X) ku formula wê ya molekulî C4H10O ye bi KMnO4 ya asîdî tê oksîdekirin, pêkhateya Y ku formula wê ya molekulî C4H8O ye çêdibe. Y bi reaktîfa Tollens re neynika zîv çênake. Li gorî vê, X û Y kîjan in?"
       },
       "options": [
         {
@@ -2192,7 +2192,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Так как формула Y — C4H8O, от X отщепились два атома H; Y — либо альдегид (бутаналь), либо кетон (бутанон). Реакцию Толленса Y не даёт, значит, это не альдегид, а кетон бутанон (CH3-CO-CH2-CH3). Кетоны получаются окислением вторичных спиртов; вторичный спирт C4 с неразветвлённой цепью — бутанол-2 (CH3-CH(OH)-CH2-CH3). Бутанол-1 — первичный спирт, он дал бы бутаналь, который даёт реакцию Толленса. Формула бутановой кислоты — C4H8O2. 2-Метилпропанол-2 разветвлён и третичен, в мягких условиях не окисляется; из бутанола-2 альдегид не образуется.",
         "ar": "بما أن صيغة Y هي C4H8O فقد نُزعت ذرتا H من X؛ وY إما ألدهيد (بيوتانال) أو كيتون (بيوتانون). لا يعطي Y اختبار تولنز، فهو ليس ألدهيدًا بل الكيتون بيوتانون (CH3-CO-CH2-CH3). تنتج الكيتونات من أكسدة الكحولات الثانوية، والكحول الثانوي ذو السلسلة المستقيمة بأربع ذرات كربون هو 2-بيوتانول (CH3-CH(OH)-CH2-CH3). أما 1-بيوتانول فكحول أولي يعطي البيوتانال الذي يعطي اختبار تولنز. صيغة حمض البيوتانويك C4H8O2. و2-ميثيل-2-بروبانول متفرع وثالثي لا يتأكسد في الظروف المعتدلة، ولا يعطي 2-بيوتانول ألدهيدًا.",
         "zh": "Y 的分子式为 C4H8O，说明 X 失去了两个 H；Y 是醛（丁醛）或酮（丁酮）。Y 不发生银镜反应，不是醛，而是丁酮(CH3-CO-CH2-CH3)。酮由仲醇氧化得到，直链四碳仲醇是 2-丁醇(CH3-CH(OH)-CH2-CH3)。1-丁醇是伯醇，会生成能发生银镜反应的丁醛。丁酸的分子式是 C4H8O2。2-甲基-2-丙醇既有支链又是叔醇，温和条件下不被氧化；2-丁醇也不能生成醛。",
-        "ku": "Ji ber ku formula Y C4H8O ye, du atomên H ji X hatine rakirin; Y an aldehîd (bûtanal) an jî keton (bûtanon) e. Y testa Tollens nade, loma ne aldehîd e, ketona bûtanon e (CH3-CO-CH2-CH3). Keton ji oksîdasyona alkola duyemîn çêdibe; alkola duyemîn a C4 ya bi zincîra rast 2-bûtanol e (CH3-CH(OH)-CH2-CH3). 1-bûtanol alkoleke seretayî ye û dê bûtanal bida, ku testa Tollens dide. Formula asîda bûtanoîk C4H8O2 ye. 2-metîl-2-propanol hem şaxdar hem jî sêyemîn e û di şertên nerm de oksîd nabe; ji 2-bûtanolê jî aldehîd çênabe."
+        "ku": "Ji ber ku formula Y C4H8O ye, du atomên H ji X hatine rakirin; Y an aldehîd (bûtanal) an jî keton (bûtanon) e. Ji ber ku testa Tollens nade, Y nikare aldehîd be, keton e: bûtanon (CH3-CO-CH2-CH3). Keton ji oksîdasyona alkola duyemîn çêdibe; alkola duyemîn a C4 ya bi zincîra rast 2-bûtanol e (CH3-CH(OH)-CH2-CH3). 1-bûtanol alkoleke seretayî ye û dê bûtanal bida; bûtanal testa Tollens dide. Formula asîda bûtanoîk C4H8O2 ye. 2-metîl-2-propanol hem şaxdar hem jî sêyemîn e û di şertên nerm de oksîde nabe; ji 2-bûtanolê jî aldehîd çênabe."
       }
     },
     {
@@ -2205,7 +2205,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "I. CH2=CH2 + H2O → CH3-CH2-OH (кислотный катализ)\nII. CH3-CH2-OH → CH2=CH2 + H2O (концентрированная H2SO4, около 170 °C)\nIII. CH4 + Cl2 → CH3Cl + HCl (УФ-свет)\nК каким типам относятся эти реакции (по порядку)?",
         "ar": "I. CH2=CH2 + H2O → CH3-CH2-OH (بوجود حمض حفاز)\nII. CH3-CH2-OH → CH2=CH2 + H2O (H2SO4 مركّز، نحو 170 °C)\nIII. CH4 + Cl2 → CH3Cl + HCl (ضوء فوق بنفسجي)\nما أنواع هذه التفاعلات على الترتيب؟",
         "zh": "I. CH2=CH2 + H2O → CH3-CH2-OH（酸催化）\nII. CH3-CH2-OH → CH2=CH2 + H2O(浓 H2SO4，约 170 °C)\nIII. CH4 + Cl2 → CH3Cl + HCl（紫外光）\n以上反应的类型依次是下列哪一项？",
-        "ku": "I. CH2=CH2 + H2O → CH3-CH2-OH (bi katalîzora asîdê)\nII. CH3-CH2-OH → CH2=CH2 + H2O (H2SO4 ya tîr, nêzîkî 170 °C)\nIII. CH4 + Cl2 → CH3Cl + HCl (ronahiya UV)\nCureyên van reaksiyonan bi rêzê kîjan in?"
+        "ku": "I. CH2=CH2 + H2O → CH3-CH2-OH (bi katalîzora asîdê)\nII. CH3-CH2-OH → CH2=CH2 + H2O (H2SO4 ya tîr, nêzîkî 170 °C)\nIII. CH4 + Cl2 → CH3Cl + HCl (ronahiya UV)\nCureyên reaksiyonên li jor bi rêzê kîjan in?"
       },
       "options": [
         {
@@ -2216,7 +2216,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Присоединение, отщепление, замещение",
           "ar": "إضافة، حذف، استبدال",
           "zh": "加成、消去、取代",
-          "ku": "Lêzêdekirin, veqetandin, cihguhertin"
+          "ku": "Lêzêdekirin, elîmînasyon, cihguhertin"
         },
         {
           "tr": "Katılma, kondenzasyon, yer değiştirme",
@@ -2236,7 +2236,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Отщепление, присоединение, замещение",
           "ar": "حذف، إضافة، استبدال",
           "zh": "消去、加成、取代",
-          "ku": "Veqetandin, lêzêdekirin, cihguhertin"
+          "ku": "Elîmînasyon, lêzêdekirin, cihguhertin"
         },
         {
           "tr": "Katılma, yer değiştirme, ayrılma",
@@ -2246,7 +2246,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Присоединение, замещение, отщепление",
           "ar": "إضافة، استبدال، حذف",
           "zh": "加成、取代、消去",
-          "ku": "Lêzêdekirin, cihguhertin, veqetandin"
+          "ku": "Lêzêdekirin, cihguhertin, elîmînasyon"
         },
         {
           "tr": "Yer değiştirme, ayrılma, katılma",
@@ -2256,7 +2256,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Замещение, отщепление, присоединение",
           "ar": "استبدال، حذف، إضافة",
           "zh": "取代、消去、加成",
-          "ku": "Cihguhertin, veqetandin, lêzêdekirin"
+          "ku": "Cihguhertin, elîmînasyon, lêzêdekirin"
         }
       ],
       "correctIndex": 0,
@@ -2268,7 +2268,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "В I разрывается π-связь этена, H и OH присоединяются к атомам углерода двойной связи: присоединение (гидратация). Во II от двух соседних атомов углерода этанола отщепляются H и OH в виде воды и образуется двойная связь: отщепление (элиминирование). В III атом Cl замещает один атом H метана: замещение. Поскольку во II выделяется вода, эту реакцию можно принять за конденсацию; но при конденсации две молекулы соединяются с выделением малой молекулы, а здесь одна молекула теряет воду и образует двойную связь.",
         "ar": "في I تنفتح رابطة باي في الإيثين وترتبط H وOH بكربوني الرابطة الثنائية: إضافة (إماهة). في II تُنزع H وOH من ذرتي كربون متجاورتين في الإيثانول على هيئة ماء وتتكوّن رابطة ثنائية: حذف. في III تحل ذرة Cl محل ذرة H في الميثان: استبدال. ولأن الماء يتحرر في II قد يُظن أنه تكاثف؛ لكن في التكاثف يتحد جزيئان مع خروج جزيء صغير، أما هنا فيفقد جزيء واحد الماء وتتكوّن رابطة ثنائية.",
         "zh": "I 中乙烯的π键打开，H 和 OH 分别连到双键碳上：加成（水合）。II 中乙醇相邻两个碳上的 H 和 OH 以水的形式脱去，生成双键：消去。III 中 Cl 原子取代甲烷中的一个 H 原子：取代。II 中放出水，容易被误认为缩合；但缩合是两个分子结合并脱去小分子，而这里是一个分子脱水形成双键。",
-        "ku": "Di I de girêdana pi ya etenê vedibe, H û OH bi karbonên girêdana dualî ve girê dibin: lêzêdekirin (hîdratasyon). Di II de ji du karbonên cîran ên etanolê H û OH wek av vediqetin û girêdana dualî çêdibe: veqetandin (elîmînasyon). Di III de atoma Cl cihê atomeke H ya metanê digire: cihguhertin. Ji ber ku di II de av derdikeve, mirov dikare wê kondensasyon bihesibîne; lê di kondensasyonê de du molekul bi derxistina molekuleke biçûk bi hev ve girê dibin, li vir jî ji molekulek tenê av vediqete û girêdana dualî çêdibe."
+        "ku": "Di I de girêdana pî ya etenê vedibe û H û OH bi karbonên girêdana ducarî ve girê dibin: lêzêdekirin (hîdratasyon). Di II de ji du karbonên cîran ên etanolê H û OH wek av vediqetin û girêdana ducarî çêdibe: elîmînasyon. Di III de atoma Cl cihê atomeke H ya metanê digire: cihguhertin (sûbstîtûsyon). Ji ber ku di II de av derdikeve, dibe ku wek kondensasyon were hesibandin; lê di kondensasyonê de du molekul bi derxistina molekuleke piçûk bi hev ve girê dibin, li vir jî ji molekuleke tenê av vediqete û girêdana ducarî çêdibe."
       }
     }
   ]

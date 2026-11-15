@@ -20,5 +20,5 @@ export const CURRICULUM_STRINGS: Record<LanguageCode, CurriculumLocale> = {
   ru: { goalEyebrow: 'Цель на сегодня', goalUnit: 'вопросов', solveCta: 'Решать', unitsHeading: 'Темы', stage1: 'ЭТАП 1', stage2: 'ЭТАП 2', unitsCount: (n) => `Тем: ${n}`, progression: 'Путь от TYT к AYT', noResults: 'Ничего не найдено' },
   ar: { goalEyebrow: 'هدف اليوم', goalUnit: 'سؤال', solveCta: 'حل الأسئلة', unitsHeading: 'الوحدات', stage1: 'المرحلة 1', stage2: 'المرحلة 2', unitsCount: (n) => `${n} وحدة`, progression: 'التقدم من TYT إلى AYT', noResults: 'لا توجد نتائج' },
   zh: { goalEyebrow: '今日目标', goalUnit: '题', solveCta: '做题', unitsHeading: '单元', stage1: '第 1 阶段', stage2: '第 2 阶段', unitsCount: (n) => `${n} 个单元`, progression: '从 TYT 到 AYT 循序渐进', noResults: '未找到结果' },
-  ku: { goalEyebrow: 'Armanca îro', goalUnit: 'pirs', solveCta: 'Pirs çareser bike', unitsHeading: 'Yekeyî', stage1: 'ÇEND 1', stage2: 'ÇEND 2', unitsCount: (n) => `${n} yekeyî`, progression: 'Pêşketina ji TYT bo AYT', noResults: 'Encam nehat dîtin' },
+  ku: { goalEyebrow: 'Armanca îro', goalUnit: 'pirs', solveCta: 'Çareser bike', unitsHeading: 'Yekîne', stage1: 'QONAXA 1', stage2: 'QONAXA 2', unitsCount: (n) => `${n} yekîne`, progression: 'Gav bi gav ji TYT ber bi AYT ve', noResults: 'Encam nehat dîtin' },
 };

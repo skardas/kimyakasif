@@ -24,7 +24,7 @@ export const unit12: ChemistryUnitSeedData = {
     "ru": "Законы Бойля — Мариотта, Шарля, Гей-Люссака и уравнение состояния идеального газа",
     "ar": "قوانين بويل وشارل وجاي لوساك ومعادلة الغاز المثالي",
     "zh": "波义耳、查理、盖-吕萨克定律与理想气体状态方程",
-    "ku": "Boyle, Charles, Gay-Lussac û Wekheviya Gaza Îdeal"
+    "ku": "Boyle, Charles, Gay-Lussac û Hevkêşeya Gaza Îdeal"
   },
   "facts": [
     {
@@ -37,7 +37,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Уравнение состояния идеального газа: PV = nRT (P*V = n*R*T). (P — в атм, V — в литрах, n — в молях, T — в кельвинах; R = 0,082 л·атм/(моль·K) или 22,4/273).",
         "ar": "معادلة الغاز المثالي: PV = nRT (P*V = n*R*T). (P: atm، V: L، n: mol، T: K، R: 0.082 L·atm/(mol·K) أو 22.4/273).",
         "zh": "理想气体状态方程：PV = nRT，即 P*V = n*R*T；其中 P 的单位为 atm，V 为升，n 为 mol，T 为开尔文，R = 0.082 L·atm/(mol·K) 或 22.4/273。",
-        "ku": "Wekheviya Gaza Îdeal: PV = nRT (P*V = n*R*T). (P: atm, V: lître, n: mol, T: Kelvin, R: 0.082 L·atm/(mol·K) an 22.4/273)."
+        "ku": "Hevkêşeya gaza îdeal: PV = nRT (P*V = n*R*T). (P: atm, V: lître, n: mol, T: Kelvin, R: 0,082 L·atm/(mol·K) an 22,4/273)."
       },
       "trap": {
         "tr": "İdeal gaz denkleminde sıcaklık Celsius (°C) olarak kullanılır.",
@@ -47,7 +47,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "В уравнение состояния идеального газа температуру подставляют в градусах Цельсия (°C).",
         "ar": "تُستخدم درجة الحرارة في معادلة الغاز المثالي بالسلسيوس (°C).",
         "zh": "理想气体状态方程中温度用摄氏度(°C)表示。",
-        "ku": "Di hevkêşeya gazê ya îdeal de, germahî bi Celsius (°C) tê bikaranîn."
+        "ku": "Di hevkêşeya gaza îdeal de germahî bi Celsius (°C) tê bikaranîn."
       },
       "whyTrapIsFalse": {
         "tr": "Gaz yasalarında hacim ve basınç mutlak sıcaklıkla orantılıdır; °C ölçeğinin sıfırı keyfî seçildiği için (0 °C'de gazın hacmi sıfır değildir) denklemde mutlaka Kelvin kullanılır.",
@@ -57,7 +57,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "В газовых законах объём и давление пропорциональны абсолютной температуре; ноль шкалы Цельсия выбран условно (при 0 °C объём газа не равен нулю), поэтому в уравнение обязательно подставляют температуру в кельвинах.",
         "ar": "في قوانين الغازات يتناسب الحجم والضغط مع درجة الحرارة المطلقة؛ وصفر مقياس السلسيوس اختياري (حجم الغاز عند 0 °C ليس صفرًا)، لذلك يجب استخدام الكلفن في المعادلة.",
         "zh": "在气体定律中，体积和压强与热力学温度成正比；摄氏温标的零点是人为规定的(0 °C 时气体体积并不为零)，所以方程中必须使用开尔文温度。",
-        "ku": "Di zagonên gazê de qebare û zext bi germahiya mutleq re rêjeyî ne; sifira pîvana °C bi dilxwazî hatiye hilbijartin (di 0 °C de qebareya gazê ne sifir e), ji ber vê yekê di hevkêşeyê de divê Kelvin were bikaranîn."
+        "ku": "Di zagonên gazê de qebare û zext bi germahiya mutleq re rêjeyî ne; ji ber ku sifira pîvana °C bi dilxwazî hatiye hilbijartin (di 0 °C de qebareya gazê ne sifir e), divê di hevkêşeyê de teqez Kelvin were bikaranîn."
       }
     },
     {
@@ -70,7 +70,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Температуру по шкале Кельвина находят по формуле T(K) = t(°C) + 273,15; абсолютная температура не может быть ниже нуля.",
         "ar": "تُحسب درجة الحرارة بالكلفن من العلاقة T(K) = t(°C) + 273.15، ولا يمكن أن تنخفض درجة الحرارة المطلقة إلى ما دون الصفر.",
         "zh": "开尔文温度由 T(K) = t(°C) + 273.15 求得；热力学温度不可能低于零。",
-        "ku": "Germahiya Kelvin bi formula T(K) = t(°C) + 273.15 tê dîtin; Germahiya mutleq nikare bikeve bin sifirê."
+        "ku": "Germahiya Kelvin bi formula T(K) = t(°C) + 273,15 tê dîtin; germahiya mutleq nikare dakeve binê sifirê."
       },
       "trap": {
         "tr": "Sıcaklık 10 °C'den 20 °C'ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
@@ -80,7 +80,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "При повышении температуры с 10 °C до 20 °C абсолютная температура газа увеличивается вдвое.",
         "ar": "عندما ترتفع درجة الحرارة من 10 °C إلى 20 °C تتضاعف درجة الحرارة المطلقة للغاز.",
         "zh": "温度从 10 °C 升高到 20 °C 时，气体的热力学温度加倍。",
-        "ku": "Dema ku germahî ji 10 °C derkeve 20 °C, germahiya mutleq ya gazê du qat dibe."
+        "ku": "Dema germahî ji 10 °C derdikeve 20 °C, germahiya mutleq a gazê du qat dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Mutlak sıcaklık °C değil Kelvin değeridir: 10 °C = 283 K, 20 °C = 293 K olduğundan artış yalnızca yaklaşık %3,5'tir; °C değerinin iki katına çıkması Kelvin değerinin iki katına çıktığı anlamına gelmez.",
@@ -90,7 +90,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Абсолютная температура — это значение в кельвинах, а не в °C: 10 °C = 283 K, 20 °C = 293 K, то есть она возрастает лишь примерно на 3,5 %; удвоение значения в °C не означает удвоения температуры в кельвинах.",
         "ar": "درجة الحرارة المطلقة هي القيمة بالكلفن لا بالسلسيوس: 10 °C = 283 K و20 °C = 293 K، أي أن الزيادة نحو 3.5% فقط؛ ومضاعفة القيمة بالسلسيوس لا تضاعف القيمة بالكلفن.",
         "zh": "热力学温度是开尔文值而不是摄氏值：10 °C = 283 K，20 °C = 293 K，只升高了约 3.5%；摄氏数值翻倍并不意味着开尔文温度翻倍。",
-        "ku": "Germahiya mutleq nirxa Kelvin e, ne ya °C: 10 °C = 283 K û 20 °C = 293 K, ango zêdebûn tenê nêzî %3.5 e; ducarbûna nirxa °C nayê wateya ducarbûna nirxa Kelvin."
+        "ku": "Germahiya mutleq nirxa Kelvin e, ne ya °C: 10 °C = 283 K û 20 °C = 293 K, ango zêdebûn tenê nêzî %3,5 e; du qat bûna nirxa °C nayê wê wateyê ku nirxa Kelvin du qat dibe."
       }
     },
     {
@@ -103,7 +103,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Бойля — Мариотта: при постоянных температуре и количестве вещества давление и объём газа обратно пропорциональны (P1V1 = P2V2).",
         "ar": "قانون بويل: عند ثبات درجة الحرارة وعدد المولات يتناسب الضغط والحجم تناسبًا عكسيًا (P1V1 = P2V2).",
         "zh": "波义耳定律：在温度和物质的量不变时，压强与体积成反比(P1V1 = P2V2)。",
-        "ku": "Zagona Boyle: Di germahîya domdar û hejmara molan de, zext û qebare berovajî hev in (P1V1 = P2V2)."
+        "ku": "Zagona Boyle: Di germahî û hejmara molan a sabît de, zext û qebare berevajî rêjeyî ne (P1V1 = P2V2)."
       },
       "trap": {
         "tr": "Sabit sıcaklıkta gazın hacmi sıkıştırılarak yarıya indirilirse basıncı da yarıya iner.",
@@ -113,7 +113,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Если при постоянной температуре сжать газ так, что его объём уменьшится вдвое, давление тоже уменьшится вдвое.",
         "ar": "إذا ضُغط غاز عند درجة حرارة ثابتة حتى انخفض حجمه إلى النصف، انخفض ضغطه أيضًا إلى النصف.",
         "zh": "恒温下把气体压缩使体积减半，其压强也减半。",
-        "ku": "Ger qebareya gazê ya di germahiya sabît de bi pêçandinê nîvî bibe, zexta wê jî nîvî dibe."
+        "ku": "Heke di germahiya sabît de qebareya gazê bi givaştinê nîv bibe, zexta wê jî nîv dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Boyle yasasında basınç ile hacim ters orantılıdır; hacim yarıya inerse basınç yarıya inmez, iki katına çıkar (P1V1 = P2V2).",
@@ -123,7 +123,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "По закону Бойля — Мариотта давление и объём обратно пропорциональны: при уменьшении объёма вдвое давление не уменьшается, а увеличивается вдвое (P1V1 = P2V2).",
         "ar": "في قانون بويل يتناسب الضغط عكسيًا مع الحجم؛ فإذا انخفض الحجم إلى النصف لا ينخفض الضغط إلى النصف بل يتضاعف (P1V1 = P2V2).",
         "zh": "波义耳定律中压强与体积成反比；体积减半时压强不是减半，而是加倍(P1V1 = P2V2)。",
-        "ku": "Di zagona Boyle de zext û qebare berevajî rêjeyî ne; heke qebare nîv bibe, zext nîv nabe, ducar dibe (P1V1 = P2V2)."
+        "ku": "Di zagona Boyle de zext û qebare berevajî rêjeyî ne; heke qebare nîv bibe, zext nîv nabe, du qat dibe (P1V1 = P2V2)."
       }
     },
     {
@@ -136,7 +136,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Шарля: при постоянных давлении и количестве вещества объём газа прямо пропорционален абсолютной температуре (V1/T1 = V2/T2).",
         "ar": "قانون شارل: عند ثبات الضغط وعدد المولات يتناسب الحجم ودرجة الحرارة المطلقة تناسبًا طرديًا (V1/T1 = V2/T2).",
         "zh": "查理定律：在压强和物质的量不变时，体积与热力学温度成正比(V1/T1 = V2/T2)。",
-        "ku": "Zagona Charles: Di zexta domdar û hejmara molan de, qebare û germahiya mutleq rasterast lihevhatî ne (V1/T1 = V2/T2)."
+        "ku": "Zagona Charles: Di zext û hejmara molan a sabît de, qebare û germahiya mutleq rasterast rêjeyî ne (V1/T1 = V2/T2)."
       },
       "trap": {
         "tr": "Sabit basınçta bir gazın sıcaklığı 20 °C'den 40 °C'ye çıkarılırsa hacmi 2 katına çıkar.",
@@ -146,7 +146,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Если при постоянном давлении повысить температуру газа с 20 °C до 40 °C, его объём увеличится вдвое.",
         "ar": "عند ثبات الضغط، إذا ارتفعت درجة حرارة غاز من 20 °C إلى 40 °C يتضاعف حجمه.",
         "zh": "恒压下，气体的温度从 20 °C 升高到 40 °C 时，其体积增大一倍。",
-        "ku": "Di zexta domdar de, dema germahiya gazekê ji 20 °C derkeve 40 °C, qebareya wê du qat dibe."
+        "ku": "Di zexta sabît de, heke germahiya gazekê ji 20 °C derkeve 40 °C, qebareya wê du qat dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Charles yasasındaki doğru orantı Kelvin sıcaklığıyla kurulur: 293 K'den 313 K'ye çıkış hacmi yalnızca 313/293 ≈ 1,07 katına çıkarır; °C değerinin iki katına çıkması hacmi iki katına çıkarmaz.",
@@ -156,7 +156,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Прямая пропорциональность в законе Шарля относится к температуре в кельвинах: при переходе от 293 K к 313 K объём увеличивается лишь в 313/293 ≈ 1,07 раза; удвоение значения в °C не удваивает объём.",
         "ar": "التناسب الطردي في قانون شارل يكون مع درجة الحرارة بالكلفن: الانتقال من 293 K إلى 313 K لا يزيد الحجم إلا بعامل 313/293 ≈ 1.07؛ ومضاعفة القيمة بالسلسيوس لا تضاعف الحجم.",
         "zh": "查理定律中的正比关系针对开尔文温度：从 293 K 升到 313 K，体积只变为原来的 313/293 ≈ 1.07 倍；摄氏数值翻倍并不使体积翻倍。",
-        "ku": "Rêjeya rasterast a zagona Charles bi germahiya Kelvin tê danîn: ji 293 K bo 313 K qebare tenê 313/293 ≈ 1.07 qat dibe; ducarbûna nirxa °C qebareyê ducar nake."
+        "ku": "Rêjeya rasterast a zagona Charles bi germahiya Kelvin tê danîn: derketina ji 293 K bo 313 K qebareyê tenê 313/293 ≈ 1,07 qat dike; du qat bûna nirxa °C qebareyê du qat nake."
       }
     },
     {
@@ -169,7 +169,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Гей-Люссака: при постоянных объёме и количестве вещества давление газа прямо пропорционально абсолютной температуре (P1/T1 = P2/T2).",
         "ar": "قانون جاي لوساك: عند ثبات الحجم وعدد المولات يتناسب الضغط ودرجة الحرارة المطلقة تناسبًا طرديًا (P1/T1 = P2/T2).",
         "zh": "盖-吕萨克定律：在体积和物质的量不变时，压强与热力学温度成正比(P1/T1 = P2/T2)。",
-        "ku": "Zagona Gay-Lussac: Di qebare û hejmara molan a domdar de, zext û germahiya mutleq rasterast lihevhatî ne (P1/T1 = P2/T2)."
+        "ku": "Zagona Gay-Lussac: Di qebare û hejmara molan a sabît de, zext û germahiya mutleq rasterast rêjeyî ne (P1/T1 = P2/T2)."
       },
       "trap": {
         "tr": "Sabit hacimli kapta gaz ısıtılırsa basıncı azalır.",
@@ -179,7 +179,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Если нагревать газ в сосуде постоянного объёма, его давление уменьшается.",
         "ar": "إذا سُخّن غاز في وعاء ثابت الحجم انخفض ضغطه.",
         "zh": "在定容容器中加热气体，其压强会减小。",
-        "ku": "Ger gaz di konteynirek bi qebareya sabit de were germ kirin, zexta wê kêm dibe."
+        "ku": "Heke gaz di firaxeke bi qebareya sabît de were germkirin, zexta wê kêm dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Isınan gazın tanecikleri hızlanır ve çeperlere daha sık ve daha şiddetli çarpar; bu yüzden sabit hacimde basınç mutlak sıcaklıkla doğru orantılı olarak artar, azalmaz.",
@@ -189,7 +189,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "При нагревании частицы газа движутся быстрее и ударяются о стенки чаще и сильнее, поэтому при постоянном объёме давление не падает, а растёт прямо пропорционально абсолютной температуре.",
         "ar": "عند تسخين الغاز تتسارع جسيماته وتصطدم بالجدران بتكرار وشدة أكبر، لذلك يزداد الضغط عند ثبات الحجم طرديًا مع درجة الحرارة المطلقة ولا ينقص.",
         "zh": "气体受热时粒子运动加快，撞击器壁更频繁、更猛烈，因此在体积不变时压强随热力学温度成正比增大，而不是减小。",
-        "ku": "Dema gaz germ dibe tenekên wê bileztir dibin û pirtir û bihêztir li dîwaran dixin; ji ber vê yekê di qebareya domdar de zext bi germahiya mutleq re rasterast zêde dibe, kêm nabe."
+        "ku": "Dema gaz germ dibe perçeyên wê bileztir dibin û pirtir û bihêztir li dîwaran dikevin; ji ber vê yekê di qebareya sabît de zext bi germahiya mutleq re rasterast rêjeyî zêde dibe, kêm nabe."
       }
     },
     {
@@ -202,7 +202,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Авогадро: при постоянных температуре и давлении объём газа прямо пропорционален количеству вещества (V1/n1 = V2/n2).",
         "ar": "قانون أفوجادرو: عند ثبات درجة الحرارة والضغط، يتناسب الحجم وعدد المولات تناسبًا طرديًا (V1/n1 = V2/n2).",
         "zh": "阿伏加德罗定律：在恒温恒压下，体积与物质的量成正比(V1/n1 = V2/n2)。",
-        "ku": "Zagona Avogadro: Di germahî û zexta domdar de, hejmûn û hejmara molan rasterast lihevhatî ne (V1/n1 = V2/n2)."
+        "ku": "Zagona Avogadro: Di germahî û zexta sabît de, qebare û hejmara molan rasterast rêjeyî ne (V1/n1 = V2/n2)."
       },
       "trap": {
         "tr": "Farklı gazların eşit hacimleri daima eşit kütleye sahiptir.",
@@ -212,7 +212,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Равные объёмы разных газов всегда имеют одинаковую массу.",
         "ar": "الأحجام المتساوية من الغازات المختلفة لها دائمًا كتل متساوية.",
         "zh": "相同体积的不同气体总是具有相同的质量。",
-        "ku": "Hecma yeksan a gazên cuda timî xwedî girseya yeksan in."
+        "ku": "Qebareyên wekhev ên gazên cuda her tim xwedî girseya wekhev in."
       },
       "whyTrapIsFalse": {
         "tr": "Avogadro yasasına göre aynı sıcaklık ve basınçta eşit hacimlerde eşit sayıda mol (tanecik) bulunur, eşit kütle değil; mol kütleleri farklı olduğundan örneğin 1 mol H2 2 g, 1 mol O2 ise 32 g gelir.",
@@ -222,7 +222,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "По закону Авогадро в равных объёмах газов при одинаковых температуре и давлении содержится одинаковое число молей (частиц), а не одинаковая масса; молярные массы различны: например, 1 моль H2 имеет массу 2 г, а 1 моль O2 — 32 г.",
         "ar": "وفق قانون أفوجادرو تحتوي الأحجام المتساوية عند نفس درجة الحرارة والضغط على عدد متساوٍ من المولات (الجسيمات) لا على كتل متساوية؛ ولأن الكتل المولية مختلفة فإن 1 mol من H2 كتلته 2 g بينما 1 mol من O2 كتلته 32 g.",
         "zh": "阿伏加德罗定律说的是同温同压下等体积气体含有相同的物质的量（粒子数），而不是相同的质量；由于摩尔质量不同，1 mol H2 为 2 g，而 1 mol O2 为 32 g。",
-        "ku": "Li gorî zagona Avogadro, di heman germahî û zextê de qebareyên wekhev hejmara molan (tenekan) ya wekhev dihewînin, ne girseya wekhev; ji ber ku girseyên molî cuda ne, 1 mol H2 2 g e lê 1 mol O2 32 g e."
+        "ku": "Li gorî zagona Avogadro, di heman germahî û zextê de di qebareyên wekhev de hejmara molan (perçeyan) wekhev e, ne girse; ji ber ku girseyên molî cuda ne, mînak 1 mol H2 2 g, lê 1 mol O2 32 g e."
       }
     },
     {
@@ -235,7 +235,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Плотность газа: P * MA = d * R * T (следует из PV = nRT при n = m/MA и d = m/V).",
         "ar": "صيغة الكثافة: P * MA = d * R * T (تُشتق من PV = nRT باستخدام n = m/MA و d = m/V).",
         "zh": "密度公式：P * MA = d * R * T，由 PV = nRT 结合 n = m/MA 和 d = m/V 推导得到。",
-        "ku": "Formula çirbûnê: P * MA = d * R * T (ji PV = nRT bi n = m/MA û d = m/V tê derxistin)."
+        "ku": "Formula çiriyê: P * MA = d * R * T (ji PV = nRT bi n = m/MA û d = m/V tê derxistin)."
       },
       "trap": {
         "tr": "Sabit basınçta bir gazın sıcaklığı artırılırsa yoğunluğu da artar.",
@@ -245,7 +245,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "При постоянном давлении плотность газа с повышением температуры увеличивается.",
         "ar": "عند ثبات الضغط تزداد كثافة الغاز بارتفاع درجة حرارته.",
         "zh": "恒压下，气体的密度随温度升高而增大。",
-        "ku": "Di zexta domdar de, her ku germahiya gazekê zêde dibe çirbûna wê jî zêde dibe."
+        "ku": "Di zexta sabît de, heke germahiya gazekê zêde bibe çiriya wê jî zêde dibe."
       },
       "whyTrapIsFalse": {
         "tr": "d = P·MA/(R·T) bağıntısına göre sabit basınçta yoğunluk mutlak sıcaklıkla ters orantılıdır: sıcaklık artınca gaz genleşir, kütle değişmeden hacim büyüdüğü için yoğunluk azalır. Sabit hacimli kapta ise kütle ve hacim değişmediğinden yoğunluk sabit kalır.",
@@ -255,7 +255,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Из d = P·MA/(R·T) следует, что при постоянном давлении плотность обратно пропорциональна абсолютной температуре: при нагревании газ расширяется, его объём растёт при неизменной массе, и плотность уменьшается. В сосуде постоянного объёма масса и объём не меняются, поэтому плотность остаётся постоянной.",
         "ar": "وفق العلاقة d = P·MA/(R·T) تتناسب الكثافة عكسيًا مع درجة الحرارة المطلقة عند ثبات الضغط: بارتفاع درجة الحرارة يتمدد الغاز فيزداد الحجم مع ثبات الكتلة فتقل الكثافة. أما في الوعاء الثابت الحجم فلا تتغير الكتلة ولا الحجم فتبقى الكثافة ثابتة.",
         "zh": "由 d = P·MA/(R·T) 可知，恒压下密度与热力学温度成反比：温度升高时气体膨胀，质量不变而体积增大，密度减小。在刚性容器中质量和体积都不变，密度保持不变。",
-        "ku": "Li gorî d = P·MA/(R·T), di zexta domdar de çirbûn bi germahiya mutleq re berevajî rêjeyî ye: dema germahî zêde dibe gaz berfireh dibe, girse naguhere lê qebare mezin dibe, loma çirbûn kêm dibe. Di firaxa hişk de girse û qebare naguherin, loma çirbûn domdar dimîne."
+        "ku": "Li gorî d = P·MA/(R·T), di zexta sabît de çirî bi germahiya mutleq re berevajî rêjeyî ye: dema germahî zêde dibe gaz berfireh dibe, girse naguhere lê qebare mezin dibe, loma çirî kêm dibe. Di firaxeke bi qebareya sabît de girse û qebare naguherin, loma çirî sabît dimîne."
       }
     },
     {
@@ -268,7 +268,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Объединённый газовый закон: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
         "ar": "معادلة الغازات الموحدة: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
         "zh": "联合气体方程为：(P1*V1) / (n1*T1) = (P2*V2) / (n2*T2)。",
-        "ku": "Wekheviya gazê ya hevgirtî ev e: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2)."
+        "ku": "Hevkêşeya gazê ya hevgirtî ev e: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2)."
       },
       "trap": {
         "tr": "Birleşik gaz denklemi gazın cinsine göre değişir; her gaz için farklı bir bağıntı kullanılır.",
@@ -278,7 +278,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Объединённый газовый закон зависит от природы газа; для каждого газа используют своё соотношение.",
         "ar": "تختلف معادلة الغازات الموحدة باختلاف نوع الغاز؛ فلكل غاز علاقة مختلفة.",
         "zh": "联合气体方程随气体种类而变，每种气体都要用不同的关系式。",
-        "ku": "Hevkêşeya gazê ya yekbûyî li gorî cureyê gazê diguhere; ji bo her gazê têkiliyeke cuda tê bikaranîn."
+        "ku": "Hevkêşeya gazê ya hevgirtî li gorî cureyê gazê diguhere; ji bo her gazê têkiliyeke cuda tê bikaranîn."
       },
       "whyTrapIsFalse": {
         "tr": "İdeal gazlar için P, V, n ve T arasındaki ilişki gazın cinsinden bağımsızdır; birleşik gaz denkleminde gazın türü veya mol kütlesi yer almaz, mol kütlesi yalnızca kütle ve yoğunluk hesabında gerekir.",
@@ -288,7 +288,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Для идеальных газов связь между P, V, n и T не зависит от природы газа; в объединённый газовый закон не входят ни вид газа, ни его молярная масса — она нужна только для расчёта массы и плотности.",
         "ar": "بالنسبة للغازات المثالية لا تعتمد العلاقة بين P وV وn وT على نوع الغاز؛ فمعادلة الغازات الموحدة لا تتضمن نوع الغاز ولا كتلته المولية، والكتلة المولية لا تلزم إلا في حساب الكتلة والكثافة.",
         "zh": "对理想气体而言，P、V、n、T 之间的关系与气体种类无关；联合气体方程中既不含气体种类也不含摩尔质量，摩尔质量只在计算质量和密度时才需要。",
-        "ku": "Ji bo gazên îdeal têkiliya di navbera P, V, n û T de bi cureyê gazê ve girêdayî nîne; di hevkêşeya gazê ya yekbûyî de ne cureyê gazê ne jî girseya molî heye — girseya molî tenê ji bo hesabê girse û çirbûnê pêwîst e."
+        "ku": "Ji bo gazên îdeal têkiliya di navbera P, V, n û T de bi cureyê gazê ve ne girêdayî ye; di hevkêşeya gazê ya hevgirtî de ne cureyê gazê heye ne jî girseya wê ya molî — girseya molî tenê ji bo hesabên girse û çiriyê pêwîst e."
       }
     },
     {
@@ -301,7 +301,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Сосуды с подвижным поршнем без трения и эластичные шарики — примеры систем с постоянным давлением (внутреннее давление равно внешнему).",
         "ar": "الأوعية ذات المكبس عديم الاحتكاك والبالونات المرنة أمثلة على الأنظمة ذات الضغط الثابت (الضغط الداخلي يساوي الضغط الخارجي).",
         "zh": "带无摩擦活塞的容器和弹性气球是恒压体系的例子（内部压强等于外部压强）。",
-        "ku": "Firaxên bi pistona bê sûrtin û balonên nerm mînakên pergalên bi zexta domdar in (zexta hundir bi zexta derve re wekhev e)."
+        "ku": "Firaxên bi pistona bêxişandin û balonên nerm mînakên sîstemên bi zexta sabît in (zexta hundir bi zexta derve re wekhev e)."
       },
       "trap": {
         "tr": "Çelik kapalı kaplarda gazın basıncı daima atmosfer basıncına eşittir.",
@@ -311,7 +311,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "В закрытых стальных сосудах давление газа всегда равно атмосферному.",
         "ar": "في الأوعية الفولاذية المغلقة يكون ضغط الغاز مساويًا دائمًا للضغط الجوي.",
         "zh": "在密闭的钢制容器中，气体的压强总是等于大气压。",
-        "ku": "Di konteynerên pola yên girtî de, zexta gazê her dem bi zexta atmosferê re ye."
+        "ku": "Di firaxên polayî yên girtî de zexta gazê her tim bi zexta atmosferê re wekhev e."
       },
       "whyTrapIsFalse": {
         "tr": "Çelik kabın hacmi sabittir ve dış ortamla basınç dengesi kurmaz; içerideki basınç gazın mol sayısına ve sıcaklığına bağlıdır, atmosfer basıncından büyük de küçük de olabilir.",
@@ -321,7 +321,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Объём стального сосуда постоянен, и давление внутри него не выравнивается с внешним; оно зависит от количества газа и температуры и может быть как выше, так и ниже атмосферного.",
         "ar": "حجم الوعاء الفولاذي ثابت ولا يحقق توازنًا في الضغط مع الوسط الخارجي؛ فالضغط داخله يعتمد على عدد مولات الغاز ودرجة حرارته، وقد يكون أكبر أو أصغر من الضغط الجوي.",
         "zh": "钢瓶容积固定，不会与外界达到压强平衡；瓶内压强取决于气体的物质的量和温度，可以高于也可以低于大气压。",
-        "ku": "Qebareya firaxa polayî sabît e û zexta xwe bi derve re wekhev nake; zexta hundir bi mîqdara gazê û germahiyê ve girêdayî ye û dikare ji zexta atmosferê mezintir an piçûktir be."
+        "ku": "Qebareya firaxa polayî sabît e û zexta wê bi derdorê re wekhev nabe; zexta hundir bi hejmara molên gazê û germahiyê ve girêdayî ye û dikare ji zexta atmosferê mezintir an piçûktir be."
       }
     },
     {
@@ -334,7 +334,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Согласно молекулярно-кинетической теории, частицы газа движутся непрерывно, хаотично и быстро, а между столкновениями — прямолинейно.",
         "ar": "وفق النظرية الحركية تتحرك جسيمات الغاز حركة مستمرة وعشوائية وسريعة، وتسلك مسارات مستقيمة بين التصادمات.",
         "zh": "根据分子动理论，气体粒子不停地做快速、无规则运动，在两次碰撞之间沿直线运动。",
-        "ku": "Li gorî teoriya kînetîk, tenekên gazê bi berdewamî, bêserûber û bi lez dilivin û di navbera du pevketinan de li ser xêza rast diçin."
+        "ku": "Li gorî teoriya kînetîk, perçeyên gazê bi berdewamî, bêserûber û bi lez dilivin û di navbera du lihevketinan de li ser xêza rast diçin."
       },
       "trap": {
         "tr": "Gaz molekülleri sadece dairesel yörüngelerde hareket eder.",
@@ -344,7 +344,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Молекулы газа движутся только по круговым орбитам.",
         "ar": "تتحرك جزيئات الغاز في مسارات دائرية فقط.",
         "zh": "气体分子仅沿圆形轨道运动。",
-        "ku": "Molekulên gazê tenê di dorhêlên dorhêl de digerin."
+        "ku": "Molekulên gazê tenê li ser rêgehên gilover dilivin."
       },
       "whyTrapIsFalse": {
         "tr": "Kinetik teoriye göre gaz tanecikleri çarpışmalar arasında herhangi bir kuvvetin etkisinde değildir, bu yüzden doğrusal yol izler; yönleri yalnızca başka bir taneciğe veya çepere çarpınca değişir, dairesel yörünge yoktur.",
@@ -354,7 +354,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Согласно молекулярно-кинетической теории, между столкновениями на частицы газа не действуют никакие силы, поэтому они движутся прямолинейно; направление движения меняется только при ударе о другую частицу или о стенку — круговых орбит нет.",
         "ar": "وفق النظرية الحركية لا تؤثر أي قوة في جسيمات الغاز بين التصادمات، لذا تتحرك في خطوط مستقيمة ولا يتغير اتجاهها إلا عند اصطدامها بجسيم آخر أو بجدار الوعاء؛ فلا توجد مسارات دائرية.",
         "zh": "根据分子动理论，气体粒子在两次碰撞之间不受力，因此做直线运动；只有撞到其他粒子或器壁时方向才改变，不存在圆形轨道。",
-        "ku": "Li gorî teoriya kînetîk, di navbera lêketinan de tu hêz li ser tenekên gazê nayê; loma ew bi rêya rast diçin û arasteya wan tenê dema li tenekek din an li dîwar dixin diguhere — rêgeha dorvekirî tune ye."
+        "ku": "Li gorî teoriya kînetîk, di navbera lihevketinan de tu hêz bandorê li perçeyên gazê nake, loma ew li ser xêza rast diçin; arasteya wan tenê dema li perçeyeke din an li dîwar dikevin diguhere — rêgeha gilover tune ye."
       }
     },
     {
@@ -367,7 +367,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "При упругих столкновениях частиц газа полная кинетическая энергия и импульс сохраняются.",
         "ar": "في التصادمات المرنة بين جسيمات الغاز تبقى الطاقة الحركية الكلية والزخم الكلي محفوظين.",
         "zh": "在气体粒子之间的弹性碰撞中，总动能和动量守恒。",
-        "ku": "Di pevçûnên elastîk ên di navbera pariyên gazê de, enerjiya kînetîk a tevahî û leza xwe parastiye."
+        "ku": "Di lihevketinên elastîk ên di navbera perçeyên gazê de enerjiya kînetîk a giştî û momentum têne parastin."
       },
       "trap": {
         "tr": "Gaz tanecikleri çarptıkça kinetik enerjileri zamanla sıfıra düşer.",
@@ -377,7 +377,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "При столкновениях кинетическая энергия частиц газа со временем уменьшается до нуля.",
         "ar": "كلما تصادمت جسيمات الغاز تناقصت طاقتها الحركية حتى تصبح صفرًا مع مرور الزمن.",
         "zh": "气体粒子在不断碰撞中，动能会随时间逐渐减小到零。",
-        "ku": "Her ku pariyên gazê li hev dikevin, enerjiya wan a kînetîk bi demê re dadikeve sifirê."
+        "ku": "Her ku perçeyên gazê li hev dikevin, enerjiya wan a kînetîk bi demê re dadikeve sifirê."
       },
       "whyTrapIsFalse": {
         "tr": "İdeal gaz tanecikleri arasındaki çarpışmalar esnektir: bir taneciğin kaybettiği enerjiyi diğeri kazanır ve sabit sıcaklıkta toplam kinetik enerji değişmez; enerji kaybolsaydı kapalı kaptaki gaz kendiliğinden soğur ve basıncı düşerdi.",
@@ -387,7 +387,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Столкновения частиц идеального газа упругие: энергию, потерянную одной частицей, получает другая, и при постоянной температуре суммарная кинетическая энергия не меняется; если бы энергия терялась, газ в закрытом сосуде самопроизвольно остывал бы и его давление падало.",
         "ar": "التصادمات بين جسيمات الغاز المثالي مرنة: ما يفقده جسيم من طاقة يكسبه الآخر، وتبقى الطاقة الحركية الكلية ثابتة عند ثبات درجة الحرارة؛ ولو فُقدت الطاقة لبرد الغاز في الوعاء المغلق من تلقاء نفسه وانخفض ضغطه.",
         "zh": "理想气体粒子之间的碰撞是弹性的：一个粒子失去的能量被另一个粒子获得，温度不变时总动能不变；如果能量会损失，密闭容器中的气体就会自行冷却，压强也会下降。",
-        "ku": "Lêketinên di navbera tenekên gaza îdeal de elastîk in: enerjiya ku tenekek winda dike ya din bi dest dixe û di germahiya domdar de enerjiya kînetîk a giştî naguhere; heke enerjî winda bibûya, gaza di firaxa girtî de bi xwe sar dibû û zexta wê dadiket."
+        "ku": "Lihevketinên di navbera perçeyên gaza îdeal de elastîk in: enerjiya ku perçeyek winda dike ya din werdigire û di germahiya sabît de enerjiya kînetîk a giştî naguhere; heke enerjî winda bibûya, gaza di firaxa girtî de dê bi xwe sar bibûya û zexta wê dakete."
       }
     },
     {
@@ -400,7 +400,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Газы полностью заполняют объём сосуда и оказывают одинаковое давление на его стенки во всех направлениях.",
         "ar": "تملأ الغازات حجم الوعاء الذي توجد فيه تمامًا وتؤثر بضغط متساوٍ في جدرانه في جميع الاتجاهات.",
         "zh": "气体完全充满所在容器的容积，并在各个方向上对器壁施加相等的压强。",
-        "ku": "Gaz qebareya firaxa xwe bi tevahî tijî dikin û li her alî ve li dîwarên firaxê zexta wekhev dikin."
+        "ku": "Gaz qebareya firaxa ku tê de ne bi temamî tijî dikin û li her alî zexteke wekhev li dîwarên firaxê dikin."
       },
       "trap": {
         "tr": "Gaz kabın dibine üst kısmından daha yüksek basınç uygular.",
@@ -410,7 +410,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Газ оказывает на дно сосуда большее давление, чем на его верхнюю часть.",
         "ar": "يؤثر الغاز في قاع الوعاء بضغط أعلى من ضغطه في أعلاه.",
         "zh": "气体对容器底部施加的压强大于对顶部的压强。",
-        "ku": "Gaz li binê konteynerê ji ya jorîn zextek bilindtir dike."
+        "ku": "Gaz li binê firaxê ji beşa jor zexteke bilindtir dike."
       },
       "whyTrapIsFalse": {
         "tr": "Gaz tanecikleri her yönde rastgele ve eşit sıklıkta hareket ettiğinden kabın tüm çeperlerine aynı basıncı uygular; sıvılardaki gibi derinlikle artan basınç, gazlarda sıradan kap boyutlarında fark edilmez.",
@@ -420,7 +420,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Частицы газа движутся хаотично и одинаково часто во всех направлениях, поэтому оказывают одинаковое давление на все стенки сосуда; возрастание давления с глубиной, как в жидкостях, у газа в сосудах обычных размеров незаметно.",
         "ar": "تتحرك جسيمات الغاز عشوائيًا وبالتكرار نفسه في جميع الاتجاهات، لذا تؤثر بالضغط نفسه في جميع جدران الوعاء؛ أما ازدياد الضغط مع العمق كما في السوائل فهو مهمل للغازات في الأوعية العادية.",
         "zh": "气体粒子向各个方向无规则且同样频繁地运动，因此对容器各壁施加相同的压强；像液体那样随深度增大的压强，对普通容器中的气体可以忽略。",
-        "ku": "Tenekên gazê bi awayekî tesadufî û bi heman pirbûnê ber bi her alî ve diçin, loma li hemû dîwarên firaxê heman zextê dikin; zexta ku wek di şilekan de bi kûrahiyê zêde dibe, ji bo gazê di firaxên asayî de nayê hesibandin."
+        "ku": "Perçeyên gazê bi awayekî bêserûber û bi heman pirbûnê ber bi her alî ve dilivin, loma li hemû dîwarên firaxê heman zextê dikin; zexta ku wek di şileyan de bi kûrahiyê re zêde dibe, di firaxên asayî de ji bo gazan nayê ferqkirin."
       }
     },
     {
@@ -433,7 +433,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Газы, не реагирующие друг с другом, смешиваются в любых соотношениях и образуют однородные смеси.",
         "ar": "الغازات التي لا تتفاعل مع بعضها تمتزج بجميع النسب مكوّنة مخاليط متجانسة.",
         "zh": "彼此不发生反应的气体能以任意比例混合，形成均匀混合物。",
-        "ku": "Gazên ku bi hev re reaksiyon nakin di her rêjeyê de tevlihev dibin û tevliheviyên homojen çêdikin."
+        "ku": "Gazên ku bi hev re nakevin reaksiyonê di her rêjeyê de tevlî hev dibin û tevliheviyên homojen çêdikin."
       },
       "trap": {
         "tr": "Birbiri içinde çözünmeyen heterojen gaz karışımları vardır.",
@@ -443,7 +443,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Существуют неоднородные газовые смеси, компоненты которых не растворяются друг в друге.",
         "ar": "توجد مخاليط غازية غير متجانسة لا تذوب مكوناتها بعضها في بعض.",
         "zh": "存在互不相溶的非均匀气体混合物。",
-        "ku": "Têkelên gazê yên heterojen hene ku di nav hev de nayên çareserkirin."
+        "ku": "Tevliheviyên gazê yên heterojen hene ku di nav hev de nahelin."
       },
       "whyTrapIsFalse": {
         "tr": "Gaz tanecikleri arasında büyük boşluklar vardır ve tanecikler sürekli hareket ederek birbirinin içine yayılır (difüzyon); bu yüzden birbiriyle tepkimeye girmeyen gazlar daima homojen karışım (gaz çözeltisi) oluşturur.",
@@ -453,7 +453,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Между частицами газа большие промежутки, а сами частицы непрерывно движутся и проникают друг в друга (диффузия); поэтому газы, не реагирующие между собой, всегда образуют однородную смесь (газовый раствор).",
         "ar": "توجد فراغات كبيرة بين جسيمات الغاز، والجسيمات تتحرك باستمرار فتنتشر في بعضها (الانتشار)؛ لذلك تكوّن الغازات التي لا تتفاعل مع بعضها دائمًا مخلوطًا متجانسًا (محلولًا غازيًا).",
         "zh": "气体粒子之间有很大的空隙，粒子不停运动并相互扩散；因此彼此不发生反应的气体总是形成均匀混合物（气态溶液）。",
-        "ku": "Di navbera tenekên gazê de valahiyên mezin hene û tenek bi berdewamî diçin û di nav hev de belav dibin (dîfûzyon); ji ber vê yekê gazên ku bi hev re reaksiyon nakin her dem tevliheviyeke homojen (çareseriya gazê) çêdikin."
+        "ku": "Di navbera perçeyên gazê de valahiyên mezin hene û perçe bi berdewamî dilivin û di nav hev de belav dibin (dîfûzyon); ji ber vê yekê gazên ku bi hev re nakevin reaksiyonê her tim tevliheviyeke homojen (çareseriya gazî) çêdikin."
       }
     },
     {
@@ -466,7 +466,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Манометры измеряют давление газа в закрытых сосудах; они бывают открытыми и закрытыми, а давление определяют по разности уровней ртути.",
         "ar": "تقيس المانومترات ضغط الغاز في وعاء مغلق، وقد تكون مفتوحة الطرف أو مغلقة الطرف، ويُحسب الضغط من فرق مستويي الزئبق.",
         "zh": "压强计用于测量密闭容器中气体的压强，分为开口式和闭口式，压强由两侧汞面的高度差求得。",
-        "ku": "Manometre zexta gazê di firaxeke girtî de dipîvin; dikarin serê wan vekirî an girtî be û zext ji cudahiya astên cîweyê tê dîtin."
+        "ku": "Manometre zexta gazê ya di firaxên girtî de dipîvin; serê wan dikare vekirî an girtî be û zext ji ferqa di navbera astên cîweyê de tê dîtin."
       },
       "trap": {
         "tr": "Manometre havanın nemini ölçen alettir.",
@@ -476,7 +476,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Манометр — прибор для измерения влажности воздуха.",
         "ar": "المانومتر جهاز يقيس رطوبة الهواء.",
         "zh": "压强计是测量空气湿度的仪器。",
-        "ku": "Manometre amûrek e ku nemahiya hewayê dipîve."
+        "ku": "Manometre amûrek e ku şiliya hewayê dipîve."
       },
       "whyTrapIsFalse": {
         "tr": "Havanın nemini ölçen alet higrometredir; manometre ise kapalı bir kaptaki gazın basıncını U borusundaki sıvı (genellikle cıva) seviyeleri arasındaki farktan ölçer.",
@@ -486,7 +486,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Влажность воздуха измеряют гигрометром; манометр же измеряет давление газа в закрытом сосуде по разности уровней жидкости (обычно ртути) в U-образной трубке.",
         "ar": "الجهاز الذي يقيس رطوبة الهواء هو مقياس الرطوبة (الهيغرومتر)؛ أما المانومتر فيقيس ضغط غاز في وعاء مغلق من فرق مستويي السائل (الزئبق عادة) في أنبوب على شكل U.",
         "zh": "测量空气湿度的仪器是湿度计；压强计(U 形管压强计)是根据 U 形管中液体（通常是汞）液面高度差来测量密闭容器中气体压强的。",
-        "ku": "Amûra ku şiliya hewayê dipîve hîgrometre ye; manometre jî zexta gazê ya di firaxeke girtî de ji ferqa asta şilekê (bi gelemperî cîwa) di lûleya U de dipîve."
+        "ku": "Amûra ku şiliya hewayê dipîve hîgrometre ye; manometre jî zexta gazê ya di firaxeke girtî de ji ferqa astên şileyê (bi gelemperî cîwe) di lûleya U de dipîve."
       }
     },
     {
@@ -499,7 +499,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Если в сосуд с идеальным поршнем без трения добавить газ при той же температуре, давление газа не изменится, а объём увеличится.",
         "ar": "إذا أُضيف غاز عند درجة الحرارة نفسها إلى وعاء ذي مكبس مثالي عديم الاحتكاك، لا يتغير ضغط الغاز بل يزداد حجمه.",
         "zh": "在相同温度下向带无摩擦理想活塞的容器中加入气体时，气体压强不变，体积增大。",
-        "ku": "Ger gaza di heman germahiyê de li konteynirek pistonê ya îdeal bê xitimandin were zêdekirin, zexta gazê naguhere û qebareya wê zêde dibe."
+        "ku": "Heke gaza bi heman germahiyê li firaxeke bi pistona îdeal a bêxişandin were zêdekirin, zexta gazê naguhere, qebareya wê zêde dibe."
       },
       "trap": {
         "tr": "Sürtünmesiz pistonlu kaba sabit sıcaklıkta gaz eklendiğinde gazın basıncı artar.",
@@ -509,7 +509,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Если при постоянной температуре добавить газ в сосуд с поршнем без трения, давление газа возрастёт.",
         "ar": "عند إضافة غاز إلى وعاء ذي مكبس عديم الاحتكاك مع ثبات درجة الحرارة يزداد ضغط الغاز.",
         "zh": "恒温下向带无摩擦活塞的容器中加入气体时，气体的压强增大。",
-        "ku": "Dema ku di germahiya domdar de gaz li firaxa bi pistona bê sûrtin tê zêdekirin, zexta gazê zêde dibe."
+        "ku": "Dema di germahiya sabît de gaz li firaxa bi pistona bêxişandin tê zêdekirin, zexta gazê zêde dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Sürtünmesiz piston, iç basınç dış basıncı aştığı anda yukarı kayar ve basınçlar yeniden eşitlenir; bu yüzden eklenen gaz basıncı değil hacmi artırır.",
@@ -519,7 +519,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Поршень без трения поднимается, как только внутреннее давление превысит внешнее, и давления снова выравниваются; поэтому добавленный газ увеличивает объём, а не давление.",
         "ar": "ينزلق المكبس عديم الاحتكاك إلى أعلى بمجرد أن يتجاوز الضغط الداخلي الضغط الخارجي فيتساوى الضغطان من جديد؛ لذلك يزيد الغاز المضاف الحجم لا الضغط.",
         "zh": "无摩擦活塞在内部压强一超过外部压强时就向上移动，使内外压强重新相等；因此加入的气体增大的是体积而不是压强。",
-        "ku": "Pistona bê sûrtin gava zexta hundir ji ya derve derbas bibe ber bi jor ve diçe û zext dîsa wekhev dibin; loma gaza ku tê zêdekirin qebareyê zêde dike, ne zextê."
+        "ku": "Pistona bêxişandin gava zexta hundir ji ya derve derbas dibe ber bi jor ve dişemite û zext dîsa wekhev dibin; loma gaza ku tê zêdekirin ne zextê, qebareyê zêde dike."
       }
     },
     {
@@ -532,7 +532,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Если температуру (в кельвинах) постоянного количества газа в закрытом сосуде постоянного объёма увеличить вдвое, его давление тоже удвоится.",
         "ar": "إذا تضاعفت درجة الحرارة بالكلفن لكمية ثابتة من الغاز في وعاء مغلق ثابت الحجم، يتضاعف ضغطها أيضًا.",
         "zh": "定容密闭容器中一定量气体的开尔文温度加倍时，其压强也加倍。",
-        "ku": "Ger germahiya (bi Kelvin) mîqdareke sabît a gazê di firaxeke girtî ya bi qebareya sabît de du qat bibe, zexta wê jî du qat dibe."
+        "ku": "Heke germahiya (bi Kelvin) mîqdareke diyar a gazê ya di firaxeke girtî ya bi qebareya sabît de du qat bibe, zexta wê jî du qat dibe."
       },
       "trap": {
         "tr": "Sabit hacimli kaptaki bir gazın sıcaklığı 25 °C'den 50 °C'ye çıkarılırsa basıncı iki katına çıkar.",
@@ -542,7 +542,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Если температуру газа в сосуде постоянного объёма повысить с 25 °C до 50 °C, его давление удвоится.",
         "ar": "إذا ارتفعت درجة حرارة غاز في وعاء ثابت الحجم من 25 °C إلى 50 °C يتضاعف ضغطه.",
         "zh": "定容容器中气体的温度从 25 °C 升高到 50 °C 时，其压强加倍。",
-        "ku": "Ger germahiya gazekê di firaxeke bi qebareya sabît de ji 25 °C derkeve 50 °C, zexta wê du qat dibe."
+        "ku": "Heke germahiya gazekê ya di firaxeke bi qebareya sabît de ji 25 °C derkeve 50 °C, zexta wê du qat dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Basınç Celsius değil Kelvin sıcaklığıyla orantılıdır: 25 °C = 298 K, 50 °C = 323 K olduğundan basınç yalnızca 323/298 ≈ 1,08 katına çıkar.",
@@ -552,7 +552,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Давление пропорционально температуре в кельвинах, а не в градусах Цельсия: 25 °C = 298 K, 50 °C = 323 K, поэтому давление возрастает лишь в 323/298 ≈ 1,08 раза.",
         "ar": "يتناسب الضغط مع درجة الحرارة بالكلفن لا بالسلسيوس: 25 °C = 298 K و50 °C = 323 K، لذا لا يزيد الضغط إلا بعامل 323/298 ≈ 1.08.",
         "zh": "压强与开尔文温度成正比，而不是与摄氏数值成正比：25 °C = 298 K，50 °C = 323 K，所以压强只变为原来的 323/298 ≈ 1.08 倍。",
-        "ku": "Zext bi germahiya Kelvin re rêjeyî ye, ne bi nirxa Celsius: 25 °C = 298 K û 50 °C = 323 K, loma zext tenê 323/298 ≈ 1.08 qat dibe."
+        "ku": "Zext ne bi nirxa Celsius, bi germahiya Kelvin re rêjeyî ye: 25 °C = 298 K û 50 °C = 323 K, loma zext tenê 323/298 ≈ 1,08 qat dibe."
       }
     }
   ],
@@ -567,7 +567,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Бойля — Мариотта",
         "ar": "قانون بويل",
         "zh": "波义耳定律",
-        "ku": "Qanûna Boyle"
+        "ku": "Zagona Boyle"
       },
       "conceptB": {
         "tr": "Charles Yasası",
@@ -577,7 +577,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Шарля",
         "ar": "قانون شارل",
         "zh": "查理定律",
-        "ku": "Qanûna Charles"
+        "ku": "Zagona Charles"
       },
       "distinction": {
         "tr": "Boyle yasası sabit sıcaklıkta basınç ile hacmin ters orantılı olduğunu; Charles yasası ise sabit basınçta hacim ile mutlak sıcaklığın doğru orantılı olduğunu ifade eder.",
@@ -587,7 +587,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Бойля — Мариотта описывает обратную пропорциональность давления и объёма при постоянной температуре; закон Шарля описывает прямую пропорциональность объёма и абсолютной температуры при постоянном давлении.",
         "ar": "ينص قانون بويل على أن الضغط والحجم يتناسبان عكسيًا عند ثبات درجة الحرارة؛ أما قانون شارل فينص على أن الحجم ودرجة الحرارة المطلقة يتناسبان طرديًا عند ثبات الضغط.",
         "zh": "波义耳定律指出恒温下压强与体积成反比；查理定律指出恒压下体积与热力学温度成正比。",
-        "ku": "Qanûna Boyle dibêje ku di germahiya domdar de zext û qebare berevajî rêjeyî ne; qanûna Charles dibêje ku di zexta domdar de qebare û germahiya mutleq rasterast rêjeyî ne."
+        "ku": "Zagona Boyle dibêje ku di germahiya sabît de zext û qebare berevajî rêjeyî ne; zagona Charles dibêje ku di zexta sabît de qebare û germahiya mutleq rasterast rêjeyî ne."
       }
     },
     {
@@ -620,7 +620,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Сосуд с подвижным поршнем сохраняет постоянное давление, а объём газа в нём меняется; сосуд постоянного объёма (стальной) сохраняет постоянный объём, а давление газа в нём меняется.",
         "ar": "الوعاء ذو المكبس: الضغط فيه ثابت والحجم متغير؛ أما الوعاء الثابت الحجم (الفولاذي) فالحجم فيه ثابت والضغط متغير.",
         "zh": "活塞容器中压强恒定、体积可变；固定容积容器(如钢瓶)中体积恒定、压强可变。",
-        "ku": "Di firaxa bi piston de zext domdar e û qebare diguhere; di firaxa bi qebareya sabît (pola) de qebare domdar e û zext diguhere."
+        "ku": "Di firaxa bi piston de zext sabît e, qebare diguhere; di firaxa bi qebareya sabît (polayî) de qebare sabît e, zext diguhere."
       }
     },
     {
@@ -633,7 +633,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Гей-Люссака",
         "ar": "قانون جاي لوساك",
         "zh": "盖-吕萨克定律",
-        "ku": "Qanûna Gay-Lussac"
+        "ku": "Zagona Gay-Lussac"
       },
       "conceptB": {
         "tr": "Avogadro Yasası",
@@ -643,7 +643,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Авогадро",
         "ar": "قانون أفوجادرو",
         "zh": "阿伏加德罗定律",
-        "ku": "Qanûna Avogadro"
+        "ku": "Zagona Avogadro"
       },
       "distinction": {
         "tr": "Gay-Lussac sabit hacimde P ile T'nin doğru orantısını; Avogadro sabit P ve T'de V ile mol sayısının doğru orantısını açıklar.",
@@ -653,7 +653,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Гей-Люссака описывает прямую пропорциональность давления и температуры при постоянном объёме; закон Авогадро описывает прямую пропорциональность объёма и количества вещества при постоянных давлении и температуре.",
         "ar": "يصف قانون جاي لوساك التناسب الطردي بين P وT عند ثبات الحجم؛ ويصف قانون أفوجادرو التناسب الطردي بين V وعدد المولات عند ثبات P وT.",
         "zh": "盖-吕萨克定律指出定容下 P 与 T 成正比；阿伏加德罗定律指出 P、T 一定时 V 与物质的量成正比。",
-        "ku": "Qanûna Gay-Lussac rêjeya rasterast a P û T di qebareya domdar de rave dike; qanûna Avogadro rêjeya rasterast a V û hejmara molan di P û T yên domdar de rave dike."
+        "ku": "Zagona Gay-Lussac rêjeya rasterast a P û T di qebareya sabît de rave dike; zagona Avogadro rêjeya rasterast a V û hejmara molan di P û T yên sabît de rave dike."
       }
     },
     {
@@ -686,7 +686,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Идеальный газ — модель, в которой между частицами нет сил притяжения, а собственным объёмом частиц пренебрегают; реальный газ приближается по поведению к идеальному при высокой температуре и низком давлении.",
         "ar": "الغاز المثالي: لا توجد قوى تجاذب بين جسيماته ويُهمل حجمها الذاتي؛ أما الغاز الحقيقي فيقترب من السلوك المثالي عند درجات الحرارة المرتفعة والضغوط المنخفضة.",
         "zh": "理想气体中粒子间没有引力，粒子本身的体积可忽略；真实气体在高温、低压下接近理想行为。",
-        "ku": "Di gaza îdeal de di navbera tenekan de hêza kişandinê tune ye û qebareya tenekan bi xwe nayê hesibandin; gazên rastîn di germahiya bilind û zexta nizm de nêzî tevgera îdeal dibin."
+        "ku": "Di gaza îdeal de di navbera perçeyan de hêza kişandinê tune ye û qebareya perçeyan bi xwe nayê hesibandin; gaza rastîn di germahiya bilind û zexta nizm de nêzî tevgera îdeal dibe."
       }
     },
     {
@@ -699,7 +699,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Плотность газа (d = PM/RT)",
         "ar": "كثافة الغاز (d = PM/RT)",
         "zh": "气体密度(d = PM/RT)",
-        "ku": "Çirbûna gazê (d = PM/RT)"
+        "ku": "Çiriya gazê (d = PM/RT)"
       },
       "conceptB": {
         "tr": "Mol Kütlesi (M)",
@@ -719,7 +719,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Плотность газа (d = PM/RT) зависит от давления и температуры; молярная масса (M) характеризует данный газ и не зависит ни от давления, ни от температуры.",
         "ar": "تتغير كثافة الغاز بتغير الضغط ودرجة الحرارة؛ أما الكتلة المولية فخاصية مميزة للغاز لا تتغير بتغير الضغط أو درجة الحرارة.",
         "zh": "气体密度随压强和温度而变化；摩尔质量是气体的特征性质，不随压强和温度变化。",
-        "ku": "Çirbûna gazê bi zext û germahiyê diguhere; girseya molî taybetmendiyeke cihêker a gazê ye û bi zext û germahiyê naguhere."
+        "ku": "Çiriya gazê bi zext û germahiyê re diguhere; girseya molî taybetmendiyeke cihêker a gazê ye û bi zext û germahiyê re naguhere."
       }
     },
     {
@@ -742,7 +742,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Общее давление",
         "ar": "الضغط الكلي",
         "zh": "总压",
-        "ku": "Zexta tevahî"
+        "ku": "Zexta giştî"
       },
       "distinction": {
         "tr": "Kısmi basınç, karışımdaki bir gazın aynı sıcaklıkta kabı tek başına doldurduğunda uygulayacağı basınçtır; toplam basınç ise karışımdaki bütün gazların bu basınçlarının toplamıdır.",
@@ -752,7 +752,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Парциальное давление — давление, которое создавал бы газ смеси, если бы один занимал весь сосуд при той же температуре; общее давление равно сумме парциальных давлений всех газов смеси.",
         "ar": "الضغط الجزئي هو الضغط الذي يمارسه أحد غازات الخليط لو شغل الوعاء وحده عند درجة الحرارة نفسها؛ أما الضغط الكلي فهو مجموع هذه الضغوط لجميع غازات الخليط.",
         "zh": "分压是混合气体中某一种气体在相同温度下单独占据整个容器时所产生的压强；总压是混合气体中各气体这种压强之和。",
-        "ku": "Zexta qismî ew zext e ku gazeke têkelê dê bikira ger di heman germahiyê de bi tenê firaxê tijî bikira; zexta tevahî kombûna van zextên hemû gazên têkelê ye."
+        "ku": "Zexta qismî ew zext e ku gazeke di tevliheviyê de dê bikira, heke di heman germahiyê de bi tena serê xwe firax tijî bikira; zexta giştî berhevoka van zextan e ji bo hemû gazên tevliheviyê."
       }
     },
     {
@@ -765,7 +765,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Газовая диффузия",
         "ar": "انتشار الغاز",
         "zh": "气体扩散",
-        "ku": "Belavbûna Gazê"
+        "ku": "Dîfûzyona gazê"
       },
       "conceptB": {
         "tr": "Gaz Efüzyonu",
@@ -785,7 +785,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Газовая диффузия — самопроизвольное распространение одного газа в другом; эффузия газа — истечение газа через маленькое отверстие в вакуум.",
         "ar": "انتشار الغاز: انتقال غاز تلقائيًا وامتزاجه داخل غاز آخر؛ أما تدفق الغاز فهو خروج جزيئاته عبر ثقب صغير جدًا إلى حيّز مفرغ.",
         "zh": "气体扩散是一种气体自发地分散到另一种气体中；气体泻流是气体通过微小孔隙逸入真空。",
-        "ku": "Belavbûna gazê belavbûna xweber a gazekê di nav gazeke din de ye; efûzyon derketina gazê ye bi kunekê pir piçûk ber bi herêmeke vala (bê hewa)."
+        "ku": "Dîfûzyona gazê belavbûna xweber a gazekê di nav gazeke din de ye; efûzyona gazê derketina gazê ye ji kunikeke pir piçûk ber bi herêmeke vala."
       }
     },
     {
@@ -798,7 +798,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Пар",
         "ar": "البخار",
         "zh": "蒸气",
-        "ku": "Hilm"
+        "ku": "Buhar"
       },
       "conceptB": {
         "tr": "Gaz",
@@ -818,7 +818,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Пар — газообразное состояние вещества ниже критической температуры; его можно сжижить одним повышением давления, не меняя температуры. Газ — состояние вещества выше критической температуры; ни при каком давлении его нельзя сжижить.",
         "ar": "البخار يكون تحت درجة الحرارة الحرجة، ويمكن إسالته بزيادة الضغط وحدها دون تغيير درجة الحرارة؛ أما الغاز فمادة فوق درجة الحرارة الحرجة لا يمكن إسالتها مهما زاد الضغط.",
         "zh": "低于临界温度的气态物质称为蒸气；蒸气在温度不变时仅靠增大压强就能液化。高于临界温度时物质为气体，无论压强多大都不能液化。",
-        "ku": "Rewşa gazê ya di binê germahiya krîtîk de jê re hilm tê gotin; hilm bêyî guherîna germahiyê tenê bi zêdekirina zextê jî dikare were şilekirin. Li jorî germahiya krîtîk madde gaz e û zext çiqas zêde bibe jî nayê şilekirin."
+        "ku": "Rewşa gazî ya di binê germahiya krîtîk de buhar tê gotin; buhar bêyî guherîna germahiyê, tenê bi zêdekirina zextê jî dikare were şilekirin. Gaz made ye ku li jorî germahiya krîtîk e û zext çiqas zêde bibe jî nayê şilekirin."
       }
     }
   ],
@@ -833,7 +833,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Этапы решения задачи на уравнение состояния идеального газа",
         "ar": "حل مسائل الغاز المثالي",
         "zh": "理想气体计算题的解题步骤",
-        "ku": "Gavên Çareseriya Pirsgirêka Gaza Îdeal"
+        "ku": "Gavên Çareserkirina Pirsên Gaza Îdeal"
       },
       "steps": [
         {
@@ -874,7 +874,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Выразить неизвестное и записать ответ с единицами измерения",
           "ar": "استخرج المجهول واكتب النتيجة مع وحدتها",
           "zh": "求出未知量并写出带单位的结果",
-          "ku": "Nenasê derxe û encamê bi yekîneya wê binivîse"
+          "ku": "Nenasê derxîne û encamê bi yekîneya wê binivîse"
         }
       ]
     },
@@ -888,7 +888,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Газовые законы, приведшие к уравнению идеального газа (в историческом порядке)",
         "ar": "قوانين الغازات المؤدية إلى معادلة الغاز المثالي (بالترتيب التاريخي)",
         "zh": "推导理想气体状态方程的气体定律（按历史顺序）",
-        "ku": "Zagonên gazê yên ber bi hevkêşeya gaza îdeal ve (rêza dîrokî)"
+        "ku": "Zagonên Gazê yên ku Digihîjin Hevkêşeya Gaza Îdeal (Rêza Dîrokî)"
       },
       "steps": [
         {
@@ -899,7 +899,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Из закона Бойля — Мариотта берут обратную пропорциональность P и V",
           "ar": "يُؤخذ من قانون بويل التناسب العكسي بين P وV",
           "zh": "由波义耳定律得出 P 与 V 成反比",
-          "ku": "Ji qanûna Boyle, rêjeya berevajî ya P û V tê girtin"
+          "ku": "Ji zagona Boyle rêjeya berevajî ya P û V tê girtin"
         },
         {
           "tr": "Charles yasasından V ile T'nin doğru orantısı eklenir",
@@ -909,7 +909,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Из закона Шарля добавляют прямую пропорциональность V и T",
           "ar": "يُضاف من قانون شارل التناسب الطردي بين V وT",
           "zh": "由查理定律加入 V 与 T 成正比",
-          "ku": "Ji qanûna Charles, rêjeya rasterast ya V û T tê zêdekirin"
+          "ku": "Ji zagona Charles rêjeya rasterast a V û T lê tê zêdekirin"
         },
         {
           "tr": "Avogadro yasasından V ile n'nin doğru orantısı birleştirilir",
@@ -919,7 +919,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Из закона Авогадро добавляют прямую пропорциональность V и n",
           "ar": "يُدمج من قانون أفوجادرو التناسب الطردي بين V وn",
           "zh": "由阿伏加德罗定律并入 V 与 n 成正比",
-          "ku": "Ji zagona Avogadro, rêjeya rasterast ya V û n tê hev kirin"
+          "ku": "Ji zagona Avogadro rêjeya rasterast a V û n bi wan re tê yekkirin"
         },
         {
           "tr": "R gaz sabiti ile PV = nRT ana denklemi kurulur",
@@ -929,7 +929,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "С помощью газовой постоянной R получают основное уравнение PV = nRT",
           "ar": "تُصاغ المعادلة الرئيسة PV = nRT باستخدام ثابت الغازات R",
           "zh": "引入气体常数 R，得到 PV = nRT",
-          "ku": "Hevkêşana sereke PV = nRT bi domdariya gazê R tê saz kirin"
+          "ku": "Bi sabîta gazê R hevkêşeya sereke PV = nRT tê avakirin"
         }
       ]
     },
@@ -943,7 +943,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Применение объединённого газового закона (постоянное количество газа)",
         "ar": "تطبيق معادلة الغازات الموحدة (كمية ثابتة من الغاز)",
         "zh": "联合气体方程的应用（气体的量不变）",
-        "ku": "Sepandina hevkêşeya gazê ya yekbûyî (mîqdara gazê ya sabît)"
+        "ku": "Sepandina Hevkêşeya Gazê ya Hevgirtî (Mîqdara Gazê ya Sabît)"
       },
       "steps": [
         {
@@ -954,7 +954,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Записывают P1, V1, T1 начального состояния (температуру переводят в кельвины)",
           "ar": "تُكتب قيم P1 وV1 وT1 للحالة الأولى (مع تحويل درجة الحرارة إلى كلفن)",
           "zh": "写出初始状态的 P1、V1、T1（温度换算成开尔文）",
-          "ku": "Nirxên P1, V1, T1 yên rewşa yekem têne nivîsandin (germahî bo Kelvin tê guhertin)"
+          "ku": "Nirxên P1, V1, T1 yên rewşa yekem têne nivîsandin (germahî bo Kelvin tê veguhertin)"
         },
         {
           "tr": "Değişen koşullardaki P2, V2, T2 değerleri belirlenir",
@@ -974,7 +974,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Для постоянного количества (числа молей) газа записывают P1.V1 / T1 = P2.V2 / T2 (если число молей меняется, в знаменатели добавляют n1 и n2)",
           "ar": "لكمية ثابتة (عدد مولات ثابت) من الغاز تُكتب المساواة P1.V1 / T1 = P2.V2 / T2 (وإذا تغيّر عدد المولات يُضاف n1 وn2 إلى المقامين)",
           "zh": "对物质的量不变的气体列出 P1.V1 / T1 = P2.V2 / T2 (若物质的量改变，则分母中还要写上 n1 和 n2)",
-          "ku": "Ji bo mîqdara (mol) gazê ya sabît wekheviya P1.V1 / T1 = P2.V2 / T2 tê danîn (heke hejmara molan biguhere, n1 û n2 jî di binê kesran de têne nivîsandin)"
+          "ku": "Ji bo mîqdara (mola) gazê ya sabît wekheviya P1.V1 / T1 = P2.V2 / T2 tê danîn (heke hejmara molan biguhere, n1 û n2 jî di paran de têne nivîsandin)"
         },
         {
           "tr": "Bilinmeyen hacim veya basınç değeri çekilir",
@@ -984,7 +984,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Вычисляют неизвестный объём или давление",
           "ar": "يُحسب الحجم أو الضغط المجهول",
           "zh": "求出未知的体积或压强",
-          "ku": "Qebare an zexta nenas tê hesibandin"
+          "ku": "Nirxa qebare an zexta nenas tê derxistin"
         }
       ]
     },
@@ -998,7 +998,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Измерение давления с помощью манометра",
         "ar": "قياس الضغط باستخدام المانومتر",
         "zh": "用压强计测量压强",
-        "ku": "Pîvana Zextê bi Manometre"
+        "ku": "Pîvana Zextê bi Manometreyê"
       },
       "steps": [
         {
@@ -1019,7 +1019,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Одно колено соединяют с сосудом, содержащим газ, другое оставляют открытым в атмосферу",
           "ar": "يُوصَل أحد الذراعين بوعاء الغاز ويُترك الآخر مفتوحًا للجو",
           "zh": "一臂与盛气体的容器相连，另一臂通大气",
-          "ku": "Milek bi firaxa gazê ve tê girêdan, milê din ji atmosferê re vekirî ye"
+          "ku": "Milek bi firaxa gazê ve tê girêdan, milê din ber bi atmosferê vekirî tê hiştin"
         },
         {
           "tr": "Cıva seviyeleri arasındaki yükseklik farkı h ölçülür",
@@ -1029,7 +1029,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Измеряют разность высот h между уровнями ртути",
           "ar": "يُقاس فرق الارتفاع h بين مستويي الزئبق",
           "zh": "测量两侧汞面的高度差 h",
-          "ku": "Cûdahiya bilindahiya h di navbera astên mercury de tê pîvandin"
+          "ku": "Ferqa bilindahiyê h ya di navbera astên cîweyê de tê pîvandin"
         },
         {
           "tr": "Gaz tarafındaki cıva seviyesi düşükse h açık hava basıncına eklenir, yüksekse çıkarılır",
@@ -1039,7 +1039,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Если уровень ртути со стороны газа ниже, h прибавляют к атмосферному давлению, если выше — вычитают",
           "ar": "إذا كان مستوى الزئبق في جهة الغاز أدنى يُضاف h إلى الضغط الجوي، وإذا كان أعلى يُطرح منه",
           "zh": "若气体一侧汞面较低，则将 h 加到大气压上；若较高，则从大气压中减去 h",
-          "ku": "Ger asta cîweyê li aliyê gazê nizmtir be, h li zexta atmosferê tê zêdekirin; ger bilindtir be, jê tê kêmkirin"
+          "ku": "Heke asta cîweyê ya li aliyê gazê nizmtir be, h li zexta hewaya vekirî tê zêdekirin; heke bilindtir be, jê tê kêmkirin"
         }
       ]
     }
@@ -1055,7 +1055,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Каково давление (в атм) 0,5 моль газа He в сосуде постоянного объёма 4,48 л при 0 °C? (R = 22,4/273 л·атм/(моль·K))",
         "ar": "ما ضغط 0.5 mol من غاز He بوحدة atm في وعاء ثابت الحجم سعته 4.48 L عند 0 °C؟ (R = 22.4/273 L·atm/(mol·K))",
         "zh": "0 °C 时，容积为 4.48 L 的定容容器中 0.5 mol He 气体的压强是多少 atm？(R = 22.4/273 L·atm/(mol·K))",
-        "ku": "Di 0 °C de zexta 0.5 mol gaza He ya di firaxeke 4.48 L ya bi qebareya sabît de çend atm e? (R = 22.4/273 L·atm/(mol·K))"
+        "ku": "Di 0 °C de zexta 0,5 mol gaza He ya di firaxeke 4,48 L ya bi qebareya sabît de çend atm e? (R = 22,4/273 L·atm/(mol·K))"
       },
       "options": [
         {
@@ -1066,7 +1066,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "2,5 атм",
           "ar": "2.5 atm",
           "zh": "2.5 atm",
-          "ku": "2.5 atm"
+          "ku": "2,5 atm"
         },
         {
           "tr": "1,0 atm",
@@ -1076,7 +1076,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "1,0 атм",
           "ar": "1.0 atm",
           "zh": "1.0 atm",
-          "ku": "1.0 atm"
+          "ku": "1,0 atm"
         },
         {
           "tr": "5,0 atm",
@@ -1086,7 +1086,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "5,0 атм",
           "ar": "5.0 atm",
           "zh": "5.0 atm",
-          "ku": "5.0 atm"
+          "ku": "5,0 atm"
         },
         {
           "tr": "0,5 atm",
@@ -1096,7 +1096,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "0,5 атм",
           "ar": "0.5 atm",
           "zh": "0.5 atm",
-          "ku": "0.5 atm"
+          "ku": "0,5 atm"
         },
         {
           "tr": "2,24 atm",
@@ -1106,7 +1106,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "2,24 атм",
           "ar": "2.24 atm",
           "zh": "2.24 atm",
-          "ku": "2.24 atm"
+          "ku": "2,24 atm"
         }
       ],
       "correctIndex": 0,
@@ -1118,7 +1118,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "T = 0 + 273 = 273 K. P·V = n·R·T → P·4,48 = 0,5·(22,4/273)·273 = 11,2 → P = 11,2/4,48 = 2,5 атм. Считать давление равным 1 атм только потому, что температура 0 °C, неверно: 0,5 моль газа при 0 °C и 1 атм занимают 11,2 л, а объём сосуда 4,48 л. Умножение объёма на число молей (4,48·0,5 = 2,24) — ещё одна типичная ошибка.",
         "ar": "T = 0 + 273 = 273 K. P·V = n·R·T ← P·4.48 = 0.5·(22.4/273)·273 = 11.2 ← P = 11.2/4.48 = 2.5 atm. اعتبار الضغط 1 atm لمجرد أن درجة الحرارة 0 °C خطأ: 0.5 mol من الغاز يشغل 11.2 L عند 0 °C و1 atm، بينما حجم الوعاء 4.48 L. وضرب الحجم في عدد المولات (4.48·0.5 = 2.24) خطأ شائع آخر.",
         "zh": "T = 0 + 273 = 273 K。P·V = n·R·T → P·4.48 = 0.5·(22.4/273)·273 = 11.2 → P = 11.2/4.48 = 2.5 atm。仅因温度为 0 °C 就把压强当作 1 atm 是错误的：0.5 mol 气体在 0 °C、1 atm 下占 11.2 L，而容器只有 4.48 L。把体积与物质的量相乘(4.48·0.5 = 2.24)是另一种常见错误。",
-        "ku": "T = 0 + 273 = 273 K. P·V = n·R·T → P·4.48 = 0.5·(22.4/273)·273 = 11.2 → P = 11.2/4.48 = 2.5 atm. Tenê ji ber ku germahî 0 °C ye zextê 1 atm hesibandin şaş e: 0.5 mol gaz di 0 °C û 1 atm de 11.2 L digire, lê firax 4.48 L ye. Carkirina qebareyê bi hejmara molan (4.48·0.5 = 2.24) jî şaşiyeke tîpîk e."
+        "ku": "T = 0 + 273 = 273 K. P·V = n·R·T → P·4,48 = 0,5·(22,4/273)·273 = 11,2 → P = 11,2/4,48 = 2,5 atm. Tenê ji ber ku germahî 0 °C ye zextê rasterast 1 atm hesibandin şaş e: 0,5 mol gaz di 0 °C û 1 atm de 11,2 L digire, lê firax 4,48 L ye. Lêxistina qebareyê bi hejmara molan (4,48·0,5 = 2,24) jî şaşiyeke berbelav e."
       }
     },
     {
@@ -1131,7 +1131,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Некоторое количество идеального газа в сосуде с поршнем без трения занимает объём 2 л при 27 °C. Каким станет его объём (в литрах), если температуру повысить до 327 °C?",
         "ar": "كمية من غاز مثالي في وعاء ذي مكبس عديم الاحتكاك تشغل حجمًا قدره 2 L عند 27 °C. كم يصبح حجمها باللتر إذا رُفعت درجة حرارتها إلى 327 °C؟",
         "zh": "带无摩擦活塞的容器中，一定量理想气体在 27 °C 时体积为 2 L。若温度升高到 327 °C，其体积为多少升？",
-        "ku": "Mîqdarek gaza îdeal di firaxeke bi pistona bê sûrtin de di 27 °C de 2 L qebare digire. Ger germahiya wê bibe 327 °C, qebareya wê dê bibe çend lître?"
+        "ku": "Mîqdarek gaza îdeal di firaxeke bi pistona bêxişandin de di 27 °C de 2 L qebare digire. Heke germahiya wê bibe 327 °C, qebareya wê dibe çend L?"
       },
       "options": [
         {
@@ -1194,7 +1194,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "В сосуде с поршнем без трения давление постоянно; при постоянном давлении объём прямо пропорционален абсолютной температуре (закон Шарля). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 л. Если составить пропорцию в °C, получится 2·327/27 ≈ 24 л; если считать объём и температуру обратно пропорциональными — 1 л.",
         "ar": "في الوعاء ذي المكبس عديم الاحتكاك يبقى الضغط ثابتًا؛ وعند ثبات الضغط يتناسب الحجم طرديًا مع درجة الحرارة المطلقة (قانون شارل). T1 = 27 + 273 = 300 K وT2 = 327 + 273 = 600 K ← V1/T1 = V2/T2 ← 2/300 = V2/600 ← V2 = 4 L. استخدام السلسيوس في التناسب يعطي 2·327/27 ≈ 24 L، واعتبار الحجم ودرجة الحرارة متناسبين عكسيًا يعطي 1 L.",
         "zh": "带无摩擦活塞的容器中压强恒定；恒压下体积与热力学温度成正比（查理定律）。T1 = 27 + 273 = 300 K，T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L。用摄氏温度列比例得 2·327/27 ≈ 24 L，误以为体积与温度成反比得 1 L。",
-        "ku": "Di firaxa bi pistona bê sûrtin de zext domdar e; di zexta domdar de qebare bi germahiya mutleq re rasterast rêjeyî ye (qanûna Charles). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L. Heke rêje bi °C were danîn 2·327/27 ≈ 24 L, heke qebare û germahî berevajî rêjeyî werin hesibandin 1 L derdikeve."
+        "ku": "Di firaxa bi pistona bêxişandin de zext sabît e; di zexta sabît de qebare bi germahiya mutleq re rasterast rêjeyî ye (zagona Charles). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L. Heke rêje bi °C were danîn 2·327/27 ≈ 24 L, heke qebare û germahî berevajî rêjeyî werin hesibandin 1 L tê dîtin."
       }
     },
     {
@@ -1207,7 +1207,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Постоянное количество идеального газа занимает 6 л при 27 °C и 2 атм. Каким станет объём (в литрах), если температуру повысить до 127 °C, а давление — до 4 атм?",
         "ar": "تشغل كمية ثابتة من غاز مثالي حجمًا قدره 6 L عند 27 °C وضغط 2 atm. إذا رُفعت درجة الحرارة إلى 127 °C والضغط إلى 4 atm، فكم لترًا يصبح حجمه؟",
         "zh": "一定量的理想气体在 27 °C、2 atm 下体积为 6 L。若将温度升高到 127 °C、压强增大到 4 atm，其体积变为多少升？",
-        "ku": "Mîqdareke sabît ji gazeke îdeal di 27 °C û 2 atm de 6 L qebare digire. Heke germahî bibe 127 °C û zext bibe 4 atm, qebareya wê dibe çend lître?"
+        "ku": "Mîqdareke sabît a gazeke îdeal di 27 °C û 2 atm de 6 L qebare digire. Heke germahiya gazê bibe 127 °C û zexta wê bibe 4 atm, qebareya wê dibe çend L?"
       },
       "options": [
         {
@@ -1248,7 +1248,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "14,1 л",
           "ar": "14.1 L",
           "zh": "14.1 L",
-          "ku": "14.1 L"
+          "ku": "14,1 L"
         },
         {
           "tr": "16 L",
@@ -1270,7 +1270,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "T1 = 27 + 273 = 300 K, T2 = 127 + 273 = 400 K. Для постоянного количества газа P1·V1/T1 = P2·V2/T2 → 2·6/300 = 4·V2/400 → V2 = (2·6·400)/(300·4) = 4 л. Если применить только закон Бойля — Мариотта без учёта температуры, получится 3 л; без учёта изменения давления — 8 л; с температурой в °C — около 14,1 л; если считать давление прямо пропорциональным объёму — 16 л.",
         "ar": "T1 = 27 + 273 = 300 K وT2 = 127 + 273 = 400 K. لكمية ثابتة من الغاز: P1·V1/T1 = P2·V2/T2 ← 2·6/300 = 4·V2/400 ← V2 = (2·6·400)/(300·4) = 4 L. تطبيق قانون بويل وحده مع إهمال الحرارة يعطي 3 L، وإهمال تغيّر الضغط يعطي 8 L، واستخدام السلسيوس يعطي نحو 14.1 L، واعتبار الضغط متناسبًا طرديًا مع الحجم يعطي 16 L.",
         "zh": "T1 = 27 + 273 = 300 K，T2 = 127 + 273 = 400 K。对一定量气体，P1·V1/T1 = P2·V2/T2 → 2·6/300 = 4·V2/400 → V2 = (2·6·400)/(300·4) = 4 L。只用波义耳定律而忘记温度得 3 L，忘记压强变化得 8 L，用摄氏温度得约 14.1 L，误以为压强与体积成正比得 16 L。",
-        "ku": "T1 = 27 + 273 = 300 K, T2 = 127 + 273 = 400 K. Ji bo mîqdara gazê ya sabît P1·V1/T1 = P2·V2/T2 → 2·6/300 = 4·V2/400 → V2 = (2·6·400)/(300·4) = 4 L. Heke tenê Boyle were sepandin û germahî were jibîrkirin 3 L, heke guherîna zextê were jibîrkirin 8 L, bi °C nêzî 14.1 L, û heke zext bi qebareyê re rasterast rêjeyî were hesibandin 16 L derdikeve."
+        "ku": "T1 = 27 + 273 = 300 K, T2 = 127 + 273 = 400 K. Ji bo mîqdara gazê ya sabît P1·V1/T1 = P2·V2/T2 → 2·6/300 = 4·V2/400 → V2 = (2·6·400)/(300·4) = 4 L. Heke tenê zagona Boyle were sepandin û germahî were jibîrkirin 3 L, heke guherîna zextê were jibîrkirin 8 L, heke germahî bi °C were nivîsandin nêzî 14,1 L, heke zext bi qebareyê re rasterast rêjeyî were hesibandin 16 L tê dîtin."
       }
     },
     {
@@ -1283,7 +1283,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Сколько граммов CH4 в стальном сосуде объёмом 8,2 л создают при 127 °C давление 2 атм? (H = 1, C = 12; R = 0,082 л·атм/(моль·K))",
         "ar": "كم غرامًا من غاز CH4 يُحدث ضغطًا قدره 2 atm عند 127 °C في وعاء فولاذي سعته 8.2 L؟ (H = 1، C = 12؛ R = 0.082 L·atm/(mol·K))",
         "zh": "在 8.2 L 的钢瓶中，127 °C 时产生 2 atm 压强的 CH4 气体有多少克？(H = 1，C = 12；R = 0.082 L·atm/(mol·K))",
-        "ku": "Di firaxeke polayî ya 8.2 L de, gaza CH4 ya ku di 127 °C de 2 atm zext dike çend gram e? (H = 1, C = 12; R = 0.082 L·atm/(mol·K))"
+        "ku": "Di firaxeke polayî ya 8,2 L de gaza CH4 ya ku di 127 °C de 2 atm zext dike çend gram e? (H = 1, C = 12; R = 0,082 L·atm/(mol·K))"
       },
       "options": [
         {
@@ -1294,7 +1294,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "0,5 г",
           "ar": "0.5 g",
           "zh": "0.5 g",
-          "ku": "0.5 g"
+          "ku": "0,5 g"
         },
         {
           "tr": "6,5 g",
@@ -1304,7 +1304,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "6,5 г",
           "ar": "6.5 g",
           "zh": "6.5 g",
-          "ku": "6.5 g"
+          "ku": "6,5 g"
         },
         {
           "tr": "8 g",
@@ -1324,7 +1324,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "11,7 г",
           "ar": "11.7 g",
           "zh": "11.7 g",
-          "ku": "11.7 g"
+          "ku": "11,7 g"
         },
         {
           "tr": "25,2 g",
@@ -1334,7 +1334,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "25,2 г",
           "ar": "25.2 g",
           "zh": "25.2 g",
-          "ku": "25.2 g"
+          "ku": "25,2 g"
         }
       ],
       "correctIndex": 2,
@@ -1346,7 +1346,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "T = 127 + 273 = 400 K. n = P·V/(R·T) = (2·8,2)/(0,082·400) = 16,4/32,8 = 0,5 моль. Молярная масса CH4 = 12 + 4·1 = 16 г/моль, поэтому m = 0,5·16 = 8 г. Если остановиться на числе молей — 0,5; если забыть число атомов H (M = 13) — 6,5 г; при T = 273 K — около 11,7 г; при температуре в °C — около 25,2 г.",
         "ar": "T = 127 + 273 = 400 K. n = P·V/(R·T) = (2·8.2)/(0.082·400) = 16.4/32.8 = 0.5 mol. الكتلة المولية لـ CH4 هي 12 + 4·1 = 16 g/mol، إذن m = 0.5·16 = 8 g. التوقف عند عدد المولات يعطي 0.5، ونسيان عدد ذرات H (M = 13) يعطي 6.5 g، واستخدام 273 K يعطي نحو 11.7 g، واستخدام السلسيوس يعطي نحو 25.2 g.",
         "zh": "T = 127 + 273 = 400 K。n = P·V/(R·T) = (2·8.2)/(0.082·400) = 16.4/32.8 = 0.5 mol。CH4 的摩尔质量为 12 + 4·1 = 16 g/mol，所以 m = 0.5·16 = 8 g。只算到物质的量得 0.5；漏算 H 原子数(M = 13)得 6.5 g；误用 273 K 得约 11.7 g；用摄氏温度得约 25.2 g。",
-        "ku": "T = 127 + 273 = 400 K. n = P·V/(R·T) = (2·8.2)/(0.082·400) = 16.4/32.8 = 0.5 mol. Girseya molî ya CH4 12 + 4·1 = 16 g/mol e, loma m = 0.5·16 = 8 g. Heke li hejmara molan were rawestan 0.5, heke hejmara H were jibîrkirin (M = 13) 6.5 g, bi 273 K nêzî 11.7 g, bi °C jî nêzî 25.2 g derdikeve."
+        "ku": "T = 127 + 273 = 400 K. n = P·V/(R·T) = (2·8,2)/(0,082·400) = 16,4/32,8 = 0,5 mol. Girseya molî ya CH4 12 + 4·1 = 16 g/mol e, loma m = 0,5·16 = 8 g. Heke li hejmara molan were rawestandin 0,5, heke hejmara atomên H were jibîrkirin û girseya molî 13 were girtin 6,5 g, heke germahî 273 K were girtin nêzî 11,7 g, heke germahî bi °C were nivîsandin nêzî 25,2 g tê dîtin."
       }
     },
     {
@@ -1359,7 +1359,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Давление газа в стальном сосуде постоянного объёма при 27 °C равно 1,5 атм. До какой температуры (в кельвинах) нужно нагреть газ, не меняя его количества, чтобы давление стало равным 2,5 атм?",
         "ar": "ضغط غاز في وعاء فولاذي صلب ثابت الحجم يساوي 1.5 atm عند 27 °C. إلى كم كلفن يجب تسخين الغاز، دون تغيير كميته، ليصبح ضغطه 2.5 atm؟",
         "zh": "刚性钢瓶中某气体在 27 °C 时压强为 1.5 atm。在气体的量不变的情况下，需加热到多少开尔文才能使压强变为 2.5 atm？",
-        "ku": "Zexta gazekê di firaxeke polayî ya bi qebareya sabît de di 27 °C de 1.5 atm e. Bêyî guhertina mîqdara gazê, divê gaz heta çend Kelvin were germkirin da ku zext bibe 2.5 atm?"
+        "ku": "Zexta gazekê ya di firaxeke polayî ya bi qebareya sabît de di 27 °C de 1,5 atm e. Bêyî ku mîqdara gazê biguhere, divê gaz heta çend Kelvin were germkirin da ku zext bibe 2,5 atm?"
       },
       "options": [
         {
@@ -1422,7 +1422,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "При постоянных объёме и количестве газа P1/T1 = P2/T2 (закон Гей-Люссака). T1 = 27 + 273 = 300 K → 1,5/300 = 2,5/T2 → T2 = 300·2,5/1,5 = 500 K (227 °C). Пропорция в °C даёт 45, перевод этого числа в кельвины — 318, обратная пропорциональность — 180, повторное прибавление 273 к 500 K — 773.",
         "ar": "عند ثبات الحجم وعدد المولات: P1/T1 = P2/T2 (جاي لوساك). T1 = 27 + 273 = 300 K ← 1.5/300 = 2.5/T2 ← T2 = 300·2.5/1.5 = 500 K (227 °C). إقامة التناسب بالسلسيوس تعطي 45، وتحويل هذه القيمة إلى كلفن يعطي 318، واعتبار الضغط والحرارة متناسبين عكسيًا يعطي 180، وإضافة 273 مرة أخرى إلى 500 K تعطي 773.",
         "zh": "体积和物质的量不变时 P1/T1 = P2/T2（盖-吕萨克定律）。T1 = 27 + 273 = 300 K → 1.5/300 = 2.5/T2 → T2 = 300·2.5/1.5 = 500 K (227 °C)。用摄氏温度列比例得 45，再把它换算成开尔文得 318，误以为压强与温度成反比得 180，在 500 K 上再加 273 得 773。",
-        "ku": "Di qebare û mîqdara sabît de P1/T1 = P2/T2 (Gay-Lussac). T1 = 27 + 273 = 300 K → 1.5/300 = 2.5/T2 → T2 = 300·2.5/1.5 = 500 K (227 °C). Heke rêje bi °C were danîn 45, heke ev nirx bo Kelvin were guhertin 318, heke zext û germahî berevajî rêjeyî werin hesibandin 180, û heke li 500 K dîsa 273 were zêdekirin 773 derdikeve."
+        "ku": "Di qebare û hejmara molan a sabît de P1/T1 = P2/T2 (Gay-Lussac). T1 = 27 + 273 = 300 K → 1,5/300 = 2,5/T2 → T2 = 300·2,5/1,5 = 500 K (227 °C). Heke rêje bi °C were danîn 45, heke ev nirx bo Kelvin were veguhertin 318, heke zext û germahî berevajî rêjeyî werin hesibandin 180, heke li 500-ê ku jixwe Kelvin e carek din 273 were zêdekirin 773 tê dîtin."
       }
     },
     {
@@ -1435,7 +1435,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "В сосуде с поршнем без трения 3,2 г CH4 занимают объём 4 л. При постоянной температуре в сосуд добавляют 4 г He. Каким станет объём газовой смеси (в литрах)? (H = 1, He = 4, C = 12)",
         "ar": "في وعاء ذي مكبس عديم الاحتكاك يشغل 3.2 g من غاز CH4 حجمًا قدره 4 L. مع إبقاء درجة الحرارة ثابتة يُضاف إلى الوعاء 4 g من غاز He. كم لترًا يصبح حجم المخلوط الغازي في النهاية؟ (H = 1، He = 4، C = 12)",
         "zh": "在带无摩擦活塞的容器中，3.2 g CH4 气体的体积为 4 L。保持温度不变，向容器中加入 4 g He 气体。最终混合气体的体积为多少升？(H = 1，He = 4，C = 12)",
-        "ku": "Di firaxeke bi pistona bê sûrtin de 3.2 g gaza CH4 4 L qebare digire. Germahî sabît tê hiştin û 4 g gaza He li firaxê tê zêdekirin. Di dawiyê de qebareya tevliheviya gazê dibe çend lître? (H = 1, He = 4, C = 12)"
+        "ku": "Di firaxeke bi pistona bêxişandin de 3,2 g gaza CH4 4 L qebare digire. Germahî sabît tê hiştin û 4 g gaza He li firaxê tê zêdekirin. Di rewşa dawî de qebareya tevliheviya gazan dibe çend L? (H = 1, He = 4, C = 12)"
       },
       "options": [
         {
@@ -1498,7 +1498,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "n(CH4) = 3,2/16 = 0,2 моль, n(He) = 4/4 = 1 моль; всего 1,2 моль. В сосуде с поршнем давление остаётся равным внешнему, поэтому при постоянных P и T V1/n1 = V2/n2 (закон Авогадро): 4/0,2 = V2/1,2 → V2 = 24 л. Если считать, что растёт давление, а объём не меняется, получится 4 л; если считать, что добавленный газ тоже займёт 4 л, — 8 л; если брать отношение масс вместо молей — 9 л; если учесть только количество He — 20 л.",
         "ar": "n(CH4) = 3.2/16 = 0.2 mol وn(He) = 4/4 = 1 mol؛ المجموع 1.2 mol. في الوعاء ذي المكبس يبقى الضغط مساويًا للضغط الخارجي، لذا عند ثبات P وT يكون V1/n1 = V2/n2 (أفوجادرو): 4/0.2 = V2/1.2 ← V2 = 24 L. افتراض أن الضغط يزداد والحجم لا يتغير يعطي 4 L، وافتراض أن الغاز المضاف يشغل 4 L أيضًا يعطي 8 L، واستخدام الكتل بدل المولات يعطي 9 L، واستخدام مولات He وحدها يعطي 20 L.",
         "zh": "n(CH4) = 3.2/16 = 0.2 mol，n(He) = 4/4 = 1 mol；共 1.2 mol。活塞容器中压强始终等于外界压强，所以在 P、T 不变时 V1/n1 = V2/n2（阿伏加德罗定律）：4/0.2 = V2/1.2 → V2 = 24 L。误以为压强增大而体积不变得 4 L，以为加入的气体也只占 4 L 得 8 L，用质量代替物质的量得 9 L，只用 He 的物质的量得 20 L。",
-        "ku": "n(CH4) = 3.2/16 = 0.2 mol, n(He) = 4/4 = 1 mol; bi giştî 1.2 mol. Di firaxa bi piston de zext bi zexta derve re wekhev dimîne, loma di P û T yên sabît de V1/n1 = V2/n2 (Avogadro): 4/0.2 = V2/1.2 → V2 = 24 L. Heke were texmînkirin ku zext zêde dibe û qebare naguhere 4 L, heke gaza zêdekirî jî 4 L bigire 8 L, heke li şûna molan girse werin bikaranîn 9 L, û heke tenê molên He werin bikaranîn 20 L derdikeve."
+        "ku": "n(CH4) = 3,2/16 = 0,2 mol, n(He) = 4/4 = 1 mol; bi giştî 1,2 mol. Di firaxa bi piston de zext bi zexta derve re wekhev dimîne, loma di P û T yên sabît de V1/n1 = V2/n2 (Avogadro): 4/0,2 = V2/1,2 → V2 = 24 L. Heke were texmînkirin ku zext zêde dibe û qebare naguhere 4 L, heke were fikirîn ku gaza lêzêdekirî jî 4 L digire 8 L, heke li şûna molan girse werin rêjekirin 9 L, heke tenê mola He were bikaranîn 20 L tê dîtin."
       }
     },
     {
@@ -1511,7 +1511,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Какой из следующих газов имеет плотность 2,2 г/л при 127 °C и 1,64 атм? (H = 1, C = 12, N = 14, O = 16, S = 32; R = 0,082 л·атм/(моль·K))",
         "ar": "أيّ الغازات الآتية كثافته 2.2 g/L عند 127 °C وضغط 1.64 atm؟ (H = 1، C = 12، N = 14، O = 16، S = 32؛ R = 0.082 L·atm/(mol·K))",
         "zh": "下列哪种气体在 127 °C、1.64 atm 下的密度为 2.2 g/L？(H = 1，C = 12，N = 14，O = 16，S = 32；R = 0.082 L·atm/(mol·K))",
-        "ku": "Kîjan ji van gazan di 127 °C û 1.64 atm de xwedî çirbûna 2.2 g/L e? (H = 1, C = 12, N = 14, O = 16, S = 32; R = 0.082 L·atm/(mol·K))"
+        "ku": "Gaza ku di 127 °C û 1,64 atm de çiriya wê 2,2 g/L e kîjan e? (H = 1, C = 12, N = 14, O = 16, S = 32; R = 0,082 L·atm/(mol·K))"
       },
       "options": [
         {
@@ -1574,7 +1574,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "P·MA = d·R·T → MA = d·R·T/P = 2,2·0,082·400/1,64 = 72,16/1,64 = 44 г/моль. Молярные массы: CH4 = 16, N2 = 28, O2 = 32, CO2 = 44, SO2 = 64 г/моль, значит, это CO2. С температурой в °C получилось бы около 14 г/моль, что не подходит ни одному газу, — в формулу нужно подставлять кельвины.",
         "ar": "P·MA = d·R·T ← MA = d·R·T/P = 2.2·0.082·400/1.64 = 72.16/1.64 = 44 g/mol. الكتل المولية: CH4 = 16 وN2 = 28 وO2 = 32 وCO2 = 44 وSO2 = 64 g/mol، إذن الغاز هو CO2. ولو استُخدمت درجة الحرارة بالسلسيوس لنتج نحو 14 g/mol ولا يطابق أي غاز، ما يبيّن ضرورة استخدام الكلفن.",
         "zh": "P·MA = d·R·T → MA = d·R·T/P = 2.2·0.082·400/1.64 = 72.16/1.64 = 44 g/mol。各气体摩尔质量为 CH4 = 16、N2 = 28、O2 = 32、CO2 = 44、SO2 = 64 g/mol，所以该气体是 CO2。若用摄氏温度计算得约 14 g/mol，与任何气体都不符，说明公式中必须使用开尔文温度。",
-        "ku": "P·MA = d·R·T → MA = d·R·T/P = 2.2·0.082·400/1.64 = 72.16/1.64 = 44 g/mol. Girseyên molî CH4 = 16, N2 = 28, O2 = 32, CO2 = 44 û SO2 = 64 g/mol in, loma gaz CO2 ye. Heke germahî bi °C were nivîsandin nêzî 14 g/mol derdikeve û bi tu gazê re li hev nayê; ev nîşan dide ku divê Kelvin were bikaranîn."
+        "ku": "P·MA = d·R·T → MA = d·R·T/P = 2,2·0,082·400/1,64 = 72,16/1,64 = 44 g/mol. Girseyên molî CH4 = 16, N2 = 28, O2 = 32, CO2 = 44, SO2 = 64 g/mol in, loma gaz CO2 ye. Heke germahî bi °C were nivîsandin nêzî 14 g/mol tê dîtin ku bi tu gazê re li hev nayê; ev jî nîşan dide ku di formulê de bikaranîna Kelvin mecbûrî ye."
       }
     },
     {
@@ -1587,7 +1587,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "В сосуде постоянного объёма смесь из 4 г He, 16 г O2 и 14 г N2 имеет общее давление 1,6 атм. Каково парциальное давление O2 (в атм)? (He = 4, N = 14, O = 16)",
         "ar": "في وعاء ثابت الحجم، الضغط الكلي لمخلوط من 4 g He و16 g O2 و14 g N2 يساوي 1.6 atm. كم يبلغ الضغط الجزئي لغاز O2 بوحدة atm؟ (He = 4، N = 14، O = 16)",
         "zh": "刚性容器中由 4 g He、16 g O2 和 14 g N2 组成的混合气体总压强为 1.6 atm。O2 的分压是多少 atm？(He = 4，N = 14，O = 16)",
-        "ku": "Di firaxeke bi qebareya sabît de zexta giştî ya tevliheviya 4 g He, 16 g O2 û 14 g N2 1.6 atm e. Li gorî vê, zexta beşî ya O2 çend atm e? (He = 4, N = 14, O = 16)"
+        "ku": "Di firaxeke bi qebareya sabît de zexta giştî ya tevliheviya ji gazên 4 g He, 16 g O2 û 14 g N2 1,6 atm e. Li gorî vê, zexta qismî ya gaza O2 çend atm e? (He = 4, N = 14, O = 16)"
       },
       "options": [
         {
@@ -1598,7 +1598,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "0,4 атм",
           "ar": "0.4 atm",
           "zh": "0.4 atm",
-          "ku": "0.4 atm"
+          "ku": "0,4 atm"
         },
         {
           "tr": "0,53 atm",
@@ -1608,7 +1608,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "0,53 атм",
           "ar": "0.53 atm",
           "zh": "0.53 atm",
-          "ku": "0.53 atm"
+          "ku": "0,53 atm"
         },
         {
           "tr": "0,75 atm",
@@ -1618,7 +1618,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "0,75 атм",
           "ar": "0.75 atm",
           "zh": "0.75 atm",
-          "ku": "0.75 atm"
+          "ku": "0,75 atm"
         },
         {
           "tr": "0,8 atm",
@@ -1628,7 +1628,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "0,8 атм",
           "ar": "0.8 atm",
           "zh": "0.8 atm",
-          "ku": "0.8 atm"
+          "ku": "0,8 atm"
         },
         {
           "tr": "1,2 atm",
@@ -1638,7 +1638,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "1,2 атм",
           "ar": "1.2 atm",
           "zh": "1.2 atm",
-          "ku": "1.2 atm"
+          "ku": "1,2 atm"
         }
       ],
       "correctIndex": 0,
@@ -1650,7 +1650,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "n(He) = 4/4 = 1 моль, n(O2) = 16/32 = 0,5 моль, n(N2) = 14/28 = 0,5 моль; всего 2 моль. По закону Дальтона P(O2) = X(O2)·P(общ.) = (0,5/2)·1,6 = 0,4 атм. Если взять массовую долю вместо мольной, получится (16/34)·1,6 ≈ 0,75 атм; если разделить давление поровну на три газа — ≈ 0,53 атм; 0,8 атм — парциальное давление He, 1,2 атм — сумма парциальных давлений He и N2.",
         "ar": "n(He) = 4/4 = 1 mol وn(O2) = 16/32 = 0.5 mol وn(N2) = 14/28 = 0.5 mol؛ المجموع 2 mol. وفق قانون دالتون P(O2) = X(O2)·P(الكلي) = (0.5/2)·1.6 = 0.4 atm. استخدام الكسر الكتلي بدل الكسر المولي يعطي (16/34)·1.6 ≈ 0.75 atm، وتقسيم الضغط بالتساوي على الغازات الثلاثة يعطي ≈ 0.53 atm؛ و0.8 atm هو الضغط الجزئي لـ He، و1.2 atm هو مجموع الضغطين الجزئيين لـ He وN2.",
         "zh": "n(He) = 4/4 = 1 mol，n(O2) = 16/32 = 0.5 mol，n(N2) = 14/28 = 0.5 mol；共 2 mol。根据道尔顿分压定律，P(O2) = X(O2)·P(总) = (0.5/2)·1.6 = 0.4 atm。用质量分数代替摩尔分数得 (16/34)·1.6 ≈ 0.75 atm，把压强平均分给三种气体得 ≈ 0.53 atm；0.8 atm 是 He 的分压，1.2 atm 是 He 与 N2 分压之和。",
-        "ku": "n(He) = 4/4 = 1 mol, n(O2) = 16/32 = 0.5 mol, n(N2) = 14/28 = 0.5 mol; bi giştî 2 mol. Li gorî zagona Dalton P(O2) = X(O2)·P(giştî) = (0.5/2)·1.6 = 0.4 atm. Heke li şûna perçeya molî perçeya girseyî were bikaranîn (16/34)·1.6 ≈ 0.75 atm, heke zext li sê gazan wekhev were parvekirin ≈ 0.53 atm derdikeve; 0.8 atm zexta beşî ya He ye, 1.2 atm jî berhevoka zextên beşî yên He û N2 ye."
+        "ku": "n(He) = 4/4 = 1 mol, n(O2) = 16/32 = 0,5 mol, n(N2) = 14/28 = 0,5 mol; bi giştî 2 mol. Li gorî zagona Dalton P(O2) = X(O2)·P(giştî) = (0,5/2)·1,6 = 0,4 atm. Heke li şûna kerta molî kerta girseyî were bikaranîn (16/34)·1,6 ≈ 0,75 atm, heke zext li sê gazan wekhev were parvekirin ≈ 0,53 atm tê dîtin; 0,8 atm zexta qismî ya He ye, 1,2 atm jî berhevoka zextên qismî yên He û N2 ye."
       }
     },
     {
@@ -1663,7 +1663,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Газ из сосуда подключили к открытому ртутному манометру; уровень ртути в открытом колене оказался на 14 см выше, чем в колене, соединённом с газом. Какой была бы разность уровней ртути (в см), если бы тот же газ при тех же условиях подключили к закрытому ртутному манометру? (Атмосферное давление 76 см рт. ст.)",
         "ar": "عند توصيل غاز في وعاء بمانومتر زئبقي مفتوح الطرف، يكون مستوى الزئبق في الذراع المفتوحة أعلى بمقدار 14 cm منه في الذراع المتصلة بالغاز. لو وُصل الغاز نفسه في الظروف نفسها بمانومتر زئبقي مغلق الطرف، فكم سنتيمترًا يكون الفرق بين مستويي الزئبق؟ (الضغط الجوي 76 cmHg.)",
         "zh": "将容器中的气体连接到开口汞压强计上时，开口一侧的汞面比连接气体一侧高 14 cm。若在相同条件下把该气体连接到闭口汞压强计上，两侧汞面高度差为多少 cm？(大气压为 76 cmHg。)",
-        "ku": "Dema gaza di firaxekê de bi manometreya cîwayê ya devvekirî ve tê girêdan, asta cîwayê di milê vekirî de 14 cm ji ya milê ku bi gazê ve girêdayî ye bilindtir dimîne. Heke heman gaz di heman şertan de bi manometreya cîwayê ya devgirtî ve bihata girêdan, ferqa di navbera astên cîwayê de dê çend cm bûya? (Zexta hewaya vekirî 76 cmHg e.)"
+        "ku": "Dema gaza di firaxekê de bi manometreyeke cîweyî ya devvekirî ve tê girêdan, asta cîweyê di milê vekirî de 14 cm ji ya milê ku bi gazê ve girêdayî ye bilindtir dimîne. Heke heman gaz di heman şertan de bi manometreyeke cîweyî ya devgirtî ve bihata girêdan, ferqa di navbera astên cîweyê de dê çend cm bûya? (Zexta hewaya vekirî 76 cmHg ye.)"
       },
       "options": [
         {
@@ -1726,7 +1726,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "В открытом манометре уровень ртути со стороны газа ниже, значит, давление газа больше атмосферного: P(газа) = 76 + 14 = 90 см рт. ст. В закрытом колене закрытого манометра — вакуум (давление ≈ 0), поэтому разность уровней прямо равна давлению газа: h = 90 см. Типичные ошибки — вычесть разность уровней из атмосферного давления (76 − 14 = 62) или перенести значение для открытого манометра (14).",
         "ar": "في المانومتر المفتوح يكون الزئبق في جهة الغاز أدنى، إذن ضغط الغاز أكبر من الضغط الجوي: P(الغاز) = 76 + 14 = 90 cmHg. وفي الذراع المغلقة للمانومتر مغلق الطرف يوجد فراغ (الضغط ≈ 0)، لذا يساوي فرق المستويين ضغط الغاز مباشرة: h = 90 cm. طرح الفرق من الضغط الجوي (76 − 14 = 62) أو نقل فرق المانومتر المفتوح كما هو (14) خطآن شائعان.",
         "zh": "开口压强计中气体一侧汞面较低，说明气体压强大于大气压：P(气) = 76 + 14 = 90 cmHg。闭口压强计的封闭端是真空(压强 ≈ 0)，所以汞面高度差直接等于气体压强：h = 90 cm。把高度差从大气压中减去(76 − 14 = 62)或直接照搬开口压强计的高度差(14)都是常见错误。",
-        "ku": "Di manometreya devvekirî de cîwa li aliyê gazê nizmtir e, loma zexta gazê ji zexta hewayê mezintir e: P(gaz) = 76 + 14 = 90 cmHg. Di milê girtî yê manometreya devgirtî de valahî heye (zext ≈ 0), loma ferqa astan rasterast bi zexta gazê re wekhev e: h = 90 cm. Kêmkirina ferqê ji zexta hewayê (76 − 14 = 62) an girtina ferqa manometreya vekirî wek xwe (14) xeletiyên tîpîk in."
+        "ku": "Di manometreya devvekirî de asta cîweyê ya li aliyê gazê nizmtir dimîne, loma zexta gazê ji zexta hewaya vekirî mezintir e: P(gaz) = 76 + 14 = 90 cmHg. Di milê girtî yê manometreya devgirtî de valahî heye (zext ≈ 0), loma ferqa astan rasterast bi zexta gazê re wekhev e: h = 90 cm. Kêmkirina ferqê ji zexta hewaya vekirî (76 − 14 = 62) an girtina ferqa manometreya devvekirî wek xwe (14) şaşiyên berbelav in."
       }
     },
     {
@@ -1739,7 +1739,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Два сосуда соединены закрытым краном: в сосуде объёмом 2 л находится He при 3 атм, в сосуде объёмом 3 л — Ne при 2 атм. При постоянной температуре кран открывают, и газы смешиваются. Каким станет общее давление в атм? (Объёмом соединительной трубки пренебречь.)",
         "ar": "وعاءان يصل بينهما صنبور مغلق: الوعاء الذي سعته 2 L يحتوي He تحت ضغط 3 atm، والذي سعته 3 L يحتوي Ne تحت ضغط 2 atm. عند ثبات درجة الحرارة يُفتح الصنبور فيمتزج الغازان. كم يصبح الضغط الكلي بوحدة atm؟ (يُهمل حجم أنبوب التوصيل.)",
         "zh": "两个容器之间用关闭的阀门相连：2 L 容器中装有 3 atm 的 He，3 L 容器中装有 2 atm 的 Ne。温度不变时打开阀门使气体混合，总压强是多少 atm？（连接管体积忽略不计。）",
-        "ku": "Du firax bi musluxeke girtî bi hev ve girêdayî ne: di ya 2 L de He bi zexta 3 atm, di ya 3 L de Ne bi zexta 2 atm heye. Di germahiya sabît de musluk tê vekirin û gaz tevlihev dibin. Zexta giştî dibe çend atm? (Qebareya lûleya girêdanê nayê hesibandin.)"
+        "ku": "Di navbera du firaxan de musluxeke girtî heye: di firaxa 2 L de gaza He bi zexta 3 atm, di firaxa 3 L de gaza Ne bi zexta 2 atm heye. Di germahiya sabît de muslux tê vekirin û gaz tevlî hev dibin. Zexta giştî dibe çend atm? (Qebareya lûleya girêdanê nayê hesibandin.)"
       },
       "options": [
         {
@@ -1750,7 +1750,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "1,2 атм",
           "ar": "1.2 atm",
           "zh": "1.2 atm",
-          "ku": "1.2 atm"
+          "ku": "1,2 atm"
         },
         {
           "tr": "2,4 atm",
@@ -1760,7 +1760,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "2,4 атм",
           "ar": "2.4 atm",
           "zh": "2.4 atm",
-          "ku": "2.4 atm"
+          "ku": "2,4 atm"
         },
         {
           "tr": "2,5 atm",
@@ -1770,7 +1770,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "2,5 атм",
           "ar": "2.5 atm",
           "zh": "2.5 atm",
-          "ku": "2.5 atm"
+          "ku": "2,5 atm"
         },
         {
           "tr": "5 atm",
@@ -1802,7 +1802,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "После открытия крана каждый газ занимает общий объём 2 + 3 = 5 л. При постоянной температуре P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 атм, P(Ne) = 2·3/5 = 1,2 атм; общее давление 1,2 + 1,2 = 2,4 атм. Так как объёмы разные, нельзя брать среднее (2,5) или сумму (5) давлений; 1,2 атм — лишь парциальное давление одного газа, 12 — сумма P·V, не делённая на общий объём.",
         "ar": "عند فتح الصنبور ينتشر كل غاز في الحجم الكلي 2 + 3 = 5 L. عند ثبات الحرارة P1·V1 = P2·V2: P(He) = 3·2/5 = 1.2 atm وP(Ne) = 2·3/5 = 1.2 atm؛ الضغط الكلي 1.2 + 1.2 = 2.4 atm. ولأن الحجمين مختلفان لا يصح أخذ متوسط الضغطين (2.5) ولا مجموعهما (5)؛ و1.2 atm هو الضغط الجزئي لغاز واحد فقط، و12 هو مجموع P·V دون قسمته على الحجم الكلي.",
         "zh": "打开阀门后，每种气体都扩散到总体积 2 + 3 = 5 L 中。温度不变时 P1·V1 = P2·V2：P(He) = 3·2/5 = 1.2 atm，P(Ne) = 2·3/5 = 1.2 atm；总压强 1.2 + 1.2 = 2.4 atm。由于两容器体积不同，不能取压强的平均值(2.5)或直接相加(5)；1.2 atm 只是一种气体的分压，12 是没有除以总体积的 P·V 之和。",
-        "ku": "Dema musluk vedibe her gaz li qebareya giştî ya 2 + 3 = 5 L belav dibe. Di germahiya sabît de P1·V1 = P2·V2: P(He) = 3·2/5 = 1.2 atm, P(Ne) = 2·3/5 = 1.2 atm; zexta giştî 1.2 + 1.2 = 2.4 atm. Ji ber ku qebare cuda ne, navînciya zextan (2.5) an berhevoka wan (5) nayê girtin; 1.2 atm tenê zexta beşî ya gazekê ye, 12 jî berhevoka P·V ye ku li qebareya giştî nehatiye parvekirin."
+        "ku": "Dema muslux vedibe, her gaz li qebareya giştî ya 2 + 3 = 5 L belav dibe. Di germahiya sabît de P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm; zexta giştî 1,2 + 1,2 = 2,4 atm. Ji ber ku qebare cuda ne, navîna zextan (2,5) an berhevoka wan (5) nayê girtin; 1,2 atm tenê zexta qismî ya gazekê ye, 12 jî berhevoka P·V ye ku li qebareya giştî nehatiye parvekirin."
       }
     },
     {
@@ -1815,7 +1815,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Даны утверждения о газах He и CH4, находящихся при одинаковой температуре: I. Средние кинетические энергии их частиц равны. II. Частицы He в среднем движутся быстрее частиц CH4. III. При столкновениях суммарная кинетическая энергия частиц уменьшается, поэтому давление газа в закрытом сосуде со временем падает. Какие из них верны? (H = 1, He = 4, C = 12)",
         "ar": "بالنسبة لغازي He وCH4 عند درجة الحرارة نفسها، أيّ العبارات الآتية صحيحة؟ I. متوسط الطاقة الحركية لجسيماتهما متساوٍ. II. تتحرك جسيمات He في المتوسط أسرع من جسيمات CH4. III. كلما تصادمت الجسيمات تقل طاقتها الحركية الكلية، لذا ينخفض ضغط الغاز في الوعاء المغلق مع الزمن. (H = 1، He = 4، C = 12)",
         "zh": "关于同温下的 He 和 CH4 气体，下列说法中哪些正确？I. 它们粒子的平均动能相等。II. He 粒子的平均运动速率比 CH4 粒子大。III. 粒子相互碰撞时总动能减小，因此密闭容器中气体的压强会随时间降低。(H = 1，He = 4，C = 12)",
-        "ku": "Derbarê gazên He û CH4 yên di heman germahiyê de, kîjan ji van gotinan rast in? I. Enerjiya kînetîk a navîn a tenekên wan wekhev e. II. Tenekên He bi navînî ji tenekên CH4 bileztir diçin. III. Her ku tenek li hev dixin enerjiya wan a kînetîk a giştî kêm dibe, loma zexta gazê di firaxa girtî de bi demê re dadikeve. (H = 1, He = 4, C = 12)"
+        "ku": "Derbarê gazên He û CH4 yên di heman germahiyê de: I. Enerjiyên kînetîk ên navîn ên perçeyên wan wekhev in. II. Perçeyên He bi navînî ji perçeyên CH4 bileztir dilivin. III. Her ku perçe li hev dikevin enerjiya wan a kînetîk a giştî kêm dibe, loma zexta gazê ya di firaxa girtî de bi demê re dadikeve. Kîjan ji van gotinan rast in? (H = 1, He = 4, C = 12)"
       },
       "options": [
         {
@@ -1878,7 +1878,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "I верно: средняя кинетическая энергия зависит только от абсолютной температуры, а не от природы газа. II верно: при равных кинетических энергиях более лёгкий He (4 г/моль) движется быстрее CH4 (16 г/моль); по закону Грэма отношение скоростей √(16/4) = 2. III неверно: столкновения частиц идеального газа упругие, при постоянной температуре суммарная кинетическая энергия и давление со временем не меняются.",
         "ar": "العبارة I صحيحة: متوسط الطاقة الحركية يعتمد على درجة الحرارة المطلقة فقط لا على نوع الغاز. العبارة II صحيحة: عند تساوي الطاقة الحركية يكون He الأخف (4 g/mol) أسرع من CH4 (16 g/mol)، ووفق قانون جراهام نسبة السرعتين √(16/4) = 2. العبارة III خاطئة: تصادمات جسيمات الغاز المثالي مرنة، فلا تتغير الطاقة الحركية الكلية ولا الضغط مع الزمن عند ثبات درجة الحرارة.",
         "zh": "I 正确：平均动能只取决于热力学温度，与气体种类无关。II 正确：动能相等时，摩尔质量较小的 He (4 g/mol) 比 CH4 (16 g/mol) 运动得快；根据格雷厄姆定律，速率之比为 √(16/4) = 2。III 错误：理想气体粒子的碰撞是弹性的，温度不变时总动能和压强不随时间改变。",
-        "ku": "I rast e: enerjiya kînetîk a navîn tenê bi germahiya mutleq ve girêdayî ye, ne bi cureyê gazê. II rast e: dema enerjiyên kînetîk wekhev in, He ya siviktir (4 g/mol) ji CH4 (16 g/mol) bileztir e; li gorî zagona Graham rêjeya leza wan √(16/4) = 2 ye. III şaş e: lêketinên tenekên gaza îdeal elastîk in, di germahiya sabît de enerjiya kînetîk a giştî û zext bi demê re naguherin."
+        "ku": "I rast e: enerjiya kînetîk a navîn tenê bi germahiya mutleq ve girêdayî ye, ne bi cureyê gazê. II rast e: dema enerjiyên kînetîk wekhev bin, He (4 g/mol) ku girseya wê ya molî piçûktir e ji CH4 (16 g/mol) bileztir e; li gorî zagona Graham rêjeya lezan √(16/4) = 2 ye. III şaş e: lihevketinên perçeyên gaza îdeal elastîk in, di germahiya sabît de enerjiya kînetîk a giştî û zext bi demê re naguherin."
       }
     },
     {
@@ -1902,7 +1902,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "0,5 атм и 500 K",
           "ar": "0.5 atm و500 K",
           "zh": "0.5 atm 和 500 K",
-          "ku": "0.5 atm û 500 K"
+          "ku": "0,5 atm û 500 K"
         },
         {
           "tr": "50 atm ve 200 K",
@@ -1922,7 +1922,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "0,5 атм и 200 K",
           "ar": "0.5 atm و200 K",
           "zh": "0.5 atm 和 200 K",
-          "ku": "0.5 atm û 200 K"
+          "ku": "0,5 atm û 200 K"
         },
         {
           "tr": "50 atm ve 500 K",
@@ -1942,7 +1942,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "1 атм и температура, очень близкая к температуре конденсации газа",
           "ar": "1 atm ودرجة حرارة قريبة جدًا من درجة تكاثف الغاز",
           "zh": "1 atm 且温度非常接近该气体的冷凝温度",
-          "ku": "1 atm û germahiyeke pir nêzî germahiya hilmbûna (kondensasyona) gazê"
+          "ku": "1 atm û germahiyeke pir nêzî germahiya şilebûna gazê"
         }
       ],
       "correctIndex": 0,
@@ -1954,7 +1954,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Модель идеального газа предполагает отсутствие притяжения между частицами и пренебрегает их собственным объёмом. При низком давлении частицы далеко друг от друга, и их собственный объём мал по сравнению с объёмом сосуда; при высокой температуре частицы быстрые, и притяжение влияет слабее. Поэтому наиболее идеально газ ведёт себя при 0,5 атм и 500 K — сочетании самого низкого давления и самой высокой температуры. Высокое давление, низкая температура или близость к температуре конденсации сближают частицы и увеличивают отклонение от идеальности.",
         "ar": "يفترض نموذج الغاز المثالي عدم وجود تجاذب بين الجسيمات ويهمل حجمها الذاتي. عند الضغط المنخفض تتباعد الجسيمات فيصبح حجمها الذاتي مهملًا مقارنة بحجم الوعاء، وعند درجة الحرارة المرتفعة تكون الجسيمات سريعة فيقل أثر قوى التجاذب. لذلك يكون السلوك الأقرب إلى المثالي عند 0.5 atm و500 K، أي عند اجتماع أدنى ضغط وأعلى درجة حرارة. أما الضغط المرتفع أو الحرارة المنخفضة أو القرب من درجة التكاثف فتقرّب الجسيمات وتزيد أثر التجاذب والانحراف عن المثالية.",
         "zh": "理想气体模型假定粒子间没有引力并忽略粒子本身的体积。低压时粒子相距很远，其本身体积相对容器可以忽略；高温时粒子运动快，引力的影响变小。因此最接近理想的情况是 0.5 atm 和 500 K，即最低压强与最高温度同时满足。高压、低温或接近冷凝温度都会使粒子靠近，增强引力作用，使偏离理想的程度增大。",
-        "ku": "Modela gaza îdeal texmîn dike ku di navbera tenekan de kişandin tune ye û qebareya tenekan bi xwe nayê hesibandin. Di zexta nizm de tenek ji hev dûr in, loma qebareya wan li gorî firaxê ne girîng e; di germahiya bilind de tenek bilez in, loma bandora hêzên kişandinê kêm dibe. Ji ber vê yekê tevgera herî îdeal di 0.5 atm û 500 K de ye, ku zexta herî nizm û germahiya herî bilind bi hev re ne. Zexta bilind, germahiya nizm an nêzîkbûna germahiya hilmbûnê tenekan nêzî hev dike û dûrketina ji îdealiyê mezin dike."
+        "ku": "Di modela gaza îdeal de di navbera perçeyan de kişandin tune ye û qebareya perçeyan bi xwe nayê hesibandin. Di zexta nizm de perçe ji hev dûr in, loma qebareya wan li gorî qebareya firaxê ne girîng e; di germahiya bilind de perçe bilez in, loma bandora hêzên kişandinê kêm dibe. Ji ber vê yekê tevgera herî îdeal di şertên 0,5 atm û 500 K de ye, ku zexta herî nizm û germahiya herî bilind bi hev re ne. Zexta bilind, germahiya nizm an nêzîkbûna germahiya şilebûnê perçeyan nêzî hev dike, bandora kişandinê zêde dike û dûrketina ji îdealbûnê mezin dike."
       }
     },
     {
@@ -1967,7 +1967,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Для постоянного количества идеального газа график какой из следующих пар величин представляет собой возрастающую прямую, проходящую через начало координат?",
         "ar": "لكمية ثابتة من غاز مثالي، أيّ أزواج المتغيرات الآتية يكون تمثيلها البياني خطًا مستقيمًا متزايدًا يمر بنقطة الأصل؟",
         "zh": "对于一定量的理想气体，下列哪一对变量的图像是一条过原点的上升直线？",
-        "ku": "Ji bo mîqdareke sabît ji gazeke îdeal, grafîka kîjan ji van cotên guhêrbaran xêzeke rast a zêdebûyî ye ku di destpêka koordînatan re derbas dibe?"
+        "ku": "Ji bo mîqdareke sabît a gazeke îdeal, grafîka kîjan ji van cotên guherbaran xêzeke rast a zêdebûyî ye ku di xala destpêkê (orîjînê) re derbas dibe?"
       },
       "options": [
         {
@@ -2030,7 +2030,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "По закону Шарля при постоянном давлении V = k·T, поэтому график V–T(K) — возрастающая прямая, проходящая через начало координат. График V–t(°C) тоже линейный, но при продолжении проходит не через начало координат, а через точку t = −273 °C. При постоянной температуре график P–V — гипербола, а график P·V–P — горизонтальная прямая. При постоянном объёме P прямо пропорционально T, поэтому график P–1/T — не прямая, а убывающая кривая.",
         "ar": "وفق قانون شارل يكون V = k·T عند ثبات الضغط، لذا فالتمثيل V–T(K) خط مستقيم متزايد يمر بنقطة الأصل. والتمثيل V–t (°C) خطي أيضًا لكنه عند مده يمر بالنقطة t = −273 °C لا بنقطة الأصل. عند ثبات الحرارة يكون التمثيل P–V منحنى تناسب عكسي (قطعًا زائدًا)، والتمثيل P·V–P خطًا أفقيًا. وعند ثبات الحجم يتناسب P طرديًا مع T، لذا فالتمثيل P–1/T منحنى متناقص لا خط مستقيم.",
         "zh": "根据查理定律，恒压下 V = k·T，所以 V–T(K) 图像是过原点的上升直线。V–t(摄氏温度)图像虽然也是直线，但延长后经过 t = −273 °C，而不是原点。恒温下 P–V 图像是反比例曲线（双曲线），P·V–P 图像是一条水平线。恒容下 P 与 T 成正比，所以 P–1/T 图像是下降的曲线，而不是直线。",
-        "ku": "Li gorî zagona Charles di zexta sabît de V = k·T ye; grafîka V–T(K) xêzeke rast a zêdebûyî ye ku di destpêkê re derbas dibe. Grafîka V–t (Celsius) jî xêzî ye lê dema tê dirêjkirin di t = −273 °C re derbas dibe, ne di destpêkê re. Di germahiya sabît de grafîka P–V xêzeke berevajî rêjeyî (hîperbol) ye, grafîka P·V–P jî xêzeke asoyî ye. Di qebareya sabît de P bi T re rasterast rêjeyî ye, loma grafîka P–1/T ne xêzeke rast, xêzeke kêmbûyî ya xwar e."
+        "ku": "Li gorî zagona Charles di zexta sabît de V = k·T ye; grafîka V–T(K) xêzeke rast a zêdebûyî ye ku di orîjînê re derbas dibe. Grafîka V–t (Celsius) jî xêzeke rast e, lê dema tê dirêjkirin ne di orîjînê re, di xala t = −273 °C re derbas dibe. Di germahiya sabît de grafîka P–V kevaneke berevajî rêjeyî (hîperbol) ye, grafîka P·V–P jî xêzeke asoyî ye. Di qebareya sabît de P bi T re rasterast rêjeyî ye, loma grafîka P–1/T ne xêzeke rast e, kevaneke daketî ye."
       }
     },
     {
@@ -2043,7 +2043,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "В трёх отдельных сосудах одинакового объёма при одной и той же температуре находится по 8 г He, CH4 и SO2. Каково соотношение давлений этих газов? (H = 1, He = 4, C = 12, O = 16, S = 32)",
         "ar": "تحتوي ثلاثة أوعية منفصلة متساوية الحجم عند درجة الحرارة نفسها على 8 g من كل من He وCH4 وSO2. ما العلاقة بين ضغوط هذه الغازات؟ (H = 1، He = 4، C = 12، O = 16، S = 32)",
         "zh": "在同一温度下，三个体积相等的独立容器中分别装有 8 g He、CH4 和 SO2。这些气体压强之间的关系是下列哪一项？(H = 1，He = 4，C = 12，O = 16，S = 32)",
-        "ku": "Di heman germahiyê de, di sê firaxên cuda yên bi qebareya wekhev de her yek 8 g He, CH4 û SO2 hene. Têkiliya di navbera zextên van gazan de kîjan e? (H = 1, He = 4, C = 12, O = 16, S = 32)"
+        "ku": "Di heman germahiyê de, di sê firaxên cuda yên bi qebareya wekhev de ji her yekê 8 g gazên He, CH4 û SO2 hene. Têkiliya di navbera zextên van gazan de kîjan e? (H = 1, He = 4, C = 12, O = 16, S = 32)"
       },
       "options": [
         {
@@ -2106,7 +2106,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "При одинаковых V и T давление прямо пропорционально числу молей (P = n·R·T/V). n(He) = 8/4 = 2 моль, n(CH4) = 8/16 = 0,5 моль, n(SO2) = 8/64 = 0,125 моль, поэтому P(He) > P(CH4) > P(SO2). Типичные ошибки — считать, что равные массы дают равные давления, или что у газа с большей молярной массой давление больше; при равных массах у газа с меньшей молярной массой больше молей и выше давление.",
         "ar": "عند تساوي V وT يتناسب الضغط طرديًا مع عدد المولات (P = n·R·T/V). n(He) = 8/4 = 2 mol وn(CH4) = 8/16 = 0.5 mol وn(SO2) = 8/64 = 0.125 mol، إذن P(He) > P(CH4) > P(SO2). من الأخطاء الشائعة الظن بأن تساوي الكتل يعني تساوي الضغوط، أو أن الغاز ذا الكتلة المولية الأكبر ضغطه أكبر؛ فعند تساوي الكتل يكون للغاز ذي الكتلة المولية الأصغر عدد مولات وضغط أكبر.",
         "zh": "在 V 和 T 相同时，压强与物质的量成正比(P = n·R·T/V)。n(He) = 8/4 = 2 mol，n(CH4) = 8/16 = 0.5 mol，n(SO2) = 8/64 = 0.125 mol，所以 P(He) > P(CH4) > P(SO2)。认为质量相等压强就相等，或认为摩尔质量大的气体压强大，都是常见错误；质量相等时，摩尔质量小的气体物质的量多、压强大。",
-        "ku": "Di heman V û T de zext bi hejmara molan re rasterast rêjeyî ye (P = n·R·T/V). n(He) = 8/4 = 2 mol, n(CH4) = 8/16 = 0.5 mol, n(SO2) = 8/64 = 0.125 mol, loma P(He) > P(CH4) > P(SO2). Fikirîna ku ji ber girseyên wekhev zext jî wekhev in, an jî ku gaza bi girseya molî ya mezintir zexta mezintir heye, xeletiyên tîpîk in; di girseya wekhev de gaza bi girseya molî ya piçûktir hejmara molan û zexta mezintir heye."
+        "ku": "Di heman V û T de zext bi hejmara molan re rasterast rêjeyî ye (P = n·R·T/V). n(He) = 8/4 = 2 mol, n(CH4) = 8/16 = 0,5 mol, n(SO2) = 8/64 = 0,125 mol, loma P(He) > P(CH4) > P(SO2). Fikirîna ku ji ber wekheviya girseyan zext jî wekhev in, an jî texmînkirina ku zexta gaza bi girseya molî ya mezintir mezintir e, şaşiyên berbelav in; di girseya wekhev de hejmara molan û zexta gaza ku girseya wê ya molî piçûktir e mezintir e."
       }
     },
     {
@@ -2119,7 +2119,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "К идеальному газу в сосуде с поршнем без трения при постоянной температуре добавляют ещё некоторое количество того же газа. Какие из величин — I. давление, II. плотность, III. объём — не изменяются?",
         "ar": "يُضاف مزيد من الغاز نفسه إلى غاز مثالي في وعاء ذي مكبس عديم الاحتكاك مع إبقاء درجة الحرارة ثابتة. أيّ الكميات الآتية للغاز لا تتغير؟ I. الضغط، II. الكثافة، III. الحجم",
         "zh": "保持温度不变，向带无摩擦活塞的容器中的理想气体再加入一些同种气体。气体的下列物理量中哪些不变？I. 压强，II. 密度，III. 体积",
-        "ku": "Germahî sabît tê hiştin û li gaza îdeal a di firaxeke bi pistona bê sûrtin de hinekî din ji heman gazê tê zêdekirin. Kîjan ji van mîqdarên gazê naguherin? I. zext, II. çirbûn, III. qebare"
+        "ku": "Germahî sabît tê hiştin û li gaza îdeal a di firaxeke bi pistona bêxişandin de hinekî din ji heman gazê tê zêdekirin. Li gorî vê, kîjan ji van mezinahiyên gazê naguherin? I. zext, II. çirî, III. qebare"
       },
       "options": [
         {
@@ -2182,7 +2182,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Поршень без трения перемещается, пока внутреннее давление не сравняется с внешним, поэтому давление газа не меняется (I). При постоянных давлении и температуре объём растёт пропорционально числу молей, то есть объём меняется (III). В формуле d = P·MA/(R·T) P, MA и T не меняются, поэтому плотность постоянна (II); масса и объём растут в одинаковое число раз. Не изменяются давление и плотность.",
         "ar": "يتحرك المكبس عديم الاحتكاك حتى يتساوى الضغط الداخلي مع الخارجي، لذا لا يتغير ضغط الغاز (I). وعند ثبات الضغط ودرجة الحرارة يزداد الحجم طرديًا مع عدد المولات، فالحجم يتغير (III). وفي العلاقة d = P·MA/(R·T) لا تتغير P وMA وT، لذا تبقى الكثافة ثابتة (II)، إذ تزداد الكتلة والحجم بالنسبة نفسها. الكميتان اللتان لا تتغيران هما الضغط والكثافة.",
         "zh": "无摩擦活塞会移动到内外压强相等为止，所以气体压强不变(I)。在压强和温度不变时，体积随物质的量成正比增大，所以体积改变(III)。在 d = P·MA/(R·T) 中，P、MA 和 T 都不变，所以密度不变(II)；质量和体积按相同比例增大。不变的量是压强和密度。",
-        "ku": "Pistona bê sûrtin heta ku zexta hundir bi ya derve re wekhev bibe diçe, loma zexta gazê naguhere (I). Di zext û germahiya sabît de qebare bi hejmara molan re rasterast zêde dibe, loma qebare diguhere (III). Di d = P·MA/(R·T) de P, MA û T naguherin, loma çirbûn sabît dimîne (II); girse û qebare bi heman rêjeyê zêde dibin. Mîqdarên ku naguherin zext û çirbûn in."
+        "ku": "Pistona bêxişandin heta ku zexta hundir bi ya derve re wekhev bibe dilive, loma zexta gazê naguhere (I). Di zext û germahiya sabît de qebare bi hejmara molan re rasterast rêjeyî zêde dibe, ango qebare diguhere (III). Di têkiliya d = P·MA/(R·T) de P, MA û T naguherin, loma çirî sabît dimîne (II); girse û qebare bi heman rêjeyê zêde dibin. Mezinahiyên ku naguherin zext û çirî ne."
       }
     },
     {
@@ -2206,7 +2206,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Рост давления воздуха в шприце с закрытым носиком при нажатии на поршень",
           "ar": "ازدياد ضغط الهواء داخل محقنة مسدودة الطرف عند دفع مكبسها",
           "zh": "堵住针头的注射器，推动活塞时其中空气的压强增大",
-          "ku": "Dema pistona şiringeyeke serê wê girtî tê pêldan, zexta hewaya hundir zêde dibe"
+          "ku": "Dema pistona şiringeyeke ku serê wê girtî ye tê pêldan, zexta hewaya hundir zêde dibe"
         },
         {
           "tr": "Sıcak odada şişirilen balonun soğuk balkona çıkarıldığında büzülmesi",
@@ -2216,7 +2216,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Сжатие шарика, надутого в тёплой комнате, при выносе на холодный балкон",
           "ar": "انكماش بالون نُفخ في غرفة دافئة عند إخراجه إلى شرفة باردة",
           "zh": "在温暖房间里吹起的气球拿到寒冷的阳台上会收缩",
-          "ku": "Balona ku di odeyeke germ de hatiye pifkirin dema derdikeve balkona sar diçile (piçûk dibe)"
+          "ku": "Balona ku di odeyeke germ de hatiye pifkirin, dema derdikeve balkona sar diçirmise"
         },
         {
           "tr": "Uzun yolculuktan sonra ısınan otomobil lastiklerinin basıncının artması",
@@ -2226,7 +2226,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Рост давления в автомобильных шинах, нагревшихся после долгой поездки",
           "ar": "ازدياد ضغط إطارات السيارة عندما تسخن بعد رحلة طويلة",
           "zh": "长途行驶后轮胎变热，胎压升高",
-          "ku": "Piştî rêwîtiyeke dirêj, dema lastîkên otomobîlê germ dibin zexta wan zêde dibe"
+          "ku": "Piştî rêwîtiyeke dirêj, dema tekerên otomobîlê germ dibin zexta wan zêde dibe"
         },
         {
           "tr": "Balona hava üflendikçe balonun büyümesi",
@@ -2246,7 +2246,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Увеличение пузырьков воздуха, выпущенных водолазом, при подъёме к поверхности",
           "ar": "كِبَر فقاعات الهواء التي يطلقها الغوّاص كلما صعدت نحو السطح",
           "zh": "潜水员呼出的气泡在上升到水面的过程中逐渐变大",
-          "ku": "Bilbilên hewayê yên ku dalgiç derdixe her ku ber bi rûyê avê ve hildikişin mezin dibin"
+          "ku": "Bilbilên hewayê yên ku avjenê binavî derdixe, her ku ber bi rûyê avê ve hildikişin mezin dibin"
         }
       ],
       "correctIndex": 1,
@@ -2258,7 +2258,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "У эластичного шарика внутреннее давление остаётся равным внешнему; на холоде абсолютная температура падает, и объём тоже уменьшается. Это прямая пропорциональность объёма и абсолютной температуры при постоянном давлении (закон Шарля). Сжатие закрытого шприца и рост поднимающихся пузырьков — примеры связи давления и объёма при почти постоянной температуре (закон Бойля — Мариотта), рост давления в нагретой шине — связи давления и температуры при почти постоянном объёме (закон Гей-Люссака), а увеличение надуваемого шарика — связи количества вещества и объёма (закон Авогадро).",
         "ar": "يبقى الضغط داخل البالون المرن مساويًا للضغط الخارجي؛ وفي البرد تنخفض درجة الحرارة المطلقة فينقص الحجم أيضًا، وهذا هو التناسب الطردي بين الحجم ودرجة الحرارة المطلقة عند ثبات الضغط (شارل). أما ضغط المحقنة المسدودة وكِبَر الفقاعات الصاعدة فمثالان على علاقة الضغط بالحجم عند ثبات الحرارة تقريبًا (بويل)، وازدياد ضغط الإطار الساخن مثال على علاقة الضغط بالحرارة عند ثبات الحجم تقريبًا (جاي لوساك)، وكِبَر البالون بالنفخ مثال على علاقة عدد المولات بالحجم (أفوجادرو).",
         "zh": "弹性气球的内部压强始终等于外部压强；在寒冷处热力学温度降低，体积也随之减小，这是恒压下体积与热力学温度成正比的关系（查理定律）。压缩堵住的注射器、气泡上升时变大，是温度近似不变时压强与体积的关系（波义耳定律）；轮胎变热后胎压升高，是体积近似不变时压强与温度的关系（盖-吕萨克定律）；气球越吹越大，是物质的量与体积的关系（阿伏加德罗定律）。",
-        "ku": "Zexta hundirê balona nerm bi zexta derve re wekhev dimîne; di sermayê de germahiya mutleq dadikeve û qebare jî kêm dibe. Ev rêjeya rasterast a qebare û germahiya mutleq di zexta sabît de ye (Charles). Pêçandina şiringeya girtî û mezinbûna bilbilên ku hildikişin mînakên têkiliya zext–qebare di germahiya nêzîkî sabît de ne (Boyle), zêdebûna zexta lastîka germ têkiliya zext–germahî di qebareya nêzîkî sabît de ye (Gay-Lussac), mezinbûna balonê bi pifkirinê jî têkiliya hejmara molan–qebare ye (Avogadro)."
+        "ku": "Zexta hundirê balona nerm bi zexta derve re wekhev dimîne; li cihê sar germahiya mutleq dadikeve, loma qebare jî kêm dibe. Ev rêjeya rasterast a qebare û germahiya mutleq di zexta sabît de ye (Charles). Givaştina şiringeya serê wê girtî û mezinbûna bilbilên ku hildikişin mînakên têkiliya zext–qebare ne di germahiya nêzîkî sabît de (Boyle); zêdebûna zexta tekera germbûyî têkiliya zext–germahî ye di qebareya nêzîkî sabît de (Gay-Lussac); mezinbûna balonê bi pifkirinê jî têkiliya hejmara molan–qebare ye (Avogadro)."
       }
     }
   ]

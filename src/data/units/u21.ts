@@ -37,7 +37,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В окислительно-восстановительных реакциях вещество, отдающее электроны, окисляется (это восстановитель); вещество, принимающее электроны, восстанавливается (это окислитель).",
         "ar": "في تفاعلات الأكسدة والاختزال، المادة التي تفقد الإلكترونات تتأكسد (وهي العامل المختزل)؛ والمادة التي تكتسب الإلكترونات تُختزل (وهي العامل المؤكسد).",
         "zh": "在氧化还原反应中，失去电子的物质被氧化（作还原剂）；得到电子的物质被还原（作氧化剂）。",
-        "ku": "Di reaksiyonên redoksê de, madeya ku elektronan dide oksîd dibe (ew reduktant e); madeya ku elektronan distîne kêm dibe (ew oksîdant e)."
+        "ku": "Di reaksiyonên redoksê de madeya ku elektronan dide oksîde dibe (redûktant e); madeya ku elektronan digire redûkte dibe (oksîdant e)."
       },
       "trap": {
         "tr": "Elektron alan madde yükseltgenmiştir.",
@@ -47,7 +47,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Вещество, принявшее электроны, окислилось.",
         "ar": "تتأكسد المادة التي تستقبل الإلكترونات.",
         "zh": "得到电子的物质被氧化。",
-        "ku": "Madeya ku elektronan distîne tê oksîdan."
+        "ku": "Madeya ku elektronan digire oksîde bûye."
       },
       "whyTrapIsFalse": {
         "tr": "Bu yargı \"yükseltgen\" ile \"yükseltgenen\" kavramlarını karıştırır. Elektron alan madde indirgenir ve yükseltgenme basamağı düşer; yükseltgenme ise elektron kaybıdır.",
@@ -57,7 +57,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Здесь смешаны понятия «окислитель» и «окисляющееся вещество». Вещество, принимающее электроны, восстанавливается, и его степень окисления понижается; окисление — это отдача электронов.",
         "ar": "تخلط هذه العبارة بين «العامل المؤكسد» و«المادة المتأكسدة». المادة التي تكتسب إلكترونات تُختزل وينخفض عدد تأكسدها؛ أما الأكسدة فهي فقد الإلكترونات.",
         "zh": "此说法混淆了“氧化剂”和“被氧化”。得到电子的物质被还原，氧化数降低；氧化是失去电子。",
-        "ku": "Ev gotin \"oksîdant\" û \"oksîdbûyî\" tevlihev dike. Madeya ku elektronan distîne kêm dibe û hejmara wê ya oksîdasyonê dadikeve; oksîdasyon windakirina elektronan e."
+        "ku": "Ev gotin têgehên \"oksîdant\" û \"oksîdebûyî\" tevlihev dike. Madeya ku elektronan digire redûkte dibe û hejmara wê ya oksîdasyonê kêm dibe; oksîdasyon jidestdana elektronan e."
       }
     },
     {
@@ -70,7 +70,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В гальваническом элементе на аноде всегда идёт окисление, а на катоде — восстановление (коротко: анод — окисление, катод — восстановление).",
         "ar": "في الخلية الجلفانية تحدث الأكسدة دائمًا عند المصعد ويحدث الاختزال دائمًا عند المهبط (باختصار: مصعد–أكسدة، مهبط–اختزال).",
         "zh": "在原电池中，负极总是发生氧化反应，正极总是发生还原反应（简记：负极—氧化，正极—还原）。",
-        "ku": "Di pîla galvanîk de li ANODÊ her tim OKSÎDASYON, li KATODÊ her tim REDUKSIYON pêk tê (bi kurtî: Anod–Oksîdasyon, Katod–Reduksiyon)."
+        "ku": "Di pîla galvanîk de li ANODÊ her tim OKSÎDASYON, li KATODÊ her tim REDÛKSIYON pêk tê (bi kurtî: Anod–Oksîdasyon, Katod–Redûksiyon)."
       },
       "trap": {
         "tr": "Anotta indirgenme gerçekleşir.",
@@ -80,7 +80,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Восстановление происходит на аноде.",
         "ar": "يحدث الاختزال عند المصعد.",
         "zh": "原电池中还原反应发生在负极。",
-        "ku": "Reduksiyon li anodê pêk tê."
+        "ku": "Li anodê redûksiyon pêk tê."
       },
       "whyTrapIsFalse": {
         "tr": "Anot, pildeki elektronların kaynağıdır; elektronlar anottaki atomların elektron vermesiyle, yani yükseltgenmeyle ortaya çıkar. İndirgenme elektron alımı olduğundan dış devreden gelen elektronlarla katotta gerçekleşir.",
@@ -90,7 +90,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Анод — источник электронов элемента: они появляются, когда атомы анода отдают электроны, то есть при окислении. Восстановление — это присоединение электронов, поэтому оно идёт на катоде за счёт электронов, пришедших по внешней цепи.",
         "ar": "المصعد هو مصدر إلكترونات الخلية، إذ تنشأ عندما تفقد ذرات المصعد إلكتروناتها أي بالأكسدة. أما الاختزال فهو اكتساب إلكترونات، لذا يحدث عند المهبط بالإلكترونات القادمة عبر الدائرة الخارجية.",
         "zh": "负极是电池中电子的来源：负极上的原子失去电子（即发生氧化）才产生电子。还原是得到电子，因此在正极利用经外电路流来的电子发生。",
-        "ku": "Anod çavkaniya elektronên pîlê ye; elektron dema atomên li anodê elektronan didin, ango bi oksîdasyonê, derdikevin holê. Reduksiyon wergirtina elektronan e, ji ber vê yekê li katodê bi elektronên ku ji çerxa derve tên pêk tê."
+        "ku": "Anod çavkaniya elektronên pîlê ye; elektron dema atomên anodê elektronan didin, ango bi oksîdasyonê, derdikevin holê. Redûksiyon wergirtina elektronan e, ji ber vê yekê li katodê bi elektronên ku ji çerxa derve tên pêk tê."
       }
     },
     {
@@ -103,7 +103,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Анионы солевого мостика перемещаются к аноду, а катионы — к катоду; так сохраняется электронейтральность растворов.",
         "ar": "تهاجر الأنيونات في القنطرة الملحية نحو المصعد والكاتيونات نحو المهبط فتحافظ على توازن الشحنات.",
         "zh": "盐桥中的阴离子向负极区迁移，阳离子向正极区迁移，从而保持溶液的电荷平衡。",
-        "ku": "ANYONÊN di pira xwê de ber bi ANODÊ, KATYON jî ber bi KATODÊ ve koç dikin û hevsengiya barê diparêzin."
+        "ku": "ANYONÊN pira xwê ber bi ANODÊ, KATYON jî ber bi KATODÊ ve koç dikin û hevsengiya barê diparêzin."
       },
       "trap": {
         "tr": "Tuz köprüsündeki anyonlar katoda gider.",
@@ -113,7 +113,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Анионы в солевом мостике идут к катоду.",
         "ar": "تذهب الأنيونات الموجودة في القنطرة الملحية إلى المهبط.",
         "zh": "盐桥中的阴离子向正极区迁移。",
-        "ku": "Anyonên di pira xwê de diçin katodê."
+        "ku": "Anyonên pira xwê ber bi katodê ve diçin."
       },
       "whyTrapIsFalse": {
         "tr": "Anot kabında yükseltgenmeyle katyon (ör. Zn2+) arttığı için pozitif yük birikir; bunu dengelemek üzere anyonlar anot kabına gider. Katot kabında katyonlar harcandığı için oraya katyonlar göç eder.",
@@ -123,7 +123,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В анодном пространстве при окислении образуются катионы (например, Zn2+) и накапливается положительный заряд; для его компенсации туда идут анионы. В катодном пространстве катионы расходуются, поэтому туда мигрируют катионы.",
         "ar": "في وعاء المصعد تنتج الأكسدة كاتيونات (مثل Zn2+) فتتراكم شحنة موجبة، فتتجه الأنيونات إليه لمعادلتها. أما في وعاء المهبط فتُستهلك الكاتيونات، لذا تهاجر الكاتيونات إليه.",
         "zh": "负极区发生氧化生成阳离子(如 Zn2+)，正电荷积累，阴离子向该区迁移以平衡电荷。正极区的阳离子被消耗，因此是阳离子向正极区迁移。",
-        "ku": "Li aliyê anodê oksîdasyon katyonan (wek Zn2+) çêdike û bara erênî kom dibe; ji bo hevsengkirinê anyon diçin wir. Li aliyê katodê katyon têne xerckirin, loma katyon koçî wir dikin."
+        "ku": "Di beşa anodê de bi oksîdasyonê katyon (mînak Zn2+) zêde dibin û bara erênî kom dibe; ji bo hevsengkirina vê, anyon diçin beşa anodê. Di beşa katodê de katyon tên xerckirin, ji ber vê yekê katyon koçî wir dikin."
       }
     },
     {
@@ -156,7 +156,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Отрицательный E°эл означает, что реакция в записанном направлении несамопроизвольна; провести её можно только подводя электрический ток извне (электролиз). Самопроизвольно идёт обратная реакция.",
         "ar": "يعني E°cell السالب أن التفاعل كما كُتب غير تلقائي، ولا يمكن إجراؤه في هذا الاتجاه إلا بتزويده بالكهرباء من الخارج (التحليل الكهربائي). التفاعل التلقائي هو التفاعل العكسي.",
         "zh": "E°电池 为负表示所写反应非自发，只有从外部输入电能（电解）才能使其按此方向进行。自发进行的是逆反应。",
-        "ku": "E°pîl a neyînî nîşan dide ku reaksiyona nivîsandî ne xweber e; bi vî alî tenê bi dayîna elektrîkê ji derve (elektrolîz) dikare bimeşe. Reaksiyona xweber a berevajî ye."
+        "ku": "E°pîl-a neyînî nîşan dide ku reaksiyona nivîsandî ne-xweber e; bi vî alî reaksiyon tenê bi dayîna elektrîkê ji derve (elektrolîz) dikare bimeşe. Reaksiyona ku bi xwe dimeşe, ya berevajî ye."
       }
     },
     {
@@ -169,7 +169,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Стандартный водородный электрод (СВЭ): при 25 °C газ H2 под давлением 1 атм пропускают над платиновым электродом, погружённым в 1 M раствор H+; его потенциал принят равным 0,00 В.",
         "ar": "قطب الهيدروجين القياسي (SHE): عند 25 °C يُمرَّر غاز H2 تحت ضغط 1 atm على قطب من البلاتين مغموس في محلول H+ تركيزه 1 M؛ ويُعدّ جهده 0.00 V.",
         "zh": "标准氢电极(SHE)：25 °C 时，将 1 atm 的 H2 通到浸在 1 M H+ 溶液中的铂电极上；其电势规定为 0.00 V。",
-        "ku": "Elektroda Hîdrojenê ya Standard (SHE): li 25 °C gaza H2 ya bi zexta 1 atm di ser elektrodeke platînê re tê derbaskirin ku di çareseriya H+ ya 1 M de ye; potansiyela wê 0,00 V tê qebûlkirin."
+        "ku": "Elektroda Hîdrojenê ya Standard (SHE): li 25 °C gaza H2 ya bi zexta 1 atm di ser elektrodeke platînê ya ku di çareseriya 1 M H+ de ye re tê derbaskirin; potansiyela wê 0,00 V tê qebûlkirin."
       },
       "trap": {
         "tr": "Standart hidrojen elektrodunun gerilimi 1,00 V'tur.",
@@ -189,7 +189,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Здесь «1 M» и «1 атм» стандартных условий спутаны с потенциалом. СВЭ — электрод сравнения: его потенциал не измеряют, а по соглашению принимают равным 0,00 В, и все остальные потенциалы отсчитывают от него.",
         "ar": "هنا خُلطت قيمتا «1 M» و«1 atm» للظروف القياسية بالجهد. قطب الهيدروجين القياسي هو القطب المرجعي؛ لا يُقاس جهده بل يُتفق على أنه 0.00 V وتُنسب إليه جميع الجهود الأخرى.",
         "zh": "这里把标准条件中的“1 M”“1 atm”与电势混淆了。标准氢电极是参比电极，其电势不是测出来的，而是约定为 0.00 V，其他电势都相对于它给出。",
-        "ku": "Li vir \"1 M\" û \"1 atm\" yên şertên standard bi potansiyelê re tevlihev bûne. SHE elektroda referansê ye; potansiyela wê nayê pîvan, bi peymanê 0,00 V tê qebûlkirin û potansiyelên din li gorî wê têne dayîn."
+        "ku": "Li vir nirxên \"1 M\" û \"1 atm\" yên şertên standard bi potansiyelê re hatine tevlihevkirin. SHE elektroda referansê ye; potansiyela wê nayê pîvan, bi peymanê 0,00 V tê qebûlkirin û potansiyelên din li gorî wê tên dayîn."
       }
     },
     {
@@ -212,7 +212,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Анодом служит металл с бо́льшим потенциалом восстановления.",
         "ar": "الفلز ذو جهد الاختزال الأكبر هو المصعد.",
         "zh": "还原电势较大的金属作负极。",
-        "ku": "Metala ku potansiyela wê ya reduksiyonê mezintir e anod e."
+        "ku": "Metala ku potansiyela wê ya redûksiyonê mezintir e pola anodê ye."
       },
       "whyTrapIsFalse": {
         "tr": "İndirgenme potansiyeli büyük olan metalin iyonu elektron almaya yatkındır, bu yüzden o elektrot katot olur. Anot, yükseltgenme potansiyeli büyük (indirgenme potansiyeli küçük), yani daha aktif olan metaldir.",
@@ -222,7 +222,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Ион металла с бо́льшим потенциалом восстановления сильнее стремится принять электроны, поэтому этот электрод становится катодом. Анод — более активный металл с бо́льшим потенциалом окисления (меньшим потенциалом восстановления).",
         "ar": "أيون الفلز ذي جهد الاختزال الأكبر أكثر ميلًا لاكتساب الإلكترونات، لذا يصبح ذلك القطب مهبطًا. أما المصعد فهو الفلز الأنشط ذو جهد التأكسد الأكبر (جهد الاختزال الأصغر).",
         "zh": "还原电势较大的金属，其离子更易得到电子，因此该电极成为正极。负极是活动性较强、氧化电势较大（还原电势较小）的金属。",
-        "ku": "Îyona metala ku potansiyela wê ya reduksiyonê mezintir e bêtir meyla wergirtina elektronan dike, loma ew elektrod dibe katod. Anod metala çalaktir e ku potansiyela wê ya oksîdasyonê mezintir (ya reduksiyonê biçûktir) e."
+        "ku": "Îyona metala ku potansiyela wê ya redûksiyonê mezintir e bêtir meyla wergirtina elektronan dike, ji ber vê yekê ew elektrod dibe katod. Anod metala çalaktir e, ku potansiyela wê ya oksîdasyonê mezintir (ya redûksiyonê piçûktir) e."
       }
     },
     {
@@ -235,7 +235,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "При работе элемента масса анода обычно уменьшается, так как он растворяется; на катоде осаждается вещество, и его масса увеличивается.",
         "ar": "أثناء عمل الخلية تنقص كتلة قطب المصعد عادةً لأنه يتآكل، وتترسب المادة على قطب المهبط فتزداد كتلته.",
         "zh": "电池工作时，负极因溶解而质量通常减小；物质在正极上析出，正极质量增加。",
-        "ku": "Dema pîl dixebite, girseya anodê bi gelemperî kêm dibe ji ber ku dihele; li ser katodê made kom dibe û girseya wê zêde dibe."
+        "ku": "Her ku pîl dixebite, girseya elektroda anodê bi gelemperî bi xurînê kêm dibe; ji ber ku made li ser elektroda katodê kom dibe, girseya wê bi gelemperî zêde dibe."
       },
       "trap": {
         "tr": "Pil çalıştıkça anot elektrodun kütlesi artar, katot elektrodun kütlesi azalır.",
@@ -245,7 +245,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "По мере работы элемента масса анода увеличивается, а масса катода уменьшается.",
         "ar": "مع عمل الخلية تزداد كتلة المصعد وتقل كتلة المهبط.",
         "zh": "电池工作时，负极质量增加，正极质量减少。",
-        "ku": "Her ku pîl dixebite, girseya anodê zêde dibe û girseya katodê kêm dibe."
+        "ku": "Her ku pîl dixebite, girseya elektroda anodê zêde dibe û girseya elektroda katodê kêm dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Kütle değişimleri ters verilmiştir. Anottaki metal atomları iyon olarak çözeltiye geçtiği için anot aşınır; katotta iyonlar indirgenip metal olarak biriktiği için katodun kütlesi artar.",
@@ -255,7 +255,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Изменения массы перепутаны. Атомы металла анода переходят в раствор в виде ионов, и анод растворяется; на катоде ионы восстанавливаются и осаждаются в виде металла, поэтому масса катода растёт.",
         "ar": "تغيرات الكتلة معكوسة هنا. تنتقل ذرات فلز المصعد إلى المحلول على هيئة أيونات فيتآكل المصعد؛ وعند المهبط تُختزل الأيونات وتترسب فلزًا فتزداد كتلته.",
         "zh": "质量变化说反了。负极的金属原子以离子形式进入溶液，负极被消耗；正极上离子被还原并以金属形式析出，正极质量增加。",
-        "ku": "Guherînên girseyê berevajî hatine dayîn. Atomên metalê yên anodê wek îyon derbasî çareseriyê dibin û anod dixwe; li katodê îyon kêm dibin û wek metal kom dibin, loma girseya katodê zêde dibe."
+        "ku": "Guherînên girseyê berevajî hatine dayîn. Atomên metalê yên anodê wek îyon derbasî çareseriyê dibin, ji ber vê yekê anod dixure; li katodê îyon redûkte dibin û wek metal kom dibin, ji ber vê yekê girseya katodê zêde dibe."
       }
     },
     {
@@ -268,7 +268,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Если в анодный полуэлемент добавить чистую воду, концентрация ионов в анодном пространстве уменьшится, равновесие сместится в сторону продуктов и потенциал элемента увеличится.",
         "ar": "إذا أُضيف الماء النقي إلى نصف خلية المصعد ينخفض تركيز أيون المصعد، وينزاح الاتزان نحو النواتج ويزداد جهد الخلية.",
         "zh": "向负极半电池中加入纯水，负极区离子浓度降低，平衡向生成物方向移动，电池电势增大。",
-        "ku": "Ger ava paqij li nîv şaneya anodê were zêdekirin, kombûna îyona anodê kêm dibe, hevseng diguhezîne hilberan û potansiyela pîlê zêde dibe."
+        "ku": "Heke ava paqij li nîvşaneya anodê were zêdekirin, tîrbûna îyona anodê kêm dibe, hevsengî ber bi hilberan ve diçe û potansiyela pîlê zêde dibe."
       },
       "trap": {
         "tr": "Anot çözeltisine su eklendiğinde pil gerilimi düşer.",
@@ -278,7 +278,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "При добавлении воды в анодный раствор напряжение элемента снижается.",
         "ar": "عند إضافة الماء إلى محلول المصعد، ينخفض جهد الخلية.",
         "zh": "向负极区溶液中加水时，电池电压会降低。",
-        "ku": "Dema ku av li çareseriya anodê tê zêdekirin, voltaja pîlê kêm dibe."
+        "ku": "Dema av li çareseriya anodê tê zêdekirin, voltaja pîlê kêm dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Anot iyonu toplam tepkimede ürün tarafındadır; su eklenip derişimi azalınca denge ürünlere kayar ve gerilim düşmez, artar. Gerilimi düşüren işlem katot kabının seyreltilmesidir.",
@@ -288,7 +288,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Ион анода в суммарной реакции находится среди продуктов; при разбавлении равновесие смещается к продуктам, и напряжение растёт, а не падает. Напряжение снижает разбавление катодного пространства.",
         "ar": "أيون المصعد في جهة النواتج في التفاعل الكلي؛ فإذا خُفّف انزاح الاتزان نحو النواتج فيرتفع الجهد ولا ينخفض. أما ما يخفض الجهد فهو تخفيف وعاء المهبط.",
         "zh": "负极区的离子在总反应的生成物一侧；稀释它使平衡向生成物方向移动，电压升高而不是降低。使电压降低的是稀释正极区。",
-        "ku": "Îyona anodê di reaksiyona giştî de li aliyê berheman e; dema tê sivikkirin hevsengî ber bi berheman ve diçe û voltaj ne dadikeve, zêde dibe. Kiryara ku voltajê dadixîne sivikkirina aliyê katodê ye."
+        "ku": "Îyona anodê di reaksiyona giştî de li aliyê hilberan e; dema av lê tê zêdekirin û tîrbûna wê kêm dibe, hevsengî ber bi hilberan ve diçe û voltaj kêm nabe, zêde dibe. Kiryara ku voltajê kêm dike sistkirina beşa katodê ye."
       }
     },
     {
@@ -301,7 +301,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Если в катодный полуэлемент добавить чистую воду, концентрация ионов в катодном пространстве уменьшится, равновесие сместится в сторону исходных веществ и потенциал элемента уменьшится.",
         "ar": "إذا أُضيف الماء النقي إلى نصف خلية المهبط ينخفض تركيز أيون المهبط، وينزاح الاتزان نحو المتفاعلات وينخفض جهد الخلية.",
         "zh": "向正极半电池中加入纯水，正极区离子浓度降低，平衡向反应物方向移动，电池电势减小。",
-        "ku": "Ger ava paqij li nîv şaneya katodê were zêdekirin, kombûna îyona katodê kêm dibe, hevseng ber bi reaktantan ve diçe û potansiyela pîlê kêm dibe."
+        "ku": "Heke ava paqij li nîvşaneya katodê were zêdekirin, tîrbûna îyona katodê kêm dibe, hevsengî ber bi reaktantan ve diçe û potansiyela pîlê kêm dibe."
       },
       "trap": {
         "tr": "Katot çözeltisine su eklendiğinde pil gerilimi yükselir.",
@@ -311,7 +311,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "При добавлении воды в катодный раствор напряжение элемента увеличивается.",
         "ar": "عند إضافة الماء إلى محلول المهبط، يزداد جهد الخلية.",
         "zh": "向正极区溶液中加水时，电池电压升高。",
-        "ku": "Dema ku av li çareseriya katodê tê zêdekirin, voltaja pîlê zêde dibe."
+        "ku": "Dema av li çareseriya katodê tê zêdekirin, voltaja pîlê bilind dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Katot iyonu toplam tepkimede girenler tarafındadır; seyreltilince denge girenlere kayar ve gerilim azalır. Su eklemenin gerilimi artırdığı durum anot kabının seyreltilmesidir.",
@@ -321,7 +321,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Ион катода в суммарной реакции находится среди исходных веществ; при разбавлении равновесие смещается к ним, и напряжение падает. Добавление воды повышает напряжение только при разбавлении анодного пространства.",
         "ar": "أيون المهبط في جهة المتفاعلات في التفاعل الكلي؛ فإذا خُفّف انزاح الاتزان نحو المتفاعلات وانخفض الجهد. لا ترفع إضافة الماء الجهد إلا عند تخفيف وعاء المصعد.",
         "zh": "正极区的离子在总反应的反应物一侧；稀释它使平衡向反应物方向移动，电压下降。只有稀释负极区时加水才会使电压升高。",
-        "ku": "Îyona katodê di reaksiyona giştî de li aliyê têketiyan e; dema tê sivikkirin hevsengî ber bi têketiyan ve diçe û voltaj kêm dibe. Lêzêdekirina avê tenê dema aliyê anodê sivik dike voltajê zêde dike."
+        "ku": "Îyona katodê di reaksiyona giştî de li aliyê reaktantan e; dema tê sistkirin hevsengî ber bi reaktantan ve diçe û voltaj kêm dibe. Zêdekirina avê tenê dema beşa anodê tê sistkirin voltajê zêde dike."
       }
     },
     {
@@ -334,7 +334,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "По мере работы элемента концентрация ионов в анодном пространстве растёт, а в катодном уменьшается; поэтому напряжение со временем падает и становится равным нулю, когда реакция достигает равновесия.",
         "ar": "مع عمل الخلية يزداد تركيز الأيونات في وعاء المصعد ويقل في وعاء المهبط؛ لذلك ينخفض جهد الخلية مع الزمن ويصبح صفرًا عندما يصل التفاعل إلى الاتزان.",
         "zh": "电池工作时，负极区离子浓度增大，正极区离子浓度减小；因此电池电压随时间下降，反应达到平衡时变为零。",
-        "ku": "Her ku pîl dixebite, tîrbûna îyonan li aliyê anodê zêde dibe û li aliyê katodê kêm dibe; ji ber vê yekê voltaja pîlê bi demê re dadikeve û dema reaksiyon digihîje hevsengiyê dibe sifir."
+        "ku": "Her ku pîl dixebite, tîrbûna îyonan di beşa anodê de zêde dibe û di beşa katodê de kêm dibe; ji ber vê yekê voltaja pîlê bi demê re kêm dibe û dema reaksiyon digihîje hevsengiyê dibe sifir."
       },
       "trap": {
         "tr": "Bir galvanik pilin gerilimi, pil bitene kadar başlangıçtaki değerinde sabit kalır.",
@@ -354,7 +354,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Напряжение элемента зависит от концентраций, а они при работе меняются, поэтому оно не может оставаться постоянным. По мере роста концентрации иона-продукта и уменьшения концентрации иона-реагента напряжение падает и в состоянии равновесия становится равным нулю.",
         "ar": "يعتمد جهد الخلية على التراكيز التي تتغير أثناء التشغيل، لذا لا يمكن أن يبقى ثابتًا. فكلما ازداد تركيز الأيون الناتج وقلّ تركيز الأيون المتفاعل انخفض الجهد حتى يصبح صفرًا عند الاتزان.",
         "zh": "电池电压取决于浓度，而工作过程中浓度不断变化，所以电压不可能保持不变。随着生成物离子增多、反应物离子减少，电压下降，达到平衡时降为零。",
-        "ku": "Voltaja pîlê bi tîrbûnan ve girêdayî ye û ji ber ku tîrbûn di dema xebatê de diguherin nikare sabît bimîne. Her ku îyona berhemê zêde dibe û îyona têketiyê kêm dibe voltaj dadikeve û di hevsengiyê de dibe sifir."
+        "ku": "Voltaja pîlê bi tîrbûnan ve girêdayî ye û ji ber ku di dema xebatê de tîrbûn diguherin, nikare sabît bimîne. Her ku îyona hilberê zêde dibe û îyona reaktantê kêm dibe voltaj kêm dibe û dema hevsengî saz dibe dadikeve sifirê."
       }
     },
     {
@@ -367,7 +367,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Концентрационный элемент состоит из одинаковых электродов, погружённых в растворы одного и того же иона разной концентрации; анодом служит полуэлемент с меньшей концентрацией.",
         "ar": "خلايا التركيز: تتكون من قطبين متماثلين ومحلولين للأيون نفسه بتركيزين مختلفين؛ ونصف الخلية ذو التركيز الأقل هو المصعد.",
         "zh": "浓差电池：由相同的电极和同种离子不同浓度的溶液构成；浓度较小的半电池为负极。",
-        "ku": "Pîlên tîrbûnê: bi heman elektrodê û bi tîrbûnên cuda yên heman çareseriyê têne sazkirin; nîvhucreya ku tîrbûna wê kêmtir e ANOD e."
+        "ku": "Pîlên tîrbûnê: bi heman elektrodê û bi tîrbûnên cuda yên heman çareseriyê tên sazkirin; nîvşaneya ku tîrbûna wê kêmtir e ANOD e."
       },
       "trap": {
         "tr": "Derişim pillerinde derişimi büyük olan hücre anottur.",
@@ -377,7 +377,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В концентрационных элементах анодом является полуэлемент с большей концентрацией.",
         "ar": "في خلايا التركيز يكون نصف الخلية ذو التركيز الأعلى هو المصعد.",
         "zh": "在浓差电池中，浓度较大的半电池是负极。",
-        "ku": "Di pîlên tîrbûnê de hucreya ku tîrbûna wê mezintir e anod e."
+        "ku": "Di pîlên tîrbûnê de nîvşaneya ku tîrbûna wê mezintir e anod e."
       },
       "whyTrapIsFalse": {
         "tr": "Derişik çözeltideki iyonlar indirgenmeye daha yatkın olduğundan derişik taraf katottur. Seyreltik taraftaki elektrot yükseltgenerek kendi çözeltisinin derişimini artırır; yani anot seyreltik taraftır.",
@@ -387,7 +387,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Ионы концентрированного раствора легче восстанавливаются, поэтому концентрированная сторона — катод. Электрод в разбавленном растворе окисляется и повышает концентрацию своего раствора, то есть анод — разбавленная сторона.",
         "ar": "أيونات المحلول المركز أكثر قابلية للاختزال، لذا يكون الجانب المركز هو المهبط. أما القطب في الجانب المخفف فيتأكسد ويرفع تركيز محلوله، أي أن المصعد هو الجانب المخفف.",
         "zh": "浓溶液中的离子更容易被还原，因此浓的一侧是正极。稀溶液一侧的电极被氧化，使本侧溶液浓度升高，所以负极在稀的一侧。",
-        "ku": "Îyonên di çareseriya tîr de hêsantir kêm dibin, loma aliyê tîr katod e. Elektroda li aliyê sivik oksîd dibe û tîrbûna çareseriya xwe zêde dike; ango anod aliyê sivik e."
+        "ku": "Îyonên di çareseriya tîr de bêtir meyla redûksiyonê dikin, ji ber vê yekê aliyê tîr katod e. Elektroda li aliyê sist oksîde dibe û tîrbûna çareseriya xwe zêde dike; ango anod aliyê sist e."
       }
     },
     {
@@ -420,7 +420,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Единственная движущая сила концентрационного элемента — разность концентраций; по мере её уменьшения напряжение падает. При равных концентрациях движущей силы нет, и напряжение равно нулю, а не максимально.",
         "ar": "القوة الدافعة الوحيدة لخلية التركيز هي فرق التركيز، وكلما تقلّص انخفض الجهد. وعند تساوي التراكيز لا تبقى قوة دافعة فيصبح الجهد صفرًا لا قيمة عظمى.",
         "zh": "浓差电池唯一的驱动力是浓度差，浓度差缩小，电压随之下降。浓度相等时不再有驱动力，电压为零而不是最大。",
-        "ku": "Hêza ajotinê ya pîla tîrbûnê tenê cudahiya tîrbûnê ye; her ku ew kêm dibe voltaj dadikeve. Dema tîrbûn wekhev dibin hêza ajotinê namîne û voltaj ne herî zêde, sifir e."
+        "ku": "Hêza ajotinê ya pîla tîrbûnê tenê ferqa tîrbûnê ye; her ku ev ferq kêm dibe voltaj kêm dibe. Dema tîrbûn wekhev dibin hêza ajotinê namîne û voltaj ne herî mezin, lê sifir e."
       }
     },
     {
@@ -433,7 +433,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Реакции в гальванических элементах обычно экзотермичны; если повысить температуру, то по принципу Ле Шателье равновесие экзотермической реакции смещается влево и напряжение элемента уменьшается.",
         "ar": "تفاعلات الخلايا غالبًا طاردة للحرارة؛ وفي تفاعل خلية طارد للحرارة يؤدي رفع درجة الحرارة إلى إزاحة الاتزان نحو اليسار (مبدأ لوشاتلييه) فينخفض جهد الخلية.",
         "zh": "电池反应通常是放热反应；对放热的电池反应，升高温度时根据勒夏特列原理平衡向左移动，电池电压降低。",
-        "ku": "Reaksiyonên pîlê bi gelemperî ekzotermîk in; di reaksiyoneke pîlê ya ekzotermîk de heke germahî zêde bibe, li gorî prensîba Le Chatelier hevsengî ber bi çepê ve diçe û voltaja pîlê kêm dibe."
+        "ku": "Reaksiyonên pîlê bi gelemperî ekzotermîk in; di reaksiyoneke pîlê ya ekzotermîk de heke germahî were bilindkirin, li gorî prensîba Le Chatelier hevsengî ber bi çepê ve diçe û voltaja pîlê kêm dibe."
       },
       "trap": {
         "tr": "Ekzotermik bir pil tepkimesinde sıcaklık artırılırsa pil gerilimi artar.",
@@ -443,7 +443,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Если реакция в элементе экзотермическая, повышение температуры увеличивает напряжение элемента.",
         "ar": "في تفاعل خلية طارد للحرارة، يؤدي رفع درجة الحرارة إلى زيادة جهد الخلية.",
         "zh": "对放热的电池反应，升高温度会使电池电压升高。",
-        "ku": "Di reaksiyoneke pîlê ya ekzotermîk de, zêdekirina germahiyê voltaja pîlê zêde dike."
+        "ku": "Di reaksiyoneke pîlê ya ekzotermîk de heke germahî were bilindkirin, voltaja pîlê zêde dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Ekzotermik tepkimede sıcaklık artışı dengeyi girenlere kaydırır; bu da pilin elektron akıtma eğilimini azaltır. Bu yüzden gerilim artmaz, düşer.",
@@ -453,7 +453,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В экзотермической реакции повышение температуры смещает равновесие в сторону исходных веществ, и способность элемента давать ток ослабевает. Поэтому напряжение падает, а не растёт.",
         "ar": "في التفاعل الطارد للحرارة يزيح رفع درجة الحرارة الاتزان نحو المتفاعلات فيُضعف ميل الخلية إلى دفع الإلكترونات، لذا ينخفض الجهد ولا يرتفع.",
         "zh": "对放热反应，升高温度使平衡向反应物方向移动，削弱电池推动电子流动的倾向，所以电压下降而不是升高。",
-        "ku": "Di reaksiyona ekzotermîk de bilindkirina germahiyê hevsengiyê ber bi têketiyan ve dibe û meyla pîlê ya herikandina elektronan qels dike. Ji ber vê yekê voltaj zêde nabe, dadikeve."
+        "ku": "Di reaksiyona ekzotermîk de bilindbûna germahiyê hevsengiyê ber bi reaktantan ve dikişîne; ev jî meyla pîlê ya herikandina elektronan kêm dike. Ji ber vê yekê voltaj zêde nabe, kêm dibe."
       }
     },
     {
@@ -466,7 +466,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Если уравнение реакции элемента умножить на коэффициент, значение E°эл не изменится (потенциал — интенсивная величина).",
         "ar": "إذا ضُربت معادلة الخلية في معامل فإن قيمة E°cell لا تتغير (الجهد خاصية شدّية).",
         "zh": "电池反应方程式乘以某个系数时，E°电池 的值不变（电势是强度性质）。",
-        "ku": "Heke hevkêşeya pîlê bi katsayiyekê were zêdekirin, nirxa E°pîl NAGUHERE (potansiyel taybetmendiyeke întensîf e)."
+        "ku": "Heke hevkêşeya pîlê bi hevberekê were lêkirin, nirxa E°pîl NAGUHERE (potansiyel taybetmendiyeke întensîf e)."
       },
       "trap": {
         "tr": "Tepkime 2 ile çarpılırsa E°pil de 2 ile çarpılır.",
@@ -476,7 +476,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Если реакцию умножить на 2, E°эл также умножится на 2.",
         "ar": "إذا ضُربت معادلة التفاعل في 2 يُضرب E°cell أيضًا في 2.",
         "zh": "如果反应方程式乘以 2，则 E°电池 也乘以 2。",
-        "ku": "Ger reaksîyon bi 2-yê were zêdekirin, E°pîl jî bi 2-yê tê zêdekirin."
+        "ku": "Heke reaksiyon bi 2 were lêkirin, E°pîl jî bi 2 tê lêkirin."
       },
       "whyTrapIsFalse": {
         "tr": "Potansiyel, aktarılan elektron başına düşen itici gücü gösteren şiddet özelliğidir; madde miktarına bağlı değildir. Denklem 2 ile çarpılınca aktarılan elektron sayısı iki katına çıkar ama E°pil aynı kalır.",
@@ -486,7 +486,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Потенциал — интенсивное свойство, выражающее движущую силу в расчёте на один перенесённый электрон; он не зависит от количества вещества. При умножении уравнения на 2 число электронов удваивается, а E°эл не меняется.",
         "ar": "الجهد خاصية شدّية تعبّر عن القوة الدافعة لكل إلكترون منقول، ولا تعتمد على كمية المادة. فعند ضرب المعادلة في 2 يتضاعف عدد الإلكترونات المنقولة لكن E°cell يبقى كما هو.",
         "zh": "电势是强度性质，表示每转移一个电子的驱动力，与物质的量无关。方程式乘以 2 时转移电子数加倍，但 E°电池 不变。",
-        "ku": "Potansiyel taybetmendiyeke şiddetê ye ku hêza ajotinê ya ji bo her elektronekî veguhestî nîşan dide; bi mîqdara madeyê ve ne girêdayî ye. Dema hevkêşe bi 2 tê zêdekirin hejmara elektronan du qat dibe, lê E°pîl wek xwe dimîne."
+        "ku": "Potansiyel taybetmendiyeke întensîf e ku hêza ajotinê ya ji bo her elektroneke veguhestî nîşan dide; bi mîqdara madeyê ve ne girêdayî ye. Dema hevkêşe bi 2 tê lêkirin hejmara elektronên veguhestî du qat dibe, lê E°pîl wek xwe dimîne."
       }
     },
     {
@@ -499,7 +499,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Если убрать солевой мостик, ток в цепи прекращается и элемент сразу перестаёт работать.",
         "ar": "إذا أُزيلت القنطرة الملحية لا يمر تيار في الدائرة وتتوقف الخلية فورًا.",
         "zh": "如果取走盐桥，电路中没有电流通过，电池立即停止工作。",
-        "ku": "Ger pira xwê were rakirin, di çerxê de herikîn çênabe û pîl yekser disekine."
+        "ku": "Heke pira xwê were rakirin, di çerxê de herikîn pêk nayê û pîl yekser radiweste."
       },
       "trap": {
         "tr": "Tuz köprüsü olmadan da galvanik piller sonsuza dek çalışır.",
@@ -519,7 +519,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Без солевого мостика в анодном пространстве накапливается положительный, а в катодном — отрицательный заряд, и поток электронов сразу прекращается. Даже с мостиком элемент разряжается, когда реакция достигает равновесия; ни один элемент не работает вечно.",
         "ar": "بدون القنطرة الملحية تتراكم شحنة موجبة في وعاء المصعد وسالبة في وعاء المهبط فيتوقف سريان الإلكترونات فورًا. وحتى مع القنطرة تنفد الخلية عندما يصل التفاعل إلى الاتزان؛ فلا توجد خلية تعمل إلى الأبد.",
         "zh": "没有盐桥时，负极区积累正电荷、正极区积累负电荷，电子流动立即停止。即使有盐桥，反应达到平衡时电池也会耗尽；没有任何电池能永远工作。",
-        "ku": "Bê pira xwê li aliyê anodê bara erênî û li aliyê katodê bara neyînî kom dibe û herikîna elektronan yekser disekine. Bi pirê jî dema reaksiyon digihîje hevsengiyê pîl diqede; tu pîl her û her naxebite."
+        "ku": "Bêyî pira xwê di beşa anodê de bara erênî û di beşa katodê de bara neyînî kom dibe û herikîna elektronan yekser radiweste. Bi pirê jî dema reaksiyon digihîje hevsengiyê pîl diqede; tu pîl her û her naxebite."
       }
     },
     {
@@ -532,7 +532,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В элементе Даниэля Zn — анод (Zn → Zn2+ + 2e-), а Cu — катод (Cu2+ + 2e- → Cu); E°эл = 1,10 В.",
         "ar": "في خلية دانيال يكون Zn هو المصعد (Zn → Zn2+ + 2e-) ويكون Cu هو المهبط (Cu2+ + 2e- → Cu)؛ E°cell = 1.10 V.",
         "zh": "在丹尼尔电池中，Zn 为负极(Zn → Zn2+ + 2e-)，Cu 为正极(Cu2+ + 2e- → Cu)；E°电池 = 1.10 V。",
-        "ku": "Di pîla Daniell de Zn anod e (Zn → Zn2+ + 2e-) û Cu katod e (Cu2+ + 2e- → Cu); E°pîl = 1,10 V."
+        "ku": "Di pîla Daniell de Zn anod (Zn → Zn2+ + 2e-) û Cu katod e (Cu2+ + 2e- → Cu); E°pîl = 1,10 V e."
       },
       "trap": {
         "tr": "Daniell pilinde bakır elektrot anot olarak davranır.",
@@ -542,7 +542,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В элементе Даниэля медный электрод служит анодом.",
         "ar": "في خلية دانيال يعمل قطب النحاس مصعدًا.",
         "zh": "在丹尼尔电池中，铜电极作负极。",
-        "ku": "Di pîla Daniell de elektroda sifir wekî anod tevdigere."
+        "ku": "Di pîla Daniell de elektroda sifirê wek anod tevdigere."
       },
       "whyTrapIsFalse": {
         "tr": "Bakırın indirgenme potansiyeli (+0,34 V) çinkonunkinden (-0,76 V) büyüktür; bu yüzden Cu2+ iyonları indirgenir ve bakır katot olur. Daha aktif olan çinko yükseltgenerek anot görevi görür.",
@@ -552,7 +552,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Потенциал восстановления меди (+0,34 В) больше, чем у цинка (-0,76 В), поэтому восстанавливаются ионы Cu2+ и медь является катодом. Более активный цинк окисляется и служит анодом.",
         "ar": "جهد اختزال النحاس (+0.34 V) أكبر من جهد اختزال الخارصين (-0.76 V)، لذا تُختزل أيونات Cu2+ ويكون النحاس هو المهبط. أما الخارصين الأنشط فيتأكسد ويعمل مصعدًا.",
         "zh": "铜的还原电势(+0.34 V)大于锌的(-0.76 V)，因此 Cu2+ 被还原，铜是正极。较活泼的锌被氧化，作负极。",
-        "ku": "Potansiyela reduksiyonê ya sifir (+0,34 V) ji ya zinkê (-0,76 V) mezintir e; loma îyonên Cu2+ kêm dibin û sifir katod e. Zinka çalaktir oksîd dibe û wek anod kar dike."
+        "ku": "Potansiyela redûksiyonê ya sifirê (+0,34 V) ji ya zinkê (-0,76 V) mezintir e; ji ber vê yekê îyonên Cu2+ redûkte dibin û sifir katod e. Zinka çalaktir oksîde dibe û wek anod kar dike."
       }
     }
   ],
@@ -587,7 +587,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Анод — электрод, на котором идёт окисление, и его масса уменьшается; катод — электрод, на котором идёт восстановление, и его масса увеличивается.",
         "ar": "عند المصعد تحدث الأكسدة وتنقص كتلة القطب؛ وعند المهبط يحدث الاختزال وتزداد كتلة القطب.",
         "zh": "原电池的负极发生氧化反应，电极质量通常减少；正极发生还原反应，电极质量通常增加。",
-        "ku": "Li anodê oksîdasyon çêdibe û girseya elektrodê kêm dibe; li katodê reduksiyon çêdibe û girseya elektrodê zêde dibe."
+        "ku": "Li anodê oksîdasyon pêk tê û girseya elektrodê kêm dibe; li katodê redûksiyon pêk tê û girseya elektrodê zêde dibe."
       }
     },
     {
@@ -620,7 +620,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Химический гальванический элемент состоит из двух полуэлементов с разными электродами и растворами (например, Zn/Zn2+ и Cu/Cu2+); в концентрационном элементе оба полуэлемента содержат одинаковые электроды и растворы одного и того же иона разной концентрации.",
         "ar": "في الخلية الكيميائية يتكون نصفا الخلية من قطبين ومحلولين مختلفين (مثل Zn/Zn2+ و Cu/Cu2+)؛ أما في خلية التركيز فيحتوي نصفا الخلية على القطب نفسه ومحلولين للأيون نفسه بتركيزين مختلفين.",
         "zh": "化学电池的两个半电池由不同的电极和溶液组成(如 Zn/Zn2+ 和 Cu/Cu2+)；浓差电池的两个半电池电极相同，溶液为同种离子但浓度不同。",
-        "ku": "Di pîla kîmyewî de du nîvhucre ji elektrod û çareseriyên cuda pêk tên (mînak Zn/Zn2+ û Cu/Cu2+); di pîla tîrbûnê de her du nîvhucre xwedî heman elektrodê û çareseriyên heman îyonê yên bi tîrbûnên cuda ne."
+        "ku": "Di pîla kîmyewî de du nîvşane ji elektrod û çareseriyên cuda pêk tên (mînak Zn/Zn2+ û Cu/Cu2+); di pîla tîrbûnê de di her du nîvşaneyan de heman elektrod û çareseriyên heman îyonê yên bi tîrbûnên cuda hene."
       }
     },
     {
@@ -643,7 +643,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Стандартный потенциал восстановления (E°восст)",
         "ar": "جهد الاختزال القياسي (E°red)",
         "zh": "标准还原电势(E°还原)",
-        "ku": "Potansiyela Reduksiyonê ya Standard (E°red)"
+        "ku": "Potansiyela Redûksiyonê ya Standard (E°red)"
       },
       "distinction": {
         "tr": "SHE, potansiyeli 0,00 V kabul edilen referans elektrottur; standart indirgenme potansiyeli bir yarı hücrenin standart koşullarda (25 °C, 1 atm, 1 M) SHE'ye karşı ölçülen indirgenme eğilimidir.",
@@ -653,7 +653,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Стандартный водородный электрод (СВЭ) — электрод сравнения, потенциал которого условно принят равным 0,00 В; стандартный потенциал восстановления — склонность полуэлемента к восстановлению, измеренная относительно этого электрода сравнения при стандартных условиях (25 °C, 1 атм, 1 M).",
         "ar": "قطب الهيدروجين القياسي (SHE): القطب المرجعي الذي يُعدّ جهده 0.00 V؛ أما جهد الاختزال القياسي فميلُ نصف الخلية إلى الاختزال مقيسًا مقابل قطب الهيدروجين القياسي في الظروف القياسية (25 °C، 1 atm، 1 M).",
         "zh": "标准氢电极(SHE)是电势规定为 0.00 V 的参比电极；标准还原电势(E°还原)是半电池在标准条件(25 °C、1 atm、1 M)下以氢电极为基准测得的被还原倾向。",
-        "ku": "SHE elektroda referansê ye ku potansiyela wê 0,00 V tê qebûlkirin; potansiyela reduksiyonê ya standard meyla nîvhucreyekê ya kêmbûnê ye ku di şertên standard de (25 °C, 1 atm, 1 M) li hember SHE tê pîvan."
+        "ku": "SHE elektroda referansê ye ku potansiyela wê 0,00 V tê qebûlkirin; potansiyela redûksiyonê ya standard meyla redûksiyonê ya nîvşaneyekê ye ku di şertên standard de (25 °C, 1 atm, 1 M) li hember SHE tê pîvan."
       }
     },
     {
@@ -666,7 +666,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Гальванический элемент (источник тока)",
         "ar": "الخلية الجلفانية",
         "zh": "原电池",
-        "ku": "Hucreya Galvanîk (Pîl)"
+        "ku": "Şaneya Galvanîk (Pîl)"
       },
       "conceptB": {
         "tr": "Elektrolitik Hücre",
@@ -676,7 +676,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Электролизёр (электролитическая ячейка)",
         "ar": "خلية التحليل الكهربائي",
         "zh": "电解池",
-        "ku": "Hucreya Elektrolîtîk"
+        "ku": "Şaneya Elektrolîzê"
       },
       "distinction": {
         "tr": "Galvanik hücre kimyasal enerjiyi istemli olarak elektrik enerjisine çevirir (Epil > 0); elektrolitik hücre elektrikle istemsiz bir tepkimeyi yürütür.",
@@ -686,7 +686,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Гальванический элемент самопроизвольно превращает химическую энергию в электрическую (Eэл > 0); электролизёр за счёт электрического тока осуществляет несамопроизвольную реакцию.",
         "ar": "في الخلية الجلفانية تتحول الطاقة الكيميائية إلى طاقة كهربائية تلقائيًا (Ecell > 0)؛ أما في خلية التحليل الكهربائي فتُستخدم الكهرباء لإحداث تفاعل غير تلقائي.",
         "zh": "原电池将自发反应的化学能转化为电能(E电池 > 0)；电解池则利用电能驱动非自发反应。",
-        "ku": "Pîla galvanîk enerjiya kîmyewî bi awayekî xweber vediguherîne enerjiya elektrîkê (Epîl > 0); elektrolîz bi elektrîkê reaksiyoneke ne-xweber pêk tîne."
+        "ku": "Şaneya galvanîk enerjiya kîmyewî bi awayekî xweber vediguherîne enerjiya elektrîkê (Epîl > 0); şaneya elektrolîzê bi elektrîkê reaksiyoneke ne-xweber dimeşîne."
       }
     },
     {
@@ -719,7 +719,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "E°эл — потенциал элемента при стандартных условиях (25 °C, 1 атм, 1 M), его рассчитывают по стандартным потенциалам полуэлементов; Eэл — напряжение элемента при фактических концентрациях и температуре: оно меняется вместе с концентрациями и уменьшается по мере работы элемента.",
         "ar": "جهد الخلية القياسي (E°cell) هو الجهد في الظروف القياسية (25 °C، 1 atm، 1 M) ويُحسب من جهود أنصاف الخلايا القياسية؛ أما جهد الخلية الفعلي (Ecell) فهو الجهد عند التراكيز ودرجة الحرارة السائدة لحظة القياس، ويتغير بتغير التراكيز وينخفض مع عمل الخلية.",
         "zh": "标准电池电势(E°电池)是标准条件(25 °C、1 atm、1 M)下的电池电势，由标准电极电势计算得到；实际电池电势(E电池)是电池在实际浓度和温度下的电压，随浓度变化而改变，并随电池工作而减小。",
-        "ku": "E°pîl potansiyela pîlê ya di şertên standard de ye (25 °C, 1 atm, 1 M) û ji potansiyelên standard ên nîvhucreyan tê hesabkirin; Epîl voltaja pîlê ye di tîrbûn û germahiya wê ya heyî de, bi guherîna tîrbûnan re diguhere û her ku pîl dixebite kêm dibe."
+        "ku": "E°pîl potansiyela pîlê ya di şertên standard de ye (25 °C, 1 atm, 1 M) û ji potansiyelên standard ên nîvşaneyan tê hesibandin; Epîl voltaja pîlê ye di tîrbûn û germahiya wê ya heyî de, bi guherîna tîrbûnan diguhere û her ku pîl dixebite kêm dibe."
       }
     },
     {
@@ -752,7 +752,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Электрод — проводящее твёрдое тело, на котором принимаются или отдаются электроны (например, металлический стержень); электролит — раствор или расплав, проводящий ток за счёт ионов.",
         "ar": "القطب جسم صلب موصل تُكتسب عنده الإلكترونات أو تُفقد (مثل قضيب فلزي)؛ أما الإلكتروليت فهو محلول أو مصهور يوصل التيار بواسطة الأيونات.",
         "zh": "电极是得失电子的导电固体（如金属棒）；电解质是依靠离子导电的溶液或熔融物。",
-        "ku": "Elektrod hişkeke guhêzbar e ku elektron li ser wê têne wergirtin an dayîn (mînak çîpeke metalî); elektrolît çareserî an helandineke ku herikînê bi riya îyonan diguhezîne ye."
+        "ku": "Elektrod madeya hişk a guhêzbar e ku elektron li ser wê tên wergirtin an dayîn (mînak çîpeke metalî); elektrolît çareserî an madeyeke bi germê helandî ye ku herikînê bi riya îyonan diguhêze."
       }
     },
     {
@@ -785,7 +785,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Анионы в солевом мостике — частицы, которые перемещаются в анодное пространство, где накапливается положительный заряд; катионы в солевом мостике перемещаются в катодное пространство, где положительный заряд убывает.",
         "ar": "يكون اتجاه هجرة الأنيونات في القنطرة الملحية نحو وعاء المصعد حيث تتزايد الشحنة الموجبة؛ أما الكاتيونات في القنطرة الملحية فتهاجر نحو وعاء المهبط حيث تتناقص الشحنة الموجبة.",
         "zh": "盐桥中的阴离子迁移到正电荷不断增多的负极区；盐桥中的阳离子迁移到正电荷不断减少的正极区。",
-        "ku": "Anyonên di pira xwê de koçî beşa anodê dikin, ku li wir barê erênî zêde dibe; katyonên di pira xwê de koçî beşa katodê dikin, ku li wir barê erênî kêm dibe."
+        "ku": "Anyonên di pira xwê de koçî beşa anodê dikin, ku bara erênî lê zêde dibe; katyonên di pira xwê de koçî beşa katodê dikin, ku bara erênî lê kêm dibe."
       }
     },
     {
@@ -808,7 +808,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Восстановитель",
         "ar": "العامل المختزل",
         "zh": "还原剂",
-        "ku": "Reduktant"
+        "ku": "Redûktant"
       },
       "distinction": {
         "tr": "Yükseltgen madde elektron alarak kendisi indirgenendir; indirgen madde elektron vererek kendisi yükseltgenendir.",
@@ -818,7 +818,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Окислитель принимает электроны и при этом восстанавливается; восстановитель отдаёт электроны и при этом окисляется.",
         "ar": "العامل المؤكسد يكتسب الإلكترونات فيُختزل هو نفسه؛ والعامل المختزل يفقد الإلكترونات فيتأكسد هو نفسه.",
         "zh": "氧化剂得到电子，自身被还原；还原剂失去电子，自身被氧化。",
-        "ku": "Oksîdant elektronan distîne û bi xwe kêm dibe; reduktant elektronan dide û bi xwe oksîd dibe."
+        "ku": "Oksîdant elektronan digire û bi xwe redûkte dibe; redûktant elektronan dide û bi xwe oksîde dibe."
       }
     }
   ],
@@ -854,7 +854,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Записать полуреакцию восстановления на катоде",
           "ar": "اكتب نصف تفاعل اختزال المهبط",
           "zh": "写出正极的还原半反应",
-          "ku": "Nîv reaksiyona kêmkirina katodê binivîsin"
+          "ku": "Nîvreaksiyona redûksiyonê ya katodê binivîse"
         },
         {
           "tr": "E°pil = E°yüks(anot) + E°ind(katot) ile standart gerilimi bul",
@@ -899,7 +899,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Два электрода из одного металла погружают в два раствора одного и того же иона разной концентрации",
           "ar": "يُغمس قطبان من الفلز نفسه في محلولين للأيون نفسه بتركيزين مختلفين",
           "zh": "将两根相同金属的电极分别插入同种离子、不同浓度的两种溶液中",
-          "ku": "Du elektrodên ji heman metalê di du çareseriyên heman îyonê yên bi tîrbûnên cuda de têne danîn"
+          "ku": "Du elektrodên ji heman metalê di du çareseriyên heman îyonê yên bi tîrbûnên cuda de tên danîn"
         },
         {
           "tr": "Elektrotlar iletken telle, çözeltiler tuz köprüsüyle birbirine bağlanır",
@@ -909,7 +909,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Электроды соединяют проводником, а растворы — солевым мостиком",
           "ar": "يوصل القطبان بسلك موصل ويوصل المحلولان بقنطرة ملحية",
           "zh": "用导线连接两电极，用盐桥连接两溶液",
-          "ku": "Elektrod bi têleke guhêzbar, çareserî jî bi pira xwê bi hev ve têne girêdan"
+          "ku": "Elektrod bi têleke guhêzbar, çareserî jî bi pira xwê bi hev ve tên girêdan"
         },
         {
           "tr": "Seyreltik çözeltideki elektrot anot olup yükseltgenir; derişik çözeltideki iyonlar katotta indirgenir",
@@ -919,7 +919,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Электрод в разбавленном растворе служит анодом и окисляется; ионы концентрированного раствора восстанавливаются на катоде",
           "ar": "القطب المغموس في المحلول المخفف هو المصعد ويتأكسد؛ وتُختزل أيونات المحلول المركز عند المهبط",
           "zh": "稀溶液中的电极为负极并被氧化；浓溶液中的离子在正极被还原",
-          "ku": "Elektroda di çareseriya sist de anod e û oksîd dibe; îyonên çareseriya tîr li katodê kêm dibin"
+          "ku": "Elektroda di çareseriya sist de anod e û oksîde dibe; îyonên di çareseriya tîr de li katodê redûkte dibin"
         },
         {
           "tr": "Derişimler eşitlendiğinde Epil = 0 olur ve pil çalışmayı durdurur",
@@ -929,7 +929,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Когда концентрации выравниваются, Eэл = 0 и элемент перестаёт работать",
           "ar": "عندما يتساوى التركيزان يصبح Ecell = 0 وتتوقف الخلية عن العمل",
           "zh": "当两溶液浓度相等时，E电池 = 0，电池停止工作",
-          "ku": "Dema tîrbûn wekhev dibin, Epîl = 0 dibe û pîl radiweste"
+          "ku": "Dema tîrbûn wekhev dibin, Epîl = 0 dibe û pîl ji xebatê disekine"
         }
       ]
     },
@@ -954,7 +954,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Записать суммарную реакцию элемента и отметить, что ион анода — продукт, а ион катода — исходное вещество",
           "ar": "تُكتب معادلة التفاعل الكلي للخلية؛ ويُلاحظ أن أيون المصعد من النواتج وأيون المهبط من المتفاعلات",
           "zh": "写出电池总反应；确定负极区离子是生成物，正极区离子是反应物",
-          "ku": "Reaksiyona giştî ya pîlê tê nivîsîn; tê dîtin ku îyona anodê di berheman de û îyona katodê di têketiyan de ye"
+          "ku": "Reaksiyona giştî ya pîlê tê nivîsîn; tê diyarkirin ku îyona anodê di nav hilberan de û îyona katodê di nav reaktantan de ye"
         },
         {
           "tr": "Yapılan işlemin (su ekleme, tuz ekleme, çöktürme) hangi iyonun derişimini nasıl değiştirdiği belirlenir",
@@ -964,7 +964,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Определить, концентрацию какого иона и как меняет данная операция (добавление воды, добавление соли, осаждение)",
           "ar": "يُحدَّد كيف يغيّر الإجراء (إضافة الماء، أو إضافة ملح، أو الترسيب) تركيز كل أيون",
           "zh": "判断所做操作（加水、加盐、沉淀）如何改变哪种离子的浓度",
-          "ku": "Tê diyarkirin ku kiryar (lêzêdekirina avê, xwê an jî niştandin) tîrbûna kîjan îyonê çawa diguherîne"
+          "ku": "Tê diyarkirin ku kiryar (zêdekirina avê, zêdekirina xwê, niştandin) tîrbûna kîjan îyonê çawa diguherîne"
         },
         {
           "tr": "Le Chatelier ilkesine göre toplam tepkimenin dengesinin hangi yöne kayacağı bulunur",
@@ -974,7 +974,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "По принципу Ле Шателье найти направление смещения равновесия суммарной реакции",
           "ar": "يُحدَّد اتجاه انزياح الاتزان للتفاعل الكلي وفق مبدأ لوشاتلييه",
           "zh": "根据勒夏特列原理判断总反应平衡移动的方向",
-          "ku": "Li gorî prensîba Le Chatelier aliyê ku hevsengiya reaksiyona giştî ber bi wê ve diçe tê dîtin"
+          "ku": "Li gorî prensîba Le Chatelier tê dîtin ku hevsengiya reaksiyona giştî dê ber bi kîjan alî ve biçe"
         },
         {
           "tr": "Denge ürünlere kayıyorsa pil gerilimi artar, girenlere kayıyorsa azalır; elektrot boyutu gibi derişimi değiştirmeyen işlemler gerilimi değiştirmez",
@@ -984,7 +984,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Если равновесие смещается к продуктам, напряжение растёт, если к исходным веществам — падает; операции, не меняющие концентраций (например, изменение размера электрода), на напряжение не влияют",
           "ar": "إذا انزاح الاتزان نحو النواتج ازداد الجهد، وإذا انزاح نحو المتفاعلات قلّ؛ أما الإجراءات التي لا تغيّر التراكيز، مثل تغيير حجم القطب، فلا تغيّر الجهد",
           "zh": "平衡向生成物方向移动则电压增大，向反应物方向移动则电压减小；电极大小等不改变浓度的操作不改变电压",
-          "ku": "Heke hevsengî ber bi berheman ve biçe voltaj zêde dibe, ber bi têketiyan ve biçe kêm dibe; kiryarên ku tîrbûnê naguherînin, wek mezinahiya elektrodê, voltajê naguherînin"
+          "ku": "Heke hevsengî ber bi hilberan ve biçe voltaja pîlê zêde dibe, heke ber bi reaktantan ve biçe kêm dibe; kiryarên ku tîrbûnê naguherînin, wek mezinahiya elektrodê, voltajê naguherînin"
         }
       ]
     },
@@ -1009,7 +1009,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Электроны освобождаются на аноде при окислении атомов металла (Zn → Zn2+ + 2e-)",
           "ar": "تتحرر الإلكترونات عند المصعد بتأكسد ذرات الفلز (Zn → Zn2+ + 2e-)",
           "zh": "电子在负极由金属原子氧化而释放(Zn → Zn2+ + 2e-)",
-          "ku": "Elektron li anodê bi oksîdbûna atomên metalê azad dibin (Zn → Zn2+ + 2e-)"
+          "ku": "Elektron li anodê bi oksîdasyona atomên metalê azad dibin (Zn → Zn2+ + 2e-)"
         },
         {
           "tr": "Bu elektronlar dış devredeki iletken telden anottan katoda doğru akar",
@@ -1019,7 +1019,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Эти электроны движутся по внешнему проводу от анода к катоду",
           "ar": "تسري هذه الإلكترونات في السلك الخارجي من المصعد إلى المهبط",
           "zh": "这些电子经外电路导线从负极流向正极",
-          "ku": "Ev elektron di têla derve re ji anodê ber bi katodê ve diherikin"
+          "ku": "Ev elektron di têla guhêzbar a çerxa derve re ji anodê ber bi katodê ve diherikin"
         },
         {
           "tr": "Katoda ulaşan elektronları çözeltideki katyonlar alır; katyonlar indirgenerek katot yüzeyinde toplanır (Cu2+ + 2e- → Cu)",
@@ -1029,7 +1029,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Катионы раствора принимают пришедшие на катод электроны, восстанавливаются и осаждаются на нём (Cu2+ + 2e- → Cu)",
           "ar": "تكتسب الكاتيونات في المحلول الإلكترونات الواصلة إلى المهبط فتُختزل وتترسب على سطحه (Cu2+ + 2e- → Cu)",
           "zh": "溶液中的阳离子得到到达正极的电子，被还原并沉积在正极表面(Cu2+ + 2e- → Cu)",
-          "ku": "Katyonên di çareseriyê de elektronên ku digihîjin katodê distînin, kêm dibin û li ser rûyê katodê kom dibin (Cu2+ + 2e- → Cu)"
+          "ku": "Katyonên di çareseriyê de elektronên ku digihîjin katodê digirin; katyon redûkte dibin û li ser rûyê katodê kom dibin (Cu2+ + 2e- → Cu)"
         },
         {
           "tr": "Bu sırada anot kabında artan, katot kabında azalan pozitif yük tuz köprüsü iyonlarının göçüyle dengelenir ve devre tamamlanır",
@@ -1039,7 +1039,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "При этом растущий в анодном и убывающий в катодном пространстве положительный заряд компенсируется миграцией ионов солевого мостика, и цепь замыкается",
           "ar": "وفي الأثناء تُعادَل الشحنة الموجبة المتزايدة في وعاء المصعد والمتناقصة في وعاء المهبط بهجرة أيونات القنطرة الملحية فتكتمل الدائرة",
           "zh": "同时，负极区增加、正极区减少的正电荷通过盐桥中离子的迁移得到平衡，电路闭合",
-          "ku": "Di vê navberê de bara erênî ya ku li aliyê anodê zêde dibe û li aliyê katodê kêm dibe bi koça îyonên pira xwê tê hevsengkirin û çerx temam dibe"
+          "ku": "Di vê navberê de bara erênî ya ku di beşa anodê de zêde dibe û di beşa katodê de kêm dibe, bi koça îyonên pira xwê tê hevsengkirin û çerx temam dibe"
         }
       ]
     }
@@ -1055,7 +1055,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Для элемента Даниэля Zn(тв) | Zn2+(1 M) || Cu2+(1 M) | Cu(тв) при E°(Zn2+/Zn) = -0,76 В и E°(Cu2+/Cu) = +0,34 В чему равен стандартный потенциал элемента (в вольтах)?",
         "ar": "لخلية دانيال Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s)، إذا كان E°(Zn2+/Zn) = -0.76 V و E°(Cu2+/Cu) = +0.34 V، فكم فولتًا يبلغ جهد الخلية القياسي؟",
         "zh": "对于丹尼尔电池 Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s)，已知 E°(Zn2+/Zn) = -0.76 V，E°(Cu2+/Cu) = +0.34 V，其标准电池电势为多少伏？",
-        "ku": "Ji bo pîla Daniell Zn(k) | Zn2+(1 M) || Cu2+(1 M) | Cu(k), heke E°(Zn2+/Zn) = -0,76 V û E°(Cu2+/Cu) = +0,34 V be, potansiyela standard a pîlê çend volt e?"
+        "ku": "Ji bo pîla Daniell Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s), heke E°(Zn2+/Zn) = -0,76 V û E°(Cu2+/Cu) = +0,34 V be, potansiyela standard a pîlê çend volt e?"
       },
       "options": [
         {
@@ -1118,7 +1118,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "У Zn потенциал восстановления меньше, поэтому Zn — анод: E°ок(Zn) = +0,76 В. Cu2+ восстанавливается на катоде: E°восст = +0,34 В. E°эл = 0,76 + 0,34 = 1,10 В. Если сложить, не изменив знак потенциала цинка (0,34 - 0,76), получится -0,42 В; у самопроизвольно работающего элемента E°эл не может быть отрицательным.",
         "ar": "للخارصين Zn جهد الاختزال الأصغر، فهو المصعد: E°ox(Zn) = +0.76 V. ويُختزل Cu2+ عند المهبط: E°red = +0.34 V. إذن E°cell = 0.76 + 0.34 = 1.10 V. أما الجمع دون عكس إشارة جهد الخارصين (0.34 - 0.76) فيعطي -0.42 V؛ ولا يمكن أن يكون E°cell سالبًا في خلية تعمل تلقائيًا.",
         "zh": "Zn 的还原电势较小，所以 Zn 是负极：E°氧化(Zn) = +0.76 V。Cu2+ 在正极被还原：E°还原 = +0.34 V。E°电池 = 0.76 + 0.34 = 1.10 V。若不改变锌电势的符号直接相加(0.34 - 0.76)，会得到 -0.42 V；自发工作的电池 E°电池 不可能为负。",
-        "ku": "Potansiyela reduksiyonê ya Zn biçûktir e, loma Zn anod e: E°oks(Zn) = +0,76 V. Cu2+ li katodê kêm dibe: E°red = +0,34 V. E°pîl = 0,76 + 0,34 = 1,10 V. Heke nîşana potansiyela zinkê neyê guhertin û wisa were komkirin (0,34 - 0,76), -0,42 V derdikeve; di pîleke ku bi xweber dixebite de E°pîl nikare neyînî be."
+        "ku": "Ji ber ku potansiyela redûksiyonê ya Zn piçûktir e, Zn anod e: E°oks(Zn) = +0,76 V. Cu2+ li katodê redûkte dibe: E°red = +0,34 V. E°pîl = 0,76 + 0,34 = 1,10 V. Berhevkirina bêyî guhertina nîşana potansiyela zinkê (0,34 - 0,76) -0,42 V dide; di pîleke ku bi xwe dixebite de E°pîl nikare neyînî be."
       }
     },
     {
@@ -1131,7 +1131,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Какое утверждение о движении ионов солевого мостика в работающем гальваническом элементе верно?",
         "ar": "أيّ العبارات الآتية صحيحة بشأن حركة الأيونات في القنطرة الملحية لخلية جلفانية في أثناء عملها؟",
         "zh": "关于标准原电池中盐桥内离子的迁移，下列说法正确的是哪一项？",
-        "ku": "Di derbarê tevgera îyonan de li ser pira xwê ya di şaneyek elektrokîmyayî ya standard de kîjan gotin rast e?"
+        "ku": "Di pîleke galvanîk a ku dixebite de, derbarê tevgera îyonên pira xwê de kîjan ji van gotinan rast e?"
       },
       "options": [
         {
@@ -1142,7 +1142,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Анионы перемещаются к аноду, катионы — к катоду",
           "ar": "تهاجر الأنيونات نحو المصعد والكاتيونات نحو المهبط",
           "zh": "阴离子向负极区迁移，阳离子向正极区迁移",
-          "ku": "Anyon koçî anodê dikin, katyon jî ber bi katodê ve diçin"
+          "ku": "Anyon koçî anodê, katyon koçî katodê dikin"
         },
         {
           "tr": "Katyonlar anoda, anyonlar katoda göç eder",
@@ -1152,7 +1152,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Катионы перемещаются к аноду, анионы — к катоду",
           "ar": "تهاجر الكاتيونات نحو المصعد والأنيونات نحو المهبط",
           "zh": "阳离子向负极区迁移，阴离子向正极区迁移",
-          "ku": "Katyon ber bi anodê, anyon koçî katodê dikin"
+          "ku": "Katyon koçî anodê, anyon koçî katodê dikin"
         },
         {
           "tr": "Tüm iyonlar sadece katoda doğru hareket eder",
@@ -1172,7 +1172,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Ионы солевого мостика не движутся",
           "ar": "الأيونات الموجودة في القنطرة الملحية لا تتحرك",
           "zh": "盐桥中的离子不移动",
-          "ku": "Di pira xwê de îyon nalivin"
+          "ku": "Îyonên di pira xwê de nalivin"
         },
         {
           "tr": "Elektronlar tuz köprüsünden akar",
@@ -1182,7 +1182,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Электроны проходят через солевой мостик",
           "ar": "تتدفق الإلكترونات عبر القنطرة الملحية",
           "zh": "电子流过盐桥",
-          "ku": "Elektron li ser pira xwê diherikin"
+          "ku": "Elektron di pira xwê re diherikin"
         }
       ],
       "correctIndex": 0,
@@ -1194,7 +1194,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В анодном пространстве при окислении концентрация катионов растёт, поэтому анионы солевого мостика перемещаются туда и компенсируют избыточный положительный заряд; в катодном пространстве катионы расходуются при восстановлении, поэтому туда перемещаются катионы мостика. Электроны не проходят через солевой мостик: они движутся от анода к катоду по внешнему проводнику.",
         "ar": "في وعاء المصعد يزداد تركيز الكاتيونات بسبب الأكسدة، فتهاجر أنيونات القنطرة الملحية إليه لمعادلة الشحنة الموجبة الزائدة؛ وفي وعاء المهبط تُستهلك الكاتيونات بالاختزال، فتهاجر كاتيونات القنطرة إليه. أما الإلكترونات فلا تمر عبر القنطرة الملحية، بل تنتقل من المصعد إلى المهبط عبر السلك الخارجي.",
         "zh": "负极区因氧化反应阳离子浓度增大，盐桥中的阴离子迁入以中和多余的正电荷；正极区的阳离子被还原而减少，盐桥中的阳离子迁入补充。电子不经过盐桥，而是通过外电路导线从负极流向正极。",
-        "ku": "Li beşa anodê bi oksîdasyonê tîrbûna katyonan zêde dibe, loma anyonên pira xwê diçin wir da ku barê erênî yê zêde hevseng bikin; li beşa katodê katyon bi reduksiyonê kêm dibin, loma katyonên pirê diçin wir. Elektron di pira xwê re derbas nabin; ew bi têla derve ji anodê ber bi katodê diherikin."
+        "ku": "Ji ber ku di beşa anodê de bi oksîdasyonê tîrbûna katyonan zêde dibe, ji bo hevsengkirina bara erênî ya zêde anyonên pira xwê koçî beşa anodê dikin; di beşa katodê de katyon bi redûksiyonê kêm dibin, ji ber vê yekê katyonên pira xwê koçî beşa katodê dikin. Elektron ne di pira xwê re, lê di têla guhêzbar a çerxa derve re ji anodê ber bi katodê ve diherikin."
       }
     },
     {
@@ -1270,7 +1270,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В соединении степень окисления K равна +1, O — -2. Обозначим степень окисления Cr через x: 2(+1) + 2x + 7(-2) = 0 → 2x = 12 → x = +6. +12 — сумма для двух атомов Cr, а не для одного; +3 — заряд иона Cr3+, который образуется при восстановлении дихромата; +7 — результат путаницы с Mn в KMnO4.",
         "ar": "في المركب يكون K = +1 و O = -2. ليكن عدد تأكسد Cr هو x: 2(+1) + 2x + 7(-2) = 0 → 2x = 12 → x = +6. القيمة +12 مجموع ذرتي Cr لا ذرة واحدة؛ و+3 شحنة أيون Cr3+ الناتج عند اختزال ثنائي الكرومات؛ أما +7 فمصدرها الخلط مع Mn في KMnO4.",
         "zh": "化合物中 K 为 +1，O 为 -2。设 Cr 为 x：2(+1) + 2x + 7(-2) = 0 → 2x = 12 → x = +6。+12 是两个 Cr 原子的总和而非单个原子；+3 是重铬酸根被还原后生成的 Cr3+ 的电荷；+7 则是与 KMnO4 中的 Mn 混淆。",
-        "ku": "Di pêkhateyê de K +1 û O -2 ye. Bila ya Cr x be: 2(+1) + 2x + 7(-2) = 0 → 2x = 12 → x = +6. +12 berhevoka her du atomên Cr e, ne ya atomekê; +3 bara îyona Cr3+ ye ku dema dîkromat kêm dibe çêdibe; +7 jî ji tevlihevkirina bi Mn ya di KMnO4 de tê."
+        "ku": "Di pêkhateyê de K +1 û O -2 ye. Bila hejmara oksîdasyonê ya Cr x be: 2(+1) + 2x + 7(-2) = 0 → 2x = 12 → x = +6. +12 berhevoka her du atomên Cr e, ne nirxa atomekê ye; +3 bara îyona Cr3+ ye ku dema dîkromat redûkte dibe çêdibe; +7 jî ji tevlihevkirina bi Mn ya di KMnO4 de tê."
       }
     },
     {
@@ -1283,7 +1283,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Реакцию, протекающую в кислой среде,\nMnO4- + Fe2+ + H+ → Mn2+ + Fe3+ + H2O\nуравняли наименьшими целыми коэффициентами. Чему равен коэффициент перед H+?",
         "ar": "عند موازنة التفاعل الذي يجري في وسط حمضي\nMnO4- + Fe2+ + H+ → Mn2+ + Fe3+ + H2O\nبأصغر أعداد صحيحة، ما معامل أيون H+؟",
         "zh": "将酸性溶液中的反应\nMnO4- + Fe2+ + H+ → Mn2+ + Fe3+ + H2O\n用最小整数配平后，H+ 的系数是多少？",
-        "ku": "Dema reaksiyona di hawîrdora asîdî de\nMnO4- + Fe2+ + H+ → Mn2+ + Fe3+ + H2O\nbi hejmarên tam ên herî biçûk tê hevsengkirin, hevrêza H+ çend e?"
+        "ku": "Dema reaksiyona ku di derdora asîdî de pêk tê\nMnO4- + Fe2+ + H+ → Mn2+ + Fe3+ + H2O\nbi hejmarên tam ên herî piçûk tê hevsengkirin, hevbera îyona H+ çend e?"
       },
       "options": [
         {
@@ -1346,7 +1346,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Mn: +7 → +2 (принимает 5 e-), Fe: +2 → +3 (отдаёт 1 e-). Для баланса электронов 1 MnO4- : 5 Fe2+. 4 атома O из MnO4- переходят в 4 H2O, для чего нужно 8 H+: MnO4- + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O. Проверка зарядов: слева -1 + 10 + 8 = +17, справа +2 + 15 = +17. 4 — коэффициент воды, 5 — коэффициент Fe2+.",
         "ar": "Mn: +7 → +2 (يكتسب 5 e-)، و Fe: +2 → +3 (يفقد 1 e-). لموازنة الإلكترونات نأخذ 1 MnO4- : 5 Fe2+. تذهب ذرات O الأربع في MnO4- إلى 4 H2O، وهذه تحتاج إلى 8 H+: MnO4- + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O. التحقق من الشحنة: اليسار -1 + 10 + 8 = +17، واليمين +2 + 15 = +17. العدد 4 معامل الماء و5 معامل Fe2+.",
         "zh": "Mn：+7 → +2(得 5 e-)，Fe：+2 → +3(失 1 e-)。电子守恒取 1 MnO4- : 5 Fe2+。MnO4- 中的 4 个 O 进入 4 H2O，需要 8 H+：MnO4- + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O。电荷检验：左边 -1 + 10 + 8 = +17，右边 +2 + 15 = +17。4 是水的系数，5 是 Fe2+ 的系数。",
-        "ku": "Mn: +7 → +2 (5 e- distîne), Fe: +2 → +3 (1 e- dide). Ji bo wekheviya elektronan 1 MnO4- : 5 Fe2+ tê girtin. 4 atomên O yên MnO4- diçin 4 H2O, ji bo vê 8 H+ lazim e: MnO4- + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O. Kontrola barê: çep -1 + 10 + 8 = +17, rast +2 + 15 = +17. 4 hevrêza avê ye, 5 jî ya Fe2+ ye."
+        "ku": "Mn: +7 → +2 (5 e- digire), Fe: +2 → +3 (1 e- dide). Ji bo wekheviya elektronan 1 MnO4- : 5 Fe2+ tê girtin. 4 atomên O yên MnO4- diçin nav 4 H2O; ji bo 4 H2O 8 H+ pêwîst in: MnO4- + 5Fe2+ + 8H+ → Mn2+ + 5Fe3+ + 4H2O. Kontrola barê: çep -1 + 10 + 8 = +17, rast +2 + 15 = +17. 4 hevbera avê ye, 5 jî hevbera îyona Fe2+ ye."
       }
     },
     {
@@ -1359,7 +1359,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Для элемента\nNi(тв) | Ni2+(1 M) || Ag+(1 M) | Ag(тв)\nпри E°(Ni2+/Ni) = -0,25 В и E°(Ag+/Ag) = +0,80 В чему равен стандартный потенциал элемента в вольтах?",
         "ar": "في الخلية\nNi(s) | Ni2+(1 M) || Ag+(1 M) | Ag(s)\nإذا كان E°(Ni2+/Ni) = -0.25 V و E°(Ag+/Ag) = +0.80 V، فما جهد الخلية القياسي بالفولت؟",
         "zh": "对于电池\nNi(s) | Ni2+(1 M) || Ag+(1 M) | Ag(s)\n已知 E°(Ni2+/Ni) = -0.25 V，E°(Ag+/Ag) = +0.80 V，标准电池电势是多少伏？",
-        "ku": "Di pîla\nNi(r) | Ni2+(1 M) || Ag+(1 M) | Ag(r)\nde E°(Ni2+/Ni) = -0,25 V û E°(Ag+/Ag) = +0,80 V be, potansiyela standard a pîlê çend volt e?"
+        "ku": "Di pîla\nNi(s) | Ni2+(1 M) || Ag+(1 M) | Ag(s)\nde heke E°(Ni2+/Ni) = -0,25 V û E°(Ag+/Ag) = +0,80 V be, potansiyela standard a pîlê çend volt e?"
       },
       "options": [
         {
@@ -1422,7 +1422,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Ni с меньшим потенциалом восстановления — анод: E°ок(Ni) = +0,25 В. Ag+ восстанавливается на катоде: E°восст = +0,80 В. E°эл = 0,25 + 0,80 = 1,05 В. Даже если полуреакцию Ag+ умножить на 2, потенциал не умножается; эта ошибка даёт 1,85 или 1,35 В. 0,55 В получается без смены знака потенциала Ni, а 2,10 В — при удвоении потенциала элемента.",
         "ar": "النيكل ذو جهد الاختزال الأصغر هو المصعد: E°ox(Ni) = +0.25 V. ويُختزل Ag+ عند المهبط: E°red = +0.80 V. إذن E°cell = 0.25 + 0.80 = 1.05 V. وإن ضُربت نصف معادلة Ag+ في 2 فلا يُضرب جهدها؛ وهذا الخطأ يعطي 1.85 أو 1.35 V. أما 0.55 V فتنتج عن عدم عكس إشارة جهد Ni، و2.10 V عن مضاعفة جهد الخلية.",
         "zh": "还原电势较小的 Ni 是负极：E°氧化(Ni) = +0.25 V。Ag+ 在正极被还原：E°还原 = +0.80 V。E°电池 = 0.25 + 0.80 = 1.05 V。即使 Ag+ 半反应乘以 2，其电势也不乘 2；犯此错误会得到 1.85 或 1.35 V。0.55 V 来自没有把 Ni 的电势变号，2.10 V 来自把电池电势乘以 2。",
-        "ku": "Ni ya ku potansiyela wê ya reduksiyonê biçûktir e anod e: E°oks(Ni) = +0,25 V. Ag+ li katodê kêm dibe: E°red = +0,80 V. E°pîl = 0,25 + 0,80 = 1,05 V. Heke nîvreaksiyona Ag+ bi 2 were zêdekirin jî potansiyel bi 2 nayê zêdekirin; bi vê xeletiyê 1,85 an 1,35 V tê dîtin. 0,55 V ji nevegerandina nîşana potansiyela Ni, 2,10 V jî ji du qatkirina potansiyela pîlê tê."
+        "ku": "Ni, ku potansiyela wê ya redûksiyonê piçûktir e, anod e: E°oks(Ni) = +0,25 V. Ag+ li katodê redûkte dibe: E°red = +0,80 V. E°pîl = 0,25 + 0,80 = 1,05 V. Her çend nîvreaksiyona Ag+ bi 2 were lêkirin jî potansiyel bi 2 nayê lêkirin; bi vê xeletiyê 1,85 an 1,35 V tê dîtin. 0,55 V ji berhevkirina potansiyela Ni bêyî guhertina nîşana wê, 2,10 V jî ji lêkirina potansiyela pîlê bi 2 derdikeve."
       }
     },
     {
@@ -1435,7 +1435,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Собран элемент Zn(тв) | Zn2+(1 M) || Ag+(1 M) | Ag(тв). E°(Zn2+/Zn) = -0,76 В, E°(Ag+/Ag) = +0,80 В.\nКакие из утверждений об этом элементе верны?\nI. Цинковый электрод — анод.\nII. Во внешней цепи электроны движутся от серебряного электрода к цинковому.\nIII. По мере работы элемента концентрация ионов Ag+ уменьшается.",
         "ar": "تُركَّب الخلية Zn(s) | Zn2+(1 M) || Ag+(1 M) | Ag(s)، حيث E°(Zn2+/Zn) = -0.76 V و E°(Ag+/Ag) = +0.80 V.\nأيّ العبارات الآتية عن هذه الخلية صحيحة؟\nI. قطب Zn هو المصعد.\nII. تسري الإلكترونات في الدائرة الخارجية من قطب Ag إلى قطب Zn.\nIII. مع عمل الخلية يقل تركيز أيونات Ag+.",
         "zh": "组装电池 Zn(s) | Zn2+(1 M) || Ag+(1 M) | Ag(s)。E°(Zn2+/Zn) = -0.76 V，E°(Ag+/Ag) = +0.80 V。\n关于该电池的下列说法中，哪些正确？\nI. Zn 电极是负极。\nII. 在外电路中，电子从 Ag 电极流向 Zn 电极。\nIII. 电池工作时，Ag+ 浓度减小。",
-        "ku": "Pîla Zn(r) | Zn2+(1 M) || Ag+(1 M) | Ag(r) tê sazkirin. E°(Zn2+/Zn) = -0,76 V, E°(Ag+/Ag) = +0,80 V.\nDerbarê vê pîlê de kîjan ji van gotinan rast in?\nI. Elektroda Zn anod e.\nII. Di çerxa derve de elektron ji elektroda Ag ber bi elektroda Zn ve diherikin.\nIII. Her ku pîl dixebite tîrbûna îyonên Ag+ kêm dibe."
+        "ku": "Pîla Zn(s) | Zn2+(1 M) || Ag+(1 M) | Ag(s) tê sazkirin. E°(Zn2+/Zn) = -0,76 V, E°(Ag+/Ag) = +0,80 V e.\nDerbarê vê pîlê de;\nI. Elektroda Zn anod e.\nII. Di çerxa derve de elektron ji elektroda Ag ber bi elektroda Zn ve diherikin.\nIII. Her ku pîl dixebite, tîrbûna îyonên Ag+ kêm dibe.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1498,7 +1498,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "I верно: Zn с меньшим потенциалом восстановления окисляется, значит, это анод. II неверно: во внешней цепи электроны идут от анода (Zn), где происходит окисление, к катоду (Ag); направление перепутано. III верно: на катоде реакция Ag+ + e- → Ag расходует ионы Ag+, их концентрация уменьшается. Верны I и III.",
         "ar": "I صحيحة: يتأكسد Zn ذو جهد الاختزال الأصغر فهو المصعد. II خاطئة: تسري الإلكترونات في الدائرة الخارجية من المصعد (Zn) حيث تحدث الأكسدة إلى المهبط (Ag)؛ فالاتجاه معكوس. III صحيحة: عند المهبط يستهلك التفاعل Ag+ + e- → Ag أيونات Ag+ فيقل تركيزها. العبارتان الصحيحتان هما I و III.",
         "zh": "I 正确：还原电势较小的 Zn 被氧化，是负极。II 错误：外电路中电子从发生氧化的负极(Zn)流向正极(Ag)，方向说反了。III 正确：正极上 Ag+ + e- → Ag 消耗 Ag+，其浓度减小。正确的是 I 和 III。",
-        "ku": "I rast e: Zn ya ku potansiyela wê ya reduksiyonê biçûktir e oksîd dibe, ango anod e. II şaş e: di çerxa derve de elektron ji anoda (Zn) ku oksîdasyon lê dibe ber bi katodê (Ag) ve diherikin; alî berevajî hatiye dayîn. III rast e: li katodê bi Ag+ + e- → Ag îyonên Ag+ têne xerckirin û tîrbûna wan kêm dibe. Gotinên rast I û III ne."
+        "ku": "I rast e: Zn, ku potansiyela wê ya redûksiyonê piçûktir e, oksîde dibe, ango anod e. II şaş e: di çerxa derve de elektron ji anoda (Zn) ku oksîdasyon lê pêk tê ber bi katodê (Ag) ve diherikin; rêgez berevajî hatiye dayîn. III rast e: li katodê bi reaksiyona Ag+ + e- → Ag îyonên Ag+ tên xerckirin û tîrbûna wan kêm dibe. Gotinên rast I û III in."
       }
     },
     {
@@ -1511,7 +1511,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В опытах с металлами X, Y и Z получены следующие наблюдения:\n• При погружении металла X в раствор, содержащий ионы Y2+, на поверхности X осаждается металл Y.\n• При погружении металла Z в раствор, содержащий ионы X2+, никаких изменений не происходит.\n• При погружении металла Z в раствор, содержащий ионы Y2+, на поверхности Z осаждается металл Y.\nКакое соотношение между потенциалами окисления (активностью) металлов X, Y и Z верно?",
         "ar": "في تجارب على الفلزات X و Y و Z سُجّلت الملاحظات الآتية:\n• عند غمس الفلز X في محلول يحتوي على أيونات Y2+ يترسب الفلز Y على سطح X.\n• عند غمس الفلز Z في محلول يحتوي على أيونات X2+ لا يحدث أي تغيّر.\n• عند غمس الفلز Z في محلول يحتوي على أيونات Y2+ يترسب الفلز Y على سطح Z.\nما العلاقة بين جهود تأكسد (نشاط) الفلزات X و Y و Z؟",
         "zh": "用金属 X、Y、Z 做实验，记录如下：\n• 将 X 浸入含 Y2+ 的溶液中，X 表面析出金属 Y。\n• 将 Z 浸入含 X2+ 的溶液中，没有任何变化。\n• 将 Z 浸入含 Y2+ 的溶液中，Z 表面析出金属 Y。\nX、Y、Z 的氧化电势（活动性）大小关系是下列哪一项？",
-        "ku": "Di ceribandinên bi metalên X, Y û Z de ev çavdêrî hatin tomarkirin:\n• Dema metala X di çareseriyeke bi îyonên Y2+ de tê rakirin, metala Y li ser X kom dibe.\n• Dema metala Z di çareseriyeke bi îyonên X2+ de tê rakirin, tu guherîn çênabe.\n• Dema metala Z di çareseriyeke bi îyonên Y2+ de tê rakirin, metala Y li ser Z kom dibe.\nLi gorî vê, têkiliya di navbera potansiyelên oksîdasyonê (çalakiya) X, Y û Z de kîjan e?"
+        "ku": "Di ceribandinên bi metalên X, Y û Z de ev çavdêrî hatine tomarkirin:\n• Dema metala X di çareseriyeke ku îyonên Y2+ dihewîne de tê kirin, metala Y li ser rûyê X kom dibe.\n• Dema metala Z di çareseriyeke ku îyonên X2+ dihewîne de tê kirin, tu guherîn pêk nayê.\n• Dema metala Z di çareseriyeke ku îyonên Y2+ dihewîne de tê kirin, metala Y li ser rûyê Z kom dibe.\nLi gorî vê yekê, têkiliya navbera potansiyelên oksîdasyonê (çalakiyên) metalên X, Y û Z kîjan e?"
       },
       "options": [
         {
@@ -1574,7 +1574,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Металл восстанавливает ионы менее активного металла. Опыт 1: X восстанавливает Y2+ → X > Y. Опыт 2: Z не восстанавливает X2+ → X > Z. Опыт 3: Z восстанавливает Y2+ → Z > Y. Отсюда X > Z > Y. Считать Z активнее X — значит упустить, что «отсутствие реакции» во втором опыте указывает на меньшую активность Z.",
         "ar": "يختزل الفلز أيونات فلز أقل نشاطًا منه. التجربة 1: يختزل X أيونات Y2+ → X > Y. التجربة 2: لا يختزل Z أيونات X2+ → X > Z. التجربة 3: يختزل Z أيونات Y2+ → Z > Y. وبالجمع نحصل على X > Z > Y. أما اعتبار Z أنشط من X فيُغفل أن «عدم حدوث تفاعل» في التجربة الثانية يدل على أن Z أقل نشاطًا.",
         "zh": "金属能还原比它活动性弱的金属的离子。实验 1：X 还原 Y2+ → X > Y。实验 2：Z 不能还原 X2+ → X > Z。实验 3：Z 还原 Y2+ → Z > Y。综合得 X > Z > Y。认为 Z 比 X 活泼，是忽略了第二个实验“不反应”说明 Z 的活动性较弱。",
-        "ku": "Metalek îyonên metaleke ji xwe kêmçalaktir kêm dike. Ceribandina 1: X Y2+ kêm dike → X > Y. Ceribandina 2: Z nikare X2+ kêm bike → X > Z. Ceribandina 3: Z Y2+ kêm dike → Z > Y. Bi hev re X > Z > Y derdikeve. Hesibandina Z ji X çalaktir, ji bîr kirina wê ye ku \"reaksiyon tune\" di ceribandina duyem de nîşan dide Z kêmçalaktir e."
+        "ku": "Metalek îyonên metaleke ji xwe kêmçalaktir redûkte dike. Ceribandina 1: X Y2+ redûkte dike → X > Y. Ceribandina 2: Z nikare X2+ redûkte bike → X > Z. Ceribandina 3: Z Y2+ redûkte dike → Z > Y. Bi hevgirtina van X > Z > Y tê dîtin. Hesibandina Z ji X çalaktir, nedîtina wê yekê ye ku di ceribandina duyem de \"tunebûna reaksiyonê\" nîşan dide Z kêmçalaktir e."
       }
     },
     {
@@ -1587,7 +1587,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Стандартные потенциалы восстановления:\nAl3+/Al: -1,66 В; Zn2+/Zn: -0,76 В; Fe2+/Fe: -0,44 В; Ni2+/Ni: -0,25 В; Cu2+/Cu: +0,34 В; Ag+/Ag: +0,80 В\nВ сосуде из какого металла можно хранить 1 M раствор CuSO4 так, чтобы сосуд не разрушался?",
         "ar": "جهود الاختزال القياسية:\nAl3+/Al: -1.66 V؛ Zn2+/Zn: -0.76 V؛ Fe2+/Fe: -0.44 V؛ Ni2+/Ni: -0.25 V؛ Cu2+/Cu: +0.34 V؛ Ag+/Ag: +0.80 V\nفي وعاء مصنوع من أيّ الفلزات الآتية يمكن حفظ محلول CuSO4 تركيزه 1 M دون أن يتآكل الوعاء؟",
         "zh": "标准还原电势：\nAl3+/Al：-1.66 V；Zn2+/Zn：-0.76 V；Fe2+/Fe：-0.44 V；Ni2+/Ni：-0.25 V；Cu2+/Cu：+0.34 V；Ag+/Ag：+0.80 V\n1 M CuSO4 溶液可以保存在由下列哪种金属制成的容器中而不腐蚀容器？",
-        "ku": "Potansiyelên reduksiyonê yên standard:\nAl3+/Al: -1,66 V; Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V\nLi gorî vê, çareseriya CuSO4 ya 1 M dikare di firaxeke ji kîjan metalê çêkirî de bê hilanîn bêyî ku firax bixwe?"
+        "ku": "Potansiyelên redûksiyonê yên standard:\nAl3+/Al: -1,66 V; Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V\nLi gorî vê yekê, çareseriya 1 M CuSO4 dikare di firaxeke ji kîjan metalê çêkirî de bê hilanîn bêyî ku firax bixure?"
       },
       "options": [
         {
@@ -1598,7 +1598,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Алюминий",
           "ar": "الألومنيوم",
           "zh": "铝",
-          "ku": "Aluminyûm"
+          "ku": "Alumînyûm"
         },
         {
           "tr": "Çinko",
@@ -1650,7 +1650,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Если металл сосуда может восстанавливать Cu2+ (если реакция M + Cu2+ → M2+ + Cu самопроизвольна), сосуд разрушается. Al, Zn, Fe и Ni с потенциалами восстановления ниже +0,34 В восстанавливают Cu2+; с ними E°эл > 0. Потенциал восстановления серебра (+0,80 В) больше, чем у меди; для Ag + Cu2+ E° = 0,34 - 0,80 = -0,46 В, реакция несамопроизвольна, и сосуд не разрушается. Никель ближе всех к меди, но его потенциал всё же меньше, и он реагирует с Cu2+.",
         "ar": "إذا استطاع فلز الوعاء اختزال أيونات Cu2+ (أي إذا كان التفاعل M + Cu2+ → M2+ + Cu تلقائيًا) فإن الوعاء يتآكل. الفلزات Al و Zn و Fe و Ni ذات جهود الاختزال الأقل من +0.34 V تختزل Cu2+ ويكون معها E°cell > 0. أما جهد اختزال الفضة (+0.80 V) فأكبر من جهد النحاس، فيكون E° للتفاعل Ag + Cu2+ = 0.34 - 0.80 = -0.46 V، أي غير تلقائي ولا يتآكل الوعاء. والنيكل رغم أنه الأقرب إلى النحاس فإن جهده أقل ويتفاعل مع Cu2+.",
         "zh": "如果容器金属能还原 Cu2+(即 M + Cu2+ → M2+ + Cu 自发)，容器就会被腐蚀。还原电势低于 +0.34 V 的 Al、Zn、Fe、Ni 都能还原 Cu2+，此时 E°电池 > 0。银的还原电势(+0.80 V)大于铜，Ag + Cu2+ 的 E° = 0.34 - 0.80 = -0.46 V，非自发，容器不被腐蚀。镍虽然电势最接近铜，但仍然更低，会与 Cu2+ 反应。",
-        "ku": "Heke metala firaxê bikaribe îyonên Cu2+ kêm bike (heke M + Cu2+ → M2+ + Cu xweber be), firax dixwe. Al, Zn, Fe û Ni yên ku potansiyela wan a reduksiyonê ji +0,34 V biçûktir e Cu2+ kêm dikin; bi wan re E°pîl > 0 ye. Potansiyela reduksiyonê ya zîv (+0,80 V) ji ya sifir mezintir e; ji bo Ag + Cu2+ E° = 0,34 - 0,80 = -0,46 V e, ne xweber e û firax naxwe. Nîkel herçend herî nêzî sifir be jî potansiyela wê hîn biçûktir e û bi Cu2+ re reaksiyon dide."
+        "ku": "Heke metala firaxê bikaribe îyonên Cu2+ redûkte bike (heke M + Cu2+ → M2+ + Cu xweber be), firax dixure. Al, Zn, Fe û Ni, ku potansiyela wan a redûksiyonê ji +0,34 V piçûktir e, Cu2+ redûkte dikin; bi wan re E°pîl > 0 ye. Potansiyela redûksiyonê ya zîv (+0,80 V) ji ya sifirê mezintir e; ji bo Ag + Cu2+ E° = 0,34 - 0,80 = -0,46 V e, ji ber vê yekê reaksiyon ne-xweber e û firax naxure. Her çend potansiyela nîkelê herî nêzî ya sifirê be jî, dîsa ji +0,34 V piçûktir e, ji ber vê yekê bi Cu2+ re dikeve reaksiyonê."
       }
     },
     {
@@ -1663,7 +1663,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Собран концентрационный элемент\nCu(тв) | Cu2+(0,01 M) || Cu2+(1 M) | Cu(тв).\nКакие из утверждений об этом элементе верны?\nI. Электрод, погружённый в 0,01 M раствор Cu2+, — анод.\nII. Хотя E°эл = 0, так как полуэлементы одинаковы, вначале элемент даёт напряжение.\nIII. По мере работы элемента масса медного электрода в 1 M растворе уменьшается.",
         "ar": "تُركَّب خلية تركيز على النحو\nCu(s) | Cu2+(0.01 M) || Cu2+(1 M) | Cu(s).\nأيّ العبارات الآتية عن هذه الخلية صحيحة؟\nI. القطب المغموس في محلول Cu2+ تركيزه 0.01 M هو المصعد.\nII. رغم أن E°cell = 0 لتماثل نصفي الخلية، فإن الخلية تولّد جهدًا في البداية.\nIII. مع عمل الخلية تقل كتلة قطب Cu المغموس في المحلول 1 M.",
         "zh": "组装浓差电池\nCu(s) | Cu2+(0.01 M) || Cu2+(1 M) | Cu(s)\n关于该电池的下列说法中，哪些正确？\nI. 浸在 0.01 M Cu2+ 溶液中的电极是负极。\nII. 虽然两个半电池相同使 E°电池 = 0，但电池开始时能产生电压。\nIII. 电池工作时，浸在 1 M 溶液中的 Cu 电极质量减少。",
-        "ku": "Pîleke tîrbûnê wiha tê sazkirin:\nCu(r) | Cu2+(0,01 M) || Cu2+(1 M) | Cu(r).\nDerbarê vê pîlê de kîjan ji van gotinan rast in?\nI. Elektroda ku di çareseriya Cu2+ ya 0,01 M de ye anod e.\nII. Herçend ji ber ku her du nîvhucre wek hev in E°pîl = 0 be jî, pîl di destpêkê de voltajê çêdike.\nIII. Her ku pîl dixebite girseya elektroda Cu ya di çareseriya 1 M de kêm dibe."
+        "ku": "Pîleke tîrbûnê bi şiklê\nCu(s) | Cu2+(0,01 M) || Cu2+(1 M) | Cu(s)\ntê sazkirin.\nDerbarê vê pîlê de;\nI. Elektroda ku di çareseriya 0,01 M Cu2+ de ye anod e.\nII. Ji ber ku her du nîvşane wek hev in E°pîl = 0 ye, lê dîsa jî pîl di destpêkê de voltajê çêdike.\nIII. Her ku pîl dixebite, girseya elektroda Cu ya di çareseriya 1 M de kêm dibe.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1726,7 +1726,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "I верно: в концентрационном элементе медь в разбавленном растворе окисляется (Cu → Cu2+ + 2e-) и повышает концентрацию своего раствора; этот электрод — анод. II верно: E°эл относится к стандартным условиям (1 M) и для одинаковых полуэлементов равен нулю; реальное напряжение создаётся разностью концентраций. III неверно: электрод в 1 M растворе — катод; по реакции Cu2+ + 2e- → Cu на нём осаждается медь, и масса растёт. Верны I и II.",
         "ar": "I صحيحة: في خلية التركيز يتأكسد النحاس في الجانب المخفف (Cu → Cu2+ + 2e-) فيرفع تركيز محلوله؛ وهذا القطب هو المصعد. II صحيحة: يخص E°cell الظروف القياسية (1 M) وهو صفر لنصفي خلية متماثلين؛ أما الجهد الفعلي فينشأ عن فرق التركيز بين المحلولين. III خاطئة: القطب في المحلول 1 M هو المهبط، ويترسب عليه النحاس بالتفاعل Cu2+ + 2e- → Cu فتزداد كتلته. العبارتان الصحيحتان هما I و II.",
         "zh": "I 正确：浓差电池中稀溶液一侧的 Cu 被氧化(Cu → Cu2+ + 2e-)，使本侧溶液浓度增大，该电极是负极。II 正确：E°电池 对应标准(1 M)条件，两个相同半电池的 E°电池 为零；实际电压来自两溶液的浓度差。III 错误：1 M 溶液中的电极是正极，Cu2+ + 2e- → Cu 使铜在其上析出，质量增加。正确的是 I 和 II。",
-        "ku": "I rast e: di pîla tîrbûnê de Cu ya li aliyê sivik oksîd dibe (Cu → Cu2+ + 2e-) û tîrbûna çareseriya xwe zêde dike; ev elektrod anod e. II rast e: E°pîl ji bo şertên standard (1 M) e û ji bo nîvhucreyên wek hev sifir e; voltaja rastîn ji cudahiya tîrbûna her du çareseriyan tê. III şaş e: elektroda di çareseriya 1 M de katod e; bi Cu2+ + 2e- → Cu sifir li ser kom dibe û girseya wê zêde dibe. Gotinên rast I û II ne."
+        "ku": "I rast e: di pîla tîrbûnê de Cu ya li aliyê sist oksîde dibe (Cu → Cu2+ + 2e-) û tîrbûna çareseriya xwe zêde dike; ev elektrod anod e. II rast e: E°pîl ji bo şertên standard (1 M) e û ji bo nîvşaneyên wek hev sifir e; voltaja rastîn ji ferqa tîrbûnê ya navbera her du çareseriyan tê. III şaş e: elektroda di çareseriya 1 M de katod e; bi Cu2+ + 2e- → Cu sifir li ser kom dibe û girseya wê zêde dibe. Gotinên rast I û II in."
       }
     },
     {
@@ -1739,7 +1739,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Какая из следующих операций повышает напряжение элемента Zn(тв) | Zn2+(1 M) || Cu2+(1 M) | Cu(тв), работающего при 25 °C?",
         "ar": "بالنسبة إلى الخلية Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) العاملة عند 25 °C، أيّ الإجراءات الآتية يزيد جهد الخلية؟",
         "zh": "对于在 25 °C 下工作的电池 Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s)，下列哪种操作能使电池电压增大？",
-        "ku": "Ji bo pîla Zn(r) | Zn2+(1 M) || Cu2+(1 M) | Cu(r) ya ku li 25 °C dixebite, kîjan ji van kiryaran voltaja pîlê zêde dike?"
+        "ku": "Ji bo pîla Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) ya ku li 25 °C dixebite, kîjan ji van kiryaran voltaja pîlê zêde dike?"
       },
       "options": [
         {
@@ -1750,7 +1750,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Добавить чистую воду в катодное пространство",
           "ar": "إضافة ماء نقي إلى وعاء المهبط",
           "zh": "向正极区加入纯水",
-          "ku": "Lêzêdekirina ava paqij li aliyê katodê"
+          "ku": "Zêdekirina ava paqij li beşa katodê"
         },
         {
           "tr": "Anot kabına, Zn2+ iyonlarını ZnS hâlinde çöktüren Na2S katısı eklemek",
@@ -1760,7 +1760,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Добавить в анодное пространство твёрдый Na2S, осаждающий ионы Zn2+ в виде ZnS",
           "ar": "إضافة Na2S الصلب الذي يرسّب أيونات Zn2+ على هيئة ZnS إلى وعاء المصعد",
           "zh": "向负极区加入能使 Zn2+ 以 ZnS 形式沉淀的固体 Na2S",
-          "ku": "Lêzêdekirina Na2S ya hişk, ku îyonên Zn2+ wek ZnS dinişîne, li aliyê anodê"
+          "ku": "Zêdekirina Na2S-ya hişk li beşa anodê, ku îyonên Zn2+ wek ZnS dinişîne"
         },
         {
           "tr": "Anot kabında Zn(NO3)2 katısı çözmek",
@@ -1770,7 +1770,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Растворить твёрдый Zn(NO3)2 в анодном пространстве",
           "ar": "إذابة Zn(NO3)2 الصلب في وعاء المصعد",
           "zh": "在负极区溶解固体 Zn(NO3)2",
-          "ku": "Helandina Zn(NO3)2 ya hişk li aliyê anodê"
+          "ku": "Helandina Zn(NO3)2-ya hişk di beşa anodê de"
         },
         {
           "tr": "Cu elektrodun yüzey alanını iki katına çıkarmak",
@@ -1780,7 +1780,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Увеличить вдвое площадь поверхности медного электрода",
           "ar": "مضاعفة مساحة سطح قطب Cu",
           "zh": "将 Cu 电极的表面积增大一倍",
-          "ku": "Du qatkirina rûbera elektroda Cu"
+          "ku": "Du qatkirina rûerda elektroda Cu"
         },
         {
           "tr": "Katot kabına, Cu2+ iyonlarını CuS hâlinde çöktüren Na2S katısı eklemek",
@@ -1790,7 +1790,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Добавить в катодное пространство твёрдый Na2S, осаждающий ионы Cu2+ в виде CuS",
           "ar": "إضافة Na2S الصلب الذي يرسّب أيونات Cu2+ على هيئة CuS إلى وعاء المهبط",
           "zh": "向正极区加入能使 Cu2+ 以 CuS 形式沉淀的固体 Na2S",
-          "ku": "Lêzêdekirina Na2S ya hişk, ku îyonên Cu2+ wek CuS dinişîne, li aliyê katodê"
+          "ku": "Zêdekirina Na2S-ya hişk li beşa katodê, ku îyonên Cu2+ wek CuS dinişîne"
         }
       ],
       "correctIndex": 1,
@@ -1802,7 +1802,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Суммарная реакция: Zn + Cu2+ → Zn2+ + Cu. Осаждение Zn2+ в виде ZnS в анодном пространстве уменьшает концентрацию продукта, равновесие смещается к продуктам, и напряжение растёт. Растворение Zn(NO3)2 повышает [Zn2+]; добавление воды к катоду или осаждение Cu2+ в виде CuS снижает концентрацию реагента; эти три операции смещают равновесие к исходным веществам и снижают напряжение. Площадь электрода не меняет концентраций; потенциал — интенсивная величина, напряжение не меняется.",
         "ar": "التفاعل الكلي هو Zn + Cu2+ → Zn2+ + Cu. ترسيب أيونات Zn2+ على هيئة ZnS في وعاء المصعد يخفض تركيز الناتج فينزاح الاتزان نحو النواتج ويرتفع الجهد. أما إذابة Zn(NO3)2 فترفع [Zn2+]، وإضافة الماء إلى المهبط أو ترسيب Cu2+ على هيئة CuS يخفضان تركيز المتفاعل؛ وهذه الإجراءات الثلاثة تزيح الاتزان نحو المتفاعلات وتخفض الجهد. ومساحة سطح القطب لا تغيّر أي تركيز، والجهد خاصية شدّية فلا يتغير.",
         "zh": "总反应为 Zn + Cu2+ → Zn2+ + Cu。在负极区将 Zn2+ 以 ZnS 沉淀，生成物浓度降低，平衡向生成物方向移动，电压增大。溶解 Zn(NO3)2 使 [Zn2+] 增大；向正极区加水或将 Cu2+ 以 CuS 沉淀使反应物浓度降低；这三种操作都使平衡向反应物方向移动，电压减小。电极表面积不改变任何浓度；电势是强度性质，电压不变。",
-        "ku": "Reaksiyona giştî Zn + Cu2+ → Zn2+ + Cu ye. Heke li aliyê anodê îyonên Zn2+ wek ZnS bên niştandin, tîrbûna berhemê kêm dibe, hevsengî ber bi berheman ve diçe û voltaj zêde dibe. Helandina Zn(NO3)2 [Zn2+] zêde dike; lêzêdekirina avê li katodê an niştandina Cu2+ wek CuS tîrbûna têketiyê kêm dike; ev her sê kiryar hevsengiyê ber bi têketiyan ve dibin û voltajê dadixînin. Rûbera elektrodê tu tîrbûnê naguherîne; potansiyel taybetmendiya şiddetê ye, voltaj naguhere."
+        "ku": "Reaksiyona giştî Zn + Cu2+ → Zn2+ + Cu ye. Heke di beşa anodê de îyonên Zn2+ wek ZnS werin niştandin, tîrbûna hilberê kêm dibe, hevsengî ber bi hilberan ve diçe û voltaj zêde dibe. Helandina Zn(NO3)2 tîrbûna Zn2+ zêde dike; zêdekirina avê li beşa katodê an niştandina Cu2+ wek CuS tîrbûna reaktantê kêm dike; ev her sê kiryar hevsengiyê ber bi reaktantan ve dikişînin û voltajê kêm dikin. Rûerda elektrodê tu tîrbûnê naguherîne; ji ber ku potansiyel taybetmendiyeke întensîf e, voltaj naguhere."
       }
     },
     {
@@ -1846,7 +1846,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "При вступлении в реакцию 3 моль Cu переносится всего 3 моль электронов.",
           "ar": "عند تفاعل 3 mol من Cu ينتقل ما مجموعه 3 mol من الإلكترونات.",
           "zh": "3 mol Cu 反应时，共转移 3 mol 电子。",
-          "ku": "Dema 3 mol Cu reaksiyon dide, bi tevahî 3 mol elektron tê veguhestin."
+          "ku": "Dema 3 mol Cu dikeve reaksiyonê, bi giştî 3 mol elektron tê veguhestin."
         },
         {
           "tr": "Kullanılan 8 mol HNO3'ün yalnızca 2 molü indirgenir; kalan 6 mol nitrat iyonu tuzun yapısına girer.",
@@ -1856,7 +1856,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Из 8 моль HNO3 восстанавливаются только 2 моль; остальные 6 моль нитрат-ионов входят в состав соли.",
           "ar": "من بين 8 mol من HNO3 المستخدمة لا يُختزل سوى 2 mol؛ أما 6 mol المتبقية من أيونات النترات فتدخل في تركيب الملح.",
           "zh": "所用的 8 mol HNO3 中只有 2 mol 被还原；其余 6 mol 硝酸根进入盐中。",
-          "ku": "Ji 8 mol HNO3 ya bikaranîn tenê 2 mol kêm dibe; 6 mol îyonên nîtratê yên mayî dikevin avahiya xwê."
+          "ku": "Ji 8 mol HNO3 ya bikaranîn tenê 2 mol redûkte dibe; 6 mol îyonên nîtratê yên mayî dikevin avahiya xwêyê."
         },
         {
           "tr": "H2O'daki oksijen atomları yükseltgenmiştir.",
@@ -1866,7 +1866,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Атомы кислорода в H2O окислены.",
           "ar": "تأكسدت ذرات الأكسجين في H2O.",
           "zh": "H2O 中的氧原子被氧化了。",
-          "ku": "Atomên oksîjenê yên di H2O de oksîd bûne."
+          "ku": "Atomên oksîjenê yên di H2O de oksîde bûne."
         }
       ],
       "correctIndex": 3,
@@ -1878,7 +1878,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Cu: 0 → +2 (окисляется, значит, восстановитель); 3 Cu отдают всего 6 e-. N в NO: +5 → +2 (принимает 3 e-); 2 NO принимают 6 e-, электронный баланс соблюдён. Из 8 атомов N в 8 HNO3 только 2 переходят в NO; в 6 нитрат-ионах 3Cu(NO3)2 азот остаётся +5, эта часть не восстанавливается. Азот переходит в +2, а не +4 (+4 — в NO2); 3 моль Cu переносят 6 моль электронов, а не 3; O везде -2, значит, не окисляется.",
         "ar": "Cu: 0 → +2 (يتأكسد فهو العامل المختزل)؛ وتفقد 3 ذرات Cu ما مجموعه 6 e-. النيتروجين في NO: +5 → +2 (يكتسب 3 e-)؛ ويلزم اكتساب 6 e- لتكوين 2 NO فتتوازن الإلكترونات. من بين ذرات N الثماني في 8 HNO3 تتحول ذرتان فقط إلى NO؛ أما أيونات النترات الست في 3Cu(NO3)2 فيبقى N فيها +5 ولا يُختزل. ينخفض النيتروجين إلى +2 لا إلى +4 (+4 تخص NO2)؛ و3 mol من Cu تنقل 6 mol من الإلكترونات لا 3؛ والأكسجين -2 في كل مكان فلم يتأكسد.",
         "zh": "Cu：0 → +2（被氧化，是还原剂）；3 个 Cu 共失去 6 e-。NO 中的 N：+5 → +2(得 3 e-)；2 个 NO 得 6 e-，电子守恒。8 HNO3 中的 8 个 N 原子只有 2 个变成 NO；3Cu(NO3)2 中 6 个硝酸根里的 N 仍为 +5，这部分未被还原。氮降到 +2 而不是 +4(+4 对应 NO2)；3 mol Cu 转移 6 mol 电子而不是 3 mol；O 处处为 -2，没有被氧化。",
-        "ku": "Cu: 0 → +2 (oksîd dibe, ango reduktant e); 3 Cu bi tevahî 6 e- didin. N ya di NO de: +5 → +2 (3 e- distîne); 2 NO 6 e- distînin, elektron hevseng in. Ji 8 atomên N yên di 8 HNO3 de tenê 2 dibin NO; di 6 îyonên nîtratê yên 3Cu(NO3)2 de N +5 dimîne, ev beş kêm nabe. Azot dadikeve +2 ne +4 (+4 ji bo NO2 ye); 3 mol Cu 6 mol elektron vediguhezîne ne 3; O li her derê -2 ye, ji ber vê yekê oksîd nebûye."
+        "ku": "Cu: 0 → +2 (oksîde dibe, ango redûktant e); 3 Cu bi giştî 6 e- didin. N ya di NO de: +5 → +2 (3 e- digire); ji bo 2 NO 6 e- tê girtin, bi vî awayî hejmarên elektronan wekhev in. Ji 8 atomên N yên di 8 HNO3 de tenê 2 dibin NO; di 6 îyonên nîtratê yên 3Cu(NO3)2 de N dîsa +5 e, ango ev beş redûkte nabe. Azot ne dadikeve +4, lê dadikeve +2 (+4 ji bo NO2 ye); ji bo 3 mol Cu elektronên veguhestî ne 3, lê 6 mol in; atomên O li her derê -2 ne, ji ber vê yekê oksîde nebûne."
       }
     },
     {
@@ -1891,7 +1891,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Элемент Zn(тв) | Zn2+(1 M) || Ag+(1 M) | Ag(тв) проработал некоторое время, и масса цинкового электрода уменьшилась на 6,5 г.\nНа сколько граммов за это время увеличилась масса серебряного электрода? (Zn = 65, Ag = 108)",
         "ar": "شُغّلت الخلية Zn(s) | Zn2+(1 M) || Ag+(1 M) | Ag(s) مدةً فنقصت كتلة قطب Zn بمقدار 6.5 g.\nبكم غرامًا تزداد كتلة قطب Ag خلال هذه المدة؟ (Zn = 65، Ag = 108)",
         "zh": "电池 Zn(s) | Zn2+(1 M) || Ag+(1 M) | Ag(s) 工作一段时间后，Zn 电极质量减少 6.5 g。\n这段时间内 Ag 电极的质量增加多少克？(Zn = 65，Ag = 108)",
-        "ku": "Pîla Zn(r) | Zn2+(1 M) || Ag+(1 M) | Ag(r) demekê dixebite û girseya elektroda Zn 6,5 g kêm dibe.\nDi vê demê de girseya elektroda Ag çend gram zêde dibe? (Zn = 65, Ag = 108)"
+        "ku": "Pîla Zn(s) | Zn2+(1 M) || Ag+(1 M) | Ag(s) demekê dixebite û girseya elektroda Zn 6,5 g kêm dibe.\nDi vê demê de girseya elektroda Ag çend gram zêde dibe? (Zn = 65, Ag = 108)"
       },
       "options": [
         {
@@ -1954,7 +1954,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Суммарная реакция: Zn + 2Ag+ → Zn2+ + 2Ag. Израсходовано Zn: 6,5 / 65 = 0,1 моль, что даёт 0,2 моль электронов. 0,2 моль электронов восстанавливают 0,2 моль Ag+: 0,2 · 108 = 21,6 г. 10,8 г получается при соотношении Zn и Ag 1:1 (без баланса электронов), 6,5 г — если считать, что массы меняются одинаково.",
         "ar": "التفاعل الكلي: Zn + 2Ag+ → Zn2+ + 2Ag. الخارصين المستهلك: 6.5 / 65 = 0.1 mol، ويعطي 0.2 mol من الإلكترونات. تختزل 0.2 mol من الإلكترونات 0.2 mol من Ag+: 0.2 · 108 = 21.6 g. أما 10.8 g فتنتج عن أخذ Zn و Ag بنسبة 1:1 (دون موازنة الإلكترونات)، و6.5 g عن افتراض تساوي تغيّر الكتلتين.",
         "zh": "总反应：Zn + 2Ag+ → Zn2+ + 2Ag。消耗 Zn：6.5 / 65 = 0.1 mol，失去 0.2 mol 电子。0.2 mol 电子还原 0.2 mol Ag+：0.2 · 108 = 21.6 g。10.8 g 来自按 Zn 与 Ag 1:1 计算（未配平电子），6.5 g 来自误以为两极质量变化相等。",
-        "ku": "Reaksiyona giştî: Zn + 2Ag+ → Zn2+ + 2Ag. Zn ya xwarî: 6,5 / 65 = 0,1 mol; ev 0,2 mol elektron dide. 0,2 mol elektron 0,2 mol Ag+ kêm dike: 0,2 · 108 = 21,6 g. 10,8 g ji girtina Zn û Ag bi rêjeya 1:1 (bêyî hevsengkirina elektronan), 6,5 g jî ji hesibandina ku girse bi qasî hev diguherin tê."
+        "ku": "Reaksiyona giştî: Zn + 2Ag+ → Zn2+ + 2Ag. Zn-ya xuriyayî: 6,5 / 65 = 0,1 mol; ev 0,2 mol elektron dide. 0,2 mol elektron 0,2 mol îyona Ag+ redûkte dike: 0,2 · 108 = 21,6 g. 10,8 g ji girtina Zn û Ag bi rêjeya 1:1 (bêyî wekhevkirina hejmara elektronan), 6,5 g jî ji fikra ku girse bi qasî hev diguherin derdikeve."
       }
     },
     {
@@ -1967,7 +1967,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Стандартные потенциалы восстановления:\nF2/F-: +2,87 В; Cl2/Cl-: +1,36 В; Br2/Br-: +1,07 В; I2/I-: +0,54 В\nКакая из следующих реакций протекает самопроизвольно при стандартных условиях?",
         "ar": "جهود الاختزال القياسية:\nF2/F-: +2.87 V؛ Cl2/Cl-: +1.36 V؛ Br2/Br-: +1.07 V؛ I2/I-: +0.54 V\nأيّ التفاعلات الآتية يحدث تلقائيًا في الظروف القياسية؟",
         "zh": "标准还原电势：\nF2/F-：+2.87 V；Cl2/Cl-：+1.36 V；Br2/Br-：+1.07 V；I2/I-：+0.54 V\n标准条件下，下列哪个反应能自发进行？",
-        "ku": "Potansiyelên reduksiyonê yên standard:\nF2/F-: +2,87 V; Cl2/Cl-: +1,36 V; Br2/Br-: +1,07 V; I2/I-: +0,54 V\nLi gorî vê, di şertên standard de kîjan ji van reaksiyonan xweber pêk tê?"
+        "ku": "Potansiyelên redûksiyonê yên standard:\nF2/F-: +2,87 V; Cl2/Cl-: +1,36 V; Br2/Br-: +1,07 V; I2/I-: +0,54 V\nLi gorî vê yekê, di şertên standard de kîjan ji van reaksiyonan bi xwe (xweber) pêk tê?"
       },
       "options": [
         {
@@ -2030,7 +2030,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Галоген окисляет галогенид, у которого потенциал восстановления меньше, чем у него самого. Для Cl2 + 2Br- E°эл = 1,36 - 1,07 = +0,29 В > 0, реакция самопроизвольна. В остальных реакциях галоген, принимающий электроны, имеет меньший потенциал, чем окисляемый галогенид: I2 + 2Cl-: 0,54 - 1,36 = -0,82 В; Br2 + 2F-: 1,07 - 2,87 = -1,80 В; I2 + 2Br-: 0,54 - 1,07 = -0,53 В; Br2 + 2Cl-: 1,07 - 1,36 = -0,29 В; все несамопроизвольны.",
         "ar": "يؤكسد الهالوجين الهاليدَ الذي جهد اختزاله أقل من جهد اختزاله هو. في التفاعل Cl2 + 2Br- يكون E°cell = 1.36 - 1.07 = +0.29 V > 0 فهو تلقائي. وفي التفاعلات الأخرى يكون جهد الهالوجين المكتسب للإلكترونات أقل من جهد الهاليد المراد أكسدته: I2 + 2Cl-: 0.54 - 1.36 = -0.82 V؛ Br2 + 2F-: 1.07 - 2.87 = -1.80 V؛ I2 + 2Br-: 0.54 - 1.07 = -0.53 V؛ Br2 + 2Cl-: 1.07 - 1.36 = -0.29 V؛ وكلها غير تلقائية.",
         "zh": "卤素单质能氧化还原电势比自身低的卤离子。Cl2 + 2Br- 的 E°电池 = 1.36 - 1.07 = +0.29 V > 0，自发进行。其他反应中得电子的卤素电势都低于被氧化的卤离子：I2 + 2Cl-：0.54 - 1.36 = -0.82 V；Br2 + 2F-：1.07 - 2.87 = -1.80 V；I2 + 2Br-：0.54 - 1.07 = -0.53 V；Br2 + 2Cl-：1.07 - 1.36 = -0.29 V；均非自发。",
-        "ku": "Halojenek halojenîdeke ku potansiyela wê ya reduksiyonê ji ya wî biçûktir e oksîd dike. Ji bo Cl2 + 2Br- E°pîl = 1,36 - 1,07 = +0,29 V > 0 e, ji ber vê yekê xweber e. Di reaksiyonên din de potansiyela halojena ku elektronan distîne ji ya halojenîda ku dê oksîd bibe biçûktir e: I2 + 2Cl-: 0,54 - 1,36 = -0,82 V; Br2 + 2F-: 1,07 - 2,87 = -1,80 V; I2 + 2Br-: 0,54 - 1,07 = -0,53 V; Br2 + 2Cl-: 1,07 - 1,36 = -0,29 V; hemû ne xweber in."
+        "ku": "Halojenek halojenîdeke ku potansiyela wê ya redûksiyonê ji ya wê piçûktir e oksîde dike. Di reaksiyona Cl2 + 2Br- de E°pîl = 1,36 - 1,07 = +0,29 V > 0 e, ji ber vê yekê reaksiyon xweber e. Di reaksiyonên din de potansiyela halojena ku elektronan digire ji ya halojenîda ku dê oksîde bibe piçûktir e: ji bo I2 + 2Cl- 0,54 - 1,36 = -0,82 V, ji bo Br2 + 2F- 1,07 - 2,87 = -1,80 V, ji bo I2 + 2Br- 0,54 - 1,07 = -0,53 V, ji bo Br2 + 2Cl- 1,07 - 1,36 = -0,29 V; hemû ne-xweber in."
       }
     },
     {
@@ -2043,7 +2043,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Собран элемент Fe(тв) | Fe2+(1 M) || Pb2+(1 M) | Pb(тв). E°(Fe2+/Fe) = -0,44 В, E°(Pb2+/Pb) = -0,13 В.\nКакое из утверждений об этом элементе неверно?",
         "ar": "تُركَّب الخلية Fe(s) | Fe2+(1 M) || Pb2+(1 M) | Pb(s)، حيث E°(Fe2+/Fe) = -0.44 V و E°(Pb2+/Pb) = -0.13 V.\nأيّ العبارات الآتية عن هذه الخلية خاطئة؟",
         "zh": "组装电池 Fe(s) | Fe2+(1 M) || Pb2+(1 M) | Pb(s)。E°(Fe2+/Fe) = -0.44 V，E°(Pb2+/Pb) = -0.13 V。\n关于该电池，下列说法错误的是哪一项？",
-        "ku": "Pîla Fe(r) | Fe2+(1 M) || Pb2+(1 M) | Pb(r) tê sazkirin. E°(Fe2+/Fe) = -0,44 V, E°(Pb2+/Pb) = -0,13 V.\nDerbarê vê pîlê de kîjan ji van gotinan şaş e?"
+        "ku": "Pîla Fe(s) | Fe2+(1 M) || Pb2+(1 M) | Pb(s) tê sazkirin. E°(Fe2+/Fe) = -0,44 V, E°(Pb2+/Pb) = -0,13 V e.\nDerbarê vê pîlê de kîjan ji van gotinan şaş e?"
       },
       "options": [
         {
@@ -2074,7 +2074,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Катионы солевого мостика мигрируют к сосуду с раствором Fe2+.",
           "ar": "تهاجر كاتيونات القنطرة الملحية نحو الوعاء الذي يحتوي على محلول Fe2+.",
           "zh": "盐桥中的阳离子向盛有 Fe2+ 溶液的容器迁移。",
-          "ku": "Katyonên pira xwê ber bi firaxa ku çareseriya Fe2+ tê de ye koç dikin."
+          "ku": "Katyonên pira xwê ber bi beşa ku çareseriya Fe2+ tê de ye koç dikin."
         },
         {
           "tr": "Pb elektrodun kütlesi zamanla artar.",
@@ -2094,7 +2094,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Суммарная реакция в элементе: Fe + Pb2+ → Fe2+ + Pb.",
           "ar": "التفاعل الصافي في الخلية هو Fe + Pb2+ → Fe2+ + Pb.",
           "zh": "电池的净反应为 Fe + Pb2+ → Fe2+ + Pb。",
-          "ku": "Reaksiyona net a pîlê Fe + Pb2+ → Fe2+ + Pb e."
+          "ku": "Reaksiyona net a ku di pîlê de pêk tê Fe + Pb2+ → Fe2+ + Pb ye."
         }
       ],
       "correctIndex": 2,
@@ -2106,7 +2106,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Потенциал восстановления Fe (-0,44 В) меньше, чем у Pb (-0,13 В), поэтому Fe окисляется: Fe — анод, то есть отрицательный полюс; Pb2+ восстанавливается, Pb — катод. E°эл = 0,44 + (-0,13) = 0,31 В; суммарная реакция Fe + Pb2+ → Fe2+ + Pb, и так как на катоде осаждается Pb, масса свинцового электрода растёт. Неверно утверждение о катионах: сосуд с Fe2+ — анодное пространство, туда для компенсации положительного заряда идут анионы; катионы мигрируют в катодное пространство, где расходуется Pb2+.",
         "ar": "جهد اختزال Fe (-0.44 V) أقل من جهد اختزال Pb (-0.13 V)، لذا يتأكسد Fe: فهو المصعد أي القطب السالب؛ ويُختزل Pb2+ ويكون Pb هو المهبط. E°cell = 0.44 + (-0.13) = 0.31 V، والتفاعل الصافي Fe + Pb2+ → Fe2+ + Pb، ولأن Pb يترسب عند المهبط تزداد كتلة قطب Pb. العبارة الخاطئة هي المتعلقة بالكاتيونات: فوعاء Fe2+ هو وعاء المصعد وتتجه إليه الأنيونات لمعادلة الشحنة الموجبة، أما الكاتيونات فتهاجر إلى وعاء المهبط حيث يُستهلك Pb2+.",
         "zh": "Fe 的还原电势(-0.44 V)低于 Pb(-0.13 V)，所以 Fe 被氧化，Fe 是负极；Pb2+ 被还原，Pb 是正极。E°电池 = 0.44 + (-0.13) = 0.31 V；净反应为 Fe + Pb2+ → Fe2+ + Pb，正极析出 Pb，Pb 电极质量增加。错误的是关于阳离子的说法：盛 Fe2+ 溶液的是负极区，为平衡正电荷向那里迁移的是阴离子；阳离子迁移到消耗 Pb2+ 的正极区。",
-        "ku": "Potansiyela reduksiyonê ya Fe (-0,44 V) ji ya Pb (-0,13 V) biçûktir e, loma Fe oksîd dibe: Fe anod e, ango pola neyînî ye; Pb2+ kêm dibe û Pb katod e. E°pîl = 0,44 + (-0,13) = 0,31 V; reaksiyona net Fe + Pb2+ → Fe2+ + Pb e û ji ber ku Pb li katodê kom dibe girseya elektroda Pb zêde dibe. Gotina şaş ya derbarê katyonan de ye: firaxa Fe2+ aliyê anodê ye, ji bo hevsengkirina bara erênî anyon diçin wir; katyon koçî aliyê katodê dikin ku Pb2+ lê tê xerckirin."
+        "ku": "Ji ber ku potansiyela redûksiyonê ya Fe (-0,44 V) ji ya Pb (-0,13 V) piçûktir e, Fe oksîde dibe: Fe anod e, ango pola neyînî ye; Pb2+ redûkte dibe û Pb katod e. E°pîl = 0,44 + (-0,13) = 0,31 V; reaksiyona net Fe + Pb2+ → Fe2+ + Pb ye û ji ber ku Pb li katodê kom dibe, girseya elektroda Pb zêde dibe. Gotina şaş derbarê katyonan de ye: beşa Fe2+ beşa anodê ye, ji bo hevsengkirina bara erênî anyon diçin wir; katyon koçî beşa katodê dikin ku Pb2+ lê tê xerckirin."
       }
     },
     {
@@ -2119,7 +2119,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В элементе\nX(тв) | X2+(1 M) || Cu2+(1 M) | Cu(тв)\nэлектрод X — анод, а стандартный потенциал элемента равен 1,24 В.\nПри E°(Cu2+/Cu) = +0,34 В чему равен стандартный потенциал восстановления полуэлемента X2+/X в вольтах?",
         "ar": "في الخلية\nX(s) | X2+(1 M) || Cu2+(1 M) | Cu(s)\nيكون القطب X هو المصعد، ويُقاس جهد الخلية القياسي فيكون 1.24 V.\nإذا كان E°(Cu2+/Cu) = +0.34 V، فما جهد الاختزال القياسي لنصف الخلية X2+/X بالفولت؟",
         "zh": "在电池\nX(s) | X2+(1 M) || Cu2+(1 M) | Cu(s)\n中，X 电极是负极，测得标准电池电势为 1.24 V。\n已知 E°(Cu2+/Cu) = +0.34 V，X2+/X 半电池的标准还原电势是多少伏？",
-        "ku": "Di pîla\nX(r) | X2+(1 M) || Cu2+(1 M) | Cu(r)\nde elektroda X anod e û potansiyela standard a pîlê 1,24 V tê pîvan.\nHeke E°(Cu2+/Cu) = +0,34 V be, potansiyela reduksiyonê ya standard a nîvhucreya X2+/X çend volt e?"
+        "ku": "Di pîla\nX(s) | X2+(1 M) || Cu2+(1 M) | Cu(s)\nde elektroda X anod e û potansiyela standard a pîlê 1,24 V hatiye pîvan.\nHeke E°(Cu2+/Cu) = +0,34 V be, potansiyela redûksiyonê ya standard a nîvşaneya X2+/X çend volt e?"
       },
       "options": [
         {
@@ -2182,7 +2182,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "E°эл = E°ок(анод) + E°восст(катод) → 1,24 = E°ок(X) + 0,34 → E°ок(X) = +0,90 В. Потенциал восстановления имеет противоположный знак: E°(X2+/X) = -0,90 В. +0,90 В получается, если принять потенциал окисления за потенциал восстановления, а ±1,58 В — если прибавить потенциал меди вместо вычитания. Поскольку X — анод, его потенциал восстановления должен быть меньше, чем у меди (+0,34 В), что подтверждает ответ.",
         "ar": "E°cell = E°ox(المصعد) + E°red(المهبط) → 1.24 = E°ox(X) + 0.34 → E°ox(X) = +0.90 V. وجهد الاختزال بالإشارة المعاكسة: E°(X2+/X) = -0.90 V. القيمة +0.90 V تنتج عن اعتبار جهد التأكسد جهدَ اختزال، و±1.58 V عن جمع جهد النحاس بدل طرحه. ولأن X هو المصعد فيجب أن يكون جهد اختزاله أقل من جهد النحاس (+0.34 V)، وهذا يؤكد النتيجة.",
         "zh": "E°电池 = E°氧化(负极) + E°还原(正极) → 1.24 = E°氧化(X) + 0.34 → E°氧化(X) = +0.90 V。还原电势符号相反：E°(X2+/X) = -0.90 V。+0.90 V 是把氧化电势当作还原电势，±1.58 V 是把铜的电势加上而不是减去。X 为负极，其还原电势必须低于铜(+0.34 V)，这也验证了结果。",
-        "ku": "E°pîl = E°oks(anod) + E°red(katod) → 1,24 = E°oks(X) + 0,34 → E°oks(X) = +0,90 V. Potansiyela reduksiyonê bi nîşana berevajî ye: E°(X2+/X) = -0,90 V. +0,90 V ji hesibandina potansiyela oksîdasyonê wek ya reduksiyonê, ±1,58 V jî ji lêzêdekirina potansiyela sifir li şûna derxistinê tê. Ji ber ku X anod e, divê potansiyela wê ya reduksiyonê ji ya sifir (+0,34 V) biçûktir be; ev encamê piştrast dike."
+        "ku": "E°pîl = E°oks(anod) + E°red(katod) → 1,24 = E°oks(X) + 0,34 → E°oks(X) = +0,90 V. Potansiyela redûksiyonê bi nîşana berevajî ye: E°(X2+/X) = -0,90 V. +0,90 V ji girtina potansiyela oksîdasyonê wek potansiyela redûksiyonê, ±1,58 V jî ji berhevkirina potansiyela sifirê li şûna derxistinê tê. Ji ber ku X anod e, divê potansiyela wê ya redûksiyonê ji ya sifirê (+0,34 V) piçûktir be; ev jî encamê piştrast dike."
       }
     },
     {
@@ -2195,7 +2195,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Элемент Zn(тв) | Zn2+(1 M) || Cu2+(1 M) | Cu(тв) работает некоторое время в замкнутой цепи.\nКакая из следующих величин за это время увеличивается?",
         "ar": "تعمل الخلية Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) مدةً في دائرة مغلقة.\nأيّ الكميات الآتية تزداد خلال هذه المدة؟",
         "zh": "电池 Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) 在闭合电路中工作一段时间。\n在此期间，下列哪个量增大？",
-        "ku": "Pîla Zn(r) | Zn2+(1 M) || Cu2+(1 M) | Cu(r) di çerxa girtî de demekê dixebite.\nDi vê demê de kîjan ji van mîqdaran zêde dibe?"
+        "ku": "Pîla Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) di çerxeke girtî de demekê tê xebitandin.\nDi vê demê de kîjan ji van mîqdaran zêde dibe?"
       },
       "options": [
         {
@@ -2216,7 +2216,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Концентрация Cu2+ в катодном пространстве",
           "ar": "تركيز Cu2+ في وعاء المهبط",
           "zh": "正极区 Cu2+ 的浓度",
-          "ku": "Tîrbûna Cu2+ li aliyê katodê"
+          "ku": "Tîrbûna Cu2+ di beşa katodê de"
         },
         {
           "tr": "Zn elektrodun kütlesi",
@@ -2236,7 +2236,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Концентрация Zn2+ в анодном пространстве",
           "ar": "تركيز Zn2+ في وعاء المصعد",
           "zh": "负极区 Zn2+ 的浓度",
-          "ku": "Tîrbûna Zn2+ li aliyê anodê"
+          "ku": "Tîrbûna Zn2+ di beşa anodê de"
         },
         {
           "tr": "Pilin standart pil potansiyeli (E°pil)",
@@ -2258,7 +2258,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "При работе на аноде идёт Zn → Zn2+ + 2e-, поэтому цинковый электрод растворяется, а концентрация Zn2+ в анодном пространстве растёт. На катоде реакция Cu2+ + 2e- → Cu снижает концентрацию Cu2+. Так как концентрация продукта растёт, а реагента падает, измеряемое напряжение со временем уменьшается. E°эл — постоянная величина для стандартных условий и при работе не меняется.",
         "ar": "أثناء عمل الخلية يحدث عند المصعد Zn → Zn2+ + 2e-، فيتآكل قطب Zn ويزداد تركيز Zn2+ في وعاء المصعد. وعند المهبط يخفض التفاعل Cu2+ + 2e- → Cu تركيز Cu2+. ولأن تركيز الناتج يزداد وتركيز المتفاعل يقل فإن الجهد المقيس ينخفض مع الزمن. أما E°cell فقيمة ثابتة خاصة بالظروف القياسية ولا تتغير بعمل الخلية.",
         "zh": "工作时负极发生 Zn → Zn2+ + 2e-，Zn 电极被消耗，负极区 Zn2+ 浓度增大。正极上 Cu2+ + 2e- → Cu 使 Cu2+ 浓度减小。生成物浓度增大、反应物浓度减小，实测电压随时间下降。E°电池 是对应标准条件的定值，不随电池工作而改变。",
-        "ku": "Dema pîl dixebite li anodê Zn → Zn2+ + 2e- pêk tê, loma elektroda Zn dixwe û tîrbûna Zn2+ li aliyê anodê zêde dibe. Li katodê bi Cu2+ + 2e- → Cu tîrbûna Cu2+ kêm dibe. Ji ber ku tîrbûna berhemê zêde dibe û ya têketiyê kêm dibe, voltaja pîvayî bi demê re dadikeve. E°pîl nirxeke sabît a şertên standard e û bi xebata pîlê naguhere."
+        "ku": "Dema pîl dixebite li anodê Zn → Zn2+ + 2e- pêk tê, ji ber vê yekê elektroda Zn dixure û tîrbûna Zn2+ di beşa anodê de zêde dibe. Li katodê bi Cu2+ + 2e- → Cu tîrbûna Cu2+ kêm dibe. Ji ber ku tîrbûna hilberê zêde dibe û ya reaktantê kêm dibe, voltaja pîvayî bi demê re kêm dibe. E°pîl nirxeke sabît a şertên standard e; bi xebata pîlê naguhere."
       }
     }
   ]

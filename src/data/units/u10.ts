@@ -24,7 +24,7 @@ export const unit10: ChemistryUnitSeedData = {
     "ru": "Чистящие средства, полимеры, косметика и лекарства",
     "ar": "مواد التنظيف والبوليمرات ومستحضرات التجميل والأدوية",
     "zh": "清洁剂、聚合物、化妆品和药品",
-    "ku": "Pargîdaniyên Paqijkirinê, Polîmer, Kozmetîk û Derman"
+    "ku": "Madeyên Paqijkirinê, Polîmer, Kozmetîk û Derman"
   },
   "facts": [
     {
@@ -37,7 +37,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Твёрдое (белое) мыло — натриевые соли жирных кислот (например, C17H35COONa, стеарат натрия), а мягкое (жидкое) мыло — калиевые соли (например, C17H35COOK, стеарат калия).",
         "ar": "الصابون الصلب (الأبيض) هو أملاح الصوديوم للأحماض الدهنية (مثل C17H35COONa، ستيارات الصوديوم)؛ أما الصابون الطري فهو أملاح البوتاسيوم (مثل C17H35COOK، ستيارات البوتاسيوم).",
         "zh": "硬（白）肥皂是脂肪酸的钠盐(如 C17H35COONa，硬脂酸钠)；软皂是脂肪酸的钾盐(如 C17H35COOK，硬脂酸钾)。",
-        "ku": "Sabûnên hişk (spî) xwêyên sodyûmê yên asîdên rûn in (mînak C17H35COONa, stearata sodyûmê); sabûnên nerm (sabûna erebî) xwêyên potasyûmê ne (mînak C17H35COOK, stearata potasyûmê)."
+        "ku": "Sabûnên hişk (spî) xwêyên sodyûmê yên asîdên rûnî ne (mînak C17H35COONa, stearata sodyûmê); sabûnên nerm (sabûna erebî) jî xwêyên potasyûmê ne (mînak C17H35COOK, stearata potasyûmê)."
       },
       "trap": {
         "tr": "Arap sabununda potasyum yerine kalsiyum iyonu bulunur.",
@@ -47,7 +47,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Мягкое (жидкое) мыло содержит вместо ионов калия ионы кальция.",
         "ar": "يحتوي الصابون الطري على أيونات الكالسيوم بدلًا من أيونات البوتاسيوم.",
         "zh": "软皂中含有的是钙离子而不是钾离子。",
-        "ku": "Sabûna Ereban di şûna potasyûmê de îyonên kalsiyûmê dihewîne."
+        "ku": "Di sabûna erebî de li şûna potasyûmê îyonên kalsiyûmê hene."
       },
       "whyTrapIsFalse": {
         "tr": "Arap sabunu (yumuşak sabun) yağ asitlerinin potasyum tuzudur. Kalsiyumlu yağ asidi tuzları suda çözünmez; sert suda oluşan ve temizlemeyen tortu (kireç sabunu) budur.",
@@ -57,7 +57,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Мягкое (жидкое) мыло — калиевая соль жирных кислот. Кальциевые соли жирных кислот нерастворимы в воде; именно они образуют в жёсткой воде осадок (известковое мыло), который не моет.",
         "ar": "الصابون الطري هو ملح البوتاسيوم للأحماض الدهنية. أما أملاح الكالسيوم للأحماض الدهنية فلا تذوب في الماء، وهي الراسب غير المنظِّف (صابون الكلس) الذي يتكون في الماء العسر.",
         "zh": "软皂是脂肪酸的钾盐。脂肪酸的钙盐不溶于水，它正是硬水中形成的、没有去污作用的沉淀（钙皂）。",
-        "ku": "Sabûna nerm (sabûna erebî) xwêya potasyûmê ya asîdên rûnî ye. Xwêyên kalsiyûmê yên asîdên rûnî di avê de nahelin; ew tortê ne-paqijker e ku di ava hişk de çêdibe."
+        "ku": "Sabûna erebî (sabûna nerm) xwêya potasyûmê ya asîdên rûnî ye. Xwêyên kalsiyûmê yên asîdên rûnî di avê de nahelin; ew niştekên ku di ava hişk de çêdibin û paqij nakin (sabûna kilsê) ev in."
       }
     },
     {
@@ -70,7 +70,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Полярная головка молекулы мыла гидрофильна (притягивает воду), а длинный неполярный углеводородный хвост гидрофобен (отталкивает воду и притягивается к жирам).",
         "ar": "الرأس القطبي لجزيء الصابون محب للماء، في حين أن الذيل الهيدروكربوني الطويل غير القطبي كاره للماء (لا يحب الماء ويحب الزيت).",
         "zh": "肥皂分子的极性头部是亲水的（喜水），长的非极性烃基尾部是疏水的（憎水、亲油）。",
-        "ku": "Beşa serê polar a molekula sabûnê hîdrofîlîk e (avîn hez dike), lê dûvika hîdrokarbonê ya dirêj û ne-polar hîdrofobîk e (ji rûnê hez dike, ji avê nefret dike)."
+        "ku": "Serê polar ê molekula sabûnê hîdrofîl e (ji avê hez dike); dûvika hîdrokarbonî ya dirêj û nepolar jî hîdrofob e (ji avê hez nake, ji rûn hez dike)."
       },
       "trap": {
         "tr": "Sabunun polar baş kısmı apolar kire tutunur.",
@@ -80,7 +80,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Полярная головка мыла прикрепляется к неполярной грязи.",
         "ar": "يلتصق الرأس القطبي للصابون بالأوساخ غير القطبية.",
         "zh": "肥皂的极性头部附着在非极性污垢上。",
-        "ku": "Serê polar ê sabûnê bi qirêjiya ne-polar ve girêdayî ye."
+        "ku": "Serê polar ê sabûnê bi qirêja nepolar ve dizeliqe."
       },
       "whyTrapIsFalse": {
         "tr": "Benzer benzeri çözer: apolar kir ancak apolar hidrokarbon kuyrukla etkileşir. Polar baş ise su molekülleriyle etkileşerek kirin suya taşınmasını sağlar.",
@@ -90,7 +90,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Подобное растворяется в подобном: неполярная грязь взаимодействует только с неполярным углеводородным хвостом. Полярная же головка взаимодействует с молекулами воды и обеспечивает перенос грязи в воду.",
         "ar": "الشبيه يذيب الشبيه: لا تتآثر الأوساخ غير القطبية إلا مع الذيل الهيدروكربوني غير القطبي، أما الرأس القطبي فيتآثر مع جزيئات الماء فيُمكّن من نقل الأوساخ إلى الماء.",
         "zh": "相似相溶：非极性污垢只与非极性的烃基尾部相互作用；极性头部与水分子相互作用，把污垢带入水中。",
-        "ku": "Wekhev wekhevê dihelîne: qirêja nepolar tenê bi dûvikê hîdrokarbonî yê nepolar re têkildar dibe. Serê polar bi molekulên avê re têkildar dibe û qirêjê dibe nav avê."
+        "ku": "Wekhev wekhevê dihelîne: qirêja nepolar tenê bi dûvika hîdrokarbonî ya nepolar re dikeve têkiliyê. Serê polar jî bi molekulên avê re dikeve têkiliyê û qirêjê dibe nav avê."
       }
     },
     {
@@ -103,7 +103,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Синтетические моющие средства производят из продуктов переработки нефти; они не образуют осадка с ионами Ca2+ и Mg2+, поэтому хорошо моют и в жёсткой воде.",
         "ar": "المنظفات الصناعية مشتقات بترولية، وتنظف جيدًا في الماء العسر أيضًا لأنها لا تكوّن رواسب مع أيونات Ca2+ وMg2+ الموجودة فيه.",
         "zh": "洗涤剂是石油产品，不与硬水中的 Ca2+ 和 Mg2+ 离子形成沉淀，因此在硬水中也能很好地去污。",
-        "ku": "Deterjan derûvên neftê ne û di ava hişk de baş paqij dikin ji ber ku ew bi îyonên Ca2+ û Mg2+ di ava hişk de baran çênakin."
+        "ku": "Deterjan ji derûvên neftê têne çêkirin; ji ber ku bi îyonên Ca2+ û Mg2+ yên ava hişk re niştek çênakin, di ava hişk de jî baş paqij dikin."
       },
       "trap": {
         "tr": "Deterjan sert suda çökelerek temizleme özelliğini kaybeder.",
@@ -113,7 +113,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Синтетическое моющее средство в жёсткой воде выпадает в осадок и теряет моющую способность.",
         "ar": "يترسب المنظف الصناعي في الماء العسر ويفقد قدرته على التنظيف.",
         "zh": "洗涤剂在硬水中会沉淀而失去去污能力。",
-        "ku": "Deterjan di ava hişk de tortî çêdike û taybetmendiya xwe ya paqijkirinê winda dike."
+        "ku": "Deterjan di ava hişk de dinişe û taybetmendiya xwe ya paqijkirinê winda dike."
       },
       "whyTrapIsFalse": {
         "tr": "Sert sudaki Ca2+ ve Mg2+ iyonlarıyla suda çözünmeyen tuz oluşturup çöken sabundur. Deterjanların bu iyonlarla oluşturduğu tuzlar suda çözünür; bu yüzden deterjan sert suda da köpürüp temizler.",
@@ -123,7 +123,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "С ионами Ca2+ и Mg2+ жёсткой воды нерастворимые соли образует и выпадает в осадок именно мыло. Соли синтетических моющих средств с этими ионами растворимы, поэтому СМС пенятся и моют и в жёсткой воде.",
         "ar": "الصابون هو الذي يكوّن مع أيونات Ca2+ وMg2+ في الماء العسر أملاحًا لا تذوب فيترسب. أما الأملاح التي تكوّنها المنظفات الصناعية مع هذه الأيونات فتذوب في الماء، لذا تُرغي المنظفات وتنظف في الماء العسر أيضًا.",
         "zh": "与硬水中的 Ca2+、Mg2+ 形成不溶性盐而沉淀的是肥皂。合成洗涤剂与这些离子形成的盐可溶于水，因此洗涤剂在硬水中也能起泡和去污。",
-        "ku": "Sabûn e ku bi îyonên Ca2+ û Mg2+ yên ava hişk re xwêyên nehelbar çêdike û dadikeve. Xwêyên ku deterjan bi van îyonan re çêdikin di avê de dihelin, ji ber vê yekê deterjan di ava hişk de jî kef dike û paqij dike."
+        "ku": "Ya ku bi îyonên Ca2+ û Mg2+ yên ava hişk re xwêyên nehelbar çêdike û dinişe sabûn e. Xwêyên ku deterjan bi van îyonan re çêdikin di avê de dihelin; ji ber vê yekê deterjan di ava hişk de jî kef dike û paqij dike."
       }
     },
     {
@@ -136,7 +136,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Мыло в природе легко разлагается микроорганизмами, а синтетические моющие средства разлагаются труднее и поэтому сильнее загрязняют окружающую среду и воду.",
         "ar": "تحلل الكائنات الدقيقة الصابونَ في الطبيعة بسهولة، أما المنظفات فتتحلل بصعوبة أكبر ولذلك تسبب قدرًا أكبر من تلوث البيئة والمياه.",
         "zh": "肥皂在自然界中容易被微生物分解，而洗涤剂较难分解，因此造成的环境和水污染更严重。",
-        "ku": "Sabûn di xwezayê de ji aliyê mîkroorganîzmayan ve bi hêsanî tê perçekirin; lê deterjan bi zehmetî tên perçekirin û ji ber vê yekê zêdetir dibin sedema qirêjiya jîngeh û avê."
+        "ku": "Sabûn di xwezayê de ji aliyê mîkroorganîzmayan ve bi hêsanî tê perçekirin; lê deterjan bi zehmetî perçe dibin, loma bêtir dibin sedema qirêjiya jîngehê û avê."
       },
       "trap": {
         "tr": "Deterjanlar sabunlara göre doğada çok daha hızlı biyolojik olarak parçalanır.",
@@ -146,7 +146,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Синтетические моющие средства разлагаются в природе гораздо быстрее, чем мыло.",
         "ar": "تتحلل المنظفات الصناعية بيولوجيًا في الطبيعة أسرع بكثير من الصابون.",
         "zh": "洗涤剂在自然界中的生物降解速度比肥皂快得多。",
-        "ku": "Deterjant di xwezayê de ji sabûnan ​​pir zûtir biyolojîk dibin."
+        "ku": "Deterjan di xwezayê de ji sabûnan pir zûtir bi rêya biyolojîk perçe dibin."
       },
       "whyTrapIsFalse": {
         "tr": "Durum tam tersidir: sabun doğal yağlardan elde edildiği için mikroorganizmalarca kolay parçalanır. Petrol kaynaklı deterjanlar doğada daha uzun süre kalır ve köpük ile su kirliliğine yol açar.",
@@ -169,7 +169,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Полимеризация — образование гигантских молекул (макромолекул) из небольших молекул — мономеров, которые соединяются друг с другом ковалентными связями.",
         "ar": "البلمرة ارتباط جزيئات صغيرة تُسمّى المونومرات بعضها ببعض بروابط تساهمية لتكوين جزيئات ضخمة عملاقة.",
         "zh": "聚合反应是指称为单体的小分子以共价键相互连接，形成巨大的高分子。",
-        "ku": "Polîmerîzasyon bi girêdana molekulên piçûk ên bi navê monomer bi girêdanên kovalentî ve pêkhatina makromolekulên mezin e."
+        "ku": "Polîmerîzasyon çêbûna makromolekulên mezin e, bi girêdana molekulên piçûk ên bi navê monomer bi girêdanên kovalent."
       },
       "trap": {
         "tr": "Polimerler sadece zayıf van der Waals bağlarıyla bir arada tutulan küçük bileşiklerdir.",
@@ -179,7 +179,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Полимеры — небольшие молекулы, удерживаемые вместе только слабыми силами Ван-дер-Ваальса.",
         "ar": "البوليمرات مركبات صغيرة لا يربطها معًا سوى روابط فان در فالس الضعيفة.",
         "zh": "聚合物是仅靠微弱的范德华力结合在一起的小分子化合物。",
-        "ku": "Polîmer pêkhateyên piçûk in ku tenê bi girêdanên van der Waals-ê yên qels li hev têne girtin."
+        "ku": "Polîmer pêkhateyên piçûk in ku tenê bi girêdanên Van der Waals ên qels li hev têne girtin."
       },
       "whyTrapIsFalse": {
         "tr": "Polimer zincirinde monomerler birbirine güçlü kovalent bağlarla bağlıdır ve molekül kütlesi çok büyüktür. Van der Waals etkileşimleri yalnızca ayrı zincirler arasında etkilidir.",
@@ -189,7 +189,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "В полимерной цепи мономеры соединены прочными ковалентными связями, а молярная масса полимера очень велика. Силы Ван-дер-Ваальса действуют лишь между отдельными цепями.",
         "ar": "ترتبط المونومرات في سلسلة البوليمر بروابط تساهمية قوية وتكون الكتلة المولية كبيرة جدًا، أما قوى فان در فالس فتعمل فقط بين السلاسل المنفصلة.",
         "zh": "聚合物链中单体之间以牢固的共价键相连，相对分子质量非常大；范德华力只存在于不同的链之间。",
-        "ku": "Di zincîra polîmerê de monomer bi girêdanên kovalent ên xurt bi hev ve girêdayî ne û girseya molekulê pir mezin e. Hêzên Van der Waals tenê di navbera zincîrên cuda de bandor dikin."
+        "ku": "Di zincîra polîmerê de monomer bi girêdanên kovalent ên xurt bi hev ve girêdayî ne û girseya molî pir mezin e. Têkiliyên Van der Waals tenê di navbera zincîrên cuda de bandor dikin."
       }
     },
     {
@@ -222,7 +222,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Пакеты для покупок делают из дешёвого и легко обрабатываемого полиэтилена (ПЭ). Тефлон дорог; благодаря термостойкости его применяют в антипригарных покрытиях.",
         "ar": "تُصنع أكياس التسوق من البولي إيثيلين (PE) الرخيص السهل التشكيل، أما التفلون فغالي الثمن ويُستخدم في الطلاءات غير اللاصقة لمقاومته العالية للحرارة.",
         "zh": "购物袋由便宜、易加工的聚乙烯(PE)制成。特氟龙价格昂贵，因耐高温而用于不粘涂层。",
-        "ku": "Kîsikên bazarê ji polîetîlena (PE) erzan û bi hêsanî tê şekildan têne çêkirin. Teflon biha ye û ji ber berxwedana xwe ya li hember germê di pêçanên neçîpok de tê bikaranîn."
+        "ku": "Kîsikên bazarê ji polîetîlena (PE) erzan a ku bi hêsanî tê teşekirin têne çêkirin. Teflon biha ye û ji ber berxwedana xwe ya li hember germê di rûpoşên nezeliqok de tê bikaranîn."
       }
     },
     {
@@ -235,7 +235,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Политетрафторэтилен (тефлон, ПТФЭ) благодаря высокой термостойкости применяют в антипригарных покрытиях сковород и кастрюль.",
         "ar": "يُستخدم البولي تترافلوروإيثيلين (التفلون - PTFE) في طلاء المقالي والقدور غير اللاصقة بسبب مقاومته العالية للحرارة.",
         "zh": "聚四氟乙烯(特氟龙，PTFE)耐高温，因此用于不粘平底锅和炖锅的涂层。",
-        "ku": "Polytetrafluoroethylene (Teflon - PTFE) ji ber berxwedana xwe ya bilind a germê di cil û bergên pan û potan de ne-çît tê bikar anîn."
+        "ku": "Polîtetrafloroetîlen (Teflon - PTFE) ji ber berxwedana xwe ya bilind a li hember germê di rûpoşên nezeliqok ên tawe û beroşan de tê bikaranîn."
       },
       "trap": {
         "tr": "Teflon kolayca alev alan ve eriyen bir polimerdir.",
@@ -245,7 +245,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Тефлон — легко воспламеняющийся и легкоплавкий полимер.",
         "ar": "التفلون بوليمر سريع الاشتعال وسهل الانصهار.",
         "zh": "特氟龙是一种容易着火和熔化的聚合物。",
-        "ku": "Teflon polîmerek e ku bi hêsanî agir pê dikeve û dihele."
+        "ku": "Teflon polîmerek e ku bi hêsanî agir digire û dihele."
       },
       "whyTrapIsFalse": {
         "tr": "Teflondaki C–F bağları çok sağlamdır; bu yüzden Teflon yüksek sıcaklığa dayanır, zor yanar ve kimyasallara karşı dirençlidir. Yapışmaz tavalarda kullanılmasının nedeni de budur.",
@@ -255,7 +255,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Связи C–F в тефлоне очень прочные, поэтому тефлон выдерживает высокие температуры, трудно воспламеняется и химически стоек. Именно поэтому его используют для антипригарных сковород.",
         "ar": "روابط C–F في التفلون قوية جدًا، لذلك يتحمل التفلون درجات الحرارة العالية ويصعب اشتعاله ويقاوم المواد الكيميائية، وهذا بالضبط سبب استخدامه في المقالي غير اللاصقة.",
         "zh": "特氟龙中的 C–F 键非常牢固，因此它耐高温、难燃烧、耐化学腐蚀，这正是它被用于不粘锅的原因。",
-        "ku": "Girêdanên C–F yên di Teflonê de pir xurt in; ji ber vê yekê Teflon li ber germahiya bilind radiweste, bi zehmetî dişewite û li hember kîmyewiyan berxwedêr e. Sedema bikaranîna wê di tawên neçîpok de jî ev e."
+        "ku": "Girêdanên C–F yên di Teflonê de pir xurt in; ji ber vê yekê Teflon li ber germahiya bilind radiweste, bi zehmetî dişewite û li hember madeyên kîmyewî berxwedêr e. Sedema bikaranîna wê di taweyên nezeliqok de jî ev e."
       }
     },
     {
@@ -268,7 +268,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Кевлар — лёгкий и чрезвычайно прочный синтетический полиамид; его используют в бронежилетах, шлемах и крыльях самолётов.",
         "ar": "الكيفلار بولي أميد صناعي خفيف ومتين للغاية، يُستخدم في السترات الواقية من الرصاص والخوذ وأجنحة الطائرات.",
         "zh": "凯夫拉是一种轻质、极其坚固的合成聚酰胺，用于防弹背心、头盔和飞机机翼。",
-        "ku": "Kevlar polîamîdek sentetîk a sivik û pir domdar e ku di êlekên gulebaranê, helmet û baskên balafirê de tê bikar anîn."
+        "ku": "Kevlar polîamîdeke sentetîk a sivik û pir xurt e ku di êlekên dijgule, kask û baskên balafiran de tê bikaranîn."
       },
       "trap": {
         "tr": "Kevlar tek kullanımlık plastik bardak üretiminde kullanılır.",
@@ -278,7 +278,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Кевлар используют для производства одноразовых пластиковых стаканчиков.",
         "ar": "يُستخدم الكيفلار في إنتاج الأكواب البلاستيكية أحادية الاستعمال.",
         "zh": "凯夫拉用于生产一次性塑料杯。",
-        "ku": "Kevlar di hilberîna tasên plastîk ên yekcar de tê bikar anîn."
+        "ku": "Kevlar di çêkirina piyalên plastîk ên yekcarî de tê bikaranîn."
       },
       "whyTrapIsFalse": {
         "tr": "Kevlar çok dayanıklı ve pahalı bir yüksek performans polimeridir; çelik yelek, kask gibi koruyucu malzemelerde kullanılır. Tek kullanımlık bardaklar ucuz polimerlerden (örn. polistiren, polipropilen) yapılır.",
@@ -288,7 +288,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Кевлар — очень прочный и дорогой полимер с высокими эксплуатационными характеристиками; из него делают защитное снаряжение (бронежилеты, шлемы). Одноразовые стаканчики делают из дешёвых полимеров (например, полистирола, полипропилена).",
         "ar": "الكيفلار بوليمر عالي الأداء شديد المتانة وغالي الثمن يُستخدم في معدات الحماية كالسترات الواقية والخوذ، أما الأكواب أحادية الاستعمال فتُصنع من بوليمرات رخيصة (مثل البوليستيرين والبولي بروبيلين).",
         "zh": "凯夫拉是一种非常坚固且昂贵的高性能聚合物，用于防弹衣、头盔等防护装备；一次性杯子由廉价聚合物（如聚苯乙烯、聚丙烯）制成。",
-        "ku": "Kevlar polîmereke bi performansa bilind, pir xurt û biha ye; di amûrên parastinê yên wek êlekên li dijî guleyan û kaskan de tê bikaranîn. Piyalên yekcarî ji polîmerên erzan (wek polîstîren, polîpropîlen) têne çêkirin."
+        "ku": "Kevlar polîmereke bi performansa bilind, pir xurt û biha ye; di amûrên parastinê yên wek êlekên dijgule û kaskan de tê bikaranîn. Piyalên yekcarî ji polîmerên erzan (wek polîstîren, polîpropîlen) têne çêkirin."
       }
     },
     {
@@ -301,7 +301,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Каучук бывает натуральным (из сока каучукового дерева) и синтетическим; благодаря эластичности его используют в производстве автомобильных шин.",
         "ar": "يُنتَج المطاط طبيعيًا (من شجرة المطاط) أو صناعيًا، ويُستخدم في إطارات السيارات بفضل مرونته.",
         "zh": "橡胶可以是天然的（取自橡胶树）或合成的，因具有弹性而用于汽车轮胎。",
-        "ku": "Lastîk bi awayekî xwezayî (ji dara lastîkê) an jî sentetîk tê hilberandin û bi saya elastîkbûna xwe di tekerên otomobîlan de tê bikaranîn."
+        "ku": "Kauçûk bi awayekî xwezayî (ji dara kauçûkê) an jî sentetîk tê hilberandin û bi saya elastîkbûna xwe di tekerên otomobîlan de tê bikaranîn."
       },
       "trap": {
         "tr": "Kauçuk sert kırılgan kristal bir maddedir.",
@@ -311,7 +311,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Каучук — твёрдое хрупкое кристаллическое вещество.",
         "ar": "المطاط مادة بلورية صلبة وهشة.",
         "zh": "橡胶是一种坚硬易碎的晶体物质。",
-        "ku": "Laçûk maddeyek krîstalî ya hişk e."
+        "ku": "Kauçûk madeyeke krîstalî ya hişk û şikestbar e."
       },
       "whyTrapIsFalse": {
         "tr": "Kauçuk uzun ve düzensiz polimer zincirlerinden oluşan esnek (elastik) bir maddedir; çekilince uzar, bırakılınca eski hâline döner. Bu özelliği nedeniyle lastik yapımında kullanılır.",
@@ -321,7 +321,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Каучук — эластичный материал из длинных неупорядоченных полимерных цепей: при растяжении он удлиняется, а после снятия нагрузки восстанавливает форму. Поэтому его используют для изготовления шин.",
         "ar": "المطاط مادة مرنة تتكون من سلاسل بوليمرية طويلة وغير منتظمة؛ تستطيل عند الشد وتعود إلى شكلها عند الترك، ولهذا تُستخدم في صناعة الإطارات.",
         "zh": "橡胶是由长而无序的聚合物链构成的弹性材料，拉伸时伸长、松开后恢复原状，因此用于制造轮胎。",
-        "ku": "Lastîk maddeyeke nerm û elastîk e ku ji zincîrên polîmer ên dirêj û bêrêz pêk tê; dema tê kişandin dirêj dibe, dema tê berdan vedigere şiklê xwe. Ji ber vê taybetiyê di çêkirina tekeran de tê bikaranîn."
+        "ku": "Kauçûk madeyeke nerm û elastîk e ku ji zincîrên polîmer ên dirêj û bêrêz pêk tê; dema tê kişandin dirêj dibe, dema tê berdan vedigere şiklê xwe. Ji ber vê taybetmendiyê di çêkirina tekeran de tê bikaranîn."
       }
     },
     {
@@ -334,7 +334,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "ПЭТ (полиэтилентерефталат) — полимер, пригодный для вторичной переработки; из него делают бутылки для воды и ёмкости для напитков.",
         "ar": "البولي إيثيلين تيريفثاليت (PET) بوليمر قابل لإعادة التدوير يُستخدم في قوارير المياه وعبوات المشروبات.",
         "zh": "PET(聚对苯二甲酸乙二醇酯)是一种可回收利用的聚合物，用于饮用水瓶和饮料容器。",
-        "ku": "PET (Polyethylene terephthalate) polîmerek vezîvirandinê ye ku di şûşeyên avê û konteynerên vexwarinê de tê bikar anîn."
+        "ku": "PET (polîetîlen tereftalat) polîmereke vezîvirbar e ku di şûşeyên avê û firaxên vexwarinan de tê bikaranîn."
       },
       "trap": {
         "tr": "PET ambalajlar geri dönüştürülemez.",
@@ -344,7 +344,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "ПЭТ-упаковка не подлежит вторичной переработке.",
         "ar": "لا يمكن إعادة تدوير عبوات PET.",
         "zh": "PET 包装不能回收。",
-        "ku": "Ambalaja PET nikare were vezîvirandin."
+        "ku": "Ambalajên PET nayên vezîvirandin."
       },
       "whyTrapIsFalse": {
         "tr": "PET bir termoplastiktir; eritilip yeniden şekillendirilebilir. Geri dönüşüm kodu 1 olan PET şişeler toplanıp tekstil lifine ve yeni ambalajlara dönüştürülür.",
@@ -354,7 +354,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "ПЭТ — термопласт: его можно расплавить и снова сформовать. ПЭТ-бутылки с кодом переработки 1 собирают и превращают в текстильное волокно и новую упаковку.",
         "ar": "PET من اللدائن الحرارية، يمكن صهره وإعادة تشكيله، وتُجمع قوارير PET ذات رمز إعادة التدوير 1 لتتحول إلى ألياف نسيجية وعبوات جديدة.",
         "zh": "PET 是热塑性塑料，可以熔化后重新成型。回收代码为 1 的 PET 瓶被收集后制成纺织纤维和新的包装。",
-        "ku": "PET termoplastîk e; dikare were helandin û ji nû ve were şekildan. Şûşeyên PET yên bi koda vezîvirandinê 1 têne berhevkirin û dibin têlên tekstîlê û pakêtên nû."
+        "ku": "PET termoplastîk e: dikare were helandin û ji nû ve were teşekirin. Şûşeyên PET ên bi koda vezîvirandinê 1 têne berhevkirin û vediguherin têlên tekstîlê û ambalajên nû."
       }
     },
     {
@@ -367,7 +367,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "В мицелле гидрофобные хвосты мыла окружают неполярную частицу грязи, а гидрофильные головки взаимодействуют с водой и отрывают грязь от поверхности.",
         "ar": "في بنية المذيلة تحيط ذيول الصابون الكارهة للماء بجسيم الأوساخ غير القطبي، وتتآثر الرؤوس المحبة للماء مع الماء فتقتلع الأوساخ من السطح.",
         "zh": "在胶束结构中，肥皂的疏水尾部包围非极性污垢颗粒，亲水头部与水相互作用，把污垢从表面拉下来。",
-        "ku": "Di strukturê micelle de, dûvikên hîdrofobîk ên sabûnê dor parça qirêj a nepolar dorpêç dikin, û serê hîdrofîl bi avê re têkilî dikin û qirêjê ji ser rûyê erdê radikin."
+        "ku": "Di avahiya mîselê de dûvikên hîdrofob ên sabûnê dora perçeya qirêjê ya nepolar digirin; serên hîdrofîl jî bi avê re dikevin têkiliyê û qirêjê ji rûyê tiştî vediqetînin."
       },
       "trap": {
         "tr": "Misel oluşumunda hidrofil başlar kire saplanır.",
@@ -377,7 +377,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "При образовании мицеллы гидрофильные головки внедряются в грязь.",
         "ar": "عند تكوّن المذيلة تنغرس الرؤوس المحبة للماء في الأوساخ.",
         "zh": "形成胶束时，亲水头部嵌入污垢中。",
-        "ku": "Di dema damezrandina micelle de, serê hîdrofîl di nav axê de asê dibin."
+        "ku": "Di çêbûna mîselê de serên hîdrofîl di nav qirêjê de diçikin."
       },
       "whyTrapIsFalse": {
         "tr": "Miselde yerleşim tersidir: apolar kuyruklar içe, kire doğru; polar (hidrofil) başlar dışa, suya doğru yönelir. Başlar kire gömülseydi kir suda dağılamazdı.",
@@ -387,7 +387,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "В мицелле всё наоборот: неполярные хвосты направлены внутрь, к грязи, а полярные (гидрофильные) головки — наружу, к воде. Если бы головки погружались в грязь, она не могла бы распределиться в воде.",
         "ar": "في المذيلة يكون الترتيب معكوسًا: تتجه الذيول غير القطبية إلى الداخل نحو الأوساخ، وتتجه الرؤوس القطبية (المحبة للماء) إلى الخارج نحو الماء. ولو انغرست الرؤوس في الأوساخ لما تشتتت في الماء.",
         "zh": "胶束中的排列正好相反：非极性尾部朝内伸入污垢，极性（亲水）头部朝外朝向水。如果头部嵌入污垢，污垢就无法分散到水中。",
-        "ku": "Di mîselê de rêzkirin berevajî ye: dûvikên nepolar ber bi hundir, ber bi qirêjê ve; serên polar (hîdrofîl) ber bi derve, ber bi avê ve ne. Heke ser biçûna nav qirêjê, qirêj di avê de belav nedibû."
+        "ku": "Di mîselê de rêzbûn berevajî ye: dûvikên nepolar ber bi hundir, ber bi qirêjê ve; serên polar (hîdrofîl) ber bi derve, ber bi avê ve ne. Heke ser di nav qirêjê de biçikiyana, qirêj di avê de belav nedibû."
       }
     },
     {
@@ -400,7 +400,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Лекарства выпускают в разных формах в зависимости от места и скорости действия: таблетки, драже, капсулы, сиропы, ампулы (инъекции), мази, кремы, капли и др.",
         "ar": "تُصنع الأدوية بأشكال مختلفة بحسب مكان تأثيرها وسرعته، ومن هذه الأشكال: الأقراص والأقراص الملبسة والكبسولات والشراب والأمبولات (الحقن) والمراهم والكريمات والقطرات.",
         "zh": "药物根据作用部位和起效速度制成不同剂型，如片剂、糖衣片、胶囊、糖浆、安瓿（注射剂）、软膏、乳膏和滴剂等。",
-        "ku": "Derman li gorî cihê bandorê û leza wê bi formên cuda têne çêkirin; tablet, dragee, kapsûl, şurub, ampûl (derzî), melhem, krem û dilop hin ji van forman in."
+        "ku": "Derman li gorî cihê bandorê û leza bandorê bi formên cuda têne çêkirin; tablet, draje, kapsûl, şurub, ampûl (derzî), melhem, krem û dilop hin ji van forman in."
       },
       "trap": {
         "tr": "Bütün ilaçlar yalnızca ağız yoluyla hap olarak tüketilir.",
@@ -410,7 +410,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Все лекарства принимают только внутрь в виде таблеток.",
         "ar": "تُتناول جميع الأدوية عن طريق الفم فقط على شكل أقراص.",
         "zh": "所有药物都只能以药片形式口服。",
-        "ku": "Hemî derman tenê bi devkî wekî heban têne vexwarin."
+        "ku": "Hemû derman tenê bi rêya devê, wek heb têne xwarin."
       },
       "whyTrapIsFalse": {
         "tr": "İlaçlar etki yerine ve hızına göre farklı formlarda hazırlanır. Enjeksiyonla kas ya da damar yoluyla, merhem ve kremle deriden, damlayla göz veya burundan da verilebilir.",
@@ -420,7 +420,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Лекарства выпускают в разных формах в зависимости от места и скорости действия. Их также вводят инъекцией в мышцу или вену, наносят на кожу в виде мазей и кремов, закапывают в глаза или нос в виде капель.",
         "ar": "تُحضَّر الأدوية بأشكال مختلفة بحسب مكان تأثيرها وسرعته، فيمكن إعطاؤها أيضًا بالحقن في العضل أو الوريد، أو عبر الجلد على شكل مراهم وكريمات، أو كقطرات للعين أو الأنف.",
         "zh": "药物根据作用部位和起效速度被制成不同剂型，也可以通过肌肉或静脉注射、以软膏和乳膏经皮肤、或以眼药水、滴鼻剂的形式给药。",
-        "ku": "Derman li gorî cihê bandorê û leza wê bi formên cuda têne amadekirin. Ew dikarin bi derziyê di masûlke an damarê re, bi melhem û kremê di çerm re, an jî wek dilopên çav an pozê werin dayîn."
+        "ku": "Derman li gorî cihê bandorê û leza bandorê bi formên cuda têne amadekirin. Ew dikarin bi derziyê bi rêya masûlkeyê an damarê, bi melhem û kremê bi rêya çerm, bi dilopan jî bi rêya çav an pozê werin dayîn."
       }
     },
     {
@@ -433,7 +433,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Парабены, используемые в косметике как консерванты, и некоторые фталаты, используемые как смягчители, могут вызывать у части людей аллергию или вредить здоровью; поэтому их применение ограничено законом.",
         "ar": "قد تسبب البارابينات المستخدمة مواد حافظةً وبعض الفثالات المستخدمة ملدّناتٍ في مستحضرات التجميل تأثيرات تحسسية أو ضارة لدى بعض الأشخاص، لذا يُنظَّم استخدامها بحدود قانونية.",
         "zh": "化妆品中用作防腐剂的对羟基苯甲酸酯类以及部分用作增塑剂的邻苯二甲酸酯，可能使某些人过敏或损害健康，因此其用量受法定限量约束。",
-        "ku": "Parabenên ku di kozmetîkê de wek parastinker û hin ftalatên ku wek nermker têne bikaranîn dikarin li hin kesan bandorên alerjîk an zirardar çêbikin; ji ber vê yekê bikaranîna wan bi sînorên qanûnî tê birêkxistin."
+        "ku": "Parabenên ku di kozmetîkê de wek parêzker û hin ftalatên ku wek nermker têne bikaranîn dikarin li hin kesan bandorên alerjîk an zirardar çêbikin; ji ber vê yekê bikaranîna wan bi sînorên zagonî tê rêkxistin."
       },
       "trap": {
         "tr": "Kozmetik ürünlerdeki koruyucu kimyasallar tamamen zararsız organik besinlerdir.",
@@ -443,7 +443,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Консерванты в косметике — совершенно безвредные органические питательные вещества.",
         "ar": "المواد الكيميائية الحافظة الموجودة في مستحضرات التجميل هي مغذيات عضوية غير ضارة تمامًا.",
         "zh": "化妆品中的防腐剂是完全无害的有机营养素。",
-        "ku": "Kîmyewîyên parastinê yên di hilberên kozmetîkî de madeyên organîk ên bi tevahî bê zirar in."
+        "ku": "Madeyên kîmyewî yên parêzker ên di hilberên kozmetîkê de xurekên organîk ên bi temamî bêzirar in."
       },
       "whyTrapIsFalse": {
         "tr": "Koruyucular besin değil, ürünün mikroorganizmalarla bozulmasını önlemek için eklenen katkı maddeleridir. Parabenler gibi bazılarının alerjik ya da sağlığa zararlı etkileri olabileceği için kullanım miktarları yasal sınırlarla düzenlenir.",
@@ -453,7 +453,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Консерванты — не питательные вещества, а добавки, предотвращающие порчу продукта микроорганизмами. Некоторые из них, например парабены, могут вызывать аллергию или вредить здоровью, поэтому их количество ограничено законом.",
         "ar": "المواد الحافظة ليست مغذيات، بل إضافات تمنع فساد المنتج بفعل الكائنات الدقيقة، وقد يكون لبعضها كالبارابينات تأثيرات تحسسية أو ضارة، لذا تُحدَّد كمياتها بالقانون.",
         "zh": "防腐剂不是营养素，而是为防止产品因微生物而变质加入的添加剂。其中一些（如对羟基苯甲酸酯类）可能致敏或有害健康，因此其用量受法规限制。",
-        "ku": "Parastinker ne xurek in; ew madeyên zêdekirî ne ku nahêlin hilber ji ber mîkroorganîzmayan xera bibe. Hin ji wan, wek parabenan, dikarin bandorên alerjîk an zirardar bikin, ji ber vê yekê mîqdarên wan bi qanûnê têne sînorkirin."
+        "ku": "Parêzker ne xurek in; ew madeyên lêzêdekirî ne ku nahêlin hilber ji ber mîkroorganîzmayan xera bibe. Hin ji wan, wek parabenan, dikarin bandorên alerjîk an zirardar bikin; ji ber vê yekê mîqdarên wan bi sînorên zagonî têne diyarkirin."
       }
     },
     {
@@ -466,7 +466,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Оливковое масло Extra Virgin — натуральное высококачественное масло с самой низкой кислотностью, полученное механическим способом.",
         "ar": "زيت الزيتون البكر الممتاز زيت طبيعي عالي الجودة، يُستخلص بالطرق الميكانيكية، وحموضته هي الأدنى.",
         "zh": "特级初榨橄榄油是仅用机械方法获得、酸度最低的天然优质橄榄油。",
-        "ku": "Rûnê zeytûnê yê bijîjk, rûnek xwezayî û bi kalîte ye ku bi asîdiya herî kêm heye, ku bi mekanîkî tê wergirtin."
+        "ku": "Rûnê zeytûnê yê paqij rûnekî xwezayî û bikalîte ye ku asîdiya wî herî kêm e û tenê bi rêya mekanîkî tê bidestxistin."
       },
       "trap": {
         "tr": "Riviera yağ hiçbir işlem görmemiş en saf doğal zeytinyağıdır.",
@@ -476,7 +476,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Масло «Ривьера» — чистейшее натуральное оливковое масло, не подвергавшееся никакой обработке.",
         "ar": "زيت زيتون ريفييرا هو أنقى زيت زيتون طبيعي لم يخضع لأي معالجة.",
         "zh": "里维埃拉橄榄油是未经任何加工、最纯的天然橄榄油。",
-        "ku": "Rûnê Riviera rûnê zeytûna xwezayî ya herî paqij e ku ti pêvajoyek nekiriye."
+        "ku": "Rûnê zeytûnê yê Riviera rûnê zeytûnê yê xwezayî yê herî saf e ku tu pêvajo lê nehatiye kirin."
       },
       "whyTrapIsFalse": {
         "tr": "Riviera zeytinyağı rafine edilmiş (işlem görmüş) zeytinyağı ile natürel zeytinyağının karışımıdır. Hiçbir kimyasal işlem görmeden yalnızca mekanik yolla elde edilen yağ natürel sızma zeytinyağıdır.",
@@ -486,7 +486,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Оливковое масло «Ривьера» — смесь рафинированного (обработанного) и натурального оливкового масла. Масло, полученное только механическим способом без химической обработки, — это оливковое масло Extra Virgin.",
         "ar": "زيت زيتون ريفييرا خليط من زيت الزيتون المكرر (المعالَج) وزيت الزيتون البكر، أما الزيت المستخرج بالطرق الميكانيكية فقط دون أي معالجة كيميائية فهو زيت الزيتون البكر الممتاز.",
         "zh": "里维埃拉橄榄油是精炼（经过加工的）橄榄油与初榨橄榄油的混合物。只用机械方法、未经任何化学处理得到的才是特级初榨橄榄油。",
-        "ku": "Rûnê zeytûnê yê Riviera tevliheviya rûnê zeytûnê yê rafînekirî (kar lê hatî kirin) û rûnê zeytûnê yê xwezayî ye. Rûnê ku bê tu karê kîmyayî tenê bi rêya mekanîkî tê bidestxistin rûnê zeytûnê yê xwezayî yê herî paqij (extra virgin) e."
+        "ku": "Rûnê zeytûnê yê Riviera tevliheviya rûnê zeytûnê yê rafînekirî (pêvajo lê hatî kirin) û rûnê zeytûnê yê xwezayî ye. Rûnê ku bê tu pêvajoya kîmyewî, tenê bi rêya mekanîkî tê bidestxistin rûnê zeytûnê yê paqij e."
       }
     },
     {
@@ -499,7 +499,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Маргарин получают гидрированием: к ненасыщенным жидким растительным маслам присоединяют водород.",
         "ar": "يُحصل على المارجرين بإضافة الهيدروجين إلى الزيوت النباتية السائلة غير المشبعة بطريقة الهدرجة.",
         "zh": "人造黄油是用氢化方法向不饱和植物油中加氢制得的。",
-        "ku": "Margarîn bi lêkirina hîdrojenê li rûnên nebatî yên têrnebûyî bi rêbaza hîdrojenkirinê têne bidestxistin."
+        "ku": "Margarîn bi rêbaza hîdrojenasyonê, bi lêzêdekirina hîdrojenê li rûnên riwekî yên şile û netêr têne bidestxistin."
       },
       "trap": {
         "tr": "Margarinler hayvan kemiklerinin kaynatılmasıyla üretilir.",
@@ -509,7 +509,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Маргарин получают вывариванием костей животных.",
         "ar": "يُنتَج المارجرين بغلي عظام الحيوانات.",
         "zh": "人造黄油是用动物骨头熬煮制成的。",
-        "ku": "Margarîn bi kelandina hestiyên heywanan tên çêkirin."
+        "ku": "Margarîn bi kelandina hestiyên heywanan têne çêkirin."
       },
       "whyTrapIsFalse": {
         "tr": "Margarin bitkisel kaynaklıdır: doymamış sıvı yağların ikili bağlarına katalizör eşliğinde hidrojen katılarak yağ katılaştırılır. Kemiklerin kaynatılmasıyla margarin değil, jelatin gibi başka ürünler elde edilir.",
@@ -519,7 +519,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Маргарин имеет растительное происхождение: к двойным связям ненасыщенных жидких масел в присутствии катализатора присоединяют водород, и масло затвердевает. Вываривая кости, получают другие продукты, например желатин, а не маргарин.",
         "ar": "المارجرين نباتي المصدر: يُضاف الهيدروجين إلى الروابط الثنائية في الزيوت السائلة غير المشبعة بوجود عامل حفاز فيتصلب الزيت. أما غلي العظام فينتج مواد أخرى كالجيلاتين لا المارجرين.",
         "zh": "人造黄油来源于植物：在催化剂作用下向不饱和液态油的双键中加氢，使油变为固态。熬煮骨头得到的是明胶等其他产品，而不是人造黄油。",
-        "ku": "Margarîn ji riwekan tê: bi alîkariya katalîzorê hîdrojen li girêdanên ducar ên rûnên şil ên têrnebûyî tê zêdekirin û rûn hişk dibe. Bi kelandina hestiyan ne margarîn, lê berhemên din ên wek jelatînê têne bidestxistin."
+        "ku": "Margarîn ji çavkaniyên riwekî tê: bi alîkariya katalîzorê hîdrojen li girêdanên ducar ên rûnên şile yên netêr tê zêdekirin û rûn hişk dibe. Bi kelandina hestiyan ne margarîn, lê hilberên din ên wek jelatînê têne bidestxistin."
       }
     },
     {
@@ -532,7 +532,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Пастеризация — кратковременное нагревание пищевых продуктов до 60–75 °C для уничтожения болезнетворных бактерий.",
         "ar": "البسترة تسخين قصير عند 60-75 °C لقتل البكتيريا الممرضة في الغذاء.",
         "zh": "巴氏杀菌是在 60-75 °C 下短时间加热，以杀死食品中致病菌的方法。",
-        "ku": "Pasteurîzasyon pêvajoyek germkirina demek kurt e ku di 60-75 °C de ji bo kuştina bakteriyên pathogenîk ên di xwarinê de ye."
+        "ku": "Pastorîzasyon germkirineke demkurt e di 60-75 °C de, ji bo kuştina bakteriyên nexweşîçêker ên di xwarinê de."
       },
       "trap": {
         "tr": "Pastörizasyon gıdayı dondurarak sterilize etme yöntemidir.",
@@ -542,7 +542,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Пастеризация — способ стерилизации пищевых продуктов замораживанием.",
         "ar": "البسترة طريقة لتعقيم الغذاء بالتجميد.",
         "zh": "巴氏杀菌是通过冷冻对食品进行灭菌的方法。",
-        "ku": "Pasteurîzasyon rêbazek sterilkirina xwarinê bi cemidandinê ye."
+        "ku": "Pastorîzasyon rêbaza sterîlkirina xwarinê bi cemidandinê ye."
       },
       "whyTrapIsFalse": {
         "tr": "Pastörizasyon soğutma değil ısıtma işlemidir ve sterilizasyon değildir: gıda kısa süre ısıtılıp hızla soğutulur, zararlı mikroorganizmaların çoğu ölür ama tamamı ölmez. Dondurma mikroorganizmaları öldürmez, yalnızca çoğalmalarını yavaşlatır.",
@@ -552,7 +552,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Пастеризация — это нагревание, а не охлаждение, и не стерилизация: продукт кратковременно нагревают и быстро охлаждают, при этом гибнет большинство, но не все вредные микроорганизмы. Замораживание микроорганизмы не убивает, а лишь замедляет их размножение.",
         "ar": "البسترة عملية تسخين لا تبريد، وليست تعقيمًا: يُسخَّن الغذاء لمدة قصيرة ثم يُبرَّد بسرعة فيموت معظم الكائنات الدقيقة الضارة لا جميعها. أما التجميد فلا يقتل الكائنات الدقيقة بل يبطئ تكاثرها فقط.",
         "zh": "巴氏杀菌是加热而不是冷却，也不是灭菌：食品被短时间加热后迅速冷却，大部分而非全部有害微生物被杀死。冷冻不能杀死微生物，只能减缓其繁殖。",
-        "ku": "Pastorîzasyon germkirin e, ne sarkirin, û ne sterîlîzasyon e: xwarin demeke kurt tê germkirin û zû tê sarkirin, piraniya mîkroorganîzmayên zirardar dimirin lê hemû namirin. Cemidandin mîkroorganîzmayan nakuje, tenê zêdebûna wan hêdî dike."
+        "ku": "Pastorîzasyon germkirin e, ne sarkirin, û ne jî sterîlîzasyon e: xwarin demeke kurt tê germkirin û zû tê sarkirin; piraniya mîkroorganîzmayên zirardar dimirin, lê hemû namirin. Cemidandin mîkroorganîzmayan nakuje, tenê pirbûna wan hêdî dike."
       }
     }
   ],
@@ -587,7 +587,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Синтетическое моющее средство получают из продуктов переработки нефти; оно моет и в жёсткой воде, но сильнее загрязняет окружающую среду, так как с трудом разлагается в природе; мыло получают из растительных или животных жиров, в жёсткой воде оно образует осадок, а в природе легко разлагается.",
         "ar": "المنظف الصناعي يُصنع من مشتقات البترول وينظف في الماء العسر أيضًا، لكنه يلوث البيئة أكثر لأنه يتحلل بصعوبة في الطبيعة؛ أما الصابون فيُصنع من الدهون النباتية أو الحيوانية ويكوّن راسبًا في الماء العسر ويتحلل بسهولة في الطبيعة.",
         "zh": "洗涤剂由石油衍生物制得，在硬水中也能去污，但在自然界中难以分解，因而对环境污染更大；肥皂由植物或动物油脂制得，在硬水中会生成沉淀，在自然界中容易分解。",
-        "ku": "Deterjan ji berhemên petrolê tê çêkirin, di ava hişk de jî paqij dike, lê ji ber ku di xwezayê de bi zehmetî perçe dibe jîngehê bêtir qirêj dike; sabûn ji rûnên riwekî an heywanî tê çêkirin, di ava hişk de rûniştek çêdike û di xwezayê de bi hêsanî perçe dibe."
+        "ku": "Deterjan ji derûvên neftê tê çêkirin, di ava hişk de jî paqij dike, lê ji ber ku di xwezayê de bi zehmetî perçe dibe jîngehê bêtir qirêj dike; sabûn ji rûnên riwekî an heywanî tê çêkirin, di ava hişk de niştek çêdike û di xwezayê de bi hêsanî perçe dibe."
       }
     },
     {
@@ -633,7 +633,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Оливковое масло Extra Virgin",
         "ar": "زيت الزيتون البكر الممتاز",
         "zh": "特级初榨橄榄油",
-        "ku": "Rûnê zeytûnê yê sizma"
+        "ku": "Rûnê zeytûnê yê paqij"
       },
       "conceptB": {
         "tr": "Riviera Zeytinyağı",
@@ -653,7 +653,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Оливковое масло Extra Virgin получают из оливок только механическим способом, у него самая низкая кислотность; оливковое масло «Ривьера» — смесь рафинированного и натурального оливкового масла.",
         "ar": "زيت الزيتون البكر الممتاز: زيت طبيعي يُستخلص من الزيتون بالطرق الميكانيكية فقط، وهو الأقل حموضة؛ أما زيت زيتون ريفييرا فخليط من زيت الزيتون المكرر وزيت الزيتون البكر.",
         "zh": "特级初榨橄榄油仅通过机械方法从橄榄中获得，酸度最低；里维埃拉橄榄油是精炼橄榄油与初榨橄榄油的混合物。",
-        "ku": "Rûnê zeytûnê yê sizma tenê bi rêya mekanîkî ji zeytûnê tê wergirtin û asîdiya wî herî kêm e; rûnê Riviera tevliheviya rûnê zeytûnê yê rafînekirî û rûnê zeytûnê yê xwezayî ye."
+        "ku": "Rûnê zeytûnê yê paqij tenê bi rêya mekanîkî ji zeytûnê tê bidestxistin û asîdiya wî herî kêm e; rûnê zeytûnê yê Riviera tevliheviya rûnê zeytûnê yê rafînekirî û rûnê zeytûnê yê xwezayî ye."
       }
     },
     {
@@ -686,7 +686,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Гидрофильный конец обладает полярностью, притягивается к воде и удерживается в ней; гидрофобный конец представляет собой неполярную углеводородную цепь и удерживается на загрязнении.",
         "ar": "الطرف المحب للماء قطبي ويحب الماء ويلتصق به؛ أما الطرف الكاره للماء فسلسلة هيدروكربونية غير قطبية تلتصق بالأوساخ.",
         "zh": "亲水端具有极性，易与水结合；疏水端是非极性的烃链，与污垢结合。",
-        "ku": "Serê hîdrofîl polar e, ji avê hez dike û bi avê ve digire; serê hîdrofob zincîreke hîdrokarbonî ya apolar e û bi qirêjê ve digire."
+        "ku": "Serê hîdrofîl polar e, ji avê hez dike û bi avê ve dizeliqe; serê hîdrofob zincîreke hîdrokarbonî ya nepolar e û bi qirêjê ve dizeliqe."
       }
     },
     {
@@ -752,7 +752,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Термопласт при нагревании размягчается, и ему можно придать новую форму; термореактивный полимер из-за сшитой структуры при нагревании не размягчается, не поддаётся повторному формованию и при высокой температуре разлагается.",
         "ar": "البوليمر اللدن بالحرارة يلين عند التسخين ويمكن إعادة تشكيله؛ أما البوليمر المتصلب بالحرارة فلا يلين عند التسخين بسبب بنيته المتشابكة، ولا يمكن إعادة تشكيله، ويتحلل عند درجات الحرارة العالية.",
         "zh": "热塑性塑料受热时变软，可以重新塑形；热固性聚合物由于具有交联结构，受热时不变软，不能重新塑形，在高温下会分解。",
-        "ku": "Termoplastîk dema tê germkirin nerm dibe û dikare ji nû ve bê teşekirin; polîmera termoset ji ber avahiya xwe ya bi girêdanên xaçerê dema tê germkirin nerm nabe, ji nû ve nayê teşekirin û di germahiya bilind de xera dibe."
+        "ku": "Termoplastîk dema tê germkirin nerm dibe û dikare ji nû ve were teşekirin; polîmera termoset ji ber avahiya xwe ya bi girêdanên navzincîrî dema tê germkirin nerm nabe, ji nû ve nayê teşekirin û di germahiya bilind de hildiweşe."
       }
     },
     {
@@ -765,7 +765,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Отбеливатель (NaClO)",
         "ar": "ماء الجافيل (NaClO)",
         "zh": "漂白水(NaClO)",
-        "ku": "Ava çilşoyê (NaClO)"
+        "ku": "Ava spîkirinê (NaClO)"
       },
       "conceptB": {
         "tr": "Kireç Kaymağı (CaOCl2)",
@@ -785,7 +785,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Отбеливатель (NaClO) представляет собой водный раствор гипохлорита натрия; хлорная известь (CaOCl2) — твёрдое отбеливающее и дезинфицирующее средство. Действие обоих средств обусловлено гипохлорит-ионом (ClO-), который образуется в воде.",
         "ar": "ماء الجافيل محلول مائي لهيبوكلوريت الصوديوم؛ أما مسحوق التبييض فمادة مبيِّضة ومطهِّرة صلبة. وكلاهما يعمل بواسطة أيون الهيبوكلوريت (ClO-) المتكوّن في الماء.",
         "zh": "漂白水是次氯酸钠的水溶液；漂白粉则是固态的漂白剂和消毒剂。二者都依靠在水中生成的次氯酸根离子(ClO-)起作用。",
-        "ku": "Ava çilşoyê çareseriya avî ya hîpoklorîta sodyûmê ye; toza spîkirinê jî spîker û dezenfektaneke hişk e. Bandora herduyan ji îyona hîpoklorîtê (ClO-) ya ku di avê de çêdibe tê."
+        "ku": "Ava spîkirinê çareseriya avî ya hîpoklorîta sodyûmê ye; toza spîkirinê jî spîker û dezenfektaneke hişk e. Bandora herduyan ji îyona hîpoklorîtê (ClO-) tê ku di avê de çêdibe."
       }
     },
     {
@@ -818,7 +818,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Соляная кислота (HCl) — водный раствор хлороводорода, растворяющий известковый налёт (CaCO3); средство для прочистки труб (NaOH/KOH) содержит сильные основания и устраняет засоры из жира и волос.",
         "ar": "روح الملح محلول مائي لحمض الهيدروكلوريك يذيب الترسبات الكلسية (CaCO3)؛ أما مسلّك المجاري فيحتوي على قواعد قوية مثل NaOH أو KOH ويزيل انسدادات الدهون والشعر.",
         "zh": "盐酸洁厕剂是氯化氢的水溶液，能溶解水垢(CaCO3)；管道疏通剂则含有 NaOH 或 KOH 等强碱，能清除油脂和头发造成的堵塞。",
-        "ku": "Ruhê xwê çareseriya avî ya asîda hîdroklorîk e û lekeyên kilsê (CaCO3) dihelîne; vekerê lavaboyê jî bazên xurt ên wek NaOH an KOH dihewîne û girtinên ji rûn û porê vedike."
+        "ku": "Ruhê xwê çareseriya avî ya asîda hîdroklorîk e û lekeyên kilsê (CaCO3) dihelîne; vekerê lavaboyê jî bazên bihêz ên wek NaOH an KOH dihewîne û girtinên ji rûn û por vedike."
       }
     }
   ],
@@ -833,7 +833,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Механизм удаления загрязнений мылом",
         "ar": "آلية إزالة الصابون للأوساخ",
         "zh": "肥皂的去污机理",
-        "ku": "Mekanîzmaya Paqijkirina Avê ya Sabûnê"
+        "ku": "Mekanîzmaya Paqijkirina Qirêjê ya Sabûnê"
       },
       "steps": [
         {
@@ -844,7 +844,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Мыло растворяется в воде и диссоциирует на анионы и катионы",
           "ar": "يذوب الصابون في الماء ويتفكك إلى أنيونات وكاتيونات",
           "zh": "肥皂溶于水，电离出阴离子和阳离子",
-          "ku": "Sabûn di avê de dihele û dibe anyon û katyon"
+          "ku": "Sabûn di avê de dihele û li anyon û katyonên xwe vediqete"
         },
         {
           "tr": "Sabun anyonlarının apolar kuyrukları apolar kire tutunur",
@@ -854,7 +854,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Неполярные хвосты анионов мыла прикрепляются к неполярной грязи",
           "ar": "تلتصق الذيول غير القطبية لأنيونات الصابون بالأوساخ غير القطبية",
           "zh": "肥皂阴离子的非极性尾部附着在非极性污垢上",
-          "ku": "Dûvikên ne-polar ên anyonên sabûnê bi qirêjiya ne-polar ve dizeliqin"
+          "ku": "Dûvikên nepolar ên anyonên sabûnê bi qirêja nepolar ve dizeliqin"
         },
         {
           "tr": "Kir taneciği, polar başları dışa (suya) dönük bir misel ile sarılır",
@@ -864,7 +864,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Частица грязи оказывается внутри мицеллы, полярные головки которой обращены наружу, к воде",
           "ar": "يُحاط جسيم الأوساخ بمذيلة تتجه رؤوسها القطبية إلى الخارج نحو الماء",
           "zh": "污垢颗粒被胶束包裹，胶束的极性头部朝外（朝向水）",
-          "ku": "Perçeya qirêjê di nav miselekê de tê pêçan ku serên wê yên polar ber bi derve (avê) ne"
+          "ku": "Perçeya qirêjê di nav mîselekê de tê pêçan ku serên wê yên polar ber bi derve (ber bi avê) ve ne"
         },
         {
           "tr": "Çalkalama ile miseller yüzeyden sökülür ve suyla uzaklaştırılır",
@@ -874,7 +874,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "При встряхивании мицеллы отрываются от поверхности и уносятся водой",
           "ar": "بالتحريك تنفصل المذيلات عن السطح ويحملها الماء بعيدًا",
           "zh": "经搅动，胶束从表面脱离并被水带走",
-          "ku": "Bi hejandinê misel ji ser rûyê tiştî vediqetin û bi avê re diçin"
+          "ku": "Bi hejandinê mîsel ji rûyê tiştî vediqetin û bi avê re diçin"
         }
       ]
     },
@@ -899,7 +899,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Растительный или животный жир нагревают",
           "ar": "يُسخَّن الزيت النباتي أو الدهن الحيواني",
           "zh": "加热植物油或动物脂肪",
-          "ku": "Rûnê sebze yan jî heywan tê germkirin"
+          "ku": "Rûnê riwekî an heywanî tê germkirin"
         },
         {
           "tr": "Derişik sodyum hidroksit (NaOH) eklenir",
@@ -909,7 +909,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Добавляют концентрированный гидроксид натрия (NaOH)",
           "ar": "يُضاف هيدروكسيد الصوديوم (NaOH) المركز",
           "zh": "加入浓氢氧化钠(NaOH)",
-          "ku": "Hîdroksîdê sodyûmê konsantrekirî (NaOH) tê zêdekirin"
+          "ku": "Hîdroksîda sodyûmê ya tîr (NaOH) tê lêzêdekirin"
         },
         {
           "tr": "Saponifikasyon (sabunlaşma) tepkimesi gerçekleşir",
@@ -919,7 +919,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Протекает реакция омыления",
           "ar": "يحدث تفاعل التصبن",
           "zh": "发生皂化反应",
-          "ku": "Reaksiyona saponification pêk tê"
+          "ku": "Reaksiyona sabûnbûnê (saponîfîkasyon) pêk tê"
         },
         {
           "tr": "Tuz eklenerek sabun kalıbı çöktürülür ve gliserin ayrılır",
@@ -929,7 +929,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "При добавлении поваренной соли мыло выделяется в твёрдом виде (высаливается), а глицерин отделяется",
           "ar": "يُضاف الملح فيترسب الصابون على هيئة قوالب ويُفصل الغليسرين",
           "zh": "加入食盐使肥皂析出（盐析），并分离出甘油",
-          "ku": "Bi zêdekirina xwê, sabûn tê niştandin û glîserîn ji hev vediqete."
+          "ku": "Bi lêzêdekirina xwê sabûn tê niştandin û glîserîn ji hev vediqete"
         }
       ]
     },
@@ -943,7 +943,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Процесс полимеризации присоединением (например, полиэтилен)",
         "ar": "عملية البلمرة بالإضافة (مثل البولي إيثيلين)",
         "zh": "加成聚合过程（如聚乙烯）",
-        "ku": "Pêvajoya polîmerîzasyona zêdekirinê (mînak: polîetîlen)"
+        "ku": "Pêvajoya Polîmerîzasyona Lêzêdekirinê (mînak: polîetîlen)"
       },
       "steps": [
         {
@@ -954,7 +954,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Берут небольшие молекулы непредельного мономера",
           "ar": "تُختار جزيئات مونومر صغيرة غير مشبعة",
           "zh": "选用不饱和的小分子单体",
-          "ku": "Molekulên monomer ên biçûk ên têrnebûyî têne hilbijartin"
+          "ku": "Molekulên monomer ên piçûk û netêr têne hilbijartin"
         },
         {
           "tr": "Yüksek sıcaklık ve basınçta katalizör eklenir",
@@ -964,7 +964,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "При высокой температуре и давлении добавляют катализатор",
           "ar": "يُضاف الحفاز عند درجة حرارة وضغط مرتفعين",
           "zh": "在高温高压下加入催化剂",
-          "ku": "Katalîzator di germahî û zexta bilind de tê zêdekirin"
+          "ku": "Di germahî û zexta bilind de katalîzor tê lêzêdekirin"
         },
         {
           "tr": "Monomerlerdeki karbon-karbon ikili bağları açılarak monomerler birbirine bağlanır",
@@ -974,7 +974,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Двойные связи углерод–углерод в мономерах раскрываются, и мономеры соединяются друг с другом",
           "ar": "تنفتح الروابط الثنائية كربون–كربون في المونومرات فترتبط المونومرات ببعضها",
           "zh": "单体中的碳碳双键打开，单体彼此连接",
-          "ku": "Girêdanên ducar ên karbon–karbon ên monomeran vedibin û monomer bi hev ve girêdidin"
+          "ku": "Girêdanên ducar ên karbon–karbon ên monomeran vedibin û monomer bi hev ve girê didin"
         },
         {
           "tr": "Binlerce birimden oluşan dev polimer zinciri oluşur",
@@ -984,7 +984,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Образуется гигантская полимерная цепь из тысяч звеньев",
           "ar": "تتكون سلسلة بوليمرية عملاقة من آلاف الوحدات",
           "zh": "形成由数千个结构单元组成的巨大聚合物链",
-          "ku": "Zincîreke polîmer a mezin ku ji hezaran yekîneyan pêk tê çêdibe"
+          "ku": "Zincîreke polîmer a mezin çêdibe ku ji bi hezaran yekeyan pêk tê"
         }
       ]
     },
@@ -998,7 +998,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Этапы переработки ПЭТ-упаковки",
         "ar": "مراحل إعادة تدوير عبوات PET",
         "zh": "PET包装的回收步骤",
-        "ku": "Gavên vezîvirandina ambalajên PET"
+        "ku": "Gavên Vezîvirandina Ambalajên PET"
       },
       "steps": [
         {
@@ -1019,7 +1019,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Упаковку сортируют по типам согласно кодам переработки",
           "ar": "تُفرز العبوات حسب نوعها وفق رموز إعادة التدوير",
           "zh": "按回收标识对包装进行分类",
-          "ku": "Ambalaj li gorî kodên vezîvirandinê li gorî cureyê xwe têne veqetandin"
+          "ku": "Ambalaj li gorî kodên vezîvirandinê li cureyan têne veqetandin"
         },
         {
           "tr": "Ayrılan PET'ler yıkanır ve küçük pullar hâlinde kırılır",
@@ -1029,7 +1029,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Отсортированный ПЭТ моют и измельчают в мелкие хлопья",
           "ar": "يُغسل PET المفصول ويُفرم إلى رقائق صغيرة",
           "zh": "分离出的PET经清洗后粉碎成小薄片",
-          "ku": "PET-ên veqetandî têne şuştin û dibin perçeyên piçûk"
+          "ku": "PET-ên veqetandî têne şuştin û dibin pelikên piçûk"
         },
         {
           "tr": "Pullar eritilerek granül hâline getirilir ve yeni ürünlerin üretiminde kullanılır",
@@ -1039,7 +1039,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Хлопья расплавляют и превращают в гранулы, из которых производят новые изделия",
           "ar": "تُصهر الرقائق إلى حبيبات تُستخدم في تصنيع منتجات جديدة",
           "zh": "薄片熔融制成颗粒，用于生产新产品",
-          "ku": "Perçe têne helandin û dibin granûl û di çêkirina berhemên nû de têne bikaranîn"
+          "ku": "Pelik têne helandin, dibin granûl û di çêkirina hilberên nû de têne bikaranîn"
         }
       ]
     }
@@ -1055,7 +1055,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Какое из утверждений о механизме моющего действия мыла и синтетических моющих средств неверно?",
         "ar": "أيّ العبارات الآتية حول آلية التنظيف بالصابون والمنظفات الصناعية خاطئة؟",
         "zh": "下列关于肥皂和洗涤剂去污原理的叙述中，不正确的是哪一项？",
-        "ku": "Di derbarê mekanîzmaya paqijkirina sabûn û deterjantan de ji van gotinên jêrîn kîjan xelet e?"
+        "ku": "Derbarê mekanîzmaya paqijkirinê ya sabûn û deterjanan de kîjan ji van gotinan şaş e?"
       },
       "options": [
         {
@@ -1066,7 +1066,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Полярная головка частицы синтетического моющего средства прикрепляется к неполярной грязи.",
           "ar": "يلتصق الرأس القطبي للمنظف الصناعي بالأوساخ غير القطبية.",
           "zh": "洗涤剂的极性头部附着在非极性污垢上。",
-          "ku": "Serê polar ê deterjanê bi qirêjiya ne-polar ve girêdayî ye."
+          "ku": "Serê polar ê deterjanê bi qirêja nepolar ve dizeliqe."
         },
         {
           "tr": "Sabunun apolar kuyruk kısmı kiri sarar.",
@@ -1076,7 +1076,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Неполярный хвост мыла обволакивает грязь.",
           "ar": "يحيط الذيل غير القطبي للصابون بالأوساخ.",
           "zh": "肥皂的非极性尾部包裹着污垢。",
-          "ku": "Dûvê ne-polar ê sabûnê qirêjê dipêçe."
+          "ku": "Dûvika nepolar a sabûnê qirêjê dipêçe."
         },
         {
           "tr": "Kir genellikle apolar organik bileşiklerden oluşur.",
@@ -1086,7 +1086,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Грязь обычно состоит из неполярных органических соединений.",
           "ar": "تتكون الأوساخ عمومًا من مركبات عضوية غير قطبية.",
           "zh": "污垢通常由非极性有机化合物组成。",
-          "ku": "Dirt bi gelemperî ji pêkhateyên organîk ên nepolar pêk tê."
+          "ku": "Qirêj bi gelemperî ji pêkhateyên organîk ên nepolar pêk tê."
         },
         {
           "tr": "Sabunun hidrofil başı su molekülleri ile etkileşir.",
@@ -1096,7 +1096,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Гидрофильная головка мыла взаимодействует с молекулами воды.",
           "ar": "يتفاعل رأس الصابون المحب للماء مع جزيئات الماء.",
           "zh": "肥皂的亲水头与水分子相互作用。",
-          "ku": "Serê hîdrofîlî yê sabûnê bi molekulên avê re tevdigere."
+          "ku": "Serê hîdrofîl ê sabûnê bi molekulên avê re dikeve têkiliyê."
         },
         {
           "tr": "Deterjanlar sert sularda sabunlara göre daha az çökelek oluşturur.",
@@ -1106,7 +1106,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "В жёсткой воде синтетические моющие средства образуют меньше осадка, чем мыло.",
           "ar": "تكوّن المنظفات الصناعية في الماء العسر رواسب أقل مما يكوّنه الصابون.",
           "zh": "洗涤剂在硬水中形成的沉淀比肥皂少。",
-          "ku": "Deterjan di ava hişk de ji sabûnan ​​kêmtir baranê çêdikin."
+          "ku": "Deterjan di ava hişk de ji sabûnan kêmtir niştek çêdikin."
         }
       ],
       "correctIndex": 0,
@@ -1118,7 +1118,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "В частицах мыла и синтетических моющих средств полярная головка гидрофильна и взаимодействует с молекулами воды; к неполярной грязи прикрепляется гидрофобный углеводородный хвост. Поэтому утверждение, что к грязи прикрепляется полярная головка, неверно. Остальные утверждения верны: грязь обычно неполярна и окружается хвостами, а синтетические моющие средства, в отличие от мыла, не выпадают в осадок с ионами Ca2+ и Mg2+ жёсткой воды.",
         "ar": "في جسيمات الصابون والمنظفات يكون الرأس القطبي محبًّا للماء ويتآثر مع جزيئات الماء؛ أما الجزء الذي يلتصق بالأوساخ غير القطبية فهو الذيل الهيدروكربوني الكاره للماء. لذلك فالعبارة القائلة إن الرأس القطبي يلتصق بالأوساخ خاطئة. والعبارات الأخرى صحيحة: فالأوساخ غير قطبية غالبًا وتحيط بها الذيول، والمنظفات لا تترسب مع أيونات Ca2+ وMg2+ في الماء العسر كما يترسب الصابون.",
         "zh": "在肥皂和洗涤剂的粒子中，极性头部是亲水的，与水分子相互作用；与非极性污垢结合的是疏水的烃基尾部。因此，认为极性头部附着在污垢上的说法是错误的。其余说法都正确：污垢通常是非极性的，被尾部包围；洗涤剂不像肥皂那样与硬水中的 Ca2+、Mg2+ 离子生成沉淀。",
-        "ku": "Di parçikên sabûn û deterjanê de serê polar hîdrofîl e û bi molekulên avê re têkilî datîne; beşa ku bi qirêja apolar ve digire dûvikê hîdrokarbonî yê hîdrofob e. Ji ber vê yekê gotina ku dibêje serê polar bi qirêjê ve digire şaş e. Gotinên din rast in: qirêj bi gelemperî apolar e û ji aliyê dûvikan ve tê dorpêçkirin; deterjan jî bi îyonên Ca2+ û Mg2+ yên ava hişk re wek sabûnan rûnaniştek çênakin."
+        "ku": "Di perçeyên sabûn û deterjanê de serê polar hîdrofîl e û bi molekulên avê re dikeve têkiliyê; beşa ku bi qirêja nepolar ve dizeliqe dûvika hîdrokarbonî ya hîdrofob e. Ji ber vê yekê gotina ku dibêje serê polar bi qirêjê ve dizeliqe şaş e. Gotinên din rast in: qirêj bi gelemperî nepolar e û dûvik dora wê digirin; deterjan jî bi îyonên Ca2+ û Mg2+ yên ava hişk re wek sabûnan naniştin."
       }
     },
     {
@@ -1131,7 +1131,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Какой полимер термостоек, крайне трудно вступает в реакции с химическими веществами и, так как к нему не пригорает пища, используется для покрытия внутренней поверхности сковород и кастрюль?",
         "ar": "أيّ البوليمرات الآتية يتحمل درجات الحرارة العالية، ويصعب جدًا أن يتفاعل مع المواد الكيميائية، ويُستخدم لطلاء السطح الداخلي للمقالي والقدور لأنه يمنع التصاق الطعام؟",
         "zh": "下列哪种聚合物耐高温、极难与化学物质发生反应，并因能防止食物粘连而被用于锅具内表面的涂层？",
-        "ku": "Kîjan ji van polîmeran li ber germahiya bilind radiweste, bi zehmetî bi kîmyewiyan re reaksiyonê dike û ji ber ku nahêle xwarin pê ve bizeliqe, ji bo pêçana rûyê hundir ê taw û beroşan tê bikaranîn?"
+        "ku": "Kîjan ji van polîmeran li ber germahiya bilind radiweste, bi zehmetî bi madeyên kîmyewî re dikeve reaksiyonê û ji ber ku nahêle xwarin pê ve bizeliqe, ji bo rûpoşkirina rûyê hundir ê tawe û beroşan tê bikaranîn?"
       },
       "options": [
         {
@@ -1182,7 +1182,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Полиэтилен",
           "ar": "البولي إيثيلين",
           "zh": "聚乙烯",
-          "ku": "polyethylene"
+          "ku": "Polîetîlen"
         }
       ],
       "correctIndex": 0,
@@ -1194,7 +1194,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Тефлон (ПТФЭ, политетрафторэтилен) выдерживает высокие температуры, крайне трудно вступает в реакции с химическими веществами, и пища не пригорает к его поверхности; поэтому им покрывают сковороды и кастрюли. ПВХ используют для оконных профилей и труб, ПЭТ — для бутылок для напитков, кевлар — для бронежилетов, а полиэтилен — для пакетов и упаковки.",
         "ar": "التفلون (PTFE، بولي تترافلوروإيثيلين) يتحمل درجات الحرارة العالية ويصعب جدًّا أن يتفاعل مع المواد الكيميائية ولا يلتصق الطعام بسطحه؛ لذلك يُستخدم في طلاء المقالي والقدور. أما PVC فيُستخدم في إطارات النوافذ والأنابيب، وPET في قوارير المشروبات، والكيفلار في السترات الواقية من الرصاص، والبولي إيثيلين في الأكياس ومواد التعبئة.",
         "zh": "特氟龙(PTFE，聚四氟乙烯)耐高温，极难与化学物质反应，食物也不会粘在其表面，因此用于平底锅和锅具的涂层。PVC 用于窗框型材和管道，PET 用于饮料瓶，凯夫拉用于防弹衣，聚乙烯用于塑料袋和包装。",
-        "ku": "Teflon (PTFE, polîtetrafloroetîlen) li hember germahiya bilind li ber xwe dide, bi madeyên kîmyayî re pir bi zehmetî dikeve reaksiyonê û xwarin bi rûyê wê ve nazeliqe; ji ber vê yekê di rûpûşkirina tawe û beroşan de tê bikaranîn. PVC di profîlên pencereyan û boriyan de, PET di şûşeyên vexwarinan de, Kevlar di êlekên dijî-gule de, polîetîlen jî di kîs û pakêtan de tê bikaranîn."
+        "ku": "Teflon (PTFE, polîtetrafloroetîlen) li ber germahiya bilind radiweste, bi madeyên kîmyewî re pir bi zehmetî dikeve reaksiyonê û xwarin bi rûyê wê ve nazeliqe; ji ber vê yekê di rûpoşên tawe û beroşan de tê bikaranîn. PVC di profîlên pencereyan û boriyan de, PET di şûşeyên vexwarinan de, Kevlar di êlekên dijgule de, polîetîlen jî di kîsik û ambalajan de tê bikaranîn."
       }
     },
     {
@@ -1207,7 +1207,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Даны утверждения о мыле и синтетических моющих средствах:\nI. Мыло получают реакцией растительных или животных жиров с NaOH или KOH.\nII. В жёсткой воде синтетические моющие средства моют лучше, чем мыло.\nIII. В кислой воде (при низком pH) мыло моет эффективнее.\nКакие из них верны?",
         "ar": "فيما يتعلق بالصابون والمنظفات:\nI. يُحضَّر الصابون من تفاعل الدهون النباتية أو الحيوانية مع NaOH أو KOH.\nII. تنظف المنظفات في الماء العسر أفضل من الصابون.\nIII. ينظف الصابون بفعالية أكبر في الماء الحمضي (ذي الرقم الهيدروجيني المنخفض).\nأيّ العبارات صحيحة؟",
         "zh": "关于肥皂和洗涤剂：\nI. 肥皂由植物或动物油脂与 NaOH 或 KOH 反应制得。\nII. 在硬水中洗涤剂比肥皂去污效果好。\nIII. 肥皂在酸性水(pH 低)中去污效果更好。\n以上说法中哪些正确？",
-        "ku": "Derbarê sabûn û deterjanan de:\nI. Sabûn bi reaksiyona rûnên riwekî an heywanî bi NaOH an KOH re tê bidestxistin.\nII. Deterjan di ava hişk de ji sabûnan baştir paqij dikin.\nIII. Sabûn di ava asîdî de (pH nizm) bi bandortir paqij dike.\nKîjan ji van gotinan rast in?"
+        "ku": "Derbarê sabûn û deterjanan de:\nI. Sabûn ji reaksiyona rûnên riwekî an heywanî bi NaOH an KOH re têne bidestxistin.\nII. Deterjan di ava hişk de ji sabûnan baştir paqij dikin.\nIII. Sabûn di ava asîdî de (pH nizm) bi bandortir paqij dikin.\nKîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1270,7 +1270,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "I верно: реакция жиров с сильным основанием (омыление) даёт мыло и глицерин; с NaOH получается твёрдое мыло, с KOH — мягкое. II верно: мыло осаждается ионами Ca2+ и Mg2+ жёсткой воды, а соли синтетических моющих средств с этими ионами растворимы. III неверно: в кислой среде анион мыла присоединяет H+ и превращается в нерастворимую в воде жирную кислоту, моющая способность снижается; мыло хорошо действует в слабощелочной среде. Верны I и II.",
         "ar": "العبارة I صحيحة: تفاعل الدهون مع قاعدة قوية (التصبن) يعطي الصابون والغليسرين؛ ويعطي NaOH صابونًا صلبًا وKOH صابونًا طريًا. العبارة II صحيحة: يترسب الصابون مع أيونات Ca2+ وMg2+ في الماء العسر، بينما تذوب الأملاح التي تكوّنها المنظفات مع هذه الأيونات. العبارة III خاطئة: في الوسط الحمضي يكتسب أنيون الصابون H+ ويتحول إلى حمض دهني لا يذوب في الماء فتقل قدرته على التنظيف؛ ويعمل الصابون جيدًا في الوسط القاعدي الضعيف. العبارتان الصحيحتان هما I وII.",
         "zh": "I 正确：油脂与强碱反应（皂化）生成肥皂和甘油；NaOH 得硬皂，KOH 得软皂。II 正确：肥皂会与硬水中的 Ca2+、Mg2+ 生成沉淀，而洗涤剂与这些离子形成的盐可溶。III 错误：在酸性介质中肥皂阴离子结合 H+ 变成不溶于水的脂肪酸，去污能力下降；肥皂在弱碱性介质中效果好。正确的是 I 和 II。",
-        "ku": "I rast e: reaksiyona rûnan bi bazeke xurt re (sabûnbûn) sabûn û glîserîn dide; NaOH sabûna hişk, KOH sabûna nerm çêdike. II rast e: sabûn bi Ca2+ û Mg2+ yên ava hişk re dadikeve, lê xwêyên ku deterjan bi van îyonan re çêdikin dihelin. III şaş e: di hawîrdora asîdî de anyona sabûnê H+ distîne û dibe asîdeke rûnî ya ku di avê de nahele, hêza paqijkirinê kêm dibe; sabûn di hawîrdora hinekî bazîk de baş dixebite. Gotinên rast I û II ne."
+        "ku": "I rast e: reaksiyona rûnan bi bazeke bihêz re (sabûnbûn) sabûn û glîserîn dide; NaOH sabûna hişk, KOH sabûna nerm çêdike. II rast e: sabûn bi Ca2+ û Mg2+ yên ava hişk re dinişe, lê xwêyên ku deterjan bi van îyonan re çêdikin dihelin. III şaş e: di derdora asîdî de anyona sabûnê H+ werdigire û dibe asîdeke rûnî ya ku di avê de nahele, loma hêza paqijkirinê kêm dibe; sabûn di derdora hinekî bazîk de baş dixebite. Gotinên rast I û II ne."
       }
     },
     {
@@ -1283,7 +1283,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "При мытье рук жёсткой водой мыло плохо пенится, а на раковине образуется белый липкий налёт. Какова основная причина этого наблюдения?",
         "ar": "عند غسل اليدين بماء عسر يُلاحظ أن الصابون لا يُرغي جيدًا وتتكون على المغسلة رواسب بيضاء لزجة. ما السبب الرئيس لهذه الملاحظة؟",
         "zh": "用硬水洗手时，肥皂不易起泡，洗手池表面形成白色黏性沉积物。产生这一现象的主要原因是下列哪一项？",
-        "ku": "Dema destan bi ava hişk têne şûştin, sabûn baş kef nake û li ser lavaboyê tortekî spî û zeliqok çêdibe. Sedema bingehîn a vê dîtinê çi ye?"
+        "ku": "Dema dest bi ava hişk têne şuştin, sabûn baş kef nake û li ser lavaboyê niştekeke spî û zeliqok çêdibe. Sedema bingehîn a vê dîtinê kîjan e?"
       },
       "options": [
         {
@@ -1314,7 +1314,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Жёсткая вода имеет очень низкий pH (сильнокислая)",
           "ar": "الماء العسر ذو رقم هيدروجيني منخفض جدًا (حمضي قوي)",
           "zh": "硬水的 pH 很低（强酸性）",
-          "ku": "pH-ya ava hişk pir nizm e (bi xurtî asîdî)"
+          "ku": "pH-ya ava hişk pir nizm e (bi xurtî asîdî ye)"
         },
         {
           "tr": "Sabunun Na+ iyonlarının suda çözünmeyen bir bileşik oluşturması",
@@ -1324,7 +1324,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Ионы Na+ мыла образуют нерастворимое в воде соединение",
           "ar": "تكوّن أيونات Na+ في الصابون مركّبًا لا يذوب في الماء",
           "zh": "肥皂中的 Na+ 离子形成不溶于水的化合物",
-          "ku": "Îyonên Na+ yên sabûnê pêkhateyeke ku di avê de nahele çêdikin"
+          "ku": "Îyonên Na+ yên sabûnê pêkhateyeke nehelbar çêdikin"
         },
         {
           "tr": "Sabun anyonlarının sudaki Ca2+ ve Mg2+ iyonlarıyla suda çözünmeyen tuzlar oluşturması",
@@ -1346,7 +1346,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Жёсткость воды обусловлена ионами Ca2+ и Mg2+. Анионы мыла (например, C17H35COO-) образуют с ними нерастворимые соли кальция и магния, которые выпадают в виде белого налёта, и мыло не пенится. Ион Na+ даёт растворимые соли, поэтому налёт вызывает не он. Жёсткая вода не кислая, а глицерин — побочный продукт производства мыла, при мытье он не образуется.",
         "ar": "ينتج عسر الماء عن أيونات Ca2+ وMg2+ فيه. تكوّن أنيونات الصابون (مثل C17H35COO-) معها أملاح كالسيوم/مغنيسيوم لا تذوب في الماء فتترسب على شكل رواسب بيضاء ولا يستطيع الصابون أن يُرغي. أيون Na+ يكوّن أملاحًا ذائبة فليس سببًا للراسب. والماء العسر ليس حمضيًا، والغليسرين ناتج ثانوي لصناعة الصابون ولا يتكون أثناء الغسل.",
         "zh": "水的硬度来自其中的 Ca2+ 和 Mg2+。肥皂阴离子(如 C17H35COO-)与它们形成不溶于水的钙/镁盐，以白色沉淀析出，肥皂因此不能起泡。Na+ 形成的是可溶性盐，不是沉淀的原因。硬水并不呈酸性；甘油是制皂的副产物，洗涤时不会生成。",
-        "ku": "Hişkiya avê ji îyonên Ca2+ û Mg2+ tê. Anyonên sabûnê (mînak C17H35COO-) bi wan re xwêyên kalsiyûm/magnezyûmê yên nehelbar çêdikin; ev xwê wek tortekî spî dadikevin û sabûn nikare kef bike. Îyona Na+ xwêyên helbar çêdike, ji ber vê yekê ne sedema tortê ye. Ava hişk ne asîdî ye; glîserîn jî berhema alî ya çêkirina sabûnê ye, di şûştinê de çênabe."
+        "ku": "Hişkiya avê ji îyonên Ca2+ û Mg2+ yên di avê de tê. Anyonên sabûnê (mînak C17H35COO-) bi van îyonan re xwêyên kalsiyûm/magnezyûmê yên nehelbar çêdikin; ev xwê wek niştekeke spî dinişin û sabûn nikare kef bike. Îyona Na+ xwêyên helbar çêdike, ji ber vê yekê ne sedema niştekê ye. Ava hişk ne asîdî ye; glîserîn jî hilbera alî ya çêkirina sabûnê ye, di şuştinê de çênabe."
       }
     },
     {
@@ -1370,7 +1370,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "ПЭТ — автомобильная шина",
           "ar": "PET – إطار السيارة",
           "zh": "PET – 汽车轮胎",
-          "ku": "PET – tekera erebeyê"
+          "ku": "PET – tekera otomobîlê"
         },
         {
           "tr": "PVC – pencere profili",
@@ -1400,7 +1400,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Кевлар — бронежилет",
           "ar": "الكيفلار – السترة الواقية من الرصاص",
           "zh": "凯夫拉 – 防弹衣",
-          "ku": "Kevlar – êleka li dijî guleyan"
+          "ku": "Kevlar – êleka dijgule"
         },
         {
           "tr": "Polistiren (PS) – köpük (strafor) yalıtım ve ambalaj malzemesi",
@@ -1410,7 +1410,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Полистирол (ПС) — пенопласт для теплоизоляции и упаковки",
           "ar": "البوليستيرين (PS) – الرغوة البيضاء (الفلين الصناعي) للعزل والتغليف",
           "zh": "聚苯乙烯(PS) – 泡沫保温与包装材料",
-          "ku": "Polîstîren (PS) – materyala kefî ya îzolasyon û pakêtkirinê"
+          "ku": "Polîstîren (PS) – materyala kefî ya îzolasyon û ambalajê"
         }
       ],
       "correctIndex": 0,
@@ -1422,7 +1422,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "ПЭТ — жёсткий прозрачный термопласт, из которого делают бутылки для воды и напитков; он не эластичен. Для шин используют (натуральный или синтетический) каучук благодаря его эластичности. Остальные соответствия верны: ПВХ благодаря прочности применяют в оконных профилях, ПЭ как дешёвый и гибкий материал — в пакетах, кевлар благодаря очень высокой прочности — в бронежилетах, ПС в виде пенопласта — для изоляции и упаковки.",
         "ar": "PET لدن حراري صلب وشفاف يُستخدم في قوارير الماء والمشروبات الغازية، وهو غير مرن. أما إطارات السيارات فيُستخدم فيها المطاط (الطبيعي أو الصناعي) لمرونته. وبقية المزاوجات صحيحة: PVC لمتانته في إطارات النوافذ، وPE لرخصه ومرونته في الأكياس، والكيفلار لمتانته الفائقة في السترات الواقية، وPS على شكل رغوة في العزل والتغليف.",
         "zh": "PET 是用于饮用水和饮料瓶的硬质透明热塑性塑料，没有弹性。汽车轮胎因需要弹性而使用（天然或合成）橡胶。其余配对均正确：PVC 因耐用用于窗框型材，PE 因便宜柔韧用于购物袋，凯夫拉因强度极高用于防弹衣，PS 以泡沫形式用于保温和包装。",
-        "ku": "PET termoplastîkeke hişk û zelal e ku di şûşeyên av û vexwarinan de tê bikaranîn; ne elastîk e. Di tekerên erebeyan de ji ber elastîkbûna wê lastîk (xwezayî an sentetîk) tê bikaranîn. Cotkirinên din rast in: PVC ji ber xurtbûnê di profîlên pencereyan de, PE ji ber erzan û nermbûnê di kîsikan de, Kevlar ji ber xurtiya pir bilind di êlekên parastinê de, PS jî wek kef di îzolasyon û pakêtkirinê de tê bikaranîn."
+        "ku": "PET termoplastîkeke hişk û zelal e ku di şûşeyên av û vexwarinan de tê bikaranîn; ne elastîk e. Di tekerên otomobîlan de ji ber elastîkbûna wê kauçûk (xwezayî an sentetîk) tê bikaranîn. Cotkirinên din rast in: PVC ji ber xurtbûnê di profîlên pencereyan de, PE ji ber erzanî û nermbûnê di kîsikan de, Kevlar ji ber xurtiya pir bilind di êlekên dijgule de, PS jî wek kef di îzolasyon û ambalajê de tê bikaranîn."
       }
     },
     {
@@ -1435,7 +1435,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "На пластиковых изделиях есть коды переработки — цифры в треугольнике (1: ПЭТ, 2: ПЭНД, 3: ПВХ, 4: ПЭВД, 5: ПП, 6: ПС, 7: прочие). На бутылке для воды стоит код 1, на оконной раме — 3, на стаканчике от йогурта — 5. В каком варианте полимеры этих изделий указаны верно и в этом порядке?",
         "ar": "تحمل المنتجات البلاستيكية رموز إعادة تدوير على شكل أرقام داخل مثلث (1: PET، 2: HDPE، 3: PVC، 4: LDPE، 5: PP، 6: PS، 7: أخرى). على زجاجة ماء الرمز 1، وعلى إطار نافذة الرمز 3، وعلى علبة لبن الرمز 5. في أيّ خيار وردت بوليمرات هذه المنتجات صحيحة وبهذا الترتيب؟",
         "zh": "塑料制品上印有三角形内数字表示的回收代码(1：PET，2：HDPE，3：PVC，4：LDPE，5：PP，6：PS，7：其他)。某水瓶底部为 1，某窗框上为 3，某酸奶杯上为 5。下列哪一项按顺序正确给出了这些产品的聚合物？",
-        "ku": "Li ser hilberên plastîk kodên vezîvirandinê hene ku wek hejmarên di nav sêgoşeyekê de têne nîşandan (1: PET, 2: HDPE, 3: PVC, 4: LDPE, 5: PP, 6: PS, 7: yên din). Li binê şûşeyeke avê koda 1, li ser çarçoveya pencereyekê koda 3 û li ser kûpekî mastê koda 5 heye. Polîmerên van hilberan bi vê rêzê di kîjan bersivê de rast hatine dayîn?"
+        "ku": "Li ser hilberên plastîk kodên vezîvirandinê hene ku wek hejmarên di nav sêgoşeyekê de têne nîşandan (1: PET, 2: HDPE, 3: PVC, 4: LDPE, 5: PP, 6: PS, 7: yên din). Li binê şûşeyeke avê koda 1, li ser çarçoveya pencereyekê koda 3 û li ser qabeke mastê koda 5 heye. Polîmerên ku ev hilber jê hatine çêkirin, bi rêzê, di kîjan vebijarkê de rast hatine dayîn?"
       },
       "options": [
         {
@@ -1498,7 +1498,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "По таблице кодов: 1 = ПЭТ (бутылка для воды), 3 = ПВХ (оконная рама), 5 = ПП (полипропилен, стаканчик от йогурта); верный порядок — ПЭТ, ПВХ, ПП. Типичные ошибки — перепутать ПВХ и ПП или спутать код 5 с полистиролом (код 6). Коды облегчают сортировку пластика по видам при переработке.",
         "ar": "وفق جدول الرموز: 1 = PET (زجاجة الماء)، 3 = PVC (إطار النافذة)، 5 = PP (البولي بروبيلين، علبة اللبن)، فالترتيب الصحيح هو PET، PVC، PP. ومن الأخطاء الشائعة تبديل موضعي PVC وPP أو الخلط بين الرمز 5 والبوليستيرين (الرمز 6). وتسهّل هذه الرموز فرز البلاستيك حسب نوعه عند إعادة التدوير.",
         "zh": "根据代码表：1 = PET（水瓶），3 = PVC（窗框），5 = PP（聚丙烯，酸奶杯），正确顺序为 PET、PVC、PP。把 PVC 与 PP 顺序弄反、或把代码 5 与聚苯乙烯(代码 6)混淆，都是典型错误。回收代码便于在回收时按种类分拣塑料。",
-        "ku": "Li gorî tabloya kodan: 1 = PET (şûşeya avê), 3 = PVC (çarçoveya pencereyê), 5 = PP (polîpropîlen, kûpê mastê); rêza rast PET, PVC, PP ye. Guhertina cihê PVC û PP an tevlihevkirina koda 5 bi polîstîrenê (koda 6) re şaşiyên berbelav in. Kod di vezîvirandinê de veqetandina plastîkan li gorî cureyê hêsan dikin."
+        "ku": "Li gorî tabloya kodan: 1 = PET (şûşeya avê), 3 = PVC (çarçoveya pencereyê), 5 = PP (polîpropîlen, qaba mastê); rêza rast PET, PVC, PP ye. Divê kod bi rêzê werin xwendin: guhertina cihê PVC û PP an tevlihevkirina koda 5 bi polîstîrenê (koda 6) re şaşiyên berbelav in. Kod veqetandina plastîkan li gorî cureyê wan di vezîvirandinê de hêsan dikin."
       }
     },
     {
@@ -1511,7 +1511,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Убирая ванную, человек смешал в одном ведре отбеливатель и соляную кислоту и вскоре почувствовал жжение в глазах, кашель и одышку. Какой ядовитый газ, выделившийся из смеси, вызывает эти симптомы?",
         "ar": "أثناء تنظيف الحمّام خلط شخص ماء الجافيل وحمض الهيدروكلوريك (روح الملح) في الدلو نفسه، وسرعان ما شعر بحرقة في العينين وسعال وضيق تنفس. ما الغاز السام المنبعث من الخليط والمسبب لهذه الأعراض؟",
         "zh": "某人在清洁浴室时把漂白水和盐酸混在同一个桶里，不久出现眼睛灼痛、咳嗽和呼吸困难。混合物放出的导致这些症状的有毒气体是哪一种？",
-        "ku": "Kesek di paqijkirina serşokê de ava çilşoyê û asîda hîdroklorîk (tuz ruhu) di heman satilê de tevlî hev dike û piştî demeke kurt çavên wî dişewitin, dikuxe û bêhna wî teng dibe. Gaza jehrîn a ku ji tevliheviyê derdikeve û dibe sedema van nîşanan kîjan e?"
+        "ku": "Kesek di paqijkirina serşokê de ava spîkirinê û ruhê xwê (asîda hîdroklorîk) di heman satilê de tevlî hev dike; piştî demeke kurt çavên wî dişewitin, dikuxe û bêhna wî teng dibe. Gaza jehrî ya ku ji tevliheviyê derdikeve û dibe sedema van nîşanan kîjan e?"
       },
       "options": [
         {
@@ -1574,7 +1574,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Гипохлорит натрия из отбеливателя реагирует с HCl: NaClO + 2HCl → NaCl + H2O + Cl2. Выделяющийся жёлто-зелёный хлор (Cl2) раздражает глаза и дыхательные пути, а в высокой концентрации смертелен. NH3 был бы опасен лишь при смешивании отбеливателя с аммиачными средствами; H2, O2 и CO2 здесь не образуются. Поэтому чистящие средства нельзя смешивать, а помещение нужно проветривать.",
         "ar": "يتفاعل هيبوكلوريت الصوديوم في ماء الجافيل مع HCl: NaClO + 2HCl → NaCl + H2O + Cl2. وغاز الكلور (Cl2) الأصفر المخضر المنبعث يهيّج العينين والمجاري التنفسية وهو قاتل بتراكيز عالية. أما NH3 فلا يظهر إلا عند خلط ماء الجافيل بمنتجات تحتوي على الأمونيا، وH2 وO2 وCO2 ليست من نواتج هذا الخليط. لذا يجب ألّا تُخلط مواد التنظيف أبدًا وأن يُهوّى المكان.",
         "zh": "漂白水中的次氯酸钠与 HCl 反应：NaClO + 2HCl → NaCl + H2O + Cl2。放出的黄绿色氯气(Cl2)刺激眼睛和呼吸道，高浓度时可致命。只有漂白水与含氨产品混合时才涉及 NH3；H2、O2、CO2 都不是此混合物的产物。因此清洁剂绝不能混用，并应保持通风。",
-        "ku": "Hîpoklorîta sodyûmê ya di ava çilşoyê de bi HCl re reaksiyonê dike: NaClO + 2HCl → NaCl + H2O + Cl2. Gaza klorê (Cl2) ya zer-kesk a ku derdikeve çav û rêyên bêhnê aciz dike û di tîrbûna bilind de kujer e. NH3 tenê dema ava çilşoyê bi hilberên amonyakdar re were tevlîkirin derdikeve holê; H2, O2 û CO2 ne berhemên vê tevliheviyê ne. Ji ber vê yekê madeyên paqijiyê qet nayên tevlîkirin û divê cih were hewadan."
+        "ku": "Hîpoklorîta sodyûmê ya di ava spîkirinê de bi HCl ya di ruhê xwê de re dikeve reaksiyonê: NaClO + 2HCl → NaCl + H2O + Cl2. Gaza klorê (Cl2) ya zer-kesk a ku derdikeve çav û rêyên bêhnê aciz dike û di tîrbûna bilind de kujer e. NH3 tenê dema ava spîkirinê bi hilberên amonyakdar re were tevlîkirin derdikeve holê; H2, O2 û CO2 ne hilberên vê tevliheviyê ne. Ji ber vê yekê divê madeyên paqijkirinê qet neyên tevlîkirin û divê cih were hewadan."
       }
     },
     {
@@ -1587,7 +1587,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Даны утверждения о стеарате натрия C17H35COONa:\nI. Группа –COO- Na+ — полярная (гидрофильная) часть.\nII. Углеводородный хвост C17H35– хорошо растворяется в воде.\nIII. Это соединение относится к твёрдым мылам.\nКакие из них верны?",
         "ar": "فيما يتعلق بستيارات الصوديوم ذات الصيغة C17H35COONa:\nI. الطرف –COO- Na+ هو الجزء القطبي (المحب للماء).\nII. يذوب الذيل الهيدروكربوني C17H35– جيدًا في الماء.\nIII. ينتمي هذا المركّب إلى الصابون الصلب.\nأيّ العبارات صحيحة؟",
         "zh": "关于化学式为 C17H35COONa 的硬脂酸钠：\nI. –COO- Na+ 端是极性（亲水）部分。\nII. C17H35– 烃基尾部易溶于水。\nIII. 该化合物属于硬皂（固体皂）。\n以上说法中哪些正确？",
-        "ku": "Derbarê stearata sodyûmê ya bi formula C17H35COONa de:\nI. Serê –COO- Na+ beşa polar (hîdrofîl) e.\nII. Dûvikê hîdrokarbonî yê C17H35– di avê de baş dihele.\nIII. Ev pêkhate di nav sabûnên hişk (req) de ye.\nKîjan ji van gotinan rast in?"
+        "ku": "Derbarê stearata sodyûmê ya bi formula C17H35COONa de:\nI. Serê –COO- Na+ beşa polar (hîdrofîl) e.\nII. Dûvika hîdrokarbonî ya C17H35– di avê de baş dihele.\nIII. Ev pêkhate ji koma sabûnên hişk (qalibî) ye.\nKîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1650,7 +1650,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "I верно: карбоксилатная группа (–COO-) ионная (полярная), поэтому взаимодействует с молекулами воды. II неверно: длинная углеводородная цепь из 17 атомов углерода неполярна и в воде не растворяется; она взаимодействует с жиром и грязью (гидрофобна). III верно: натриевые соли жирных кислот образуют твёрдое (белое, кусковое) мыло, калиевые — мягкое. Верны I и III.",
         "ar": "العبارة I صحيحة: طرف الكربوكسيلات (–COO-) أيوني/قطبي فيتفاعل مع جزيئات الماء. العبارة II خاطئة: السلسلة الهيدروكربونية الطويلة ذات 17 ذرة كربون غير قطبية ولا تذوب في الماء، بل تتفاعل مع الدهون والأوساخ (كارهة للماء). العبارة III صحيحة: أملاح الصوديوم للأحماض الدهنية تكوّن الصابون الصلب وأملاح البوتاسيوم تكوّن الصابون الطري. العبارتان الصحيحتان هما I وIII.",
         "zh": "I 正确：羧酸根(–COO-)端为离子性/极性，能与水分子相互作用。II 错误：含 17 个碳的长烃链为非极性，不溶于水，而与油脂和污垢相互作用（疏水）。III 正确：脂肪酸的钠盐形成硬皂，钾盐形成软皂。正确的是 I 和 III。",
-        "ku": "I rast e: serê karboksîlatê (–COO-) îyonîk/polar e û bi molekulên avê re têkildar dibe. II şaş e: zincîra hîdrokarbonî ya dirêj a bi 17 karbonan nepolar e û di avê de nahele; bi rûn û qirêjê re têkildar dibe (hîdrofob). III rast e: xwêyên sodyûmê yên asîdên rûnî sabûnên hişk, xwêyên potasyûmê sabûnên nerm çêdikin. Gotinên rast I û III ne."
+        "ku": "I rast e: serê karboksîlatê (–COO-) îyonîk/polar e û bi molekulên avê re dikeve têkiliyê. II şaş e: zincîra hîdrokarbonî ya dirêj a bi 17 karbonan nepolar e û di avê de nahele; bi rûn û qirêjê re dikeve têkiliyê (hîdrofob). III rast e: xwêyên sodyûmê yên asîdên rûnî sabûnên hişk (spî, qalibî), xwêyên potasyûmê jî sabûnên nerm çêdikin. Gotinên rast I û III ne."
       }
     },
     {
@@ -1663,7 +1663,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "На этикетках двух бутылок оливкового масла написано:\nX: получено из оливок только механическими (физическими) методами, без химической обработки; кислотность 0,5 %.\nY: получено смешиванием рафинированного оливкового масла с натуральным.\nКакие это масла (X и Y соответственно)?",
         "ar": "كُتب على ملصقَي زجاجتين من زيت الزيتون:\nX: استُخرج من الزيتون بالطرق الميكانيكية (الفيزيائية) فقط دون أي معالجة كيميائية؛ نسبة الحموضة الحرة 0.5%.\nY: حُضّر بخلط زيت الزيتون المكرر مع زيت الزيتون البكر.\nما الزيتان X وY على الترتيب؟",
         "zh": "两瓶橄榄油的标签上写着：\nX：仅用机械（物理）方法从橄榄中获得，未经任何化学处理；游离酸度 0.5%。\nY：由精炼橄榄油与初榨橄榄油混合而成。\n据此，X 和 Y 分别是哪种油？",
-        "ku": "Li ser etîketên du şûşeyên rûnê zeytûnê ev agahî hene:\nX: Tenê bi rêbazên mekanîkî (fîzîkî), bê tu karê kîmyayî ji zeytûnê hatiye bidestxistin; asîdiya azad %0,5 e.\nY: Bi tevlîkirina rûnê zeytûnê yê rafînekirî û rûnê zeytûnê yê xwezayî hatiye bidestxistin.\nLi gorî vê, rûnên X û Y bi rêzê çi ne?"
+        "ku": "Li ser etîketên du şûşeyên rûnê zeytûnê ev agahî hene:\nX: Tenê bi rêbazên mekanîkî (fîzîkî), bê tu pêvajoya kîmyewî ji zeytûnê hatiye bidestxistin; asîdiya azad %0,5 e.\nY: Bi tevlîkirina rûnê zeytûnê yê rafînekirî û rûnê zeytûnê yê xwezayî hatiye bidestxistin.\nLi gorî vê, rûnên X û Y bi rêzê kîjan in?"
       },
       "options": [
         {
@@ -1674,7 +1674,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "«Ривьера», Extra Virgin",
           "ar": "ريفييرا، بكر ممتاز",
           "zh": "里维埃拉、特级初榨",
-          "ku": "Riviera, xwezayî ya herî paqij"
+          "ku": "Riviera, paqij"
         },
         {
           "tr": "Rafine, riviera",
@@ -1694,7 +1694,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Extra Virgin, «Ривьера»",
           "ar": "بكر ممتاز، ريفييرا",
           "zh": "特级初榨、里维埃拉",
-          "ku": "Xwezayî ya herî paqij, Riviera"
+          "ku": "Paqij, Riviera"
         },
         {
           "tr": "Natürel sızma, rafine",
@@ -1704,7 +1704,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Extra Virgin, рафинированное",
           "ar": "بكر ممتاز، مكرر",
           "zh": "特级初榨、精炼",
-          "ku": "Xwezayî ya herî paqij, rafînekirî"
+          "ku": "Paqij, rafînekirî"
         },
         {
           "tr": "Riviera, rafine",
@@ -1726,7 +1726,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Масло X получено только механическим способом, без химической обработки, и имеет низкую кислотность — это определение оливкового масла Extra Virgin. Масло Y — смесь рафинированного и натурального масла, то есть масло «Ривьера». Рафинированное масло само по себе прошло очистку и не содержит добавленного натурального масла, поэтому не подходит под описание Y. Значит, X — Extra Virgin, а Y — «Ривьера».",
         "ar": "الزيت X استُخرج بالطرق الميكانيكية فقط دون معالجة كيميائية وحموضته منخفضة، وهذا تعريف زيت الزيتون البكر الممتاز. والزيت Y خليط من زيت مكرر وزيت بكر، وهو زيت ريفييرا. أما زيت الزيتون المكرر وحده فهو زيت خضع للتنقية دون إضافة زيت بكر، فلا ينطبق على Y. إذن X بكر ممتاز وY ريفييرا.",
         "zh": "X 只用机械方法获得、未经化学处理且酸度低，这正是特级初榨橄榄油的定义。Y 是精炼油与初榨油的混合物，即里维埃拉橄榄油。单独的精炼橄榄油是经过精制、未掺初榨油的油，不符合 Y 的描述。因此 X 为特级初榨，Y 为里维埃拉橄榄油。",
-        "ku": "Rûnê X tenê bi rêya mekanîkî, bê karê kîmyayî hatiye bidestxistin û asîdiya wê nizm e: ev pênaseya rûnê zeytûnê yê xwezayî yê herî paqij e. Rûnê Y tevliheviya rûnê rafînekirî û rûnê xwezayî ye: ev rûnê zeytûnê yê Riviera ye. Rûnê rafînekirî bi tena serê xwe hatiye paqijkirin û rûnê xwezayî lê nehatiye zêdekirin, ji ber vê yekê Y nayê ravekirin. Ango X xwezayî ya herî paqij, Y jî Riviera ye."
+        "ku": "Rûnê X tenê bi rêya mekanîkî, bê pêvajoya kîmyewî hatiye bidestxistin û asîdiya wî nizm e: ev pênaseya rûnê zeytûnê yê paqij e. Rûnê Y tevliheviya rûnê rafînekirî û rûnê xwezayî ye: ev rûnê zeytûnê yê Riviera ye. Rûnê rafînekirî bi tena serê xwe rûnekî paqijkirî ye û rûnê xwezayî lê nehatiye zêdekirin, ji ber vê yekê Y-yê rave nake. Ango X rûnê paqij, Y jî rûnê Riviera ye."
       }
     },
     {
@@ -1739,7 +1739,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Пастеризованное молоко нагревают примерно до 72 °C на 15–20 секунд и быстро охлаждают; в холодильнике оно хранится несколько дней. Молоко UHT нагревают примерно до 135–150 °C на 2–4 секунды, и в невскрытой упаковке оно месяцами не портится при комнатной температуре. Какое утверждение верно согласно этим данным?",
         "ar": "يُسخَّن الحليب المبستر إلى نحو 72 °C لمدة 15–20 ثانية ثم يُبرَّد بسرعة، ويمكن حفظه في الثلاجة بضعة أيام. أما حليب UHT فيُسخَّن إلى نحو 135–150 °C لمدة 2–4 ثوانٍ، ويبقى في عبوته المغلقة دون أن يفسد أشهرًا في درجة حرارة الغرفة. وفقًا لهذه المعلومات، أيّ العبارات الآتية صحيحة؟",
         "zh": "巴氏杀菌奶在约 72 °C 下加热 15–20 秒后迅速冷却，可在冰箱中保存几天。UHT 奶在约 135–150 °C 下加热 2–4 秒，未开封时可在室温下保存数月不变质。根据这些信息，下列哪项说法正确？",
-        "ku": "Şîrê pastorîzekirî li dora 72 °C 15–20 çirkeyan tê germkirin, zû tê sarkirin û dikare çend rojan di sarincokê de bimîne. Şîrê UHT li dora 135–150 °C 2–4 çirkeyan tê germkirin û di pakêta xwe ya venekirî de di germahiya odeyê de bi mehan xera nabe. Li gorî van agahiyan kîjan gotin rast e?"
+        "ku": "Şîrê pastorîzekirî li dora 72 °C 15–20 çirkeyan tê germkirin, zû tê sarkirin û dikare çend rojan di sarincokê de bimîne. Şîrê UHT li dora 135–150 °C 2–4 çirkeyan tê germkirin û di pakêta xwe ya venekirî de, di germahiya odeyê de bi mehan xera nabe. Li gorî van agahiyan kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1760,7 +1760,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Срок хранения молока UHT короче, чем у пастеризованного.",
           "ar": "مدة صلاحية حليب UHT أقصر من مدة صلاحية الحليب المبستر.",
           "zh": "UHT 奶的保质期比巴氏杀菌奶短。",
-          "ku": "Temenê refê yê şîrê UHT ji yê şîrê pastorîzekirî kurttir e."
+          "ku": "Dema hilanînê ya şîrê UHT ji ya şîrê pastorîzekirî kurttir e."
         },
         {
           "tr": "Pastörize süt, ambalajı açılmadığı sürece oda sıcaklığında aylarca saklanabilir.",
@@ -1770,7 +1770,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Пастеризованное молоко в невскрытой упаковке месяцами хранится при комнатной температуре.",
           "ar": "يمكن حفظ الحليب المبستر أشهرًا في درجة حرارة الغرفة ما دامت عبوته مغلقة.",
           "zh": "巴氏杀菌奶只要不开封，就能在室温下保存数月。",
-          "ku": "Şîrê pastorîzekirî heta pakêt venebe dikare bi mehan di germahiya odeyê de bimîne."
+          "ku": "Şîrê pastorîzekirî heta ku pakêt venebe dikare bi mehan di germahiya odeyê de bimîne."
         },
         {
           "tr": "UHT işleminde sıcaklık daha yüksek olduğundan mikroorganizmalar sporlarıyla birlikte büyük ölçüde yok edilir.",
@@ -1802,7 +1802,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "UHT-обработка (близкая к стерилизации) проводится при очень высокой температуре, поэтому микроорганизмы и их устойчивые споры в основном уничтожаются; благодаря этому молоко хранится месяцами в асептической упаковке. Пастеризация идёт при более низкой температуре: гибнет большинство вредных микроорганизмов, но не все споры, поэтому пастеризованное молоко хранят в холоде и недолго. Согласно условию, срок хранения у молока UHT больше. Оба метода — нагревание, а не замораживание.",
         "ar": "تُجرى معالجة UHT (القريبة من التعقيم) عند درجة حرارة عالية جدًا، فيُقضى على الكائنات الدقيقة وأبواغها المقاومة إلى حد كبير، ولهذا يُحفظ الحليب أشهرًا في عبوات معقمة. أما البسترة فتتم عند درجة حرارة أقل، فتقتل معظم الكائنات الضارة دون جميع الأبواغ، لذا يُحفظ الحليب المبستر باردًا ولمدة قصيرة. ووفق المعطيات فإن صلاحية حليب UHT أطول. وكلتا الطريقتين تسخين لا تجميد.",
         "zh": "UHT 处理（接近灭菌）在很高温度下进行，微生物及其耐热孢子基本被消灭，因此在无菌包装中可保存数月。巴氏杀菌温度较低，能杀死大多数有害微生物，但不能杀灭全部孢子，所以巴氏杀菌奶需冷藏且保存期短。根据数据，UHT 奶保质期更长。两种方法都是加热，而不是冷冻。",
-        "ku": "Karê UHT (nêzîkî sterîlîzasyonê) di germahiyeke pir bilind de tê kirin, ji ber vê yekê mîkroorganîzma û sporên wan ên berxwedêr bi piranî tune dibin; loma şîr di pakêta aseptîk de bi mehan dimîne. Pastorîzasyon di germahiyeke nizmtir de tê kirin; piraniya mîkroban dikuje lê hemû sporan tune nake, ji ber vê yekê şîrê pastorîzekirî divê sar û demeke kurt were hilanîn. Li gorî daneyan temenê şîrê UHT dirêjtir e. Her du rêbaz jî germkirin in, ne cemidandin."
+        "ku": "Pêvajoya UHT (nêzîkî sterîlîzasyonê) di germahiyeke pir bilind de tê kirin, ji ber vê yekê mîkroorganîzma û sporên wan ên berxwedêr bi piranî tune dibin; loma şîr di pakêta aseptîk de bi mehan dimîne. Pastorîzasyon di germahiyeke nizmtir de tê kirin; piraniya mîkroorganîzmayên zirardar dikuje lê hemû sporan tune nake, ji ber vê yekê divê şîrê pastorîzekirî li cihekî sar û demeke kurt were hilanîn. Li gorî daneyan dema hilanînê ya şîrê UHT dirêjtir e. Her du rêbaz jî germkirin in, ne cemidandin."
       }
     },
     {
@@ -1815,7 +1815,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Жидкое растительное масло в присутствии никелевого (Ni) катализатора обрабатывают газом H2 и превращают в полутвёрдый продукт. Какое утверждение об этом процессе верно?",
         "ar": "يُفاعَل زيت نباتي سائل مع غاز H2 بوجود عامل حفاز من النيكل (Ni) فيتحول إلى منتج شبه صلب. أيّ مما يأتي صحيح بشأن هذه العملية؟",
         "zh": "在镍(Ni)催化剂存在下，使液态植物油与 H2 气体反应，转化为半固态产品。关于这一过程，下列哪项正确？",
-        "ku": "Rûnekî riwekî yê şil, bi hebûna katalîzora nîkelê (Ni) bi gaza H2 re tê reaksiyonkirin û dibe hilberekê nîv-hişk. Derbarê vê pêvajoyê de kîjan rast e?"
+        "ku": "Rûnekî riwekî yê şile, li ber katalîzora nîkelê (Ni) bi gaza H2 re dikeve reaksiyonê û dibe hilbereke nîvhişk. Derbarê vê pêvajoyê de kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1826,7 +1826,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Степень ненасыщенности масла возрастает.",
           "ar": "تزداد درجة عدم التشبع في الزيت.",
           "zh": "油的不饱和程度增加。",
-          "ku": "Têrnebûna rûn zêde dibe."
+          "ku": "Netêrbûna rûn zêde dibe."
         },
         {
           "tr": "Yağ moleküllerindeki karbon-karbon ikili bağlarının bir kısmı veya tamamı tekli bağa dönüşür.",
@@ -1878,7 +1878,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Этот процесс — гидрирование (получение маргарина). С помощью катализатора H2 присоединяется по двойным связям C=C ненасыщенных молекул масла; двойные связи становятся одинарными, масло становится более насыщенным и затвердевает, так как повышается его температура плавления. Водород присоединяется, а не отщепляется; ненасыщенность не растёт, а уменьшается. Мыло и глицерин образуются при реакции жира с NaOH/KOH (омыление). Продукт — растительный маргарин, а не сливочное масло.",
         "ar": "هذه العملية هي الهدرجة (إنتاج المارجرين). بمساعدة العامل الحفاز يُضاف H2 إلى الروابط الثنائية C=C في جزيئات الزيت غير المشبعة، فتتحول إلى روابط أحادية ويصبح الزيت أكثر تشبعًا ويتصلب لارتفاع درجة انصهاره. فالهيدروجين يُضاف ولا يُنزع، وعدم التشبع يقل ولا يزداد. أما الصابون والغليسرين فينتجان من تفاعل الدهن مع NaOH/KOH (التصبن). والمنتج مارجرين نباتي لا زبدة.",
         "zh": "该过程是氢化（制造人造黄油）。在催化剂作用下，H2 加成到不饱和油分子的 C=C 双键上，双键变为单键，油的饱和程度提高，熔点升高而变为固态。氢是被加入而不是被除去；不饱和程度降低而非增加。肥皂和甘油是油脂与 NaOH/KOH 反应（皂化）的产物。产品是植物来源的人造黄油，不是黄油。",
-        "ku": "Ev pêvajo hîdrojenasyon e (çêkirina margarînê). Bi alîkariya katalîzorê H2 li girêdanên ducar ên C=C yên molekulên rûnê têrnebûyî zêde dibe; girêdanên ducar dibin yekane, rûn têrtir dibe û ji ber ku xala helandinê bilind dibe hişk dibe. Hîdrojen tê zêdekirin, nayê derxistin; têrnebûn kêm dibe. Sabûn û glîserîn di reaksiyona rûn bi NaOH/KOH re (sabûnbûn) de çêdibin. Hilber margarîna riwekî ye, ne rûnê nivişk e."
+        "ku": "Ev pêvajo hîdrojenasyon e (çêkirina margarînê). Bi alîkariya katalîzorê H2 li girêdanên ducar ên C=C yên molekulên rûnê netêr zêde dibe; girêdanên ducar dibin yekane, rûn têrtir dibe û ji ber ku xala helînê bilind dibe hişk dibe. Hîdrojen tê zêdekirin, nayê derxistin; netêrbûn zêde nabe, kêm dibe. Sabûn û glîserîn di reaksiyona rûn bi NaOH/KOH re (sabûnbûn) de çêdibin. Hilber margarîna riwekî ye, ne rûnê nivişk e."
       }
     },
     {
@@ -1891,7 +1891,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Даны утверждения о лекарственных формах:\nI. Ампульная (инъекционная) форма обеспечивает быстрое поступление действующего вещества в кровь.\nII. Мази и кремы действуют после всасывания в желудке.\nIII. Глазные капли — жидкая форма таблетки, их принимают внутрь.\nКакие из них верны?",
         "ar": "فيما يتعلق بأشكال الأدوية:\nI. يتيح شكل الأمبولة (الحقن) وصول المادة الفعالة إلى الدم بسرعة.\nII. تؤثر المراهم والكريمات بعد امتصاصها من المعدة.\nIII. قطرة العين هي الشكل السائل للقرص وتؤخذ عن طريق الفم.\nأيّ العبارات صحيحة؟",
         "zh": "关于药物剂型：\nI. 安瓿（注射）剂型能使有效成分迅速进入血液。\nII. 软膏和乳膏经胃吸收后起作用。\nIII. 眼药水是片剂的液体形式，需要口服。\n以上说法中哪些正确？",
-        "ku": "Derbarê formên dermanan de:\nI. Forma ampûlê (derzî) dihêle ku madeya çalak zû bigihîje xwînê.\nII. Melhem û krem piştî ku ji mîdeyê têne kişandin bandor dikin.\nIII. Dilopa çavan forma şil a tabletê ye û bi devê tê girtin.\nKîjan ji van gotinan rast in?"
+        "ku": "Derbarê formên dermanan de:\nI. Forma ampûlê (derzî) dihêle ku madeya çalak zû bigihîje xwînê.\nII. Melhem û krem piştî ku ji mîdeyê têne kişandin bandor dikin.\nIII. Dilopa çavan forma şile ya tabletê ye û bi rêya devê tê girtin.\nKîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1954,7 +1954,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "I верно: введённый инъекцией препарат попадает прямо в кровь или мышцу, минуя пищеварительную систему, поэтому действует быстро. II неверно: мази и кремы наносят на кожу, и они действуют в месте нанесения. III неверно: глазные капли — стерильная жидкость, которую закапывают прямо в глаз, а не принимают внутрь. Верно только I; разные формы позволяют выбрать путь введения по месту и скорости действия.",
         "ar": "العبارة I صحيحة: الدواء المحقون يصل مباشرة إلى الدم أو النسيج العضلي دون المرور بالجهاز الهضمي فيؤثر بسرعة. العبارة II خاطئة: تُدهن المراهم والكريمات على الجلد وتؤثر في موضع وضعها. العبارة III خاطئة: قطرة العين سائل معقم يُقطَّر مباشرة في العين ولا يؤخذ بالفم. الصحيحة هي I فقط؛ وتُصنع الأدوية بأشكال مختلفة لاختيار الطريق المناسب لمكان التأثير وسرعته.",
         "zh": "I 正确：注射的药物不经消化系统，直接进入血液或肌肉组织，因此起效快。II 错误：软膏和乳膏涂在皮肤上，在涂抹部位起作用。III 错误：眼药水是直接滴入眼内的无菌液体，不能口服。只有 I 正确；药物制成不同剂型，是为了根据作用部位和速度选择合适的给药途径。",
-        "ku": "I rast e: dermanê bi derziyê tê dayîn bê ku di pergala helandinê re derbas bibe rasterast dikeve xwînê an masûlkeyê, ji ber vê yekê zû bandor dike. II şaş e: melhem û krem li çerm têne sûtin û li cihê lê hatine sûtin bandor dikin. III şaş e: dilopa çavan şileyeke sterîl e ku rasterast li çav tê dilopandin, bi devê nayê girtin. Tenê I rast e; derman bi formên cuda têne çêkirin da ku li gorî cih û leza bandorê rêya guncav were hilbijartin."
+        "ku": "I rast e: dermanê ku bi derziyê tê dayîn bê ku di pergala helandina xwarinê re derbas bibe rasterast dikeve xwînê an masûlkeyê, ji ber vê yekê zû bandor dike. II şaş e: melhem û krem li çerm têne sûtin û li cihê ku lê hatine sûtin bandor dikin. III şaş e: dilopa çavan şileyeke sterîl e ku rasterast li çav tê dilopandin, bi rêya devê nayê girtin. Tenê I rast e; derman bi formên cuda têne çêkirin da ku li gorî cih û leza bandorê rêya guncav were hilbijartin."
       }
     },
     {
@@ -1967,7 +1967,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Даны некоторые бытовые чистящие средства и их назначение:\nI. Соляная кислота (разбавленная HCl) — растворение известкового налёта (CaCO3) на раковинах и плитке.\nII. Средство для прочистки труб (с NaOH) — устранение засоров из жира и волос.\nIII. Хлорная известь — дезинфекция воды и поверхностей, отбеливание.\nКакие соответствия верны?",
         "ar": "فيما يأتي بعض مواد التنظيف المنزلية واستخداماتها:\nI. روح الملح (HCl المخفف) – إذابة بقع الكلس (CaCO3) على المغاسل والبلاط.\nII. مسلّك المجاري (يحتوي على NaOH) – إزالة انسداد المصارف الناتج عن الدهون والشعر.\nIII. مسحوق التبييض – تطهير الماء والأسطح وتبييضها.\nأيّ هذه المزاوجات صحيحة؟",
         "zh": "下面给出一些家用清洁剂及其用途：\nI. 盐酸(稀 HCl) – 溶解洗手池和瓷砖上的水垢(CaCO3)。\nII. 管道疏通剂(含 NaOH) – 清除由油脂和头发造成的下水道堵塞。\nIII. 漂白粉 – 对水和物体表面消毒、漂白。\n以上配对中哪些正确？",
-        "ku": "Hin madeyên paqijiyê yên malê û armancên bikaranîna wan hatine dayîn:\nI. Tuz ruhu (HCl ya sivik) – helandina lekeyên kilsê (CaCO3) yên li ser lavabo û kaşiyan.\nII. Vekerê lavaboyê (NaOH dihewîne) – rakirina girtina boriyê ya ji rûn û porê.\nIII. Toza spîkirinê – dezenfektekirina av û rûyan, spîkirin.\nKîjan ji van cotkirinan rast in?"
+        "ku": "Hin madeyên paqijkirinê yên malê û armancên bikaranîna wan hatine dayîn:\nI. Ruhê xwê (HCl ya sist) – helandina lekeyên kilsê (CaCO3) yên li ser lavabo û kaşiyan.\nII. Vekerê lavaboyê (NaOH dihewîne) – rakirina girtina boriyê ya ji rûn û por.\nIII. Toza spîkirinê – dezenfektekirina av û rûberan, spîkirin.\nKîjan ji van cotkirinan rast in?"
       },
       "options": [
         {
@@ -2030,7 +2030,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "I верно: известковый налёт — это CaCO3, он растворяется, реагируя с кислотой (CaCO3 + 2HCl → CaCl2 + H2O + CO2). II верно: сильные основания, такие как NaOH, омыляют жиры и разрушают белки волос, поэтому их используют в средствах для прочистки труб. III верно: хлорная известь (CaOCl2) в воде даёт гипохлорит-ион (ClO-) и применяется как отбеливающее и дезинфицирующее средство. Все три соответствия верны. Эти средства (особенно кислоты и средства с гипохлоритом) нельзя смешивать друг с другом.",
         "ar": "العبارة I صحيحة: بقع الكلس هي CaCO3 وتذوب بتفاعلها مع الحمض (CaCO3 + 2HCl → CaCl2 + H2O + CO2). العبارة II صحيحة: القواعد القوية مثل NaOH تصبّن الدهون وتفكك بروتينات الشعر، لذا تُستخدم في مسلّكات المجاري. العبارة III صحيحة: يعطي مسحوق التبييض (CaOCl2) في الماء أيون الهيبوكلوريت (ClO-) ويُستخدم مبيضًا ومطهرًا. المزاوجات الثلاث صحيحة. ويجب ألّا تُخلط هذه المواد ببعضها (خاصة الأحماض والمواد المحتوية على الهيبوكلوريت).",
         "zh": "I 正确：水垢是 CaCO3，与酸反应而溶解(CaCO3 + 2HCl → CaCl2 + H2O + CO2)。II 正确：NaOH 等强碱能使油脂皂化并分解头发中的蛋白质，因此用于管道疏通剂。III 正确：漂白粉(CaOCl2)在水中产生次氯酸根离子(ClO-)，用作漂白剂和消毒剂。三个配对都正确。这些清洁剂（尤其是酸与含次氯酸盐的产品）不能混用。",
-        "ku": "I rast e: lekeya kilsê CaCO3 e û bi reaksiyona bi asîdê re dihele (CaCO3 + 2HCl → CaCl2 + H2O + CO2). II rast e: bazên xurt ên wek NaOH rûnan dikin sabûn û proteînên porê perçe dikin; loma di vekerên lavaboyê de têne bikaranîn. III rast e: toza spîkirinê (CaOCl2) di avê de îyona hîpoklorîtê (ClO-) dide û wek spîker û dezenfektan tê bikaranîn. Her sê cotkirin rast in. Ev made (bi taybetî asîd û yên hîpoklorîtdar) nayên tevlîhevkirin."
+        "ku": "I rast e: lekeya kilsê CaCO3 e û bi reaksiyona bi asîdê re dihele (CaCO3 + 2HCl → CaCl2 + H2O + CO2). II rast e: bazên bihêz ên wek NaOH rûnan dikin sabûn û proteînên porê perçe dikin; loma di vekerên lavaboyê de têne bikaranîn. III rast e: toza spîkirinê (CaOCl2) di avê de îyona hîpoklorîtê (ClO-) dide û wek spîker û dezenfektan tê bikaranîn. Her sê cotkirin rast in. Divê ev made (bi taybetî asîd û yên hîpoklorîtdar) bi hev re neyên tevlîkirin."
       }
     },
     {
@@ -2043,7 +2043,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "В составе крема для рук указан «метилпарабен». Какова основная цель добавления этого вещества в крем?",
         "ar": "تتضمن قائمة مكونات كريم لليدين مادة \"ميثيل بارابين\". ما الغرض الرئيس من إضافة هذه المادة إلى الكريم؟",
         "zh": "某护手霜的成分表中有“对羟基苯甲酸甲酯”。在护手霜中加入这种物质的主要目的是什么？",
-        "ku": "Di lîsteya pêkhateyên kremekî destan de \"metîlparaben\" heye. Armanca sereke ya zêdekirina vê madeyê li kremê çi ye?"
+        "ku": "Di lîsteya pêkhateyên kremeke destan de \"metîlparaben\" heye. Armanca sereke ya lêzêdekirina vê madeyê li kremê kîjan e?"
       },
       "options": [
         {
@@ -2054,7 +2054,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Придать крему цвет",
           "ar": "إعطاء الكريم لونًا",
           "zh": "给护手霜着色",
-          "ku": "Dayîna rengê bi kremê"
+          "ku": "Dayîna rengî bi kremê"
         },
         {
           "tr": "Kremin kokusunu güzelleştirmek",
@@ -2094,7 +2094,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Сделать среду крема сильнокислой",
           "ar": "جعل الكريم حمضيًا قويًا",
           "zh": "使护手霜呈强酸性",
-          "ku": "Kremê bi xurtî asîdî kirin"
+          "ku": "Kirina pH-ya kremê bi xurtî asîdî"
         }
       ],
       "correctIndex": 2,
@@ -2106,7 +2106,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Парабены (метил-, пропилпарабен и др.) используются в косметике как консерванты: в кремах и лосьонах, содержащих воду, они подавляют рост бактерий и плесени и продлевают срок годности. Цвет и запах дают красители и отдушки; парабены не имеют питательной ценности. Поскольку у некоторых людей они вызывают аллергию, а их возможное влияние на здоровье обсуждается, допустимое содержание в косметике ограничено законом.",
         "ar": "تُستخدم البارابينات (ميثيل بارابين، بروبيل بارابين وغيرهما) مواد حافظةً في مستحضرات التجميل؛ ففي الكريمات والغسولات المحتوية على الماء تمنع نمو البكتيريا والعفن وتطيل مدة الصلاحية. أما اللون والرائحة فمصدرهما الأصباغ والعطور، وليس للبارابين قيمة غذائية. ولأنها قد تسبب الحساسية لدى بعض الناس وتُناقَش آثارها الصحية المحتملة، حُدّدت كمياتها المسموح بها بالقانون.",
         "zh": "对羟基苯甲酸酯类（甲酯、丙酯等）在化妆品中用作防腐剂：在含水的乳霜和乳液中抑制细菌和霉菌生长，延长保质期。颜色和香味来自色素和香精；对羟基苯甲酸酯没有营养价值。由于它们可能使某些人过敏且其潜在健康影响存在争议，化妆品中的允许用量由法规限定。",
-        "ku": "Paraben (metîl-, propîlparaben û hwd.) di kozmetîkê de wek parastinker têne bikaranîn; di krem û losyonên avdar de nahêlin bakterî û kufik zêde bibin û temenê hilberê dirêj dikin. Reng û bêhn ji boyax û parfûman tên; nirxa xurekî ya parabenê tune ye. Ji ber ku dikarin li hin kesan alerjiyê çêbikin û bandorên wan ên gengaz li ser tenduristiyê têne nîqaşkirin, mîqdarên destûrdayî bi qanûnê hatine diyarkirin."
+        "ku": "Paraben (metîl-, propîlparaben û hwd.) di kozmetîkê de wek parêzker têne bikaranîn; di krem û losyonên avdar de nahêlin bakterî û kufik pir bibin û dema hilanînê ya hilberê dirêj dikin. Reng û bêhn ji boyax û parfûman tên; nirxa xurekî ya parabenê tune ye. Ji ber ku dikarin li hin kesan bertekên alerjîk çêbikin û bandorên wan ên gengaz li ser tenduristiyê têne nîqaşkirin, mîqdarên parabenê yên destûrdayî di kozmetîkê de bi sînorên zagonî hatine diyarkirin."
       }
     },
     {
@@ -2119,7 +2119,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Даны утверждения о получении полиэтилена из этилена (CH2=CH2):\nI. Двойные связи в мономерах раскрываются, и мономеры соединяются друг с другом ковалентными связями.\nII. Молярная масса образовавшегося полимера намного больше молярной массы мономера.\nIII. Химические и физические свойства полиэтилена такие же, как у этилена.\nКакие из них верны?",
         "ar": "فيما يتعلق بتحضير البولي إيثيلين من مونومرات الإيثيلين (CH2=CH2):\nI. تنفتح الروابط الثنائية في المونومرات وترتبط المونومرات ببعضها بروابط تساهمية.\nII. الكتلة المولية للبوليمر الناتج أكبر بكثير من الكتلة المولية للمونومر.\nIII. الخواص الكيميائية والفيزيائية للبولي إيثيلين مماثلة لخواص الإيثيلين.\nأيّ العبارات صحيحة؟",
         "zh": "关于由乙烯(CH2=CH2)单体制取聚乙烯：\nI. 单体中的双键打开，单体之间以共价键相连。\nII. 生成的聚合物的摩尔质量远大于单体的摩尔质量。\nIII. 聚乙烯的化学和物理性质与乙烯相同。\n以上说法中哪些正确？",
-        "ku": "Derbarê bidestxistina polîetîlenê ji monomerên etîlenê (CH2=CH2) de:\nI. Girêdanên ducar ên monomeran vedibin û monomer bi girêdanên kovalent bi hev ve girêdidin.\nII. Girseya molar a polîmera çêbûyî ji ya monomerê pir mezintir e.\nIII. Taybetiyên kîmyayî û fîzîkî yên polîetîlenê wek yên etîlenê ne.\nKîjan ji van gotinan rast in?"
+        "ku": "Derbarê bidestxistina polîetîlenê ji monomerên etîlenê (CH2=CH2) de:\nI. Girêdanên ducar ên monomeran vedibin û monomer bi girêdanên kovalent bi hev ve girê didin.\nII. Girseya molî ya polîmera çêbûyî ji ya monomerê pir mezintir e.\nIII. Taybetmendiyên kîmyewî û fîzîkî yên polîetîlenê wek yên etîlenê ne.\nKîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -2182,7 +2182,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "I верно: при полимеризации присоединением двойная связь этилена раскрывается, и тысячи мономеров соединяются ковалентными связями в цепь. II верно: цепь состоит из тысяч мономерных звеньев, поэтому молярная масса очень велика (макромолекула). III неверно: полимер — другое вещество; этилен при комнатных условиях — газ и из-за двойной связи легко вступает в реакции, а полиэтилен — твёрдый, гибкий и химически более устойчивый материал. Верны I и II.",
         "ar": "العبارة I صحيحة: في البلمرة بالإضافة تنفتح الرابطة الثنائية في الإيثيلين وترتبط آلاف المونومرات طرفًا بطرف بروابط تساهمية. العبارة II صحيحة: تتكون السلسلة من آلاف الوحدات فتكون كتلتها المولية كبيرة جدًا (جزيء ضخم). العبارة III خاطئة: البوليمر مادة مختلفة عن المونومر؛ فالإيثيلين غاز في ظروف الغرفة ونشط كيميائيًا بسبب رابطته الثنائية، أما البولي إيثيلين فصلب ومرن وأكثر ثباتًا كيميائيًا. العبارتان الصحيحتان هما I وII.",
         "zh": "I 正确：加成聚合中乙烯的双键打开，成千上万个单体以共价键首尾相连。II 正确：聚合物链由成千上万个单体单元构成，因此摩尔质量非常大（高分子）。III 错误：聚合物与单体是不同的物质；乙烯在室温下是气体，因含双键而较活泼，聚乙烯则是固体，柔韧且化学性质更稳定。正确的是 I 和 II。",
-        "ku": "I rast e: di polîmerîzasyona zêdekirinê de girêdana ducar a etîlenê vedibe û bi hezaran monomer bi girêdanên kovalent li pey hev girê didin. II rast e: zincîr ji bi hezaran yekeyên monomer pêk tê, ji ber vê yekê girseya molar pir mezin e (makromolekul). III şaş e: polîmer madeyeke ji monomerê cuda ye; etîlen di şertên odeyê de gaz e û ji ber girêdana ducar çalak e, lê polîetîlen req, nerm û ji aliyê kîmyayî ve aramtir e. Gotinên rast I û II ne."
+        "ku": "I rast e: di polîmerîzasyona lêzêdekirinê de girêdana ducar a etîlenê vedibe û bi hezaran monomer bi girêdanên kovalent li pey hev girê didin. II rast e: zincîr ji bi hezaran yekeyên monomer pêk tê, ji ber vê yekê girseya molî pir mezin e (makromolekul). III şaş e: polîmer madeyeke ji monomerê cuda ye; etîlen di şertên odeyê de gaz e û ji ber girêdana ducar zû dikeve reaksiyonê, lê polîetîlen hişk, nerm û ji aliyê kîmyewî ve aramtir e. Gotinên rast I û II ne."
       }
     },
     {
@@ -2206,7 +2206,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Перед покупкой нужно проверить срок годности на этикетке.",
           "ar": "يجب التحقق من تاريخ انتهاء الصلاحية على الملصق قبل الشراء.",
           "zh": "购买前应检查标签上的食用期限。",
-          "ku": "Berî kirînê divê dîroka dawî ya xwarinê ya li ser etîketê were kontrolkirin."
+          "ku": "Berî kirînê divê dîroka dawî ya bikaranînê ya li ser etîketê were kontrolkirin."
         },
         {
           "tr": "Çözülmüş dondurulmuş gıdalar yeniden dondurulup aylarca güvenle saklanabilir.",
@@ -2216,7 +2216,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Размороженные продукты можно снова заморозить и безопасно хранить месяцами.",
           "ar": "يمكن إعادة تجميد الأغذية المجمدة بعد إذابتها وحفظها بأمان أشهرًا.",
           "zh": "解冻后的冷冻食品可以重新冷冻并安全保存数月。",
-          "ku": "Xwarinên cemidî yên helyayî dikarin dîsa werin cemidandin û bi mehan bi ewlehî werin hilanîn."
+          "ku": "Xwarinên cemidandî yên ku helyane dikarin dîsa werin cemidandin û bi mehan bi ewlehî werin hilanîn."
         },
         {
           "tr": "Kapağı şişmiş konserve, içinde mikroorganizmaların gaz üretmiş olabileceği için tüketilmemelidir.",
@@ -2226,7 +2226,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Консервы со вздутой крышкой нельзя есть, так как внутри микроорганизмы могли образовать газ.",
           "ar": "لا ينبغي تناول المعلبات التي انتفخ غطاؤها، لأن الكائنات الدقيقة ربما أنتجت غازًا بداخلها.",
           "zh": "盖子鼓起的罐头不应食用，因为里面的微生物可能产生了气体。",
-          "ku": "Konserveya ku qapaxa wê werimî nayê xwarin, ji ber ku dibe ku mîkroorganîzmayan di hundir de gaz çêkiribe."
+          "ku": "Konserveya ku qapaxa wê werimiye nayê xwarin, ji ber ku dibe ku mîkroorganîzmayan di hundir de gaz çêkiribe."
         },
         {
           "tr": "Etikette ürünün içeriği ve katkı maddeleri belirtilmelidir.",
@@ -2258,7 +2258,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Замораживание не убивает микроорганизмы, а лишь останавливает их размножение. После размораживания они снова начинают размножаться; повторное замораживание их не уничтожает и к тому же ухудшает структуру и пищевую ценность продукта. Поэтому размороженный продукт нельзя замораживать снова — его нужно быстро употребить. Остальные утверждения верны: нужно проверять срок годности и состав, не есть консервы со вздутой крышкой (возможен газ, выделенный бактериями), хранить продукты в рекомендованных условиях.",
         "ar": "التجميد لا يقتل الكائنات الدقيقة بل يوقف تكاثرها فقط. وعند إذابة الغذاء تبدأ بالتكاثر من جديد، وإعادة التجميد لا تقضي عليها بل تفسد بنية الغذاء وقيمته الغذائية أيضًا. لذا لا يُعاد تجميد الغذاء المذاب بل يُستهلك سريعًا. وبقية العبارات صحيحة: يجب التحقق من تاريخ الصلاحية والمكونات، وعدم تناول المعلبات المنتفخة (احتمال غاز بكتيري)، وحفظ الأغذية في الظروف الموصى بها.",
         "zh": "冷冻不能杀死微生物，只能使其停止繁殖。食品解冻后微生物会重新繁殖；再次冷冻并不能消灭它们，还会破坏食品的组织结构和营养价值。因此解冻后的食品不应再冷冻，而应尽快食用。其余说法都正确：应检查食用期限和配料，盖子鼓起的罐头（可能有细菌产气）不应食用，食品应按建议条件储存。",
-        "ku": "Cemidandin mîkroorganîzmayan nakuje, tenê zêdebûna wan radiwestîne. Dema xwarin dihele, mîkroorganîzma dîsa zêde dibin; ji nû ve cemidandin wan tune nake û avahî û nirxa xurekî ya xwarinê jî xera dike. Ji ber vê yekê xwarina helyayî nayê dîsa cemidandin, divê zû were xwarin. Gotinên din rast in: dîroka dawî û pêkhate têne kontrolkirin, konserveya werimî (gengaziya gaza bakteriyan) nayê xwarin, xwarin di şertên pêşniyarkirî de têne hilanîn."
+        "ku": "Cemidandin mîkroorganîzmayan nakuje, tenê pirbûna wan radiwestîne. Dema xwarin dihele, mîkroorganîzma dîsa pir dibin; cemidandina ji nû ve wan tune nake û avahî û nirxa xurekî ya xwarinê jî xera dike. Ji ber vê yekê divê xwarina helyayî dîsa neyê cemidandin û zû were xwarin. Gotinên din rast in: divê dîroka dawî ya bikaranînê û pêkhate werin kontrolkirin, konserveya werimî (gengaziya gaza bakteriyan) neyê xwarin û xwarin di şertên pêşniyarkirî de werin hilanîn."
       }
     }
   ]

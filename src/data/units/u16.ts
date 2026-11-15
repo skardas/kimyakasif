@@ -14,7 +14,7 @@ export const unit16: ChemistryUnitSeedData = {
     "ru": "Энергия в химических реакциях",
     "ar": "الطاقة في التفاعلات الكيميائية",
     "zh": "化学反应中的能量",
-    "ku": "Enerjî Di Reaksiyonên Kîmyewî de"
+    "ku": "Enerjî di Reaksiyonên Kîmyewî de"
   },
   "subtitle": {
     "tr": "Entalpi, Hess Yasası ve Bağ Enerjileri",
@@ -24,7 +24,7 @@ export const unit16: ChemistryUnitSeedData = {
     "ru": "Энтальпия, закон Гесса и энергии связи",
     "ar": "المحتوى الحراري، قانون هس وطاقة الروابط",
     "zh": "焓、盖斯定律与键能",
-    "ku": "Enthalpy, Qanûna Hess û Enerjiyên Bond"
+    "ku": "Entalpî, Zagona Hess û Enerjiyên Girêdanê"
   },
   "facts": [
     {
@@ -37,7 +37,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Изменение энтальпии (ΔH) — теплота, поглощаемая или выделяемая в реакции при постоянном давлении (ΔH = Hпродуктов - Hреагентов).",
         "ar": "تغير المحتوى الحراري (ΔH): هو كمية الحرارة الممتصة أو المنطلقة في تفاعل يحدث عند ضغط ثابت (ΔH = Hالنواتج - Hالمتفاعلات).",
         "zh": "焓变(ΔH)：在恒压下进行的反应中吸收或放出的热量(ΔH = H生成物 - H反应物)。",
-        "ku": "Guherîna entalpiyê (ΔH): germa ku di reaksiyoneke di bin zexta sabît de tê girtin an berdan (ΔH = Hberhem - Hreaktant)."
+        "ku": "Guherîna entalpiyê (ΔH): mîqdara germê ye ku di reaksiyoneke di bin zexta sabît de tê girtin an tê dayîn (ΔH = Hhilber - Hreaktant)."
       },
       "trap": {
         "tr": "Entalpi doğrudan ölçülebilen bir büyüklüktür, farkı ölçülemez.",
@@ -47,7 +47,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энтальпию можно измерить непосредственно, а её изменение измерить нельзя.",
         "ar": "المحتوى الحراري كمية يمكن قياسها مباشرة، أما التغير فيه فلا يمكن قياسه.",
         "zh": "焓可以直接测量，而焓的变化量无法测量。",
-        "ku": "Entalpî mîqdarek e ku rasterast dikare were pîvandin, cûdahiya wê nayê pîvandin."
+        "ku": "Entalpî mezinahiyek e ku rasterast tê pîvandin, lê guherîna wê nayê pîvandin."
       },
       "whyTrapIsFalse": {
         "tr": "Durum tam tersidir: bir maddenin mutlak entalpisi ölçülemez; kalorimetreyle ölçülen ve hesaplanan büyüklük entalpi değişimidir (ΔH).",
@@ -57,7 +57,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Всё наоборот: абсолютную энтальпию вещества измерить нельзя; с помощью калориметра измеряют и рассчитывают изменение энтальпии (ΔH).",
         "ar": "الأمر على العكس تمامًا: لا يمكن قياس المحتوى الحراري المطلق لمادة؛ ما يُقاس بالمسعر ويُحسب هو التغير في المحتوى الحراري (ΔH).",
         "zh": "恰恰相反：物质的绝对焓无法测量；用量热计测量和计算的是焓变(ΔH)。",
-        "ku": "Rewş berevajî ye: entalpiya mutleq a maddeyekê nayê pîvandin; tiştê bi kalorîmetreyê tê pîvandin û hesibandin guherîna entalpiyê (ΔH) ye."
+        "ku": "Rewş berevajî ye: entalpiya mutleq a madeyekê nayê pîvandin; mezinahiya ku bi kalorîmetreyê tê pîvandin û tê hesibandin guherîna entalpiyê (ΔH) ye."
       }
     },
     {
@@ -70,7 +70,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "В экзотермических реакциях ΔH < 0; теплоту записывают в правой части уравнения (со стороны продуктов), и система отдаёт теплоту окружающей среде.",
         "ar": "في التفاعلات الطاردة للحرارة ΔH < 0؛ تُكتب الحرارة في جهة النواتج ويطلق النظام حرارة إلى الوسط المحيط.",
         "zh": "放热反应中 ΔH < 0；热量写在生成物一侧，体系向环境放出热量。",
-        "ku": "Di reaksiyonên ekzotermîk de ΔH < 0 e; germ li aliyê berheman tê nivîsandin û sîstem germê dide hawîrdorê."
+        "ku": "Di reaksiyonên ekzotermîk de ΔH < 0 e; germ li aliyê hilberan tê nivîsandin û sîstem germê dide derdorê."
       },
       "trap": {
         "tr": "Ekzotermik tepkimelerde ürünlerin entalpisi girenlerinkinden daha büyüktür.",
@@ -80,7 +80,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "В экзотермических реакциях энтальпия продуктов превышает энтальпию реагентов.",
         "ar": "في التفاعلات الطاردة للحرارة، يكون المحتوى الحراري للنواتج أكبر من المحتوى الحراري للمواد المتفاعلة.",
         "zh": "放热反应中，生成物的焓大于反应物的焓。",
-        "ku": "Di reaksiyonên ekzotermîk de entalpiya berheman ji ya reaktantan mezintir e."
+        "ku": "Di reaksiyonên ekzotermîk de entalpiya hilberan ji ya reaktantan mezintir e."
       },
       "whyTrapIsFalse": {
         "tr": "Ekzotermik tepkimede sistem ısı vererek enerji kaybeder; bu yüzden ürünlerin entalpisi girenlerinkinden küçüktür ve ΔH = Hürünler − Hgirenler negatif çıkar.",
@@ -90,7 +90,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "В экзотермической реакции система теряет энергию, отдавая теплоту; поэтому энтальпия продуктов меньше энтальпии реагентов, и ΔH = Hпродуктов − Hреагентов отрицательна.",
         "ar": "في التفاعل الطارد للحرارة يفقد النظام طاقة بإطلاقه الحرارة؛ لذلك يكون المحتوى الحراري للنواتج أقل من المتفاعلات وتكون ΔH = Hالنواتج − Hالمتفاعلات سالبة.",
         "zh": "放热反应中体系放出热量而失去能量，因此生成物的焓低于反应物，ΔH = H生成物 − H反应物 为负值。",
-        "ku": "Di reaksiyona ekzotermîk de sîstem bi dayîna germê enerjiyê winda dike; ji ber vê yekê entalpiya berheman ji ya reaktantan kêmtir e û ΔH = Hberhem − Hreaktant negatîf derdikeve."
+        "ku": "Di reaksiyona ekzotermîk de sîstem bi dayîna germê enerjiyê winda dike; ji ber vê yekê entalpiya hilberan ji ya reaktantan kêmtir e û ΔH = Hhilber − Hreaktant negatîf derdikeve."
       }
     },
     {
@@ -103,7 +103,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "В эндотермических реакциях ΔH > 0; теплоту записывают в левой части уравнения (со стороны реагентов), и система поглощает теплоту из окружающей среды.",
         "ar": "في التفاعلات الماصة للحرارة ΔH > 0؛ تُكتب الحرارة في جهة المتفاعلات ويمتص النظام حرارة من الوسط المحيط.",
         "zh": "吸热反应中 ΔH > 0；热量写在反应物一侧，体系从环境吸收热量。",
-        "ku": "Di reaksiyonên endotermîk de ΔH > 0 e; germ li aliyê reaktantan tê nivîsandin û sîstem germê ji hawîrdorê distîne."
+        "ku": "Di reaksiyonên endotermîk de ΔH > 0 e; germ li aliyê reaktantan tê nivîsandin û sîstem germê ji derdorê digire."
       },
       "trap": {
         "tr": "Endotermik tepkimelerde sistem çevreye ısı verdiği için ortamın sıcaklığı yükselir.",
@@ -113,7 +113,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "В эндотермических реакциях система отдаёт теплоту окружающей среде, поэтому температура среды повышается.",
         "ar": "في التفاعلات الماصة للحرارة يُطلق النظام حرارة إلى الوسط المحيط، لذلك ترتفع درجة حرارة الوسط.",
         "zh": "吸热反应中体系向环境放出热量，因此环境温度升高。",
-        "ku": "Di reaksiyonên endotermîk de sîstem germê dide hawîrdorê, ji ber vê yekê germahiya hawîrdorê bilind dibe."
+        "ku": "Di reaksiyonên endotermîk de, ji ber ku sîstem germê dide derdorê, germahiya derdorê bilind dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Isı veren ve ortamı ısıtan tepkime ekzotermiktir; endotermik tepkimede sistem ısıyı ortamdan aldığı için ortamın sıcaklığı düşer.",
@@ -123,7 +123,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Реакция, которая отдаёт теплоту и нагревает окружающую среду, экзотермическая; в эндотермической реакции система забирает теплоту у окружающей среды, и температура среды понижается.",
         "ar": "التفاعل الذي يُطلق الحرارة ويُدفئ الوسط هو تفاعل طارد للحرارة؛ أما في التفاعل الماص للحرارة فيأخذ النظام الحرارة من الوسط فتنخفض درجة حرارة الوسط.",
         "zh": "放出热量并使环境变热的是放热反应；吸热反应中体系从环境吸收热量，环境温度降低。",
-        "ku": "Reaksiyona ku germê dide û hawîrdorê germ dike ekzotermîk e; di reaksiyona endotermîk de sîstem germê ji hawîrdorê digire, loma germahiya hawîrdorê dadikeve."
+        "ku": "Reaksiyona ku germê dide û derdorê germ dike ekzotermîk e; di reaksiyona endotermîk de sîstem germê ji derdorê digire, loma germahiya derdorê dadikeve."
       }
     },
     {
@@ -136,7 +136,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Стандартная энтальпия образования (ΔHf°) — изменение энтальпии при образовании 1 моль соединения из простых веществ в их наиболее устойчивом состоянии при 25 °C и 1 атм.",
         "ar": "المحتوى الحراري القياسي للتكوين (ΔHf°): هو التغير في المحتوى الحراري عند تكوّن 1 mol من المركب من عناصره في أكثر حالاتها استقرارًا عند 25 °C و1 atm.",
         "zh": "标准生成焓(ΔHf°)：在 25 °C 和 1 atm 下，由最稳定状态的单质生成 1 mol 化合物时的焓变。",
-        "ku": "Entalpiya avabûnê ya standard (ΔHf°): guherîna entalpiyê ye dema 1 mol pêkhate li 25 °C û 1 atm ji elementên xwe yên di rewşa herî stabîl de çêdibe."
+        "ku": "Entalpiya çêbûnê ya standard (ΔHf°): guherîna entalpiyê ye dema ku 1 mol pêkhate li 25 °C û 1 atm ji rewşên herî stabîl ên elementên xwe çêdibe."
       },
       "trap": {
         "tr": "Elementlerin tüm allotroplarının standart oluşum entalpisi sıfır kabul edilir.",
@@ -146,7 +146,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Стандартная энтальпия образования всех аллотропных модификаций элементов принимается равной нулю.",
         "ar": "يُعدّ المحتوى الحراري القياسي للتكوين لجميع متآصلات العناصر صفرًا.",
         "zh": "元素的所有同素异形体的标准生成焓都规定为零。",
-        "ku": "Entalpiya avabûnê ya standard a hemû alotropên elementan sifir tê qebûlkirin."
+        "ku": "Entalpiya çêbûnê ya standard a hemû allotropên elementan sifir tê qebûlkirin."
       },
       "whyTrapIsFalse": {
         "tr": "Sıfır kabulü yalnızca elementin standart koşullardaki en kararlı hâli için geçerlidir; O3 veya elmas gibi daha az kararlı allotropların oluşum entalpisi sıfırdan farklıdır.",
@@ -156,7 +156,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Нулевое значение принимают только для наиболее устойчивой при стандартных условиях формы элемента; у менее устойчивых аллотропных модификаций, например O3 или алмаза, энтальпия образования не равна нулю.",
         "ar": "اعتبار القيمة صفرًا يخص فقط الشكل الأكثر استقرارًا للعنصر في الظروف القياسية؛ أما المتآصلات الأقل استقرارًا مثل O3 أو الماس فلها محتوى حراري للتكوين لا يساوي صفرًا.",
         "zh": "规定为零只适用于元素在标准状态下最稳定的形态；O3、金刚石等较不稳定的同素异形体的生成焓不为零。",
-        "ku": "Qebûla sifir tenê ji bo rewşa herî stabîl a elementê di şert û mercên standard de derbasdar e; alotropên kêmtir stabîl ên wek O3 an almas entalpiya avabûnê ya ji sifir cuda ne."
+        "ku": "Qebûla sifirê tenê ji bo rewşa herî stabîl a elementê di şertên standard de derbasdar e; entalpiya çêbûnê ya allotropên kêmtir stabîl ên wekî O3 an elmasê ne sifir e."
       }
     },
     {
@@ -169,7 +169,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Стандартная энтальпия образования простых веществ в наиболее устойчивом при комнатных условиях состоянии равна нулю (O2(г)=0, C(графит)=0; O3(г)≠0, C(алмаз)≠0).",
         "ar": "المحتوى الحراري القياسي لتكوين العناصر في أكثر حالاتها استقرارًا في ظروف الغرفة يساوي صفرًا (O2(g) = 0، C(جرافيت) = 0؛ أما O3(g) ≠ 0 وC(ماس) ≠ 0).",
         "zh": "在 25 °C、1 atm 下，元素最稳定单质的标准生成焓为零(O2(g) = 0，C(石墨) = 0；O3(g) ≠ 0，C(金刚石) ≠ 0)。",
-        "ku": "Entalpiya pêkhatina standard a rewşên herî bi îstîqrar ên hêmanan di şert û mercên odeyê de sifir e (O2(g)=0, C(grafît)=0; O3(g)≠0, C(almas)≠0)."
+        "ku": "Entalpiya çêbûnê ya standard a rewşên herî stabîl ên elementan di şertên odeyê de sifir e (O2(g)=0, C(grafît)=0; O3(g)≠0, C(elmas)≠0)."
       },
       "trap": {
         "tr": "Elmasın standart oluşum entalpisi sıfırdır.",
@@ -179,7 +179,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Стандартная энтальпия образования алмаза равна нулю.",
         "ar": "المحتوى الحراري القياسي لتكوين الماس يساوي صفرًا.",
         "zh": "金刚石的标准生成焓为零。",
-        "ku": "Entalpiya standard a pêkhatina almasê sifir e."
+        "ku": "Entalpiya çêbûnê ya standard a elmasê sifir e."
       },
       "whyTrapIsFalse": {
         "tr": "Karbonun 25 °C ve 1 atm'deki en kararlı allotropu grafittir; elmas grafitten oluşurken entalpi değiştiği için ΔHf°(elmas) sıfır değildir (yaklaşık +1,9 kJ/mol).",
@@ -189,7 +189,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Наиболее устойчивая аллотропная модификация углерода при 25 °C и 1 атм — графит; так как образование алмаза из графита сопровождается изменением энтальпии, ΔHf°(алмаз) не равна нулю (около +1,9 кДж/моль).",
         "ar": "أكثر متآصلات الكربون استقرارًا عند 25 °C و1 atm هو الجرافيت؛ وبما أن تكوّن الماس من الجرافيت يصاحبه تغير في المحتوى الحراري فإن ΔHf°(الماس) ليست صفرًا (نحو +1.9 kJ/mol).",
         "zh": "25 °C、1 atm 下碳最稳定的同素异形体是石墨；由石墨生成金刚石伴随焓变，所以 ΔHf°(金刚石) 不为零(约 +1.9 kJ/mol)。",
-        "ku": "Alotropa herî stabîl a karbonê li 25 °C û 1 atm grafît e; ji ber ku çêbûna almasê ji grafîtê bi guherîna entalpiyê re ye, ΔHf°(almas) ne sifir e (nêzîkî +1,9 kJ/mol)."
+        "ku": "Li 25 °C û 1 atm allotropa herî stabîl a karbonê grafît e; ji ber ku dema elmas ji grafîtê çêdibe entalpî diguhere, ΔHf°(elmas) ne sifir e (nêzîkî +1,9 kJ/mol)."
       }
     },
     {
@@ -202,7 +202,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Закон Гесса: если реакцию можно представить как сумму нескольких стадий, то её энтальпия равна сумме энтальпий этих стадий.",
         "ar": "قانون هس: إذا أمكن كتابة التفاعل على صورة مجموع خطوتين أو أكثر، فإن التغير في المحتوى الحراري للتفاعل يساوي مجموع التغيرات في المحتوى الحراري لهذه الخطوات.",
         "zh": "盖斯定律：如果一个反应可以表示为几个步骤的反应之和，则该反应的焓变等于各步反应焓变之和。",
-        "ku": "Zagona Hess: Eger reaksiyonek bi kombûna ji yek gavan zêdetir were nivîsandin, entalpiya reaksiyonê bi kombûna entalpiyên gavan re ye."
+        "ku": "Zagona Hess: Heke reaksiyonek wekî koma çend gavan were nivîsandin, entalpiya reaksiyonê wekhevî koma entalpiyên gavan e."
       },
       "trap": {
         "tr": "Tepkime ters çevrilirse ΔH'nin işareti değişmez.",
@@ -212,7 +212,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Если записать реакцию в обратном направлении, знак ΔH не изменится.",
         "ar": "إذا عُكس التفاعل فإن إشارة ΔH لا تتغير.",
         "zh": "将反应逆向书写时，ΔH 的符号不变。",
-        "ku": "Ger reaksîyon berevajî be, nîşana ΔH naguhere."
+        "ku": "Dema reaksiyon berevajî tê nivîsandin, nîşana ΔH naguhere."
       },
       "whyTrapIsFalse": {
         "tr": "İleri yönde açığa çıkan ısı geri yönde aynı miktarda alınır; bu yüzden tepkime ters çevrilince ΔH'nin büyüklüğü aynı kalır ama işareti değişir.",
@@ -222,7 +222,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Теплота, которая выделяется в прямом направлении, в том же количестве поглощается в обратном; поэтому при записи реакции в обратном направлении абсолютная величина ΔH сохраняется, а знак меняется.",
         "ar": "الحرارة المنطلقة في الاتجاه الأمامي تُمتص بالمقدار نفسه في الاتجاه العكسي؛ لذلك عند عكس التفاعل يبقى مقدار ΔH كما هو لكن إشارتها تتغير.",
         "zh": "正向放出的热量在逆向时会等量吸收；因此将反应逆向书写时，ΔH 的数值不变，但符号改变。",
-        "ku": "Germa ku di aliyê pêşve de derdikeve, di aliyê paşve de bi heman mîqdarê tê girtin; ji ber vê yekê dema reaksiyon berevajî dibe mezinahiya ΔH wek xwe dimîne lê nîşana wê diguhere."
+        "ku": "Germa ku di aliyê pêşve de derdikeve, di aliyê paşve de bi heman mîqdarê tê girtin; ji ber vê yekê dema reaksiyon berevajî dibe, mezinahiya ΔH wekî xwe dimîne lê nîşana wê diguhere."
       }
     },
     {
@@ -235,7 +235,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Если записать реакцию в обратном направлении, знак ΔH меняется; если умножить уравнение на коэффициент, ΔH умножается на тот же коэффициент.",
         "ar": "إذا عُكس التفاعل تتغير إشارة ΔH؛ وإذا ضُرب في معامل تُضرب ΔH في المعامل نفسه.",
         "zh": "将反应逆向书写时，ΔH 变号；将反应式乘以某一系数时，ΔH 也乘以同一系数。",
-        "ku": "Ger reaksîyon berevajî be, nîşana ΔH diguhere; Heger bi hevberekê were pirkirin, ΔH jî bi heman qasê tê zêdekirin."
+        "ku": "Dema reaksiyon berevajî tê nivîsandin nîşana ΔH diguhere; heke reaksiyon bi hevberekê were pirkirin, ΔH jî bi heman hevberê tê pirkirin."
       },
       "trap": {
         "tr": "Tepkime 2 ile çarpıldığında ΔH değeri aynı kalır.",
@@ -245,7 +245,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "При умножении уравнения реакции на 2 значение ΔH не меняется.",
         "ar": "عند ضرب التفاعل في 2 تبقى قيمة ΔH كما هي.",
         "zh": "将反应式乘以 2 时，ΔH 的值不变。",
-        "ku": "Dema ku reaksiyonê bi 2-ê zêde dibe, nirxa ΔH wekî xwe dimîne."
+        "ku": "Dema reaksiyon bi 2 tê pirkirin, nirxa ΔH wekî xwe dimîne."
       },
       "whyTrapIsFalse": {
         "tr": "ΔH madde miktarına bağlı (ekstensif) bir büyüklüktür; katsayılar 2 katına çıkınca tepkimeye giren madde miktarı ve alınan/verilen ısı da 2 katına çıkar.",
@@ -255,7 +255,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "ΔH зависит от количества вещества (это экстенсивная величина); при удвоении коэффициентов удваиваются и количество прореагировавшего вещества, и поглощённая или выделившаяся теплота.",
         "ar": "ΔH كمية شاملة تعتمد على كمية المادة؛ فعند مضاعفة المعاملات تتضاعف كمية المادة المتفاعلة وتتضاعف معها الحرارة الممتصة أو المنطلقة.",
         "zh": "ΔH 与物质的量有关（广度量）；化学计量数加倍时，参加反应的物质的量以及吸收或放出的热量也加倍。",
-        "ku": "ΔH mezinahiyeke girêdayî mîqdara maddeyê ye (ekstensîf); dema rêjeyan du qat dibin, mîqdara maddeya ku reaksiyon dike û germa tê girtin an dayîn jî du qat dibe."
+        "ku": "ΔH mezinahiyeke girêdayî mîqdara madeyê ye (ekstensîf); dema hevber du qat dibin, mîqdara madeya ku dikeve reaksiyonê û germa ku tê girtin an tê dayîn jî du qat dibe."
       }
     },
     {
@@ -268,7 +268,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энтальпия по энергиям связей: ΔH ≈ Σ(энергии разрываемых связей) − Σ(энергии образующихся связей); результат приближённый, так как используются средние энергии связей.",
         "ar": "المحتوى الحراري من طاقات الروابط: ΔH ≈ Σ(طاقات الروابط المكسورة) − Σ(طاقات الروابط المتكونة)؛ والنتيجة تقريبية لأنه تُستخدم متوسطات طاقات الروابط.",
         "zh": "由键能求焓变：ΔH ≈ Σ(断裂键的键能) − Σ(形成键的键能)；由于使用的是平均键能，结果为近似值。",
-        "ku": "Entalpî ji enerjiyên girêdanê: ΔH ≈ Σ(enerjiyên girêdanên şikestî) − Σ(enerjiyên girêdanên çêbûyî); ji ber ku enerjiyên girêdanê yên navînî tên bikaranîn encam nêzîkî ye."
+        "ku": "Entalpî ji enerjiyên girêdanê: ΔH ≈ Σ(enerjiyên girêdanên şikestî) − Σ(enerjiyên girêdanên çêbûyî); ji ber ku enerjiyên girêdanê yên navînî tên bikaranîn, encam texmînî ye."
       },
       "trap": {
         "tr": "Bağ enerjisi hesabında oluşan bağlardan kırılan bağlar çıkarılır.",
@@ -278,7 +278,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "При расчёте ΔH по энергиям связей энергию разрываемых связей вычитают из энергии образующихся связей.",
         "ar": "في حساب ΔH من طاقات الروابط تُطرح طاقات الروابط المكسورة من طاقات الروابط المتكونة.",
         "zh": "用键能计算时，用形成的键的键能减去断裂的键的键能。",
-        "ku": "Di hesabkirina enerjiya girêdanê de, bendên şikestî ji bendên çêkirî têne derxistin."
+        "ku": "Di hesabê enerjiya girêdanê de girêdanên şikestî ji girêdanên çêbûyî tên derxistin."
       },
       "whyTrapIsFalse": {
         "tr": "Bağ kırmak enerji gerektirdiği için kırılan bağlar pozitif katkı yapar; doğru sıra kırılan − oluşan'dır, ters çıkarma yapılırsa ΔH'nin işareti yanlış bulunur.",
@@ -288,7 +288,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Разрыв связей требует затраты энергии, поэтому разрываемые связи дают положительный вклад; правильный порядок — «разрываемые минус образующиеся», а при обратном вычитании знак ΔH получится неверным.",
         "ar": "كسر الروابط يحتاج إلى طاقة، لذا تساهم الروابط المكسورة بقيمة موجبة؛ الترتيب الصحيح هو المكسورة − المتكونة، والطرح بالعكس يعطي ΔH بإشارة خاطئة.",
         "zh": "断键需要吸收能量，因此断裂的键贡献为正；正确顺序是断裂 − 形成，反过来相减会得到符号错误的 ΔH。",
-        "ku": "Şikandina girêdanan enerjiyê dixwaze, loma girêdanên şikestî beşdariya erênî dikin; rêza rast şikestî − çêbûyî ye, heke berevajî were derxistin nîşana ΔH şaş derdikeve."
+        "ku": "Şikandina girêdanan enerjiyê dixwaze, loma girêdanên şikestî beşdariyeke erênî dikin; rêza rast şikestî − çêbûyî ye, heke derxistin berevajî were kirin nîşana ΔH şaş tê dîtin."
       }
     },
     {
@@ -301,7 +301,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Образование химической связи всегда экзотермично (ΔH < 0); разрыв связи всегда эндотермичен (ΔH > 0).",
         "ar": "تكوين الرابطة الكيميائية طارد للحرارة دائمًا (ΔH < 0)، وكسر الرابطة ماص للحرارة دائمًا (ΔH > 0).",
         "zh": "化学键的形成总是放热的(ΔH < 0)；化学键的断裂总是吸热的(ΔH > 0)。",
-        "ku": "Çêbûna girêdana kîmyewî her dem germ e (ΔH < 0); şikandina girêdanê her tim endotermîk e (ΔH > 0)."
+        "ku": "Çêbûna girêdana kîmyewî her tim ekzotermîk e (ΔH < 0); şikestina girêdanê her tim endotermîk e (ΔH > 0)."
       },
       "trap": {
         "tr": "Kovalent bağ kırılırken çevreye yüksek ısı yayılır.",
@@ -311,7 +311,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "При разрыве ковалентной связи в окружающую среду выделяется много теплоты.",
         "ar": "عند كسر الرابطة التساهمية تنطلق حرارة كبيرة إلى الوسط المحيط.",
         "zh": "共价键断裂时向环境放出大量热量。",
-        "ku": "Ji ber ku girêdana kovalentê tê şikestin, germa zêde ber bi hawîrdorê ve tê berdan."
+        "ku": "Dema girêdana kovalent dişkê, germeke zêde li derdorê belav dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Bağı kırmak için atomlar arasındaki çekimi yenmek gerekir ve bu dışarıdan enerji almayı gerektirir; çevreye ısı yayılması bağ oluşurken gerçekleşir.",
@@ -321,7 +321,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Чтобы разорвать связь, нужно преодолеть притяжение между атомами, а для этого требуется подвод энергии; теплота выделяется в среду при образовании связей.",
         "ar": "كسر الرابطة يعني التغلب على التجاذب بين الذرات، وهذا يتطلب طاقة من الخارج؛ أما انطلاق الحرارة إلى الوسط فيحدث عند تكوّن الروابط.",
         "zh": "断键需要克服原子间的吸引，必须从外界吸收能量；向环境放出热量发生在成键时。",
-        "ku": "Ji bo şikandina girêdanê divê kişandina navbera atoman were bindestkirin û ev yek enerjiyeke ji derve dixwaze; belavbûna germê bo hawîrdorê dema girêdan çêdibin pêk tê."
+        "ku": "Ji bo şikandina girêdanê divê kişandina navbera atoman were derbaskirin û ji bo vê divê ji derve enerjî were girtin; belavbûna germê li derdorê dema çêbûna girêdanê pêk tê."
       }
     },
     {
@@ -334,7 +334,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Активированный комплекс — неустойчивая группировка атомов с высокой энергией, соответствующая вершине энергетического профиля реакции.",
         "ar": "المعقد المنشط مجموعة من الذرات عالية الطاقة وغير مستقرة توجد عند قمة مسار التفاعل.",
         "zh": "活化络合物是反应过程中处于能量最高点、能量高且不稳定的原子集合体。",
-        "ku": "Kompleksa aktîfkirî berhevokek ji atomên bi enerjiya bilind û ne aram di lûtkeya reaksiyonê de ye."
+        "ku": "Kompleksa aktîvkirî komeke atoman a nestabîl û bi enerjiya bilind e ku li lûtkeya reaksiyonê ye."
       },
       "trap": {
         "tr": "Aktifleşmiş kompleks izole edilip şişede saklanabilen kararlı bir maddedir.",
@@ -344,7 +344,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Активированный комплекс — устойчивое вещество, которое можно выделить и хранить в склянке.",
         "ar": "المعقد المنشّط مادة مستقرة يمكن عزلها وحفظها في قارورة.",
         "zh": "活化络合物是一种稳定的物质，可以分离出来并装在瓶中保存。",
-        "ku": "Kompleksa aktîfkirî maddeyek stabîl e ku dikare were veqetandin û di şûşeyek de were hilanîn."
+        "ku": "Kompleksa aktîvkirî madeyeke stabîl e ku dikare were veqetandin û di şûşeyê de were hilanîn."
       },
       "whyTrapIsFalse": {
         "tr": "Aktifleşmiş kompleks, enerji grafiğinin tepesinde çok kısa süre var olan bir geçiş yapısıdır; hemen ürünlere ya da tekrar girenlere dönüştüğü için yalıtılamaz.",
@@ -354,7 +354,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Активированный комплекс — переходная структура, которая существует очень короткое время на вершине энергетической диаграммы; он сразу превращается в продукты или снова в реагенты, поэтому выделить его нельзя.",
         "ar": "المعقد المنشط بنية انتقالية توجد للحظة قصيرة جدًا عند قمة مخطط الطاقة؛ فهو يتحول فورًا إلى نواتج أو يعود إلى متفاعلات، لذلك لا يمكن عزله.",
         "zh": "活化络合物是只在能量图顶点瞬间存在的过渡结构；它会立即转变为生成物或变回反应物，因此无法分离出来。",
-        "ku": "Kompleksa aktîfkirî avahiyeke derbasbûnê ye ku tenê bo kêliyekê li serê grafîka enerjiyê heye; ew yekser vediguhere berheman an dîsa reaktantan, loma nayê veqetandin."
+        "ku": "Kompleksa aktîvkirî avahiyeke derbasbûnê ye ku tenê demeke pir kurt li serê grafîka enerjiyê heye; ji ber ku yekser vediguhere hilberan an dîsa reaktantan, nayê veqetandin."
       }
     },
     {
@@ -367,7 +367,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энергия активации прямой реакции Ea(пр) и энергия активации обратной реакции Ea(обр) всегда положительны.",
         "ar": "طاقة التنشيط الأمامية (Eai) وطاقة التنشيط العكسية (Eag) قيمتان موجبتان دائمًا.",
         "zh": "正反应活化能(Eai)和逆反应活化能(Eag)总是正值。",
-        "ku": "Enerjiya çalakkirina pêş (Eai) û enerjiya çalakkirina berevajî (Eag) her gav nirxên erênî ne."
+        "ku": "Enerjiya aktîvasyonê ya pêşve (Eai) û enerjiya aktîvasyonê ya paşve (Eag) her tim nirxên erênî ne."
       },
       "trap": {
         "tr": "Ekzotermik tepkimelerde Eai negatif değer alır.",
@@ -387,7 +387,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энергия активации — энергетический барьер, который нужно преодолеть, и в любой реакции она положительна; экзотермичность означает лишь, что ΔH отрицательна, то есть Ea(пр) меньше Ea(обр).",
         "ar": "طاقة التنشيط حاجز طاقي يجب تجاوزه وهي موجبة في كل تفاعل؛ وكون التفاعل طاردًا للحرارة يعني فقط أن ΔH سالبة، أي أن Eai أصغر من Eag.",
         "zh": "活化能是必须越过的能垒，对任何反应都是正值；放热只意味着 ΔH 为负，即 Eai 小于 Eag。",
-        "ku": "Enerjiya aktîvasyonê astengeke enerjiyê ye ku divê were derbaskirin û di her reaksiyonê de erênî ye; ekzotermîk bûn tenê tê wateya ku ΔH negatîf e, ango Eai ji Eag piçûktir e."
+        "ku": "Enerjiya aktîvasyonê astengeke enerjiyê ye ku divê were derbaskirin û di her reaksiyonê de erênî ye; ekzotermîkbûn tenê tê wê wateyê ku ΔH negatîf e, ango Eai ji Eag piçûktir e."
       }
     },
     {
@@ -400,7 +400,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энтальпию реакции можно найти и по энергиям активации: ΔH = Ea(пр) - Ea(обр).",
         "ar": "يمكن أيضًا إيجاد المحتوى الحراري للتفاعل من طاقتي التنشيط: ΔH = Eai - Eag.",
         "zh": "反应焓变也可由活化能求出：ΔH = Eai - Eag。",
-        "ku": "Entalpiya reaksiyonê jî ji enerjiyên aktîfkirinê tê dîtin: ΔH = Eai - Eag."
+        "ku": "Entalpiya reaksiyonê ji enerjiyên aktîvasyonê jî tê dîtin: ΔH = Eai - Eag."
       },
       "trap": {
         "tr": "ΔH = Eag - Eai'dir.",
@@ -420,7 +420,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "ΔH — разность энергий продуктов и реагентов: Ea(пр) − Ea(обр) = (Eкомплекса − Eреагентов) − (Eкомплекса − Eпродуктов) = Eпродуктов − Eреагентов; при обратном порядке знак ΔH меняется на противоположный.",
         "ar": "ΔH هي فرق الطاقة بين النواتج والمتفاعلات: Eai − Eag = (Eالمعقد − Eالمتفاعلات) − (Eالمعقد − Eالنواتج) = Eالنواتج − Eالمتفاعلات؛ وعكس الترتيب يقلب إشارة ΔH.",
         "zh": "ΔH 是生成物与反应物的能量差：Eai − Eag = (E络合物 − E反应物) − (E络合物 − E生成物) = E生成物 − E反应物；顺序颠倒会使 ΔH 的符号相反。",
-        "ku": "ΔH cudahiya enerjiyê ya navbera berhem û reaktantan e: Eai − Eag = (Ekompleks − Ereaktant) − (Ekompleks − Eberhem) = Eberhem − Ereaktant; heke rêz berevajî bibe nîşana ΔH diguhere."
+        "ku": "ΔH cudahiya enerjiya hilberan û reaktantan e: Eai − Eag = (Ekompleks − Ereaktant) − (Ekompleks − Ehilber) = Ehilber − Ereaktant; heke rêz berevajî were girtin, nîşana ΔH xera dibe."
       }
     },
     {
@@ -433,7 +433,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Замерзание, конденсация, десублимация (газ → твёрдое) и, как правило, растворение газов в воде экзотермичны.",
         "ar": "التجمد والتكاثف والترسب (تحول الغاز إلى صلب مباشرة) وذوبان الغازات في الماء بوجه عام عمليات طاردة للحرارة.",
         "zh": "凝固、液化、凝华（气 → 固）以及一般情况下气体溶于水都是放热过程。",
-        "ku": "Cemidîn, şilbûn (kondensasyon), depozîsyon (gaz → hişk) û bi giştî helbûna gazan di avê de ekzotermîk in."
+        "ku": "Cemidîn, şilebûn, desublîmebûn û bi giştî helbûna gazan di avê de ekzotermîk in."
       },
       "trap": {
         "tr": "Kırağılaşma olayında madde çevreden ısı alır.",
@@ -443,7 +443,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "При десублимации вещество поглощает теплоту из окружающей среды.",
         "ar": "أثناء الترسب (تحول الغاز إلى صلب مباشرة) تمتص المادة حرارة من الوسط المحيط.",
         "zh": "凝华过程中物质从环境吸收热量。",
-        "ku": "Di dema depozîsyonê de (gaz → hişk) madde germê ji hawîrdorê distîne."
+        "ku": "Di desublîmebûnê de made germê ji derdorê digire."
       },
       "whyTrapIsFalse": {
         "tr": "Kırağılaşmada gaz doğrudan katıya geçer ve tanecikler arası çekimler oluşurken enerji açığa çıkar; ısı alan olay bunun tersi olan süblimleşmedir.",
@@ -453,7 +453,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "При десублимации газ сразу переходит в твёрдое состояние, и при возникновении притяжения между частицами выделяется энергия; теплоту поглощает обратный процесс — сублимация.",
         "ar": "في الترسب يتحول الغاز مباشرة إلى صلب وتنطلق طاقة عند تكوّن قوى التجاذب بين الجسيمات؛ أما العملية الماصة للحرارة فهي العملية العكسية، أي التسامي.",
         "zh": "凝华时气体直接变成固体，粒子间形成吸引作用时放出能量；吸热的是其逆过程升华。",
-        "ku": "Di depozîsyonê de gaz rasterast dibe hişk û dema kişandinên navbera perçeyan çêdibin enerjî derdikeve; bûyera ku germê digire berevajiya wê, sublîmasyon e."
+        "ku": "Di desublîmebûnê de gaz rasterast dibe hişk û dema kişandinên navbera perçeyan çêdibin enerjî derdikeve; bûyera ku germê digire berevajiya wê ye, ango sublîmebûn."
       }
     },
     {
@@ -466,7 +466,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Плавление, испарение, сублимация и отрыв электрона от атома в газовой фазе (ионизация) — эндотермические процессы.",
         "ar": "الانصهار والتبخر والتسامي ونزع الإلكترون من الذرة في الحالة الغازية (التأين) عمليات ماصة للحرارة.",
         "zh": "熔化、汽化、升华以及使气态原子失去电子（电离）都是吸热过程。",
-        "ku": "Hêlbûn, helandin, binavkirin û rakirina elektronan ji atomên gazê (iyonîzasyon) endotermîk in."
+        "ku": "Helîn, buharbûn, sublîmebûn û jêkirina elektronê ji atoma di rewşa gaz de (îyonîzasyon) endotermîk in."
       },
       "trap": {
         "tr": "Gaz hâlindeki bir atomdan elektron koparılması (iyonlaşma) ekzotermik bir olaydır.",
@@ -476,7 +476,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Отрыв электрона от атома в газовой фазе (ионизация) — экзотермический процесс.",
         "ar": "نزع إلكترون من ذرة في الحالة الغازية (التأين) عملية طاردة للحرارة.",
         "zh": "使气态原子失去电子（电离）是放热过程。",
-        "ku": "Jêkirina elektronekê ji atomeke gazî (îyonîzasyon) pêvajoyeke ekzotermîk e."
+        "ku": "Jêkirina elektronekê ji atomeke di rewşa gaz de (îyonîzasyon) bûyereke ekzotermîk e."
       },
       "whyTrapIsFalse": {
         "tr": "Elektronu çekirdeğin çekiminden koparmak için dışarıdan enerji verilmelidir; bu yüzden iyonlaşma enerjisi pozitif bir değerdir ve olay endotermiktir.",
@@ -486,7 +486,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Чтобы оторвать электрон, преодолев притяжение ядра, нужно затратить энергию; поэтому энергия ионизации положительна, а процесс эндотермический.",
         "ar": "يلزم تزويد الذرة بطاقة من الخارج لانتزاع الإلكترون من جذب النواة؛ لذلك تكون طاقة التأين قيمة موجبة وتكون العملية ماصة للحرارة.",
         "zh": "要使电子摆脱原子核的吸引必须提供能量，因此电离能为正值，该过程是吸热的。",
-        "ku": "Ji bo ku elektron ji kişandina navokê were qetandin divê enerjî ji derve were dayîn; ji ber vê yekê enerjiya îyonbûnê erênî ye û bûyer endotermîk e."
+        "ku": "Ji bo ku elektron ji kişandina navokê were qetandin divê ji derve enerjî were dayîn; ji ber vê yekê enerjiya îyonîzasyonê nirxeke erênî ye û bûyer endotermîk e."
       }
     },
     {
@@ -499,7 +499,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Если меняется агрегатное состояние реагентов или продуктов, меняется и энтальпия реакции (ΔH).",
         "ar": "إذا تغيرت الحالة الفيزيائية لإحدى المواد المتفاعلة أو الناتجة، يتغير أيضًا المحتوى الحراري للتفاعل (ΔH).",
         "zh": "反应物或生成物的物态发生变化时，反应焓变(ΔH)也随之改变。",
-        "ku": "Ger rewşa fizîkî ya reaktantekê an berhemekê biguhere, entalpiya reaksiyonê (ΔH) jî diguhere."
+        "ku": "Heke rewşa fîzîkî ya reaktantan an hilberan biguhere, entalpiya reaksiyonê (ΔH) jî diguhere."
       },
       "trap": {
         "tr": "Suyun gaz veya sıvı halde oluşması tepkime entalpisini etkilemez.",
@@ -509,7 +509,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Образуется ли вода в газообразном или в жидком состоянии, на энтальпию реакции не влияет.",
         "ar": "لا يؤثر كون الماء الناتج غازًا أو سائلًا في المحتوى الحراري للتفاعل.",
         "zh": "生成气态水还是液态水，对反应焓变没有影响。",
-        "ku": "Çêbûna avê di rewşa gazê an şilek de bandorê li entalpiya reaksiyonê nake."
+        "ku": "Çêbûna avê di rewşa gaz an şile de bandorê li entalpiya reaksiyonê nake."
       },
       "whyTrapIsFalse": {
         "tr": "Gaz hâlindeki suyun entalpisi sıvı sudan büyüktür (fark buharlaşma ısısıdır); bu yüzden H2O(s) oluşan tepkimede H2O(g) oluşanınkinden daha fazla ısı açığa çıkar.",
@@ -519,7 +519,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энтальпия газообразной воды больше, чем жидкой (разница — теплота испарения); поэтому реакция с образованием H2O(ж) выделяет больше теплоты, чем с образованием H2O(г).",
         "ar": "المحتوى الحراري للماء الغازي أكبر من الماء السائل (الفرق هو حرارة التبخر)؛ لذلك يُطلق التفاعل الذي يكوّن H2O(l) حرارة أكثر من التفاعل الذي يكوّن H2O(g).",
         "zh": "气态水的焓高于液态水（差值为汽化热），所以生成 H2O(l) 的反应比生成 H2O(g) 的反应放出更多热量。",
-        "ku": "Entalpiya ava gazî ji ya ava şile mezintir e (cudahî germa vegirtinê/buharbûnê ye); ji ber vê yekê reaksiyona ku H2O(l) çêdike ji ya ku H2O(g) çêdike bêtir germ derdixe."
+        "ku": "Entalpiya ava di rewşa gaz de ji ya ava şile mezintir e (cudahî germa buharbûnê ye); ji ber vê yekê di reaksiyona ku H2O(l) çêdike de ji ya ku H2O(g) çêdike bêtir germ derdikeve."
       }
     },
     {
@@ -532,7 +532,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "В экзотермических реакциях потенциальная энергия (энтальпия) продуктов ниже, чем у реагентов, поэтому продукты устойчивее реагентов.",
         "ar": "في التفاعلات الطاردة للحرارة تكون الطاقة الكامنة (المحتوى الحراري) للنواتج أقل منها للمتفاعلات، لذا تكون النواتج أكثر استقرارًا من المتفاعلات.",
         "zh": "放热反应中生成物的势能（焓）低于反应物，因此生成物比反应物更稳定。",
-        "ku": "Di reaksiyonên ekzotermîk de enerjiya potansiyel (entalpî) ya berheman ji ya reaktantan kêmtir e, ji ber vê berhem ji reaktantan stabîltir in."
+        "ku": "Di reaksiyonên ekzotermîk de enerjiya potansiyel (entalpiya) hilberan ji ya reaktantan kêmtir e, loma hilber ji reaktantan stabîltir in."
       },
       "trap": {
         "tr": "Endotermik tepkimelerde ürünler girenlerden daha kararlıdır.",
@@ -542,7 +542,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "В эндотермических реакциях продукты устойчивее реагентов.",
         "ar": "في التفاعلات الماصة للحرارة تكون النواتج أكثر استقرارًا من المتفاعلات.",
         "zh": "吸热反应中生成物比反应物更稳定。",
-        "ku": "Di reaksiyonên endotermîk de berhem ji reaktantan stabîltir in."
+        "ku": "Di reaksiyonên endotermîk de hilber ji reaktantan stabîltir in."
       },
       "whyTrapIsFalse": {
         "tr": "Endotermik tepkimede ürünlerin potansiyel enerjisi girenlerinkinden yüksektir; enerjisi yüksek olan tür daha kararsız kabul edildiğinden bu tepkimelerde girenler daha kararlıdır.",
@@ -552,7 +552,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "В эндотермической реакции потенциальная энергия продуктов выше, чем у реагентов; частицы с большей энергией считаются менее устойчивыми, поэтому в таких реакциях устойчивее реагенты.",
         "ar": "في التفاعل الماص للحرارة تكون الطاقة الكامنة للنواتج أعلى من المتفاعلات؛ وبما أن المادة ذات الطاقة الأعلى تُعد أقل استقرارًا فإن المتفاعلات هنا هي الأكثر استقرارًا.",
         "zh": "吸热反应中生成物的势能高于反应物；能量越高的物质越不稳定，所以这类反应中反应物更稳定。",
-        "ku": "Di reaksiyona endotermîk de enerjiya potansiyel a berheman ji ya reaktantan bilindtir e; ji ber ku maddeya bi enerjiya bilindtir kêmtir stabîl tê hesibandin, li vir reaktant stabîltir in."
+        "ku": "Di reaksiyona endotermîk de enerjiya potansiyel a hilberan ji ya reaktantan bilindtir e; ji ber ku cureya bi enerjiya bilindtir kêmtir stabîl tê qebûlkirin, di van reaksiyonan de reaktant stabîltir in."
       }
     }
   ],
@@ -567,7 +567,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Экзотермическая реакция (ΔH < 0)",
         "ar": "التفاعل الطارد للحرارة (ΔH < 0)",
         "zh": "放热反应(ΔH < 0)",
-        "ku": "Reaksiyona ekzotermîk (ΔH < 0)"
+        "ku": "Reaksiyona Ekzotermîk (ΔH < 0)"
       },
       "conceptB": {
         "tr": "Endotermik Tepkime (ΔH > 0)",
@@ -577,7 +577,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Эндотермическая реакция (ΔH > 0)",
         "ar": "التفاعل الماص للحرارة (ΔH > 0)",
         "zh": "吸热反应(ΔH > 0)",
-        "ku": "Reaksiyona endotermîk (ΔH > 0)"
+        "ku": "Reaksiyona Endotermîk (ΔH > 0)"
       },
       "distinction": {
         "tr": "Ekzotermik tepkimede sistem ortama ısı verir ve ortamın sıcaklığı artar; endotermik tepkimede ise sistem ortamdan ısı alır ve ortamın sıcaklığı düşer.",
@@ -587,7 +587,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Экзотермическая реакция (ΔH < 0) идёт с выделением теплоты в окружающую среду, и температура среды повышается; эндотермическая реакция (ΔH > 0) идёт с поглощением теплоты из окружающей среды, и температура среды понижается.",
         "ar": "في التفاعل الطارد للحرارة يُطلق النظام حرارة فترتفع درجة حرارة الوسط المحيط؛ وفي التفاعل الماص للحرارة يمتص النظام حرارة فتنخفض درجة حرارة الوسط.",
         "zh": "放热反应(ΔH < 0)中体系向环境放出热量，环境温度升高；而吸热反应(ΔH > 0)中体系从环境吸收热量，环境温度降低。",
-        "ku": "Di reaksiyona ekzotermîk de sîstem germê dide û germahiya hawîrdorê zêde dibe; di reaksiyona endotermîk de sîstem germê digire û germahiya hawîrdorê kêm dibe."
+        "ku": "Di reaksiyona ekzotermîk de sîstem germê dide derdorê û germahiya derdorê bilind dibe; di reaksiyona endotermîk de sîstem germê ji derdorê digire û germahiya derdorê dadikeve."
       }
     },
     {
@@ -600,7 +600,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энтальпия образования",
         "ar": "المحتوى الحراري للتكوين",
         "zh": "生成焓",
-        "ku": "Entalpiya avabûnê"
+        "ku": "Entalpiya Çêbûnê"
       },
       "conceptB": {
         "tr": "Bağ Enerjisi",
@@ -610,7 +610,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энергия связи",
         "ar": "طاقة الرابطة",
         "zh": "键能",
-        "ku": "Enerjiya girêdanê"
+        "ku": "Enerjiya Girêdanê"
       },
       "distinction": {
         "tr": "Oluşum entalpisi 1 mol bileşiğin elementlerinden oluşmasındaki entalpi değişimidir; bağ enerjisi gaz hâlindeki maddede 1 mol bağı kırmak için gereken enerjidir.",
@@ -620,7 +620,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энтальпия образования — изменение энтальпии при образовании 1 моль соединения из простых веществ; энергия связи — энергия, необходимая для разрыва 1 моль связей в веществе, находящемся в газообразном состоянии.",
         "ar": "المحتوى الحراري للتكوين هو التغير في المحتوى الحراري عند تكوّن 1 mol من المركب من عناصره؛ وطاقة الرابطة هي الطاقة اللازمة لكسر 1 mol من رابطة ما في الحالة الغازية.",
         "zh": "生成焓是由单质生成 1 mol 化合物时的焓变；键能是在气态下断开 1 mol 某种化学键所需的能量。",
-        "ku": "Entalpiya avabûnê guherîna entalpiyê ye dema 1 mol pêkhate ji elementên xwe çêdibe; enerjiya girêdanê enerjiya pêwîst e ji bo şikandina 1 mol girêdanê di rewşa gazî de."
+        "ku": "Entalpiya çêbûnê guherîna entalpiyê ye dema ku 1 mol pêkhate ji elementên xwe çêdibe; enerjiya girêdanê ew enerjî ye ku ji bo şikandina 1 mol girêdanê di madeya di rewşa gaz de pêwîst e."
       }
     },
     {
@@ -633,7 +633,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Стандартная энтальпия образования (ΔHf°)",
         "ar": "المحتوى الحراري القياسي للتكوين (ΔHf°)",
         "zh": "标准生成焓(ΔHf°)",
-        "ku": "Entalpiya avabûnê ya standard (ΔHf°)"
+        "ku": "Entalpiya Çêbûnê ya Standard (ΔHf°)"
       },
       "conceptB": {
         "tr": "Tepkime Entalpisi (ΔH°)",
@@ -653,7 +653,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Стандартная энтальпия образования (ΔHf°) — изменение энтальпии при образовании 1 моль соединения из простых веществ в их наиболее устойчивом состоянии при стандартных условиях; энтальпия реакции (ΔH°) — разность суммарной энтальпии продуктов и суммарной энтальпии реагентов.",
         "ar": "المحتوى الحراري القياسي للتكوين هو التغير في المحتوى الحراري عند تكوّن 1 mol من المركب من عناصره في أكثر حالاتها استقرارًا في الظروف القياسية؛ أما المحتوى الحراري للتفاعل فهو الفرق بين مجموع المحتوى الحراري للنواتج ومجموع المحتوى الحراري للمتفاعلات.",
         "zh": "标准生成焓(ΔHf°)是在标准状态下由最稳定状态的单质生成 1 mol 化合物时的焓变；而反应热(ΔH°)是生成物总焓与反应物总焓之差。",
-        "ku": "Entalpiya avabûnê ya standard guherîna entalpiyê ye dema 1 mol pêkhate di şert û mercên standard de ji elementên xwe yên di rewşa herî stabîl de çêdibe; entalpiya reaksiyonê cudahiya navbera entalpiya giştî ya berheman û ya reaktantan e."
+        "ku": "Entalpiya çêbûnê ya standard guherîna entalpiyê ye dema ku 1 mol pêkhate di şertên standard de ji rewşên herî stabîl ên elementên xwe çêdibe; entalpiya reaksiyonê cudahiya navbera entalpiya giştî ya hilberan û entalpiya giştî ya reaktantan e."
       }
     },
     {
@@ -666,7 +666,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энергия активации прямой реакции Ea(пр)",
         "ar": "طاقة تنشيط التفاعل الأمامي (Eai)",
         "zh": "正反应活化能(Eai)",
-        "ku": "Enerjiya aktîvasyonê ya reaksiyona pêşve (Eai)"
+        "ku": "Enerjiya Aktîvasyonê ya Pêşve (Eai)"
       },
       "conceptB": {
         "tr": "Geri Aktifleşme Enerjisi (Eag)",
@@ -676,7 +676,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энергия активации обратной реакции Ea(обр)",
         "ar": "طاقة تنشيط التفاعل العكسي (Eag)",
         "zh": "逆反应活化能(Eag)",
-        "ku": "Enerjiya aktîvasyonê ya reaksiyona paşve (Eag)"
+        "ku": "Enerjiya Aktîvasyonê ya Paşve (Eag)"
       },
       "distinction": {
         "tr": "İleri aktifleşme enerjisi, girenlerin aktifleşmiş komplekse ulaşmak için aşması gereken enerji engelidir; geri aktifleşme enerjisi ise ürünlerin aktifleşmiş komplekse ulaşması için gereken enerjidir. Tepkime entalpisi, ilkinden ikincisi çıkarılarak bulunur.",
@@ -686,7 +686,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энергия активации прямой реакции Ea(пр) — энергетический барьер, который должны преодолеть реагенты, чтобы образовать активированный комплекс; энергия активации обратной реакции Ea(обр) — энергия, необходимая продуктам, чтобы образовать активированный комплекс. Энтальпия реакции равна разности первой и второй величин.",
         "ar": "طاقة تنشيط التفاعل الأمامي: حاجز الطاقة الذي يجب أن تتجاوزه المتفاعلات للوصول إلى المعقد المنشط؛ طاقة تنشيط التفاعل العكسي: الطاقة التي تحتاجها النواتج للوصول إلى المعقد المنشط. والمحتوى الحراري للتفاعل يساوي الأولى مطروحًا منها الثانية.",
         "zh": "正反应活化能(Eai)是反应物到达活化络合物必须越过的能垒；而逆反应活化能(Eag)是生成物到达活化络合物所需越过的能垒。反应焓变等于前者减去后者。",
-        "ku": "Enerjiya aktîvasyonê ya reaksiyona pêşve astenga enerjiyê ye ku divê reaktant derbas bikin da ku bigihîjin kompleksa aktîfkirî; enerjiya aktîvasyonê ya reaksiyona paşve enerjiya ku berhem hewce dikin da ku bigihîjin kompleksa aktîfkirî ye. Entalpiya reaksiyonê ya yekem kêm ya duyem e."
+        "ku": "Enerjiya aktîvasyonê ya pêşve ew astenga enerjiyê ye ku divê reaktant derbas bikin da ku bigihîjin kompleksa aktîvkirî; enerjiya aktîvasyonê ya paşve ew enerjî ye ku hilber jê re hewce ne da ku bigihîjin kompleksa aktîvkirî. Entalpiya reaksiyonê bi derxistina ya duyem ji ya yekem tê dîtin."
       }
     },
     {
@@ -709,7 +709,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Окружающая среда",
         "ar": "الوسط المحيط",
         "zh": "环境",
-        "ku": "Hawîrdor"
+        "ku": "Derdor"
       },
       "distinction": {
         "tr": "Sistem, üzerinde inceleme yapılan madde ya da tepkime karışımıdır; ortam (çevre) ise bunun dışında kalan ve onunla ısı ya da iş şeklinde enerji alışverişi yapabilen her şeydir.",
@@ -719,7 +719,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Система — изучаемое вещество или реакционная смесь; окружающая среда — всё, что находится вне системы и может обмениваться с ней энергией в виде теплоты или работы.",
         "ar": "النظام هو المادة أو خليط التفاعل قيد الدراسة؛ أما الوسط المحيط فهو كل ما يقع خارج النظام ويتبادل معه الطاقة على شكل حرارة أو شغل.",
         "zh": "体系是所研究的物质或反应混合物；而环境是体系以外、能以热或功的形式与体系交换能量的一切部分。",
-        "ku": "Sîstem madde an tevliheviya reaksiyonê ya ku tê lêkolîn e; hawîrdor jî her tiştê li derveyî wê ye ku pê re bi awayê germ an kar enerjiyê diguhere."
+        "ku": "Sîstem ew made an tevliheviya reaksiyonê ye ku li ser tê lêkolîn; derdor jî her tiştê li derveyî wê ye ku dikare bi wê re bi rêya germ an kar enerjiyê biguherîne."
       }
     },
     {
@@ -732,7 +732,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Разрыв связи",
         "ar": "كسر الرابطة",
         "zh": "化学键断裂",
-        "ku": "Şikandina girêdanê"
+        "ku": "Şikestina Girêdanê"
       },
       "conceptB": {
         "tr": "Bağ Oluşumu",
@@ -742,7 +742,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Образование связи",
         "ar": "تكوين الرابطة",
         "zh": "化学键形成",
-        "ku": "Çêbûna girêdanê"
+        "ku": "Çêbûna Girêdanê"
       },
       "distinction": {
         "tr": "Bağ kırılması daima endotermiktir (ısı alınır); bağ oluşumu ise daima ekzotermiktir (ısı açığa çıkar).",
@@ -752,7 +752,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Разрыв связи — всегда эндотермический процесс (теплота поглощается); образование связи — всегда экзотермический процесс (теплота выделяется).",
         "ar": "كسر الرابطة يكون دائمًا ماصًّا للحرارة (تُمتص حرارة)؛ أما تكوين الرابطة فيكون دائمًا طاردًا للحرارة (تنطلق حرارة).",
         "zh": "化学键断裂总是吸热的（吸收热量）；化学键形成总是放热的（放出热量）。",
-        "ku": "Şikandina girêdanê her tim endotermîk e (germ tê girtin); çêbûna girêdanê her tim ekzotermîk e (germ tê berdan)."
+        "ku": "Şikestina girêdanê her tim endotermîk e (germ tê girtin); çêbûna girêdanê her tim ekzotermîk e (germ derdikeve)."
       }
     },
     {
@@ -765,7 +765,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Закон Гесса",
         "ar": "قانون هس",
         "zh": "盖斯定律",
-        "ku": "Qanûna Hess"
+        "ku": "Zagona Hess"
       },
       "conceptB": {
         "tr": "Termodinamik 1. Yasa",
@@ -775,7 +775,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Первый закон термодинамики",
         "ar": "القانون الأول للديناميكا الحرارية",
         "zh": "热力学第一定律",
-        "ku": "Qanûna 1. ya Termodînamîkê"
+        "ku": "Zagona Yekem a Termodînamîkê"
       },
       "distinction": {
         "tr": "Hess yasası tepkime entalpisinin izlenen yoldan bağımsız olduğunu belirtir; 1. yasa enerjinin yoktan var, vardan yok edilemeyeceğini ifade eder.",
@@ -785,7 +785,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Закон Гесса утверждает, что энтальпия реакции не зависит от пути её протекания; первый закон термодинамики утверждает, что энергия не возникает из ничего и не исчезает бесследно.",
         "ar": "ينص قانون هس على أن المحتوى الحراري للتفاعل مستقل عن المسار المتبع؛ وينص القانون الأول للديناميكا الحرارية على أن الطاقة لا تُستحدث ولا تفنى.",
         "zh": "盖斯定律指出，反应焓变与反应途径无关；而热力学第一定律指出，能量既不能凭空产生，也不能凭空消失。",
-        "ku": "Qanûna Hess dibêje ku entalpiya reaksiyonê ji riya ku tê şopandin serbixwe ye; qanûna 1. ya termodînamîkê dibêje ku enerjî ne tê afirandin ne jî tune dibe."
+        "ku": "Zagona Hess dibêje ku entalpiya reaksiyonê bi riya ku tê şopandin ve ne girêdayî ye; zagona yekem a termodînamîkê dibêje ku enerjî ji tunebûnê nayê afirandin û nayê tunekirin."
       }
     },
     {
@@ -798,7 +798,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Активированный комплекс",
         "ar": "المعقد المنشط",
         "zh": "活化络合物",
-        "ku": "Kompleksa aktîfkirî"
+        "ku": "Kompleksa Aktîvkirî"
       },
       "conceptB": {
         "tr": "Kararlı Ürün",
@@ -808,7 +808,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Устойчивый продукт",
         "ar": "الناتج المستقر",
         "zh": "稳定的生成物",
-        "ku": "Berhema stabîl"
+        "ku": "Hilbera Stabîl"
       },
       "distinction": {
         "tr": "Aktifleşmiş kompleks potansiyel enerji grafiğinin tepe noktasındaki anlık, kararsız ve yalıtılamayan yapıdır; ürün ise grafiğin çukurunda bulunan, yalıtılabilen kararlı maddedir.",
@@ -818,7 +818,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Активированный комплекс — мгновенно существующая неустойчивая структура на вершине диаграммы потенциальной энергии, которую нельзя выделить; устойчивый продукт — вещество в энергетической впадине диаграммы, которое можно выделить.",
         "ar": "المعقد المنشط بنية لحظية غير مستقرة لا يمكن عزلها توجد عند قمة مخطط الطاقة الكامنة؛ أما الناتج المستقر فمادة يمكن عزلها توجد في قاع المخطط.",
         "zh": "活化络合物是势能图顶点处瞬间存在、不稳定且无法分离的结构；而稳定的生成物位于势能图的低谷处，可以分离出来。",
-        "ku": "Kompleksa aktîfkirî avahiya kêliyî, ne stabîl û neveqetandî ye ku li serê grafîka enerjiya potansiyel e; berhem jî maddeyeke stabîl e ku di çala grafîkê de ye û dikare were veqetandin."
+        "ku": "Kompleksa aktîvkirî avahiyeke demkî, nestabîl û neveqetandinbar e ku li lûtkeya grafîka enerjiya potansiyel e; hilbera stabîl jî madeyeke stabîl e ku di çala grafîkê de ye û dikare were veqetandin."
       }
     }
   ],
@@ -833,7 +833,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Этапы применения закона Гесса",
         "ar": "تطبيق قانون هس",
         "zh": "盖斯定律的应用步骤",
-        "ku": "Gavên sepandina Qanûna Hess"
+        "ku": "Gavên Sepandina Zagona Hess"
       },
       "steps": [
         {
@@ -844,7 +844,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Записывают целевую реакцию и сравнивают её с данными промежуточными реакциями",
           "ar": "يُكتب التفاعل الهدف ويُقارن بالتفاعلات الوسيطة المعطاة",
           "zh": "写出目标反应，并与所给的各步反应进行比较",
-          "ku": "Reaksiyona armanc tê nivîsandin û bi reaksiyonên navîn ên dayî re tê berhevdan"
+          "ku": "Reaksiyona armanc tê nivîsandin û bi reaksiyonên navber ên hatine dayîn re tê berhevdan"
         },
         {
           "tr": "Ara tepkimeler, hedefteki giren ve ürünlere uyacak biçimde ters çevrilir veya uygun katsayıyla çarpılır",
@@ -854,7 +854,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Промежуточные реакции записывают в обратном направлении или умножают на подходящие коэффициенты так, чтобы они соответствовали реагентам и продуктам целевой реакции",
           "ar": "تُعكس التفاعلات الوسيطة أو تُضرب في معاملات مناسبة لتوافق متفاعلات ونواتج التفاعل الهدف",
           "zh": "根据目标反应的反应物和生成物，将各步反应逆写或乘以适当的系数",
-          "ku": "Reaksiyonên navîn li gorî reaktant û berhemên reaksiyona armanc tên berevajîkirin an bi rêjeyeke guncan tên zêdekirin"
+          "ku": "Reaksiyonên navber li gorî reaktant û hilberên reaksiyona armanc berevajî tên nivîsandin an bi hevbereke guncav tên pirkirin"
         },
         {
           "tr": "Ters çevrilen tepkimelerin ΔH işareti değiştirilir, katsayıyla çarpılanların ΔH değeri aynı katsayıyla çarpılır",
@@ -864,7 +864,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "У реакций, записанных в обратном направлении, меняют знак ΔH, а у умноженных на коэффициент ΔH умножают на тот же коэффициент",
           "ar": "تُغيَّر إشارة ΔH للتفاعلات المعكوسة، وتُضرب ΔH في المعامل نفسه للتفاعلات المضروبة",
           "zh": "逆写的反应 ΔH 变号，乘以系数的反应 ΔH 乘以相同的系数",
-          "ku": "Nîşana ΔH ya reaksiyonên berevajîkirî tê guhertin, ΔH ya reaksiyonên zêdekirî jî bi heman rêjeyê tê zêdekirin"
+          "ku": "Nîşana ΔH ya reaksiyonên berevajîkirî tê guhertin; nirxa ΔH ya reaksiyonên bi hevberekê pirkirî jî bi heman hevberê tê pirkirin"
         },
         {
           "tr": "Düzenlenen tepkimeler ve ΔH değerleri taraf tarafa toplanarak hedef tepkimenin ΔH'si bulunur",
@@ -874,7 +874,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Преобразованные уравнения и их значения ΔH почленно складывают и получают ΔH целевой реакции",
           "ar": "تُجمع التفاعلات المعدَّلة وقيم ΔH الخاصة بها للحصول على ΔH للتفاعل الهدف",
           "zh": "将调整后的各步反应及其 ΔH 相加，得到目标反应的 ΔH",
-          "ku": "Reaksiyonên sererastkirî û nirxên ΔH yên wan tên berhevkirin û ΔH ya reaksiyona armanc tê dîtin"
+          "ku": "Reaksiyonên sererastkirî û nirxên wan ên ΔH alî bi alî tên berhevkirin û ΔH ya reaksiyona armanc tê dîtin"
         }
       ]
     },
@@ -888,7 +888,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Нахождение ΔH по энергиям связей",
         "ar": "إيجاد ΔH من طاقات الروابط",
         "zh": "由键能求 ΔH",
-        "ku": "Dîtina ΔH ji enerjiyên girêdanê"
+        "ku": "Dîtina ΔH ji Enerjiyên Girêdanê"
       },
       "steps": [
         {
@@ -899,7 +899,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Записывают развёрнутые структурные формулы реагентов и продуктов и определяют виды и число связей",
           "ar": "تُكتب الصيغ البنائية للمتفاعلات والنواتج لتحديد أنواع الروابط وأعدادها",
           "zh": "写出反应物和生成物的结构式，确定化学键的种类和数目",
-          "ku": "Formulên avahiyî yên reaktant û berheman tên nivîsandin û cure û hejmara girêdanan tê diyarkirin"
+          "ku": "Formulên avahiyê yên vekirî yên reaktant û hilberan tên nivîsandin û cure û hejmara girêdanan tê diyarkirin"
         },
         {
           "tr": "Girenlerde kırılan bağların enerjileri toplanır",
@@ -909,7 +909,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Суммируют энергии связей, разрываемых в реагентах",
           "ar": "تُجمع طاقات الروابط المكسورة في المتفاعلات",
           "zh": "把反应物中断裂的化学键的键能相加",
-          "ku": "Enerjiyên girêdanên di reaktantan de şikestî tên berhevkirin"
+          "ku": "Enerjiyên girêdanên ku di reaktantan de dişkên tên berhevkirin"
         },
         {
           "tr": "Ürünlerde oluşan bağların enerjileri toplanır",
@@ -919,7 +919,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Суммируют энергии связей, образующихся в продуктах",
           "ar": "تُجمع طاقات الروابط المتكونة في النواتج",
           "zh": "把生成物中形成的化学键的键能相加",
-          "ku": "Enerjiyên girêdanên di berheman de çêbûyî tên berhevkirin"
+          "ku": "Enerjiyên girêdanên ku di hilberan de çêdibin tên berhevkirin"
         },
         {
           "tr": "Kırılan bağların toplam enerjisinden oluşan bağların toplam enerjisi çıkarılarak ΔH bulunur",
@@ -929,7 +929,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "ΔH находят, вычитая суммарную энергию образующихся связей из суммарной энергии разрываемых связей",
           "ar": "تُحسب ΔH بطرح مجموع طاقات الروابط المتكونة من مجموع طاقات الروابط المكسورة",
           "zh": "用断裂化学键的总键能减去形成化学键的总键能，得到 ΔH",
-          "ku": "ΔH bi derxistina enerjiya giştî ya girêdanên çêbûyî ji enerjiya giştî ya girêdanên şikestî tê dîtin"
+          "ku": "Enerjiya giştî ya girêdanên çêbûyî ji enerjiya giştî ya girêdanên şikestî tê derxistin û ΔH tê dîtin"
         }
       ]
     },
@@ -943,7 +943,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Нахождение ΔH по энтальпиям образования",
         "ar": "إيجاد ΔH من المحتوى الحراري للتكوين",
         "zh": "由生成焓求 ΔH",
-        "ku": "Dîtina ΔH ji entalpiyên avabûnê"
+        "ku": "Dîtina ΔH ji Entalpiyên Çêbûnê"
       },
       "steps": [
         {
@@ -954,7 +954,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Для каждого вещества реакции определяют стандартную энтальпию образования (ΔHf°); для простых веществ в наиболее устойчивом состоянии берут ноль",
           "ar": "يُحدَّد المحتوى الحراري القياسي للتكوين (ΔHf°) لكل مادة في التفاعل؛ ويؤخذ صفرًا للعناصر في أكثر حالاتها استقرارًا",
           "zh": "确定反应中每种物质的标准生成焓(ΔHf°)；最稳定状态的单质取零",
-          "ku": "Entalpiya avabûnê ya standard (ΔHf°) ya her madeya di reaksiyonê de tê diyarkirin; ji bo elementên di rewşa herî stabîl de sifir tê girtin"
+          "ku": "Entalpiya çêbûnê ya standard (ΔHf°) ya her madeya di reaksiyonê de tê diyarkirin; ji bo elementên di rewşa xwe ya herî stabîl de sifir tê girtin"
         },
         {
           "tr": "Her ΔHf° değeri, ilgili maddenin denklemdeki katsayısıyla çarpılır",
@@ -964,7 +964,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Каждое значение ΔHf° умножают на коэффициент соответствующего вещества в уравнении",
           "ar": "تُضرب كل قيمة ΔHf° في معامل المادة المقابلة في المعادلة",
           "zh": "把每个 ΔHf° 乘以该物质在方程式中的系数",
-          "ku": "Her nirxa ΔHf° bi rêjeya madeya têkildar a di hevkêşeyê de tê zêdekirin"
+          "ku": "Her nirxa ΔHf° bi hevberê madeya têkildar a di hevkêşeyê de tê pirkirin"
         },
         {
           "tr": "Ürünlere ait çarpımlar kendi aralarında, girenlere ait çarpımlar kendi aralarında toplanır",
@@ -974,7 +974,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Полученные значения складывают отдельно для продуктов и отдельно для реагентов",
           "ar": "تُجمع القيم الناتجة للنواتج على حدة وللمتفاعلات على حدة",
           "zh": "把所得数值按生成物和反应物分别相加",
-          "ku": "Nirxên hatine dîtin ji bo berheman cuda û ji bo reaktantan cuda tên berhevkirin"
+          "ku": "Encamên pirkirinê yên hilberan bi hev re û yên reaktantan bi hev re tên berhevkirin"
         },
         {
           "tr": "Ürünlerin toplamından girenlerin toplamı çıkarılarak ΔH bulunur",
@@ -984,7 +984,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "ΔH находят, вычитая сумму для реагентов из суммы для продуктов",
           "ar": "تُحسب ΔH بطرح مجموع المتفاعلات من مجموع النواتج",
           "zh": "用生成物的总和减去反应物的总和，得到 ΔH",
-          "ku": "ΔH bi derxistina koma reaktantan ji koma berheman tê dîtin"
+          "ku": "Koma reaktantan ji koma hilberan tê derxistin û ΔH tê dîtin"
         }
       ]
     },
@@ -1009,7 +1009,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "По графику определяют потенциальную энергию реагентов",
           "ar": "تُقرأ الطاقة الكامنة للمواد المتفاعلة من المخطط",
           "zh": "从图中读取反应物的势能",
-          "ku": "Enerjiya potansiyela reaktantan ji grafikê tê xwendin"
+          "ku": "Enerjiya potansiyel a reaktantan ji grafîkê tê xwendin"
         },
         {
           "tr": "Tepe noktasındaki aktifleşmiş kompleksin potansiyel enerjisi belirlenir",
@@ -1019,7 +1019,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Определяют потенциальную энергию активированного комплекса на вершине кривой",
           "ar": "تُحدَّد الطاقة الكامنة للمعقد المنشط عند القمة",
           "zh": "确定顶点处活化络合物的势能",
-          "ku": "Enerjiya potansiyel a kompleksa aktîfkirî ya li lûtkeyê tê diyarkirin"
+          "ku": "Enerjiya potansiyel a kompleksa aktîvkirî ya li lûtkeyê tê diyarkirin"
         },
         {
           "tr": "Eai = Eaktifleşmiş - Egirenler ile ileri aktifleşme enerjisi bulunur",
@@ -1029,7 +1029,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Энергию активации прямой реакции находят по формуле Ea(пр) = E(активированного комплекса) - E(реагентов)",
           "ar": "تُحسب طاقة تنشيط التفاعل الأمامي من العلاقة Eai = E(المعقد المنشط) - E(المتفاعلات)",
           "zh": "由 Eai = E(活化络合物) - E(反应物) 求出正反应活化能",
-          "ku": "Enerjiya aktîvasyonê ya pêşve bi Eai = E(kompleksa aktîfkirî) - E(reaktant) tê dîtin"
+          "ku": "Enerjiya aktîvasyonê ya pêşve bi Eai = E(kompleksa aktîvkirî) - E(reaktant) tê dîtin"
         },
         {
           "tr": "Eag = Eaktifleşmiş − Eürünler bulunur ve ΔH = Eai − Eag (= Eürünler − Egirenler) ile tepkime ısısı hesaplanır",
@@ -1039,7 +1039,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Находят Ea(обр) = E(активированного комплекса) − E(продуктов) и вычисляют теплоту реакции по ΔH = Ea(пр) − Ea(обр) (= E(продуктов) − E(реагентов))",
           "ar": "تُحسب Eag = E(المعقد المنشط) − E(النواتج) ثم تُحسب حرارة التفاعل من ΔH = Eai − Eag (= E(النواتج) − E(المتفاعلات))",
           "zh": "求出 Eag = E(活化络合物) − E(生成物)，再由 ΔH = Eai − Eag(= E(生成物) − E(反应物))计算反应热",
-          "ku": "Eag = E(kompleksa aktîfkirî) − E(berhem) tê dîtin û germa reaksiyonê bi ΔH = Eai − Eag (= E(berhem) − E(reaktant)) tê hesibandin"
+          "ku": "Eag = E(kompleksa aktîvkirî) − E(hilber) tê dîtin û germa reaksiyonê bi ΔH = Eai − Eag (= E(hilber) − E(reaktant)) tê hesibandin"
         }
       ]
     }
@@ -1055,7 +1055,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Энергия активации прямой реакции Ea(пр) = 85 кДж, энергия активации обратной реакции Ea(обр) = 130 кДж. Чему равна энтальпия реакции (ΔH) в кДж?",
         "ar": "إذا كانت طاقة التنشيط الأمامية لتفاعل كيميائي Eai = 85 kJ وطاقة التنشيط العكسية Eag = 130 kJ، فكم يبلغ المحتوى الحراري للتفاعل (ΔH) بوحدة kJ؟",
         "zh": "某化学反应的正反应活化能 Eai = 85 kJ，逆反应活化能 Eag = 130 kJ，该反应的焓变(ΔH)是多少 kJ？",
-        "ku": "Ger enerjiya aktîvkirina pêş a reaksiyona kîmyayî Eai = 85 kJ û enerjiya aktîvkirina berevajî Eag = 130 kJ be, entalpîya reaksiyonê (ΔH) di kJ de çi ye?"
+        "ku": "Enerjiya aktîvasyonê ya pêşve ya reaksiyoneke kîmyewî Eai = 85 kJ û enerjiya aktîvasyonê ya paşve Eag = 130 kJ e. Li gorî vê, entalpiya reaksiyonê (ΔH) çend kJ ye?"
       },
       "options": [
         {
@@ -1118,7 +1118,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "ΔH = Ea(пр) - Ea(обр) = 85 - 130 = -45 кДж (экзотермическая реакция).",
         "ar": "ΔH = Eai - Eag = 85 - 130 = -45 kJ (تفاعل طارد للحرارة).",
         "zh": "ΔH = Eai - Eag = 85 - 130 = -45 kJ（放热反应）。",
-        "ku": "ΔH = Eai - Eag = 85 - 130 = -45 kJ (reaksiyona exotermîk)."
+        "ku": "ΔH = Eai - Eag = 85 - 130 = -45 kJ e (reaksiyona ekzotermîk)."
       }
     },
     {
@@ -1131,7 +1131,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Для какого из следующих веществ стандартная молярная энтальпия образования при 25 °C и 1 атм принимается равной нулю?",
         "ar": "أيّ المواد الآتية يُعدّ المحتوى الحراري المولي القياسي لتكوينها صفرًا عند 25 °C و1 atm؟",
         "zh": "下列物质中，哪一种在 25 °C、1 atm 下的标准摩尔生成焓规定为零？",
-        "ku": "Kîjan ji maddeyên jêrîn di 25 °C û 1 atm de entalpiya molarê ya standard sifir e?"
+        "ku": "Entalpiya çêbûnê ya molî ya standard a kîjan ji van madeyan li 25 °C û 1 atm sifir tê qebûlkirin?"
       },
       "options": [
         {
@@ -1182,7 +1182,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "C(алмаз)",
           "ar": "C(الماس)",
           "zh": "C(金刚石)",
-          "ku": "C (almas)"
+          "ku": "C(elmas)"
         }
       ],
       "correctIndex": 0,
@@ -1194,7 +1194,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Стандартная энтальпия образования простого вещества в наиболее устойчивых при комнатных условиях аллотропной модификации и агрегатном состоянии равна нулю: O2(г) = 0.",
         "ar": "المحتوى الحراري القياسي لتكوين العناصر في أكثر متآصلاتها وحالاتها الفيزيائية استقرارًا في ظروف الغرفة يساوي صفرًا: O2(g) = 0.",
         "zh": "在 25 °C、1 atm 下，元素最稳定的同素异形体和物态的标准生成焓为零：O2(g) = 0。",
-        "ku": "Entalpiya standard a pêkhatina allotrope û rewşa fîzîkî ya herî stabîl a hêmanan di şert û mercên odeyê de sifir e: O2(g) = 0."
+        "ku": "Entalpiya çêbûnê ya standard a allotrop û rewşa fîzîkî ya herî stabîl a elementan di şertên odeyê de sifir e: O2(g) = 0 e."
       }
     },
     {
@@ -1207,7 +1207,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Чему равна молярная энтальпия сгорания пропана (кДж) по реакции C3H8(г) + 5O2(г) → 3CO2(г) + 4H2O(ж)? (ΔHf°: C3H8(г) = −104 кДж/моль, CO2(г) = −394 кДж/моль, H2O(ж) = −286 кДж/моль)",
         "ar": "وفقًا للتفاعل C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l)، كم يبلغ المحتوى الحراري المولي لاحتراق البروبان بوحدة kJ؟ (ΔHf°: C3H8(g) = −104 kJ/mol، CO2(g) = −394 kJ/mol، H2O(l) = −286 kJ/mol)",
         "zh": "根据反应 C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l)，丙烷的摩尔燃烧焓是多少 kJ？(ΔHf°：C3H8(g) = −104 kJ/mol，CO2(g) = −394 kJ/mol，H2O(l) = −286 kJ/mol)",
-        "ku": "Li gorî reaksiyona C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l), entalpiya şewitandinê ya molar a propanê çend kJ ye? (ΔHf°: C3H8(g) = −104 kJ/mol, CO2(g) = −394 kJ/mol, H2O(l) = −286 kJ/mol)"
+        "ku": "Li gorî reaksiyona C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l), entalpiya şewitînê ya molî ya propanê çend kJ ye? (ΔHf°: C3H8(g) = −104 kJ/mol, CO2(g) = −394 kJ/mol, H2O(l) = −286 kJ/mol)"
       },
       "options": [
         {
@@ -1270,7 +1270,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "ΔH = ΣΔHf(продуктов) − ΣΔHf(реагентов). Продукты: 3(−394) + 4(−286) = −1182 − 1144 = −2326 кДж. Реагенты: −104 + 5·0 = −104 кДж (O2 — простое вещество, ΔHf° = 0). ΔH = −2326 − (−104) = −2222 кДж. Если забыть коэффициенты, получится −576; если забыть только коэффициент H2O — −1364; если прибавить ΔHf пропана вместо того, чтобы вычесть, — −2430 кДж; вычитание продуктов из реагентов меняет знак (+2222).",
         "ar": "ΔH = ΣΔHf(النواتج) − ΣΔHf(المتفاعلات). النواتج: 3(−394) + 4(−286) = −1182 − 1144 = −2326 kJ. المتفاعلات: −104 + 5·0 = −104 kJ (O2 عنصر، ΔHf° = 0). ΔH = −2326 − (−104) = −2222 kJ. من ينسى المعاملات يحصل على −576، ومن ينسى معامل H2O فقط يحصل على −1364، ومن يجمع ΔHf للبروبان بدل طرحها يحصل على −2430 kJ؛ وطرح النواتج من المتفاعلات يقلب الإشارة (+2222).",
         "zh": "ΔH = ΣΔHf(生成物) − ΣΔHf(反应物)。生成物：3(−394) + 4(−286) = −1182 − 1144 = −2326 kJ。反应物：−104 + 5·0 = −104 kJ(O2 是单质，ΔHf° = 0)。ΔH = −2326 − (−104) = −2222 kJ。忘记化学计量数得 −576，只忘记 H2O 的系数得 −1364，把丙烷的 ΔHf 加上而不是减去得 −2430 kJ；用反应物减生成物则符号相反(+2222)。",
-        "ku": "ΔH = ΣΔHf(berhem) − ΣΔHf(reaktant). Berhem: 3(−394) + 4(−286) = −1182 − 1144 = −2326 kJ. Reaktant: −104 + 5·0 = −104 kJ (O2 element e, ΔHf° = 0). ΔH = −2326 − (−104) = −2222 kJ. Yê ku rêjeyan ji bîr dike −576, yê ku tenê rêjeya H2O ji bîr dike −1364, yê ku ΔHf ya propanê li şûna derxistinê lê zêde dike −2430 kJ dibîne; derxistina berheman ji reaktantan nîşanê berevajî dike (+2222)."
+        "ku": "ΔH = ΣΔHf(hilber) − ΣΔHf(reaktant). Hilber: 3(−394) + 4(−286) = −1182 − 1144 = −2326 kJ. Reaktant: −104 + 5·0 = −104 kJ (O2 element e, loma ΔHf° = 0). ΔH = −2326 − (−104) = −2222 kJ. Kesê ku hevberan ji bîr dike −576, kesê ku tenê hevberê H2O ji bîr dike −1364, kesê ku li şûna derxistinê nirxa ΔHf ya propanê lê zêde dike −2430 kJ dibîne; derxistina hilberan ji reaktantan jî nîşanê berevajî dike (+2222)."
       }
     },
     {
@@ -1304,7 +1304,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "ΔH реакции равна −57 кДж.",
           "ar": "قيمة ΔH للتفاعل تساوي −57 kJ.",
           "zh": "该反应的 ΔH 为 −57 kJ。",
-          "ku": "Nirxa ΔH ya reaksiyonê −57 kJ ye."
+          "ku": "Nirxa ΔH ya reaksiyonê −57 kJ e."
         },
         {
           "tr": "1 mol NO2(g) oluşurken 57 kJ ısı alınır.",
@@ -1314,7 +1314,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "При образовании 1 моль NO2(г) поглощается 57 кДж теплоты.",
           "ar": "تُمتص 57 kJ من الحرارة عند تكوّن 1 mol من NO2(g).",
           "zh": "生成 1 mol NO2(g) 时吸收 57 kJ 热量。",
-          "ku": "Dema 1 mol NO2(g) çêdibe 57 kJ germ tê girtin."
+          "ku": "Dema 1 mol NO2(g) çêdibe, 57 kJ germ tê girtin."
         },
         {
           "tr": "2 mol NO2(g)'nin toplam entalpisi 1 mol N2O4(g)'ünkinden düşüktür.",
@@ -1334,7 +1334,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Во время реакции температура окружающей среды повышается.",
           "ar": "ترتفع درجة حرارة الوسط المحيط أثناء حدوث التفاعل.",
           "zh": "反应进行时环境温度升高。",
-          "ku": "Dema reaksiyon pêk tê germahiya hawîrdorê zêde dibe."
+          "ku": "Dema reaksiyon pêk tê, germahiya derdorê bilind dibe."
         }
       ],
       "correctIndex": 0,
@@ -1346,7 +1346,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Теплота записана в левой части (со стороны реагентов), значит, реакция эндотермическая и ΔH = +57 кДж; ответ ΔH = −57 кДж — результат неверного прочтения того, с какой стороны записана теплота. В эндотермической реакции энтальпия продуктов выше, чем у реагентов, и окружающая среда охлаждается. 57 кДж относятся к образованию 2 моль NO2; на 1 моль NO2 поглощается 28,5 кДж. Для обратной реакции ΔH = −57 кДж, то есть в реакции 2NO2(г) → N2O4(г) выделяется 57 кДж теплоты.",
         "ar": "كُتبت الحرارة في جهة المتفاعلات، فالتفاعل ماص للحرارة وΔH = +57 kJ؛ واعتبار ΔH = −57 kJ خطأ في قراءة جهة كتابة الحرارة. في التفاعل الماص يكون المحتوى الحراري للنواتج أعلى من المتفاعلات ويبرد الوسط. الـ 57 kJ تخص تكوّن 2 mol من NO2؛ أما 1 mol من NO2 فيمتص 28.5 kJ. وعند عكس التفاعل تصبح ΔH = −57 kJ، أي أن التفاعل 2NO2(g) → N2O4(g) يُطلق 57 kJ من الحرارة.",
         "zh": "热量写在反应物一侧，反应吸热，ΔH = +57 kJ；把 ΔH 当成 −57 kJ 是看错了热量所在的一侧。吸热反应中生成物的焓高于反应物，环境变冷。57 kJ 对应生成 2 mol NO2，生成 1 mol NO2 只吸收 28.5 kJ。将反应逆转得 ΔH = −57 kJ，即 2NO2(g) → N2O4(g) 放出 57 kJ 热量。",
-        "ku": "Germ li aliyê reaktantan hatiye nivîsandin, loma reaksiyon endotermîk e û ΔH = +57 kJ ye; girtina ΔH wek −57 kJ şaş xwendina aliyê germê ye. Di reaksiyona endotermîk de entalpiya berheman ji ya reaktantan bilindtir e û hawîrdor sar dibe. 57 kJ ji bo çêbûna 2 mol NO2 ye; ji bo 1 mol NO2 28,5 kJ tê girtin. Dema reaksiyon berevajî dibe ΔH = −57 kJ e, ango di 2NO2(g) → N2O4(g) de 57 kJ germ derdikeve."
+        "ku": "Ji ber ku germ li aliyê reaktantan hatiye nivîsandin, reaksiyon endotermîk e û ΔH = +57 kJ e; girtina ΔH wekî −57 kJ şaşxwendina aliyê germê ye. Di reaksiyona endotermîk de entalpiya hilberan ji ya reaktantan bilindtir e û derdor sar dibe. 57 kJ ya çêbûna 2 mol NO2 ye; ji bo 1 mol NO2 28,5 kJ germ tê girtin. Dema reaksiyon berevajî tê nivîsandin ΔH = −57 kJ dibe, ango di reaksiyona 2NO2(g) → N2O4(g) de 57 kJ germ derdikeve."
       }
     },
     {
@@ -1359,7 +1359,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Реакция 1: N2(г) + O2(г) → 2NO(г)  ΔH = +180 кДж. Реакция 2: 2NO(г) + O2(г) → 2NO2(г)  ΔH = −114 кДж. Чему равна ΔH (кДж) реакции 1/2 N2(г) + O2(г) → NO2(г)?",
         "ar": "التفاعل 1: N2(g) + O2(g) → 2NO(g)  ΔH = +180 kJ؛ التفاعل 2: 2NO(g) + O2(g) → 2NO2(g)  ΔH = −114 kJ. بناءً على ذلك، كم تبلغ ΔH (بوحدة kJ) للتفاعل 1/2 N2(g) + O2(g) → NO2(g)؟",
         "zh": "反应 1：N2(g) + O2(g) → 2NO(g)  ΔH = +180 kJ；反应 2：2NO(g) + O2(g) → 2NO2(g)  ΔH = −114 kJ。据此，反应 1/2 N2(g) + O2(g) → NO2(g) 的 ΔH 是多少 kJ？",
-        "ku": "Reaksiyon 1: N2(g) + O2(g) → 2NO(g)  ΔH = +180 kJ; Reaksiyon 2: 2NO(g) + O2(g) → 2NO2(g)  ΔH = −114 kJ. Li gorî van agahiyan ΔH ya reaksiyona 1/2 N2(g) + O2(g) → NO2(g) çend kJ ye?"
+        "ku": "Reaksiyona 1: N2(g) + O2(g) → 2NO(g)  ΔH = +180 kJ; Reaksiyona 2: 2NO(g) + O2(g) → 2NO2(g)  ΔH = −114 kJ. Li gorî van agahiyan, nirxa ΔH ya reaksiyona 1/2 N2(g) + O2(g) → NO2(g) çend kJ ye?"
       },
       "options": [
         {
@@ -1422,7 +1422,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Если сложить обе реакции как есть, промежуточный продукт 2NO сокращается: N2(г) + 2O2(г) → 2NO2(г), ΔH = +180 + (−114) = +66 кДж. В целевой реакции образуется 1 моль NO2, поэтому суммарное уравнение умножают на 1/2: ΔH = +66/2 = +33 кДж. Если забыть разделить на 2, получится +66 кДж; если сложить ΔH второй реакции без учёта знака — +294 кДж.",
         "ar": "بجمع التفاعلين كما هما يُختصر الناتج الوسيط 2NO: N2(g) + 2O2(g) → 2NO2(g)، ΔH = +180 + (−114) = +66 kJ. في التفاعل الهدف 1 mol من NO2، لذا يُضرب المجموع في 1/2: ΔH = +66/2 = +33 kJ. من ينسى القسمة على 2 يحصل على +66 kJ، ومن يجمع ΔH الثانية دون إشارتها يحصل على +294 kJ.",
         "zh": "两个反应直接相加，中间产物 2NO 消去：N2(g) + 2O2(g) → 2NO2(g)，ΔH = +180 + (−114) = +66 kJ。目标反应中 NO2 为 1 mol，故乘以 1/2：ΔH = +66/2 = +33 kJ。忘记除以 2 得 +66 kJ；把第二个 ΔH 去掉负号相加得 +294 kJ。",
-        "ku": "Heke her du reaksiyon wek xwe werin berhevkirin, berhema navîn 2NO kurt dibe: N2(g) + 2O2(g) → 2NO2(g), ΔH = +180 + (−114) = +66 kJ. Di reaksiyona armanc de 1 mol NO2 heye, loma ev bi 1/2 tê zêdekirin: ΔH = +66/2 = +33 kJ. Yê ku dabeşkirina li 2 ji bîr dike +66 kJ, yê ku ΔH ya duyem bê nîşan lê zêde dike +294 kJ dibîne."
+        "ku": "Heke her du reaksiyon wekî xwe werin berhevkirin, hilbera navber 2NO ji her du aliyan diçe: N2(g) + 2O2(g) → 2NO2(g), ΔH = +180 + (−114) = +66 kJ. Ji ber ku di reaksiyona armanc de 1 mol NO2 heye, ev reaksiyona giştî bi 1/2 tê pirkirin: ΔH = +66/2 = +33 kJ. Kesê ku dabeşkirina li ser 2 ji bîr dike +66 kJ, kesê ku ΔH ya reaksiyona duyem bê nîşan lê zêde dike +294 kJ dibîne."
       }
     },
     {
@@ -1435,7 +1435,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Какие из следующих процессов, встречающихся в быту, экзотермические? I. Нафталин в шкафу со временем уменьшается в результате сублимации II. Водяной пар конденсируется на холодном оконном стекле III. Природный газ (CH4) сгорает на плите",
         "ar": "أي من العمليات اليومية الآتية طاردة للحرارة؟ I. تناقص حجم النفتالين في الخزانة مع الزمن بالتسامي II. تكاثف بخار الماء على زجاج نافذة بارد III. احتراق الغاز الطبيعي (CH4) في الموقد",
         "zh": "下列日常现象中，哪些是放热的？I. 衣柜里的萘因升华而逐渐变小 II. 水蒸气在冰冷的窗玻璃上液化 III. 天然气(CH4)在灶上燃烧",
-        "ku": "Kîjan ji van bûyerên rojane ekzotermîk in? I. Naftalîna di dolabê de bi demê re bi sublîmasyonê piçûk dibe II. Buhara avê li ser cama pencereya sar şil dibe (kondensasyon) III. Gaza xwezayî (CH4) li ser ocaxê dişewite"
+        "ku": "Kîjan ji van bûyerên jiyana rojane ekzotermîk in? I. Naftalîna di dolabê de bi demê re bi sublîmebûnê piçûk dibe II. Buhara avê li ser cama pencereya sar şile dibe III. Gaza xwezayî (CH4) li ser ocaxê dişewite"
       },
       "options": [
         {
@@ -1498,7 +1498,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "I. При сублимации преодолевается притяжение между частицами твёрдого вещества; процесс идёт с поглощением теплоты из окружающей среды, он эндотермический. II. При конденсации частицы газа сближаются, между ними возникает притяжение и выделяется теплота; процесс экзотермический. III. Горение сопровождается выделением теплоты и света; процесс экзотермический. Экзотермические процессы — II и III.",
         "ar": "I. في التسامي يُتغلب على قوى التجاذب بين جسيمات الصلب؛ فتأخذ العملية حرارة من الوسط وهي ماصة للحرارة. II. في التكاثف تقترب جسيمات الغاز وتتكوّن بينها قوى تجاذب فتنطلق حرارة؛ طاردة للحرارة. III. تفاعلات الاحتراق تُطلق حرارة وضوءًا؛ طاردة للحرارة. العمليات الطاردة هي II وIII.",
         "zh": "I. 升华时要克服固体粒子间的吸引，从环境吸热，是吸热过程。II. 液化时气体粒子相互靠近、形成吸引作用并放热，是放热过程。III. 燃烧放出热和光，是放热反应。放热的是 II 和 III。",
-        "ku": "I. Di sublîmasyonê de kişandinên navbera perçeyên hişk tên bindestkirin; bûyer germê ji hawîrdorê digire û endotermîk e. II. Di kondensasyonê de perçeyên gazê nêzî hev dibin, kişandin çêdibe û germ derdikeve; ekzotermîk e. III. Reaksiyonên şewitandinê germ û ronahî didin; ekzotermîk in. Yên ekzotermîk II û III ne."
+        "ku": "I. Di sublîmebûnê de kişandinên navbera perçeyên hişk tên derbaskirin; bûyer germê ji derdorê digire û endotermîk e. II. Di şilebûnê de perçeyên gazê nêzîkî hev dibin û di navbera wan de kişandin çêdibe, germ derdikeve; ekzotermîk e. III. Reaksiyonên şewitînê germ û ronahiyê didin; ekzotermîk in. Yên ekzotermîk II û III in."
       }
     },
     {
@@ -1511,7 +1511,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "На диаграмме потенциальной энергии одностадийной реакции X(г) → Y(г) потенциальная энергия реагентов равна 40 кДж, активированного комплекса — 150 кДж, продуктов — 90 кДж. Какие из утверждений верны? I. Реакция экзотермическая. II. Энергия активации прямой реакции равна 110 кДж. III. Энергия активации обратной реакции равна 50 кДж.",
         "ar": "في مخطط الطاقة الكامنة للتفاعل أحادي الخطوة X(g) → Y(g) تُقرأ الطاقة الكامنة للمتفاعلات 40 kJ، وللمعقد المنشط 150 kJ، وللنواتج 90 kJ. بناءً على ذلك، أيّ العبارات الآتية صحيحة؟ I. التفاعل طارد للحرارة. II. طاقة تنشيط التفاعل الأمامي 110 kJ. III. طاقة تنشيط التفاعل العكسي 50 kJ.",
         "zh": "一步完成的反应 X(g) → Y(g) 的势能图中，读得反应物势能为 40 kJ，活化络合物势能为 150 kJ，生成物势能为 90 kJ。据此有下列说法：I. 该反应是放热反应。II. 正反应的活化能为 110 kJ。III. 逆反应的活化能为 50 kJ。其中正确的是哪些？",
-        "ku": "Di grafîka enerjiya potansiyel a reaksiyona yek-gavî X(g) → Y(g) de enerjiya potansiyel a reaktantan 40 kJ, ya kompleksa aktîfkirî 150 kJ û ya berheman 90 kJ tê xwendin. Li gorî vê, kîjan ji van gotinan rast in? I. Reaksiyon ekzotermîk e. II. Enerjiya aktîvasyonê ya reaksiyona pêşve 110 kJ ye. III. Enerjiya aktîvasyonê ya reaksiyona paşve 50 kJ ye."
+        "ku": "Di grafîka enerjiya potansiyel a reaksiyona X(g) → Y(g) ya ku di yek gavê de pêk tê de, enerjiya potansiyel a reaktantan 40 kJ, ya kompleksa aktîvkirî 150 kJ û ya hilberan 90 kJ tê xwendin. Li gorî vê, kîjan ji van gotinan rast in? I. Reaksiyon ekzotermîk e. II. Enerjiya aktîvasyonê ya reaksiyona pêşve 110 kJ e. III. Enerjiya aktîvasyonê ya reaksiyona paşve 50 kJ e."
       },
       "options": [
         {
@@ -1574,7 +1574,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "ΔH = Eпродуктов − Eреагентов = 90 − 40 = +50 кДж; так как ΔH > 0, реакция эндотермическая, I неверно. Ea(пр) = Eкомплекса − Eреагентов = 150 − 40 = 110 кДж, II верно. Ea(обр) = Eкомплекса − Eпродуктов = 150 − 90 = 60 кДж; 50 кДж — это значение ΔH, III неверно. Верно только II.",
         "ar": "ΔH = Eالنواتج − Eالمتفاعلات = 90 − 40 = +50 kJ؛ وبما أن ΔH > 0 فالتفاعل ماص للحرارة، فالعبارة I خاطئة. Eai = Eالمعقد − Eالمتفاعلات = 150 − 40 = 110 kJ، فالعبارة II صحيحة. Eag = Eالمعقد − Eالنواتج = 150 − 90 = 60 kJ؛ و50 kJ هي قيمة ΔH، فالعبارة III خاطئة. الصحيحة II فقط.",
         "zh": "ΔH = E生成物 − E反应物 = 90 − 40 = +50 kJ；ΔH > 0，反应吸热，I 错误。Eai = E络合物 − E反应物 = 150 − 40 = 110 kJ，II 正确。Eag = E络合物 − E生成物 = 150 − 90 = 60 kJ；50 kJ 是 ΔH 的值，III 错误。只有 II 正确。",
-        "ku": "ΔH = Eberhem − Ereaktant = 90 − 40 = +50 kJ; ji ber ku ΔH > 0 reaksiyon endotermîk e, I şaş e. Eai = Ekompleks − Ereaktant = 150 − 40 = 110 kJ, II rast e. Eag = Ekompleks − Eberhem = 150 − 90 = 60 kJ; 50 kJ nirxa ΔH ye, III şaş e. Tenê II rast e."
+        "ku": "ΔH = Ehilber − Ereaktant = 90 − 40 = +50 kJ; ji ber ku ΔH > 0 e, reaksiyon endotermîk e: I şaş e. Eai = Ekompleks − Ereaktant = 150 − 40 = 110 kJ: II rast e. Eag = Ekompleks − Ehilber = 150 − 90 = 60 kJ e; 50 kJ nirxa ΔH ye: III şaş e. Tenê II rast e."
       }
     },
     {
@@ -1587,7 +1587,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Реакции H2(г) + 1/2 O2(г) → H2O(г)  ΔH1; H2(г) + 1/2 O2(г) → H2O(ж)  ΔH2; H2(г) + 1/2 O2(г) → H2O(тв)  ΔH3 протекают в одинаковых условиях. В каком варианте значения ΔH (с учётом знака) расположены в порядке убывания?",
         "ar": "للتفاعلات H2(g) + 1/2 O2(g) → H2O(g)  ΔH1؛ H2(g) + 1/2 O2(g) → H2O(l)  ΔH2؛ H2(g) + 1/2 O2(g) → H2O(s)  ΔH3 التي تجري في الظروف نفسها، ما ترتيب قيم ΔH (مع إشاراتها) من الأكبر إلى الأصغر؟",
         "zh": "在相同条件下进行的反应 H2(g) + 1/2 O2(g) → H2O(g)  ΔH1；H2(g) + 1/2 O2(g) → H2O(l)  ΔH2；H2(g) + 1/2 O2(g) → H2O(s)  ΔH3，其 ΔH 值（连同符号）由大到小的顺序是哪一项？",
-        "ku": "Ji bo reaksiyonên di heman şert û mercan de pêk tên H2(g) + 1/2 O2(g) → H2O(g)  ΔH1; H2(g) + 1/2 O2(g) → H2O(l)  ΔH2; H2(g) + 1/2 O2(g) → H2O(s)  ΔH3, rêza nirxên ΔH (bi nîşanên wan) ji mezin ber bi piçûk kîjan e?"
+        "ku": "Reaksiyonên H2(g) + 1/2 O2(g) → H2O(g)  ΔH1; H2(g) + 1/2 O2(g) → H2O(l)  ΔH2; H2(g) + 1/2 O2(g) → H2O(s)  ΔH3 di heman şertan de pêk tên. Rêzkirina nirxên ΔH yên van reaksiyonan (bi nîşanên wan re) ji mezin ber bi piçûk kîjan e?"
       },
       "options": [
         {
@@ -1650,7 +1650,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Реагенты одинаковы; различается только агрегатное состояние образующейся воды. Конденсация и замерзание экзотермичны, поэтому энтальпия уменьшается в ряду газ > жидкость > твёрдое вещество. Все три реакции экзотермические, и чем ниже энтальпия продукта, тем больше выделяется теплоты и тем более отрицательна ΔH: ΔH3 наиболее отрицательна, ΔH1 наименее отрицательна. С учётом знака: ΔH1 > ΔH2 > ΔH3. Типичные ошибки — расположить значения по количеству выделившейся теплоты и выбрать обратный порядок или считать, что агрегатное состояние не влияет на ΔH.",
         "ar": "المتفاعلات واحدة؛ والفرق فقط في الحالة الفيزيائية للماء الناتج. وبما أن التكاثف والتجمد طاردان للحرارة فإن المحتوى الحراري يقل بالترتيب غاز > سائل > صلب. التفاعلات الثلاثة طاردة للحرارة، وكلما قل المحتوى الحراري للناتج زادت الحرارة المنطلقة وأصبحت ΔH أكثر سالبية: ΔH3 الأكثر سالبية وΔH1 الأقل سالبية. مع الإشارات يكون الترتيب ΔH1 > ΔH2 > ΔH3. ومن الأخطاء الشائعة الترتيب حسب كمية الحرارة المنطلقة (الترتيب المعكوس) أو الظن أن الحالة الفيزيائية لا تؤثر في ΔH.",
         "zh": "反应物相同，区别只在于生成的水的物态。由于液化和凝固都放热，焓按气态 > 液态 > 固态的顺序减小。三个反应都放热，生成物的焓越低，放出的热量越多，ΔH 越负：ΔH3 最负，ΔH1 最不负。连同符号排列为 ΔH1 > ΔH2 > ΔH3。按放热多少排序（得到相反顺序）或认为物态不影响 ΔH 都是常见错误。",
-        "ku": "Reaktant heman in; cudahî tenê rewşa fizîkî ya ava çêbûyî ye. Ji ber ku kondensasyon û cemidîn ekzotermîk in, entalpî bi rêza gaz > şile > hişk kêm dibe. Her sê reaksiyon ekzotermîk in û çiqas entalpiya berhemê kêm be, ewqas bêtir germ derdikeve û ΔH negatîftir dibe: ΔH3 herî negatîf e, ΔH1 herî kêm negatîf e. Bi nîşanan rêz ΔH1 > ΔH2 > ΔH3 e. Rêzkirina li gorî mîqdara germa derketî (rêza berevajî) an fikra ku rewşa fizîkî bandorê li ΔH nake şaşiyên tîpîk in."
+        "ku": "Reaktant heman in; cudahî tenê rewşa fîzîkî ya ava ku wekî hilber çêdibe ye. Ji ber ku şilebûn û cemidîn ekzotermîk in, entalpî bi rêza gaz > şile > hişk kêm dibe. Her sê reaksiyon ekzotermîk in; çiqas entalpiya hilberê kêm bibe, ewqas germa ku derdikeve zêde dibe û ΔH negatîftir dibe: ΔH3 herî negatîf e, ΔH1 herî kêm negatîf e. Bi nîşanan rêzkirin ΔH1 > ΔH2 > ΔH3 e. Rêzkirina li gorî mîqdara germa derketî û hilbijartina rêza berevajî, an jî fikra ku rewşa fîzîkî bandorê li ΔH nake, şaşiyên tîpîk in."
       }
     },
     {
@@ -1663,7 +1663,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "2H2(г) + O2(г) → 2H2O(ж)  ΔH = −572 кДж. В закрытом сосуде 4 г H2 и 16 г O2 реагируют с выходом 100 %. Какое наибольшее количество теплоты (кДж) может выделиться? (H = 1, O = 16)",
         "ar": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ. في وعاء مغلق يتفاعل 4 g من H2 مع 16 g من O2 بمردود كامل. كم kJ من الحرارة تنطلق على الأكثر؟ (H = 1، O = 16)",
         "zh": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ。在密闭容器中 4 g H2 与 16 g O2 完全反应。最多放出多少 kJ 热量？(H = 1，O = 16)",
-        "ku": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ. Di firaxeke girtî de 4 g H2 û 16 g O2 bi berdariya tam reaksiyon dikin. Herî zêde çend kJ germ derdikeve? (H = 1, O = 16)"
+        "ku": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ. Di firaxeke girtî de 4 g H2 û 16 g O2 bi berhema tam dikevin reaksiyonê. Li gorî vê, herî zêde çend kJ germ derdikeve? (H = 1, O = 16)"
       },
       "options": [
         {
@@ -1726,7 +1726,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "n(H2) = 4/2 = 2 моль, n(O2) = 16/32 = 0,5 моль. По уравнению 0,5 моль O2 реагирует с 1 моль H2; O2 — лимитирующий реагент, 1 моль H2 остаётся в избытке. На 1 моль израсходованного O2 выделяется 572 кДж, значит на 0,5 моль O2 — 0,5 × 572 = 286 кДж. Если считать лимитирующим H2, получится 572 кДж; если брать по 572 кДж на каждый из 2 моль H2 — 1144 кДж.",
         "ar": "n(H2) = 4/2 = 2 mol، n(O2) = 16/32 = 0.5 mol. وفق المعادلة يتفاعل 0.5 mol من O2 مع 1 mol من H2؛ فـ O2 هو المادة المحددة للتفاعل ويتبقى 1 mol من H2. وبما أن 572 kJ تنطلق لكل 1 mol من O2 مستهلك، فإن 0.5 mol من O2 تُطلق 0.5 × 572 = 286 kJ. من يعتبر H2 المادة المحددة للتفاعل يحصل على 572 kJ، ومن يحسب 572 kJ لكل مول من 2 mol من H2 يحصل على 1144 kJ.",
         "zh": "n(H2) = 4/2 = 2 mol，n(O2) = 16/32 = 0.5 mol。按方程式 0.5 mol O2 与 1 mol H2 反应；O2 是限量反应物，H2 剩余 1 mol。每消耗 1 mol O2 放出 572 kJ，故 0.5 mol O2 放出 0.5 × 572 = 286 kJ。误把 H2 当作限量反应物得 572 kJ；按 2 mol H2 每摩尔放出 572 kJ 计算得 1144 kJ。",
-        "ku": "n(H2) = 4/2 = 2 mol, n(O2) = 16/32 = 0,5 mol. Li gorî hevkêşeyê 0,5 mol O2 bi 1 mol H2 re reaksiyon dike; O2 pêkhateya sînordar e û 1 mol H2 dimîne. Ji ber ku ji bo her 1 mol O2 yê xerckirî 572 kJ derdikeve, ji bo 0,5 mol O2 0,5 × 572 = 286 kJ germ derdikeve. Yê ku H2 sînordar dihesibîne 572 kJ, yê ku ji bo her molek ji 2 mol H2 572 kJ digire 1144 kJ dibîne."
+        "ku": "n(H2) = 4/2 = 2 mol, n(O2) = 16/32 = 0,5 mol. Li gorî hevkêşeyê 0,5 mol O2 bi 1 mol H2 re dikeve reaksiyonê; O2 reaktanta sînordar e û 1 mol H2 zêde dimîne. Ji ber ku dema 1 mol O2 tê xerckirin 572 kJ germ derdikeve, ji bo 0,5 mol O2 0,5 × 572 = 286 kJ germ derdikeve. Kesê ku H2 wekî reaktanta sînordar dihesibîne 572 kJ, kesê ku ji bo her molek ji 2 mol H2 572 kJ digire 1144 kJ dibîne."
       }
     },
     {
@@ -1739,7 +1739,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "2H2(г) + O2(г) → 2H2O(г)  ΔH = −484 кДж. Энергии связей: H–H — 436 кДж/моль, O=O — 498 кДж/моль. Чему равна средняя энергия связи O–H (кДж/моль)?",
         "ar": "2H2(g) + O2(g) → 2H2O(g)  ΔH = −484 kJ. إذا كانت طاقتا الرابطتين H–H = 436 kJ/mol وO=O = 498 kJ/mol، فكم يبلغ متوسط طاقة الرابطة O–H بوحدة kJ/mol؟",
         "zh": "2H2(g) + O2(g) → 2H2O(g)  ΔH = −484 kJ。已知键能 H–H = 436 kJ/mol，O=O = 498 kJ/mol，则 O–H 键的平均键能是多少 kJ/mol？",
-        "ku": "2H2(g) + O2(g) → 2H2O(g)  ΔH = −484 kJ. Heke enerjiyên girêdanê H–H = 436 kJ/mol û O=O = 498 kJ/mol bin, enerjiya girêdanê ya navînî ya O–H çend kJ/mol e?"
+        "ku": "2H2(g) + O2(g) → 2H2O(g)  ΔH = −484 kJ. Heke enerjiyên girêdanê H–H = 436 kJ/mol û O=O = 498 kJ/mol bin, enerjiya girêdanê ya navînî ya girêdana O–H çend kJ/mol e?"
       },
       "options": [
         {
@@ -1802,7 +1802,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "ΔH = Σ(разрываемых) − Σ(образующихся). Разрываются: 2 H–H + 1 O=O = 2(436) + 498 = 1370 кДж. Образуются: в 2 молекулах H2O 4 связи O–H = 4x. −484 = 1370 − 4x → 4x = 1854 → x = 463,5 кДж/моль. Если забыть, что в каждой молекуле воды две связи O–H, и написать 2x, получится 927; если взять ΔH положительной (4x = 1370 − 484) — 221,5 кДж/моль.",
         "ar": "ΔH = Σ(المكسورة) − Σ(المتكونة). الروابط المكسورة: 2 H–H + 1 O=O = 2(436) + 498 = 1370 kJ. الروابط المتكونة: في جزيئين من H2O توجد 4 روابط O–H = 4x. −484 = 1370 − 4x → 4x = 1854 → x = 463.5 kJ/mol. من ينسى أن في كل جزيء ماء رابطتين O–H ويكتب 2x يحصل على 927، ومن يأخذ ΔH موجبة (4x = 1370 − 484) يحصل على 221.5 kJ/mol.",
         "zh": "ΔH = Σ(断裂) − Σ(形成)。断裂的键：2 H–H + 1 O=O = 2(436) + 498 = 1370 kJ。形成的键：2 个 H2O 分子含 4 个 O–H 键 = 4x。−484 = 1370 − 4x → 4x = 1854 → x = 463.5 kJ/mol。忘记每个水分子有两个 O–H 键(写成 2x)得 927；把 ΔH 当作正值(4x = 1370 − 484)得 221.5 kJ/mol。",
-        "ku": "ΔH = Σ(şikestî) − Σ(çêbûyî). Girêdanên şikestî: 2 H–H + 1 O=O = 2(436) + 498 = 1370 kJ. Girêdanên çêbûyî: di 2 molekulên H2O de 4 girêdanên O–H = 4x. −484 = 1370 − 4x → 4x = 1854 → x = 463,5 kJ/mol. Yê ku ji bîr dike ku di her molekula avê de du girêdanên O–H hene (2x dinivîse) 927, yê ku ΔH erênî digire (4x = 1370 − 484) 221,5 kJ/mol dibîne."
+        "ku": "ΔH = Σ(şikestî) − Σ(çêbûyî). Girêdanên şikestî: 2 H–H + 1 O=O = 2(436) + 498 = 1370 kJ. Girêdanên çêbûyî: di 2 molekulên H2O de 4 girêdanên O–H = 4x. −484 = 1370 − 4x → 4x = 1854 → x = 463,5 kJ/mol. Kesê ku ji bîr dike ku di her molekula avê de du girêdanên O–H hene û 2x dinivîse 927, kesê ku ΔH erênî digire û 4x = 1370 − 484 dinivîse 221,5 kJ/mol dibîne."
       }
     },
     {
@@ -1815,7 +1815,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "В охлаждающих пакетах мгновенного действия, которые применяют при спортивных травмах, при сгибании пакета твёрдый NH4NO3 смешивается с водой и растворяется, и через несколько минут пакет заметно охлаждается. Какое утверждение об этом процессе верно?",
         "ar": "في أكياس التبريد الفوري المستخدمة لإصابات الرياضة، عند ثني الكيس يختلط NH4NO3 الصلب بالماء ويذوب، فيبرد الكيس بوضوح خلال دقائق. أي مما يأتي صحيح بشأن هذه العملية؟",
         "zh": "运动损伤用的速冷冰袋，弯折后袋内固体 NH4NO3 与水混合并溶解，几分钟内冰袋明显变冷。关于这一过程，下列说法正确的是哪一项？",
-        "ku": "Di pakêtên sarkirina yekser de ku ji bo birînên werzişê tên bikaranîn, dema pakêt tê qatkirin NH4NO3 ya hişk bi avê re tevlî dibe û dihele û pakêt di çend deqan de bi awayekî eşkere sar dibe. Derbarê vê bûyerê de kîjan rast e?"
+        "ku": "Di pakêtên sar ên tavilê de ku ji bo birînên werzişê tên bikaranîn, dema pakêt tê badan NH4NO3 ya hişk a tê de bi avê re tevlihev dibe û dihele, û pakêt di çend deqeyan de bi awayekî diyar sar dibe. Derbarê vê bûyerê de kîjan ji van rast e?"
       },
       "options": [
         {
@@ -1826,7 +1826,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Растворение эндотермическое; необходимая теплота забирается из среды, с которой соприкасается пакет (например, у кожи).",
           "ar": "الذوبان ماص للحرارة؛ والحرارة اللازمة تؤخذ من الوسط الملامس للكيس (كالجلد مثلًا).",
           "zh": "溶解是吸热过程，所需热量取自与冰袋接触的环境（例如皮肤）。",
-          "ku": "Helbûn endotermîk e; germa pêwîst ji hawîrdora ku pakêt pê re têkildar e (mînak ji çerm) tê girtin."
+          "ku": "Helbûn endotermîk e; germa pêwîst ji derdora ku pakêt pê ve dikeve (mînak ji çerm) tê girtin."
         },
         {
           "tr": "Çözünme ekzotermiktir; açığa çıkan ısı paketin dışına yayıldığı için paket soğur.",
@@ -1836,7 +1836,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Растворение экзотермическое; пакет охлаждается, потому что выделившаяся теплота уходит наружу.",
           "ar": "الذوبان طارد للحرارة؛ ويبرد الكيس لأن الحرارة المنطلقة تنتشر إلى خارجه.",
           "zh": "溶解是放热过程，放出的热量散发到袋外，所以冰袋变冷。",
-          "ku": "Helbûn ekzotermîk e; ji ber ku germa derketî ber bi derveyî pakêtê belav dibe, pakêt sar dibe."
+          "ku": "Helbûn ekzotermîk e; ji ber ku germa derdikeve li derveyî pakêtê belav dibe, pakêt sar dibe."
         },
         {
           "tr": "Bu çözünme olayının ΔH değeri sıfırdan küçüktür.",
@@ -1846,7 +1846,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "ΔH этого процесса растворения меньше нуля.",
           "ar": "قيمة ΔH لعملية الذوبان هذه أقل من الصفر.",
           "zh": "该溶解过程的 ΔH 小于零。",
-          "ku": "Nirxa ΔH ya vê helbûnê ji sifir piçûktir e."
+          "ku": "Nirxa ΔH ya vê bûyera helbûnê ji sifirê piçûktir e."
         },
         {
           "tr": "Oluşan çözeltinin toplam entalpisi, NH4NO3 ve suyun başlangıçtaki toplam entalpisinden düşüktür.",
@@ -1866,7 +1866,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "Охлаждение вызвано испарением воды в пакете; при растворении обмена энергией нет.",
           "ar": "التبريد ناتج عن تبخر الماء داخل الكيس؛ ولا يحدث تبادل للطاقة أثناء الذوبان.",
           "zh": "变冷是袋内的水蒸发造成的，溶解过程中没有能量交换。",
-          "ku": "Sarbûn ji ber buharbûna ava di pakêtê de ye; di helbûnê de guhertina enerjiyê çênabe."
+          "ku": "Sarbûn ji buharbûna ava di pakêtê de tê; di helbûnê de guhertina enerjiyê çênabe."
         }
       ],
       "correctIndex": 0,
@@ -1878,7 +1878,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Охлаждение пакета показывает, что система (NH4NO3 + вода) забирает необходимую для растворения теплоту из окружающей среды; процесс эндотермический, ΔH > 0. Поэтому энтальпия продукта (раствора) выше, чем у исходных веществ. Если бы теплота выделялась, пакет не охлаждался бы, а нагревался (как грелки мгновенного действия). В закрытом пакете охлаждение вызывает само растворение, а не испарение.",
         "ar": "برودة الكيس تدل على أن النظام (NH4NO3 + الماء) يأخذ الحرارة اللازمة للذوبان من الوسط المحيط؛ فالعملية ماصة للحرارة وΔH > 0. لذلك يكون المحتوى الحراري للناتج (المحلول) أعلى من المتفاعلات. ولو انطلقت حرارة لسخن الكيس بدل أن يبرد، كما في أكياس التدفئة الفورية. وفي الكيس المغلق يكون مصدر التبريد عملية الذوبان نفسها لا التبخر.",
         "zh": "冰袋变冷说明体系(NH4NO3 + 水)从环境中吸收溶解所需的热量；该过程吸热，ΔH > 0。因此生成物（溶液）的焓高于反应物。若放出热量，冰袋会变热（如速热暖袋），而不是变冷。在密封袋中，变冷来自溶解本身，而不是蒸发。",
-        "ku": "Sarbûna pakêtê nîşan dide ku sîstem (NH4NO3 + av) germa pêwîst a helbûnê ji hawîrdorê digire; bûyer endotermîk e û ΔH > 0 e. Ji ber vê yekê entalpiya berhemê (çareseriyê) ji ya reaktantan bilindtir e. Heke germ derketa, pakêt dê germ bibûya, ne sar (wek pakêtên germkirina yekser). Di pakêta girtî de çavkaniya sarbûnê ne buharbûn, lê helbûn bi xwe ye."
+        "ku": "Sarbûna pakêtê nîşan dide ku sîstem (NH4NO3 + av) germa ku ji bo helbûnê pêwîst e ji derdora xwe digire; bûyer endotermîk e û ΔH > 0 e. Ji ber vê yekê entalpiya hilberê (çareseriyê) ji ya reaktantan bilindtir e. Heke germ derketa, pakêt sar nedibû, germ dibû (wekî di pakêtên germ ên tavilê de). Di pakêta girtî de çavkaniya sarbûnê ne buharbûn e, lê bûyera helbûnê bi xwe ye."
       }
     },
     {
@@ -1891,7 +1891,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Средние энергии некоторых связей: H–F — 567 кДж/моль, H–Cl — 431 кДж/моль, H–Br — 366 кДж/моль. Какие из утверждений верны? I. Из этих трёх связей самая прочная — H–F. II. Чтобы разложить 1 моль HBr(г) на атомы H и Br в газовой фазе, нужно 366 кДж. III. Процесс H(г) + Cl(г) → HCl(г) эндотермический.",
         "ar": "متوسطات طاقات بعض الروابط: H–F: 567 kJ/mol، H–Cl: 431 kJ/mol، H–Br: 366 kJ/mol. بناءً على ذلك، أيّ العبارات الآتية صحيحة؟ I. أقوى هذه الروابط الثلاث هي الرابطة H–F. II. يلزم 366 kJ لفصل 1 mol من HBr(g) إلى ذرات H وBr غازية. III. العملية H(g) + Cl(g) → HCl(g) ماصة للحرارة.",
         "zh": "一些化学键的平均键能为 H–F 567 kJ/mol、H–Cl 431 kJ/mol、H–Br 366 kJ/mol。据此有下列说法：I. 三种键中最牢固的是 H–F 键。II. 将 1 mol HBr(g) 分解为气态 H 原子和 Br 原子需要 366 kJ 能量。III. 过程 H(g) + Cl(g) → HCl(g) 是吸热的。其中正确的是哪些？",
-        "ku": "Enerjiyên girêdanê yên navînî yên hin girêdanan H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol in. Li gorî vê, kîjan ji van gotinan rast in? I. Di nav van sê girêdanan de girêdana herî xurt H–F ye. II. Ji bo veqetandina 1 mol HBr(g) bo atomên H û Br ên gazî 366 kJ enerjî pêwîst e. III. Bûyera H(g) + Cl(g) → HCl(g) endotermîk e."
+        "ku": "Enerjiyên girêdanê yên navînî yên hin girêdanan ev in: H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol. Li gorî vê, kîjan ji van gotinan rast in? I. Di nav van sê girêdanan de girêdana herî xurt H–F ye. II. Ji bo ku 1 mol HBr(g) bibe atomên H û Br ên di rewşa gaz de, 366 kJ enerjî pêwîst e. III. Bûyera H(g) + Cl(g) → HCl(g) endotermîk e."
       },
       "options": [
         {
@@ -1954,7 +1954,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Чем больше энергия связи, тем труднее её разорвать; наибольшее значение у H–F, значит, это самая прочная связь — I верно. Энергия связи — энергия, необходимая для разрыва 1 моль связей в газовой фазе с образованием атомов, — II верно. В III связь не разрывается, а образуется; образование связи сопровождается выделением теплоты (431 кДж), процесс экзотермический — III неверно.",
         "ar": "كلما زادت طاقة الرابطة صعب كسرها؛ وأكبر قيمة للرابطة H–F فهي الأقوى، فالعبارة I صحيحة. طاقة الرابطة هي الطاقة اللازمة لكسر 1 mol من الرابطة في الحالة الغازية إلى ذرات، فالعبارة II صحيحة. في III تتكوّن رابطة ولا تنكسر؛ وتكوّن الرابطة يُطلق حرارة (431 kJ) فالعملية طاردة للحرارة، والعبارة III خاطئة.",
         "zh": "键能越大，键越难断裂；H–F 的键能最大，是最牢固的键，I 正确。键能是在气态下把 1 mol 化学键断开成原子所需的能量，II 正确。III 中是成键而不是断键，成键放出热量(431 kJ)，该过程放热，III 错误。",
-        "ku": "Çiqas enerjiya girêdanê mezin be, şikandina girêdanê ewqas dijwar e; nirxa herî mezin a H–F ye, loma girêdana herî xurt ew e: I rast e. Enerjiya girêdanê enerjiya pêwîst e ji bo şikandina 1 mol girêdanê di rewşa gazî de bo atoman: II rast e. Di III de girêdan naşikê, çêdibe; çêbûna girêdanê germê derdixe (431 kJ), loma bûyer ekzotermîk e: III şaş e."
+        "ku": "Çiqas enerjiya girêdanê mezin bibe, şikandina girêdanê ewqas dijwar dibe; ji ber ku nirxa herî mezin ya H–F ye, girêdana herî xurt ew e: I rast e. Enerjiya girêdanê ew enerjî ye ku ji bo şikandina 1 mol girêdanê di rewşa gaz de û veqetandina wê bo atoman pêwîst e: II rast e. Di III de girêdan naşikê, çêdibe; çêbûna girêdanê bûyereke germdayî ye û 431 kJ derdikeve, ango bûyer ekzotermîk e: III şaş e."
       }
     },
     {
@@ -1967,7 +1967,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Для какой из следующих реакций изменение энтальпии при 25 °C и 1 атм равно стандартной молярной энтальпии образования продукта?",
         "ar": "أي التفاعلات الآتية يساوي التغير في محتواه الحراري عند 25 °C و1 atm المحتوى الحراري المولي القياسي لتكوين الناتج؟",
         "zh": "下列哪个反应在 25 °C、1 atm 下的焓变等于生成物的标准摩尔生成焓？",
-        "ku": "Guherîna entalpiyê ya kîjan ji van reaksiyonan li 25 °C û 1 atm bi entalpiya avabûnê ya molar a standard a berhemê re wekhev e?"
+        "ku": "Li 25 °C û 1 atm, guherîna entalpiyê ya kîjan ji van reaksiyonan wekhevî entalpiya çêbûnê ya molî ya standard a hilberê ye?"
       },
       "options": [
         {
@@ -1988,7 +1988,7 @@ export const unit16: ChemistryUnitSeedData = {
           "ru": "C(алмаз) + O2(г) → CO2(г)",
           "ar": "C(الماس) + O2(g) → CO2(g)",
           "zh": "C(金刚石) + O2(g) → CO2(g)",
-          "ku": "C(almas) + O2(g) → CO2(g)"
+          "ku": "C(elmas) + O2(g) → CO2(g)"
         },
         {
           "tr": "CO(g) + 1/2 O2(g) → CO2(g)",
@@ -2030,7 +2030,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "В стандартной реакции образования 1 моль соединения должен получаться из простых веществ в их наиболее устойчивом при 25 °C и 1 атм состоянии. C(графит) и H2(г) — наиболее устойчивые состояния, и образуется 1 моль CH4, поэтому ΔH этой реакции равна ΔHf°(CH4). ΔH реакции с образованием 2 моль H2O вдвое больше энтальпии образования; алмаз — не самая устойчивая аллотропная модификация углерода; CO — сложное вещество, а не простое; натрий при 25 °C твёрдый, поэтому Na(г) — не его устойчивое состояние.",
         "ar": "في تفاعل التكوين القياسي يجب أن يتكوّن 1 mol من المركب من العناصر في أكثر حالاتها استقرارًا عند 25 °C و1 atm. الجرافيت وH2(g) هما الحالتان الأكثر استقرارًا ويتكوّن 1 mol من CH4، فتكون ΔH لهذا التفاعل هي ΔHf°(CH4). التفاعل الذي يكوّن 2 mol من H2O قيمته ضعف المحتوى الحراري للتكوين؛ والماس ليس أكثر متآصلات الكربون استقرارًا؛ وCO مركب لا عنصر؛ والصوديوم صلب عند 25 °C فـ Na(g) ليست حالته الأكثر استقرارًا.",
         "zh": "标准生成反应要求由处于 25 °C、1 atm 下最稳定状态的单质生成 1 mol 化合物。石墨和 H2(g) 都是最稳定状态，且生成 1 mol CH4，所以该 ΔH 就是 ΔHf°(CH4)。生成 2 mol H2O 的反应焓变是生成焓的 2 倍；金刚石不是碳最稳定的同素异形体；CO 是化合物而非单质；钠在 25 °C 为固态，Na(g) 不是其最稳定状态。",
-        "ku": "Di reaksiyona avabûnê ya standard de divê 1 mol pêkhate ji elementên di rewşa xwe ya herî stabîl de li 25 °C û 1 atm çêbibe. C(grafît) û H2(g) rewşên herî stabîl in û 1 mol CH4 çêdibe; ΔH ya vê reaksiyonê ΔHf°(CH4) e. Reaksiyona ku 2 mol H2O çêdike du qatê entalpiya avabûnê ye; almas alotropa herî stabîl a karbonê nîne; CO pêkhate ye, ne element; sodyûm li 25 °C hişk e, Na(g) ne rewşa wê ya herî stabîl e."
+        "ku": "Di reaksiyona çêbûnê ya standard de divê 1 mol pêkhate ji rewşên herî stabîl ên elementan li 25 °C û 1 atm çêbibe. C(grafît) û H2(g) rewşên herî stabîl in û 1 mol CH4 çêdibe; ΔH ya vê reaksiyonê ΔHf°(CH4) e. ΔH ya reaksiyona ku 2 mol H2O çêdike du qatê entalpiya çêbûnê ye; elmas allotropa herî stabîl a karbonê nîne; CO pêkhate ye, ne element e; sodyûm li 25 °C hişk e, Na(g) ne rewşa wê ya herî stabîl e."
       }
     },
     {
@@ -2043,7 +2043,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "При смешивании двух растворов в пробирке протекает реакция, и ученик, держащий пробирку, чувствует, что она заметно нагрелась. Какие из утверждений об этой реакции верны? I. ΔH < 0. II. Суммарная энергия разрываемых связей больше суммарной энергии образующихся связей. III. Энергия активации прямой реакции меньше, чем обратной.",
         "ar": "عند مزج محلولين في أنبوب اختبار يحدث تفاعل، ويشعر الطالب الذي يمسك الأنبوب بأنه سخن بوضوح. بالنسبة لهذا التفاعل، أيّ العبارات الآتية صحيحة؟ I. ΔH < 0. II. الطاقة الكلية للروابط المكسورة أكبر من الطاقة الكلية للروابط المتكونة. III. طاقة تنشيط التفاعل الأمامي أصغر من طاقة تنشيط التفاعل العكسي.",
         "zh": "在试管中混合两种溶液时发生反应，握着试管的学生感到试管明显变热。对于该反应，有下列说法：I. ΔH < 0。II. 断裂的键的总能量大于形成的键的总能量。III. 正反应的活化能小于逆反应的活化能。其中正确的是哪些？",
-        "ku": "Dema du çareserî di lûleya ceribandinê de tên tevlihevkirin reaksiyonek pêk tê û xwendekarê ku lûleyê digire hîs dike ku ew bi awayekî eşkere germ dibe. Ji bo vê reaksiyonê kîjan ji van gotinan rast in? I. ΔH < 0 e. II. Enerjiya giştî ya girêdanên şikestî ji ya girêdanên çêbûyî mezintir e. III. Enerjiya aktîvasyonê ya reaksiyona pêşve ji ya reaksiyona paşve piçûktir e."
+        "ku": "Dema di lûleya ceribandinê de du çareserî tên tevlihevkirin reaksiyonek pêk tê, û xwendekarê ku lûleyê digire hîs dike ku lûle bi awayekî diyar germ dibe. Ji bo vê reaksiyonê kîjan ji van gotinan rast in? I. ΔH < 0 e. II. Enerjiya giştî ya girêdanên şikestî ji enerjiya giştî ya girêdanên çêbûyî mezintir e. III. Enerjiya aktîvasyonê ya reaksiyona pêşve ji ya reaksiyona paşve piçûktir e."
       },
       "options": [
         {
@@ -2106,7 +2106,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Нагревание пробирки показывает, что реакция отдаёт теплоту окружающей среде, то есть она экзотермическая: ΔH < 0, I верно. Так как ΔH = Σ(разрываемых) − Σ(образующихся) отрицательна, суммарная энергия образующихся связей больше, чем разрываемых, — II неверно. Так как ΔH = Ea(пр) − Ea(обр) < 0, то Ea(пр) < Ea(обр) — III верно.",
         "ar": "سخونة الأنبوب تدل على أن التفاعل يُطلق حرارة، أي أنه طارد للحرارة: ΔH < 0، فالعبارة I صحيحة. وبما أن ΔH = Σ(المكسورة) − Σ(المتكونة) سالبة، فإن الطاقة الكلية للروابط المتكونة أكبر من المكسورة، فالعبارة II خاطئة. وبما أن ΔH = Eai − Eag < 0 فإن Eai < Eag، والعبارة III صحيحة.",
         "zh": "试管变热说明反应向环境放热，即为放热反应：ΔH < 0，I 正确。由于 ΔH = Σ(断裂) − Σ(形成) 为负，形成的键的总能量大于断裂的键，II 错误。由于 ΔH = Eai − Eag < 0，所以 Eai < Eag，III 正确。",
-        "ku": "Germbûna lûleyê nîşan dide ku reaksiyon germê dide hawîrdorê, ango ekzotermîk e: ΔH < 0, I rast e. Ji ber ku ΔH = Σ(şikestî) − Σ(çêbûyî) negatîf e, enerjiya giştî ya girêdanên çêbûyî ji ya şikestiyan mezintir e: II şaş e. Ji ber ku ΔH = Eai − Eag < 0, Eai < Eag ye: III rast e."
+        "ku": "Germbûna lûleyê nîşan dide ku reaksiyon germê dide derdorê, ango ekzotermîk e: ΔH < 0, I rast e. Ji ber ku ΔH = Σ(şikestî) − Σ(çêbûyî) negatîf e, enerjiya giştî ya girêdanên çêbûyî ji ya girêdanên şikestî mezintir e: II şaş e. Ji ber ku ΔH = Eai − Eag < 0 e, Eai < Eag ye: III rast e."
       }
     },
     {
@@ -2119,7 +2119,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "C2H5OH(ж) + 3O2(г) → 2CO2(г) + 3H2O(ж)  ΔH = −1367 кДж. Стандартные энтальпии образования CO2(г) и H2O(ж) равны −394 кДж/моль и −286 кДж/моль соответственно. Чему равна стандартная энтальпия образования C2H5OH(ж) в кДж/моль?",
         "ar": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. إذا كان المحتوى الحراري القياسي لتكوين CO2(g) وH2O(l) هو −394 kJ/mol و−286 kJ/mol على الترتيب، فكم يبلغ المحتوى الحراري القياسي لتكوين C2H5OH(l) بوحدة kJ/mol؟",
         "zh": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ。已知 CO2(g) 和 H2O(l) 的标准生成焓分别为 −394 kJ/mol 和 −286 kJ/mol，则 C2H5OH(l) 的标准生成焓是多少 kJ/mol？",
-        "ku": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. Heke entalpiyên avabûnê yên standard ên CO2(g) û H2O(l) bi rêzê −394 kJ/mol û −286 kJ/mol bin, entalpiya avabûnê ya standard a C2H5OH(l) çend kJ/mol e?"
+        "ku": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. Heke entalpiyên çêbûnê yên standard ên CO2(g) û H2O(l) bi rêzê −394 kJ/mol û −286 kJ/mol bin, entalpiya çêbûnê ya standard a C2H5OH(l) çend kJ/mol e?"
       },
       "options": [
         {
@@ -2182,7 +2182,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "ΔH = ΣΔHf(продуктов) − ΣΔHf(реагентов). Продукты: 2(−394) + 3(−286) = −788 − 858 = −1646 кДж. O2 — простое вещество, ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 кДж/моль. Ученик, неверно преобразовавший равенство (−1646 − 1367), получит −3013; забывший коэффициенты (−394 − 286 = −680) — +687 кДж/моль.",
         "ar": "ΔH = ΣΔHf(النواتج) − ΣΔHf(المتفاعلات). النواتج: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 عنصر فـ ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. من يرتب المعادلة خطأً (−1646 − 1367) يحصل على −3013، ومن ينسى المعاملات (−394 − 286 = −680) يحصل على +687 kJ/mol.",
         "zh": "ΔH = ΣΔHf(生成物) − ΣΔHf(反应物)。生成物：2(−394) + 3(−286) = −788 − 858 = −1646 kJ。O2 是单质，ΔHf° = 0。−1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol。错误变形为 −1646 − 1367 得 −3013；忘记化学计量数(−394 − 286 = −680)得 +687 kJ/mol。",
-        "ku": "ΔH = ΣΔHf(berhem) − ΣΔHf(reaktant). Berhem: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 element e, loma ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Yê ku wekheviyê şaş rêz dike (−1646 − 1367) −3013, yê ku rêjeyan ji bîr dike (−394 − 286 = −680) +687 kJ/mol dibîne."
+        "ku": "ΔH = ΣΔHf(hilber) − ΣΔHf(reaktant). Hilber: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 element e, loma ΔHf° = 0 e. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Kesê ku wekheviyê şaş saz dike û −1646 − 1367 hesab dike −3013, kesê ku hevberan ji bîr dike (−394 − 286 = −680) +687 kJ/mol dibîne."
       }
     },
     {
@@ -2195,7 +2195,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "C(графит) + O2(г) → CO2(г)  ΔH1 = −393,5 кДж; C(алмаз) + O2(г) → CO2(г)  ΔH2 = −395,4 кДж. Какие из утверждений верны? I. При 25 °C и 1 атм графит устойчивее алмаза. II. Превращение графита в алмаз эндотермическое. III. Стандартная энтальпия образования алмаза равна +1,9 кДж/моль.",
         "ar": "C(جرافيت) + O2(g) → CO2(g)  ΔH1 = −393.5 kJ؛ C(الماس) + O2(g) → CO2(g)  ΔH2 = −395.4 kJ. بناءً على ذلك، أيّ العبارات الآتية صحيحة؟ I. عند 25 °C و1 atm يكون الجرافيت أكثر استقرارًا من الماس. II. تحوّل الجرافيت إلى ماس ماص للحرارة. III. المحتوى الحراري القياسي لتكوين الماس يساوي +1.9 kJ/mol.",
         "zh": "C(石墨) + O2(g) → CO2(g)  ΔH1 = −393.5 kJ；C(金刚石) + O2(g) → CO2(g)  ΔH2 = −395.4 kJ。据此有下列说法：I. 25 °C、1 atm 下石墨比金刚石稳定。II. 石墨转化为金刚石是吸热的。III. 金刚石的标准生成焓为 +1.9 kJ/mol。其中正确的是哪些？",
-        "ku": "C(grafît) + O2(g) → CO2(g)  ΔH1 = −393,5 kJ; C(almas) + O2(g) → CO2(g)  ΔH2 = −395,4 kJ. Li gorî van agahiyan kîjan ji van gotinan rast in? I. Li 25 °C û 1 atm grafît ji almasê stabîltir e. II. Veguherîna grafîtê bo almasê endotermîk e. III. Entalpiya avabûnê ya standard a almasê +1,9 kJ/mol e."
+        "ku": "C(grafît) + O2(g) → CO2(g)  ΔH1 = −393,5 kJ; C(elmas) + O2(g) → CO2(g)  ΔH2 = −395,4 kJ. Li gorî van agahiyan, kîjan ji van gotinan rast in? I. Li 25 °C û 1 atm grafît ji elmasê stabîltir e. II. Veguherîna grafîtê bo elmasê endotermîk e. III. Entalpiya çêbûnê ya standard a elmasê +1,9 kJ/mol e."
       },
       "options": [
         {
@@ -2258,7 +2258,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ru": "Если первую реакцию оставить без изменений, а вторую записать в обратном направлении и сложить их, получим C(графит) → C(алмаз), ΔH = −393,5 + 395,4 = +1,9 кДж. Так как ΔH > 0, превращение эндотермическое — II верно. Энергия алмаза выше, чем у графита; графит с меньшей энергией устойчивее — I верно. Графит — стандартное состояние углерода, поэтому C(графит) → C(алмаз) — реакция образования алмаза; ΔHf°(алмаз) = +1,9 кДж/моль, III тоже верно.",
         "ar": "بكتابة التفاعل الأول كما هو وجمعه مع عكس التفاعل الثاني نحصل على C(جرافيت) → C(الماس)، ΔH = −393.5 + 395.4 = +1.9 kJ. وبما أن ΔH > 0 فالتحول ماص للحرارة، فالعبارة II صحيحة. طاقة الماس أعلى من طاقة الجرافيت، فالجرافيت الأقل طاقة أكثر استقرارًا، والعبارة I صحيحة. والجرافيت هو الحالة القياسية للكربون، لذا فالتفاعل C(جرافيت) → C(الماس) هو تفاعل تكوين الماس؛ ΔHf°(الماس) = +1.9 kJ/mol، فالعبارة III صحيحة أيضًا.",
         "zh": "保留第一个反应、将第二个反应逆转后相加，得 C(石墨) → C(金刚石)，ΔH = −393.5 + 395.4 = +1.9 kJ。ΔH > 0，转化吸热，II 正确。金刚石的能量高于石墨，能量较低的石墨更稳定，I 正确。石墨是碳的标准状态，所以 C(石墨) → C(金刚石) 就是金刚石的生成反应；ΔHf°(金刚石) = +1.9 kJ/mol，III 也正确。",
-        "ku": "Heke reaksiyona yekem wek xwe were nivîsandin û ya duyem berevajî bibe û werin berhevkirin, C(grafît) → C(almas), ΔH = −393,5 + 395,4 = +1,9 kJ tê dîtin. Ji ber ku ΔH > 0, veguherîn endotermîk e: II rast e. Enerjiya almasê ji ya grafîtê bilindtir e; grafîta bi enerjiya kêmtir stabîltir e: I rast e. Grafît rewşa standard a karbonê ye, loma C(grafît) → C(almas) reaksiyona avabûna almasê ye; ΔHf°(almas) = +1,9 kJ/mol, III jî rast e."
+        "ku": "Heke reaksiyona yekem wekî xwe were nivîsandin, ya duyem berevajî were nivîsandin û her du werin berhevkirin, C(grafît) → C(elmas), ΔH = −393,5 + 395,4 = +1,9 kJ tê dîtin. Ji ber ku ΔH > 0 e, veguherîn endotermîk e: II rast e. Enerjiya elmasê ji ya grafîtê bilindtir e; grafîta bi enerjiya kêmtir stabîltir e: I rast e. Ji ber ku grafît rewşa standard a karbonê ye, reaksiyona C(grafît) → C(elmas) reaksiyona çêbûna elmasê ye; ΔHf°(elmas) = +1,9 kJ/mol, III jî rast e."
       }
     }
   ]

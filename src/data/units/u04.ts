@@ -24,7 +24,7 @@ export const unit04: ChemistryUnitSeedData = {
     "ru": "Твёрдые вещества, жидкости, давление пара и вязкость",
     "ar": "المواد الصلبة والسوائل وضغط البخار واللزوجة",
     "zh": "固体、液体、蒸气压与黏度",
-    "ku": "Solids, Liquids, Vapor Pressure and Viskozity"
+    "ku": "Madeyên Hişk, Şile, Zexta Buharê û Vîskozîte"
   },
   "facts": [
     {
@@ -37,7 +37,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Равновесное давление пара зависит от природы жидкости, её чистоты и температуры; оно не зависит от внешнего давления и площади поверхности.",
         "ar": "يعتمد ضغط البخار المتزن على نوع السائل ونقائه ودرجة حرارته، ولا يعتمد على الضغط الخارجي ولا على مساحة السطح.",
         "zh": "平衡蒸气压取决于液体的种类、纯度和温度，与外界压强和表面积无关。",
-        "ku": "Zexta buharê ya hevsengiyê bi celeb, paqijî û germahiya şilê ve girêdayî ye; Ew bi zexta derveyî û qada rûxê ve girêdayî NE."
+        "ku": "Zexta buharê ya hevsengiyê bi cureyê şileyê, paqijiya wê û germahiyê ve girêdayî ye; bi zexta derve û rûbera şileyê ve ne girêdayî ye."
       },
       "trap": {
         "tr": "Denge buhar basıncı dış atmosfer basıncı arttıkça artar.",
@@ -47,7 +47,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Равновесное давление пара растёт с увеличением внешнего атмосферного давления.",
         "ar": "يزداد ضغط البخار المتزن بزيادة الضغط الجوي الخارجي.",
         "zh": "平衡蒸气压随外界大气压的增大而增大。",
-        "ku": "Zexta buharê ya hevseng her ku tansiyona atmosferê ya derve zêde dibe zêde dibe."
+        "ku": "Her ku zexta atmosferê ya derve zêde dibe, zexta buharê ya hevsengiyê jî zêde dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Denge buhar basıncı, buharlaşma ve yoğuşma hızlarının eşitlendiği anda buharın yaptığı basınçtır ve yalnızca sıvının cinsine, saflığına ve sıcaklığına bağlıdır; dış basınç kaynama noktasını değiştirir, buhar basıncını değiştirmez.",
@@ -57,7 +57,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Равновесное давление пара — это давление пара при равенстве скоростей испарения и конденсации; оно зависит только от природы жидкости, её чистоты и температуры. Внешнее давление меняет температуру кипения, а не давление пара.",
         "ar": "ضغط البخار المتزن هو ضغط البخار عندما تتساوى سرعتا التبخر والتكاثف، ولا يعتمد إلا على نوع السائل ونقائه ودرجة الحرارة؛ أما الضغط الخارجي فيغيّر درجة الغليان لا ضغط البخار.",
         "zh": "平衡蒸气压是蒸发速率与凝结速率相等时蒸气产生的压强，只取决于液体的种类、纯度和温度；外界压强改变的是沸点，而不是蒸气压。",
-        "ku": "Zexta buharê ya hevseng zexta buharê ye dema leza buharbûn û hilmbûnê wekhev dibe û tenê bi cureyê şileyê, safbûna wê û germahiyê ve girêdayî ye; zexta derve xala kelandinê diguherîne, ne zexta buharê."
+        "ku": "Zexta buharê ya hevsengiyê ew zext e ku buhar dema leza buharbûnê û leza şilebûnê wekhev dibin çêdike; tenê bi cureyê şileyê, paqijiya wê û germahiyê ve girêdayî ye. Zexta derve xala kelînê diguherîne, ne zexta buharê."
       },
       "osymTip": {
         "tr": "ÖSYM tuzağı: Buhar basıncı dış basınca bağlı değildir!",
@@ -67,7 +67,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Типичная ловушка на экзамене: давление пара не зависит от внешнего давления!",
         "ar": "فخ شائع في الامتحان: ضغط البخار لا يعتمد على الضغط الخارجي!",
         "zh": "考试陷阱：蒸气压与外界压强无关！",
-        "ku": "Xefika ÖSYM: Zexta vaporê bi zexta derve ve namîne!"
+        "ku": "Xefika ÖSYM-ê: Zexta buharê bi zexta derve ve ne girêdayî ye!"
       }
     },
     {
@@ -80,7 +80,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Жидкость закипает, когда давление её пара становится равным внешнему атмосферному давлению.",
         "ar": "يحدث الغليان عندما يكون ضغط البخار الداخلي للسائل مساوياً للضغط الجوي الخارجي.",
         "zh": "当液体的蒸气压等于外界大气压时，液体沸腾。",
-        "ku": "Kelandin çêdibe dema ku tansiyona buhara navxweyî ya şilekê bi zexta atmosfera derve re bibe yek."
+        "ku": "Kelîn dema ku zexta buharê ya şileyê bi zexta atmosferê ya derve re wekhev dibe pêk tê."
       },
       "trap": {
         "tr": "Kaynama sadece sıvının yüzeyinde gerçekleşen bir buharlaşmadır.",
@@ -90,7 +90,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Кипение — это просто испарение, происходящее только с поверхности жидкости.",
         "ar": "الغليان تبخرٌ يحدث على سطح السائل فقط.",
         "zh": "沸腾只是发生在液体表面的蒸发。",
-        "ku": "Kelandîn bi tenê evaporasyon e ku li rûyê şilê çêdibe."
+        "ku": "Kelîn tenê buharbûneke li ser rûyê şileyê ye."
       },
       "whyTrapIsFalse": {
         "tr": "Yalnızca yüzeyde gerçekleşen olay buharlaşmadır; kaynamada buhar kabarcıkları sıvının her yerinde oluşur.",
@@ -100,7 +100,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Только с поверхности происходит испарение; при кипении пузырьки пара образуются во всём объёме жидкости.",
         "ar": "العملية التي تحدث عند السطح فقط هي التبخر؛ أما في الغليان فتتكوّن فقاعات البخار في جميع أجزاء السائل.",
         "zh": "只在表面发生的是蒸发；沸腾时整个液体内部都产生气泡。",
-        "ku": "Bûyera ku tenê li ser rûyê çêdibe buharbûn e; di kelandinê de kulîlkên buharê li her derê şileyê çêdibin."
+        "ku": "Bûyera ku tenê li ser rûyê şileyê pêk tê buharbûn e; di kelînê de bilbilên buharê li her derê şileyê çêdibin."
       }
     },
     {
@@ -113,7 +113,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Сопротивление жидкости течению называется вязкостью; с повышением температуры вязкость уменьшается.",
         "ar": "تُسمّى مقاومة السوائل للجريان اللزوجة؛ وتقل اللزوجة بارتفاع درجة الحرارة.",
         "zh": "液体对流动的阻力称为黏度；温度升高，黏度减小。",
-        "ku": "Ji berxwedana şilekên li hember herikînê re viskosîte tê gotin; Her ku germahî zêde dibe, vîskozîtî kêm dibe."
+        "ku": "Ji berxwedana şileyan a li hember herikînê re vîskozîte tê gotin; her ku germahî zêde dibe, vîskozîte kêm dibe."
       },
       "trap": {
         "tr": "Sıcaklık arttıkça bal ve gliserinin viskozitesi artar.",
@@ -123,7 +123,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "С повышением температуры вязкость мёда и глицерина увеличивается.",
         "ar": "تزداد لزوجة العسل والغليسرين بارتفاع درجة الحرارة.",
         "zh": "温度升高时，蜂蜜和甘油的黏度增大。",
-        "ku": "Her ku germahî zêde dibe, vîskozîteya hingiv û glycerin zêde dibe."
+        "ku": "Her ku germahî zêde dibe, vîskozîteya hingiv û glîserînê zêde dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Isınan moleküllerin kinetik enerjisi artar ve aralarındaki çekimi daha kolay yener; bu yüzden bal ve gliserin ısıtılınca daha kolay akar, yani viskozite artmaz, azalır.",
@@ -133,7 +133,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "При нагревании кинетическая энергия молекул растёт, и они легче преодолевают взаимное притяжение; поэтому мёд и глицерин текут легче — вязкость не растёт, а уменьшается.",
         "ar": "عند التسخين تزداد الطاقة الحركية للجزيئات فتتغلب على تجاذبها بسهولة أكبر، لذا يسيل العسل والغليسرين بسهولة أكبر، أي تقل اللزوجة ولا تزداد.",
         "zh": "受热后分子动能增大，更容易克服分子间吸引，所以蜂蜜和甘油加热后更容易流动，黏度不是增大而是减小。",
-        "ku": "Enerjiya kînetîk a molekulên germbûyî zêde dibe û kişandina navbera wan hêsantir bindest dikin; loma hingiv û glîserîn dema germ dibin hêsantir diherikin, ango vîskozîte zêde nabe, kêm dibe."
+        "ku": "Enerjiya kînetîk a molekulên ku germ dibin zêde dibe û ew bi hêsanî bi ser kişandina di navbera xwe de dikevin; loma hingiv û glîserîn dema germ dibin hêsantir diherikin, ango vîskozîte zêde nabe, kêm dibe."
       }
     },
     {
@@ -146,7 +146,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Стекло, пластмассы, сливочное масло и резина — аморфные твёрдые вещества, не имеющие определённой температуры плавления.",
         "ar": "الزجاج والبلاستيك والزبدة والمطاط مواد صلبة غير متبلورة ليس لها درجة انصهار محددة.",
         "zh": "玻璃、塑料、黄油和橡胶是没有固定熔点的非晶体。",
-        "ku": "Cam, plastîk, nivîşk û gomûk madeyên amorf in ku xwedî xala helînê ya taybetî nînin."
+        "ku": "Cam, plastîk, nivîşk û lastîk madeyên hişk ên amorf in ku xala wan a helînê ya diyar tune ye."
       },
       "trap": {
         "tr": "Cam iyonik kristal yapıda olup keskin bir erime noktasına sahiptir.",
@@ -156,7 +156,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Стекло имеет ионную кристаллическую структуру и чёткую температуру плавления.",
         "ar": "الزجاج ذو بنية بلورية أيونية وله درجة انصهار حادة.",
         "zh": "玻璃是离子晶体，有明确的熔点。",
-        "ku": "Cam xwedan avahiyek krîstal a yonîkî û xalek helînê ya tûj e."
+        "ku": "Cam xwedî avahiya krîstala îyonîk e û xala wê ya helînê tûj e."
       },
       "whyTrapIsFalse": {
         "tr": "Camın tanecikleri düzenli bir kristal örgü oluşturmaz, rastgele dizilir; bu nedenle cam belirli bir sıcaklıkta değil, bir sıcaklık aralığında yumuşayarak erir.",
@@ -166,7 +166,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Частицы стекла не образуют упорядоченной кристаллической решётки, а расположены хаотично, поэтому стекло размягчается и плавится в интервале температур, а не при определённой температуре.",
         "ar": "لا تكوّن دقائق الزجاج شبكة بلورية منتظمة بل تترتب عشوائياً، ولذلك يلين الزجاج وينصهر ضمن مدى من درجات الحرارة لا عند درجة محددة.",
         "zh": "玻璃的微粒没有形成有序的晶格，而是无序排列，所以玻璃在一个温度范围内逐渐软化熔化，而没有固定的熔点。",
-        "ku": "Perçikên camê torê krîstalê ya rêkûpêk çênakin, bi awayekî tevlihev rêz dibin; loma cam ne di germahiyeke diyar de, di navberekê germahiyê de nerm dibe û dihele."
+        "ku": "Perçeyên camê tora krîstalî ya rêkûpêk çênakin, bêserûber rêz dibin; loma cam ne di germahiyeke diyar de, lê di navbereke germahiyê de nerm dibe û dihele."
       }
     },
     {
@@ -179,7 +179,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Алмаз и кварц (SiO2) — примеры веществ с атомной (ковалентной) кристаллической решёткой.",
         "ar": "الماس والكوارتز (SiO2) من أمثلة المواد الصلبة البلورية التساهمية الشبكية.",
         "zh": "金刚石和石英(SiO2)是共价晶体的实例。",
-        "ku": "Almas û quartz (SiO2) mînakên madeyên hişk ên krîstal ên bi tora kovalentî ne."
+        "ku": "Elmas û kuvars (SiO2) mînakên madeyên hişk ên krîstalî yên bi tora kovalent in."
       },
       "trap": {
         "tr": "Kuvars van der Waals bağlarıyla tutunan moleküler bir katıdır.",
@@ -189,7 +189,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Кварц — молекулярное твёрдое вещество, частицы которого удерживаются ван-дер-ваальсовыми силами.",
         "ar": "الكوارتز مادة صلبة جزيئية تتماسك جزيئاتها بقوى فان در فالس.",
         "zh": "石英是靠范德华力结合的分子晶体。",
-        "ku": "Quartz hişkek molekular e ku ji hêla girêkên van der Waals ve tê girtin."
+        "ku": "Kuvars madeyeke hişk a molekulî ye ku bi hêzên Van der Waals li hev tê girtin."
       },
       "whyTrapIsFalse": {
         "tr": "Kuvarsta (SiO2) ayrı moleküller yoktur; Si ve O atomları kovalent bağlarla üç boyutlu bir ağ hâlinde bağlıdır. Bu yüzden kuvars çok sert ve erime noktası çok yüksektir.",
@@ -199,7 +199,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В кварце (SiO2) нет отдельных молекул: атомы Si и O связаны ковалентными связями в трёхмерную сетку. Поэтому кварц очень твёрдый и имеет очень высокую температуру плавления.",
         "ar": "لا توجد جزيئات منفصلة في الكوارتز (SiO2)؛ بل ترتبط ذرات Si وO بروابط تساهمية في شبكة ثلاثية الأبعاد، ولذلك فهو شديد الصلابة ودرجة انصهاره عالية جداً.",
         "zh": "石英(SiO2)中没有独立的分子，Si 和 O 原子以共价键连成三维网状结构，所以石英非常坚硬、熔点很高。",
-        "ku": "Di kuvarsê (SiO2) de molekulên cuda tune ne; atomên Si û O bi girêdanên kovalent wekî torekê sê-alî bi hev ve girêdayî ne. Ji ber vê yekê kuvars pir hişk e û xala helînê pir bilind e."
+        "ku": "Di kuvarsê (SiO2) de molekulên cuda tune ne; atomên Si û O bi girêdanên kovalent di toreke sê-alî de bi hev ve girêdayî ne. Ji ber vê yekê kuvars pir hişk e û xala wê ya helînê pir bilind e."
       }
     },
     {
@@ -212,7 +212,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Сухой лёд (твёрдый CO2) и лёд (твёрдая H2O) — вещества с молекулярной кристаллической решёткой.",
         "ar": "الجليد الجاف (CO2 الصلب) والجليد (H2O الصلب) مواد صلبة بلورية جزيئية.",
         "zh": "干冰(固态 CO2)和冰(固态 H2O)都是分子晶体。",
-        "ku": "Qeşa hişk (CO2 hişk) û qeşa (H2O hişk) madeyên krîstal ên molekulî ne."
+        "ku": "Qeşaya hişk (CO2-ya hişk) û qeşa (H2O-ya hişk) madeyên hişk ên krîstala molekulî ne."
       },
       "trap": {
         "tr": "Kuru buz kovalent ağ örgülü çok sert bir kristaldir.",
@@ -222,7 +222,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Сухой лёд — очень твёрдый кристалл с атомной (ковалентной) решёткой.",
         "ar": "الجليد الجاف بلورة شديدة الصلابة ذات شبكة تساهمية.",
         "zh": "干冰是具有共价网状结构、非常坚硬的晶体。",
-        "ku": "Qeşaya hişk krîstaleke pir hişk û bi tevneke kovalent e."
+        "ku": "Qeşaya hişk krîstaleke pir req a bi tora kovalent e."
       },
       "whyTrapIsFalse": {
         "tr": "Kuru buzda CO2 molekülleri birbirine yalnızca zayıf London kuvvetleriyle tutunur; bu nedenle yumuşaktır ve oda koşullarında kolayca süblimleşir.",
@@ -232,7 +232,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В сухом льду молекулы CO2 удерживаются лишь слабыми лондоновскими силами, поэтому он мягкий и легко возгоняется при комнатных условиях.",
         "ar": "في الجليد الجاف تتماسك جزيئات CO2 بقوى لندن الضعيفة فقط، لذا فهو طري ويتسامى بسهولة في الظروف العادية.",
         "zh": "干冰中 CO2 分子之间只靠微弱的色散力结合，所以质软，在常温常压下容易升华。",
-        "ku": "Di cemeda hişk de molekulên CO2 tenê bi hêzên London ên qels li hev digirin; loma nerm e û di şertên odeyê de bi hêsanî sublîme dibe."
+        "ku": "Di qeşaya hişk de molekulên CO2 tenê bi hêzên London ên qels li hev tên girtin; loma nerm e û di şertên odeyê de bi hêsanî sublîme dibe."
       }
     },
     {
@@ -245,7 +245,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Поваренная соль (NaCl) и известняк (CaCO3) — примеры веществ с ионной кристаллической решёткой.",
         "ar": "ملح الطعام (NaCl) والحجر الجيري (CaCO3) من أمثلة المواد الصلبة البلورية الأيونية.",
         "zh": "食盐(NaCl)和石灰石(CaCO3)是离子晶体的实例。",
-        "ku": "Xwêya sifrê (NaCl) û kevirê kilsin (CaCO3) mînakên hişk ên krîstal ên îyonî ne."
+        "ku": "Xwêya xwarinê (NaCl) û kevirê kilsî (CaCO3) mînakên madeyên hişk ên krîstala îyonîk in."
       },
       "trap": {
         "tr": "NaCl moleküler katı sınıfında yer alır.",
@@ -255,7 +255,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "NaCl относится к молекулярным твёрдым веществам.",
         "ar": "ينتمي NaCl إلى فئة المواد الصلبة الجزيئية.",
         "zh": "NaCl 属于分子晶体。",
-        "ku": "NaCl di çîna madeyên hişk ên molekulî de ye."
+        "ku": "NaCl di çîna madeyên hişk ên molekulî de cih digire."
       },
       "whyTrapIsFalse": {
         "tr": "NaCl'de molekül yoktur; Na+ ve Cl- iyonları iyonik bağlarla kristal örgüde dizilir. Yüksek erime noktası ve eriyiğinin elektriği iletmesi iyonik katı olduğunu gösterir.",
@@ -265,7 +265,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В NaCl нет молекул: ионы Na+ и Cl- образуют кристаллическую решётку, удерживаемую ионными связями. Высокая температура плавления и электропроводность расплава показывают, что это ионное кристаллическое вещество.",
         "ar": "لا توجد جزيئات في NaCl؛ بل تترتب أيونات Na+ وCl- في شبكة بلورية تربطها روابط أيونية، وتدل درجة انصهاره العالية وتوصيل مصهوره للكهرباء على أنه صلب أيوني.",
         "zh": "NaCl 中没有分子，Na+ 和 Cl- 通过离子键排列成晶格。熔点高、熔融态能导电，说明它是离子晶体。",
-        "ku": "Di NaCl de molekul tune; îyonên Na+ û Cl- bi girêdanên îyonîk di torê krîstalê de rêz dibin. Xala helînê ya bilind û guhezîna elektrîkê ya helyaya wê nîşan didin ku hişkeke îyonîk e."
+        "ku": "Di NaCl-ê de molekul tune ne; îyonên Na+ û Cl- bi girêdanên îyonîk di tora krîstalî de rêz dibin. Xala helînê ya bilind û guhestina elektrîkê ya di rewşa wê ya helandî de nîşan didin ku ew madeyeke hişk a îyonîk e."
       }
     },
     {
@@ -278,7 +278,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Железо, медь и золото имеют металлическую кристаллическую решётку, их валентные электроны свободно перемещаются.",
         "ar": "الحديد والنحاس والذهب بلورات فلزية تتحرك فيها إلكترونات التكافؤ بحرية.",
         "zh": "铁、铜和金属于金属晶体类，它们的价电子可以自由移动。",
-        "ku": "Hesin, sifir û zêr di çîna krîstalên metalîk de ne û elektronên wan ên valence bi serbestî tevdigerin."
+        "ku": "Hesin, sifir û zêr di çîna krîstalên metalîk de ne û elektronên wan ên valansê bi azadî dilivin."
       },
       "trap": {
         "tr": "Demir katısı kovalent kristal olduğu için elektriği iletmez.",
@@ -298,7 +298,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Железо — металлический кристалл; его валентные электроны свободно движутся в решётке, поэтому оно хорошо проводит ток и в твёрдом состоянии.",
         "ar": "الحديد بلورة فلزية تتحرك إلكترونات تكافؤها بحرية داخل الشبكة الفلزية، لذا يوصل الكهرباء جيداً حتى في الحالة الصلبة.",
         "zh": "铁是金属晶体，价电子能在金属晶格中自由移动，所以固态时也能很好地导电。",
-        "ku": "Hesin krîstaleke metalî ye; elektronên valansê di nava torê metalê de bi serbestî dilivin, loma di rewşa hişk de jî elektrîkê baş diguhezîne."
+        "ku": "Hesin krîstaleke metalîk e; elektronên valansê di nav tora metalê de bi azadî dilivin, loma di rewşa hişk de jî elektrîkê baş diguhezîne."
       }
     },
     {
@@ -311,7 +311,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Испарение происходит при любой температуре, а кипение — при определённой температуре и во всём объёме жидкости.",
         "ar": "يحدث التبخر عند أي درجة حرارة، في حين يحدث الغليان في السائل كله عند درجة حرارة معينة.",
         "zh": "蒸发在任何温度下都能发生，而沸腾在一定温度下、在整个液体中发生。",
-        "ku": "Dema ku evaporasyon di her germahiyê de çêdibe, di germahiyek taybetî de kelandin di tevahiya şilê de pêk tê."
+        "ku": "Buharbûn di her germahiyê de pêk tê, lê kelîn di germahiyeke diyar de di tevahiya şileyê de pêk tê."
       },
       "trap": {
         "tr": "Buharlaşma yalnızca kaynama sıcaklığında meydana gelir.",
@@ -321,7 +321,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Испарение происходит только при температуре кипения.",
         "ar": "لا يحدث التبخر إلا عند درجة الغليان.",
         "zh": "蒸发只在沸点时发生。",
-        "ku": "Avhilandin tenê di germahiya kelandinê de pêk tê."
+        "ku": "Buharbûn tenê di germahiya kelînê de pêk tê."
       },
       "whyTrapIsFalse": {
         "tr": "Yeterli kinetik enerjiye sahip yüzey molekülleri her sıcaklıkta sıvıdan kopabilir; örneğin oda sıcaklığındaki su birikintisi zamanla kurur. Belirli bir sıcaklıkta gerçekleşen olay kaynamadır.",
@@ -331,7 +331,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Поверхностные молекулы с достаточной кинетической энергией покидают жидкость при любой температуре: например, лужа высыхает при комнатной температуре. При определённой температуре происходит кипение.",
         "ar": "يمكن لجزيئات السطح التي تملك طاقة حركية كافية أن تغادر السائل في أيّ درجة حرارة؛ فبركة الماء مثلاً تجف في درجة حرارة الغرفة. أما الذي يحدث عند درجة محددة فهو الغليان.",
         "zh": "具有足够动能的表面分子在任何温度下都能逸出液体，例如室温下的水洼会慢慢变干。在确定温度下发生的是沸腾。",
-        "ku": "Molekulên rûyê ku enerjiya kînetîk a têr wan heye di her germahiyê de dikarin ji şileyê veqetin; mînak gola avê di germahiya odeyê de hişk dibe. Bûyera ku di germahiyeke diyar de çêdibe kelandin e."
+        "ku": "Molekulên rûyê ku xwedî enerjiya kînetîk a têr in, di her germahiyê de dikarin ji şileyê veqetin; mînak, gola avê di germahiya odeyê de bi demê re ziwa dibe. Bûyera ku di germahiyeke diyar de pêk tê kelîn e."
       }
     },
     {
@@ -344,7 +344,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "С уменьшением внешнего давления (например, при подъёме высоко в горы) температура кипения воды понижается.",
         "ar": "تنخفض درجة غليان الماء بانخفاض الضغط الخارجي (كلما صعدنا إلى قمم الجبال العالية).",
         "zh": "外界压强降低时（如登上高山），水的沸点降低。",
-        "ku": "Her ku zexta derve kêm dibe (her ku hûn hilkişin çiyayên bilind), xala kelandinê ya avê kêm dibe."
+        "ku": "Her ku zexta derve kêm dibe (her ku em hildikişin çiyayên bilind), xala kelînê ya avê nizm dibe."
       },
       "trap": {
         "tr": "Düdüklü tencerede dış basınç düştüğü için yemekler daha hızlı pişer.",
@@ -354,7 +354,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В скороварке пища готовится быстрее, потому что внешнее давление в ней понижается.",
         "ar": "يُطهى الطعام في قدر الضغط أسرع لأن الضغط الخارجي فيه ينخفض.",
         "zh": "用高压锅时外界压强降低，所以食物熟得更快。",
-        "ku": "Ji ber ku zexta derve di beroşa zextê de kêm dibe, xwarin zûtir çêdibe."
+        "ku": "Ji ber ku di beroşa bi zext de zexta derve kêm dibe, xwarin zûtir dipije."
       },
       "whyTrapIsFalse": {
         "tr": "Düdüklü tencerede kapak buharı hapsettiği için iç basınç düşmez, artar; artan basınç suyun kaynama noktasını 100 °C'nin üzerine çıkarır ve yemek daha yüksek sıcaklıkta pişer.",
@@ -364,7 +364,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В скороварке крышка удерживает пар, поэтому давление внутри не падает, а растёт; повышенное давление поднимает температуру кипения воды выше 100 °C, и пища готовится при более высокой температуре.",
         "ar": "في قدر الضغط يحبس الغطاء البخار فيرتفع الضغط الداخلي ولا ينخفض، فترتفع درجة غليان الماء فوق 100 °C ويُطهى الطعام عند درجة حرارة أعلى.",
         "zh": "高压锅的锅盖把蒸汽封住，锅内压强不是降低而是升高，压强升高使水的沸点超过 100 °C，食物在更高温度下煮熟。",
-        "ku": "Di beroşa bi zext de qapax buharê digire, loma zexta hundir kêm nabe, zêde dibe; zexta zêde xala kelandinê ya avê ji 100 °C bilindtir dike û xwarin di germahiyeke bilindtir de dipije."
+        "ku": "Di beroşa bi zext de qapax buharê di hundir de digire, loma zexta hundir kêm nabe, zêde dibe; zexta zêde xala kelînê ya avê ji 100 °C bilindtir dike û xwarin di germahiyeke bilindtir de dipije."
       }
     },
     {
@@ -377,7 +377,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Относительная влажность — это отношение парциального давления водяного пара в воздухе к давлению насыщенного пара при этой температуре.",
         "ar": "الرطوبة النسبية هي نسبة الضغط الجزئي لبخار الماء في الهواء إلى ضغط البخار المشبع عند درجة الحرارة نفسها.",
         "zh": "相对湿度是空气中水蒸气的分压与同温度下饱和蒸气压之比。",
-        "ku": "Nemiya nisbî rêjeya zexta qismî ya buhara avê ya li hewayê bi tansiyona têrbûyî ya wê germahiyê ye."
+        "ku": "Şiliya nisbî rêjeya zexta qismî ya buhara avê ya di hewayê de li hember zexta buharê ya têr a di wê germahiyê de ye."
       },
       "trap": {
         "tr": "Bağıl nemin %100 olması havanın tamamen su buharından oluştuğu anlamına gelir.",
@@ -397,7 +397,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Относительная влажность — отношение давления водяного пара в воздухе к давлению насыщенного пара при данной температуре; 100 % означает не то, что воздух состоит только из воды, а то, что он насыщен и больше пара принять не может.",
         "ar": "الرطوبة النسبية هي نسبة ضغط بخار الماء في الهواء إلى ضغط البخار المشبع عند تلك الدرجة؛ وقيمة 100% لا تعني أن الهواء ماء كله، بل أنه مشبع ولا يستطيع حمل مزيد من البخار.",
         "zh": "相对湿度是空气中水蒸气压强与该温度下饱和蒸气压之比；100% 并不表示空气全由水组成，而是表示空气已饱和，不能再容纳更多水蒸气。",
-        "ku": "Şiliya nisbî rêjeya zexta buhara avê ya di hewayê de li hember zexta buharê ya têr a wê germahiyê ye; %100 nayê wê wateyê ku hewa bi tevahî ji avê pêk tê, lê nîşan dide ku hewa têr bûye û êdî buhar nastîne."
+        "ku": "Şiliya nisbî rêjeya zexta buhara avê ya di hewayê de li hember zexta buharê ya têr a di wê germahiyê de ye; nirxa %100 nayê wê wateyê ku hewa bi tevahî ji avê pêk tê, lê nîşan dide ku hewa têr bûye û êdî nikare buhara avê zêdetir bigire."
       }
     },
     {
@@ -410,7 +410,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Плазма — электропроводящее состояние вещества, в котором одновременно присутствуют нейтральные атомы, ионы, свободные электроны и фотоны.",
         "ar": "حالة البلازما حالة موصلة للكهرباء تتعايش فيها الذرات المتعادلة والأيونات والإلكترونات الحرة والفوتونات.",
         "zh": "等离子态是中性原子、离子、自由电子和光子共存的导电状态。",
-        "ku": "Rewşa plazmayê rewşeke ku elektrîkê diguhezîne ye û tê de atomên bêalî, îyon, elektronên azad û foton bi hev re hene."
+        "ku": "Rewşa plazmayê rewşeke ku elektrîkê diguhezîne ye; tê de atomên notr, îyon, elektronên azad û foton bi hev re hene."
       },
       "trap": {
         "tr": "Plazma hâli elektriği iletmez ve manyetik alandan etkilenmez.",
@@ -420,7 +420,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Плазма не проводит электрический ток и не испытывает действия магнитного поля.",
         "ar": "حالة البلازما لا توصل الكهرباء ولا تتأثر بالمجال المغناطيسي.",
         "zh": "等离子态不导电，也不受磁场影响。",
-        "ku": "Rewşa plazmayê elektrîkê naguhezîne û ji qada magnetîsî bandor nabe."
+        "ku": "Rewşa plazmayê elektrîkê naguhezîne û ji qada magnetîk bandor nabe."
       },
       "whyTrapIsFalse": {
         "tr": "Plazmada serbest elektronlar ve iyonlar gibi yüklü tanecikler bulunur; bu yüklü tanecikler sayesinde plazma elektriği iletir ve manyetik alandan etkilenir.",
@@ -430,7 +430,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В плазме есть заряженные частицы — свободные электроны и ионы; благодаря им плазма проводит ток и испытывает действие магнитного поля.",
         "ar": "تحتوي البلازما على دقائق مشحونة كالإلكترونات الحرة والأيونات، وبفضلها توصل الكهرباء وتتأثر بالمجال المغناطيسي.",
         "zh": "等离子体中含有自由电子和离子等带电微粒，因此能导电，并受磁场影响。",
-        "ku": "Di plazmayê de perçikên barkirî yên wekî elektronên serbest û îyonan hene; bi saya wan plazma elektrîkê diguhezîne û ji qada magnetîk bandor dibe."
+        "ku": "Di plazmayê de perçeyên barkirî yên wekî elektronên azad û îyonan hene; bi saya van perçeyên barkirî plazma elektrîkê diguhezîne û ji qada magnetîk bandor dibe."
       }
     },
     {
@@ -443,7 +443,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Жидкости с сильным межмолекулярным притяжением имеют высокую вязкость и низкое давление пара.",
         "ar": "السوائل ذات قوى التجاذب القوية بين الجزيئات لزوجتها عالية وضغط بخارها منخفض.",
         "zh": "分子间作用力强的液体黏度大、蒸气压低。",
-        "ku": "Şilekên bi hêzên navmolekularî yên xurt xwedî vîskozîtîya bilind û tansiyona vaporê ya kêm in."
+        "ku": "Şileyên ku hêzên wan ên navmolekulî xurt in xwedî vîskozîteya bilind û zexta buharê ya nizm in."
       },
       "trap": {
         "tr": "Moleküller arası çekim kuvveti güçlü olan sıvılar çok hızlı buharlaşır ve yüksek buhar basıncına sahiptir.",
@@ -453,7 +453,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Жидкости с сильным межмолекулярным притяжением очень быстро испаряются и имеют высокое давление пара.",
         "ar": "السوائل ذات قوى التجاذب القوية بين الجزيئات تتبخر بسرعة كبيرة ولها ضغط بخار مرتفع.",
         "zh": "分子间作用力强的液体蒸发得很快，蒸气压高。",
-        "ku": "Şilekên ku hêzên kêşanê yên navmolekulî yên xurt hene pir zû hilm dibin û zexta wan a buharê bilind e."
+        "ku": "Şileyên ku hêzên wan ên navmolekulî xurt in pir zû buhar dibin û zexta wan a buharê bilind e."
       },
       "whyTrapIsFalse": {
         "tr": "Moleküller arası çekim güçlü olduğunda moleküllerin sıvıdan kopması zorlaşır; bu yüzden böyle sıvılar yavaş buharlaşır ve buhar basınçları düşüktür.",
@@ -463,7 +463,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "При сильном межмолекулярном притяжении молекулам труднее покинуть жидкость, поэтому такие жидкости испаряются медленно и имеют низкое давление пара.",
         "ar": "عندما يكون التجاذب بين الجزيئات قوياً يصعب عليها مغادرة السائل، لذا تتبخر هذه السوائل ببطء ويكون ضغط بخارها منخفضاً.",
         "zh": "分子间吸引力强时，分子难以脱离液体，所以这类液体蒸发慢，蒸气压低。",
-        "ku": "Dema kişandina navbera molekulan xurt be, veqetîna molekulan ji şileyê zehmet dibe; loma şileyên weha hêdî dibuhirin û zexta buhara wan nizm e."
+        "ku": "Dema kişandina di navbera molekulan de xurt be, veqetîna molekulan ji şileyê zehmet dibe; loma şileyên wiha hêdî buhar dibin û zexta wan a buharê nizm e."
       }
     },
     {
@@ -476,7 +476,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Равновесные давления пара всех чистых жидкостей, кипящих в одних и тех же условиях, равны друг другу (и равны внешнему давлению).",
         "ar": "ضغوط البخار المتزنة لجميع السوائل النقية التي تغلي في الوسط نفسه متساوية (وتساوي الضغط الخارجي).",
         "zh": "在同一环境中沸腾的所有纯液体，其平衡蒸气压都相等（都等于外界压强）。",
-        "ku": "Zextên buharê yên hevseng ên hemî şilekên pak ên ku di heman hawîrdorê de diqelînin bi hevûdu re (wek zexta derve) wekhev in."
+        "ku": "Zextên buharê yên hevsengiyê yên hemû şileyên paqij ên ku di heman derdorê de dikelin bi hev re wekhev in (bi zexta derve re wekhev in)."
       },
       "trap": {
         "tr": "Aynı ortamda kaynamakta olan etil alkolün buhar basıncı, kaynamakta olan suyun buhar basıncından büyüktür.",
@@ -486,7 +486,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В одних и тех же условиях давление пара кипящего этилового спирта больше, чем у кипящей воды.",
         "ar": "في الوسط نفسه يكون ضغط بخار الكحول الإيثيلي أثناء غليانه أكبر من ضغط بخار الماء أثناء غليانه.",
         "zh": "在同一环境中，沸腾的乙醇的蒸气压大于沸腾的水的蒸气压。",
-        "ku": "Di heman hawîrdorê de zexta buharê ya etîl alkola ku dikele ji ya ava ku dikele mezintir e."
+        "ku": "Di heman derdorê de zexta buharê ya etîl alkola ku dikele ji ya ava ku dikele mezintir e."
       },
       "whyTrapIsFalse": {
         "tr": "Bir sıvı, buhar basıncı dış basınca eşit olduğunda kaynar; aynı ortamda kaynayan alkol ve suyun buhar basınçları dış basınca, dolayısıyla birbirine eşittir. Alkol yalnızca daha düşük sıcaklıkta kaynar.",
@@ -496,7 +496,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Жидкость кипит, когда давление её пара равно внешнему; у спирта и воды, кипящих в одних и тех же условиях, давление пара равно внешнему давлению, а значит, и друг другу. Спирт лишь кипит при более низкой температуре.",
         "ar": "يغلي السائل عندما يساوي ضغط بخاره الضغط الخارجي؛ فالكحول والماء اللذان يغليان في الوسط نفسه يساوي ضغط بخار كلٍّ منهما الضغط الخارجي، فهما متساويان. وكل ما في الأمر أن الكحول يغلي عند درجة حرارة أدنى.",
         "zh": "液体在蒸气压等于外界压强时沸腾；在同一环境中沸腾的酒精和水，其蒸气压都等于外界压强，因而彼此相等。酒精只是沸腾温度更低。",
-        "ku": "Şileyek dema zexta buhara wê bi zexta derve re wekhev dibe dikele; alkol û ava ku li heman cihî dikelin zexta buhara wan bi zexta derve, ango bi hev re wekhev e. Alkol tenê di germahiyeke nizmtir de dikele."
+        "ku": "Şile dema zexta wê ya buharê bi zexta derve re wekhev dibe dikele; zextên buharê yên alkol û ava ku li heman cihî dikelin bi zexta derve re, ango bi hev re jî wekhev in. Alkol tenê di germahiyeke nizmtir de dikele."
       }
     },
     {
@@ -509,7 +509,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "С увеличением площади поверхности жидкости скорость испарения увеличивается, но равновесное давление пара не меняется.",
         "ar": "بزيادة مساحة سطح السائل تزداد سرعة التبخر، لكن ضغط البخار المتزن لا يتغير.",
         "zh": "液体表面积增大，蒸发速率增大，但平衡蒸气压不变。",
-        "ku": "Her ku qada rûbera şilekê zêde dibe, rêjeya evaporasyonê zêde dibe, lê tansiyona buharê ya hevsengiyê naguhere."
+        "ku": "Her ku rûbera şileyê mezin dibe, leza buharbûnê zêde dibe, lê zexta buharê ya hevsengiyê naguhere."
       },
       "trap": {
         "tr": "Geniş kapta bulunan suyun denge buhar basıncı dar kaptakinden büyüktür.",
@@ -519,7 +519,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Равновесное давление пара воды в широком сосуде больше, чем в узком.",
         "ar": "ضغط بخار الماء المتزن في الوعاء الواسع أكبر منه في الوعاء الضيق.",
         "zh": "宽口容器中水的平衡蒸气压比窄口容器中的大。",
-        "ku": "Zexta buharê ya hevseng ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
+        "ku": "Zexta buharê ya hevsengiyê ya ava di firaxa fireh de ji ya di firaxa teng de mezintir e."
       },
       "whyTrapIsFalse": {
         "tr": "Geniş yüzey buharlaşma hızını artırır ama yoğuşma hızını da aynı oranda artırır; dengede buhar basıncı yalnızca sıcaklığa, sıvının cinsine ve saflığına bağlıdır.",
@@ -529,7 +529,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Большая поверхность увеличивает скорость испарения, но в той же мере и скорость конденсации; при равновесии давление пара зависит только от температуры, природы жидкости и её чистоты.",
         "ar": "تزيد المساحة السطحية الكبيرة سرعة التبخر لكنها تزيد سرعة التكاثف بالنسبة نفسها، وعند الاتزان لا يعتمد ضغط البخار إلا على درجة الحرارة ونوع السائل ونقائه.",
         "zh": "表面积大使蒸发速率增大，但凝结速率也按同样比例增大；达到平衡时蒸气压只取决于温度以及液体的种类和纯度。",
-        "ku": "Rûyê fireh leza buharbûnê zêde dike lê leza hilmbûnê jî bi heman rêjeyê zêde dike; di hevsengiyê de zexta buharê tenê bi germahî, cureyê şileyê û safbûna wê ve girêdayî ye."
+        "ku": "Rûbera fireh leza buharbûnê zêde dike, lê leza şilebûnê jî bi heman rêjeyê zêde dike; di hevsengiyê de zexta buharê tenê bi germahiyê, cureyê şileyê û paqijiya wê ve girêdayî ye."
       }
     },
     {
@@ -542,7 +542,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В ветреную погоду испарение идёт быстрее, так как ветер уносит молекулы пара от поверхности.",
         "ar": "تزداد سرعة التبخر في الجو الذي تهب فيه الرياح لأن جزيئات البخار تُزاح بعيداً عن السطح.",
         "zh": "有风时，液面附近的蒸气分子被吹走，蒸发速率增大。",
-        "ku": "Di hewaya bayê de, ji ber ku molekulên buharê yên li ser rûyê şilekê têne rakirin, rêjeya evaporasyonê zêde dibe."
+        "ku": "Di hewaya bayî de leza buharbûnê zêde dibe, ji ber ku molekulên buharê yên li ser rûyê şileyê tên dûrxistin."
       },
       "trap": {
         "tr": "Rüzgârlı havada çamaşırların kuruma süresi uzar.",
@@ -552,7 +552,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В ветреную погоду время высыхания белья увеличивается.",
         "ar": "تستغرق الملابس المغسولة وقتاً أطول لتجف في الجو الذي تهب فيه الرياح.",
         "zh": "有风的天气里，衣服晾干所需的时间更长。",
-        "ku": "Di hewaya bayê de, dema zuhakirina cilşûştinê dirêjtir dibe."
+        "ku": "Di hewaya bayî de dema ziwabûna cilên şuştî dirêjtir dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Rüzgâr, yüzeydeki su buharını uzaklaştırarak buharın geri yoğuşmasını azaltır; buharlaşma hızlandığı için çamaşırlar daha kısa sürede kurur.",
@@ -562,7 +562,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Ветер уносит водяной пар от поверхности и уменьшает обратную конденсацию; испарение ускоряется, и бельё сохнет быстрее.",
         "ar": "تُبعد الرياح بخار الماء عن السطح فتقلّل تكاثفه من جديد، فيتسارع التبخر وتجف الملابس في وقت أقصر.",
         "zh": "风把表面附近的水蒸气带走，减少了水蒸气重新凝结，蒸发加快，衣服干得更快。",
-        "ku": "Ba buhara avê ya li ser rûyê dûr dixe û hilmbûna wê ya dîsa kêm dike; buharbûn bilez dibe, loma cil di demeke kurttir de hişk dibin."
+        "ku": "Ba buhara avê ya li ser rûyê dûr dixe û şilebûna wê ya paşve kêm dike; ji ber ku buharbûn bilez dibe, cil di demeke kurttir de ziwa dibin."
       }
     }
   ],
@@ -577,7 +577,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Испарение",
         "ar": "التبخر",
         "zh": "蒸发",
-        "ku": "Hilmbûn"
+        "ku": "Buharbûn"
       },
       "conceptB": {
         "tr": "Kaynama",
@@ -587,7 +587,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Кипение",
         "ar": "الغليان",
         "zh": "沸腾",
-        "ku": "Kelandin"
+        "ku": "Kelîn"
       },
       "distinction": {
         "tr": "Buharlaşma her sıcaklıkta ve sadece yüzeyde; kaynama belirli sıcaklıkta ve sıvının her yerinde gerçekleşir.",
@@ -597,7 +597,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Испарение происходит при любой температуре и только с поверхности жидкости; кипение происходит при определённой температуре и во всём объёме жидкости.",
         "ar": "يحدث التبخر في جميع درجات الحرارة وعلى السطح فقط؛ أما الغليان فيحدث عند درجة حرارة معينة وفي السائل كله.",
         "zh": "蒸发在任何温度下都能发生，且只发生在液体表面；而沸腾在一定温度下发生，液体内部和表面同时汽化。",
-        "ku": "Hilmbûn di her germahiyê de û tenê li ser rûyê çêdibe; Kelandin di germahiyek diyar de û li her derê şilê çêdibe."
+        "ku": "Buharbûn di her germahiyê de û tenê li ser rûyê şileyê pêk tê; kelîn di germahiyeke diyar de û li her derê şileyê pêk tê."
       }
     },
     {
@@ -630,7 +630,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Аморфное твёрдое вещество не имеет определённой температуры плавления и при нагревании постепенно размягчается в интервале температур; кристаллическое твёрдое вещество имеет упорядоченную упаковку частиц и чёткую температуру плавления.",
         "ar": "الصلب غير المتبلور ليس له درجة انصهار محددة، ويلين تدريجيًا عند التسخين فينصهر ضمن مدى من درجات الحرارة؛ أما الصلب البلوري فدقائقه مرتبة بانتظام وله درجة انصهار حادة.",
         "zh": "非晶态固体没有固定熔点，受热时在一定温度范围内逐渐软化熔化；而晶体中微粒排列有序，有固定的熔点。",
-        "ku": "Madeya hişk a amorf xwedî xala helînê ya diyar nîne û dema germ dibe di navbereke germahiyê de hêdî hêdî nerm dibe; di madeya krîstal de tenoşk bi rêk û pêk rêz bûne û xala wê ya helînê tûj e."
+        "ku": "Madeya hişk a amorf xala helînê ya diyar tune ye û dema tê germkirin di navbereke germahiyê de hêdî hêdî nerm dibe û dihele; di madeya hişk a krîstal de perçe bi rêkûpêk rêz bûne û xala helînê tûj e."
       }
     },
     {
@@ -643,7 +643,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Вязкость",
         "ar": "اللزوجة",
         "zh": "黏度",
-        "ku": "Vîskozîtî"
+        "ku": "Vîskozîte"
       },
       "conceptB": {
         "tr": "Akıcılık",
@@ -663,7 +663,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Вязкость — внутреннее сопротивление жидкости течению; текучесть — противоположное свойство, способность жидкости легко течь.",
         "ar": "اللزوجة مقاومة داخلية يبديها السائل للجريان؛ أما السيولة فخاصية معاكسة لها، أي سهولة جريان السائل.",
         "zh": "黏度是液体流动时的内部阻力；而流动性则相反，表示液体容易流动的程度。",
-        "ku": "Vîskozîtî berxwedana navxweyî ya şileyê li hember herikînê ye; herikbarî taybetmendiya berevajî ye, ango hêsaniya herikîna şileyê ye."
+        "ku": "Vîskozîte berxwedana navxweyî ya şileyê li hember herikînê ye; herikbarî taybetmendiya berevajî ye, ango şile çiqas bi hêsanî diherike."
       }
     },
     {
@@ -729,7 +729,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Молекулярный кристалл (лёд, сухой лёд) состоит из молекул, удерживаемых слабыми взаимодействиями, и имеет низкую температуру плавления; атомный (ковалентный) кристалл (алмаз, кварц) состоит из атомов, связанных ковалентными связями, и имеет очень высокую температуру плавления.",
         "ar": "في البلورة الجزيئية (الجليد، الجليد الجاف) ترتبط الجزيئات بتآثرات ضعيفة، ودرجة الانصهار منخفضة؛ أما في البلورة التساهمية الشبكية (الماس، الكوارتز) فترتبط الذرات بروابط تساهمية، ودرجة الانصهار مرتفعة جدًا.",
         "zh": "分子晶体（冰、干冰）中分子靠弱相互作用结合，熔点低；而共价晶体（金刚石、石英）中原子以共价键相连，熔点很高。",
-        "ku": "Krîstala molekulî (qeşa, qeşaya hişk) ji molekulên ku bi têkiliyên qels li hev tên girtin pêk tê û xala helîna wê nizm e; di krîstala tora kovalent de (elmas, kuarts) atom bi girêdanên kovalent bi hev ve girêdayî ne û xala helînê pir bilind e."
+        "ku": "Di krîstala molekulî de (qeşa, qeşaya hişk) molekul bi têkiliyên qels li hev tên girtin û xala helînê nizm e; di krîstala tora kovalent de (elmas, kuvars) atom bi girêdanên kovalent bi hev ve girêdayî ne û xala helînê pir bilind e."
       }
     },
     {
@@ -762,7 +762,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Газ — вещество, которое при комнатных условиях находится в газообразном состоянии (O2, N2, CO2); пар — газообразное состояние вещества, жидкого или твёрдого при комнатных условиях (вода, иод), в которое оно переходит при испарении или возгонке.",
         "ar": "الغاز اسم يُطلق على المواد التي توجد في هذه الحالة في الظروف العادية (O2 وN2 وCO2)؛ أما البخار فهو الحالة التي تتحول إليها بالتبخر أو التسامي مادة تكون سائلة أو صلبة في الظروف العادية (الماء، اليود).",
         "zh": "气体是指在常温常压下本身就呈气态的物质(O2、N2、CO2)；而蒸气是常温常压下为液态或固态的物质（水、碘）经蒸发或升华形成的气态。",
-        "ku": "Gaz ew nav e ku ji bo madeyên di şertên odeyê de di vê rewşê de ne (O2, N2, CO2) tê bikaranîn; buhar jî ew rewş e ku madeyeke di şertên odeyê de şile an hişk (av, îyot) bi hilmbûn an sublîmasyonê dikeve wê."
+        "ku": "Gaz navê madeyên ku di şertên odeyê de bi xwe di vê rewşê de ne (O2, N2, CO2); buhar jî rewşa madeyeke ye ku di şertên odeyê de şile an hişk e (av, îyot) û bi buharbûn an sublîmebûnê dikeve vê rewşê."
       }
     },
     {
@@ -785,7 +785,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Плазма",
         "ar": "البلازما",
         "zh": "等离子体",
-        "ku": "Plasma"
+        "ku": "Plazma"
       },
       "distinction": {
         "tr": "Gaz nötr atom veya moleküllerden oluşur; plazma ise iyonlar, serbest elektronlar ve nötr taneciklerin bir arada bulunduğu iletken akışkandır.",
@@ -795,7 +795,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Газ состоит из нейтральных атомов или молекул; плазма — электропроводящая среда, в которой одновременно присутствуют ионы, свободные электроны и нейтральные частицы.",
         "ar": "يتكون الغاز من ذرات أو جزيئات متعادلة؛ أما البلازما فمائع موصل تتعايش فيه الأيونات والإلكترونات الحرة والدقائق المتعادلة.",
         "zh": "气体由中性原子或分子构成；而等离子体是离子、自由电子和中性微粒共存的导电流体。",
-        "ku": "Gaz ji atom an jî molekulên bêalî pêk tê; Plazma herikbarek ku elektrîkê diguhezîne e ku tê de îyon, elektronên azad û pariyên bêalî bi hev re dijîn."
+        "ku": "Gaz ji atom an molekulên notr pêk tê; plazma jî herikbareke guhêzbar e ku tê de îyon, elektronên azad û perçeyên notr bi hev re hene."
       }
     },
     {
@@ -808,7 +808,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Ионный кристалл",
         "ar": "البلورة الأيونية",
         "zh": "离子晶体",
-        "ku": "Krîstala Îyonî"
+        "ku": "Krîstala Îyonîk"
       },
       "conceptB": {
         "tr": "Metalik Kristal",
@@ -818,7 +818,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Металлический кристалл",
         "ar": "البلورة الفلزية",
         "zh": "金属晶体",
-        "ku": "Krîstala Metalî"
+        "ku": "Krîstala Metalîk"
       },
       "distinction": {
         "tr": "İyonik kristallerde katyon ve anyonlar iyonik bağla bağlıdır ve bu kristaller katı hâlde elektriği iletmez; metalik kristallerde pozitif metal iyonları elektron denizi ile bir arada tutulur ve bu kristaller katı hâlde elektriği iletir.",
@@ -828,7 +828,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Ионный кристалл состоит из катионов и анионов, связанных ионной связью, и в твёрдом состоянии не проводит ток; металлический кристалл состоит из положительных ионов металла, удерживаемых „электронным морем“, и проводит ток в твёрдом состоянии.",
         "ar": "في البلورة الأيونية ترتبط الكاتيونات والأنيونات بروابط أيونية، ولا توصل هذه البلورات الكهرباء في الحالة الصلبة؛ أما في البلورة الفلزية فترتبط أيونات الفلز الموجبة ببحر الإلكترونات، وتوصل هذه البلورات الكهرباء في الحالة الصلبة.",
         "zh": "离子晶体中阴、阳离子以离子键结合，固态时不导电；而金属晶体中的阳离子靠自由电子“海”结合在一起，固态时能导电。",
-        "ku": "Krîstala îyonî ji katyon û anyonên ku bi girêdana îyonî bi hev ve girêdayî ne pêk tê û di rewşa hişk de elektrîkê naguhezîne; di krîstala metalî de îyonên metal ên erênî bi deryaya elektronan ve girêdayî ne û ew di rewşa hişk de elektrîkê diguhezîne."
+        "ku": "Di krîstala îyonîk de katyon û anyon bi girêdana îyonîk bi hev ve girêdayî ne û di rewşa hişk de elektrîkê naguhezîne; di krîstala metalîk de îyonên metal ên pozîtîf bi deryaya elektronan li hev tên girtin û di rewşa hişk de elektrîkê diguhezîne."
       }
     }
   ],
@@ -843,7 +843,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Изменения при нагревании жидкости в закрытом сосуде",
         "ar": "التغيرات عند تسخين سائل في وعاء مغلق",
         "zh": "加热密闭容器中的液体时发生的变化",
-        "ku": "Guhertinên Dema Şileyek di Firaxa Girtî de Tê Germkirin"
+        "ku": "Guherînên Dema Şile di Firaxeke Girtî de Tê Germkirin"
       },
       "steps": [
         {
@@ -864,7 +864,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Растёт число молекул с энергией, достаточной для отрыва от поверхности",
           "ar": "يزداد عدد الجزيئات التي تملك طاقة كافية للإفلات من السطح",
           "zh": "具有足够能量脱离液面的分子数增加",
-          "ku": "Hejmara molekulên ku têra xwe enerjiya wan heye ku ji rûyê şilekê biqetin zêde dibe"
+          "ku": "Hejmara molekulên ku têra xwe enerjiya wan heye ku ji rûyê şileyê veqetin zêde dibe"
         },
         {
           "tr": "Buharlaşma hızı artar",
@@ -874,7 +874,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Скорость испарения увеличивается",
           "ar": "تزداد سرعة التبخر",
           "zh": "蒸发速率增大",
-          "ku": "Rêjeya evaporasyonê zêde dibe"
+          "ku": "Leza buharbûnê zêde dibe"
         },
         {
           "tr": "Kapalı kapta daha yüksek bir denge buhar basıncına ulaşılır",
@@ -884,7 +884,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "В закрытом сосуде устанавливается более высокое равновесное давление пара",
           "ar": "يصل ضغط البخار المتزن في الوعاء المغلق إلى قيمة أعلى",
           "zh": "在密闭容器中达到更高的平衡蒸气压",
-          "ku": "Di firaxa girtî de zexta buharê ya hevseng a bilindtir pêk tê"
+          "ku": "Di firaxa girtî de zexta buharê ya hevsengiyê ya bilindtir pêk tê"
         }
       ]
     },
@@ -898,7 +898,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Нагревание чистой воды и смена агрегатного состояния (1 атм)",
         "ar": "تسخين الماء النقي وتغير حالته (1 atm)",
         "zh": "纯水的受热与状态变化(1 atm)",
-        "ku": "Germbûn û Guherîna Halê ya Ava Paqij (1 atm)"
+        "ku": "Germbûn û Guherîna Rewşê ya Ava Paqij (1 atm)"
       },
       "steps": [
         {
@@ -909,7 +909,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Лёд при 0 °C тает и превращается в воду",
           "ar": "ينصهر الجليد عند 0 °C ويتحول إلى ماء",
           "zh": "0 °C 的冰熔化成水",
-          "ku": "Qeşa di 0 °C de dihele û dibe av"
+          "ku": "Qeşaya 0 °C dihele û dibe av"
         },
         {
           "tr": "Sıvı su 100 °C'ye kadar ısınır",
@@ -919,7 +919,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Жидкая вода нагревается до 100 °C",
           "ar": "يسخن الماء السائل حتى 100 °C",
           "zh": "液态水加热至 100 °C",
-          "ku": "Ava şil heta 100 °C germ dibe"
+          "ku": "Ava şile heta 100 °C germ dibe"
         },
         {
           "tr": "100 °C'de sabit sıcaklıkta kaynar",
@@ -929,7 +929,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Вода кипит при постоянной температуре 100 °C",
           "ar": "يغلي الماء عند 100 °C وتبقى درجة حرارته ثابتة",
           "zh": "在 100 °C 恒温下沸腾",
-          "ku": "Di germahiyek domdar 100 °C de tê kelandin"
+          "ku": "Di 100 °C de, di germahiyeke sabît de dikele"
         },
         {
           "tr": "Su buharının sıcaklığı yükselmeye devam eder",
@@ -939,7 +939,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Температура водяного пара продолжает расти",
           "ar": "تستمر درجة حرارة بخار الماء في الارتفاع",
           "zh": "水蒸气温度持续升高",
-          "ku": "Germahiya hilma avê her diçe zêde dibe"
+          "ku": "Germahiya buhara avê bilind dibe û didome"
         }
       ]
     },
@@ -974,7 +974,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "В остывающем воздухе давление насыщенного водяного пара снижается",
           "ar": "في الهواء البارد ينخفض ضغط بخار الماء المشبع",
           "zh": "空气降温后，水的饱和蒸气压降低",
-          "ku": "Di hewaya ku sar dibe de zexta buharê ya têr a avê kêm dibe"
+          "ku": "Di hewaya ku sar dibe de zexta buharê ya têr a avê nizm dibe"
         },
         {
           "tr": "Havadaki su buharı basıncı doygun buhar basıncına ulaşır; bağıl nem %100 olur",
@@ -984,7 +984,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Давление водяного пара в воздухе достигает давления насыщенного пара; относительная влажность становится 100 %",
           "ar": "يبلغ ضغط بخار الماء في الهواء ضغط البخار المشبع فتصبح الرطوبة النسبية 100%",
           "zh": "空气中的水蒸气压达到饱和蒸气压，相对湿度变为 100%",
-          "ku": "Zexta buhara avê ya hewayê digihîje zexta buharê ya têr; şiliya nisbî dibe %100"
+          "ku": "Zexta buhara avê ya di hewayê de digihîje zexta buharê ya têr; şiliya nisbî dibe %100"
         },
         {
           "tr": "Su buharı soğuk yüzeylerde yoğuşarak çiğ damlaları oluşturur",
@@ -994,7 +994,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Водяной пар конденсируется на холодных поверхностях в капли росы",
           "ar": "يتكاثف بخار الماء على الأسطح الباردة مكوّناً قطرات الندى",
           "zh": "水蒸气在冷的表面凝结成露珠",
-          "ku": "Buhara avê li ser rûyên sar hilm dibe û dilopên xunavê çêdike"
+          "ku": "Buhara avê li ser rûyên sar şile dibe û dilopên xunavê çêdike"
         }
       ]
     },
@@ -1008,7 +1008,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Сжатие газа в сосуде с поршнем",
         "ar": "انضغاط الغاز في وعاء ذي مكبس",
         "zh": "活塞容器中气体的压缩",
-        "ku": "Pêçandina Gazê di Firaxa bi Piston de"
+        "ku": "Pêçandin di Firaxa bi Piston de"
       },
       "steps": [
         {
@@ -1039,7 +1039,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Число частиц в единице объёма увеличивается",
           "ar": "يزداد عدد الجزيئات لكل وحدة حجم",
           "zh": "单位体积内的微粒数增加",
-          "ku": "Hejmara pirtikan di yekîneya qebareyê de zêde dibe"
+          "ku": "Hejmara perçeyan di yekîneya qebareyê de zêde dibe"
         },
         {
           "tr": "Çeperlere yapılan çarpma sayısı ve basınç artar",
@@ -1049,7 +1049,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Число ударов о стенки сосуда и давление увеличиваются",
           "ar": "يزداد عدد التصادمات مع جدران الوعاء ويزداد الضغط",
           "zh": "分子撞击器壁的次数和压强增大",
-          "ku": "Hejmara lêdanên li dîwarên firaxê û zext zêde dibin"
+          "ku": "Hejmara lêketinên li dîwarên firaxê û zext zêde dibin"
         }
       ]
     }
@@ -1065,7 +1065,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Какое из перечисленных действий само по себе позволяет увеличить равновесное давление пара жидкости?",
         "ar": "أيّ مما يلي يمكن القيام به وحده لزيادة ضغط البخار المتزن لسائل؟",
         "zh": "下列哪项措施单独实施即可增大液体的平衡蒸气压？",
-        "ku": "Kîjan ji yên jêrîn dikare bi tena serê xwe were sepandin da ku tansiyona hevsengiya hilma şilekê zêde bike?"
+        "ku": "Ji bo zêdekirina zexta buharê ya hevsengiyê ya şileyekê, kîjan ji yên jêrîn bi tena serê xwe dikare were kirin?"
       },
       "options": [
         {
@@ -1076,7 +1076,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Повышение температуры жидкости",
           "ar": "زيادة درجة حرارة السائل",
           "zh": "升高液体的温度",
-          "ku": "zêdekirina germahiya şilê"
+          "ku": "Zêdekirina germahiya şileyê"
         },
         {
           "tr": "Dış atmosfer basıncını artırmak",
@@ -1096,7 +1096,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Увеличение площади поверхности жидкости",
           "ar": "توسيع مساحة سطح السائل",
           "zh": "扩大液体的表面积",
-          "ku": "Berfirehkirina rûbera şilekê"
+          "ku": "Firehkirina rûbera şileyê"
         },
         {
           "tr": "Kaptaki sıvı miktarını artırmak",
@@ -1106,7 +1106,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Увеличение количества жидкости в сосуде",
           "ar": "زيادة كمية السائل في الوعاء",
           "zh": "增加容器中的液体量",
-          "ku": "Zêdekirina mîqdara şilê di konteynerê de"
+          "ku": "Zêdekirina mîqdara şileyê di firaxê de"
         },
         {
           "tr": "Kaba uçucu olmayan tuz eklemek",
@@ -1116,7 +1116,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Добавление в сосуд нелетучей соли",
           "ar": "إضافة ملح غير متطاير إلى الوعاء",
           "zh": "向容器中加入难挥发的盐",
-          "ku": "Zêdekirina xwêyeke ku hilm nabe li firaxê"
+          "ku": "Lêzêdekirina xwêyeke nefirok li firaxê"
         }
       ],
       "correctIndex": 0,
@@ -1128,7 +1128,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Равновесное давление пара зависит только от природы жидкости, её чистоты и температуры; с ростом температуры больше молекул способно покинуть жидкость, и давление пара растёт. Внешнее давление, площадь поверхности и количество жидкости не меняют равновесное давление пара (площадь поверхности влияет только на скорость испарения), а добавление нелетучей соли его понижает.",
         "ar": "لا يعتمد ضغط البخار المتزن إلا على نوع السائل ونقائه ودرجة الحرارة؛ وكلما ارتفعت درجة الحرارة استطاع عدد أكبر من الجزيئات الإفلات من السائل فيزداد ضغط البخار. أما الضغط الخارجي ومساحة السطح وكمية السائل فلا تغيّر ضغط البخار المتزن (مساحة السطح تؤثر في سرعة التبخر فقط)، وإضافة ملح غير متطاير تخفضه.",
         "zh": "平衡蒸气压只取决于液体的种类、纯度和温度；温度升高时，能够逸出液体的分子增多，蒸气压增大。外界压强、表面积和液体的量都不改变平衡蒸气压（表面积只影响蒸发速率）；加入难挥发的盐反而使蒸气压降低。",
-        "ku": "Zexta buharê ya hevseng tenê bi cureyê şileyê, safbûna wê û germahiyê ve girêdayî ye; dema germahî zêde dibe bêtir molekul dikarin ji şileyê veqetin û zexta buharê zêde dibe. Zexta derve, rûbera rûyê û mîqdara şileyê zexta buharê ya hevseng naguherînin (rûber tenê bandorê li leza hilmbûnê dike); lêzêdekirina xwêyeke ku nabe buhar wê kêm dike."
+        "ku": "Zexta buharê ya hevsengiyê tenê bi cureyê şileyê, paqijiya wê û germahiyê ve girêdayî ye; dema germahî zêde dibe, bêtir molekul dikarin ji şileyê veqetin, loma zexta buharê zêde dibe. Zexta derve, rûbera şileyê û mîqdara şileyê zexta buharê ya hevsengiyê naguherînin (rûber tenê bandorê li leza buharbûnê dike); lêzêdekirina xwêyeke nefirok jî zexta buharê nizm dike."
       }
     },
     {
@@ -1141,7 +1141,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Какая из величин обязательно одинакова для чистой воды и чистого этилового спирта, кипящих в одних и тех же условиях?",
         "ar": "أي مما يلي متساوٍ حتمًا للماء النقي والكحول الإيثيلي النقي اللذين يغليان في الوسط نفسه؟",
         "zh": "在同一环境中沸腾的纯水和纯乙醇，下列哪项一定相等？",
-        "ku": "Kîjan ji yên jêrîn ji bo ava paqij û alkola etilî ya saf ku di heman hawîrdorê de keliyane bi tevahî wekhev e?"
+        "ku": "Ji bo ava paqij û etîl alkola paqij ên ku di heman derdorê de dikelin, kîjan ji yên jêrîn bi teqez wekhev e?"
       },
       "options": [
         {
@@ -1152,7 +1152,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Давление пара",
           "ar": "ضغوط البخار",
           "zh": "蒸气压",
-          "ku": "zextên buharê"
+          "ku": "Zextên buharê"
         },
         {
           "tr": "Kaynama sıcaklıkları",
@@ -1162,7 +1162,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Температура кипения",
           "ar": "درجات حرارة الغليان",
           "zh": "沸腾温度",
-          "ku": "germên kelandinê"
+          "ku": "Germahiyên kelînê"
         },
         {
           "tr": "Buharlaşma ısıları",
@@ -1172,7 +1172,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Теплота испарения",
           "ar": "حرارة التبخر",
           "zh": "蒸发热",
-          "ku": "Germên evaporasyonê"
+          "ku": "Germên buharbûnê"
         },
         {
           "tr": "Viskoziteleri",
@@ -1182,7 +1182,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Вязкость",
           "ar": "اللزوجة",
           "zh": "黏度",
-          "ku": "Viskozîtî"
+          "ku": "Vîskozîte"
         },
         {
           "tr": "Özkütleleri",
@@ -1192,7 +1192,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Плотность",
           "ar": "الكثافة",
           "zh": "密度",
-          "ku": "Tîrbûn"
+          "ku": "Çirî"
         }
       ],
       "correctIndex": 0,
@@ -1204,7 +1204,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Жидкость кипит, когда давление её пара равно внешнему давлению. В одних и тех же условиях внешнее давление одинаково, поэтому давления пара кипящей воды и кипящего этилового спирта равны этому давлению, а значит, и друг другу. Температура кипения, теплота испарения, вязкость и плотность зависят от природы жидкости и различаются; например, при 1 атм вода кипит при 100 °C, а этиловый спирт — при 78 °C.",
         "ar": "يغلي السائل عندما يساوي ضغط بخاره الضغط الخارجي. وفي الوسط نفسه يكون الضغط الخارجي واحدًا، لذا فضغط بخار الماء وضغط بخار الكحول الإيثيلي أثناء الغليان يساويان هذا الضغط، فهما متساويان. أما درجة الغليان وحرارة التبخر واللزوجة والكثافة فتعتمد على نوع السائل وتختلف؛ فمثلًا عند 1 atm يغلي الماء عند 100 °C والكحول الإيثيلي عند 78 °C.",
         "zh": "液体在蒸气压等于外界压强时沸腾。在同一环境中外界压强相同，所以沸腾的水和沸腾的乙醇的蒸气压都等于这一压强，因而彼此相等。沸点、汽化热、黏度和密度取决于液体的种类，各不相同；例如在 1 atm 下水在 100 °C 沸腾，乙醇在 78 °C 沸腾。",
-        "ku": "Şile dema zexta buhara wê bi zexta derve re wekhev dibe dikele. Di heman hawîrdorê de zexta derve yek e, loma zextên buharê yên ava ku dikele û etîl alkola ku dikele bi vê zextê re, û ji ber vê yekê bi hev re jî wekhev in. Germahiya kelandinê, germa hilmbûnê, vîskozîtî û çirbûn bi cureyê şileyê ve girêdayî ne û cuda ne; mînak di 1 atm de av di 100 °C de, etîl alkol di 78 °C de dikele."
+        "ku": "Şile dema zexta wê ya buharê bi zexta derve re wekhev dibe dikele. Ji ber ku di heman derdorê de zexta derve yek e, zextên buharê yên ava ku dikele û etîl alkola ku dikele bi vê zexta derve re, ango bi hev re jî wekhev in. Germahiya kelînê, germa buharbûnê, vîskozîte û çirî bi cureyê şileyê ve girêdayî ne, loma cuda ne; mînak, di 1 atm de av di 100 °C de, etîl alkol di 78 °C de dikele."
       }
     },
     {
@@ -1217,7 +1217,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "При 25 °C давление насыщенного водяного пара равно 24 мм рт. ст. Парциальное давление водяного пара в воздухе при той же температуре — 18 мм рт. ст. Чему равна относительная влажность в процентах (%)?",
         "ar": "ضغط بخار الماء المشبع عند 25 °C هو 24 mmHg. إذا كان الضغط الجزئي لبخار الماء في الهواء عند الدرجة نفسها 18 mmHg، فكم تبلغ الرطوبة النسبية للهواء بالنسبة المئوية (%)؟",
         "zh": "25 °C 时水的饱和蒸气压为 24 mmHg。若同温度下空气中水蒸气的分压为 18 mmHg，则空气的相对湿度是百分之多少（%）？",
-        "ku": "Di 25 °C de zexta buharê ya têr a avê 24 mmHg e. Heke di heman germahiyê de zexta beşî ya buhara avê ya di hewayê de 18 mmHg be, şiliya nisbî ya hewayê ji sedî (%) çend e?"
+        "ku": "Di 25 °C de zexta buharê ya têr a avê 24 mmHg e. Heke di heman germahiyê de zexta qismî ya buhara avê ya di hewayê de 18 mmHg be, şiliya nisbî ya hewayê ji sedî (%) çend e?"
       },
       "options": [
         {
@@ -1280,7 +1280,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Относительная влажность = (давление водяного пара в воздухе / давление насыщенного пара) · 100 = (18 / 24) · 100 = 75. Обратное отношение (24 / 18) · 100 ≈ 133 противоречит тому, что относительная влажность не может превышать 100. (24 − 18) / 24 · 100 = 25 показывает, насколько воздух далёк от насыщения; 43 и 57 получаются при делении на сумму давлений.",
         "ar": "الرطوبة النسبية = (ضغط بخار الماء في الهواء / ضغط البخار المشبع) · 100 = (18 / 24) · 100 = 75. وقلب النسبة يعطي (24 / 18) · 100 ≈ 133، وهذا يناقض أن الرطوبة النسبية لا تتجاوز 100. أما (24 − 18) / 24 · 100 = 25 فيبيّن بُعد الهواء عن التشبع، والقيمتان 43 و57 تنتجان عن القسمة على مجموع الضغطين.",
         "zh": "相对湿度 = (空气中水蒸气压 / 饱和蒸气压) · 100 = (18 / 24) · 100 = 75。把比值颠倒会得到 (24 / 18) · 100 ≈ 133，这与相对湿度不能超过 100 相矛盾。(24 − 18) / 24 · 100 = 25 表示离饱和还差多少；43 和 57 是除以两压强之和得到的。",
-        "ku": "Şiliya nisbî = (zexta buhara avê ya hewayê / zexta buharê ya têr) · 100 = (18 / 24) · 100 = 75. Heke rêje berovajî were danîn (24 / 18) · 100 ≈ 133 derdikeve; ev bi rastiya ku şiliya nisbî ji 100 derbas nabe re nakok e. (24 − 18) / 24 · 100 = 25 nîşan dide ka hewa çiqas ji têrbûnê dûr e; 43 û 57 ji parvekirina li ser berhevoka zextan tên."
+        "ku": "Şiliya nisbî = (zexta buhara avê ya di hewayê de / zexta buharê ya têr) · 100 = (18 / 24) · 100 = 75. Heke rêje berevajî were danîn, (24 / 18) · 100 ≈ 133 derdikeve; ev li dijî wê rastiyê ye ku şiliya nisbî nikare ji 100 derbas bibe. (24 − 18) / 24 · 100 = 25 nîşan dide ka hewa çiqas ji têrbûnê dûr e; 43 û 57 ji parvekirina li ser berhevoka zextan derdikevin."
       }
     },
     {
@@ -1293,7 +1293,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Какие утверждения о температуре кипения чистых жидкостей верны?\nI. С ростом внешнего давления температура кипения повышается.\nII. Во время кипения температура чистой жидкости продолжает расти.\nIII. При одинаковом внешнем давлении у жидкости с более высокой температурой кипения межмолекулярное притяжение, как правило, сильнее.",
         "ar": "أيّ العبارات الآتية عن درجة غليان السوائل النقية صحيحة؟\nI. ترتفع درجة الغليان بازدياد الضغط الخارجي.\nII. تستمر درجة حرارة السائل النقي في الارتفاع أثناء الغليان.\nIII. عند الضغط الخارجي نفسه يكون التجاذب بين جزيئات السائل الأعلى غلياناً أقوى عادةً.",
         "zh": "关于纯液体的沸点，下列说法中哪些正确？\nI. 外界压强增大，沸点升高。\nII. 纯液体沸腾过程中温度不断升高。\nIII. 在相同外界压强下，沸点较高的液体分子间吸引力一般较强。",
-        "ku": "Derbarê xala kelandinê ya şileyên saf de kîjan gotin rast in?\nI. Her ku zexta derve zêde dibe xala kelandinê bilind dibe.\nII. Di dema kelandinê de germahiya şileya saf zêde dibe.\nIII. Di heman zexta derve de kişandina navbera molekulên şileya ku xala kelandinê bilindtir e bi giştî xurttir e."
+        "ku": "Derbarê xala kelînê ya şileyên paqij de kîjan ji van gotinan rast in?\nI. Her ku zexta derve zêde dibe, xala kelînê bilind dibe.\nII. Di dema kelînê de germahiya şileya paqij her zêde dibe.\nIII. Di heman zexta derve de, kişandinên navmolekulî yên şileya ku xala wê ya kelînê bilindtir e bi giştî xurttir in."
       },
       "options": [
         {
@@ -1356,7 +1356,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "I верно: жидкость кипит, когда давление её пара равно внешнему; при большем внешнем давлении это достигается при более высокой температуре. II неверно: при кипении чистой жидкости подводимая теплота расходуется на преодоление межмолекулярного притяжения, температура постоянна. III верно: при сильном притяжении давление пара низкое, и для достижения внешнего давления нужна более высокая температура. Ответ: I и III.",
         "ar": "العبارة I صحيحة: يغلي السائل عندما يساوي ضغط بخاره الضغط الخارجي، وكلما زاد الضغط الخارجي تحقق ذلك عند درجة أعلى. العبارة II خاطئة: أثناء غليان السائل النقي تُستهلك الحرارة في التغلب على التجاذب بين الجزيئات فتبقى درجة الحرارة ثابتة. العبارة III صحيحة: السائل قوي التجاذب ضغط بخاره منخفض فيحتاج درجة أعلى ليبلغ الضغط الخارجي. الإجابة: I وIII.",
         "zh": "I 正确：液体在蒸气压等于外界压强时沸腾，外界压强越大，达到这一条件所需温度越高。II 错误：纯液体沸腾时吸收的热量用于克服分子间吸引，温度保持不变。III 正确：分子间吸引力强的液体蒸气压低，需要更高温度才能达到外界压强。答案：I 和 III。",
-        "ku": "I rast e: şile dema zexta buhara wê bi zexta derve re wekhev dibe dikele; her ku zexta derve mezin dibe ev wekhevî di germahiyeke bilindtir de pêk tê. II şaş e: dema şileya saf dikele germahiya tê dayîn ji bo bindestkirina kişandinên navbera molekulan tê xerckirin, germahî sabît dimîne. III rast e: zexta buhara şileya bi kişandina xurt nizm e, loma ji bo gihîştina zexta derve germahiyeke bilindtir lazim e. Bersiv: I û III."
+        "ku": "I rast e: şile dema zexta wê ya buharê bi zexta derve re wekhev dibe dikele; her ku zexta derve mezin dibe, ev wekhevî di germahiyeke bilindtir de pêk tê. II şaş e: dema şileya paqij dikele, germa ku tê dayîn ji bo bi ser ketina li kişandinên navmolekulî tê xerckirin û germahî sabît dimîne. III rast e: zexta buharê ya şileya bi kişandinên navmolekulî yên xurt nizm e, loma ji bo gihîştina zexta derve germahiyeke bilindtir lazim e. Bersiv: I û III."
       }
     },
     {
@@ -1369,7 +1369,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "При 20 °C равновесные давления пара чистых жидкостей X, Y и Z равны соответственно 18, 44 и 442 мм рт. ст. Каков порядок их температур кипения при одинаковом внешнем давлении от наибольшей к наименьшей?",
         "ar": "عند 20 °C تبلغ ضغوط البخار المتزنة للسوائل النقية X وY وZ على الترتيب 18 mmHg و44 mmHg و442 mmHg. ما ترتيب درجات غليانها من الأعلى إلى الأدنى عند الضغط الخارجي نفسه؟",
         "zh": "20 °C 时纯液体 X、Y、Z 的平衡蒸气压依次为 18 mmHg、44 mmHg 和 442 mmHg。在相同外界压强下，它们沸点由高到低的顺序是哪一项？",
-        "ku": "Di 20 °C de zextên buharê yên hevseng ên şileyên saf X, Y û Z bi rêzê 18 mmHg, 44 mmHg û 442 mmHg in. Di heman zexta derve de rêzkirina xalên kelandinê yên wan ji bilind ber bi nizm kîjan e?"
+        "ku": "Di 20 °C de zextên buharê yên hevsengiyê yên şileyên paqij X, Y û Z bi rêzê 18 mmHg, 44 mmHg û 442 mmHg in. Di heman zexta derve de, rêzkirina xalên kelînê yên van şileyan ji mezin ber bi piçûk kîjan e?"
       },
       "options": [
         {
@@ -1432,7 +1432,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Жидкость кипит, когда давление её пара равно внешнему. Жидкость с наибольшим давлением пара (Z) достигает внешнего давления при более низкой температуре и кипит ниже всех; X с наименьшим давлением пара кипит при самой высокой температуре. Давление пара и температура кипения изменяются в противоположных направлениях, поэтому X > Y > Z. Считать, что большее давление пара означает более высокую температуру кипения, — частая ошибка.",
         "ar": "يغلي السائل عندما يساوي ضغط بخاره الضغط الخارجي. والسائل الأعلى ضغط بخار (Z) يبلغ الضغط الخارجي عند درجة أدنى فيغلي عند أدنى درجة، أما X الأقل ضغط بخار فيغلي عند أعلى درجة. ولأن ضغط البخار ودرجة الغليان يتغيران عكسياً فالترتيب X > Y > Z. واعتبار السائل الأعلى ضغط بخار هو الأعلى غلياناً خطأ شائع.",
         "zh": "液体在蒸气压等于外界压强时沸腾。同温度下蒸气压最大的 Z 在较低温度就能达到外界压强，沸点最低；蒸气压最小的 X 沸点最高。蒸气压与沸点变化方向相反，所以顺序为 X > Y > Z。认为蒸气压大的液体沸点也高是常见错误。",
-        "ku": "Şile dema zexta buhara wê bi zexta derve re wekhev dibe dikele. Şileya ku zexta buhara wê herî mezin e (Z) di germahiyeke nizmtir de digihîje zexta derve û herî nizm dikele; X ya ku zexta buhara wê herî biçûk e herî bilind dikele. Ji ber ku zexta buharê û xala kelandinê berevajî diguherin, rêz X > Y > Z ye. Hesibandina ku şileya bi zexta buharê ya mezin xala kelandinê jî bilind e şaşiyeke asayî ye."
+        "ku": "Şile dema zexta wê ya buharê bi zexta derve re wekhev dibe dikele. Şileya ku di heman germahiyê de zexta wê ya buharê herî mezin e (Z), di germahiyeke nizmtir de digihîje zexta derve û di germahiya herî nizm de dikele; X, ku zexta wê ya buharê herî piçûk e, di germahiya herî bilind de dikele. Ji ber ku her ku zexta buharê ya di heman germahiyê de mezin dibe xala kelînê nizm dibe, rêzkirin X > Y > Z ye. Texmînkirina ku xala kelînê ya şileya bi zexta buharê ya mezin jî mezin e şaşiyeke berbelav e."
       }
     },
     {
@@ -1445,7 +1445,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Чистое твёрдое вещество X равномерно нагревают при постоянном давлении. Данные «температура — время»:\n0–2 мин: от −20 °C до 10 °C\n2–6 мин: постоянно 10 °C\n6–9 мин: от 10 °C до 60 °C\n9–15 мин: постоянно 60 °C\nКакое утверждение неверно?",
         "ar": "تُسخَّن مادة صلبة نقية X عند ضغط ثابت وبمعدل ثابت. بيانات درجة الحرارة والزمن:\n0–2 دقيقة: ترتفع من −20 °C إلى 10 °C\n2–6 دقيقة: تبقى عند 10 °C\n6–9 دقيقة: ترتفع من 10 °C إلى 60 °C\n9–15 دقيقة: تبقى عند 60 °C\nأيّ العبارات الآتية خاطئة؟",
         "zh": "在恒压下以恒定速率加热纯固体 X，温度–时间数据如下：\n0–2 min：由 −20 °C 升至 10 °C\n2–6 min：保持 10 °C\n6–9 min：由 10 °C 升至 60 °C\n9–15 min：保持 60 °C\n下列说法错误的是哪一项？",
-        "ku": "Hişkeke saf X di zexta sabît de û bi leza sabît tê germkirin. Daneyên germahî–dem ev in:\n0–2. deqe: ji −20 °C derdikeve 10 °C\n2–6. deqe: li 10 °C sabît dimîne\n6–9. deqe: ji 10 °C derdikeve 60 °C\n9–15. deqe: li 60 °C sabît dimîne\nLi gorî vê, kîjan şaş e?"
+        "ku": "Madeyeke hişk a paqij X di zexta sabît de û bi leza sabît tê germkirin. Daneyên germahî–demê ev in:\n0–2. deqe: ji −20 °C derdikeve 10 °C\n2–6. deqe: li 10 °C sabît dimîne\n6–9. deqe: ji 10 °C derdikeve 60 °C\n9–15. deqe: li 60 °C sabît dimîne\nLi gorî vê, kîjan ji yên jêrîn şaş e?"
       },
       "options": [
         {
@@ -1466,7 +1466,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Температура кипения X при этом давлении равна 60 °C.",
           "ar": "درجة غليان X عند هذا الضغط هي 60 °C.",
           "zh": "X 在此压强下的沸点是 60 °C。",
-          "ku": "Xala kelandinê ya X di vê zextê de 60 °C ye."
+          "ku": "Xala kelînê ya X di vê zextê de 60 °C ye."
         },
         {
           "tr": "6–9. dakikalar arasında X yalnızca sıvı hâldedir.",
@@ -1476,7 +1476,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "С 6-й по 9-ю минуту X находится только в жидком состоянии.",
           "ar": "بين الدقيقتين 6 و9 تكون X في الحالة السائلة فقط.",
           "zh": "6–9 min 时 X 只以液态存在。",
-          "ku": "Di navbera deqeyên 6–9. de X tenê şile ye."
+          "ku": "Di navbera deqeyên 6–9. de X tenê di rewşa şile de ye."
         },
         {
           "tr": "2–6. dakikalar arasında katı ve sıvı X bir arada bulunur.",
@@ -1486,7 +1486,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "С 2-й по 6-ю минуту X находится одновременно в твёрдом и жидком состоянии.",
           "ar": "بين الدقيقتين 2 و6 توجد X الصلبة والسائلة معاً.",
           "zh": "2–6 min 时固态和液态 X 共存。",
-          "ku": "Di navbera deqeyên 2–6. de X ya hişk û şile bi hev re hene."
+          "ku": "Di navbera deqeyên 2–6. de X-ya hişk û X-ya şile bi hev re hene."
         },
         {
           "tr": "9–15. dakikalar arasında X taneciklerinin ortalama kinetik enerjisi artar.",
@@ -1496,7 +1496,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "С 9-й по 15-ю минуту средняя кинетическая энергия частиц X увеличивается.",
           "ar": "بين الدقيقتين 9 و15 يزداد متوسط الطاقة الحركية لدقائق X.",
           "zh": "9–15 min 时 X 微粒的平均动能增大。",
-          "ku": "Di navbera deqeyên 9–15. de enerjiya kînetîk a navîn a perçikên X zêde dibe."
+          "ku": "Di navbera deqeyên 9–15. de enerjiya kînetîk a navînî ya perçeyên X zêde dibe."
         }
       ],
       "correctIndex": 4,
@@ -1508,7 +1508,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "При нагревании первая площадка (10 °C) — плавление, вторая (60 °C) — кипение; с 2-й по 6-ю минуту твёрдая и жидкая фазы сосуществуют, с 6-й по 9-ю нагревается только жидкость. Средняя кинетическая энергия зависит от температуры; с 9-й по 15-ю минуту температура постоянна, значит, средняя кинетическая энергия не меняется — теплота идёт на преодоление межмолекулярного притяжения (растёт потенциальная энергия). Поэтому неверно утверждение о росте кинетической энергии.",
         "ar": "أثناء التسخين يمثل الثبات الأول لدرجة الحرارة (10 °C) الانصهار والثاني (60 °C) الغليان؛ وبين الدقيقتين 2 و6 توجد الحالتان الصلبة والسائلة معاً، وبين 6 و9 يسخن السائل فقط. ويعتمد متوسط الطاقة الحركية على درجة الحرارة، وبين 9 و15 تكون الدرجة ثابتة فلا يتغير، بل تُستهلك الحرارة في التغلب على التجاذب بين الجزيئات (تزداد الطاقة الكامنة). لذا فالعبارة الخاطئة هي التي تقول إن الطاقة الحركية تزداد.",
         "zh": "加热过程中第一个温度不变的阶段(10 °C)是熔化，第二个(60 °C)是沸腾；2–6 min 固液共存，6–9 min 只有液体在升温。平均动能取决于温度；9–15 min 温度不变，平均动能不变，吸收的热量用于克服分子间吸引（势能增大）。所以错误的是“平均动能增大”这一说法。",
-        "ku": "Di germkirinê de beşa yekem a ku germahî sabît dimîne (10 °C) helîn, ya duyem (60 °C) kelandin e; di deqeyên 2–6. de hişk û şile bi hev re ne, di deqeyên 6–9. de tenê şile germ dibe. Enerjiya kînetîk a navîn bi germahiyê ve girêdayî ye; di deqeyên 9–15. de germahî sabît e, loma naguhere — germahiya tê dayîn ji bo bindestkirina kişandinên navbera molekulan tê xerckirin (enerjiya potansiyel zêde dibe). Ji ber vê yekê gotina şaş ew e ku dibêje enerjiya kînetîk zêde dibe."
+        "ku": "Di dema germkirinê de beşa yekem a ku germahî sabît dimîne (10 °C) helîn e, ya duyem (60 °C) kelîn e; di deqeyên 2–6. de hişk û şile bi hev re ne, di deqeyên 6–9. de tenê şile germ dibe. Enerjiya kînetîk a navînî bi germahiyê ve girêdayî ye; di deqeyên 9–15. de germahî sabît e, loma enerjiya kînetîk a navînî naguhere — germa ku tê dayîn ji bo bi ser ketina li kişandinên navmolekulî tê xerckirin (enerjiya potansiyel zêde dibe). Ji ber vê yekê gotina şaş ew e ku dibêje enerjiya kînetîk zêde dibe."
       }
     },
     {
@@ -1521,7 +1521,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Некоторые свойства твёрдых веществ X, Y и Z:\nX: очень твёрдое, очень высокая температура плавления; не проводит ток ни в твёрдом, ни в жидком состоянии.\nY: твёрдое, но хрупкое, высокая температура плавления; в твёрдом состоянии не проводит, в жидком проводит.\nZ: мягкое, низкая температура плавления; не проводит ток ни в каком состоянии.\nКакими веществами могут быть соответственно X, Y и Z?",
         "ar": "فيما يلي بعض خواص المواد الصلبة X وY وZ:\nX: شديدة الصلابة، درجة انصهارها عالية جداً، لا توصل الكهرباء صلبةً ولا سائلةً.\nY: صلبة لكنها هشة، درجة انصهارها عالية، لا توصل صلبةً وتوصل سائلةً.\nZ: طرية، درجة انصهارها منخفضة، لا توصل الكهرباء في أيّ حالة.\nماذا يمكن أن تكون X وY وZ على الترتيب؟",
         "zh": "固体 X、Y、Z 的部分性质如下：\nX：非常坚硬，熔点很高；固态和液态都不导电。\nY：硬而脆，熔点高；固态不导电，液态导电。\nZ：质软，熔点低；任何状态都不导电。\nX、Y、Z 依次可能是下列哪一组？",
-        "ku": "Hin taybetiyên hişkên X, Y û Z ev in:\nX: Pir hişk e, xala helînê pir bilind e; di rewşa hişk û şile de elektrîkê naguhezîne.\nY: Hişk lê şikestbar e, xala helînê bilind e; di rewşa hişk de naguhezîne, di rewşa şile de diguhezîne.\nZ: Nerm e, xala helînê nizm e; di tu rewşê de elektrîkê naguhezîne.\nLi gorî vê, X, Y û Z bi rêzê dikarin kîjan bin?"
+        "ku": "Hin taybetmendiyên madeyên hişk X, Y û Z ev in:\nX: Pir req e, xala wê ya helînê pir bilind e; di rewşa hişk û şile de elektrîkê naguhezîne.\nY: Req lê şikestbar e, xala wê ya helînê bilind e; di rewşa hişk de naguhezîne, di rewşa şile de diguhezîne.\nZ: Nerm e, xala wê ya helînê nizm e; di tu rewşê de elektrîkê naguhezîne.\nLi gorî vê, X, Y û Z bi rêzê dikarin kîjan bin?"
       },
       "options": [
         {
@@ -1532,7 +1532,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "NaCl, кварц (SiO2), лёд",
           "ar": "NaCl، الكوارتز (SiO2)، الجليد",
           "zh": "NaCl、石英(SiO2)、冰",
-          "ku": "NaCl, kuvars (SiO2), cemed"
+          "ku": "NaCl, kuvars (SiO2), qeşa"
         },
         {
           "tr": "Buz, NaCl, kuvars (SiO2)",
@@ -1542,7 +1542,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Лёд, NaCl, кварц (SiO2)",
           "ar": "الجليد، NaCl، الكوارتز (SiO2)",
           "zh": "冰、NaCl、石英(SiO2)",
-          "ku": "Cemed, NaCl, kuvars (SiO2)"
+          "ku": "Qeşa, NaCl, kuvars (SiO2)"
         },
         {
           "tr": "Kuvars (SiO2), NaCl, buz",
@@ -1552,7 +1552,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Кварц (SiO2), NaCl, лёд",
           "ar": "الكوارتز (SiO2)، NaCl، الجليد",
           "zh": "石英(SiO2)、NaCl、冰",
-          "ku": "Kuvars (SiO2), NaCl, cemed"
+          "ku": "Kuvars (SiO2), NaCl, qeşa"
         },
         {
           "tr": "Kuvars (SiO2), buz, NaCl",
@@ -1562,7 +1562,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Кварц (SiO2), лёд, NaCl",
           "ar": "الكوارتز (SiO2)، الجليد، NaCl",
           "zh": "石英(SiO2)、冰、NaCl",
-          "ku": "Kuvars (SiO2), cemed, NaCl"
+          "ku": "Kuvars (SiO2), qeşa, NaCl"
         },
         {
           "tr": "Demir, NaCl, buz",
@@ -1572,7 +1572,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Железо, NaCl, лёд",
           "ar": "الحديد، NaCl، الجليد",
           "zh": "铁、NaCl、冰",
-          "ku": "Hesin, NaCl, cemed"
+          "ku": "Hesin, NaCl, qeşa"
         }
       ],
       "correctIndex": 2,
@@ -1584,7 +1584,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "X — очень твёрдое вещество с очень высокой температурой плавления, не проводящее ток ни в каком состоянии, — вещество с атомной (ковалентной) кристаллической решёткой: кварц. Y — твёрдое и хрупкое, не проводит ток в твёрдом состоянии, но проводит в расплаве — ионное вещество: NaCl. Z — мягкое, легкоплавкое, не проводящее ток — молекулярное вещество: лёд. Железо проводит ток в твёрдом состоянии, поэтому не может быть X.",
         "ar": "X الشديدة الصلابة العالية الانصهار جداً غير الموصلة في أيّ حالة مادة صلبة ترتبط ذراتها بروابط تساهمية شبكية: الكوارتز. وY الصلبة الهشة غير الموصلة صلبةً والموصلة مصهورةً صلب أيوني: NaCl. وZ الطرية المنخفضة الانصهار العازلة صلب جزيئي: الجليد. والحديد يوصل الكهرباء صلباً فلا يمكن أن يكون X.",
         "zh": "X 非常坚硬、熔点很高、任何状态都不导电，是原子以共价键连成网状结构的固体：石英。Y 硬而脆、固态不导电而熔融态导电，是离子晶体：NaCl。Z 质软、熔点低、不导电，是分子晶体：冰。铁在固态时能导电，所以不可能是 X。",
-        "ku": "X ya pir hişk, bi xala helînê ya pir bilind û di tu rewşê de neguhêzer, hişkeke ku atomên wê bi girêdanên kovalent torekê çêdikin e: kuvars. Y ya hişk û şikestbar, di rewşa hişk de neguhêzer lê dema dihele guhêzer, îyonîk e: NaCl. Z ya nerm, bi xala helînê ya nizm û îzolator, hişkeke molekulî ye: cemed. Hesin di rewşa hişk de elektrîkê diguhezîne, loma nabe X."
+        "ku": "X, ku pir req e, xala wê ya helînê pir bilind e û di tu rewşê de naguhezîne, madeyeke hişk e ku atomên wê bi girêdanên kovalent torekê çêdikin: kuvars. Y, ku req û şikestbar e, di rewşa hişk de naguhezîne lê dema dihele diguhezîne, madeyeke hişk a îyonîk e: NaCl. Z, ku nerm e, xala wê ya helînê nizm e û îzolator e, madeyeke hişk a molekulî ye: qeşa. Hesin di rewşa hişk de elektrîkê diguhezîne, loma nikare X be."
       }
     },
     {
@@ -1597,7 +1597,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "При нагревании стекло не плавится при определённой температуре, а постепенно размягчается в широком интервале температур. В чём причина?",
         "ar": "عند تسخين الزجاج لا ينصهر عند درجة محددة، بل يلين تدريجياً ويصبح مائعاً على مدى واسع من درجات الحرارة. ما سبب ذلك؟",
         "zh": "玻璃受热时并不在某一固定温度熔化，而是在较宽的温度范围内逐渐软化变成流体。原因是什么？",
-        "ku": "Dema cam tê germkirin di germahiyeke diyar de nahele; di navberekê fireh a germahiyê de hêdî hêdî nerm dibe û diherike. Sedema vê çi ye?"
+        "ku": "Dema cam tê germkirin, di germahiyeke diyar de nahele; di navbereke fireh a germahiyê de hêdî hêdî nerm dibe û diherike. Sedema vê kîjan e?"
       },
       "options": [
         {
@@ -1608,7 +1608,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Металлическая связь в стекле",
           "ar": "كون الزجاج مادة صلبة ذات روابط فلزية",
           "zh": "玻璃是以金属键结合的固体",
-          "ku": "Cam hişkeke bi girêdana metalî ye"
+          "ku": "Cam madeyeke hişk a bi girêdana metalîk e"
         },
         {
           "tr": "Cam taneciklerinin düzenli bir örgü oluşturmadan gelişigüzel dizilmiş olması",
@@ -1618,7 +1618,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Хаотичное расположение частиц стекла без упорядоченной решётки",
           "ar": "ترتّب دقائق الزجاج عشوائياً دون تكوين شبكة منتظمة",
           "zh": "玻璃微粒杂乱排列，没有形成有序的晶格",
-          "ku": "Perçikên camê bê ku torekê rêkûpêk çêkin bi awayekî tevlihev rêz bûne"
+          "ku": "Perçeyên camê bêyî ku toreke rêkûpêk çêkin, bêserûber rêz bûne"
         },
         {
           "tr": "Cam taneciklerinin düzenli ve tekrarlanan bir kristal örgüde dizilmesi",
@@ -1628,7 +1628,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Расположение частиц стекла в правильной повторяющейся кристаллической решётке",
           "ar": "ترتّب دقائق الزجاج في شبكة بلورية منتظمة ومتكررة",
           "zh": "玻璃微粒排列成规则、重复的晶格",
-          "ku": "Perçikên camê di torê krîstalê ya rêkûpêk û dubarebûyî de rêz bûne"
+          "ku": "Perçeyên camê di toreke krîstalî ya rêkûpêk û dubarebûyî de rêz bûne"
         },
         {
           "tr": "Camın moleküler kristal olması",
@@ -1648,7 +1648,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Испарение воды, содержащейся в стекле, при нагревании",
           "ar": "تبخّر الماء الموجود داخل الزجاج عند التسخين",
           "zh": "玻璃中的水受热蒸发",
-          "ku": "Ava di hundirê camê de dema tê germkirin dibuhire"
+          "ku": "Ava di hundirê camê de dema tê germkirin buhar dibe"
         }
       ],
       "correctIndex": 1,
@@ -1660,7 +1660,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В кристаллических веществах частицы образуют упорядоченную решётку, и все взаимодействия преодолеваются при одной температуре — наблюдается чёткая температура плавления. В стекле частицы расположены хаотично (аморфно), сила взаимодействий между ними различается, и они преодолеваются при разных температурах, поэтому стекло размягчается в интервале температур. Стекло не является ни металлическим, ни молекулярным кристаллом, а размягчение не связано с потерей воды.",
         "ar": "في المواد الصلبة البلورية تترتب الدقائق في شبكة منتظمة، فيُتغلَّب على جميع التآثرات عند الدرجة نفسها وتظهر درجة انصهار حادة. أما في الزجاج فتترتب الدقائق عشوائياً (غير متبلور)، فتختلف قوة التآثرات من موضع لآخر ويُتغلَّب عليها عند درجات مختلفة، فيلين الزجاج على مدى من الدرجات. والزجاج ليس بلورة فلزية ولا جزيئية، وليونته لا تعود إلى فقد الماء.",
         "zh": "晶体中微粒排列成有序的晶格，所有相互作用在同一温度被克服，所以有固定熔点。玻璃中微粒杂乱排列（非晶态），各处相互作用强弱不同，在不同温度下被克服，因此玻璃在一个温度范围内软化。玻璃既不是金属晶体也不是分子晶体，软化也不是失水造成的。",
-        "ku": "Di hişkên krîstalî de perçik di torekê rêkûpêk de rêz dibin, loma hemû têkilî di heman germahiyê de tên bindestkirin û xala helînê ya tûj tê dîtin. Di camê de perçik bi awayekî tevlihev (amorf) rêz bûne, loma hêza têkiliyan ji cihekî bo cihekî cuda ye; ev di germahiyên cuda de tên bindestkirin û cam di navberekê de nerm dibe. Cam ne krîstala metalî ne jî molekulî ye; sedema nermbûnê ne windabûna avê ye."
+        "ku": "Di madeyên hişk ên krîstalî de perçe di toreke rêkûpêk de rêz dibin, loma hemû têkilî di heman germahiyê de tên şikandin û xala helînê ya tûj tê dîtin. Di camê de perçe bêserûber (amorf) rêz bûne, loma hêza têkiliyên di navbera wan de ji cihekî bo cihekî cuda ye; ev têkilî di germahiyên cuda de tên şikandin û cam di navbereke germahiyê de nerm dibe. Cam ne krîstala metalîk e, ne jî krîstala molekulî; sedema nermbûnê windabûna avê jî nîne."
       }
     },
     {
@@ -1673,7 +1673,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Почему в скороварке пища готовится быстрее, чем в обычной кастрюле?",
         "ar": "لماذا يُطهى الطعام في قدر الضغط أسرع منه في القدر العادي؟",
         "zh": "为什么用高压锅煮食物比用普通锅快？",
-        "ku": "Çima xwarin di beroşa bi zext de ji beroşa asayî zûtir dipije?"
+        "ku": "Sedema ku xwarin di beroşa bi zext de ji beroşa asayî zûtir dipije kîjan e?"
       },
       "options": [
         {
@@ -1684,7 +1684,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Теплота испарения воды в скороварке становится равной нулю.",
           "ar": "تنخفض حرارة تبخر الماء في القدر إلى الصفر.",
           "zh": "锅内水的汽化热降为零。",
-          "ku": "Di beroşê de germahiya buharbûna avê dibe sifir."
+          "ku": "Di beroşê de germa buharbûnê ya avê dadikeve sifirê."
         },
         {
           "tr": "Kapak ısı kaybını önlediği için su 100 °C'nin altında kaynar.",
@@ -1694,7 +1694,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Крышка предотвращает потери тепла, поэтому вода кипит ниже 100 °C.",
           "ar": "يمنع الغطاء فقد الحرارة فيغلي الماء تحت 100 °C.",
           "zh": "锅盖防止热量散失，所以水在 100 °C 以下沸腾。",
-          "ku": "Ji ber ku qapax rê li windabûna germê digire av di bin 100 °C de dikele."
+          "ku": "Ji ber ku qapax rê li windabûna germê digire, av di binê 100 °C de dikele."
         },
         {
           "tr": "Tencere içindeki basınç arttığından su 100 °C'nin üzerinde kaynar.",
@@ -1704,7 +1704,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Давление внутри повышается, поэтому вода кипит выше 100 °C.",
           "ar": "يرتفع الضغط داخل القدر فيغلي الماء فوق 100 °C.",
           "zh": "锅内压强增大，所以水在 100 °C 以上沸腾。",
-          "ku": "Ji ber ku zexta hundirê beroşê zêde dibe av li ser 100 °C dikele."
+          "ku": "Ji ber ku zexta hundirê beroşê zêde dibe, av di ser 100 °C de dikele."
         },
         {
           "tr": "Basınç arttıkça suyun viskozitesi artar ve ısıyı daha iyi iletir.",
@@ -1714,7 +1714,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "С ростом давления вязкость воды растёт, и она лучше проводит тепло.",
           "ar": "بازدياد الضغط تزداد لزوجة الماء فيوصل الحرارة توصيلاً أفضل.",
           "zh": "压强增大时水的黏度增大，导热更好。",
-          "ku": "Her ku zext zêde dibe vîskozîteya avê zêde dibe û germê baştir diguhezîne."
+          "ku": "Her ku zext zêde dibe, vîskozîteya avê zêde dibe û germê baştir diguhezîne."
         },
         {
           "tr": "Buhar dışarı kaçamadığı için su hiç kaynamaz, yalnızca ısınır.",
@@ -1724,7 +1724,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Так как пар не выходит, вода вообще не кипит, а только нагревается.",
           "ar": "لأن البخار لا يستطيع الخروج فإن الماء لا يغلي أبداً بل يسخن فقط.",
           "zh": "由于蒸汽无法逸出，水根本不沸腾，只是升温。",
-          "ku": "Ji ber ku buhar nikare derkeve av qet nakele, tenê germ dibe."
+          "ku": "Ji ber ku buhar nikare derkeve, av qet nakele, tenê germ dibe."
         }
       ],
       "correctIndex": 2,
@@ -1736,7 +1736,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Крышка скороварки удерживает пар, и давление внутри становится выше 1 атм. Вода кипит, когда давление её пара равно этому повышенному давлению, поэтому температура кипения поднимается выше 100 °C (примерно до 120 °C), и пища готовится быстрее. Повышение давления не снижает температуру кипения; вода всё равно кипит, но при более высокой температуре.",
         "ar": "يحبس غطاء قدر الضغط البخار فيرتفع الضغط الداخلي فوق 1 atm. ولأن الماء يغلي عندما يساوي ضغط بخاره هذا الضغط الأعلى، ترتفع درجة غليانه فوق 100 °C (نحو 120 °C) فيُطهى الطعام أسرع. وزيادة الضغط لا تخفض درجة الغليان؛ فالماء يغلي أيضاً لكن عند درجة أعلى.",
         "zh": "高压锅的锅盖把蒸汽封住，锅内压强高于 1 atm。水在蒸气压等于这个较高压强时才沸腾，所以沸点升到 100 °C 以上(约 120 °C)，食物在更高温度下熟得更快。压强增大不会使沸点降低；水照样沸腾，只是温度更高。",
-        "ku": "Qapaxa beroşa bi zext buharê digire, loma zexta hundir ji 1 atm bilindtir dibe. Av dema zexta buhara wê bi vê zexta bilindtir re wekhev dibe dikele, loma xala kelandinê ji 100 °C (nêzîkî 120 °C) derbas dibe û xwarin di germahiya bilindtir de zûtir dipije. Zexta zêde xala kelandinê nizm nake; av dîsa dikele, lê di germahiyeke bilindtir de."
+        "ku": "Qapaxa beroşa bi zext buharê di hundir de digire, loma zexta hundir ji 1 atm bilindtir dibe. Ji ber ku av dema zexta wê ya buharê bi vê zexta bilindtir re wekhev dibe dikele, xala kelînê ji 100 °C bilindtir dibe (nêzîkî 120 °C) û xwarin di germahiyeke bilindtir de zûtir dipije. Zêdebûna zextê xala kelînê nizm nake; av dîsa dikele, lê di germahiyeke bilindtir de."
       }
     },
     {
@@ -1760,7 +1760,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Лёд в холодильнике",
           "ar": "الجليد في الثلاجة",
           "zh": "冰箱里的冰",
-          "ku": "Cemeda di sarincokê de"
+          "ku": "Qeşaya di sarincokê de"
         },
         {
           "tr": "Şimşek sırasında oluşan iyonlaşmış hava",
@@ -1770,7 +1770,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Ионизированный воздух, образующийся при молнии",
           "ar": "الهواء المتأين المتكوّن أثناء البرق",
           "zh": "闪电时形成的电离空气",
-          "ku": "Hewaya îyonbûyî ya di dema birûskê de çêdibe"
+          "ku": "Hewaya îyonîzebûyî ya ku di dema birûskê de çêdibe"
         },
         {
           "tr": "Çaydanlıktan çıkan su buharı",
@@ -1780,7 +1780,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Водяной пар, выходящий из чайника",
           "ar": "بخار الماء الخارج من الإبريق",
           "zh": "从水壶里冒出的水蒸气",
-          "ku": "Buhara avê ya ji çaydankê derdikeve"
+          "ku": "Buhara avê ya ku ji çaydankê derdikeve"
         },
         {
           "tr": "Sıvı azot",
@@ -1800,7 +1800,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Сухой лёд",
           "ar": "الجليد الجاف",
           "zh": "干冰",
-          "ku": "Cemeda hişk"
+          "ku": "Qeşaya hişk"
         }
       ],
       "correctIndex": 1,
@@ -1812,7 +1812,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Плазма — состояние, в котором после ионизации газа очень высокой энергией одновременно присутствуют ионы, свободные электроны и нейтральные частицы. При молнии энергия разряда ионизирует воздух; Солнце, звёзды и люминесцентные лампы — тоже примеры плазмы. Водяной пар — газ из нейтральных молекул; лёд и сухой лёд — твёрдые вещества, жидкий азот — жидкость.",
         "ar": "البلازما حالة تتعايش فيها الأيونات والإلكترونات الحرة والدقائق المتعادلة بعد تأين دقائق الغاز بطاقة عالية جداً. وفي البرق تؤيّن طاقة التفريغ الكهربائي الهواء فتتكوّن البلازما، والشمس والنجوم ومصابيح الفلورسنت أمثلة أخرى. أما بخار الماء فغاز من جزيئات متعادلة، والجليد والجليد الجاف صلبان، والنيتروجين السائل سائل.",
         "zh": "等离子体是气体微粒在极高能量下电离后，离子、自由电子和中性微粒共存的状态。闪电时放电的能量使空气电离而形成等离子体；太阳、恒星和荧光灯也是例子。水蒸气是由中性分子组成的气体；冰和干冰是固体，液氮是液体。",
-        "ku": "Plazma ew rewş e ku piştî îyonbûna perçikên gazê bi enerjiyeke pir bilind, îyon, elektronên serbest û perçikên bêalî bi hev re hene. Di birûskê de enerjiya valabûna elektrîkê hewayê îyonîze dike û plazma çêdibe; Roj, stêrk û lampeyên floresan jî mînak in. Buhara avê gazeke ji molekulên bêalî ye; cemed û cemeda hişk hişk in, azota şile şile ye."
+        "ku": "Plazma ew rewş e ku piştî perçeyên gazê bi enerjiyeke pir bilind îyonîze dibin, îyon, elektronên azad û perçeyên notr bi hev re hene. Di birûskê de enerjiya valabûna elektrîkê hewayê îyonîze dike û plazma çêdibe; Roj, stêrk û lampeyên floresan jî mînakên plazmayê ne. Buhara avê gazeke ji molekulên notr e; qeşa û qeşaya hişk madeyên hişk in, azota şile jî şile ye."
       }
     },
     {
@@ -1825,7 +1825,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Холодными зимними ночами водяной пар из воздуха превращается на оконных стёклах прямо в кристаллы льда, минуя жидкое состояние. Какой это переход?",
         "ar": "في ليالي الشتاء الباردة يتحول بخار الماء في الهواء مباشرة إلى بلورات جليد على زجاج النوافذ دون أن يصبح سائلاً. ما نوع هذا التغير في الحالة؟",
         "zh": "寒冷的冬夜，空气中的水蒸气不经过液态，直接在窗玻璃上变成冰晶。这是哪种物态变化？",
-        "ku": "Di şevên sar ên zivistanê de buhara avê ya hewayê bê ku bibe şile rasterast li ser camên pencereyan dibe krîstalên cemedê. Ev mînaka kîjan guherîna halê ye?"
+        "ku": "Di şevên sar ên zivistanê de buhara avê ya di hewayê de, bêyî ku bibe şile, rasterast li ser camên pencereyan dibe krîstalên qeşayê. Ev mînaka kîjan guherîna rewşê ye?"
       },
       "options": [
         {
@@ -1856,7 +1856,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Конденсация",
           "ar": "التكاثف",
           "zh": "液化",
-          "ku": "Hilmbûn"
+          "ku": "Şilebûn"
         },
         {
           "tr": "Kırağılaşma",
@@ -1866,7 +1866,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Десублимация",
           "ar": "الترسّب (التحول من غاز إلى صلب)",
           "zh": "凝华",
-          "ku": "Qirav-bûn (depozîsyon)"
+          "ku": "Desublîmebûn"
         },
         {
           "tr": "Donma",
@@ -1888,7 +1888,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Переход газа непосредственно в твёрдое состояние, минуя жидкое, называется десублимацией; так образуются иней и ледяные узоры на стёклах. Возгонка — обратный процесс (твёрдое → газ). Конденсация (газ → жидкость), кристаллизация (жидкость → твёрдое) и плавление (твёрдое → жидкость) не подходят, так как жидкой стадии здесь нет.",
         "ar": "يُسمّى تحوّل المادة من الحالة الغازية إلى الصلبة مباشرة دون أن تصبح سائلة الترسّب، وبهذه الطريقة يتكوّن الصقيع ونقوش الجليد على النوافذ. أما التسامي فهو العكس، من الصلب إلى الغاز. والتكاثف (غاز ← سائل) والتجمد (سائل ← صلب) والانصهار (صلب ← سائل) لا تنطبق لأنه لا توجد مرحلة سائلة هنا.",
         "zh": "气态物质不经过液态直接变为固态叫凝华，窗上的冰花和霜就是这样形成的。升华是相反的过程，由固态直接变为气态。液化是气→液，凝固是液→固，熔化是固→液；这里没有液态阶段，所以都不符合。",
-        "ku": "Veguherîna rasterast a madeyekê ji gazê bo hişk bê ku bibe şile qirav-bûn (depozîsyon) tê gotin; qirav û gulên cemedê yên li ser camê bi vî awayî çêdibin. Sublîmebûn berevajiyê vê ye, ji hişk bo gazê. Hilmbûn (gaz → şile), cemidîn (şile → hişk) û helîn (hişk → şile) li vir nayên, ji ber ku qonaxa şile tune."
+        "ku": "Veguherîna rasterast a madeyeke gaz bo hişk bêyî ku bibe şile desublîmebûn tê gotin; qirav û gulên qeşayê yên li ser camê bi vî awayî çêdibin. Sublîmebûn berevajiyê vê ye, ji hişk bo gaz. Şilebûn ji gaz bo şile, cemidîn ji şile bo hişk, helîn jî ji hişk bo şile ye; ji ber ku di vê bûyerê de qonaxa şile çênabe, ev li vir nagunjin."
       }
     },
     {
@@ -1901,7 +1901,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Какое утверждение об общих свойствах газов неверно?",
         "ar": "أيّ العبارات الآتية عن الخواص العامة للغازات خاطئة؟",
         "zh": "关于气体的一般性质，下列说法错误的是哪一项？",
-        "ku": "Kîjan ji van gotinên li ser taybetiyên giştî yên gazan şaş e?"
+        "ku": "Derbarê taybetmendiyên giştî yên gazan de kîjan ji van gotinan şaş e?"
       },
       "options": [
         {
@@ -1912,7 +1912,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Промежутки между их частицами меньше, чем в жидкостях.",
           "ar": "الفراغات بين دقائقها أقل منها في السوائل.",
           "zh": "气体微粒之间的空隙比液体中的小。",
-          "ku": "Valahiyên navbera perçikên wan ji yên şileyan kêmtir in."
+          "ku": "Valahiyên di navbera perçeyên wan de ji yên di şileyan de kêmtir in."
         },
         {
           "tr": "Bulundukları kabın tamamını doldururlar.",
@@ -1922,7 +1922,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Они заполняют весь сосуд.",
           "ar": "تملأ الوعاء الذي توجد فيه كله.",
           "zh": "气体能充满整个容器。",
-          "ku": "Hemû firaxa ku tê de ne tije dikin."
+          "ku": "Tevahiya firaxa ku tê de ne tije dikin."
         },
         {
           "tr": "Kolayca sıkıştırılabilirler.",
@@ -1932,7 +1932,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Они легко сжимаются.",
           "ar": "يمكن ضغطها بسهولة.",
           "zh": "气体容易被压缩。",
-          "ku": "Bi hêsanî tên pêçandin (kompres kirin)."
+          "ku": "Bi hêsanî tên pêçandin."
         },
         {
           "tr": "Birbirleriyle her oranda homojen karışım oluştururlar.",
@@ -1952,7 +1952,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Их частицы ударяются о стенки сосуда и создают давление.",
           "ar": "تصطدم دقائقها بجدران الوعاء فتُحدث ضغطاً.",
           "zh": "气体微粒撞击容器壁产生压强。",
-          "ku": "Perçikên wan li dîwarên firaxê dikevin û zextê çêdikin."
+          "ku": "Perçeyên wan li dîwarên firaxê dikevin û zextê çêdikin."
         }
       ],
       "correctIndex": 0,
@@ -1964,7 +1964,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Расстояния между частицами газа очень велики по сравнению с их размерами — гораздо больше, чем в жидкостях. Поэтому газы легко сжимаются, заполняют весь сосуд и смешиваются в любых соотношениях. Быстро движущиеся частицы ударяются о стенки и создают давление.",
         "ar": "المسافات بين دقائق الغاز كبيرة جداً مقارنة بحجم الدقائق، وهي أكبر بكثير منها في السوائل. ولهذا يمكن ضغط الغازات بسهولة وتملأ وعاءها كله وتختلط بأيّ نسبة، وتصطدم دقائقها السريعة بجدران الوعاء فتُحدث ضغطاً.",
         "zh": "气体微粒之间的距离与微粒本身大小相比非常大，远大于液体中的空隙。所以气体容易被压缩，能充满整个容器，并能以任意比例互相混合。快速运动的微粒撞击容器壁产生压强。",
-        "ku": "Dûrahiya navbera perçikên gazê li gorî mezinahiya perçikan pir mezin e; ev valahî ji yên şileyan pir zêdetir in. Ji ber vê yekê gaz bi hêsanî tên pêçandin, hemû firaxê tije dikin û bi her rêjeyê tevlî hev dibin. Perçikên ku bi lez dilivin li dîwaran dikevin û zextê çêdikin."
+        "ku": "Dûrahiya di navbera perçeyên gazê de li gorî mezinahiya perçeyan pir mezin e; ev valahî ji yên di şileyan de gelek zêdetir in. Ji ber vê yekê gaz bi hêsanî tên pêçandin, tevahiya firaxê tije dikin û bi her rêjeyê bi hev re tevlihev dibin. Perçeyên ku bi lez dilivin li dîwarên firaxê dikevin û zextê çêdikin."
       }
     },
     {
@@ -1977,7 +1977,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Что нужно сделать, чтобы мокрое бельё высохло быстрее?\nI. Развесить бельё так, чтобы площадь поверхности была большой\nII. Повесить бельё в месте, где дует ветер\nIII. Повесить бельё в погоду с высокой относительной влажностью",
         "ar": "أيّ مما يلي يجب فعله لكي تجف الملابس المبللة في وقت أقصر؟\nI. نشر الملابس بحيث تكون مساحة سطحها كبيرة\nII. تعليق الملابس في مكان تهب فيه الرياح\nIII. تعليق الملابس في جو رطوبته النسبية مرتفعة",
         "zh": "为了让湿衣服更快晾干，应采取下列哪些做法？\nI. 把衣服展开，使其表面积大\nII. 把衣服挂在通风的地方\nIII. 在相对湿度高的天气晾衣服",
-        "ku": "Ji bo ku cilên şil di demeke kurttir de hişk bibin, divê kîjan werin kirin?\nI. Cilan bi awayekî ku rûyê wan fireh be raxistin\nII. Cilan li cihekî bi ba daleqandin\nIII. Cilan di hewayeke ku şiliya nisbî bilind e de daleqandin"
+        "ku": "Ji bo ku cilên şil di demeke kurttir de ziwa bibin, divê kîjan ji van werin kirin?\nI. Cilan bi awayekî ku rûbera wan fireh be raxistin\nII. Cilan li cihekî bi ba daliqandin\nIII. Cilan di hewayeke ku şiliya nisbî bilind e de daliqandin"
       },
       "options": [
         {
@@ -2040,7 +2040,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Скорость испарения растёт с площадью поверхности; развешивание белья увеличивает поверхность воды, соприкасающуюся с воздухом (I верно). Ветер уносит пар у поверхности, уменьшает обратную конденсацию и ускоряет испарение (II верно). При высокой относительной влажности воздух близок к насыщению, суммарное испарение замедляется и бельё сохнет дольше (III неверно). Ответ: I и II.",
         "ar": "تزداد سرعة التبخر بزيادة المساحة السطحية، ونشر الملابس يكبّر سطح الماء الملامس للهواء (I صحيحة). والرياح تُبعد البخار عن السطح فتقلّل التكاثف من جديد وتسرّع التبخر (II صحيحة). أما عند ارتفاع الرطوبة النسبية فيكون الهواء قريباً من التشبع فيتباطأ التبخر الصافي وتتأخر الملابس في الجفاف (III خاطئة). الإجابة: I وII.",
         "zh": "蒸发速率随表面积增大而增大，把衣服展开增大了与空气接触的水面(I 正确)。风把表面的水蒸气带走，减少重新凝结，加快蒸发(II 正确)。相对湿度高时空气接近饱和，净蒸发变慢，衣服干得慢(III 错误)。答案：I 和 II。",
-        "ku": "Leza buharbûnê bi zêdebûna rûyê re zêde dibe; raxistina fireh a cilan rûyê avê yê bi hewayê re têkildar mezin dike (I rast e). Ba buhara li ser rûyê dûr dixe, hilmbûna dîsa kêm dike û buharbûnê bilez dike (II rast e). Dema şiliya nisbî bilind e hewa nêzîkî têrbûnê ye, buharbûna net hêdî dibe û cil dereng hişk dibin (III şaş e). Bersiv: I û II."
+        "ku": "Leza buharbûnê bi mezinbûna rûberê re zêde dibe; raxistina fireh a cilan rûbera avê ya ku bi hewayê re di têkiliyê de ye mezin dike (I rast e). Ba buhara avê ya li ser rûyê dûr dixe, şilebûna paşve kêm dike û buharbûnê bilez dike (II rast e). Dema şiliya nisbî bilind be, hewa nêzîkî têrbûnê ye; buharbûna net hêdî dibe û cil dereng ziwa dibin (III şaş e). Bersiv: I û II."
       }
     },
     {
@@ -2053,7 +2053,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Зимой озёра начинают замерзать с поверхности, а лёд плавает на воде. Чем это объясняется?",
         "ar": "تبدأ البحيرات في الشتاء بالتجمد من سطحها، ويطفو الجليد فوق الماء. بمَ يُفسَّر ذلك؟",
         "zh": "冬天湖泊从表面开始结冰，冰浮在水面上。这应如何解释？",
-        "ku": "Di zivistanê de gol ji rûyê xwe dest bi cemidînê dikin û cemed li ser avê diavije. Ev bi kîjanê tê ravekirin?"
+        "ku": "Sedema ku di zivistanê de gol ji rûyê xwe ve dest bi cemidînê dikin û qeşa li ser avê dimîne kîjan e?"
       },
       "options": [
         {
@@ -2064,7 +2064,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Молекулы льда меньше молекул жидкой воды",
           "ar": "جزيئات الجليد أصغر من جزيئات الماء السائل",
           "zh": "冰分子比液态水分子小",
-          "ku": "Molekulên cemedê ji molekulên ava şile biçûktir in"
+          "ku": "Molekulên qeşayê ji molekulên ava şile piçûktir in"
         },
         {
           "tr": "Donma sırasında suyun kütlesinin azalması",
@@ -2084,7 +2084,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Лёд — кристалл с атомной (ковалентной) решёткой",
           "ar": "الجليد بلورة تساهمية شبكية",
           "zh": "冰是共价网状晶体",
-          "ku": "Cemed krîstaleke bi tora kovalent e"
+          "ku": "Qeşa krîstaleke bi tora kovalent e"
         },
         {
           "tr": "Sıvı suda moleküller arasında hidrojen bağı bulunmaması",
@@ -2094,7 +2094,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "В жидкой воде между молекулами нет водородных связей",
           "ar": "لا توجد روابط هيدروجينية بين جزيئات الماء السائل",
           "zh": "液态水分子之间没有氢键",
-          "ku": "Di ava şile de di navbera molekulan de girêdana hîdrojenê tune"
+          "ku": "Di ava şile de di navbera molekulan de girêdana hîdrojenê tune ye"
         },
         {
           "tr": "Buzda hidrojen bağlarının molekülleri boşluklu düzenli bir yapıda tutması nedeniyle buzun özkütlesinin sıvı sudan küçük olması",
@@ -2104,7 +2104,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Во льду водородные связи удерживают молекулы в упорядоченной ажурной структуре, поэтому плотность льда меньше плотности жидкой воды",
           "ar": "في الجليد تُبقي الروابط الهيدروجينية الجزيئات في بنية منتظمة ذات فراغات، فتكون كثافة الجليد أقل من كثافة الماء السائل",
           "zh": "冰中的氢键使分子排列成有空隙的有序结构，因此冰的密度比液态水小",
-          "ku": "Di cemedê de girêdanên hîdrojenê molekulan di avahiyeke rêkûpêk û bi valahî de digirin, loma çirbûna cemedê ji ya ava şile kêmtir e"
+          "ku": "Di qeşayê de girêdanên hîdrojenê molekulan di avahiyeke rêkûpêk û bi valahî de digirin, loma çiriya qeşayê ji ya ava şile kêmtir e"
         }
       ],
       "correctIndex": 4,
@@ -2116,7 +2116,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "При замерзании каждая молекула воды образует водородные связи с соседями и встраивается в упорядоченную ажурную структуру; поэтому при той же массе лёд занимает больший объём и имеет меньшую плотность, чем жидкая вода, и плавает. Охлаждённая поверхностная вода замерзает, остаётся сверху и изолирует воду под собой. Масса при замерзании сохраняется, размер молекул не меняется; лёд — молекулярный кристалл, а в жидкой воде тоже есть водородные связи.",
         "ar": "عند تجمد الماء يكوّن كل جزيء روابط هيدروجينية مع جيرانه ويستقر في بنية منتظمة ذات فراغات، لذا يكون حجم الجليد أكبر من حجم الكتلة نفسها من الماء السائل وكثافته أقل فيطفو. ويتجمد ماء السطح المبرَّد ويبقى في الأعلى فيعزل الماء الذي تحته. والكتلة محفوظة عند التجمد وحجم الجزيء لا يتغير، والجليد بلورة جزيئية، والماء السائل فيه روابط هيدروجينية أيضاً.",
         "zh": "水结冰时每个分子与周围分子形成氢键，排列成有空隙的有序结构，所以相同质量的冰体积比液态水大、密度比水小，冰浮在水面。冷却的表层水结冰后留在上面，对下面的水起隔热作用。结冰时质量守恒，分子大小不变；冰是分子晶体，液态水中也存在氢键。",
-        "ku": "Dema av dicemide her molekul bi cîranên xwe re girêdanên hîdrojenê çêdike û di avahiyeke rêkûpêk û bi valahî de cih digire; loma qebareya cemedê ji ya heman girseya ava şile mezintir, çirbûna wê kêmtir e û cemed diavije. Ava rûyê ya sar dicemide, li jor dimîne û ava jêrîn diparêze. Di cemidînê de girse tê parastin û mezinahiya molekulan naguhere; cemed krîstaleke molekulî ye û di ava şile de jî girêdanên hîdrojenê hene."
+        "ku": "Dema av dicemide, her molekul bi cîranên xwe re girêdanên hîdrojenê çêdike û di avahiyeke rêkûpêk û bi valahî de cih digire; loma qebareya qeşayê ji ya ava şile ya bi heman girseyê mezintir e, çiriya wê kêmtir e û qeşa li ser avê dimîne. Ava rûyê ya ku sar dibe dicemide, li jor dimîne û ava jêrîn ji sermayê diparêze. Di cemidînê de girse tê parastin û mezinahiya molekulan naguhere; qeşa krîstaleke molekulî ye û di ava şile de jî girêdanên hîdrojenê hene."
       }
     },
     {
@@ -2129,7 +2129,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В закрытый сосуд налили немного воды и оставили при постоянной температуре. Какое утверждение верно после установления равновесия «испарение — конденсация», пока в сосуде есть жидкая вода?",
         "ar": "وُضعت كمية من الماء في وعاء مغلق وتُركت عند درجة حرارة ثابتة. عندما يتحقق اتزان التبخر–التكاثف مع بقاء سائل في الوعاء، أيّ العبارات الآتية صحيحة؟",
         "zh": "把少量水放入密闭容器中，在恒温下放置。当容器中仍有液态水且达到蒸发–凝结平衡时，下列说法正确的是哪一项？",
-        "ku": "Hinek av tê xistin firaxeke girtî û di germahiya sabît de tê hiştin. Dema ku hîn şile heye û hevsengiya buharbûn–hilmbûnê pêk tê, kîjan gotin rast e?"
+        "ku": "Hinek av di firaxeke girtî de tê danîn û di germahiya sabît de tê hiştin. Dema ku hîn ava şile di firaxê de heye û hevsengiya buharbûn–şilebûnê pêk tê, kîjan ji yên jêrîn rast e?"
       },
       "options": [
         {
@@ -2140,7 +2140,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Скорость испарения равна скорости конденсации.",
           "ar": "تتساوى سرعة التبخر مع سرعة التكاثف.",
           "zh": "蒸发速率等于凝结速率。",
-          "ku": "Leza buharbûnê bi leza hilmbûnê re wekhev dibe."
+          "ku": "Leza buharbûnê bi leza şilebûnê re wekhev dibe."
         },
         {
           "tr": "Buharlaşma tamamen durur.",
@@ -2160,7 +2160,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Скорость конденсации больше скорости испарения.",
           "ar": "تكون سرعة التكاثف أكبر من سرعة التبخر.",
           "zh": "凝结速率大于蒸发速率。",
-          "ku": "Leza hilmbûnê ji leza buharbûnê mezintir dibe."
+          "ku": "Leza şilebûnê ji leza buharbûnê mezintir dibe."
         },
         {
           "tr": "Kaptaki suyun tamamı zamanla buharlaşır.",
@@ -2170,7 +2170,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Со временем вся вода в сосуде испаряется.",
           "ar": "يتبخر كل الماء في الوعاء مع مرور الوقت.",
           "zh": "容器中的水最终会全部蒸发。",
-          "ku": "Hemû ava di firaxê de bi demê re dibuhire."
+          "ku": "Bi demê re hemû ava di firaxê de buhar dibe."
         },
         {
           "tr": "Buhar basıncı zamanla sürekli artmaya devam eder.",
@@ -2180,7 +2180,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Давление пара со временем продолжает расти.",
           "ar": "يستمر ضغط البخار في الارتفاع مع الزمن.",
           "zh": "蒸气压随时间不断增大。",
-          "ku": "Zexta buharê bi demê re her zêde dibe."
+          "ku": "Zexta buharê bi demê re bê rawestan zêde dibe."
         }
       ],
       "correctIndex": 0,
@@ -2192,7 +2192,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В закрытом сосуде сначала преобладает испарение; по мере накопления пара скорость конденсации растёт, пока обе скорости не сравняются. Это динамическое равновесие: испарение и конденсация не прекращаются, а идут с одинаковой скоростью, поэтому количества жидкости и пара и давление пара остаются постоянными. Так как сосуд закрыт, вся вода не испаряется.",
         "ar": "في الوعاء المغلق يغلب التبخر أولاً، ومع تراكم جزيئات البخار تزداد سرعة التكاثف حتى تتساوى السرعتان. وهذا اتزان ديناميكي: لا يتوقف التبخر ولا التكاثف بل يستمران بالسرعة نفسها، فتبقى كميتا السائل والبخار وضغط البخار ثابتة. ولأن الوعاء مغلق لا يتبخر الماء كله.",
         "zh": "密闭容器中开始时蒸发占优势；随着蒸气分子增多，凝结速率增大，直到两者相等。这是动态平衡：蒸发和凝结都没有停止，而是以相同速率进行，所以液体和蒸气的量以及蒸气压保持不变。由于容器是密闭的，水不会全部蒸发。",
-        "ku": "Di firaxeke girtî de pêşî buharbûn serdest e; her ku molekulên buharê zêde dibin leza hilmbûnê zêde dibe û di dawiyê de her du lez wekhev dibin. Ev hevsengiya dînamîk e: buharbûn û hilmbûn naqedin, bi heman lezê berdewam dikin; loma mîqdara şile û buharê û zexta buharê sabît dimînin. Ji ber ku firax girtî ye hemû av nabuhire."
+        "ku": "Di firaxeke girtî de pêşî buharbûn serdest e; her ku molekulên buharê zêde dibin, leza şilebûnê zêde dibe û di dawiyê de her du lez wekhev dibin. Ev hevsengiya dînamîk e: buharbûn û şilebûn naqedin, bi heman lezê didomin; loma mîqdarên şile û buharê û zexta buharê sabît dimînin. Ji ber ku firax girtî ye, hemû av buhar nabe."
       }
     },
     {
@@ -2205,7 +2205,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Какой из следующих фазовых переходов происходит с поглощением теплоты (эндотермически)?",
         "ar": "أيّ تغيرات الحالة الآتية يحدث بامتصاص الحرارة (ماصاً للحرارة)؟",
         "zh": "下列物态变化中，哪一个是吸热过程？",
-        "ku": "Kîjan ji van guherînên halê bi wergirtina germê (endotermîk) pêk tê?"
+        "ku": "Kîjan ji van guherînên rewşê bi wergirtina germê (bi awayê endotermîk) pêk tê?"
       },
       "options": [
         {
@@ -2216,7 +2216,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Конденсация водяного пара на холодной поверхности",
           "ar": "تكاثف بخار الماء على سطح بارد",
           "zh": "水蒸气在冷的表面上液化",
-          "ku": "Hilmbûna buhara avê li ser rûyekî sar"
+          "ku": "Şilebûna buhara avê li ser rûyekî sar"
         },
         {
           "tr": "Naftalinin süblimleşmesi",
@@ -2246,7 +2246,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Затвердевание расплавленного воска",
           "ar": "تصلب الشمع المنصهر",
           "zh": "熔化的蜡凝固",
-          "ku": "Hişkbûna mûma helyayî"
+          "ku": "Hişkbûna mûma helandî"
         },
         {
           "tr": "Gaz hâlindeki iyotun soğuk bir yüzeyde doğrudan katılaşması",
@@ -2268,7 +2268,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Переходы, при которых преодолевается притяжение между частицами, — от более упорядоченного состояния к менее упорядоченному (плавление, испарение, возгонка) — идут с поглощением теплоты. Поэтому возгонка нафталина эндотермична. Конденсация, замерзание, затвердевание и десублимация идут с выделением теплоты (экзотермичны), так как частицы сближаются и возникает притяжение.",
         "ar": "التغيرات التي يُتغلَّب فيها على التجاذب بين الدقائق، أي الانتقال من حالة أكثر انتظاماً إلى أقل انتظاماً (الانصهار والتبخر والتسامي)، تمتص الحرارة؛ لذا فتسامي النفثالين ماص للحرارة. أما التكاثف والتجمد والتصلب والترسّب (غاز ← صلب) فتطلق الحرارة لأن الدقائق تتقارب وتتكوّن قوى التجاذب.",
         "zh": "克服微粒间吸引、由较有序状态变为较无序状态的变化（熔化、汽化、升华）需要吸热，所以萘的升华是吸热过程。液化、凝固以及气体直接变成固体（凝华）都是放热过程，因为微粒相互靠近、形成吸引作用。",
-        "ku": "Guherînên ku tê de kişandina navbera perçikan tê bindestkirin, ango ji rewşa rêkûpêktir bo rewşa kêmtir rêkûpêk (helîn, buharbûn, sublîmebûn), germê distînin; loma sublîmebûna naftalînê endotermîk e. Hilmbûn, cemidîn, hişkbûn û veguherîna rasterast a gazê bo hişk (qirav-bûn) germê didin (ekzotermîk), ji ber ku perçik nêzîkî hev dibin û kişandin çêdibin."
+        "ku": "Guherînên ku tê de kişandina di navbera perçeyan de tê şikandin, ango derbasbûna ji rewşa rêkûpêktir bo rewşa bêserûbertir (helîn, buharbûn, sublîmebûn), germê werdigirin. Ji ber vê yekê derbasbûna naftalînê ya rasterast ji hişk bo gaz (sublîmebûn) endotermîk e. Şilebûn, cemidîn, hişkbûn û veguherîna rasterast a gazê bo hişk (desublîmebûn) germê didin (ekzotermîk), ji ber ku perçe nêzîkî hev dibin û hêzên kişandinê çêdibin."
       }
     }
   ]

@@ -14,7 +14,7 @@ export const unit08: ChemistryUnitSeedData = {
     "ru": "Смеси и методы разделения",
     "ar": "المخاليط وطرق الفصل",
     "zh": "混合物与分离技术",
-    "ku": "Têkelî û Rêbazên Veqetandinê"
+    "ku": "Tevlihevî û Rêbazên Veqetandinê"
   },
   "subtitle": {
     "tr": "Homojen, Heterojen Karışımlar, Derişim ve Damıtma",
@@ -24,7 +24,7 @@ export const unit08: ChemistryUnitSeedData = {
     "ru": "Гомогенные и гетерогенные смеси, концентрация и перегонка",
     "ar": "المخاليط المتجانسة وغير المتجانسة والتركيز والتقطير",
     "zh": "均匀与非均匀混合物、浓度和蒸馏",
-    "ku": "Tevliheviyên homojen û heterojen, giranbûn û distilasyon"
+    "ku": "Tevliheviyên Homojen û Heterojen, Tîrbûn û Distîlasyon"
   },
   "facts": [
     {
@@ -37,7 +37,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Гомогенные смеси (растворы) — это однофазные системы, обладающие одинаковыми свойствами по всему объёму.",
         "ar": "المخاليط المتجانسة (المحاليل) أنظمة أحادية الطور لها الخصائص نفسها في جميع أجزائها.",
         "zh": "均匀混合物（溶液）是各处性质都相同的单相体系。",
-        "ku": "Tevliheviyên homojen (çareserî) pergalên yek-qonaxî ne ku li her derê wan heman taybetmendî hene."
+        "ku": "Tevliheviyên homojen (çareserî) sîstemên yekqonaxî ne ku li her derê xwe heman taybetmendiyan nîşan didin."
       },
       "trap": {
         "tr": "Kolloitler mikroskopsuz bakıldığında da heterojen görünür ve hemen çöker.",
@@ -47,7 +47,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Коллоиды даже без микроскопа выглядят неоднородными и сразу оседают.",
         "ar": "تبدو الغرويات غير متجانسة حتى عند النظر إليها دون مجهر، وتترسب على الفور.",
         "zh": "胶体即使不用显微镜观察也显得不均匀，并且会立即沉降。",
-        "ku": "Kolloîd bêyî mîkroskopê jî heterojen xuya dikin û yekser diniştin."
+        "ku": "Kolloîd bêyî mîkroskopê jî heterojen xuya dikin û yekser dinişin."
       },
       "whyTrapIsFalse": {
         "tr": "Kolloitler çıplak gözle homojen görünür ve tanecikleri çok küçük olduğu için kendiliğinden hemen çökmez; heterojen oldukları ancak Tyndall etkisi veya mikroskopla anlaşılır.",
@@ -57,7 +57,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Коллоиды на глаз выглядят однородными и из-за очень малого размера частиц сами по себе быстро не оседают; их неоднородность выявляется только эффектом Тиндаля или под микроскопом.",
         "ar": "تبدو الغرويات متجانسة بالعين المجردة، ولا تترسب سريعًا من تلقاء نفسها لصغر دقائقها؛ ولا يُكشف عدم تجانسها إلا بظاهرة تندال أو بالمجهر.",
         "zh": "胶体用肉眼看是均匀的，而且粒子很小，不会自行迅速沉降；只有通过丁达尔效应或显微镜才能看出它是非均匀的。",
-        "ku": "Kolloîd bi çavê tazî homojen xuya dikin û ji ber ku perçeyên wan pir piçûk in, bi xwe zû naniştin; heterojenbûna wan tenê bi bandora Tyndall an bi mîkroskopê tê fêmkirin."
+        "ku": "Kolloîd bi çavê tazî homojen xuya dikin û ji ber ku perçeyên wan pir piçûk in, bi xwe zû nanişin; heterojenbûna wan tenê bi bandora Tyndall an bi mîkroskopê tê fêmkirin."
       }
     },
     {
@@ -70,7 +70,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Суспензия — неоднородная смесь твёрдого вещества с жидкостью (например, мел в воде, кофе по-турецки; в турецкой школьной программе пример суспензии — айран, в котором при стоянии оседают частицы йогурта).",
         "ar": "المعلق خليط غير متجانس من صلب وسائل (مثل مسحوق الطباشير في الماء، والقهوة التركية؛ والعيران الذي يورده المنهج التركي مثالًا للمعلق إذ تترسب دقائق اللبن فيه عند الترك).",
         "zh": "悬浊液是固-液非均匀混合物（如粉笔灰-水、土耳其咖啡；土耳其教材还以一种酸奶饮料为例，静置后其中的酸奶颗粒会沉到底部）。",
-        "ku": "Suspansiyon tevliheviyek heterojen a hişk-şil e (mînak: toza tebeşîrê-av, qehweya tirkî; dew, ku bernameya MEB wek mînaka suspansiyonê dide û dema tê hiştin perçeyên mastê lê diniştin)."
+        "ku": "Suspansiyon tevliheviyeke heterojen a hişk-şile ye (mînak: toza tebeşîrê-av, qehweya tirkî; dew, ku bernameya MEB-ê wek mînaka suspansiyonê dide û dema tê hiştin perçeyên mastê di binî de dinişin)."
       },
       "trap": {
         "tr": "Süspansiyon tek fazlı homojen bir çözeltidir.",
@@ -80,7 +80,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Суспензия — однофазный однородный раствор.",
         "ar": "المعلق محلول متجانس أحادي الطور.",
         "zh": "悬浊液是单相的均匀溶液。",
-        "ku": "Suspansiyon çareseriyeke homojen a yek-qonaxî ye."
+        "ku": "Suspansiyon çareseriyeke homojen a yekqonaxî ye."
       },
       "whyTrapIsFalse": {
         "tr": "Süspansiyonda katı tanecikler sıvıda çözünmeden dağılmıştır; en az iki faz vardır ve bekletilince tanecikler dibe çöker, bu yüzden homojen çözelti değil heterojen karışımdır.",
@@ -90,7 +90,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "В суспензии твёрдые частицы распределены в жидкости, не растворяясь; фаз как минимум две, и при стоянии частицы оседают, поэтому это неоднородная смесь, а не однородный раствор.",
         "ar": "في المعلق تنتشر الدقائق الصلبة في السائل دون أن تذوب؛ فيوجد طوران على الأقل وتترسب الدقائق عند الترك، لذا فهو خليط غير متجانس وليس محلولًا متجانسًا.",
         "zh": "悬浊液中固体颗粒分散在液体中但并不溶解；至少有两个相，静置后颗粒会沉降，因此它是非均匀混合物，而不是均匀溶液。",
-        "ku": "Di suspansiyonê de perçeyên hişk bêyî ku bihelin di şilê de belav bûne; herî kêm du qonax hene û dema tê hiştin perçe diniştin, ji ber vê yekê ew ne çareseriyek homojen e, tevliheviyek heterojen e."
+        "ku": "Di suspansiyonê de perçeyên hişk bêyî ku bihelin di nav şileyê de belav bûne; herî kêm du qonax hene û dema tê hiştin perçe di binî de dinişin. Ji ber vê yekê ew ne çareseriyeke homojen, tevliheviyeke heterojen e."
       }
     },
     {
@@ -103,7 +103,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Эмульсия — неоднородная смесь двух нерастворимых друг в друге жидкостей (например, оливковое масло с водой, майонез).",
         "ar": "المستحلب خليط غير متجانس من سائلين لا يذوب أحدهما في الآخر (مثل زيت الزيتون والماء، والمايونيز).",
         "zh": "乳浊液是两种互不相溶的液体形成的非均匀混合物（如橄榄油-水、蛋黄酱）。",
-        "ku": "Emulsiyon tevliheviyeke heterojen a du şilên ku di hev de nahelin e (mînak: rûnê zeytûnê-av, mayonez)."
+        "ku": "Emulsiyon tevliheviyeke heterojen a du şileyên ku di nav hev de nahelin e (mînak: rûnê zeytûnê-av, mayonez)."
       },
       "trap": {
         "tr": "Zeytinyağı-su karışımı ayrımsal damıtma ile ayrılır.",
@@ -113,7 +113,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Смесь оливкового масла и воды разделяют фракционной перегонкой.",
         "ar": "يُفصل خليط زيت الزيتون والماء بالتقطير التجزيئي.",
         "zh": "橄榄油-水混合物通过分馏分离。",
-        "ku": "Tevliheviya rûnê zeytûnê-av bi distilasyona perçeyî tê veqetandin."
+        "ku": "Tevliheviya rûnê zeytûnê-av bi distîlasyona perçeyî tê veqetandin."
       },
       "whyTrapIsFalse": {
         "tr": "Ayrımsal damıtma birbiri içinde çözünen (homojen) sıvılar için kullanılır; zeytinyağı ile su karışmadığı ve iki ayrı tabaka oluşturduğu için ayırma hunisi ile ayrılır.",
@@ -123,7 +123,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Фракционную перегонку применяют для взаимно растворимых (однородных) жидкостей; оливковое масло и вода не смешиваются и образуют два слоя, поэтому их разделяют делительной воронкой.",
         "ar": "يُستخدم التقطير التجزيئي للسوائل التي يذوب بعضها في بعض (خليط متجانس)؛ أما زيت الزيتون والماء فلا يمتزجان ويكوّنان طبقتين، لذا يُفصلان بقمع الفصل.",
         "zh": "分馏用于互溶（均匀）的液体；橄榄油和水不互溶，会分成两层，因此用分液漏斗分离。",
-        "ku": "Distilasyona perçeyî ji bo şilên ku di hev de dihelin (homojen) tê bikaranîn; rûnê zeytûnê û av tevlî hev nabin û du qatan çêdikin, ji ber vê yekê bi hunîya veqetandinê tên veqetandin."
+        "ku": "Distîlasyona perçeyî ji bo şileyên ku di nav hev de dihelin (homojen) tê bikaranîn; rûnê zeytûnê û av tevlî hev nabin û du qatan çêdikin, ji ber vê yekê bi qîfa veqetandinê ji hev tên veqetandin."
       }
     },
     {
@@ -136,7 +136,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Аэрозоль — система, в которой твёрдое вещество или жидкость распределены в газе (например, туман, дым, спрей).",
         "ar": "يتكون الهباء الجوي من انتشار مادة صلبة أو سائلة في غاز (مثل الضباب والدخان والرذاذ).",
         "zh": "气溶胶是固体或液体分散在气体中形成的（如雾、烟、喷雾）。",
-        "ku": "Aerosol bi belavbûna madeyeke hişk an şil di gazekê de çêdibe (mînak: mij, dûman, sprey)."
+        "ku": "Aerosol bi belavbûna madeyeke hişk an şile di nav gazekê de çêdibe (mînak: mij, dûman, sprey)."
       },
       "trap": {
         "tr": "Duman katının sıvıda dağıldığı süspansiyondur.",
@@ -146,7 +146,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Дым — суспензия, в которой твёрдое вещество распределено в жидкости.",
         "ar": "الدخان معلق تنتشر فيه مادة صلبة في سائل.",
         "zh": "烟是固体分散在液体中形成的悬浊液。",
-        "ku": "Dûman suspansiyonek e ku tê de madeya hişk di şilekê de belav bûye."
+        "ku": "Dûman suspansiyonek e ku tê de madeya hişk di nav şileyekê de belav bûye."
       },
       "whyTrapIsFalse": {
         "tr": "Dumanda katı tanecikler bir gaz (hava) içinde dağılmıştır, yani duman bir aerosoldür; süspansiyonda ise dağılma ortamı sıvıdır.",
@@ -156,7 +156,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "В дыме твёрдые частицы распределены в газе (воздухе), то есть дым — аэрозоль; в суспензии дисперсионной средой является жидкость.",
         "ar": "في الدخان تنتشر دقائق صلبة في غاز (الهواء)، فالدخان هباء جوي (أيروسول)؛ أما في المعلق فوسط الانتشار سائل.",
         "zh": "烟是固体颗粒分散在气体（空气）中，所以烟是气溶胶；而悬浊液的分散介质是液体。",
-        "ku": "Di dûmanê de perçeyên hişk di gazekê (hewayê) de belav bûne, yanî dûman aerosol e; di suspansiyonê de navgîna belavbûnê şil e."
+        "ku": "Di dûmanê de perçeyên hişk di nav gazekê (hewayê) de belav bûne, ango dûman aerosol e; di suspansiyonê de navgîna belavbûnê şile ye."
       }
     },
     {
@@ -169,7 +169,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Эффект Тиндаля: луч света, проходящий через коллоид, рассеивается, и его путь становится видимым.",
         "ar": "ظاهرة تندال: يتشتت شعاع الضوء المار عبر الغروي ويصبح مساره مرئيًا.",
         "zh": "丁达尔效应：光束通过胶体时发生散射，光的路径清晰可见。",
-        "ku": "Bandora Tyndall: Tîrêja ronahiyê ya ku di koloîdekê re derbas dibe belav dibe û riya wê xuya dibe."
+        "ku": "Bandora Tyndall: tîrêja ronahiyê ya ku di nav kolloîdekê re derbas dibe belav dibe û rêya wê xuya dibe."
       },
       "trap": {
         "tr": "Gerçek homojen çözeltilerde ışık demeti kuvvetle saçılır ve görünür.",
@@ -179,7 +179,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "В истинных (гомогенных) растворах луч света сильно рассеивается и становится видимым.",
         "ar": "في المحاليل الحقيقية المتجانسة يتشتت شعاع الضوء بقوة ويصبح مرئيًا.",
         "zh": "在真溶液中，光束会被强烈散射而显出光路。",
-        "ku": "Di çareseriyên homojen ên rastîn de, tîrêjê ronahiyê bi tundî belav dibe û xuya dibe."
+        "ku": "Di çareseriyên homojen ên rastîn de tîrêja ronahiyê bi hêz belav dibe û xuya dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Gerçek çözeltilerdeki tanecikler (1 nm'den küçük) ışığı belirgin biçimde saçamayacak kadar küçüktür, bu yüzden ışığın yolu görünmez; ışık yolunun görünmesi kolloitleri çözeltilerden ayıran özelliktir.",
@@ -189,7 +189,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Частицы истинных растворов (меньше 1 нм) слишком малы, чтобы заметно рассеивать свет, поэтому путь луча не виден; видимый путь луча как раз отличает коллоиды от растворов.",
         "ar": "دقائق المحاليل الحقيقية (أصغر من 1 nm) أصغر من أن تشتت الضوء تشتيتًا ملحوظًا، فلا يظهر مسار الشعاع؛ وظهور مسار الضوء هو ما يميز الغرويات عن المحاليل.",
         "zh": "真溶液中的粒子(小于1 nm)太小，不能明显散射光，所以看不到光路；能看到光路正是胶体区别于溶液的特征。",
-        "ku": "Perçeyên çareseriyên rastîn (ji 1 nm piçûktir) ji bo ku ronahiyê bi awayekî diyar belav bikin pir piçûk in, ji ber vê yekê riya ronahiyê nayê dîtin; xuyabûna riya ronahiyê kolloîdan ji çareseriyan cuda dike."
+        "ku": "Perçeyên di çareseriyên rastîn de (ji 1 nm piçûktir) ewqas piçûk in ku nikarin ronahiyê bi awayekî diyar belav bikin, ji ber vê yekê rêya ronahiyê xuya nabe; xuyabûna rêya ronahiyê ew taybetmendî ye ku kolloîdan ji çareseriyan cuda dike."
       }
     },
     {
@@ -202,7 +202,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Массовая доля растворённого вещества (%) = (масса растворённого вещества / масса раствора) x 100.",
         "ar": "النسبة المئوية الكتلية = (كتلة المذاب / كتلة المحلول) × 100.",
         "zh": "质量分数 =（溶质质量/溶液质量）x 100。",
-        "ku": "Rêjeya girseyî ya ji sedî = (Girseya madeya helyayî / Girseya çareseriyê) x 100."
+        "ku": "Tîrbûna girseyî ya ji sedî = (Girseya madeya helbûyî / Girseya çareseriyê) x 100."
       },
       "trap": {
         "tr": "Kütlece yüzde derişim çözünen kütlesinin çözücü kütlesine bölünmesiyle bulunur.",
@@ -212,7 +212,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Массовую долю (%) находят делением массы растворённого вещества на массу растворителя.",
         "ar": "تُحسب النسبة المئوية الكتلية بقسمة كتلة المذاب على كتلة المذيب.",
         "zh": "质量分数是用溶质质量除以溶剂质量求得的。",
-        "ku": "Rêjeya girseyî ya ji sedî bi parvekirina girseya madeya helyayî li girseya helkerê tê dîtin."
+        "ku": "Tîrbûna girseyî ya ji sedî bi parvekirina girseya madeya helbûyî li girseya helkerê tê dîtin."
       },
       "whyTrapIsFalse": {
         "tr": "Paydada çözücü değil çözelti kütlesi (çözünen + çözücü) bulunur; yalnız çözücü kütlesine bölmek derişimi olduğundan büyük bulur.",
@@ -222,7 +222,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "В знаменателе стоит масса раствора (растворённое вещество + растворитель), а не растворителя; деление только на массу растворителя даёт завышенную концентрацию.",
         "ar": "المقام هو كتلة المحلول (المذاب + المذيب) لا كتلة المذيب؛ والقسمة على كتلة المذيب وحدها تعطي تركيزًا أكبر من الحقيقي.",
         "zh": "分母是溶液的质量(溶质 + 溶剂)，而不是溶剂的质量；只除以溶剂质量会使算出的浓度偏大。",
-        "ku": "Di parvekerê de ne girseya helkerê, girseya çareseriyê (helbûyî + helker) heye; tenê bi girseya helkerê parvekirin giranbûnê ji ya rastîn mezintir dide."
+        "ku": "Di parvekeriyê de ne girseya helkerê, girseya çareseriyê (madeya helbûyî + helker) heye; parvekirina tenê li girseya helkerê tîrbûnê ji ya rastîn mezintir dide."
       }
     },
     {
@@ -235,7 +235,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "ppm (миллионная доля) = (масса растворённого вещества / масса раствора) x 10^6.",
         "ar": "ppm (جزء في المليون) = (كتلة المذاب / كتلة المحلول) × 10^6.",
         "zh": "ppm(百万分率) =（溶质质量/溶液质量）x 10^6。",
-        "ku": "ppm (parçe di mîlyonekê de) = (Girseya madeya helyayî / Girseya çareseriyê) x 10^6."
+        "ku": "ppm (beşek di mîlyonê de) = (Girseya madeya helbûyî / Girseya çareseriyê) x 10^6."
       },
       "trap": {
         "tr": "ppm hesaplanırken çarpan 100'dür.",
@@ -245,7 +245,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При расчёте ppm множитель равен 100.",
         "ar": "عند حساب ppm يكون معامل الضرب 100.",
         "zh": "计算 ppm 时乘数是 100。",
-        "ku": "Dema ppm tê hesibandin, lêker 100 e."
+        "ku": "Dema ppm tê hesibandin, faktora lêxistinê 100 e."
       },
       "whyTrapIsFalse": {
         "tr": "100 ile çarpmak yüzde derişimi verir; ppm \"milyonda bir kısım\" olduğu için çarpan 10^6'dır (1 ppm = %0,0001).",
@@ -255,7 +255,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Умножение на 100 даёт массовую долю в процентах; ppm означает «миллионная доля», поэтому множитель равен 10^6 (1 ppm = 0,0001 %).",
         "ar": "الضرب في 100 يعطي النسبة المئوية؛ أما ppm فتعني «جزءًا في المليون»، لذا يكون المعامل 10^6 (1 ppm = 0.0001%).",
         "zh": "乘以 100 得到的是质量分数（百分数）；ppm 表示“百万分之一”，所以乘数是 10^6 (1 ppm = 0.0001%)。",
-        "ku": "Bi 100 re lêdan giranbûna sedî dide; ppm tê wateya \"parçeyek di milyonekê de\", ji ber vê yekê lêker 10^6 e (1 ppm = %0,0001)."
+        "ku": "Lêxistina bi 100 tîrbûna ji sedî dide; ppm tê wateya \"beşek di mîlyonê de\", ji ber vê yekê faktor 10^6 e (1 ppm = %0,0001)."
       }
     },
     {
@@ -268,7 +268,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Фракционную перегонку применяют для разделения однородных смесей жидкостей с разными температурами кипения (например, разделение нефти на фракции, смесь ацетона и воды).",
         "ar": "يُستخدم التقطير التجزيئي لفصل المخاليط السائلة المتجانسة التي تختلف مكوناتها في درجات الغليان (مثل فصل النفط الخام إلى مكوناته، وفصل الأسيتون عن الماء).",
         "zh": "分馏用于分离各组分沸点不同的均匀液-液混合物（如将原油分离成各馏分、丙酮-水）。",
-        "ku": "Distilasyona perçeyî ji bo veqetandina tevliheviyên şil-şil ên homojen ên ku xalên kelandinê yên pêkhateyan cuda ne tê bikaranîn (mînak: veqetandina petrola xav li pêkhateyên wê, aseton-av)."
+        "ku": "Distîlasyona perçeyî ji bo veqetandina tevliheviyên homojen ên şile-şile tê bikaranîn ku xalên kelînê yên beşên wan cuda ne (mînak: veqetandina petrola xav bo beşên wê, aseton-av)."
       },
       "trap": {
         "tr": "Ayrımsal damıtma yoğunluk farkına dayalı bir ayırma tekniğidir.",
@@ -278,7 +278,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Фракционная перегонка — это метод разделения, основанный на разнице плотностей.",
         "ar": "التقطير التجزيئي طريقة فصل تعتمد على اختلاف الكثافة.",
         "zh": "分馏是一种依据密度差异的分离方法。",
-        "ku": "Distilasyona perçeyî teknîkeke veqetandinê ye ku li ser cudahiya çiriyê ye."
+        "ku": "Distîlasyona perçeyî rêbazeke veqetandinê ye ku li ser cudahiya çiriyê disekine."
       },
       "whyTrapIsFalse": {
         "tr": "Ayrımsal damıtma bileşenlerin kaynama noktası farkına dayanır; yoğunluk farkına dayanan yöntemler ayırma hunisi, santrifüj ve yüzdürme gibi yöntemlerdir.",
@@ -288,7 +288,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Фракционная перегонка основана на разнице температур кипения; на разнице плотностей основаны, например, делительная воронка, центрифугирование и флотация.",
         "ar": "يعتمد التقطير التجزيئي على اختلاف درجات الغليان؛ أما الطرق المعتمدة على اختلاف الكثافة فمنها قمع الفصل والطرد المركزي والتعويم.",
         "zh": "分馏依据的是沸点差异；依据密度差异的方法有分液漏斗、离心和浮选等。",
-        "ku": "Distilasyona perçeyî li ser cudahiya xala kelandinê ye; rêbazên li ser cudahiya çiriyê wek hunîya veqetandinê, santrîfuj û flotasyonê ne."
+        "ku": "Distîlasyona perçeyî li ser cudahiya xala kelînê ya beşan disekine; rêbazên ku li ser cudahiya çiriyê disekinin qîfa veqetandinê, santrîfuj û flotasyon in."
       }
     },
     {
@@ -301,7 +301,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Делительная воронка разделяет неоднородные смеси нерастворимых друг в друге жидкостей разной плотности (например, оливковое масло и воду).",
         "ar": "يفصل قمع الفصل المخاليط غير المتجانسة من سوائل لا يذوب بعضها في بعض وتختلف في الكثافة (مثل زيت الزيتون-الماء).",
         "zh": "分液漏斗用于分离密度不同、互不相溶的液-液非均匀混合物（如橄榄油-水）。",
-        "ku": "Hunîya veqetandinê tevliheviyên heterojen ên şil-şil ên ku di hev de nahelin û çiriyên wan cuda ne ji hev vediqetîne (mînak: rûnê zeytûnê-av)."
+        "ku": "Qîfa veqetandinê tevliheviyên heterojen ên şile-şile yên ku di nav hev de nahelin û çiriyên wan cuda ne ji hev vediqetîne (mînak: rûnê zeytûnê-av)."
       },
       "trap": {
         "tr": "Ayırma hunisi kaynama noktaları farklı homojen karışımları ayırır.",
@@ -311,7 +311,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Делительная воронка разделяет однородные смеси с разной температурой кипения.",
         "ar": "يفصل قمع الفصل المخاليط المتجانسة المختلفة في درجات الغليان.",
         "zh": "分液漏斗用于分离沸点不同的均匀混合物。",
-        "ku": "Hunîya veqetandinê tevliheviyên homojen ên ku xalên wan ên kelandinê cuda ne vediqetîne."
+        "ku": "Qîfa veqetandinê tevliheviyên homojen ên ku xalên wan ên kelînê cuda ne ji hev vediqetîne."
       },
       "whyTrapIsFalse": {
         "tr": "Ayırma hunisi yalnızca karışmayan ve iki ayrı tabaka oluşturan sıvılarda işe yarar; homojen sıvı karışımlarında tabaka oluşmadığından ayırma kaynama noktası farkıyla, yani damıtmayla yapılır.",
@@ -321,7 +321,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Делительная воронка подходит только для несмешивающихся жидкостей, образующих два слоя; однородная жидкая смесь слоёв не образует, поэтому её разделяют по температуре кипения, то есть перегонкой.",
         "ar": "لا يصلح قمع الفصل إلا للسوائل غير الممتزجة التي تكوّن طبقتين؛ أما الخليط السائل المتجانس فلا تتكون فيه طبقات، فيُفصل باختلاف درجة الغليان أي بالتقطير.",
         "zh": "分液漏斗只适用于不互溶、能分成两层的液体；均匀液体混合物不分层，要靠沸点差异即蒸馏来分离。",
-        "ku": "Hunîya veqetandinê tenê ji bo şilên ku tevlî hev nabin û du qatan çêdikin kêr tê; di tevliheviyên şil ên homojen de qat çênabin, ji ber vê yekê veqetandin bi cudahiya xala kelandinê, yanî bi distilasyonê tê kirin."
+        "ku": "Qîfa veqetandinê tenê ji bo şileyên ku tevlî hev nabin û du qatan çêdikin kêr tê; di tevliheviyên şile yên homojen de qat çênabin, ji ber vê yekê veqetandin bi cudahiya xala kelînê, ango bi distîlasyonê, tê kirin."
       }
     },
     {
@@ -334,7 +334,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При флотации твёрдые частицы в жидкости разделяются на всплывающие и тонущие: в простых случаях (опилки–песок) используют разницу плотностей, а при обогащении сульфидных руд в горном деле — разницу смачиваемости (несмачиваемые зёрна прилипают к пузырькам воздуха и поднимаются в пену).",
         "ar": "في التعويم تُفصل الدقائق الصلبة في سائل إلى طافية وغاطسة: ففي الأمثلة البسيطة كنشارة الخشب والرمل يُستفاد من اختلاف الكثافة، أما في إغناء خامات الكبريتيدات في التعدين فيُستفاد من اختلاف قابلية البلل بالماء (تلتصق الحبيبات غير المبللة بفقاعات الهواء وتصعد إلى الرغوة).",
         "zh": "浮选是在液体中把固体颗粒分成浮起的和下沉的两部分：木屑-沙子等简单情况利用密度差，而采矿中硫化矿的富集利用的是颗粒被水润湿性的差异（不被润湿的颗粒附着在气泡上进入泡沫层）。",
-        "ku": "Di flotasyonê de perçeyên hişk di şilekê de wek yên ku avjenî dikin û yên ku dadikevin tên veqetandin: di mînakên hêsan ên wek qirş-qûmê de ji cudahiya çiriyê, di dewlemendkirina madenên sulfîdî yên madenê de jî ji cudahiya şilbûna bi avê (perçeyên ku şil nabin bi bilbilên hewayê derdikevin kefê) sûd tê wergirtin."
+        "ku": "Di flotasyonê de perçeyên hişk di nav şileyekê de wek yên ku li ser rû dimînin û yên ku dadikevin binî ji hev tên veqetandin: di mînakên sade yên wek qirş-qûm de ji cudahiya çiriyê, di kanzevaniyê de, di dewlemendkirina kanzayên sulfîdî de jî ji cudahiya şilbûna bi avê (perçeyên ku şil nabin bi bilbilên hewayê re derdikevin nav kefê) sûd tê wergirtin."
       },
       "trap": {
         "tr": "Flotasyon mıknatıs yardımıyla demir ayırma işlemidir.",
@@ -344,7 +344,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Флотация — это отделение железа с помощью магнита.",
         "ar": "التعويم عملية فصل الحديد باستخدام المغناطيس.",
         "zh": "浮选是借助磁铁分离铁的方法。",
-        "ku": "Flotasyon pêvajoya veqetandina hesin bi alîkariya magnetekê ye."
+        "ku": "Flotasyon pêvajoya veqetandina hesin bi alîkariya mexnatîsê ye."
       },
       "whyTrapIsFalse": {
         "tr": "Mıknatısla ayırma, demir gibi manyetik maddelerin mıknatısa çekilmesine dayanan ayrı bir yöntemdir; flotasyonda ise taneciklerin sıvı içinde yüzüp yüzmemesinden (yoğunluk veya ıslanabilme farkı) yararlanılır.",
@@ -354,7 +354,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Магнитная сепарация — другой метод, основанный на притяжении магнитных веществ, например железа; при флотации используют то, всплывают частицы в жидкости или нет (различие плотности или смачиваемости).",
         "ar": "الفصل المغناطيسي طريقة مختلفة تعتمد على انجذاب المواد المغناطيسية كالحديد إلى المغناطيس؛ أما التعويم فيستفيد من طفو الدقائق أو عدم طفوها في السائل (اختلاف الكثافة أو قابلية البلل).",
         "zh": "磁选是另一种方法，依据铁等磁性物质被磁铁吸引；浮选利用的是颗粒能否在液体中浮起（密度或润湿性的差异）。",
-        "ku": "Veqetandina bi mexnatîsê rêbazek cuda ye ku li ser kişandina madeyên mexnatîsî yên wek hesin e; di flotasyonê de ji avjeniya an neavjeniya perçeyan di şilê de (cudahiya çiriyê an şilbûnê) sûd tê wergirtin."
+        "ku": "Veqetandina bi mexnatîsê rêbazeke cuda ye ku li ser kişandina madeyên mexnatîsî yên wek hesin ber bi mexnatîsê ve disekine; di flotasyonê de ji wê yekê sûd tê wergirtin ka perçe di nav şileyê de li ser rû dimînin an na (cudahiya çiriyê an şilbûnê)."
       }
     },
     {
@@ -367,7 +367,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Экстракция — это извлечение компонента из смеси с помощью подходящего растворителя (заваривание чая, получение сахара из сахарной свёклы).",
         "ar": "الاستخلاص هو فصل أحد مكونات الخليط بسحبه بمذيب مناسب (نقع الشاي، استخلاص السكر من بنجر السكر).",
         "zh": "萃取是利用合适的溶剂把混合物中的某一组分提取分离出来（如泡茶、从甜菜中提取糖）。",
-        "ku": "Ekstraksiyon (derxistin) veqetandina pêkhateyeke tevliheviyê ye bi kişandina wê bi helkerekî guncaw (demkirina çayê, bidestxistina şekir ji silqa şekir)."
+        "ku": "Ekstraksiyon (derxistin) veqetandina beşekê ji tevliheviyê ye bi alîkariya helkerekî guncav (demkirina çayê, bidestxistina şekir ji silqa şekir)."
       },
       "trap": {
         "tr": "Özütleme tanecik boyutu farkına dayalı eleme yöntemidir.",
@@ -377,7 +377,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Экстракция — это метод просеивания, основанный на различии размеров частиц.",
         "ar": "الاستخلاص طريقة غربلة تعتمد على اختلاف حجم الجسيمات.",
         "zh": "萃取是一种基于颗粒大小差异的筛分方法。",
-        "ku": "Ekstraksiyon rêbazeke bêjingkirinê ye ku li ser cudahiya mezinahiya perçeyan e."
+        "ku": "Ekstraksiyon rêbazeke bêjingkirinê ye ku li ser cudahiya mezinahiya perçeyan disekine."
       },
       "whyTrapIsFalse": {
         "tr": "Tanecik boyutuna göre ayırma eleme ya da süzmedir; özütleme ise bir bileşenin seçilen çözücüde diğerlerinden çok daha iyi çözünmesine, yani çözünürlük farkına dayanır.",
@@ -387,7 +387,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Разделение по размеру частиц — это просеивание или фильтрование; экстракция основана на том, что один компонент растворяется в выбранном растворителе гораздо лучше других, то есть на различии растворимости.",
         "ar": "الفصل حسب حجم الدقائق هو النخل أو الترشيح؛ أما الاستخلاص فيعتمد على ذوبان أحد المكونات في المذيب المختار أفضل بكثير من غيره، أي على اختلاف الذائبية.",
         "zh": "按颗粒大小分离的是筛分或过滤；萃取依据的是某一组分在所选溶剂中的溶解度远大于其他组分，即溶解度差异。",
-        "ku": "Veqetandina li gorî mezinahiya perçeyan bêjingkirin an parzûnkirin e; derxistin (ekstraksiyon) li ser wê yekê ye ku pêkhateyek di helkerê hilbijartî de ji yên din gelek baştir dihele, yanî li ser cudahiya helbûnê ye."
+        "ku": "Veqetandina li gorî mezinahiya perçeyan bêjingkirin an parzûnkirin e; ekstraksiyon (derxistin) li ser wê yekê disekine ku beşek di helkerê hilbijartî de ji yên din gelek baştir dihele, ango li ser cudahiya helbûniyê."
       }
     },
     {
@@ -400,7 +400,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Диализ — это отделение малых ионов и молекул от частиц коллоидного размера путём их прохождения через полупроницаемую мембрану (очистка крови у почечных больных).",
         "ar": "الديلزة هي فصل الأيونات والجزيئات الصغيرة عن الجسيمات الغروية الحجم بتمريرها عبر غشاء شبه منفذ (تنقية الدم لدى مرضى الكلى).",
         "zh": "透析是让小的离子和分子透过半透膜，从而与胶体大小的粒子分离（肾病患者的血液净化）。",
-        "ku": "Dialîz veqetandina îyon û molekulên biçûk ji perçeyên bi mezinahiya koloîdal e, bi derbaskirina wan di parzûneke nîv-derbasbar re (paqijkirina xwînê di nexweşên gurçikan de)."
+        "ku": "Dialîz veqetandina îyon û molekulên piçûk ji perçeyên bi mezinahiya kolloîdî ye, bi derbaskirina wan di perdeyeke nîvderbasbar re (paqijkirina xwînê ya nexweşên gurçikan)."
       },
       "trap": {
         "tr": "Diyaliz santrifüj ile çöktürme işlemidir.",
@@ -410,7 +410,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Диализ — это осаждение с помощью центрифуги.",
         "ar": "الديلزة عملية ترسيب بالطرد المركزي.",
         "zh": "透析是一种离心沉降操作。",
-        "ku": "Dialîz pêvajoyeke niştandinê bi santrîfûjê ye."
+        "ku": "Dialîz pêvajoya niştandinê ya bi santrîfujê ye."
       },
       "whyTrapIsFalse": {
         "tr": "Santrifüj taneciklerin yoğunluk farkıyla çökmesini hızlandırır; diyaliz ise tanecik boyutu farkına dayanır: küçük iyon ve moleküller yarı geçirgen zardan geçer, kolloidal tanecikler geçemez.",
@@ -420,7 +420,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Центрифугирование ускоряет оседание за счёт разницы плотностей; диализ основан на размере частиц: малые ионы и молекулы проходят через полупроницаемую мембрану, а коллоидные частицы — нет.",
         "ar": "الطرد المركزي يسرّع الترسيب بفعل اختلاف الكثافة؛ أما الديلزة فتعتمد على حجم الدقائق: تمر الأيونات والجزيئات الصغيرة عبر الغشاء شبه المنفذ ولا تمر الدقائق الغروية.",
         "zh": "离心是利用密度差加快沉降；透析依据的是粒子大小：小离子和小分子能透过半透膜，胶体粒子不能。",
-        "ku": "Santrîfuj niştina perçeyan bi cudahiya çiriyê lez dike; diyaliz li ser cudahiya mezinahiya perçeyan e: îyon û molekulên piçûk di perdeya nîv-derbasbar re derbas dibin, perçeyên kolloîdî derbas nabin."
+        "ku": "Santrîfuj niştina perçeyan a li gorî cudahiya çiriyê bilez dike; dialîz li ser cudahiya mezinahiya perçeyan disekine: îyon û molekulên piçûk di perdeya nîvderbasbar re derbas dibin, perçeyên kolloîdî derbas nabin."
       }
     },
     {
@@ -433,7 +433,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При добавлении воды к раствору (разбавлении) масса растворённого вещества не меняется, а концентрация уменьшается; для массовой доли в процентах используют соотношение C1m1 = C2m2 (m — масса раствора).",
         "ar": "إذا أُضيف الماء إلى محلول (تخفيف) لا تتغير كتلة المذاب ويقل التركيز؛ وللنسبة المئوية الكتلية تُستخدم العلاقة C1m1 = C2m2 (m: كتلة المحلول).",
         "zh": "向溶液中加水（稀释）时，溶质质量不变，浓度降低；对质量分数可用关系式 C1m1 = C2m2 (m 为溶液质量)。",
-        "ku": "Ger av li çareseriyê were zêdekirin (sivikkirin) girseya helbûyî naguhere û giranbûn kêm dibe; ji bo giranbûna sedî ya girseyî têkiliya C1m1 = C2m2 tê bikaranîn (m: girseya çareseriyê)."
+        "ku": "Eger av li çareseriyê were zêdekirin (sistkirin), girseya madeya helbûyî naguhere û tîrbûn kêm dibe; ji bo tîrbûna girseyî ya ji sedî têkiliya C1m1 = C2m2 tê bikaranîn (m: girseya çareseriyê)."
       },
       "trap": {
         "tr": "Su eklendiğinde çözünen madde kütlesi de artar.",
@@ -443,7 +443,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При добавлении воды масса растворённого вещества тоже увеличивается.",
         "ar": "عند إضافة الماء، تزداد كتلة المذاب أيضًا.",
         "zh": "加水时，溶质的质量也会增大。",
-        "ku": "Dema ku av lê tê zêdekirin, girseya madeya helyayî jî zêde dibe."
+        "ku": "Dema av tê zêdekirin, girseya madeya helbûyî jî zêde dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Seyreltmede yalnızca çözücü eklenir; çözünenin kütlesi sabit kalır, çözelti kütlesi arttığı için derişim azalır.",
@@ -453,7 +453,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При разбавлении добавляют только растворитель; масса растворённого вещества не меняется, а концентрация падает, потому что растёт масса раствора.",
         "ar": "في التخفيف يُضاف المذيب فقط؛ فتبقى كتلة المذاب ثابتة، ويقل التركيز لأن كتلة المحلول تزداد.",
         "zh": "稀释时只加入溶剂；溶质质量保持不变，由于溶液质量增大，浓度降低。",
-        "ku": "Di sivikkirinê de tenê helker tê zêdekirin; girseya helbûyî neguherbar dimîne, ji ber ku girseya çareseriyê zêde dibe giranbûn kêm dibe."
+        "ku": "Di sistkirinê de tenê helker tê zêdekirin; girseya madeya helbûyî sabît dimîne, û ji ber ku girseya çareseriyê zêde dibe tîrbûn kêm dibe."
       }
     },
     {
@@ -466,7 +466,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Правило «подобное растворяется в подобном»: полярные вещества хорошо растворяются в полярных растворителях, неполярные — в неполярных.",
         "ar": "قاعدة «الشبيه يذيب الشبيه»: تذوب المواد القطبية جيدًا في المذيبات القطبية، والمواد غير القطبية في المذيبات غير القطبية.",
         "zh": "“相似相溶”规律：极性物质易溶于极性溶剂，非极性物质易溶于非极性溶剂。",
-        "ku": "Qaydeya \"wekhev wekhevê dihelîne\": madeyên polar di helkerên polar de, madeyên ne-polar jî di helkerên ne-polar de baş dihelin."
+        "ku": "Qaîdeya \"wekhev wekhevê dihelîne\": madeyên polar di helkerên polar de, madeyên nepolar jî di helkerên nepolar de baş dihelin."
       },
       "trap": {
         "tr": "Apolar yağ lekesi polar suda kolayca çözünür.",
@@ -476,7 +476,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Неполярное масляное пятно легко растворяется в полярной воде.",
         "ar": "تذوب بقعة الزيت غير القطبية بسهولة في الماء القطبي.",
         "zh": "非极性的油污很容易溶解在极性的水中。",
-        "ku": "Lekeya rûn a ne-polar di ava polar de bi hêsanî dihele."
+        "ku": "Lekeya rûnê ya nepolar di ava polar de bi hêsanî dihele."
       },
       "whyTrapIsFalse": {
         "tr": "Yağ apolar, su polardır; \"benzer benzeri çözer\" gereği yağ lekesi suyla değil, benzin gibi apolar çözücülerle ya da sabun/deterjan yardımıyla uzaklaştırılır.",
@@ -486,7 +486,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Масло неполярно, а вода полярна; по правилу «подобное растворяется в подобном» масляное пятно удаляют не водой, а неполярными растворителями (например, бензином) или с помощью мыла/моющего средства.",
         "ar": "الزيت غير قطبي والماء قطبي؛ ووفق قاعدة «الشبيه يذيب الشبيه» تُزال بقعة الزيت لا بالماء بل بمذيبات غير قطبية كالبنزين أو بمساعدة الصابون/المنظف.",
         "zh": "油是非极性的，水是极性的；根据“相似相溶”，油渍不能用水除去，要用汽油等非极性溶剂或借助肥皂/洗涤剂去除。",
-        "ku": "Rûn ne-polar e, av polar e; li gorî \"wekhev wekhevê dihelîne\" lekeya rûn ne bi avê, bi helkerên ne-polar ên wek benzînê an bi alîkariya sabûn/deterjanê tê rakirin."
+        "ku": "Rûn nepolar e, av polar e; li gorî \"wekhev wekhevê dihelîne\" lekeya rûnê ne bi avê, bi helkerên nepolar ên wek benzînê an bi alîkariya sabûn/deterjanê tê rakirin."
       }
     },
     {
@@ -499,7 +499,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При одинаковом внешнем давлении солёная вода начинает кипеть при более высокой температуре, чем чистая, и пока раствор ненасыщен, температура во время кипения продолжает расти.",
         "ar": "عند الضغط الخارجي نفسه يبدأ الماء المالح بالغليان عند درجة أعلى من الماء النقي، وما دام المحلول غير مشبع تستمر درجة الحرارة في الارتفاع أثناء الغليان.",
         "zh": "在相同外压下，盐水开始沸腾的温度高于纯水，并且在溶液未饱和时，沸腾过程中温度持续升高。",
-        "ku": "Di heman pestoya derve de ava şor di germahiyek ji ava safî bilindtir de dest bi kelandinê dike û heta ku çareserî ne têr be, di dema kelandinê de germahî bilind dibe."
+        "ku": "Di heman zexta derve de ava şor di germahiyeke ji ava paqij bilindtir de dest bi kelînê dike, û heta ku çareserî netêr be, di dema kelînê de germahî her bilind dibe."
       },
       "trap": {
         "tr": "Tuzlu su kaynarken sıcaklığı baştan itibaren sabit kalır.",
@@ -509,7 +509,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Солёная вода кипит при постоянной температуре с самого начала кипения.",
         "ar": "عند غليان الماء المالح تظل درجة حرارته ثابتة منذ البداية.",
         "zh": "盐水沸腾时，温度从一开始就保持不变。",
-        "ku": "Dema ava şor dikele, germahiya wê ji destpêkê ve sabit dimîne."
+        "ku": "Dema ava şor dikele, germahiya wê ji destpêkê ve sabît dimîne."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzlu su kaynarken su buharlaşır ve çözelti giderek derişir, bu yüzden kaynama sıcaklığı yükselmeye devam eder; sıcaklık ancak çözelti doygun hâle gelince sabitlenir. Baştan sona sabit kaynama sıcaklığı saf maddelere özgüdür.",
@@ -519,7 +519,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При кипении солёной воды вода испаряется и раствор концентрируется, поэтому температура кипения продолжает расти; постоянной она становится только после насыщения раствора. Постоянная от начала до конца температура кипения характерна для чистых веществ.",
         "ar": "عند غليان الماء المالح يتبخر الماء ويزداد تركيز المحلول، فتستمر درجة الغليان في الارتفاع، ولا تثبت إلا عندما يصبح المحلول مشبعًا. أما ثبات درجة الغليان من البداية إلى النهاية فهو من خصائص المواد النقية.",
         "zh": "盐水沸腾时水不断蒸发，溶液越来越浓，所以沸腾温度持续升高；只有溶液达到饱和后温度才保持不变。从头到尾沸点恒定是纯净物的特征。",
-        "ku": "Dema ava şor dikele av hilm dibe û çareserî giran dibe, ji ber vê yekê germahiya kelandinê bilind dibe; germahî tenê dema çareserî têr dibe sabît dibe. Germahiya kelandinê ya ji destpêkê heta dawiyê sabît taybetiya madeyên safî ye."
+        "ku": "Dema ava şor dikele av dibe buhar û çareserî hêdî hêdî tîrtir dibe, ji ber vê yekê germahiya kelînê her bilind dibe; germahî tenê dema çareserî têr dibe sabît dibe. Germahiya kelînê ya ku ji destpêkê heta dawiyê sabît e taybetmendiya madeyên paqij e."
       }
     },
     {
@@ -532,7 +532,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Если к насыщенному раствору при той же температуре добавить ещё растворяемого вещества, оно не растворится и останется на дне, а концентрация не изменится.",
         "ar": "إذا أُضيف مزيد من المذاب إلى محلول مشبع عند درجة الحرارة نفسها، فإنه يترسب في القاع دون أن يذوب ولا يتغير التركيز.",
         "zh": "在相同温度下向饱和溶液中再加入溶质，溶质不再溶解而沉在底部，浓度不变。",
-        "ku": "Ger di heman germahiyê de hinek din madeya helyayî li çareseriya têrbûyî were zêdekirin, bêyî ku bihele li binî dinişe û giranbûn naguhere."
+        "ku": "Eger di heman germahiyê de hinekî din madeya helbûyî li çareseriya têr were zêdekirin, bêyî ku bihele di binî de dinişe û tîrbûn naguhere."
       },
       "trap": {
         "tr": "Doygun tuz çözeltisine aynı sıcaklıkta tuz eklenirse çözelti daha derişik hâle gelir.",
@@ -542,7 +542,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Если к насыщенному раствору соли при той же температуре добавить ещё соли, раствор станет более концентрированным.",
         "ar": "إذا أُضيف الملح إلى محلول ملحي مشبع عند درجة الحرارة نفسها، يصبح المحلول أكثر تركيزًا.",
         "zh": "在相同温度下向饱和食盐溶液中再加入食盐，溶液会变得更浓。",
-        "ku": "Heke di heman germahiyê de xwê li çareseriya xwê ya têrbûyî were zêdekirin, giranbûna çareseriyê zêde dibe."
+        "ku": "Eger di heman germahiyê de xwê li çareseriya xwê ya têr were zêdekirin, çareserî tîrtir dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Doygun çözelti o sıcaklıkta çözebileceği en fazla maddeyi zaten çözmüştür; eklenen tuz çözünmeden dipte kalır, bu nedenle derişim değişmez.",
@@ -552,7 +552,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Насыщенный раствор уже растворил максимально возможное при этой температуре количество вещества; добавленная соль остаётся нерастворённой на дне, поэтому концентрация не меняется.",
         "ar": "المحلول المشبع أذاب بالفعل أقصى كمية ممكنة عند تلك الدرجة؛ فيبقى الملح المضاف في القاع دون ذوبان، ولذلك لا يتغير التركيز.",
         "zh": "饱和溶液在该温度下已经溶解了最大量的溶质；加入的盐不再溶解而留在底部，所以浓度不变。",
-        "ku": "Çareseriya têr di wê germahiyê de berê herî zêde madeya ku dikare bihelîne helandiye; xwêya ku tê zêdekirin bêyî helandinê li binî dimîne, ji ber vê yekê giranbûn naguhere."
+        "ku": "Çareseriya têr di wê germahiyê de jixwe herî zêde mîqdara madeya ku dikare bihelîne helandiye; xwêya ku tê zêdekirin nahele û di binî de dimîne, ji ber vê yekê tîrbûn naguhere."
       }
     }
   ],
@@ -567,7 +567,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Простая перегонка",
         "ar": "التقطير البسيط",
         "zh": "简单蒸馏",
-        "ku": "Distilasyona sade"
+        "ku": "Distîlasyona sade"
       },
       "conceptB": {
         "tr": "Ayrımsal Damıtma",
@@ -577,7 +577,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Фракционная перегонка",
         "ar": "التقطير التجزيئي",
         "zh": "分馏",
-        "ku": "Distilasyona perçeyî"
+        "ku": "Distîlasyona perçeyî"
       },
       "distinction": {
         "tr": "Basit damıtma, katı-sıvı çözeltilerde sıvıyı buharlaştırıp yoğuşturarak ayırır; ayrımsal damıtma kaynama noktaları birbirine yakın sıvı-sıvı homojen karışımları ayırır.",
@@ -587,7 +587,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Простая перегонка отделяет жидкость от раствора твёрдого вещества в жидкости, испаряя и конденсируя её; фракционная перегонка разделяет однородные смеси жидкостей с близкими температурами кипения.",
         "ar": "يفصل التقطير البسيط السائل عن محلول صلب في سائل بتبخيره ثم تكثيفه؛ ويفصل التقطير التجزيئي المخاليط المتجانسة من سائلين متقاربين في درجة الغليان.",
         "zh": "简单蒸馏通过蒸发和冷凝把固-液溶液中的液体分离出来；分馏用于分离沸点接近的液-液均匀混合物。",
-        "ku": "Distilasyona sade şilê ji çareseriya hişk-şil bi hilmkirin û dûv re bi şilkirina hilmê vediqetîne; distilasyona perçeyî tevliheviyên homojen ên şil-şil ên ku xalên wan ên kelandinê nêzîkî hev in vediqetîne."
+        "ku": "Distîlasyona sade şileyê ji çareseriya hişk-şile bi buharkirin û paşê bi şilekirina buharê vediqetîne; distîlasyona perçeyî tevliheviyên homojen ên şile-şile yên ku xalên wan ên kelînê nêzîkî hev in ji hev vediqetîne."
       }
     },
     {
@@ -620,7 +620,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Раствор — однородная смесь с частицами меньше 1 нм; коллоид — неоднородная смесь с частицами от 1 до 1000 нм, проявляющая эффект Тиндаля.",
         "ar": "في المحلول يكون حجم الجسيمات أقل من 1 nm ويكون المخلوط متجانسًا؛ أما في الغروي فيتراوح حجم الجسيمات بين 1 و1000 nm، ويكون المخلوط غير متجانس ويُظهر ظاهرة تندال.",
         "zh": "溶液中粒子直径小于 1 nm，混合物是均匀的；胶体中粒子直径在 1~1000 nm 之间，混合物是非均匀的，并有丁达尔效应。",
-        "ku": "Di çareseriyê de mezinahiya perçeyan ji 1 nm biçûktir e û tevlihevî homojen e; di kolloîdê de mezinahiya perçeyan di navbera 1 û 1000 nm de ye, tevlihevî heterojen e û bandora Tyndall nîşan dide."
+        "ku": "Çareserî tevliheviyeke homojen e û mezinahiya perçeyên wê ji 1 nm piçûktir e; kolloîd tevliheviyeke heterojen e, mezinahiya perçeyên wê di navbera 1 û 1000 nm de ye û bandora Tyndall nîşan dide."
       }
     },
     {
@@ -653,7 +653,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Суспензия — неоднородная смесь твёрдого вещества и жидкости (например, мел в воде, кофе по-турецки); эмульсия — неоднородная смесь двух жидкостей (например, оливковое масло с водой).",
         "ar": "المعلق خليط غير متجانس من صلب وسائل (مثل مسحوق الطباشير-الماء، والقهوة التركية)؛ والمستحلب خليط غير متجانس من سائلين (مثل زيت الزيتون-الماء).",
         "zh": "悬浊液是固-液非均匀混合物（如粉笔灰-水、土耳其咖啡）；乳浊液是液-液非均匀混合物（如橄榄油-水）。",
-        "ku": "Suspansiyon tevliheviyek heterojen a hişk-şil e (mînak: toza tebeşîrê-av, qehweya tirkî); emulsiyon tevliheviyek heterojen a şil-şil e (mînak: rûnê zeytûnê-av)."
+        "ku": "Suspansiyon tevliheviyeke heterojen a hişk-şile ye (mînak: toza tebeşîrê-av, qehweya tirkî); emulsiyon tevliheviyeke heterojen a şile-şile ye (mînak: rûnê zeytûnê-av)."
       }
     },
     {
@@ -686,7 +686,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Фильтрование разделяет неоднородные смеси твёрдого вещества с жидкостью, задерживая твёрдые частицы на фильтровальной бумаге; диализ отделяет малые ионы и молекулы от коллоидных частиц, пропуская их через полупроницаемую мембрану.",
         "ar": "الترشيح يفصل المخاليط غير المتجانسة الصلبة-السائلة باحتجاز الجسيمات الصلبة على ورق مسامي؛ وفي الديلزة تُفصل الأيونات والجزيئات الصغيرة عن الجسيمات الغروية بتمريرها عبر غشاء شبه منفذ.",
         "zh": "过滤是用滤纸截留固体颗粒，分离非均匀的固-液混合物；透析是让小的离子和分子透过半透膜，使其与胶体粒子分离。",
-        "ku": "Parzûnkirin perçeyên hişk li ser kaxeza parzûnê digire û tevliheviyên heterojen ên hişk-şil ji hev vediqetîne; dialîz îyon û molekulên biçûk di parzûneke nîv-derbasbar re derbas dike û wan ji perçeyên koloîdal vediqetîne."
+        "ku": "Parzûnkirin perçeyên hişk li ser kaxeza parzûnê digire û bi vî awayî tevliheviyên heterojen ên hişk-şile ji hev vediqetîne; dialîz îyon û molekulên piçûk di perdeyeke nîvderbasbar re derbas dike û wan ji perçeyên kolloîdî vediqetîne."
       }
     },
     {
@@ -699,7 +699,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Делительная воронка",
         "ar": "قمع الفصل",
         "zh": "分液漏斗",
-        "ku": "Hunîya veqetandinê"
+        "ku": "Qîfa veqetandinê"
       },
       "conceptB": {
         "tr": "Yüzdürme (Flotasyon)",
@@ -719,7 +719,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Делительная воронка разделяет несмешивающиеся жидкости разной плотности; флотация разделяет смеси твёрдых веществ в жидкости на всплывающие и тонущие зёрна (плотность — для опилок и песка, смачиваемость — при обогащении руд).",
         "ar": "يفصل قمع الفصل السوائل غير الممتزجة المختلفة الكثافة؛ ويفصل التعويم مخاليط الصلب-الصلب في سائل إلى حبيبات طافية وغاطسة (الكثافة في نشارة الخشب والرمل، وقابلية البلل في إغناء الخامات).",
         "zh": "分液漏斗分离密度不同、互不相溶的液体；浮选在液体中把固-固混合物分成浮起和下沉的颗粒（木屑-沙子靠密度，矿石富集靠润湿性）。",
-        "ku": "Hunîya veqetandinê şilên ku tevlî hev nabin û çiriyên wan cuda ne vediqetîne; flotasyon tevliheviyên hişk-hişk di şilekê de wek perçeyên ku avjenî dikin û dadikevin vediqetîne (di qirş-qûmê de çirî, di dewlemendkirina madenan de şilbûn)."
+        "ku": "Qîfa veqetandinê şileyên ku tevlî hev nabin û çiriyên wan cuda ne ji hev vediqetîne; flotasyon tevliheviyên hişk-hişk di nav şileyekê de wek perçeyên ku li ser rû dimînin û yên ku dadikevin ji hev vediqetîne (di qirş-qûmê de cudahiya çiriyê, di dewlemendkirina kanzayan de cudahiya şilbûnê)."
       }
     },
     {
@@ -732,7 +732,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Массовая доля в процентах",
         "ar": "النسبة المئوية الكتلية",
         "zh": "质量分数",
-        "ku": "Rêjeya girseyî ya ji sedî"
+        "ku": "Tîrbûna girseyî ya ji sedî"
       },
       "conceptB": {
         "tr": "Hacimce Yüzde Derişim",
@@ -742,7 +742,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Объёмная доля в процентах",
         "ar": "النسبة المئوية الحجمية",
         "zh": "体积分数",
-        "ku": "Rêjeya qebareyî ya ji sedî"
+        "ku": "Tîrbûna qebareyî ya ji sedî"
       },
       "distinction": {
         "tr": "Kütlece yüzde derişim, çözünen kütlesinin çözelti kütlesine oranıdır (x100); hacimce yüzde derişim, sıvı çözünen hacminin çözelti hacmine oranıdır (x100).",
@@ -752,7 +752,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Массовая доля в процентах — отношение массы растворённого вещества к массе раствора (x100); объёмная доля в процентах — отношение объёма жидкого растворённого вещества к объёму раствора (x100).",
         "ar": "النسبة المئوية الكتلية: نسبة كتلة المذاب إلى كتلة المحلول (x100)؛ والنسبة المئوية الحجمية: نسبة حجم المذاب السائل إلى حجم المحلول (x100).",
         "zh": "质量分数是溶质质量与溶液质量之比(x100)；体积分数是液态溶质体积与溶液体积之比(x100)。",
-        "ku": "Rêjeya girseyî ya ji sedî rêjeya girseya madeya helyayî li girseya çareseriyê ye (x100); rêjeya qebareyî ya ji sedî rêjeya qebareya madeya helyayî ya şil li qebareya çareseriyê ye (x100)."
+        "ku": "Tîrbûna girseyî ya ji sedî rêjeya girseya madeya helbûyî bi girseya çareseriyê ye (x100); tîrbûna qebareyî ya ji sedî rêjeya qebareya madeya helbûyî ya şile bi qebareya çareseriyê ye (x100)."
       }
     },
     {
@@ -765,7 +765,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Насыщенный раствор",
         "ar": "المحلول المشبع",
         "zh": "饱和溶液",
-        "ku": "Çareseriya têrbûyî"
+        "ku": "Çareseriya têr"
       },
       "conceptB": {
         "tr": "Aşırı Doymuş Çözelti",
@@ -775,7 +775,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Пересыщенный раствор",
         "ar": "المحلول فوق المشبع",
         "zh": "过饱和溶液",
-        "ku": "Çareseriya zêde-têrbûyî"
+        "ku": "Çareseriya zêdetêr"
       },
       "distinction": {
         "tr": "Doymuş çözelti, belirli bir sıcaklıkta çözebileceği en fazla maddeyi çözmüş çözeltidir; aynı sıcaklıkta bu miktardan fazlasını çözünmüş hâlde içeren kararsız çözeltiye ise aşırı doymuş denir.",
@@ -785,7 +785,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Насыщенный раствор при данной температуре содержит максимально возможное количество растворённого вещества; пересыщенный раствор — неустойчивый раствор, содержащий при той же температуре больше растворённого вещества.",
         "ar": "المحلول المشبع هو محلول أذاب أكبر كمية ممكنة من المذاب عند درجة حرارة معينة؛ أما المحلول فوق المشبع فهو محلول غير مستقر يحتوي على كمية مذابة أكبر من ذلك عند الدرجة نفسها.",
         "zh": "饱和溶液是在一定温度下溶解了最大量溶质的溶液；而在同一温度下所含溶质超过这一限度的溶液很不稳定。",
-        "ku": "Çareseriya têrbûyî di germahiyeke diyar de herî zêde mîqdara madeya ku dikare bihelîne helandiye; çareseriya bêîstîqrar a ku di heman germahiyê de ji vê mîqdarê zêdetir madeya helyayî dihewîne zêde-têrbûyî tê gotin."
+        "ku": "Çareseriya têr ew çareserî ye ku di germahiyeke diyar de herî zêde mîqdara madeya ku dikare bihelîne helandiye; ji çareseriya nearam a ku di heman germahiyê de ji vê mîqdarê bêtir madeya helbûyî dihewîne re çareseriya zêdetêr tê gotin."
       }
     },
     {
@@ -798,7 +798,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Разбавление",
         "ar": "التخفيف",
         "zh": "稀释",
-        "ku": "Seyrelandin"
+        "ku": "Sistkirin"
       },
       "conceptB": {
         "tr": "Deriştirme",
@@ -818,7 +818,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Разбавление — добавление растворителя: масса растворённого вещества не меняется, а концентрация уменьшается; концентрирование — выпаривание растворителя или добавление растворённого вещества, при котором концентрация растёт.",
         "ar": "في التخفيف يُضاف المذيب فتبقى كتلة المذاب ثابتة ويقل التركيز؛ وفي زيادة التركيز يُبخَّر المذيب أو يُضاف مزيد من المذاب فيرتفع التركيز.",
         "zh": "稀释是加入溶剂，溶质质量不变，浓度降低；浓缩是蒸发溶剂或加入更多溶质，浓度升高。",
-        "ku": "Di seyrelandinê de helker tê zêdekirin, girseya madeya helyayî naguhere û giranbûn kêm dibe; di tîrkirinê de helker tê hilmikandin an madeya helyayî tê zêdekirin û giranbûn zêde dibe."
+        "ku": "Di sistkirinê de helker li çareseriyê tê zêdekirin, girseya madeya helbûyî naguhere û tîrbûn kêm dibe; di tîrkirinê de helker tê buharkirin an madeya helbûyî tê zêdekirin û tîrbûn zêde dibe."
       }
     }
   ],
@@ -844,7 +844,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Смесь перемешивают (при необходимости добавляя воду), пока вся соль не растворится",
           "ar": "يُحرَّك الخليط (مع إضافة الماء عند الحاجة) حتى يذوب الملح كله",
           "zh": "搅拌混合物（必要时加水），使盐全部溶解",
-          "ku": "Tevlihevî tê tevdan (ger pêwîst be av tê zêdekirin) heta ku hemû xwê bihele"
+          "ku": "Tevlihevî tê tevdan (eger pêwîst be av tê zêdekirin) heta ku hemû xwê bihele"
         },
         {
           "tr": "Süzme yapılarak kum ayrılır",
@@ -864,7 +864,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Фильтрат нагревают и выпаривают воду (если воду тоже нужно собрать, проводят простую перегонку)",
           "ar": "يُسخَّن الراشح لتبخير الماء (تقطير بسيط إذا أُريد استرجاع الماء أيضًا)",
           "zh": "加热滤液使水蒸发（若还要回收水，则进行简单蒸馏）",
-          "ku": "Parzûnkirî tê germkirin û av tê hilmikandin (ger av jî bê vegerandin, distilasyona sade tê kirin)"
+          "ku": "Şileya parzûnkirî tê germkirin û av tê buharkirin (eger av jî bê xwestin, distîlasyona sade tê kirin)"
         },
         {
           "tr": "Su tamamen buharlaşınca kapta kalan katı tuz toplanır",
@@ -874,7 +874,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Когда вся вода испарится, собирают твёрдую соль, оставшуюся в сосуде",
           "ar": "بعد تبخر الماء كله يُجمع الملح الصلب المتبقي في الوعاء",
           "zh": "水全部蒸发后，收集容器中剩下的固体盐",
-          "ku": "Piştî ku hemû av hilm bû, xwêya hişk a ku di firaxê de maye tê berhevkirin"
+          "ku": "Dema hemû av buhar dibe, xwêya hişk a ku di firaxê de dimîne tê berhevkirin"
         }
       ]
     },
@@ -888,7 +888,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Этапы фракционной перегонки",
         "ar": "خطوات التقطير التجزيئي",
         "zh": "分馏步骤",
-        "ku": "Gavên distilasyona perçeyî"
+        "ku": "Gavên distîlasyona perçeyî"
       },
       "steps": [
         {
@@ -899,7 +899,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Нагревают однородную жидкую смесь, компоненты которой имеют разные температуры кипения",
           "ar": "يُسخَّن خليط سائل متجانس تختلف مكوناته في درجات الغليان",
           "zh": "加热各组分沸点不同的均匀液体混合物",
-          "ku": "Tevliheviyeke şil a homojen a ku xalên kelandinê yên pêkhateyên wê cuda ne tê germkirin"
+          "ku": "Tevliheviyeke şile ya homojen a ku xalên kelînê yên beşên wê cuda ne tê germkirin"
         },
         {
           "tr": "Karışım kaynar; oluşan buhar daha uçucu bileşence zengindir",
@@ -909,7 +909,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Смесь кипит; образующийся пар обогащён более летучим компонентом",
           "ar": "يغلي الخليط؛ ويكون البخار المتكون أغنى بالمكوّن الأكثر تطايرًا",
           "zh": "混合物沸腾，生成的蒸气中挥发性较强的组分含量更高",
-          "ku": "Tevlihevî dikele; hilma ku çêdibe bi pêkhateya bêtir firok dewlemendtir e"
+          "ku": "Tevlihevî dikele; buhara ku çêdibe ji aliyê beşa firoktir ve dewlemendtir e"
         },
         {
           "tr": "Fraksiyon kolonunda tekrarlanan yoğuşma-buharlaşmayla en uçucu bileşen kolonun tepesine ulaşır",
@@ -919,7 +919,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Благодаря многократной конденсации и испарению в ректификационной колонне самый летучий компонент достигает верха колонны",
           "ar": "بتكرار التكاثف والتبخر في عمود التجزئة يصل المكوّن الأكثر تطايرًا إلى قمة العمود",
           "zh": "在分馏柱中经过反复冷凝和汽化，挥发性最强的组分到达柱顶",
-          "ku": "Bi dubarekirina hilmbûn û şilbûnê di stûna perçekirinê de pêkhateya herî firok digihîje serê stûnê"
+          "ku": "Di stûna perçekirinê de bi şilebûn û buharbûna dubare beşa herî firok digihîje serê stûnê"
         },
         {
           "tr": "Buhar soğutucuda yoğuşur ve ayrı toplama kabına akar",
@@ -929,7 +929,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Пар конденсируется в холодильнике и стекает в отдельный приёмник",
           "ar": "يتكاثف البخار في المكثف ويتدفق إلى وعاء جمع منفصل",
           "zh": "蒸气在冷凝管中冷凝，流入单独的接收器",
-          "ku": "Hilm di sarkerê de şil dibe û diherike firaxa berhevkirinê ya cuda"
+          "ku": "Buhar di sarkerê de şile dibe û diherike firaxeke berhevkirinê ya cuda"
         }
       ]
     },
@@ -943,7 +943,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Приготовление раствора с заданной массовой долей",
         "ar": "تحضير محلول بنسبة مئوية كتلية محددة",
         "zh": "配制一定质量分数的溶液",
-        "ku": "Amadekirina çareseriyeke bi rêjeya girseyî ya ji sedî"
+        "ku": "Amadekirina çareseriyeke bi tîrbûna girseyî ya ji sedî ya diyar"
       },
       "steps": [
         {
@@ -954,7 +954,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "По нужной массе раствора и массовой доле рассчитывают необходимую массу растворённого вещества",
           "ar": "تُحسب كتلة المذاب اللازمة من كتلة المحلول والنسبة المئوية المطلوبتين",
           "zh": "根据所需溶液的质量和质量分数计算所需溶质的质量",
-          "ku": "Ji girseya çareseriyê û rêjeya ji sedî ya xwestî girseya pêwîst a madeya helyayî tê hesibandin"
+          "ku": "Ji girseya çareseriyê û tîrbûna ji sedî ya xwestî girseya pêwîst a madeya helbûyî tê hesibandin"
         },
         {
           "tr": "Hesaplanan kütlede çözünen tartılıp kaba alınır",
@@ -964,7 +964,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Рассчитанную массу вещества отвешивают в сосуд",
           "ar": "يُوزن المذاب بالكتلة المحسوبة ويوضع في وعاء",
           "zh": "称取计算出质量的溶质，放入容器中",
-          "ku": "Girseya hesibandî ya madeya helyayî tê kêşan û dikeve firaxekê"
+          "ku": "Madeya helbûyî bi girseya hesabkirî tê kêşan û dikeve firaxekê"
         },
         {
           "tr": "Toplam kütle istenen çözelti kütlesine ulaşıncaya kadar su eklenir",
@@ -984,7 +984,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Смесь перемешивают до полного растворения вещества",
           "ar": "يُحرَّك الخليط حتى يذوب المذاب تمامًا",
           "zh": "搅拌混合物，直到溶质完全溶解",
-          "ku": "Tevlihevî tê tevdan heta ku madeya helyayî bi tevahî bihele"
+          "ku": "Tevlihevî tê tevdan heta ku madeya helbûyî bi tevahî bihele"
         }
       ]
     },
@@ -998,7 +998,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Разделение кристаллизацией",
         "ar": "الفصل بالتبلور",
         "zh": "用结晶法分离",
-        "ku": "Veqetandin bi krîstalkirinê"
+        "ku": "Veqetandin bi krîstalbûnê"
       },
       "steps": [
         {
@@ -1009,7 +1009,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "В горячей воде готовят насыщенный раствор твёрдого вещества, растворимость которого растёт с температурой",
           "ar": "يُحضَّر في الماء الساخن محلول مشبع لمادة صلبة تزداد ذائبيتها بارتفاع درجة الحرارة",
           "zh": "在热水中配制溶解度随温度升高而增大的固体的饱和溶液",
-          "ku": "Di ava germ de çareseriya têr a madeyek hişk a ku helbûna wê bi germahiyê zêde dibe tê amadekirin"
+          "ku": "Di ava germ de çareseriya têr a madeyeke hişk a ku helbûniya wê bi germahiyê re zêde dibe tê amadekirin"
         },
         {
           "tr": "Çözelti yavaş yavaş soğumaya bırakılır",
@@ -1019,7 +1019,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Раствору дают медленно остыть",
           "ar": "يُترك المحلول ليبرد ببطء",
           "zh": "让溶液缓慢冷却",
-          "ku": "Dihêlin çareserî hêdî hêdî sar bibe"
+          "ku": "Çareserî tê hiştin ku hêdî hêdî sar bibe"
         },
         {
           "tr": "Sıcaklık düştükçe çözünürlük azalır ve katı çöker",
@@ -1039,7 +1039,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Образовавшиеся кристаллы отделяют от раствора фильтрованием через фильтровальную бумагу",
           "ar": "تُفصل البلورات المتكوّنة عن المحلول بالترشيح باستخدام ورق الترشيح",
           "zh": "用滤纸过滤，把析出的晶体与溶液分离",
-          "ku": "Krîstalên ku çêbûne bi parzûnkirina bi kaxeza parzûnê ji çareseriyê tên veqetandin"
+          "ku": "Krîstalên ku çêdibin bi kaxeza parzûnê tên parzûnkirin û ji çareseriyê tên veqetandin"
         }
       ]
     }
@@ -1055,7 +1055,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "К 200 г раствора соли с массовой долей 20 % добавили 50 г чистой воды. Какова массовая доля соли в новом растворе?",
         "ar": "عند إضافة 50 g من الماء النقي إلى 200 g من محلول ملحي تركيزه 20% بالكتلة، ما النسبة المئوية الكتلية للمحلول الجديد؟",
         "zh": "向200 g质量分数为20%的盐水中加入50 g纯水，所得新溶液的质量分数是多少？",
-        "ku": "Dema ku 50 gram ava saf bi girseyê li 200 gram ava şor a %20 were zêdekirin, wê çareseriya nû ji sedî çend be?"
+        "ku": "Dema 50 gram ava paqij li 200 gram çareseriya ava şor a girseyî %20 tê zêdekirin, tîrbûna girseyî ya ji sedî ya çareseriya nû dibe çend?"
       },
       "options": [
         {
@@ -1118,7 +1118,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Масса соли = 200 · 0,20 = 40 г. Новая масса раствора = 200 + 50 = 250 г. Массовая доля = (40 / 250) · 100 = 16 %. При разбавлении масса соли не меняется, растёт только масса раствора; поэтому концентрация становится ниже 20 %, и большее значение, например 25 %, невозможно.",
         "ar": "كتلة الملح المذاب = 200 · 0.20 = 40 g. الكتلة الكلية الجديدة = 200 + 50 = 250 g. النسبة الجديدة = (40 / 250) · 100 = 16%. في التخفيف لا تتغير كتلة الملح وتزداد كتلة المحلول فقط؛ لذلك ينخفض التركيز إلى أقل من 20%، ولا يمكن أن يكون أكبر منه مثل 25%.",
         "zh": "溶解的盐 = 200 · 0.20 = 40 g。新溶液总质量 = 200 + 50 = 250 g。新质量分数 = (40 / 250) · 100 = 16%。稀释时盐的质量不变，只有溶液质量增加，所以浓度降到 20% 以下，不可能是 25% 这样更大的值。",
-        "ku": "Xwêya helkirî = 200 * 0,20 = 40 gram. Girseya giştî ya nû = 200 + 50 = 250 gram. Rêjeya nû = (40 / 250) * 100 = 16%. Di sivikkirinê de girseya xwê naguhere, tenê girseya çareseriyê zêde dibe; ji ber vê yekê giranbûn dikeve bin 20%, nirxeke mezintir wek 25% ne mimkun e."
+        "ku": "Xwêya helbûyî = 200 · 0,20 = 40 gram. Girseya giştî ya nû = 200 + 50 = 250 gram. Rêjeya nû ya ji sedî = (40 / 250) · 100 = %16. Di sistkirinê de girseya xwê naguhere, tenê girseya çareseriyê zêde dibe; ji ber vê yekê tîrbûn dadikeve bin %20, nirxeke mezintir wek %25 ne gengaz e."
       }
     },
     {
@@ -1131,7 +1131,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Каким методом следует разделить на компоненты однородную смесь ацетона (56 °C) и воды (100 °C), имеющих разные температуры кипения?",
         "ar": "ما الطريقة التي ينبغي استخدامها لفصل الخليط المتجانس من الأسيتون (56 °C) والماء (100 °C)، المختلفين في درجة الغليان، إلى مكوناته؟",
         "zh": "丙酮(56 °C)和水(100 °C)沸点不同，要把它们的均匀混合物分离成各组分，应采用哪种方法？",
-        "ku": "Ji bo veqetandina tevliheviya homojen a aseton (56 °C) û avê (100 °C), ku xalên wan ên kelandinê cuda ne, li pêkhateyên wê divê kîjan rêbaz were bikaranîn?"
+        "ku": "Ji bo veqetandina tevliheviya homojen a aseton (56 °C) û avê (100 °C), ku xalên wan ên kelînê cuda ne, bo beşên wê divê kîjan rêbaz were bikaranîn?"
       },
       "options": [
         {
@@ -1142,7 +1142,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Фракционная перегонка",
           "ar": "التقطير التجزيئي",
           "zh": "分馏",
-          "ku": "Distilasyona perçeyî"
+          "ku": "Distîlasyona perçeyî"
         },
         {
           "tr": "Ayırma hunisi",
@@ -1152,7 +1152,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Делительная воронка",
           "ar": "قمع الفصل",
           "zh": "分液漏斗",
-          "ku": "Hunîya veqetandinê"
+          "ku": "Qîfa veqetandinê"
         },
         {
           "tr": "Süzme",
@@ -1172,7 +1172,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Диализ",
           "ar": "الديلزة",
           "zh": "透析",
-          "ku": "Diyaliz"
+          "ku": "Dialîz"
         },
         {
           "tr": "Flotasyon",
@@ -1194,7 +1194,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Ацетон и вода взаимно растворимы (смесь однородна), слоёв нет, поэтому делительная воронка не подходит; для фильтрования и диализа частицы слишком малы. Используя разницу температур кипения, проводят фракционную перегонку с колонной; первым испаряется и собирается ацетон.",
         "ar": "الأسيتون والماء يذوب أحدهما في الآخر (خليط متجانس)، فلا تتكون طبقات ولا يصلح قمع الفصل؛ والدقائق أصغر من أن تُفصل بالترشيح أو الديلزة. يُستفاد من اختلاف درجتي الغليان بالتقطير التجزيئي بعمود تجزئة، فيتبخر الأسيتون أولًا ويُجمع.",
         "zh": "丙酮和水互溶（均匀混合物），不分层，不能用分液漏斗；粒子太小，过滤和透析也不适用。利用沸点差异，用带分馏柱的分馏法分离，丙酮先汽化并被收集。",
-        "ku": "Aseton û av di hev de dihelin (homojen), ji ber vê yekê qat çênabin û hunîya veqetandinê nayê bikaranîn; perçe ji bo parzûnkirin û diyalîzê pir piçûk in. Bi sûdwergirtina ji cudahiya xalên kelandinê distilasyona perçeyî bi stûnê tê kirin; pêşî aseton hilm dibe û tê berhevkirin."
+        "ku": "Aseton û av di nav hev de dihelin (homojen), ji ber vê yekê qat çênabin û qîfa veqetandinê nayê bikaranîn; perçe ji bo parzûnkirin û dialîzê jî pir piçûk in. Bi sûdwergirtina ji cudahiya xalên kelînê distîlasyona perçeyî bi stûna perçekirinê tê kirin; pêşî aseton buhar dibe û tê berhevkirin."
       }
     },
     {
@@ -1207,7 +1207,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Смешав 60 мл этилового спирта с водой, приготовили одеколон общим объёмом 250 мл. Какова объёмная доля спирта (в %) в этом растворе?",
         "ar": "يُحضَّر محلول كولونيا حجمه الكلي 250 mL بخلط 60 mL من الكحول الإيثيلي مع الماء. ما النسبة المئوية الحجمية لهذا المحلول؟",
         "zh": "将60 mL乙醇与水混合，配成总体积为250 mL的古龙水溶液。该溶液中乙醇的体积分数是多少？",
-        "ku": "Bi tevlihevkirina 60 mL etîl alkolê bi avê re çareseriyek kolonyayê ya ku hecma wê ya giştî 250 mL e tê amadekirin. Sedîya hecmî ya vê çareseriyê çend e?"
+        "ku": "Bi tevlihevkirina 60 mL etîl alkolê bi avê re çareseriyeke kolonyayê ya bi qebareya giştî 250 mL tê amadekirin. Tîrbûna qebareyî ya ji sedî ya vê çareseriyê çend e?"
       },
       "options": [
         {
@@ -1270,7 +1270,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Объёмная доля = (объём растворённого вещества / объём раствора) · 100 = (60 / 250) · 100 = 24 %. Если ещё раз прибавить объём спирта к 250 мл и делить на 310, получится ошибочное значение 19,4 %; если делить на 250 − 60 = 190 мл «растворителя» — ошибочное 31,6 %. 76 % — это доля воды, а не спирта.",
         "ar": "النسبة المئوية الحجمية = (حجم المذاب / حجم المحلول) · 100 = (60 / 250) · 100 = 24%. إضافة حجم الكحول مرة أخرى إلى 250 mL والقسمة على 310 تعطي 19.4% خطأً، والقسمة على 250 − 60 = 190 mL باعتبارها المذيب تعطي 31.6% خطأً. أما 76% فهي حصة الماء لا الكحول.",
         "zh": "体积分数 = (溶质体积 / 溶液体积) · 100 = (60 / 250) · 100 = 24%。把乙醇体积再加到250 mL上、除以310得19.4%，把250 − 60 = 190 mL当作溶剂并除以它得31.6%，都是错误的。76%是水所占的比例，不是乙醇的。",
-        "ku": "Sedîya hecmî = (hecma helbûyî / hecma çareseriyê) · 100 = (60 / 250) · 100 = %24. Ger hecma alkolê dîsa li 250 mL were zêdekirin û li 310 were parvekirin %19,4, ger 250 − 60 = 190 mL wek helker were hesibandin û li wê were parvekirin %31,6 derdikeve; ev şaş in. %76 para avê ye, ne ya alkolê."
+        "ku": "Tîrbûna qebareyî ya ji sedî = (qebareya madeya helbûyî / qebareya çareseriyê) · 100 = (60 / 250) · 100 = %24. Zêdekirina qebareya alkolê careke din li 250 mL û parvekirina li 310-an %19,4, hesibandina 250 − 60 = 190 mL wek helker û parvekirina li wê jî %31,6 dide; herdu jî şaş in. %76 para avê ye, ne ya alkolê."
       }
     },
     {
@@ -1283,7 +1283,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Какие из следующих утверждений о растворении верны?\nI. Йод (I2) растворяется в неполярном CCl4 лучше, чем в полярной воде.\nII. При растворении NaCl в воде между ионами Na+ и Cl- и молекулами воды возникают ион-дипольные взаимодействия.\nIII. Оливковое масло и вода хорошо растворяются друг в друге, так как обе являются жидкостями.",
         "ar": "أيّ العبارات الآتية عن الذوبان صحيحة؟\nI. يذوب اليود (I2) في CCl4 غير القطبي أفضل من ذوبانه في الماء القطبي.\nII. عند ذوبان NaCl في الماء تتكون تآثرات أيون-ثنائي القطب بين أيونات Na+ وCl- وجزيئات الماء.\nIII. يذوب زيت الزيتون والماء أحدهما في الآخر جيدًا لأن كليهما سائل.",
         "zh": "下列关于溶解的说法中，哪些是正确的？\nI. 碘(I2)在非极性的CCl4中比在极性的水中溶解得更好。\nII. NaCl溶于水时，Na+ 和 Cl- 离子与水分子之间形成离子-偶极作用。\nIII. 橄榄油和水都是液体，所以能很好地互相溶解。",
-        "ku": "Ji van hukmên jêrîn ên derbarê helandinê de kîjan rast in?\nI. Îyod (I2) di CCl4 ya ne-polar de ji ava polar baştir dihele.\nII. Dema NaCl di avê de dihele, di navbera îyonên Na+ û Cl- û molekulên avê de têkiliyên îyon-dîpol çêdibin.\nIII. Rûnê zeytûnê û av, ji ber ku herdu jî şil in, di hev de baş dihelin."
+        "ku": "Kîjan ji van gotinên jêrîn ên li ser helbûnê rast in?\nI. Îyod (I2) di CCl4-a nepolar de ji ava polar baştir dihele.\nII. Dema NaCl di avê de dihele, di navbera îyonên Na+ û Cl- û molekulên avê de têkiliyên îyon-dîpol çêdibin.\nIII. Ji ber ku rûnê zeytûnê û av herdu jî şile ne, di nav hev de baş dihelin."
       },
       "options": [
         {
@@ -1346,7 +1346,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "I верно: I2 неполярен, и по правилу «подобное растворяется в подобном» хорошо растворяется в неполярном CCl4 и плохо — в полярной воде. II верно: ионы гидратируются, образуя ион-дипольные взаимодействия с противоположно заряженными концами молекул воды. III неверно: растворимость определяет полярность, а не агрегатное состояние; неполярное масло не растворяется в полярной воде и образует два слоя.",
         "ar": "I صحيحة: I2 غير قطبي، فيذوب جيدًا في CCl4 غير القطبي وقليلًا في الماء القطبي وفق قاعدة «الشبيه يذيب الشبيه». II صحيحة: تتميه الأيونات بتكوين تآثرات أيون-ثنائي القطب مع أطراف جزيئات الماء المخالفة لها في الشحنة. III خاطئة: القطبية لا الحالة الفيزيائية هي التي تحدد الذوبان؛ فالزيت غير القطبي لا يذوب في الماء القطبي ويكوّن طبقتين.",
         "zh": "I正确：I2是非极性分子，按“相似相溶”，它易溶于非极性的CCl4，难溶于极性的水。II正确：离子与水分子带相反电荷的一端形成离子-偶极作用而被水合。III错误：决定溶解性的是极性而不是物态；非极性的油不溶于极性的水，会分成两层。",
-        "ku": "I rast e: I2 ne-polar e, li gorî \"wekhev wekhevê dihelîne\" di CCl4 ya ne-polar de baş, di ava polar de kêm dihele. II rast e: îyon bi dawiyên molekulên avê yên bi barê berevajî re têkiliya îyon-dîpol çêdikin û hîdrat dibin. III şaş e: helbûnê ne rewşa fîzîkî, polarbûn diyar dike; rûnê ne-polar di ava polar de nahele û du qatan çêdike."
+        "ku": "I rast e: I2 nepolar e, li gorî \"wekhev wekhevê dihelîne\" di CCl4-a nepolar de baş, di ava polar de kêm dihele. II rast e: îyon bi serên molekulên avê yên bi bara berevajî re têkiliya îyon-dîpol çêdikin û hîdrate dibin. III şaş e: helbûnê ne rewşa fîzîkî, polarî diyar dike; rûnê nepolar di ava polar de nahele û du qatan çêdike."
       }
     },
     {
@@ -1359,7 +1359,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Смешали 100 г раствора сахара с массовой долей 20 % и 300 г раствора сахара с массовой долей 40 %. Какова массовая доля сахара в полученном растворе?",
         "ar": "يُخلط 100 g من محلول سكري تركيزه 20% بالكتلة مع 300 g من محلول سكري تركيزه 40% بالكتلة. ما النسبة المئوية الكتلية للمحلول الناتج؟",
         "zh": "将100 g质量分数为20%的糖水与300 g质量分数为40%的糖水混合。所得溶液的质量分数是多少？",
-        "ku": "100 g ava şekirî ya %20 a girseyî bi 300 g ava şekirî ya %40 a girseyî re tê tevlihevkirin. Sedîya girseyî ya çareseriya ku çêdibe çend e?"
+        "ku": "100 g ava şekirî ya girseyî %20 bi 300 g ava şekirî ya girseyî %40 re tê tevlihevkirin. Tîrbûna girseyî ya ji sedî ya çareseriya ku çêdibe çend e?"
       },
       "options": [
         {
@@ -1422,7 +1422,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Сахар в первом растворе = 100 · 0,20 = 20 г; во втором = 300 · 0,40 = 120 г. Всего сахара 140 г, всего раствора 400 г. Массовая доля = (140 / 400) · 100 = 35 %. Среднее двух процентов без учёта масс даёт ошибочные 30 %, их сумма — 60 %; концентрация смеси всегда лежит между двумя исходными и ближе к концентрации раствора с большей массой.",
         "ar": "السكر في المحلول الأول = 100 · 0.20 = 20 g، وفي الثاني = 300 · 0.40 = 120 g. مجموع السكر = 140 g ومجموع المحلول = 400 g. النسبة = (140 / 400) · 100 = 35%. أخذ متوسط النسبتين دون الكتل يعطي 30% وجمعهما يعطي 60% وكلاهما خطأ؛ فتركيز الخليط يقع بين التركيزين وأقرب إلى المحلول الأكبر كتلة.",
         "zh": "第一份溶液中糖 = 100 · 0.20 = 20 g；第二份中糖 = 300 · 0.40 = 120 g。糖共140 g，溶液共400 g。质量分数 = (140 / 400) · 100 = 35%。不考虑质量而直接取两个百分数的平均值得30%，把它们相加得60%，都是错误的；混合液的浓度介于两者之间，且更接近质量较大的那份溶液。",
-        "ku": "Şekirê di çareseriya yekem de = 100 · 0,20 = 20 g; di ya duyem de = 300 · 0,40 = 120 g. Şekirê giştî = 140 g, çareseriya giştî = 400 g. Sedî = (140 / 400) · 100 = %35. Navgîniya herdu sedîyan bêyî girseyan %30, berhevkirina wan %60 dide; ev şaş in. Giranbûna tevliheviyê di navbera herduyan de ye û nêzîkî ya bi girseya mezintir e."
+        "ku": "Şekirê di çareseriya yekem de = 100 · 0,20 = 20 g; yê di ya duyem de = 300 · 0,40 = 120 g. Şekirê giştî = 140 g, çareseriya giştî = 400 g. Rêjeya ji sedî = (140 / 400) · 100 = %35. Girtina navînciya her du rêjeyan bêyî girseyan %30, berhevkirina wan jî %60 dide; ev şaş in. Tîrbûna tevliheviyê her tim di navbera her du tîrbûnan de ye û nêzîkî ya ku girseya wê mezintir e."
       }
     },
     {
@@ -1435,7 +1435,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Из 200 г раствора соли с массовой долей 15 % при нагревании выпарили 50 г воды; соль в осадок не выпала. Какова массовая доля соли в конечном растворе?",
         "ar": "يُسخَّن 200 g من ماء مالح تركيزه 15% بالكتلة فيتبخر 50 g من الماء دون أن يترسب الملح. ما النسبة المئوية الكتلية للمحلول النهائي؟",
         "zh": "将200 g质量分数为15%的盐水加热，蒸发掉50 g水，且没有盐析出。最终溶液的质量分数是多少？",
-        "ku": "200 g ava şor a %15 a girseyî tê germkirin û bêyî ku xwê binişe 50 g av hilm dibe. Sedîya girseyî ya çareseriya dawî çend e?"
+        "ku": "200 g ava şor a girseyî %15 tê germkirin û bêyî ku xwê binişe 50 g av tê buharkirin. Tîrbûna girseyî ya ji sedî ya çareseriya dawî çend e?"
       },
       "options": [
         {
@@ -1498,7 +1498,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Масса соли = 200 · 0,15 = 30 г, при выпаривании она не меняется. Новая масса раствора = 200 − 50 = 150 г. Массовая доля = (30 / 150) · 100 = 20 %. Если взять массу 250 г (как будто воду добавили), получится 12 %; если считать концентрацию неизменной — 15 %; если делить на оставшуюся воду (120 г) — 25 %. Всё это ошибки.",
         "ar": "كتلة الملح = 200 · 0.15 = 30 g ولا تتغير بالتبخير. كتلة المحلول الجديدة = 200 − 50 = 150 g. النسبة = (30 / 150) · 100 = 20%. اعتبار الكتلة 250 g (كأن الماء أُضيف) يعطي 12%، وافتراض ثبات التركيز يعطي 15%، والقسمة على الماء المتبقي (120 g) تعطي 25%، وكلها خطأ.",
         "zh": "盐的质量 = 200 · 0.15 = 30 g，蒸发时不变。新溶液质量 = 200 − 50 = 150 g。质量分数 = (30 / 150) · 100 = 20%。把质量当作250 g（像加了水一样）得12%，认为浓度不变得15%，除以剩余的水(120 g)得25%，都是错误的。",
-        "ku": "Girseya xwê = 200 · 0,15 = 30 g û bi hilmkirinê naguhere. Girseya nû ya çareseriyê = 200 − 50 = 150 g. Sedî = (30 / 150) · 100 = %20. Girse wek 250 g hesibandin (wek ku av hatibe zêdekirin) %12, giranbûn neguherî hesibandin %15, parvekirina li ava mayî (120 g) %25 dide; hemû şaş in."
+        "ku": "Girseya xwê = 200 · 0,15 = 30 g û bi buharkirinê naguhere. Girseya nû ya çareseriyê = 200 − 50 = 150 g. Rêjeya ji sedî = (30 / 150) · 100 = %20. Girtina girseyê wek 250 g (wek ku av hatibe zêdekirin) %12, hesibandina ku tîrbûn naguhere %15, parvekirina xwê li ava mayî (120 g) jî %25 dide; hemû şaş in."
       }
     },
     {
@@ -1511,7 +1511,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Сколько граммов сахара нужно добавить при той же температуре к 160 г раствора сахара с массовой долей 25 %, чтобы весь сахар растворился и получился раствор с массовой долей 40 %?",
         "ar": "كم غرامًا من السكر يجب إضافتها إلى 160 g من محلول سكري تركيزه 25% بالكتلة، بحيث يذوب كله عند درجة الحرارة نفسها، للحصول على محلول تركيزه 40% بالكتلة؟",
         "zh": "向160 g质量分数为25%的糖水中加入多少克糖（在同一温度下全部溶解），可得到质量分数为40%的溶液？",
-        "ku": "Ji bo ku çareseriyek %40 a girseyî bê bidestxistin, divê çend gram şekir li 160 g ava şekirî ya %25 a girseyî were zêdekirin (di heman germahiyê de hemû dihele)?"
+        "ku": "Divê çend gram şekir li 160 g ava şekirî ya girseyî %25 were zêdekirin, bi şertê ku di heman germahiyê de hemû bihele, da ku çareseriyeke girseyî %40 bê bidestxistin?"
       },
       "options": [
         {
@@ -1574,7 +1574,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Исходный сахар = 160 · 0,25 = 40 г. Пусть добавлено x г сахара; масса и растворённого вещества, и раствора увеличивается на x: (40 + x) / (160 + x) = 0,40 → 40 + x = 64 + 0,4x → 0,6x = 24 → x = 40 г. Проверка: 80 / 200 = 40 %. Типичные ошибки — забыть, что растёт и масса раствора (0,40 · 160 − 40 = 24 г), или принять 64 г за добавляемое количество.",
         "ar": "السكر الابتدائي = 160 · 0.25 = 40 g. ليكن السكر المضاف x؛ فتزداد كتلة المذاب وكتلة المحلول كلتاهما بمقدار x: (40 + x) / (160 + x) = 0.40 → 40 + x = 64 + 0.4x → 0.6x = 24 → x = 40 g. التحقق: 80 / 200 = 40%. من الأخطاء الشائعة نسيان ازدياد كتلة المحلول (0.40 · 160 − 40 = 24 g) أو اعتبار 64 g هي الكمية المضافة.",
         "zh": "原有糖 = 160 · 0.25 = 40 g。设加入糖x g，溶质和溶液的质量都增加x：(40 + x) / (160 + x) = 0.40 → 40 + x = 64 + 0.4x → 0.6x = 24 → x = 40 g。检验：80 / 200 = 40%。忘记溶液质量也增加(0.40 · 160 − 40 = 24 g)，或把64 g当作要加入的糖，都是典型错误。",
-        "ku": "Şekirê destpêkê = 160 · 0,25 = 40 g. Bila şekirê zêdekirî x be; hem girseya helbûyî hem ya çareseriyê bi qasî x zêde dibe: (40 + x) / (160 + x) = 0,40 → 40 + x = 64 + 0,4x → 0,6x = 24 → x = 40 g. Kontrol: 80 / 200 = %40. Jibîrkirina zêdebûna girseya çareseriyê (0,40 · 160 − 40 = 24 g) an 64 g wek şekirê ku bê zêdekirin hesibandin şaşiyên berbelav in."
+        "ku": "Şekirê destpêkê = 160 · 0,25 = 40 g. Bila şekirê ku tê zêdekirin x be; hem girseya madeya helbûyî hem girseya çareseriyê bi qasî x zêde dibin: (40 + x) / (160 + x) = 0,40 → 40 + x = 64 + 0,4x → 0,6x = 24 → x = 40 g. Kontrol: 80 / 200 = %40. Jibîrkirina zêdebûna girseya çareseriyê (0,40 · 160 − 40 = 24 g) an hesibandina 64 g wek şekirê ku divê bê zêdekirin şaşiyên berbelav in."
       }
     },
     {
@@ -1587,7 +1587,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Какие из следующих утверждений о смесях верны?\nI. Солёная вода — однородная смесь, во всех точках имеющая одинаковые свойства.\nII. Смесь оливкового масла с водой — суспензия, в которой твёрдое вещество распределено в жидкости.\nIII. Туман — аэрозоль, образованный капельками жидкости, распределёнными в воздухе.",
         "ar": "أيّ العبارات الآتية عن المخاليط صحيحة؟\nI. الماء المالح خليط متجانس له الخصائص نفسها في جميع أجزائه.\nII. خليط زيت الزيتون والماء معلق تنتشر فيه مادة صلبة في سائل.\nIII. الضباب هباء جوي (أيروسول) يتكون من قطيرات سائلة منتشرة في الهواء.",
         "zh": "下列关于混合物的说法中，哪些是正确的？\nI. 盐水是各处性质相同的均匀混合物。\nII. 橄榄油-水混合物是固体分散在液体中的悬浊液。\nIII. 雾是液滴分散在空气中形成的气溶胶。",
-        "ku": "Ji van hukmên jêrîn ên derbarê tevliheviyan de kîjan rast in?\nI. Ava şor tevliheviyek homojen e ku li her derê xwe heman taybetmendiyê nîşan dide.\nII. Tevliheviya rûnê zeytûnê-avê suspansiyonek e ku tê de madeyek hişk di şilê de belav bûye.\nIII. Mij aerosolek e ku ji belavbûna dilopên şil di hewayê de çêdibe."
+        "ku": "Kîjan ji van gotinên jêrîn ên li ser tevliheviyan rast in?\nI. Ava şor tevliheviyeke homojen e ku li her derê xwe heman taybetmendiyan nîşan dide.\nII. Tevliheviya rûnê zeytûnê-av suspansiyonek e ku tê de madeyeke hişk di nav şileyê de belav bûye.\nIII. Mij aerosolek e ku ji belavbûna dilopên şile di hewayê de çêdibe."
       },
       "options": [
         {
@@ -1650,7 +1650,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "I верно: соль полностью растворяется, распадаясь на ионы, и образуется однофазная однородная смесь (раствор). II неверно: оливковое масло — жидкость, а не твёрдое вещество; смесь двух несмешивающихся жидкостей — эмульсия, а не суспензия. III верно: в тумане распределено жидкое вещество, а среда газообразная, это аэрозоль.",
         "ar": "I صحيحة: يذوب الملح في الماء كليًا متفككًا إلى أيونات فيتكون خليط متجانس أحادي الطور (محلول). II خاطئة: زيت الزيتون سائل لا صلب، وخليط سائلين غير ممتزجين مستحلب لا معلق. III صحيحة: في الضباب تكون المادة المنتشرة سائلة ووسط الانتشار غازيًا، فهو هباء جوي.",
         "zh": "I正确：盐在水中以离子形式完全溶解，形成单相的均匀混合物（溶液）。II错误：橄榄油是液体而不是固体；两种不互溶液体的混合物是乳浊液，不是悬浊液。III正确：雾中分散的是液体，分散介质是气体，所以是气溶胶。",
-        "ku": "I rast e: xwê di avê de dibe îyon û bi tevahî dihele, tevliheviyek homojen a yek-qonaxî (çareserî) çêdibe. II şaş e: rûnê zeytûnê ne hişk, şil e; tevliheviya du şilên ku di hev de nahelin ne suspansiyon, emulsiyon e. III rast e: di mijê de madeya belavbûyî şil û navgîna belavbûnê gaz e; ev aerosol e."
+        "ku": "I rast e: xwê di avê de dibe îyon û bi tevahî dihele, tevliheviyeke homojen a yekqonaxî (çareserî) çêdibe. II şaş e: rûnê zeytûnê ne hişk, şile ye; tevliheviya du şileyên ku di nav hev de nahelin ne suspansiyon, emulsiyon e. III rast e: di mijê de madeya belavbûyî şile ye û navgîna belavbûnê gaz e; tevliheviyên bi vî rengî aerosol in."
       }
     },
     {
@@ -1663,7 +1663,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Ученик проводит наблюдения над прозрачной на вид жидкой смесью:\n• Если в тёмной комнате пропустить через неё лазерный луч, виден путь света.\n• При фильтровании через фильтровальную бумагу на бумаге не остаётся осадка.\n• После нескольких дней стояния на дне ничего не оседает.\nКакой из перечисленных смесей это может быть?",
         "ar": "يجري طالب الملاحظات الآتية على خليط سائل يبدو شفافًا:\n• عند تمرير شعاع ليزر خلاله في غرفة مظلمة يظهر مسار الضوء.\n• عند ترشيحه بورق الترشيح لا يبقى أي راسب على الورق.\n• عند تركه بضعة أيام لا يترسب شيء في القاع.\nأيّ مما يأتي يمكن أن يكون هذا الخليط؟",
         "zh": "某学生对一种看起来透明的液体混合物进行了以下观察：\n• 在暗室中让激光束通过它时，可以看到光的路径。\n• 用滤纸过滤时，滤纸上没有残留物。\n• 静置几天后，底部没有沉淀。\n这种混合物可能是下列哪一种？",
-        "ku": "Xwendekarek li ser tevliheviyek şil a ku zelal xuya dike van çavdêriyan dike:\n• Dema di odeyek tarî de tîrêjek lazerê di nav wê re tê derbaskirin, riya ronahiyê tê dîtin.\n• Dema bi kaxeza parzûnê tê parzûnkirin, li ser kaxezê tu bermayî namîne.\n• Piştî çend rojan hiştinê, li binî tiştek naniştin.\nEv tevlihevî dikare kîjan ji van be?"
+        "ku": "Xwendekarek li ser tevliheviyeke şile ya ku zelal xuya dike van çavdêriyan dike:\n• Dema di odeyeke tarî de tîrêja lazerê di nav tevliheviyê re tê derbaskirin, rêya ronahiyê xuya dibe.\n• Dema bi kaxeza parzûnê tê parzûnkirin, li ser kaxezê tu bermayî namîne.\n• Piştî ku çend rojan tê hiştin, di binî de tiştek nanişe.\nEv tevlihevî dikare kîjan ji van be?"
       },
       "options": [
         {
@@ -1674,7 +1674,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Вода с желатином",
           "ar": "الجيلاتين في الماء",
           "zh": "明胶水溶液",
-          "ku": "Jelatîn di avê de"
+          "ku": "Ava bi jelatîn"
         },
         {
           "tr": "Şekerli su",
@@ -1726,7 +1726,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Видимый путь луча (эффект Тиндаля) говорит о частицах коллоидного размера (примерно 1–1000 нм); они проходят через фильтровальную бумагу и не оседают. Вода с желатином — коллоид. Вода с сахаром и вода с солью — истинные растворы и свет не рассеивают. Мел с водой — суспензия: оставляет осадок на фильтре и оседает; оливковое масло с водой — эмульсия, при стоянии расслаивается на два слоя.",
         "ar": "ظهور مسار الضوء (ظاهرة تندال) يدل على أن الدقائق بحجم غروي (نحو 1–1000 nm)، والدقائق الغروية تمر عبر ورق الترشيح ولا تترسب عند الترك. والجيلاتين في الماء غروي. أما الماء المحلّى والماء المالح فمحاليل حقيقية لا تشتت الضوء. والطباشير في الماء معلق يترك راسبًا ويترسب، وزيت الزيتون والماء مستحلب ينفصل إلى طبقتين عند الترك.",
         "zh": "能看到光路（丁达尔效应）说明粒子是胶体大小(约1–1000 nm)；胶体粒子能透过滤纸，静置也不沉降。明胶水溶液是胶体。糖水和盐水是真溶液，不散射光。粉笔灰与水是悬浊液，会在滤纸上留下残留物并沉降；橄榄油与水是乳浊液，静置后分成两层。",
-        "ku": "Xuyabûna riya ronahiyê (bandora Tyndall) nîşan dide ku perçe bi mezinahiya kolloîdî ne (nêzîkî 1–1000 nm); perçeyên kolloîdî di kaxeza parzûnê re derbas dibin û naniştin. Jelatîn di avê de kolloîd e. Ava şekirî û ava şor çareseriyên rastîn in, ronahiyê belav nakin. Toza tebeşîrê-av suspansiyon e, bermayî dihêle û diniştin; rûnê zeytûnê-av emulsiyon e û dema tê hiştin dibe du qat."
+        "ku": "Xuyabûna rêya ronahiyê (bandora Tyndall) nîşan dide ku perçe bi mezinahiya kolloîdî ne (nêzîkî 1–1000 nm); perçeyên kolloîdî di kaxeza parzûnê re derbas dibin û dema tên hiştin nanişin. Ava bi jelatîn kolloîd e. Ava şekirî û ava şor çareseriyên rastîn in, ronahiyê belav nakin. Toza tebeşîrê-av suspansiyon e, li ser parzûnê bermayî dihêle û dinişe; rûnê zeytûnê-av emulsiyon e û dema tê hiştin dibe du qat."
       }
     },
     {
@@ -1739,7 +1739,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Какое из следующих сочетаний «смесь – метод разделения» неверно?",
         "ar": "أيّ المزاوجات الآتية (خليط – طريقة فصل) خاطئة؟",
         "zh": "下列“混合物 – 分离方法”的对应中，哪一项是错误的？",
-        "ku": "Ji van hevgirtinên tevlihevî – rêbaza veqetandinê yên jêrîn kîjan şaş e?"
+        "ku": "Kîjan ji van cotkirinên tevlihevî – rêbaza veqetandinê yên jêrîn şaş e?"
       },
       "options": [
         {
@@ -1770,7 +1770,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Оливковое масло–вода – делительная воронка",
           "ar": "زيت الزيتون-الماء – قمع الفصل",
           "zh": "橄榄油-水 – 分液漏斗",
-          "ku": "Rûnê zeytûnê-av – hunîya veqetandinê"
+          "ku": "Rûnê zeytûnê-av – qîfa veqetandinê"
         },
         {
           "tr": "Talaş-kum – su ile yüzdürme",
@@ -1802,7 +1802,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Раствор сахара в воде — однородная смесь; молекулы сахара легко проходят через поры фильтровальной бумаги, поэтому фильтрованием его не разделить. Сахар получают выпариванием воды (или простой перегонкой, если нужна и вода). Остальные сочетания верны: железо притягивается магнитом, песок остаётся на фильтре, несмешивающиеся масло и вода образуют в воронке два слоя, опилки плавают на воде, а песок тонет.",
         "ar": "الماء المحلّى بالسكر محلول متجانس؛ تمر جزيئات السكر بسهولة عبر مسام ورق الترشيح، فلا يمكن فصله بالترشيح. ويُحصل على السكر بتبخير الماء (أو بالتقطير البسيط إذا أُريد الماء أيضًا). أما المزاوجات الأخرى فصحيحة: ينجذب الحديد إلى المغناطيس، ويبقى الرمل على المرشح، ويكوّن الزيت والماء غير الممتزجين طبقتين في القمع، وتطفو النشارة على الماء بينما يغوص الرمل.",
         "zh": "糖水是均匀溶液；糖分子很容易透过滤纸的孔隙，所以不能用过滤分离。糖可以通过蒸发水得到（若也要得到水，则用简单蒸馏）。其余对应都正确：铁被磁铁吸引，沙子留在滤纸上，不互溶的油和水在分液漏斗中分成两层，木屑浮在水面而沙子下沉。",
-        "ku": "Ava şekirî çareseriyek homojen e; molekulên şekir bi hêsanî di qulên kaxeza parzûnê re derbas dibin, ji ber vê yekê bi parzûnkirinê nayê veqetandin. Şekir bi hilmkirina avê (ger av jî bê xwestin bi distilasyona hêsan) tê bidestxistin. Hevgirtinên din rast in: hesin ber bi mexnatîsê ve tê kişandin, qûm li ser parzûnê dimîne, rûn û ava ku tevlî hev nabin di hunîyê de du qatan çêdikin, qirş li ser avê avjenî dike û qûm dadikeve."
+        "ku": "Ava şekirî çareseriyeke homojen e; molekulên şekir bi hêsanî di qulên kaxeza parzûnê re derbas dibin, ji ber vê yekê bi parzûnkirinê nayê veqetandin. Şekir bi buharkirina avê (eger av jî bê xwestin, bi distîlasyona sade) tê bidestxistin. Cotkirinên din rast in: hesin ber bi mexnatîsê ve tê kişandin, qûm li ser parzûnê dimîne, rûn û ava ku tevlî hev nabin di qîfê de du qatan çêdikin, qirş li ser avê dimîne û qûm dadikeve binî."
       }
     },
     {
@@ -1815,7 +1815,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Из твёрдой смеси KNO3, растворимость которого сильно растёт с температурой, и NaCl, растворимость которого почти не зависит от температуры, нужно получить чистый KNO3. Смесь растворяют в небольшом количестве горячей воды, раствор охлаждают, а образовавшиеся кристаллы отфильтровывают.\nВ каком ответе правильно указаны и метод, и использованное отличительное свойство?",
         "ar": "يُراد الحصول على KNO3 نقي من خليط صلب من KNO3 الذي تزداد ذائبيته كثيرًا بارتفاع درجة الحرارة وNaCl الذي تتغير ذائبيته قليلًا جدًا بتغير درجة الحرارة. يُذاب الخليط في كمية قليلة من الماء الساخن، ثم يُبرَّد المحلول وتُرشَّح البلورات المتكونة.\nفي أيّ مما يأتي ذُكرت الطريقة المستخدمة والخاصية المميزة المستفاد منها صحيحتين معًا؟",
         "zh": "要从KNO3（溶解度随温度升高而大幅增大）和NaCl（溶解度随温度变化很小）组成的固体混合物中得到纯KNO3。把混合物溶于少量热水，冷却溶液，再滤出析出的晶体。\n下列哪一项中所用的方法和所利用的区别性质都正确？",
-        "ku": "Tê xwestin ku ji tevliheviyek hişk a KNO3 (helbûna wê bi germahiyê gelek zêde dibe) û NaCl (helbûna wê bi germahiyê pir kêm diguhere) KNO3 ya safî bê bidestxistin. Tevlihevî di hindik ava germ de tê helandin, çareserî tê sarkirin û krîstalên ku çêdibin tên parzûnkirin.\nDi kîjan ji van de rêbaza ku tê bikaranîn û taybetmendiya cudaker a ku jê sûd tê wergirtin herdu bi hev re rast hatine dayîn?"
+        "ku": "Tê xwestin ku ji tevliheviyeke hişk a KNO3 (helbûniya wê bi germahiyê re gelek zêde dibe) û NaCl (helbûniya wê bi germahiyê re pir hindik diguhere) KNO3-a paqij bê bidestxistin. Tevlihevî di hindik ava germ de tê helandin, çareserî tê sarkirin û krîstalên ku çêdibin tên parzûnkirin.\nDi kîjan ji van de rêbaza ku tê bikaranîn û taybetmendiya cudaker a ku jê sûd tê wergirtin herdu bi hev re rast hatine dayîn?"
       },
       "options": [
         {
@@ -1826,7 +1826,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Делительная воронка – различие плотностей",
           "ar": "قمع الفصل – اختلاف الكثافة",
           "zh": "分液漏斗 – 密度差异",
-          "ku": "Hunîya veqetandinê – cudahiya çiriyê"
+          "ku": "Qîfa veqetandinê – cudahiya çiriyê"
         },
         {
           "tr": "Ayrımsal damıtma – kaynama noktası farkı",
@@ -1836,7 +1836,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Фракционная перегонка – различие температур кипения",
           "ar": "التقطير التجزيئي – اختلاف درجة الغليان",
           "zh": "分馏 – 沸点差异",
-          "ku": "Distilasyona perçeyî – cudahiya xala kelandinê"
+          "ku": "Distîlasyona perçeyî – cudahiya xala kelînê"
         },
         {
           "tr": "Diyaliz – tanecik boyutu farkı",
@@ -1846,7 +1846,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Диализ – различие размеров частиц",
           "ar": "الديلزة – اختلاف حجم الدقائق",
           "zh": "透析 – 粒子大小差异",
-          "ku": "Diyaliz – cudahiya mezinahiya perçeyan"
+          "ku": "Dialîz – cudahiya mezinahiya perçeyan"
         },
         {
           "tr": "Ayrımsal kristallendirme – çözünürlük farkı",
@@ -1856,7 +1856,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Дробная кристаллизация – различие растворимости",
           "ar": "التبلور التجزيئي – اختلاف الذائبية",
           "zh": "分步结晶 – 溶解度差异",
-          "ku": "Krîstalbûna perçeyî – cudahiya helbûnê"
+          "ku": "Krîstalbûna perçeyî – cudahiya helbûniyê"
         },
         {
           "tr": "Mıknatısla ayırma – manyetik özellik farkı",
@@ -1878,7 +1878,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При охлаждении растворимость KNO3 резко падает, и его избыток кристаллизуется, а NaCl, растворимость которого почти не меняется, остаётся в растворе. Таким образом, два твёрдых вещества разделяют дробной кристаллизацией, используя различие их растворимости. Жидких слоёв, жидкостей для разделения по температуре кипения, коллоидных частиц и магнитных веществ здесь нет, поэтому остальные методы не подходят.",
         "ar": "عند التبريد تقل ذائبية KNO3 كثيرًا فيتبلور الفائض منه، بينما يبقى NaCl الذي لا تتغير ذائبيته تقريبًا في المحلول. وهكذا يُفصل الصلبان بالتبلور التجزيئي اعتمادًا على اختلاف ذائبيتهما مع درجة الحرارة. ولا توجد في الخليط طبقات سائلة ولا سوائل تُفصل بدرجة الغليان ولا دقائق غروية ولا مادة مغناطيسية، لذا لا تصلح الطرق الأخرى.",
         "zh": "冷却时KNO3的溶解度大幅下降，多余部分结晶析出；NaCl的溶解度几乎不变，留在溶液中。因此利用两者溶解度随温度变化的差异，用分步结晶法分离这两种固体。混合物中没有分层的液体、没有可按沸点分离的液体、没有胶体粒子，也没有磁性物质，所以其他方法都不适用。",
-        "ku": "Dema tê sarkirin helbûna KNO3 gelek kêm dibe û zêdeya wê krîstal dibe; NaCl ku helbûna wê hema naguhere di çareseriyê de dimîne. Bi vî awayî herdu madeyên hişk bi sûdwergirtina ji cudahiya helbûna wan bi krîstalbûna perçeyî tên veqetandin. Di tevliheviyê de ne qatên şil, ne şilên ku bi xala kelandinê bên veqetandin, ne perçeyên kolloîdî û ne jî madeya mexnatîsî hene; ji ber vê yekê rêbazên din ne guncan in."
+        "ku": "Dema çareserî tê sarkirin helbûniya KNO3 gelek kêm dibe û zêdeya wê krîstal dibe; NaCl, ku helbûniya wê hema naguhere, di çareseriyê de dimîne. Bi vî awayî her du madeyên hişk bi sûdwergirtina ji cudahiya guherîna helbûniya wan a bi germahiyê re, bi krîstalbûna perçeyî tên veqetandin. Di tevliheviyê de ne qatên şile, ne şileyên ku bi xala kelînê bên veqetandin, ne perçeyên kolloîdî û ne jî madeya mexnatîsî hene; ji ber vê yekê rêbazên din ne guncav in."
       }
     },
     {
@@ -1891,7 +1891,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Следующие жидкости нагревают при одинаковом внешнем давлении:\nI. Чистая вода\nII. Раствор 0,1 моль NaCl в 1 кг воды\nIII. Раствор 0,1 моль глюкозы (C6H12O6) в 1 кг воды\nКаков порядок температур начала кипения от наибольшей к наименьшей?",
         "ar": "تُسخَّن السوائل الآتية وجميعها تحت الضغط الخارجي نفسه:\nI. ماء نقي\nII. محلول من 0.1 mol من NaCl مذاب في 1 kg من الماء\nIII. محلول من 0.1 mol من الغلوكوز (C6H12O6) مذاب في 1 kg من الماء\nما ترتيب درجات حرارة بدء غليانها من الأعلى إلى الأدنى؟",
         "zh": "在相同外压下加热下列液体：\nI. 纯水\nII. 1 kg水中溶解0.1 mol NaCl的溶液\nIII. 1 kg水中溶解0.1 mol葡萄糖(C6H12O6)的溶液\n它们开始沸腾的温度由高到低的顺序是哪一项？",
-        "ku": "Ev şilên jêrîn di bin heman pestoya derve de tên germkirin:\nI. Ava safî\nII. Çareseriya ku 0,1 mol NaCl di 1 kg avê de helandiye\nIII. Çareseriya ku 0,1 mol glukoz (C6H12O6) di 1 kg avê de helandiye\nRêzkirina germahiyên destpêka kelandina van şilan ji mezin ber bi piçûk kîjan e?"
+        "ku": "Ev şileyên jêrîn di bin heman zexta derve de tên germkirin:\nI. Ava paqij\nII. Çareseriya ku tê de 0,1 mol NaCl di 1 kg avê de helandî ye\nIII. Çareseriya ku tê de 0,1 mol glukoz (C6H12O6) di 1 kg avê de helandî ye\nRêzkirina germahiyên ku van şileyan dest bi kelînê dikin, ji mezin ber bi piçûk, kîjan e?"
       },
       "options": [
         {
@@ -1954,7 +1954,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При растворении нелетучего вещества раствор начинает кипеть при более высокой температуре, чем чистая вода, причём повышение пропорционально концентрации растворённых частиц. NaCl диссоциирует на ионы Na+ и Cl-: 0,1 моль NaCl → 0,2 моль частиц. Глюкоза растворяется в виде молекул: 0,1 моль частиц. Поэтому порядок II > III > I. Считать оба раствора одинаковыми — значит упустить диссоциацию NaCl.",
         "ar": "عند ذوبان مادة غير متطايرة يبدأ المحلول بالغليان عند درجة أعلى من الماء النقي، ويتناسب الارتفاع مع تركيز الدقائق المذابة. يتفكك NaCl إلى أيونات Na+ وCl-: 0.1 mol من NaCl → 0.2 mol من الدقائق. أما الغلوكوز فيذوب على هيئة جزيئات: 0.1 mol من الدقائق. لذا يكون الترتيب II > III > I. واعتبار المحلولين متساويين إغفال لتفكك NaCl.",
         "zh": "非挥发性物质溶解后，溶液开始沸腾的温度高于纯水，升高的幅度与溶解粒子的浓度成正比。NaCl 电离为 Na+ 和 Cl- 离子：0.1 mol NaCl → 0.2 mol粒子。葡萄糖以分子形式溶解：0.1 mol粒子。因此顺序为 II > III > I。认为两种溶液相同，就是忽视了NaCl的电离。",
-        "ku": "Dema madeyek ne-firok dihele, çareserî di germahiyek ji ava safî bilindtir de dest bi kelandinê dike û zêdebûn bi giranbûna perçeyên helbûyî re hevrêje ye. NaCl dibe îyonên Na+ û Cl-: 0,1 mol NaCl → 0,2 mol perçe. Glukoz wek molekul dihele: 0,1 mol perçe. Ji ber vê yekê rêz II > III > I ye. Wekhev hesibandina herdu çareseriyan îyonbûna NaCl ji bîr dike."
+        "ku": "Dema madeyeke ne-firok dihele, çareserî di germahiyeke ji ava paqij bilindtir de dest bi kelînê dike û ev bilindbûn bi tîrbûna perçeyên helbûyî re rêjeyî ye. NaCl di avê de dibe îyonên Na+ û Cl-: 0,1 mol NaCl → 0,2 mol perçe. Glukoz wek molekul dihele: 0,1 mol perçe. Ji ber vê yekê rêz II > III > I e. Wekhev hesibandina her du çareseriyan nedîtina perçebûna NaCl bo îyonan e."
       }
     },
     {
@@ -1967,7 +1967,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Зимой дороги посыпают солью, чтобы предотвратить обледенение. Какова основная причина этого?",
         "ar": "في الشتاء يُرش الملح على الطرق لمنع تكوّن الجليد. ما السبب الرئيس لهذا الإجراء؟",
         "zh": "冬天人们在公路上撒盐以防止结冰。这样做的主要原因是什么？",
-        "ku": "Di zivistanê de ji bo pêşîgirtina qeşagirtinê xwê li ser rêyan tê reşandin. Sedema bingehîn a vê kirinê kîjan e?"
+        "ku": "Di zivistanê de ji bo pêşîgirtina li cemidînê xwê li ser rêyan tê reşandin. Sedema bingehîn a vê kirinê kîjan e?"
       },
       "options": [
         {
@@ -1978,7 +1978,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Соль вступает со льдом в химическую реакцию с выделением тепла",
           "ar": "يتفاعل الملح مع الجليد تفاعلًا كيميائيًا يطلق حرارة",
           "zh": "盐与冰发生放热的化学反应",
-          "ku": "Xwê bi qeşayê re reaksiyonek kîmyayî ya ku germê derdixe dide"
+          "ku": "Xwê bi qeşayê re dikeve reaksiyoneke kîmyewî ya ku germê derdixe"
         },
         {
           "tr": "Tuzlu suyun donmaya başlama sıcaklığının saf sudan düşük olması",
@@ -1988,7 +1988,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Солёная вода начинает замерзать при более низкой температуре, чем чистая",
           "ar": "يبدأ الماء المالح بالتجمد عند درجة أدنى من الماء النقي",
           "zh": "盐水开始凝固的温度比纯水低",
-          "ku": "Ava şor di germahiyek ji ava safî nizmtir de dest bi qerisînê dike"
+          "ku": "Ava şor di germahiyeke ji ava paqij nizmtir de dest bi cemidînê dike"
         },
         {
           "tr": "Tuzun suyun kaynama noktasını düşürmesi",
@@ -1998,7 +1998,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Соль понижает температуру кипения воды",
           "ar": "يخفض الملح درجة غليان الماء",
           "zh": "盐降低水的沸点",
-          "ku": "Xwê xala kelandina avê nizm dike"
+          "ku": "Xwê xala kelîna avê nizm dike"
         },
         {
           "tr": "Tuzun buzu sıvılaşmadan doğrudan buhara dönüştürmesi",
@@ -2008,7 +2008,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Соль превращает лёд прямо в пар, минуя плавление",
           "ar": "يحوّل الملح الجليد إلى بخار مباشرة دون أن ينصهر",
           "zh": "盐使冰不经熔化直接变成水蒸气",
-          "ku": "Xwê qeşayê bêyî helînê rasterast dike hilm"
+          "ku": "Xwê qeşayê bêyî ku bihele rasterast dike buhar"
         },
         {
           "tr": "Tuzun buzun yoğunluğunu artırarak yol yüzeyinden uzaklaşmasını sağlaması",
@@ -2030,7 +2030,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Соль растворяется в тонкой плёнке воды на льду, образуя солёную воду. Растворённые частицы понижают температуру замерзания воды, поэтому солёная вода остаётся жидкой и ниже 0 °C, и лёд тает. Это не химическая реакция, а физическое (коллигативное) свойство раствора; кроме того, растворённое вещество повышает, а не понижает температуру кипения.",
         "ar": "يذوب الملح في الطبقة الرقيقة من الماء على سطح الجليد مكوّنًا ماءً مالحًا. والدقائق المذابة تخفض درجة تجمد الماء، فيبقى الماء المالح سائلًا حتى دون 0 °C وينصهر الجليد. وهذا ليس تفاعلًا كيميائيًا بل خاصية فيزيائية (تجميعية) للمحلول؛ كما أن المذاب يرفع درجة الغليان ولا يخفضها.",
         "zh": "盐溶解在冰面上的一层薄水中形成盐水。溶解的粒子使水的凝固点降低，所以盐水在0 °C以下仍保持液态，冰随之融化。这不是化学反应，而是溶液的物理（依数）性质；另外，溶质会使沸点升高而不是降低。",
-        "ku": "Xwê di qata zirav a avê ya li ser qeşayê de dihele û ava şor çêdike. Perçeyên helbûyî xala qerisîna avê nizm dikin; ji ber vê yekê ava şor di bin 0 °C de jî şil dimîne û qeşa dihele. Ev ne reaksiyonek kîmyayî ye, taybetmendiyek fîzîkî (kolîgatîf) a çareseriyê ye; herwiha madeya helbûyî xala kelandinê nizm nake, bilind dike."
+        "ku": "Xwê di qata zirav a avê ya li ser qeşayê de dihele û ava şor çêdike. Perçeyên helbûyî xala cemidînê ya avê nizm dikin; ji ber vê yekê ava şor di bin 0 °C de jî şile dimîne û qeşa dihele. Ev ne reaksiyoneke kîmyewî ye, taybetmendiyeke fîzîkî (kolîgatîf) ya çareseriyê ye; herwiha madeya helbûyî xala kelînê nizm nake, bilind dike."
       }
     },
     {
@@ -2043,7 +2043,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "На этикетке зубной пасты указано, что массовая доля фторида в ней равна 0,15 %. Какова концентрация фторида в этой пасте в ppm?",
         "ar": "يُذكر على ملصق معجون أسنان أنه يحتوي على 0.15% فلوريد بالكتلة. ما تركيز الفلوريد في هذا المعجون بوحدة ppm؟",
         "zh": "某牙膏标签上注明其含氟化物的质量分数为0.15%。这种牙膏中氟化物的浓度是多少ppm？",
-        "ku": "Li ser etîketa melhema diranan hatiye nivîsandin ku ew %0,15 a girseyî florîd dihewîne. Giranbûna florîdê di vê melhemê de çend ppm e?"
+        "ku": "Li ser etîketa melhema diranan hatiye nivîsandin ku ew ji aliyê girseyê ve %0,15 florîd dihewîne. Tîrbûna florîdê di vê melhema diranan de çend ppm e?"
       },
       "options": [
         {
@@ -2106,7 +2106,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Массовая доля 0,15 % означает 0,15 г фторида в 100 г пасты. ppm = (масса вещества / общая масса) · 10^6 = (0,15 / 100) · 10^6 = 1500 ppm. Короче: так как 1 ppm = 0,0001 %, значение в процентах умножают на 10^4 (0,15 · 10^4 = 1500). Множитель 100 или 1000 даёт заниженные, неверные значения.",
         "ar": "0.15% بالكتلة تعني 0.15 g من الفلوريد في 100 g من المعجون. ppm = (كتلة المذاب / الكتلة الكلية) · 10^6 = (0.15 / 100) · 10^6 = 1500 ppm. طريقة مختصرة: بما أن 1 ppm = 0.0001%، تُضرب النسبة المئوية في 10^4 (0.15 · 10^4 = 1500). واعتبار المعامل 100 أو 1000 يعطي قيمًا أصغر وخاطئة.",
         "zh": "质量分数0.15%表示100 g牙膏中含0.15 g氟化物。ppm = (溶质质量 / 总质量) · 10^6 = (0.15 / 100) · 10^6 = 1500 ppm。简便方法：因为1 ppm = 0.0001%，把百分数乘以10^4即可(0.15 · 10^4 = 1500)。把乘数当作100或1000会得到偏小的错误数值。",
-        "ku": "%0,15 a girseyî tê wateya 0,15 g florîd di 100 g melhemê de. ppm = (girseya helbûyî / girseya giştî) · 10^6 = (0,15 / 100) · 10^6 = 1500 ppm. Rêya kurt: ji ber ku 1 ppm = %0,0001 e, nirxa sedî bi 10^4 re tê lêdan (0,15 · 10^4 = 1500). Hesibandina lêkerê wek 100 an 1000 nirxên piçûktir û şaş dide."
+        "ku": "Girseyî %0,15 tê wateya 0,15 g florîd di 100 g melhemê de. ppm = (girseya madeya helbûyî / girseya giştî) · 10^6 = (0,15 / 100) · 10^6 = 1500 ppm. Rêya kurt: ji ber ku 1 ppm = %0,0001 e, nirxa ji sedî bi 10^4 tê lêxistin (0,15 · 10^4 = 1500). Hesibandina faktorê wek 100 an 1000 nirxên piçûktir û şaş dide."
       }
     },
     {
@@ -2119,7 +2119,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Какие из следующих методов разделения основаны на различии размеров частиц?\nI. Диализ\nII. Фракционная перегонка\nIII. Центрифугирование",
         "ar": "أيّ طرق الفصل الآتية تعتمد على اختلاف حجم الدقائق؟\nI. الديلزة\nII. التقطير التجزيئي\nIII. الطرد المركزي",
         "zh": "下列分离方法中，哪些是依据粒子大小的差异？\nI. 透析\nII. 分馏\nIII. 离心",
-        "ku": "Ji van rêbazên veqetandinê yên jêrîn kîjan li ser cudahiya mezinahiya perçeyan in?\nI. Diyaliz\nII. Distilasyona perçeyî\nIII. Santrîfujkirin"
+        "ku": "Kîjan ji van rêbazên veqetandinê yên jêrîn li ser cudahiya mezinahiya perçeyan disekinin?\nI. Dialîz\nII. Distîlasyona perçeyî\nIII. Santrîfujkirin"
       },
       "options": [
         {
@@ -2182,7 +2182,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При диализе малые ионы и молекулы проходят через поры полупроницаемой мембраны, а крупные коллоидные частицы — нет, то есть разделение основано на размере частиц. Фракционная перегонка основана на различии температур кипения. При центрифугировании быстрое вращение ускоряет оседание более плотных частиц; ключевое свойство — различие плотностей.",
         "ar": "في الديلزة تمر الأيونات والجزيئات الصغيرة عبر مسام غشاء شبه منفذ ولا تمر الدقائق الغروية الكبيرة، فالفصل يعتمد على حجم الدقائق. أما التقطير التجزيئي فيعتمد على اختلاف درجات الغليان. وفي الطرد المركزي يؤدي الدوران السريع إلى ترسب الدقائق الأكبر كثافة أسرع، فالخاصية الأساسية هي اختلاف الكثافة.",
         "zh": "透析时，小离子和小分子能透过半透膜的孔隙，大的胶体粒子不能透过，所以分离依据的是粒子大小。分馏依据的是沸点差异。离心时，高速旋转使密度大的粒子更快沉降，关键性质是密度差异。",
-        "ku": "Di diyalizê de îyon û molekulên piçûk di qulên perdeya nîv-derbasbar re derbas dibin, perçeyên kolloîdî yên mezin derbas nabin; yanî veqetandin li ser mezinahiya perçeyan e. Distilasyona perçeyî li ser cudahiya xala kelandinê ye. Di santrîfujkirinê de zivirîna bilez dike ku perçeyên bi çiriya mezintir zûtir binişin; taybetmendiya bingehîn cudahiya çiriyê ye."
+        "ku": "Di dialîzê de îyon û molekulên piçûk di qulên perdeya nîvderbasbar re derbas dibin, perçeyên kolloîdî yên mezin derbas nabin; ango veqetandin li ser mezinahiya perçeyan disekine. Distîlasyona perçeyî li ser cudahiya xala kelînê ya beşan disekine. Di santrîfujkirinê de zivirîna bilez dike ku perçeyên bi çiriya mezintir zûtir binişin; taybetmendiya cudaker a bingehîn cudahiya çiriyê ye."
       }
     },
     {
@@ -2195,7 +2195,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Сколько граммов NaOH растворено в 500 мл раствора NaOH с массовой долей 20 % и плотностью 1,2 г/мл?",
         "ar": "كم غرامًا من NaOH مذاب في 500 mL من محلول NaOH تركيزه 20% بالكتلة وكثافته 1.2 g/mL؟",
         "zh": "500 mL质量分数为20%、密度为1.2 g/mL的NaOH溶液中溶有多少克NaOH？",
-        "ku": "Di 500 mL çareseriya NaOH ya %20 a girseyî û bi çiriya 1,2 g/mL de çend gram NaOH helandî ye?"
+        "ku": "Di 500 mL çareseriya NaOH ya girseyî %20 û bi çiriya 1,2 g/mL de çend gram NaOH helandî ye?"
       },
       "options": [
         {
@@ -2258,7 +2258,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Сначала переводят объём в массу: масса раствора = плотность · объём = 1,2 · 500 = 600 г. Масса NaOH = 600 · 0,20 = 120 г. Типичные ошибки: не учитывать плотность (500 · 0,20 = 100 г), делить объём на плотность (500 / 1,2 · 0,20 ≈ 83,3 г) или принимать за ответ массу воды (480 г) либо раствора (600 г).",
         "ar": "يُحوَّل الحجم أولًا إلى كتلة: كتلة المحلول = الكثافة · الحجم = 1.2 · 500 = 600 g. كتلة NaOH = 600 · 0.20 = 120 g. ومن الأخطاء الشائعة إهمال الكثافة (500 · 0.20 = 100 g)، أو قسمة الحجم على الكثافة (500 / 1.2 · 0.20 ≈ 83.3 g)، أو اعتبار كتلة الماء (480 g) أو كتلة المحلول (600 g) هي الجواب.",
         "zh": "先把体积换算成质量：溶液质量 = 密度 · 体积 = 1.2 · 500 = 600 g。NaOH质量 = 600 · 0.20 = 120 g。忽略密度(500 · 0.20 = 100 g)、用体积除以密度(500 / 1.2 · 0.20 ≈ 83.3 g)，或把水的质量(480 g)、溶液质量(600 g)当作答案，都是典型错误。",
-        "ku": "Pêşî hecm tê guhertin bo girseyê: girseya çareseriyê = çirî · hecm = 1,2 · 500 = 600 g. Girseya NaOH = 600 · 0,20 = 120 g. Şaşiyên berbelav: çirî paşguh kirin (500 · 0,20 = 100 g), parvekirina hecmê li çiriyê (500 / 1,2 · 0,20 ≈ 83,3 g), an girseya avê (480 g) an girseya çareseriyê (600 g) wek bersiv hesibandin."
+        "ku": "Pêşî qebare tê veguherandin bo girseyê: girseya çareseriyê = çirî · qebare = 1,2 · 500 = 600 g. Girseya NaOH = 600 · 0,20 = 120 g. Şaşiyên berbelav ev in: paşguhkirina çiriyê (500 · 0,20 = 100 g), parvekirina qebareyê li çiriyê (500 / 1,2 · 0,20 ≈ 83,3 g), an hesibandina girseya avê (480 g) an girseya çareseriyê (600 g) wek bersiv."
       }
     }
   ]

@@ -14,7 +14,7 @@ export const unit15: ChemistryUnitSeedData = {
     "ru": "Коллигативные свойства и растворимость",
     "ar": "الخواص التجميعية والذائبية",
     "zh": "依数性与溶解度",
-    "ku": "Taybetmendiyên Kolîgatîf û Çareserî"
+    "ku": "Taybetmendiyên Kolîgatîf û Helbûnî"
   },
   "subtitle": {
     "tr": "Kaynama Noktası Yükselmesi, Donma Noktası ve Raoult",
@@ -24,7 +24,7 @@ export const unit15: ChemistryUnitSeedData = {
     "ru": "Повышение температуры кипения, понижение температуры замерзания и закон Рауля",
     "ar": "الارتفاع في درجة الغليان والانخفاض في درجة التجمد وقانون راؤول",
     "zh": "沸点升高、凝固点降低与拉乌尔定律",
-    "ku": "Bilindbûna xala kelandinê, xala cemidandinê û raoult"
+    "ku": "Bilindbûna Xala Kelînê, Xala Cemidînê û Raoult"
   },
   "facts": [
     {
@@ -37,7 +37,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Коллигативные свойства зависят не от химической природы растворённого вещества, а от общей концентрации частиц в растворе.",
         "ar": "تعتمد الخواص التجميعية على التركيز الكلي للجسيمات في المحلول، لا على النوع الكيميائي للمذاب.",
         "zh": "依数性取决于溶液中溶质粒子的总浓度，而与溶质的化学种类无关。",
-        "ku": "Taybetmendiyên kolektîf bi tevheviya parçikê ya çareseriyê ve girêdayî ye, ne bi celebê kîmyewî ya soletê."
+        "ku": "Taybetmendiyên kolîgatîf ne bi cureyê kîmyewî yê madeya helbûyî, lê bi tîrbûna giştî ya perçeyan a di çareseriyê de ve girêdayî ne."
       },
       "trap": {
         "tr": "Koligatif özellikler çözünen maddenin molekül geometrisine bağlıdır.",
@@ -47,7 +47,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Коллигативные свойства зависят от геометрии молекул растворённого вещества.",
         "ar": "تعتمد الخواص التجميعية على الشكل الهندسي لجزيء المذاب.",
         "zh": "依数性取决于溶质分子的几何构型。",
-        "ku": "Taybetmendiyên kolektîf bi geometriya molekulê ya solê ve girêdayî ye."
+        "ku": "Taybetmendiyên kolîgatîf bi geometriya molekulê ya madeya helbûyî ve girêdayî ne."
       },
       "whyTrapIsFalse": {
         "tr": "Koligatif özellikler çözünenin şekline ya da kimliğine değil, çözeltide kaç tanecik oluşturduğuna bakar; aynı tanecik derişiminde farklı geometrili maddeler aynı etkiyi yapar.",
@@ -57,7 +57,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Коллигативные свойства зависят не от формы или природы растворённого вещества, а от числа частиц, которые оно образует в растворе; при одинаковой концентрации частиц вещества разной геометрии дают одинаковый эффект.",
         "ar": "لا تعتمد الخواص التجميعية على شكل المذاب أو نوعه، بل على عدد الجسيمات التي يكوّنها في المحلول؛ فالمواد المختلفة الشكل تعطي التأثير نفسه عند تساوي تركيز الجسيمات.",
         "zh": "依数性与溶质的形状或种类无关，只取决于它在溶液中形成的粒子数；粒子浓度相同时，几何形状不同的物质产生相同的效应。",
-        "ku": "Taybetiyên kolîgatîf ne bi şekl an cureyê helbûyî ve, lê bi hejmara perçeyên ku di çareseriyê de çêdike ve girêdayî ne; di heman tîrbûna perçeyan de madeyên bi geometriya cuda heman bandorê dikin."
+        "ku": "Taybetmendiyên kolîgatîf ne bi şekil an nasnameya madeya helbûyî, lê bi hejmara perçeyên ku ew di çareseriyê de çêdike ve girêdayî ne; di heman tîrbûna perçeyan de madeyên bi geometriya cuda heman bandorê dikin."
       }
     },
     {
@@ -70,7 +70,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Повышение температуры кипения: ΔTкип = Kэб * m * i (Kэб — эбулиоскопическая константа, m — моляльность, i — изотонический коэффициент Вант-Гоффа).",
         "ar": "الارتفاع في درجة الغليان: ΔTb = Kb * m * i (Kb: ثابت الارتفاع في درجة الغليان، m: المولالية، i: عامل فانت هوف).",
         "zh": "沸点升高：ΔTb = Kb * m * i(Kb：沸点升高常数，m：质量摩尔浓度，i：范特霍夫因子)。",
-        "ku": "Bilindbûna xala kelandinê: ΔTk = Kk * m * i (Kk: sabîta bilindbûna xala kelandinê, m: molalîte, i: faktora van 't Hoff)."
+        "ku": "Bilindbûna xala kelînê: ΔTk = Kk * m * i ye (Kk: sabîta xala kelînê, m: molalîte, i: faktora van 't Hoff)."
       },
       "trap": {
         "tr": "Kaynama noktası yükselmesi çözünenin mol kütlesiyle doğru orantılıdır.",
@@ -80,7 +80,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Повышение температуры кипения прямо пропорционально молярной массе растворённого вещества.",
         "ar": "يتناسب الارتفاع في درجة الغليان طرديًا مع الكتلة المولية للمذاب.",
         "zh": "沸点升高与溶质的摩尔质量成正比。",
-        "ku": "Bilindbûna nuqteya kelandinê rasterast bi girseya molarê ya madeya çareserkirinê re têkildar e."
+        "ku": "Bilindbûna xala kelînê bi girseya molî ya madeya helbûyî re rasterast rêjeyî ye."
       },
       "whyTrapIsFalse": {
         "tr": "ΔTk molaliteye (mol/kg) ve i'ye bağlıdır, mol kütlesine değil; aynı kütlede çözünen için mol kütlesi büyüdükçe mol sayısı azalır ve yükselme küçülür.",
@@ -90,7 +90,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "ΔTкип зависит от моляльности (моль/кг) и i, а не от молярной массы; при одинаковой массе растворённого вещества большая молярная масса означает меньшее число молей и меньшее повышение.",
         "ar": "يعتمد ΔTb على المولالية (mol/kg) وعلى i وليس على الكتلة المولية؛ فعند ثبات كتلة المذاب تعني الكتلة المولية الأكبر عددًا أقل من المولات وارتفاعًا أصغر.",
         "zh": "沸点升高值取决于质量摩尔浓度(mol/kg)和 i，而不是摩尔质量；溶质质量相同时，摩尔质量越大，物质的量越少，升高值越小。",
-        "ku": "ΔTk bi molalîte (mol/kg) û i ve girêdayî ye, ne bi girseya molî; ji bo heman girseya helbûyî, girseya molî mezintir be hejmara molan kêmtir û bilindbûn piçûktir dibe."
+        "ku": "ΔTk bi molalîteyê (mol/kg) û bi i ve girêdayî ye, ne bi girseya molî; ji bo heman girseya madeya helbûyî, her ku girseya molî mezin dibe hejmara molan kêm dibe û bilindbûn piçûktir dibe."
       }
     },
     {
@@ -103,7 +103,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Понижение температуры замерзания: ΔTзам = Kкр * m * i (для воды Kкр = 1,86 °C*кг/моль).",
         "ar": "الانخفاض في درجة التجمد: ΔTf = Kf * m * i (للماء Kf = 1.86 °C*kg/mol).",
         "zh": "凝固点降低：ΔTf = Kf * m * i(水的 Kf = 1.86 °C*kg/mol)。",
-        "ku": "Daketina xala cemidînê: ΔTd = Kd * m * i (ji bo avê Kd = 1,86 °C*kg/mol)."
+        "ku": "Daketina xala cemidînê: ΔTd = Kd * m * i ye (ji bo avê Kd = 1,86 °C*kg/mol)."
       },
       "trap": {
         "tr": "Uçucu olmayan katı çözündüğünde suyun donma noktası yükselir.",
@@ -113,7 +113,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "При растворении нелетучего твёрдого вещества температура замерзания воды повышается.",
         "ar": "عندما تذوب مادة صلبة غير متطايرة، ترتفع درجة تجمد الماء.",
         "zh": "非挥发性固体溶于水后，水的凝固点升高。",
-        "ku": "Dema ku tîrêjek nehilber dihele, xala cemidandinê ya avê bilind dibe."
+        "ku": "Dema madeyeke hişk a nefirok dihele, xala cemidînê ya avê bilind dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Çözünen tanecikler su moleküllerinin düzenli buz kristali kurmasını zorlaştırır; bu yüzden donma için daha düşük sıcaklık gerekir, donma noktası yükselmez, alçalır.",
@@ -123,7 +123,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Частицы растворённого вещества мешают молекулам воды строить упорядоченную решётку льда, поэтому для замерзания нужна более низкая температура: температура замерзания понижается, а не повышается.",
         "ar": "تعيق جسيمات المذاب جزيئات الماء عن بناء الشبكة البلورية المنتظمة للجليد، فيلزم للتجمد درجة حرارة أدنى؛ لذا تنخفض درجة التجمد ولا ترتفع.",
         "zh": "溶质粒子阻碍水分子形成有序的冰晶格，因此需要更低的温度才能凝固；凝固点是降低而不是升高。",
-        "ku": "Perçeyên helbûyî rê li ber molekulên avê digirin ku tora rêkûpêk a cemedê ava bikin; ji ber vê yekê ji bo cemidînê germahiyeke nizmtir lazim e, xala cemidînê dadikeve, bilind nabe."
+        "ku": "Perçeyên helbûyî ji molekulên avê re zehmet dikin ku tora rêkûpêk a krîstala cemedê ava bikin; ji ber vê yekê ji bo cemidînê germahiyeke nizmtir pêwîst e. Xala cemidînê bilind nabe, dadikeve."
       }
     },
     {
@@ -136,7 +136,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Изотонический коэффициент Вант-Гоффа (i): для молекулярных веществ (сахар, спирт) i = 1; для ионных солей, которые считают полностью диссоциированными, i равен числу ионов, образуемых одной формульной единицей (i = 2 для NaCl, i = 3 для CaCl2).",
         "ar": "عامل فانت هوف (i): في المواد الجزيئية (السكر، الكحول) i = 1؛ وفي الأملاح الأيونية التي يُفترض تفككها الكامل هو عدد الأيونات الناتجة من وحدة صيغة واحدة (i = 2 لـ NaCl، و i = 3 لـ CaCl2).",
         "zh": "范特霍夫因子(i)：分子型物质（糖、乙醇）的 i = 1；对于假定完全电离的离子化合物（盐），i 为每个化学式单位电离出的离子数(NaCl 的 i = 2，CaCl2 的 i = 3)。",
-        "ku": "Faktora van 't Hoff (i): Di madeyên molekulî de (şekir, alkol) i = 1 e; di xwêyên îyonî yên ku tê qebûlkirin bi tevahî îyonîze dibin de, hejmara îyonên ji yek yekeya formulê çêdibin e (ji bo NaCl i = 2, ji bo CaCl2 i = 3)."
+        "ku": "Faktora van 't Hoff (i): Di madeyên molekulî de (şekir, alkol) i = 1 e; di xwêyên îyonîk de ku tê qebûlkirin bi tevahî îyonîze dibin, ew hejmara îyonên ku ji yekeyeke formulê çêdibin e (ji bo NaCl i = 2, ji bo CaCl2 i = 3)."
       },
       "trap": {
         "tr": "Glikoz suda çözündüğünde i = 2 kabul edilir.",
@@ -146,7 +146,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Для раствора глюкозы в воде принимают i = 2.",
         "ar": "عندما يذوب الجلوكوز في الماء يُؤخذ i = 2.",
         "zh": "葡萄糖溶于水时，i 取 2。",
-        "ku": "Dema ku glukoz di avê de dihele, i = 2 tê texmîn kirin."
+        "ku": "Dema glîkoz di avê de dihele, i = 2 tê qebûlkirin."
       },
       "whyTrapIsFalse": {
         "tr": "Glikoz moleküler bir maddedir ve suda iyonlarına ayrışmaz; her glikoz molekülü tek tanecik olarak kalır, bu yüzden i = 1'dir.",
@@ -156,7 +156,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Глюкоза — молекулярное вещество и в воде не распадается на ионы; каждая молекула остаётся одной частицей, поэтому i = 1.",
         "ar": "الجلوكوز مادة جزيئية لا تتفكك إلى أيونات في الماء؛ فيبقى كل جزيء جلوكوز جسيمًا واحدًا، لذا i = 1.",
         "zh": "葡萄糖是分子型物质，在水中不电离；每个葡萄糖分子仍是一个粒子，所以 i = 1。",
-        "ku": "Glukoz madeyeke molekulî ye û di avê de nabe îyon; her molekula glukozê wek yek perçe dimîne, ji ber vê i = 1 e."
+        "ku": "Glîkoz madeyeke molekulî ye û di avê de li îyonan venaqete; her molekula glîkozê wek yek perçe dimîne, ji ber vê yekê i = 1 e."
       }
     },
     {
@@ -169,7 +169,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Понижение давления пара (закон Рауля): давление пара раствора нелетучего вещества Pраствора = P°растворителя * Xрастворителя, поэтому оно ниже давления пара чистого растворителя при той же температуре.",
         "ar": "انخفاض ضغط البخار (قانون راؤول): في محلول يحتوي على مذاب غير متطاير يكون Psolution = Psolvent° * Xsolvent؛ لذلك يكون أقل من ضغط بخار المذيب النقي عند درجة الحرارة نفسها.",
         "zh": "蒸气压下降（拉乌尔定律）：含非挥发性溶质的溶液，其蒸气压 P溶液 = P°溶剂 * X溶剂；因此在同一温度下低于纯溶剂的蒸气压。",
-        "ku": "Daketina zexta buharê (Zagona Raoult): Ji bo çareseriyeke ku helbûyiyeke nefirrok tê de heye Pçareserî = P°helker * Xhelker e; ji ber vê di heman germahiyê de ji ya helkerê paqij nizmtir e."
+        "ku": "Daketina zexta buharê (Zagona Raoult): Zexta buharê ya çareseriyeke ku madeyeke helbûyî ya nefirok tê de heye Pçareserî = P°helker * Xhelker e; ji ber vê yekê di heman germahiyê de ji ya helkera paqij nizmtir e."
       },
       "trap": {
         "tr": "Uçucu olmayan katı eklendiğinde çözeltinin buhar basıncı artar.",
@@ -179,7 +179,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "При добавлении нелетучего твёрдого вещества давление пара раствора увеличивается.",
         "ar": "عند إضافة مادة صلبة غير متطايرة، يزداد ضغط بخار المحلول.",
         "zh": "加入非挥发性固体后，溶液的蒸气压增大。",
-        "ku": "Dema ku ziravek nehêle tê zêdekirin, zexta buharê ya çareseriyê zêde dibe."
+        "ku": "Dema madeyeke hişk a nefirok tê zêdekirin, zexta buharê ya çareseriyê zêde dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Uçucu olmayan çözünen buharlaşmaya katılmaz, yalnızca çözücünün mol kesrini düşürür; buharlaşan çözücü molekülü azaldığı için buhar basıncı artmaz, azalır.",
@@ -189,7 +189,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Нелетучее вещество не испаряется, оно лишь уменьшает мольную долю растворителя; испаряется меньше молекул растворителя, поэтому давление пара не растёт, а уменьшается.",
         "ar": "المذاب غير المتطاير لا يتبخر، بل يخفض الكسر المولي للمذيب فقط؛ فيقل عدد جزيئات المذيب المتبخرة وينخفض ضغط البخار بدلًا من أن يرتفع.",
         "zh": "非挥发性溶质本身不蒸发，只降低溶剂的物质的量分数；逸出的溶剂分子减少，所以蒸气压降低而不是升高。",
-        "ku": "Helbûyiya nefirrok nabe buhar, tenê pişka molî ya helker kêm dike; molekulên helker ên direvin kêm dibin, ji ber vê zexta buharê kêm dibe, zêde nabe."
+        "ku": "Madeya helbûyî ya nefirok nabe buhar, tenê kerta molî ya helker kêm dike; ji ber ku molekulên helker ên dibin buhar kêm dibin, zexta buharê zêde nabe, kêm dibe."
       }
     },
     {
@@ -202,7 +202,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Осмотическое давление — давление, которое нужно приложить, чтобы остановить переход чистого растворителя через полупроницаемую мембрану в концентрированный раствор.",
         "ar": "الضغط الأسموزي هو الضغط اللازم لوقف انتقال المذيب النقي إلى المحلول المركز عبر الغشاء شبه المنفذ.",
         "zh": "渗透压是阻止纯溶剂透过半透膜进入浓溶液所需施加的压强。",
-        "ku": "Zexta osmotîk ew zext e ku ji bo rawestandina derbasbûna helkerê paqij di parzûna nîv-derbasbar re ber bi çareseriya tîr ve pêwîst e."
+        "ku": "Zexta osmotîk ew zext e ku ji bo rawestandina derbasbûna helkera paqij di perdeya nîvderbasbar re ber bi çareseriya tîr pêwîst e."
       },
       "trap": {
         "tr": "Ozmozda çözünen katı tanecikler zardan kolayca geçer.",
@@ -212,7 +212,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "При осмосе частицы растворённого твёрдого вещества легко проходят через мембрану.",
         "ar": "في التناضح تعبر جسيمات المذاب الصلب الغشاءَ بسهولة.",
         "zh": "渗透时，溶解的固体溶质粒子很容易透过半透膜。",
-        "ku": "Parçeyên hişk ên ku di osmosê de têne hilweşandin bi hêsanî di parzûnê re derbas dibin."
+        "ku": "Di osmozê de perçeyên hişk ên helbûyî bi hêsanî di perdeyê re derbas dibin."
       },
       "whyTrapIsFalse": {
         "tr": "Yarı geçirgen zar yalnızca küçük çözücü moleküllerinin geçmesine izin verir; çözünen tanecikler zardan geçemez, ozmozda hareket eden çözücüdür.",
@@ -222,7 +222,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Полупроницаемая мембрана пропускает только небольшие молекулы растворителя; частицы растворённого вещества через неё не проходят, при осмосе перемещается растворитель.",
         "ar": "الغشاء شبه المنفذ يسمح بمرور جزيئات المذيب الصغيرة فقط؛ أما جسيمات المذاب فلا تعبره، ففي التناضح يتحرك المذيب.",
         "zh": "半透膜只允许小的溶剂分子通过；溶质粒子不能透过，渗透中移动的是溶剂。",
-        "ku": "Perdeya nîv-derbasbar tenê destûrê dide molekulên piçûk ên helker derbas bibin; perçeyên helbûyî jê derbas nabin, di osmozê de yê ku diçe helker e."
+        "ku": "Perdeya nîvderbasbar tenê dihêle molekulên piçûk ên helker derbas bibin; perçeyên helbûyî jê derbas nabin, di osmozê de ya ku diçe helker e."
       }
     },
     {
@@ -235,7 +235,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Зимой дороги посыпают солью: соль понижает температуру замерзания воды и предотвращает образование гололёда.",
         "ar": "رشّ الملح على الطرق شتاءً تطبيق يمنع تكوّن الجليد بخفض درجة تجمد الماء.",
         "zh": "冬季在路面撒盐，是通过降低水的凝固点来防止结冰。",
-        "ku": "Di zivistanê de rijandina xwê li ser rêyan ji bo pêşîlêgirtina qeşayê bi kêmkirina xala cemidandinê ya avê, pratîkek e."
+        "ku": "Di zivistanê de reşandina xwê li ser rêyan, bi daxistina xala cemidînê ya avê, rê li ber qeşagirtinê digire."
       },
       "trap": {
         "tr": "Yollara tuz atılması tuzun kimyasal reaksiyonla ısı açığa çıkarması içindir.",
@@ -245,7 +245,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Дороги посыпают солью потому, что соль выделяет теплоту в результате химической реакции.",
         "ar": "يُرَشّ الملح على الطرق لأنه يطلق حرارة بتفاعل كيميائي.",
         "zh": "在路面撒盐，是为了让盐通过化学反应放出热量。",
-        "ku": "Avêtina xwê li ser rêyan dibe sedem ku xwê bi reaksiyonek kîmyayî germê berde."
+        "ku": "Xwê li ser rêyan tê reşandin da ku bi reaksiyoneke kîmyewî germ berde."
       },
       "whyTrapIsFalse": {
         "tr": "Tuz buzla ısı veren bir tepkimeye girmez; suda çözünerek tanecik derişimini artırır ve donma noktasını düşürür, yani etki koligatiftir.",
@@ -255,7 +255,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Соль не вступает со льдом в реакцию с выделением теплоты; она растворяется в воде, повышает концентрацию частиц и понижает температуру замерзания, то есть эффект коллигативный.",
         "ar": "لا يتفاعل الملح مع الجليد تفاعلًا يطلق حرارة؛ بل يذوب فيزيد تركيز الجسيمات ويخفض درجة التجمد، أي أن التأثير تجميعي.",
         "zh": "盐并不与冰发生放热反应；它溶解后增大粒子浓度、降低凝固点，这是依数性效应。",
-        "ku": "Xwê bi cemedê re reaksiyoneke germ-derxer nake; dihele, tîrbûna perçeyan zêde dike û xala cemidînê dadixe, yanî bandor kolîgatîf e."
+        "ku": "Xwê bi qeşayê re nakeve reaksiyoneke ku germ berdide; di avê de dihele, tîrbûna perçeyan zêde dike û xala cemidînê dadixe, yanî bandor kolîgatîf e."
       }
     },
     {
@@ -268,7 +268,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Антифриз (этиленгликоль), который заливают в радиаторы автомобилей, и предотвращает замерзание, и повышает температуру кипения.",
         "ar": "إضافة مانع التجمد (الإيثيلين غليكول) إلى مشعات السيارات تمنع التجمد وترفع درجة الغليان أيضًا.",
         "zh": "在汽车散热器中加入防冻剂（乙二醇），既能防止结冰，又能提高沸点。",
-        "ku": "Di radyatorên otomobîlan de danîna antîfrezê (etilen glycol) pêşî li cemiandinê digire û xala kelandinê zêde dike."
+        "ku": "Danîna antîfrîzê (etîlen glîkol) di radyatorên otomobîlan de hem rê li ber cemidînê digire hem jî xala kelînê bilind dike."
       },
       "trap": {
         "tr": "Antifriz suyun donma noktasını 0 °C'nin üzerine çıkarır.",
@@ -278,7 +278,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Антифриз повышает температуру замерзания воды выше 0 °C.",
         "ar": "يرفع مانع التجمد درجة تجمد الماء إلى ما فوق 0 °C.",
         "zh": "防冻剂可使水的凝固点升高到 0 °C 以上。",
-        "ku": "Antîfrîz xala cemidandinê ya avê ji 0 °C bilind dike."
+        "ku": "Antîfrîz xala cemidînê ya avê derdixe ser 0 °C."
       },
       "whyTrapIsFalse": {
         "tr": "Antifriz suya eklenen bir çözünendir; çözünen eklemek donma noktasını yükseltmez, 0 °C'nin altına indirir ve suyun soğukta donmasını geciktirir.",
@@ -288,7 +288,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Антифриз — вещество, растворённое в воде; добавление растворённого вещества не повышает температуру замерзания, а понижает её ниже 0 °C, поэтому на холоде вода замерзает позже.",
         "ar": "مانع التجمد مذاب يضاف إلى الماء؛ وإضافة مذاب لا ترفع درجة التجمد بل تخفضها إلى ما دون 0 °C، فلا يتجمد الماء إلا عند درجة حرارة أقل.",
         "zh": "防冻剂是加入水中的溶质；加入溶质不会使凝固点升高，而是使其降到 0 °C 以下，所以水要在更低温度下才结冰。",
-        "ku": "Antîfrîz helbûyiyek e ku li avê tê zêdekirin; zêdekirina helbûyî xala cemidînê bilind nake, wê dixe binê 0 °C, ji ber vê av tenê di germahiyeke nizmtir de dicemide."
+        "ku": "Antîfrîz madeyeke helbûyî ye ku li avê tê zêdekirin; zêdekirina madeya helbûyî xala cemidînê bilind nake, wê dadixe bin 0 °C û cemidîna avê di sermayê de dereng dixe."
       }
     },
     {
@@ -301,7 +301,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Растворимость — наибольшее количество вещества, которое может раствориться в 100 г растворителя (обычно воды) при данных температуре и давлении.",
         "ar": "الذائبية هي أكبر كمية من المادة يمكن أن تذوب في 100 g من المذيب (الماء غالبًا) عند درجة حرارة وضغط معينين.",
         "zh": "溶解度是在一定温度和压强下，100 g 溶剂（通常为水）中最多能溶解的溶质的质量。",
-        "ku": "Helbûnî, mîqdara herî zêde ya madeyekê ye ku di germahî û zexteke diyar de di 100 g helker (bi gelemperî av) de dikare bihele."
+        "ku": "Helbûnî mîqdara herî zêde ya madeyekê ye ku di germahî û zexteke diyar de di 100 g helker (bi giştî av) de dikare bihele."
       },
       "trap": {
         "tr": "Çözünürlük, doymamış bir çözeltide çözünmüş olarak bulunan madde miktarıdır.",
@@ -311,7 +311,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Растворимость — количество вещества, растворённого в ненасыщенном растворе.",
         "ar": "الذائبية هي كمية المادة المذابة في محلول غير مشبع.",
         "zh": "溶解度是指不饱和溶液中已溶解的溶质的量。",
-        "ku": "Helbûnî (çareserbûn) mîqdara maddeya ku di çareseriyeke ne-têr de helbûyî ye."
+        "ku": "Helbûnî mîqdara madeyê ye ku di çareseriyeke netêr de helbûyî ye."
       },
       "whyTrapIsFalse": {
         "tr": "Doymamış çözeltide çözünmüş miktar çözünürlükten azdır ve keyfi olarak değişebilir; çözünürlük ise doygun çözeltideki, yani çözünebilecek en fazla miktardır.",
@@ -321,7 +321,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Количество вещества в ненасыщенном растворе меньше растворимости и может быть произвольным; растворимость — содержание вещества в насыщенном растворе, то есть наибольшее количество, которое может раствориться.",
         "ar": "الكمية المذابة في المحلول غير المشبع أقل من الذائبية ويمكن أن تكون أي قيمة؛ أما الذائبية فهي الكمية في المحلول المشبع، أي أقصى ما يمكن أن يذوب.",
         "zh": "不饱和溶液中溶解的量小于溶解度，可以是任意值；溶解度指的是饱和溶液中的量，即最多能溶解的量。",
-        "ku": "Mîqdara helbûyî di çareseriya ne-têr de ji helbûniyê kêmtir e û dikare her nirx be; helbûnî mîqdara di çareseriya têr de ye, yanî ya herî zêde."
+        "ku": "Mîqdara helbûyî di çareseriya netêr de ji helbûniyê kêmtir e û dikare her nirxî bigire; helbûnî mîqdara di çareseriya têr de ye, yanî mîqdara herî zêde ya ku dikare bihele."
       }
     },
     {
@@ -334,7 +334,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Растворение твёрдых веществ в воде обычно эндотермично (растворимость растёт с температурой); растворение газов в воде экзотермично (с ростом температуры растворимость уменьшается).",
         "ar": "ذوبان المواد الصلبة في الماء ماصّ للحرارة غالبًا (تزداد الذائبية بارتفاع درجة الحرارة)؛ أما ذوبان الغازات في الماء فطارد للحرارة (تقل الذائبية بارتفاع درجة الحرارة).",
         "zh": "固体在水中的溶解通常是吸热的（溶解度随温度升高而增大）；气体在水中的溶解是放热的（溶解度随温度升高而减小）。",
-        "ku": "Helbûna hişkan di avê de bi gelemperî endotermîk e (helbûnî bi germahiyê re zêde dibe); helbûna gazan di avê de ekzotermîk e (helbûnî bi germahiyê re kêm dibe)."
+        "ku": "Helbûna madeyên hişk di avê de bi giştî endotermîk e (helbûnî bi germahiyê re zêde dibe); helbûna gazan di avê de ekzotermîk e (helbûnî bi germahiyê re kêm dibe)."
       },
       "trap": {
         "tr": "Gazların sudaki çözünürlüğü sıcaklık arttıkça hızla artar.",
@@ -344,7 +344,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Растворимость газов в воде быстро возрастает с повышением температуры.",
         "ar": "تزداد ذائبية الغازات في الماء بسرعة بارتفاع درجة الحرارة.",
         "zh": "气体在水中的溶解度随温度升高而迅速增大。",
-        "ku": "Her ku germahî zêde dibe di avê de helbûna gazan bi lez zêde dibe."
+        "ku": "Her ku germahî zêde dibe, helbûniya gazan di avê de bi lez zêde dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Gazların suda çözünmesi ekzotermiktir; sıcaklık arttıkça gaz moleküllerinin kinetik enerjisi artar, sıvıdan kaçarlar ve çözünürlük azalır.",
@@ -354,7 +354,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Растворение газов в воде экзотермично; при нагревании кинетическая энергия молекул газа растёт, они покидают жидкость, и растворимость уменьшается.",
         "ar": "ذوبان الغاز في الماء طارد للحرارة؛ فبارتفاع درجة الحرارة تزداد الطاقة الحركية لجزيئات الغاز فتهرب من السائل وتقل الذائبية.",
         "zh": "气体溶于水是放热过程；温度升高时气体分子动能增大，从液体中逸出，溶解度减小。",
-        "ku": "Helîna gazê di avê de egzotermîk e; bi bilindbûna germahiyê enerjiya kînetîk a molekulên gazê zêde dibe, ji şilekê direvin û helbûnî kêm dibe."
+        "ku": "Helbûna gazan di avê de ekzotermîk e; her ku germahî bilind dibe enerjiya kînetîk a molekulên gazê zêde dibe, ew ji şileyê direvin û helbûnî kêm dibe."
       }
     },
     {
@@ -367,7 +367,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Растворимость газа в воде возрастает с увеличением парциального давления газа (закон Генри); поэтому газированные напитки разливают под высоким давлением CO2.",
         "ar": "تزداد ذائبية الغاز في الماء بزيادة الضغط الجزئي للغاز (قانون هنري)؛ ولهذا تُعبَّأ المشروبات الغازية تحت ضغط مرتفع من CO2.",
         "zh": "气体在水中的溶解度随该气体分压的增大而增大（亨利定律）；因此碳酸饮料是在较高的 CO2 压强下灌装的。",
-        "ku": "Helbûniya gazekê di avê de bi zêdebûna zexta qismî ya gazê re zêde dibe (Zagona Henry); ji ber vê vexwarinên gazdar di bin zexta bilind a CO2 de tên şûşekirin."
+        "ku": "Helbûniya gazekê di avê de bi zêdebûna zexta qismî ya gazê re zêde dibe (Zagona Henry); loma vexwarinên gazdar di bin zexta bilind a CO2 de tên şûşekirin."
       },
       "trap": {
         "tr": "Basınç arttıkça gazların çözünürlüğü azalır.",
@@ -377,7 +377,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "С увеличением давления растворимость газов снижается.",
         "ar": "تقل ذائبية الغازات بزيادة الضغط.",
         "zh": "压强增大时，气体的溶解度减小。",
-        "ku": "Her ku zext zêde dibe, helbûna gazan kêm dibe."
+        "ku": "Her ku zext zêde dibe, helbûniya gazan kêm dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Henry yasasına göre gazın kısmi basıncı arttıkça sıvı yüzeyine çarpıp çözünen gaz molekülü sayısı artar; çözünürlük basınçla doğru orantılı olarak artar.",
@@ -387,7 +387,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "По закону Генри с ростом парциального давления газа больше его молекул ударяется о поверхность жидкости и растворяется; растворимость растёт прямо пропорционально давлению.",
         "ar": "وفق قانون هنري، يؤدي ارتفاع الضغط الجزئي إلى اصطدام عدد أكبر من جزيئات الغاز بسطح السائل وذوبانها؛ فتزداد الذائبية بالتناسب مع الضغط.",
         "zh": "根据亨利定律，分压越大，撞击液面并溶解的气体分子越多；溶解度随压强成正比增大。",
-        "ku": "Li gorî zagona Henry, bi zêdebûna zexta parçeyî bêtir molekulên gazê li rûyê şilekê dikevin û dihelin; helbûnî bi zextê re rasterast zêde dibe."
+        "ku": "Li gorî zagona Henry, her ku zexta qismî ya gazê zêde dibe, hejmara molekulên gazê yên ku li rûyê şileyê dikevin û dihelin zêde dibe; helbûnî bi zextê re rasterast rêjeyî zêde dibe."
       }
     },
     {
@@ -400,7 +400,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Давление практически не влияет на растворимость твёрдых веществ и жидкостей.",
         "ar": "تأثير الضغط في ذائبية المواد الصلبة والسائلة ضئيل يمكن إهماله.",
         "zh": "压强对固体和液体溶解度的影响很小，可以忽略不计。",
-        "ku": "Bandora zextê ya li ser helbûna maddeyên hişk û şilek kêm e."
+        "ku": "Bandora zextê li ser helbûniya madeyên hişk û şile ewqas kêm e ku nayê hesibandin."
       },
       "trap": {
         "tr": "Tuzun sudaki çözünürlüğü yüksek basınçta iki katına çıkar.",
@@ -410,7 +410,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "При высоком давлении растворимость соли в воде увеличивается вдвое.",
         "ar": "تتضاعف ذائبية الملح في الماء عند الضغط المرتفع.",
         "zh": "在高压下，盐在水中的溶解度变为原来的2倍。",
-        "ku": "Di tansiyona bilind de helbûna xwê ya di avê de duqat dibe."
+        "ku": "Helbûniya xwêyê di avê de di zexta bilind de du qat dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Katı ve sıvılar pratikte sıkıştırılamaz; basınç değişimi tuzun çözünürlüğünü hissedilir ölçüde değiştirmez, basıncın belirgin etkisi gazlara özgüdür.",
@@ -420,7 +420,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Твёрдые вещества и жидкости практически несжимаемы; изменение давления заметно не меняет растворимость соли — выраженное влияние давления характерно для газов.",
         "ar": "المواد الصلبة والسائلة غير قابلة للانضغاط عمليًا؛ فتغيير الضغط لا يغير ذائبية الملح تغييرًا ملحوظًا، والتأثير الواضح للضغط خاص بالغازات.",
         "zh": "固体和液体几乎不可压缩；改变压强不会明显改变盐的溶解度，压强的显著影响是气体特有的。",
-        "ku": "Hişk û şile bi pratîkî nayên givaştin; guhertina zextê helbûniya xwê bi awayekî berbiçav naguherîne, bandora berbiçav a zextê taybetî gazan e."
+        "ku": "Madeyên hişk û şile di pratîkê de nayên tepisandin; guhertina zextê helbûniya xwêyê bi awayekî berbiçav naguherîne. Bandora berbiçav a zextê taybetmendiya gazan e."
       }
     },
     {
@@ -433,7 +433,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Малорастворимая соль растворяется в растворе, содержащем одноимённый ион, хуже, чем в чистой воде (принцип Ле Шателье).",
         "ar": "تكون ذائبية الملح الشحيح الذوبان في محلول يحتوي على أيون مشترك أقل منها في الماء النقي (مبدأ لوشاتلييه).",
         "zh": "难溶盐在含有同离子的溶液中的溶解度比在纯水中小（勒夏特列原理）。",
-        "ku": "Xwêyeke kêm-helbar di çareseriyeke ku îyona hevpar tê de heye de ji ava paqij kêmtir dihele (prensîba Le Chatelier)."
+        "ku": "Di çareseriyeke ku îyoneke hevpar tê de heye, helbûniya xwêyeke kêmhelbar ji ya di ava paqij de kêmtir e (prensîba Le Chatelier)."
       },
       "trap": {
         "tr": "Ortak iyon bulunan çözeltide tuz daha çok çözünür.",
@@ -443,7 +443,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "В растворе, содержащем одноимённый ион, соль растворяется лучше.",
         "ar": "يذوب الملح بدرجة أكبر في محلول يحتوي على أيون مشترك.",
         "zh": "盐在含有同离子的溶液中溶解得更多。",
-        "ku": "Xwê di çareseriyeke ku îyona hevpar tê de heye de bêtir dihele."
+        "ku": "Di çareseriyeke ku îyoneke hevpar tê de heye, xwê bêtir dihele."
       },
       "whyTrapIsFalse": {
         "tr": "Ortamda zaten bulunan ortak iyon, çözünme dengesini Le Chatelier ilkesine göre katı tuz yönüne kaydırır; bu yüzden tuz saf sudakinden daha az çözünür.",
@@ -453,7 +453,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Уже присутствующий одноимённый ион смещает равновесие растворения в сторону твёрдой соли (принцип Ле Шателье), поэтому соль растворяется меньше, чем в чистой воде.",
         "ar": "يُزيح الأيون المشترك الموجود مسبقًا اتزان الذوبان نحو الملح الصلب (مبدأ لوشاتلييه)، لذا يذوب الملح أقل مما يذوب في الماء النقي.",
         "zh": "已存在的同离子使溶解平衡向固体盐方向移动（勒夏特列原理），因此盐的溶解量比在纯水中少。",
-        "ku": "Îyona hevpar a ku jixwe heye, li gorî prensîba Le Chatelier hevsengiya helînê ber bi xwêya hişk ve dibe; ji ber vê xwê ji ava paqij kêmtir dihele."
+        "ku": "Îyona hevpar a ku jixwe di derdorê de heye, li gorî prensîba Le Chatelier hevsengiya helbûnê ber bi xwêya hişk ve dikişîne; ji ber vê yekê xwê ji ava paqij kêmtir dihele."
       }
     },
     {
@@ -466,7 +466,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Чем больше общая концентрация растворённых частиц в растворе, тем ниже температура замерзания и выше температура кипения.",
         "ar": "كلما زاد التركيز الكلي للجسيمات المذابة في المحلول، انخفضت درجة التجمد وارتفعت درجة الغليان.",
         "zh": "溶液中溶质粒子的总浓度越大，凝固点越低，沸点越高。",
-        "ku": "Çiqas konsantrasyona giştî ya perçeyên helbûyî di çareseriyê de mezintir be, xala cemidînê ewqas nizmtir û xala kelînê ewqas bilindtir e."
+        "ku": "Tîrbûna giştî ya perçeyên helbûyî di çareseriyê de çiqas mezin be, xala cemidînê ewqas nizm û xala kelînê ewqas bilind e."
       },
       "trap": {
         "tr": "Eşit derişimli NaCl ve AlCl3 çözeltilerinin kaynama noktaları aynıdır.",
@@ -476,7 +476,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Температуры кипения растворов NaCl и AlCl3 равных концентраций одинаковы.",
         "ar": "محلولا NaCl وAlCl3 المتساويان في التركيز لهما درجة الغليان نفسها.",
         "zh": "等浓度的 NaCl 和 AlCl3 溶液的沸点相同。",
-        "ku": "Xalên kelandinê yên pîvazên wekhev ên çareseriyên NaCl û AlCl3 yek in."
+        "ku": "Xalên kelînê yên çareseriyên NaCl û AlCl3 yên bi tîrbûna wekhev yek in."
       },
       "whyTrapIsFalse": {
         "tr": "Kaynama noktası yükselmesi molar derişime değil tanecik derişimine bağlıdır; eşit derişimde AlCl3 4, NaCl 2 tanecik verdiğinden AlCl3 çözeltisi daha yüksek sıcaklıkta kaynar.",
@@ -486,7 +486,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Повышение температуры кипения зависит не от молярной концентрации, а от концентрации частиц; при одинаковой концентрации AlCl3 даёт 4 частицы, а NaCl — 2, поэтому раствор AlCl3 кипит при более высокой температуре.",
         "ar": "يعتمد الارتفاع في درجة الغليان على تركيز الجسيمات لا على التركيز المولاري؛ فعند تساوي التركيز يعطي AlCl3 أربعة جسيمات وNaCl جسيمين، لذا يغلي محلول AlCl3 عند درجة حرارة أعلى.",
         "zh": "沸点升高取决于粒子浓度，而不是物质的量浓度；浓度相同时 AlCl3 电离出 4 个粒子而 NaCl 只有 2 个，所以 AlCl3 溶液的沸点更高。",
-        "ku": "Bilindbûna xala kelandinê bi tîrbûna perçeyan ve girêdayî ye; di heman tîrbûnê de AlCl3 4 û NaCl 2 perçe didin, ji ber vê çareseriya AlCl3 di germahiyeke bilindtir de dikele."
+        "ku": "Bilindbûna xala kelînê ne bi tîrbûna molar a pêkhateyê, lê bi tîrbûna perçeyan ve girêdayî ye; di tîrbûna wekhev de AlCl3 4 perçe, NaCl 2 perçe dide, ji ber vê yekê çareseriya AlCl3 di germahiyeke bilindtir de dikele."
       }
     },
     {
@@ -499,7 +499,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Раствор, содержащий при данной температуре наибольшее возможное количество растворённого вещества, называют насыщенным; пересыщенный раствор содержит растворённого вещества больше, чем позволяет растворимость, он неустойчив, и при внесении кристалла-затравки избыток вещества кристаллизуется.",
         "ar": "المحلول الذي يحتوي عند درجة حرارة معينة على أكبر كمية يمكنه إذابتها من المذاب هو محلول مشبع؛ أما المحلول فوق المشبع، الذي يحتوي على مذاب أكثر من الذائبية، فغير مستقر، وعند إضافة بلورة بادئة يتبلور المذاب الزائد.",
         "zh": "在一定温度下含有所能溶解的最大量溶质的溶液是饱和溶液；所含溶质超过溶解度的过饱和溶液不稳定，加入晶种后多余的溶质会结晶析出。",
-        "ku": "Çareseriya ku di germahiyeke diyar de herî zêde helbûyiya ku dikare bihelîne tê de heye, têr e; çareseriya zêde-têr, ku ji helbûniyê bêtir helbûyî tê de heye, ne-aram e û dema krîstaleke tov tê avêtin helbûyiya zêde krîstal dibe."
+        "ku": "Çareseriya ku di germahiyeke diyar de mîqdara herî zêde ya madeya helbûyî ku dikare bihelîne dihewîne têr e; çareseriya zêdetêr, ku ji helbûniyê bêtir madeya helbûyî dihewîne, nearam e û dema krîstaleke tov lê tê zêdekirin, madeya zêde krîstal dibe."
       },
       "trap": {
         "tr": "Aşırı doymuş çözelti, süresiz olarak kararlı kalan bir denge sistemidir.",
@@ -509,7 +509,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Пересыщенный раствор — равновесная система, которая неограниченно долго остаётся устойчивой.",
         "ar": "المحلول فوق المشبع نظام في حالة اتزان يبقى مستقرًا إلى ما لا نهاية.",
         "zh": "过饱和溶液是一个能无限期保持稳定的平衡体系。",
-        "ku": "Çareseriya pir têrbûyî pergalek hevseng e ku her û her aram dimîne."
+        "ku": "Çareseriya zêdetêr sîstemeke hevsengiyê ye ku bê dawî aram dimîne."
       },
       "whyTrapIsFalse": {
         "tr": "Aşırı doymuş çözelti çözünürlüğün üzerinde çözünen taşır, dengede değildir; küçük bir sarsıntı ya da aşı kristali fazla çözünenin hemen kristallenmesine yol açar.",
@@ -519,7 +519,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Пересыщенный раствор содержит растворённого вещества больше, чем позволяет растворимость, и не находится в равновесии; лёгкое встряхивание или кристалл-затравка вызывают немедленную кристаллизацию избытка.",
         "ar": "المحلول فوق المشبع يحمل مذابًا أكثر من ذائبيته ولا يكون في حالة اتزان؛ فهزة خفيفة أو بلورة بادئة تجعل الفائض يتبلور فورًا.",
         "zh": "过饱和溶液所含溶质超过其溶解度，并不处于平衡状态；轻微震动或加入晶种都会使多余的溶质立即结晶析出。",
-        "ku": "Çareseriya zêde-têr ji helbûniya xwe bêtir helbûyî hildigire û ne di hevsengiyê de ye; lerzeke sivik an krîstaleke tov dibe sedem ku zêdeyî yekser krîstal bibe."
+        "ku": "Çareseriya zêdetêr ji helbûniya xwe bêtir madeya helbûyî hildigire û ne di hevsengiyê de ye; lerzeke piçûk an krîstaleke tov dibe sedem ku madeya zêde yekser krîstal bibe."
       }
     },
     {
@@ -532,7 +532,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "При открывании бутылки с газированным напитком давление падает, и CO2 выделяется из раствора в виде пузырьков.",
         "ar": "عند فتح غطاء زجاجة المشروب الغازي ينخفض الضغط فيخرج غاز CO2 من المحلول على شكل فقاعات.",
         "zh": "打开汽水瓶盖时，压强降低，CO2 气体以气泡形式从溶液中逸出。",
-        "ku": "Dema ku kapika sodayê tê vekirin, gaza CO2 ji çareseriyê di şiklê bilbilan de derdikeve ku zext dakeve."
+        "ku": "Dema qapaxa gazozê tê vekirin, ji ber ku zext dadikeve, gaza CO2 wek bilbil ji çareseriyê vediqete."
       },
       "trap": {
         "tr": "Gazoz şişesinin kapağı açıldığında CO2'nin içecekteki çözünürlüğü artar.",
@@ -552,7 +552,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "При открывании парциальное давление CO2 над напитком падает; по закону Генри растворимость уменьшается, а не растёт, и избыток газа выделяется пузырьками.",
         "ar": "عند فتح الغطاء ينخفض الضغط الجزئي لـ CO2 فوق المشروب؛ ووفق قانون هنري تقل الذائبية ولا تزداد، فيخرج الغاز الزائد على شكل فقاعات.",
         "zh": "打开瓶盖后饮料上方 CO2 的分压降低；根据亨利定律，溶解度减小而不是增大，多余的气体以气泡形式逸出。",
-        "ku": "Dema qapax vedibe zexta parçeyî ya CO2 dadikeve; li gorî zagona Henry helbûnî zêde nabe, kêm dibe û gaza zêde wek bilbil derdikeve."
+        "ku": "Dema qapax vedibe, zexta qismî ya CO2 di şûşeyê de dadikeve; li gorî zagona Henry helbûnî zêde nabe, kêm dibe û gaza zêde wek bilbil vediqete."
       }
     }
   ],
@@ -567,7 +567,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Повышение температуры кипения",
         "ar": "الارتفاع في درجة الغليان",
         "zh": "沸点升高",
-        "ku": "Bilindbûna xala kelandinê"
+        "ku": "Bilindbûna Xala Kelînê"
       },
       "conceptB": {
         "tr": "Donma Noktası Alçalması",
@@ -577,7 +577,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Понижение температуры замерзания",
         "ar": "الانخفاض في درجة التجمد",
         "zh": "凝固点降低",
-        "ku": "Daketina xala cemidînê"
+        "ku": "Daketina Xala Cemidînê"
       },
       "distinction": {
         "tr": "Kaynama noktası yükselmesi, çözeltinin kaynamaya başlama sıcaklığının saf çözücüden ne kadar yüksek olduğudur (ΔTk = Kk * m * i, su için Kk = 0,52); donma noktası alçalması ise donmaya başlama sıcaklığının ne kadar düşük olduğudur (ΔTd = Kd * m * i, su için Kd = 1,86). Aynı sulu çözeltide Kd > Kk olduğundan donma noktası alçalması daha büyüktür.",
@@ -587,7 +587,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Повышение температуры кипения показывает, насколько температура кипения раствора выше, чем у чистого растворителя (ΔTкип = Kэб * m * i, для воды Kэб = 0,52); понижение температуры замерзания показывает, насколько температура начала замерзания раствора ниже (ΔTзам = Kкр * m * i, для воды Kкр = 1,86). Для одного и того же водного раствора Kкр > Kэб, поэтому понижение температуры замерзания больше.",
         "ar": "الارتفاع في درجة الغليان هو مقدار زيادة درجة غليان المحلول على درجة غليان المذيب النقي (ΔTb = Kb * m * i، وللماء Kb = 0.52)؛ أما الانخفاض في درجة التجمد فهو مقدار نقصان درجة تجمد المحلول عن درجة تجمد المذيب النقي (ΔTf = Kf * m * i، وللماء Kf = 1.86). وفي المحلول المائي نفسه Kf > Kb، لذا يكون الانخفاض في درجة التجمد أكبر.",
         "zh": "沸点升高指溶液的沸点比纯溶剂高出多少(ΔTb = Kb * m * i，水的 Kb = 0.52)；凝固点降低指溶液的凝固点比纯溶剂低多少(ΔTf = Kf * m * i，水的 Kf = 1.86)。同一水溶液中 Kf > Kb，所以凝固点降低值更大。",
-        "ku": "Bilindbûna xala kelandinê ew e ku germahiya kelandina çareseriyê çiqas ji ya helkerê paqij bilindtir e (ΔTk = Kk * m * i, ji bo avê Kk = 0,52); daketina xala cemidînê ew e ku germahiya cemidînê çiqas nizmtir e (ΔTd = Kd * m * i, ji bo avê Kd = 1,86). Di heman çareseriya avî de Kd > Kk e, ji ber vê daketina xala cemidînê mezintir e."
+        "ku": "Bilindbûna xala kelînê ew e ku germahiya destpêka kelîna çareseriyê çiqas ji ya helkera paqij bilindtir e (ΔTk = Kk * m * i, ji bo avê Kk = 0,52); daketina xala cemidînê ew e ku germahiya destpêka cemidînê çiqas nizmtir e (ΔTd = Kd * m * i, ji bo avê Kd = 1,86). Di heman çareseriya avî de Kd > Kk e, ji ber vê yekê daketina xala cemidînê mezintir e."
       }
     },
     {
@@ -600,7 +600,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Эндотермическое растворение",
         "ar": "الذوبان الماص للحرارة",
         "zh": "吸热溶解",
-        "ku": "Helîna endotermîk"
+        "ku": "Helbûna Endotermîk"
       },
       "conceptB": {
         "tr": "Ekzotermik Çözünme",
@@ -610,7 +610,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Экзотермическое растворение",
         "ar": "الذوبان الطارد للحرارة",
         "zh": "放热溶解",
-        "ku": "Helîna ekzotermîk"
+        "ku": "Helbûna Ekzotermîk"
       },
       "distinction": {
         "tr": "Endotermik çözünmede ısı alınır ve sıcaklık arttıkça çözünürlük artar; ekzotermik çözünmede ise ısı açığa çıkar ve sıcaklık arttıkça çözünürlük azalır.",
@@ -620,7 +620,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Эндотермическое растворение идёт с поглощением теплоты, и растворимость растёт с повышением температуры; экзотермическое растворение идёт с выделением теплоты, и растворимость уменьшается с повышением температуры.",
         "ar": "الذوبان الماص للحرارة يمتص حرارة وتزداد فيه الذائبية بارتفاع درجة الحرارة؛ أما الذوبان الطارد للحرارة فيُطلق حرارة وتقل فيه الذائبية بارتفاع درجة الحرارة.",
         "zh": "吸热溶解会吸收热量，溶解度随温度升高而增大；放热溶解会放出热量，溶解度随温度升高而减小。",
-        "ku": "Di helîna endotermîk de germ tê girtin û bi bilindbûna germahiyê re helbûnî zêde dibe; di helîna ekzotermîk de germ tê berdan û bi bilindbûna germahiyê re helbûnî kêm dibe."
+        "ku": "Di helbûna endotermîk de germ tê kişandin û her ku germahî bilind dibe helbûnî zêde dibe; di helbûna ekzotermîk de germ derdikeve û her ku germahî bilind dibe helbûnî kêm dibe."
       }
     },
     {
@@ -643,7 +643,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Понижение давления пара",
         "ar": "انخفاض ضغط البخار",
         "zh": "蒸气压下降",
-        "ku": "Kêmbûna zexta buharê"
+        "ku": "Daketina Zexta Buharê"
       },
       "distinction": {
         "tr": "Ozmozda çözücü molekülleri yarı geçirgen zardan seyreltik çözeltiden derişik çözeltiye geçer; buhar basıncı alçalmasında ise uçucu olmayan çözünen, çözeltinin buhar basıncını aynı sıcaklıktaki saf çözücününkinden düşük yapar.",
@@ -653,7 +653,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Осмос — переход молекул растворителя через полупроницаемую мембрану из разбавленного раствора в концентрированный; понижение давления пара — явление, при котором нелетучее растворённое вещество делает давление пара раствора ниже, чем у чистого растворителя при той же температуре.",
         "ar": "في الأسموزية تنتقل جزيئات المذيب عبر غشاء شبه منفذ من المحلول المخفف إلى المحلول المركز؛ أما في انخفاض ضغط البخار فيجعل المذاب غير المتطاير ضغط بخار المحلول أقل من ضغط بخار المذيب النقي عند درجة الحرارة نفسها.",
         "zh": "渗透是指溶剂分子透过半透膜从稀溶液进入浓溶液；蒸气压下降是指不挥发性溶质使溶液的蒸气压低于同温度下纯溶剂的蒸气压。",
-        "ku": "Di osmozê de molekulên helker di parzûna nîv-derbasbar re ji çareseriya sivik ber bi çareseriya tîr ve derbas dibin; di kêmbûna zexta buharê de maddeya helbûyî ya ne-firok zexta buharê ya çareseriyê ji ya helkerê paqij di heman germahiyê de nizmtir dike."
+        "ku": "Di osmozê de molekulên helker di perdeya nîvderbasbar re ji çareseriya sist ber bi çareseriya tîr derbas dibin; di daketina zexta buharê de madeya helbûyî ya nefirok zexta buharê ya çareseriyê ji ya helkera paqij a di heman germahiyê de nizmtir dike."
       }
     },
     {
@@ -676,7 +676,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Моляльная концентрация (m)",
         "ar": "التركيز المولالي (m)",
         "zh": "质量摩尔浓度(m)",
-        "ku": "Konsantrasyona molal (m)"
+        "ku": "Tîrbûna Molal (m)"
       },
       "distinction": {
         "tr": "Van 't Hoff faktörü, 1 mol çözünenin çözündüğünde oluşturduğu tanecik mol sayısıdır (glikoz = 1, NaCl = 2); molal derişim ise 1 kg çözücüde çözünen maddenin mol sayısıdır.",
@@ -686,7 +686,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Коэффициент Вант-Гоффа — число молей частиц, образующихся при растворении 1 моль вещества (глюкоза = 1, NaCl = 2); моляльная концентрация (m) — число молей растворённого вещества в 1 кг растворителя.",
         "ar": "عامل فانت هوف هو عدد مولات الجسيمات الناتجة عند ذوبان 1 mol من المذاب (الجلوكوز = 1، NaCl = 2)؛ أما التركيز المولالي فهو عدد مولات المذاب في 1 kg من المذيب.",
         "zh": "范特霍夫因子是 1 mol 溶质溶解后形成的粒子的物质的量(葡萄糖 = 1，NaCl = 2)；而质量摩尔浓度(m)是每 1 kg 溶剂中所含溶质的物质的量。",
-        "ku": "Faktora van 't Hoff hejmara molên perçeyan e ku dema 1 mol maddeya helbûyî dihele çêdibin (glukoz = 1, NaCl = 2); konsantrasyona molal hejmara molên maddeya helbûyî ye di 1 kg helkerê de."
+        "ku": "Faktora van 't Hoff hejmara molên perçeyan e ku dema 1 mol madeya helbûyî dihele çêdibin (glîkoz = 1, NaCl = 2); tîrbûna molal (m) hejmara molên madeya helbûyî ye di 1 kg helker de."
       }
     },
     {
@@ -719,7 +719,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Закон Рауля утверждает, что давление пара раствора нелетучего вещества равно давлению пара чистого растворителя, умноженному на мольную долю растворителя; закон Генри утверждает, что растворимость газа в жидкости прямо пропорциональна его парциальному давлению.",
         "ar": "ينص قانون راؤول على أن ضغط بخار محلول يحتوي على مذاب غير متطاير يساوي ضغط بخار المذيب النقي مضروبًا في الكسر المولي للمذيب؛ وينص قانون هنري على أن ذائبية الغاز في السائل تتناسب طرديًا مع ضغطه الجزئي.",
         "zh": "拉乌尔定律指出，含非挥发性溶质的溶液的蒸气压等于纯溶剂的蒸气压乘以溶剂的物质的量分数；而亨利定律指出，气体在液体中的溶解度与该气体的分压成正比。",
-        "ku": "Zagona Raoult dibêje ku zexta buharê ya çareseriyeke bi helbûyiya nefirrok bi lêkdana zexta buharê ya helkerê paqij û pişka molî ya helker re wekhev e; zagona Henry dibêje ku helbûniya gazekê di şilekê de rasterast bi zexta wê ya parçeyî re têkildar e."
+        "ku": "Zagona Raoult dibêje ku zexta buharê ya çareseriyeke ku madeyeke helbûyî ya nefirok tê de heye, bi hasila zexta buharê ya helkera paqij û kerta molî ya helker re wekhev e; zagona Henry dibêje ku helbûniya gazekê di şileyê de bi zexta wê ya qismî re rasterast rêjeyî ye."
       }
     },
     {
@@ -742,7 +742,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Обратный осмос",
         "ar": "التناضح العكسي",
         "zh": "反渗透",
-        "ku": "Osmoza berevajî"
+        "ku": "Osmoza Berevajî"
       },
       "distinction": {
         "tr": "Ozmotik basınç, çözücünün yarı geçirgen zardan derişik çözeltiye geçişini (ozmozu) durdurmak için uygulanması gereken basınçtır; ters ozmoz ise ozmotik basınçtan büyük basınç uygulanarak tuzlu sudan saf su elde edilmesidir.",
@@ -752,7 +752,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Осмотическое давление — давление, которое нужно приложить, чтобы остановить переход растворителя через полупроницаемую мембрану в концентрированный раствор (осмос); обратный осмос — получение чистой воды из солёной при давлении, превышающем осмотическое.",
         "ar": "الضغط الأسموزي هو الضغط اللازم تطبيقه لإيقاف انتقال المذيب عبر غشاء شبه منفذ إلى المحلول المركز (التناضح)؛ أما التناضح العكسي فهو الحصول على ماء نقي من الماء المالح بتطبيق ضغط أكبر من ذلك الضغط.",
         "zh": "渗透压是为阻止溶剂透过半透膜进入浓溶液（渗透）而必须施加的压强；反渗透是施加大于渗透压的压强，从盐水中获得纯水。",
-        "ku": "Zexta osmotîk ew zext e ku divê were sepandin da ku derbasbûna helker di parzûna nîv-derbasbar re ber bi çareseriya tîr (osmoz) were rawestandin; osmoza berevajî bi sepandina zexteke ji zexta osmotîk mezintir, ji ava şor bidestxistina ava paqij e."
+        "ku": "Zexta osmotîk ew zext e ku divê were sepandin da ku derbasbûna helker di perdeya nîvderbasbar re ber bi çareseriya tîr (osmoz) raweste; osmoza berevajî bidestxistina ava paqij e ji ava şor bi sepandina zexteke ji zexta osmotîk mezintir."
       }
     },
     {
@@ -765,7 +765,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Ненасыщенный раствор",
         "ar": "المحلول غير المشبع",
         "zh": "不饱和溶液",
-        "ku": "Çareseriya ne-têr"
+        "ku": "Çareseriya Netêr"
       },
       "conceptB": {
         "tr": "Aşırı Doymuş Çözelti",
@@ -775,7 +775,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Пересыщенный раствор",
         "ar": "المحلول فوق المشبع",
         "zh": "过饱和溶液",
-        "ku": "Çareseriya zêde-têr"
+        "ku": "Çareseriya Zêdetêr"
       },
       "distinction": {
         "tr": "Doymamış çözelti, aynı sıcaklıktaki çözünürlükten daha az çözünen içerir ve bir miktar daha çözünen çözebilir; aşırı doymuş çözelti ise çözünürlükten daha fazla çözünen içeren kararsız bir çözeltidir.",
@@ -785,7 +785,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Ненасыщенный раствор содержит меньше растворённого вещества, чем позволяет растворимость при данной температуре, и может растворить ещё; пересыщенный раствор содержит больше растворённого вещества, чем позволяет растворимость, и неустойчив.",
         "ar": "المحلول غير المشبع يحتوي على كمية من المذاب أقل من الذائبية عند درجة الحرارة نفسها ويمكنه إذابة المزيد؛ أما المحلول فوق المشبع فيحتوي على كمية من المذاب أكثر من الذائبية، وهو غير مستقر.",
         "zh": "不饱和溶液所含溶质少于该温度下的溶解度，还能继续溶解溶质；过饱和溶液所含溶质多于溶解度，是不稳定的溶液。",
-        "ku": "Çareseriya ne-têr ji helbûniya di wê germahiyê de kêmtir helbûyî dihewîne û dikare hinekî din jî bihelîne; çareseriya zêde-têr ji helbûniyê bêtir helbûyî dihewîne û ne-aram e."
+        "ku": "Çareseriya netêr ji helbûniya di wê germahiyê de kêmtir madeya helbûyî dihewîne û hîn dikare hinekî din bihelîne; çareseriya zêdetêr çareseriyeke nearam e ku ji helbûniyê bêtir madeya helbûyî dihewîne."
       }
     },
     {
@@ -808,7 +808,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Раствор глюкозы (i = 1)",
         "ar": "محلول الجلوكوز (i = 1)",
         "zh": "葡萄糖溶液(i = 1)",
-        "ku": "Çareseriya glukozê (i = 1)"
+        "ku": "Çareseriya Glîkozê (i = 1)"
       },
       "distinction": {
         "tr": "Eşit molalitede NaCl çözeltisi glikoz çözeltisine göre iki kat tanecik içerir; bu nedenle donma noktası alçalması ve kaynama noktası yükselmesi yaklaşık iki kat büyüktür.",
@@ -818,7 +818,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Раствор NaCl (i = 2) при одинаковой моляльности содержит вдвое больше частиц, чем раствор глюкозы (i = 1), поэтому понижение температуры замерзания и повышение температуры кипения у него примерно вдвое больше.",
         "ar": "عند تساوي المولالية يحتوي محلول NaCl على ضعف عدد الجسيمات الموجودة في محلول الجلوكوز؛ لذلك يكون كلٌّ من الانخفاض في درجة تجمده والارتفاع في درجة غليانه نحو ضعف ما في محلول الجلوكوز.",
         "zh": "在质量摩尔浓度相同时，NaCl 溶液(i = 2)所含粒子数是葡萄糖溶液(i = 1)的两倍；因此其凝固点降低值和沸点升高值约为后者的两倍。",
-        "ku": "Di heman molalîteyê de çareseriya NaCl du qat ji çareseriya glukozê perçe dihewîne; ji ber vê kêmbûna xala cemidînê û bilindbûna xala kelînê ya wê nêzîkî du qat mezintir e."
+        "ku": "Di heman molalîteyê de çareseriya NaCl (i = 2) du qat ji çareseriya glîkozê (i = 1) bêtir perçe dihewîne; ji ber vê yekê daketina xala cemidînê û bilindbûna xala kelînê ya wê nêzîkî du qat mezintir in."
       }
     }
   ],
@@ -833,7 +833,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Этапы расчёта понижения температуры замерзания",
         "ar": "حساب الانخفاض في درجة التجمد",
         "zh": "凝固点降低的计算步骤",
-        "ku": "Gavên hesabkirina daketina xala cemidînê"
+        "ku": "Gavên Hesabê Daketina Xala Cemidînê"
       },
       "steps": [
         {
@@ -844,7 +844,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Массу растворённого вещества делят на его молярную массу и находят число молей (n)",
           "ar": "تُقسم كتلة المذاب على كتلته المولية لإيجاد عدد المولات (n)",
           "zh": "用溶质的质量除以其摩尔质量，求出物质的量 (n)",
-          "ku": "Girseya helbûyî li girseya wê ya molî tê dabeşkirin û hejmara molan (n) tê dîtin"
+          "ku": "Girseya madeya helbûyî li ser girseya wê ya molî tê dabeşkirin û hejmara molan (n) tê dîtin"
         },
         {
           "tr": "Mol sayısı, çözücünün kilogram cinsinden kütlesine bölünerek molalite (m) bulunur",
@@ -854,7 +854,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Число молей делят на массу растворителя в килограммах и находят моляльность (m)",
           "ar": "يُقسم عدد المولات على كتلة المذيب بالكيلوغرام لإيجاد المولالية (m)",
           "zh": "用物质的量除以溶剂的质量(以 kg 计)，求出质量摩尔浓度 (m)",
-          "ku": "Hejmara molan li girseya helker a bi kîlogramê tê dabeşkirin û molalîte (m) tê dîtin"
+          "ku": "Hejmara molan li ser girseya helker a bi kîlogram tê dabeşkirin û molalîte (m) tê dîtin"
         },
         {
           "tr": "ΔTd = Kd * m * i eşitliğiyle donma noktası alçalması hesaplanır",
@@ -864,7 +864,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "По формуле ΔTзам = Kкр * m * i рассчитывают понижение температуры замерзания",
           "ar": "يُحسب الانخفاض في درجة التجمد من العلاقة ΔTf = Kf * m * i",
           "zh": "用 ΔTf = Kf * m * i 计算凝固点降低值",
-          "ku": "Bi wekheviya ΔTd = Kd * m * i daketina xala cemidînê tê hesabkirin"
+          "ku": "Bi hevkêşeya ΔTd = Kd * m * i daketina xala cemidînê tê hesibandin"
         },
         {
           "tr": "Bulunan ΔTd, saf çözücünün donma noktasından çıkarılarak çözeltinin donmaya başlama sıcaklığı bulunur",
@@ -874,7 +874,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Полученное ΔTзам вычитают из температуры замерзания чистого растворителя и находят температуру, при которой раствор начинает замерзать",
           "ar": "يُطرح ΔTf الناتج من درجة تجمد المذيب النقي لإيجاد درجة الحرارة التي يبدأ عندها المحلول بالتجمد",
           "zh": "用纯溶剂的凝固点减去所得的 ΔTf，求出溶液开始凝固的温度",
-          "ku": "ΔTd ya hatî dîtin ji xala cemidînê ya helkerê paqij tê derxistin û germahiya destpêka cemidîna çareseriyê tê dîtin"
+          "ku": "ΔTd ya hatî dîtin ji xala cemidînê ya helkera paqij tê derxistin û germahiya ku çareserî dest bi cemidînê dike tê dîtin"
         }
       ]
     },
@@ -888,7 +888,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Нагревание и кипение ненасыщенного раствора соли",
         "ar": "تسخين محلول ملحي غير مشبع وغليانه",
         "zh": "不饱和食盐水的加热与沸腾",
-        "ku": "Germkirin û kelandina ava xwê ya ne-têr"
+        "ku": "Germkirin û Kelîna Ava Xwê ya Netêr"
       },
       "steps": [
         {
@@ -899,7 +899,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "При нагревании температура раствора и давление его пара возрастают",
           "ar": "عند تسخين المحلول ترتفع درجة حرارته ويزداد ضغط بخاره",
           "zh": "加热时溶液的温度和蒸气压升高",
-          "ku": "Dema çareserî tê germkirin germahî û zexta buharê ya wê zêde dibin"
+          "ku": "Her ku çareserî tê germkirin, germahî û zexta buharê ya wê zêde dibin"
         },
         {
           "tr": "Buhar basıncı dış basınca eşitlenince çözelti, saf suyun kaynama noktasından yüksek bir sıcaklıkta kaynamaya başlar",
@@ -909,7 +909,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Когда давление пара сравнивается с внешним давлением, раствор начинает кипеть при температуре выше температуры кипения чистой воды",
           "ar": "عندما يتساوى ضغط بخاره مع الضغط الخارجي يبدأ المحلول بالغليان عند درجة حرارة أعلى من درجة غليان الماء النقي",
           "zh": "蒸气压等于外压时，溶液在高于纯水沸点的温度下开始沸腾",
-          "ku": "Dema zexta buharê digihîje zexta derve, çareserî di germahiyeke ji xala kelandinê ya ava paqij bilindtir de dest bi kelandinê dike"
+          "ku": "Dema zexta buharê digihîje zexta derve, çareserî di germahiyeke ji xala kelînê ya ava paqij bilindtir de dest bi kelînê dike"
         },
         {
           "tr": "Kaynama sürerken su buharlaşır, çözelti derişir ve sıcaklık yükselmeye devam eder",
@@ -919,7 +919,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "В ходе кипения вода испаряется, раствор становится более концентрированным, и температура продолжает расти",
           "ar": "مع استمرار الغليان يتبخر الماء فيزداد تركيز المحلول وتستمر درجة الحرارة في الارتفاع",
           "zh": "沸腾过程中水不断蒸发，溶液变浓，温度继续升高",
-          "ku": "Di dema kelandinê de av dibe buhar, çareserî tîrtir dibe û germahî her bilind dibe"
+          "ku": "Dema kelîn didome av dibe buhar, çareserî tîrtir dibe û germahî her bilind dibe"
         },
         {
           "tr": "Çözelti doygun hâle gelince sıcaklık sabit kalır ve tuz kristallenmeye başlar",
@@ -943,7 +943,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Приготовление пересыщенного раствора (твёрдое вещество, растворимость которого растёт с температурой)",
         "ar": "تحضير محلول فوق مشبع (مادة صلبة تزداد ذائبيتها بارتفاع درجة الحرارة)",
         "zh": "过饱和溶液的制备（溶解度随温度升高而增大的固体）",
-        "ku": "Amadekirina çareseriya zêde-têr (hişkeke ku helbûniya wê bi germahiyê re zêde dibe)"
+        "ku": "Amadekirina Çareseriya Zêdetêr (Madeyeke Hişk a ku Helbûniya Wê bi Germahiyê re Zêde Dibe)"
       },
       "steps": [
         {
@@ -954,7 +954,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "При высокой температуре готовят насыщенный раствор с осадком на дне",
           "ar": "يُحضَّر عند درجة حرارة مرتفعة محلول مشبع يوجد في قاعه راسب صلب",
           "zh": "在较高温度下配制底部留有未溶固体的饱和溶液",
-          "ku": "Di germahiya bilind de çareseriyeke têr a ku li binê wê hişk heye tê amadekirin"
+          "ku": "Di germahiya bilind de çareseriyeke têr tê amadekirin ku li binê wê madeya hişk heye"
         },
         {
           "tr": "Sıcak çözelti süzülerek çözünmeden kalan katı ayrılır",
@@ -964,7 +964,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Горячий раствор фильтруют, отделяя нерастворившееся твёрдое вещество",
           "ar": "يُرشَّح المحلول الساخن لفصل المادة الصلبة التي لم تذب",
           "zh": "趁热过滤，除去未溶解的固体",
-          "ku": "Çareseriya germ tê parzûnkirin û hişka ku nehelîyaye tê veqetandin"
+          "ku": "Çareseriya germ tê parzûnkirin û madeya hişk a nehelbûyî tê veqetandin"
         },
         {
           "tr": "Süzüntü, sarsılmadan yavaşça oda sıcaklığına soğutulur",
@@ -974,7 +974,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Фильтрат медленно, без встряхивания, охлаждают до комнатной температуры",
           "ar": "يُبرَّد الراشح ببطء إلى درجة حرارة الغرفة دون رجّه",
           "zh": "让滤液在不受扰动的情况下缓慢冷却到室温",
-          "ku": "Parzûnkirî bê lerizandin hêdî hêdî heta germahiya odeyê tê sarkirin"
+          "ku": "Şileya parzûnkirî bêyî hejandin hêdî hêdî heta germahiya odeyê tê sarkirin"
         },
         {
           "tr": "Soğuk çözeltiye aşı kristali atılır ve çözünürlüğü aşan miktar hızla kristallenir",
@@ -984,7 +984,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "В холодный раствор вносят кристалл-затравку, и избыток вещества сверх растворимости быстро кристаллизуется",
           "ar": "تُضاف بلورة بادئة إلى المحلول البارد فتتبلور بسرعة الكمية الزائدة على الذائبية",
           "zh": "向冷却后的溶液中加入晶种，超过溶解度的那部分溶质迅速结晶析出",
-          "ku": "Krîstaleke tov tê avêtin nav çareseriya sar û mîqdara ji helbûniyê zêdetir zû krîstal dibe"
+          "ku": "Krîstaleke tov tê avêtin nav çareseriya sar û mîqdara ku ji helbûniyê zêdetir e zû krîstal dibe"
         }
       ]
     },
@@ -998,7 +998,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Работа с кривой растворимости",
         "ar": "قراءة منحنى الذائبية",
         "zh": "读取溶解度曲线",
-        "ku": "Xwendina xêza helbûnîyê"
+        "ku": "Xwendina Xêza Helbûniyê"
       },
       "steps": [
         {
@@ -1009,7 +1009,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "По графику определяют растворимость вещества (содержание в насыщенном растворе) при данной температуре",
           "ar": "تُقرأ من الرسم البياني قيمة الذائبية (التشبع) عند درجة حرارة معينة",
           "zh": "从曲线上读出指定温度下的溶解度",
-          "ku": "Nirxa têrbûnê di germahiyek diyar de ji grafikê tê xwendin."
+          "ku": "Ji grafîkê nirxa têrbûnê di germahiyeke diyar de tê xwendin"
         },
         {
           "tr": "100 gram sudaki maksimum çözünen madde belirlenir",
@@ -1019,7 +1019,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Находят наибольшую массу вещества, которая может раствориться в 100 г воды",
           "ar": "تُحدَّد أكبر كتلة من المادة يمكن أن تذوب في 100 g من الماء",
           "zh": "确定 100 g 水中最多能溶解的溶质质量",
-          "ku": "Di 100 gram avê de rêjeya herî zêde tê diyarkirin"
+          "ku": "Mîqdara herî zêde ya madeya ku di 100 gram avê de dihele tê diyarkirin"
         },
         {
           "tr": "Verilen su miktarıyla orantı kurularak kapasite bulunur",
@@ -1029,7 +1029,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Составляя пропорцию для данной массы воды, находят, сколько вещества может в ней раствориться",
           "ar": "تُوجد بالتناسب أكبر كمية يمكن إذابتها في كمية الماء المعطاة",
           "zh": "按所给水的质量列比例式，求出最多能溶解的量",
-          "ku": "Kapasîteyê bi rêjekirina mîqdara ava ku tê dayîn tê dîtin."
+          "ku": "Bi rêjeyekê li gorî mîqdara ava dayî, kapasîte tê dîtin"
         },
         {
           "tr": "Sıcaklık değiştiğinde çöken veya gereken katı hesaplanır",
@@ -1039,7 +1039,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Рассчитывают массу вещества, которая выпадает в осадок или которую нужно добавить при изменении температуры",
           "ar": "تُحسب كتلة المادة الصلبة التي تترسب أو التي يلزم إضافتها عند تغير درجة الحرارة",
           "zh": "计算温度变化时析出的或需补加的固体质量",
-          "ku": "Dema ku germahî diguhere hişka ku diherike an hewce dike hesab bikin"
+          "ku": "Dema germahî diguhere, mîqdara madeya hişk a ku dinişe an pêwîst e tê hesibandin"
         }
       ]
     }
@@ -1055,7 +1055,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Раствор приготовлен растворением 1 моль NaCl в 1 кг чистой воды. При какой температуре (°C) он начинает замерзать при давлении 1 атм? (Для воды Kкр = 1,86 °C*кг/моль)",
         "ar": "ما درجة الحرارة (°C) التي يبدأ عندها بالتجمد، تحت ضغط 1 atm، المحلولُ المحضَّر بإذابة 1 mol من NaCl في 1 kg من الماء النقي؟ (للماء Kf = 1.86 °C*kg/mol)",
         "zh": "将 1 mol NaCl 溶于 1 kg 纯水中配成溶液，在 1 atm 下该溶液开始凝固的温度是多少 °C？(水的 Kf = 1.86 °C*kg/mol)",
-        "ku": "Germahiya cemidandinê ya li 1 atm ê çareya ku bi helandina 1 mol NaCl di 1 kg ava paqij de tê amadekirin çend e? (Kd ji bo avê = 1,86 °C*kg/mol)"
+        "ku": "Çareseriyek bi helandina 1 mol NaCl di 1 kg ava paqij de tê amadekirin. Ev çareserî di 1 atm de di çend °C de dest bi cemidînê dike? (Ji bo avê Kd = 1,86 °C*kg/mol)"
       },
       "options": [
         {
@@ -1118,7 +1118,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "NaCl -> Na+ + Cl- (i = 2). m = 1 моль / 1 кг = 1 моль/кг. ΔTзам = Kкр * m * i = 1,86 * 1 * 2 = 3,72 °C. Температура замерзания = 0 - 3,72 = -3,72 °C.",
         "ar": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTf = Kf * m * i = 1.86 * 1 * 2 = 3.72 °C. درجة التجمد = 0 - 3.72 = -3.72 °C.",
         "zh": "NaCl -> Na+ + Cl- (i = 2)。m = 1 mol / 1 kg = 1 mol/kg。ΔTf = Kf * m * i = 1.86 * 1 * 2 = 3.72 °C。凝固点 = 0 - 3.72 = -3.72 °C。",
-        "ku": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTd = Kd * m * i = 1,86 * 1 * 2 = 3,72 °C. Xala cemidandinê = 0 - 3,72 = -3,72 °C."
+        "ku": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTd = Kd * m * i = 1,86 * 1 * 2 = 3,72 °C. Xala cemidînê = 0 - 3,72 = -3,72 °C."
       }
     },
     {
@@ -1131,7 +1131,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Какой из следующих водных растворов с моляльностью 1 моль/кг начинает кипеть при самой высокой температуре при внешнем давлении 1 атм?",
         "ar": "أيّ المحاليل المائية الآتية، وتركيز كلٍّ منها 1 m، يبدأ بالغليان عند أعلى درجة حرارة تحت ضغط خارجي 1 atm؟",
         "zh": "下列质量摩尔浓度均为 1 mol/kg 的水溶液中，哪一种在 1 atm 外压下开始沸腾的温度最高？",
-        "ku": "Kîjan ji 1 çareserîyên avî yên molal ên jêrîn di 1 atm zexta derve de xwedî germahiya herî kelandinê ye?"
+        "ku": "Ji van çareseriyên avî yên 1 molal, kîjan di zexta derve ya 1 atm de di germahiya herî bilind de dest bi kelînê dike?"
       },
       "options": [
         {
@@ -1194,7 +1194,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Для AlCl3 i = 4 (1 Al3+ + 3 Cl-). Общая концентрация частиц у этого раствора наибольшая (4 моль/кг), поэтому и повышение температуры кипения наибольшее.",
         "ar": "لـ AlCl3 يكون i = 4 (1 Al3+ + 3 Cl-). وبما أن التركيز الكلي للجسيمات هو الأعلى (4 m)، فإن الارتفاع في درجة الغليان هو الأكبر.",
         "zh": "对于 AlCl3，i = 4(1 Al3+ + 3 Cl-)。总粒子浓度最高(4 mol/kg)，因此沸点升高最大。",
-        "ku": "Ji bo AlCl3 i = 4 (1 Al3+ + 3 Cl-). Ji ber ku tevheviya parçê herî bilind e (4 m), zêdebûna xala kelandinê herî zêde ye."
+        "ku": "Ji bo AlCl3 i = 4 (1 Al3+ + 3 Cl-). Ji ber ku tîrbûna giştî ya perçeyan herî bilind e (4 m), bilindbûna xala kelînê herî mezin e."
       }
     },
     {
@@ -1207,7 +1207,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Раствор приготовлен растворением 18 г глюкозы (C6H12O6) в 200 г чистой воды. При какой температуре (°C) он начинает кипеть при внешнем давлении 1 атм? (C6H12O6 = 180 г/моль; Kэб воды = 0,52 °C*кг/моль)",
         "ar": "حُضّر محلول بإذابة 18 g من الجلوكوز (C6H12O6) في 200 g من الماء النقي. عند أي درجة حرارة (°C) يبدأ بالغليان تحت ضغط خارجي 1 atm؟ (C6H12O6 = 180 g/mol؛ Kb للماء = 0.52 °C*kg/mol)",
         "zh": "将 18 g 葡萄糖(C6H12O6)溶于 200 g 纯水中配成溶液。在 1 atm 外压下，该溶液开始沸腾的温度是多少 °C？(C6H12O6 = 180 g/mol；水的 Kb = 0.52 °C*kg/mol)",
-        "ku": "Çareseriyek bi helandina 18 g glukozê (C6H12O6) di 200 g ava paqij de tê amadekirin. Di zexta derve ya 1 atm de, çareserî di çend °C de dest bi kelandinê dike? (C6H12O6 = 180 g/mol; ji bo avê Kk = 0,52 °C*kg/mol)"
+        "ku": "Çareseriyek bi helandina 18 g glîkozê (C6H12O6) di 200 g ava paqij de tê amadekirin. Ev çareserî di zexta derve ya 1 atm de di çend °C de dest bi kelînê dike? (C6H12O6 = 180 g/mol; ji bo avê Kk = 0,52 °C*kg/mol)"
       },
       "options": [
         {
@@ -1270,7 +1270,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "n = 18 / 180 = 0,1 моль. Масса растворителя 200 г = 0,2 кг, поэтому m = 0,1 / 0,2 = 0,5 моль/кг. Глюкоза — молекулярное вещество, i = 1. ΔTкип = Kэб * m * i = 0,52 * 0,5 * 1 = 0,26 °C; температура кипения = 100 + 0,26 = 100,26 °C. Если не перевести массу воды в килограммы и взять её за 1 кг, получится 100,052 °C; если считать глюкозу диссоциирующей (i = 2) — 100,52 °C; если взять Kкр вместо Kэб — 100,93 °C.",
         "ar": "n = 18 / 180 = 0.1 mol. المذيب 200 g = 0.2 kg، إذن m = 0.1 / 0.2 = 0.5 m. الجلوكوز مادة جزيئية، لذا i = 1. ΔTb = Kb * m * i = 0.52 * 0.5 * 1 = 0.26 °C؛ درجة الغليان = 100 + 0.26 = 100.26 °C. أخذ الماء على أنه 1 kg دون تحويل يعطي 100.052 °C، واعتبار الجلوكوز متأينًا (i = 2) يعطي 100.52 °C، واستخدام Kf بدل Kb يعطي 100.93 °C.",
         "zh": "n = 18 / 180 = 0.1 mol。溶剂 200 g = 0.2 kg，所以 m = 0.1 / 0.2 = 0.5 mol/kg。葡萄糖是分子型物质，i = 1。ΔTb = Kb * m * i = 0.52 * 0.5 * 1 = 0.26 °C；沸点 = 100 + 0.26 = 100.26 °C。若不把水的质量换算成 kg 而按 1 kg 计算，得 100.052 °C；若把葡萄糖当作电离(i = 2)，得 100.52 °C；若误用 Kf 代替 Kb，得 100.93 °C。",
-        "ku": "n = 18 / 180 = 0,1 mol. Helker 200 g = 0,2 kg e, ji ber vê m = 0,1 / 0,2 = 0,5 m. Glukoz molekulî ye, i = 1. ΔTk = Kk * m * i = 0,52 * 0,5 * 1 = 0,26 °C; germahiya kelandinê = 100 + 0,26 = 100,26 °C. Avê bê veguhertin wek 1 kg girtin 100,052 °C, glukozê wek îyonîzebûyî (i = 2) girtin 100,52 °C, li şûna Kk bikaranîna Kd 100,93 °C dide."
+        "ku": "n = 18 / 180 = 0,1 mol. Helker 200 g = 0,2 kg e, ji ber vê yekê m = 0,1 / 0,2 = 0,5 m. Glîkoz molekulî ye, loma i = 1. ΔTk = Kk * m * i = 0,52 * 0,5 * 1 = 0,26 °C; germahiya kelînê 100 + 0,26 = 100,26 °C. Girtina avê wek 1 kg bêyî veguhertinê 100,052 °C, hesibandina glîkozê wek îyonîzebûyî (i = 2) 100,52 °C, bikaranîna Kd li şûna Kk jî 100,93 °C dide."
       }
     },
     {
@@ -1283,7 +1283,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Раствор, приготовленный растворением некоторого количества NaCl в чистой воде, сравнивают с чистой водой при одинаковом внешнем давлении. Какие из утверждений о растворе верны? I. Он начинает кипеть при более высокой температуре. II. Во время кипения его температура остаётся постоянной. III. Давление его пара при той же температуре ниже.",
         "ar": "يُقارن محلول حُضّر بإذابة كمية من NaCl في الماء النقي بالماء النقي عند الضغط الخارجي نفسه. أي العبارات الآتية عن المحلول صحيحة؟ I. يبدأ بالغليان عند درجة حرارة أعلى. II. تبقى درجة حرارته ثابتة أثناء الغليان. III. ضغط بخاره عند درجة الحرارة نفسها أقل.",
         "zh": "将一定量 NaCl 溶于纯水配成溶液，在相同外压下与纯水比较。关于该溶液，有下列说法：I. 开始沸腾的温度更高。II. 沸腾过程中温度保持不变。III. 同一温度下其蒸气压更低。其中正确的是哪些？",
-        "ku": "Çareseriyeke ku bi helandina hinek NaCl di ava paqij de hatiye amadekirin, di heman zexta derve de bi ava paqij re tê berhevkirin. Kîjan ji van gotinan ji bo çareseriyê rast in? I. Di germahiyeke bilindtir de dest bi kelandinê dike. II. Di dema kelandinê de germahiya wê sabît dimîne. III. Di heman germahiyê de zexta wê ya buharê nizmtir e."
+        "ku": "Çareseriyeke ku bi helandina hinek NaCl di ava paqij de hatiye amadekirin, di heman zexta derve de bi ava paqij re tê berhevdan. Li gorî vê, kîjan ji van gotinan ji bo çareseriyê rast in? I. Di germahiyeke bilindtir de dest bi kelînê dike. II. Di dema kelînê de germahiya wê sabît dimîne. III. Di heman germahiyê de zexta wê ya buharê nizmtir e."
       },
       "options": [
         {
@@ -1346,7 +1346,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "I верно: растворённые частицы повышают температуру кипения. II неверно: при кипении вода испаряется, раствор становится концентрированнее, и температура кипения постепенно растёт; кипение при постоянной температуре характерно для чистых веществ. III верно: растворённое вещество уменьшает мольную долю растворителя, поэтому давление пара ниже, чем у чистой воды при той же температуре.",
         "ar": "I صحيحة: جسيمات المذاب ترفع درجة الغليان. II خاطئة: أثناء الغليان يتبخر الماء فيزداد تركيز المحلول وترتفع درجة غليانه تدريجيًا؛ والغليان عند درجة حرارة ثابتة صفة للمواد النقية. III صحيحة: المذاب يخفض الكسر المولي للمذيب، فيكون ضغط البخار أقل من ضغط بخار الماء النقي عند درجة الحرارة نفسها.",
         "zh": "I 正确：溶质粒子使沸点升高。II 错误：沸腾时水不断蒸发，溶液变浓，沸腾温度逐渐升高；在恒定温度下沸腾是纯物质的特征。III 正确：溶质降低了溶剂的物质的量分数，所以同温下蒸气压低于纯水。",
-        "ku": "I rast e: perçeyên helbûyî xala kelandinê bilind dikin. II şaş e: dema dikele av dibe buhar, çareserî tîrtir dibe û germahiya kelandinê hêdî hêdî bilind dibe; kelandina di germahiya sabît de taybetî madeyên paqij e. III rast e: helbûyî pişka molî ya helker kêm dike, ji ber vê di heman germahiyê de zexta buharê ji ya ava paqij nizmtir e."
+        "ku": "I rast e: perçeyên helbûyî xala kelînê bilind dikin. II şaş e: dema dikele av dibe buhar, çareserî tîrtir dibe û germahiya kelînê hêdî hêdî bilind dibe; kelîna di germahiya sabît de taybetmendiya madeyên paqij e. III rast e: madeya helbûyî kerta molî ya helker kêm dike, ji ber vê yekê di heman germahiyê de zexta buharê ji ya ava paqij nizmtir e."
       }
     },
     {
@@ -1359,7 +1359,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "В каком варианте правильно сравнены температуры начала кипения водных растворов I. 0,2 моль/кг C6H12O6, II. 0,1 моль/кг NaCl, III. 0,1 моль/кг CaCl2 при одинаковом внешнем давлении? (Соли считать полностью диссоциированными.)",
         "ar": "أيّ مما يلي يقارن مقارنةً صحيحة بين درجات بدء الغليان للمحاليل المائية I. C6H12O6 بتركيز 0.2 m، II. NaCl بتركيز 0.1 m، III. CaCl2 بتركيز 0.1 m عند الضغط الخارجي نفسه؟ (يُفترض تفكك الأملاح تفككًا كاملًا.)",
         "zh": "在相同外压下，水溶液 I. 0.2 mol/kg C6H12O6、II. 0.1 mol/kg NaCl、III. 0.1 mol/kg CaCl2 开始沸腾的温度比较正确的是哪一项？（假定盐完全电离。）",
-        "ku": "Di heman zexta derve de, berhevkirina germahiyên destpêka kelandinê ya çareseriyên avî I. 0,2 molal C6H12O6, II. 0,1 molal NaCl, III. 0,1 molal CaCl2 di kîjan vebijarkê de rast hatiye dayîn? (Tê qebûlkirin ku xwê bi tevahî îyonîze dibin.)"
+        "ku": "Di heman zexta derve de, berhevdana germahiyên destpêka kelînê yên çareseriyên avî I. C6H12O6 ya 0,2 molal, II. NaCl ya 0,1 molal, III. CaCl2 ya 0,1 molal di kîjan vebijarkê de rast hatiye dayîn? (Tê qebûlkirin ku xwê bi tevahî îyonîze dibin.)"
       },
       "options": [
         {
@@ -1422,7 +1422,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Моляльность частиц = m * i: I: 0,2 * 1 = 0,2; II: 0,1 * 2 = 0,2; III: 0,1 * 3 = 0,3. Повышение температуры кипения пропорционально концентрации частиц, поэтому I = II < III. Если смотреть только на моляльность, самой высокой покажется температура кипения раствора глюкозы; если не учесть i, растворы двух солей покажутся одинаковыми.",
         "ar": "مولالية الجسيمات = m * i: I: 0.2 * 1 = 0.2؛ II: 0.1 * 2 = 0.2؛ III: 0.1 * 3 = 0.3. وبما أن الارتفاع في درجة الغليان يتناسب مع تركيز الجسيمات، يكون الترتيب I = II < III. النظر إلى المولالية وحدها يوهم بأن محلول الجلوكوز هو الأعلى، وإهمال i يوهم بتساوي محلولي الملحين.",
         "zh": "粒子质量摩尔浓度 = m * i：I：0.2 * 1 = 0.2；II：0.1 * 2 = 0.2；III：0.1 * 3 = 0.3。沸点升高与粒子浓度成正比，所以顺序为 I = II < III。只看质量摩尔浓度会误以为葡萄糖溶液最高；忽略 i 会误以为两种盐溶液相等。",
-        "ku": "Molalîteya perçeyan = m * i: I: 0,2 * 1 = 0,2; II: 0,1 * 2 = 0,2; III: 0,1 * 3 = 0,3. Ji ber ku bilindbûna xala kelandinê bi tîrbûna perçeyan re rasterast e, rêz I = II < III e. Tenê li molalîteyê nêrîn dibe sedem ku çareseriya glukozê herî bilind were hesibandin; jibîrkirina i jî du çareseriyên xwê wekhev nîşan dide."
+        "ku": "Molalîteya perçeyan = m * i: I: 0,2 * 1 = 0,2; II: 0,1 * 2 = 0,2; III: 0,1 * 3 = 0,3. Ji ber ku bilindbûna xala kelînê bi tîrbûna perçeyan re rêjeyî ye, rêz I = II < III e. Ger tenê li molalîteyê were nêrîn, çareseriya glîkozê ya herî bilind tê hesibandin; ger i neyê hesibandin, her du çareseriyên xwêyê wekhev tên hesibandin."
       }
     },
     {
@@ -1435,7 +1435,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "0,2 моль вещества X полностью растворили в 500 г воды. Полученный раствор начинает замерзать при -2,232 °C (1 атм). Каким из перечисленных веществ может быть X? (Для воды Kкр = 1,86 °C*кг/моль; ионные соединения считать полностью диссоциированными.)",
         "ar": "أُذيب 0.2 mol من المادة X إذابة تامة في 500 g من الماء. يبدأ المحلول الناتج بالتجمد عند -2.232 °C تحت 1 atm. أيّ مما يلي يمكن أن يكون X؟ (Kf للماء = 1.86 °C*kg/mol؛ يُفترض تفكك المركبات الأيونية تفككًا كاملًا.)",
         "zh": "0.2 mol 物质 X 完全溶于 500 g 水中。所得溶液在 1 atm 下于 -2.232 °C 开始凝固。X 可能是下列哪种物质？(水的 Kf = 1.86 °C*kg/mol；假定离子化合物完全电离。)",
-        "ku": "0,2 mol madeya X bi tevahî di 500 g avê de dihele. Çareseriya çêbûyî di 1 atm de di -2,232 °C de dest bi cemidînê dike. Li gorî vê X dikare kîjan ji van be? (Ji bo avê Kd = 1,86 °C*kg/mol; tê qebûlkirin ku pêkhateyên îyonî bi tevahî îyonîze dibin.)"
+        "ku": "0,2 mol ji madeya X bi tevahî di 500 g avê de dihele. Çareseriya çêbûyî di 1 atm de di -2,232 °C de dest bi cemidînê dike. Li gorî vê, X dikare kîjan ji van be? (Ji bo avê Kd = 1,86 °C*kg/mol; tê qebûlkirin ku pêkhateyên îyonîk bi tevahî îyonîze dibin.)"
       },
       "options": [
         {
@@ -1511,7 +1511,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Растворимость соли X в воде при 20 °C равна 30 г на 100 г воды, а при 60 °C — 80 г на 100 г воды. Сколько граммов твёрдого X выкристаллизуется, если 360 г раствора X, насыщенного при 60 °C, охладить до 20 °C? (Вода не испаряется.)",
         "ar": "ذائبية الملح X في الماء 30 g/100 g ماء عند 20 °C و 80 g/100 g ماء عند 60 °C. عند تبريد 360 g من محلول X مشبع حُضّر عند 60 °C إلى 20 °C، كم غرامًا من X الصلب يتبلور؟ (يُفترض عدم تبخر الماء.)",
         "zh": "盐 X 在水中的溶解度：20 °C 时为 30 g/100 g 水，60 °C 时为 80 g/100 g 水。将 60 °C 时配制的 360 g X 饱和溶液冷却到 20 °C，会析出多少克 X 晶体？（假定水不蒸发。）",
-        "ku": "Helbûniya xwêya X di avê de li 20 °C 30 g/100 g av û li 60 °C 80 g/100 g av e. Dema 360 g çareseriya têr a X ya li 60 °C amadekirî heta 20 °C tê sarkirin, çend gram X ya hişk krîstal dibe? (Tê qebûlkirin ku av nabe buhar.)"
+        "ku": "Helbûniya xwêya X di avê de li 20 °C 30 g/100 g av û li 60 °C 80 g/100 g av e. Dema 360 g çareseriya têr a X ya ku li 60 °C hatiye amadekirin heta 20 °C tê sarkirin, çend gram X ya hişk krîstal dibe? (Tê qebûlkirin ku av nabe buhar.)"
       },
       "options": [
         {
@@ -1574,7 +1574,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "При 60 °C: 100 г воды + 80 г X = 180 г насыщенного раствора. 360 г раствора — вдвое больше: в нём 200 г воды и 160 г X. При 20 °C 200 г воды растворяют не более 2 * 30 = 60 г X. Выкристаллизуется 160 - 60 = 100 г X. Если взять только разность растворимостей (80 - 30 = 50 г), упускается, что в растворе 200 г воды, а не 100 г; 60 г — это масса X, оставшегося в растворе, а не выпавшего.",
         "ar": "عند 60 °C: 100 g ماء + 80 g من X = 180 g محلول مشبع. و 360 g من المحلول ضعف ذلك: 200 g ماء و 160 g من X. عند 20 °C يذيب 200 g من الماء على الأكثر 2 * 30 = 60 g من X. الكمية المتبلورة = 160 - 60 = 100 g. أخذ فرق الذائبية فقط (80 - 30 = 50 g) يهمل أن المحلول يحتوي 200 g من الماء لا 100 g؛ و 60 g هي الكمية الباقية ذائبة لا المترسبة.",
         "zh": "60 °C 时：100 g 水 + 80 g X = 180 g 饱和溶液。360 g 溶液是它的 2 倍：含 200 g 水和 160 g X。20 °C 时 200 g 水最多溶解 2 * 30 = 60 g X。析出 X = 160 - 60 = 100 g。只取溶解度之差(80 - 30 = 50 g)忽略了溶液中有 200 g 水而不是 100 g；60 g 是仍溶解的量，而不是析出的量。",
-        "ku": "Li 60 °C: 100 g av + 80 g X = 180 g çareseriya têr. 360 g çareserî du qatê vê ye: 200 g av û 160 g X tê de hene. Li 20 °C 200 g av herî zêde 2 * 30 = 60 g X dihelîne. X ya krîstalbûyî = 160 - 60 = 100 g. Tenê cudahiya helbûniyê (80 - 30 = 50 g) girtin ji bîr dike ku di çareseriyê de ne 100 g lê 200 g av heye; 60 g mîqdara ku helbûyî dimîne ye, ne ya ku dadikeve."
+        "ku": "Li 60 °C: 100 g av + 80 g X = 180 g çareseriya têr. 360 g çareserî du qatê vê ye: 200 g av û 160 g X tê de hene. Li 20 °C 200 g av herî zêde 2 * 30 = 60 g X dihelîne. X ya krîstalbûyî = 160 - 60 = 100 g. Girtina tenê cudahiya helbûniyê (80 - 30 = 50 g) wê yekê ji bîr dike ku di çareseriyê de ne 100 g, lê 200 g av heye; 60 g jî ne mîqdara ku dinişe, lê ya ku di çareseriyê de dimîne ye."
       }
     },
     {
@@ -1587,7 +1587,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Нагретую охлаждающую воду тепловой электростанции сбрасывают в озеро. Через некоторое время замечают, что рыбы плавают у самой поверхности, а часть из них погибает. Какова основная причина этого явления?",
         "ar": "تُصرَّف مياه التبريد لمحطة حرارية وهي دافئة إلى بحيرة. وبعد مدة يُلاحظ أن الأسماك تسبح قرب سطح الماء وأن بعضها يموت. ما السبب الرئيسي لذلك؟",
         "zh": "某火力发电厂的冷却水升温后排入湖中。一段时间后发现湖中的鱼浮在水面附近游动，部分死亡。其主要原因是下列哪一项？",
-        "ku": "Ava sarkirinê ya santraleke termîk germ di golekê de tê berdan. Piştî demekê tê dîtin ku masiyên golê nêzî rûyê avê avjenî dikin û hinek ji wan dimirin. Sedema sereke ya vê kîjan e?"
+        "ku": "Ava sarkirinê ya santraleke termîk, germbûyî, tê berdan nav golekê. Piştî demekê tê dîtin ku masiyên golê nêzîkî rûyê avê avjenî dikin û hinek ji wan dimirin. Sedema bingehîn a vê rewşê kîjan e?"
       },
       "options": [
         {
@@ -1598,7 +1598,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "С ростом температуры растворимость O2 в воде уменьшается, и содержание растворённого O2 падает.",
           "ar": "بارتفاع درجة الحرارة تقل ذائبية O2 في الماء وتنخفض كمية O2 الذائب.",
           "zh": "温度升高时 O2 在水中的溶解度减小，水中溶解的 O2 减少。",
-          "ku": "Bi bilindbûna germahiyê helbûniya O2 di avê de kêm dibe û mîqdara O2 ya helbûyî dadikeve."
+          "ku": "Her ku germahî bilind dibe, helbûniya O2 di avê de kêm dibe û mîqdara O2 ya helbûyî dadikeve."
         },
         {
           "tr": "O2'nin suda çözünmesi endotermik olduğundan ılık suda O2 kabarcıklar hâlinde ayrılır.",
@@ -1608,7 +1608,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Растворение O2 в воде эндотермично, поэтому в тёплой воде O2 выделяется пузырьками.",
           "ar": "لأن ذوبان O2 في الماء ماص للحرارة، ينفصل O2 على شكل فقاعات في الماء الدافئ.",
           "zh": "由于 O2 溶于水是吸热过程，O2 在温水中以气泡形式逸出。",
-          "ku": "Ji ber ku helîna O2 di avê de endotermîk e, O2 di ava germ de wek bilbil vediqete."
+          "ku": "Ji ber ku helbûna O2 di avê de endotermîk e, O2 di ava germ de wek bilbil vediqete."
         },
         {
           "tr": "Sıcak suda O2'nin kısmi basıncı arttığından çözünürlüğü de artar.",
@@ -1618,7 +1618,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "В тёплой воде парциальное давление O2 растёт, поэтому растёт и его растворимость.",
           "ar": "في الماء الدافئ يزداد الضغط الجزئي لـ O2 فتزداد ذائبيته أيضًا.",
           "zh": "温水中 O2 的分压增大，所以其溶解度也增大。",
-          "ku": "Di ava germ de zexta parçeyî ya O2 zêde dibe, ji ber vê helbûniya wê jî zêde dibe."
+          "ku": "Di ava germ de zexta qismî ya O2 zêde dibe, ji ber vê yekê helbûniya wê jî zêde dibe."
         },
         {
           "tr": "Isınan suyun buhar basıncı düştüğü için O2 sudan uzaklaşır.",
@@ -1628,7 +1628,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Давление пара нагретой воды снижается, поэтому O2 уходит из воды.",
           "ar": "لأن ضغط بخار الماء المسخَّن ينخفض، يغادر O2 الماء.",
           "zh": "因为升温后水的蒸气压降低，O2 离开水体。",
-          "ku": "Ji ber ku zexta buharê ya ava germbûyî dadikeve, O2 ji avê diçe."
+          "ku": "Ji ber ku zexta buharê ya ava germbûyî dadikeve, O2 ji avê dûr dikeve."
         },
         {
           "tr": "Isınan suyun donma noktası yükseldiği için balıkların hareketi yavaşlar.",
@@ -1650,7 +1650,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Растворение газов в воде экзотермично; при повышении температуры растворимость O2 уменьшается, содержание растворённого O2 падает и рыбам не хватает кислорода (тепловое загрязнение). Считать растворение O2 эндотермичным неверно — тогда нагрев увеличивал бы растворимость. Давление пара нагретой воды растёт, а не падает, а температура замерзания воды не зависит от её текущей температуры.",
         "ar": "ذوبان الغازات في الماء طارد للحرارة؛ فعند ارتفاع درجة الحرارة تقل ذائبية O2 وتنخفض كمية O2 الذائب فتعاني الأسماك نقص الأكسجين (التلوث الحراري). اعتبار ذوبان O2 ماصًا للحرارة خطأ، فلو كان كذلك لزادت الذائبية بالتسخين. ضغط بخار الماء المسخَّن يرتفع ولا ينخفض، ودرجة تجمد الماء لا تتغير بتغير درجة حرارته.",
         "zh": "气体溶于水是放热过程；温度升高，O2 的溶解度减小，水中溶解氧减少，鱼类缺氧（热污染）。把 O2 的溶解说成吸热是错误的——若是吸热，升温反而会增大溶解度。升温后水的蒸气压是升高而不是降低，水的凝固点也不随水温改变。",
-        "ku": "Helîna gazan di avê de egzotermîk e; dema germahî bilind dibe helbûniya O2 kêm dibe, O2 ya helbûyî dadikeve û masî kêmasiya oksîjenê dikişînin (qirêjiya germî). Helîna O2 wek endotermîk hesibandin şaş e; wisa bûya, germbûn dê helbûnî zêde bikira. Zexta buharê ya ava germbûyî bilind dibe, danakeve; xala cemidînê ya avê jî bi germahiya wê naguhere."
+        "ku": "Helbûna gazan di avê de ekzotermîk e; dema germahî bilind dibe helbûniya O2 kêm dibe, mîqdara O2 ya helbûyî dadikeve û masî rastî kêmasiya oksîjenê tên (qirêjiya germî). Hesibandina helbûna O2 wek endotermîk şaş e; heke wisa bûya, germbûnê dê helbûnî zêde bikira. Zexta buharê ya ava germbûyî danakeve, zêde dibe; xala cemidînê ya avê jî bi germahiya wê re naguhere."
       }
     },
     {
@@ -1663,7 +1663,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "3,6 г молекулярного нелетучего вещества растворили в 100 г воды. Раствор начинает замерзать при -0,372 °C (1 атм). Чему равна молярная масса вещества (г/моль)? (Для воды Kкр = 1,86 °C*кг/моль)",
         "ar": "أُذيب 3.6 g من مادة جزيئية غير متطايرة في 100 g من الماء. يبدأ المحلول بالتجمد عند -0.372 °C تحت 1 atm. ما الكتلة المولية للمادة بوحدة g/mol؟ (Kf للماء = 1.86 °C*kg/mol)",
         "zh": "将 3.6 g 某分子型非挥发性物质溶于 100 g 水中，溶液在 1 atm 下于 -0.372 °C 开始凝固。该物质的摩尔质量是多少 g/mol？(水的 Kf = 1.86 °C*kg/mol)",
-        "ku": "3,6 g ji madeyeke molekulî û nefirrok di 100 g avê de tê helandin. Çareserî di 1 atm de di -0,372 °C de dest bi cemidînê dike. Girseya molî ya madeyê çend g/mol e? (Ji bo avê Kd = 1,86 °C*kg/mol)"
+        "ku": "3,6 g ji madeyeke molekulî û nefirok di 100 g avê de tê helandin. Ji ber ku çareserî di 1 atm de di -0,372 °C de dest bi cemidînê dike, girseya molî ya madeyê çend g/mol e? (Ji bo avê Kd = 1,86 °C*kg/mol)"
       },
       "options": [
         {
@@ -1726,7 +1726,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "ΔTзам = 0,372 °C; для молекулярного вещества i = 1. m = ΔTзам / Kкр = 0,372 / 1,86 = 0,2 моль/кг. В 100 г = 0,1 кг воды n = 0,2 * 0,1 = 0,02 моль. M = 3,6 / 0,02 = 180 г/моль. Если не перевести массу воды в килограммы (n = 0,2 моль), получится 18 г/моль; если считать вещество диссоциирующим (i = 2) — 360 г/моль; если принять 100 г за 0,01 кг — 1800 г/моль.",
         "ar": "ΔTf = 0.372 °C؛ وللمادة الجزيئية i = 1. m = ΔTf / Kf = 0.372 / 1.86 = 0.2 mol/kg. في 100 g = 0.1 kg من الماء: n = 0.2 * 0.1 = 0.02 mol. M = 3.6 / 0.02 = 180 g/mol. عدم تحويل كتلة الماء إلى kg (n = 0.2 mol) يعطي 18 g/mol، واعتبار المادة متأينة (i = 2) يعطي 360 g/mol، واعتبار 100 g تساوي 0.01 kg يعطي 1800 g/mol.",
         "zh": "ΔTf = 0.372 °C；分子型物质 i = 1。m = ΔTf / Kf = 0.372 / 1.86 = 0.2 mol/kg。100 g = 0.1 kg 水中 n = 0.2 * 0.1 = 0.02 mol。M = 3.6 / 0.02 = 180 g/mol。不把水的质量换算成 kg(n = 0.2 mol)得 18 g/mol；把该物质当作电离(i = 2)得 360 g/mol；把 100 g 当成 0.01 kg 得 1800 g/mol。",
-        "ku": "ΔTd = 0,372 °C; ji bo madeya molekulî i = 1. m = ΔTd / Kd = 0,372 / 1,86 = 0,2 mol/kg. Di 100 g = 0,1 kg avê de n = 0,2 * 0,1 = 0,02 mol. M = 3,6 / 0,02 = 180 g/mol. Girseya avê neguherandin bo kg (n = 0,2 mol) 18 g/mol, madeyê wek îyonîzebûyî (i = 2) girtin 360 g/mol, 100 g wek 0,01 kg hesibandin 1800 g/mol dide."
+        "ku": "ΔTd = 0,372 °C; ji bo madeya molekulî i = 1. m = ΔTd / Kd = 0,372 / 1,86 = 0,2 mol/kg. Di 100 g = 0,1 kg avê de n = 0,2 * 0,1 = 0,02 mol. M = 3,6 / 0,02 = 180 g/mol. Neveguhertina girseya avê bo kg (n = 0,2 mol) 18 g/mol, hesibandina madeyê wek îyonîzebûyî (i = 2) 360 g/mol, hesibandina 100 g wek 0,01 kg jî 1800 g/mol dide."
       }
     },
     {
@@ -1739,7 +1739,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Известно, что растворимость твёрдого вещества X в воде растёт с повышением температуры, а растворимость твёрдого вещества Y уменьшается. Какие из утверждений о насыщенных растворах X и Y без осадка на дне верны? (Вода не испаряется.) I. Насыщенный при 20 °C раствор X при нагревании становится ненасыщенным. II. При нагревании насыщенного раствора Y на дне сосуда выделяется твёрдый Y. III. Если насыщенный при 20 °C раствор X нагреть до 40 °C, массовая доля (%) X в нём увеличится.",
         "ar": "تُعطى المعلومات الآتية عن ذائبية المادتين الصلبتين X وY في الماء: تزداد ذائبية X بارتفاع درجة الحرارة، بينما تقل ذائبية Y بارتفاعها. أيّ العبارات الآتية صحيحة بخصوص محلولي X وY المشبعين اللذين لا يوجد في قاعهما راسب؟ (يُفترض أن الماء لا يتبخر.) I. محلول X المشبع عند 20 °C يصبح غير مشبع عند تسخينه. II. عند تسخين محلول Y المشبع ينفصل Y الصلب في قاع الوعاء. III. إذا سُخّن محلول X المشبع عند 20 °C إلى 40 °C تزداد نسبته المئوية الكتلية.",
         "zh": "固体 X 和 Y 在水中的溶解度情况：X 的溶解度随温度升高而增大，Y 的溶解度随温度升高而减小。关于底部没有固体的 X 饱和溶液和 Y 饱和溶液，有下列说法（假设水不蒸发）：I. 20 °C 的 X 饱和溶液加热后变为不饱和溶液。II. 加热 Y 的饱和溶液，容器底部会析出固体 Y。III. 将 20 °C 的 X 饱和溶液加热到 40 °C，其质量分数增大。其中正确的是哪些？",
-        "ku": "Agahiyên li ser helbûniya hişkên X û Y di avê de: helbûniya X bi bilindbûna germahiyê zêde dibe, ya Y jî bi bilindbûna germahiyê kêm dibe. Li gorî vê, derbarê çareseriyên têr ên X û Y yên ku li binê wan hişk tune, kîjan ji van gotinan rast in? (Tê qebûlkirin ku av nabe buhar.) I. Çareseriya têr a X ya li 20 °C dema tê germkirin dibe ne-têr. II. Dema çareseriya têr a Y tê germkirin, li binê firaxê Y ya hişk vediqete. III. Ger çareseriya têr a X ya li 20 °C heta 40 °C were germkirin, rêjeya wê ya ji sedî ya girseyî zêde dibe."
+        "ku": "Li ser helbûniya madeyên hişk X û Y di avê de ev agahî tên dayîn: helbûniya X her ku germahî bilind dibe zêde dibe, ya Y jî her ku germahî bilind dibe kêm dibe. Li gorî vê, li ser çareseriyên têr ên X û Y yên ku li binê wan madeya hişk tune, kîjan ji van gotinan rast in? (Tê qebûlkirin ku av nabe buhar.) I. Ger çareseriya têr a X ya li 20 °C were germkirin, netêr dibe. II. Ger çareseriya têr a Y were germkirin, li binê firaxê Y ya hişk vediqete. III. Ger çareseriya têr a X ya li 20 °C heta 40 °C were germkirin, rêjeya wê ya ji sedî ya girseyî zêde dibe."
       },
       "options": [
         {
@@ -1802,7 +1802,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "I верно: растворимость X при нагревании растёт, и то же количество растворённого вещества оказывается ниже растворимости. II верно: растворимость Y при нагревании уменьшается, и избыток выделяется в виде твёрдого вещества. III неверно: без осадка нагревание не меняет ни массу растворённого вещества, ни массу растворителя; раствор лишь становится ненасыщенным, массовая доля не меняется.",
         "ar": "I صحيحة: لأن ذائبية X تزداد بالتسخين، تصبح كمية المذاب نفسها أقل من الذائبية. II صحيحة: لأن ذائبية Y تقل بالتسخين، ينفصل المذاب الزائد على شكل صلب. III خاطئة: في غياب الراسب لا يغير التسخين كتلة المذاب ولا كتلة المذيب؛ يصبح المحلول غير مشبع فقط وتبقى النسبة المئوية الكتلية كما هي.",
         "zh": "I 正确：X 的溶解度随加热增大，同样多的溶质已低于溶解度。II 正确：Y 的溶解度随加热减小，多余的溶质以固体析出。III 错误：底部没有固体时，加热既不改变溶质质量也不改变溶剂质量，溶液只是变为不饱和，质量分数不变。",
-        "ku": "I rast e: ji ber ku helbûniya X bi germkirinê zêde dibe, heman mîqdara helbûyî niha di bin helbûniyê de ye. II rast e: ji ber ku helbûniya Y bi germkirinê kêm dibe, helbûyiya zêde wek hişk vediqete. III şaş e: dema li binê wê hişk tune be, germkirin ne girseya helbûyî ne jî ya helker diguherîne; çareserî tenê ne-têr dibe û rêjeya ji sedî ya girseyî wek xwe dimîne."
+        "ku": "I rast e: ji ber ku helbûniya X bi germkirinê zêde dibe, heman mîqdara madeya helbûyî êdî di bin helbûniyê de dimîne. II rast e: ji ber ku helbûniya Y bi germkirinê kêm dibe, madeya helbûyî ya zêde wek madeya hişk vediqete. III şaş e: heke li binî madeya hişk tune be, germkirin ne girseya madeya helbûyî ne jî ya helker diguherîne; çareserî tenê netêr dibe û rêjeya ji sedî ya girseyî wek xwe dimîne."
       }
     },
     {
@@ -1815,7 +1815,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Ученик медленно, не встряхивая, охлаждает насыщенный при 80 °C раствор ацетата натрия до 20 °C, причём осадок не выпадает. Когда он бросает в раствор маленький кристалл ацетата натрия, избыток растворённого вещества быстро кристаллизуется. Что верно для раствора при 20 °C до добавления кристалла? (Растворимость ацетата натрия в воде растёт с температурой.)",
         "ar": "يبرّد طالب ببطء ومن دون رجّ محلول أسيتات الصوديوم المشبع عند 80 °C حتى 20 °C دون أن ينفصل أي صلب. وعندما يلقي فيه بلورة صغيرة من أسيتات الصوديوم يتبلور المذاب الزائد بسرعة. أيّ مما يلي صحيح عن المحلول عند 20 °C قبل إضافة البلورة؟ (تزداد ذائبية أسيتات الصوديوم في الماء بارتفاع درجة الحرارة.)",
         "zh": "一名学生把 80 °C 时饱和的醋酸钠溶液在不震动、无固体析出的情况下缓慢冷却到 20 °C。向其中投入一小粒醋酸钠晶体后，多余的溶质迅速结晶析出。关于投入晶体前 20 °C 的溶液，下列哪项正确？（醋酸钠在水中的溶解度随温度升高而增大。）",
-        "ku": "Xwendekarek çareseriya sodyum asetatê ya li 80 °C têr, bê lerizandin û bê ku tu hişk veqete, hêdî hêdî heta 20 °C sar dike. Dema krîstaleke piçûk a sodyum asetatê davêje nav, helbûyiya zêde zû krîstal dibe. Ji bo çareseriya li 20 °C berî avêtina krîstalê kîjan rast e? (Helbûniya sodyum asetatê di avê de bi germahiyê re zêde dibe.)"
+        "ku": "Xwendekarek çareseriya sodyum asetatê ya ku li 80 °C têr e, bêyî ku tu madeya hişk veqete û bêyî hejandina firaxê, hêdî hêdî heta 20 °C sar dike. Dema krîstaleke piçûk a sodyum asetatê davêje nav çareseriyê, madeya helbûyî ya zêde zû krîstal dibe. Ji bo çareseriya li 20 °C, berî avêtina krîstalê, kîjan ji van rast e? (Helbûniya sodyum asetatê di avê de bi germahiyê re zêde dibe.)"
       },
       "options": [
         {
@@ -1826,7 +1826,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Он ненасыщенный: в нём может раствориться ещё некоторое количество ацетата натрия.",
           "ar": "غير مشبع؛ يمكنه إذابة كمية أخرى من أسيتات الصوديوم.",
           "zh": "是不饱和溶液，还能再溶解一些醋酸钠。",
-          "ku": "Ne-têr e; dikare hinek sodyum asetatê din jî bihelîne."
+          "ku": "Netêr e; hîn dikare hinek sodyum asetatê din bihelîne."
         },
         {
           "tr": "Doygundur; çözünme ve kristallenme hızları eşittir.",
@@ -1836,7 +1836,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Он насыщенный: скорости растворения и кристаллизации равны.",
           "ar": "مشبع؛ سرعتا الذوبان والتبلور متساويتان.",
           "zh": "是饱和溶液，溶解速率与结晶速率相等。",
-          "ku": "Têr e; leza helînê û ya krîstalbûnê wekhev in."
+          "ku": "Têr e; leza helbûnê û leza krîstalbûnê wekhev in."
         },
         {
           "tr": "Seyreltiktir; çözünen kütlesi 20 °C'deki çözünürlükten azdır.",
@@ -1846,7 +1846,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Он разбавленный: масса растворённого вещества меньше растворимости при 20 °C.",
           "ar": "مخفف؛ كتلة المذاب أقل من الذائبية عند 20 °C.",
           "zh": "是稀溶液，溶质质量小于 20 °C 时的溶解度。",
-          "ku": "Sivik e; girseya helbûyî ji helbûniya li 20 °C kêmtir e."
+          "ku": "Sist e; girseya madeya helbûyî ji helbûniya li 20 °C kêmtir e."
         },
         {
           "tr": "Aşırı doymuştur; kararsızdır ve 20 °C'deki çözünürlükten daha fazla çözünen içerir.",
@@ -1856,7 +1856,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Он пересыщенный: он неустойчив и содержит больше растворённого вещества, чем позволяет растворимость при 20 °C.",
           "ar": "فوق مشبع؛ غير مستقر ويحتوي مذابًا أكثر من الذائبية عند 20 °C.",
           "zh": "是过饱和溶液，不稳定，所含溶质多于 20 °C 时的溶解度。",
-          "ku": "Zêde-têr e; ne-aram e û ji helbûniya li 20 °C bêtir helbûyî tê de heye."
+          "ku": "Zêdetêr e; nearam e û ji helbûniya li 20 °C bêtir madeya helbûyî dihewîne."
         },
         {
           "tr": "Soğutma sırasında sodyum asetatın çözünürlüğü artmış, fazla çözünen bu yüzden tutulmuştur.",
@@ -1866,7 +1866,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "При охлаждении растворимость ацетата натрия увеличилась, поэтому избыток вещества остался в растворе.",
           "ar": "أثناء التبريد ازدادت ذائبية أسيتات الصوديوم، ولهذا بقي المذاب الزائد ذائبًا.",
           "zh": "冷却过程中醋酸钠的溶解度增大，所以多余的溶质仍留在溶液中。",
-          "ku": "Di dema sarkirinê de helbûniya sodyum asetatê zêde bûye, ji ber vê helbûyiya zêde di çareseriyê de maye."
+          "ku": "Di dema sarkirinê de helbûniya sodyum asetatê zêde bûye, loma madeya helbûyî ya zêde di çareseriyê de maye."
         }
       ],
       "correctIndex": 3,
@@ -1878,7 +1878,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Насыщенный при 80 °C раствор, охлаждённый до 20 °C без выпадения осадка, содержит больше растворённого вещества, чем позволяет растворимость при 20 °C, то есть он пересыщенный. Такое состояние неустойчиво: кристалл-затравка вызывает немедленную кристаллизацию избытка. Будь раствор просто насыщенным, внесённый кристалл лишь опустился бы на дно и бурной кристаллизации не было бы. Растворимость растёт с температурой, поэтому при охлаждении она не увеличилась, а уменьшилась.",
         "ar": "المحلول المشبع عند 80 °C إذا بُرّد إلى 20 °C دون انفصال أي صلب يحمل مذابًا أكثر من الذائبية عند 20 °C، أي أنه فوق مشبع. هذه الحالة غير مستقرة، فإضافة بلورة بادئة تجعل الفائض يتبلور فورًا. لو كان المحلول مشبعًا فقط لاستقرت البلورة في القاع دون تبلور مفاجئ. وبما أن الذائبية تزداد بارتفاع درجة الحرارة، فقد قلّت عند التبريد ولم تزد.",
         "zh": "80 °C 时饱和的溶液在无固体析出的情况下冷却到 20 °C，所含溶质多于 20 °C 时的溶解度，即为过饱和溶液。这种状态不稳定，加入晶种后多余溶质立即结晶。若溶液只是饱和，投入的晶体只会沉到底部，不会突然大量结晶。溶解度随温度升高而增大，所以冷却时溶解度是减小而不是增大。",
-        "ku": "Çareseriya li 80 °C têr, dema bê veqetîna hişk heta 20 °C sar dibe, ji helbûniya li 20 °C bêtir helbûyî hildigire, yanî zêde-têr e. Ev rewş ne-aram e; krîstaleke tov zêdeyiyê yekser krîstal dike. Ger çareserî tenê têr bûya, krîstal dê tenê dakeve binî û krîstalbûna ji nişkê ve çênebûya. Ji ber ku helbûnî bi germahiyê re zêde dibe, di sarkirinê de kêm bûye, ne zêde."
+        "ku": "Çareseriya ku li 80 °C têr e, dema bêyî veqetîna madeya hişk heta 20 °C sar dibe, ji helbûniya li 20 °C bêtir madeya helbûyî hildigire, yanî zêdetêr e. Ev rewş nearam e; dema krîstaleke tov tê zêdekirin, madeya zêde yekser krîstal dibe. Heke çareserî tenê têr bûya, krîstala avêtî dê tenê binî bibûya û krîstalbûna ji nişka ve nedihat dîtin. Ji ber ku helbûnî bi germahiyê re zêde dibe, di sarkirinê de zêde nebûye, kêm bûye."
       }
     },
     {
@@ -1891,7 +1891,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Растворение твёрдого KNO3 в воде эндотермично. Что нужно сделать, чтобы увеличить растворимость KNO3 в воде?",
         "ar": "ذوبان KNO3 الصلب في الماء ماص للحرارة. أيّ الإجراءات الآتية يجب اتخاذه لزيادة ذائبية KNO3 في الماء؟",
         "zh": "固体 KNO3 溶于水是吸热过程。要增大 KNO3 在水中的溶解度，应采取下列哪项措施？",
-        "ku": "Helîna KNO3 ya hişk di avê de endotermîk e. Ji bo zêdekirina helbûniya KNO3 di avê de kîjan ji van karan divê were kirin?"
+        "ku": "Helbûna KNO3 ya hişk di avê de endotermîk e. Ji bo zêdekirina helbûniya KNO3 di avê de, kîjan ji van karan divê were kirin?"
       },
       "options": [
         {
@@ -1902,7 +1902,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Повысить температуру",
           "ar": "رفع درجة الحرارة",
           "zh": "升高温度",
-          "ku": "Germahiyê bilind kirin"
+          "ku": "Bilindkirina germahiyê"
         },
         {
           "tr": "Katıyı toz hâline getirmek",
@@ -1912,7 +1912,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Измельчить твёрдое вещество в порошок",
           "ar": "طحن الصلب إلى مسحوق",
           "zh": "把固体研成粉末",
-          "ku": "Hişk kirin toz"
+          "ku": "Hûrkirina madeya hişk heta ku bibe toz"
         },
         {
           "tr": "Çözeltiyi sürekli karıştırmak",
@@ -1922,7 +1922,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Непрерывно перемешивать раствор",
           "ar": "تحريك المحلول باستمرار",
           "zh": "不断搅拌溶液",
-          "ku": "Çareseriyê bi berdewamî tevlihev kirin"
+          "ku": "Bi berdewamî tevlihevkirina çareseriyê"
         },
         {
           "tr": "Kap üzerindeki dış basıncı artırmak",
@@ -1932,7 +1932,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Повысить внешнее давление над сосудом",
           "ar": "زيادة الضغط الخارجي على الوعاء",
           "zh": "增大容器上方的外压",
-          "ku": "Zexta derve ya li ser firaxê zêde kirin"
+          "ku": "Zêdekirina zexta derve ya li ser firaxê"
         },
         {
           "tr": "Kaba bir miktar daha su eklemek",
@@ -1942,7 +1942,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Добавить в сосуд ещё немного воды",
           "ar": "إضافة كمية أخرى من الماء إلى الوعاء",
           "zh": "向容器中再加一些水",
-          "ku": "Hinek avê din li firaxê zêde kirin"
+          "ku": "Zêdekirina hinek avê din li firaxê"
         }
       ],
       "correctIndex": 0,
@@ -1954,7 +1954,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "При эндотермическом растворении повышение температуры увеличивает растворимость. Измельчение и перемешивание ускоряют растворение, но не меняют наибольшее количество вещества, которое может раствориться в 100 г воды. Влияние давления на растворимость твёрдых веществ пренебрежимо мало. Добавление воды увеличивает общую массу вещества, которая может раствориться, но растворимость рассчитывают на 100 г воды, поэтому она не меняется.",
         "ar": "في الذوبان الماص للحرارة يؤدي رفع درجة الحرارة إلى زيادة الذائبية. الطحن والتحريك يزيدان سرعة الذوبان لكنهما لا يغيران أقصى كمية تذوب في 100 g من الماء. وتأثير الضغط في ذائبية المواد الصلبة مهمل. إضافة الماء تزيد الكتلة الكلية التي يمكن أن تذوب، لكن الذائبية معرّفة لكل 100 g من الماء فلا تتغير.",
         "zh": "吸热溶解时，升高温度会增大溶解度。研磨和搅拌只能加快溶解速率，不能改变 100 g 水中最多能溶解的量。压强对固体溶解度的影响可以忽略。加水能增加可溶解的总质量，但溶解度是按每 100 g 水定义的，所以不变。",
-        "ku": "Di helîna endotermîk de bilindkirina germahiyê helbûniyê zêde dike. Hûrkirin û tevlihevkirin leza helînê zêde dikin, lê mîqdara herî zêde ya ku di 100 g avê de dihele naguherînin. Bandora zextê li ser helbûniya hişkan nayê hesibandin. Zêdekirina avê girseya giştî ya ku dikare bihele zêde dike, lê helbûnî ji bo her 100 g avê tê pênasekirin û naguhere."
+        "ku": "Di helbûna endotermîk de bilindkirina germahiyê helbûniyê zêde dike. Tozkirin û tevlihevkirin leza helbûnê zêde dikin, lê mîqdara herî zêde ya ku di 100 g avê de dikare bihele naguherînin. Bandora zextê li ser helbûniya madeyên hişk nayê hesibandin. Zêdekirina avê girseya giştî ya ku dikare bihele zêde dike, lê ji ber ku helbûnî ji bo her 100 g avê tê pênasekirin, naguhere."
       }
     },
     {
@@ -1967,7 +1967,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "При 25 °C растворимость твёрдого вещества X в воде равна 40 г на 100 г воды. При той же температуре к 150 г воды добавили 70 г X и перемешали. Какую наименьшую массу воды (г) нужно добавить, не меняя температуры, чтобы оставшееся на дне вещество полностью растворилось?",
         "ar": "عند 25 °C تبلغ ذائبية الصلب X في الماء 40 g/100 g ماء. وعند درجة الحرارة نفسها أُضيف 70 g من X إلى 150 g من الماء مع التحريك. ما أقل كتلة من الماء بالغرام يجب إضافتها عند درجة الحرارة نفسها ليذوب الصلب المتبقي ذوبانًا تامًا؟",
         "zh": "25 °C 时固体 X 在水中的溶解度为 40 g/100 g 水。在同一温度下，向 150 g 水中加入 70 g X 并搅拌。要使未溶解的固体完全溶解，在温度不变时至少还需加入多少克水？",
-        "ku": "Li 25 °C helbûniya hişka X di avê de 40 g/100 g av e. Di heman germahiyê de 70 g X li 150 g avê tê zêdekirin û tevlihev dibe. Ji bo ku hişka nehelbûyî bi tevahî bihele, bêyî guhertina germahiyê herî kêm çend gram av divê were zêdekirin?"
+        "ku": "Li 25 °C helbûniya madeya hişk X di avê de 40 g/100 g av e. Di heman germahiyê de 70 g X li 150 g avê tê zêdekirin û tê tevlihevkirin. Ji bo ku madeya hişk a nehelbûyî ya di firaxê de bi tevahî bihele, bêyî guhertina germahiyê herî kêm çend gram av divê were zêdekirin?"
       },
       "options": [
         {
@@ -2030,7 +2030,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "150 г воды растворяют не более 150 * 40 / 100 = 60 г X; 70 - 60 = 10 г X остаются на дне. Так как 100 г воды растворяют 40 г X, для 10 г X нужно 10 * 100 / 40 = 25 г воды. 175 г — это вся масса воды, нужная для растворения 70 г X; добавляемое количество находят, вычитая из неё уже имеющиеся 150 г. 10 г — масса нерастворившегося вещества, а не воды.",
         "ar": "يذيب 150 g من الماء على الأكثر 150 * 40 / 100 = 60 g من X؛ فيبقى 70 - 60 = 10 g من X في القاع. وبما أن 100 g من الماء تذيب 40 g من X، فإن 10 g من X تحتاج 10 * 100 / 40 = 25 g من الماء. أما 175 g فهي كتلة الماء الكلية اللازمة لإذابة 70 g من X، والكمية المضافة تُحسب بطرح 150 g الموجودة. و 10 g هي كتلة الصلب غير الذائب وليست كتلة ماء.",
         "zh": "150 g 水最多溶解 150 * 40 / 100 = 60 g X；剩下 70 - 60 = 10 g X 未溶解。100 g 水溶解 40 g X，所以 10 g X 需要 10 * 100 / 40 = 25 g 水。175 g 是溶解全部 70 g X 所需的总水量，需加入的水量要减去已有的 150 g。10 g 是未溶解固体的质量，不是水的质量。",
-        "ku": "150 g av herî zêde 150 * 40 / 100 = 60 g X dihelîne; 70 - 60 = 10 g X li binî dimîne. Ji ber ku 100 g av 40 g X dihelîne, ji bo 10 g X 10 * 100 / 40 = 25 g av lazim e. 175 g girseya giştî ya avê ye ku ji bo hemû 70 g X lazim e; mîqdara ku divê were zêdekirin bi derxistina 150 g ya heyî tê dîtin. 10 g girseya hişka nehelbûyî ye, ne ya avê."
+        "ku": "150 g av herî zêde 150 * 40 / 100 = 60 g X dihelîne; 70 - 60 = 10 g X li binî dimîne. Ji ber ku 100 g av 40 g X dihelîne, ji bo 10 g X 10 * 100 / 40 = 25 g av pêwîst e. 175 g girseya giştî ya avê ye ku ji bo hemû 70 g X pêwîst e; mîqdara ku divê were zêdekirin bi derxistina 150 g ya heyî jê tê dîtin. 10 g jî ne girseya avê, lê ya madeya hişk a ku li binî dimîne ye."
       }
     },
     {
@@ -2106,7 +2106,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "I: внутри клеток изюма раствор концентрированнее; вода проходит через полупроницаемую мембрану в клетки, и изюм набухает. II: при введении чистой воды вода путём осмоса проникала бы в клетки крови и могла бы, раздувая, разорвать их; физиологический раствор с тем же осмотическим давлением, что и у крови, предотвращает этот поток. III: при давлении выше осмотического вода переходит из солёной части в пресную; это обратный осмос, основанный на явлении осмоса. Все три явления связаны с осмосом; а такие примеры, как посыпание дорог солью, объясняются понижением температуры замерзания.",
         "ar": "I: داخل خلايا الزبيب أكثر تركيزًا؛ فيعبر الماء الغشاء شبه المنفذ إلى الخلايا وينتفخ الزبيب. II: لو أُعطي ماء نقي لدخل الماء خلايا الدم بالتناضح وقد يفجرها؛ والمحلول الملحي ذو الضغط التناضحي المساوي للدم يمنع هذا الانتقال. III: عند تطبيق ضغط أكبر من الضغط التناضحي ينتقل الماء من الجهة المالحة إلى الجهة النقية؛ وهذا هو التناضح العكسي القائم على مبدأ التناضح. الظواهر الثلاث مرتبطة بالتناضح، أما أمثلة مثل رش الملح على الطرق فتُفسَّر بالانخفاض في درجة التجمد.",
         "zh": "I：葡萄干细胞内溶液更浓，水透过半透膜进入细胞，葡萄干膨胀。II：若输注纯水，水会通过渗透进入血细胞，可能使其胀破；与血液渗透压相同的生理盐水可防止这种渗透流动。III：施加大于渗透压的压强时，水从盐水一侧进入纯水一侧，这就是反渗透，以渗透原理为基础。三者都与渗透有关；而路面撒盐之类的例子则用凝固点降低来解释。",
-        "ku": "I: Hundirê şaneyên mêwîjê tîrtir e; av di perdeya nîv-derbasbar re derbasî şaneyan dibe û mêwîj werime. II: Ger ava paqij bihata dayîn, av bi osmozê dê derbasî şaneyên xwînê bibûya û dikaribû wan biteqîne; seruma bi heman zexta osmotîk a xwînê vê herikînê asteng dike. III: Dema zexteke ji zexta osmotîk mezintir tê sepandin, av ji aliyê şor derbasî aliyê paqij dibe; ev osmoza berevajî ye û li ser prensîba osmozê ye. Her sê jî bi osmozê re têkildar in; mînakên wek reşandina xwê li ser rêyan bi daketina xala cemidînê têne ravekirin."
+        "ku": "I: Hundirê şaneyên mêwîjê tîrtir e; av di perdeya nîvderbasbar re derbasî şaneyan dibe û mêwîj diwerime. II: Heke ava paqij bihata dayîn, av bi osmozê dê derbasî şaneyên xwînê bibûya û dikaribû wan bi werimandinê biteqîne; seruma ku zexta wê ya osmotîk wek ya xwînê ye rê li ber vê herikînê digire. III: Dema zexteke ji zexta osmotîk mezintir tê sepandin, av ji aliyê şor derbasî aliyê paqij dibe; ev osmoza berevajî ye û li ser prensîba osmozê ava bûye. Her sê bûyer jî bi osmozê re têkildar in; mînakên wek reşandina xwê li ser rêyan bi daketina xala cemidînê tên ravekirin."
       }
     },
     {
@@ -2119,7 +2119,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Для автомобильного радиатора готовят антифриз, добавляя 124 г этиленгликоля (C2H6O2) к 500 г воды. При какой температуре (°C) этот раствор начинает замерзать при 1 атм? (C2H6O2 = 62 г/моль; для воды Kкр = 1,86 °C*кг/моль, Kэб = 0,52 °C*кг/моль)",
         "ar": "يُحضَّر محلول مانع للتجمد لمشعّ سيارة بإضافة 124 g من الإيثيلين غليكول (C2H6O2) إلى 500 g من الماء. عند أي درجة حرارة (°C) يبدأ هذا المحلول بالتجمد تحت 1 atm؟ (C2H6O2 = 62 g/mol؛ للماء Kf = 1.86 °C*kg/mol و Kb = 0.52 °C*kg/mol)",
         "zh": "为汽车散热器配制防冻液：向 500 g 水中加入 124 g 乙二醇(C2H6O2)。该溶液在 1 atm 下开始凝固的温度是多少 °C？(C2H6O2 = 62 g/mol；水的 Kf = 1.86 °C*kg/mol，Kb = 0.52 °C*kg/mol)",
-        "ku": "Ji bo radyatora otomobîlê çareseriyeke antîfrîzê bi zêdekirina 124 g etîlen glîkol (C2H6O2) li 500 g avê tê amadekirin. Ev çareserî di 1 atm de di çend °C de dest bi cemidînê dike? (C2H6O2 = 62 g/mol; ji bo avê Kd = 1,86 °C*kg/mol, Kk = 0,52 °C*kg/mol)"
+        "ku": "Ji bo radyatora otomobîlê, bi zêdekirina 124 g etîlen glîkol (C2H6O2) li 500 g avê çareseriyeke antîfrîzê tê amadekirin. Ev çareserî di 1 atm de di çend °C de dest bi cemidînê dike? (C2H6O2 = 62 g/mol; ji bo avê Kd = 1,86 °C*kg/mol, Kk = 0,52 °C*kg/mol)"
       },
       "options": [
         {
@@ -2182,7 +2182,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "n = 124 / 62 = 2 моль. m = 2 / 0,5 = 4 моль/кг. Этиленгликоль — молекулярное вещество, i = 1. ΔTзам = Kкр * m * i = 1,86 * 4 * 1 = 7,44 °C; температура замерзания = 0 - 7,44 = -7,44 °C. Если взять массу воды за 1 кг, получится -3,72 °C; если считать этиленгликоль диссоциирующим (i = 2) — -14,88 °C; если взять Kэб вместо Kкр — -2,08 °C.",
         "ar": "n = 124 / 62 = 2 mol. m = 2 / 0.5 = 4 m. الإيثيلين غليكول مادة جزيئية، لذا i = 1. ΔTf = Kf * m * i = 1.86 * 4 * 1 = 7.44 °C؛ درجة التجمد = 0 - 7.44 = -7.44 °C. أخذ الماء على أنه 1 kg يعطي -3.72 °C، واعتبار الإيثيلين غليكول متأينًا (i = 2) يعطي -14.88 °C، واستخدام Kb بدل Kf يعطي -2.08 °C.",
         "zh": "n = 124 / 62 = 2 mol。m = 2 / 0.5 = 4 mol/kg。乙二醇是分子型物质，i = 1。ΔTf = Kf * m * i = 1.86 * 4 * 1 = 7.44 °C；凝固点 = 0 - 7.44 = -7.44 °C。把水按 1 kg 计算得 -3.72 °C；把乙二醇当作电离(i = 2)得 -14.88 °C；误用 Kb 代替 Kf 得 -2.08 °C。",
-        "ku": "n = 124 / 62 = 2 mol. m = 2 / 0,5 = 4 m. Etîlen glîkol molekulî ye, i = 1. ΔTd = Kd * m * i = 1,86 * 4 * 1 = 7,44 °C; xala cemidînê = 0 - 7,44 = -7,44 °C. Avê wek 1 kg girtin -3,72 °C, etîlen glîkolê wek îyonîzebûyî (i = 2) girtin -14,88 °C, li şûna Kd bikaranîna Kk -2,08 °C dide."
+        "ku": "n = 124 / 62 = 2 mol. m = 2 / 0,5 = 4 m. Etîlen glîkol molekulî ye, loma i = 1. ΔTd = Kd * m * i = 1,86 * 4 * 1 = 7,44 °C; xala cemidînê 0 - 7,44 = -7,44 °C. Girtina avê wek 1 kg -3,72 °C, hesibandina etîlen glîkolê wek îyonîzebûyî (i = 2) -14,88 °C, bikaranîna Kk li şûna Kd jî -2,08 °C dide."
       }
     },
     {
@@ -2195,7 +2195,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "В закрытом сосуде при 25 °C водный раствор нелетучего сахара находится в равновесии со своим паром. Какое из утверждений об этой системе неверно?",
         "ar": "في وعاء مغلق عند 25 °C يكون محلول مائي لسكر غير متطاير في حالة اتزان مع بخاره. أيّ العبارات الآتية عن هذا النظام خاطئة؟",
         "zh": "25 °C 时，在一个密闭容器中，非挥发性糖的水溶液与其蒸气处于平衡状态。关于该体系，下列说法中哪一项是错误的？",
-        "ku": "Li 25 °C di firaxeke girtî de çareseriya avî ya şekirê nefirrok bi buhara xwe re di hevsengiyê de ye. Kîjan ji van gotinan li ser vê sîstemê şaş e?"
+        "ku": "Li 25 °C di firaxeke girtî de çareseriya avî ya şekirê nefirok bi buhara xwe re di hevsengiyê de ye. Kîjan ji van gotinan li ser vê sîstemê şaş e?"
       },
       "options": [
         {
@@ -2206,7 +2206,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ru": "Давление пара раствора ниже, чем у чистой воды при той же температуре.",
           "ar": "ضغط بخار المحلول أقل من ضغط بخار الماء النقي عند درجة الحرارة نفسها.",
           "zh": "该溶液的蒸气压低于同温下纯水的蒸气压。",
-          "ku": "Zexta buharê ya çareseriyê ji ya ava paqij di heman germahiyê de nizmtir e."
+          "ku": "Zexta buharê ya çareseriyê ji ya ava paqij a di heman germahiyê de nizmtir e."
         },
         {
           "tr": "Çözeltiye aynı sıcaklıkta saf su eklenirse buhar basıncı artar.",
@@ -2258,7 +2258,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ru": "Давление пара раствора зависит от температуры и мольной доли растворителя, а не от количества жидкости. Добавление раствора той же концентрации не меняет состав, поэтому давление пара не изменяется; это и есть неверное утверждение. Так как сахар растворён, Xводы < 1 и давление пара ниже, чем у чистой воды; добавление воды увеличивает Xводы и давление пара, добавление сахара уменьшает их; повышение температуры усиливает испарение и увеличивает давление пара.",
         "ar": "يعتمد ضغط بخار المحلول على درجة الحرارة وعلى الكسر المولي للمذيب، لا على كمية السائل. إضافة محلول بالتركيز نفسه لا تغير التركيب، فلا يتغير ضغط البخار؛ وهذه هي العبارة الخاطئة. ولأن السكر مذاب يكون Xwater < 1 ويكون ضغط البخار أقل من ضغط بخار الماء النقي؛ إضافة الماء ترفع Xwater وضغط البخار، وإضافة السكر تخفضهما؛ ورفع درجة الحرارة يزيد التبخر فيرتفع ضغط البخار.",
         "zh": "溶液的蒸气压取决于温度和溶剂的物质的量分数，与液体的多少无关。加入相同浓度的溶液不改变组成，所以蒸气压不变；这就是错误的说法。由于溶有糖，X水 < 1，蒸气压低于纯水；加水使 X水 增大、蒸气压升高，加糖则使二者减小；升高温度使蒸发加剧，蒸气压升高。",
-        "ku": "Zexta buharê ya çareseriyê bi germahiyê û pişka molî ya helker ve girêdayî ye, ne bi mîqdara şilekê. Zêdekirina çareseriya bi heman tîrbûnê pêkhateyê naguherîne, ji ber vê zexta buharê naguhere; gotina şaş ev e. Ji ber ku şekir helbûyî ye Xav < 1 e û zexta buharê ji ya ava paqij nizmtir e; zêdekirina avê Xav û zexta buharê bilind dike, zêdekirina şekir herduyan kêm dike; bilindkirina germahiyê buharbûnê zêde dike û zexta buharê bilind dike."
+        "ku": "Zexta buharê ya çareseriyê bi germahiyê û bi kerta molî ya helker ve girêdayî ye, ne bi mîqdara şileyê. Zêdekirina çareseriya bi heman tîrbûnê pêkhatina çareseriyê naguherîne, ji ber vê yekê zexta buharê naguhere; gotina şaş ev e. Ji ber ku şekir helbûyî ye, Xav < 1 e û zexta buharê ji ya ava paqij nizmtir e; zêdekirina avê Xav zêde dike û zexta buharê bilind dike, zêdekirina şekir Xav kêm dike û zexta buharê dadixe; bilindkirina germahiyê buharbûnê zêde dike û zexta buharê bilind dike."
       }
     }
   ]

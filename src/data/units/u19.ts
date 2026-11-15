@@ -14,7 +14,7 @@ export const unit19: ChemistryUnitSeedData = {
     "ru": "Кислотно-основное равновесие и титрование",
     "ar": "الاتزان الحمضي القاعدي والمعايرة",
     "zh": "酸碱平衡与滴定",
-    "ku": "Hevsengiya Asîd-Baz û Tîtrakirin"
+    "ku": "Hevsengiya Asîd-Baz û Tîtrasyon"
   },
   "subtitle": {
     "tr": "pH, pOH, Ka, Kb, Tampon ve Titrasyon Eğrileri",
@@ -24,7 +24,7 @@ export const unit19: ChemistryUnitSeedData = {
     "ru": "pH, pOH, Ka, Kb, буферные растворы и кривые титрования",
     "ar": "pH وpOH وKa وKb والمحاليل المنظِّمة ومنحنيات المعايرة",
     "zh": "pH、pOH、Ka、Kb、缓冲溶液和滴定曲线",
-    "ku": "PH, pOH, Ka, Kb, Tampon û Kûrên Tîtrasyonê"
+    "ku": "pH, pOH, Ka, Kb, Tampon û Xêzên Tîtrasyonê"
   },
   "facts": [
     {
@@ -37,7 +37,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При 25 °C ионное произведение воды Kw = [H+] * [OH-] = 1,0x10^-14; pH + pOH = 14.",
         "ar": "ثابت التأين الذاتي للماء عند 25 °C هو Kw = [H+] * [OH-] = 1.0x10^-14؛ و pH + pOH = 14.",
         "zh": "25 °C 时，水的离子积 Kw = [H+] * [OH-] = 1.0x10^-14；pH + pOH = 14。",
-        "ku": "Hêmana otoyonîzasyona avê di 25 °C de Ksu = [H+] * [OH-] = 1,0x10^-14 e; pH + pOH = 14."
+        "ku": "Li 25 °C sabîta otoîyonîzasyona avê Kw = [H+] * [OH-] = 1,0x10^-14 e; pH + pOH = 14 e."
       },
       "trap": {
         "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14'tür.",
@@ -47,7 +47,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При любой температуре сумма pH + pOH обязательно равна 14.",
         "ar": "مجموع pH + pOH يساوي 14 بالضرورة عند أي درجة حرارة.",
         "zh": "在任何温度下，pH + pOH 都一定等于 14。",
-        "ku": "Di her germahiyê de hejmara pH + pOH bê guman 14 e."
+        "ku": "Di her germahiyê de berhevoka pH + pOH bê guman 14 e."
       },
       "whyTrapIsFalse": {
         "tr": "pH + pOH = 14 yalnızca Ksu = 1,0x10^-14 olan 25 °C için geçerlidir; Ksu sıcaklıkla değiştiği için toplam da değişir (ör. sıcak suda 14'ten küçüktür).",
@@ -57,7 +57,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Равенство pH + pOH = 14 выполняется только при 25 °C, когда Kw = 1,0x10^-14; Kw зависит от температуры, поэтому меняется и сумма (например, в горячей воде она меньше 14).",
         "ar": "العلاقة pH + pOH = 14 صحيحة عند 25 °C فقط حيث Kw = 1.0x10^-14؛ ولأن Kw يتغير مع درجة الحرارة يتغير المجموع أيضًا (يكون أقل من 14 في الماء الساخن).",
         "zh": "pH + pOH = 14 仅在 25 °C(Kw = 1.0x10^-14)时成立；Kw 随温度变化，因此两者之和也随之变化(如热水中小于 14)。",
-        "ku": "pH + pOH = 14 tenê li 25 °C derbas dibe, ku li wir Ksu = 1,0x10^-14 e; ji ber ku Ksu bi germahiyê diguhere, kom jî diguhere (di ava germ de ji 14 kêmtir e)."
+        "ku": "pH + pOH = 14 tenê li 25 °C derbasdar e, ku li wir Kw = 1,0x10^-14 e; ji ber ku Kw bi germahiyê diguhere, berhevok jî diguhere (mînak, di ava germ de ji 14 kêmtir e)."
       },
       "osymTip": {
         "tr": "Ksu sıcaklık arttıkça büyür (endotermiktir), bu yüzden sıcaklıkla pH+pOH değişir!",
@@ -67,7 +67,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Kw растёт с повышением температуры (диссоциация воды — эндотермический процесс), поэтому сумма pH + pOH зависит от температуры!",
         "ar": "يزداد Kw بارتفاع درجة الحرارة (التأين الذاتي ماص للحرارة)، لذلك يتغير مجموع pH + pOH مع درجة الحرارة!",
         "zh": "Kw 随温度升高而增大（水的电离是吸热过程），因此 pH + pOH 随温度而变！",
-        "ku": "Ksu bi zêdebûna germahiyê mezin dibe (otoiyonîzasyon endotermîk e), ji ber vê pH + pOH bi germahiyê diguhere!"
+        "ku": "Bi bilindbûna germahiyê Kw mezin dibe (otoîyonîzasyon endotermîk e), ji ber vê yekê pH + pOH bi germahiyê diguhere!"
       }
     },
     {
@@ -80,7 +80,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сильные кислоты и основания диссоциируют в воде на 100 %, а слабые кислоты и основания — лишь частично, с установлением равновесия (Ka, Kb).",
         "ar": "بينما تتأين الأحماض والقواعد القوية في الماء بنسبة 100%، تتأين الأحماض والقواعد الضعيفة جزئيًا فتكوّن اتزانًا (Ka وKb).",
         "zh": "强酸和强碱在水中 100% 电离，而弱酸和弱碱只部分电离并建立平衡(Ka、Kb)。",
-        "ku": "Dema ku asîd û bazên xurt di avê de %100 îyonîze dibin, asîd û bazên qels qismî iyon dibin û hevsengiyê saz dikin (Ka, Kb)."
+        "ku": "Asîd û bazên bihêz di avê de ji sedî 100 îyonîze dibin, lê asîd û bazên qels bi qismî îyonîze dibin û hevsengiyê saz dikin (Ka, Kb)."
       },
       "trap": {
         "tr": "Zayıf asitler suda hiç iyonlaşmaz.",
@@ -100,7 +100,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Слабые кислоты тоже диссоциируют в воде, но лишь частично, с установлением равновесия. Если бы они совсем не диссоциировали, Ka была бы равна нулю, а их растворы не проявляли бы кислотных свойств.",
         "ar": "الأحماض الضعيفة تتأين في الماء أيضًا لكن جزئيًا فقط مكوّنة اتزانًا. ولو لم تتأين إطلاقًا لكانت قيمة Ka صفرًا ولما كانت محاليلها حمضية.",
         "zh": "弱酸在水中也会电离，只是部分电离并建立平衡。若完全不电离，其 Ka 将为零，溶液也不会呈酸性。",
-        "ku": "Asîdên qels jî di avê de îyonîze dibin, lê tenê beşek ji wan îyonîze dibe û hevsengî saz dibe. Heke qet îyonîze nebûna, Ka ya wan sifir dibû û çareseriyên wan asîdî nedibûn."
+        "ku": "Asîdên qels jî di avê de îyonîze dibin, lê tenê beşek ji wan îyonîze dibe û hevsengî saz dibe. Heke qet îyonîze nebûna, Ka ya wan dê sifir bûya û çareseriyên wan asîdî nedibûn."
       }
     },
     {
@@ -113,7 +113,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Для слабой одноосновной кислоты не слишком малой концентрации, если пренебречь продиссоциировавшей частью, [H+] ≈ √(Ka * Ca), где Ca — начальная молярная концентрация кислоты.",
         "ar": "في حمض ضعيف أحادي البروتون غير مخفف جدًا، وبإهمال الجزء المتأين، يكون [H+] ≈ √(Ka * Ca) (Ca: المولارية الابتدائية للحمض).",
         "zh": "对于浓度不太低的一元弱酸，忽略已电离的部分时，[H+] ≈ √(Ka * Ca)(Ca 为酸的起始物质的量浓度)。",
-        "ku": "Ji bo asîdeke qels a monoprotîk ku ne pir sist e, heke beşa îyonîzebûyî neyê hesibandin, [H+] ≈ √(Ka * Ca) e (Ca: molarîteya destpêkê ya asîdê)."
+        "ku": "Di asîdeke qels a monoprotîk de ku tîrbûna wê pir kêm nebe, heke beşa îyonîzebûyî neyê hesibandin, [H+] ≈ √(Ka * Ca) ye (Ca: molarîteya destpêkê ya asîdê)."
       },
       "trap": {
         "tr": "Zayıf asidin H+ derişimi başlangıç derişimine eşittir.",
@@ -123,7 +123,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Концентрация H+ в растворе слабой кислоты равна начальной концентрации кислоты.",
         "ar": "تركيز H+ في محلول الحمض الضعيف يساوي تركيزه الابتدائي.",
         "zh": "弱酸溶液中的 H+ 浓度等于酸的起始浓度。",
-        "ku": "Tîrbûna H+ ya asîda qels bi tîrbûna wê ya destpêkê re wekhev e."
+        "ku": "Tîrbûna H+ ya asîdeke qels bi tîrbûna wê ya destpêkê re wekhev e."
       },
       "whyTrapIsFalse": {
         "tr": "Bu ifade zayıf asidi kuvvetli asit gibi tamamen iyonlaşmış kabul eder. Zayıf asidin yalnızca küçük bir kesri iyonlaştığından [H+], başlangıç derişiminden çok küçüktür.",
@@ -133,7 +133,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Это утверждение рассматривает слабую кислоту как сильную, полностью диссоциированную. Диссоциирует лишь малая доля слабой кислоты, поэтому [H+] намного меньше её начальной концентрации.",
         "ar": "هذه العبارة تعامل الحمض الضعيف كأنه حمض قوي متأين كليًا. لا يتأين إلا جزء صغير من الحمض الضعيف، لذا يكون [H+] أصغر بكثير من تركيزه الابتدائي.",
         "zh": "该说法把弱酸当作完全电离的强酸。弱酸只有一小部分电离，所以 [H+] 远小于其初始浓度。",
-        "ku": "Ev gotin asîda qels wek asîdeke xurt a bi tevahî îyonîzebûyî dihesibîne. Tenê beşeke piçûk a asîda qels îyonîze dibe, ji ber vê [H+] ji tîrbûna destpêkê gelek piçûktir e."
+        "ku": "Ev gotin asîda qels wek asîdeke bihêz bi tevahî îyonîzebûyî dihesibîne. Tenê beşeke piçûk a asîda qels îyonîze dibe, ji ber vê yekê [H+] ji tîrbûna destpêkê gelek kêmtir e."
       }
     },
     {
@@ -146,7 +146,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "По Брёнстеду — Лоури кислота — частица, отдающая H+, а основание — частица, принимающая H+; пары, различающиеся на один H+, называют сопряжёнными кислотно-основными парами.",
         "ar": "وفق تعريف برونستد-لوري، النوع الذي يمنح H+ حمض، والنوع الذي يستقبل H+ قاعدة؛ والأزواج التي يختلف أفرادها بـ H+ واحد تُسمّى أزواج حمض-قاعدة مترافقة.",
         "zh": "根据布朗斯特-劳里酸碱质子理论，给出 H+ 的微粒是酸，接受 H+ 的微粒是碱；相差 1 个 H+ 的一对微粒称为共轭酸碱对。",
-        "ku": "Li gorî pênaseya Brønsted-Lowry, cureya ku H+ dide asîd e û cureya ku H+ digire baz e; cotên ku 1 H+ ferqa wan heye cotên asîd-baz ên hevgirtî (konjuge) tên gotin."
+        "ku": "Li gorî pênaseya Brønsted-Lowry, cureya ku H+ dide asîd e û cureya ku H+ digire baz e; du cureyên ku tenê bi 1 H+ ji hev cuda ne, cotê asîd-baz ê konjuge tên gotin."
       },
       "trap": {
         "tr": "Eşlenik asit-baz çiftleri arasında 2 elektron farkı bulunur.",
@@ -156,7 +156,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Частицы сопряжённой кислотно-основной пары различаются на 2 электрона.",
         "ar": "يوجد بين فردَي زوج الحمض والقاعدة المترافق فرقٌ قدره إلكترونان.",
         "zh": "共轭酸碱对之间相差 2 个电子。",
-        "ku": "Di navbera cotên asîd-bazê yên hevgirtî de 2 elektronan ferq heye."
+        "ku": "Di navbera cotên asîd-baz ên konjuge de ferqa 2 elektronan heye."
       },
       "whyTrapIsFalse": {
         "tr": "Eşlenik asit-baz çiftleri elektron değil proton (H+) alışverişiyle ilişkilidir; aralarındaki fark tek bir H+ iyonudur.",
@@ -166,7 +166,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сопряжённые кислотно-основные пары связаны переносом протона (H+), а не электронов; они различаются одним ионом H+.",
         "ar": "الأزواج المترافقة من الحمض والقاعدة ترتبط بانتقال بروتون (H+) لا إلكترونات؛ والفرق بينها أيون H+ واحد.",
         "zh": "共轭酸碱对是通过质子(H+)而不是电子的转移相联系的；两者只相差一个 H+。",
-        "ku": "Cotên asîd-baz ên hevgirtî bi guhastina protonekê (H+) ve girêdayî ne, ne bi elektronan; ferqa wan tenê yek îyona H+ ye."
+        "ku": "Cotên asîd-baz ên konjuge bi danûstendina protonê (H+) bi hev ve girêdayî ne, ne bi elektronan; ferqa wan tenê yek îyona H+ ye."
       }
     },
     {
@@ -179,7 +179,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Для сопряжённой кислотно-основной пары Ka * Kb = Kw = 10^-14 (при 25 °C).",
         "ar": "في زوج مترافق من حمض وقاعدة، Ka * Kb = Kw = 10^-14 (عند 25 °C).",
         "zh": "在共轭酸碱对中，Ka * Kb = Kw = 10^-14(25 °C 时)。",
-        "ku": "Di cotek asîd-bazê ya hevgirtî de, Ka * Kb = Ksu = 10^-14 (li 25 °C)."
+        "ku": "Di cotê asîd-baz ê konjuge de Ka * Kb = Kw = 10^-14 e (li 25 °C)."
       },
       "trap": {
         "tr": "Ka değeri büyük olan asidin eşlenik bazının Kb değeri de çok büyüktür.",
@@ -189,7 +189,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Если у кислоты большая Ka, то Kb её сопряжённого основания тоже очень велика.",
         "ar": "الحمض ذو قيمة Ka الكبيرة تكون قيمة Kb لقاعدته المرافقة كبيرة جدًا أيضًا.",
         "zh": "Ka 很大的酸，其共轭碱的 Kb 也很大。",
-        "ku": "Nirxa Kb ya bingeha hevgirtî ya asîda bi nirxa Ka ya bilind jî pir zêde ye."
+        "ku": "Asîda ku Ka ya wê mezin e, Kb ya baza wê ya konjuge jî pir mezin e."
       },
       "whyTrapIsFalse": {
         "tr": "Ka · Kb = Ksu sabit olduğundan biri büyüdükçe diğeri küçülür; kuvvetli asidin eşlenik bazı zayıftır.",
@@ -199,7 +199,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Произведение Ka · Kb = Kw постоянно, поэтому чем больше одна константа, тем меньше другая; сопряжённое основание сильной кислоты — слабое.",
         "ar": "بما أن Ka · Kb = Kw ثابت، فكلما كبر أحدهما صغر الآخر؛ والقاعدة المرافقة لحمض قوي تكون ضعيفة.",
         "zh": "由于 Ka · Kb = Kw 为常数，一个变大另一个就变小；强酸的共轭碱是弱碱。",
-        "ku": "Ji ber ku Ka · Kb = Ksu sabît e, dema yek mezin dibe yê din piçûk dibe; baza hevgirtî ya asîdeke xurt qels e."
+        "ku": "Ji ber ku Ka · Kb = Kw sabît e, dema yek mezin dibe yê din piçûk dibe; baza konjuge ya asîdeke bihêz qels e."
       }
     },
     {
@@ -212,7 +212,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Буферный раствор содержит слабую кислоту вместе с сопряжённым с ней основанием (или слабое основание вместе с сопряжённой с ним кислотой) и сохраняет pH почти неизменным при добавлении небольшого количества кислоты или щёлочи.",
         "ar": "المحلول المنظم يحتوي على حمض ضعيف مع قاعدته المرافقة (أو قاعدة ضعيفة مع حمضها المرافق) ويقاوم تغيّر pH عند إضافة كمية قليلة من حمض أو قاعدة.",
         "zh": "缓冲溶液同时含有弱酸及其共轭碱（或弱碱及其共轭酸），加入少量酸或碱时能抵抗 pH 的变化。",
-        "ku": "Çareseriya tampon asîdeke qels û baza wê ya hevgirtî (an bazeke qels û asîda wê ya hevgirtî) bi hev re dihewîne û dema hinekî asîd an baz lê tê zêdekirin li hember guherîna pH radiweste."
+        "ku": "Çareseriya tampon asîdeke qels û baza wê ya konjuge (an bazeke qels û asîda wê ya konjuge) bi hev re dihewîne û dema hinek asîd an baz lê tê zêdekirin, li hember guherîna pH-ê disekine."
       },
       "trap": {
         "tr": "Tampon çözelti kuvvetli asit ile kuvvetli baz karışımından oluşur.",
@@ -222,7 +222,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Буферный раствор состоит из смеси сильной кислоты и сильного основания.",
         "ar": "يتكون المحلول المنظم من مزيج حمض قوي وقاعدة قوية.",
         "zh": "缓冲溶液由强酸和强碱混合而成。",
-        "ku": "Çareseriya tampon ji tevliheviya asîda xurt û bazê xurt pêk tê."
+        "ku": "Çareseriya tampon ji tevliheviya asîdeke bihêz û bazeke bihêz pêk tê."
       },
       "whyTrapIsFalse": {
         "tr": "Kuvvetli asit ile kuvvetli baz birbirini nötrleştirir; ortamda eklenen H+ veya OH- iyonlarını tüketecek zayıf asit-eşlenik baz çifti bulunmadığından tampon oluşmaz.",
@@ -232,7 +232,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сильная кислота и сильное основание просто нейтрализуют друг друга; в растворе нет пары «слабая кислота — сопряжённое основание», которая связывала бы добавленные ионы H+ или OH-, поэтому буфер не образуется.",
         "ar": "الحمض القوي والقاعدة القوية يتعادلان فقط؛ ولا يبقى زوج من حمض ضعيف وقاعدته المرافقة يستهلك أيونات H+ أو OH- المضافة، لذا لا يتكون محلول منظم.",
         "zh": "强酸与强碱只会相互中和，体系中没有能消耗外加 H+ 或 OH- 的弱酸-共轭碱对，因此不能形成缓冲溶液。",
-        "ku": "Asîda xurt û baza xurt tenê hev bêalî dikin; cotek asîda qels û baza wê ya hevgirtî namîne ku îyonên H+ an OH- yên lê zêdekirî bixwe, ji ber vê tampon çênabe."
+        "ku": "Asîda bihêz û baza bihêz tenê hevdu neutralîze dikin; cotekî asîda qels û baza wê ya konjuge namîne ku îyonên H+ an OH- yên lê zêdekirî bixwe, ji ber vê yekê tampon çênabe."
       }
     },
     {
@@ -245,7 +245,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "pH крови человека (≈ 7,4) поддерживается постоянным главным образом гидрокарбонатной буферной системой H2CO3 / HCO3- (угольная кислота — гидрокарбонат-ион).",
         "ar": "يُحافَظ على ثبات pH دم الإنسان (≈ 7.4) أساسًا بواسطة النظام المنظم H2CO3 / HCO3- (حمض الكربونيك-البيكربونات).",
         "zh": "人体血液的 pH(≈ 7.4)主要靠 H2CO3/HCO3-（碳酸-碳酸氢根）缓冲体系维持恒定。",
-        "ku": "pH ya xwîna mirovan (≈ 7,4) bi giranî ji hêla pergala tampon a H2CO3 / HCO3- (asîda karbonîk-bîkarbonat) ve sabît tê hiştin."
+        "ku": "pH-a xwîna mirov (≈ 7,4) bi giranî bi sîstema tampon a H2CO3 / HCO3- (asîda karbonîk-bîkarbonat) sabît tê girtin."
       },
       "trap": {
         "tr": "Kanın pH'ı hidroklorik asit (HCl) ile tamponlanarak sabit tutulur.",
@@ -255,7 +255,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "pH крови поддерживается постоянным благодаря буферному действию соляной кислоты (HCl).",
         "ar": "يبقى pH الدم ثابتًا بفعل نظام منظِّم قوامه حمض الهيدروكلوريك (HCl).",
         "zh": "血液的 pH 是靠盐酸(HCl)的缓冲作用维持恒定的。",
-        "ku": "pH ya xwînê bi tamponkirina bi asîda hîdroklorîk (HCl) sabît tê hiştin."
+        "ku": "pH-a xwînê bi tamponkirina bi asîda hîdroklorîk (HCl) sabît tê girtin."
       },
       "whyTrapIsFalse": {
         "tr": "HCl kuvvetli bir asittir ve tampon oluşturamaz; kanın pH'ını koruyan sistem zayıf asit H2CO3 ile eşlenik bazı HCO3- çiftidir.",
@@ -265,7 +265,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "HCl — сильная кислота и буфера не образует; pH крови поддерживает пара из слабой кислоты H2CO3 и сопряжённого с ней основания HCO3-.",
         "ar": "HCl حمض قوي لا يستطيع تكوين محلول منظم؛ ويحافظ على pH الدم الزوج المكوّن من الحمض الضعيف H2CO3 وقاعدته المرافقة HCO3-.",
         "zh": "HCl 是强酸，不能形成缓冲体系；维持血液 pH 的是弱酸 H2CO3 与其共轭碱 HCO3- 组成的缓冲对。",
-        "ku": "HCl asîdeke xurt e û nikare tampon çêke; pH ya xwînê ji hêla cota asîda qels H2CO3 û baza wê ya hevgirtî HCO3- ve tê parastin."
+        "ku": "HCl asîdeke bihêz e û nikare tampon çêke; pH-a xwînê bi cotê asîda qels H2CO3 û baza wê ya konjuge HCO3- tê parastin."
       }
     },
     {
@@ -278,7 +278,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При титровании точка эквивалентности — момент, когда количество добавленных ионов OH- равно количеству ионов H+ кислоты (nH+ = nOH-); индикатор подбирают так, чтобы конечная точка титрования (изменение окраски) была как можно ближе к ней.",
         "ar": "في المعايرة، نقطة التكافؤ هي النقطة التي يتساوى فيها عدد مولات OH- المضافة مع عدد مولات H+ في الحمض (nH+ = nOH-)؛ ويُختار الكاشف بحيث تكون نقطة النهاية (تغير اللون) أقرب ما يمكن إليها.",
         "zh": "滴定中，化学计量点是加入的 OH- 的物质的量等于酸中 H+ 的物质的量的点(nH+ = nOH-)；选择指示剂时，应使其变色点（滴定终点）尽可能接近化学计量点。",
-        "ku": "Di tîtrasyonê de xala hevwateyê ew xal e ku hejmara molên OH- yên lê zêdekirî bi hejmara molên H+ yên asîdê re wekhev dibe (nH+ = nOH-); îndîkator wisa tê hilbijartin ku xala dawiyê (guherîna rengê wê) bi qasî ku pêkan e nêzî vê xalê be."
+        "ku": "Di tîtrasyonê de xala hevtayê ew xal e ku hejmara molên OH- yên bi bazê re hatine zêdekirin bi hejmara molên H+ yên asîdê re wekhev dibe (nH+ = nOH-); îndîkator wisa tê hilbijartin ku xala dawiyê (guherîna rengê wê) heta ku pêkan be nêzî vê xalê be."
       },
       "trap": {
         "tr": "Eşdeğerlik noktasında çözeltinin pH'ı daima 7,00 olmak zorundadır.",
@@ -288,7 +288,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "В точке эквивалентности pH раствора всегда обязательно равен 7,00.",
         "ar": "عند نقطة التكافؤ، يجب أن يكون الرقم الهيدروجيني للمحلول دائمًا 7.00.",
         "zh": "化学计量点时，溶液的 pH 一定总是 7.00。",
-        "ku": "Li xala hevwateyê pH ya çareseriyê her gav divê 7,00 be."
+        "ku": "Li xala hevtayê pH-a çareseriyê her tim divê 7,00 be."
       },
       "whyTrapIsFalse": {
         "tr": "pH'ın 7 olması yalnızca kuvvetli asit-kuvvetli baz titrasyonuna özgüdür. Zayıf asit-kuvvetli baz titrasyonunda oluşan anyon hidroliz olduğundan eşdeğerlik noktasında pH 7'den büyük, zayıf baz-kuvvetli asit titrasyonunda ise küçüktür.",
@@ -298,7 +298,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "pH = 7 характерен только для титрования сильной кислоты сильным основанием. При титровании слабой кислоты сильным основанием образующийся анион гидролизуется, поэтому pH в точке эквивалентности больше 7, а при титровании слабого основания сильной кислотой — меньше 7.",
         "ar": "كون pH = 7 خاص بمعايرة حمض قوي مع قاعدة قوية فقط. ففي معايرة حمض ضعيف بقاعدة قوية يتحلل الأنيون الناتج مائيًا فيكون pH عند نقطة التكافؤ أكبر من 7، وفي معايرة قاعدة ضعيفة بحمض قوي يكون أصغر من 7.",
         "zh": "pH = 7 只适用于强酸-强碱滴定。弱酸-强碱滴定中生成的阴离子会水解，化学计量点 pH 大于 7；弱碱-强酸滴定中则小于 7。",
-        "ku": "pH 7 tenê taybetî tîtrasyona asîda xurt-baza xurt e. Di tîtrasyona asîda qels-baza xurt de anyona çêbûyî hîdrolîz dibe, ji ber vê li xala hevwateyê pH ji 7 mezintir e; di tîtrasyona baza qels-asîda xurt de ji 7 piçûktir e."
+        "ku": "pH 7 tenê taybetî tîtrasyona asîda bihêz-baza bihêz e. Di tîtrasyona asîda qels-baza bihêz de anyona çêbûyî hîdroliz dibe, ji ber vê yekê li xala hevtayê pH ji 7 mezintir e; di tîtrasyona baza qels-asîda bihêz de ji 7 piçûktir e."
       },
       "osymTip": {
         "tr": "Zayıf asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH > 7'dir!",
@@ -308,7 +308,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При титровании слабой кислоты сильным основанием pH в точке эквивалентности больше 7!",
         "ar": "في معايرة الحمض الضعيف والقاعدة القوية، يكون الرقم الهيدروجيني عند نقطة التكافؤ أكبر من 7!",
         "zh": "弱酸-强碱滴定时，化学计量点的 pH > 7！",
-        "ku": "Di tîtrasyona asîda qels - baza xurt de, li xala hevwateyê pH > 7 e!"
+        "ku": "Di tîtrasyona asîda qels - baza bihêz de li xala hevtayê pH > 7 e!"
       }
     },
     {
@@ -321,7 +321,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При титровании сильной кислоты сильным основанием pH в точке эквивалентности при 25 °C равен 7,00.",
         "ar": "في معايرة حمض قوي بقاعدة قوية يكون pH عند نقطة التكافؤ 7.00 عند 25 °C.",
         "zh": "强酸-强碱滴定中，25 °C 时化学计量点的 pH 为 7.00。",
-        "ku": "Di tîtrasyona asîda xurt - baza xurt de, li 25 °C pH di xala hevwateyê de 7,00 e."
+        "ku": "Di tîtrasyona asîda bihêz - baza bihêz de li 25 °C pH-a xala hevtayê 7,00 e."
       },
       "trap": {
         "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0'dır.",
@@ -331,7 +331,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При титровании сильной кислоты сильным основанием pH в точке эквивалентности равен 0.",
         "ar": "في معايرة حمض قوي بقاعدة قوية، يكون الرقم الهيدروجيني 0 عند نقطة التكافؤ.",
         "zh": "强酸-强碱滴定中，化学计量点的 pH 为 0。",
-        "ku": "Di tîtrasyona asîda xurt - baza xurt de, pH di xala hevwateyê de 0 ye."
+        "ku": "Di tîtrasyona asîda bihêz - baza bihêz de li xala hevtayê pH 0 ye."
       },
       "whyTrapIsFalse": {
         "tr": "Eşdeğerlik noktasında asit tamamen nötrleşmiştir; ortamda yalnızca hidroliz olmayan tuz (ör. NaCl) ve su kalır. Bu yüzden pH 0 değil, 25 °C'de 7'dir.",
@@ -341,7 +341,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "В точке эквивалентности кислота полностью нейтрализована; остаются только негидролизующаяся соль (например, NaCl) и вода. Поэтому pH при 25 °C равен 7, а не 0.",
         "ar": "عند نقطة التكافؤ يكون الحمض قد تعادل كليًا ولا يبقى إلا ملح لا يتحلل مائيًا (مثل NaCl) والماء، لذلك يكون pH مساويًا 7 عند 25 °C وليس 0.",
         "zh": "化学计量点时酸已被完全中和，只剩不水解的盐(如 NaCl)和水，因此 25 °C 时 pH 为 7，而不是 0。",
-        "ku": "Li xala hevwateyê asîd bi tevahî bêalî bûye; tenê xwêyeke ku hîdrolîz nabe (mînak NaCl) û av dimînin. Ji ber vê li 25 °C pH 7 e, ne 0."
+        "ku": "Li xala hevtayê asîd bi tevahî neutralîze bûye; tenê xwêyeke ku hîdroliz nabe (mînak NaCl) û av dimînin. Ji ber vê yekê li 25 °C pH ne 0, lê 7 e."
       }
     },
     {
@@ -354,7 +354,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Гидролиз соли — взаимодействие с водой аниона слабой кислоты или катиона слабого основания.",
         "ar": "التحلل المائي للملح: تفاعلُ الأنيون الناتج من حمض ضعيف أو الكاتيون الناتج من قاعدة ضعيفة مع الماء.",
         "zh": "盐类的水解：弱酸的阴离子或弱碱的阳离子与水发生的反应。",
-        "ku": "Hîdrolîza xwê: Reaksiyona anyona ji asîdeke qels an jî kationa ji bingeheke qels bi avê re ye."
+        "ku": "Hîdroliza xwê: reaksiyona anyona ku ji asîdeke qels tê an katyona ku ji bazeke qels tê bi avê re ye."
       },
       "trap": {
         "tr": "Nötr tuzların iyonları suda şiddetle hidroliz olur.",
@@ -364,7 +364,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Ионы нейтральных солей в воде подвергаются сильному гидролизу.",
         "ar": "تتحلل أيونات الأملاح المتعادلة في الماء تحللًا مائيًا شديدًا.",
         "zh": "中性盐的离子在水中强烈水解。",
-        "ku": "Îyonên xwêyên bêalî di avê de bi tundî hîdrolîz dibin."
+        "ku": "Îyonên xwêyên bêalî di avê de bi tundî hîdroliz dibin."
       },
       "whyTrapIsFalse": {
         "tr": "Nötr tuzlar kuvvetli asit ile kuvvetli bazdan türer; iyonları (ör. Na+, Cl-) suyla tepkimeye girmez, yani hidroliz olmaz ve pH'ı değiştirmez.",
@@ -374,7 +374,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Нейтральные соли образованы сильной кислотой и сильным основанием; их ионы (например, Na+, Cl-) не реагируют с водой, то есть не гидролизуются и не меняют pH.",
         "ar": "الأملاح المتعادلة مشتقة من حمض قوي وقاعدة قوية؛ وأيوناتها (مثل Na+ وCl-) لا تتفاعل مع الماء، فلا تتحلل مائيًا ولا تغيّر pH.",
         "zh": "中性盐由强酸和强碱生成，其离子(如 Na+、Cl-)不与水反应，即不水解，也不改变 pH。",
-        "ku": "Xwêyên bêalî ji asîda xurt û baza xurt çêdibin; îyonên wan (mînak Na+, Cl-) bi avê re reaksiyon nakin, yanî hîdrolîz nabin û pH naguherînin."
+        "ku": "Xwêyên bêalî ji asîdeke bihêz û bazeke bihêz çêdibin; îyonên wan (mînak Na+, Cl-) bi avê re nakevin reaksiyonê, yanî hîdroliz nabin û pH-ê naguherînin."
       }
     },
     {
@@ -387,7 +387,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При одинаковых температуре и концентрации кислота с большей Ka сильнее, и степень её диссоциации больше.",
         "ar": "عند درجة الحرارة والتركيز نفسيهما، يكون الحمض ذو قيمة Ka الأكبر أقوى ونسبة تأينه المئوية أكبر.",
         "zh": "在相同温度和浓度下，Ka 越大的酸越强，电离度也越大。",
-        "ku": "Di heman germahî û tîrbûnê de, asîda ku Ka ya wê mezintir e xurttir e û rêjeya îyonîzasyona wê bilindtir e."
+        "ku": "Di heman germahî û tîrbûnê de asîda ku Ka ya wê mezintir e bihêztir e û rêjeya îyonîzasyona wê bilindtir e."
       },
       "trap": {
         "tr": "Ka'sı küçük olan asit daha kuvvetlidir.",
@@ -397,7 +397,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Чем меньше Ka, тем сильнее кислота.",
         "ar": "الحمض ذو قيمة Ka الأصغر هو الأقوى.",
         "zh": "Ka 较小的酸酸性更强。",
-        "ku": "Asîda ku Ka ya wê piçûktir e xurttir e."
+        "ku": "Asîda ku Ka ya wê piçûktir e bihêztir e."
       },
       "whyTrapIsFalse": {
         "tr": "İlişki terstir: Ka, iyonlaşma dengesinin ürünler yönüne ne kadar kaydığını gösterir; Ka küçükse asit daha az iyonlaşır, dolayısıyla daha zayıftır.",
@@ -407,7 +407,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Зависимость обратная: Ka показывает, насколько равновесие диссоциации смещено к продуктам; чем меньше Ka, тем меньше диссоциирует кислота, т. е. тем она слабее.",
         "ar": "العلاقة معكوسة: تبيّن Ka مدى إزاحة اتزان التأين نحو النواتج؛ فكلما صغرت Ka قلّ التأين وكان الحمض أضعف.",
         "zh": "关系正好相反：Ka 表示电离平衡偏向生成物的程度；Ka 越小，电离越少，酸越弱。",
-        "ku": "Têkilî berevajî ye: Ka nîşan dide ku hevsengiya îyonîzasyonê çiqas ber bi berheman ve diçe; Ka piçûktir be asîd kêmtir îyonîze dibe, ango qelstir e."
+        "ku": "Têkilî berevajî ye: Ka nîşan dide ku hevsengiya îyonîzasyonê çiqasî ber bi hilberan ve diçe; heke Ka piçûk be asîd kêmtir îyonîze dibe, ango qelstir e."
       }
     },
     {
@@ -420,7 +420,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При разбавлении раствора слабой кислоты чистой водой степень диссоциации растёт, но концентрация H+ уменьшается (pH увеличивается).",
         "ar": "إذا خُفِّف محلول حمض ضعيف بإضافة الماء النقي إليه تزداد النسبة المئوية للتأين؛ لكن تركيز H+ يقل (فيرتفع الرقم الهيدروجيني).",
         "zh": "向弱酸溶液中加入纯水稀释时，电离度增大，但 H+ 浓度减小(pH 升高)。",
-        "ku": "Ger ava saf li çareseriya asîdeke qels were zêdekirin û sist bibe, rêjeya îyonîzasyonê zêde dibe; lê tîrbûna H+ kêm dibe (pH zêde dibe)."
+        "ku": "Heke ava paqij li çareseriya asîdeke qels were zêdekirin û çareserî sist bibe, rêjeya îyonîzasyonê zêde dibe; lê tîrbûna H+ kêm dibe (pH bilind dibe)."
       },
       "trap": {
         "tr": "Zayıf asit seyreltildiğinde H+ derişimi artar.",
@@ -430,7 +430,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При разбавлении слабой кислоты концентрация H+ увеличивается.",
         "ar": "عند تخفيف حمض ضعيف يزداد تركيز H+.",
         "zh": "弱酸被稀释时，H+ 浓度增大。",
-        "ku": "Dema ku asîdeke qels tê sistkirin, tîrbûna H+ zêde dibe."
+        "ku": "Dema asîdeke qels tê sistkirin, tîrbûna H+ zêde dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Seyreltmede iyonlaşma yüzdesi artsa da hacim artışının etkisi daha büyüktür; H+ derişimi azalır ve pH yükselir.",
@@ -440,7 +440,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Хотя при разбавлении степень диссоциации растёт, сильнее сказывается увеличение объёма: [H+] уменьшается, а pH растёт.",
         "ar": "مع أن التخفيف يزيد النسبة المئوية للتأين، فإن أثر زيادة الحجم أكبر؛ فيقل [H+] ويرتفع pH.",
         "zh": "稀释虽然使电离度增大，但体积增大的影响更大；[H+] 减小，pH 升高。",
-        "ku": "Her çend bi sistkirinê rêjeya îyonîzasyonê zêde dibe jî, bandora zêdebûna qebareyê mezintir e; [H+] kêm dibe û pH bilind dibe."
+        "ku": "Her çend bi sistkirinê rêjeya îyonîzasyonê zêde bibe jî, bandora zêdebûna qebareyê mezintir e; [H+] kêm dibe û pH bilind dibe."
       }
     },
     {
@@ -453,7 +453,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "В точке эквивалентности выполняется соотношение Ma * Va * Za = Mb * Vb * Zb (Z — число ионов H+ или OH-, которое даёт одна формульная единица).",
         "ar": "عند نقطة التكافؤ تكون الصيغة: Ma * Va * Za = Mb * Vb * Zb (Z: عدد أيونات H+ أو OH- التي تطلقها وحدة الصيغة).",
         "zh": "化学计量点时：Ma * Va * Za = Mb * Vb * Zb(Z 为每个化学式单位释放的 H+ 或 OH- 数目)。",
-        "ku": "Di xala hevwateyê de formul ev e: Ma * Va * Za = Mb * Vb * Zb (Z: hejmara îyonên H+ an OH- yên ku yek yekeya formulê dide)."
+        "ku": "Formula xala hevtayê: Ma * Va * Za = Mb * Vb * Zb (Z: hejmara îyonên H+ an OH- ku yekeyeke formulê dide)."
       },
       "trap": {
         "tr": "Titrasyonda tesir değerliği dikkate alınmaz.",
@@ -463,7 +463,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При титровании число ионов H+ или OH-, которое даёт одна формульная единица (Z), не учитывают.",
         "ar": "في المعايرة لا يؤخذ عدد أيونات H+ أو OH- لكل وحدة صيغة (Z) بعين الاعتبار.",
         "zh": "滴定计算时不必考虑每个化学式单位释放的 H+ 或 OH- 数目(Z)。",
-        "ku": "Di tîtrasyonê de hejmara îyonên H+ an OH- yên her yekeya formulê (Z) nayê hesibandin."
+        "ku": "Di tîtrasyonê de hejmara îyonên H+ an OH- ya her yekeyeke formulê (Z) nayê hesibandin."
       },
       "whyTrapIsFalse": {
         "tr": "Tesir değerliği bir formül biriminin verdiği H+ veya OH- sayısıdır; H2SO4 gibi iki protonlu asitlerde Z hesaba katılmazsa sonuç yarı ya da iki kat hatalı bulunur.",
@@ -473,7 +473,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Z — число ионов H+ или OH-, которое даёт одна формульная единица; если для двухосновной кислоты, например H2SO4, не учесть Z, результат окажется в два раза меньше или больше истинного.",
         "ar": "التكافؤ Z هو عدد أيونات H+ أو OH- التي تعطيها وحدة صيغة واحدة؛ وفي حمض ثنائي البروتون مثل H2SO4 يؤدي إهمال Z إلى نتيجة خاطئة تساوي نصف القيمة الصحيحة أو ضعفها.",
         "zh": "Z 是一个化学式单位提供的 H+ 或 OH- 数目；对 H2SO4 这类二元酸，忽略 Z 会使结果相差 2 倍。",
-        "ku": "Z hejmara îyonên H+ an OH- ye ku yek yekeya formulê dide; ji bo asîdeke duprotonî wek H2SO4, heke Z neyê hesibandin encam du qat şaş derdikeve."
+        "ku": "Z hejmara îyonên H+ an OH- ye ku yekeyeke formulê dide; di asîdeke duprotonî ya wek H2SO4 de, heke Z neyê hesibandin encam nîvî an du qat şaş derdikeve."
       }
     },
     {
@@ -486,7 +486,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "HCl, HNO3, H2SO4 — сильные кислоты; HF, HCN, CH3COOH (уксусная кислота) — слабые кислоты.",
         "ar": "HCl و HNO3 و H2SO4 أحماض قوية؛ و HF و HCN و CH3COOH (حمض الخل) أحماض ضعيفة.",
         "zh": "HCl、HNO3、H2SO4 是强酸；HF、HCN、CH3COOH（醋酸）是弱酸。",
-        "ku": "HCl, HNO3, H2SO4 asîdê xurt; HF, HCN, CH3COOH (asîda sîrkeyê) asîdên qels in."
+        "ku": "HCl, HNO3, H2SO4 asîdên bihêz in; HF, HCN, CH3COOH (asîda sîrkeyê) asîdên qels in."
       },
       "trap": {
         "tr": "HF camı aşındırdığı için en kuvvetli asittir.",
@@ -496,7 +496,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "HF — самая сильная кислота, поскольку разъедает стекло.",
         "ar": "HF هو أقوى حمض لأنه يُذيب الزجاج.",
         "zh": "HF 能腐蚀玻璃，因此是最强的酸。",
-        "ku": "HF asîda herî xurt e ji ber ku camê dixwe (diqelişîne)."
+        "ku": "HF ji ber ku camê dixwe asîda herî bihêz e."
       },
       "whyTrapIsFalse": {
         "tr": "Camı aşındırmak asit kuvvetinin ölçüsü değildir; HF, camdaki SiO2 ile SiF4 oluşturduğu için camı aşındırır ama suda az iyonlaşan zayıf bir asittir.",
@@ -506,7 +506,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Способность разъедать стекло — не мера силы кислоты; HF разъедает стекло, потому что реагирует с SiO2 с образованием SiF4, но в воде диссоциирует слабо, т. е. это слабая кислота.",
         "ar": "تآكل الزجاج ليس مقياسًا لقوة الحمض؛ فـHF يذيب الزجاج لأنه يكوّن SiF4 مع SiO2، لكنه حمض ضعيف قليل التأين في الماء.",
         "zh": "腐蚀玻璃并不是衡量酸强度的标准；HF 能与 SiO2 生成 SiF4 而腐蚀玻璃，但它在水中电离很少，是弱酸。",
-        "ku": "Xwarina camê pîvana hêza asîdê nîne; HF camê dixwe ji ber ku bi SiO2 re SiF4 çêdike, lê ew asîdeke qels e ku di avê de kêm îyonîze dibe."
+        "ku": "Xwarina camê ne pîvana hêza asîdê ye; HF camê dixwe ji ber ku bi SiO2-ya camê re SiF4 çêdike, lê ew asîdeke qels e ku di avê de hindik îyonîze dibe."
       },
       "osymTip": {
         "tr": "HF zayıf asittir; camı aşındırması asit kuvvetinden değil, camdaki SiO2 ile tepkimeye girip SiF4 oluşturmasındandır!",
@@ -516,7 +516,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "HF — слабая кислота; она разъедает стекло не из-за своей силы, а потому, что реагирует с SiO2 стекла с образованием SiF4!",
         "ar": "HF حمض ضعيف؛ وتآكله للزجاج ليس بسبب قوته الحمضية بل لأنه يتفاعل مع SiO2 في الزجاج مكوّنًا SiF4!",
         "zh": "HF 是弱酸；它腐蚀玻璃不是因为酸性强，而是因为它能与玻璃中的 SiO2 反应生成 SiF4！",
-        "ku": "HF asîdeke qels e; camê dixwe ne ji ber hêza asîdiyê, lê ji ber ku bi SiO2 ya camê re reaksiyon dike û SiF4 çêdike!"
+        "ku": "HF asîdeke qels e; camê dixwe ne ji ber hêza xwe ya asîdî, lê ji ber ku bi SiO2-ya camê re dikeve reaksiyonê û SiF4 çêdike!"
       }
     },
     {
@@ -529,7 +529,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "NaOH, KOH — сильные основания; NH3 (аммиак) — слабое основание.",
         "ar": "NaOH و KOH قاعدتان قويتان؛ NH3 (الأمونيا) قاعدة ضعيفة.",
         "zh": "NaOH、KOH 是强碱；NH3（氨）是弱碱。",
-        "ku": "NaOH, KOH bazên xurt in; NH3 (amonyak) bazeke qels e."
+        "ku": "NaOH, KOH bazên bihêz in; NH3 (amonyak) bazeke qels e."
       },
       "trap": {
         "tr": "NH3 kuvvetli bir bazdır.",
@@ -539,7 +539,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "NH3 — сильное основание.",
         "ar": "NH3 قاعدة قوية.",
         "zh": "NH3 是强碱。",
-        "ku": "NH3 bazeke xurt e."
+        "ku": "NH3 bazeke bihêz e."
       },
       "whyTrapIsFalse": {
         "tr": "NH3 suda yalnızca kısmen proton alarak OH- oluşturur (Kb ≈ 1,8x10^-5); tamamen iyonlaşmadığı için zayıf bazdır.",
@@ -549,7 +549,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "NH3 лишь частично отнимает протоны у воды, образуя OH- (Kb ≈ 1,8x10^-5); реакция аммиака с водой идёт не до конца, поэтому это слабое основание.",
         "ar": "يستقبل NH3 البروتونات من الماء جزئيًا فقط مكوّنًا OH- (Kb ≈ 1.8x10^-5)؛ ولأنه لا يتأين كليًا فهو قاعدة ضعيفة.",
         "zh": "NH3 只能部分地从水中接受质子生成 OH-(Kb ≈ 1.8x10^-5)；由于不能完全电离，它是弱碱。",
-        "ku": "NH3 di avê de tenê bi qismî proton digire û OH- çêdike (Kb ≈ 1,8x10^-5); ji ber ku bi tevahî îyonîze nabe, baza qels e."
+        "ku": "NH3 di avê de tenê bi qismî proton digire û OH- çêdike (Kb ≈ 1,8x10^-5); ji ber ku bi tevahî îyonîze nabe, bazeke qels e."
       }
     },
     {
@@ -562,7 +562,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Индикаторы — слабые органические кислоты или основания, окраска которых зависит от pH среды.",
         "ar": "الكواشف أحماض أو قواعد عضوية ضعيفة يتغير لونها حسب الرقم الهيدروجيني للوسط.",
         "zh": "指示剂是有机弱酸或弱碱，其颜色随溶液 pH 的变化而改变。",
-        "ku": "Îndîkator asîd an bazên organîk ên qels in ku li gorî pH ya hawîrdorê reng diguherînin."
+        "ku": "Îndîkator asîd an bazên organîk ên qels in ku li gorî pH-a derdorê reng diguherînin."
       },
       "trap": {
         "tr": "İndikatörler titrasyon tepkimesini hızlandıran katalizörlerdir.",
@@ -572,7 +572,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Индикаторы — это катализаторы, ускоряющие реакцию титрования.",
         "ar": "الكواشف عوامل حفازة تُسرّع تفاعل المعايرة.",
         "zh": "指示剂是加速滴定反应的催化剂。",
-        "ku": "Îndîkator katalîzator in ku reaksiyona tîtrasyonê lez dikin."
+        "ku": "Îndîkator katalîzor in ku reaksiyona tîtrasyonê lezgîn dikin."
       },
       "whyTrapIsFalse": {
         "tr": "İndikatörler tepkime hızını değiştirmez; renkleri pH'a göre değişen zayıf organik asit veya bazlardır ve yalnızca dönüm noktasını göstermek için az miktarda kullanılır.",
@@ -582,7 +582,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Индикаторы не влияют на скорость реакции; это слабые органические кислоты или основания, окраска которых зависит от pH, и их добавляют в малом количестве лишь для того, чтобы зафиксировать конечную точку титрования.",
         "ar": "الكواشف لا تغيّر سرعة التفاعل؛ إنها أحماض أو قواعد عضوية ضعيفة يتغير لونها بتغير pH، وتُستعمل بكمية قليلة لإظهار نقطة النهاية فقط.",
         "zh": "指示剂不改变反应速率；它们是颜色随 pH 变化的有机弱酸或弱碱，少量加入只用于指示滴定终点。",
-        "ku": "Îndîkator leza reaksiyonê naguherînin; ew asîd an bazên organîk ên qels in ku rengê wan li gorî pH diguhere, û bi mîqdareke kêm tenê ji bo nîşandana xala dawiyê tên bikaranîn."
+        "ku": "Îndîkator leza reaksiyonê naguherînin; ew asîd an bazên organîk ên qels in ku rengê wan li gorî pH-ê diguhere, û bi mîqdareke kêm tenê ji bo nîşandana xala dawiyê tên bikaranîn."
       }
     }
   ],
@@ -597,7 +597,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сильная кислота",
         "ar": "حمض قوي",
         "zh": "强酸",
-        "ku": "Asîda xurt"
+        "ku": "Asîda Bihêz"
       },
       "conceptB": {
         "tr": "Zayıf Asit",
@@ -607,7 +607,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Слабая кислота",
         "ar": "حمض ضعيف",
         "zh": "弱酸",
-        "ku": "Asîda qels"
+        "ku": "Asîda Qels"
       },
       "distinction": {
         "tr": "Kuvvetli asit suda tamamen (%100) iyonlaşır; iyonlaşması tek yönlü kabul edildiğinden Ka ile denge hesabı yapılmaz. Zayıf asit ise kısmen iyonlaşarak denge kurar ve kuvveti Ka değeriyle ifade edilir.",
@@ -617,7 +617,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сильная кислота диссоциирует в воде полностью (на 100 %); такую диссоциацию считают необратимой, и равновесный расчёт с Ka не проводят. Слабая кислота диссоциирует лишь частично с установлением равновесия, и её силу выражают значением Ka.",
         "ar": "الحمض القوي يتأين في الماء تأينًا تامًّا (100%)، ويُعدّ تأينه في اتجاه واحد فلا تُجرى له حسابات اتزان باستخدام Ka؛ أما الأحماض الضعيفة فتتأين جزئيًا وتكوّن اتزانًا، ويُعبَّر عن قوتها بقيمة Ka.",
         "zh": "强酸在水中完全(100%)电离，电离视为不可逆，因此不用 Ka 作平衡计算；弱酸只部分电离并建立平衡，其强弱用 Ka 值表示。",
-        "ku": "Asîda xurt di avê de bi temamî (%100) îyonîze dibe; îyonîzasyona wê yekalî tê hesibandin, ji ber vê bi Ka hesabê hevsengiyê nayê kirin. Asîda qels tenê bi qismî îyonîze dibe, hevsengî saz dike û hêza wê bi nirxa Ka tê nîşandan."
+        "ku": "Asîda bihêz di avê de bi tevahî (ji sedî 100) îyonîze dibe; îyonîzasyona wê yekalî tê hesibandin, ji ber vê yekê bi Ka hesabê hevsengiyê nayê kirin. Asîda qels bi qismî îyonîze dibe, hevsengiyê saz dike û hêza wê bi nirxa Ka tê diyarkirin."
       }
     },
     {
@@ -630,7 +630,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Точка эквивалентности",
         "ar": "نقطة التكافؤ",
         "zh": "化学计量点",
-        "ku": "Xala Hevwateyê"
+        "ku": "Xala Hevtayê"
       },
       "conceptB": {
         "tr": "Nötr Nokta",
@@ -650,7 +650,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Точка эквивалентности — точка, в которой количество H+ кислоты равно количеству OH- основания (nH+ = nOH-); нейтральная точка — точка, в которой pH раствора при 25 °C равен 7. Они совпадают только при титровании сильной кислоты сильным основанием; при титровании слабой кислоты сильным основанием в момент, когда nH+ = nOH-, pH > 7.",
         "ar": "نقطة التكافؤ: النقطة التي يتساوى عندها عدد مولات H+ من الحمض مع عدد مولات OH- من القاعدة (nH+ = nOH-)؛ أما عند نقطة التعادل فيكون pH المحلول 7 عند 25 °C. ولا تتطابق النقطتان إلا في معايرة حمض قوي بقاعدة قوية؛ ففي معايرة حمض ضعيف بقاعدة قوية يكون pH > 7 عندما nH+ = nOH-.",
         "zh": "化学计量点是酸提供的 H+ 与碱提供的 OH- 物质的量相等(nH+ = nOH-)的点；中性点则是 25 °C 时溶液 pH 为 7 的点。只有在强酸-强碱滴定中两者才重合；弱酸-强碱滴定中，nH+ = nOH- 时 pH > 7。",
-        "ku": "Xala hevwateyê ew xal e ku hejmara molên H+ ya asîdê û hejmara molên OH- ya bazê wekhev in (nH+ = nOH-); xala bêalî ew xal e ku li 25 °C pH ya çareseriyê 7 e. Ev her du xal tenê di tîtrasyona asîda xurt-baza xurt de li hev tên; di tîtrasyona asîda qels-baza xurt de li xala hevwateyê pH > 7 e."
+        "ku": "Xala hevtayê ew xal e ku hejmara molên H+ yên ji asîdê û hejmara molên OH- yên ji bazê wekhev in (nH+ = nOH-); xala bêalî ew xal e ku li 25 °C pH-a çareseriyê 7 e. Ev her du xal tenê di tîtrasyona asîda bihêz-baza bihêz de li hev dikevin; di tîtrasyona asîda qels-baza bihêz de li xala hevtayê pH > 7 e."
       }
     },
     {
@@ -663,7 +663,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сильное основание (NaOH)",
         "ar": "قاعدة قوية (NaOH)",
         "zh": "强碱(NaOH)",
-        "ku": "Baza Xurt (NaOH)"
+        "ku": "Baza Bihêz (NaOH)"
       },
       "conceptB": {
         "tr": "Zayıf Baz (NH3)",
@@ -683,7 +683,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сильное основание (NaOH) диссоциирует в воде на 100 %, поэтому pOH = -log Cb; слабое основание (NH3) частично отнимает H+ у воды, образуя OH-, устанавливается равновесие, и [OH-] рассчитывают по приближённой формуле [OH-] ≈ √(Kb * Cb).",
         "ar": "يتأين NaOH في الماء بنسبة 100% فيكون pOH = -log Cb؛ أما NH3 فيستقبل H+ من الماء جزئيًا مكوّنًا OH- ويصل إلى اتزان، ويُقدَّر [OH-] بالعلاقة التقريبية [OH-] ≈ √(Kb * Cb).",
         "zh": "强碱(NaOH)在水中 100% 电离，pOH = -log Cb；弱碱(NH3)只能部分地从水中接受 H+ 生成 OH- 并建立平衡，[OH-] 用近似式 [OH-] ≈ √(Kb * Cb) 估算。",
-        "ku": "NaOH di avê de %100 îyonîze dibe û pOH = -log Cb ye; NH3 ji avê bi qismî H+ digire, OH- çêdike, hevsengî saz dibe û [OH-] bi nêzîkatiya [OH-] ≈ √(Kb * Cb) tê hesabkirin."
+        "ku": "NaOH di avê de ji sedî 100 îyonîze dibe û pOH = -log Cb ye; NH3 ji avê bi qismî H+ digire û OH- çêdike, hevsengiyê saz dike û [OH-] bi nêzîkatiya [OH-] ≈ √(Kb * Cb) tê hesibandin."
       }
     },
     {
@@ -716,7 +716,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Ka — константа равновесия HA ⇌ H+ + A-, характеризующая склонность HA отдавать протон (кислотные свойства); Kb — константа равновесия B + H2O ⇌ BH+ + OH-, характеризующая склонность B принимать протон (основные свойства). Для сопряжённой пары произведение этих констант равно Kw (10^-14 при 25 °C).",
         "ar": "ثابت تأين الحمض (Ka) ثابتُ الاتزان HA ⇌ H+ + A- ويدل على ميل HA إلى منح البروتون؛ أما Kb فثابتُ الاتزان B + H2O ⇌ BH+ + OH- ويدل على ميل B إلى استقبال البروتون. وفي الزوج المترافق يكون حاصل ضرب الثابتين مساويًا لـ Kw (10^-14 عند 25 °C).",
         "zh": "酸的电离常数(Ka)是电离平衡 HA ⇌ H+ + A- 的平衡常数，表示 HA 给出质子的倾向；碱的电离常数(Kb)是 B + H2O ⇌ BH+ + OH- 的平衡常数，表示 B 接受质子的倾向。对共轭酸碱对，两者的乘积等于 Kw(25 °C 时为 10^-14)。",
-        "ku": "Ka sabîta hevsengiya îyonîzasyona HA ⇌ H+ + A- ye û nîşan dide ku HA çiqas bi hêsanî protonekê dide; Kb sabîta hevsengiya B + H2O ⇌ BH+ + OH- ye û nîşan dide ku B çiqas bi hêsanî protonekê digire. Di cota hevgirtî de hevdana van her du sabîtan wekheviya Ksu ye (li 25 °C 10^-14)."
+        "ku": "Ka sabîta hevsengiya îyonîzasyonê ya HA ⇌ H+ + A- ye û nîşan dide ku HA çiqasî bi hêsanî protonê dide (hêza asîdî); Kb sabîta hevsengiya B + H2O ⇌ BH+ + OH- ye û nîşan dide ku B çiqasî bi hêsanî protonê digire (hêza bazî). Di cotê konjuge de hevdana van her du sabîtan wekhevî Kw ye (li 25 °C 10^-14)."
       }
     },
     {
@@ -729,7 +729,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Буферный раствор",
         "ar": "المحلول المنظم",
         "zh": "缓冲溶液",
-        "ku": "Çareseriya tampon"
+        "ku": "Çareseriya Tampon"
       },
       "conceptB": {
         "tr": "Nötr Çözelti",
@@ -749,7 +749,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Буферный раствор содержит слабую кислоту и сопряжённое с ней основание, поэтому его pH почти не меняется при добавлении небольших количеств кислоты или щёлочи; в небуферном нейтральном растворе (pH = 7 при 25 °C) даже небольшое количество кислоты резко снижает pH.",
         "ar": "يحتوي المحلول المنظم على حمض ضعيف وقاعدته المرافقة، فلا يتغير pH كثيرًا عند إضافة كميات قليلة من حمض أو قاعدة؛ أما في المحلول المتعادل غير المنظم (pH = 7 عند 25 °C) فإن قليلًا من الحمض يخفض pH بسرعة.",
         "zh": "缓冲溶液含有弱酸及其共轭碱，加入少量酸或碱时 pH 几乎不变；而中性溶液(25 °C 时 pH = 7)不含这种共轭酸碱对，加入少量酸时 pH 会急剧下降。",
-        "ku": "Çareseriya tampon asîdeke qels û baza wê ya hevgirtî dihewîne, ji ber vê dema asîd an baza kêm lê tê zêdekirin pH hema naguhere; di çareseriya bêalî ya bê cotek wiha de (li 25 °C pH = 7) bi asîdeke kêm pH zû dadikeve."
+        "ku": "Çareseriya tampon asîdeke qels û baza wê ya konjuge dihewîne, ji ber vê yekê dema hinek asîd an baz lê tê zêdekirin pH-a wê hema naguhere; di çareseriya bêalî ya ne-tampon de (li 25 °C pH = 7) bi hinek asîdê pH zû dadikeve."
       }
     },
     {
@@ -782,7 +782,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Кислота Аррениуса — вещество, которое при растворении в воде увеличивает концентрацию H+ (H3O+); кислота Брёнстеда — Лоури — частица, отдающая протон (H+) другой частице, и это определение не ограничено водными растворами.",
         "ar": "حمض أرهينيوس مادة تزيد تركيز H+ (H3O+) عند ذوبانها في الماء؛ أما حمض برونستد-لوري فهو نوع يمنح بروتونًا (H+) لنوع آخر، ولا يقتصر تعريفه على المحاليل المائية.",
         "zh": "阿伦尼乌斯酸是溶于水时使 H+(H3O+)浓度增大的物质；布朗斯特-劳里酸是能向其他微粒给出质子(H+)的微粒，其定义不限于水溶液。",
-        "ku": "Asîda Arrhenius maddeyek e ku dema di avê de dihele tîrbûna H+ (H3O+) zêde dike; asîda Brønsted-Lowry cureyek e ku protonekê (H+) dide cureyeke din û pênaseya wê bi avê ve sînordar nîne."
+        "ku": "Asîda Arrhenius madeyek e ku dema di avê de dihele tîrbûna H+ (H3O+) zêde dike; asîda Brønsted-Lowry cureyek e ku di reaksiyonê de protonê (H+) dide cureyeke din, û pênaseya wê bi çareseriyên avî ve sînordar nîne."
       }
     },
     {
@@ -795,7 +795,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сопряжённая кислота",
         "ar": "حمض مرافق",
         "zh": "共轭酸",
-        "ku": "Asîda Hevgirtî (Konjuge)"
+        "ku": "Asîda Konjuge"
       },
       "conceptB": {
         "tr": "Konjuge (Eşlenik) Baz",
@@ -805,7 +805,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сопряжённое основание",
         "ar": "قاعدة مرافقة",
         "zh": "共轭碱",
-        "ku": "Baza Hevgirtî (Konjuge)"
+        "ku": "Baza Konjuge"
       },
       "distinction": {
         "tr": "Konjuge asit, aralarında 1 proton (H+) farkı bulunan asit-baz çiftinin fazladan H+ içeren ve proton verebilen üyesidir; konjuge baz ise aynı çiftin proton alabilen üyesidir (ör. NH4+ / NH3 çiftinde NH4+ proton verir, NH3 proton alır).",
@@ -815,7 +815,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сопряжённая кислота — член кислотно-основной пары (её частицы различаются на один протон H+), содержащий лишний H+ и способный отдать протон; сопряжённое основание — член той же пары, способный присоединить протон (например, в паре NH4+ / NH3 протон отдаёт NH4+, а присоединяет NH3).",
         "ar": "الحمض المرافق هو فرد زوج الحمض والقاعدة (اللذين يختلفان ببروتون واحد H+) الذي يحمل H+ الإضافي ويستطيع منح بروتون؛ أما القاعدة المرافقة فهي فرد الزوج نفسه الذي يستطيع استقبال بروتون (مثلًا في الزوج NH4+ / NH3 يمنح NH4+ البروتون ويستقبله NH3).",
         "zh": "共轭酸是相差一个质子(H+)的一对酸碱中多一个 H+、能给出质子的一方；共轭碱则是同一对中能接受质子的一方(如 NH4+/NH3 中，NH4+ 给出质子，NH3 接受质子)。",
-        "ku": "Asîda hevgirtî ew endamê cota asîd-baz e ku 1 proton (H+) ferqa wan heye, H+ ya zêde hildigire û dikare protonekê bide; endamê din ê heman cotê, ku dikare protonekê bigire, baza wê ye (mînak di cota NH4+ / NH3 de NH4+ protonê dide, NH3 wê digire)."
+        "ku": "Asîda konjuge endamê cotê asîd-baz e (ku bi 1 protonê (H+) ji hev cuda ne) yê ku H+ ya zêde hildigire û dikare protonê bide; baza konjuge endamê heman cotî ye ku dikare protonê bigire (mînak, di cotê NH4+ / NH3 de NH4+ protonê dide, NH3 protonê digire)."
       }
     },
     {
@@ -828,7 +828,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Катионный гидролиз",
         "ar": "التحلل المائي للكاتيون",
         "zh": "阳离子水解",
-        "ku": "Hîdrolîza Katyonê"
+        "ku": "Hîdroliza Katyonê"
       },
       "conceptB": {
         "tr": "Anyon Hidrolizi",
@@ -838,7 +838,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Анионный гидролиз",
         "ar": "التحلل المائي للأنيون",
         "zh": "阴离子水解",
-        "ku": "Hîdrolîza Anyonê"
+        "ku": "Hîdroliza Anyonê"
       },
       "distinction": {
         "tr": "Zayıf bazdan gelen katyon (NH4+) hidroliz olarak asidik ortam yapar; zayıf asitten gelen anyon (CH3COO-) hidrolizle bazik ortam yapar.",
@@ -848,7 +848,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Катионный гидролиз — гидролиз катиона слабого основания (NH4+), создающий кислую среду; анионный гидролиз — гидролиз аниона слабой кислоты (CH3COO-), создающий щелочную среду.",
         "ar": "في التحلل المائي للكاتيون يتفاعل الكاتيون (NH4+) القادم من القاعدة الضعيفة مع الماء فيكسب المحلول صفة حمضية؛ أما في التحلل المائي للأنيون فيتفاعل الأنيون (CH3COO-) القادم من الحمض الضعيف مع الماء فيكسب المحلول صفة قاعدية.",
         "zh": "阳离子水解是来自弱碱的阳离子(如 NH4+)与水反应，使溶液呈酸性；阴离子水解是来自弱酸的阴离子(如 CH3COO-)与水反应，使溶液呈碱性。",
-        "ku": "Katyona ku ji baza qels tê (NH4+) hîdrolîz dibe û hawîrdoreke asîdî çêdike; anyona ku ji asîda qels tê (CH3COO-) hîdrolîz dibe û hawîrdoreke bazîk çêdike."
+        "ku": "Katyona ku ji baza qels tê (NH4+) hîdroliz dibe û derdora asîdî çêdike; anyona ku ji asîda qels tê (CH3COO-) bi hîdrolizê derdora bazî çêdike."
       }
     }
   ],
@@ -863,7 +863,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Этапы расчёта pH раствора слабой кислоты",
         "ar": "خطوات حساب pH لمحلول حمض ضعيف",
         "zh": "弱酸溶液 pH 的计算步骤",
-        "ku": "Gavên Hesabkirina pH ya Çareseriya Asîda Qels"
+        "ku": "Gavên Hesabkirina pH-a Çareseriya Asîda Qels"
       },
       "steps": [
         {
@@ -874,7 +874,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Записать уравнение ионизации: HA ⇌ H+ + A-",
           "ar": "تُكتب معادلة التأين: HA ⇌ H+ + A-",
           "zh": "写出电离方程式：HA ⇌ H+ + A-",
-          "ku": "Hevkêşana îyonîzasyonê tê nivîsandin: HA ⇌ H+ + A-"
+          "ku": "Hevkêşeya îyonîzasyonê tê nivîsîn: HA ⇌ H+ + A-"
         },
         {
           "tr": "Ka = [H+][A-] / [HA] ifadesi yazılır ve iyonlaşan kısım çok küçük olduğundan [HA] ≈ Ca kabul edilir",
@@ -884,7 +884,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Записать Ka = [H+][A-] / [HA] и, поскольку продиссоциировавшая часть очень мала, принять [HA] ≈ Ca",
           "ar": "تُكتب العلاقة Ka = [H+][A-] / [HA]، ولأن الجزء المتأين صغير جدًا يُعدّ [HA] ≈ Ca",
           "zh": "写出 Ka = [H+][A-]/[HA]，由于电离部分很小，取 [HA] ≈ Ca",
-          "ku": "Ka = [H+][A-] / [HA] tê nivîsandin û ji ber ku beşa îyonîzebûyî pir piçûk e, [HA] ≈ Ca tê qebûlkirin"
+          "ku": "Ka = [H+][A-] / [HA] tê nivîsîn û ji ber ku beşa îyonîzebûyî pir piçûk e, [HA] ≈ Ca tê qebûlkirin"
         },
         {
           "tr": "[H+] ≈ √(Ka * Ca) yaklaşımıyla H+ derişimi hesaplanır",
@@ -894,7 +894,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Рассчитать [H+] по приближённой формуле [H+] ≈ √(Ka * Ca)",
           "ar": "يُحسب [H+] بالعلاقة التقريبية [H+] ≈ √(Ka * Ca)",
           "zh": "用近似式 [H+] ≈ √(Ka * Ca) 计算 [H+]",
-          "ku": "Tîrbûna H+ bi nêzîkatiya [H+] ≈ √(Ka * Ca) tê hesabkirin"
+          "ku": "Tîrbûna H+ bi nêzîkatiya [H+] ≈ √(Ka * Ca) tê hesibandin"
         },
         {
           "tr": "pH = -log[H+] ile çözeltinin pH değeri bulunur",
@@ -904,7 +904,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Найти pH раствора по формуле pH = -log[H+]",
           "ar": "يُحسب pH المحلول من العلاقة pH = -log[H+]",
           "zh": "由 pH = -log[H+] 求出溶液的 pH",
-          "ku": "Bi pH = -log[H+] nirxa pH ya çareseriyê tê dîtin"
+          "ku": "Bi pH = -log[H+] nirxa pH-a çareseriyê tê dîtin"
         }
       ]
     },
@@ -918,7 +918,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Порядок проведения кислотно-основного титрования",
         "ar": "خطوات تجربة معايرة حمض بقاعدة",
         "zh": "酸碱滴定的实验步骤",
-        "ku": "Gavên Ceribandina Tîtrasyona Asîd-Bazê"
+        "ku": "Gavên Ceribandina Tîtrasyona Asîd-Baz"
       },
       "steps": [
         {
@@ -929,7 +929,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Поместить в коническую колбу известный объём раствора кислоты и несколько капель индикатора (например, фенолфталеина)",
           "ar": "يوضع في الدورق المخروطي حجم معلوم من محلول الحمض وبضع قطرات من الكاشف (مثل الفينولفثالين)",
           "zh": "向锥形瓶中加入已知体积的酸溶液和几滴指示剂（如酚酞）",
-          "ku": "Qebareyeke naskirî ya çareseriya asîdê û çend dilopên îndîkatorê (mînak fenolftaleîn) dikevin erlenê"
+          "ku": "Qebareyeke naskirî ji çareseriya asîdê û çend dilop îndîkator (mînak fenolftaleyîn) di erlenmeyerê de tên danîn"
         },
         {
           "tr": "Derişimi bilinen baz çözeltisi bürete doldurulur ve başlangıç hacmi okunur",
@@ -939,7 +939,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Заполнить бюретку раствором основания известной концентрации и записать начальный объём",
           "ar": "تُملأ السحاحة بمحلول القاعدة المعلوم التركيز ويُقرأ الحجم الابتدائي",
           "zh": "将已知浓度的碱溶液装入滴定管并读取初始体积",
-          "ku": "Bûret bi çareseriya bazê ya tîrbûna wê naskirî tê dagirtin û qebareya destpêkê tê xwendin"
+          "ku": "Buret bi çareseriya bazê ya ku tîrbûna wê naskirî ye tê dagirtin û qebareya destpêkê tê xwendin"
         },
         {
           "tr": "Baz, erlen sürekli çalkalanarak damla damla eklenir; indikatörün rengi kalıcı olarak değiştiği anda (dönüm noktası) musluk kapatılır ve harcanan hacim okunur",
@@ -949,7 +949,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Добавлять основание по каплям, постоянно перемешивая содержимое колбы; при устойчивом изменении окраски индикатора (конечная точка титрования) закрыть кран и записать израсходованный объём",
           "ar": "تُضاف القاعدة قطرة قطرة مع رجّ الدورق باستمرار، ويُغلق الصنبور لحظة تغير لون الكاشف تغيرًا دائمًا (نقطة النهاية) ويُقرأ الحجم المستهلك",
           "zh": "边摇动锥形瓶边逐滴加入碱溶液；指示剂颜色发生持久变化（滴定终点）时立即关闭活塞并读取消耗的体积",
-          "ku": "Baz bi hejandina berdewam a erlenê dilop bi dilop tê zêdekirin; gava rengê îndîkatorê bi domdarî diguhere (xala dawiyê) musluk tê girtin û qebareya xerckirî tê xwendin"
+          "ku": "Erlenmeyer bi domdarî tê hejandin û baz dilop bi dilop lê tê zêdekirin; gava rengê îndîkatorê bi awayekî mayînde diguhere (xala dawiyê) şîrika buretê tê girtin û qebareya xerckirî tê xwendin"
         },
         {
           "tr": "Ma * Va * Za = Mb * Vb * Zb bağıntısıyla asidin derişimi hesaplanır",
@@ -959,7 +959,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Рассчитать концентрацию кислоты по формуле Ma * Va * Za = Mb * Vb * Zb",
           "ar": "يُحسب تركيز الحمض بالعلاقة Ma * Va * Za = Mb * Vb * Zb",
           "zh": "用 Ma * Va * Za = Mb * Vb * Zb 计算酸的浓度",
-          "ku": "Tîrbûna asîdê bi têkiliya Ma * Va * Za = Mb * Vb * Zb tê hesabkirin"
+          "ku": "Tîrbûna asîdê bi hevkêşeya Ma * Va * Za = Mb * Vb * Zb tê hesibandin"
         }
       ]
     },
@@ -984,7 +984,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Слабую кислоту и соль, содержащую сопряжённое с ней основание, растворяют вместе (например, CH3COOH и CH3COONa)",
           "ar": "يُذاب حمض ضعيف وملح يحتوي على قاعدته المرافقة في المحلول نفسه (مثل CH3COOH و CH3COONa)",
           "zh": "将弱酸和含其共轭碱的盐溶于同一溶液中(如 CH3COOH 和 CH3COONa)",
-          "ku": "Asîdeke qels û xwêyeke ku baza wê ya hevgirtî dihewîne di heman çareseriyê de tên helandin (mînak CH3COOH û CH3COONa)"
+          "ku": "Asîdeke qels û xwêyeke ku baza wê ya konjuge dihewîne di heman çareseriyê de tên helandin (mînak CH3COOH û CH3COONa)"
         },
         {
           "tr": "Çözeltide hem zayıf asit (HA) hem de eşlenik bazı (A-) önemli miktarda bulunur",
@@ -994,7 +994,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "В растворе в заметных количествах присутствуют и слабая кислота (HA), и её сопряжённое основание (A-)",
           "ar": "يحتوي المحلول على كميات معتبرة من الحمض الضعيف (HA) ومن قاعدته المرافقة (A-) معًا",
           "zh": "溶液中同时含有相当量的弱酸(HA)及其共轭碱(A-)",
-          "ku": "Di çareseriyê de hem asîda qels (HA) hem jî baza wê ya konjuge (A-) bi mîqdareke girîng heye"
+          "ku": "Di çareseriyê de hem asîda qels (HA) hem jî baza wê ya konjuge (A-) bi mîqdareke berbiçav hene"
         },
         {
           "tr": "Eklenen az miktardaki H+ iyonlarını A-, OH- iyonlarını ise HA tüketir",
@@ -1004,7 +1004,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Небольшие количества добавленных ионов H+ связываются ионами A-, а ионы OH- — кислотой HA",
           "ar": "يستهلك A- أيونات H+ المضافة بكميات قليلة، ويستهلك HA أيونات OH- المضافة",
           "zh": "少量加入的 H+ 被 A- 消耗，加入的 OH- 被 HA 消耗",
-          "ku": "Îyonên H+ yên bi mîqdara kêm hatine zêdekirin ji aliyê A- ve, îyonên OH- jî ji aliyê HA ve tên xerckirin"
+          "ku": "Îyonên H+ yên ku bi mîqdareke kêm lê tên zêdekirin ji aliyê A- ve, îyonên OH- jî ji aliyê HA ve tên xerckirin"
         },
         {
           "tr": "Çözeltinin pH değeri neredeyse sabit kalır",
@@ -1014,7 +1014,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Значение pH раствора остаётся практически постоянным",
           "ar": "تظل قيمة الرقم الهيدروجيني للمحلول ثابتة تقريبًا",
           "zh": "溶液的 pH 几乎保持不变",
-          "ku": "Nirxa pH ya çareseriyê hema hema sabît dimîne"
+          "ku": "Nirxa pH-a çareseriyê hema hema sabît dimîne"
         }
       ]
     },
@@ -1028,7 +1028,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Изменение pH при титровании сильной кислоты сильным основанием",
         "ar": "تغير pH أثناء معايرة حمض قوي بقاعدة قوية",
         "zh": "强碱滴定强酸过程中 pH 的变化",
-        "ku": "Guherîna pH di Tîtrasyona Asîda Xurt bi Baza Xurt de"
+        "ku": "Guherîna pH-ê di Tîtrasyona Asîda Bihêz bi Baza Bihêz de"
       },
       "steps": [
         {
@@ -1039,7 +1039,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Вначале в колбе только сильная кислота, pH низкий",
           "ar": "في البداية لا يحتوي الدورق إلا على الحمض القوي ويكون pH منخفضًا",
           "zh": "开始时锥形瓶中只有强酸，pH 较低",
-          "ku": "Di destpêkê de di erlenê de tenê asîda xurt heye û pH nizm e"
+          "ku": "Di destpêkê de di erlenmeyerê de tenê asîda bihêz heye û pH nizm e"
         },
         {
           "tr": "Baz eklendikçe H+ iyonları nötrleşir ve pH yavaş yavaş artar",
@@ -1049,7 +1049,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "По мере добавления основания ионы H+ нейтрализуются, и pH медленно растёт",
           "ar": "مع إضافة القاعدة تتعادل أيونات H+ ويرتفع pH ببطء",
           "zh": "随着碱的加入，H+ 被中和，pH 缓慢上升",
-          "ku": "Her ku baz tê zêdekirin îyonên H+ bêalî dibin û pH hêdî hêdî bilind dibe"
+          "ku": "Her ku baz tê zêdekirin îyonên H+ neutralîze dibin û pH hêdî hêdî bilind dibe"
         },
         {
           "tr": "Eşdeğerlik noktası civarında birkaç damla bazla pH hızla sıçrar; eşdeğerlik noktasında pH 25 °C'de 7,00'dir",
@@ -1059,7 +1059,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Вблизи точки эквивалентности несколько капель основания вызывают резкий скачок pH; в точке эквивалентности pH при 25 °C равен 7,00",
           "ar": "قرب نقطة التكافؤ تؤدي قطرات قليلة من القاعدة إلى قفزة حادة في pH، وعند نقطة التكافؤ يكون pH مساويًا 7.00 عند 25 °C",
           "zh": "在化学计量点附近，几滴碱就使 pH 急剧突跃；化学计量点时 25 °C 下 pH 为 7.00",
-          "ku": "Nêzî xala hevwateyê bi çend dilopên bazê pH bi lez bilind dibe; li xala hevwateyê li 25 °C pH 7,00 e"
+          "ku": "Li dora xala hevtayê bi çend dilop bazê pH ji nişkê ve bilind dibe; li 25 °C pH-a xala hevtayê 7,00 e"
         },
         {
           "tr": "Eşdeğerlik noktasından sonra eklenen fazla OH- nedeniyle pH 7'nin üzerine çıkar ve yavaşça artmaya devam eder",
@@ -1069,7 +1069,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "После точки эквивалентности избыток OH- поднимает pH выше 7, и pH продолжает медленно расти",
           "ar": "بعد نقطة التكافؤ يرفع فائض OH- قيمة pH فوق 7 ويستمر في الارتفاع ببطء",
           "zh": "化学计量点之后，过量的 OH- 使 pH 超过 7 并继续缓慢上升",
-          "ku": "Piştî xala hevwateyê ji ber OH- ya zêde pH ji 7 derbas dibe û hêdî hêdî zêde dibe"
+          "ku": "Piştî xala hevtayê ji ber OH- ya zêde pH ji 7 derbas dibe û hêdî hêdî bilind dibe"
         }
       ]
     }
@@ -1085,7 +1085,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Чему равен pH 0,1 M водного раствора уксусной кислоты (CH3COOH)? (Ka для CH3COOH = 1,0x10^-5)",
         "ar": "ما قيمة pH لمحلول مائي من حمض الخل (CH3COOH) تركيزه 0.1 M؟ (Ka لـ CH3COOH = 1.0x10^-5)",
         "zh": "0.1 M 醋酸(CH3COOH)水溶液的 pH 是多少？(CH3COOH 的 Ka = 1.0x10^-5)",
-        "ku": "Nirxa pH ya 0,1 M çareseriya asîda avî ya sîrkê (CH3COOH) çi ye? (Ka ji bo CH3COOH = 1,0x10^-5)"
+        "ku": "pH-a çareseriya avî ya 0,1 M a asîda sîrkeyê (CH3COOH) çend e? (Ji bo CH3COOH Ka = 1,0x10^-5)"
       },
       "options": [
         {
@@ -1148,7 +1148,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "CH3COOH — слабая кислота, в воде диссоциирует лишь частично: CH3COOH ⇌ H+ + CH3COO-. Если пренебречь продиссоциировавшей частью по сравнению с начальной концентрацией, Ka = [H+]^2 / Ca. Отсюда [H+] = √(Ka · Ca) = √(1,0x10^-5 · 0,1) = √(10^-6) = 10^-3 M и pH = -log(10^-3) = 3. Если считать кислоту сильной и принять [H+] = 0,1 M, получится pH = 1; если принять значение Ka за [H+], получится pH = 5.",
         "ar": "CH3COOH حمض ضعيف يتأين جزئيًا في الماء: CH3COOH ⇌ H+ + CH3COO-. بإهمال الجزء المتأين مقارنةً بالتركيز الابتدائي يكون Ka = [H+]^2 / Ca. ومنه [H+] = √(Ka · Ca) = √(1.0x10^-5 · 0.1) = √(10^-6) = 10^-3 M و pH = -log(10^-3) = 3. اعتبار الحمض قويًّا وأخذ [H+] = 0.1 M يعطي pH = 1، وأخذ قيمة Ka مباشرة على أنها [H+] يعطي pH = 5.",
         "zh": "CH3COOH 是弱酸，在水中只部分电离：CH3COOH ⇌ H+ + CH3COO-。忽略已电离的部分（与起始浓度相比很小），则 Ka = [H+]^2 / Ca。由此 [H+] = √(Ka · Ca) = √(1.0x10^-5 · 0.1) = √(10^-6) = 10^-3 M，pH = -log(10^-3) = 3。若把它当作强酸取 [H+] = 0.1 M，得 pH = 1；若把 Ka 的数值直接当作 [H+]，得 pH = 5。",
-        "ku": "CH3COOH asîdeke qels e û di avê de tenê bi qismî îyonîze dibe: CH3COOH ⇌ H+ + CH3COO-. Heke beşa îyonîzebûyî li ber tîrbûna destpêkê were paşguhkirin, Ka = [H+]^2 / Ca ye. Ji vê [H+] = √(Ka · Ca) = √(1,0x10^-5 · 0,1) = √(10^-6) = 10^-3 M û pH = -log(10^-3) = 3 tê dîtin. Heke asîd xurt were hesibandin û [H+] = 0,1 M were girtin pH = 1, heke nirxa Ka rasterast wekî [H+] were girtin pH = 5 derdikeve."
+        "ku": "CH3COOH asîdeke qels e û di avê de bi qismî îyonîze dibe: CH3COOH ⇌ H+ + CH3COO-. Heke beşa îyonîzebûyî li hember tîrbûna destpêkê neyê hesibandin, Ka = [H+]^2 / Ca ye. Ji vir [H+] = √(Ka · Ca) = √(1,0x10^-5 · 0,1) = √(10^-6) = 10^-3 M û pH = -log(10^-3) = 3 tê dîtin. Heke asîd bihêz were hesibandin û [H+] = 0,1 M were girtin pH = 1, heke nirxa Ka rasterast wek [H+] were girtin pH = 5 derdikeve."
       }
     },
     {
@@ -1161,7 +1161,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Сколько миллилитров 0,2 M раствора NaOH нужно для полной нейтрализации 100 мл 0,1 M раствора HCl?",
         "ar": "كم mL من محلول NaOH تركيزه 0.2 M يلزم لمعادلة 100 mL من محلول HCl تركيزه 0.1 M معادلة تامة؟",
         "zh": "完全中和 100 mL 0.1 M HCl 溶液需要消耗多少 mL 0.2 M NaOH 溶液？",
-        "ku": "Ji bo ku 100 mL çareseriya 0,1 M HCl bi tevahî bêbandor bibe, divê çend ml çareseriya NaOH 0,2 M were vexwarin?"
+        "ku": "Ji bo ku 100 mL çareseriya 0,1 M HCl bi tevahî neutralîze bibe, divê çend mL ji çareseriya 0,2 M NaOH were xerckirin?"
       },
       "options": [
         {
@@ -1172,7 +1172,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "50 мл",
           "ar": "50 mL",
           "zh": "50 mL",
-          "ku": "50 ml"
+          "ku": "50 mL"
         },
         {
           "tr": "100 mL",
@@ -1182,7 +1182,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "100 мл",
           "ar": "100 mL",
           "zh": "100 mL",
-          "ku": "100 ml"
+          "ku": "100 mL"
         },
         {
           "tr": "200 mL",
@@ -1192,7 +1192,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "200 мл",
           "ar": "200 mL",
           "zh": "200 mL",
-          "ku": "200 ml"
+          "ku": "200 mL"
         },
         {
           "tr": "25 mL",
@@ -1202,7 +1202,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "25 мл",
           "ar": "25 mL",
           "zh": "25 mL",
-          "ku": "25 ml"
+          "ku": "25 mL"
         },
         {
           "tr": "10 mL",
@@ -1212,7 +1212,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "10 мл",
           "ar": "10 mL",
           "zh": "10 mL",
-          "ku": "10 ml"
+          "ku": "10 mL"
         }
       ],
       "correctIndex": 0,
@@ -1224,7 +1224,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При полной нейтрализации количество H+ кислоты равно количеству OH- основания: Ma · Va · Za = Mb · Vb · Zb. Для HCl и NaOH Z = 1: 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 мл. Раствор основания вдвое концентрированнее раствора кислоты, поэтому нужен вдвое меньший объём; если взять объёмы равными, получится 100 мл, если перевернуть отношение — 200 мл.",
         "ar": "عند التعادل التام يتساوى عدد مولات H+ من الحمض مع عدد مولات OH- من القاعدة: Ma · Va · Za = Mb · Vb · Zb. ولكلٍّ من HCl و NaOH يكون Z = 1: 0.1 · 100 · 1 = 0.2 · Vb · 1 → Vb = 50 mL. ولأن محلول القاعدة تركيزه ضعف تركيز محلول الحمض، يلزم نصف حجم الحمض؛ أخذ حجمين متساويين يعطي 100 mL، وعكس النسبة يعطي 200 mL.",
         "zh": "完全中和时，酸提供的 H+ 与碱提供的 OH- 物质的量相等：Ma · Va · Za = Mb · Vb · Zb。HCl 和 NaOH 的 Z 均为 1：0.1 · 100 · 1 = 0.2 · Vb · 1 → Vb = 50 mL。碱溶液的浓度是酸溶液的两倍，所以只需酸溶液体积的一半；若取相等体积会得 100 mL，若把比例弄反会得 200 mL。",
-        "ku": "Di bêalîkirina temam de hejmara molên H+ ya asîdê û hejmara molên OH- ya bazê wekhev in: Ma · Va · Za = Mb · Vb · Zb. Ji bo HCl û NaOH Z = 1 e: 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 ml. Ji ber ku çareseriya bazê du qat ji çareseriya asîdê tîrtir e, nîvê hecma asîdê pêwîst e; girtina hecmên wekhev 100 ml, berevajîkirina rêjeyê 200 ml dide."
+        "ku": "Di neutralîzasyona temam de hejmara molên H+ yên ji asîdê û hejmara molên OH- yên ji bazê wekhev in: Ma · Va · Za = Mb · Vb · Zb. Ji bo HCl û NaOH Z = 1 e: 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 mL. Ji ber ku çareseriya bazê du qat ji çareseriya asîdê tîrtir e, nîvê qebareya asîdê bes e; girtina qebareyên wekhev 100 mL, berevajîkirina rêjeyê 200 mL dide."
       }
     },
     {
@@ -1237,7 +1237,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Чему равен pH 0,005 M водного раствора Ba(OH)2 при 25 °C? (Ba(OH)2 в воде диссоциирует полностью; log 2 = 0,3)",
         "ar": "ما قيمة pH لمحلول مائي من Ba(OH)2 تركيزه 0.005 M عند 25 °C؟ (يتأين Ba(OH)2 كليًا في الماء؛ log 2 = 0.3)",
         "zh": "25 °C 时，0.005 M Ba(OH)2 水溶液的 pH 是多少？(Ba(OH)2 在水中完全电离；log 2 = 0.3)",
-        "ku": "Li 25 °C pH ya çareseriya avî ya 0,005 M Ba(OH)2 çi ye? (Ba(OH)2 di avê de bi tevahî îyonîze dibe; log 2 = 0,3)"
+        "ku": "Li 25 °C pH-a çareseriya avî ya 0,005 M Ba(OH)2 çend e? (Ba(OH)2 di avê de bi tevahî îyonîze dibe; log 2 = 0,3)"
       },
       "options": [
         {
@@ -1300,7 +1300,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Ba(OH)2 → Ba2+ + 2OH-, поэтому [OH-] = 2 · 0,005 = 0,01 M = 10^-2 M. pOH = 2, pH = 14 - 2 = 12. Без коэффициента 2 получается pOH = -log(5x10^-3) = 2,3 и pH = 11,7; двойное умножение на 2 даёт 12,3. Если принять pOH за pH, получится 2 или 2,3.",
         "ar": "Ba(OH)2 → Ba2+ + 2OH- لذا [OH-] = 2 · 0.005 = 0.01 M = 10^-2 M. pOH = 2 و pH = 14 - 2 = 12. إهمال المعامل 2 يعطي pOH = -log(5x10^-3) = 2.3 و pH = 11.7، والضرب في 2 مرتين يعطي 12.3، واعتبار pOH هو pH يعطي 2 أو 2.3.",
         "zh": "Ba(OH)2 → Ba2+ + 2OH-，所以 [OH-] = 2 · 0.005 = 0.01 M = 10^-2 M。pOH = 2，pH = 14 - 2 = 12。忽略系数 2 会得到 pOH = -log(5x10^-3) = 2.3、pH = 11.7；乘两次 2 会得到 12.3；把 pOH 当作 pH 会得到 2 或 2.3。",
-        "ku": "Ji ber Ba(OH)2 → Ba2+ + 2OH-, [OH-] = 2 · 0,005 = 0,01 M = 10^-2 M. pOH = 2, pH = 14 - 2 = 12. Heke hejmara 2 neyê hesibandin pOH = -log(5x10^-3) = 2,3 û pH = 11,7 derdikeve; bi du caran lêxistina bi 2 re 12,3 derdikeve. Hesibandina pOH wek pH jî 2 an 2,3 dide."
+        "ku": "Ji ber ku Ba(OH)2 → Ba2+ + 2OH- ye, [OH-] = 2 · 0,005 = 0,01 M = 10^-2 M. pOH = 2, pH = 14 - 2 = 12. Heke hevbera 2 ya OH- neyê hesibandin pOH = -log(5x10^-3) = 2,3 û pH = 11,7 derdikeve; heke du caran bi 2 were lêkirin 12,3 derdikeve. Girtina pOH wek pH jî 2 an 2,3 dide."
       }
     },
     {
@@ -1313,7 +1313,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При 25 °C pH 0,01 M раствора слабой кислоты HA равен 4. В каком варианте правильно указаны константа кислотности (Ka) и степень диссоциации HA?",
         "ar": "عند 25 °C يكون pH محلول الحمض الضعيف HA الذي تركيزه 0.01 M مساويًا 4. في أي الخيارات الآتية أُعطيت قيمة ثابت تأين الحمض (Ka) والنسبة المئوية لتأين HA إعطاءً صحيحًا؟",
         "zh": "25 °C 时，0.01 M 弱酸 HA 溶液的 pH 为 4。下列哪一项正确给出了 HA 的电离常数(Ka)和电离度？",
-        "ku": "Li 25 °C pH ya çareseriya 0,01 M a asîda qels HA 4 e. Li gorî vê, sabîta asîdiyê (Ka) û rêjeya îyonîzasyona HA di kîjan vebijarkê de rast hatiye dayîn?"
+        "ku": "Li 25 °C pH-a çareseriya 0,01 M a asîda qels HA 4 e. Li gorî vê yekê, sabîta asîdiyê (Ka) û rêjeya îyonîzasyona HA di kîjan vebijarkê de rast hatine dayîn?"
       },
       "options": [
         {
@@ -1376,7 +1376,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "pH = 4, значит, [H+] = 10^-4 M. В равновесии HA ⇌ H+ + A- [A-] = [H+] = 10^-4 M, [HA] ≈ 0,01 M. Ka = (10^-4)^2 / 10^-2 = 10^-6. Степень диссоциации = (10^-4 / 10^-2) · 100 = 1 %. Если принять [H+] за Ka, получится 10^-4; если забыть разделить квадрат на Ca — 10^-8; если считать кислоту полностью продиссоциировавшей — ошибочные 100 %.",
         "ar": "pH = 4 يعني [H+] = 10^-4 M. في الاتزان HA ⇌ H+ + A- يكون [A-] = [H+] = 10^-4 M و [HA] ≈ 0.01 M. Ka = (10^-4)^2 / 10^-2 = 10^-6. النسبة المئوية للتأين = (10^-4 / 10^-2) · 100 = 1%. اعتبار [H+] نفسه Ka يعطي 10^-4، ونسيان قسمة المربع على Ca يعطي 10^-8، واعتبار الحمض متأينًا كليًا يعطي 100% خطأً.",
         "zh": "pH = 4，则 [H+] = 10^-4 M。在 HA ⇌ H+ + A- 中，[A-] = [H+] = 10^-4 M，[HA] ≈ 0.01 M。Ka = (10^-4)^2 / 10^-2 = 10^-6。电离度 = (10^-4 / 10^-2) · 100 = 1%。直接把 [H+] 当作 Ka 得 10^-4；忘记把平方除以 Ca 得 10^-8；当作完全电离则错误地得到 100%。",
-        "ku": "pH = 4 be, [H+] = 10^-4 M e. Di hevsengiya HA ⇌ H+ + A- de [A-] = [H+] = 10^-4 M û [HA] ≈ 0,01 M e. Ka = (10^-4)^2 / 10^-2 = 10^-6. Rêjeya îyonîzasyonê = (10^-4 / 10^-2) · 100 = %1. Hesibandina [H+] wek Ka 10^-4 dide; jibîrkirina parvekirina çargoşeyê li Ca 10^-8 dide; hesibandina asîdê wek bi tevahî îyonîzebûyî %100 ya şaş dide."
+        "ku": "pH = 4 be, [H+] = 10^-4 M e. Di hevsengiya HA ⇌ H+ + A- de [A-] = [H+] = 10^-4 M û [HA] ≈ 0,01 M e. Ka = (10^-4)^2 / 10^-2 = 10^-6. Rêjeya îyonîzasyonê = (10^-4 / 10^-2) · 100 = %1. Girtina [H+] bi xwe wek Ka 10^-4 dide; jibîrkirina dabeşkirina çargoşeyê li Ca 10^-8 dide; hesibandina asîdê wek bi tevahî îyonîzebûyî rêjeyeke şaş a wek %100 dide."
       }
     },
     {
@@ -1389,7 +1389,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При 25 °C для кислоты HX Ka = 1,0x10^-4, для кислоты HY Ka = 1,0x10^-8. Какие из утверждений верны?\nI. При равных концентрациях раствор HX имеет меньший pH.\nII. Kb иона X- равна 1,0x10^-10.\nIII. Ион Y- — более сильное основание, чем ион X-.",
         "ar": "عند 25 °C تكون Ka = 1.0x10^-4 للحمض HX و Ka = 1.0x10^-8 للحمض HY. أي العبارات التالية صحيحة؟\nI. عند تساوي التركيز يكون pH لمحلول HX أصغر.\nII. قيمة Kb للأيون X- تساوي 1.0x10^-10.\nIII. الأيون Y- قاعدة أقوى من الأيون X-.",
         "zh": "25 °C 时，酸 HX 的 Ka = 1.0x10^-4，酸 HY 的 Ka = 1.0x10^-8。下列说法中哪些正确？\nI. 浓度相同时，HX 溶液的 pH 更小。\nII. X- 的 Kb 为 1.0x10^-10。\nIII. Y- 是比 X- 更强的碱。",
-        "ku": "Li 25 °C ji bo asîda HX Ka = 1,0x10^-4 û ji bo asîda HY Ka = 1,0x10^-8 e. Li gorî vê, kîjan gotin rast in?\nI. Di tîrbûna wekhev de pH ya çareseriya HX piçûktir e.\nII. Kb ya îyona X- 1,0x10^-10 e.\nIII. Îyona Y- ji îyona X- bazeke xurttir e."
+        "ku": "Li 25 °C ji bo asîda HX Ka = 1,0x10^-4 û ji bo asîda HY Ka = 1,0x10^-8 e. Li gorî vê yekê,\nI. Di tîrbûna wekhev de pH-a çareseriya HX piçûktir e.\nII. Kb ya îyona X- 1,0x10^-10 e.\nIII. Îyona Y- ji îyona X- bazeke bihêztir e.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1452,7 +1452,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "I верно: HX с большей Ka при той же концентрации диссоциирует сильнее, [H+] больше, pH меньше. II верно: Kb(X-) = Kw / Ka = 10^-14 / 10^-4 = 10^-10. III верно: Kb(Y-) = 10^-14 / 10^-8 = 10^-6, что больше 10^-10; чем слабее кислота, тем сильнее сопряжённое с ней основание. Все три утверждения верны.",
         "ar": "I صحيحة: الحمض HX ذو Ka الأكبر يتأين أكثر عند التركيز نفسه، فيكون [H+] أكبر و pH أصغر. II صحيحة: Kb(X-) = Kw / Ka = 10^-14 / 10^-4 = 10^-10. III صحيحة: Kb(Y-) = 10^-14 / 10^-8 = 10^-6 وهي أكبر من 10^-10؛ فكلما كان الحمض أضعف كانت قاعدته المرافقة أقوى. العبارات الثلاث صحيحة.",
         "zh": "I 正确：Ka 较大的 HX 在相同浓度下电离更多，[H+] 更大，pH 更小。II 正确：Kb(X-) = Kw / Ka = 10^-14 / 10^-4 = 10^-10。III 正确：Kb(Y-) = 10^-14 / 10^-8 = 10^-6，大于 10^-10；酸越弱，其共轭碱越强。三种说法都正确。",
-        "ku": "I rast e: HX ku Ka ya wê mezintir e di heman tîrbûnê de zêdetir îyonîze dibe, [H+] mezintir û pH piçûktir e. II rast e: Kb(X-) = Ksu / Ka = 10^-14 / 10^-4 = 10^-10. III rast e: Kb(Y-) = 10^-14 / 10^-8 = 10^-6 e û ji 10^-10 mezintir e; asîd çiqas qelstir be, baza wê ya hevgirtî ewqas xurttir e. Her sê gotin rast in."
+        "ku": "I rast e: HX ku Ka ya wê mezintir e di heman tîrbûnê de bêtir îyonîze dibe, [H+] mezintir û pH piçûktir e. II rast e: Kb(X-) = Kw / Ka = 10^-14 / 10^-4 = 10^-10. III rast e: Kb(Y-) = 10^-14 / 10^-8 = 10^-6 e û ji 10^-10 mezintir e; asîd çiqasî qelstir be, baza wê ya konjuge ewqasî bihêztir e. Her sê gotin rast in."
       }
     },
     {
@@ -1528,7 +1528,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Основание Брёнстеда — Лоури — акцептор протона (H+). В реакции HCl + H2O → H3O+ + Cl- молекула H2O принимает H+ от HCl и превращается в H3O+, т. е. ведёт себя как основание. Во всех остальных реакциях H2O отдаёт протон частицам NH3, CH3COO-, CO3^2- или F- и превращается в OH-, т. е. выступает как кислота. Вода амфотерна: в зависимости от партнёра она проявляет свойства кислоты или основания.",
         "ar": "قاعدة برونستد-لوري هي المستقبِلة للبروتون (H+). في التفاعل HCl + H2O → H3O+ + Cl- يستقبل H2O البروتون من HCl ويتحول إلى H3O+ فيسلك سلوك القاعدة. وفي جميع التفاعلات الأخرى يعطي H2O بروتونًا إلى NH3 أو CH3COO- أو CO3^2- أو F- ويتحول إلى OH- أي يسلك سلوك الحمض. فالماء مادة مترددة (أمفوتيرية) يكون حمضًا أو قاعدة بحسب المادة المقابلة.",
         "zh": "布朗斯特-劳里碱是质子(H+)的接受体。在 HCl + H2O → H3O+ + Cl- 中，H2O 从 HCl 接受 H+ 变为 H3O+，表现为碱。在其余各反应中，H2O 把质子给予 NH3、CH3COO-、CO3^2- 或 F- 而变为 OH-，表现为酸。水是两性物质，视反应对象既可作酸也可作碱。",
-        "ku": "Baza Brønsted-Lowry cureya ku proton (H+) digire ye. Di HCl + H2O → H3O+ + Cl- de H2O ji HCl H+ digire û dibe H3O+, ji ber vê wek baz tevdigere. Di hemû reaksiyonên din de H2O protonekê dide NH3, CH3COO-, CO3^2- an F- û dibe OH-, ango wek asîd tevdigere. Av amfoter e: li gorî cureya beramberê xwe dikare asîd an baz be."
+        "ku": "Baza Brønsted-Lowry cureyek e ku protonê (H+) digire. Di reaksiyona HCl + H2O → H3O+ + Cl- de H2O ji HCl H+ digire û dibe H3O+, ji ber vê yekê wek baz tevdigere. Di hemû reaksiyonên din de H2O protonê dide NH3, CH3COO-, CO3^2- an F- û dibe OH-, ango wek asîd tevdigere. Av amfoter e: li gorî cureya ku pê re dikeve reaksiyonê dikare asîd an baz be."
       }
     },
     {
@@ -1541,7 +1541,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "В каком ряду водные растворы NaCl, NH4Cl и CH3COONa одинаковой концентрации (0,1 M) при 25 °C расположены в порядке возрастания pH?",
         "ar": "عند 25 °C، أي مما يلي يرتب قيم pH للمحاليل المائية المتساوية التركيز (0.1 M) من NaCl و NH4Cl و CH3COONa تصاعديًا؟",
         "zh": "25 °C 时，浓度相同(0.1 M)的 NaCl、NH4Cl 和 CH3COONa 水溶液的 pH 由小到大的顺序是下列哪一项？",
-        "ku": "Li 25 °C, rêzkirina nirxên pH yên çareseriyên avî yên NaCl, NH4Cl û CH3COONa ku tîrbûna wan wekhev e (0,1 M) ji piçûk ber bi mezin kîjan e?"
+        "ku": "Li 25 °C rêzkirina nirxên pH-ê yên çareseriyên avî yên NaCl, NH4Cl û CH3COONa yên bi tîrbûna wekhev (0,1 M) ji piçûk ber bi mezin kîjan e?"
       },
       "options": [
         {
@@ -1604,7 +1604,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Ион NH4+ в NH4Cl — сопряжённая кислота слабого основания NH3; он гидролизуется с образованием H3O+, поэтому pH < 7. NaCl образован сильной кислотой и сильным основанием; его ионы не гидролизуются, pH = 7. Ион CH3COO- в CH3COONa — сопряжённое основание слабой кислоты; он гидролизуется с образованием OH-, поэтому pH > 7. Следовательно, NH4Cl < NaCl < CH3COONa. Если считать все соли нейтральными или перепутать действие ионов NH4+ и CH3COO-, получится неверный ряд.",
         "ar": "الأيون NH4+ في NH4Cl هو الحمض المرافق للقاعدة الضعيفة NH3؛ يتحلل مائيًا مكوّنًا H3O+ فيكون pH < 7. أما NaCl فمشتق من حمض قوي وقاعدة قوية ولا تتحلل أيوناته فيكون pH = 7. والأيون CH3COO- في CH3COONa هو القاعدة المرافقة لحمض ضعيف؛ يتحلل مائيًا مكوّنًا OH- فيكون pH > 7. لذا الترتيب NH4Cl < NaCl < CH3COONa. واعتبار كل الأملاح متعادلة أو عكس أثر NH4+ و CH3COO- يؤدي إلى ترتيب خاطئ.",
         "zh": "NH4Cl 中的 NH4+ 是弱碱 NH3 的共轭酸，水解生成 H3O+，pH < 7。NaCl 由强酸和强碱生成，离子不水解，pH = 7。CH3COONa 中的 CH3COO- 是弱酸的共轭碱，水解生成 OH-，pH > 7。因此顺序为 NH4Cl < NaCl < CH3COONa。把所有盐都当作中性，或把 NH4+ 与 CH3COO- 的作用弄反，都会得到错误顺序。",
-        "ku": "NH4+ ya di NH4Cl de asîda hevgirtî ya baza qels NH3 ye; hîdrolîz dibe û H3O+ çêdike, ji ber vê pH < 7 e. NaCl ji asîda xurt û baza xurt çêdibe; îyonên wê hîdrolîz nabin, pH = 7 e. CH3COO- ya di CH3COONa de baza hevgirtî ya asîdeke qels e; hîdrolîz dibe û OH- çêdike, ji ber vê pH > 7 e. Lewma rêzkirin NH4Cl < NaCl < CH3COONa ye. Hesibandina hemû xwêyan wek bêalî an berevajîkirina bandora NH4+ û CH3COO- rêzkirinên şaş dide."
+        "ku": "NH4+ ya di NH4Cl de asîda konjuge ya baza qels NH3 ye; hîdroliz dibe û H3O+ çêdike, ji ber vê yekê pH < 7 e. NaCl ji asîdeke bihêz û bazeke bihêz çêdibe; îyonên wê hîdroliz nabin, pH = 7 e. CH3COO- ya di CH3COONa de baza konjuge ya asîdeke qels e; hîdroliz dibe û OH- çêdike, ji ber vê yekê pH > 7 e. Lewma rêzkirin NH4Cl < NaCl < CH3COONa ye. Hesibandina hemû xwêyan wek bêalî an berevajîkirina bandora îyonên NH4+ û CH3COO- rêzkirinên şaş dide."
       }
     },
     {
@@ -1617,7 +1617,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Приготовлены водные смеси, содержащие компоненты в равных количествах (моль):\nI. CH3COOH и CH3COONa\nII. HNO3 и KNO3\nIII. HCl и NH4Cl\nКакие из них являются буферными растворами?",
         "ar": "حُضّرت المخاليط المائية التالية بأعداد مولات متساوية من مكوناتها:\nI. CH3COOH و CH3COONa\nII. HNO3 و KNO3\nIII. HCl و NH4Cl\nأيها محاليل منظمة؟",
         "zh": "用等物质的量的各组分配制下列水溶液混合物：\nI. CH3COOH 和 CH3COONa\nII. HNO3 和 KNO3\nIII. HCl 和 NH4Cl\n其中哪些是缓冲溶液？",
-        "ku": "Tevliheviyên avî yên jêrîn bi hejmara molên wekhev a pêkhateyan tên amadekirin:\nI. CH3COOH û CH3COONa\nII. HNO3 û KNO3\nIII. HCl û NH4Cl.\nKîjan ji wan çareseriyên tampon in?"
+        "ku": "Ji van tevliheviyên avî yên ku hejmara molên beşên wan wekhev in\nI. CH3COOH û CH3COONa\nII. HNO3 û KNO3\nIII. HCl û NH4Cl\nkîjan çareseriya tampon in?"
       },
       "options": [
         {
@@ -1680,7 +1680,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Буферный раствор содержит слабую кислоту вместе с сопряжённым с ней основанием (или слабое основание с сопряжённой кислотой). В смеси I присутствуют слабая кислота CH3COOH и сопряжённое с ней основание CH3COO- — это буфер. В смеси II HNO3 — сильная кислота, а ион NO3- не связывает добавленные ионы H+ — это не буфер. В смеси III есть NH4+, но HCl — сильная кислота, а сопряжённого слабого основания NH3 нет; добавленные ионы H+ связывать нечему, и буфер не образуется.",
         "ar": "المحلول المنظم يحتوي على حمض ضعيف مع قاعدته المرافقة (أو قاعدة ضعيفة مع حمضها المرافق). في I يوجد الحمض الضعيف CH3COOH وقاعدته المرافقة CH3COO- معًا فهو منظم. في II يكون HNO3 حمضًا قويًا ولا يستطيع NO3- ربط H+ المضاف فليس منظمًا. في III يوجد NH4+ لكن HCl حمض قوي ولا توجد القاعدة الضعيفة المرافقة NH3، فلا شيء يستهلك H+ المضاف ولا يتكون منظم.",
         "zh": "缓冲溶液含有弱酸及其共轭碱（或弱碱及其共轭酸）。I 中同时存在弱酸 CH3COOH 和其共轭碱 CH3COO-，是缓冲溶液。II 中 HNO3 是强酸，NO3- 不能结合外加的 H+，不是缓冲溶液。III 中虽有 NH4+，但 HCl 是强酸，且没有共轭弱碱 NH3，无法消耗外加的 H+，不能形成缓冲溶液。",
-        "ku": "Çareseriya tampon asîdeke qels bi baza wê ya hevgirtî re (an bazeke qels bi asîda wê ya hevgirtî re) dihewîne. Di I de asîda qels CH3COOH û baza wê ya hevgirtî CH3COO- bi hev re hene; tampon e. Di II de HNO3 asîdeke xurt e û NO3- nikare H+ ya lê zêdekirî bigire; ne tampon e. Di III de NH4+ heye, lê HCl asîdeke xurt e û baza qels a hevgirtî NH3 tune ye; tiştek tune ku H+ ya lê zêdekirî bixwe, ji ber vê tampon çênabe."
+        "ku": "Çareseriya tampon asîdeke qels û baza wê ya konjuge (an bazeke qels û asîda wê ya konjuge) bi hev re dihewîne. Di I de asîda qels CH3COOH û baza wê ya konjuge CH3COO- bi hev re hene; tampon e. Di II de HNO3 asîdeke bihêz e û îyona NO3- nikare H+ ya lê zêdekirî bigire; ne tampon e. Di III de NH4+ heye, lê HCl asîdeke bihêz e û baza qels a konjuge NH3 tune ye; ji ber ku cureyek tune ku H+ ya lê zêdekirî bixwe, tampon çênabe."
       }
     },
     {
@@ -1693,7 +1693,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "10 мл раствора H2SO4 неизвестной концентрации титруют 0,1 M раствором NaOH. До точки эквивалентности израсходовано 40 мл раствора NaOH. Чему равна молярная концентрация раствора H2SO4 (моль/л)?",
         "ar": "يُعاير 10 mL من محلول H2SO4 مجهول التركيز بمحلول NaOH تركيزه 0.1 M. إذا لزم 40 mL من محلول NaOH للوصول إلى نقطة التكافؤ، فما مولارية محلول H2SO4؟",
         "zh": "用 0.1 M NaOH 溶液滴定 10 mL 浓度未知的 H2SO4 溶液，到达化学计量点时消耗 NaOH 溶液 40 mL。H2SO4 溶液的物质的量浓度是多少 mol/L？",
-        "ku": "10 mL çareseriya H2SO4 ya ku tîrbûna wê nenaskirî ye bi çareseriya 0,1 M NaOH tê tîtrekirin. Ji bo gihîştina xala hevwateyê 40 mL çareseriya NaOH hatiye xerckirin; li gorî vê, tîrbûna çareseriya H2SO4 çend molar e?"
+        "ku": "10 mL çareseriya H2SO4 ya ku tîrbûna wê nenas e bi çareseriya 0,1 M NaOH tê tîtrekirin. Ji bo gihîştina xala hevtayê 40 mL çareseriya NaOH hatiye xerckirin; li gorî vê yekê tîrbûna çareseriya H2SO4 çend molar e?"
       },
       "options": [
         {
@@ -1756,7 +1756,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "В точке эквивалентности nH+ = nOH-. nOH- = 0,1 · 0,040 = 4x10^-3 моль. H2SO4 даёт два иона H+ (Z = 2), поэтому n(H2SO4) = 4x10^-3 / 2 = 2x10^-3 моль и M = 2x10^-3 / 0,010 = 0,2 M. Соотношение Ma · Va · 2 = Mb · Vb · 1 даёт тот же результат. Без учёта Z получается 0,4 M, если множитель 2 записать на стороне основания — 0,8 M, если разделить на 2 дважды — 0,1 M.",
         "ar": "عند نقطة التكافؤ nH+ = nOH-. nOH- = 0.1 · 0.040 = 4x10^-3 mol. يعطي H2SO4 أيوني H+ (Z = 2)، لذا n(H2SO4) = 4x10^-3 / 2 = 2x10^-3 mol و M = 2x10^-3 / 0.010 = 0.2 M. والعلاقة Ma · Va · 2 = Mb · Vb · 1 تعطي النتيجة نفسها. إهمال Z يعطي 0.4 M، ووضع المعامل 2 في جهة القاعدة يعطي 0.8 M، والقسمة على 2 مرتين تعطي 0.1 M.",
         "zh": "化学计量点时 nH+ = nOH-。nOH- = 0.1 · 0.040 = 4x10^-3 mol。H2SO4 提供两个 H+(Z = 2)，所以 n(H2SO4) = 4x10^-3 / 2 = 2x10^-3 mol，M = 2x10^-3 / 0.010 = 0.2 M。用 Ma · Va · 2 = Mb · Vb · 1 也得到同样结果。忽略 Z 得 0.4 M；把系数 2 写在碱一侧得 0.8 M；除以 2 两次得 0.1 M。",
-        "ku": "Li xala hevwateyê nH+ = nOH- e. nOH- = 0,1 · 0,040 = 4x10^-3 mol. H2SO4 du H+ dide (Z = 2), ji ber vê n(H2SO4) = 4x10^-3 / 2 = 2x10^-3 mol û M = 2x10^-3 / 0,010 = 0,2 M. Têkiliya Ma · Va · 2 = Mb · Vb · 1 jî heman encamê dide. Heke Z were jibîrkirin 0,4 M, heke hejmara 2 li aliyê bazê were nivîsandin 0,8 M, heke du caran li 2 were parvekirin 0,1 M derdikeve."
+        "ku": "Li xala hevtayê nH+ = nOH- ye. nOH- = 0,1 · 0,040 = 4x10^-3 mol. Ji ber ku H2SO4 du H+ dide (Z = 2), n(H2SO4) = 4x10^-3 / 2 = 2x10^-3 mol û M = 2x10^-3 / 0,010 = 0,2 M. Hevkêşeya Ma · Va · 2 = Mb · Vb · 1 jî heman encamê dide. Heke Z were jibîrkirin 0,4 M, heke hevbera 2 li aliyê bazê were nivîsîn 0,8 M, heke du caran li 2 were dabeşkirin 0,1 M derdikeve."
       }
     },
     {
@@ -1769,7 +1769,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При 25 °C смешивают 100 мл 0,3 M раствора HCl и 100 мл 0,1 M раствора NaOH. Объём смеси принять равным 200 мл. Чему равен pH полученного раствора?",
         "ar": "عند 25 °C يُخلط 100 mL من محلول HCl تركيزه 0.3 M مع 100 mL من محلول NaOH تركيزه 0.1 M. باعتبار حجم المخلوط 200 mL، ما قيمة pH للمحلول الناتج؟",
         "zh": "25 °C 时，将 100 mL 0.3 M HCl 溶液与 100 mL 0.1 M NaOH 溶液混合。设混合液体积为 200 mL，所得溶液的 pH 是多少？",
-        "ku": "Li 25 °C 100 mL çareseriya 0,3 M HCl bi 100 mL çareseriya 0,1 M NaOH re tê tevlihevkirin. Heke qebareya tevliheviyê 200 mL were qebûlkirin, pH ya çareseriya çêbûyî çi ye?"
+        "ku": "Li 25 °C 100 mL çareseriya 0,3 M HCl bi 100 mL çareseriya 0,1 M NaOH re tê tevlihevkirin. Heke qebareya tevliheviyê 200 mL were qebûlkirin, pH-a çareseriya çêbûyî çend e?"
       },
       "options": [
         {
@@ -1832,7 +1832,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "nH+ = 0,3 · 0,1 = 0,03 моль, nOH- = 0,1 · 0,1 = 0,01 моль. После H+ + OH- → H2O остаётся 0,03 - 0,01 = 0,02 моль H+. [H+] = 0,02 / 0,2 = 0,1 M, значит pH = 1. Кислота в избытке, поэтому раствор не может быть нейтральным (pH 7); значения 12 и 13 получаются при путанице pH и pOH, а 2 — при неверном переводе мл в л.",
         "ar": "nH+ = 0.3 · 0.1 = 0.03 mol و nOH- = 0.1 · 0.1 = 0.01 mol. بعد التفاعل H+ + OH- → H2O يتبقى 0.03 - 0.01 = 0.02 mol من H+. [H+] = 0.02 / 0.2 = 0.1 M إذن pH = 1. ولأن الحمض فائض لا يمكن أن يكون المحلول متعادلًا (pH 7)؛ وتنتج القيمتان 12 و 13 من الخلط بين pH و pOH، والقيمة 2 من خطأ تحويل mL إلى L.",
         "zh": "nH+ = 0.3 · 0.1 = 0.03 mol，nOH- = 0.1 · 0.1 = 0.01 mol。H+ + OH- → H2O 反应后剩余 0.03 - 0.01 = 0.02 mol H+。[H+] = 0.02 / 0.2 = 0.1 M，所以 pH = 1。酸过量，溶液不可能呈中性(pH 7)；12 和 13 源于混淆 pH 与 pOH，2 源于 mL 换算成 L 时出错。",
-        "ku": "nH+ = 0,3 · 0,1 = 0,03 mol, nOH- = 0,1 · 0,1 = 0,01 mol. Piştî H+ + OH- → H2O, 0,03 - 0,01 = 0,02 mol H+ dimîne. [H+] = 0,02 / 0,2 = 0,1 M e, ji ber vê pH = 1 e. Ji ber ku asîd zêde ye çareserî nikare bêalî (pH 7) be; 12 û 13 ji tevlihevkirina pH û pOH, 2 jî ji veguhastina şaş a mL bo L derdikevin."
+        "ku": "nH+ = 0,3 · 0,1 = 0,03 mol, nOH- = 0,1 · 0,1 = 0,01 mol. Piştî reaksiyona H+ + OH- → H2O, 0,03 - 0,01 = 0,02 mol H+ zêde dimîne. [H+] = 0,02 / 0,2 = 0,1 M e, ji ber vê yekê pH = 1 e. Ji ber ku asîd zêde maye, çareserî nikare bêalî (pH 7) be; 12 û 13 ji tevlihevkirina pH û pOH, 2 jî ji veguherîna şaş a mL bo L derdikevin."
       }
     },
     {
@@ -1845,7 +1845,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При 60 °C ионное произведение воды Kw = 1,0x10^-13. Какие из утверждений о чистой воде при 60 °C верны?\nI. Её pH равен 6,5.\nII. Она нейтральна.\nIII. pH + pOH = 14.",
         "ar": "عند 60 °C يكون الحاصل الأيوني للماء Kw = 1.0x10^-13. أي العبارات التالية صحيحة للماء النقي عند 60 °C؟\nI. قيمة pH له 6.5.\nII. متعادل.\nIII. pH + pOH = 14.",
         "zh": "60 °C 时水的离子积 Kw = 1.0x10^-13。关于 60 °C 的纯水，下列说法中哪些正确？\nI. pH 为 6.5。\nII. 呈中性。\nIII. pH + pOH = 14。",
-        "ku": "Li 60 °C sabîta îyonîzasyona avê Ksu = 1,0x10^-13 e. Ji bo ava saf a li 60 °C, kîjan gotin rast in?\nI. pH ya wê 6,5 e.\nII. Bêalî ye.\nIII. pH + pOH = 14 e."
+        "ku": "Li 60 °C sabîta îyonîzasyona avê Kw = 1,0x10^-13 e. Li gorî vê yekê, ji bo ava paqij a li 60 °C\nI. pH-a wê 6,5 e.\nII. Bêalî ye.\nIII. pH + pOH = 14 e.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1908,7 +1908,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "В чистой воде [H+] = [OH-] = √(10^-13) = 10^-6,5 M, поэтому pH = pOH = 6,5 (I верно). Так как [H+] = [OH-], вода нейтральна, хотя её pH меньше 7 (II верно). pH + pOH = -log Kw = 13; сумма 14 справедлива только при 25 °C (III неверно).",
         "ar": "في الماء النقي [H+] = [OH-] = √(10^-13) = 10^-6.5 M لذا pH = pOH = 6.5 (I صحيحة). ولأن [H+] = [OH-] فالماء متعادل رغم أن pH له أقل من 7 (II صحيحة). pH + pOH = -log Kw = 13، والمجموع 14 صحيح عند 25 °C فقط (III خاطئة).",
         "zh": "纯水中 [H+] = [OH-] = √(10^-13) = 10^-6.5 M，所以 pH = pOH = 6.5(I 正确)。因为 [H+] = [OH-]，即使 pH 小于 7，水仍呈中性(II 正确)。pH + pOH = -log Kw = 13；和为 14 只适用于 25 °C(III 错误)。",
-        "ku": "Di ava saf de [H+] = [OH-] = √(10^-13) = 10^-6,5 M e, ji ber vê pH = pOH = 6,5 e (I rast e). Ji ber ku [H+] = [OH-] e, av bêalî ye her çend pH ya wê ji 7 kêmtir be jî (II rast e). pH + pOH = -log Ksu = 13 e; koma 14 tenê li 25 °C derbas dibe (III şaş e)."
+        "ku": "Di ava paqij de [H+] = [OH-] = √(10^-13) = 10^-6,5 M e, ji ber vê yekê pH = pOH = 6,5 e (I rast e). Ji ber ku [H+] = [OH-] e, av bêalî ye, her çend pH-a wê ji 7 kêmtir be jî (II rast e). pH + pOH = -log Kw = 13 e; berhevoka 14 tenê li 25 °C derbasdar e (III şaş e)."
       }
     },
     {
@@ -1921,7 +1921,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При титровании раствора CH3COOH раствором NaOH при 25 °C pH в точке эквивалентности ≈ 8,7. Какой индикатор следует использовать, чтобы конечная точка титрования (изменение окраски индикатора) была как можно ближе к точке эквивалентности? (В скобках указаны интервалы перехода окраски по pH.)",
         "ar": "عند معايرة محلول CH3COOH بمحلول NaOH عند 25 °C يكون pH عند نقطة التكافؤ ≈ 8.7. أي الكواشف التالية يجب استخدامه لتكون نقطة النهاية (نقطة تغير لون الكاشف) أقرب ما يمكن إلى نقطة التكافؤ؟ (بين القوسين مدى pH الذي يتغير فيه لون كل كاشف.)",
         "zh": "25 °C 时用 NaOH 溶液滴定 CH3COOH 溶液，化学计量点的 pH ≈ 8.7。为使滴定终点（指示剂变色点）尽可能接近化学计量点，应选用下列哪种指示剂？(括号内为指示剂的变色 pH 范围。)",
-        "ku": "Li 25 °C dema çareseriya CH3COOH bi çareseriya NaOH tê tîtrekirin, li xala hevwateyê pH ≈ 8,7 e. Ji bo ku xala dawiyê (xala ku rengê îndîkatorê diguhere) bi qasî ku pêkan e nêzî xala hevwateyê be, kîjan îndîkator divê were bikaranîn? (Di nav kevanan de navberên pH yên guherîna rengê hatine dayîn.)"
+        "ku": "Li 25 °C dema çareseriya CH3COOH bi çareseriya NaOH tê tîtrekirin, li xala hevtayê pH ≈ 8,7 e. Ji bo ku xala dawiyê (xala ku rengê îndîkatorê diguhere) herî nêzî xala hevtayê be, divê kîjan îndîkator were bikaranîn? (Di nav kevanan de navberên pH-ê yên guherîna rengê îndîkatoran hatine dayîn.)"
       },
       "options": [
         {
@@ -1942,7 +1942,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Метиловый красный (4,4–6,2)",
           "ar": "أحمر الميثيل (4.4–6.2)",
           "zh": "甲基红(4.4–6.2)",
-          "ku": "Metîl sor (4,4–6,2)"
+          "ku": "Sora metîl (4,4–6,2)"
         },
         {
           "tr": "Bromtimol mavisi (6,0–7,6)",
@@ -1952,7 +1952,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Бромтимоловый синий (6,0–7,6)",
           "ar": "أزرق بروموثيمول (6.0–7.6)",
           "zh": "溴百里酚蓝(6.0–7.6)",
-          "ku": "Bromtîmol şîn (6,0–7,6)"
+          "ku": "Şîna bromtîmol (6,0–7,6)"
         },
         {
           "tr": "Fenolftalein (8,2–10,0)",
@@ -1962,7 +1962,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Фенолфталеин (8,2–10,0)",
           "ar": "الفينولفثالين (8.2–10.0)",
           "zh": "酚酞(8.2–10.0)",
-          "ku": "Fenolftaleîn (8,2–10,0)"
+          "ku": "Fenolftaleyîn (8,2–10,0)"
         },
         {
           "tr": "Alizarin sarısı R (10,1–12,0)",
@@ -1972,7 +1972,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Ализариновый жёлтый R (10,1–12,0)",
           "ar": "أصفر الأليزارين R (10.1–12.0)",
           "zh": "茜素黄R(10.1–12.0)",
-          "ku": "Alîzarîn zer R (10,1–12,0)"
+          "ku": "Zera alîzarîn R (10,1–12,0)"
         }
       ],
       "correctIndex": 3,
@@ -1984,7 +1984,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Точка эквивалентности — момент, когда nH+ = nOH-; конечная точка титрования — момент изменения окраски индикатора. Для точного результата интервал перехода индикатора должен включать pH точки эквивалентности. Из-за гидролиза CH3COO- этот pH ≈ 8,7, поэтому подходит фенолфталеин (8,2–10,0). Бромтимоловый синий выбирают, ошибочно считая, что точка эквивалентности при pH 7; он меняет окраску слишком рано и занижает израсходованный объём основания.",
         "ar": "نقطة التكافؤ هي النقطة التي يكون عندها nH+ = nOH-، أما نقطة النهاية فهي نقطة تغير لون الكاشف. وللحصول على نتيجة دقيقة يجب أن يشمل مدى تغير لون الكاشف قيمة pH عند نقطة التكافؤ. وبسبب التحلل المائي لـ CH3COO- يكون pH عند التكافؤ ≈ 8.7، لذا يناسب الفينولفثالين (8.2–10.0). أما أزرق بروموثيمول فيختاره من يظن أن التكافؤ عند pH 7، وهو يغيّر لونه مبكرًا ويُظهر حجم القاعدة المستهلك أقل من الحقيقي.",
         "zh": "化学计量点是 nH+ = nOH- 的点；滴定终点是指示剂变色的点。要得到准确结果，指示剂的变色范围必须包含化学计量点的 pH。由于 CH3COO- 水解，化学计量点 pH ≈ 8.7，因此应选酚酞(8.2–10.0)。误以为化学计量点在 pH 7 的人会选溴百里酚蓝，它变色过早，使测得的碱体积偏小。",
-        "ku": "Xala hevwateyê ew xal e ku nH+ = nOH- ye; xala dawiyê ew xal e ku rengê îndîkatorê diguhere. Ji bo encameke rast, navbera guherîna rengê îndîkatorê divê pH ya xala hevwateyê bihewîne. Ji ber hîdrolîza CH3COO-, li xala hevwateyê pH ≈ 8,7 e, ji ber vê fenolftaleîn (8,2–10,0) guncaw e. Bromtîmol şîn ji hêla kesên ku xala hevwateyê li pH 7 dihesibînin ve tê hilbijartin; ew zû reng diguhere û qebareya bazê ya xerckirî kêmtir nîşan dide."
+        "ku": "Xala hevtayê ew xal e ku nH+ = nOH- ye; xala dawiyê ew xal e ku rengê îndîkatorê diguhere. Ji bo encameke rast, divê navbera guherîna rengê îndîkatorê pH-a xala hevtayê bihewîne. Ji ber hîdroliza îyona CH3COO-, li xala hevtayê pH ≈ 8,7 e, ji ber vê yekê fenolftaleyîn (8,2–10,0) guncaw e. Şîna bromtîmol bi wê xeletiyê tê hilbijartin ku xala hevtayê li pH 7 ye; zû reng diguhere û qebareya bazê ya xerckirî ji ya rastîn kêmtir nîşan dide."
       }
     },
     {
@@ -1997,7 +1997,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При 25 °C 10 мл раствора HCl с pH 3 разбавляют чистой водой до 1 л. Чему равен pH полученного раствора?",
         "ar": "عند 25 °C يُؤخذ 10 mL من محلول HCl قيمة pH له 3 ويُكمَّل بالماء النقي إلى 1 L. ما قيمة pH للمحلول الناتج؟",
         "zh": "25 °C 时，取 10 mL pH 为 3 的 HCl 溶液，用纯水稀释至 1 L。所得溶液的 pH 是多少？",
-        "ku": "Li 25 °C ji çareseriya HCl ya ku pH ya wê 3 e 10 mL tê girtin û bi ava saf heta 1 L tê temamkirin. pH ya çareseriya çêbûyî çi ye?"
+        "ku": "Li 25 °C ji çareseriya HCl ya ku pH-a wê 3 e 10 mL tê girtin û bi ava paqij heta 1 L tê temamkirin. pH-a çareseriya çêbûyî çend e?"
       },
       "options": [
         {
@@ -2060,7 +2060,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Объём увеличивается с 10 мл до 1000 мл, то есть раствор разбавляется в 100 раз. [H+] = 10^-3 / 100 = 10^-5 M, pH = 5. Разбавление сильной кислоты в 10 раз повышает pH на 1, в 100 раз — на 2 единицы. Если считать, что разбавление не меняет pH, получится 3; если принять разбавление в 10 раз — 4; разбавление не нейтрализует кислоту, поэтому при такой концентрации pH не достигает 7.",
         "ar": "يزداد الحجم من 10 mL إلى 1000 mL، أي يُخفف المحلول 100 مرة. [H+] = 10^-3 / 100 = 10^-5 M و pH = 5. تخفيف حمض قوي 10 مرات يرفع pH وحدة واحدة، و100 مرة يرفعه وحدتين. الظن بأن التخفيف لا يغيّر pH يعطي 3، واعتبار التخفيف 10 مرات يعطي 4؛ والتخفيف لا يعادل الحمض، لذا لا يصل pH إلى 7 عند هذا التركيز.",
         "zh": "体积由 10 mL 增至 1000 mL，溶液稀释了 100 倍。[H+] = 10^-3 / 100 = 10^-5 M，pH = 5。强酸稀释 10 倍 pH 升高 1 个单位，稀释 100 倍升高 2 个单位。认为稀释不改变 pH 会得 3，按稀释 10 倍计算会得 4；稀释不会中和酸，此浓度下 pH 达不到 7。",
-        "ku": "Qebare ji 10 mL derdikeve 1000 mL, ango çareserî 100 qat tê sistkirin. [H+] = 10^-3 / 100 = 10^-5 M, pH = 5. Dema asîdeke xurt 10 qat tê sistkirin pH 1 yeke, 100 qat tê sistkirin 2 yekeyan bilind dibe. Fikirîna ku sistkirin pH naguherîne 3, hesibandina sistkirinê wek 10 qat 4 dide; sistkirin asîdê bêalî nake, ji ber vê di vê tîrbûnê de pH nagihîje 7."
+        "ku": "Ji ber ku qebare ji 10 mL derdikeve 1000 mL, çareserî 100 qat tê sistkirin. [H+] = 10^-3 / 100 = 10^-5 M, pH = 5. Dema çareseriya asîdeke bihêz 10 qat tê sistkirin pH 1 yekeyê, dema 100 qat tê sistkirin 2 yekeyan bilind dibe. Fikra ku sistkirin pH-ê naguherîne 3, hesibandina sistkirinê wek 10 qat 4 dide; ji ber ku sistkirin asîdê neutralîze nake, di vê tîrbûnê de pH nabe 7."
       }
     },
     {
@@ -2073,7 +2073,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При 25 °C 50 мл 0,1 M раствора HCl титруют 0,1 M раствором NaOH. Какие из утверждений верны?\nI. В начале титрования pH раствора равен 13.\nII. После добавления 50 мл NaOH достигается точка эквивалентности и pH = 7.\nIII. После добавления в сумме 100 мл NaOH в растворе [OH-] = 0,1 M.",
         "ar": "عند 25 °C يُعاير 50 mL من محلول HCl تركيزه 0.1 M بمحلول NaOH تركيزه 0.1 M. أي العبارات التالية صحيحة؟\nI. في بداية المعايرة يكون pH للمحلول 13.\nII. عند إضافة 50 mL من NaOH تُبلَغ نقطة التكافؤ ويكون pH = 7.\nIII. عند إضافة 100 mL من NaOH إجمالًا يصبح [OH-] = 0.1 M في المحلول.",
         "zh": "25 °C 时，用 0.1 M NaOH 溶液滴定 50 mL 0.1 M HCl 溶液。下列说法中哪些正确？\nI. 滴定开始时溶液的 pH 为 13。\nII. 加入 50 mL NaOH 时到达化学计量点，pH 为 7。\nIII. 共加入 100 mL NaOH 时，溶液中 [OH-] = 0.1 M。",
-        "ku": "Li 25 °C 50 mL çareseriya 0,1 M HCl bi çareseriya 0,1 M NaOH tê tîtrekirin. Li gorî vê, kîjan gotin rast in?\nI. Di destpêka tîtrasyonê de pH ya çareseriyê 13 e.\nII. Dema 50 mL NaOH lê tê zêdekirin xala hevwateyê tê gihîştin û pH 7 dibe.\nIII. Dema bi giştî 100 mL NaOH lê tê zêdekirin di çareseriyê de [OH-] = 0,1 M dibe."
+        "ku": "Li 25 °C 50 mL çareseriya 0,1 M HCl bi çareseriya 0,1 M NaOH tê tîtrekirin. Li gorî vê yekê,\nI. Di destpêka tîtrasyonê de pH-a çareseriyê 13 e.\nII. Dema 50 mL NaOH lê tê zêdekirin xala hevtayê tê gihîştin û pH dibe 7.\nIII. Dema bi giştî 100 mL NaOH lê tê zêdekirin, di çareseriyê de [OH-] = 0,1 M dibe.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -2136,7 +2136,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "I неверно: в начале [H+] = 0,1 M, значит, pH = 1; значение 13 получается при путанице с pOH. II верно: nHCl = 0,1 · 0,05 = 5x10^-3 моль, такое же количество NaOH содержится в 50 мл; при титровании сильной кислоты сильным основанием pH в точке эквивалентности равен 7. III неверно: в 100 мл NaOH содержится 10^-2 моль OH-, из них 5x10^-3 моль остаются в избытке. Общий объём равен 150 мл, поэтому [OH-] = 5x10^-3 / 0,15 ≈ 0,033 M; без учёта увеличения объёма ошибочно получают 0,1 M.",
         "ar": "I خاطئة: في البداية [H+] = 0.1 M لذا pH = 1، والقيمة 13 تنتج من الخلط مع pOH. II صحيحة: nHCl = 0.1 · 0.05 = 5x10^-3 mol وتوجد الكمية نفسها من NaOH في 50 mL، وفي معايرة حمض قوي بقاعدة قوية يكون pH عند التكافؤ 7. III خاطئة: يحتوي 100 mL من NaOH على 10^-2 mol من OH- يفيض منها 5x10^-3 mol، والحجم الكلي 150 mL، لذا [OH-] = 5x10^-3 / 0.15 ≈ 0.033 M، وإهمال زيادة الحجم يعطي 0.1 M خطأً.",
         "zh": "I 错误：开始时 [H+] = 0.1 M，pH = 1；13 是与 pOH 混淆的结果。II 正确：nHCl = 0.1 · 0.05 = 5x10^-3 mol，50 mL NaOH 中含有等量的 NaOH；强酸-强碱滴定的化学计量点 pH 为 7。III 错误：100 mL NaOH 含 10^-2 mol OH-，其中过量 5x10^-3 mol；总体积 150 mL，[OH-] = 5x10^-3 / 0.15 ≈ 0.033 M；忽略体积增大会错误地得到 0.1 M。",
-        "ku": "I şaş e: di destpêkê de [H+] = 0,1 M e, ji ber vê pH = 1 e; 13 ji tevlihevkirina bi pOH re derdikeve. II rast e: nHCl = 0,1 · 0,05 = 5x10^-3 mol e û heman mîqdara NaOH di 50 mL de heye; di tîtrasyona asîda xurt-baza xurt de li xala hevwateyê pH 7 e. III şaş e: di 100 mL NaOH de 10^-2 mol OH- heye, 5x10^-3 mol jê zêde dimîne. Qebareya giştî 150 mL e, ji ber vê [OH-] = 5x10^-3 / 0,15 ≈ 0,033 M e; heke zêdebûna qebareyê neyê hesibandin bi şaşî 0,1 M tê dîtin."
+        "ku": "I şaş e: di destpêkê de [H+] = 0,1 M e, ji ber vê yekê pH = 1 e; 13 ji tevlihevkirina bi pOH re derdikeve. II rast e: nHCl = 0,1 · 0,05 = 5x10^-3 mol e û heman mîqdara NaOH di 50 mL de heye; di tîtrasyona asîda bihêz-baza bihêz de li xala hevtayê pH 7 e. III şaş e: di 100 mL NaOH de 10^-2 mol OH- heye, 5x10^-3 mol jê zêde dimîne. Qebareya giştî 150 mL e, ji ber vê yekê [OH-] = 5x10^-3 / 0,15 ≈ 0,033 M e; heke zêdebûna qebareyê neyê hesibandin bi şaşî 0,1 M tê dîtin."
       }
     },
     {
@@ -2149,7 +2149,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Чему равен pH 0,01 M водного раствора слабого основания BOH (Kb = 1,0x10^-6) при 25 °C?",
         "ar": "عند 25 °C، ما قيمة pH لمحلول مائي تركيزه 0.01 M من القاعدة الضعيفة BOH التي ثابت تأينها Kb = 1.0x10^-6؟",
         "zh": "25 °C 时，Kb = 1.0x10^-6 的弱碱 BOH 的 0.01 M 水溶液的 pH 是多少？",
-        "ku": "Li 25 °C pH ya çareseriya avî ya 0,01 M a baza qels BOH ku Kb ya wê 1,0x10^-6 e çi ye?"
+        "ku": "Li 25 °C pH-a çareseriya avî ya 0,01 M a baza qels BOH ku Kb ya wê 1,0x10^-6 e çend e?"
       },
       "options": [
         {
@@ -2212,7 +2212,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "В равновесии BOH ⇌ B+ + OH- продиссоциировавшая часть очень мала, поэтому [OH-] ≈ √(Kb · Cb) = √(10^-6 · 10^-2) = 10^-4 M. pOH = 4, pH = 14 - 4 = 10. Если дать в ответ pOH, получится 4; если считать основание сильным ([OH-] = 0,01 M) — 12; если принять Kb за [OH-] — 8.",
         "ar": "في الاتزان BOH ⇌ B+ + OH- يكون الجزء المتأين صغيرًا جدًا، لذا [OH-] ≈ √(Kb · Cb) = √(10^-6 · 10^-2) = 10^-4 M. pOH = 4 و pH = 14 - 4 = 10. إعطاء pOH كإجابة يعطي 4، واعتبار القاعدة قوية ([OH-] = 0.01 M) يعطي 12، واعتبار Kb نفسه [OH-] يعطي 8.",
         "zh": "BOH ⇌ B+ + OH- 中电离部分很小，所以 [OH-] ≈ √(Kb · Cb) = √(10^-6 · 10^-2) = 10^-4 M。pOH = 4，pH = 14 - 4 = 10。把 pOH 当作答案得 4；把它当作强碱([OH-] = 0.01 M)得 12；把 Kb 直接当作 [OH-] 得 8。",
-        "ku": "Di hevsengiya BOH ⇌ B+ + OH- de beşa îyonîzebûyî pir piçûk e, ji ber vê [OH-] ≈ √(Kb · Cb) = √(10^-6 · 10^-2) = 10^-4 M e. pOH = 4, pH = 14 - 4 = 10. Dayîna pOH wek bersiv 4, hesibandina bazê wek xurt ([OH-] = 0,01 M) 12, qebûlkirina Kb wek [OH-] 8 dide."
+        "ku": "Di hevsengiya BOH ⇌ B+ + OH- de beşa îyonîzebûyî pir piçûk e, ji ber vê yekê [OH-] ≈ √(Kb · Cb) = √(10^-6 · 10^-2) = 10^-4 M e. pOH = 4, pH = 14 - 4 = 10. Dayîna pOH wek bersiv 4, hesibandina bazê wek bihêz ([OH-] = 0,01 M) 12, girtina Kb bi xwe wek [OH-] 8 dide."
       }
     },
     {
@@ -2225,7 +2225,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При 25 °C 0,2 моль CH3COOH и 0,1 моль NaOH растворяют в чистой воде и получают 1 л раствора. Чему равен pH полученного раствора? (Ka для CH3COOH = 1,0x10^-5)",
         "ar": "عند 25 °C يُذاب 0.2 mol من CH3COOH و 0.1 mol من NaOH في الماء النقي لتحضير 1 L من المحلول. ما قيمة pH للمحلول الناتج؟ (Ka لـ CH3COOH = 1.0x10^-5)",
         "zh": "25 °C 时，将 0.2 mol CH3COOH 和 0.1 mol NaOH 溶于纯水配成 1 L 溶液。所得溶液的 pH 是多少？(CH3COOH 的 Ka = 1.0x10^-5)",
-        "ku": "Li 25 °C 0,2 mol CH3COOH û 0,1 mol NaOH di ava saf de tên helandin û 1 L çareserî tê amadekirin. pH ya çareseriya çêbûyî çi ye? (Ji bo CH3COOH Ka = 1,0x10^-5)"
+        "ku": "Li 25 °C 0,2 mol CH3COOH û 0,1 mol NaOH di ava paqij de tên helandin û 1 L çareserî tê amadekirin. pH-a çareseriya çêbûyî çend e? (Ji bo CH3COOH Ka = 1,0x10^-5)"
       },
       "options": [
         {
@@ -2288,7 +2288,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "В реакции CH3COOH + NaOH → CH3COONa + H2O 0,1 моль NaOH нейтрализует 0,1 моль кислоты. Остаются 0,1 моль CH3COOH и 0,1 моль CH3COO-; эта смесь — буфер. Из Ka = [H+][CH3COO-] / [CH3COOH] следует [H+] = Ka · (0,1 / 0,1) = 10^-5 M, pH = 5. Если не учитывать соль и считать раствор просто слабой кислотой, получится pH 3; если считать нейтрализацию полной — pH 7 или 9; если считать NaOH в избытке — pH 13.",
         "ar": "في التفاعل CH3COOH + NaOH → CH3COONa + H2O يعادل 0.1 mol من NaOH كمية 0.1 mol من الحمض، فيتبقى 0.1 mol من CH3COOH و 0.1 mol من CH3COO-، وهذا المخلوط محلول منظم. من Ka = [H+][CH3COO-] / [CH3COOH] نجد [H+] = Ka · (0.1 / 0.1) = 10^-5 M و pH = 5. إهمال الملح والحساب كحمض ضعيف فقط يعطي pH 3، وافتراض تعادل كامل يعطي pH 7 أو 9، وافتراض فائض NaOH يعطي pH 13.",
         "zh": "在 CH3COOH + NaOH → CH3COONa + H2O 中，0.1 mol NaOH 中和 0.1 mol 酸，剩余 0.1 mol CH3COOH 和 0.1 mol CH3COO-，该混合物是缓冲溶液。由 Ka = [H+][CH3COO-] / [CH3COOH] 得 [H+] = Ka · (0.1 / 0.1) = 10^-5 M，pH = 5。忽略盐而只按弱酸计算得 pH 3；误以为完全中和得 pH 7 或 9；误以为 NaOH 过量得 pH 13。",
-        "ku": "Di reaksiyona CH3COOH + NaOH → CH3COONa + H2O de 0,1 mol NaOH 0,1 mol asîd bêalî dike. 0,1 mol CH3COOH û 0,1 mol CH3COO- dimînin; ev tevlihevî tampon e. Ji Ka = [H+][CH3COO-] / [CH3COOH], [H+] = Ka · (0,1 / 0,1) = 10^-5 M, pH = 5. Nehesibandina xwêyê û çareserkirina wek asîda qels tenê pH 3, fikirîna bêalîbûna temam pH 7 an 9, hesibandina NaOH wek zêde pH 13 dide."
+        "ku": "Di reaksiyona CH3COOH + NaOH → CH3COONa + H2O de 0,1 mol NaOH 0,1 mol asîdê neutralîze dike. 0,1 mol CH3COOH û 0,1 mol CH3COO- dimînin; ev tevlihevî tampon e. Ji Ka = [H+][CH3COO-] / [CH3COOH], [H+] = Ka · (0,1 / 0,1) = 10^-5 M, pH = 5. Nehesibandina xwêyê û hesabkirin wek ku tenê asîda qels hebe pH 3, fikra neutralîzasyona temam pH 7 an 9, hesibandina NaOH wek zêde pH 13 dide."
       }
     }
   ]

@@ -14,7 +14,7 @@ export const unit13: ChemistryUnitSeedData = {
     "ru": "Газы: молекулярно-кинетическая теория и реальные газы",
     "ar": "الغازات: النظرية الحركية والغازات الحقيقية",
     "zh": "气体动理论与真实气体",
-    "ku": "Teoriya Kînetîk a Gazan"
+    "ku": "Gaz: Teoriya Kînetîk û Gazên Rastîn"
   },
   "subtitle": {
     "tr": "Graham Difüzyon, Kısmi Basınç ve Joule-Thomson",
@@ -24,7 +24,7 @@ export const unit13: ChemistryUnitSeedData = {
     "ru": "Закон Грэма, парциальные давления и эффект Джоуля — Томсона",
     "ar": "قانون جراهام للانتشار والضغط الجزئي وظاهرة جول-طومسون",
     "zh": "格雷厄姆扩散定律、分压与焦耳-汤姆孙效应",
-    "ku": "Graham Diffusion, Zexta Parçeyî û Joule-Thomson"
+    "ku": "Difûzyona Graham, Zexta Qismî û Joule-Thomson"
   },
   "facts": [
     {
@@ -37,7 +37,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Закон диффузии Грэма: при одинаковой температуре скорость диффузии газов обратно пропорциональна квадратному корню из молярной массы (v1/v2 = sqrt(M2/M1)).",
         "ar": "قانون جراهام للانتشار: عند درجة الحرارة نفسها يتناسب معدل انتشار الغازات عكسيًا مع الجذر التربيعي للكتلة المولية (v1/v2 = sqrt(M2/M1)).",
         "zh": "格雷厄姆扩散定律：在相同温度下，气体的扩散速率与摩尔质量的平方根成反比(v1/v2 = sqrt(M2/M1))。",
-        "ku": "Zagona Belavbûnê ya Graham: Di heman germahiyê de leza belavbûna gazan bi koka çargoşe ya girseya molar re berevajî têkildar e (v1/v2 = sqrt(M2/M1))."
+        "ku": "Zagona Difûzyonê ya Graham: Di heman germahiyê de leza difûzyona gazan bi koka çargoşe ya girseya molî re berevajî rêjeyî ye (v1/v2 = sqrt(M2/M1))."
       },
       "trap": {
         "tr": "Aynı sıcaklıkta mol kütlesi büyük olan gaz daha hızlı difüzlenir.",
@@ -47,7 +47,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При одинаковой температуре газ с большей молярной массой диффундирует быстрее.",
         "ar": "عند درجة الحرارة نفسها ينتشر الغاز ذو الكتلة المولية الأكبر بسرعة أكبر.",
         "zh": "在相同温度下，摩尔质量较大的气体扩散得更快。",
-        "ku": "Di heman germahiyê de gaza ku girseya wê ya molar mezintir e zûtir belav dibe."
+        "ku": "Di heman germahiyê de gaza ku girseya wê ya molî mezintir e zûtir difûzyon dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, ağır gazın daha hızlı yayıldığını varsayıyor. Aynı sıcaklıkta tüm gazların ortalama kinetik enerjisi eşit olduğundan kütlesi büyük taneciklerin hızı daha küçüktür; bu yüzden ağır gaz daha yavaş difüzlenir.",
@@ -57,7 +57,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка исходит из того, что тяжёлый газ распространяется быстрее. При одинаковой температуре средняя кинетическая энергия частиц всех газов одинакова, поэтому более тяжёлые частицы движутся медленнее и тяжёлый газ диффундирует медленнее.",
         "ar": "يفترض الفخ أن الغاز الأثقل ينتشر أسرع. عند درجة الحرارة نفسها تتساوى متوسطات الطاقة الحركية لجميع الغازات، لذا تتحرك الجسيمات الأثقل ببطء أكبر، فينتشر الغاز الأثقل أبطأ.",
         "zh": "陷阱以为较重的气体扩散更快。相同温度下所有气体的平均动能相等，所以质量较大的粒子运动较慢，较重的气体扩散反而更慢。",
-        "ku": "Xefik dihesibîne ku gaza girantir zûtir belav dibe. Di heman germahiyê de enerjiya kînetîk a navîn a hemû gazan wekhev e, ji ber vê yekê perçeyên giran hêdîtir diçin û gaza giran hêdîtir belav dibe."
+        "ku": "Xefik dihesibîne ku gaza girantir zûtir belav dibe. Di heman germahiyê de enerjiya kînetîk a navîn a hemû gazan wekhev e, ji ber vê yekê perçeyên girantir hêdîtir diçin û gaza giran hêdîtir difûzyon dibe."
       }
     },
     {
@@ -70,7 +70,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Скорость диффузии газа прямо пропорциональна квадратному корню из абсолютной температуры (v1/v2 = sqrt((T1*M2)/(T2*M1))).",
         "ar": "يتناسب معدل انتشار الغازات طرديًا مع الجذر التربيعي لدرجة الحرارة المطلقة (v1/v2 = sqrt((T1*M2)/(T2*M1))).",
         "zh": "气体的扩散速率与热力学温度的平方根成正比(v1/v2 = sqrt((T1*M2)/(T2*M1)))。",
-        "ku": "Rêjeya belavbûna gazan rasterast bi koka çargoşe ya germahiya mutleq re têkildar e (v1/v2 = sqrt((T1*M2)/(T2*M1)))."
+        "ku": "Leza difûzyona gazan bi koka çargoşe ya germahiya mutleq re rasterast rêjeyî ye (v1/v2 = sqrt((T1*M2)/(T2*M1)))."
       },
       "trap": {
         "tr": "Bir gazın mutlak sıcaklığı 4 katına çıkarılırsa difüzyon hızı da 4 katına çıkar.",
@@ -80,7 +80,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Если абсолютную температуру газа увеличить в 4 раза, скорость его диффузии тоже увеличится в 4 раза.",
         "ar": "إذا زيدت درجة الحرارة المطلقة لغاز إلى 4 أمثالها، يزداد معدل انتشاره أيضًا إلى 4 أمثاله.",
         "zh": "若气体的热力学温度增大到原来的4倍，其扩散速率也增大到原来的4倍。",
-        "ku": "Ger germahiya mutleq a gazekê 4 qat bibe, leza belavbûna wê jî 4 qat dibe."
+        "ku": "Ger germahiya mutleq a gazekê 4 qat bibe, leza difûzyona wê jî 4 qat dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, hızın sıcaklıkla doğru orantılı olduğunu sanıyor. Hız mutlak sıcaklığın kareköküyle orantılıdır; mutlak sıcaklık 4 katına çıkınca hız sqrt(4) = 2 katına çıkar.",
@@ -90,7 +90,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка считает скорость прямо пропорциональной температуре. На самом деле скорость пропорциональна квадратному корню из абсолютной температуры: при увеличении абсолютной температуры в 4 раза скорость растёт в sqrt(4) = 2 раза.",
         "ar": "يعدّ الفخ السرعة متناسبة طرديًا مع درجة الحرارة. السرعة تتناسب مع الجذر التربيعي لدرجة الحرارة المطلقة؛ فإذا زادت درجة الحرارة المطلقة إلى 4 أمثالها تزداد السرعة إلى sqrt(4) = 2 مثلَي قيمتها فقط.",
         "zh": "陷阱把速率当作与温度成正比。速率与热力学温度的平方根成正比；热力学温度变为4倍时，速率只变为 sqrt(4) = 2 倍。",
-        "ku": "Xefik leza belavbûnê rasterast bi germahiyê re têkildar dihesibîne. Lez bi koka çargoşe ya germahiya mutleq re têkildar e; dema germahiya mutleq 4 qat dibe, lez tenê sqrt(4) = 2 qat dibe."
+        "ku": "Xefik lezê rasterast bi germahiyê re rêjeyî dihesibîne. Lez bi koka çargoşe ya germahiya mutleq re rêjeyî ye; dema germahiya mutleq 4 qat dibe, lez tenê sqrt(4) = 2 qat dibe."
       },
       "osymTip": {
         "tr": "Karekök ilişkisi vardır; hız 2 katına çıkar!",
@@ -100,7 +100,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Зависимость здесь через квадратный корень: скорость возрастает только в 2 раза!",
         "ar": "العلاقة علاقة جذر تربيعي؛ فالسرعة تتضاعف فقط!",
         "zh": "是平方根关系：速率只变为原来的2倍！",
-        "ku": "Têkiliya koka çargoşe heye; leza duqat dibe!"
+        "ku": "Têkiliya koka çargoşe heye; lez tenê 2 qat dibe!"
       }
     },
     {
@@ -113,7 +113,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Закон парциальных давлений Дальтона: парциальное давление газа в смеси Pi = Xi * Pобщ (Xi = ni / nобщ).",
         "ar": "قانون دالتون للضغوط الجزئية: الضغط الجزئي للغاز في الخليط هو Pi = Xi * Ptotal (Xi = ni / ntotal).",
         "zh": "道尔顿分压定律：混合气体中某一气体的分压 Pi = Xi * P总(Xi = ni / n总)。",
-        "ku": "Zagona Zextên Parçeyî ya Dalton: Zexta qismî ya gazekê di tevlîheviyê de Pi = Xi * Ptotal e (Xi = ni / ntotal)."
+        "ku": "Zagona Zextên Qismî ya Dalton: Zexta qismî ya gazekê di tevliheviyê de Pi = Xi * Ptotal e (Xi = ni / ntotal)."
       },
       "trap": {
         "tr": "Kısmi basınç mol kesrinden bağımsızdır.",
@@ -123,7 +123,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Парциальное давление не зависит от мольной доли.",
         "ar": "الضغط الجزئي مستقل عن الكسر المولي.",
         "zh": "分压与物质的量分数无关。",
-        "ku": "Zexta qismî ji beşa molê serbixwe ye."
+        "ku": "Zexta qismî ji kerta molî serbixwe ye."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, kısmi basıncın gazın miktarıyla ilgisi olmadığını sanıyor. Aynı kapta ve sıcaklıkta basınç tanecik sayısıyla orantılı olduğundan bir gazın kısmi basıncı mol kesriyle doğru orantılıdır: Pi = Xi * Ptoplam.",
@@ -133,7 +133,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка считает, что парциальное давление не связано с количеством газа. В одном сосуде при одной температуре давление пропорционально числу частиц, поэтому парциальное давление газа прямо пропорционально его мольной доле: Pi = Xi * Pобщ.",
         "ar": "يفترض الفخ أن الضغط الجزئي لا علاقة له بكمية الغاز. في الوعاء نفسه وعند درجة الحرارة نفسها يتناسب الضغط مع عدد الجسيمات، لذا يتناسب الضغط الجزئي للغاز طرديًا مع كسره المولي: Pi = Xi * Ptotal.",
         "zh": "陷阱以为分压与气体的量无关。在同一容器、同一温度下，压强与粒子数成正比，所以某气体的分压与其物质的量分数成正比：Pi = Xi * P总。",
-        "ku": "Xefik dihesibîne ku zexta qismî bi mîqdara gazê ve ne girêdayî ye. Di heman firaxê û germahiyê de zext bi hejmara perçeyan re têkildar e, ji ber vê yekê zexta qismî ya gazekê rasterast bi kesra molê re têkildar e: Pi = Xi * Ptevahî."
+        "ku": "Xefik dihesibîne ku zexta qismî bi mîqdara gazê ve ne girêdayî ye. Di heman firaxê û heman germahiyê de zext bi hejmara perçeyan re rêjeyî ye, ji ber vê yekê zexta qismî ya gazekê bi kerta wê ya molî re rasterast rêjeyî ye: Pi = Xi * Ptotal."
       }
     },
     {
@@ -146,7 +146,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Средняя кинетическая энергия частиц газа зависит только от абсолютной температуры и прямо пропорциональна ей; при одинаковой температуре она не зависит от природы газа.",
         "ar": "يعتمد متوسط الطاقة الحركية لجسيمات الغاز على درجة الحرارة المطلقة فقط ويتناسب معها طرديًا؛ وعند درجة الحرارة نفسها لا يعتمد على نوع الغاز.",
         "zh": "气体粒子的平均动能只取决于热力学温度，并与热力学温度成正比；相同温度下与气体种类无关。",
-        "ku": "Enerjiya kînetîk a navîn a perçeyên gazê tenê bi germahiya mutleq ve girêdayî ye û rasterast bi wê re têkildar e; di heman germahiyê de bi cureyê gazê ve ne girêdayî ye."
+        "ku": "Enerjiya kînetîk a navîn a perçeyên gazê tenê bi germahiya mutleq ve girêdayî ye û bi wê re rasterast rêjeyî ye; di heman germahiyê de bi cureyê gazê ve ne girêdayî ye."
       },
       "trap": {
         "tr": "Aynı sıcaklıktaki CO2 moleküllerinin ortalama kinetik enerjisi H2 moleküllerininkinden büyüktür.",
@@ -156,7 +156,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При одинаковой температуре средняя кинетическая энергия молекул CO2 больше, чем у молекул H2.",
         "ar": "عند درجة الحرارة نفسها، يكون متوسط الطاقة الحركية لجزيئات CO2 أكبر من متوسط الطاقة الحركية لجزيئات H2.",
         "zh": "相同温度下，CO2分子的平均动能大于H2分子的平均动能。",
-        "ku": "Di heman germahiyê de, enerjiya kînetîk a navîn a molekulên CO2 ji ya molekulên H2 mezintir e."
+        "ku": "Di heman germahiyê de enerjiya kînetîk a navîn a molekulên CO2 ji ya molekulên H2 mezintir e."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, ağır moleküllerin daha fazla kinetik enerjiye sahip olduğunu düşünüyor. Ortalama kinetik enerji yalnızca mutlak sıcaklığa bağlıdır; aynı sıcaklıkta CO2 ile H2'nin ortalama kinetik enerjileri eşittir, ağır olan CO2 yalnızca daha yavaş hareket eder.",
@@ -166,7 +166,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка полагает, что более тяжёлые молекулы обладают большей кинетической энергией. Средняя кинетическая энергия зависит только от абсолютной температуры; при одной температуре у CO2 и H2 она одинакова, более тяжёлый CO2 просто движется медленнее.",
         "ar": "يظن الفخ أن الجزيئات الأثقل تملك طاقة حركية أكبر. متوسط الطاقة الحركية يعتمد على درجة الحرارة المطلقة فقط؛ عند درجة الحرارة نفسها يتساوى متوسط الطاقة الحركية لـ CO2 وH2، وكل ما في الأمر أن CO2 الأثقل يتحرك أبطأ.",
         "zh": "陷阱以为较重的分子动能更大。平均动能只取决于热力学温度；相同温度下 CO2 与 H2 的平均动能相等，较重的 CO2 只是运动得更慢。",
-        "ku": "Xefik difikire ku molekulên giran enerjiya kînetîk a zêdetir hene. Enerjiya kînetîk a navîn tenê bi germahiya mutleq ve girêdayî ye; di heman germahiyê de ya CO2 û H2 wekhev e, CO2 ya giran tenê hêdîtir diçe."
+        "ku": "Xefik difikire ku enerjiya kînetîk a molekulên giran zêdetir e. Enerjiya kînetîk a navîn tenê bi germahiya mutleq ve girêdayî ye; di heman germahiyê de enerjiya kînetîk a navîn a CO2 û ya H2 wekhev in, CO2 ya girantir tenê hêdîtir diçe."
       },
       "osymTip": {
         "tr": "Aynı sıcaklıktaki tüm gazların ortalama kinetik enerjisi eşittir!",
@@ -176,7 +176,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Средняя кинетическая энергия всех газов при одинаковой температуре одинакова!",
         "ar": "متوسط الطاقة الحركية لجميع الغازات عند درجة الحرارة نفسها متساوٍ!",
         "zh": "相同温度下所有气体的平均动能相等！",
-        "ku": "Enerjiya kînetîk a navînî ya hemî gazên di heman germahiyê de wekhev e!"
+        "ku": "Di heman germahiyê de enerjiya kînetîk a navîn a hemû gazan wekhev e!"
       }
     },
     {
@@ -189,7 +189,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Высокая температура, низкое давление и слабое межмолекулярное притяжение (небольшие неполярные частицы) приближают газы к идеальному поведению.",
         "ar": "درجة الحرارة المرتفعة والضغط المنخفض وضعف التجاذب بين الجزيئات (جسيمات صغيرة غير قطبية) تقرّب الغازات من السلوك المثالي.",
         "zh": "高温、低压以及较弱的分子间引力（粒子小、非极性）使气体更接近理想气体行为。",
-        "ku": "Germahiya bilind, zexta nizm û kişandina navmolekulî ya qels (perçeyên biçûk û ne-polar) gazan nêzîkî tevgera îdeal dikin."
+        "ku": "Germahiya bilind, zexta nizm û kişandina navmolekulî ya qels (perçeyên piçûk û nepolar) gazan nêzîkî tevgera îdeal dikin."
       },
       "trap": {
         "tr": "Yüksek basınç ve düşük sıcaklıkta gazlar ideale en yakındır.",
@@ -199,7 +199,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Наиболее близки к идеальным газы при высоком давлении и низкой температуре.",
         "ar": "تكون الغازات أقرب ما تكون إلى السلوك المثالي عند الضغط المرتفع ودرجة الحرارة المنخفضة.",
         "zh": "气体在高压、低温下最接近理想气体。",
-        "ku": "Gazên di tansiyona bilind û germahiya nizm de herî nêzîk îdeal in."
+        "ku": "Gaz di zexta bilind û germahiya nizm de herî nêzîkî îdeal in."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak koşulları tersine çeviriyor. Yüksek basınçta tanecikler birbirine yaklaştığı için öz hacim ve çekim önem kazanır, düşük sıcaklıkta da çekim kuvvetleri baskın gelir; bu koşullar gazı idealden en çok uzaklaştırır.",
@@ -209,7 +209,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка меняет условия на противоположные. При высоком давлении частицы сближаются, и их собственный объём и притяжение становятся существенными, а при низкой температуре преобладают силы притяжения; именно эти условия сильнее всего отдаляют газ от идеального поведения.",
         "ar": "يعكس الفخ الظروف. عند الضغط المرتفع تقترب الجسيمات بعضها من بعض فيصبح لحجمها الذاتي وللتجاذب أثر، وعند درجة الحرارة المنخفضة تسود قوى التجاذب؛ وهذه الظروف تُبعد الغاز عن السلوك المثالي أكثر ما يمكن.",
         "zh": "陷阱把条件说反了。高压下粒子彼此靠近，自身体积和引力变得重要；低温下分子间引力占主导。这些条件使气体偏离理想气体行为最严重。",
-        "ku": "Xefik şertan berevajî dike. Di zexta bilind de perçe nêzî hev dibin, ji ber vê yekê qebareya wan a xwe û kişandin girîng dibin, û di germahiya nizm de hêzên kişandinê serdest in; ev şert gazê herî zêde ji tevgera îdeal dûr dixin."
+        "ku": "Xefik şertan berevajî dike. Di zexta bilind de perçe nêzî hev dibin, ji ber vê yekê qebareya wan a xwerû û kişandin girîng dibin; di germahiya nizm de jî hêzên kişandinê serdest dibin. Ev şert gazê herî zêde ji tevgera îdeal dûr dixin."
       }
     },
     {
@@ -222,7 +222,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Между молекулами реального газа действуют силы притяжения, и их собственный объём не равен нулю.",
         "ar": "توجد قوى تجاذب بين جزيئات الغاز الحقيقي، وحجمها الذاتي لا يساوي صفرًا.",
         "zh": "真实气体分子之间存在引力，且分子自身体积不为零。",
-        "ku": "Di navbera molekulên gaza rastîn de hêza kişandinê heye û qebareya wan a xwe ne sifir e."
+        "ku": "Di navbera molekulên gaza rastîn de hêza kişandinê heye û qebareya wan a xwerû ne sifir e."
       },
       "trap": {
         "tr": "İdeal gazların molekülleri arasında güçlü elektrostatik çekim vardır.",
@@ -232,7 +232,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Между молекулами идеальных газов существует сильное электростатическое притяжение.",
         "ar": "هناك تجاذب إلكتروستاتيكي قوي بين جزيئات الغازات المثالية.",
         "zh": "理想气体分子之间存在很强的静电引力。",
-        "ku": "Di navbera molekulên gazên îdeal de kêşeyeke elektrostatîk a xurt heye."
+        "ku": "Di navbera molekulên gazên îdeal de kişandineke elektrostatîk a xurt heye."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, ideal gaz ile gerçek gazı karıştırıyor. İdeal gaz modelinde tanecikler arasında hiçbir çekim olmadığı varsayılır; çekim kuvveti gerçek gazların özelliğidir.",
@@ -242,7 +242,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка путает идеальный газ с реальным. В модели идеального газа притяжение между частицами полностью отсутствует; силы притяжения — свойство реальных газов.",
         "ar": "يخلط الفخ بين الغاز المثالي والغاز الحقيقي. يفترض نموذج الغاز المثالي عدم وجود أي تجاذب بين الجسيمات؛ أما قوى التجاذب فهي من خصائص الغازات الحقيقية.",
         "zh": "陷阱混淆了理想气体和真实气体。理想气体模型假定粒子之间完全没有引力；分子间引力是真实气体的特征。",
-        "ku": "Xefik gaza îdeal û gaza rastîn tevlihev dike. Modela gaza îdeal dihesibîne ku di navbera perçeyan de qet kişandin tune; hêza kişandinê taybetiya gazên rastîn e."
+        "ku": "Xefik gaza îdeal û gaza rastîn tevlihev dike. Modela gaza îdeal dihesibîne ku di navbera perçeyan de qet kişandin tune; hêza kişandinê taybetmendiya gazên rastîn e."
       }
     },
     {
@@ -255,7 +255,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Эффект Джоуля — Томсона: в комнатных условиях большинство сжатых реальных газов при расширении через узкое отверстие в область низкого давления затрачивают энергию на преодоление межмолекулярного притяжения и охлаждаются (на этом основана работа холодильников и кондиционеров).",
         "ar": "ظاهرة جول-طومسون: في ظروف الغرفة تستهلك معظم الغازات الحقيقية المضغوطة، عند تمددها عبر فتحة ضيقة إلى ضغط منخفض، طاقةً للتغلب على التجاذب بين الجزيئات فتبرد (مبدأ عمل الثلاجات والمكيفات).",
         "zh": "焦耳-汤姆孙效应：在室温条件下，大多数被压缩的真实气体经狭窄小孔向低压膨胀时，要消耗能量克服分子间引力而降温（冰箱和空调的工作原理）。",
-        "ku": "Bandora Joule-Thomson: Di şertên odeyê de piraniya gazên rastîn ên pêçayî, dema ji qulikeke teng ber bi zexta nizm berfireh dibin, ji bo derbaskirina kişandina navmolekulî enerjiyê xerc dikin û sar dibin (prensîba xebata sarinc û klîmayan)."
+        "ku": "Bandora Joule-Thomson: Di şertên odeyê de piraniya gazên rastîn ên tepisandî, dema ji qulikeke teng ber bi zexta nizm berfireh dibin, ji bo derbaskirina kişandina navmolekulî enerjiyê xerc dikin û sar dibin (prensîba xebata sarinc û klîmayan)."
       },
       "trap": {
         "tr": "Oda koşullarında sıkıştırılmış gerçek gazların çoğu dar bir delikten genleştirildiğinde ısınır.",
@@ -265,7 +265,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "В комнатных условиях большинство сжатых реальных газов нагреваются при расширении через узкое отверстие.",
         "ar": "في ظروف الغرفة تسخن معظم الغازات الحقيقية المضغوطة عند تمددها عبر فتحة ضيقة.",
         "zh": "在室温条件下，大多数被压缩的真实气体经狭窄小孔膨胀时会升温。",
-        "ku": "Di şertên odeyê de piraniya gazên rastîn ên pêçayî dema ji qulikeke teng têne berfirehkirin germ dibin."
+        "ku": "Di şertên odeyê de piraniya gazên rastîn ên tepisandî, dema ji qulikeke teng têne berfirehkirin, germ dibin."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, genleşen gazın ısındığını sanıyor. Oda koşullarında çoğu gerçek gaz genleşirken moleküller arası çekimi yenmek için kendi kinetik enerjisinden harcar, tanecikler yavaşlar ve gaz soğur; buzdolabı ve klimalar bu soğumadan yararlanır.",
@@ -275,7 +275,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка считает, что расширяющийся газ нагревается. В комнатных условиях большинство реальных газов при расширении тратят часть своей кинетической энергии на преодоление межмолекулярного притяжения, частицы замедляются и газ охлаждается; этим пользуются холодильники и кондиционеры.",
         "ar": "يفترض الفخ أن الغاز المتمدد يسخن. في ظروف الغرفة تستهلك معظم الغازات الحقيقية أثناء التمدد جزءًا من طاقتها الحركية للتغلب على التجاذب بين الجزيئات، فتتباطأ الجسيمات ويبرد الغاز؛ وتستفيد الثلاجات والمكيفات من هذا التبريد.",
         "zh": "陷阱以为膨胀的气体会升温。在室温条件下，大多数真实气体膨胀时要消耗自身部分动能来克服分子间引力，粒子变慢，气体变冷；冰箱和空调正是利用这种降温。",
-        "ku": "Xefik dihesibîne ku gaza ku berfireh dibe germ dibe. Di şertên odeyê de piraniya gazên rastîn dema berfireh dibin beşek ji enerjiya xwe ya kînetîk ji bo derbaskirina kişandina navmolekulî xerc dikin, perçe hêdî dibin û gaz sar dibe; sarinc û klîma vê sarbûnê bi kar tînin."
+        "ku": "Xefik dihesibîne ku gaza berfirehbûyî germ dibe. Di şertên odeyê de piraniya gazên rastîn dema berfireh dibin, ji bo derbaskirina kişandina navmolekulî beşek ji enerjiya xwe ya kînetîk xerc dikin; perçe hêdî dibin û gaz sar dibe. Sarinc û klîma vê sarbûnê bi kar tînin."
       }
     },
     {
@@ -288,7 +288,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Критическая температура — самая высокая температура, при которой газ можно сжижить повышением давления; выше этой температуры газ сжижить нельзя.",
         "ar": "درجة الحرارة الحرجة: أعلى درجة حرارة يمكن عندها تسييل الغاز بالضغط؛ وفوقها لا يمكن تسييل الغاز.",
         "zh": "临界温度：仅靠加压就能使气体液化的最高温度；温度高于临界温度时，气体不能液化。",
-        "ku": "Germahiya krîtîk: Germahiya herî bilind a ku tê de gazek bi pêkanîna zextê dikare şil bibe; Di germahiyên ji vê zêdetir de, gaz nikare şil bibe."
+        "ku": "Germahiya krîtîk: germahiya herî bilind e ku tê de gazek bi zextê dikare were şilekirin; di germahiyên jê bilindtir de gaz nayê şilekirin."
       },
       "trap": {
         "tr": "Kritik sıcaklığın üzerindeki akışkanlar sadece basınçla kolayca sıvılaşır.",
@@ -298,7 +298,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Выше критической температуры вещество легко сжижается одним лишь повышением давления.",
         "ar": "الموائع التي تكون فوق درجة حرارتها الحرجة تتسيّل بسهولة بالضغط وحده.",
         "zh": "高于临界温度的流体仅靠加压就很容易液化。",
-        "ku": "Herikbarên li ser germahiya krîtîk tenê bi zextê bi hêsanî şil dibin."
+        "ku": "Herikbarên li ser germahiya krîtîk tenê bi zextê bi hêsanî şile dibin."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, yeterince yüksek basınçla her gazın sıvılaşacağını sanıyor. Kritik sıcaklığın üzerinde taneciklerin kinetik enerjisi çekim kuvvetlerini aşar; basınç ne kadar artırılırsa artırılsın sıvı faz oluşmaz.",
@@ -308,7 +308,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка считает, что любой газ можно сжижить достаточно высоким давлением. Выше критической температуры кинетическая энергия частиц превосходит силы притяжения, и жидкая фаза не образуется ни при каком давлении.",
         "ar": "يظن الفخ أن أي غاز يتسيّل بضغط مرتفع بما يكفي. فوق درجة الحرارة الحرجة تتغلب الطاقة الحركية للجسيمات على قوى التجاذب، فلا يتكوّن طور سائل مهما زيد الضغط.",
         "zh": "陷阱以为只要压强足够大任何气体都能液化。高于临界温度时粒子的动能超过分子间引力，无论压强多大都不会出现液相。",
-        "ku": "Xefik bawer dike ku her gaz bi zexteke têra xwe bilind şil dibe. Li ser germahiya krîtîk enerjiya kînetîk a perçeyan ji hêzên kişandinê mezintir e; zext çiqas were zêdekirin jî qonaxa şil çênabe."
+        "ku": "Xefik bawer dike ku her gaz bi zexteke têra xwe bilind şile dibe. Li ser germahiya krîtîk enerjiya kînetîk a perçeyan ji hêzên kişandinê mezintir e; zext çiqas were zêdekirin jî qonaxa şile çênabe."
       }
     },
     {
@@ -321,7 +321,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Пар — газообразное состояние вещества ниже его критической температуры; при постоянной температуре пар можно сжижить, повышая давление.",
         "ar": "البخار هو الحالة الغازية للمادة عند درجة حرارة أقل من درجة حرارتها الحرجة؛ ويمكن تسييله بزيادة الضغط عند درجة حرارة ثابتة.",
         "zh": "蒸气是物质在其临界温度以下的气态；在温度不变时增大压强即可使其液化。",
-        "ku": "Buhar rewşa gazî ya maddeyekê ye di bin germahiya wê ya krîtîk de; di germahiya sabît de bi zêdekirina zextê dikare were şilkirin."
+        "ku": "Buhar rewşa gaz a madeyekê ye ku di bin germahiya wê ya krîtîk de ye; di germahiya sabît de bi zêdekirina zextê dikare were şilekirin."
       },
       "trap": {
         "tr": "Buhar ve gaz kavramları bilimsel olarak birebir aynıdır.",
@@ -331,7 +331,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "С научной точки зрения понятия «пар» и «газ» полностью совпадают.",
         "ar": "مفهوما البخار والغاز متطابقان تمامًا من الناحية العلمية.",
         "zh": "蒸气和气体这两个概念在科学上完全相同。",
-        "ku": "Têgehên buhar û gazê bi zanistî tam yek in."
+        "ku": "Têgehên buhar û gaz ji aliyê zanistî ve tam yek in."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak iki kavramı eş tutuyor. Buhar kritik sıcaklığın altındaki gaz hâlidir ve yalnızca basınçla sıvılaştırılabilir; kritik sıcaklığın üzerindeki gaz ise yalnızca basınçla sıvılaştırılamaz, bu yüzden iki kavram aynı değildir.",
@@ -341,7 +341,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка отождествляет два понятия. Пар — газообразное состояние ниже критической температуры, его можно сжижить одним повышением давления; газ выше критической температуры одним давлением не сжижается, поэтому эти понятия не совпадают.",
         "ar": "يعدّ الفخ المفهومين متطابقين. البخار هو الحالة الغازية تحت درجة الحرارة الحرجة ويمكن تسييله بالضغط وحده؛ أما الغاز فوق درجة حرارته الحرجة فلا يتسيّل بالضغط وحده، لذا فالمفهومان مختلفان.",
         "zh": "陷阱把两个概念等同起来。蒸气是物质在临界温度以下的气态，仅靠加压即可液化；而临界温度以上的气体仅靠加压无法液化，所以两个概念并不相同。",
-        "ku": "Xefik her du têgehan wekhev dihesibîne. Buhar rewşa gazî ya di bin germahiya krîtîk de ye û tenê bi zextê dikare şil bibe; gaza li ser germahiya krîtîk tenê bi zextê şil nabe, ji ber vê yekê her du têgeh ne yek in."
+        "ku": "Xefik her du têgehan wekhev dihesibîne. Buhar rewşa gaz a di bin germahiya krîtîk de ye û tenê bi zextê dikare were şilekirin; gaza li ser germahiya krîtîk tenê bi zextê nayê şilekirin, ji ber vê yekê her du têgeh ne yek in."
       }
     },
     {
@@ -354,7 +354,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Если газ собран над водой, общее давление в сосуде равно сумме парциального давления газа и давления водяного пара (Pобщ = Pгаза + Pпара_воды).",
         "ar": "في وعاء يحتوي غازًا جُمع فوق الماء، الضغط الكلي يساوي مجموع الضغط الجزئي للغاز وضغط بخار الماء (Ptotal = Pgas + Pwater_vapor).",
         "zh": "用排水法收集气体时，容器内的总压强等于该气体的分压与水的蒸气压之和(P总 = P气体 + P水蒸气)。",
-        "ku": "Di firaxa ku gazeke li ser avê hatiye berhevkirin tê de ye, zexta giştî bi qasî koma zexta qismî ya gazê û zexta buhara avê ye (Ptotal = Pgas + Pwater_vapor)."
+        "ku": "Di firaxeke ku gaza li ser avê berhevkirî tê de ye, zexta giştî kombûna zexta qismî ya gazê û zexta buhara avê ye (Ptotal = Pgas + Pwater_vapor)."
       },
       "trap": {
         "tr": "Su üstünde toplanan bir gazın kısmi basıncı, kapta ölçülen toplam basınca eşittir.",
@@ -364,7 +364,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Парциальное давление газа, собранного над водой, равно общему давлению, измеренному в сосуде.",
         "ar": "الضغط الجزئي لغاز جُمع فوق الماء يساوي الضغط الكلي المقيس في الوعاء.",
         "zh": "用排水法收集的气体，其分压等于容器内测得的总压强。",
-        "ku": "Zexta qismî ya gazeke ku li ser avê hatiye berhevkirin bi qasî zexta giştî ya ku di firaxê de tê pîvandin e."
+        "ku": "Zexta qismî ya gazeke ku li ser avê hatiye berhevkirin, bi zexta giştî ya ku di firaxê de tê pîvandin re wekhev e."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, su üstünde toplanan gazın saf olduğunu varsayıyor. Gaz su buharıyla karışık olduğundan ölçülen toplam basınç, gazın kısmi basıncı ile suyun buhar basıncının toplamıdır; kuru gazın basıncını bulmak için suyun buhar basıncı çıkarılmalıdır.",
@@ -374,7 +374,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка исходит из того, что газ, собранный над водой, чистый. На самом деле он смешан с водяным паром, поэтому измеренное общее давление равно сумме парциального давления газа и давления водяного пара; чтобы найти давление сухого газа, давление водяного пара нужно вычесть.",
         "ar": "يفترض الفخ أن الغاز المجموع فوق الماء نقي. الغاز ممزوج ببخار الماء، فالضغط الكلي المقيس هو مجموع الضغط الجزئي للغاز وضغط بخار الماء؛ ولإيجاد ضغط الغاز الجاف يجب طرح ضغط بخار الماء.",
         "zh": "陷阱以为排水法收集的气体是纯净的。气体中混有水蒸气，测得的总压强等于该气体分压与水的蒸气压之和；要得到干燥气体的压强，必须减去水的蒸气压。",
-        "ku": "Xefik dihesibîne ku gaza li ser avê hatiye berhevkirin paqij e. Gaz bi buhara avê re tevlihev e, ji ber vê yekê zexta tevahî ya pîvandî berhevoka zexta qismî ya gazê û zexta buhara avê ye; ji bo zexta gaza hişk divê zexta buhara avê were derxistin."
+        "ku": "Xefik dihesibîne ku gaza li ser avê berhevkirî paqij e. Gaz bi buhara avê re tevlihev e, ji ber vê yekê zexta giştî ya pîvandî kombûna zexta qismî ya gazê û zexta buhara avê ye; ji bo dîtina zexta gaza ziwa divê zexta buhara avê jê were derxistin."
       }
     },
     {
@@ -387,7 +387,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Пока в сосуде есть жидкая вода, давление её пара при постоянной температуре не меняется, даже если изменить объём сосуда.",
         "ar": "ما دام الماء السائل موجودًا في الوعاء، فإن ضغط بخار الماء لا يتغير عند تغيير الحجم مع ثبات درجة الحرارة.",
         "zh": "只要容器中仍有液态水，在温度不变时改变容器体积，水的蒸气压不会改变。",
-        "ku": "Heta ku di firaxê de ava şil hebe, di germahiya sabît de qebare were guhertin jî zexta buhara avê naguhere."
+        "ku": "Heta ku di firaxê de ava şile hebe, di germahiya sabît de qebareya firaxê were guhertin jî zexta buhara avê naguhere."
       },
       "trap": {
         "tr": "Kapta sıvı su bulunurken sabit sıcaklıkta kabın hacmi 2 katına çıkarılırsa suyun buhar basıncı yarıya iner.",
@@ -397,7 +397,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Если при постоянной температуре увеличить вдвое объём сосуда, в котором есть жидкая вода, давление водяного пара уменьшится вдвое.",
         "ar": "إذا ضوعف حجم وعاء يحتوي على ماء سائل عند درجة حرارة ثابتة، ينخفض ضغط بخار الماء إلى النصف.",
         "zh": "在温度不变时，将盛有液态水的容器体积增大到原来的2倍，水的蒸气压减半。",
-        "ku": "Ger di germahiya sabît de qebareya firaxa ku ava şil tê de heye du qat bibe, zexta buhara avê nîvî dibe."
+        "ku": "Ger di germahiya sabît de qebareya firaxa ku ava şile tê de heye du qat bibe, zexta buhara avê nîvî dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, buhar basıncına Boyle yasasını uyguluyor. Hacim artınca bir miktar sıvı buharlaşarak buhar basıncını yeniden denge değerine getirir; kapta sıvı kaldıkça buhar basıncı yalnızca sıcaklığa bağlıdır.",
@@ -420,7 +420,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Хладагенты должны иметь высокую критическую температуру и низкую температуру кипения, быть нетоксичными и безопасными для окружающей среды.",
         "ar": "موائع التبريد: يجب أن تكون ذات درجة حرارة حرجة مرتفعة ودرجة غليان منخفضة، وأن تكون غير سامة وصديقة للبيئة.",
         "zh": "制冷剂应具有较高的临界温度和较低的沸点，并且无毒、环保。",
-        "ku": "Herikbarên sarker: divê germahiya wan a krîtîk bilind, xala wan a kelandinê nizm be, nejehrî û dostê jîngehê bin."
+        "ku": "Herikbarên sarkirinê: divê germahiya wan a krîtîk bilind û xala wan a kelînê nizm be, nejehrî û dostê jîngehê bin."
       },
       "trap": {
         "tr": "Soğutucu akışkanın kaynama noktası oda sıcaklığından çok yüksek olmalıdır.",
@@ -430,7 +430,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Температура кипения хладагента должна быть намного выше комнатной температуры.",
         "ar": "يجب أن تكون درجة غليان مائع التبريد أعلى بكثير من درجة حرارة الغرفة.",
         "zh": "制冷剂的沸点必须远高于室温。",
-        "ku": "Divê xala kelandinê ya herikbara sarker ji germahiya odeyê pir bilindtir be."
+        "ku": "Divê xala kelînê ya herikbara sarkirinê ji germahiya odeyê pir bilindtir be."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak soğutucunun çalışma ilkesini ters kuruyor. Soğutucu akışkan, soğutulan bölmeden ısı alarak düşük sıcaklıkta buharlaşmalıdır; kaynama noktası oda sıcaklığından yüksek olsaydı orada buharlaşamaz ve ısı çekemezdi.",
@@ -440,7 +440,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка переворачивает принцип работы холодильника. Хладагент должен испаряться при низкой температуре, отбирая теплоту у охлаждаемой камеры; если бы его температура кипения была выше комнатной, он не смог бы там испаряться и поглощать теплоту.",
         "ar": "يعكس الفخ مبدأ عمل المبرّد. يجب أن يتبخر سائل التبريد عند درجة حرارة منخفضة آخذًا الحرارة من الحجرة المبرَّدة؛ ولو كانت درجة غليانه أعلى من درجة حرارة الغرفة لما تبخر هناك ولما امتص الحرارة.",
         "zh": "陷阱把制冷剂的工作原理说反了。制冷剂必须在低温下从冷藏室吸热而蒸发；如果它的沸点高于室温，就无法在那里蒸发吸热。",
-        "ku": "Xefik prensîba xebata sarker berevajî dike. Akışkana sarker divê di germahiya nizm de germê ji beşa sarkirî bigire û bibe buhar; heke xala wê ya kelandinê ji germahiya odeyê bilindtir bûya, li wir nedibû buhar û germ nedikişand."
+        "ku": "Xefik prensîba xebata sarincê berevajî dike. Divê herikbara sarkirinê ji beşa ku tê sarkirin germê bigire û di germahiya nizm de bibe buhar; heke xala wê ya kelînê ji germahiya odeyê bilindtir bûya, li wir nedibû buhar û germ nedikişand."
       }
     },
     {
@@ -453,7 +453,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При одинаковой температуре газ CH4 (MA=16) диффундирует в sqrt(64/16) = 2 раза быстрее, чем газ SO2 (MA=64).",
         "ar": "عند درجة الحرارة نفسها تبلغ سرعة انتشار غاز CH4 (MA=16) مثلَي سرعة انتشار غاز SO2 (MA=64)، لأن sqrt(64/16) = 2.",
         "zh": "相同温度下，CH4(M = 16 g/mol)的扩散速率是 SO2(M = 64 g/mol)的 sqrt(64/16) = 2 倍。",
-        "ku": "Di heman germahiyê de gaza CH4 (MA=16) sqrt(64/16) = 2 qat ji gaza SO2 (MA=64) zûtir belav dibe."
+        "ku": "Di heman germahiyê de gaza CH4 (MA=16) sqrt(64/16) = 2 car ji gaza SO2 (MA=64) zûtir difûzyon dibe."
       },
       "trap": {
         "tr": "Aynı sıcaklıkta CH4 gazı SO2 gazından 4 kat daha hızlı difüzlenir.",
@@ -463,7 +463,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При одинаковой температуре газ CH4 диффундирует в 4 раза быстрее, чем газ SO2.",
         "ar": "عند درجة الحرارة نفسها تبلغ سرعة انتشار غاز CH4 4 أمثال سرعة انتشار غاز SO2.",
         "zh": "相同温度下，CH4 气体的扩散速率是 SO2 气体的4倍。",
-        "ku": "Di heman germahiyê de gaza CH4 4 qat ji gaza SO2 zûtir belav dibe."
+        "ku": "Di heman germahiyê de gaza CH4 4 car ji gaza SO2 zûtir difûzyon dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak karekök almayı unutuyor ve mol kütleleri oranını (64/16 = 4) doğrudan hız oranı sanıyor. Hız oranı mol kütleleri oranının kareköküdür: sqrt(4) = 2.",
@@ -473,7 +473,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка забывает извлечь корень и принимает отношение молярных масс (64/16 = 4) за отношение скоростей. Отношение скоростей равно квадратному корню из отношения молярных масс: sqrt(4) = 2.",
         "ar": "ينسى الفخ أخذ الجذر التربيعي ويعدّ نسبة الكتل المولية (64/16 = 4) نسبةً للسرعات. نسبة السرعات هي الجذر التربيعي لنسبة الكتل المولية: sqrt(4) = 2.",
         "zh": "陷阱忘了开平方，把摩尔质量之比(64/16 = 4)直接当作速率之比。速率之比是摩尔质量之比的平方根：sqrt(4) = 2。",
-        "ku": "Xefik koka çargoşe ji bîr dike û rêjeya girseyên molar (64/16 = 4) rasterast wekî rêjeya lezê digire. Rêjeya lezê koka çargoşe ya wê rêjeyê ye: sqrt(4) = 2."
+        "ku": "Xefik koka çargoşe ji bîr dike û rêjeya girseyên molî (64/16 = 4) rasterast wekî rêjeya lezê digire. Rêjeya lezê koka çargoşe ya rêjeya girseyên molî ye: sqrt(4) = 2."
       }
     },
     {
@@ -486,7 +486,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Эффузия — истечение частиц газа через маленькое отверстие в пустоту (вакуум).",
         "ar": "التدفق هو ظاهرة هروب جسيمات الغاز عبر ثقب صغير إلى الفراغ.",
         "zh": "泻流是气体粒子通过小孔逸入真空的现象。",
-        "ku": "Efûzyon diyardeya reva molekulên gazê ji qulikeke biçûk ber bi valahiyê (vakûmê) ye."
+        "ku": "Efûzyon derketina perçeyên gazê ye ji qulikeke piçûk ber bi valahiyê (vakûmê)."
       },
       "trap": {
         "tr": "Efüzyon iki gazın birbiri içinde karışmasıdır.",
@@ -496,7 +496,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Эффузия — взаимное смешивание двух газов.",
         "ar": "التدفق هو اختلاط غازين أحدهما بالآخر.",
         "zh": "泻流是两种气体相互混合的现象。",
-        "ku": "Efûzyon tevlihevbûna du gazan di nav hev de ye."
+        "ku": "Efûzyon tevlihevbûna du gazan e di nav hev de."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak efüzyonu difüzyonla karıştırıyor. İki gazın birbiri içinde yayılarak karışması difüzyondur; efüzyon ise gaz taneciklerinin küçük bir delikten boşluğa kaçmasıdır.",
@@ -506,7 +506,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка путает эффузию с диффузией. Взаимное проникновение и смешивание двух газов — это диффузия; эффузия — выход частиц газа через маленькое отверстие в пустое пространство.",
         "ar": "يخلط الفخ بين التدفق والانتشار. انتشار غازين أحدهما في الآخر وامتزاجهما هو الانتشار؛ أما التدفق فهو تسرّب جسيمات الغاز عبر ثقب صغير إلى فراغ.",
         "zh": "陷阱把泻流和扩散混淆了。两种气体相互扩散混合属于扩散；泻流是气体粒子通过小孔逸入真空的过程。",
-        "ku": "Xefik efûzyonê bi belavbûnê (difûzyonê) re tevlihev dike. Belavbûn û tevlihevbûna du gazan di nav hev de difûzyon e; efûzyon reva perçeyên gazê ji qulikeke biçûk ber bi valahiyê ye."
+        "ku": "Xefik efûzyonê bi difûzyonê re tevlihev dike. Belavbûn û tevlihevbûna du gazan di nav hev de difûzyon e; efûzyon derketina perçeyên gazê ye ji qulikeke piçûk ber bi valahiyê."
       }
     },
     {
@@ -519,7 +519,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Реальные газы можно сжижить достаточным охлаждением и сжатием; в модели идеального газа притяжения между частицами нет, поэтому идеальный газ не сжижается ни при каких условиях.",
         "ar": "يمكن تسييل الغازات الحقيقية بالتبريد والضغط الكافيين؛ أما في نموذج الغاز المثالي فلا يوجد تجاذب بين الجسيمات، لذا لا يتسيّل الغاز المثالي تحت أي ظرف.",
         "zh": "真实气体经充分冷却和压缩可以液化；理想气体模型中粒子间没有引力，所以理想气体在任何条件下都不会液化。",
-        "ku": "Gazên rastîn bi sarkirin û pêçandina têra xwe dikarin werin şilkirin; di modela gaza îdeal de di navbera perçeyan de kişandin tune, ji ber vê yekê gaza îdeal di tu şertî de şil nabe."
+        "ku": "Gazên rastîn bi têra xwe sarkirin û tepisandinê dikarin werin şilekirin; di modela gaza îdeal de di navbera perçeyan de kişandin tune, ji ber vê yekê gaza îdeal di tu şertî de şile nabe."
       },
       "trap": {
         "tr": "İdeal gaz yeterince soğutulup sıkıştırılırsa sıvılaştırılabilir.",
@@ -529,7 +529,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Идеальный газ можно сжижить, если достаточно охладить и сжать его.",
         "ar": "يمكن تسييل الغاز المثالي إذا بُرّد وضُغط بما يكفي.",
         "zh": "理想气体只要充分冷却和压缩就能液化。",
-        "ku": "Gaza îdeal heke têra xwe were sarkirin û pêçandin dikare were şilkirin."
+        "ku": "Gaza îdeal heke têra xwe were sarkirin û tepisandin, dikare were şilekirin."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, ideal gazın da gerçek gaz gibi sıvılaşabileceğini sanıyor. Sıvılaşma tanecikler arası çekim kuvvetleri sayesinde gerçekleşir; ideal gaz modelinde çekim ve öz hacim olmadığından ideal gaz hiçbir koşulda sıvılaşmaz.",
@@ -539,7 +539,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка считает, что идеальный газ можно сжижить так же, как реальный. Сжижение происходит благодаря силам притяжения между частицами; в модели идеального газа нет ни притяжения, ни собственного объёма частиц, поэтому идеальный газ не сжижается ни при каких условиях.",
         "ar": "يفترض الفخ أن الغاز المثالي يمكن تسييله كالغاز الحقيقي. يحدث التسييل بفضل قوى التجاذب بين الجسيمات؛ وفي نموذج الغاز المثالي لا تجاذب ولا حجم ذاتي، لذا لا يتسيّل الغاز المثالي تحت أي ظرف.",
         "zh": "陷阱以为理想气体也能像真实气体一样液化。液化依靠粒子间的引力；理想气体模型中既没有引力也没有粒子自身体积，所以理想气体在任何条件下都不会液化。",
-        "ku": "Xefik dihesibîne ku gaza îdeal jî wek gaza rastîn şil dibe. Şilbûn bi saya hêzên kişandinê yên di navbera perçeyan de çêdibe; di modela gaza îdeal de kişandin û qebareya xwe tune ne, ji ber vê yekê gaza îdeal di tu şertî de şil nabe."
+        "ku": "Xefik dihesibîne ku gaza îdeal jî wek gaza rastîn şile dibe. Şilebûn bi saya hêzên kişandinê yên navbera perçeyan çêdibe; di modela gaza îdeal de ne kişandin heye ne jî qebareya perçeyan, ji ber vê yekê gaza îdeal di tu şertî de şile nabe."
       }
     },
     {
@@ -552,7 +552,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При высоком давлении объём газа становится малым, поэтому собственным объёмом частиц по сравнению с общим объёмом уже нельзя пренебречь.",
         "ar": "عند الضغط المرتفع يصغر حجم الغاز، فيصبح الحجم الذاتي للجسيمات غير قابل للإهمال مقارنةً بالحجم الكلي.",
         "zh": "高压下气体体积变小，粒子自身体积相对于总体积不再可以忽略。",
-        "ku": "Di zexta bilind de qebareya gazê biçûk dibe, ji ber vê yekê qebareya perçeyan a xwe li hember qebareya tevahî êdî nayê paşguhkirin."
+        "ku": "Di zexta bilind de qebareya gazê piçûk dibe, ji ber vê yekê qebareya xwerû ya perçeyan li hember qebareya giştî êdî nayê paşguhkirin."
       },
       "trap": {
         "tr": "Yüksek basınç altında gaz taneciklerinin hacmi tamamen yok olur.",
@@ -562,7 +562,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Под высоким давлением объём частиц газа полностью исчезает.",
         "ar": "تحت الضغط المرتفع يختفي حجم جسيمات الغاز تمامًا.",
         "zh": "在高压下，气体粒子的体积完全消失。",
-        "ku": "Di bin zexta bilind de, qebareya pariyên gazê bi tevahî winda dibe."
+        "ku": "Di bin zexta bilind de qebareya perçeyên gazê bi tevahî winda dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Tuzak, sıkıştırmanın tanecikleri de küçülttüğünü sanıyor. Basınç tanecikler arasındaki boşluğu azaltır, taneciklerin kendi hacmi değişmez; yüksek basınçta bu öz hacim toplam hacmin önemli bir kısmı hâline gelir.",
@@ -572,7 +572,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ловушка считает, что при сжатии уменьшаются сами частицы. Давление уменьшает лишь промежутки между частицами, а их собственный объём не меняется; при высоком давлении он становится заметной частью общего объёма.",
         "ar": "يفترض الفخ أن الضغط يصغّر الجسيمات نفسها. الضغط يقلل الفراغ بين الجسيمات فقط، أما حجمها الذاتي فلا يتغير؛ وعند الضغط المرتفع يصبح هذا الحجم الذاتي جزءًا مهمًا من الحجم الكلي.",
         "zh": "陷阱以为压缩会使粒子本身变小。压强只减小粒子之间的空隙，粒子自身体积不变；在高压下，这部分自身体积占总体积的比例变得显著。",
-        "ku": "Xefik dihesibîne ku pêçandin perçeyan bi xwe biçûk dike. Zext tenê valahiya navbera perçeyan kêm dike, qebareya wan a xwe naguhere; di zexta bilind de ev qebare dibe beşeke girîng a qebareya tevahî."
+        "ku": "Xefik dihesibîne ku tepisandin perçeyan bi xwe piçûk dike. Zext tenê valahiya navbera perçeyan kêm dike, qebareya xwerû ya perçeyan naguhere; di zexta bilind de ev qebare dibe beşeke girîng a qebareya giştî."
       }
     }
   ],
@@ -597,7 +597,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Реальный газ",
         "ar": "الغاز الحقيقي",
         "zh": "真实气体",
-        "ku": "Gaza Rastî"
+        "ku": "Gaza Rastîn"
       },
       "distinction": {
         "tr": "İdeal gazda tanecik hacmi sıfır ve çekim yok kabul edilir; gerçek gazda öz hacim ve çekim kuvveti vardır.",
@@ -607,7 +607,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Идеальный газ — модель, в которой объём частиц принимают равным нулю, а притяжения между частицами нет; реальный газ имеет собственный объём частиц, и между ними действуют силы притяжения.",
         "ar": "في الغاز المثالي يُفترض أن حجم الجسيمات صفر ولا يوجد تجاذب؛ أما في الغاز الحقيقي فللجسيمات حجم ذاتي وتوجد قوى تجاذب.",
         "zh": "理想气体假定粒子本身体积为零、粒子间无引力；而真实气体的粒子有自身体积，粒子间存在引力。",
-        "ku": "Di gaza îdeal de qebareya perçeyan sifir û kişandin tune tê qebûlkirin; di gaza rastîn de qebareya xwe û hêza kişandinê heye."
+        "ku": "Di gaza îdeal de tê qebûlkirin ku qebareya perçeyan sifir e û kişandin tune ye; di gaza rastîn de qebareya xwerû û hêza kişandinê hene."
       }
     },
     {
@@ -640,7 +640,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Пар находится ниже своей критической температуры, поэтому его можно сжижить одним лишь повышением давления; газ находится выше своей критической температуры, поэтому одним лишь повышением давления его сжижить нельзя.",
         "ar": "البخار يكون دون درجة حرارته الحرجة، ولذلك يمكن تسييله بزيادة الضغط وحدها؛ أما الغاز فيكون فوق درجة حرارته الحرجة، ولذلك لا يمكن تسييله بزيادة الضغط وحدها.",
         "zh": "蒸气处于其临界温度以下，因此仅靠加压就能液化；而气体处于其临界温度以上，因此仅靠加压不能液化。",
-        "ku": "Buhar li jêr germahiya xwe ya krîtîk e, ji ber vê yekê tenê bi zêdekirina zextê dikare were şilkirin; gaz li ser germahiya xwe ya krîtîk e, ji ber vê yekê tenê bi zêdekirina zextê nikare were şilkirin."
+        "ku": "Buhar di bin germahiya xwe ya krîtîk de ye, ji ber vê yekê tenê bi zêdekirina zextê dikare were şilekirin; gaz li ser germahiya xwe ya krîtîk e, ji ber vê yekê tenê bi zêdekirina zextê nayê şilekirin."
       }
     },
     {
@@ -653,7 +653,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Закон диффузии Грэма",
         "ar": "قانون جراهام للانتشار",
         "zh": "格雷厄姆扩散定律",
-        "ku": "Zagona Belavbûnê ya Graham"
+        "ku": "Zagona Difûzyonê ya Graham"
       },
       "conceptB": {
         "tr": "Dalton Kısmi Basınçlar Yasası",
@@ -663,7 +663,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Закон парциальных давлений Дальтона",
         "ar": "قانون دالتون للضغوط الجزئية",
         "zh": "道尔顿分压定律",
-        "ku": "Zagona Dalton ya Zextên Parçeyî"
+        "ku": "Zagona Zextên Qismî ya Dalton"
       },
       "distinction": {
         "tr": "Graham Difüzyon Yasası, gazların yayılma hızının mol kütlesinin kareköküyle ters orantılı olduğunu; Dalton Kısmi Basınçlar Yasası ise bir gazın kısmi basıncının mol kesriyle doğru orantılı olduğunu belirtir.",
@@ -673,7 +673,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Закон диффузии Грэма утверждает, что скорость распространения газов обратно пропорциональна квадратному корню из их молярной массы; закон парциальных давлений Дальтона утверждает, что парциальное давление газа прямо пропорционально его мольной доле.",
         "ar": "قانون جراهام للانتشار ينص على أن سرعة انتشار الغازات تتناسب عكسيًا مع الجذر التربيعي للكتلة المولية؛ أما قانون دالتون للضغوط الجزئية فينص على أن الضغط الجزئي للغاز يتناسب طرديًا مع كسره المولي.",
         "zh": "格雷厄姆扩散定律指出，气体的扩散速率与摩尔质量的平方根成反比；道尔顿分压定律指出，气体的分压与其物质的量分数成正比。",
-        "ku": "Zagona Belavbûnê ya Graham dibêje ku leza belavbûna gazan bi koka çargoşe ya girseya molar re berevajî têkildar e; Zagona Dalton ya Zextên Parçeyî dibêje ku zexta qismî ya gazekê bi parçeya wê ya molê re rasterast têkildar e."
+        "ku": "Zagona Difûzyonê ya Graham dibêje ku leza belavbûna gazan bi koka çargoşe ya girseya molî re berevajî rêjeyî ye; Zagona Zextên Qismî ya Dalton dibêje ku zexta qismî ya gazekê bi kerta wê ya molî re rasterast rêjeyî ye."
       }
     },
     {
@@ -686,7 +686,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Диффузия",
         "ar": "الانتشار",
         "zh": "扩散",
-        "ku": "Belavbûn (difûzyon)"
+        "ku": "Difûzyon"
       },
       "conceptB": {
         "tr": "Efüzyon",
@@ -706,7 +706,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Диффузия — распространение и смешивание частиц газа в среде другого газа; эффузия — вытекание частиц газа через маленькое отверстие в вакуум.",
         "ar": "الانتشار هو تفرّق جسيمات الغاز واختلاطها داخل غاز آخر؛ أما التدفق فهو خروج جسيمات الغاز عبر ثقب صغير إلى فراغ.",
         "zh": "扩散是气体粒子在另一种气体中散开并相互混合；而泻流是气体粒子通过小孔逸入真空。",
-        "ku": "Belavbûn belavbûn û tevlihevbûna perçeyên gazê di nav gazeke din de ye; efûzyon reva perçeyên gazê ji qulikeke biçûk ber bi valahiyê (vakûmê) ye."
+        "ku": "Difûzyon belavbûn û tevlihevbûna perçeyên gazê ye di nav gazeke din de; efûzyon derketina perçeyên gazê ye ji qulikeke piçûk ber bi valahiyê (vakûmê)."
       }
     },
     {
@@ -729,7 +729,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Критическая температура",
         "ar": "درجة الحرارة الحرجة",
         "zh": "临界温度",
-        "ku": "Germahiya krîtîk"
+        "ku": "Germahiya Krîtîk"
       },
       "distinction": {
         "tr": "Joule-Thomson olayı, sıkıştırılmış gerçek gazların çoğunun oda koşullarında dar bir delikten genleşirken soğumasıdır; kritik sıcaklık ise üzerinde bir gazın hiçbir basınç altında sıvılaştırılamadığı sıcaklıktır.",
@@ -739,7 +739,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Эффект Джоуля — Томсона — охлаждение большинства сжатых реальных газов при расширении через узкое отверстие в комнатных условиях; критическая температура — температура, выше которой газ нельзя сжижить ни при каком давлении.",
         "ar": "تأثير جول-طومسون هو تبريد معظم الغازات الحقيقية المضغوطة عند تمددها عبر فتحة ضيقة في ظروف الغرفة؛ أما درجة الحرارة الحرجة فدرجةُ الحرارة التي لا يمكن فوقها تسييل الغاز مهما كان الضغط.",
         "zh": "焦耳-汤姆孙效应是指室温下大多数被压缩的真实气体经狭窄小孔膨胀时降温；而临界温度是指高于该温度时气体在任何压强下都不能液化的温度。",
-        "ku": "Bandora Joule-Thomson sarbûna piraniya gazên rastîn ên pêçayî ye dema ku di şertên odeyê de ji qulikeke teng berfireh dibin; germahiya krîtîk ew germahî ye ku li ser wê gaz di bin tu zextê de nayê şilkirin."
+        "ku": "Bandora Joule-Thomson sarbûna piraniya gazên rastîn ên tepisandî ye dema ku di şertên odeyê de ji qulikeke teng berfireh dibin; germahiya krîtîk ew germahî ye ku li ser wê gaz di bin tu zextê de nayê şilekirin."
       }
     },
     {
@@ -752,7 +752,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Давление насыщенного водяного пара",
         "ar": "ضغط بخار الماء المشبع",
         "zh": "饱和水蒸气压",
-        "ku": "Zexta Buhara Avê ya Têrbûyî"
+        "ku": "Zexta Buhara Avê ya Têr"
       },
       "conceptB": {
         "tr": "Kuru Gaz Basıncı",
@@ -762,7 +762,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Давление сухого газа",
         "ar": "ضغط الغاز الجاف",
         "zh": "干燥气体的压强",
-        "ku": "Zexta Gaza Hişk"
+        "ku": "Zexta Gaza Ziwa"
       },
       "distinction": {
         "tr": "Doygun su buharı basıncı yalnızca sıcaklığa bağlıdır ve kap hacmiyle değişmez; kuru gaz basıncı ise sabit sıcaklıkta kap hacmi değiştikçe Boyle yasasına göre değişir.",
@@ -772,7 +772,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Давление насыщенного водяного пара зависит только от температуры и не меняется при изменении объёма сосуда; давление сухого газа при постоянной температуре меняется вместе с объёмом сосуда по закону Бойля — Мариотта.",
         "ar": "ضغط بخار الماء المشبع يعتمد على درجة الحرارة فقط ولا يتغير بتغير حجم الوعاء؛ أما ضغط الغاز الجاف فيتغير وفق قانون بويل عند تغير حجم الوعاء مع ثبات درجة الحرارة.",
         "zh": "饱和水蒸气压只取决于温度，不随容器体积变化；而干燥气体的压强在温度不变时随容器体积按波义耳定律变化。",
-        "ku": "Zexta buhara avê ya têrbûyî tenê bi germahiyê ve girêdayî ye û bi qebareya firaxê naguhere; zexta gaza hişk di germahiya sabît de dema qebareya firaxê diguhere li gorî zagona Boyle diguhere."
+        "ku": "Zexta buhara avê ya têr tenê bi germahiyê ve girêdayî ye û bi qebareya firaxê re naguhere; zexta gaza ziwa di germahiya sabît de, dema qebareya firaxê diguhere, li gorî zagona Boyle diguhere."
       }
     },
     {
@@ -795,7 +795,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Скорость диффузии",
         "ar": "سرعة الانتشار",
         "zh": "扩散速率",
-        "ku": "Leza belavbûnê"
+        "ku": "Leza Difûzyonê"
       },
       "distinction": {
         "tr": "Ortalama kinetik enerji yalnızca mutlak sıcaklığa bağlıdır; yayılma hızı ise hem mutlak sıcaklığa hem de mol kütlesine bağlıdır.",
@@ -805,7 +805,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Средняя кинетическая энергия зависит только от абсолютной температуры; скорость диффузии зависит и от абсолютной температуры, и от молярной массы.",
         "ar": "متوسط الطاقة الحركية يعتمد على درجة الحرارة المطلقة فقط؛ أما سرعة الانتشار فتعتمد على درجة الحرارة المطلقة والكتلة المولية معًا.",
         "zh": "平均动能只取决于热力学温度；扩散速率则同时取决于热力学温度和摩尔质量。",
-        "ku": "Enerjiya kînetîk a navîn tenê bi germahiya mutleq ve girêdayî ye; leza belavbûnê hem bi germahiya mutleq û hem jî bi girseya molar ve girêdayî ye."
+        "ku": "Enerjiya kînetîk a navîn tenê bi germahiya mutleq ve girêdayî ye; leza difûzyonê hem bi germahiya mutleq hem jî bi girseya molî ve girêdayî ye."
       }
     },
     {
@@ -818,7 +818,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Отклонение от идеального поведения",
         "ar": "الانحراف عن السلوك المثالي",
         "zh": "偏离理想气体行为",
-        "ku": "Dûrketina ji tevgera îdeal"
+        "ku": "Dûrketina ji Tevgera Îdeal"
       },
       "conceptB": {
         "tr": "Kritik Basınç",
@@ -838,7 +838,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Отклонение от идеального поведения — отличие свойств реального газа от модели идеального газа, вызванное собственным объёмом частиц и силами притяжения; оно растёт при высоком давлении и низкой температуре; критическое давление — наименьшее давление, необходимое для сжижения газа при его критической температуре.",
         "ar": "الانحراف عن السلوك المثالي هو ابتعاد الغاز الحقيقي عن نموذج الغاز المثالي بسبب الحجم الذاتي للجسيمات وقوى التجاذب، ويزداد عند الضغط المرتفع ودرجة الحرارة المنخفضة؛ أما الضغط الحرج فهو أقل ضغط لازم لتسييل الغاز عند درجة حرارته الحرجة.",
         "zh": "偏离理想气体行为是指真实气体由于粒子自身体积和分子间引力而与理想气体模型不符，高压、低温时偏离增大；而临界压强是在临界温度下使气体液化所需的最低压强。",
-        "ku": "Dûrketina ji tevgera îdeal ew e ku gaza rastîn ji ber qebareya perçeyan û hêzên kişandinê ji modela gaza îdeal dûr dikeve, û di zexta bilind û germahiya nizm de zêde dibe; zexta krîtîk zexta herî kêm e ku ji bo şilkirina gazekê di germahiya wê ya krîtîk de pêwîst e."
+        "ku": "Dûrketina ji tevgera îdeal ew e ku gaza rastîn ji ber qebareya perçeyan û hêzên kişandinê ji modela gaza îdeal dûr dikeve; ew di zexta bilind û germahiya nizm de zêde dibe. Zexta krîtîk zexta herî kêm e ku ji bo şilekirina gazekê di germahiya wê ya krîtîk de pêwîst e."
       }
     }
   ],
@@ -853,7 +853,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Порядок сравнения скоростей диффузии по закону Грэма",
         "ar": "المقارنة بقانون جراهام للانتشار",
         "zh": "用格雷厄姆定律比较扩散速率的步骤",
-        "ku": "Pêngavên Berhevdana Belavbûna Graham"
+        "ku": "Gavên Berhevdana Difûzyonê ya Graham"
       },
       "steps": [
         {
@@ -864,7 +864,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Определяют молярные массы газов и переводят температуры в кельвины",
           "ar": "تُحدَّد الكتل المولية للغازين وتُحوَّل درجات الحرارة إلى الكلفن",
           "zh": "确定两种气体的摩尔质量，并把温度换算成开尔文",
-          "ku": "Girseyên molar ên gazan tên diyarkirin û germahî tên guhertin bo kelvînê"
+          "ku": "Girseyên molî yên gazan tên diyarkirin û germahî bo kelvînê tên veguhertin"
         },
         {
           "tr": "Bu değerler v1/v2 = sqrt((T1*M2)/(T2*M1)) bağıntısında yerine yazılır",
@@ -874,7 +874,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Эти значения подставляют в формулу v1/v2 = sqrt((T1*M2)/(T2*M1))",
           "ar": "تُعوَّض هذه القيم في العلاقة v1/v2 = sqrt((T1*M2)/(T2*M1))",
           "zh": "把这些数值代入 v1/v2 = sqrt((T1*M2)/(T2*M1))",
-          "ku": "Ev nirx di v1/v2 = sqrt((T1*M2)/(T2*M1)) de tên bicihkirin"
+          "ku": "Ev nirx di hevkêşeya v1/v2 = sqrt((T1*M2)/(T2*M1)) de tên bicihkirin"
         },
         {
           "tr": "Hız oranı (v1/v2) hesaplanır",
@@ -894,7 +894,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "По отношению скоростей находят отношение путей (x1/x2 = v1/v2) или времён (t2/t1 = v1/v2)",
           "ar": "تُستنتج من نسبة السرعتين نسبة المسافتين (x1/x2 = v1/v2) أو نسبة الزمنين (t2/t1 = v1/v2)",
           "zh": "由速率之比求出路程之比(x1/x2 = v1/v2)或时间之比(t2/t1 = v1/v2)",
-          "ku": "Ji rêjeya lezan rêjeya rêyan (x1/x2 = v1/v2) an jî rêjeya deman (t2/t1 = v1/v2) tê dîtin"
+          "ku": "Ji rêjeya lezan derbasî rêjeya rêyan (x1/x2 = v1/v2) an rêjeya deman (t2/t1 = v1/v2) dibin"
         }
       ]
     },
@@ -908,7 +908,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Опыт Грэма по диффузии газов",
         "ar": "تجربة جراهام للانتشار",
         "zh": "格雷厄姆扩散实验",
-        "ku": "Ezmûna Belavbûna Graham"
+        "ku": "Ceribandina Difûzyonê ya Graham"
       },
       "steps": [
         {
@@ -919,7 +919,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Один из двух кусочков ваты смачивают концентрированным раствором HCl, другой — концентрированным раствором NH3",
           "ar": "تُبلَّل إحدى قطعتَي قطن بمحلول HCl المركز والأخرى بمحلول NH3 المركز",
           "zh": "取两团棉花，一团用浓盐酸浸湿，另一团用浓氨水浸湿",
-          "ku": "Ji du perçeyên pembû yek bi çareseriya HCl ya konsantrekirî, ya din bi çareseriya NH3 ya konsantrekirî tê şilkirin"
+          "ku": "Ji du perçeyên pembû yek bi çareseriya HCl ya tîr, ya din bi çareseriya NH3 ya tîr tê şilkirin"
         },
         {
           "tr": "Pamuklar yatay bir cam borunun iki ucuna aynı anda yerleştirilir",
@@ -949,7 +949,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "В месте встречи газов, ближе к концу с HCl, образуется белое кольцо NH4Cl",
           "ar": "عند موضع التقاء الغازين تتكون حلقة بيضاء من NH4Cl أقرب إلى طرف HCl",
           "zh": "两种气体在靠近 HCl 一端相遇，生成白色的 NH4Cl 环",
-          "ku": "Li cihê ku gaz digihîjin hev, nêzîktirî serê HCl, xelekeke spî ya NH4Cl çêdibe"
+          "ku": "Li cihê ku gaz digihîjin hev, nêzîkî serê HCl xelekeke spî ya NH4Cl çêdibe"
         }
       ]
     },
@@ -963,7 +963,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Собирание газа над водой",
         "ar": "جمع الغاز فوق الماء",
         "zh": "排水法收集气体",
-        "ku": "Komkirina Gazê li ser Avê"
+        "ku": "Berhevkirina Gazê li ser Avê"
       },
       "steps": [
         {
@@ -984,7 +984,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Газ, образующийся в реакции, по трубке направляют в цилиндр, где он собирается над водой",
           "ar": "يُمرَّر الغاز الناتج من التفاعل عبر أنبوب إلى الأسطوانة فيتجمع فوق الماء",
           "zh": "把反应生成的气体用导管通入量筒，气体聚集在水面上方",
-          "ku": "Gaza ku di reaksiyonê de çêdibe bi lûleyekê tê şandin nav silindirê û li ser avê tê berhevkirin"
+          "ku": "Gaza ku di reaksiyonê de çêdibe bi lûleyekê tê şandin nav silindirê û li ser avê berhev dibe"
         },
         {
           "tr": "Silindirdeki toplam basınç (Ptoplam) belirlenir",
@@ -1018,7 +1018,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Этапы охлаждения газа по Джоулю — Томсону",
         "ar": "التبريد بظاهرة جول-طومسون",
         "zh": "焦耳-汤姆孙效应的降温过程",
-        "ku": "Qonaxên sarbûna Joule-Thomson"
+        "ku": "Qonaxên Sarbûna Joule-Thomson"
       },
       "steps": [
         {
@@ -1029,7 +1029,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Реальный газ сжимают до высокого давления",
           "ar": "يُضغط غاز حقيقي إلى ضغط مرتفع",
           "zh": "把真实气体压缩至高压",
-          "ku": "Gazeke rastîn heta zexta bilind tê pêçandin"
+          "ku": "Gazeke rastîn di bin zexta bilind de tê tepisandin"
         },
         {
           "tr": "Sıkıştırılmış gaz dar bir delikten (kısma vanası) düşük basınçlı bölgeye genleştirilir",
@@ -1039,7 +1039,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Сжатый газ расширяется через узкое отверстие (дроссельный вентиль) в область низкого давления",
           "ar": "يتمدد الغاز المضغوط عبر فتحة ضيقة (صمام خانق) إلى منطقة منخفضة الضغط",
           "zh": "被压缩的气体经狭窄小孔（节流阀）膨胀进入低压区域",
-          "ku": "Gaza pêçayî ji qulikeke teng (valfa tengkirinê) ber bi herêma zexta nizm tê berfirehkirin"
+          "ku": "Gaza tepisandî ji qulikeke teng (valfa tengkirinê) ber bi herêmeke zext-nizm tê berfirehkirin"
         },
         {
           "tr": "Genleşen gaz, moleküller arası çekimi yenmek için kendi kinetik enerjisinden harcar",
@@ -1049,7 +1049,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Расширяющийся газ тратит часть своей кинетической энергии на преодоление межмолекулярного притяжения",
           "ar": "يستهلك الغاز المتمدد جزءًا من طاقته الحركية للتغلب على التجاذب بين الجزيئات",
           "zh": "膨胀的气体消耗自身部分动能来克服分子间引力",
-          "ku": "Gaza ku berfireh dibe ji bo derbaskirina kişandina navmolekulî beşek ji enerjiya xwe ya kînetîk xerc dike"
+          "ku": "Gaza berfirehbûyî ji bo derbaskirina kişandina navmolekulî beşek ji enerjiya xwe ya kînetîk xerc dike"
         },
         {
           "tr": "Tanecikler yavaşladığı için gazın sıcaklığı düşer (oda koşullarında çoğu gaz için)",
@@ -1075,7 +1075,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Газы CH4 (MA=16) и SO2 (MA=64) при одинаковой температуре одновременно выпускают с двух концов стеклянной трубки длиной 100 см. На каком расстоянии (в см) от конца с CH4 газы встретятся?",
         "ar": "عند درجة الحرارة نفسها أُطلق غازا CH4 (MA=16) وSO2 (MA=64) في اللحظة نفسها من طرفي أنبوب زجاجي طوله 100 cm. على بُعد كم cm من طرف CH4 يلتقي الغازان؟",
         "zh": "相同温度下，从 100 cm 长玻璃管的两端同时放入 CH4(M = 16 g/mol)和 SO2(M = 64 g/mol)气体。两种气体在距 CH4 一端多少厘米处相遇？",
-        "ku": "Gazên CH4 (MA=16) û SO2 (MA=64) ên di heman germahiyê de, di heman demê de ji her du serên lûleyeke camê ya 100 cm tên berdan. Gaz li çend cm dûrî serê CH4 digihîjin hev?"
+        "ku": "Gazên CH4 (MA=16) û SO2 (MA=64), di heman germahiyê de, di heman demê de ji her du serên lûleyeke camê ya 100 cm tên berdan. Li gorî vê, gaz li çend cm dûrî serê CH4 digihîjin hev?"
       },
       "options": [
         {
@@ -1138,7 +1138,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Пока CH4 проходит 2x, SO2 проходит x. 3x = 100 см → x = 33,3 см. Газы встречаются на расстоянии 2x = 66,7 см от конца с CH4. Ученик, считающий скорости равными, получит 50,0 см; указавший путь, пройденный SO2 (x), — 33,3 см.",
         "ar": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. بينما يقطع CH4 مسافة 2x يقطع SO2 مسافة x. 3x = 100 cm → x = 33.3 cm. يلتقي الغازان على بُعد 2x = 66.7 cm من طرف CH4. الطالب الذي يفترض تساوي السرعتين يحصل على 50.0 cm، ومن يكتب المسافة التي قطعها SO2 (x) يحصل على 33.3 cm.",
         "zh": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1。相同时间内 CH4 走 2x，SO2 走 x。3x = 100 cm → x = 33.3 cm。两者在距 CH4 端 2x = 66.7 cm 处相遇。认为两者速率相等的学生得到 50.0 cm；写出 SO2 所走路程(x)的学生得到 33.3 cm。",
-        "ku": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Dema CH4 rêya 2x digire, SO2 rêya x digire. 3x = 100 cm → x = 33,3 cm. Ew li 2x = 66,7 cm dûrî serê CH4 digihîjin hev. Xwendekarê ku lezan wekhev dihesibîne 50,0 cm dibîne; yê ku rêya SO2 girtiye (x) dinivîse 33,3 cm dibîne."
+        "ku": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Di heman demê de CH4 rêya 2x, SO2 rêya x dibire. 3x = 100 cm → x = 33,3 cm. Gaz li 2x = 66,7 cm dûrî serê CH4 digihîjin hev. Xwendekarê ku lezan wekhev dihesibîne 50,0 cm dibîne; yê ku rêya SO2 (x) dinivîse 33,3 cm dibîne."
       }
     },
     {
@@ -1151,7 +1151,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "В сосуде с поршнем находятся немного жидкой воды и газ He, собранный над водой. При постоянной температуре поршень вдвигают так, что объём газа уменьшается вдвое; жидкая вода в сосуде остаётся. Как изменятся парциальное давление He и давление пара воды?",
         "ar": "يحتوي وعاء ذو مكبس على كمية من الماء السائل وعلى غاز He مجمَّع فوق الماء. عند درجة حرارة ثابتة يُدفع المكبس حتى ينخفض حجم الغاز إلى النصف، ويبقى في الوعاء ماء سائل. كيف يتغير الضغط الجزئي لغاز He وضغط بخار الماء؟",
         "zh": "带活塞的容器中有少量液态水，水面上方是用排水法收集的 He。恒温下推动活塞使气体体积减小一半，容器中仍有液态水。He 的分压和水的蒸气压分别如何变化？",
-        "ku": "Di firaxeke bi piston de hinek ava şil û gaza He ya ku li ser avê hatiye berhevkirin heye. Di germahiya sabît de piston tê dehfdan heta ku qebareya gazê nîvî dibe, û di firaxê de hîn jî ava şil heye. Zexta qismî ya He û zexta buhara avê çawa diguherin?"
+        "ku": "Di firaxeke pistondar de hinek ava şile û gaza He ya li ser avê berhevkirî hene. Di germahiya sabît de piston tê pêldan heta ku qebareya gazê nîvî dibe, û di firaxê de hîn ava şile heye. Li gorî vê, zexta qismî ya He û zexta buhara avê çawa diguherin?"
       },
       "options": [
         {
@@ -1162,7 +1162,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Парциальное давление He увеличится в 2 раза, давление водяного пара не изменится",
           "ar": "يتضاعف الضغط الجزئي لـ He، ولا يتغير ضغط بخار الماء",
           "zh": "He 的分压变为原来的2倍，水的蒸气压不变",
-          "ku": "Zexta He du qat dibe, zexta buhara avê naguhere"
+          "ku": "Zexta qismî ya He du qat dibe, zexta buhara avê naguhere"
         },
         {
           "tr": "Her ikisi de 2 katına çıkar",
@@ -1192,7 +1192,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Парциальное давление He не изменится, давление водяного пара увеличится",
           "ar": "لا يتغير الضغط الجزئي لـ He، ويزداد ضغط بخار الماء",
           "zh": "He 的分压不变，水的蒸气压增大",
-          "ku": "Zexta He naguhere, zexta buhara avê zêde dibe"
+          "ku": "Zexta qismî ya He naguhere, zexta buhara avê zêde dibe"
         },
         {
           "tr": "He'nin kısmi basıncı 4 katına çıkar, suyun buhar basıncı azalır",
@@ -1202,7 +1202,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Парциальное давление He увеличится в 4 раза, давление водяного пара уменьшится",
           "ar": "يزداد الضغط الجزئي لـ He إلى 4 أمثاله، وينخفض ضغط بخار الماء",
           "zh": "He 的分压变为原来的4倍，水的蒸气压减小",
-          "ku": "Zexta He 4 qat dibe, zexta buhara avê kêm dibe"
+          "ku": "Zexta qismî ya He 4 qat dibe, zexta buhara avê kêm dibe"
         }
       ],
       "correctIndex": 0,
@@ -1214,7 +1214,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При постоянной температуре для He выполняется закон Бойля — Мариотта: при уменьшении объёма вдвое его парциальное давление увеличивается в 2 раза. Давление водяного пара, пока в сосуде есть жидкая вода, зависит только от температуры; при уменьшении объёма часть пара конденсируется, и давление пара остаётся прежним. Ученик, считающий, что оба давления увеличиваются в 2 раза, ошибочно применяет закон Бойля — Мариотта и к водяному пару.",
         "ar": "عند ثبات درجة الحرارة يخضع He لقانون بويل: عندما ينخفض الحجم إلى النصف يتضاعف ضغطه الجزئي. أما ضغط بخار الماء فيعتمد على درجة الحرارة فقط ما دام الماء السائل موجودًا؛ فعند نقصان الحجم يتكاثف جزء من بخار الماء ويبقى ضغط البخار كما هو. والطالب الذي يظن أن الضغطين يتضاعفان يطبق قانون بويل خطأً على بخار الماء أيضًا.",
         "zh": "恒温下 He 遵循波义耳定律：体积减半，其分压变为原来的2倍。只要容器中有液态水，水的蒸气压只取决于温度；体积减小时部分水蒸气凝结，蒸气压保持不变。认为两个压强都变为2倍的学生，是把波义耳定律也错误地用到了水蒸气上。",
-        "ku": "Di germahiya sabît de ji bo He zagona Boyle derbas dibe: dema qebare nîvî dibe, zexta wê ya qismî du qat dibe. Zexta buhara avê, heta ku di firaxê de ava şil hebe, tenê bi germahiyê ve girêdayî ye; dema qebare biçûk dibe beşek ji buhara avê şil dibe û zexta buharê wek xwe dimîne. Xwendekarê ku difikire her du zext du qat dibin, zagona Boyle bi şaşî li ser buhara avê jî bi kar tîne."
+        "ku": "Di germahiya sabît de zagona Boyle ji bo He derbasdar e: dema qebare nîvî dibe, zexta wê ya qismî du qat dibe. Zexta buhara avê, heta ku di firaxê de ava şile hebe, tenê bi germahiyê ve girêdayî ye; dema qebare piçûk dibe beşek ji buhara avê şile dibe û zexta buharê wek xwe dimîne. Xwendekarê ku difikire her du zext du qat dibin, zagona Boyle bi şaşî li buhara avê jî bi kar aniye."
       }
     },
     {
@@ -1227,7 +1227,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При одинаковых температуре и давлении равные объёмы газа He и газа X вытекают (эффундируют) через одно и то же маленькое отверстие за 10 с и 40 с соответственно. Чему равна молярная масса газа X (г/моль)? (He = 4 г/моль)",
         "ar": "عند درجة الحرارة والضغط نفسيهما، يتدفق حجمان متساويان من غاز He وغاز X عبر الثقب الصغير نفسه في 10 s و40 s على الترتيب. كم تبلغ الكتلة المولية للغاز X بوحدة g/mol؟ (He = 4 g/mol)",
         "zh": "在相同温度和压强下，等体积的 He 和气体 X 通过同一小孔泻流，分别需要 10 s 和 40 s。气体 X 的摩尔质量是多少 g/mol？(He = 4 g/mol)",
-        "ku": "Di heman germahî û zextê de, qebareyên wekhev ên gaza He û gaza X ji heman qulika biçûk bi rêzê di 10 s û 40 s de efûzyon dibin. Girseya molar a gaza X çend g/mol e? (He = 4 g/mol)"
+        "ku": "Di heman germahî û zextê de, qebareyên wekhev ên gaza He û gaza X ji heman qulika piçûk bi rêzê di 10 s û 40 s de bi efûzyonê derdikevin. Li gorî vê, girseya molî ya gaza X çend g/mol e? (He = 4 g/mol)"
       },
       "options": [
         {
@@ -1290,7 +1290,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Для равных объёмов время обратно пропорционально скорости: tX/tHe = vHe/vX = sqrt(MX/MHe). 40/10 = 4 = sqrt(MX/4) → MX/4 = 16 → MX = 64 г/моль. Ученик, забывший про корень и принявший отношение времён за отношение молярных масс, получит 4 × 4 = 16 г/моль.",
         "ar": "للحجوم المتساوية يتناسب الزمن عكسيًا مع السرعة: tX/tHe = vHe/vX = sqrt(MX/MHe). 40/10 = 4 = sqrt(MX/4) → MX/4 = 16 → MX = 64 g/mol. الطالب الذي ينسى الجذر التربيعي ويعدّ نسبة الزمنين نسبةً للكتل المولية يحصل على 4 × 4 = 16 g/mol.",
         "zh": "等体积时，时间与速率成反比：tX/tHe = vHe/vX = sqrt(MX/MHe)。40/10 = 4 = sqrt(MX/4) → MX/4 = 16 → MX = 64 g/mol。忘记开平方、把时间比直接当作摩尔质量比的学生会得到 4 × 4 = 16 g/mol。",
-        "ku": "Ji bo qebareyên wekhev dem bi lezê re berevajî têkildar e: tX/tHe = vHe/vX = sqrt(MX/MHe). 40/10 = 4 = sqrt(MX/4) → MX/4 = 16 → MX = 64 g/mol. Xwendekarê ku koka çargoşe ji bîr dike û rêjeya deman wekî rêjeya girseyên molar digire, 4 × 4 = 16 g/mol dibîne."
+        "ku": "Ji bo qebareyên wekhev dem bi lezê re berevajî rêjeyî ye: tX/tHe = vHe/vX = sqrt(MX/MHe). 40/10 = 4 = sqrt(MX/4) → MX/4 = 16 → MX = 64 g/mol. Xwendekarê ku koka çargoşe ji bîr dike û rêjeya deman rasterast wekî rêjeya girseyên molî digire, 4 × 4 = 16 g/mol dibîne."
       }
     },
     {
@@ -1303,7 +1303,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Три вещества с критическими температурами X: 132 °C, Y: 31 °C и Z: −119 °C находятся при 25 °C в газовой фазе. Какие из утверждений верны? I. При 25 °C X и Y называют паром, а Z — газом. II. Z можно сжижить при 25 °C только повышением давления. III. Y можно сжижить при 40 °C только повышением давления.",
         "ar": "ثلاث مواد درجات حرارتها الحرجة X: 132 °C وY: 31 °C وZ: −119 °C توجد في الطور الغازي عند 25 °C. أيّ العبارات الآتية صحيحة؟ I. عند 25 °C يُسمّى X وY بخارًا ويُسمّى Z غازًا. II. يمكن تسييل Z عند 25 °C بزيادة الضغط وحدها. III. يمكن تسييل Y عند 40 °C بزيادة الضغط وحدها.",
         "zh": "临界温度分别为 X 132 °C、Y 31 °C、Z −119 °C 的三种物质在 25 °C 时均处于气相。有下列说法：I. 25 °C 时 X 和 Y 称为蒸气，Z 称为气体。II. 25 °C 时仅靠增大压强就能使 Z 液化。III. 40 °C 时仅靠增大压强就能使 Y 液化。其中正确的是哪些？",
-        "ku": "Sê madeyên ku germahiyên wan ên krîtîk X: 132 °C, Y: 31 °C û Z: −119 °C ne, di 25 °C de di qonaxa gazê de ne. Kîjan ji van gotinan rast in? I. Di 25 °C de ji X û Y re buhar, ji Z re gaz tê gotin. II. Z di 25 °C de tenê bi zêdekirina zextê dikare were şilkirin. III. Y di 40 °C de tenê bi zêdekirina zextê dikare were şilkirin."
+        "ku": "Sê madeyên ku germahiyên wan ên krîtîk X: 132 °C, Y: 31 °C û Z: −119 °C ne, di 25 °C de di qonaxa gaz de ne. Li gorî vê; I. Di 25 °C de ji X û Y re buhar, ji Z re jî gaz tê gotin. II. Z di 25 °C de tenê bi zêdekirina zextê dikare were şilekirin. III. Y di 40 °C de tenê bi zêdekirina zextê dikare were şilekirin. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1366,7 +1366,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Ниже своей критической температуры вещество называют паром, выше — газом. Температура 25 °C ниже критических температур X (132 °C) и Y (31 °C) и выше критической температуры Z (−119 °C), поэтому I верно. Выше критической температуры вещество нельзя сжижить одним давлением: Z при 25 °C и Y при 40 °C (выше 31 °C) находятся выше своих критических температур, поэтому II и III неверны. Верно только I.",
         "ar": "تكون المادة بخارًا إذا كانت تحت درجة حرارتها الحرجة، وغازًا إذا كانت فوقها. 25 °C أقل من درجتي X (132 °C) وY (31 °C) الحرجتين وأعلى من درجة Z (−119 °C)، لذا I صحيحة. المادة فوق درجة حرارتها الحرجة لا تتسيّل بالضغط وحده: Z عند 25 °C وY عند 40 °C (أعلى من 31 °C) كلاهما فوق درجة الحرارة الحرجة، لذا II وIII خاطئتان. الصحيحة I فقط.",
         "zh": "物质低于其临界温度时称为蒸气，高于临界温度时称为气体。25 °C 低于 X(132 °C)和 Y(31 °C)的临界温度，高于 Z(−119 °C)的临界温度，所以 I 正确。高于临界温度的物质仅靠加压不能液化：25 °C 的 Z 和 40 °C(高于 31 °C)的 Y 都高于各自的临界温度，所以 II 和 III 错误。只有 I 正确。",
-        "ku": "Madeyek di bin germahiya xwe ya krîtîk de buhar e, li ser wê gaz e. 25 °C ji germahiyên krîtîk ên X (132 °C) û Y (31 °C) nizmtir û ji ya Z (−119 °C) bilindtir e; I rast e. Madeya li ser germahiya xwe ya krîtîk tenê bi zextê şil nabe: Z di 25 °C de û Y di 40 °C de (li ser 31 °C) li ser germahiya xwe ya krîtîk in, ji ber vê yekê II û III şaş in. Tenê I rast e."
+        "ku": "Madeyek di bin germahiya xwe ya krîtîk de buhar e, li ser wê gaz e. 25 °C ji germahiyên krîtîk ên X (132 °C) û Y (31 °C) nizmtir e û ji ya Z (−119 °C) bilindtir e; ji ber vê yekê I rast e. Madeya li ser germahiya xwe ya krîtîk tenê bi zextê nayê şilekirin: Z di 25 °C de û Y di 40 °C de (li ser 31 °C) li ser germahiya xwe ya krîtîk in, ji ber vê yekê II û III şaş in. Tenê I rast e."
       }
     },
     {
@@ -1379,7 +1379,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "В сосуде постоянного объёма находятся газы H2 и He равной массы. Общее давление в сосуде 1,2 атм. Чему равно парциальное давление He (атм)? (H = 1, He = 4 г/моль)",
         "ar": "يحتوي وعاء ثابت الحجم على كتلتين متساويتين من غازي H2 وHe. إذا كان الضغط الكلي في الوعاء 1.2 atm، فكم يبلغ الضغط الجزئي لغاز He بوحدة atm؟ (H = 1، He = 4 g/mol)",
         "zh": "一个恒容容器中装有质量相等的 H2 和 He 两种气体。若容器内总压强为 1.2 atm，He 的分压是多少 atm？(H = 1，He = 4 g/mol)",
-        "ku": "Di firaxeke bi qebareya sabît de girseyên wekhev ên gazên H2 û He hene. Heke zexta tevahî ya firaxê 1,2 atm be, zexta qismî ya He çend atm e? (H = 1, He = 4 g/mol)"
+        "ku": "Di firaxeke qebare-sabît de girseyên wekhev ên gazên H2 û He hene. Heke zexta giştî ya di firaxê de 1,2 atm be, zexta qismî ya gaza He çend atm e? (H = 1, He = 4 g/mol)"
       },
       "options": [
         {
@@ -1442,7 +1442,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Пусть масса каждого газа m: n(H2) = m/2, n(He) = m/4. Отношение количеств n(H2) : n(He) = 2 : 1, значит X(He) = 1/3. P(He) = 1/3 × 1,2 = 0,4 атм. Ученик, принявший равные массы за равные количества и поделивший общее давление пополам, получит 0,6 атм; перепутавший мольные доли получит 0,8 атм — парциальное давление H2.",
         "ar": "لتكن كتلة كل غاز m: n(H2) = m/2 وn(He) = m/4. النسبة المولية n(H2) : n(He) = 2 : 1، إذن X(He) = 1/3. P(He) = 1/3 × 1.2 = 0.4 atm. الطالب الذي يعدّ الكتل المتساوية مولات متساوية ويقسم الضغط الكلي على اثنين يحصل على 0.6 atm، ومن يعكس الكسور المولية يحصل على 0.8 atm وهو الضغط الجزئي لـ H2.",
         "zh": "设每种气体质量为 m：n(H2) = m/2，n(He) = m/4。物质的量之比 n(H2) : n(He) = 2 : 1，所以 X(He) = 1/3。P(He) = 1/3 × 1.2 = 0.4 atm。把等质量误当作等物质的量、把总压平分的学生得到 0.6 atm；把物质的量分数对调的学生得到 0.8 atm，那是 H2 的分压。",
-        "ku": "Bila girseya her gazekê m be: n(H2) = m/2, n(He) = m/4. Rêjeya molan n(H2) : n(He) = 2 : 1 e, ji ber vê yekê X(He) = 1/3. P(He) = 1/3 × 1,2 = 0,4 atm. Xwendekarê ku girseyên wekhev wekî molên wekhev dihesibîne û zexta tevahî dike du par, 0,6 atm dibîne; yê ku kesrên molê berevajî dike 0,8 atm dibîne, ku zexta qismî ya H2 ye."
+        "ku": "Bila girseya her gazê m be: n(H2) = m/2, n(He) = m/4. Rêjeya molan n(H2) : n(He) = 2 : 1 e, ji ber vê yekê X(He) = 1/3. P(He) = 1/3 × 1,2 = 0,4 atm. Xwendekarê ku girseyên wekhev wekî molên wekhev dihesibîne û zexta giştî dike du par, 0,6 atm dibîne; yê ku kertên molî berevajî li hev dike 0,8 atm dibîne, ku zexta qismî ya H2 ye."
       }
     },
     {
@@ -1455,7 +1455,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Газы He и SO2 находятся при одинаковой температуре. Какие утверждения верны? I. Средние кинетические энергии их частиц равны. II. Средняя скорость частиц He в 4 раза больше, чем молекул SO2. III. При увеличении абсолютной температуры в 2 раза средняя кинетическая энергия обоих газов увеличивается в 2 раза. (He = 4, SO2 = 64 г/моль)",
         "ar": "غازا He وSO2 عند درجة الحرارة نفسها. أيّ العبارات الآتية صحيحة؟ I. متوسطا الطاقة الحركية لجسيماتهما متساويان. II. متوسط سرعة جسيمات He يساوي 4 أمثال متوسط سرعة جزيئات SO2. III. إذا ضوعفت درجة الحرارة المطلقة يتضاعف متوسط الطاقة الحركية لكلا الغازين. (He = 4، SO2 = 64 g/mol)",
         "zh": "He 和 SO2 两种气体处于相同温度。有下列说法：I. 两者粒子的平均动能相等。II. He 粒子的平均速率是 SO2 分子的4倍。III. 若热力学温度变为原来的2倍，两种气体的平均动能都变为原来的2倍。其中正确的是哪些？(He = 4，SO2 = 64 g/mol)",
-        "ku": "Gazên He û SO2 di heman germahiyê de ne. Kîjan ji van gotinan rast in? I. Enerjiyên kînetîk ên navîn ên perçeyên wan wekhev in. II. Leza navîn a perçeyên He 4 qatê ya molekulên SO2 ye. III. Heke germahiya mutleq 2 qat bibe, enerjiya kînetîk a navîn a her du gazan jî 2 qat dibe. (He = 4, SO2 = 64 g/mol)"
+        "ku": "Gazên He û SO2 di heman germahiyê de ne. Li ser van gazan; I. Enerjiyên kînetîk ên navîn ên perçeyên wan wekhev in. II. Leza navîn a perçeyên He 4 qatê leza navîn a molekulên SO2 ye. III. Heke germahiya mutleq 2 qat bibe, enerjiya kînetîk a navîn a her du gazan jî 2 qat dibe. Kîjan ji van gotinan rast in? (He = 4, SO2 = 64 g/mol)"
       },
       "options": [
         {
@@ -1518,7 +1518,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "I: Средняя кинетическая энергия зависит только от абсолютной температуры; температуры равны, значит, равны и энергии — верно. II: При равной кинетической энергии скорость обратно пропорциональна корню из молярной массы: v(He)/v(SO2) = sqrt(64/4) = 4 — верно. III: Средняя кинетическая энергия прямо пропорциональна абсолютной температуре; при её удвоении энергия удваивается — верно (скорость растёт лишь в sqrt(2) раз). Верны все три утверждения.",
         "ar": "I: يعتمد متوسط الطاقة الحركية على درجة الحرارة المطلقة فقط؛ ودرجتا الحرارة متساويتان فالطاقتان متساويتان — صحيحة. II: عند تساوي الطاقة الحركية تتناسب السرعة عكسيًا مع الجذر التربيعي للكتلة المولية: v(He)/v(SO2) = sqrt(64/4) = 4 — صحيحة. III: متوسط الطاقة الحركية يتناسب طرديًا مع درجة الحرارة المطلقة، فإذا تضاعفت تضاعف — صحيحة (أما السرعة فتزداد sqrt(2) مرة فقط). العبارات الثلاث صحيحة.",
         "zh": "I：平均动能只取决于热力学温度；温度相同，平均动能相等——正确。II：动能相等时，速率与摩尔质量的平方根成反比：v(He)/v(SO2) = sqrt(64/4) = 4——正确。III：平均动能与热力学温度成正比，热力学温度加倍，平均动能也加倍——正确(速率只变为 sqrt(2) 倍)。三个说法都正确。",
-        "ku": "I: Enerjiya kînetîk a navîn tenê bi germahiya mutleq ve girêdayî ye; germahî wekhev in, ji ber vê yekê enerjî jî wekhev in — rast. II: Dema enerjiya kînetîk wekhev be, lez bi koka çargoşe ya girseya molar re berevajî têkildar e: v(He)/v(SO2) = sqrt(64/4) = 4 — rast. III: Enerjiya kînetîk a navîn rasterast bi germahiya mutleq re têkildar e; dema germahî 2 qat dibe, enerjî jî 2 qat dibe — rast (lez tenê sqrt(2) qat dibe). Her sê gotin rast in."
+        "ku": "I: Enerjiya kînetîk a navîn tenê bi germahiya mutleq ve girêdayî ye; germahî wekhev in, ji ber vê yekê enerjî jî wekhev in — rast e. II: Dema enerjiya kînetîk wekhev be, lez bi koka çargoşe ya girseya molî re berevajî rêjeyî ye: v(He)/v(SO2) = sqrt(64/4) = 4 — rast e. III: Enerjiya kînetîk a navîn bi germahiya mutleq re rasterast rêjeyî ye; dema germahiya mutleq 2 qat dibe, enerjiya kînetîk jî 2 qat dibe — rast e (lez tenê sqrt(2) qat dibe). Her sê gotin rast in."
       }
     },
     {
@@ -1531,7 +1531,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Кусочек цинка внесли в избыток раствора HCl, и он полностью прореагировал по уравнению Zn(тв) + 2HCl(р-р) → ZnCl2(р-р) + H2(г). Образовавшийся H2 собрали над водой при 27 °C в сосуд объёмом 24,6 л; общее давление в сосуде 1,03 атм. Сколько граммов Zn вступило в реакцию? (Давление водяного пара при 27 °C 0,03 атм; R = 0,082 л·атм/(моль·K); Zn = 65 г/моль)",
         "ar": "أُضيفت قطعة من فلز Zn إلى كمية زائدة من محلول HCl فاستُهلكت كليًا وفق التفاعل Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g). جُمع غاز H2 الناتج فوق الماء عند 27 °C في وعاء حجمه 24.6 L، فكان الضغط الكلي في الوعاء 1.03 atm. كم غرامًا من Zn تفاعل؟ (ضغط بخار الماء عند 27 °C = 0.03 atm؛ R = 0.082 L·atm/(mol·K)؛ Zn = 65 g/mol)",
         "zh": "将一定量的 Zn 放入足量盐酸中，按 Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) 完全反应。生成的 H2 在 27 °C 下用排水法收集于 24.6 L 的容器中，测得容器内总压强为 1.03 atm。参加反应的 Zn 是多少克？(27 °C 时水的蒸气压为 0.03 atm；R = 0.082 L·atm/(mol·K)；Zn = 65 g/mol)",
-        "ku": "Perçeyek metala Zn tê avêtin nav çareseriya HCl ya zêde û li gorî Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) bi tevahî tê xerckirin. Gaza H2 ya çêbûyî di 27 °C de di firaxeke 24,6 L de li ser avê tê berhevkirin û zexta tevahî ya firaxê 1,03 atm tê pîvandin. Çend gram Zn reaksiyon kiriye? (Zexta buhara avê di 27 °C de 0,03 atm; R = 0,082 L·atm/(mol·K); Zn = 65 g/mol)"
+        "ku": "Perçeyek metala Zn tê avêtin nav çareseriyeke HCl a têra xwe û li gorî reaksiyona Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) bi tevahî tê xerckirin. Gaza H2 ya çêbûyî di 27 °C de di firaxeke 24,6 L de li ser avê tê berhevkirin û zexta giştî ya di firaxê de 1,03 atm tê pîvandin. Li gorî vê, çend gram Zn ketiye reaksiyonê? (Zexta buhara avê di 27 °C de 0,03 atm e; R = 0,082 L·atm/(mol·K); Zn = 65 g/mol)"
       },
       "options": [
         {
@@ -1594,7 +1594,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Давление сухого H2: P(H2) = 1,03 − 0,03 = 1,00 атм. n(H2) = PV/RT = (1,00 × 24,6)/(0,082 × 300) = 1,00 моль. По уравнению из 1 моль Zn образуется 1 моль H2, m(Zn) = 1,00 × 65 = 65,0 г. Ученик, не вычевший давление водяного пара, получит 1,03 моль и 67,0 г; вычевший его дважды — 0,97 моль и 63,1 г; взявший соотношение Zn : H2 как 2 : 1 или 1 : 2 — 130,0 г или 32,5 г.",
         "ar": "ضغط H2 الجاف: P(H2) = 1.03 − 0.03 = 1.00 atm. n(H2) = PV/RT = (1.00 × 24.6)/(0.082 × 300) = 1.00 mol. وفق المعادلة يعطي 1 mol من Zn مقدار 1 mol من H2، إذن m(Zn) = 1.00 × 65 = 65.0 g. الطالب الذي لا يطرح ضغط بخار الماء يحصل على 1.03 mol و67.0 g، ومن يطرحه مرتين يحصل على 0.97 mol و63.1 g، ومن يأخذ نسبة Zn : H2 على أنها 2 : 1 أو 1 : 2 يحصل على 130.0 g أو 32.5 g.",
         "zh": "干燥H2的压强：P(H2) = 1.03 − 0.03 = 1.00 atm。n(H2) = PV/RT = (1.00 × 24.6)/(0.082 × 300) = 1.00 mol。由方程式，1 mol Zn 生成 1 mol H2，m(Zn) = 1.00 × 65 = 65.0 g。没有减去水的蒸气压的学生得到 1.03 mol、67.0 g；减了两次的得到 0.97 mol、63.1 g；把 Zn : H2 当作 2 : 1 或 1 : 2 的得到 130.0 g 或 32.5 g。",
-        "ku": "Zexta H2 ya hişk: P(H2) = 1,03 − 0,03 = 1,00 atm. n(H2) = PV/RT = (1,00 × 24,6)/(0,082 × 300) = 1,00 mol. Li gorî hevkêşeyê 1 mol Zn 1 mol H2 dide, m(Zn) = 1,00 × 65 = 65,0 g. Xwendekarê ku zexta buhara avê dernaxe 1,03 mol û 67,0 g dibîne; yê ku du caran dertîne 0,97 mol û 63,1 g; yê ku rêjeya Zn : H2 wekî 2 : 1 an 1 : 2 digire 130,0 g an 32,5 g dibîne."
+        "ku": "Zexta H2 ya ziwa: P(H2) = 1,03 − 0,03 = 1,00 atm. n(H2) = PV/RT = (1,00 × 24,6)/(0,082 × 300) = 1,00 mol. Li gorî hevkêşeyê ji 1 mol Zn 1 mol H2 çêdibe, m(Zn) = 1,00 × 65 = 65,0 g. Xwendekarê ku zexta buhara avê jê dernaxe bi 1,03 mol 67,0 g dibîne; yê ku wê du caran jê derdixe bi 0,97 mol 63,1 g dibîne; yê ku rêjeya Zn : H2 wekî 2 : 1 an 1 : 2 digire 130,0 g an 32,5 g dibîne."
       }
     },
     {
@@ -1607,7 +1607,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При какой температуре (в °C) скорость диффузии SO2 равна скорости диффузии O2 при 27 °C? (O2 = 32, SO2 = 64 г/моль)",
         "ar": "عند أي درجة حرارة بوحدة °C تتساوى سرعة انتشار غاز SO2 مع سرعة انتشار غاز O2 عند 27 °C؟ (O2 = 32، SO2 = 64 g/mol)",
         "zh": "SO2 气体在多少 °C 时的扩散速率等于 27 °C 时 O2 气体的扩散速率？(O2 = 32，SO2 = 64 g/mol)",
-        "ku": "Leza belavbûna gaza SO2 di çend °C de bi leza belavbûna gaza O2 ya di 27 °C de wekhev dibe? (O2 = 32, SO2 = 64 g/mol)"
+        "ku": "Leza difûzyona gaza SO2 di çend °C de bi leza difûzyona gaza O2 ya di 27 °C de wekhev dibe? (O2 = 32, SO2 = 64 g/mol)"
       },
       "options": [
         {
@@ -1670,7 +1670,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Так как v ∝ sqrt(T/M), скорости равны при равных отношениях T/M. Для O2 T = 27 + 273 = 300 K. T(SO2)/64 = 300/32 → T(SO2) = 600 K = 600 − 273 = 327 °C. Ученик, умноживший 27 на 2 без перевода в кельвины, получит 54 °C; записавший значение в кельвинах как градусы Цельсия — 600 °C.",
         "ar": "بما أن v ∝ sqrt(T/M) فإن السرعتين تتساويان عندما تتساوى النسبتان T/M. لـ O2: T = 27 + 273 = 300 K. T(SO2)/64 = 300/32 → T(SO2) = 600 K = 600 − 273 = 327 °C. الطالب الذي يضاعف 27 دون التحويل إلى الكلفن يحصل على 54 °C، ومن يكتب قيمة الكلفن على أنها °C يحصل على 600 °C.",
         "zh": "因为 v ∝ sqrt(T/M)，两者速率相等时 T/M 必须相等。O2 的 T = 27 + 273 = 300 K。T(SO2)/64 = 300/32 → T(SO2) = 600 K = 600 − 273 = 327 °C。不换算成开尔文直接把 27 乘以 2 的学生得到 54 °C；把开尔文数值当作 °C 的学生得到 600 °C。",
-        "ku": "Ji ber ku v ∝ sqrt(T/M), lez wekhev dibin dema rêjeyên T/M wekhev bin. Ji bo O2 T = 27 + 273 = 300 K. T(SO2)/64 = 300/32 → T(SO2) = 600 K = 600 − 273 = 327 °C. Xwendekarê ku 27 bêyî guhertina kelvînê du qat dike 54 °C dibîne; yê ku nirxa kelvînê wekî °C dinivîse 600 °C dibîne."
+        "ku": "Ji ber ku v ∝ sqrt(T/M), ji bo ku lez wekhev bin divê rêjeyên T/M wekhev bin. Ji bo O2 T = 27 + 273 = 300 K. T(SO2)/64 = 300/32 → T(SO2) = 600 K = 600 − 273 = 327 °C. Xwendekarê ku germahiyê naguherîne kelvînê û 27 × 2 dike 54 °C dibîne; yê ku nirxa kelvînê wekî °C dinivîse 600 °C dibîne."
       }
     },
     {
@@ -1683,7 +1683,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Для бытового холодильника нужно выбрать хладагент. Какое из веществ, для которых указаны нормальная температура кипения, критическая температура и другие свойства, лучше всего подходит для этой цели?",
         "ar": "يُراد اختيار مائع تبريد لثلاجة منزلية. أيّ المواد الآتية، الموصوفة بدرجة غليانها العادية ودرجة حرارتها الحرجة وخصائص أخرى، هي الأنسب لهذا الغرض؟",
         "zh": "要为家用冰箱选择一种制冷剂。已知下列物质的正常沸点、临界温度及其他性质，其中最适合的是哪一种？",
-        "ku": "Ji bo sarinceke malê divê akışkaneke sarker were hilbijartin. Ji madeyên ku bi xala kelandinê ya normal, germahiya krîtîk û taybetiyên din hatine dayîn, kîjan ji bo vê armancê herî guncaw e?"
+        "ku": "Divê ji bo sarinceke malê herikbareke sarkirinê were hilbijartin. Ji madeyên ku xala kelînê ya normal, germahiya krîtîk û taybetmendiyên wan ên din hatine dayîn, kîjan ji bo vê armancê herî guncaw e?"
       },
       "options": [
         {
@@ -1694,7 +1694,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Т. кип. 100 °C, критическая температура 374 °C, нетоксичен, безвреден для озонового слоя",
           "ar": "درجة الغليان 100 °C، درجة الحرارة الحرجة 374 °C، غير سام، غير ضار بطبقة الأوزون",
           "zh": "沸点100 °C，临界温度374 °C，无毒，不破坏臭氧层",
-          "ku": "Xala kelandinê 100 °C, germahiya krîtîk 374 °C, nejehrî, ji bo qata ozonê bêzirar"
+          "ku": "Xala kelînê 100 °C, germahiya krîtîk 374 °C, nejehrî, ji qata ozonê re bêzirar"
         },
         {
           "tr": "Kaynama noktası −196 °C, kritik sıcaklığı −147 °C, zehirsiz, ozon tabakasına zararsız",
@@ -1704,7 +1704,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Т. кип. −196 °C, критическая температура −147 °C, нетоксичен, безвреден для озонового слоя",
           "ar": "درجة الغليان −196 °C، درجة الحرارة الحرجة −147 °C، غير سام، غير ضار بطبقة الأوزون",
           "zh": "沸点−196 °C，临界温度−147 °C，无毒，不破坏臭氧层",
-          "ku": "Xala kelandinê −196 °C, germahiya krîtîk −147 °C, nejehrî, ji bo qata ozonê bêzirar"
+          "ku": "Xala kelînê −196 °C, germahiya krîtîk −147 °C, nejehrî, ji qata ozonê re bêzirar"
         },
         {
           "tr": "Kaynama noktası −33 °C, kritik sıcaklığı 132 °C, zehirli, ozon tabakasına zararsız",
@@ -1714,7 +1714,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Т. кип. −33 °C, критическая температура 132 °C, токсичен, безвреден для озонового слоя",
           "ar": "درجة الغليان −33 °C، درجة الحرارة الحرجة 132 °C، سام، غير ضار بطبقة الأوزون",
           "zh": "沸点−33 °C，临界温度132 °C，有毒，不破坏臭氧层",
-          "ku": "Xala kelandinê −33 °C, germahiya krîtîk 132 °C, jehrî, ji bo qata ozonê bêzirar"
+          "ku": "Xala kelînê −33 °C, germahiya krîtîk 132 °C, jehrî, ji qata ozonê re bêzirar"
         },
         {
           "tr": "Kaynama noktası −26 °C, kritik sıcaklığı 101 °C, zehirsiz, ozon tabakasına zararsız",
@@ -1724,7 +1724,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Т. кип. −26 °C, критическая температура 101 °C, нетоксичен, безвреден для озонового слоя",
           "ar": "درجة الغليان −26 °C، درجة الحرارة الحرجة 101 °C، غير سام، غير ضار بطبقة الأوزون",
           "zh": "沸点−26 °C，临界温度101 °C，无毒，不破坏臭氧层",
-          "ku": "Xala kelandinê −26 °C, germahiya krîtîk 101 °C, nejehrî, ji bo qata ozonê bêzirar"
+          "ku": "Xala kelînê −26 °C, germahiya krîtîk 101 °C, nejehrî, ji qata ozonê re bêzirar"
         },
         {
           "tr": "Kaynama noktası −30 °C, kritik sıcaklığı 112 °C, zehirsiz, ozon tabakasına zararlı",
@@ -1734,7 +1734,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Т. кип. −30 °C, критическая температура 112 °C, нетоксичен, разрушает озоновый слой",
           "ar": "درجة الغليان −30 °C، درجة الحرارة الحرجة 112 °C، غير سام، ضار بطبقة الأوزون",
           "zh": "沸点−30 °C，临界温度112 °C，无毒，破坏臭氧层",
-          "ku": "Xala kelandinê −30 °C, germahiya krîtîk 112 °C, nejehrî, ji bo qata ozonê zirardar"
+          "ku": "Xala kelînê −30 °C, germahiya krîtîk 112 °C, nejehrî, ji qata ozonê re zirardar"
         }
       ],
       "correctIndex": 3,
@@ -1746,7 +1746,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Температура кипения хладагента должна быть низкой, чтобы он испарялся в охлаждаемой камере, поглощая теплоту, а критическая температура — выше комнатной, чтобы в компрессоре его можно было сжижать одним давлением; кроме того, он должен быть нетоксичным и безопасным для окружающей среды. Вещество с т. кип. 100 °C не испарится в холодильной камере. Вещество с критической температурой −147 °C нельзя сжижить давлением при комнатной температуре. Вещество с т. кип. −33 °C физически подходит, но токсично, поэтому дома его использовать нельзя; вещество с т. кип. −30 °C разрушает озоновый слой. Всем требованиям отвечает только нетоксичное, безопасное для озонового слоя вещество с т. кип. −26 °C и критической температурой 101 °C.",
         "ar": "يحتاج مائع التبريد إلى درجة غليان منخفضة ليتبخر في الحجرة المبرَّدة ممتصًا الحرارة، وإلى درجة حرارة حرجة أعلى من درجة حرارة الغرفة ليتمكن الضاغط من تسييله بالضغط وحده، ويجب أن يكون غير سام وصديقًا للبيئة. المادة التي تغلي عند 100 °C لا تتبخر في الحجرة المبرَّدة. والمادة ذات درجة الحرارة الحرجة −147 °C لا يمكن تسييلها بالضغط عند درجة حرارة الغرفة. والمادة التي تغلي عند −33 °C مناسبة فيزيائيًا لكنها سامة، أما التي تغلي عند −30 °C فتضر بطبقة الأوزون. وحدها المادة غير السامة وغير الضارة بالأوزون، ذات درجة الغليان −26 °C ودرجة الحرارة الحرجة 101 °C، تحقق الشروط كلها.",
         "zh": "制冷剂的沸点必须低，才能在冷藏室中吸热蒸发；临界温度必须高于室温，压缩机才能仅靠加压使其液化；此外还必须无毒、环保。沸点为100 °C的物质无法在冷藏室中蒸发。临界温度为−147 °C的物质在室温下无法加压液化。沸点−33 °C的物质物理性质合适但有毒，不适合家用；沸点−30 °C的物质会破坏臭氧层。只有沸点−26 °C、临界温度101 °C、无毒且不破坏臭氧层的物质满足全部要求。",
-        "ku": "Akışkana sarker divê xala kelandinê nizm be da ku di beşa sarkirî de germê bigire û bibe buhar, û germahiya wê ya krîtîk ji germahiya odeyê bilindtir be da ku kompresor wê tenê bi zextê şil bike; herwiha divê nejehrî û dostê jîngehê be. Madeya ku di 100 °C de dikele di beşa sar de nabe buhar. Madeya ku germahiya wê ya krîtîk −147 °C ye di germahiya odeyê de bi zextê şil nabe. Madeya ku di −33 °C de dikele ji aliyê fîzîkî ve guncaw e lê jehrî ye; ya ku di −30 °C de dikele zirarê dide qata ozonê. Tenê madeya nejehrî û ji bo ozonê bêzirar, ku xala kelandinê −26 °C û germahiya krîtîk 101 °C ye, hemû şertan pêk tîne."
+        "ku": "Divê xala kelînê ya herikbara sarkirinê nizm be da ku di beşa sarkirî de germê bigire û bibe buhar; divê germahiya wê ya krîtîk ji germahiya odeyê bilindtir be da ku di kompresorê de tenê bi zextê were şilekirin; herwiha divê nejehrî û dostê jîngehê be. Madeya ku di 100 °C de dikele di beşa sar de nabe buhar. Madeya ku germahiya wê ya krîtîk −147 °C ye di germahiya odeyê de bi zextê nayê şilekirin. Madeya ku di −33 °C de dikele ji aliyê fîzîkî ve guncaw be jî, ji ber ku jehrî ye di malê de nayê bikaranîn; ya ku di −30 °C de dikele zirarê dide qata ozonê. Madeya ku hemû şertan pêk tîne, ew a nejehrî û ji ozonê re bêzirar e ku xala wê ya kelînê −26 °C û germahiya wê ya krîtîk 101 °C ye."
       }
     },
     {
@@ -1759,7 +1759,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Газы He, CH4 и NH3 находятся при одинаковых температуре и давлении. В каком варианте они правильно расположены по близости их поведения к идеальному газу? (Газ, наиболее близкий к идеальному, записан слева.)",
         "ar": "رُتّبت الغازات He وCH4 وNH3، الموجودة عند درجة الحرارة والضغط نفسيهما، بحسب قربها من سلوك الغاز المثالي. في أيّ الخيارات الآتية جاء الترتيب صحيحًا؟ (الأقرب إلى المثالي مكتوب على اليسار.)",
         "zh": "He、CH4 和 NH3 三种气体处于相同的温度和压强下。按接近理想气体行为的程度排列，正确的是哪一项？（最接近理想气体的写在最左边。）",
-        "ku": "Gazên He, CH4 û NH3 di heman germahî û zextê de ne. Li gorî nêzîkbûna wan a ji tevgera gaza îdeal, kîjan rêzkirin rast e? (Ya herî nêzî îdeal li milê çepê hatiye nivîsandin.)"
+        "ku": "Gazên He, CH4 û NH3 di heman germahî û zextê de ne. Nêzîkbûna wan a tevgera gaza îdeal di kîjan vebijarkê de rast hatiye rêzkirin? (Ya herî nêzîkî îdeal li milê çepê hatiye nivîsandin.)"
       },
       "options": [
         {
@@ -1822,7 +1822,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При одинаковых условиях отклонение от идеальности определяется силой притяжения между частицами и их объёмом. He — одноатомный, маленький и неполярный, между его атомами действуют лишь очень слабые лондоновские (дисперсионные) силы, поэтому он ведёт себя наиболее близко к идеальному газу. CH4 тоже неполярен, но крупнее и содержит больше электронов, поэтому лондоновские силы у него сильнее, чем у He. NH3 полярен и образует водородные связи; притяжение между его молекулами самое сильное, и отклонение наибольшее. Молярные массы CH4 и NH3 (16 и 17) почти одинаковы, поэтому порядок определяют полярность и водородные связи, а не молярная масса.",
         "ar": "عند الظروف نفسها يحدّد الانحرافَ عن المثالية مقدارُ قوى التجاذب بين الجسيمات وحجمُها. He أحادي الذرة وصغير وغير قطبي، ولا توجد بين ذراته إلا قوى لندن الضعيفة جدًا، فهو الأقرب إلى السلوك المثالي. CH4 غير قطبي أيضًا لكنه أكبر وأغنى بالإلكترونات، فقوى لندن فيه أقوى منها في He. NH3 قطبي ويكوّن روابط هيدروجينية بين جزيئاته، فتجاذبه هو الأقوى وانحرافه هو الأكبر. الكتلتان الموليتان لـ CH4 وNH3 (16 و17) متقاربتان جدًا، لذا تحدد القطبية والروابط الهيدروجينية الترتيب لا الكتلة المولية.",
         "zh": "相同条件下，偏离理想行为的程度取决于粒子间引力的大小和粒子的体积。He是单原子、体积小、非极性的，原子间只有很弱的色散力（伦敦力），最接近理想气体。CH4也是非极性分子，但体积更大、电子更多，色散力比He强。NH3是极性分子，分子间能形成氢键，引力最强，偏离最大。CH4和NH3的摩尔质量(16和17)几乎相同，决定顺序的是极性和氢键，而不是摩尔质量。",
-        "ku": "Di heman şertan de, dûrketina ji îdealbûnê bi mezinahiya hêzên kişandinê yên navbera perçeyan û qebareya perçeyan tê diyarkirin. He yek-atomî, biçûk û ne-polar e; di navbera atomên wê de tenê hêzên London ên pir qels hene, ji ber vê yekê herî îdeal ew e. CH4 jî ne-polar e lê mezintir e û elektronên wê zêdetir in, ji ber vê yekê hêzên wê yên London ji yên He xurtir in. NH3 polar e û di navbera molekulên xwe de girêdana hîdrojenê çêdike; kişandina herî xurt a wê ye û herî zêde dûr dikeve. Girseyên molar ên CH4 û NH3 (16 û 17) hema hema wekhev in; rêzê ne girseya molar, polarbûn û girêdana hîdrojenê diyar dikin."
+        "ku": "Di heman şertan de, dûrketina ji îdealbûnê bi mezinahiya hêzên kişandinê yên navbera perçeyan û bi qebareya perçeyan ve girêdayî ye. He yekatomî, piçûk û nepolar e; di navbera atomên wê de tenê hêzên London ên pir qels hene, ji ber vê yekê ya herî îdeal ew e. CH4 jî nepolar e, lê mezintir e û elektronên wê zêdetir in, ji ber vê yekê hêzên wê yên London ji yên He xurtir in. NH3 polar e û di navbera molekulên xwe de girêdana hîdrojenê çêdike; kişandina herî xurt di wê de ye, loma herî zêde ew dûr dikeve. Girseyên molî yên CH4 û NH3 (16 û 17) hema hema wekhev in; rêzê ne girseya molî, lê polarbûn û girêdana hîdrojenê diyar dikin."
       }
     },
     {
@@ -1835,7 +1835,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Два одинаковых резиновых шарика надули до одного объёма при одинаковых температуре и давлении: один гелием, другой воздухом. Шарик с He сдувается быстрее. Какое объяснение этого наблюдения наиболее верное?",
         "ar": "نُفخ بالونان مطاطيان متماثلان إلى الحجم نفسه عند درجة الحرارة والضغط نفسيهما، أحدهما بغاز He والآخر بالهواء. لوحظ أن بالون He يفرغ في وقت أقصر. أيّ مما يلي هو التفسير الأصح لهذه الملاحظة؟",
         "zh": "在相同温度和压强下，把两个相同的橡胶气球充到相同体积，一个充He，另一个充空气。观察到充He的气球更快瘪掉。下列哪一项是对这一现象最正确的解释？",
-        "ku": "Du balonên lastîkî yên wekhev di heman germahî û zextê de heta heman qebareyê têne pifkirin, yek bi He û ya din bi hewayê. Tê dîtin ku balona He zûtir vala dibe. Ravekirina herî rast a vê dîtinê kîjan e?"
+        "ku": "Di heman germahî û zextê de du balonên lastîkî yên wekhev heta heman qebareyê tên pifkirin, yek bi gaza He û ya din bi hewayê. Tê dîtin ku balona bi He zûtir vala dibe. Ravekirina herî rast a vê dîtinê kîjan e?"
       },
       "options": [
         {
@@ -1856,7 +1856,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Атомы He реагируют с резиной шарика и расширяют её поры",
           "ar": "لأن ذرات He تتفاعل مع مطاط البالون فتوسّع مسامه",
           "zh": "因为He原子与气球橡胶发生反应，使其孔隙变大",
-          "ku": "Ji ber ku atomên He bi lastîka balonê re reaksiyon dikin û qulikan mezin dikin"
+          "ku": "Ji ber ku atomên He bi lastîka balonê re dikevin reaksiyonê û qulikan mezin dikin"
         },
         {
           "tr": "Balondaki He'nin basıncı, diğer balondaki havanın basıncından büyük olduğu için",
@@ -1866,7 +1866,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Давление He в шарике больше давления воздуха в другом шарике",
           "ar": "لأن ضغط He في بالونه أكبر من ضغط الهواء في البالون الآخر",
           "zh": "因为气球中He的压强大于另一个气球中空气的压强",
-          "ku": "Ji ber ku zexta He di balona wê de ji zexta hewayê di balona din de mezintir e"
+          "ku": "Ji ber ku zexta He di balona xwe de ji zexta hewayê ya di balona din de mezintir e"
         },
         {
           "tr": "He atomları arasındaki çekim kuvvetleri, hava molekülleri arasındakinden büyük olduğu için",
@@ -1886,7 +1886,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ru": "Молярная масса He мала, поэтому его атомы движутся быстрее и быстрее выходят (эффундируют) через поры резины",
           "ar": "لأن الكتلة المولية لـ He صغيرة فتتحرك ذراته أسرع وتتدفق عبر مسام المطاط بسرعة أكبر",
           "zh": "因为He的摩尔质量小，其原子运动更快，从橡胶的微孔中泻流得更快",
-          "ku": "Ji ber ku girseya molar a He biçûk e, atomên wê zûtir diçin û ji qulikên lastîkê zûtir efûzyon dibin"
+          "ku": "Ji ber ku girseya molî ya He piçûk e, atomên wê zûtir diçin û bi efûzyonê ji qulikên lastîkê zûtir derdikevin"
         }
       ],
       "correctIndex": 4,
@@ -1898,7 +1898,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При одинаковой температуре средние кинетические энергии атомов He и молекул воздуха равны, поэтому объяснение через разницу кинетической энергии неверно. При равной кинетической энергии скорость обратно пропорциональна корню из молярной массы: He (4 г/моль) движется примерно в sqrt(29/4) ≈ 2,7 раза быстрее воздуха (средняя молярная масса около 29 г/моль) и быстрее выходит через поры резины. Шарики надували при одинаковых условиях, поэтому давления равны; He — благородный газ, с резиной не реагирует, а притяжение между его атомами очень слабое.",
         "ar": "عند درجة الحرارة نفسها يتساوى متوسط الطاقة الحركية لذرات He وجزيئات الهواء، لذا فالتفسير القائم على فرق الطاقة الحركية خاطئ. عند تساوي الطاقة الحركية تتناسب السرعة عكسيًا مع الجذر التربيعي للكتلة المولية: He (4 g/mol) أسرع بنحو sqrt(29/4) ≈ 2.7 مرة من الهواء (متوسط كتلته المولية نحو 29 g/mol)، فيتدفق عبر مسام المطاط أسرع. نُفخ البالونان في الظروف نفسها فالضغطان متساويان، وHe غاز نبيل لا يتفاعل مع المطاط والتجاذب بين ذراته ضعيف جدًا.",
         "zh": "相同温度下He原子与空气分子的平均动能相等，所以用动能差来解释是错误的。动能相等时速率与摩尔质量的平方根成反比：He(4 g/mol)的速率约为空气(平均摩尔质量约29 g/mol)的 sqrt(29/4) ≈ 2.7 倍，因此从橡胶微孔中泻流得更快。两个气球在相同条件下充气，压强相等；He是稀有气体，不与橡胶反应，原子间引力也很弱。",
-        "ku": "Di heman germahiyê de enerjiya kînetîk a navîn a atomên He û ya molekulên hewayê wekhev e; ji ber vê yekê ravekirina li ser cudahiya enerjiya kînetîk şaş e. Dema enerjiya kînetîk wekhev be, lez bi koka çargoşe ya girseya molar re berevajî têkildar e: He (4 g/mol) nêzîkî sqrt(29/4) ≈ 2,7 qat ji hewayê (girseya molar a navîn nêzîkî 29 g/mol) zûtir e û ji qulikên lastîkê zûtir efûzyon dibe. Balon di heman şertan de hatine pifkirin, ji ber vê yekê zext wekhev in; He gazeke esil e, bi lastîkê re reaksiyon nake û kişandina navbera atomên wê pir qels e."
+        "ku": "Di heman germahiyê de enerjiya kînetîk a navîn a atomên He û ya molekulên hewayê wekhev in; ji ber vê yekê ravekirina ku li ser cudahiya enerjiya kînetîk e şaş e. Dema enerjiya kînetîk wekhev be, lez bi koka çargoşe ya girseya molî re berevajî rêjeyî ye: He (4 g/mol) ji hewayê (girseya molî ya navîn nêzîkî 29 g/mol) nêzîkî sqrt(29/4) ≈ 2,7 car zûtir e û bi efûzyonê ji qulikên lastîkê zûtir derdikeve. Balon di heman şertan de hatine pifkirin, ji ber vê yekê zext wekhev in; He gazeke esîl e, bi lastîkê re nakeve reaksiyonê û kişandina navbera atomên wê pir qels e."
       }
     },
     {
@@ -1911,7 +1911,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При постоянной температуре газ He (3 атм, сосуд объёмом 2 л) и газ Ne (2 атм, сосуд объёмом 3 л) смешивают, открыв кран между сосудами. Объёмом соединительной трубки можно пренебречь. Чему равно конечное общее давление (атм)?",
         "ar": "عند درجة حرارة ثابتة، يُمزج غاز He بضغط 3 atm في وعاء حجمه 2 L مع غاز Ne بضغط 2 atm في وعاء حجمه 3 L بفتح الصمام بينهما. إذا كان حجم أنبوب الوصل مهملًا، فكم يبلغ الضغط الكلي النهائي بوحدة atm؟",
         "zh": "恒温下，打开连接两个容器的阀门，使2 L容器中3 atm的He与3 L容器中2 atm的Ne混合。连接管体积忽略不计，最终总压强是多少atm？",
-        "ku": "Di germahiya sabît de, gaza He ya 3 atm di firaxeke 2 L de û gaza Ne ya 2 atm di firaxeke 3 L de bi vekirina musluka navbera wan tevlihev dibin. Heke qebareya boriya girêdanê neyê hesibandin, zexta tevahî ya dawî çend atm e?"
+        "ku": "Di germahiya sabît de, gaza He ya 3 atm a di firaxeke 2 L de û gaza Ne ya 2 atm a di firaxeke 3 L de, bi vekirina valfa navbera wan, tevlihev dibin. Heke qebareya lûleya girêdanê neyê hesibandin, zexta giştî ya dawî çend atm e?"
       },
       "options": [
         {
@@ -1974,7 +1974,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "После открытия крана каждый газ занимает весь объём 2 + 3 = 5 л, и при постоянной температуре P1V1 = P2V2: P(He) = 3 × 2/5 = 1,2 атм, P(Ne) = 2 × 3/5 = 1,2 атм. По закону Дальтона Pобщ = 1,2 + 1,2 = 2,4 атм. Ученик, усреднивший давления, получит 2,5 атм; просто сложивший их — 5,0 атм; указавший парциальное давление только одного газа — 1,2 атм.",
         "ar": "عند فتح الصمام ينتشر كل غاز في الحجم الكلي 2 + 3 = 5 L، وعند درجة حرارة ثابتة P1V1 = P2V2: P(He) = 3 × 2/5 = 1.2 atm وP(Ne) = 2 × 3/5 = 1.2 atm. وفق قانون دالتون Ptotal = 1.2 + 1.2 = 2.4 atm. الطالب الذي يأخذ متوسط الضغطين يحصل على 2.5 atm، ومن يجمعهما مباشرة يحصل على 5.0 atm، ومن يكتب الضغط الجزئي لغاز واحد فقط يحصل على 1.2 atm.",
         "zh": "打开阀门后，每种气体都扩散到整个 2 + 3 = 5 L 的体积中，恒温下 P1V1 = P2V2：P(He) = 3 × 2/5 = 1.2 atm，P(Ne) = 2 × 3/5 = 1.2 atm。由道尔顿分压定律 P总 = 1.2 + 1.2 = 2.4 atm。把两个压强取平均的学生得到 2.5 atm，直接相加的得到 5.0 atm，只写出一种气体分压的得到 1.2 atm。",
-        "ku": "Dema muslik vedibe, her gaz li tevahiya qebareya 2 + 3 = 5 L belav dibe û di germahiya sabît de P1V1 = P2V2: P(He) = 3 × 2/5 = 1,2 atm, P(Ne) = 2 × 3/5 = 1,2 atm. Li gorî zagona Dalton Ptevahî = 1,2 + 1,2 = 2,4 atm. Xwendekarê ku navîniya zextan digire 2,5 atm, yê ku wan rasterast berhev dike 5,0 atm, yê ku tenê zexta qismî ya gazekê dinivîse 1,2 atm dibîne."
+        "ku": "Dema valf vedibe, her gaz li tevahiya qebareya 2 + 3 = 5 L belav dibe û di germahiya sabît de P1V1 = P2V2 tê bikaranîn: P(He) = 3 × 2/5 = 1,2 atm, P(Ne) = 2 × 3/5 = 1,2 atm. Li gorî zagona Dalton Ptotal = 1,2 + 1,2 = 2,4 atm. Xwendekarê ku navîniya zextan digire 2,5 atm, yê ku zextan rasterast li hev zêde dike 5,0 atm, yê ku tenê zexta qismî ya gazekê dinivîse 1,2 atm dibîne."
       }
     },
     {
@@ -1987,7 +1987,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Даны газы с молярными массами и абсолютными температурами: I. H2 (2 г/моль), 200 K II. CH4 (16 г/моль), 400 K III. O2 (32 г/моль), 800 K. В каком варианте правильно указано соотношение их скоростей диффузии?",
         "ar": "فيما يلي الكتل المولية ودرجات الحرارة المطلقة لعدة غازات: I. H2 (2 g/mol)، 200 K II. CH4 (16 g/mol)، 400 K III. O2 (32 g/mol)، 800 K. أيّ الخيارات الآتية يعطي العلاقة الصحيحة بين سرعات انتشار هذه الغازات؟",
         "zh": "已知下列气体的摩尔质量和热力学温度：I. H2(2 g/mol)，200 K II. CH4(16 g/mol)，400 K III. O2(32 g/mol)，800 K。它们的扩散速率关系哪一项正确？",
-        "ku": "Gazên ku girseya molar û germahiya mutleq a wan hatine dayîn: I. H2 (2 g/mol), 200 K II. CH4 (16 g/mol), 400 K III. O2 (32 g/mol), 800 K. Têkiliya navbera lezên belavbûna wan di kîjan bersivê de rast hatiye dayîn?"
+        "ku": "Girseya molî û germahiya mutleq a van gazan hatine dayîn: I. H2 (2 g/mol), 200 K II. CH4 (16 g/mol), 400 K III. O2 (32 g/mol), 800 K. Têkiliya navbera lezên difûzyona wan di kîjan vebijarkê de rast hatiye dayîn?"
       },
       "options": [
         {
@@ -2050,7 +2050,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Скорость диффузии пропорциональна sqrt(T/M). I: sqrt(200/2) = sqrt(100) = 10; II: sqrt(400/16) = sqrt(25) = 5; III: sqrt(800/32) = sqrt(25) = 5. Следовательно, I > II = III. Ученик, учитывающий только молярные массы, но не температуру, придёт к I > II > III, а учитывающий только температуру — к III > II > I.",
         "ar": "سرعة الانتشار تتناسب مع sqrt(T/M). I: sqrt(200/2) = sqrt(100) = 10؛ II: sqrt(400/16) = sqrt(25) = 5؛ III: sqrt(800/32) = sqrt(25) = 5. إذن I > II = III. الطالب الذي ينظر إلى الكتل المولية فقط ويهمل درجة الحرارة يستنتج I > II > III، ومن ينظر إلى درجة الحرارة فقط يستنتج III > II > I.",
         "zh": "扩散速率与 sqrt(T/M) 成正比。I：sqrt(200/2) = sqrt(100) = 10；II：sqrt(400/16) = sqrt(25) = 5；III：sqrt(800/32) = sqrt(25) = 5。所以 I > II = III。只看摩尔质量而忽略温度的学生会得出 I > II > III；只看温度的学生会得出 III > II > I。",
-        "ku": "Leza belavbûnê bi sqrt(T/M) re têkildar e. I: sqrt(200/2) = sqrt(100) = 10; II: sqrt(400/16) = sqrt(25) = 5; III: sqrt(800/32) = sqrt(25) = 5. Ji ber vê yekê I > II = III. Xwendekarê ku tenê li girseyên molar dinêre û germahiyê nahesibîne digihîje I > II > III; yê ku tenê li germahiyê dinêre digihîje III > II > I."
+        "ku": "Leza difûzyonê bi sqrt(T/M) re rêjeyî ye. I: sqrt(200/2) = sqrt(100) = 10; II: sqrt(400/16) = sqrt(25) = 5; III: sqrt(800/32) = sqrt(25) = 5. Ji ber vê yekê I > II = III. Xwendekarê ku tenê li girseyên molî dinêre û germahiyê nahesibîne digihîje I > II > III; yê ku tenê li germahiyê dinêre digihîje III > II > I."
       }
     },
     {
@@ -2063,7 +2063,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "При каких из приведённых значений давления и температуры газ N2 сильнее всего отклоняется от поведения идеального газа? (Критическая температура N2 равна 126 K; во всех указанных условиях N2 находится в газообразном состоянии.)",
         "ar": "في أيّ من ظروف الضغط ودرجة الحرارة الآتية ينحرف غاز N2 أكثر ما يمكن عن سلوك الغاز المثالي؟ (درجة الحرارة الحرجة لـ N2 هي 126 K، وN2 غاز في جميع الظروف المعطاة.)",
         "zh": "N2在下列哪一组压强和温度条件下偏离理想气体行为最大？(N2的临界温度为126 K；在所给条件下N2均为气态。)",
-        "ku": "Gaza N2 di kîjan ji van şertên zext û germahiyê de herî zêde ji tevgera gaza îdeal dûr dikeve? (Germahiya krîtîk a N2 126 K ye; di hemû şertên dayî de N2 gaz e.)"
+        "ku": "Gaza N2 di kîjan ji van şertên zext û germahiyê de herî zêde ji tevgera gaza îdeal dûr dikeve? (Germahiya krîtîk a N2 126 K ye; di hemû şertên dayî de N2 di rewşa gaz de ye.)"
       },
       "options": [
         {
@@ -2126,7 +2126,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "С ростом давления частицы сближаются, и их собственный объём и притяжение становятся существеннее; с понижением температуры частицы замедляются, и влияние притяжения растёт. Поэтому условия 50 атм и 150 K, где сочетаются наибольшее давление и наименьшая температура, дают наибольшее отклонение. При 50 атм и 500 K давление то же, но высокая температура ослабляет влияние притяжения; при 1 атм и 150 K температура низкая, но частицы далеко друг от друга. Условия 0,5 атм и 500 K наиболее близки к идеальным.",
         "ar": "كلما زاد الضغط اقتربت الجسيمات بعضها من بعض فازدادت أهمية حجمها الذاتي والتجاذب بينها، وكلما انخفضت درجة الحرارة تباطأت الجسيمات وازداد أثر التجاذب. لذا يعطي الظرف 50 atm و150 K، الذي يجمع أعلى ضغط وأدنى درجة حرارة، أكبر انحراف. عند 50 atm و500 K الضغط نفسه لكن درجة الحرارة المرتفعة تُضعف أثر التجاذب، وعند 1 atm و150 K درجة الحرارة منخفضة لكن الجسيمات متباعدة. أما 0.5 atm و500 K فهو الأقرب إلى المثالي.",
         "zh": "压强增大时粒子彼此靠近，自身体积和引力的影响增大；温度降低时粒子变慢，引力的作用增强。因此同时具有最高压强和最低温度的50 atm、150 K偏离最大。50 atm、500 K时压强相同，但高温削弱了引力的影响；1 atm、150 K时温度低，但粒子相距很远。0.5 atm、500 K最接近理想状态。",
-        "ku": "Dema zext zêde dibe perçe nêzî hev dibin, qebareya wan a xwe û kişandin girîngtir dibin; dema germahî dadikeve perçe hêdî dibin û bandora kişandinê zêde dibe. Ji ber vê yekê şertê 50 atm û 150 K, ku zexta herî bilind û germahiya herî nizm bi hev re ne, dûrketina herî mezin dide. Di 50 atm û 500 K de zext heman e lê germahiya bilind bandora kişandinê qels dike; di 1 atm û 150 K de germahî nizm e lê perçe ji hev dûr in. 0,5 atm û 500 K şertê herî nêzî îdeal e."
+        "ku": "Dema zext zêde dibe perçe nêzî hev dibin, qebareya wan a xwerû û kişandin girîngtir dibin; dema germahî dadikeve perçe hêdî dibin û bandora kişandinê zêde dibe. Ji ber vê yekê şertê 50 atm û 150 K, ku zexta herî bilind û germahiya herî nizm bi hev re tê de ne, dûrketina herî mezin dide. Di 50 atm û 500 K de zext heman e, lê germahiya bilind bandora kişandinê kêm dike; di 1 atm û 150 K de germahî nizm e, lê perçe ji hev dûr in. 0,5 atm û 500 K jî şertê herî nêzîkî îdeal e."
       }
     },
     {
@@ -2139,7 +2139,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "В комнатных условиях реальный газ из баллона высокого давления охлаждается при расширении через узкий вентиль в область низкого давления. Какие утверждения об этом процессе верны? I. Расширяющийся газ тратит часть своей кинетической энергии на преодоление сил притяжения между частицами. II. Такое же охлаждение наблюдается и у идеального газа, так как между частицами идеального газа тоже есть притяжение. III. Этот принцип используется в работе холодильников и кондиционеров.",
         "ar": "في ظروف الغرفة يبرد غاز حقيقي موجود في أسطوانة عالية الضغط عند تمدده عبر صمام ضيق إلى منطقة منخفضة الضغط. أيّ العبارات الآتية حول هذه العملية صحيحة؟ I. يستهلك الغاز المتمدد جزءًا من طاقته الحركية للتغلب على قوى التجاذب بين الجسيمات. II. يُلاحظ التبريد نفسه في الغاز المثالي لأن بين جسيمات الغاز المثالي تجاذبًا أيضًا. III. تستفيد الثلاجات والمكيفات من هذا المبدأ.",
         "zh": "在室温条件下，高压钢瓶中的真实气体经狭窄阀门膨胀进入低压区域时会降温。关于这一过程，有下列说法：I. 膨胀的气体消耗自身部分动能来克服粒子间的引力。II. 理想气体也会出现同样的降温，因为理想气体粒子之间也存在引力。III. 冰箱和空调的工作利用了这一原理。其中正确的是哪些？",
-        "ku": "Di şertên odeyê de gazeke rastîn a di tûpeke zext-bilind de, dema ji valfeke teng ber bi herêma zexta nizm tê berfirehkirin, sar dibe. Kîjan ji van gotinan li ser vê bûyerê rast in? I. Gaza ku berfireh dibe ji bo derbaskirina hêzên kişandinê yên navbera perçeyan beşek ji enerjiya xwe ya kînetîk xerc dike. II. Heman sarbûn di gaza îdeal de jî tê dîtin, ji ber ku di navbera perçeyên gaza îdeal de jî kişandin heye. III. Sarinc û klîma ji vê prensîbê sûd werdigirin."
+        "ku": "Di şertên odeyê de gazeke rastîn a di tûpeke zext-bilind de, dema ji valfeke teng ber bi derdoreke zext-nizm tê berfirehkirin, sar dibe. Li ser vê bûyerê; I. Gaza berfirehbûyî ji bo derbaskirina hêzên kişandinê yên navbera perçeyan beşek ji enerjiya xwe ya kînetîk xerc dike. II. Heman sarbûn di gaza îdeal de jî tê dîtin, ji ber ku di navbera perçeyên gaza îdeal de jî kişandin heye. III. Sarinc û klîma ji vê prensîbê sûd werdigirin. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -2202,7 +2202,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "I верно: при расширении расстояние между частицами увеличивается, и энергия на преодоление притяжения берётся из кинетической энергии газа; частицы замедляются, и температура падает. II неверно: в модели идеального газа притяжения между частицами нет, поэтому у идеального газа такого охлаждения не ожидается; охлаждение по Джоулю — Томсону свойственно только реальным газам. III верно: в холодильниках и кондиционерах сжатый хладагент охлаждается при расширении через дроссельный вентиль.",
         "ar": "I صحيحة: عند التمدد تزداد المسافة بين الجسيمات، وتُستمد الطاقة اللازمة للتغلب على التجاذب من الطاقة الحركية للغاز، فتتباطأ الجسيمات وتنخفض درجة الحرارة. II خاطئة: لا يوجد تجاذب بين الجسيمات في نموذج الغاز المثالي، لذا لا يُتوقع هذا التبريد في الغاز المثالي؛ فتبريد جول-طومسون خاصية للغازات الحقيقية. III صحيحة: في الثلاجات والمكيفات يُبرَّد سائل التبريد المضغوط بتمديده عبر صمام خانق.",
         "zh": "I正确：膨胀时粒子间距离增大，克服引力所需的能量来自气体自身的动能，粒子变慢，温度降低。II错误：理想气体模型中粒子间没有引力，因此理想气体不会出现这种降温；焦耳-汤姆孙降温是真实气体的特征。III正确：冰箱和空调中，被压缩的制冷剂经节流阀膨胀而降温。",
-        "ku": "I rast e: di berfirehbûnê de dûrahiya navbera perçeyan zêde dibe û enerjiya ji bo derbaskirina kişandinê ji enerjiya kînetîk a gazê tê; perçe hêdî dibin û germahî dadikeve. II şaş e: di modela gaza îdeal de di navbera perçeyan de kişandin tune, ji ber vê yekê sarbûneke wisa di gaza îdeal de nayê hêvîkirin; sarbûna Joule-Thomson taybetiya gazên rastîn e. III rast e: di sarinc û klîmayan de akışkana sarker a pêçayî bi berfirehkirina ji valfeke tengkirinê tê sarkirin."
+        "ku": "I rast e: di berfirehbûnê de dûrahiya navbera perçeyan zêde dibe û enerjiya ji bo derbaskirina kişandinê ji enerjiya kînetîk a gazê tê; perçe hêdî dibin û germahî dadikeve. II şaş e: di modela gaza îdeal de di navbera perçeyan de kişandin tune, ji ber vê yekê sarbûneke wisa di gaza îdeal de nayê hêvîkirin; sarbûna Joule-Thomson taybetmendiya gazên rastîn e. III rast e: di sarinc û klîmayan de herikbara sarkirinê ya tepisandî bi berfirehkirina ji valfeke tengkirinê tê sarkirin."
       }
     },
     {
@@ -2215,7 +2215,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Какие утверждения об идеальных газах верны согласно молекулярно-кинетической теории? I. Частицы движутся непрерывно, хаотически и прямолинейно; их столкновения друг с другом и со стенками сосуда упругие. II. Собственный объём частиц пренебрежимо мал по сравнению с объёмом сосуда. III. Сила притяжения между частицами увеличивается с ростом температуры.",
         "ar": "وفق النظرية الحركية، أيّ العبارات الآتية حول الغازات المثالية صحيحة؟ I. تتحرك الجسيمات حركة مستمرة عشوائية في خطوط مستقيمة، وتصادماتها فيما بينها ومع جدران الوعاء مرنة. II. الحجم الذاتي للجسيمات صغير جدًا يمكن إهماله مقارنةً بحجم الوعاء. III. تزداد قوة التجاذب بين الجسيمات بارتفاع درجة الحرارة.",
         "zh": "根据分子动理论，关于理想气体有下列说法：I. 粒子做持续、无规则的直线运动，粒子之间以及粒子与器壁之间的碰撞是弹性碰撞。II. 粒子自身的体积与容器体积相比小到可以忽略。III. 粒子间的引力随温度升高而增大。其中正确的是哪些？",
-        "ku": "Li gorî teoriya kînetîk, kîjan ji van gotinan li ser gazên îdeal rast in? I. Perçe bi berdewamî, bêserûber û bi xêza rast diçin; lêketinên wan bi hev re û bi dîwarên firaxê re elastîk in. II. Qebareya perçeyan a xwe li hember qebareya firaxê ewqas biçûk e ku dikare neyê hesibandin. III. Hêza kişandinê ya navbera perçeyan bi zêdebûna germahiyê zêde dibe."
+        "ku": "Li gorî teoriya kînetîk, li ser gazên îdeal; I. Perçe bi berdewamî, bêserûber û li ser xêzên rast diçin; lihevketinên wan bi hev re û bi dîwarên firaxê re elastîk in. II. Qebareya xwerû ya perçeyan li hember qebareya firaxê ewqas piçûk e ku nayê hesibandin. III. Hêza kişandinê ya navbera perçeyan bi zêdebûna germahiyê re zêde dibe. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -2278,7 +2278,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "I и II — основные положения молекулярно-кинетической теории: частицы движутся непрерывно, хаотически и прямолинейно, при столкновениях суммарная кинетическая энергия сохраняется, а объём частиц пренебрежимо мал по сравнению с объёмом сосуда. III неверно: в модели идеального газа притяжение между частицами полностью отсутствует; повышение температуры не создаёт притяжения, а лишь увеличивает среднюю кинетическую энергию частиц.",
         "ar": "I وII من الفرضيات الأساسية للنظرية الحركية: تتحرك الجسيمات حركة مستمرة عشوائية في خطوط مستقيمة، وتُحفظ الطاقة الحركية الكلية في التصادمات، ويُهمل حجم الجسيمات مقارنةً بحجم الوعاء. III خاطئة: يفترض نموذج الغاز المثالي عدم وجود أي تجاذب بين الجسيمات؛ وارتفاع درجة الحرارة لا يُنشئ تجاذبًا بل يزيد متوسط الطاقة الحركية للجسيمات فقط.",
         "zh": "I和II是分子动理论的基本假设：粒子做持续、无规则的直线运动，碰撞中总动能守恒，粒子体积与容器体积相比可以忽略。III错误：理想气体模型假定粒子间完全没有引力；升高温度不会产生引力，只会增大粒子的平均动能。",
-        "ku": "I û II texmînên bingehîn ên teoriya kînetîk in: perçe bi berdewamî û bêserûber bi xêza rast diçin, di lêketinan de enerjiya kînetîk a tevahî diparêze û qebareya perçeyan li hember qebareya firaxê nayê hesibandin. III şaş e: modela gaza îdeal dihesibîne ku di navbera perçeyan de qet kişandin tune; zêdebûna germahiyê kişandinê çênake, tenê enerjiya kînetîk a navîn a perçeyan zêde dike."
+        "ku": "I û II texmînên bingehîn ên teoriya kînetîk in: perçe bi berdewamî û bêserûber li ser xêzên rast diçin, di lihevketinan de enerjiya kînetîk a giştî tê parastin û qebareya perçeyan li hember qebareya firaxê nayê hesibandin. III şaş e: di modela gaza îdeal de tê qebûlkirin ku di navbera perçeyan de qet kişandin tune; zêdebûna germahiyê kişandinê çênake, tenê enerjiya kînetîk a navîn a perçeyan zêde dike."
       }
     }
   ]

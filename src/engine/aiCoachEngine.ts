@@ -350,39 +350,39 @@ const COACH_STRINGS: Record<LanguageCode, CoachI18nStrings> = {
   },
   ku: {
     prereqWarning: (pct) =>
-      `Asta te ya Kîmyaya TYT li dora %${pct} ye. Li gorî pergala YKS, tê pêşniyarkirin ku beriya mijarên kûr ên AYT, TYT herî kêm bigihîje %60î.`,
+      `Bingeha te ya Kîmyaya TYT hîn li asta %${pct} e. Ji bo rêzbendiya YKS-ê, berî ku tu bi kûrahî derbasî mijarên AYT bibî, tê pêşniyarkirin ku tu yekîneyên TYT bigihînî sînorê %60.`,
     missionDailyQuestions: (target) => ({
       title: `Armanca Rojane: ${target} Pirs`,
-      desc: `Îro herî kêm ${target} pirsên kîmyayê çareser bike da ku bigihîjî armanca xwe.`,
+      desc: `Îro ji bankeya pirsan herî kêm ${target} pirsên kîmyayê bi serkeftî temam bike.`,
     }),
     missionUnitPractice: (unitTitle, target) => ({
-      title: `${unitTitle}: ${target} Pirs Çareser Bike`,
-      desc: `Ji bo xurtkirina zanînê ${target} pirsên vê yekeyê çareser bike.`,
+      title: `${unitTitle}: ${target} Pirsan Çareser Bike`,
+      desc: `Ji bo xurtkirina şêwazên pirsên ÖSYM-ê, ji vê yekîneyê ${target} pirsan çareser bike.`,
     }),
     missionFlashcards: (target) => ({
-      title: `${target} Qertên Bîrê Dubare Bike`,
-      desc: `Bi pergala Leitner 3D têgîn û formulên kîmyayê dubare bike.`,
+      title: `${target} Kartan Dubare Bike`,
+      desc: `Têgehên kîmyayê yên di qutiyên Leitner 3D de bi bîranîna çalak dubare bike.`,
     }),
     missionMistakes: (target) => ({
-      title: `${target} Çewtiyan Ji Deftera Çewtiyan Paqij Bike`,
-      desc: `Pirsên berê çewt çareserkirî cardin binirxîne da ku nêta xwe zêde bikî.`,
+      title: `${target} Pirsan ji Deftera Şaşiyan Paqij Bike`,
+      desc: `Pirsên ku te berê şaş çareser kirine dîsa analîz bike û neta xwe zêde bike.`,
     }),
-    recMistakesTitle: (unitTitle) => `Çewtiyên Yekeya ${unitTitle} Paqij Bike`,
+    recMistakesTitle: (unitTitle) => `Şaşiyên Yekîneya ${unitTitle} Paqij Bike`,
     recMistakesReason: (unitTitle, count) =>
-      `Di mijara ${unitTitle} de ${count} pirsên çewt hene. Şiroveyên pirsan baş binirxîne.`,
-    recSlidesTitle: (unitTitle) => `Slaytên Yekeya ${unitTitle} Binêre`,
+      `Di mijara ${unitTitle} de ${count} pirs di deftera şaşiyan de kom bûne. Xefikên têgehan lêkolîn bike û bi awayekî mayînde fêr bibe.`,
+    recSlidesTitle: (unitTitle) => `Kurteya Mijara ${unitTitle} Binêre`,
     recSlidesReason: (unitTitle) =>
-      `Te hîn kurteya wênebar a 9 slaytan a ji bo ${unitTitle} temam nekiriye.`,
-    recPracticeTitle: (unitTitle) => `Yekeya ${unitTitle} Xurt Bike`,
+      `Te kurteya dîtbarî ya 9 slaytî ya yekîneya ${unitTitle} hîn temam nekiriye. Reaksiyon û formulên girîng dubare bike.`,
+    recPracticeTitle: (unitTitle) => `Bankeya Pirsan a ${unitTitle} Xurt Bike`,
     recPracticeReason: (unitTitle) =>
-      `16 pirsên nû çareser bike da ku lez û serkeftina xwe bilind bikî.`,
-    actionSolveMistakes: 'Çewtiyan Çareser Bike',
+      `Hejmara pirsên ku te di vê yekîneyê de çareser kirine hîn kêm e. Testeke nû ya 16 pirsî çareser bike û lez û neta xwe xurt bike.`,
+    actionSolveMistakes: 'Şaşiyan Çareser Bike',
     actionReviewSlides: 'Slaytan Veke',
-    actionStartQuiz: 'Testê Dest Pê Bike',
-    actionStudyCards: 'Qertan Dubare Bike',
-    actionTakeTrial: 'Dest Bi Ezmûnê Bike',
+    actionStartQuiz: 'Testê Çareser Bike',
+    actionStudyCards: 'Kartan Dubare Bike',
+    actionTakeTrial: 'Dest bi Azmûnê Bike',
     spacedRepSummary: (cards, mistakes) =>
-      `Li gorî algorîtmaya dubarekirinê îro ${cards} qert û ${mistakes} pirsên çewt li benda çareseriyê ne.`,
+      `Li gorî algorîtmaya dubarekirina navberkirî, îro ${cards} kart û di deftera şaşiyan de ${mistakes} pirs li benda dubarekirinê ne.`,
   },
 };
 
