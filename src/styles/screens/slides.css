@@ -146,6 +146,8 @@
 .sl-trap__title { color: var(--bad); }
 .sl-truth__title { color: var(--ok); margin-block-start: 8px !important; }
 .sl-trap__text, .sl-truth__text { line-height: 1.5; color: var(--text); }
+/* Why the trap is false (whyTrapIsFalse), between the trap and the correct statement. */
+.sl-trap__why { margin: 0; line-height: 1.5; color: var(--muted); font-style: italic; overflow-wrap: anywhere; }
 
 .sl-tip {
   margin: 0;
@@ -371,6 +373,43 @@
 
 .chemical-diagram-svg { position: relative; inline-size: 100%; max-inline-size: 100%; block-size: auto; display: block; }
 .diagram-caption { margin: 8px 0 0; font-size: 0.8rem; line-height: 1.45; color: var(--muted); }
+
+/* Narrow stages: labels that cannot be drawn at a legible size inside the figure are numbered
+   there and spelled out here, on the same dark stage (so the label colours stay the same). */
+.diagram-legend {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 4px 12px 12px;
+  display: grid;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  color: #f2f6fb;
+  cursor: default;
+}
+.diagram-legend li { display: flex; align-items: baseline; gap: 8px; min-inline-size: 0; }
+.diagram-legend__n {
+  flex: none;
+  inline-size: 1.6em;
+  block-size: 1.6em;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #0b1220;
+}
+.diagram-legend__t { min-inline-size: 0; overflow-wrap: anywhere; }
+
+/* Phones: give the drawing the whole card width so its labels stay readable inline. */
+@media (max-width: 599px) {
+  .sl-diagram { padding: 6px; }
+  .sl-diagram .diagram-header { padding: 4px 6px 0; }
+  .sl-diagram .diagram-caption { padding: 0 6px 6px; }
+  .diagram-svg-wrapper { border-radius: 14px; }
+}
 
 .diagram-zoom-overlay { z-index: 9999; }
 

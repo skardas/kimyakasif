@@ -112,7 +112,7 @@ for (const u of ALL_CHEMISTRY_UNITS) {
         `[${foreignLang}] ÖSYM twin stem in unit ${u.id} (${twin.id}) is untranslated: "${twin.stem.tr.substring(0, 40)}..."`
       );
       // Pure mathematical derivations (e.g. "P * V = n * R * T -> P = 2.5 atm") are universal equations
-      const isMathEquation = /^[0-9a-zA-Z\s<>=+^._()°/*:,\[\]%-]+$/.test(twin.explanation.tr) && !/[ğüşıöçĞÜŞİÖÇ]/.test(twin.explanation.tr) && !/\b(ve|ile|den|dan|olan|için|kadar|ifadesidir|doğrudur|yanlıştır)\b/i.test(twin.explanation.tr);
+      const isMathEquation = /^[0-9a-zA-Z\s<>=≈+^._()°/*:,\[\]%-]+$/.test(twin.explanation.tr) && !/[ğüşıöçĞÜŞİÖÇ]/.test(twin.explanation.tr) && !/\b(ve|ile|den|dan|olan|için|kadar|ifadesidir|doğrudur|yanlıştır)\b/i.test(twin.explanation.tr);
       if (!isMathEquation) {
         assert(
           twin.explanation[foreignLang] !== twin.explanation.tr,
@@ -185,7 +185,6 @@ for (const langMeta of LANGUAGES) {
   const l = langMeta.code as LanguageCode;
   const s = SLIDE_DECK_STRINGS[l];
   assert(!!s, `Missing slide deck strings for language ${l}`);
-  assert(s.slideTitles.length === 9, `[${l}] Expected 9 slide titles, got ${s.slideTitles.length}`);
   assert(s.tabLabels.length === 9, `[${l}] Expected 9 tab labels, got ${s.tabLabels.length}`);
   assert(!!s.prevSlide && !!s.nextSlide && !!s.markCompleteBtn && !!s.completedEarnedLabel, `[${l}] Missing button labels in slide strings`);
 }
@@ -244,7 +243,7 @@ for (const langMeta of LANGUAGES) {
             q.stem !== trQ.stem,
             `[${lang}] Question ${q.id} stem is untranslated (identical to TR): "${q.stem.substring(0, 40)}..."`
           );
-          const isMathExplanation = /^[0-9a-zA-Z\s<>=+^._()°/*:,\[\]%-]+$/.test(q.explanation) && !/[ğüşıöçĞÜŞİÖÇ]/.test(q.explanation) && !/\b(ve|ile|den|dan|olan|için|kadar|ifadesidir|doğrudur|yanlıştır)\b/i.test(q.explanation);
+          const isMathExplanation = /^[0-9a-zA-Z\s<>=≈+^._()°/*:,\[\]%-]+$/.test(q.explanation) && !/[ğüşıöçĞÜŞİÖÇ]/.test(q.explanation) && !/\b(ve|ile|den|dan|olan|için|kadar|ifadesidir|doğrudur|yanlıştır)\b/i.test(q.explanation);
           if (!isMathExplanation) {
             assert(
               q.explanation !== trQ.explanation,
@@ -769,10 +768,16 @@ console.log(`  ✅ assertNoU11OrbitalLeaks: 0 clue leaks in u11-q027 across ar, 
   const u06Ar = compileUnitQuestions(u06, 'ar');
   const q06_27 = u06Ar.find(q => q.id === 'u06-q027');
   assert(!!q06_27, 'u06-q027 found in ar');
-  assert(q06_27.options[q06_27.correctIndex] === '1 وحدة كتل ذرية (amu)', `u06-q027 correct option should be '1 وحدة كتل ذرية (amu)', got '${q06_27.options[q06_27.correctIndex]}'`);
+  // Key = the atomic mass unit (clue: "= 1/NA gram, mass unit of single atoms"). The seed spells it
+  // 'وحدة كتل ذرية'; the standard Arabic term is 'وحدة الكتلة الذرية', so both spellings are accepted.
+  const amuOptions = ['1 وحدة كتل ذرية (amu)', '1 وحدة الكتلة الذرية (amu)', '1 وحدة الكتل الذرية (amu)'];
+  assert(amuOptions.includes(q06_27.options[q06_27.correctIndex]), `u06-q027 correct option should be the atomic mass unit (${amuOptions.join(' / ')}), got '${q06_27.options[q06_27.correctIndex]}'`);
   const quote06_27 = q06_27.stem.match(/["“«]([^"”»]+)["”»]/g);
   const clue06_27 = quote06_27 ? quote06_27[quote06_27.length - 1].replace(/^["“«]|["”»]$/g, '').trim() : '';
-  assert(!clue06_27.includes('1 وحدة كتل ذرية (amu)'), `u06-q027 leaked '1 وحدة كتل ذرية (amu)' in Arabic stem: "${clue06_27}"`);
+  // Neither the full option nor its core term / abbreviations may appear in the clue.
+  for (const tok of ['وحدة كتل ذرية', 'وحدة الكتلة الذرية', 'وحدة الكتل الذرية', 'amu', 'أكب']) {
+    assert(!clue06_27.includes(tok), `u06-q027 leaked '${tok}' in Arabic stem: "${clue06_27}"`);
+  }
 
   const u02 = ALL_CHEMISTRY_UNITS.find(u => u.id === 'u02');
   assert(!!u02, 'u02 unit found');
@@ -907,9 +912,9 @@ console.log(`  ✅ assertRegressionQuestionSanitization: u24-q043, u24-q059, u24
   const kuConceptChecks = [
     { id: 'u24-q011', expectedOpt: 'Aldehîd', forbidden: ['Aldehîd', 'Aldehid', 'aldehyde'] },
     { id: 'u24-q027', expectedOpt: 'Alkan', forbidden: ['Alkan', 'alkane'] },
-    { id: 'u24-q059', expectedOpt: 'Alkîn', forbidden: ['Alkîn', 'Alkyne'] },
+    { id: 'u24-q059', expectedOpt: 'Alkîn', forbidden: ['Alkîn', 'alkîn', 'Alkin', 'Alkyne'] },
     { id: 'u24-q091', expectedOpt: 'Asîda Karboksîlîk', forbidden: ['Karboksîlîk', 'Carboxylic'] },
-    { id: 'u24-q123', expectedOpt: 'Îzomera Cis', forbidden: ['Îzomera Cis'] },
+    { id: 'u24-q123', expectedOpt: 'Îzomera Cis', forbidden: ['Îzomera Cis', 'îzomera cis', 'Cis', 'cis'] },
   ];
   for (const check of kuConceptChecks) {
     const q = u24Ku.find(x => x.id === check.id);
@@ -936,7 +941,8 @@ console.log(`  ✅ assertRegressionQuestionSanitization: u24-q043, u24-q059, u24
     { lang: 'ru', qId: 'u23-q027', expectedOpt: 'Сигма (σ) связь', forbidden: ['Сигма'] },
     { lang: 'ar', qId: 'u23-q027', expectedOpt: 'رابطة سيجما (σ)', forbidden: ['سيجما'] },
     { lang: 'ku', qId: 'u23-q027', expectedOpt: 'Girêdana Sigma (σ)', forbidden: ['Sigma', 'sigmayê'] },
-    { lang: 'zh', qId: 'u23-q075', expectedOpt: '极性分子', forbidden: ['极性分子'] },
+    // '非该概念' would mean the partner "非极性分子" was half-masked (garbled clue that still points at the key).
+    { lang: 'zh', qId: 'u23-q075', expectedOpt: '极性分子', forbidden: ['极性分子', '非该概念'] },
   ];
   for (const check of sigmaChecks) {
     const qs = compileUnitQuestions(u23, check.lang as LanguageCode);

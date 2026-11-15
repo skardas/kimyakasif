@@ -169,6 +169,13 @@ function extractSnippet(factText: string, lang: LanguageCode): string {
   return words.slice(0, take).join(' ').replace(/[,:;–—-]+$/u, '');
 }
 
+/** Ends a reason with one sentence terminator so it does not run into the next sentence. */
+function endSentence(text: string, lang: LanguageCode): string {
+  const t = text.trim();
+  if (/[.。!！?？؟]$/u.test(t)) return t;
+  return lang === 'zh' ? `${t}。` : `${t}.`;
+}
+
 /**
  * Localizes and cleans flashcard tips in foreign languages so Turkish institutional acronyms ('ÖSYM')
  * are replaced with localized exam descriptors.
@@ -210,7 +217,9 @@ export function compileAllFlashcards(
         const isTrap = i % 2 === 1;
         const factText = factItem.fact?.[lang] || factItem.fact?.['tr'] || '';
         const trapText = factItem.trap?.[lang] || factItem.trap?.['tr'] || '';
-        const whyFalse = factItem.whyTrapIsFalse?.[lang] || factItem.whyTrapIsFalse?.['tr'] || '';
+        // The reason is only shown in the language it was written in (a Turkish reason on a German
+        // card would mix languages); without it the card still gives the verdict and the correct fact.
+        const whyFalse = factItem.whyTrapIsFalse?.[lang] || '';
         const rawTip = factItem.osymTip?.[lang] || (lang === 'tr' ? factItem.osymTip?.['tr'] : undefined) || tmpl.defaultTip;
         const tipText = sanitizeFlashcardTip(rawTip, lang, tmpl);
 
@@ -221,7 +230,7 @@ export function compileAllFlashcards(
 
         // Misconception cards now always state the verdict and the correct fact (plus the reason, if any).
         const answer = isTrap
-          ? [tmpl.trapVerdict, whyFalse.length > 10 ? whyFalse.trim() : '', `${tmpl.trapAnswerPrefix}${lang === 'zh' ? '：' : ': '}${factText}`]
+          ? [tmpl.trapVerdict, whyFalse.trim().length > 10 ? endSentence(whyFalse, lang) : '', `${tmpl.trapAnswerPrefix}${lang === 'zh' ? '：' : ': '}${factText}`]
             .filter(Boolean)
             .join(lang === 'zh' ? '' : ' ')
           : `${tmpl.factAnswerPrefix}: ${factText}`;

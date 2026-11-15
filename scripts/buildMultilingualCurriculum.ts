@@ -20,6 +20,10 @@ import { fileURLToPath } from 'url';
 import { ALL_CHEMISTRY_UNITS as RAW_UNITS } from '../tests/e2e/harness/curriculumAdapter';
 import { UNIT_EXTRA_SEQUENCES, UNIT_EXTRA_COMPARISONS } from './generateCurriculumUnits';
 import { RAW_GUIDES } from './generateStudySlides';
+import { refuseUnlessForced } from './auditedSourceGuard';
+
+// GUARD: rebuilds the translation caches from the pre-audit harness texts (input for the generators above).
+refuseUnlessForced('buildMultilingualCurriculum.ts', ['scripts/curriculumTranslationsCache.json', 'src/data/i18n/curriculumTranslations.json']);
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

@@ -20,9 +20,13 @@
 
 .lab-stage .ky-floor { block-size: 40%; }
 
+/* overflow: hidden still lets the browser scroll the box when a pin near the edge takes focus, which
+   shifted the whole stage ~20px and hid the "previous scene" arrow. clip cannot be scrolled. */
+.ky-stage.lab-stage { overflow: clip; }
+
 .lab-canvas { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; }
 .lab-canvas canvas { display: block; }
-.lab-pins { position: absolute; inset: 0; pointer-events: none; z-index: 10; overflow: hidden; }
+.lab-pins { position: absolute; inset: 0; pointer-events: none; z-index: 10; overflow: clip; }
 
 /* Numbered gold hotspot pins (display + transform driven by the render loop) */
 .lab-pin {

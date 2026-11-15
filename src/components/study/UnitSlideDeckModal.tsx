@@ -19,7 +19,7 @@ import { UI_TRANSLATIONS } from '../../i18n/translations';
 import type { ChemistryUnitSeedData } from '../../data/units/types';
 import type { LanguageCode, QuestionDiagramSpec } from '../../types/chemistry';
 import { ChemicalDiagram, CLOSE_MODAL_I18N } from '../diagrams/ChemicalDiagram';
-import { formatChemText } from '../common/ChemFormula';
+import { formatChemText, formatChemBlock } from '../common/ChemFormula';
 import { redesignStrings } from '../../i18n/redesignStrings';
 import { playCorrect, playWrong } from '../../audio/sfx';
 
@@ -162,18 +162,6 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
   const isLast = activeSlideIdx === TOTAL_SLIDES - 1;
   const firstTrap = unit.facts[0];
 
-  const tags = [
-    s.bigPictureTag,
-    s.deepMapTag,
-    s.formulasTag,
-    s.mnemonicsTag,
-    s.pathwaysTag,
-    s.matrixTag,
-    s.trapHunterTag,
-    s.recallChallengeTag,
-    s.twinQuizTag,
-  ];
-
   const diagramCard = (spec: QuestionDiagramSpec) => (
     <div className="ky-card sl-diagram">
       <ChemicalDiagram spec={spec} allowZoom={false} lang={lang} />
@@ -184,16 +172,19 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
     </div>
   );
 
-  const trapBlock = (bad: string, good: string, key?: string) => (
+  // Only the reason written in the current language is shown (no Turkish fallback inside another language).
+  const whyOf = (fp: { whyTrapIsFalse?: Partial<Record<LanguageCode, string>> }) => fp.whyTrapIsFalse?.[lang] || undefined;
+  const trapBlock = (bad: string, good: string, key?: string, why?: string) => (
     <div className="sl-trap" key={key}>
       <p className="ky-fs-14 sl-trap__title">
         <XCircle size={16} aria-hidden="true" /> {r.examTrap}
       </p>
-      <p className="ky-fs-16 sl-trap__text">{bad}</p>
+      <p className="ky-fs-16 sl-trap__text">{formatChemText(bad)}</p>
+      {why && <p className="ky-fs-14 sl-trap__why">{formatChemText(why)}</p>}
       <p className="ky-fs-14 sl-truth__title">
         <CheckCircle2 size={16} aria-hidden="true" /> {s.truthGoodLabel}
       </p>
-      <p className="ky-fs-16 sl-truth__text">{good}</p>
+      <p className="ky-fs-16 sl-truth__text">{formatChemText(good)}</p>
     </div>
   );
 
@@ -236,10 +227,10 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
     </div>
   );
 
-  const slideHead = (i: number, gold = false) => (
+  // One short heading per slide: the tab label without its number ("3. Şema & Formül" → "Şema & Formül")
+  const slideHead = (i: number) => (
     <div className="sl-head">
-      <span className={`ky-chip ${gold ? 'ky-chip--gold' : 'ky-chip--accent'}`}>{tags[i]}</span>
-      <h1 className="ky-disp ky-fs-34 sl-title">{s.slideTitles[i]}</h1>
+      <h1 className="ky-disp ky-fs-34 sl-title">{s.tabLabels[i].replace(/^\d+\.\s*/, '')}</h1>
     </div>
   );
 
@@ -252,7 +243,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
             <div className="ky-lead sl-main">
               {slideHead(0)}
               <blockquote className="ky-card ky-fs-20 sl-quote">
-                {deepGuide.bigPictureQuote[lang] || deepGuide.bigPictureQuote.tr}
+                {formatChemText(deepGuide.bigPictureQuote[lang] || deepGuide.bigPictureQuote.tr)}
               </blockquote>
             </div>
             {diagramCard(primaryDiagram)}
@@ -264,12 +255,11 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
             {slideHead(1)}
             {deepGuide.deepSubtopics.map((sub) => (
               <div key={sub.id} className="ky-card sl-block">
-                <span className="ky-chip">{sub.badge[lang] || sub.badge.tr}</span>
-                <h2 className="ky-fs-20 sl-block__title">{sub.title[lang] || sub.title.tr}</h2>
-                <p className="ky-fs-16 sl-block__text">{sub.summary[lang] || sub.summary.tr}</p>
+                <h2 className="ky-fs-20 sl-block__title">{formatChemText(sub.title[lang] || sub.title.tr)}</h2>
+                <p className="ky-fs-16 sl-block__text">{formatChemText(sub.summary[lang] || sub.summary.tr)}</p>
                 <ul className="sl-points ky-fs-16">
                   {sub.keyPoints.map((kp, kpIdx) => (
-                    <li key={kpIdx}>{kp[lang] || kp.tr}</li>
+                    <li key={kpIdx}>{formatChemText(kp[lang] || kp.tr)}</li>
                   ))}
                 </ul>
               </div>
@@ -280,19 +270,19 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
         return (
           <>
             <div className="ky-lead sl-main">
-              {slideHead(2, true)}
+              {slideHead(2)}
               {deepGuide.goldenFormulas.map((gf) => (
                 <div key={gf.id} className="ky-card sl-formula">
-                  <p className="ky-fs-12 sl-formula__label">{gf.label[lang] || gf.label.tr}</p>
+                  <p className="ky-fs-12 sl-formula__label">{formatChemText(gf.label[lang] || gf.label.tr)}</p>
                   <p className="ky-fs-24 sl-formula__eq">
                     <bdi dir="ltr">{formatChemText(gf.expression[lang] || gf.expression.tr)}</bdi>
                   </p>
-                  <p className="ky-fs-16 sl-formula__note">{gf.examNote[lang] || gf.examNote.tr}</p>
+                  <p className="ky-fs-16 sl-formula__note">{formatChemText(gf.examNote[lang] || gf.examNote.tr)}</p>
                 </div>
               ))}
             </div>
             {firstTrap &&
-              trapBlock(firstTrap.trap[lang] || firstTrap.trap.tr, firstTrap.fact[lang] || firstTrap.fact.tr)}
+              trapBlock(firstTrap.trap[lang] || firstTrap.trap.tr, firstTrap.fact[lang] || firstTrap.fact.tr, undefined, whyOf(firstTrap))}
             {diagramCard(secondaryDiagram)}
           </>
         );
@@ -302,13 +292,13 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
             {slideHead(3)}
             {deepGuide.memoryMnemonics.map((mnem) => (
               <div key={mnem.id} className="ky-card sl-block">
-                <span className="ky-chip ky-chip--violet">{mnem.codeBadge[lang] || mnem.codeBadge.tr}</span>
-                <h2 className="ky-fs-20 sl-block__title">{mnem.title[lang] || mnem.title.tr}</h2>
+                <span className="ky-chip ky-chip--violet">{formatChemText(mnem.codeBadge[lang] || mnem.codeBadge.tr)}</span>
+                <h2 className="ky-fs-20 sl-block__title">{formatChemText(mnem.title[lang] || mnem.title.tr)}</h2>
                 <p className="ky-fs-12 sl-formula__label">{s.mnemonicExpansionLabel}</p>
-                <p className="ky-fs-18 sl-block__strong">{mnem.expansion[lang] || mnem.expansion.tr}</p>
+                <p className="ky-fs-18 sl-block__strong">{formatChemText(mnem.expansion[lang] || mnem.expansion.tr)}</p>
                 <p className="ky-fs-16 sl-tip">
                   <Lightbulb size={18} aria-hidden="true" />
-                  <span>{mnem.memoryTip[lang] || mnem.memoryTip.tr}</span>
+                  <span>{formatChemText(mnem.memoryTip[lang] || mnem.memoryTip.tr)}</span>
                 </p>
               </div>
             ))}
@@ -320,7 +310,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
             {slideHead(4)}
             {unit.sequences.slice(0, 2).map((seq, seqIdx) => (
               <div key={seq.id} className="ky-card sl-block">
-                <h2 className="ky-fs-20 sl-block__title">{seq.title[lang] || seq.title.tr}</h2>
+                <h2 className="ky-fs-20 sl-block__title">{formatChemText(seq.title[lang] || seq.title.tr)}</h2>
                 <ol className="sl-steps">
                   {seq.steps.map((st, stepIdx) => (
                     <li key={stepIdx}>
@@ -335,7 +325,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                         }}
                       >
                         <span className="sl-step__n ky-mono">{stepIdx + 1}</span>
-                        <span className="ky-fs-16 sl-step__text">{st[lang] || st.tr}</span>
+                        <span className="ky-fs-16 sl-step__text">{formatChemText(st[lang] || st.tr)}</span>
                       </button>
                     </li>
                   ))}
@@ -351,11 +341,11 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
             {unit.comparisons.slice(0, 4).map((comp) => (
               <div key={comp.id} className="ky-card sl-block">
                 <p className="sl-vs">
-                  <span className="ky-chip ky-chip--accent">{comp.conceptA[lang] || comp.conceptA.tr}</span>
+                  <span className="ky-chip ky-chip--accent">{formatChemText(comp.conceptA[lang] || comp.conceptA.tr)}</span>
                   <span className="sl-vs__pill">VS</span>
-                  <span className="ky-chip ky-chip--violet">{comp.conceptB[lang] || comp.conceptB.tr}</span>
+                  <span className="ky-chip ky-chip--violet">{formatChemText(comp.conceptB[lang] || comp.conceptB.tr)}</span>
                 </p>
-                <p className="ky-fs-16 sl-block__text">{comp.distinction[lang] || comp.distinction.tr}</p>
+                <p className="ky-fs-16 sl-block__text">{formatChemText(comp.distinction[lang] || comp.distinction.tr)}</p>
               </div>
             ))}
           </div>
@@ -363,10 +353,10 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
       case 6:
         return (
           <div className="ky-lead sl-main">
-            {slideHead(6, true)}
+            {slideHead(6)}
             {unit.facts
               .slice(0, 4)
-              .map((fp) => trapBlock(fp.trap[lang] || fp.trap.tr, fp.fact[lang] || fp.fact.tr, fp.id))}
+              .map((fp) => trapBlock(fp.trap[lang] || fp.trap.tr, fp.fact[lang] || fp.fact.tr, fp.id, whyOf(fp)))}
           </div>
         );
       case 7:
@@ -387,7 +377,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                   className={`ky-card sl-block sl-recall ${isAnswered ? (isUserCorrect ? 'is-right ky-pop' : 'is-wrong ky-pop') : ''}`}
                 >
                   <span className="ky-mono sl-recall__n">#{i + 1}</span>
-                  <p className="ky-fs-18 sl-block__strong">{item.statement}</p>
+                  <p className="ky-fs-18 sl-block__strong">{formatChemText(item.statement)}</p>
                   <div className="sl-recall__btns">
                     <button
                       type="button"
@@ -413,7 +403,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                         {isUserCorrect ? s.recallCorrectMsg : s.recallWrongMsg}
                       </p>
                       <p className="ky-fs-14 sl-block__text">
-                        <strong>{s.truthGoodLabel}:</strong> {item.truthText}
+                        <strong>{s.truthGoodLabel}:</strong> {formatChemText(item.truthText)}
                       </p>
                     </div>
                   )}
@@ -426,7 +416,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
         return (
           <>
             <div className="ky-lead sl-main">
-              {slideHead(8, true)}
+              {slideHead(8)}
               <div className="ky-card sl-block">
                 <div className="sl-twin-head">
                   <span className="ky-chip ky-chip--gold">ÖSYM #{twinIdx + 1}</span>
@@ -481,7 +471,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                 {selectedTwinOpt !== null && (
                   <div className="sl-solution ky-pop" role="status">
                     <p className="ky-fs-16">
-                      <bdi>{formatChemText(currentTwin.explanation[lang] || currentTwin.explanation.tr)}</bdi>
+                      <bdi>{formatChemBlock(currentTwin.explanation[lang] || currentTwin.explanation.tr)}</bdi>
                     </p>
                   </div>
                 )}

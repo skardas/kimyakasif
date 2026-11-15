@@ -308,26 +308,53 @@ button:disabled,
   color: var(--text);
 }
 
-/* Chemical formula isolation & notation */
+/* Chemical formula isolation & notation.
+   Formulas are LTR isolates (Arabic keeps H2SO4 / reactions in left-to-right order). A single
+   formula never breaks inside (H₂SO₄ stays on one line); a whole equation (.chem-eq) may wrap
+   between its terms so it cannot overflow a 375px screen at the largest text size. */
+/* Formulas inside sentences use the surrounding text face (a monospace face looked like code in
+   ÖSYM-style prose and broke the rhythm of bold stems); dedicated formula panels such as
+   .sl-formula__eq still set --font-formula themselves. */
 .chem-formula, bdi[dir="ltr"] {
-  font-family: var(--font-formula);
-  font-variant-numeric: tabular-nums lining-nums;
-  letter-spacing: 0.02em;
-  display: inline-block;
+  font-family: inherit;
+  font-variant-numeric: lining-nums;
   direction: ltr !important;
   unicode-bidi: isolate;
 }
 
-.chem-formula sub {
-  font-size: 0.72em;
-  line-height: 0;
-  vertical-align: -0.28em;
+.chem-formula:not(.chem-eq),
+.chem-eq .chem-f {
+  white-space: nowrap;
 }
 
+.chem-eq {
+  white-space: normal;
+}
+
+/* sub/sup keep the line box steady (line-height 0) and scale with the text-size setting (em). */
+.chem-formula sub,
 .chem-formula sup {
   font-size: 0.72em;
   line-height: 0;
-  vertical-align: 0.38em;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.chem-formula sub {
+  inset-block-start: 0.28em;
+}
+
+.chem-formula sup {
+  inset-block-start: -0.42em;
+}
+
+/* Multi-step explanations / worked solutions: one block per statement or step. */
+.chem-block__p {
+  display: block;
+}
+
+.chem-block__p + .chem-block__p {
+  margin-block-start: 0.4em;
 }
 
 .confetti-layer {

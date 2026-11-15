@@ -1383,10 +1383,13 @@ export async function runTier1Tests(): Promise<void> {
       const u06Ar = prodCompileUnitQuestions(u06!, 'ar');
       const q06_27 = u06Ar.find(q => q.id === 'u06-q027');
       expect(q06_27).toBeDefined();
-      expect(q06_27!.options[q06_27!.correctIndex]).toBe('1 وحدة كتل ذرية (amu)');
+      // Key is the atomic mass unit; seed spelling 'وحدة كتل ذرية', standard term 'وحدة الكتلة الذرية'.
+      expect(['1 وحدة كتل ذرية (amu)', '1 وحدة الكتلة الذرية (amu)', '1 وحدة الكتل الذرية (amu)']).toContain(q06_27!.options[q06_27!.correctIndex]);
       const quote06_27 = q06_27!.stem.match(/["“«]([^"”»]+)["”»]/g);
       const clue06_27 = quote06_27 ? quote06_27[quote06_27.length - 1].replace(/^["“«]|["”»]$/g, '').trim() : '';
-      expect(clue06_27.includes('1 وحدة كتل ذرية (amu)')).toBe(false);
+      for (const tok of ['وحدة كتل ذرية', 'وحدة الكتلة الذرية', 'وحدة الكتل الذرية', 'amu', 'أكب']) {
+        expect(clue06_27.includes(tok)).toBe(false);
+      }
 
       const u02 = PROD_CHEMISTRY_UNITS.find(u => u.id === 'u02');
       expect(u02).toBeDefined();

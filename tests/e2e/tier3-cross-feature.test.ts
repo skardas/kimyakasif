@@ -167,7 +167,9 @@ export async function runTier3Tests(): Promise<void> {
         // 5. AYT Chemical Formulas & Equations Verification
         const aytText = aytQs.map((q) => `${q.stem} ${q.options.join(' ')} ${q.explanation}`).join(' ');
         const requiredAytFormulas = [
-          'PV', 'RT', 'Kc', 'Kp', 'ΔH', 'pH', 'Kçç', 'Nernst', 'Faraday', 'VSEPR', 'Markovnikov', 'sp3'
+          // The bank treats the effect of concentration on cell voltage qualitatively (no Nernst
+          // calculation), so the electrochemistry unit is represented by the standard cell potential.
+          'PV', 'RT', 'Kc', 'Kp', 'ΔH', 'pH', 'Kçç', 'E°pil', 'Faraday', 'VSEPR', 'Markovnikov', 'sp3'
         ];
         requiredAytFormulas.forEach((formula) => {
           expect(aytText).toContain(formula);

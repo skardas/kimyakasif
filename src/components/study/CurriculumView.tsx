@@ -8,6 +8,7 @@ import { redesignStrings } from '../../i18n/redesignStrings';
 import { ALL_CHEMISTRY_UNITS } from '../../data/units';
 import type { ChemistryUnitSeedData } from '../../data/units/types';
 import { UnitSlideDeckModal } from './UnitSlideDeckModal';
+import { formatChemText } from '../common/ChemFormula';
 
 export interface UnitActionPillLabels {
   slide: string;
@@ -182,7 +183,7 @@ export const CurriculumView: React.FC<CurriculumViewProps> = ({
                 <div>
                   <p className="ky-fs-12 cur-unit__meta">{r.unitMeta(no, u.exam, u.grade)}</p>
                   <h2 className="ky-fs-20 cur-unit__title">{title}</h2>
-                  <p className="ky-fs-14 cur-unit__sub">{u.subtitle[lang] || u.subtitle.tr}</p>
+                  <p className="ky-fs-14 cur-unit__sub">{formatChemText(u.subtitle[lang] || u.subtitle.tr)}</p>
                 </div>
                 <div className="cur-unit__progress">
                   <div

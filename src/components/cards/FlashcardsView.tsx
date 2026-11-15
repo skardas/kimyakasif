@@ -410,7 +410,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
                           <strong>
                             <Sparkles size={14} aria-hidden="true" /> {t.cards.osymTrapLabel}:
                           </strong>{' '}
-                          {currentCard.osymTip}
+                          {formatChemText(currentCard.osymTip)}
                         </span>
                       )}
                     </span>

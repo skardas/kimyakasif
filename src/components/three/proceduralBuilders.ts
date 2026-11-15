@@ -1289,39 +1289,56 @@ export function buildOsmoticUTube(isDark: boolean): ProceduralSceneObject {
     new THREE.Vector3(1.2, 1.6, 0),
   ]);
   const tubeGeo = new THREE.TubeGeometry(curve, 48, 0.32, 16, false);
-  const tubeMat = new THREE.MeshPhysicalMaterial({
-    color: 0x93c5fd,
+  // Thin, clear glass so the two liquid levels inside stay readable
+  const tubeMat = new THREE.MeshStandardMaterial({
+    color: 0xdbeafe,
     transparent: true,
-    opacity: 0.35,
-    transmission: 0.8,
+    opacity: 0.2,
+    roughness: 0.15,
+    depthWrite: false,
+    side: THREE.DoubleSide,
   });
   const uTube = new THREE.Mesh(tubeGeo, tubeMat);
   group.add(uTube);
 
-  // Semi-permeable membrane at bottom center
-  const memGeo = new THREE.CylinderGeometry(0.3, 0.3, 0.1, 16);
+  // Semi-permeable membrane: a disc across the tube at the bottom of the bend
+  // (the tube runs along x there, so the disc's axis is x).
+  const memGeo = new THREE.CylinderGeometry(0.34, 0.34, 0.08, 24);
   const memMat = new THREE.MeshStandardMaterial({ color: 0xef4444, roughness: 0.5 });
   const membrane = new THREE.Mesh(memGeo, memMat);
+  membrane.rotation.z = Math.PI / 2;
   membrane.position.set(0, -1.6, 0);
   group.add(membrane);
 
-  // Left arm pure water (lower level)
-  const leftCol = makeBondCylinder(new THREE.Vector3(-1.2, -1.4, 0), new THREE.Vector3(-1.2, 0.2, 0), 0.28, 0x38bdf8, isDark);
-  (leftCol.material as THREE.MeshStandardMaterial).transparent = true;
-  (leftCol.material as THREE.MeshStandardMaterial).opacity = 0.7;
+  // The liquid follows the tube down to the membrane on both sides.
+  const samples = curve.getPoints(160);
+  const liquidAlong = (points: THREE.Vector3[], color: number): THREE.Mesh => {
+    const geo = new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points), 48, 0.27, 16, false);
+    const mat = new THREE.MeshStandardMaterial({ color, transparent: true, opacity: 0.85, roughness: 0.4, emissive: color, emissiveIntensity: isDark ? 0.35 : 0.2 });
+    return new THREE.Mesh(geo, mat);
+  };
+  // Left arm: pure water (lower level)
+  const leftCol = liquidAlong(samples.filter((pt) => pt.x <= -0.03 && pt.y <= 0.2), 0x38bdf8);
   group.add(leftCol);
-
-  // Right arm solution (higher level due to osmotic pressure)
-  const rightCol = makeBondCylinder(new THREE.Vector3(1.2, -1.4, 0), new THREE.Vector3(1.2, 1.2, 0), 0.28, 0x0284c7, isDark);
-  (rightCol.material as THREE.MeshStandardMaterial).transparent = true;
-  (rightCol.material as THREE.MeshStandardMaterial).opacity = 0.7;
+  // Right arm: solution (higher level, the height difference balances the osmotic pressure)
+  const rightCol = liquidAlong(samples.filter((pt) => pt.x >= 0.03 && pt.y <= 1.2), 0x2563eb);
   group.add(rightCol);
+
+  // Solute particles only on the solution side: they cannot cross the membrane
+  const solutePositions: [number, number, number][] = [
+    [1.12, 0.9, 0.08], [1.28, 0.5, -0.06], [1.15, 0.1, 0.1], [1.26, -0.35, -0.08], [1.14, -0.8, 0.05], [0.75, -1.5, 0.06], [0.35, -1.6, -0.05],
+  ];
+  solutePositions.forEach(([x, y, z]) => {
+    const solute = makeAtomMesh(0.09, 0xf59e0b, isDark, 0x7c4a03);
+    solute.position.set(x, y, z);
+    group.add(solute);
+  });
 
   return {
     group,
     animate: (time, liveSim) => {
       if (!liveSim) return;
-      rightCol.scale.y = 1 + Math.sin(time * 2) * 0.03;
+      membrane.scale.setScalar(1 + Math.sin(time * 2) * 0.03);
     },
     setExplode: (factor) => {
       factor = clampExplodeFactor(factor);
@@ -1343,7 +1360,7 @@ export function buildBombCalorimeter(isDark: boolean): ProceduralSceneObject {
 
   // Inner steel bomb cylinder
   const bombGeo = new THREE.CylinderGeometry(0.7, 0.7, 1.4, 24);
-  const bombMat = new THREE.MeshStandardMaterial({ color: 0x475569, metalness: 0.85, roughness: 0.15 });
+  const bombMat = new THREE.MeshStandardMaterial({ color: 0x475569, metalness: 0.4, roughness: 0.15 });
   const bomb = new THREE.Mesh(bombGeo, bombMat);
   bomb.position.set(0, -0.3, 0);
   group.add(bomb);
@@ -1381,7 +1398,8 @@ export function buildActivatedComplex(isDark: boolean): ProceduralSceneObject {
   // Potential energy curve 3D path
   const curvePoints: THREE.Vector3[] = [];
   for (let x = -2.5; x <= 2.5; x += 0.2) {
-    const y = Math.exp(-x * x * 1.2) * 2.2 - 0.8;
+    // Exothermic profile: reactants at −0.5, products lower at −1.3, barrier top at 1.4
+    const y = Math.exp(-x * x * 1.2) * 2.3 - 0.9 - 0.4 * Math.tanh(1.5 * x);
     curvePoints.push(new THREE.Vector3(x, y, 0));
   }
   const curve = new THREE.CatmullRomCurve3(curvePoints);
@@ -1390,16 +1408,27 @@ export function buildActivatedComplex(isDark: boolean): ProceduralSceneObject {
   const path = new THREE.Mesh(pathGeo, pathMat);
   group.add(path);
 
-  // Activated complex at peak (x=0, y=1.4)
-  // Two colliding atoms with elongated dashed bond
-  const atomA = makeAtomMesh(0.38, 0xef4444, isDark, 0x991b1b);
-  atomA.position.set(-0.55, 1.4, 0);
-  const atomB = makeAtomMesh(0.38, 0x3b82f6, isDark, 0x1d4ed8);
-  atomB.position.set(0.55, 1.4, 0);
-  group.add(atomA, atomB);
+  // Activated complex above the peak: [O=N···O···C=O]‡ (NO2 + CO -> NO + CO2).
+  // atomA = the O=N part, atomB = the C=O part; the O between them is being transferred.
+  const cy = 1.95;
+  const atomA = new THREE.Group();
+  const oLeft = makeAtomMesh(0.2, 0xef4444, isDark, 0x991b1b);
+  oLeft.position.set(-0.42, 0, 0);
+  const nAtom = makeAtomMesh(0.22, 0x3b82f6, isDark, 0x1d4ed8);
+  atomA.add(oLeft, nAtom, makeBondCylinder(new THREE.Vector3(-0.42, 0.05, 0), new THREE.Vector3(0, 0.05, 0), 0.03, 0xcbd5e1, isDark), makeBondCylinder(new THREE.Vector3(-0.42, -0.05, 0), new THREE.Vector3(0, -0.05, 0), 0.03, 0xcbd5e1, isDark));
+  atomA.position.set(-0.55, cy, 0);
+  const atomB = new THREE.Group();
+  const cAtom = makeAtomMesh(0.22, 0x475569, isDark, 0x1e293b);
+  const oRight = makeAtomMesh(0.2, 0xef4444, isDark, 0x991b1b);
+  oRight.position.set(0.42, 0, 0);
+  atomB.add(cAtom, oRight, makeBondCylinder(new THREE.Vector3(0, 0.05, 0), new THREE.Vector3(0.42, 0.05, 0), 0.03, 0xcbd5e1, isDark), makeBondCylinder(new THREE.Vector3(0, -0.05, 0), new THREE.Vector3(0.42, -0.05, 0), 0.03, 0xcbd5e1, isDark));
+  atomB.position.set(0.55, cy, 0);
+  const oMid = makeAtomMesh(0.2, 0xef4444, isDark, 0x991b1b);
+  oMid.position.set(0, cy, 0);
+  group.add(atomA, atomB, oMid);
 
-  // Transition bond
-  const transBond = makeBondCylinder(atomA.position, atomB.position, 0.04, 0xfacc15, isDark);
+  // Partial bonds N···O···C (thin, yellow)
+  const transBond = makeBondCylinder(new THREE.Vector3(-0.55, cy, 0), new THREE.Vector3(0.55, cy, 0), 0.025, 0xfacc15, isDark);
   group.add(transBond);
 
   return {
@@ -1427,7 +1456,7 @@ export function buildCatalyticSurface(isDark: boolean): ProceduralSceneObject {
 
   // Solid catalyst slab (Pt/Pd metal grid)
   const slabGeo = new THREE.BoxGeometry(3.6, 0.4, 2.4);
-  const slabMat = new THREE.MeshStandardMaterial({ color: 0x64748b, metalness: 0.9, roughness: 0.1 });
+  const slabMat = new THREE.MeshStandardMaterial({ color: 0x64748b, metalness: 0.4, roughness: 0.1 });
   const slab = new THREE.Mesh(slabGeo, slabMat);
   slab.position.set(0, -1.0, 0);
   group.add(slab);
@@ -1441,19 +1470,40 @@ export function buildCatalyticSurface(isDark: boolean): ProceduralSceneObject {
     }
   }
 
-  // Reactant molecules adsorbing and reacting
-  const mol1 = makeAtomMesh(0.28, 0xef4444, isDark);
+  // Adsorbed reactants: NO (N blue, O red) and CO (C dark grey, O red), bonded to the surface through N / C
+  const diatomic = (lower: number, upper: number): THREE.Group => {
+    const g = new THREE.Group();
+    const a = makeAtomMesh(0.2, lower, isDark);
+    const b = makeAtomMesh(0.18, upper, isDark);
+    b.position.set(0, 0.36, 0);
+    g.add(a, b, makeBondCylinder(new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 0.36, 0), 0.05, 0xcbd5e1, isDark));
+    return g;
+  };
+  const mol1 = diatomic(0x3b82f6, 0xef4444);
   mol1.position.set(-0.7, -0.4, 0);
-  const mol2 = makeAtomMesh(0.28, 0x3b82f6, isDark);
-  mol2.position.set(0.7, -0.4, 0);
+  const mol2 = diatomic(0x475569, 0xef4444);
+  mol2.position.set(-1.4, -0.4, 0.8);
   group.add(mol1, mol2);
+
+  // Product leaving the surface: CO2 (O=C=O), where the desorption hotspot sits
+  const co2 = new THREE.Group();
+  const co2C = makeAtomMesh(0.2, 0x475569, isDark);
+  const co2O1 = makeAtomMesh(0.18, 0xef4444, isDark);
+  co2O1.position.set(-0.4, 0, 0);
+  const co2O2 = makeAtomMesh(0.18, 0xef4444, isDark);
+  co2O2.position.set(0.4, 0, 0);
+  co2.add(co2C, co2O1, co2O2, makeBondCylinder(new THREE.Vector3(-0.4, 0, 0), new THREE.Vector3(0.4, 0, 0), 0.05, 0xcbd5e1, isDark));
+  co2.position.set(0.9, 0.2, 0);
+  co2.rotation.z = 0.35;
+  group.add(co2);
 
   return {
     group,
     animate: (time, liveSim) => {
       if (!liveSim) return;
-      mol1.position.y = -0.4 + Math.sin(time * 3) * 0.1;
-      mol2.position.y = -0.4 + Math.cos(time * 3) * 0.1;
+      mol1.position.y = -0.4 + Math.sin(time * 3) * 0.05;
+      mol2.position.y = -0.4 + Math.cos(time * 3) * 0.05;
+      co2.position.y = 0.2 + Math.sin(time * 1.5) * 0.12;
     },
     setExplode: (factor) => {
       factor = clampExplodeFactor(factor);
@@ -1481,15 +1531,38 @@ export function buildLeChatelierChamber(isDark: boolean): ProceduralSceneObject 
   // N2O4 (colorless, 2 larger spheres bonded) and NO2 (brown/orange single spheres)
   const particles: THREE.Mesh[] = [];
   const brownMat = new THREE.MeshStandardMaterial({ color: 0xd97706, roughness: 0.3 });
-  const clearMat = new THREE.MeshStandardMaterial({ color: 0xe2e8f0, transparent: true, opacity: 0.4 });
+  const clearMat = new THREE.MeshStandardMaterial({ color: 0xf1f5f9, transparent: true, opacity: 0.9, roughness: 0.3 });
 
-  for (let i = 0; i < 20; i++) {
-    const isNo2 = i % 2 === 0;
-    const p = makeAtomMesh(isNo2 ? 0.14 : 0.24, isNo2 ? 0xd97706 : 0xe2e8f0, isDark);
-    p.position.set((Math.random() - 0.5) * 2.0, -1.2 + Math.random() * 1.8, (Math.random() - 0.5) * 2.0);
+  // NO2: one brown sphere. N2O4: two pale spheres joined by the N–N bond (the dimer).
+  const addNo2 = (x: number, y: number, z: number) => {
+    const p = makeAtomMesh(0.15, 0xb45309, isDark, 0x5a2a05);
+    p.position.set(x, y, z);
     group.add(p);
     particles.push(p);
+  };
+  const addN2o4 = (x: number, y: number, z: number, tilt: number) => {
+    const g = new THREE.Group();
+    const a = new THREE.Mesh(new THREE.SphereGeometry(0.15, 20, 20), clearMat);
+    a.position.set(-0.13, 0, 0);
+    const b = new THREE.Mesh(new THREE.SphereGeometry(0.15, 20, 20), clearMat);
+    b.position.set(0.13, 0, 0);
+    g.add(a, b, makeBondCylinder(new THREE.Vector3(-0.13, 0, 0), new THREE.Vector3(0.13, 0, 0), 0.04, 0xf1f5f9, isDark));
+    g.position.set(x, y, z);
+    g.rotation.z = tilt;
+    group.add(g);
+    particles.push(a);
+  };
+  // One of each at the two hotspots, the rest spread through the gas space below the piston
+  addN2o4(-0.8, 0, 0, 0.3);
+  addNo2(0.8, 0, 0);
+  for (let i = 0; i < 16; i++) {
+    const ang = i * 2.4;
+    const rad = 0.35 + (i % 4) * 0.2;
+    const y = -1.3 + (i * 0.37) % 1.6;
+    if (i % 2 === 0) addNo2(Math.cos(ang) * rad, y, Math.sin(ang) * rad);
+    else addN2o4(Math.cos(ang) * rad, y, Math.sin(ang) * rad, ang);
   }
+  brownMat.dispose();
 
   return {
     group,
@@ -1526,19 +1599,22 @@ export function buildTitrationBurette(isDark: boolean): ProceduralSceneObject {
   const stopcock = makeBondCylinder(new THREE.Vector3(-0.3, -0.6, 0), new THREE.Vector3(0.3, -0.6, 0), 0.05, 0xef4444, isDark);
   group.add(stopcock);
 
-  // Erlenmeyer receiving flask below
-  const flaskGeo = new THREE.ConeGeometry(1.0, 1.4, 24, 1, true);
-  const flaskMat = new THREE.MeshPhysicalMaterial({ color: 0x93c5fd, transparent: true, opacity: 0.4, transmission: 0.8 });
-  const flask = new THREE.Mesh(flaskGeo, flaskMat);
+  // Erlenmeyer flask below: conical body with an open neck under the burette tip
+  const flask = new THREE.Group();
   flask.position.set(0, -1.8, 0);
-  group.add(flask);
+  const body = makeGlassCylinder(0.24, 1.0, 1.2); // y −0.7 … 0.5 (local)
+  body.position.set(0, -0.1, 0);
+  const neck = makeGlassCylinder(0.24, 0.24, 0.4); // y 0.5 … 0.9 (local)
+  neck.position.set(0, 0.7, 0);
+  flask.add(body, neck);
 
-  // Solution in flask (phenolphthalein pink at equivalence point)
-  const solGeo = new THREE.CylinderGeometry(0.85, 0.95, 0.4, 24);
+  // Solution inside the cone (phenolphthalein pink at the end point); its radii follow the glass
+  const solGeo = new THREE.CylinderGeometry(0.66, 0.96, 0.5, 24);
   const solMat = new THREE.MeshStandardMaterial({ color: 0xec4899, transparent: true, opacity: 0.75 });
   const sol = new THREE.Mesh(solGeo, solMat);
-  sol.position.set(0, -2.1, 0);
-  group.add(sol);
+  sol.position.set(0, -0.43, 0);
+  flask.add(sol);
+  group.add(flask);
 
   // Animated falling drop
   const drop = makeAtomMesh(0.06, 0x38bdf8, isDark);
@@ -1550,7 +1626,7 @@ export function buildTitrationBurette(isDark: boolean): ProceduralSceneObject {
     animate: (time, liveSim) => {
       if (!liveSim) return;
       drop.position.y -= 0.03;
-      if (drop.position.y < -1.9) drop.position.y = -0.8;
+      if (drop.position.y < -1.95) drop.position.y = -0.8;
     },
     setExplode: (factor) => {
       factor = clampExplodeFactor(factor);
@@ -1587,10 +1663,31 @@ export function buildPrecipitationLattice(isDark: boolean): ProceduralSceneObjec
   }
   group.add(pGroup);
 
+  // Dissolved ions of the saturated solution: Ag+ (silver grey) and Cl- (green), few of each
+  const ionSpots: [number, number, number, boolean][] = [
+    [-0.7, -0.3, 0.3, true], [0.5, -0.5, -0.4, false], [0.1, 0.1, 0.5, true], [-0.4, -0.7, -0.5, false], [0.75, 0.0, 0.2, true], [-0.1, -0.2, -0.2, false],
+  ];
+  ionSpots.forEach(([x, y, z, isAg]) => {
+    const ion = makeAtomMesh(isAg ? 0.1 : 0.13, isAg ? 0xcbd5e1 : 0x22c55e, isDark);
+    ion.position.set(x, y, z);
+    group.add(ion);
+  });
+  // Common ion being added from above (extra Cl- from NaCl), at the common-ion hotspot
+  const addedCl: THREE.Mesh[] = [];
+  [[0.8, 1.0, 0], [0.65, 0.75, 0.15], [0.9, 0.6, -0.1]].forEach(([x, y, z]) => {
+    const cl = makeAtomMesh(0.13, 0x22c55e, isDark, 0x0b5d2a);
+    cl.position.set(x, y, z);
+    group.add(cl);
+    addedCl.push(cl);
+  });
+
   return {
     group,
     animate: (time, liveSim) => {
       if (!liveSim) return;
+      addedCl.forEach((cl, i) => {
+        cl.position.y = 0.55 + ((1.0 - i * 0.2 - time * 0.25) % 0.6 + 0.6) % 0.6;
+      });
       pGroup.rotation.y = time * 0.1;
     },
     setExplode: (factor) => {
@@ -1619,7 +1716,7 @@ export function buildDaniellGalvanicCell(isDark: boolean): ProceduralSceneObject
 
   // Zn Anode Plate (silver/grey metallic)
   const znGeo = new THREE.BoxGeometry(0.25, 2.2, 0.7);
-  const znMat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, metalness: 0.9, roughness: 0.2 });
+  const znMat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, metalness: 0.4, roughness: 0.2 });
   const zn = new THREE.Mesh(znGeo, znMat);
   zn.position.set(-1.6, 0.2, 0);
   group.add(zn);
@@ -1636,7 +1733,7 @@ export function buildDaniellGalvanicCell(isDark: boolean): ProceduralSceneObject
 
   // Cu Cathode Plate (copper orange metallic)
   const cuGeo = new THREE.BoxGeometry(0.25, 2.2, 0.7);
-  const cuMat = new THREE.MeshStandardMaterial({ color: 0xea580c, metalness: 0.9, roughness: 0.2 });
+  const cuMat = new THREE.MeshStandardMaterial({ color: 0xea580c, metalness: 0.4, roughness: 0.2 });
   const cu = new THREE.Mesh(cuGeo, cuMat);
   cu.position.set(1.6, 0.2, 0);
   group.add(cu);
@@ -1739,7 +1836,7 @@ export function buildConcentrationCell(isDark: boolean): ProceduralSceneObject {
 
   // Left Zn Anode Plate (slate grey zinc metal)
   const zn1Geo = new THREE.BoxGeometry(0.25, 2.2, 0.7);
-  const zn1Mat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, metalness: 0.9, roughness: 0.2 });
+  const zn1Mat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, metalness: 0.4, roughness: 0.2 });
   const zn1 = new THREE.Mesh(zn1Geo, zn1Mat);
   zn1.position.set(-1.6, 0.2, 0);
   group.add(zn1);
@@ -1768,7 +1865,7 @@ export function buildConcentrationCell(isDark: boolean): ProceduralSceneObject {
 
   // Right Zn Cathode Plate (slate grey zinc metal)
   const zn2Geo = new THREE.BoxGeometry(0.25, 2.2, 0.7);
-  const zn2Mat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, metalness: 0.9, roughness: 0.2 });
+  const zn2Mat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, metalness: 0.4, roughness: 0.2 });
   const zn2 = new THREE.Mesh(zn2Geo, zn2Mat);
   zn2.position.set(1.6, 0.2, 0);
   group.add(zn2);
@@ -1875,12 +1972,43 @@ export function buildHoffmanElectrolysis(isDark: boolean): ProceduralSceneObject
 
   // Liquid columns: Left is pushed down further (2V gas), Right has 1V gas
   const leftLiquid = makeBondCylinder(new THREE.Vector3(-1.0, -1.6, 0), new THREE.Vector3(-1.0, 0.2, 0), 0.23, 0x38bdf8, isDark);
-  const rightLiquid = makeBondCylinder(new THREE.Vector3(1.0, -1.6, 0), new THREE.Vector3(1.0, 0.9, 0), 0.23, 0x38bdf8, isDark);
+  // Tube tops are at y = 1.7: gas columns 1.5 (H2) and 0.75 (O2) → exactly 2 : 1
+  const rightLiquid = makeBondCylinder(new THREE.Vector3(1.0, -1.6, 0), new THREE.Vector3(1.0, 0.95, 0), 0.23, 0x38bdf8, isDark);
   (leftLiquid.material as THREE.MeshStandardMaterial).transparent = true;
   (rightLiquid.material as THREE.MeshStandardMaterial).transparent = true;
   (leftLiquid.material as THREE.MeshStandardMaterial).opacity = 0.5;
   (rightLiquid.material as THREE.MeshStandardMaterial).opacity = 0.5;
   group.add(leftLiquid, rightLiquid);
+
+  // Reservoir: the displaced water stands higher in the open middle tube
+  const centerLiquid = makeBondCylinder(new THREE.Vector3(0, -1.6, 0), new THREE.Vector3(0, 1.45, 0), 0.32, 0x38bdf8, isDark);
+  (centerLiquid.material as THREE.MeshStandardMaterial).transparent = true;
+  (centerLiquid.material as THREE.MeshStandardMaterial).opacity = 0.4;
+  group.add(centerLiquid);
+
+  // Platinum electrodes at the foot of each arm, wired to a DC source:
+  // black (−) pole → cathode (left, H2), red (+) pole → anode (right, O2)
+  const ptMat = new THREE.MeshStandardMaterial({ color: 0xcbd5e1, metalness: 0.4, roughness: 0.2 });
+  [-1.0, 1.0].forEach((x) => {
+    const electrode = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.5, 0.04), ptMat);
+    electrode.position.set(x, -1.3, 0);
+    group.add(electrode);
+  });
+  const battery = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.3, 0.3), new THREE.MeshStandardMaterial({ color: 0x1e293b, metalness: 0.5 }));
+  battery.position.set(0, -2.2, 0);
+  const minusPole = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.34, 0.34), new THREE.MeshStandardMaterial({ color: 0x0f172a }));
+  minusPole.position.set(-0.4, -2.2, 0);
+  const plusPole = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.34, 0.34), new THREE.MeshStandardMaterial({ color: 0xef4444 }));
+  plusPole.position.set(0.4, -2.2, 0);
+  group.add(
+    battery,
+    minusPole,
+    plusPole,
+    makeBondCylinder(new THREE.Vector3(-1.0, -1.55, 0), new THREE.Vector3(-1.0, -2.2, 0), 0.025, 0x0f172a, isDark),
+    makeBondCylinder(new THREE.Vector3(-1.0, -2.2, 0), new THREE.Vector3(-0.45, -2.2, 0), 0.025, 0x0f172a, isDark),
+    makeBondCylinder(new THREE.Vector3(1.0, -1.55, 0), new THREE.Vector3(1.0, -2.2, 0), 0.025, 0xef4444, isDark),
+    makeBondCylinder(new THREE.Vector3(1.0, -2.2, 0), new THREE.Vector3(0.45, -2.2, 0), 0.025, 0xef4444, isDark)
+  );
 
   // Rising bubbles in cathode (2x) and anode (1x)
   const bGeo = new THREE.SphereGeometry(0.04, 8, 8);
@@ -1901,14 +2029,15 @@ export function buildHoffmanElectrolysis(isDark: boolean): ProceduralSceneObject
       if (!liveSim) return;
       bubbles.forEach(({ mesh, isCathode }) => {
         mesh.position.y += isCathode ? 0.025 : 0.015;
-        const maxY = isCathode ? 0.2 : 0.9;
+        const maxY = isCathode ? 0.2 : 0.95;
         if (mesh.position.y > maxY) mesh.position.y = -1.5;
       });
     },
     setExplode: (factor) => {
       factor = clampExplodeFactor(factor);
-      leftTube.position.x = -1.0 - factor * 0.8;
-      rightTube.position.x = 1.0 + factor * 0.8;
+      // The glass arms lift off, the liquid columns and electrodes stay in place
+      leftTube.position.y = factor * 1.2;
+      rightTube.position.y = factor * 1.2;
     },
     dispose: () => disposeSceneObject(group),
   };
@@ -1956,8 +2085,11 @@ export function buildHybridOrbitals(isDark: boolean): ProceduralSceneObject {
     new THREE.Vector3(0.6, -0.6, -0.6),
   ];
   tetCorners.forEach((c) => {
+    // Elongated lobe pointing from the nucleus to the tetrahedron corner (109.5° apart)
     const lobe = makeAtomMesh(0.35, 0xa855f7, isDark);
-    lobe.position.copy(c);
+    lobe.scale.set(0.65, 1.5, 0.65);
+    lobe.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), c.clone().normalize());
+    lobe.position.copy(c).multiplyScalar(0.62);
     sp3Group.add(lobe);
   });
   group.add(sp3Group);
