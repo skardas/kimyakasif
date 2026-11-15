@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useBackDismiss } from '../../hooks/useBackDismiss';
 import type { LucideIcon } from 'lucide-react';
 import { LayoutGrid, Scale, Atom, Droplet, FlaskConical, Zap, Play } from 'lucide-react';
 import type { LanguageCode } from '../../types/chemistry';
@@ -33,6 +34,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({
   const t = UI_TRANSLATIONS[lang];
   const g = GAMES_STRINGS[lang] ?? GAMES_STRINGS.en;
   const [activeGame, setActiveGame] = useState<MiniGameId | null>(null);
+  useBackDismiss(activeGame !== null, () => setActiveGame(null));
 
   // Callback to finish a game and record score
   const handleGameFinish = (gameKey: string, score: number) => {

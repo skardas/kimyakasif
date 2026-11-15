@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './App';
+import { Capacitor } from '@capacitor/core';
+import { App as NativeApp } from '@capacitor/app';
+import { hasBackLayers } from './hooks/useBackDismiss';
 import '@fontsource-variable/figtree';
 import '@fontsource-variable/bricolage-grotesque';
 // KaTeX stylesheet + fonts are bundled by Vite (offline WebView, no CDN); theme.css overrides follow it.
@@ -22,6 +25,15 @@ if ('serviceWorker' in navigator && import.meta.env.PROD) {
       // Gracefully silent in restricted webviews or Capacitor native wraps
     });
   });
+}
+
+// Android hardware back: close the top-most open layer (see useBackDismiss); on the home tab with
+// nothing open, send the app to the background instead of killing it.
+if (Capacitor.isNativePlatform()) {
+  NativeApp.addListener('backButton', () => {
+    if (hasBackLayers()) window.history.back();
+    else NativeApp.minimizeApp().catch(() => {});
+  }).catch(() => {});
 }
 
 // Warm the equation fonts so the first typeset equation does not reflow when its font arrives.

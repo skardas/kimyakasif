@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { useBackDismiss } from '../../hooks/useBackDismiss';
 import {
   Clock,
   Star,
@@ -350,6 +351,8 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
       onClose();
     }
   };
+  // System back: close the confirm sheet if it is open, otherwise behave like the X button.
+  useBackDismiss(true, () => (showExitConfirm ? setShowExitConfirm(false) : requestClose()));
 
   const goNext = () => setCurrentIndex((prev) => Math.min(questions.length - 1, prev + 1));
 

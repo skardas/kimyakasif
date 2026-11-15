@@ -177,10 +177,12 @@
 
 .sl-diagram .chemical-diagram-container { margin: 0; }
 
-.sl-zoom-btn {
-  position: absolute;
-  inset-inline-end: 10px;
-  top: 10px;
+/* Sits under the caption in normal flow: as an overlay it covered labels of the drawing, and with
+   the chip's own position: relative the old top/inline-end offsets pushed it out of the card. */
+.sl-diagram .sl-zoom-btn {
+  position: relative;
+  inset: auto;
+  margin: 2px 8px 10px;
   min-block-size: 36px;
 }
 /* Keep the 36px chip look but give it a 44px hit area */
