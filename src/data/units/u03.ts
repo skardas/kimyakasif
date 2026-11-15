@@ -12,7 +12,7 @@ export const unit03: ChemistryUnitSeedData = {
     "de": "Zwischenmolekulare Kräfte",
     "fr": "Interactions Intermoléculaires",
     "ru": "Взаимодействия между химическими частицами",
-    "ar": "التفاعلات بين الجسيمات",
+    "ar": "التآثرات بين الأنواع الكيميائية",
     "zh": "化学微粒间的相互作用",
     "ku": "Têkiliyên Navbera Cûreyên Kîmyewî"
   },
@@ -22,7 +22,7 @@ export const unit03: ChemistryUnitSeedData = {
     "de": "Starke und schwache Wechselwirkungen, Bindungstypen",
     "fr": "Interactions fortes et faibles, types d'obligations",
     "ru": "Сильные и слабые взаимодействия, типы связей",
-    "ar": "التفاعلات القوية والضعيفة، أنواع الروابط",
+    "ar": "التآثرات القوية والضعيفة وأنواع الروابط",
     "zh": "强相互作用与弱相互作用、化学键类型",
     "ku": "Têkiliyên Xurt û Qels, Cureyên Bond"
   },
@@ -35,7 +35,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Die Ionenbindung entsteht durch die elektrostatische Anziehungskraft zwischen dem Metallkation und dem Nichtmetallanion.",
         "fr": "La liaison ionique est formée par la force d’attraction électrostatique entre le cation métallique et l’anion non métallique.",
         "ru": "Ионная связь образуется за счёт электростатического притяжения между катионом металла и анионом неметалла.",
-        "ar": "تتكون الرابطة الأيونية من قوة الجذب الكهروستاتيكية بين الكاتيون المعدني والأنيون غير المعدني.",
+        "ar": "تنشأ الرابطة الأيونية عن قوة التجاذب الكهروستاتيكي بين الكاتيون الفلزي والأنيون اللافلزي.",
         "zh": "离子键由金属阳离子与非金属阴离子之间的静电引力形成。",
         "ku": "Girêdana îyonî bi hêza elektrostatîk a kêşanê ya di navbera kationê metal û anyona nemetal de pêk tê."
       },
@@ -68,7 +68,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Eine kovalente Bindung entsteht durch die gemeinsame Nutzung von Elektronen zwischen Nichtmetallatomen.",
         "fr": "La liaison covalente résulte du partage d’électrons entre des atomes non métalliques.",
         "ru": "Ковалентная связь возникает в результате образования общих электронных пар между атомами неметаллов.",
-        "ar": "تحدث الرابطة التساهمية نتيجة لتقاسم الإلكترون بين الذرات اللافلزية.",
+        "ar": "تنشأ الرابطة التساهمية نتيجة تشارك الإلكترونات بين ذرات اللافلزات.",
         "zh": "共价键是非金属原子之间通过共用电子形成的。",
         "ku": "Girêdana kovalentî di encama parvekirina elektronên di navbera atomên nemetal de pêk tê."
       },
@@ -78,7 +78,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Kovalente Bindungen entstehen durch den Austausch von Elektronen.",
         "fr": "Les liaisons covalentes se forment par échange d'électrons.",
         "ru": "Ковалентная связь образуется за счёт отдачи и присоединения электронов.",
-        "ar": "تتشكل الروابط التساهمية عن طريق تبادل الإلكترونات.",
+        "ar": "تتكوّن الرابطة التساهمية بانتقال الإلكترونات من ذرة إلى أخرى.",
         "zh": "共价键是通过电子得失形成的。",
         "ku": "Girêdanên kovalent bi pevguherîna elektronan çêdibin."
       },
@@ -134,7 +134,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "London-Kräfte entstehen durch momentane (induzierte) Dipole und sind in allen Teilchen vorhanden.",
         "fr": "Les forces de London proviennent de dipôles instantanés (induits) et sont présentes dans toutes les particules.",
         "ru": "Лондоновские (дисперсионные) силы возникают за счёт мгновенных (наведённых) диполей и действуют между любыми частицами.",
-        "ar": "تنشأ قوى لندن من ثنائيات القطب اللحظية (المستحثة) وهي موجودة في جميع الجسيمات.",
+        "ar": "تنشأ قوى لندن من ثنائيات القطب اللحظية (المستحثة)، وتوجد في جميع الدقائق.",
         "zh": "色散力（伦敦力）源于瞬时（诱导）偶极，存在于所有微粒之间。",
         "ku": "Hêzên Londonê ji dupolên tavilê (derxistî) çêdibin û di hemî pirtikan de hene."
       },
@@ -144,7 +144,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "In polaren Molekülen mit permanenten Dipolmomenten gibt es keine Londoner Kräfte.",
         "fr": "Les forces de London n'existent pas dans les molécules polaires avec des moments dipolaires permanents.",
         "ru": "Лондоновские силы не действуют между полярными молекулами, имеющими постоянный дипольный момент.",
-        "ar": "لا توجد قوى لندن في الجزيئات القطبية ذات العزوم الثنائية القطبية الدائمة.",
+        "ar": "لا توجد قوى لندن في الجزيئات القطبية التي لها عزم ثنائي قطب دائم.",
         "zh": "具有永久偶极矩的极性分子之间不存在色散力。",
         "ku": "Hêzên Londonê di molekulên polar ên bi demên dupolî yên daîmî de tune ne."
       },
@@ -167,7 +167,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Mit zunehmender Elektronenzahl nimmt die Polarisierbarkeit zu und die Londoner Anziehungskraft wird stärker.",
         "fr": "À mesure que le nombre d’électrons augmente, la polarisabilité augmente et la force d’attraction de London devient plus forte.",
         "ru": "С увеличением числа электронов растёт поляризуемость и усиливаются лондоновские силы притяжения.",
-        "ar": "ومع زيادة عدد الإلكترونات، تزداد قابلية الاستقطاب وتصبح قوة جذب لندن أقوى.",
+        "ar": "كلما زاد عدد الإلكترونات زادت قابلية الاستقطاب وقويت قوى جذب لندن.",
         "zh": "电子数越多，极化率越大，色散力越强。",
         "ku": "Her ku hejmara elektronan zêde dibe, polarîzasyon zêde dibe û hêza balkişandina Londonê xurtir dibe."
       },
@@ -177,7 +177,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Die London-Kraft nimmt zu, wenn die Anzahl der Elektronen im Molekül abnimmt.",
         "fr": "La force de London augmente à mesure que le nombre d’électrons dans la molécule diminue.",
         "ru": "Лондоновские силы усиливаются с уменьшением числа электронов в молекуле.",
-        "ar": "تزداد قوة لندن مع انخفاض عدد الإلكترونات في الجزيء.",
+        "ar": "تزداد قوى لندن كلما قلّ عدد الإلكترونات في الجزيء.",
         "zh": "分子中电子数越少，色散力越强。",
         "ku": "Hêza Londonê her ku hejmara elektronên di molekulê de kêm dibe zêde dibe."
       },
@@ -210,7 +210,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Speisesalz (NaCl) leitet in seiner festen Kristallform den elektrischen Strom perfekt.",
         "fr": "Le sel de table (NaCl) conduit parfaitement le courant électrique sous sa forme cristalline solide.",
         "ru": "Поваренная соль (NaCl) в твёрдом кристаллическом состоянии прекрасно проводит электрический ток.",
-        "ar": "يوصل ملح الطعام (NaCl) التيار الكهربائي بشكل مثالي في شكله البلوري الصلب.",
+        "ar": "يوصل ملح الطعام (NaCl) التيار الكهربائي توصيلاً ممتازاً وهو في حالته البلورية الصلبة.",
         "zh": "食盐(NaCl)晶体在固态时导电性极好。",
         "ku": "Xwêya sifrê (NaCl) di forma xweya krîstal a zexm de tîra elektrîkê bi rengek bêkêmasî derbas dike."
       },
@@ -243,7 +243,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Metallische Bindungen entstehen durch die gemeinsame Nutzung von Elektronen zwischen Nichtmetallen.",
         "fr": "Les liaisons métalliques sont établies en partageant des électrons entre des non-métaux.",
         "ru": "Металлическая связь образуется за счёт общих электронов между атомами неметаллов.",
-        "ar": "يتم إنشاء الروابط المعدنية من خلال مشاركة الإلكترونات بين اللافلزات.",
+        "ar": "تنشأ الرابطة الفلزية من تشارك الإلكترونات بين ذرات اللافلزات.",
         "zh": "金属键是由非金属原子之间共用电子形成的。",
         "ku": "Girêdanên metalîk bi parvekirina elektronan di navbera nemetalan de têne damezrandin."
       },
@@ -253,7 +253,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Elektronenteilung zwischen Nichtmetallen ist eine kovalente Bindung; die Metallbindung besteht zwischen Metallatomen, zwischen positiven Metallionen und einem freien Elektronensee.",
         "fr": "La mise en commun d'électrons entre non-métaux est une liaison covalente ; la liaison métallique se forme entre atomes métalliques, entre les ions métalliques positifs et une mer d'électrons libres.",
         "ru": "Обобществление электронов между неметаллами — это ковалентная связь; металлическая связь возникает между атомами металлов — между положительными ионами металла и «морем» свободных электронов.",
-        "ar": "تشارك الإلكترونات بين اللافلزات رابطة تساهمية؛ أما الرابطة الفلزية فتتكون بين ذرات الفلزات، بين أيونات الفلز الموجبة وبحر الإلكترونات الحرة.",
+        "ar": "تشارُك الإلكترونات بين اللافلزات هو الرابطة التساهمية؛ أما الرابطة الفلزية فتتكون بين ذرات الفلزات، أي بين أيونات الفلز الموجبة وبحر الإلكترونات الحرة.",
         "zh": "非金属之间共用电子形成的是共价键；金属键存在于金属原子之间，即金属阳离子与自由电子“海”之间。",
         "ku": "Hevpariya elektronan di navbera nemetalan de girêdana kovalent e; girêdana metalî di navbera atomên metal de, di navbera îyonên metal ên erênî û deryaya elektronên serbest de çêdibe."
       }
@@ -266,7 +266,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Mit zunehmender Elektronegativitätsdifferenz in einer kovalenten Bindung nimmt der polare und ionische Charakter der Bindung zu.",
         "fr": "À mesure que la différence d’électronégativité dans une liaison covalente augmente, le caractère polaire et le caractère ionique de la liaison augmentent.",
         "ru": "Чем больше разность электроотрицательностей атомов в ковалентной связи, тем выше её полярность и степень ионности.",
-        "ar": "مع زيادة الفرق في السالبية الكهربية في الرابطة التساهمية، يزداد الطابع القطبي والطابع الأيوني للرابطة.",
+        "ar": "كلما زاد فرق السالبية الكهربائية في الرابطة التساهمية زادت قطبية الرابطة وطابعها الأيوني.",
         "zh": "共价键中成键原子的电负性差越大，键的极性和离子性越强。",
         "ku": "Her ku ferqa elektronegatîfiyê di girêdanek kovalent de zêde dibe, karaktera polar û karaktera îyonî ya girêdanê zêde dibe."
       },
@@ -276,7 +276,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Die Bindung zwischen zwei Atomen mit gleicher Elektronegativität ist polar.",
         "fr": "La liaison entre deux atomes d’électronégativité égale est polaire.",
         "ru": "Связь между двумя атомами с одинаковой электроотрицательностью полярна.",
-        "ar": "الرابطة بين ذرتين متساويتين في السالبية الكهربية تكون قطبية.",
+        "ar": "الرابطة بين ذرتين متساويتين في السالبية الكهربائية تكون قطبية.",
         "zh": "电负性相等的两个原子之间形成的是极性键。",
         "ku": "Girêdana di navbera du atomên bi elektronegatîviyên wekhev de polar e."
       },
@@ -286,7 +286,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Atome gleicher Elektronegativität ziehen die Bindungselektronen gleich stark an, die Elektronendichte verschiebt sich nicht; die Bindung ist daher unpolar, nicht polar.",
         "fr": "Des atomes de même électronégativité attirent également les électrons de liaison ; la densité électronique ne se déplace pas vers un côté, la liaison est donc apolaire, pas polaire.",
         "ru": "Атомы с одинаковой электроотрицательностью притягивают электроны связи одинаково, электронная плотность не смещается; поэтому связь неполярная, а не полярная.",
-        "ar": "الذرات المتساوية في الكهرسلبية تجذب إلكترونات الرابطة بالقوة نفسها فلا تنزاح الكثافة الإلكترونية نحو طرف، لذا تكون الرابطة غير قطبية لا قطبية.",
+        "ar": "الذرات المتساوية في السالبية الكهربائية تجذب إلكترونات الرابطة بالقوة نفسها فلا تنزاح الكثافة الإلكترونية نحو أحد الطرفين، لذا تكون الرابطة غير قطبية.",
         "zh": "电负性相等的原子对成键电子的吸引相同，电子密度不偏向任何一方，所以该键是非极性键而不是极性键。",
         "ku": "Atomên ku elektronegatîfiya wan wekhev e elektronên girêdanê bi heman hêzê dikişînin, dendika elektronan naçe aliyekî; loma girêdan ne polar, apolar e."
       }
@@ -299,7 +299,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Zwischen zwei Nichtmetallatomen desselben Typs (z. B. O2, N2, H2) bilden sich unpolare kovalente Bindungen.",
         "fr": "Des liaisons covalentes non polaires se forment entre deux atomes non métalliques du même type (par exemple O2, N2, H2).",
         "ru": "Ковалентная неполярная связь образуется между двумя одинаковыми атомами неметалла (например, в O2, N2, H2).",
-        "ar": "تتكون الروابط التساهمية غير القطبية بين ذرتين غير معدنيتين من نفس النوع (مثل O2، N2، H2).",
+        "ar": "تتكون الروابط التساهمية غير القطبية بين ذرتين لافلزيتين من النوع نفسه (مثل O2، N2، H2).",
         "zh": "非极性共价键形成于两个同种非金属原子之间(如 O2、N2、H2)。",
         "ku": "Girêdanên kovalent ên nepolar di navbera du atomên nemetal ên ji heman cureyê de çêdibin (mînak O2, N2, H2)."
       },
@@ -309,7 +309,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Die Bindung im HCl-Molekül ist eine unpolare kovalente Bindung.",
         "fr": "La liaison dans la molécule HCl est une liaison covalente non polaire.",
         "ru": "В молекуле HCl связь ковалентная неполярная.",
-        "ar": "الرابطة في جزيء حمض الهيدروكلوريك هي رابطة تساهمية غير قطبية.",
+        "ar": "الرابطة في جزيء HCl رابطة تساهمية غير قطبية.",
         "zh": "HCl 分子中的键是非极性共价键。",
         "ku": "Girêdana di molekula HCl de girêdaneke kovalentî ya nepolar e."
       },
@@ -319,7 +319,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "H und Cl haben unterschiedliche Elektronegativitäten; die Bindungselektronen liegen näher am Cl, die H–Cl-Bindung ist daher polar und nicht unpolar.",
         "fr": "H et Cl ont des électronégativités différentes ; les électrons de liaison sont plus proches de Cl, la liaison H–Cl est donc covalente polaire et non apolaire.",
         "ru": "У H и Cl разная электроотрицательность; электроны связи смещены к Cl, поэтому связь H–Cl ковалентная полярная, а не неполярная.",
-        "ar": "كهرسلبية H وCl مختلفة، وإلكترونات الرابطة أقرب إلى Cl، لذا فالرابطة H–Cl تساهمية قطبية لا غير قطبية.",
+        "ar": "السالبية الكهربائية لـ H وCl مختلفة، وإلكترونات الرابطة أقرب إلى Cl، لذا فالرابطة H–Cl تساهمية قطبية لا غير قطبية.",
         "zh": "H 和 Cl 的电负性不同，成键电子偏向 Cl，所以 H–Cl 键是极性共价键，而不是非极性键。",
         "ku": "Elektronegatîfiya H û Cl cuda ye; elektronên girêdanê nêzîkî Cl ne, loma girêdana H–Cl ne apolar, kovalenta polar e."
       }
@@ -332,7 +332,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Der Siedepunkt von Wasser liegt aufgrund der Wasserstoffbrückenbindungen zwischen seinen Molekülen deutlich höher als der von H2S.",
         "fr": "Le point d’ébullition de l’eau est nettement plus élevé que celui du H2S en raison des liaisons hydrogène entre ses molécules.",
         "ru": "Температура кипения воды значительно выше, чем у H2S, из-за водородных связей между её молекулами.",
-        "ar": "درجة غليان الماء أعلى بكثير من كبريتيد الهيدروجين (H2S) بسبب الروابط الهيدروجينية بين جزيئاته.",
+        "ar": "درجة غليان الماء أعلى بكثير من درجة غليان كبريتيد الهيدروجين (H2S) بسبب الروابط الهيدروجينية بين جزيئاته.",
         "zh": "由于分子间存在氢键，水的沸点明显高于 H2S。",
         "ku": "Ji ber girêdanên hîdrojenê yên di navbera molekulên wê de, xala kelandinê ya avê ji H2S pirtir e."
       },
@@ -342,7 +342,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Der hohe Siedepunkt von Wasser ist darauf zurückzuführen, dass seine Molekülmasse größer als die von H2S ist.",
         "fr": "Le point d’ébullition élevé de l’eau est dû à sa masse moléculaire supérieure à celle du H2S.",
         "ru": "Высокая температура кипения воды объясняется тем, что её молекулярная масса больше, чем у H2S.",
-        "ar": "ترجع نقطة غليان الماء المرتفعة إلى أن كتلته الجزيئية أكبر من كتلة كبريتيد الهيدروجين (H2S).",
+        "ar": "يعود ارتفاع درجة غليان الماء إلى أن كتلته الجزيئية أكبر من كتلة كبريتيد الهيدروجين (H2S).",
         "zh": "水的沸点高是因为其相对分子质量比 H2S 大。",
         "ku": "Xala kelandina avê ya bilind ji ber ku girseya wê ya molekulî ji H2S mezintir e."
       },
@@ -365,7 +365,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "In der Lewis-Punkt-Notation werden Valenzelektronen als Punkte um das Elementsymbol platziert.",
         "fr": "Dans la notation par points de Lewis, les électrons de valence sont placés sous forme de points autour du symbole de l'élément.",
         "ru": "В электронно-точечной формуле Льюиса валентные электроны изображают точками вокруг символа элемента.",
-        "ar": "في تدوين نقطة لويس، يتم وضع إلكترونات التكافؤ كنقاط حول رمز العنصر.",
+        "ar": "في تمثيل لويس النقطي توضع إلكترونات التكافؤ نقاطاً حول رمز العنصر.",
         "zh": "在路易斯电子式中，价电子用小点标在元素符号周围。",
         "ku": "Di nîşana xala Lewis de, elektronên valence wekî xal li dora sembola hêmanê têne danîn."
       },
@@ -375,7 +375,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Im Lewis-Symbol sind die Neutronen im Kern um das Symbol herum gezeichnet.",
         "fr": "Dans le symbole de Lewis, les neutrons du noyau sont dessinés autour du symbole.",
         "ru": "В символе Льюиса вокруг символа элемента изображают нейтроны ядра.",
-        "ar": "في رمز لويس، يتم رسم النيوترونات الموجودة في النواة حول الرمز.",
+        "ar": "في رمز لويس تُرسم نيوترونات النواة حول الرمز.",
         "zh": "在路易斯符号中，原子核内的中子画在元素符号周围。",
         "ku": "Di sembola Lewis de, notronên di navokê de li dora sembolê têne kişandin."
       },
@@ -398,7 +398,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Dipol-Dipol-Wechselwirkungen treten zwischen polaren Molekülen mit permanenten Dipolen auf.",
         "fr": "L'interaction dipôle-dipôle se produit entre des molécules polaires avec des dipôles permanents.",
         "ru": "Диполь-дипольное взаимодействие действует между полярными молекулами, имеющими постоянные диполи.",
-        "ar": "يحدث تفاعل ثنائي القطب ثنائي القطب بين الجزيئات القطبية ذات ثنائيات القطب الدائمة.",
+        "ar": "يحدث تآثر ثنائي القطب–ثنائي القطب بين الجزيئات القطبية ذات ثنائيات القطب الدائمة.",
         "zh": "偶极-偶极作用存在于具有永久偶极的极性分子之间。",
         "ku": "Têkiliya dîpol-dîpol di navbera molekulên polar ên bi dupolên daîmî de pêk tê."
       },
@@ -408,7 +408,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Die Dipol-Dipol-Wechselwirkung ist die grundlegende Kraft zwischen Edelgasatomen.",
         "fr": "L'interaction dipôle-dipôle est la force fondamentale observée entre les atomes de gaz rares.",
         "ru": "Диполь-дипольное взаимодействие — основной тип взаимодействия между атомами благородных газов.",
-        "ar": "التفاعل ثنائي القطب ثنائي القطب هو القوة الأساسية التي تظهر بين ذرات الغاز النبيل.",
+        "ar": "تآثر ثنائي القطب–ثنائي القطب هو القوة الأساسية بين ذرات الغازات النبيلة.",
         "zh": "偶极-偶极作用是稀有气体原子之间的主要作用力。",
         "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza esîl de tê dîtin."
       },
@@ -431,7 +431,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Der Bindungsbruch ist ein endothermer (energieverbrauchender) Prozess, während die Bindungsbildung ein exothermer (energiespendender) Prozess ist.",
         "fr": "La rupture des liaisons est un processus endothermique (consommateur d'énergie), tandis que la formation de liaisons est un processus exothermique (donneur d'énergie).",
         "ru": "Разрыв связи — эндотермический процесс (энергия поглощается), а образование связи — экзотермический (энергия выделяется).",
-        "ar": "كسر الروابط هو عملية ماصة للحرارة (مستهلكة للطاقة)، ​​في حين أن تكوين الرابطة هو عملية طاردة للحرارة (مانحة الطاقة).",
+        "ar": "كسر الروابط عملية ماصة للحرارة (تمتص الطاقة)، أما تكوين الروابط فعملية طاردة للحرارة (تُطلق الطاقة).",
         "zh": "断键是吸热（吸收能量）过程，成键是放热（释放能量）过程。",
         "ku": "Şikandina girêdanê pêvajoyek endotermîk (enerjî-dixwe) ye, dema ku çêbûna girêdan pêvajoyek exotermîk (enerjî dide) ye."
       },
@@ -441,7 +441,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Beim Aufbrechen der chemischen Bindung wird stets eine große Wärmemenge an die Umgebung abgegeben.",
         "fr": "Lorsque la liaison chimique est rompue, une grande quantité de chaleur est toujours libérée dans l’environnement.",
         "ru": "При разрыве химической связи в окружающую среду всегда выделяется большое количество теплоты.",
-        "ar": "عندما يتم كسر الرابطة الكيميائية، يتم إطلاق كمية كبيرة من الحرارة دائمًا في البيئة.",
+        "ar": "عند كسر الرابطة الكيميائية تنطلق دائماً كمية كبيرة من الحرارة إلى الوسط المحيط.",
         "zh": "化学键断裂时总是向环境放出大量的热。",
         "ku": "Ji ber ku girêdana kîmyewî têk diçe, her dem rêjeyek mezin germahî berdide hawîrdorê."
       },
@@ -464,7 +464,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Intramolekulare kovalente Bindungen sind starke Wechselwirkungen und intermolekulare Van-der-Waals-Wechselwirkungen sind schwach.",
         "fr": "Les liaisons covalentes intramoléculaires sont des interactions fortes et les interactions intermoléculaires de Van der Waals sont faibles.",
         "ru": "Внутримолекулярные ковалентные связи — сильные взаимодействия, а межмолекулярные ван-дер-ваальсовы силы — слабые.",
-        "ar": "الروابط التساهمية داخل الجزيئات هي تفاعلات قوية وتفاعلات فان دير فال بين الجزيئات ضعيفة.",
+        "ar": "الروابط التساهمية داخل الجزيء تآثرات قوية، أما قوى فان در فالس بين الجزيئات فتآثرات ضعيفة.",
         "zh": "分子内的共价键是强相互作用，分子间的范德华力是弱相互作用。",
         "ku": "Girêdanên kovalentî yên intramolekular danûstendinên xurt in û têkiliyên van der Waals-ê yên navmolekular qels in."
       },
@@ -474,7 +474,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Beim Sieden der Substanz werden intramolekulare kovalente Bindungen abgebaut.",
         "fr": "Lors de l'ébullition de la substance, les liaisons covalentes intramoléculaires sont rompues.",
         "ru": "При кипении вещества разрушаются внутримолекулярные ковалентные связи.",
-        "ar": "أثناء غليان المادة، تتفكك الروابط التساهمية داخل الجزيئات.",
+        "ar": "في أثناء غليان المادة تتكسر الروابط التساهمية داخل الجزيئات.",
         "zh": "物质沸腾时，分子内的共价键被破坏。",
         "ku": "Di dema kelandina maddeyê de, girêkên kovalentî yên navmolekularî diqetin."
       },
@@ -507,7 +507,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Ionenkristalle können durch Schlagen mit einem Hammer zu Drähten und Blechen geformt werden.",
         "fr": "Les cristaux ioniques peuvent être transformés en fils et en feuilles lorsqu'ils sont frappés avec un marteau.",
         "ru": "Ионные кристаллы при ударе молотком можно расплющить в листы и вытянуть в проволоку.",
-        "ar": "يمكن أن تتشكل البلورات الأيونية على شكل أسلاك وصفائح عند ضربها بمطرقة.",
+        "ar": "يمكن سحب البلورات الأيونية أسلاكاً وطرقها صفائح عند ضربها بالمطرقة.",
         "zh": "离子晶体受锤击时可以被拉成丝、压成片。",
         "ku": "Krîstalên îyonî dema ku bi çakûç tê lêdan dikarin bibin têl û pelan çêbibin."
       },
@@ -530,7 +530,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Bei der Benennung von Verbindungen werden bei kovalenten Verbindungen Zahlpräfixe wie mono, di, tri verwendet.",
         "fr": "Dans la nomenclature, les préfixes numériques tels que mono, di, tri sont utilisés pour les composés covalents.",
         "ru": "В названиях ковалентных соединений используют числовые приставки моно-, ди-, три- и т. д.",
-        "ar": "في تسمية المركبات التساهمية تُستخدم البادئات العددية مثل أحادي (mono) وثنائي (di) وثلاثي (tri).",
+        "ar": "في تسمية المركبات التساهمية تُستخدم البادئات العددية مثل أحادي وثنائي وثلاثي.",
         "zh": "共价化合物命名时要使用一、二、三(mono、di、tri)等数字前缀。",
         "ku": "Di binavkirina pêkhateyên kovalent de pêşgirên hejmarî yên wekî mono, di, tri têne bikaranîn."
       },
@@ -540,7 +540,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Bei der Benennung ionischer Verbindungen werden je nach Anzahl der Nichtmetallatome Präfixe wie mono, di, tri verwendet.",
         "fr": "Lors de la dénomination des composés ioniques, des préfixes tels que mono, di, tri sont utilisés selon le nombre d'atomes non métalliques.",
         "ru": "В названиях ионных соединений используют приставки моно-, ди-, три- по числу атомов неметалла.",
-        "ar": "عند تسمية المركبات الأيونية تُستخدم بادئات مثل mono وdi وtri وفقًا لعدد ذرات اللافلز.",
+        "ar": "عند تسمية المركبات الأيونية تُستخدم بادئات مثل أحادي وثنائي وثلاثي وفقاً لعدد ذرات اللافلز.",
         "zh": "离子化合物命名时，要根据非金属原子数使用一、二、三(mono、di、tri)等前缀。",
         "ku": "Di binavkirina pêkhateyên îyonî de li gorî hejmara atomên nemetal pêşgirên wekî mono, di, tri têne bikaranîn."
       },
@@ -585,7 +585,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Eine Ionenbindung bildet durch Elektronenaustausch ein Kristallgitter; Kovalente Bindungen entstehen durch die gemeinsame Nutzung von Elektronen.",
         "fr": "La liaison ionique forme un réseau cristallin par échange d'électrons ; Les liaisons covalentes se forment en partageant des électrons.",
         "ru": "Ионная связь образует кристаллическую решётку за счёт отдачи и присоединения электронов; ковалентная связь образуется за счёт общих электронных пар.",
-        "ar": "تشكل الرابطة الأيونية شبكة بلورية من خلال تبادل الإلكترون؛ تتشكل الروابط التساهمية من خلال مشاركة الإلكترونات.",
+        "ar": "الرابطة الأيونية: رابطة تتكوّن بانتقال الإلكترونات وتُنشئ شبكة بلورية؛ أما الرابطة التساهمية فرابطة تتكوّن بتشارك الإلكترونات.",
         "zh": "离子键通过电子得失形成晶格；而共价键通过共用电子形成。",
         "ku": "Girêdana îyonî bi rêya pevguherîna elektronê şebeke krîstal çêdike; Girêdanên kovalent bi parvekirina elektronan çêdibin."
       }
@@ -598,7 +598,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Wasserstoffbindung",
         "fr": "Liaison hydrogène",
         "ru": "Водородная связь",
-        "ar": "رابطة الهيدروجين",
+        "ar": "الرابطة الهيدروجينية",
         "zh": "氢键",
         "ku": "Girêdana hîdrojenê"
       },
@@ -608,7 +608,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Dipol-Dipol",
         "fr": "Dipôle-Dipôle",
         "ru": "Диполь-дипольные силы",
-        "ar": "ثنائي القطب ثنائي القطب",
+        "ar": "تآثر ثنائي القطب–ثنائي القطب",
         "zh": "偶极-偶极力",
         "ku": "Dipole-Dîpole"
       },
@@ -618,7 +618,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Die Wasserstoffbindung ist eine spezielle und viel stärkere Dipolwechselwirkung, die durch die Bindung des H-Atoms an F-, O- und N-Atome entsteht.",
         "fr": "La liaison hydrogène est une interaction dipolaire spéciale et beaucoup plus forte formée par l’atome H lié aux atomes F, O, N.",
         "ru": "Водородная связь — особый, гораздо более сильный вид дипольного притяжения с участием атома H, связанного с F, O или N; диполь-дипольные силы действуют между любыми полярными молекулами с постоянными диполями.",
-        "ar": "الرابطة الهيدروجينية عبارة عن تفاعل ثنائي القطب خاص وأقوى بكثير يتكون من ذرة H المرتبطة بذرات F وO وN.",
+        "ar": "الرابطة الهيدروجينية: تآثر خاص أقوى بكثير من تآثر ثنائي القطب–ثنائي القطب، تُكوّنه ذرة H مرتبطة بذرة F أو O أو N.",
         "zh": "氢键是与 F、O、N 原子相连的 H 原子形成的一种特殊偶极作用，比一般的偶极-偶极力强得多。",
         "ku": "Girêdana hîdrojenê têkiliyek dîpolek taybetî û pir bihêztir e ku ji hêla atoma H ve bi atomên F, O, N ve girêdayî ye."
       }
@@ -651,7 +651,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Eine polare kovalente Bindung entsteht zwischen Atomen verschiedener Nichtmetalle, und die Bindungselektronen werden ungleich geteilt; die unpolare Bindung entsteht zwischen gleichen Nichtmetallatomen, und die Bindungselektronen werden gleichmäßig geteilt.",
         "fr": "Une liaison covalente polaire se forme entre des atomes de non-métaux différents, et les électrons de liaison sont partagés inégalement ; la liaison apolaire se forme entre des atomes identiques d'un non-métal, et les électrons de liaison sont partagés également.",
         "ru": "Полярная связь — ковалентная связь между атомами разных неметаллов, электроны которой смещены к одному из атомов; неполярная связь — ковалентная связь между одинаковыми атомами неметалла, электроны которой распределены равномерно.",
-        "ar": "الرابطة التساهمية القطبية تنشأ بين ذرات لافلزات مختلفة وتتوزع فيها إلكترونات الرابطة توزيعًا غير متساوٍ؛ أما الرابطة التساهمية غير القطبية فتنشأ بين ذرات متماثلة من اللافلز نفسه وتتوزع فيها إلكترونات الرابطة بالتساوي.",
+        "ar": "الرابطة التساهمية القطبية: رابطة تنشأ بين ذرات لافلزات مختلفة وتتوزع فيها إلكترونات الرابطة توزيعاً غير متساوٍ؛ أما الرابطة التساهمية غير القطبية فرابطة تنشأ بين ذرتين من اللافلز نفسه وتتوزع فيها إلكترونات الرابطة بالتساوي.",
         "zh": "极性共价键形成于不同种非金属原子之间，共用电子对偏向一方；非极性键则形成于同种非金属原子之间，共用电子对不偏移。",
         "ku": "Girêdana kovalent a polar di navbera atomên nemetalên cuda de çêdibe û elektronên girêdanê newekhev tên parvekirin; girêdana nepolar di navbera atomên heman nemetalê de çêdibe û elektronên girêdanê wekhev tên parvekirin."
       }
@@ -684,7 +684,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Die metallische Bindung ist eine starke Wechselwirkung zwischen dem Elektronensee und positiven Metallionen; die London-Kraft entsteht durch momentane Dipole und ist beim Vergleich ähnlich großer Teilchen meist die schwächste Wechselwirkung.",
         "fr": "La liaison métallique est une interaction forte entre la mer d'électrons et les ions métalliques positifs ; la force de London provient de dipôles instantanés et est généralement l'interaction la plus faible lorsqu'on compare des particules de taille semblable.",
         "ru": "Металлическая связь — сильное взаимодействие между „электронным морем“ и положительными ионами металла; лондоновские силы — притяжение, вызванное мгновенными диполями, обычно самое слабое при сравнении частиц сходного размера.",
-        "ar": "الرابطة الفلزية تآثر قوي بين بحر الإلكترونات وأيونات الفلز الموجبة؛ أما قوة لندن فتنشأ عن ثنائيات القطب اللحظية، وهي عادةً أضعف التآثرات عند مقارنة دقائق متقاربة الحجم.",
+        "ar": "الرابطة الفلزية تآثر قوي بين بحر الإلكترونات وأيونات الفلز الموجبة؛ أما قوة لندن فتآثر ينشأ عن ثنائيات القطب اللحظية، وهو عادةً أضعف التآثرات عند مقارنة دقائق متقاربة الحجم.",
         "zh": "金属键是自由电子“海”与阳离子之间的强相互作用；色散力则来自瞬时偶极，比较大小相近的微粒时，它通常是最弱的相互作用。",
         "ku": "Girêdana metalî têkiliyeke xurt a navbera deryaya elektronan û îyonên metal ên erênî ye; hêza London ji dupolên demkî çêdibe û dema perçikên bi mezinahiya nêzîk tên berhevkirin bi giştî têkiliya herî qels e."
       }
@@ -697,7 +697,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Starke intramolekulare Bindung",
         "fr": "Forte liaison intramoléculaire",
         "ru": "Сильная внутримолекулярная связь",
-        "ar": "رابطة قوية داخل الجزيئات",
+        "ar": "الرابطة القوية داخل الجزيء",
         "zh": "分子内强键",
         "ku": "Têkiliya Intramolekular a Hêz"
       },
@@ -707,7 +707,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Schwache intermolekulare Bindung",
         "fr": "Faible liaison intermoléculaire",
         "ru": "Слабая межмолекулярная связь",
-        "ar": "الرابطة الجزيئية الضعيفة",
+        "ar": "الرابطة الضعيفة بين الجزيئات",
         "zh": "分子间弱作用",
         "ku": "Têkiliya Navmolekularî ya Qels"
       },
@@ -717,7 +717,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Eine starke intramolekulare Bindung hält die Atome innerhalb eines Moleküls zusammen und bestimmt die chemischen Eigenschaften des Stoffes; die schwache Anziehung zwischen den Molekülen hält die Moleküle zusammen und bestimmt physikalische Eigenschaften wie Schmelz- und Siedepunkt.",
         "fr": "Une forte liaison intramoléculaire maintient les atomes ensemble au sein d'une molécule et détermine les propriétés chimiques de la substance ; une faible liaison intermoléculaire maintient les molécules entre elles et détermine des propriétés physiques comme les points de fusion et d'ébullition.",
         "ru": "Сильная внутримолекулярная связь удерживает атомы в молекуле и определяет химические свойства вещества; слабая межмолекулярная связь удерживает молекулы рядом друг с другом и определяет физические свойства, например температуры плавления и кипения.",
-        "ar": "رابطة قوية داخل الجزيئات تربط الذرات معًا في الجزيء الواحد وتحدد الخواص الكيميائية للمادة؛ أما الرابطة الجزيئية الضعيفة فتربط كل جزيء بالجزيئات المجاورة وتحدد الخواص الفيزيائية مثل درجتي الانصهار والغليان.",
+        "ar": "الرابطة القوية داخل الجزيء: رابطة تمسك الذرات معاً في الجزيء الواحد وتحدد الخواص الكيميائية للمادة؛ أما الرابطة الضعيفة بين الجزيئات فرابطة تمسك الجزيئات بعضها ببعض وتحدد الخواص الفيزيائية مثل درجتي الانصهار والغليان.",
         "zh": "分子内强键把原子结合成分子，决定物质的化学性质；而分子间弱作用把分子聚集在一起，决定熔点、沸点等物理性质。",
         "ku": "Têkiliya intramolekular a hêz atoman di hundirê molekulê de li hev digire û taybetmendiyên kîmyewî yên maddeyê diyar dike; têkiliya navmolekularî ya qels molekulan li hev digire û taybetmendiyên fîzîkî yên wekî xalên helîn û kelandinê diyar dike."
       }
@@ -730,7 +730,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Vernetzter kovalenter Feststoff",
         "fr": "Solide covalent en réseau",
         "ru": "Вещество с атомной кристаллической решёткой",
-        "ar": "صلب تساهمي شبكي",
+        "ar": "الصلب التساهمي الشبكي",
         "zh": "共价晶体",
         "ku": "Madeya Hişk a Tora Kovalent"
       },
@@ -740,7 +740,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Molekularer Feststoff",
         "fr": "Solide moléculaire",
         "ru": "Вещество с молекулярной кристаллической решёткой",
-        "ar": "صلب جزيئي",
+        "ar": "الصلب الجزيئي",
         "zh": "分子晶体",
         "ku": "Madeya Hişk a Molekulî"
       },
@@ -750,7 +750,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Ein vernetzter kovalenter Feststoff (Diamant, Quarz) ist sehr hart, weil seine Atome durch Elektronenpaarbindungen zu einem dreidimensionalen Netzwerk verknüpft sind; ein molekularer Feststoff (Eis, Trockeneis) besteht aus Molekülen, die nur durch schwache Wechselwirkungen zusammengehalten werden, und schmilzt bei niedriger Temperatur.",
         "fr": "Un solide covalent en réseau (diamant, quartz) est très dur, car ses atomes sont unis par des liaisons covalentes en une structure tridimensionnelle ; un solide moléculaire (glace, neige carbonique) est formé de molécules retenues par des interactions faibles et fond à basse température.",
         "ru": "Вещество с атомной кристаллической решёткой (алмаз, кварц) очень твёрдое: его атомы связаны ковалентными связями в трёхмерный каркас; вещество с молекулярной кристаллической решёткой (лёд, сухой лёд) состоит из молекул, удерживаемых слабыми взаимодействиями, и имеет низкую температуру плавления.",
-        "ar": "صلب تساهمي شبكي (الماس، الكوارتز): مادة شديدة الصلابة ترتبط ذراتها بأزواج إلكترونات مشتركة في شبكة ثلاثية الأبعاد؛ أما الصلب الجزيئي (الجليد، الثلج الجاف) فيتكون من جزيئات تتماسك بتآثرات ضعيفة ودرجة انصهاره منخفضة.",
+        "ar": "الصلب التساهمي الشبكي (الماس، الكوارتز): مادة شديدة الصلابة ترتبط ذراتها بروابط تساهمية في شبكة ثلاثية الأبعاد؛ أما الصلب الجزيئي (الجليد، الثلج الجاف) فمادة تتماسك جزيئاتها بتآثرات ضعيفة ودرجة انصهارها منخفضة.",
         "zh": "共价晶体（金刚石、石英）中原子以共价键连成三维网状结构，硬度很大；而分子晶体（冰、干冰）中分子靠弱相互作用结合，熔点低。",
         "ku": "Madeya hişk a tora kovalent (elmas, kuarts) pir hişk e û atomên wê bi girêdanên kovalent toreke sê-alî çêdikin; madeya hişk a molekulî (qeşa, qeşaya hişk) ji molekulên ku bi têkiliyên qels li hev tên girtin pêk tê û xala helîna wê nizm e."
       }
@@ -763,7 +763,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Ion-Dipol-Wechselwirkung",
         "fr": "Interaction ion-dipôle",
         "ru": "Ион-дипольное взаимодействие",
-        "ar": "التفاعل أيون-ثنائي القطب",
+        "ar": "تآثر أيون–ثنائي القطب",
         "zh": "离子-偶极作用",
         "ku": "Têkiliya Îyon-Dîpol"
       },
@@ -773,7 +773,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Dipol-Dipol-Wechselwirkung",
         "fr": "Interaction dipôle-dipôle",
         "ru": "Диполь-дипольное взаимодействие",
-        "ar": "التفاعل ثنائي القطب-ثنائي القطب",
+        "ar": "تآثر ثنائي القطب–ثنائي القطب",
         "zh": "偶极-偶极作用",
         "ku": "Têkiliya Dîpol-Dîpol"
       },
@@ -783,7 +783,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Eine Ion-Dipol-Wechselwirkung tritt zwischen einem Ion und einem polaren Molekül auf (z. B. beim Lösen von NaCl in Wasser); eine Dipol-Dipol-Wechselwirkung tritt zwischen zwei polaren Molekülen auf (z. B. HCl-Moleküle).",
         "fr": "L'interaction ion-dipôle s'établit entre un ion et une molécule polaire (ex. dissolution de NaCl dans l'eau) ; l'interaction dipôle-dipôle s'établit entre deux molécules polaires (ex. molécules de HCl).",
         "ru": "Ион-дипольное взаимодействие возникает между ионом и полярной молекулой (например, при растворении NaCl в воде); диполь-дипольное взаимодействие возникает между двумя полярными молекулами (например, молекулами HCl).",
-        "ar": "يحدث تفاعل أيون-ثنائي القطب بين أيون وجزيء قطبي (مثل ذوبان NaCl في الماء)؛ ويحدث تفاعل ثنائي القطب-ثنائي القطب بين جزيئين قطبيين (مثل جزيئات HCl).",
+        "ar": "تآثر أيون–ثنائي القطب: تآثر بين أيون وجزيء قطبي (مثل ذوبان NaCl في الماء)؛ أما تآثر ثنائي القطب–ثنائي القطب فتآثر بين جزيئين قطبيين (مثل جزيئات HCl).",
         "zh": "离子-偶极作用发生在离子与极性分子之间(如 NaCl 溶于水)；而偶极-偶极作用发生在两个极性分子之间(如 HCl 分子之间)。",
         "ku": "Têkiliya îyon-dîpol di navbera îyonekê û molekuleke polar de çêdibe (mînak helîna NaCl di avê de); têkiliya dîpol-dîpol di navbera du molekulên polar de çêdibe (mînak molekulên HCl)."
       }
@@ -816,7 +816,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Eine physikalische Veränderung erhält die Identität des Stoffes, meist ändern sich nur schwache Wechselwirkungen; bei einer chemischen Umwandlung werden chemische Bindungen gebrochen, neue Bindungen gebildet und neue Stoffe entstehen.",
         "fr": "Lors d'un changement physique, l'identité de la substance est conservée et ce sont généralement les seules interactions faibles qui changent ; lors d'un changement chimique, des liaisons chimiques sont rompues, de nouvelles liaisons se forment et de nouvelles substances apparaissent.",
         "ru": "Физическое явление сохраняет природу вещества: обычно меняются лишь слабые взаимодействия; химическое явление сопровождается разрывом химических связей, образованием новых связей и новых веществ.",
-        "ar": "في التغير الفيزيائي تبقى هوية المادة محفوظة وغالبًا ما تتغير التفاعلات الضعيفة فقط؛ أما في التغير الكيميائي فتنكسر الروابط الكيميائية وتتكوّن روابط جديدة وتنتج مواد جديدة.",
+        "ar": "في التغير الفيزيائي تبقى هوية المادة محفوظة وغالباً لا تتغير إلا التآثرات الضعيفة؛ أما في التغير الكيميائي فتنكسر الروابط الكيميائية وتتكوّن روابط جديدة وتنتج مواد جديدة.",
         "zh": "物理变化中物质的本质不变，通常只有弱相互作用发生改变；而化学变化中化学键断裂、形成新键并生成新物质。",
         "ku": "Di guherîna fîzîkî de nasnameya maddeyê tê parastin û bi gelemperî tenê têkiliyên qels diguherin; di guherîna kîmyewî de girêdanên kîmyewî dişikên, girêdanên nû çêdibin û maddeyên nû peyda dibin."
       }
@@ -842,7 +842,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Ionen-Dipol-Wechselwirkung",
           "fr": "Interaction ion-dipôle",
           "ru": "Ион-дипольное взаимодействие",
-          "ar": "التفاعل الأيوني ثنائي القطب",
+          "ar": "تآثر أيون–ثنائي القطب",
           "zh": "离子-偶极作用",
           "ku": "Têkiliya îyon-dîpol"
         },
@@ -852,7 +852,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Wasserstoffbindung",
           "fr": "liaison hydrogène",
           "ru": "Водородная связь",
-          "ar": "رابطة الهيدروجين",
+          "ar": "الرابطة الهيدروجينية",
           "zh": "氢键",
           "ku": "girêdana hîdrojenê"
         },
@@ -862,7 +862,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Dipol-Dipol-Wechselwirkung",
           "fr": "Interaction dipôle-dipôle",
           "ru": "Диполь-дипольное взаимодействие",
-          "ar": "التفاعل ثنائي القطب ثنائي القطب",
+          "ar": "تآثر ثنائي القطب–ثنائي القطب",
           "zh": "偶极-偶极作用",
           "ku": "Têkiliya dupol-dipol"
         },
@@ -872,7 +872,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "London-Dispersionskräfte",
           "fr": "Forces de dispersion de London",
           "ru": "Лондоновские (дисперсионные) силы",
-          "ar": "قوى تشتت لندن",
+          "ar": "قوى لندن (قوى التشتت)",
           "zh": "色散力",
           "ku": "hêzên belavbûna Londonê"
         }
@@ -897,7 +897,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Das Metallatom gibt sein Valenzelektron ab",
           "fr": "L'atome de métal donne son électron de valence",
           "ru": "Атом металла отдаёт валентный электрон",
-          "ar": "تتبرع ذرة المعدن بإلكترون التكافؤ الخاص بها",
+          "ar": "تفقد ذرة الفلز إلكترونات تكافئها",
           "zh": "金属原子失去价电子",
           "ku": "Atoma metal elektroneya xwe ya valence dide"
         },
@@ -907,7 +907,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Ein Nichtmetallatom vervollständigt sein Oktett durch die Aufnahme eines Elektrons.",
           "fr": "Un atome non métallique complète son octet en gagnant un électron.",
           "ru": "Атом неметалла принимает электрон и завершает октет",
-          "ar": "تكمل الذرة اللافلزية ثمانيتها باكتساب إلكترون.",
+          "ar": "تُكمل ذرة اللافلز ثمانيتها باكتساب الإلكترون",
           "zh": "非金属原子得到电子，达到 8 电子稳定结构",
           "ku": "Atoma nemetal bi bidestxistina elektronekê okteta xwe temam dike."
         },
@@ -917,7 +917,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Es entstehen entgegengesetzt geladene Kationen und Anionen",
           "fr": "Des cations et des anions de charges opposées se forment",
           "ru": "Образуются противоположно заряженные катион и анион",
-          "ar": "يتم تشكيل الكاتيون والأنيون المشحونين بشكل معاكس",
+          "ar": "يتكوّن كاتيون وأنيون مختلفا الشحنة",
           "zh": "形成带相反电荷的阳离子和阴离子",
           "ku": "Katyon û anyon bi barkirina dijberî hev têne çêkirin"
         },
@@ -927,7 +927,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Das Ionenkristallgitter wird durch elektrostatische Anziehung aufgebaut",
           "fr": "Le réseau cristallin ionique est établi par attraction électrostatique",
           "ru": "За счёт электростатического притяжения образуется ионная кристаллическая решётка",
-          "ar": "يتم إنشاء الشبكة البلورية الأيونية عن طريق الجذب الكهروستاتيكي",
+          "ar": "تتكوّن الشبكة البلورية الأيونية بالتجاذب الكهروستاتيكي",
           "zh": "阴、阳离子通过静电引力形成离子晶格",
           "ku": "Tora krîstal a yonîkî bi kêşana elektrostatîk ve tê damezrandin"
         }
@@ -996,7 +996,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Stufen der Zunahme der London-Kräfte",
         "fr": "Étapes du renforcement des forces de London",
         "ru": "Усиление лондоновских сил: цепочка причин",
-        "ar": "خطوات نمو قوة لندن",
+        "ar": "مراحل ازدياد قوة لندن",
         "zh": "色散力增强的过程",
         "ku": "Pêngavên Pêşveçûna Hêza Londonê"
       },
@@ -1027,7 +1027,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Kurzzeitige transiente Dipole werden stärker",
           "fr": "Les dipôles transitoires momentanés deviennent plus forts",
           "ru": "Мгновенные диполи становятся сильнее",
-          "ar": "تصبح ثنائيات القطب العابرة اللحظية أقوى",
+          "ar": "تقوى ثنائيات القطب اللحظية المؤقتة",
           "zh": "瞬时偶极增强",
           "ku": "Dipolên demkî yên demkî bihêztir dibin"
         },
@@ -1053,7 +1053,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Die vorherrschende Art der Wechselwirkung zwischen den Molekülen welcher der folgenden Substanzen in der kondensierten Phase ist die Wasserstoffbrückenbindung?",
         "fr": "Le type d'interaction dominant entre les molécules de laquelle des substances suivantes dans la phase condensée est la liaison hydrogène ?",
         "ru": "Между молекулами какого из перечисленных веществ в конденсированном состоянии преобладает водородная связь?",
-        "ar": "نوع التفاعل السائد بين جزيئات أي من المواد التالية في الطور المكثف يكون رابطة هيدروجينية؟",
+        "ar": "أيّ المواد الآتية يكون التآثر السائد بين جزيئاتها في الطور المكثف رابطةً هيدروجينية؟",
         "zh": "下列物质中，在凝聚态时分子间以氢键为主要相互作用的是哪一种？",
         "ku": "Têkiliya serdest a di navbera molekulên kîjan ji maddeyên jêrîn de di qonaxa kondenskirî de girêdana hîdrojenê ye?"
       },
@@ -1116,7 +1116,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Für eine Wasserstoffbrückenbindung muss ein H-Atom an F, O oder N gebunden sein. In H2O sind die H-Atome an das stark elektronegative O-Atom gebunden; deshalb sind Wasserstoffbrücken in den kondensierten Phasen die vorherrschende Wechselwirkung zwischen Wassermolekülen. HCl und H2S sind polar, ihre H-Atome sind aber an Cl bzw. S gebunden und können keine Wasserstoffbrücken bilden; zwischen diesen Molekülen wirken Dipol-Dipol-Wechselwirkungen und London-Kräfte. Zwischen den unpolaren Molekülen CH4 und CO2 wirken nur London-Kräfte.",
         "fr": "Une liaison hydrogène exige un atome H lié à F, O ou N. Dans H2O, les atomes H sont liés à l'atome O, très électronégatif ; la liaison hydrogène est donc l'interaction dominante entre les molécules d'eau en phase condensée. HCl et H2S sont polaires, mais leurs atomes H sont liés à Cl ou à S et ne peuvent pas former de liaisons hydrogène ; ces molécules s'attirent par des interactions dipôle-dipôle et des forces de London. Entre les molécules apolaires CH4 et CO2, il n'y a que des forces de London.",
         "ru": "Для водородной связи атом H должен быть связан с F, O или N. В H2O атомы H связаны с сильно электроотрицательным атомом O, поэтому в конденсированном состоянии между молекулами воды преобладает водородная связь. HCl и H2S полярны, но их атомы H связаны с Cl или S, и водородных связей они не образуют; между этими молекулами действуют диполь-дипольные взаимодействия и лондоновские силы. Между неполярными молекулами CH4 и CO2 действуют только лондоновские силы.",
-        "ar": "يشترط لتكوّن الرابطة الهيدروجينية أن ترتبط ذرة H بذرة F أو O أو N. في H2O ترتبط ذرات H بذرة O العالية السالبية الكهربائية، لذا فالرابطة الهيدروجينية هي التآثر السائد بين جزيئات الماء في الأطوار المكثفة. أما HCl وH2S فقطبيان لكن ذرات H فيهما مرتبطة بـ Cl أو S فلا يكوّنان روابط هيدروجينية، وتتجاذب جزيئاتهما بتآثرات ثنائي القطب-ثنائي القطب وقوى لندن. ولا توجد بين جزيئات CH4 وCO2 غير القطبية سوى قوى لندن.",
+        "ar": "يشترط لتكوّن الرابطة الهيدروجينية أن ترتبط ذرة H بذرة F أو O أو N. في H2O ترتبط ذرات H بذرة O العالية السالبية الكهربائية، لذا فالرابطة الهيدروجينية هي التآثر السائد بين جزيئات الماء في الطور المكثف. أما HCl وH2S فقطبيان لكن ذرات H فيهما مرتبطة بـ Cl أو S فلا يكوّنان روابط هيدروجينية، وتتجاذب جزيئاتهما بتآثرات ثنائي القطب-ثنائي القطب وقوى لندن. ولا توجد بين جزيئات CH4 وCO2 غير القطبية سوى قوى لندن.",
         "zh": "形成氢键要求 H 原子与 F、O 或 N 原子相连。H2O 中 H 原子与电负性大的 O 原子相连，所以在凝聚态时水分子间占主导的作用是氢键。HCl 和 H2S 是极性分子，但 H 原子连在 Cl 或 S 上，不能形成氢键，分子间存在偶极-偶极作用和色散力。非极性的 CH4 和 CO2 分子间只有色散力。",
         "ku": "Ji bo girêdana hîdrojenê divê atoma H bi F, O an N ve girêdayî be. Di H2O de atomên H bi atoma O ya pir elektronegatîf ve girêdayî ne; loma di fazên şile û hişk de têkiliya serdest a navbera molekulên avê girêdana hîdrojenê ye. HCl û H2S polar in, lê atomên H yên wan bi Cl an S ve girêdayî ne û nikarin girêdana hîdrojenê çêbikin; di navbera van molekulan de têkiliyên dîpol-dîpol û hêzên London hene. Di navbera molekulên nepolar ên CH4 û CO2 de tenê hêzên London hene."
       }
@@ -1129,7 +1129,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Welche Art von Wechselwirkung tritt zwischen Wassermolekülen und Na+-Ionen während der Auflösung von NaCl-Feststoff in Wasser auf?",
         "fr": "Quel type d'interaction se produit entre les molécules d'eau et les ions Na+ lors de la dissolution du solide NaCl dans l'eau ?",
         "ru": "Какое взаимодействие возникает между молекулами воды и ионами Na+ при растворении твёрдого NaCl в воде?",
-        "ar": "ما نوع التفاعل الذي يحدث بين جزيئات الماء وأيونات Na+ أثناء ذوبان كلوريد الصوديوم الصلب في الماء؟",
+        "ar": "ما نوع التآثر الذي ينشأ بين جزيئات الماء وأيونات Na+ في أثناء ذوبان NaCl الصلب في الماء؟",
         "zh": "NaCl 固体溶于水时，水分子与 Na+ 之间形成的是哪种相互作用？",
         "ku": "Di dema belavbûna NaCl ya hişk a di avê de, di navbera molekulên avê û îyonên Na+ de çi cure têkilî çêdibe?"
       },
@@ -1140,7 +1140,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Ionendipol",
           "fr": "ion-dipôle",
           "ru": "Ион-дипольное взаимодействие",
-          "ar": "ثنائي القطب الأيوني",
+          "ar": "أيون–ثنائي القطب",
           "zh": "离子-偶极作用",
           "ku": "îyon-dîpol"
         },
@@ -1150,7 +1150,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "London",
           "fr": "London",
           "ru": "Лондоновские силы",
-          "ar": "لندن",
+          "ar": "قوى لندن",
           "zh": "色散力",
           "ku": "London"
         },
@@ -1180,7 +1180,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Wasserstoffbindung",
           "fr": "liaison hydrogène",
           "ru": "Водородная связь",
-          "ar": "رابطة الهيدروجين",
+          "ar": "الرابطة الهيدروجينية",
           "zh": "氢键",
           "ku": "girêdana hîdrojenê"
         }
@@ -1192,7 +1192,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Na+ ist ein Ion, Wasser ein polares Molekül. Das Na+-Ion zieht das partiell negative Sauerstoffende des Wassermoleküls an; diese Anziehung zwischen einem Ion und einem polaren Molekül ist eine Ion-Dipol-Wechselwirkung. Es ist keine Wasserstoffbrückenbindung, denn die Anziehung besteht nicht zwischen einem H-Atom und F, O oder N, sondern zwischen der Ladung des Ions und dem Sauerstoffende des Wassers. Da keine Elektronen geteilt werden, ist es auch keine kovalente Bindung.",
         "fr": "Na+ est un ion et l'eau une molécule polaire. L'ion Na+ attire l'extrémité oxygène, partiellement négative, de la molécule d'eau ; cette attraction entre un ion et une molécule polaire est une interaction ion-dipôle. Ce n'est pas une liaison hydrogène, car l'attraction ne s'exerce pas entre un atome H et F, O ou N, mais entre la charge de l'ion et l'extrémité oxygène de l'eau. Aucun électron n'étant mis en commun, ce n'est pas non plus une liaison covalente.",
         "ru": "Na+ — ион, а вода — полярная молекула. Ион Na+ притягивает частично отрицательный кислородный конец молекулы воды; такое притяжение между ионом и полярной молекулой — ион-дипольное взаимодействие. Это не водородная связь: притяжение возникает не между атомом H и F, O или N, а между зарядом иона и кислородным концом молекулы воды. Электроны не обобществляются, поэтому это и не ковалентная связь.",
-        "ar": "Na+ أيون والماء جزيء قطبي. يجذب أيون Na+ طرف الأكسجين ذا الشحنة السالبة الجزئية في جزيء الماء؛ وهذا التجاذب بين أيون وجزيء قطبي هو تآثر أيون-ثنائي القطب. وهو ليس رابطة هيدروجينية لأن التجاذب ليس بين ذرة H وذرة F أو O أو N بل بين شحنة الأيون وطرف الأكسجين في الماء. ولا تُتشارك فيه الإلكترونات، فليس رابطة تساهمية كذلك.",
+        "ar": "Na+ أيون والماء جزيء قطبي. يجذب أيون Na+ طرف الأكسجين ذا الشحنة السالبة الجزئية في جزيء الماء؛ وهذا التجاذب بين أيون وجزيء قطبي هو تآثر أيون–ثنائي القطب. وهو ليس رابطة هيدروجينية لأن التجاذب ليس بين ذرة H وذرة F أو O أو N بل بين شحنة الأيون وطرف الأكسجين في الماء. ولا تتشارك فيه الذرات الإلكترونات، فليس رابطة تساهمية كذلك.",
         "zh": "Na+ 是离子，水是极性分子。Na+ 吸引水分子中带部分负电荷的氧端；离子与极性分子之间的这种吸引就是离子-偶极作用。它不是氢键，因为这种吸引不是发生在 H 原子与 F、O 或 N 之间，而是发生在离子的电荷与水的氧端之间。这里没有共用电子，所以也不是共价键。",
         "ku": "Na+ îyon e û av molekuleke polar e. Îyona Na+ aliyê oksîjenê yê molekula avê, ku qismî neyînî ye, dikişîne; ev kişandina navbera îyonekê û molekuleke polar têkiliya îyon-dîpol e. Ev ne girêdana hîdrojenê ye, ji ber ku kişandin ne di navbera atoma H û F, O an N de ye, lê di navbera barê îyonê û aliyê oksîjenê yê avê de ye. Elektron nayên parvekirin, loma ne girêdana kovalent e jî."
       }
@@ -1205,7 +1205,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "In welcher Antwort sind Formel und Name der Ionenverbindung aus den Elementen 13Al und 8O richtig angegeben?",
         "fr": "Dans quelle proposition la formule et le nom du composé ionique formé entre les éléments 13Al et 8O sont-ils corrects ?",
         "ru": "В каком варианте правильно указаны формула и название ионного соединения, образованного элементами 13Al и 8O?",
-        "ar": "في أيّ الخيارات الآتية وردت صيغة المركب الأيوني المتكوّن من العنصرين 13Al و8O واسمه بشكل صحيح؟",
+        "ar": "في أيّ الخيارات الآتية وردت صيغة المركب الأيوني المتكوّن من العنصرين 13Al و8O واسمه على نحو صحيح؟",
         "zh": "由 13Al 和 8O 两种元素形成的离子化合物，其化学式和名称正确的是哪一项？",
         "ku": "Formula û navê pêkhateya îyonîk a ku di navbera elementên 13Al û 8O de çêdibe di kîjan bijardeyê de rast hatine dayîn?"
       },
@@ -1368,7 +1368,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Nur I",
           "fr": "Seulement I",
           "ru": "Только I",
-          "ar": "فقط I",
+          "ar": "I فقط",
           "zh": "仅 I",
           "ku": "Tenê I"
         },
@@ -1378,7 +1378,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Nur III",
           "fr": "Seulement III",
           "ru": "Только III",
-          "ar": "فقط III",
+          "ar": "III فقط",
           "zh": "仅 III",
           "ku": "Tenê III"
         },
@@ -1572,7 +1572,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Eine Wasserstoffbrücke erfordert an F, O oder N gebundenes H. In CH4 sind die H-Atome an den wenig elektronegativen Kohlenstoff gebunden, das Molekül ist unpolar; zwischen CH4-Molekülen wirken nur London-Kräfte. London-Kräfte zwischen He-Atomen, Dipol-Dipol zwischen polaren HCl-Molekülen, Wasserstoffbrücken zwischen NH3 und H2O und Dipol-induzierter Dipol zwischen polarem H2O und unpolarem O2 sind richtig.",
         "fr": "Une liaison hydrogène exige un H lié à F, O ou N. Dans CH4, les H sont liés au carbone, peu électronégatif, et la molécule est apolaire : seules des forces de London s'exercent entre molécules de CH4. Les forces de London entre atomes de He, dipôle-dipôle entre molécules polaires de HCl, liaison hydrogène entre NH3 et H2O et dipôle-dipôle induit entre H2O polaire et O2 apolaire sont correctes.",
         "ru": "Для водородной связи нужен атом H, связанный с F, O или N. В CH4 атомы H связаны с малоэлектроотрицательным углеродом, молекула неполярна; между молекулами CH4 действуют лишь лондоновские силы. Лондоновские силы между атомами He, диполь-дипольное взаимодействие между полярными молекулами HCl, водородная связь между NH3 и H2O и взаимодействие диполь – наведённый диполь между полярной H2O и неполярным O2 указаны верно.",
-        "ar": "تتطلب الرابطة الهيدروجينية ذرة H مرتبطة بـ F أو O أو N. وفي CH4 ترتبط ذرات H بالكربون منخفض الكهرسلبية والجزيء غير قطبي، فلا يوجد بين جزيئات CH4 إلا قوى لندن. أما قوى لندن بين ذرات He، وتآثر ثنائي القطب بين جزيئات HCl القطبية، والرابطة الهيدروجينية بين NH3 وH2O، وتآثر ثنائي القطب–المستحث بين H2O القطبي وO2 غير القطبي فكلها صحيحة.",
+        "ar": "تتطلب الرابطة الهيدروجينية ذرة H مرتبطة بـ F أو O أو N. وفي CH4 ترتبط ذرات H بالكربون منخفض السالبية الكهربائية والجزيء غير قطبي، فلا يوجد بين جزيئات CH4 إلا قوى لندن. أما قوى لندن بين ذرات He، وتآثر ثنائي القطب–ثنائي القطب بين جزيئات HCl القطبية، والرابطة الهيدروجينية بين NH3 وH2O، وتآثر ثنائي القطب–ثنائي القطب المستحث بين H2O القطبي وO2 غير القطبي فكلها صحيحة.",
         "zh": "形成氢键要求 H 与 F、O 或 N 相连。CH4 中 H 与电负性较小的碳相连，且分子是非极性的，CH4 分子之间只有色散力。He 原子间的色散力、极性 HCl 分子间的偶极-偶极作用、含 N–H 和 O–H 键的 NH3 与 H2O 之间的氢键、极性 H2O 与非极性 O2 之间的偶极-诱导偶极作用都是正确的。",
         "ku": "Ji bo girêdana hîdrojenê divê atoma H bi F, O an N ve girêdayî be. Di CH4 de atomên H bi karbona kêm-elektronegatîf ve girêdayî ne û molekul apolar e; di navbera molekulên CH4 de tenê hêzên London hene. London di navbera atomên He de, dupol-dupol di navbera molekulên HCl ên polar de, girêdana hîdrojenê di navbera NH3 û H2O de û dupol – dupola înduksiyonî di navbera H2O ya polar û O2 ya apolar de rast hatine dayîn."
       }
@@ -1724,7 +1724,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Chemische Teilchen werden in Atome, Moleküle und Ionen eingeteilt. SO4 2- enthält zwar mehrere Atome, ist aber insgesamt geladen und daher ein mehratomiges Ion (Sulfat), kein Molekül. He ist ein freies Atom, O3 eine ungeladene Atomgruppe (Molekül), NH4+ ein mehratomiges und Cl- ein einatomiges Ion.",
         "fr": "Les espèces chimiques se classent en atomes, molécules et ions. Bien que SO4 2- contienne plusieurs atomes, il porte une charge globale : c'est un ion polyatomique (sulfate), pas une molécule. He est un atome libre, O3 un groupe d'atomes non chargé (molécule), NH4+ un ion polyatomique et Cl- un ion monoatomique.",
         "ru": "Химические частицы делят на атомы, молекулы и ионы. Хотя SO4 2- содержит несколько атомов, у него есть общий заряд, поэтому это многоатомный ион (сульфат), а не молекула. He — свободный атом, O3 — незаряженная группа атомов (молекула), NH4+ — многоатомный ион, Cl- — одноатомный ион.",
-        "ar": "تُصنَّف الأنواع الكيميائية إلى ذرات وجزيئات وأيونات. ومع أن SO4 2- يحتوي على عدة ذرات فإنه يحمل شحنة كلية، فهو أيون متعدد الذرات (الكبريتات) لا جزيء. أما He فذرة منفردة، وO3 مجموعة ذرات غير مشحونة (جزيء)، وNH4+ أيون متعدد الذرات، وCl- أيون أحادي الذرة.",
+        "ar": "تُصنَّف الأنواع الكيميائية إلى ذرات وجزيئات وأيونات. ومع أن SO4 2- يحتوي على عدة ذرات فإنه يحمل شحنة كلية، فهو أيون متعدد الذرات (أيون الكبريتات) لا جزيء. أما He فذرة منفردة، وO3 مجموعة ذرات غير مشحونة (جزيء)، وNH4+ أيون متعدد الذرات، وCl- أيون أحادي الذرة.",
         "zh": "化学微粒分为原子、分子和离子。SO4 2- 虽然含有多个原子，但整体带电荷，所以是多原子离子（硫酸根），而不是分子。He 是独立存在的原子，O3 是不带电的原子团（分子），NH4+ 是多原子离子，Cl- 是单原子离子。",
         "ku": "Cureyên kîmyewî wekî atom, molekul û îyon tên dabeşkirin. Her çend SO4 2- gelek atoman dihewîne jî, ji ber ku bara wê ya giştî heye ne molekul, îyoneke pir-atomî ye (îyona sulfatê). He atomeke serbixwe, O3 koma atomên bêbar (molekul), NH4+ îyona pir-atomî û Cl- îyona yek-atomî ye."
       }
@@ -1748,7 +1748,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Nur I",
           "fr": "Seulement I",
           "ru": "Только I",
-          "ar": "فقط I",
+          "ar": "I فقط",
           "zh": "仅 I",
           "ku": "Tenê I"
         },
@@ -1758,7 +1758,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Nur III",
           "fr": "Seulement III",
           "ru": "Только III",
-          "ar": "فقط III",
+          "ar": "III فقط",
           "zh": "仅 III",
           "ku": "Tenê III"
         },
@@ -1813,7 +1813,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Die Elektronegativitäten einiger Elemente: H 2,1; C 2,5; N 3,0; O 3,5; F 4,0. Welche der folgenden kovalenten Bindungen ist am wenigsten polar?",
         "fr": "Électronégativités de quelques éléments : H 2,1 ; C 2,5 ; N 3,0 ; O 3,5 ; F 4,0. Laquelle des liaisons covalentes suivantes est la moins polaire ?",
         "ru": "Электроотрицательности некоторых элементов: H 2,1; C 2,5; N 3,0; O 3,5; F 4,0. Какая из следующих ковалентных связей наименее полярна?",
-        "ar": "قيم الكهرسلبية لبعض العناصر: H ‏2,1؛ C ‏2,5؛ N ‏3,0؛ O ‏3,5؛ F ‏4,0. أيّ الروابط التساهمية الآتية أقلها قطبية؟",
+        "ar": "قيم السالبية الكهربائية لبعض العناصر: H ‏2.1؛ C ‏2.5؛ N ‏3.0؛ O ‏3.5؛ F ‏4.0. أيّ الروابط التساهمية الآتية أقلها قطبية؟",
         "zh": "部分元素的电负性为：H 2.1；C 2.5；N 3.0；O 3.5；F 4.0。下列共价键中极性最小的是哪一个？",
         "ku": "Nirxên elektronegatîfiyê yên hin elementan ev in: H 2,1; C 2,5; N 3,0; O 3,5; F 4,0. Li gorî vê, polariya kîjan ji van girêdanên kovalent herî kêm e?"
       },
@@ -1876,7 +1876,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Die Bindungspolarität steigt mit der Elektronegativitätsdifferenz. Differenzen: O–H 3,5 − 2,1 = 1,4; F–H 4,0 − 2,1 = 1,9; N–H 3,0 − 2,1 = 0,9; C–O 3,5 − 2,5 = 1,0; C–H 2,5 − 2,1 = 0,4. Die kleinste Differenz hat C–H, sie ist am wenigsten polar; F–H ist am polarsten.",
         "fr": "La polarité d'une liaison augmente avec la différence d'électronégativité. Différences : O–H 3,5 − 2,1 = 1,4 ; F–H 4,0 − 2,1 = 1,9 ; N–H 3,0 − 2,1 = 0,9 ; C–O 3,5 − 2,5 = 1,0 ; C–H 2,5 − 2,1 = 0,4. La plus petite différence est pour C–H, la liaison la moins polaire ; F–H est la plus polaire.",
         "ru": "Полярность связи растёт с разностью электроотрицательностей. Разности: O–H 3,5 − 2,1 = 1,4; F–H 4,0 − 2,1 = 1,9; N–H 3,0 − 2,1 = 0,9; C–O 3,5 − 2,5 = 1,0; C–H 2,5 − 2,1 = 0,4. Наименьшая разность у C–H, поэтому эта связь наименее полярна; F–H — самая полярная.",
-        "ar": "تزداد قطبية الرابطة بازدياد فرق الكهرسلبية بين الذرتين. الفروق: O–H ‏3,5 − 2,1 = 1,4؛ F–H ‏4,0 − 2,1 = 1,9؛ N–H ‏3,0 − 2,1 = 0,9؛ C–O ‏3,5 − 2,5 = 1,0؛ C–H ‏2,5 − 2,1 = 0,4. أصغر فرق في C–H فهي الأقل قطبية، وF–H الأكثر قطبية.",
+        "ar": "تزداد قطبية الرابطة بازدياد فرق السالبية الكهربائية بين الذرتين. الفروق: O–H ‏3.5 − 2.1 = 1.4؛ F–H ‏4.0 − 2.1 = 1.9؛ N–H ‏3.0 − 2.1 = 0.9؛ C–O ‏3.5 − 2.5 = 1.0؛ C–H ‏2.5 − 2.1 = 0.4. أصغر فرق في C–H فهي الأقل قطبية، وF–H الأكثر قطبية.",
         "zh": "键的极性随成键原子电负性差的增大而增大。差值：O–H 3.5 − 2.1 = 1.4；F–H 4.0 − 2.1 = 1.9；N–H 3.0 − 2.1 = 0.9；C–O 3.5 − 2.5 = 1.0；C–H 2.5 − 2.1 = 0.4。C–H 的差值最小，极性最小；F–H 极性最大。",
         "ku": "Polariya girêdanê bi zêdebûna cudahiya elektronegatîfiyê ya atomên girêdayî re zêde dibe. Cudahî: O–H 3,5 − 2,1 = 1,4; F–H 4,0 − 2,1 = 1,9; N–H 3,0 − 2,1 = 0,9; C–O 3,5 − 2,5 = 1,0; C–H 2,5 − 2,1 = 0,4. Cudahiya herî biçûk di C–H de ye, loma girêdana herî kêm polar C–H ye; F–H ya herî polar e."
       }
@@ -1976,7 +1976,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Nur I",
           "fr": "Seulement I",
           "ru": "Только I",
-          "ar": "فقط I",
+          "ar": "I فقط",
           "zh": "仅 I",
           "ku": "Tenê I"
         },
@@ -1986,7 +1986,7 @@ export const unit03: ChemistryUnitSeedData = {
           "de": "Nur II",
           "fr": "Seulement II",
           "ru": "Только II",
-          "ar": "فقط II",
+          "ar": "II فقط",
           "zh": "仅 II",
           "ku": "Tenê II"
         },
@@ -2028,7 +2028,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "In NH3 sind die H-Atome an N gebunden, das ein freies Elektronenpaar trägt; es bildet mit Wasser Wasserstoffbrücken (I richtig). CH3OH hat eine O–H-Gruppe und freie Paare am O; ebenfalls Wasserstoffbrücken (III richtig). In CH4 sind die H-Atome an Kohlenstoff gebunden, es gibt kein F, O oder N; mit Wasser entsteht nur Dipol-induzierter-Dipol-Wechselwirkung (II falsch). Antwort: I und III.",
         "fr": "Dans NH3, les H sont liés à N, porteur d'un doublet non liant : liaisons hydrogène avec l'eau (I vraie). CH3OH possède un groupe O–H et des doublets sur O : liaisons hydrogène avec l'eau (III vraie). Dans CH4, les H sont liés au carbone et il n'y a ni F, ni O, ni N : pas de liaison hydrogène, seulement des interactions dipôle-dipôle induit avec l'eau (II fausse). Réponse : I et III.",
         "ru": "В NH3 атомы H связаны с N, у которого есть неподелённая пара, поэтому NH3 образует водородные связи с водой (I верно). У CH3OH есть группа O–H и неподелённые пары на O — тоже водородные связи (III верно). В CH4 атомы H связаны с углеродом, а F, O или N нет; с водой возникает лишь взаимодействие диполь – наведённый диполь (II неверно). Ответ: I и III.",
-        "ar": "في NH3 ترتبط ذرات H بالنيتروجين الذي يحمل زوجاً حراً، فيكوّن روابط هيدروجينية مع الماء (I صحيحة). وفي CH3OH مجموعة O–H وأزواج حرة على O، فيكوّن روابط هيدروجينية مع الماء (III صحيحة). أما في CH4 فترتبط ذرات H بالكربون ولا يوجد F أو O أو N، فلا يكوّن روابط هيدروجينية بل تآثر ثنائي القطب–المستحث مع الماء (II خاطئة). الإجابة: I وIII.",
+        "ar": "في NH3 ترتبط ذرات H بالنيتروجين الذي يحمل زوجاً حراً، فيكوّن روابط هيدروجينية مع الماء (I صحيحة). وفي CH3OH مجموعة O–H وأزواج حرة على O، فيكوّن روابط هيدروجينية مع الماء (III صحيحة). أما في CH4 فترتبط ذرات H بالكربون ولا يوجد F أو O أو N، فلا يكوّن روابط هيدروجينية بل يتآثر مع الماء بتآثر ثنائي القطب–ثنائي القطب المستحث (II خاطئة). الإجابة: I وIII.",
         "zh": "NH3 中 H 与 N 相连，N 上有孤电子对，能与水形成氢键(I 正确)。CH3OH 含 O–H 基团且 O 上有孤电子对，能与水形成氢键(III 正确)。CH4 中 H 与碳相连，分子中没有 F、O、N，不能与水形成氢键，与水之间只有偶极-诱导偶极作用(II 错误)。答案：I 和 III。",
         "ku": "Di NH3 de atomên H bi N ve girêdayî ne û li ser N cotek neparvekirî heye; bi avê re girêdana hîdrojenê çêdike (I rast e). Di CH3OH de koma O–H û cotên neparvekirî yên li ser O hene; bi avê re girêdana hîdrojenê çêdike (III rast e). Di CH4 de atomên H bi karbonê ve girêdayî ne û F, O an N tune; bi avê re girêdana hîdrojenê çênake, tenê têkiliya dupol – dupola înduksiyonî çêdibe (II şaş e). Bersiv: I û III."
       }
@@ -2193,7 +2193,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "HCl (36,5 g/mol) und F2 (38 g/mol) haben ähnliche molare Massen, doch HCl hat den höheren Siedepunkt. Was ist der Grund?",
         "fr": "HCl (36,5 g/mol) et F2 (38 g/mol) ont des masses molaires voisines, mais HCl a le point d'ébullition le plus élevé. Pourquoi ?",
         "ru": "У HCl (36,5 г/моль) и F2 (38 г/моль) близкие молярные массы, но температура кипения HCl выше. В чём причина?",
-        "ar": "الكتلتان الموليتان لـ HCl (36,5 g/mol) وF2 (38 g/mol) متقاربتان، لكن درجة غليان HCl أعلى. ما السبب؟",
+        "ar": "الكتلتان الموليتان لـ HCl (36.5 g/mol) وF2 (38 g/mol) متقاربتان، لكن درجة غليان HCl أعلى. ما السبب؟",
         "zh": "HCl(36.5 g/mol)和 F2(38 g/mol)的摩尔质量相近，但 HCl 的沸点更高。原因是什么？",
         "ku": "Girseyên molar ên HCl (36,5 g/mol) û F2 (38 g/mol) nêzî hev in, lê xala kelandinê ya HCl bilindtir e. Sedema vê çi ye?"
       },
@@ -2256,7 +2256,7 @@ export const unit03: ChemistryUnitSeedData = {
         "de": "Bei ähnlicher molarer Masse und Elektronenzahl sind die London-Kräfte ähnlich. In HCl unterscheiden sich H und Cl in der Elektronegativität, das Molekül ist polar, und es wirken zusätzlich Dipol-Dipol-Kräfte; F2 ist unpolar und hat nur London-Kräfte. Für Wasserstoffbrücken muss H an F, O oder N gebunden sein, was bei H–Cl nicht zutrifft. F2 hat sogar die etwas größere molare Masse; beim Sieden werden keine Bindungen im Molekül gespalten.",
         "fr": "Avec des masses molaires et des nombres d'électrons voisins, les deux substances ont des forces de London semblables. Dans HCl, H et Cl ont des électronégativités différentes, la molécule est polaire et des interactions dipôle-dipôle s'ajoutent ; F2 est apolaire et n'a que des forces de London. Une liaison hydrogène exige un H lié à F, O ou N, ce qui n'est pas le cas de H–Cl. F2 a même une masse molaire un peu plus grande, et l'ébullition ne rompt pas les liaisons internes.",
         "ru": "Молярные массы и числа электронов у двух веществ близки, поэтому лондоновские силы у них сходны. В HCl атомы H и Cl различаются электроотрицательностью, молекула полярна, и между молекулами дополнительно действуют диполь-дипольные взаимодействия; F2 неполярен, и между его молекулами действуют только лондоновские силы. Для водородной связи нужен атом H, связанный с F, O или N, — связь H–Cl этому условию не отвечает. Молярная масса F2 даже немного больше, а при кипении внутримолекулярные связи не разрываются.",
-        "ar": "لأن الكتلتين الموليتين وعددي الإلكترونات متقاربة فقوى لندن متشابهة في المادتين. وفي HCl تختلف كهرسلبية H وCl فالجزيء قطبي ويوجد بين الجزيئات تآثر ثنائي القطب إضافي، أما F2 فغير قطبي وليس فيه إلا قوى لندن. وتتطلب الرابطة الهيدروجينية ذرة H مرتبطة بـ F أو O أو N وهذا لا يتحقق في H–Cl. والكتلة المولية لـ F2 أكبر قليلاً أصلاً، ولا تنكسر الروابط داخل الجزيء عند الغليان.",
+        "ar": "لتقارب الكتلتين الموليتين وعددي الإلكترونات تتشابه قوى لندن في المادتين. وفي HCl تختلف السالبية الكهربائية لـ H وCl فالجزيء قطبي، ويوجد بين جزيئاته إضافةً إلى ذلك تآثر ثنائي القطب–ثنائي القطب، أما F2 فغير قطبي وليس فيه إلا قوى لندن. وتتطلب الرابطة الهيدروجينية ذرة H مرتبطة بـ F أو O أو N وهذا لا يتحقق في H–Cl. والكتلة المولية لـ F2 أكبر قليلاً أصلاً، ولا تنكسر الروابط داخل الجزيء عند الغليان.",
         "zh": "两者摩尔质量和电子数相近，色散力相似。HCl 中 H 与 Cl 电负性不同，分子有极性，分子间还额外存在偶极-偶极作用；F2 是非极性分子，只有色散力。形成氢键要求 H 与 F、O 或 N 相连，H–Cl 不满足这一条件。F2 的摩尔质量其实还略大一些；沸腾时分子内的化学键并不断开。",
         "ku": "Ji ber ku girseyên molar û hejmarên elektronan nêzî hev in, hêzên London ên her du madeyan dişibin hev. Di HCl de elektronegatîfiya H û Cl cuda ye, molekul polar e û di navbera molekulan de têkiliyên dupol-dupol ên zêde hene; F2 apolar e û tenê hêzên London hene. Ji bo girêdana hîdrojenê divê H bi F, O an N ve girêdayî be, H–Cl vê şertê pêk nayne. Girseya molar a F2 bi rastî hinekî mezintir e; di kelandinê de girêdanên hundirê molekulê naşikin."
       }

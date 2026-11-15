@@ -12,7 +12,7 @@ export const unit14: ChemistryUnitSeedData = {
     "de": "Flüssige Lösungen & Konzentrationen",
     "fr": "Solutions Liquides & Concentrations",
     "ru": "Жидкие растворы и способы выражения концентрации",
-    "ar": "المحاليل السائلة والتركيز",
+    "ar": "المحاليل السائلة ووحدات التركيز",
     "zh": "溶液与浓度单位",
     "ku": "Şilavên Çareseriyê û Yekeyên Hêrbûnê"
   },
@@ -22,7 +22,7 @@ export const unit14: ChemistryUnitSeedData = {
     "de": "Molarität, Molalität, Stoffmengenanteil und Verdünnung",
     "fr": "Molarité, molalité, fraction taupe et dilution",
     "ru": "Молярность, моляльность, мольная доля и разбавление",
-    "ar": "المولارية، المولالية، الكسر المولي والتخفيف",
+    "ar": "المولارية والمولالية والكسر المولي والتخفيف",
     "zh": "物质的量浓度、质量摩尔浓度、物质的量分数与稀释",
     "ku": "Molarity, Molality, Mole Fraction and Dilution"
   },
@@ -35,7 +35,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Molarität (M) ist die Anzahl der Mol gelöster Substanz in 1 Liter Lösung (M = n / V_Lösung(L)).",
         "fr": "La molarité (M) est le nombre de moles de substance dissoute dans 1 litre de solution (M = n / V_solution(L)).",
         "ru": "Молярная концентрация (молярность, M) — число молей растворённого вещества в 1 л раствора (M = n / V_раствора(л)).",
-        "ar": "المولارية (M) هي عدد مولات المادة المذابة في 1 لتر من المحلول (M = n / V_solution(L)).",
+        "ar": "المولارية (M) هي عدد مولات المادة المذابة في 1 L من المحلول (M = n / V_solution(L)).",
         "zh": "物质的量浓度(M)是每 1 L 溶液中所含溶质的物质的量(M = n / V溶液(L))。",
         "ku": "Molarîte (M) hejmara molên maddeya helbûyî ye di 1 lître çareseriyê de (M = n / V_çareserî(L))."
       },
@@ -45,7 +45,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Die Molarität ist die Anzahl der Mol gelöster Substanz in 1 Kilogramm Lösungsmittel.",
         "fr": "La molarité est le nombre de moles de soluté dans 1 kilogramme de solvant.",
         "ru": "Молярность — число молей растворённого вещества в 1 кг растворителя.",
-        "ar": "المولارية هي عدد مولات المذاب في 1 كيلوجرام من المذيب.",
+        "ar": "المولارية هي عدد مولات المذاب في 1 kg من المذيب.",
         "zh": "物质的量浓度是每 1 kg 溶剂中所含溶质的物质的量。",
         "ku": "Molarîte hejmara molên çareserbûyî ye di 1 kîlogram çareserker de."
       },
@@ -68,7 +68,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Molalität (m) ist die Anzahl der Mol gelöster Stoffe, die in 1 Kilogramm (1000 g) Lösungsmittel gelöst sind (m = n / kg_Lösungsmittel).",
         "fr": "La molalité (m) est le nombre de moles de soluté dissoutes dans 1 kilogramme (1 000 g) de solvant (m = n / kg_solvant).",
         "ru": "Моляльность (m) — число молей растворённого вещества в 1 кг (1000 г) растворителя (m = n / кг_растворителя).",
-        "ar": "المولالية (m) هي عدد مولات المذاب في 1 كيلوغرام (1000 g) من المذيب (m = n / kg_solvent).",
+        "ar": "المولالية (m) هي عدد مولات المذاب في 1 kg (1000 g) من المذيب (m = n / kg_solvent).",
         "zh": "质量摩尔浓度(m)是每 1 kg(1000 g)溶剂中所含溶质的物质的量(m = n / kg溶剂)。",
         "ku": "Molalîte (m) hejmara molên çareserbûyî ye ku di 1 kîlogram (1000 g) çareserker de heliyane (m = n / kg_solvent)."
       },
@@ -88,7 +88,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Teilt man die Stoffmenge durch das Lösungsvolumen, erhält man die Molarität. Bei der Molalität wird nicht durch ein Volumen, sondern nur durch die Masse des Lösungsmittels in Kilogramm geteilt.",
         "fr": "Diviser le nombre de moles par le volume de solution donne la molarité. Pour la molalité, on divise non par un volume mais par la seule masse du solvant, en kilogrammes.",
         "ru": "Деление числа молей на объём раствора даёт молярность. В моляльности число молей делят не на объём, а только на массу растворителя в килограммах.",
-        "ar": "قسمة عدد المولات على حجم المحلول تعطي المولارية. أما في المولالية فيُقسم عدد المولات لا على حجم بل على كتلة المذيب وحده بالكيلوغرام.",
+        "ar": "قسمة عدد المولات على حجم المحلول تعطي المولارية. أما في المولالية فيُقسم عدد المولات لا على الحجم بل على كتلة المذيب وحده بالكيلوغرام.",
         "zh": "用物质的量除以溶液体积得到的是物质的量浓度。质量摩尔浓度是用物质的量除以溶剂本身的质量（千克），而不是除以体积。",
         "ku": "Dabeşkirina hejmara molan li ser qebareya çareseriyê molarîteyê dide. Di molalîteyê de hejmara molan ne li ser qebareyê, lê tenê li ser girseya çareserker bi kîlogram tê dabeşkirin."
       }
@@ -121,7 +121,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Die Stoffmenge einer Komponente kann nie größer sein als die Gesamtstoffmenge des Gemisches. Deshalb liegt ein Stoffmengenanteil zwischen 0 und 1, und die Anteile aller Komponenten ergeben zusammen 1.",
         "fr": "Le nombre de moles d'un constituant ne peut jamais dépasser le nombre total de moles du mélange. La fraction molaire reste donc entre 0 et 1, et la somme des fractions molaires de tous les constituants vaut 1.",
         "ru": "Число молей одного компонента не может превышать общее число молей смеси. Поэтому мольная доля лежит между 0 и 1, а сумма мольных долей всех компонентов равна 1.",
-        "ar": "لا يمكن أن يزيد عدد مولات مكوّن واحد على العدد الكلي لمولات المزيج. لذلك يبقى الكسر المولي بين 0 و1، ومجموع الكسور المولية لجميع المكونات يساوي 1.",
+        "ar": "لا يمكن أن يزيد عدد مولات مكوّن واحد على العدد الكلي لمولات المخلوط. لذلك يبقى الكسر المولي بين 0 و1، ومجموع الكسور المولية لجميع المكونات يساوي 1.",
         "zh": "某一组分的物质的量不可能超过混合物的总物质的量，因此物质的量分数总在0到1之间，所有组分的物质的量分数之和为1。",
         "ku": "Hejmara molan a pêkhateyekê nikare ji hejmara giştî ya molan a tevlîheviyê mezintir be. Ji ber vê yekê kesra molî di navbera 0 û 1 de dimîne û berhevoka kesrên molî yên hemû pêkhateyan 1 e."
       }
@@ -134,7 +134,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Wenn die Dichte und der Massenanteil bekannt sind, wird die Molarität mit der Formel berechnet: M = (%C * d * 10) / MA.",
         "fr": "Lorsque la densité et le pourcentage massique sont connus, la molarité est calculée avec la formule : M = (%C * d * 10) / MA.",
         "ru": "Если известны плотность раствора и массовая доля растворённого вещества (в %), молярность вычисляют по формуле M = (%C * d * 10) / MA.",
-        "ar": "عندما تكون الكثافة ونسبة الكتلة معروفة، يتم حساب المولارية بالصيغة: M = (%C * d * 10) / MA.",
+        "ar": "إذا عُلمت الكثافة والنسبة المئوية الكتلية تُحسب المولارية بالعلاقة: M = (%C * d * 10) / MA.",
         "zh": "已知密度和质量分数时，物质的量浓度可用公式 M = (%C * d * 10) / MA 计算。",
         "ku": "Dema ku tîrbûn û ji sedî bi girseyî tên zanîn, molarîte bi vê formulê tê hesibandin: M = (%C * d * 10) / MA."
       },
@@ -144,7 +144,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Bei der Berechnung der Molarität wird die Lösungsdichte durch den Massenprozentsatz dividiert.",
         "fr": "Lors du calcul de la molarité, la densité de la solution est divisée par le pourcentage massique.",
         "ru": "При расчёте молярности плотность раствора делят на массовую долю (%).",
-        "ar": "عند حساب المولارية، يتم تقسيم كثافة المحلول على النسبة المئوية للكتلة.",
+        "ar": "عند حساب المولارية تُقسم كثافة المحلول على النسبة المئوية الكتلية.",
         "zh": "计算物质的量浓度时，用溶液密度除以质量分数。",
         "ku": "Dema molarîte tê hesibandin, tîrbûna çareseriyê li ser ji sedî bi girseyî tê dabeşkirin."
       },
@@ -200,7 +200,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Wenn ein ionischer Feststoff in Wasser gelöst wird, ist die Ionenkonzentration in der Lösung das Produkt aus der Molarität des Salzes und dem Ionenkoeffizienten.",
         "fr": "Lorsqu'un solide ionique est dissous dans l'eau, la concentration en ions dans la solution est le produit de la molarité du sel et du coefficient ionique.",
         "ru": "При растворении ионного твёрдого вещества в воде концентрация каждого иона равна молярности соли, умноженной на число этих ионов в формуле.",
-        "ar": "عندما تذوب مادة صلبة أيونية في الماء، فإن تركيز الأيونات في المحلول يكون حاصل ضرب مولارية الملح والمعامل الأيوني.",
+        "ar": "عندما تذوب مادة صلبة أيونية في الماء يكون تركيز الأيون في المحلول حاصل ضرب مولارية الملح في معامل ذلك الأيون.",
         "zh": "离子化合物溶于水后，溶液中某种离子的浓度等于盐的物质的量浓度乘以化学式中该离子的个数。",
         "ku": "Dema hişkeke îyonî di avê de dihele, hûrbûna îyonekê di çareseriyê de bi qasî hilbera molarîteya xwêyê û hejmara wê îyonê ya di formulê de ye."
       },
@@ -210,7 +210,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
         "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
         "ru": "В 0,1 M растворе AlCl3 концентрация хлорид-ионов равна 0,1 M.",
-        "ar": "تركيز أيون الكلوريد في محلول 0.1 مولار AlCl3 هو 0.1 مولار.",
+        "ar": "في محلول AlCl3 تركيزه 0.1 M يكون تركيز أيون الكلوريد 0.1 M.",
         "zh": "0.1 M AlCl3 溶液中的氯离子浓度为 0.1 M。",
         "ku": "Di çareseriya 0,1 M AlCl3 de hûrbûna îyona klorîdê 0,1 M e."
       },
@@ -220,7 +220,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Jede AlCl3-Einheit liefert beim Lösen ein Al3+ und drei Cl--Ionen. Wer vergisst, die Salzkonzentration mit dem Ionenkoeffizienten zu multiplizieren, erhält [Cl-] dreimal zu klein.",
         "fr": "Chaque unité AlCl3 libère en se dissolvant un ion Al3+ et trois ions Cl-. Oublier de multiplier la concentration du sel par le coefficient de l'ion donne une valeur de [Cl-] trois fois trop petite.",
         "ru": "Каждая формульная единица AlCl3 при растворении даёт один ион Al3+ и три иона Cl-. Если забыть умножить концентрацию соли на число ионов, значение [Cl-] получится втрое меньше.",
-        "ar": "كل وحدة AlCl3 تعطي عند ذوبانها أيون Al3+ واحدًا وثلاثة أيونات Cl-. نسيان ضرب تركيز الملح في معامل الأيون يجعل قيمة [Cl-] أصغر بثلاث مرات.",
+        "ar": "كل وحدة AlCl3 تعطي عند ذوبانها أيون Al3+ واحدًا وثلاثة أيونات Cl-. ونسيان ضرب تركيز الملح في معامل الأيون يعطي لـ [Cl-] قيمة تساوي ثلث قيمتها الصحيحة.",
         "zh": "1 个 AlCl3 溶解时产生 1 个 Al3+ 和 3 个 Cl-。忘记把盐的浓度乘以离子个数，求得的 [Cl-] 就只有实际值的三分之一。",
         "ku": "Her yekeya AlCl3 dema ku dihele îyonek Al3+ û sê îyonên Cl- dide. Jibîrkirina pirjimarkirina hûrbûna xwê bi rêjeya îyonê [Cl-] sê caran biçûktir dide."
       },
@@ -230,7 +230,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "In 0,1 M AlCl3 ist [Cl-] = 3 * 0,1 = 0,3 M!",
         "fr": "Dans 0,1 M AlCl3, [Cl-] = 3 * 0,1 = 0,3 M !",
         "ru": "В 0,1 M AlCl3 [Cl-] = 3 * 0,1 = 0,3 M!",
-        "ar": "في 0.1 مولار AlCl3، [Cl-] = 3 * 0.1 = 0.3 مولار!",
+        "ar": "في محلول AlCl3 تركيزه 0.1 M يكون [Cl-] = 3 * 0.1 = 0.3 M!",
         "zh": "0.1 M AlCl3 溶液中，[Cl-] = 3 * 0.1 = 0.3 M！",
         "ku": "Di 0,1 M AlCl3 de [Cl-] = 3 * 0,1 = 0,3 M e!"
       }
@@ -243,7 +243,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Wenn der Lösung reines Wasser zugesetzt wird (Verdünnung), ändert sich die Molzahl des gelösten Stoffes nicht; Die Formel lautet M1V1 = M2V2.",
         "fr": "Lorsque de l’eau pure est ajoutée à la solution (dilution), le nombre de moles de soluté ne change pas ; La formule est M1V1 = M2V2.",
         "ru": "При добавлении к раствору чистой воды (разбавлении) число молей растворённого вещества не меняется: M1V1 = M2V2.",
-        "ar": "عند إضافة الماء النقي إلى المحلول (التخفيف)، لا يتغير عدد مولات المذاب؛ الصيغة هي M1V1 = M2V2.",
+        "ar": "عند إضافة الماء النقي إلى المحلول (التخفيف) لا يتغير عدد مولات المذاب؛ والعلاقة هي M1V1 = M2V2.",
         "zh": "向溶液中加入纯水（稀释）时，溶质的物质的量不变；公式为 M1V1 = M2V2。",
         "ku": "Dema ku ava paqij li çareseriyê tê zêdekirin (sivikkirin), hejmara molên çareserbûyî naguhere; formul M1V1 = M2V2 ye."
       },
@@ -276,7 +276,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Wenn Wasser aus der Lösung verdampft wird, ohne dass es zur Ausfällung kommt (Konzentration), erhöht sich die Molarität.",
         "fr": "Si l'eau s'évapore de la solution sans précipiter (concentration), la molarité augmente.",
         "ru": "Если выпаривать воду из раствора так, чтобы осадок не выпадал (концентрирование), молярность увеличивается.",
-        "ar": "إذا تبخر الماء من المحلول دون ترسيب (تركيز)، تزداد المولارية.",
+        "ar": "إذا بُخّر الماء من المحلول دون حدوث ترسب (زيادة التركيز)، تزداد المولارية.",
         "zh": "在没有晶体析出的情况下蒸发溶液中的水（浓缩），物质的量浓度增大。",
         "ku": "Ger av ji çareseriyê bêyî niştinê were hilmkirin (tîrkirin), molarîte zêde dibe."
       },
@@ -296,7 +296,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Nur das Wasser verdampft; solange nichts ausfällt, bleibt die Masse des gelösten Stoffes gleich. Weil das Volumen abnimmt, steigt lediglich die Konzentration.",
         "fr": "Seule l'eau s'évapore ; tant qu'il n'y a pas de précipitation, la masse de soluté ne change pas. Comme le volume diminue, c'est la concentration qui augmente.",
         "ru": "Испаряется только вода; пока осадок не выпадает, масса растворённого вещества не меняется. Объём уменьшается, поэтому меняется лишь концентрация — она растёт.",
-        "ar": "الذي يتبخر هو الماء فقط؛ وما دام لا يحدث ترسب فإن كتلة المذاب لا تتغير. وبما أن الحجم يقل فإن التغير هو زيادة التركيز.",
+        "ar": "الذي يتبخر هو الماء فقط؛ وما دام لا يحدث ترسب فإن كتلة المذاب لا تتغير. وبما أن الحجم يقل فالذي يتغير هو أن التركيز يزداد.",
         "zh": "蒸发掉的只是水；只要没有晶体析出，溶质的质量就不变。体积减小，因而变化的是浓度增大。",
         "ku": "Tenê av dibe hilm; heta ku tiştek neniştibe, girseya çareserbûyî naguhere. Ji ber ku qebare kêm dibe, ya ku diguhere zêdebûna hûrbûnê ye."
       }
@@ -342,7 +342,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Mit steigender Temperatur nimmt die Molarität leicht ab, da sich das Volumen flüssiger Lösungen ausdehnt; Die Molalität ändert sich nicht mit der Temperatur.",
         "fr": "À mesure que la température augmente, la molarité diminue légèrement à mesure que le volume des solutions liquides augmente ; La molalité ne change pas avec la température.",
         "ru": "С повышением температуры жидкие растворы расширяются, поэтому молярность немного уменьшается; моляльность от температуры не зависит.",
-        "ar": "مع زيادة درجة الحرارة، تنخفض المولارية قليلاً مع توسع حجم المحاليل السائلة؛ المولالية لا تتغير مع درجة الحرارة.",
+        "ar": "بارتفاع درجة الحرارة يتمدد حجم المحاليل السائلة فتنخفض المولارية قليلًا؛ أما المولالية فلا تتغير بتغير درجة الحرارة.",
         "zh": "温度升高时液态溶液的体积膨胀，物质的量浓度略有减小；质量摩尔浓度则不随温度变化。",
         "ku": "Her ku germahî zêde dibe, ji ber ku qebareya çareseriyên şil fireh dibe molarîte hinekî kêm dibe; molalîte bi germahiyê naguhere."
       },
@@ -352,7 +352,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Die Molalität nimmt mit steigender Temperatur aufgrund der Volumenausdehnung ab.",
         "fr": "La molalité diminue à mesure que la température augmente en raison de l'expansion du volume.",
         "ru": "С повышением температуры моляльность уменьшается из-за теплового расширения раствора.",
-        "ar": "تتناقص المولالية مع زيادة درجة الحرارة بسبب توسع الحجم.",
+        "ar": "تتناقص المولالية بارتفاع درجة الحرارة بسبب تمدد الحجم.",
         "zh": "质量摩尔浓度随温度升高而减小，因为溶液体积膨胀。",
         "ku": "Her ku germahî zêde dibe ji ber berbelavbûna qebareyê molalîte kêm dibe."
       },
@@ -385,7 +385,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Fügt man einer ungesättigten Lösung Wasser hinzu, wird diese gesättigt.",
         "fr": "Si de l'eau est ajoutée à une solution insaturée, elle devient saturée.",
         "ru": "Если к ненасыщенному раствору добавить воду, он станет насыщенным.",
-        "ar": "إذا أضيف الماء إلى محلول غير مشبع، يصبح مشبعا.",
+        "ar": "إذا أُضيف الماء إلى محلول غير مشبع يصبح مشبعًا.",
         "zh": "向不饱和溶液中加水，它就会变成饱和溶液。",
         "ku": "Ger av li çareseriyeke netêr were zêdekirin, ew têr dibe."
       },
@@ -408,7 +408,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Elektrolytlösungen leiten elektrischen Strom, weil sie freie Ionen (Salzwasser, Säuren, Basen) enthalten.",
         "fr": "Les solutions électrolytiques conduisent le courant électrique car elles contiennent des ions libres (eau salée, acides, bases).",
         "ru": "Растворы электролитов проводят электрический ток, так как содержат свободные ионы (солёная вода, растворы кислот и оснований).",
-        "ar": "تقوم محاليل الإلكتروليت بتوصيل التيار الكهربائي لأنها تحتوي على أيونات حرة (ماء مالح، أحماض، قواعد).",
+        "ar": "توصل المحاليل الإلكتروليتية التيار الكهربائي لاحتوائها على أيونات حرة (الماء المالح، الأحماض، القواعد).",
         "zh": "电解质溶液含有自由移动的离子，因此能导电（如盐水、酸溶液、碱溶液）。",
         "ku": "Çareseriyên elektrolît ji ber ku îyonên azad dihewînin herikîna elektrîkê diguhezînin (ava xwê, asîd, baz)."
       },
@@ -418,7 +418,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Zuckerwasser leitet Elektrizität sehr gut, da es freie Ionen enthält.",
         "fr": "L’eau sucrée conduit très bien l’électricité car elle contient des ions libres.",
         "ru": "Раствор сахара в воде очень хорошо проводит электрический ток, так как содержит свободные ионы.",
-        "ar": "يوصل الماء بالسكر الكهرباء بشكل جيد للغاية لأنه يحتوي على أيونات حرة.",
+        "ar": "يوصل الماء المحلّى بالسكر الكهرباء جيدًا جدًا لاحتوائه على أيونات حرة.",
         "zh": "糖水含有自由离子，因此导电性很好。",
         "ku": "Ava bi şekir ji ber ku îyonên azad dihewîne elektrîkê pir baş diguhezîne."
       },
@@ -451,7 +451,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Zucker ionisiert in Wasser und zerfällt in H+- und OH--Ionen.",
         "fr": "Le sucre s'ionise dans l'eau et se dissocie en ions H+ et OH-.",
         "ru": "Сахар в воде диссоциирует на ионы H+ и OH-.",
-        "ar": "يتأين السكر في الماء ويتفكك إلى أيونات H+ و OH-.",
+        "ar": "يتأين السكر في الماء ويتفكك إلى أيونات H+ وOH-.",
         "zh": "糖在水中电离出 H+ 和 OH-。",
         "ku": "Şekir di avê de îyonîze dibe û dibe îyonên H+ û OH-."
       },
@@ -474,7 +474,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Die Anzahl der Mol NaCl, gelöst in 0,2 M 500 ml NaCl-Lösung, beträgt n = M * V = 0,2 * 0,5 = 0,1 Mol.",
         "fr": "Le nombre de moles de NaCl dissoutes dans une solution de NaCl 0,2 M dans 500 ml est n = M * V = 0,2 * 0,5 = 0,1 mol.",
         "ru": "В 500 мл 0,2 M раствора NaCl содержится n = M * V = 0,2 * 0,5 = 0,1 моль NaCl.",
-        "ar": "عدد مولات NaCl المذابة في محلول NaCl 0.2 M 500 ml هو n = M * V = 0.2 * 0.5 = 0.1 mol.",
+        "ar": "عدد مولات NaCl المذابة في 500 mL من محلول NaCl تركيزه 0.2 M هو n = M * V = 0.2 * 0.5 = 0.1 mol.",
         "zh": "500 mL 0.2 M NaCl 溶液中所溶解 NaCl 的物质的量为 n = M * V = 0.2 * 0.5 = 0.1 mol。",
         "ku": "Hejmara molên NaCl ya ku di 500 mL çareseriya NaCl ya 0,2 M de heliyaye n = M * V = 0,2 * 0,5 = 0,1 mol e."
       },
@@ -484,7 +484,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "1 Mol Salz wurde in 500 ml einer 0,2 M Lösung gelöst.",
         "fr": "1 mole de sel a été dissoute dans 500 ml de solution 0,2 M.",
         "ru": "В 500 мл 0,2 M раствора растворён 1 моль соли.",
-        "ar": "تم إذابة 1 مول من الملح في 500 مل من محلول 0.2 م.",
+        "ar": "يحتوي 500 mL من محلول تركيزه 0.2 M على 1 mol من الملح المذاب.",
         "zh": "500 mL 0.2 M 溶液中溶解了 1 mol 盐。",
         "ku": "Di 500 mL çareseriya 0,2 M de 1 mol xwê heliyaye."
       },
@@ -494,7 +494,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Für 1 mol gelösten Stoff bräuchte man 5 L einer 0,2 M Lösung. Da 500 mL = 0,5 L sind, ist n = 0,2 · 0,5 = 0,1 mol.",
         "fr": "Pour 1 mol de soluté, il faudrait 5 L d'une solution à 0,2 M. Comme 500 mL = 0,5 L, n = 0,2 · 0,5 = 0,1 mol.",
         "ru": "Для 1 моль растворённого вещества понадобилось бы 5 л 0,2 M раствора. Так как 500 мл = 0,5 л, n = 0,2 · 0,5 = 0,1 моль.",
-        "ar": "لاحتواء 1 mol من المذاب يلزم 5 L من محلول تركيزه 0,2 M. وبما أن 500 mL = 0,5 L فإن n = 0,2 · 0,5 = 0,1 mol.",
+        "ar": "لاحتواء 1 mol من المذاب يلزم 5 L من محلول تركيزه 0.2 M. وبما أن 500 mL = 0.5 L فإن n = 0.2 · 0.5 = 0.1 mol.",
         "zh": "要含有 1 mol 溶质，需要 5 L 0.2 M 溶液。500 mL = 0.5 L，所以 n = 0.2 × 0.5 = 0.1 mol。",
         "ku": "Ji bo 1 mol çareserbûyî 5 L ji çareseriya 0,2 M pêwîst bû. Ji ber ku 500 mL = 0,5 L e, n = 0,2 · 0,5 = 0,1 mol e."
       }
@@ -507,7 +507,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Mit zunehmender Lösungskonzentration nimmt die Anzahl der gelösten Partikel im Einheitsvolumen zu.",
         "fr": "À mesure que la concentration de la solution augmente, le nombre de particules de soluté dans l’unité de volume augmente.",
         "ru": "С увеличением концентрации раствора растёт число частиц растворённого вещества в единице объёма.",
-        "ar": "مع زيادة تركيز المحلول، يزداد عدد جزيئات المذاب في وحدة الحجم.",
+        "ar": "بزيادة تركيز المحلول يزداد عدد جسيمات المذاب في وحدة الحجم.",
         "zh": "溶液浓度越大，单位体积中溶质粒子的数目越多。",
         "ku": "Her ku hûrbûna çareseriyê zêde dibe, hejmara perçeyên çareserbûyî di yekeya qebareyê de zêde dibe."
       },
@@ -517,7 +517,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Konzentrierte Lösung bedeutet immer gesättigte Lösung.",
         "fr": "Une solution concentrée signifie toujours une solution saturée.",
         "ru": "Концентрированный раствор — всегда насыщенный.",
-        "ar": "المحلول المركز يعني دائمًا المحلول المشبع.",
+        "ar": "المحلول المركّز يعني دائمًا محلولًا مشبعًا.",
         "zh": "浓溶液一定是饱和溶液。",
         "ku": "Çareseriya konsantrekirî her tim tê wateya çareseriya têrbûyî."
       },
@@ -527,7 +527,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Konzentriert/verdünnt beschreibt die relative Menge an gelöstem Stoff, gesättigt/ungesättigt, ob die Löslichkeitsgrenze erreicht ist. Ein gut löslicher Stoff kann eine konzentrierte, aber ungesättigte, ein schwer löslicher eine verdünnte, aber gesättigte Lösung bilden.",
         "fr": "Concentrée/diluée décrit la quantité relative de soluté ; saturée/insaturée indique si la limite de solubilité est atteinte. Une substance très soluble peut donner une solution concentrée mais insaturée, et une substance peu soluble une solution diluée mais saturée.",
         "ru": "Понятия «концентрированный/разбавленный» говорят об относительном количестве растворённого вещества, а «насыщенный/ненасыщенный» — о том, достигнут ли предел растворимости. Хорошо растворимое вещество может дать концентрированный, но ненасыщенный раствор, а малорастворимое — разбавленный, но насыщенный.",
-        "ar": "مركّز/مخفف يصف الكمية النسبية للمذاب، أما مشبع/غير مشبع فيصف بلوغ حد الذوبانية أو عدمه. يمكن لمادة عالية الذوبانية أن تعطي محلولًا مركزًا غير مشبع، ولمادة قليلة الذوبانية أن تعطي محلولًا مخففًا مشبعًا.",
+        "ar": "وصفا «مركّز» و«مخفف» يعبّران عن الكمية النسبية للمذاب، أما وصفا «مشبع» و«غير مشبع» فيعبّران عن بلوغ حد الذائبية أو عدمه. يمكن لمادة عالية الذائبية أن تعطي محلولًا مركزًا غير مشبع، ولمادة قليلة الذائبية أن تعطي محلولًا مخففًا مشبعًا.",
         "zh": "浓/稀描述溶质的相对多少，饱和/不饱和描述是否达到溶解度极限。溶解度大的物质可以形成浓而不饱和的溶液，溶解度小的物质可以形成稀而饱和的溶液。",
         "ku": "Hûr/sist mîqdara nisbî ya çareserbûyî nîşan dide; têr/netêr jî nîşan dide ka sînorê helbûnê hatiye gihîştin an na. Maddeyek bi helbûna bilind dikare çareseriyek hûr lê netêr, maddeyek bi helbûna nizm jî çareseriyek sist lê têr çêke."
       }
@@ -540,7 +540,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Prozentuale Konzentration nach Volumen = (Volumen der gelösten Flüssigkeit / Gesamtvolumen der Lösung) x 100 (z. B. 80° Cologne).",
         "fr": "Pourcentage de concentration en volume = (Volume de liquide dissous / Volume total de solution) x 100 (par exemple eau de Cologne à 80°).",
         "ru": "Объёмная доля (%) = (объём растворённой жидкости / общий объём раствора) x 100 (например, одеколон крепостью 80°).",
-        "ar": "نسبة التركيز بالحجم = (حجم السائل المذاب / الحجم الإجمالي للمحلول) × 100 (على سبيل المثال 80 درجة كولونيا).",
+        "ar": "النسبة المئوية الحجمية = (حجم السائل المذاب / الحجم الكلي للمحلول) × 100 (مثل الكولونيا 80°).",
         "zh": "体积分数 = (溶质液体的体积 / 溶液总体积) x 100，例如 80° 的古龙水。",
         "ku": "Hûrbûna ji sedî bi qebareyî = (Qebareya Şileya Helbûyî / Qebareya Giştî ya Çareseriyê) x 100 (mînak: kolonyaya 80°)."
       },
@@ -550,7 +550,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Volumenprozent wird nur in Fest-Flüssig-Lösungen verwendet.",
         "fr": "Le pourcentage en volume est utilisé uniquement dans les solutions solides-liquides.",
         "ru": "Объёмную долю (%) используют только для растворов твёрдых веществ в жидкостях.",
-        "ar": "يتم استخدام النسبة المئوية للحجم فقط في المحاليل الصلبة والسائلة.",
+        "ar": "تُستخدم النسبة المئوية الحجمية في محاليل صلب–سائل فقط.",
         "zh": "体积分数只用于固体溶于液体形成的溶液。",
         "ku": "Ji sedî bi qebareyî tenê di çareseriyên hişk-şil de tê bikaranîn."
       },
@@ -608,7 +608,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Elektrolytlösung",
         "fr": "Solution électrolytique",
         "ru": "Раствор электролита",
-        "ar": "محلول بالكهرباء",
+        "ar": "المحلول الإلكتروليتي",
         "zh": "电解质溶液",
         "ku": "Çareseriya Elektrolîtê"
       },
@@ -618,7 +618,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Nicht-Elektrolyt-Lösung",
         "fr": "Solution sans électrolyte",
         "ru": "Раствор неэлектролита",
-        "ar": "محلول غير بالكهرباء",
+        "ar": "المحلول غير الإلكتروليتي",
         "zh": "非电解质的溶液",
         "ku": "Çareseriya Ne-Elektrolîte"
       },
@@ -628,7 +628,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Elektrolytlösungen leiten den Strom durch die Bewegung von Ionen; in Nichtelektrolytlösungen liegt der gelöste Stoff als Moleküle vor, daher leiten sie nicht.",
         "fr": "Les solutions électrolytiques conduisent l'électricité grâce au déplacement des ions ; dans les solutions non électrolytiques, le soluté est sous forme de molécules, elles ne conduisent donc pas.",
         "ru": "Раствор электролита проводит электрический ток за счёт движения ионов; раствор неэлектролита не проводит ток, так как растворённое вещество находится в нём в виде молекул.",
-        "ar": "تنقل محاليل الإلكتروليتات الكهرباء بحركة الأيونات؛ أما في محاليل غير الإلكتروليتات فيوجد المذاب على شكل جزيئات، لذلك لا تنقل الكهرباء.",
+        "ar": "المحلول الإلكتروليتي يوصل الكهرباء بحركة الأيونات؛ أما المحلول غير الإلكتروليتي فيوجد فيه المذاب على هيئة جزيئات، لذلك لا يوصل الكهرباء.",
         "zh": "电解质溶液依靠离子的定向移动导电；非电解质的溶液中溶质以分子形式存在，因此不导电。",
         "ku": "Çareseriyên elektrolît bi tevgera îyonan elektrîkê diguhezînin; di çareseriyên ne-elektrolît de maddeya helbûyî wekî molekul heye, ji ber vê elektrîkê naguhezînin."
       }
@@ -684,7 +684,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Massenprozent (%C)",
         "fr": "Pourcentage en masse (%C)",
         "ru": "Массовая доля (%C)",
-        "ar": "النسبة المئوية للكتلة (٪ C)",
+        "ar": "النسبة المئوية الكتلية (%C)",
         "zh": "质量分数(%C)",
         "ku": "Ji sedî bi girseyî (%C)"
       },
@@ -694,7 +694,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Molenanteil ist das Verhältnis der Stoffmenge einer Komponente zur Gesamtstoffmenge; Massenprozent ist das mit 100 multiplizierte Verhältnis der Masse des gelösten Stoffes zur Masse der Lösung.",
         "fr": "La fraction molaire est le rapport du nombre de moles d'un constituant au nombre total de moles ; le pourcentage en masse est le rapport de la masse de soluté à la masse de la solution, multiplié par 100.",
         "ru": "Мольная доля (X) — отношение числа молей компонента к общему числу молей; массовая доля (%C) — отношение массы растворённого вещества к массе раствора, умноженное на 100.",
-        "ar": "الكسر المولي هو نسبة عدد مولات أحد المكونات إلى العدد الكلي للمولات؛ أما النسبة المئوية للكتلة فهي نسبة كتلة المذاب إلى كتلة المحلول مضروبة في 100.",
+        "ar": "الكسر المولي نسبةُ عدد مولات أحد المكونات إلى العدد الكلي للمولات؛ أما النسبة المئوية الكتلية فنسبةُ كتلة المذاب إلى كتلة المحلول مضروبةً في 100.",
         "zh": "物质的量分数(X)是某一组分的物质的量与总物质的量之比；而质量分数(%C)是溶质质量与溶液质量之比乘以 100。",
         "ku": "Parçeya molê rêjeya hejmara molên pêkhênerekê bi hejmara giştî ya molan re ye; ji sedî bi girseyî rêjeya girseya çareserbûyî bi girseya çareseriyê re ye ku bi 100 tê pirjimarkirin."
       }
@@ -707,7 +707,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Konzentrierte Lösung",
         "fr": "Solution concentrée",
         "ru": "Концентрированный раствор",
-        "ar": "محلول مركز",
+        "ar": "المحلول المركز",
         "zh": "浓溶液",
         "ku": "Çareseriya konsantrekirî"
       },
@@ -727,7 +727,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "In konzentrierter Lösung ist die Menge an gelöstem Stoff pro Volumeneinheit größer; In verdünnter Lösung ist die Menge an gelöstem Stoff pro Volumeneinheit gering.",
         "fr": "En solution concentrée, la quantité de soluté par unité de volume est plus grande ; En solution diluée, la quantité de soluté par unité de volume est faible.",
         "ru": "Концентрированный раствор содержит много растворённого вещества в единице объёма; разбавленный раствор содержит мало растворённого вещества в единице объёма.",
-        "ar": "في المحلول المركز، تكون كمية المذاب لكل وحدة حجم أكبر؛ في المحلول المخفف، تكون كمية المذاب في وحدة الحجم صغيرة.",
+        "ar": "في المحلول المركز تكون كمية المذاب في وحدة الحجم كبيرة؛ أما في المحلول المخفف فتكون كمية المذاب في وحدة الحجم قليلة.",
         "zh": "浓溶液中单位体积所含的溶质较多；而稀溶液中单位体积所含的溶质较少。",
         "ku": "Di çareseriya konsantrekirî de mîqdara çareserbûyî ya di yekeya qebareyê de zêde ye; di çareseriya sivik de mîqdara çareserbûyî ya di yekeya qebareyê de hindik e."
       }
@@ -740,7 +740,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Ungesättigte Lösung",
         "fr": "Solution insaturée",
         "ru": "Ненасыщенный раствор",
-        "ar": "محلول غير مشبع",
+        "ar": "المحلول غير المشبع",
         "zh": "不饱和溶液",
         "ku": "Çareseriya Netêr"
       },
@@ -750,7 +750,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Gesättigte Lösung",
         "fr": "Solution saturée",
         "ru": "Насыщенный раствор",
-        "ar": "محلول مشبع",
+        "ar": "المحلول المشبع",
         "zh": "饱和的溶液",
         "ku": "Çareseriya Têrbûyî"
       },
@@ -760,7 +760,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Eine ungesättigte Lösung enthält bei einer bestimmten Temperatur weniger gelösten Stoff als die lösbare Höchstmenge und kann noch weiteren Stoff lösen; eine gesättigte Lösung enthält die Höchstmenge an gelöstem Stoff, die bei dieser Temperatur lösbar ist.",
         "fr": "Une solution insaturée contient, à une température donnée, moins de soluté qu'elle ne peut en dissoudre et peut encore en dissoudre ; une solution saturée contient la quantité maximale de soluté qu'elle peut dissoudre à cette température.",
         "ru": "Ненасыщенный раствор при данной температуре содержит меньше растворённого вещества, чем может растворить, и может растворить ещё; насыщенный раствор содержит наибольшее количество вещества, которое может раствориться при этой температуре.",
-        "ar": "المحلول غير المشبع يحتوي عند درجة حرارة معينة على مذاب أقل مما يستطيع إذابته ويمكنه إذابة المزيد؛ أما المحلول الذي بلغ حد الإشباع فيحتوي على أكبر كمية من المذاب يستطيع إذابتها عند تلك الدرجة.",
+        "ar": "المحلول غير المشبع يحتوي عند درجة حرارة معينة على كمية من المذاب أقل مما يستطيع إذابته، ويمكنه إذابة المزيد؛ أما المحلول المشبع فيحتوي على أكبر كمية من المذاب يمكنه إذابتها عند تلك الدرجة.",
         "zh": "不饱和溶液在一定温度下所含溶质少于它能溶解的量，还能继续溶解溶质；而饱和的溶液含有该温度下它所能溶解的最大量溶质。",
         "ku": "Çareseriya netêr di germahiyeke diyarkirî de ji mîqdara ku dikare bihelîne kêmtir çareserbûyî dihewîne û dikare hinekî din jî bihelîne; çareseriya têrbûyî mîqdara herî zêde ya çareserbûyî ya ku di wê germahiyê de dikare bihelîne dihewîne."
       }
@@ -826,7 +826,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Ionenkonzentration erhält man, indem man die Molarität der Verbindung mit der Anzahl dieses Ions in der Formel multipliziert; die Molarität der Verbindung ist die Stoffmenge gelöster Formeleinheiten in 1 L Lösung (in 0,1 M AlCl3 ist [Al3+] = 0,1 M und [Cl-] = 0,3 M).",
         "fr": "La concentration d'un ion s'obtient en multipliant la molarité du composé par le nombre de cet ion dans la formule ; la molarité du composé est le nombre de moles d'unités formulaires dissoutes dans 1 L de solution (dans AlCl3 0,1 M, [Al3+] = 0,1 M et [Cl-] = 0,3 M).",
         "ru": "Концентрация ионов определяется умножением молярности соединения на число этих ионов в формуле; молярность соединения — число молей растворённых формульных единиц в 1 л раствора (в 0,1 M AlCl3 [Al3+] = 0,1 M, [Cl-] = 0,3 M).",
-        "ar": "تركيز الأيون يُحسب بضرب مولارية المركّب في عدد ذلك الأيون في الصيغة؛ أما مولارية المركّب فهي عدد مولات وحدات الصيغة المذابة في 1 L من المحلول (في محلول AlCl3 تركيزه 0,1 M يكون [Al3+] = 0,1 M و[Cl-] = 0,3 M).",
+        "ar": "تركيز الأيون يُحسب بضرب مولارية المركّب في عدد ذلك الأيون في الصيغة؛ أما مولارية المركّب فعددُ مولات وحدات الصيغة المذابة في 1 L من المحلول (في محلول AlCl3 تركيزه 0.1 M يكون [Al3+] = 0.1 M و[Cl-] = 0.3 M).",
         "zh": "离子浓度等于化合物的物质的量浓度乘以化学式中该离子的个数；而化合物的物质的量浓度是每 1 L 溶液中所溶解的化学式单元的物质的量(0.1 M AlCl3 溶液中 [Al3+] = 0.1 M，[Cl-] = 0.3 M)。",
         "ku": "Hûrbûna îyonê bi pirjimarkirina molarîteya pêkhateyê bi hejmara wê îyonê ya di formulê de tê dîtin; molarîteya pêkhateyê hejmara molan a yekeyên formulê ye ku di 1 L çareseriyê de heliyane (di 0,1 M AlCl3 de [Al3+] = 0,1 M û [Cl-] = 0,3 M)."
       }
@@ -841,7 +841,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Berechnungsschritte für das Lösungsmischen",
         "fr": "Étapes de calcul du mélange de solutions",
         "ru": "Порядок расчёта при смешивании растворов",
-        "ar": "خطوات حساب خلط المحاليل",
+        "ar": "حساب تراكيز المحاليل المخلوطة",
         "zh": "溶液混合计算步骤",
         "ku": "Pêngavên Hesabkirina Tevlihevkirina Çareseriyan"
       },
@@ -852,7 +852,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "Molarität und Volumen jeder Lösung sowie die Anzahl des gesuchten Ions in jeder Formel werden festgestellt",
           "fr": "On relève la molarité et le volume de chaque solution ainsi que le nombre de l'ion cherché dans chaque formule",
           "ru": "Определяют молярность и объём каждого раствора и число искомых ионов в формуле каждого вещества",
-          "ar": "تُحدَّد مولارية كل محلول وحجمه وعدد الأيون المطلوب في كل صيغة",
+          "ar": "تُحدَّد مولارية كل محلول وحجمه وعدد الأيون المطلوب في صيغته",
           "zh": "确定每种溶液的物质的量浓度、体积以及化学式中所求离子的个数",
           "ku": "Molarîte û qebareya her çareseriyê û hejmara îyona xwestî ya di her formulê de tên diyarkirin"
         },
@@ -962,7 +962,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "Es werden die Anfangskonzentration M1 und das Volumen V1 bestimmt",
           "fr": "La concentration initiale M1 et le volume V1 sont déterminés",
           "ru": "Определяют начальную концентрацию M1 и объём V1",
-          "ar": "يتم تحديد التركيز الأولي M1 والحجم V1",
+          "ar": "يُحدَّد التركيز الابتدائي M1 والحجم V1",
           "zh": "确定初始浓度 M1 和体积 V1",
           "ku": "Hûrbûna destpêkê M1 û qebareya destpêkê V1 tên diyarkirin"
         },
@@ -982,7 +982,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "Die Gleichung M1.V1 = M2.V2 wird geschrieben",
           "fr": "On écrit l'égalité M1.V1 = M2.V2",
           "ru": "Записывают равенство M1.V1 = M2.V2",
-          "ar": "يتم كتابة المعادلة M1.V1 = M2.V2",
+          "ar": "تُكتب العلاقة M1.V1 = M2.V2",
           "zh": "写出等式 M1.V1 = M2.V2",
           "ku": "Wekheviya M1.V1 = M2.V2 tê nivîsandin"
         },
@@ -992,7 +992,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "Die Konzentration M2 der neuen verdünnten Lösung wird berechnet",
           "fr": "La concentration M2 de la nouvelle solution diluée est calculée",
           "ru": "Вычисляют концентрацию M2 нового разбавленного раствора",
-          "ar": "يتم حساب التركيز M2 للمحلول المخفف الجديد",
+          "ar": "يُحسب التركيز M2 للمحلول المخفف الجديد",
           "zh": "计算稀释后新溶液的浓度 M2",
           "ku": "Hûrbûna M2 ya çareseriya nû ya sivikkirî tê hesibandin"
         }
@@ -1063,7 +1063,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "200 mL einer 0,4 M Ca(NO3)2-Lösung werden mit 300 mL einer 0,2 M NaNO3-Lösung gemischt. Die Salze sind vollständig dissoziiert und die Volumina additiv. Wie groß ist die molare Konzentration der NO3--Ionen in der Endlösung?",
         "fr": "On mélange 200 mL d'une solution de Ca(NO3)2 à 0,4 M avec 300 mL d'une solution de NaNO3 à 0,2 M. En admettant que les sels sont totalement dissociés et que les volumes s'additionnent, quelle est la concentration molaire des ions NO3- dans la solution finale ?",
         "ru": "Смешивают 200 мл 0,4 M раствора Ca(NO3)2 и 300 мл 0,2 M раствора NaNO3. Считая, что соли полностью диссоциированы, а объёмы складываются, определите молярную концентрацию ионов NO3- в полученном растворе.",
-        "ar": "يُخلط 200 mL من محلول Ca(NO3)2 تركيزه 0.4 M مع 300 mL من محلول NaNO3 تركيزه 0.2 M. بافتراض أن الملحين يتأينان تمامًا وأن الحجوم تُجمع، ما التركيز المولي لأيون NO3- في المحلول النهائي؟",
+        "ar": "يُخلط 200 mL من محلول Ca(NO3)2 تركيزه 0.4 M مع 300 mL من محلول NaNO3 تركيزه 0.2 M. بافتراض أن الملحين يتأينان تمامًا وأن الحجوم تُجمع، ما التركيز المولاري لأيون NO3- في المحلول النهائي؟",
         "zh": "把 200 mL 0.4 M 的 Ca(NO3)2 溶液与 300 mL 0.2 M 的 NaNO3 溶液混合。假设盐完全电离且体积可以相加，最终溶液中 NO3- 离子的物质的量浓度是多少？",
         "ku": "200 mL çareseriya Ca(NO3)2 ya 0,4 M bi 300 mL çareseriya NaNO3 ya 0,2 M re tê tevlihevkirin. Bi qebûlkirina ku xwê bi tevahî îyonîze dibin û qebare li hev zêde dibin, hûrbûna molar a îyona NO3- di çareseriya dawî de çend M e?"
       },
@@ -1074,7 +1074,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "0,44 M",
           "fr": "0,44 M",
           "ru": "0,44 M",
-          "ar": "0.44 م",
+          "ar": "0.44 M",
           "zh": "0.44 M",
           "ku": "0,44 M"
         },
@@ -1084,7 +1084,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "0,28 M",
           "fr": "0,28 M",
           "ru": "0,28 M",
-          "ar": "0.28 م",
+          "ar": "0.28 M",
           "zh": "0.28 M",
           "ku": "0,28 M"
         },
@@ -1094,7 +1094,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "0,20 M",
           "fr": "0,20 M",
           "ru": "0,20 M",
-          "ar": "0.20 م",
+          "ar": "0.20 M",
           "zh": "0.20 M",
           "ku": "0,20 M"
         },
@@ -1104,7 +1104,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "0,60 M",
           "fr": "0,60 M",
           "ru": "0,60 M",
-          "ar": "0.60 م",
+          "ar": "0.60 M",
           "zh": "0.60 M",
           "ku": "0,60 M"
         },
@@ -1114,7 +1114,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "0,50 M",
           "fr": "0,50 M",
           "ru": "0,50 M",
-          "ar": "0.50 م",
+          "ar": "0.50 M",
           "zh": "0.50 M",
           "ku": "0,50 M"
         }
@@ -1139,7 +1139,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Wie groß ist die molare Konzentration einer konzentrierten HCl-Lösung mit einem Massenanteil von 36,5 % und einer Dichte von 1,2 g/mL? (HCl: 36,5 g/mol)",
         "fr": "Quelle est la concentration molaire d'une solution concentrée de HCl à 36,5 % en masse et de masse volumique 1,2 g/mL ? (HCl : 36,5 g/mol)",
         "ru": "Какова молярная концентрация концентрированного раствора HCl с массовой долей 36,5 % и плотностью 1,2 г/мл? (HCl: 36,5 г/моль)",
-        "ar": "ما التركيز المولي لمحلول HCl المركز الذي نسبته الكتلية 36.5% وكثافته 1.2 g/mL؟ (HCl: 36.5 g/mol)",
+        "ar": "ما التركيز المولاري لمحلول HCl المركز الذي نسبته الكتلية 36.5% وكثافته 1.2 g/mL؟ (HCl: 36.5 g/mol)",
         "zh": "质量分数为 36.5%、密度为 1.2 g/mL 的浓盐酸的物质的量浓度是多少 M？(HCl：36.5 g/mol)",
         "ku": "Hûrbûna molar a çareseriya HCl ya konsantrekirî ku ji sedî 36,5 bi girseyî ye û tîrbûna wê 1,2 g/mL ye çend M e? (HCl: 36,5 g/mol)"
       },
@@ -1150,7 +1150,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "12,0 M",
           "fr": "12,0 M",
           "ru": "12,0 M",
-          "ar": "12.0 م",
+          "ar": "12.0 M",
           "zh": "12.0 M",
           "ku": "12,0 M"
         },
@@ -1160,7 +1160,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "6,0 M",
           "fr": "6,0 M",
           "ru": "6,0 M",
-          "ar": "6.0 م",
+          "ar": "6.0 M",
           "zh": "6.0 M",
           "ku": "6,0 M"
         },
@@ -1170,7 +1170,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "1,2 M",
           "fr": "1,2 M",
           "ru": "1,2 M",
-          "ar": "1.2 م",
+          "ar": "1.2 M",
           "zh": "1.2 M",
           "ku": "1,2 M"
         },
@@ -1180,7 +1180,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "10,0 M",
           "fr": "10,0 M",
           "ru": "10,0 M",
-          "ar": "10.0 م",
+          "ar": "10.0 M",
           "zh": "10.0 M",
           "ku": "10,0 M"
         },
@@ -1190,7 +1190,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "3,65 M",
           "fr": "3,65 M",
           "ru": "3,65 M",
-          "ar": "3.65 م",
+          "ar": "3.65 M",
           "zh": "3.65 M",
           "ku": "3,65 M"
         }
@@ -1519,7 +1519,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Bei welchem der folgenden Paare gelöster Stoff – Lösungsmittel ist die beim Lösen zwischen den Teilchen vorherrschende Wechselwirkung falsch angegeben?",
         "fr": "Pour lequel des couples soluté – solvant suivants l'interaction dominante qui s'établit entre les particules lors de la dissolution est-elle indiquée de façon incorrecte ?",
         "ru": "В какой из пар «растворённое вещество — растворитель» неверно указано преобладающее взаимодействие между частицами при растворении?",
-        "ar": "في أيّ من أزواج المذاب – المذيب الآتية أُعطي التآثر السائد الذي ينشأ بين الدقائق أثناء الذوبان بشكل خاطئ؟",
+        "ar": "في أيّ من أزواج المذاب – المذيب الآتية ذُكر خطأً التآثر السائد الذي ينشأ بين الجسيمات أثناء الذوبان؟",
         "zh": "下列溶质–溶剂组合中，哪一组所给出的溶解时粒子间形成的主要相互作用是错误的？",
         "ku": "Di kîjan ji van cotên çareserbûyî – çareserker de, têkiliya serdest a ku di dema helandinê de di navbera perçeyan de çêdibe şaş hatiye dayîn?"
       },
@@ -1658,7 +1658,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Beim Verdünnen ändert sich die Stoffmenge des gelösten Stoffes nicht: M1V1 = M2V2 → 0,6 · 200 = 0,2 · V2 → V2 = 600 mL. Das ist das Volumen der Endlösung; da anfangs 200 mL vorlagen, müssen 600 − 200 = 400 mL Wasser zugegeben werden. 600 mL für die zuzugebende Wassermenge zu halten, ist der häufigste Fehler.",
         "fr": "Lors d'une dilution, le nombre de moles de soluté ne change pas : M1V1 = M2V2 → 0,6 · 200 = 0,2 · V2 → V2 = 600 mL. C'est le volume de la solution finale ; comme il y avait 200 mL au départ, il faut ajouter 600 − 200 = 400 mL d'eau. Prendre 600 mL pour le volume d'eau ajouté est l'erreur la plus fréquente.",
         "ru": "При разбавлении число молей растворённого вещества не меняется: M1V1 = M2V2 → 0,6 · 200 = 0,2 · V2 → V2 = 600 мл. Это объём конечного раствора; так как вначале было 200 мл, добавить нужно 600 − 200 = 400 мл воды. Самая частая ошибка — считать 600 мл объёмом добавленной воды.",
-        "ar": "في التخفيف لا يتغير عدد مولات المذاب: M1V1 = M2V2 ← 0.6 · 200 = 0.2 · V2 ← V2 = 600 mL. هذا هو حجم المحلول النهائي؛ وبما أنه كان في البداية 200 mL فإن الماء الواجب إضافته هو 600 − 200 = 400 mL. اعتبار 600 mL هو حجم الماء المضاف هو الخطأ الأكثر شيوعًا.",
+        "ar": "في التخفيف لا يتغير عدد مولات المذاب: M1V1 = M2V2 → 0.6 · 200 = 0.2 · V2 → V2 = 600 mL. هذا هو حجم المحلول النهائي؛ وبما أنه كان في البداية 200 mL فإن الماء الواجب إضافته هو 600 − 200 = 400 mL. اعتبار 600 mL هو حجم الماء المضاف هو الخطأ الأكثر شيوعًا.",
         "zh": "稀释时溶质的物质的量不变：M1V1 = M2V2 → 0.6 × 200 = 0.2 × V2 → V2 = 600 mL。这是最终溶液的体积；原有 200 mL，所以需加水 600 − 200 = 400 mL。把 600 mL 当作加入的水量是最常见的错误。",
         "ku": "Di sistkirinê de hejmara molan a çareserbûyî naguhere: M1V1 = M2V2 → 0,6 · 200 = 0,2 · V2 → V2 = 600 mL. Ev qebareya çareseriya dawî ye; ji ber ku di destpêkê de 200 mL hebû, ava ku divê were zêdekirin 600 − 200 = 400 mL e. Hesibandina 600 mL wek ava zêdekirî şaşiya herî berbelav e."
       }
@@ -2038,7 +2038,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Alkoholvolumen im entnommenen Teil = 150 · 0,40 = 60 mL. Wasserzugabe ändert das Alkoholvolumen nicht; das Endvolumen ist 500 mL, also Volumenanteil = 60 / 500 · 100 = 12 %. Wer 60 mL als Prozentwert nimmt, erhält 60 %, wer die ganzen 150 mL als Alkohol rechnet, 30 %, wer keine Verdünnung annimmt, 40 %, und wer 40 durch das Endvolumen teilt, 8 %.",
         "fr": "Volume d'alcool dans la portion prélevée = 150 · 0,40 = 60 mL. L'ajout d'eau ne change pas ce volume ; le volume final est 500 mL, donc pourcentage en volume = 60 / 500 · 100 = 12 %. Prendre 60 mL pour un pourcentage donne 60 %, compter les 150 mL comme de l'alcool donne 30 %, supposer qu'il n'y a pas de dilution donne 40 %, et diviser 40 par le volume final donne 8 %.",
         "ru": "Объём спирта во взятой порции = 150 · 0,40 = 60 мл. Добавление воды не меняет объём спирта; конечный объём 500 мл, значит объёмная доля = 60 / 500 · 100 = 12%. Если принять 60 мл за проценты, получится 60%, если считать все 150 мл спиртом — 30%, если не учесть разбавление — 40%, если разделить 40 на конечный объём — 8%.",
-        "ar": "حجم الكحول في الجزء المأخوذ = 150 · 0.40 = 60 mL. إضافة الماء لا تغير حجم الكحول؛ والحجم النهائي 500 mL، إذن النسبة الحجمية = 60 / 500 · 100 = 12%. اعتبار 60 mL نسبة مئوية يعطي 60%، واعتبار الـ 150 mL كلها كحولًا يعطي 30%، وافتراض عدم حدوث تخفيف يعطي 40%، وقسمة 40 على الحجم النهائي يعطي 8%.",
+        "ar": "حجم الكحول في الجزء المأخوذ = 150 · 0.40 = 60 mL. إضافة الماء لا تغير حجم الكحول؛ والحجم النهائي 500 mL، إذن النسبة الحجمية = 60 / 500 · 100 = 12%. اعتبار 60 mL نسبة مئوية يعطي 60%، واعتبار الـ 150 mL كلها كحولًا يعطي 30%، وافتراض عدم حدوث تخفيف يعطي 40%، وقسمة 40 على الحجم النهائي تعطي 8%.",
         "zh": "所取部分中乙醇体积 = 150 × 0.40 = 60 mL。加水不改变乙醇体积；最终体积为 500 mL，所以体积分数 = 60 / 500 × 100 = 12%。把 60 mL 当作百分数得 60%，把 150 mL 全当作乙醇得 30%，认为没有稀释得 40%，用 40 除以最终体积得 8%。",
         "ku": "Qebareya alkolê di beşa girtî de = 150 · 0,40 = 60 mL. Zêdekirina avê qebareya alkolê naguhere; qebareya dawî 500 mL e, ji ber vê sedeya qebareyî = 60 / 500 · 100 = %12. Kesê ku 60 mL wek sedeyê digire %60, yê ku hemû 150 mL wek alkol dihesibîne %30, yê ku sistkirinê nahesibîne %40, yê ku 40 li ser qebareya dawî dabeş dike %8 dibîne."
       }
@@ -2051,7 +2051,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "I. 100 mL 0,2 M Na2SO4-Lösung II. 200 mL 0,1 M KCl-Lösung III. 200 mL 0,1 M AlCl3-Lösung In diesen Lösungen sind die Salze vollständig in Ionen dissoziiert. Welche Reihenfolge gibt die Gesamtstoffmenge der Ionen von groß nach klein an?",
         "fr": "I. 100 mL de solution de Na2SO4 à 0,2 M II. 200 mL de solution de KCl à 0,1 M III. 200 mL de solution de AlCl3 à 0,1 M Dans ces solutions, les sels sont totalement dissociés en ions. Quel est l'ordre décroissant du nombre total de moles d'ions ?",
         "ru": "I. 100 мл 0,2 M раствора Na2SO4 II. 200 мл 0,1 M раствора KCl III. 200 мл 0,1 M раствора AlCl3 В этих растворах соли полностью диссоциированы на ионы. В каком варианте растворы расположены в порядке убывания общего числа молей ионов?",
-        "ar": "I. 100 mL من محلول Na2SO4 تركيزه 0.2 M II. 200 mL من محلول KCl تركيزه 0.1 M III. 200 mL من محلول AlCl3 تركيزه 0.1 M الأملاح في هذه المحاليل متفككة كليًا إلى أيونات. أيّ ترتيب يمثل العدد الكلي لمولات الأيونات من الأكبر إلى الأصغر؟",
+        "ar": "I. 100 mL من محلول Na2SO4 تركيزه 0.2 M II. 200 mL من محلول KCl تركيزه 0.1 M III. 200 mL من محلول AlCl3 تركيزه 0.1 M تتفكك الأملاح في هذه المحاليل إلى أيوناتها تفككًا تامًا. ما ترتيب العدد الكلي لمولات الأيونات في هذه المحاليل من الأكبر إلى الأصغر؟",
         "zh": "有下列三种溶液：I. 100 mL 0.2 M Na2SO4 溶液；II. 200 mL 0.1 M KCl 溶液；III. 200 mL 0.1 M AlCl3 溶液。这些溶液中的盐都完全电离，按离子总物质的量由大到小排列，正确的是哪一项？",
         "ku": "I. 100 mL çareseriya Na2SO4 ya 0,2 M II. 200 mL çareseriya KCl ya 0,1 M III. 200 mL çareseriya AlCl3 ya 0,1 M Di van çareseriyan de xwê bi tevahî diqetin îyonan. Rêzkirina hejmara giştî ya molên îyonan ji mezin ber bi biçûk kîjan e?"
       },
@@ -2234,7 +2234,7 @@ export const unit14: ChemistryUnitSeedData = {
           "de": "Die Lösungen in beiden Gefäßen sind ungesättigt.",
           "fr": "Les solutions des deux récipients sont insaturées.",
           "ru": "Растворы в обоих сосудах ненасыщенные.",
-          "ar": "المحلولان في كلا الوعاءين غير مشبعين.",
+          "ar": "المحلول في كلا الوعاءين غير مشبع.",
           "zh": "两个容器中的溶液都不饱和。",
           "ku": "Çareseriyên di her du firaxan de jî netêr in."
         },
@@ -2266,7 +2266,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "In Gefäß 1 hat sich die Höchstmenge gelöst, die 100 g Wasser lösen können (0,2 g X); die Lösung ist gesättigt, wegen der sehr kleinen Stoffmenge aber verdünnt. In Gefäß 2 haben sich nur 50 g Zucker gelöst, obwohl 200 g möglich wären; die Lösung ist ungesättigt, enthält aber viel gelösten Stoff und ist konzentriert. Sättigung betrifft die Löslichkeitsgrenze, Konzentration die Menge des gelösten Stoffes. Würde man in Gefäß 2 weitere 200 g geben, wären es insgesamt 250 g; das übersteigt die Löslichkeit (200 g), 50 g Zucker blieben ungelöst.",
         "fr": "Dans le récipient 1, la quantité maximale que 100 g d'eau peuvent dissoudre (0,2 g de X) est dissoute : la solution est saturée mais, avec si peu de soluté, diluée. Dans le récipient 2, seuls 50 g de sucre sont dissous alors que 200 g pourraient l'être : la solution est insaturée mais contient beaucoup de soluté, elle est concentrée. La saturation concerne la limite de solubilité, la concentration la quantité de soluté. Ajouter 200 g de plus au récipient 2 donnerait 250 g au total, au-delà de la solubilité (200 g) : 50 g de sucre resteraient non dissous.",
         "ru": "В сосуде 1 растворилось максимальное количество X, которое может раствориться в 100 г воды (0,2 г), — раствор насыщенный, но из-за очень малого количества растворённого вещества разбавленный. В сосуде 2 растворилось лишь 50 г сахара из возможных 200 г — раствор ненасыщенный, но концентрированный, так как содержит много растворённого вещества. Насыщенность связана с пределом растворимости, а концентрированность — с количеством растворённого вещества. Если добавить в сосуд 2 ещё 200 г сахара, всего будет 250 г, что больше растворимости (200 г), и 50 г сахара останутся нерастворёнными.",
-        "ar": "في الوعاء 1 ذابت أكبر كمية يمكن أن تذوب في 100 g من الماء (0.2 g من X)، فالمحلول مشبع لكنه مخفف لأن كمية المذاب قليلة جدًا. في الوعاء 2 ذاب 50 g فقط من السكر مع أنه يمكن أن يذوب 200 g، فالمحلول غير مشبع لكنه مركّز لاحتوائه على كمية كبيرة من المذاب. التشبع يتعلق بحد الذوبانية، والتركيز يتعلق بكمية المذاب. ولو أُضيف 200 g أخرى إلى الوعاء 2 لأصبح المجموع 250 g، وهذا يتجاوز الذوبانية (200 g)، فيبقى 50 g من السكر دون ذوبان.",
+        "ar": "في الوعاء 1 ذابت أكبر كمية يمكن أن تذوب في 100 g من الماء (0.2 g من X)، فالمحلول مشبع لكنه مخفف لأن كمية المذاب قليلة جدًا. في الوعاء 2 ذاب 50 g فقط من السكر مع أنه يمكن أن يذوب 200 g، فالمحلول غير مشبع لكنه مركّز لاحتوائه على كمية كبيرة من المذاب. التشبع يتعلق بحد الذائبية، والتركيز يتعلق بكمية المذاب. ولو أُضيف 200 g أخرى إلى الوعاء 2 لأصبح المجموع 250 g، وهذا يتجاوز الذائبية (200 g)، فيبقى 50 g من السكر دون ذوبان.",
         "zh": "1 号容器中溶解了 100 g 水所能溶解的最大量(0.2 g X)，溶液是饱和的，但溶质极少，所以很稀。2 号容器中最多可溶 200 g 糖，只溶了 50 g，溶液不饱和，但溶质很多，所以很浓。饱和与否取决于溶解度极限，浓稀取决于溶质的多少。若再向 2 号容器加入 200 g 糖，共 250 g，超过溶解度(200 g)，会有 50 g 糖不能溶解。",
         "ku": "Di firaxa 1. de mîqdara herî zêde ya ku 100 g av dikare bihelîne (0,2 g X) heliyaye; çareserî têr e lê ji ber ku çareserbûyî gelek hindik e sist e. Di firaxa 2. de dema ku 200 g dikaribû bihele, tenê 50 g şeker heliyaye; çareserî netêr e lê ji ber ku gelek çareserbûyî tê de heye hûr e. Têrbûn bi sînorê helbûnê, hûrbûn jî bi mîqdara çareserbûyî ve girêdayî ye. Ger 200 g din li firaxa 2. were zêdekirin bi giştî 250 g dibe; ev ji helbûnê (200 g) derbas dibe, ji ber vê 50 g şeker naheliyê."
       }

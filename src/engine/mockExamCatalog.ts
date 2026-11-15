@@ -131,7 +131,7 @@ function buildTytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         'Nationale Rang-Simulation: Prüfungsfallen, Molekülpolarität, Molrechnungen und Säure-Base-Metalle.',
         "Simulation Concours National : Pièges d'examen, polarité, stœchiométrie et réactions acides-métaux.",
         'Рейтинговая репетиция всей страны: задания-ловушки, полярность молекул, расчёты количества вещества и кислотно-основные ловушки.',
-        'محاكاة اختبار التفوق الوطني: أسئلة الفخاخ، قطبية الجزيئات، حسابات المولات وتفاعلات الأحماض مع المعادن.',
+        'محاكاة اختبار التفوق الوطني: أسئلة الفخاخ، قطبية الجزيئات، حسابات المولات وتفاعلات الأحماض مع الفلزات.',
         '全国排名模拟：易错陷阱、分子极性、物质的量计算与酸碱陷阱。',
         'Provaya Dereceyê ya Giştî ya Tirkiyeyê: Xefikên azmûnê, molekul û bertekên asîd-metal.'
       );
@@ -147,7 +147,7 @@ function buildAytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         'Grundlagen & Konzepte: Quantenorbitale, ideales Gasgesetz, Molarität, Enthalpie und Gleichgewichtskonstante.',
         "Maîtrise des concepts : Orbitales quantiques, gaz parfaits, molarité, enthalpie et constante d'équilibre.",
         'Основные понятия: квантовые орбитали, уравнение состояния идеального газа, молярная концентрация, энтальпия и выражение константы равновесия.',
-        'ترسيخ المفاهيم الأساسية: المدارات الكمومية، قانون الغاز المثالي، المولارية، الإنثالبيا وثابت الاتزان.',
+        'ترسيخ المفاهيم الأساسية: المدارات الكمومية، قانون الغاز المثالي، المولارية، المحتوى الحراري وثابت الاتزان.',
         '基础与概念巩固：量子轨道、理想气体定律、物质的量浓度、焓与平衡常数表达式。',
         'Orbîtalên kuantumê, zagona gaza îdeal, molarîte, entalpî û hevsengî.'
       );
@@ -180,7 +180,7 @@ function buildAytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         'Nationale Rang-Simulation: Zellspannung und Konzentrationszellen, Ksp-Gemeinsamer-Ion-Effekt, Le Chatelier, VSEPR und Markovnikov.',
         "Simulation Concours National : tension de pile et piles de concentration, effet d'ion commun Ksp, Le Chatelier, VSEPR et Markovnikov.",
         'Рейтинговая репетиция всей страны: ЭДС и концентрационные элементы, Ksp и одноимённый ион, смещение равновесия по Ле Шателье, VSEPR и правило Марковникова.',
-        'محاكاة اختبار التفوق الوطني: جهد الخلية وخلايا التركيز، الأيون المشترك Ksp، مبدأ لوشاتيليه، أشكال VSEPR وقاعدة ماركوفنيكوف.',
+        'محاكاة اختبار التفوق الوطني: جهد الخلية وخلايا التركيز، الأيون المشترك Ksp، مبدأ لوشاتلييه، أشكال VSEPR وقاعدة ماركوفنيكوف.',
         '全国排名模拟：电池电压与浓差电池、Ksp 与同离子效应、勒夏特列原理、VSEPR 与马氏规则。',
         'Provaya Dereceyê ya Giştî ya Tirkiyeyê: Voltaja pîlê û pîlên xestiyê, bandora îyona hevpar di Kçç de û Markovnikov.'
       );

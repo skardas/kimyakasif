@@ -411,7 +411,7 @@ const FIGURE_WORDS: Record<LanguageCode, Record<FigureWord, string>> = {
   },
   ar: {
     pure: 'ماء نقي', soln: 'محلول', heat: 'تسخين', cool: 'تبريد', tC: 'درجة الحرارة (°C)', time: 'الزمن',
-    solub: 'الذائبية (g/100 g ماء)', unsat: 'غير مشبع', supersat: 'فوق مشبع', enth: 'الإنتالبي (kJ)', buf: 'منطقة المحلول المنظم',
+    solub: 'الذائبية (g/100 g ماء)', unsat: 'غير مشبع', supersat: 'فوق مشبع', enth: 'المحتوى الحراري (kJ)', buf: 'منطقة المحلول المنظم',
     cat: 'المهبط', an: 'المصعد', znDown: 'تقل كتلة Zn', cuUp: 'تزداد كتلة Cu',
     allo: 'تتكون الأربعة من ذرات الكربون فقط', nacl: 'محلول NaCl', soil: 'التربة',
     ax3e: 'AX₃E هرم ثلاثي 107°', ratio: 'نسبة الحجوم H₂ : O₂ = 2 : 1', dissolve: 'ذوبان', precip: 'ترسيب',

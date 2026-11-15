@@ -22,7 +22,7 @@ export const unit09: ChemistryUnitSeedData = {
     "de": "pH-Konzept, Neutralisation und Metallreaktionen",
     "fr": "Concept pH, neutralisation et réactions métalliques",
     "ru": "Понятие pH, нейтрализация и реакции металлов",
-    "ar": "مفهوم الرقم الهيدروجيني والتحييد والتفاعلات المعدنية",
+    "ar": "مفهوم الرقم الهيدروجيني والتعادل وتفاعلات الفلزات",
     "zh": "pH 的概念、中和反应与金属的反应",
     "ku": "Têgîna pH, Neutralîzasyon û Reaksiyonên Metal"
   },
@@ -45,7 +45,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Säuren verleihen der Hand ein rutschiges Gefühl und verfärben Lackmus blau.",
         "fr": "Les acides donnent à la main une sensation glissante et font virer le tournesol au bleu.",
         "ru": "Кислоты мылкие на ощупь и окрашивают лакмус в синий цвет.",
-        "ar": "تمنح الأحماض اليد ملمسًا زلقًا وتحوّل لون عباد الشمس إلى اللون الأزرق.",
+        "ar": "للأحماض ملمس زلق على اليد، وهي تحوّل ورق عباد الشمس إلى اللون الأزرق.",
         "zh": "酸摸起来有滑腻感，并能使石蕊变蓝。",
         "ku": "Asîd hestek şilbûnê dide dest û lîmûsê şîn dibin."
       },
@@ -68,7 +68,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Basen geben OH-Ionen an ihre wässrigen Lösungen ab, schmecken bitter und färben roten Lackmus blau.",
         "fr": "Les bases libèrent des ions OH- dans leurs solutions aqueuses, ont un goût amer et font virer au bleu le tournesol rouge.",
         "ru": "В водных растворах основания образуют ионы OH-, имеют горький вкус и окрашивают красный лакмус в синий цвет.",
-        "ar": "تعطي القواعد أيونات OH- لمحاليلها المائية، وطعمها مر ويتحول لون عباد الشمس الأحمر إلى اللون الأزرق.",
+        "ar": "تعطي القواعد أيونات OH- في محاليلها المائية، وطعمها مر، وتحوّل ورق عباد الشمس الأحمر إلى اللون الأزرق.",
         "zh": "碱在水溶液中电离出 OH-，有苦味，能使红色石蕊变蓝。",
         "ku": "Bingeh îyonên OH-ê didin solavên xwe yên avî, tama tal dikin û lîmûsa sor şîn dibin."
       },
@@ -101,7 +101,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Bei 25 °C ist pH < 7 sauer, pH = 7 ist neutral, pH > 7 ist basisch.",
         "fr": "À 25 °C, un pH < 7 est acide, un pH = 7 est neutre, un pH > 7 est basique.",
         "ru": "При 25 °C pH < 7 — кислая среда, pH = 7 — нейтральная, pH > 7 — щелочная.",
-        "ar": "عند 25 درجة مئوية، يكون الرقم الهيدروجيني <7 حمضيًا، ويكون الرقم الهيدروجيني = 7 متعادلًا، ويكون الرقم الهيدروجيني أكبر من 7 أساسيًا.",
+        "ar": "عند 25 °C يكون المحلول حمضيًا إذا كان pH < 7، ومتعادلًا إذا كان pH = 7، وقاعديًا إذا كان pH > 7.",
         "zh": "25 °C 时，pH < 7 为酸性，pH = 7 为中性，pH > 7 为碱性。",
         "ku": "Di 25 °C de, pH <7 asîd e, pH = 7 bêalî ye, pH > 7 bingehîn e."
       },
@@ -111,7 +111,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Eine Lösung mit einem pH-Wert von 8 bei 25 °C ist sauer.",
         "fr": "Une solution avec un pH de 8 à 25 °C est acide.",
         "ru": "Раствор с pH 8 при 25 °C кислый.",
-        "ar": "المحلول ذو الرقم الهيدروجيني 8 عند 25 درجة مئوية يكون حمضيًا.",
+        "ar": "المحلول ذو الرقم الهيدروجيني 8 عند 25 °C يكون حمضيًا.",
         "zh": "25 °C 时，pH 为 8 的溶液呈酸性。",
         "ku": "Çareseriya bi pH 8 di 25 °C de asîdî ye."
       },
@@ -121,7 +121,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Bei 25 °C liegt der Neutralpunkt bei pH = 7; ein pH-Wert von 8 liegt darüber, die Lösung ist also basisch und nicht sauer.",
         "fr": "À 25 °C, la neutralité correspond à pH = 7 ; un pH de 8 est supérieur à cette valeur, la solution est donc basique et non acide.",
         "ru": "При 25 °C нейтральной среде соответствует pH = 7; pH 8 больше этого значения, поэтому раствор не кислый, а щелочной.",
-        "ar": "عند 25 °C تكون نقطة التعادل عند pH = 7؛ والقيمة 8 أكبر منها، لذا فالمحلول قاعدي وليس حمضيًا.",
+        "ar": "عند 25 °C يكون حد التعادل pH = 7؛ والقيمة 8 أكبر منه، لذا فالمحلول قاعدي وليس حمضيًا.",
         "zh": "25 °C 时中性点为 pH = 7；pH 为 8 大于该值，所以溶液呈碱性而非酸性。",
         "ku": "Di 25 °C de sînorê bêalîbûnê pH = 7 e; pH 8 ji vê nirxê mezintir e, ji ber vê yekê çareserî ne asîdî lê bazî ye."
       }
@@ -134,7 +134,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Wenn aktive Metalle (Na, K, Mg, Fe usw.) mit Säuren wie HCl und verdünnter H2SO4 reagieren, setzen sie H2-Gas frei.",
         "fr": "Lorsque les métaux actifs (Na, K, Mg, Fe, etc.) réagissent avec des acides comme HCl et H2SO4 dilué, ils libèrent du gaz H2.",
         "ru": "Активные металлы (Na, K, Mg, Fe и др.) при взаимодействии с такими кислотами, как HCl и разбавленная H2SO4, выделяют газ H2.",
-        "ar": "عندما تتفاعل المعادن النشطة (Na، K، Mg، Fe، إلخ) مع أحماض مثل HCl وH2SO4 المخفف، فإنها تطلق غاز H2.",
+        "ar": "تطلق الفلزات النشطة (Na وK وMg وFe وغيرها) غاز H2 عند تفاعلها مع أحماض مثل HCl وH2SO4 المخفف.",
         "zh": "活泼金属(Na、K、Mg、Fe 等)与 HCl、稀 H2SO4 等酸反应时放出 H2 气体。",
         "ku": "Dema ku metalên çalak (Na, K, Mg, Fe, hwd.) bi asîdên wekî HCl û H2SO4-a sivik re bertek nîşan didin, gaza H2 derdixin."
       },
@@ -144,7 +144,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Wenn aktive Metalle mit verdünnter HCl reagieren, bilden sie SO2-Gas.",
         "fr": "Lorsque les métaux actifs réagissent avec HCl dilué, ils forment du gaz SO2.",
         "ru": "При взаимодействии активных металлов с разбавленной HCl образуется газ SO2.",
-        "ar": "عندما تتفاعل المعادن النشطة مع HCl المخفف، فإنها تكوّن غاز SO2.",
+        "ar": "تكوّن الفلزات النشطة غاز SO2 عند تفاعلها مع HCl المخفف.",
         "zh": "活泼金属与稀 HCl 反应时生成 SO2 气体。",
         "ku": "Dema ku metalên çalak bi HCl-a sivik re bertek nîşan didin, gaza SO2 çêdikin."
       },
@@ -167,7 +167,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Halbedelmetalle (Cu, Ag, Hg) REAGIEREN NICHT mit sauerstofffreien Säuren (HCl, HBr usw.).",
         "fr": "Les métaux semi-nobles (Cu, Ag, Hg) NE RÉAGISSENT PAS avec les acides sans oxygène (HCl, HBr, etc.).",
         "ru": "Полублагородные металлы (Cu, Ag, Hg) не реагируют с бескислородными кислотами (HCl, HBr и др.).",
-        "ar": "المعادن شبه النبيلة (Cu، Ag، Hg) لا تتفاعل مع الأحماض الخالية من الأكسجين (HCl، HBr، إلخ).",
+        "ar": "الفلزات شبه النبيلة (Cu، Ag، Hg) لا تتفاعل مع الأحماض الخالية من الأكسجين (HCl، HBr، إلخ).",
         "zh": "半贵金属(Cu、Ag、Hg)不与无氧酸(HCl、HBr 等)反应。",
         "ku": "Metalên nîv-esîl (Cu, Ag, Hg) bi asîdên bê oksîjen (HCl, HBr, hwd.) REACION NAKIN."
       },
@@ -177,7 +177,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Wenn Kupfermetall in eine HCl-Lösung geworfen wird, gibt es reichlich H2-Gas ab.",
         "fr": "Lorsque le cuivre métallique est jeté dans une solution de HCl, il émet une quantité abondante de gaz H2.",
         "ru": "Медь, опущенная в раствор HCl, выделяет много газа H2.",
-        "ar": "عندما يتم إلقاء معدن النحاس في محلول حمض الهيدروكلوريك (HCl)، فإنه ينبعث منه غاز H2 بكثرة.",
+        "ar": "عند إلقاء فلز النحاس في محلول حمض الهيدروكلوريك (HCl)، ينطلق غاز H2 بكثرة.",
         "zh": "把铜投入 HCl 溶液中会放出大量 H2 气体。",
         "ku": "Dema ku metala sifir di nav çareseriya HCl de tê avêtin, ew gaza H2 ya zêde derdixe."
       },
@@ -210,7 +210,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Von den Säuren reagieren Halbedelmetalle nur mit konzentrierter HNO3 (NO2-Gas), verdünnter HNO3 (NO-Gas) und heißer konzentrierter H2SO4 (SO2-Gas).",
         "fr": "Parmi les acides, les métaux semi-nobles réagissent uniquement avec HNO3 concentré (gaz NO2), HNO3 dilué (gaz NO) et H2SO4 concentré chaud (gaz SO2).",
         "ru": "Из кислот полублагородные металлы реагируют только с концентрированной HNO3 (газ NO2), разбавленной HNO3 (газ NO) и горячей концентрированной H2SO4 (газ SO2).",
-        "ar": "من بين الأحماض، لا تتفاعل المعادن شبه النبيلة إلا مع HNO3 المركز (غاز NO2) وHNO3 المخفف (غاز NO) وH2SO4 المركز الساخن (غاز SO2).",
+        "ar": "من بين الأحماض، لا تتفاعل الفلزات شبه النبيلة إلا مع HNO3 المركز (غاز NO2) وHNO3 المخفف (غاز NO) وH2SO4 المركز الساخن (غاز SO2).",
         "zh": "在酸中，半贵金属只与浓 HNO3 (生成 NO2 气体)、稀 HNO3 (生成 NO 气体)和热的浓 H2SO4 (生成 SO2 气体)反应。",
         "ku": "Ji asîdan, metalên nîv-esîl tenê bi HNO3-a konsantre (gaza NO2), HNO3-a sivik (gaza NO) û H2SO4-a konsantre ya germ (gaza SO2) re reaksiyonê dikin."
       },
@@ -220,7 +220,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Wenn Kupfer mit HNO3 reagiert, entsteht H2-Gas.",
         "fr": "Lorsque le cuivre réagit avec le HNO3, il produit du gaz H2.",
         "ru": "При взаимодействии меди с HNO3 выделяется газ H2.",
-        "ar": "عندما يتفاعل النحاس مع HNO3، فإنه ينتج غاز H2.",
+        "ar": "ينتج النحاس غاز H2 عند تفاعله مع HNO3.",
         "zh": "铜与 HNO3 反应时生成 H2 气体。",
         "ku": "Dema ku sifir bi HNO3 re reaksiyonê dike, gaza H2 çêdike."
       },
@@ -276,7 +276,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Amphotere Metalle (wie Zn, Al, Sn, Pb) reagieren sowohl mit Säuren als auch mit starken Basen wie NaOH und KOH unter Freisetzung von H2-Gas.",
         "fr": "Les métaux amphotères (comme Zn, Al, Sn, Pb) réagissent à la fois avec les acides et avec les bases fortes comme NaOH et KOH en libérant du dihydrogène H2.",
         "ru": "Амфотерные металлы (Zn, Al, Sn, Pb и др.) реагируют и с кислотами, и с сильными основаниями (NaOH, KOH) с выделением газа H2.",
-        "ar": "تتفاعل الفلزات المترددة (مثل Zn وAl وSn وPb) مع الأحماض ومع القواعد القوية مثل NaOH وKOH أيضًا، ويتصاعد غاز H2.",
+        "ar": "تتفاعل الفلزات الأمفوتيرية (مثل Zn وAl وSn وPb) مع الأحماض ومع القواعد القوية مثل NaOH وKOH أيضًا، ويتصاعد غاز H2.",
         "zh": "两性金属(如 Zn、Al、Sn、Pb)既能与酸反应，也能与 NaOH、KOH 等强碱反应，放出 H2 气体。",
         "ku": "Metalên amfoter (wek Zn, Al, Sn, Pb) hem bi asîdan hem jî bi bazên xurt ên wek NaOH û KOH re reaksiyonê dikin û gaza H2 derdixin."
       },
@@ -286,7 +286,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Aluminium reagiert nicht mit Basen, sondern nur mit Säuren.",
         "fr": "L'aluminium ne réagit pas avec les bases, seulement avec les acides.",
         "ru": "Алюминий не реагирует с основаниями — только с кислотами.",
-        "ar": "الألومنيوم لا يتفاعل مع القواعد، ولكن مع الأحماض فقط.",
+        "ar": "لا يتفاعل الألومنيوم مع القواعد، بل يتفاعل مع الأحماض فقط.",
         "zh": "铝不与碱发生反应，只与酸发生反应。",
         "ku": "Aluminium bi bazdan re nagire, tenê bi asîdan re reaksiyonê dike."
       },
@@ -296,7 +296,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Aluminium ist ein amphoteres Metall; es reagiert nicht nur mit Säuren, sondern auch mit starken Basen wie NaOH unter Freisetzung von H2-Gas.",
         "fr": "L'aluminium est un métal amphotère ; il réagit non seulement avec les acides mais aussi avec les bases fortes comme NaOH, en libérant du H2.",
         "ru": "Алюминий — амфотерный металл; он реагирует не только с кислотами, но и с сильными основаниями, например NaOH, с выделением газа H2.",
-        "ar": "الألومنيوم فلز متردد؛ فهو لا يتفاعل مع الأحماض فقط بل مع القواعد القوية مثل NaOH أيضًا، ويتصاعد غاز H2.",
+        "ar": "الألومنيوم فلز أمفوتيري؛ فهو لا يتفاعل مع الأحماض فقط بل مع القواعد القوية مثل NaOH أيضًا، ويتصاعد غاز H2.",
         "zh": "铝是两性金属，不仅能与酸反应，也能与 NaOH 等强碱反应并放出 H2 气体。",
         "ku": "Aluminyûm metaleke amfoter e; ne tenê bi asîdan, bi bazên xurt ên wek NaOH re jî reaksiyonê dike û gaza H2 derdixe."
       }
@@ -309,7 +309,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Wenn Carbonatverbindungen (CaCO3, NaHCO3) mit Säuren reagieren, setzen sie CO2-Gas frei.",
         "fr": "Lorsque les composés carbonatés (CaCO3, NaHCO3) réagissent avec des acides, ils libèrent du CO2 gazeux.",
         "ru": "Карбонаты и гидрокарбонаты (CaCO3, NaHCO3) при взаимодействии с кислотами выделяют газ CO2.",
-        "ar": "عندما تتفاعل مركبات الكربونات (CaCO3، NaHCO3) مع الأحماض، فإنها تطلق غاز CO2.",
+        "ar": "تطلق مركبات الكربونات (CaCO3 وNaHCO3) غاز CO2 عند تفاعلها مع الأحماض.",
         "zh": "碳酸盐(CaCO3、NaHCO3)与酸反应时放出 CO2 气体。",
         "ku": "Dema pêkhateyên karbonatî (CaCO3, NaHCO3) bi asîdan re bertek nîşan didin, gaza CO2 derdixin."
       },
@@ -319,7 +319,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Wenn Säure auf Kalkstein gegossen wird, strömt O2-Gas aus.",
         "fr": "Lorsque de l’acide est versé sur du calcaire, du gaz O2 jaillit.",
         "ru": "Если облить известняк кислотой, бурно выделяется газ O2.",
-        "ar": "عند صب حمض على الحجر الجيري، يتدفق غاز O2.",
+        "ar": "عند صب حمض على الحجر الجيري يندفع غاز O2.",
         "zh": "把酸倒在石灰石上会冒出 O2 气体。",
         "ku": "Dema ku asîd li ser kevirê kilsinî tê rijandin, gaza O2 derdikeve."
       },
@@ -342,7 +342,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Wenn Bleichmittel (NaClO) und Salzsäure (HCl) gemischt werden, wird tödliches Chlorgas (Cl2) freigesetzt; Es sollte NIEMALS gemischt werden!",
         "fr": "Si l'eau de Javel (NaClO) et l'acide chlorhydrique (HCl) sont mélangés, du chlore gazeux mortel (Cl2) est libéré ; Il ne faut JAMAIS le mélanger !",
         "ru": "При смешивании отбеливателя (NaClO) с соляной кислотой (HCl) выделяется смертельно опасный хлор (Cl2); смешивать их ни в коем случае нельзя!",
-        "ar": "إذا تم خلط المبيض (NaClO) وحمض الهيدروكلوريك (HCl)، يتم إطلاق غاز الكلور القاتل (Cl2)؛ لا ينبغي أبدا أن تكون مختلطة!",
+        "ar": "إذا خُلط المبيِّض (NaClO) مع حمض الهيدروكلوريك (HCl) ينطلق غاز الكلور (Cl2) القاتل؛ فلا يجوز خلطهما أبدًا!",
         "zh": "漂白剂(NaClO)与盐酸(HCl)混合会放出致命的氯气(Cl2)；绝对不能混合使用！",
         "ku": "Ger spîçol (NaClO) û asîda hîdrochlorîk (HCl) tevlîhev bibin, gaza klorê ya kujer (Cl2) derdikeve; Divê ew TU carî neyê tevlihev kirin!"
       },
@@ -352,7 +352,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Wenn Bleichmittel und Salzsäure gemischt werden, verdoppelt sich die Reinigungskraft.",
         "fr": "Lorsque l'eau de Javel et l'esprit de sel sont mélangés, le pouvoir nettoyant double.",
         "ru": "Если смешать отбеливатель с соляной кислотой, чистящее действие усилится вдвое.",
-        "ar": "عندما يتم خلط المبيض وروح الملح، تتضاعف قوة التنظيف.",
+        "ar": "عند خلط المبيِّض مع حمض الهيدروكلوريك (روح الملح) تتضاعف قوة التنظيف.",
         "zh": "漂白剂与盐酸混合后去污能力会加倍。",
         "ku": "Dema ku ava çilşoyê û ruhê xwê bên tevlihevkirin, hêza paqijkirinê du qat zêde dibe."
       },
@@ -484,7 +484,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "NaOH, der Wirkstoff von Abflussreinigern, ist eine starke Säure.",
         "fr": "NaOH, la substance active des déboucheurs, est un acide fort.",
         "ru": "NaOH, действующее вещество средств для прочистки труб, — сильная кислота.",
-        "ar": "NaOH، المادة الفعالة في مسلّكات المجاري، حمض قوي.",
+        "ar": "هيدروكسيد الصوديوم (NaOH)، المادة الفعالة في مسلّكات المجاري، حمض قوي.",
         "zh": "管道疏通剂的有效成分 NaOH 是一种强酸。",
         "ku": "NaOH, ku madeya çalak a vekerên lavaboyê ye, asîdeke xurt e."
       },
@@ -550,7 +550,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Natron (Backsoda) ist eine NaOH-Verbindung.",
         "fr": "Le bicarbonate de soude est un composé NaOH.",
         "ru": "Пищевая сода — это NaOH.",
-        "ar": "صودا الخبز عبارة عن مركب NaOH.",
+        "ar": "صودا الخبز هي المركب NaOH.",
         "zh": "小苏打的化学式是 NaOH。",
         "ku": "Soda şîrîn pêkhateyek NaOH e."
       },
@@ -608,7 +608,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Amphoteres Metall",
         "fr": "Métal amphotère",
         "ru": "Амфотерный металл",
-        "ar": "فلز متردد",
+        "ar": "فلز أمفوتيري",
         "zh": "两性金属",
         "ku": "Metala amfoter"
       },
@@ -628,7 +628,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Ein amphoteres Metall (wie Zn, Al) reagiert sowohl mit Säuren als auch mit starken Basen wie NaOH unter Freisetzung von H2-Gas; ein Edelmetall (Au, Pt) reagiert weder mit einer einzelnen Säure noch mit Basen und löst sich nur in Königswasser.",
         "fr": "Un métal amphotère (comme Zn, Al) réagit aussi bien avec les acides qu'avec les bases fortes comme NaOH en dégageant du H2 ; un métal noble (Au, Pt) ne réagit ni avec un acide seul ni avec les bases et ne se dissout que dans l'eau régale.",
         "ru": "Амфотерный металл (например, Zn, Al) реагирует и с кислотами, и с сильными основаниями, такими как NaOH, с выделением газа H2; благородный металл (Au, Pt) не реагирует ни с одной кислотой в отдельности, ни с основаниями и растворяется только в царской водке.",
-        "ar": "الفلز المتردد (مثل Zn وAl) يتفاعل مع الأحماض ومع القواعد القوية مثل NaOH مطلقًا غاز H2؛ أما الفلز النبيل (Au وPt) فلا يتفاعل مع أي حمض منفرد ولا مع القواعد، ولا يذوب إلا في الماء الملكي.",
+        "ar": "الفلز الأمفوتيري (مثل Zn وAl) يتفاعل مع الأحماض ومع القواعد القوية مثل NaOH مطلقًا غاز H2؛ أما الفلز النبيل (Au وPt) فلا يتفاعل مع أي حمض منفرد ولا مع القواعد، ولا يذوب إلا في الماء الملكي.",
         "zh": "两性金属(如 Zn、Al)既能与酸反应，也能与 NaOH 等强碱反应，并放出 H2；贵金属(Au、Pt)不与任何单一的酸反应，也不与碱反应，只溶于王水。",
         "ku": "Metala amfoter (wek Zn, Al) hem bi asîdan hem jî bi bazên xurt ên wek NaOH re dikeve reaksiyonê û gaza H2 derdixe; metala esîl (Au, Pt) ne bi tu asîdeke tenê re ne jî bi bazan re reaksiyonê dike, tenê di ava qralî de dihele."
       }
@@ -661,7 +661,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Eine starke Säure ionisiert in Wasser zu 100 % (HCl, HNO3); eine schwache Säure ionisiert in Wasser nur teilweise und bildet ein Gleichgewicht (HF, CH3COOH).",
         "fr": "Un acide fort s'ionise à 100 % dans l'eau (HCl, HNO3) ; un acide faible ne s'ionise que partiellement dans l'eau et établit un équilibre (HF, CH3COOH).",
         "ru": "Сильная кислота диссоциирует в воде на 100 % (HCl, HNO3); слабая кислота диссоциирует в воде лишь частично, и устанавливается равновесие (HF, CH3COOH).",
-        "ar": "الحمض القوي يتأين بنسبة 100% في الماء (HCl، HNO3)؛ أما الأحماض الضعيفة فتتأين جزئيًا في الماء وتصل إلى حالة اتزان (HF، CH3COOH).",
+        "ar": "في الحمض القوي يكون التأين في الماء بنسبة 100% (HCl، HNO3)؛ أما الأحماض الضعيفة فتتأين جزئيًا في الماء وتصل إلى حالة اتزان (HF، CH3COOH).",
         "zh": "强酸在水中 100% 电离(HCl、HNO3)；弱酸在水中部分电离并建立平衡(HF、CH3COOH)。",
         "ku": "Asîdên xurt di avê de 100% îyonîze dibin (HCl, HNO3); asîdên qels di avê de tenê qismî îyonîze dibin û hevsengî çêdibe (HF, CH3COOH)."
       }
@@ -760,7 +760,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Eine konzentrierte Säure ist eine Lösung, die pro Volumeneinheit viel gelöste Säure enthält; eine starke Säure ist dagegen eine Säure, die in Wasser vollständig ionisiert. Die beiden Eigenschaften sind unabhängig voneinander: Auch in sehr verdünnter Lösung ist HCl eine starke Säure.",
         "fr": "Un acide concentré est une solution contenant beaucoup d'acide dissous par unité de volume ; un acide fort est un acide qui s'ionise totalement dans l'eau. Ces deux propriétés sont indépendantes : même en solution très diluée, HCl reste un acide fort.",
         "ru": "Концентрированная кислота содержит много растворённой кислоты в единице объёма раствора; сильная кислота полностью диссоциирует в воде. Эти два свойства не зависят друг от друга: даже в очень разбавленном растворе HCl остаётся сильной кислотой.",
-        "ar": "الحمض المركّز محلول يحتوي على كمية كبيرة من الحمض المذاب في وحدة الحجم؛ أما الأحماض القوية فهي التي تتأين كليًا في الماء. والخاصيتان مستقلتان: فحتى في محلول مخفّف جدًّا يبقى HCl من الأحماض القوية.",
+        "ar": "الحمض المركّز محلول يحتوي على كمية كبيرة من الحمض المذاب في وحدة الحجم؛ أما الحمض القوي فيتأين كليًا في الماء. والخاصيتان مستقلتان: فحتى في محلول مخفّف جدًّا يبقى HCl حمضًا قويًا.",
         "zh": "浓酸是单位体积中溶有大量酸的溶液；强酸则是在水中完全电离的酸。这两种性质互不相关：即使在很稀的溶液中，HCl 仍是强酸。",
         "ku": "Asîdên tîr ew çareserî ne ku di yekîneya qebareyê de gelek asîda helandî dihewînin; asîdên xurt jî ew in ku di avê de bi tevahî îyonîze dibin. Ev her du taybetî ji hev serbixwe ne: HCl di çareseriyeke pir sist de jî asîdeke xurt e."
       }
@@ -793,7 +793,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Eine starke Base ionisiert in Wasser vollständig (NaOH, KOH); eine schwache Base ionisiert nur teilweise und bildet ein Gleichgewicht (NH3).",
         "fr": "Une base forte s'ionise totalement dans l'eau (NaOH, KOH) ; une base faible ne s'ionise que partiellement et établit un équilibre (NH3).",
         "ru": "Сильное основание полностью диссоциирует в воде (NaOH, KOH); слабое основание диссоциирует лишь частично, и устанавливается равновесие (NH3).",
-        "ar": "القاعدة القوية تتأين كليًا في الماء (NaOH، KOH)؛ أما القواعد الضعيفة فتتأين جزئيًا وتصل إلى حالة اتزان (NH3).",
+        "ar": "في القاعدة القوية يكون التأين في الماء كليًا (NaOH، KOH)؛ أما القواعد الضعيفة فتتأين جزئيًا وتصل إلى حالة اتزان (NH3).",
         "zh": "强碱在水中完全电离(NaOH、KOH)；弱碱在水中部分电离并建立平衡(NH3)。",
         "ku": "Baza xurt di avê de bi tevahî îyonîze dibe (NaOH, KOH); baza qels tenê qismî îyonîze dibe û hevsengî çêdibe (NH3)."
       }
@@ -826,7 +826,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Eine sauerstoffhaltige Säure (HNO3, H2SO4) enthält Sauerstoff; konzentrierte HNO3 und heiße konzentrierte H2SO4 lösen auch Halbedelmetalle. Eine sauerstofffreie Säure (HCl, HBr) enthält keinen Sauerstoff und reagiert nicht mit Halbedelmetallen.",
         "fr": "Un oxacide (HNO3, H2SO4) contient de l'oxygène ; HNO3 concentré et H2SO4 concentré chaud dissolvent aussi les métaux semi-nobles. Un hydracide (HCl, HBr) ne contient pas d'oxygène et ne réagit pas avec les métaux semi-nobles.",
         "ru": "Кислородсодержащая кислота (HNO3, H2SO4) содержит кислород; концентрированная HNO3 и горячая концентрированная H2SO4 растворяют и полублагородные металлы. Бескислородная кислота (HCl, HBr) не содержит кислорода и не реагирует с полублагородными металлами.",
-        "ar": "الحمض الأكسجيني (HNO3، H2SO4) يحتوي على الأكسجين، ويذيب HNO3 المركّز وH2SO4 المركّز الساخن الفلزات شبه النبيلة أيضًا. أما الأحماض غير الأكسجينية (HCl، HBr) فلا تحتوي على الأكسجين ولا تتفاعل مع الفلزات شبه النبيلة.",
+        "ar": "الحمض الأكسجيني (HNO3، H2SO4) يحتوي على الأكسجين، ويذيب HNO3 المركّز وH2SO4 المركّز الساخن الفلزات شبه النبيلة أيضًا. أما الحمض غير الأكسجيني (HCl، HBr) فلا يحتوي على الأكسجين ولا يتفاعل مع الفلزات شبه النبيلة.",
         "zh": "含氧酸(HNO3、H2SO4)含有氧元素，浓HNO3和热浓H2SO4还能溶解半贵金属；无氧酸(HCl、HBr)不含氧，不与半贵金属反应。",
         "ku": "Asîdên bi oksîjen (HNO3, H2SO4) di avahiya xwe de oksîjen dihewînin; HNO3-ya tîr û H2SO4-ya tîr a germ metalên nîv-esîl jî dihelînin. Asîdên bê oksîjen (HCl, HBr) oksîjen nahewînin û bi metalên nîv-esîl re reaksiyonê nakin."
       }
@@ -937,7 +937,7 @@ export const unit09: ChemistryUnitSeedData = {
           "de": "Wenn der Indikator dauerhaft umschlägt (Endpunkt), wird das verbrauchte Basenvolumen abgelesen",
           "fr": "Lorsque l'indicateur change durablement de couleur (point de virage), on lit le volume de base versé",
           "ru": "Когда окраска индикатора устойчиво изменится (конечная точка титрования), записывают объём израсходованного основания",
-          "ar": "عندما يتغير لون الكاشف بشكل دائم (نقطة النهاية) يُقرأ حجم القاعدة المستهلك",
+          "ar": "عندما يتغير لون الكاشف تغيرًا دائمًا (نقطة النهاية) يُقرأ حجم القاعدة المستهلَك",
           "zh": "当指示剂颜色发生持久变化（滴定终点）时，读取消耗的碱溶液体积",
           "ku": "Dema rengê nîşanderê bi awayekî domdar diguhere (xala dawî), qebareya baza xerckirî tê xwendin"
         }
@@ -1063,7 +1063,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Welches Gas wird freigesetzt, wenn konzentrierte HNO3-Lösung zu Metallstücken aus Kupfer (Cu) hinzugefügt wird?",
         "fr": "Quel gaz est libéré lorsqu’une solution concentrée de HNO3 est ajoutée à des pièces métalliques en cuivre (Cu) ?",
         "ru": "Какой газ выделяется при добавлении концентрированного раствора HNO3 к кускам меди (Cu)?",
-        "ar": "ما الغاز الذي ينطلق عند إضافة محلول HNO3 المركز إلى القطع المعدنية من النحاس (Cu)؟",
+        "ar": "ما الغاز الذي ينطلق عند إضافة محلول HNO3 المركز إلى قطع من فلز النحاس (Cu)؟",
         "zh": "向铜(Cu)片上加入浓 HNO3 溶液时，放出哪种气体？",
         "ku": "Dema ku çareseriya HNO3 ya konsantrekirî li perçeyên metal ên sifir (Cu) tê zêdekirin kîjan gaz derdikeve?"
       },
@@ -1139,7 +1139,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Welches der folgenden Metalle kann mit NaOH-Lösung, einer starken Base, unter Freisetzung von H2-Gas reagieren?",
         "fr": "Lequel des métaux suivants peut réagir avec une solution de NaOH, une base forte, pour libérer du gaz H2 ?",
         "ru": "Какой из перечисленных металлов может реагировать с раствором сильного основания NaOH с выделением газа H2?",
-        "ar": "أي المعادن التالية يمكن أن يتفاعل مع محلول NaOH، وهو قاعدة قوية، لإطلاق غاز H2؟",
+        "ar": "أيّ الفلزات الآتية يمكن أن يتفاعل مع محلول NaOH، وهو قاعدة قوية، لإطلاق غاز H2؟",
         "zh": "下列哪种金属能与强碱 NaOH 溶液反应放出氢气？",
         "ku": "Kîjan ji metalên jêrîn dikare bi çareseriya NaOH, bingehek bihêz, reaksiyonê bike û gaza H2 derxe?"
       },
@@ -1202,7 +1202,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Aluminium (Al) ist ein amphoteres Metall; es reagiert nicht nur mit Säuren, sondern auch mit starken Basen wie NaOH und setzt dabei H2-Gas frei. Mg und Fe sind aktive, aber nicht amphotere Metalle und reagieren nicht mit Basen; Cu und Ag sind Halbedelmetalle und reagieren ebenfalls nicht mit Basen.",
         "fr": "L'aluminium (Al) est un métal amphotère ; outre les acides, il réagit aussi avec les bases fortes comme NaOH en dégageant du H2. Mg et Fe sont des métaux actifs mais non amphotères : ils ne réagissent pas avec les bases ; Cu et Ag sont des métaux semi-nobles et ne réagissent pas non plus avec les bases.",
         "ru": "Алюминий (Al) — амфотерный металл; он реагирует не только с кислотами, но и с сильными основаниями, такими как NaOH, выделяя газ H2. Mg и Fe — активные, но не амфотерные металлы, с основаниями они не реагируют; Cu и Ag — полублагородные металлы и с основаниями тоже не реагируют.",
-        "ar": "الألومنيوم (Al) فلز متردد؛ يتفاعل مع الأحماض وكذلك مع القواعد القوية مثل NaOH مطلقًا غاز H2. أما Mg وFe ففلزان نشطان لكنهما غير مترددين فلا يتفاعلان مع القواعد، وCu وAg فلزان شبه نبيلين ولا يتفاعلان مع القواعد أيضًا.",
+        "ar": "الألومنيوم (Al) فلز أمفوتيري؛ يتفاعل مع الأحماض وكذلك مع القواعد القوية مثل NaOH مطلقًا غاز H2. أما Mg وFe ففلزان نشطان لكنهما غير أمفوتيريين فلا يتفاعلان مع القواعد، وCu وAg فلزان شبه نبيلين ولا يتفاعلان مع القواعد أيضًا.",
         "zh": "铝(Al)是两性金属；除了与酸反应外，还能与 NaOH 等强碱反应并放出 H2。Mg 和 Fe 是活泼金属，但不是两性金属，不与碱反应；Cu 和 Ag 是半贵金属，也不与碱反应。",
         "ku": "Alumînyûm (Al) metaleke amfoter e; ji bilî asîdan bi bazên xurt ên wek NaOH re jî dikeve reaksiyonê û gaza H2 derdixe. Mg û Fe metalên aktîf in lê ne amfoter in, bi bazan re reaksiyonê nakin; Cu û Ag jî metalên nîv-esîl in û bi bazan re reaksiyonê nakin."
       }
@@ -1354,7 +1354,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "HCl ist eine starke Säure und ionisiert vollständig, daher ist die H+-Konzentration am größten und der pH-Wert am kleinsten. CH3COOH ist eine schwache Säure und ionisiert nur teilweise; sie ist sauer, ihr pH-Wert ist aber größer als der von HCl. NaCl ist das Salz einer starken Säure und einer starken Base, seine Lösung ist neutral (pH = 7). NaOH ist eine starke Base mit dem größten pH-Wert. Häufige Fehler: zwei gleich konzentrierte Säuren für gleich sauer oder die schwache Säure für saurer zu halten.",
         "fr": "HCl est un acide fort totalement ionisé : sa concentration en H+ est la plus grande et son pH le plus petit. CH3COOH est un acide faible partiellement ionisé ; il est acide mais son pH est supérieur à celui de HCl. NaCl est le sel d'un acide fort et d'une base forte, sa solution est neutre (pH = 7). NaOH est une base forte au pH le plus élevé. Croire que deux acides de même concentration ont le même pH, ou que l'acide faible est plus acide, sont des erreurs fréquentes.",
         "ru": "HCl — сильная кислота и диссоциирует полностью, поэтому концентрация H+ в её растворе наибольшая, а pH наименьший. CH3COOH — слабая кислота и диссоциирует частично; её раствор кислый, но pH больше, чем у HCl. NaCl — соль сильной кислоты и сильного основания, её раствор нейтрален (pH = 7). NaOH — сильное основание, pH его раствора наибольший. Частые ошибки: считать, что у двух кислот одинаковой концентрации одинаковый pH, или считать слабую кислоту более кислой.",
-        "ar": "HCl حمض قوي يتأين كليًا، لذا يكون تركيز H+ فيه الأكبر وpH الأصغر. CH3COOH حمض ضعيف يتأين جزئيًا؛ فهو حمضي لكن pH له أكبر من pH لـ HCl. NaCl ملح حمض قوي وقاعدة قوية، ومحلوله متعادل (pH = 7). NaOH قاعدة قوية لها أكبر pH. ومن الأخطاء الشائعة اعتبار حمضين متساويَي التركيز متساويَين في pH، أو اعتبار الحمض الضعيف أكثر حمضية.",
+        "ar": "HCl حمض قوي يتأين كليًا، لذا يكون تركيز H+ فيه الأكبر وقيمة pH الأصغر. CH3COOH حمض ضعيف يتأين جزئيًا؛ فهو حمضي لكن قيمة pH له أكبر من قيمة pH لمحلول HCl. NaCl ملح حمض قوي وقاعدة قوية، ومحلوله متعادل (pH = 7). NaOH قاعدة قوية لها أكبر قيمة pH. ومن الأخطاء الشائعة اعتبار حمضين متساويَي التركيز متساويَين في pH، أو اعتبار الحمض الضعيف أكثر حمضية.",
         "zh": "HCl 是强酸，完全电离，H+ 浓度最大，pH 最小。CH3COOH 是弱酸，只部分电离；溶液呈酸性，但 pH 比 HCl 大。NaCl 是强酸强碱盐，溶液呈中性(pH = 7)。NaOH 是强碱，pH 最大。常见错误是认为浓度相同的两种酸 pH 相同，或认为弱酸酸性更强。",
         "ku": "HCl asîdeke xurt e û bi temamî îyonîze dibe, ji ber vê yekê tîrbûna H+ herî mezin û pH herî biçûk e. CH3COOH asîdeke qels e û beşek îyonîze dibe; asîdî ye lê pH-a wê ji ya HCl mezintir e. NaCl xwêya asîdeke xurt û bazeke xurt e, çareseriya wê bêalî ye (pH = 7). NaOH bazeke xurt e û pH-a wê herî mezin e. Şaşiyên berbelav ev in: du asîdên bi tîrbûna wekhev wek xwedî pH-a wekhev an asîda qels wek asîdîtir hesibandin."
       }
@@ -1367,7 +1367,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Zu einem Gemisch aus Zn-, Ag- und Au-Pulver wird zunächst ausreichend verdünnte HCl gegeben. Nach Ende der Reaktion wird der ungelöste Feststoff abfiltriert und mit heißer konzentrierter H2SO4 behandelt. Was gibt das Gas im ersten Schritt / das Gas im zweiten Schritt / den am Ende ungelösten Feststoff richtig an?",
         "fr": "On ajoute d'abord suffisamment de HCl dilué à un mélange de poudres de Zn, Ag et Au. Une fois la réaction terminée, le solide non dissous est filtré puis traité par H2SO4 concentré chaud. Quelle proposition donne correctement le gaz dégagé à la première étape / le gaz dégagé à la deuxième étape / le solide non dissous à la fin ?",
         "ru": "К смеси порошков Zn, Ag и Au сначала добавляют достаточное количество разбавленной HCl. После окончания реакции нерастворившийся остаток отфильтровывают и обрабатывают горячей концентрированной H2SO4. В каком варианте правильно указаны газ, выделившийся на первой стадии / газ, выделившийся на второй стадии / твёрдое вещество, оставшееся нерастворённым в конце?",
-        "ar": "يُضاف أولًا قدر كافٍ من محلول HCl المخفّف إلى خليط من مساحيق Zn وAg وAu. وبعد انتهاء التفاعل يُرشَّح الصلب غير الذائب ويُعامل بـ H2SO4 المركّز الساخن. أيّ مما يلي يذكر بشكل صحيح: الغاز في الخطوة الأولى / الغاز في الخطوة الثانية / الصلب الذي يبقى دون ذوبان في النهاية؟",
+        "ar": "يُضاف أولًا قدر كافٍ من محلول HCl المخفّف إلى خليط من مساحيق Zn وAg وAu. وبعد انتهاء التفاعل يُرشَّح الصلب غير الذائب ويُعامل بـ H2SO4 المركّز الساخن. في أيّ مما يلي ذُكرت صحيحةً: الغاز المتصاعد في الخطوة الأولى / الغاز المتصاعد في الخطوة الثانية / الصلب الذي يبقى دون ذوبان في النهاية؟",
         "zh": "先向由 Zn、Ag、Au 粉末组成的混合物中加入足量稀 HCl 溶液。反应结束后，将未溶解的固体滤出，再用热浓 H2SO4 处理。下列哪一项正确给出了：第一步放出的气体 / 第二步放出的气体 / 最后仍未溶解的固体？",
         "ku": "Pêşî têra xwe çareseriya HCl-ya sist li tevlîheviyeke tozên Zn, Ag û Au tê zêdekirin. Piştî ku reaksiyon diqede, hişka nehelandî tê parzûnkirin û bi H2SO4-ya tîr a germ re tê kirin. Kîjan rast dide: gaza gava yekem / gaza gava duyem / hişka ku di dawiyê de nehelandî dimîne?"
       },
@@ -1595,7 +1595,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Wie viel Liter CO2-Gas entstehen unter Normbedingungen (0 °C, 1 atm), wenn 10 g festes CaCO3 vollständig mit ausreichend HCl-Lösung reagieren? (CaCO3 = 100 g/mol; 1 mol Gas nimmt unter Normbedingungen 22,4 L ein)",
         "fr": "Quand 10 g de CaCO3 solide réagissent complètement avec suffisamment de solution de HCl, combien de litres de CO2 se dégagent dans les conditions normales (0 °C, 1 atm) ? (CaCO3 = 100 g/mol ; 1 mol de gaz occupe 22,4 L dans les CN)",
         "ru": "Сколько литров газа CO2 (н. у.) выделится при полном взаимодействии 10 г твёрдого CaCO3 с достаточным количеством раствора HCl? (CaCO3 = 100 г/моль; 1 моль газа при н. у. занимает 22,4 л)",
-        "ar": "عند تفاعل 10 g من CaCO3 الصلب تفاعلًا تامًا مع كمية كافية من محلول HCl، كم لترًا من غاز CO2 يتصاعد في الظروف القياسية (0 °C، 1 atm)؟ (CaCO3 = 100 g/mol؛ 1 mol من الغاز يشغل 22.4 L في الظروف القياسية)",
+        "ar": "عند تفاعل 10 g من CaCO3 الصلب تفاعلًا تامًا مع كمية كافية من محلول HCl، كم لترًا من غاز CO2 يتصاعد في الظروف القياسية؟ (CaCO3 = 100 g/mol؛ 1 mol من الغاز يشغل 22.4 L في الظروف القياسية)",
         "zh": "10 g CaCO3 固体与足量 HCl 溶液完全反应，在标准状况(0 °C、1 atm)下放出多少升 CO2 气体？(CaCO3 = 100 g/mol；标准状况下 1 mol 气体为 22.4 L)",
         "ku": "Dema 10 g hişka CaCO3 bi têra xwe çareseriya HCl re bi temamî reaksiyonê dike, di şert û mercên normal de (0 °C, 1 atm) çend lître gaza CO2 derdikeve? (CaCO3 = 100 g/mol; di şert û mercên normal de 1 mol gaz 22,4 L e)"
       },
@@ -1834,7 +1834,7 @@ export const unit09: ChemistryUnitSeedData = {
           "de": "Ihr pH-Wert beträgt 7.",
           "fr": "Son pH est égal à 7.",
           "ru": "pH раствора равен 7.",
-          "ar": "تكون قيمة pH له 7.",
+          "ar": "تكون قيمة pH للمحلول 7.",
           "zh": "其 pH 为 7。",
           "ku": "pH-a wê dibe 7."
         },
@@ -2190,7 +2190,7 @@ export const unit09: ChemistryUnitSeedData = {
         "de": "Al ist ein amphoteres Metall und reagiert sowohl mit HCl als auch mit NaOH unter H2-Entwicklung; mit der neutralen NaCl-Lösung reagiert es nicht. Daher enthält Z NaCl. X färbt blauen Lackmus rot, ist also sauer, d. h. HCl; das verbleibende Y ist NaOH. Wer glaubt, Al reagiere nicht mit Basen, hält eines der beiden gasentwickelnden Gläser womöglich für NaCl.",
         "fr": "Al est un métal amphotère : il réagit avec HCl et avec NaOH en dégageant du H2 ; il ne réagit pas avec la solution neutre de NaCl. Le tube Z contient donc NaCl. X fait virer le tournesol bleu au rouge, il est acide : c'est HCl ; le tube Y restant contient NaOH. Un élève qui croit que Al ne réagit pas avec les bases peut prendre l'un des deux tubes où se dégage un gaz pour NaCl.",
         "ru": "Al — амфотерный металл, поэтому реагирует и с HCl, и с NaOH с выделением H2; с нейтральным раствором NaCl он не реагирует. Значит, в пробирке Z — NaCl. X окрашивает синий лакмус в красный, т. е. раствор кислый — HCl; оставшийся Y — NaOH. Ученик, считающий, что Al не реагирует с основаниями, может принять одну из пробирок с выделением газа за NaCl.",
-        "ar": "Al فلز متردد، لذا يتفاعل مع HCl ومع NaOH ويتصاعد H2؛ ولا يتفاعل مع محلول NaCl المتعادل. إذن الأنبوب Z يحتوي على NaCl. والمحلول X يحوّل عباد الشمس الأزرق إلى الأحمر فهو حمضي، أي HCl؛ ويبقى Y وهو NaOH. والطالب الذي يظن أن Al لا يتفاعل مع القواعد قد يعدّ أحد الأنبوبين اللذين تصاعد فيهما غاز محلولَ NaCl.",
+        "ar": "Al فلز أمفوتيري، لذا يتفاعل مع HCl ومع NaOH ويتصاعد H2؛ ولا يتفاعل مع محلول NaCl المتعادل. إذن الأنبوب Z يحتوي على NaCl. والمحلول X يحوّل عباد الشمس الأزرق إلى الأحمر فهو حمضي، أي HCl؛ ويبقى Y وهو NaOH. والطالب الذي يظن أن Al لا يتفاعل مع القواعد قد يعدّ أحد الأنبوبين اللذين تصاعد فيهما غاز محلولَ NaCl.",
         "zh": "Al 是两性金属，既能与 HCl 反应也能与 NaOH 反应放出 H2；它不与中性的 NaCl 溶液反应。所以 Z 是 NaCl。X 使蓝色石蕊变红，呈酸性，即 HCl；剩下的 Y 是 NaOH。认为 Al 不与碱反应的学生可能把产生气体的两支试管之一误认为 NaCl。",
         "ku": "Al metaleke amfoter e, ji ber vê yekê hem bi HCl hem jî bi NaOH re reaksiyonê dike û H2 derdixe; bi çareseriya bêalî ya NaCl re reaksiyonê nake. Ji ber vê yekê lûleya Z NaCl e. X lîmûsa şîn sor dike, yanî asîdî ye, ango HCl e; Y-ya mayî jî NaOH e. Xwendekarê ku difikire Al bi bazan re reaksiyonê nake dikare yek ji du lûleyên ku gaz jê derdikeve wek NaCl bihesibîne."
       }

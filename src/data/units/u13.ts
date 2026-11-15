@@ -12,7 +12,7 @@ export const unit13: ChemistryUnitSeedData = {
     "de": "Kinetische Gastheorie",
     "fr": "Théorie Cinétique des Gaz",
     "ru": "Газы: молекулярно-кинетическая теория и реальные газы",
-    "ar": "النظرية الحركية للغازات",
+    "ar": "الغازات: النظرية الحركية والغازات الحقيقية",
     "zh": "气体动理论与真实气体",
     "ku": "Teoriya Kînetîk a Gazan"
   },
@@ -22,7 +22,7 @@ export const unit13: ChemistryUnitSeedData = {
     "de": "Graham-Diffusion, Partialdruck und Joule-Thomson",
     "fr": "Diffusion Graham, pression partielle et Joule-Thomson",
     "ru": "Закон Грэма, парциальные давления и эффект Джоуля — Томсона",
-    "ar": "انتشار غراهام، الضغط الجزئي وجول طومسون",
+    "ar": "قانون جراهام للانتشار والضغط الجزئي وظاهرة جول-طومسون",
     "zh": "格雷厄姆扩散定律、分压与焦耳-汤姆孙效应",
     "ku": "Graham Diffusion, Zexta Parçeyî û Joule-Thomson"
   },
@@ -35,7 +35,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Grahams Diffusionsgesetz: Bei gleicher Temperatur ist die Diffusionsgeschwindigkeit von Gasen umgekehrt proportional zur Quadratwurzel der Molmasse (v1/v2 = sqrt(M2/M1)).",
         "fr": "Loi de diffusion de Graham : à la même température, la vitesse de diffusion des gaz est inversement proportionnelle à la racine carrée de la masse molaire (v1/v2 = sqrt(M2/M1)).",
         "ru": "Закон диффузии Грэма: при одинаковой температуре скорость диффузии газов обратно пропорциональна квадратному корню из молярной массы (v1/v2 = sqrt(M2/M1)).",
-        "ar": "قانون غراهام للانتشار: عند درجة الحرارة نفسها يتناسب معدل انتشار الغازات عكسيًا مع الجذر التربيعي للكتلة المولية (v1/v2 = sqrt(M2/M1)).",
+        "ar": "قانون جراهام للانتشار: عند درجة الحرارة نفسها يتناسب معدل انتشار الغازات عكسيًا مع الجذر التربيعي للكتلة المولية (v1/v2 = sqrt(M2/M1)).",
         "zh": "格雷厄姆扩散定律：在相同温度下，气体的扩散速率与摩尔质量的平方根成反比(v1/v2 = sqrt(M2/M1))。",
         "ku": "Zagona Belavbûnê ya Graham: Di heman germahiyê de leza belavbûna gazan bi koka çargoşe ya girseya molar re berevajî têkildar e (v1/v2 = sqrt(M2/M1))."
       },
@@ -68,7 +68,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Die Diffusionsgeschwindigkeit von Gasen ist direkt proportional zur Quadratwurzel der absoluten Temperatur (v1/v2 = sqrt((T1*M2)/(T2*M1))).",
         "fr": "Le taux de diffusion des gaz est directement proportionnel à la racine carrée de la température absolue (v1/v2 = sqrt((T1*M2)/(T2*M1))).",
         "ru": "Скорость диффузии газа прямо пропорциональна квадратному корню из абсолютной температуры (v1/v2 = sqrt((T1*M2)/(T2*M1))).",
-        "ar": "يتناسب معدل انتشار الغازات بشكل مباشر مع الجذر التربيعي لدرجة الحرارة المطلقة (v1/v2 = sqrt((T1*M2)/(T2*M1))).",
+        "ar": "يتناسب معدل انتشار الغازات طرديًا مع الجذر التربيعي لدرجة الحرارة المطلقة (v1/v2 = sqrt((T1*M2)/(T2*M1))).",
         "zh": "气体的扩散速率与热力学温度的平方根成正比(v1/v2 = sqrt((T1*M2)/(T2*M1)))。",
         "ku": "Rêjeya belavbûna gazan rasterast bi koka çargoşe ya germahiya mutleq re têkildar e (v1/v2 = sqrt((T1*M2)/(T2*M1)))."
       },
@@ -78,7 +78,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Wird die absolute Temperatur eines Gases vervierfacht, vervierfacht sich auch seine Diffusionsgeschwindigkeit.",
         "fr": "Si la température absolue d'un gaz est multipliée par 4, sa vitesse de diffusion est aussi multipliée par 4.",
         "ru": "Если абсолютную температуру газа увеличить в 4 раза, скорость его диффузии тоже увеличится в 4 раза.",
-        "ar": "إذا زادت درجة الحرارة المطلقة لغاز 4 مرات، يزداد معدل انتشاره أيضًا 4 مرات.",
+        "ar": "إذا زيدت درجة الحرارة المطلقة لغاز إلى 4 أمثالها، يزداد معدل انتشاره أيضًا إلى 4 أمثاله.",
         "zh": "若气体的热力学温度增大到原来的4倍，其扩散速率也增大到原来的4倍。",
         "ku": "Ger germahiya mutleq a gazekê 4 qat bibe, leza belavbûna wê jî 4 qat dibe."
       },
@@ -88,7 +88,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Die Falle hält die Geschwindigkeit für direkt proportional zur Temperatur. Sie ist proportional zur Quadratwurzel der absoluten Temperatur; bei vierfacher absoluter Temperatur steigt sie nur auf das sqrt(4) = 2-Fache.",
         "fr": "Le piège considère la vitesse comme proportionnelle à la température. Elle est proportionnelle à la racine carrée de la température absolue ; si celle-ci est multipliée par 4, la vitesse n'est multipliée que par sqrt(4) = 2.",
         "ru": "Ловушка считает скорость прямо пропорциональной температуре. На самом деле скорость пропорциональна квадратному корню из абсолютной температуры: при увеличении абсолютной температуры в 4 раза скорость растёт в sqrt(4) = 2 раза.",
-        "ar": "يعدّ الفخ السرعة متناسبة طرديًا مع درجة الحرارة. السرعة تتناسب مع الجذر التربيعي لدرجة الحرارة المطلقة؛ فإذا تضاعفت درجة الحرارة المطلقة 4 مرات تزداد السرعة sqrt(4) = 2 مرة فقط.",
+        "ar": "يعدّ الفخ السرعة متناسبة طرديًا مع درجة الحرارة. السرعة تتناسب مع الجذر التربيعي لدرجة الحرارة المطلقة؛ فإذا زادت درجة الحرارة المطلقة إلى 4 أمثالها تزداد السرعة إلى sqrt(4) = 2 مثلَي قيمتها فقط.",
         "zh": "陷阱把速率当作与温度成正比。速率与热力学温度的平方根成正比；热力学温度变为4倍时，速率只变为 sqrt(4) = 2 倍。",
         "ku": "Xefik leza belavbûnê rasterast bi germahiyê re têkildar dihesibîne. Lez bi koka çargoşe ya germahiya mutleq re têkildar e; dema germahiya mutleq 4 qat dibe, lez tenê sqrt(4) = 2 qat dibe."
       },
@@ -98,7 +98,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Es besteht eine Quadratwurzelbeziehung; Geschwindigkeit verdoppelt sich!",
         "fr": "Il existe une relation racine carrée ; la vitesse double !",
         "ru": "Зависимость здесь через квадратный корень: скорость возрастает только в 2 раза!",
-        "ar": "توجد علاقة جذر تربيعي؛ السرعة مضاعفة!",
+        "ar": "العلاقة علاقة جذر تربيعي؛ فالسرعة تتضاعف فقط!",
         "zh": "是平方根关系：速率只变为原来的2倍！",
         "ku": "Têkiliya koka çargoşe heye; leza duqat dibe!"
       }
@@ -174,7 +174,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Die durchschnittliche kinetische Energie aller Gase bei gleicher Temperatur ist gleich!",
         "fr": "L'énergie cinétique moyenne de tous les gaz à la même température est égale !",
         "ru": "Средняя кинетическая энергия всех газов при одинаковой температуре одинакова!",
-        "ar": "متوسط الطاقة الحركية لجميع الغازات عند نفس درجة الحرارة متساوي!",
+        "ar": "متوسط الطاقة الحركية لجميع الغازات عند درجة الحرارة نفسها متساوٍ!",
         "zh": "相同温度下所有气体的平均动能相等！",
         "ku": "Enerjiya kînetîk a navînî ya hemî gazên di heman germahiyê de wekhev e!"
       }
@@ -197,7 +197,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Gase mit hohem Druck und niedriger Temperatur kommen dem Ideal am nächsten.",
         "fr": "Les gaz à haute pression et basse température sont les plus proches de l’idéal.",
         "ru": "Наиболее близки к идеальным газы при высоком давлении и низкой температуре.",
-        "ar": "الغازات ذات الضغط العالي ودرجة الحرارة المنخفضة هي الأقرب إلى المثالية.",
+        "ar": "تكون الغازات أقرب ما تكون إلى السلوك المثالي عند الضغط المرتفع ودرجة الحرارة المنخفضة.",
         "zh": "气体在高压、低温下最接近理想气体。",
         "ku": "Gazên di tansiyona bilind û germahiya nizm de herî nêzîk îdeal in."
       },
@@ -286,7 +286,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Kritische Temperatur: Die höchste Temperatur, bei der ein Gas durch Druckanwendung verflüssigt werden kann; Bei Temperaturen darüber kann Gas nicht verflüssigt werden.",
         "fr": "Température critique : température la plus élevée à laquelle un gaz peut être liquéfié en appliquant une pression ; À des températures supérieures, le gaz ne peut pas être liquéfié.",
         "ru": "Критическая температура — самая высокая температура, при которой газ можно сжижить повышением давления; выше этой температуры газ сжижить нельзя.",
-        "ar": "درجة الحرارة الحرجة: أعلى درجة حرارة يمكن عندها تسييل الغاز بالضغط. عند درجات حرارة أعلى من ذلك، لا يمكن تسييل الغاز.",
+        "ar": "درجة الحرارة الحرجة: أعلى درجة حرارة يمكن عندها تسييل الغاز بالضغط؛ وفوقها لا يمكن تسييل الغاز.",
         "zh": "临界温度：仅靠加压就能使气体液化的最高温度；温度高于临界温度时，气体不能液化。",
         "ku": "Germahiya krîtîk: Germahiya herî bilind a ku tê de gazek bi pêkanîna zextê dikare şil bibe; Di germahiyên ji vê zêdetir de, gaz nikare şil bibe."
       },
@@ -296,7 +296,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Fluide oberhalb der kritischen Temperatur lassen sich allein durch Druck leicht verflüssigen.",
         "fr": "Les fluides au-dessus de la température critique se liquéfient facilement avec la seule pression.",
         "ru": "Выше критической температуры вещество легко сжижается одним лишь повышением давления.",
-        "ar": "تسيل الموائع التي تكون فوق درجة الحرارة الحرجة بسهولة بالضغط وحده.",
+        "ar": "الموائع التي تكون فوق درجة حرارتها الحرجة تتسيّل بسهولة بالضغط وحده.",
         "zh": "高于临界温度的流体仅靠加压就很容易液化。",
         "ku": "Herikbarên li ser germahiya krîtîk tenê bi zextê bi hêsanî şil dibin."
       },
@@ -329,7 +329,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Die Konzepte von Dampf und Gas sind wissenschaftlich genau gleich.",
         "fr": "Les concepts de vapeur et de gaz sont scientifiquement exactement les mêmes.",
         "ru": "С научной точки зрения понятия «пар» и «газ» полностью совпадают.",
-        "ar": "إن مفهومي البخار والغاز متطابقان تمامًا من الناحية العلمية.",
+        "ar": "مفهوما البخار والغاز متطابقان تمامًا من الناحية العلمية.",
         "zh": "蒸气和气体这两个概念在科学上完全相同。",
         "ku": "Têgehên buhar û gazê bi zanistî tam yek in."
       },
@@ -418,7 +418,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Kältemittel: Muss eine hohe kritische Temperatur, einen niedrigen Siedepunkt, ungiftig und umweltfreundlich sein.",
         "fr": "Réfrigérants : doivent avoir une température critique élevée, un point d’ébullition bas, non toxiques et respectueux de l’environnement.",
         "ru": "Хладагенты должны иметь высокую критическую температуру и низкую температуру кипения, быть нетоксичными и безопасными для окружающей среды.",
-        "ar": "المبردات: يجب أن تتمتع بدرجة حرارة حرجة عالية ونقطة غليان منخفضة وغير سامة وصديقة للبيئة.",
+        "ar": "موائع التبريد: يجب أن تكون ذات درجة حرارة حرجة مرتفعة ودرجة غليان منخفضة، وأن تكون غير سامة وصديقة للبيئة.",
         "zh": "制冷剂应具有较高的临界温度和较低的沸点，并且无毒、环保。",
         "ku": "Herikbarên sarker: divê germahiya wan a krîtîk bilind, xala wan a kelandinê nizm be, nejehrî û dostê jîngehê bin."
       },
@@ -428,7 +428,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Der Siedepunkt des Kältemittels muss deutlich über der Raumtemperatur liegen.",
         "fr": "Le point d'ébullition du réfrigérant doit être bien supérieur à la température ambiante.",
         "ru": "Температура кипения хладагента должна быть намного выше комнатной температуры.",
-        "ar": "يجب أن تكون نقطة غليان سائل التبريد أعلى بكثير من درجة حرارة الغرفة.",
+        "ar": "يجب أن تكون درجة غليان مائع التبريد أعلى بكثير من درجة حرارة الغرفة.",
         "zh": "制冷剂的沸点必须远高于室温。",
         "ku": "Divê xala kelandinê ya herikbara sarker ji germahiya odeyê pir bilindtir be."
       },
@@ -451,7 +451,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Bei gleicher Temperatur diffundiert CH4-Gas (MA=16) sqrt(64/16) = 2-mal schneller als SO2-Gas (MA=64).",
         "fr": "À la même température, le gaz CH4 (MA=16) diffuse sqrt(64/16) = 2 fois plus vite que le gaz SO2 (MA=64).",
         "ru": "При одинаковой температуре газ CH4 (MA=16) диффундирует в sqrt(64/16) = 2 раза быстрее, чем газ SO2 (MA=64).",
-        "ar": "عند درجة الحرارة نفسها، ينتشر غاز CH4 (MA=16) أسرع بـ sqrt(64/16) = 2 مرة من غاز SO2 (MA=64).",
+        "ar": "عند درجة الحرارة نفسها تبلغ سرعة انتشار غاز CH4 (MA=16) مثلَي سرعة انتشار غاز SO2 (MA=64)، لأن sqrt(64/16) = 2.",
         "zh": "相同温度下，CH4(M = 16 g/mol)的扩散速率是 SO2(M = 64 g/mol)的 sqrt(64/16) = 2 倍。",
         "ku": "Di heman germahiyê de gaza CH4 (MA=16) sqrt(64/16) = 2 qat ji gaza SO2 (MA=64) zûtir belav dibe."
       },
@@ -461,7 +461,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Bei gleicher Temperatur diffundiert CH4-Gas 4-mal schneller als SO2-Gas.",
         "fr": "À la même température, le gaz CH4 diffuse 4 fois plus vite que le gaz SO2.",
         "ru": "При одинаковой температуре газ CH4 диффундирует в 4 раза быстрее, чем газ SO2.",
-        "ar": "عند درجة الحرارة نفسها، ينتشر غاز CH4 أسرع بـ 4 مرات من غاز SO2.",
+        "ar": "عند درجة الحرارة نفسها تبلغ سرعة انتشار غاز CH4 4 أمثال سرعة انتشار غاز SO2.",
         "zh": "相同温度下，CH4 气体的扩散速率是 SO2 气体的4倍。",
         "ku": "Di heman germahiyê de gaza CH4 4 qat ji gaza SO2 zûtir belav dibe."
       },
@@ -484,7 +484,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Unter Effusion versteht man das Phänomen, dass Gasmoleküle durch ein kleines Loch in einen Vakuumraum entweichen.",
         "fr": "L'effusion est le phénomène par lequel des molécules de gaz s'échappent vers le vide par un petit orifice.",
         "ru": "Эффузия — истечение частиц газа через маленькое отверстие в пустоту (вакуум).",
-        "ar": "الانصباب هو ظاهرة هروب جزيئات الغاز إلى فراغ من خلال ثقب صغير.",
+        "ar": "التدفق هو ظاهرة هروب جسيمات الغاز عبر ثقب صغير إلى الفراغ.",
         "zh": "泻流是气体粒子通过小孔逸入真空的现象。",
         "ku": "Efûzyon diyardeya reva molekulên gazê ji qulikeke biçûk ber bi valahiyê (vakûmê) ye."
       },
@@ -494,7 +494,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Unter Effusion versteht man die Vermischung zweier Gase miteinander.",
         "fr": "L'effusion est le mélange de deux gaz l'un dans l'autre.",
         "ru": "Эффузия — взаимное смешивание двух газов.",
-        "ar": "الانصباب هو اختلاط غازين مع بعضهما البعض.",
+        "ar": "التدفق هو اختلاط غازين أحدهما بالآخر.",
         "zh": "泻流是两种气体相互混合的现象。",
         "ku": "Efûzyon tevlihevbûna du gazan di nav hev de ye."
       },
@@ -504,7 +504,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Die Falle verwechselt Effusion mit Diffusion. Das gegenseitige Ausbreiten und Mischen zweier Gase ist Diffusion; Effusion ist das Entweichen von Gasteilchen durch eine kleine Öffnung in einen leeren Raum.",
         "fr": "Le piège confond effusion et diffusion. Le mélange de deux gaz qui se répandent l'un dans l'autre est la diffusion ; l'effusion est la fuite des particules de gaz par un petit orifice vers un espace vide.",
         "ru": "Ловушка путает эффузию с диффузией. Взаимное проникновение и смешивание двух газов — это диффузия; эффузия — выход частиц газа через маленькое отверстие в пустое пространство.",
-        "ar": "يخلط الفخ بين التدفق (الانصباب) والانتشار. انتشار غازين أحدهما في الآخر وامتزاجهما هو الانتشار؛ أما التدفق فهو تسرّب جسيمات الغاز عبر ثقب صغير إلى فراغ.",
+        "ar": "يخلط الفخ بين التدفق والانتشار. انتشار غازين أحدهما في الآخر وامتزاجهما هو الانتشار؛ أما التدفق فهو تسرّب جسيمات الغاز عبر ثقب صغير إلى فراغ.",
         "zh": "陷阱把泻流和扩散混淆了。两种气体相互扩散混合属于扩散；泻流是气体粒子通过小孔逸入真空的过程。",
         "ku": "Xefik efûzyonê bi belavbûnê (difûzyonê) re tevlihev dike. Belavbûn û tevlihevbûna du gazan di nav hev de difûzyon e; efûzyon reva perçeyên gazê ji qulikeke biçûk ber bi valahiyê ye."
       }
@@ -560,7 +560,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Unter hohem Druck verschwindet das Volumen der Gaspartikel vollständig.",
         "fr": "Sous haute pression, le volume des particules de gaz disparaît complètement.",
         "ru": "Под высоким давлением объём частиц газа полностью исчезает.",
-        "ar": "تحت الضغط العالي، يختفي حجم جزيئات الغاز تمامًا.",
+        "ar": "تحت الضغط المرتفع يختفي حجم جسيمات الغاز تمامًا.",
         "zh": "在高压下，气体粒子的体积完全消失。",
         "ku": "Di bin zexta bilind de, qebareya pariyên gazê bi tevahî winda dibe."
       },
@@ -618,7 +618,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Gas",
         "fr": "Gaz",
         "ru": "Газ",
-        "ar": "غاز",
+        "ar": "الغاز",
         "zh": "气体",
         "ku": "Gaz"
       },
@@ -628,7 +628,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Dampf",
         "fr": "Vapeur",
         "ru": "Пар",
-        "ar": "بخار",
+        "ar": "البخار",
         "zh": "蒸气",
         "ku": "Buhar"
       },
@@ -638,7 +638,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Dampf liegt unterhalb seiner kritischen Temperatur und lässt sich daher allein durch Druckerhöhung verflüssigen; ein Gas liegt oberhalb seiner kritischen Temperatur und lässt sich daher allein durch Druckerhöhung nicht verflüssigen.",
         "fr": "Une vapeur est en dessous de sa température critique et peut donc être liquéfiée par simple augmentation de la pression ; un gaz est au-dessus de sa température critique et ne peut donc pas être liquéfié par simple augmentation de la pression.",
         "ru": "Пар находится ниже своей критической температуры, поэтому его можно сжижить одним лишь повышением давления; газ находится выше своей критической температуры, поэтому одним лишь повышением давления его сжижить нельзя.",
-        "ar": "البخار يكون دون درجة حرارته الحرجة، ولذلك يمكن إسالته بزيادة الضغط وحدها؛ أما الغاز فيكون فوق درجة حرارته الحرجة، ولذلك لا يمكن إسالته بزيادة الضغط وحدها.",
+        "ar": "البخار يكون دون درجة حرارته الحرجة، ولذلك يمكن تسييله بزيادة الضغط وحدها؛ أما الغاز فيكون فوق درجة حرارته الحرجة، ولذلك لا يمكن تسييله بزيادة الضغط وحدها.",
         "zh": "蒸气处于其临界温度以下，因此仅靠加压就能液化；而气体处于其临界温度以上，因此仅靠加压不能液化。",
         "ku": "Buhar li jêr germahiya xwe ya krîtîk e, ji ber vê yekê tenê bi zêdekirina zextê dikare were şilkirin; gaz li ser germahiya xwe ya krîtîk e, ji ber vê yekê tenê bi zêdekirina zextê nikare were şilkirin."
       }
@@ -651,7 +651,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Grahams Diffusionsgesetz",
         "fr": "Loi de diffusion de Graham",
         "ru": "Закон диффузии Грэма",
-        "ar": "قانون غراهام للانتشار",
+        "ar": "قانون جراهام للانتشار",
         "zh": "格雷厄姆扩散定律",
         "ku": "Zagona Belavbûnê ya Graham"
       },
@@ -671,7 +671,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Grahams Diffusionsgesetz besagt, dass die Ausbreitungsgeschwindigkeit von Gasen umgekehrt proportional zur Quadratwurzel der Molmasse ist; Daltons Partialdruckgesetz besagt, dass der Partialdruck eines Gases direkt proportional zu seinem Stoffmengenanteil ist.",
         "fr": "La loi de diffusion de Graham énonce que la vitesse de propagation des gaz est inversement proportionnelle à la racine carrée de la masse molaire ; la loi des pressions partielles de Dalton énonce que la pression partielle d'un gaz est directement proportionnelle à sa fraction molaire.",
         "ru": "Закон диффузии Грэма утверждает, что скорость распространения газов обратно пропорциональна квадратному корню из их молярной массы; закон парциальных давлений Дальтона утверждает, что парциальное давление газа прямо пропорционально его мольной доле.",
-        "ar": "قانون غراهام للانتشار ينص على أن سرعة انتشار الغازات تتناسب عكسيًا مع الجذر التربيعي للكتلة المولية؛ أما قانون دالتون للضغوط الجزئية فينص على أن الضغط الجزئي للغاز يتناسب طرديًا مع كسره المولي.",
+        "ar": "قانون جراهام للانتشار ينص على أن سرعة انتشار الغازات تتناسب عكسيًا مع الجذر التربيعي للكتلة المولية؛ أما قانون دالتون للضغوط الجزئية فينص على أن الضغط الجزئي للغاز يتناسب طرديًا مع كسره المولي.",
         "zh": "格雷厄姆扩散定律指出，气体的扩散速率与摩尔质量的平方根成反比；道尔顿分压定律指出，气体的分压与其物质的量分数成正比。",
         "ku": "Zagona Belavbûnê ya Graham dibêje ku leza belavbûna gazan bi koka çargoşe ya girseya molar re berevajî têkildar e; Zagona Dalton ya Zextên Parçeyî dibêje ku zexta qismî ya gazekê bi parçeya wê ya molê re rasterast têkildar e."
       }
@@ -694,7 +694,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Effusion",
         "fr": "Effusion",
         "ru": "Эффузия",
-        "ar": "الانصباب",
+        "ar": "التدفق",
         "zh": "泻流",
         "ku": "Efûzyon"
       },
@@ -704,7 +704,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Diffusion ist das Ausbreiten und Vermischen von Gasteilchen in einem anderen Gas; Effusion ist das Entweichen von Gasteilchen durch eine kleine Öffnung ins Vakuum.",
         "fr": "La diffusion est la propagation et le mélange des particules d'un gaz dans un autre gaz ; l'effusion est la fuite de particules de gaz par un petit orifice vers le vide.",
         "ru": "Диффузия — распространение и смешивание частиц газа в среде другого газа; эффузия — вытекание частиц газа через маленькое отверстие в вакуум.",
-        "ar": "الانتشار هو تفرّق جسيمات الغاز واختلاطها داخل غاز آخر؛ أما الانصباب فهو خروج جسيمات الغاز عبر ثقب صغير إلى فراغ.",
+        "ar": "الانتشار هو تفرّق جسيمات الغاز واختلاطها داخل غاز آخر؛ أما التدفق فهو خروج جسيمات الغاز عبر ثقب صغير إلى فراغ.",
         "zh": "扩散是气体粒子在另一种气体中散开并相互混合；而泻流是气体粒子通过小孔逸入真空。",
         "ku": "Belavbûn belavbûn û tevlihevbûna perçeyên gazê di nav gazeke din de ye; efûzyon reva perçeyên gazê ji qulikeke biçûk ber bi valahiyê (vakûmê) ye."
       }
@@ -717,7 +717,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Joule-Thomson-Effekt",
         "fr": "Effet Joule-Thomson",
         "ru": "Эффект Джоуля — Томсона",
-        "ar": "تأثير جول طومسون",
+        "ar": "تأثير جول-طومسون",
         "zh": "焦耳-汤姆孙效应",
         "ku": "Bandora Joule-Thomson"
       },
@@ -737,7 +737,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Der Joule-Thomson-Effekt ist die Abkühlung der meisten komprimierten realen Gase beim Entspannen durch eine enge Öffnung bei Raumbedingungen; die kritische Temperatur ist die Temperatur, oberhalb derer sich ein Gas unter keinem Druck verflüssigen lässt.",
         "fr": "L'effet Joule-Thomson est le refroidissement de la plupart des gaz réels comprimés lorsqu'ils se détendent à travers un orifice étroit dans les conditions ambiantes ; la température critique est la température au-dessus de laquelle un gaz ne peut être liquéfié sous aucune pression.",
         "ru": "Эффект Джоуля — Томсона — охлаждение большинства сжатых реальных газов при расширении через узкое отверстие в комнатных условиях; критическая температура — температура, выше которой газ нельзя сжижить ни при каком давлении.",
-        "ar": "ظاهرة جول-طومسون هي تبريد معظم الغازات الحقيقية المضغوطة عند تمددها عبر فتحة ضيقة في ظروف الغرفة؛ أما درجة الحرارة الحرجة فهي الدرجة التي لا يمكن فوقها تسييل الغاز تحت أي ضغط.",
+        "ar": "تأثير جول-طومسون هو تبريد معظم الغازات الحقيقية المضغوطة عند تمددها عبر فتحة ضيقة في ظروف الغرفة؛ أما درجة الحرارة الحرجة فدرجةُ الحرارة التي لا يمكن فوقها تسييل الغاز مهما كان الضغط.",
         "zh": "焦耳-汤姆孙效应是指室温下大多数被压缩的真实气体经狭窄小孔膨胀时降温；而临界温度是指高于该温度时气体在任何压强下都不能液化的温度。",
         "ku": "Bandora Joule-Thomson sarbûna piraniya gazên rastîn ên pêçayî ye dema ku di şertên odeyê de ji qulikeke teng berfireh dibin; germahiya krîtîk ew germahî ye ku li ser wê gaz di bin tu zextê de nayê şilkirin."
       }
@@ -851,7 +851,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Graham-Diffusionsvergleichsschritte",
         "fr": "Étapes de comparaison de diffusion Graham",
         "ru": "Порядок сравнения скоростей диффузии по закону Грэма",
-        "ar": "خطوات مقارنة نشر غراهام",
+        "ar": "المقارنة بقانون جراهام للانتشار",
         "zh": "用格雷厄姆定律比较扩散速率的步骤",
         "ku": "Pêngavên Berhevdana Belavbûna Graham"
       },
@@ -906,7 +906,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Graham-Diffusionsexperiment",
         "fr": "Expérience de diffusion Graham",
         "ru": "Опыт Грэма по диффузии газов",
-        "ar": "تجربة غراهام للانتشار",
+        "ar": "تجربة جراهام للانتشار",
         "zh": "格雷厄姆扩散实验",
         "ku": "Ezmûna Belavbûna Graham"
       },
@@ -961,7 +961,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Gassammlung auf Wasser",
         "fr": "Collecte de gaz sur l'eau",
         "ru": "Собирание газа над водой",
-        "ar": "تجميع الغاز على الماء",
+        "ar": "جمع الغاز فوق الماء",
         "zh": "排水法收集气体",
         "ku": "Komkirina Gazê li ser Avê"
       },
@@ -1002,7 +1002,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "Vom Gesamtdruck wird der Dampfdruck des Wassers bei dieser Temperatur abgezogen; so erhält man den Druck des trockenen Gases",
           "fr": "On soustrait de la pression totale la pression de vapeur de l'eau à cette température pour obtenir la pression du gaz sec",
           "ru": "Из общего давления вычитают давление пара воды при данной температуре и получают давление сухого газа",
-          "ar": "يُطرح ضغط بخار الماء عند تلك الدرجة من الضغط الكلي فينتج ضغط الغاز الجاف",
+          "ar": "يُطرح ضغط بخار الماء عند درجة الحرارة تلك من الضغط الكلي فيُحصل على ضغط الغاز الجاف",
           "zh": "从总压中减去该温度下水的蒸气压，得到干燥气体的压强",
           "ku": "Zexta buhara avê ya di wê germahiyê de ji zexta giştî tê kêmkirin û zexta gaza hişk tê dîtin"
         }
@@ -1016,7 +1016,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Ablauf der Joule-Thomson-Abkühlung",
         "fr": "Étapes du refroidissement Joule-Thomson",
         "ru": "Этапы охлаждения газа по Джоулю — Томсону",
-        "ar": "مراحل التبريد بظاهرة جول-طومسون",
+        "ar": "التبريد بظاهرة جول-طومسون",
         "zh": "焦耳-汤姆孙效应的降温过程",
         "ku": "Qonaxên sarbûna Joule-Thomson"
       },
@@ -1057,7 +1057,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "Da die Teilchen langsamer werden, sinkt die Temperatur des Gases (für die meisten Gase bei Raumbedingungen)",
           "fr": "Les particules ralentissant, la température du gaz baisse (pour la plupart des gaz dans les conditions ambiantes)",
           "ru": "Частицы замедляются, поэтому температура газа понижается (для большинства газов в комнатных условиях)",
-          "ar": "لأن الجسيمات تتباطأ تنخفض درجة حرارة الغاز (لمعظم الغازات في ظروف الغرفة)",
+          "ar": "تنخفض درجة حرارة الغاز لتباطؤ جسيماته (لمعظم الغازات في ظروف الغرفة)",
           "zh": "粒子变慢，气体温度降低（室温下的大多数气体如此）",
           "ku": "Ji ber ku perçe hêdî dibin, germahiya gazê dadikeve (ji bo piraniya gazan di şertên odeyê de)"
         }
@@ -1073,7 +1073,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "CH4-Gas (MA=16) und SO2-Gas (MA=64) werden bei gleicher Temperatur gleichzeitig an den beiden Enden eines 100 cm langen Glasrohrs freigesetzt. In wie vielen cm Entfernung vom CH4-Ende treffen die Gase aufeinander?",
         "fr": "Les gaz CH4 (MA=16) et SO2 (MA=64), à la même température, sont libérés simultanément aux deux extrémités d'un tube de verre de 100 cm. À combien de cm de l'extrémité CH4 les gaz se rencontrent-ils ?",
         "ru": "Газы CH4 (MA=16) и SO2 (MA=64) при одинаковой температуре одновременно выпускают с двух концов стеклянной трубки длиной 100 см. На каком расстоянии (в см) от конца с CH4 газы встретятся?",
-        "ar": "عند درجة الحرارة نفسها أُطلق غازا CH4 (MA=16) وSO2 (MA=64) في اللحظة نفسها من طرفي أنبوب زجاجي طوله 100 سم. على بُعد كم سم من طرف CH4 يلتقي الغازان؟",
+        "ar": "عند درجة الحرارة نفسها أُطلق غازا CH4 (MA=16) وSO2 (MA=64) في اللحظة نفسها من طرفي أنبوب زجاجي طوله 100 cm. على بُعد كم cm من طرف CH4 يلتقي الغازان؟",
         "zh": "相同温度下，从 100 cm 长玻璃管的两端同时放入 CH4(M = 16 g/mol)和 SO2(M = 64 g/mol)气体。两种气体在距 CH4 一端多少厘米处相遇？",
         "ku": "Gazên CH4 (MA=16) û SO2 (MA=64) ên di heman germahiyê de, di heman demê de ji her du serên lûleyeke camê ya 100 cm tên berdan. Gaz li çend cm dûrî serê CH4 digihîjin hev?"
       },
@@ -1084,7 +1084,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "66,7 cm",
           "fr": "66,7 cm",
           "ru": "66,7 см",
-          "ar": "66.7 سم",
+          "ar": "66.7 cm",
           "zh": "66.7 cm",
           "ku": "66,7 cm"
         },
@@ -1094,7 +1094,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "50,0 cm",
           "fr": "50,0 cm",
           "ru": "50,0 см",
-          "ar": "50.0 سم",
+          "ar": "50.0 cm",
           "zh": "50.0 cm",
           "ku": "50,0 cm"
         },
@@ -1104,7 +1104,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "80,0 cm",
           "fr": "80,0 cm",
           "ru": "80,0 см",
-          "ar": "80.0 سم",
+          "ar": "80.0 cm",
           "zh": "80.0 cm",
           "ku": "80,0 cm"
         },
@@ -1114,7 +1114,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "33,3 cm",
           "fr": "33,3 cm",
           "ru": "33,3 см",
-          "ar": "33.3 سم",
+          "ar": "33.3 cm",
           "zh": "33.3 cm",
           "ku": "33,3 cm"
         },
@@ -1124,7 +1124,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "25,0 cm",
           "fr": "25,0 cm",
           "ru": "25,0 см",
-          "ar": "25.0 سم",
+          "ar": "25.0 cm",
           "zh": "25.0 cm",
           "ku": "25,0 cm"
         }
@@ -1136,7 +1136,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Während CH4 die Strecke 2x zurücklegt, legt SO2 x zurück. 3x = 100 cm → x = 33,3 cm. Sie treffen sich 2x = 66,7 cm vom CH4-Ende entfernt. Wer gleiche Geschwindigkeiten annimmt, erhält 50,0 cm; wer die von SO2 zurückgelegte Strecke (x) angibt, 33,3 cm.",
         "fr": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Pendant que CH4 parcourt 2x, SO2 parcourt x. 3x = 100 cm → x = 33,3 cm. Ils se rencontrent à 2x = 66,7 cm de l'extrémité CH4. L'élève qui suppose des vitesses égales trouve 50,0 cm ; celui qui donne la distance parcourue par SO2 (x) trouve 33,3 cm.",
         "ru": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Пока CH4 проходит 2x, SO2 проходит x. 3x = 100 см → x = 33,3 см. Газы встречаются на расстоянии 2x = 66,7 см от конца с CH4. Ученик, считающий скорости равными, получит 50,0 см; указавший путь, пройденный SO2 (x), — 33,3 см.",
-        "ar": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. بينما يقطع CH4 مسافة 2x يقطع SO2 مسافة x. 3x = 100 سم → x = 33.3 سم. يلتقي الغازان على بُعد 2x = 66.7 سم من طرف CH4. الطالب الذي يفترض تساوي السرعتين يحصل على 50.0 سم، ومن يكتب المسافة التي قطعها SO2 (x) يحصل على 33.3 سم.",
+        "ar": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. بينما يقطع CH4 مسافة 2x يقطع SO2 مسافة x. 3x = 100 cm → x = 33.3 cm. يلتقي الغازان على بُعد 2x = 66.7 cm من طرف CH4. الطالب الذي يفترض تساوي السرعتين يحصل على 50.0 cm، ومن يكتب المسافة التي قطعها SO2 (x) يحصل على 33.3 cm.",
         "zh": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1。相同时间内 CH4 走 2x，SO2 走 x。3x = 100 cm → x = 33.3 cm。两者在距 CH4 端 2x = 66.7 cm 处相遇。认为两者速率相等的学生得到 50.0 cm；写出 SO2 所走路程(x)的学生得到 33.3 cm。",
         "ku": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Dema CH4 rêya 2x digire, SO2 rêya x digire. 3x = 100 cm → x = 33,3 cm. Ew li 2x = 66,7 cm dûrî serê CH4 digihîjin hev. Xwendekarê ku lezan wekhev dihesibîne 50,0 cm dibîne; yê ku rêya SO2 girtiye (x) dinivîse 33,3 cm dibîne."
       }
@@ -1149,7 +1149,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "In einem Gefäß mit Kolben befinden sich etwas flüssiges Wasser und über dem Wasser aufgefangenes He-Gas. Bei konstanter Temperatur wird der Kolben hineingeschoben, bis das Gasvolumen halbiert ist; flüssiges Wasser ist weiterhin vorhanden. Wie ändern sich der Partialdruck von He und der Dampfdruck des Wassers?",
         "fr": "Un récipient à piston contient un peu d'eau liquide et du gaz He recueilli sur l'eau. À température constante, on enfonce le piston jusqu'à réduire de moitié le volume gazeux ; il reste de l'eau liquide. Comment varient la pression partielle de He et la pression de vapeur de l'eau ?",
         "ru": "В сосуде с поршнем находятся немного жидкой воды и газ He, собранный над водой. При постоянной температуре поршень вдвигают так, что объём газа уменьшается вдвое; жидкая вода в сосуде остаётся. Как изменятся парциальное давление He и давление пара воды?",
-        "ar": "وعاء ذو مكبس يحتوي على قليل من الماء السائل وغاز He مجمَّع فوق الماء. عند درجة حرارة ثابتة يُدفع المكبس حتى ينخفض حجم الغاز إلى النصف، ويبقى ماء سائل في الوعاء. كيف يتغير الضغط الجزئي لغاز He وضغط بخار الماء؟",
+        "ar": "يحتوي وعاء ذو مكبس على كمية من الماء السائل وعلى غاز He مجمَّع فوق الماء. عند درجة حرارة ثابتة يُدفع المكبس حتى ينخفض حجم الغاز إلى النصف، ويبقى في الوعاء ماء سائل. كيف يتغير الضغط الجزئي لغاز He وضغط بخار الماء؟",
         "zh": "带活塞的容器中有少量液态水，水面上方是用排水法收集的 He。恒温下推动活塞使气体体积减小一半，容器中仍有液态水。He 的分压和水的蒸气压分别如何变化？",
         "ku": "Di firaxeke bi piston de hinek ava şil û gaza He ya ku li ser avê hatiye berhevkirin heye. Di germahiya sabît de piston tê dehfdan heta ku qebareya gazê nîvî dibe, û di firaxê de hîn jî ava şil heye. Zexta qismî ya He û zexta buhara avê çawa diguherin?"
       },
@@ -1160,7 +1160,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "Der He-Druck verdoppelt sich, der Dampfdruck des Wassers ändert sich nicht",
           "fr": "La pression de He double, la pression de vapeur de l'eau ne change pas",
           "ru": "Парциальное давление He увеличится в 2 раза, давление водяного пара не изменится",
-          "ar": "يتضاعف ضغط He، ولا يتغير ضغط بخار الماء",
+          "ar": "يتضاعف الضغط الجزئي لـ He، ولا يتغير ضغط بخار الماء",
           "zh": "He 的分压变为原来的2倍，水的蒸气压不变",
           "ku": "Zexta He du qat dibe, zexta buhara avê naguhere"
         },
@@ -1190,7 +1190,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "Der He-Druck ändert sich nicht, der Wasserdampfdruck steigt",
           "fr": "La pression de He ne change pas, la pression de vapeur de l'eau augmente",
           "ru": "Парциальное давление He не изменится, давление водяного пара увеличится",
-          "ar": "لا يتغير ضغط He، ويزداد ضغط بخار الماء",
+          "ar": "لا يتغير الضغط الجزئي لـ He، ويزداد ضغط بخار الماء",
           "zh": "He 的分压不变，水的蒸气压增大",
           "ku": "Zexta He naguhere, zexta buhara avê zêde dibe"
         },
@@ -1200,7 +1200,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "Der He-Druck vervierfacht sich, der Wasserdampfdruck nimmt ab",
           "fr": "La pression de He est multipliée par 4, la pression de vapeur de l'eau diminue",
           "ru": "Парциальное давление He увеличится в 4 раза, давление водяного пара уменьшится",
-          "ar": "يزداد ضغط He أربع مرات، وينخفض ضغط بخار الماء",
+          "ar": "يزداد الضغط الجزئي لـ He إلى 4 أمثاله، وينخفض ضغط بخار الماء",
           "zh": "He 的分压变为原来的4倍，水的蒸气压减小",
           "ku": "Zexta He 4 qat dibe, zexta buhara avê kêm dibe"
         }
@@ -1332,7 +1332,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "I und II",
           "fr": "I et II",
           "ru": "I и II",
-          "ar": "I وII",
+          "ar": "I و II",
           "zh": "I和II",
           "ku": "I û II"
         },
@@ -1342,7 +1342,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "I und III",
           "fr": "I et III",
           "ru": "I и III",
-          "ar": "I وIII",
+          "ar": "I و III",
           "zh": "I和III",
           "ku": "I û III"
         },
@@ -1352,7 +1352,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "II und III",
           "fr": "II et III",
           "ru": "II и III",
-          "ar": "II وIII",
+          "ar": "II و III",
           "zh": "II和III",
           "ku": "II û III"
         }
@@ -1453,7 +1453,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "He- und SO2-Gas haben dieselbe Temperatur. Welche Aussagen sind richtig? I. Die mittleren kinetischen Energien ihrer Teilchen sind gleich. II. Die mittlere Geschwindigkeit der He-Teilchen ist 4-mal so groß wie die der SO2-Moleküle. III. Wird die absolute Temperatur verdoppelt, verdoppelt sich die mittlere kinetische Energie beider Gase. (He = 4, SO2 = 64 g/mol)",
         "fr": "Les gaz He et SO2 sont à la même température. Lesquelles des affirmations suivantes sont correctes ? I. Les énergies cinétiques moyennes de leurs particules sont égales. II. La vitesse moyenne des particules de He est 4 fois celle des molécules de SO2. III. Si la température absolue double, l'énergie cinétique moyenne des deux gaz double. (He = 4, SO2 = 64 g/mol)",
         "ru": "Газы He и SO2 находятся при одинаковой температуре. Какие утверждения верны? I. Средние кинетические энергии их частиц равны. II. Средняя скорость частиц He в 4 раза больше, чем молекул SO2. III. При увеличении абсолютной температуры в 2 раза средняя кинетическая энергия обоих газов увеличивается в 2 раза. (He = 4, SO2 = 64 г/моль)",
-        "ar": "غازا He وSO2 عند درجة الحرارة نفسها. أيّ العبارات الآتية صحيحة؟ I. متوسطا الطاقة الحركية لجسيماتهما متساويان. II. متوسط سرعة جسيمات He يساوي 4 أمثال متوسط سرعة جزيئات SO2. III. إذا تضاعفت درجة الحرارة المطلقة مرتين يتضاعف متوسط الطاقة الحركية لكلا الغازين مرتين. (He = 4، SO2 = 64 g/mol)",
+        "ar": "غازا He وSO2 عند درجة الحرارة نفسها. أيّ العبارات الآتية صحيحة؟ I. متوسطا الطاقة الحركية لجسيماتهما متساويان. II. متوسط سرعة جسيمات He يساوي 4 أمثال متوسط سرعة جزيئات SO2. III. إذا ضوعفت درجة الحرارة المطلقة يتضاعف متوسط الطاقة الحركية لكلا الغازين. (He = 4، SO2 = 64 g/mol)",
         "zh": "He 和 SO2 两种气体处于相同温度。有下列说法：I. 两者粒子的平均动能相等。II. He 粒子的平均速率是 SO2 分子的4倍。III. 若热力学温度变为原来的2倍，两种气体的平均动能都变为原来的2倍。其中正确的是哪些？(He = 4，SO2 = 64 g/mol)",
         "ku": "Gazên He û SO2 di heman germahiyê de ne. Kîjan ji van gotinan rast in? I. Enerjiyên kînetîk ên navîn ên perçeyên wan wekhev in. II. Leza navîn a perçeyên He 4 qatê ya molekulên SO2 ye. III. Heke germahiya mutleq 2 qat bibe, enerjiya kînetîk a navîn a her du gazan jî 2 qat dibe. (He = 4, SO2 = 64 g/mol)"
       },
@@ -1474,7 +1474,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "I und II",
           "fr": "I et II",
           "ru": "I и II",
-          "ar": "I وII",
+          "ar": "I و II",
           "zh": "I和II",
           "ku": "I û II"
         },
@@ -1484,7 +1484,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "I und III",
           "fr": "I et III",
           "ru": "I и III",
-          "ar": "I وIII",
+          "ar": "I و III",
           "zh": "I和III",
           "ku": "I û III"
         },
@@ -1494,7 +1494,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "II und III",
           "fr": "II et III",
           "ru": "II и III",
-          "ar": "II وIII",
+          "ar": "II و III",
           "zh": "II和III",
           "ku": "II û III"
         },
@@ -1504,7 +1504,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "I, II und III",
           "fr": "I, II et III",
           "ru": "I, II и III",
-          "ar": "I وII وIII",
+          "ar": "I و II و III",
           "zh": "I、II和III",
           "ku": "I, II û III"
         }
@@ -1540,7 +1540,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "32,5 g",
           "fr": "32,5 g",
           "ru": "32,5 г",
-          "ar": "32.5 غ",
+          "ar": "32.5 g",
           "zh": "32.5 g",
           "ku": "32,5 g"
         },
@@ -1550,7 +1550,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "63,1 g",
           "fr": "63,1 g",
           "ru": "63,1 г",
-          "ar": "63.1 غ",
+          "ar": "63.1 g",
           "zh": "63.1 g",
           "ku": "63,1 g"
         },
@@ -1560,7 +1560,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "65,0 g",
           "fr": "65,0 g",
           "ru": "65,0 г",
-          "ar": "65.0 غ",
+          "ar": "65.0 g",
           "zh": "65.0 g",
           "ku": "65,0 g"
         },
@@ -1570,7 +1570,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "67,0 g",
           "fr": "67,0 g",
           "ru": "67,0 г",
-          "ar": "67.0 غ",
+          "ar": "67.0 g",
           "zh": "67.0 g",
           "ku": "67,0 g"
         },
@@ -1580,7 +1580,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "130,0 g",
           "fr": "130,0 g",
           "ru": "130,0 г",
-          "ar": "130.0 غ",
+          "ar": "130.0 g",
           "zh": "130.0 g",
           "ku": "130,0 g"
         }
@@ -1681,7 +1681,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Für einen Haushaltskühlschrank soll ein Kältemittel ausgewählt werden. Welcher der Stoffe, beschrieben durch Normalsiedepunkt, kritische Temperatur und weitere Eigenschaften, ist dafür am besten geeignet?",
         "fr": "On doit choisir un fluide frigorigène pour un réfrigérateur domestique. Laquelle des substances, décrites par leur température d'ébullition normale, leur température critique et d'autres propriétés, convient le mieux ?",
         "ru": "Для бытового холодильника нужно выбрать хладагент. Какое из веществ, для которых указаны нормальная температура кипения, критическая температура и другие свойства, лучше всего подходит для этой цели?",
-        "ar": "يُراد اختيار سائل تبريد لثلاجة منزلية. أيّ المواد الآتية، الموصوفة بدرجة غليانها العادية ودرجة حرارتها الحرجة وخصائص أخرى، هي الأنسب لهذا الغرض؟",
+        "ar": "يُراد اختيار مائع تبريد لثلاجة منزلية. أيّ المواد الآتية، الموصوفة بدرجة غليانها العادية ودرجة حرارتها الحرجة وخصائص أخرى، هي الأنسب لهذا الغرض؟",
         "zh": "要为家用冰箱选择一种制冷剂。已知下列物质的正常沸点、临界温度及其他性质，其中最适合的是哪一种？",
         "ku": "Ji bo sarinceke malê divê akışkaneke sarker were hilbijartin. Ji madeyên ku bi xala kelandinê ya normal, germahiya krîtîk û taybetiyên din hatine dayîn, kîjan ji bo vê armancê herî guncaw e?"
       },
@@ -1692,7 +1692,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "Siedepunkt 100 °C, kritische Temperatur 374 °C, ungiftig, unschädlich für die Ozonschicht",
           "fr": "Ébullition 100 °C, température critique 374 °C, non toxique, sans danger pour la couche d'ozone",
           "ru": "Т. кип. 100 °C, критическая температура 374 °C, нетоксичен, безвреден для озонового слоя",
-          "ar": "درجة الغليان 100 °C، الحرارة الحرجة 374 °C، غير سام، غير ضار بطبقة الأوزون",
+          "ar": "درجة الغليان 100 °C، درجة الحرارة الحرجة 374 °C، غير سام، غير ضار بطبقة الأوزون",
           "zh": "沸点100 °C，临界温度374 °C，无毒，不破坏臭氧层",
           "ku": "Xala kelandinê 100 °C, germahiya krîtîk 374 °C, nejehrî, ji bo qata ozonê bêzirar"
         },
@@ -1702,7 +1702,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "Siedepunkt −196 °C, kritische Temperatur −147 °C, ungiftig, unschädlich für die Ozonschicht",
           "fr": "Ébullition −196 °C, température critique −147 °C, non toxique, sans danger pour la couche d'ozone",
           "ru": "Т. кип. −196 °C, критическая температура −147 °C, нетоксичен, безвреден для озонового слоя",
-          "ar": "درجة الغليان −196 °C، الحرارة الحرجة −147 °C، غير سام، غير ضار بطبقة الأوزون",
+          "ar": "درجة الغليان −196 °C، درجة الحرارة الحرجة −147 °C، غير سام، غير ضار بطبقة الأوزون",
           "zh": "沸点−196 °C，临界温度−147 °C，无毒，不破坏臭氧层",
           "ku": "Xala kelandinê −196 °C, germahiya krîtîk −147 °C, nejehrî, ji bo qata ozonê bêzirar"
         },
@@ -1712,7 +1712,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "Siedepunkt −33 °C, kritische Temperatur 132 °C, giftig, unschädlich für die Ozonschicht",
           "fr": "Ébullition −33 °C, température critique 132 °C, toxique, sans danger pour la couche d'ozone",
           "ru": "Т. кип. −33 °C, критическая температура 132 °C, токсичен, безвреден для озонового слоя",
-          "ar": "درجة الغليان −33 °C، الحرارة الحرجة 132 °C، سام، غير ضار بطبقة الأوزون",
+          "ar": "درجة الغليان −33 °C، درجة الحرارة الحرجة 132 °C، سام، غير ضار بطبقة الأوزون",
           "zh": "沸点−33 °C，临界温度132 °C，有毒，不破坏臭氧层",
           "ku": "Xala kelandinê −33 °C, germahiya krîtîk 132 °C, jehrî, ji bo qata ozonê bêzirar"
         },
@@ -1722,7 +1722,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "Siedepunkt −26 °C, kritische Temperatur 101 °C, ungiftig, unschädlich für die Ozonschicht",
           "fr": "Ébullition −26 °C, température critique 101 °C, non toxique, sans danger pour la couche d'ozone",
           "ru": "Т. кип. −26 °C, критическая температура 101 °C, нетоксичен, безвреден для озонового слоя",
-          "ar": "درجة الغليان −26 °C، الحرارة الحرجة 101 °C، غير سام، غير ضار بطبقة الأوزون",
+          "ar": "درجة الغليان −26 °C، درجة الحرارة الحرجة 101 °C، غير سام، غير ضار بطبقة الأوزون",
           "zh": "沸点−26 °C，临界温度101 °C，无毒，不破坏臭氧层",
           "ku": "Xala kelandinê −26 °C, germahiya krîtîk 101 °C, nejehrî, ji bo qata ozonê bêzirar"
         },
@@ -1732,7 +1732,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "Siedepunkt −30 °C, kritische Temperatur 112 °C, ungiftig, schädlich für die Ozonschicht",
           "fr": "Ébullition −30 °C, température critique 112 °C, non toxique, nocif pour la couche d'ozone",
           "ru": "Т. кип. −30 °C, критическая температура 112 °C, нетоксичен, разрушает озоновый слой",
-          "ar": "درجة الغليان −30 °C، الحرارة الحرجة 112 °C، غير سام، ضار بطبقة الأوزون",
+          "ar": "درجة الغليان −30 °C، درجة الحرارة الحرجة 112 °C، غير سام، ضار بطبقة الأوزون",
           "zh": "沸点−30 °C，临界温度112 °C，无毒，破坏臭氧层",
           "ku": "Xala kelandinê −30 °C, germahiya krîtîk 112 °C, nejehrî, ji bo qata ozonê zirardar"
         }
@@ -1744,7 +1744,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Ein Kältemittel braucht einen niedrigen Siedepunkt, damit es im Kühlraum unter Wärmeaufnahme verdampft, und eine kritische Temperatur über Raumtemperatur, damit der Kompressor es allein durch Druck verflüssigen kann; außerdem muss es ungiftig und umweltfreundlich sein. Der Stoff mit Siedepunkt 100 °C kann im Kühlraum nicht verdampfen. Der Stoff mit kritischer Temperatur −147 °C lässt sich bei Raumtemperatur nicht durch Druck verflüssigen. Der bei −33 °C siedende Stoff wäre physikalisch geeignet, ist aber giftig; der bei −30 °C siedende schädigt die Ozonschicht. Alle Bedingungen erfüllt nur der ungiftige, ozonunschädliche Stoff mit Siedepunkt −26 °C und kritischer Temperatur 101 °C.",
         "fr": "Un fluide frigorigène doit avoir une basse température d'ébullition pour s'évaporer dans le compartiment froid en absorbant de la chaleur, et une température critique supérieure à la température ambiante pour que le compresseur puisse le liquéfier par simple compression ; il doit aussi être non toxique et respectueux de l'environnement. La substance qui bout à 100 °C ne peut pas s'évaporer dans le compartiment froid. Celle dont la température critique est −147 °C ne peut pas être liquéfiée par compression à température ambiante. Celle qui bout à −33 °C conviendrait physiquement mais est toxique ; celle qui bout à −30 °C endommage la couche d'ozone. Seule la substance non toxique et sans danger pour l'ozone, bouillant à −26 °C et de température critique 101 °C, remplit toutes les conditions.",
         "ru": "Температура кипения хладагента должна быть низкой, чтобы он испарялся в охлаждаемой камере, поглощая теплоту, а критическая температура — выше комнатной, чтобы в компрессоре его можно было сжижать одним давлением; кроме того, он должен быть нетоксичным и безопасным для окружающей среды. Вещество с т. кип. 100 °C не испарится в холодильной камере. Вещество с критической температурой −147 °C нельзя сжижить давлением при комнатной температуре. Вещество с т. кип. −33 °C физически подходит, но токсично, поэтому дома его использовать нельзя; вещество с т. кип. −30 °C разрушает озоновый слой. Всем требованиям отвечает только нетоксичное, безопасное для озонового слоя вещество с т. кип. −26 °C и критической температурой 101 °C.",
-        "ar": "يحتاج سائل التبريد إلى درجة غليان منخفضة ليتبخر في الحجرة المبرَّدة ممتصًا الحرارة، وإلى درجة حرارة حرجة أعلى من درجة حرارة الغرفة ليتمكن الضاغط من تسييله بالضغط وحده، ويجب أن يكون غير سام وصديقًا للبيئة. المادة التي تغلي عند 100 °C لا تتبخر في الحجرة الباردة. والمادة ذات الحرارة الحرجة −147 °C لا يمكن تسييلها بالضغط عند درجة حرارة الغرفة. والمادة التي تغلي عند −33 °C مناسبة فيزيائيًا لكنها سامة، أما التي تغلي عند −30 °C فتضر بطبقة الأوزون. وحدها المادة غير السامة وغير الضارة بالأوزون، ذات درجة الغليان −26 °C والحرارة الحرجة 101 °C، تحقق الشروط كلها.",
+        "ar": "يحتاج مائع التبريد إلى درجة غليان منخفضة ليتبخر في الحجرة المبرَّدة ممتصًا الحرارة، وإلى درجة حرارة حرجة أعلى من درجة حرارة الغرفة ليتمكن الضاغط من تسييله بالضغط وحده، ويجب أن يكون غير سام وصديقًا للبيئة. المادة التي تغلي عند 100 °C لا تتبخر في الحجرة المبرَّدة. والمادة ذات درجة الحرارة الحرجة −147 °C لا يمكن تسييلها بالضغط عند درجة حرارة الغرفة. والمادة التي تغلي عند −33 °C مناسبة فيزيائيًا لكنها سامة، أما التي تغلي عند −30 °C فتضر بطبقة الأوزون. وحدها المادة غير السامة وغير الضارة بالأوزون، ذات درجة الغليان −26 °C ودرجة الحرارة الحرجة 101 °C، تحقق الشروط كلها.",
         "zh": "制冷剂的沸点必须低，才能在冷藏室中吸热蒸发；临界温度必须高于室温，压缩机才能仅靠加压使其液化；此外还必须无毒、环保。沸点为100 °C的物质无法在冷藏室中蒸发。临界温度为−147 °C的物质在室温下无法加压液化。沸点−33 °C的物质物理性质合适但有毒，不适合家用；沸点−30 °C的物质会破坏臭氧层。只有沸点−26 °C、临界温度101 °C、无毒且不破坏臭氧层的物质满足全部要求。",
         "ku": "Akışkana sarker divê xala kelandinê nizm be da ku di beşa sarkirî de germê bigire û bibe buhar, û germahiya wê ya krîtîk ji germahiya odeyê bilindtir be da ku kompresor wê tenê bi zextê şil bike; herwiha divê nejehrî û dostê jîngehê be. Madeya ku di 100 °C de dikele di beşa sar de nabe buhar. Madeya ku germahiya wê ya krîtîk −147 °C ye di germahiya odeyê de bi zextê şil nabe. Madeya ku di −33 °C de dikele ji aliyê fîzîkî ve guncaw e lê jehrî ye; ya ku di −30 °C de dikele zirarê dide qata ozonê. Tenê madeya nejehrî û ji bo ozonê bêzirar, ku xala kelandinê −26 °C û germahiya krîtîk 101 °C ye, hemû şertan pêk tîne."
       }
@@ -1757,7 +1757,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "He, CH4 und NH3 haben dieselbe Temperatur und denselben Druck. In welcher Antwort sind sie richtig nach der Nähe zum idealen Gasverhalten geordnet? (Das idealste steht links.)",
         "fr": "Les gaz He, CH4 et NH3 sont à la même température et à la même pression. Dans quelle proposition sont-ils correctement classés selon leur proximité du comportement parfait ? (Le plus proche du gaz parfait est écrit à gauche.)",
         "ru": "Газы He, CH4 и NH3 находятся при одинаковых температуре и давлении. В каком варианте они правильно расположены по близости их поведения к идеальному газу? (Газ, наиболее близкий к идеальному, записан слева.)",
-        "ar": "غازات He وCH4 وNH3 عند درجة الحرارة والضغط نفسيهما. في أيّ خيار رُتّبت ترتيبًا صحيحًا بحسب قربها من سلوك الغاز المثالي؟ (الأقرب إلى المثالي مكتوب على اليسار.)",
+        "ar": "رُتّبت الغازات He وCH4 وNH3، الموجودة عند درجة الحرارة والضغط نفسيهما، بحسب قربها من سلوك الغاز المثالي. في أيّ الخيارات الآتية جاء الترتيب صحيحًا؟ (الأقرب إلى المثالي مكتوب على اليسار.)",
         "zh": "He、CH4 和 NH3 三种气体处于相同的温度和压强下。按接近理想气体行为的程度排列，正确的是哪一项？（最接近理想气体的写在最左边。）",
         "ku": "Gazên He, CH4 û NH3 di heman germahî û zextê de ne. Li gorî nêzîkbûna wan a ji tevgera gaza îdeal, kîjan rêzkirin rast e? (Ya herî nêzî îdeal li milê çepê hatiye nivîsandin.)"
       },
@@ -1985,7 +1985,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Gase mit den angegebenen Molmassen und absoluten Temperaturen: I. H2 (2 g/mol), 200 K II. CH4 (16 g/mol), 400 K III. O2 (32 g/mol), 800 K. Welche Antwort gibt die Beziehung ihrer Diffusionsgeschwindigkeiten richtig an?",
         "fr": "Gaz dont la masse molaire et la température absolue sont données : I. H2 (2 g/mol), 200 K II. CH4 (16 g/mol), 400 K III. O2 (32 g/mol), 800 K. Quelle proposition donne correctement la relation entre leurs vitesses de diffusion ?",
         "ru": "Даны газы с молярными массами и абсолютными температурами: I. H2 (2 г/моль), 200 K II. CH4 (16 г/моль), 400 K III. O2 (32 г/моль), 800 K. В каком варианте правильно указано соотношение их скоростей диффузии?",
-        "ar": "غازات معطاة كتلها المولية ودرجات حرارتها المطلقة: I. H2 (2 g/mol)، 200 K II. CH4 (16 g/mol)، 400 K III. O2 (32 g/mol)، 800 K. أيّ خيار يعطي العلاقة الصحيحة بين سرعات انتشارها؟",
+        "ar": "فيما يلي الكتل المولية ودرجات الحرارة المطلقة لعدة غازات: I. H2 (2 g/mol)، 200 K II. CH4 (16 g/mol)، 400 K III. O2 (32 g/mol)، 800 K. أيّ الخيارات الآتية يعطي العلاقة الصحيحة بين سرعات انتشار هذه الغازات؟",
         "zh": "已知下列气体的摩尔质量和热力学温度：I. H2(2 g/mol)，200 K II. CH4(16 g/mol)，400 K III. O2(32 g/mol)，800 K。它们的扩散速率关系哪一项正确？",
         "ku": "Gazên ku girseya molar û germahiya mutleq a wan hatine dayîn: I. H2 (2 g/mol), 200 K II. CH4 (16 g/mol), 400 K III. O2 (32 g/mol), 800 K. Têkiliya navbera lezên belavbûna wan di kîjan bersivê de rast hatiye dayîn?"
       },
@@ -2168,7 +2168,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "I und II",
           "fr": "I et II",
           "ru": "I и II",
-          "ar": "I وII",
+          "ar": "I و II",
           "zh": "I和II",
           "ku": "I û II"
         },
@@ -2178,7 +2178,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "I und III",
           "fr": "I et III",
           "ru": "I и III",
-          "ar": "I وIII",
+          "ar": "I و III",
           "zh": "I和III",
           "ku": "I û III"
         },
@@ -2188,7 +2188,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "II und III",
           "fr": "II et III",
           "ru": "II и III",
-          "ar": "II وIII",
+          "ar": "II و III",
           "zh": "II和III",
           "ku": "II û III"
         }
@@ -2244,7 +2244,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "I und II",
           "fr": "I et II",
           "ru": "I и II",
-          "ar": "I وII",
+          "ar": "I و II",
           "zh": "I和II",
           "ku": "I û II"
         },
@@ -2254,7 +2254,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "I und III",
           "fr": "I et III",
           "ru": "I и III",
-          "ar": "I وIII",
+          "ar": "I و III",
           "zh": "I和III",
           "ku": "I û III"
         },
@@ -2264,7 +2264,7 @@ export const unit13: ChemistryUnitSeedData = {
           "de": "II und III",
           "fr": "II et III",
           "ru": "II и III",
-          "ar": "II وIII",
+          "ar": "II و III",
           "zh": "II和III",
           "ku": "II û III"
         }

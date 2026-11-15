@@ -45,7 +45,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Arabische Seife enthält Calciumionen anstelle von Kalium.",
         "fr": "Le savon arabe contient des ions calcium au lieu du potassium.",
         "ru": "Мягкое (жидкое) мыло содержит вместо ионов калия ионы кальция.",
-        "ar": "يحتوي الصابون العربي على أيونات الكالسيوم بدلاً من البوتاسيوم.",
+        "ar": "يحتوي الصابون الطري على أيونات الكالسيوم بدلًا من أيونات البوتاسيوم.",
         "zh": "软皂中含有的是钙离子而不是钾离子。",
         "ku": "Sabûna Ereban di şûna potasyûmê de îyonên kalsiyûmê dihewîne."
       },
@@ -68,7 +68,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Der polare Kopfteil des Seifenmoleküls ist hydrophil (liebt Wasser), während der lange, unpolare Kohlenwasserstoffschwanz hydrophob ist (liebt Öl, hasst Wasser).",
         "fr": "La partie polaire de la molécule de savon est hydrophile (aime l’eau), tandis que la longue queue d’hydrocarbure non polaire est hydrophobe (aime l’huile, déteste l’eau).",
         "ru": "Полярная головка молекулы мыла гидрофильна (притягивает воду), а длинный неполярный углеводородный хвост гидрофобен (отталкивает воду и притягивается к жирам).",
-        "ar": "الجزء الرأسي القطبي لجزيء الصابون محب للماء (يحب الماء)، في حين أن الذيل الهيدروكربوني الطويل غير القطبي كاره للماء (يحب الزيت، ويكره الماء).",
+        "ar": "الرأس القطبي لجزيء الصابون محب للماء، في حين أن الذيل الهيدروكربوني الطويل غير القطبي كاره للماء (لا يحب الماء ويحب الزيت).",
         "zh": "肥皂分子的极性头部是亲水的（喜水），长的非极性烃基尾部是疏水的（憎水、亲油）。",
         "ku": "Beşa serê polar a molekula sabûnê hîdrofîlîk e (avîn hez dike), lê dûvika hîdrokarbonê ya dirêj û ne-polar hîdrofobîk e (ji rûnê hez dike, ji avê nefret dike)."
       },
@@ -78,7 +78,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Der polare Kopf der Seife haftet an unpolarem Schmutz.",
         "fr": "La tête polaire du savon adhère à la saleté non polaire.",
         "ru": "Полярная головка мыла прикрепляется к неполярной грязи.",
-        "ar": "يتمسك الرأس القطبي للصابون بالأوساخ غير القطبية.",
+        "ar": "يلتصق الرأس القطبي للصابون بالأوساخ غير القطبية.",
         "zh": "肥皂的极性头部附着在非极性污垢上。",
         "ku": "Serê polar ê sabûnê bi qirêjiya ne-polar ve girêdayî ye."
       },
@@ -88,7 +88,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Gleiches löst sich in Gleichem: unpolarer Schmutz wechselwirkt nur mit dem unpolaren Kohlenwasserstoffschwanz. Der polare Kopf wechselwirkt mit Wassermolekülen und trägt den Schmutz ins Wasser.",
         "fr": "Le semblable dissout le semblable : la saleté apolaire n’interagit qu’avec la queue hydrocarbonée apolaire. La tête polaire interagit avec les molécules d’eau et entraîne la saleté dans l’eau.",
         "ru": "Подобное растворяется в подобном: неполярная грязь взаимодействует только с неполярным углеводородным хвостом. Полярная же головка взаимодействует с молекулами воды и обеспечивает перенос грязи в воду.",
-        "ar": "الشبيه يذيب الشبيه: الأوساخ غير القطبية تتفاعل فقط مع الذيل الهيدروكربوني غير القطبي، أما الرأس القطبي فيتفاعل مع جزيئات الماء وينقل الأوساخ إلى الماء.",
+        "ar": "الشبيه يذيب الشبيه: لا تتآثر الأوساخ غير القطبية إلا مع الذيل الهيدروكربوني غير القطبي، أما الرأس القطبي فيتآثر مع جزيئات الماء فيُمكّن من نقل الأوساخ إلى الماء.",
         "zh": "相似相溶：非极性污垢只与非极性的烃基尾部相互作用；极性头部与水分子相互作用，把污垢带入水中。",
         "ku": "Wekhev wekhevê dihelîne: qirêja nepolar tenê bi dûvikê hîdrokarbonî yê nepolar re têkildar dibe. Serê polar bi molekulên avê re têkildar dibe û qirêjê dibe nav avê."
       }
@@ -101,7 +101,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Reinigungsmittel sind Erdölderivate und reinigen gut in hartem Wasser, da sie in hartem Wasser keine Niederschläge mit den Ca2+- und Mg2+-Ionen bilden.",
         "fr": "Les détergents sont des dérivés du pétrole et nettoient bien dans l'eau dure car ils ne forment pas de précipités avec les ions Ca2+ et Mg2+ dans l'eau dure.",
         "ru": "Синтетические моющие средства производят из продуктов переработки нефти; они не образуют осадка с ионами Ca2+ и Mg2+, поэтому хорошо моют и в жёсткой воде.",
-        "ar": "المنظفات هي مشتقات بترولية وتنظف جيدًا في الماء العسر حيث أنها لا تشكل رواسب مع أيونات Ca2+ وMg2+ في الماء العسر.",
+        "ar": "المنظفات الصناعية مشتقات بترولية، وتنظف جيدًا في الماء العسر أيضًا لأنها لا تكوّن رواسب مع أيونات Ca2+ وMg2+ الموجودة فيه.",
         "zh": "洗涤剂是石油产品，不与硬水中的 Ca2+ 和 Mg2+ 离子形成沉淀，因此在硬水中也能很好地去污。",
         "ku": "Deterjan derûvên neftê ne û di ava hişk de baş paqij dikin ji ber ku ew bi îyonên Ca2+ û Mg2+ di ava hişk de baran çênakin."
       },
@@ -111,7 +111,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Reinigungsmittel setzt sich in hartem Wasser ab und verliert seine Reinigungswirkung.",
         "fr": "Le détergent précipite dans l’eau dure et perd ses propriétés nettoyantes.",
         "ru": "Синтетическое моющее средство в жёсткой воде выпадает в осадок и теряет моющую способность.",
-        "ar": "يترسب المنظف في الماء العسر ويفقد خصائصه التنظيفية.",
+        "ar": "يترسب المنظف الصناعي في الماء العسر ويفقد قدرته على التنظيف.",
         "zh": "洗涤剂在硬水中会沉淀而失去去污能力。",
         "ku": "Deterjan di ava hişk de tortî çêdike û taybetmendiya xwe ya paqijkirinê winda dike."
       },
@@ -144,7 +144,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Waschmittel werden in der Natur viel schneller biologisch abgebaut als Seifen.",
         "fr": "Les détergents se biodégradent beaucoup plus rapidement dans la nature que les savons.",
         "ru": "Синтетические моющие средства разлагаются в природе гораздо быстрее, чем мыло.",
-        "ar": "تتحلل المنظفات بيولوجيًا بشكل أسرع بكثير في الطبيعة من الصابون.",
+        "ar": "تتحلل المنظفات الصناعية بيولوجيًا في الطبيعة أسرع بكثير من الصابون.",
         "zh": "洗涤剂在自然界中的生物降解速度比肥皂快得多。",
         "ku": "Deterjant di xwezayê de ji sabûnan ​​pir zûtir biyolojîk dibin."
       },
@@ -167,7 +167,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Unter Polymerisation versteht man die Bildung riesiger Makromoleküle durch die Verbindung kleiner Moleküle, sogenannter Monomere, mit kovalenten Bindungen.",
         "fr": "La polymérisation est la formation de macromolécules géantes en reliant de petites molécules appelées monomères par des liaisons covalentes.",
         "ru": "Полимеризация — образование гигантских молекул (макромолекул) из небольших молекул — мономеров, которые соединяются друг с другом ковалентными связями.",
-        "ar": "البلمرة هي تكوين جزيئات كبيرة عملاقة عن طريق ربط جزيئات صغيرة تسمى المونومرات بروابط تساهمية.",
+        "ar": "البلمرة ارتباط جزيئات صغيرة تُسمّى المونومرات بعضها ببعض بروابط تساهمية لتكوين جزيئات ضخمة عملاقة.",
         "zh": "聚合反应是指称为单体的小分子以共价键相互连接，形成巨大的高分子。",
         "ku": "Polîmerîzasyon bi girêdana molekulên piçûk ên bi navê monomer bi girêdanên kovalentî ve pêkhatina makromolekulên mezin e."
       },
@@ -177,7 +177,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Polymere sind kleine Verbindungen, die nur durch schwache Van-der-Waals-Bindungen zusammengehalten werden.",
         "fr": "Les polymères sont de petits composés maintenus ensemble uniquement par de faibles liaisons de Van der Waals.",
         "ru": "Полимеры — небольшие молекулы, удерживаемые вместе только слабыми силами Ван-дер-Ваальса.",
-        "ar": "البوليمرات عبارة عن مركبات صغيرة متماسكة معًا فقط بواسطة روابط فان دير فال الضعيفة.",
+        "ar": "البوليمرات مركبات صغيرة لا يربطها معًا سوى روابط فان در فالس الضعيفة.",
         "zh": "聚合物是仅靠微弱的范德华力结合在一起的小分子化合物。",
         "ku": "Polîmer pêkhateyên piçûk in ku tenê bi girêdanên van der Waals-ê yên qels li hev têne girtin."
       },
@@ -187,7 +187,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "In einer Polymerkette sind die Monomere durch starke kovalente Bindungen verknüpft, und die Molekülmasse ist sehr groß. Van-der-Waals-Kräfte wirken nur zwischen getrennten Ketten.",
         "fr": "Dans une chaîne de polymère, les monomères sont liés par de fortes liaisons covalentes et la masse molaire est très grande. Les interactions de van der Waals n’agissent qu’entre chaînes distinctes.",
         "ru": "В полимерной цепи мономеры соединены прочными ковалентными связями, а молярная масса полимера очень велика. Силы Ван-дер-Ваальса действуют лишь между отдельными цепями.",
-        "ar": "ترتبط المونومرات في سلسلة البوليمر بروابط تساهمية قوية وتكون الكتلة المولية كبيرة جدًا، أما قوى فان دير فالس فتعمل فقط بين السلاسل المنفصلة.",
+        "ar": "ترتبط المونومرات في سلسلة البوليمر بروابط تساهمية قوية وتكون الكتلة المولية كبيرة جدًا، أما قوى فان در فالس فتعمل فقط بين السلاسل المنفصلة.",
         "zh": "聚合物链中单体之间以牢固的共价键相连，相对分子质量非常大；范德华力只存在于不同的链之间。",
         "ku": "Di zincîra polîmerê de monomer bi girêdanên kovalent ên xurt bi hev ve girêdayî ne û girseya molekulê pir mezin e. Hêzên Van der Waals tenê di navbera zincîrên cuda de bandor dikin."
       }
@@ -220,7 +220,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Einkaufstüten bestehen aus billigem, leicht verarbeitbarem Polyethylen (PE). Teflon ist teuer und wird wegen seiner Hitzebeständigkeit für Antihaftbeschichtungen verwendet.",
         "fr": "Les sacs de caisse sont faits de polyéthylène (PE), bon marché et facile à mettre en forme. Le Téflon est cher et sert aux revêtements antiadhésifs grâce à sa résistance à la chaleur.",
         "ru": "Пакеты для покупок делают из дешёвого и легко обрабатываемого полиэтилена (ПЭ). Тефлон дорог; благодаря термостойкости его применяют в антипригарных покрытиях.",
-        "ar": "تُصنع أكياس التسوق من البولي إيثيلين (PE) الرخيص وسهل التشكيل، أما التفلون فغالي الثمن ويُستخدم في الطلاءات غير اللاصقة لمقاومته العالية للحرارة.",
+        "ar": "تُصنع أكياس التسوق من البولي إيثيلين (PE) الرخيص السهل التشكيل، أما التفلون فغالي الثمن ويُستخدم في الطلاءات غير اللاصقة لمقاومته العالية للحرارة.",
         "zh": "购物袋由便宜、易加工的聚乙烯(PE)制成。特氟龙价格昂贵，因耐高温而用于不粘涂层。",
         "ku": "Kîsikên bazarê ji polîetîlena (PE) erzan û bi hêsanî tê şekildan têne çêkirin. Teflon biha ye û ji ber berxwedana xwe ya li hember germê di pêçanên neçîpok de tê bikaranîn."
       }
@@ -233,7 +233,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Polytetrafluorethylen (Teflon – PTFE) wird aufgrund seiner hohen Hitzebeständigkeit in Antihaftbeschichtungen für Pfannen und Töpfe verwendet.",
         "fr": "Le polytétrafluoroéthylène (Téflon - PTFE) est utilisé dans les revêtements antiadhésifs des poêles et des casseroles en raison de sa haute résistance à la chaleur.",
         "ru": "Политетрафторэтилен (тефлон, ПТФЭ) благодаря высокой термостойкости применяют в антипригарных покрытиях сковород и кастрюль.",
-        "ar": "يستخدم بولي تترافلوروإيثيلين (تفلون - PTFE) في طلاء المقالي والأواني غير اللاصقة بسبب مقاومته العالية للحرارة.",
+        "ar": "يُستخدم البولي تترافلوروإيثيلين (التفلون - PTFE) في طلاء المقالي والقدور غير اللاصقة بسبب مقاومته العالية للحرارة.",
         "zh": "聚四氟乙烯(特氟龙，PTFE)耐高温，因此用于不粘平底锅和炖锅的涂层。",
         "ku": "Polytetrafluoroethylene (Teflon - PTFE) ji ber berxwedana xwe ya bilind a germê di cil û bergên pan û potan de ne-çît tê bikar anîn."
       },
@@ -243,7 +243,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Teflon ist ein Polymer, das leicht Feuer fängt und schmilzt.",
         "fr": "Le téflon est un polymère qui s’enflamme et fond facilement.",
         "ru": "Тефлон — легко воспламеняющийся и легкоплавкий полимер.",
-        "ar": "التفلون هو بوليمر يشتعل بسهولة ويذوب.",
+        "ar": "التفلون بوليمر سريع الاشتعال وسهل الانصهار.",
         "zh": "特氟龙是一种容易着火和熔化的聚合物。",
         "ku": "Teflon polîmerek e ku bi hêsanî agir pê dikeve û dihele."
       },
@@ -266,7 +266,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Kevlar ist ein leichtes und extrem haltbares synthetisches Polyamid, das in kugelsicheren Westen, Helmen und Flugzeugflügeln verwendet wird.",
         "fr": "Le Kevlar est un polyamide synthétique léger et extrêmement durable utilisé dans les gilets pare-balles, les casques et les ailes d'avion.",
         "ru": "Кевлар — лёгкий и чрезвычайно прочный синтетический полиамид; его используют в бронежилетах, шлемах и крыльях самолётов.",
-        "ar": "الكيفلار عبارة عن مادة بولي أميد صناعية خفيفة الوزن ومتينة للغاية تستخدم في السترات المضادة للرصاص والخوذات وأجنحة الطائرات.",
+        "ar": "الكيفلار بولي أميد صناعي خفيف ومتين للغاية، يُستخدم في السترات الواقية من الرصاص والخوذ وأجنحة الطائرات.",
         "zh": "凯夫拉是一种轻质、极其坚固的合成聚酰胺，用于防弹背心、头盔和飞机机翼。",
         "ku": "Kevlar polîamîdek sentetîk a sivik û pir domdar e ku di êlekên gulebaranê, helmet û baskên balafirê de tê bikar anîn."
       },
@@ -276,7 +276,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Kevlar wird bei der Herstellung von Einweg-Plastikbechern verwendet.",
         "fr": "Le Kevlar est utilisé dans la production de gobelets en plastique jetables.",
         "ru": "Кевлар используют для производства одноразовых пластиковых стаканчиков.",
-        "ar": "يستخدم الكيفلار في إنتاج الأكواب البلاستيكية التي يمكن التخلص منها.",
+        "ar": "يُستخدم الكيفلار في إنتاج الأكواب البلاستيكية أحادية الاستعمال.",
         "zh": "凯夫拉用于生产一次性塑料杯。",
         "ku": "Kevlar di hilberîna tasên plastîk ên yekcar de tê bikar anîn."
       },
@@ -299,7 +299,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Kautschuk wird auf natürliche Weise (aus dem Kautschukbaum) oder synthetisch hergestellt und wird aufgrund seiner Elastizität in Autoreifen verwendet.",
         "fr": "Le caoutchouc est produit naturellement (à partir de l'hévéa) ou synthétiquement et est utilisé dans les pneus de voiture grâce à son élasticité.",
         "ru": "Каучук бывает натуральным (из сока каучукового дерева) и синтетическим; благодаря эластичности его используют в производстве автомобильных шин.",
-        "ar": "يتم إنتاج المطاط بشكل طبيعي (من شجرة المطاط) أو صناعيا ويستخدم في إطارات السيارات بفضل مرونته.",
+        "ar": "يُنتَج المطاط طبيعيًا (من شجرة المطاط) أو صناعيًا، ويُستخدم في إطارات السيارات بفضل مرونته.",
         "zh": "橡胶可以是天然的（取自橡胶树）或合成的，因具有弹性而用于汽车轮胎。",
         "ku": "Lastîk bi awayekî xwezayî (ji dara lastîkê) an jî sentetîk tê hilberandin û bi saya elastîkbûna xwe di tekerên otomobîlan de tê bikaranîn."
       },
@@ -332,7 +332,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "PET (Polyethylenterephthalat) ist ein recycelbares Polymer, das in Wasserflaschen und Getränkebehältern verwendet wird.",
         "fr": "Le PET (polyéthylène téréphtalate) est un polymère recyclable utilisé dans les bouteilles d'eau et les contenants de boissons.",
         "ru": "ПЭТ (полиэтилентерефталат) — полимер, пригодный для вторичной переработки; из него делают бутылки для воды и ёмкости для напитков.",
-        "ar": "PET (البولي إيثيلين تيريفثاليت) هو بوليمر قابل لإعادة التدوير يستخدم في زجاجات المياه وحاويات المشروبات.",
+        "ar": "البولي إيثيلين تيريفثاليت (PET) بوليمر قابل لإعادة التدوير يُستخدم في قوارير المياه وعبوات المشروبات.",
         "zh": "PET(聚对苯二甲酸乙二醇酯)是一种可回收利用的聚合物，用于饮用水瓶和饮料容器。",
         "ku": "PET (Polyethylene terephthalate) polîmerek vezîvirandinê ye ku di şûşeyên avê û konteynerên vexwarinê de tê bikar anîn."
       },
@@ -352,7 +352,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "PET ist ein Thermoplast: Es lässt sich schmelzen und neu formen. PET-Flaschen mit dem Recyclingcode 1 werden gesammelt und zu Textilfasern und neuen Verpackungen verarbeitet.",
         "fr": "Le PET est un thermoplastique : il peut être fondu et remis en forme. Les bouteilles en PET, code de recyclage 1, sont collectées et transformées en fibres textiles et en nouveaux emballages.",
         "ru": "ПЭТ — термопласт: его можно расплавить и снова сформовать. ПЭТ-бутылки с кодом переработки 1 собирают и превращают в текстильное волокно и новую упаковку.",
-        "ar": "PET لدائن حرارية يمكن صهرها وإعادة تشكيلها، وتُجمع زجاجات PET ذات رمز إعادة التدوير 1 لتتحول إلى ألياف نسيجية وعبوات جديدة.",
+        "ar": "PET من اللدائن الحرارية، يمكن صهره وإعادة تشكيله، وتُجمع قوارير PET ذات رمز إعادة التدوير 1 لتتحول إلى ألياف نسيجية وعبوات جديدة.",
         "zh": "PET 是热塑性塑料，可以熔化后重新成型。回收代码为 1 的 PET 瓶被收集后制成纺织纤维和新的包装。",
         "ku": "PET termoplastîk e; dikare were helandin û ji nû ve were şekildan. Şûşeyên PET yên bi koda vezîvirandinê 1 têne berhevkirin û dibin têlên tekstîlê û pakêtên nû."
       }
@@ -365,7 +365,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "In der Mizellenstruktur umgeben die hydrophoben Schwänze der Seife die unpolaren Schmutzpartikel, und die hydrophilen Köpfe interagieren mit Wasser und entfernen den Schmutz von der Oberfläche.",
         "fr": "Dans la structure micelle, les queues hydrophobes du savon entourent la particule de saleté non polaire, et les têtes hydrophiles interagissent avec l'eau et éliminent la saleté de la surface.",
         "ru": "В мицелле гидрофобные хвосты мыла окружают неполярную частицу грязи, а гидрофильные головки взаимодействуют с водой и отрывают грязь от поверхности.",
-        "ar": "في بنية المذيلة، تحيط ذيول الصابون الكارهة للماء بجزيئات الأوساخ غير القطبية، وتتفاعل الرؤوس المحبة للماء مع الماء وتزيل الأوساخ من السطح.",
+        "ar": "في بنية المذيلة تحيط ذيول الصابون الكارهة للماء بجسيم الأوساخ غير القطبي، وتتآثر الرؤوس المحبة للماء مع الماء فتقتلع الأوساخ من السطح.",
         "zh": "在胶束结构中，肥皂的疏水尾部包围非极性污垢颗粒，亲水头部与水相互作用，把污垢从表面拉下来。",
         "ku": "Di strukturê micelle de, dûvikên hîdrofobîk ên sabûnê dor parça qirêj a nepolar dorpêç dikin, û serê hîdrofîl bi avê re têkilî dikin û qirêjê ji ser rûyê erdê radikin."
       },
@@ -375,7 +375,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Bei der Mizellenbildung bleiben hydrophile Köpfe im Schmutz stecken.",
         "fr": "Lors de la formation des micelles, les têtes hydrophiles restent coincées dans la terre.",
         "ru": "При образовании мицеллы гидрофильные головки внедряются в грязь.",
-        "ar": "أثناء تكوين المذيلة، تتعثر الرؤوس المحبة للماء في الأوساخ.",
+        "ar": "عند تكوّن المذيلة تنغرس الرؤوس المحبة للماء في الأوساخ.",
         "zh": "形成胶束时，亲水头部嵌入污垢中。",
         "ku": "Di dema damezrandina micelle de, serê hîdrofîl di nav axê de asê dibin."
       },
@@ -408,7 +408,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Alle Medikamente werden ausschließlich oral in Form von Tabletten eingenommen.",
         "fr": "Tous les médicaments sont consommés uniquement par voie orale sous forme de pilules.",
         "ru": "Все лекарства принимают только внутрь в виде таблеток.",
-        "ar": "يتم تناول جميع الأدوية عن طريق الفم فقط على شكل أقراص.",
+        "ar": "تُتناول جميع الأدوية عن طريق الفم فقط على شكل أقراص.",
         "zh": "所有药物都只能以药片形式口服。",
         "ku": "Hemî derman tenê bi devkî wekî heban têne vexwarin."
       },
@@ -464,7 +464,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Extra natives Olivenöl ist ein natürliches und hochwertiges Öl mit dem geringsten Säuregehalt, das mechanisch gewonnen wird.",
         "fr": "L'huile d'olive extra vierge est une huile naturelle et de haute qualité avec la plus faible acidité, obtenue mécaniquement.",
         "ru": "Оливковое масло Extra Virgin — натуральное высококачественное масло с самой низкой кислотностью, полученное механическим способом.",
-        "ar": "زيت الزيتون البكر الممتاز هو زيت طبيعي وعالي الجودة مع أقل نسبة حموضة، ويتم الحصول عليه ميكانيكيًا.",
+        "ar": "زيت الزيتون البكر الممتاز زيت طبيعي عالي الجودة، يُستخلص بالطرق الميكانيكية، وحموضته هي الأدنى.",
         "zh": "特级初榨橄榄油是仅用机械方法获得、酸度最低的天然优质橄榄油。",
         "ku": "Rûnê zeytûnê yê bijîjk, rûnek xwezayî û bi kalîte ye ku bi asîdiya herî kêm heye, ku bi mekanîkî tê wergirtin."
       },
@@ -474,7 +474,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Riviera-Öl ist das reinste natürliche Olivenöl, das keiner Verarbeitung unterzogen wurde.",
         "fr": "L'huile Riviera est l'huile d'olive naturelle la plus pure qui n'a subi aucune transformation.",
         "ru": "Масло «Ривьера» — чистейшее натуральное оливковое масло, не подвергавшееся никакой обработке.",
-        "ar": "زيت الريفييرا هو أنقى زيت زيتون طبيعي لم يخضع لأي معالجة.",
+        "ar": "زيت زيتون ريفييرا هو أنقى زيت زيتون طبيعي لم يخضع لأي معالجة.",
         "zh": "里维埃拉橄榄油是未经任何加工、最纯的天然橄榄油。",
         "ku": "Rûnê Riviera rûnê zeytûna xwezayî ya herî paqij e ku ti pêvajoyek nekiriye."
       },
@@ -497,7 +497,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Margarinen werden durch Zugabe von Wasserstoff zu ungesättigten Pflanzenölen durch das Hydrierungsverfahren gewonnen.",
         "fr": "Les margarines sont obtenues en ajoutant de l'hydrogène à des huiles végétales insaturées par la méthode d'hydrogénation.",
         "ru": "Маргарин получают гидрированием: к ненасыщенным жидким растительным маслам присоединяют водород.",
-        "ar": "يتم الحصول على السمن بإضافة الهيدروجين إلى الزيوت النباتية غير المشبعة بطريقة الهدرجة.",
+        "ar": "يُحصل على المارجرين بإضافة الهيدروجين إلى الزيوت النباتية السائلة غير المشبعة بطريقة الهدرجة.",
         "zh": "人造黄油是用氢化方法向不饱和植物油中加氢制得的。",
         "ku": "Margarîn bi lêkirina hîdrojenê li rûnên nebatî yên têrnebûyî bi rêbaza hîdrojenkirinê têne bidestxistin."
       },
@@ -507,7 +507,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Margarinen werden durch Kochen von Tierknochen hergestellt.",
         "fr": "Les margarines sont produites en faisant bouillir des os d'animaux.",
         "ru": "Маргарин получают вывариванием костей животных.",
-        "ar": "يتم إنتاج السمن عن طريق غلي عظام الحيوانات.",
+        "ar": "يُنتَج المارجرين بغلي عظام الحيوانات.",
         "zh": "人造黄油是用动物骨头熬煮制成的。",
         "ku": "Margarîn bi kelandina hestiyên heywanan tên çêkirin."
       },
@@ -530,7 +530,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Bei der Pasteurisierung handelt es sich um einen kurzzeitigen Erhitzungsprozess bei 60–75 °C, um krankheitserregende Bakterien in Lebensmitteln abzutöten.",
         "fr": "La pasteurisation est un processus de chauffage à court terme entre 60 et 75 °C destiné à tuer les bactéries pathogènes présentes dans les aliments.",
         "ru": "Пастеризация — кратковременное нагревание пищевых продуктов до 60–75 °C для уничтожения болезнетворных бактерий.",
-        "ar": "البسترة هي عملية تسخين قصيرة المدى عند درجة حرارة 60-75 درجة مئوية لقتل البكتيريا المسببة للأمراض في الطعام.",
+        "ar": "البسترة تسخين قصير عند 60-75 °C لقتل البكتيريا الممرضة في الغذاء.",
         "zh": "巴氏杀菌是在 60-75 °C 下短时间加热，以杀死食品中致病菌的方法。",
         "ku": "Pasteurîzasyon pêvajoyek germkirina demek kurt e ku di 60-75 °C de ji bo kuştina bakteriyên pathogenîk ên di xwarinê de ye."
       },
@@ -540,7 +540,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Pasteurisierung ist eine Methode zur Sterilisierung von Lebensmitteln durch Einfrieren.",
         "fr": "La pasteurisation est une méthode de stérilisation des aliments par congélation.",
         "ru": "Пастеризация — способ стерилизации пищевых продуктов замораживанием.",
-        "ar": "البسترة هي طريقة لتعقيم الطعام عن طريق التجميد.",
+        "ar": "البسترة طريقة لتعقيم الغذاء بالتجميد.",
         "zh": "巴氏杀菌是通过冷冻对食品进行灭菌的方法。",
         "ku": "Pasteurîzasyon rêbazek sterilkirina xwarinê bi cemidandinê ye."
       },
@@ -565,7 +565,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Detergens",
         "fr": "Détergent",
         "ru": "Синтетическое моющее средство",
-        "ar": "منظف صناعي",
+        "ar": "المنظف الصناعي",
         "zh": "洗涤剂",
         "ku": "Deterjan"
       },
@@ -575,7 +575,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Seife",
         "fr": "Savon",
         "ru": "Мыло",
-        "ar": "صابون",
+        "ar": "الصابون",
         "zh": "肥皂",
         "ku": "Sabûn"
       },
@@ -641,7 +641,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Riviera-Olivenöl",
         "fr": "Huile d'olive Riviera",
         "ru": "Оливковое масло «Ривьера»",
-        "ar": "زيت الزيتون ريفييرا",
+        "ar": "زيت زيتون ريفييرا",
         "zh": "里维埃拉橄榄油",
         "ku": "Rûnê zeytûnê yê Riviera"
       },
@@ -651,7 +651,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Natives Olivenöl extra wird nur mechanisch aus Oliven gewonnen und hat den geringsten Säuregehalt; Riviera-Olivenöl ist eine Mischung aus raffiniertem und nativem Olivenöl.",
         "fr": "L'huile d'olive vierge extra est obtenue uniquement par des procédés mécaniques et a l'acidité la plus faible ; l'huile d'olive Riviera est un mélange d'huile d'olive raffinée et d'huile d'olive vierge.",
         "ru": "Оливковое масло Extra Virgin получают из оливок только механическим способом, у него самая низкая кислотность; оливковое масло «Ривьера» — смесь рафинированного и натурального оливкового масла.",
-        "ar": "يُستخلص زيت الزيتون البكر الممتاز من الزيتون بطرق ميكانيكية فقط وهو الأقل حموضة؛ أما زيت ريفييرا فهو خليط من زيت الزيتون المكرر وزيت الزيتون البكر.",
+        "ar": "زيت الزيتون البكر الممتاز: زيت طبيعي يُستخلص من الزيتون بالطرق الميكانيكية فقط، وهو الأقل حموضة؛ أما زيت زيتون ريفييرا فخليط من زيت الزيتون المكرر وزيت الزيتون البكر.",
         "zh": "特级初榨橄榄油仅通过机械方法从橄榄中获得，酸度最低；里维埃拉橄榄油是精炼橄榄油与初榨橄榄油的混合物。",
         "ku": "Rûnê zeytûnê yê sizma tenê bi rêya mekanîkî ji zeytûnê tê wergirtin û asîdiya wî herî kêm e; rûnê Riviera tevliheviya rûnê zeytûnê yê rafînekirî û rûnê zeytûnê yê xwezayî ye."
       }
@@ -717,7 +717,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Ein natürliches Polymer kommt in der Natur vor (Stärke, Cellulose, DNA); synthetische Makromoleküle wie PE, PVC, Teflon und Kevlar werden dagegen industriell hergestellt.",
         "fr": "Un polymère naturel se trouve dans la nature (amidon, cellulose, ADN) ; un polymère synthétique est fabriqué en usine (PE, PVC, Téflon, Kevlar).",
         "ru": "Природный полимер встречается в природе (крахмал, целлюлоза, ДНК); синтетический полимер получают на заводе (ПЭ, ПВХ, тефлон, кевлар).",
-        "ar": "النشا والسليلوز والحمض النووي هي بوليمرات طبيعية. PE، PVC، Teflon وKevlar عبارة عن بوليمرات صناعية يتم إنتاجها في المصنع.",
+        "ar": "البوليمر الطبيعي: بوليمر موجود في الطبيعة مثل النشا والسليلوز والحمض النووي (DNA)؛ أما البوليمر الاصطناعي فيُنتَج في المصانع، مثل PE وPVC والتفلون والكيفلار.",
         "zh": "淀粉、纤维素和 DNA 属于天然聚合物；PE、PVC、特氟龙和凯夫拉是工厂生产的合成聚合物。",
         "ku": "Polîmera xwezayî di xwezayê de heye (nîşasta, selûloz, DNA); polîmera sentetîk di fabrîkeyê de tê çêkirin (PE, PVC, Teflon, Kevlar)."
       }
@@ -730,7 +730,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Thermoplast",
         "fr": "Thermoplastique",
         "ru": "Термопласт",
-        "ar": "بوليمر لدن بالحرارة",
+        "ar": "البوليمر اللدن بالحرارة",
         "zh": "热塑性塑料",
         "ku": "Termoplastîk"
       },
@@ -740,7 +740,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Duroplast",
         "fr": "Polymère thermodurcissable",
         "ru": "Термореактивный полимер",
-        "ar": "بوليمر متصلب بالحرارة",
+        "ar": "البوليمر المتصلب بالحرارة",
         "zh": "热固性聚合物",
         "ku": "Polîmera termoset"
       },
@@ -831,7 +831,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Schmutzreinigungsmechanismus von Seife",
         "fr": "Mécanisme de nettoyage de la saleté du savon",
         "ru": "Механизм удаления загрязнений мылом",
-        "ar": "آلية تنظيف الأوساخ من الصابون",
+        "ar": "آلية إزالة الصابون للأوساخ",
         "zh": "肥皂的去污机理",
         "ku": "Mekanîzmaya Paqijkirina Avê ya Sabûnê"
       },
@@ -862,7 +862,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Das Schmutzteilchen wird von einer Mizelle umschlossen, deren polare Köpfe nach außen zum Wasser zeigen",
           "fr": "La particule de saleté est enfermée dans une micelle dont les têtes polaires sont tournées vers l'eau",
           "ru": "Частица грязи оказывается внутри мицеллы, полярные головки которой обращены наружу, к воде",
-          "ar": "تُحاط جسيمة الأوساخ بمذيلة تتجه رؤوسها القطبية إلى الخارج نحو الماء",
+          "ar": "يُحاط جسيم الأوساخ بمذيلة تتجه رؤوسها القطبية إلى الخارج نحو الماء",
           "zh": "污垢颗粒被胶束包裹，胶束的极性头部朝外（朝向水）",
           "ku": "Perçeya qirêjê di nav miselekê de tê pêçan ku serên wê yên polar ber bi derve (avê) ne"
         },
@@ -897,7 +897,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Pflanzen- oder tierisches Öl wird erhitzt",
           "fr": "L'huile végétale ou animale est chauffée",
           "ru": "Растительный или животный жир нагревают",
-          "ar": "يتم تسخين الزيت النباتي أو الحيواني",
+          "ar": "يُسخَّن الزيت النباتي أو الدهن الحيواني",
           "zh": "加热植物油或动物脂肪",
           "ku": "Rûnê sebze yan jî heywan tê germkirin"
         },
@@ -907,7 +907,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Konzentriertes Natriumhydroxid (NaOH) wird hinzugefügt",
           "fr": "De l'hydroxyde de sodium concentré (NaOH) est ajouté",
           "ru": "Добавляют концентрированный гидроксид натрия (NaOH)",
-          "ar": "يضاف هيدروكسيد الصوديوم المركز (NaOH).",
+          "ar": "يُضاف هيدروكسيد الصوديوم (NaOH) المركز",
           "zh": "加入浓氢氧化钠(NaOH)",
           "ku": "Hîdroksîdê sodyûmê konsantrekirî (NaOH) tê zêdekirin"
         },
@@ -927,7 +927,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Durch die Zugabe von Salz wird das Seifenstück ausgefällt und das Glycerin abgetrennt.",
           "fr": "En ajoutant du sel, le pain de savon est précipité et la glycérine est séparée.",
           "ru": "При добавлении поваренной соли мыло выделяется в твёрдом виде (высаливается), а глицерин отделяется",
-          "ar": "بإضافة الملح، يتم ترسيب قطعة الصابون وفصل الجلسرين.",
+          "ar": "يُضاف الملح فيترسب الصابون على هيئة قوالب ويُفصل الغليسرين",
           "zh": "加入食盐使肥皂析出（盐析），并分离出甘油",
           "ku": "Bi zêdekirina xwê, sabûn tê niştandin û glîserîn ji hev vediqete."
         }
@@ -952,7 +952,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Es werden kleine ungesättigte Monomermoleküle ausgewählt",
           "fr": "De petites molécules de monomères insaturés sont sélectionnées",
           "ru": "Берут небольшие молекулы непредельного мономера",
-          "ar": "يتم اختيار جزيئات مونومر صغيرة غير مشبعة",
+          "ar": "تُختار جزيئات مونومر صغيرة غير مشبعة",
           "zh": "选用不饱和的小分子单体",
           "ku": "Molekulên monomer ên biçûk ên têrnebûyî têne hilbijartin"
         },
@@ -962,7 +962,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Der Katalysator wird bei hoher Temperatur und hohem Druck zugegeben",
           "fr": "Le catalyseur est ajouté à haute température et pression",
           "ru": "При высокой температуре и давлении добавляют катализатор",
-          "ar": "تتم إضافة المحفز عند درجة حرارة وضغط مرتفعين",
+          "ar": "يُضاف الحفاز عند درجة حرارة وضغط مرتفعين",
           "zh": "在高温高压下加入催化剂",
           "ku": "Katalîzator di germahî û zexta bilind de tê zêdekirin"
         },
@@ -982,7 +982,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Es entsteht eine riesige Polymerkette, die aus Tausenden von Einheiten besteht",
           "fr": "Une chaîne polymère géante composée de milliers d’unités se forme",
           "ru": "Образуется гигантская полимерная цепь из тысяч звеньев",
-          "ar": "يتم تشكيل سلسلة بوليمر عملاقة تتكون من آلاف الوحدات",
+          "ar": "تتكون سلسلة بوليمرية عملاقة من آلاف الوحدات",
           "zh": "形成由数千个结构单元组成的巨大聚合物链",
           "ku": "Zincîreke polîmer a mezin ku ji hezaran yekîneyan pêk tê çêdibe"
         }
@@ -1053,7 +1053,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Welche der folgenden Aussagen zum Reinigungsmechanismus von Seifen und Reinigungsmitteln ist falsch?",
         "fr": "Laquelle des affirmations suivantes concernant le mécanisme de nettoyage des savons et des détergents est incorrecte ?",
         "ru": "Какое из утверждений о механизме моющего действия мыла и синтетических моющих средств неверно?",
-        "ar": "أي من العبارات التالية حول آلية تنظيف الصابون والمنظفات غير صحيحة؟",
+        "ar": "أيّ العبارات الآتية حول آلية التنظيف بالصابون والمنظفات الصناعية خاطئة؟",
         "zh": "下列关于肥皂和洗涤剂去污原理的叙述中，不正确的是哪一项？",
         "ku": "Di derbarê mekanîzmaya paqijkirina sabûn û deterjantan de ji van gotinên jêrîn kîjan xelet e?"
       },
@@ -1064,7 +1064,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Die polare Spitze des Reinigungsmittels haftet an unpolarem Schmutz.",
           "fr": "La tête polaire du détergent adhère à la saleté non polaire.",
           "ru": "Полярная головка частицы синтетического моющего средства прикрепляется к неполярной грязи.",
-          "ar": "يتمسك الرأس القطبي للمنظف بالأوساخ غير القطبية.",
+          "ar": "يلتصق الرأس القطبي للمنظف الصناعي بالأوساخ غير القطبية.",
           "zh": "洗涤剂的极性头部附着在非极性污垢上。",
           "ku": "Serê polar ê deterjanê bi qirêjiya ne-polar ve girêdayî ye."
         },
@@ -1074,7 +1074,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Der unpolare Schwanz der Seife umhüllt den Schmutz.",
           "fr": "La queue non polaire du savon enveloppe la saleté.",
           "ru": "Неполярный хвост мыла обволакивает грязь.",
-          "ar": "الذيل غير القطبي للصابون يغلف الأوساخ.",
+          "ar": "يحيط الذيل غير القطبي للصابون بالأوساخ.",
           "zh": "肥皂的非极性尾部包裹着污垢。",
           "ku": "Dûvê ne-polar ê sabûnê qirêjê dipêçe."
         },
@@ -1104,7 +1104,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Reinigungsmittel bilden in hartem Wasser weniger Niederschläge als Seifen.",
           "fr": "Les détergents forment moins de précipités dans l’eau dure que les savons.",
           "ru": "В жёсткой воде синтетические моющие средства образуют меньше осадка, чем мыло.",
-          "ar": "تترسب المنظفات في الماء العسر بشكل أقل من الصابون.",
+          "ar": "تكوّن المنظفات الصناعية في الماء العسر رواسب أقل مما يكوّنه الصابون.",
           "zh": "洗涤剂在硬水中形成的沉淀比肥皂少。",
           "ku": "Deterjan di ava hişk de ji sabûnan ​​kêmtir baranê çêdikin."
         }
@@ -1140,7 +1140,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Teflon (PTFE)",
           "fr": "Téflon (PTFE)",
           "ru": "Тефлон (ПТФЭ)",
-          "ar": "تفلون (PTFE)",
+          "ar": "التفلون (PTFE)",
           "zh": "聚四氟乙烯(PTFE)",
           "ku": "Teflon (PTFE)"
         },
@@ -1170,7 +1170,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Kevlar",
           "fr": "Kevlar",
           "ru": "Кевлар",
-          "ar": "كيفلر",
+          "ar": "الكيفلار",
           "zh": "凯夫拉",
           "ku": "Kevlar"
         },
@@ -1180,7 +1180,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Polyethylen",
           "fr": "polyéthylène",
           "ru": "Полиэтилен",
-          "ar": "البولي ايثيلين",
+          "ar": "البولي إيثيلين",
           "zh": "聚乙烯",
           "ku": "polyethylene"
         }
@@ -1408,7 +1408,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Polystyrol (PS) – Schaumstoff-Dämm- und Verpackungsmaterial",
           "fr": "Polystyrène (PS) – mousse isolante et matériau d’emballage",
           "ru": "Полистирол (ПС) — пенопласт для теплоизоляции и упаковки",
-          "ar": "البوليستيرين (PS) – الفلين للعزل والتغليف",
+          "ar": "البوليستيرين (PS) – الرغوة البيضاء (الفلين الصناعي) للعزل والتغليف",
           "zh": "聚苯乙烯(PS) – 泡沫保温与包装材料",
           "ku": "Polîstîren (PS) – materyala kefî ya îzolasyon û pakêtkirinê"
         }
@@ -1420,7 +1420,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "PET ist ein harter, durchsichtiger Thermoplast für Wasser- und Getränkeflaschen; er ist nicht elastisch. Für Autoreifen wird wegen seiner Elastizität (natürlicher oder synthetischer) Kautschuk verwendet. Die übrigen Zuordnungen stimmen: PVC wegen seiner Beständigkeit für Fensterprofile, PE als billiges, flexibles Material für Tüten, Kevlar wegen seiner sehr hohen Festigkeit für Schutzwesten, PS als Schaumstoff für Dämmung und Verpackung.",
         "fr": "Le PET est un thermoplastique rigide et transparent utilisé pour les bouteilles d’eau et de boissons ; il n’est pas élastique. Les pneus utilisent du caoutchouc (naturel ou synthétique) pour son élasticité. Les autres associations sont correctes : le PVC pour les profilés de fenêtre grâce à sa durabilité, le PE pour les sacs car il est bon marché et souple, le Kevlar pour les gilets pare-balles grâce à sa très grande résistance, le PS en mousse pour l’isolation et l’emballage.",
         "ru": "ПЭТ — жёсткий прозрачный термопласт, из которого делают бутылки для воды и напитков; он не эластичен. Для шин используют (натуральный или синтетический) каучук благодаря его эластичности. Остальные соответствия верны: ПВХ благодаря прочности применяют в оконных профилях, ПЭ как дешёвый и гибкий материал — в пакетах, кевлар благодаря очень высокой прочности — в бронежилетах, ПС в виде пенопласта — для изоляции и упаковки.",
-        "ar": "PET لدائن حرارية صلبة وشفافة تُستخدم في زجاجات الماء والمشروبات الغازية، وهي غير مرنة. أما إطارات السيارات فيُستخدم فيها المطاط (الطبيعي أو الصناعي) لمرونته. وبقية المزاوجات صحيحة: PVC لمتانته في إطارات النوافذ، وPE لرخصه ومرونته في الأكياس، والكيفلار لمتانته الفائقة في السترات الواقية، وPS على شكل فلين في العزل والتغليف.",
+        "ar": "PET لدن حراري صلب وشفاف يُستخدم في قوارير الماء والمشروبات الغازية، وهو غير مرن. أما إطارات السيارات فيُستخدم فيها المطاط (الطبيعي أو الصناعي) لمرونته. وبقية المزاوجات صحيحة: PVC لمتانته في إطارات النوافذ، وPE لرخصه ومرونته في الأكياس، والكيفلار لمتانته الفائقة في السترات الواقية، وPS على شكل رغوة في العزل والتغليف.",
         "zh": "PET 是用于饮用水和饮料瓶的硬质透明热塑性塑料，没有弹性。汽车轮胎因需要弹性而使用（天然或合成）橡胶。其余配对均正确：PVC 因耐用用于窗框型材，PE 因便宜柔韧用于购物袋，凯夫拉因强度极高用于防弹衣，PS 以泡沫形式用于保温和包装。",
         "ku": "PET termoplastîkeke hişk û zelal e ku di şûşeyên av û vexwarinan de tê bikaranîn; ne elastîk e. Di tekerên erebeyan de ji ber elastîkbûna wê lastîk (xwezayî an sentetîk) tê bikaranîn. Cotkirinên din rast in: PVC ji ber xurtbûnê di profîlên pencereyan de, PE ji ber erzan û nermbûnê di kîsikan de, Kevlar ji ber xurtiya pir bilind di êlekên parastinê de, PS jî wek kef di îzolasyon û pakêtkirinê de tê bikaranîn."
       }
@@ -1778,7 +1778,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Da die UHT-Temperatur höher ist, werden Mikroorganismen samt ihren Sporen weitgehend abgetötet.",
           "fr": "La température UHT étant plus élevée, les micro-organismes sont en grande partie détruits avec leurs spores.",
           "ru": "Поскольку при UHT-обработке температура выше, микроорганизмы вместе со спорами в основном уничтожаются.",
-          "ar": "لأن درجة الحرارة في معالجة UHT أعلى، تُقضى على الكائنات الدقيقة مع أبواغها إلى حد كبير.",
+          "ar": "يُقضى على الكائنات الدقيقة وأبواغها إلى حد كبير في معالجة UHT لأن درجة الحرارة فيها أعلى.",
           "zh": "由于 UHT 处理温度更高，微生物连同其孢子基本被消灭。",
           "ku": "Ji ber ku germahiya UHT bilindtir e, mîkroorganîzma bi sporên xwe re bi piranî tune dibin."
         },
@@ -1800,7 +1800,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Die UHT-Behandlung (nahe an der Sterilisation) erfolgt bei sehr hoher Temperatur, daher werden Mikroorganismen und ihre widerstandsfähigen Sporen weitgehend abgetötet; deshalb hält sich die Milch in aseptischer Verpackung monatelang. Beim Pasteurisieren ist die Temperatur niedriger; die meisten schädlichen Keime sterben, aber nicht alle Sporen, daher muss pasteurisierte Milch kühl und kurz gelagert werden. Laut den Angaben ist UHT-Milch länger haltbar. Beide Verfahren sind Erhitzungsverfahren, kein Einfrieren.",
         "fr": "Le traitement UHT (proche de la stérilisation) se fait à très haute température : les micro-organismes et leurs spores résistantes sont en grande partie détruits, d’où une conservation de plusieurs mois en emballage aseptique. La pasteurisation se fait à plus basse température : elle tue la plupart des germes nuisibles mais pas toutes les spores, le lait pasteurisé se conserve donc au froid et peu de temps. D’après les données, le lait UHT se conserve plus longtemps. Les deux procédés sont des chauffages, pas des congélations.",
         "ru": "UHT-обработка (близкая к стерилизации) проводится при очень высокой температуре, поэтому микроорганизмы и их устойчивые споры в основном уничтожаются; благодаря этому молоко хранится месяцами в асептической упаковке. Пастеризация идёт при более низкой температуре: гибнет большинство вредных микроорганизмов, но не все споры, поэтому пастеризованное молоко хранят в холоде и недолго. Согласно условию, срок хранения у молока UHT больше. Оба метода — нагревание, а не замораживание.",
-        "ar": "تُجرى معالجة UHT (القريبة من التعقيم) عند درجة حرارة عالية جدًا، فتُقضى على الكائنات الدقيقة وأبواغها المقاومة إلى حد كبير، ولهذا يُحفظ الحليب أشهرًا في عبوات معقمة. أما البسترة فتتم عند درجة حرارة أقل، فتقتل معظم الكائنات الضارة دون جميع الأبواغ، لذا يُحفظ الحليب المبستر باردًا ولمدة قصيرة. ووفق المعطيات فإن صلاحية حليب UHT أطول. وكلتا الطريقتين تسخين لا تجميد.",
+        "ar": "تُجرى معالجة UHT (القريبة من التعقيم) عند درجة حرارة عالية جدًا، فيُقضى على الكائنات الدقيقة وأبواغها المقاومة إلى حد كبير، ولهذا يُحفظ الحليب أشهرًا في عبوات معقمة. أما البسترة فتتم عند درجة حرارة أقل، فتقتل معظم الكائنات الضارة دون جميع الأبواغ، لذا يُحفظ الحليب المبستر باردًا ولمدة قصيرة. ووفق المعطيات فإن صلاحية حليب UHT أطول. وكلتا الطريقتين تسخين لا تجميد.",
         "zh": "UHT 处理（接近灭菌）在很高温度下进行，微生物及其耐热孢子基本被消灭，因此在无菌包装中可保存数月。巴氏杀菌温度较低，能杀死大多数有害微生物，但不能杀灭全部孢子，所以巴氏杀菌奶需冷藏且保存期短。根据数据，UHT 奶保质期更长。两种方法都是加热，而不是冷冻。",
         "ku": "Karê UHT (nêzîkî sterîlîzasyonê) di germahiyeke pir bilind de tê kirin, ji ber vê yekê mîkroorganîzma û sporên wan ên berxwedêr bi piranî tune dibin; loma şîr di pakêta aseptîk de bi mehan dimîne. Pastorîzasyon di germahiyeke nizmtir de tê kirin; piraniya mîkroban dikuje lê hemû sporan tune nake, ji ber vê yekê şîrê pastorîzekirî divê sar û demeke kurt were hilanîn. Li gorî daneyan temenê şîrê UHT dirêjtir e. Her du rêbaz jî germkirin in, ne cemidandin."
       }
@@ -1965,7 +1965,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Einige Haushaltsreiniger und ihre Verwendung:\nI. Salzsäure (verdünnte HCl) – Kalkflecken (CaCO3) an Waschbecken und Fliesen lösen.\nII. Abflussreiniger (mit NaOH) – Verstopfungen aus Fett und Haaren beseitigen.\nIII. Chlorkalk – Wasser und Oberflächen desinfizieren, bleichen.\nWelche Zuordnungen sind richtig?",
         "fr": "Voici quelques produits d’entretien et leurs usages :\nI. Acide chlorhydrique dilué (HCl) – dissoudre le calcaire (CaCO3) des lavabos et carrelages.\nII. Déboucheur (contenant NaOH) – éliminer les bouchons de graisse et de cheveux dans les canalisations.\nIII. Chlorure de chaux – désinfecter l’eau et les surfaces, blanchir.\nLesquelles de ces associations sont correctes ?",
         "ru": "Даны некоторые бытовые чистящие средства и их назначение:\nI. Соляная кислота (разбавленная HCl) — растворение известкового налёта (CaCO3) на раковинах и плитке.\nII. Средство для прочистки труб (с NaOH) — устранение засоров из жира и волос.\nIII. Хлорная известь — дезинфекция воды и поверхностей, отбеливание.\nКакие соответствия верны?",
-        "ar": "فيما يأتي بعض مواد التنظيف المنزلية واستخداماتها:\nI. روح الملح (HCl المخفف) – إذابة بقع الكلس (CaCO3) على المغاسل والبلاط.\nII. فتّاحة المجاري (تحتوي على NaOH) – إزالة انسداد المصارف الناتج عن الدهون والشعر.\nIII. مسحوق التبييض – تطهير الماء والأسطح وتبييضها.\nأيّ هذه المزاوجات صحيحة؟",
+        "ar": "فيما يأتي بعض مواد التنظيف المنزلية واستخداماتها:\nI. روح الملح (HCl المخفف) – إذابة بقع الكلس (CaCO3) على المغاسل والبلاط.\nII. مسلّك المجاري (يحتوي على NaOH) – إزالة انسداد المصارف الناتج عن الدهون والشعر.\nIII. مسحوق التبييض – تطهير الماء والأسطح وتبييضها.\nأيّ هذه المزاوجات صحيحة؟",
         "zh": "下面给出一些家用清洁剂及其用途：\nI. 盐酸(稀 HCl) – 溶解洗手池和瓷砖上的水垢(CaCO3)。\nII. 管道疏通剂(含 NaOH) – 清除由油脂和头发造成的下水道堵塞。\nIII. 漂白粉 – 对水和物体表面消毒、漂白。\n以上配对中哪些正确？",
         "ku": "Hin madeyên paqijiyê yên malê û armancên bikaranîna wan hatine dayîn:\nI. Tuz ruhu (HCl ya sivik) – helandina lekeyên kilsê (CaCO3) yên li ser lavabo û kaşiyan.\nII. Vekerê lavaboyê (NaOH dihewîne) – rakirina girtina boriyê ya ji rûn û porê.\nIII. Toza spîkirinê – dezenfektekirina av û rûyan, spîkirin.\nKîjan ji van cotkirinan rast in?"
       },
@@ -2028,7 +2028,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "I ist richtig: Kalk ist CaCO3 und löst sich durch Reaktion mit Säure (CaCO3 + 2HCl → CaCl2 + H2O + CO2). II ist richtig: Starke Basen wie NaOH verseifen Fette und zersetzen Haarproteine; deshalb werden sie in Abflussreinigern eingesetzt. III ist richtig: Chlorkalk (CaOCl2) liefert in Wasser Hypochlorit-Ionen (ClO-) und dient als Bleich- und Desinfektionsmittel. Alle drei Zuordnungen stimmen. Diese Mittel (vor allem Säuren und Hypochloritprodukte) dürfen nicht gemischt werden.",
         "fr": "I est vraie : le calcaire est du CaCO3, qui se dissout en réagissant avec l’acide (CaCO3 + 2HCl → CaCl2 + H2O + CO2). II est vraie : les bases fortes comme NaOH saponifient les graisses et dégradent les protéines des cheveux, d’où leur usage dans les déboucheurs. III est vraie : le chlorure de chaux (CaOCl2) libère dans l’eau l’ion hypochlorite (ClO-) et sert d’agent de blanchiment et de désinfectant. Les trois associations sont correctes. Ces produits (surtout acides et produits à l’hypochlorite) ne doivent pas être mélangés.",
         "ru": "I верно: известковый налёт — это CaCO3, он растворяется, реагируя с кислотой (CaCO3 + 2HCl → CaCl2 + H2O + CO2). II верно: сильные основания, такие как NaOH, омыляют жиры и разрушают белки волос, поэтому их используют в средствах для прочистки труб. III верно: хлорная известь (CaOCl2) в воде даёт гипохлорит-ион (ClO-) и применяется как отбеливающее и дезинфицирующее средство. Все три соответствия верны. Эти средства (особенно кислоты и средства с гипохлоритом) нельзя смешивать друг с другом.",
-        "ar": "العبارة I صحيحة: بقع الكلس هي CaCO3 وتذوب بتفاعلها مع الحمض (CaCO3 + 2HCl → CaCl2 + H2O + CO2). العبارة II صحيحة: القواعد القوية مثل NaOH تصبّن الدهون وتفكك بروتينات الشعر، لذا تُستخدم في فتّاحات المجاري. العبارة III صحيحة: يعطي مسحوق التبييض (CaOCl2) في الماء أيون الهيبوكلوريت (ClO-) ويُستخدم مبيضًا ومطهرًا. المزاوجات الثلاث صحيحة. ويجب ألّا تُخلط هذه المواد ببعضها (خاصة الأحماض والمواد المحتوية على الهيبوكلوريت).",
+        "ar": "العبارة I صحيحة: بقع الكلس هي CaCO3 وتذوب بتفاعلها مع الحمض (CaCO3 + 2HCl → CaCl2 + H2O + CO2). العبارة II صحيحة: القواعد القوية مثل NaOH تصبّن الدهون وتفكك بروتينات الشعر، لذا تُستخدم في مسلّكات المجاري. العبارة III صحيحة: يعطي مسحوق التبييض (CaOCl2) في الماء أيون الهيبوكلوريت (ClO-) ويُستخدم مبيضًا ومطهرًا. المزاوجات الثلاث صحيحة. ويجب ألّا تُخلط هذه المواد ببعضها (خاصة الأحماض والمواد المحتوية على الهيبوكلوريت).",
         "zh": "I 正确：水垢是 CaCO3，与酸反应而溶解(CaCO3 + 2HCl → CaCl2 + H2O + CO2)。II 正确：NaOH 等强碱能使油脂皂化并分解头发中的蛋白质，因此用于管道疏通剂。III 正确：漂白粉(CaOCl2)在水中产生次氯酸根离子(ClO-)，用作漂白剂和消毒剂。三个配对都正确。这些清洁剂（尤其是酸与含次氯酸盐的产品）不能混用。",
         "ku": "I rast e: lekeya kilsê CaCO3 e û bi reaksiyona bi asîdê re dihele (CaCO3 + 2HCl → CaCl2 + H2O + CO2). II rast e: bazên xurt ên wek NaOH rûnan dikin sabûn û proteînên porê perçe dikin; loma di vekerên lavaboyê de têne bikaranîn. III rast e: toza spîkirinê (CaOCl2) di avê de îyona hîpoklorîtê (ClO-) dide û wek spîker û dezenfektan tê bikaranîn. Her sê cotkirin rast in. Ev made (bi taybetî asîd û yên hîpoklorîtdar) nayên tevlîhevkirin."
       }
@@ -2224,7 +2224,7 @@ export const unit10: ChemistryUnitSeedData = {
           "de": "Eine Konserve mit gewölbtem Deckel darf nicht verzehrt werden, weil Mikroorganismen darin Gas gebildet haben können.",
           "fr": "Une conserve au couvercle bombé ne doit pas être consommée, car des micro-organismes ont pu y produire du gaz.",
           "ru": "Консервы со вздутой крышкой нельзя есть, так как внутри микроорганизмы могли образовать газ.",
-          "ar": "لا يجوز تناول معلَّبة انتفخ غطاؤها، لأن الكائنات الدقيقة ربما أنتجت غازًا بداخلها.",
+          "ar": "لا ينبغي تناول المعلبات التي انتفخ غطاؤها، لأن الكائنات الدقيقة ربما أنتجت غازًا بداخلها.",
           "zh": "盖子鼓起的罐头不应食用，因为里面的微生物可能产生了气体。",
           "ku": "Konserveya ku qapaxa wê werimî nayê xwarin, ji ber ku dibe ku mîkroorganîzmayan di hundir de gaz çêkiribe."
         },

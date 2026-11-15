@@ -83,8 +83,8 @@ export const EXAM_STRINGS: Record<LanguageCode, ExamLocale> = {
   ar: {
     featured: 'اختبار تجريبي مميز', replay: 'أعد الحل', notSolved: 'لم يُحل',
     bestNet: (n, a) => `أفضل صافٍ ${n} (${a}x)`, questionsN: (n) => `${n} سؤال`, minShort: 'د',
-    correctTitle: '!صحيح', wrongTitle: 'خطأ', wrongAnswer: (l) => `الإجابة الصحيحة ${l}`,
-    reviewQuestions: 'مراجعة الأسئلة', retry: 'حاول مجددا', close: 'إغلاق', results: 'النتائج',
+    correctTitle: 'صحيح!', wrongTitle: 'خطأ', wrongAnswer: (l) => `الإجابة الصحيحة ${l}`,
+    reviewQuestions: 'مراجعة الأسئلة', retry: 'حاول مجددًا', close: 'إغلاق', results: 'النتائج',
     time: 'الوقت', net: 'الصافي', exitAria: 'الخروج من الاختبار', bookmarkAdd: 'حفظ السؤال', bookmarkRemove: 'إزالة من المحفوظات',
     navigator: 'متصفح الأسئلة', questionAria: (n) => `السؤال ${n}`, options: 'الخيارات', sessionDone: 'إنهاء الجلسة',
     tabUnits: 'اختبارات الوحدات', tabTg: 'تجربة المراتب الأولى', reviewList: 'ملخص الأسئلة',

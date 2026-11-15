@@ -45,7 +45,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Selbst bei Betrachtung ohne Mikroskop erscheinen Kolloide heterogen und fallen sofort aus.",
         "fr": "Même observés sans microscope, les colloïdes semblent hétérogènes et précipitent immédiatement.",
         "ru": "Коллоиды даже без микроскопа выглядят неоднородными и сразу оседают.",
-        "ar": "حتى عند النظر إليها بدون مجهر، تبدو الغرويات غير متجانسة وتترسب على الفور.",
+        "ar": "تبدو الغرويات غير متجانسة حتى عند النظر إليها دون مجهر، وتترسب على الفور.",
         "zh": "胶体即使不用显微镜观察也显得不均匀，并且会立即沉降。",
         "ku": "Kolloîd bêyî mîkroskopê jî heterojen xuya dikin û yekser diniştin."
       },
@@ -101,7 +101,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Eine Emulsion ist ein heterogenes Gemisch zweier ineinander unlöslicher Flüssigkeiten (z. B. Olivenöl-Wasser, Mayonnaise).",
         "fr": "Une émulsion est un mélange hétérogène de deux liquides qui ne se dissolvent pas l'un dans l'autre (ex. : huile d'olive-eau, mayonnaise).",
         "ru": "Эмульсия — неоднородная смесь двух нерастворимых друг в друге жидкостей (например, оливковое масло с водой, майонез).",
-        "ar": "المستحلب خليط غير متجانس من سائلين لا يذوب أحدهما في الآخر (مثل زيت الزيتون-الماء، والمايونيز).",
+        "ar": "المستحلب خليط غير متجانس من سائلين لا يذوب أحدهما في الآخر (مثل زيت الزيتون والماء، والمايونيز).",
         "zh": "乳浊液是两种互不相溶的液体形成的非均匀混合物（如橄榄油-水、蛋黄酱）。",
         "ku": "Emulsiyon tevliheviyeke heterojen a du şilên ku di hev de nahelin e (mînak: rûnê zeytûnê-av, mayonez)."
       },
@@ -111,7 +111,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Das Olivenöl-Wasser-Gemisch wird durch fraktionierte Destillation getrennt.",
         "fr": "Le mélange huile d'olive-eau est séparé par distillation fractionnée.",
         "ru": "Смесь оливкового масла и воды разделяют фракционной перегонкой.",
-        "ar": "يتم فصل خليط زيت الزيتون والماء عن طريق التقطير التجزيئي.",
+        "ar": "يُفصل خليط زيت الزيتون والماء بالتقطير التجزيئي.",
         "zh": "橄榄油-水混合物通过分馏分离。",
         "ku": "Tevliheviya rûnê zeytûnê-av bi distilasyona perçeyî tê veqetandin."
       },
@@ -134,7 +134,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Ein Aerosol entsteht durch die Dispersion eines Feststoffs oder einer Flüssigkeit in einem Gas (z. B. Nebel, Rauch, Spray).",
         "fr": "Un aérosol est formé par la dispersion d'un solide ou d'un liquide dans un gaz (par exemple brouillard, fumée, spray).",
         "ru": "Аэрозоль — система, в которой твёрдое вещество или жидкость распределены в газе (например, туман, дым, спрей).",
-        "ar": "يتكون الهباء الجوي من تشتت مادة صلبة أو سائلة في الغاز (مثل الضباب والدخان والرذاذ).",
+        "ar": "يتكون الهباء الجوي من انتشار مادة صلبة أو سائلة في غاز (مثل الضباب والدخان والرذاذ).",
         "zh": "气溶胶是固体或液体分散在气体中形成的（如雾、烟、喷雾）。",
         "ku": "Aerosol bi belavbûna madeyeke hişk an şil di gazekê de çêdibe (mînak: mij, dûman, sprey)."
       },
@@ -144,7 +144,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Rauch ist eine Suspension, in der der Feststoff in der Flüssigkeit dispergiert ist.",
         "fr": "La fumée est une suspension dans laquelle le solide est dispersé dans le liquide.",
         "ru": "Дым — суспензия, в которой твёрдое вещество распределено в жидкости.",
-        "ar": "الدخان عبارة عن معلق يتم فيه تشتيت المادة الصلبة في السائل.",
+        "ar": "الدخان معلق تنتشر فيه مادة صلبة في سائل.",
         "zh": "烟是固体分散在液体中形成的悬浊液。",
         "ku": "Dûman suspansiyonek e ku tê de madeya hişk di şilekê de belav bûye."
       },
@@ -167,7 +167,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Tyndall-Effekt: Ein Lichtstrahl, der durch ein Kolloid fällt, wird gestreut, und sein Weg wird sichtbar.",
         "fr": "Effet Tyndall : un faisceau lumineux traversant un colloïde est diffusé et son trajet devient visible.",
         "ru": "Эффект Тиндаля: луч света, проходящий через коллоид, рассеивается, и его путь становится видимым.",
-        "ar": "تأثير تيندال: يتشتت شعاع الضوء المار عبر الغروي ويصبح مساره مرئيًا.",
+        "ar": "ظاهرة تندال: يتشتت شعاع الضوء المار عبر الغروي ويصبح مساره مرئيًا.",
         "zh": "丁达尔效应：光束通过胶体时发生散射，光的路径清晰可见。",
         "ku": "Bandora Tyndall: Tîrêja ronahiyê ya ku di koloîdekê re derbas dibe belav dibe û riya wê xuya dibe."
       },
@@ -187,7 +187,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Die Teilchen echter Lösungen (kleiner als 1 nm) sind zu klein, um Licht merklich zu streuen, daher ist der Lichtweg nicht sichtbar; ein sichtbarer Lichtweg unterscheidet gerade Kolloide von Lösungen.",
         "fr": "Les particules d'une vraie solution (moins de 1 nm) sont trop petites pour diffuser nettement la lumière, le trajet du faisceau reste donc invisible ; un trajet visible est justement ce qui distingue un colloïde d'une solution.",
         "ru": "Частицы истинных растворов (меньше 1 нм) слишком малы, чтобы заметно рассеивать свет, поэтому путь луча не виден; видимый путь луча как раз отличает коллоиды от растворов.",
-        "ar": "دقائق المحاليل الحقيقية (أصغر من 1 nm) أصغر من أن تشتت الضوء بشكل ملحوظ، فلا يظهر مسار الحزمة؛ وظهور مسار الضوء هو ما يميز الغرويات عن المحاليل.",
+        "ar": "دقائق المحاليل الحقيقية (أصغر من 1 nm) أصغر من أن تشتت الضوء تشتيتًا ملحوظًا، فلا يظهر مسار الشعاع؛ وظهور مسار الضوء هو ما يميز الغرويات عن المحاليل.",
         "zh": "真溶液中的粒子(小于1 nm)太小，不能明显散射光，所以看不到光路；能看到光路正是胶体区别于溶液的特征。",
         "ku": "Perçeyên çareseriyên rastîn (ji 1 nm piçûktir) ji bo ku ronahiyê bi awayekî diyar belav bikin pir piçûk in, ji ber vê yekê riya ronahiyê nayê dîtin; xuyabûna riya ronahiyê kolloîdan ji çareseriyan cuda dike."
       }
@@ -266,7 +266,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Die fraktionierte Destillation dient zur Trennung homogener Flüssig-flüssig-Gemische mit unterschiedlichen Siedepunkten (z. B. Zerlegung von Erdöl in Fraktionen, Aceton-Wasser).",
         "fr": "La distillation fractionnée sert à séparer des mélanges homogènes liquide-liquide dont les constituants ont des températures d'ébullition différentes (ex. : fractionnement du pétrole brut, acétone-eau).",
         "ru": "Фракционную перегонку применяют для разделения однородных смесей жидкостей с разными температурами кипения (например, разделение нефти на фракции, смесь ацетона и воды).",
-        "ar": "يُستخدم التقطير التجزيئي لفصل المخاليط السائلة المتجانسة التي تختلف مكوناتها في درجات الغليان (مثل فصل النفط الخام إلى مكوناته، والأسيتون-الماء).",
+        "ar": "يُستخدم التقطير التجزيئي لفصل المخاليط السائلة المتجانسة التي تختلف مكوناتها في درجات الغليان (مثل فصل النفط الخام إلى مكوناته، وفصل الأسيتون عن الماء).",
         "zh": "分馏用于分离各组分沸点不同的均匀液-液混合物（如将原油分离成各馏分、丙酮-水）。",
         "ku": "Distilasyona perçeyî ji bo veqetandina tevliheviyên şil-şil ên homojen ên ku xalên kelandinê yên pêkhateyan cuda ne tê bikaranîn (mînak: veqetandina petrola xav li pêkhateyên wê, aseton-av)."
       },
@@ -276,7 +276,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Die fraktionierte Destillation ist eine Trenntechnik, die auf Dichteunterschieden basiert.",
         "fr": "La distillation fractionnée est une technique de séparation basée sur la différence de densité.",
         "ru": "Фракционная перегонка — это метод разделения, основанный на разнице плотностей.",
-        "ar": "التقطير التجزيئي هو تقنية فصل تعتمد على اختلاف الكثافة.",
+        "ar": "التقطير التجزيئي طريقة فصل تعتمد على اختلاف الكثافة.",
         "zh": "分馏是一种依据密度差异的分离方法。",
         "ku": "Distilasyona perçeyî teknîkeke veqetandinê ye ku li ser cudahiya çiriyê ye."
       },
@@ -342,7 +342,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Bei der Flotation wird Eisen mit Hilfe eines Magneten abgetrennt.",
         "fr": "La flottation est le processus de séparation du fer à l'aide d'un aimant.",
         "ru": "Флотация — это отделение железа с помощью магнита.",
-        "ar": "التعويم هو عملية فصل الحديد بمساعدة المغناطيس.",
+        "ar": "التعويم عملية فصل الحديد باستخدام المغناطيس.",
         "zh": "浮选是借助磁铁分离铁的方法。",
         "ku": "Flotasyon pêvajoya veqetandina hesin bi alîkariya magnetekê ye."
       },
@@ -507,7 +507,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Während Salzwasser kocht, bleibt seine Temperatur von Anfang an konstant.",
         "fr": "Pendant que l’eau salée bout, sa température reste constante depuis le début.",
         "ru": "Солёная вода кипит при постоянной температуре с самого начала кипения.",
-        "ar": "فبينما يغلي الماء المالح، تظل درجة حرارته ثابتة منذ البداية.",
+        "ar": "عند غليان الماء المالح تظل درجة حرارته ثابتة منذ البداية.",
         "zh": "盐水沸腾时，温度从一开始就保持不变。",
         "ku": "Dema ava şor dikele, germahiya wê ji destpêkê ve sabit dimîne."
       },
@@ -530,7 +530,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Wenn der gesättigten Lösung bei gleicher Temperatur mehr gelöster Stoff zugesetzt wird, fällt dieser am Boden aus, ohne sich aufzulösen, und die Konzentration ändert sich nicht.",
         "fr": "Si davantage de soluté est ajouté à la solution saturée à la même température, il précipitera au fond sans se dissoudre et la concentration ne changera pas.",
         "ru": "Если к насыщенному раствору при той же температуре добавить ещё растворяемого вещества, оно не растворится и останется на дне, а концентрация не изменится.",
-        "ar": "إذا تمت إضافة المزيد من المذاب إلى المحلول المشبع عند نفس درجة الحرارة، فسوف يترسب إلى القاع دون أن يذوب ولن يتغير التركيز.",
+        "ar": "إذا أُضيف مزيد من المذاب إلى محلول مشبع عند درجة الحرارة نفسها، فإنه يترسب في القاع دون أن يذوب ولا يتغير التركيز.",
         "zh": "在相同温度下向饱和溶液中再加入溶质，溶质不再溶解而沉在底部，浓度不变。",
         "ku": "Ger di heman germahiyê de hinek din madeya helyayî li çareseriya têrbûyî were zêdekirin, bêyî ku bihele li binî dinişe û giranbûn naguhere."
       },
@@ -618,7 +618,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "In einer Lösung ist die Teilchengröße kleiner als 1 nm und das Gemisch homogen; in einem Kolloid liegt die Teilchengröße zwischen 1 und 1000 nm, das Gemisch ist heterogen und zeigt den Tyndall-Effekt.",
         "fr": "Dans une solution, la taille des particules est inférieure à 1 nm et le mélange est homogène ; dans un colloïde, elle est comprise entre 1 et 1000 nm, le mélange est hétérogène et présente l'effet Tyndall.",
         "ru": "Раствор — однородная смесь с частицами меньше 1 нм; коллоид — неоднородная смесь с частицами от 1 до 1000 нм, проявляющая эффект Тиндаля.",
-        "ar": "في المحلول يكون حجم الجسيمات أقل من 1 نانومتر ويكون المخلوط متجانسًا؛ أما في الغروي فيتراوح حجم الجسيمات بين 1 و1000 نانومتر، ويكون المخلوط غير متجانس ويُظهر تأثير تيندال.",
+        "ar": "في المحلول يكون حجم الجسيمات أقل من 1 nm ويكون المخلوط متجانسًا؛ أما في الغروي فيتراوح حجم الجسيمات بين 1 و1000 nm، ويكون المخلوط غير متجانس ويُظهر ظاهرة تندال.",
         "zh": "溶液中粒子直径小于 1 nm，混合物是均匀的；胶体中粒子直径在 1~1000 nm 之间，混合物是非均匀的，并有丁达尔效应。",
         "ku": "Di çareseriyê de mezinahiya perçeyan ji 1 nm biçûktir e û tevlihevî homojen e; di kolloîdê de mezinahiya perçeyan di navbera 1 û 1000 nm de ye, tevlihevî heterojen e û bandora Tyndall nîşan dide."
       }
@@ -684,7 +684,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Die Filtration trennt heterogene Fest-flüssig-Gemische, indem die Feststoffteilchen im Filterpapier zurückgehalten werden; die Dialyse trennt kleine Ionen und Moleküle von kolloidalen Teilchen, indem sie diese durch eine semipermeable Membran treten lässt.",
         "fr": "La filtration sépare les mélanges hétérogènes solide-liquide en retenant les particules solides sur le papier filtre ; la dialyse sépare les petits ions et molécules des particules colloïdales en les faisant passer à travers une membrane semi-perméable.",
         "ru": "Фильтрование разделяет неоднородные смеси твёрдого вещества с жидкостью, задерживая твёрдые частицы на фильтровальной бумаге; диализ отделяет малые ионы и молекулы от коллоидных частиц, пропуская их через полупроницаемую мембрану.",
-        "ar": "يفصل الترشيح المخاليط غير المتجانسة الصلبة-السائلة باحتجاز الجسيمات الصلبة على ورق الترشيح؛ وتفصل الديلزة الأيونات والجزيئات الصغيرة عن الجسيمات الغروية بتمريرها عبر غشاء شبه منفذ.",
+        "ar": "الترشيح يفصل المخاليط غير المتجانسة الصلبة-السائلة باحتجاز الجسيمات الصلبة على ورق مسامي؛ وفي الديلزة تُفصل الأيونات والجزيئات الصغيرة عن الجسيمات الغروية بتمريرها عبر غشاء شبه منفذ.",
         "zh": "过滤是用滤纸截留固体颗粒，分离非均匀的固-液混合物；透析是让小的离子和分子透过半透膜，使其与胶体粒子分离。",
         "ku": "Parzûnkirin perçeyên hişk li ser kaxeza parzûnê digire û tevliheviyên heterojen ên hişk-şil ji hev vediqetîne; dialîz îyon û molekulên biçûk di parzûneke nîv-derbasbar re derbas dike û wan ji perçeyên koloîdal vediqetîne."
       }
@@ -750,7 +750,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Massenprozent ist das Verhältnis der Masse des gelösten Stoffes zur Masse der Lösung (x100); Volumenprozent ist das Verhältnis des Volumens des flüssigen gelösten Stoffes zum Volumen der Lösung (x100).",
         "fr": "Le pourcentage massique est le rapport de la masse de soluté à la masse de solution (x100) ; le pourcentage volumique est le rapport du volume de soluté liquide au volume de solution (x100).",
         "ru": "Массовая доля в процентах — отношение массы растворённого вещества к массе раствора (x100); объёмная доля в процентах — отношение объёма жидкого растворённого вещества к объёму раствора (x100).",
-        "ar": "النسبة المئوية الكتلية هي نسبة كتلة المذاب إلى كتلة المحلول (x100)؛ والنسبة المئوية الحجمية هي نسبة حجم المذاب السائل إلى حجم المحلول (x100).",
+        "ar": "النسبة المئوية الكتلية: نسبة كتلة المذاب إلى كتلة المحلول (x100)؛ والنسبة المئوية الحجمية: نسبة حجم المذاب السائل إلى حجم المحلول (x100).",
         "zh": "质量分数是溶质质量与溶液质量之比(x100)；体积分数是液态溶质体积与溶液体积之比(x100)。",
         "ku": "Rêjeya girseyî ya ji sedî rêjeya girseya madeya helyayî li girseya çareseriyê ye (x100); rêjeya qebareyî ya ji sedî rêjeya qebareya madeya helyayî ya şil li qebareya çareseriyê ye (x100)."
       }
@@ -806,7 +806,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Aufkonzentrieren",
         "fr": "Concentration",
         "ru": "Концентрирование",
-        "ar": "التركيز",
+        "ar": "زيادة التركيز",
         "zh": "浓缩",
         "ku": "Tîrkirin"
       },
@@ -816,7 +816,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Beim Verdünnen wird Lösungsmittel zugegeben, die Masse des gelösten Stoffes bleibt gleich und die Konzentration sinkt; beim Aufkonzentrieren wird Lösungsmittel verdampft oder mehr gelöster Stoff zugegeben, und die Konzentration steigt.",
         "fr": "La dilution consiste à ajouter du solvant : la masse de soluté reste la même et la concentration diminue ; pour concentrer, on évapore du solvant ou on ajoute du soluté, et la concentration augmente.",
         "ru": "Разбавление — добавление растворителя: масса растворённого вещества не меняется, а концентрация уменьшается; концентрирование — выпаривание растворителя или добавление растворённого вещества, при котором концентрация растёт.",
-        "ar": "في التخفيف يُضاف المذيب فتبقى كتلة المذاب ثابتة ويقل التركيز؛ وفي التركيز يُبخَّر المذيب أو يُضاف مزيد من المذاب فيزداد التركيز.",
+        "ar": "في التخفيف يُضاف المذيب فتبقى كتلة المذاب ثابتة ويقل التركيز؛ وفي زيادة التركيز يُبخَّر المذيب أو يُضاف مزيد من المذاب فيرتفع التركيز.",
         "zh": "稀释是加入溶剂，溶质质量不变，浓度降低；浓缩是蒸发溶剂或加入更多溶质，浓度升高。",
         "ku": "Di seyrelandinê de helker tê zêdekirin, girseya madeya helyayî naguhere û giranbûn kêm dibe; di tîrkirinê de helker tê hilmikandin an madeya helyayî tê zêdekirin û giranbûn zêde dibe."
       }
@@ -962,7 +962,7 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Die berechnete Stoffmasse wird in ein Gefäß eingewogen",
           "fr": "On pèse la masse de soluté calculée dans un récipient",
           "ru": "Рассчитанную массу вещества отвешивают в сосуд",
-          "ar": "تُوزن كتلة المذاب المحسوبة في وعاء",
+          "ar": "يُوزن المذاب بالكتلة المحسوبة ويوضع في وعاء",
           "zh": "称取计算出质量的溶质，放入容器中",
           "ku": "Girseya hesibandî ya madeya helyayî tê kêşan û dikeve firaxekê"
         },
@@ -996,7 +996,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Trennung durch Kristallisation",
         "fr": "Séparation par cristallisation",
         "ru": "Разделение кристаллизацией",
-        "ar": "الفصل عن طريق التبلور",
+        "ar": "الفصل بالتبلور",
         "zh": "用结晶法分离",
         "ku": "Veqetandin bi krîstalkirinê"
       },
@@ -1027,7 +1027,7 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Mit sinkender Temperatur nimmt die Löslichkeit ab und der Feststoff fällt aus",
           "fr": "À mesure que la température diminue, la solubilité diminue et le solide précipite",
           "ru": "При понижении температуры растворимость уменьшается, и твёрдое вещество выпадает в осадок",
-          "ar": "مع انخفاض درجة الحرارة، تنخفض قابلية الذوبان وتترسب المواد الصلبة",
+          "ar": "مع انخفاض درجة الحرارة تقل الذائبية فتترسب المادة الصلبة",
           "zh": "随着温度降低，溶解度降低，固体析出",
           "ku": "Her ku germahî kêm dibe, helbûnî kêm dibe û madeya hişk dinişe"
         },
@@ -1037,7 +1037,7 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Die gebildeten Kristalle werden durch Filtrieren mit Filterpapier von der Lösung getrennt",
           "fr": "Les cristaux formés sont séparés de la solution par filtration sur papier filtre",
           "ru": "Образовавшиеся кристаллы отделяют от раствора фильтрованием через фильтровальную бумагу",
-          "ar": "تُفصل البلورات المتكوّنة عن المحلول بالترشيح عبر ورق الترشيح",
+          "ar": "تُفصل البلورات المتكوّنة عن المحلول بالترشيح باستخدام ورق الترشيح",
           "zh": "用滤纸过滤，把析出的晶体与溶液分离",
           "ku": "Krîstalên ku çêbûne bi parzûnkirina bi kaxeza parzûnê ji çareseriyê tên veqetandin"
         }
@@ -1053,7 +1053,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Wenn 50 Gramm reines Wasser zu 200 Gramm einer 20-prozentigen Salzwasserlösung hinzugefügt werden, wie viel Prozent der Masse beträgt die neue Lösung?",
         "fr": "Lorsque 50 grammes d’eau pure sont ajoutés à 200 grammes de solution d’eau salée à 20 % en masse, quel sera le pourcentage en masse de la nouvelle solution ?",
         "ru": "К 200 г раствора соли с массовой долей 20 % добавили 50 г чистой воды. Какова массовая доля соли в новом растворе?",
-        "ar": "عند إضافة 50 جرامًا من الماء النقي إلى 200 جرام من محلول الماء المالح بنسبة 20% بالكتلة، ما النسبة المئوية بالكتلة للمحلول الجديد؟",
+        "ar": "عند إضافة 50 g من الماء النقي إلى 200 g من محلول ملحي تركيزه 20% بالكتلة، ما النسبة المئوية الكتلية للمحلول الجديد؟",
         "zh": "向200 g质量分数为20%的盐水中加入50 g纯水，所得新溶液的质量分数是多少？",
         "ku": "Dema ku 50 gram ava saf bi girseyê li 200 gram ava şor a %20 were zêdekirin, wê çareseriya nû ji sedî çend be?"
       },
@@ -1116,7 +1116,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Gelöstes Salz = 200 * 0,20 = 40 Gramm. Neue Gesamtmasse = 200 + 50 = 250 Gramm. Neuer Prozentsatz = (40 / 250) * 100 = 16 %. Beim Verdünnen ändert sich die Salzmasse nicht, nur die Masse der Lösung nimmt zu; daher sinkt die Konzentration unter 20 %, ein größerer Wert wie 25 % ist unmöglich.",
         "fr": "Sel dissous = 200 * 0,20 = 40 grammes. Nouvelle masse totale = 200 + 50 = 250 grammes. Nouveau pourcentage = (40 / 250) * 100 = 16 %. Lors d'une dilution, la masse de sel ne change pas, seule la masse de solution augmente ; la concentration passe donc sous 20 %, et une valeur plus grande comme 25 % est impossible.",
         "ru": "Масса соли = 200 · 0,20 = 40 г. Новая масса раствора = 200 + 50 = 250 г. Массовая доля = (40 / 250) · 100 = 16 %. При разбавлении масса соли не меняется, растёт только масса раствора; поэтому концентрация становится ниже 20 %, и большее значение, например 25 %, невозможно.",
-        "ar": "ملح مذاب = 200 * 0.20 = 40 جرام. الكتلة الكلية الجديدة = 200 + 50 = 250 جرام. النسبة الجديدة = (40 / 250) * 100 = 16%. في التخفيف لا تتغير كتلة الملح وتزداد كتلة المحلول فقط؛ لذلك ينخفض التركيز إلى أقل من 20%، ولا يمكن أن تكون القيمة أكبر مثل 25%.",
+        "ar": "كتلة الملح المذاب = 200 · 0.20 = 40 g. الكتلة الكلية الجديدة = 200 + 50 = 250 g. النسبة الجديدة = (40 / 250) · 100 = 16%. في التخفيف لا تتغير كتلة الملح وتزداد كتلة المحلول فقط؛ لذلك ينخفض التركيز إلى أقل من 20%، ولا يمكن أن يكون أكبر منه مثل 25%.",
         "zh": "溶解的盐 = 200 · 0.20 = 40 g。新溶液总质量 = 200 + 50 = 250 g。新质量分数 = (40 / 250) · 100 = 16%。稀释时盐的质量不变，只有溶液质量增加，所以浓度降到 20% 以下，不可能是 25% 这样更大的值。",
         "ku": "Xwêya helkirî = 200 * 0,20 = 40 gram. Girseya giştî ya nû = 200 + 50 = 250 gram. Rêjeya nû = (40 / 250) * 100 = 16%. Di sivikkirinê de girseya xwê naguhere, tenê girseya çareseriyê zêde dibe; ji ber vê yekê giranbûn dikeve bin 20%, nirxeke mezintir wek 25% ne mimkun e."
       }

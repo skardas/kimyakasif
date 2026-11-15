@@ -22,7 +22,7 @@ export const unit17: ChemistryUnitSeedData = {
     "de": "Kollisionstheorie, Geschwindigkeitsgleichung und Katalysator",
     "fr": "Théorie des collisions, loi de vitesse et catalyseur",
     "ru": "Теория столкновений, кинетическое уравнение и катализ",
-    "ar": "نظرية الاصطدام ومعادلة المعدل والمحفز",
+    "ar": "نظرية التصادم وقانون السرعة والحفاز",
     "zh": "碰撞理论、速率方程和催化剂",
     "ku": "Teoriya Lihevketinê, Hevkêşeya Lezê û Katalîzator"
   },
@@ -35,7 +35,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Gemäß der Kollisionstheorie müssen die Teilchen für eine effektive Kollision über eine ausreichende kinetische Energie (Ea) und eine geeignete geometrische Ausrichtung verfügen.",
         "fr": "Selon la théorie des collisions, pour qu’une collision soit efficace, les particules doivent avoir une énergie cinétique (Ea) suffisante et une orientation géométrique appropriée.",
         "ru": "Согласно теории столкновений, столкновение эффективно, если частицы обладают достаточной кинетической энергией (не ниже Ea) и благоприятной пространственной ориентацией.",
-        "ar": "وفقا لنظرية الاصطدام، من أجل حدوث تصادم فعال، يجب أن تمتلك الجسيمات طاقة حركية كافية (Ea) واتجاه هندسي مناسب.",
+        "ar": "وفقًا لنظرية التصادم، يجب أن تمتلك الجسيمات طاقة حركية كافية (Ea) واتجاهًا هندسيًا مناسبًا لكي يحدث تصادم فعال.",
         "zh": "根据碰撞理论，要发生有效碰撞，粒子必须具有足够的动能(Ea)和合适的碰撞取向。",
         "ku": "Li gorî teoriya lihevketinê, ji bo lêdana bi bandor, divê pirtik xwedî enerjiya kînetîk a têr (Ea) û arasteya geometrîkî ya guncaw bin."
       },
@@ -45,7 +45,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Jedes Mal, wenn Teilchen kollidieren, findet eine chemische Reaktion statt.",
         "fr": "Chaque fois que des particules entrent en collision, une réaction chimique se produit.",
         "ru": "Любое столкновение частиц обязательно приводит к химической реакции.",
-        "ar": "في كل مرة تتصادم فيها الجزيئات، يحدث تفاعل كيميائي.",
+        "ar": "كلما تصادمت الجسيمات حدث تفاعل كيميائي حتمًا.",
         "zh": "粒子每次碰撞都一定会发生化学反应。",
         "ku": "Her cara ku pirtik li hev dikevin, reaksiyonek kîmyayî pêk tê."
       },
@@ -101,7 +101,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Die Geschwindigkeitsgleichung wird nur mit den Konzentrationen von Gasen und in Wasser gelösten Stoffen (aq) aufgestellt; reine Feststoffe und Flüssigkeiten erscheinen nicht im Geschwindigkeitsgesetz.",
         "fr": "L'équation de vitesse s'écrit uniquement avec les concentrations des gaz et des substances dissoutes dans l'eau (aq) ; les solides et liquides purs n'apparaissent pas dans la loi de vitesse.",
         "ru": "Кинетическое уравнение записывают только через концентрации газов и растворённых в воде веществ (р-р); чистые твёрдые вещества и жидкости в него не входят.",
-        "ar": "تُكتب معادلة السرعة فقط بدلالة تراكيز الغازات والمواد المذابة في الماء (aq)؛ ولا تدخل المواد الصلبة والسوائل النقية في قانون السرعة.",
+        "ar": "لا يُكتب قانون السرعة إلا بدلالة تراكيز الغازات والمواد المذابة في الماء (aq)؛ ولا تدخل المواد الصلبة والسوائل النقية فيه.",
         "zh": "速率方程只用气体和水溶液中溶质(aq)的浓度来书写；纯固体和纯液体不出现在速率表达式中。",
         "ku": "Hevkêşana lezê tenê bi tîrbûna gazan û maddeyên di avê de helandî (aq) tê nivîsandin; hişkên saf û şilên saf di têkiliya lezê de cih nagirin."
       },
@@ -197,7 +197,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "ÖSYM-Falle: Katalysator reduziert Ea, VERÄNDERT ΔH NICHT!",
         "fr": "Piège ÖSYM : le catalyseur réduit Ea, NE CHANGE PAS ΔH !",
         "ru": "Ловушка на экзамене: катализатор снижает Ea, но НЕ меняет ΔH!",
-        "ar": "مصيدة ÖSYM: المحفز يقلل Ea، ولا يغير ΔH!",
+        "ar": "فخ شائع في الامتحان: الحفاز يقلل Ea، ولا يغير ΔH!",
         "zh": "考试陷阱：催化剂降低 Ea，但不改变 ΔH！",
         "ku": "Xefika ÖSYM: Katalîzator Ea kêm dike, ΔH NAGUHERÎNE!"
       }
@@ -220,7 +220,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Bei exothermen Reaktionen verlangsamt sich die Reaktionsgeschwindigkeit mit steigender Temperatur.",
         "fr": "Dans les réactions exothermiques, à mesure que la température augmente, la vitesse de réaction ralentit.",
         "ru": "В экзотермических реакциях при повышении температуры скорость реакции уменьшается.",
-        "ar": "في التفاعلات الطاردة للحرارة، مع زيادة درجة الحرارة، يتباطأ معدل التفاعل.",
+        "ar": "في التفاعلات الطاردة للحرارة تقل سرعة التفاعل كلما ارتفعت درجة الحرارة.",
         "zh": "对于放热反应，温度升高时反应速率减慢。",
         "ku": "Di reaksiyonên ekzotermîk de, her ku germahî zêde dibe leza reaksiyonê hêdî dibe."
       },
@@ -253,7 +253,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Eine Erhöhung der Temperatur beschleunigt die Reaktion durch Verringerung der Aktivierungsenergie.",
         "fr": "L'augmentation de la température accélère la réaction en diminuant l'énergie d'activation.",
         "ru": "Повышение температуры ускоряет реакцию за счёт снижения энергии активации.",
-        "ar": "تؤدي زيادة درجة الحرارة إلى تسريع التفاعل عن طريق تقليل طاقة التنشيط.",
+        "ar": "يؤدي رفع درجة الحرارة إلى تسريع التفاعل بخفض طاقة التنشيط.",
         "zh": "升高温度是通过降低活化能来加快反应的。",
         "ku": "Zêdebûna germahiyê bi kêmkirina enerjiya aktîvasyonê reaksiyonê bilez dike."
       },
@@ -276,7 +276,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Mit zunehmender Kontaktfläche (Umwandlung des Feststoffs in Pulver) nehmen nur die Geschwindigkeit heterogener Reaktionen und die Konstante k zu.",
         "fr": "À mesure que la surface de contact augmente (transformant le solide en poudre), seules la vitesse des réactions hétérogènes et la constante k augmentent.",
         "ru": "При увеличении площади поверхности контакта (измельчении твёрдого вещества в порошок) возрастают скорость и константа k только гетерогенных реакций.",
-        "ar": "مع زيادة سطح التلامس (تحويل المادة الصلبة إلى مسحوق)، يزداد فقط معدل التفاعلات غير المتجانسة والثابت k.",
+        "ar": "بزيادة مساحة سطح التلامس (تحويل المادة الصلبة إلى مسحوق) تزداد سرعة التفاعلات غير المتجانسة وثابت سرعتها k فقط.",
         "zh": "增大接触面积（将固体研成粉末）只会使非均相反应的速率和速率常数 k 增大。",
         "ku": "Her ku rûbera têkiliyê zêde dibe (bi kirina hişkê bi toz), tenê leza reaksiyonên heterojen û sabîta wan a k zêde dibe."
       },
@@ -286,7 +286,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Durch die Vergrößerung der Kontaktfläche erhöht sich die Geschwindigkeit homogener Gasreaktionen.",
         "fr": "L'augmentation de la surface de contact augmente la vitesse des réactions gazeuses homogènes.",
         "ru": "Увеличение площади поверхности контакта повышает скорость гомогенных газовых реакций.",
-        "ar": "زيادة سطح التلامس يزيد من معدل تفاعلات الغازات المتجانسة.",
+        "ar": "زيادة مساحة سطح التلامس تزيد سرعة تفاعلات الغازات المتجانسة.",
         "zh": "增大接触面积能加快均相气体反应的速率。",
         "ku": "Zêdekirina rûbera têkiliyê leza reaksiyonên gazî yên homojen zêde dike."
       },
@@ -352,7 +352,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Am Ende der Reaktion wird der Katalysator verbraucht und zerstört.",
         "fr": "Le catalyseur est consommé et détruit à la fin de la réaction.",
         "ru": "К концу реакции катализатор полностью расходуется и исчезает.",
-        "ar": "يتم استهلاك المحفز وتدميره في نهاية التفاعل.",
+        "ar": "يُستهلك الحفاز ويفنى في نهاية التفاعل.",
         "zh": "催化剂在反应结束时被消耗殆尽。",
         "ku": "Katalîzator di dawiya reaksiyonê de tê xerckirin û ji holê radibe."
       },
@@ -484,7 +484,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Durch die Umwandlung des Feststoffs in Pulver erhöht sich die Menge an freigesetztem Gas.",
         "fr": "La transformation du solide en poudre augmente la quantité de gaz libérée.",
         "ru": "Измельчение твёрдого вещества в порошок увеличивает количество выделяющегося газа.",
-        "ar": "يؤدي تحويل المادة الصلبة إلى مسحوق إلى زيادة كمية الغاز المنبعثة.",
+        "ar": "يؤدي تحويل المادة الصلبة إلى مسحوق إلى زيادة كمية الغاز المنطلق.",
         "zh": "将固体研成粉末会增加放出的气体量。",
         "ku": "Kirina hişkê bi toz mîqdara gaza ku derdikeve zêde dike."
       },
@@ -537,7 +537,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Konzentration erhöht die Geschwindigkeit, sie verändert NICHT die Konstante k!",
         "fr": "La concentration augmente la vitesse, elle ne change PAS la constante k !",
         "ru": "Концентрация увеличивает скорость, но НЕ меняет константу k!",
-        "ar": "التركيز يزيد المعدل، ولا يغير الثابت k!",
+        "ar": "التركيز يزيد السرعة، ولا يغيّر الثابت k!",
         "zh": "浓度改变的是速率，不改变速率常数 k！",
         "ku": "Tîrbûn lezê zêde dike, lê sabîta k NAGUHERÎNE!"
       }
@@ -605,7 +605,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Ein Katalysator erhöht k, indem er Ea senkt; die Temperatur erhöht k und die Anzahl der Teilchen, die Ea überschreiten, ohne Ea zu verändern.",
         "fr": "Un catalyseur augmente k en abaissant Ea ; la température augmente k et le nombre de particules dépassant Ea sans modifier Ea.",
         "ru": "Катализатор увеличивает k, снижая Ea; температура увеличивает k за счёт роста числа частиц, преодолевающих Ea, а саму Ea не меняет.",
-        "ar": "يزيد الحفاز k بخفض Ea؛ أما درجة الحرارة فتزيد k وعدد الجسيمات التي تتجاوز Ea دون أن تغيّر Ea.",
+        "ar": "الحفاز يزيد k بخفض Ea؛ أما عند رفع درجة الحرارة فيزداد k وعدد الجسيمات التي تتجاوز Ea دون أن تتغير Ea.",
         "zh": "催化剂通过降低 Ea 使 k 增大；而温度不改变 Ea，是通过增加能量超过 Ea 的粒子数使 k 增大。",
         "ku": "Katalîzator bi kêmkirina Ea k zêde dike; germahî bêyî ku Ea biguherîne, k û hejmara taneyên ku Ea derbas dikin zêde dike."
       }
@@ -671,7 +671,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Die Reaktionsgeschwindigkeit variiert je nach Konzentration; die Geschwindigkeitskonstante k ist konzentrationsunabhängig und variiert je nach Temperatur, Katalysator und Kontaktoberfläche.",
         "fr": "La vitesse de réaction varie avec la concentration ; la constante k, elle, est indépendante de la concentration et varie avec la température, le catalyseur et la surface de contact.",
         "ru": "Скорость реакции (r) зависит от концентрации; константа скорости (k) от концентрации не зависит и меняется с температурой, при введении катализатора и при изменении площади поверхности.",
-        "ar": "تتغيّر سرعة التفاعل بتغيّر التركيز؛ أما ثابت السرعة k فلا يعتمد على التركيز ويتغيّر بدرجة الحرارة والحفاز ومساحة سطح التلامس.",
+        "ar": "سرعة التفاعل كمية تتغيّر بتغيّر التركيز؛ أما ثابت السرعة k فلا يعتمد على التركيز ويتغيّر بدرجة الحرارة والحفاز ومساحة سطح التلامس.",
         "zh": "化学反应速率(r)随浓度变化；而速率常数k与浓度无关，随温度、催化剂和接触面积而变化。",
         "ku": "Leza reaksiyonê li gorî tîrbûnê diguhere; sabîta lezê k bi tîrbûnê ve ne girêdayî ye û bi germahî, katalîzator û rûbera têkiliyê diguhere."
       }
@@ -704,7 +704,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Die Durchschnittsgeschwindigkeit ist die Konzentrationsänderung in einem bestimmten Zeitintervall geteilt durch dieses Intervall; die Momentangeschwindigkeit ergibt sich aus der Steigung der Tangente, die in diesem Zeitpunkt an die Konzentrations-Zeit-Kurve gelegt wird.",
         "fr": "La vitesse moyenne est la variation de concentration pendant un intervalle de temps donné divisée par cet intervalle ; la vitesse instantanée se déduit de la pente de la tangente tracée à cet instant à la courbe concentration-temps.",
         "ru": "Средняя скорость — отношение изменения концентрации за определённый промежуток времени к длительности этого промежутка; мгновенная скорость определяется по наклону касательной, проведённой к кривой «концентрация — время» в данный момент.",
-        "ar": "السرعة المتوسطة هي التغير في التركيز خلال فترة زمنية معينة مقسومًا على تلك الفترة؛ أما السرعة اللحظية فتُحسب من ميل المماس المرسوم لمنحنى التركيز-الزمن عند تلك اللحظة.",
+        "ar": "السرعة المتوسطة: التغير في التركيز خلال فترة زمنية معينة مقسومًا على طول تلك الفترة؛ والسرعة اللحظية: ميل المماس المرسوم لمنحنى التركيز-الزمن عند تلك اللحظة.",
         "zh": "平均速率是一段时间间隔内浓度的变化除以该时间间隔；瞬时速率则由该时刻浓度-时间曲线切线的斜率求得。",
         "ku": "Leza navîn guherîna tîrbûnê di navberek demê ya diyar de ye ku li wê navberê tê dabeşkirin; leza tavilê ji xwarbûna (şemitîna) tanjanta ku di wê kêliyê de li ser kevana tîrbûn–dem tê xêzkirin tê dîtin."
       }
@@ -717,7 +717,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Homogener Katalysator",
         "fr": "Catalyseur homogène",
         "ru": "Гомогенный катализатор",
-        "ar": "محفز متجانس",
+        "ar": "الحفاز المتجانس",
         "zh": "均相催化剂",
         "ku": "Katalîzatora Homojen"
       },
@@ -727,7 +727,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Heterogener Katalysator",
         "fr": "Catalyseur hétérogène",
         "ru": "Гетерогенный катализатор",
-        "ar": "محفز غير متجانس",
+        "ar": "الحفاز غير المتجانس",
         "zh": "非均相催化剂",
         "ku": "Katalîzatora Heterojen"
       },
@@ -737,7 +737,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Der homogene Katalysator befindet sich in derselben physikalischen Phase wie die Reaktanten; der heterogene Katalysator befindet sich in einer anderen physikalischen Phase als die Reaktanten (z. B. festes Pt).",
         "fr": "Le catalyseur homogène est dans la même phase physique que les réactifs ; le catalyseur hétérogène se trouve dans une phase physique différente de celle des réactifs (par exemple Pt solide).",
         "ru": "Гомогенный катализатор находится в той же фазе, что и реагенты; гетерогенный катализатор находится в фазе, отличной от фазы реагентов (например, твёрдая Pt).",
-        "ar": "يكون المحفز المتجانس في الطور الفيزيائي نفسه مع المواد المتفاعلة؛ أما المحفز غير المتجانس فيكون في طور فيزيائي مختلف عن المواد المتفاعلة (مثل Pt الصلب).",
+        "ar": "الحفاز المتجانس في الطور الفيزيائي نفسه الذي توجد فيه المواد المتفاعلة؛ أما الحفاز غير المتجانس ففي طور فيزيائي مختلف عن طور المواد المتفاعلة (مثل Pt الصلب).",
         "zh": "均相催化剂与反应物处于同一相；而非均相催化剂与反应物处于不同的相(例如固体 Pt)。",
         "ku": "Katalîzatora homojen wekî reaktantan di heman qonaxa fizîkî de ye; katalîzatora heterojen di qonaxek fizîkî ya cihêreng de ji reaktantan e (mînak Pt hişk)."
       }
@@ -750,7 +750,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Wirksamer Stoß",
         "fr": "Collision efficace",
         "ru": "Эффективное столкновение",
-        "ar": "الاصطدام الفعال",
+        "ar": "التصادم الفعال",
         "zh": "有效碰撞",
         "ku": "Lihevketina Bi Bandor"
       },
@@ -760,7 +760,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Unwirksamer Stoß",
         "fr": "Collision inefficace",
         "ru": "Неэффективное столкновение",
-        "ar": "الاصطدام غير الفعال",
+        "ar": "التصادم غير الفعال",
         "zh": "无效碰撞",
         "ku": "Lihevketina Bê Bandor"
       },
@@ -770,7 +770,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Ein wirksamer Stoß erfolgt mit geeigneter Orientierung und ausreichender Schwellenenergie und liefert Produkte; bei einem unwirksamen Stoß entsteht kein Produkt.",
         "fr": "Une collision efficace se produit avec une orientation appropriée et une énergie seuil suffisante et forme des produits ; une collision inefficace ne forme aucun produit.",
         "ru": "Эффективное столкновение — столкновение при благоприятной ориентации и достаточной пороговой энергии, приводящее к образованию продуктов; неэффективное столкновение продуктов не даёт.",
-        "ar": "الاصطدام الفعال هو الذي يحدث باتجاه هندسي مناسب وطاقة عتبة كافية فينتج نواتج؛ أما الاصطدام غير الفعال فلا يتكوّن فيه ناتج.",
+        "ar": "التصادم الفعال تصادم يحدث باتجاه هندسي مناسب وبطاقة عتبة كافية فتنتج عنه نواتج؛ أما التصادم غير الفعال فلا يتكوّن فيه ناتج.",
         "zh": "有效碰撞是取向合适、能量达到阈能并能发生反应的碰撞；而无效碰撞不能发生反应。",
         "ku": "Lihevketina bi bandor bi arasteya guncaw û enerjiya bendê ya têr pêk tê û hilber çêdike; ya bê bandor hilber çênake."
       }
@@ -803,7 +803,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Die Reaktionsordnung ist die Summe der Exponenten im experimentellen Geschwindigkeitsgesetz; die Molekularität ist die Anzahl der in einem einzelnen (Elementar-)Schritt zusammenstoßenden Teilchen.",
         "fr": "L'ordre de réaction est la somme des exposants de la loi de vitesse expérimentale ; la molécularité est le nombre de particules qui entrent en collision dans une seule étape (élémentaire).",
         "ru": "Порядок реакции — сумма показателей степеней в экспериментальном кинетическом уравнении; молекулярность — число частиц, сталкивающихся в одной (элементарной) стадии.",
-        "ar": "رتبة التفاعل هي مجموع الأسس في قانون السرعة التجريبي؛ والجزيئية هي عدد الجسيمات المتصادمة في خطوة (أولية) واحدة.",
+        "ar": "رتبة التفاعل: مجموع الأسس في قانون السرعة التجريبي؛ والجزيئية: عدد الجسيمات المتصادمة في خطوة (أولية) واحدة.",
         "zh": "反应级数是实验速率方程中各浓度指数之和；而反应分子数是一个基元反应中相互碰撞的粒子数。",
         "ku": "Dereceya reaksiyonê kombûna nîşanderên di hevkêşana lezê ya ezmûnî de ye; molekularîte hejmara taneyên ku di yek gava (bingehîn) de li hev dikevin e."
       }
@@ -906,7 +906,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Einfluss einer Temperaturerhöhung auf die Reaktionsgeschwindigkeit",
         "fr": "Effet d'une hausse de température sur la vitesse de réaction",
         "ru": "Влияние повышения температуры на скорость реакции",
-        "ar": "تأثير رفع درجة الحرارة على سرعة التفاعل",
+        "ar": "تأثير رفع درجة الحرارة في سرعة التفاعل",
         "zh": "升高温度对反应速率的影响",
         "ku": "Bandora Zêdebûna Germahiyê li ser Leza Reaksiyonê"
       },
@@ -917,7 +917,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Wenn die Temperatur erhöht wird, erhöht sich die durchschnittliche kinetische Energie der Partikel.",
           "fr": "Lorsque la température augmente, l’énergie cinétique moyenne des particules augmente.",
           "ru": "При повышении температуры средняя кинетическая энергия частиц растёт",
-          "ar": "عند زيادة درجة الحرارة، يزداد متوسط الطاقة الحركية للجزيئات.",
+          "ar": "عند رفع درجة الحرارة يزداد متوسط الطاقة الحركية للجسيمات",
           "zh": "温度升高，粒子的平均动能增大",
           "ku": "Dema ku germahî zêde dibe, enerjiya kînetîk a navîn ya pirtikan zêde dibe."
         },
@@ -937,7 +937,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Durch die schnelleren, energiereicheren Teilchen nimmt die Anzahl wirksamer Stöße pro Zeiteinheit zu",
           "fr": "Grâce à des particules plus rapides et plus énergétiques, le nombre de collisions efficaces par unité de temps augmente",
           "ru": "Частицы движутся быстрее и обладают большей энергией, поэтому число эффективных столкновений в единицу времени растёт",
-          "ar": "بفضل الجسيمات الأسرع والأعلى طاقة يزداد عدد الاصطدامات الفعالة في وحدة الزمن",
+          "ar": "بفضل الجسيمات الأسرع والأعلى طاقة يزداد عدد التصادمات الفعالة في وحدة الزمن",
           "zh": "粒子运动更快、能量更高，单位时间内的有效碰撞次数增加",
           "ku": "Bi saya taneyên zûtir û bi enerjîtir, hejmara lihevketinên bi bandor di yekeya demê de zêde dibe"
         },
@@ -1016,7 +1016,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Wirkung des Katalysators auf die Reaktion",
         "fr": "Effet du catalyseur sur la réaction",
         "ru": "Влияние катализатора на реакцию",
-        "ar": "تأثير المحفز على التفاعل",
+        "ar": "تأثير الحفاز في التفاعل",
         "zh": "催化剂对反应的影响",
         "ku": "Bandora Katalîzatorê li ser Reaksiyonê"
       },
@@ -1027,7 +1027,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Der Katalysator eröffnet der Reaktion einen anderen Mechanismus (einen neuen Weg)",
           "fr": "Le catalyseur offre à la réaction un mécanisme différent (un nouveau chemin)",
           "ru": "Катализатор открывает для реакции другой механизм (новый путь)",
-          "ar": "يوفّر المحفز للتفاعل آلية مختلفة (مسارًا جديدًا)",
+          "ar": "يوفّر الحفاز للتفاعل آلية مختلفة (مسارًا جديدًا)",
           "zh": "催化剂为反应提供不同的机理（新途径）",
           "ku": "Katalîzator ji reaksiyonê re mekanîzmayeke cuda (rêyeke nû) peyda dike"
         },
@@ -1057,7 +1057,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Hin- und Rückreaktion werden im gleichen Maß schneller; die Enthalpieänderung (ΔH) bleibt gleich",
           "fr": "Les réactions directe et inverse s'accélèrent dans la même proportion ; la variation d'enthalpie (ΔH) reste la même",
           "ru": "Прямая и обратная реакции ускоряются в одинаковой степени; тепловой эффект (ΔH) остаётся прежним",
-          "ar": "يتسارع التفاعلان الأمامي والعكسي بالنسبة نفسها؛ ولا يتغيّر تغيّر المحتوى الحراري (ΔH)",
+          "ar": "يتسارع التفاعلان الأمامي والعكسي بالنسبة نفسها؛ ولا تتغير قيمة التغير في المحتوى الحراري (ΔH)",
           "zh": "正、逆反应以相同倍数加快；焓变(ΔH)不变",
           "ku": "Reaksiyonên pêş û paş bi heman rêjeyê bilez dibin; guherîna entalpiyê (ΔH) naguhere"
         }
@@ -1073,7 +1073,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Da die Geschwindigkeitsgleichung einer Reaktion r = k * [A]^2 * [B] lautet, welche der folgenden ist die Einheit der Geschwindigkeitskonstante k?",
         "fr": "Puisque l’équation de vitesse d’une réaction est r = k * [A]^2 * [B], laquelle des options suivantes est l’unité de la constante de vitesse k ?",
         "ru": "Кинетическое уравнение реакции имеет вид r = k * [A]^2 * [B]. Какова единица константы скорости k?",
-        "ar": "بما أن معادلة سرعة التفاعل هي r = k * [A]^2 * [B]، أي مما يلي يمثل وحدة ثابت السرعة k؟",
+        "ar": "إذا كان قانون سرعة تفاعل ما r = k * [A]^2 * [B]، فأيّ مما يأتي وحدة ثابت السرعة k؟",
         "zh": "某反应的速率方程为 r = k * [A]^2 * [B]，速率常数 k 的单位是下列哪一项？",
         "ku": "Ji ber ku hevkêşana leza reaksiyonê r = k * [A]^2 * [B] ye, kîjan ji yên jêrîn yekeya sabîta lezê k ye?"
       },
@@ -1149,7 +1149,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Was ändert sich nicht, wenn ein geeigneter positiver Katalysator in einer chemischen Reaktion verwendet wird?",
         "fr": "Lequel des éléments suivants ne change pas lorsqu’un catalyseur positif approprié est utilisé dans une réaction chimique ?",
         "ru": "Какая из величин не изменяется при использовании в химической реакции подходящего положительного катализатора?",
-        "ar": "أي مما يلي لا يتغير عند استخدام محفز إيجابي مناسب في التفاعل الكيميائي؟",
+        "ar": "أيّ مما يأتي لا يتغير عند استخدام حفاز موجب مناسب في تفاعل كيميائي؟",
         "zh": "在化学反应中使用合适的正催化剂时，下列哪一项不会改变？",
         "ku": "Dema ku di reaksiyonek kîmyayî de katalîzatorek erênî tê bikar anîn kîjan ji yên jêrîn nayê guhertin?"
       },
@@ -1200,7 +1200,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Potenzielle Energie des aktivierten Komplexes",
           "fr": "Énergie potentielle du complexe activé",
           "ru": "Потенциальная энергия активированного комплекса",
-          "ar": "الطاقة الكامنة للمجمع المنشط",
+          "ar": "الطاقة الكامنة للمعقد المنشط",
           "zh": "活化络合物的势能",
           "ku": "Enerjiya potansiyela kompleksa aktîfkirî"
         }
@@ -1212,7 +1212,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Ein Katalysator senkt die potenzielle Energie des aktivierten Komplexes und verringert damit die Aktivierungsenergien der Hin- und Rückreaktion (Eai und Eag) um denselben Betrag; Geschwindigkeitskonstante und Reaktionsgeschwindigkeit nehmen daher zu. Da die potenziellen Energien der Edukte und Produkte unverändert bleiben, bleibt die Reaktionsenthalpie (ΔH = Eai - Eag) gleich.",
         "fr": "Un catalyseur abaisse l'énergie potentielle du complexe activé et réduit ainsi du même montant les énergies d'activation directe et inverse (Eai et Eag) ; la constante de vitesse et la vitesse augmentent donc. Comme les énergies potentielles des réactifs et des produits ne changent pas, l'enthalpie de réaction (ΔH = Eai - Eag) reste la même.",
         "ru": "Катализатор понижает потенциальную энергию активированного комплекса и тем самым уменьшает энергии активации прямой и обратной реакций (Ea(пр) и Ea(обр)) на одну и ту же величину; поэтому константа скорости и скорость реакции возрастают. Потенциальные энергии реагентов и продуктов не меняются, поэтому энтальпия реакции (ΔH = Ea(пр) - Ea(обр)) остаётся прежней.",
-        "ar": "يخفض المحفز الطاقة الكامنة للمجمع المنشط فيقلّل طاقتي التنشيط الأمامية والعكسية (Eai وEag) بالمقدار نفسه؛ ولذلك يزداد ثابت السرعة وسرعة التفاعل. ولأن الطاقة الكامنة للمتفاعلات والنواتج لا تتغير، يبقى المحتوى الحراري للتفاعل (ΔH = Eai - Eag) كما هو.",
+        "ar": "يخفض الحفاز الطاقة الكامنة للمعقد المنشط فيقلّل طاقتي التنشيط الأمامية والعكسية (Eai وEag) بالمقدار نفسه؛ ولذلك يزداد ثابت السرعة وسرعة التفاعل. ولأن الطاقة الكامنة للمتفاعلات والنواتج لا تتغير، يبقى المحتوى الحراري للتفاعل (ΔH = Eai - Eag) كما هو.",
         "zh": "催化剂降低活化络合物的势能，使正、逆反应的活化能(Eai 和 Eag)降低相同的数值，因此速率常数和反应速率增大。反应物和生成物的势能不变，所以反应焓变(ΔH = Eai - Eag)保持不变。",
         "ku": "Katalîzator enerjiya potansiyel a kompleksa aktîfkirî kêm dike û bi vî awayî enerjiyên çalakkirinê yên pêş û paş (Eai û Eag) bi heman mîqdarê kêm dike; ji ber vê yekê sabîta lezê û leza reaksiyonê zêde dibin. Ji ber ku enerjiya potansiyel a reaktant û hilberan naguhere, entalpiya reaksiyonê (ΔH = Eai - Eag) wek xwe dimîne."
       }
@@ -1453,7 +1453,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Im Diagramm potenzielle Energie–Reaktionskoordinate einer Reaktion beträgt die potenzielle Energie der Edukte 40 kJ, die des aktivierten Komplexes 120 kJ und die der Produkte 10 kJ. Wie groß sind die Aktivierungsenergie der Rückreaktion (Ea,rück) und die Enthalpieänderung (ΔH) der Hinreaktion?",
         "fr": "Sur le diagramme énergie potentielle–coordonnée de réaction d'une réaction, l'énergie potentielle des réactifs vaut 40 kJ, celle du complexe activé 120 kJ et celle des produits 10 kJ. Quelles sont l'énergie d'activation de la réaction inverse (Ea,inv) et la variation d'enthalpie (ΔH) de la réaction directe ?",
         "ru": "На диаграмме «потенциальная энергия — координата реакции» потенциальная энергия реагентов равна 40 кДж, активированного комплекса — 120 кДж, продуктов — 10 кДж. Чему равны энергия активации обратной реакции Ea(обр) и изменение энтальпии (ΔH) прямой реакции?",
-        "ar": "في مخطط الطاقة الكامنة–مسار التفاعل لتفاعل ما، تبلغ الطاقة الكامنة للمتفاعلات 40 kJ، وللمعقد المنشَّط 120 kJ، وللنواتج 10 kJ. ما طاقة تنشيط التفاعل العكسي (Ea,عكسي) والتغير في المحتوى الحراري (ΔH) للتفاعل الأمامي؟",
+        "ar": "في مخطط الطاقة الكامنة–مسار التفاعل لتفاعل ما، تبلغ الطاقة الكامنة للمتفاعلات 40 kJ، وللمعقد المنشَّط 120 kJ، وللنواتج 10 kJ. ما طاقة تنشيط التفاعل العكسي (Eag) والتغير في المحتوى الحراري (ΔH) للتفاعل الأمامي؟",
         "zh": "某反应的势能–反应进程图中，反应物的势能为 40 kJ，活化络合物的势能为 120 kJ，生成物的势能为 10 kJ。逆反应的活化能(Ea,逆)和正反应的焓变(ΔH)分别是多少？",
         "ku": "Di grafîka enerjiya potansiyel–koordînata reaksiyonê ya reaksiyonekê de, enerjiya potansiyel a reaktantan 40 kJ, ya kompleksa aktîvkirî 120 kJ û ya hilberan 10 kJ e. Li gorî vê, enerjiya aktîvasyonê ya reaksiyona paş (Ea,paş) û guherîna entalpiyê (ΔH) ya reaksiyona pêş çiqas in?"
       },
@@ -1464,7 +1464,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Ea,rück = 80 kJ; ΔH = -30 kJ",
           "fr": "Ea,inv = 80 kJ ; ΔH = -30 kJ",
           "ru": "Ea(обр) = 80 кДж; ΔH = -30 кДж",
-          "ar": "Ea,عكسي = 80 kJ؛ ΔH = -30 kJ",
+          "ar": "Eag = 80 kJ؛ ΔH = -30 kJ",
           "zh": "Ea,逆 = 80 kJ；ΔH = -30 kJ",
           "ku": "Ea,paş = 80 kJ; ΔH = -30 kJ"
         },
@@ -1474,7 +1474,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Ea,rück = 110 kJ; ΔH = -30 kJ",
           "fr": "Ea,inv = 110 kJ ; ΔH = -30 kJ",
           "ru": "Ea(обр) = 110 кДж; ΔH = -30 кДж",
-          "ar": "Ea,عكسي = 110 kJ؛ ΔH = -30 kJ",
+          "ar": "Eag = 110 kJ؛ ΔH = -30 kJ",
           "zh": "Ea,逆 = 110 kJ；ΔH = -30 kJ",
           "ku": "Ea,paş = 110 kJ; ΔH = -30 kJ"
         },
@@ -1484,7 +1484,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Ea,rück = 110 kJ; ΔH = +30 kJ",
           "fr": "Ea,inv = 110 kJ ; ΔH = +30 kJ",
           "ru": "Ea(обр) = 110 кДж; ΔH = +30 кДж",
-          "ar": "Ea,عكسي = 110 kJ؛ ΔH = +30 kJ",
+          "ar": "Eag = 110 kJ؛ ΔH = +30 kJ",
           "zh": "Ea,逆 = 110 kJ；ΔH = +30 kJ",
           "ku": "Ea,paş = 110 kJ; ΔH = +30 kJ"
         },
@@ -1494,7 +1494,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Ea,rück = 120 kJ; ΔH = -30 kJ",
           "fr": "Ea,inv = 120 kJ ; ΔH = -30 kJ",
           "ru": "Ea(обр) = 120 кДж; ΔH = -30 кДж",
-          "ar": "Ea,عكسي = 120 kJ؛ ΔH = -30 kJ",
+          "ar": "Eag = 120 kJ؛ ΔH = -30 kJ",
           "zh": "Ea,逆 = 120 kJ；ΔH = -30 kJ",
           "ku": "Ea,paş = 120 kJ; ΔH = -30 kJ"
         },
@@ -1504,7 +1504,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Ea,rück = 130 kJ; ΔH = +30 kJ",
           "fr": "Ea,inv = 130 kJ ; ΔH = +30 kJ",
           "ru": "Ea(обр) = 130 кДж; ΔH = +30 кДж",
-          "ar": "Ea,عكسي = 130 kJ؛ ΔH = +30 kJ",
+          "ar": "Eag = 130 kJ؛ ΔH = +30 kJ",
           "zh": "Ea,逆 = 130 kJ；ΔH = +30 kJ",
           "ku": "Ea,paş = 130 kJ; ΔH = +30 kJ"
         }
@@ -1516,7 +1516,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Ea,hin = 120 - 40 = 80 kJ; Ea,rück = 120 - 10 = 110 kJ. ΔH = PE(Produkte) - PE(Edukte) = 10 - 40 = -30 kJ (exotherm); Probe: ΔH = Ea,hin - Ea,rück = 80 - 110 = -30 kJ. 80 kJ ist die Aktivierungsenergie der Hinreaktion; 120 kJ ist die Energie des Komplexes selbst, keine Aktivierungsenergie; ΔH = +30 ist ein Vorzeichenfehler.",
         "fr": "Ea,dir = 120 - 40 = 80 kJ ; Ea,inv = 120 - 10 = 110 kJ. ΔH = EP(produits) - EP(réactifs) = 10 - 40 = -30 kJ (exothermique) ; vérification : ΔH = Ea,dir - Ea,inv = 80 - 110 = -30 kJ. 80 kJ est l'énergie d'activation directe ; 120 kJ est l'énergie du complexe lui-même, pas une énergie d'activation ; prendre ΔH = +30 est une erreur de signe.",
         "ru": "Ea(пр) = 120 - 40 = 80 кДж; Ea(обр) = 120 - 10 = 110 кДж. ΔH = Eп(продуктов) - Eп(реагентов) = 10 - 40 = -30 кДж (реакция экзотермическая); проверка: ΔH = Ea(пр) - Ea(обр) = 80 - 110 = -30 кДж. 80 кДж — энергия активации прямой реакции; 120 кДж — энергия самого комплекса, а не энергия активации; ΔH = +30 кДж — ошибка в знаке.",
-        "ar": "Ea,أمامي = 120 - 40 = 80 kJ؛ Ea,عكسي = 120 - 10 = 110 kJ. ΔH = طاقة النواتج - طاقة المتفاعلات = 10 - 40 = -30 kJ (طارد للحرارة)؛ وللتحقق: ΔH = Ea,أمامي - Ea,عكسي = 80 - 110 = -30 kJ. القيمة 80 kJ هي طاقة تنشيط التفاعل الأمامي، و120 kJ طاقة المعقد نفسه لا طاقة تنشيط، واعتبار ΔH = +30 خطأ في الإشارة.",
+        "ar": "Eai = 120 - 40 = 80 kJ؛ Eag = 120 - 10 = 110 kJ. ΔH = طاقة النواتج - طاقة المتفاعلات = 10 - 40 = -30 kJ (طارد للحرارة)؛ وللتحقق: ΔH = Eai - Eag = 80 - 110 = -30 kJ. القيمة 80 kJ هي طاقة تنشيط التفاعل الأمامي، و120 kJ طاقة المعقد نفسه لا طاقة تنشيط، واعتبار ΔH = +30 خطأ في الإشارة.",
         "zh": "Ea,正 = 120 - 40 = 80 kJ；Ea,逆 = 120 - 10 = 110 kJ。ΔH = 生成物势能 - 反应物势能 = 10 - 40 = -30 kJ（放热）；验证：ΔH = Ea,正 - Ea,逆 = 80 - 110 = -30 kJ。80 kJ是正反应活化能；120 kJ是活化络合物本身的能量，不是活化能；把ΔH取为+30是符号错误。",
         "ku": "Ea,pêş = 120 - 40 = 80 kJ; Ea,paş = 120 - 10 = 110 kJ. ΔH = EP(hilber) - EP(reaktant) = 10 - 40 = -30 kJ (ekzotermîk); kontrol: ΔH = Ea,pêş - Ea,paş = 80 - 110 = -30 kJ. 80 kJ enerjiya aktîvasyonê ya pêş e; 120 kJ enerjiya kompleksê bi xwe ye, ne enerjiya aktîvasyonê; girtina ΔH wek +30 xeletiya nîşanê ye."
       }
@@ -1529,7 +1529,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Bei der Reaktion 2N2O5(g) → 4NO2(g) + O2(g) in einem starren 2-Liter-Gefäß sinkt die Stoffmenge von N2O5 in 40 Sekunden von 0,8 mol auf 0,4 mol. Wie groß ist die mittlere Bildungsgeschwindigkeit von NO2 in diesem Zeitraum in mol/(L·s)?",
         "fr": "Dans la réaction 2N2O5(g) → 4NO2(g) + O2(g) se déroulant dans un récipient rigide de 2 litres, la quantité de N2O5 passe de 0,8 mol à 0,4 mol en 40 secondes. Quelle est la vitesse moyenne de formation de NO2 sur cet intervalle, en mol/(L·s) ?",
         "ru": "В реакции 2N2O5(г) → 4NO2(г) + O2(г), протекающей в сосуде постоянного объёма 2 л, количество N2O5 за 40 секунд уменьшается с 0,8 моль до 0,4 моль. Какова средняя скорость образования NO2 за этот промежуток времени, моль/(л·с)?",
-        "ar": "في التفاعل 2N2O5(g) → 4NO2(g) + O2(g) الذي يجري في وعاء صلب حجمه 2 لتر، تنخفض كمية N2O5 من 0.8 mol إلى 0.4 mol خلال 40 ثانية. ما متوسط سرعة تكوّن NO2 في هذه الفترة بوحدة mol/(L·s)؟",
+        "ar": "في التفاعل 2N2O5(g) → 4NO2(g) + O2(g) الذي يجري في وعاء ثابت الحجم سعته 2 L، تنخفض كمية N2O5 من 0.8 mol إلى 0.4 mol خلال 40 ثانية. ما متوسط سرعة تكوّن NO2 في هذه الفترة بوحدة mol/(L·s)؟",
         "zh": "在容积为 2 L 的恒容容器中进行反应 2N2O5(g) → 4NO2(g) + O2(g)，40 s 内 N2O5 的物质的量由 0.8 mol 降至 0.4 mol。这段时间内 NO2 的平均生成速率是多少 mol/(L·s)？",
         "ku": "Di reaksiyona 2N2O5(g) → 4NO2(g) + O2(g) de ku di firaxeke 2 lîtreyî ya qebare-sabît de pêk tê, mîqdara N2O5 di 40 saniyeyan de ji 0,8 molî dadikeve 0,4 molî. Li gorî vê, di vê navberê de leza navîn a çêbûna NO2 çend mol/(L·s) ye?"
       },
@@ -1605,7 +1605,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Bei einer Gasphasenreaktion mit dem Geschwindigkeitsgesetz r = k[X]^2[Y] wird das Gefäßvolumen bei konstanter Temperatur halbiert. Um welchen Faktor steigt die Anfangsgeschwindigkeit?",
         "fr": "Pour une réaction en phase gazeuse de loi de vitesse r = k[X]^2[Y], on divise par deux le volume du récipient à température constante. Par quel facteur la vitesse initiale est-elle multipliée ?",
         "ru": "Для газофазной реакции с уравнением скорости r = k[X]^2[Y] объём сосуда при постоянной температуре уменьшают вдвое. Во сколько раз возрастёт начальная скорость?",
-        "ar": "لتفاعل في الطور الغازي قانون سرعته r = k[X]^2[Y] يُخفَّض حجم الوعاء إلى النصف مع ثبات درجة الحرارة. كم مرة تتضاعف السرعة الابتدائية؟",
+        "ar": "لتفاعل في الطور الغازي قانون سرعته r = k[X]^2[Y]، يُخفَّض حجم الوعاء إلى النصف مع ثبات درجة الحرارة. فكم ضعفًا تصبح السرعة الابتدائية للتفاعل؟",
         "zh": "对于速率方程为 r = k[X]^2[Y] 的气相反应，在恒温下将容器体积减半。初始速率变为原来的多少倍？",
         "ku": "Ji bo reaksiyoneke di qonaxa gazê de ku hevkêşeya lezê r = k[X]^2[Y] e, qebareya firaxê di germahiya sabit de nîv dibe. Li gorî vê, leza destpêkê çend qat zêde dibe?"
       },
@@ -1668,7 +1668,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Beim Halbieren des Volumens bleiben die Stoffmengen gleich, alle Gaskonzentrationen verdoppeln sich. Neue Geschwindigkeit = k(2[X])^2(2[Y]) = 4 · 2 · k[X]^2[Y] = 8r. Nur den Effekt von X zu berücksichtigen ergibt 4, nur den von Y ergibt 2; k bleibt bei konstanter Temperatur gleich.",
         "fr": "En divisant le volume par deux, les quantités de matière ne changent pas et toutes les concentrations gazeuses doublent. Nouvelle vitesse = k(2[X])^2(2[Y]) = 4 · 2 · k[X]^2[Y] = 8r. Ne prendre que l'effet de X donne 4, que celui de Y donne 2 ; k ne change pas car la température est constante.",
         "ru": "При уменьшении объёма вдвое количества веществ не меняются, а все концентрации газов удваиваются. Новая скорость = k(2[X])^2(2[Y]) = 4 · 2 · k[X]^2[Y] = 8r. Если учесть только X, получится 4, только Y — 2; k не меняется, так как температура постоянна.",
-        "ar": "عند خفض الحجم إلى النصف لا تتغيّر عدد المولات فتتضاعف تراكيز جميع الغازات. السرعة الجديدة = k(2[X])^2(2[Y]) = 4 · 2 · k[X]^2[Y] = 8r. أخذ أثر X وحده يعطي 4 وأثر Y وحده يعطي 2؛ ولا يتغيّر k لأن درجة الحرارة ثابتة.",
+        "ar": "عند خفض الحجم إلى النصف لا يتغيّر عدد المولات فتتضاعف تراكيز جميع الغازات. السرعة الجديدة = k(2[X])^2(2[Y]) = 4 · 2 · k[X]^2[Y] = 8r. أخذ أثر X وحده يعطي 4 وأثر Y وحده يعطي 2؛ ولا يتغيّر k لأن درجة الحرارة ثابتة.",
         "zh": "体积减半时各物质的物质的量不变，所有气体浓度都变为2倍。新速率 = k(2[X])^2(2[Y]) = 4 · 2 · k[X]^2[Y] = 8r。只考虑X的影响得4，只考虑Y的影响得2；温度不变，k不变。",
         "ku": "Dema qebare nîv dibe hejmara molan naguhere, hemû tîrbûnên gazan du qat dibin. Leza nû = k(2[X])^2(2[Y]) = 4 · 2 · k[X]^2[Y] = 8r. Tenê girtina bandora X 4, tenê ya Y 2 dide; ji ber ku germahî sabît e, k naguhere."
       }
@@ -1820,7 +1820,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "In I verbinden sich entgegengesetzt geladene Ionen ohne Bindungsbruch; das läuft bei Raumbedingungen sofort ab und ist am schnellsten. In II stoßen nur wenige Teilchen zusammen und nur wenige Bindungen brechen; langsamer als I, aber schneller als III. In III müssen viele kovalente Bindungen in C3H8 und 5O2 brechen und viele Teilchen richtig orientiert zusammenstoßen; am langsamsten. Reihenfolge: I > II > III. Verbrennungen hält man wegen ihrer starken Exothermie oft für schnell, doch ΔH sagt nichts über die Geschwindigkeit.",
         "fr": "En I, des ions de charges opposées s'associent sans rupture de liaison ; c'est instantané dans les conditions ambiantes et le plus rapide. En II, peu de particules se heurtent et peu de liaisons sont rompues ; plus lente que I mais plus rapide que III. En III, de nombreuses liaisons covalentes de C3H8 et 5O2 doivent être rompues et de nombreuses particules doivent se heurter avec la bonne orientation : c'est la plus lente. Ordre : I > II > III. On croit souvent une combustion rapide car très exothermique, mais ΔH ne renseigne pas sur la vitesse.",
         "ru": "В реакции I соединяются противоположно заряженные ионы, разрывать связи не нужно; при комнатных условиях она протекает мгновенно и идёт быстрее всех. В реакции II сталкивается немного частиц и разрывается немного связей; она медленнее I, но быстрее III. В реакции III должно разорваться много ковалентных связей в C3H8 и 5O2 и с нужной ориентацией должно столкнуться много частиц — она самая медленная. Порядок: I > II > III. Горение часто считают быстрым из-за сильной экзотермичности, но ΔH ничего не говорит о скорости.",
-        "ar": "في I تتحد أيونات مختلفة الشحنة دون كسر روابط، فيحدث فورًا في ظروف الغرفة وهو الأسرع. في II يتصادم عدد قليل من الجسيمات ويُكسر عدد قليل من الروابط؛ فهو أبطأ من I وأسرع من III. في III يجب كسر روابط تساهمية كثيرة في C3H8 و5O2 وتصادم جسيمات كثيرة باتجاه مناسب، فهو الأبطأ. الترتيب: I > II > III. يُظن الاحتراق سريعًا لأنه طارد جدًا للحرارة، لكن ΔH لا يخبر شيئًا عن السرعة.",
+        "ar": "في I تتحد أيونات مختلفة الشحنة دون كسر روابط، فيحدث التفاعل فورًا في ظروف الغرفة وهو الأسرع. في II يتصادم عدد قليل من الجسيمات ويُكسر عدد قليل من الروابط؛ فهو أبطأ من I وأسرع من III. في III يجب كسر روابط تساهمية كثيرة في C3H8 و5O2 وتصادم جسيمات كثيرة باتجاه مناسب، فهو الأبطأ. الترتيب: I > II > III. يُظن الاحتراق سريعًا لأنه شديد الطرد للحرارة، لكن ΔH لا تدل على شيء بخصوص السرعة.",
         "zh": "I中带相反电荷的离子直接结合，不需断键，室温下瞬间完成，最快。II中参与碰撞的粒子少、需断裂的键也少，比I慢但比III快。III中C3H8和5O2里大量共价键必须断裂，且需要很多粒子以合适取向碰撞，最慢。顺序：I > II > III。燃烧因强烈放热常被误认为很快，但ΔH不能说明速率。",
         "ku": "Di I de îyonên bi barên berevajî bêyî şikandina girêdanê dibin yek; di şert û mercên odeyê de di cih de pêk tê û ya herî bilez e. Di II de hindik pirtik li hev dikevin û hindik girêdan dişikin; ji I hêdîtir lê ji III zûtir e. Di III de gelek girêdanên kovalent ên C3H8 û 5O2 divê bişikin û gelek pirtik bi arasteya rast li hev bikevin; ya herî hêdî ye. Rêz: I > II > III. Şewitandin ji ber ku pir ekzotermîk e bilez tê texmînkirin, lê ΔH li ser lezê tiştekî nabêje."
       }
@@ -1972,7 +1972,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Ohne Katalysator: Ea,rück = Ea,hin - ΔH = 60 - 20 = 40 kJ. Ein Katalysator ändert ΔH nicht und senkt beide Aktivierungsenergien um denselben Betrag (60 - 35 = 25 kJ): Ea,rück = 40 - 25 = 15 kJ, oder direkt 35 - 20 = 15 kJ. 40 kJ setzt voraus, dass der Katalysator die Rückreaktion nicht beeinflusst; 55 kJ addiert ΔH mit falschem Vorzeichen (35 + 20).",
         "fr": "Sans catalyseur : Ea,inv = Ea,dir - ΔH = 60 - 20 = 40 kJ. Un catalyseur ne change pas ΔH et abaisse les deux énergies d'activation de la même quantité (60 - 35 = 25 kJ) : Ea,inv = 40 - 25 = 15 kJ, ou directement 35 - 20 = 15 kJ. 40 kJ suppose que le catalyseur n'agit pas sur la réaction inverse ; 55 kJ ajoute ΔH avec le mauvais signe (35 + 20).",
         "ru": "Без катализатора: Ea(обр) = Ea(пр) - ΔH = 60 - 20 = 40 кДж. Катализатор не меняет ΔH и снижает обе энергии активации на одну величину (60 - 35 = 25 кДж): Ea(обр) = 40 - 25 = 15 кДж, или сразу 35 - 20 = 15 кДж. 40 кДж — предположение, что катализатор не влияет на обратную реакцию; 55 кДж — сложение ΔH с неверным знаком (35 + 20).",
-        "ar": "بدون حفاز: Ea,عكسي = Ea,أمامي - ΔH = 60 - 20 = 40 kJ. الحفاز لا يغيّر ΔH ويخفض طاقتي التنشيط بالمقدار نفسه (60 - 35 = 25 kJ): Ea,عكسي = 40 - 25 = 15 kJ، أو مباشرة 35 - 20 = 15 kJ. القيمة 40 kJ تفترض أن الحفاز لا يؤثر في التفاعل العكسي، و55 kJ تجمع ΔH بإشارة خاطئة (35 + 20).",
+        "ar": "بدون حفاز: Eag = Eai - ΔH = 60 - 20 = 40 kJ. الحفاز لا يغيّر ΔH ويخفض طاقتي التنشيط بالمقدار نفسه (60 - 35 = 25 kJ): Eag = 40 - 25 = 15 kJ، أو مباشرة 35 - 20 = 15 kJ. القيمة 40 kJ تفترض أن الحفاز لا يؤثر في التفاعل العكسي، و55 kJ تجمع ΔH بإشارة خاطئة (35 + 20).",
         "zh": "无催化剂时：Ea,逆 = Ea,正 - ΔH = 60 - 20 = 40 kJ。催化剂不改变ΔH，使正、逆活化能降低相同的量(60 - 35 = 25 kJ)：Ea,逆 = 40 - 25 = 15 kJ，或直接 35 - 20 = 15 kJ。40 kJ是误以为催化剂不影响逆反应；55 kJ是把ΔH按错误符号相加(35 + 20)。",
         "ku": "Bê katalîzator: Ea,paş = Ea,pêş - ΔH = 60 - 20 = 40 kJ. Katalîzator ΔH naguherîne û herdu enerjiyên aktîvasyonê bi heman mîqdarê (60 - 35 = 25 kJ) kêm dike: Ea,paş = 40 - 25 = 15 kJ, an rasterast 35 - 20 = 15 kJ. 40 kJ texmîna ku katalîzator bandorê li reaksiyona paş nake ye; 55 kJ zêdekirina ΔH bi nîşana şaş e (35 + 20)."
       }
@@ -2061,7 +2061,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Die Geschwindigkeit welcher der folgenden Reaktionen, die in einem geschlossenen starren Gefäß bei konstanter Temperatur ablaufen, kann nicht über die zeitliche Änderung des Gesamtgasdrucks verfolgt werden?",
         "fr": "Laquelle des réactions suivantes, réalisées dans un récipient rigide fermé à température constante, ne peut pas être suivie en mesurant la variation de la pression totale du gaz au cours du temps ?",
         "ru": "Скорость какой из следующих реакций, протекающих в закрытом сосуде постоянного объёма при постоянной температуре, нельзя проследить по изменению общего давления газа со временем?",
-        "ar": "أيّ التفاعلات التالية، التي تجري في وعاء صلب مغلق عند درجة حرارة ثابتة، لا يمكن تتبّع سرعته بقياس تغيّر الضغط الكلي للغاز مع الزمن؟",
+        "ar": "أيّ التفاعلات الآتية، التي تجري في وعاء مغلق ثابت الحجم عند درجة حرارة ثابتة، لا يمكن تتبّع سرعته بقياس تغيّر الضغط الكلي للغاز مع الزمن؟",
         "zh": "在恒温的密闭刚性容器中进行下列反应，哪一个反应的速率不能通过测量容器内气体总压随时间的变化来跟踪？",
         "ku": "Kîjan ji van reaksiyonên ku di firaxeke girtî ya qebare-sabît û di germahiya sabit de pêk tên, leza wê bi pîvana guherîna tevahiya pestoya gazê bi demê re nayê şopandin?"
       },

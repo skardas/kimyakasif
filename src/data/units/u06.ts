@@ -68,7 +68,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Gesetz der konstanten Proportionen (Proust): Es gibt immer ein konstantes und unveränderliches Verhältnis zwischen den Massen der Elemente, aus denen eine Verbindung besteht.",
         "fr": "Loi des proportions constantes (Proust) : Il existe toujours un rapport constant et immuable entre les masses des éléments qui composent un composé.",
         "ru": "Закон постоянства состава (Пруст): массы элементов, образующих соединение, всегда находятся в постоянном, неизменном отношении.",
-        "ar": "قانون النسب الثابتة (بروست): هناك دائما نسبة ثابتة وغير متغيرة بين كتل العناصر التي تشكل المركب.",
+        "ar": "قانون النسب الثابتة (بروست): توجد دائمًا نسبة ثابتة لا تتغير بين كتل العناصر المكوّنة للمركب.",
         "zh": "定比定律（普鲁斯特）：组成某一化合物的各元素的质量比总是固定不变的。",
         "ku": "Zagona Rêjeyên Berdewam (Proust): Di navbera girseyên hêmanên ku pêkhateyek pêk tînin de her dem rêjeyek domdar û neguherbar heye."
       },
@@ -78,7 +78,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Das Massenverhältnis der Elemente in einer Verbindung variiert je nach Menge der Verbindung.",
         "fr": "Le rapport massique des éléments dans un composé varie en fonction de la quantité du composé.",
         "ru": "Массовое отношение элементов в соединении зависит от количества этого соединения.",
-        "ar": "تختلف نسبة كتلة العناصر في المركب حسب كمية المركب.",
+        "ar": "تتغير نسبة اتحاد العناصر بالكتلة في المركب بتغير كمية المركب.",
         "zh": "化合物中各元素的质量比随化合物的量而变化。",
         "ku": "Rêjeya girseya hêmanên di pêkhateyek de li gorî mêjera pêkhateyê diguhere."
       },
@@ -101,7 +101,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Gesetz der multiplen Proportionen (Dalton): Bilden zwei Elemente mehr als eine Verbindung, so stehen die Massen des einen Elements, die sich mit einer festen Masse des anderen verbinden, im Verhältnis kleiner ganzer Zahlen.",
         "fr": "Loi des proportions multiples (Dalton) : si deux éléments forment plus d'un composé, les masses de l'un qui se combinent à une masse fixe de l'autre sont dans un rapport de petits nombres entiers.",
         "ru": "Закон кратных отношений (Дальтон): если два элемента образуют более одного соединения, то массы одного элемента, приходящиеся на одну и ту же массу другого, относятся как небольшие целые числа.",
-        "ar": "قانون النسب المتعددة (دالتون): إذا كوّن عنصران أكثر من مركب واحد، فإن كتل أحد العنصرين التي تتحد مع كتلة ثابتة من العنصر الآخر تكون بنسبة أعداد صحيحة بسيطة.",
+        "ar": "قانون النسب المتضاعفة (دالتون): إذا كوّن عنصران أكثر من مركب واحد، فإن كتل أحد العنصرين التي تتحد مع كتلة ثابتة من العنصر الآخر تكون بنسبة أعداد صحيحة بسيطة.",
         "zh": "倍比定律（道尔顿）：如果两种元素能形成多种化合物，则与一定质量的一种元素相化合的另一种元素的质量之间成简单整数比。",
         "ku": "Zagona Rêjeyên Pirjimar (Dalton): Ger du hêman ji yekê zêdetir pêkhate çêbikin, girseyên hêmanekê yên ku bi girseyeke sabît a hêmana din re yek dibin di navbera xwe de rêjeyeke hejmarên tam ên sade nîşan didin."
       },
@@ -111,7 +111,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Das Gesetz der multiplen Proportionen wird auch auf Verbindungen aus drei verschiedenen Elementen (zum Beispiel H2SO4 und H2SO3) angewendet.",
         "fr": "La loi des proportions multiples s'applique aussi entre des composés contenant trois éléments différents (par exemple H2SO4 et H2SO3).",
         "ru": "Кратные отношения ищут и между соединениями из трёх разных элементов (например, H2SO4 и H2SO3).",
-        "ar": "يُطبَّق قانون النسب المتعددة أيضًا بين المركبات التي تحتوي على ثلاثة عناصر مختلفة (مثل H2SO4 وH2SO3).",
+        "ar": "يُطبَّق قانون النسب المتضاعفة أيضًا بين المركبات التي تحتوي على ثلاثة عناصر مختلفة (مثل H2SO4 وH2SO3).",
         "zh": "含三种元素的化合物之间(如 H2SO4 和 H2SO3)也可以讨论倍比关系。",
         "ku": "Zagona rêjeyên pirjimar di navbera pêkhateyên ku sê hêmanên cuda dihewînin de jî tê sepandin (mînak H2SO4 û H2SO3)."
       },
@@ -134,7 +134,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Zwischen Verbindungen mit derselben einfachsten Formel (z. B. C2H4 und C3H6; beide CH2) wird das Gesetz der multiplen Proportionen nicht angewendet, da das Verhältnis 1 wäre.",
         "fr": "La loi des proportions multiples ne s'applique pas entre des composés de même formule simple (p. ex. C2H4 et C3H6 ; tous deux CH2), car le rapport vaudrait 1.",
         "ru": "Между соединениями с одинаковой простейшей формулой (например, C2H4 и C3H6 — у обоих CH2) кратное отношение не ищут, так как оно равно 1.",
-        "ar": "لا يُطبَّق قانون النسب المتعددة بين المركبات التي لها الصيغة البسيطة نفسها (مثل C2H4 وC3H6؛ وكلاهما CH2)، لأن النسبة ستكون 1.",
+        "ar": "لا يُطبَّق قانون النسب المتضاعفة بين المركبات التي لها الصيغة الأولية نفسها (مثل C2H4 وC3H6؛ وكلاهما CH2)، لأن النسبة ستكون 1.",
         "zh": "最简式相同的化合物之间(如 C2H4 和 C3H6，最简式均为 CH2)比值为 1，因此不讨论倍比关系。",
         "ku": "Di navbera pêkhateyên ku formula wan a sade yek e de (mînak C2H4 û C3H6; her du CH2) zagona rêjeyên pirjimar nayê sepandin, ji ber ku rêje dê 1 be."
       },
@@ -144,7 +144,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Zwischen C2H4 und C4H8 gilt das Gesetz der multiplen Proportionen.",
         "fr": "La loi des proportions multiples s’applique entre C2H4 et C4H8.",
         "ru": "Для C2H4 и C4H8 выполняется закон кратных отношений.",
-        "ar": "ينطبق قانون النسب المتعددة بين C2H4 وC4H8.",
+        "ar": "ينطبق قانون النسب المتضاعفة بين C2H4 وC4H8.",
         "zh": "C2H4 和 C4H8 之间符合倍比定律。",
         "ku": "Zagona rêjeyên pirjimar di navbera C2H4 û C4H8 de derbas dibe."
       },
@@ -167,7 +167,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "1 Mol Partikel enthält 6,02x10^23 Partikel (Avogadro-Zahl, NA).",
         "fr": "1 mole de particules contient 6,02x10^23 particules (nombre d'Avogadro, NA).",
         "ru": "1 моль частиц содержит 6,02x10^23 частиц (число Авогадро, NA).",
-        "ar": "1 مول من الجسيمات يحتوي على 6.02x10^23 جسيم (رقم أفوجادرو، NA).",
+        "ar": "1 mol من الجسيمات يحتوي على 6.02x10^23 جسيم (عدد أفوجادرو، NA).",
         "zh": "1 mol 微粒含有 6.02x10^23 个微粒(阿伏加德罗常数，NA)。",
         "ku": "Di 1 molê zêran de 6,02x10^23 pirtik hene (hejmara Avogadro, NA)."
       },
@@ -177,7 +177,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "1 Mol H2-Gas enthält 6,02x10^23 Atome.",
         "fr": "1 mole de gaz H2 contient 6,02x10^23 atomes.",
         "ru": "1 моль газа H2 содержит 6,02x10^23 атома.",
-        "ar": "يحتوي 1 مول من غاز H2 على 6.02×10^23 ذرة.",
+        "ar": "يحتوي 1 mol من غاز H2 على 6.02x10^23 ذرة.",
         "zh": "1 mol H2 含有 6.02x10^23 个原子。",
         "ku": "Di 1 mol gaza H2 de 6,02x10^23 atoman hene."
       },
@@ -187,7 +187,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die Falle verwechselt Molekülzahl und Atomzahl: 1 Mol H2 enthält 6,02x10^23 Moleküle. Da jedes Molekül 2 H-Atome hat, beträgt die Atomzahl 2 x 6,02x10^23 = 1,204x10^24.",
         "fr": "Le piège confond nombre de molécules et nombre d'atomes : 1 mole de H2 contient 6,02x10^23 molécules. Chaque molécule ayant 2 atomes H, le nombre d'atomes est 2 x 6,02x10^23 = 1,204x10^24.",
         "ru": "Ловушка путает число молекул и число атомов: 1 моль H2 содержит 6,02x10^23 молекул. Так как в каждой молекуле 2 атома H, число атомов равно 2 x 6,02x10^23 = 1,204x10^24.",
-        "ar": "الفخ يخلط بين عدد الجزيئات وعدد الذرات: 1 مول من H2 يحتوي على 6.02x10^23 جزيء. ولأن في كل جزيء ذرتي H فإن عدد الذرات 2 x 6.02x10^23 = 1.204x10^24.",
+        "ar": "الفخ يخلط بين عدد الجزيئات وعدد الذرات: 1 mol من H2 يحتوي على 6.02x10^23 جزيء. ولأن في كل جزيء ذرتي H فإن عدد الذرات 2 x 6.02x10^23 = 1.204x10^24.",
         "zh": "这一说法混淆了分子数和原子数：1 mol H2 含 6.02x10^23 个分子。每个分子含 2 个 H 原子，所以原子数为 2 x 6.02x10^23 = 1.204x10^24。",
         "ku": "Xefik hejmara molekulan û hejmara atoman tevlîhev dike: 1 mol H2 6,02x10^23 molekulan dihewîne. Ji ber ku di her molekulê de 2 atomên H hene, hejmara atoman 2 x 6,02x10^23 = 1,204x10^24 e."
       },
@@ -197,7 +197,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "1 Mol H2-Moleküle enthält 2 Mol H-Atome!",
         "fr": "1 mole de molécules H2 contient 2 moles d’atomes H !",
         "ru": "1 моль молекул H2 содержит 2 моль атомов H!",
-        "ar": "1 مول من جزيئات H2 يحتوي على 2 مول من ذرات H!",
+        "ar": "1 mol من جزيئات H2 يحتوي على 2 mol من ذرات H!",
         "zh": "1 mol H2 分子含有 2 mol H 原子！",
         "ku": "Di 1 molek molekulên H2 de 2 mol atomên H hene!"
       }
@@ -210,7 +210,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Unter Normbedingungen (0 °C und 1 atm) nimmt 1 Mol ideales Gas etwa 22,4 Liter ein.",
         "fr": "Dans les conditions normales (0 °C et 1 atm), 1 mole de gaz parfait occupe environ 22,4 litres.",
         "ru": "При нормальных условиях (0 °C и 1 атм) 1 моль идеального газа занимает примерно 22,4 л.",
-        "ar": "في الظروف القياسية (0 °C و1 atm) يشغل 1 مول من الغاز المثالي نحو 22.4 لترًا.",
+        "ar": "في الظروف القياسية (0 °C و1 atm) يشغل 1 mol من الغاز المثالي نحو 22.4 L.",
         "zh": "在标准状况(0 °C、1 atm)下，1 mol 理想气体的体积约为 22.4 L。",
         "ku": "Di şertên normal de (0 °C û 1 atm) 1 mol gaza îdeal nêzîkî 22,4 lître cih digire."
       },
@@ -220,7 +220,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Bei Raumbedingungen (25 °C, 1 atm) nimmt 1 Mol Gas ein Volumen von 22,4 L ein.",
         "fr": "Dans des conditions ambiantes (25 °C, 1 atm), 1 mole de gaz occupe un volume de 22,4 L.",
         "ru": "При комнатных условиях (25 °C, 1 атм) 1 моль газа занимает объём 22,4 л.",
-        "ar": "في ظروف الغرفة (25 درجة مئوية، 1 ضغط جوي)، يشغل 1 مول من الغاز حجمًا قدره 22.4 لترًا.",
+        "ar": "في ظروف الغرفة (25 °C، 1 atm)، يشغل 1 mol من الغاز حجمًا قدره 22.4 L.",
         "zh": "在常温常压(25 °C、1 atm)下，1 mol 气体的体积为 22.4 L。",
         "ku": "Di şert û mercên jûreyê de (25 °C, 1 atm), 1 mol gaz qebareya 22,4 L digire."
       },
@@ -230,7 +230,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Der Wert 22,4 L gilt nur für 0 °C und 1 atm (Normbedingungen). Bei 25 °C dehnt sich das Gas aus, sodass 1 Mol Gas etwa 24,5 L einnimmt.",
         "fr": "La valeur 22,4 L ne vaut que pour 0 °C et 1 atm (CNTP). À 25 °C le gaz se dilate, donc 1 mole de gaz occupe environ 24,5 L.",
         "ru": "Значение 22,4 л относится только к 0 °C и 1 атм (н. у.). При 25 °C газ расширяется, поэтому 1 моль газа занимает около 24,5 л.",
-        "ar": "القيمة 22.4 L صحيحة فقط عند 0 °C و1 atm (الظروف القياسية). وعند 25 °C يتمدد الغاز فيشغل 1 مول منه نحو 24.5 L.",
+        "ar": "القيمة 22.4 L صحيحة فقط عند 0 °C و1 atm (الظروف القياسية). وعند 25 °C يتمدد الغاز فيشغل 1 mol منه نحو 24.5 L.",
         "zh": "22.4 L 只适用于 0 °C、1 atm(标准状况)。25 °C 时气体膨胀，1 mol 气体约占 24.5 L。",
         "ku": "Nirxa 22,4 L tenê ji bo 0 °C û 1 atm (şertên normal) derbasdar e. Li 25 °C gaz fireh dibe, loma 1 mol gaz nêzîkî 24,5 L cih digire."
       },
@@ -286,7 +286,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die Molmasse (MA) ist die Masse von 1 Mol eines Stoffes in Gramm; ihr Zahlenwert ist gleich der Masse eines Teilchens dieses Stoffes in u.",
         "fr": "La masse molaire (MA) est la masse en grammes de 1 mole d'une substance ; sa valeur numérique est égale à la masse d'une particule de cette substance en uma.",
         "ru": "Молярная масса (MA) — масса 1 моль вещества в граммах; численно она равна массе одной частицы этого вещества в а. е. м.",
-        "ar": "الكتلة المولية (MA) هي كتلة 1 مول من المادة بالجرام؛ وهي تساوي عدديًا كتلة جسيم واحد من هذه المادة بوحدة الكتلة الذرية (amu).",
+        "ar": "الكتلة المولية (MA) هي كتلة 1 mol من المادة بالجرام؛ وهي تساوي عدديًا كتلة جسيم واحد من هذه المادة بوحدة الكتلة الذرية (amu).",
         "zh": "摩尔质量(MA)是 1 mol 物质以克为单位的质量；其数值等于该物质一个微粒以原子质量单位(u)表示的质量。",
         "ku": "Girseya molê (MA) girseya 1 mol maddeyê bi gramê ye; bi hejmarî, bi girseya keriyeke wê maddeyê ya bi akb re wekhev e."
       },
@@ -296,7 +296,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "1 CO2-Molekül wiegt 44 Gramm.",
         "fr": "1 molécule de CO2 pèse 44 grammes.",
         "ru": "Масса одной молекулы CO2 равна 44 г.",
-        "ar": "يزن جزيء ثاني أكسيد الكربون 44 جرامًا.",
+        "ar": "كتلة جزيء واحد من CO2 تساوي 44 g.",
         "zh": "1 个 CO2 分子的质量是 44 g。",
         "ku": "1 molekulek CO2 44 gram giran e."
       },
@@ -306,7 +306,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die Zahl 44 steht für ein einzelnes CO2-Molekül in u und für 1 Mol CO2 in Gramm. Ein einzelnes Molekül hat eine Masse von 44 / NA ≈ 7,3x10^-23 g.",
         "fr": "Le nombre 44 s'exprime en u pour une seule molécule de CO2 et en grammes pour 1 mole de CO2. Une seule molécule a une masse de 44 / NA ≈ 7,3x10^-23 g.",
         "ru": "Число 44 выражено в а. е. м. для одной молекулы CO2 и в граммах для 1 моль CO2. Масса одной молекулы равна 44 / NA ≈ 7,3x10^-23 г.",
-        "ar": "العدد 44 بوحدة u لجزيء CO2 واحد، وبالغرام لمول واحد من CO2. وكتلة الجزيء الواحد 44 / NA ≈ 7.3x10^-23 g.",
+        "ar": "العدد 44 بوحدة amu لجزيء CO2 واحد، وبالجرام لمول واحد من CO2. وكتلة الجزيء الواحد 44 / NA ≈ 7.3x10^-23 g.",
         "zh": "44 对单个 CO2 分子而言单位是 u，对 1 mol CO2 而言单位才是 g。单个分子的质量约为 44 / NA ≈ 7.3x10^-23 g。",
         "ku": "Hejmara 44 ji bo molekuleke CO2 bi yekeya akb, ji bo 1 mol CO2 bi gram e. Girseya molekuleke tenê 44 / NA ≈ 7,3x10^-23 g e."
       },
@@ -316,7 +316,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "1 CO2-Molekül hat 44 u; 1 Mol CO2 wiegt 44 Gramm.",
         "fr": "1 molécule de CO2 pèse 44 uma ; 1 mole de CO2 pèse 44 grammes.",
         "ru": "Одна молекула CO2 имеет массу 44 а. е. м.; 1 моль CO2 — 44 г.",
-        "ar": "جزيء واحد من CO2 كتلته 44 وحدة الكتلة الذرية؛ و1 مول من CO2 كتلته 44 غرامًا.",
+        "ar": "جزيء واحد من CO2 كتلته 44 amu، و1 mol من CO2 كتلته 44 g.",
         "zh": "1 个 CO2 分子为 44 u；1 mol CO2 为 44 g。",
         "ku": "1 molekula CO2 44 akb ye; 1 mol CO2 44 gram e."
       }
@@ -329,7 +329,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Avogadro-Hypothese: Bei gleicher Temperatur und gleichem Druck enthalten alle gleichen Volumina idealer Gase die gleiche Anzahl an Molekülen.",
         "fr": "Hypothèse d'Avogadro : Sous la même température et pression, tous les volumes égaux de gaz parfaits contiennent le même nombre de molécules.",
         "ru": "Гипотеза Авогадро: в равных объёмах любых идеальных газов при одинаковых температуре и давлении содержится одинаковое число молекул.",
-        "ar": "فرضية أفوجادرو: تحت نفس درجة الحرارة والضغط، تحتوي جميع الحجوم المتساوية من الغازات المثالية على نفس العدد من الجزيئات.",
+        "ar": "فرضية أفوجادرو: عند درجة الحرارة والضغط نفسيهما تحتوي الحجوم المتساوية من جميع الغازات المثالية على العدد نفسه من الجزيئات.",
         "zh": "阿伏加德罗假说：在相同的温度和压强下，相同体积的任何理想气体都含有相同数目的分子。",
         "ku": "Hîpoteza Avogadro: Di bin heman germahî û zextê de, di hemî cildên wekhev ên gazên îdeal de heman hejmar molekul hene."
       },
@@ -339,7 +339,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die Massen gleicher Gasvolumina sind immer gleich.",
         "fr": "Les masses de volumes égaux de gaz sont toujours égales.",
         "ru": "Массы равных объёмов газов тоже всегда равны.",
-        "ar": "كتل الأحجام المتساوية من الغازات متساوية دائمًا.",
+        "ar": "كتل الحجوم المتساوية من الغازات متساوية دائمًا.",
         "zh": "等体积气体的质量也总是相等。",
         "ku": "Girseyên cildên yeksan ên gazan her dem wek hev in."
       },
@@ -362,7 +362,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die relative Atommasse wurde auf der Grundlage von 1/12 der Masse des Kohlenstoff-12-Isotops (12C) berechnet.",
         "fr": "La masse atomique relative a été calculée sur la base de 1/12 de la masse de l’isotope du carbone 12 (12C).",
         "ru": "Относительная атомная масса определяется по отношению к 1/12 массы атома изотопа углерода-12 (12C).",
-        "ar": "تم حساب الكتلة الذرية النسبية على أساس 1/12 من كتلة نظير الكربون 12 (12C).",
+        "ar": "تُحسب الكتلة الذرية النسبية على أساس 1/12 من كتلة نظير الكربون-12 (12C).",
         "zh": "相对原子质量是以碳-12(12C)原子质量的 1/12 为标准计算的。",
         "ku": "Girseya atomê ya têkildar li ser bingeha 1/12 ya girseya îzotopa karbon-12 (12C) hate hesibandin."
       },
@@ -395,7 +395,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Das Gesetz der multiplen Proportionen wird nicht angewendet auf: Verbindungen aus unterschiedlichen Elementen (CO und NO), Verbindungen mit drei Elementarten (H2SO4 und H2SO3) und Verbindungen mit derselben einfachsten Formel.",
         "fr": "La loi des proportions multiples ne s'applique pas : aux composés formés d'éléments différents (CO et NO), aux composés contenant trois sortes d'éléments (H2SO4 et H2SO3) et aux composés de même formule simple.",
         "ru": "Кратное отношение не ищут для соединений из разных элементов (CO и NO), для соединений из трёх элементов (H2SO4 и H2SO3) и для соединений с одинаковой простейшей формулой.",
-        "ar": "لا يُطبَّق قانون النسب المتعددة على: المركبات المكوّنة من عناصر مختلفة (CO وNO)، والمركبات التي تحتوي على ثلاثة أنواع من العناصر (H2SO4 وH2SO3)، والمركبات التي لها الصيغة البسيطة نفسها.",
+        "ar": "لا يُطبَّق قانون النسب المتضاعفة على: المركبات المكوّنة من عناصر مختلفة (CO وNO)، والمركبات التي تحتوي على ثلاثة أنواع من العناصر (H2SO4 وH2SO3)، والمركبات التي لها الصيغة الأولية نفسها.",
         "zh": "不讨论倍比关系的情况：由不同元素组成的化合物(CO 和 NO)、含有三种元素的化合物(H2SO4 和 H2SO3)以及最简式相同的化合物。",
         "ku": "Rewşên ku zagona rêjeyên pirjimar tê de nayê sepandin: pêkhateyên ji hêmanên cuda (CO û NO), pêkhateyên ku sê cure hêman dihewînin (H2SO4 û H2SO3) û pêkhateyên ku formula wan a sade yek e."
       },
@@ -405,7 +405,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Zwischen FeO und Fe2O3 gilt das Gesetz der multiplen Proportionen nicht.",
         "fr": "La loi des proportions multiples ne s'applique pas entre FeO et Fe2O3.",
         "ru": "Между FeO и Fe2O3 кратного отношения нет.",
-        "ar": "لا ينطبق قانون النسب المتعددة بين FeO وFe2O3.",
+        "ar": "لا ينطبق قانون النسب المتضاعفة بين FeO وFe2O3.",
         "zh": "FeO 和 Fe2O3 之间不存在倍比关系。",
         "ku": "Di navbera FeO û Fe2O3 de zagona rêjeyên pirjimar derbas nabe."
       },
@@ -428,7 +428,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "1 Atom-Gramm = 1 Mol Atome, 1 Molekül-Gramm = 1 Mol Moleküle, 1 Formel-Gramm = 1 Mol ionische Verbindung.",
         "fr": "1 atome-gramme = 1 mole d'atomes, 1 molécule-gramme = 1 mole de molécules, 1 formule-gramme = 1 mole de composé ionique.",
         "ru": "1 грамм-атом = 1 моль атомов, 1 грамм-молекула = 1 моль молекул, 1 грамм-формула = 1 моль ионного соединения.",
-        "ar": "1 ذرة جرام = 1 مول من الذرات، 1 جرام جزيء = 1 مول من الجزيئات، 1 جرام صيغة = 1 مول من المركب الأيوني.",
+        "ar": "1 ذرة-جرام = 1 mol من الذرات، و1 جزيء-جرام = 1 mol من الجزيئات، و1 صيغة-جرام = 1 mol من المركب الأيوني.",
         "zh": "1 克原子 = 1 mol 原子，1 克分子 = 1 mol 分子，1 克式量 = 1 mol 离子化合物。",
         "ku": "1 atom-gram = 1 mol atom, 1 molekul-gram = 1 molek molekul, 1 formula-gram = 1 mol pêkhateya îyonî."
       },
@@ -438,7 +438,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Der Ausdruck 1 Molekül-Gramm H2O bedeutet 1 Wassermolekül.",
         "fr": "L’expression 1 molécule-gramme H2O indique 1 molécule d’eau.",
         "ru": "Выражение «1 грамм-молекула H2O» означает одну молекулу воды.",
-        "ar": "يشير التعبير 1 جزيء جرام H2O إلى جزيء ماء واحد.",
+        "ar": "يشير التعبير 1 جزيء-جرام من H2O إلى جزيء ماء واحد.",
         "zh": "“1 克分子 H2O”表示 1 个水分子。",
         "ku": "Gotina 1 molekul-gram H2O 1 molekula avê nîşan dide."
       },
@@ -448,7 +448,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Mit „Gramm“ gebildete Einheiten bedeuten 1 Mol: 1 Grammmolekül H2O sind 6,02x10^23 Wassermoleküle, also 18 g Wasser. Ein einzelnes Wassermolekül hat nur eine Masse von 18 u.",
         "fr": "Les unités formées avec « gramme » signifient 1 mole : 1 molécule-gramme de H2O correspond à 6,02x10^23 molécules d'eau, soit 18 g d'eau. Une seule molécule d'eau n'a qu'une masse de 18 u.",
         "ru": "Единицы со словом «грамм» означают 1 моль: 1 грамм-молекула H2O — это 6,02x10^23 молекул воды, то есть 18 г воды. Одна молекула воды имеет массу всего 18 а. е. м.",
-        "ar": "الوحدات المكوَّنة مع كلمة \"غرام\" تعني 1 مول: 1 جزيء-غرام من H2O هو 6.02x10^23 جزيء ماء أي 18 g من الماء. أما جزيء الماء الواحد فكتلته 18 u فقط.",
+        "ar": "الوحدات المكوَّنة مع كلمة \"جرام\" تعني 1 mol: 1 جزيء-جرام من H2O هو 6.02x10^23 جزيء ماء أي 18 g من الماء. أما جزيء الماء الواحد فكتلته 18 amu فقط.",
         "zh": "带“克”的单位表示 1 mol：1 克分子 H2O 是 6.02x10^23 个水分子，即 18 g 水。单个水分子的质量只有 18 u。",
         "ku": "Yekeyên bi \"gram\" tên avakirin wateya 1 molê didin: 1 molekul-gram H2O 6,02x10^23 molekulên avê ango 18 g av e. Girseya molekuleke avê ya tenê tenê 18 akb e."
       }
@@ -461,7 +461,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Echte Atommasse: Sie ist die Masse eines einzelnen Atoms in Gramm und wird mit der Formel MA/NA ermittelt.",
         "fr": "Masse atomique réelle : C'est la masse d'un seul atome en grammes et se trouve avec la formule MA/NA.",
         "ru": "Истинная масса атома — масса одного атома в граммах; её находят по формуле MA / NA.",
-        "ar": "الكتلة الذرية الحقيقية: هي كتلة الذرة الواحدة بالجرام ويوجد لها الصيغة MA/NA.",
+        "ar": "الكتلة الذرية الحقيقية: كتلة الذرة الواحدة بالجرام، وتُحسب بالعلاقة MA / NA.",
         "zh": "原子的实际质量是单个原子以克为单位的质量，可用 MA / NA 计算。",
         "ku": "Girseya atomê ya rastîn: Ew girseya yek atomê bi gram e û bi formula MA / NA tê dîtin."
       },
@@ -471,7 +471,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die tatsächliche Masse eines Atoms in Gramm ist gleich der Molmasse des betreffenden Elements.",
         "fr": "La masse réelle d'un atome en grammes est égale à la masse molaire de l'élément.",
         "ru": "Истинная масса одного атома в граммах равна молярной массе этого элемента.",
-        "ar": "الكتلة الفعلية لذرة واحدة بالجرام تساوي الكتلة المولية لذلك العنصر.",
+        "ar": "الكتلة الحقيقية لذرة واحدة بالجرام تساوي الكتلة المولية لذلك العنصر.",
         "zh": "一个原子以克为单位的实际质量等于该元素的摩尔质量。",
         "ku": "Girseya rastîn a atomekê bi gramê bi girseya molê ya wê hêmanê re wekhev e."
       },
@@ -494,7 +494,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Unter Normbedingungen nimmt 0,5 mol CH4-Gas 11,2 Liter ein und enthält 2,5 mol Atome (0,5 mol C + 2,0 mol H).",
         "fr": "Dans les conditions normales, 0,5 mol de gaz CH4 occupe 11,2 litres et contient 2,5 mol d'atomes (0,5 mol de C + 2,0 mol de H).",
         "ru": "При н. у. 0,5 моль газа CH4 занимает объём 11,2 л и содержит 2,5 моль атомов (0,5 моль C + 2,0 моль H).",
-        "ar": "في الظروف القياسية يشغل 0.5 مول من غاز CH4 حجمًا قدره 11.2 لترًا ويحتوي على 2.5 مول من الذرات (0.5 مول C + 2.0 مول H).",
+        "ar": "في الظروف القياسية يشغل 0.5 mol من غاز CH4 حجمًا قدره 11.2 L ويحتوي على 2.5 mol من الذرات (0.5 mol C + 2.0 mol H).",
         "zh": "在标准状况下，0.5 mol CH4 气体的体积为 11.2 L，含有 2.5 mol 原子(0.5 mol C + 2.0 mol H)。",
         "ku": "Di şertên normal de 0,5 mol gaza CH4 11,2 lître qebare digire û 2,5 mol atom dihewîne (0,5 mol C + 2,0 mol H)."
       },
@@ -504,7 +504,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Unter Normbedingungen nimmt 0,5 mol CH4-Gas ein Volumen von 22,4 L ein.",
         "fr": "Dans les conditions normales, 0,5 mol de gaz CH4 occupe un volume de 22,4 L.",
         "ru": "При н. у. 0,5 моль газа CH4 занимает объём 22,4 л.",
-        "ar": "في الظروف القياسية يشغل 0.5 مول من غاز CH4 حجمًا قدره 22.4 لترًا.",
+        "ar": "في الظروف القياسية يشغل 0.5 mol من غاز CH4 حجمًا قدره 22.4 L.",
         "zh": "在标准状况下，0.5 mol CH4 气体的体积为 22.4 L。",
         "ku": "Di şertên normal de 0,5 mol gaza CH4 22,4 L qebare digire."
       },
@@ -514,7 +514,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Bei Normbedingungen sind 22,4 L das Volumen von 1 Mol Gas; da das Gasvolumen direkt proportional zur Stoffmenge ist, nehmen 0,5 Mol CH4 die Hälfte ein, also 11,2 L.",
         "fr": "Aux CNTP, 22,4 L est le volume de 1 mole de gaz ; le volume étant proportionnel à la quantité de matière, 0,5 mole de CH4 en occupe la moitié, soit 11,2 L.",
         "ru": "При н. у. 22,4 л — это объём 1 моль газа; так как объём газа прямо пропорционален количеству вещества, 0,5 моль CH4 занимает половину, то есть 11,2 л.",
-        "ar": "في الظروف القياسية 22.4 L هو حجم 1 مول من الغاز، ولأن حجم الغاز يتناسب طرديًا مع عدد المولات فإن 0.5 مول من CH4 يشغل نصفه أي 11.2 L.",
+        "ar": "في الظروف القياسية 22.4 L هو حجم 1 mol من الغاز، ولأن حجم الغاز يتناسب طرديًا مع عدد المولات فإن 0.5 mol من CH4 يشغل نصفه أي 11.2 L.",
         "zh": "标准状况下 22.4 L 是 1 mol 气体的体积；气体体积与物质的量成正比，所以 0.5 mol CH4 占其一半，即 11.2 L。",
         "ku": "Di şertên normal de 22,4 L qebara 1 mol gazê ye; ji ber ku qebara gazê bi hejmara molan re rasterast rêjeyî ye, 0,5 mol CH4 nîvê wê, ango 11,2 L cih digire."
       }
@@ -527,7 +527,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die Regel, dass 1 Mol eines Stoffes unter Normbedingungen 22,4 L einnimmt, gilt nur für Gase; für Feststoffe und Flüssigkeiten gilt sie nicht.",
         "fr": "La règle selon laquelle 1 mole d'une substance occupe 22,4 L dans les conditions normales ne vaut que pour les gaz ; elle ne s'applique pas aux solides ni aux liquides.",
         "ru": "Правило, по которому 1 моль вещества при н. у. занимает 22,4 л, справедливо только для газов; к твёрдым и жидким веществам оно неприменимо.",
-        "ar": "قاعدة أن 1 مول من المادة يشغل 22.4 لترًا في الظروف القياسية تنطبق على الغازات فقط؛ ولا تنطبق على المواد الصلبة والسائلة.",
+        "ar": "قاعدة أن 1 mol من المادة يشغل 22.4 L في الظروف القياسية تنطبق على الغازات فقط؛ ولا تنطبق على المواد الصلبة والسائلة.",
         "zh": "标准状况下 1 mol 物质占 22.4 L 体积的规律只适用于气体，不适用于固体和液体。",
         "ku": "Qaîdeya ku 1 mol madde di şertên normal de 22,4 L qebare digire tenê ji bo gazan derbas dibe; ji bo maddeyên hişk û şil derbas nabe."
       },
@@ -537,7 +537,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Bei 0 °C nimmt 1 Mol flüssiges Wasser 22,4 Liter Volumen ein.",
         "fr": "À 0 °C, 1 mole d’eau liquide occupe 22,4 litres de volume.",
         "ru": "При 0 °C 1 моль жидкой воды занимает объём 22,4 л.",
-        "ar": "عند 0 درجة مئوية، يشغل 1 مول من الماء السائل 22.4 لترًا من الحجم.",
+        "ar": "عند 0 °C يشغل 1 mol من الماء السائل حجمًا قدره 22.4 L.",
         "zh": "0 °C 时，1 mol 液态水的体积为 22.4 L。",
         "ku": "Di 0 °C de, 1 mol ava şil 22,4 lître qebar digire."
       },
@@ -547,7 +547,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die 22,4-L-Regel gilt nur für Gase. Da flüssiges Wasser eine Dichte von etwa 1 g/mL hat, nimmt 1 Mol (18 g) Wasser nur etwa 18 mL ein.",
         "fr": "La règle des 22,4 L ne vaut que pour les gaz. L'eau liquide ayant une masse volumique d'environ 1 g/mL, 1 mole (18 g) d'eau n'occupe qu'environ 18 mL.",
         "ru": "Правило 22,4 л относится только к газам. Так как плотность жидкой воды около 1 г/мл, 1 моль (18 г) воды занимает всего около 18 мл.",
-        "ar": "قاعدة 22.4 L خاصة بالغازات فقط. ولأن كثافة الماء السائل نحو 1 g/mL فإن 1 مول (18 g) من الماء يشغل نحو 18 mL فقط.",
+        "ar": "قاعدة 22.4 L خاصة بالغازات فقط. ولأن كثافة الماء السائل نحو 1 g/mL فإن 1 mol (18 g) من الماء يشغل نحو 18 mL فقط.",
         "zh": "22.4 L 的规律只适用于气体。液态水的密度约为 1 g/mL，所以 1 mol(18 g)水只占约 18 mL。",
         "ku": "Qaîdeya 22,4 L tenê ji bo gazan derbasdar e. Ji ber ku çirbûna ava şile nêzîkî 1 g/mL ye, 1 mol (18 g) av tenê nêzîkî 18 mL cih digire."
       }
@@ -570,7 +570,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die Massen der an einer chemischen Reaktion beteiligten Stoffe müssen direkt proportional zu ihren Koeffizienten sein.",
         "fr": "Les masses de substances participant à une réaction chimique doivent être directement proportionnelles à leurs coefficients.",
         "ru": "Массы веществ, вступающих в химическую реакцию, обязательно прямо пропорциональны их коэффициентам.",
-        "ar": "يجب أن تكون كتل المواد المشاركة في التفاعل الكيميائي متناسبة طرديا مع معاملاتها.",
+        "ar": "يجب أن تتناسب كتل المواد المتفاعلة في التفاعل الكيميائي طرديًا مع معاملاتها.",
         "zh": "参加反应的各物质的质量必须与其化学计量数成正比。",
         "ku": "Girseya maddeyên ku beşdarî reaksiyonên kîmyewî dibin divê rasterast bi rêjeya wan re têkildar bin."
       },
@@ -605,7 +605,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Multiple Proportionen",
         "fr": "Proportions multiples",
         "ru": "Закон кратных отношений",
-        "ar": "النسب المتعددة",
+        "ar": "النسب المتضاعفة",
         "zh": "倍比定律",
         "ku": "Rêjeyên Pirjimar"
       },
@@ -615,7 +615,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Konstante Proportionen: Das Massenverhältnis der Elemente in einer bestimmten Verbindung ist stets gleich (Proust). Dagegen stehen bei verschiedenen Verbindungen derselben zwei Elemente die Massen des einen Elements, die sich mit einer festen Masse des anderen verbinden, im Verhältnis kleiner ganzer Zahlen (Dalton).",
         "fr": "Proportions définies : le rapport des masses des éléments d'un composé donné est toujours le même (Proust). En revanche, dans des composés différents des deux mêmes éléments, les masses de l'un qui se combinent à une masse fixe de l'autre sont dans un rapport de petits nombres entiers (Dalton).",
         "ru": "Закон постоянства состава утверждает, что массовое соотношение элементов в данном соединении всегда одно и то же; закон кратных отношений утверждает, что в разных соединениях одних и тех же двух элементов массы одного элемента, приходящиеся на одну и ту же массу другого, относятся как небольшие целые числа.",
-        "ar": "النسب الثابتة: لا تتغير أبدًا نسبة كتل العناصر في المركب الواحد (بروست)؛ أما في المركبات المختلفة للعنصرين نفسيهما فتكون كتل أحد العنصرين المتحدة مع كتلة محددة من الآخر بنسبة أعداد صحيحة بسيطة (دالتون).",
+        "ar": "النسب الثابتة: نسبة كتل العناصر في المركب الواحد ثابتة لا تتغير (بروست)؛ أما في النسب المتضاعفة فتكون كتل أحد العنصرين المتحدة مع كتلة ثابتة من الآخر في المركبات المختلفة للعنصرين نفسيهما بنسبة أعداد صحيحة بسيطة (دالتون).",
         "zh": "定比定律指出，同一化合物中各元素的质量比恒定不变；而倍比定律指出，在同样两种元素形成的不同化合物中，与一定质量的一种元素相化合的另一种元素的质量之间成简单整数比。",
         "ku": "Rêjeyên sabit tê wê wateyê ku rêjeya girseyên hêmanan di pêkhateyekê de qet naguhere (Proust); lê di pêkhateyên cuda yên heman du hêmanan de, girseyên hêmanekê yên ku bi girseyeke diyarkirî ya hêmana din re yek dibin li gorî hejmarên tam ên sade ne (Dalton)."
       }
@@ -638,7 +638,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "1 Gramm",
         "fr": "1 gramme",
         "ru": "1 грамм",
-        "ar": "1 جرام",
+        "ar": "1 g",
         "zh": "1 克",
         "ku": "1 gram"
       },
@@ -648,7 +648,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "1 u ist als 1/12 der Masse eines 12C-Atoms definiert und entspricht 1 / NA Gramm (etwa 1,66x10^-24 g); 1 Gramm ist das 6,02x10^23-Fache davon.",
         "fr": "1 uma est définie comme 1/12 de la masse d'un atome de 12C et vaut 1 / NA gramme (environ 1,66x10^-24 g) ; 1 gramme en vaut 6,02x10^23 fois plus.",
         "ru": "Атомная единица массы (1 а. е. м.) определяется как 1/12 массы атома 12C и составляет 1 / NA г (около 1,66x10^-24 г); 1 грамм больше в 6,02x10^23 раз.",
-        "ar": "1 وحدة الكتلة الذرية = 1/12 من كتلة ذرة 12C = 1 / NA غرام (نحو 1.66x10^-24 g)؛ أما 1 غرام فيساوي 6.02x10^23 ضعف ذلك.",
+        "ar": "1 وحدة الكتلة الذرية = 1/12 من كتلة ذرة 12C = 1 / NA g (نحو 1.66x10^-24 g)؛ أما 1 g فيساوي 6.02x10^23 ضعف ذلك.",
         "zh": "1 原子质量单位定义为一个 12C 原子质量的 1/12，等于 1/NA 克(约 1.66x10^-24 g)；而 1 克是它的 6.02x10^23 倍。",
         "ku": "1 akb wekî 1/12 ya girseya atomeke 12C tê pênasekirin û bi 1 / NA gramê (nêzîkî 1,66x10^-24 g) re wekhev e; 1 gram 6,02x10^23 qatê wê ye."
       }
@@ -681,7 +681,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die Erhaltung der Masse besagt, dass die Gesamtmasse der Edukte gleich der Gesamtmasse der Produkte ist; die Avogadro-Hypothese besagt, dass gleiche Gasvolumina bei gleicher Temperatur und gleichem Druck gleich viele Teilchen enthalten.",
         "fr": "La conservation de la masse énonce que la masse totale des réactifs est égale à la masse totale des produits ; l'hypothèse d'Avogadro énonce que des volumes égaux de gaz, à même température et même pression, contiennent le même nombre de particules.",
         "ru": "Закон сохранения массы (Лавуазье) утверждает, что общая масса реагентов равна общей массе продуктов; гипотеза Авогадро утверждает, что равные объёмы газов при одинаковых температуре и давлении содержат одинаковое число частиц.",
-        "ar": "ينص حفظ الكتلة على أن مجموع كتل المواد المتفاعلة يساوي مجموع كتل النواتج؛ وتنص فرضية أفوجادرو على أن الحجوم المتساوية من الغازات عند درجة الحرارة والضغط نفسيهما تحتوي على العدد نفسه من الجسيمات.",
+        "ar": "ينص حفظ الكتلة على أن مجموع كتل المواد المتفاعلة يساوي مجموع كتل النواتج؛ ووفق فرضية أفوجادرو تحتوي الحجوم المتساوية من الغازات عند درجة الحرارة والضغط نفسيهما على العدد نفسه من الجسيمات.",
         "zh": "质量守恒定律指出反应物的总质量等于生成物的总质量；而阿伏加德罗假说指出同温同压下，相同体积的气体含有相同数目的微粒。",
         "ku": "Parastina girseyê dibêje ku girseya giştî ya reaktantan bi girseya giştî ya hilberan re wekhev e; hîpoteza Avogadro dibêje ku di heman germahî û zextê de qebareyên wekhev ên gazan heman hejmara perçeyan dihewînin."
       }
@@ -694,7 +694,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Einfache (empirische) Formel",
         "fr": "Formule simple (empirique)",
         "ru": "Простейшая формула",
-        "ar": "الصيغة البسيطة (الأولية)",
+        "ar": "الصيغة الأولية (البسيطة)",
         "zh": "最简式（实验式）",
         "ku": "Formula sade"
       },
@@ -714,7 +714,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die einfache Formel gibt das kleinste ganzzahlige Atomzahlverhältnis in einer Verbindung an; die Molekülformel gibt die tatsächliche Anzahl der Atome in einem Molekül an (z. B. ist die einfache Formel von C2H4 CH2).",
         "fr": "La formule simple indique le plus petit rapport entier des atomes dans un composé ; la formule moléculaire indique le nombre réel d'atomes dans une molécule (par ex. la formule simple de C2H4 est CH2).",
         "ru": "Простейшая формула показывает наименьшее целочисленное отношение атомов в соединении; молекулярная формула показывает истинное число атомов в одной молекуле (например, этилену C2H4 соответствует простейшая запись CH2).",
-        "ar": "تبيّن الصيغة البسيطة أصغر نسبة عددية صحيحة بين الذرات في المركب؛ وتبيّن الصيغة الجزيئية العدد الفعلي للذرات في الجزيء الواحد (مثلًا الصيغة البسيطة لـ C2H4 هي CH2).",
+        "ar": "في الصيغة الأولية تظهر أصغر نسبة عددية صحيحة بين الذرات في المركب؛ أما في الصيغة الجزيئية فيظهر العدد الفعلي للذرات في الجزيء الواحد (فمثلًا CH2 هي الصيغة الأولية لـ C2H4).",
         "zh": "最简式表示化合物中各原子的最简整数比(如 C2H4 为 CH2)；而分子式表示一个分子中各原子的实际数目。",
         "ku": "Formula sade rêjeya herî biçûk a bi hejmarên tam a atoman di pêkhateyê de nîşan dide; formula molekulî hejmara rastîn a atoman di molekulekê de nîşan dide (mînak formula sade ya C2H4 CH2 ye)."
       }
@@ -747,7 +747,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die Avogadro-Zahl ist die Anzahl der Teilchen in 1 Mol (6,02x10^23); die Molmasse ist die Masse von 1 Mol Teilchen in Gramm.",
         "fr": "Le nombre d'Avogadro est le nombre de particules dans 1 mole (6,02x10^23) ; la masse molaire est la masse en grammes de 1 mole de particules.",
         "ru": "Число Авогадро (NA) — число частиц в 1 моль (6,02x10^23); молярная масса (MA) — масса 1 моль частиц в граммах.",
-        "ar": "عدد أفوجادرو هو عدد الجسيمات في 1 مول (6.02x10^23)؛ والكتلة المولية هي كتلة 1 مول من الجسيمات بالجرام.",
+        "ar": "عدد أفوجادرو هو عدد الجسيمات في 1 mol (6.02x10^23)؛ أما الكتلة المولية فكتلة 1 mol من الجسيمات بالجرام.",
         "zh": "阿伏加德罗常数是 1 mol 物质所含的微粒数(6.02x10^23)；而摩尔质量是 1 mol 微粒以克为单位的质量。",
         "ku": "Hejmara Avogadro hejmara keriyên di 1 molê de ye (6,02x10^23); girseya molê girseya 1 mol keriyan bi gramê ye."
       }
@@ -780,7 +780,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Bei Normbedingungen (0 °C und 1 atm) nimmt 1 Mol Gas etwa 22,4 L ein; bei Raumbedingungen (25 °C und 1 atm) sind es etwa 24,5 L.",
         "fr": "Dans les conditions normales (0 °C et 1 atm), 1 mole de gaz occupe environ 22,4 L ; dans les conditions ambiantes (25 °C et 1 atm), elle occupe environ 24,5 L.",
         "ru": "Нормальные условия (н. у.) — 0 °C и 1 атм, при них 1 моль газа занимает около 22,4 л; комнатные условия — 25 °C и 1 атм, при них 1 моль газа занимает около 24,5 л.",
-        "ar": "الظروف القياسية: 0 °C و1 atm، ويشغل فيها 1 مول من الغاز نحو 22.4 L؛ ظروف الغرفة: 25 °C و1 atm، ويشغل فيها 1 مول من الغاز نحو 24.5 L.",
+        "ar": "الظروف القياسية: 0 °C و1 atm، ويشغل فيها 1 mol من الغاز نحو 22.4 L؛ ظروف الغرفة: 25 °C و1 atm، ويشغل فيها 1 mol من الغاز نحو 24.5 L.",
         "zh": "标准状况为 0 °C、1 atm，1 mol 气体约占 22.4 L；而常温常压为 25 °C、1 atm，1 mol 气体约占 24.5 L。",
         "ku": "Şertên normal 0 °C û 1 atm in, li wir 1 mol gaz nêzîkî 22,4 L cih digire; şertên odeyê 25 °C û 1 atm in, li wir 1 mol gaz nêzîkî 24,5 L cih digire."
       }
@@ -803,7 +803,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Tatsächliche Atommasse",
         "fr": "Masse atomique réelle",
         "ru": "Истинная масса атома",
-        "ar": "الكتلة الذرية الفعلية",
+        "ar": "الكتلة الذرية الحقيقية",
         "zh": "原子的实际质量",
         "ku": "Girseya Atomî ya Rastîn"
       },
@@ -813,7 +813,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die relative Atommasse ist ein einheitenloses Verhältnis bezogen auf das Isotop 12C; die tatsächliche Atommasse ist die Masse eines einzelnen Atoms in Gramm (MA / NA).",
         "fr": "La masse atomique relative est un rapport sans unité défini par rapport à l'isotope 12C ; la masse atomique réelle est la masse d'un seul atome en grammes (MA / NA).",
         "ru": "Относительная атомная масса — безразмерная величина, определяемая относительно изотопа 12C; истинная масса атома — масса одного атома в граммах (MA / NA).",
-        "ar": "الكتلة الذرية النسبية نسبة بلا وحدة تُحدَّد بالنسبة إلى النظير 12C؛ أما الكتلة الذرية الفعلية فهي كتلة ذرة واحدة بالجرام (MA / NA).",
+        "ar": "الكتلة الذرية النسبية نسبة بلا وحدة تُحدَّد بالنسبة إلى النظير 12C؛ أما الكتلة الذرية الحقيقية فكتلة ذرة واحدة بالجرام (MA / NA).",
         "zh": "相对原子质量是以 12C 为标准的、没有单位的比值；而原子的实际质量是一个原子以克为单位的质量(MA / NA)。",
         "ku": "Girseya atomî ya nisbî rêjeyeke bê yekîne ye ku li gorî îzotopa 12C tê diyarkirin; girseya atomî ya rastîn girseya atomekê bi gramê ye (MA / NA)."
       }
@@ -846,7 +846,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Atom-Gramm bedeutet 1 Mol Atome; Molekül-Gramm bedeutet 1 Mol kovalente Moleküle.",
         "fr": "Atome-gramme signifie 1 mole d'atomes ; molécule-gramme signifie 1 mole de molécules covalentes.",
         "ru": "Грамм-атом означает 1 моль атомов; грамм-молекула означает 1 моль ковалентных молекул.",
-        "ar": "ذرة-جرام يعني 1 مول من الذرات؛ وجزيء-جرام يعني 1 مول من الجزيئات التساهمية.",
+        "ar": "ذرة-جرام يعني 1 mol من الذرات؛ وجزيء-جرام يعني 1 mol من الجزيئات التساهمية.",
         "zh": "克原子是指 1 mol 原子；而克分子是指 1 mol 共价分子。",
         "ku": "Atom-gram tê wateya 1 mol atoman; molekul-gram tê wateya 1 mol molekulên kovalent."
       }
@@ -916,7 +916,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Bestimmung der einfachen Formel aus der Massenzusammensetzung",
         "fr": "Détermination de la formule simple à partir de la composition massique",
         "ru": "Нахождение простейшей формулы по массовому составу",
-        "ar": "إيجاد الصيغة البسيطة من التركيب الكتلي",
+        "ar": "إيجاد الصيغة الأولية من التركيب الكتلي",
         "zh": "由质量组成求最简式",
         "ku": "Dîtina formula sade ji pêkhatina girseyî"
       },
@@ -947,7 +947,7 @@ export const unit06: ChemistryUnitSeedData = {
           "de": "Die Stoffmengen werden durch die kleinste Stoffmenge geteilt",
           "fr": "Les nombres de moles sont divisés par le plus petit d’entre eux",
           "ru": "Полученные количества вещества делят на наименьшее из них",
-          "ar": "تُقسم أعداد المولات على أصغر عدد مولات",
+          "ar": "تُقسم أعداد المولات على أصغرها لإيجاد النسبة بينها",
           "zh": "用各物质的量除以其中最小的值",
           "ku": "Hejmarên molan li hejmara molan a herî biçûk tên parvekirin"
         },
@@ -957,7 +957,7 @@ export const unit06: ChemistryUnitSeedData = {
           "de": "Die Verhältnisse werden in kleinste ganze Zahlen umgewandelt und die einfache Formel wird aufgestellt",
           "fr": "Les rapports sont convertis en plus petits nombres entiers et la formule simple est écrite",
           "ru": "Отношения приводят к наименьшим целым числам и записывают простейшую формулу",
-          "ar": "تُحوَّل النسب إلى أصغر أعداد صحيحة وتُكتب الصيغة البسيطة",
+          "ar": "تُحوَّل النسب إلى أصغر أعداد صحيحة وتُكتب الصيغة الأولية",
           "zh": "将比值化为最简整数比，写出最简式",
           "ku": "Rêjeyan dikin hejmarên tam ên herî biçûk û formula sade tê nivîsandin"
         }
@@ -1026,7 +1026,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Prüfung auf multiple Proportionen",
         "fr": "Vérification des proportions multiples",
         "ru": "Проверка закона кратных отношений",
-        "ar": "التحقق من النسب المتعددة",
+        "ar": "التحقق من النسب المتضاعفة",
         "zh": "倍比关系的检验",
         "ku": "Kontrolkirina Rêjeyên Pirjimar"
       },
@@ -1083,7 +1083,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Wie viel Gramm C2H4-Gas nehmen unter Normbedingungen (0 °C, 1 atm) ein Volumen von 5,6 Litern ein? (C: 12, H: 1)",
         "fr": "Quelle est la masse, en grammes, de gaz C2H4 occupant 5,6 litres dans les conditions normales (0 °C, 1 atm) ? (C : 12, H : 1)",
         "ru": "Сколько граммов составляет масса газа C2H4, занимающего при нормальных условиях (0 °C, 1 атм) объём 5,6 л? (C: 12, H: 1)",
-        "ar": "كم غرامًا كتلة غاز C2H4 الذي يشغل 5.6 لترًا في الظروف القياسية (0 °C، 1 atm)؟ (C: 12، H: 1)",
+        "ar": "كم غرامًا كتلة غاز C2H4 الذي يشغل 5.6 L في الظروف القياسية (0 °C، 1 atm)؟ (C: 12، H: 1)",
         "zh": "标准状况(0 °C、1 atm)下体积为 5.6 L 的 C2H4 气体的质量是多少克？(C: 12, H: 1)",
         "ku": "Di şertên normal de (0 °C, 1 atm) gaza C2H4 ya ku 5,6 lître cih digire çend gram e? (C: 12, H: 1)"
       },
@@ -1159,7 +1159,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Zwischen welchen der folgenden Verbindungspaare kann das Gesetz der multiplen Proportionen angewendet werden?",
         "fr": "Entre quelles paires de composés suivantes la loi des proportions multiples peut-elle être appliquée ?",
         "ru": "К какой паре соединений применим закон кратных отношений?",
-        "ar": "أي من أزواج المركبات التالية يمكن تطبيق قانون النسب المتعددة؟",
+        "ar": "بين أيّ زوجين من المركبات الآتية يمكن تطبيق قانون النسب المتضاعفة؟",
         "zh": "下列哪一组化合物之间可以应用倍比定律？",
         "ku": "Di navbera kîjan cotên pêkhateyên jêrîn de Qanûna Rêjeyên Pirjimar dikare were sepandin?"
       },
@@ -1222,7 +1222,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "CO und CO2 bestehen aus denselben zwei Elementen und haben verschiedene einfache Formeln; bei gleicher Masse an C beträgt das Verhältnis der O-Massen 1/2. C2H4 und C3H6 haben dieselbe einfache Formel (CH2), H2SO4 und H2SO3 enthalten drei Elemente, und NaCl-KBr sowie NO-CO2 bestehen aus unterschiedlichen Elementen.",
         "fr": "CO et CO2 sont formés des deux mêmes éléments et ont des formules simples différentes ; pour une masse fixe de C, le rapport des masses de O est 1/2. C2H4 et C3H6 ont la même formule simple (CH2), H2SO4 et H2SO3 contiennent trois éléments, et NaCl-KBr ainsi que NO-CO2 sont formés d'éléments différents.",
         "ru": "CO и CO2 состоят из одних и тех же двух элементов и имеют разные простейшие формулы; при одинаковой массе C отношение масс O равно 1/2. У C2H4 и C3H6 одинаковая простейшая формула (CH2), H2SO4 и H2SO3 содержат три элемента, а NaCl-KBr и NO-CO2 состоят из разных элементов.",
-        "ar": "يتكوّن CO وCO2 من العنصرين نفسيهما وصيغتاهما البسيطتان مختلفتان؛ وعند ثبات كتلة C تكون نسبة كتلتي O هي 1/2. أما C2H4 وC3H6 فلهما الصيغة البسيطة نفسها (CH2)، وH2SO4 وH2SO3 يحتويان على ثلاثة عناصر، وNaCl-KBr وNO-CO2 يتكونان من عناصر مختلفة.",
+        "ar": "يتكوّن CO وCO2 من العنصرين نفسيهما وصيغتاهما الأوليتان مختلفتان؛ وعند ثبات كتلة C تكون نسبة كتلتي O هي 1/2. أما C2H4 وC3H6 فلهما الصيغة الأولية نفسها (CH2)، وH2SO4 وH2SO3 يحتويان على ثلاثة عناصر، وNaCl-KBr وNO-CO2 يتكونان من عناصر مختلفة.",
         "zh": "CO 和 CO2 由相同的两种元素组成且最简式不同；C 的质量固定时，O 的质量比为 1/2。C2H4 和 C3H6 的最简式相同(CH2)，H2SO4 和 H2SO3 含三种元素，NaCl 与 KBr、NO 与 CO2 由不同元素组成。",
         "ku": "CO û CO2 ji heman du hêmanan pêk tên û formulên wan ên sade cuda ne; ji bo girseyeke sabît a C, rêjeya girseyên O 1/2 ye. Formula sade ya C2H4 û C3H6 yek e (CH2), H2SO4 û H2SO3 sê hêman dihewînin, NaCl-KBr û NO-CO2 jî ji hêmanên cuda pêk tên."
       }
@@ -1678,7 +1678,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Das Gesetz der konstanten Proportionen besagt, dass das Massenverhältnis der Elemente in einer Verbindung unabhängig von Herkunft und Menge konstant ist; mH/mO = 2/16 = 1/8 in jeder reinen Wasserprobe ist ein Beispiel dafür. Die gleichbleibende Gesamtmasse im geschlossenen Gefäß erklärt die Massenerhaltung, den Vergleich CO–CO2 das Gesetz der multiplen Proportionen, das Volumenverhältnis 1 : 1 : 2 das Gesetz der einfachen Volumenverhältnisse (Gay-Lussac) und gleiche Molekülzahlen in gleichen Volumina die Avogadro-Hypothese.",
         "fr": "La loi des proportions définies affirme que le rapport des masses des éléments d’un composé est constant quelles que soient l’origine et la quantité du composé ; mH/mO = 2/16 = 1/8 dans tout échantillon d’eau pure en est un exemple. La masse totale constante en récipient fermé relève de la conservation de la masse, la comparaison CO–CO2 des proportions multiples, le rapport de volumes 1 : 1 : 2 de la loi des volumes de Gay-Lussac, et l’égalité du nombre de molécules dans des volumes égaux de l’hypothèse d’Avogadro.",
         "ru": "Закон постоянства состава гласит, что массовое отношение элементов в соединении постоянно независимо от происхождения и количества соединения; mH/mO = 2/16 = 1/8 в любом образце чистой воды — пример этого. Неизменность общей массы в закрытом сосуде объясняет закон сохранения массы, сравнение CO–CO2 — закон кратных отношений, отношение объёмов газов 1 : 1 : 2 — закон объёмных отношений Гей-Люссака, равное число молекул в равных объёмах — гипотеза Авогадро.",
-        "ar": "ينص قانون النسب الثابتة على أن نسبة كتل العناصر في المركب ثابتة بغض النظر عن مصدره وكميته، وكون mH/mO = 2/16 = 1/8 في كل عينة ماء نقي مثال على ذلك. أما ثبات الكتلة الكلية في الوعاء المغلق فيفسره قانون حفظ الكتلة، ومقارنة CO وCO2 يفسرها قانون النسب المتضاعفة، ونسبة الحجوم 1 : 1 : 2 يفسرها قانون غي-لوساك للحجوم المتحدة، وتساوي الجزيئات في الحجوم المتساوية تفسره فرضية أفوجادرو.",
+        "ar": "ينص قانون النسب الثابتة على أن نسبة كتل العناصر في المركب ثابتة بغض النظر عن مصدره وكميته، وكون mH/mO = 2/16 = 1/8 في كل عينة ماء نقي مثال على ذلك. أما ثبات الكتلة الكلية في الوعاء المغلق فيفسره قانون حفظ الكتلة، ومقارنة CO وCO2 يفسرها قانون النسب المتضاعفة، ونسبة الحجوم 1 : 1 : 2 يفسرها قانون جاي-لوساك للحجوم المتحدة، وتساوي الجزيئات في الحجوم المتساوية تفسره فرضية أفوجادرو.",
         "zh": "定比定律指出：化合物中各元素的质量比是固定的，与化合物的来源和数量无关；每份纯水样品中 mH/mO = 2/16 = 1/8 就是例子。密闭容器中总质量不变用质量守恒定律解释，CO 与 CO2 的比较用倍比定律解释，气体体积比 1 : 1 : 2 用盖-吕萨克气体化合体积定律解释，同体积含相同分子数用阿伏加德罗假说解释。",
         "ku": "Qanûna Rêjeyên Sabît dibêje rêjeya girseyî ya elementên pêkhateyekê bêyî ku girêdayî çavkanî û mîqdara wê be sabît e; di her nimûneya ava saf de mH/mO = 2/16 = 1/8 bûn mînaka vê ye. Neguherîna girseya giştî di firaxa girtî de bi parastina girseyê, berhevdana CO–CO2 bi rêjeyên pirjimar, rêjeya qebarên gazan 1 : 1 : 2 bi qanûna qebarên yekbûyî ya Gay-Lussac, molekulên wekhev di qebarên wekhev de jî bi hîpoteza Avogadro tê ravekirin."
       }
@@ -1995,7 +1995,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Von den natürlichen Chloratomen sind 75 % 35Cl und 25 % 37Cl. Wenn die Atommassen der Isotope gleich ihren Massenzahlen gesetzt werden, wie groß ist die mittlere Atommasse von Chlor in u?",
         "fr": "Parmi les atomes de chlore naturels, 75 % sont du 35Cl et 25 % du 37Cl. Si l’on prend les masses atomiques des isotopes égales à leurs nombres de masse, quelle est la masse atomique moyenne du chlore, en u ?",
         "ru": "Из природных атомов хлора 75 % составляет 35Cl и 25 % — 37Cl. Если принять атомные массы изотопов равными их массовым числам, какова средняя атомная масса хлора в а. е. м.?",
-        "ar": "من ذرات الكلور في الطبيعة 75% من النظير 35Cl و25% من النظير 37Cl. إذا اعتُبرت الكتل الذرية للنظائر مساوية لأعداد كتلها، فما متوسط الكتلة الذرية للكلور بوحدة u؟",
+        "ar": "من ذرات الكلور في الطبيعة 75% من النظير 35Cl و25% من النظير 37Cl. إذا اعتُبرت الكتل الذرية للنظائر مساوية لأعداد كتلها، فما متوسط الكتلة الذرية للكلور بوحدة amu؟",
         "zh": "自然界的氯原子中 75% 为 35Cl，25% 为 37Cl。若把同位素的原子质量看作等于其质量数，氯的平均原子质量是多少 u？",
         "ku": "Ji atomên klorê yên di xwezayê de %75 îzotopa 35Cl, %25 îzotopa 37Cl e. Ger girseyên atomî yên îzotopan wekî hejmarên girseyê werin qebûlkirin, girseya atomî ya navîn a klorê çend akb e?"
       },
@@ -2058,7 +2058,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die mittlere Atommasse ist das nach Häufigkeit gewichtete Mittel der Isotopenmassen: 0,75 · 35 + 0,25 · 37 = 26,25 + 9,25 = 35,5 u. 36,0 ist der einfache Mittelwert ohne Häufigkeiten, 36,5 entsteht durch Vertauschen der Prozentsätze (0,25 · 35 + 0,75 · 37).",
         "fr": "La masse atomique moyenne est la moyenne des masses des isotopes pondérée par leurs abondances : 0,75 · 35 + 0,25 · 37 = 26,25 + 9,25 = 35,5 u. 36,0 est la moyenne simple sans tenir compte des abondances, et 36,5 provient de l’inversion des pourcentages (0,25 · 35 + 0,75 · 37).",
         "ru": "Средняя атомная масса — это среднее масс изотопов, взвешенное по их распространённости: 0,75 · 35 + 0,25 · 37 = 26,25 + 9,25 = 35,5 а. е. м. 36,0 — простое среднее без учёта распространённости, 36,5 — результат перестановки процентов (0,25 · 35 + 0,75 · 37).",
-        "ar": "متوسط الكتلة الذرية هو المتوسط الموزون لكتل النظائر حسب نسب وفرتها: 0.75 · 35 + 0.25 · 37 = 26.25 + 9.25 = 35.5 u. والقيمة 36.0 متوسط بسيط يتجاهل الوفرة، و36.5 تنتج عن تبديل النسب المئوية (0.25 · 35 + 0.75 · 37).",
+        "ar": "متوسط الكتلة الذرية هو المتوسط الموزون لكتل النظائر حسب نسب وفرتها: 0.75 · 35 + 0.25 · 37 = 26.25 + 9.25 = 35.5 amu. والقيمة 36.0 متوسط بسيط يتجاهل الوفرة، و36.5 تنتج عن تبديل النسب المئوية (0.25 · 35 + 0.75 · 37).",
         "zh": "平均原子质量是按丰度加权的同位素质量平均值：0.75 · 35 + 0.25 · 37 = 26.25 + 9.25 = 35.5 u。36.0 是不考虑丰度的简单平均；36.5 是把百分数对调(0.25 · 35 + 0.75 · 37)得到的。",
         "ku": "Girseya atomî ya navîn navînka girseyên îzotopan e ku li gorî rêjeyên pirbûnê hatiye giranîkirin: 0,75 · 35 + 0,25 · 37 = 26,25 + 9,25 = 35,5 akb. 36,0 navînka sade ya bêyî pirbûnê ye, 36,5 jî bi guhertina ji cihê rêjeyên sedî (0,25 · 35 + 0,75 · 37) tê dîtin."
       }
@@ -2210,7 +2210,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "I ist richtig: Das Verhältnis 2 : 1 : 2 ist ein Beispiel für das Gesetz der einfachen Volumenverhältnisse von Gay-Lussac. II ist falsch: Erhalten bleibt die Masse, nicht das Gasvolumen; 4 g H2 + 32 g O2 = 36 g H2O, die Masse bleibt also erhalten, das Volumen muss es nicht. III ist richtig: Unter gleichen Bedingungen enthalten gleiche Volumina gleiche Stoffmengen (Avogadro), daher liefert das Volumenverhältnis 2 : 1 : 2 das Stoffmengenverhältnis, also die Koeffizienten der Gleichung.",
         "fr": "I est correcte : le rapport 2 : 1 : 2 illustre la loi des volumes de combinaison de Gay-Lussac. II est fausse : la conservation concerne la masse, pas le volume gazeux ; 4 g de H2 + 32 g de O2 = 36 g de H2O, donc la masse est conservée et le volume n’a pas à l’être. III est correcte : dans les mêmes conditions, des volumes égaux contiennent des quantités de matière égales (Avogadro), donc le rapport de volumes 2 : 1 : 2 donne le rapport molaire, c’est-à-dire les coefficients de l’équation.",
         "ru": "I верно: отношение 2 : 1 : 2 — пример закона объёмных отношений Гей-Люссака. II неверно: сохраняется масса, а не объём газов; 4 г H2 + 32 г O2 = 36 г H2O, масса сохраняется, а объём не обязан. III верно: при одинаковых условиях равные объёмы содержат равные количества вещества (Авогадро), поэтому отношение объёмов 2 : 1 : 2 даёт мольное отношение, то есть коэффициенты уравнения.",
-        "ar": "I صحيحة: النسبة 2 : 1 : 2 مثال على قانون غي-لوساك للحجوم المتحدة. II خاطئة: الحفظ يخص الكتلة لا حجم الغاز؛ 4 g من H2 + 32 g من O2 = 36 g من H2O، فالكتلة محفوظة ولا يلزم حفظ الحجم. III صحيحة: في الظروف نفسها تحتوي الحجوم المتساوية على مولات متساوية (أفوجادرو)، فنسبة الحجوم 2 : 1 : 2 تعطي نسبة المولات أي معاملات المعادلة.",
+        "ar": "I صحيحة: النسبة 2 : 1 : 2 مثال على قانون جاي-لوساك للحجوم المتحدة. II خاطئة: الحفظ يخص الكتلة لا حجم الغاز؛ 4 g من H2 + 32 g من O2 = 36 g من H2O، فالكتلة محفوظة ولا يلزم حفظ الحجم. III صحيحة: في الظروف نفسها تحتوي الحجوم المتساوية على مولات متساوية (أفوجادرو)، فنسبة الحجوم 2 : 1 : 2 تعطي نسبة المولات أي معاملات المعادلة.",
         "zh": "I 正确：2 : 1 : 2 的比例是盖-吕萨克气体化合体积定律的实例。II 错误：守恒的是质量而不是气体体积；4 g H2 + 32 g O2 = 36 g H2O，质量守恒，体积不必守恒。III 正确：同条件下等体积气体含有相同的物质的量（阿伏加德罗假说），所以体积比 2 : 1 : 2 就是物质的量之比，即方程式的系数。",
         "ku": "I rast e: rêjeya 2 : 1 : 2 mînaka qanûna qebarên yekbûyî ya Gay-Lussac e. II şaş e: parastin ji bo girseyê ye, ne ji bo qebara gazê; 4 g H2 + 32 g O2 = 36 g H2O, ango girse tê parastin, ne mecbûr e qebar were parastin. III rast e: di heman şertan de qebarên wekhev molên wekhev dihewînin (Avogadro), loma rêjeya qebaran 2 : 1 : 2 rêjeya molan, ango hevberên hevkêşeyê dide."
       }
@@ -2223,7 +2223,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Welche der folgenden Aussagen zur atomaren Masseneinheit (u) und zur molaren Masse sind richtig? (H: 1, O: 16; NA = 6,02x10^23)\nI. Die Masse eines 12C-Atoms beträgt 12 u.\nII. Die Masse von 1 Mol H2O beträgt 18 g.\nIII. 1 u entspricht 6,02x10^23 Gramm.",
         "fr": "Lesquelles des affirmations suivantes sur l’unité de masse atomique (u) et la masse molaire sont correctes ? (H : 1, O : 16 ; NA = 6,02x10^23)\nI. La masse d’un atome de 12C est 12 u.\nII. La masse de 1 mole de H2O est 18 g.\nIII. 1 u vaut 6,02x10^23 grammes.",
         "ru": "Какие из следующих утверждений об атомной единице массы (а. е. м.) и молярной массе верны? (H: 1, O: 16; NA = 6,02x10^23)\nI. Масса одного атома 12C равна 12 а. е. м.\nII. Масса 1 моль H2O равна 18 г.\nIII. 1 а. е. м. равна 6,02x10^23 граммам.",
-        "ar": "أي العبارات الآتية عن وحدة الكتلة الذرية (u) والكتلة المولية صحيحة؟ (H: 1، O: 16؛ NA = 6.02x10^23)\nI. كتلة ذرة 12C واحدة 12 u.\nII. كتلة 1 مول من H2O تساوي 18 g.\nIII. 1 u يساوي 6.02x10^23 غرامًا.",
+        "ar": "أي العبارات الآتية عن وحدة الكتلة الذرية (amu) والكتلة المولية صحيحة؟ (H: 1، O: 16؛ NA = 6.02x10^23)\nI. كتلة ذرة 12C واحدة 12 amu.\nII. كتلة 1 mol من H2O تساوي 18 g.\nIII. 1 amu يساوي 6.02x10^23 g.",
         "zh": "下列关于原子质量单位(u)和摩尔质量的说法中哪些正确？(H: 1, O: 16；NA = 6.02x10^23)\nI. 一个 12C 原子的质量为 12 u。\nII. 1 mol H2O 的质量为 18 g。\nIII. 1 u 等于 6.02x10^23 g。",
         "ku": "Kîjan ji van gotinên derbarê yekeya girseya atomî (akb) û girseya molê de rast in? (H: 1, O: 16; NA = 6,02x10^23)\nI. Girseya atomeke 12C 12 akb e.\nII. Girseya 1 mol H2O 18 g e.\nIII. 1 akb 6,02x10^23 gram e."
       },
@@ -2286,7 +2286,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "I ist richtig: Da u als 1/12 der Masse eines 12C-Atoms definiert ist, hat ein 12C-Atom genau 12 u. II ist richtig: Die molare Masse von H2O ist 2·1 + 16 = 18 g/mol. III ist falsch: 1 u ist eine sehr kleine Masse; 1 u = 1/NA g ≈ 1,66x10^-24 g. Umgekehrt gilt 6,02x10^23 u = 1 g.",
         "fr": "I est correcte : l’unité u étant définie comme 1/12 de la masse d’un atome de 12C, un atome de 12C vaut exactement 12 u. II est correcte : la masse molaire de H2O est 2·1 + 16 = 18 g/mol. III est fausse : 1 u est une masse très petite ; 1 u = 1/NA g ≈ 1,66x10^-24 g. Inversement, 6,02x10^23 u = 1 g.",
         "ru": "I верно: а. е. м. определена как 1/12 массы атома 12C, поэтому один атом 12C имеет массу ровно 12 а. е. м. II верно: молярная масса H2O равна 2·1 + 16 = 18 г/моль. III неверно: 1 а. е. м. — очень малая масса; 1 а. е. м. = 1/NA г ≈ 1,66x10^-24 г. Наоборот, 6,02x10^23 а. е. м. = 1 г.",
-        "ar": "I صحيحة: لأن وحدة u معرَّفة بأنها 1/12 من كتلة ذرة 12C فإن ذرة 12C الواحدة كتلتها 12 u تمامًا. II صحيحة: الكتلة المولية لـ H2O هي 2·1 + 16 = 18 g/mol. III خاطئة: 1 u كتلة صغيرة جدًا، 1 u = 1/NA g ≈ 1.66x10^-24 g. وعلى العكس فإن 6.02x10^23 u = 1 g.",
+        "ar": "I صحيحة: لأن وحدة amu معرَّفة بأنها 1/12 من كتلة ذرة 12C فإن ذرة 12C الواحدة كتلتها 12 amu تمامًا. II صحيحة: الكتلة المولية لـ H2O هي 2·1 + 16 = 18 g/mol. III خاطئة: 1 amu كتلة صغيرة جدًا، 1 amu = 1/NA g ≈ 1.66x10^-24 g. وعلى العكس فإن 6.02x10^23 amu = 1 g.",
         "zh": "I 正确：u 定义为一个 12C 原子质量的 1/12，所以一个 12C 原子恰好是 12 u。II 正确：H2O 的摩尔质量为 2·1 + 16 = 18 g/mol。III 错误：1 u 是极小的质量，1 u = 1/NA g ≈ 1.66x10^-24 g；反过来，6.02x10^23 u = 1 g。",
         "ku": "I rast e: ji ber ku akb wekî 1/12 ya girseya atoma 12C hatiye pênasekirin, atomeke 12C tam 12 akb e. II rast e: girseya molê ya H2O 2·1 + 16 = 18 g/mol e. III şaş e: 1 akb girseyeke pir biçûk e; 1 akb = 1/NA g ≈ 1,66x10^-24 g. Berevajî, 6,02x10^23 akb = 1 g e."
       }

@@ -22,7 +22,7 @@ export const unit12: ChemistryUnitSeedData = {
     "de": "Boyle, Charles, Gay-Lussac und die ideale Gasgleichung",
     "fr": "Boyle, Charles, Gay-Lussac et l'équation des gaz parfaits",
     "ru": "Законы Бойля — Мариотта, Шарля, Гей-Люссака и уравнение состояния идеального газа",
-    "ar": "بويل، تشارلز، جاي لوساك ومعادلة الغاز المثالي",
+    "ar": "قوانين بويل وشارل وجاي لوساك ومعادلة الغاز المثالي",
     "zh": "波义耳、查理、盖-吕萨克定律与理想气体状态方程",
     "ku": "Boyle, Charles, Gay-Lussac û Wekheviya Gaza Îdeal"
   },
@@ -35,7 +35,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Ideale Gasgleichung: PV = nRT (P*V = n*R*T). (P: atm, V: Liter, n: Mol, T: Kelvin, R: 0,082 L·atm/(mol·K) oder 22,4/273).",
         "fr": "Équation des gaz parfaits : PV = nRT (P*V = n*R*T). (P : atm, V : litre, n : mole, T : Kelvin, R : 0,082 L·atm/(mol·K) ou 22,4/273).",
         "ru": "Уравнение состояния идеального газа: PV = nRT (P*V = n*R*T). (P — в атм, V — в литрах, n — в молях, T — в кельвинах; R = 0,082 л·атм/(моль·K) или 22,4/273).",
-        "ar": "معادلة الغاز المثالي: PV = nRT (P*V = n*R*T). (P: atm، V: لتر، n: مول، T: كلفن، R: 0.082 L·atm/(mol·K) أو 22.4/273).",
+        "ar": "معادلة الغاز المثالي: PV = nRT (P*V = n*R*T). (P: atm، V: L، n: mol، T: K، R: 0.082 L·atm/(mol·K) أو 22.4/273).",
         "zh": "理想气体状态方程：PV = nRT，即 P*V = n*R*T；其中 P 的单位为 atm，V 为升，n 为 mol，T 为开尔文，R = 0.082 L·atm/(mol·K) 或 22.4/273。",
         "ku": "Wekheviya Gaza Îdeal: PV = nRT (P*V = n*R*T). (P: atm, V: lître, n: mol, T: Kelvin, R: 0.082 L·atm/(mol·K) an 22.4/273)."
       },
@@ -45,7 +45,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "In der idealen Gasgleichung wird die Temperatur in Celsius (°C) verwendet.",
         "fr": "Dans l’équation des gaz parfaits, la température est utilisée en Celsius (°C).",
         "ru": "В уравнение состояния идеального газа температуру подставляют в градусах Цельсия (°C).",
-        "ar": "في معادلة الغاز المثالي، يتم استخدام درجة الحرارة بالدرجة المئوية (درجة مئوية).",
+        "ar": "تُستخدم درجة الحرارة في معادلة الغاز المثالي بالسلسيوس (°C).",
         "zh": "理想气体状态方程中温度用摄氏度(°C)表示。",
         "ku": "Di hevkêşeya gazê ya îdeal de, germahî bi Celsius (°C) tê bikaranîn."
       },
@@ -68,7 +68,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Die Kelvin-Temperatur wird durch die Formel T(K) = t(°C) + 273,15 ermittelt; Die absolute Temperatur kann nicht unter Null fallen.",
         "fr": "La température Kelvin est trouvée par la formule T(K) = t(°C) + 273,15 ; La température absolue ne peut pas descendre en dessous de zéro.",
         "ru": "Температуру по шкале Кельвина находят по формуле T(K) = t(°C) + 273,15; абсолютная температура не может быть ниже нуля.",
-        "ar": "يتم العثور على درجة حرارة كلفن بالصيغة T(K) = t(°C) + 273.15؛ لا يمكن أن تنخفض درجة الحرارة المطلقة إلى ما دون الصفر.",
+        "ar": "تُحسب درجة الحرارة بالكلفن من العلاقة T(K) = t(°C) + 273.15، ولا يمكن أن تنخفض درجة الحرارة المطلقة إلى ما دون الصفر.",
         "zh": "开尔文温度由 T(K) = t(°C) + 273.15 求得；热力学温度不可能低于零。",
         "ku": "Germahiya Kelvin bi formula T(K) = t(°C) + 273.15 tê dîtin; Germahiya mutleq nikare bikeve bin sifirê."
       },
@@ -78,7 +78,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Bei einem Temperaturanstieg von 10 °C auf 20 °C verdoppelt sich die absolute Temperatur des Gases.",
         "fr": "Lorsque la température passe de 10 °C à 20 °C, la température absolue du gaz double.",
         "ru": "При повышении температуры с 10 °C до 20 °C абсолютная температура газа увеличивается вдвое.",
-        "ar": "عندما ترتفع درجة الحرارة من 10 درجات مئوية إلى 20 درجة مئوية، تتضاعف درجة الحرارة المطلقة للغاز.",
+        "ar": "عندما ترتفع درجة الحرارة من 10 °C إلى 20 °C تتضاعف درجة الحرارة المطلقة للغاز.",
         "zh": "温度从 10 °C 升高到 20 °C 时，气体的热力学温度加倍。",
         "ku": "Dema ku germahî ji 10 °C derkeve 20 °C, germahiya mutleq ya gazê du qat dibe."
       },
@@ -101,7 +101,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Boyles Gesetz: Bei konstanter Temperatur und Molzahl sind Druck und Volumen umgekehrt proportional (P1V1 = P2V2).",
         "fr": "Loi de Boyle : À température et nombre de moles constants, la pression et le volume sont inversement proportionnels (P1V1 = P2V2).",
         "ru": "Закон Бойля — Мариотта: при постоянных температуре и количестве вещества давление и объём газа обратно пропорциональны (P1V1 = P2V2).",
-        "ar": "قانون بويل: عند ثبات درجة الحرارة وعدد المولات، يتناسب الضغط والحجم عكسيا (P1V1 = P2V2).",
+        "ar": "قانون بويل: عند ثبات درجة الحرارة وعدد المولات يتناسب الضغط والحجم تناسبًا عكسيًا (P1V1 = P2V2).",
         "zh": "波义耳定律：在温度和物质的量不变时，压强与体积成反比(P1V1 = P2V2)。",
         "ku": "Zagona Boyle: Di germahîya domdar û hejmara molan de, zext û qebare berovajî hev in (P1V1 = P2V2)."
       },
@@ -111,7 +111,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Wenn das Volumen eines Gases bei konstanter Temperatur durch Kompression halbiert wird, halbiert sich auch sein Druck.",
         "fr": "Si le volume d’un gaz à température constante est réduit de moitié par compression, sa pression est également réduite de moitié.",
         "ru": "Если при постоянной температуре сжать газ так, что его объём уменьшится вдвое, давление тоже уменьшится вдвое.",
-        "ar": "إذا انخفض حجم الغاز عند درجة حرارة ثابتة إلى النصف عن طريق الضغط، فإن ضغطه ينخفض ​​أيضًا إلى النصف.",
+        "ar": "إذا ضُغط غاز عند درجة حرارة ثابتة حتى انخفض حجمه إلى النصف، انخفض ضغطه أيضًا إلى النصف.",
         "zh": "恒温下把气体压缩使体积减半，其压强也减半。",
         "ku": "Ger qebareya gazê ya di germahiya sabît de bi pêçandinê nîvî bibe, zexta wê jî nîvî dibe."
       },
@@ -134,7 +134,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Charles'sches Gesetz: Bei konstantem Druck und konstanter Molzahl sind Volumen und absolute Temperatur direkt proportional (V1/T1 = V2/T2).",
         "fr": "Loi de Charles : À pression et nombre de moles constants, le volume et la température absolue sont directement proportionnels (V1/T1 = V2/T2).",
         "ru": "Закон Шарля: при постоянных давлении и количестве вещества объём газа прямо пропорционален абсолютной температуре (V1/T1 = V2/T2).",
-        "ar": "قانون تشارلز: عند الضغط الثابت وعدد المولات، يتناسب الحجم ودرجة الحرارة المطلقة طرديًا (V1/T1 = V2/T2).",
+        "ar": "قانون شارل: عند ثبات الضغط وعدد المولات يتناسب الحجم ودرجة الحرارة المطلقة تناسبًا طرديًا (V1/T1 = V2/T2).",
         "zh": "查理定律：在压强和物质的量不变时，体积与热力学温度成正比(V1/T1 = V2/T2)。",
         "ku": "Zagona Charles: Di zexta domdar û hejmara molan de, qebare û germahiya mutleq rasterast lihevhatî ne (V1/T1 = V2/T2)."
       },
@@ -154,7 +154,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Die direkte Proportionalität im Charles-Gesetz gilt für die Kelvin-Temperatur: Von 293 K auf 313 K steigt das Volumen nur um den Faktor 313/293 ≈ 1,07; eine Verdopplung des °C-Werts verdoppelt das Volumen nicht.",
         "fr": "La proportionnalité de la loi de Charles porte sur la température en kelvins : passer de 293 K à 313 K ne multiplie le volume que par 313/293 ≈ 1,07 ; doubler la valeur en °C ne double pas le volume.",
         "ru": "Прямая пропорциональность в законе Шарля относится к температуре в кельвинах: при переходе от 293 K к 313 K объём увеличивается лишь в 313/293 ≈ 1,07 раза; удвоение значения в °C не удваивает объём.",
-        "ar": "التناسب الطردي في قانون شارل يكون مع درجة الحرارة بالكلفن: الانتقال من 293 K إلى 313 K يضاعف الحجم بمقدار 313/293 ≈ 1.07 فقط؛ ومضاعفة القيمة بالسلسيوس لا تضاعف الحجم.",
+        "ar": "التناسب الطردي في قانون شارل يكون مع درجة الحرارة بالكلفن: الانتقال من 293 K إلى 313 K لا يزيد الحجم إلا بعامل 313/293 ≈ 1.07؛ ومضاعفة القيمة بالسلسيوس لا تضاعف الحجم.",
         "zh": "查理定律中的正比关系针对开尔文温度：从 293 K 升到 313 K，体积只变为原来的 313/293 ≈ 1.07 倍；摄氏数值翻倍并不使体积翻倍。",
         "ku": "Rêjeya rasterast a zagona Charles bi germahiya Kelvin tê danîn: ji 293 K bo 313 K qebare tenê 313/293 ≈ 1.07 qat dibe; ducarbûna nirxa °C qebareyê ducar nake."
       }
@@ -177,7 +177,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Wenn das Gas in einem Behälter mit festem Volumen erhitzt wird, sinkt sein Druck.",
         "fr": "Si le gaz est chauffé dans un récipient à volume fixe, sa pression diminue.",
         "ru": "Если нагревать газ в сосуде постоянного объёма, его давление уменьшается.",
-        "ar": "إذا تم تسخين الغاز في حاوية ذات حجم ثابت، ينخفض ​​ضغطه.",
+        "ar": "إذا سُخّن غاز في وعاء ثابت الحجم انخفض ضغطه.",
         "zh": "在定容容器中加热气体，其压强会减小。",
         "ku": "Ger gaz di konteynirek bi qebareya sabit de were germ kirin, zexta wê kêm dibe."
       },
@@ -210,7 +210,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Gleiche Volumina verschiedener Gase haben immer die gleiche Masse.",
         "fr": "Des volumes égaux de gaz différents ont toujours une masse égale.",
         "ru": "Равные объёмы разных газов всегда имеют одинаковую массу.",
-        "ar": "دائمًا ما تكون للأحجام المتساوية من الغازات المختلفة كتلة متساوية.",
+        "ar": "الأحجام المتساوية من الغازات المختلفة لها دائمًا كتل متساوية.",
         "zh": "相同体积的不同气体总是具有相同的质量。",
         "ku": "Hecma yeksan a gazên cuda timî xwedî girseya yeksan in."
       },
@@ -220,7 +220,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Nach dem Avogadro-Gesetz enthalten gleiche Volumina bei gleicher Temperatur und gleichem Druck gleich viele Mol (Teilchen), nicht gleiche Massen; da die molaren Massen verschieden sind, wiegt 1 mol H2 2 g, 1 mol O2 aber 32 g.",
         "fr": "Selon la loi d'Avogadro, des volumes égaux à même température et même pression contiennent le même nombre de moles (de particules), pas la même masse ; les masses molaires différant, 1 mol de H2 pèse 2 g et 1 mol de O2 32 g.",
         "ru": "По закону Авогадро в равных объёмах газов при одинаковых температуре и давлении содержится одинаковое число молей (частиц), а не одинаковая масса; молярные массы различны: например, 1 моль H2 имеет массу 2 г, а 1 моль O2 — 32 г.",
-        "ar": "وفق قانون أفوجادرو تحتوي الأحجام المتساوية عند نفس درجة الحرارة والضغط على عدد متساوٍ من المولات (الجسيمات) لا على كتل متساوية؛ ولأن الكتل المولية مختلفة فإن 1 مول من H2 كتلته 2 g بينما 1 مول من O2 كتلته 32 g.",
+        "ar": "وفق قانون أفوجادرو تحتوي الأحجام المتساوية عند نفس درجة الحرارة والضغط على عدد متساوٍ من المولات (الجسيمات) لا على كتل متساوية؛ ولأن الكتل المولية مختلفة فإن 1 mol من H2 كتلته 2 g بينما 1 mol من O2 كتلته 32 g.",
         "zh": "阿伏加德罗定律说的是同温同压下等体积气体含有相同的物质的量（粒子数），而不是相同的质量；由于摩尔质量不同，1 mol H2 为 2 g，而 1 mol O2 为 32 g。",
         "ku": "Li gorî zagona Avogadro, di heman germahî û zextê de qebareyên wekhev hejmara molan (tenekan) ya wekhev dihewînin, ne girseya wekhev; ji ber ku girseyên molî cuda ne, 1 mol H2 2 g e lê 1 mol O2 32 g e."
       }
@@ -253,7 +253,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Nach d = P·MA/(R·T) ist die Dichte bei konstantem Druck umgekehrt proportional zur absoluten Temperatur: Bei steigender Temperatur dehnt sich das Gas aus, und da das Volumen bei gleicher Masse wächst, nimmt die Dichte ab. Im starren Gefäß bleiben Masse und Volumen gleich, die Dichte bleibt also konstant.",
         "fr": "D'après d = P·MA/(R·T), à pression constante la masse volumique est inversement proportionnelle à la température absolue : quand la température augmente, le gaz se dilate et, le volume augmentant à masse constante, la masse volumique diminue. Dans un récipient rigide, masse et volume ne changent pas et la masse volumique reste constante.",
         "ru": "Из d = P·MA/(R·T) следует, что при постоянном давлении плотность обратно пропорциональна абсолютной температуре: при нагревании газ расширяется, его объём растёт при неизменной массе, и плотность уменьшается. В сосуде постоянного объёма масса и объём не меняются, поэтому плотность остаётся постоянной.",
-        "ar": "وفق العلاقة d = P·MA/(R·T) تتناسب الكثافة عكسيًا مع درجة الحرارة المطلقة عند ثبات الضغط: بارتفاع درجة الحرارة يتمدد الغاز فيزداد الحجم مع ثبات الكتلة فتقل الكثافة. أما في الوعاء الصلب فلا تتغير الكتلة ولا الحجم فتبقى الكثافة ثابتة.",
+        "ar": "وفق العلاقة d = P·MA/(R·T) تتناسب الكثافة عكسيًا مع درجة الحرارة المطلقة عند ثبات الضغط: بارتفاع درجة الحرارة يتمدد الغاز فيزداد الحجم مع ثبات الكتلة فتقل الكثافة. أما في الوعاء الثابت الحجم فلا تتغير الكتلة ولا الحجم فتبقى الكثافة ثابتة.",
         "zh": "由 d = P·MA/(R·T) 可知，恒压下密度与热力学温度成反比：温度升高时气体膨胀，质量不变而体积增大，密度减小。在刚性容器中质量和体积都不变，密度保持不变。",
         "ku": "Li gorî d = P·MA/(R·T), di zexta domdar de çirbûn bi germahiya mutleq re berevajî rêjeyî ye: dema germahî zêde dibe gaz berfireh dibe, girse naguhere lê qebare mezin dibe, loma çirbûn kêm dibe. Di firaxa hişk de girse û qebare naguherin, loma çirbûn domdar dimîne."
       }
@@ -266,7 +266,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Die kombinierte Gasgleichung lautet: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
         "fr": "L'équation des gaz combinés est la suivante : (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
         "ru": "Объединённый газовый закон: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
-        "ar": "معادلة الغاز المجمعة هي: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
+        "ar": "معادلة الغازات الموحدة: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
         "zh": "联合气体方程为：(P1*V1) / (n1*T1) = (P2*V2) / (n2*T2)。",
         "ku": "Wekheviya gazê ya hevgirtî ev e: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2)."
       },
@@ -309,7 +309,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "In geschlossenen Stahlbehältern ist der Druck des Gases immer gleich dem Atmosphärendruck.",
         "fr": "Dans des conteneurs en acier fermés, la pression du gaz est toujours égale à la pression atmosphérique.",
         "ru": "В закрытых стальных сосудах давление газа всегда равно атмосферному.",
-        "ar": "في الحاويات الفولاذية المغلقة، يكون ضغط الغاز دائمًا مساويًا للضغط الجوي.",
+        "ar": "في الأوعية الفولاذية المغلقة يكون ضغط الغاز مساويًا دائمًا للضغط الجوي.",
         "zh": "在密闭的钢制容器中，气体的压强总是等于大气压。",
         "ku": "Di konteynerên pola yên girtî de, zexta gazê her dem bi zexta atmosferê re ye."
       },
@@ -319,7 +319,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Ein Stahlbehälter hat ein festes Volumen und gleicht seinen Druck nicht an die Umgebung an; der Innendruck hängt von der Gasmenge und der Temperatur ab und kann größer oder kleiner als der Atmosphärendruck sein.",
         "fr": "Un récipient en acier a un volume fixe et n'équilibre pas sa pression avec l'extérieur ; la pression intérieure dépend de la quantité de gaz et de la température et peut être supérieure ou inférieure à la pression atmosphérique.",
         "ru": "Объём стального сосуда постоянен, и давление внутри него не выравнивается с внешним; оно зависит от количества газа и температуры и может быть как выше, так и ниже атмосферного.",
-        "ar": "حجم الوعاء الفولاذي ثابت ولا يحقق توازنًا في الضغط مع الوسط الخارجي؛ فالضغط داخله يعتمد على كمية الغاز ودرجة الحرارة وقد يكون أكبر أو أصغر من الضغط الجوي.",
+        "ar": "حجم الوعاء الفولاذي ثابت ولا يحقق توازنًا في الضغط مع الوسط الخارجي؛ فالضغط داخله يعتمد على عدد مولات الغاز ودرجة حرارته، وقد يكون أكبر أو أصغر من الضغط الجوي.",
         "zh": "钢瓶容积固定，不会与外界达到压强平衡；瓶内压强取决于气体的物质的量和温度，可以高于也可以低于大气压。",
         "ku": "Qebareya firaxa polayî sabît e û zexta xwe bi derve re wekhev nake; zexta hundir bi mîqdara gazê û germahiyê ve girêdayî ye û dikare ji zexta atmosferê mezintir an piçûktir be."
       }
@@ -332,7 +332,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Nach der kinetischen Gastheorie bewegen sich Gasteilchen ständig, zufällig und schnell und legen zwischen den Stößen geradlinige Wege zurück.",
         "fr": "Selon la théorie cinétique, les particules de gaz se déplacent constamment, aléatoirement et rapidement, en ligne droite entre deux collisions.",
         "ru": "Согласно молекулярно-кинетической теории, частицы газа движутся непрерывно, хаотично и быстро, а между столкновениями — прямолинейно.",
-        "ar": "وفقًا للنظرية الحركية، تتحرك جسيمات الغاز باستمرار وبشكل عشوائي وسريع، وتسلك مسارات مستقيمة بين التصادمات.",
+        "ar": "وفق النظرية الحركية تتحرك جسيمات الغاز حركة مستمرة وعشوائية وسريعة، وتسلك مسارات مستقيمة بين التصادمات.",
         "zh": "根据分子动理论，气体粒子不停地做快速、无规则运动，在两次碰撞之间沿直线运动。",
         "ku": "Li gorî teoriya kînetîk, tenekên gazê bi berdewamî, bêserûber û bi lez dilivin û di navbera du pevketinan de li ser xêza rast diçin."
       },
@@ -342,7 +342,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Gasmoleküle bewegen sich ausschließlich auf Kreisbahnen.",
         "fr": "Les molécules de gaz se déplacent uniquement sur des orbites circulaires.",
         "ru": "Молекулы газа движутся только по круговым орбитам.",
-        "ar": "تتحرك جزيئات الغاز في مدارات دائرية فقط.",
+        "ar": "تتحرك جزيئات الغاز في مسارات دائرية فقط.",
         "zh": "气体分子仅沿圆形轨道运动。",
         "ku": "Molekulên gazê tenê di dorhêlên dorhêl de digerin."
       },
@@ -352,7 +352,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Nach der kinetischen Theorie wirken zwischen den Stößen keine Kräfte auf die Gasteilchen, daher bewegen sie sich geradlinig; ihre Richtung ändert sich nur beim Stoß mit einem anderen Teilchen oder der Wand – Kreisbahnen gibt es nicht.",
         "fr": "Selon la théorie cinétique, aucune force n'agit sur les particules de gaz entre deux chocs ; elles se déplacent donc en ligne droite et ne changent de direction qu'en heurtant une autre particule ou une paroi — il n'y a pas d'orbites circulaires.",
         "ru": "Согласно молекулярно-кинетической теории, между столкновениями на частицы газа не действуют никакие силы, поэтому они движутся прямолинейно; направление движения меняется только при ударе о другую частицу или о стенку — круговых орбит нет.",
-        "ar": "وفق النظرية الحركية لا تؤثر أي قوة في جسيمات الغاز بين التصادمات، لذا تتحرك في خطوط مستقيمة ولا يتغير اتجاهها إلا عند اصطدامها بجسيم آخر أو بجدار الوعاء؛ فلا توجد مدارات دائرية.",
+        "ar": "وفق النظرية الحركية لا تؤثر أي قوة في جسيمات الغاز بين التصادمات، لذا تتحرك في خطوط مستقيمة ولا يتغير اتجاهها إلا عند اصطدامها بجسيم آخر أو بجدار الوعاء؛ فلا توجد مسارات دائرية.",
         "zh": "根据分子动理论，气体粒子在两次碰撞之间不受力，因此做直线运动；只有撞到其他粒子或器壁时方向才改变，不存在圆形轨道。",
         "ku": "Li gorî teoriya kînetîk, di navbera lêketinan de tu hêz li ser tenekên gazê nayê; loma ew bi rêya rast diçin û arasteya wan tenê dema li tenekek din an li dîwar dixin diguhere — rêgeha dorvekirî tune ye."
       }
@@ -365,7 +365,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Bei elastischen Kollisionen zwischen Gasteilchen bleiben die gesamte kinetische Energie und der Impuls erhalten.",
         "fr": "Dans les collisions élastiques entre particules de gaz, l’énergie cinétique totale et la quantité de mouvement sont conservées.",
         "ru": "При упругих столкновениях частиц газа полная кинетическая энергия и импульс сохраняются.",
-        "ar": "في التصادمات المرنة بين جزيئات الغاز، يتم الحفاظ على الطاقة الحركية الكلية والزخم.",
+        "ar": "في التصادمات المرنة بين جسيمات الغاز تبقى الطاقة الحركية الكلية والزخم الكلي محفوظين.",
         "zh": "在气体粒子之间的弹性碰撞中，总动能和动量守恒。",
         "ku": "Di pevçûnên elastîk ên di navbera pariyên gazê de, enerjiya kînetîk a tevahî û leza xwe parastiye."
       },
@@ -375,7 +375,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Wenn Gasteilchen kollidieren, sinkt ihre kinetische Energie mit der Zeit auf Null.",
         "fr": "Lorsque les particules de gaz entrent en collision, leur énergie cinétique diminue jusqu'à zéro avec le temps.",
         "ru": "При столкновениях кинетическая энергия частиц газа со временем уменьшается до нуля.",
-        "ar": "عند تصادم جزيئات الغاز، تنخفض الطاقة الحركية لها إلى الصفر مع مرور الوقت.",
+        "ar": "كلما تصادمت جسيمات الغاز تناقصت طاقتها الحركية حتى تصبح صفرًا مع مرور الزمن.",
         "zh": "气体粒子在不断碰撞中，动能会随时间逐渐减小到零。",
         "ku": "Her ku pariyên gazê li hev dikevin, enerjiya wan a kînetîk bi demê re dadikeve sifirê."
       },
@@ -408,7 +408,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Am Boden des Behälters übt das Gas einen höheren Druck aus als oben.",
         "fr": "Le gaz exerce une pression plus élevée au fond du récipient qu’en haut.",
         "ru": "Газ оказывает на дно сосуда большее давление, чем на его верхнюю часть.",
-        "ar": "يمارس الغاز ضغطًا أعلى في قاع الحاوية مقارنةً بالأعلى.",
+        "ar": "يؤثر الغاز في قاع الوعاء بضغط أعلى من ضغطه في أعلاه.",
         "zh": "气体对容器底部施加的压强大于对顶部的压强。",
         "ku": "Gaz li binê konteynerê ji ya jorîn zextek bilindtir dike."
       },
@@ -441,7 +441,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Es gibt heterogene Gasgemische, die ineinander unlöslich sind.",
         "fr": "Il existe des mélanges de gaz hétérogènes insolubles les uns dans les autres.",
         "ru": "Существуют неоднородные газовые смеси, компоненты которых не растворяются друг в друге.",
-        "ar": "هناك مخاليط غازية غير متجانسة غير قابلة للذوبان في بعضها البعض.",
+        "ar": "توجد مخاليط غازية غير متجانسة لا تذوب مكوناتها بعضها في بعض.",
         "zh": "存在互不相溶的非均匀气体混合物。",
         "ku": "Têkelên gazê yên heterojen hene ku di nav hev de nayên çareserkirin."
       },
@@ -474,7 +474,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Manometer ist ein Gerät, das die Luftfeuchtigkeit misst.",
         "fr": "Le manomètre est un appareil qui mesure l'humidité de l'air.",
         "ru": "Манометр — прибор для измерения влажности воздуха.",
-        "ar": "المانومتر هو جهاز يقيس رطوبة الهواء.",
+        "ar": "المانومتر جهاز يقيس رطوبة الهواء.",
         "zh": "压强计是测量空气湿度的仪器。",
         "ku": "Manometre amûrek e ku nemahiya hewayê dipîve."
       },
@@ -497,7 +497,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Wenn einem reibungsfreien idealen Kolbenbehälter Gas mit der gleichen Temperatur zugeführt wird, ändert sich der Druck des Gases nicht und sein Volumen vergrößert sich.",
         "fr": "Si du gaz à la même température est ajouté à un récipient à piston idéal sans friction, la pression du gaz ne change pas et son volume augmente.",
         "ru": "Если в сосуд с идеальным поршнем без трения добавить газ при той же температуре, давление газа не изменится, а объём увеличится.",
-        "ar": "إذا أضيف غاز عند نفس درجة الحرارة إلى حاوية مكبس مثالية عديمة الاحتكاك، فإن ضغط الغاز لا يتغير ويزداد حجمه.",
+        "ar": "إذا أُضيف غاز عند درجة الحرارة نفسها إلى وعاء ذي مكبس مثالي عديم الاحتكاك، لا يتغير ضغط الغاز بل يزداد حجمه.",
         "zh": "在相同温度下向带无摩擦理想活塞的容器中加入气体时，气体压强不变，体积增大。",
         "ku": "Ger gaza di heman germahiyê de li konteynirek pistonê ya îdeal bê xitimandin were zêdekirin, zexta gazê naguhere û qebareya wê zêde dibe."
       },
@@ -507,7 +507,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Wird einem Gefäß mit reibungsfreiem Kolben bei konstanter Temperatur Gas zugeführt, steigt der Gasdruck.",
         "fr": "Lorsqu'on ajoute du gaz à température constante dans un récipient à piston sans frottement, la pression du gaz augmente.",
         "ru": "Если при постоянной температуре добавить газ в сосуд с поршнем без трения, давление газа возрастёт.",
-        "ar": "عند إضافة غاز عند ثبات درجة الحرارة إلى وعاء ذي مكبس عديم الاحتكاك يزداد ضغط الغاز.",
+        "ar": "عند إضافة غاز إلى وعاء ذي مكبس عديم الاحتكاك مع ثبات درجة الحرارة يزداد ضغط الغاز.",
         "zh": "恒温下向带无摩擦活塞的容器中加入气体时，气体的压强增大。",
         "ku": "Dema ku di germahiya domdar de gaz li firaxa bi pistona bê sûrtin tê zêdekirin, zexta gazê zêde dibe."
       },
@@ -550,7 +550,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Der Druck ist proportional zur Kelvin-Temperatur, nicht zum Celsius-Wert: 25 °C = 298 K und 50 °C = 323 K, der Druck steigt also nur um den Faktor 323/298 ≈ 1,08.",
         "fr": "La pression est proportionnelle à la température en kelvins, pas à la valeur en Celsius : 25 °C = 298 K et 50 °C = 323 K, la pression n'est donc multipliée que par 323/298 ≈ 1,08.",
         "ru": "Давление пропорционально температуре в кельвинах, а не в градусах Цельсия: 25 °C = 298 K, 50 °C = 323 K, поэтому давление возрастает лишь в 323/298 ≈ 1,08 раза.",
-        "ar": "يتناسب الضغط مع درجة الحرارة بالكلفن لا بالسلسيوس: 25 °C = 298 K و50 °C = 323 K، لذا يزداد الضغط بمقدار 323/298 ≈ 1.08 مرة فقط.",
+        "ar": "يتناسب الضغط مع درجة الحرارة بالكلفن لا بالسلسيوس: 25 °C = 298 K و50 °C = 323 K، لذا لا يزيد الضغط إلا بعامل 323/298 ≈ 1.08.",
         "zh": "压强与开尔文温度成正比，而不是与摄氏数值成正比：25 °C = 298 K，50 °C = 323 K，所以压强只变为原来的 323/298 ≈ 1.08 倍。",
         "ku": "Zext bi germahiya Kelvin re rêjeyî ye, ne bi nirxa Celsius: 25 °C = 298 K û 50 °C = 323 K, loma zext tenê 323/298 ≈ 1.08 qat dibe."
       }
@@ -575,7 +575,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Gesetz von Charles",
         "fr": "Loi de Charles",
         "ru": "Закон Шарля",
-        "ar": "قانون تشارلز",
+        "ar": "قانون شارل",
         "zh": "查理定律",
         "ku": "Qanûna Charles"
       },
@@ -585,7 +585,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Boyles Gesetz besagt, dass Druck und Volumen bei konstanter Temperatur umgekehrt proportional sind; nach Charles sind Volumen und absolute Temperatur bei konstantem Druck direkt proportional.",
         "fr": "La loi de Boyle énonce que la pression et le volume sont inversement proportionnels à température constante ; la loi de Charles énonce que le volume et la température absolue sont directement proportionnels à pression constante.",
         "ru": "Закон Бойля — Мариотта описывает обратную пропорциональность давления и объёма при постоянной температуре; закон Шарля описывает прямую пропорциональность объёма и абсолютной температуры при постоянном давлении.",
-        "ar": "ينص قانون بويل على أن الضغط والحجم يتناسبان عكسيًا عند ثبات درجة الحرارة؛ أما قانون تشارلز فينص على أن الحجم ودرجة الحرارة المطلقة يتناسبان طرديًا عند ثبات الضغط.",
+        "ar": "ينص قانون بويل على أن الضغط والحجم يتناسبان عكسيًا عند ثبات درجة الحرارة؛ أما قانون شارل فينص على أن الحجم ودرجة الحرارة المطلقة يتناسبان طرديًا عند ثبات الضغط.",
         "zh": "波义耳定律指出恒温下压强与体积成反比；查理定律指出恒压下体积与热力学温度成正比。",
         "ku": "Qanûna Boyle dibêje ku di germahiya domdar de zext û qebare berevajî rêjeyî ne; qanûna Charles dibêje ku di zexta domdar de qebare û germahiya mutleq rasterast rêjeyî ne."
       }
@@ -598,7 +598,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Kolbengefäß",
         "fr": "Récipient à piston",
         "ru": "Сосуд с подвижным поршнем",
-        "ar": "وعاء ذو مكبس",
+        "ar": "الوعاء ذو المكبس",
         "zh": "活塞容器",
         "ku": "Firaxa bi piston"
       },
@@ -608,7 +608,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Gefäß mit konstantem Volumen",
         "fr": "Récipient à volume constant",
         "ru": "Сосуд постоянного объёма",
-        "ar": "وعاء ثابت الحجم",
+        "ar": "الوعاء الثابت الحجم",
         "zh": "固定容积容器",
         "ku": "Firaxa bi qebareya sabît"
       },
@@ -618,7 +618,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Kolbengefäß: Der Druck ist konstant, das Volumen veränderlich; im Stahlgefäß mit konstantem Volumen ist das Volumen konstant und der Druck veränderlich.",
         "fr": "Dans un récipient à piston, la pression est constante et le volume variable ; dans un récipient à volume constant (en acier), le volume est constant et la pression variable.",
         "ru": "Сосуд с подвижным поршнем сохраняет постоянное давление, а объём газа в нём меняется; сосуд постоянного объёма (стальной) сохраняет постоянный объём, а давление газа в нём меняется.",
-        "ar": "وعاء ذو مكبس: يكون الضغط فيه ثابتًا والحجم متغيرًا؛ أما في الوعاء الفولاذي الثابت الحجم فيكون الحجم ثابتًا والضغط متغيرًا.",
+        "ar": "الوعاء ذو المكبس: الضغط فيه ثابت والحجم متغير؛ أما الوعاء الثابت الحجم (الفولاذي) فالحجم فيه ثابت والضغط متغير.",
         "zh": "活塞容器中压强恒定、体积可变；固定容积容器(如钢瓶)中体积恒定、压强可变。",
         "ku": "Di firaxa bi piston de zext domdar e û qebare diguhere; di firaxa bi qebareya sabît (pola) de qebare domdar e û zext diguhere."
       }
@@ -684,7 +684,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Ideales Gas: Zwischen den Teilchen gibt es keine Anziehungskräfte, und ihr Eigenvolumen wird vernachlässigt; reale Gase nähern sich bei hoher Temperatur und niedrigem Druck dem idealen Verhalten.",
         "fr": "Dans un gaz parfait, il n'y a pas de forces d'attraction entre les particules et leur volume propre est négligé ; les gaz réels se rapprochent du comportement idéal à haute température et basse pression.",
         "ru": "Идеальный газ — модель, в которой между частицами нет сил притяжения, а собственным объёмом частиц пренебрегают; реальный газ приближается по поведению к идеальному при высокой температуре и низком давлении.",
-        "ar": "في الغاز المثالي لا توجد قوى تجاذب بين الجسيمات ويُهمل حجمها الذاتي؛ وتقترب الغازات الحقيقية من السلوك المثالي عند درجات الحرارة المرتفعة والضغوط المنخفضة.",
+        "ar": "الغاز المثالي: لا توجد قوى تجاذب بين جسيماته ويُهمل حجمها الذاتي؛ أما الغاز الحقيقي فيقترب من السلوك المثالي عند درجات الحرارة المرتفعة والضغوط المنخفضة.",
         "zh": "理想气体中粒子间没有引力，粒子本身的体积可忽略；真实气体在高温、低压下接近理想行为。",
         "ku": "Di gaza îdeal de di navbera tenekan de hêza kişandinê tune ye û qebareya tenekan bi xwe nayê hesibandin; gazên rastîn di germahiya bilind û zexta nizm de nêzî tevgera îdeal dibin."
       }
@@ -773,7 +773,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Effusion von Gasen",
         "fr": "Effusion de gaz",
         "ru": "Эффузия газа",
-        "ar": "انصباب الغاز",
+        "ar": "تدفق الغاز",
         "zh": "气体泻流",
         "ku": "Efûzyona gazê"
       },
@@ -783,7 +783,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Gasdiffusion ist die spontane Ausbreitung eines Gases in einem anderen Gas; Effusion ist das Ausströmen eines Gases durch eine winzige Öffnung in einen evakuierten Raum.",
         "fr": "La diffusion de gaz est la propagation spontanée d'un gaz dans un autre gaz ; l'effusion est l'échappement d'un gaz par un minuscule orifice vers une région vide.",
         "ru": "Газовая диффузия — самопроизвольное распространение одного газа в другом; эффузия газа — истечение газа через маленькое отверстие в вакуум.",
-        "ar": "انتشار الغاز هو تمدد غاز تلقائيًا داخل غاز آخر؛ والتدفق (الانصباب) هو خروج الغاز عبر ثقب صغير جدًا إلى حيّز مفرغ.",
+        "ar": "انتشار الغاز: انتقال غاز تلقائيًا وامتزاجه داخل غاز آخر؛ أما تدفق الغاز فهو خروج جزيئاته عبر ثقب صغير جدًا إلى حيّز مفرغ.",
         "zh": "气体扩散是一种气体自发地分散到另一种气体中；气体泻流是气体通过微小孔隙逸入真空。",
         "ku": "Belavbûna gazê belavbûna xweber a gazekê di nav gazeke din de ye; efûzyon derketina gazê ye bi kunekê pir piçûk ber bi herêmeke vala (bê hewa)."
       }
@@ -816,7 +816,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Der gasförmige Zustand unterhalb der kritischen Temperatur heißt Dampf; ein Dampf lässt sich auch allein durch Druckerhöhung, ohne Temperaturänderung, verflüssigen. Oberhalb der kritischen Temperatur ist der Stoff ein Gas und lässt sich auch durch noch so hohen Druck nicht verflüssigen.",
         "fr": "L'état gazeux en dessous de la température critique s'appelle une vapeur ; une vapeur peut être liquéfiée par simple augmentation de pression, sans changer la température. Au-dessus de la température critique, la substance est un gaz et ne peut pas être liquéfiée, quelle que soit la pression appliquée.",
         "ru": "Пар — газообразное состояние вещества ниже критической температуры; его можно сжижить одним повышением давления, не меняя температуры. Газ — состояние вещества выше критической температуры; ни при каком давлении его нельзя сжижить.",
-        "ar": "تُسمّى الحالة الغازية تحت درجة الحرارة الحرجة البخار، ويمكن إسالة البخار بزيادة الضغط وحدها دون تغيير درجة الحرارة. أما فوق درجة الحرارة الحرجة فالمادة غاز ولا يمكن إسالتها مهما زاد الضغط.",
+        "ar": "البخار يكون تحت درجة الحرارة الحرجة، ويمكن إسالته بزيادة الضغط وحدها دون تغيير درجة الحرارة؛ أما الغاز فمادة فوق درجة الحرارة الحرجة لا يمكن إسالتها مهما زاد الضغط.",
         "zh": "低于临界温度的气态物质称为蒸气；蒸气在温度不变时仅靠增大压强就能液化。高于临界温度时物质为气体，无论压强多大都不能液化。",
         "ku": "Rewşa gazê ya di binê germahiya krîtîk de jê re hilm tê gotin; hilm bêyî guherîna germahiyê tenê bi zêdekirina zextê jî dikare were şilekirin. Li jorî germahiya krîtîk madde gaz e û zext çiqas zêde bibe jî nayê şilekirin."
       }
@@ -831,7 +831,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Lösungsschritte für ideale Gasprobleme",
         "fr": "Étapes de solution au problème des gaz parfaits",
         "ru": "Этапы решения задачи на уравнение состояния идеального газа",
-        "ar": "خطوات حل مشكلة الغاز المثالي",
+        "ar": "حل مسائل الغاز المثالي",
         "zh": "理想气体计算题的解题步骤",
         "ku": "Gavên Çareseriya Pirsgirêka Gaza Îdeal"
       },
@@ -852,7 +852,7 @@ export const unit12: ChemistryUnitSeedData = {
           "de": "Temperatur in Kelvin, Druck in atm und Volumen in Liter umrechnen",
           "fr": "Convertir la température en kelvins, la pression en atm et le volume en litres",
           "ru": "Перевести температуру в кельвины, давление в атм, объём в литры",
-          "ar": "حوّل درجة الحرارة إلى كلفن والضغط إلى atm والحجم إلى لتر",
+          "ar": "حوّل درجة الحرارة إلى الكلفن والضغط إلى atm والحجم إلى اللتر",
           "zh": "将温度换算为开尔文，压强换算为 atm，体积换算为升",
           "ku": "Germahiyê bike Kelvin, zextê bike atm û qebareyê bike lître"
         },
@@ -897,7 +897,7 @@ export const unit12: ChemistryUnitSeedData = {
           "de": "Aus dem Boyle-Gesetz wird das umgekehrte Verhältnis von P und V abgeleitet",
           "fr": "De la loi de Boyle, on prend la proportion inverse de P et V",
           "ru": "Из закона Бойля — Мариотта берут обратную пропорциональность P и V",
-          "ar": "من قانون بويل، يتم أخذ النسبة العكسية لـ P و V",
+          "ar": "يُؤخذ من قانون بويل التناسب العكسي بين P وV",
           "zh": "由波义耳定律得出 P 与 V 成反比",
           "ku": "Ji qanûna Boyle, rêjeya berevajî ya P û V tê girtin"
         },
@@ -907,7 +907,7 @@ export const unit12: ChemistryUnitSeedData = {
           "de": "Aus dem Gesetz von Charles wird das direkte Verhältnis von V und T addiert",
           "fr": "De la loi de Charles, la proportion directe de V et T s'ajoute",
           "ru": "Из закона Шарля добавляют прямую пропорциональность V и T",
-          "ar": "من قانون تشارلز، تتم إضافة النسبة المباشرة لـ V وT",
+          "ar": "يُضاف من قانون شارل التناسب الطردي بين V وT",
           "zh": "由查理定律加入 V 与 T 成正比",
           "ku": "Ji qanûna Charles, rêjeya rasterast ya V û T tê zêdekirin"
         },
@@ -917,7 +917,7 @@ export const unit12: ChemistryUnitSeedData = {
           "de": "Aus dem Gesetz von Avogadro ergibt sich der direkte Anteil von V und n",
           "fr": "D'après la loi d'Avogadro, la proportion directe de V et n est combinée",
           "ru": "Из закона Авогадро добавляют прямую пропорциональность V и n",
-          "ar": "من قانون أفوجادرو، يتم الجمع بين النسبة المباشرة لـ V و n",
+          "ar": "يُدمج من قانون أفوجادرو التناسب الطردي بين V وn",
           "zh": "由阿伏加德罗定律并入 V 与 n 成正比",
           "ku": "Ji zagona Avogadro, rêjeya rasterast ya V û n tê hev kirin"
         },
@@ -927,7 +927,7 @@ export const unit12: ChemistryUnitSeedData = {
           "de": "Die Hauptgleichung PV = nRT wird mit der Gaskonstante R aufgestellt",
           "fr": "L'équation principale PV = nRT est établie avec la constante des gaz R",
           "ru": "С помощью газовой постоянной R получают основное уравнение PV = nRT",
-          "ar": "يتم إنشاء المعادلة الرئيسية PV = nRT مع ثابت الغاز R",
+          "ar": "تُصاغ المعادلة الرئيسة PV = nRT باستخدام ثابت الغازات R",
           "zh": "引入气体常数 R，得到 PV = nRT",
           "ku": "Hevkêşana sereke PV = nRT bi domdariya gazê R tê saz kirin"
         }
@@ -1017,7 +1017,7 @@ export const unit12: ChemistryUnitSeedData = {
           "de": "Ein Schenkel wird mit dem Gasbehälter verbunden, der andere ist zur Atmosphäre offen",
           "fr": "Une branche est reliée au récipient de gaz, l'autre est ouverte à l'atmosphère",
           "ru": "Одно колено соединяют с сосудом, содержащим газ, другое оставляют открытым в атмосферу",
-          "ar": "يوصل أحد الذراعين بوعاء الغاز ويُترك الآخر مفتوحًا للجو",
+          "ar": "يُوصَل أحد الذراعين بوعاء الغاز ويُترك الآخر مفتوحًا للجو",
           "zh": "一臂与盛气体的容器相连，另一臂通大气",
           "ku": "Milek bi firaxa gazê ve tê girêdan, milê din ji atmosferê re vekirî ye"
         },
@@ -1027,7 +1027,7 @@ export const unit12: ChemistryUnitSeedData = {
           "de": "Gemessen wird der Höhenunterschied h zwischen den Quecksilberspiegeln",
           "fr": "La différence de hauteur h entre les niveaux de mercure est mesurée",
           "ru": "Измеряют разность высот h между уровнями ртути",
-          "ar": "يتم قياس فرق الارتفاع h بين مستويات الزئبق",
+          "ar": "يُقاس فرق الارتفاع h بين مستويي الزئبق",
           "zh": "测量两侧汞面的高度差 h",
           "ku": "Cûdahiya bilindahiya h di navbera astên mercury de tê pîvandin"
         },
@@ -1192,7 +1192,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Im Gefäß mit reibungsfreiem Kolben ist der Druck konstant; bei konstantem Druck ist das Volumen der absoluten Temperatur direkt proportional (Gesetz von Charles). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L. Mit °C gerechnet ergibt sich 2·327/27 ≈ 24 L; hält man Volumen und Temperatur für umgekehrt proportional, erhält man 1 L.",
         "fr": "Dans un récipient à piston sans frottement la pression est constante ; à pression constante, le volume est directement proportionnel à la température absolue (loi de Charles). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L. Avec des °C on trouve 2·327/27 ≈ 24 L ; en croyant le volume et la température inversement proportionnels on trouve 1 L.",
         "ru": "В сосуде с поршнем без трения давление постоянно; при постоянном давлении объём прямо пропорционален абсолютной температуре (закон Шарля). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 л. Если составить пропорцию в °C, получится 2·327/27 ≈ 24 л; если считать объём и температуру обратно пропорциональными — 1 л.",
-        "ar": "في الوعاء ذي المكبس عديم الاحتكاك يبقى الضغط ثابتًا؛ وعند ثبات الضغط يتناسب الحجم طرديًا مع درجة الحرارة المطلقة (قانون تشارلز). T1 = 27 + 273 = 300 K وT2 = 327 + 273 = 600 K ← V1/T1 = V2/T2 ← 2/300 = V2/600 ← V2 = 4 L. استخدام السلسيوس في التناسب يعطي 2·327/27 ≈ 24 L، واعتبار الحجم ودرجة الحرارة متناسبين عكسيًا يعطي 1 L.",
+        "ar": "في الوعاء ذي المكبس عديم الاحتكاك يبقى الضغط ثابتًا؛ وعند ثبات الضغط يتناسب الحجم طرديًا مع درجة الحرارة المطلقة (قانون شارل). T1 = 27 + 273 = 300 K وT2 = 327 + 273 = 600 K ← V1/T1 = V2/T2 ← 2/300 = V2/600 ← V2 = 4 L. استخدام السلسيوس في التناسب يعطي 2·327/27 ≈ 24 L، واعتبار الحجم ودرجة الحرارة متناسبين عكسيًا يعطي 1 L.",
         "zh": "带无摩擦活塞的容器中压强恒定；恒压下体积与热力学温度成正比（查理定律）。T1 = 27 + 273 = 300 K，T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L。用摄氏温度列比例得 2·327/27 ≈ 24 L，误以为体积与温度成反比得 1 L。",
         "ku": "Di firaxa bi pistona bê sûrtin de zext domdar e; di zexta domdar de qebare bi germahiya mutleq re rasterast rêjeyî ye (qanûna Charles). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L. Heke rêje bi °C were danîn 2·327/27 ≈ 24 L, heke qebare û germahî berevajî rêjeyî werin hesibandin 1 L derdikeve."
       }
@@ -1420,7 +1420,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Bei konstantem Volumen und konstanter Stoffmenge gilt P1/T1 = P2/T2 (Gay-Lussac). T1 = 27 + 273 = 300 K → 1,5/300 = 2,5/T2 → T2 = 300·2,5/1,5 = 500 K (227 °C). Rechnet man mit °C, erhält man 45, in Kelvin umgerechnet 318; nimmt man umgekehrte Proportionalität an, 180; addiert man zu 500 K nochmals 273, 773.",
         "fr": "À volume et quantité constants, P1/T1 = P2/T2 (Gay-Lussac). T1 = 27 + 273 = 300 K → 1,5/300 = 2,5/T2 → T2 = 300·2,5/1,5 = 500 K (227 °C). Poser la proportion en °C donne 45, convertir ce résultat en kelvins donne 318, supposer une proportionnalité inverse donne 180, et ajouter encore 273 aux 500 K donne 773.",
         "ru": "При постоянных объёме и количестве газа P1/T1 = P2/T2 (закон Гей-Люссака). T1 = 27 + 273 = 300 K → 1,5/300 = 2,5/T2 → T2 = 300·2,5/1,5 = 500 K (227 °C). Пропорция в °C даёт 45, перевод этого числа в кельвины — 318, обратная пропорциональность — 180, повторное прибавление 273 к 500 K — 773.",
-        "ar": "عند ثبات الحجم وعدد المولات: P1/T1 = P2/T2 (غاي-لوساك). T1 = 27 + 273 = 300 K ← 1.5/300 = 2.5/T2 ← T2 = 300·2.5/1.5 = 500 K (227 °C). إقامة التناسب بالسلسيوس تعطي 45، وتحويل هذه القيمة إلى كلفن يعطي 318، واعتبار الضغط والحرارة متناسبين عكسيًا يعطي 180، وإضافة 273 مرة أخرى إلى 500 K تعطي 773.",
+        "ar": "عند ثبات الحجم وعدد المولات: P1/T1 = P2/T2 (جاي لوساك). T1 = 27 + 273 = 300 K ← 1.5/300 = 2.5/T2 ← T2 = 300·2.5/1.5 = 500 K (227 °C). إقامة التناسب بالسلسيوس تعطي 45، وتحويل هذه القيمة إلى كلفن يعطي 318، واعتبار الضغط والحرارة متناسبين عكسيًا يعطي 180، وإضافة 273 مرة أخرى إلى 500 K تعطي 773.",
         "zh": "体积和物质的量不变时 P1/T1 = P2/T2（盖-吕萨克定律）。T1 = 27 + 273 = 300 K → 1.5/300 = 2.5/T2 → T2 = 300·2.5/1.5 = 500 K (227 °C)。用摄氏温度列比例得 45，再把它换算成开尔文得 318，误以为压强与温度成反比得 180，在 500 K 上再加 273 得 773。",
         "ku": "Di qebare û mîqdara sabît de P1/T1 = P2/T2 (Gay-Lussac). T1 = 27 + 273 = 300 K → 1.5/300 = 2.5/T2 → T2 = 300·2.5/1.5 = 500 K (227 °C). Heke rêje bi °C were danîn 45, heke ev nirx bo Kelvin were guhertin 318, heke zext û germahî berevajî rêjeyî werin hesibandin 180, û heke li 500 K dîsa 273 were zêdekirin 773 derdikeve."
       }
@@ -1876,7 +1876,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "I ist richtig: Die mittlere kinetische Energie hängt nur von der absoluten Temperatur ab, nicht von der Gasart. II ist richtig: Bei gleicher kinetischer Energie ist das leichtere He (4 g/mol) schneller als CH4 (16 g/mol); nach Graham ist das Geschwindigkeitsverhältnis √(16/4) = 2. III ist falsch: Stöße idealer Gasteilchen sind elastisch, bei konstanter Temperatur ändern sich kinetische Gesamtenergie und Druck mit der Zeit nicht.",
         "fr": "I est exacte : l'énergie cinétique moyenne ne dépend que de la température absolue, pas de la nature du gaz. II est exacte : à énergie cinétique égale, He plus léger (4 g/mol) est plus rapide que CH4 (16 g/mol) ; d'après la loi de Graham, le rapport des vitesses vaut √(16/4) = 2. III est fausse : les chocs entre particules d'un gaz parfait sont élastiques ; à température constante, l'énergie cinétique totale et la pression ne varient pas avec le temps.",
         "ru": "I верно: средняя кинетическая энергия зависит только от абсолютной температуры, а не от природы газа. II верно: при равных кинетических энергиях более лёгкий He (4 г/моль) движется быстрее CH4 (16 г/моль); по закону Грэма отношение скоростей √(16/4) = 2. III неверно: столкновения частиц идеального газа упругие, при постоянной температуре суммарная кинетическая энергия и давление со временем не меняются.",
-        "ar": "العبارة I صحيحة: متوسط الطاقة الحركية يعتمد على درجة الحرارة المطلقة فقط لا على نوع الغاز. العبارة II صحيحة: عند تساوي الطاقة الحركية يكون He الأخف (4 g/mol) أسرع من CH4 (16 g/mol)، ووفق قانون غراهام نسبة السرعتين √(16/4) = 2. العبارة III خاطئة: تصادمات جسيمات الغاز المثالي مرنة، فلا تتغير الطاقة الحركية الكلية ولا الضغط مع الزمن عند ثبات درجة الحرارة.",
+        "ar": "العبارة I صحيحة: متوسط الطاقة الحركية يعتمد على درجة الحرارة المطلقة فقط لا على نوع الغاز. العبارة II صحيحة: عند تساوي الطاقة الحركية يكون He الأخف (4 g/mol) أسرع من CH4 (16 g/mol)، ووفق قانون جراهام نسبة السرعتين √(16/4) = 2. العبارة III خاطئة: تصادمات جسيمات الغاز المثالي مرنة، فلا تتغير الطاقة الحركية الكلية ولا الضغط مع الزمن عند ثبات درجة الحرارة.",
         "zh": "I 正确：平均动能只取决于热力学温度，与气体种类无关。II 正确：动能相等时，摩尔质量较小的 He (4 g/mol) 比 CH4 (16 g/mol) 运动得快；根据格雷厄姆定律，速率之比为 √(16/4) = 2。III 错误：理想气体粒子的碰撞是弹性的，温度不变时总动能和压强不随时间改变。",
         "ku": "I rast e: enerjiya kînetîk a navîn tenê bi germahiya mutleq ve girêdayî ye, ne bi cureyê gazê. II rast e: dema enerjiyên kînetîk wekhev in, He ya siviktir (4 g/mol) ji CH4 (16 g/mol) bileztir e; li gorî zagona Graham rêjeya leza wan √(16/4) = 2 ye. III şaş e: lêketinên tenekên gaza îdeal elastîk in, di germahiya sabît de enerjiya kînetîk a giştî û zext bi demê re naguherin."
       }
@@ -1976,7 +1976,7 @@ export const unit12: ChemistryUnitSeedData = {
           "de": "Volumen gegen Celsius-Temperatur (t) bei konstantem Druck",
           "fr": "Volume en fonction de la température Celsius (t) à pression constante",
           "ru": "Объём — температура по Цельсию (t) при постоянном давлении",
-          "ar": "الحجم مقابل درجة الحرارة السلسيوسية (t) عند ثبات الضغط",
+          "ar": "الحجم مقابل درجة الحرارة بالسلسيوس (t) عند ثبات الضغط",
           "zh": "恒压下体积 – 摄氏温度(t)",
           "ku": "Di zexta sabît de qebare – germahiya Celsius (t)"
         },
@@ -2028,7 +2028,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Nach Charles gilt bei konstantem Druck V = k·T; der V–T(K)-Graph ist eine steigende Ursprungsgerade. Der V–t (Celsius)-Graph ist zwar auch linear, verläuft verlängert aber durch t = −273 °C, nicht durch den Ursprung. Bei konstanter Temperatur ist der P–V-Graph eine Hyperbel und der P·V–P-Graph eine waagerechte Gerade. Bei konstantem Volumen ist P proportional zu T, der P–1/T-Graph ist daher eine fallende Kurve, keine Gerade.",
         "fr": "D'après la loi de Charles, V = k·T à pression constante : le graphique V–T(K) est une droite croissante passant par l'origine. Le graphique V–t (Celsius) est aussi linéaire, mais prolongé il passe par t = −273 °C et non par l'origine. À température constante, le graphique P–V est une hyperbole et le graphique P·V–P une droite horizontale. À volume constant, P est proportionnelle à T, donc le graphique P–1/T est une courbe décroissante, pas une droite.",
         "ru": "По закону Шарля при постоянном давлении V = k·T, поэтому график V–T(K) — возрастающая прямая, проходящая через начало координат. График V–t(°C) тоже линейный, но при продолжении проходит не через начало координат, а через точку t = −273 °C. При постоянной температуре график P–V — гипербола, а график P·V–P — горизонтальная прямая. При постоянном объёме P прямо пропорционально T, поэтому график P–1/T — не прямая, а убывающая кривая.",
-        "ar": "وفق قانون شارل يكون V = k·T عند ثبات الضغط، لذا فالتمثيل V–T(K) خط مستقيم متزايد يمر بنقطة الأصل. والتمثيل V–t (Celsius) خطي أيضًا لكنه عند مده يمر بالنقطة t = −273 °C لا بنقطة الأصل. عند ثبات الحرارة يكون التمثيل P–V منحنى تناسب عكسي (قطعًا زائدًا)، والتمثيل P·V–P خطًا أفقيًا. وعند ثبات الحجم يتناسب P طرديًا مع T، لذا فالتمثيل P–1/T منحنى متناقص لا خط مستقيم.",
+        "ar": "وفق قانون شارل يكون V = k·T عند ثبات الضغط، لذا فالتمثيل V–T(K) خط مستقيم متزايد يمر بنقطة الأصل. والتمثيل V–t (°C) خطي أيضًا لكنه عند مده يمر بالنقطة t = −273 °C لا بنقطة الأصل. عند ثبات الحرارة يكون التمثيل P–V منحنى تناسب عكسي (قطعًا زائدًا)، والتمثيل P·V–P خطًا أفقيًا. وعند ثبات الحجم يتناسب P طرديًا مع T، لذا فالتمثيل P–1/T منحنى متناقص لا خط مستقيم.",
         "zh": "根据查理定律，恒压下 V = k·T，所以 V–T(K) 图像是过原点的上升直线。V–t(摄氏温度)图像虽然也是直线，但延长后经过 t = −273 °C，而不是原点。恒温下 P–V 图像是反比例曲线（双曲线），P·V–P 图像是一条水平线。恒容下 P 与 T 成正比，所以 P–1/T 图像是下降的曲线，而不是直线。",
         "ku": "Li gorî zagona Charles di zexta sabît de V = k·T ye; grafîka V–T(K) xêzeke rast a zêdebûyî ye ku di destpêkê re derbas dibe. Grafîka V–t (Celsius) jî xêzî ye lê dema tê dirêjkirin di t = −273 °C re derbas dibe, ne di destpêkê re. Di germahiya sabît de grafîka P–V xêzeke berevajî rêjeyî (hîperbol) ye, grafîka P·V–P jî xêzeke asoyî ye. Di qebareya sabît de P bi T re rasterast rêjeyî ye, loma grafîka P–1/T ne xêzeke rast, xêzeke kêmbûyî ya xwar e."
       }
@@ -2256,7 +2256,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Ein elastischer Ballon hält seinen Innendruck gleich dem Außendruck; in der Kälte sinkt die absolute Temperatur und damit auch das Volumen. Das ist die direkte Proportionalität von Volumen und absoluter Temperatur bei konstantem Druck (Charles). Das Zusammendrücken der verschlossenen Spritze und das Wachsen aufsteigender Blasen sind Beispiele für die Druck-Volumen-Beziehung bei etwa konstanter Temperatur (Boyle), der steigende Reifendruck für die Druck-Temperatur-Beziehung bei etwa konstantem Volumen (Gay-Lussac) und das Aufblasen des Ballons für die Stoffmenge-Volumen-Beziehung (Avogadro).",
         "fr": "Un ballon élastique garde une pression intérieure égale à la pression extérieure ; au froid, la température absolue baisse et le volume diminue aussi. C'est la proportionnalité entre volume et température absolue à pression constante (Charles). La compression de la seringue bouchée et le grossissement des bulles qui remontent illustrent la relation pression–volume à température à peu près constante (Boyle), la hausse de pression du pneu chaud la relation pression–température à volume à peu près constant (Gay-Lussac), et le ballon qu'on gonfle la relation quantité de matière–volume (Avogadro).",
         "ru": "У эластичного шарика внутреннее давление остаётся равным внешнему; на холоде абсолютная температура падает, и объём тоже уменьшается. Это прямая пропорциональность объёма и абсолютной температуры при постоянном давлении (закон Шарля). Сжатие закрытого шприца и рост поднимающихся пузырьков — примеры связи давления и объёма при почти постоянной температуре (закон Бойля — Мариотта), рост давления в нагретой шине — связи давления и температуры при почти постоянном объёме (закон Гей-Люссака), а увеличение надуваемого шарика — связи количества вещества и объёма (закон Авогадро).",
-        "ar": "يبقى الضغط داخل البالون المرن مساويًا للضغط الخارجي؛ وفي البرد تنخفض درجة الحرارة المطلقة فينقص الحجم أيضًا، وهذا هو التناسب الطردي بين الحجم ودرجة الحرارة المطلقة عند ثبات الضغط (شارل). أما ضغط المحقنة المسدودة وكِبَر الفقاعات الصاعدة فمثالان على علاقة الضغط بالحجم عند ثبات الحرارة تقريبًا (بويل)، وازدياد ضغط الإطار الساخن مثال على علاقة الضغط بالحرارة عند ثبات الحجم تقريبًا (غاي-لوساك)، وكِبَر البالون بالنفخ مثال على علاقة عدد المولات بالحجم (أفوجادرو).",
+        "ar": "يبقى الضغط داخل البالون المرن مساويًا للضغط الخارجي؛ وفي البرد تنخفض درجة الحرارة المطلقة فينقص الحجم أيضًا، وهذا هو التناسب الطردي بين الحجم ودرجة الحرارة المطلقة عند ثبات الضغط (شارل). أما ضغط المحقنة المسدودة وكِبَر الفقاعات الصاعدة فمثالان على علاقة الضغط بالحجم عند ثبات الحرارة تقريبًا (بويل)، وازدياد ضغط الإطار الساخن مثال على علاقة الضغط بالحرارة عند ثبات الحجم تقريبًا (جاي لوساك)، وكِبَر البالون بالنفخ مثال على علاقة عدد المولات بالحجم (أفوجادرو).",
         "zh": "弹性气球的内部压强始终等于外部压强；在寒冷处热力学温度降低，体积也随之减小，这是恒压下体积与热力学温度成正比的关系（查理定律）。压缩堵住的注射器、气泡上升时变大，是温度近似不变时压强与体积的关系（波义耳定律）；轮胎变热后胎压升高，是体积近似不变时压强与温度的关系（盖-吕萨克定律）；气球越吹越大，是物质的量与体积的关系（阿伏加德罗定律）。",
         "ku": "Zexta hundirê balona nerm bi zexta derve re wekhev dimîne; di sermayê de germahiya mutleq dadikeve û qebare jî kêm dibe. Ev rêjeya rasterast a qebare û germahiya mutleq di zexta sabît de ye (Charles). Pêçandina şiringeya girtî û mezinbûna bilbilên ku hildikişin mînakên têkiliya zext–qebare di germahiya nêzîkî sabît de ne (Boyle), zêdebûna zexta lastîka germ têkiliya zext–germahî di qebareya nêzîkî sabît de ye (Gay-Lussac), mezinbûna balonê bi pifkirinê jî têkiliya hejmara molan–qebare ye (Avogadro)."
       }

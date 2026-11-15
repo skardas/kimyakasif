@@ -820,8 +820,8 @@ export const UI_TRANSLATIONS: Record<LanguageCode, UIStrings> = {
   },
   ar: {
     appName: 'الكيمياء 3D',
-    appTagline: 'كيمياء TYT & AYT • جزيئات ثلاثية الأبعاد • 6 ألعاب مصغرة • 3,072 سؤالاً',
-    offlineReady: 'جاهز بدون إنترنت',
+    appTagline: 'كيمياء TYT وAYT • جزيئات ثلاثية الأبعاد • 6 ألعاب مصغرة • 3072 سؤالًا',
+    offlineReady: 'جاهز دون إنترنت',
     offlineModeActive: 'وضع عدم الاتصال مفعل',
     installApp: 'تثبيت التطبيق',
     nav: {
@@ -835,7 +835,7 @@ export const UI_TRANSLATIONS: Record<LanguageCode, UIStrings> = {
     stats: {
       xp: 'XP',
       level: 'المستوى',
-      streak: 'الحماس',
+      streak: 'السلسلة',
       solved: 'المحلولة',
       mastery: 'الإتقان',
       netScore: 'النتيجة الصافية',
@@ -850,7 +850,7 @@ export const UI_TRANSLATIONS: Record<LanguageCode, UIStrings> = {
     },
     curriculum: {
       heroTitle: 'منهج الكيمياء الشامل',
-      heroSubtitle: 'أتقن جميع الوحدات الـ 24 بنماذج ثلاثية الأبعاد و 3,072 سؤالاً.',
+      heroSubtitle: 'أتقن الوحدات الـ 24 كلها بنماذج ثلاثية الأبعاد و3072 سؤالًا.',
       totalUnitsLabel: 'وحدات',
       totalQuestionsLabel: 'أسئلة',
       questionsPerUnit: '128 سؤالاً لكل وحدة',
@@ -905,11 +905,11 @@ export const UI_TRANSLATIONS: Record<LanguageCode, UIStrings> = {
       synthesisTitle: 'مرجل التخليق الكيميائي',
       synthesisDesc: 'اختر المواد المتفاعلة والشروط الملائمة لتركيب المركب.',
       blitzTitle: 'كيم-بليتز 60 ثانية',
-      blitzDesc: 'أجب عن أسئلة صح/خطأ واكشف أفخاخ الامتحان بسرعة.',
+      blitzDesc: 'أجب عن أسئلة صح/خطأ واكشف فخاخ الامتحان بسرعة.',
     },
     exams: {
       title: 'مركز الامتحانات والتجارب',
-      subtitle: 'ارفع درجاتك الصافية باختبارات واقعية وفحص الأخطاء.',
+      subtitle: 'ارفع صافي درجاتك باختبارات واقعية ومراجعة الأخطاء.',
       modeUnitSets: 'مجموعات أسئلة الوحدة',
       modeUnitSetsDesc: '8 مجموعات من 16 سؤالاً لكل وحدة',
       modeTytTrial: 'امتحان TYT التجريبي',
@@ -934,7 +934,7 @@ export const UI_TRANSLATIONS: Record<LanguageCode, UIStrings> = {
       emptyCount: 'فارغ',
       osymNet: 'الصافي',
       explanationTitle: 'شرح الحل',
-      noMistakesYet: 'دفتر أخطائك نظيف تماماً! ستظهر الأخطاء هنا تلقائياً.',
+      noMistakesYet: 'دفتر أخطائك فارغ! ستظهر الأخطاء هنا تلقائيًا.',
     },
     profile: {
       title: 'الملف الشخصي والإعدادات',
@@ -945,7 +945,7 @@ export const UI_TRANSLATIONS: Record<LanguageCode, UIStrings> = {
       languageLabel: 'لغة التطبيق',
       resetProgress: 'إعادة ضبط كل التقدم',
       resetConfirmTitle: 'هل أنت متأكد من الحذف؟',
-      resetConfirmBody: 'سيتم مسح جميع الأسئلة المحلولة والنتائج بشكل نهائي.',
+      resetConfirmBody: 'ستُحذف جميع الأسئلة المحلولة والنتائج نهائيًا.',
       cancel: 'إلغاء',
       confirmReset: 'نعم، أعد الضبط',
       close: 'إغلاق',

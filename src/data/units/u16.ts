@@ -22,7 +22,7 @@ export const unit16: ChemistryUnitSeedData = {
     "de": "Enthalpie, Hesssches Gesetz und Bindungsenergien",
     "fr": "Enthalpie, loi de Hess et énergies de liaison",
     "ru": "Энтальпия, закон Гесса и энергии связи",
-    "ar": "المحتوى الحراري، قانون هيس وطاقة السندات",
+    "ar": "المحتوى الحراري، قانون هس وطاقة الروابط",
     "zh": "焓、盖斯定律与键能",
     "ku": "Enthalpy, Qanûna Hess û Enerjiyên Bond"
   },
@@ -35,7 +35,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Enthalpieänderung (ΔH): die bei einer Reaktion unter konstantem Druck aufgenommene oder abgegebene Wärme (ΔH = HProdukte - HEdukte).",
         "fr": "Variation d'enthalpie (ΔH) : chaleur absorbée ou dégagée lors d'une réaction à pression constante (ΔH = Hproduits - Hréactifs).",
         "ru": "Изменение энтальпии (ΔH) — теплота, поглощаемая или выделяемая в реакции при постоянном давлении (ΔH = Hпродуктов - Hреагентов).",
-        "ar": "تغير الإنثالبي (ΔH): هو كمية الحرارة الممتصة أو المنطلقة في تفاعل يحدث عند ضغط ثابت (ΔH = Hالنواتج - Hالمتفاعلات).",
+        "ar": "تغير المحتوى الحراري (ΔH): هو كمية الحرارة الممتصة أو المنطلقة في تفاعل يحدث عند ضغط ثابت (ΔH = Hالنواتج - Hالمتفاعلات).",
         "zh": "焓变(ΔH)：在恒压下进行的反应中吸收或放出的热量(ΔH = H生成物 - H反应物)。",
         "ku": "Guherîna entalpiyê (ΔH): germa ku di reaksiyoneke di bin zexta sabît de tê girtin an berdan (ΔH = Hberhem - Hreaktant)."
       },
@@ -45,7 +45,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Enthalpie ist eine Größe, die direkt gemessen werden kann, ihre Differenz kann nicht gemessen werden.",
         "fr": "L'enthalpie est une grandeur qui peut être mesurée directement, sa différence ne peut pas être mesurée.",
         "ru": "Энтальпию можно измерить непосредственно, а её изменение измерить нельзя.",
-        "ar": "الإنثالبي كمية يمكن قياسها مباشرة، ولا يمكن قياس فرقها.",
+        "ar": "المحتوى الحراري كمية يمكن قياسها مباشرة، أما التغير فيه فلا يمكن قياسه.",
         "zh": "焓可以直接测量，而焓的变化量无法测量。",
         "ku": "Entalpî mîqdarek e ku rasterast dikare were pîvandin, cûdahiya wê nayê pîvandin."
       },
@@ -121,7 +121,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Eine Reaktion, die Wärme abgibt und die Umgebung erwärmt, ist exotherm; bei einer endothermen Reaktion entzieht das System der Umgebung Wärme, deren Temperatur sinkt also.",
         "fr": "Une réaction qui cède de la chaleur et réchauffe le milieu est exothermique ; dans une réaction endothermique, le système prend de la chaleur au milieu, dont la température baisse.",
         "ru": "Реакция, которая отдаёт теплоту и нагревает окружающую среду, экзотермическая; в эндотермической реакции система забирает теплоту у окружающей среды, и температура среды понижается.",
-        "ar": "التفاعل الذي يُطلق الحرارة ويُدفئ الوسط هو تفاعل طارد للحرارة؛ أما في التفاعل الماص فيأخذ النظام الحرارة من الوسط فتنخفض درجة حرارته.",
+        "ar": "التفاعل الذي يُطلق الحرارة ويُدفئ الوسط هو تفاعل طارد للحرارة؛ أما في التفاعل الماص للحرارة فيأخذ النظام الحرارة من الوسط فتنخفض درجة حرارة الوسط.",
         "zh": "放出热量并使环境变热的是放热反应；吸热反应中体系从环境吸收热量，环境温度降低。",
         "ku": "Reaksiyona ku germê dide û hawîrdorê germ dike ekzotermîk e; di reaksiyona endotermîk de sîstem germê ji hawîrdorê digire, loma germahiya hawîrdorê dadikeve."
       }
@@ -144,7 +144,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Die Standardbildungsenthalpie aller Allotrope der Elemente wird als null angenommen.",
         "fr": "L'enthalpie standard de formation de toutes les formes allotropiques des éléments est considérée comme nulle.",
         "ru": "Стандартная энтальпия образования всех аллотропных модификаций элементов принимается равной нулю.",
-        "ar": "يُعتبر المحتوى الحراري القياسي للتكوين لجميع متآصلات العناصر صفرًا.",
+        "ar": "يُعدّ المحتوى الحراري القياسي للتكوين لجميع متآصلات العناصر صفرًا.",
         "zh": "元素的所有同素异形体的标准生成焓都规定为零。",
         "ku": "Entalpiya avabûnê ya standard a hemû alotropên elementan sifir tê qebûlkirin."
       },
@@ -167,7 +167,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Die Standardbildungsenthalpie der stabilsten Zustände der Elemente bei Raumbedingungen beträgt Null (O2(g)=0, C(Graphit)=0; O3(g)≠0, C(Diamant)≠0).",
         "fr": "L'enthalpie standard de formation des états les plus stables des éléments dans les conditions ambiantes est nulle (O2(g)=0, C(graphite)=0 ; O3(g)≠0, C(diamant)≠0).",
         "ru": "Стандартная энтальпия образования простых веществ в наиболее устойчивом при комнатных условиях состоянии равна нулю (O2(г)=0, C(графит)=0; O3(г)≠0, C(алмаз)≠0).",
-        "ar": "المحتوى الحراري للتكوين القياسي للحالات الأكثر استقرارًا للعناصر في ظروف الغرفة هو صفر (O2(g)=0, C(graphite)=0; O3(g)≠0, C(diamond)≠0).",
+        "ar": "المحتوى الحراري القياسي لتكوين العناصر في أكثر حالاتها استقرارًا في ظروف الغرفة يساوي صفرًا (O2(g) = 0، C(جرافيت) = 0؛ أما O3(g) ≠ 0 وC(ماس) ≠ 0).",
         "zh": "在 25 °C、1 atm 下，元素最稳定单质的标准生成焓为零(O2(g) = 0，C(石墨) = 0；O3(g) ≠ 0，C(金刚石) ≠ 0)。",
         "ku": "Entalpiya pêkhatina standard a rewşên herî bi îstîqrar ên hêmanan di şert û mercên odeyê de sifir e (O2(g)=0, C(grafît)=0; O3(g)≠0, C(almas)≠0)."
       },
@@ -177,7 +177,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Die Standardbildungsenthalpie von Diamant ist Null.",
         "fr": "L'enthalpie standard de formation du diamant est nulle.",
         "ru": "Стандартная энтальпия образования алмаза равна нулю.",
-        "ar": "المحتوى الحراري القياسي لتكوين الماس هو صفر.",
+        "ar": "المحتوى الحراري القياسي لتكوين الماس يساوي صفرًا.",
         "zh": "金刚石的标准生成焓为零。",
         "ku": "Entalpiya standard a pêkhatina almasê sifir e."
       },
@@ -187,7 +187,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Das stabilste Allotrop des Kohlenstoffs bei 25 °C und 1 atm ist Graphit; da die Bildung von Diamant aus Graphit mit einer Enthalpieänderung verbunden ist, ist ΔHf°(Diamant) nicht null (etwa +1,9 kJ/mol).",
         "fr": "L'allotrope le plus stable du carbone à 25 °C et 1 atm est le graphite ; comme la formation du diamant à partir du graphite s'accompagne d'une variation d'enthalpie, ΔHf°(diamant) n'est pas nul (environ +1,9 kJ/mol).",
         "ru": "Наиболее устойчивая аллотропная модификация углерода при 25 °C и 1 атм — графит; так как образование алмаза из графита сопровождается изменением энтальпии, ΔHf°(алмаз) не равна нулю (около +1,9 кДж/моль).",
-        "ar": "أكثر متآصلات الكربون استقرارًا عند 25 °C و1 atm هو الغرافيت؛ وبما أن تكوّن الماس من الغرافيت يصاحبه تغير في المحتوى الحراري فإن ΔHf°(الماس) ليست صفرًا (نحو +1,9 kJ/mol).",
+        "ar": "أكثر متآصلات الكربون استقرارًا عند 25 °C و1 atm هو الجرافيت؛ وبما أن تكوّن الماس من الجرافيت يصاحبه تغير في المحتوى الحراري فإن ΔHf°(الماس) ليست صفرًا (نحو +1.9 kJ/mol).",
         "zh": "25 °C、1 atm 下碳最稳定的同素异形体是石墨；由石墨生成金刚石伴随焓变，所以 ΔHf°(金刚石) 不为零(约 +1.9 kJ/mol)。",
         "ku": "Alotropa herî stabîl a karbonê li 25 °C û 1 atm grafît e; ji ber ku çêbûna almasê ji grafîtê bi guherîna entalpiyê re ye, ΔHf°(almas) ne sifir e (nêzîkî +1,9 kJ/mol)."
       }
@@ -200,7 +200,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Hesssches Gesetz: Wenn eine Reaktion als Summe von mehr als einem Schritt beschrieben werden kann, ist die Reaktionsenthalpie gleich der Summe der Enthalpien der Schritte.",
         "fr": "Loi de Hess : Si une réaction peut être écrite comme la somme de plusieurs étapes, l'enthalpie de la réaction est égale à la somme des enthalpies des étapes.",
         "ru": "Закон Гесса: если реакцию можно представить как сумму нескольких стадий, то её энтальпия равна сумме энтальпий этих стадий.",
-        "ar": "قانون هيس: إذا أمكن كتابة التفاعل على صورة مجموع أكثر من خطوة واحدة، فإن أنتالبية التفاعل تساوي مجموع أنتالبيات الخطوات.",
+        "ar": "قانون هس: إذا أمكن كتابة التفاعل على صورة مجموع خطوتين أو أكثر، فإن التغير في المحتوى الحراري للتفاعل يساوي مجموع التغيرات في المحتوى الحراري لهذه الخطوات.",
         "zh": "盖斯定律：如果一个反应可以表示为几个步骤的反应之和，则该反应的焓变等于各步反应焓变之和。",
         "ku": "Zagona Hess: Eger reaksiyonek bi kombûna ji yek gavan zêdetir were nivîsandin, entalpiya reaksiyonê bi kombûna entalpiyên gavan re ye."
       },
@@ -210,7 +210,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Bei umgekehrter Reaktion ändert sich das Vorzeichen von ΔH nicht.",
         "fr": "Si la réaction est inversée, le signe de ΔH ne change pas.",
         "ru": "Если записать реакцию в обратном направлении, знак ΔH не изменится.",
-        "ar": "إذا تم عكس التفاعل فإن إشارة ΔH لا تتغير.",
+        "ar": "إذا عُكس التفاعل فإن إشارة ΔH لا تتغير.",
         "zh": "将反应逆向书写时，ΔH 的符号不变。",
         "ku": "Ger reaksîyon berevajî be, nîşana ΔH naguhere."
       },
@@ -233,7 +233,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Bei umgekehrter Reaktion ändert sich das Vorzeichen von ΔH; Wenn es mit einem Koeffizienten multipliziert wird, wird ΔH auch mit demselben Koeffizienten multipliziert.",
         "fr": "Si la réaction est inversée, le signe de ΔH change ; S'il est multiplié par un coefficient, ΔH est également multiplié par le même coefficient.",
         "ru": "Если записать реакцию в обратном направлении, знак ΔH меняется; если умножить уравнение на коэффициент, ΔH умножается на тот же коэффициент.",
-        "ar": "إذا تم عكس التفاعل، تتغير إشارة ΔH؛ إذا تم ضربها بمعامل، يتم ضرب ΔH أيضًا بنفس المعامل.",
+        "ar": "إذا عُكس التفاعل تتغير إشارة ΔH؛ وإذا ضُرب في معامل تُضرب ΔH في المعامل نفسه.",
         "zh": "将反应逆向书写时，ΔH 变号；将反应式乘以某一系数时，ΔH 也乘以同一系数。",
         "ku": "Ger reaksîyon berevajî be, nîşana ΔH diguhere; Heger bi hevberekê were pirkirin, ΔH jî bi heman qasê tê zêdekirin."
       },
@@ -243,7 +243,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Wenn die Reaktion mit 2 multipliziert wird, bleibt der ΔH-Wert gleich.",
         "fr": "Lorsque la réaction est multipliée par 2, la valeur ΔH reste la même.",
         "ru": "При умножении уравнения реакции на 2 значение ΔH не меняется.",
-        "ar": "عندما يتم ضرب التفاعل بـ 2، تظل قيمة ΔH كما هي.",
+        "ar": "عند ضرب التفاعل في 2 تبقى قيمة ΔH كما هي.",
         "zh": "将反应式乘以 2 时，ΔH 的值不变。",
         "ku": "Dema ku reaksiyonê bi 2-ê zêde dibe, nirxa ΔH wekî xwe dimîne."
       },
@@ -253,7 +253,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "ΔH hängt von der Stoffmenge ab (extensive Größe); werden die Koeffizienten verdoppelt, verdoppeln sich auch die umgesetzte Stoffmenge und die aufgenommene bzw. abgegebene Wärme.",
         "fr": "ΔH dépend de la quantité de matière (grandeur extensive) ; si les coefficients sont doublés, la quantité qui réagit et la chaleur échangée doublent aussi.",
         "ru": "ΔH зависит от количества вещества (это экстенсивная величина); при удвоении коэффициентов удваиваются и количество прореагировавшего вещества, и поглощённая или выделившаяся теплота.",
-        "ar": "ΔH كمية تعتمد على كمية المادة (كمية مقدارية)؛ فعند مضاعفة المعاملات تتضاعف كمية المادة المتفاعلة والحرارة الممتصة أو المنطلقة أيضًا.",
+        "ar": "ΔH كمية شاملة تعتمد على كمية المادة؛ فعند مضاعفة المعاملات تتضاعف كمية المادة المتفاعلة وتتضاعف معها الحرارة الممتصة أو المنطلقة.",
         "zh": "ΔH 与物质的量有关（广度量）；化学计量数加倍时，参加反应的物质的量以及吸收或放出的热量也加倍。",
         "ku": "ΔH mezinahiyeke girêdayî mîqdara maddeyê ye (ekstensîf); dema rêjeyan du qat dibin, mîqdara maddeya ku reaksiyon dike û germa tê girtin an dayîn jî du qat dibe."
       }
@@ -276,7 +276,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Bei der Berechnung der Bindungsenergie werden gebrochene Bindungen von gebildeten Bindungen abgezogen.",
         "fr": "Dans le calcul de l’énergie des liaisons, les liaisons rompues sont soustraites des liaisons formées.",
         "ru": "При расчёте ΔH по энергиям связей энергию разрываемых связей вычитают из энергии образующихся связей.",
-        "ar": "في حساب طاقة الرابطة، يتم طرح الروابط المكسورة من الروابط المشكلة.",
+        "ar": "في حساب ΔH من طاقات الروابط تُطرح طاقات الروابط المكسورة من طاقات الروابط المتكونة.",
         "zh": "用键能计算时，用形成的键的键能减去断裂的键的键能。",
         "ku": "Di hesabkirina enerjiya girêdanê de, bendên şikestî ji bendên çêkirî têne derxistin."
       },
@@ -299,7 +299,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Die Bildung chemischer Bindungen ist immer exotherm (ΔH < 0); Der Bindungsbruch ist immer endotherm (ΔH > 0).",
         "fr": "La formation de liaisons chimiques est toujours exothermique (ΔH < 0) ; la rupture de liaison est toujours endothermique (ΔH > 0).",
         "ru": "Образование химической связи всегда экзотермично (ΔH < 0); разрыв связи всегда эндотермичен (ΔH > 0).",
-        "ar": "يكون تكوين الرابطة الكيميائية دائمًا طاردًا للحرارة (ΔH < 0)؛ يكون كسر الروابط دائمًا ماصًا للحرارة (ΔH > 0).",
+        "ar": "تكوين الرابطة الكيميائية طارد للحرارة دائمًا (ΔH < 0)، وكسر الرابطة ماص للحرارة دائمًا (ΔH > 0).",
         "zh": "化学键的形成总是放热的(ΔH < 0)；化学键的断裂总是吸热的(ΔH > 0)。",
         "ku": "Çêbûna girêdana kîmyewî her dem germ e (ΔH < 0); şikandina girêdanê her tim endotermîk e (ΔH > 0)."
       },
@@ -309,7 +309,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Beim Aufbrechen der kovalenten Bindung wird große Wärme an die Umgebung abgegeben.",
         "fr": "Lorsque la liaison covalente est rompue, une chaleur élevée est libérée dans l’environnement.",
         "ru": "При разрыве ковалентной связи в окружающую среду выделяется много теплоты.",
-        "ar": "عند كسر الرابطة التساهمية، يتم إطلاق حرارة عالية في البيئة.",
+        "ar": "عند كسر الرابطة التساهمية تنطلق حرارة كبيرة إلى الوسط المحيط.",
         "zh": "共价键断裂时向环境放出大量热量。",
         "ku": "Ji ber ku girêdana kovalentê tê şikestin, germa zêde ber bi hawîrdorê ve tê berdan."
       },
@@ -332,7 +332,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Der aktivierte Komplex ist eine Ansammlung hochenergetischer und instabiler Atome am Höhepunkt der Reaktion.",
         "fr": "Le complexe activé est un ensemble d’atomes instables et à haute énergie au sommet de la réaction.",
         "ru": "Активированный комплекс — неустойчивая группировка атомов с высокой энергией, соответствующая вершине энергетического профиля реакции.",
-        "ar": "المجمع المنشط عبارة عن مجموعة من الذرات عالية الطاقة وغير المستقرة في ذروة التفاعل.",
+        "ar": "المعقد المنشط مجموعة من الذرات عالية الطاقة وغير مستقرة توجد عند قمة مسار التفاعل.",
         "zh": "活化络合物是反应过程中处于能量最高点、能量高且不稳定的原子集合体。",
         "ku": "Kompleksa aktîfkirî berhevokek ji atomên bi enerjiya bilind û ne aram di lûtkeya reaksiyonê de ye."
       },
@@ -342,7 +342,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Der aktivierte Komplex ist eine stabile Substanz, die isoliert und in einem Fläschchen aufbewahrt werden kann.",
         "fr": "Le complexe activé est une substance stable qui peut être isolée et stockée dans un flacon.",
         "ru": "Активированный комплекс — устойчивое вещество, которое можно выделить и хранить в склянке.",
-        "ar": "المركب المنشط عبارة عن مادة مستقرة يمكن عزلها وتخزينها في قارورة.",
+        "ar": "المعقد المنشّط مادة مستقرة يمكن عزلها وحفظها في قارورة.",
         "zh": "活化络合物是一种稳定的物质，可以分离出来并装在瓶中保存。",
         "ku": "Kompleksa aktîfkirî maddeyek stabîl e ku dikare were veqetandin û di şûşeyek de were hilanîn."
       },
@@ -365,7 +365,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Vorwärtsaktivierungsenergie (Eai) und Rückwärtsaktivierungsenergie (Eag) sind immer positive Werte.",
         "fr": "L'énergie d'activation directe (Eai) et l'énergie d'activation inverse (Eag) sont toujours des valeurs positives.",
         "ru": "Энергия активации прямой реакции Ea(пр) и энергия активации обратной реакции Ea(обр) всегда положительны.",
-        "ar": "تعتبر طاقة التنشيط الأمامية (Eai) وطاقة التنشيط العكسية (Eag) قيمًا موجبة دائمًا.",
+        "ar": "طاقة التنشيط الأمامية (Eai) وطاقة التنشيط العكسية (Eag) قيمتان موجبتان دائمًا.",
         "zh": "正反应活化能(Eai)和逆反应活化能(Eag)总是正值。",
         "ku": "Enerjiya çalakkirina pêş (Eai) û enerjiya çalakkirina berevajî (Eag) her gav nirxên erênî ne."
       },
@@ -375,7 +375,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Bei exothermen Reaktionen nimmt Eai einen negativen Wert an.",
         "fr": "Dans les réactions exothermiques, Eai prend une valeur négative.",
         "ru": "В экзотермических реакциях Ea(пр) отрицательна.",
-        "ar": "في التفاعلات الطاردة للحرارة، يأخذ Eai قيمة سلبية.",
+        "ar": "في التفاعلات الطاردة للحرارة تكون قيمة Eai سالبة.",
         "zh": "放热反应的 Eai 为负值。",
         "ku": "Di reaksiyonên ekzotermîk de Eai nirxeke negatîf digire."
       },
@@ -398,7 +398,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Die Reaktionsenthalpie lässt sich auch aus den Aktivierungsenergien ermitteln: ΔH = Eai – Eag.",
         "fr": "L'enthalpie de réaction peut également être trouvée à partir des énergies d'activation : ΔH = Eai - Eag.",
         "ru": "Энтальпию реакции можно найти и по энергиям активации: ΔH = Ea(пр) - Ea(обр).",
-        "ar": "يمكن أيضًا العثور على المحتوى الحراري للتفاعل من طاقات التنشيط: ΔH = Eai - Eag.",
+        "ar": "يمكن أيضًا إيجاد المحتوى الحراري للتفاعل من طاقتي التنشيط: ΔH = Eai - Eag.",
         "zh": "反应焓变也可由活化能求出：ΔH = Eai - Eag。",
         "ku": "Entalpiya reaksiyonê jî ji enerjiyên aktîfkirinê tê dîtin: ΔH = Eai - Eag."
       },
@@ -408,7 +408,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "ΔH = Eag – Eai.",
         "fr": "ΔH = Eag - Eai.",
         "ru": "ΔH = Eag - Eai.",
-        "ar": "ΔH = إيج - إيا.",
+        "ar": "ΔH = Eag - Eai.",
         "zh": "ΔH = Eag - Eai。",
         "ku": "ΔH = Eag - Eai."
       },
@@ -431,7 +431,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Gefrieren, Kondensation, Resublimation (Gas → Feststoff) und im Allgemeinen das Lösen von Gasen in Wasser sind exotherm.",
         "fr": "La solidification, la liquéfaction, la condensation solide (gaz → solide) et, en général, la dissolution des gaz dans l'eau sont exothermiques.",
         "ru": "Замерзание, конденсация, десублимация (газ → твёрдое) и, как правило, растворение газов в воде экзотермичны.",
-        "ar": "التجمد والتكاثف والترسيب (تحول الغاز إلى صلب) وذوبان الغازات في الماء بوجه عام عمليات طاردة للحرارة.",
+        "ar": "التجمد والتكاثف والترسب (تحول الغاز إلى صلب مباشرة) وذوبان الغازات في الماء بوجه عام عمليات طاردة للحرارة.",
         "zh": "凝固、液化、凝华（气 → 固）以及一般情况下气体溶于水都是放热过程。",
         "ku": "Cemidîn, şilbûn (kondensasyon), depozîsyon (gaz → hişk) û bi giştî helbûna gazan di avê de ekzotermîk in."
       },
@@ -441,7 +441,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Bei der Resublimation nimmt der Stoff Wärme aus der Umgebung auf.",
         "fr": "Lors de la condensation solide (gaz → solide), la substance absorbe de la chaleur du milieu extérieur.",
         "ru": "При десублимации вещество поглощает теплоту из окружающей среды.",
-        "ar": "أثناء الترسيب (تحول الغاز إلى صلب) تمتص المادة حرارة من الوسط المحيط.",
+        "ar": "أثناء الترسب (تحول الغاز إلى صلب مباشرة) تمتص المادة حرارة من الوسط المحيط.",
         "zh": "凝华过程中物质从环境吸收热量。",
         "ku": "Di dema depozîsyonê de (gaz → hişk) madde germê ji hawîrdorê distîne."
       },
@@ -451,7 +451,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Bei der Resublimation geht ein Gas direkt in einen Feststoff über, und beim Ausbilden der Anziehungskräfte zwischen den Teilchen wird Energie frei; Wärme aufnehmend ist der Umkehrvorgang, die Sublimation.",
         "fr": "Lors de la condensation solide, le gaz passe directement à l'état solide et de l'énergie est libérée quand les attractions entre particules s'établissent ; le processus qui absorbe de la chaleur est l'inverse, la sublimation.",
         "ru": "При десублимации газ сразу переходит в твёрдое состояние, и при возникновении притяжения между частицами выделяется энергия; теплоту поглощает обратный процесс — сублимация.",
-        "ar": "في الترسيب يتحول الغاز مباشرة إلى صلب وتنطلق طاقة عند تكوّن قوى التجاذب بين الجسيمات؛ أما العملية الماصة للحرارة فهي العكسية، أي التسامي.",
+        "ar": "في الترسب يتحول الغاز مباشرة إلى صلب وتنطلق طاقة عند تكوّن قوى التجاذب بين الجسيمات؛ أما العملية الماصة للحرارة فهي العملية العكسية، أي التسامي.",
         "zh": "凝华时气体直接变成固体，粒子间形成吸引作用时放出能量；吸热的是其逆过程升华。",
         "ku": "Di depozîsyonê de gaz rasterast dibe hişk û dema kişandinên navbera perçeyan çêdibin enerjî derdikeve; bûyera ku germê digire berevajiya wê, sublîmasyon e."
       }
@@ -464,7 +464,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Schmelzen, Verdampfen, Sublimation und Entzug von Elektronen aus gasförmigen Atomen (Ionisation) sind endotherm.",
         "fr": "La fusion, l'évaporation, la sublimation et l'élimination des électrons des atomes gazeux (ionisation) sont endothermiques.",
         "ru": "Плавление, испарение, сублимация и отрыв электрона от атома в газовой фазе (ионизация) — эндотермические процессы.",
-        "ar": "إن الانصهار والتبخر والتسامي وإزالة الإلكترونات من الذرات الغازية (التأين) هي مواد ماصة للحرارة.",
+        "ar": "الانصهار والتبخر والتسامي ونزع الإلكترون من الذرة في الحالة الغازية (التأين) عمليات ماصة للحرارة.",
         "zh": "熔化、汽化、升华以及使气态原子失去电子（电离）都是吸热过程。",
         "ku": "Hêlbûn, helandin, binavkirin û rakirina elektronan ji atomên gazê (iyonîzasyon) endotermîk in."
       },
@@ -484,7 +484,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Um ein Elektron der Anziehung des Kerns zu entreißen, muss Energie zugeführt werden; daher ist die Ionisierungsenergie positiv und der Vorgang endotherm.",
         "fr": "Il faut fournir de l'énergie pour arracher un électron à l'attraction du noyau ; l'énergie d'ionisation est donc positive et le processus endothermique.",
         "ru": "Чтобы оторвать электрон, преодолев притяжение ядра, нужно затратить энергию; поэтому энергия ионизации положительна, а процесс эндотермический.",
-        "ar": "يجب تزويد طاقة لانتزاع الإلكترون من جذب النواة؛ لذلك تكون طاقة التأين قيمة موجبة وتكون العملية ماصة للحرارة.",
+        "ar": "يلزم تزويد الذرة بطاقة من الخارج لانتزاع الإلكترون من جذب النواة؛ لذلك تكون طاقة التأين قيمة موجبة وتكون العملية ماصة للحرارة.",
         "zh": "要使电子摆脱原子核的吸引必须提供能量，因此电离能为正值，该过程是吸热的。",
         "ku": "Ji bo ku elektron ji kişandina navokê were qetandin divê enerjî ji derve were dayîn; ji ber vê yekê enerjiya îyonbûnê erênî ye û bûyer endotermîk e."
       }
@@ -507,7 +507,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Die Bildung von Wasser im gasförmigen oder flüssigen Zustand hat keinen Einfluss auf die Reaktionsenthalpie.",
         "fr": "La formation d’eau à l’état gazeux ou liquide n’affecte pas l’enthalpie de réaction.",
         "ru": "Образуется ли вода в газообразном или в жидком состоянии, на энтальпию реакции не влияет.",
-        "ar": "لا يؤثر تكوين الماء في الحالة الغازية أو السائلة على المحتوى الحراري للتفاعل.",
+        "ar": "لا يؤثر كون الماء الناتج غازًا أو سائلًا في المحتوى الحراري للتفاعل.",
         "zh": "生成气态水还是液态水，对反应焓变没有影响。",
         "ku": "Çêbûna avê di rewşa gazê an şilek de bandorê li entalpiya reaksiyonê nake."
       },
@@ -530,7 +530,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Bei exothermen Reaktionen haben die Produkte eine geringere potentielle Energie (Enthalpie) als die Edukte und sind daher stabiler als diese.",
         "fr": "Dans les réactions exothermiques, les produits ont une énergie potentielle (enthalpie) plus faible que les réactifs ; ils sont donc plus stables que les réactifs.",
         "ru": "В экзотермических реакциях потенциальная энергия (энтальпия) продуктов ниже, чем у реагентов, поэтому продукты устойчивее реагентов.",
-        "ar": "في التفاعلات الطاردة للحرارة تكون الطاقة الكامنة (الإنثالبي) للنواتج أقل منها للمتفاعلات، لذا تكون النواتج أكثر استقرارًا من المتفاعلات.",
+        "ar": "في التفاعلات الطاردة للحرارة تكون الطاقة الكامنة (المحتوى الحراري) للنواتج أقل منها للمتفاعلات، لذا تكون النواتج أكثر استقرارًا من المتفاعلات.",
         "zh": "放热反应中生成物的势能（焓）低于反应物，因此生成物比反应物更稳定。",
         "ku": "Di reaksiyonên ekzotermîk de enerjiya potansiyel (entalpî) ya berheman ji ya reaktantan kêmtir e, ji ber vê berhem ji reaktantan stabîltir in."
       },
@@ -763,7 +763,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Satz von Hess",
         "fr": "La loi de Hess",
         "ru": "Закон Гесса",
-        "ar": "قانون هيس",
+        "ar": "قانون هس",
         "zh": "盖斯定律",
         "ku": "Qanûna Hess"
       },
@@ -783,7 +783,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Satz von Hess: Die Reaktionsenthalpie ist unabhängig vom eingeschlagenen Reaktionsweg; 1. Hauptsatz der Thermodynamik: Energie kann weder erzeugt noch vernichtet werden.",
         "fr": "La loi de Hess stipule que l'enthalpie de réaction est indépendante du chemin suivi ; La 1ère loi stipule que l’énergie ne peut être ni créée ni détruite.",
         "ru": "Закон Гесса утверждает, что энтальпия реакции не зависит от пути её протекания; первый закон термодинамики утверждает, что энергия не возникает из ничего и не исчезает бесследно.",
-        "ar": "ينص قانون هيس على أن المحتوى الحراري للتفاعل مستقل عن المسار المتبع؛ وينص القانون الأول للديناميكا الحرارية على أن الطاقة لا تُستحدث ولا تفنى.",
+        "ar": "ينص قانون هس على أن المحتوى الحراري للتفاعل مستقل عن المسار المتبع؛ وينص القانون الأول للديناميكا الحرارية على أن الطاقة لا تُستحدث ولا تفنى.",
         "zh": "盖斯定律指出，反应焓变与反应途径无关；而热力学第一定律指出，能量既不能凭空产生，也不能凭空消失。",
         "ku": "Qanûna Hess dibêje ku entalpiya reaksiyonê ji riya ku tê şopandin serbixwe ye; qanûna 1. ya termodînamîkê dibêje ku enerjî ne tê afirandin ne jî tune dibe."
       }
@@ -816,7 +816,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Aktivierter Komplex: die kurzlebige, instabile und nicht isolierbare Struktur am Gipfel des Energiediagramms; stabiles Produkt: ein isolierbarer Stoff in einer Energiesenke des Diagramms.",
         "fr": "Complexe activé : structure instantanée, instable et non isolable située au sommet du diagramme d'énergie potentielle ; produit stable : substance isolable située dans un creux du diagramme.",
         "ru": "Активированный комплекс — мгновенно существующая неустойчивая структура на вершине диаграммы потенциальной энергии, которую нельзя выделить; устойчивый продукт — вещество в энергетической впадине диаграммы, которое можно выделить.",
-        "ar": "المعقد المنشط بنية لحظية غير مستقرة لا يمكن عزلها توجد عند قمة مخطط الطاقة الكامنة؛ أما الناتج فمادة مستقرة يمكن عزلها توجد في قاع المخطط.",
+        "ar": "المعقد المنشط بنية لحظية غير مستقرة لا يمكن عزلها توجد عند قمة مخطط الطاقة الكامنة؛ أما الناتج المستقر فمادة يمكن عزلها توجد في قاع المخطط.",
         "zh": "活化络合物是势能图顶点处瞬间存在、不稳定且无法分离的结构；而稳定的生成物位于势能图的低谷处，可以分离出来。",
         "ku": "Kompleksa aktîfkirî avahiya kêliyî, ne stabîl û neveqetandî ye ku li serê grafîka enerjiya potansiyel e; berhem jî maddeyeke stabîl e ku di çala grafîkê de ye û dikare were veqetandin."
       }
@@ -831,7 +831,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Schritte zur Anwendung des Satzes von Hess",
         "fr": "Étapes d'application de la loi de Hess",
         "ru": "Этапы применения закона Гесса",
-        "ar": "خطوات تطبيق قانون هيس",
+        "ar": "تطبيق قانون هس",
         "zh": "盖斯定律的应用步骤",
         "ku": "Gavên sepandina Qanûna Hess"
       },
@@ -1007,7 +1007,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "Die potentielle Energie der Reaktanten wird aus dem Diagramm abgelesen",
           "fr": "L'énergie potentielle des réactifs est lue sur le graphique",
           "ru": "По графику определяют потенциальную энергию реагентов",
-          "ar": "تتم قراءة الطاقة الكامنة للمواد المتفاعلة من الرسم البياني",
+          "ar": "تُقرأ الطاقة الكامنة للمواد المتفاعلة من المخطط",
           "zh": "从图中读取反应物的势能",
           "ku": "Enerjiya potansiyela reaktantan ji grafikê tê xwendin"
         },
@@ -1053,7 +1053,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Wenn die Vorwärtsaktivierungsenergie einer chemischen Reaktion Eai = 85 kJ und die Rückwärtsaktivierungsenergie Eag = 130 kJ beträgt, wie groß ist dann die Reaktionsenthalpie (ΔH) in kJ?",
         "fr": "Si l'énergie d'activation directe d'une réaction chimique est Eai = 85 kJ et l'énergie d'activation inverse Eag = 130 kJ, quelle est l'enthalpie de réaction (ΔH) en kJ ?",
         "ru": "Энергия активации прямой реакции Ea(пр) = 85 кДж, энергия активации обратной реакции Ea(обр) = 130 кДж. Чему равна энтальпия реакции (ΔH) в кДж?",
-        "ar": "إذا كانت طاقة التنشيط الأمامية للتفاعل الكيميائي هي Eai = 85 kJ وطاقة التنشيط العكسية Eag = 130 kJ، فما هو المحتوى الحراري للتفاعل (ΔH) بـ kJ؟",
+        "ar": "إذا كانت طاقة التنشيط الأمامية لتفاعل كيميائي Eai = 85 kJ وطاقة التنشيط العكسية Eag = 130 kJ، فكم يبلغ المحتوى الحراري للتفاعل (ΔH) بوحدة kJ؟",
         "zh": "某化学反应的正反应活化能 Eai = 85 kJ，逆反应活化能 Eag = 130 kJ，该反应的焓变(ΔH)是多少 kJ？",
         "ku": "Ger enerjiya aktîvkirina pêş a reaksiyona kîmyayî Eai = 85 kJ û enerjiya aktîvkirina berevajî Eag = 130 kJ be, entalpîya reaksiyonê (ΔH) di kJ de çi ye?"
       },
@@ -1064,7 +1064,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "-45 kJ",
           "fr": "-45 kJ",
           "ru": "-45 кДж",
-          "ar": "-45 كيلوجول",
+          "ar": "-45 kJ",
           "zh": "-45 kJ",
           "ku": "-45 kJ"
         },
@@ -1074,7 +1074,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "+45 kJ",
           "fr": "+45 kJ",
           "ru": "+45 кДж",
-          "ar": "+45 كيلوجول",
+          "ar": "+45 kJ",
           "zh": "+45 kJ",
           "ku": "+45 kJ"
         },
@@ -1084,7 +1084,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "+215 kJ",
           "fr": "+215 kJ",
           "ru": "+215 кДж",
-          "ar": "+215 كيلوجول",
+          "ar": "+215 kJ",
           "zh": "+215 kJ",
           "ku": "+215 kJ"
         },
@@ -1094,7 +1094,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "-215 kJ",
           "fr": "-215 kJ",
           "ru": "-215 кДж",
-          "ar": "-215 كيلوجول",
+          "ar": "-215 kJ",
           "zh": "-215 kJ",
           "ku": "-215 kJ"
         },
@@ -1104,7 +1104,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "+85 kJ",
           "fr": "+85 kJ",
           "ru": "+85 кДж",
-          "ar": "+85 كيلوجول",
+          "ar": "+85 kJ",
           "zh": "+85 kJ",
           "ku": "+85 kJ"
         }
@@ -1116,7 +1116,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "ΔH = Eai – Eag = 85 – 130 = –45 kJ (exotherme Reaktion).",
         "fr": "ΔH = Eai - Eag = 85 - 130 = -45 kJ (réaction exothermique).",
         "ru": "ΔH = Ea(пр) - Ea(обр) = 85 - 130 = -45 кДж (экзотермическая реакция).",
-        "ar": "ΔH = Eai - Eag = 85 - 130 = -45 كيلوجول (تفاعل طارد للحرارة).",
+        "ar": "ΔH = Eai - Eag = 85 - 130 = -45 kJ (تفاعل طارد للحرارة).",
         "zh": "ΔH = Eai - Eag = 85 - 130 = -45 kJ（放热反应）。",
         "ku": "ΔH = Eai - Eag = 85 - 130 = -45 kJ (reaksiyona exotermîk)."
       }
@@ -1129,7 +1129,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Welcher der folgenden Stoffe hat eine standardmäßige molare Bildungsenthalpie von Null bei 25 °C und 1 atm?",
         "fr": "Laquelle des substances suivantes a une enthalpie molaire standard de formation de zéro à 25 °C et 1 atm ?",
         "ru": "Для какого из следующих веществ стандартная молярная энтальпия образования при 25 °C и 1 атм принимается равной нулю?",
-        "ar": "أي من المواد التالية يكون المحتوى الحراري المولي القياسي لها صفرًا عند درجة حرارة 25 °C و1 atm؟",
+        "ar": "أيّ المواد الآتية يُعدّ المحتوى الحراري المولي القياسي لتكوينها صفرًا عند 25 °C و1 atm؟",
         "zh": "下列物质中，哪一种在 25 °C、1 atm 下的标准摩尔生成焓规定为零？",
         "ku": "Kîjan ji maddeyên jêrîn di 25 °C û 1 atm de entalpiya molarê ya standard sifir e?"
       },
@@ -1192,7 +1192,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Die Standardbildungsenthalpie der stabilsten allotropen und physikalischen Zustände der Elemente bei Raumbedingungen ist Null: O2(g) = 0.",
         "fr": "L'enthalpie standard de formation de l'allotrope et des états physiques les plus stables des éléments dans les conditions ambiantes est nulle : O2(g) = 0.",
         "ru": "Стандартная энтальпия образования простого вещества в наиболее устойчивых при комнатных условиях аллотропной модификации и агрегатном состоянии равна нулю: O2(г) = 0.",
-        "ar": "المحتوى الحراري القياسي لتكوين المتآصلة الأكثر استقرارًا والحالات الفيزيائية للعناصر في ظروف الغرفة هو صفر: O2(g) = 0.",
+        "ar": "المحتوى الحراري القياسي لتكوين العناصر في أكثر متآصلاتها وحالاتها الفيزيائية استقرارًا في ظروف الغرفة يساوي صفرًا: O2(g) = 0.",
         "zh": "在 25 °C、1 atm 下，元素最稳定的同素异形体和物态的标准生成焓为零：O2(g) = 0。",
         "ku": "Entalpiya standard a pêkhatina allotrope û rewşa fîzîkî ya herî stabîl a hêmanan di şert û mercên odeyê de sifir e: O2(g) = 0."
       }
@@ -1205,7 +1205,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Wie groß ist nach der Reaktion C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l) die molare Verbrennungsenthalpie von Propan in kJ? (ΔHf°: C3H8(g) = −104 kJ/mol, CO2(g) = −394 kJ/mol, H2O(l) = −286 kJ/mol)",
         "fr": "D'après la réaction C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l), quelle est l'enthalpie molaire de combustion du propane en kJ ? (ΔHf° : C3H8(g) = −104 kJ/mol, CO2(g) = −394 kJ/mol, H2O(l) = −286 kJ/mol)",
         "ru": "Чему равна молярная энтальпия сгорания пропана (кДж) по реакции C3H8(г) + 5O2(г) → 3CO2(г) + 4H2O(ж)? (ΔHf°: C3H8(г) = −104 кДж/моль, CO2(г) = −394 кДж/моль, H2O(ж) = −286 кДж/моль)",
-        "ar": "وفقًا للتفاعل C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l)، كم تبلغ المحتوى الحراري المولي لاحتراق البروبان بوحدة kJ؟ (ΔHf°: C3H8(g) = −104 kJ/mol، CO2(g) = −394 kJ/mol، H2O(l) = −286 kJ/mol)",
+        "ar": "وفقًا للتفاعل C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l)، كم يبلغ المحتوى الحراري المولي لاحتراق البروبان بوحدة kJ؟ (ΔHf°: C3H8(g) = −104 kJ/mol، CO2(g) = −394 kJ/mol، H2O(l) = −286 kJ/mol)",
         "zh": "根据反应 C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l)，丙烷的摩尔燃烧焓是多少 kJ？(ΔHf°：C3H8(g) = −104 kJ/mol，CO2(g) = −394 kJ/mol，H2O(l) = −286 kJ/mol)",
         "ku": "Li gorî reaksiyona C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l), entalpiya şewitandinê ya molar a propanê çend kJ ye? (ΔHf°: C3H8(g) = −104 kJ/mol, CO2(g) = −394 kJ/mol, H2O(l) = −286 kJ/mol)"
       },
@@ -1344,7 +1344,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Die Wärme steht auf der Eduktseite, also ist die Reaktion endotherm und ΔH = +57 kJ; ΔH = −57 kJ anzunehmen heißt, die Seite der Wärme falsch zu deuten. Bei einer endothermen Reaktion ist die Enthalpie der Produkte höher als die der Edukte, und die Umgebung kühlt ab. Die 57 kJ gehören zur Bildung von 2 mol NO2; für 1 mol NO2 werden 28,5 kJ aufgenommen. Beim Umkehren wird ΔH = −57 kJ, also setzt 2NO2(g) → N2O4(g) 57 kJ Wärme frei.",
         "fr": "La chaleur est écrite du côté des réactifs : la réaction est endothermique et ΔH = +57 kJ ; prendre ΔH = −57 kJ revient à mal lire le côté où figure la chaleur. Dans une réaction endothermique, l'enthalpie des produits est supérieure à celle des réactifs et le milieu se refroidit. Les 57 kJ correspondent à la formation de 2 mol de NO2 ; pour 1 mol de NO2, 28,5 kJ sont absorbés. En inversant la réaction, ΔH = −57 kJ : la réaction 2NO2(g) → N2O4(g) libère 57 kJ.",
         "ru": "Теплота записана в левой части (со стороны реагентов), значит, реакция эндотермическая и ΔH = +57 кДж; ответ ΔH = −57 кДж — результат неверного прочтения того, с какой стороны записана теплота. В эндотермической реакции энтальпия продуктов выше, чем у реагентов, и окружающая среда охлаждается. 57 кДж относятся к образованию 2 моль NO2; на 1 моль NO2 поглощается 28,5 кДж. Для обратной реакции ΔH = −57 кДж, то есть в реакции 2NO2(г) → N2O4(г) выделяется 57 кДж теплоты.",
-        "ar": "كُتبت الحرارة في جهة المتفاعلات، فالتفاعل ماص للحرارة وΔH = +57 kJ؛ واعتبار ΔH = −57 kJ خطأ في قراءة جهة كتابة الحرارة. في التفاعل الماص يكون المحتوى الحراري للنواتج أعلى من المتفاعلات ويبرد الوسط. الـ 57 kJ تخص تكوّن 2 mol من NO2؛ أما 1 mol من NO2 فيمتص 28,5 kJ. وعند عكس التفاعل تصبح ΔH = −57 kJ، أي أن التفاعل 2NO2(g) → N2O4(g) يُطلق 57 kJ من الحرارة.",
+        "ar": "كُتبت الحرارة في جهة المتفاعلات، فالتفاعل ماص للحرارة وΔH = +57 kJ؛ واعتبار ΔH = −57 kJ خطأ في قراءة جهة كتابة الحرارة. في التفاعل الماص يكون المحتوى الحراري للنواتج أعلى من المتفاعلات ويبرد الوسط. الـ 57 kJ تخص تكوّن 2 mol من NO2؛ أما 1 mol من NO2 فيمتص 28.5 kJ. وعند عكس التفاعل تصبح ΔH = −57 kJ، أي أن التفاعل 2NO2(g) → N2O4(g) يُطلق 57 kJ من الحرارة.",
         "zh": "热量写在反应物一侧，反应吸热，ΔH = +57 kJ；把 ΔH 当成 −57 kJ 是看错了热量所在的一侧。吸热反应中生成物的焓高于反应物，环境变冷。57 kJ 对应生成 2 mol NO2，生成 1 mol NO2 只吸收 28.5 kJ。将反应逆转得 ΔH = −57 kJ，即 2NO2(g) → N2O4(g) 放出 57 kJ 热量。",
         "ku": "Germ li aliyê reaktantan hatiye nivîsandin, loma reaksiyon endotermîk e û ΔH = +57 kJ ye; girtina ΔH wek −57 kJ şaş xwendina aliyê germê ye. Di reaksiyona endotermîk de entalpiya berheman ji ya reaktantan bilindtir e û hawîrdor sar dibe. 57 kJ ji bo çêbûna 2 mol NO2 ye; ji bo 1 mol NO2 28,5 kJ tê girtin. Dema reaksiyon berevajî dibe ΔH = −57 kJ e, ango di 2NO2(g) → N2O4(g) de 57 kJ germ derdikeve."
       }
@@ -1509,7 +1509,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Im Energiediagramm der einstufigen Reaktion X(g) → Y(g) liest man ab: potentielle Energie der Edukte 40 kJ, des aktivierten Komplexes 150 kJ, der Produkte 90 kJ. Welche der Aussagen I. Die Reaktion ist exotherm. II. Die Aktivierungsenergie der Hinreaktion beträgt 110 kJ. III. Die Aktivierungsenergie der Rückreaktion beträgt 50 kJ. sind richtig?",
         "fr": "Sur le diagramme d'énergie potentielle de la réaction en une étape X(g) → Y(g), on lit : énergie potentielle des réactifs 40 kJ, du complexe activé 150 kJ, des produits 90 kJ. Parmi les affirmations I. La réaction est exothermique. II. L'énergie d'activation de la réaction directe vaut 110 kJ. III. L'énergie d'activation de la réaction inverse vaut 50 kJ. lesquelles sont correctes ?",
         "ru": "На диаграмме потенциальной энергии одностадийной реакции X(г) → Y(г) потенциальная энергия реагентов равна 40 кДж, активированного комплекса — 150 кДж, продуктов — 90 кДж. Какие из утверждений верны? I. Реакция экзотермическая. II. Энергия активации прямой реакции равна 110 кДж. III. Энергия активации обратной реакции равна 50 кДж.",
-        "ar": "في مخطط الطاقة الكامنة للتفاعل أحادي الخطوة X(g) → Y(g) تُقرأ الطاقة الكامنة للمتفاعلات 40 kJ، وللمعقد المنشط 150 kJ، وللنواتج 90 kJ. بناءً على ذلك، أي العبارات I. التفاعل طارد للحرارة. II. طاقة تنشيط التفاعل الأمامي 110 kJ. III. طاقة تنشيط التفاعل العكسي 50 kJ. صحيحة؟",
+        "ar": "في مخطط الطاقة الكامنة للتفاعل أحادي الخطوة X(g) → Y(g) تُقرأ الطاقة الكامنة للمتفاعلات 40 kJ، وللمعقد المنشط 150 kJ، وللنواتج 90 kJ. بناءً على ذلك، أيّ العبارات الآتية صحيحة؟ I. التفاعل طارد للحرارة. II. طاقة تنشيط التفاعل الأمامي 110 kJ. III. طاقة تنشيط التفاعل العكسي 50 kJ.",
         "zh": "一步完成的反应 X(g) → Y(g) 的势能图中，读得反应物势能为 40 kJ，活化络合物势能为 150 kJ，生成物势能为 90 kJ。据此有下列说法：I. 该反应是放热反应。II. 正反应的活化能为 110 kJ。III. 逆反应的活化能为 50 kJ。其中正确的是哪些？",
         "ku": "Di grafîka enerjiya potansiyel a reaksiyona yek-gavî X(g) → Y(g) de enerjiya potansiyel a reaktantan 40 kJ, ya kompleksa aktîfkirî 150 kJ û ya berheman 90 kJ tê xwendin. Li gorî vê, kîjan ji van gotinan rast in? I. Reaksiyon ekzotermîk e. II. Enerjiya aktîvasyonê ya reaksiyona pêşve 110 kJ ye. III. Enerjiya aktîvasyonê ya reaksiyona paşve 50 kJ ye."
       },
@@ -1672,7 +1672,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "71,5",
           "fr": "71,5",
           "ru": "71,5",
-          "ar": "71,5",
+          "ar": "71.5",
           "zh": "71.5",
           "ku": "71,5"
         },
@@ -1724,7 +1724,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "n(H2) = 4/2 = 2 mol, n(O2) = 16/32 = 0,5 mol. Laut Gleichung reagieren 0,5 mol O2 mit 1 mol H2; O2 ist der limitierende Reaktant, 1 mol H2 bleibt übrig. Da pro verbrauchtem mol O2 572 kJ frei werden, setzen 0,5 mol O2 0,5 × 572 = 286 kJ frei. Wer H2 für limitierend hält, erhält 572 kJ; wer für jedes der 2 mol H2 572 kJ rechnet, 1144 kJ.",
         "fr": "n(H2) = 4/2 = 2 mol, n(O2) = 16/32 = 0,5 mol. D'après l'équation, 0,5 mol de O2 réagit avec 1 mol de H2 ; O2 est le réactif limitant et il reste 1 mol de H2. Comme 572 kJ sont libérés par mole de O2 consommée, 0,5 mol de O2 libère 0,5 × 572 = 286 kJ. Prendre H2 comme limitant donne 572 kJ ; compter 572 kJ pour chacune des 2 mol de H2 donne 1144 kJ.",
         "ru": "n(H2) = 4/2 = 2 моль, n(O2) = 16/32 = 0,5 моль. По уравнению 0,5 моль O2 реагирует с 1 моль H2; O2 — лимитирующий реагент, 1 моль H2 остаётся в избытке. На 1 моль израсходованного O2 выделяется 572 кДж, значит на 0,5 моль O2 — 0,5 × 572 = 286 кДж. Если считать лимитирующим H2, получится 572 кДж; если брать по 572 кДж на каждый из 2 моль H2 — 1144 кДж.",
-        "ar": "n(H2) = 4/2 = 2 mol، n(O2) = 16/32 = 0,5 mol. وفق المعادلة يتفاعل 0,5 mol من O2 مع 1 mol من H2؛ فـ O2 هو المتفاعل المحدِّد ويتبقى 1 mol من H2. وبما أن 572 kJ تنطلق لكل 1 mol من O2 مستهلك، فإن 0,5 mol من O2 تُطلق 0,5 × 572 = 286 kJ. من يعتبر H2 هو المحدِّد يحصل على 572 kJ، ومن يحسب 572 kJ لكل مول من 2 mol من H2 يحصل على 1144 kJ.",
+        "ar": "n(H2) = 4/2 = 2 mol، n(O2) = 16/32 = 0.5 mol. وفق المعادلة يتفاعل 0.5 mol من O2 مع 1 mol من H2؛ فـ O2 هو المادة المحددة للتفاعل ويتبقى 1 mol من H2. وبما أن 572 kJ تنطلق لكل 1 mol من O2 مستهلك، فإن 0.5 mol من O2 تُطلق 0.5 × 572 = 286 kJ. من يعتبر H2 المادة المحددة للتفاعل يحصل على 572 kJ، ومن يحسب 572 kJ لكل مول من 2 mol من H2 يحصل على 1144 kJ.",
         "zh": "n(H2) = 4/2 = 2 mol，n(O2) = 16/32 = 0.5 mol。按方程式 0.5 mol O2 与 1 mol H2 反应；O2 是限量反应物，H2 剩余 1 mol。每消耗 1 mol O2 放出 572 kJ，故 0.5 mol O2 放出 0.5 × 572 = 286 kJ。误把 H2 当作限量反应物得 572 kJ；按 2 mol H2 每摩尔放出 572 kJ 计算得 1144 kJ。",
         "ku": "n(H2) = 4/2 = 2 mol, n(O2) = 16/32 = 0,5 mol. Li gorî hevkêşeyê 0,5 mol O2 bi 1 mol H2 re reaksiyon dike; O2 pêkhateya sînordar e û 1 mol H2 dimîne. Ji ber ku ji bo her 1 mol O2 yê xerckirî 572 kJ derdikeve, ji bo 0,5 mol O2 0,5 × 572 = 286 kJ germ derdikeve. Yê ku H2 sînordar dihesibîne 572 kJ, yê ku ji bo her molek ji 2 mol H2 572 kJ digire 1144 kJ dibîne."
       }
@@ -1748,7 +1748,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "221,5",
           "fr": "221,5",
           "ru": "221,5",
-          "ar": "221,5",
+          "ar": "221.5",
           "zh": "221.5",
           "ku": "221,5"
         },
@@ -1758,7 +1758,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "354,5",
           "fr": "354,5",
           "ru": "354,5",
-          "ar": "354,5",
+          "ar": "354.5",
           "zh": "354.5",
           "ku": "354,5"
         },
@@ -1768,7 +1768,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "463,5",
           "fr": "463,5",
           "ru": "463,5",
-          "ar": "463,5",
+          "ar": "463.5",
           "zh": "463.5",
           "ku": "463,5"
         },
@@ -1800,7 +1800,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "ΔH = Σ(gespalten) − Σ(gebildet). Gespaltene Bindungen: 2 H–H + 1 O=O = 2(436) + 498 = 1370 kJ. Gebildete Bindungen: 2 H2O-Moleküle enthalten 4 O–H-Bindungen = 4x. −484 = 1370 − 4x → 4x = 1854 → x = 463,5 kJ/mol. Wer vergisst, dass jedes Wassermolekül zwei O–H-Bindungen hat (2x), erhält 927; wer ΔH positiv einsetzt (4x = 1370 − 484), 221,5 kJ/mol.",
         "fr": "ΔH = Σ(rompues) − Σ(formées). Liaisons rompues : 2 H–H + 1 O=O = 2(436) + 498 = 1370 kJ. Liaisons formées : 2 molécules de H2O contiennent 4 liaisons O–H = 4x. −484 = 1370 − 4x → 4x = 1854 → x = 463,5 kJ/mol. Oublier que chaque molécule d'eau possède deux liaisons O–H (écrire 2x) donne 927 ; prendre ΔH positif (4x = 1370 − 484) donne 221,5 kJ/mol.",
         "ru": "ΔH = Σ(разрываемых) − Σ(образующихся). Разрываются: 2 H–H + 1 O=O = 2(436) + 498 = 1370 кДж. Образуются: в 2 молекулах H2O 4 связи O–H = 4x. −484 = 1370 − 4x → 4x = 1854 → x = 463,5 кДж/моль. Если забыть, что в каждой молекуле воды две связи O–H, и написать 2x, получится 927; если взять ΔH положительной (4x = 1370 − 484) — 221,5 кДж/моль.",
-        "ar": "ΔH = Σ(المكسورة) − Σ(المتكونة). الروابط المكسورة: 2 H–H + 1 O=O = 2(436) + 498 = 1370 kJ. الروابط المتكونة: في جزيئين من H2O توجد 4 روابط O–H = 4x. −484 = 1370 − 4x → 4x = 1854 → x = 463,5 kJ/mol. من ينسى أن في كل جزيء ماء رابطتين O–H ويكتب 2x يحصل على 927، ومن يأخذ ΔH موجبة (4x = 1370 − 484) يحصل على 221,5 kJ/mol.",
+        "ar": "ΔH = Σ(المكسورة) − Σ(المتكونة). الروابط المكسورة: 2 H–H + 1 O=O = 2(436) + 498 = 1370 kJ. الروابط المتكونة: في جزيئين من H2O توجد 4 روابط O–H = 4x. −484 = 1370 − 4x → 4x = 1854 → x = 463.5 kJ/mol. من ينسى أن في كل جزيء ماء رابطتين O–H ويكتب 2x يحصل على 927، ومن يأخذ ΔH موجبة (4x = 1370 − 484) يحصل على 221.5 kJ/mol.",
         "zh": "ΔH = Σ(断裂) − Σ(形成)。断裂的键：2 H–H + 1 O=O = 2(436) + 498 = 1370 kJ。形成的键：2 个 H2O 分子含 4 个 O–H 键 = 4x。−484 = 1370 − 4x → 4x = 1854 → x = 463.5 kJ/mol。忘记每个水分子有两个 O–H 键(写成 2x)得 927；把 ΔH 当作正值(4x = 1370 − 484)得 221.5 kJ/mol。",
         "ku": "ΔH = Σ(şikestî) − Σ(çêbûyî). Girêdanên şikestî: 2 H–H + 1 O=O = 2(436) + 498 = 1370 kJ. Girêdanên çêbûyî: di 2 molekulên H2O de 4 girêdanên O–H = 4x. −484 = 1370 − 4x → 4x = 1854 → x = 463,5 kJ/mol. Yê ku ji bîr dike ku di her molekula avê de du girêdanên O–H hene (2x dinivîse) 927, yê ku ΔH erênî digire (4x = 1370 − 484) 221,5 kJ/mol dibîne."
       }
@@ -1889,7 +1889,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Die mittleren Bindungsenergien einiger Bindungen sind H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol. Welche der Aussagen I. Von diesen drei Bindungen ist die H–F-Bindung die stärkste. II. Um 1 mol HBr(g) in gasförmige H- und Br-Atome zu zerlegen, sind 366 kJ nötig. III. Der Vorgang H(g) + Cl(g) → HCl(g) ist endotherm. sind richtig?",
         "fr": "Les énergies moyennes de quelques liaisons sont H–F : 567 kJ/mol, H–Cl : 431 kJ/mol, H–Br : 366 kJ/mol. Parmi les affirmations I. Des trois liaisons, la plus solide est la liaison H–F. II. Il faut 366 kJ pour séparer 1 mol de HBr(g) en atomes H et Br gazeux. III. Le processus H(g) + Cl(g) → HCl(g) est endothermique. lesquelles sont correctes ?",
         "ru": "Средние энергии некоторых связей: H–F — 567 кДж/моль, H–Cl — 431 кДж/моль, H–Br — 366 кДж/моль. Какие из утверждений верны? I. Из этих трёх связей самая прочная — H–F. II. Чтобы разложить 1 моль HBr(г) на атомы H и Br в газовой фазе, нужно 366 кДж. III. Процесс H(г) + Cl(г) → HCl(г) эндотермический.",
-        "ar": "متوسطات طاقات بعض الروابط: H–F: 567 kJ/mol، H–Cl: 431 kJ/mol، H–Br: 366 kJ/mol. بناءً على ذلك، أي العبارات I. أقوى هذه الروابط الثلاث هي الرابطة H–F. II. يلزم 366 kJ لفصل 1 mol من HBr(g) إلى ذرات H وBr غازية. III. العملية H(g) + Cl(g) → HCl(g) ماصة للحرارة. صحيحة؟",
+        "ar": "متوسطات طاقات بعض الروابط: H–F: 567 kJ/mol، H–Cl: 431 kJ/mol، H–Br: 366 kJ/mol. بناءً على ذلك، أيّ العبارات الآتية صحيحة؟ I. أقوى هذه الروابط الثلاث هي الرابطة H–F. II. يلزم 366 kJ لفصل 1 mol من HBr(g) إلى ذرات H وBr غازية. III. العملية H(g) + Cl(g) → HCl(g) ماصة للحرارة.",
         "zh": "一些化学键的平均键能为 H–F 567 kJ/mol、H–Cl 431 kJ/mol、H–Br 366 kJ/mol。据此有下列说法：I. 三种键中最牢固的是 H–F 键。II. 将 1 mol HBr(g) 分解为气态 H 原子和 Br 原子需要 366 kJ 能量。III. 过程 H(g) + Cl(g) → HCl(g) 是吸热的。其中正确的是哪些？",
         "ku": "Enerjiyên girêdanê yên navînî yên hin girêdanan H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol in. Li gorî vê, kîjan ji van gotinan rast in? I. Di nav van sê girêdanan de girêdana herî xurt H–F ye. II. Ji bo veqetandina 1 mol HBr(g) bo atomên H û Br ên gazî 366 kJ enerjî pêwîst e. III. Bûyera H(g) + Cl(g) → HCl(g) endotermîk e."
       },
@@ -2016,7 +2016,7 @@ export const unit16: ChemistryUnitSeedData = {
           "de": "C(Graphit) + 2H2(g) → CH4(g)",
           "fr": "C(graphite) + 2H2(g) → CH4(g)",
           "ru": "C(графит) + 2H2(г) → CH4(г)",
-          "ar": "C(غرافيت) + 2H2(g) → CH4(g)",
+          "ar": "C(جرافيت) + 2H2(g) → CH4(g)",
           "zh": "C(石墨) + 2H2(g) → CH4(g)",
           "ku": "C(grafît) + 2H2(g) → CH4(g)"
         }
@@ -2028,7 +2028,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Bei einer Standardbildungsreaktion muss 1 mol Verbindung aus den Elementen in ihrem stabilsten Zustand bei 25 °C und 1 atm entstehen. C(Graphit) und H2(g) sind die stabilsten Zustände, und es entsteht 1 mol CH4; dieses ΔH ist ΔHf°(CH4). Die Reaktion mit 2 mol H2O hat die doppelte Bildungsenthalpie; Diamant ist nicht das stabilste Allotrop des Kohlenstoffs; CO ist eine Verbindung, kein Element; Natrium ist bei 25 °C fest, Na(g) ist nicht sein stabilster Zustand.",
         "fr": "Dans une réaction standard de formation, 1 mol de composé doit se former à partir des corps simples dans leur état le plus stable à 25 °C et 1 atm. C(graphite) et H2(g) sont les états les plus stables et il se forme 1 mol de CH4 : ce ΔH est ΔHf°(CH4). La réaction formant 2 mol de H2O correspond au double de l'enthalpie de formation ; le diamant n'est pas l'allotrope le plus stable du carbone ; CO est un composé, pas un corps simple ; le sodium est solide à 25 °C, Na(g) n'est pas son état le plus stable.",
         "ru": "В стандартной реакции образования 1 моль соединения должен получаться из простых веществ в их наиболее устойчивом при 25 °C и 1 атм состоянии. C(графит) и H2(г) — наиболее устойчивые состояния, и образуется 1 моль CH4, поэтому ΔH этой реакции равна ΔHf°(CH4). ΔH реакции с образованием 2 моль H2O вдвое больше энтальпии образования; алмаз — не самая устойчивая аллотропная модификация углерода; CO — сложное вещество, а не простое; натрий при 25 °C твёрдый, поэтому Na(г) — не его устойчивое состояние.",
-        "ar": "في تفاعل التكوين القياسي يجب أن يتكوّن 1 mol من المركب من العناصر في أكثر حالاتها استقرارًا عند 25 °C و1 atm. الغرافيت وH2(g) هما الحالتان الأكثر استقرارًا ويتكوّن 1 mol من CH4، فتكون ΔH لهذا التفاعل هي ΔHf°(CH4). التفاعل الذي يكوّن 2 mol من H2O قيمته ضعف المحتوى الحراري للتكوين؛ والماس ليس أكثر متآصلات الكربون استقرارًا؛ وCO مركب لا عنصر؛ والصوديوم صلب عند 25 °C فـ Na(g) ليست حالته الأكثر استقرارًا.",
+        "ar": "في تفاعل التكوين القياسي يجب أن يتكوّن 1 mol من المركب من العناصر في أكثر حالاتها استقرارًا عند 25 °C و1 atm. الجرافيت وH2(g) هما الحالتان الأكثر استقرارًا ويتكوّن 1 mol من CH4، فتكون ΔH لهذا التفاعل هي ΔHf°(CH4). التفاعل الذي يكوّن 2 mol من H2O قيمته ضعف المحتوى الحراري للتكوين؛ والماس ليس أكثر متآصلات الكربون استقرارًا؛ وCO مركب لا عنصر؛ والصوديوم صلب عند 25 °C فـ Na(g) ليست حالته الأكثر استقرارًا.",
         "zh": "标准生成反应要求由处于 25 °C、1 atm 下最稳定状态的单质生成 1 mol 化合物。石墨和 H2(g) 都是最稳定状态，且生成 1 mol CH4，所以该 ΔH 就是 ΔHf°(CH4)。生成 2 mol H2O 的反应焓变是生成焓的 2 倍；金刚石不是碳最稳定的同素异形体；CO 是化合物而非单质；钠在 25 °C 为固态，Na(g) 不是其最稳定状态。",
         "ku": "Di reaksiyona avabûnê ya standard de divê 1 mol pêkhate ji elementên di rewşa xwe ya herî stabîl de li 25 °C û 1 atm çêbibe. C(grafît) û H2(g) rewşên herî stabîl in û 1 mol CH4 çêdibe; ΔH ya vê reaksiyonê ΔHf°(CH4) e. Reaksiyona ku 2 mol H2O çêdike du qatê entalpiya avabûnê ye; almas alotropa herî stabîl a karbonê nîne; CO pêkhate ye, ne element; sodyûm li 25 °C hişk e, Na(g) ne rewşa wê ya herî stabîl e."
       }
@@ -2041,7 +2041,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Beim Mischen zweier Lösungen in einem Reagenzglas läuft eine Reaktion ab, und die Schülerin, die das Glas hält, spürt, dass es deutlich warm wird. Welche der Aussagen I. ΔH < 0. II. Die Gesamtenergie der gespaltenen Bindungen ist größer als die der gebildeten Bindungen. III. Die Aktivierungsenergie der Hinreaktion ist kleiner als die der Rückreaktion. sind für diese Reaktion richtig?",
         "fr": "Lorsqu'on mélange deux solutions dans un tube à essai, une réaction a lieu et l'élève qui tient le tube le sent nettement se réchauffer. Pour cette réaction, parmi les affirmations I. ΔH < 0. II. L'énergie totale des liaisons rompues est supérieure à celle des liaisons formées. III. L'énergie d'activation de la réaction directe est inférieure à celle de la réaction inverse. lesquelles sont correctes ?",
         "ru": "При смешивании двух растворов в пробирке протекает реакция, и ученик, держащий пробирку, чувствует, что она заметно нагрелась. Какие из утверждений об этой реакции верны? I. ΔH < 0. II. Суммарная энергия разрываемых связей больше суммарной энергии образующихся связей. III. Энергия активации прямой реакции меньше, чем обратной.",
-        "ar": "عند مزج محلولين في أنبوب اختبار يحدث تفاعل، ويشعر الطالب الذي يمسك الأنبوب بأنه سخن بوضوح. بالنسبة لهذا التفاعل، أي العبارات I. ΔH < 0. II. الطاقة الكلية للروابط المكسورة أكبر من الطاقة الكلية للروابط المتكونة. III. طاقة تنشيط التفاعل الأمامي أصغر من طاقة تنشيط التفاعل العكسي. صحيحة؟",
+        "ar": "عند مزج محلولين في أنبوب اختبار يحدث تفاعل، ويشعر الطالب الذي يمسك الأنبوب بأنه سخن بوضوح. بالنسبة لهذا التفاعل، أيّ العبارات الآتية صحيحة؟ I. ΔH < 0. II. الطاقة الكلية للروابط المكسورة أكبر من الطاقة الكلية للروابط المتكونة. III. طاقة تنشيط التفاعل الأمامي أصغر من طاقة تنشيط التفاعل العكسي.",
         "zh": "在试管中混合两种溶液时发生反应，握着试管的学生感到试管明显变热。对于该反应，有下列说法：I. ΔH < 0。II. 断裂的键的总能量大于形成的键的总能量。III. 正反应的活化能小于逆反应的活化能。其中正确的是哪些？",
         "ku": "Dema du çareserî di lûleya ceribandinê de tên tevlihevkirin reaksiyonek pêk tê û xwendekarê ku lûleyê digire hîs dike ku ew bi awayekî eşkere germ dibe. Ji bo vê reaksiyonê kîjan ji van gotinan rast in? I. ΔH < 0 e. II. Enerjiya giştî ya girêdanên şikestî ji ya girêdanên çêbûyî mezintir e. III. Enerjiya aktîvasyonê ya reaksiyona pêşve ji ya reaksiyona paşve piçûktir e."
       },
@@ -2193,7 +2193,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "C(Graphit) + O2(g) → CO2(g)  ΔH1 = −393,5 kJ; C(Diamant) + O2(g) → CO2(g)  ΔH2 = −395,4 kJ. Welche der Aussagen I. Bei 25 °C und 1 atm ist Graphit stabiler als Diamant. II. Die Umwandlung von Graphit in Diamant ist endotherm. III. Die Standardbildungsenthalpie von Diamant beträgt +1,9 kJ/mol. sind demnach richtig?",
         "fr": "C(graphite) + O2(g) → CO2(g)  ΔH1 = −393,5 kJ ; C(diamant) + O2(g) → CO2(g)  ΔH2 = −395,4 kJ. D'après ces données, parmi les affirmations I. À 25 °C et 1 atm, le graphite est plus stable que le diamant. II. La transformation du graphite en diamant est endothermique. III. L'enthalpie standard de formation du diamant vaut +1,9 kJ/mol. lesquelles sont correctes ?",
         "ru": "C(графит) + O2(г) → CO2(г)  ΔH1 = −393,5 кДж; C(алмаз) + O2(г) → CO2(г)  ΔH2 = −395,4 кДж. Какие из утверждений верны? I. При 25 °C и 1 атм графит устойчивее алмаза. II. Превращение графита в алмаз эндотермическое. III. Стандартная энтальпия образования алмаза равна +1,9 кДж/моль.",
-        "ar": "C(غرافيت) + O2(g) → CO2(g)  ΔH1 = −393,5 kJ؛ C(الماس) + O2(g) → CO2(g)  ΔH2 = −395,4 kJ. بناءً على ذلك، أي العبارات I. عند 25 °C و1 atm يكون الغرافيت أكثر استقرارًا من الماس. II. تحوّل الغرافيت إلى ماس ماص للحرارة. III. المحتوى الحراري القياسي لتكوين الماس يساوي +1,9 kJ/mol. صحيحة؟",
+        "ar": "C(جرافيت) + O2(g) → CO2(g)  ΔH1 = −393.5 kJ؛ C(الماس) + O2(g) → CO2(g)  ΔH2 = −395.4 kJ. بناءً على ذلك، أيّ العبارات الآتية صحيحة؟ I. عند 25 °C و1 atm يكون الجرافيت أكثر استقرارًا من الماس. II. تحوّل الجرافيت إلى ماس ماص للحرارة. III. المحتوى الحراري القياسي لتكوين الماس يساوي +1.9 kJ/mol.",
         "zh": "C(石墨) + O2(g) → CO2(g)  ΔH1 = −393.5 kJ；C(金刚石) + O2(g) → CO2(g)  ΔH2 = −395.4 kJ。据此有下列说法：I. 25 °C、1 atm 下石墨比金刚石稳定。II. 石墨转化为金刚石是吸热的。III. 金刚石的标准生成焓为 +1.9 kJ/mol。其中正确的是哪些？",
         "ku": "C(grafît) + O2(g) → CO2(g)  ΔH1 = −393,5 kJ; C(almas) + O2(g) → CO2(g)  ΔH2 = −395,4 kJ. Li gorî van agahiyan kîjan ji van gotinan rast in? I. Li 25 °C û 1 atm grafît ji almasê stabîltir e. II. Veguherîna grafîtê bo almasê endotermîk e. III. Entalpiya avabûnê ya standard a almasê +1,9 kJ/mol e."
       },
@@ -2256,7 +2256,7 @@ export const unit16: ChemistryUnitSeedData = {
         "de": "Schreibt man die erste Reaktion unverändert und addiert die Umkehrung der zweiten, erhält man C(Graphit) → C(Diamant), ΔH = −393,5 + 395,4 = +1,9 kJ. Da ΔH > 0, ist die Umwandlung endotherm: II ist richtig. Diamant ist energiereicher als Graphit, der energieärmere Graphit ist also stabiler: I ist richtig. Graphit ist der Standardzustand des Kohlenstoffs, daher ist C(Graphit) → C(Diamant) die Bildungsreaktion von Diamant; ΔHf°(Diamant) = +1,9 kJ/mol, auch III ist richtig.",
         "fr": "En gardant la première réaction et en ajoutant l'inverse de la seconde, on obtient C(graphite) → C(diamant), ΔH = −393,5 + 395,4 = +1,9 kJ. ΔH > 0 : la transformation est endothermique, II est vraie. Le diamant a une énergie plus élevée que le graphite ; le graphite, moins énergétique, est plus stable : I est vraie. Le graphite étant l'état standard du carbone, C(graphite) → C(diamant) est la réaction de formation du diamant ; ΔHf°(diamant) = +1,9 kJ/mol, III est vraie aussi.",
         "ru": "Если первую реакцию оставить без изменений, а вторую записать в обратном направлении и сложить их, получим C(графит) → C(алмаз), ΔH = −393,5 + 395,4 = +1,9 кДж. Так как ΔH > 0, превращение эндотермическое — II верно. Энергия алмаза выше, чем у графита; графит с меньшей энергией устойчивее — I верно. Графит — стандартное состояние углерода, поэтому C(графит) → C(алмаз) — реакция образования алмаза; ΔHf°(алмаз) = +1,9 кДж/моль, III тоже верно.",
-        "ar": "بكتابة التفاعل الأول كما هو وجمعه مع عكس التفاعل الثاني نحصل على C(غرافيت) → C(الماس)، ΔH = −393,5 + 395,4 = +1,9 kJ. وبما أن ΔH > 0 فالتحول ماص للحرارة، فالعبارة II صحيحة. طاقة الماس أعلى من طاقة الغرافيت، فالغرافيت الأقل طاقة أكثر استقرارًا، والعبارة I صحيحة. والغرافيت هو الحالة القياسية للكربون، لذا فالتفاعل C(غرافيت) → C(الماس) هو تفاعل تكوين الماس؛ ΔHf°(الماس) = +1,9 kJ/mol، فالعبارة III صحيحة أيضًا.",
+        "ar": "بكتابة التفاعل الأول كما هو وجمعه مع عكس التفاعل الثاني نحصل على C(جرافيت) → C(الماس)، ΔH = −393.5 + 395.4 = +1.9 kJ. وبما أن ΔH > 0 فالتحول ماص للحرارة، فالعبارة II صحيحة. طاقة الماس أعلى من طاقة الجرافيت، فالجرافيت الأقل طاقة أكثر استقرارًا، والعبارة I صحيحة. والجرافيت هو الحالة القياسية للكربون، لذا فالتفاعل C(جرافيت) → C(الماس) هو تفاعل تكوين الماس؛ ΔHf°(الماس) = +1.9 kJ/mol، فالعبارة III صحيحة أيضًا.",
         "zh": "保留第一个反应、将第二个反应逆转后相加，得 C(石墨) → C(金刚石)，ΔH = −393.5 + 395.4 = +1.9 kJ。ΔH > 0，转化吸热，II 正确。金刚石的能量高于石墨，能量较低的石墨更稳定，I 正确。石墨是碳的标准状态，所以 C(石墨) → C(金刚石) 就是金刚石的生成反应；ΔHf°(金刚石) = +1.9 kJ/mol，III 也正确。",
         "ku": "Heke reaksiyona yekem wek xwe were nivîsandin û ya duyem berevajî bibe û werin berhevkirin, C(grafît) → C(almas), ΔH = −393,5 + 395,4 = +1,9 kJ tê dîtin. Ji ber ku ΔH > 0, veguherîn endotermîk e: II rast e. Enerjiya almasê ji ya grafîtê bilindtir e; grafîta bi enerjiya kêmtir stabîltir e: I rast e. Grafît rewşa standard a karbonê ye, loma C(grafît) → C(almas) reaksiyona avabûna almasê ye; ΔHf°(almas) = +1,9 kJ/mol, III jî rast e."
       }

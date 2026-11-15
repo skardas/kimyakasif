@@ -22,7 +22,7 @@ export const unit11: ChemistryUnitSeedData = {
     "de": "Quantenzahlen, Aufbau und Elektronenkonfigurationen",
     "fr": "Nombres quantiques, Aufbau et configurations électroniques",
     "ru": "Квантовые числа, принцип наименьшей энергии и электронные конфигурации",
-    "ar": "أرقام الكم، أوفباو وتكوينات الإلكترون",
+    "ar": "أعداد الكم ومبدأ أوفباو والتوزيعات الإلكترونية",
     "zh": "量子数、构造原理与电子排布",
     "ku": "Hejmarên Quantum, Aufbau û Vesazkirinên Elektronê"
   },
@@ -35,7 +35,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Die Hauptquantenzahl (n) gibt den durchschnittlichen Abstand des Elektrons vom Kern und sein Hauptenergieniveau an (n = 1, 2, 3...).",
         "fr": "Le nombre quantique principal (n) indique la distance moyenne de l'électron au noyau et son niveau d'énergie principal (n = 1, 2, 3...).",
         "ru": "Главное квантовое число (n) характеризует энергетический уровень электрона и его среднее удаление от ядра (n = 1, 2, 3...).",
-        "ar": "يشير رقم الكم الرئيسي (n) إلى متوسط مسافة الإلكترون من النواة ومستوى طاقته الرئيسي (n = 1، 2، 3...).",
+        "ar": "يدل عدد الكم الرئيس (n) على متوسط بعد الإلكترون عن النواة وعلى مستوى الطاقة الرئيس (n = 1، 2، 3...).",
         "zh": "主量子数(n)表示电子所处的能层及其离核的平均距离(n = 1, 2, 3...)。",
         "ku": "Hejmara kuantûmê ya sereke (n) dûrahiya navîn a elektronê ji navokê û asta enerjiya wê ya sereke (n = 1, 2, 3...) nîşan dide."
       },
@@ -45,7 +45,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Die Hauptquantenzahl gibt die Orientierung des Orbitals im Raum an.",
         "fr": "Le nombre quantique principal spécifie l'orientation de l'orbitale dans l'espace.",
         "ru": "Главное квантовое число определяет ориентацию орбитали в пространстве.",
-        "ar": "يحدد رقم الكم الرئيسي اتجاه المدار في الفضاء.",
+        "ar": "يحدد عدد الكم الرئيس اتجاه المدار في الفراغ.",
         "zh": "主量子数决定轨道在空间的取向。",
         "ku": "Jimara kuantûmê ya sereke arastekirina orbîtalê li fezayê diyar dike."
       },
@@ -68,7 +68,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Die Drehimpulsquantenzahl (l) gibt Art und Form des Orbitals an (l = 0 s, l = 1 p, l = 2 d, l = 3 f).",
         "fr": "Le nombre quantique du moment cinétique (l) spécifie le type et la forme de l'orbitale (l = 0 s, l = 1 p, l = 2 d, l = 3 f).",
         "ru": "Орбитальное квантовое число (l) определяет тип и форму орбитали (l = 0 — s, l = 1 — p, l = 2 — d, l = 3 — f).",
-        "ar": "يحدد الرقم الكمي للزخم الزاوي (l) نوع وشكل المدار (l = 0 s، l = 1 p، l = 2 d، l = 3 f).",
+        "ar": "يحدد عدد الكم الثانوي (l)، أي عدد كم الزخم الزاوي، نوع المدار وشكله (l = 0 s، l = 1 p، l = 2 d، l = 3 f).",
         "zh": "角量子数(l)决定轨道的类型和形状(l = 0 为 s，l = 1 为 p，l = 2 为 d，l = 3 为 f)。",
         "ku": "Hejmara kuantûmê ya momenta goşeyî (l) cure û şiklê orbîtalê diyar dike (l = 0 s, l = 1 p, l = 2 d, l = 3 f)."
       },
@@ -78,7 +78,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Die Drehimpulszahl l = 2 repräsentiert das p-Orbital.",
         "fr": "Le nombre de moment cinétique l = 2 représente l'orbitale p.",
         "ru": "Орбитальному квантовому числу l = 2 соответствует p-орбиталь.",
-        "ar": "يمثل عدد الزخم الزاوي l = 2 المدار p.",
+        "ar": "قيمة عدد الكم الثانوي l = 2 تمثل المدار p.",
         "zh": "角量子数 l = 2 表示 p 轨道。",
         "ku": "Hejmara kuantûmê ya momenta goşeyî l = 2 orbîtala p nîşan dide."
       },
@@ -101,7 +101,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Die magnetische Quantenzahl (ml) gibt die Orientierung des Orbitals im Raum an und nimmt ganzzahlige Werte zwischen -l und +l an.",
         "fr": "Le nombre quantique magnétique (ml) indique l'orientation de l'orbitale dans l'espace et prend des valeurs entières comprises entre -l et +l.",
         "ru": "Магнитное квантовое число (ml) характеризует ориентацию орбитали в пространстве и принимает целые значения от -l до +l.",
-        "ar": "يشير رقم الكم المغناطيسي (ml) إلى اتجاه المدار في الفضاء ويأخذ قيمًا صحيحة بين -l و+l.",
+        "ar": "يدل عدد الكم المغناطيسي (ml) على اتجاه المدار في الفراغ، ويأخذ قيمًا صحيحة من -l إلى +l.",
         "zh": "磁量子数(ml)表示轨道在空间中的取向，取 -l 到 +l 之间的整数。",
         "ku": "Hejmara quantumê ya magnetîkî (ml) arastekirina orbîtalê li fezayê destnîşan dike û jimareyên yekjimar di navbera -l û +l de digire."
       },
@@ -111,7 +111,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Für d-Orbitale nimmt ml nur die Werte -1, 0, +1 an.",
         "fr": "Pour les orbitales d, ml ne prend que les valeurs -1, 0, +1.",
         "ru": "Для d-орбиталей ml принимает только значения -1, 0, +1.",
-        "ar": "بالنسبة للمدارات d، يأخذ ml فقط القيم -1، 0، +1.",
+        "ar": "في مدارات d يأخذ ml القيم -1 و0 و+1 فقط.",
         "zh": "d 轨道的 ml 只能取 -1、0、+1。",
         "ku": "Ji bo d orbitals ml tenê nirxan -1, 0, +1 digire."
       },
@@ -144,7 +144,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Ein Orbital kann zwei Elektronen mit demselben Spin enthalten.",
         "fr": "Une orbitale peut contenir deux électrons de même spin.",
         "ru": "На одной орбитали могут находиться два электрона с одинаковыми спинами.",
-        "ar": "يمكن أن يحتوي المدار على إلكترونين لهما نفس الدوران.",
+        "ar": "يمكن أن يحوي المدار الواحد إلكترونين لهما المغزل نفسه.",
         "zh": "一个轨道中可以容纳两个自旋相同的电子。",
         "ku": "Orbîtalek dikare du elektronên bi heman spinê hebin."
       },
@@ -154,7 +154,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Zwei Elektronen im selben Orbital haben bereits gleiche n, l und ml; wäre auch ihr Spin gleich, wären alle vier Quantenzahlen identisch. Das Pauli-Prinzip verbietet dies, daher müssen sie entgegengesetzten Spin haben.",
         "fr": "Deux électrons d'une même orbitale ont déjà les mêmes n, l et ml ; si leurs spins étaient aussi égaux, les quatre nombres quantiques seraient identiques. Le principe de Pauli l'interdit, donc leurs spins doivent être opposés.",
         "ru": "У двух электронов одной орбитали значения n, l и ml и так совпадают; если бы совпадали и спины, все четыре квантовых числа были бы одинаковыми. Принцип Паули это запрещает, поэтому спины электронов должны быть противоположными.",
-        "ar": "الإلكترونان في المدار نفسه لهما بالفعل القيم نفسها لـ n وl وml؛ ولو تساوى مغزلاهما أيضًا لتطابقت أعداد الكم الأربعة. مبدأ باولي يمنع ذلك، لذا يجب أن يكون مغزلاهما متعاكسين.",
+        "ar": "الإلكترونان في المدار نفسه لهما بالفعل القيم نفسها لـ n وl وml؛ ولو تساوى مغزلاهما أيضًا لتطابقت أعداد الكم الأربعة. ولأن مبدأ باولي لا يسمح بذلك يجب أن يكون مغزلاهما متعاكسين.",
         "zh": "同一轨道中的两个电子 n、l、ml 已经相同；如果自旋也相同，四个量子数就完全相同。泡利原理不允许这种情况，因此它们必须自旋相反。",
         "ku": "Du elektronên di heman orbîtalê de jixwe n, l û ml wekhev in; heke spinên wan jî wekhev bûna, her çar hejmarên kuantûmê dê yek bûna. Prensîba Pauli destûr nade, loma divê spinên wan berevajî bin."
       }
@@ -167,7 +167,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Pauli-Ausschlussprinzip: Keine zwei Elektronen in einem Atom können die gleichen vier Quantenzahlen haben.",
         "fr": "Principe d'exclusion de Pauli : Deux électrons dans un atome ne peuvent pas avoir les mêmes quatre nombres quantiques.",
         "ru": "Принцип Паули: в атоме не может быть двух электронов, у которых все четыре квантовых числа одинаковы.",
-        "ar": "مبدأ استبعاد باولي: لا يمكن لإلكترونين في الذرة أن يكون لهما نفس أعداد الكم الأربعة.",
+        "ar": "مبدأ الاستبعاد لباولي: لا يمكن أن يتساوى إلكترونان في ذرة واحدة في أعداد الكم الأربعة جميعها.",
         "zh": "泡利不相容原理：在同一原子中，不可能有两个电子的四个量子数完全相同。",
         "ku": "Prensîba Derxistina Pauli: Di atomê de du elektron nikarin heman çar hejmarên kuantûmê hebin."
       },
@@ -177,7 +177,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Nach dem Pauli-Prinzip können drei Elektronen mit entgegengesetztem Spin ein Orbital besetzen.",
         "fr": "Selon le principe de Pauli, trois électrons de spins opposés peuvent occuper une orbitale.",
         "ru": "Согласно принципу Паули, на одной орбитали могут находиться три электрона с противоположными спинами.",
-        "ar": "وفقًا لمبدأ باولي، يمكن لثلاثة إلكترونات ذات دوران متضاد أن تشغل مدارًا.",
+        "ar": "وفق مبدأ باولي يمكن أن يشغل المدار الواحد 3 إلكترونات متعاكسة المغزل.",
         "zh": "根据泡利原理，一个轨道可以容纳 3 个自旋相反的电子。",
         "ku": "Li gorî prensîba Pauli, sê elektronên bi spinên berevajî dikarin orbitalek dagir bikin."
       },
@@ -200,7 +200,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Aufbauregel: Elektronen werden in Orbitale gefüllt, beginnend mit dem Orbital mit der niedrigsten Energie (n + l-Regel).",
         "fr": "Règle d'Aufbau : les électrons sont remplis dans des orbitales en commençant par l'orbitale ayant la plus faible énergie (règle n + l).",
         "ru": "Принцип наименьшей энергии (правило Клечковского): электроны заполняют орбитали в порядке возрастания их энергии, начиная с самой низкой (правило n + l).",
-        "ar": "قاعدة أوفباو: تمتلئ الإلكترونات بالمدارات بدءًا من المدار ذي الطاقة الأقل (قاعدة n + l).",
+        "ar": "قاعدة أوفباو: تُملأ المدارات بالإلكترونات بدءًا من المدار الأقل طاقة (قاعدة n + l).",
         "zh": "构造原理：电子从能量最低的轨道开始依次填入各轨道(n + l 规则)。",
         "ku": "Rêbaza Aufbau: Elektron di orbitalên ku ji orbîtala bi enerjiya herî hindik dest pê dikin têne dagirtin (qanûna n + l)."
       },
@@ -210,7 +210,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Nach der Aufbau-Regel wird das 3d-Orbital immer vor dem 4s-Orbital gefüllt.",
         "fr": "Selon la règle d'Aufbau, l'orbitale 3d est toujours remplie avant l'orbitale 4s.",
         "ru": "Согласно принципу наименьшей энергии, 3d-орбитали всегда заполняются раньше 4s-орбитали.",
-        "ar": "وفقًا لقاعدة أوفباو، فإن المدار 3d يمتلئ دائمًا قبل المدار 4s.",
+        "ar": "وفق قاعدة أوفباو يمتلئ المدار 3d دائمًا قبل المدار 4s.",
         "zh": "根据构造原理，3d 轨道总是先于 4s 轨道填充。",
         "ku": "Li gorî qaîdeya Aufbau, orbîtala 3d her dem berî orbitala 4s tê dagirtin."
       },
@@ -233,7 +233,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Hundsche Regel: Elektronen werden zunächst nacheinander in Orbitale mit gleicher Energie und demselben Spin gebracht.",
         "fr": "Règle de Hund : les électrons sont d'abord placés sur des orbitales d'énergie égale, un par un, avec le même spin.",
         "ru": "Правило Хунда: орбитали одинаковой энергии электроны сначала заполняют по одному, с одинаковыми (параллельными) спинами.",
-        "ar": "قاعدة هوند: يتم وضع الإلكترونات أولاً في مدارات متساوية الطاقة، واحدًا تلو الآخر، بنفس الدوران.",
+        "ar": "قاعدة هوند: توزَّع الإلكترونات على المدارات المتساوية الطاقة فرادى أولًا وبالمغزل نفسه.",
         "zh": "洪特规则：电子填入能量相同的轨道时，总是先以相同的自旋分别单独占据不同轨道。",
         "ku": "Rêbaza Hund: Elektron pêşî li orbîtalên enerjiya wekhev, yek bi yek, bi heman spinê têne danîn."
       },
@@ -243,7 +243,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Elektronen treten zunächst paarweise mit entgegengesetztem Spin in Orbitale gleicher Energie ein.",
         "fr": "Les électrons entrent d’abord dans des orbitales d’énergie égale par paires de spin opposé.",
         "ru": "Орбитали одинаковой энергии электроны сначала заполняют парами с противоположными спинами.",
-        "ar": "تدخل الإلكترونات أولًا مدارات ذات طاقة متساوية في أزواج ذات دوران معاكس.",
+        "ar": "تدخل الإلكترونات المدارات المتساوية الطاقة أولًا على شكل أزواج متعاكسة المغزل.",
         "zh": "电子进入能量相同的轨道时，先以相反自旋成对进入。",
         "ku": "Elektron yekem car dikevin orbitalên enerjiyê yên wekhev bi cotek bi spin berevajî."
       },
@@ -266,7 +266,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Die Elektronenkonfigurationen 24Cr ([Ar] 4s1 3d5) und 29Cu ([Ar] 4s1 3d10) sind aufgrund der sphärischen Symmetriestabilität Sonderfälle.",
         "fr": "Les configurations électroniques 24Cr ([Ar] 4s1 3d5) et 29Cu ([Ar] 4s1 3d10) sont des cas particuliers en raison de la stabilité de la symétrie sphérique.",
         "ru": "Электронные конфигурации 24Cr ([Ar] 4s1 3d5) и 29Cu ([Ar] 4s1 3d10) — особые случаи, обусловленные устойчивостью сферически симметричных конфигураций.",
-        "ar": "تعد تكوينات الإلكترون 24Cr ([Ar] 4s1 3d5) و29Cu ([Ar] 4s1 3d10) حالات خاصة بسبب استقرار التناظر الكروي.",
+        "ar": "يُعدّ التوزيعان الإلكترونيان لـ 24Cr ([Ar] 4s1 3d5) و29Cu ([Ar] 4s1 3d10) حالتين خاصتين بسبب استقرار التناظر الكروي.",
         "zh": "由于球形对称带来的稳定性，24Cr ([Ar] 4s1 3d5) 和 29Cu ([Ar] 4s1 3d10) 的电子排布属于特殊情况。",
         "ku": "Veavakirinên elektronên 24Cr ([Ar] 4s1 3d5) û 29Cu ([Ar] 4s1 3d10) ji ber îstîqrara simetrîya spherîkî rewşên taybetî ne."
       },
@@ -299,7 +299,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Während Übergangsmetalle (d-Block) Kationen bilden, geben sie zunächst das Elektron aus dem s-Orbital in der äußersten Schicht ab (z. B. Fe: 4s2 3d6 -> Fe2+: 3d6).",
         "fr": "Alors que les métaux de transition (bloc d) forment des cations, ils donnent d'abord l'électron de l'orbitale s dans la couche la plus externe (par exemple Fe : 4s2 3d6 -> Fe2+ : 3d6).",
         "ru": "При образовании катионов переходные металлы (d-элементы) сначала отдают электроны с s-орбитали внешнего уровня (например, Fe: 4s2 3d6 -> Fe2+: 3d6).",
-        "ar": "بينما تشكل المعادن الانتقالية (كتلة d) الكاتيونات، فإنها تتبرع أولاً بالإلكترون من مدار s في الطبقة الخارجية (على سبيل المثال Fe: 4s2 3d6 -> Fe2+: 3d6).",
+        "ar": "عندما تكوّن الفلزات الانتقالية (عناصر الفئة d) أيونات موجبة تفقد أولًا إلكترونات مدار s في الغلاف الخارجي (مثل Fe: 4s2 3d6 -> Fe2+: 3d6).",
         "zh": "过渡金属(d 区)形成阳离子时，先失去最外层 s 轨道上的电子(例如 Fe: 4s2 3d6 -> Fe2+: 3d6)。",
         "ku": "Dema ku metalên veguhêz (d bloka) kationan çêdikin, ew pêşî elektronê ji orbîtala s di qata herî derve de didin (mînak: Fe: 4s2 3d6 -> Fe2+: 3d6)."
       },
@@ -309,7 +309,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Während das Fe-Atom ionisiert wird, löst sich zunächst das Elektron aus dem 3d-Orbital.",
         "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3d.",
         "ru": "При ионизации атома Fe электрон сначала отрывается с 3d-орбитали.",
-        "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار 3d.",
+        "ar": "عند تأين ذرة Fe يُنزع الإلكترون أولًا من المدار 3d.",
         "zh": "Fe 原子电离时，电子先从 3d 轨道失去。",
         "ku": "Dema ku atoma Fe îyonîze dibe, elektron pêşî ji orbitala 3d vediqete."
       },
@@ -375,7 +375,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "s-Orbitale beginnen erst ab n = 2.",
         "fr": "Les orbitales s commencent uniquement à partir de n = 2.",
         "ru": "s-орбитали появляются только начиная с n = 2.",
-        "ar": "تبدأ مدارات s فقط من n = 2.",
+        "ar": "لا تبدأ مدارات s إلا من n = 2.",
         "zh": "s 轨道从 n = 2 才开始出现。",
         "ku": "Orbitalên s tenê ji n = 2 dest pê dikin."
       },
@@ -398,7 +398,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "p-Orbitale beginnen bei n = 2, sind hantelförmig und bestehen aus 3 (px, py, pz, maximal 6 Elektronen).",
         "fr": "Les orbitales p partent de n = 2, sont en forme d'haltère et se composent de 3 (px, py, pz, maximum 6 électrons).",
         "ru": "p-орбитали появляются начиная с n = 2 и имеют форму гантели; их три (px, py, pz), и они вмещают не более 6 электронов.",
-        "ar": "تبدأ المدارات p من n = 2، وهي على شكل دمبل وتتكون من 3 (px، py، pz، بحد أقصى 6 إلكترونات).",
+        "ar": "تبدأ مدارات p من n = 2، وهي على شكل دمبل (ثقّالة)، وعددها 3 (px، py، pz) وتتسع لـ 6 إلكترونات على الأكثر.",
         "zh": "p 轨道从 n = 2 开始出现，呈哑铃形，共 3 个(px、py、pz，最多容纳 6 个电子)。",
         "ku": "orbîtalên p ji n = 2 dest pê dikin, teşe dumbbell in û ji 3 (px, py, pz, herî zêde 6 elektronan) pêk tên."
       },
@@ -408,7 +408,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Im 1. Grundenergieniveau gibt es 3 p-Orbitale.",
         "fr": "Il y a 3 orbitales p dans le 1er niveau d'énergie fondamentale.",
         "ru": "На первом энергетическом уровне есть три p-орбитали.",
-        "ar": "هناك 3 مدارات p في مستوى الطاقة الأساسي الأول.",
+        "ar": "يوجد في مستوى الطاقة الرئيس الأول 3 مدارات p.",
         "zh": "第一能层有 3 个 p 轨道。",
         "ku": "Di asta enerjiya bingehîn a 1emîn de 3 p orbîtal hene."
       },
@@ -431,7 +431,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "d-Orbitale beginnen bei n = 3, es gibt 5 und können bis zu 10 Elektronen aufnehmen.",
         "fr": "Les orbitales d partent de n = 3, il y en a 5 et peuvent prendre jusqu'à 10 électrons.",
         "ru": "d-орбитали появляются начиная с n = 3; их пять, и они вмещают не более 10 электронов.",
-        "ar": "تبدأ المدارات d من n = 3، وهناك 5 ويمكن أن تحتوي على ما يصل إلى 10 إلكترونات.",
+        "ar": "تبدأ مدارات d من n = 3، وعددها 5، وتتسع لـ 10 إلكترونات على الأكثر.",
         "zh": "d 轨道从 n = 3 开始，共有 5 个，最多可容纳 10 个电子。",
         "ku": "d orbital ji n = 3 dest pê dikin, 5 hene û dikarin heta 10 elektronan bigirin."
       },
@@ -441,7 +441,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "d-Orbitale beginnen auf dem 4. Grundenergieniveau.",
         "fr": "Les orbitales d partent du 4ème niveau d’énergie fondamental.",
         "ru": "d-орбитали появляются начиная с 4-го энергетического уровня.",
-        "ar": "تبدأ المدارات d من مستوى الطاقة الأساسي الرابع.",
+        "ar": "تبدأ مدارات d من مستوى الطاقة الرئيس الرابع.",
         "zh": "d 轨道从第四能层才开始出现。",
         "ku": "d orbital ji asta enerjiya bingehîn a 4emîn dest pê dikin."
       },
@@ -464,7 +464,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "f-Orbitale beginnen bei n = 4, es gibt 7 an der Zahl und können bis zu 14 Elektronen aufnehmen.",
         "fr": "Les orbitales f partent de n = 4, elles sont au nombre de 7 et peuvent prendre jusqu'à 14 électrons.",
         "ru": "f-орбитали появляются начиная с n = 4; их семь, и они вмещают не более 14 электронов.",
-        "ar": "تبدأ المدارات f من n = 4، ويبلغ عددها 7 ويمكن أن تحتوي على ما يصل إلى 14 إلكترونًا.",
+        "ar": "تبدأ مدارات f من n = 4، وعددها 7، وتتسع لـ 14 إلكترونًا على الأكثر.",
         "zh": "f 轨道从 n = 4 开始，共有 7 个，最多可容纳 14 个电子。",
         "ku": "f orbitals ji n = 4 dest pê dikin, 7 hene û dikarin heta 14 elektronan bigirin."
       },
@@ -474,7 +474,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "In f-Orbitalen können sich maximal 10 Elektronen befinden.",
         "fr": "Il peut y avoir un maximum de 10 électrons dans les orbitales f.",
         "ru": "На f-орбиталях может находиться не более 10 электронов.",
-        "ar": "يمكن أن يكون هناك 10 إلكترونات كحد أقصى في المدارات f.",
+        "ar": "تتسع مدارات f لـ 10 إلكترونات على الأكثر.",
         "zh": "f 轨道中最多可以有 10 个电子。",
         "ku": "Di f orbîtalan de herî zêde 10 elektron dikarin hebin."
       },
@@ -507,7 +507,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Die Elektronenkonfiguration, die mit p4 endet, ist sphärisch symmetrisch.",
         "fr": "La configuration électronique se terminant par p4 est à symétrie sphérique.",
         "ru": "Электронная конфигурация, оканчивающаяся на p4, сферически симметрична.",
-        "ar": "تكوين الإلكترون المنتهي بـ p4 متماثل كرويًا.",
+        "ar": "التوزيع الإلكتروني المنتهي بـ p4 متناظر كرويًا.",
         "zh": "以 p4 结尾的电子排布是球形对称的。",
         "ku": "Veavakirina elektronê ku bi p4-ê diqede sîmetriya gewherî nîşan dide."
       },
@@ -530,7 +530,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Bei isoelektronischen Teilchen hat dasjenige mit der größeren Anzahl an Protonen eine größere Anziehungskraft pro Elektron und einen kleineren Radius.",
         "fr": "Dans les particules isoélectroniques, celle qui possède le plus grand nombre de protons a une plus grande force d’attraction par électron et un rayon plus petit.",
         "ru": "Из изоэлектронных частиц у той, в ядре которой больше протонов, притяжение в расчёте на один электрон сильнее, а радиус меньше.",
-        "ar": "في الجسيمات متساوية الإلكترون، يكون للجسيم الذي يحتوي على عدد أكبر من البروتونات قوة جذب أكبر لكل إلكترون ونصف قطر أصغر.",
+        "ar": "في الدقائق المتساوية الإلكترونات يكون للدقيقة ذات العدد الأكبر من البروتونات جذب أكبر لكل إلكترون ونصف قطر أصغر.",
         "zh": "在等电子粒子中，质子数较多的粒子对每个电子的吸引力较大，半径较小。",
         "ku": "Di keriyên îzoelektronîk de, ya ku jimara protonên wê mezintir e, ji her elektronekê re hêzek balkêş a mezin û tîrêjek piçûktir heye."
       },
@@ -540,7 +540,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Die Radien isoelektronischer Kationen und Anionen sind genau gleich.",
         "fr": "Les rayons des cations isoélectroniques et des anions sont exactement égaux.",
         "ru": "Радиусы изоэлектронных катионов и анионов в точности равны.",
-        "ar": "أنصاف أقطار الكاتيونات والأنيونات متساوية الإلكترون متساوية تمامًا.",
+        "ar": "أنصاف أقطار الأيونات الموجبة والسالبة المتساوية الإلكترونات متساوية تمامًا.",
         "zh": "互为等电子体的阳离子和阴离子半径完全相等。",
         "ku": "Radyoya kation û anyonên îzoelektronîk tam wek hev in."
       },
@@ -631,7 +631,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Hauptquantenzahl (n)",
         "fr": "Nombre quantique principal (n)",
         "ru": "Главное квантовое число n",
-        "ar": "عدد الكم الرئيسي (n)",
+        "ar": "عدد الكم الرئيس (n)",
         "zh": "主量子数(n)",
         "ku": "Hejmara kuantûmê ya sereke (n)"
       },
@@ -641,7 +641,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Drehimpulsquantenzahl (l)",
         "fr": "Nombre quantique de moment cinétique (l)",
         "ru": "Орбитальное квантовое число l",
-        "ar": "عدد كم الزخم الزاوي (l)",
+        "ar": "عدد الكم الثانوي (l)",
         "zh": "角量子数(l)",
         "ku": "Hejmara kuantûmê ya momenta goşeyî (l)"
       },
@@ -651,7 +651,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Die Hauptquantenzahl (n) gibt das Energieniveau des Elektrons und seinen mittleren Abstand vom Kern an; die Drehimpulsquantenzahl (l) gibt Art und Form des Orbitals an (s, p, d, f).",
         "fr": "Le nombre quantique principal (n) indique le niveau d'énergie de l'électron et sa distance moyenne au noyau ; le nombre l (moment cinétique) indique le type et la forme de l'orbitale (s, p, d, f).",
         "ru": "Главное квантовое число n характеризует энергетический уровень электрона и его среднее удаление от ядра; орбитальное квантовое число l характеризует тип и форму орбитали (s, p, d, f).",
-        "ar": "عدد الكم الرئيسي (n) يحدد مستوى طاقة الإلكترون ومتوسط بعده عن النواة؛ أما عدد كم الزخم الزاوي (l) فيحدد نوع المدار وشكله (s، p، d، f).",
+        "ar": "عدد الكم الرئيس (n) يحدد مستوى طاقة الإلكترون ومتوسط بعده عن النواة؛ أما عدد الكم الثانوي (l) فيحدد نوع المدار وشكله (s، p، d، f).",
         "zh": "主量子数(n)表示电子所处的能层及其离核的平均距离；角量子数(l)表示轨道的类型和形状(s、p、d、f)。",
         "ku": "Hejmara kuantûmê ya sereke (n) asta enerjiyê ya elektronê û dûrahiya wê ya navîn ji navokê nîşan dide; hejmara l (momenta goşeyî) cure û şiklê orbîtalê (s, p, d, f) nîşan dide."
       }
@@ -684,7 +684,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "ml gibt die räumliche Ausrichtung des Orbitals an (-l..+l); ms gibt die Spinrichtung des Elektrons an (+1/2, -1/2).",
         "fr": "ml donne l'orientation de l'orbitale dans l'espace (-l..+l) ; ms donne le sens du spin de l'électron (+1/2, -1/2).",
         "ru": "Магнитное квантовое число ml характеризует ориентацию орбитали в пространстве (от -l до +l); спиновое квантовое число ms характеризует направление спина электрона (+1/2, -1/2).",
-        "ar": "يحدد ml اتجاه المدار في الفراغ (-l..+l)؛ ويحدد ms اتجاه مغزل الإلكترون (+1/2، -1/2).",
+        "ar": "عدد الكم المغناطيسي (ml) يحدد اتجاه المدار في الفراغ (-l..+l)؛ أما عدد الكم المغزلي (ms) فيحدد اتجاه مغزل الإلكترون (+1/2، -1/2).",
         "zh": "磁量子数(ml)表示轨道在空间中的取向(-l..+l)；自旋量子数(ms)表示电子的自旋方向(+1/2，-1/2)。",
         "ku": "ml arasteya orbîtalê di fezayê de nîşan dide (-l..+l); ms arasteya spina elektronê nîşan dide (+1/2, -1/2)."
       }
@@ -697,7 +697,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Pauli-Ausschlussprinzip",
         "fr": "Principe d'exclusion de Pauli",
         "ru": "Принцип Паули",
-        "ar": "مبدأ استبعاد باولي",
+        "ar": "مبدأ الاستبعاد لباولي",
         "zh": "泡利不相容原理",
         "ku": "Prensîba Derxistina Pauli"
       },
@@ -707,7 +707,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Sphärische Symmetrie",
         "fr": "Symétrie sphérique",
         "ru": "Сферическая симметрия",
-        "ar": "التماثل الكروي",
+        "ar": "التناظر الكروي",
         "zh": "球形对称",
         "ku": "Sîmetriya gewherî"
       },
@@ -717,7 +717,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Pauli: In einem Atom können keine zwei Elektronen in allen vier Quantenzahlen übereinstimmen; die Kugelsymmetrie beschreibt die besondere Stabilität eines halb- oder vollbesetzten letzten Unterniveaus.",
         "fr": "Pauli : deux électrons d'un atome ne peuvent pas avoir leurs quatre nombres quantiques identiques ; la symétrie sphérique décrit la stabilité particulière d'une dernière sous-couche à moitié ou entièrement remplie.",
         "ru": "Принцип Паули запрещает двум электронам атома иметь одинаковые значения всех четырёх квантовых чисел; сферическая симметрия означает дополнительную устойчивость, которую даёт наполовину или полностью заполненный последний подуровень.",
-        "ar": "باولي: لا يمكن أن يتطابق إلكترونان في الذرة في أعداد الكم الأربعة جميعها؛ أما التناظر الكروي فيعبّر عن الاستقرار الخاص للمستوى الفرعي الأخير نصف الممتلئ أو الممتلئ تمامًا.",
+        "ar": "مبدأ الاستبعاد لباولي: لا يمكن أن يتطابق إلكترونان في ذرة واحدة في أعداد الكم الأربعة جميعها؛ أما التناظر الكروي فيعبّر عن الاستقرار الإضافي الناتج عن كون المستوى الفرعي الأخير نصف ممتلئ أو ممتلئًا تمامًا.",
         "zh": "泡利不相容原理指同一原子中不可能有两个电子的四个量子数完全相同；球形对称指最后一个亚层半充满或全充满时带来的额外稳定性。",
         "ku": "Pauli: di atomekê de du elektron nikarin her çar hejmarên kuantûmê wekhev hebin; sîmetriya gewherî aramiya taybet a binasta dawî ya nîv-tijî an tam-tijî nîşan dide."
       }
@@ -763,7 +763,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Bohrsches Atommodell",
         "fr": "Modèle atomique de Bohr",
         "ru": "Модель Бора",
-        "ar": "نموذج بور الذري",
+        "ar": "نموذج بور",
         "zh": "玻尔原子模型",
         "ku": "Modela atomê ya Bohr"
       },
@@ -783,7 +783,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Bohrsches Atommodell: Elektronen bewegen sich auf Kreisbahnen mit festem Radius um den Kern, und das Modell erklärt nur die Spektren von Einelektronenteilchen (H, He+). Im modernen Atommodell ist der Ort des Elektrons nicht genau bestimmbar, nur seine Aufenthaltswahrscheinlichkeit in Bereichen, die Orbitale heißen.",
         "fr": "Dans le modèle atomique de Bohr, les électrons décrivent des orbites circulaires de rayon fixe autour du noyau, et ce modèle n'explique que les spectres des espèces à un électron (H, He+) ; dans le modèle moderne, la position de l'électron ne peut être connue exactement, seule sa probabilité de présence dans des régions appelées orbitales l'est.",
         "ru": "Модель Бора описывает движение электронов вокруг ядра по круговым орбитам определённого радиуса и объясняет только спектры одноэлектронных частиц (H, He+); современная модель атома не позволяет точно определить положение электрона — она говорит лишь о вероятности его нахождения в областях, называемых орбиталями.",
-        "ar": "في نموذج بور الذري تتحرك الإلكترونات حول النواة في مدارات دائرية ذات أنصاف أقطار محددة، ولا يفسر هذا النموذج إلا أطياف الأنواع أحادية الإلكترون (H، He+)؛ أما في النموذج الحديث فلا يمكن تحديد موقع الإلكترون بدقة، بل احتمال وجوده في مناطق تسمى الأوربيتالات.",
+        "ar": "في نموذج بور تتحرك الإلكترونات حول النواة في مدارات دائرية ذات أنصاف أقطار محددة، ولا يفسر هذا النموذج إلا أطياف الدقائق ذات الإلكترون الواحد (H، He+)؛ أما في النموذج الذري الحديث فلا يمكن تحديد موقع الإلكترون بدقة، بل يُتحدّث فقط عن احتمال وجوده في مناطق تسمى المدارات (الأفلاك).",
         "zh": "玻尔原子模型认为电子在核外半径固定的圆形轨道上运动，只能解释单电子粒子(H、He+)的光谱；现代原子模型中电子的位置无法确定，只能描述其在称为原子轨道的区域中出现的概率。",
         "ku": "Di modela atomê ya Bohr de elektron li dora navokê li ser rêgehên dorhêlî yên bi nîvtîreya diyar dizivirin û ev model tenê spektra tenekên yek-elektronî (H, He+) rave dike; di modela nûjen de cihê elektronê bi tevahî nayê zanîn, tenê îhtîmala dîtina wê di herêmên bi navê orbîtal de tê gotin."
       }
@@ -831,7 +831,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Rangfolge der Orbitalenergie (n + l-Inkrement)",
         "fr": "Classement de l'énergie orbitale (incrément n + l)",
         "ru": "Порядок возрастания энергии орбиталей (по сумме n + l)",
-        "ar": "تصنيف طاقة المدارات (تزايد n + l)",
+        "ar": "ترتيب طاقة المدارات (تزايد n + l)",
         "zh": "轨道能量顺序(按 n + l 递增)",
         "ku": "Rêzkirina Enerjiya Orbital (n + l Zêdebûn)"
       },
@@ -886,7 +886,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Aufbau-Orbitalfüllauftrag",
         "fr": "Commande de remplissage orbitale Aufbau",
         "ru": "Порядок заполнения орбиталей по принципу наименьшей энергии",
-        "ar": "أمر التعبئة المداري Aufbau",
+        "ar": "ترتيب ملء المدارات وفق مبدأ أوفباو",
         "zh": "构造原理：轨道填充顺序",
         "ku": "Orbital Dagirtina Aufbau"
       },
@@ -897,7 +897,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Das 1s-Orbital ist mit der niedrigsten Energie gefüllt",
           "fr": "L’orbitale 1s est remplie de l’énergie la plus basse",
           "ru": "Первой заполняется 1s-орбиталь с наименьшей энергией",
-          "ar": "المدار 1s مملوء بأقل طاقة",
+          "ar": "يمتلئ المدار 1s أولًا لأنه الأقل طاقة",
           "zh": "1s 轨道能量最低，最先填充",
           "ku": "Orbital 1s bi enerjiya herî kêm tije ye"
         },
@@ -907,7 +907,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "2s- und 2p-Orbitale werden nacheinander gefüllt",
           "fr": "Les orbitales 2s et 2p sont remplies séquentiellement",
           "ru": "Затем последовательно заполняются 2s- и 2p-орбитали",
-          "ar": "يتم ملء المدارات 2s و 2p بالتتابع",
+          "ar": "تُملأ مدارات 2s و2p بالتتابع",
           "zh": "2s 和 2p 轨道依次填充",
           "ku": "Orbitalên 2s û 2p bi rêz têne dagirtin"
         },
@@ -917,7 +917,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Nach den 3s- und 3p-Orbitalen wird das 4s-Orbital gefüllt.",
           "fr": "Après les orbitales 3s et 3p, l’orbitale 4s est remplie.",
           "ru": "После 3s- и 3p-орбиталей заполняется 4s-орбиталь",
-          "ar": "بعد المدارات 3s و3p، يمتلئ المدار 4s.",
+          "ar": "بعد مداري 3s و3p يمتلئ المدار 4s",
           "zh": "3s、3p 之后填充 4s 轨道",
           "ku": "Piştî orbitalên 3s û 3p, orbîtala 4s tije dibe."
         },
@@ -927,7 +927,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Nach 4s werden die Elektronen in die 3d-Orbitale eingebaut.",
           "fr": "Après la 4s, les électrons se placent dans les orbitales 3d.",
           "ru": "После 4s электроны заселяют 3d-орбитали",
-          "ar": "بعد 4s، توضع الإلكترونات في مدارات 3d.",
+          "ar": "بعد 4s تدخل الإلكترونات مدارات 3d",
           "zh": "4s 之后电子填入 3d 轨道",
           "ku": "Piştî 4s, elektron di orbitalên 3d de têne danîn."
         }
@@ -941,7 +941,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Bestimmung von Quantenzahlen",
         "fr": "Détermination des nombres quantiques",
         "ru": "Определение квантовых чисел",
-        "ar": "تحديد أرقام الكم",
+        "ar": "تحديد أعداد الكم",
         "zh": "确定量子数",
         "ku": "Diyarkirina Jimarên Kuantûmî"
       },
@@ -952,7 +952,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Das Hauptquantum n wird aus der Schicht bestimmt, in der sich das Elektron befindet",
           "fr": "Le quantum principal n est déterminé à partir de la couche où se trouve l'électron",
           "ru": "По уровню (слою), на котором находится электрон, определяют главное квантовое число n",
-          "ar": "يتم تحديد الكم الرئيسي n من الطبقة التي يقع فيها الإلكترون",
+          "ar": "يُحدَّد عدد الكم الرئيس n من الغلاف الذي يوجد فيه الإلكترون",
           "zh": "由电子所在的能层确定主量子数 n",
           "ku": "Kuantuma sereke n ji qata ku elektron lê ye tê destnîşankirin"
         },
@@ -962,7 +962,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Das Drehimpulsquantum l vom Orbitaltyp wird gefunden",
           "fr": "Le quantum de moment cinétique l de type orbital se trouve",
           "ru": "По типу орбитали находят орбитальное квантовое число l",
-          "ar": "تم العثور على الزخم الزاوي الكمي l من النوع المداري",
+          "ar": "يُستنتج عدد الكم الثانوي l من نوع المدار",
           "zh": "由轨道类型确定角量子数 l",
           "ku": "Hêza goşeyî kuantuma l ya cureya orbîtal tê dîtin"
         },
@@ -972,7 +972,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Abhängig von l werden ml-Werte von -l bis +l sortiert.",
           "fr": "En fonction de l, les valeurs ml sont triées de -l à +l.",
           "ru": "В зависимости от l перечисляют значения ml от -l до +l",
-          "ar": "اعتمادًا على l، يتم فرز قيم ml من -l إلى +l.",
+          "ar": "تُرتَّب قيم ml تبعًا لـ l من -l إلى +l",
           "zh": "根据 l，ml 取 -l 到 +l 的值",
           "ku": "Li gorî l, nirxên ml ji -l ber +l têne rêz kirin."
         },
@@ -996,7 +996,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Stabilität der sphärischen Symmetrie (Cr und Cu)",
         "fr": "Stabilité de symétrie sphérique (Cr et Cu)",
         "ru": "Устойчивость сферически симметричных конфигураций (Cr и Cu)",
-        "ar": "استقرار التماثل الكروي (الكروم والنحاس)",
+        "ar": "استقرار التناظر الكروي (Cr وCu)",
         "zh": "球形对称的稳定性(Cr 和 Cu)",
         "ku": "Îstiqrara Sferîk ya Simetrî (Cr û Cu)"
       },
@@ -1017,7 +1017,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Anstelle von 4s2 3d4 entsteht im Cr-Atom die Folge 4s1 3d5.",
           "fr": "Au lieu de 4s2 3d4, la séquence 4s1 3d5 est formée dans l'atome de Cr.",
           "ru": "В атоме Cr вместо конфигурации 4s2 3d4 реализуется 4s1 3d5",
-          "ar": "بدلا من 4s2 3d4، يتم تشكيل التسلسل 4s1 3d5 في ذرة الكروم.",
+          "ar": "يتكون في ذرة Cr التوزيع 4s1 3d5 بدلًا من 4s2 3d4",
           "zh": "Cr 原子采取 4s1 3d5 而不是 4s2 3d4 的排布",
           "ku": "Li şûna 4s2 3d4, rêzika 4s1 3d5 di atoma Cr de pêk tê."
         },
@@ -1037,7 +1037,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Mit der 4s1 3d10-Sequenz wird im Cu-Atom eine vollständige Kugelsymmetrie hergestellt.",
           "fr": "Une symétrie sphérique complète est établie dans l'atome de Cu avec la séquence 4s1 3d10.",
           "ru": "В атоме Cu конфигурация 4s1 3d10 даёт сферическую симметрию полностью заполненного подуровня",
-          "ar": "تم إنشاء تناظر كروي كامل في ذرة النحاس بالتسلسل 4s1 3d10.",
+          "ar": "يتحقق في ذرة Cu تناظر كروي تام بالتوزيع 4s1 3d10",
           "zh": "Cu 原子以 4s1 3d10 排布达到全充满的球形对称",
           "ku": "Di atoma Cu de bi rêzika 4s1 3d10 sîmetrîya gewherî ya tam pêk tê."
         }
@@ -1053,7 +1053,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Wie viele halbgefüllte Orbitale gibt es in der Elektronenkonfiguration des 24Cr-Atoms im Grundzustand?",
         "fr": "Combien y a-t-il d’orbitales à moitié remplies dans la configuration électronique de l’atome de 24Cr à l’état fondamental ?",
         "ru": "Сколько наполовину заполненных орбиталей в атоме 24Cr в основном состоянии?",
-        "ar": "ما عدد المدارات نصف الممتلئة الموجودة في التوزيع الإلكتروني لذرة 24Cr في الحالة الأرضية؟",
+        "ar": "ما عدد المدارات نصف الممتلئة في ذرة 24Cr في الحالة الأرضية؟",
         "zh": "基态 24Cr 原子中有多少个半充满轨道？",
         "ku": "Di konfigurasyona elektronê ya atoma 24Cr di rewşa zemînê de çend orbîtalên nîv-tijî hene?"
       },
@@ -1129,7 +1129,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "In welchem Orbitaltyp befindet sich ein Elektron mit der Drehimpulsquantenzahl l = 2 und der magnetischen Quantenzahl ml = -1?",
         "fr": "Dans quel type d'orbite peut-on trouver un électron avec un nombre quantique de moment cinétique l = 2 et un nombre quantique magnétique ml = -1 ?",
         "ru": "На орбитали какого типа может находиться электрон с орбитальным квантовым числом l = 2 и магнитным квантовым числом ml = -1?",
-        "ar": "في أي نوع مداري يمكن العثور على إلكترون له زخم زاوي عدد الكم l = 2 وعدد كم مغناطيسي ml = -1؟",
+        "ar": "في أيّ نوع من المدارات يمكن أن يوجد إلكترون عدد كمه الثانوي l = 2 وعدد كمه المغناطيسي ml = -1؟",
         "zh": "角量子数 l = 2、磁量子数 ml = -1 的电子可能处于哪种轨道？",
         "ku": "Elektroneke ku hejmara wê ya kuantûmê ya momenta goşeyî l = 2 û hejmara wê ya kuantûmê ya magnetîk ml = -1 e, di kîjan cureya orbîtalê de dikare hebe?"
       },
@@ -1192,7 +1192,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Den Orbitaltyp legt die Drehimpulsquantenzahl fest: l = 0 s, l = 1 p, l = 2 d, l = 3 f. Wegen l = 2 befindet sich das Elektron in einem d-Orbital; für d-Orbitale kann ml die Werte -2, -1, 0, +1, +2 annehmen, ml = -1 ist also möglich. ml = -1 kommt auch bei p-Orbitalen vor, dort ist aber l = 1.",
         "fr": "Le type d'orbitale est fixé par le nombre quantique de moment cinétique : l = 0 s, l = 1 p, l = 2 d, l = 3 f. Comme l = 2, l'électron est dans une orbitale d ; pour les orbitales d, ml peut valoir -2, -1, 0, +1, +2, donc ml = -1 est possible. ml = -1 existe aussi pour les orbitales p, mais alors l = 1.",
         "ru": "Тип орбитали определяется орбитальным квантовым числом: l = 0 — s, l = 1 — p, l = 2 — d, l = 3 — f. Так как l = 2, электрон находится на d-орбитали; для d-орбиталей ml принимает значения -2, -1, 0, +1, +2, поэтому ml = -1 возможно. Значение ml = -1 встречается и у p-орбиталей, но для них l = 1.",
-        "ar": "يحدد عدد كم الزخم الزاوي نوع المدار: l = 0 s، l = 1 p، l = 2 d، l = 3 f. بما أن l = 2 فالإلكترون في مدار d؛ وفي مدارات d يأخذ ml القيم -2، -1، 0، +1، +2، لذا فإن ml = -1 ممكن. القيمة ml = -1 تظهر أيضًا في مدارات p، لكن l = 1 فيها.",
+        "ar": "يحدد عدد الكم الثانوي نوع المدار: l = 0 s، l = 1 p، l = 2 d، l = 3 f. بما أن l = 2 فالإلكترون في مدار d؛ وفي مدارات d يأخذ ml القيم -2، -1، 0، +1، +2، لذا فإن ml = -1 ممكن. القيمة ml = -1 تظهر أيضًا في مدارات p، لكن l = 1 فيها.",
         "zh": "轨道类型由角量子数决定：l = 0 为 s，l = 1 为 p，l = 2 为 d，l = 3 为 f。因为 l = 2，电子处于 d 轨道；d 轨道的 ml 可取 -2、-1、0、+1、+2，所以 ml = -1 是允许的。p 轨道也可有 ml = -1，但 p 轨道的 l = 1。",
         "ku": "Cureya orbîtalê ji hêla hejmara kuantûmê ya momenta goşeyî ve tê diyarkirin: l = 0 s, l = 1 p, l = 2 d, l = 3 f. Ji ber ku l = 2 e, elektron di orbîtaleke d de ye; di orbîtalên d de ml dikare -2, -1, 0, +1, +2 be, loma ml = -1 gengaz e. ml = -1 di orbîtalên p de jî heye, lê ji bo p l = 1 e."
       }
@@ -1281,7 +1281,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Wie viele Orbitale enthalten im 25Mn-Atom im Grundzustand mindestens ein Elektron?",
         "fr": "Combien d'orbitales contiennent au moins un électron dans un atome de 25Mn à l'état fondamental ?",
         "ru": "Сколько орбиталей атома 25Mn в основном состоянии содержат хотя бы один электрон?",
-        "ar": "كم مدارًا يحتوي على إلكترون واحد على الأقل في ذرة 25Mn في الحالة الأساسية؟",
+        "ar": "كم عدد المدارات التي تحوي إلكترونًا واحدًا على الأقل في ذرة 25Mn في الحالة الأرضية؟",
         "zh": "基态 25Mn 原子中至少含有一个电子的轨道有多少个？",
         "ku": "Di atoma 25Mn ya di rewşa bingehîn de çend orbîtal herî kêm yek elektron dihewînin?"
       },
@@ -1357,7 +1357,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Welche der folgenden ist die Elektronenkonfiguration des 29Cu+-Ions im Grundzustand? (18Ar)",
         "fr": "Laquelle des configurations suivantes est la configuration électronique de l'ion 29Cu+ à l'état fondamental ? (18Ar)",
         "ru": "Какая из приведённых электронных конфигураций соответствует иону 29Cu+ в основном состоянии? (18Ar)",
-        "ar": "أيّ مما يأتي هو التوزيع الإلكتروني للأيون 29Cu+ في الحالة الأساسية؟ (18Ar)",
+        "ar": "أيّ مما يأتي هو التوزيع الإلكتروني للأيون 29Cu+ في الحالة الأرضية؟ (18Ar)",
         "zh": "29Cu+ 离子的基态电子排布是下列哪一项？(18Ar)",
         "ku": "Ji van kîjan dîzilîma elektronan a îyona 29Cu+ di rewşa bingehîn de ye? (18Ar)"
       },
@@ -1433,7 +1433,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Welche Angabe zur Stellung des Atoms X im Periodensystem ist richtig, wenn seine Grundzustandskonfiguration 1s2 2s2 2p6 3s2 3p6 4s2 3d3 lautet?",
         "fr": "Laquelle des propositions suivantes donne correctement la position dans le tableau périodique de l'atome X, dont la configuration à l'état fondamental est 1s2 2s2 2p6 3s2 3p6 4s2 3d3 ?",
         "ru": "Атом X в основном состоянии имеет электронную конфигурацию 1s2 2s2 2p6 3s2 3p6 4s2 3d3. Какое утверждение о его положении в периодической системе верно?",
-        "ar": "أيّ مما يأتي يحدد بشكل صحيح موقع الذرة X في الجدول الدوري إذا كان توزيعها الإلكتروني في الحالة الأساسية 1s2 2s2 2p6 3s2 3p6 4s2 3d3؟",
+        "ar": "أيّ مما يأتي صحيح بشأن موقع الذرة X في الجدول الدوري إذا كان توزيعها الإلكتروني في الحالة الأرضية 1s2 2s2 2p6 3s2 3p6 4s2 3d3؟",
         "zh": "基态电子排布为 1s2 2s2 2p6 3s2 3p6 4s2 3d3 的 X 原子在元素周期表中的位置，下列哪项正确？",
         "ku": "Cihê atoma X di sîstema periyodîk de, ya ku dîzilîma wê ya rewşa bingehîn 1s2 2s2 2p6 3s2 3p6 4s2 3d3 e, kîjan rast e?"
       },
@@ -1800,7 +1800,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Im angeregten Zustand ist ein Elektron in ein höheres Orbital gewechselt, obwohl in einem energieärmeren Orbital noch Platz ist. Beim 4-Elektronen-Atom mit 1s2 2s1 2p1 (Be) befindet sich ein Elektron in 2p, bevor 2s voll ist; sein Grundzustand ist 1s2 2s2. [Ar] 4s1 3d5 (Cr) und [Ar] 4s1 3d10 (Cu) scheinen der Aufbau-Reihenfolge zu widersprechen, sind aber wegen der Stabilität der Kugelsymmetrie die echten Grundzustände dieser Atome. Die beiden anderen Konfigurationen folgen der Aufbau-Reihenfolge.",
         "fr": "À l'état excité, un électron est passé dans une orbitale supérieure alors qu'une orbitale de plus basse énergie a encore de la place. Dans l'atome à 4 électrons 1s2 2s1 2p1 (Be), un électron occupe 2p avant que 2s soit plein ; son état fondamental est 1s2 2s2. [Ar] 4s1 3d5 (Cr) et [Ar] 4s1 3d10 (Cu) semblent contredire l'ordre d'Aufbau mais sont les vraies configurations fondamentales de ces atomes grâce à la stabilité de la symétrie sphérique. Les deux autres configurations suivent l'ordre d'Aufbau.",
         "ru": "В возбуждённом состоянии электрон перешёл на более высокую орбиталь, хотя на орбитали с меньшей энергией ещё есть место. В атоме с 4 электронами 1s2 2s1 2p1 (Be) электрон находится на 2p, хотя 2s не заполнена; его основное состояние — 1s2 2s2. [Ar] 4s1 3d5 (Cr) и [Ar] 4s1 3d10 (Cu) кажутся нарушением порядка заполнения, но благодаря устойчивости сферически симметричных конфигураций это и есть основные состояния этих атомов. Две другие конфигурации соответствуют обычному порядку заполнения.",
-        "ar": "في الحالة المثارة ينتقل إلكترون إلى مدار أعلى مع وجود مكان في مدار أقل طاقة. في الذرة ذات الإلكترونات الأربعة 1s2 2s1 2p1 (Be) يوجد إلكترون في 2p قبل امتلاء 2s، وحالتها الأساسية 1s2 2s2. يبدو التوزيعان [Ar] 4s1 3d5 (Cr) و[Ar] 4s1 3d10 (Cu) مخالفين لترتيب أوفباو، لكنهما التوزيعان الأساسيان الحقيقيان لهاتين الذرتين بسبب استقرار التناظر الكروي. والتوزيعان الآخران يتبعان ترتيب أوفباو.",
+        "ar": "في الحالة المثارة ينتقل إلكترون إلى مدار أعلى مع وجود مكان في مدار أقل طاقة. في الذرة ذات الإلكترونات الأربعة 1s2 2s1 2p1 (Be) يوجد إلكترون في 2p قبل امتلاء 2s، وحالتها الأرضية 1s2 2s2. يبدو التوزيعان [Ar] 4s1 3d5 (Cr) و[Ar] 4s1 3d10 (Cu) مخالفين لترتيب أوفباو، لكنهما توزيعا الحالة الأرضية الحقيقيان لهاتين الذرتين بسبب استقرار التناظر الكروي. والتوزيعان الآخران يتبعان ترتيب أوفباو.",
         "zh": "激发态是指低能量轨道仍有空位时，电子已跃迁到更高的轨道。含 4 个电子的 1s2 2s1 2p1 (Be) 中，2s 未填满时就有电子进入 2p；其基态为 1s2 2s2。[Ar] 4s1 3d5 (Cr) 和 [Ar] 4s1 3d10 (Cu) 看似违背构造原理，但由于球形对称的稳定性，它们正是这两种原子的基态排布。另外两种排布符合构造原理顺序。",
         "ku": "Di rewşa heyecanî de elektronek derbasî orbîtaleke jortir bûye her çend di orbîtaleke bi enerjiya kêmtir de cih hebe. Di atoma bi 4 elektronan 1s2 2s1 2p1 (Be) de, berî ku 2s tijî bibe elektronek ketiye 2p; rewşa wê ya bingehîn 1s2 2s2 e. [Ar] 4s1 3d5 (Cr) û [Ar] 4s1 3d10 (Cu) dixuyin ku li dijî rêza Aufbau ne, lê ji ber aramiya sîmetriya gewherî dîzilîmên rastîn ên rewşa bingehîn a van atoman in. Her du dîzilîmên din li gorî rêza Aufbau ne."
       }
@@ -1889,7 +1889,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Wie viele Elektronen mit der Hauptquantenzahl n = 3 enthält ein 17Cl-Atom im Grundzustand?",
         "fr": "Combien d'électrons de nombre quantique principal n = 3 un atome de 17Cl à l'état fondamental possède-t-il ?",
         "ru": "Сколько электронов с главным квантовым числом n = 3 содержит атом 17Cl в основном состоянии?",
-        "ar": "كم إلكترونًا عدد الكم الرئيس له n = 3 توجد في ذرة 17Cl في الحالة الأساسية؟",
+        "ar": "كم إلكترونًا عدد كمه الرئيس n = 3 يوجد في ذرة 17Cl في الحالة الأرضية؟",
         "zh": "基态 17Cl 原子中主量子数 n = 3 的电子有多少个？",
         "ku": "Di atoma 17Cl ya di rewşa bingehîn de çend elektronên bi hejmara kuantûmê ya sereke n = 3 hene?"
       },
@@ -2041,7 +2041,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Wie viele ungepaarte Elektronen (Elektronen in halbbesetzten Orbitalen) hat das 26Fe3+-Ion im Grundzustand? (18Ar)",
         "fr": "Combien d'électrons non appariés (électrons dans des orbitales à moitié remplies) l'ion 26Fe3+ à l'état fondamental possède-t-il ? (18Ar)",
         "ru": "Сколько неспаренных электронов (электронов на наполовину заполненных орбиталях) у иона 26Fe3+ в основном состоянии? (18Ar)",
-        "ar": "كم عدد الإلكترونات المفردة (الموجودة في مدارات نصف ممتلئة) في الأيون 26Fe3+ في الحالة الأساسية؟ (18Ar)",
+        "ar": "كم عدد الإلكترونات المفردة (الموجودة في مدارات نصف ممتلئة) في الأيون 26Fe3+ في الحالة الأرضية؟ (18Ar)",
         "zh": "基态 26Fe3+ 离子中有多少个未成对电子（位于半充满轨道中的电子）？(18Ar)",
         "ku": "Di îyona 26Fe3+ ya di rewşa bingehîn de çend elektronên necot (yên di orbîtalên nîv-tijî de) hene? (18Ar)"
       },

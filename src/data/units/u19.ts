@@ -22,7 +22,7 @@ export const unit19: ChemistryUnitSeedData = {
     "de": "pH-, pOH-, Ka-, Kb-, Puffer- und Titrationskurven",
     "fr": "Courbes pH, pOH, Ka, Kb, tampon et titrage",
     "ru": "pH, pOH, Ka, Kb, буферные растворы и кривые титрования",
-    "ar": "منحنيات pH وpOH وKa وKb والمخزن المؤقت والمعايرة",
+    "ar": "pH وpOH وKa وKb والمحاليل المنظِّمة ومنحنيات المعايرة",
     "zh": "pH、pOH、Ka、Kb、缓冲溶液和滴定曲线",
     "ku": "PH, pOH, Ka, Kb, Tampon û Kûrên Tîtrasyonê"
   },
@@ -78,7 +78,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Während starke Säuren und Basen in Wasser zu 100 % ionisieren, ionisieren schwache Säuren und Basen teilweise und stellen ein Gleichgewicht her (Ka, Kb).",
         "fr": "Alors que les acides et bases forts s'ionisent à 100 % dans l'eau, les acides et bases faibles s'ionisent partiellement et établissent l'équilibre (Ka, Kb).",
         "ru": "Сильные кислоты и основания диссоциируют в воде на 100 %, а слабые кислоты и основания — лишь частично, с установлением равновесия (Ka, Kb).",
-        "ar": "بينما تتأين الأحماض والقواعد القوية بنسبة 100% في الماء، تتأين الأحماض والقواعد الضعيفة جزئيًا وتحقق التوازن (Ka, Kb).",
+        "ar": "بينما تتأين الأحماض والقواعد القوية في الماء بنسبة 100%، تتأين الأحماض والقواعد الضعيفة جزئيًا فتكوّن اتزانًا (Ka وKb).",
         "zh": "强酸和强碱在水中 100% 电离，而弱酸和弱碱只部分电离并建立平衡(Ka、Kb)。",
         "ku": "Dema ku asîd û bazên xurt di avê de %100 îyonîze dibin, asîd û bazên qels qismî iyon dibin û hevsengiyê saz dikin (Ka, Kb)."
       },
@@ -121,7 +121,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Die H+-Konzentration der schwachen Säure entspricht der Anfangskonzentration.",
         "fr": "La concentration H+ de l’acide faible est égale à la concentration initiale.",
         "ru": "Концентрация H+ в растворе слабой кислоты равна начальной концентрации кислоты.",
-        "ar": "تركيز H+ للحمض الضعيف يساوي التركيز الأولي.",
+        "ar": "تركيز H+ في محلول الحمض الضعيف يساوي تركيزه الابتدائي.",
         "zh": "弱酸溶液中的 H+ 浓度等于酸的起始浓度。",
         "ku": "Tîrbûna H+ ya asîda qels bi tîrbûna wê ya destpêkê re wekhev e."
       },
@@ -154,7 +154,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Zwischen konjugierten Säure-Base-Paaren besteht ein Unterschied von 2 Elektronen.",
         "fr": "Il existe une différence de 2 électrons entre les paires acide-base conjuguées.",
         "ru": "Частицы сопряжённой кислотно-основной пары различаются на 2 электрона.",
-        "ar": "يوجد فرق قدره 2 إلكترون بين أزواج الحمض والقاعدة المترافقة.",
+        "ar": "يوجد بين فردَي زوج الحمض والقاعدة المترافق فرقٌ قدره إلكترونان.",
         "zh": "共轭酸碱对之间相差 2 个电子。",
         "ku": "Di navbera cotên asîd-bazê yên hevgirtî de 2 elektronan ferq heye."
       },
@@ -177,7 +177,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "In einem konjugierten Säure-Base-Paar beträgt Ka * Kb = Kw = 10^-14 (bei 25 °C).",
         "fr": "Dans une paire acide-base conjuguée, Ka * Kb = Ke = 10^-14 (à 25 °C).",
         "ru": "Для сопряжённой кислотно-основной пары Ka * Kb = Kw = 10^-14 (при 25 °C).",
-        "ar": "في زوج مترافق من حمض وقاعدة، Ka * Kb = Kw = 10^-14 (عند 25 درجة مئوية).",
+        "ar": "في زوج مترافق من حمض وقاعدة، Ka * Kb = Kw = 10^-14 (عند 25 °C).",
         "zh": "在共轭酸碱对中，Ka * Kb = Kw = 10^-14(25 °C 时)。",
         "ku": "Di cotek asîd-bazê ya hevgirtî de, Ka * Kb = Ksu = 10^-14 (li 25 °C)."
       },
@@ -187,7 +187,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Der Kb-Wert der konjugierten Base der Säure mit einem hohen Ka-Wert ist ebenfalls sehr hoch.",
         "fr": "La valeur Kb de la base conjuguée de l'acide avec une valeur Ka élevée est également très élevée.",
         "ru": "Если у кислоты большая Ka, то Kb её сопряжённого основания тоже очень велика.",
-        "ar": "كما أن قيمة Kb للقاعدة المترافقة للحمض ذات قيمة Ka العالية مرتفعة جدًا أيضًا.",
+        "ar": "الحمض ذو قيمة Ka الكبيرة تكون قيمة Kb لقاعدته المرافقة كبيرة جدًا أيضًا.",
         "zh": "Ka 很大的酸，其共轭碱的 Kb 也很大。",
         "ku": "Nirxa Kb ya bingeha hevgirtî ya asîda bi nirxa Ka ya bilind jî pir zêde ye."
       },
@@ -220,7 +220,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Pufferlösung besteht aus einer Mischung aus starker Säure und starker Base.",
         "fr": "La solution tampon est constituée d’un mélange d’acide fort et de base forte.",
         "ru": "Буферный раствор состоит из смеси сильной кислоты и сильного основания.",
-        "ar": "يتكون المحلول المنظم من خليط من حمض قوي وقاعدة قوية.",
+        "ar": "يتكون المحلول المنظم من مزيج حمض قوي وقاعدة قوية.",
         "zh": "缓冲溶液由强酸和强碱混合而成。",
         "ku": "Çareseriya tampon ji tevliheviya asîda xurt û bazê xurt pêk tê."
       },
@@ -253,7 +253,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Der Blut-pH wird durch Pufferung mit Salzsäure (HCl) konstant gehalten.",
         "fr": "Le pH sanguin est maintenu constant par un tampon à base d’acide chlorhydrique (HCl).",
         "ru": "pH крови поддерживается постоянным благодаря буферному действию соляной кислоты (HCl).",
-        "ar": "يُحافَظ على ثبات pH الدم بالتنظيم بواسطة حمض الهيدروكلوريك (HCl).",
+        "ar": "يبقى pH الدم ثابتًا بفعل نظام منظِّم قوامه حمض الهيدروكلوريك (HCl).",
         "zh": "血液的 pH 是靠盐酸(HCl)的缓冲作用维持恒定的。",
         "ku": "pH ya xwînê bi tamponkirina bi asîda hîdroklorîk (HCl) sabît tê hiştin."
       },
@@ -352,7 +352,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Salzhydrolyse: Dabei handelt es sich um die Reaktion des Anions einer schwachen Säure oder des Kations einer schwachen Base mit Wasser.",
         "fr": "Hydrolyse du sel : C'est la réaction de l'anion d'un acide faible ou du cation d'une base faible avec l'eau.",
         "ru": "Гидролиз соли — взаимодействие с водой аниона слабой кислоты или катиона слабого основания.",
-        "ar": "التحلل المائي للملح: هو تفاعل الأنيون من حمض ضعيف أو الكاتيون من قاعدة ضعيفة مع الماء.",
+        "ar": "التحلل المائي للملح: تفاعلُ الأنيون الناتج من حمض ضعيف أو الكاتيون الناتج من قاعدة ضعيفة مع الماء.",
         "zh": "盐类的水解：弱酸的阴离子或弱碱的阳离子与水发生的反应。",
         "ku": "Hîdrolîza xwê: Reaksiyona anyona ji asîdeke qels an jî kationa ji bingeheke qels bi avê re ye."
       },
@@ -362,7 +362,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Ionen neutraler Salze hydrolysieren in Wasser heftig.",
         "fr": "Les ions de sels neutres s'hydrolysent violemment dans l'eau.",
         "ru": "Ионы нейтральных солей в воде подвергаются сильному гидролизу.",
-        "ar": "تتحلل أيونات الأملاح المحايدة بعنف في الماء.",
+        "ar": "تتحلل أيونات الأملاح المتعادلة في الماء تحللًا مائيًا شديدًا.",
         "zh": "中性盐的离子在水中强烈水解。",
         "ku": "Îyonên xwêyên bêalî di avê de bi tundî hîdrolîz dibin."
       },
@@ -418,7 +418,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Wenn einer schwach sauren Lösung reines Wasser zugesetzt und verdünnt wird, erhöht sich der Prozentsatz der Ionisierung; aber die H+-Konzentration nimmt ab (pH-Wert steigt).",
         "fr": "Si de l'eau pure est ajoutée à une solution acide faible et diluée, le pourcentage d'ionisation augmente ; mais la concentration en H+ diminue (le pH augmente).",
         "ru": "При разбавлении раствора слабой кислоты чистой водой степень диссоциации растёт, но концентрация H+ уменьшается (pH увеличивается).",
-        "ar": "إذا أضيف الماء النقي إلى محلول حمضي ضعيف وتم تخفيفه، تزداد نسبة التأين؛ لكن تركيز H+ يتناقص (يزيد الرقم الهيدروجيني).",
+        "ar": "إذا خُفِّف محلول حمض ضعيف بإضافة الماء النقي إليه تزداد النسبة المئوية للتأين؛ لكن تركيز H+ يقل (فيرتفع الرقم الهيدروجيني).",
         "zh": "向弱酸溶液中加入纯水稀释时，电离度增大，但 H+ 浓度减小(pH 升高)。",
         "ku": "Ger ava saf li çareseriya asîdeke qels were zêdekirin û sist bibe, rêjeya îyonîzasyonê zêde dibe; lê tîrbûna H+ kêm dibe (pH zêde dibe)."
       },
@@ -471,7 +471,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Die Wertigkeit Z ist die Zahl der H+- oder OH--Ionen pro Formeleinheit; bei einer zweiprotonigen Säure wie H2SO4 wird das Ergebnis ohne Z um den Faktor zwei falsch.",
         "fr": "La valence Z est le nombre de H+ ou OH- fournis par une unité de formule ; pour un diacide comme H2SO4, ignorer Z fausse le résultat d’un facteur deux.",
         "ru": "Z — число ионов H+ или OH-, которое даёт одна формульная единица; если для двухосновной кислоты, например H2SO4, не учесть Z, результат окажется в два раза меньше или больше истинного.",
-        "ar": "التكافؤ Z هو عدد أيونات H+ أو OH- التي تعطيها وحدة صيغة واحدة؛ وفي حمض ثنائي البروتون مثل H2SO4 يؤدي إهمال Z إلى نتيجة خاطئة بمعامل اثنين.",
+        "ar": "التكافؤ Z هو عدد أيونات H+ أو OH- التي تعطيها وحدة صيغة واحدة؛ وفي حمض ثنائي البروتون مثل H2SO4 يؤدي إهمال Z إلى نتيجة خاطئة تساوي نصف القيمة الصحيحة أو ضعفها.",
         "zh": "Z 是一个化学式单位提供的 H+ 或 OH- 数目；对 H2SO4 这类二元酸，忽略 Z 会使结果相差 2 倍。",
         "ku": "Z hejmara îyonên H+ an OH- ye ku yek yekeya formulê dide; ji bo asîdeke duprotonî wek H2SO4, heke Z neyê hesibandin encam du qat şaş derdikeve."
       }
@@ -494,7 +494,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "HF ist die stärkste Säure, weil sie Glas ätzt.",
         "fr": "HF est l'acide le plus fort car il attaque le verre.",
         "ru": "HF — самая сильная кислота, поскольку разъедает стекло.",
-        "ar": "HF هو أقوى حمض لأنه يُذيب (يتآكل) الزجاج.",
+        "ar": "HF هو أقوى حمض لأنه يُذيب الزجاج.",
         "zh": "HF 能腐蚀玻璃，因此是最强的酸。",
         "ku": "HF asîda herî xurt e ji ber ku camê dixwe (diqelişîne)."
       },
@@ -537,7 +537,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "NH3 ist eine starke Base.",
         "fr": "NH3 est une base forte.",
         "ru": "NH3 — сильное основание.",
-        "ar": "NH3 قاعدة قوية .",
+        "ar": "NH3 قاعدة قوية.",
         "zh": "NH3 是强碱。",
         "ku": "NH3 bazeke xurt e."
       },
@@ -560,7 +560,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Indikatoren sind schwache organische Säuren oder Basen, die je nach pH-Wert der Umgebung ihre Farbe ändern.",
         "fr": "Les indicateurs sont des acides ou des bases organiques faibles qui changent de couleur en fonction du pH de l'environnement.",
         "ru": "Индикаторы — слабые органические кислоты или основания, окраска которых зависит от pH среды.",
-        "ar": "المؤشرات عبارة عن أحماض أو قواعد عضوية ضعيفة يتغير لونها حسب الرقم الهيدروجيني للبيئة.",
+        "ar": "الكواشف أحماض أو قواعد عضوية ضعيفة يتغير لونها حسب الرقم الهيدروجيني للوسط.",
         "zh": "指示剂是有机弱酸或弱碱，其颜色随溶液 pH 的变化而改变。",
         "ku": "Îndîkator asîd an bazên organîk ên qels in ku li gorî pH ya hawîrdorê reng diguherînin."
       },
@@ -570,7 +570,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Indikatoren sind Katalysatoren, die die Titrationsreaktion beschleunigen.",
         "fr": "Les indicateurs sont des catalyseurs qui accélèrent la réaction de titrage.",
         "ru": "Индикаторы — это катализаторы, ускоряющие реакцию титрования.",
-        "ar": "المؤشرات عبارة عن محفزات تعمل على تسريع تفاعل المعايرة.",
+        "ar": "الكواشف عوامل حفازة تُسرّع تفاعل المعايرة.",
         "zh": "指示剂是加速滴定反应的催化剂。",
         "ku": "Îndîkator katalîzator in ku reaksiyona tîtrasyonê lez dikin."
       },
@@ -615,7 +615,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Starke Säure: ionisiert in Wasser vollständig (zu 100 %); die Ionisation gilt als einseitig, daher wird keine Gleichgewichtsrechnung mit Ka durchgeführt. Eine schwache Säure ionisiert nur teilweise, es stellt sich ein Gleichgewicht ein, und ihre Stärke wird durch den Ka-Wert angegeben.",
         "fr": "Acide fort : s'ionise totalement (à 100 %) dans l'eau ; son ionisation est considérée comme totale et à sens unique, on ne fait donc pas de calcul d'équilibre avec Ka. Un acide faible ne s'ionise que partiellement, établit un équilibre, et sa force s'exprime par la valeur de Ka.",
         "ru": "Сильная кислота диссоциирует в воде полностью (на 100 %); такую диссоциацию считают необратимой, и равновесный расчёт с Ka не проводят. Слабая кислота диссоциирует лишь частично с установлением равновесия, и её силу выражают значением Ka.",
-        "ar": "يتأين الحمض القوي في الماء تأينًا تامًّا (100%)، ويُعدّ تأينه في اتجاه واحد فلا تُجرى له حسابات اتزان باستخدام Ka؛ أما الأحماض الضعيفة فتتأين جزئيًا وتكوّن اتزانًا، ويُعبَّر عن قوتها بقيمة Ka.",
+        "ar": "الحمض القوي يتأين في الماء تأينًا تامًّا (100%)، ويُعدّ تأينه في اتجاه واحد فلا تُجرى له حسابات اتزان باستخدام Ka؛ أما الأحماض الضعيفة فتتأين جزئيًا وتكوّن اتزانًا، ويُعبَّر عن قوتها بقيمة Ka.",
         "zh": "强酸在水中完全(100%)电离，电离视为不可逆，因此不用 Ka 作平衡计算；弱酸只部分电离并建立平衡，其强弱用 Ka 值表示。",
         "ku": "Asîda xurt di avê de bi temamî (%100) îyonîze dibe; îyonîzasyona wê yekalî tê hesibandin, ji ber vê bi Ka hesabê hevsengiyê nayê kirin. Asîda qels tenê bi qismî îyonîze dibe, hevsengî saz dike û hêza wê bi nirxa Ka tê nîşandan."
       }
@@ -638,7 +638,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Neutraler Punkt",
         "fr": "Point neutre",
         "ru": "Нейтральная точка",
-        "ar": "نقطة محايدة",
+        "ar": "نقطة التعادل",
         "zh": "中性点",
         "ku": "Xala Bêalî"
       },
@@ -648,7 +648,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Äquivalenzpunkt: Punkt, an dem die Stoffmenge an H+ aus der Säure gleich der Stoffmenge an OH- aus der Base ist (nH+ = nOH-); der Neutralpunkt ist dagegen der Punkt, an dem der pH-Wert der Lösung bei 25 °C gleich 7 ist. Beide fallen nur bei der Titration einer starken Säure mit einer starken Base zusammen; bei schwacher Säure und starker Base gilt pH > 7, wenn nH+ = nOH- erreicht ist.",
         "fr": "Point d'équivalence : point où la quantité de H+ apportée par l'acide est égale à la quantité de OH- apportée par la base (nH+ = nOH-) ; le point neutre est le point où le pH de la solution vaut 7 à 25 °C. Les deux ne coïncident que lors du titrage d'un acide fort par une base forte ; pour un acide faible titré par une base forte, pH > 7 lorsque nH+ = nOH-.",
         "ru": "Точка эквивалентности — точка, в которой количество H+ кислоты равно количеству OH- основания (nH+ = nOH-); нейтральная точка — точка, в которой pH раствора при 25 °C равен 7. Они совпадают только при титровании сильной кислоты сильным основанием; при титровании слабой кислоты сильным основанием в момент, когда nH+ = nOH-, pH > 7.",
-        "ar": "نقطة التكافؤ هي النقطة التي يتساوى عندها عدد مولات H+ من الحمض مع عدد مولات OH- من القاعدة (nH+ = nOH-)؛ أما النقطة المحايدة فهي النقطة التي يكون عندها pH المحلول 7 عند 25 °C. ولا تتطابق النقطتان إلا في معايرة حمض قوي بقاعدة قوية؛ ففي معايرة حمض ضعيف بقاعدة قوية يكون pH > 7 عندما nH+ = nOH-.",
+        "ar": "نقطة التكافؤ: النقطة التي يتساوى عندها عدد مولات H+ من الحمض مع عدد مولات OH- من القاعدة (nH+ = nOH-)؛ أما عند نقطة التعادل فيكون pH المحلول 7 عند 25 °C. ولا تتطابق النقطتان إلا في معايرة حمض قوي بقاعدة قوية؛ ففي معايرة حمض ضعيف بقاعدة قوية يكون pH > 7 عندما nH+ = nOH-.",
         "zh": "化学计量点是酸提供的 H+ 与碱提供的 OH- 物质的量相等(nH+ = nOH-)的点；中性点则是 25 °C 时溶液 pH 为 7 的点。只有在强酸-强碱滴定中两者才重合；弱酸-强碱滴定中，nH+ = nOH- 时 pH > 7。",
         "ku": "Xala hevwateyê ew xal e ku hejmara molên H+ ya asîdê û hejmara molên OH- ya bazê wekhev in (nH+ = nOH-); xala bêalî ew xal e ku li 25 °C pH ya çareseriyê 7 e. Ev her du xal tenê di tîtrasyona asîda xurt-baza xurt de li hev tên; di tîtrasyona asîda qels-baza xurt de li xala hevwateyê pH > 7 e."
       }
@@ -694,7 +694,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Säuredissoziationskonstante (Ka)",
         "fr": "Constante de dissociation acide (Ka)",
         "ru": "Константа диссоциации кислоты (Ka)",
-        "ar": "ثابت تفكك الحمض (Ka)",
+        "ar": "ثابت تأين الحمض (Ka)",
         "zh": "酸的电离常数(Ka)",
         "ku": "Sabîta Veqetîna Asîdê (Ka)"
       },
@@ -714,7 +714,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Ka ist die Gleichgewichtskonstante der Ionisation HA ⇌ H+ + A- und gibt an, wie leicht HA ein Proton abgibt; Kb ist die Gleichgewichtskonstante von B + H2O ⇌ BH+ + OH- und gibt an, wie leicht B ein Proton aufnimmt. Für ein konjugiertes Paar ist das Produkt beider Konstanten gleich Kw (10^-14 bei 25 °C).",
         "fr": "Ka est la constante d'équilibre de l'ionisation HA ⇌ H+ + A- et mesure la facilité avec laquelle HA cède un proton ; Kb est la constante d'équilibre de B + H2O ⇌ BH+ + OH- et mesure la facilité avec laquelle B capte un proton. Pour un couple conjugué, le produit des deux constantes est égal à Ke (10^-14 à 25 °C).",
         "ru": "Ka — константа равновесия HA ⇌ H+ + A-, характеризующая склонность HA отдавать протон (кислотные свойства); Kb — константа равновесия B + H2O ⇌ BH+ + OH-, характеризующая склонность B принимать протон (основные свойства). Для сопряжённой пары произведение этих констант равно Kw (10^-14 при 25 °C).",
-        "ar": "Ka هو ثابت اتزان التأين HA ⇌ H+ + A- ويدل على مدى سهولة منح HA للبروتون؛ أما Kb فهو ثابت اتزان B + H2O ⇌ BH+ + OH- ويدل على مدى سهولة استقبال B للبروتون. وفي الزوج المترافق يكون حاصل ضرب الثابتين مساويًا لـ Kw (10^-14 عند 25 °C).",
+        "ar": "ثابت تأين الحمض (Ka) ثابتُ الاتزان HA ⇌ H+ + A- ويدل على ميل HA إلى منح البروتون؛ أما Kb فثابتُ الاتزان B + H2O ⇌ BH+ + OH- ويدل على ميل B إلى استقبال البروتون. وفي الزوج المترافق يكون حاصل ضرب الثابتين مساويًا لـ Kw (10^-14 عند 25 °C).",
         "zh": "酸的电离常数(Ka)是电离平衡 HA ⇌ H+ + A- 的平衡常数，表示 HA 给出质子的倾向；碱的电离常数(Kb)是 B + H2O ⇌ BH+ + OH- 的平衡常数，表示 B 接受质子的倾向。对共轭酸碱对，两者的乘积等于 Kw(25 °C 时为 10^-14)。",
         "ku": "Ka sabîta hevsengiya îyonîzasyona HA ⇌ H+ + A- ye û nîşan dide ku HA çiqas bi hêsanî protonekê dide; Kb sabîta hevsengiya B + H2O ⇌ BH+ + OH- ye û nîşan dide ku B çiqas bi hêsanî protonekê digire. Di cota hevgirtî de hevdana van her du sabîtan wekheviya Ksu ye (li 25 °C 10^-14)."
       }
@@ -747,7 +747,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Pufferlösung: enthält eine schwache Säure und ihre konjugierte Base, daher ändert sich ihr pH bei Zugabe kleiner Mengen Säure oder Base kaum; in einer neutralen Lösung ohne ein solches Paar (pH = 7 bei 25 °C) sinkt der pH schon durch wenig Säure stark.",
         "fr": "Solution tampon : contient un acide faible et sa base conjuguée, si bien que son pH varie peu lors de l'ajout de petites quantités d'acide ou de base ; dans une solution neutre sans un tel couple (pH = 7 à 25 °C), un peu d'acide fait chuter fortement le pH.",
         "ru": "Буферный раствор содержит слабую кислоту и сопряжённое с ней основание, поэтому его pH почти не меняется при добавлении небольших количеств кислоты или щёлочи; в небуферном нейтральном растворе (pH = 7 при 25 °C) даже небольшое количество кислоты резко снижает pH.",
-        "ar": "يحتوي المحلول المنظم على حمض ضعيف وقاعدته المرافقة، فلا يتغير pH له كثيرًا عند إضافة كميات قليلة من حمض أو قاعدة؛ أما في المحلول المتعادل غير المنظم (pH = 7 عند 25 °C) فإن قليلًا من الحمض يخفض pH بشدة.",
+        "ar": "يحتوي المحلول المنظم على حمض ضعيف وقاعدته المرافقة، فلا يتغير pH كثيرًا عند إضافة كميات قليلة من حمض أو قاعدة؛ أما في المحلول المتعادل غير المنظم (pH = 7 عند 25 °C) فإن قليلًا من الحمض يخفض pH بسرعة.",
         "zh": "缓冲溶液含有弱酸及其共轭碱，加入少量酸或碱时 pH 几乎不变；而中性溶液(25 °C 时 pH = 7)不含这种共轭酸碱对，加入少量酸时 pH 会急剧下降。",
         "ku": "Çareseriya tampon asîdeke qels û baza wê ya hevgirtî dihewîne, ji ber vê dema asîd an baza kêm lê tê zêdekirin pH hema naguhere; di çareseriya bêalî ya bê cotek wiha de (li 25 °C pH = 7) bi asîdeke kêm pH zû dadikeve."
       }
@@ -793,7 +793,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Konjugierte Säure",
         "fr": "Acide conjugué",
         "ru": "Сопряжённая кислота",
-        "ar": "حمض مترافق",
+        "ar": "حمض مرافق",
         "zh": "共轭酸",
         "ku": "Asîda Hevgirtî (Konjuge)"
       },
@@ -803,7 +803,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Konjugierte Base",
         "fr": "Base conjuguée",
         "ru": "Сопряжённое основание",
-        "ar": "قاعدة مترافقة",
+        "ar": "قاعدة مرافقة",
         "zh": "共轭碱",
         "ku": "Baza Hevgirtî (Konjuge)"
       },
@@ -813,7 +813,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Konjugierte Säure: das Teilchen eines Säure-Base-Paares mit einem Proton (H+) Unterschied, das das zusätzliche H+ trägt und ein Proton abgeben kann; die konjugierte Base ist das Teilchen desselben Paares, das ein Proton aufnehmen kann (z. B. im Paar NH4+ / NH3 gibt NH4+ das Proton ab, NH3 nimmt es auf).",
         "fr": "Acide conjugué : membre d'un couple acide-base différant d'un proton (H+) qui porte le H+ supplémentaire et peut céder un proton ; la base conjuguée est le membre du même couple qui peut capter un proton (ex. dans le couple NH4+ / NH3, NH4+ cède le proton et NH3 le capte).",
         "ru": "Сопряжённая кислота — член кислотно-основной пары (её частицы различаются на один протон H+), содержащий лишний H+ и способный отдать протон; сопряжённое основание — член той же пары, способный присоединить протон (например, в паре NH4+ / NH3 протон отдаёт NH4+, а присоединяет NH3).",
-        "ar": "الحمض المترافق هو فرد زوج الحمض والقاعدة (اللذين يختلفان ببروتون واحد H+) الذي يحمل H+ الإضافي ويستطيع منح بروتون؛ أما القاعدة المترافقة فهي فرد الزوج نفسه الذي يستطيع استقبال بروتون (مثلًا في الزوج NH4+ / NH3 يمنح NH4+ البروتون ويستقبله NH3).",
+        "ar": "الحمض المرافق هو فرد زوج الحمض والقاعدة (اللذين يختلفان ببروتون واحد H+) الذي يحمل H+ الإضافي ويستطيع منح بروتون؛ أما القاعدة المرافقة فهي فرد الزوج نفسه الذي يستطيع استقبال بروتون (مثلًا في الزوج NH4+ / NH3 يمنح NH4+ البروتون ويستقبله NH3).",
         "zh": "共轭酸是相差一个质子(H+)的一对酸碱中多一个 H+、能给出质子的一方；共轭碱则是同一对中能接受质子的一方(如 NH4+/NH3 中，NH4+ 给出质子，NH3 接受质子)。",
         "ku": "Asîda hevgirtî ew endamê cota asîd-baz e ku 1 proton (H+) ferqa wan heye, H+ ya zêde hildigire û dikare protonekê bide; endamê din ê heman cotê, ku dikare protonekê bigire, baza wê ye (mînak di cota NH4+ / NH3 de NH4+ protonê dide, NH3 wê digire)."
       }
@@ -826,7 +826,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Kationenhydrolyse",
         "fr": "Hydrolyse des cations",
         "ru": "Катионный гидролиз",
-        "ar": "التحلل الكاتيوني",
+        "ar": "التحلل المائي للكاتيون",
         "zh": "阳离子水解",
         "ku": "Hîdrolîza Katyonê"
       },
@@ -836,7 +836,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Anionenhydrolyse",
         "fr": "Hydrolyse des anions",
         "ru": "Анионный гидролиз",
-        "ar": "التحلل الأنيوني",
+        "ar": "التحلل المائي للأنيون",
         "zh": "阴离子水解",
         "ku": "Hîdrolîza Anyonê"
       },
@@ -846,7 +846,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Das aus der schwachen Base stammende Kation (NH4+) erzeugt durch Hydrolyse ein saures Milieu; das aus der schwachen Säure stammende Anion (CH3COO-) erzeugt durch Hydrolyse ein basisches Milieu.",
         "fr": "Le cation (NH4+) issu de la base faible crée un milieu acide par hydrolyse ; l'anion (CH3COO-) issu de l'acide faible crée un milieu basique par hydrolyse.",
         "ru": "Катионный гидролиз — гидролиз катиона слабого основания (NH4+), создающий кислую среду; анионный гидролиз — гидролиз аниона слабой кислоты (CH3COO-), создающий щелочную среду.",
-        "ar": "الكاتيون (NH4+) القادم من القاعدة الضعيفة يخلق بيئة حمضية عن طريق التحلل المائي؛ يخلق الأنيون (CH3COO-) القادم من الحمض الضعيف بيئة أساسية عن طريق التحلل المائي.",
+        "ar": "في التحلل المائي للكاتيون يتفاعل الكاتيون (NH4+) القادم من القاعدة الضعيفة مع الماء فيكسب المحلول صفة حمضية؛ أما في التحلل المائي للأنيون فيتفاعل الأنيون (CH3COO-) القادم من الحمض الضعيف مع الماء فيكسب المحلول صفة قاعدية.",
         "zh": "阳离子水解是来自弱碱的阳离子(如 NH4+)与水反应，使溶液呈酸性；阴离子水解是来自弱酸的阴离子(如 CH3COO-)与水反应，使溶液呈碱性。",
         "ku": "Katyona ku ji baza qels tê (NH4+) hîdrolîz dibe û hawîrdoreke asîdî çêdike; anyona ku ji asîda qels tê (CH3COO-) hîdrolîz dibe û hawîrdoreke bazîk çêdike."
       }
@@ -882,7 +882,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "Ka = [H+][A-] / [HA] aufschreiben und, da der protolysierte Anteil sehr klein ist, [HA] ≈ Ca annehmen",
           "fr": "Écrire Ka = [H+][A-] / [HA] et, la fraction ionisée étant très faible, poser [HA] ≈ Ca",
           "ru": "Записать Ka = [H+][A-] / [HA] и, поскольку продиссоциировавшая часть очень мала, принять [HA] ≈ Ca",
-          "ar": "تُكتب العلاقة Ka = [H+][A-] / [HA]، ولأن الجزء المتأين صغير جدًا يُعتبر [HA] ≈ Ca",
+          "ar": "تُكتب العلاقة Ka = [H+][A-] / [HA]، ولأن الجزء المتأين صغير جدًا يُعدّ [HA] ≈ Ca",
           "zh": "写出 Ka = [H+][A-]/[HA]，由于电离部分很小，取 [HA] ≈ Ca",
           "ku": "Ka = [H+][A-] / [HA] tê nivîsandin û ji ber ku beşa îyonîzebûyî pir piçûk e, [HA] ≈ Ca tê qebûlkirin"
         },
@@ -902,7 +902,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "Den pH der Lösung mit pH = -log[H+] bestimmen",
           "fr": "Déterminer le pH de la solution par pH = -log[H+]",
           "ru": "Найти pH раствора по формуле pH = -log[H+]",
-          "ar": "يُوجد pH المحلول من العلاقة pH = -log[H+]",
+          "ar": "يُحسب pH المحلول من العلاقة pH = -log[H+]",
           "zh": "由 pH = -log[H+] 求出溶液的 pH",
           "ku": "Bi pH = -log[H+] nirxa pH ya çareseriyê tê dîtin"
         }
@@ -971,7 +971,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Pufferlösungsmechanismus",
         "fr": "Mécanisme de solution tampon",
         "ru": "Механизм действия буферного раствора",
-        "ar": "آلية الحل العازلة",
+        "ar": "آلية عمل المحلول المنظم",
         "zh": "缓冲溶液的作用原理",
         "ku": "Mekanîzmaya Çareseriya Tampon"
       },
@@ -1002,7 +1002,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "Kleine Mengen zugesetzter H+-Ionen werden von A-, zugesetzte OH--Ionen von HA verbraucht",
           "fr": "De petites quantités d’ions H+ ajoutés sont consommées par A-, et les ions OH- ajoutés par HA",
           "ru": "Небольшие количества добавленных ионов H+ связываются ионами A-, а ионы OH- — кислотой HA",
-          "ar": "تستهلك A- أيونات H+ المضافة بكميات قليلة، ويستهلك HA أيونات OH- المضافة",
+          "ar": "يستهلك A- أيونات H+ المضافة بكميات قليلة، ويستهلك HA أيونات OH- المضافة",
           "zh": "少量加入的 H+ 被 A- 消耗，加入的 OH- 被 HA 消耗",
           "ku": "Îyonên H+ yên bi mîqdara kêm hatine zêdekirin ji aliyê A- ve, îyonên OH- jî ji aliyê HA ve tên xerckirin"
         },
@@ -1067,7 +1067,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "Nach dem Äquivalenzpunkt steigt der pH durch überschüssiges OH- über 7 und nimmt langsam weiter zu",
           "fr": "Après le point d’équivalence, l’excès de OH- fait passer le pH au-dessus de 7 et il continue d’augmenter lentement",
           "ru": "После точки эквивалентности избыток OH- поднимает pH выше 7, и pH продолжает медленно расти",
-          "ar": "بعد نقطة التكافؤ يرفع فائض OH- قيمة pH فوق 7 وتستمر في الارتفاع ببطء",
+          "ar": "بعد نقطة التكافؤ يرفع فائض OH- قيمة pH فوق 7 ويستمر في الارتفاع ببطء",
           "zh": "化学计量点之后，过量的 OH- 使 pH 超过 7 并继续缓慢上升",
           "ku": "Piştî xala hevwateyê ji ber OH- ya zêde pH ji 7 derbas dibe û hêdî hêdî zêde dibe"
         }
@@ -1159,7 +1159,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Wie viele ml 0,2 M NaOH-Lösung sollten verbraucht werden, um 100 ml 0,1 M HCl-Lösung vollständig zu neutralisieren?",
         "fr": "Combien de ml de solution de NaOH 0,2 M faut-il consommer pour neutraliser complètement 100 ml de solution de HCl 0,1 M ?",
         "ru": "Сколько миллилитров 0,2 M раствора NaOH нужно для полной нейтрализации 100 мл 0,1 M раствора HCl?",
-        "ar": "ما عدد مل من محلول NaOH 0.2 M الذي يجب استهلاكه لتحييد 100 مل من محلول 0.1 M HCl تمامًا؟",
+        "ar": "كم mL من محلول NaOH تركيزه 0.2 M يلزم لمعادلة 100 mL من محلول HCl تركيزه 0.1 M معادلة تامة؟",
         "zh": "完全中和 100 mL 0.1 M HCl 溶液需要消耗多少 mL 0.2 M NaOH 溶液？",
         "ku": "Ji bo ku 100 mL çareseriya 0,1 M HCl bi tevahî bêbandor bibe, divê çend ml çareseriya NaOH 0,2 M were vexwarin?"
       },
@@ -1170,7 +1170,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "50 ml",
           "fr": "50 ml",
           "ru": "50 мл",
-          "ar": "50 مل",
+          "ar": "50 mL",
           "zh": "50 mL",
           "ku": "50 ml"
         },
@@ -1180,7 +1180,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "100 ml",
           "fr": "100 ml",
           "ru": "100 мл",
-          "ar": "100 مل",
+          "ar": "100 mL",
           "zh": "100 mL",
           "ku": "100 ml"
         },
@@ -1190,7 +1190,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "200 ml",
           "fr": "200 ml",
           "ru": "200 мл",
-          "ar": "200 مل",
+          "ar": "200 mL",
           "zh": "200 mL",
           "ku": "200 ml"
         },
@@ -1200,7 +1200,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "25 ml",
           "fr": "25 ml",
           "ru": "25 мл",
-          "ar": "25 مل",
+          "ar": "25 mL",
           "zh": "25 mL",
           "ku": "25 ml"
         },
@@ -1210,7 +1210,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "10 ml",
           "fr": "10 ml",
           "ru": "10 мл",
-          "ar": "10 مل",
+          "ar": "10 mL",
           "zh": "10 mL",
           "ku": "10 ml"
         }
@@ -1222,7 +1222,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Bei vollständiger Neutralisation ist die Stoffmenge an H+ aus der Säure gleich der Stoffmenge an OH- aus der Base: Ma · Va · Za = Mb · Vb · Zb. Für HCl und NaOH ist die Wertigkeit 1: 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 ml. Da die Basenlösung doppelt so konzentriert ist wie die Säurelösung, wird das halbe Säurevolumen benötigt; gleiche Volumina ergäben 100 ml, das umgekehrte Verhältnis 200 ml.",
         "fr": "À la neutralisation complète, la quantité de H+ apportée par l'acide est égale à la quantité de OH- apportée par la base : Ma · Va · Za = Mb · Vb · Zb. Pour HCl et NaOH, la valence est 1 : 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 ml. La solution de base étant deux fois plus concentrée que la solution d'acide, il faut la moitié du volume d'acide ; prendre des volumes égaux donne 100 ml et inverser le rapport donne 200 ml.",
         "ru": "При полной нейтрализации количество H+ кислоты равно количеству OH- основания: Ma · Va · Za = Mb · Vb · Zb. Для HCl и NaOH Z = 1: 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 мл. Раствор основания вдвое концентрированнее раствора кислоты, поэтому нужен вдвое меньший объём; если взять объёмы равными, получится 100 мл, если перевернуть отношение — 200 мл.",
-        "ar": "عند التعادل التام يتساوى عدد مولات H+ من الحمض مع عدد مولات OH- من القاعدة: Ma · Va · Za = Mb · Vb · Zb. ولكلٍّ من HCl و NaOH يكون Z = 1: 0.1 · 100 · 1 = 0.2 · Vb · 1 → Vb = 50 مل. ولأن محلول القاعدة تركيزه ضعف تركيز محلول الحمض، يلزم نصف حجم الحمض؛ أخذ حجمين متساويين يعطي 100 مل، وعكس النسبة يعطي 200 مل.",
+        "ar": "عند التعادل التام يتساوى عدد مولات H+ من الحمض مع عدد مولات OH- من القاعدة: Ma · Va · Za = Mb · Vb · Zb. ولكلٍّ من HCl و NaOH يكون Z = 1: 0.1 · 100 · 1 = 0.2 · Vb · 1 → Vb = 50 mL. ولأن محلول القاعدة تركيزه ضعف تركيز محلول الحمض، يلزم نصف حجم الحمض؛ أخذ حجمين متساويين يعطي 100 mL، وعكس النسبة يعطي 200 mL.",
         "zh": "完全中和时，酸提供的 H+ 与碱提供的 OH- 物质的量相等：Ma · Va · Za = Mb · Vb · Zb。HCl 和 NaOH 的 Z 均为 1：0.1 · 100 · 1 = 0.2 · Vb · 1 → Vb = 50 mL。碱溶液的浓度是酸溶液的两倍，所以只需酸溶液体积的一半；若取相等体积会得 100 mL，若把比例弄反会得 200 mL。",
         "ku": "Di bêalîkirina temam de hejmara molên H+ ya asîdê û hejmara molên OH- ya bazê wekhev in: Ma · Va · Za = Mb · Vb · Zb. Ji bo HCl û NaOH Z = 1 e: 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 ml. Ji ber ku çareseriya bazê du qat ji çareseriya asîdê tîrtir e, nîvê hecma asîdê pêwîst e; girtina hecmên wekhev 100 ml, berevajîkirina rêjeyê 200 ml dide."
       }
@@ -1235,7 +1235,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Welchen pH-Wert hat eine 0,005 M wässrige Ba(OH)2-Lösung bei 25 °C? (Ba(OH)2 dissoziiert in Wasser vollständig; log 2 = 0,3)",
         "fr": "Quel est le pH d’une solution aqueuse de Ba(OH)2 à 0,005 M à 25 °C ? (Ba(OH)2 se dissocie totalement dans l’eau ; log 2 = 0,3)",
         "ru": "Чему равен pH 0,005 M водного раствора Ba(OH)2 при 25 °C? (Ba(OH)2 в воде диссоциирует полностью; log 2 = 0,3)",
-        "ar": "ما قيمة pH لمحلول مائي من Ba(OH)2 تركيزه 0.005 M عند 25 °C؟ (يتفكك Ba(OH)2 كليًا في الماء؛ log 2 = 0.3)",
+        "ar": "ما قيمة pH لمحلول مائي من Ba(OH)2 تركيزه 0.005 M عند 25 °C؟ (يتأين Ba(OH)2 كليًا في الماء؛ log 2 = 0.3)",
         "zh": "25 °C 时，0.005 M Ba(OH)2 水溶液的 pH 是多少？(Ba(OH)2 在水中完全电离；log 2 = 0.3)",
         "ku": "Li 25 °C pH ya çareseriya avî ya 0,005 M Ba(OH)2 çi ye? (Ba(OH)2 di avê de bi tevahî îyonîze dibe; log 2 = 0,3)"
       },
@@ -1311,7 +1311,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Bei 25 °C hat eine 0,01 M Lösung der schwachen Säure HA den pH-Wert 4. Welche Angabe nennt die Säurekonstante (Ka) und den Protolysegrad von HA richtig?",
         "fr": "À 25 °C, une solution à 0,01 M de l’acide faible HA a un pH de 4. Quelle proposition donne correctement la constante d’acidité (Ka) et le pourcentage d’ionisation de HA ?",
         "ru": "При 25 °C pH 0,01 M раствора слабой кислоты HA равен 4. В каком варианте правильно указаны константа кислотности (Ka) и степень диссоциации HA?",
-        "ar": "عند 25 °C يكون pH لمحلول الحمض الضعيف HA تركيزه 0.01 M مساويًا 4. في أي مما يلي أُعطي ثابت تأين الحمض (Ka) والنسبة المئوية لتأين HA بشكل صحيح؟",
+        "ar": "عند 25 °C يكون pH محلول الحمض الضعيف HA الذي تركيزه 0.01 M مساويًا 4. في أي الخيارات الآتية أُعطيت قيمة ثابت تأين الحمض (Ka) والنسبة المئوية لتأين HA إعطاءً صحيحًا؟",
         "zh": "25 °C 时，0.01 M 弱酸 HA 溶液的 pH 为 4。下列哪一项正确给出了 HA 的电离常数(Ka)和电离度？",
         "ku": "Li 25 °C pH ya çareseriya 0,01 M a asîda qels HA 4 e. Li gorî vê, sabîta asîdiyê (Ka) û rêjeya îyonîzasyona HA di kîjan vebijarkê de rast hatiye dayîn?"
       },
@@ -1615,7 +1615,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Folgende wässrige Gemische werden mit gleichen Stoffmengen der Komponenten hergestellt:\nI. CH3COOH und CH3COONa\nII. HNO3 und KNO3\nIII. HCl und NH4Cl.\nWelche davon sind Pufferlösungen?",
         "fr": "Les mélanges aqueux suivants sont préparés avec des quantités de matière égales de chaque constituant :\nI. CH3COOH et CH3COONa\nII. HNO3 et KNO3\nIII. HCl et NH4Cl.\nLesquels sont des solutions tampons ?",
         "ru": "Приготовлены водные смеси, содержащие компоненты в равных количествах (моль):\nI. CH3COOH и CH3COONa\nII. HNO3 и KNO3\nIII. HCl и NH4Cl\nКакие из них являются буферными растворами?",
-        "ar": "حُضّرت المخاليط المائية التالية بأعداد مولات متساوية من مكوناتها:\nI. CH3COOH و CH3COONa\nII. HNO3 و KNO3\nIII. HCl و NH4Cl.\nأيها محاليل منظمة؟",
+        "ar": "حُضّرت المخاليط المائية التالية بأعداد مولات متساوية من مكوناتها:\nI. CH3COOH و CH3COONa\nII. HNO3 و KNO3\nIII. HCl و NH4Cl\nأيها محاليل منظمة؟",
         "zh": "用等物质的量的各组分配制下列水溶液混合物：\nI. CH3COOH 和 CH3COONa\nII. HNO3 和 KNO3\nIII. HCl 和 NH4Cl\n其中哪些是缓冲溶液？",
         "ku": "Tevliheviyên avî yên jêrîn bi hejmara molên wekhev a pêkhateyan tên amadekirin:\nI. CH3COOH û CH3COONa\nII. HNO3 û KNO3\nIII. HCl û NH4Cl.\nKîjan ji wan çareseriyên tampon in?"
       },
@@ -1919,7 +1919,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Bei der Titration von CH3COOH-Lösung mit NaOH-Lösung bei 25 °C beträgt der pH am Äquivalenzpunkt ≈ 8,7. Welcher Indikator sollte verwendet werden, damit der Endpunkt (Farbumschlag des Indikators) möglichst nahe am Äquivalenzpunkt liegt? (In Klammern: pH-Umschlagsbereiche.)",
         "fr": "À 25 °C, lors du titrage d’une solution de CH3COOH par une solution de NaOH, le pH au point d’équivalence est ≈ 8,7. Quel indicateur faut-il utiliser pour que le point de virage (changement de couleur de l’indicateur) soit le plus proche possible du point d’équivalence ? (Les zones de virage en pH sont données entre parenthèses.)",
         "ru": "При титровании раствора CH3COOH раствором NaOH при 25 °C pH в точке эквивалентности ≈ 8,7. Какой индикатор следует использовать, чтобы конечная точка титрования (изменение окраски индикатора) была как можно ближе к точке эквивалентности? (В скобках указаны интервалы перехода окраски по pH.)",
-        "ar": "عند معايرة محلول CH3COOH بمحلول NaOH عند 25 °C يكون pH عند نقطة التكافؤ ≈ 8.7. أي الكواشف التالية يجب استخدامه لتكون نقطة النهاية (نقطة تغير لون الكاشف) أقرب ما يمكن إلى نقطة التكافؤ؟ (بين القوسين مدى pH لتغير اللون.)",
+        "ar": "عند معايرة محلول CH3COOH بمحلول NaOH عند 25 °C يكون pH عند نقطة التكافؤ ≈ 8.7. أي الكواشف التالية يجب استخدامه لتكون نقطة النهاية (نقطة تغير لون الكاشف) أقرب ما يمكن إلى نقطة التكافؤ؟ (بين القوسين مدى pH الذي يتغير فيه لون كل كاشف.)",
         "zh": "25 °C 时用 NaOH 溶液滴定 CH3COOH 溶液，化学计量点的 pH ≈ 8.7。为使滴定终点（指示剂变色点）尽可能接近化学计量点，应选用下列哪种指示剂？(括号内为指示剂的变色 pH 范围。)",
         "ku": "Li 25 °C dema çareseriya CH3COOH bi çareseriya NaOH tê tîtrekirin, li xala hevwateyê pH ≈ 8,7 e. Ji bo ku xala dawiyê (xala ku rengê îndîkatorê diguhere) bi qasî ku pêkan e nêzî xala hevwateyê be, kîjan îndîkator divê were bikaranîn? (Di nav kevanan de navberên pH yên guherîna rengê hatine dayîn.)"
       },
@@ -2071,7 +2071,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Bei 25 °C werden 50 mL 0,1 M HCl-Lösung mit 0,1 M NaOH-Lösung titriert. Welche Aussagen sind richtig?\nI. Zu Beginn der Titration beträgt der pH-Wert 13.\nII. Nach Zugabe von 50 mL NaOH ist der Äquivalenzpunkt erreicht und der pH beträgt 7.\nIII. Nach Zugabe von insgesamt 100 mL NaOH ist [OH-] = 0,1 M.",
         "fr": "À 25 °C, 50 mL d’une solution de HCl à 0,1 M sont titrés par une solution de NaOH à 0,1 M. Lesquelles des affirmations suivantes sont exactes ?\nI. Au début du titrage, le pH de la solution vaut 13.\nII. Après ajout de 50 mL de NaOH, le point d’équivalence est atteint et le pH vaut 7.\nIII. Après ajout de 100 mL de NaOH au total, [OH-] = 0,1 M dans la solution.",
         "ru": "При 25 °C 50 мл 0,1 M раствора HCl титруют 0,1 M раствором NaOH. Какие из утверждений верны?\nI. В начале титрования pH раствора равен 13.\nII. После добавления 50 мл NaOH достигается точка эквивалентности и pH = 7.\nIII. После добавления в сумме 100 мл NaOH в растворе [OH-] = 0,1 M.",
-        "ar": "عند 25 °C يُعاير 50 mL من محلول HCl تركيزه 0.1 M بمحلول NaOH تركيزه 0.1 M. أي العبارات التالية صحيحة؟\nI. في بداية المعايرة يكون pH للمحلول 13.\nII. عند إضافة 50 mL من NaOH يُبلغ نقطة التكافؤ ويكون pH = 7.\nIII. عند إضافة 100 mL من NaOH إجمالًا يصبح [OH-] = 0.1 M في المحلول.",
+        "ar": "عند 25 °C يُعاير 50 mL من محلول HCl تركيزه 0.1 M بمحلول NaOH تركيزه 0.1 M. أي العبارات التالية صحيحة؟\nI. في بداية المعايرة يكون pH للمحلول 13.\nII. عند إضافة 50 mL من NaOH تُبلَغ نقطة التكافؤ ويكون pH = 7.\nIII. عند إضافة 100 mL من NaOH إجمالًا يصبح [OH-] = 0.1 M في المحلول.",
         "zh": "25 °C 时，用 0.1 M NaOH 溶液滴定 50 mL 0.1 M HCl 溶液。下列说法中哪些正确？\nI. 滴定开始时溶液的 pH 为 13。\nII. 加入 50 mL NaOH 时到达化学计量点，pH 为 7。\nIII. 共加入 100 mL NaOH 时，溶液中 [OH-] = 0.1 M。",
         "ku": "Li 25 °C 50 mL çareseriya 0,1 M HCl bi çareseriya 0,1 M NaOH tê tîtrekirin. Li gorî vê, kîjan gotin rast in?\nI. Di destpêka tîtrasyonê de pH ya çareseriyê 13 e.\nII. Dema 50 mL NaOH lê tê zêdekirin xala hevwateyê tê gihîştin û pH 7 dibe.\nIII. Dema bi giştî 100 mL NaOH lê tê zêdekirin di çareseriyê de [OH-] = 0,1 M dibe."
       },
@@ -2147,7 +2147,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Welchen pH-Wert hat bei 25 °C eine 0,01 M wässrige Lösung der schwachen Base BOH mit Kb = 1,0x10^-6?",
         "fr": "À 25 °C, quel est le pH d’une solution aqueuse à 0,01 M de la base faible BOH, dont Kb = 1,0x10^-6 ?",
         "ru": "Чему равен pH 0,01 M водного раствора слабого основания BOH (Kb = 1,0x10^-6) при 25 °C?",
-        "ar": "عند 25 °C، ما قيمة pH لمحلول مائي تركيزه 0.01 M من القاعدة الضعيفة BOH التي Kb لها = 1.0x10^-6؟",
+        "ar": "عند 25 °C، ما قيمة pH لمحلول مائي تركيزه 0.01 M من القاعدة الضعيفة BOH التي ثابت تأينها Kb = 1.0x10^-6؟",
         "zh": "25 °C 时，Kb = 1.0x10^-6 的弱碱 BOH 的 0.01 M 水溶液的 pH 是多少？",
         "ku": "Li 25 °C pH ya çareseriya avî ya 0,01 M a baza qels BOH ku Kb ya wê 1,0x10^-6 e çi ye?"
       },

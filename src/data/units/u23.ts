@@ -22,7 +22,7 @@ export const unit23: ChemistryUnitSeedData = {
     "de": "Allotrope, Hybridisierung, Sigma/Pi und VSEPR",
     "fr": "Allotropes, hybridation, Sigma/Pi et VSEPR",
     "ru": "Аллотропия, гибридизация, σ- и π-связи, теория VSEPR",
-    "ar": "المتآصلة، التهجين، سيجما/باي وVSEPR",
+    "ar": "المتآصلات والتهجين وروابط سيجما/باي وVSEPR",
     "zh": "同素异形体、杂化、σ键/π键与 VSEPR",
     "ku": "Allotrop, Hîbrîdîzasyon, Sigma/Pî û VSEPR"
   },
@@ -45,7 +45,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Wöhler synthetisierte erstmals Öl aus lebendem Gewebe.",
         "fr": "Wöhler a synthétisé pour la première fois de l'huile à partir de tissus vivants.",
         "ru": "Вёлер впервые синтезировал нефть из живых тканей.",
-        "ar": "قام فولر بتصنيع الزيت من الأنسجة الحية لأول مرة.",
+        "ar": "حضّر فولر النفط من الأنسجة الحية لأول مرة.",
         "zh": "维勒首次从生物组织中合成了石油。",
         "ku": "Wöhler yekem car rûnê ji tevna jîndaran sentez kir."
       },
@@ -78,7 +78,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Kohlenstoffatome können in ihren Verbindungen maximal 2 kovalente Bindungen eingehen.",
         "fr": "Les atomes de carbone peuvent former au maximum 2 liaisons covalentes dans leurs composés.",
         "ru": "Атом углерода в соединениях может образовывать не более двух ковалентных связей.",
-        "ar": "يمكن لذرات الكربون أن تشكل رابطتين تساهميتين كحد أقصى في مركباتها.",
+        "ar": "لا تكوّن ذرة الكربون في مركباتها أكثر من رابطتين تساهميتين.",
         "zh": "碳原子在其化合物中最多可形成 2 个共价键。",
         "ku": "Atomên karbonê di pêkhateyên xwe de herî zêde 2 bendên kovalentî çêdikin."
       },
@@ -88,7 +88,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Die Vorstellung von „2 Bindungen“ entsteht, wenn man nur die 2 halb besetzten p-Orbitale im Grundzustand betrachtet; nach Anhebung eines 2s-Elektrons in ein 2p-Orbital und Hybridisierung gibt es 4 halb besetzte Orbitale, und Kohlenstoff bildet 4 Bindungen (CH4).",
         "fr": "L'idée de « 2 liaisons » vient de ce que l'on ne regarde que les 2 orbitales p à moitié remplies de l'état fondamental ; après promotion d'un électron 2s vers 2p et hybridation, il y a 4 orbitales à moitié remplies et le carbone forme 4 liaisons (CH4).",
         "ru": "Заблуждение о двух связях возникает, если учитывать только две наполовину заполненные p-орбитали основного состояния; после перехода одного 2s-электрона на 2p-подуровень и гибридизации образуются 4 наполовину заполненные орбитали, и углерод образует 4 связи (CH4).",
-        "ar": "ينشأ خطأ «الرابطتين» من النظر فقط إلى أوربيتالي p نصف الممتلئين في الحالة الأساسية؛ فبعد إثارة إلكترون من 2s إلى 2p وحدوث التهجين تتكون 4 أوربيتالات نصف ممتلئة ويكوّن الكربون 4 روابط (CH4).",
+        "ar": "ينشأ خطأ «الرابطتين» من النظر فقط إلى مداري p نصف الممتلئين في الحالة الأساسية؛ فبعد إثارة إلكترون من 2s إلى 2p وحدوث التهجين تتكون 4 مدارات نصف ممتلئة ويكوّن الكربون 4 روابط (CH4).",
         "zh": "“只能形成2个键”的错误来自只看基态碳的2个半充满p轨道；一个2s电子激发到2p并发生杂化后，有4个半充满轨道，碳形成4个键(如CH4)。",
         "ku": "Şaşiya '2 girêdan' ji wê tê ku tenê li 2 orbîtalên p ên nîvtijî yên rewşa bingehîn tê nêrîn; piştî ku elektronek 2s derbasî 2p dibe û hîbrîdbûn çêdibe, 4 orbîtalên nîvtijî çêdibin û karbon 4 girêdanan çêdike (CH4)."
       }
@@ -101,7 +101,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Diamant ist die härteste natürliche Substanz mit sp3-Hybridisierung von Kohlenstoffatomen, einem regelmäßigen tetraedrischen Netzwerk und leitet keinen Strom.",
         "fr": "Le diamant est la substance naturelle la plus dure avec une hybridation sp3 d'atomes de carbone, un réseau tétraédrique régulier, et ne conduit pas l'électricité.",
         "ru": "Алмаз — самое твёрдое природное вещество: атомы углерода в нём находятся в sp3-гибридизации и образуют правильную тетраэдрическую сетку; алмаз не проводит электрический ток.",
-        "ar": "الماس هو أصلب مادة طبيعية مع sp3 تهجين ذرات الكربون، وهو عبارة عن شبكة رباعية منتظمة الشكل، وغير موصل للكهرباء.",
+        "ar": "الماس أصلب مادة طبيعية، تكون فيه ذرات الكربون مهجنة sp3 ومرتبة في شبكة رباعية الأوجه منتظمة، ولا يوصل الكهرباء.",
         "zh": "金刚石是天然存在的最硬物质，碳原子为 sp3 杂化，形成正四面体空间网状结构，不导电。",
         "ku": "Elmas maddeya xwezayî ya herî dijwar e ku bi hîbrîdîzasyona sp3 ya atomên karbonê, torgilokek tetrahedral ya birêkûpêk e û elektrîkê nagire."
       },
@@ -111,7 +111,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Diamant leitet Elektrizität sehr gut und ist so weich wie Graphit.",
         "fr": "Le diamant conduit très bien l'électricité et est aussi doux que le graphite.",
         "ru": "Алмаз очень хорошо проводит электрический ток и мягок, как графит.",
-        "ar": "يوصل الماس الكهرباء بشكل جيد للغاية وهو ناعم مثل الجرافيت.",
+        "ar": "يوصل الماس الكهرباء جيدًا جدًا، وهو طري مثل الجرافيت.",
         "zh": "金刚石导电性很好，并且像石墨一样质软。",
         "ku": "Elmas elektrîkê pir baş derbas dike û wek grafît nerm e."
       },
@@ -121,7 +121,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Im Diamanten ist jedes C-Atom über sp3-Orbitale an vier C-Atome gebunden; es bleiben keine beweglichen Elektronen übrig, daher leitet er nicht, und das starke dreidimensionale kovalente Netz macht ihn sehr hart. Leitfähigkeit und Weichheit gehören zum Graphit.",
         "fr": "Dans le diamant, chaque atome de C est lié à quatre atomes de C par des orbitales sp3 ; il ne reste aucun électron mobile, donc il ne conduit pas, et le réseau covalent tridimensionnel solide le rend très dur. Conductivité et tendreté sont propres au graphite.",
         "ru": "В алмазе каждый атом C связан с четырьмя атомами C за счёт sp3-орбиталей; подвижных электронов не остаётся, поэтому алмаз не проводит ток, а прочная трёхмерная ковалентная сетка делает его очень твёрдым. Электропроводность и мягкость — свойства графита.",
-        "ar": "في الألماس ترتبط كل ذرة C بأربع ذرات C عبر أوربيتالات sp3؛ فلا تبقى إلكترونات حرة الحركة ولذلك لا يوصل الكهرباء، والشبكة التساهمية الثلاثية الأبعاد القوية تجعله شديد الصلابة. أما التوصيل والليونة فمن خصائص الجرافيت.",
+        "ar": "في الماس ترتبط كل ذرة C بأربع ذرات C عبر مدارات sp3؛ فلا تبقى إلكترونات حرة الحركة ولذلك لا يوصل الكهرباء، والشبكة التساهمية الثلاثية الأبعاد القوية تجعله شديد الصلابة. أما التوصيل والليونة فمن خصائص الجرافيت.",
         "zh": "金刚石中每个碳原子以sp3杂化轨道与四个碳原子成键，没有可自由移动的电子，所以不导电；牢固的三维共价网络使它非常坚硬。导电和质软是石墨的性质。",
         "ku": "Di elmasê de her atomeke C bi orbîtalên sp3 bi çar atomên C ve girêdayî ye; elektronên tevger namînin, ji ber vê elektrîkê nameşîne û tora kovalent a sê-dîmensî ya bihêz wê pir hişk dike. Meşandin û nermî taybetiyên grafîtê ne."
       }
@@ -134,7 +134,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Graphit ist eine hexagonale Schichtstruktur, in der Kohlenstoffatome einer sp2-Hybridisierung unterliegen. Dank seiner freien Pi-Elektronen leitet es Strom.",
         "fr": "Le graphite est une structure en couches hexagonale dans laquelle les atomes de carbone subissent une hybridation sp2 ; Il conduit l’électricité grâce à ses électrons pi libres.",
         "ru": "Графит имеет слоистое строение из шестиугольных колец, атомы углерода в нём находятся в sp2-гибридизации; благодаря подвижным π-электронам графит проводит электрический ток.",
-        "ar": "الجرافيت عبارة عن هيكل ذو طبقات سداسية تخضع فيه ذرات الكربون لتهجين sp2؛ يوصل الكهرباء بفضل إلكتروناته الحرة.",
+        "ar": "الجرافيت بنية من طبقات سداسية تكون فيها ذرات الكربون مهجنة sp2؛ ويوصل الكهرباء بفضل إلكترونات باي الحرة.",
         "zh": "石墨中碳原子为 sp2 杂化，呈六方层状结构；由于存在可自由移动的π电子，石墨能导电。",
         "ku": "Grafît avahiyek qat-hexagonal e ku tê de atomên karbonê di bin hîbrîdîzasyona sp2 de ne; Ew elektrîkê bi saya elektronên xwe yên pî yên belaş pêk tîne."
       },
@@ -177,7 +177,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Graphen ist ein dreidimensionaler spröder Isolator.",
         "fr": "Le graphène est un isolant fragile tridimensionnel.",
         "ru": "Графен — трёхмерный хрупкий изолятор.",
-        "ar": "الجرافين هو عازل هش ثلاثي الأبعاد.",
+        "ar": "الجرافين عازل هش ثلاثي الأبعاد.",
         "zh": "石墨烯是一种三维的、脆性的绝缘体。",
         "ku": "Graphene însulatorek şikestî ya sê-alî ye."
       },
@@ -210,7 +210,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Fullerene kommen in der Natur reichlich in Kristallform in Mineralien vor.",
         "fr": "Les fullerènes se trouvent en abondance sous forme cristalline dans les minéraux naturels.",
         "ru": "Фуллерены в больших количествах встречаются в природе в виде кристаллов в рудных месторождениях.",
-        "ar": "تم العثور على الفوليرين بكثرة في شكل بلوري في المعادن في الطبيعة.",
+        "ar": "توجد الفوليرينات بكثرة في الطبيعة على هيئة بلورات في المناجم.",
         "zh": "富勒烯在自然界的矿物中以晶体形式大量存在。",
         "ku": "Fulleren di mîneralên di xwezayê de bi şeklê krîstal pir tê dîtin."
       },
@@ -233,7 +233,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Die ERSTE Bindung zwischen zwei Atomen ist immer eine Sigma-Bindung (σ); Die später gebildeten zweiten und dritten Bindungen sind Pi (π)-Bindungen.",
         "fr": "La PREMIÈRE liaison formée entre deux atomes est toujours une liaison sigma (σ) ; Les deuxième et troisième liaisons formées plus tard sont des liaisons pi (π).",
         "ru": "Первая связь между двумя атомами всегда σ-связь (сигма-связь); вторая и третья связи — π-связи (пи-связи).",
-        "ar": "الرابطة الأولى المتكونة بين ذرتين تكون دائمًا رابطة سيجما (σ)؛ الروابط الثانية والثالثة التي تشكلت لاحقًا هي روابط pi (π).",
+        "ar": "الرابطة الأولى التي تتكون بين ذرتين هي دائمًا رابطة سيجما (σ)؛ أما الرابطتان الثانية والثالثة اللتان تتكونان بعدها فهما رابطتا باي (π).",
         "zh": "两个原子之间形成的第一个键总是σ键；随后形成的第二个和第三个键是π键。",
         "ku": "Girêdana YEKEMÎN a ku di navbera du atoman de çêdibe, her dem bendek sigma (σ) ye; Girêdanên duyemîn û sêyem ên ku paşê çêdibin bendên pi (π) ne."
       },
@@ -243,7 +243,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Zunächst wird eine Pi-Bindung zwischen zwei Atomen hergestellt.",
         "fr": "Premièrement, une liaison pi s’établit entre deux atomes.",
         "ru": "Между двумя атомами сначала образуется π-связь.",
-        "ar": "أولاً، يتم إنشاء رابطة باي بين ذرتين.",
+        "ar": "تتكون بين ذرتين رابطة باي أولًا.",
         "zh": "两个原子之间首先形成的是π键。",
         "ku": "Pêşîn, girêdanek pi di navbera du atoman de tê saz kirin."
       },
@@ -253,7 +253,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Eine pi-Bindung entsteht durch seitliche Überlappung von p-Orbitalen erst, nachdem entlang der Kernverbindungsachse eine sigma-Bindung gebildet wurde; kein Atompaar wird nur durch eine pi-Bindung zusammengehalten.",
         "fr": "Une liaison pi se forme par recouvrement latéral d'orbitales p seulement après qu'une liaison sigma s'est établie sur l'axe joignant les deux noyaux ; aucune paire d'atomes n'est liée par une liaison pi seule.",
         "ru": "π-связь образуется боковым перекрыванием p-орбиталей только после того, как на оси, соединяющей ядра, возникла σ-связь; пары атомов, связанных одной лишь π-связью, не бывает.",
-        "ar": "تتكون رابطة باي بالتداخل الجانبي لأوربيتالات p فقط بعد تكوّن رابطة سيجما على المحور الواصل بين النواتين؛ ولا يوجد زوج من الذرات مرتبط برابطة باي وحدها.",
+        "ar": "تتكون رابطة باي بالتداخل الجانبي لمدارات p فقط بعد تكوّن رابطة سيجما على المحور الواصل بين النواتين؛ ولا يوجد زوج من الذرات مرتبط برابطة باي وحدها.",
         "zh": "π键只有在两核连线方向上先形成σ键之后，才能由p轨道“肩并肩”重叠形成；不存在只靠π键连接的两个原子。",
         "ku": "Girêdana pi tenê piştî ku li ser eksena ku her du navikan girê dide girêdana sigma çêbû, bi hevgirtina rex bi rex a orbîtalên p çêdibe; tu cotê atoman tenê bi girêdana pi ve girêdayî nîne."
       }
@@ -266,7 +266,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Die Sigma-Bindung wird durch überlappende Orbitale Ende an Ende gebildet, die Pi-Bindung entsteht durch parallele (nebeneinander liegende) Überlappung. Die Sigma-Bindung ist stärker als die Pi-Bindung.",
         "fr": "La liaison Sigma est formée par des orbitales qui se chevauchent bout à bout, la liaison Pi est formée par un chevauchement parallèle (côte à côte) ; La liaison sigma est plus forte que la liaison pi.",
         "ru": "σ-связь образуется при осевом (лобовом) перекрывании орбиталей, π-связь — при боковом (параллельном) перекрывании; σ-связь прочнее π-связи.",
-        "ar": "تتشكل رابطة سيجما من خلال تداخل المدارات من طرف إلى طرف، وتتشكل رابطة بي من خلال تداخل متوازي (جنبًا إلى جنب)؛ رابطة سيجما أقوى من رابطة باي.",
+        "ar": "تتكون رابطة سيجما بتداخل المدارات طرفًا لطرف، وتتكون رابطة باي بالتداخل المتوازي (الجانبي)؛ ورابطة سيجما أقوى من رابطة باي.",
         "zh": "σ键由轨道“头碰头”重叠形成，π键由轨道“肩并肩”（平行）重叠形成；σ键比π键牢固。",
         "ku": "Girêdana sigmayê ji hêla orbîtalên hevûdu yên dawî bi hev ve tê çêkirin, girêdana pi bi hevgirtina paralel (alî bi kêlek) pêk tê; Girêdana sigmayê ji girêdana pi xurtir e."
       },
@@ -299,7 +299,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Wenn das Kohlenstoffatom alle Einfachbindungen gebildet hat, liegt eine sp3-Hybridisierung vor, wenn es eine Doppelbindung gebildet hat, liegt eine sp2-Hybridisierung vor, und wenn es eine Dreifachbindung (oder zwei Doppelbindungen) gebildet hat, liegt eine sp-Hybridisierung vor.",
         "fr": "Si l’atome de carbone a réalisé toutes les liaisons simples, il a une hybridation sp3, s’il a réalisé une double liaison, il a une hybridation sp2, et s’il a réalisé une triple liaison (ou deux doubles liaisons), il a une hybridation sp.",
         "ru": "Если атом углерода образует только одинарные связи, он находится в sp3-гибридизации; если одну двойную связь — в sp2-гибридизации; если одну тройную связь (или две двойные) — в sp-гибридизации.",
-        "ar": "إذا كونت ذرة الكربون كل الروابط المفردة، فإنها تكون لديها تهجين sp3، وإذا كونت رابطة مزدوجة واحدة، فإنها تكون لديها تهجين sp2، وإذا كونت رابطة ثلاثية واحدة (أو رابطتين مزدوجتين)، فإنها تكون لديها تهجين sp.",
+        "ar": "إذا كانت جميع روابط ذرة الكربون أحادية فتهجينها sp3، وإذا كوّنت رابطة ثنائية واحدة فتهجينها sp2، وإذا كوّنت رابطة ثلاثية واحدة (أو رابطتين ثنائيتين) فتهجينها sp.",
         "zh": "如果碳原子全部形成单键，则为 sp3 杂化；如果形成 1 个双键，则为 sp2 杂化；如果形成 1 个三键(或 2 个双键)，则为 sp 杂化。",
         "ku": "Heke atoma karbonê hemû girêdanên xwe yekcarî çêkiribin sp3, heke girêdanek ducarî çêkiribe sp2, heke girêdanek sêcarî (an du girêdanên ducarî) çêkiribe hîbrîdîzasyona sp kiriye."
       },
@@ -309,7 +309,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Das Kohlenstoffatom im CH4-Molekül hat eine sp-Hybridisierung durchlaufen.",
         "fr": "L'atome de carbone de la molécule CH4 a subi une hybridation sp.",
         "ru": "В молекуле CH4 атом углерода находится в sp-гибридизации.",
-        "ar": "خضعت ذرة الكربون في جزيء CH4 للتهجين sp.",
+        "ar": "ذرة الكربون في جزيء CH4 مهجنة sp.",
         "zh": "CH4 分子中的碳原子为 sp 杂化。",
         "ku": "Atoma karbonê ya di molekula CH4 de bi hîbrîdîzasyona sp derbas bûye."
       },
@@ -319,7 +319,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "In CH4 bildet Kohlenstoff vier Einfach-(sigma-)Bindungen, wofür vier gleichwertige Hybridorbitale nötig sind: das ist sp3-Hybridisierung. sp-Hybridisierung tritt bei Kohlenstoffatomen mit einer Dreifachbindung oder zwei Doppelbindungen auf (C2H2, CO2).",
         "fr": "Dans CH4, le carbone forme quatre liaisons simples (sigma), ce qui exige quatre orbitales hybrides équivalentes : c'est l'hybridation sp3. L'hybridation sp concerne les carbones ayant une triple liaison ou deux doubles liaisons (C2H2, CO2).",
         "ru": "В CH4 углерод образует четыре одинарные σ-связи, для чего нужны четыре равноценные гибридные орбитали, — это sp3-гибридизация. sp-гибридизация встречается у атомов углерода с тройной связью или двумя двойными связями (C2H2, CO2).",
-        "ar": "في CH4 يكوّن الكربون أربع روابط أحادية (سيجما)، وهذا يتطلب أربعة أوربيتالات مهجنة متكافئة، أي تهجين sp3. أما تهجين sp فيوجد في ذرات الكربون ذات الرابطة الثلاثية أو الرابطتين الثنائيتين (C2H2، CO2).",
+        "ar": "في CH4 يكوّن الكربون أربع روابط أحادية (سيجما)، وهذا يتطلب أربعة مدارات مهجنة متكافئة، أي تهجين sp3. أما تهجين sp فيوجد في ذرات الكربون ذات الرابطة الثلاثية أو الرابطتين الثنائيتين (C2H2، CO2).",
         "zh": "CH4中碳形成四个单键（σ键），需要四个等同的杂化轨道，这是sp3杂化。sp杂化出现在含三键或两个双键的碳原子上(如C2H2、CO2)。",
         "ku": "Di CH4 de karbon çar girêdanên yekane (sigma) çêdike û ji bo vê çar orbîtalên hîbrîd ên wekhev divên; ev hîbrîdbûna sp3 e. Hîbrîdbûna sp di karbonên bi girêdana sêcar an du girêdanên ducar de (C2H2, CO2) tê dîtin."
       }
@@ -375,7 +375,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Das BF3-Molekül ist ein regelmäßiger Tetraeder.",
         "fr": "La molécule BF3 est un tétraèdre régulier.",
         "ru": "Молекула BF3 имеет форму правильного тетраэдра.",
-        "ar": "جزيء BF3 هو رباعي وجوه منتظم.",
+        "ar": "شكل جزيء BF3 رباعي أوجه منتظم.",
         "zh": "BF3 分子呈正四面体形。",
         "ku": "Molekula BF3 tetrahedronek asayî ye."
       },
@@ -408,7 +408,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Der Bindungswinkel im CH4-Molekül beträgt 90°.",
         "fr": "L'angle de liaison dans la molécule CH4 est de 90°.",
         "ru": "Валентный угол в молекуле CH4 равен 90°.",
-        "ar": "زاوية الرابطة في جزيء CH4 هي 90 درجة.",
+        "ar": "زاوية الرابطة في جزيء CH4 تساوي 90°.",
         "zh": "CH4 分子中的键角为 90°。",
         "ku": "Di molekula CH4 de goşeya girêdanê 90° ye."
       },
@@ -441,7 +441,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Das NH3-Molekül ist unpolar und eben dreieckig.",
         "fr": "La molécule NH3 est apolaire et plane triangulaire.",
         "ru": "Молекула NH3 неполярна и имеет форму плоского треугольника.",
-        "ar": "جزيء NH3 غير قطبي ومثلث المستوى.",
+        "ar": "جزيء NH3 غير قطبي وشكله مثلث مستوٍ.",
         "zh": "NH3 分子是非极性的平面三角形分子。",
         "ku": "Molekula NH3 nepolar û sêgoşe ye."
       },
@@ -451,7 +451,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "In NH3 ist das freie Elektronenpaar am N-Atom ebenfalls ein Elektronenbereich (AX3E); es drückt die Bindungen nach unten, sodass das Molekül trigonal-pyramidal wird, und da sich die Bindungsdipole nicht aufheben, ist es polar.",
         "fr": "Dans NH3, le doublet non liant de l'atome N est lui aussi un domaine électronique (AX3E) ; il repousse les liaisons vers le bas, rendant la molécule pyramidale trigonale, et comme les dipôles de liaison ne s'annulent pas, la molécule est polaire.",
         "ru": "В NH3 неподелённая пара атома N тоже занимает область электронной плотности (AX3E); она отталкивает связи вниз, и молекула принимает форму тригональной пирамиды, а так как диполи связей не компенсируются, молекула полярна.",
-        "ar": "في NH3 يُعد الزوج غير الرابط على ذرة N منطقة إلكترونية أيضًا (AX3E)؛ فيدفع الروابط إلى الأسفل فيصبح الجزيء هرمًا ثلاثيًا، ولأن عزوم الروابط لا يلغي بعضها بعضًا فالجزيء قطبي.",
+        "ar": "في NH3 يُعد الزوج غير الرابط على ذرة N منطقة إلكترونية أيضًا (AX3E)؛ فيدفع الروابط إلى الأسفل فيصبح الجزيء هرمًا ثلاثيًا، ولأن عزوم ثنائيات أقطاب الروابط لا يلغي بعضها بعضًا فالجزيء قطبي.",
         "zh": "NH3中氮原子上的孤对电子也是一个电子域(AX3E)，它把成键电子对向下推，使分子成为三角锥形；键的偶极不能相互抵消，所以分子有极性。",
         "ku": "Di NH3 de cotê nehevpar ê li ser atoma N jî herêmeke elektronan e (AX3E); ew girêdanan ber bi jêr ve dehf dide û molekulê dike pîramîda sêgoşe, û ji ber ku dîpolên girêdanan hev betal nakin molekul polar e."
       }
@@ -474,7 +474,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Das H2O-Molekül ist in linearer Geometrie unpolar.",
         "fr": "La molécule H2O est apolaire en géométrie linéaire.",
         "ru": "Молекула H2O линейная и неполярная.",
-        "ar": "جزيء H2O غير قطبي في الهندسة الخطية.",
+        "ar": "جزيء H2O خطي وغير قطبي.",
         "zh": "H2O 分子为直线形，是非极性分子。",
         "ku": "Molekula H2O di geometriya xêz de nepolar e."
       },
@@ -507,7 +507,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Die Anzahl der anorganischen Verbindungen ist viel höher als die der organischen Verbindungen.",
         "fr": "Le nombre de composés inorganiques est bien supérieur à celui des composés organiques.",
         "ru": "Неорганических соединений намного больше, чем органических.",
-        "ar": "عدد المركبات غير العضوية أعلى بكثير من المركبات العضوية.",
+        "ar": "عدد المركبات غير العضوية أكبر بكثير من عدد المركبات العضوية.",
         "zh": "无机化合物的数量远高于有机化合物。",
         "ku": "Hejmara pêkhateyên înorganîk ji pêkhateyên organîk gelek zêdetir e."
       },
@@ -530,7 +530,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Organische Verbindungen sind im Allgemeinen brennbar, haben niedrige Schmelzpunkte und reagieren langsam.",
         "fr": "Les composés organiques sont généralement inflammables, ont des points de fusion bas et des réactions lentes.",
         "ru": "Органические соединения, как правило, горючи, имеют низкие температуры плавления и реагируют медленно.",
-        "ar": "المركبات العضوية قابلة للاشتعال بشكل عام، ولها نقاط انصهار منخفضة وتفاعلات بطيئة.",
+        "ar": "المركبات العضوية عمومًا قابلة للاشتعال، ودرجات انصهارها منخفضة، وتفاعلاتها بطيئة.",
         "zh": "有机化合物一般易燃、熔点低，反应较慢。",
         "ku": "Pêkhateyên organîk bi gelemperî şewitîn in, xwedî xalên helandinê kêm û reaksiyonên hêdî ne."
       },
@@ -540,7 +540,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Organische Verbindungen sind Ionenkristalle mit Schmelzpunkten von mehreren Tausend Grad.",
         "fr": "Les composés organiques sont des cristaux ioniques dont le point de fusion atteint des milliers de degrés.",
         "ru": "Органические соединения — ионные кристаллы с температурой плавления в тысячи градусов.",
-        "ar": "المركبات العضوية عبارة عن بلورات أيونية تصل درجة انصهارها إلى آلاف الدرجات.",
+        "ar": "المركبات العضوية بلورات أيونية تبلغ درجات انصهارها آلاف الدرجات.",
         "zh": "有机化合物是熔点高达数千摄氏度的离子晶体。",
         "ku": "Pêkhateyên organîk krîstalên îyonî ne ku xalên helînê yên bi hezaran derece ne."
       },
@@ -585,7 +585,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Diamant ist sp3-hybridisiert, leitet keinen Strom und ist hart; Graphit ist sp2-hybridisiert, schichtförmig, leitet Strom und ist weich.",
         "fr": "Le diamant est hybridé sp3, ne conduit pas l'électricité et est dur ; le graphite est hybridé sp2, lamellaire, conduit l'électricité et est tendre.",
         "ru": "Алмаз состоит из атомов углерода в sp3-гибридизации, не проводит электрический ток и обладает очень высокой твёрдостью; графит — мягкое слоистое вещество из атомов углерода в sp2-гибридизации, проводящее электрический ток.",
-        "ar": "الماس مهجن sp3 لا يوصل الكهرباء وهو صلد؛ والجرافيت مهجن sp2 طبقي يوصل الكهرباء وهو طري.",
+        "ar": "الماس مكوّن من ذرات كربون مهجنة sp3، لا يوصل الكهرباء وشديد الصلابة؛ أما الجرافيت فبنية طبقية من ذرات كربون مهجنة sp2، يوصل الكهرباء وطري.",
         "zh": "金刚石为 sp3 杂化，不导电，坚硬；石墨为 sp2 杂化，层状，能导电，质软。",
         "ku": "Elmas sp3 hîbrîdîzekirî ye, elektrîkê naguhezîne û hişk e; grafît sp2 hîbrîdîzekirî ye, qatqatî ye, elektrîkê diguhezîne û nerm e."
       }
@@ -618,7 +618,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Eine Sigma-Bindung entsteht durch axiale Überlappung (Kopf an Kopf) und ist stabil; eine Pi-Bindung ist die seitliche Überlappung von p-Orbitalen und bricht leichter.",
         "fr": "Une liaison sigma résulte d'un recouvrement axial bout à bout et est solide ; une liaison pi est le recouvrement latéral d'orbitales p et se rompt plus facilement.",
         "ru": "Сигма-связь образуется при перекрывании орбиталей вдоль оси связи и обладает большей прочностью; пи-связь образуется при боковом перекрывании p-орбиталей и разрывается легче.",
-        "ar": "تتكون رابطة سيجما بالتداخل المحوري رأسًا لرأس وهي قوية؛ أما رابطة باي فهي تداخل جانبي لمدارات p وتنكسر بسهولة أكبر.",
+        "ar": "رابطة سيجما رابطة قوية تنشأ من التداخل المحوري للمدارات (رأسًا لرأس)؛ أما رابطة باي فتنشأ من التداخل الجانبي لمدارات p وتنكسر بسهولة أكبر.",
         "zh": "σ键由轨道沿键轴“头碰头”重叠形成，较牢固；π键由 p 轨道“肩并肩”重叠形成，较易断裂。",
         "ku": "Girêdana sigma bi hevgirtina eksenî ya serî-bi-serî çêdibe û xurt e; girêdana pî hevgirtina kêlekî ya orbîtalên p ye û hêsantir dişkê."
       }
@@ -651,7 +651,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Organische Verbindungen sind Moleküle mit Kohlenstoffgerüst (meist mit C–H-Bindungen) und überwiegend kovalenter Bindung; anorganische Verbindungen sind überwiegend ionisch aufgebaute, hochschmelzende Stoffe mineralischen Ursprungs.",
         "fr": "Composé organique : molécule à squelette carboné (contenant généralement des liaisons C–H), surtout à liaisons covalentes ; composé inorganique : substance le plus souvent ionique, à point de fusion élevé et d'origine minérale.",
         "ru": "Органическое соединение построено на углеродном скелете (обычно со связями C–H), и его атомы связаны преимущественно ковалентными связями; неорганическое соединение — чаще всего тугоплавкое вещество ионного строения минерального происхождения.",
-        "ar": "المركبات العضوية جزيئات ذات هيكل كربوني (تحتوي عادة على روابط C–H) وروابطها تساهمية في الغالب؛ أما المركبات غير العضوية فهي في الغالب أيونية مرتفعة درجة الانصهار ومعدنية المنشأ.",
+        "ar": "المركب العضوي جزيء ذو هيكل كربوني (يحتوي عادة على روابط C–H) وروابطه تساهمية في الغالب؛ أما المركب غير العضوي فيكون في الغالب أيوني البنية، مرتفع درجة الانصهار، معدني المنشأ.",
         "zh": "有机化合物是以碳为骨架(通常含 C–H 键)、多以共价键结合的分子；无机化合物则多为离子型、熔点较高、来源于矿物的物质。",
         "ku": "Pêkhateyên organîk molekulên bi îskeleta karbonê ne (bi gelemperî girêdanên C–H dihewînin) û bi piranî kovalent in; pêkhateyên anorganîk bi piranî îyonîk, xala helandinê bilind û bi eslê xwe mîneral in."
       }
@@ -674,7 +674,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Kohlenstoffnanoröhre",
         "fr": "Nanotube de carbone",
         "ru": "Углеродная нанотрубка",
-        "ar": "أنابيب الكربون النانوية",
+        "ar": "أنبوب الكربون النانوي",
         "zh": "碳纳米管",
         "ku": "Nanotûba Karbonê"
       },
@@ -816,7 +816,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "AX2: Das Zentralatom trägt kein freies Elektronenpaar, der Winkel zwischen den beiden Bindungen beträgt 180° (CO2); AX2E2: Die 2 freien Elektronenpaare am Zentralatom verkleinern den Bindungswinkel auf 104,5° (H2O).",
         "fr": "Dans AX2, l'atome central ne porte aucun doublet non liant et l'angle entre les deux liaisons est de 180° (CO2) ; dans AX2E2, les 2 doublets non liants de l'atome central réduisent l'angle de liaison à 104,5° (H2O).",
         "ru": "Линейная форма (AX2) возникает, когда у центрального атома нет неподелённых пар, угол между двумя связями 180° (CO2); угловая форма (AX2E2) возникает, когда две неподелённые пары центрального атома уменьшают валентный угол до 104,5° (H2O).",
-        "ar": "في AX2 لا تحمل الذرة المركزية أزواجًا إلكترونية غير رابطة والزاوية بين الرابطتين 180° (CO2)؛ أما في AX2E2 فإن 2 من الأزواج غير الرابطة على الذرة المركزية يقلّلان زاوية الرابطة إلى 104.5° (H2O).",
+        "ar": "في AX2 لا تحمل الذرة المركزية أزواجًا إلكترونية غير رابطة والزاوية بين الرابطتين 180° (CO2)؛ أما في AX2E2 فإن زوجي الإلكترونات غير الرابطين على الذرة المركزية يقلّلان زاوية الرابطة إلى 104.5° (H2O).",
         "zh": "直线形(AX2)的中心原子没有孤对电子，两个键之间的夹角为 180°(如 CO2)；V形(AX2E2)的中心原子上有 2 对孤对电子，使键角减小到 104.5°(如 H2O)。",
         "ku": "Di AX2 de li ser atoma navendî cotên elektronan ên nehevpar tune ne û goşeya di navbera her du girêdanan de 180° ye (CO2); di AX2E2 de 2 cotên nehevpar ên li ser atoma navendî goşeya girêdanê dadixin 104,5° (H2O)."
       }
@@ -831,7 +831,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "VSEPR- und Geometriebestimmungsschritte",
         "fr": "Étapes de détermination du VSEPR et de la géométrie",
         "ru": "Определение формы молекулы по теории VSEPR",
-        "ar": "VSEPR وخطوات تحديد الهندسة",
+        "ar": "خطوات تحديد الشكل الهندسي وفق VSEPR",
         "zh": "用 VSEPR 模型判断分子构型的步骤",
         "ku": "VSEPR û Pêngavên Diyarkirina Geometrî"
       },
@@ -852,7 +852,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "Zeichnen Sie die Lewis-Punktstruktur",
           "fr": "Dessiner la structure de points de Lewis",
           "ru": "Изобразить структуру Льюиса (электронную формулу)",
-          "ar": "ارسم بنية نقطة لويس",
+          "ar": "ارسم تركيب لويس النقطي",
           "zh": "画出路易斯结构式",
           "ku": "Avahiya xala Lewis xêz bikin"
         },
@@ -862,7 +862,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "Zählen Sie bindende Atome (X) und ungeteilte Elektronenpaare (E).",
           "fr": "Comptez les atomes de liaison (X) et les paires d'électrons non partagés (E)",
           "ru": "Подсчитать связанные атомы (X) и неподелённые электронные пары (E)",
-          "ar": "عد الذرات الرابطة (X) وأزواج الإلكترونات غير المشتركة (E)",
+          "ar": "عُدّ الذرات المرتبطة (X) وأزواج الإلكترونات غير الرابطة (E)",
           "zh": "数出与中心原子相连的原子数(X)和孤对电子数(E)",
           "ku": "Atomên girêdanê (X) û cotên elektronê yên bêpar (E) bijmêre"
         },
@@ -872,7 +872,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "Bestimmen Sie Geometrie und Winkel anhand der VSEPR-Formel (AXnEm).",
           "fr": "Déterminer la géométrie et l'angle à partir de la formule VSEPR (AXnEm)",
           "ru": "Определить по формуле VSEPR (AXnEm) форму молекулы и валентный угол",
-          "ar": "تحديد الهندسة والزاوية من صيغة VSEPR (AXnEm)",
+          "ar": "حدّد الشكل الهندسي والزاوية من صيغة VSEPR (AXnEm)",
           "zh": "根据 VSEPR 通式(AXnEm)确定分子构型和键角",
           "ku": "Ji formula VSEPR (AXnEm) geometrî û goşeyê diyar bikin"
         }
@@ -897,7 +897,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "Die Grundzustands-Elektronenkonfiguration des Kohlenstoffs wird notiert: 1s2 2s2 2p2 (2 halb besetzte Orbitale)",
           "fr": "On écrit la configuration électronique fondamentale du carbone : 1s2 2s2 2p2 (2 orbitales à moitié remplies)",
           "ru": "Записывают электронную конфигурацию углерода в основном состоянии: 1s2 2s2 2p2 (2 наполовину заполненные орбитали)",
-          "ar": "يُكتب التوزيع الإلكتروني للكربون في الحالة الأرضية: 1s2 2s2 2p2 (مداران نصف ممتلئين)",
+          "ar": "يُكتب التوزيع الإلكتروني للكربون في الحالة الأساسية: 1s2 2s2 2p2 (مداران نصف ممتلئين)",
           "zh": "写出碳原子基态电子排布：1s2 2s2 2p2(2 个半充满轨道)",
           "ku": "Rêzbûna elektronan a rewşa bingehîn a karbonê tê nivîsîn: 1s2 2s2 2p2 (2 orbîtalên nîv-tijî)"
         },
@@ -907,7 +907,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "Ein Elektron aus dem 2s-Orbital wird in das leere 2p-Orbital angehoben (4 halb besetzte Orbitale)",
           "fr": "Un électron de l'orbitale 2s est promu dans l'orbitale 2p vide (4 orbitales à moitié remplies)",
           "ru": "Один электрон с 2s-орбитали переходит на свободную 2p-орбиталь (4 наполовину заполненные орбитали)",
-          "ar": "ينتقل إلكترون من المدار 2s إلى مدار 2p الفارغ (4 مدارات نصف ممتلئة)",
+          "ar": "يُثار إلكترون من المدار 2s إلى مدار 2p الفارغ (4 مدارات نصف ممتلئة)",
           "zh": "2s 轨道上的一个电子激发到空的 2p 轨道(4 个半充满轨道)",
           "ku": "Elektronek ji orbîtala 2s derbasî orbîtala 2p ya vala dibe (4 orbîtalên nîv-tijî)"
         },
@@ -972,7 +972,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "Es wurde gezeigt, dass organische Stoffe im Labor auch aus anorganischen hergestellt werden können; der Vitalismus wurde nach und nach aufgegeben",
           "fr": "On montra que les substances organiques peuvent aussi être synthétisées au laboratoire à partir de substances inorganiques ; le vitalisme fut peu à peu abandonné",
           "ru": "Было показано, что органические вещества можно синтезировать в лаборатории и из неорганических; витализм постепенно был оставлен",
-          "ar": "ثبت أنه يمكن تحضير المواد العضوية في المختبر من مواد غير عضوية أيضًا؛ وتُخلّي عن المذهب الحيوي تدريجيًا",
+          "ar": "ثبت أنه يمكن تحضير المواد العضوية في المختبر من مواد غير عضوية أيضًا؛ وتُرك المذهب الحيوي تدريجيًا",
           "zh": "实验表明有机物也可以在实验室由无机物合成；生命力论随后逐渐被摒弃",
           "ku": "Hate nîşandan ku madeyên organîk dikarin di laboratuwarê de ji madeyên anorganîk jî werin sentezkirin; vîtalîzm bi demê re hate terikandin"
         },
@@ -1053,7 +1053,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Welche der folgenden Aussagen gibt die VSEPR-Formel und die Molekülgeometrie des H2O-Moleküls richtig an?",
         "fr": "Lequel des énoncés suivants donne correctement la formule VSEPR et la géométrie moléculaire de la molécule H2O ?",
         "ru": "В каком варианте правильно указаны формула VSEPR и форма молекулы H2O?",
-        "ar": "أي مما يلي يعطي صيغة VSEPR والهندسة الجزيئية لجزيء H2O بشكل صحيح؟",
+        "ar": "أيٌّ مما يلي يعطي صيغة VSEPR والشكل الهندسي لجزيء H2O بصورة صحيحة؟",
         "zh": "下列哪一项正确给出了 H2O 分子的 VSEPR 通式和分子构型？",
         "ku": "Kîjan ji yên jêrîn formula VSEPR û geometriya molekulê ya molekula H2O rast dide?"
       },
@@ -1116,7 +1116,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Sauerstoff ist das Zentralatom; er bildet 2 Bindungen (X2) und trägt 2 freie Elektronenpaare (E2). Die VSEPR-Formel ist AX2E2, die Geometrie gewinkelt (104,5°). Wer die freien Elektronenpaare übersieht, hält das Molekül fälschlich für AX2 (linear); linear ist CO2.",
         "fr": "L'oxygène est l'atome central ; il forme 2 liaisons (X2) et porte 2 doublets non liants (E2). Sa formule VSEPR est AX2E2 et sa géométrie est coudée (104,5°). Oublier les doublets non liants conduit à croire à tort que la molécule est AX2 (linéaire) ; c'est CO2 qui est linéaire.",
         "ru": "Кислород — центральный атом; он образует 2 связи (X2) и имеет 2 неподелённые электронные пары (E2). Формула VSEPR — AX2E2, молекула угловая (104,5°). Если не учесть неподелённые пары, молекулу ошибочно принимают за AX2 (линейную); линейна молекула CO2.",
-        "ar": "الأكسجين هو الذرة المركزية؛ يكوّن 2 من الروابط (X2) ويحمل 2 من الأزواج غير الرابطة (E2). صيغته وفق VSEPR هي AX2E2 وشكله منحنٍ (104.5°). إهمال الأزواج غير الرابطة يؤدي إلى الظن خطأً أن الجزيء من النوع AX2 (خطي)؛ والجزيء الخطي هو CO2.",
+        "ar": "الأكسجين هو الذرة المركزية؛ يكوّن رابطتين (X2) ويحمل زوجين غير رابطين (E2). صيغته وفق VSEPR هي AX2E2 وشكله منحنٍ (104.5°). إهمال الأزواج غير الرابطة يؤدي إلى الظن خطأً أن الجزيء من النوع AX2 (خطي)؛ والجزيء الخطي هو CO2.",
         "zh": "氧是中心原子，形成 2 个键(X2)，带有 2 对孤对电子(E2)。其 VSEPR 式为 AX2E2，构型为 V 形(104.5°)。若忽略孤对电子，就会误认为它是 AX2（直线形）；直线形的是 CO2。",
         "ku": "Oksîjen atoma navendî ye; 2 girêdanan çêdike (X2) û 2 cotên elektronan ên nehevpar hildigire (E2). Formula wê ya VSEPR AX2E2 ye û geometriya wê xwar e (104,5°). Heke cotên nehevpar neyên hesibandin, molekul bi şaşî wek AX2 (xêzikî) tê dîtin; ya xêzikî CO2 ye."
       }
@@ -1129,7 +1129,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Wie viele Sigma- (σ) und wie viele Pi-Bindungen (π) gibt es im H-C≡C-H-Molekül (Acetylen)?",
         "fr": "Combien de liaisons sigma (σ) et combien de liaisons pi (π) y a-t-il dans la molécule H-C≡C-H (acétylène) ?",
         "ru": "Сколько σ- и сколько π-связей содержит молекула ацетилена H-C≡C-H?",
-        "ar": "ما عدد روابط سيجما (σ) وكم عدد روابط pi (π) الموجودة في جزيء H-C≡C-H (الأسيتيلين)؟",
+        "ar": "كم رابطة سيجما (σ) وكم رابطة باي (π) في جزيء H-C≡C-H (الأسيتيلين)؟",
         "zh": "H-C≡C-H(乙炔)分子中有几个σ键和几个π键？",
         "ku": "Di molekula H-C≡C-H (Asetîlen) de çend bendên sigma (σ) û çend pi (π) hene?"
       },
@@ -1281,7 +1281,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "CH3-CH=CH-C≡CH\nIn welcher Antwort ist für das oben angegebene Molekül die Anzahl der sp3-, sp2- und sp-hybridisierten Kohlenstoffatome richtig angegeben?",
         "fr": "CH3-CH=CH-C≡CH\nPour la molécule dont la formule développée est donnée ci-dessus, quelle proposition donne correctement le nombre d'atomes de carbone hybridés sp3, sp2 et sp ?",
         "ru": "CH3-CH=CH-C≡CH\nВ каком варианте правильно указано число атомов углерода в sp3-, sp2- и sp-гибридизации для молекулы, структурная формула которой дана выше?",
-        "ar": "CH3-CH=CH-C≡CH\nفي أي خيار أُعطي بشكل صحيح عدد ذرات الكربون ذات التهجين sp3 وsp2 وsp في الجزيء المعطاة صيغته البنائية أعلاه؟",
+        "ar": "CH3-CH=CH-C≡CH\nفي أي الخيارات الآتية أُعطي عدد ذرات الكربون ذات التهجين sp3 وsp2 وsp في الجزيء المعطاة صيغته البنائية أعلاه بصورة صحيحة؟",
         "zh": "CH3-CH=CH-C≡CH\n对于上述结构式表示的分子，下列哪一项正确给出了sp3、sp2和sp杂化碳原子的数目？",
         "ku": "CH3-CH=CH-C≡CH\nDi molekula ku formula wê ya avahiyê li jor hatiye dayîn de, hejmara atomên karbonê yên bi hîbrîdbûna sp3, sp2 û sp di kîjan bijarteyê de rast hatiye dayîn?"
       },
@@ -1388,7 +1388,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "I und II",
           "fr": "I et II",
           "ru": "I и II",
-          "ar": "I وII",
+          "ar": "I و II",
           "zh": "I 和 II",
           "ku": "I û II"
         },
@@ -1398,7 +1398,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "II und III",
           "fr": "II et III",
           "ru": "II и III",
-          "ar": "II وIII",
+          "ar": "II و III",
           "zh": "II 和 III",
           "ku": "II û III"
         },
@@ -1408,7 +1408,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "I, II und III",
           "fr": "I, II et III",
           "ru": "I, II и III",
-          "ar": "I وII وIII",
+          "ar": "I و II و III",
           "zh": "I、II 和 III",
           "ku": "I, II û III"
         }
@@ -1433,7 +1433,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "6,0 Gramm einer organischen Verbindung, die nur aus C, H und O besteht, enthalten 2,4 Gramm C und 0,4 Gramm H.\nWelche Molekülformel hat die Verbindung, wenn ihre molare Masse 60 g/mol beträgt? (H: 1, C: 12, O: 16)",
         "fr": "6,0 grammes d'un composé organique formé uniquement de C, H et O contiennent 2,4 grammes de C et 0,4 gramme de H.\nSachant que la masse molaire du composé est 60 g/mol, quelle est sa formule moléculaire ? (H : 1, C : 12, O : 16)",
         "ru": "6,0 грамма органического соединения, состоящего только из C, H и O, содержат 2,4 грамма C и 0,4 грамма H.\nКакова молекулярная формула соединения, если его молярная масса 60 г/моль? (H: 1, C: 12, O: 16)",
-        "ar": "تحتوي 6.0 غرامات من مركب عضوي مكوّن من C وH وO فقط على 2.4 غرام من C و0.4 غرام من H.\nإذا كانت الكتلة المولية للمركب 60 g/mol، فما صيغته الجزيئية؟ (H: 1، C: 12، O: 16)",
+        "ar": "تحتوي 6.0 g من مركب عضوي مكوّن من C وH وO فقط على 2.4 g من C و0.4 g من H.\nإذا كانت الكتلة المولية للمركب 60 g/mol، فما صيغته الجزيئية؟ (H: 1، C: 12، O: 16)",
         "zh": "6.0 g 只含 C、H、O 三种元素的某有机化合物中含有 2.4 g C 和 0.4 g H。\n已知该化合物的摩尔质量为 60 g/mol，其分子式是下列哪一个？(H = 1，C = 12，O = 16)",
         "ku": "Di 6,0 gram pêkhateyeke organîk a ku tenê ji C, H û O pêk tê de 2,4 gram C û 0,4 gram H heye.\nLi gorî ku girseya molî ya pêkhateyê 60 g/mol e, formula wê ya molekulî kîjan e? (H: 1, C: 12, O: 16)"
       },
@@ -1509,7 +1509,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Wenn man die Lewis-Formel des HCN-Moleküls aufstellt: In welcher Antwort sind die Anzahl der freien Elektronenpaare, der sigma-(σ-)Bindungen und der pi-(π-)Bindungen in dieser Reihenfolge richtig angegeben? (1H, 6C, 7N)",
         "fr": "Lorsqu'on écrit la structure de Lewis de la molécule HCN, quelle proposition donne correctement, dans l'ordre, le nombre de doublets non liants, le nombre de liaisons sigma (σ) et le nombre de liaisons pi (π) ? (1H, 6C, 7N)",
         "ru": "В каком варианте для молекулы HCN (по её структуре Льюиса) правильно указаны по порядку число неподелённых электронных пар, число σ-связей и число π-связей? (1H, 6C, 7N)",
-        "ar": "عند كتابة بنية لويس لجزيء HCN، في أي خيار أُعطي بالترتيب وبشكل صحيح عدد الأزواج الإلكترونية غير الرابطة وعدد روابط سيجما (σ) وعدد روابط باي (π)؟ (1H، 6C، 7N)",
+        "ar": "عند كتابة تركيب لويس لجزيء HCN، في أي الخيارات الآتية أُعطي بالترتيب وبصورة صحيحة عدد الأزواج الإلكترونية غير الرابطة وعدد روابط سيجما (σ) وعدد روابط باي (π)؟ (1H، 6C، 7N)",
         "zh": "写出HCN分子的路易斯结构后，下列哪一项依次正确给出了分子中孤对电子数、σ键数和π键数？(1H，6C，7N)",
         "ku": "Dema avahiya Lewis a molekula HCN tê nivîsandin, hejmara cotên elektronan ên nehevpar, hejmara girêdanên sigma (σ) û hejmara girêdanên pi (π) bi rêzê di kîjan bijarteyê de rast hatine dayîn? (1H, 6C, 7N)"
       },
@@ -1585,7 +1585,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Verbrennt man 4,6 Gramm einer aus C, H und O bestehenden organischen Verbindung vollständig mit genügend Sauerstoff, entstehen 8,8 Gramm CO2 und 5,4 Gramm H2O.\nWelche Verhältnisformel (empirische Formel) hat die Verbindung? (H: 1, C: 12, O: 16)",
         "fr": "La combustion complète, dans suffisamment de dioxygène, de 4,6 grammes d'un composé organique formé de C, H et O donne 8,8 grammes de CO2 et 5,4 grammes de H2O.\nQuelle est la formule brute la plus simple (empirique) du composé ? (H : 1, C : 12, O : 16)",
         "ru": "При полном сгорании 4,6 грамма органического соединения, состоящего из C, H и O, в достаточном количестве кислорода образуется 8,8 грамма CO2 и 5,4 грамма H2O.\nКакова простейшая (эмпирическая) формула соединения? (H: 1, C: 12, O: 16)",
-        "ar": "عند الاحتراق التام لـ 4.6 غرامات من مركب عضوي مكوّن من C وH وO في كمية كافية من الأكسجين يتكوّن 8.8 غرامات من CO2 و5.4 غرامات من H2O.\nما الصيغة الأولية (البسيطة) للمركب؟ (H: 1، C: 12، O: 16)",
+        "ar": "عند الاحتراق التام لـ 4.6 g من مركب عضوي مكوّن من C وH وO في كمية كافية من الأكسجين يتكوّن 8.8 g من CO2 و5.4 g من H2O.\nما الصيغة الأولية (البسيطة) للمركب؟ (H: 1، C: 12، O: 16)",
         "zh": "4.6 g 由 C、H、O 组成的有机化合物在足量氧气中完全燃烧，生成 8.8 g CO2 和 5.4 g H2O。\n该化合物的最简式（实验式）是下列哪一个？(H = 1，C = 12，O = 16)",
         "ku": "Dema 4,6 gram pêkhateyeke organîk a ji C, H û O pêk tê bi oksîjena têr bi tevahî tê şewitandin, 8,8 gram CO2 û 5,4 gram H2O çêdibin.\nLi gorî vê formula sade (empîrîk) ya pêkhateyê kîjan e? (H: 1, C: 12, O: 16)"
       },
@@ -1712,7 +1712,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "Diamant",
           "fr": "Diamant",
           "ru": "Алмаз",
-          "ar": "الألماس",
+          "ar": "الماس",
           "zh": "金刚石",
           "ku": "Elmas"
         }
@@ -1724,7 +1724,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Eine zu einem Zylinder gerollte Graphenschicht ist eine Kohlenstoffnanoröhre; ihre C-Atome sind sp2, und sie leitet entlang der Röhrenachse. Graphen ist ebenfalls sp2 und ein Atom dick, aber eine flache (zweidimensionale) Schicht, nicht gerollt. Graphit besteht aus gestapelten Schichten, C60 ist ein geschlossener Käfig aus Fünf- und Sechsecken, und im Diamanten sind die C-Atome sp3 und an vier Nachbarn gebunden.",
         "fr": "Un feuillet de graphène enroulé en cylindre est un nanotube de carbone ; ses carbones sont sp2 et il conduit le long de l'axe du tube. Le graphène est lui aussi sp2 et d'un atome d'épaisseur, mais c'est un feuillet plat (bidimensionnel), non enroulé. Le graphite est fait de feuillets empilés, C60 est une cage fermée de pentagones et d'hexagones, et dans le diamant les carbones sont sp3 et liés à quatre voisins.",
         "ru": "Графеновый слой, свёрнутый в цилиндр, — это углеродная нанотрубка; её атомы углерода sp2, и она проводит ток вдоль оси трубки. Графен тоже sp2 и толщиной в один атом, но это плоский (двумерный) слой, а не свёрнутый. Графит состоит из уложенных слоёв, C60 — замкнутый каркас из пяти- и шестиугольников, а в алмазе атомы углерода sp3 и связаны с четырьмя соседями.",
-        "ar": "طبقة الجرافين الملفوفة على شكل أسطوانة هي أنبوب الكربون النانوي؛ ذراته من نوع sp2 ويوصل على امتداد محور الأنبوب. والجرافين أيضًا sp2 وسمكه ذرة واحدة لكنه صفيحة مستوية (ثنائية الأبعاد) غير ملفوفة. والجرافيت طبقات متراصة، وC60 قفص مغلق من خماسيات وسداسيات، وفي الألماس ذرات الكربون sp3 ومرتبطة بأربع ذرات مجاورة.",
+        "ar": "طبقة الجرافين الملفوفة على شكل أسطوانة هي أنبوب الكربون النانوي؛ ذراته من نوع sp2 ويوصل على امتداد محور الأنبوب. والجرافين أيضًا sp2 وسمكه ذرة واحدة لكنه صفيحة مستوية (ثنائية الأبعاد) غير ملفوفة. والجرافيت طبقات متراصة، وC60 قفص مغلق من خماسيات وسداسيات، وفي الماس ذرات الكربون sp3 ومرتبطة بأربع ذرات مجاورة.",
         "zh": "把石墨烯片卷成圆柱就是碳纳米管，其碳原子为sp2杂化，沿管轴方向导电。石墨烯也是sp2、单原子厚，但它是平面（二维）的片层，并未卷曲。石墨由层层堆叠的片层构成，C60是由五元环和六元环组成的封闭笼状结构，金刚石中碳原子为sp3杂化，与四个相邻碳原子相连。",
         "ku": "Tebeqeya grafenê ya wek sîlîndir hatiye pêçandin nanotûba karbonê ye; karbonên wê sp2 ne û li ser eksena tûbê elektrîkê dimeşîne. Grafen jî sp2 û bi stûriya yek atomê ye, lê pelekî rast (du-dîmensî) ye, ne pêçayî ye. Grafît ji tebeqeyên li ser hev pêk tê, C60 qefeseke girtî ya ji pêncgoşe û şeşgoşeyan e, û di elmasê de karbon sp3 in û bi çar cîranan ve girêdayî ne."
       }
@@ -1737,7 +1737,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Welche der folgenden Aussagen über Diamant, Graphit und das Fulleren C60 sind richtig?\nI. Sie sind verschiedene Allotrope desselben Elements; bei vollständiger Verbrennung mit genügend Sauerstoff entsteht nur CO2.\nII. In allen dreien sind die Kohlenstoffatome sp3-hybridisiert.\nIII. Unter Normalbedingungen leitet Diamant den Strom nicht, Graphit dagegen schon.",
         "fr": "Concernant le diamant, le graphite et le fullerène C60 :\nI. Ce sont des variétés allotropiques différentes du même élément ; leur combustion complète dans suffisamment de dioxygène ne donne que du CO2.\nII. Dans les trois, les atomes de carbone sont hybridés sp3.\nIII. Dans les conditions normales, le diamant ne conduit pas l'électricité alors que le graphite la conduit.\nlesquelles de ces affirmations sont exactes ?",
         "ru": "Какие из утверждений об алмазе, графите и фуллерене C60 верны?\nI. Это разные аллотропные модификации одного элемента; при полном сгорании в достаточном количестве кислорода образуется только CO2.\nII. Во всех трёх атомы углерода находятся в sp3-гибридизации.\nIII. При обычных условиях алмаз не проводит электрический ток, а графит проводит.",
-        "ar": "فيما يتعلق بالألماس والجرافيت وفوليرين C60:\nI. هي متآصلات مختلفة لعنصر واحد؛ وعند احتراقها التام في كمية كافية من الأكسجين لا يتكوّن إلا CO2.\nII. ذرات الكربون في الثلاثة مهجنة sp3.\nIII. في الظروف العادية لا يوصل الألماس الكهرباء بينما يوصلها الجرافيت.\nأي العبارات صحيحة؟",
+        "ar": "فيما يتعلق بالماس والجرافيت وفوليرين C60:\nI. هي متآصلات مختلفة لعنصر واحد؛ وعند احتراقها التام في كمية كافية من الأكسجين لا يتكوّن إلا CO2.\nII. ذرات الكربون في الثلاثة مهجنة sp3.\nIII. في الظروف العادية لا يوصل الماس الكهرباء بينما يوصلها الجرافيت.\nأي العبارات صحيحة؟",
         "zh": "关于金刚石、石墨和富勒烯C60：\nI. 它们是同一种元素的不同同素异形体；在足量氧气中完全燃烧都只生成CO2。\nII. 三者中碳原子都是sp3杂化。\nIII. 通常条件下金刚石不导电，而石墨导电。\n以上说法中正确的是哪些？",
         "ku": "Derbarê elmas, grafît û fullerena C60 de;\nI. Ew alotropên cuda yên heman elementê ne; dema bi oksîjena têr bi tevahî tên şewitandin tenê CO2 çêdibe.\nII. Di her sêyan de atomên karbonê hîbrîdbûna sp3 kirine.\nIII. Di şert û mercên asayî de elmas elektrîkê nameşîne, lê grafît dimeşîne.\nkîjan daraz rast in?"
       },
@@ -1768,7 +1768,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "I und III",
           "fr": "I et III",
           "ru": "I и III",
-          "ar": "I وIII",
+          "ar": "I و III",
           "zh": "I 和 III",
           "ku": "I û III"
         },
@@ -1778,7 +1778,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "II und III",
           "fr": "II et III",
           "ru": "II и III",
-          "ar": "II وIII",
+          "ar": "II و III",
           "zh": "II 和 III",
           "ku": "II û III"
         },
@@ -1788,7 +1788,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "I, II und III",
           "fr": "I, II et III",
           "ru": "I, II и III",
-          "ar": "I وII وIII",
+          "ar": "I و II و III",
           "zh": "I、II 和 III",
           "ku": "I, II û III"
         }
@@ -1800,7 +1800,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "I ist richtig: Alle drei sind Allotrope nur aus Kohlenstoffatomen, daher ist das einzige Produkt der vollständigen Verbrennung CO2. II ist falsch: Nur im Diamanten ist jedes C an vier Nachbarn gebunden und sp3; in Graphit und C60 ist jedes C an drei Nachbarn gebunden und sp2. III ist richtig: Diamant hat keine beweglichen Elektronen, im Graphit sorgen die entlang der Schichten beweglichen pi-Elektronen für Leitfähigkeit.",
         "fr": "I est vraie : les trois sont des variétés allotropiques formées uniquement d'atomes de carbone, donc le seul produit de la combustion complète est CO2. II est fausse : seul le diamant a chaque C lié à quatre voisins et hybridé sp3 ; dans le graphite et C60, chaque C est lié à trois voisins et hybridé sp2. III est vraie : le diamant n'a pas d'électrons mobiles, tandis que dans le graphite les électrons pi mobiles le long des feuillets assurent la conduction.",
         "ru": "I верно: все три — аллотропные модификации, состоящие только из атомов углерода, поэтому единственный продукт полного сгорания — CO2. II неверно: только в алмазе каждый атом C связан с четырьмя соседями и находится в sp3-гибридизации; в графите и C60 каждый атом C связан с тремя соседями и находится в sp2-гибридизации. III верно: в алмазе нет подвижных электронов, а в графите электропроводность обеспечивают π-электроны, движущиеся вдоль слоёв.",
-        "ar": "العبارة I صحيحة: الثلاثة متآصلات مكوّنة من ذرات الكربون فقط، لذا فالناتج الوحيد للاحتراق التام هو CO2. العبارة II خاطئة: في الألماس وحده ترتبط كل ذرة C بأربع ذرات وتكون sp3، أما في الجرافيت وC60 فترتبط كل ذرة C بثلاث ذرات وتكون sp2. العبارة III صحيحة: لا توجد في الألماس إلكترونات متحركة، بينما توفر إلكترونات باي المتحركة على امتداد طبقات الجرافيت التوصيل.",
+        "ar": "العبارة I صحيحة: الثلاثة متآصلات مكوّنة من ذرات الكربون فقط، لذا فالناتج الوحيد للاحتراق التام هو CO2. العبارة II خاطئة: في الماس وحده ترتبط كل ذرة C بأربع ذرات وتكون sp3، أما في الجرافيت وC60 فترتبط كل ذرة C بثلاث ذرات وتكون sp2. العبارة III صحيحة: لا توجد في الماس إلكترونات متحركة، بينما توفر إلكترونات باي المتحركة على امتداد طبقات الجرافيت التوصيل.",
         "zh": "I正确：三者都是只由碳原子构成的同素异形体，完全燃烧的唯一产物是CO2。II错误：只有金刚石中每个碳原子与四个碳原子相连、为sp3杂化；石墨和C60中每个碳原子与三个碳原子相连、为sp2杂化。III正确：金刚石中没有可移动的电子，而石墨中沿层面移动的π电子使其导电。",
         "ku": "I rast e: her sê jî alotropên tenê ji atomên karbonê ne, ji ber vê berhema yekane ya şewitandina tevahî CO2 ye. II şaş e: tenê di elmasê de her C bi çar cîranan ve girêdayî û sp3 e; di grafît û C60 de her C bi sê cîranan ve girêdayî û sp2 e. III rast e: di elmasê de elektronên tevger tune ne, di grafîtê de jî elektronên pi yên li ser tebeqeyan digerin meşandinê pêk tînin."
       }
@@ -1920,7 +1920,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "I und II",
           "fr": "I et II",
           "ru": "I и II",
-          "ar": "I وII",
+          "ar": "I و II",
           "zh": "I 和 II",
           "ku": "I û II"
         },
@@ -1930,7 +1930,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "II und III",
           "fr": "II et III",
           "ru": "II и III",
-          "ar": "II وIII",
+          "ar": "II و III",
           "zh": "II 和 III",
           "ku": "II û III"
         },
@@ -1940,7 +1940,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "I, II und III",
           "fr": "I, II et III",
           "ru": "I, II и III",
-          "ar": "I وII وIII",
+          "ar": "I و II و III",
           "zh": "I、II 和 III",
           "ku": "I, II û III"
         }
@@ -1965,7 +1965,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "In welcher Antwort sind die Bindungswinkel am Zentralatom der Moleküle CO2, CH4, NH3 und H2O vom größten zum kleinsten richtig geordnet? (1H, 6C, 7N, 8O)",
         "fr": "Quelle proposition classe correctement, du plus grand au plus petit, les angles de liaison autour de l'atome central dans les molécules CO2, CH4, NH3 et H2O ? (1H, 6C, 7N, 8O)",
         "ru": "В каком варианте валентные углы при центральном атоме в молекулах CO2, CH4, NH3 и H2O расположены правильно от наибольшего к наименьшему? (1H, 6C, 7N, 8O)",
-        "ar": "أي خيار يرتب زوايا الروابط حول الذرة المركزية في جزيئات CO2 وCH4 وNH3 وH2O من الأكبر إلى الأصغر بشكل صحيح؟ (1H، 6C، 7N، 8O)",
+        "ar": "أي الخيارات الآتية يرتب زوايا الروابط حول الذرة المركزية في جزيئات CO2 وCH4 وNH3 وH2O من الأكبر إلى الأصغر ترتيبًا صحيحًا؟ (1H، 6C، 7N، 8O)",
         "zh": "CO2、CH4、NH3和H2O分子中中心原子周围的键角由大到小的顺序是下列哪一项？(1H，6C，7N，8O)",
         "ku": "Di molekulên CO2, CH4, NH3 û H2O de rêzkirina goşeyên girêdanê yên li dora atoma navendî ji mezin ber bi biçûk ve kîjan e? (1H, 6C, 7N, 8O)"
       },
@@ -2041,7 +2041,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Für jedes der folgenden Moleküle sind Hybridisierung des zentralen C-Atoms und Molekülgeometrie in der Form „Molekül — Hybridisierung — Geometrie“ zugeordnet.\nWelche Zuordnung ist falsch? (1H, 6C, 7N, 8O, 17Cl)",
         "fr": "Pour chacune des molécules ci-dessous, l'hybridation de l'atome C central et la géométrie moléculaire sont associées sous la forme « Molécule — Hybridation — Géométrie ».\nLaquelle de ces associations est fausse ? (1H, 6C, 7N, 8O, 17Cl)",
         "ru": "Для каждой из молекул ниже гибридизация центрального атома C и геометрия молекулы сопоставлены в виде «Молекула — Гибридизация — Геометрия».\nКакое из сопоставлений неверно? (1H, 6C, 7N, 8O, 17Cl)",
-        "ar": "لكل جزيء من الجزيئات الآتية رُبط نوع تهجين ذرة C المركزية والشكل الجزيئي بالصيغة «الجزيء — التهجين — الشكل».\nأي هذه المطابقات خاطئ؟ (1H، 6C، 7N، 8O، 17Cl)",
+        "ar": "لكل جزيء من الجزيئات الآتية رُبط نوع تهجين ذرة C المركزية والشكل الجزيئي بالصيغة «الجزيء — التهجين — الشكل».\nأي هذه المطابقات خاطئة؟ (1H، 6C، 7N، 8O، 17Cl)",
         "zh": "下列各分子中，中心碳原子的杂化类型与分子构型按“分子 — 杂化 — 构型”的形式对应。\n其中哪一项对应是错误的？(1H，6C，7N，8O，17Cl)",
         "ku": "Ji bo her molekulek li jêr, cureyê hîbrîdbûna atoma C ya navendî û geometriya molekulê bi şiklê \"Molekul — Hîbrîdbûn — Geometrî\" hatine hevberkirin.\nKîjan ji van hevberkirinan şaş e? (1H, 6C, 7N, 8O, 17Cl)"
       },
@@ -2193,7 +2193,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Welche der folgenden Aussagen über das Ethen-Molekül (CH2=CH2) sind richtig?\nI. Jedes C-Atom besitzt ein p-Orbital, das nicht an der Hybridisierung beteiligt ist.\nII. Die pi-Bindung der C=C-Bindung entsteht durch seitliche (parallele) Überlappung dieser p-Orbitale.\nIII. Das Molekül enthält insgesamt 5 sigma-Bindungen.\n(1H, 6C)",
         "fr": "Concernant la molécule d'éthène (CH2=CH2) :\nI. Chaque atome C possède une orbitale p qui n'a pas participé à l'hybridation.\nII. La liaison pi de la liaison C=C se forme par recouvrement latéral (parallèle) de ces orbitales p.\nIII. La molécule contient au total 5 liaisons sigma.\nlesquelles de ces affirmations sont exactes ? (1H, 6C)",
         "ru": "Какие из утверждений о молекуле этена (CH2=CH2) верны?\nI. У каждого атома C есть одна p-орбиталь, не участвующая в гибридизации.\nII. π-связь в двойной связи C=C образуется боковым (параллельным) перекрыванием этих p-орбиталей.\nIII. В молекуле всего 5 σ-связей.\n(1H, 6C)",
-        "ar": "فيما يتعلق بجزيء الإيثين (CH2=CH2):\nI. لكل ذرة C أوربيتال p واحد لم يشارك في التهجين.\nII. تتكون رابطة باي في الرابطة C=C بالتداخل الجانبي (المتوازي) لأوربيتالي p هذين.\nIII. يحتوي الجزيء على 5 روابط سيجما إجمالًا.\nأي العبارات صحيحة؟ (1H، 6C)",
+        "ar": "فيما يتعلق بجزيء الإيثين (CH2=CH2):\nI. لكل ذرة C مدار p واحد لم يشارك في التهجين.\nII. تتكون رابطة باي في الرابطة C=C بالتداخل الجانبي (المتوازي) لمداري p هذين.\nIII. يحتوي الجزيء على 5 روابط سيجما إجمالًا.\nأي العبارات صحيحة؟ (1H، 6C)",
         "zh": "关于乙烯(CH2=CH2)分子：\nI. 每个碳原子都有一个未参与杂化的p轨道。\nII. C=C键中的π键由这两个p轨道“肩并肩”（平行）重叠形成。\nIII. 分子中共有5个σ键。\n以上说法中正确的是哪些？(1H，6C)",
         "ku": "Derbarê molekula etenê (CH2=CH2) de;\nI. Li ser her atoma C orbîtaleke p heye ku beşdarî hîbrîdbûnê nebûye.\nII. Girêdana pi ya di girêdana C=C de bi hevgirtina rex bi rex (paralel) a van orbîtalên p çêdibe.\nIII. Di molekulê de bi tevahî 5 girêdanên sigma hene.\nkîjan daraz rast in? (1H, 6C)"
       },
@@ -2224,7 +2224,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "I und II",
           "fr": "I et II",
           "ru": "I и II",
-          "ar": "I وII",
+          "ar": "I و II",
           "zh": "I 和 II",
           "ku": "I û II"
         },
@@ -2234,7 +2234,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "II und III",
           "fr": "II et III",
           "ru": "II и III",
-          "ar": "II وIII",
+          "ar": "II و III",
           "zh": "II 和 III",
           "ku": "II û III"
         },
@@ -2244,7 +2244,7 @@ export const unit23: ChemistryUnitSeedData = {
           "de": "I, II und III",
           "fr": "I, II et III",
           "ru": "I, II и III",
-          "ar": "I وII وIII",
+          "ar": "I و II و III",
           "zh": "I、II 和 III",
           "ku": "I, II û III"
         }
@@ -2256,7 +2256,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Jedes C-Atom im Ethen ist sp2-hybridisiert: ein s- und zwei p-Orbitale mischen sich zu drei sp2-Orbitalen, ein p-Orbital bleibt unbeteiligt (I richtig). Die seitliche Überlappung dieser beiden p-Orbitale bildet die pi-Bindung in C=C (II richtig). sigma-Bindungen: 4 C–H-Bindungen plus 1 σ in C=C, insgesamt 5 (III richtig). Die Doppelbindung als 2 sigma zu zählen und 6 zu erhalten oder C–H-Bindungen zu übersehen, sind häufige Fehler.",
         "fr": "Chaque atome C de l'éthène est hybridé sp2 : une orbitale s et deux orbitales p se mélangent pour former trois orbitales sp2, une orbitale p ne participe pas (I vraie). Le recouvrement latéral de ces deux orbitales p forme la liaison pi de C=C (II vraie). Liaisons sigma : 4 liaisons C–H plus 1 σ dans C=C, soit 5 au total (III vraie). Compter la double liaison comme 2 sigma pour trouver 6, ou oublier des liaisons C–H, sont des erreurs fréquentes.",
         "ru": "Каждый атом C в этене находится в sp2-гибридизации: одна s- и две p-орбитали смешиваются и образуют три sp2-орбитали, а одна p-орбиталь в гибридизации не участвует (I верно). Боковое перекрывание этих двух p-орбиталей образует π-связь в C=C (II верно). σ-связи: 4 связи C–H и 1 σ-связь в C=C, всего 5 (III верно). Частые ошибки — считать двойную связь двумя σ-связями и получать 6 или пропускать связи C–H.",
-        "ar": "كل ذرة C في الإيثين مهجنة sp2: يمتزج أوربيتال s مع أوربيتالي p لتكوين ثلاثة أوربيتالات sp2، ويبقى أوربيتال p واحد خارج التهجين (I صحيحة). والتداخل الجانبي لأوربيتالي p هذين يكوّن رابطة باي في C=C (II صحيحة). روابط سيجما: 4 روابط C–H و1 σ في C=C، أي 5 إجمالًا (III صحيحة). عدّ الرابطة الثنائية رابطتي سيجما للحصول على 6، أو إغفال بعض روابط C–H، أخطاء شائعة.",
+        "ar": "كل ذرة C في الإيثين مهجنة sp2: يمتزج مدار s مع مداري p لتكوين ثلاثة مدارات sp2، ويبقى مدار p واحد خارج التهجين (I صحيحة). والتداخل الجانبي لمداري p هذين يكوّن رابطة باي في C=C (II صحيحة). روابط سيجما: 4 روابط C–H و1 σ في C=C، أي 5 إجمالًا (III صحيحة). عدّ الرابطة الثنائية رابطتي سيجما للحصول على 6، أو إغفال بعض روابط C–H، أخطاء شائعة.",
         "zh": "乙烯中每个碳原子为sp2杂化：一个s轨道和两个p轨道混合形成三个sp2杂化轨道，另有一个p轨道未参与杂化(I正确)。这两个p轨道“肩并肩”重叠形成C=C中的π键(II正确)。σ键：4个C–H键加上C=C中的1个σ键，共5个(III正确)。把双键算作2个σ键得到6，或漏数C–H键，是这类题的常见错误。",
         "ku": "Her atoma C ya etenê hîbrîdbûna sp2 dike: orbîtaleke s û du orbîtalên p tevlî hev dibin û sê orbîtalên sp2 çêdikin, orbîtaleke p beşdar nabe (I rast). Hevgirtina rex bi rex a van her du orbîtalên p girêdana pi ya C=C çêdike (II rast). Girêdanên sigma: 4 girêdanên C–H û 1 σ di C=C de, bi tevahî 5 (III rast). Hesabkirina girêdana ducar wek 2 sigma û dîtina 6, an jibîrkirina hin girêdanên C–H, şaşiyên berbelav in."
       }

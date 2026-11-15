@@ -74,9 +74,9 @@ const ROMAN_COMBINATIONS: Record<
     all: 'I, II и III',
   },
   ar: {
-    only1: 'فقط I',
-    only2: 'فقط II',
-    only3: 'فقط III',
+    only1: 'I فقط',
+    only2: 'II فقط',
+    only3: 'III فقط',
     oneTwo: 'I و II',
     oneThree: 'I و III',
     twoThree: 'II و III',
@@ -244,19 +244,19 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     missingStep: (opt, title, full) => `Пропущенный этап — «${bare(opt)}». Полная последовательность («${title}»): ${full}.`,
   },
   ar: {
-    romanTrue: (combo) => `وعليه فإن الخيار الذي يضم العبارات الصحيحة تماماً هو "${combo}".`,
-    romanFalse: (combo) => `وعليه فإن الخيار الذي يضم العبارات الخاطئة تماماً هو "${combo}".`,
-    romanValid: (n, fact, tip) => `${n}. صحيح: ${bare(fact)}.${tip ? ` (ملاحظة: ${bare(tip)}.)` : ''}`,
-    romanInvalid: (n, fact, why) => `${n}. خاطئ: ${why ? `${bare(why)}. ` : ''}الصواب: ${bare(fact)}.`,
+    romanTrue: (combo) => `وعليه فالخيار الذي يضم العبارات الصحيحة كلها ولا يضم غيرها هو "${combo}".`,
+    romanFalse: (combo) => `وعليه فالخيار الذي يضم العبارات الخاطئة كلها ولا يضم غيرها هو "${combo}".`,
+    romanValid: (n, fact, tip) => `${n}. صحيحة: ${bare(fact)}.${tip ? ` (ملاحظة: ${bare(tip)}.)` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. خاطئة: ${why ? `${bare(why)}. ` : ''}الصواب: ${bare(fact)}.`,
     negativeTrapWhy: (opt, why, fact) => `العبارة غير الصحيحة هي "${bare(opt)}". ${bare(why)}. الصواب: ${bare(fact)}. جميع العبارات الأخرى صحيحة.`,
     negativeTrapDefault: (opt, fact) => `العبارة غير الصحيحة هي "${bare(opt)}". الصواب: ${bare(fact)}. جميع العبارات الأخرى صحيحة.`,
-    positiveConceptTip: (opt, tip) => `العبارة الصحيحة هي "${bare(opt)}". نصيحة امتحانية: ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `العبارة الصحيحة هي "${bare(opt)}". تنبيه للامتحان: ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `العبارة الصحيحة هي "${bare(opt)}".`,
     otherOptionsIntro: 'الخيارات الأخرى خاطئة، والصواب فيها:',
     otherOptionsWhyIntro: 'الخيارات الأخرى خاطئة:',
     optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. الصواب: ` : ''}${bare(fact)}.`,
-    structureMatch: (opt, a, b, dist) => `الإجابة الصحيحة هي "${bare(opt)}". الفرق الجوهري بين ${a} و ${b}: ${bare(dist)}.`,
-    structureTrait: (b, a, dist) => `العبارة الصحيحة حول "${b}" هي التي تبيّن الفرق بين ${a} و ${b}: ${bare(dist)}.`,
+    structureMatch: (opt, a, b, dist) => `الإجابة الصحيحة هي "${bare(opt)}". الفرق الجوهري بين ${a} و${b}: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `العبارة الصحيحة حول "${b}" هي التي تبيّن الفرق بين ${a} و${b}: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
       ? `الترتيب الصحيح هو "${opt}". التسلسل الصحيح لخطوات "${title}": ${full}.`
       : `الترتيب الصحيح هو "${opt}".`,
@@ -959,12 +959,12 @@ function getNegativeTrapStem(title: string, lang: LanguageCode, variant = 0): st
       return `Какое утверждение по теме «${title}» противоречит основным законам химии?`;
     }
     case 'ar': {
-      if (v === 0) return `فيما يتعلق بموضوع "${title}"، أي من العبارات التالية غير صحيحة (خاطئة)؟`;
-      if (v === 1) return `بالنظر إلى "${title}"، أي من الأحكام التالية يتضمن مغالطة علمية؟`;
-      if (v === 2) return `أي افتراض مقدم في سياق "${title}" يعتبر غير صحيح؟`;
-      if (v === 3) return `عند دراسة مبادئ "${title}"، أي تفسير يعتبر خاطئاً؟`;
-      if (v === 4) return `أي من العبارات التالية يتعارض مع الحقائق العلمية المثبتة في "${title}"؟`;
-      return `أي عبارة تعتبر خاطئة وفقاً للمبادئ الكيميائية الأساسية لوحدة "${title}"؟`;
+      if (v === 0) return `فيما يتعلق بموضوع "${title}"، أيّ العبارات الآتية خاطئة؟`;
+      if (v === 1) return `في موضوع "${title}"، أيّ الأحكام الآتية يتضمن خطأً علميًا؟`;
+      if (v === 2) return `أيّ الافتراضات الآتية في سياق "${title}" غير صحيح؟`;
+      if (v === 3) return `عند دراسة مبادئ "${title}"، أيّ التفسيرات الآتية خاطئ؟`;
+      if (v === 4) return `أيّ العبارات الآتية يتعارض مع الحقائق العلمية الثابتة في "${title}"؟`;
+      return `أيّ العبارات الآتية خاطئة وفقًا للمبادئ الكيميائية الأساسية في وحدة "${title}"؟`;
     }
     case 'zh': {
       if (v === 0) return `下列关于“${title}”的说法中，错误的是哪一项？`;
@@ -1029,12 +1029,12 @@ function getPositiveConceptStem(title: string, lang: LanguageCode, variant = 0):
       return `Какое из утверждений полностью соответствует основным положениям темы «${title}»?`;
     }
     case 'ar': {
-      if (v === 0) return `وفقاً للمبادئ الكيميائية الأساسية لوحدة "${title}"، أي من العبارات التالية صحيحة تماماً؟`;
-      if (v === 1) return `عند دراسة "${title}"، أي من الأحكام التالية يمثل حقيقة علمية مثبتة؟`;
-      if (v === 2) return `في سياق وحدة "${title}"، أي من التفسيرات التالية دقيق تماماً؟`;
-      if (v === 3) return `بناءً على القوانين الكيميائية، أي عبارة متعلقة بـ "${title}" صحيحة بلا شك؟`;
-      if (v === 4) return `أي من العبارات التالية يمثل حقيقة علمية مؤكدة حول موضوع "${title}"؟`;
-      return `أي من الخيارات التالية دقيق وصحيح تماماً وفقاً لقواعد "${title}"؟`;
+      if (v === 0) return `وفقًا للمبادئ الكيميائية الأساسية في وحدة "${title}"، أيّ العبارات الآتية صحيحة؟`;
+      if (v === 1) return `عند دراسة "${title}"، أيّ الأحكام الآتية يمثل حقيقة علمية ثابتة؟`;
+      if (v === 2) return `في سياق وحدة "${title}"، أيّ التفسيرات الآتية صحيح؟`;
+      if (v === 3) return `بناءً على القوانين الكيميائية، أيّ العبارات الآتية عن "${title}" صحيحة؟`;
+      if (v === 4) return `أيّ العبارات الآتية تمثل حقيقة علمية مؤكدة في موضوع "${title}"؟`;
+      return `أيّ الخيارات الآتية صحيح وفقًا لقواعد "${title}"؟`;
     }
     case 'zh': {
       if (v === 0) return `依据“${title}”的基本原理，下列说法正确的是哪一项？`;
@@ -1075,7 +1075,7 @@ function getMatchStemB(title: string, conceptName: string, lang: LanguageCode): 
     case 'de': return `Welche der folgenden Eigenschaften beschreibt "${conceptName}" im Rahmen von "${title}" zutreffend?`;
     case 'fr': return `Laquelle des caractéristiques suivantes décrit correctement "${conceptName}" dans le cadre de "${title}" ?`;
     case 'ru': return `Какое из утверждений о понятии «${conceptName}» (тема «${title}») верно?`;
-    case 'ar': return `أي من الخصائص التالية تصف بدقة "${conceptName}" ضمن دراسة "${title}"؟`;
+    case 'ar': return `أيّ العبارات الآتية تصف "${conceptName}" وصفًا صحيحًا في موضوع "${title}"؟`;
     case 'zh': return `在“${title}”中，下列关于“${conceptName}”的说法正确的是哪一项？`;
     case 'ku': return `Derbarê "${conceptName}" ya ku di çarçoveya "${title}" de tê lêkolînkirin de kîjan taybetmendî rast e?`;
   }
@@ -1088,7 +1088,7 @@ function getSequenceOrderStem(title: string, seqTitle: string, lang: LanguageCod
     case 'de': return `Welche Option gibt die korrekte Reihenfolge der Schritte für "${seqTitle}" in "${title}" wieder?`;
     case 'fr': return `Quelle option présente l'ordre correct des étapes de "${seqTitle}" dans "${title}" ?`;
     case 'ru': return `Тема «${title}», последовательность «${seqTitle}». В каком варианте указан правильный порядок?`;
-    case 'ar': return `أي الخيارات يعبر عن الترتيب الصحيح لخطوات "${seqTitle}" في وحدة "${title}"؟`;
+    case 'ar': return `أيّ الخيارات الآتية يبيّن الترتيب الصحيح لخطوات "${seqTitle}" في وحدة "${title}"؟`;
     case 'zh': return `在“${title}”单元中，正确表示“${seqTitle}”各步骤先后顺序的是哪一项？`;
     case 'ku': return `Rêza rast a qonaxên "${seqTitle}" di beşa "${title}" de di kîjan vebijarkê de hatiye dayîn?`;
   }
@@ -1101,7 +1101,7 @@ function getSequenceMissingStepStem(title: string, seqTitle: string, lang: Langu
     case 'de': return `Welcher Schritt gehört an die mit [ ? ] markierte Stelle im Ablauf von "${seqTitle}" in "${title}"?`;
     case 'fr': return `Dans le processus "${seqTitle}" de "${title}", quelle est l'étape manquante indiquée par [ ? ] ?`;
     case 'ru': return `Тема «${title}», последовательность «${seqTitle}». Какой этап пропущен на месте [ ? ]?`;
-    case 'ar': return `في سياق مسار "${seqTitle}" ضمن "${title}"، ما هي الخطوة المفقودة المشار إليها بالرمز [ ؟ ]؟`;
+    case 'ar': return `في خطوات "${seqTitle}" ضمن "${title}"، ما الخطوة الناقصة المشار إليها بالرمز [ ؟ ]؟`;
     case 'zh': return `在“${title}”中，“${seqTitle}”的各步骤里用 [ ? ] 表示的缺失步骤是哪一项？`;
     case 'ku': return `Di pêvajoya "${seqTitle}" ya di nav "${title}" de, qonaxa kêm a ku bi [ ? ] hatiye nîşankirin kîjan e?`;
   }
