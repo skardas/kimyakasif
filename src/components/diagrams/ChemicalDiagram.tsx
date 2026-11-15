@@ -25,6 +25,47 @@ export const CLOSE_MODAL_I18N: Record<LanguageCode, string> = {
   ku: 'Bigre',
 };
 
+// ---------------------------------------------------------------------------
+// Obsidian Lab Glass primitives: lit-sphere gradients (white highlight at the
+// upper left, the element colour, a deep shade and a dark rim), a soft drop
+// shadow and a cylinder-like bond. The SVG sits on the dark .ky-stage.
+// ---------------------------------------------------------------------------
+const LIT_TONES: Record<string, [string, string]> = {
+  teal: ['#5FF2DF', '#0C8073'],
+  gold: ['#FFD873', '#A86A08'],
+  ruby: ['#FF6B7A', '#9C1830'],
+  green: ['#7DF0A8', '#0E8A52'],
+  blue: ['#6FA8FF', '#1B3FA8'],
+  violet: ['#C9A2FF', '#5B32C9'],
+  white: ['#E9EEF5', '#7C8798'],
+  slate: ['#7C8AA0', '#1B2536'],
+};
+
+const DiagramDefs: React.FC = () => (
+  <defs>
+    {Object.entries(LIT_TONES).map(([name, [c, cd]]) => (
+      <radialGradient key={name} id={`dg-lit-${name}`} cx="0.32" cy="0.26" r="0.85" fx="0.32" fy="0.26">
+        <stop offset="0" stopColor="#ffffff" />
+        <stop offset="0.3" stopColor={c} />
+        <stop offset="0.78" stopColor={cd} />
+        <stop offset="1" stopColor="#020409" />
+      </radialGradient>
+    ))}
+    <filter id="dg-shadow" x="-50%" y="-50%" width="200%" height="220%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.4" floodColor="#000000" floodOpacity="0.55" />
+    </filter>
+  </defs>
+);
+
+/** Bond: a dark-edged grey rod with a lighter centre line, like the .ky-bond recipe. */
+const Bond: React.FC<{ x1: number; y1: number; x2: number; y2: number }> = ({ x1, y1, x2, y2 }) => (
+  <g>
+    <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="#4A566A" strokeWidth={7} strokeLinecap="round" />
+    <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="#93A1B5" strokeWidth={5} strokeLinecap="round" />
+    <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="#E8EEF6" strokeWidth={1.6} strokeLinecap="round" opacity={0.85} />
+  </g>
+);
+
 export interface ChemicalDiagramProps {
   spec: QuestionDiagramSpec;
   className?: string;
@@ -191,7 +232,7 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
       </div>
 
       <div
-        className="diagram-svg-wrapper"
+        className="diagram-svg-wrapper ky-stage"
         dir="ltr"
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
@@ -205,6 +246,7 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
           borderRadius: '12px',
         }}
       >
+        <div className="ky-floor" aria-hidden="true" />
         <svg
           viewBox="0 0 540 300"
           className="chemical-diagram-svg"
@@ -221,7 +263,7 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
           }}
         >
           <style>{DIAGRAM_KEYFRAMES}</style>
-          <rect width="540" height="300" rx="12" fill="var(--bg-surface-elevated, #161e2e)" />
+          <DiagramDefs />
           {renderContent()}
         </svg>
       </div>
@@ -282,7 +324,7 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
               </div>
             </div>
             <div
-              className="diagram-zoom-body"
+              className="diagram-zoom-body ky-stage"
               dir="ltr"
               onPointerDown={handlePointerDown}
               onPointerMove={handlePointerMove}
@@ -295,9 +337,12 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
                 touchAction: zoomLevel > 1.0 ? 'none' : 'auto',
               }}
             >
+              <div className="ky-floor" aria-hidden="true" />
               <svg
                 viewBox="0 0 540 300"
                 className="chemical-diagram-svg zoom-svg"
+                role="img"
+                aria-label={spec.title}
                 preserveAspectRatio="xMidYMid meet"
                 style={{
                   transform: `scale(${zoomLevel}) translate(${panOffset.x / zoomLevel}px, ${panOffset.y / zoomLevel}px)`,
@@ -306,7 +351,7 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
                 }}
               >
                 <style>{DIAGRAM_KEYFRAMES}</style>
-                <rect width="540" height="300" rx="12" fill="var(--bg-surface-elevated, #161e2e)" />
+                <DiagramDefs />
                 {renderContent()}
               </svg>
             </div>
@@ -331,25 +376,25 @@ function renderBohrOrbitalAtom(spec: QuestionDiagramSpec) {
       <circle cx="270" cy="140" r="105" fill="none" stroke="var(--border-subtle, #334155)" strokeDasharray="4 4" />
 
       {/* Nucleus (+Ze) with Pulse */}
-      <circle cx="270" cy="140" r="18" fill="var(--accent-ruby, #f43f5e)" className="anim-pulse" />
+      <circle cx="270" cy="140" r="18" fill="url(#dg-lit-ruby)" filter="url(#dg-shadow)" className="anim-pulse" />
       <text x="270" y="145" textAnchor="middle" fill="var(--brand-on-primary, #ffffff)" fontSize="11" fontWeight="bold">
         +Ze
       </text>
 
       {/* Orbit 1 Electron (n=1) */}
       <g className="anim-spin-fast" style={{ transformOrigin: '270px 140px' }}>
-        <circle cx="270" cy="105" r="5" fill="var(--accent-cyan, #06b6d4)" />
+        <circle cx="270" cy="105" r="5" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" />
       </g>
 
       {/* Orbit 2 Electron (n=2) */}
       <g className="anim-spin-med" style={{ transformOrigin: '270px 140px' }}>
-        <circle cx="340" cy="140" r="5" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="200" cy="140" r="5" fill="var(--accent-cyan, #06b6d4)" />
+        <circle cx="340" cy="140" r="5" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" />
+        <circle cx="200" cy="140" r="5" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" />
       </g>
 
       {/* Orbit 3 Excited Electron Transition (n=3 -> n=2) */}
       <g className="anim-spin-slow" style={{ transformOrigin: '270px 140px' }}>
-        <circle cx="270" cy="35" r="5" fill="var(--accent-amber, #f59e0b)" />
+        <circle cx="270" cy="35" r="5" fill="url(#dg-lit-gold)" filter="url(#dg-shadow)" />
       </g>
 
       {/* Wavy Photon Emission Line */}
@@ -431,15 +476,15 @@ function renderGasPistonManometer(spec: QuestionDiagramSpec) {
       <g className="anim-float-y">
         <rect x="72" y="105" width="136" height="16" fill="var(--accent-amber, #f59e0b)" rx="2" />
         <rect x="133" y="45" width="14" height="60" fill="var(--accent-amber, #f59e0b)" />
-        <circle cx="140" cy="38" r="8" fill="var(--accent-ruby, #f43f5e)" />
+        <circle cx="140" cy="38" r="8" fill="url(#dg-lit-ruby)" filter="url(#dg-shadow)" />
       </g>
 
       {/* Gas Particles inside chamber */}
-      <circle cx="100" cy="150" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-bounce-1" />
-      <circle cx="150" cy="170" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-bounce-2" />
-      <circle cx="120" cy="200" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-bounce-3" />
-      <circle cx="170" cy="140" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-bounce-1" />
-      <circle cx="90" cy="180" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-bounce-2" />
+      <circle cx="100" cy="150" r="4" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-bounce-1" />
+      <circle cx="150" cy="170" r="4" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-bounce-2" />
+      <circle cx="120" cy="200" r="4" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-bounce-3" />
+      <circle cx="170" cy="140" r="4" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-bounce-1" />
+      <circle cx="90" cy="180" r="4" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-bounce-2" />
 
       {/* Connecting Tube from Chamber to Manometer */}
       <path d="M 210 150 L 300 150 L 300 180" fill="none" stroke="var(--text-primary, #ffffff)" strokeWidth="4" />
@@ -517,7 +562,7 @@ function renderPhaseHeatingCurve(spec: QuestionDiagramSpec) {
       </text>
 
       {/* Animated Tracer Dot moving along the curve */}
-      <circle cx="210" cy="180" r="6" fill="var(--accent-ruby, #f43f5e)" className="anim-pulse" />
+      <circle cx="210" cy="180" r="6" fill="url(#dg-lit-ruby)" filter="url(#dg-shadow)" className="anim-pulse" />
 
       {/* Phase Labels */}
       <text x="105" y="215" fill="var(--text-secondary, #94a3b8)" fontSize="11" fontWeight="bold">
@@ -597,7 +642,7 @@ function renderPotentialEnergyCurve(spec: QuestionDiagramSpec) {
       </text>
 
       {/* Peak Activated Complex marker */}
-      <circle cx="270" cy="60" r="5" fill="var(--accent-ruby, #f43f5e)" className="anim-pulse" />
+      <circle cx="270" cy="60" r="5" fill="url(#dg-lit-ruby)" filter="url(#dg-shadow)" className="anim-pulse" />
       <text x="270" y="45" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="11" fontWeight="bold">
         {lbl.ak || '[AK]‡'}
       </text>
@@ -628,8 +673,8 @@ function renderTitrationBurette(spec: QuestionDiagramSpec) {
       <line x1="105" y1="167" x2="137" y2="167" stroke="var(--accent-amber, #f59e0b)" strokeWidth="3" />
 
       {/* Animated Dripping Droplets into Flask */}
-      <circle cx="121" cy="188" r="3.5" fill="var(--accent-cyan, #06b6d4)" className="anim-drip-1" />
-      <circle cx="121" cy="202" r="3.5" fill="var(--accent-cyan, #06b6d4)" className="anim-drip-2" />
+      <circle cx="121" cy="188" r="3.5" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-drip-1" />
+      <circle cx="121" cy="202" r="3.5" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-drip-2" />
 
       {/* Erlenmeyer Flask at Bottom */}
       <path d="M 112 195 L 90 245 A 8 8 0 0 0 98 255 L 144 255 A 8 8 0 0 0 152 245 L 130 195 Z" fill="rgba(6,182,212,0.15)" stroke="var(--text-primary, #ffffff)" strokeWidth="2" />
@@ -654,7 +699,7 @@ function renderTitrationBurette(spec: QuestionDiagramSpec) {
       />
 
       {/* Equivalence Point (pH=7) Glow */}
-      <circle cx="345" cy="140" r="6" fill="var(--accent-amber, #f59e0b)" className="anim-pulse" />
+      <circle cx="345" cy="140" r="6" fill="url(#dg-lit-gold)" filter="url(#dg-shadow)" className="anim-pulse" />
       <line x1="230" y1="140" x2="345" y2="140" stroke="var(--border-subtle, #334155)" strokeDasharray="3 3" />
       <text x="215" y="145" textAnchor="end" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">pH = 7.0</text>
       <text x="360" y="145" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">
@@ -725,10 +770,10 @@ function renderDaniellCell(spec: QuestionDiagramSpec) {
       <path d="M 300 40 L 419 40 L 419 90" fill="none" stroke="var(--text-primary, #ffffff)" strokeWidth="2.5" />
 
       {/* Animated Stream of Electrons (Anode to Cathode) */}
-      <circle cx="125" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-1" />
-      <circle cx="125" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-2" />
-      <circle cx="305" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-3" />
-      <circle cx="305" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-4" />
+      <circle cx="125" cy="40" r="4" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-flow-1" />
+      <circle cx="125" cy="40" r="4" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-flow-2" />
+      <circle cx="305" cy="40" r="4" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-flow-3" />
+      <circle cx="305" cy="40" r="4" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className="anim-flow-4" />
 
       {/* Bottom Summary */}
       <text x="270" y="275" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="12" fontWeight="600">
@@ -765,12 +810,12 @@ function renderElectrolysisHoffman(spec: QuestionDiagramSpec) {
       <rect x="377" y="42" width="31" height="35" fill="var(--accent-ruby-subtle, rgba(244,63,94,0.4))" />
 
       {/* Rising Bubbles (Animated with Light Mode Contrast Stroke) */}
-      <circle cx="148" cy="150" r="3" fill="var(--accent-cyan, #06b6d4)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-1" />
-      <circle cx="145" cy="130" r="3.5" fill="var(--accent-cyan, #06b6d4)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-2" />
-      <circle cx="150" cy="115" r="4" fill="var(--accent-cyan, #06b6d4)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-3" />
+      <circle cx="148" cy="150" r="3" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-1" />
+      <circle cx="145" cy="130" r="3.5" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-2" />
+      <circle cx="150" cy="115" r="4" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-3" />
 
-      <circle cx="392" cy="140" r="3" fill="var(--accent-cyan, #06b6d4)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-2" />
-      <circle cx="390" cy="100" r="3.5" fill="var(--accent-cyan, #06b6d4)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-1" />
+      <circle cx="392" cy="140" r="3" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-2" />
+      <circle cx="390" cy="100" r="3.5" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-1" />
 
       {/* Labels */}
       <text x="147" y="32" textAnchor="middle" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">
@@ -800,79 +845,89 @@ function renderVseprGeometry(spec: QuestionDiagramSpec) {
     <g>
       {/* Center 1: Linear AX2 (180°) */}
       <g transform="translate(75, 50)">
-        <line x1="20" y1="40" x2="100" y2="40" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <circle cx="60" cy="40" r="14" fill="var(--accent-amber, #f59e0b)" />
-        <circle cx="20" cy="40" r="10" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="100" cy="40" r="10" fill="var(--accent-cyan, #06b6d4)" />
-        <text x="60" y="44" textAnchor="middle" fill="var(--text-primary, #000000)" fontSize="10" fontWeight="bold">Be</text>
+        <g className="dg-float dg-d1">
+        <Bond x1={20} y1={40} x2={100} y2={40} />
+        <circle cx="60" cy="40" r="14" fill="url(#dg-lit-gold)" filter="url(#dg-shadow)" />
+        <circle cx="20" cy="40" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <circle cx="100" cy="40" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <text x="60" y="44" textAnchor="middle" fill="#0b1220" fontSize="10" fontWeight="bold">Be</text>
         <text x="60" y="75" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="10">
           {lbl.ax2 || 'AX2 (180°)'}
         </text>
+        </g>
       </g>
 
       {/* Center 2: Trigonal Planar AX3 (120°) */}
       <g transform="translate(210, 40)">
-        <line x1="60" y1="45" x2="60" y2="15" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <line x1="60" y1="45" x2="25" y2="65" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <line x1="60" y1="45" x2="95" y2="65" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <circle cx="60" cy="45" r="14" fill="var(--accent-emerald, #10b981)" />
-        <circle cx="60" cy="15" r="10" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="25" cy="65" r="10" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="95" cy="65" r="10" fill="var(--accent-cyan, #06b6d4)" />
-        <text x="60" y="49" textAnchor="middle" fill="var(--text-primary, #000000)" fontSize="10" fontWeight="bold">B</text>
+        <g className="dg-float dg-d2">
+        <Bond x1={60} y1={45} x2={60} y2={15} />
+        <Bond x1={60} y1={45} x2={25} y2={65} />
+        <Bond x1={60} y1={45} x2={95} y2={65} />
+        <circle cx="60" cy="45" r="14" fill="url(#dg-lit-green)" filter="url(#dg-shadow)" />
+        <circle cx="60" cy="15" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <circle cx="25" cy="65" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <circle cx="95" cy="65" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <text x="60" y="49" textAnchor="middle" fill="#0b1220" fontSize="10" fontWeight="bold">B</text>
         <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="10">
           {lbl.ax3 || 'AX3 (120°)'}
         </text>
+        </g>
       </g>
 
       {/* Center 3: Tetrahedral AX4 (109.5°) */}
       <g transform="translate(345, 40)">
-        <line x1="60" y1="45" x2="60" y2="12" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <line x1="60" y1="45" x2="30" y2="70" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <line x1="60" y1="45" x2="75" y2="72" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <line x1="60" y1="45" x2="95" y2="55" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <circle cx="60" cy="45" r="14" fill="var(--border-strong, #64748b)" />
-        <circle cx="60" cy="12" r="9" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="30" cy="70" r="9" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="75" cy="72" r="9" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="95" cy="55" r="9" fill="var(--accent-cyan, #06b6d4)" />
+        <g className="dg-float dg-d3">
+        <Bond x1={60} y1={45} x2={60} y2={12} />
+        <Bond x1={60} y1={45} x2={30} y2={70} />
+        <Bond x1={60} y1={45} x2={75} y2={72} />
+        <Bond x1={60} y1={45} x2={95} y2={55} />
+        <circle cx="60" cy="45" r="14" fill="url(#dg-lit-slate)" filter="url(#dg-shadow)" />
+        <circle cx="60" cy="12" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <circle cx="30" cy="70" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <circle cx="75" cy="72" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <circle cx="95" cy="55" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
         <text x="60" y="49" textAnchor="middle" fill="var(--brand-on-primary, #ffffff)" fontSize="10" fontWeight="bold">C</text>
         <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="10">
           {lbl.ax4 || 'AX4 (109.5°)'}
         </text>
+        </g>
       </g>
 
       {/* Center 4: Bent / Angular AX2E2 (104.5° - H2O with Two Non-Bonding Lone Pairs) */}
       <g transform="translate(130, 160)">
+        <g className="dg-float dg-d4">
         {/* Pair 1 at -25° */}
         <ellipse cx="48" cy="24" rx="10" ry="5" transform="rotate(-25 48 24)" fill="none" stroke="var(--accent-amber, #f59e0b)" strokeDasharray="2 2" className="anim-pulse" />
         {/* Pair 2 at +25° */}
         <ellipse cx="72" cy="24" rx="10" ry="5" transform="rotate(25 72 24)" fill="none" stroke="var(--accent-amber, #f59e0b)" strokeDasharray="2 2" className="anim-pulse" />
-        <line x1="60" y1="45" x2="30" y2="70" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <line x1="60" y1="45" x2="90" y2="70" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <circle cx="60" cy="45" r="14" fill="var(--accent-ruby, #f43f5e)" />
-        <circle cx="30" cy="70" r="10" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="90" cy="70" r="10" fill="var(--accent-cyan, #06b6d4)" />
+        <Bond x1={60} y1={45} x2={30} y2={70} />
+        <Bond x1={60} y1={45} x2={90} y2={70} />
+        <circle cx="60" cy="45" r="14" fill="url(#dg-lit-ruby)" filter="url(#dg-shadow)" />
+        <circle cx="30" cy="70" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <circle cx="90" cy="70" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
         <text x="60" y="49" textAnchor="middle" fill="var(--brand-on-primary, #ffffff)" fontSize="10" fontWeight="bold">O</text>
         <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="10">
           {lbl.ax2e2 || 'AX2E2 (104.5°)'}
         </text>
+        </g>
       </g>
 
       {/* Center 5: Trigonal Pyramidal AX3E (107.3° - NH3) */}
       <g transform="translate(310, 160)">
+        <g className="dg-float dg-d5">
         <ellipse cx="60" cy="26" rx="12" ry="6" fill="none" stroke="var(--accent-amber, #f59e0b)" strokeDasharray="2 2" className="anim-pulse" />
-        <line x1="60" y1="45" x2="25" y2="70" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <line x1="60" y1="45" x2="60" y2="75" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <line x1="60" y1="45" x2="95" y2="70" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <circle cx="60" cy="45" r="14" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="25" cy="70" r="9" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="60" cy="75" r="9" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="95" cy="70" r="9" fill="var(--accent-cyan, #06b6d4)" />
-        <text x="60" y="49" textAnchor="middle" fill="var(--text-primary, #000000)" fontSize="10" fontWeight="bold">N</text>
+        <Bond x1={60} y1={45} x2={25} y2={70} />
+        <Bond x1={60} y1={45} x2={60} y2={75} />
+        <Bond x1={60} y1={45} x2={95} y2={70} />
+        <circle cx="60" cy="45" r="14" fill="url(#dg-lit-blue)" filter="url(#dg-shadow)" />
+        <circle cx="25" cy="70" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <circle cx="60" cy="75" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <circle cx="95" cy="70" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
+        <text x="60" y="49" textAnchor="middle" fill="#ffffff" fontSize="10" fontWeight="bold">N</text>
         <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="10">
           {lbl.ax3e || 'AX3E (107.3°)'}
         </text>
+        </g>
       </g>
 
       {/* Bottom Summary */}
@@ -1067,10 +1122,17 @@ const DIAGRAM_KEYFRAMES = `
     100% { transform: translateY(-40px) scale(1.2); opacity: 0; }
   }
 
+  @keyframes dgFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+
+  .chemical-diagram-svg text { font-family: var(--font-sans); }
+  .anim-pulse, .anim-float-y, .dg-float { transform-box: fill-box; }
   .anim-spin-fast { animation: spinFast 3s linear infinite; }
   .anim-spin-med { animation: spinMed 6s linear infinite; }
   .anim-spin-slow { animation: spinSlow 10s linear infinite; }
-  .anim-pulse { animation: pulseGlow 2s ease-in-out infinite; transform-origin: center; }
+  .anim-pulse { animation: pulseGlow 2.4s ease-in-out infinite; transform-origin: center; }
   .anim-float-y { animation: floatY 2.5s ease-in-out infinite; }
   .anim-bounce-1 { animation: bounce1 1.5s ease-in-out infinite; }
   .anim-bounce-2 { animation: bounce2 1.8s ease-in-out infinite; }
@@ -1084,4 +1146,15 @@ const DIAGRAM_KEYFRAMES = `
   .anim-rise-1 { animation: bubbleRise 2s ease-in infinite; }
   .anim-rise-2 { animation: bubbleRise 2s ease-in infinite 0.7s; }
   .anim-rise-3 { animation: bubbleRise 2s ease-in infinite 1.4s; }
+  .dg-float { animation: dgFloat 5s ease-in-out infinite; }
+  .dg-d2 { animation-delay: -1s; }
+  .dg-d3 { animation-delay: -2s; }
+  .dg-d4 { animation-delay: -3s; }
+  .dg-d5 { animation-delay: -4s; }
+
+  /* Reduced motion (OS setting or the in-app toggle): a still, readable figure */
+  @media (prefers-reduced-motion: reduce) {
+    .chemical-diagram-svg * { animation: none !important; }
+  }
+  :root[data-reduce-motion] .chemical-diagram-svg * { animation: none !important; }
 `;

@@ -442,7 +442,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                   </button>
                 </div>
                 <p className="ky-fs-18 sl-block__strong">
-                  <bdi dir="ltr">{formatChemText(currentTwin.stem[lang] || currentTwin.stem.tr)}</bdi>
+                  <bdi>{formatChemText(currentTwin.stem[lang] || currentTwin.stem.tr)}</bdi>
                 </p>
                 <div className="sl-twin-opts" role="radiogroup" aria-label={s.twinQuizTag}>
                   {currentTwin.options.map((opt, oIdx) => {
@@ -464,7 +464,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                       >
                         <span className="ky-key">{String.fromCharCode(65 + oIdx)}</span>
                         <span className="ky-fs-16 sl-opt-text">
-                          <bdi dir="ltr">{formatChemText(opt[lang] || opt.tr)}</bdi>
+                          <bdi>{formatChemText(opt[lang] || opt.tr)}</bdi>
                         </span>
                       </button>
                     );
@@ -473,7 +473,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                 {selectedTwinOpt !== null && (
                   <div className="sl-solution ky-pop" role="status">
                     <p className="ky-fs-16">
-                      <bdi dir="ltr">{formatChemText(currentTwin.explanation[lang] || currentTwin.explanation.tr)}</bdi>
+                      <bdi>{formatChemText(currentTwin.explanation[lang] || currentTwin.explanation.tr)}</bdi>
                     </p>
                   </div>
                 )}

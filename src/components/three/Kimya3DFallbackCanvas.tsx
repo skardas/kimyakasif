@@ -8,6 +8,7 @@ import type { LanguageCode } from '../../types/chemistry';
 import type { ChemicalSceneSpec, Hotspot3D } from '../../data/threeScenesData';
 import { ShieldAlert, ZoomIn, ZoomOut, Maximize2 } from 'lucide-react';
 import { ZOOM_FIT_I18N } from './Kimya3DLab';
+import { redesignExtra } from '../../i18n/redesignStrings';
 
 export interface Kimya3DFallbackCanvasProps {
   scene: ChemicalSceneSpec;
@@ -490,9 +491,7 @@ export const Kimya3DFallbackCanvas: React.FC<Kimya3DFallbackCanvasProps> = ({
       {/* Notice Pill */}
       <div className="lab-fb__notice ky-chip ky-chip--gold">
         <ShieldAlert size={16} aria-hidden="true" />
-        <bdi dir="ltr">
-          <span>WebGL 2D Güvenli Mod • Model: {scene.title[lang] || scene.title.tr}</span>
-        </bdi>
+        <span>{redesignExtra(lang).fallbackMode(scene.title[lang] || scene.title.tr)}</span>
       </div>
 
       {/* 2D Zoom & Fit HUD Controls */}
@@ -540,7 +539,7 @@ export const Kimya3DFallbackCanvas: React.FC<Kimya3DFallbackCanvasProps> = ({
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
-        aria-label={`2D Görselleştirici: ${scene.title[lang] || scene.title.tr}`}
+        aria-label={redesignExtra(lang).fallbackAria(scene.title[lang] || scene.title.tr)}
       />
 
       {/* Interactive Legend / Hotspot Buttons below */}
@@ -557,8 +556,8 @@ export const Kimya3DFallbackCanvas: React.FC<Kimya3DFallbackCanvasProps> = ({
               style={{ '--pin': hs.color } as React.CSSProperties}
             >
               <span className="lab-dot" aria-hidden="true" />
-              <bdi dir="ltr">
-                <span>{mode === 'quiz' ? `Nokta ${hs.pinNumber}` : (hs.title[lang] || hs.title.tr)}</span>
+              <bdi>
+                <span>{mode === 'quiz' ? `#${hs.pinNumber}` : (hs.title[lang] || hs.title.tr)}</span>
               </bdi>
             </button>
           );

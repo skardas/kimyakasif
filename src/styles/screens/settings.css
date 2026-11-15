@@ -119,3 +119,9 @@ button.ky-row.st-link {
     gap: 16px;
   }
 }
+
+/* Tap targets: every segment key at least 44px wide, and the 32px-tall switch
+   gets an invisible 44px hit area (look unchanged). */
+.st .ky-seg > button { min-inline-size: 44px; }
+.st .ky-switch { position: relative; flex: none; }
+.st .ky-switch::before { content: ''; position: absolute; inset: -6px -4px; }

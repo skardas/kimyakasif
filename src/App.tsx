@@ -155,6 +155,11 @@ export const App: React.FC = () => {
     track === 'TYT_ONLY' ? sh.trackTytOnly : track === 'AYT_FOCUS' ? sh.trackAytFocus : sh.trackSequential;
   const isNavOn = (id: NavTab) => activeTab === id || (id === 'profile' && activeTab === 'settings');
 
+  const goTab = (tab: NavTab) => {
+    if (tab === 'exams') setTargetExamUnitId(null);
+    setActiveTab(tab);
+  };
+
   const openProfile = (tab: ProfileTab = 'dashboard') => {
     setProfileTab(tab);
     setActiveTab('profile');
@@ -171,6 +176,7 @@ export const App: React.FC = () => {
           onFinish={(pref, goal) => {
             setExamPref(pref);
             setDailyGoal(goal);
+            store.updateProfile(store.activeProfile.id, { dailyQuestionGoal: goal });
             setShowOnboarding(false);
             try {
               localStorage.setItem('kimya-onboarded', '1');
@@ -231,7 +237,7 @@ export const App: React.FC = () => {
                 type="button"
                 className={`sidebar-nav-btn ${on ? 'active' : ''}`}
                 aria-current={on ? 'page' : undefined}
-                onClick={() => (item.id === 'profile' ? openProfile() : setActiveTab(item.id))}
+                onClick={() => (item.id === 'profile' ? openProfile() : goTab(item.id))}
               >
                 <Icon size={20} aria-hidden={true} />
                 <span>{item.label}</span>
@@ -255,7 +261,7 @@ export const App: React.FC = () => {
         </button>
       </aside>
 
-      <div className="app-col">
+      <div className={`app-col ${activeTab === 'profile' || activeTab === 'settings' ? 'app-col--pushed' : ''}`}>
         <main className="app-main-stage">
           {activeTab === 'curriculum' && (
             <CurriculumView
@@ -342,7 +348,23 @@ export const App: React.FC = () => {
               lang={lang}
               store={store}
               initialTab={profileTab}
+              dailyGoal={dailyGoal}
+              todayCount={todayCount}
               onOpenSettings={() => setActiveTab('settings')}
+              onBack={() => setActiveTab('curriculum')}
+              onOpenUnitQuiz={(uId) => {
+                setTargetExamUnitId(uId);
+                setActiveTab('exams');
+              }}
+              onOpenCards={() => {
+                setTargetCardUnitId(null);
+                setActiveTab('cards');
+              }}
+              onOpenSlides={() => setActiveTab('curriculum')}
+              onRecordQuestion={(qId, isCorrect) => {
+                store.recordQuestionResult(qId, isCorrect);
+                bumpToday();
+              }}
             />
           )}
 
@@ -392,7 +414,7 @@ export const App: React.FC = () => {
                     type="button"
                     className={`mobile-tab-btn ${activeTab === item.id ? 'active' : ''}`}
                     aria-current={activeTab === item.id ? 'page' : undefined}
-                    onClick={() => setActiveTab(item.id)}
+                    onClick={() => goTab(item.id)}
                   >
                     <Icon size={22} aria-hidden={true} />
                     <span>{item.label}</span>

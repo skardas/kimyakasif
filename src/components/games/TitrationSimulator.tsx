@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
-import { Sparkles, Trophy, Droplets, Square, RotateCcw, Activity, CheckCircle2 } from 'lucide-react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Square, RotateCcw, CheckCircle2, ArrowLeft } from 'lucide-react';
 import { GameHud, GameStat } from './GameHud';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
-import { GAMES_STRINGS } from '../../i18n/gamesStrings';
+import { GAMES_STRINGS, fmt } from '../../i18n/gamesStrings';
 import { playDrop, playBubble, playCorrect, playWrong, playSuccess } from '../../audio/sfx';
 
 export interface TitrationSimulatorProps {
@@ -62,6 +62,9 @@ export function calculatePhCurve(volumeAddedMl: number): {
   };
 }
 
+
+const COMMA_LANGS: LanguageCode[] = ['tr', 'de', 'fr', 'ru', 'ku'];
+
 export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
   lang,
   highScore = 0,
@@ -76,9 +79,15 @@ export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
   const [flowRate, setFlowRate] = useState<0 | 0.2 | 1.0 | 5.0>(0); // mL/s
   const [score, setScore] = useState(0);
   const [hasFinished, setHasFinished] = useState(false);
+  const [dropN, setDropN] = useState(0);
   const [historyPoints, setHistoryPoints] = useState<{ v: number; ph: number }[]>([
     { v: 0, ph: 1.0 },
   ]);
+
+  const num = (v: number, d: number) => {
+    const s = v.toFixed(d);
+    return COMMA_LANGS.includes(lang) ? s.replace('.', ',') : s;
+  };
 
   const curveData = useMemo(() => calculatePhCurve(volumeDispensed), [volumeDispensed]);
 
@@ -141,6 +150,7 @@ export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
   const handleDropwise = () => {
     if (hasFinished || volumeDispensed >= 50.0) return;
     playDrop();
+    setDropN((n) => n + 1);
     setVolumeDispensed((prev) => Math.min(50.0, parseFloat((prev + 0.05).toFixed(2))));
   };
 
@@ -185,195 +195,171 @@ export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
   };
 
   const deltaV = Math.abs(volumeDispensed - 25.0);
-  const phClass = curveData.ph < 7 ? 'acid' : curveData.status === 'equivalence' ? 'eq' : '';
   const indicators: { id: IndicatorType; label: string; dot: string }[] = [
-    { id: 'phenolphthalein', label: 'Fenolftalein (8.2-10)', dot: '#ec4899' },
-    { id: 'methyl-orange', label: 'Metil Oranj (3.1-4.4)', dot: '#f97316' },
-    { id: 'bromothymol-blue', label: 'Bromtimol (6.0-7.6)', dot: '#22c55e' },
+    { id: 'phenolphthalein', label: g.tPhenol, dot: '#ec4899' },
+    { id: 'methyl-orange', label: g.tMethyl, dot: '#f97316' },
+    { id: 'bromothymol-blue', label: g.tBromo, dot: '#22c55e' },
   ];
+  const activeIndicator = indicators.find((i) => i.id === selectedIndicator) ?? indicators[0];
   const canDispense = !hasFinished && volumeDispensed < 50.0;
+  const statusLabel =
+    curveData.status === 'equivalence' ? g.tEquiv : curveData.status === 'basic' ? g.tBasic : curveData.status === 'overshot' ? g.tOvershot : g.tAcidic;
+  const clear = flaskColor.startsWith('rgba');
+  const phColor = clear ? '#F2F6FB' : flaskColor === '#ec4899' ? '#F7A8D8' : flaskColor;
+
+  // Burette geometry (artboard: tube y 14..184, liquid inside)
+  const tubeTop = 17;
+  const tubeBottom = 181;
+  const liquidTop = tubeTop + (tubeBottom - tubeTop) * (curveData.clampedVol / 50);
+  const flowing = flowRate > 0 && canDispense;
+
+  // Mini curve
+  const cx = (v: number) => 8 + (v / 50) * 136;
+  const cy = (ph: number) => 88 - (ph / 14) * 80;
+  const curvePath = historyPoints
+    .map((pt, i) => `${i === 0 ? 'M' : 'L'}${cx(pt.v).toFixed(1)} ${cy(pt.ph).toFixed(1)}`)
+    .join(' ');
+
+  const flowKey = (rate: 0.2 | 1.0, labelText: string, sub: string) => (
+    <button
+      type="button"
+      className={`ky-btn ky-btn--quiet gm-dose${flowRate === rate ? ' is-on' : ''}`}
+      aria-pressed={flowRate === rate}
+      disabled={!canDispense}
+      onClick={() => setFlowRate(flowRate === rate ? 0 : rate)}
+    >
+      {flowRate === rate ? <Square size={14} fill="currentColor" aria-hidden="true" /> : null}
+      <span className="gm-dose-main">{flowRate === rate ? g.tStop : labelText}</span>
+      <span className="gm-dose-sub ky-mono" dir="ltr">{sub}</span>
+    </button>
+  );
 
   return (
-    <div className="gm gm--wide titration-simulator-container">
+    <div className="gm-play titration-simulator-container">
       <GameHud title={t.games.titrationTitle} backLabel={t.games.backToHub} onBack={onBack}>
-        <GameStat icon={<Trophy size={16} aria-hidden="true" />} label={g.best} value={Math.max(highScore, score)} tone="gold" />
-        <GameStat icon={<Sparkles size={16} aria-hidden="true" />} label={g.score} value={score} tone="accent" />
+        <GameStat label={g.tIndicator} value={activeIndicator.label} tone="violet" mono={false} />
+        {hasFinished && <GameStat label={g.score} value={fmt(g.pts, { n: score })} tone="accent" />}
+        {!hasFinished && highScore > 0 && <GameStat label={g.best} value={fmt(g.recordN, { n: highScore })} />}
       </GameHud>
 
-      <div className="ky-card gm-board titration-board">
-        <div className="gm-titr">
-          {/* Apparatus */}
-          <div className="ky-stage gm-apparatus apparatus-stage">
-            <div className="ky-floor" aria-hidden="true" />
-            <div className="gm-app-head">
-              <span>Büret: 0.100 M NaOH (Baz)</span>
-              <span className="ky-mono">{volumeDispensed.toFixed(2)} / 50.00 mL</span>
-            </div>
+      <main className="ky-fit ky-pane gm-main">
+        <section className="ky-stage ky-lead gm-titr-stage apparatus-stage" aria-label={g.tApparatus}>
+          <div className="ky-floor" aria-hidden="true" />
+          <svg className="gm-app-svg" viewBox="0 0 190 330" aria-hidden="true">
+            <rect x="84" y="14" width="22" height="170" rx="5" fill="rgba(255,255,255,.08)" stroke="#8CF5E7" strokeWidth="2.5" />
+            <rect
+              className="gm-bur-liquid"
+              x="87"
+              y={liquidTop}
+              width="16"
+              height={Math.max(0, tubeBottom - liquidTop)}
+              rx="3"
+              fill="#6FA8FF"
+              opacity=".85"
+            />
+            <g stroke="#E8EEF6" strokeWidth="1.5" opacity=".7">
+              <path d="M106 40h8" />
+              <path d="M106 70h12" />
+              <path d="M106 100h8" />
+              <path d="M106 130h12" />
+              <path d="M106 160h8" />
+            </g>
+            <path d="M95 184v22" stroke="#8CF5E7" strokeWidth="5" strokeLinecap="round" />
+            <rect x="78" y="190" width="34" height="9" rx="4.5" fill="#F6B73C" className={flowing ? 'gm-cock is-open' : 'gm-cock'} />
+            {(flowing || dropN > 0) && (
+              <circle key={flowing ? 'flow' : `d-${dropN}`} cx="95" cy="214" r="5" fill="#6FA8FF" className={flowing ? 'gm-drip is-loop' : 'gm-drip'} />
+            )}
+            <path
+              d="M82 236h26v22l34 50a8 8 0 0 1-7 13H55a8 8 0 0 1-7-13l34-50z"
+              fill="rgba(255,255,255,.07)"
+              stroke="#8CF5E7"
+              strokeWidth="2.5"
+              strokeLinejoin="round"
+            />
+            <path className="gm-flask-liquid" d="M68 284h54l18 26a6 6 0 0 1-5 9H55a6 6 0 0 1-5-9z" fill={clear ? 'rgba(220,235,255,.22)' : flaskColor} opacity=".92" />
+            <ellipse className="gm-flask-surface" cx="95" cy="284" rx="27" ry="4" fill={clear ? 'rgba(255,255,255,.35)' : '#FFD9EE'} opacity={clear ? 1 : 0.55} />
+            {stirrerOn && <ellipse className="gm-vortex" cx="95" cy="306" rx="12" ry="3" fill="none" stroke="rgba(255,255,255,.55)" strokeWidth="2" />}
+          </svg>
 
-            <div className="gm-burette burette-tube" role="img" aria-label={`${volumeDispensed.toFixed(2)} mL`}>
-              <div
-                className="gm-burette-liquid burette-liquid"
-                style={{ blockSize: `${Math.max(0, ((50.0 - volumeDispensed) / 50.0) * 100)}%` }}
-              />
-              <div className="gm-burette-scale" aria-hidden="true">
-                <span>0 mL</span>
-                <span>10</span>
-                <span>20</span>
-                <span>25 (Eq)</span>
-                <span>30</span>
-                <span>40</span>
-                <span>50 mL</span>
-              </div>
+          <div className="gm-titr-side">
+            <div className="gm-readout">
+              <p className="gm-readout-label">pH</p>
+              <p className="ky-disp ky-mono gm-readout-ph" style={{ color: phColor }} aria-live="polite">
+                {num(curveData.ph, 1)}
+              </p>
+              <span className={`gm-ph-tag is-${curveData.status}`}>{statusLabel}</span>
             </div>
-
-            <div className="gm-nozzle" aria-hidden="true">
-              <i className={flowRate > 0 ? 'flow' : ''} />
+            <div className="gm-readout">
+              <p className="gm-readout-label">{g.tAdded}</p>
+              <p className="ky-mono gm-readout-vol">
+                {num(volumeDispensed, 2)} <span>mL</span>
+              </p>
             </div>
-
-            <div className="gm-flask erlenmeyer-flask" style={{ backgroundColor: flaskColor }}>
-              {stirrerOn && <div className="gm-vortex" />}
-            </div>
-            <div className="gm-flask-cap">25 mL 0.100 M HCl (Asit) + İndikatör</div>
-
-            <div className="gm-ph ph-hud" aria-live="polite">
-              <span className="gm-ph-label">
-                <Activity size={14} aria-hidden="true" />
-                pH Metre
-              </span>
-              <span className={`gm-ph-val ${phClass}`}>{curveData.ph.toFixed(2)}</span>
-              <span className={`gm-ph-status ${curveData.status === 'equivalence' ? 'eq' : curveData.status === 'overshot' ? 'bad' : ''}`}>
-                {curveData.status.toUpperCase()}
-              </span>
-            </div>
+            <svg className="gm-mini-curve" viewBox="0 0 150 96" role="img" aria-label={g.tCurve}>
+              <path d="M6 90V6" stroke="rgba(255,255,255,.3)" strokeWidth="1.5" />
+              <path d="M6 90h140" stroke="rgba(255,255,255,.3)" strokeWidth="1.5" />
+              <path d={`M${cx(25)} 6V90`} stroke="rgba(167,139,250,.55)" strokeWidth="1.2" strokeDasharray="3 3" />
+              <path d={curvePath} fill="none" stroke="#2DD9C3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+              <circle cx={cx(curveData.clampedVol)} cy={cy(curveData.ph)} r="5" fill="#F6B73C" />
+            </svg>
           </div>
+        </section>
 
-          {/* Controls + curve */}
-          <div className="gm-controls controls-and-curve">
-            <div className="indicator-selector" style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-              <span className="gm-label" id="gm-ind-label">İndikatör Seçimi</span>
-              <div className="gm-chiprow" role="group" aria-labelledby="gm-ind-label">
-                {indicators.map((ind) => (
-                  <button
-                    key={ind.id}
-                    type="button"
-                    className={`ky-chip ky-chip--lg${selectedIndicator === ind.id ? ' on' : ''}`}
-                    aria-pressed={selectedIndicator === ind.id}
-                    onClick={() => setSelectedIndicator(ind.id)}
-                  >
-                    <span className="gm-dot" style={{ background: ind.dot }} aria-hidden="true" />
-                    {ind.label}
-                  </button>
-                ))}
-              </div>
-            </div>
+        <section className="ky-card gm-task">
+          <p className="ky-fs-16 gm-task-title">{g.tTask}</p>
+          <p className="ky-fs-13 gm-task-desc">{g.tTaskDesc}</p>
+        </section>
 
-            <div className="ky-well gm-curve svg-curve-box">
-              <div className="gm-curve-head">
-                <span>Titrasyon Eğrisi (pH / V_eklenen)</span>
-                <span>Eşdeğerlik: 25.00 mL (pH 7.00)</span>
-              </div>
-              <svg viewBox="0 0 205 102" role="img" aria-label="pH curve">
-                <line x1="20" y1="90" x2="195" y2="90" stroke="currentColor" strokeOpacity="0.3" />
-                <line x1="20" y1="10" x2="20" y2="90" stroke="currentColor" strokeOpacity="0.3" />
-                <line className="gm-curve-eq" x1="105" y1="10" x2="105" y2="90" strokeDasharray="3 3" strokeOpacity="0.7" />
-                <line className="gm-curve-eq" x1="20" y1="50" x2="195" y2="50" strokeDasharray="3 3" strokeOpacity="0.35" />
-
-                {[0, 7, 14].map((ph) => {
-                  const y = 90 - (ph / 14.0) * 80;
-                  return (
-                    <g key={`y-tick-${ph}`}>
-                      <line x1="17" y1={y} x2="20" y2={y} stroke="currentColor" strokeOpacity="0.5" />
-                      <text x="15" y={y + 1.8} fontSize="4.8" fill="currentColor" textAnchor="end" fontFamily="monospace">
-                        {ph}
-                      </text>
-                    </g>
-                  );
-                })}
-
-                {[0, 10, 20, 25, 30, 40, 50].map((v) => {
-                  const x = 20 + (v / 50.0) * 170;
-                  return (
-                    <g key={`x-tick-${v}`}>
-                      <line x1={x} y1="90" x2={x} y2="93" stroke="currentColor" strokeOpacity="0.5" />
-                      <text x={x} y="98" fontSize="4.8" fill="currentColor" textAnchor="middle" fontFamily="monospace">
-                        {v}
-                      </text>
-                    </g>
-                  );
-                })}
-
-                <path
-                  className="gm-curve-line"
-                  d={historyPoints
-                    .map((pt, i) => {
-                      const x = 20 + (pt.v / 50.0) * 170;
-                      const y = 90 - (pt.ph / 14.0) * 80;
-                      return `${i === 0 ? 'M' : 'L'} ${x.toFixed(1)} ${y.toFixed(1)}`;
-                    })
-                    .join(' ')}
-                />
-                <circle
-                  className="gm-curve-dot"
-                  cx={20 + (curveData.clampedVol / 50.0) * 170}
-                  cy={90 - (curveData.ph / 14.0) * 80}
-                  r="4"
-                />
-              </svg>
-            </div>
-
-            <div className="gm-flow valve-controls-box">
-              <div className="gm-two">
-                <button type="button" onClick={handleDropwise} disabled={!canDispense} className="ky-btn ky-btn--quiet">
-                  <Droplets size={16} aria-hidden="true" />
-                  <span>Damla Damla (+0.05 mL)</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={toggleStirrer}
-                  className={`ky-btn ${stirrerOn ? 'ky-btn--primary' : 'ky-btn--quiet'}`}
-                  aria-pressed={stirrerOn}
-                >
-                  <Activity size={16} aria-hidden="true" />
-                  <span>Karıştırıcı: {stirrerOn ? 'Açık' : 'Kapalı'}</span>
-                </button>
-              </div>
-
-              <span className="gm-label">Sürekli Akış</span>
-              <div className="ky-segmented" role="group" aria-label="Sürekli Akış">
-                <button type="button" aria-pressed={flowRate === 0.2} disabled={!canDispense} onClick={() => setFlowRate(flowRate === 0.2 ? 0 : 0.2)}>
-                  Yavaş 0.2
-                </button>
-                <button type="button" aria-pressed={flowRate === 1.0} disabled={!canDispense} onClick={() => setFlowRate(flowRate === 1.0 ? 0 : 1.0)}>
-                  Orta 1.0
-                </button>
-                <button type="button" aria-pressed={flowRate === 0} onClick={() => setFlowRate(0)}>
-                  <Square size={12} fill="currentColor" aria-hidden="true" style={{ marginInlineEnd: 6 }} />
-                  Durdur
-                </button>
-              </div>
-            </div>
-
-            {hasFinished ? (
-              <div className={`gm-feedback ${score >= 100 ? 'ok ky-pop' : 'bad ky-shake'}`} role="status">
-                {score >= 300
-                  ? `Mükemmel! Tam eşdeğerlik noktası (Δ ${deltaV.toFixed(2)} mL). +${score} Puan`
-                  : `Eşdeğerlik 25.00 mL idi, sapma Δ ${deltaV.toFixed(2)} mL. +${score} Puan`}
-              </div>
-            ) : null}
-
-            <div className="gm-actions">
-              <button type="button" onClick={handleReset} className="ky-btn ky-btn--quiet" data-sfx={hasFinished ? 'start' : undefined}>
-                <RotateCcw size={16} aria-hidden="true" />
-                <span>{hasFinished ? g.replay : 'Yeniden Başla'}</span>
-              </button>
-              <button type="button" onClick={handleStopTitration} disabled={hasFinished} className="ky-btn ky-btn--primary">
-                <CheckCircle2 size={18} aria-hidden="true" />
-                <span>Dönüm Noktası İlan Et</span>
-              </button>
-            </div>
-          </div>
+        <div className="ky-seg gm-ind" role="group" aria-label={g.tIndicator}>
+          {indicators.map((ind) => (
+            <button key={ind.id} type="button" aria-pressed={selectedIndicator === ind.id} onClick={() => setSelectedIndicator(ind.id)} className="ky-fs-13">
+              <span className="gm-dot" style={{ background: ind.dot }} aria-hidden="true" />
+              {ind.label}
+            </button>
+          ))}
         </div>
-      </div>
+
+        <div className="gm-doses valve-controls-box">
+          <button type="button" onClick={handleDropwise} disabled={!canDispense} className="ky-btn ky-btn--quiet gm-dose">
+            <span className="gm-dose-main">{g.tDrop}</span>
+            <span className="gm-dose-sub ky-mono" dir="ltr">+{num(0.05, 2)} mL</span>
+          </button>
+          {flowKey(0.2, g.tSlow, `${num(0.2, 1)} mL/s`)}
+          {flowKey(1.0, g.tFast, `${num(1, 1)} mL/s`)}
+        </div>
+
+        <div className="ky-well gm-stir">
+          <span className="ky-fs-14">{g.tStirrer}</span>
+          <button type="button" role="switch" aria-checked={stirrerOn} aria-label={g.tStirrer} className="ky-switch" onClick={toggleStirrer} />
+        </div>
+      </main>
+
+      <footer className={`ky-screen-foot gm-foot${hasFinished ? ' ky-screen-foot--stack' : ''}`}>
+        {hasFinished && (
+          <p className={`gm-status ky-fs-14 ${score >= 100 ? 'ok ky-pop' : 'bad ky-shake'}`} role="status">
+            {score >= 300
+              ? fmt(g.tPerfect, { d: num(deltaV, 2), n: score })
+              : fmt(g.tResult, { d: num(deltaV, 2), n: score })}
+          </p>
+        )}
+        <div className="gm-foot-row">
+          <button type="button" onClick={hasFinished ? onBack : handleReset} className="ky-btn ky-btn--quiet">
+            {hasFinished ? <ArrowLeft size={16} aria-hidden="true" className="gm-flip" /> : <RotateCcw size={16} aria-hidden="true" />}
+            <span className={hasFinished ? "gm-narrow-sr" : undefined}>{hasFinished ? g.backToGames : g.reset}</span>
+          </button>
+          {hasFinished ? (
+            <button type="button" onClick={handleReset} className="ky-btn ky-btn--primary ky-grow gm-cta" data-sfx="start">
+              <RotateCcw size={18} aria-hidden="true" />
+              <span>{g.replay}</span>
+            </button>
+          ) : (
+            <button type="button" onClick={handleStopTitration} className="ky-btn ky-btn--primary ky-grow gm-cta">
+              <CheckCircle2 size={18} aria-hidden="true" />
+              <span>{g.tEndpoint}</span>
+            </button>
+          )}
+        </div>
+      </footer>
     </div>
   );
 };

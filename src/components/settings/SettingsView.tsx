@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ChevronRight, ChevronDown, Bell, Download } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Bell, Download } from 'lucide-react';
 import type { LanguageCode } from '../../types/chemistry';
 import type { AppState } from '../../store/useAppStore';
 import type { DailyGoal, TextSizeStep } from '../../store/usePreferences';
 import { LANGUAGES, UI_TRANSLATIONS } from '../../i18n/translations';
-import { redesignStrings } from '../../i18n/redesignStrings';
+import { redesignStrings, redesignExtra } from '../../i18n/redesignStrings';
+import { ConfirmDialog } from '../common/ConfirmDialog';
 import { MUSIC_TRACKS } from '../../audio/musicEngine';
 import { notificationManager } from '../../utils/notificationManager';
 
@@ -47,6 +48,7 @@ const REMINDER_TIMES = ['18:00', '19:00', '20:00', '21:00', '22:00'];
 export const SettingsView: React.FC<SettingsViewProps> = ({
   lang,
   store,
+  dailyGoal,
   reduceMotion,
   sfxOn,
   textSize,
@@ -67,8 +69,10 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
 }) => {
   const t = UI_TRANSLATIONS[lang];
   const r = redesignStrings(lang);
+  const rx = redesignExtra(lang);
   const profile = store.activeProfile;
   const [notificationFeedback, setNotificationFeedback] = useState<string | null>(null);
+  const [confirmReset, setConfirmReset] = useState(false);
 
   const volPct = Math.round(Math.max(0, Math.min(1, musicVolume)) * 100);
   const langEntry = LANGUAGES.find((l) => l.code === store.language);
@@ -86,8 +90,8 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
       if (granted) {
         await notificationManager.scheduleDailyReminder(
           profile.reminderTime || '20:00',
-          'Kimya YKS Günlük Çalışma Hatırlatması',
-          `Merhaba ${profile.name}! Günlük hedefini tamamlamak için 15 dakika ayır.`,
+          rx.reminderTitle,
+          rx.reminderBody(profile.name),
           true
         );
         flash(r.notifOn);
@@ -105,8 +109,8 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
     if (profile.notificationsEnabled) {
       notificationManager.scheduleDailyReminder(
         time,
-        'Kimya YKS Günlük Çalışma Hatırlatması',
-        `Merhaba ${profile.name}! Günlük hedefini tamamlamak için 15 dakika ayır.`,
+        rx.reminderTitle,
+        rx.reminderBody(profile.name),
         true
       );
     }
@@ -116,7 +120,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
     <section className="ky-screen st" aria-label={r.settingsTitle}>
       <header className="ky-screen-head">
         <button type="button" className="ky-icon-btn ky-only-narrow" onClick={onBack} aria-label={t.profile.close}>
-          <ArrowLeft size={20} aria-hidden="true" className="st-flip" />
+          <ChevronLeft size={20} aria-hidden="true" className="st-flip" />
         </button>
         <h1 className="ky-disp ky-fs-28">{r.settingsTitle}</h1>
       </header>
@@ -131,9 +135,9 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
               <div className="ky-seg ky-seg--sm" role="radiogroup" aria-labelledby="st-theme">
                 {(
                   [
-                    ['system', t.profile.themeSystem],
-                    ['light', t.profile.themeLight],
-                    ['dark', t.profile.themeDark],
+                    ['system', rx.themeNames[0]],
+                    ['light', rx.themeNames[1]],
+                    ['dark', rx.themeNames[2]],
                   ] as const
                 ).map(([val, label]) => (
                   <button key={val} type="button" role="radio" aria-checked={store.themeSetting === val} onClick={() => store.setThemeSetting(val)}>
@@ -175,7 +179,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
               <span className="ky-row__val" aria-hidden="true">
                 {langEntry ? `${langEntry.flag} ${langEntry.nativeName}` : store.language}
               </span>
-              <ChevronDown size={18} aria-hidden="true" className="st-chev" />
+              <ChevronRight size={18} aria-hidden="true" className="st-chev st-flip" />
               <select
                 className="st-select-overlay"
                 value={store.language}
@@ -210,7 +214,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
               <span className="ky-row__val" aria-hidden="true">
                 {trackEntry ? trackEntry.title[lang] || trackEntry.title.tr : ''}
               </span>
-              <ChevronDown size={18} aria-hidden="true" className="st-chev" />
+              <ChevronRight size={18} aria-hidden="true" className="st-chev st-flip" />
               <select
                 className="st-select-overlay"
                 value={musicTrackId}
@@ -273,7 +277,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
                     aria-checked={profile.targetTrack === val}
                     onClick={() => store.updateProfile(profile.id, { targetTrack: val })}
                   >
-                    <bdi dir="ltr">{label}</bdi>
+                    <bdi>{label}</bdi>
                   </button>
                 ))}
               </div>
@@ -287,7 +291,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
                     type="button"
                     role="radio"
                     className="ky-mono"
-                    aria-checked={profile.dailyQuestionGoal === g}
+                    aria-checked={dailyGoal === g}
                     onClick={() => {
                       store.updateProfile(profile.id, { dailyQuestionGoal: g });
                       onSetDailyGoal(g);
@@ -334,7 +338,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
                 <label className="ky-row st-select-row">
                   <span className="ky-row__lbl">{r.reminderTime}</span>
                   <span className="ky-row__val ky-mono" aria-hidden="true">{profile.reminderTime || '20:00'}</span>
-                  <ChevronDown size={18} aria-hidden="true" className="st-chev" />
+                  <ChevronRight size={18} aria-hidden="true" className="st-chev st-flip" />
                   <select
                     className="st-select-overlay"
                     value={profile.reminderTime || '20:00'}
@@ -354,8 +358,8 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
                     className="ky-btn ky-btn--quiet ky-btn--sm"
                     onClick={async () => {
                       const ok = await notificationManager.sendImmediateNotification(
-                        'Kimya YKS AI Koç',
-                        'Harika gidiyorsun! Bildirim sistemi başarıyla çalışıyor.',
+                        rx.testNotifTitle,
+                        rx.testNotifBody,
                         true
                       );
                       flash(ok ? r.notifTestOk : r.notifTestFail, 3000);
@@ -404,11 +408,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
               <button
                 type="button"
                 className="ky-chip ky-chip--bad st-reset"
-                onClick={() => {
-                  if (window.confirm(t.profile.resetConfirmBody)) {
-                    store.resetAllProgress();
-                  }
-                }}
+                onClick={() => setConfirmReset(true)}
               >
                 {r.reset}
               </button>
@@ -416,6 +416,20 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           </section>
         </div>
       </div>
+
+      {confirmReset && (
+        <ConfirmDialog
+          title={t.profile.resetConfirmTitle}
+          body={t.profile.resetConfirmBody}
+          confirmLabel={t.profile.confirmReset}
+          cancelLabel={t.profile.cancel}
+          onCancel={() => setConfirmReset(false)}
+          onConfirm={() => {
+            store.resetAllProgress();
+            setConfirmReset(false);
+          }}
+        />
+      )}
     </section>
   );
 };

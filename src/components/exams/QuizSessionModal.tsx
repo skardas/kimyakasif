@@ -23,7 +23,7 @@ import { ChemicalDiagram } from '../diagrams/ChemicalDiagram';
 import { formatChemText } from '../common/ChemFormula';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { EXAM_STRINGS } from '../../i18n/examStrings';
-import { redesignStrings } from '../../i18n/redesignStrings';
+import { redesignStrings, redesignExtra } from '../../i18n/redesignStrings';
 
 export interface QuizSessionModalProps {
   title: string;
@@ -66,6 +66,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
   const t = UI_TRANSLATIONS[lang];
   const x = EXAM_STRINGS[lang] ?? EXAM_STRINGS.tr;
   const r = redesignStrings(lang);
+  const rx = redesignExtra(lang);
 
   // Current Question Pointer
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -350,6 +351,8 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
     return subtitle ? `${title} · ${subtitle}` : title;
   })();
 
+  const fmtNet = (n: number) => n.toLocaleString(lang, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
   const renderSummary = () => {
     if (!finalResult) return null;
     const total = questions.length || 1;
@@ -367,7 +370,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
           <p className="ky-eyebrow qz-res-eyebrow">
             {title} · {r.completed}
           </p>
-          <svg className="qz-ring ky-pop" viewBox="0 0 150 150" role="img" aria-label={`${x.net} ${finalResult.netScore.toFixed(2)}`}>
+          <svg className="qz-ring ky-pop" viewBox="0 0 150 150" role="img" aria-label={`${x.net} ${fmtNet(finalResult.netScore)}`}>
             <circle cx="75" cy="75" r="62" fill="none" stroke="rgba(255,255,255,.12)" strokeWidth="12" />
             <circle
               cx="75"
@@ -382,7 +385,8 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
               transform="rotate(-90 75 75)"
             />
             <text x="75" y="76" textAnchor="middle" className="qz-ring__num">
-              {finalResult.correctCount}/{questions.length}
+              {finalResult.correctCount}
+              <tspan className="qz-ring__of"> / {questions.length}</tspan>
             </text>
             <text x="75" y="100" textAnchor="middle" className="qz-ring__lbl">
               {t.exams.correctCount}
@@ -411,7 +415,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                 <p>{t.exams.emptyCount}</p>
               </div>
               <div className="ky-well qz-res-stat qz-res-stat--net">
-                <p className="ky-mono ky-disp qz-c-accent">{finalResult.netScore.toFixed(2)}</p>
+                <p className="ky-mono ky-disp qz-c-accent">{fmtNet(finalResult.netScore)}</p>
                 <p>{x.net}</p>
               </div>
             </section>
@@ -714,22 +718,22 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
             className="ky-card qz-confirm ky-pop"
             role="alertdialog"
             aria-modal="true"
-            aria-label="Sınavı Bitirmek İstiyor musun?"
+            aria-labelledby="qz-finish-title"
             onClick={(e) => e.stopPropagation()}
           >
             <AlertTriangle size={34} className="qz-confirm__icon" aria-hidden="true" />
-            <h3 className="ky-disp">Sınavı Bitirmek İstiyor musun?</h3>
+            <h3 id="qz-finish-title" className="ky-disp">{rx.finishConfirmTitle}</h3>
             <p>
               {answeredCount < questions.length
-                ? `${questions.length - answeredCount} adet boş sorun var. Yanıtların puanlanıp Net skorun hesaplanacak.`
-                : 'Tüm soruları yanıtladın. Net skorun hesaplanıp kaydedilecek.'}
+                ? rx.finishConfirmEmpty(questions.length - answeredCount)
+                : rx.finishConfirmAll}
             </p>
             <div className="qz-confirm__actions">
               <button type="button" className="ky-btn ky-btn--quiet" onClick={() => setShowSubmitConfirm(false)}>
-                Devam Et
+                {rx.keepGoing}
               </button>
               <button type="button" className="ky-btn ky-btn--ok" onClick={() => handleSubmitExam(false)}>
-                Evet, Bitir
+                {rx.yesFinish}
               </button>
             </div>
           </div>
@@ -743,18 +747,18 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
             className="ky-card qz-confirm ky-pop"
             role="alertdialog"
             aria-modal="true"
-            aria-label="Sınavdan Çıkmak İstiyor musun?"
+            aria-labelledby="qz-exit-title"
             onClick={(e) => e.stopPropagation()}
           >
             <AlertTriangle size={34} className="qz-confirm__icon qz-confirm__icon--bad" aria-hidden="true" />
-            <h3 className="ky-disp">Sınavdan Çıkmak İstiyor musun?</h3>
-            <p>Şimdi çıkarsan sınav kaydedilmeyecektir.</p>
+            <h3 id="qz-exit-title" className="ky-disp">{rx.exitConfirmTitle}</h3>
+            <p>{rx.exitConfirmBody}</p>
             <div className="qz-confirm__actions">
               <button type="button" className="ky-btn ky-btn--quiet" onClick={() => setShowExitConfirm(false)}>
-                Sınava Dön
+                {rx.backToExam}
               </button>
               <button type="button" className="ky-btn ky-btn--danger" onClick={onClose}>
-                Çık
+                {rx.exitNow}
               </button>
             </div>
           </div>

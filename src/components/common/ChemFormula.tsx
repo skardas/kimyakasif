@@ -48,10 +48,14 @@ export function formatChemText(rawText: string): React.ReactNode {
   let key = 0;
 
   while ((match = regex.exec(rawText)) !== null) {
+    const token = match[0];
+    // Roman numerals (I., II., III.) and exam acronyms are prose, not formulas.
+    if (/^(?:[IVX]+|TYT|AYT|YKS)$/.test(token)) {
+      continue;
+    }
     if (match.index > lastIndex) {
       nodes.push(rawText.slice(lastIndex, match.index));
     }
-    const token = match[0];
     if (token.startsWith('{{chem:') && token.endsWith('}}')) {
       const formula = token.slice(7, -2);
       nodes.push(<ChemFormula key={key++} formula={formula} />);

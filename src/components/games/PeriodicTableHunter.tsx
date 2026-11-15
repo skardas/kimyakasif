@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
-import { Sparkles, Timer, Trophy, ArrowLeft, Flame, RotateCcw, Swords, Crosshair, Award } from 'lucide-react';
-import { GameHud, GameStat } from './GameHud';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Timer, Trophy, ArrowLeft, Flame, RotateCcw, Swords, Crosshair, Award, Lightbulb, SkipForward } from 'lucide-react';
+import { GameHud, GameStat, clock } from './GameHud';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
-import { GAMES_STRINGS } from '../../i18n/gamesStrings';
-import { playCorrect, playWrong, playSuccess, playFinish } from '../../audio/sfx';
+import { GAMES_STRINGS, GAMES_CONTENT, fmt } from '../../i18n/gamesStrings';
+import type { GamesStrings } from '../../i18n/gamesStrings';
+import { playCorrect, playWrong, playFinish } from '../../audio/sfx';
 
 export interface PeriodicTableHunterProps {
   lang: LanguageCode;
@@ -78,6 +79,55 @@ const ELEMENTS_DB: ElementInfo[] = [
   { z: 118, symbol: 'Og', nameTr: 'Oganesson', nameEn: 'Oganesson', period: 7, group: '8A', groupNum: 18, category: 'noble', atomicRadiusPm: 152, ie1Kj: 860, electronegativity: null, electronAffinityKj: 5, metallicCharacter: 2 },
 ];
 
+type ClueKind = 'z' | 'pos' | 'sym' | 'name' | 'special';
+type DuelKind = 'ie2A3A' | 'ie5A6A' | 'eaClF' | 'radius' | 'en' | 'metal';
+
+const SPECIAL_CLUES: Record<number, keyof GamesStrings> = {
+  1: 'phClue1',
+  2: 'phClue2',
+  9: 'phClue9',
+  17: 'phClue17',
+  24: 'phClue24',
+  80: 'phClue80',
+  118: 'phClue118',
+};
+
+const CAT_LABEL: Record<ElementInfo['category'], keyof GamesStrings> = {
+  alkali: 'catAlkali',
+  alkaline: 'catAlkaline',
+  transition: 'catTransition',
+  'post-transition': 'catPost',
+  metalloid: 'catMetalloid',
+  nonmetal: 'catNonmetal',
+  halogen: 'catHalogen',
+  noble: 'catNoble',
+  lanthanide: 'catTransition',
+  actinide: 'catTransition',
+};
+
+const LEGEND: ElementInfo['category'][] = ['alkali', 'alkaline', 'transition', 'post-transition', 'metalloid', 'nonmetal', 'halogen', 'noble'];
+
+const DUEL_PROMPT: Record<DuelKind, keyof GamesStrings> = {
+  ie2A3A: 'dqIE',
+  ie5A6A: 'dqIE',
+  eaClF: 'dqEA',
+  radius: 'dqRadius',
+  en: 'dqEN',
+  metal: 'dqMetal',
+};
+
+const DUEL_NOTE: Record<DuelKind, keyof GamesStrings> = {
+  ie2A3A: 'dt2A3A',
+  ie5A6A: 'dt5A6A',
+  eaClF: 'dtClF',
+  radius: 'dtRadius',
+  en: 'dtEN',
+  metal: 'dtMetal',
+};
+
+const byZ = (z: number) => ELEMENTS_DB.find((e) => e.z === z)!;
+const pickRandom = () => ELEMENTS_DB[Math.floor(Math.random() * ELEMENTS_DB.length)];
+
 export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
   lang,
   highScore = 0,
@@ -86,6 +136,7 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
 }) => {
   const t = UI_TRANSLATIONS[lang];
   const g = GAMES_STRINGS[lang] ?? GAMES_STRINGS.en;
+  const content = GAMES_CONTENT[lang] ?? GAMES_CONTENT.en;
   const bestAtStart = useRef(highScore);
   const [isOver, setIsOver] = useState(false);
   const [feedbackN, setFeedbackN] = useState(0);
@@ -96,14 +147,15 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
   const [timeLeft, setTimeLeft] = useState(60);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
-  const [targetElement, setTargetElement] = useState<ElementInfo>(ELEMENTS_DB[0]);
-  const [clueText, setClueText] = useState('');
+  const [hits, setHits] = useState(0);
+  const [showHint, setShowHint] = useState(false);
+  const [lastPick, setLastPick] = useState<{ z: number; ok: boolean; n: number } | null>(null);
+  const [clue, setClue] = useState<{ el: ElementInfo; kind: ClueKind }>({ el: ELEMENTS_DB[0], kind: 'z' });
   const [battleQuestion, setBattleQuestion] = useState<{
-    prompt: string;
+    kind: DuelKind;
     elemA: ElementInfo;
     elemB: ElementInfo;
     correctSymbol: string;
-    trapNote: string;
   } | null>(null);
 
   const [feedback, setFeedback] = useState<{ message: string; isCorrect: boolean } | null>(null);
@@ -114,119 +166,59 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
   // Streak Multiplier: 1x (0-2), 2x (3-5), 3x (6-8), 4x (9+)
   const multiplier = streak >= 9 ? 4 : streak >= 6 ? 3 : streak >= 3 ? 2 : 1;
 
+  const elName = useCallback(
+    (el: ElementInfo) => content.elementNames[el.symbol] ?? (lang === 'tr' ? el.nameTr : el.nameEn),
+    [content, lang]
+  );
+
   // Clue generator for Element Hunt
   const generateHuntClue = useCallback(() => {
-    const el = ELEMENTS_DB[Math.floor(Math.random() * ELEMENTS_DB.length)];
-    setTargetElement(el);
-
-    const clueTypes = [
-      `Atom Numarası (Z) = ${el.z} olan element hangisidir?`,
-      `Periyot ${el.period}, Grup ${el.group} (${el.category.toUpperCase()}) elementini bulun.`,
-      `Sembolü "${el.symbol}" olan elementin periyodik cetveldeki yerini seçin.`,
-      `Adı "${lang === 'en' ? el.nameEn : el.nameTr}" olan elementi bulun.`,
-    ];
-    if (el.z === 1) clueTypes.push('Evrende en çok bulunan, 1A grubundaki tek ametal element!');
-    if (el.z === 2) clueTypes.push('Değerlik elektron sayısı 2 olmasına rağmen 8A grubunda yer alan soygaz!');
-    if (el.z === 9) clueTypes.push('Elektronegatifliği en yüksek (3.98) element!');
-    if (el.z === 17) clueTypes.push('Elektron ilgisi (349 kJ/mol) flor atomundan bile yüksek olan halojen!');
-    if (el.z === 24) clueTypes.push('Elektron dizilimi [Ar] 4s¹ 3d⁵ küresel simetrisi gösteren geçiş metali!');
-    if (el.z === 80) clueTypes.push('Oda koşullarında sıvı halde bulunan tek metal!');
-    if (el.z === 118) clueTypes.push('Periyodik tablonun en son elementi (Z=118, 7. periyot soygazı)!');
-
-    setClueText(clueTypes[Math.floor(Math.random() * clueTypes.length)]);
-  }, [lang]);
+    const el = pickRandom();
+    const kinds: ClueKind[] = ['z', 'pos', 'sym', 'name'];
+    if (SPECIAL_CLUES[el.z]) kinds.push('special');
+    setClue({ el, kind: kinds[Math.floor(Math.random() * kinds.length)] });
+    setShowHint(false);
+  }, []);
 
   // Battle Question Generator (Trends with YKS traps!)
   const generateBattleQuestion = useCallback(() => {
     const battleTypes = ['ie', 'radius', 'electronegativity', 'metallic', 'affinity'];
     const chosenType = battleTypes[Math.floor(Math.random() * battleTypes.length)];
 
-    let elemA = ELEMENTS_DB[Math.floor(Math.random() * ELEMENTS_DB.length)];
-    let elemB = ELEMENTS_DB[Math.floor(Math.random() * ELEMENTS_DB.length)];
+    let elemA = pickRandom();
+    let elemB = pickRandom();
     while (elemA.z === elemB.z) {
-      elemB = ELEMENTS_DB[Math.floor(Math.random() * ELEMENTS_DB.length)];
+      elemB = pickRandom();
     }
 
     // High-yield YKS Traps selection
     const randTrap = Math.random();
     if (randTrap < 0.25) {
-      // 2A vs 3A trap: Be (Z=4) vs B (Z=5) OR Mg (Z=12) vs Al (Z=13)
-      if (Math.random() > 0.5) {
-        elemA = ELEMENTS_DB.find((e) => e.z === 4)!; // Be
-        elemB = ELEMENTS_DB.find((e) => e.z === 5)!; // B
-      } else {
-        elemA = ELEMENTS_DB.find((e) => e.z === 12)!; // Mg
-        elemB = ELEMENTS_DB.find((e) => e.z === 13)!; // Al
-      }
-      setBattleQuestion({
-        prompt: `Hangisinin 1. İyonlaşma Enerjisi DAHA YÜKSEKTİR?`,
-        elemA,
-        elemB,
-        correctSymbol: elemA.symbol, // 2A > 3A ("3 aşağı 5 yukarı" kuralı!)
-        trapNote: `ÖSYM Tuzağı: 2A grubu (${elemA.symbol}, s²) küresel simetriden dolayı 3A grubundan (${elemB.symbol}, s²p¹) daha yüksek iyonlaşma enerjisine sahiptir!`,
-      });
+      // 2A vs 3A trap: Be vs B OR Mg vs Al ("2A > 3A")
+      [elemA, elemB] = Math.random() > 0.5 ? [byZ(4), byZ(5)] : [byZ(12), byZ(13)];
+      setBattleQuestion({ kind: 'ie2A3A', elemA, elemB, correctSymbol: elemA.symbol });
       return;
-    } else if (randTrap < 0.50) {
-      // 5A vs 6A trap: N (Z=7) vs O (Z=8) OR P (Z=15) vs S (Z=16)
-      if (Math.random() > 0.5) {
-        elemA = ELEMENTS_DB.find((e) => e.z === 7)!; // N
-        elemB = ELEMENTS_DB.find((e) => e.z === 8)!; // O
-      } else {
-        elemA = ELEMENTS_DB.find((e) => e.z === 15)!; // P
-        elemB = ELEMENTS_DB.find((e) => e.z === 16)!; // S
-      }
-      setBattleQuestion({
-        prompt: `Hangisinin 1. İyonlaşma Enerjisi DAHA YÜKSEKTİR?`,
-        elemA,
-        elemB,
-        correctSymbol: elemA.symbol, // 5A > 6A
-        trapNote: `ÖSYM Tuzağı: 5A grubu (${elemA.symbol}, p³) küresel simetriden dolayı 6A grubundan (${elemB.symbol}, p⁴) daha yüksek iyonlaşma enerjisine sahiptir!`,
-      });
+    } else if (randTrap < 0.5) {
+      // 5A vs 6A trap: N vs O OR P vs S
+      [elemA, elemB] = Math.random() > 0.5 ? [byZ(7), byZ(8)] : [byZ(15), byZ(16)];
+      setBattleQuestion({ kind: 'ie5A6A', elemA, elemB, correctSymbol: elemA.symbol });
       return;
-    } else if (randTrap < 0.70) {
-      // Cl vs F Electron Affinity trap!
-      elemA = ELEMENTS_DB.find((e) => e.z === 17)!; // Cl
-      elemB = ELEMENTS_DB.find((e) => e.z === 9)!; // F
-      setBattleQuestion({
-        prompt: `Hangisinin Elektron İlgisi (EA) DAHA BÜYÜKTÜR?`,
-        elemA,
-        elemB,
-        correctSymbol: 'Cl',
-        trapNote: `ÖSYM Tuzağı: Klor (Cl)'un elektron ilgisi, Flor (F)'un küçük hacmindeki elektron itmesinden dolayı Flordan DAHA BÜYÜKTÜR!`,
-      });
+    } else if (randTrap < 0.7) {
+      // Cl vs F Electron Affinity trap
+      setBattleQuestion({ kind: 'eaClF', elemA: byZ(17), elemB: byZ(9), correctSymbol: 'Cl' });
       return;
     }
 
     // Standard trend comparison
     if (chosenType === 'radius') {
       const isA = elemA.atomicRadiusPm > elemB.atomicRadiusPm;
-      setBattleQuestion({
-        prompt: `Hangisinin Atom Yarıçapı DAHA BÜYÜKTÜR?`,
-        elemA,
-        elemB,
-        correctSymbol: isA ? elemA.symbol : elemB.symbol,
-        trapNote: `Kural: Periyotta sola ve grupta aşağıya inildikçe atom yarıçapı artar ("Kardan Adam").`,
-      });
+      setBattleQuestion({ kind: 'radius', elemA, elemB, correctSymbol: isA ? elemA.symbol : elemB.symbol });
     } else if (chosenType === 'electronegativity') {
-      const enA = elemA.electronegativity ?? 0;
-      const enB = elemB.electronegativity ?? 0;
-      const isA = enA > enB;
-      setBattleQuestion({
-        prompt: `Hangisinin Elektronegatifliği DAHA YÜKSEKTİR?`,
-        elemA,
-        elemB,
-        correctSymbol: isA ? elemA.symbol : elemB.symbol,
-        trapNote: `Kural: Sağ-yukarı gidildikçe elektronegatiflik artar. En yüksek element Flordur (F = 3.98).`,
-      });
+      const isA = (elemA.electronegativity ?? 0) > (elemB.electronegativity ?? 0);
+      setBattleQuestion({ kind: 'en', elemA, elemB, correctSymbol: isA ? elemA.symbol : elemB.symbol });
     } else {
       const isA = elemA.metallicCharacter > elemB.metallicCharacter;
-      setBattleQuestion({
-        prompt: `Hangisinin Metalik Özelliği / Aktifliği DAHA YÜKSEKTİR?`,
-        elemA,
-        elemB,
-        correctSymbol: isA ? elemA.symbol : elemB.symbol,
-        trapNote: `Kural: Periyodik cetvelde sol-aşağı doğru metalik karakter ve elektron verme eğilimi artar.`,
-      });
+      setBattleQuestion({ kind: 'metal', elemA, elemB, correctSymbol: isA ? elemA.symbol : elemB.symbol });
     }
   }, []);
 
@@ -239,6 +231,8 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
     setTimeLeft(60);
     setScore(0);
     setStreak(0);
+    setHits(0);
+    setLastPick(null);
     setFeedback(null);
     if (mode === 'hunt') {
       generateHuntClue();
@@ -273,23 +267,30 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
     }
   }, [isPlaying, timeLeft, onFinish]);
 
+  const duelNote = (q: NonNullable<typeof battleQuestion>) =>
+    fmt(g[DUEL_NOTE[q.kind]], { a: q.elemA.symbol, b: q.elemB.symbol });
+
   // Handle Element Click in Hunt Mode
   const handleElementClick = (el: ElementInfo) => {
     if (!isPlaying || gameMode !== 'hunt') return;
+    const target = clue.el;
 
-    if (el.symbol === targetElement.symbol) {
+    if (el.symbol === target.symbol) {
       playCorrect();
       const earned = 100 * multiplier;
       setScore((s) => s + earned);
       setStreak((st) => st + 1);
-      setFeedback({ message: `+${earned} Puan! Doğru: ${el.symbol} (${el.nameTr})`, isCorrect: true });
+      setHits((h) => h + 1);
+      setLastPick((p) => ({ z: el.z, ok: true, n: (p?.n ?? 0) + 1 }));
+      setFeedback({ message: fmt(g.phOk, { n: earned, s: el.symbol, name: elName(el) }), isCorrect: true });
       generateHuntClue();
     } else {
       playWrong();
       setStreak(0);
       setScore((s) => Math.max(0, s - 25));
       setFeedbackN((n) => n + 1);
-      setFeedback({ message: `Yanlış! Seçilen: ${el.symbol}, Hedef: ${targetElement.symbol}`, isCorrect: false });
+      setLastPick((p) => ({ z: el.z, ok: false, n: (p?.n ?? 0) + 1 }));
+      setFeedback({ message: fmt(g.phBad, { s: el.symbol, t: target.symbol }), isCorrect: false });
     }
   };
 
@@ -302,153 +303,246 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
       const earned = 120 * multiplier;
       setScore((s) => s + earned);
       setStreak((st) => st + 1);
-      setFeedback({ message: `Doğru! (+${earned}) ${battleQuestion.trapNote}`, isCorrect: true });
+      setHits((h) => h + 1);
+      setFeedback({ message: fmt(g.duelOk, { n: earned, note: duelNote(battleQuestion) }), isCorrect: true });
       generateBattleQuestion();
     } else {
       playWrong();
       setStreak(0);
       setScore((s) => Math.max(0, s - 30));
       setFeedbackN((n) => n + 1);
-      setFeedback({ message: `Tuzak! Doğru cevap: ${battleQuestion.correctSymbol}. ${battleQuestion.trapNote}`, isCorrect: false });
+      setFeedback({
+        message: fmt(g.duelBad, { s: battleQuestion.correctSymbol, note: duelNote(battleQuestion) }),
+        isCorrect: false,
+      });
       generateBattleQuestion();
     }
   };
 
-  const modeCards = (
-    <div className="gm-modes">
-      <button type="button" onClick={() => startGame('hunt')} className="gm-mode" data-sfx="start">
-        <Crosshair size={26} style={{ color: 'var(--accent)' }} aria-hidden="true" />
-        <strong>Öğe Avı (Element Hunt)</strong>
-        <small>İpuçlarından elementi periyodik tabloda bul</small>
-      </button>
-      <button type="button" onClick={() => startGame('battle')} className="gm-mode gm-mode--gold" data-sfx="start">
-        <Swords size={26} style={{ color: 'var(--gold)' }} aria-hidden="true" />
-        <strong>Eğilimler Düellosu (Trends)</strong>
-        <small>İyonlaşma enerjisi ve YKS tuzaklarını alt et</small>
-      </button>
-    </div>
+  // Hint (hunt): reveals period + group, but the streak bonus is forfeited
+  const handleHint = () => {
+    if (!isPlaying || showHint) return;
+    setShowHint(true);
+    setStreak(0);
+  };
+
+  // Skip: new clue / question, no points, streak resets
+  const handleSkip = () => {
+    if (!isPlaying) return;
+    setStreak(0);
+    setFeedback(null);
+    if (gameMode === 'hunt') generateHuntClue();
+    else generateBattleQuestion();
+  };
+
+  const clueText = (() => {
+    const el = clue.el;
+    switch (clue.kind) {
+      case 'z':
+        return fmt(g.phClueZ, { z: el.z });
+      case 'pos':
+        return fmt(g.phCluePos, { p: el.period, g: el.group, cat: g[CAT_LABEL[el.category]] });
+      case 'sym':
+        return fmt(g.phClueSym, { s: el.symbol });
+      case 'name':
+        return fmt(g.phClueName, { name: elName(el) });
+      default:
+        return g[SPECIAL_CLUES[el.z]] ?? fmt(g.phClueZ, { z: el.z });
+    }
+  })();
+
+  const best = Math.max(highScore, score);
+  const lowTime = timeLeft <= 10 && isPlaying;
+
+  const hud = (
+    <GameHud title={t.games.periodicTitle} backLabel={t.games.backToHub} onBack={onBack}>
+      <GameStat label={g.score} value={fmt(g.pts, { n: score })} tone="accent" />
+      <GameStat icon={<Timer size={14} aria-hidden="true" />} label={g.timer} value={clock(timeLeft)} tone={lowTime ? 'bad' : 'gold'} />
+    </GameHud>
   );
 
-  return (
-    <div className="gm gm--wide periodic-hunter-container">
-      <GameHud title={t.games.periodicTitle} backLabel={t.games.backToHub} onBack={onBack}>
-        <GameStat icon={<Trophy size={16} aria-hidden="true" />} label={g.best} value={Math.max(highScore, score)} tone="gold" />
-        <GameStat icon={<Sparkles size={16} aria-hidden="true" />} label={g.score} value={score} tone="accent" />
-        <GameStat
-          icon={<Timer size={16} aria-hidden="true" />}
-          label="Timer"
-          value={`${timeLeft}s`}
-          tone={timeLeft <= 10 && isPlaying ? 'bad' : undefined}
-        />
-      </GameHud>
-
-      {!isPlaying && !isOver ? (
-        <div className="ky-stage gm-intro">
-          <div className="ky-floor" aria-hidden="true" />
-          <span className="ky-tile ky-tile--lg" aria-hidden="true">
-            <Crosshair size={30} />
-          </span>
-          <h2>{t.games.periodicTitle}</h2>
-          <p>{t.games.periodicDesc}</p>
-          {modeCards}
-        </div>
-      ) : !isPlaying && isOver ? (
-        <div className="ky-card gm-result">
-          <span className="ky-tile ky-tile--lg ky-tile--gold" aria-hidden="true">
-            <Award size={30} />
-          </span>
-          <h2>{g.finished}</h2>
-          <div className="gm-score ky-pop">{score}</div>
-          <span className="ky-chip ky-chip--gold">
-            <Trophy size={14} aria-hidden="true" />
-            {score > 0 && score > bestAtStart.current ? g.newBest : `${g.best}: ${Math.max(highScore, score)}`}
-          </span>
-          <div className="gm-actions">
-            <button type="button" onClick={() => startGame(gameMode)} className="ky-btn ky-btn--primary" data-sfx="start">
-              <RotateCcw size={18} aria-hidden="true" />
-              <span>{g.replay}</span>
-            </button>
-            <button type="button" onClick={onBack} className="ky-btn ky-btn--quiet">
-              <ArrowLeft size={18} aria-hidden="true" className="gm-flip" />
-              <span>{g.backToGames}</span>
-            </button>
-          </div>
-        </div>
-      ) : (
-        <>
-          <div className="ky-track gm-progress" role="progressbar" aria-valuemin={0} aria-valuemax={60} aria-valuenow={timeLeft}>
-            <div className={`ky-fill ${timeLeft <= 10 ? 'ky-fill--bad' : ''}`} style={{ inlineSize: `${(timeLeft / 60) * 100}%` }} />
-          </div>
-
-          <div className="ky-card gm-clue">
-            <span className={`ky-tile ky-tile--sm ${gameMode === 'hunt' ? '' : 'ky-tile--gold'}`} aria-hidden="true">
-              {gameMode === 'hunt' ? <Crosshair size={20} /> : <Swords size={20} />}
+  if (!isPlaying && !isOver) {
+    return (
+      <div className="gm-play periodic-hunter-container">
+        {hud}
+        <main className="ky-fit gm-main gm-main--center">
+          <section className="ky-stage gm-intro ky-persp">
+            <div className="ky-floor" aria-hidden="true" />
+            <span className="ky-tile ky-tile--lg gm-bob" aria-hidden="true">
+              <Crosshair size={30} />
             </span>
-            <div className="gm-clue-body">
-              <span className="ky-eyebrow">{gameMode === 'hunt' ? 'GÖREV: ELEMENTİ BUL' : 'DÜELLO: DOĞRU TERCİHİ YAP'}</span>
-              <p>{gameMode === 'hunt' ? clueText : battleQuestion?.prompt}</p>
+            <h2 className="ky-disp">{t.games.periodicTitle}</h2>
+            <p>{t.games.periodicDesc}</p>
+            <div className="gm-modes">
+              <button type="button" onClick={() => startGame('hunt')} className="gm-mode" data-sfx="start">
+                <Crosshair size={26} style={{ color: 'var(--accent)' }} aria-hidden="true" />
+                <strong>{g.phHunt}</strong>
+                <small>{g.phHuntDesc}</small>
+              </button>
+              <button type="button" onClick={() => startGame('battle')} className="gm-mode gm-mode--gold" data-sfx="start">
+                <Swords size={26} style={{ color: 'var(--gold)' }} aria-hidden="true" />
+                <strong>{g.phDuel}</strong>
+                <small>{g.phDuelDesc}</small>
+              </button>
             </div>
-            {streak >= 3 && (
-              <span className="gm-streak" key={streak}>
-                <Flame size={14} aria-hidden="true" />
-                <span>{streak}x &middot; {multiplier}x</span>
-              </span>
+          </section>
+        </main>
+      </div>
+    );
+  }
+
+  if (!isPlaying && isOver) {
+    return (
+      <div className="gm-play periodic-hunter-container">
+        {hud}
+        <main className="ky-fit gm-main gm-main--center">
+          <section className="ky-card gm-result">
+            <span className="ky-tile ky-tile--lg ky-tile--gold" aria-hidden="true">
+              <Award size={30} />
+            </span>
+            <h2 className="ky-disp">{g.finished}</h2>
+            <div className="gm-score ky-pop">{score}</div>
+            <span className="ky-chip ky-chip--gold">
+              <Trophy size={14} aria-hidden="true" />
+              {score > 0 && score > bestAtStart.current ? g.newBest : `${g.best}: ${best}`}
+            </span>
+            <p className="gm-result-meta">{g.solved}: {hits}</p>
+          </section>
+        </main>
+        <footer className="ky-screen-foot gm-foot">
+          <button type="button" onClick={onBack} className="ky-btn ky-btn--quiet">
+            <ArrowLeft size={18} aria-hidden="true" className="gm-flip" />
+            <span className="gm-narrow-sr">{g.backToGames}</span>
+          </button>
+          <button type="button" onClick={() => startGame(gameMode)} className="ky-btn ky-btn--primary ky-grow" data-sfx="start">
+            <RotateCcw size={18} aria-hidden="true" />
+            <span>{g.replay}</span>
+          </button>
+        </footer>
+      </div>
+    );
+  }
+
+  const streakPct = streak >= 9 ? 100 : ((streak % 3) / 3) * 100;
+
+  return (
+    <div className="gm-play periodic-hunter-container">
+      {hud}
+
+      <main className="ky-fit ky-pane gm-main">
+        {/* Target */}
+        <section className="ky-stage gm-target" aria-live="polite">
+          <span
+            className="ky-atom ky-float gm-target-orb"
+            aria-hidden="true"
+            style={
+              gameMode === 'hunt'
+                ? { ['--c' as string]: '#FFD873', ['--cd' as string]: '#A86A08' }
+                : { ['--c' as string]: '#C9A2FF', ['--cd' as string]: '#5B32C9' }
+            }
+          />
+          <div className="gm-target-text">
+            <p className="ky-eyebrow">
+              {gameMode === 'hunt' ? g.phHunt : g.phDuel} · {fmt(g.phTargetN, { n: hits + 1 })}
+            </p>
+            <h2 className="ky-disp ky-fs-20">{gameMode === 'hunt' ? clueText : battleQuestion ? g[DUEL_PROMPT[battleQuestion.kind]] : ''}</h2>
+            <p className="ky-fs-13 gm-target-sub">
+              {gameMode === 'hunt'
+                ? showHint
+                  ? fmt(g.phHintText, { p: clue.el.period, g: clue.el.group })
+                  : g.phTapCell
+                : g.phPickOne}
+            </p>
+            {feedback && (
+              <p
+                key={feedbackN + (feedback.isCorrect ? 'ok' : 'bad')}
+                className={`gm-flash ky-fs-13 ${feedback.isCorrect ? 'ok ky-pop' : 'bad ky-shake'}`}
+                role="status"
+              >
+                {feedback.message}
+              </p>
             )}
           </div>
+        </section>
 
-          {feedback && (
-            <div
-              key={feedbackN + (feedback.isCorrect ? 'ok' : 'bad')}
-              className={`gm-feedback ${feedback.isCorrect ? 'ok' : 'bad ky-shake'}`}
-              role="status"
-            >
-              {feedback.message}
-            </div>
-          )}
-
-          {gameMode === 'hunt' ? (
-            <>
-              <div className="gm-pt-wrap ky-lead" tabIndex={0} role="group" aria-label={t.games.periodicTitle}>
-                <div className="gm-pt-grid">
-                  {ELEMENTS_DB.map((el) => (
+        {gameMode === 'hunt' ? (
+          <section className="ky-card ky-lead gm-table-card" aria-label={g.phTable}>
+            <div className="gm-pt-scroll" tabIndex={0} role="group" aria-label={g.phTable}>
+              <div className="gm-pt-grid">
+                {ELEMENTS_DB.map((el) => {
+                  const pick = lastPick && lastPick.z === el.z ? lastPick : null;
+                  return (
                     <button
-                      key={el.z}
+                      key={pick ? `${el.z}-${pick.n}` : el.z}
                       type="button"
                       onClick={() => handleElementClick(el)}
-                      className="gm-el"
+                      className={`gm-el${pick ? (pick.ok ? ' is-hit' : ' is-miss') : ''}`}
                       data-cat={el.category}
                       style={{ gridColumn: el.groupNum, gridRow: el.period }}
-                      title={`${el.z}. ${el.nameTr} (${el.symbol})\nPeriyot ${el.period}, Grup ${el.group}`}
-                      aria-label={`${el.symbol} ${lang === 'en' ? el.nameEn : el.nameTr}`}
+                      aria-label={`${el.symbol} ${elName(el)}`}
                     >
                       <small>{el.z}</small>
                       <b>{el.symbol}</b>
                     </button>
-                  ))}
-                </div>
+                  );
+                })}
               </div>
-              <p className="gm-pt-hint">{g.scrollHint}</p>
-            </>
-          ) : battleQuestion ? (
-            <div className="gm-duel ky-lead">
-              {[battleQuestion.elemA, battleQuestion.elemB].map((elem) => (
-                <button key={elem.z} type="button" onClick={() => handleBattleAnswer(elem.symbol)} className="gm-duel-card">
-                  <span className="ky-tile ky-tile--lg ky-tile--blue" aria-hidden="true">
-                    {elem.symbol}
-                  </span>
-                  <strong>{lang === 'en' ? elem.nameEn : elem.nameTr}</strong>
-                  <span className="gm-chiprow">
-                    <span className="ky-chip">Z = {elem.z}</span>
-                    <span className="ky-chip">
-                      {elem.period}. P, {elem.group}
-                    </span>
-                  </span>
-                </button>
-              ))}
             </div>
-          ) : null}
-        </>
-      )}
+            <p className="gm-pt-hint ky-fs-12">{g.phScroll}</p>
+          </section>
+        ) : battleQuestion ? (
+          <section className="gm-duel ky-lead" aria-label={g.phDuel}>
+            {[battleQuestion.elemA, battleQuestion.elemB].map((elem) => (
+              <button key={elem.z} type="button" onClick={() => handleBattleAnswer(elem.symbol)} className="ky-card gm-duel-card">
+                <span className="gm-el gm-el--big" data-cat={elem.category} aria-hidden="true">
+                  <small>{elem.z}</small>
+                  <b>{elem.symbol}</b>
+                </span>
+                <strong className="ky-fs-16">{elName(elem)}</strong>
+                <span className="gm-chiprow">
+                  <span className="ky-chip ky-mono">Z = {elem.z}</span>
+                  <span className="ky-chip">{fmt(g.periodShort, { p: elem.period })} · {elem.group}</span>
+                </span>
+              </button>
+            ))}
+          </section>
+        ) : null}
+
+        {gameMode === 'hunt' && (
+          <div className="gm-legend">
+            {LEGEND.map((cat) => (
+              <span key={cat} className="ky-chip">
+                <span className="gm-swatch" data-cat={cat} aria-hidden="true" />
+                {g[CAT_LABEL[cat]]}
+              </span>
+            ))}
+          </div>
+        )}
+
+        <div className="ky-well gm-streak-well">
+          <span className="ky-chip ky-chip--gold" key={streak}>
+            <Flame size={13} aria-hidden="true" />
+            {fmt(g.streakN, { n: multiplier })}
+          </span>
+          <div className="ky-track" aria-hidden="true">
+            <div className="ky-fill ky-fill--gold" style={{ inlineSize: `${streakPct}%` }} />
+          </div>
+          <span className="ky-mono ky-fs-12 gm-streak-best">{fmt(g.recordN, { n: best > 0 ? best : '—' })}</span>
+        </div>
+      </main>
+
+      <footer className="ky-screen-foot gm-foot">
+        {gameMode === 'hunt' && (
+          <button type="button" className="ky-btn ky-btn--quiet ky-grow" onClick={handleHint} disabled={showHint} aria-pressed={showHint}>
+            <Lightbulb size={18} aria-hidden="true" />
+            <span>{g.hint}</span>
+          </button>
+        )}
+        <button type="button" className="ky-btn ky-btn--quiet ky-grow" onClick={handleSkip}>
+          <SkipForward size={18} aria-hidden="true" className="gm-flip" />
+          <span>{g.skip}</span>
+        </button>
+      </footer>
     </div>
   );
 };

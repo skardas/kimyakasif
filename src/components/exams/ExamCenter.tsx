@@ -12,8 +12,10 @@ import {
 } from '../../engine/mockExamCatalog';
 import { compileUnitQuestions } from '../../engine/questionGenerator';
 import { QuizSessionModal } from './QuizSessionModal';
+import { formatChemText } from '../common/ChemFormula';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { EXAM_STRINGS } from '../../i18n/examStrings';
+import { redesignExtra } from '../../i18n/redesignStrings';
 
 export type ExamCenterCategory =
   | 'tyt'
@@ -48,9 +50,10 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
 }) => {
   const t = UI_TRANSLATIONS[lang];
   const x = EXAM_STRINGS[lang] ?? EXAM_STRINGS.tr;
+  const rx = redesignExtra(lang);
 
   // Active Category Tab
-  const [activeTab, setActiveTab] = useState<ExamCenterCategory>('tyt');
+  const [activeTab, setActiveTab] = useState<ExamCenterCategory>(preselectedUnitId ? 'sets' : 'tyt');
 
   // Filter for %100 Şekilli Denemeler (Trials 26–35)
   const [visualOnlyFilter, setVisualOnlyFilter] = useState(false);
@@ -126,7 +129,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
     const qs = buildMockExamQuestions(mock.id, ALL_CHEMISTRY_UNITS, lang);
     setActiveSession({
       title: mock.title,
-      subtitle: `${mock.badgeText} • ${mock.questionCount} Soru • ${mock.durationMinutes} Dakika`,
+      subtitle: rx.trialSub(mock.badgeText, mock.questionCount, mock.durationMinutes),
       examType: mock.category === 'TYT_BRANCH' ? 'TYT' : 'AYT',
       mockId: mock.id,
       questions: qs,
@@ -156,7 +159,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
     const unitTitle = currentUnit.title[lang] || currentUnit.title.tr;
     setActiveSession({
       title: `${currentUnit.id.toUpperCase()} • ${unitTitle}`,
-      subtitle: `Test Seti #${setNumber} • 16 Soru • Pratik Modu (Anında Çözüm & İpucu)`,
+      subtitle: rx.unitSetSub(setNumber),
       examType: 'UNIT',
       unitId: currentUnit.id,
       questions: qs,
@@ -170,8 +173,8 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
     const qs = resolveQuestionsByIds(wrongQuestionIds);
     if (qs.length === 0) return;
     setActiveSession({
-      title: 'Hata Defteri • Pekiştirme Oturumu',
-      subtitle: `${qs.length} Yanlış Soru • Doğru Yanıtladığında Hata Defterinden Otomatik Çıkarılır`,
+      title: t.exams.modeMistakes,
+      subtitle: rx.mistakeSessionSub(qs.length),
       examType: 'MISTAKE',
       questions: qs,
       isExamMode: false,
@@ -184,8 +187,8 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
     const qs = resolveQuestionsByIds(bookmarkedQuestionIds);
     if (qs.length === 0) return;
     setActiveSession({
-      title: 'Yıldızlı Sorular • Özel Pratik',
-      subtitle: `${qs.length} Yıldızlı Soru • Favori Soru Koleksiyonun`,
+      title: t.exams.modeBookmarks,
+      subtitle: rx.starredSessionSub(qs.length),
       examType: 'BOOKMARK',
       questions: qs,
       isExamMode: false,
@@ -210,7 +213,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
         </div>
         <div className="ex-meta">
           <span className="ky-chip ky-chip--accent">{mock.badgeText}</span>
-          {mock.visualFocus && <span className="ky-chip ky-chip--violet">Şekilli</span>}
+          {mock.visualFocus && <span className="ky-chip ky-chip--violet">{rx.visualChip}</span>}
           <span className="ky-chip ky-mono">
             <Clock size={12} aria-hidden="true" />
             {mock.durationMinutes} {x.minShort}
@@ -249,7 +252,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
             onClick={() => setVisualOnlyFilter((prev) => !prev)}
           >
             <Sparkles size={14} aria-hidden="true" />
-            <span>%100 Şekilli (26–35)</span>
+            <span>{rx.visualFilter}</span>
           </button>
         </div>
 
@@ -307,9 +310,9 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
           <div className="ex-row__meta">
             <span className={`ky-chip ky-mono ${kind === 'mistake' ? 'ky-chip--bad' : 'ky-chip--gold'}`}>{q.unitId.toUpperCase()}</span>
             <span className="ky-chip ky-mono">{q.id}</span>
-            {kind === 'mistake' && q.diagram && <span className="ky-chip ky-chip--violet">Şekilli</span>}
+            {kind === 'mistake' && q.diagram && <span className="ky-chip ky-chip--violet">{rx.visualChip}</span>}
           </div>
-          <p className="ex-row__stem">{q.stem}</p>
+          <p className="ex-row__stem">{formatChemText(q.stem)}</p>
         </div>
         <div className="ex-row__actions">
           {kind === 'bookmark' && (
@@ -331,16 +334,16 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
               setActiveSession(
                 kind === 'mistake'
                   ? {
-                      title: `${q.unitId.toUpperCase()} • Tekrar Çöz`,
-                      subtitle: 'Hata Defteri Mastery',
+                      title: t.exams.modeMistakes,
+                      subtitle: q.unitId.toUpperCase(),
                       examType: 'MISTAKE',
                       questions: [q],
                       isExamMode: false,
                       durationMinutes: 5,
                     }
                   : {
-                      title: `${q.unitId.toUpperCase()} • Yıldızlı Soru`,
-                      subtitle: 'Özel Pratik',
+                      title: t.exams.modeBookmarks,
+                      subtitle: q.unitId.toUpperCase(),
                       examType: 'BOOKMARK',
                       questions: [q],
                       isExamMode: false,
@@ -349,15 +352,15 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
               )
             }
           >
-            {kind === 'mistake' ? 'Tekrar Çöz' : 'Çöz'}
+            {kind === 'mistake' ? rx.retryOne : rx.solveOne}
           </button>
         </div>
       </div>
     ));
 
   const tabs: { id: ExamCenterCategory; label: string }[] = [
-    { id: 'tyt', label: 'TYT' },
-    { id: 'ayt', label: 'AYT' },
+    { id: 'tyt', label: rx.tabTyt },
+    { id: 'ayt', label: rx.tabAyt },
     { id: 'sets', label: x.tabUnits },
     { id: 'tg', label: x.tabTg },
   ];
@@ -367,8 +370,8 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
       <div className="ky-fit">
       <div className="ex-center">
       <header className="ex-head">
-        <p className="ky-eyebrow">40 TYT · 40 AYT · 192</p>
-        <h1 className="ky-disp ky-fs-28">{t.exams.title}</h1>
+        <p className="ky-eyebrow">{rx.examsEyebrow}</p>
+        <h1 className="ky-disp ky-fs-28">{rx.examsTitle}</h1>
       </header>
 
       <div className="ky-segmented ex-tabs" role="tablist" aria-label={t.exams.title}>
@@ -416,31 +419,31 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
         </button>
       </div>
 
-      {activeTab === 'tyt' && renderTrialList(tytMocks, '1. Aşama TYT Kimya (40 Deneme • 7 Soru • 10 Dakika)')}
-      {activeTab === 'ayt' && renderTrialList(aytMocks, '2. Aşama AYT Kimya (40 Deneme • 13 Soru • 20 Dakika)')}
+      {activeTab === 'tyt' && renderTrialList(tytMocks, rx.tytListLabel)}
+      {activeTab === 'ayt' && renderTrialList(aytMocks, rx.aytListLabel)}
 
       {/* Unit practice sets */}
       {activeTab === 'sets' && (
         <>
           <div className="ky-card ex-picker">
-            <label htmlFor="unit-picker-select">Çalışmak İstediğin Üniteyi Seç (24 Ünite):</label>
+            <label htmlFor="unit-picker-select">{rx.pickUnit}</label>
             <select
               id="unit-picker-select"
               className="ky-select"
               value={selectedUnitId}
               onChange={(e) => setSelectedUnitId(e.target.value)}
             >
-              <optgroup label="TYT Kimya Üniteleri (u01 - u10)">
+              <optgroup label={rx.tytUnitsGroup}>
                 {ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'TYT').map((u) => (
                   <option key={u.id} value={u.id}>
-                    {u.id.toUpperCase()} • {u.title[lang] || u.title.tr} ({u.grade}. Sınıf)
+                    {u.id.toUpperCase()} · {u.title[lang] || u.title.tr} ({rx.gradeN(u.grade)})
                   </option>
                 ))}
               </optgroup>
-              <optgroup label="AYT Kimya Üniteleri (u11 - u24)">
+              <optgroup label={rx.aytUnitsGroup}>
                 {ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'AYT').map((u) => (
                   <option key={u.id} value={u.id}>
-                    {u.id.toUpperCase()} • {u.title[lang] || u.title.tr} ({u.grade}. Sınıf)
+                    {u.id.toUpperCase()} · {u.title[lang] || u.title.tr} ({rx.gradeN(u.grade)})
                   </option>
                 ))}
               </optgroup>
@@ -451,7 +454,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
             <h2 className="ky-disp" style={{ fontSize: '1.15rem' }}>
               {currentUnit.id.toUpperCase()}: {currentUnit.title[lang] || currentUnit.title.tr}
             </h2>
-            <span className="ky-chip ky-mono">8 Test Seti • 128 Soru</span>
+            <span className="ky-chip">{rx.setsMeta}</span>
           </div>
 
           <div className="ky-grid" style={{ ['--ky-grid-min' as string]: '260px' }}>
@@ -460,7 +463,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
               const solvedCount = setQuestions.filter((q) => solvedQuestions[q.id] !== undefined).length;
               const isCompleted = solvedCount === setQuestions.length;
 
-              const tierName = setNum <= 2 ? 'Kolay' : setNum <= 4 ? 'Orta' : setNum <= 6 ? 'Zor' : 'ÖSYM Düzeyi';
+              const tierName = rx.tiers[setNum <= 2 ? 0 : setNum <= 4 ? 1 : setNum <= 6 ? 2 : 3];
               const tierChip =
                 setNum <= 2 ? 'ky-chip--ok' : setNum <= 4 ? 'ky-chip--accent' : setNum <= 6 ? 'ky-chip--gold' : 'ky-chip--bad';
               const tileVariant = setNum <= 2 ? 'ky-tile--ok' : setNum <= 4 ? '' : setNum <= 6 ? 'ky-tile--gold' : 'ky-tile--rose';
@@ -472,8 +475,8 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
                       #{setNum}
                     </div>
                     <div className="ex-card__body">
-                      <h3 className="ex-card__title">Test Seti {setNum}</h3>
-                      <p className="ex-card__sub">16 Soru • 4 Şekilli Soru • Pratik Modu</p>
+                      <h3 className="ex-card__title">{rx.setTitle(setNum)}</h3>
+                      <p className="ex-card__sub">{rx.setSub}</p>
                     </div>
                   </div>
                   <div className="ex-meta">
@@ -495,7 +498,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
                     onClick={() => handleLaunchUnitSet(setNum)}
                   >
                     <Play size={16} fill="currentColor" aria-hidden="true" />
-                    <span>{isCompleted ? 'Tekrar Et' : 'Sete Başla'}</span>
+                    <span>{isCompleted ? rx.repeatSet : rx.startSet}</span>
                   </button>
                 </article>
               );
@@ -509,31 +512,27 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
         <section className="ky-stage ex-tg">
           <div className="ky-floor" />
           <div>
-            <span className="ky-chip ky-chip--gold">YKS Şampiyonluk Simülasyonu</span>
+            <span className="ky-chip ky-chip--gold">{rx.tgBadge}</span>
             <h2 className="ky-disp">{TG_PROVA_SPEC.title[lang] || TG_PROVA_SPEC.title.tr}</h2>
           </div>
-          <p>
-            Gerçek sınav formatında <strong>20 Soru</strong> (7 TYT + 13 AYT). 30 dakika katı süre sınırlaması, ÖSYM 4
-            yanlış 1 doğruyu götürür Net hesaplaması ve Türkiye Geneli YKS Sayısal Kimya tahmini yüzdelik dilim
-            hesaplaması içerir.
-          </p>
+          <p>{rx.tgDesc}</p>
           <div className="ex-tg__specs">
             <div className="ky-well ex-tg__spec">
-              <small>SORU DAĞILIMI</small>
-              <strong style={{ color: 'var(--accent)' }}>7 TYT + 13 AYT (20 Q)</strong>
+              <small>{rx.tgSpecQ}</small>
+              <strong style={{ color: 'var(--accent)' }}>{rx.tgSpecQVal}</strong>
             </div>
             <div className="ky-well ex-tg__spec">
-              <small>SINAV SÜRESİ</small>
-              <strong style={{ color: 'var(--bad)' }}>30 Dakika (Katı Sayaç)</strong>
+              <small>{rx.tgSpecTime}</small>
+              <strong style={{ color: 'var(--bad)' }}>{rx.tgSpecTimeVal}</strong>
             </div>
             <div className="ky-well ex-tg__spec">
-              <small>ANALİZ RAPORU</small>
-              <strong style={{ color: 'var(--ok)' }}>ÖSYM Yüzdelik Dilim</strong>
+              <small>{rx.tgSpecReport}</small>
+              <strong style={{ color: 'var(--ok)' }}>{rx.tgSpecReportVal}</strong>
             </div>
           </div>
           <button type="button" className="ky-btn ky-btn--gold ky-btn--lg ky-btn--block" data-sfx="start" onClick={handleLaunchTgProva}>
             <Trophy size={20} aria-hidden="true" />
-            <span>Derece Provasını Başlat (30 Dk)</span>
+            <span>{rx.tgStart}</span>
           </button>
         </section>
       )}
@@ -544,12 +543,12 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
           <div className="ky-card ex-listhead">
             <div className="ex-listhead__text">
               <h2 className="ky-disp">{t.exams.modeMistakes}</h2>
-              <p>Yanlış yaptığın sorular burada birikir. Tekrar çözüp doğru yanıtladığında otomatik olarak temizlenir.</p>
+              <p>{rx.mistakesDesc}</p>
             </div>
             {wrongQuestionIds.length > 0 && (
               <button type="button" className="ky-btn ky-btn--danger ky-btn--sm" data-sfx="start" onClick={handleLaunchMistakes}>
                 <RotateCcw size={16} aria-hidden="true" />
-                <span>Tüm Hataları Tekrar Çöz ({wrongQuestionIds.length})</span>
+                <span>{rx.retryAll(wrongQuestionIds.length)}</span>
               </button>
             )}
           </div>
@@ -557,8 +556,8 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
           {wrongQuestionIds.length === 0 ? (
             <div className="ky-card ky-empty">
               <CheckCircle2 size={44} color="var(--ok)" aria-hidden="true" />
-              <h3 className="ky-disp">Hata Defterin Tamamen Boş!</h3>
-              <p>Harika gidiyorsun! Yanlış yaptığın hiçbir soru kalmadı. Yeni deneme sınavları çözerek kendini test edebilirsin.</p>
+              <h3 className="ky-disp">{rx.emptyMistakesTitle}</h3>
+              <p>{rx.emptyMistakesBody}</p>
             </div>
           ) : (
             renderQuestionRows(wrongQuestionIds, 'mistake')
@@ -572,12 +571,12 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
           <div className="ky-card ex-listhead">
             <div className="ex-listhead__text">
               <h2 className="ky-disp">{t.exams.modeBookmarks}</h2>
-              <p>Önemli gördüğün veya beğendiğin yıldızlı soruların kişisel koleksiyonu.</p>
+              <p>{rx.starredDesc}</p>
             </div>
             {bookmarkedQuestionIds.length > 0 && (
               <button type="button" className="ky-btn ky-btn--gold ky-btn--sm" data-sfx="start" onClick={handleLaunchStarred}>
                 <Play size={16} fill="currentColor" aria-hidden="true" />
-                <span>Yıldızlı Soruları Çöz ({bookmarkedQuestionIds.length})</span>
+                <span>{rx.solveAllStarred(bookmarkedQuestionIds.length)}</span>
               </button>
             )}
           </div>
@@ -585,8 +584,8 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
           {bookmarkedQuestionIds.length === 0 ? (
             <div className="ky-card ky-empty">
               <Bookmark size={44} color="var(--gold)" aria-hidden="true" />
-              <h3 className="ky-disp">Henüz Yıldızlı Soru Yok</h3>
-              <p>Test çözerken beğendiğin veya tekrar göz atmak istediğin soruları kaydet butonuna basarak buraya ekleyebilirsin.</p>
+              <h3 className="ky-disp">{rx.emptyStarredTitle}</h3>
+              <p>{rx.emptyStarredBody}</p>
             </div>
           ) : (
             renderQuestionRows(bookmarkedQuestionIds, 'bookmark')

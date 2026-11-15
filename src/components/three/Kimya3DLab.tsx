@@ -30,7 +30,7 @@ import {
 
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
-import { redesignStrings, type LabCategoryId } from '../../i18n/redesignStrings';
+import { redesignStrings, redesignExtra, type LabCategoryId } from '../../i18n/redesignStrings';
 import {
   PRIMARY_32_SCENES,
   getSceneById,
@@ -155,16 +155,18 @@ const SCENE_THUMB_COLORS: Record<string, [RGB2, RGB2, RGB2]> = {
   general: [['#5FF2DF', '#0C8073'], ['#6FA8FF', '#1B3FA8'], ['#E9EEF5', '#7C8798']],
 };
 
-const LAB_CATEGORIES: { id: string; label: string }[] = [
-  { id: 'all', label: 'Tümü (32)' },
-  { id: 'vsepr', label: 'VSEPR (7)' },
-  { id: 'crystal', label: 'Kristal (2)' },
-  { id: 'electrochem', label: 'Elektrokimya (3)' },
-  { id: 'organic', label: 'Organik (2)' },
-  { id: 'atomic', label: 'Atom & Kuantum (3)' },
-  { id: 'gas_solution', label: 'Gaz & Çözelti (7)' },
-  { id: 'general', label: 'Laboratuvar & Denge (8)' },
+/** Gallery filter chips: "all" plus every category present in the scene data, in a fixed display order. */
+const LAB_CATEGORY_ORDER: LabCategoryId[] = ['vsepr', 'crystal', 'electrochem', 'organic', 'atomic', 'gas_solution', 'general'];
+const LAB_CATEGORY_IDS: string[] = [
+  'all',
+  ...LAB_CATEGORY_ORDER.filter((id) => PRIMARY_32_SCENES.some((s) => s.category === id)),
 ];
+
+/** True when the OS or the in-app "reduce motion" setting asks for less animation. */
+const prefersReducedMotion = (): boolean =>
+  typeof document !== 'undefined' &&
+  (document.documentElement.hasAttribute('data-reduce-motion') ||
+    (typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches));
 
 export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
   lang,
@@ -183,7 +185,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
   const [currentScene, setCurrentScene] = useState<ChemicalSceneSpec>(initialScene);
   const [selectedHotspot, setSelectedHotspot] = useState<Hotspot3D | null>(null);
   const [mode, setMode] = useState<LabMode>('explore');
-  const [isLiveSim, setIsLiveSim] = useState<boolean>(true);
+  const [isLiveSim, setIsLiveSim] = useState<boolean>(() => !prefersReducedMotion());
   const [isAutoRotate, setIsAutoRotate] = useState<boolean>(false);
   const [explodeFactor, setExplodeFactor] = useState<number>(0);
   const [isSceneModalOpen, setIsSceneModalOpen] = useState<boolean>(false);
@@ -745,6 +747,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
   };
 
   const r = redesignStrings(lang);
+  const rx = redesignExtra(lang);
   const sceneTitle = currentScene.title[lang] || currentScene.title.tr;
   const sceneSub = currentScene.subtitle[lang] || currentScene.subtitle.tr;
   const fitLabel = ZOOM_FIT_I18N[lang]?.fitScreen || ZOOM_FIT_I18N.tr.fitScreen;
@@ -780,15 +783,15 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
             />
           </label>
           <div className="lab-cats" role="group" aria-label={r.scenesTitle}>
-            {LAB_CATEGORIES.map((cat) => (
+            {LAB_CATEGORY_IDS.map((id) => (
               <button
-                key={cat.id}
+                key={id}
                 type="button"
-                className={`ky-chip lab-cat${categoryFilter === cat.id ? ' on' : ''}`}
-                aria-pressed={categoryFilter === cat.id}
-                onClick={() => setCategoryFilter(cat.id)}
+                className={`ky-chip lab-cat${categoryFilter === id ? ' on' : ''}`}
+                aria-pressed={categoryFilter === id}
+                onClick={() => setCategoryFilter(id)}
               >
-                {catLabel(cat.id)} {catCount(cat.id)}
+                {catLabel(id)} <span className="ky-mono">{catCount(id)}</span>
               </button>
             ))}
           </div>
@@ -817,7 +820,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                   </span>
                   <span className="lab-tile__body">
                     <span className="ky-fs-16 lab-tile__title">
-                      <bdi dir="ltr">{sc.title[lang] || sc.title.tr}</bdi>
+                      <bdi>{sc.title[lang] || sc.title.tr}</bdi>
                     </span>
                     <span className="lab-tile__meta">
                       <span className={`ky-chip ${sc.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'}`}>{sc.badge}</span>
@@ -916,13 +919,13 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
               {catLabel(currentScene.category)} · {currentScene.unitId.toUpperCase()}
             </span>
             <h2 className="ky-fs-24 lab-info__title">
-              <bdi dir="ltr">{sceneTitle}</bdi>{' '}
+              <bdi>{sceneTitle}</bdi>{' '}
               <span className={`ky-chip ${currentScene.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'} lab-info__badge`}>
                 {currentScene.badge}
               </span>
             </h2>
             <p className="ky-fs-14 lab-info__sub">
-              <bdi dir="ltr">{sceneSub}</bdi>
+              <bdi>{sceneSub}</bdi>
             </p>
           </div>
 
@@ -940,7 +943,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
               </span>
               <p className="ky-fs-16 lab-quiz__prompt">
                 <strong className="lab-quiz__target">
-                  <bdi dir="ltr">{targetHotspot?.title[lang] || targetHotspot?.title.tr}</bdi>
+                  <bdi>{targetHotspot?.title[lang] || targetHotspot?.title.tr}</bdi>
                 </strong>
               </p>
               {quizState.feedback === 'correct' && (
@@ -965,13 +968,13 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                 </span>
                 <div className="lab-spot__body">
                   <p className="ky-fs-16 lab-spot__title">
-                    <bdi dir="ltr">{selectedHotspot.title[lang] || selectedHotspot.title.tr}</bdi>
+                    <bdi>{selectedHotspot.title[lang] || selectedHotspot.title.tr}</bdi>
                   </p>
                   <p className="ky-fs-14 lab-spot__desc">
-                    <bdi dir="ltr">{selectedHotspot.description[lang] || selectedHotspot.description.tr}</bdi>
+                    <bdi>{selectedHotspot.description[lang] || selectedHotspot.description.tr}</bdi>
                   </p>
                   <p className="ky-fs-14 lab-spot__fact">
-                    <strong>{r.inExam}</strong> <bdi dir="ltr">{selectedHotspot.examFact[lang] || selectedHotspot.examFact.tr}</bdi>
+                    <strong>{r.inExam}</strong> <bdi>{selectedHotspot.examFact[lang] || selectedHotspot.examFact.tr}</bdi>
                   </p>
                   <button type="button" className="ky-btn-text lab-spot__focus" onClick={() => handleFocusHotspot(selectedHotspot)}>
                     <Focus size={16} aria-hidden="true" />
@@ -1081,25 +1084,23 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
       {/* Quiz completion summary */}
       {quizState.isComplete && (
         <div className="ky-modal-backdrop" role="presentation">
-          <div className="ky-sheet lab-sheet lab-done ky-pop" role="dialog" aria-modal="true" aria-label="Kör İğne Sınavı Tamamlandı!">
+          <div className="ky-sheet lab-sheet lab-done ky-pop" role="dialog" aria-modal="true" aria-labelledby="lab-done-title">
             <div className="ky-tile ky-tile--ok ky-tile--lg lab-done__tile" aria-hidden="true">
               <Award size={32} />
             </div>
-            <h2 className="lab-done__title">Kör İğne Sınavı Tamamlandı!</h2>
-            <p className="lab-done__txt">
-              <bdi dir="ltr">{sceneTitle}</bdi> modelindeki tüm kritik uzamsal noktaları başarıyla incelediniz.
-            </p>
+            <h2 id="lab-done-title" className="ky-disp lab-done__title">{rx.labDoneTitle}</h2>
+            <p className="lab-done__txt">{rx.labDoneText(sceneTitle)}</p>
 
             <div className="ky-well lab-done__stats">
               <div>
                 <div className="ky-mono lab-done__num lab-done__num--ok">
                   {quizState.correctCount} / {quizState.totalQuestions}
                 </div>
-                <div className="lab-done__lbl">Doğru İğne</div>
+                <div className="lab-done__lbl">{rx.labDoneCorrect}</div>
               </div>
               <div>
                 <div className="ky-mono lab-done__num lab-done__num--gold">+{quizState.earnedXp} XP</div>
-                <div className="lab-done__lbl">Kazanılan Deneyim</div>
+                <div className="lab-done__lbl">{rx.labDoneXp}</div>
               </div>
             </div>
 
@@ -1110,10 +1111,10 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                 data-sfx="start"
                 onClick={() => initQuizForScene(currentScene)}
               >
-                Tekrar Çöz
+                {rx.labRetry}
               </button>
               <button type="button" className="ky-btn ky-btn--quiet ky-btn--block" onClick={() => handleToggleMode('explore')}>
-                Modeli Keşfetmeye Dön
+                {rx.labBackExplore}
               </button>
               {onOpenUnitExam && (
                 <button
@@ -1122,7 +1123,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                   onClick={() => onOpenUnitExam(currentScene.unitId)}
                 >
                   <FileCheck2 size={16} aria-hidden="true" />
-                  <span>Bu Ünitenin Deneme Sınavına Git</span>
+                  <span>{rx.labGoUnitTest}</span>
                 </button>
               )}
             </div>

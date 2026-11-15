@@ -363,6 +363,9 @@ button:disabled,
   font-variant-numeric: tabular-nums;
 }
 
+/* Monospace faces break Arabic letter joining; keep tabular digits only. */
+[dir="rtl"] .ky-mono { font-family: inherit; }
+
 .ky-muted { color: var(--muted); }
 .ky-text2 { color: var(--text2); }
 
@@ -2287,3 +2290,8 @@ button.ky-chip.on, button.ky-chip[aria-pressed="true"] {
     scroll-behavior: auto !important;
   }
 }
+
+/* Text-size setting on every screen: the rem base follows --fs (set on <html> by
+   usePreferences), so rem-sized text in all screen stylesheets scales with the
+   ky-fs-NN reading sizes. */
+html { font-size: calc(100% * var(--fs, 1)); }
