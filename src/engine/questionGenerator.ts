@@ -5,6 +5,7 @@ import type {
   ChemistryArchetype,
 } from '../types/chemistry';
 import type { ChemistryUnitSeedData } from '../data/units/types';
+import { polishQuestion } from './langPolish';
 import { enrichQuestionsWithDiagrams, planDiagramPlacement, type DiagramPlacement } from './diagramQuestionEnricher';
 
 // Diagram placement is decided once on the Turkish bank so every language shows the figure on the same question ids.
@@ -1841,7 +1842,7 @@ export function compileUnitQuestions(
     if (!TR_DIAGRAM_PLACEMENT.has(unit)) compileUnitQuestions(unit, 'tr');
     placement = TR_DIAGRAM_PLACEMENT.get(unit);
   }
-  return enrichQuestionsWithDiagrams(unit, questions, lang, placement);
+  return enrichQuestionsWithDiagrams(unit, questions.map((q) => polishQuestion(q, lang)), lang, placement);
 }
 
 /**

@@ -1,4 +1,5 @@
 import type { LanguageCode } from '../types/chemistry';
+import { polishText } from './langPolish';
 import type { ChemistryUnitSeedData } from '../data/units/types';
 import { ALL_CHEMISTRY_UNITS } from '../data/units';
 import { LeitnerBoxEngine } from './leitnerEngine';
@@ -295,5 +296,12 @@ export function compileAllFlashcards(
     }
   });
 
-  return cards;
+  return cards.map((c) => ({
+    ...c,
+    front: polishText(c.front, lang, 'flashcard'),
+    frontPrompt: polishText(c.frontPrompt, lang, 'flashcard'),
+    back: polishText(c.back, lang, 'flashcard'),
+    backAnswer: polishText(c.backAnswer, lang, 'flashcard'),
+    osymTip: polishText(c.osymTip, lang, 'flashcard'),
+  }));
 }
