@@ -483,3 +483,38 @@
 .qz-confirm__icon--bad { color: var(--bad); }
 .qz-confirm__actions { display: flex; flex-wrap: wrap; gap: 12px; inline-size: 100%; margin-block-start: 8px; }
 .qz-confirm__actions .ky-btn { flex: 1 1 130px; }
+
+/* ---- Question-specific figures (şekilli soru) ---- */
+.qf { margin: 0 0 12px; padding: 12px; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--raised); color: var(--text); }
+.qf-svg { display: block; inline-size: 100%; max-inline-size: 480px; max-block-size: 300px; margin-inline: auto; block-size: auto; overflow: visible; font-family: var(--font-sans); }
+.qf-svg text, .qf-t { fill: var(--text); font-size: 12px; font-family: var(--font-sans); }
+.qf-svg .qf-t-strong, .qf-svg text.qf-strong { font-weight: 700; }
+.qf-svg .qf-t-axis { fill: var(--text2); font-size: 11.5px; font-weight: 600; }
+.qf-svg .qf-small { font-size: 10.5px; }
+.qf-svg .qf-big { font-size: 15px; font-weight: 700; }
+.qf-axis, .qf-svg .qf-line { stroke: var(--text); stroke-width: 1.6; fill: none; }
+.qf-axis-head { fill: var(--text); }
+.qf-grid { stroke: var(--line); stroke-width: 1; }
+.qf-guide { stroke: var(--muted); stroke-width: 1.1; stroke-dasharray: 3 4; }
+.qf-dot { fill: var(--text); }
+.qf-band { fill: var(--accent-soft); }
+.qf-band2 { fill: var(--gold-soft); }
+.qf-svg .qf-fill { fill: var(--surface); stroke: var(--text); stroke-width: 1.6; }
+.qf-svg .qf-muted { fill: var(--muted); stroke: none; }
+.qf-svg .qf-accent { fill: var(--accent); stroke: none; }
+.qf-svg .qf-accent2 { fill: var(--gold); stroke: none; }
+.qf-svg .qf-accent3 { fill: var(--violet); stroke: none; }
+.qf-svg .qf-stroke-accent { stroke: var(--accent); fill: none; stroke-width: 2.2; }
+.qf-svg .qf-water { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.2; }
+.qf-svg .qf-gas { fill: var(--violet-soft); stroke: none; }
+.qf-svg .qf-solid { fill: var(--muted); stroke: var(--text); stroke-width: 1.2; }
+.qf-svg .qf-dash { stroke: var(--text); stroke-width: 1.4; stroke-dasharray: 5 4; fill: none; }
+.qf-table-wrap { overflow-x: auto; }
+.qf-table { border-collapse: collapse; margin-inline: auto; font-size: 0.95em; min-inline-size: 60%; }
+.qf-table th, .qf-table td { border: 1px solid var(--line-strong); padding: 6px 10px; text-align: center; }
+.qf-table thead th:first-child, .qf-table tbody th { white-space: nowrap; }
+@media (max-width: 480px) { .qf-table th, .qf-table td { padding: 5px 7px; } .qf { padding: 10px 8px; } }
+.qf-table thead th { background: var(--accent-soft); font-weight: 700; }
+.qf-table tbody th { font-weight: 700; }
+.qf-cap { margin-top: 8px; font-size: 0.9em; color: var(--text2); text-align: center; }
+.qf-table th, .qf-table td { overflow-wrap: normal; word-break: normal; hyphens: manual; }

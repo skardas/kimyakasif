@@ -162,14 +162,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-f05",
       "fact": {
-        "tr": "Yarı soy metaller (Cu, Ag, Hg) oksijensiz asitlerle (HCl, HBr vb.) tepkime vermez.",
-        "en": "Semi-noble metals (Cu, Ag, Hg) DO NOT REACT with oxygen-free acids (HCl, HBr, etc.).",
-        "de": "Halbedelmetalle (Cu, Ag, Hg) REAGIEREN NICHT mit sauerstofffreien Säuren (HCl, HBr usw.).",
-        "fr": "Les métaux semi-nobles (Cu, Ag, Hg) NE RÉAGISSENT PAS avec les acides sans oxygène (HCl, HBr, etc.).",
-        "ru": "Полублагородные металлы (Cu, Ag, Hg) не реагируют с бескислородными кислотами (HCl, HBr и др.).",
-        "ar": "الفلزات شبه النبيلة (Cu، Ag، Hg) لا تتفاعل مع الأحماض الخالية من الأكسجين (HCl، HBr، إلخ).",
-        "zh": "半贵金属(Cu、Ag、Hg)不与无氧酸(HCl、HBr 等)反应。",
-        "ku": "Metalên nîvesîl (Cu, Ag, Hg) bi asîdên bê oksîjen (HCl, HBr hwd.) re REAKSIYONÊ NAKIN."
+        "tr": "Yarı soy metaller (Cu, Ag, Hg) HCl ve seyreltik H2SO4 gibi yükseltgen olmayan asitlerle tepkime vermez; bu asitlerden H2 gazı açığa çıkaramaz.",
+        "en": "Semi-noble metals (Cu, Ag, Hg) do not react with non-oxidizing acids such as HCl and dilute H2SO4; they cannot release H2 gas from these acids.",
+        "de": "Halbedelmetalle (Cu, Ag, Hg) reagieren nicht mit nicht oxidierenden Säuren wie HCl und verdünnter H2SO4; aus diesen Säuren können sie kein H2-Gas freisetzen.",
+        "fr": "Les métaux semi-nobles (Cu, Ag, Hg) ne réagissent pas avec les acides non oxydants comme HCl et H2SO4 dilué ; ils ne peuvent pas en libérer de dihydrogène H2.",
+        "ru": "Полублагородные металлы (Cu, Ag, Hg) не реагируют с кислотами-неокислителями, такими как HCl и разбавленная H2SO4, и не вытесняют из них газ H2.",
+        "ar": "لا تتفاعل الفلزات شبه النبيلة (Cu وAg وHg) مع الأحماض غير المؤكسِدة مثل HCl وH2SO4 المخفف، ولا تستطيع تحرير غاز H2 منها.",
+        "zh": "半贵金属(Cu、Ag、Hg)不与 HCl、稀 H2SO4 等非氧化性酸反应，不能从这些酸中置换出 H2 气体。",
+        "ku": "Metalên nîvesîl (Cu, Ag, Hg) bi asîdên neoksîdker ên wek HCl û H2SO4-a sulandî re reaksiyonê nakin; ji van asîdan gaza H2 dernaxin."
       },
       "trap": {
         "tr": "Bakır metali HCl çözeltisine atıldığında bolca H2 gazı çıkarır.",
@@ -271,14 +271,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-f08",
       "fact": {
-        "tr": "Amfoter metaller (Zn, Al, Sn, Pb gibi) hem asitlerle hem de NaOH, KOH gibi kuvvetli bazlarla tepkimeye girerek H2 gazı açığa çıkarır.",
-        "en": "Amphoteric metals (such as Zn, Al, Sn, Pb) react both with acids and with strong bases such as NaOH and KOH, releasing H2 gas.",
-        "de": "Amphotere Metalle (wie Zn, Al, Sn, Pb) reagieren sowohl mit Säuren als auch mit starken Basen wie NaOH und KOH unter Freisetzung von H2-Gas.",
-        "fr": "Les métaux amphotères (comme Zn, Al, Sn, Pb) réagissent à la fois avec les acides et avec les bases fortes comme NaOH et KOH en libérant du dihydrogène H2.",
-        "ru": "Амфотерные металлы (Zn, Al, Sn, Pb и др.) реагируют и с кислотами, и с сильными основаниями (NaOH, KOH) с выделением газа H2.",
-        "ar": "تتفاعل الفلزات الأمفوتيرية (مثل Zn وAl وSn وPb) مع الأحماض ومع القواعد القوية مثل NaOH وKOH أيضًا، ويتصاعد غاز H2.",
-        "zh": "两性金属(如 Zn、Al、Sn、Pb)既能与酸反应，也能与 NaOH、KOH 等强碱反应，放出 H2 气体。",
-        "ku": "Metalên amfoter (wek Zn, Al, Sn, Pb) hem bi asîdan hem jî bi bazên bihêz ên wek NaOH û KOH re dikevin reaksiyonê û gaza H2 derdixin."
+        "tr": "Amfoter metaller (Zn ve Al gibi) hem asitlerle hem de NaOH, KOH gibi kuvvetli bazlarla tepkimeye girerek H2 gazı açığa çıkarır.",
+        "en": "Amphoteric metals (such as Zn and Al) react both with acids and with strong bases such as NaOH and KOH, releasing H2 gas.",
+        "de": "Amphotere Metalle (wie Zn und Al) reagieren sowohl mit Säuren als auch mit starken Basen wie NaOH und KOH unter Freisetzung von H2-Gas.",
+        "fr": "Les métaux amphotères (comme Zn et Al) réagissent à la fois avec les acides et avec les bases fortes comme NaOH et KOH en libérant du dihydrogène H2.",
+        "ru": "Амфотерные металлы (например, Zn и Al) реагируют и с кислотами, и с сильными основаниями (NaOH, KOH) с выделением газа H2.",
+        "ar": "تتفاعل الفلزات الأمفوتيرية (مثل Zn وAl) مع الأحماض ومع القواعد القوية مثل NaOH وKOH أيضًا، ويتصاعد غاز H2.",
+        "zh": "两性金属(如 Zn、Al)既能与酸反应，也能与 NaOH、KOH 等强碱反应，放出 H2 气体。",
+        "ku": "Metalên amfoter (wek Zn û Al) hem bi asîdan hem jî bi bazên bihêz ên wek NaOH û KOH re dikevin reaksiyonê û gaza H2 derdixin."
       },
       "trap": {
         "tr": "Alüminyum bazlarla tepkime vermez, sadece asitlerle tepkimeye girer.",
@@ -821,14 +821,14 @@ export const unit09: ChemistryUnitSeedData = {
         "ku": "Asîda Bêoksîjen"
       },
       "distinction": {
-        "tr": "Oksijenli asitler (HNO3, H2SO4) yapısında oksijen bulundurur; derişik HNO3 ve sıcak derişik H2SO4 yarı soy metalleri de çözer. Oksijensiz asitler (HCl, HBr) oksijen içermez ve yarı soy metallerle tepkime vermez.",
-        "en": "Oxyacids (HNO3, H2SO4) contain oxygen; concentrated HNO3 and hot concentrated H2SO4 also dissolve semi-noble metals. Oxygen-free acids (HCl, HBr) contain no oxygen and do not react with semi-noble metals.",
-        "de": "Eine sauerstoffhaltige Säure (HNO3, H2SO4) enthält Sauerstoff; konzentrierte HNO3 und heiße konzentrierte H2SO4 lösen auch Halbedelmetalle. Eine sauerstofffreie Säure (HCl, HBr) enthält keinen Sauerstoff und reagiert nicht mit Halbedelmetallen.",
-        "fr": "Un oxacide (HNO3, H2SO4) contient de l'oxygène ; HNO3 concentré et H2SO4 concentré chaud dissolvent aussi les métaux semi-nobles. Un hydracide (HCl, HBr) ne contient pas d'oxygène et ne réagit pas avec les métaux semi-nobles.",
-        "ru": "Кислородсодержащая кислота (HNO3, H2SO4) содержит кислород; концентрированная HNO3 и горячая концентрированная H2SO4 растворяют и полублагородные металлы. Бескислородная кислота (HCl, HBr) не содержит кислорода и не реагирует с полублагородными металлами.",
-        "ar": "الحمض الأكسجيني (HNO3، H2SO4) يحتوي على الأكسجين، ويذيب HNO3 المركّز وH2SO4 المركّز الساخن الفلزات شبه النبيلة أيضًا. أما الحمض غير الأكسجيني (HCl، HBr) فلا يحتوي على الأكسجين ولا يتفاعل مع الفلزات شبه النبيلة.",
-        "zh": "含氧酸(HNO3、H2SO4)含有氧元素，浓HNO3和热浓H2SO4还能溶解半贵金属；无氧酸(HCl、HBr)不含氧，不与半贵金属反应。",
-        "ku": "Asîda oksîjendar (HNO3, H2SO4) di avahiya xwe de oksîjenê dihewîne; HNO3-a tîr û H2SO4-a tîr a germ metalên nîvesîl jî dihelînin. Asîda bêoksîjen (HCl, HBr) oksîjenê nahewîne û bi metalên nîvesîl re nakeve reaksiyonê."
+        "tr": "Oksijenli asitler (HNO3, H2SO4 gibi) yapısında oksijen bulundurur; bunlardan derişik HNO3 ve sıcak derişik H2SO4 yarı soy metalleri de çözer. Oksijensiz asitler (HCl, H2S gibi) ise yapısında oksijen bulundurmaz; bunlardan HCl yarı soy metallerle tepkime vermez.",
+        "en": "Oxyacids (such as HNO3 and H2SO4) contain oxygen; of these, concentrated HNO3 and hot concentrated H2SO4 also dissolve semi-noble metals. Oxygen-free acids (such as HCl and H2S) contain no oxygen; of these, HCl does not react with semi-noble metals.",
+        "de": "Eine sauerstoffhaltige Säure (z. B. HNO3, H2SO4) enthält Sauerstoff; konzentrierte HNO3 und heiße konzentrierte H2SO4 lösen auch Halbedelmetalle. Eine sauerstofffreie Säure (z. B. HCl, H2S) enthält keinen Sauerstoff; HCl reagiert nicht mit Halbedelmetallen.",
+        "fr": "Un oxacide (comme HNO3 ou H2SO4) contient de l'oxygène ; HNO3 concentré et H2SO4 concentré chaud dissolvent aussi les métaux semi-nobles. Un hydracide (comme HCl ou H2S) ne contient pas d'oxygène ; HCl ne réagit pas avec les métaux semi-nobles.",
+        "ru": "Кислородсодержащая кислота (например, HNO3, H2SO4) содержит кислород; концентрированная HNO3 и горячая концентрированная H2SO4 растворяют и полублагородные металлы. Бескислородная кислота (например, HCl, H2S) не содержит кислорода; HCl не реагирует с полублагородными металлами.",
+        "ar": "الحمض الأكسجيني (مثل HNO3 وH2SO4) يحتوي على الأكسجين، ويذيب HNO3 المركّز وH2SO4 المركّز الساخن الفلزات شبه النبيلة أيضًا. أما الحمض غير الأكسجيني (مثل HCl وH2S) فلا يحتوي على الأكسجين، وHCl منه لا يتفاعل مع الفلزات شبه النبيلة.",
+        "zh": "含氧酸(如 HNO3、H2SO4)含有氧元素，其中浓HNO3和热浓H2SO4还能溶解半贵金属；无氧酸(如 HCl、H2S)不含氧，其中 HCl 不与半贵金属反应。",
+        "ku": "Asîda oksîjendar (wek HNO3, H2SO4) di avahiya xwe de oksîjenê dihewîne; HNO3-a tîr û H2SO4-a tîr a germ metalên nîvesîl jî dihelînin. Asîda bêoksîjen (wek HCl, H2S) oksîjenê nahewîne; HCl bi metalên nîvesîl re nakeve reaksiyonê."
       }
     }
   ],
@@ -891,14 +891,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-s02",
       "title": {
-        "tr": "Asit-Baz Titrasyon Basamakları",
-        "en": "Acid-Base Titration Steps",
-        "de": "Schritte der Säure-Base-Titration",
-        "fr": "Étapes de titrage acide-base",
-        "ru": "Этапы кислотно-основного титрования",
-        "ar": "خطوات معايرة الحمض والقاعدة",
-        "zh": "酸碱滴定步骤",
-        "ku": "Gavên Tîtrasyona Asîd-Bazê"
+        "tr": "Asit-Baz Titrasyonu",
+        "en": "Acid-Base Titration",
+        "de": "Säure-Base-Titration",
+        "fr": "Titrage acide-base",
+        "ru": "Кислотно-основное титрование",
+        "ar": "معايرة حمض بقاعدة",
+        "zh": "酸碱滴定",
+        "ku": "Tîtrasyona Asîd-Bazê"
       },
       "steps": [
         {
@@ -1058,153 +1058,340 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin01",
       "stem": {
-        "tr": "Bakır (Cu) metali parçaları üzerine derişik HNO3 çözeltisi eklendiğinde hangi gaz açığa çıkar?",
-        "en": "Which gas is released when concentrated HNO3 solution is added to copper (Cu) metal pieces?",
-        "de": "Welches Gas wird freigesetzt, wenn konzentrierte HNO3-Lösung zu Metallstücken aus Kupfer (Cu) hinzugefügt wird?",
-        "fr": "Quel gaz est libéré lorsqu’une solution concentrée de HNO3 est ajoutée à des pièces métalliques en cuivre (Cu) ?",
-        "ru": "Какой газ выделяется при добавлении концентрированного раствора HNO3 к кускам меди (Cu)?",
-        "ar": "ما الغاز الذي ينطلق عند إضافة محلول HNO3 المركز إلى قطع من فلز النحاس (Cu)؟",
-        "zh": "向铜(Cu)片上加入浓 HNO3 溶液时，放出哪种气体？",
-        "ku": "Dema çareseriya HNO3-a tîr li perçeyên metala sifir (Cu) tê zêdekirin, kîjan gaz derdikeve?"
+        "tr": "Şekildeki grafik, 20 mL HCl çözeltisine 25 °C'de 0,2 M NaOH çözeltisi damla damla eklenirken ölçülen pH değerlerini göstermektedir.\nI. HCl çözeltisinin başlangıç derişimi 0,1 M'dir.\nII. 5 mL NaOH eklendiğinde başlangıçtaki H+ iyonlarının yarısı nötrleşmiştir.\nIII. 15 mL NaOH eklenmiş çözeltiye fenolftalein damlatılırsa çözelti renksiz kalır.\nyargılarından hangileri doğrudur?",
+        "en": "The graph shows the pH measured at 25 °C while 0.2 M NaOH solution is added dropwise to 20 mL of HCl solution. Which of the following statements are true?\nI. The initial concentration of the HCl solution is 0.1 M.\nII. When 5 mL of NaOH has been added, half of the initial H+ ions have been neutralized.\nIII. If phenolphthalein is added to the solution after 15 mL of NaOH has been added, the solution stays colourless.",
+        "de": "Das Diagramm zeigt den bei 25 °C gemessenen pH-Wert, während 20 mL HCl-Lösung tropfenweise mit 0,2 M NaOH-Lösung versetzt werden. Welche Aussagen sind richtig?\nI. Die Anfangskonzentration der HCl-Lösung beträgt 0,1 M.\nII. Nach Zugabe von 5 mL NaOH ist die Hälfte der ursprünglichen H+-Ionen neutralisiert.\nIII. Gibt man nach Zugabe von 15 mL NaOH Phenolphthalein hinzu, bleibt die Lösung farblos.",
+        "fr": "Le graphique montre le pH mesuré à 25 °C lorsqu'on ajoute goutte à goutte une solution de NaOH à 0,2 M à 20 mL de solution de HCl. Quelles affirmations sont vraies ?\nI. La concentration initiale de la solution de HCl est de 0,1 M.\nII. Après l'ajout de 5 mL de NaOH, la moitié des ions H+ initiaux est neutralisée.\nIII. Si l'on ajoute de la phénolphtaléine après l'ajout de 15 mL de NaOH, la solution reste incolore.",
+        "ru": "На графике показан pH, измеренный при 25 °C при постепенном добавлении 0,2 M раствора NaOH к 20 мл раствора HCl. Какие утверждения верны?\nI. Исходная концентрация раствора HCl равна 0,1 M.\nII. После добавления 5 мл NaOH нейтрализована половина исходных ионов H+.\nIII. Если после добавления 15 мл NaOH внести фенолфталеин, раствор останется бесцветным.",
+        "ar": "يبيّن الرسم البياني قيم pH المقيسة عند 25 °C أثناء إضافة محلول NaOH تركيزه 0.2 M قطرةً قطرةً إلى 20 mL من محلول HCl. أيّ العبارات الآتية صحيحة؟\nI. التركيز الابتدائي لمحلول HCl يساوي 0.1 M.\nII. عند إضافة 5 mL من NaOH يكون نصف أيونات H+ الابتدائية قد تعادل.\nIII. إذا أُضيف الفينولفثالين إلى المحلول بعد إضافة 15 mL من NaOH يبقى المحلول عديم اللون.",
+        "zh": "图中给出了 25 °C 时向 20 mL HCl 溶液中逐滴加入 0.2 M NaOH 溶液过程中测得的 pH。下列说法中哪些正确？\nI. HCl 溶液的初始浓度为 0.1 M。\nII. 加入 5 mL NaOH 时，初始 H+ 离子的一半已被中和。\nIII. 加入 15 mL NaOH 后向溶液中滴加酚酞，溶液保持无色。",
+        "ku": "Grafîka di şeklê de nirxên pH-ê nîşan dide ku di 25 °C de dema çareseriya NaOH a 0,2 M dilop bi dilop li 20 mL çareseriya HCl tê zêdekirin hatine pîvandin. Kîjan ji van gotinan rast in?\nI. Tîrbûna destpêkê ya çareseriya HCl 0,1 M e.\nII. Dema 5 mL NaOH hatiye zêdekirin, nîvê îyonên H+ yên destpêkê neutralîze bûne.\nIII. Eger piştî zêdekirina 15 mL NaOH fenolftaleyîn li çareseriyê were zêdekirin, çareserî bêreng dimîne."
       },
       "options": [
         {
-          "tr": "NO2",
-          "en": "NO2",
-          "de": "NO2",
-          "fr": "NO2",
-          "ru": "NO2",
-          "ar": "NO2",
-          "zh": "NO2",
-          "ku": "NO2"
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "H2",
-          "en": "H2",
-          "de": "H2",
-          "fr": "H2",
-          "ru": "H2",
-          "ar": "H2",
-          "zh": "H2",
-          "ku": "H2"
+          "tr": "Yalnız II",
+          "en": "Only II",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "O2",
-          "en": "O2",
-          "de": "O2",
-          "fr": "O2",
-          "ru": "O2",
-          "ar": "O2",
-          "zh": "O2",
-          "ku": "O2"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "N2",
-          "en": "N2",
-          "de": "N2",
-          "fr": "N2",
-          "ru": "N2",
-          "ar": "N2",
-          "zh": "N2",
-          "ku": "N2"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "SO2",
-          "en": "SO2",
-          "de": "SO2",
-          "fr": "SO2",
-          "ru": "SO2",
-          "ar": "SO2",
-          "zh": "SO2",
-          "ku": "SO2"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Bakır yarı soy metaldir; asitlerin H+ iyonlarını indirgeyemediği için hiçbir asitle H2 gazı vermez. Derişik HNO3 ile tepkimesinde nitrat iyonu indirgenir ve kahverengi NO2 gazı açığa çıkar: Cu + 4HNO3 → Cu(NO3)2 + 2NO2 + 2H2O. SO2 ise sıcak derişik H2SO4 ile tepkimede oluşur.",
-        "en": "Copper is a semi-noble metal; it cannot reduce the H+ ions of acids, so it never releases H2 gas with an acid. In its reaction with concentrated HNO3 the nitrate ion is reduced and brown NO2 gas is released: Cu + 4HNO3 → Cu(NO3)2 + 2NO2 + 2H2O. SO2 forms in the reaction with hot concentrated H2SO4.",
-        "de": "Kupfer ist ein Halbedelmetall; es kann die H+-Ionen von Säuren nicht reduzieren und setzt daher mit keiner Säure H2-Gas frei. Bei der Reaktion mit konzentrierter HNO3 wird das Nitrat-Ion reduziert, und es entsteht braunes NO2-Gas: Cu + 4HNO3 → Cu(NO3)2 + 2NO2 + 2H2O. SO2 entsteht dagegen bei der Reaktion mit heißer konzentrierter H2SO4.",
-        "fr": "Le cuivre est un métal semi-noble ; il ne peut pas réduire les ions H+ des acides et ne dégage donc jamais de H2 avec un acide. Lors de sa réaction avec HNO3 concentré, l'ion nitrate est réduit et un gaz brun, NO2, se dégage : Cu + 4HNO3 → Cu(NO3)2 + 2NO2 + 2H2O. SO2 se forme, lui, lors de la réaction avec H2SO4 concentré chaud.",
-        "ru": "Медь — полублагородный металл; она не может восстановить ионы H+ кислот, поэтому ни с одной кислотой не выделяет H2. В реакции с концентрированной HNO3 восстанавливается нитрат-ион и выделяется бурый газ NO2: Cu + 4HNO3 → Cu(NO3)2 + 2NO2 + 2H2O. SO2 же образуется в реакции с горячей концентрированной H2SO4.",
-        "ar": "النحاس فلز شبه نبيل؛ لا يستطيع اختزال أيونات H+ في الأحماض، ولذلك لا يُطلق غاز H2 مع أي حمض. وفي تفاعله مع HNO3 المركّز يُختزل أيون النترات ويتصاعد غاز NO2 البني: Cu + 4HNO3 → Cu(NO3)2 + 2NO2 + 2H2O. أما SO2 فيتكوّن في التفاعل مع H2SO4 المركّز الساخن.",
-        "zh": "铜是半贵金属；它不能还原酸中的 H+ 离子，因此与任何酸反应都不放出 H2。与浓 HNO3 反应时，硝酸根离子被还原，放出红棕色的 NO2 气体：Cu + 4HNO3 → Cu(NO3)2 + 2NO2 + 2H2O。SO2 则是在与热的浓 H2SO4 反应时生成的。",
-        "ku": "Sifir metaleke nîvesîl e; nikare îyonên H+ yên asîdan redûkte bike, ji ber vê yekê bi tu asîdê re gaza H2 dernaxe. Di reaksiyona wê ya bi HNO3-a tîr re îyona nîtratê tê redûktekirin û gaza NO2 ya qehweyî derdikeve: Cu + 4HNO3 → Cu(NO3)2 + 2NO2 + 2H2O. SO2 jî di reaksiyona bi H2SO4-a tîr a germ re çêdibe."
+        "tr": "Grafikte pH'ın 7 olduğu eşdeğerlik noktası (E) 10 mL NaOH'a karşılık gelir. n(NaOH) = 0,2 × 0,010 = 0,002 mol = n(HCl) olduğundan [HCl] = 0,002 / 0,020 = 0,1 M'dir; başlangıç pH'ının 1 olması da bunu doğrular. I doğrudur. 5 mL NaOH 0,001 mol OH- içerir ve başlangıçtaki 0,002 mol H+ iyonunun yarısını nötrleştirir; II doğrudur. 15 mL eklendiğinde grafikte pH yaklaşık 12,5'tir; ortam baziktir ve fenolftalein pembe olur; III yanlıştır. Eşdeğerlik hacmini (10 mL) bulup asit ve baz derişimlerini eşit sanmak ya da 15 mL'de ortamı hâlâ asidik sanmak tipik hatalardır.",
+        "en": "On the graph the equivalence point (E), where pH = 7, corresponds to 10 mL of NaOH. Since n(NaOH) = 0.2 × 0.010 = 0.002 mol = n(HCl), [HCl] = 0.002 / 0.020 = 0.1 M; the initial pH of 1 confirms this. I is true. 5 mL of NaOH contains 0.001 mol OH-, which neutralizes half of the initial 0.002 mol H+; II is true. After 15 mL the graph shows a pH of about 12.5; the medium is basic and phenolphthalein turns pink; III is false. Assuming the acid and base concentrations are equal, or thinking the solution is still acidic at 15 mL, are typical mistakes.",
+        "de": "Im Diagramm entspricht der Äquivalenzpunkt (E) mit pH = 7 einer Zugabe von 10 mL NaOH. Da n(NaOH) = 0,2 × 0,010 = 0,002 mol = n(HCl), gilt [HCl] = 0,002 / 0,020 = 0,1 M; der Anfangs-pH von 1 bestätigt dies. I ist richtig. 5 mL NaOH enthalten 0,001 mol OH- und neutralisieren die Hälfte der anfänglichen 0,002 mol H+; II ist richtig. Nach 15 mL zeigt das Diagramm einen pH von etwa 12,5; die Lösung ist basisch und Phenolphthalein färbt sich pink; III ist falsch. Typische Fehler sind, gleiche Konzentrationen von Säure und Base anzunehmen oder die Lösung bei 15 mL noch für sauer zu halten.",
+        "fr": "Sur le graphique, le point d'équivalence (E), où pH = 7, correspond à 10 mL de NaOH. Comme n(NaOH) = 0,2 × 0,010 = 0,002 mol = n(HCl), [HCl] = 0,002 / 0,020 = 0,1 M ; le pH initial de 1 le confirme. I est vraie. 5 mL de NaOH contiennent 0,001 mol de OH-, ce qui neutralise la moitié des 0,002 mol de H+ initiaux ; II est vraie. Après 15 mL, le graphique indique un pH d'environ 12,5 ; le milieu est basique et la phénolphtaléine devient rose ; III est fausse. Supposer que l'acide et la base ont la même concentration, ou croire que la solution est encore acide à 15 mL, sont des erreurs typiques.",
+        "ru": "На графике точке эквивалентности (E), где pH = 7, соответствует 10 мл NaOH. Так как n(NaOH) = 0,2 × 0,010 = 0,002 моль = n(HCl), [HCl] = 0,002 / 0,020 = 0,1 M; это подтверждает и начальный pH = 1. I верно. 5 мл NaOH содержат 0,001 моль OH- и нейтрализуют половину исходных 0,002 моль H+; II верно. После 15 мл pH по графику около 12,5; среда щелочная, фенолфталеин становится малиновым; III неверно. Типичные ошибки — считать концентрации кислоты и щёлочи равными или думать, что при 15 мл среда ещё кислая.",
+        "ar": "في الرسم البياني تقابل نقطة التكافؤ (E) التي يكون عندها pH = 7 إضافة 10 mL من NaOH. وبما أن n(NaOH) = 0.2 × 0.010 = 0.002 mol = n(HCl) فإن [HCl] = 0.002 / 0.020 = 0.1 M، ويؤكد ذلك أن pH الابتدائي يساوي 1. العبارة I صحيحة. يحتوي 5 mL من NaOH على 0.001 mol من OH- فيعادل نصف 0.002 mol من H+ الابتدائية؛ العبارة II صحيحة. بعد إضافة 15 mL يبيّن الرسم أن pH نحو 12.5؛ الوسط قاعدي والفينولفثالين يصبح ورديًا؛ العبارة III خاطئة. ومن الأخطاء الشائعة افتراض تساوي تركيزَي الحمض والقاعدة أو الظن أن المحلول ما زال حمضيًا عند 15 mL.",
+        "zh": "图中 pH = 7 的等当点(E)对应加入 10 mL NaOH。因为 n(NaOH) = 0.2 × 0.010 = 0.002 mol = n(HCl)，所以 [HCl] = 0.002 / 0.020 = 0.1 M；初始 pH 为 1 也证实了这一点。I 正确。5 mL NaOH 含 0.001 mol OH-，中和了初始 0.002 mol H+ 的一半；II 正确。加入 15 mL 时图中 pH 约为 12.5，溶液呈碱性，酚酞变为粉红色；III 错误。认为酸和碱的浓度相等，或认为加入 15 mL 时溶液仍呈酸性，都是典型错误。",
+        "ku": "Di grafîkê de xala wekhevbûnê (E) ya ku pH lê 7 e, li hember 10 mL NaOH e. Ji ber ku n(NaOH) = 0,2 × 0,010 = 0,002 mol = n(HCl), [HCl] = 0,002 / 0,020 = 0,1 M ye; pH-a destpêkê ya 1 jî vê piştrast dike. I rast e. 5 mL NaOH 0,001 mol OH- dihewîne û nîvê 0,002 mol H+ yên destpêkê neutralîze dike; II rast e. Piştî 15 mL, li gorî grafîkê pH nêzî 12,5 ye; navgîn bazî ye û fenolftaleyîn pembe dibe; III şaş e. Wekhev hesibandina tîrbûnên asîd û bazê, an jî di 15 mL de hîn asîdî hesibandina çareseriyê xeletiyên tîpîk in."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Eklenen NaOH (mL)",
+          "en": "Added NaOH (mL)",
+          "de": "Zugegebene NaOH (mL)",
+          "fr": "NaOH ajouté (mL)",
+          "ru": "Добавлено NaOH (мл)",
+          "ar": "NaOH المضاف (mL)",
+          "zh": "加入的 NaOH (mL)",
+          "ku": "NaOH-a zêdekirî (mL)"
+        },
+        "yLabel": {
+          "tr": "pH",
+          "en": "pH",
+          "de": "pH",
+          "fr": "pH",
+          "ru": "pH",
+          "ar": "pH",
+          "zh": "pH",
+          "ku": "pH"
+        },
+        "xMax": 20,
+        "yMax": 14,
+        "xTicks": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "yTicks": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1.14
+              ],
+              [
+                5,
+                1.4
+              ],
+              [
+                8,
+                1.85
+              ],
+              [
+                9,
+                2.16
+              ],
+              [
+                9.5,
+                2.47
+              ],
+              [
+                9.9,
+                3.17
+              ],
+              [
+                10,
+                7
+              ],
+              [
+                10.1,
+                10.82
+              ],
+              [
+                10.5,
+                11.52
+              ],
+              [
+                12,
+                12.1
+              ],
+              [
+                15,
+                12.46
+              ],
+              [
+                20,
+                12.7
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 10,
+            "y": 7,
+            "label": "E",
+            "guides": true
+          }
+        ]
       }
     },
     {
       "id": "u09-twin02",
       "stem": {
-        "tr": "Aşağıdaki metallerden hangisi kuvvetli bir baz olan NaOH çözeltisi ile tepkimeye girerek H2 gazı açığa çıkarabilir?",
-        "en": "Which of the following metals can react with NaOH solution, a strong base, to release H2 gas?",
-        "de": "Welches der folgenden Metalle kann mit NaOH-Lösung, einer starken Base, unter Freisetzung von H2-Gas reagieren?",
-        "fr": "Lequel des métaux suivants peut réagir avec une solution de NaOH, une base forte, pour libérer du gaz H2 ?",
-        "ru": "Какой из перечисленных металлов может реагировать с раствором сильного основания NaOH с выделением газа H2?",
-        "ar": "أيّ الفلزات الآتية يمكن أن يتفاعل مع محلول NaOH، وهو قاعدة قوية، لإطلاق غاز H2؟",
-        "zh": "下列哪种金属能与强碱 NaOH 溶液反应放出氢气？",
-        "ku": "Kîjan ji metalên jêrîn dikare bi çareseriya NaOH, ku bazeke bihêz e, re bikeve reaksiyonê û gaza H2 derxe?"
+        "tr": "Tabloda X, Y, Z ve T metallerinin seyreltik HCl, derişik NaOH ve derişik HNO3 çözeltilerine ayrı ayrı atıldığında gözlenen sonuçlar verilmiştir (+: gaz çıkışı gözlenir, −: tepkime gözlenmez). X, Y, Z ve T metalleri sırasıyla aşağıdakilerden hangisi olabilir?",
+        "en": "The table shows what is observed when metals X, Y, Z and T are placed separately in dilute HCl, concentrated NaOH and concentrated HNO3 solutions (+: gas is evolved, −: no reaction is observed). Which of the following could metals X, Y, Z and T be, respectively?",
+        "de": "Die Tabelle zeigt, was beobachtet wird, wenn die Metalle X, Y, Z und T einzeln in verdünnte HCl-, konzentrierte NaOH- und konzentrierte HNO3-Lösung gegeben werden (+: Gasentwicklung, −: keine Reaktion). Welche Metalle können X, Y, Z und T der Reihe nach sein?",
+        "fr": "Le tableau indique ce que l'on observe lorsqu'on place séparément les métaux X, Y, Z et T dans des solutions de HCl dilué, de NaOH concentré et de HNO3 concentré (+ : dégagement gazeux, − : aucune réaction). Quels peuvent être, respectivement, les métaux X, Y, Z et T ?",
+        "ru": "В таблице приведены наблюдения при помещении металлов X, Y, Z и T по отдельности в растворы разбавленной HCl, концентрированного NaOH и концентрированной HNO3 (+: выделяется газ, −: реакция не наблюдается). Какими металлами соответственно могут быть X, Y, Z и T?",
+        "ar": "يبيّن الجدول ما يُلاحظ عند وضع الفلزات X وY وZ وT كلٍّ على حدة في محاليل HCl المخفف وNaOH المركّز وHNO3 المركّز (+: يتصاعد غاز، −: لا يُلاحظ تفاعل). أيّ مما يأتي يمكن أن يكون الفلزات X وY وZ وT على الترتيب؟",
+        "zh": "表中列出了将金属 X、Y、Z、T 分别放入稀 HCl、浓 NaOH 和浓 HNO3 溶液中观察到的现象（+：有气体产生，−：无反应）。X、Y、Z、T 依次可能是下列哪一组？",
+        "ku": "Di tabloyê de encamên ku dema metalên X, Y, Z û T cuda cuda tên avêtin nav çareseriyên HCl-a sulandî, NaOH-a tîr û HNO3-a tîr tên dîtin hatine dayîn (+: gaz derdikeve, −: reaksiyon nayê dîtin). Metalên X, Y, Z û T bi rêzê dikarin kîjan bin?"
       },
       "options": [
         {
-          "tr": "Al",
-          "en": "Al",
-          "de": "Al",
-          "fr": "Al",
-          "ru": "Al",
-          "ar": "Al",
-          "zh": "Al",
-          "ku": "Al"
+          "tr": "Mg, Cu, Au, Zn",
+          "en": "Mg, Cu, Au, Zn",
+          "de": "Mg, Cu, Au, Zn",
+          "fr": "Mg, Cu, Au, Zn",
+          "ru": "Mg, Cu, Au, Zn",
+          "ar": "Mg, Cu, Au, Zn",
+          "zh": "Mg, Cu, Au, Zn",
+          "ku": "Mg, Cu, Au, Zn"
         },
         {
-          "tr": "Cu",
-          "en": "Cu",
-          "de": "Cu",
-          "fr": "Cu",
-          "ru": "Cu",
-          "ar": "Cu",
-          "zh": "Cu",
-          "ku": "Cu"
+          "tr": "Zn, Cu, Au, Mg",
+          "en": "Zn, Cu, Au, Mg",
+          "de": "Zn, Cu, Au, Mg",
+          "fr": "Zn, Cu, Au, Mg",
+          "ru": "Zn, Cu, Au, Mg",
+          "ar": "Zn, Cu, Au, Mg",
+          "zh": "Zn, Cu, Au, Mg",
+          "ku": "Zn, Cu, Au, Mg"
         },
         {
-          "tr": "Fe",
-          "en": "Fe",
-          "de": "Fe",
-          "fr": "Fe",
-          "ru": "Fe",
-          "ar": "Fe",
-          "zh": "Fe",
-          "ku": "Fe"
+          "tr": "Mg, Au, Cu, Zn",
+          "en": "Mg, Au, Cu, Zn",
+          "de": "Mg, Au, Cu, Zn",
+          "fr": "Mg, Au, Cu, Zn",
+          "ru": "Mg, Au, Cu, Zn",
+          "ar": "Mg, Au, Cu, Zn",
+          "zh": "Mg, Au, Cu, Zn",
+          "ku": "Mg, Au, Cu, Zn"
         },
         {
-          "tr": "Ag",
-          "en": "Ag",
-          "de": "Ag",
-          "fr": "Ag",
-          "ru": "Ag",
-          "ar": "Ag",
-          "zh": "Ag",
-          "ku": "Ag"
+          "tr": "Cu, Mg, Au, Zn",
+          "en": "Cu, Mg, Au, Zn",
+          "de": "Cu, Mg, Au, Zn",
+          "fr": "Cu, Mg, Au, Zn",
+          "ru": "Cu, Mg, Au, Zn",
+          "ar": "Cu, Mg, Au, Zn",
+          "zh": "Cu, Mg, Au, Zn",
+          "ku": "Cu, Mg, Au, Zn"
         },
         {
-          "tr": "Mg",
-          "en": "Mg",
-          "de": "Mg",
-          "fr": "Mg",
-          "ru": "Mg",
-          "ar": "Mg",
-          "zh": "Mg",
-          "ku": "Mg"
+          "tr": "Mg, Ag, Cu, Zn",
+          "en": "Mg, Ag, Cu, Zn",
+          "de": "Mg, Ag, Cu, Zn",
+          "fr": "Mg, Ag, Cu, Zn",
+          "ru": "Mg, Ag, Cu, Zn",
+          "ar": "Mg, Ag, Cu, Zn",
+          "zh": "Mg, Ag, Cu, Zn",
+          "ku": "Mg, Ag, Cu, Zn"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Alüminyum (Al) amfoter bir metaldir; asitlerin yanı sıra NaOH gibi kuvvetli bazlarla da tepkimeye girerek H2 gazı açığa çıkarır. Mg ve Fe aktif metaldir ancak amfoter değildir, bazlarla tepkime vermez; Cu ve Ag ise yarı soy metaldir ve bazlarla tepkimeye girmez.",
-        "en": "Aluminium (Al) is an amphoteric metal; besides acids it also reacts with strong bases such as NaOH, releasing H2 gas. Mg and Fe are active metals but not amphoteric, so they do not react with bases; Cu and Ag are semi-noble metals and do not react with bases either.",
-        "de": "Aluminium (Al) ist ein amphoteres Metall; es reagiert nicht nur mit Säuren, sondern auch mit starken Basen wie NaOH und setzt dabei H2-Gas frei. Mg und Fe sind aktive, aber nicht amphotere Metalle und reagieren nicht mit Basen; Cu und Ag sind Halbedelmetalle und reagieren ebenfalls nicht mit Basen.",
-        "fr": "L'aluminium (Al) est un métal amphotère ; outre les acides, il réagit aussi avec les bases fortes comme NaOH en dégageant du H2. Mg et Fe sont des métaux actifs mais non amphotères : ils ne réagissent pas avec les bases ; Cu et Ag sont des métaux semi-nobles et ne réagissent pas non plus avec les bases.",
-        "ru": "Алюминий (Al) — амфотерный металл; он реагирует не только с кислотами, но и с сильными основаниями, такими как NaOH, выделяя газ H2. Mg и Fe — активные, но не амфотерные металлы, с основаниями они не реагируют; Cu и Ag — полублагородные металлы и с основаниями тоже не реагируют.",
-        "ar": "الألومنيوم (Al) فلز أمفوتيري؛ يتفاعل مع الأحماض وكذلك مع القواعد القوية مثل NaOH مطلقًا غاز H2. أما Mg وFe ففلزان نشطان لكنهما غير أمفوتيريين فلا يتفاعلان مع القواعد، وCu وAg فلزان شبه نبيلين ولا يتفاعلان مع القواعد أيضًا.",
-        "zh": "铝(Al)是两性金属；除了与酸反应外，还能与 NaOH 等强碱反应并放出 H2。Mg 和 Fe 是活泼金属，但不是两性金属，不与碱反应；Cu 和 Ag 是半贵金属，也不与碱反应。",
-        "ku": "Alumînyûm (Al) metaleke amfoter e; ji bilî asîdan bi bazên bihêz ên wek NaOH re jî dikeve reaksiyonê û gaza H2 derdixe. Mg û Fe metalên çalak in lê ne amfoter in, bi bazan re nakevin reaksiyonê; Cu û Ag jî metalên nîvesîl in û bi bazan re nakevin reaksiyonê."
+        "tr": "Yalnız T hem asitle hem de bazla gaz verdiğinden amfoter metaldir (Zn). X seyreltik HCl ile H2 verir ama NaOH ile tepkime vermez; amfoter olmayan aktif bir metaldir (Mg). Y seyreltik HCl ile tepkime vermez ama derişik HNO3 ile gaz (NO2) verir; yarı soy metaldir (Cu). Z hiçbir çözeltiyle tepkime vermez; tam soy metaldir (Au). Doğru sıra Mg, Cu, Au, Zn'dir. Zn'yi NaOH ile tepkime vermeyen X'in yerine koymak, Cu ile Au'yu karıştırmak ya da Ag ve Cu'nun derişik HNO3 ile tepkime vermediğini sanmak tipik hatalardır.",
+        "en": "Only T gives gas with both the acid and the base, so it is an amphoteric metal (Zn). X gives H2 with dilute HCl but does not react with NaOH; it is an active, non-amphoteric metal (Mg). Y does not react with dilute HCl but gives a gas (NO2) with concentrated HNO3; it is a semi-noble metal (Cu). Z reacts with none of the solutions; it is a noble metal (Au). The correct order is Mg, Cu, Au, Zn. Putting Zn in place of X, which does not react with NaOH, confusing Cu with Au, or thinking that Ag and Cu do not react with concentrated HNO3 are typical mistakes.",
+        "de": "Nur T entwickelt sowohl mit der Säure als auch mit der Base Gas, ist also ein amphoteres Metall (Zn). X bildet mit verdünnter HCl H2, reagiert aber nicht mit NaOH; es ist ein unedles, nicht amphoteres Metall (Mg). Y reagiert nicht mit verdünnter HCl, bildet aber mit konzentrierter HNO3 ein Gas (NO2); es ist ein Halbedelmetall (Cu). Z reagiert mit keiner Lösung; es ist ein Edelmetall (Au). Die richtige Reihenfolge ist Mg, Cu, Au, Zn. Typische Fehler sind, Zn an die Stelle von X zu setzen, das nicht mit NaOH reagiert, Cu mit Au zu verwechseln oder anzunehmen, Ag und Cu reagierten nicht mit konzentrierter HNO3.",
+        "fr": "Seul T dégage un gaz à la fois avec l'acide et avec la base : c'est un métal amphotère (Zn). X dégage du H2 avec HCl dilué mais ne réagit pas avec NaOH ; c'est un métal actif non amphotère (Mg). Y ne réagit pas avec HCl dilué mais dégage un gaz (NO2) avec HNO3 concentré ; c'est un métal semi-noble (Cu). Z ne réagit avec aucune solution ; c'est un métal noble (Au). L'ordre correct est Mg, Cu, Au, Zn. Mettre Zn à la place de X, qui ne réagit pas avec NaOH, confondre Cu et Au, ou croire que Ag et Cu ne réagissent pas avec HNO3 concentré sont des erreurs typiques.",
+        "ru": "Только T выделяет газ и с кислотой, и со щёлочью, значит, это амфотерный металл (Zn). X с разбавленной HCl выделяет H2, но не реагирует с NaOH — это активный неамфотерный металл (Mg). Y не реагирует с разбавленной HCl, но с концентрированной HNO3 выделяет газ (NO2) — это полублагородный металл (Cu). Z не реагирует ни с одним раствором — это благородный металл (Au). Правильный порядок: Mg, Cu, Au, Zn. Типичные ошибки — поставить Zn на место X, который не реагирует с NaOH, перепутать Cu и Au или считать, что Ag и Cu не реагируют с концентрированной HNO3.",
+        "ar": "الفلز T وحده يطلق غازًا مع الحمض ومع القاعدة، فهو فلز أمفوتيري (Zn). يطلق X غاز H2 مع HCl المخفف ولا يتفاعل مع NaOH، فهو فلز نشط غير أمفوتيري (Mg). لا يتفاعل Y مع HCl المخفف لكنه يطلق غازًا (NO2) مع HNO3 المركّز، فهو فلز شبه نبيل (Cu). ولا يتفاعل Z مع أي محلول، فهو فلز نبيل (Au). الترتيب الصحيح Mg, Cu, Au, Zn. ومن الأخطاء الشائعة وضع Zn مكان X الذي لا يتفاعل مع NaOH، أو الخلط بين Cu وAu، أو الظن أن Ag وCu لا يتفاعلان مع HNO3 المركّز.",
+        "zh": "只有 T 既能与酸又能与碱反应放出气体，所以是两性金属(Zn)。X 与稀 HCl 反应放出 H2，但不与 NaOH 反应，是非两性的活泼金属(Mg)。Y 不与稀 HCl 反应，但与浓 HNO3 反应放出气体(NO2)，是半贵金属(Cu)。Z 与所有溶液都不反应，是贵金属(Au)。正确顺序为 Mg、Cu、Au、Zn。把 Zn 放在不与 NaOH 反应的 X 的位置、混淆 Cu 和 Au，或认为 Ag 和 Cu 不与浓 HNO3 反应，都是典型错误。",
+        "ku": "Tenê T hem bi asîdê hem jî bi bazê re gazê derdixe, ji ber vê yekê metaleke amfoter e (Zn). X bi HCl-a sulandî re H2 derdixe lê bi NaOH re reaksiyonê nake; metaleke çalak a ne-amfoter e (Mg). Y bi HCl-a sulandî re reaksiyonê nake lê bi HNO3-a tîr re gazê (NO2) derdixe; metaleke nîvesîl e (Cu). Z bi tu çareseriyê re reaksiyonê nake; metaleke esîl e (Au). Rêza rast Mg, Cu, Au, Zn e. Danîna Zn li şûna X ya ku bi NaOH re reaksiyonê nake, tevlihevkirina Cu û Au, an jî hesibandina ku Ag û Cu bi HNO3-a tîr re reaksiyonê nakin xeletiyên tîpîk in."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Metal",
+            "en": "Metal",
+            "de": "Metall",
+            "fr": "Métal",
+            "ru": "Металл",
+            "ar": "الفلز",
+            "zh": "金属",
+            "ku": "Metal"
+          },
+          {
+            "tr": "Seyreltik HCl",
+            "en": "Dilute HCl",
+            "de": "Verdünnte HCl",
+            "fr": "HCl dilué",
+            "ru": "Разб. HCl",
+            "ar": "HCl مخفف",
+            "zh": "稀 HCl",
+            "ku": "HCl-a sulandî"
+          },
+          {
+            "tr": "Derişik NaOH",
+            "en": "Conc. NaOH",
+            "de": "Konz. NaOH",
+            "fr": "NaOH concentré",
+            "ru": "Конц. NaOH",
+            "ar": "NaOH مركّز",
+            "zh": "浓 NaOH",
+            "ku": "NaOH-a tîr"
+          },
+          {
+            "tr": "Derişik HNO3",
+            "en": "Conc. HNO3",
+            "de": "Konz. HNO3",
+            "fr": "HNO3 concentré",
+            "ru": "Конц. HNO3",
+            "ar": "HNO3 مركّز",
+            "zh": "浓 HNO3",
+            "ku": "HNO3-a tîr"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            "+",
+            "−",
+            "+"
+          ],
+          [
+            "Y",
+            "−",
+            "−",
+            "+"
+          ],
+          [
+            "Z",
+            "−",
+            "−",
+            "−"
+          ],
+          [
+            "T",
+            "+",
+            "+",
+            "+"
+          ]
+        ],
+        "caption": {
+          "tr": "+: gaz çıkışı gözlenir   −: tepkime gözlenmez",
+          "en": "+: gas evolved   −: no reaction",
+          "de": "+: Gasentwicklung   −: keine Reaktion",
+          "fr": "+ : dégagement gazeux   − : aucune réaction",
+          "ru": "+: выделяется газ   −: реакции нет",
+          "ar": "+: يتصاعد غاز   −: لا تفاعل",
+          "zh": "+：有气体产生   −：无反应",
+          "ku": "+: gaz derdikeve   −: reaksiyon tune"
+        }
       }
     },
     {
@@ -1514,153 +1701,269 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin07",
       "stem": {
-        "tr": "Midesinde fazla asit (HCl) birikmesi nedeniyle mide ekşimesi yaşayan birine, aşağıdaki maddelerden hangisinin az miktarda suda çözülerek içilmesi geçici rahatlama sağlar?",
-        "en": "Someone suffers from heartburn because of excess acid (HCl) in the stomach. Drinking a small amount of which of the following, dissolved in water, gives temporary relief?",
-        "de": "Jemand hat Sodbrennen wegen überschüssiger Säure (HCl) im Magen. Welcher der folgenden Stoffe, in wenig Wasser gelöst und getrunken, verschafft vorübergehend Linderung?",
-        "fr": "Une personne souffre de brûlures d'estomac dues à un excès d'acide (HCl) dans l'estomac. Laquelle des substances suivantes, dissoute en petite quantité dans de l'eau et bue, apporte un soulagement temporaire ?",
-        "ru": "У человека изжога из-за избытка кислоты (HCl) в желудке. Какое из перечисленных веществ, растворённое в небольшом количестве воды, принесёт ему временное облегчение?",
-        "ar": "يعاني شخص من حرقة المعدة بسبب زيادة الحمض (HCl) في معدته. أيّ المواد التالية إذا أُذيب قليل منها في الماء وشُرب يمنح راحة مؤقتة؟",
-        "zh": "某人因胃中胃酸(HCl)过多而胃灼热。将下列哪种物质少量溶于水后饮用可暂时缓解？",
-        "ku": "Kesek ji ber berhevbûna asîda zêde (HCl) di mîdeya xwe de ji şewata mîdeyê dikişîne. Eger hinekî ji kîjan ji van madeyan di avê de bê helandin û bê vexwarin, rehetiyeke demkî dide?"
+        "tr": "Şekilde 25 °C'deki K, L ve M sulu çözeltilerinin pH değerleri pH çizelgesi üzerinde gösterilmiştir.\nI. K çözeltisindeki H+ iyonu derişimi, L çözeltisindekinin 1000 katıdır.\nII. M çözeltisi mavi ve kırmızı turnusol kâğıtlarının rengini değiştirmez.\nIII. L çözeltisine saf su eklenmeye devam edilirse çözeltinin pH değeri 7'nin üzerine çıkar.\nyargılarından hangileri doğrudur?",
+        "en": "The figure shows the pH values of aqueous solutions K, L and M at 25 °C on a pH scale. Which of the following statements are true?\nI. The H+ ion concentration in solution K is 1000 times that in solution L.\nII. Solution M does not change the colour of blue or red litmus paper.\nIII. If pure water keeps being added to solution L, its pH rises above 7.",
+        "de": "Die Abbildung zeigt die pH-Werte der wässrigen Lösungen K, L und M bei 25 °C auf einer pH-Skala. Welche Aussagen sind richtig?\nI. Die H+-Konzentration in Lösung K ist 1000-mal so groß wie in Lösung L.\nII. Lösung M verändert die Farbe von blauem und rotem Lackmuspapier nicht.\nIII. Gibt man fortlaufend reines Wasser zu Lösung L, steigt ihr pH-Wert über 7.",
+        "fr": "La figure indique, sur une échelle de pH, le pH des solutions aqueuses K, L et M à 25 °C. Quelles affirmations sont vraies ?\nI. La concentration en ions H+ de la solution K est 1000 fois celle de la solution L.\nII. La solution M ne change pas la couleur du papier de tournesol bleu ni rouge.\nIII. Si l'on continue d'ajouter de l'eau pure à la solution L, son pH dépasse 7.",
+        "ru": "На рисунке на шкале pH отмечены значения pH водных растворов K, L и M при 25 °C. Какие утверждения верны?\nI. Концентрация ионов H+ в растворе K в 1000 раз больше, чем в растворе L.\nII. Раствор M не изменяет окраску ни синей, ни красной лакмусовой бумаги.\nIII. Если продолжать добавлять к раствору L чистую воду, его pH станет больше 7.",
+        "ar": "يبيّن الشكل قيم pH للمحاليل المائية K وL وM عند 25 °C على مقياس pH. أيّ العبارات الآتية صحيحة؟\nI. تركيز أيونات H+ في المحلول K يساوي 1000 ضعف تركيزها في المحلول L.\nII. لا يغيّر المحلول M لون ورق عباد الشمس الأزرق ولا الأحمر.\nIII. إذا استمرت إضافة الماء النقي إلى المحلول L ترتفع قيمة pH إلى أكثر من 7.",
+        "zh": "图中在 pH 标尺上标出了 25 °C 时水溶液 K、L、M 的 pH。下列说法中哪些正确？\nI. 溶液 K 中 H+ 离子的浓度是溶液 L 中的 1000 倍。\nII. 溶液 M 不能使蓝色或红色石蕊试纸变色。\nIII. 若不断向溶液 L 中加入纯水，其 pH 会升高到 7 以上。",
+        "ku": "Di şeklê de nirxên pH-ê yên çareseriyên avî K, L û M di 25 °C de li ser pîvana pH-ê hatine nîşandan. Kîjan ji van gotinan rast in?\nI. Tîrbûna îyonên H+ di çareseriya K de 1000 qatê ya di çareseriya L de ye.\nII. Çareseriya M rengê kaxezên turnusola şîn û sor naguherîne.\nIII. Eger av a saf her ku diçe li çareseriya L were zêdekirin, pH-a wê ji 7-an derbas dibe."
       },
       "options": [
         {
-          "tr": "Yemek sodası (NaHCO3)",
-          "en": "Baking soda (NaHCO3)",
-          "de": "Natron (NaHCO3)",
-          "fr": "Bicarbonate de soude (NaHCO3)",
-          "ru": "Пищевая сода (NaHCO3)",
-          "ar": "صودا الخبز (NaHCO3)",
-          "zh": "小苏打(NaHCO3)",
-          "ku": "Sodaya xwarinê (NaHCO3)"
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Sofra tuzu (NaCl)",
-          "en": "Table salt (NaCl)",
-          "de": "Kochsalz (NaCl)",
-          "fr": "Sel de table (NaCl)",
-          "ru": "Поваренная соль (NaCl)",
-          "ar": "ملح الطعام (NaCl)",
-          "zh": "食盐(NaCl)",
-          "ku": "Xwêya sifrê (NaCl)"
+          "tr": "Yalnız II",
+          "en": "Only II",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "Sirke (CH3COOH)",
-          "en": "Vinegar (CH3COOH)",
-          "de": "Essig (CH3COOH)",
-          "fr": "Vinaigre (CH3COOH)",
-          "ru": "Уксус (CH3COOH)",
-          "ar": "الخل (CH3COOH)",
-          "zh": "醋(CH3COOH)",
-          "ku": "Sîrke (CH3COOH)"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Limon suyu (sitrik asit)",
-          "en": "Lemon juice (citric acid)",
-          "de": "Zitronensaft (Citronensäure)",
-          "fr": "Jus de citron (acide citrique)",
-          "ru": "Лимонный сок (лимонная кислота)",
-          "ar": "عصير الليمون (حمض الستريك)",
-          "zh": "柠檬汁（柠檬酸）",
-          "ku": "Ava lîmonê (asîda sîtrîk)"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         },
         {
-          "tr": "Seyreltik tuz ruhu (HCl)",
-          "en": "Dilute hydrochloric acid (HCl)",
-          "de": "Verdünnte Salzsäure (HCl)",
-          "fr": "Acide chlorhydrique dilué (HCl)",
-          "ru": "Разбавленная соляная кислота (HCl)",
-          "ar": "حمض الهيدروكلوريك المخفّف (HCl)",
-          "zh": "稀盐酸(HCl)",
-          "ku": "Asîda hîdroklorîk a sist (HCl)"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Fazla mide asidini azaltmak için bazik özellik gösteren bir madde gerekir. Yemek sodası asitle NaHCO3 + HCl → NaCl + H2O + CO2 tepkimesini verir ve asidi nötrleştirir. Sirke, limon suyu ve tuz ruhu asittir; mideye daha fazla H+ ekler. Sofra tuzu kuvvetli asit ile kuvvetli bazın tuzudur, nötrdür ve asitle tepkime vermez.",
-        "en": "To reduce excess stomach acid a substance with basic character is needed. Baking soda reacts with the acid, NaHCO3 + HCl → NaCl + H2O + CO2, and neutralizes it. Vinegar, lemon juice and hydrochloric acid are acids and add more H+ to the stomach. Table salt is the salt of a strong acid and a strong base; it is neutral and does not react with the acid.",
-        "de": "Um überschüssige Magensäure zu verringern, braucht man einen basisch wirkenden Stoff. Natron reagiert mit der Säure: NaHCO3 + HCl → NaCl + H2O + CO2 und neutralisiert sie. Essig, Zitronensaft und Salzsäure sind Säuren und führen dem Magen noch mehr H+ zu. Kochsalz ist das Salz einer starken Säure und einer starken Base, neutral und reagiert nicht mit der Säure.",
-        "fr": "Pour réduire l'excès d'acide gastrique, il faut une substance à caractère basique. Le bicarbonate de soude réagit avec l'acide : NaHCO3 + HCl → NaCl + H2O + CO2, et le neutralise. Le vinaigre, le jus de citron et l'acide chlorhydrique sont des acides et ajoutent encore des H+. Le sel de table est le sel d'un acide fort et d'une base forte : il est neutre et ne réagit pas avec l'acide.",
-        "ru": "Чтобы уменьшить избыток желудочной кислоты, нужно вещество с основными свойствами. Пищевая сода реагирует с кислотой: NaHCO3 + HCl → NaCl + H2O + CO2 и нейтрализует её. Уксус, лимонный сок и соляная кислота — кислоты и добавляют ещё больше H+. Поваренная соль — соль сильной кислоты и сильного основания, она нейтральна и с кислотой не реагирует.",
-        "ar": "لتقليل حمض المعدة الزائد تلزم مادة ذات خواص قاعدية. تتفاعل صودا الخبز مع الحمض: NaHCO3 + HCl → NaCl + H2O + CO2 فتعادله. أما الخل وعصير الليمون وحمض الهيدروكلوريك فهي أحماض تضيف مزيدًا من H+. وملح الطعام ملح حمض قوي وقاعدة قوية، متعادل ولا يتفاعل مع الحمض.",
-        "zh": "要减少过多的胃酸，需要具有碱性的物质。小苏打与酸反应：NaHCO3 + HCl → NaCl + H2O + CO2，从而中和胃酸。醋、柠檬汁和盐酸都是酸，会向胃中加入更多 H+。食盐是强酸强碱盐，呈中性，不与酸反应。",
-        "ku": "Ji bo kêmkirina asîda zêde ya mîdeyê madeyeke bi taybetmendiya bazî pêwîst e. Sodaya xwarinê bi reaksiyona NaHCO3 + HCl → NaCl + H2O + CO2 bi asîdê re dikeve reaksiyonê û asîdê neutralîze dike. Sîrke, ava lîmonê û asîda hîdroklorîk asîd in û bêtir H+ li mîdeyê zêde dikin. Xwêya sifrê xwêya asîdeke bihêz û bazeke bihêz e, bêalî ye û bi asîdê re nakeve reaksiyonê."
+        "tr": "Şekilden K'nin pH'ı 2, L'ninki 5, M'ninki 7 okunur. I. [H+] = 10^-pH olduğundan K'de 10^-2 M, L'de 10^-5 M H+ vardır; oran 10^3 = 1000'dir; doğru. II. pH'ı 7 olan M nötrdür, turnusolün rengini değiştirmez; doğru. III. Asidik bir çözelti seyreltildikçe H+ derişimi azalır ve pH 7'ye yaklaşır; ancak su eklemek ortama OH- fazlası kazandırmadığı için pH 7'yi geçemez; yanlış. pH farkı 3 diye derişim farkını 3 kat sanmak tipik bir hatadır.",
+        "en": "From the figure, the pH of K is 2, of L is 5 and of M is 7. I. Since [H+] = 10^-pH, K contains 10^-2 M and L 10^-5 M H+; the ratio is 10^3 = 1000; true. II. M, with pH 7, is neutral and does not change the colour of litmus; true. III. When an acidic solution is diluted, [H+] decreases and the pH approaches 7, but adding water cannot create an excess of OH-, so the pH cannot exceed 7; false. Thinking that a pH difference of 3 means a 3-fold concentration difference is a typical mistake.",
+        "de": "Aus der Abbildung liest man pH = 2 für K, 5 für L und 7 für M ab. I. Wegen [H+] = 10^-pH enthält K 10^-2 M und L 10^-5 M H+; das Verhältnis ist 10^3 = 1000; richtig. II. M mit pH 7 ist neutral und verändert die Lackmusfarbe nicht; richtig. III. Beim Verdünnen einer sauren Lösung sinkt [H+] und der pH-Wert nähert sich 7; Wasser erzeugt aber keinen OH--Überschuss, daher kann der pH-Wert 7 nicht überschreiten; falsch. Ein typischer Fehler ist, einen pH-Unterschied von 3 als dreifachen Konzentrationsunterschied zu deuten.",
+        "fr": "On lit sur la figure pH = 2 pour K, 5 pour L et 7 pour M. I. Comme [H+] = 10^-pH, K contient 10^-2 M et L 10^-5 M de H+ ; le rapport vaut 10^3 = 1000 ; vrai. II. M, de pH 7, est neutre et ne change pas la couleur du tournesol ; vrai. III. Quand on dilue une solution acide, [H+] diminue et le pH tend vers 7, mais l'ajout d'eau ne crée pas d'excès de OH-, donc le pH ne peut pas dépasser 7 ; faux. Croire qu'un écart de pH de 3 correspond à un rapport de concentrations de 3 est une erreur typique.",
+        "ru": "По рисунку pH раствора K равен 2, L — 5, M — 7. I. Так как [H+] = 10^-pH, в K содержится 10^-2 M, а в L 10^-5 M H+; отношение 10^3 = 1000; верно. II. Раствор M с pH 7 нейтрален и не меняет окраску лакмуса; верно. III. При разбавлении кислого раствора [H+] уменьшается и pH приближается к 7, но добавление воды не создаёт избытка OH-, поэтому pH не может превысить 7; неверно. Считать, что разница pH в 3 единицы означает трёхкратную разницу концентраций, — типичная ошибка.",
+        "ar": "يُقرأ من الشكل أن pH المحلول K يساوي 2 وL يساوي 5 وM يساوي 7. I. بما أن [H+] = 10^-pH ففي K يوجد 10^-2 M من H+ وفي L يوجد 10^-5 M؛ والنسبة 10^3 = 1000؛ صحيحة. II. المحلول M الذي pH له 7 متعادل ولا يغيّر لون عباد الشمس؛ صحيحة. III. عند تخفيف محلول حمضي يقل [H+] ويقترب pH من 7، لكن إضافة الماء لا تُحدث فائضًا من OH-، لذا لا يتجاوز pH القيمة 7؛ خاطئة. ومن الأخطاء الشائعة الظن أن فرق pH بمقدار 3 يعني فرقًا في التركيز بمقدار 3 أضعاف.",
+        "zh": "由图可读出 K 的 pH 为 2，L 为 5，M 为 7。I. 因为 [H+] = 10^-pH，K 中 H+ 为 10^-2 M，L 中为 10^-5 M，比值为 10^3 = 1000；正确。II. pH 为 7 的 M 呈中性，不使石蕊变色；正确。III. 酸性溶液稀释时 [H+] 减小，pH 趋近于 7，但加水不会产生过量的 OH-，所以 pH 不会超过 7；错误。认为 pH 相差 3 就是浓度相差 3 倍，是典型错误。",
+        "ku": "Ji şeklê tê xwendin ku pH-a K 2, ya L 5 û ya M 7 ye. I. Ji ber ku [H+] = 10^-pH, di K de 10^-2 M û di L de 10^-5 M H+ heye; rêje 10^3 = 1000 e; rast e. II. M ya ku pH-a wê 7 e notir e û rengê turnusolê naguherîne; rast e. III. Dema çareseriyeke asîdî tê sulandin [H+] kêm dibe û pH nêzî 7-an dibe; lê zêdekirina avê OH- zêde çênake, ji ber vê yekê pH nikare ji 7-an derbas bibe; şaş e. Hesibandina ku cudahiya pH-ê ya 3 tê wateya cudahiya tîrbûnê ya 3 qatî xeletiyeke tîpîk e."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 170,
+        "markup": "<text x=\"180\" y=\"22\" text-anchor=\"middle\" class=\"qf-strong\">pH (25 °C)</text><rect x=\"30\" y=\"96\" width=\"150\" height=\"16\" class=\"qf-accent2\"/><rect x=\"180\" y=\"96\" width=\"150\" height=\"16\" class=\"qf-accent3\"/><rect x=\"30\" y=\"96\" width=\"300\" height=\"16\" class=\"qf-line\"/><line x1=\"30.0\" y1=\"112\" x2=\"30.0\" y2=\"118\" class=\"qf-line\"/><text x=\"30.0\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">0</text><line x1=\"51.4\" y1=\"112\" x2=\"51.4\" y2=\"118\" class=\"qf-line\"/><text x=\"51.4\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">1</text><line x1=\"72.9\" y1=\"112\" x2=\"72.9\" y2=\"118\" class=\"qf-line\"/><text x=\"72.9\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">2</text><line x1=\"94.3\" y1=\"112\" x2=\"94.3\" y2=\"118\" class=\"qf-line\"/><text x=\"94.3\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">3</text><line x1=\"115.7\" y1=\"112\" x2=\"115.7\" y2=\"118\" class=\"qf-line\"/><text x=\"115.7\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">4</text><line x1=\"137.1\" y1=\"112\" x2=\"137.1\" y2=\"118\" class=\"qf-line\"/><text x=\"137.1\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">5</text><line x1=\"158.6\" y1=\"112\" x2=\"158.6\" y2=\"118\" class=\"qf-line\"/><text x=\"158.6\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">6</text><line x1=\"180.0\" y1=\"112\" x2=\"180.0\" y2=\"118\" class=\"qf-line\"/><text x=\"180.0\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">7</text><line x1=\"201.4\" y1=\"112\" x2=\"201.4\" y2=\"118\" class=\"qf-line\"/><text x=\"201.4\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">8</text><line x1=\"222.9\" y1=\"112\" x2=\"222.9\" y2=\"118\" class=\"qf-line\"/><text x=\"222.9\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">9</text><line x1=\"244.3\" y1=\"112\" x2=\"244.3\" y2=\"118\" class=\"qf-line\"/><text x=\"244.3\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">10</text><line x1=\"265.7\" y1=\"112\" x2=\"265.7\" y2=\"118\" class=\"qf-line\"/><text x=\"265.7\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">11</text><line x1=\"287.1\" y1=\"112\" x2=\"287.1\" y2=\"118\" class=\"qf-line\"/><text x=\"287.1\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">12</text><line x1=\"308.6\" y1=\"112\" x2=\"308.6\" y2=\"118\" class=\"qf-line\"/><text x=\"308.6\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">13</text><line x1=\"330.0\" y1=\"112\" x2=\"330.0\" y2=\"118\" class=\"qf-line\"/><text x=\"330.0\" y=\"132\" text-anchor=\"middle\" class=\"qf-small\">14</text><polygon points=\"65.9,78 79.9,78 72.9,92\" class=\"qf-accent\"/><text x=\"72.9\" y=\"70\" text-anchor=\"middle\" class=\"qf-big\">K</text><polygon points=\"130.1,78 144.1,78 137.1,92\" class=\"qf-accent\"/><text x=\"137.1\" y=\"70\" text-anchor=\"middle\" class=\"qf-big\">L</text><polygon points=\"173.0,78 187.0,78 180.0,92\" class=\"qf-accent\"/><text x=\"180.0\" y=\"70\" text-anchor=\"middle\" class=\"qf-big\">M</text><text x=\"105\" y=\"158\" text-anchor=\"middle\" class=\"qf-small\">{{acid}}</text><text x=\"255\" y=\"158\" text-anchor=\"middle\" class=\"qf-small\">{{base}}</text>",
+        "labels": {
+          "acid": {
+            "tr": "← asidik",
+            "en": "← acidic",
+            "de": "← sauer",
+            "fr": "← acide",
+            "ru": "← кислая",
+            "ar": "← حمضي",
+            "zh": "← 酸性",
+            "ku": "← asîdî"
+          },
+          "base": {
+            "tr": "bazik →",
+            "en": "basic →",
+            "de": "basisch →",
+            "fr": "basique →",
+            "ru": "щелочная →",
+            "ar": "قاعدي →",
+            "zh": "碱性 →",
+            "ku": "bazî →"
+          }
+        }
       }
     },
     {
       "id": "u09-twin08",
       "stem": {
-        "tr": "10 g CaCO3 katısı yeterli miktarda HCl çözeltisi ile tamamen tepkimeye girdiğinde normal koşullarda (NK) kaç litre CO2 gazı açığa çıkar? (CaCO3 = 100 g/mol; NK'da 1 mol gaz 22,4 L)",
-        "en": "When 10 g of solid CaCO3 reacts completely with enough HCl solution, how many litres of CO2 gas are released at STP (0 °C, 1 atm)? (CaCO3 = 100 g/mol; 1 mol of gas occupies 22.4 L at STP)",
-        "de": "Wie viel Liter CO2-Gas entstehen unter Normbedingungen (0 °C, 1 atm), wenn 10 g festes CaCO3 vollständig mit ausreichend HCl-Lösung reagieren? (CaCO3 = 100 g/mol; 1 mol Gas nimmt unter Normbedingungen 22,4 L ein)",
-        "fr": "Quand 10 g de CaCO3 solide réagissent complètement avec suffisamment de solution de HCl, combien de litres de CO2 se dégagent dans les conditions normales (0 °C, 1 atm) ? (CaCO3 = 100 g/mol ; 1 mol de gaz occupe 22,4 L dans les CN)",
-        "ru": "Сколько литров газа CO2 (н. у.) выделится при полном взаимодействии 10 г твёрдого CaCO3 с достаточным количеством раствора HCl? (CaCO3 = 100 г/моль; 1 моль газа при н. у. занимает 22,4 л)",
-        "ar": "عند تفاعل 10 g من CaCO3 الصلب تفاعلًا تامًا مع كمية كافية من محلول HCl، كم لترًا من غاز CO2 يتصاعد في الظروف القياسية؟ (CaCO3 = 100 g/mol؛ 1 mol من الغاز يشغل 22.4 L في الظروف القياسية)",
-        "zh": "10 g CaCO3 固体与足量 HCl 溶液完全反应，在标准状况(0 °C、1 atm)下放出多少升 CO2 气体？(CaCO3 = 100 g/mol；标准状况下 1 mol 气体为 22.4 L)",
-        "ku": "Dema 10 g CaCO3-ya hişk bi qasî têr çareseriya HCl re bi tevahî dikeve reaksiyonê, di şertên normal (ŞN) de çend lître gaza CO2 derdikeve? (CaCO3 = 100 g/mol; di ŞN de 1 mol gaz 22,4 L ye)"
+        "tr": "CaCO3 ve NaCl katılarından oluşan 30 g'lık bir karışım yeterli miktarda HCl çözeltisine atılıyor. Şekildeki grafik, açığa çıkan CO2 gazının normal koşullardaki (NK) hacminin zamanla değişimini göstermektedir. Karışımdaki NaCl kütlesi kaç gramdır? (CaCO3 = 100 g/mol; NK'da 1 mol gaz 22,4 L)",
+        "en": "A 30 g mixture of solid CaCO3 and NaCl is placed in enough HCl solution. The graph shows how the volume of CO2 released (measured at STP) changes with time. What is the mass of NaCl in the mixture in grams? (CaCO3 = 100 g/mol; 1 mol of gas occupies 22.4 L at STP)",
+        "de": "Ein 30 g schweres Gemisch aus festem CaCO3 und NaCl wird in ausreichend HCl-Lösung gegeben. Das Diagramm zeigt, wie sich das Volumen des freigesetzten CO2 (unter Normbedingungen) mit der Zeit ändert. Wie viel Gramm NaCl enthält das Gemisch? (CaCO3 = 100 g/mol; 1 mol Gas nimmt unter Normbedingungen 22,4 L ein)",
+        "fr": "On place 30 g d'un mélange de CaCO3 et de NaCl solides dans suffisamment de solution de HCl. Le graphique montre l'évolution dans le temps du volume de CO2 dégagé (mesuré dans les CN). Quelle est la masse de NaCl dans le mélange, en grammes ? (CaCO3 = 100 g/mol ; 1 mol de gaz occupe 22,4 L dans les CN)",
+        "ru": "Смесь твёрдых CaCO3 и NaCl массой 30 г поместили в достаточное количество раствора HCl. На графике показано изменение во времени объёма выделившегося CO2 (н. у.). Сколько граммов NaCl содержится в смеси? (CaCO3 = 100 г/моль; 1 моль газа при н. у. занимает 22,4 л)",
+        "ar": "وُضع خليط كتلته 30 g من مادتَي CaCO3 وNaCl الصلبتين في كمية كافية من محلول HCl. يبيّن الرسم البياني تغيّر حجم غاز CO2 المتصاعد (مقيسًا في الظروف القياسية) مع الزمن. ما كتلة NaCl في الخليط بالغرام؟ (CaCO3 = 100 g/mol؛ 1 mol من الغاز يشغل 22.4 L في الظروف القياسية)",
+        "zh": "将由固体 CaCO3 和 NaCl 组成的 30 g 混合物放入足量 HCl 溶液中。图中给出了放出的 CO2 气体体积（标准状况）随时间的变化。混合物中 NaCl 的质量是多少克？(CaCO3 = 100 g/mol；标准状况下 1 mol 气体为 22.4 L)",
+        "ku": "Tevliheviyeke 30 g ji hişkên CaCO3 û NaCl tê avêtin nav çareseriya HCl a têr. Grafîka di şeklê de nîşan dide ku qebareya gaza CO2 ya derketî (di şertên normal de) bi demê re çawa diguhere. Girseya NaCl di tevliheviyê de çend gram e? (CaCO3 = 100 g/mol; di ŞN de 1 mol gaz 22,4 L ye)"
       },
       "options": [
         {
-          "tr": "0,224 L",
-          "en": "0.224 L",
-          "de": "0,224 L",
-          "fr": "0,224 L",
-          "ru": "0,224 л",
-          "ar": "0.224 L",
-          "zh": "0.224 L",
-          "ku": "0,224 L"
+          "tr": "5",
+          "en": "5",
+          "de": "5",
+          "fr": "5",
+          "ru": "5",
+          "ar": "5",
+          "zh": "5",
+          "ku": "5"
         },
         {
-          "tr": "1,12 L",
-          "en": "1.12 L",
-          "de": "1,12 L",
-          "fr": "1,12 L",
-          "ru": "1,12 л",
-          "ar": "1.12 L",
-          "zh": "1.12 L",
-          "ku": "1,12 L"
+          "tr": "10",
+          "en": "10",
+          "de": "10",
+          "fr": "10",
+          "ru": "10",
+          "ar": "10",
+          "zh": "10",
+          "ku": "10"
         },
         {
-          "tr": "2,24 L",
-          "en": "2.24 L",
-          "de": "2,24 L",
-          "fr": "2,24 L",
-          "ru": "2,24 л",
-          "ar": "2.24 L",
-          "zh": "2.24 L",
-          "ku": "2,24 L"
+          "tr": "15",
+          "en": "15",
+          "de": "15",
+          "fr": "15",
+          "ru": "15",
+          "ar": "15",
+          "zh": "15",
+          "ku": "15"
         },
         {
-          "tr": "4,48 L",
-          "en": "4.48 L",
-          "de": "4,48 L",
-          "fr": "4,48 L",
-          "ru": "4,48 л",
-          "ar": "4.48 L",
-          "zh": "4.48 L",
-          "ku": "4,48 L"
+          "tr": "20",
+          "en": "20",
+          "de": "20",
+          "fr": "20",
+          "ru": "20",
+          "ar": "20",
+          "zh": "20",
+          "ku": "20"
         },
         {
-          "tr": "22,4 L",
-          "en": "22.4 L",
-          "de": "22,4 L",
-          "fr": "22,4 L",
-          "ru": "22,4 л",
-          "ar": "22.4 L",
-          "zh": "22.4 L",
-          "ku": "22,4 L"
+          "tr": "25",
+          "en": "25",
+          "de": "25",
+          "fr": "25",
+          "ru": "25",
+          "ar": "25",
+          "zh": "25",
+          "ku": "25"
         }
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "explanation": {
-        "tr": "CaCO3 + 2HCl → CaCl2 + H2O + CO2. n(CaCO3) = 10 / 100 = 0,1 mol ve tepkimeye göre 1 mol CaCO3'ten 1 mol CO2 oluşur, yani 0,1 mol CO2: V = 0,1 × 22,4 = 2,24 L. HCl'nin katsayısı (2) CO2'ye uygulanırsa 4,48 L, mol sayısı hesaplanmadan 1 mol alınırsa 22,4 L bulunur.",
-        "en": "CaCO3 + 2HCl → CaCl2 + H2O + CO2. n(CaCO3) = 10 / 100 = 0.1 mol, and 1 mol CaCO3 gives 1 mol CO2, so 0.1 mol CO2: V = 0.1 × 22.4 = 2.24 L. Applying the HCl coefficient (2) to CO2 gives 4.48 L; taking 1 mol without computing the amount gives 22.4 L.",
-        "de": "CaCO3 + 2HCl → CaCl2 + H2O + CO2. n(CaCO3) = 10 / 100 = 0,1 mol; aus 1 mol CaCO3 entsteht 1 mol CO2, also 0,1 mol CO2: V = 0,1 × 22,4 = 2,24 L. Überträgt man den Koeffizienten von HCl (2) auf CO2, erhält man 4,48 L; nimmt man ohne Rechnung 1 mol an, 22,4 L.",
-        "fr": "CaCO3 + 2HCl → CaCl2 + H2O + CO2. n(CaCO3) = 10 / 100 = 0,1 mol ; 1 mol de CaCO3 donne 1 mol de CO2, soit 0,1 mol de CO2 : V = 0,1 × 22,4 = 2,24 L. Appliquer le coefficient de HCl (2) au CO2 donne 4,48 L ; prendre 1 mol sans calcul donne 22,4 L.",
-        "ru": "CaCO3 + 2HCl → CaCl2 + H2O + CO2. n(CaCO3) = 10 / 100 = 0,1 моль; из 1 моль CaCO3 образуется 1 моль CO2, т. е. 0,1 моль CO2: V = 0,1 × 22,4 = 2,24 л. Если перенести коэффициент HCl (2) на CO2, получится 4,48 л; если взять 1 моль без расчёта — 22,4 л.",
-        "ar": "CaCO3 + 2HCl → CaCl2 + H2O + CO2. n(CaCO3) = 10 / 100 = 0.1 mol، ومن 1 mol من CaCO3 ينتج 1 mol من CO2، أي 0.1 mol من CO2: V = 0.1 × 22.4 = 2.24 L. وإذا طُبّق معامل HCl (2) على CO2 تنتج 4.48 L، وإذا أُخذ 1 mol دون حساب تنتج 22.4 L.",
-        "zh": "CaCO3 + 2HCl → CaCl2 + H2O + CO2。n(CaCO3) = 10 / 100 = 0.1 mol，1 mol CaCO3 生成 1 mol CO2，即 0.1 mol CO2：V = 0.1 × 22.4 = 2.24 L。若把 HCl 的系数(2)用于 CO2，得 4.48 L；若不计算而直接取 1 mol，得 22.4 L。",
-        "ku": "CaCO3 + 2HCl → CaCl2 + H2O + CO2. n(CaCO3) = 10 / 100 = 0,1 mol; li gorî reaksiyonê ji 1 mol CaCO3 1 mol CO2 çêdibe, ango 0,1 mol CO2: V = 0,1 × 22,4 = 2,24 L. Eger hevbera HCl (2) li ser CO2 were sepandin 4,48 L, eger bêyî hesabkirina hejmara molan 1 mol were girtin 22,4 L tê dîtin."
+        "tr": "Grafikte gaz hacmi 4,48 L'de sabitlenir; tepkime bittiğinde toplam 4,48 L CO2 oluşmuştur: n(CO2) = 4,48 / 22,4 = 0,2 mol. NaCl, HCl ile gaz oluşturmaz; CO2'nin tamamı CaCO3 + 2HCl → CaCl2 + H2O + CO2 tepkimesinden gelir. Bu yüzden n(CaCO3) = 0,2 mol, m(CaCO3) = 0,2 × 100 = 20 g ve m(NaCl) = 30 − 20 = 10 g'dır. CaCO3 kütlesini (20 g) cevap sanmak ya da HCl'nin katsayısını CO2'ye uygulayıp 0,1 mol CaCO3 bulmak (NaCl = 20 g) tipik hatalardır.",
+        "en": "On the graph the gas volume levels off at 4.48 L, so when the reaction is over 4.48 L of CO2 has formed: n(CO2) = 4.48 / 22.4 = 0.2 mol. NaCl gives no gas with HCl; all the CO2 comes from CaCO3 + 2HCl → CaCl2 + H2O + CO2. Therefore n(CaCO3) = 0.2 mol, m(CaCO3) = 0.2 × 100 = 20 g and m(NaCl) = 30 − 20 = 10 g. Giving the mass of CaCO3 (20 g) as the answer, or applying the coefficient of HCl to CO2 and finding 0.1 mol CaCO3 (NaCl = 20 g), are typical mistakes.",
+        "de": "Im Diagramm bleibt das Gasvolumen bei 4,48 L konstant; nach Reaktionsende sind also 4,48 L CO2 entstanden: n(CO2) = 4,48 / 22,4 = 0,2 mol. NaCl bildet mit HCl kein Gas; das gesamte CO2 stammt aus CaCO3 + 2HCl → CaCl2 + H2O + CO2. Daher ist n(CaCO3) = 0,2 mol, m(CaCO3) = 0,2 × 100 = 20 g und m(NaCl) = 30 − 20 = 10 g. Typische Fehler sind, die Masse von CaCO3 (20 g) anzugeben oder den Koeffizienten von HCl auf CO2 anzuwenden und 0,1 mol CaCO3 zu erhalten (NaCl = 20 g).",
+        "fr": "Sur le graphique, le volume de gaz se stabilise à 4,48 L : à la fin de la réaction, 4,48 L de CO2 se sont formés, soit n(CO2) = 4,48 / 22,4 = 0,2 mol. NaCl ne donne pas de gaz avec HCl ; tout le CO2 provient de CaCO3 + 2HCl → CaCl2 + H2O + CO2. Donc n(CaCO3) = 0,2 mol, m(CaCO3) = 0,2 × 100 = 20 g et m(NaCl) = 30 − 20 = 10 g. Donner la masse de CaCO3 (20 g) comme réponse, ou appliquer le coefficient de HCl au CO2 et trouver 0,1 mol de CaCO3 (NaCl = 20 g), sont des erreurs typiques.",
+        "ru": "По графику объём газа перестаёт расти на отметке 4,48 л, то есть к концу реакции образовалось 4,48 л CO2: n(CO2) = 4,48 / 22,4 = 0,2 моль. NaCl не выделяет газа с HCl; весь CO2 образуется по реакции CaCO3 + 2HCl → CaCl2 + H2O + CO2. Поэтому n(CaCO3) = 0,2 моль, m(CaCO3) = 0,2 × 100 = 20 г, а m(NaCl) = 30 − 20 = 10 г. Типичные ошибки — указать массу CaCO3 (20 г) или перенести коэффициент HCl на CO2 и получить 0,1 моль CaCO3 (NaCl = 20 г).",
+        "ar": "في الرسم البياني يثبت حجم الغاز عند 4.48 L، أي إنه عند انتهاء التفاعل تكوّن 4.48 L من CO2: n(CO2) = 4.48 / 22.4 = 0.2 mol. لا يُطلق NaCl غازًا مع HCl، وكل CO2 يأتي من التفاعل CaCO3 + 2HCl → CaCl2 + H2O + CO2. لذا n(CaCO3) = 0.2 mol وm(CaCO3) = 0.2 × 100 = 20 g وm(NaCl) = 30 − 20 = 10 g. ومن الأخطاء الشائعة إعطاء كتلة CaCO3 (20 g) إجابةً، أو تطبيق معامل HCl على CO2 والحصول على 0.1 mol من CaCO3 (NaCl = 20 g).",
+        "zh": "图中气体体积在 4.48 L 处保持不变，即反应结束时共生成 4.48 L CO2：n(CO2) = 4.48 / 22.4 = 0.2 mol。NaCl 与 HCl 不产生气体，CO2 全部来自 CaCO3 + 2HCl → CaCl2 + H2O + CO2。因此 n(CaCO3) = 0.2 mol，m(CaCO3) = 0.2 × 100 = 20 g，m(NaCl) = 30 − 20 = 10 g。把 CaCO3 的质量(20 g)当作答案，或把 HCl 的系数套用到 CO2 上得出 0.1 mol CaCO3(NaCl = 20 g)，都是典型错误。",
+        "ku": "Di grafîkê de qebareya gazê li 4,48 L sabît dibe; yanî dema reaksiyon diqede bi giştî 4,48 L CO2 çêbûye: n(CO2) = 4,48 / 22,4 = 0,2 mol. NaCl bi HCl re gazê dernaxe; hemû CO2 ji reaksiyona CaCO3 + 2HCl → CaCl2 + H2O + CO2 tê. Ji ber vê yekê n(CaCO3) = 0,2 mol, m(CaCO3) = 0,2 × 100 = 20 g û m(NaCl) = 30 − 20 = 10 g ye. Dayîna girseya CaCO3 (20 g) wek bersiv, an jî sepandina kêşeya HCl li ser CO2 û dîtina 0,1 mol CaCO3 (NaCl = 20 g) xeletiyên tîpîk in."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman (s)",
+          "en": "Time (s)",
+          "de": "Zeit (s)",
+          "fr": "Temps (s)",
+          "ru": "Время (с)",
+          "ar": "الزمن (s)",
+          "zh": "时间 (s)",
+          "ku": "Dem (s)"
+        },
+        "yLabel": {
+          "tr": "CO₂ hacmi (L, NK)",
+          "en": "CO₂ volume (L, STP)",
+          "de": "CO₂-Volumen (L, NB)",
+          "fr": "Volume de CO₂ (L, CN)",
+          "ru": "Объём CO₂ (л, н. у.)",
+          "ar": "حجم CO₂ (L، ظ.ق.)",
+          "zh": "CO₂ 体积 (L，标况)",
+          "ku": "Qebareya CO₂ (L, ŞN)"
+        },
+        "xMax": 120,
+        "yMax": 6,
+        "xTicks": [
+          30,
+          60,
+          90,
+          120
+        ],
+        "yTicks": [
+          {
+            "v": 4.48,
+            "label": {
+              "tr": "4,48",
+              "en": "4.48",
+              "de": "4,48",
+              "fr": "4,48",
+              "ru": "4,48",
+              "ar": "4.48",
+              "zh": "4.48",
+              "ku": "4,48"
+            }
+          }
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                1.2
+              ],
+              [
+                20,
+                2.2
+              ],
+              [
+                30,
+                2.9
+              ],
+              [
+                45,
+                3.65
+              ],
+              [
+                60,
+                4.1
+              ],
+              [
+                75,
+                4.38
+              ],
+              [
+                90,
+                4.48
+              ],
+              [
+                120,
+                4.48
+              ]
+            ]
+          }
+        ]
       }
     },
     {
@@ -1894,14 +2197,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin12",
       "stem": {
-        "tr": "Cu ve Mg metallerinden oluşan 10 g'lık bir karışım yeterli miktarda HCl çözeltisine atıldığında normal koşullarda 4,48 L H2 gazı açığa çıkıyor. Buna göre karışımdaki Cu kütlesi kaç gramdır? (Mg = 24 g/mol; NK'da 1 mol gaz 22,4 L)",
+        "tr": "Cu ve Mg metallerinden oluşan 10 g'lık bir karışım yeterli miktarda HCl çözeltisine atıldığında normal koşullarda 4,48 L H2 gazı açığa çıkıyor. Karışımdaki Cu kütlesi kaç gramdır? (Mg = 24 g/mol; NK'da 1 mol gaz 22,4 L)",
         "en": "When a 10 g mixture of the metals Cu and Mg is placed in enough HCl solution, 4.48 L of H2 gas is released at STP. What is the mass of Cu in the mixture in grams? (Mg = 24 g/mol; 1 mol of gas occupies 22.4 L at STP)",
         "de": "Gibt man 10 g eines Gemisches aus Cu und Mg in ausreichend HCl-Lösung, entstehen unter Normbedingungen 4,48 L H2-Gas. Wie viel Gramm Cu enthält das Gemisch? (Mg = 24 g/mol; 1 mol Gas nimmt unter Normbedingungen 22,4 L ein)",
         "fr": "Lorsqu'on place 10 g d'un mélange de Cu et de Mg dans suffisamment de solution de HCl, il se dégage 4,48 L de H2 dans les conditions normales. Quelle est la masse de Cu dans le mélange, en grammes ? (Mg = 24 g/mol ; 1 mol de gaz occupe 22,4 L dans les CN)",
         "ru": "Смесь металлов Cu и Mg массой 10 г поместили в достаточное количество раствора HCl; при этом выделилось 4,48 л H2 (н. у.). Сколько граммов Cu содержится в смеси? (Mg = 24 г/моль; 1 моль газа при н. у. занимает 22,4 л)",
         "ar": "عند وضع 10 g من خليط فلزَّي Cu وMg في كمية كافية من محلول HCl يتصاعد 4.48 L من غاز H2 في الظروف القياسية. ما كتلة Cu في الخليط بالغرام؟ (Mg = 24 g/mol؛ 1 mol من الغاز يشغل 22.4 L في الظروف القياسية)",
         "zh": "将由 Cu 和 Mg 组成的 10 g 混合物放入足量 HCl 溶液中，在标准状况下放出 4.48 L H2 气体。混合物中 Cu 的质量是多少克？(Mg = 24 g/mol；标准状况下 1 mol 气体为 22.4 L)",
-        "ku": "Dema tevliheviyeke 10 g ya metalên Cu û Mg tê avêtin nav çareseriya HCl a têr, di şertên normal (ŞN) de 4,48 L gaza H2 derdikeve. Li gorî vê, girseya Cu di tevliheviyê de çend gram e? (Mg = 24 g/mol; di ŞN de 1 mol gaz 22,4 L ye)"
+        "ku": "Dema tevliheviyeke 10 g ya metalên Cu û Mg tê avêtin nav çareseriya HCl a têr, di şertên normal (ŞN) de 4,48 L gaza H2 derdikeve. Girseya Cu di tevliheviyê de çend gram e? (Mg = 24 g/mol; di ŞN de 1 mol gaz 22,4 L ye)"
       },
       "options": [
         {
@@ -2122,14 +2425,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin15",
       "stem": {
-        "tr": "Etiketleri düşmüş X, Y ve Z tüplerinde eşit derişimli HCl, NaOH ve NaCl çözeltileri bulunmaktadır (her tüpte farklı biri). Yapılan deneylerde:\n• X ve Y tüplerine alüminyum (Al) parçası atıldığında her ikisinde de gaz çıkışı gözleniyor, Z tüpünde gözlenmiyor.\n• X çözeltisi mavi turnusol kâğıdını kırmızıya çeviriyor.\nBuna göre X, Y ve Z tüplerindeki çözeltiler sırasıyla hangileridir?",
+        "tr": "Etiketleri düşmüş X, Y ve Z tüplerinde eşit derişimli HCl, NaOH ve NaCl çözeltileri bulunmaktadır (her tüpte farklı biri). Yapılan deneylerde:\n• X ve Y tüplerine alüminyum (Al) parçası atıldığında her ikisinde de gaz çıkışı gözleniyor, Z tüpünde gözlenmiyor.\n• X çözeltisi mavi turnusol kâğıdını kırmızıya çeviriyor.\nX, Y ve Z tüplerindeki çözeltiler sırasıyla hangileridir?",
         "en": "Tubes X, Y and Z, whose labels have fallen off, contain HCl, NaOH and NaCl solutions of equal concentration (a different one in each tube). In the experiments:\n• When a piece of aluminium (Al) is added to tubes X and Y, gas evolution is observed in both, but not in tube Z.\n• Solution X turns blue litmus paper red.\nWhich solutions are in tubes X, Y and Z, respectively?",
         "de": "Die Reagenzgläser X, Y und Z, deren Etiketten abgefallen sind, enthalten gleich konzentrierte HCl-, NaOH- und NaCl-Lösungen (in jedem eine andere). Bei den Versuchen gilt:\n• Gibt man ein Stück Aluminium (Al) in X und Y, beobachtet man in beiden Gasentwicklung, in Z nicht.\n• Lösung X färbt blaues Lackmuspapier rot.\nWelche Lösungen befinden sich der Reihe nach in X, Y und Z?",
         "fr": "Les tubes X, Y et Z, dont les étiquettes sont tombées, contiennent des solutions de HCl, NaOH et NaCl de même concentration (une différente dans chaque tube). Lors des expériences :\n• Quand on ajoute un morceau d'aluminium (Al) dans X et Y, on observe un dégagement gazeux dans les deux, mais pas dans Z.\n• La solution X fait virer le papier de tournesol bleu au rouge.\nQuelles solutions se trouvent respectivement dans X, Y et Z ?",
         "ru": "В пробирках X, Y и Z, этикетки которых отклеились, находятся растворы HCl, NaOH и NaCl одинаковой концентрации (в каждой — свой). В опытах:\n• При добавлении кусочка алюминия (Al) в пробирки X и Y в обеих наблюдается выделение газа, а в пробирке Z — нет.\n• Раствор X окрашивает синюю лакмусовую бумагу в красный цвет.\nКакие растворы находятся соответственно в пробирках X, Y и Z?",
         "ar": "تحتوي الأنابيب X وY وZ التي سقطت ملصقاتها على محاليل HCl وNaOH وNaCl متساوية التركيز (محلول مختلف في كل أنبوب). وفي التجارب:\n• عند وضع قطعة ألومنيوم (Al) في الأنبوبين X وY يُلاحظ تصاعد غاز في كليهما، ولا يُلاحظ ذلك في الأنبوب Z.\n• يحوّل المحلول X ورق عباد الشمس الأزرق إلى الأحمر.\nما المحاليل الموجودة في الأنابيب X وY وZ على الترتيب؟",
         "zh": "标签脱落的试管 X、Y、Z 中分别装有浓度相等的 HCl、NaOH 和 NaCl 溶液（每支试管中各不相同）。实验中：\n• 向 X 和 Y 中放入铝(Al)片，两支试管中都有气体产生，Z 中没有。\n• 溶液 X 能使蓝色石蕊试纸变红。\n则 X、Y、Z 中的溶液依次是什么？",
-        "ku": "Di lûleyên X, Y û Z de ku etîketên wan ketine, çareseriyên HCl, NaOH û NaCl ên bi tîrbûna wekhev hene (di her lûleyê de yekî cuda). Di ceribandinan de:\n• Dema perçeyek alumînyûm (Al) tê avêtin lûleyên X û Y, di herduyan de derketina gazê tê dîtin, lê di lûleya Z de nayê dîtin.\n• Çareseriya X kaxeza turnusola şîn sor dike.\nLi gorî vê, di lûleyên X, Y û Z de bi rêzê kîjan çareserî hene?"
+        "ku": "Di lûleyên X, Y û Z de ku etîketên wan ketine, çareseriyên HCl, NaOH û NaCl ên bi tîrbûna wekhev hene (di her lûleyê de yekî cuda). Di ceribandinan de:\n• Dema perçeyek alumînyûm (Al) tê avêtin lûleyên X û Y, di herduyan de derketina gazê tê dîtin, lê di lûleya Z de nayê dîtin.\n• Çareseriya X kaxeza turnusola şîn sor dike.\nDi lûleyên X, Y û Z de bi rêzê kîjan çareserî hene?"
       },
       "options": [
         {

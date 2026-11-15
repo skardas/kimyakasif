@@ -261,14 +261,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-f08",
       "fact": {
-        "tr": "Sulu çözelti elektrolizinde katotta, indirgenme potansiyeli en büyük olan katyon (en pasif metalin katyonu) öncelikle indirgenir.",
-        "en": "In the electrolysis of an aqueous solution, the cation with the largest reduction potential (the cation of the least active metal) is reduced first at the cathode.",
-        "de": "Bei der Elektrolyse wässriger Lösungen wird an der Kathode zuerst das Kation mit dem größten Reduktionspotential (das Kation des edelsten Metalls) reduziert.",
-        "fr": "Lors de l'électrolyse d'une solution aqueuse, le cation ayant le plus grand potentiel de réduction (le cation du métal le moins actif) est réduit en premier à la cathode.",
-        "ru": "При электролизе водного раствора на катоде первым восстанавливается катион с наибольшим потенциалом восстановления (катион наименее активного металла).",
-        "ar": "في التحليل الكهربائي للمحاليل المائية يُختزل أولًا عند المهبط الكاتيون ذو جهد الاختزال الأكبر (كاتيون الفلز الأقل نشاطًا).",
-        "zh": "水溶液电解时，还原电势最大的阳离子（最不活泼金属的阳离子）在阴极首先被还原。",
-        "ku": "Di elektrolîza çareseriyên avî de li katodê pêşî ew katyon redûkte dibe ku potansiyela wê ya redûksiyonê herî mezin e (katyona metala herî kêmçalak)."
+        "tr": "Sulu çözelti elektrolizinde katotta indirgenmesi en kolay tür (indirgenme potansiyeli en büyük olan) önce indirgenir: Cu2+ ve Ag+ gibi pasif metal katyonları sudan önce indirgenirken Na+ ve K+ gibi aktif metal katyonlarının yerine su indirgenir ve H2 açığa çıkar.",
+        "en": "In the electrolysis of an aqueous solution, the species that is easiest to reduce (the one with the highest reduction potential) is reduced first at the cathode: cations of less active metals such as Cu2+ and Ag+ are reduced before water, whereas instead of active-metal cations such as Na+ and K+, water is reduced and H2 is released.",
+        "de": "Bei der Elektrolyse einer wässrigen Lösung wird an der Kathode zuerst die am leichtesten reduzierbare Spezies (mit dem höchsten Reduktionspotential) reduziert: Kationen edler Metalle wie Cu2+ und Ag+ werden vor dem Wasser reduziert, während anstelle von Kationen unedler Metalle wie Na+ und K+ das Wasser reduziert wird und H2 entsteht.",
+        "fr": "Lors de l'électrolyse d'une solution aqueuse, l'espèce la plus facile à réduire (celle de plus haut potentiel de réduction) est réduite en premier à la cathode : les cations de métaux peu actifs comme Cu2+ et Ag+ sont réduits avant l'eau, tandis qu'à la place des cations de métaux actifs comme Na+ et K+, c'est l'eau qui est réduite et H2 se dégage.",
+        "ru": "При электролизе водного раствора на катоде первой восстанавливается частица, которая восстанавливается легче всего (с наибольшим потенциалом восстановления): катионы малоактивных металлов, например Cu2+ и Ag+, восстанавливаются раньше воды, а вместо катионов активных металлов, например Na+ и K+, восстанавливается вода с выделением H2.",
+        "ar": "في التحليل الكهربائي للمحاليل المائية يُختزل عند المهبط أولًا النوع الأسهل اختزالًا (ذو جهد الاختزال الأكبر): فكاتيونات الفلزات قليلة النشاط مثل Cu2+ وAg+ تُختزل قبل الماء، أما بدل كاتيونات الفلزات النشطة مثل Na+ وK+ فيُختزل الماء ويتصاعد H2.",
+        "zh": "电解水溶液时，阴极上最容易被还原的粒子（还原电势最大者）先被还原：Cu2+、Ag+ 等不活泼金属的阳离子比水先被还原，而 Na+、K+ 等活泼金属阳离子不被还原，代之以水被还原放出 H2。",
+        "ku": "Di elektrolîza çareseriyên avî de li katodê pêşî ew cure redûkte dibe ku herî hêsan redûkte dibe (potansiyela wê ya redûksiyonê herî mezin e): katyonên metalên pasîf ên wek Cu2+ û Ag+ beriya avê redûkte dibin, lê li şûna katyonên metalên çalak ên wek Na+ û K+ av redûkte dibe û H2 derdikeve."
       },
       "trap": {
         "tr": "Sulu çözelti elektrolizinde katotta, en aktif metalin katyonu (ör. Na+) öncelikle indirgenir.",
@@ -337,24 +337,24 @@ export const unit22: ChemistryUnitSeedData = {
         "ku": "Korozyon xwarina metalan e bi oksîdasyona elektrokîmyewî di bin bandora şertên derdorê de (nemaze O2 û şilî); zengarbûna hesin mînaka wê ya herî naskirî ye."
       },
       "trap": {
-        "tr": "Korozyon metallerin fiziksel olarak parlatılması işlemidir.",
-        "en": "Corrosion is the process of physical polishing of metals.",
-        "de": "Korrosion ist der Prozess des physikalischen Polierens von Metallen.",
-        "fr": "La corrosion est le processus de polissage physique des métaux.",
-        "ru": "Коррозия — процесс физической полировки металлов.",
-        "ar": "التآكل عملية تلميع فيزيائي للفلزات.",
-        "zh": "腐蚀是对金属进行物理抛光的过程。",
-        "ku": "Korozyon pêvajoya biriqandina fîzîkî ya metalan e."
+        "tr": "Demirin paslanmasında demir atomları elektron alarak indirgenir.",
+        "en": "When iron rusts, the iron atoms gain electrons and are reduced.",
+        "de": "Beim Rosten von Eisen nehmen die Eisenatome Elektronen auf und werden reduziert.",
+        "fr": "Lors de la rouille du fer, les atomes de fer gagnent des électrons et sont réduits.",
+        "ru": "При ржавлении железа атомы железа принимают электроны и восстанавливаются.",
+        "ar": "عند صدأ الحديد تكتسب ذرات الحديد إلكترونات وتُختزل.",
+        "zh": "铁生锈时，铁原子得到电子而被还原。",
+        "ku": "Dema hesin zengar digire, atomên hesin elektronan digirin û redûkte dibin."
       },
       "whyTrapIsFalse": {
-        "tr": "Parlatma fiziksel bir yüzey işlemidir ve madde değişmez. Korozyon ise metalin O2 ve nem etkisiyle elektron vererek yükseltgendiği kimyasal (elektrokimyasal) bir aşınmadır; metal parlaklığını kaybeder.",
-        "en": "Polishing is a physical surface treatment in which no new substance forms. Corrosion is a chemical (electrochemical) wear in which the metal loses electrons and is oxidized by O2 and moisture; the metal loses its shine.",
-        "de": "Polieren ist eine physikalische Oberflächenbehandlung ohne Stoffumwandlung. Korrosion ist ein chemischer (elektrochemischer) Abbau, bei dem das Metall durch O2 und Feuchtigkeit Elektronen abgibt und oxidiert wird; es verliert dabei seinen Glanz.",
-        "fr": "Le polissage est un traitement physique de surface sans formation de nouvelle substance. La corrosion est une usure chimique (électrochimique) où le métal cède des électrons et est oxydé par O2 et l'humidité ; il perd son éclat.",
-        "ru": "Полировка — физическая обработка поверхности, новое вещество не образуется. Коррозия — химическое (электрохимическое) разрушение, при котором металл отдаёт электроны и окисляется под действием O2 и влаги; металл теряет блеск.",
-        "ar": "التلميع معالجة فيزيائية للسطح لا تتكون فيها مادة جديدة. أما التآكل فهو تلف كيميائي (كهروكيميائي) يفقد فيه الفلز إلكترونات ويتأكسد بتأثير O2 والرطوبة فيفقد لمعانه.",
-        "zh": "抛光是物理表面处理，不生成新物质。腐蚀则是金属在 O2 和水分作用下失去电子被氧化的化学（电化学）损耗，金属会失去光泽。",
-        "ku": "Biriqandin karekî fîzîkî ye li ser rûyê û tê de madeyeke nû çênabe. Korozyon lê xwarineke kîmyewî (elektrokîmyewî) ye ku tê de metal bi bandora O2 û şiliyê elektronan dide û oksîde dibe; metal biriqîna xwe winda dike."
+        "tr": "Paslanmada demir elektron verir (Fe → Fe2+ + 2e-) ve yükseltgenir; elektronları alan ve indirgenen tür O2'dir (O2 + 2H2O + 4e- → 4OH-). Korozyon her zaman metalin yükseltgenmesidir.",
+        "en": "In rusting, iron gives up electrons (Fe → Fe2+ + 2e-) and is oxidized; the species that gains the electrons and is reduced is O2 (O2 + 2H2O + 4e- → 4OH-). Corrosion is always the oxidation of the metal.",
+        "de": "Beim Rosten gibt Eisen Elektronen ab (Fe → Fe2+ + 2e-) und wird oxidiert; die Elektronen nimmt O2 auf, das reduziert wird (O2 + 2H2O + 4e- → 4OH-). Korrosion ist stets eine Oxidation des Metalls.",
+        "fr": "Lors de la rouille, le fer cède des électrons (Fe → Fe2+ + 2e-) et est oxydé ; c'est O2 qui capte les électrons et est réduit (O2 + 2H2O + 4e- → 4OH-). La corrosion est toujours une oxydation du métal.",
+        "ru": "При ржавлении железо отдаёт электроны (Fe → Fe2+ + 2e-) и окисляется; электроны принимает и восстанавливается O2 (O2 + 2H2O + 4e- → 4OH-). Коррозия — это всегда окисление металла.",
+        "ar": "في الصدأ يفقد الحديد إلكترونات (Fe → Fe2+ + 2e-) ويتأكسد؛ أما النوع الذي يكتسب الإلكترونات ويُختزل فهو O2 (O2 + 2H2O + 4e- → 4OH-). فالتآكل دائمًا أكسدة للفلز.",
+        "zh": "生锈时铁失去电子（Fe → Fe2+ + 2e-）而被氧化；得到电子而被还原的是 O2（O2 + 2H2O + 4e- → 4OH-）。腐蚀总是金属的氧化。",
+        "ku": "Di zengargirtinê de hesin elektronan dide (Fe → Fe2+ + 2e-) û oksîde dibe; cureya ku elektronan digire û redûkte dibe O2 ye (O2 + 2H2O + 4e- → 4OH-). Korozyon her tim oksîdasyona metalê ye."
       }
     },
     {
@@ -502,24 +502,24 @@ export const unit22: ChemistryUnitSeedData = {
         "ku": "Şaneya Downs şaneyeke elektrolîzê ya pîşesaziyê ye ku ji bo hilberîna metala sodyûmê ji NaCl ya helîyayî tê bikaranîn."
       },
       "trap": {
-        "tr": "Downs hücresi pil üretmek için kullanılır.",
-        "en": "Downs cell is used to produce batteries.",
-        "de": "Downs-Zellen werden zur Herstellung von Batterien verwendet.",
-        "fr": "La cellule Downs est utilisée pour produire des batteries.",
-        "ru": "Ячейка Даунса используется для производства гальванических элементов.",
-        "ar": "تستخدم خلية داونز لإنتاج البطاريات.",
-        "zh": "唐斯电解槽是用来生产电池的。",
-        "ku": "Şaneya Downs ji bo hilberîna pîlan tê bikaranîn."
+        "tr": "Downs hücresinde sodyum metali, sulu NaCl çözeltisinin elektroliziyle elde edilir.",
+        "en": "In the Downs cell, sodium metal is obtained by electrolysing aqueous NaCl solution.",
+        "de": "In der Downs-Zelle wird Natriummetall durch Elektrolyse wässriger NaCl-Lösung gewonnen.",
+        "fr": "Dans la cellule de Downs, le sodium métallique est obtenu par électrolyse d'une solution aqueuse de NaCl.",
+        "ru": "В ячейке Даунса металлический натрий получают электролизом водного раствора NaCl.",
+        "ar": "في خلية داونز يُحصل على فلز الصوديوم بالتحليل الكهربائي لمحلول NaCl المائي.",
+        "zh": "在唐斯电解槽中，金属钠是通过电解 NaCl 水溶液得到的。",
+        "ku": "Di şaneya Downs de metala sodyûmê bi elektrolîza çareseriya avî ya NaCl tê bidestxistin."
       },
       "whyTrapIsFalse": {
-        "tr": "Downs hücresi pil değil, bir elektroliz hücresidir: elektrik enerjisi harcanarak erimiş NaCl'den sodyum metali ve Cl2 gazı elde edilir.",
-        "en": "The Downs cell is not a battery but an electrolytic cell: electrical energy is consumed to obtain sodium metal and Cl2 gas from molten NaCl.",
-        "de": "Die Downs-Zelle ist keine Batterie, sondern eine Elektrolysezelle: Unter Verbrauch elektrischer Energie werden aus geschmolzenem NaCl Natriummetall und Cl2-Gas gewonnen.",
-        "fr": "La cellule de Downs n'est pas une pile mais une cellule d'électrolyse : elle consomme de l'énergie électrique pour obtenir du sodium métallique et du Cl2 à partir de NaCl fondu.",
-        "ru": "Ячейка Даунса — не источник тока, а электролизёр: за счёт электрической энергии из расплава NaCl получают металлический натрий и газ Cl2.",
-        "ar": "خلية داونز ليست خلية جلفانية بل خلية تحليل كهربائي: تُستهلك فيها طاقة كهربائية للحصول على فلز الصوديوم وغاز Cl2 من NaCl المنصهر.",
-        "zh": "唐斯电解槽不是电池，而是电解池：消耗电能从熔融 NaCl 中制取金属钠和 Cl2 气体。",
-        "ku": "Şaneya Downs ne pîl e, şaneyeke elektrolîzê ye: bi xerckirina enerjiya elektrîkê ji NaCl ya helîyayî metala sodyûmê û gaza Cl2 tê bidestxistin."
+        "tr": "Sulu NaCl çözeltisinde Na+ yerine su indirgenir ve katotta sodyum değil H2 açığa çıkar; oluşabilecek sodyum da su ile hemen tepkimeye girerdi. Bu yüzden Downs hücresinde su içermeyen erimiş NaCl elektroliz edilir.",
+        "en": "In aqueous NaCl, water is reduced instead of Na+, so H2 rather than sodium forms at the cathode; any sodium formed would also react with water at once. That is why the Downs cell electrolyses molten NaCl, which contains no water.",
+        "de": "In wässriger NaCl-Lösung wird statt Na+ das Wasser reduziert, an der Kathode entsteht H2 statt Natrium; entstehendes Natrium würde zudem sofort mit Wasser reagieren. Deshalb wird in der Downs-Zelle wasserfreie NaCl-Schmelze elektrolysiert.",
+        "fr": "Dans NaCl aqueux, c'est l'eau et non Na+ qui est réduite : il se forme H2 et non du sodium à la cathode ; le sodium éventuellement formé réagirait d'ailleurs aussitôt avec l'eau. C'est pourquoi la cellule de Downs électrolyse du NaCl fondu, sans eau.",
+        "ru": "В водном растворе NaCl вместо Na+ восстанавливается вода, и на катоде выделяется H2, а не натрий; образовавшийся натрий к тому же сразу прореагировал бы с водой. Поэтому в ячейке Даунса электролизу подвергают расплав NaCl, не содержащий воды.",
+        "ar": "في محلول NaCl المائي يُختزل الماء بدل Na+ فيتصاعد H2 لا الصوديوم عند المهبط، ولو تكوّن صوديوم لتفاعل فورًا مع الماء. لذلك يُحلَّل في خلية داونز مصهور NaCl الخالي من الماء.",
+        "zh": "在 NaCl 水溶液中被还原的是水而不是 Na+，阴极放出的是 H2 而不是钠；即使生成钠也会立即与水反应。因此唐斯电解槽电解的是不含水的熔融 NaCl。",
+        "ku": "Di çareseriya avî ya NaCl de li şûna Na+ av redûkte dibe û li katodê ne sodyûm, H2 derdikeve; sodyûma ku çêbibe jî dê yekser bi avê re reaksiyonê bike. Ji ber vê yekê di şaneya Downs de NaCl a helandî ya bê av tê elektrolîzkirin."
       }
     },
     {
@@ -535,24 +535,24 @@ export const unit22: ChemistryUnitSeedData = {
         "ku": "Girêdana blokeke magnezyûmê bi boriyeke hesin ve ji bo parastina wê ji korozyonê, sepandineke elektroda qurbanî ye ku li ser cudahiya çalakiyê ava dibe."
       },
       "trap": {
-        "tr": "Kurban elektrot demirin üzerine altın kaplama yapmaktır.",
-        "en": "The sacrificial electrode is plating gold on iron.",
-        "de": "Die Opferelektrode plattiert Eisen mit Gold.",
-        "fr": "L'électrode sacrificielle consiste à déposer de l'or sur du fer.",
-        "ru": "Протекторная защита — это нанесение золотого покрытия на железо.",
-        "ar": "القطب المضحّي هو طلاء الحديد بالذهب.",
-        "zh": "牺牲阳极法就是在铁上镀金。",
-        "ku": "Elektroda qurbanî pêçana zêr li ser hesin e."
+        "tr": "Magnezyum blok bağlanmış demir boruda magnezyum katot, demir anot olur.",
+        "en": "In an iron pipe connected to a magnesium block, magnesium is the cathode and iron is the anode.",
+        "de": "Bei einem mit einem Magnesiumblock verbundenen Eisenrohr ist Magnesium die Kathode und Eisen die Anode.",
+        "fr": "Dans une conduite en fer reliée à un bloc de magnésium, le magnésium est la cathode et le fer l'anode.",
+        "ru": "В железной трубе, соединённой с магниевым блоком, магний является катодом, а железо — анодом.",
+        "ar": "في أنبوب حديدي موصول بكتلة مغنيسيوم يكون المغنيسيوم مهبطًا والحديد مصعدًا.",
+        "zh": "在连接了镁块的铁管中，镁是阴极，铁是阳极。",
+        "ku": "Di boriya hesin a ku bloka magnezyûmê pê ve hatiye girêdan de magnezyûm katod û hesin anod e."
       },
       "whyTrapIsFalse": {
-        "tr": "Altın demirden çok daha pasiftir; altın kaplama çizilirse demir anot olur ve daha hızlı paslanır. Kurban elektrot ise demirden aktif bir metalin (Mg, Zn) demire bağlanıp kendisinin yükseltgenmesidir.",
-        "en": "Gold is far less active than iron; if a gold coating is scratched, iron becomes the anode and rusts faster. A sacrificial electrode is a metal more active than iron (Mg, Zn) connected to it and oxidized in its place.",
-        "de": "Gold ist viel edler als Eisen; wird ein Goldüberzug verletzt, wird Eisen zur Anode und rostet schneller. Eine Opferelektrode ist ein unedleres Metall (Mg, Zn), das mit dem Eisen verbunden wird und an seiner Stelle oxidiert wird.",
-        "fr": "L'or est bien moins actif que le fer ; si une dorure est rayée, le fer devient l'anode et rouille plus vite. Une électrode sacrificielle est un métal plus actif que le fer (Mg, Zn), relié à lui et oxydé à sa place.",
-        "ru": "Золото гораздо менее активно, чем железо; при повреждении золотого покрытия железо становится анодом и ржавеет быстрее. Протектор — более активный металл (Mg, Zn), который соединяют с железом и который окисляется вместо него.",
-        "ar": "الذهب أقل نشاطًا بكثير من الحديد؛ فإذا خُدش الطلاء الذهبي أصبح الحديد مصعدًا وصدئ أسرع. أما القطب المضحّي فهو فلز أنشط من الحديد (Mg، Zn) يوصل به ويتأكسد بدلًا منه.",
-        "zh": "金远不如铁活泼；镀金层一旦划破，铁成为负极而更快生锈。牺牲阳极法是把比铁活泼的金属(Mg、Zn)与铁相连，由它代替铁被氧化。",
-        "ku": "Zêr ji hesin gelek kêmçalaktir e; heke pêçana zêr biqelişe, hesin dibe anod û zûtir zengar digire. Elektroda qurbanî metaleke ji hesin çalaktir e (Mg, Zn) ku bi hesin ve tê girêdan û li şûna wî oksîde dibe."
+        "tr": "Magnezyum demirden aktif olduğu için elektron veren, yani yükseltgenen metal odur: magnezyum anot olarak aşınır. Demir katot olur; üzerinde yalnızca O2 indirgenir ve demir yükseltgenmediği için korunur.",
+        "en": "Magnesium is more active than iron, so it is the metal that gives up electrons and is oxidized: magnesium corrodes as the anode. Iron becomes the cathode; only O2 is reduced on its surface, and since iron is not oxidized it is protected.",
+        "de": "Magnesium ist unedler als Eisen und gibt daher die Elektronen ab, wird also oxidiert: Magnesium korrodiert als Anode. Eisen wird zur Kathode; an ihm wird nur O2 reduziert, und weil das Eisen nicht oxidiert wird, ist es geschützt.",
+        "fr": "Le magnésium est plus actif que le fer : c'est lui qui cède des électrons et s'oxyde, il se corrode en tant qu'anode. Le fer devient la cathode ; seul O2 y est réduit, et comme le fer n'est pas oxydé, il est protégé.",
+        "ru": "Магний активнее железа, поэтому именно он отдаёт электроны и окисляется: магний разрушается как анод. Железо становится катодом; на нём восстанавливается только O2, и поскольку железо не окисляется, оно защищено.",
+        "ar": "المغنيسيوم أنشط من الحديد، لذا فهو الفلز الذي يفقد الإلكترونات ويتأكسد: يتآكل المغنيسيوم بوصفه مصعدًا. ويصبح الحديد مهبطًا يُختزل عليه O2 فقط، ولأن الحديد لا يتأكسد فإنه يبقى محميًا.",
+        "zh": "镁比铁活泼，所以失去电子、被氧化的是镁：镁作为阳极被腐蚀。铁成为阴极，其表面只发生 O2 的还原，铁不被氧化，因而受到保护。",
+        "ku": "Magnezyûm ji hesin çalaktir e, ji ber vê metala ku elektronan dide û oksîde dibe ew e: magnezyûm wek anod dixure. Hesin dibe katod; li ser wî tenê O2 redûkte dibe û ji ber ku hesin oksîde nabe tê parastin."
       }
     }
   ],
@@ -826,14 +826,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-s01",
       "title": {
-        "tr": "Elektroliz Kütle Hesap Adımları",
-        "en": "Electrolysis Mass Calculation Steps",
-        "de": "Schritte zur Berechnung der Elektrolysemasse",
-        "fr": "Étapes de calcul de la masse d'électrolyse",
-        "ru": "Расчёт массы вещества при электролизе",
-        "ar": "خطوات حساب الكتلة في التحليل الكهربائي",
-        "zh": "电解中析出物质质量的计算步骤",
-        "ku": "Gavên Hesabkirina Girseyê di Elektrolîzê de"
+        "tr": "Elektrolizde Toplanan Kütlenin Hesaplanması",
+        "en": "Calculation of the Mass Deposited in Electrolysis",
+        "de": "Berechnung der bei der Elektrolyse abgeschiedenen Masse",
+        "fr": "Calcul de la masse déposée lors d'une électrolyse",
+        "ru": "Расчёт массы вещества, выделившегося при электролизе",
+        "ar": "حساب الكتلة المترسبة في التحليل الكهربائي",
+        "zh": "电解中析出质量的计算",
+        "ku": "Hesabkirina Girseya ku di Elektrolîzê de Kom Dibe"
       },
       "steps": [
         {
@@ -991,55 +991,55 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-s04",
       "title": {
-        "tr": "Katodik Koruma ve Kurban Elektrot",
-        "en": "Cathodic Protection and Sacrificial Electrode",
-        "de": "Kathodischer Schutz und Opferelektrode",
-        "fr": "Protection Cathodique et Électrode Sacrificielle",
-        "ru": "Катодная защита и протектор",
-        "ar": "الحماية الكاثودية والقطب المضحّي",
-        "zh": "阴极保护：牺牲阳极法",
-        "ku": "Parastina Katodîk û Elektroda Qurbanî"
+        "tr": "Kurban Elektrotla Katodik Koruma",
+        "en": "Cathodic Protection with a Sacrificial Electrode",
+        "de": "Kathodischer Schutz mit einer Opferelektrode",
+        "fr": "Protection cathodique par électrode sacrificielle",
+        "ru": "Катодная защита с помощью протектора",
+        "ar": "الحماية الكاثودية بالقطب المضحّي",
+        "zh": "用牺牲阳极进行阴极保护",
+        "ku": "Parastina Katodîk bi Elektroda Qurbanî"
       },
       "steps": [
         {
-          "tr": "Korunmak istenen demir boru hattı toprağa gömülür",
-          "en": "The iron pipeline to be protected is buried in the ground",
-          "de": "Die zu schützende Eisenrohrleitung ist im Boden vergraben",
-          "fr": "Le pipeline de fer à protéger est enfoui dans le sol",
-          "ru": "Защищаемый железный трубопровод проложен под землёй",
-          "ar": "يُدفن خط الأنابيب الحديدي المراد حمايته في التربة",
-          "zh": "待保护的铁质管道埋于地下",
-          "ku": "Xeta boriyên hesin a ku dê were parastin di axê de tê veşartin"
+          "tr": "Korunacak metalin (demir) standart indirgenme potansiyeli belirlenir",
+          "en": "The standard reduction potential of the metal to be protected (iron) is determined",
+          "de": "Das Standardreduktionspotential des zu schützenden Metalls (Eisen) wird ermittelt",
+          "fr": "On détermine le potentiel standard de réduction du métal à protéger (le fer)",
+          "ru": "Определяют стандартный потенциал восстановления защищаемого металла (железа)",
+          "ar": "يُحدَّد جهد الاختزال القياسي للفلز المراد حمايته (الحديد)",
+          "zh": "确定被保护金属（铁）的标准还原电势",
+          "ku": "Potansiyela redûksiyonê ya standard a metala ku dê bê parastin (hesin) tê diyarkirin"
         },
         {
-          "tr": "Demirden daha aktif bir metal (Zn veya Mg) kurban elektrot seçilir",
-          "en": "A more active metal (Zn or Mg) than iron is chosen as the sacrificial electrode",
-          "de": "Als Opferelektrode wird ein aktiveres Metall (Zn oder Mg) als Eisen gewählt",
-          "fr": "Un métal plus actif (Zn ou Mg) que le fer est choisi comme électrode sacrificielle",
-          "ru": "В качестве протектора выбирают металл активнее железа (Zn или Mg)",
-          "ar": "يُختار فلز أنشط من الحديد (Zn أو Mg) ليكون المصعد المضحّي",
-          "zh": "选择比铁更活泼的金属（锌或镁）作牺牲阳极",
-          "ku": "Metaleke ji hesin çalaktir (Zn an Mg) wek elektroda qurbanî tê hilbijartin"
+          "tr": "İndirgenme potansiyeli demirinkinden küçük, yani demirden aktif bir metal (Mg veya Zn) kurban elektrot olarak seçilir",
+          "en": "A metal whose reduction potential is lower than that of iron, i.e. more active than iron (Mg or Zn), is chosen as the sacrificial electrode",
+          "de": "Ein Metall mit kleinerem Reduktionspotential als Eisen, also ein unedleres Metall (Mg oder Zn), wird als Opferelektrode gewählt",
+          "fr": "On choisit comme électrode sacrificielle un métal de potentiel de réduction inférieur à celui du fer, donc plus actif (Mg ou Zn)",
+          "ru": "В качестве протектора выбирают металл с меньшим, чем у железа, потенциалом восстановления, то есть более активный (Mg или Zn)",
+          "ar": "يُختار فلز جهد اختزاله أصغر من جهد الحديد، أي أنشط منه (Mg أو Zn)، قطبًا مضحّيًا",
+          "zh": "选择还原电势比铁低、即比铁活泼的金属（Mg 或 Zn）作牺牲电极",
+          "ku": "Metaleke ku potansiyela wê ya redûksiyonê ji ya hesin piçûktir e, ango ji hesin çalaktir e (Mg an Zn), wek elektroda qurbanî tê hilbijartin"
         },
         {
-          "tr": "Kurban elektrot bir iletken telle demir hatta bağlanır",
-          "en": "The sacrificial electrode is connected to the iron line with a conductive wire",
-          "de": "Die Opferelektrode ist über einen leitenden Draht mit der Eisenleitung verbunden",
-          "fr": "L'électrode sacrificielle est reliée à la ligne de fer par un fil conducteur",
-          "ru": "Протектор соединяют с трубопроводом проводником",
-          "ar": "يوصَل القطب المضحّي بخط الأنابيب الحديدي بسلك موصل",
-          "zh": "用导线将牺牲阳极与铁管道相连",
-          "ku": "Elektroda qurbanî bi têleke guhêzbar bi xeta hesin ve tê girêdan"
+          "tr": "Seçilen metal blok iletken bir telle demir boruya bağlanır",
+          "en": "The chosen metal block is connected to the iron pipe with a conducting wire",
+          "de": "Der gewählte Metallblock wird mit einem leitenden Draht mit dem Eisenrohr verbunden",
+          "fr": "Le bloc de métal choisi est relié à la conduite en fer par un fil conducteur",
+          "ru": "Выбранный металлический блок соединяют с железной трубой проводником",
+          "ar": "تُوصل كتلة الفلز المختارة بالأنبوب الحديدي بسلك موصل",
+          "zh": "用导线把选定的金属块与铁管相连",
+          "ku": "Bloka metalê ya hilbijartî bi têleke guhêzbar bi boriya hesin ve tê girêdan"
         },
         {
-          "tr": "Kurban elektrot kendisi yükseltgenerek demirin korozyonunu önler",
-          "en": "The sacrificial electrode itself is oxidized, preventing corrosion of the iron",
-          "de": "Die Opferelektrode selbst ist oxidiert, wodurch eine Korrosion des Eisens verhindert wird",
-          "fr": "L'électrode sacrificielle elle-même est oxydée, empêchant ainsi la corrosion du fer",
-          "ru": "Протектор окисляется сам и предотвращает коррозию железа",
-          "ar": "يتأكسد القطب المضحّي نفسه، فيمنع تآكل الحديد",
-          "zh": "牺牲阳极自身被氧化，从而防止铁腐蚀",
-          "ku": "Elektroda qurbanî bi xwe oksîde dibe û pêşî li korozyona hesin digire"
+          "tr": "Kurban metal anot olarak yükseltgenip aşınırken demir katot olarak korunur; tükenen blok yenisiyle değiştirilir",
+          "en": "While the sacrificial metal is oxidized and wears away as the anode, the iron is protected as the cathode; the used-up block is replaced with a new one",
+          "de": "Während das Opfermetall als Anode oxidiert wird und sich abnutzt, ist das Eisen als Kathode geschützt; der verbrauchte Block wird ersetzt",
+          "fr": "Pendant que le métal sacrificiel s'oxyde et s'use en tant qu'anode, le fer est protégé en tant que cathode ; le bloc usé est remplacé par un neuf",
+          "ru": "Пока протектор окисляется и разрушается как анод, железо защищено как катод; израсходованный блок заменяют новым",
+          "ar": "بينما يتأكسد الفلز المضحّي ويتآكل بوصفه مصعدًا يبقى الحديد محميًا بوصفه مهبطًا؛ وتُستبدل الكتلة المستهلكة بأخرى جديدة",
+          "zh": "牺牲金属作为阳极被氧化而消耗，铁作为阴极受到保护；耗尽的金属块要更换新的",
+          "ku": "Dema metala qurbanî wek anod oksîde dibe û dixure, hesin wek katod tê parastin; bloka xerckirî bi ya nû tê guhertin"
         }
       ]
     }
@@ -1124,77 +1124,142 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin02",
       "stem": {
-        "tr": "Hoffman voltametresi ile suyun elektrolizinde anotta 15 cm3 O2 gazı toplandığı anda katotta kaç cm3 H2 gazı toplanır?",
-        "en": "In the electrolysis of water with Hoffman voltameter, how many cm3 of H2 gas is collected at the cathode when 15 cm3 of O2 gas is collected at the anode?",
-        "de": "Wie viele cm3 H2-Gas werden bei der Elektrolyse von Wasser mit einem Hoffman-Voltameter an der Kathode gesammelt, wenn 15 cm3 O2-Gas an der Anode gesammelt werden?",
-        "fr": "Lors de l'électrolyse de l'eau avec le voltamètre Hoffman, combien de cm3 de gaz H2 sont collectés à la cathode lorsque 15 cm3 de gaz O2 sont collectés à l'anode ?",
-        "ru": "Сколько см3 газа H2 соберётся на катоде при электролизе воды в аппарате Гофмана к моменту, когда на аноде соберётся 15 см3 газа O2?",
-        "ar": "في التحليل الكهربائي للماء باستخدام فولتامتر هوفمان، كم cm3 من غاز H2 يتجمع عند المهبط في اللحظة التي يتجمع فيها 15 cm3 من غاز O2 عند المصعد؟",
-        "zh": "用霍夫曼电解器电解水时，阳极收集到 15 cm3 O2，阴极收集到多少 cm3 H2？",
-        "ku": "Di elektrolîza avê ya bi voltametra Hoffman de, dema ku li anodê 15 cm3 gaza O2 kom dibe, li katodê çend cm3 gaza H2 kom dibe?"
+        "tr": "Seri bağlanmış iki elektroliz kabından I.'sinde sulu AgNO3, II.'sinde M metalinin sulu klorür çözeltisi bulunmaktadır. Kapların katotlarında biriken metal kütlelerinin zamanla değişimi şekildeki grafikte verilmiştir.\nDevreden geçen akımın şiddeti ve M iyonunun yükü aşağıdakilerin hangisinde doğru verilmiştir? (Ag = 108 g/mol, M = 59 g/mol; 1 F = 96500 C)",
+        "en": "Of two electrolysis cells connected in series, cell I contains aqueous AgNO3 and cell II an aqueous chloride solution of metal M. The graph shows how the masses of metal deposited on the cathodes change with time.\nWhich option correctly gives the current in the circuit and the charge of the M ion? (Ag = 108 g/mol, M = 59 g/mol; 1 F = 96500 C)",
+        "de": "Von zwei in Reihe geschalteten Elektrolysezellen enthält Zelle I wässrige AgNO3-Lösung und Zelle II eine wässrige Chloridlösung des Metalls M. Das Diagramm zeigt, wie sich die an den Kathoden abgeschiedenen Metallmassen mit der Zeit ändern.\nIn welcher Antwort sind die Stromstärke im Stromkreis und die Ladung des M-Ions richtig angegeben? (Ag = 108 g/mol, M = 59 g/mol; 1 F = 96500 C)",
+        "fr": "Deux cuves d'électrolyse sont montées en série : la cuve I contient du AgNO3 aqueux et la cuve II une solution aqueuse du chlorure du métal M. Le graphique montre l'évolution au cours du temps des masses de métal déposées aux cathodes.\nQuelle proposition donne correctement l'intensité du courant et la charge de l'ion de M ? (Ag = 108 g/mol, M = 59 g/mol ; 1 F = 96500 C)",
+        "ru": "Из двух последовательно соединённых электролизёров в I находится водный раствор AgNO3, во II — водный раствор хлорида металла M. На графике показано изменение во времени массы металла, выделившегося на катодах.\nВ каком варианте правильно указаны сила тока в цепи и заряд иона M? (Ag = 108 г/моль, M = 59 г/моль; 1 F = 96500 Кл)",
+        "ar": "خليتا تحليل كهربائي موصولتان على التوالي: في الخلية I محلول AgNO3 المائي، وفي الخلية II محلول مائي لكلوريد الفلز M. يبيّن الرسم البياني تغيّر كتلتي الفلزين المترسبتين على المهبطين مع الزمن.\nفي أيّ خيار تُعطى شدة التيار المار في الدائرة وشحنة أيون M بشكل صحيح؟ (Ag = 108 g/mol، M = 59 g/mol؛ 1 F = 96500 C)",
+        "zh": "两个电解池串联，池 I 中为 AgNO3 水溶液，池 II 中为金属 M 的氯化物水溶液。图中给出了两个阴极上析出金属的质量随时间的变化。\n下列哪一项正确给出了电路中的电流和 M 离子的电荷？(Ag = 108 g/mol，M = 59 g/mol；1 F = 96500 C)",
+        "ku": "Ji du şaneyên elektrolîzê yên bi rêzî girêdayî, di ya I de AgNO3 a avî û di ya II de çareseriya klorûrê ya avî ya metala M heye. Guherîna girseyên metalên ku li ser katodan kom dibin li gorî demê di grafîka şeklê de hatiye dayîn.\nŞiddeta herikîna di devreyê de û barê îyona M di kîjan bijardeyê de rast hatine dayîn? (Ag = 108 g/mol, M = 59 g/mol; 1 F = 96500 C)"
       },
       "options": [
         {
-          "tr": "30 cm3",
-          "en": "30 cm3",
-          "de": "30 cm3",
-          "fr": "30 cm3",
-          "ru": "30 см3",
-          "ar": "30 cm3",
-          "zh": "30 cm3",
-          "ku": "30 cm3"
+          "tr": "1 A; M2+",
+          "en": "1 A; M2+",
+          "de": "1 A; M2+",
+          "fr": "1 A ; M2+",
+          "ru": "1 А; M2+",
+          "ar": "1 A؛ M2+",
+          "zh": "1 A；M2+",
+          "ku": "1 A; M2+"
         },
         {
-          "tr": "15 cm3",
-          "en": "15 cm3",
-          "de": "15 cm3",
-          "fr": "15 cm3",
-          "ru": "15 см3",
-          "ar": "15 cm3",
-          "zh": "15 cm3",
-          "ku": "15 cm3"
+          "tr": "1 A; M+",
+          "en": "1 A; M+",
+          "de": "1 A; M+",
+          "fr": "1 A ; M+",
+          "ru": "1 А; M+",
+          "ar": "1 A؛ M+",
+          "zh": "1 A；M+",
+          "ku": "1 A; M+"
         },
         {
-          "tr": "7,5 cm3",
-          "en": "7.5 cm3",
-          "de": "7,5 cm3",
-          "fr": "7,5 cm3",
-          "ru": "7,5 см3",
-          "ar": "7.5 cm3",
-          "zh": "7.5 cm3",
-          "ku": "7,5 cm3"
+          "tr": "2 A; M2+",
+          "en": "2 A; M2+",
+          "de": "2 A; M2+",
+          "fr": "2 A ; M2+",
+          "ru": "2 А; M2+",
+          "ar": "2 A؛ M2+",
+          "zh": "2 A；M2+",
+          "ku": "2 A; M2+"
         },
         {
-          "tr": "45 cm3",
-          "en": "45 cm3",
-          "de": "45 cm3",
-          "fr": "45 cm3",
-          "ru": "45 см3",
-          "ar": "45 cm3",
-          "zh": "45 cm3",
-          "ku": "45 cm3"
+          "tr": "0,5 A; M4+",
+          "en": "0.5 A; M4+",
+          "de": "0,5 A; M4+",
+          "fr": "0,5 A ; M4+",
+          "ru": "0,5 А; M4+",
+          "ar": "0.5 A؛ M4+",
+          "zh": "0.5 A；M4+",
+          "ku": "0,5 A; M4+"
         },
         {
-          "tr": "60 cm3",
-          "en": "60 cm3",
-          "de": "60 cm3",
-          "fr": "60 cm3",
-          "ru": "60 см3",
-          "ar": "60 cm3",
-          "zh": "60 cm3",
-          "ku": "60 cm3"
+          "tr": "2 A; M+",
+          "en": "2 A; M+",
+          "de": "2 A; M+",
+          "fr": "2 A ; M+",
+          "ru": "2 А; M+",
+          "ar": "2 A؛ M+",
+          "zh": "2 A；M+",
+          "ku": "2 A; M+"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "2 H2O → 2 H2 + O2 tepkimesine göre katotta toplanan H2 gazının hacmi, aynı koşullarda anotta toplanan O2 gazının hacminin 2 katıdır: 2 · 15 = 30 cm3. Hacimleri eşit sanmak 15 cm3, oranı ters çevirmek 7,5 cm3 sonucunu verir.",
-        "en": "According to 2 H2O → 2 H2 + O2, the volume of H2 collected at the cathode is 2 times the volume of O2 collected at the anode under the same conditions: 2 · 15 = 30 cm3. Assuming equal volumes gives 15 cm3, and inverting the ratio gives 7.5 cm3.",
-        "de": "Nach 2 H2O → 2 H2 + O2 ist das an der Kathode gesammelte H2-Volumen unter gleichen Bedingungen 2-mal so groß wie das an der Anode gesammelte O2-Volumen: 2 · 15 = 30 cm3. Wer gleiche Volumina annimmt, erhält 15 cm3, wer das Verhältnis umkehrt, 7,5 cm3.",
-        "fr": "D'après 2 H2O → 2 H2 + O2, le volume de H2 recueilli à la cathode est, dans les mêmes conditions, 2 fois le volume de O2 recueilli à l'anode : 2 · 15 = 30 cm3. Supposer des volumes égaux donne 15 cm3 et inverser le rapport donne 7,5 cm3.",
-        "ru": "По уравнению 2 H2O → 2 H2 + O2 объём H2, собранного на катоде, при одинаковых условиях в 2 раза больше объёма O2, собранного на аноде: 2 · 15 = 30 см3. Если считать объёмы равными, получится 15 см3, а если перевернуть соотношение — 7,5 см3.",
-        "ar": "وفق التفاعل 2 H2O → 2 H2 + O2 يكون حجم غاز H2 المتجمع عند المهبط ضعف حجم غاز O2 المتجمع عند المصعد في الظروف نفسها: 2 · 15 = 30 cm3. أما افتراض تساوي الحجمين فيعطي 15 cm3، وعكس النسبة يعطي 7.5 cm3.",
-        "zh": "根据 2 H2O → 2 H2 + O2，相同条件下阴极收集的 H2 体积是阳极收集的 O2 体积的 2 倍：2 · 15 = 30 cm3。若认为两者体积相等会得到 15 cm3，把比例弄反则得到 7.5 cm3。",
-        "ku": "Li gorî reaksiyona 2 H2O → 2 H2 + O2, di heman şertan de qebareya gaza H2 ya ku li katodê kom dibe 2 qatê qebareya gaza O2 ya li anodê ye: 2 · 15 = 30 cm3. Heke qebare wekhev werin hesibandin 15 cm3, heke rêje berevajî were girtin 7,5 cm3 derdikeve."
+        "tr": "Grafikten 1930 s'de I. kapta 2,16 g Ag biriktiği okunur: n(Ag) = 2,16 / 108 = 0,02 mol. Ag+ + e- → Ag olduğundan devreden 0,02 mol elektron geçmiştir: Q = 0,02 · 96500 = 1930 C, I = Q / t = 1930 / 1930 = 1 A. Seri kaplardan aynı yük geçtiği için aynı sürede II. kapta 0,59 g M, yani 0,59 / 59 = 0,01 mol M birikmiştir; 0,02 mol elektron 0,01 mol M verdiğine göre her iyon 2 elektron almıştır: M2+. M'nin molünü elektron molüne eşitlemek M+ sonucunu; Ag kütlesini 1930 s yerine yanlış süreyle eşleştirmek 2 A veya 0,5 A sonucunu verir.",
+        "en": "From the graph, 2.16 g of Ag has deposited in cell I at 1930 s: n(Ag) = 2.16 / 108 = 0.02 mol. Since Ag+ + e- → Ag, 0.02 mol of electrons has passed: Q = 0.02 · 96500 = 1930 C and I = Q / t = 1930 / 1930 = 1 A. The same charge passes through cells in series, so in the same time 0.59 g of M, i.e. 0.59 / 59 = 0.01 mol, deposits in cell II; 0.02 mol of electrons giving 0.01 mol of M means each ion took up 2 electrons: M2+. Equating moles of M with moles of electrons gives M+; pairing the Ag mass with the wrong time gives 2 A or 0.5 A.",
+        "de": "Aus dem Diagramm liest man ab, dass sich in Zelle I nach 1930 s 2,16 g Ag abgeschieden haben: n(Ag) = 2,16 / 108 = 0,02 mol. Wegen Ag+ + e- → Ag sind 0,02 mol Elektronen geflossen: Q = 0,02 · 96500 = 1930 C, I = Q / t = 1930 / 1930 = 1 A. Durch in Reihe geschaltete Zellen fließt dieselbe Ladung; in derselben Zeit scheiden sich in Zelle II 0,59 g M, also 0,59 / 59 = 0,01 mol, ab. 0,02 mol Elektronen liefern 0,01 mol M, also nimmt jedes Ion 2 Elektronen auf: M2+. Setzt man die Stoffmenge von M der Elektronenmenge gleich, erhält man M+; ordnet man der Ag-Masse die falsche Zeit zu, erhält man 2 A oder 0,5 A.",
+        "fr": "On lit sur le graphique qu'à 1930 s, 2,16 g de Ag se sont déposés dans la cuve I : n(Ag) = 2,16 / 108 = 0,02 mol. Comme Ag+ + e- → Ag, 0,02 mol d'électrons ont circulé : Q = 0,02 · 96500 = 1930 C et I = Q / t = 1930 / 1930 = 1 A. La même charge traverse les cuves en série ; pendant le même temps, 0,59 g de M, soit 0,59 / 59 = 0,01 mol, se déposent dans la cuve II. 0,02 mol d'électrons donnant 0,01 mol de M, chaque ion a capté 2 électrons : M2+. Égaler la quantité de M à celle des électrons donne M+ ; associer la masse d'argent à une mauvaise durée donne 2 A ou 0,5 A.",
+        "ru": "По графику за 1930 с в электролизёре I выделилось 2,16 г Ag: n(Ag) = 2,16 / 108 = 0,02 моль. Так как Ag+ + e- → Ag, через цепь прошло 0,02 моль электронов: Q = 0,02 · 96500 = 1930 Кл, I = Q / t = 1930 / 1930 = 1 А. Через последовательно соединённые электролизёры проходит одинаковый заряд, и за то же время во II выделилось 0,59 г M, т. е. 0,59 / 59 = 0,01 моль; 0,02 моль электронов дают 0,01 моль M, значит, каждый ион принял 2 электрона: M2+. Если приравнять количество M к количеству электронов, получится M+; если сопоставить массу серебра с неверным временем — 2 А или 0,5 А.",
+        "ar": "يُقرأ من الرسم أن 2.16 g من Ag ترسبت في الخلية I عند 1930 s: n(Ag) = 2.16 / 108 = 0.02 mol. وبما أن Ag+ + e- → Ag فقد مرّ 0.02 mol من الإلكترونات: Q = 0.02 · 96500 = 1930 C، وI = Q / t = 1930 / 1930 = 1 A. وتمر الشحنة نفسها في الخلايا الموصولة على التوالي، ففي الزمن نفسه ترسب في الخلية II 0.59 g من M أي 0.59 / 59 = 0.01 mol؛ وبما أن 0.02 mol من الإلكترونات أعطت 0.01 mol من M فكل أيون اكتسب إلكترونين: M2+. ومساواة مولات M بمولات الإلكترونات تعطي M+، وربط كتلة الفضة بزمن خاطئ يعطي 2 A أو 0.5 A.",
+        "zh": "由图可读出，1930 s 时池 I 中析出 2.16 g Ag：n(Ag) = 2.16 / 108 = 0.02 mol。因为 Ag+ + e- → Ag，所以通过电路的电子为 0.02 mol：Q = 0.02 · 96500 = 1930 C，I = Q / t = 1930 / 1930 = 1 A。串联电解池通过的电量相同，同一时间池 II 析出 0.59 g M，即 0.59 / 59 = 0.01 mol；0.02 mol 电子生成 0.01 mol M，说明每个离子得到 2 个电子：M2+。把 M 的物质的量等同于电子的物质的量会得到 M+；把银的质量与错误的时间对应会得到 2 A 或 0.5 A。",
+        "ku": "Ji grafîkê tê xwendin ku di 1930 s de di şaneya I de 2,16 g Ag kom bûye: n(Ag) = 2,16 / 108 = 0,02 mol. Ji ber Ag+ + e- → Ag, 0,02 mol elektron di devreyê re derbas bûne: Q = 0,02 · 96500 = 1930 C, I = Q / t = 1930 / 1930 = 1 A. Di şaneyên bi rêzî de heman bar derbas dibe; di heman demê de di şaneya II de 0,59 g M, ango 0,59 / 59 = 0,01 mol M kom bûye. Ji ber ku 0,02 mol elektron 0,01 mol M dide, her îyonê 2 elektron girtine: M2+. Wekhevkirina mola M bi mola elektronan re M+ dide; girêdana girseya Ag bi demeke şaş re 2 A an 0,5 A dide."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman (s)",
+          "en": "Time (s)",
+          "de": "Zeit (s)",
+          "fr": "Temps (s)",
+          "ru": "Время (с)",
+          "ar": "الزمن (s)",
+          "zh": "时间 (s)",
+          "ku": "Dem (s)"
+        },
+        "yLabel": {
+          "tr": "Biriken kütle (g)",
+          "en": "Mass deposited (g)",
+          "de": "Abgeschiedene Masse (g)",
+          "fr": "Masse déposée (g)",
+          "ru": "Масса осадка (г)",
+          "ar": "الكتلة المترسبة (g)",
+          "zh": "析出质量 (g)",
+          "ku": "Girseya komkirî (g)"
+        },
+        "xMax": 4200,
+        "yMax": 4.8,
+        "xTicks": [
+          1930,
+          3860
+        ],
+        "yTicks": [
+          0.59,
+          1.18,
+          2.16,
+          4.32
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                3860,
+                4.32
+              ]
+            ],
+            "label": "I (Ag)"
+          },
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                3860,
+                1.18
+              ]
+            ],
+            "label": "II (M)",
+            "dashed": true,
+            "tone": 1
+          }
+        ]
       }
     },
     {
@@ -1732,90 +1797,108 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin10",
       "stem": {
-        "tr": "Demirden yapılmış bir anahtar gümüşle kaplanmak isteniyor. Anahtar ve saf gümüş levha AgNO3 çözeltisine daldırılıp bir doğru akım kaynağına bağlanıyor. Bu işlemle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
-        "en": "An iron key is to be plated with silver. The key and a pure silver plate are immersed in AgNO3 solution and connected to a DC source. Which of the following statements about this process is false?",
-        "de": "Ein Schlüssel aus Eisen soll versilbert werden. Der Schlüssel und ein Reinsilberblech werden in AgNO3-Lösung getaucht und an eine Gleichstromquelle angeschlossen. Welche der folgenden Aussagen über diesen Vorgang ist falsch?",
-        "fr": "Une clé en fer doit être argentée. La clé et une plaque d'argent pur sont plongées dans une solution de AgNO3 et reliées à une source de courant continu. Laquelle des affirmations suivantes sur ce procédé est fausse ?",
-        "ru": "Железный ключ нужно покрыть серебром. Ключ и пластину чистого серебра погружают в раствор AgNO3 и подключают к источнику постоянного тока. Какое из утверждений об этом процессе неверно?",
-        "ar": "يُراد طلاء مفتاح من الحديد بالفضة. يُغمر المفتاح وصفيحة من الفضة النقية في محلول AgNO3 ويوصلان بمصدر تيار مستمر. أيٌّ من العبارات الآتية حول هذه العملية خاطئة؟",
-        "zh": "要给一把铁钥匙镀银。将钥匙和纯银片浸入 AgNO3 溶液并接直流电源。关于该过程的下列说法中哪一项是错误的？",
-        "ku": "Mifteyeke hesin divê bi zîv were pêçandin. Mifte û pelekî zîvê paqij dikevin nav çareseriya AgNO3 û bi çavkaniya herika rasterast ve têne girêdan. Derbarê vê pêvajoyê de kîjan ji van gotinan şaş e?"
+        "tr": "Demir bir anahtar şekildeki düzenekle gümüşle kaplanmak isteniyor. Anahtar ve saf gümüş levha, doğru akım kaynağına bağlı X ve Y konumlarına yerleştirilecektir.\nBu işlemle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+        "en": "An iron key is to be silver-plated with the set-up shown. The key and a pure silver plate will be placed at positions X and Y, which are connected to the DC source.\nWhich of the following statements about this process is correct?",
+        "de": "Ein Eisenschlüssel soll mit der gezeigten Anordnung versilbert werden. Der Schlüssel und ein reines Silberblech werden an den mit der Gleichstromquelle verbundenen Positionen X und Y angebracht.\nWelche der folgenden Aussagen über diesen Vorgang ist richtig?",
+        "fr": "On veut argenter une clé en fer avec le montage représenté. La clé et une plaque d'argent pur seront placées aux positions X et Y reliées au générateur de courant continu.\nLaquelle des affirmations suivantes sur cette opération est correcte ?",
+        "ru": "Железный ключ нужно посеребрить с помощью показанной установки. Ключ и пластину из чистого серебра помещают в позиции X и Y, подключённые к источнику постоянного тока.\nКакое из следующих утверждений об этом процессе верно?",
+        "ar": "يُراد طلاء مفتاح من الحديد بالفضة باستخدام الجهاز المبيّن في الشكل. سيوضع المفتاح وصفيحة من الفضة النقية في الموضعين X وY الموصولين بمصدر التيار المستمر.\nأيّ العبارات الآتية عن هذه العملية صحيحة؟",
+        "zh": "用图示装置给铁钥匙镀银。钥匙和纯银片将分别放在与直流电源相连的位置 X 和 Y 上。\n关于这一过程，下列说法中哪一项正确？",
+        "ku": "Tê xwestin ku mifteyeke hesin bi amûra şeklê bi zîv bê pêçandin. Mifte û pelekî zîvê paqij dê li cihên X û Y yên ku bi çavkaniya herikîna rasterast ve girêdayî ne bên danîn.\nDerbarê vê karî de kîjan gotin rast e?"
       },
       "options": [
         {
-          "tr": "Anahtar, kaynağın negatif kutbuna bağlanır.",
-          "en": "The key is connected to the negative terminal of the source.",
-          "de": "Der Schlüssel wird mit dem Minuspol der Quelle verbunden.",
-          "fr": "La clé est reliée à la borne négative de la source.",
-          "ru": "Ключ подключают к отрицательному полюсу источника.",
-          "ar": "يوصل المفتاح بالقطب السالب للمصدر.",
-          "zh": "钥匙接电源负极。",
-          "ku": "Mifte bi qutba neyînî ya çavkaniyê ve tê girêdan."
+          "tr": "Anahtar Y'ye, gümüş levha X'e yerleştirilmeli; X'te Ag → Ag+ + e- tepkimesi gerçekleşir.",
+          "en": "The key must be placed at Y and the silver plate at X; the reaction Ag → Ag+ + e- occurs at X.",
+          "de": "Der Schlüssel muss an Y und das Silberblech an X; an X läuft Ag → Ag+ + e- ab.",
+          "fr": "La clé doit être placée en Y et la plaque d'argent en X ; la réaction Ag → Ag+ + e- a lieu en X.",
+          "ru": "Ключ нужно поместить в Y, а серебряную пластину — в X; в X протекает реакция Ag → Ag+ + e-.",
+          "ar": "يجب وضع المفتاح في Y وصفيحة الفضة في X، ويحدث عند X التفاعل Ag → Ag+ + e-.",
+          "zh": "钥匙应放在 Y，银片放在 X；X 处发生 Ag → Ag+ + e- 反应。",
+          "ku": "Divê mifte li Y û pelê zîv li X bê danîn; li X reaksiyona Ag → Ag+ + e- pêk tê."
         },
         {
-          "tr": "Gümüş levhada Ag → Ag+ + e- tepkimesi gerçekleşir.",
-          "en": "The reaction Ag → Ag+ + e- takes place at the silver plate.",
-          "de": "Am Silberblech läuft die Reaktion Ag → Ag+ + e- ab.",
-          "fr": "La réaction Ag → Ag+ + e- a lieu sur la plaque d'argent.",
-          "ru": "На серебряной пластине протекает реакция Ag → Ag+ + e-.",
-          "ar": "يحدث التفاعل Ag → Ag+ + e- عند صفيحة الفضة.",
-          "zh": "银片上发生 Ag → Ag+ + e- 反应。",
-          "ku": "Li pelê zîv reaksiyona Ag → Ag+ + e- pêk tê."
+          "tr": "Anahtar X'e yerleştirilmeli; X'te Ag+ iyonları indirgenir.",
+          "en": "The key must be placed at X; Ag+ ions are reduced at X.",
+          "de": "Der Schlüssel muss an X; an X werden Ag+-Ionen reduziert.",
+          "fr": "La clé doit être placée en X ; les ions Ag+ sont réduits en X.",
+          "ru": "Ключ нужно поместить в X; в X восстанавливаются ионы Ag+.",
+          "ar": "يجب وضع المفتاح في X، وتُختزل أيونات Ag+ عند X.",
+          "zh": "钥匙应放在 X；X 处 Ag+ 被还原。",
+          "ku": "Divê mifte li X bê danîn; li X îyonên Ag+ redûkte dibin."
         },
         {
-          "tr": "Çözeltideki Ag+ derişimi yaklaşık olarak sabit kalır.",
-          "en": "The Ag+ concentration of the solution stays approximately constant.",
-          "de": "Die Ag+-Konzentration der Lösung bleibt annähernd konstant.",
-          "fr": "La concentration en Ag+ de la solution reste à peu près constante.",
-          "ru": "Концентрация Ag+ в растворе остаётся примерно постоянной.",
-          "ar": "يبقى تركيز Ag+ في المحلول ثابتًا تقريبًا.",
-          "zh": "溶液中 Ag+ 的浓度大致保持不变。",
-          "ku": "Tîrbûna Ag+ ya di çareseriyê de bi texmînî sabît dimîne."
+          "tr": "Anahtar Y'ye yerleştirilmeli; işlem süresince çözeltideki Ag+ derişimi sürekli azalır.",
+          "en": "The key must be placed at Y; the Ag+ concentration of the solution decreases steadily during the process.",
+          "de": "Der Schlüssel muss an Y; die Ag+-Konzentration der Lösung nimmt während des Vorgangs ständig ab.",
+          "fr": "La clé doit être placée en Y ; la concentration de Ag+ dans la solution diminue constamment pendant l'opération.",
+          "ru": "Ключ нужно поместить в Y; концентрация Ag+ в растворе в ходе процесса непрерывно уменьшается.",
+          "ar": "يجب وضع المفتاح في Y، ويتناقص تركيز Ag+ في المحلول باستمرار خلال العملية.",
+          "zh": "钥匙应放在 Y；在此过程中溶液里的 Ag+ 浓度不断减小。",
+          "ku": "Divê mifte li Y bê danîn; di dema karî de tîrbûna Ag+ ya çareseriyê bi berdewamî kêm dibe."
         },
         {
-          "tr": "Elektronlar dış devrede anahtardan gümüş levhaya doğru akar.",
-          "en": "In the external circuit electrons flow from the key towards the silver plate.",
-          "de": "Im äußeren Stromkreis fließen die Elektronen vom Schlüssel zum Silberblech.",
-          "fr": "Dans le circuit extérieur, les électrons circulent de la clé vers la plaque d'argent.",
-          "ru": "Во внешней цепи электроны движутся от ключа к серебряной пластине.",
-          "ar": "تتدفق الإلكترونات في الدائرة الخارجية من المفتاح نحو صفيحة الفضة.",
-          "zh": "外电路中电子从钥匙流向银片。",
-          "ku": "Di çerxa derve de elektron ji miftê ber bi pelê zîv ve diherikin."
+          "tr": "Gümüş levha Y'ye yerleştirilmeli; Y'de gümüş yükseltgenir.",
+          "en": "The silver plate must be placed at Y; silver is oxidized at Y.",
+          "de": "Das Silberblech muss an Y; an Y wird Silber oxidiert.",
+          "fr": "La plaque d'argent doit être placée en Y ; l'argent est oxydé en Y.",
+          "ru": "Серебряную пластину нужно поместить в Y; в Y серебро окисляется.",
+          "ar": "يجب وضع صفيحة الفضة في Y، وتتأكسد الفضة عند Y.",
+          "zh": "银片应放在 Y；银在 Y 处被氧化。",
+          "ku": "Divê pelê zîv li Y bê danîn; li Y zîv oksîde dibe."
         },
         {
-          "tr": "İşlem süresince gümüş levhanın kütlesi azalır.",
-          "en": "The mass of the silver plate decreases during the process.",
-          "de": "Die Masse des Silberblechs nimmt während des Vorgangs ab.",
-          "fr": "La masse de la plaque d'argent diminue au cours du procédé.",
-          "ru": "Масса серебряной пластины в ходе процесса уменьшается.",
-          "ar": "تقل كتلة صفيحة الفضة أثناء العملية.",
-          "zh": "过程中银片的质量减小。",
-          "ku": "Di dema pêvajoyê de girseya pelê zîv kêm dibe."
+          "tr": "Anahtar Y'ye yerleştirilmeli; elektronlar dış devrede Y'den kaynağa, kaynaktan X'e akar.",
+          "en": "The key must be placed at Y; in the external circuit electrons flow from Y to the source and from the source to X.",
+          "de": "Der Schlüssel muss an Y; im äußeren Stromkreis fließen die Elektronen von Y zur Quelle und von der Quelle zu X.",
+          "fr": "La clé doit être placée en Y ; dans le circuit extérieur, les électrons vont de Y au générateur puis du générateur vers X.",
+          "ru": "Ключ нужно поместить в Y; во внешней цепи электроны текут от Y к источнику, а от источника к X.",
+          "ar": "يجب وضع المفتاح في Y، وتتدفق الإلكترونات في الدائرة الخارجية من Y إلى المصدر ومن المصدر إلى X.",
+          "zh": "钥匙应放在 Y；外电路中电子从 Y 流向电源，再从电源流向 X。",
+          "ku": "Divê mifte li Y bê danîn; di devreya derve de elektron ji Y ber bi çavkaniyê û ji çavkaniyê ber bi X ve diherikin."
         }
       ],
-      "correctIndex": 3,
+      "correctIndex": 0,
       "explanation": {
-        "tr": "Kaplanacak anahtar katottur ve elektroliz hücresinde katot kaynağın negatif kutbuna bağlanır; Ag+ + e- → Ag ile anahtarın üzerinde gümüş birikir. Gümüş levha anottur: Ag → Ag+ + e- ile çözünür, kütlesi azalır. Anotta oluşan Ag+ kadar Ag+ katotta harcandığından derişim yaklaşık sabit kalır. Yanlış olan elektron yönüdür: elektronlar anottan (gümüş levha) kaynak üzerinden katoda (anahtar) gider, tersi değil.",
-        "en": "The key to be plated is the cathode, and in an electrolytic cell the cathode is connected to the negative terminal; silver deposits on the key by Ag+ + e- → Ag. The silver plate is the anode: it dissolves by Ag → Ag+ + e- and its mass decreases. As much Ag+ is consumed at the cathode as is formed at the anode, so the concentration stays roughly constant. The false statement is the electron direction: electrons travel from the anode (silver plate) through the source to the cathode (key), not the other way round.",
-        "de": "Der zu überziehende Schlüssel ist die Kathode, und in einer Elektrolysezelle wird die Kathode mit dem Minuspol verbunden; durch Ag+ + e- → Ag scheidet sich Silber auf dem Schlüssel ab. Das Silberblech ist die Anode: Es löst sich nach Ag → Ag+ + e- auf, seine Masse nimmt ab. An der Kathode wird so viel Ag+ verbraucht, wie an der Anode entsteht, daher bleibt die Konzentration annähernd konstant. Falsch ist die Elektronenrichtung: Elektronen fließen von der Anode (Silberblech) über die Quelle zur Kathode (Schlüssel), nicht umgekehrt.",
-        "fr": "La clé à recouvrir est la cathode, et dans une cellule d'électrolyse la cathode est reliée à la borne négative ; l'argent se dépose sur la clé selon Ag+ + e- → Ag. La plaque d'argent est l'anode : elle se dissout selon Ag → Ag+ + e- et sa masse diminue. Autant d'Ag+ est consommé à la cathode qu'il s'en forme à l'anode, la concentration reste donc à peu près constante. L'affirmation fausse est le sens des électrons : ils vont de l'anode (plaque d'argent) à la cathode (clé) en passant par la source, et non l'inverse.",
-        "ru": "Покрываемый ключ — катод, а в электролизёре катод подключают к отрицательному полюсу; серебро осаждается на ключе по реакции Ag+ + e- → Ag. Серебряная пластина — анод: она растворяется по реакции Ag → Ag+ + e-, её масса уменьшается. На катоде расходуется столько же Ag+, сколько образуется на аноде, поэтому концентрация остаётся примерно постоянной. Неверно направление электронов: они идут от анода (серебряной пластины) через источник к катоду (ключу), а не наоборот.",
-        "ar": "المفتاح المراد طلاؤه هو المهبط، وفي خلية التحليل الكهربائي يوصَل المهبط بالقطب السالب للمصدر؛ فتترسب الفضة على المفتاح وفق Ag+ + e- → Ag. صفيحة الفضة هي المصعد: تذوب وفق Ag → Ag+ + e- وتقل كتلتها. يُستهلك عند المهبط من Ag+ بقدر ما يتكون عند المصعد فيبقى التركيز ثابتًا تقريبًا. العبارة الخاطئة هي اتجاه الإلكترونات: فهي تنتقل من المصعد (صفيحة الفضة) عبر المصدر إلى المهبط (المفتاح) وليس العكس.",
-        "zh": "待镀钥匙是阴极，电解池中阴极接电源负极；钥匙上发生 Ag+ + e- → Ag 而镀上银。银片是阳极：按 Ag → Ag+ + e- 溶解，质量减小。阴极消耗的 Ag+ 与阳极生成的一样多，所以浓度大致不变。错误的是电子流向：电子从阳极（银片）经电源流向阴极（钥匙），而不是相反。",
-        "ku": "Mifteya ku dê were pêçandin katod e û di şaneya elektrolîzê de katod bi qutba neyînî ya çavkaniyê ve tê girêdan; bi Ag+ + e- → Ag zîv li ser miftê kom dibe. Pelê zîv anod e: bi Ag → Ag+ + e- dihele û girseya wî kêm dibe. Çiqas Ag+ li anodê çêbibe, ewqas jî li katodê tê xerckirin, loma tîrbûn bi texmînî sabît dimîne. Gotina şaş rêya elektronan e: elektron ji anodê (pelê zîv) di ser çavkaniyê re diçin katodê (mifte), ne berevajî."
+        "tr": "Şekilde X kaynağın pozitif (+), Y negatif (−) kutbuna bağlıdır. Elektroliz hücresinde pozitif kutba bağlı elektrot anot, negatif kutba bağlı elektrot katottur. Kaplanacak anahtarın üzerinde Ag+ + e- → Ag ile gümüş birikmesi için anahtar katoda, yani Y'ye; gümüş levha anoda, yani X'e takılmalıdır. X'te Ag → Ag+ + e- ile levha çözünür. Anotta oluşan Ag+ kadar Ag+ katotta harcandığından derişim yaklaşık sabit kalır. Elektronlar anottan (X) kaynağın pozitif kutbuna girer, negatif kutuptan katoda (Y) gider; yani yön X'ten Y'ye doğrudur, tersi değil.",
+        "en": "In the figure, X is connected to the positive (+) terminal and Y to the negative (−) terminal. In an electrolytic cell the electrode connected to the positive terminal is the anode and the one connected to the negative terminal is the cathode. For silver to deposit on the key by Ag+ + e- → Ag, the key must be the cathode, Y, and the silver plate the anode, X. At X the plate dissolves: Ag → Ag+ + e-. As much Ag+ forms at the anode as is used up at the cathode, so the concentration stays roughly constant. Electrons leave the anode (X), enter the positive terminal and leave the negative terminal toward the cathode (Y): the flow is from X to Y, not the reverse.",
+        "de": "In der Abbildung ist X mit dem Pluspol (+) und Y mit dem Minuspol (−) verbunden. In einer Elektrolysezelle ist die mit dem Pluspol verbundene Elektrode die Anode, die mit dem Minuspol verbundene die Kathode. Damit sich auf dem Schlüssel nach Ag+ + e- → Ag Silber abscheidet, muss der Schlüssel Kathode sein, also an Y; das Silberblech ist Anode, also an X. An X löst sich das Blech: Ag → Ag+ + e-. An der Anode entsteht so viel Ag+, wie an der Kathode verbraucht wird; die Konzentration bleibt etwa konstant. Die Elektronen verlassen die Anode (X), gelangen zum Pluspol und vom Minuspol zur Kathode (Y): Sie fließen von X nach Y, nicht umgekehrt.",
+        "fr": "Sur la figure, X est relié à la borne positive (+) et Y à la borne négative (−). Dans un électrolyseur, l'électrode reliée à la borne positive est l'anode et celle reliée à la borne négative est la cathode. Pour que l'argent se dépose sur la clé selon Ag+ + e- → Ag, la clé doit être la cathode, donc en Y, et la plaque d'argent l'anode, donc en X. En X, la plaque se dissout : Ag → Ag+ + e-. Il se forme à l'anode autant de Ag+ qu'il en est consommé à la cathode, la concentration reste donc à peu près constante. Les électrons quittent l'anode (X), entrent par la borne positive et ressortent par la borne négative vers la cathode (Y) : ils vont de X vers Y, et non l'inverse.",
+        "ru": "На рисунке X подключён к положительному (+), а Y — к отрицательному (−) полюсу источника. В электролизёре электрод, подключённый к положительному полюсу, — анод, к отрицательному — катод. Чтобы на ключе по реакции Ag+ + e- → Ag осаждалось серебро, ключ должен быть катодом, то есть находиться в Y, а серебряная пластина — анодом, в X. В X пластина растворяется: Ag → Ag+ + e-. Сколько Ag+ образуется на аноде, столько расходуется на катоде, поэтому концентрация почти не меняется. Электроны уходят с анода (X) к положительному полюсу и от отрицательного полюса идут к катоду (Y): направление — от X к Y, а не наоборот.",
+        "ar": "في الشكل يتصل X بالقطب الموجب (+) للمصدر وY بالقطب السالب (−). في خلية التحليل الكهربائي يكون القطب المتصل بالطرف الموجب مصعدًا والمتصل بالطرف السالب مهبطًا. ولكي تترسب الفضة على المفتاح وفق Ag+ + e- → Ag يجب أن يكون المفتاح مهبطًا أي في Y، وصفيحة الفضة مصعدًا أي في X. عند X تذوب الصفيحة: Ag → Ag+ + e-. ويتكوّن عند المصعد من Ag+ قدر ما يُستهلك عند المهبط، فيبقى التركيز ثابتًا تقريبًا. وتخرج الإلكترونات من المصعد (X) إلى الطرف الموجب ثم من الطرف السالب إلى المهبط (Y)، أي من X إلى Y لا العكس.",
+        "zh": "图中 X 接电源正极（+），Y 接负极（−）。电解池中接电源正极的电极是阳极，接负极的是阴极。要使银按 Ag+ + e- → Ag 沉积在钥匙上，钥匙必须是阴极，即放在 Y；银片是阳极，放在 X。X 处银片溶解：Ag → Ag+ + e-。阳极生成的 Ag+ 与阴极消耗的 Ag+ 相等，所以浓度基本不变。电子从阳极 X 流入电源正极，再从负极流向阴极 Y：方向是从 X 到 Y，而不是相反。",
+        "ku": "Di şeklê de X bi polê erênî (+) û Y bi polê neyînî (−) yê çavkaniyê ve girêdayî ye. Di şaneya elektrolîzê de elektroda ku bi polê erênî ve girêdayî ye anod, ya ku bi polê neyînî ve girêdayî ye katod e. Ji bo ku bi Ag+ + e- → Ag zîv li ser miftê kom bibe, divê mifte katod be, ango li Y be; pelê zîv anod e, ango li X ye. Li X pel dihele: Ag → Ag+ + e-. Çiqas Ag+ li anodê çêbibe ewqas li katodê tê xerckirin, ji ber vê tîrbûn hema hema sabît dimîne. Elektron ji anodê (X) diçin polê erênî û ji polê neyînî diçin katodê (Y): rê ji X ber bi Y ve ye, ne berevajî."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 210,
+        "markup": "<rect x=\"140\" y=\"12\" width=\"80\" height=\"32\" class=\"qf-fill\"/><text x=\"158\" y=\"34\" text-anchor=\"middle\" class=\"qf-big\">+</text><text x=\"202\" y=\"34\" text-anchor=\"middle\" class=\"qf-big\">−</text><path d=\"M140 28 H90 V70\" class=\"qf-line\"/><path d=\"M220 28 H270 V70\" class=\"qf-line\"/><rect x=\"40\" y=\"90\" width=\"280\" height=\"112\" class=\"qf-fill\"/><rect x=\"41\" y=\"110\" width=\"278\" height=\"91\" class=\"qf-water\"/><rect x=\"80\" y=\"70\" width=\"20\" height=\"105\" class=\"qf-dash\"/><rect x=\"260\" y=\"70\" width=\"20\" height=\"105\" class=\"qf-dash\"/><text x=\"66\" y=\"86\" text-anchor=\"middle\" class=\"qf-big\">X</text><text x=\"294\" y=\"86\" text-anchor=\"middle\" class=\"qf-big\">Y</text><text x=\"180\" y=\"165\" text-anchor=\"middle\">{{sol}}</text>",
+        "labels": {
+          "sol": {
+            "tr": "AgNO₃(suda)",
+            "en": "AgNO₃(aq)",
+            "de": "AgNO₃(aq)",
+            "fr": "AgNO₃(aq)",
+            "ru": "AgNO₃ (р-р)",
+            "ar": "AgNO₃(aq)",
+            "zh": "AgNO₃ 溶液",
+            "ku": "AgNO₃(av)"
+          }
+        }
       }
     },
     {
       "id": "u22-twin11",
       "stem": {
-        "tr": "Özdeş ve temizlenmiş üç demir çiviyle aşağıdaki düzenekler hazırlanıp bir hafta bekletiliyor. I. tüp: Çivi, içinde nem tutucu susuz CaCl2 bulunan ağzı kapalı tüpte, kuru havada. II. tüp: Çivi, kaynatılarak çözünmüş havası uzaklaştırılmış ve yüzeyi yağ tabakasıyla kapatılmış suda. III. tüp: Çivi, ağzı açık tüpte yarısı tuzlu suya batmış hâlde. Hangi tüplerdeki çivilerde belirgin paslanma gözlenir?",
-        "en": "Three identical, cleaned iron nails are set up as follows and left for a week. Tube I: nail in a closed tube with anhydrous CaCl2 as a drying agent, in dry air. Tube II: nail in water that has been boiled to remove dissolved air and covered with a layer of oil. Tube III: nail half immersed in salt water in an open tube. In which tubes does noticeable rusting occur?",
-        "de": "Drei gleiche, gereinigte Eisennägel werden wie folgt angeordnet und eine Woche stehen gelassen. Rohr I: Nagel in einem verschlossenen Rohr mit wasserfreiem CaCl2 als Trockenmittel, in trockener Luft. Rohr II: Nagel in abgekochtem, von gelöster Luft befreitem Wasser, das mit einer Ölschicht bedeckt ist. Rohr III: Nagel zur Hälfte in Salzwasser in einem offenen Rohr. In welchen Rohren tritt deutliches Rosten auf?",
-        "fr": "Trois clous en fer identiques et nettoyés sont disposés comme suit et laissés une semaine. Tube I : clou dans un tube fermé contenant du CaCl2 anhydre comme desséchant, dans l'air sec. Tube II : clou dans de l'eau bouillie, débarrassée de l'air dissous et recouverte d'une couche d'huile. Tube III : clou à moitié plongé dans de l'eau salée, tube ouvert. Dans quels tubes observe-t-on une rouille nette ?",
-        "ru": "Три одинаковых очищенных железных гвоздя помещают в следующие условия и оставляют на неделю. Пробирка I: гвоздь в закрытой пробирке с безводным CaCl2 (осушитель), в сухом воздухе. Пробирка II: гвоздь в прокипячённой воде без растворённого воздуха, покрытой слоем масла. Пробирка III: гвоздь, наполовину погружённый в солёную воду, в открытой пробирке. В каких пробирках наблюдается заметное ржавление?",
-        "ar": "تُحضَّر ثلاثة مسامير حديدية متماثلة ونظيفة على النحو الآتي وتُترك أسبوعًا. الأنبوب I: المسمار في أنبوب مغلق يحتوي CaCl2 اللامائي كمادة مجففة، في هواء جاف. الأنبوب II: المسمار في ماء مغلي أُزيل منه الهواء الذائب ومغطى بطبقة من الزيت. الأنبوب III: المسمار مغمور نصفه في ماء مالح في أنبوب مفتوح. في أي الأنابيب يُلاحظ صدأ واضح؟",
-        "zh": "取三枚相同且洁净的铁钉，按下列方式放置一周。试管 I：铁钉置于装有无水 CaCl2 干燥剂的密闭试管中（干燥空气）。试管 II：铁钉浸在煮沸除去溶解空气并覆盖一层油的水中。试管 III：铁钉一半浸在盐水中，试管口敞开。哪些试管中的铁钉明显生锈？",
-        "ku": "Bi sê bizmarên hesin ên wekhev û paqijkirî ev sazûmanên jêrîn têne amadekirin û hefteyekê têne hiştin. Lûleya I: bizmar di lûleyeke devgirtî de ye ku CaCl2 ya bêav wek hişkker tê de heye, di hewaya hişk de. Lûleya II: bizmar di avê de ye ku bi kelandinê hewaya helbûyî jê hatiye derxistin û rûyê wê bi çîneke rûn hatiye girtin. Lûleya III: bizmar di lûleyeke devvekirî de ye û nîvê wê di ava xwê de ye. Di kîjan lûleyan de bizmar bi awayekî diyar zengar digirin?"
+        "tr": "Özdeş ve temizlenmiş üç demir çiviyle şekildeki düzenekler hazırlanıp bir hafta bekletiliyor (susuz CaCl2 nem tutucudur).\nHangi tüplerdeki çivilerde belirgin paslanma gözlenir?",
+        "en": "The set-ups shown are prepared with three identical, cleaned iron nails and left for a week (anhydrous CaCl2 is a drying agent).\nIn which tubes is noticeable rusting of the nail observed?",
+        "de": "Mit drei gleichen, gereinigten Eisennägeln werden die abgebildeten Versuche angesetzt und eine Woche stehen gelassen (wasserfreies CaCl2 ist ein Trockenmittel).\nIn welchen Reagenzgläsern rostet der Nagel deutlich?",
+        "fr": "On réalise les montages représentés avec trois clous en fer identiques et nettoyés, puis on les laisse une semaine (CaCl2 anhydre est un desséchant).\nDans quels tubes observe-t-on une rouille nette du clou ?",
+        "ru": "С тремя одинаковыми очищенными железными гвоздями собирают показанные установки и оставляют на неделю (безводный CaCl2 — осушитель).\nВ каких пробирках гвоздь заметно ржавеет?",
+        "ar": "حُضِّرت الأجهزة المبيّنة في الشكل باستخدام ثلاثة مسامير حديدية متماثلة ونظيفة وتُركت أسبوعًا (CaCl2 اللامائي مادة مجففة).\nفي أيّ الأنابيب يُلاحظ صدأ واضح على المسمار؟",
+        "zh": "用三根相同且已清洁的铁钉按图示装置放置一周（无水 CaCl2 是干燥剂）。\n哪些试管中的铁钉明显生锈？",
+        "ku": "Bi sê bizmarên hesin ên wekhev û paqijkirî amûrên şeklê têne amadekirin û hefteyekê têne hiştin (CaCl2 ya bê av madeyeke hişkker e).\nDi kîjan lûleyan de bizmar bi awayekî diyar zengar digire?"
       },
       "options": [
         {
@@ -1879,19 +1962,87 @@ export const unit22: ChemistryUnitSeedData = {
         "ar": "لا يصدأ الحديد إلا بوجود الأكسجين والماء معًا. في الأنبوب I تزيل المادة المجففة الماء، وفي الأنبوب II أزال الغليان O2 الذائب وتمنع طبقة الزيت ذوبان الهواء مجددًا. أما الأنبوب III ففيه ماء وهواء، كما أن أيونات الملح الذائبة تزيد توصيل المحلول وتسرّع الصدأ. لذلك يُلاحظ صدأ واضح في الأنبوب III فقط.",
         "zh": "铁生锈需要氧气和水同时存在。试管 I 中干燥剂除去了水；试管 II 中煮沸除去了溶解的 O2，油层又阻止空气重新溶入。试管 III 中既有水又有空气，溶解的盐离子还增强了溶液导电性，加快生锈。因此只有试管 III 中的铁钉明显生锈。",
         "ku": "Ji bo zengarbûna hesin divê oksîjen û av bi hev re hebin. Di lûleya I de hişkker avê radike, loma av tune ye; di lûleya II de kelandinê O2 ya helbûyî derxistiye û çîna rûn nahêle ku hewa dîsa bihele. Di lûleya III de hem av hem hewa heye; herweha îyonên xwêya helbûyî guhêzbariya çareseriyê zêde dikin û zengarbûnê bileztir dikin. Ji ber vê tenê di lûleya III de zengarbûneke diyar tê dîtin."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 216,
+        "markup": "<rect x=\"25\" y=\"30\" width=\"70\" height=\"130\" rx=\"4\" class=\"qf-fill\"/><rect x=\"20\" y=\"20\" width=\"80\" height=\"14\" class=\"qf-solid\"/><rect x=\"26\" y=\"136\" width=\"68\" height=\"23\" class=\"qf-solid\"/><rect x=\"57\" y=\"50\" width=\"6\" height=\"70\" class=\"qf-accent3\"/><rect x=\"145\" y=\"30\" width=\"70\" height=\"130\" rx=\"4\" class=\"qf-fill\"/><rect x=\"146\" y=\"62\" width=\"68\" height=\"97\" class=\"qf-water\"/><rect x=\"146\" y=\"52\" width=\"68\" height=\"10\" class=\"qf-accent2\"/><rect x=\"177\" y=\"75\" width=\"6\" height=\"70\" class=\"qf-accent3\"/><rect x=\"265\" y=\"30\" width=\"70\" height=\"130\" rx=\"4\" class=\"qf-fill\"/><rect x=\"266\" y=\"100\" width=\"68\" height=\"59\" class=\"qf-water\"/><rect x=\"297\" y=\"55\" width=\"6\" height=\"90\" class=\"qf-accent3\"/><text x=\"60\" y=\"180\" text-anchor=\"middle\" class=\"qf-strong\">I</text><text x=\"180\" y=\"180\" text-anchor=\"middle\" class=\"qf-strong\">II</text><text x=\"300\" y=\"180\" text-anchor=\"middle\" class=\"qf-strong\">III</text><text x=\"60\" y=\"196\" text-anchor=\"middle\" class=\"qf-small\">{{a1}}</text><text x=\"60\" y=\"210\" text-anchor=\"middle\" class=\"qf-small\">{{a2}}</text><text x=\"180\" y=\"196\" text-anchor=\"middle\" class=\"qf-small\">{{b1}}</text><text x=\"180\" y=\"210\" text-anchor=\"middle\" class=\"qf-small\">{{b2}}</text><text x=\"300\" y=\"196\" text-anchor=\"middle\" class=\"qf-small\">{{c1}}</text><text x=\"300\" y=\"210\" text-anchor=\"middle\" class=\"qf-small\">{{c2}}</text>",
+        "labels": {
+          "a1": {
+            "tr": "kuru hava",
+            "en": "dry air",
+            "de": "trockene Luft",
+            "fr": "air sec",
+            "ru": "сухой воздух",
+            "ar": "هواء جاف",
+            "zh": "干燥空气",
+            "ku": "hewaya hişk"
+          },
+          "a2": {
+            "tr": "susuz CaCl₂",
+            "en": "anhydrous CaCl₂",
+            "de": "CaCl₂ (wasserfrei)",
+            "fr": "CaCl₂ anhydre",
+            "ru": "безводный CaCl₂",
+            "ar": "CaCl₂ لامائي",
+            "zh": "无水 CaCl₂",
+            "ku": "CaCl₂ bê av"
+          },
+          "b1": {
+            "tr": "kaynatılmış su",
+            "en": "boiled water",
+            "de": "abgekochtes Wasser",
+            "fr": "eau bouillie",
+            "ru": "кипячёная вода",
+            "ar": "ماء مغلي",
+            "zh": "煮沸过的水",
+            "ku": "ava kelandî"
+          },
+          "b2": {
+            "tr": "+ yağ tabakası",
+            "en": "+ oil layer",
+            "de": "+ Ölschicht",
+            "fr": "+ couche d'huile",
+            "ru": "+ слой масла",
+            "ar": "+ طبقة زيت",
+            "zh": "+ 油层",
+            "ku": "+ çîna rûn"
+          },
+          "c1": {
+            "tr": "tuzlu su",
+            "en": "salt water",
+            "de": "Salzwasser",
+            "fr": "eau salée",
+            "ru": "солёная вода",
+            "ar": "ماء مالح",
+            "zh": "盐水",
+            "ku": "ava şor"
+          },
+          "c2": {
+            "tr": "ağzı açık",
+            "en": "open tube",
+            "de": "offenes Glas",
+            "fr": "tube ouvert",
+            "ru": "открытая",
+            "ar": "أنبوب مفتوح",
+            "zh": "敞口",
+            "ku": "devê vekirî"
+          }
+        }
       }
     },
     {
       "id": "u22-twin12",
       "stem": {
-        "tr": "Bazı yarı tepkimelerin standart indirgenme potansiyelleri şöyledir: Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Sn2+/Sn: -0,14 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V. Toprağa gömülü demir bir boru hattını katodik koruma yöntemiyle korumak için boruya iletken telle bağlanacak metal aşağıdakilerden hangisi olmalıdır?",
-        "en": "The standard reduction potentials of some half-reactions are: Zn2+/Zn: -0.76 V; Fe2+/Fe: -0.44 V; Ni2+/Ni: -0.25 V; Sn2+/Sn: -0.14 V; Cu2+/Cu: +0.34 V; Ag+/Ag: +0.80 V. To protect an underground iron pipeline by cathodic protection, which metal should be connected to the pipe with a conducting wire?",
-        "de": "Die Standardreduktionspotentiale einiger Halbreaktionen sind: Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Sn2+/Sn: -0,14 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V. Welches Metall muss mit einem leitenden Draht an eine unterirdische Eisenrohrleitung angeschlossen werden, um sie durch kathodischen Schutz zu schützen?",
-        "fr": "Les potentiels standard de réduction de quelques demi-réactions sont : Zn2+/Zn : -0,76 V ; Fe2+/Fe : -0,44 V ; Ni2+/Ni : -0,25 V ; Sn2+/Sn : -0,14 V ; Cu2+/Cu : +0,34 V ; Ag+/Ag : +0,80 V. Pour protéger une canalisation en fer enterrée par protection cathodique, quel métal faut-il relier à la canalisation par un fil conducteur ?",
-        "ru": "Стандартные потенциалы восстановления некоторых полуреакций: Zn2+/Zn: -0,76 В; Fe2+/Fe: -0,44 В; Ni2+/Ni: -0,25 В; Sn2+/Sn: -0,14 В; Cu2+/Cu: +0,34 В; Ag+/Ag: +0,80 В. Какой металл нужно соединить проводником с подземным железным трубопроводом, чтобы защитить его методом катодной защиты?",
-        "ar": "جهود الاختزال القياسية لبعض أنصاف التفاعلات هي: Zn2+/Zn: -0.76 V؛ Fe2+/Fe: -0.44 V؛ Ni2+/Ni: -0.25 V؛ Sn2+/Sn: -0.14 V؛ Cu2+/Cu: +0.34 V؛ Ag+/Ag: +0.80 V. لحماية خط أنابيب حديدي مدفون بطريقة الحماية الكاثودية، أي فلز يجب أن يوصل بالأنبوب بسلك موصل؟",
-        "zh": "一些半反应的标准还原电势为：Zn2+/Zn：-0.76 V；Fe2+/Fe：-0.44 V；Ni2+/Ni：-0.25 V；Sn2+/Sn：-0.14 V；Cu2+/Cu：+0.34 V；Ag+/Ag：+0.80 V。要用阴极保护法保护埋在地下的铁管道，应该用导线把哪种金属与管道相连？",
-        "ku": "Potansiyelên redûksiyonê yên standard ên hin nîv-reaksiyonan ev in: Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Sn2+/Sn: -0,14 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V. Ji bo ku xeteke boriyên hesin a di axê de bi rêbaza parastina katodîk were parastin, divê kîjan metal bi têleke guhêzbar bi boriyê ve were girêdan?"
+        "tr": "Tabloda bazı yarı tepkimelerin standart indirgenme potansiyelleri verilmiştir.\nToprağa gömülü demir bir boru hattını katodik koruma yöntemiyle korumak için boruya iletken telle bağlanacak metal aşağıdakilerden hangisi olmalıdır?",
+        "en": "The table gives the standard reduction potentials of some half-reactions.\nWhich of the following metals should be connected to a buried iron pipeline with a conducting wire to protect it by cathodic protection?",
+        "de": "Die Tabelle enthält die Standardreduktionspotentiale einiger Halbreaktionen.\nWelches der folgenden Metalle muss über einen leitenden Draht mit einer im Boden verlegten Eisenrohrleitung verbunden werden, um sie kathodisch zu schützen?",
+        "fr": "Le tableau donne les potentiels standard de réduction de quelques demi-réactions.\nQuel métal faut-il relier par un fil conducteur à une canalisation en fer enterrée pour la protéger par protection cathodique ?",
+        "ru": "В таблице приведены стандартные потенциалы восстановления некоторых полуреакций.\nКакой металл нужно соединить проводником с подземным железным трубопроводом, чтобы защитить его катодной защитой?",
+        "ar": "يبيّن الجدول جهود الاختزال القياسية لبعض أنصاف التفاعلات.\nأيّ الفلزات الآتية يجب توصيله بسلك موصل بخط أنابيب حديدي مدفون في التربة لحمايته بطريقة الحماية الكاثودية؟",
+        "zh": "表中给出了一些半反应的标准还原电势。\n要用阴极保护法保护埋在地下的铁管道，应当用导线把下列哪种金属与管道相连？",
+        "ku": "Di tabloyê de potansiyelên redûksiyonê yên standard ên hin nîvreaksiyonan hatine dayîn.\nJi bo ku xeteke boriyên hesin a di axê de veşartî bi rêbaza parastina katodîk bê parastin, divê kîjan ji van metalan bi têleke guhêzbar bi boriyê ve bê girêdan?"
       },
       "options": [
         {
@@ -1947,27 +2098,69 @@ export const unit22: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Kurban metal demirden önce yükseltgenmeli, yani demirden daha aktif olmalıdır; bu da indirgenme potansiyelinin -0,44 V'tan daha küçük (daha negatif) olması demektir. Listede bu koşulu sağlayan yalnızca çinkodur (-0,76 V). Nikel ve kalayın potansiyelleri de negatif olduğu için çekici görünür, ancak -0,25 V ve -0,14 V değerleri -0,44 V'tan büyüktür; bu metaller demirden pasiftir ve bağlanırlarsa demir anot olup daha hızlı aşınır. Bakır ve gümüş için de aynı durum geçerlidir.",
-        "en": "The sacrificial metal must be oxidized before iron, i.e. be more active than iron, which means its reduction potential must be lower (more negative) than -0.44 V. In the list only zinc (-0.76 V) meets this condition. Nickel and tin look tempting because their potentials are also negative, but -0.25 V and -0.14 V are greater than -0.44 V; these metals are less active than iron, and if connected, iron becomes the anode and corrodes faster. The same applies to copper and silver.",
-        "de": "Das Opfermetall muss vor dem Eisen oxidiert werden, also unedler als Eisen sein, d. h. sein Reduktionspotential muss kleiner (negativer) als -0,44 V sein. In der Liste erfüllt nur Zink (-0,76 V) diese Bedingung. Nickel und Zinn wirken verlockend, weil ihre Potentiale ebenfalls negativ sind, doch -0,25 V und -0,14 V sind größer als -0,44 V; diese Metalle sind edler als Eisen, und bei Anschluss würde Eisen zur Anode und schneller korrodieren. Dasselbe gilt für Kupfer und Silber.",
-        "fr": "Le métal sacrificiel doit s'oxyder avant le fer, donc être plus actif que lui, c'est-à-dire avoir un potentiel de réduction inférieur (plus négatif) à -0,44 V. Dans la liste, seul le zinc (-0,76 V) remplit cette condition. Le nickel et l'étain sont tentants car leurs potentiels sont aussi négatifs, mais -0,25 V et -0,14 V sont supérieurs à -0,44 V ; ces métaux sont moins actifs que le fer et, si on les reliait, le fer deviendrait l'anode et se corroderait plus vite. Il en va de même pour le cuivre et l'argent.",
-        "ru": "Жертвенный металл должен окисляться раньше железа, то есть быть активнее его, а значит, его потенциал восстановления должен быть меньше (отрицательнее) -0,44 В. Из списка этому условию удовлетворяет только цинк (-0,76 В). Никель и олово кажутся подходящими, так как их потенциалы тоже отрицательны, но -0,25 В и -0,14 В больше -0,44 В; эти металлы менее активны, чем железо, и при их подключении анодом станет железо и будет корродировать быстрее. То же относится к меди и серебру.",
-        "ar": "يجب أن يتأكسد الفلز المضحّي قبل الحديد، أي أن يكون أنشط منه، وهذا يعني أن يكون جهد اختزاله أصغر (أكثر سالبية) من -0.44 V. ولا يحقق هذا الشرط في القائمة إلا الزنك (-0.76 V). يبدو النيكل والقصدير مغريين لأن جهديهما سالبان أيضًا، لكن -0.25 V و -0.14 V أكبر من -0.44 V؛ فهذان الفلزان أقل نشاطًا من الحديد، وإذا وُصلا أصبح الحديد مصعدًا وتآكل أسرع. والأمر نفسه ينطبق على النحاس والفضة.",
+        "tr": "Kurban metal demirden önce yükseltgenmeli, yani demirden daha aktif olmalıdır; bu da indirgenme potansiyelinin -0,44 V'tan daha küçük (daha negatif) olması demektir. Tabloda bu koşulu sağlayan yalnızca çinkodur (-0,76 V). Nikel ve kalayın potansiyelleri de negatif olduğu için çekici görünür, ancak -0,25 V ve -0,14 V değerleri -0,44 V'tan büyüktür; bu metaller demirden pasiftir ve bağlanırlarsa demir anot olup daha hızlı aşınır. Bakır ve gümüş için de aynı durum geçerlidir.",
+        "en": "The sacrificial metal must be oxidized before iron, i.e. be more active than iron, which means its reduction potential must be lower (more negative) than -0.44 V. In the table only zinc (-0.76 V) meets this condition. Nickel and tin look tempting because their potentials are also negative, but -0.25 V and -0.14 V are greater than -0.44 V; these metals are less active than iron, and if connected, iron becomes the anode and corrodes faster. The same applies to copper and silver.",
+        "de": "Das Opfermetall muss vor dem Eisen oxidiert werden, also unedler als Eisen sein, d. h. sein Reduktionspotential muss kleiner (negativer) als -0,44 V sein. In der Tabelle erfüllt nur Zink (-0,76 V) diese Bedingung. Nickel und Zinn wirken verlockend, weil ihre Potentiale ebenfalls negativ sind, doch -0,25 V und -0,14 V sind größer als -0,44 V; diese Metalle sind edler als Eisen, und bei Anschluss würde Eisen zur Anode und schneller korrodieren. Dasselbe gilt für Kupfer und Silber.",
+        "fr": "Le métal sacrificiel doit s'oxyder avant le fer, donc être plus actif que lui, c'est-à-dire avoir un potentiel de réduction inférieur (plus négatif) à -0,44 V. Dans le tableau, seul le zinc (-0,76 V) remplit cette condition. Le nickel et l'étain sont tentants car leurs potentiels sont aussi négatifs, mais -0,25 V et -0,14 V sont supérieurs à -0,44 V ; ces métaux sont moins actifs que le fer et, si on les reliait, le fer deviendrait l'anode et se corroderait plus vite. Il en va de même pour le cuivre et l'argent.",
+        "ru": "Жертвенный металл должен окисляться раньше железа, то есть быть активнее его, а значит, его потенциал восстановления должен быть меньше (отрицательнее) -0,44 В. Из таблицы этому условию удовлетворяет только цинк (-0,76 В). Никель и олово кажутся подходящими, так как их потенциалы тоже отрицательны, но -0,25 В и -0,14 В больше -0,44 В; эти металлы менее активны, чем железо, и при их подключении анодом станет железо и будет корродировать быстрее. То же относится к меди и серебру.",
+        "ar": "يجب أن يتأكسد الفلز المضحّي قبل الحديد، أي أن يكون أنشط منه، وهذا يعني أن يكون جهد اختزاله أصغر (أكثر سالبية) من -0.44 V. ولا يحقق هذا الشرط في الجدول إلا الزنك (-0.76 V). يبدو النيكل والقصدير مغريين لأن جهديهما سالبان أيضًا، لكن -0.25 V و -0.14 V أكبر من -0.44 V؛ فهذان الفلزان أقل نشاطًا من الحديد، وإذا وُصلا أصبح الحديد مصعدًا وتآكل أسرع. والأمر نفسه ينطبق على النحاس والفضة.",
         "zh": "牺牲金属必须先于铁被氧化，即比铁活泼，也就是其还原电势要低于（更负于）-0.44 V。表中只有锌(-0.76 V)满足条件。镍和锡的电势也是负值，看似可选，但 -0.25 V 和 -0.14 V 都大于 -0.44 V，它们不如铁活泼，若与铁相连，铁反而成为负极而腐蚀更快。铜和银同理。",
-        "ku": "Divê metala qurbanî berî hesin oksîde bibe, ango ji hesin çalaktir be; ev tê wê wateyê ku divê potansiyela wê ya redûksiyonê ji -0,44 V piçûktir (neyînîtir) be. Di lîsteyê de tenê zink (-0,76 V) vî şertî pêk tîne. Nîkel û qelay jî ji ber ku potansiyelên wan neyînî ne balkêş xuya dikin, lê -0,25 V û -0,14 V ji -0,44 V mezintir in; ev metal ji hesin kêmçalaktir in û heke werin girêdan, hesin dibe anod û zûtir tê xwarin. Ji bo sifir û zîv jî heman rewş derbasdar e."
+        "ku": "Divê metala qurbanî berî hesin oksîde bibe, ango ji hesin çalaktir be; ev tê wê wateyê ku divê potansiyela wê ya redûksiyonê ji -0,44 V piçûktir (neyînîtir) be. Di tabloyê de tenê zink (-0,76 V) vî şertî pêk tîne. Nîkel û qelay jî ji ber ku potansiyelên wan neyînî ne balkêş xuya dikin, lê -0,25 V û -0,14 V ji -0,44 V mezintir in; ev metal ji hesin kêmçalaktir in û heke werin girêdan, hesin dibe anod û zûtir tê xwarin. Ji bo sifir û zîv jî heman rewş derbasdar e."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Yarı tepkime",
+            "en": "Half-reaction",
+            "de": "Halbreaktion",
+            "fr": "Demi-réaction",
+            "ru": "Полуреакция",
+            "ar": "نصف التفاعل",
+            "zh": "半反应",
+            "ku": "Nîvreaksiyon"
+          },
+          "E° (V)"
+        ],
+        "rows": [
+          [
+            "Zn2+ + 2e- → Zn",
+            "−0,76"
+          ],
+          [
+            "Fe2+ + 2e- → Fe",
+            "−0,44"
+          ],
+          [
+            "Ni2+ + 2e- → Ni",
+            "−0,25"
+          ],
+          [
+            "Sn2+ + 2e- → Sn",
+            "−0,14"
+          ],
+          [
+            "Cu2+ + 2e- → Cu",
+            "+0,34"
+          ],
+          [
+            "Ag+ + e- → Ag",
+            "+0,80"
+          ]
+        ]
       }
     },
     {
       "id": "u22-twin13",
       "stem": {
-        "tr": "Biri kalayla (Sn), diğeri çinkoyla (Zn) kaplanmış iki demir levhanın kaplamaları çizilerek demir yüzey açığa çıkarılıyor ve levhalar nemli havada bekletiliyor. (Aktiflik sırası: Zn > Fe > Sn) Buna göre; I. Çinko kaplı levhada çizik bölgede demir yerine çinko yükseltgenir. II. Kalay kaplı levhada çizik bölgedeki demir, hiç kaplanmamış demirden daha hızlı paslanabilir. III. Kaplamalar sağlamken her iki kaplama da demirin O2 ve nemle temasını keserek koruma sağlar. yargılarından hangileri doğrudur?",
+        "tr": "Biri kalayla (Sn), diğeri çinkoyla (Zn) kaplanmış iki demir levhanın kaplamaları çizilerek demir yüzey açığa çıkarılıyor ve levhalar nemli havada bekletiliyor. (Aktiflik sırası: Zn > Fe > Sn) Bu levhalarla ilgili; I. Çinko kaplı levhada çizik bölgede demir yerine çinko yükseltgenir. II. Kalay kaplı levhada çizik bölgedeki demir, hiç kaplanmamış demirden daha hızlı paslanabilir. III. Kaplamalar sağlamken her iki kaplama da demirin O2 ve nemle temasını keserek koruma sağlar. yargılarından hangileri doğrudur?",
         "en": "Two iron sheets, one coated with tin (Sn) and the other with zinc (Zn), have their coatings scratched to expose the iron and are left in humid air. (Activity order: Zn > Fe > Sn) Which of the following statements are correct? I. On the zinc-coated sheet, zinc is oxidized instead of iron at the scratch. II. On the tin-coated sheet, the iron at the scratch may rust faster than uncoated iron. III. While intact, both coatings protect iron by cutting off its contact with O2 and moisture.",
         "de": "Zwei Eisenbleche, eines verzinnt (Sn), das andere verzinkt (Zn), werden so angeritzt, dass das Eisen freiliegt, und in feuchter Luft gelagert. (Aktivitätsreihe: Zn > Fe > Sn) Welche Aussagen sind richtig? I. Beim verzinkten Blech wird an der Ritzstelle Zink statt Eisen oxidiert. II. Beim verzinnten Blech kann das Eisen an der Ritzstelle schneller rosten als unbeschichtetes Eisen. III. Solange sie unbeschädigt sind, schützen beide Überzüge das Eisen, indem sie den Kontakt mit O2 und Feuchtigkeit verhindern.",
         "fr": "Deux tôles de fer, l'une étamée (Sn), l'autre galvanisée (Zn), sont rayées de façon à mettre le fer à nu, puis laissées à l'air humide. (Ordre d'activité : Zn > Fe > Sn) Parmi les affirmations suivantes, lesquelles sont correctes ? I. Sur la tôle zinguée, c'est le zinc et non le fer qui s'oxyde au niveau de la rayure. II. Sur la tôle étamée, le fer de la rayure peut rouiller plus vite que du fer non revêtu. III. Tant qu'ils sont intacts, les deux revêtements protègent le fer en l'isolant de O2 et de l'humidité.",
         "ru": "У двух железных листов, один из которых покрыт оловом (Sn), а другой цинком (Zn), процарапывают покрытие до железа и оставляют во влажном воздухе. (Ряд активности: Zn > Fe > Sn) Какие утверждения верны? I. На оцинкованном листе в месте царапины окисляется цинк, а не железо. II. На лужёном листе железо в месте царапины может ржаветь быстрее, чем железо без покрытия. III. Пока покрытия целы, оба защищают железо, изолируя его от O2 и влаги.",
         "ar": "لوحان من الحديد أحدهما مطلي بالقصدير (Sn) والآخر بالزنك (Zn)، يُخدش طلاؤهما حتى يظهر الحديد ثم يُتركان في هواء رطب. (ترتيب النشاط: Zn > Fe > Sn) أيٌّ من العبارات الآتية صحيحة؟ I. في اللوح المطلي بالزنك يتأكسد الزنك بدلًا من الحديد عند الخدش. II. في اللوح المطلي بالقصدير قد يصدأ الحديد عند الخدش أسرع من الحديد غير المطلي. III. ما دام الطلاءان سليمين فإن كليهما يحمي الحديد بعزله عن O2 والرطوبة.",
         "zh": "两块铁板分别镀锡(Sn)和镀锌(Zn)，将镀层划破露出铁，放在潮湿空气中。(活动性顺序：Zn > Fe > Sn)下列说法中哪些正确？I. 镀锌铁板划痕处被氧化的是锌而不是铁。II. 镀锡铁板划痕处的铁可能比未镀层的铁生锈更快。III. 镀层完好时，两种镀层都能隔绝铁与 O2 和水分的接触而起保护作用。",
-        "ku": "Pêçanên du pelên hesin ên ku yek bi qelayê (Sn), yê din bi zinkê (Zn) hatiye pêçandin têne xêzkirin da ku rûyê hesin derkeve holê, û pel di hewaya şil de têne hiştin. (Rêza çalakiyê: Zn > Fe > Sn) Li gorî vê; I. Li ser pelê bi zinkê pêçayî, li cihê xêzê li şûna hesin zink oksîde dibe. II. Li ser pelê bi qelayê pêçayî, hesinê li cihê xêzê dikare ji hesinê qet nepêçayî zûtir zengar bigire. III. Heta ku pêçan saxlem bin, her du pêçan jî bi birîna têkiliya hesin bi O2 û şiliyê re wî diparêzin. kîjan ji van gotinan rast in?"
+        "ku": "Pêçanên du pelên hesin ên ku yek bi qelayê (Sn), yê din bi zinkê (Zn) hatiye pêçandin têne xêzkirin da ku rûyê hesin derkeve holê, û pel di hewaya şil de têne hiştin. (Rêza çalakiyê: Zn > Fe > Sn) Derbarê van pelan de; I. Li ser pelê bi zinkê pêçayî, li cihê xêzê li şûna hesin zink oksîde dibe. II. Li ser pelê bi qelayê pêçayî, hesinê li cihê xêzê dikare ji hesinê qet nepêçayî zûtir zengar bigire. III. Heta ku pêçan saxlem bin, her du pêçan jî bi birîna têkiliya hesin bi O2 û şiliyê re wî diparêzin. kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -2112,14 +2305,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin15",
       "stem": {
-        "tr": "1 M CuCl2 çözeltisi inert elektrotlarla elektroliz edildiğinde katotta Cu, anotta Cl2 oluşmaktadır. Cu2+ + 2e- → Cu E° = +0,34 V; Cl2 + 2e- → 2Cl- E° = +1,36 V olduğuna göre standart koşullarda bu elektrolizin gerçekleşmesi için dış kaynağın uygulaması gereken en düşük (teorik) gerilim kaç volttur?",
-        "en": "When 1 M CuCl2 solution is electrolyzed with inert electrodes, Cu forms at the cathode and Cl2 at the anode. Given Cu2+ + 2e- → Cu E° = +0.34 V and Cl2 + 2e- → 2Cl- E° = +1.36 V, what is the minimum (theoretical) voltage in volts that the external source must apply for this electrolysis under standard conditions?",
-        "de": "Bei der Elektrolyse einer 1 M CuCl2-Lösung mit inerten Elektroden entsteht an der Kathode Cu und an der Anode Cl2. Mit Cu2+ + 2e- → Cu E° = +0,34 V und Cl2 + 2e- → 2Cl- E° = +1,36 V: Welche Mindestspannung (theoretisch) in Volt muss die äußere Quelle unter Standardbedingungen anlegen?",
-        "fr": "Lors de l'électrolyse d'une solution 1 M de CuCl2 avec des électrodes inertes, Cu se forme à la cathode et Cl2 à l'anode. Sachant que Cu2+ + 2e- → Cu E° = +0,34 V et Cl2 + 2e- → 2Cl- E° = +1,36 V, quelle tension minimale (théorique), en volts, la source extérieure doit-elle appliquer dans les conditions standard ?",
-        "ru": "При электролизе 1 M раствора CuCl2 с инертными электродами на катоде образуется Cu, на аноде — Cl2. Дано: Cu2+ + 2e- → Cu E° = +0,34 В; Cl2 + 2e- → 2Cl- E° = +1,36 В. Какое минимальное (теоретическое) напряжение в вольтах должен подать внешний источник, чтобы провести этот электролиз при стандартных условиях?",
-        "ar": "عند التحليل الكهربائي لمحلول CuCl2 تركيزه 1 M بأقطاب خاملة يتكون Cu عند المهبط و Cl2 عند المصعد. إذا كان Cu2+ + 2e- → Cu E° = +0.34 V و Cl2 + 2e- → 2Cl- E° = +1.36 V، فما أقل جهد (نظري) بالفولت يجب أن يطبقه المصدر الخارجي لإجراء هذا التحليل في الظروف القياسية؟",
-        "zh": "用惰性电极电解 1 M CuCl2 溶液时，阴极生成 Cu，阳极生成 Cl2。已知 Cu2+ + 2e- → Cu E° = +0.34 V，Cl2 + 2e- → 2Cl- E° = +1.36 V，在标准状态下外电源至少（理论上）需要施加多少伏电压？",
-        "ku": "Dema çareseriya CuCl2 ya 1 M bi elektrodên înert tê elektrolîzkirin, li katodê Cu û li anodê Cl2 çêdibe. Li gorî Cu2+ + 2e- → Cu E° = +0,34 V û Cl2 + 2e- → 2Cl- E° = +1,36 V, di şertên standard de ji bo pêkhatina vê elektrolîzê divê çavkaniya derve herî kêm (bi teorîk) çend volt bide?"
+        "tr": "CuCl2 çözeltisi inert elektrotlarla elektroliz edildiğinde katotta Cu, anotta Cl2 oluşmaktadır. Cu2+ + 2e- → Cu E° = +0,34 V; Cl2 + 2e- → 2Cl- E° = +1,36 V olduğuna göre standart koşullarda bu elektrolizin gerçekleşmesi için dış kaynağın uygulaması gereken en düşük (teorik) gerilim kaç volttur?",
+        "en": "When a CuCl2 solution is electrolyzed with inert electrodes, Cu forms at the cathode and Cl2 at the anode. Given Cu2+ + 2e- → Cu E° = +0.34 V and Cl2 + 2e- → 2Cl- E° = +1.36 V, what is the minimum (theoretical) voltage in volts that the external source must apply for this electrolysis under standard conditions?",
+        "de": "Bei der Elektrolyse einer CuCl2-Lösung mit inerten Elektroden entsteht an der Kathode Cu und an der Anode Cl2. Mit Cu2+ + 2e- → Cu E° = +0,34 V und Cl2 + 2e- → 2Cl- E° = +1,36 V: Welche Mindestspannung (theoretisch) in Volt muss die äußere Quelle unter Standardbedingungen anlegen?",
+        "fr": "Lors de l'électrolyse d'une solution de CuCl2 avec des électrodes inertes, Cu se forme à la cathode et Cl2 à l'anode. Sachant que Cu2+ + 2e- → Cu E° = +0,34 V et Cl2 + 2e- → 2Cl- E° = +1,36 V, quelle tension minimale (théorique), en volts, la source extérieure doit-elle appliquer dans les conditions standard ?",
+        "ru": "При электролизе раствора CuCl2 с инертными электродами на катоде образуется Cu, на аноде — Cl2. Дано: Cu2+ + 2e- → Cu E° = +0,34 В; Cl2 + 2e- → 2Cl- E° = +1,36 В. Какое минимальное (теоретическое) напряжение в вольтах должен подать внешний источник, чтобы провести этот электролиз при стандартных условиях?",
+        "ar": "عند التحليل الكهربائي لمحلول CuCl2 بأقطاب خاملة يتكون Cu عند المهبط و Cl2 عند المصعد. إذا كان Cu2+ + 2e- → Cu E° = +0.34 V و Cl2 + 2e- → 2Cl- E° = +1.36 V، فما أقل جهد (نظري) بالفولت يجب أن يطبقه المصدر الخارجي لإجراء هذا التحليل في الظروف القياسية؟",
+        "zh": "用惰性电极电解 CuCl2 溶液时，阴极生成 Cu，阳极生成 Cl2。已知 Cu2+ + 2e- → Cu E° = +0.34 V，Cl2 + 2e- → 2Cl- E° = +1.36 V，在标准状态下外电源至少（理论上）需要施加多少伏电压？",
+        "ku": "Dema çareseriya CuCl2 bi elektrodên înert tê elektrolîzkirin, li katodê Cu û li anodê Cl2 çêdibe. Li gorî Cu2+ + 2e- → Cu E° = +0,34 V û Cl2 + 2e- → 2Cl- E° = +1,36 V, di şertên standard de ji bo pêkhatina vê elektrolîzê divê çavkaniya derve herî kêm (bi teorîk) çend volt bide?"
       },
       "options": [
         {

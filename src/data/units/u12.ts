@@ -826,14 +826,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-s01",
       "title": {
-        "tr": "İdeal Gaz Problemi Çözüm Adımları",
-        "en": "Ideal Gas Problem Solution Steps",
-        "de": "Lösungsschritte für ideale Gasprobleme",
-        "fr": "Étapes de solution au problème des gaz parfaits",
-        "ru": "Этапы решения задачи на уравнение состояния идеального газа",
-        "ar": "حل مسائل الغاز المثالي",
-        "zh": "理想气体计算题的解题步骤",
-        "ku": "Gavên Çareserkirina Pirsên Gaza Îdeal"
+        "tr": "Bir İdeal Gaz Probleminin Çözümü",
+        "en": "Solving an Ideal Gas Problem",
+        "de": "Lösen einer Aufgabe zum idealen Gas",
+        "fr": "Résolution d'un problème sur les gaz parfaits",
+        "ru": "Решение задачи на уравнение состояния идеального газа",
+        "ar": "حل مسألة عن الغاز المثالي",
+        "zh": "理想气体计算题的求解",
+        "ku": "Çareserkirina Pirseke Gaza Îdeal"
       },
       "steps": [
         {
@@ -1124,77 +1124,206 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin02",
       "stem": {
-        "tr": "Sürtünmesiz pistonlu bir kapta 27 °C'de 2 L hacim kaplayan bir miktar ideal gazın sıcaklığı 327 °C'ye çıkarılırsa hacmi kaç L olur?",
-        "en": "A sample of ideal gas in a container with a frictionless piston occupies 2 L at 27 °C. If its temperature is raised to 327 °C, what will its volume be in litres?",
-        "de": "Eine ideale Gasportion in einem Gefäß mit reibungsfreiem Kolben nimmt bei 27 °C ein Volumen von 2 L ein. Wie viele Liter beträgt ihr Volumen, wenn die Temperatur auf 327 °C erhöht wird?",
-        "fr": "Une quantité de gaz parfait dans un récipient à piston sans frottement occupe 2 L à 27 °C. Quel sera son volume, en litres, si sa température est portée à 327 °C ?",
-        "ru": "Некоторое количество идеального газа в сосуде с поршнем без трения занимает объём 2 л при 27 °C. Каким станет его объём (в литрах), если температуру повысить до 327 °C?",
-        "ar": "كمية من غاز مثالي في وعاء ذي مكبس عديم الاحتكاك تشغل حجمًا قدره 2 L عند 27 °C. كم يصبح حجمها باللتر إذا رُفعت درجة حرارتها إلى 327 °C؟",
-        "zh": "带无摩擦活塞的容器中，一定量理想气体在 27 °C 时体积为 2 L。若温度升高到 327 °C，其体积为多少升？",
-        "ku": "Mîqdarek gaza îdeal di firaxeke bi pistona bêxişandin de di 27 °C de 2 L qebare digire. Heke germahiya wê bibe 327 °C, qebareya wê dibe çend L?"
+        "tr": "Şekildeki grafikte, sabit miktardaki ideal bir gazın T1 ve T2 sıcaklıklarındaki basınç–hacim değişimi verilmiştir. T1 sıcaklığı 27 °C ise T2 sıcaklığı kaç °C'dir?",
+        "en": "The graph shows the pressure–volume relationship of a fixed amount of an ideal gas at temperatures T1 and T2. If T1 is 27 °C, what is T2 in °C?",
+        "de": "Das Diagramm zeigt den Druck-Volumen-Verlauf einer festen Menge eines idealen Gases bei den Temperaturen T1 und T2. Wenn T1 = 27 °C ist, wie viel °C beträgt T2?",
+        "fr": "Le graphique montre la relation pression–volume d'une quantité fixe de gaz parfait aux températures T1 et T2. Si T1 vaut 27 °C, combien vaut T2 en °C ?",
+        "ru": "На графике показана зависимость давления от объёма для постоянного количества идеального газа при температурах T1 и T2. Если T1 = 27 °C, чему равна T2 (в °C)?",
+        "ar": "يبيّن الرسم البياني العلاقة بين الضغط والحجم لكمية ثابتة من غاز مثالي عند درجتي الحرارة T1 وT2. إذا كانت T1 تساوي 27 °C فكم تساوي T2 بوحدة °C؟",
+        "zh": "图中给出了一定量理想气体在温度 T1 和 T2 下的压强–体积关系。若 T1 为 27 °C，则 T2 为多少 °C？",
+        "ku": "Di grafîka şeklê de guherîna zext–qebareyê ya mîqdareke sabît a gazeke îdeal di germahiyên T1 û T2 de hatiye dayîn. Eger T1 27 °C be, T2 çend °C ye?"
       },
       "options": [
         {
-          "tr": "4 L",
-          "en": "4 L",
-          "de": "4 L",
-          "fr": "4 L",
-          "ru": "4 л",
-          "ar": "4 L",
-          "zh": "4 L",
-          "ku": "4 L"
+          "tr": "13,5 °C",
+          "en": "13,5 °C",
+          "de": "13,5 °C",
+          "fr": "13,5 °C",
+          "ru": "13,5 °C",
+          "ar": "13,5 °C",
+          "zh": "13,5 °C",
+          "ku": "13,5 °C"
         },
         {
-          "tr": "24 L",
-          "en": "24 L",
-          "de": "24 L",
-          "fr": "24 L",
-          "ru": "24 л",
-          "ar": "24 L",
-          "zh": "24 L",
-          "ku": "24 L"
+          "tr": "54 °C",
+          "en": "54 °C",
+          "de": "54 °C",
+          "fr": "54 °C",
+          "ru": "54 °C",
+          "ar": "54 °C",
+          "zh": "54 °C",
+          "ku": "54 °C"
         },
         {
-          "tr": "1 L",
-          "en": "1 L",
-          "de": "1 L",
-          "fr": "1 L",
-          "ru": "1 л",
-          "ar": "1 L",
-          "zh": "1 L",
-          "ku": "1 L"
+          "tr": "150 °C",
+          "en": "150 °C",
+          "de": "150 °C",
+          "fr": "150 °C",
+          "ru": "150 °C",
+          "ar": "150 °C",
+          "zh": "150 °C",
+          "ku": "150 °C"
         },
         {
-          "tr": "8 L",
-          "en": "8 L",
-          "de": "8 L",
-          "fr": "8 L",
-          "ru": "8 л",
-          "ar": "8 L",
-          "zh": "8 L",
-          "ku": "8 L"
+          "tr": "327 °C",
+          "en": "327 °C",
+          "de": "327 °C",
+          "fr": "327 °C",
+          "ru": "327 °C",
+          "ar": "327 °C",
+          "zh": "327 °C",
+          "ku": "327 °C"
         },
         {
-          "tr": "6 L",
-          "en": "6 L",
-          "de": "6 L",
-          "fr": "6 L",
-          "ru": "6 л",
-          "ar": "6 L",
-          "zh": "6 L",
-          "ku": "6 L"
+          "tr": "600 °C",
+          "en": "600 °C",
+          "de": "600 °C",
+          "fr": "600 °C",
+          "ru": "600 °C",
+          "ar": "600 °C",
+          "zh": "600 °C",
+          "ku": "600 °C"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Sürtünmesiz pistonlu kapta basınç sabittir; sabit basınçta hacim mutlak sıcaklıkla doğru orantılıdır (Charles yasası). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L. Orantı °C ile kurulursa 2·327/27 ≈ 24 L, hacim ile sıcaklık ters orantılı sanılırsa 1 L bulunur.",
-        "en": "In a container with a frictionless piston the pressure is constant; at constant pressure volume is directly proportional to absolute temperature (Charles's law). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L. Setting up the ratio in °C gives 2·327/27 ≈ 24 L, and treating volume and temperature as inversely proportional gives 1 L.",
-        "de": "Im Gefäß mit reibungsfreiem Kolben ist der Druck konstant; bei konstantem Druck ist das Volumen der absoluten Temperatur direkt proportional (Gesetz von Charles). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L. Mit °C gerechnet ergibt sich 2·327/27 ≈ 24 L; hält man Volumen und Temperatur für umgekehrt proportional, erhält man 1 L.",
-        "fr": "Dans un récipient à piston sans frottement la pression est constante ; à pression constante, le volume est directement proportionnel à la température absolue (loi de Charles). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L. Avec des °C on trouve 2·327/27 ≈ 24 L ; en croyant le volume et la température inversement proportionnels on trouve 1 L.",
-        "ru": "В сосуде с поршнем без трения давление постоянно; при постоянном давлении объём прямо пропорционален абсолютной температуре (закон Шарля). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 л. Если составить пропорцию в °C, получится 2·327/27 ≈ 24 л; если считать объём и температуру обратно пропорциональными — 1 л.",
-        "ar": "في الوعاء ذي المكبس عديم الاحتكاك يبقى الضغط ثابتًا؛ وعند ثبات الضغط يتناسب الحجم طرديًا مع درجة الحرارة المطلقة (قانون شارل). T1 = 27 + 273 = 300 K وT2 = 327 + 273 = 600 K ← V1/T1 = V2/T2 ← 2/300 = V2/600 ← V2 = 4 L. استخدام السلسيوس في التناسب يعطي 2·327/27 ≈ 24 L، واعتبار الحجم ودرجة الحرارة متناسبين عكسيًا يعطي 1 L.",
-        "zh": "带无摩擦活塞的容器中压强恒定；恒压下体积与热力学温度成正比（查理定律）。T1 = 27 + 273 = 300 K，T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L。用摄氏温度列比例得 2·327/27 ≈ 24 L，误以为体积与温度成反比得 1 L。",
-        "ku": "Di firaxa bi pistona bêxişandin de zext sabît e; di zexta sabît de qebare bi germahiya mutleq re rasterast rêjeyî ye (zagona Charles). T1 = 27 + 273 = 300 K, T2 = 327 + 273 = 600 K → V1/T1 = V2/T2 → 2/300 = V2/600 → V2 = 4 L. Heke rêje bi °C were danîn 2·327/27 ≈ 24 L, heke qebare û germahî berevajî rêjeyî werin hesibandin 1 L tê dîtin."
+        "tr": "Grafikte T1 eğrisi üzerindeki K noktasında P = 3 atm, V = 2 L (P·V = 6), T2 eğrisi üzerindeki L noktasında P = 4 atm, V = 3 L (P·V = 12) okunur. Sabit miktar gaz için P·V = n·R·T olduğundan P·V mutlak sıcaklıkla doğru orantılıdır: T2/T1 = 12/6 = 2. T1 = 27 + 273 = 300 K olduğundan T2 = 600 K = 327 °C'dir. Celsius değerini iki katına çıkarmak (54 °C), Kelvin değerini °C diye yazmak (600), P·V ile T'yi ters orantılı sanmak (300/2 = 150) ya da 27 °C'yi yarıya indirmek (13,5 °C) tipik hatalardır.",
+        "en": "On the graph, point K on the T1 curve reads P = 3 atm, V = 2 L (P·V = 6) and point L on the T2 curve reads P = 4 atm, V = 3 L (P·V = 12). For a fixed amount of gas P·V = n·R·T, so P·V is directly proportional to the absolute temperature: T2/T1 = 12/6 = 2. Since T1 = 27 + 273 = 300 K, T2 = 600 K = 327 °C. Doubling the Celsius value (54 °C), writing the kelvin value as °C (600), treating P·V and T as inversely proportional (300/2 = 150) or halving 27 °C (13.5 °C) are typical mistakes.",
+        "de": "Im Diagramm liest man am Punkt K auf der T1-Kurve P = 3 atm, V = 2 L (P·V = 6) und am Punkt L auf der T2-Kurve P = 4 atm, V = 3 L (P·V = 12) ab. Für eine feste Gasmenge gilt P·V = n·R·T, also ist P·V proportional zur absoluten Temperatur: T2/T1 = 12/6 = 2. Mit T1 = 27 + 273 = 300 K folgt T2 = 600 K = 327 °C. Typische Fehler sind, den Celsius-Wert zu verdoppeln (54 °C), den Kelvin-Wert als °C anzugeben (600), P·V und T als umgekehrt proportional anzusehen (300/2 = 150) oder 27 °C zu halbieren (13,5 °C).",
+        "fr": "Sur le graphique, on lit au point K de la courbe T1 : P = 3 atm, V = 2 L (P·V = 6), et au point L de la courbe T2 : P = 4 atm, V = 3 L (P·V = 12). Pour une quantité fixe de gaz, P·V = n·R·T, donc P·V est proportionnel à la température absolue : T2/T1 = 12/6 = 2. Comme T1 = 27 + 273 = 300 K, T2 = 600 K = 327 °C. Doubler la valeur en Celsius (54 °C), donner la valeur en kelvins comme des °C (600), considérer P·V et T comme inversement proportionnels (300/2 = 150) ou diviser 27 °C par deux (13,5 °C) sont des erreurs typiques.",
+        "ru": "По графику в точке K на кривой T1: P = 3 атм, V = 2 л (P·V = 6), в точке L на кривой T2: P = 4 атм, V = 3 л (P·V = 12). Для постоянного количества газа P·V = n·R·T, т. е. P·V пропорционально абсолютной температуре: T2/T1 = 12/6 = 2. Так как T1 = 27 + 273 = 300 K, T2 = 600 K = 327 °C. Типичные ошибки — удвоить значение в градусах Цельсия (54 °C), записать значение в кельвинах как °C (600), считать P·V и T обратно пропорциональными (300/2 = 150) или разделить 27 °C пополам (13,5 °C).",
+        "ar": "يُقرأ من الرسم عند النقطة K على منحنى T1 أن P = 3 atm وV = 2 L (P·V = 6)، وعند النقطة L على منحنى T2 أن P = 4 atm وV = 3 L (P·V = 12). ولكمية ثابتة من الغاز P·V = n·R·T، أي إن P·V يتناسب طرديًا مع درجة الحرارة المطلقة: T2/T1 = 12/6 = 2. وبما أن T1 = 27 + 273 = 300 K فإن T2 = 600 K = 327 °C. ومن الأخطاء الشائعة مضاعفة القيمة بالسلسيوس (54 °C)، أو كتابة القيمة بالكلفن على أنها °C (600)، أو عدّ P·V وT متناسبين عكسيًا (300/2 = 150)، أو تنصيف 27 °C (13.5 °C).",
+        "zh": "由图可读出：T1 曲线上的 K 点 P = 3 atm、V = 2 L(P·V = 6)，T2 曲线上的 L 点 P = 4 atm、V = 3 L(P·V = 12)。一定量气体 P·V = n·R·T，所以 P·V 与热力学温度成正比：T2/T1 = 12/6 = 2。T1 = 27 + 273 = 300 K，所以 T2 = 600 K = 327 °C。把摄氏温度加倍(54 °C)、把开尔文值当作 °C(600)、认为 P·V 与 T 成反比(300/2 = 150)或把 27 °C 减半(13.5 °C)，都是典型错误。",
+        "ku": "Di grafîkê de li xala K ya li ser kevana T1 P = 3 atm, V = 2 L (P·V = 6), li xala L ya li ser kevana T2 jî P = 4 atm, V = 3 L (P·V = 12) tê xwendin. Ji bo mîqdareke sabît a gazê P·V = n·R·T e, ji ber vê yekê P·V bi germahiya mutleq re rasterast rêjeyî ye: T2/T1 = 12/6 = 2. Ji ber ku T1 = 27 + 273 = 300 K, T2 = 600 K = 327 °C ye. Ducarkirina nirxa Celsius (54 °C), nivîsandina nirxa Kelvin wek °C (600), hesibandina P·V û T wek berevajî rêjeyî (300/2 = 150) an nîvkirina 27 °C (13,5 °C) xeletiyên tîpîk in."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Hacim (L)",
+          "en": "Volume (L)",
+          "de": "Volumen (L)",
+          "fr": "Volume (L)",
+          "ru": "Объём (л)",
+          "ar": "الحجم (L)",
+          "zh": "体积 (L)",
+          "ku": "Qebare (L)"
+        },
+        "yLabel": {
+          "tr": "Basınç (atm)",
+          "en": "Pressure (atm)",
+          "de": "Druck (atm)",
+          "fr": "Pression (atm)",
+          "ru": "Давление (атм)",
+          "ar": "الضغط (atm)",
+          "zh": "压强 (atm)",
+          "ku": "Zext (atm)"
+        },
+        "xMax": 7,
+        "yMax": 7,
+        "xTicks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "yTicks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                1,
+                6
+              ],
+              [
+                1.2,
+                5
+              ],
+              [
+                1.5,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2.5,
+                2.4
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                1.5
+              ],
+              [
+                5,
+                1.2
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            "label": "T₁",
+            "tone": 0
+          },
+          {
+            "points": [
+              [
+                2,
+                6
+              ],
+              [
+                2.4,
+                5
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                2.4
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "label": "T₂",
+            "tone": 1
+          }
+        ],
+        "markers": [
+          {
+            "x": 2,
+            "y": 3,
+            "label": "K",
+            "guides": true
+          },
+          {
+            "x": 3,
+            "y": 4,
+            "label": "L",
+            "guides": true
+          }
+        ]
       }
     },
     {
@@ -1580,14 +1709,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin08",
       "stem": {
-        "tr": "Sabit hacimli bir kapta 4 g He, 16 g O2 ve 14 g N2 gazlarından oluşan karışımın toplam basıncı 1,6 atm'dir. Buna göre O2 gazının kısmi basıncı kaç atm'dir? (He = 4, N = 14, O = 16)",
+        "tr": "Sabit hacimli bir kapta 4 g He, 16 g O2 ve 14 g N2 gazlarından oluşan karışımın toplam basıncı 1,6 atm'dir. O2 gazının kısmi basıncı kaç atm'dir? (He = 4, N = 14, O = 16)",
         "en": "In a rigid container a mixture of 4 g He, 16 g O2 and 14 g N2 has a total pressure of 1.6 atm. What is the partial pressure of O2 in atm? (He = 4, N = 14, O = 16)",
         "de": "In einem starren Behälter hat ein Gemisch aus 4 g He, 16 g O2 und 14 g N2 einen Gesamtdruck von 1,6 atm. Wie groß ist der Partialdruck von O2 in atm? (He = 4, N = 14, O = 16)",
         "fr": "Dans un récipient rigide, un mélange de 4 g de He, 16 g de O2 et 14 g de N2 a une pression totale de 1,6 atm. Quelle est la pression partielle de O2 en atm ? (He = 4, N = 14, O = 16)",
         "ru": "В сосуде постоянного объёма смесь из 4 г He, 16 г O2 и 14 г N2 имеет общее давление 1,6 атм. Каково парциальное давление O2 (в атм)? (He = 4, N = 14, O = 16)",
         "ar": "في وعاء ثابت الحجم، الضغط الكلي لمخلوط من 4 g He و16 g O2 و14 g N2 يساوي 1.6 atm. كم يبلغ الضغط الجزئي لغاز O2 بوحدة atm؟ (He = 4، N = 14، O = 16)",
         "zh": "刚性容器中由 4 g He、16 g O2 和 14 g N2 组成的混合气体总压强为 1.6 atm。O2 的分压是多少 atm？(He = 4，N = 14，O = 16)",
-        "ku": "Di firaxeke bi qebareya sabît de zexta giştî ya tevliheviya ji gazên 4 g He, 16 g O2 û 14 g N2 1,6 atm e. Li gorî vê, zexta qismî ya gaza O2 çend atm e? (He = 4, N = 14, O = 16)"
+        "ku": "Di firaxeke bi qebareya sabît de zexta giştî ya tevliheviya ji gazên 4 g He, 16 g O2 û 14 g N2 1,6 atm e. Zexta qismî ya gaza O2 çend atm e? (He = 4, N = 14, O = 16)"
       },
       "options": [
         {
@@ -1656,153 +1785,199 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin09",
       "stem": {
-        "tr": "Bir kaptaki gaz açık uçlu cıvalı manometreye bağlandığında, açık koldaki cıva seviyesi gazın bağlı olduğu koldakinden 14 cm daha yüksekte kalmaktadır. Aynı gaz aynı koşullarda kapalı uçlu cıvalı manometreye bağlansaydı cıva seviyeleri arasındaki fark kaç cm olurdu? (Açık hava basıncı 76 cmHg'dir.)",
-        "en": "When a gas in a container is connected to an open-ended mercury manometer, the mercury level in the open arm stands 14 cm higher than in the arm connected to the gas. If the same gas under the same conditions were connected to a closed-end mercury manometer, what would the difference between the mercury levels be in cm? (Atmospheric pressure is 76 cmHg.)",
-        "de": "Wird ein Gas an ein offenes Quecksilbermanometer angeschlossen, steht das Quecksilber im offenen Schenkel 14 cm höher als im Schenkel auf der Gasseite. Wie viele cm betrüge der Höhenunterschied, wenn dasselbe Gas unter gleichen Bedingungen an ein geschlossenes Quecksilbermanometer angeschlossen würde? (Luftdruck: 76 cmHg)",
-        "fr": "Lorsqu'un gaz est relié à un manomètre à mercure à bout ouvert, le niveau du mercure dans la branche ouverte est 14 cm plus haut que dans la branche reliée au gaz. Si le même gaz, dans les mêmes conditions, était relié à un manomètre à mercure à bout fermé, quelle serait la dénivellation en cm ? (Pression atmosphérique : 76 cmHg.)",
-        "ru": "Газ из сосуда подключили к открытому ртутному манометру; уровень ртути в открытом колене оказался на 14 см выше, чем в колене, соединённом с газом. Какой была бы разность уровней ртути (в см), если бы тот же газ при тех же условиях подключили к закрытому ртутному манометру? (Атмосферное давление 76 см рт. ст.)",
-        "ar": "عند توصيل غاز في وعاء بمانومتر زئبقي مفتوح الطرف، يكون مستوى الزئبق في الذراع المفتوحة أعلى بمقدار 14 cm منه في الذراع المتصلة بالغاز. لو وُصل الغاز نفسه في الظروف نفسها بمانومتر زئبقي مغلق الطرف، فكم سنتيمترًا يكون الفرق بين مستويي الزئبق؟ (الضغط الجوي 76 cmHg.)",
-        "zh": "将容器中的气体连接到开口汞压强计上时，开口一侧的汞面比连接气体一侧高 14 cm。若在相同条件下把该气体连接到闭口汞压强计上，两侧汞面高度差为多少 cm？(大气压为 76 cmHg。)",
-        "ku": "Dema gaza di firaxekê de bi manometreyeke cîweyî ya devvekirî ve tê girêdan, asta cîweyê di milê vekirî de 14 cm ji ya milê ku bi gazê ve girêdayî ye bilindtir dimîne. Heke heman gaz di heman şertan de bi manometreyeke cîweyî ya devgirtî ve bihata girêdan, ferqa di navbera astên cîweyê de dê çend cm bûya? (Zexta hewaya vekirî 76 cmHg ye.)"
+        "tr": "Bir kaptaki gaz, şekildeki gibi açık uçlu cıvalı bir manometreye bağlanmıştır. Aynı gaz aynı koşullarda kapalı uçlu cıvalı bir manometreye bağlansaydı cıva seviyeleri arasındaki fark kaç cm olurdu? (Açık hava basıncı 76 cmHg'dir.)",
+        "en": "A gas in a container is connected to an open-ended mercury manometer as shown in the figure. If the same gas under the same conditions were connected to a closed-end mercury manometer, what would the difference between the mercury levels be in cm? (Atmospheric pressure is 76 cmHg.)",
+        "de": "Ein Gas in einem Behälter ist wie in der Abbildung an ein offenes Quecksilbermanometer angeschlossen. Wie groß wäre der Unterschied der Quecksilberspiegel in cm, wenn dasselbe Gas unter denselben Bedingungen an ein geschlossenes Quecksilbermanometer angeschlossen wäre? (Der Luftdruck beträgt 76 cmHg.)",
+        "fr": "Un gaz contenu dans un récipient est relié à un manomètre à mercure à bout ouvert, comme sur la figure. Si le même gaz, dans les mêmes conditions, était relié à un manomètre à mercure à bout fermé, quelle serait la dénivellation du mercure en cm ? (La pression atmosphérique vaut 76 cmHg.)",
+        "ru": "Газ из сосуда подключён к открытому ртутному манометру, как показано на рисунке. Какой была бы разность уровней ртути (в см), если бы тот же газ при тех же условиях подключили к закрытому ртутному манометру? (Атмосферное давление 76 см рт. ст.)",
+        "ar": "وُصل غاز في وعاء بمانومتر زئبقي مفتوح الطرف كما في الشكل. لو وُصل الغاز نفسه في الظروف نفسها بمانومتر زئبقي مغلق الطرف، فكم يكون فرق مستويي الزئبق بوحدة cm؟ (الضغط الجوي 76 cmHg.)",
+        "zh": "如图所示，容器中的气体连接在开口汞压强计上。若在相同条件下把该气体连接到闭口汞压强计上，两侧汞面高度差为多少 cm？(大气压为 76 cmHg。)",
+        "ku": "Gaza di firaxekê de wek di şeklê de bi manometreyeke cîweyî ya devvekirî ve hatiye girêdan. Heke heman gaz di heman şertan de bi manometreyeke cîweyî ya devgirtî ve bihata girêdan, ferqa di navbera astên cîweyê de dê çend cm bûya? (Zexta hewaya vekirî 76 cmHg ye.)"
       },
       "options": [
         {
-          "tr": "14 cm",
-          "en": "14 cm",
-          "de": "14 cm",
-          "fr": "14 cm",
-          "ru": "14 см",
-          "ar": "14 cm",
-          "zh": "14 cm",
-          "ku": "14 cm"
+          "tr": "14",
+          "en": "14",
+          "de": "14",
+          "fr": "14",
+          "ru": "14",
+          "ar": "14",
+          "zh": "14",
+          "ku": "14"
         },
         {
-          "tr": "62 cm",
-          "en": "62 cm",
-          "de": "62 cm",
-          "fr": "62 cm",
-          "ru": "62 см",
-          "ar": "62 cm",
-          "zh": "62 cm",
-          "ku": "62 cm"
+          "tr": "62",
+          "en": "62",
+          "de": "62",
+          "fr": "62",
+          "ru": "62",
+          "ar": "62",
+          "zh": "62",
+          "ku": "62"
         },
         {
-          "tr": "76 cm",
-          "en": "76 cm",
-          "de": "76 cm",
-          "fr": "76 cm",
-          "ru": "76 см",
-          "ar": "76 cm",
-          "zh": "76 cm",
-          "ku": "76 cm"
+          "tr": "76",
+          "en": "76",
+          "de": "76",
+          "fr": "76",
+          "ru": "76",
+          "ar": "76",
+          "zh": "76",
+          "ku": "76"
         },
         {
-          "tr": "90 cm",
-          "en": "90 cm",
-          "de": "90 cm",
-          "fr": "90 cm",
-          "ru": "90 см",
-          "ar": "90 cm",
-          "zh": "90 cm",
-          "ku": "90 cm"
+          "tr": "90",
+          "en": "90",
+          "de": "90",
+          "fr": "90",
+          "ru": "90",
+          "ar": "90",
+          "zh": "90",
+          "ku": "90"
         },
         {
-          "tr": "104 cm",
-          "en": "104 cm",
-          "de": "104 cm",
-          "fr": "104 cm",
-          "ru": "104 см",
-          "ar": "104 cm",
-          "zh": "104 cm",
-          "ku": "104 cm"
+          "tr": "104",
+          "en": "104",
+          "de": "104",
+          "fr": "104",
+          "ru": "104",
+          "ar": "104",
+          "zh": "104",
+          "ku": "104"
         }
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Açık uçlu manometrede gaz tarafındaki cıva seviyesi aşağıda kaldığından gaz basıncı açık hava basıncından büyüktür: P(gaz) = 76 + 14 = 90 cmHg. Kapalı uçlu manometrenin kapalı kolunda boşluk (basınç ≈ 0) bulunduğundan seviye farkı doğrudan gaz basıncına eşittir: h = 90 cm. Farkın açık hava basıncından çıkarılması (76 − 14 = 62) ya da açık uçlu manometredeki farkın aynen alınması (14) tipik hatalardır.",
-        "en": "In the open-ended manometer the mercury on the gas side is lower, so the gas pressure is greater than atmospheric: P(gas) = 76 + 14 = 90 cmHg. The closed arm of a closed-end manometer contains a vacuum (pressure ≈ 0), so the level difference equals the gas pressure directly: h = 90 cm. Subtracting the difference from atmospheric pressure (76 − 14 = 62) or simply copying the open-manometer difference (14) are typical errors.",
-        "de": "Im offenen Manometer steht das Quecksilber auf der Gasseite tiefer, also ist der Gasdruck größer als der Luftdruck: P(Gas) = 76 + 14 = 90 cmHg. Im geschlossenen Schenkel eines geschlossenen Manometers herrscht Vakuum (Druck ≈ 0), daher ist der Höhenunterschied direkt gleich dem Gasdruck: h = 90 cm. Den Unterschied vom Luftdruck abzuziehen (76 − 14 = 62) oder den Wert des offenen Manometers zu übernehmen (14) sind typische Fehler.",
-        "fr": "Dans le manomètre à bout ouvert, le mercure est plus bas du côté du gaz : la pression du gaz est donc supérieure à la pression atmosphérique, P(gaz) = 76 + 14 = 90 cmHg. La branche fermée d'un manomètre à bout fermé contient le vide (pression ≈ 0), la dénivellation est donc directement égale à la pression du gaz : h = 90 cm. Soustraire la dénivellation de la pression atmosphérique (76 − 14 = 62) ou recopier la valeur du manomètre ouvert (14) sont des erreurs typiques.",
-        "ru": "В открытом манометре уровень ртути со стороны газа ниже, значит, давление газа больше атмосферного: P(газа) = 76 + 14 = 90 см рт. ст. В закрытом колене закрытого манометра — вакуум (давление ≈ 0), поэтому разность уровней прямо равна давлению газа: h = 90 см. Типичные ошибки — вычесть разность уровней из атмосферного давления (76 − 14 = 62) или перенести значение для открытого манометра (14).",
-        "ar": "في المانومتر المفتوح يكون الزئبق في جهة الغاز أدنى، إذن ضغط الغاز أكبر من الضغط الجوي: P(الغاز) = 76 + 14 = 90 cmHg. وفي الذراع المغلقة للمانومتر مغلق الطرف يوجد فراغ (الضغط ≈ 0)، لذا يساوي فرق المستويين ضغط الغاز مباشرة: h = 90 cm. طرح الفرق من الضغط الجوي (76 − 14 = 62) أو نقل فرق المانومتر المفتوح كما هو (14) خطآن شائعان.",
-        "zh": "开口压强计中气体一侧汞面较低，说明气体压强大于大气压：P(气) = 76 + 14 = 90 cmHg。闭口压强计的封闭端是真空(压强 ≈ 0)，所以汞面高度差直接等于气体压强：h = 90 cm。把高度差从大气压中减去(76 − 14 = 62)或直接照搬开口压强计的高度差(14)都是常见错误。",
-        "ku": "Di manometreya devvekirî de asta cîweyê ya li aliyê gazê nizmtir dimîne, loma zexta gazê ji zexta hewaya vekirî mezintir e: P(gaz) = 76 + 14 = 90 cmHg. Di milê girtî yê manometreya devgirtî de valahî heye (zext ≈ 0), loma ferqa astan rasterast bi zexta gazê re wekhev e: h = 90 cm. Kêmkirina ferqê ji zexta hewaya vekirî (76 − 14 = 62) an girtina ferqa manometreya devvekirî wek xwe (14) şaşiyên berbelav in."
+        "tr": "Şekilde atmosfere açık koldaki cıva seviyesi, gazın bağlı olduğu koldakinden 14 cm yukarıdadır; gaz cıvayı açık kola doğru itmiştir, yani gaz basıncı açık hava basıncından büyüktür: P(gaz) = 76 + 14 = 90 cmHg. Kapalı uçlu manometrenin kapalı kolunda boşluk (basınç ≈ 0) bulunduğundan seviye farkı doğrudan gaz basıncına eşittir: h = 90 cm. Farkı açık hava basıncından çıkarmak (76 − 14 = 62), açık uçlu manometredeki farkı aynen almak (14) ya da yalnızca açık hava basıncını yazmak (76) tipik hatalardır.",
+        "en": "In the figure the mercury level in the arm open to the atmosphere is 14 cm higher than in the arm connected to the gas; the gas has pushed the mercury towards the open arm, so the gas pressure is greater than atmospheric pressure: P(gas) = 76 + 14 = 90 cmHg. The closed arm of a closed-end manometer contains a vacuum (pressure ≈ 0), so the level difference equals the gas pressure directly: h = 90 cm. Subtracting the difference from atmospheric pressure (76 − 14 = 62), taking the open-manometer difference unchanged (14) or writing only the atmospheric pressure (76) are typical mistakes.",
+        "de": "In der Abbildung steht das Quecksilber im zur Atmosphäre offenen Schenkel 14 cm höher als im Schenkel am Gas; das Gas hat das Quecksilber zum offenen Schenkel gedrückt, sein Druck ist also größer als der Luftdruck: P(Gas) = 76 + 14 = 90 cmHg. Im geschlossenen Schenkel eines geschlossenen Manometers herrscht Vakuum (Druck ≈ 0), daher entspricht der Höhenunterschied direkt dem Gasdruck: h = 90 cm. Typische Fehler sind, den Unterschied vom Luftdruck abzuziehen (76 − 14 = 62), den Unterschied des offenen Manometers unverändert zu übernehmen (14) oder nur den Luftdruck anzugeben (76).",
+        "fr": "Sur la figure, le niveau du mercure dans la branche ouverte à l'atmosphère est 14 cm plus haut que dans la branche reliée au gaz : le gaz a repoussé le mercure vers la branche ouverte, sa pression est donc supérieure à la pression atmosphérique : P(gaz) = 76 + 14 = 90 cmHg. La branche fermée d'un manomètre à bout fermé contient du vide (pression ≈ 0), donc la dénivellation est directement égale à la pression du gaz : h = 90 cm. Soustraire la dénivellation de la pression atmosphérique (76 − 14 = 62), reprendre telle quelle la dénivellation du manomètre ouvert (14) ou donner seulement la pression atmosphérique (76) sont des erreurs typiques.",
+        "ru": "На рисунке уровень ртути в колене, открытом в атмосферу, на 14 см выше, чем в колене, соединённом с газом; газ вытеснил ртуть в открытое колено, значит, его давление больше атмосферного: P(газа) = 76 + 14 = 90 см рт. ст. В закрытом колене закрытого манометра вакуум (давление ≈ 0), поэтому разность уровней прямо равна давлению газа: h = 90 см. Вычесть разность из атмосферного давления (76 − 14 = 62), взять разность открытого манометра без изменений (14) или указать лишь атмосферное давление (76) — типичные ошибки.",
+        "ar": "في الشكل يكون مستوى الزئبق في الذراع المفتوحة للجو أعلى بمقدار 14 cm منه في الذراع المتصلة بالغاز؛ أي إن الغاز دفع الزئبق نحو الذراع المفتوحة، فضغطه أكبر من الضغط الجوي: P(الغاز) = 76 + 14 = 90 cmHg. وفي الذراع المغلقة للمانومتر مغلق الطرف يوجد فراغ (الضغط ≈ 0)، لذا يساوي فرق المستويين ضغط الغاز مباشرة: h = 90 cm. ومن الأخطاء الشائعة طرح الفرق من الضغط الجوي (76 − 14 = 62)، أو أخذ فرق المانومتر المفتوح كما هو (14)، أو كتابة الضغط الجوي وحده (76).",
+        "zh": "图中通大气一侧的汞面比连接气体一侧高 14 cm，说明气体把汞压向开口侧，气体压强大于大气压：P(气体) = 76 + 14 = 90 cmHg。闭口压强计的封闭侧为真空(压强 ≈ 0)，所以高度差直接等于气体压强：h = 90 cm。用大气压减去高度差(76 − 14 = 62)、照搬开口压强计的高度差(14)或只写大气压(76)，都是典型错误。",
+        "ku": "Di şeklê de asta cîweyê di milê ku ji atmosferê re vekirî ye de 14 cm ji ya milê ku bi gazê ve girêdayî ye bilindtir e; gazê cîwe ber bi milê vekirî ve paldaye, yanî zexta gazê ji zexta hewaya vekirî mezintir e: P(gaz) = 76 + 14 = 90 cmHg. Di milê girtî yê manometreya devgirtî de valahî heye (zext ≈ 0), ji ber vê yekê ferqa astan rasterast bi zexta gazê re wekhev e: h = 90 cm. Derxistina ferqê ji zexta hewaya vekirî (76 − 14 = 62), wergirtina ferqa manometreya devvekirî wek xwe (14) an tenê nivîsandina zexta hewayê (76) xeletiyên tîpîk in."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 250,
+        "markup": "<rect x=\"16\" y=\"66\" width=\"110\" height=\"110\" class=\"qf-gas\"/><rect x=\"16\" y=\"66\" width=\"110\" height=\"110\" class=\"qf-line\"/><text x=\"71\" y=\"126\" text-anchor=\"middle\" class=\"qf-strong\">{{gas}}</text><rect x=\"170\" y=\"160\" width=\"16\" height=\"60\" class=\"qf-muted\"/><rect x=\"170\" y=\"204\" width=\"96\" height=\"16\" class=\"qf-muted\"/><rect x=\"250\" y=\"90\" width=\"16\" height=\"130\" class=\"qf-muted\"/><line x1=\"126\" y1=\"90\" x2=\"186\" y2=\"90\" class=\"qf-line\"/><line x1=\"126\" y1=\"102\" x2=\"170\" y2=\"102\" class=\"qf-line\"/><line x1=\"170\" y1=\"102\" x2=\"170\" y2=\"220\" class=\"qf-line\"/><line x1=\"186\" y1=\"90\" x2=\"186\" y2=\"204\" class=\"qf-line\"/><line x1=\"170\" y1=\"220\" x2=\"266\" y2=\"220\" class=\"qf-line\"/><line x1=\"186\" y1=\"204\" x2=\"250\" y2=\"204\" class=\"qf-line\"/><line x1=\"250\" y1=\"204\" x2=\"250\" y2=\"40\" class=\"qf-line\"/><line x1=\"266\" y1=\"220\" x2=\"266\" y2=\"40\" class=\"qf-line\"/><text x=\"258\" y=\"30\" text-anchor=\"middle\" class=\"qf-small\">{{open}}</text><line x1=\"186\" y1=\"160\" x2=\"300\" y2=\"160\" class=\"qf-dash\"/><line x1=\"266\" y1=\"90\" x2=\"300\" y2=\"90\" class=\"qf-dash\"/><line x1=\"292\" y1=\"90\" x2=\"292\" y2=\"160\" class=\"qf-line\"/><text x=\"298\" y=\"130\" class=\"qf-strong\">14 cm</text><text x=\"218\" y=\"240\" text-anchor=\"middle\" class=\"qf-small\">Hg</text>",
+        "labels": {
+          "gas": {
+            "tr": "Gaz",
+            "en": "Gas",
+            "de": "Gas",
+            "fr": "Gaz",
+            "ru": "Газ",
+            "ar": "غاز",
+            "zh": "气体",
+            "ku": "Gaz"
+          },
+          "open": {
+            "tr": "açık uç",
+            "en": "open end",
+            "de": "offenes Ende",
+            "fr": "bout ouvert",
+            "ru": "открытый конец",
+            "ar": "طرف مفتوح",
+            "zh": "开口端",
+            "ku": "dawiya vekirî"
+          }
+        }
       }
     },
     {
       "id": "u12-twin10",
       "stem": {
-        "tr": "Aralarında kapalı bir musluk bulunan iki kaptan 2 L'lik olanında 3 atm basınçta He, 3 L'lik olanında 2 atm basınçta Ne gazı vardır. Sıcaklık sabitken musluk açılıp gazlar karışınca toplam basınç kaç atm olur? (Bağlantı borusunun hacmi ihmal edilecektir.)",
-        "en": "Two containers are connected by a closed valve: the 2 L container holds He at 3 atm and the 3 L container holds Ne at 2 atm. At constant temperature the valve is opened and the gases mix. What is the total pressure in atm? (Neglect the volume of the connecting tube.)",
-        "de": "Zwei Behälter sind durch einen geschlossenen Hahn verbunden: Der 2-L-Behälter enthält He bei 3 atm, der 3-L-Behälter Ne bei 2 atm. Bei konstanter Temperatur wird der Hahn geöffnet und die Gase mischen sich. Wie groß ist der Gesamtdruck in atm? (Volumen des Verbindungsrohrs vernachlässigen.)",
-        "fr": "Deux récipients sont reliés par un robinet fermé : celui de 2 L contient du He sous 3 atm, celui de 3 L du Ne sous 2 atm. À température constante, on ouvre le robinet et les gaz se mélangent. Quelle est la pression totale en atm ? (On néglige le volume du tube de liaison.)",
-        "ru": "Два сосуда соединены закрытым краном: в сосуде объёмом 2 л находится He при 3 атм, в сосуде объёмом 3 л — Ne при 2 атм. При постоянной температуре кран открывают, и газы смешиваются. Каким станет общее давление в атм? (Объёмом соединительной трубки пренебречь.)",
-        "ar": "وعاءان يصل بينهما صنبور مغلق: الوعاء الذي سعته 2 L يحتوي He تحت ضغط 3 atm، والذي سعته 3 L يحتوي Ne تحت ضغط 2 atm. عند ثبات درجة الحرارة يُفتح الصنبور فيمتزج الغازان. كم يصبح الضغط الكلي بوحدة atm؟ (يُهمل حجم أنبوب التوصيل.)",
-        "zh": "两个容器之间用关闭的阀门相连：2 L 容器中装有 3 atm 的 He，3 L 容器中装有 2 atm 的 Ne。温度不变时打开阀门使气体混合，总压强是多少 atm？（连接管体积忽略不计。）",
-        "ku": "Di navbera du firaxan de musluxeke girtî heye: di firaxa 2 L de gaza He bi zexta 3 atm, di firaxa 3 L de gaza Ne bi zexta 2 atm heye. Di germahiya sabît de muslux tê vekirin û gaz tevlî hev dibin. Zexta giştî dibe çend atm? (Qebareya lûleya girêdanê nayê hesibandin.)"
+        "tr": "Şekildeki düzenekte musluk kapalıyken kaplarda verilen gazlar bulunmaktadır. Sıcaklık sabit tutularak musluk açılıyor ve gazlar tamamen karışıyor (bağlantı borusunun hacmi ihmal edilecektir).\nI. Son durumda toplam basınç 2,4 atm olur.\nII. Son durumda He'nin kısmi basıncı Ne'nin kısmi basıncına eşittir.\nIII. Ne gazının mol sayısı He gazınınkinden büyüktür.\nyargılarından hangileri doğrudur?",
+        "en": "In the apparatus shown, the containers hold the given gases while the valve is closed. At constant temperature the valve is opened and the gases mix completely (neglect the volume of the connecting tube). Which of the following statements are true?\nI. The final total pressure is 2.4 atm.\nII. Finally the partial pressure of He equals the partial pressure of Ne.\nIII. The number of moles of Ne is greater than that of He.",
+        "de": "In der gezeigten Anordnung enthalten die Behälter bei geschlossenem Hahn die angegebenen Gase. Bei konstanter Temperatur wird der Hahn geöffnet, und die Gase vermischen sich vollständig (das Volumen des Verbindungsrohrs ist zu vernachlässigen). Welche Aussagen sind richtig?\nI. Am Ende beträgt der Gesamtdruck 2,4 atm.\nII. Am Ende ist der Partialdruck von He gleich dem Partialdruck von Ne.\nIII. Die Stoffmenge von Ne ist größer als die von He.",
+        "fr": "Dans le dispositif représenté, les récipients contiennent les gaz indiqués lorsque le robinet est fermé. À température constante, on ouvre le robinet et les gaz se mélangent complètement (on néglige le volume du tube de liaison). Quelles affirmations sont vraies ?\nI. La pression totale finale vaut 2,4 atm.\nII. À la fin, la pression partielle de He est égale à celle de Ne.\nIII. La quantité de matière de Ne est supérieure à celle de He.",
+        "ru": "В показанной установке при закрытом кране в сосудах находятся указанные газы. При постоянной температуре кран открывают, и газы полностью смешиваются (объёмом соединительной трубки пренебречь). Какие утверждения верны?\nI. Конечное общее давление равно 2,4 атм.\nII. В конце парциальное давление He равно парциальному давлению Ne.\nIII. Количество вещества Ne больше, чем He.",
+        "ar": "في الجهاز المبيَّن تحتوي الأوعية على الغازات المذكورة والصمام مغلق. يُفتح الصمام مع إبقاء درجة الحرارة ثابتة فيختلط الغازان تمامًا (يُهمل حجم أنبوب التوصيل). أيّ العبارات الآتية صحيحة؟\nI. يصبح الضغط الكلي النهائي 2.4 atm.\nII. في النهاية يساوي الضغط الجزئي لـ He الضغط الجزئي لـ Ne.\nIII. عدد مولات Ne أكبر من عدد مولات He.",
+        "zh": "如图所示装置中，阀门关闭时两容器中装有图示气体。保持温度不变打开阀门，气体完全混合（连接管体积忽略不计）。下列说法中哪些正确？\nI. 最终总压强为 2.4 atm。\nII. 最终 He 的分压等于 Ne 的分压。\nIII. Ne 的物质的量大于 He。",
+        "ku": "Di sazûmana şeklê de dema muslux girtî ye, gazên diyarkirî di firaxan de ne. Germahî sabît tê hiştin, muslux tê vekirin û gaz bi tevahî tevlî hev dibin (qebareya lûleya girêdanê nayê hesibandin). Kîjan ji van gotinan rast in?\nI. Di dawiyê de zexta giştî 2,4 atm e.\nII. Di dawiyê de zexta qismî ya He bi zexta qismî ya Ne re wekhev e.\nIII. Hejmara molan a gaza Ne ji ya He mezintir e."
       },
       "options": [
         {
-          "tr": "1,2 atm",
-          "en": "1.2 atm",
-          "de": "1,2 atm",
-          "fr": "1,2 atm",
-          "ru": "1,2 атм",
-          "ar": "1.2 atm",
-          "zh": "1.2 atm",
-          "ku": "1,2 atm"
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "2,4 atm",
-          "en": "2.4 atm",
-          "de": "2,4 atm",
-          "fr": "2,4 atm",
-          "ru": "2,4 атм",
-          "ar": "2.4 atm",
-          "zh": "2.4 atm",
-          "ku": "2,4 atm"
+          "tr": "Yalnız II",
+          "en": "Only II",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "2,5 atm",
-          "en": "2.5 atm",
-          "de": "2,5 atm",
-          "fr": "2,5 atm",
-          "ru": "2,5 атм",
-          "ar": "2.5 atm",
-          "zh": "2.5 atm",
-          "ku": "2,5 atm"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "5 atm",
-          "en": "5 atm",
-          "de": "5 atm",
-          "fr": "5 atm",
-          "ru": "5 атм",
-          "ar": "5 atm",
-          "zh": "5 atm",
-          "ku": "5 atm"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "12 atm",
-          "en": "12 atm",
-          "de": "12 atm",
-          "fr": "12 atm",
-          "ru": "12 атм",
-          "ar": "12 atm",
-          "zh": "12 atm",
-          "ku": "12 atm"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Musluk açılınca her gaz 2 + 3 = 5 L'lik toplam hacme yayılır. Sabit sıcaklıkta P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm; toplam basınç 1,2 + 1,2 = 2,4 atm. Hacimler farklı olduğu için basınçların ortalaması (2,5) ya da toplamı (5) alınamaz; 1,2 atm yalnızca bir gazın kısmi basıncı, 12 ise toplam hacme bölünmemiş P·V toplamıdır.",
-        "en": "When the valve opens, each gas spreads into the total volume 2 + 3 = 5 L. At constant temperature P1·V1 = P2·V2: P(He) = 3·2/5 = 1.2 atm, P(Ne) = 2·3/5 = 1.2 atm; total pressure 1.2 + 1.2 = 2.4 atm. Because the volumes differ, the average (2.5) or the sum (5) of the pressures cannot be used; 1.2 atm is only one gas's partial pressure, and 12 is the sum of P·V not divided by the total volume.",
-        "de": "Nach dem Öffnen verteilt sich jedes Gas auf das Gesamtvolumen 2 + 3 = 5 L. Bei konstanter Temperatur P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm; Gesamtdruck 1,2 + 1,2 = 2,4 atm. Da die Volumina verschieden sind, darf man weder den Mittelwert (2,5) noch die Summe (5) der Drücke nehmen; 1,2 atm ist nur ein Partialdruck, 12 die nicht durch das Gesamtvolumen geteilte Summe von P·V.",
-        "fr": "À l'ouverture, chaque gaz occupe le volume total 2 + 3 = 5 L. À température constante P1·V1 = P2·V2 : P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm ; pression totale 1,2 + 1,2 = 2,4 atm. Les volumes étant différents, on ne peut prendre ni la moyenne (2,5) ni la somme (5) des pressions ; 1,2 atm n'est que la pression partielle d'un gaz et 12 la somme des P·V non divisée par le volume total.",
-        "ru": "После открытия крана каждый газ занимает общий объём 2 + 3 = 5 л. При постоянной температуре P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 атм, P(Ne) = 2·3/5 = 1,2 атм; общее давление 1,2 + 1,2 = 2,4 атм. Так как объёмы разные, нельзя брать среднее (2,5) или сумму (5) давлений; 1,2 атм — лишь парциальное давление одного газа, 12 — сумма P·V, не делённая на общий объём.",
-        "ar": "عند فتح الصنبور ينتشر كل غاز في الحجم الكلي 2 + 3 = 5 L. عند ثبات الحرارة P1·V1 = P2·V2: P(He) = 3·2/5 = 1.2 atm وP(Ne) = 2·3/5 = 1.2 atm؛ الضغط الكلي 1.2 + 1.2 = 2.4 atm. ولأن الحجمين مختلفان لا يصح أخذ متوسط الضغطين (2.5) ولا مجموعهما (5)؛ و1.2 atm هو الضغط الجزئي لغاز واحد فقط، و12 هو مجموع P·V دون قسمته على الحجم الكلي.",
-        "zh": "打开阀门后，每种气体都扩散到总体积 2 + 3 = 5 L 中。温度不变时 P1·V1 = P2·V2：P(He) = 3·2/5 = 1.2 atm，P(Ne) = 2·3/5 = 1.2 atm；总压强 1.2 + 1.2 = 2.4 atm。由于两容器体积不同，不能取压强的平均值(2.5)或直接相加(5)；1.2 atm 只是一种气体的分压，12 是没有除以总体积的 P·V 之和。",
-        "ku": "Dema muslux vedibe, her gaz li qebareya giştî ya 2 + 3 = 5 L belav dibe. Di germahiya sabît de P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm; zexta giştî 1,2 + 1,2 = 2,4 atm. Ji ber ku qebare cuda ne, navîna zextan (2,5) an berhevoka wan (5) nayê girtin; 1,2 atm tenê zexta qismî ya gazekê ye, 12 jî berhevoka P·V ye ku li qebareya giştî nehatiye parvekirin."
+        "tr": "Şekilde He 2 L'lik kapta 3 atm, Ne 3 L'lik kapta 2 atm basınçtadır. Musluk açılınca her gaz 2 + 3 = 5 L'lik toplam hacme yayılır; sabit sıcaklıkta P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm. I doğrudur: toplam basınç 1,2 + 1,2 = 2,4 atm. II doğrudur: iki kısmi basınç da 1,2 atm'dir. III yanlıştır: aynı sıcaklıkta mol sayısı P·V ile orantılıdır; P·V(He) = 3·2 = 6, P·V(Ne) = 2·3 = 6 olduğundan mol sayıları eşittir. Basınçların ortalamasını (2,5 atm) almak ya da büyük kaptaki gazın mol sayısını büyük sanmak tipik hatalardır.",
+        "en": "In the figure He is at 3 atm in the 2 L container and Ne at 2 atm in the 3 L container. When the valve is opened each gas spreads over the total volume 2 + 3 = 5 L; at constant temperature P1·V1 = P2·V2: P(He) = 3·2/5 = 1.2 atm, P(Ne) = 2·3/5 = 1.2 atm. I is true: the total pressure is 1.2 + 1.2 = 2.4 atm. II is true: both partial pressures are 1.2 atm. III is false: at the same temperature the number of moles is proportional to P·V; P·V(He) = 3·2 = 6 and P·V(Ne) = 2·3 = 6, so the amounts are equal. Averaging the pressures (2.5 atm) or assuming that the gas in the larger container has more moles are typical mistakes.",
+        "de": "In der Abbildung steht He im 2-L-Behälter unter 3 atm und Ne im 3-L-Behälter unter 2 atm. Nach dem Öffnen des Hahns verteilt sich jedes Gas auf das Gesamtvolumen 2 + 3 = 5 L; bei konstanter Temperatur gilt P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm. I ist richtig: Der Gesamtdruck beträgt 1,2 + 1,2 = 2,4 atm. II ist richtig: Beide Partialdrücke betragen 1,2 atm. III ist falsch: Bei gleicher Temperatur ist die Stoffmenge proportional zu P·V; P·V(He) = 3·2 = 6 und P·V(Ne) = 2·3 = 6, die Stoffmengen sind also gleich. Typische Fehler sind, die Drücke zu mitteln (2,5 atm) oder anzunehmen, das Gas im größeren Behälter habe die größere Stoffmenge.",
+        "fr": "Sur la figure, He est sous 3 atm dans le récipient de 2 L et Ne sous 2 atm dans celui de 3 L. À l'ouverture du robinet, chaque gaz occupe le volume total 2 + 3 = 5 L ; à température constante, P1·V1 = P2·V2 : P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm. I est vraie : la pression totale vaut 1,2 + 1,2 = 2,4 atm. II est vraie : les deux pressions partielles valent 1,2 atm. III est fausse : à même température, la quantité de matière est proportionnelle à P·V ; P·V(He) = 3·2 = 6 et P·V(Ne) = 2·3 = 6, les quantités sont donc égales. Faire la moyenne des pressions (2,5 atm) ou croire que le gaz du plus grand récipient contient plus de moles sont des erreurs typiques.",
+        "ru": "На рисунке He находится в сосуде объёмом 2 л при 3 атм, Ne — в сосуде объёмом 3 л при 2 атм. После открытия крана каждый газ занимает общий объём 2 + 3 = 5 л; при постоянной температуре P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 атм, P(Ne) = 2·3/5 = 1,2 атм. I верно: общее давление 1,2 + 1,2 = 2,4 атм. II верно: оба парциальных давления равны 1,2 атм. III неверно: при одинаковой температуре количество вещества пропорционально P·V; P·V(He) = 3·2 = 6 и P·V(Ne) = 2·3 = 6, т. е. количества веществ равны. Усреднять давления (2,5 атм) или считать, что в большем сосуде газа больше, — типичные ошибки.",
+        "ar": "في الشكل يكون He في الوعاء ذي 2 L عند 3 atm، وNe في الوعاء ذي 3 L عند 2 atm. عند فتح الصمام ينتشر كل غاز في الحجم الكلي 2 + 3 = 5 L، وعند ثبات درجة الحرارة P1·V1 = P2·V2: P(He) = 3·2/5 = 1.2 atm وP(Ne) = 2·3/5 = 1.2 atm. العبارة I صحيحة: الضغط الكلي 1.2 + 1.2 = 2.4 atm. العبارة II صحيحة: الضغطان الجزئيان كلاهما 1.2 atm. العبارة III خاطئة: عند درجة الحرارة نفسها يتناسب عدد المولات مع P·V، وP·V(He) = 3·2 = 6 وP·V(Ne) = 2·3 = 6، فعددا المولات متساويان. ومن الأخطاء الشائعة أخذ متوسط الضغطين (2.5 atm) أو الظن أن الغاز في الوعاء الأكبر عدد مولاته أكبر.",
+        "zh": "图中 He 在 2 L 容器中，压强 3 atm；Ne 在 3 L 容器中，压强 2 atm。打开阀门后，每种气体都扩散到 2 + 3 = 5 L 的总体积中；温度不变时 P1·V1 = P2·V2：P(He) = 3·2/5 = 1.2 atm，P(Ne) = 2·3/5 = 1.2 atm。I 正确：总压强为 1.2 + 1.2 = 2.4 atm。II 正确：两种气体的分压都是 1.2 atm。III 错误：同温下物质的量与 P·V 成正比，P·V(He) = 3·2 = 6，P·V(Ne) = 2·3 = 6，所以物质的量相等。把两压强取平均(2.5 atm)或认为大容器中的气体物质的量更大，都是典型错误。",
+        "ku": "Di şeklê de He di firaxa 2 L de bi zexta 3 atm, Ne jî di firaxa 3 L de bi zexta 2 atm e. Dema muslux tê vekirin her gaz li qebareya giştî ya 2 + 3 = 5 L belav dibe; di germahiya sabît de P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm. I rast e: zexta giştî 1,2 + 1,2 = 2,4 atm e. II rast e: herdu zextên qismî 1,2 atm in. III şaş e: di heman germahiyê de hejmara molan bi P·V re rêjeyî ye; P·V(He) = 3·2 = 6 û P·V(Ne) = 2·3 = 6, ji ber vê yekê hejmarên molan wekhev in. Girtina navînê ya zextan (2,5 atm) an hesibandina ku gaza di firaxa mezintir de bêtir mol e xeletiyên tîpîk in."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 220,
+        "markup": "<rect x=\"20\" y=\"70\" width=\"110\" height=\"110\" class=\"qf-gas\"/><rect x=\"20\" y=\"70\" width=\"110\" height=\"110\" class=\"qf-line\"/><rect x=\"210\" y=\"40\" width=\"134\" height=\"170\" class=\"qf-gas\"/><rect x=\"210\" y=\"40\" width=\"134\" height=\"170\" class=\"qf-line\"/><line x1=\"130\" y1=\"120\" x2=\"210\" y2=\"120\" class=\"qf-line\"/><line x1=\"130\" y1=\"130\" x2=\"210\" y2=\"130\" class=\"qf-line\"/><circle cx=\"170\" cy=\"125\" r=\"11\" class=\"qf-fill\"/><line x1=\"170\" y1=\"114\" x2=\"170\" y2=\"136\" class=\"qf-line\"/><text x=\"170\" y=\"100\" text-anchor=\"middle\" class=\"qf-small\">{{valve}}</text><text x=\"75\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">He</text><text x=\"75\" y=\"131\" text-anchor=\"middle\" class=\"qf-strong\">2 L</text><text x=\"75\" y=\"155\" text-anchor=\"middle\" class=\"qf-strong\">3 atm</text><text x=\"277\" y=\"100\" text-anchor=\"middle\" class=\"qf-big\">Ne</text><text x=\"277\" y=\"128\" text-anchor=\"middle\" class=\"qf-strong\">3 L</text><text x=\"277\" y=\"154\" text-anchor=\"middle\" class=\"qf-strong\">2 atm</text>",
+        "labels": {
+          "valve": {
+            "tr": "musluk",
+            "en": "valve",
+            "de": "Hahn",
+            "fr": "robinet",
+            "ru": "кран",
+            "ar": "صمام",
+            "zh": "阀门",
+            "ku": "muslux"
+          }
+        }
       }
     },
     {
@@ -1960,77 +2135,144 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin13",
       "stem": {
-        "tr": "Sabit miktardaki ideal bir gaz için aşağıdaki değişken çiftlerinden hangisinin grafiği orijinden geçen ve artan bir doğrudur?",
-        "en": "For a fixed amount of an ideal gas, the graph of which of the following pairs of variables is an increasing straight line through the origin?",
-        "de": "Für eine konstante Menge eines idealen Gases: Bei welchem der folgenden Variablenpaare ist der Graph eine steigende Gerade durch den Ursprung?",
-        "fr": "Pour une quantité constante de gaz parfait, pour lequel des couples de variables suivants le graphique est-il une droite croissante passant par l'origine ?",
-        "ru": "Для постоянного количества идеального газа график какой из следующих пар величин представляет собой возрастающую прямую, проходящую через начало координат?",
-        "ar": "لكمية ثابتة من غاز مثالي، أيّ أزواج المتغيرات الآتية يكون تمثيلها البياني خطًا مستقيمًا متزايدًا يمر بنقطة الأصل؟",
-        "zh": "对于一定量的理想气体，下列哪一对变量的图像是一条过原点的上升直线？",
-        "ku": "Ji bo mîqdareke sabît a gazeke îdeal, grafîka kîjan ji van cotên guherbaran xêzeke rast a zêdebûyî ye ku di xala destpêkê (orîjînê) re derbas dibe?"
+        "tr": "Şekildeki grafik, aynı ve sabit basınçta bulunan X ve Y ideal gazlarının hacimlerinin mutlak sıcaklıkla değişimini göstermektedir.\nI. Aynı sıcaklıkta X'in mol sayısı Y'ninkinin 2 katıdır.\nII. X'in 27 °C'deki hacmi 3 L'dir.\nIII. X ve Y'nin kütleleri eşitse X'in mol kütlesi Y'ninkinden büyüktür.\nyargılarından hangileri doğrudur?",
+        "en": "The graph shows how the volumes of ideal gases X and Y, kept at the same constant pressure, change with absolute temperature. Which of the following statements are true?\nI. At the same temperature the number of moles of X is twice that of Y.\nII. The volume of X at 27 °C is 3 L.\nIII. If X and Y have equal masses, the molar mass of X is greater than that of Y.",
+        "de": "Das Diagramm zeigt, wie sich die Volumina der idealen Gase X und Y bei gleichem, konstantem Druck mit der absoluten Temperatur ändern. Welche Aussagen sind richtig?\nI. Bei gleicher Temperatur ist die Stoffmenge von X doppelt so groß wie die von Y.\nII. Das Volumen von X bei 27 °C beträgt 3 L.\nIII. Haben X und Y gleiche Massen, ist die molare Masse von X größer als die von Y.",
+        "fr": "Le graphique montre l'évolution, en fonction de la température absolue, des volumes des gaz parfaits X et Y maintenus à la même pression constante. Quelles affirmations sont vraies ?\nI. À la même température, la quantité de matière de X est le double de celle de Y.\nII. Le volume de X à 27 °C est de 3 L.\nIII. Si X et Y ont la même masse, la masse molaire de X est supérieure à celle de Y.",
+        "ru": "На графике показано изменение объёмов идеальных газов X и Y, находящихся при одинаковом постоянном давлении, в зависимости от абсолютной температуры. Какие утверждения верны?\nI. При одинаковой температуре количество вещества X в 2 раза больше, чем Y.\nII. Объём X при 27 °C равен 3 л.\nIII. Если массы X и Y равны, молярная масса X больше, чем Y.",
+        "ar": "يبيّن الرسم البياني تغيّر حجمي الغازين المثاليين X وY الموجودين عند الضغط الثابت نفسه مع درجة الحرارة المطلقة. أيّ العبارات الآتية صحيحة؟\nI. عند درجة الحرارة نفسها يكون عدد مولات X ضعف عدد مولات Y.\nII. حجم X عند 27 °C يساوي 3 L.\nIII. إذا تساوت كتلتا X وY فإن الكتلة المولية لـ X أكبر منها لـ Y.",
+        "zh": "图中给出了处于相同恒定压强下的理想气体 X 和 Y 的体积随热力学温度的变化。下列说法中哪些正确？\nI. 同一温度下 X 的物质的量是 Y 的 2 倍。\nII. X 在 27 °C 时的体积为 3 L。\nIII. 若 X 和 Y 质量相等，则 X 的摩尔质量大于 Y。",
+        "ku": "Grafîka di şeklê de nîşan dide ku qebareyên gazên îdeal ên X û Y ku di heman zexta sabît de ne, bi germahiya mutleq re çawa diguherin. Kîjan ji van gotinan rast in?\nI. Di heman germahiyê de hejmara molan a X du qatê ya Y ye.\nII. Qebareya X di 27 °C de 3 L ye.\nIII. Eger girseyên X û Y wekhev bin, girseya molar a X ji ya Y mezintir e."
       },
       "options": [
         {
-          "tr": "Sabit basınçta hacim – Celsius sıcaklığı (t)",
-          "en": "Volume vs. Celsius temperature (t) at constant pressure",
-          "de": "Volumen gegen Celsius-Temperatur (t) bei konstantem Druck",
-          "fr": "Volume en fonction de la température Celsius (t) à pression constante",
-          "ru": "Объём — температура по Цельсию (t) при постоянном давлении",
-          "ar": "الحجم مقابل درجة الحرارة بالسلسيوس (t) عند ثبات الضغط",
-          "zh": "恒压下体积 – 摄氏温度(t)",
-          "ku": "Di zexta sabît de qebare – germahiya Celsius (t)"
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Sabit sıcaklıkta basınç – hacim",
-          "en": "Pressure vs. volume at constant temperature",
-          "de": "Druck gegen Volumen bei konstanter Temperatur",
-          "fr": "Pression en fonction du volume à température constante",
-          "ru": "Давление — объём при постоянной температуре",
-          "ar": "الضغط مقابل الحجم عند ثبات درجة الحرارة",
-          "zh": "恒温下压强 – 体积",
-          "ku": "Di germahiya sabît de zext – qebare"
+          "tr": "Yalnız II",
+          "en": "Only II",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "Sabit sıcaklıkta basınç × hacim – basınç",
-          "en": "Pressure × volume vs. pressure at constant temperature",
-          "de": "Druck × Volumen gegen Druck bei konstanter Temperatur",
-          "fr": "Pression × volume en fonction de la pression à température constante",
-          "ru": "Произведение давления на объём — давление при постоянной температуре",
-          "ar": "حاصل ضرب الضغط في الحجم مقابل الضغط عند ثبات درجة الحرارة",
-          "zh": "恒温下压强 × 体积 – 压强",
-          "ku": "Di germahiya sabît de zext × qebare – zext"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Sabit hacimde basınç – 1/T",
-          "en": "Pressure vs. 1/T at constant volume",
-          "de": "Druck gegen 1/T bei konstantem Volumen",
-          "fr": "Pression en fonction de 1/T à volume constant",
-          "ru": "Давление — 1/T при постоянном объёме",
-          "ar": "الضغط مقابل 1/T عند ثبات الحجم",
-          "zh": "恒容下压强 – 1/T",
-          "ku": "Di qebareya sabît de zext – 1/T"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Sabit basınçta hacim – mutlak sıcaklık (T)",
-          "en": "Volume vs. absolute temperature (T) at constant pressure",
-          "de": "Volumen gegen absolute Temperatur (T) bei konstantem Druck",
-          "fr": "Volume en fonction de la température absolue (T) à pression constante",
-          "ru": "Объём — абсолютная температура (T) при постоянном давлении",
-          "ar": "الحجم مقابل درجة الحرارة المطلقة (T) عند ثبات الضغط",
-          "zh": "恒压下体积 – 热力学温度(T)",
-          "ku": "Di zexta sabît de qebare – germahiya mutleq (T)"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 4,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Charles yasasına göre sabit basınçta V = k·T'dir; V–T(K) grafiği orijinden geçen artan bir doğrudur. V–t (Celsius) grafiği de doğrusaldır ama orijinden değil, uzatıldığında t = −273 °C noktasından geçer. Sabit sıcaklıkta P–V grafiği ters orantı eğrisi (hiperbol), P·V–P grafiği ise yatay bir doğrudur. Sabit hacimde P, T ile doğru orantılı olduğundan P–1/T grafiği doğru değil, azalan bir eğridir.",
-        "en": "By Charles's law V = k·T at constant pressure, so the V–T(K) graph is an increasing straight line through the origin. The V–t (Celsius) graph is also linear, but when extended it passes through t = −273 °C, not the origin. At constant temperature the P–V graph is an inverse-proportion curve (hyperbola) and the P·V–P graph is a horizontal line. At constant volume P is directly proportional to T, so the P–1/T graph is a decreasing curve, not a straight line.",
-        "de": "Nach Charles gilt bei konstantem Druck V = k·T; der V–T(K)-Graph ist eine steigende Ursprungsgerade. Der V–t (Celsius)-Graph ist zwar auch linear, verläuft verlängert aber durch t = −273 °C, nicht durch den Ursprung. Bei konstanter Temperatur ist der P–V-Graph eine Hyperbel und der P·V–P-Graph eine waagerechte Gerade. Bei konstantem Volumen ist P proportional zu T, der P–1/T-Graph ist daher eine fallende Kurve, keine Gerade.",
-        "fr": "D'après la loi de Charles, V = k·T à pression constante : le graphique V–T(K) est une droite croissante passant par l'origine. Le graphique V–t (Celsius) est aussi linéaire, mais prolongé il passe par t = −273 °C et non par l'origine. À température constante, le graphique P–V est une hyperbole et le graphique P·V–P une droite horizontale. À volume constant, P est proportionnelle à T, donc le graphique P–1/T est une courbe décroissante, pas une droite.",
-        "ru": "По закону Шарля при постоянном давлении V = k·T, поэтому график V–T(K) — возрастающая прямая, проходящая через начало координат. График V–t(°C) тоже линейный, но при продолжении проходит не через начало координат, а через точку t = −273 °C. При постоянной температуре график P–V — гипербола, а график P·V–P — горизонтальная прямая. При постоянном объёме P прямо пропорционально T, поэтому график P–1/T — не прямая, а убывающая кривая.",
-        "ar": "وفق قانون شارل يكون V = k·T عند ثبات الضغط، لذا فالتمثيل V–T(K) خط مستقيم متزايد يمر بنقطة الأصل. والتمثيل V–t (°C) خطي أيضًا لكنه عند مده يمر بالنقطة t = −273 °C لا بنقطة الأصل. عند ثبات الحرارة يكون التمثيل P–V منحنى تناسب عكسي (قطعًا زائدًا)، والتمثيل P·V–P خطًا أفقيًا. وعند ثبات الحجم يتناسب P طرديًا مع T، لذا فالتمثيل P–1/T منحنى متناقص لا خط مستقيم.",
-        "zh": "根据查理定律，恒压下 V = k·T，所以 V–T(K) 图像是过原点的上升直线。V–t(摄氏温度)图像虽然也是直线，但延长后经过 t = −273 °C，而不是原点。恒温下 P–V 图像是反比例曲线（双曲线），P·V–P 图像是一条水平线。恒容下 P 与 T 成正比，所以 P–1/T 图像是下降的曲线，而不是直线。",
-        "ku": "Li gorî zagona Charles di zexta sabît de V = k·T ye; grafîka V–T(K) xêzeke rast a zêdebûyî ye ku di orîjînê re derbas dibe. Grafîka V–t (Celsius) jî xêzeke rast e, lê dema tê dirêjkirin ne di orîjînê re, di xala t = −273 °C re derbas dibe. Di germahiya sabît de grafîka P–V kevaneke berevajî rêjeyî (hîperbol) ye, grafîka P·V–P jî xêzeke asoyî ye. Di qebareya sabît de P bi T re rasterast rêjeyî ye, loma grafîka P–1/T ne xêzeke rast e, kevaneke daketî ye."
+        "tr": "Grafikte iki doğru da orijinden geçer; sabit basınçta hacim mutlak sıcaklıkla doğru orantılıdır (Charles). Aynı sıcaklıkta, örneğin 400 K'de, V(X) = 4 L ve V(Y) = 2 L'dir. Aynı basınç ve sıcaklıkta hacim mol sayısıyla doğru orantılı olduğundan (Avogadro) n(X) = 2·n(Y); I doğrudur. 27 °C = 300 K'dir ve X'in doğrusu 300 K'de 3 L'yi gösterir; II doğrudur. Kütleler eşitken mol sayısı büyük olan gazın mol kütlesi küçüktür (M = m/n); n(X) > n(Y) olduğundan M(X) < M(Y); III yanlıştır. 27 °C'yi grafikte 27 K gibi okumak ya da hacmi büyük olan gazın mol kütlesini de büyük sanmak tipik hatalardır.",
+        "en": "On the graph both lines pass through the origin; at constant pressure volume is directly proportional to absolute temperature (Charles). At the same temperature, for example 400 K, V(X) = 4 L and V(Y) = 2 L. At the same pressure and temperature volume is proportional to the number of moles (Avogadro), so n(X) = 2·n(Y); I is true. 27 °C = 300 K, and the line of X gives 3 L at 300 K; II is true. For equal masses, the gas with more moles has the smaller molar mass (M = m/n); since n(X) > n(Y), M(X) < M(Y); III is false. Reading 27 °C on the graph as if it were 27 K, or assuming the gas with the larger volume also has the larger molar mass, are typical mistakes.",
+        "de": "Im Diagramm gehen beide Geraden durch den Ursprung; bei konstantem Druck ist das Volumen proportional zur absoluten Temperatur (Charles). Bei gleicher Temperatur, z. B. 400 K, ist V(X) = 4 L und V(Y) = 2 L. Bei gleichem Druck und gleicher Temperatur ist das Volumen proportional zur Stoffmenge (Avogadro), also n(X) = 2·n(Y); I ist richtig. 27 °C = 300 K, und die Gerade von X zeigt bei 300 K 3 L; II ist richtig. Bei gleicher Masse hat das Gas mit der größeren Stoffmenge die kleinere molare Masse (M = m/n); wegen n(X) > n(Y) ist M(X) < M(Y); III ist falsch. Typische Fehler sind, 27 °C im Diagramm wie 27 K abzulesen oder anzunehmen, das Gas mit dem größeren Volumen habe auch die größere molare Masse.",
+        "fr": "Sur le graphique, les deux droites passent par l'origine ; à pression constante, le volume est proportionnel à la température absolue (Charles). À la même température, par exemple 400 K, V(X) = 4 L et V(Y) = 2 L. À même pression et même température, le volume est proportionnel à la quantité de matière (Avogadro), donc n(X) = 2·n(Y) ; I est vraie. 27 °C = 300 K, et la droite de X indique 3 L à 300 K ; II est vraie. À masse égale, le gaz qui a le plus de moles a la plus petite masse molaire (M = m/n) ; comme n(X) > n(Y), M(X) < M(Y) ; III est fausse. Lire 27 °C sur le graphique comme 27 K, ou croire que le gaz de plus grand volume a aussi la plus grande masse molaire, sont des erreurs typiques.",
+        "ru": "На графике обе прямые проходят через начало координат: при постоянном давлении объём прямо пропорционален абсолютной температуре (закон Шарля). При одной и той же температуре, например 400 K, V(X) = 4 л, V(Y) = 2 л. При одинаковых давлении и температуре объём пропорционален количеству вещества (закон Авогадро), поэтому n(X) = 2·n(Y); I верно. 27 °C = 300 K, и прямая X при 300 K даёт 3 л; II верно. При равных массах у газа с бо́льшим количеством вещества молярная масса меньше (M = m/n); так как n(X) > n(Y), M(X) < M(Y); III неверно. Типичные ошибки — читать 27 °C на графике как 27 K или считать, что у газа с бо́льшим объёмом больше и молярная масса.",
+        "ar": "في الرسم البياني يمر المستقيمان كلاهما بنقطة الأصل؛ فعند ثبات الضغط يتناسب الحجم طرديًا مع درجة الحرارة المطلقة (قانون شارل). وعند درجة الحرارة نفسها، مثلًا 400 K، يكون V(X) = 4 L وV(Y) = 2 L. وعند تساوي الضغط ودرجة الحرارة يتناسب الحجم مع عدد المولات (قانون أفوغادرو)، إذن n(X) = 2·n(Y)؛ العبارة I صحيحة. 27 °C = 300 K، ومستقيم X يعطي 3 L عند 300 K؛ العبارة II صحيحة. وعند تساوي الكتلتين يكون الغاز الأكثر مولات أصغر كتلة مولية (M = m/n)، وبما أن n(X) > n(Y) فإن M(X) < M(Y)؛ العبارة III خاطئة. ومن الأخطاء الشائعة قراءة 27 °C على الرسم كأنها 27 K، أو الظن أن الغاز الأكبر حجمًا أكبر كتلة مولية أيضًا.",
+        "zh": "图中两条直线都通过原点：压强一定时，体积与热力学温度成正比（查理定律）。同一温度下，如 400 K 时，V(X) = 4 L，V(Y) = 2 L。同温同压下体积与物质的量成正比（阿伏加德罗定律），所以 n(X) = 2·n(Y)；I 正确。27 °C = 300 K，X 的直线在 300 K 时对应 3 L；II 正确。质量相等时，物质的量越大的气体摩尔质量越小(M = m/n)；n(X) > n(Y)，所以 M(X) < M(Y)；III 错误。把 27 °C 当作 27 K 在图上读数，或认为体积大的气体摩尔质量也大，都是典型错误。",
+        "ku": "Di grafîkê de herdu xet di destpêkê (orîjînê) re derbas dibin; di zexta sabît de qebare bi germahiya mutleq re rasterast rêjeyî ye (Charles). Di heman germahiyê de, mînak di 400 K de, V(X) = 4 L û V(Y) = 2 L ye. Di heman zext û germahiyê de qebare bi hejmara molan re rêjeyî ye (Avogadro), ji ber vê yekê n(X) = 2·n(Y); I rast e. 27 °C = 300 K ye û xeta X di 300 K de 3 L nîşan dide; II rast e. Dema girse wekhev bin, gaza ku bêtir mol e xwedî girseya molar a biçûktir e (M = m/n); ji ber ku n(X) > n(Y), M(X) < M(Y); III şaş e. Xwendina 27 °C li ser grafîkê wek 27 K, an hesibandina ku gaza bi qebareya mezintir xwedî girseya molar a mezintir e xeletiyên tîpîk in."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Sıcaklık (K)",
+          "en": "Temperature (K)",
+          "de": "Temperatur (K)",
+          "fr": "Température (K)",
+          "ru": "Температура (K)",
+          "ar": "درجة الحرارة (K)",
+          "zh": "温度 (K)",
+          "ku": "Germahî (K)"
+        },
+        "yLabel": {
+          "tr": "Hacim (L)",
+          "en": "Volume (L)",
+          "de": "Volumen (L)",
+          "fr": "Volume (L)",
+          "ru": "Объём (л)",
+          "ar": "الحجم (L)",
+          "zh": "体积 (L)",
+          "ku": "Qebare (L)"
+        },
+        "xMax": 450,
+        "yMax": 5,
+        "xTicks": [
+          100,
+          200,
+          300,
+          400
+        ],
+        "yTicks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                400,
+                4
+              ]
+            ],
+            "label": "X",
+            "tone": 0
+          },
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                400,
+                2
+              ]
+            ],
+            "label": "Y",
+            "tone": 1
+          }
+        ]
       }
     },
     {
@@ -2112,14 +2354,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin15",
       "stem": {
-        "tr": "Sürtünmesiz pistonlu bir kaptaki ideal gaza, sıcaklık sabit tutularak aynı gazdan bir miktar daha ekleniyor. Buna göre gazın; I. basıncı, II. yoğunluğu, III. hacmi niceliklerinden hangileri değişmez?",
+        "tr": "Sürtünmesiz pistonlu bir kaptaki ideal gaza, sıcaklık sabit tutularak aynı gazdan bir miktar daha ekleniyor. Gazın I. basıncı, II. yoğunluğu, III. hacmi niceliklerinden hangileri değişmez?",
         "en": "More of the same gas is added to an ideal gas in a container with a frictionless piston while the temperature is kept constant. Which of the following quantities of the gas do not change? I. pressure, II. density, III. volume",
         "de": "Einem idealen Gas in einem Gefäß mit reibungsfreiem Kolben wird bei konstanter Temperatur weiteres Gas derselben Art zugeführt. Welche der folgenden Größen des Gases ändern sich nicht? I. Druck, II. Dichte, III. Volumen",
         "fr": "On ajoute, à température constante, une quantité supplémentaire du même gaz à un gaz parfait contenu dans un récipient à piston sans frottement. Lesquelles des grandeurs suivantes du gaz ne changent pas ? I. la pression, II. la masse volumique, III. le volume",
         "ru": "К идеальному газу в сосуде с поршнем без трения при постоянной температуре добавляют ещё некоторое количество того же газа. Какие из величин — I. давление, II. плотность, III. объём — не изменяются?",
         "ar": "يُضاف مزيد من الغاز نفسه إلى غاز مثالي في وعاء ذي مكبس عديم الاحتكاك مع إبقاء درجة الحرارة ثابتة. أيّ الكميات الآتية للغاز لا تتغير؟ I. الضغط، II. الكثافة، III. الحجم",
         "zh": "保持温度不变，向带无摩擦活塞的容器中的理想气体再加入一些同种气体。气体的下列物理量中哪些不变？I. 压强，II. 密度，III. 体积",
-        "ku": "Germahî sabît tê hiştin û li gaza îdeal a di firaxeke bi pistona bêxişandin de hinekî din ji heman gazê tê zêdekirin. Li gorî vê, kîjan ji van mezinahiyên gazê naguherin? I. zext, II. çirî, III. qebare"
+        "ku": "Germahî sabît tê hiştin û li gaza îdeal a di firaxeke bi pistona bêxişandin de hinekî din ji heman gazê tê zêdekirin. Kîjan ji van mezinahiyên gazê naguherin? I. zext, II. çirî, III. qebare"
       },
       "options": [
         {

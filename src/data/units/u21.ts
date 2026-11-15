@@ -426,34 +426,34 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-f13",
       "fact": {
-        "tr": "Pil tepkimeleri genellikle ekzotermiktir; ekzotermik bir pil tepkimesinde sıcaklık artırılırsa Le Chatelier ilkesine göre denge sola kayar ve pil gerilimi düşer.",
-        "en": "Cell reactions are usually exothermic; for an exothermic cell reaction, raising the temperature shifts the equilibrium to the left (Le Chatelier's principle) and the cell voltage decreases.",
-        "de": "Zellreaktionen sind meist exotherm; wird bei einer exothermen Zellreaktion die Temperatur erhöht, verschiebt sich das Gleichgewicht nach dem Prinzip von Le Chatelier nach links und die Zellspannung sinkt.",
-        "fr": "Les réactions de pile sont généralement exothermiques ; pour une réaction de pile exothermique, une hausse de température déplace l'équilibre vers la gauche (principe de Le Chatelier) et la tension de la pile diminue.",
-        "ru": "Реакции в гальванических элементах обычно экзотермичны; если повысить температуру, то по принципу Ле Шателье равновесие экзотермической реакции смещается влево и напряжение элемента уменьшается.",
-        "ar": "تفاعلات الخلايا غالبًا طاردة للحرارة؛ وفي تفاعل خلية طارد للحرارة يؤدي رفع درجة الحرارة إلى إزاحة الاتزان نحو اليسار (مبدأ لوشاتلييه) فينخفض جهد الخلية.",
-        "zh": "电池反应通常是放热反应；对放热的电池反应，升高温度时根据勒夏特列原理平衡向左移动，电池电压降低。",
-        "ku": "Reaksiyonên pîlê bi gelemperî ekzotermîk in; di reaksiyoneke pîlê ya ekzotermîk de heke germahî were bilindkirin, li gorî prensîba Le Chatelier hevsengî ber bi çepê ve diçe û voltaja pîlê kêm dibe."
+        "tr": "Pil gerilimi elektrotların büyüklüğüne, yüzey alanına ve çözelti hacmine bağlı değildir; iyon derişimlerine ve sıcaklığa bağlıdır.",
+        "en": "A cell's voltage does not depend on the size or surface area of the electrodes or on the volume of the solutions; it depends on the ion concentrations and the temperature.",
+        "de": "Die Zellspannung hängt nicht von der Größe oder Oberfläche der Elektroden oder vom Volumen der Lösungen ab; sie hängt von den Ionenkonzentrationen und der Temperatur ab.",
+        "fr": "La tension d'une pile ne dépend ni de la taille ni de la surface des électrodes, ni du volume des solutions ; elle dépend des concentrations des ions et de la température.",
+        "ru": "Напряжение гальванического элемента не зависит от размера и площади поверхности электродов и от объёма растворов; оно зависит от концентраций ионов и температуры.",
+        "ar": "لا يعتمد جهد الخلية على حجم الأقطاب أو مساحة سطحها ولا على حجم المحاليل؛ بل يعتمد على تراكيز الأيونات وعلى درجة الحرارة.",
+        "zh": "电池电压与电极的大小、表面积以及溶液的体积无关；它取决于离子浓度和温度。",
+        "ku": "Voltaja pîlê bi mezinahî û rûbera elektrodan û bi qebareya çareseriyan ve ne girêdayî ye; bi tîrbûna îyonan û germahiyê ve girêdayî ye."
       },
       "trap": {
-        "tr": "Ekzotermik bir pil tepkimesinde sıcaklık artırılırsa pil gerilimi artar.",
-        "en": "For an exothermic cell reaction, raising the temperature increases the cell voltage.",
-        "de": "Bei einer exothermen Zellreaktion steigt die Zellspannung, wenn die Temperatur erhöht wird.",
-        "fr": "Pour une réaction de pile exothermique, une hausse de température augmente la tension de la pile.",
-        "ru": "Если реакция в элементе экзотермическая, повышение температуры увеличивает напряжение элемента.",
-        "ar": "في تفاعل خلية طارد للحرارة، يؤدي رفع درجة الحرارة إلى زيادة جهد الخلية.",
-        "zh": "对放热的电池反应，升高温度会使电池电压升高。",
-        "ku": "Di reaksiyoneke pîlê ya ekzotermîk de heke germahî were bilindkirin, voltaja pîlê zêde dibe."
+        "tr": "Elektrot yüzey alanı iki katına çıkarılırsa pil gerilimi de iki katına çıkar.",
+        "en": "If the surface area of the electrodes is doubled, the cell voltage also doubles.",
+        "de": "Wird die Elektrodenoberfläche verdoppelt, verdoppelt sich auch die Zellspannung.",
+        "fr": "Si l'on double la surface des électrodes, la tension de la pile double aussi.",
+        "ru": "Если увеличить площадь поверхности электродов вдвое, напряжение элемента тоже увеличится вдвое.",
+        "ar": "إذا ضوعفت مساحة سطح الأقطاب يتضاعف جهد الخلية أيضًا.",
+        "zh": "如果把电极表面积增大一倍，电池电压也会增大一倍。",
+        "ku": "Heke rûbera elektrodan du qat bibe, voltaja pîlê jî du qat dibe."
       },
       "whyTrapIsFalse": {
-        "tr": "Ekzotermik tepkimede sıcaklık artışı dengeyi girenlere kaydırır; bu da pilin elektron akıtma eğilimini azaltır. Bu yüzden gerilim artmaz, düşer.",
-        "en": "For an exothermic reaction, raising the temperature shifts the equilibrium toward reactants, which weakens the cell's tendency to push electrons. So the voltage falls, it does not rise.",
-        "de": "Bei einer exothermen Reaktion verschiebt Temperaturerhöhung das Gleichgewicht zu den Edukten und schwächt so die Triebkraft der Zelle. Die Spannung sinkt daher, statt zu steigen.",
-        "fr": "Pour une réaction exothermique, une hausse de température déplace l'équilibre vers les réactifs, ce qui affaiblit la tendance de la pile à faire circuler les électrons. La tension baisse donc au lieu d'augmenter.",
-        "ru": "В экзотермической реакции повышение температуры смещает равновесие в сторону исходных веществ, и способность элемента давать ток ослабевает. Поэтому напряжение падает, а не растёт.",
-        "ar": "في التفاعل الطارد للحرارة يزيح رفع درجة الحرارة الاتزان نحو المتفاعلات فيُضعف ميل الخلية إلى دفع الإلكترونات، لذا ينخفض الجهد ولا يرتفع.",
-        "zh": "对放热反应，升高温度使平衡向反应物方向移动，削弱电池推动电子流动的倾向，所以电压下降而不是升高。",
-        "ku": "Di reaksiyona ekzotermîk de bilindbûna germahiyê hevsengiyê ber bi reaktantan ve dikişîne; ev jî meyla pîlê ya herikandina elektronan kêm dike. Ji ber vê yekê voltaj zêde nabe, kêm dibe."
+        "tr": "Yüzey alanı yalnızca tepkimenin hızını ve pilden çekilebilecek akımı etkiler. Gerilim tepkimenin itici gücünü gösteren şiddet özelliğidir; iyon derişimleri ve sıcaklık değişmedikçe elektrot büyütülse de gerilim aynı kalır.",
+        "en": "Surface area only affects the reaction rate and the current that can be drawn from the cell. Voltage is an intensive property that reflects the driving force of the reaction; as long as ion concentrations and temperature are unchanged, enlarging the electrodes leaves the voltage the same.",
+        "de": "Die Oberfläche beeinflusst nur die Reaktionsgeschwindigkeit und den Strom, der der Zelle entnommen werden kann. Die Spannung ist eine intensive Größe, die die Triebkraft der Reaktion angibt; solange Ionenkonzentrationen und Temperatur gleich bleiben, ändert eine größere Elektrode die Spannung nicht.",
+        "fr": "La surface n'influe que sur la vitesse de la réaction et sur le courant que l'on peut tirer de la pile. La tension est une grandeur intensive qui traduit la force motrice de la réaction ; tant que les concentrations et la température ne changent pas, agrandir les électrodes ne la modifie pas.",
+        "ru": "Площадь поверхности влияет только на скорость реакции и на ток, который можно получить от элемента. Напряжение — интенсивная величина, отражающая движущую силу реакции; пока концентрации ионов и температура не меняются, увеличение электродов напряжение не изменяет.",
+        "ar": "تؤثر مساحة السطح فقط في سرعة التفاعل وفي التيار الذي يمكن سحبه من الخلية. أما الجهد فخاصية شدّية تعبّر عن القوة الدافعة للتفاعل؛ وما دامت تراكيز الأيونات ودرجة الحرارة ثابتة فإن تكبير الأقطاب لا يغيّر الجهد.",
+        "zh": "表面积只影响反应速率和电池能输出的电流。电压是反映反应推动力的强度性质；只要离子浓度和温度不变，增大电极不会改变电压。",
+        "ku": "Rûber tenê bandorê li leza reaksiyonê û li herikîna ku ji pîlê dikare bê kişandin dike. Voltaj taybetmendiyeke tundî ye ku hêza ajotinê ya reaksiyonê nîşan dide; heta ku tîrbûna îyonan û germahî neguherin, mezinkirina elektrodan voltajê naguherîne."
       }
     },
     {
@@ -502,24 +502,24 @@ export const unit21: ChemistryUnitSeedData = {
         "ku": "Heke pira xwê were rakirin, di çerxê de herikîn pêk nayê û pîl yekser radiweste."
       },
       "trap": {
-        "tr": "Tuz köprüsü olmadan da galvanik piller sonsuza dek çalışır.",
-        "en": "Even without a salt bridge, galvanic cells keep working forever.",
-        "de": "Auch ohne Salzbrücke arbeiten galvanische Zellen ewig weiter.",
-        "fr": "Même sans pont salin, les piles galvaniques fonctionnent indéfiniment.",
-        "ru": "Даже без солевого мостика гальванические элементы работают вечно.",
-        "ar": "حتى من دون قنطرة ملحية تعمل الخلايا الجلفانية إلى الأبد.",
-        "zh": "即使没有盐桥，原电池也能永远工作。",
-        "ku": "Bêyî pira xwê jî pîlên galvanîk her û her dixebitin."
+        "tr": "Tuz köprüsü çekilse bile elektronlar dış devredeki telden akmaya devam ettiği için pil çalışmayı sürdürür.",
+        "en": "Even if the salt bridge is removed, the cell keeps working because electrons continue to flow through the external wire.",
+        "de": "Auch wenn die Salzbrücke entfernt wird, arbeitet die Zelle weiter, weil die Elektronen weiterhin durch den äußeren Draht fließen.",
+        "fr": "Même si l'on retire le pont salin, la pile continue de fonctionner car les électrons circulent toujours dans le fil extérieur.",
+        "ru": "Даже если убрать солевой мостик, элемент продолжает работать, потому что электроны по-прежнему текут по внешнему проводу.",
+        "ar": "حتى لو أُزيل الجسر الملحي تستمر الخلية في العمل لأن الإلكترونات تواصل التدفق عبر السلك الخارجي.",
+        "zh": "即使撤去盐桥，电池仍会继续工作，因为电子仍在外电路导线中流动。",
+        "ku": "Heke pira xwê jî bê rakirin, pîl xebata xwe didomîne ji ber ku elektron di têla derve de diherikin."
       },
       "whyTrapIsFalse": {
-        "tr": "Tuz köprüsü olmazsa anot kabında pozitif, katot kabında negatif yük birikir ve elektron akışı hemen durur. Köprü olsa bile tepkime dengeye ulaşınca pil biter; hiçbir pil sonsuza dek çalışmaz.",
-        "en": "Without a salt bridge, positive charge builds up in the anode compartment and negative charge in the cathode compartment, and electron flow stops at once. Even with a bridge, the cell runs down when the reaction reaches equilibrium; no cell works forever.",
-        "de": "Ohne Salzbrücke sammelt sich im Anodenraum positive und im Kathodenraum negative Ladung, und der Elektronenfluss stoppt sofort. Auch mit Brücke ist die Zelle erschöpft, sobald das Gleichgewicht erreicht ist; keine Zelle arbeitet ewig.",
-        "fr": "Sans pont salin, une charge positive s'accumule côté anode et une charge négative côté cathode, et le flux d'électrons s'arrête aussitôt. Même avec un pont, la pile s'épuise quand la réaction atteint l'équilibre ; aucune pile ne fonctionne indéfiniment.",
-        "ru": "Без солевого мостика в анодном пространстве накапливается положительный, а в катодном — отрицательный заряд, и поток электронов сразу прекращается. Даже с мостиком элемент разряжается, когда реакция достигает равновесия; ни один элемент не работает вечно.",
-        "ar": "بدون القنطرة الملحية تتراكم شحنة موجبة في وعاء المصعد وسالبة في وعاء المهبط فيتوقف سريان الإلكترونات فورًا. وحتى مع القنطرة تنفد الخلية عندما يصل التفاعل إلى الاتزان؛ فلا توجد خلية تعمل إلى الأبد.",
-        "zh": "没有盐桥时，负极区积累正电荷、正极区积累负电荷，电子流动立即停止。即使有盐桥，反应达到平衡时电池也会耗尽；没有任何电池能永远工作。",
-        "ku": "Bêyî pira xwê di beşa anodê de bara erênî û di beşa katodê de bara neyînî kom dibe û herikîna elektronan yekser radiweste. Bi pirê jî dema reaksiyon digihîje hevsengiyê pîl diqede; tu pîl her û her naxebite."
+        "tr": "Elektronların dış devreden akabilmesi için çözeltilerdeki yük dengesinin korunması gerekir. Köprü çekilirse anot kabında pozitif, katot kabında negatif yük birikir ve elektron akışı hemen durur; iyonların göç edebileceği bir yol olmadan devre tamamlanmaz.",
+        "en": "Electrons can flow through the external circuit only if charge balance is maintained in the solutions. Without the bridge, positive charge builds up in the anode compartment and negative charge in the cathode compartment, and electron flow stops at once; without a path for ion migration the circuit is not complete.",
+        "de": "Elektronen können nur dann durch den äußeren Stromkreis fließen, wenn in den Lösungen das Ladungsgleichgewicht erhalten bleibt. Ohne Brücke sammelt sich im Anodenraum positive und im Kathodenraum negative Ladung an, und der Elektronenfluss bricht sofort ab; ohne Weg für die Ionenwanderung ist der Stromkreis nicht geschlossen.",
+        "fr": "Les électrons ne peuvent circuler dans le circuit extérieur que si l'électroneutralité des solutions est maintenue. Sans pont, une charge positive s'accumule côté anode et une charge négative côté cathode, et le flux d'électrons s'arrête aussitôt ; sans chemin pour la migration des ions, le circuit n'est pas fermé.",
+        "ru": "Электроны могут течь по внешней цепи, только если в растворах сохраняется баланс зарядов. Без мостика в анодном пространстве накапливается положительный заряд, а в катодном — отрицательный, и поток электронов сразу прекращается; без пути для миграции ионов цепь не замкнута.",
+        "ar": "لا يمكن للإلكترونات أن تتدفق في الدائرة الخارجية إلا إذا حُفظ توازن الشحنات في المحاليل. وبدون الجسر تتراكم شحنة موجبة في وعاء المصعد وشحنة سالبة في وعاء المهبط فيتوقف تدفق الإلكترونات فورًا؛ فالدائرة لا تكتمل من دون مسار لهجرة الأيونات.",
+        "zh": "只有溶液中保持电荷平衡，电子才能在外电路中流动。撤去盐桥后，负极区积累正电荷，正极区积累负电荷，电子流立即停止；没有离子迁移的通路，电路就不闭合。",
+        "ku": "Elektron tenê dikarin di devreya derve de biherikin heke di çareseriyan de hevsengiya barê bê parastin. Bê pira xwê, di firaxa anodê de barê erênî û di ya katodê de barê neyînî kom dibe û herikîna elektronan yekser disekine; bêyî rêyeke ji bo koçkirina îyonan devre temam nabe."
       }
     },
     {
@@ -580,14 +580,14 @@ export const unit21: ChemistryUnitSeedData = {
         "ku": "Katod"
       },
       "distinction": {
-        "tr": "Anotta yükseltgenme olur ve elektrodun kütlesi azalır; katotta indirgenme olur ve elektrodun kütlesi artar.",
-        "en": "Oxidation occurs at the anode and the electrode mass decreases; reduction occurs at the cathode and the electrode mass increases.",
-        "de": "An der Anode findet die Oxidation statt und die Elektrodenmasse nimmt ab; an der Kathode findet die Reduktion statt und die Elektrodenmasse nimmt zu.",
-        "fr": "L'oxydation se produit à l'anode et la masse de l'électrode diminue ; la réduction se produit à la cathode et la masse de l'électrode augmente.",
-        "ru": "Анод — электрод, на котором идёт окисление, и его масса уменьшается; катод — электрод, на котором идёт восстановление, и его масса увеличивается.",
-        "ar": "عند المصعد تحدث الأكسدة وتنقص كتلة القطب؛ وعند المهبط يحدث الاختزال وتزداد كتلة القطب.",
-        "zh": "原电池的负极发生氧化反应，电极质量通常减少；正极发生还原反应，电极质量通常增加。",
-        "ku": "Li anodê oksîdasyon pêk tê û girseya elektrodê kêm dibe; li katodê redûksiyon pêk tê û girseya elektrodê zêde dibe."
+        "tr": "Anot, yükseltgenmenin gerçekleştiği ve elektronların dış devreye verildiği elektrottur; katot ise indirgenmenin gerçekleştiği ve dış devreden gelen elektronların alındığı elektrottur.",
+        "en": "The anode is the electrode where oxidation takes place and electrons are released into the external circuit; the cathode is the electrode where reduction takes place and electrons arriving from the external circuit are taken up.",
+        "de": "Die Anode ist die Elektrode, an der die Oxidation stattfindet und Elektronen an den äußeren Stromkreis abgegeben werden; die Kathode ist die Elektrode, an der die Reduktion stattfindet und die aus dem äußeren Stromkreis ankommenden Elektronen aufgenommen werden.",
+        "fr": "L'anode est l'électrode où se produit l'oxydation et d'où les électrons partent vers le circuit extérieur ; la cathode est l'électrode où se produit la réduction et où sont captés les électrons venant du circuit extérieur.",
+        "ru": "Анод — электрод, на котором идёт окисление и с которого электроны уходят во внешнюю цепь; катод — электрод, на котором идёт восстановление и где принимаются электроны, приходящие из внешней цепи.",
+        "ar": "المصعد هو القطب الذي تحدث عنده الأكسدة وتُعطى منه الإلكترونات إلى الدائرة الخارجية؛ أما المهبط فهو القطب الذي يحدث عنده الاختزال وتُستقبل عنده الإلكترونات القادمة من الدائرة الخارجية.",
+        "zh": "阳极是发生氧化反应、并把电子释放到外电路的电极；阴极是发生还原反应、并接受从外电路流来的电子的电极。",
+        "ku": "Anod ew elektrod e ku oksîdasyon lê çêdibe û elektron jê didin devreya derve; katod jî ew elektrod e ku redûksiyon lê çêdibe û elektronên ku ji devreya derve tên lê têne wergirtin."
       }
     },
     {
@@ -659,34 +659,34 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-c04",
       "conceptA": {
-        "tr": "Galvanik Hücre (Pil)",
-        "en": "Galvanic Cell (Battery)",
-        "de": "Galvanische Zelle (Batterie)",
-        "fr": "Cellule galvanique (batterie)",
-        "ru": "Гальванический элемент (источник тока)",
-        "ar": "الخلية الجلفانية",
-        "zh": "原电池",
-        "ku": "Şaneya Galvanîk (Pîl)"
+        "tr": "Yükseltgenme Potansiyeli",
+        "en": "Oxidation Potential",
+        "de": "Oxidationspotential",
+        "fr": "Potentiel d'oxydation",
+        "ru": "Потенциал окисления",
+        "ar": "جهد التأكسد",
+        "zh": "氧化电势",
+        "ku": "Potansiyela Oksîdasyonê"
       },
       "conceptB": {
-        "tr": "Elektrolitik Hücre",
-        "en": "Electrolytic Cell",
-        "de": "Elektrolytische Zelle",
-        "fr": "Cellule électrolytique",
-        "ru": "Электролизёр (электролитическая ячейка)",
-        "ar": "خلية التحليل الكهربائي",
-        "zh": "电解池",
-        "ku": "Şaneya Elektrolîzê"
+        "tr": "İndirgenme Potansiyeli",
+        "en": "Reduction Potential",
+        "de": "Reduktionspotential",
+        "fr": "Potentiel de réduction",
+        "ru": "Потенциал восстановления",
+        "ar": "جهد الاختزال",
+        "zh": "还原电势",
+        "ku": "Potansiyela Redûksiyonê"
       },
       "distinction": {
-        "tr": "Galvanik hücre kimyasal enerjiyi istemli olarak elektrik enerjisine çevirir (Epil > 0); elektrolitik hücre elektrikle istemsiz bir tepkimeyi yürütür.",
-        "en": "A galvanic cell converts chemical energy into electrical energy spontaneously (Ecell > 0); electrolysis uses electricity to drive a non-spontaneous reaction.",
-        "de": "Eine galvanische Zelle wandelt chemische Energie freiwillig in elektrische Energie um (EZelle > 0); die Elektrolyse erzwingt mit elektrischem Strom eine nicht freiwillige Reaktion.",
-        "fr": "Une pile galvanique convertit spontanément l'énergie chimique en énergie électrique (Epile > 0) ; l'électrolyse utilise l'électricité pour réaliser une réaction non spontanée.",
-        "ru": "Гальванический элемент самопроизвольно превращает химическую энергию в электрическую (Eэл > 0); электролизёр за счёт электрического тока осуществляет несамопроизвольную реакцию.",
-        "ar": "في الخلية الجلفانية تتحول الطاقة الكيميائية إلى طاقة كهربائية تلقائيًا (Ecell > 0)؛ أما في خلية التحليل الكهربائي فتُستخدم الكهرباء لإحداث تفاعل غير تلقائي.",
-        "zh": "原电池将自发反应的化学能转化为电能(E电池 > 0)；电解池则利用电能驱动非自发反应。",
-        "ku": "Şaneya galvanîk enerjiya kîmyewî bi awayekî xweber vediguherîne enerjiya elektrîkê (Epîl > 0); şaneya elektrolîzê bi elektrîkê reaksiyoneke ne-xweber dimeşîne."
+        "tr": "Yükseltgenme potansiyeli, bir yarı hücrenin elektron verme eğilimini gösterir ve aynı yarı tepkimenin indirgenme potansiyelinin ters işaretlisidir; indirgenme potansiyeli ise elektron alma eğilimini gösterir.",
+        "en": "The oxidation potential shows a half-cell's tendency to give up electrons and equals the reduction potential of the same half-reaction with the opposite sign; the reduction potential shows the tendency to gain electrons.",
+        "de": "Das Oxidationspotential gibt die Neigung einer Halbzelle an, Elektronen abzugeben, und ist das Reduktionspotential derselben Halbreaktion mit umgekehrtem Vorzeichen; das Reduktionspotential gibt die Neigung an, Elektronen aufzunehmen.",
+        "fr": "Le potentiel d'oxydation traduit la tendance d'une demi-pile à céder des électrons et vaut le potentiel de réduction de la même demi-réaction changé de signe ; le potentiel de réduction traduit la tendance à capter des électrons.",
+        "ru": "Потенциал окисления показывает склонность полуэлемента отдавать электроны и равен потенциалу восстановления той же полуреакции с противоположным знаком; потенциал восстановления показывает склонность принимать электроны.",
+        "ar": "جهد التأكسد يبيّن ميل نصف الخلية إلى فقد الإلكترونات، ويساوي جهد الاختزال لنصف التفاعل نفسه بإشارة معاكسة؛ أما جهد الاختزال فيبيّن الميل إلى اكتساب الإلكترونات.",
+        "zh": "氧化电势表示半电池失去电子的倾向，等于同一半反应还原电势的相反数；还原电势表示得到电子的倾向。",
+        "ku": "Potansiyela oksîdasyonê meyla nîvşaneyekê ya dayîna elektronan nîşan dide û bi nîşana berevajî wekhevî potansiyela redûksiyonê ya heman nîvreaksiyonê ye; potansiyela redûksiyonê jî meyla girtina elektronan nîşan dide."
       }
     },
     {
@@ -745,14 +745,14 @@ export const unit21: ChemistryUnitSeedData = {
         "ku": "Elektrolît"
       },
       "distinction": {
-        "tr": "Elektrot, elektronların alınıp verildiği iletken katıdır (örn. metal çubuk); elektrolit, akımı iyonlar aracılığıyla ileten çözelti veya eriyiktir.",
-        "en": "An electrode is the conducting solid at which electrons are gained or lost (e.g., a metal rod); an electrolyte is a solution or melt that conducts current by means of ions.",
-        "de": "Eine Elektrode ist der leitende Festkörper, an dem Elektronen aufgenommen oder abgegeben werden (z. B. ein Metallstab); ein Elektrolyt ist eine Lösung oder Schmelze, die den Strom durch Ionen leitet.",
-        "fr": "Une électrode est le solide conducteur où les électrons sont captés ou cédés (par ex. une tige métallique) ; un électrolyte est une solution ou un sel fondu qui conduit le courant grâce aux ions.",
-        "ru": "Электрод — проводящее твёрдое тело, на котором принимаются или отдаются электроны (например, металлический стержень); электролит — раствор или расплав, проводящий ток за счёт ионов.",
-        "ar": "القطب جسم صلب موصل تُكتسب عنده الإلكترونات أو تُفقد (مثل قضيب فلزي)؛ أما الإلكتروليت فهو محلول أو مصهور يوصل التيار بواسطة الأيونات.",
-        "zh": "电极是得失电子的导电固体（如金属棒）；电解质是依靠离子导电的溶液或熔融物。",
-        "ku": "Elektrod madeya hişk a guhêzbar e ku elektron li ser wê tên wergirtin an dayîn (mînak çîpeke metalî); elektrolît çareserî an madeyeke bi germê helandî ye ku herikînê bi riya îyonan diguhêze."
+        "tr": "Elektrot, elektrolite daldırılan ve yüzeyinde elektron alışverişi gerçekleşen iletken katıdır (örn. metal çubuk) ve anot ya da katot olarak görev yapar; elektrolit ise akımı iyonlar aracılığıyla ileten çözelti veya eriyiktir.",
+        "en": "An electrode is the conducting solid dipped into the electrolyte, on whose surface electrons are exchanged (e.g., a metal rod), and it serves as either the anode or the cathode; an electrolyte is a solution or melt that conducts current by means of ions.",
+        "de": "Eine Elektrode ist der in den Elektrolyten eintauchende leitende Festkörper, an dessen Oberfläche Elektronen ausgetauscht werden (z. B. ein Metallstab), und sie dient als Anode oder als Kathode; ein Elektrolyt ist eine Lösung oder Schmelze, die den Strom durch Ionen leitet.",
+        "fr": "Une électrode est le solide conducteur plongé dans l'électrolyte, à la surface duquel s'échangent les électrons (par ex. une tige métallique), et elle joue le rôle d'anode ou de cathode ; un électrolyte est une solution ou un sel fondu qui conduit le courant grâce aux ions.",
+        "ru": "Электрод — проводящее твёрдое тело, погружённое в электролит, на поверхности которого происходит обмен электронами (например, металлический стержень); он служит анодом или катодом; электролит — раствор или расплав, проводящий ток за счёт ионов.",
+        "ar": "القطب جسم صلب موصل يُغمس في الإلكتروليت ويحدث على سطحه تبادل الإلكترونات (مثل قضيب فلزي)، ويعمل مصعدًا أو مهبطًا؛ أما الإلكتروليت فهو محلول أو مصهور يوصل التيار بواسطة الأيونات.",
+        "zh": "电极是浸入电解质中、在其表面进行电子交换的导电固体（如金属棒），可作阳极或阴极；电解质是依靠离子导电的溶液或熔融物。",
+        "ku": "Elektrod hişkeke guhêzbar e ku di elektrolîtê de tê kirin û li ser rûyê wê danûstandina elektronan pêk tê (mînak çîpeke metalî), û wek anod an katod kar dike; elektrolît jî çareserî an helandiyeke ku herikînê bi rêya îyonan diguhêze ye."
       }
     },
     {
@@ -826,55 +826,55 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-s01",
       "title": {
-        "tr": "Pil Potansiyeli Hesaplama Adımları",
-        "en": "Steps for Calculating Cell Potential",
-        "de": "Schritte zur Berechnung des Zellpotentials",
-        "fr": "Étapes du calcul du potentiel de pile",
-        "ru": "Этапы расчёта потенциала элемента",
-        "ar": "خطوات حساب جهد الخلية",
-        "zh": "电池电势的计算步骤",
-        "ku": "Gavên Hesabkirina Potansiyela Pîlê"
+        "tr": "Standart Pil Potansiyelinin Hesaplanması",
+        "en": "Calculation of the Standard Cell Potential",
+        "de": "Berechnung des Standardzellpotentials",
+        "fr": "Calcul du potentiel standard de pile",
+        "ru": "Расчёт стандартного потенциала элемента",
+        "ar": "حساب جهد الخلية القياسي",
+        "zh": "标准电池电势的计算",
+        "ku": "Hesabkirina Potansiyela Standard a Pîlê"
       },
       "steps": [
         {
-          "tr": "Yükseltgenme potansiyellerini karşılaştırıp anodu belirle",
-          "en": "Compare oxidation potentials and identify the anode",
-          "de": "Vergleichen Sie Oxidationspotentiale und identifizieren Sie die Anode",
-          "fr": "Comparer les potentiels d'oxydation et identifier l'anode",
-          "ru": "Сравнить потенциалы окисления и определить анод",
-          "ar": "قارن جهود التأكسد وحدد المصعد",
-          "zh": "比较氧化电势，确定负极",
-          "ku": "Potansiyelên oksîdasyonê bide ber hev û anodê diyar bike"
+          "tr": "Yarı hücrelerin standart indirgenme potansiyelleri karşılaştırılır; potansiyeli küçük olan yarı hücre anot seçilir",
+          "en": "The standard reduction potentials of the half-cells are compared; the half-cell with the lower potential is taken as the anode",
+          "de": "Die Standardreduktionspotentiale der Halbzellen werden verglichen; die Halbzelle mit dem kleineren Potential wird als Anode gewählt",
+          "fr": "On compare les potentiels standard de réduction des demi-piles ; la demi-pile de plus faible potentiel est choisie comme anode",
+          "ru": "Сравнивают стандартные потенциалы восстановления полуэлементов; полуэлемент с меньшим потенциалом выбирают анодом",
+          "ar": "تُقارن جهود الاختزال القياسية لأنصاف الخلايا؛ ويُختار نصف الخلية ذو الجهد الأصغر مصعدًا",
+          "zh": "比较两个半电池的标准还原电势，电势较低的半电池作为负极",
+          "ku": "Potansiyelên redûksiyonê yên standard ên nîvşaneyan têne berhevkirin; nîvşaneya bi potansiyela piçûktir wek anod tê hilbijartin"
         },
         {
-          "tr": "Katot indirgenme yarı tepkimesini yaz",
-          "en": "Write the cathode reduction half reaction",
-          "de": "Schreiben Sie die Halbreaktion der Kathodenreduktion auf",
-          "fr": "Écrire la demi-réaction de réduction cathodique",
-          "ru": "Записать полуреакцию восстановления на катоде",
-          "ar": "اكتب نصف تفاعل اختزال المهبط",
-          "zh": "写出正极的还原半反应",
-          "ku": "Nîvreaksiyona redûksiyonê ya katodê binivîse"
+          "tr": "Anodun yarı tepkimesi yükseltgenme yönünde yazılır ve potansiyelinin işareti çevrilir",
+          "en": "The anode half-reaction is written in the oxidation direction and the sign of its potential is reversed",
+          "de": "Die Anodenhalbreaktion wird in Oxidationsrichtung geschrieben und das Vorzeichen ihres Potentials umgekehrt",
+          "fr": "La demi-réaction anodique est écrite dans le sens de l'oxydation et le signe de son potentiel est inversé",
+          "ru": "Полуреакцию на аноде записывают в направлении окисления и меняют знак её потенциала",
+          "ar": "يُكتب نصف تفاعل المصعد باتجاه الأكسدة ويُعكس إشارة جهده",
+          "zh": "把负极半反应写成氧化方向，并把其电势的符号反过来",
+          "ku": "Nîvreaksiyona anodê bi alê oksîdasyonê tê nivîsandin û nîşana potansiyela wê tê guhertin"
         },
         {
-          "tr": "E°pil = E°yüks(anot) + E°ind(katot) ile standart gerilimi bul",
-          "en": "Find the standard voltage with E°cell = E°ox(anode) + E°red(cathode)",
-          "de": "Standardspannung mit E°Zelle = E°Ox(Anode) + E°Red(Kathode) berechnen",
-          "fr": "Calculer la tension standard avec E°pile = E°ox(anode) + E°réd(cathode)",
-          "ru": "Найти стандартное напряжение по формуле E°эл = E°ок(анод) + E°восст(катод)",
-          "ar": "احسب الجهد القياسي من E°cell = E°ox(المصعد) + E°red(المهبط)",
-          "zh": "用 E°电池 = E°氧化(负极) + E°还原(正极) 求标准电压",
-          "ku": "Bi E°pîl = E°oks(anod) + E°red(katod) voltaja standard bibîne"
+          "tr": "Anodun yükseltgenme potansiyeli ile katodun indirgenme potansiyeli toplanarak E°pil bulunur (yarı tepkime katsayılarıyla çarpılmaz)",
+          "en": "E°cell is found by adding the oxidation potential of the anode to the reduction potential of the cathode (without multiplying by the half-reaction coefficients)",
+          "de": "E°Zelle ergibt sich aus der Summe von Oxidationspotential der Anode und Reduktionspotential der Kathode (ohne Multiplikation mit den Koeffizienten der Halbreaktionen)",
+          "fr": "On obtient E°pile en ajoutant le potentiel d'oxydation de l'anode au potentiel de réduction de la cathode (sans multiplier par les coefficients des demi-réactions)",
+          "ru": "E°эл находят, складывая потенциал окисления анода и потенциал восстановления катода (без умножения на коэффициенты полуреакций)",
+          "ar": "يُحسب E°cell بجمع جهد تأكسد المصعد وجهد اختزال المهبط (دون الضرب في معاملات أنصاف التفاعلات)",
+          "zh": "把负极的氧化电势与正极的还原电势相加得到 E°电池（不乘半反应的系数）",
+          "ku": "E°pîl bi berhevkirina potansiyela oksîdasyonê ya anodê û potansiyela redûksiyonê ya katodê tê dîtin (bi kêşeyên nîvreaksiyonan nayê zêdekirin)"
         },
         {
-          "tr": "E°pil > 0 ise tepkimenin istemli olduğuna karar ver",
-          "en": "If E°cell > 0, conclude that the reaction is spontaneous",
-          "de": "Ist E°Zelle > 0, auf eine freiwillige (spontane) Reaktion schließen",
-          "fr": "Si E°pile > 0, conclure que la réaction est spontanée",
-          "ru": "Если E°эл > 0, сделать вывод, что реакция самопроизвольна",
-          "ar": "إذا كان E°cell > 0 فاستنتج أن التفاعل تلقائي",
-          "zh": "若 E°电池 > 0，则判断反应为自发反应",
-          "ku": "Heke E°pîl > 0 be, biryar bide ku reaksiyon xweber e"
+          "tr": "Bulunan E°pil pozitifse yazılan pil tepkimesinin standart koşullarda istemli olduğuna karar verilir",
+          "en": "If the E°cell obtained is positive, it is concluded that the written cell reaction is spontaneous under standard conditions",
+          "de": "Ist das erhaltene E°Zelle positiv, wird geschlossen, dass die formulierte Zellreaktion unter Standardbedingungen freiwillig abläuft",
+          "fr": "Si l'E°pile obtenu est positif, on conclut que la réaction de pile écrite est spontanée dans les conditions standard",
+          "ru": "Если полученное E°эл положительно, делают вывод, что записанная реакция самопроизвольна при стандартных условиях",
+          "ar": "إذا كان E°cell الناتج موجبًا يُستنتج أن تفاعل الخلية المكتوب تلقائي في الظروف القياسية",
+          "zh": "若求得的 E°电池 为正值，就判断所写的电池反应在标准状态下是自发的",
+          "ku": "Heke E°pîl a hatî dîtin erênî be, tê biryardan ku reaksiyona pîlê ya nivîsandî di şertên standard de xweber e"
         }
       ]
     },
@@ -1048,153 +1048,239 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin01",
       "stem": {
-        "tr": "Zn(k) | Zn2+(1 M) || Cu2+(1 M) | Cu(k) Daniell pili için E°(Zn2+/Zn) = -0,76 V ve E°(Cu2+/Cu) = +0,34 V olduğuna göre standart pil potansiyeli kaç volttur?",
-        "en": "For the Daniell cell Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s), given E°(Zn2+/Zn) = -0.76 V and E°(Cu2+/Cu) = +0.34 V, what is the standard cell potential in volts?",
-        "de": "Für das Daniell-Element Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) gilt E°(Zn2+/Zn) = -0,76 V und E°(Cu2+/Cu) = +0,34 V. Wie groß ist das Standardzellpotential in Volt?",
-        "fr": "Pour la pile Daniell Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s), avec E°(Zn2+/Zn) = -0,76 V et E°(Cu2+/Cu) = +0,34 V, quel est le potentiel standard de la pile en volts ?",
-        "ru": "Для элемента Даниэля Zn(тв) | Zn2+(1 M) || Cu2+(1 M) | Cu(тв) при E°(Zn2+/Zn) = -0,76 В и E°(Cu2+/Cu) = +0,34 В чему равен стандартный потенциал элемента (в вольтах)?",
-        "ar": "لخلية دانيال Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s)، إذا كان E°(Zn2+/Zn) = -0.76 V و E°(Cu2+/Cu) = +0.34 V، فكم فولتًا يبلغ جهد الخلية القياسي؟",
-        "zh": "对于丹尼尔电池 Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s)，已知 E°(Zn2+/Zn) = -0.76 V，E°(Cu2+/Cu) = +0.34 V，其标准电池电势为多少伏？",
-        "ku": "Ji bo pîla Daniell Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s), heke E°(Zn2+/Zn) = -0,76 V û E°(Cu2+/Cu) = +0,34 V be, potansiyela standard a pîlê çend volt e?"
+        "tr": "Şekilde X ve Y metalleriyle kurulmuş bir galvanik pil görülmektedir; pil çalışırken elektronlar dış devrede okla gösterilen yönde akmaktadır.\nBu pil ile ilgili;\nI. Y metalinin aktifliği X metalininkinden büyüktür.\nII. Tuz köprüsündeki anyonlar Y2+ çözeltisinin bulunduğu kaba doğru göç eder.\nIII. Pil çalıştıkça X2+ iyonlarının derişimi artar.\nyargılarından hangileri doğrudur?",
+        "en": "The figure shows a galvanic cell built with metals X and Y; while the cell operates, electrons flow in the external circuit in the direction of the arrow.\nWhich of the following statements about this cell are correct?\nI. Metal Y is more active than metal X.\nII. The anions of the salt bridge migrate toward the container holding the Y2+ solution.\nIII. As the cell operates, the concentration of X2+ ions increases.",
+        "de": "Die Abbildung zeigt eine galvanische Zelle aus den Metallen X und Y; während die Zelle arbeitet, fließen die Elektronen im äußeren Stromkreis in Pfeilrichtung.\nWelche der folgenden Aussagen über diese Zelle sind richtig?\nI. Metall Y ist aktiver (unedler) als Metall X.\nII. Die Anionen der Salzbrücke wandern zu dem Gefäß mit der Y2+-Lösung.\nIII. Während die Zelle arbeitet, steigt die Konzentration der X2+-Ionen.",
+        "fr": "La figure représente une pile galvanique construite avec les métaux X et Y ; quand la pile fonctionne, les électrons circulent dans le circuit extérieur dans le sens de la flèche.\nParmi les affirmations suivantes sur cette pile, lesquelles sont correctes ?\nI. Le métal Y est plus actif (plus réducteur) que le métal X.\nII. Les anions du pont salin migrent vers le récipient contenant la solution de Y2+.\nIII. Au cours du fonctionnement, la concentration des ions X2+ augmente.",
+        "ru": "На рисунке изображён гальванический элемент из металлов X и Y; при работе элемента электроны во внешней цепи движутся в направлении стрелки.\nКакие утверждения об этом элементе верны?\nI. Металл Y активнее металла X.\nII. Анионы солевого мостика мигрируют к сосуду с раствором Y2+.\nIII. По мере работы элемента концентрация ионов X2+ увеличивается.",
+        "ar": "يبيّن الشكل خلية جلفانية مكوّنة من الفلزين X وY؛ وفي أثناء عمل الخلية تتدفق الإلكترونات في الدائرة الخارجية في اتجاه السهم.\nأيٌّ من العبارات الآتية عن هذه الخلية صحيحة؟\nI. الفلز Y أنشط من الفلز X.\nII. تهاجر أنيونات الجسر الملحي نحو الوعاء الذي يحتوي محلول Y2+.\nIII. يزداد تركيز أيونات X2+ مع استمرار عمل الخلية.",
+        "zh": "图中是用金属 X 和 Y 组成的原电池；电池工作时，外电路中电子沿箭头方向流动。\n关于该电池的下列说法中，哪些正确？\nI. 金属 Y 比金属 X 活泼。\nII. 盐桥中的阴离子向盛有 Y2+ 溶液的容器迁移。\nIII. 随着电池工作，X2+ 离子的浓度增大。",
+        "ku": "Di şeklê de pîleke galvanîk a bi metalên X û Y hatiye avakirin xuya dike; dema pîl dixebite, elektron di devreya derve de li gorî rêya tîrê diherikin.\nDerbarê vê pîlê de;\nI. Çalakiya metala Y ji ya metala X mezintir e.\nII. Anyonên pira xwê ber bi firaxa ku çareseriya Y2+ tê de ye ve koç dikin.\nIII. Her ku pîl dixebite, tîrbûna îyonên X2+ zêde dibe.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
-          "tr": "1,10 V",
-          "en": "1.10 V",
-          "de": "1,10 V",
-          "fr": "1,10 V",
-          "ru": "1,10 В",
-          "ar": "1.10 V",
-          "zh": "1.10 V",
-          "ku": "1,10 V"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "0,42 V",
-          "en": "0.42 V",
-          "de": "0,42 V",
-          "fr": "0,42 V",
-          "ru": "0,42 В",
-          "ar": "0.42 V",
-          "zh": "0.42 V",
-          "ku": "0,42 V"
+          "tr": "Yalnız III",
+          "en": "III only",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅 III",
+          "ku": "Tenê III"
         },
         {
-          "tr": "-1,10 V",
-          "en": "-1.10 V",
-          "de": "-1,10 V",
-          "fr": "-1,10 V",
-          "ru": "-1,10 В",
-          "ar": "-1.10 V",
-          "zh": "-1.10 V",
-          "ku": "-1,10 V"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "0,76 V",
-          "en": "0.76 V",
-          "de": "0,76 V",
-          "fr": "0,76 V",
-          "ru": "0,76 В",
-          "ar": "0.76 V",
-          "zh": "0.76 V",
-          "ku": "0,76 V"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         },
         {
-          "tr": "-0,42 V",
-          "en": "-0.42 V",
-          "de": "-0,42 V",
-          "fr": "-0,42 V",
-          "ru": "-0,42 В",
-          "ar": "-0.42 V",
-          "zh": "-0.42 V",
-          "ku": "-0,42 V"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Zn'nin indirgenme potansiyeli daha küçük olduğundan Zn anottur: E°yüks(Zn) = +0,76 V. Cu2+ katotta indirgenir: E°ind = +0,34 V. E°pil = 0,76 + 0,34 = 1,10 V. Çinkonun potansiyelinin işaretini çevirmeden toplamak (0,34 - 0,76) -0,42 V sonucunu verir; kendiliğinden çalışan bir pilde E°pil negatif olamaz.",
-        "en": "Zn has the lower reduction potential, so Zn is the anode: E°ox(Zn) = +0.76 V. Cu2+ is reduced at the cathode: E°red = +0.34 V. E°cell = 0.76 + 0.34 = 1.10 V. Adding without reversing the sign of zinc's potential (0.34 - 0.76) gives -0.42 V; a cell that runs spontaneously cannot have a negative E°cell.",
-        "de": "Zn hat das kleinere Reduktionspotential und ist daher die Anode: E°Ox(Zn) = +0,76 V. Cu2+ wird an der Kathode reduziert: E°Red = +0,34 V. E°Zelle = 0,76 + 0,34 = 1,10 V. Addiert man, ohne das Vorzeichen des Zinkpotentials umzukehren (0,34 - 0,76), erhält man -0,42 V; bei einer freiwillig arbeitenden Zelle kann E°Zelle nicht negativ sein.",
-        "fr": "Zn a le plus petit potentiel de réduction, c'est donc l'anode : E°ox(Zn) = +0,76 V. Cu2+ est réduit à la cathode : E°réd = +0,34 V. E°pile = 0,76 + 0,34 = 1,10 V. Additionner sans inverser le signe du potentiel du zinc (0,34 - 0,76) donne -0,42 V ; or une pile qui fonctionne spontanément ne peut pas avoir un E°pile négatif.",
-        "ru": "У Zn потенциал восстановления меньше, поэтому Zn — анод: E°ок(Zn) = +0,76 В. Cu2+ восстанавливается на катоде: E°восст = +0,34 В. E°эл = 0,76 + 0,34 = 1,10 В. Если сложить, не изменив знак потенциала цинка (0,34 - 0,76), получится -0,42 В; у самопроизвольно работающего элемента E°эл не может быть отрицательным.",
-        "ar": "للخارصين Zn جهد الاختزال الأصغر، فهو المصعد: E°ox(Zn) = +0.76 V. ويُختزل Cu2+ عند المهبط: E°red = +0.34 V. إذن E°cell = 0.76 + 0.34 = 1.10 V. أما الجمع دون عكس إشارة جهد الخارصين (0.34 - 0.76) فيعطي -0.42 V؛ ولا يمكن أن يكون E°cell سالبًا في خلية تعمل تلقائيًا.",
-        "zh": "Zn 的还原电势较小，所以 Zn 是负极：E°氧化(Zn) = +0.76 V。Cu2+ 在正极被还原：E°还原 = +0.34 V。E°电池 = 0.76 + 0.34 = 1.10 V。若不改变锌电势的符号直接相加(0.34 - 0.76)，会得到 -0.42 V；自发工作的电池 E°电池 不可能为负。",
-        "ku": "Ji ber ku potansiyela redûksiyonê ya Zn piçûktir e, Zn anod e: E°oks(Zn) = +0,76 V. Cu2+ li katodê redûkte dibe: E°red = +0,34 V. E°pîl = 0,76 + 0,34 = 1,10 V. Berhevkirina bêyî guhertina nîşana potansiyela zinkê (0,34 - 0,76) -0,42 V dide; di pîleke ku bi xwe dixebite de E°pîl nikare neyînî be."
+        "tr": "Şekilde elektronlar dış devrede Y elektrottan X elektroda akmaktadır. Elektronlar yükseltgenmenin olduğu anottan çıktığına göre Y anot, X katottur. I doğru: anot olan, yani elektron veren Y daha aktiftir. II doğru: anot kabında (Y2+ çözeltisi) Y → Y2+ + 2e- ile pozitif yük artar; bunu dengelemek için tuz köprüsünün anyonları bu kaba göç eder. III yanlış: katotta X2+ + 2e- → X tepkimesiyle X2+ iyonları harcanır, derişimleri azalır. Ok yönünü göz ardı edip soldaki elektrodu anot sanmak tüm yargıları ters değerlendirmeye yol açar.",
+        "en": "In the figure, electrons flow in the external circuit from electrode Y to electrode X. Since electrons leave the anode, where oxidation occurs, Y is the anode and X the cathode. I is correct: Y, the anode that gives up electrons, is the more active metal. II is correct: in the anode compartment (Y2+ solution) positive charge builds up through Y → Y2+ + 2e-, so the anions of the salt bridge migrate there to balance it. III is wrong: at the cathode X2+ + 2e- → X consumes X2+ ions, so their concentration decreases. Ignoring the arrow and assuming the left electrode is the anode reverses every judgement.",
+        "de": "In der Abbildung fließen die Elektronen im äußeren Stromkreis von Elektrode Y zu Elektrode X. Da die Elektronen die Anode verlassen, an der die Oxidation stattfindet, ist Y die Anode und X die Kathode. I ist richtig: Y, die Elektronen abgebende Anode, ist das aktivere Metall. II ist richtig: Im Anodenraum (Y2+-Lösung) entsteht durch Y → Y2+ + 2e- ein Überschuss an positiver Ladung; zum Ausgleich wandern die Anionen der Salzbrücke dorthin. III ist falsch: An der Kathode werden durch X2+ + 2e- → X X2+-Ionen verbraucht, ihre Konzentration sinkt. Wer den Pfeil übersieht und die linke Elektrode für die Anode hält, beurteilt alle Aussagen umgekehrt.",
+        "fr": "Sur la figure, les électrons circulent dans le circuit extérieur de l'électrode Y vers l'électrode X. Comme les électrons quittent l'anode, siège de l'oxydation, Y est l'anode et X la cathode. I est correcte : Y, l'anode qui cède des électrons, est le métal le plus actif. II est correcte : dans le compartiment anodique (solution de Y2+), Y → Y2+ + 2e- crée un excès de charge positive ; les anions du pont salin y migrent pour le compenser. III est fausse : à la cathode, X2+ + 2e- → X consomme les ions X2+, dont la concentration diminue. Ignorer la flèche et supposer que l'électrode de gauche est l'anode inverse toutes les conclusions.",
+        "ru": "На рисунке электроны во внешней цепи текут от электрода Y к электроду X. Поскольку электроны выходят из анода, где идёт окисление, Y — анод, X — катод. I верно: Y, анод, отдающий электроны, — более активный металл. II верно: в анодном пространстве (раствор Y2+) по реакции Y → Y2+ + 2e- накапливается положительный заряд, и для его компенсации туда мигрируют анионы солевого мостика. III неверно: на катоде по реакции X2+ + 2e- → X ионы X2+ расходуются, их концентрация уменьшается. Если не учитывать стрелку и считать левый электрод анодом, все выводы получатся обратными.",
+        "ar": "في الشكل تتدفق الإلكترونات في الدائرة الخارجية من القطب Y إلى القطب X. وبما أن الإلكترونات تخرج من المصعد حيث تحدث الأكسدة، فإن Y هو المصعد وX هو المهبط. العبارة I صحيحة: Y، المصعد الذي يفقد الإلكترونات، هو الفلز الأنشط. العبارة II صحيحة: في وعاء المصعد (محلول Y2+) تزداد الشحنة الموجبة بالتفاعل Y → Y2+ + 2e-، فتهاجر أنيونات الجسر الملحي إليه لمعادلتها. العبارة III خاطئة: عند المهبط تُستهلك أيونات X2+ بالتفاعل X2+ + 2e- → X فيقل تركيزها. وتجاهل اتجاه السهم واعتبار القطب الأيسر مصعدًا يقلب كل الأحكام.",
+        "zh": "图中电子在外电路中从电极 Y 流向电极 X。电子从发生氧化的负极流出，所以 Y 是负极，X 是正极。I 正确：失去电子的负极 Y 是较活泼的金属。II 正确：负极区（Y2+ 溶液）因 Y → Y2+ + 2e- 而正电荷增多，盐桥中的阴离子向该处迁移以平衡电荷。III 错误：正极上 X2+ + 2e- → X 消耗 X2+，其浓度减小。忽视箭头方向、把左边电极当作负极，会使所有判断都颠倒。",
+        "ku": "Di şeklê de elektron di devreya derve de ji elektroda Y ber bi elektroda X ve diherikin. Ji ber ku elektron ji anoda ku oksîdasyon lê çêdibe derdikevin, Y anod e û X katod e. I rast e: Y, anoda ku elektronan dide, metala çalaktir e. II rast e: di firaxa anodê de (çareseriya Y2+) bi Y → Y2+ + 2e- barê erênî zêde dibe; ji bo hevsengkirinê anyonên pira xwê diçin wê firaxê. III şaş e: li katodê bi X2+ + 2e- → X îyonên X2+ têne xerckirin û tîrbûna wan kêm dibe. Paşguhkirina rêya tîrê û hesibandina elektroda çepê wek anod hemû biryaran berevajî dike."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 210,
+        "markup": "<path d=\"M69 60 V35 H291 V60\" class=\"qf-line\"/><circle cx=\"180\" cy=\"35\" r=\"13\" class=\"qf-fill\"/><text x=\"180\" y=\"39\" text-anchor=\"middle\" class=\"qf-strong\">V</text><path d=\"M250 18 H214\" class=\"qf-stroke-accent\"/><polygon points=\"206,18 216,13 216,23\" class=\"qf-accent\"/><text x=\"258\" y=\"22\" class=\"qf-strong\">e⁻</text><rect x=\"30\" y=\"95\" width=\"110\" height=\"105\" class=\"qf-fill\"/><rect x=\"31\" y=\"115\" width=\"108\" height=\"84\" class=\"qf-water\"/><rect x=\"220\" y=\"95\" width=\"110\" height=\"105\" class=\"qf-fill\"/><rect x=\"221\" y=\"115\" width=\"108\" height=\"84\" class=\"qf-water\"/><path d=\"M108 165 V82 H252 V165\" class=\"qf-line\"/><path d=\"M120 165 V94 H240 V165\" class=\"qf-line\"/><text x=\"180\" y=\"70\" text-anchor=\"middle\" class=\"qf-small\">{{bridge}}</text><rect x=\"62\" y=\"60\" width=\"14\" height=\"112\" class=\"qf-solid\"/><rect x=\"284\" y=\"60\" width=\"14\" height=\"112\" class=\"qf-solid\"/><text x=\"50\" y=\"82\" text-anchor=\"middle\" class=\"qf-big\">X</text><text x=\"310\" y=\"82\" text-anchor=\"middle\" class=\"qf-big\">Y</text><text x=\"85\" y=\"192\" text-anchor=\"middle\">X²⁺ (1 M)</text><text x=\"275\" y=\"192\" text-anchor=\"middle\">Y²⁺ (1 M)</text>",
+        "labels": {
+          "bridge": {
+            "tr": "tuz köprüsü",
+            "en": "salt bridge",
+            "de": "Salzbrücke",
+            "fr": "pont salin",
+            "ru": "солевой мостик",
+            "ar": "جسر ملحي",
+            "zh": "盐桥",
+            "ku": "pira xwê"
+          }
+        }
       }
     },
     {
       "id": "u21-twin02",
       "stem": {
-        "tr": "Çalışmakta olan bir galvanik pilde tuz köprüsündeki iyonların hareketi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
-        "en": "Which statement is true regarding the movement of ions across the salt bridge in a standard electrochemical cell?",
-        "de": "Welche Aussage trifft auf die Bewegung von Ionen über die Salzbrücke in einer elektrochemischen Standardzelle zu?",
-        "fr": "Quelle affirmation est vraie concernant le mouvement des ions à travers le pont salin dans une cellule électrochimique standard ?",
-        "ru": "Какое утверждение о движении ионов солевого мостика в работающем гальваническом элементе верно?",
-        "ar": "أيّ العبارات الآتية صحيحة بشأن حركة الأيونات في القنطرة الملحية لخلية جلفانية في أثناء عملها؟",
-        "zh": "关于标准原电池中盐桥内离子的迁移，下列说法正确的是哪一项？",
-        "ku": "Di pîleke galvanîk a ku dixebite de, derbarê tevgera îyonên pira xwê de kîjan ji van gotinan rast e?"
+        "tr": "25 °C'de çalışan Zn(k) | Zn2+(1 M) || Cu2+(1 M) | Cu(k) pilinin geriliminin zamanla değişimi şekildeki grafikte verilmiştir.\nt1 anında pile aşağıdaki işlemlerden hangisi uygulanmış olabilir?",
+        "en": "The graph shows how the voltage of the cell Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s), operating at 25 °C, changes with time.\nWhich of the following operations could have been applied to the cell at time t1?",
+        "de": "Das Diagramm zeigt, wie sich die Spannung der bei 25 °C arbeitenden Zelle Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) mit der Zeit ändert.\nWelcher der folgenden Eingriffe kann zum Zeitpunkt t1 an der Zelle vorgenommen worden sein?",
+        "fr": "Le graphique montre l'évolution au cours du temps de la tension de la pile Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) fonctionnant à 25 °C.\nLaquelle des opérations suivantes a pu être effectuée sur la pile à l'instant t1 ?",
+        "ru": "На графике показано изменение во времени напряжения элемента Zn(тв) | Zn2+(1 M) || Cu2+(1 M) | Cu(тв), работающего при 25 °C.\nКакое из следующих действий могло быть выполнено с элементом в момент t1?",
+        "ar": "يبيّن الرسم البياني تغيّر جهد الخلية Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) العاملة عند 25 °C مع الزمن.\nأيّ العمليات الآتية يمكن أن تكون قد أُجريت على الخلية عند اللحظة t1؟",
+        "zh": "图中给出了在 25 °C 下工作的 Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) 电池的电压随时间的变化。\n在 t1 时刻，对电池可能进行了下列哪项操作？",
+        "ku": "Di grafîka şeklê de guherîna voltaja pîla Zn(r) | Zn2+(1 M) || Cu2+(1 M) | Cu(r) ya ku li 25 °C dixebite li gorî demê hatiye dayîn.\nDi dema t1 de dibe ku kîjan ji van karan li pîlê hatibe kirin?"
       },
       "options": [
         {
-          "tr": "Anyonlar anoda, katyonlar katoda göç eder",
-          "en": "Anions migrate to the anode, cations migrate to the cathode",
-          "de": "Anionen wandern zur Anode, Kationen zur Kathode",
-          "fr": "Les anions migrent vers l'anode, les cations migrent vers la cathode",
-          "ru": "Анионы перемещаются к аноду, катионы — к катоду",
-          "ar": "تهاجر الأنيونات نحو المصعد والكاتيونات نحو المهبط",
-          "zh": "阴离子向负极区迁移，阳离子向正极区迁移",
-          "ku": "Anyon koçî anodê, katyon koçî katodê dikin"
+          "tr": "Anot kabına saf su eklemek",
+          "en": "Adding pure water to the anode compartment",
+          "de": "Reines Wasser in den Anodenraum geben",
+          "fr": "Ajouter de l'eau pure dans le compartiment anodique",
+          "ru": "Добавить чистую воду в анодное пространство",
+          "ar": "إضافة ماء نقي إلى وعاء المصعد",
+          "zh": "向负极区加入纯水",
+          "ku": "Zêdekirina ava paqij li firaxa anodê"
         },
         {
-          "tr": "Katyonlar anoda, anyonlar katoda göç eder",
-          "en": "Cations migrate to the anode, anions migrate to the cathode",
-          "de": "Kationen wandern zur Anode, Anionen wandern zur Kathode",
-          "fr": "Les cations migrent vers l'anode, les anions migrent vers la cathode",
-          "ru": "Катионы перемещаются к аноду, анионы — к катоду",
-          "ar": "تهاجر الكاتيونات نحو المصعد والأنيونات نحو المهبط",
-          "zh": "阳离子向负极区迁移，阴离子向正极区迁移",
-          "ku": "Katyon koçî anodê, anyon koçî katodê dikin"
+          "tr": "Katot kabına saf su eklemek",
+          "en": "Adding pure water to the cathode compartment",
+          "de": "Reines Wasser in den Kathodenraum geben",
+          "fr": "Ajouter de l'eau pure dans le compartiment cathodique",
+          "ru": "Добавить чистую воду в катодное пространство",
+          "ar": "إضافة ماء نقي إلى وعاء المهبط",
+          "zh": "向正极区加入纯水",
+          "ku": "Zêdekirina ava paqij li firaxa katodê"
         },
         {
-          "tr": "Tüm iyonlar sadece katoda doğru hareket eder",
-          "en": "All ions move only towards the cathode",
-          "de": "Alle Ionen bewegen sich nur in Richtung der Kathode",
-          "fr": "Tous les ions se déplacent uniquement vers la cathode",
-          "ru": "Все ионы движутся только к катоду",
-          "ar": "تتحرك جميع الأيونات نحو المهبط فقط",
-          "zh": "所有离子都只向正极区迁移",
-          "ku": "Hemû îyon tenê ber bi katodê ve diçin"
+          "tr": "Zn elektrodu daha büyük bir Zn levhayla değiştirmek",
+          "en": "Replacing the Zn electrode with a larger Zn plate",
+          "de": "Die Zn-Elektrode durch ein größeres Zn-Blech ersetzen",
+          "fr": "Remplacer l'électrode de Zn par une plaque de Zn plus grande",
+          "ru": "Заменить цинковый электрод более крупной цинковой пластиной",
+          "ar": "استبدال قطب Zn بصفيحة Zn أكبر",
+          "zh": "把 Zn 电极换成更大的 Zn 片",
+          "ku": "Guhertina elektroda Zn bi pelekî Zn yê mezintir"
         },
         {
-          "tr": "Tuz köprüsündeki iyonlar hareket etmez",
-          "en": "Ions in the salt bridge do not move",
-          "de": "Ionen in der Salzbrücke bewegen sich nicht",
-          "fr": "Les ions dans le pont de sel ne bougent pas",
-          "ru": "Ионы солевого мостика не движутся",
-          "ar": "الأيونات الموجودة في القنطرة الملحية لا تتحرك",
-          "zh": "盐桥中的离子不移动",
-          "ku": "Îyonên di pira xwê de nalivin"
+          "tr": "Anot kabındaki Zn2+ iyonlarının bir kısmını ZnS olarak çöktürmek",
+          "en": "Precipitating part of the Zn2+ ions in the anode compartment as ZnS",
+          "de": "Einen Teil der Zn2+-Ionen im Anodenraum als ZnS ausfällen",
+          "fr": "Précipiter une partie des ions Zn2+ du compartiment anodique sous forme de ZnS",
+          "ru": "Осадить часть ионов Zn2+ в анодном пространстве в виде ZnS",
+          "ar": "ترسيب جزء من أيونات Zn2+ في وعاء المصعد على شكل ZnS",
+          "zh": "使负极区的部分 Zn2+ 以 ZnS 形式沉淀",
+          "ku": "Daxistina beşekî îyonên Zn2+ yên firaxa anodê wek ZnS"
         },
         {
-          "tr": "Elektronlar tuz köprüsünden akar",
-          "en": "Electrons flow across the salt bridge",
-          "de": "Elektronen fließen über die Salzbrücke",
-          "fr": "Les électrons traversent le pont de sel",
-          "ru": "Электроны проходят через солевой мостик",
-          "ar": "تتدفق الإلكترونات عبر القنطرة الملحية",
-          "zh": "电子流过盐桥",
-          "ku": "Elektron di pira xwê re diherikin"
+          "tr": "Tuz köprüsünü devreden çıkarmak",
+          "en": "Removing the salt bridge from the circuit",
+          "de": "Die Salzbrücke aus dem Stromkreis entfernen",
+          "fr": "Retirer le pont salin du circuit",
+          "ru": "Убрать солевой мостик из цепи",
+          "ar": "إزالة الجسر الملحي من الدائرة",
+          "zh": "把盐桥从电路中撤去",
+          "ku": "Derxistina pira xwê ji devreyê"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": {
-        "tr": "Anot kabında yükseltgenmeyle katyon derişimi arttığından, fazla pozitif yükü dengelemek için tuz köprüsündeki anyonlar anot kabına göç eder; katot kabında katyonlar indirgenerek azaldığından tuz köprüsündeki katyonlar katot kabına göç eder. Elektronlar tuz köprüsünden değil, dış devredeki iletken telden anottan katoda akar.",
-        "en": "Oxidation increases the cation concentration in the anode compartment, so anions from the salt bridge migrate there to balance the excess positive charge; in the cathode compartment cations are reduced and used up, so cations from the bridge migrate there. Electrons do not travel through the salt bridge; they flow from the anode to the cathode through the external wire.",
-        "de": "Im Anodenraum nimmt durch die Oxidation die Kationenkonzentration zu, daher wandern Anionen aus der Salzbrücke dorthin und gleichen die überschüssige positive Ladung aus; im Kathodenraum werden Kationen durch Reduktion verbraucht, daher wandern Kationen aus der Brücke dorthin. Elektronen fließen nicht durch die Salzbrücke, sondern durch den äußeren Draht von der Anode zur Kathode.",
-        "fr": "Dans le compartiment anodique, l'oxydation augmente la concentration en cations : les anions du pont salin y migrent pour compenser l'excès de charge positive ; dans le compartiment cathodique, les cations sont consommés par réduction : les cations du pont y migrent. Les électrons ne passent pas par le pont salin ; ils circulent de l'anode vers la cathode par le fil extérieur.",
-        "ru": "В анодном пространстве при окислении концентрация катионов растёт, поэтому анионы солевого мостика перемещаются туда и компенсируют избыточный положительный заряд; в катодном пространстве катионы расходуются при восстановлении, поэтому туда перемещаются катионы мостика. Электроны не проходят через солевой мостик: они движутся от анода к катоду по внешнему проводнику.",
-        "ar": "في وعاء المصعد يزداد تركيز الكاتيونات بسبب الأكسدة، فتهاجر أنيونات القنطرة الملحية إليه لمعادلة الشحنة الموجبة الزائدة؛ وفي وعاء المهبط تُستهلك الكاتيونات بالاختزال، فتهاجر كاتيونات القنطرة إليه. أما الإلكترونات فلا تمر عبر القنطرة الملحية، بل تنتقل من المصعد إلى المهبط عبر السلك الخارجي.",
-        "zh": "负极区因氧化反应阳离子浓度增大，盐桥中的阴离子迁入以中和多余的正电荷；正极区的阳离子被还原而减少，盐桥中的阳离子迁入补充。电子不经过盐桥，而是通过外电路导线从负极流向正极。",
-        "ku": "Ji ber ku di beşa anodê de bi oksîdasyonê tîrbûna katyonan zêde dibe, ji bo hevsengkirina bara erênî ya zêde anyonên pira xwê koçî beşa anodê dikin; di beşa katodê de katyon bi redûksiyonê kêm dibin, ji ber vê yekê katyonên pira xwê koçî beşa katodê dikin. Elektron ne di pira xwê re, lê di têla guhêzbar a çerxa derve re ji anodê ber bi katodê ve diherikin."
+        "tr": "Grafikte t1 anında gerilim aniden azalıyor, ancak sıfıra inmiyor ve pil çalışmayı sürdürdüğü için yavaşça düşmeye devam ediyor. Toplam tepkime Zn + Cu2+ → Zn2+ + Cu'dur. Katot kabına su eklenince giren tarafta olan Cu2+ seyrelir, denge girenlere kayar ve gerilim düşer. Anot kabına su eklemek ya da Zn2+'yı ZnS olarak çöktürmek ürün derişimini azaltır ve gerilimi artırır; elektrodu büyütmek derişimi değiştirmediği için gerilimi değiştirmez. Tuz köprüsü çıkarılırsa devre kesilir ve gerilim sıfıra iner; grafikteki gibi yavaşça azalmaya devam eden bir gerilim gözlenmez.",
+        "en": "At t1 the graph shows a sudden drop in voltage, but the voltage does not fall to zero and keeps slowly decreasing because the cell is still working. The overall reaction is Zn + Cu2+ → Zn2+ + Cu. Adding water to the cathode compartment dilutes Cu2+, a reactant, so the equilibrium shifts toward the reactants and the voltage drops. Adding water to the anode compartment or precipitating Zn2+ as ZnS lowers the product concentration and raises the voltage; enlarging the electrode does not change any concentration, so the voltage stays the same. Removing the salt bridge breaks the circuit and the voltage falls to zero, not to a value that keeps slowly decreasing as in the graph.",
+        "de": "Zum Zeitpunkt t1 fällt die Spannung im Diagramm plötzlich ab, sinkt aber nicht auf null und nimmt weiter langsam ab, weil die Zelle weiterarbeitet. Die Gesamtreaktion lautet Zn + Cu2+ → Zn2+ + Cu. Wasserzugabe in den Kathodenraum verdünnt das Edukt Cu2+, das Gleichgewicht verschiebt sich zu den Edukten und die Spannung sinkt. Wasserzugabe in den Anodenraum oder Ausfällen von Zn2+ als ZnS verringert die Produktkonzentration und erhöht die Spannung; eine größere Elektrode ändert keine Konzentration und damit auch nicht die Spannung. Entfernt man die Salzbrücke, wird der Stromkreis unterbrochen und die Spannung fällt auf null, nicht auf einen Wert, der wie im Diagramm langsam weiter abnimmt.",
+        "fr": "À l'instant t1, la tension chute brusquement sur le graphique, mais elle ne tombe pas à zéro et continue de diminuer lentement car la pile fonctionne toujours. La réaction globale est Zn + Cu2+ → Zn2+ + Cu. Ajouter de l'eau côté cathode dilue Cu2+, un réactif : l'équilibre se déplace vers les réactifs et la tension baisse. Ajouter de l'eau côté anode ou précipiter Zn2+ sous forme de ZnS diminue la concentration d'un produit et augmente la tension ; agrandir l'électrode ne modifie aucune concentration, donc pas la tension. Retirer le pont salin ouvre le circuit et la tension tombe à zéro, et non à une valeur qui continue de baisser lentement comme sur le graphique.",
+        "ru": "На графике в момент t1 напряжение резко падает, но не до нуля, и затем продолжает медленно снижаться, так как элемент продолжает работать. Суммарная реакция: Zn + Cu2+ → Zn2+ + Cu. Добавление воды в катодное пространство разбавляет реагент Cu2+, равновесие смещается к реагентам, и напряжение падает. Добавление воды в анодное пространство или осаждение Zn2+ в виде ZnS уменьшает концентрацию продукта и повышает напряжение; увеличение электрода не меняет концентраций и поэтому не меняет напряжения. Если убрать солевой мостик, цепь размыкается и напряжение падает до нуля, а не до значения, которое продолжает медленно уменьшаться, как на графике.",
+        "ar": "في الرسم البياني ينخفض الجهد فجأة عند اللحظة t1، لكنه لا يهبط إلى الصفر ويستمر في التناقص ببطء لأن الخلية ما زالت تعمل. التفاعل الكلي هو Zn + Cu2+ → Zn2+ + Cu. إضافة الماء إلى وعاء المهبط تخفف Cu2+ وهو من المتفاعلات، فيزاح الاتزان نحو المتفاعلات وينخفض الجهد. أما إضافة الماء إلى وعاء المصعد أو ترسيب Zn2+ على شكل ZnS فتقلل تركيز النواتج وترفع الجهد؛ وتكبير القطب لا يغيّر أي تركيز فلا يتغير الجهد. وإزالة الجسر الملحي تقطع الدائرة فيهبط الجهد إلى الصفر، لا إلى قيمة تواصل التناقص ببطء كما في الرسم.",
+        "zh": "图中 t1 时刻电压突然下降，但没有降到零，并且由于电池仍在工作而继续缓慢下降。总反应为 Zn + Cu2+ → Zn2+ + Cu。向正极区加水会稀释反应物 Cu2+，平衡向反应物方向移动，电压下降。向负极区加水或使 Zn2+ 以 ZnS 沉淀会降低产物浓度，使电压升高；增大电极不改变任何浓度，电压不变。撤去盐桥会使电路断开，电压降为零，而不是像图中那样降到一个仍缓慢下降的数值。",
+        "ku": "Di grafîkê de di dema t1 de voltaj ji nişka ve kêm dibe, lê heta sifirê danakeve û ji ber ku pîl hîn dixebite hêdî hêdî kêm dibe. Reaksiyona giştî Zn + Cu2+ → Zn2+ + Cu ye. Dema av li firaxa katodê tê zêdekirin, Cu2+ ku di aliyê tevlêbûyan de ye sist dibe, hevsengî ber bi tevlêbûyan ve diçe û voltaj dadikeve. Zêdekirina avê li firaxa anodê an daxistina Zn2+ wek ZnS tîrbûna berhemê kêm dike û voltajê bilind dike; mezinkirina elektrodê tu tîrbûnê naguherîne, ji ber vê voltaj naguhere. Heke pira xwê bê derxistin devre diqete û voltaj dadikeve sifirê, ne nirxeke ku wek di grafîkê de hêdî hêdî kêm dibe."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman",
+          "en": "Time",
+          "de": "Zeit",
+          "fr": "Temps",
+          "ru": "Время",
+          "ar": "الزمن",
+          "zh": "时间",
+          "ku": "Dem"
+        },
+        "yLabel": {
+          "tr": "Pil gerilimi (V)",
+          "en": "Cell voltage (V)",
+          "de": "Zellspannung (V)",
+          "fr": "Tension de la pile (V)",
+          "ru": "Напряжение (В)",
+          "ar": "جهد الخلية (V)",
+          "zh": "电池电压 (V)",
+          "ku": "Voltaja pîlê (V)"
+        },
+        "xMax": 32,
+        "yMax": 1.15,
+        "yMin": 0.9,
+        "xTicks": [
+          {
+            "v": 10,
+            "label": "t₁"
+          }
+        ],
+        "yTicks": [
+          {
+            "v": 1,
+            "label": "1,00"
+          },
+          {
+            "v": 1.1,
+            "label": "1,10"
+          }
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                1.1
+              ],
+              [
+                10,
+                1.07
+              ],
+              [
+                10,
+                1.01
+              ],
+              [
+                20,
+                0.99
+              ],
+              [
+                30,
+                0.97
+              ]
+            ]
+          }
+        ]
       }
     },
     {
@@ -1504,90 +1590,182 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin07",
       "stem": {
-        "tr": "X, Y ve Z metalleriyle yapılan deneylerde şu gözlemler kaydediliyor:\n• X metali Y2+ iyonları içeren çözeltiye daldırıldığında X yüzeyinde Y metali birikiyor.\n• Z metali X2+ iyonları içeren çözeltiye daldırıldığında hiçbir değişim olmuyor.\n• Z metali Y2+ iyonları içeren çözeltiye daldırıldığında Z yüzeyinde Y metali birikiyor.\nBuna göre X, Y ve Z metallerinin yükseltgenme potansiyelleri (aktiflikleri) arasındaki ilişki aşağıdakilerden hangisidir?",
-        "en": "In experiments with metals X, Y and Z the following observations are recorded:\n• When metal X is dipped into a solution containing Y2+ ions, metal Y deposits on X.\n• When metal Z is dipped into a solution containing X2+ ions, nothing happens.\n• When metal Z is dipped into a solution containing Y2+ ions, metal Y deposits on Z.\nWhich of the following gives the relationship between the oxidation potentials (activities) of X, Y and Z?",
-        "de": "Bei Versuchen mit den Metallen X, Y und Z werden folgende Beobachtungen gemacht:\n• Taucht man Metall X in eine Lösung mit Y2+-Ionen, scheidet sich Metall Y auf X ab.\n• Taucht man Metall Z in eine Lösung mit X2+-Ionen, geschieht nichts.\n• Taucht man Metall Z in eine Lösung mit Y2+-Ionen, scheidet sich Metall Y auf Z ab.\nWelche Beziehung besteht zwischen den Oxidationspotentialen (Aktivitäten) von X, Y und Z?",
-        "fr": "Lors d'expériences avec les métaux X, Y et Z, on observe :\n• Quand le métal X est plongé dans une solution d'ions Y2+, du métal Y se dépose sur X.\n• Quand le métal Z est plongé dans une solution d'ions X2+, rien ne se passe.\n• Quand le métal Z est plongé dans une solution d'ions Y2+, du métal Y se dépose sur Z.\nQuelle est la relation entre les potentiels d'oxydation (activités) de X, Y et Z ?",
-        "ru": "В опытах с металлами X, Y и Z получены следующие наблюдения:\n• При погружении металла X в раствор, содержащий ионы Y2+, на поверхности X осаждается металл Y.\n• При погружении металла Z в раствор, содержащий ионы X2+, никаких изменений не происходит.\n• При погружении металла Z в раствор, содержащий ионы Y2+, на поверхности Z осаждается металл Y.\nКакое соотношение между потенциалами окисления (активностью) металлов X, Y и Z верно?",
-        "ar": "في تجارب على الفلزات X و Y و Z سُجّلت الملاحظات الآتية:\n• عند غمس الفلز X في محلول يحتوي على أيونات Y2+ يترسب الفلز Y على سطح X.\n• عند غمس الفلز Z في محلول يحتوي على أيونات X2+ لا يحدث أي تغيّر.\n• عند غمس الفلز Z في محلول يحتوي على أيونات Y2+ يترسب الفلز Y على سطح Z.\nما العلاقة بين جهود تأكسد (نشاط) الفلزات X و Y و Z؟",
-        "zh": "用金属 X、Y、Z 做实验，记录如下：\n• 将 X 浸入含 Y2+ 的溶液中，X 表面析出金属 Y。\n• 将 Z 浸入含 X2+ 的溶液中，没有任何变化。\n• 将 Z 浸入含 Y2+ 的溶液中，Z 表面析出金属 Y。\nX、Y、Z 的氧化电势（活动性）大小关系是下列哪一项？",
-        "ku": "Di ceribandinên bi metalên X, Y û Z de ev çavdêrî hatine tomarkirin:\n• Dema metala X di çareseriyeke ku îyonên Y2+ dihewîne de tê kirin, metala Y li ser rûyê X kom dibe.\n• Dema metala Z di çareseriyeke ku îyonên X2+ dihewîne de tê kirin, tu guherîn pêk nayê.\n• Dema metala Z di çareseriyeke ku îyonên Y2+ dihewîne de tê kirin, metala Y li ser rûyê Z kom dibe.\nLi gorî vê yekê, têkiliya navbera potansiyelên oksîdasyonê (çalakiyên) metalên X, Y û Z kîjan e?"
+        "tr": "X, Y ve Z metalleriyle yapılan deneylerin sonuçları tabloda verilmiştir.\nBu metallerden ikisi ve bu metallerin 1 M iyon çözeltileriyle kurulabilecek galvanik pillerden standart gerilimi en büyük olanında anot ve katot hangi metallerdir?",
+        "en": "The table shows the results of experiments carried out with metals X, Y and Z.\nAmong the galvanic cells that can be built from two of these metals and their 1 M ion solutions, which metals are the anode and the cathode in the cell with the largest standard voltage?",
+        "de": "Die Tabelle zeigt die Ergebnisse von Versuchen mit den Metallen X, Y und Z.\nWelche Metalle sind Anode und Kathode in derjenigen galvanischen Zelle mit der größten Standardspannung, die sich aus zwei dieser Metalle und ihren 1 M Ionenlösungen bauen lässt?",
+        "fr": "Le tableau donne les résultats d'expériences réalisées avec les métaux X, Y et Z.\nParmi les piles galvaniques que l'on peut construire avec deux de ces métaux et leurs solutions ioniques à 1 M, quels métaux constituent l'anode et la cathode de la pile de plus grande tension standard ?",
+        "ru": "В таблице приведены результаты опытов с металлами X, Y и Z.\nКакие металлы являются анодом и катодом в том гальваническом элементе с наибольшим стандартным напряжением, который можно собрать из двух этих металлов и 1 M растворов их ионов?",
+        "ar": "يبيّن الجدول نتائج تجارب أُجريت على الفلزات X وY وZ.\nمن بين الخلايا الجلفانية التي يمكن بناؤها من فلزين من هذه الفلزات ومحاليل أيوناتها بتركيز 1 M، ما الفلزان اللذان يكوّنان المصعد والمهبط في الخلية ذات أكبر جهد قياسي؟",
+        "zh": "表中给出了用金属 X、Y、Z 进行实验的结果。\n用其中两种金属及其 1 M 离子溶液可以组成若干原电池，在标准电压最大的那个电池中，负极和正极分别是哪种金属？",
+        "ku": "Encamên ceribandinên bi metalên X, Y û Z hatine kirin di tabloyê de hatine dayîn.\nDi nav pîlên galvanîk ên ku bi du ji van metalan û çareseriyên wan ên îyonî yên 1 M dikarin bên avakirin de, di pîla ku voltaja wê ya standard herî mezin e de anod û katod kîjan metal in?"
       },
       "options": [
         {
-          "tr": "X > Z > Y",
-          "en": "X > Z > Y",
-          "de": "X > Z > Y",
-          "fr": "X > Z > Y",
-          "ru": "X > Z > Y",
-          "ar": "X > Z > Y",
-          "zh": "X > Z > Y",
-          "ku": "X > Z > Y"
+          "tr": "Anot: X, katot: Y",
+          "en": "Anode: X, cathode: Y",
+          "de": "Anode: X, Kathode: Y",
+          "fr": "Anode : X, cathode : Y",
+          "ru": "Анод: X, катод: Y",
+          "ar": "المصعد: X، المهبط: Y",
+          "zh": "负极：X，正极：Y",
+          "ku": "Anod: X, katod: Y"
         },
         {
-          "tr": "X > Y > Z",
-          "en": "X > Y > Z",
-          "de": "X > Y > Z",
-          "fr": "X > Y > Z",
-          "ru": "X > Y > Z",
-          "ar": "X > Y > Z",
-          "zh": "X > Y > Z",
-          "ku": "X > Y > Z"
+          "tr": "Anot: Y, katot: X",
+          "en": "Anode: Y, cathode: X",
+          "de": "Anode: Y, Kathode: X",
+          "fr": "Anode : Y, cathode : X",
+          "ru": "Анод: Y, катод: X",
+          "ar": "المصعد: Y، المهبط: X",
+          "zh": "负极：Y，正极：X",
+          "ku": "Anod: Y, katod: X"
         },
         {
-          "tr": "Z > X > Y",
-          "en": "Z > X > Y",
-          "de": "Z > X > Y",
-          "fr": "Z > X > Y",
-          "ru": "Z > X > Y",
-          "ar": "Z > X > Y",
-          "zh": "Z > X > Y",
-          "ku": "Z > X > Y"
+          "tr": "Anot: X, katot: Z",
+          "en": "Anode: X, cathode: Z",
+          "de": "Anode: X, Kathode: Z",
+          "fr": "Anode : X, cathode : Z",
+          "ru": "Анод: X, катод: Z",
+          "ar": "المصعد: X، المهبط: Z",
+          "zh": "负极：X，正极：Z",
+          "ku": "Anod: X, katod: Z"
         },
         {
-          "tr": "Y > Z > X",
-          "en": "Y > Z > X",
-          "de": "Y > Z > X",
-          "fr": "Y > Z > X",
-          "ru": "Y > Z > X",
-          "ar": "Y > Z > X",
-          "zh": "Y > Z > X",
-          "ku": "Y > Z > X"
+          "tr": "Anot: Z, katot: Y",
+          "en": "Anode: Z, cathode: Y",
+          "de": "Anode: Z, Kathode: Y",
+          "fr": "Anode : Z, cathode : Y",
+          "ru": "Анод: Z, катод: Y",
+          "ar": "المصعد: Z، المهبط: Y",
+          "zh": "负极：Z，正极：Y",
+          "ku": "Anod: Z, katod: Y"
         },
         {
-          "tr": "Z > Y > X",
-          "en": "Z > Y > X",
-          "de": "Z > Y > X",
-          "fr": "Z > Y > X",
-          "ru": "Z > Y > X",
-          "ar": "Z > Y > X",
-          "zh": "Z > Y > X",
-          "ku": "Z > Y > X"
+          "tr": "Anot: Z, katot: X",
+          "en": "Anode: Z, cathode: X",
+          "de": "Anode: Z, Kathode: X",
+          "fr": "Anode : Z, cathode : X",
+          "ru": "Анод: Z, катод: X",
+          "ar": "المصعد: Z، المهبط: X",
+          "zh": "负极：Z，正极：X",
+          "ku": "Anod: Z, katod: X"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Bir metal, kendisinden daha az aktif metalin iyonunu indirger. 1. deney: X, Y2+'yı indirger → X > Y. 2. deney: Z, X2+'yı indirgeyemez → X > Z. 3. deney: Z, Y2+'yı indirger → Z > Y. Birleştirince X > Z > Y bulunur. Z'yi X'ten aktif sanmak, ikinci deneyde \"tepkime olmaması\"nın Z'nin daha az aktif olduğunu gösterdiğini gözden kaçırmaktır.",
-        "en": "A metal reduces the ions of a less active metal. Experiment 1: X reduces Y2+ → X > Y. Experiment 2: Z cannot reduce X2+ → X > Z. Experiment 3: Z reduces Y2+ → Z > Y. Combining gives X > Z > Y. Thinking Z is more active than X overlooks that \"no reaction\" in the second experiment means Z is the less active metal.",
-        "de": "Ein Metall reduziert die Ionen eines weniger aktiven Metalls. Versuch 1: X reduziert Y2+ → X > Y. Versuch 2: Z kann X2+ nicht reduzieren → X > Z. Versuch 3: Z reduziert Y2+ → Z > Y. Zusammen ergibt sich X > Z > Y. Wer Z für aktiver als X hält, übersieht, dass \"keine Reaktion\" im zweiten Versuch Z als weniger aktiv ausweist.",
-        "fr": "Un métal réduit les ions d'un métal moins actif. Expérience 1 : X réduit Y2+ → X > Y. Expérience 2 : Z ne réduit pas X2+ → X > Z. Expérience 3 : Z réduit Y2+ → Z > Y. On obtient X > Z > Y. Croire Z plus actif que X, c'est oublier que « aucune réaction » dans la deuxième expérience signifie que Z est moins actif.",
-        "ru": "Металл восстанавливает ионы менее активного металла. Опыт 1: X восстанавливает Y2+ → X > Y. Опыт 2: Z не восстанавливает X2+ → X > Z. Опыт 3: Z восстанавливает Y2+ → Z > Y. Отсюда X > Z > Y. Считать Z активнее X — значит упустить, что «отсутствие реакции» во втором опыте указывает на меньшую активность Z.",
-        "ar": "يختزل الفلز أيونات فلز أقل نشاطًا منه. التجربة 1: يختزل X أيونات Y2+ → X > Y. التجربة 2: لا يختزل Z أيونات X2+ → X > Z. التجربة 3: يختزل Z أيونات Y2+ → Z > Y. وبالجمع نحصل على X > Z > Y. أما اعتبار Z أنشط من X فيُغفل أن «عدم حدوث تفاعل» في التجربة الثانية يدل على أن Z أقل نشاطًا.",
-        "zh": "金属能还原比它活动性弱的金属的离子。实验 1：X 还原 Y2+ → X > Y。实验 2：Z 不能还原 X2+ → X > Z。实验 3：Z 还原 Y2+ → Z > Y。综合得 X > Z > Y。认为 Z 比 X 活泼，是忽略了第二个实验“不反应”说明 Z 的活动性较弱。",
-        "ku": "Metalek îyonên metaleke ji xwe kêmçalaktir redûkte dike. Ceribandina 1: X Y2+ redûkte dike → X > Y. Ceribandina 2: Z nikare X2+ redûkte bike → X > Z. Ceribandina 3: Z Y2+ redûkte dike → Z > Y. Bi hevgirtina van X > Z > Y tê dîtin. Hesibandina Z ji X çalaktir, nedîtina wê yekê ye ku di ceribandina duyem de \"tunebûna reaksiyonê\" nîşan dide Z kêmçalaktir e."
+        "tr": "Bir metal, kendisinden daha az aktif metalin iyonunu indirger. 1. deney: X, Y2+'yı indirger → X, Y'den aktiftir. 2. deney: Z, X2+'yı indirgeyemez → X, Z'den aktiftir. 3. deney: Z, Y2+'yı indirger → Z, Y'den aktiftir. Aktiflik sırası X > Z > Y'dir. Standart pil gerilimi, iki yarı hücrenin indirgenme potansiyelleri arasındaki farka eşittir; bu fark, en aktif metal (X) anot ve en az aktif metal (Y) katot olduğunda en büyüktür. X–Z ve Z–Y pillerinde fark daha küçüktür; anot ile katodu ters seçmek ise E°pil < 0 olan istemsiz bir düzen verir.",
+        "en": "A metal reduces the ions of a less active metal. Experiment 1: X reduces Y2+ → X is more active than Y. Experiment 2: Z cannot reduce X2+ → X is more active than Z. Experiment 3: Z reduces Y2+ → Z is more active than Y. The activity order is X > Z > Y. The standard cell voltage equals the difference between the reduction potentials of the two half-cells; this difference is largest when the most active metal (X) is the anode and the least active metal (Y) is the cathode. The X–Z and Z–Y cells have smaller differences, and swapping anode and cathode gives a non-spontaneous arrangement with E°cell < 0.",
+        "de": "Ein Metall reduziert die Ionen eines weniger aktiven Metalls. Versuch 1: X reduziert Y2+ → X ist aktiver als Y. Versuch 2: Z kann X2+ nicht reduzieren → X ist aktiver als Z. Versuch 3: Z reduziert Y2+ → Z ist aktiver als Y. Die Aktivitätsreihe lautet X > Z > Y. Die Standardzellspannung ist gleich der Differenz der Reduktionspotentiale beider Halbzellen; sie ist am größten, wenn das aktivste Metall (X) Anode und das am wenigsten aktive Metall (Y) Kathode ist. Die Zellen X–Z und Z–Y haben kleinere Differenzen; vertauscht man Anode und Kathode, erhält man eine nicht freiwillige Anordnung mit E°Zelle < 0.",
+        "fr": "Un métal réduit les ions d'un métal moins actif. Expérience 1 : X réduit Y2+ → X est plus actif que Y. Expérience 2 : Z ne réduit pas X2+ → X est plus actif que Z. Expérience 3 : Z réduit Y2+ → Z est plus actif que Y. L'ordre d'activité est X > Z > Y. La tension standard d'une pile est égale à l'écart entre les potentiels de réduction des deux demi-piles ; cet écart est maximal quand le métal le plus actif (X) est l'anode et le moins actif (Y) la cathode. Les piles X–Z et Z–Y ont des écarts plus faibles, et inverser anode et cathode donne un montage non spontané avec E°pile < 0.",
+        "ru": "Металл восстанавливает ионы менее активного металла. Опыт 1: X восстанавливает Y2+ → X активнее Y. Опыт 2: Z не восстанавливает X2+ → X активнее Z. Опыт 3: Z восстанавливает Y2+ → Z активнее Y. Ряд активности: X > Z > Y. Стандартное напряжение элемента равно разности потенциалов восстановления двух полуэлементов; эта разность максимальна, когда самый активный металл (X) — анод, а наименее активный (Y) — катод. У элементов X–Z и Z–Y разность меньше, а если поменять анод и катод местами, получится несамопроизвольная схема с E°эл < 0.",
+        "ar": "يختزل الفلز أيونات فلز أقل نشاطًا منه. التجربة 1: X يختزل Y2+ ← X أنشط من Y. التجربة 2: Z لا يختزل X2+ ← X أنشط من Z. التجربة 3: Z يختزل Y2+ ← Z أنشط من Y. ترتيب النشاط X > Z > Y. الجهد القياسي للخلية يساوي الفرق بين جهدي اختزال نصفي الخلية، ويكون هذا الفرق أكبر ما يمكن عندما يكون الفلز الأنشط (X) مصعدًا والأقل نشاطًا (Y) مهبطًا. أما الخليتان X–Z وZ–Y ففرقهما أصغر، وعكس المصعد والمهبط يعطي ترتيبًا غير تلقائي فيه E°cell < 0.",
+        "zh": "金属能还原比它不活泼的金属的离子。实验 1：X 能还原 Y2+ → X 比 Y 活泼。实验 2：Z 不能还原 X2+ → X 比 Z 活泼。实验 3：Z 能还原 Y2+ → Z 比 Y 活泼。活动性顺序为 X > Z > Y。电池的标准电压等于两个半电池还原电势之差；当最活泼的金属 X 作负极、最不活泼的金属 Y 作正极时，这个差值最大。X–Z 和 Z–Y 电池的差值较小，而把正负极对调会得到 E°电池 < 0 的非自发装置。",
+        "ku": "Metalek îyonên metaleke ji xwe kêmçalaktir redûkte dike. Ceribandina 1: X, Y2+ redûkte dike → X ji Y çalaktir e. Ceribandina 2: Z nikare X2+ redûkte bike → X ji Z çalaktir e. Ceribandina 3: Z, Y2+ redûkte dike → Z ji Y çalaktir e. Rêza çalakiyê X > Z > Y ye. Voltaja standard a pîlê bi cudahiya navbera potansiyelên redûksiyonê yên du nîvşaneyan re wekhev e; ev cudahî herî mezin e dema metala herî çalak (X) anod û ya herî kêmçalak (Y) katod be. Di pîlên X–Z û Z–Y de cudahî piçûktir e; berevajîkirina anod û katodê jî rêzeke ne-xweber bi E°pîl < 0 dide."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Deney",
+            "en": "Experiment",
+            "de": "Versuch",
+            "fr": "Expérience",
+            "ru": "Опыт",
+            "ar": "التجربة",
+            "zh": "实验",
+            "ku": "Ceribandin"
+          },
+          {
+            "tr": "Daldırılan metal",
+            "en": "Metal dipped",
+            "de": "Eingetauchtes Metall",
+            "fr": "Métal plongé",
+            "ru": "Погружённый металл",
+            "ar": "الفلز المغموس",
+            "zh": "浸入的金属",
+            "ku": "Metala tê kirin"
+          },
+          {
+            "tr": "Çözelti",
+            "en": "Solution",
+            "de": "Lösung",
+            "fr": "Solution",
+            "ru": "Раствор",
+            "ar": "المحلول",
+            "zh": "溶液",
+            "ku": "Çareserî"
+          },
+          {
+            "tr": "Gözlem",
+            "en": "Observation",
+            "de": "Beobachtung",
+            "fr": "Observation",
+            "ru": "Наблюдение",
+            "ar": "الملاحظة",
+            "zh": "现象",
+            "ku": "Çavdêrî"
+          }
+        ],
+        "rows": [
+          [
+            "1",
+            "X",
+            "Y2+",
+            {
+              "tr": "Metal yüzeyinde Y birikir",
+              "en": "Y deposits on the metal",
+              "de": "Y scheidet sich auf dem Metall ab",
+              "fr": "Y se dépose sur le métal",
+              "ru": "На металле осаждается Y",
+              "ar": "يترسب Y على الفلز",
+              "zh": "金属表面析出 Y",
+              "ku": "Y li ser metalê kom dibe"
+            }
+          ],
+          [
+            "2",
+            "Z",
+            "X2+",
+            {
+              "tr": "Değişim olmaz",
+              "en": "No change",
+              "de": "Keine Veränderung",
+              "fr": "Aucun changement",
+              "ru": "Изменений нет",
+              "ar": "لا يحدث تغيّر",
+              "zh": "无变化",
+              "ku": "Guherîn çênabe"
+            }
+          ],
+          [
+            "3",
+            "Z",
+            "Y2+",
+            {
+              "tr": "Metal yüzeyinde Y birikir",
+              "en": "Y deposits on the metal",
+              "de": "Y scheidet sich auf dem Metall ab",
+              "fr": "Y se dépose sur le métal",
+              "ru": "На металле осаждается Y",
+              "ar": "يترسب Y على الفلز",
+              "zh": "金属表面析出 Y",
+              "ku": "Y li ser metalê kom dibe"
+            }
+          ]
+        ]
       }
     },
     {
       "id": "u21-twin08",
       "stem": {
-        "tr": "Standart indirgenme potansiyelleri:\nAl3+/Al: -1,66 V; Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V\nBuna göre 1 M CuSO4 çözeltisi, aşağıdaki metallerden hangisinden yapılmış bir kapta kabın aşınmasına yol açmadan saklanabilir?",
+        "tr": "Standart indirgenme potansiyelleri:\nAl3+/Al: -1,66 V; Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V\n1 M CuSO4 çözeltisi, aşağıdaki metallerden hangisinden yapılmış bir kapta kabın aşınmasına yol açmadan saklanabilir?",
         "en": "Standard reduction potentials:\nAl3+/Al: -1.66 V; Zn2+/Zn: -0.76 V; Fe2+/Fe: -0.44 V; Ni2+/Ni: -0.25 V; Cu2+/Cu: +0.34 V; Ag+/Ag: +0.80 V\nIn a container made of which of the following metals can a 1 M CuSO4 solution be stored without corroding the container?",
         "de": "Standardreduktionspotentiale:\nAl3+/Al: -1,66 V; Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V\nIn einem Gefäß aus welchem der folgenden Metalle kann eine 1 M CuSO4-Lösung aufbewahrt werden, ohne dass das Gefäß angegriffen wird?",
         "fr": "Potentiels standard de réduction :\nAl3+/Al : -1,66 V ; Zn2+/Zn : -0,76 V ; Fe2+/Fe : -0,44 V ; Ni2+/Ni : -0,25 V ; Cu2+/Cu : +0,34 V ; Ag+/Ag : +0,80 V\nDans un récipient fait de quel métal peut-on conserver une solution 1 M de CuSO4 sans que le récipient soit attaqué ?",
         "ru": "Стандартные потенциалы восстановления:\nAl3+/Al: -1,66 В; Zn2+/Zn: -0,76 В; Fe2+/Fe: -0,44 В; Ni2+/Ni: -0,25 В; Cu2+/Cu: +0,34 В; Ag+/Ag: +0,80 В\nВ сосуде из какого металла можно хранить 1 M раствор CuSO4 так, чтобы сосуд не разрушался?",
         "ar": "جهود الاختزال القياسية:\nAl3+/Al: -1.66 V؛ Zn2+/Zn: -0.76 V؛ Fe2+/Fe: -0.44 V؛ Ni2+/Ni: -0.25 V؛ Cu2+/Cu: +0.34 V؛ Ag+/Ag: +0.80 V\nفي وعاء مصنوع من أيّ الفلزات الآتية يمكن حفظ محلول CuSO4 تركيزه 1 M دون أن يتآكل الوعاء؟",
         "zh": "标准还原电势：\nAl3+/Al：-1.66 V；Zn2+/Zn：-0.76 V；Fe2+/Fe：-0.44 V；Ni2+/Ni：-0.25 V；Cu2+/Cu：+0.34 V；Ag+/Ag：+0.80 V\n1 M CuSO4 溶液可以保存在由下列哪种金属制成的容器中而不腐蚀容器？",
-        "ku": "Potansiyelên redûksiyonê yên standard:\nAl3+/Al: -1,66 V; Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V\nLi gorî vê yekê, çareseriya 1 M CuSO4 dikare di firaxeke ji kîjan metalê çêkirî de bê hilanîn bêyî ku firax bixure?"
+        "ku": "Potansiyelên redûksiyonê yên standard:\nAl3+/Al: -1,66 V; Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V\nÇareseriya 1 M CuSO4 dikare di firaxeke ji kîjan metalê çêkirî de bê hilanîn bêyî ku firax bixure?"
       },
       "options": [
         {
@@ -1960,14 +2138,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin13",
       "stem": {
-        "tr": "Standart indirgenme potansiyelleri:\nF2/F-: +2,87 V; Cl2/Cl-: +1,36 V; Br2/Br-: +1,07 V; I2/I-: +0,54 V\nBuna göre standart koşullarda aşağıdaki tepkimelerden hangisi kendiliğinden (istemli) gerçekleşir?",
-        "en": "Standard reduction potentials:\nF2/F-: +2.87 V; Cl2/Cl-: +1.36 V; Br2/Br-: +1.07 V; I2/I-: +0.54 V\nWhich of the following reactions is spontaneous under standard conditions?",
-        "de": "Standardreduktionspotentiale:\nF2/F-: +2,87 V; Cl2/Cl-: +1,36 V; Br2/Br-: +1,07 V; I2/I-: +0,54 V\nWelche der folgenden Reaktionen läuft unter Standardbedingungen freiwillig ab?",
-        "fr": "Potentiels standard de réduction :\nF2/F- : +2,87 V ; Cl2/Cl- : +1,36 V ; Br2/Br- : +1,07 V ; I2/I- : +0,54 V\nLaquelle des réactions suivantes est spontanée dans les conditions standard ?",
-        "ru": "Стандартные потенциалы восстановления:\nF2/F-: +2,87 В; Cl2/Cl-: +1,36 В; Br2/Br-: +1,07 В; I2/I-: +0,54 В\nКакая из следующих реакций протекает самопроизвольно при стандартных условиях?",
-        "ar": "جهود الاختزال القياسية:\nF2/F-: +2.87 V؛ Cl2/Cl-: +1.36 V؛ Br2/Br-: +1.07 V؛ I2/I-: +0.54 V\nأيّ التفاعلات الآتية يحدث تلقائيًا في الظروف القياسية؟",
-        "zh": "标准还原电势：\nF2/F-：+2.87 V；Cl2/Cl-：+1.36 V；Br2/Br-：+1.07 V；I2/I-：+0.54 V\n标准条件下，下列哪个反应能自发进行？",
-        "ku": "Potansiyelên redûksiyonê yên standard:\nF2/F-: +2,87 V; Cl2/Cl-: +1,36 V; Br2/Br-: +1,07 V; I2/I-: +0,54 V\nLi gorî vê yekê, di şertên standard de kîjan ji van reaksiyonan bi xwe (xweber) pêk tê?"
+        "tr": "Tabloda halojenlerin standart indirgenme potansiyelleri verilmiştir.\nStandart koşullarda aşağıdaki tepkimelerden hangisi kendiliğinden (istemli) gerçekleşir?",
+        "en": "The table gives the standard reduction potentials of the halogens.\nWhich of the following reactions occurs spontaneously under standard conditions?",
+        "de": "Die Tabelle enthält die Standardreduktionspotentiale der Halogene.\nWelche der folgenden Reaktionen läuft unter Standardbedingungen freiwillig ab?",
+        "fr": "Le tableau donne les potentiels standard de réduction des halogènes.\nLaquelle des réactions suivantes est spontanée dans les conditions standard ?",
+        "ru": "В таблице приведены стандартные потенциалы восстановления галогенов.\nКакая из следующих реакций протекает самопроизвольно при стандартных условиях?",
+        "ar": "يبيّن الجدول جهود الاختزال القياسية للهالوجينات.\nأيّ التفاعلات الآتية يحدث تلقائيًا في الظروف القياسية؟",
+        "zh": "表中给出了卤素的标准还原电势。\n在标准状态下，下列哪个反应能自发进行？",
+        "ku": "Di tabloyê de potansiyelên redûksiyonê yên standard ên halojenan hatine dayîn.\nDi şertên standard de kîjan ji van reaksiyonan bi xweber pêk tê?"
       },
       "options": [
         {
@@ -2031,6 +2209,40 @@ export const unit21: ChemistryUnitSeedData = {
         "ar": "يؤكسد الهالوجين الهاليدَ الذي جهد اختزاله أقل من جهد اختزاله هو. في التفاعل Cl2 + 2Br- يكون E°cell = 1.36 - 1.07 = +0.29 V > 0 فهو تلقائي. وفي التفاعلات الأخرى يكون جهد الهالوجين المكتسب للإلكترونات أقل من جهد الهاليد المراد أكسدته: I2 + 2Cl-: 0.54 - 1.36 = -0.82 V؛ Br2 + 2F-: 1.07 - 2.87 = -1.80 V؛ I2 + 2Br-: 0.54 - 1.07 = -0.53 V؛ Br2 + 2Cl-: 1.07 - 1.36 = -0.29 V؛ وكلها غير تلقائية.",
         "zh": "卤素单质能氧化还原电势比自身低的卤离子。Cl2 + 2Br- 的 E°电池 = 1.36 - 1.07 = +0.29 V > 0，自发进行。其他反应中得电子的卤素电势都低于被氧化的卤离子：I2 + 2Cl-：0.54 - 1.36 = -0.82 V；Br2 + 2F-：1.07 - 2.87 = -1.80 V；I2 + 2Br-：0.54 - 1.07 = -0.53 V；Br2 + 2Cl-：1.07 - 1.36 = -0.29 V；均非自发。",
         "ku": "Halojenek halojenîdeke ku potansiyela wê ya redûksiyonê ji ya wê piçûktir e oksîde dike. Di reaksiyona Cl2 + 2Br- de E°pîl = 1,36 - 1,07 = +0,29 V > 0 e, ji ber vê yekê reaksiyon xweber e. Di reaksiyonên din de potansiyela halojena ku elektronan digire ji ya halojenîda ku dê oksîde bibe piçûktir e: ji bo I2 + 2Cl- 0,54 - 1,36 = -0,82 V, ji bo Br2 + 2F- 1,07 - 2,87 = -1,80 V, ji bo I2 + 2Br- 0,54 - 1,07 = -0,53 V, ji bo Br2 + 2Cl- 1,07 - 1,36 = -0,29 V; hemû ne-xweber in."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Yarı tepkime",
+            "en": "Half-reaction",
+            "de": "Halbreaktion",
+            "fr": "Demi-réaction",
+            "ru": "Полуреакция",
+            "ar": "نصف التفاعل",
+            "zh": "半反应",
+            "ku": "Nîvreaksiyon"
+          },
+          "E° (V)"
+        ],
+        "rows": [
+          [
+            "F2 + 2e- → 2F-",
+            "+2,87"
+          ],
+          [
+            "Cl2 + 2e- → 2Cl-",
+            "+1,36"
+          ],
+          [
+            "Br2 + 2e- → 2Br-",
+            "+1,07"
+          ],
+          [
+            "I2 + 2e- → 2I-",
+            "+0,54"
+          ]
+        ]
       }
     },
     {

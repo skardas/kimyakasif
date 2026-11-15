@@ -116,14 +116,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-f03",
       "fact": {
-        "tr": "Cabir bin Hayyan damıtma imbiğini (alembic) geliştirerek nitrik asit ve kral suyunu elde etmiştir.",
-        "en": "Jabir ibn Hayyan developed the alembic and synthesized nitric acid and aqua regia.",
-        "de": "Dschābir ibn Hayyān entwickelte den Alambic (Destillierkolben) und stellte Salpetersäure sowie Königswasser her.",
-        "fr": "Jabir ibn Hayyan a perfectionné l'alambic et obtenu l'acide nitrique et l'eau régale.",
-        "ru": "Джабир ибн Хайян усовершенствовал перегонный куб (аламбик) и получил азотную кислоту и царскую водку.",
-        "ar": "طوّر جابر بن حيان إنبيق التقطير، وحضّر حمض النيتريك والماء الملكي.",
-        "zh": "贾比尔·伊本·哈扬改进了蒸馏器，并制得了硝酸和王水。",
-        "ku": "Cabir bin Hayyan alembîk (îmbîka distîlasyonê) pêş xist û asîda nîtrîk û ava şahî bi dest xist."
+        "tr": "Damıtma imbiğini (alembic) geliştirdiği ve nitrik asit ile kral suyunu elde ettiği kabul edilen simyacı Cabir bin Hayyan'dır.",
+        "en": "Jabir ibn Hayyan is the alchemist credited with improving the alembic and with preparing nitric acid and aqua regia.",
+        "de": "Dschābir ibn Hayyān gilt als der Alchemist, der den Alambic (Destillierhelm) verbesserte und Salpetersäure sowie Königswasser herstellte.",
+        "fr": "Jabir ibn Hayyan est l'alchimiste à qui l'on attribue le perfectionnement de l'alambic ainsi que la préparation de l'acide nitrique et de l'eau régale.",
+        "ru": "Джабиру ибн Хайяну приписывают усовершенствование перегонного куба (аламбика) и получение азотной кислоты и царской водки.",
+        "ar": "يُنسب إلى الخيميائي جابر بن حيان تطوير الإنبيق وتحضير حمض النيتريك والماء الملكي.",
+        "zh": "贾比尔·伊本·哈扬被认为改进了蒸馏器（阿兰比克），并制得了硝酸和王水。",
+        "ku": "Alkîmîstê ku tê qebûlkirin alembîk (îmbîka distîlasyonê) pêş xistiye û asîda nîtrîk û ava şahî bi dest xistiye Cabir bin Hayyan e."
       },
       "trap": {
         "tr": "Kral suyunu Aristo dört element kuramıyla açıklamıştır.",
@@ -192,24 +192,24 @@ export const unit01: ChemistryUnitSeedData = {
         "ku": "Buret di ceribandinên tîtrasyonê de ji bo pîvandina hesas a qebareya şileyê û dilopkirina kontrolkirî tê bikaranîn."
       },
       "trap": {
-        "tr": "Büret sadece yüksek sıcaklıkta sıvı kaynatmak için kullanılır.",
-        "en": "The burette is used only for boiling liquids at high temperatures.",
-        "de": "Die Bürette wird nur zum Kochen von Flüssigkeiten bei hohen Temperaturen verwendet.",
-        "fr": "La burette est utilisée uniquement pour faire bouillir des liquides à haute température.",
-        "ru": "Бюретку используют только для кипячения жидкостей при высоких температурах.",
-        "ar": "تُستخدم السحاحة فقط لغلي السوائل في درجات حرارة عالية.",
-        "zh": "滴定管只用于在高温下煮沸液体。",
-        "ku": "Buret tenê ji bo kelandina şileyan di germahiya bilind de tê bikaranîn."
+        "tr": "Büret, belirli bir hacimde standart çözelti hazırlamak için kullanılan, boynunda tek ölçü çizgisi bulunan cam kaptır.",
+        "en": "A burette is the glass vessel with a single calibration mark on its neck that is used to prepare a standard solution of a fixed volume.",
+        "de": "Die Bürette ist das Glasgefäß mit einer einzigen Eichmarke am Hals, mit dem eine Standardlösung bestimmten Volumens hergestellt wird.",
+        "fr": "La burette est le récipient en verre portant un seul trait de jauge sur le col, utilisé pour préparer une solution étalon d'un volume donné.",
+        "ru": "Бюретка — стеклянный сосуд с одной меткой на горлышке, предназначенный для приготовления стандартного раствора заданного объёма.",
+        "ar": "السحاحة وعاء زجاجي ذو علامة معايرة واحدة على عنقه، يُستخدم لتحضير محلول قياسي بحجم محدد.",
+        "zh": "滴定管是颈部只有一条刻度线、用于配制一定体积标准溶液的玻璃容器。",
+        "ku": "Buret firaxa camê ye ku tenê xêzeke pîvanê li ser stûyê wê heye û ji bo amadekirina çareseriyeke standard a bi qebareyeke diyar tê bikaranîn."
       },
       "whyTrapIsFalse": {
-        "tr": "Büret dereceli, musluklu ince bir cam borudur ve ısıtılmaz; titrasyonda sıvıyı damla damla, hassas hacimde eklemeye yarar. Kaynatma beher veya balonda yapılır.",
-        "en": "A burette is a thin graduated glass tube with a stopcock and is never heated; it delivers liquid drop by drop in precise volumes during titration. Boiling is done in a beaker or flask.",
-        "de": "Eine Bürette ist ein dünnes, graduiertes Glasrohr mit Hahn und wird nicht erhitzt; sie gibt bei der Titration Flüssigkeit tropfenweise in genauen Volumina ab. Gekocht wird im Becherglas oder Kolben.",
-        "fr": "La burette est un tube de verre fin, gradué et muni d'un robinet, qu'on ne chauffe jamais ; elle délivre le liquide goutte à goutte avec un volume précis lors d'un titrage. On fait bouillir dans un bécher ou un ballon.",
-        "ru": "Бюретка — тонкая градуированная стеклянная трубка с краном, её не нагревают; она служит для точного покапельного добавления жидкости при титровании. Кипятят в стакане или колбе.",
-        "ar": "السحاحة أنبوب زجاجي رفيع مدرّج ذو صنبور ولا يُسخَّن؛ تُستخدم لإضافة السائل قطرةً قطرةً وبحجم دقيق في المعايرة. أما الغلي فيُجرى في كأس زجاجية أو دورق.",
-        "zh": "滴定管是带活塞的细长刻度玻璃管，不能加热；它用于滴定时逐滴、精确地加入液体。煮沸应在烧杯或烧瓶中进行。",
-        "ku": "Buret boriyeke camê ya zirav e ku derece û şîrek li ser in û nayê germkirin; di tîtrasyonê de şileyê dilop bi dilop û bi qebareya hesas zêde dike. Kelandin di beher an balonê de tê kirin."
+        "tr": "Boynunda tek ölçü çizgisi olan ve belirli hacimde çözelti hazırlamaya yarayan kap balon jojedir. Büret dereceli, musluklu ince bir cam borudur; titrasyonda sıvıyı damla damla ve ölçülü eklemeye yarar.",
+        "en": "The vessel with a single mark on its neck for preparing a solution of fixed volume is the volumetric flask. A burette is a thin graduated glass tube with a stopcock; it adds liquid drop by drop and in measured amounts during titration.",
+        "de": "Das Gefäß mit nur einer Eichmarke am Hals zum Ansetzen einer Lösung bestimmten Volumens ist der Messkolben. Die Bürette ist ein dünnes, graduiertes Glasrohr mit Hahn; sie gibt bei der Titration Flüssigkeit tropfenweise und abgemessen zu.",
+        "fr": "Le récipient à un seul trait de jauge servant à préparer une solution de volume donné est la fiole jaugée. La burette est un tube de verre fin, gradué et muni d'un robinet ; elle ajoute le liquide goutte à goutte et de façon mesurée lors d'un titrage.",
+        "ru": "Сосуд с одной меткой на горлышке для приготовления раствора заданного объёма — мерная колба. Бюретка — тонкая градуированная стеклянная трубка с краном; при титровании она служит для покапельного отмеренного добавления жидкости.",
+        "ar": "الوعاء ذو العلامة الواحدة على العنق والمستخدم لتحضير محلول بحجم محدد هو الدورق الحجمي. أما السحاحة فأنبوب زجاجي رفيع مدرّج ذو صنبور، تُضاف به السوائل قطرةً قطرةً وبكميات مقيسة أثناء المعايرة.",
+        "zh": "颈部只有一条刻度线、用于配制一定体积溶液的是容量瓶。滴定管是带活塞的细长刻度玻璃管，用于滴定时逐滴、定量地加入液体。",
+        "ku": "Firaxa ku tenê xêzeke pîvanê li ser stûyê wê heye û ji bo amadekirina çareseriyeke bi qebareya diyar e balona jojeyê ye. Buret boriyeke camê ya zirav, bi derece û şîrek e; di tîtrasyonê de şileyê dilop bi dilop û bi pîvan zêde dike."
       }
     },
     {
@@ -846,14 +846,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-s01",
       "title": {
-        "tr": "Çözelti Hazırlama Adımları",
-        "en": "Solution Preparation Steps",
-        "de": "Schritte zur Lösungsvorbereitung",
-        "fr": "Étapes de préparation de la solution",
-        "ru": "Этапы приготовления раствора",
-        "ar": "خطوات تحضير المحلول",
-        "zh": "溶液配制步骤",
-        "ku": "Pêngavên Amadekirina Çareseriyê"
+        "tr": "Standart Çözelti Hazırlama",
+        "en": "Preparation of a Standard Solution",
+        "de": "Herstellung einer Standardlösung",
+        "fr": "Préparation d'une solution étalon",
+        "ru": "Приготовление стандартного раствора",
+        "ar": "تحضير محلول قياسي",
+        "zh": "标准溶液的配制",
+        "ku": "Amadekirina Çareseriya Standard"
       },
       "steps": [
         {
@@ -901,7 +901,7 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-s02",
       "title": {
-        "tr": "Basit Damıtma İşlemi",
+        "tr": "Basit Damıtma",
         "en": "Simple Distillation",
         "de": "Einfache Destillation",
         "fr": "Distillation simple",
@@ -1011,14 +1011,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-s04",
       "title": {
-        "tr": "Katı-Sıvı Süzme İşlemi",
-        "en": "Solid-Liquid Filtration Process",
-        "de": "Fest-Flüssig-Filtrationsprozess",
-        "fr": "Processus de filtration solide-liquide",
-        "ru": "Фильтрование (отделение твёрдого вещества от жидкости)",
+        "tr": "Katı-Sıvı Süzme",
+        "en": "Solid-Liquid Filtration",
+        "de": "Fest-Flüssig-Filtration",
+        "fr": "Filtration solide-liquide",
+        "ru": "Фильтрование смеси твёрдого вещества и жидкости",
         "ar": "ترشيح خليط صلب-سائل",
-        "zh": "固液过滤操作",
-        "ku": "Pêvajoya Parzûnkirina Hişk-Şile"
+        "zh": "固液过滤",
+        "ku": "Parzûnkirina Hişk-Şile"
       },
       "steps": [
         {
@@ -1068,77 +1068,95 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin01",
       "stem": {
-        "tr": "Laboratuvarda 250 mL 0,1 M standart NaCl çözeltisi hazırlamak isteyen bir araştırmacı, aşağıdaki laboratuvar malzemelerinden hangisini kullanmalıdır?",
-        "en": "Which of the following pieces of laboratory equipment should a researcher use to prepare 250 mL of a 0.1 M standard NaCl solution?",
-        "de": "Welches der folgenden Laborgeräte sollte ein Forscher verwenden, der 250 mL einer 0,1 M NaCl-Standardlösung herstellen möchte?",
-        "fr": "Lequel des instruments de laboratoire suivants un chercheur doit-il utiliser pour préparer 250 mL d'une solution étalon de NaCl à 0,1 M ?",
-        "ru": "Исследователю нужно приготовить в лаборатории 250 мл стандартного раствора NaCl с концентрацией 0,1 M. Какой лабораторной посудой ему следует воспользоваться?",
-        "ar": "أيّ الأدوات المختبرية الآتية يجب أن يستخدمها باحث يريد تحضير 250 mL من محلول NaCl قياسي تركيزه 0.1 M؟",
-        "zh": "研究人员要在实验室配制 250 mL 0.1 mol/L 的 NaCl 标准溶液，应使用下列哪种实验仪器？",
-        "ku": "Lêkolînerek dixwaze di laboratuwarê de 250 mL çareseriya NaCl ya standard a 0,1 M amade bike. Divê kîjan ji van amûrên laboratuwarê bi kar bîne?"
+        "tr": "Şekilde tuzlu sudan saf su elde etmek için kurulmuş bir basit damıtma düzeneği verilmiştir. X ve Y soğutucunun su bağlantılarını, K toplama kabını, T ise termometreyi göstermektedir.\nDüzenekle ilgili aşağıdaki yargılardan hangileri doğrudur?\nI. Soğutma suyu X'ten girip Y'den çıkmalıdır.\nII. Damıtma sonunda tuz K kabında toplanır.\nIII. T termometresi, soğutucuya geçen buharın sıcaklığını ölçer.",
+        "en": "The figure shows a simple distillation set-up used to obtain pure water from salt water. X and Y are the water connections of the condenser, K is the receiving flask and T is the thermometer.\nWhich of the following statements about the set-up are correct?\nI. Cooling water should enter at X and leave at Y.\nII. At the end of the distillation the salt collects in flask K.\nIII. Thermometer T measures the temperature of the vapour passing into the condenser.",
+        "de": "Die Abbildung zeigt eine einfache Destillationsapparatur zur Gewinnung von reinem Wasser aus Salzwasser. X und Y sind die Wasseranschlüsse des Kühlers, K ist die Vorlage und T das Thermometer.\nWelche der folgenden Aussagen über die Apparatur sind richtig?\nI. Das Kühlwasser muss bei X eintreten und bei Y austreten.\nII. Am Ende der Destillation sammelt sich das Salz in der Vorlage K.\nIII. Das Thermometer T misst die Temperatur des Dampfes, der in den Kühler übergeht.",
+        "fr": "La figure représente un montage de distillation simple destiné à obtenir de l'eau pure à partir d'eau salée. X et Y sont les raccords d'eau du réfrigérant, K est le récipient collecteur et T le thermomètre.\nLesquelles des affirmations suivantes sur le montage sont exactes ?\nI. L'eau de refroidissement doit entrer par X et sortir par Y.\nII. À la fin de la distillation, le sel se rassemble dans le récipient K.\nIII. Le thermomètre T mesure la température de la vapeur qui passe dans le réfrigérant.",
+        "ru": "На рисунке изображена установка для простой перегонки, с помощью которой из солёной воды получают чистую воду. X и Y — патрубки холодильника для воды, K — приёмник, T — термометр.\nКакие из утверждений об установке верны?\nI. Охлаждающая вода должна входить через X и выходить через Y.\nII. По окончании перегонки соль собирается в приёмнике K.\nIII. Термометр T измеряет температуру пара, поступающего в холодильник.",
+        "ar": "يبيّن الشكل جهاز تقطير بسيطًا لاستخلاص الماء النقي من الماء المالح. يمثّل X وY وصلتَي الماء في المكثّف، وK وعاء الجمع، وT مقياس الحرارة.\nأيّ العبارات الآتية عن الجهاز صحيحة؟\nI. يجب أن يدخل ماء التبريد من X ويخرج من Y.\nII. في نهاية التقطير يتجمّع الملح في الوعاء K.\nIII. يقيس مقياس الحرارة T درجة حرارة البخار المارّ إلى المكثّف.",
+        "zh": "图中是用盐水制取纯水的简单蒸馏装置。X 和 Y 是冷凝管的进出水口，K 是接收瓶，T 是温度计。\n关于该装置，下列说法中正确的是哪些？\nI. 冷却水应从 X 进入、从 Y 流出。\nII. 蒸馏结束时，盐聚集在接收瓶 K 中。\nIII. 温度计 T 测量的是进入冷凝管的蒸气的温度。",
+        "ku": "Di şiklê de amûreke distîlasyona sade heye ku ji ava şor ava pak tê bidestxistin. X û Y girêdanên avê yên sarker in, K firaxa berhevkirinê ye û T jî germpîv e.\nKîjan ji van hukmên derbarê amûrê de rast in?\nI. Divê ava sarkirinê ji X bikeve û ji Y derkeve.\nII. Di dawiya distîlasyonê de xwê di firaxa K de kom dibe.\nIII. Germpîva T germahiya wê buharê dipîve ku derbasî sarker dibe."
       },
       "options": [
         {
-          "tr": "Balon joje",
-          "en": "volumetric flask",
-          "de": "Messkolben",
-          "fr": "fiole jaugée",
-          "ru": "Мерная колба",
-          "ar": "الدورق الحجمي",
-          "zh": "容量瓶",
-          "ku": "Balona pîvanê"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Ayırma hunisi",
-          "en": "separatory funnel",
-          "de": "Scheidetrichter",
-          "fr": "entonnoir séparateur",
-          "ru": "Делительная воронка",
-          "ar": "قمع الفصل",
-          "zh": "分液漏斗",
-          "ku": "Qîfa veqetandinê"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "Kısa deney tüpü",
-          "en": "short test tube",
-          "de": "kurzes Reagenzglas",
-          "fr": "tube à essai court",
-          "ru": "Короткая пробирка",
-          "ar": "أنبوب اختبار قصير",
-          "zh": "短试管",
-          "ku": "Lûleya ceribandinê ya kurt"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Havan",
-          "en": "mortar",
-          "de": "Mörser",
-          "fr": "mortier",
-          "ru": "Ступка",
-          "ar": "هاون",
-          "zh": "研钵",
-          "ku": "Hawan"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Kroze",
-          "en": "crucible",
-          "de": "Tiegel",
-          "fr": "creuset",
-          "ru": "Тигель",
-          "ar": "بوتقة",
-          "zh": "坩埚",
-          "ku": "Kroze"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Belirli hacimde ve derişimde çözelti, boynunda tek bir ölçü çizgisi bulunan ve belirli bir hacme ayarlanmış balon jojede hazırlanır. Ayırma hunisi birbirine karışmayan sıvıları ayırmak, deney tüpü küçük miktarlarla deneme yapmak, havan katıları ezmek, kroze ise katıları kızdırmak için kullanılır; bunların hiçbiri hassas hacim ölçmez.",
-        "en": "A solution of known volume and concentration is prepared in a volumetric flask, which has a single calibration mark on its neck and is calibrated to one exact volume. A separatory funnel separates immiscible liquids, a test tube is for small-scale trials, a mortar is for grinding solids and a crucible is for strongly heating solids; none of them measures volume precisely.",
-        "de": "Eine Lösung mit bestimmtem Volumen und bestimmter Konzentration wird im Messkolben hergestellt, der am Hals eine einzige Eichmarke trägt und auf genau ein Volumen kalibriert ist. Der Scheidetrichter trennt nicht mischbare Flüssigkeiten, das Reagenzglas dient für Versuche mit kleinen Mengen, der Mörser zum Zerreiben von Feststoffen und der Tiegel zum Glühen von Feststoffen; keines dieser Geräte misst Volumen genau.",
-        "fr": "Une solution de volume et de concentration déterminés se prépare dans une fiole jaugée, qui porte un seul trait de jauge sur son col et est étalonnée pour un volume précis. L'entonnoir séparateur (ampoule à décanter) sépare des liquides non miscibles, le tube à essai sert aux essais sur de petites quantités, le mortier à broyer les solides et le creuset à calciner les solides ; aucun ne mesure précisément un volume.",
-        "ru": "Раствор определённого объёма и концентрации готовят в мерной колбе: на её горле одна метка, и она откалибрована на один точный объём. Делительная воронка служит для разделения несмешивающихся жидкостей, пробирка — для опытов с малыми количествами веществ, ступка — для измельчения твёрдых веществ, тигель — для прокаливания твёрдых веществ; ни один из этих предметов не позволяет точно измерить объём.",
-        "ar": "يُحضَّر المحلول ذو الحجم والتركيز المحدَّدين في الدورق الحجمي، وعلى عنقه علامة واحدة وهو معايَر على حجم واحد دقيق. أما قمع الفصل فيفصل السوائل غير الممتزجة، وأنبوب الاختبار يُستخدم للتجارب بكميات صغيرة، والهاون لسحق المواد الصلبة، والبوتقة لتسخين المواد الصلبة تسخيناً شديداً؛ ولا يقيس أيٌّ منها الحجم بدقة.",
-        "zh": "一定体积和浓度的溶液要在容量瓶中配制：容量瓶瓶颈上只有一条刻度线，校准为一个准确的体积。分液漏斗用于分离互不相溶的液体，试管用于少量物质的实验，研钵用于研磨固体，坩埚用于灼烧固体；它们都不能精确量取体积。",
-        "ku": "Çareseriya bi qebare û tîrbûna diyar di balona pîvanê de tê amadekirin; li ser stûyê wê tenê xêzeke pîvanê heye û ji bo yek qebareya rast hatiye eyarkirin. Qîfa veqetandinê ji bo veqetandina şileyên ku tevlî hev nabin, lûleya ceribandinê ji bo ceribandinên bi mîqdarên piçûk, hawan ji bo hûrkirina madeyên hişk, kroze jî ji bo sorkirina madeyên hişk tê bikaranîn; tu yek ji wan qebareyê bi hesasî napîve."
+        "tr": "I doğrudur: soğutma suyu soğutucunun alt ucundaki X bağlantısından girip üst uçtaki Y'den çıkar; böylece ceket tamamen suyla dolar ve en soğuk su buharla toplama kabına yakın uçta karşılaşır. II yanlıştır: tuz uçucu olmadığından balonda kalır; K kabında yoğuşan saf su toplanır. III doğrudur: termometrenin haznesi yan borunun hizasında olduğundan soğutucuya geçen buharın sıcaklığını ölçer. Doğru yanıt: I ve III.",
+        "en": "I is correct: cooling water enters through X at the lower end of the condenser and leaves through Y at the upper end, so the jacket fills completely and the coldest water meets the vapour near the receiver. II is false: salt is not volatile and stays in the boiling flask; pure condensed water collects in K. III is correct: the thermometer bulb is level with the side arm, so it measures the temperature of the vapour entering the condenser. Answer: I and III.",
+        "de": "I ist richtig: Das Kühlwasser tritt am unteren Kühlerende bei X ein und am oberen Ende bei Y aus; so ist der Mantel vollständig gefüllt, und das kälteste Wasser trifft den Dampf nahe der Vorlage. II ist falsch: Salz ist nicht flüchtig und bleibt im Kolben; in K sammelt sich kondensiertes reines Wasser. III ist richtig: Die Thermometerkugel befindet sich auf Höhe des seitlichen Ansatzes und misst daher die Temperatur des in den Kühler strömenden Dampfes. Antwort: I und III.",
+        "fr": "I est exacte : l'eau de refroidissement entre par X, à l'extrémité basse du réfrigérant, et sort par Y, à l'extrémité haute ; la double enveloppe est ainsi entièrement remplie et l'eau la plus froide rencontre la vapeur près du récipient collecteur. II est fausse : le sel n'est pas volatil et reste dans le ballon ; c'est l'eau pure condensée qui se rassemble dans K. III est exacte : le réservoir du thermomètre est au niveau du tube latéral, il mesure donc la température de la vapeur qui entre dans le réfrigérant. Réponse : I et III.",
+        "ru": "I верно: охлаждающая вода входит через нижний патрубок X и выходит через верхний патрубок Y, поэтому рубашка полностью заполнена, и самая холодная вода встречается с паром у конца, ближнего к приёмнику. II неверно: соль нелетуча и остаётся в колбе; в приёмнике K собирается сконденсированная чистая вода. III верно: шарик термометра находится на уровне отводной трубки, поэтому он измеряет температуру пара, поступающего в холодильник. Ответ: I и III.",
+        "ar": "العبارة I صحيحة: يدخل ماء التبريد من الوصلة X في الطرف السفلي للمكثّف ويخرج من Y في طرفه العلوي، فيمتلئ الغلاف تمامًا ويلتقي أبرد ماء بالبخار عند الطرف القريب من وعاء الجمع. العبارة II خاطئة: الملح غير متطاير فيبقى في الدورق، ويتجمّع في K الماء النقي المتكثّف. العبارة III صحيحة: مستودع مقياس الحرارة عند مستوى الأنبوب الجانبي، فهو يقيس درجة حرارة البخار الداخل إلى المكثّف. الإجابة: I و III.",
+        "zh": "I 正确：冷却水从冷凝管下端的 X 口进入、从上端的 Y 口流出，这样夹套能完全充满水，最冷的水在靠近接收瓶的一端与蒸气相遇。II 错误：盐不挥发，留在蒸馏烧瓶中；K 中收集的是冷凝下来的纯水。III 正确：温度计的水银球与支管口相平，测量的是进入冷凝管的蒸气温度。答案：I 和 III。",
+        "ku": "I rast e: ava sarkirinê ji girêdana X ya li dawiya jêrîn a sarker dikeve û ji Y ya li dawiya jorîn derdikeve; bi vî awayî kiras bi tevahî bi avê tije dibe û ava herî sar li aliyê nêzî firaxa berhevkirinê rastî buharê tê. II şaş e: xwê nafire, di balonê de dimîne; di K de ava pak a ku hilmiyaye kom dibe. III rast e: hezîneya germpîvê li hemberî boriya kêlekê ye, ji ber vê germahiya buhara ku derbasî sarker dibe dipîve. Bersiv: I û III."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 235,
+        "markup": "<line x1=\"38\" y1=\"226\" x2=\"102\" y2=\"226\" class=\"qf-line\"/><path d=\"M60 224 L70 202 L80 224 Z\" class=\"qf-accent2\"/><path d=\"M63 70 L63 126.7 A34 34 0 1 0 77 126.7 L77 70\" class=\"qf-fill\"/><path d=\"M38.2 172 A34 34 0 0 0 101.8 172 Z\" class=\"qf-water\"/><rect x=\"60\" y=\"63\" width=\"20\" height=\"8\" class=\"qf-solid\"/><line x1=\"70\" y1=\"28\" x2=\"70\" y2=\"86\" class=\"qf-line\"/><circle cx=\"70\" cy=\"88\" r=\"3.2\" class=\"qf-accent\"/><text x=\"80\" y=\"38\" class=\"qf-strong\">T</text><polygon points=\"124.2,85.4 253.9,135.6 245.3,158 115.6,107.8\" class=\"qf-fill\"/><line x1=\"77\" y1=\"80\" x2=\"272\" y2=\"155.4\" class=\"qf-line\"/><line x1=\"272\" y1=\"155.4\" x2=\"272\" y2=\"182\" class=\"qf-line\"/><line x1=\"231.3\" y1=\"152.6\" x2=\"231.3\" y2=\"182\" class=\"qf-line\"/><text x=\"231.3\" y=\"198\" text-anchor=\"middle\" class=\"qf-strong\">X</text><line x1=\"137.3\" y1=\"90.5\" x2=\"137.3\" y2=\"62\" class=\"qf-line\"/><text x=\"137.3\" y=\"55\" text-anchor=\"middle\" class=\"qf-strong\">Y</text><polygon points=\"250,224 294,224 278,194 278,172 266,172 266,194\" class=\"qf-fill\"/><polygon points=\"252.5,220 291.5,220 287,211 257,211\" class=\"qf-water\"/><text x=\"300\" y=\"214\" class=\"qf-strong\">K</text><text x=\"186\" y=\"185\" text-anchor=\"middle\" class=\"qf-small\">{{cond}}</text>",
+        "labels": {
+          "cond": {
+            "tr": "soğutucu",
+            "en": "condenser",
+            "de": "Kühler",
+            "fr": "réfrigérant",
+            "ru": "холодильник",
+            "ar": "المكثّف",
+            "zh": "冷凝管",
+            "ku": "sarker"
+          }
+        }
       }
     },
     {
@@ -1448,14 +1466,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin06",
       "stem": {
-        "tr": "Ca(OH)2 formülündeki toplam atom sayısı x, Al2(SO4)3 formülündeki toplam atom sayısı y'dir. Buna göre x + y toplamı kaçtır?",
+        "tr": "Ca(OH)2 formülündeki toplam atom sayısı x, Al2(SO4)3 formülündeki toplam atom sayısı y'dir. x + y toplamı kaçtır?",
         "en": "The total number of atoms in the formula Ca(OH)2 is x and in the formula Al2(SO4)3 is y. What is x + y?",
         "de": "Die Gesamtzahl der Atome in der Formel Ca(OH)2 sei x, in der Formel Al2(SO4)3 sei y. Wie groß ist x + y?",
         "fr": "Le nombre total d'atomes dans la formule Ca(OH)2 est x et dans la formule Al2(SO4)3 est y. Combien vaut x + y ?",
         "ru": "Общее число атомов в формуле Ca(OH)2 равно x, в формуле Al2(SO4)3 — y. Чему равна сумма x + y?",
         "ar": "عدد الذرات الكلي في الصيغة Ca(OH)2 هو x، وفي الصيغة Al2(SO4)3 هو y. فكم يساوي x + y؟",
         "zh": "化学式 Ca(OH)2 中原子总数为 x，化学式 Al2(SO4)3 中原子总数为 y。x + y 等于多少？",
-        "ku": "Hejmara giştî ya atoman di formula Ca(OH)2 de x, di formula Al2(SO4)3 de y ye. Li gorî vê, x + y çend e?"
+        "ku": "Hejmara giştî ya atoman di formula Ca(OH)2 de x, di formula Al2(SO4)3 de y ye. x + y çend e?"
       },
       "options": [
         {
@@ -1828,77 +1846,83 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin11",
       "stem": {
-        "tr": "Cevherlerden metal elde edilmesi, metallerin saflaştırılması ve alaşım üretimi ile doğrudan ilgilenen meslek aşağıdakilerden hangisidir?",
-        "en": "Which profession deals directly with extracting metals from ores, refining metals and producing alloys?",
-        "de": "Welcher Beruf befasst sich direkt mit der Gewinnung von Metallen aus Erzen, ihrer Reinigung und der Herstellung von Legierungen?",
-        "fr": "Quelle profession s'occupe directement de l'extraction des métaux à partir des minerais, de leur purification et de la production d'alliages ?",
-        "ru": "Какая профессия непосредственно связана с получением металлов из руд, их очисткой и производством сплавов?",
-        "ar": "أيّ المهن الآتية تهتم مباشرة باستخلاص الفلزات من خاماتها وتنقيتها وإنتاج السبائك؟",
-        "zh": "下列哪种职业直接从事从矿石中提取金属、精炼金属和生产合金的工作？",
-        "ku": "Kîjan pîşe rasterast bi derxistina metalan ji madenan, paqijkirina metalan û hilberîna alyajan re mijûl dibe?"
+        "tr": "Şekilde K, L ve M ile gösterilen laboratuvar cam malzemeleriyle ilgili aşağıdakilerden hangisi doğrudur?",
+        "en": "Which of the following is correct about the laboratory glassware labelled K, L and M in the figure?",
+        "de": "Welche der folgenden Aussagen über die in der Abbildung mit K, L und M bezeichneten Laborglasgeräte ist richtig?",
+        "fr": "Laquelle des affirmations suivantes sur la verrerie de laboratoire notée K, L et M sur la figure est exacte ?",
+        "ru": "Какое из утверждений о лабораторной посуде, обозначенной на рисунке буквами K, L и M, верно?",
+        "ar": "أيّ العبارات الآتية صحيحة بشأن الأدوات الزجاجية المخبرية المشار إليها في الشكل بالرموز K وL وM؟",
+        "zh": "关于图中用 K、L、M 表示的实验室玻璃仪器，下列说法正确的是哪一项？",
+        "ku": "Derbarê amûrên camê yên laboratuwarê yên di şiklê de bi K, L û M hatine nîşandan, kîjan ji van rast e?"
       },
       "options": [
         {
-          "tr": "Metalurji ve malzeme mühendisliği",
-          "en": "Metallurgical and materials engineering",
-          "de": "Metallurgie- und Werkstofftechnik",
-          "fr": "Ingénierie métallurgique et des matériaux",
-          "ru": "Инженер-металлург (материаловед)",
-          "ar": "هندسة الفلزات والمواد",
-          "zh": "冶金与材料工程",
-          "ku": "Endezyariya metalurjî û materyalan"
+          "tr": "K, belirli derişimde 250 mL standart çözelti hazırlamak için kullanılır.",
+          "en": "K is used to prepare 250 mL of a standard solution of known concentration.",
+          "de": "Mit K stellt man 250 mL einer Standardlösung bekannter Konzentration her.",
+          "fr": "K sert à préparer 250 mL d'une solution étalon de concentration connue.",
+          "ru": "K используют для приготовления 250 мл стандартного раствора известной концентрации.",
+          "ar": "يُستخدم K لتحضير 250 mL من محلول قياسي معلوم التركيز.",
+          "zh": "K 用于配制 250 mL 已知浓度的标准溶液。",
+          "ku": "K ji bo amadekirina 250 mL çareseriya standard a bi tîrbûna diyar tê bikaranîn."
         },
         {
-          "tr": "Eczacılık",
-          "en": "Pharmacy",
-          "de": "Pharmazie",
-          "fr": "Pharmacie",
-          "ru": "Фармацевт",
-          "ar": "الصيدلة",
-          "zh": "药学",
-          "ku": "Dermansazî"
+          "tr": "L, içindeki çözeltiyi doğrudan alevde kaynatmak için uygundur.",
+          "en": "L is suitable for boiling the solution it contains directly over a flame.",
+          "de": "L eignet sich dazu, die darin enthaltene Lösung direkt über der Flamme zu kochen.",
+          "fr": "L convient pour faire bouillir la solution qu'elle contient directement sur la flamme.",
+          "ru": "L подходит для кипячения находящегося в нём раствора прямо на пламени.",
+          "ar": "يصلح L لغلي المحلول الموجود فيه مباشرةً على اللهب.",
+          "zh": "L 适合将其中的溶液直接放在火焰上煮沸。",
+          "ku": "L ji bo kelandina çareseriya tê de rasterast li ser agir guncav e."
         },
         {
-          "tr": "Gıda mühendisliği",
-          "en": "Food engineering",
-          "de": "Lebensmitteltechnik",
-          "fr": "Génie alimentaire",
-          "ru": "Инженер-технолог пищевых производств",
-          "ar": "هندسة الأغذية",
-          "zh": "食品工程",
-          "ku": "Endezyariya xwarinê"
+          "tr": "M'nin üzerindeki çizgiler, K kadar hassas hacim ölçümü sağlar.",
+          "en": "The marks on M measure volume as precisely as K does.",
+          "de": "Die Markierungen auf M messen das Volumen so genau wie K.",
+          "fr": "Les graduations de M mesurent le volume aussi précisément que K.",
+          "ru": "Метки на M позволяют измерять объём так же точно, как K.",
+          "ar": "تقيس العلامات الموجودة على M الحجمَ بدقة K نفسها.",
+          "zh": "M 上的刻度线测量体积与 K 一样精确。",
+          "ku": "Xêzên li ser M qebareyê bi qasî K bi hesasî dipîvin."
         },
         {
-          "tr": "Ziraat mühendisliği",
-          "en": "Agricultural engineering",
-          "de": "Agrartechnik",
-          "fr": "Ingénierie agronomique",
-          "ru": "Агроном",
-          "ar": "الهندسة الزراعية",
-          "zh": "农业工程",
-          "ku": "Endezyariya çandiniyê"
+          "tr": "K titrasyonda sıvıyı damla damla ve ölçülü eklemek için, L belirli hacimde ve derişimde çözelti hazırlamak için kullanılır.",
+          "en": "K is used to add liquid drop by drop and in measured amounts in a titration; L is used to prepare a solution of fixed volume and concentration.",
+          "de": "K dient bei der Titration zur tropfenweisen, abgemessenen Zugabe von Flüssigkeit; L dient zum Ansetzen einer Lösung bestimmten Volumens und bestimmter Konzentration.",
+          "fr": "K sert à ajouter un liquide goutte à goutte et de façon mesurée lors d'un titrage ; L sert à préparer une solution de volume et de concentration déterminés.",
+          "ru": "K служит для покапельного отмеренного добавления жидкости при титровании, а L — для приготовления раствора заданного объёма и концентрации.",
+          "ar": "يُستخدم K لإضافة السائل قطرةً قطرةً وبكمية مقيسة في المعايرة، ويُستخدم L لتحضير محلول بحجم وتركيز محدّدين.",
+          "zh": "K 用于滴定时逐滴、定量地加入液体，L 用于配制一定体积和浓度的溶液。",
+          "ku": "K di tîtrasyonê de ji bo zêdekirina şileyê dilop bi dilop û bi pîvan, L jî ji bo amadekirina çareseriyeke bi qebare û tîrbûna diyar tê bikaranîn."
         },
         {
-          "tr": "Kimya öğretmenliği",
-          "en": "Chemistry teaching",
-          "de": "Chemielehramt",
-          "fr": "Enseignement de la chimie",
-          "ru": "Учитель химии",
-          "ar": "تدريس الكيمياء",
-          "zh": "化学教师",
-          "ku": "Mamostetiya kîmyayê"
+          "tr": "L, birbirine karışmayan iki sıvıyı ayırmak için kullanılır.",
+          "en": "L is used to separate two immiscible liquids.",
+          "de": "L dient zum Trennen zweier nicht mischbarer Flüssigkeiten.",
+          "fr": "L sert à séparer deux liquides non miscibles.",
+          "ru": "L используют для разделения двух несмешивающихся жидкостей.",
+          "ar": "يُستخدم L لفصل سائلين لا يمتزجان.",
+          "zh": "L 用于分离两种互不相溶的液体。",
+          "ku": "L ji bo veqetandina du şileyên ku tevlihev nabin tê bikaranîn."
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Cevherden metal üretimi, saflaştırma ve alaşım tasarımı metalurji ve malzeme mühendisliğinin alanıdır. Eczacılık ilaçlarla, gıda mühendisliği gıdaların üretim ve korunmasıyla, ziraat mühendisliği tarım ve gübreleme ile ilgilenir; kimya öğretmenliği eğitim alanındadır.",
-        "en": "Producing metals from ores, refining them and designing alloys is the field of metallurgical and materials engineering. Pharmacy deals with medicines, food engineering with producing and preserving food, agricultural engineering with farming and fertilising; chemistry teaching is in education.",
-        "de": "Metallgewinnung aus Erzen, Raffination und Legierungsentwicklung sind das Gebiet der Metallurgie- und Werkstofftechnik. Pharmazie befasst sich mit Arzneimitteln, Lebensmitteltechnik mit Herstellung und Haltbarmachung von Lebensmitteln, Agrartechnik mit Landwirtschaft und Düngung; das Chemielehramt gehört zur Bildung.",
-        "fr": "L'obtention des métaux à partir des minerais, leur affinage et la conception d'alliages relèvent de l'ingénierie métallurgique et des matériaux. La pharmacie traite des médicaments, le génie alimentaire de la production et de la conservation des aliments, l'agronomie de l'agriculture et de la fertilisation ; l'enseignement de la chimie relève de l'éducation.",
-        "ru": "Получение металлов из руд, их очистка и разработка сплавов — область металлургии и материаловедения. Фармацевт работает с лекарствами, технолог пищевых производств — с производством и хранением продуктов питания, агроном — с сельским хозяйством и удобрениями; учитель химии работает в сфере образования.",
-        "ar": "إنتاج الفلزات من خاماتها وتنقيتها وتصميم السبائك من اختصاص هندسة الفلزات والمواد. أما الصيدلة فتهتم بالأدوية، وهندسة الأغذية بإنتاج الغذاء وحفظه، والهندسة الزراعية بالزراعة والتسميد، وتدريس الكيمياء مجال تعليمي.",
-        "zh": "从矿石中生产金属、精炼金属和设计合金属于冶金与材料工程的领域。药学研究药物，食品工程研究食品的生产与保存，农业工程研究农业与施肥；化学教师属于教育领域。",
-        "ku": "Hilberîna metalan ji madenan, paqijkirina wan û sêwirandina alyajan qada endezyariya metalurjî û materyalan e. Dermansazî bi dermanan, endezyariya xwarinê bi hilberîn û parastina xwarinê, endezyariya çandiniyê jî bi çandinî û peyînkirinê re mijûl dibe; mamostetiya kîmyayê di qada perwerdeyê de ye."
+        "tr": "K musluklu, dereceli, ince uzun bir cam boru olan bürettir; titrasyonda sıvıyı damla damla ve ölçülü ekler. L, boynunda tek bir ölçü çizgisi bulunan balon jojedir; belirli hacimde ve derişimde (standart) çözelti hazırlamaya yarar ve ısıtılmaz. M konik gövdeli erlenmayerdir; çalkalama ve titrasyonda kullanılır, üzerindeki çizgiler yalnızca yaklaşık hacim gösterir. Standart çözelti büretle hazırlanmaz; karışmayan sıvılar ayırma hunisiyle ayrılır.",
+        "en": "K is a burette, a long thin graduated glass tube with a stopcock; it adds liquid drop by drop and in measured amounts in a titration. L is a volumetric flask with a single mark on its neck; it is used to prepare a solution of fixed volume and concentration (a standard solution) and is never heated. M is a conical Erlenmeyer flask used for swirling and titrations; its marks show only approximate volumes. A standard solution is not prepared in a burette, and immiscible liquids are separated with a separatory funnel.",
+        "de": "K ist eine Bürette, ein langes, dünnes, graduiertes Glasrohr mit Hahn; sie gibt bei der Titration Flüssigkeit tropfenweise und abgemessen zu. L ist ein Messkolben mit einer einzigen Eichmarke am Hals; er dient zum Ansetzen einer Lösung bestimmten Volumens und bestimmter Konzentration (Standardlösung) und wird nicht erhitzt. M ist ein kegelförmiger Erlenmeyerkolben zum Umschwenken und Titrieren; seine Markierungen zeigen nur ungefähre Volumina. Eine Standardlösung wird nicht in der Bürette angesetzt; nicht mischbare Flüssigkeiten trennt man mit dem Scheidetrichter.",
+        "fr": "K est une burette, long tube de verre fin, gradué et muni d'un robinet ; elle ajoute le liquide goutte à goutte et de façon mesurée lors d'un titrage. L est une fiole jaugée portant un seul trait de jauge sur le col ; elle sert à préparer une solution de volume et de concentration déterminés (solution étalon) et ne se chauffe pas. M est un erlenmeyer conique utilisé pour agiter et titrer ; ses graduations n'indiquent qu'un volume approximatif. On ne prépare pas une solution étalon dans une burette, et les liquides non miscibles se séparent avec une ampoule à décanter.",
+        "ru": "K — бюретка, длинная тонкая градуированная стеклянная трубка с краном; при титровании ею добавляют жидкость по каплям и в отмеренном количестве. L — мерная колба с одной меткой на горлышке; в ней готовят раствор заданного объёма и концентрации (стандартный раствор), её не нагревают. M — коническая колба Эрленмейера для перемешивания и титрования; её метки показывают объём лишь приблизительно. Стандартный раствор в бюретке не готовят, а несмешивающиеся жидкости разделяют делительной воронкой.",
+        "ar": "K سحاحة، وهي أنبوب زجاجي طويل رفيع مدرّج ذو صنبور، تُضاف بها السوائل قطرةً قطرةً وبكمية مقيسة في المعايرة. وL دورق حجمي ذو علامة واحدة على عنقه، يُحضَّر فيه محلول بحجم وتركيز محدّدين (محلول قياسي) ولا يُسخَّن. وM دورق مخروطي (إرلنماير) يُستخدم للرجّ والمعايرة، وعلاماته تبيّن الحجم تقريبيًا فقط. لا يُحضَّر المحلول القياسي في السحاحة، أما السوائل غير الممتزجة فتُفصل بقمع الفصل.",
+        "zh": "K 是滴定管，即带活塞的细长刻度玻璃管，滴定时用它逐滴、定量地加入液体。L 是容量瓶，颈部只有一条刻度线，用于配制一定体积和浓度的溶液（标准溶液），不能加热。M 是锥形瓶，用于振荡和滴定，其刻度只表示近似体积。标准溶液不用滴定管配制；互不相溶的液体用分液漏斗分离。",
+        "ku": "K buret e, boriyeke camê ya dirêj û zirav a bi derece û şîrek; di tîtrasyonê de şileyê dilop bi dilop û bi pîvan zêde dike. L balona jojeyê ye ku tenê xêzeke pîvanê li ser stûyê wê heye; ji bo amadekirina çareseriyeke bi qebare û tîrbûna diyar (çareseriya standard) tê bikaranîn û nayê germkirin. M erlenmayera konîk e; ji bo hejandin û tîtrasyonê tê bikaranîn, xêzên li ser wê tenê qebareya texmînî nîşan didin. Çareseriya standard bi buretê nayê amadekirin; şileyên ku tevlihev nabin bi qîfa veqetandinê têne veqetandin."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 230,
+        "markup": "<rect x=\"40\" y=\"15\" width=\"12\" height=\"150\" class=\"qf-fill\"/><rect x=\"41.5\" y=\"40\" width=\"9\" height=\"125\" class=\"qf-water\"/><line x1=\"40\" y1=\"30\" x2=\"46\" y2=\"30\" class=\"qf-line\"/><line x1=\"40\" y1=\"45\" x2=\"46\" y2=\"45\" class=\"qf-line\"/><line x1=\"40\" y1=\"60\" x2=\"46\" y2=\"60\" class=\"qf-line\"/><line x1=\"40\" y1=\"75\" x2=\"46\" y2=\"75\" class=\"qf-line\"/><line x1=\"40\" y1=\"90\" x2=\"46\" y2=\"90\" class=\"qf-line\"/><line x1=\"40\" y1=\"105\" x2=\"46\" y2=\"105\" class=\"qf-line\"/><line x1=\"40\" y1=\"120\" x2=\"46\" y2=\"120\" class=\"qf-line\"/><line x1=\"40\" y1=\"135\" x2=\"46\" y2=\"135\" class=\"qf-line\"/><line x1=\"40\" y1=\"150\" x2=\"46\" y2=\"150\" class=\"qf-line\"/><rect x=\"33\" y=\"166\" width=\"26\" height=\"7\" class=\"qf-solid\"/><polygon points=\"42,173 50,173 47.5,196 44.5,196\" class=\"qf-fill\"/><text x=\"46\" y=\"220\" text-anchor=\"middle\" class=\"qf-big\">K</text><path d=\"M163 42 L163 120.6 A40 40 0 1 0 177 120.6 L177 42\" class=\"qf-fill\"/><path d=\"M163 72 L163 120.6 A40 40 0 1 0 177 120.6 L177 72 Z\" class=\"qf-water\"/><line x1=\"157\" y1=\"72\" x2=\"183\" y2=\"72\" class=\"qf-line\"/><rect x=\"160\" y=\"33\" width=\"20\" height=\"9\" class=\"qf-solid\"/><text x=\"170\" y=\"220\" text-anchor=\"middle\" class=\"qf-big\">L</text><polygon points=\"250,200 330,200 298,120 298,80 282,80 282,120\" class=\"qf-fill\"/><polygon points=\"251.5,198.5 328.5,198.5 316.5,170 263.5,170\" class=\"qf-water\"/><text x=\"290\" y=\"220\" text-anchor=\"middle\" class=\"qf-big\">M</text>"
       }
     },
     {
@@ -2132,153 +2156,251 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin15",
       "stem": {
-        "tr": "Simya döneminde uzun süre kabul gören Aristo'nun görüşüne göre tüm maddeler hangi dört temel \"element\"in farklı oranlarda birleşmesinden oluşur?",
-        "en": "According to Aristotle's view, accepted for a long time during the age of alchemy, all matter is formed by combining which four basic \"elements\" in different proportions?",
-        "de": "Nach der in der Alchemie lange anerkannten Lehre des Aristoteles bestehen alle Stoffe aus welchen vier Grund-„Elementen“ in unterschiedlichen Anteilen?",
-        "fr": "Selon la conception d'Aristote, longtemps admise à l'époque de l'alchimie, toute matière est formée par la combinaison, en proportions diverses, de quels quatre « éléments » fondamentaux ?",
-        "ru": "Согласно взглядам Аристотеля, долго признававшимся в эпоху алхимии, все вещества образуются при соединении в разных пропорциях каких четырёх основных «стихий»?",
-        "ar": "بحسب رأي أرسطو الذي ظل مقبولاً زمناً طويلاً في عصر الخيمياء، من أيّ «العناصر» الأساسية الأربعة تتكوّن جميع المواد باتحادها بنسب مختلفة؟",
-        "zh": "按照炼金术时代长期被接受的亚里士多德的观点，一切物质都是由哪四种基本“元素”按不同比例结合而成的？",
-        "ku": "Li gorî dîtina Arîstoteles a ku di serdema alkîmiyê de demeke dirêj hate qebûlkirin, hemû made ji yekbûna kîjan çar \"elementên\" bingehîn bi rêjeyên cuda pêk tên?"
+        "tr": "Şekilde I, II, III ve IV numaralı kaplardaki maddelerin tanecik modelleri verilmiştir. Her farklı daire türü farklı bir atom türünü, birbirine değen daireler ise bir molekülü göstermektedir.\nBu maddelerle ilgili aşağıdakilerden hangisi doğrudur?",
+        "en": "The figure shows particle models of the substances in containers I, II, III and IV. Each kind of circle represents a different kind of atom, and touching circles represent one molecule.\nWhich of the following is correct about these substances?",
+        "de": "Die Abbildung zeigt Teilchenmodelle der Stoffe in den Gefäßen I, II, III und IV. Jede Kreisart steht für eine andere Atomsorte, sich berührende Kreise bilden ein Molekül.\nWelche der folgenden Aussagen über diese Stoffe ist richtig?",
+        "fr": "La figure présente les modèles particulaires des substances contenues dans les récipients I, II, III et IV. Chaque type de cercle représente un type d'atome différent et des cercles qui se touchent forment une molécule.\nLaquelle des affirmations suivantes sur ces substances est exacte ?",
+        "ru": "На рисунке показаны модели частиц веществ в сосудах I, II, III и IV. Каждый вид кружка обозначает свой вид атомов, соприкасающиеся кружки образуют одну молекулу.\nКакое утверждение об этих веществах верно?",
+        "ar": "يبيّن الشكل نماذج جسيمية للمواد الموجودة في الأوعية I وII وIII وIV. يمثّل كل نوع من الدوائر نوعًا مختلفًا من الذرات، وتمثّل الدوائر المتلامسة جزيئًا واحدًا.\nأيّ العبارات الآتية صحيحة بشأن هذه المواد؟",
+        "zh": "图中给出了容器 I、II、III、IV 中物质的粒子模型。每种圆圈代表一种原子，相互接触的圆圈表示一个分子。\n关于这些物质，下列说法正确的是哪一项？",
+        "ku": "Di şiklê de modelên perçeyan ên maddeyên di firaxên I, II, III û IV de hatine dayîn. Her cureyê xelekê cureyekî din ê atomê nîşan dide, xelekên ku bi hev dikevin jî molekulekê nîşan didin.\nDerbarê van maddeyan de kîjan rast e?"
       },
       "options": [
         {
-          "tr": "Hidrojen, oksijen, karbon, azot",
-          "en": "Hydrogen, oxygen, carbon, nitrogen",
-          "de": "Wasserstoff, Sauerstoff, Kohlenstoff, Stickstoff",
-          "fr": "Hydrogène, oxygène, carbone, azote",
-          "ru": "Водород, кислород, углерод, азот",
-          "ar": "الهيدروجين، الأكسجين، الكربون، النيتروجين",
-          "zh": "氢、氧、碳、氮",
-          "ku": "Hîdrojen, oksîjen, karbon, azot"
+          "tr": "Yalnız I element; II ve III bileşik; IV karışımdır.",
+          "en": "Only I is an element; II and III are compounds; IV is a mixture.",
+          "de": "Nur I ist ein Element; II und III sind Verbindungen; IV ist ein Gemisch.",
+          "fr": "Seul I est un élément ; II et III sont des composés ; IV est un mélange.",
+          "ru": "Только I — простое вещество; II и III — сложные вещества; IV — смесь.",
+          "ar": "I وحده عنصر؛ وII وIII مركّبان؛ وIV مخلوط.",
+          "zh": "只有 I 是单质；II 和 III 是化合物；IV 是混合物。",
+          "ku": "Tenê I element e; II û III pêkhatî ne; IV tevlihevî ye."
         },
         {
-          "tr": "Altın, gümüş, bakır, demir",
-          "en": "Gold, silver, copper, iron",
-          "de": "Gold, Silber, Kupfer, Eisen",
-          "fr": "Or, argent, cuivre, fer",
-          "ru": "Золото, серебро, медь, железо",
-          "ar": "الذهب، الفضة، النحاس، الحديد",
-          "zh": "金、银、铜、铁",
-          "ku": "Zêr, zîv, sifir, hesin"
+          "tr": "I ve II element; III bileşik; IV karışımdır.",
+          "en": "I and II are elements; III is a compound; IV is a mixture.",
+          "de": "I und II sind Elemente; III ist eine Verbindung; IV ist ein Gemisch.",
+          "fr": "I et II sont des éléments ; III est un composé ; IV est un mélange.",
+          "ru": "I и II — простые вещества; III — сложное вещество; IV — смесь.",
+          "ar": "I وII عنصران؛ وIII مركّب؛ وIV مخلوط.",
+          "zh": "I 和 II 是单质；III 是化合物；IV 是混合物。",
+          "ku": "I û II element in; III pêkhatî ye; IV tevlihevî ye."
         },
         {
-          "tr": "Toprak, su, hava, ateş",
-          "en": "Earth, water, air, fire",
-          "de": "Erde, Wasser, Luft, Feuer",
-          "fr": "Terre, eau, air, feu",
-          "ru": "Земля, вода, воздух, огонь",
-          "ar": "التراب، الماء، الهواء، النار",
-          "zh": "土、水、气、火",
-          "ku": "Ax, av, hewa, agir"
+          "tr": "I element; II ve IV bileşik; III karışımdır.",
+          "en": "I is an element; II and IV are compounds; III is a mixture.",
+          "de": "I ist ein Element; II und IV sind Verbindungen; III ist ein Gemisch.",
+          "fr": "I est un élément ; II et IV sont des composés ; III est un mélange.",
+          "ru": "I — простое вещество; II и IV — сложные вещества; III — смесь.",
+          "ar": "I عنصر؛ وII وIV مركّبان؛ وIII مخلوط.",
+          "zh": "I 是单质；II 和 IV 是化合物；III 是混合物。",
+          "ku": "I element e; II û IV pêkhatî ne; III tevlihevî ye."
         },
         {
-          "tr": "Kükürt, cıva, tuz, su",
-          "en": "Sulfur, mercury, salt, water",
-          "de": "Schwefel, Quecksilber, Salz, Wasser",
-          "fr": "Soufre, mercure, sel, eau",
-          "ru": "Сера, ртуть, соль, вода",
-          "ar": "الكبريت، الزئبق، الملح، الماء",
-          "zh": "硫、汞、盐、水",
-          "ku": "Kukurt, cîva, xwê, av"
+          "tr": "I, II ve III saf maddedir; bunlardan yalnız III moleküllerden oluşur.",
+          "en": "I, II and III are pure substances; of these, only III is made of molecules.",
+          "de": "I, II und III sind Reinstoffe; davon besteht nur III aus Molekülen.",
+          "fr": "I, II et III sont des corps purs ; parmi eux, seul III est formé de molécules.",
+          "ru": "I, II и III — чистые вещества; из них только III состоит из молекул.",
+          "ar": "I وII وIII مواد نقية؛ ومن بينها يتكوّن III وحده من جزيئات.",
+          "zh": "I、II、III 是纯净物；其中只有 III 由分子构成。",
+          "ku": "I, II û III maddeyên saf in; ji wan tenê III ji molekulan pêk tê."
         },
         {
-          "tr": "Proton, nötron, elektron, foton",
-          "en": "Proton, neutron, electron, photon",
-          "de": "Proton, Neutron, Elektron, Photon",
-          "fr": "Proton, neutron, électron, photon",
-          "ru": "Протон, нейтрон, электрон, фотон",
-          "ar": "البروتون، النيوترون، الإلكترون، الفوتون",
-          "zh": "质子、中子、电子、光子",
-          "ku": "Proton, notron, elektron, foton"
+          "tr": "II ve III bileşik; I ve IV elementtir.",
+          "en": "II and III are compounds; I and IV are elements.",
+          "de": "II und III sind Verbindungen; I und IV sind Elemente.",
+          "fr": "II et III sont des composés ; I et IV sont des éléments.",
+          "ru": "II и III — сложные вещества; I и IV — простые вещества.",
+          "ar": "II وIII مركّبان؛ وI وIV عنصران.",
+          "zh": "II 和 III 是化合物；I 和 IV 是单质。",
+          "ku": "II û III pêkhatî ne; I û IV element in."
         }
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "explanation": {
-        "tr": "Aristo (Empedokles'ten aldığı görüşle) maddelerin toprak, su, hava ve ateşten oluştuğunu ileri sürmüştür; simyacılar da bu oranları değiştirerek bir metali başka bir metale dönüştürebileceklerini düşünmüştür. Hidrojen, oksijen gibi gerçek elementler ve proton, elektron gibi tanecikler çok sonra tanımlanmıştır. Kükürt-cıva-tuz üçlüsü ise simyacıların sonraki bir görüşüdür, Aristo'ya ait değildir.",
-        "en": "Aristotle (building on Empedocles) held that matter is made of earth, water, air and fire; alchemists thought that by changing these proportions one metal could be turned into another. Real elements like hydrogen and oxygen, and particles like protons and electrons, were defined much later. The sulfur–mercury–salt trio is a later alchemical idea, not Aristotle's.",
-        "de": "Aristoteles (nach Empedokles) lehrte, dass Stoffe aus Erde, Wasser, Luft und Feuer bestehen; Alchemisten glaubten, durch Ändern dieser Anteile ein Metall in ein anderes verwandeln zu können. Echte Elemente wie Wasserstoff und Sauerstoff sowie Teilchen wie Protonen und Elektronen wurden viel später definiert. Die Trias Schwefel–Quecksilber–Salz ist eine spätere alchemistische Idee, nicht die des Aristoteles.",
-        "fr": "Aristote (reprenant Empédocle) affirmait que la matière est formée de terre, d'eau, d'air et de feu ; les alchimistes pensaient pouvoir changer un métal en un autre en modifiant ces proportions. Les vrais éléments comme l'hydrogène et l'oxygène, et les particules comme le proton ou l'électron, ont été définis bien plus tard. La triade soufre–mercure–sel est une idée alchimique postérieure, pas celle d'Aristote.",
-        "ru": "Аристотель (вслед за Эмпедоклом) считал, что вещества состоят из земли, воды, воздуха и огня; алхимики полагали, что, меняя соотношение этих стихий, можно превратить один металл в другой. Настоящие элементы, такие как водород и кислород, и частицы — протоны, электроны — были открыты гораздо позже. Триада «сера — ртуть — соль» — более поздняя идея алхимиков, а не Аристотеля.",
-        "ar": "رأى أرسطو (متأثراً بإمبيدوكليس) أن المواد تتكون من التراب والماء والهواء والنار، واعتقد الخيميائيون أنهم بتغيير هذه النسب يستطيعون تحويل فلز إلى آخر. أما العناصر الحقيقية كالهيدروجين والأكسجين والجسيمات كالبروتون والإلكترون فعُرّفت بعد ذلك بكثير. وثلاثية الكبريت والزئبق والملح فكرة خيميائية لاحقة وليست لأرسطو.",
-        "zh": "亚里士多德（继承恩培多克勒的观点）认为物质由土、水、气、火构成；炼金术士认为改变这些比例就能把一种金属变成另一种。氢、氧等真正的元素以及质子、电子等粒子是很久以后才被定义的。“硫–汞–盐”三要素是后来炼金术士的观点，不属于亚里士多德。",
-        "ku": "Arîstoteles (li ser bingeha dîtina Empedokles) digot ku made ji ax, av, hewa û agir pêk tên; alkîmîstan jî difikirîn ku bi guhertina van rêjeyan dikarin metalekê veguherînin metaleke din. Elementên rastîn ên wekî hîdrojen û oksîjenê û perçeyên wekî proton û elektronê gelek paşê hatin pênasekirin. Sêyeya kukurt–cîva–xwê jî ramaneke paşîn a alkîmîstan e, ne ya Arîstoteles e."
+        "tr": "I'de tek tür atom ayrı ayrı bulunur: element. II'de yalnızca tek tür atomdan oluşmuş iki atomlu moleküller vardır: element molekülü; molekül içermesi bileşik olmasını gerektirmez. III'te birbirinin aynısı olan moleküllerin her biri iki farklı türde atom içerir: bileşik. IV'te tek atomlar ile iki atomlu moleküller, yani iki farklı madde bir aradadır: karışım. I, II ve III saf maddedir; II ve III moleküllerden oluşur.",
+        "en": "In I, atoms of a single kind are present separately: an element. II contains diatomic molecules made of only one kind of atom: an element whose particles are molecules; containing molecules does not make a substance a compound. In III, every identical molecule contains two different kinds of atoms: a compound. IV contains single atoms together with diatomic molecules, i.e. two different substances: a mixture. I, II and III are pure substances, and both II and III consist of molecules.",
+        "de": "In I liegen Atome einer einzigen Sorte einzeln vor: ein Element. II enthält zweiatomige Moleküle aus nur einer Atomsorte: ein Element aus Molekülen; Moleküle zu enthalten macht einen Stoff nicht zur Verbindung. In III enthält jedes der gleichen Moleküle zwei verschiedene Atomsorten: eine Verbindung. IV enthält einzelne Atome und zweiatomige Moleküle, also zwei verschiedene Stoffe: ein Gemisch. I, II und III sind Reinstoffe; II und III bestehen aus Molekülen.",
+        "fr": "En I, des atomes d'un seul type sont isolés : c'est un élément. II contient des molécules diatomiques formées d'un seul type d'atome : un élément moléculaire ; contenir des molécules ne fait pas d'une substance un composé. En III, chaque molécule, toutes identiques, contient deux types d'atomes : c'est un composé. IV contient des atomes isolés et des molécules diatomiques, donc deux substances différentes : c'est un mélange. I, II et III sont des corps purs ; II et III sont formés de molécules.",
+        "ru": "В I находятся отдельные атомы одного вида — простое вещество. В II — двухатомные молекулы из атомов одного вида: это простое вещество молекулярного строения; наличие молекул не делает вещество сложным. В III каждая из одинаковых молекул содержит атомы двух видов — сложное вещество. В IV одновременно есть отдельные атомы и двухатомные молекулы, то есть два разных вещества — смесь. I, II и III — чистые вещества; II и III состоят из молекул.",
+        "ar": "في I ذرات من نوع واحد منفصلة: عنصر. وفي II جزيئات ثنائية الذرة مكوّنة من نوع واحد من الذرات فقط: عنصر جزيئي، واحتواء المادة على جزيئات لا يجعلها مركّبًا. وفي III يحتوي كل جزيء من الجزيئات المتماثلة على نوعين مختلفين من الذرات: مركّب. وفي IV ذرات منفردة مع جزيئات ثنائية الذرة، أي مادتان مختلفتان: مخلوط. المواد I وII وIII نقية، وII وIII تتكوّنان من جزيئات.",
+        "zh": "I 中是同种原子单独存在：单质。II 中是只由同种原子构成的双原子分子：由分子构成的单质；含有分子并不意味着是化合物。III 中每个相同的分子都含有两种不同的原子：化合物。IV 中单个原子和双原子分子共存，即两种不同的物质：混合物。I、II、III 是纯净物，其中 II 和 III 都由分子构成。",
+        "ku": "Di I de atomên tenê yek curî bi serê xwe hene: element. Di II de molekulên duatomî yên tenê ji yek curê atomê pêk hatine hene: elementeke molekulî; hebûna molekulan maddeyekê nake pêkhatî. Di III de her yek ji molekulên wekhev du curên cuda yên atomê dihewîne: pêkhatî. Di IV de atomên tenê û molekulên duatomî, ango du maddeyên cuda bi hev re ne: tevlihevî. I, II û III maddeyên saf in; II û III ji molekulan pêk tên."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 116,
+        "markup": "<rect x=\"8\" y=\"8\" width=\"78\" height=\"78\" class=\"qf-fill\"/><circle cx=\"28\" cy=\"28\" r=\"6\" class=\"qf-fill\"/><circle cx=\"63\" cy=\"26\" r=\"6\" class=\"qf-fill\"/><circle cx=\"43\" cy=\"53\" r=\"6\" class=\"qf-fill\"/><circle cx=\"70\" cy=\"63\" r=\"6\" class=\"qf-fill\"/><circle cx=\"26\" cy=\"72\" r=\"6\" class=\"qf-fill\"/><text x=\"47\" y=\"106\" text-anchor=\"middle\" class=\"qf-big\">I</text><rect x=\"98\" y=\"8\" width=\"78\" height=\"78\" class=\"qf-fill\"/><circle cx=\"112\" cy=\"26\" r=\"6\" class=\"qf-accent\"/><circle cx=\"123\" cy=\"26\" r=\"6\" class=\"qf-accent\"/><circle cx=\"142\" cy=\"38\" r=\"6\" class=\"qf-accent\"/><circle cx=\"153\" cy=\"38\" r=\"6\" class=\"qf-accent\"/><circle cx=\"114\" cy=\"60\" r=\"6\" class=\"qf-accent\"/><circle cx=\"125\" cy=\"60\" r=\"6\" class=\"qf-accent\"/><circle cx=\"144\" cy=\"70\" r=\"6\" class=\"qf-accent\"/><circle cx=\"155\" cy=\"70\" r=\"6\" class=\"qf-accent\"/><text x=\"137\" y=\"106\" text-anchor=\"middle\" class=\"qf-big\">II</text><rect x=\"188\" y=\"8\" width=\"78\" height=\"78\" class=\"qf-fill\"/><circle cx=\"200\" cy=\"33\" r=\"5\" class=\"qf-fill\"/><circle cx=\"220\" cy=\"33\" r=\"5\" class=\"qf-fill\"/><circle cx=\"210\" cy=\"28\" r=\"7\" class=\"qf-accent2\"/><circle cx=\"232\" cy=\"45\" r=\"5\" class=\"qf-fill\"/><circle cx=\"252\" cy=\"45\" r=\"5\" class=\"qf-fill\"/><circle cx=\"242\" cy=\"40\" r=\"7\" class=\"qf-accent2\"/><circle cx=\"202\" cy=\"69\" r=\"5\" class=\"qf-fill\"/><circle cx=\"222\" cy=\"69\" r=\"5\" class=\"qf-fill\"/><circle cx=\"212\" cy=\"64\" r=\"7\" class=\"qf-accent2\"/><circle cx=\"234\" cy=\"75\" r=\"5\" class=\"qf-fill\"/><circle cx=\"254\" cy=\"75\" r=\"5\" class=\"qf-fill\"/><circle cx=\"244\" cy=\"70\" r=\"7\" class=\"qf-accent2\"/><text x=\"227\" y=\"106\" text-anchor=\"middle\" class=\"qf-big\">III</text><rect x=\"278\" y=\"8\" width=\"78\" height=\"78\" class=\"qf-fill\"/><circle cx=\"296\" cy=\"26\" r=\"6\" class=\"qf-fill\"/><circle cx=\"338\" cy=\"56\" r=\"6\" class=\"qf-fill\"/><circle cx=\"300\" cy=\"72\" r=\"6\" class=\"qf-fill\"/><circle cx=\"318\" cy=\"26\" r=\"6\" class=\"qf-accent\"/><circle cx=\"329\" cy=\"26\" r=\"6\" class=\"qf-accent\"/><circle cx=\"302\" cy=\"50\" r=\"6\" class=\"qf-accent\"/><circle cx=\"313\" cy=\"50\" r=\"6\" class=\"qf-accent\"/><circle cx=\"326\" cy=\"74\" r=\"6\" class=\"qf-accent\"/><circle cx=\"337\" cy=\"74\" r=\"6\" class=\"qf-accent\"/><text x=\"317\" y=\"106\" text-anchor=\"middle\" class=\"qf-big\">IV</text>"
       }
     },
     {
       "id": "u01-twin16",
       "stem": {
-        "tr": "Bir öğrenci, stok çözeltiden tam olarak 25,00 mL alıp başka bir kaba aktarmak istiyor. Bu işlem için en uygun cam malzeme aşağıdakilerden hangisidir?",
-        "en": "A student wants to take exactly 25.00 mL of a stock solution and transfer it to another vessel. Which glassware is most suitable for this?",
-        "de": "Ein Schüler möchte genau 25,00 mL einer Stammlösung entnehmen und in ein anderes Gefäß überführen. Welches Glasgerät ist dafür am besten geeignet?",
-        "fr": "Un élève veut prélever exactement 25,00 mL d'une solution mère et les transvaser dans un autre récipient. Quelle verrerie convient le mieux ?",
-        "ru": "Ученику нужно отобрать ровно 25,00 мл исходного раствора и перенести в другой сосуд. Какая стеклянная посуда для этого наиболее подходит?",
-        "ar": "يريد طالب أخذ 25.00 mL بالضبط من محلول مخزون ونقلها إلى وعاء آخر. ما الأداة الزجاجية الأنسب لذلك؟",
-        "zh": "一名学生想从储备溶液中准确量取 25.00 mL 并转移到另一个容器中。最合适的玻璃仪器是哪一种？",
-        "ku": "Xwendekarek dixwaze ji çareseriya stokê tam 25,00 mL bigire û veguhezîne firaxeke din. Ji bo vî karî kîjan amûra camî herî guncav e?"
+        "tr": "Tabloda üç deneyde, işlemden önce ve sonra yapılan tartımların sonuçları verilmiştir.\nDeney sonuçlarıyla ilgili aşağıdaki yorumlardan hangileri doğrudur?\nI. 1. deney, kapalı bir sistemde toplam kütlenin korunduğunu gösterir.\nII. 2. deneyde katının kütlesi, magnezyuma havadan 1,6 g oksijen bağlandığı için artmıştır.\nIII. 3. deneyde 47,0 g madde yok olmuştur; kütlenin korunumu açık kaplarda geçerli değildir.",
+        "en": "The table gives the masses weighed before and after the process in three experiments.\nWhich of the following interpretations of the results are correct?\nI. Experiment 1 shows that total mass is conserved in a closed system.\nII. In experiment 2 the mass of the solid increased because 1.6 g of oxygen from the air combined with the magnesium.\nIII. In experiment 3, 47.0 g of matter was destroyed; conservation of mass does not hold in open containers.",
+        "de": "Die Tabelle zeigt die Massen, die in drei Versuchen vor und nach dem Vorgang gewogen wurden.\nWelche der folgenden Deutungen der Ergebnisse sind richtig?\nI. Versuch 1 zeigt, dass die Gesamtmasse in einem geschlossenen System erhalten bleibt.\nII. In Versuch 2 nahm die Masse des Feststoffs zu, weil sich 1,6 g Sauerstoff aus der Luft mit dem Magnesium verbanden.\nIII. In Versuch 3 wurden 47,0 g Materie vernichtet; die Massenerhaltung gilt in offenen Gefäßen nicht.",
+        "fr": "Le tableau donne les masses pesées avant et après l'opération dans trois expériences.\nLesquelles des interprétations suivantes des résultats sont exactes ?\nI. L'expérience 1 montre que la masse totale se conserve dans un système fermé.\nII. Dans l'expérience 2, la masse du solide a augmenté parce que 1,6 g de dioxygène de l'air s'est fixé sur le magnésium.\nIII. Dans l'expérience 3, 47,0 g de matière ont disparu ; la conservation de la masse ne s'applique pas aux récipients ouverts.",
+        "ru": "В таблице приведены массы, измеренные до и после процесса в трёх опытах.\nКакие из следующих выводов из результатов верны?\nI. Опыт 1 показывает, что в закрытой системе общая масса сохраняется.\nII. В опыте 2 масса твёрдого вещества увеличилась, потому что с магнием соединилось 1,6 г кислорода из воздуха.\nIII. В опыте 3 исчезло 47,0 г вещества; закон сохранения массы в открытых сосудах не выполняется.",
+        "ar": "يبيّن الجدول الكتل المقيسة قبل العملية وبعدها في ثلاث تجارب.\nأيّ التفسيرات الآتية للنتائج صحيحة؟\nI. تُظهر التجربة 1 أن الكتلة الكلية محفوظة في نظام مغلق.\nII. في التجربة 2 ازدادت كتلة المادة الصلبة لأن 1,6 g من أكسجين الهواء اتحدت مع المغنيسيوم.\nIII. في التجربة 3 فَنِيَت 47,0 g من المادة؛ فقانون حفظ الكتلة لا يصحّ في الأوعية المفتوحة.",
+        "zh": "表中给出了三个实验在操作前后称得的质量。\n关于实验结果，下列解释中正确的是哪些？\nI. 实验 1 表明在封闭体系中总质量守恒。\nII. 实验 2 中固体质量增加，是因为空气中 1.6 g 氧与镁结合了。\nIII. 实验 3 中有 47.0 g 物质消失了；质量守恒定律在敞口容器中不成立。",
+        "ku": "Di tabloyê de encamên kêşanên berî û piştî karûbarê di sê ceribandinan de hatine dayîn.\nKîjan ji van şîroveyên encaman rast in?\nI. Ceribandina 1. nîşan dide ku di pergaleke girtî de girseya giştî tê parastin.\nII. Di ceribandina 2. de girseya hişkê zêde bûye, ji ber ku 1,6 g oksîjena hewayê bi magnezyûmê ve girêdayî bûye.\nIII. Di ceribandina 3. de 47,0 g madde winda bûye; parastina girseyê di firaxên vekirî de derbasdar nîne."
       },
       "options": [
         {
-          "tr": "Pipet (balonlu pipet)",
-          "en": "Pipette (volumetric pipette)",
-          "de": "Pipette (Vollpipette)",
-          "fr": "Pipette (pipette jaugée)",
-          "ru": "Пипетка (мерная пипетка Мора)",
-          "ar": "الماصة (الماصة الحجمية)",
-          "zh": "移液管（胖肚移液管）",
-          "ku": "Pîpet (pîpeta balonî)"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Beher",
-          "en": "Beaker",
-          "de": "Becherglas",
-          "fr": "Bécher",
-          "ru": "Химический стакан",
-          "ar": "الكأس الزجاجية",
-          "zh": "烧杯",
-          "ku": "Beher"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "Erlenmayer",
-          "en": "Erlenmeyer flask",
-          "de": "Erlenmeyerkolben",
-          "fr": "Erlenmeyer",
-          "ru": "Колба Эрленмейера",
-          "ar": "دورق إرلنماير",
-          "zh": "锥形瓶",
-          "ku": "Erlenmeyer"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Huni",
-          "en": "Funnel",
-          "de": "Trichter",
-          "fr": "Entonnoir",
-          "ru": "Воронка",
-          "ar": "القمع",
-          "zh": "漏斗",
-          "ku": "Qîf"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Saat camı",
-          "en": "Watch glass",
-          "de": "Uhrglas",
-          "fr": "Verre de montre",
-          "ru": "Часовое стекло",
-          "ar": "زجاجة الساعة",
-          "zh": "表面皿",
-          "ku": "Cama saetê"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Belirli bir hacmi hassas biçimde alıp aktarmak için pipet kullanılır; balonlu pipet tek bir hacme (25,00 mL gibi) kalibre edilmiştir. Beher ve erlenmayer üzerindeki çizgiler yalnızca yaklaşık hacim gösterir. Huni sıvı aktarmaya veya süzmeye, saat camı katı tartmaya ve kapak olarak kullanılır; hacim ölçmez.",
-        "en": "A pipette is used to take and deliver a precise volume; a volumetric pipette is calibrated for a single volume such as 25.00 mL. The marks on beakers and Erlenmeyer flasks give only approximate volumes. A funnel is for pouring or filtering and a watch glass for weighing solids or as a cover; neither measures volume.",
-        "de": "Zum genauen Abmessen und Überführen eines Volumens dient eine Pipette; eine Vollpipette ist auf ein einziges Volumen wie 25,00 mL geeicht. Die Markierungen an Becherglas und Erlenmeyerkolben sind nur ungefähr. Ein Trichter dient zum Umfüllen oder Filtrieren, ein Uhrglas zum Wägen von Feststoffen oder als Abdeckung; beide messen kein Volumen.",
-        "fr": "On utilise une pipette pour prélever et délivrer un volume précis ; la pipette jaugée est étalonnée pour un seul volume, par exemple 25,00 mL. Les graduations du bécher et de l'erlenmeyer ne sont qu'approximatives. L'entonnoir sert à transvaser ou filtrer, le verre de montre à peser des solides ou à couvrir ; aucun ne mesure un volume.",
-        "ru": "Для точного отбора и переноса определённого объёма используют пипетку; пипетка Мора откалибрована на один объём, например 25,00 мл. Деления на химическом стакане и колбе Эрленмейера показывают объём лишь приблизительно. Воронка нужна для переливания или фильтрования, часовое стекло — для взвешивания твёрдых веществ или как крышка; объём они не измеряют.",
-        "ar": "تُستخدم الماصة لأخذ حجم دقيق ونقله، والماصة الحجمية معايَرة على حجم واحد مثل 25.00 mL. أما علامات الكأس ودورق إرلنماير فتقريبية. والقمع للنقل أو الترشيح، وزجاجة الساعة لوزن المواد الصلبة أو كغطاء، ولا يقيس أيّ منهما الحجم.",
-        "zh": "准确量取并转移一定体积的液体要用移液管；胖肚移液管只校准一个体积，如 25.00 mL。烧杯和锥形瓶上的刻度只是近似值。漏斗用于转移液体或过滤，表面皿用于称量固体或作盖子，它们都不能量体积。",
-        "ku": "Ji bo girtin û veguhestina qebareyeke diyar bi hesasî pîpet tê bikaranîn; pîpeta balonî li gorî yek qebareyê (wekî 25,00 mL) hatiye kalîbrekirin. Xetên li ser beher û erlenmeyerê tenê qebareya nêzîkî nîşan didin. Qîf ji bo veguhestina şileyan an parzûnkirinê, cama saetê jî ji bo kêşana madeyên hişk an wekî qapax tê bikaranîn; ew qebareyê napîvin."
+        "tr": "1. deneyde kap kapalı olduğundan madde giremez ve çıkamaz; kalay oksitlense de toplam kütle 120,0 g'da kalır (I doğru). 2. deneyde magnezyum havadaki oksijenle birleşerek MgO oluşturur; kütle artışı 4,0 − 2,4 = 1,6 g, bağlanan oksijenin kütlesidir (II doğru). 3. deneyde yanma sonucu oluşan CO2 ve su buharı açık kaptan havaya karışır; 50,0 − 3,0 = 47,0 g'lık azalma kaçan gazlardan kaynaklanır. Kütle her tepkimede korunur; açık kapta yalnızca giren ve çıkan gazlar tartılamaz (III yanlış). Doğru yanıt: I ve II.",
+        "en": "In experiment 1 the container is closed, so no matter can enter or leave; even though the tin is oxidised, the total mass stays at 120.0 g (I correct). In experiment 2 magnesium combines with oxygen from the air to form MgO; the increase 4.0 − 2.4 = 1.6 g is the mass of oxygen taken up (II correct). In experiment 3 the CO2 and water vapour formed by burning escape from the open container; the decrease of 50.0 − 3.0 = 47.0 g is due to the escaping gases. Mass is conserved in every reaction; in an open container the gases entering and leaving simply are not weighed (III false). Answer: I and II.",
+        "de": "In Versuch 1 ist das Gefäß geschlossen, sodass kein Stoff hinein- oder hinausgelangt; obwohl das Zinn oxidiert wird, bleibt die Gesamtmasse bei 120,0 g (I richtig). In Versuch 2 verbindet sich Magnesium mit Luftsauerstoff zu MgO; die Zunahme 4,0 − 2,4 = 1,6 g ist die Masse des gebundenen Sauerstoffs (II richtig). In Versuch 3 entweichen das beim Verbrennen gebildete CO2 und der Wasserdampf aus dem offenen Gefäß; die Abnahme um 50,0 − 3,0 = 47,0 g stammt von den entweichenden Gasen. Die Masse bleibt bei jeder Reaktion erhalten; im offenen Gefäß werden nur die zu- und abströmenden Gase nicht mitgewogen (III falsch). Antwort: I und II.",
+        "fr": "Dans l'expérience 1, le récipient est fermé : aucune matière ne peut entrer ni sortir ; bien que l'étain s'oxyde, la masse totale reste 120,0 g (I exacte). Dans l'expérience 2, le magnésium se combine au dioxygène de l'air pour former MgO ; l'augmentation 4,0 − 2,4 = 1,6 g est la masse d'oxygène fixée (II exacte). Dans l'expérience 3, le CO2 et la vapeur d'eau formés par la combustion s'échappent du récipient ouvert ; la diminution de 50,0 − 3,0 = 47,0 g est due aux gaz qui s'échappent. La masse se conserve dans toute réaction ; dans un récipient ouvert, on ne pèse simplement pas les gaz qui entrent et sortent (III fausse). Réponse : I et II.",
+        "ru": "В опыте 1 сосуд закрыт, вещество не может ни войти, ни выйти; хотя олово окисляется, общая масса остаётся 120,0 г (I верно). В опыте 2 магний соединяется с кислородом воздуха, образуя MgO; прирост 4,0 − 2,4 = 1,6 г — это масса присоединившегося кислорода (II верно). В опыте 3 образующиеся при горении CO2 и водяной пар уходят из открытого сосуда; уменьшение на 50,0 − 3,0 = 47,0 г вызвано улетевшими газами. Масса сохраняется в любой реакции; в открытом сосуде просто не взвешиваются поступающие и уходящие газы (III неверно). Ответ: I и II.",
+        "ar": "في التجربة 1 الوعاء مغلق فلا تدخل مادة ولا تخرج؛ ومع أن القصدير يتأكسد تبقى الكتلة الكلية 120,0 g (I صحيحة). في التجربة 2 يتحد المغنيسيوم مع أكسجين الهواء مكوّنًا MgO؛ والزيادة 4,0 − 2,4 = 1,6 g هي كتلة الأكسجين المتحد (II صحيحة). في التجربة 3 يتسرّب CO2 وبخار الماء الناتجان عن الاحتراق من الوعاء المفتوح؛ فالنقص 50,0 − 3,0 = 47,0 g سببه الغازات المتسرّبة. الكتلة محفوظة في كل تفاعل، وفي الوعاء المفتوح لا تُوزن الغازات الداخلة والخارجة فقط (III خاطئة). الإجابة: I و II.",
+        "zh": "实验 1 中容器密闭，物质既不能进入也不能逸出；虽然锡被氧化，总质量仍为 120.0 g（I 正确）。实验 2 中镁与空气中的氧结合生成 MgO；质量增加 4.0 − 2.4 = 1.6 g，就是结合的氧的质量（II 正确）。实验 3 中燃烧生成的 CO2 和水蒸气从敞口容器逸散到空气中；减少的 50.0 − 3.0 = 47.0 g 来自逸出的气体。任何反应中质量都守恒；敞口容器中只是进出的气体没有被称量（III 错误）。答案：I 和 II。",
+        "ku": "Di ceribandina 1. de firax girtî ye, ji ber vê madde nikare bikeve û derkeve; her çend qelay oksîde dibe jî girseya giştî di 120,0 g de dimîne (I rast e). Di ceribandina 2. de magnezyûm bi oksîjena hewayê re dibe yek û MgO çêdike; zêdebûna 4,0 − 2,4 = 1,6 g girseya oksîjena girêdayî ye (II rast e). Di ceribandina 3. de CO2 û buhara avê ya ji şewitandinê çêdibin ji firaxa vekirî derdikevin hewayê; kêmbûna 50,0 − 3,0 = 47,0 g ji gazên ku direvin tê. Girse di her reaksiyonê de tê parastin; di firaxa vekirî de tenê gazên ku dikevin û derdikevin nayên kêşan (III şaş e). Bersiv: I û II."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Deney",
+            "en": "Experiment",
+            "de": "Versuch",
+            "fr": "Expérience",
+            "ru": "Опыт",
+            "ar": "التجربة",
+            "zh": "实验",
+            "ku": "Ceribandin"
+          },
+          {
+            "tr": "Yapılan işlem",
+            "en": "Procedure",
+            "de": "Vorgang",
+            "fr": "Opération",
+            "ru": "Процесс",
+            "ar": "العملية",
+            "zh": "操作",
+            "ku": "Karûbar"
+          },
+          {
+            "tr": "Önceki kütle (g)",
+            "en": "Mass before (g)",
+            "de": "Masse vorher (g)",
+            "fr": "Masse avant (g)",
+            "ru": "Масса до (г)",
+            "ar": "الكتلة قبل (g)",
+            "zh": "操作前质量 (g)",
+            "ku": "Girse berê (g)"
+          },
+          {
+            "tr": "Sonraki kütle (g)",
+            "en": "Mass after (g)",
+            "de": "Masse nachher (g)",
+            "fr": "Masse après (g)",
+            "ru": "Масса после (г)",
+            "ar": "الكتلة بعد (g)",
+            "zh": "操作后质量 (g)",
+            "ku": "Girse paşê (g)"
+          }
+        ],
+        "rows": [
+          [
+            "1",
+            {
+              "tr": "Kapalı cam kapta kalay ısıtılıyor (kap + içerik)",
+              "en": "Tin heated in a sealed glass vessel (vessel + contents)",
+              "de": "Zinn im verschlossenen Glasgefäß erhitzt (Gefäß + Inhalt)",
+              "fr": "Étain chauffé dans un récipient en verre scellé (récipient + contenu)",
+              "ru": "Олово нагревают в запаянном стеклянном сосуде (сосуд + содержимое)",
+              "ar": "تسخين القصدير في وعاء زجاجي مغلق (الوعاء + المحتوى)",
+              "zh": "在密封玻璃容器中加热锡（容器 + 内容物）",
+              "ku": "Qelay di firaxeke camê ya girtî de tê germkirin (firax + naverok)"
+            },
+            "120,0",
+            "120,0"
+          ],
+          [
+            "2",
+            {
+              "tr": "Açık krozede magnezyum şerit yakılıyor (katı)",
+              "en": "Magnesium ribbon burned in an open crucible (solid)",
+              "de": "Magnesiumband im offenen Tiegel verbrannt (Feststoff)",
+              "fr": "Ruban de magnésium brûlé dans un creuset ouvert (solide)",
+              "ru": "Магниевую ленту сжигают в открытом тигле (твёрдое вещество)",
+              "ar": "حرق شريط مغنيسيوم في بوتقة مفتوحة (المادة الصلبة)",
+              "zh": "在敞口坩埚中燃烧镁条（固体）",
+              "ku": "Şerîda magnezyûmê di krozeya vekirî de tê şewitandin (hişk)"
+            },
+            "2,4",
+            "4,0"
+          ],
+          [
+            "3",
+            {
+              "tr": "Açık kapta odun yakılıyor (katı)",
+              "en": "Wood burned in an open container (solid)",
+              "de": "Holz im offenen Gefäß verbrannt (Feststoff)",
+              "fr": "Bois brûlé dans un récipient ouvert (solide)",
+              "ru": "Древесину сжигают в открытом сосуде (твёрдое вещество)",
+              "ar": "حرق خشب في وعاء مفتوح (المادة الصلبة)",
+              "zh": "在敞口容器中燃烧木头（固体）",
+              "ku": "Dar di firaxeke vekirî de tê şewitandin (hişk)"
+            },
+            "50,0",
+            "3,0"
+          ]
+        ]
       }
     }
   ]

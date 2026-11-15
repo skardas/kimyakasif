@@ -139,14 +139,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-f04",
       "fact": {
-        "tr": "Cam, plastik, tereyağı ve lastik belirli bir erime noktası olmayan amorf katılardır.",
-        "en": "Glass, plastic, butter and rubber are amorphous solids that do not have a specific melting point.",
-        "de": "Glas, Kunststoff, Butter und Gummi sind amorphe Feststoffe, die keinen bestimmten Schmelzpunkt haben.",
-        "fr": "Le verre, le plastique, le beurre et le caoutchouc sont des solides amorphes qui n'ont pas de point de fusion spécifique.",
-        "ru": "Стекло, пластмассы, сливочное масло и резина — аморфные твёрдые вещества, не имеющие определённой температуры плавления.",
-        "ar": "الزجاج والبلاستيك والزبدة والمطاط مواد صلبة غير متبلورة ليس لها درجة انصهار محددة.",
-        "zh": "玻璃、塑料、黄油和橡胶是没有固定熔点的非晶体。",
-        "ku": "Cam, plastîk, nivîşk û lastîk madeyên hişk ên amorf in ku xala wan a helînê ya diyar tune ye."
+        "tr": "Cam ve kauçuk (lastik) gibi amorf katıların belirli bir erime noktası yoktur; ısıtıldıklarında bir sıcaklık aralığında yumuşayarak akışkanlaşırlar.",
+        "en": "Amorphous solids such as glass and rubber have no definite melting point; when heated they soften and flow over a range of temperatures.",
+        "de": "Amorphe Feststoffe wie Glas und Kautschuk (Gummi) haben keinen bestimmten Schmelzpunkt; beim Erhitzen erweichen sie über einen Temperaturbereich und werden fließfähig.",
+        "fr": "Les solides amorphes comme le verre et le caoutchouc n'ont pas de point de fusion défini ; chauffés, ils se ramollissent et deviennent fluides sur un intervalle de températures.",
+        "ru": "Аморфные твёрдые вещества, например стекло и каучук (резина), не имеют определённой температуры плавления: при нагревании они размягчаются и становятся текучими в интервале температур.",
+        "ar": "ليس للمواد الصلبة غير المتبلورة مثل الزجاج والمطاط درجة انصهار محددة؛ فعند تسخينها تلين وتسيل تدريجيًا ضمن مدى من درجات الحرارة.",
+        "zh": "玻璃和橡胶等非晶体没有固定的熔点，受热时在一个温度范围内逐渐软化而流动。",
+        "ku": "Hişkên amorf ên wekî cam û kauçuk (lastîk) xwedî xaleke helînê ya diyar nînin; dema têne germkirin di navbereke germahiyê de nerm dibin û diherikin."
       },
       "trap": {
         "tr": "Cam iyonik kristal yapıda olup keskin bir erime noktasına sahiptir.",
@@ -436,14 +436,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-f13",
       "fact": {
-        "tr": "Moleküller arası çekim kuvveti güçlü olan sıvıların viskozitesi yüksek, buhar basıncı düşüktür.",
-        "en": "Liquids with strong intermolecular forces have high viscosity and low vapour pressure.",
-        "de": "Flüssigkeiten mit starken intermolekularen Kräften haben eine hohe Viskosität und einen niedrigen Dampfdruck.",
-        "fr": "Les liquides dotés de fortes forces intermoléculaires ont une viscosité élevée et une faible pression de vapeur.",
-        "ru": "Жидкости с сильным межмолекулярным притяжением имеют высокую вязкость и низкое давление пара.",
-        "ar": "السوائل ذات قوى التجاذب القوية بين الجزيئات لزوجتها عالية وضغط بخارها منخفض.",
-        "zh": "分子间作用力强的液体黏度大、蒸气压低。",
-        "ku": "Şileyên ku hêzên wan ên navmolekulî xurt in xwedî vîskozîteya bilind û zexta buharê ya nizm in."
+        "tr": "Aynı sıcaklıkta moleküller arası çekim kuvvetleri güçlü olan sıvıların buhar basıncı düşük, viskozitesi genellikle yüksektir.",
+        "en": "At the same temperature, liquids with strong intermolecular forces have a low vapour pressure and usually a high viscosity.",
+        "de": "Bei gleicher Temperatur haben Flüssigkeiten mit starken zwischenmolekularen Kräften einen niedrigen Dampfdruck und meist eine hohe Viskosität.",
+        "fr": "À la même température, les liquides à fortes forces intermoléculaires ont une faible pression de vapeur et, en général, une viscosité élevée.",
+        "ru": "При одинаковой температуре жидкости с сильным межмолекулярным притяжением имеют низкое давление пара и, как правило, высокую вязкость.",
+        "ar": "عند درجة الحرارة نفسها يكون ضغط بخار السوائل ذات قوى التجاذب القوية بين الجزيئات منخفضًا ولزوجتها عالية في الغالب.",
+        "zh": "相同温度下，分子间作用力强的液体蒸气压低，黏度通常较大。",
+        "ku": "Di heman germahiyê de zexta buharê ya şileyên ku hêzên wan ên navmolekulî xurt in nizm e û vîskozîteya wan bi gelemperî bilind e."
       },
       "trap": {
         "tr": "Moleküller arası çekim kuvveti güçlü olan sıvılar çok hızlı buharlaşır ve yüksek buhar basıncına sahiptir.",
@@ -755,14 +755,14 @@ export const unit04: ChemistryUnitSeedData = {
         "ku": "Buhar"
       },
       "distinction": {
-        "tr": "Gaz, oda koşullarında kendiliğinden bu hâlde bulunan maddelere (O2, N2, CO2) denir; buhar ise oda koşullarında sıvı ya da katı olan bir maddenin (su, iyot) buharlaşarak veya süblimleşerek geçtiği hâle denir.",
-        "en": "Gas is the term for substances that exist in this state at room conditions (O2, N2, CO2); vapour is the term for the state that a substance which is liquid or solid at room conditions (water, iodine) enters by evaporating or subliming.",
-        "de": "Als Gas bezeichnet man Stoffe, die bei Raumbedingungen in diesem Zustand vorliegen (O2, N2, CO2); als Dampf bezeichnet man den Zustand, in den ein bei Raumbedingungen flüssiger oder fester Stoff (Wasser, Iod) durch Verdampfen oder Sublimieren übergeht.",
-        "fr": "On appelle gaz une substance qui se trouve dans cet état dans les conditions ambiantes (O2, N2, CO2) ; on appelle vapeur l'état que prend, par évaporation ou sublimation, une substance liquide ou solide dans ces conditions (eau, diiode).",
-        "ru": "Газ — вещество, которое при комнатных условиях находится в газообразном состоянии (O2, N2, CO2); пар — газообразное состояние вещества, жидкого или твёрдого при комнатных условиях (вода, иод), в которое оно переходит при испарении или возгонке.",
-        "ar": "الغاز اسم يُطلق على المواد التي توجد في هذه الحالة في الظروف العادية (O2 وN2 وCO2)؛ أما البخار فهو الحالة التي تتحول إليها بالتبخر أو التسامي مادة تكون سائلة أو صلبة في الظروف العادية (الماء، اليود).",
-        "zh": "气体是指在常温常压下本身就呈气态的物质(O2、N2、CO2)；而蒸气是常温常压下为液态或固态的物质（水、碘）经蒸发或升华形成的气态。",
-        "ku": "Gaz navê madeyên ku di şertên odeyê de bi xwe di vê rewşê de ne (O2, N2, CO2); buhar jî rewşa madeyeke ye ku di şertên odeyê de şile an hişk e (av, îyot) û bi buharbûn an sublîmebûnê dikeve vê rewşê."
+        "tr": "Gaz, kritik sıcaklığının üzerinde bulunduğu için yalnızca basınç artırılarak sıvılaştırılamayan akışkandır (oda koşullarında O2, N2, He); buhar ise kritik sıcaklığının altında bulunduğundan yalnızca basınç artırılarak yoğuşturulabilen akışkandır (su buharı, iyot buharı).",
+        "en": "Gas is a fluid above its critical temperature, so it cannot be liquefied by raising the pressure alone (O2, N2, He at room conditions); vapour is a fluid below its critical temperature, so it can be condensed by raising the pressure alone (water vapour, iodine vapour).",
+        "de": "Gas ist ein Fluid oberhalb seiner kritischen Temperatur und lässt sich deshalb nicht allein durch Druckerhöhung verflüssigen (O2, N2, He bei Raumbedingungen); Dampf ist ein Fluid unterhalb seiner kritischen Temperatur und lässt sich allein durch Druckerhöhung kondensieren (Wasserdampf, Ioddampf).",
+        "fr": "Un gaz est un fluide au-dessus de sa température critique : on ne peut pas le liquéfier en augmentant seulement la pression (O2, N2, He dans les conditions ambiantes) ; une vapeur est un fluide au-dessous de sa température critique : une simple augmentation de pression suffit à la condenser (vapeur d'eau, vapeur de diiode).",
+        "ru": "Газ — текучая среда выше своей критической температуры, поэтому его нельзя сжижить одним лишь повышением давления (O2, N2, He при комнатных условиях); пар — текучая среда ниже своей критической температуры, его можно сконденсировать одним повышением давления (водяной пар, пары иода).",
+        "ar": "الغاز مائع فوق درجة حرارته الحرجة، فلا يمكن إسالته بزيادة الضغط وحدها (O2 وN2 وHe في الظروف العادية)؛ أما البخار فمائع تحت درجة حرارته الحرجة، فيمكن تكثيفه بزيادة الضغط وحدها (بخار الماء، بخار اليود).",
+        "zh": "气体是处于其临界温度以上的流体，仅靠加压不能使其液化（常温下的 O2、N2、He）；而蒸气是处于其临界温度以下的流体，仅靠加压就能使其凝结（水蒸气、碘蒸气）。",
+        "ku": "Gaz ew herikbar e ku li ser germahiya xwe ya krîtîk e, ji ber vê tenê bi zêdekirina zextê nayê şilekirin (di şertên odeyê de O2, N2, He); buhar jî ew herikbar e ku li binê germahiya xwe ya krîtîk e, ji ber vê tenê bi zêdekirina zextê dikare were hilmandin (buhara avê, buhara îyotê)."
       }
     },
     {
@@ -836,14 +836,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-s01",
       "title": {
-        "tr": "Kapalı Kapta Sıvı Isıtıldığında Gerçekleşen Değişimler",
-        "en": "Changes When a Liquid in a Closed Container Is Heated",
-        "de": "Vorgänge beim Erwärmen einer Flüssigkeit im geschlossenen Gefäß",
-        "fr": "Changements lors du chauffage d'un liquide en récipient fermé",
-        "ru": "Изменения при нагревании жидкости в закрытом сосуде",
-        "ar": "التغيرات عند تسخين سائل في وعاء مغلق",
-        "zh": "加热密闭容器中的液体时发生的变化",
-        "ku": "Guherînên Dema Şile di Firaxeke Girtî de Tê Germkirin"
+        "tr": "Kapalı Kaptaki Sıvının Isıtılması",
+        "en": "Heating a Liquid in a Closed Container",
+        "de": "Erwärmen einer Flüssigkeit im geschlossenen Gefäß",
+        "fr": "Chauffage d'un liquide en récipient fermé",
+        "ru": "Нагревание жидкости в закрытом сосуде",
+        "ar": "تسخين سائل في وعاء مغلق",
+        "zh": "加热密闭容器中的液体",
+        "ku": "Germkirina Şileyê di Firaxeke Girtî de"
       },
       "steps": [
         {
@@ -1001,14 +1001,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-s04",
       "title": {
-        "tr": "Pistonlu Kapta Sıkışma",
-        "en": "Compression in a Piston Container",
-        "de": "Kompression in einem Kolbengefäß",
-        "fr": "Compression dans un récipient à piston",
+        "tr": "Pistonlu Kaptaki Gazın Sıkıştırılması",
+        "en": "Compressing a Gas in a Piston Container",
+        "de": "Kompression eines Gases im Kolbengefäß",
+        "fr": "Compression d'un gaz dans un récipient à piston",
         "ru": "Сжатие газа в сосуде с поршнем",
-        "ar": "انضغاط الغاز في وعاء ذي مكبس",
-        "zh": "活塞容器中气体的压缩",
-        "ku": "Pêçandin di Firaxa bi Piston de"
+        "ar": "ضغط غاز في وعاء ذي مكبس",
+        "zh": "压缩活塞容器中的气体",
+        "ku": "Pêçandina Gazê di Firaxa bi Piston de"
       },
       "steps": [
         {
@@ -1058,77 +1058,105 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin01",
       "stem": {
-        "tr": "Bir sıvının denge buhar basıncını artırmak için aşağıdakilerden hangisi tek başına uygulanabilir?",
-        "en": "Which of the following can be applied alone to increase the equilibrium vapour pressure of a liquid?",
-        "de": "Welche der folgenden Maßnahmen kann allein angewendet werden, um den Gleichgewichtsdampfdruck einer Flüssigkeit zu erhöhen?",
-        "fr": "Lequel des éléments suivants peut être appliqué seul pour augmenter la pression de vapeur d’équilibre d’un liquide ?",
-        "ru": "Какое из перечисленных действий само по себе позволяет увеличить равновесное давление пара жидкости?",
-        "ar": "أيّ مما يلي يمكن القيام به وحده لزيادة ضغط البخار المتزن لسائل؟",
-        "zh": "下列哪项措施单独实施即可增大液体的平衡蒸气压？",
-        "ku": "Ji bo zêdekirina zexta buharê ya hevsengiyê ya şileyekê, kîjan ji yên jêrîn bi tena serê xwe dikare were kirin?"
+        "tr": "Şekildeki kapalı kaplarda sıvı ile buharı arasında denge kurulmuştur.\nKaplardaki denge buhar basınçları (P) arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?",
+        "en": "In the closed containers shown, equilibrium has been reached between each liquid and its vapour.\nIn which option is the relationship between the equilibrium vapour pressures (P) in the containers given correctly?",
+        "de": "In den abgebildeten geschlossenen Gefäßen hat sich jeweils ein Gleichgewicht zwischen Flüssigkeit und Dampf eingestellt.\nIn welcher Antwort ist die Beziehung zwischen den Gleichgewichtsdampfdrücken (P) in den Gefäßen richtig angegeben?",
+        "fr": "Dans les récipients fermés représentés, l'équilibre s'est établi entre chaque liquide et sa vapeur.\nDans quelle proposition la relation entre les pressions de vapeur à l'équilibre (P) dans les récipients est-elle correcte ?",
+        "ru": "В изображённых закрытых сосудах установилось равновесие между жидкостью и её паром.\nВ каком варианте верно указано соотношение равновесных давлений пара (P) в сосудах?",
+        "ar": "في الأوعية المغلقة المبيّنة في الشكل وصل كل سائل إلى حالة اتزان مع بخاره.\nفي أيّ الخيارات الآتية أُعطيت العلاقة بين ضغوط البخار عند الاتزان (P) في الأوعية بشكل صحيح؟",
+        "zh": "图示的密闭容器中，液体与其蒸气之间已达到平衡。\n下列哪一项正确表示了各容器中平衡蒸气压（P）之间的关系？",
+        "ku": "Di firaxên girtî yên di şiklê de di navbera şileyê û buhara wê de hevsengî çêbûye.\nTêkiliya di navbera zextên buharê yên hevsengiyê (P) yên di firaxan de di kîjan vebijarkê de rast hatiye dayîn?"
       },
       "options": [
         {
-          "tr": "Sıvının sıcaklığını artırmak",
-          "en": "increasing the temperature of the liquid",
-          "de": "Erhöhung der Temperatur der Flüssigkeit",
-          "fr": "augmenter la température du liquide",
-          "ru": "Повышение температуры жидкости",
-          "ar": "زيادة درجة حرارة السائل",
-          "zh": "升高液体的温度",
-          "ku": "Zêdekirina germahiya şileyê"
+          "tr": "P(I) = P(II) = P(III)",
+          "en": "P(I) = P(II) = P(III)",
+          "de": "P(I) = P(II) = P(III)",
+          "fr": "P(I) = P(II) = P(III)",
+          "ru": "P(I) = P(II) = P(III)",
+          "ar": "P(I) = P(II) = P(III)",
+          "zh": "P(I) = P(II) = P(III)",
+          "ku": "P(I) = P(II) = P(III)"
         },
         {
-          "tr": "Dış atmosfer basıncını artırmak",
-          "en": "Increasing outside atmospheric pressure",
-          "de": "Zunehmender äußerer Atmosphärendruck",
-          "fr": "Augmentation de la pression atmosphérique extérieure",
-          "ru": "Повышение внешнего атмосферного давления",
-          "ar": "زيادة الضغط الجوي الخارجي",
-          "zh": "增大外界大气压",
-          "ku": "Zêdekirina zexta atmosferê ya derve"
+          "tr": "P(II) > P(I) > P(III)",
+          "en": "P(II) > P(I) > P(III)",
+          "de": "P(II) > P(I) > P(III)",
+          "fr": "P(II) > P(I) > P(III)",
+          "ru": "P(II) > P(I) > P(III)",
+          "ar": "P(II) > P(I) > P(III)",
+          "zh": "P(II) > P(I) > P(III)",
+          "ku": "P(II) > P(I) > P(III)"
         },
         {
-          "tr": "Sıvının yüzey alanını genişletmek",
-          "en": "Expanding the surface area of the liquid",
-          "de": "Vergrößerung der Oberfläche der Flüssigkeit",
-          "fr": "Augmenter la surface du liquide",
-          "ru": "Увеличение площади поверхности жидкости",
-          "ar": "توسيع مساحة سطح السائل",
-          "zh": "扩大液体的表面积",
-          "ku": "Firehkirina rûbera şileyê"
+          "tr": "P(I) = P(II) > P(III)",
+          "en": "P(I) = P(II) > P(III)",
+          "de": "P(I) = P(II) > P(III)",
+          "fr": "P(I) = P(II) > P(III)",
+          "ru": "P(I) = P(II) > P(III)",
+          "ar": "P(I) = P(II) > P(III)",
+          "zh": "P(I) = P(II) > P(III)",
+          "ku": "P(I) = P(II) > P(III)"
         },
         {
-          "tr": "Kaptaki sıvı miktarını artırmak",
-          "en": "Increasing the amount of liquid in the container",
-          "de": "Erhöhen der Flüssigkeitsmenge im Behälter",
-          "fr": "Augmenter la quantité de liquide dans le récipient",
-          "ru": "Увеличение количества жидкости в сосуде",
-          "ar": "زيادة كمية السائل في الوعاء",
-          "zh": "增加容器中的液体量",
-          "ku": "Zêdekirina mîqdara şileyê di firaxê de"
+          "tr": "P(III) > P(I) = P(II)",
+          "en": "P(III) > P(I) = P(II)",
+          "de": "P(III) > P(I) = P(II)",
+          "fr": "P(III) > P(I) = P(II)",
+          "ru": "P(III) > P(I) = P(II)",
+          "ar": "P(III) > P(I) = P(II)",
+          "zh": "P(III) > P(I) = P(II)",
+          "ku": "P(III) > P(I) = P(II)"
         },
         {
-          "tr": "Kaba uçucu olmayan tuz eklemek",
-          "en": "Adding non-volatile salt to the container",
-          "de": "Nichtflüchtiges Salz in den Behälter geben",
-          "fr": "Ajouter du sel non volatil au récipient",
-          "ru": "Добавление в сосуд нелетучей соли",
-          "ar": "إضافة ملح غير متطاير إلى الوعاء",
-          "zh": "向容器中加入难挥发的盐",
-          "ku": "Lêzêdekirina xwêyeke nefirok li firaxê"
+          "tr": "P(I) > P(II) > P(III)",
+          "en": "P(I) > P(II) > P(III)",
+          "de": "P(I) > P(II) > P(III)",
+          "fr": "P(I) > P(II) > P(III)",
+          "ru": "P(I) > P(II) > P(III)",
+          "ar": "P(I) > P(II) > P(III)",
+          "zh": "P(I) > P(II) > P(III)",
+          "ku": "P(I) > P(II) > P(III)"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Denge buhar basıncı yalnızca sıvının cinsine, saflığına ve sıcaklığına bağlıdır; sıcaklık arttıkça daha çok molekül sıvıdan kopabildiği için buhar basıncı artar. Dış basınç, yüzey alanı ve sıvı miktarı denge buhar basıncını değiştirmez (yüzey alanı yalnızca buharlaşma hızını etkiler); uçucu olmayan tuz eklemek ise buhar basıncını düşürür.",
-        "en": "Equilibrium vapour pressure depends only on the kind of liquid, its purity and the temperature; as temperature rises, more molecules can escape from the liquid, so the vapour pressure increases. External pressure, surface area and the amount of liquid do not change the equilibrium vapour pressure (surface area only affects the rate of evaporation), and adding a non-volatile salt lowers it.",
-        "de": "Der Gleichgewichtsdampfdruck hängt nur von der Art der Flüssigkeit, ihrer Reinheit und der Temperatur ab; mit steigender Temperatur können mehr Moleküle die Flüssigkeit verlassen, der Dampfdruck steigt. Äußerer Druck, Oberfläche und Flüssigkeitsmenge ändern den Gleichgewichtsdampfdruck nicht (die Oberfläche beeinflusst nur die Verdunstungsgeschwindigkeit); die Zugabe eines nichtflüchtigen Salzes senkt ihn.",
-        "fr": "La pression de vapeur d'équilibre ne dépend que de la nature du liquide, de sa pureté et de la température ; quand la température augmente, davantage de molécules peuvent quitter le liquide et la pression de vapeur augmente. La pression extérieure, la surface et la quantité de liquide ne modifient pas la pression de vapeur d'équilibre (la surface n'influe que sur la vitesse d'évaporation) ; l'ajout d'un sel non volatil l'abaisse.",
-        "ru": "Равновесное давление пара зависит только от природы жидкости, её чистоты и температуры; с ростом температуры больше молекул способно покинуть жидкость, и давление пара растёт. Внешнее давление, площадь поверхности и количество жидкости не меняют равновесное давление пара (площадь поверхности влияет только на скорость испарения), а добавление нелетучей соли его понижает.",
-        "ar": "لا يعتمد ضغط البخار المتزن إلا على نوع السائل ونقائه ودرجة الحرارة؛ وكلما ارتفعت درجة الحرارة استطاع عدد أكبر من الجزيئات الإفلات من السائل فيزداد ضغط البخار. أما الضغط الخارجي ومساحة السطح وكمية السائل فلا تغيّر ضغط البخار المتزن (مساحة السطح تؤثر في سرعة التبخر فقط)، وإضافة ملح غير متطاير تخفضه.",
-        "zh": "平衡蒸气压只取决于液体的种类、纯度和温度；温度升高时，能够逸出液体的分子增多，蒸气压增大。外界压强、表面积和液体的量都不改变平衡蒸气压（表面积只影响蒸发速率）；加入难挥发的盐反而使蒸气压降低。",
-        "ku": "Zexta buharê ya hevsengiyê tenê bi cureyê şileyê, paqijiya wê û germahiyê ve girêdayî ye; dema germahî zêde dibe, bêtir molekul dikarin ji şileyê veqetin, loma zexta buharê zêde dibe. Zexta derve, rûbera şileyê û mîqdara şileyê zexta buharê ya hevsengiyê naguherînin (rûber tenê bandorê li leza buharbûnê dike); lêzêdekirina xwêyeke nefirok jî zexta buharê nizm dike."
+        "tr": "Denge buhar basıncı yalnızca sıvının cinsine, saflığına ve sıcaklığına bağlıdır; sıvı miktarına ve kaptaki buhar hacmine bağlı değildir. I ve II'de aynı sıcaklıkta (25 °C) saf su bulunduğundan, su miktarları farklı olsa da P(I) = P(II)'dir. III'te suda uçucu olmayan NaCl çözünmüştür; çözünen tanecikler yüzeydeki su moleküllerinin bir kısmının yerini aldığından buharlaşma azalır ve buhar basıncı aynı sıcaklıktaki saf sudan düşüktür. Sıralama: P(I) = P(II) > P(III).",
+        "en": "Equilibrium vapour pressure depends only on the identity, purity and temperature of the liquid, not on the amount of liquid or the volume above it. I and II both contain pure water at the same temperature (25 °C), so P(I) = P(II) even though the amounts differ. In III, non-volatile NaCl is dissolved in the water; dissolved particles take the place of some water molecules at the surface, evaporation decreases and the vapour pressure is lower than that of pure water at the same temperature. Order: P(I) = P(II) > P(III).",
+        "de": "Der Gleichgewichtsdampfdruck hängt nur von Art, Reinheit und Temperatur der Flüssigkeit ab, nicht von der Flüssigkeitsmenge oder dem Gasraum darüber. I und II enthalten reines Wasser bei derselben Temperatur (25 °C), also ist P(I) = P(II), obwohl die Mengen verschieden sind. In III ist nichtflüchtiges NaCl gelöst; gelöste Teilchen besetzen einen Teil der Oberfläche, die Verdunstung nimmt ab und der Dampfdruck ist niedriger als der von reinem Wasser gleicher Temperatur. Reihenfolge: P(I) = P(II) > P(III).",
+        "fr": "La pression de vapeur à l'équilibre ne dépend que de la nature, de la pureté et de la température du liquide, et non de la quantité de liquide ni du volume au-dessus. I et II contiennent de l'eau pure à la même température (25 °C) : P(I) = P(II), même si les quantités diffèrent. En III, du NaCl non volatil est dissous ; les particules dissoutes occupent une partie de la surface, l'évaporation diminue et la pression de vapeur est inférieure à celle de l'eau pure à la même température. Ordre : P(I) = P(II) > P(III).",
+        "ru": "Равновесное давление пара зависит только от природы, чистоты и температуры жидкости, но не от количества жидкости или объёма над ней. В I и II чистая вода при одной и той же температуре (25 °C), поэтому P(I) = P(II), хотя количества воды разные. В III растворён нелетучий NaCl; растворённые частицы занимают часть поверхности, испарение уменьшается, и давление пара ниже, чем у чистой воды при той же температуре. Порядок: P(I) = P(II) > P(III).",
+        "ar": "يعتمد ضغط البخار عند الاتزان على نوع السائل ونقاوته ودرجة حرارته فقط، لا على كمية السائل أو حجم الفراغ فوقه. يحتوي الوعاءان I وII على ماء نقي عند درجة الحرارة نفسها (25 °C)، لذا P(I) = P(II) رغم اختلاف الكميتين. وفي III ذاب NaCl غير المتطاير في الماء؛ فتشغل الجسيمات المذابة جزءًا من السطح ويقل التبخر، فيكون ضغط البخار أقل منه للماء النقي عند درجة الحرارة نفسها. الترتيب: P(I) = P(II) > P(III).",
+        "zh": "平衡蒸气压只取决于液体的种类、纯度和温度，与液体的量及其上方空间的体积无关。I 和 II 中都是相同温度（25 °C）的纯水，虽然水量不同，P(I) = P(II)。III 中溶有不挥发的 NaCl，溶质粒子占据了部分液面，蒸发减少，蒸气压低于同温度下的纯水。顺序：P(I) = P(II) > P(III)。",
+        "ku": "Zexta buharê ya hevsengiyê tenê bi cure, paqijî û germahiya şileyê ve girêdayî ye; bi mîqdara şileyê an qebareya ser wê ve ne girêdayî ye. Di I û II de di heman germahiyê de (25 °C) ava pak heye, ji ber vê her çend mîqdar cuda bin jî P(I) = P(II) e. Di III de NaCl ya nefirok di avê de heliyaye; perçeyên helandî cihê hin molekulên avê yên li ser rûyê digirin, buharbûn kêm dibe û zexta buharê ji ya ava pak a di heman germahiyê de nizmtir e. Rêz: P(I) = P(II) > P(III)."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 196,
+        "markup": "<rect x=\"15\" y=\"30\" width=\"90\" height=\"120\" class=\"qf-fill\"/><rect x=\"16\" y=\"31\" width=\"88\" height=\"91\" class=\"qf-gas\"/><rect x=\"16\" y=\"122\" width=\"88\" height=\"27\" class=\"qf-water\"/><text x=\"60\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">25 °C</text><text x=\"60\" y=\"168\" text-anchor=\"middle\" class=\"qf-small\">{{pure}}</text><text x=\"60\" y=\"188\" text-anchor=\"middle\" class=\"qf-big\">I</text><rect x=\"135\" y=\"30\" width=\"90\" height=\"120\" class=\"qf-fill\"/><rect x=\"136\" y=\"31\" width=\"88\" height=\"41\" class=\"qf-gas\"/><rect x=\"136\" y=\"72\" width=\"88\" height=\"77\" class=\"qf-water\"/><text x=\"180\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">25 °C</text><text x=\"180\" y=\"168\" text-anchor=\"middle\" class=\"qf-small\">{{pure}}</text><text x=\"180\" y=\"188\" text-anchor=\"middle\" class=\"qf-big\">II</text><rect x=\"255\" y=\"30\" width=\"90\" height=\"120\" class=\"qf-fill\"/><rect x=\"256\" y=\"31\" width=\"88\" height=\"69\" class=\"qf-gas\"/><rect x=\"256\" y=\"100\" width=\"88\" height=\"49\" class=\"qf-water\"/><text x=\"300\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">25 °C</text><text x=\"300\" y=\"168\" text-anchor=\"middle\" class=\"qf-small\">{{salt}}</text><text x=\"300\" y=\"188\" text-anchor=\"middle\" class=\"qf-big\">III</text><circle cx=\"280\" cy=\"118\" r=\"2.6\" class=\"qf-accent2\"/><circle cx=\"305\" cy=\"132\" r=\"2.6\" class=\"qf-accent2\"/><circle cx=\"325\" cy=\"112\" r=\"2.6\" class=\"qf-accent2\"/><circle cx=\"270\" cy=\"138\" r=\"2.6\" class=\"qf-accent2\"/><circle cx=\"318\" cy=\"140\" r=\"2.6\" class=\"qf-accent2\"/>",
+        "labels": {
+          "pure": {
+            "tr": "saf su",
+            "en": "pure water",
+            "de": "reines Wasser",
+            "fr": "eau pure",
+            "ru": "чистая вода",
+            "ar": "ماء نقي",
+            "zh": "纯水",
+            "ku": "ava pak"
+          },
+          "salt": {
+            "tr": "NaCl(aq)",
+            "en": "NaCl(aq)",
+            "de": "NaCl(aq)",
+            "fr": "NaCl(aq)",
+            "ru": "NaCl(aq)",
+            "ar": "NaCl(aq)",
+            "zh": "NaCl(aq)",
+            "ku": "NaCl(aq)"
+          }
+        }
       }
     },
     {
@@ -1362,90 +1390,249 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin05",
       "stem": {
-        "tr": "20 °C'de X, Y ve Z saf sıvılarının denge buhar basınçları sırasıyla 18 mmHg, 44 mmHg ve 442 mmHg'dir. Aynı dış basınçta bu sıvıların kaynama noktalarının büyükten küçüğe doğru sıralanışı aşağıdakilerden hangisidir?",
-        "en": "At 20 °C the equilibrium vapour pressures of the pure liquids X, Y and Z are 18 mmHg, 44 mmHg and 442 mmHg respectively. At the same external pressure, what is the order of their boiling points from highest to lowest?",
-        "de": "Bei 20 °C betragen die Gleichgewichtsdampfdrücke der reinen Flüssigkeiten X, Y und Z 18 mmHg, 44 mmHg und 442 mmHg. Wie lautet bei gleichem äußerem Druck die Reihenfolge ihrer Siedepunkte von hoch nach niedrig?",
-        "fr": "À 20 °C, les pressions de vapeur d'équilibre des liquides purs X, Y et Z valent respectivement 18 mmHg, 44 mmHg et 442 mmHg. À même pression extérieure, quel est l'ordre de leurs points d'ébullition, du plus élevé au plus bas ?",
-        "ru": "При 20 °C равновесные давления пара чистых жидкостей X, Y и Z равны соответственно 18, 44 и 442 мм рт. ст. Каков порядок их температур кипения при одинаковом внешнем давлении от наибольшей к наименьшей?",
-        "ar": "عند 20 °C تبلغ ضغوط البخار المتزنة للسوائل النقية X وY وZ على الترتيب 18 mmHg و44 mmHg و442 mmHg. ما ترتيب درجات غليانها من الأعلى إلى الأدنى عند الضغط الخارجي نفسه؟",
-        "zh": "20 °C 时纯液体 X、Y、Z 的平衡蒸气压依次为 18 mmHg、44 mmHg 和 442 mmHg。在相同外界压强下，它们沸点由高到低的顺序是哪一项？",
-        "ku": "Di 20 °C de zextên buharê yên hevsengiyê yên şileyên paqij X, Y û Z bi rêzê 18 mmHg, 44 mmHg û 442 mmHg in. Di heman zexta derve de, rêzkirina xalên kelînê yên van şileyan ji mezin ber bi piçûk kîjan e?"
+        "tr": "Grafikte saf X, Y ve Z sıvılarının buhar basınçlarının sıcaklıkla değişimi verilmiştir.\nBu sıvılarla ilgili aşağıdaki yargılardan hangileri doğrudur?\nI. Moleküller arası çekim kuvvetleri en güçlü olan Z'dir.\nII. Dış basınç 760 mmHg iken Y'nin kaynama noktası 65 °C'dir.\nIII. Dış basınç 400 mmHg olduğunda X'in kaynama noktası Z'ninkinden yüksek olur.",
+        "en": "The graph shows how the vapour pressures of the pure liquids X, Y and Z change with temperature.\nWhich of the following statements about these liquids are correct?\nI. Z has the strongest intermolecular forces.\nII. When the external pressure is 760 mmHg, the boiling point of Y is 65 °C.\nIII. When the external pressure is 400 mmHg, the boiling point of X is higher than that of Z.",
+        "de": "Das Diagramm zeigt, wie sich die Dampfdrücke der reinen Flüssigkeiten X, Y und Z mit der Temperatur ändern.\nWelche der folgenden Aussagen über diese Flüssigkeiten sind richtig?\nI. Z hat die stärksten zwischenmolekularen Kräfte.\nII. Bei einem äußeren Druck von 760 mmHg liegt der Siedepunkt von Y bei 65 °C.\nIII. Bei einem äußeren Druck von 400 mmHg ist der Siedepunkt von X höher als der von Z.",
+        "fr": "Le graphique montre la variation des pressions de vapeur des liquides purs X, Y et Z en fonction de la température.\nLesquelles des affirmations suivantes sur ces liquides sont exactes ?\nI. C'est Z qui a les forces intermoléculaires les plus fortes.\nII. Sous une pression extérieure de 760 mmHg, la température d'ébullition de Y est 65 °C.\nIII. Sous une pression extérieure de 400 mmHg, la température d'ébullition de X est supérieure à celle de Z.",
+        "ru": "На графике показана зависимость давления пара чистых жидкостей X, Y и Z от температуры.\nКакие из утверждений об этих жидкостях верны?\nI. Наиболее сильное межмолекулярное притяжение у Z.\nII. При внешнем давлении 760 мм рт. ст. температура кипения Y равна 65 °C.\nIII. При внешнем давлении 400 мм рт. ст. температура кипения X выше, чем у Z.",
+        "ar": "يبيّن الرسم البياني تغيّر ضغط بخار السوائل النقية X وY وZ مع درجة الحرارة.\nأيّ العبارات الآتية عن هذه السوائل صحيحة؟\nI. أقوى قوى تجاذب بين الجزيئات هي في Z.\nII. عندما يكون الضغط الخارجي 760 mmHg تكون درجة غليان Y هي 65 °C.\nIII. عندما يكون الضغط الخارجي 400 mmHg تكون درجة غليان X أعلى من درجة غليان Z.",
+        "zh": "图中给出了纯液体 X、Y、Z 的蒸气压随温度的变化。\n关于这些液体，下列说法中正确的是哪些？\nI. 分子间作用力最强的是 Z。\nII. 外界压强为 760 mmHg 时，Y 的沸点是 65 °C。\nIII. 外界压强为 400 mmHg 时，X 的沸点高于 Z 的沸点。",
+        "ku": "Di grafîkê de guherîna zexta buharê ya şileyên paqij X, Y û Z li gorî germahiyê hatiye dayîn.\nKîjan ji van hukmên derbarê van şileyan de rast in?\nI. Hêzên navmolekulî yên herî xurt ên Z ne.\nII. Dema zexta derve 760 mmHg be, xala kelînê ya Y 65 °C ye.\nIII. Dema zexta derve 400 mmHg be, xala kelînê ya X ji ya Z bilindtir dibe."
       },
       "options": [
         {
-          "tr": "X > Y > Z",
-          "en": "X > Y > Z",
-          "de": "X > Y > Z",
-          "fr": "X > Y > Z",
-          "ru": "X > Y > Z",
-          "ar": "X > Y > Z",
-          "zh": "X > Y > Z",
-          "ku": "X > Y > Z"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Z > Y > X",
-          "en": "Z > Y > X",
-          "de": "Z > Y > X",
-          "fr": "Z > Y > X",
-          "ru": "Z > Y > X",
-          "ar": "Z > Y > X",
-          "zh": "Z > Y > X",
-          "ku": "Z > Y > X"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "Y > X > Z",
-          "en": "Y > X > Z",
-          "de": "Y > X > Z",
-          "fr": "Y > X > Z",
-          "ru": "Y > X > Z",
-          "ar": "Y > X > Z",
-          "zh": "Y > X > Z",
-          "ku": "Y > X > Z"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Z > X > Y",
-          "en": "Z > X > Y",
-          "de": "Z > X > Y",
-          "fr": "Z > X > Y",
-          "ru": "Z > X > Y",
-          "ar": "Z > X > Y",
-          "zh": "Z > X > Y",
-          "ku": "Z > X > Y"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Y > Z > X",
-          "en": "Y > Z > X",
-          "de": "Y > Z > X",
-          "fr": "Y > Z > X",
-          "ru": "Y > Z > X",
-          "ar": "Y > Z > X",
-          "zh": "Y > Z > X",
-          "ku": "Y > Z > X"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Bir sıvı, buhar basıncı dış basınca eşit olduğunda kaynar. Aynı sıcaklıkta buhar basıncı büyük olan sıvı (Z) dış basınca daha düşük sıcaklıkta ulaşır ve en düşük sıcaklıkta kaynar; buhar basıncı en küçük olan X ise en yüksek sıcaklıkta kaynar. Aynı sıcaklıktaki buhar basıncı büyüdükçe kaynama noktası düştüğü için sıralama X > Y > Z olur. Buhar basıncı büyük olanın kaynama noktasını da büyük sanmak sık yapılan hatadır.",
-        "en": "A liquid boils when its vapour pressure equals the external pressure. The liquid with the highest vapour pressure at a given temperature (Z) reaches the external pressure at a lower temperature and boils lowest; X, with the smallest vapour pressure, boils highest. Since the higher the vapour pressure at a given temperature, the lower the boiling point, the order is X > Y > Z. Assuming the liquid with the higher vapour pressure has the higher boiling point is a common mistake.",
-        "de": "Eine Flüssigkeit siedet, wenn ihr Dampfdruck gleich dem äußeren Druck ist. Die Flüssigkeit mit dem höchsten Dampfdruck (Z) erreicht ihn bei niedrigerer Temperatur und siedet am niedrigsten; X mit dem kleinsten Dampfdruck siedet am höchsten. Da Dampfdruck und Siedepunkt gegenläufig sind, gilt X > Y > Z. Höheren Dampfdruck mit höherem Siedepunkt gleichzusetzen ist ein häufiger Fehler.",
-        "fr": "Un liquide bout quand sa pression de vapeur égale la pression extérieure. Le liquide à la plus forte pression de vapeur (Z) l'atteint à plus basse température et bout le plus bas ; X, à la plus faible pression de vapeur, bout le plus haut. Pression de vapeur et point d'ébullition variant en sens inverse, l'ordre est X > Y > Z. Croire qu'une forte pression de vapeur donne un point d'ébullition élevé est une erreur fréquente.",
-        "ru": "Жидкость кипит, когда давление её пара равно внешнему. Жидкость с наибольшим давлением пара (Z) достигает внешнего давления при более низкой температуре и кипит ниже всех; X с наименьшим давлением пара кипит при самой высокой температуре. Давление пара и температура кипения изменяются в противоположных направлениях, поэтому X > Y > Z. Считать, что большее давление пара означает более высокую температуру кипения, — частая ошибка.",
-        "ar": "يغلي السائل عندما يساوي ضغط بخاره الضغط الخارجي. والسائل الأعلى ضغط بخار (Z) يبلغ الضغط الخارجي عند درجة أدنى فيغلي عند أدنى درجة، أما X الأقل ضغط بخار فيغلي عند أعلى درجة. ولأن ضغط البخار ودرجة الغليان يتغيران عكسياً فالترتيب X > Y > Z. واعتبار السائل الأعلى ضغط بخار هو الأعلى غلياناً خطأ شائع.",
-        "zh": "液体在蒸气压等于外界压强时沸腾。同温度下蒸气压最大的 Z 在较低温度就能达到外界压强，沸点最低；蒸气压最小的 X 沸点最高。蒸气压与沸点变化方向相反，所以顺序为 X > Y > Z。认为蒸气压大的液体沸点也高是常见错误。",
-        "ku": "Şile dema zexta wê ya buharê bi zexta derve re wekhev dibe dikele. Şileya ku di heman germahiyê de zexta wê ya buharê herî mezin e (Z), di germahiyeke nizmtir de digihîje zexta derve û di germahiya herî nizm de dikele; X, ku zexta wê ya buharê herî piçûk e, di germahiya herî bilind de dikele. Ji ber ku her ku zexta buharê ya di heman germahiyê de mezin dibe xala kelînê nizm dibe, rêzkirin X > Y > Z ye. Texmînkirina ku xala kelînê ya şileya bi zexta buharê ya mezin jî mezin e şaşiyeke berbelav e."
+        "tr": "Grafikte her sıcaklıkta buhar basıncı en düşük olan Z'dir; molekülleri birbirini en kuvvetli çeken sıvının buharlaşma eğilimi en azdır (I doğru). Bir sıvı, buhar basıncı dış basınca eşit olduğunda kaynar; Y'nin eğrisi 760 mmHg değerine 65 °C'de ulaşır (II doğru). 400 mmHg'de X'in eğrisi bu değere 20 °C'nin altında, Z'ninki ise 80 °C'nin üzerinde ulaşır; dış basınç düşünce tüm kaynama noktaları düşer ama sıralama değişmez ve X yine Z'den düşük sıcaklıkta kaynar (III yanlış). Doğru yanıt: I ve II.",
+        "en": "On the graph Z has the lowest vapour pressure at every temperature; the liquid whose molecules attract each other most strongly has the least tendency to evaporate (I correct). A liquid boils when its vapour pressure equals the external pressure; the curve of Y reaches 760 mmHg at 65 °C (II correct). At 400 mmHg the curve of X reaches this value below 20 °C and that of Z above 80 °C; lowering the external pressure lowers all boiling points but does not change their order, so X still boils at a lower temperature than Z (III false). Answer: I and II.",
+        "de": "Im Diagramm hat Z bei jeder Temperatur den niedrigsten Dampfdruck; die Flüssigkeit, deren Moleküle sich am stärksten anziehen, verdampft am wenigsten (I richtig). Eine Flüssigkeit siedet, wenn ihr Dampfdruck dem äußeren Druck entspricht; die Kurve von Y erreicht 760 mmHg bei 65 °C (II richtig). Bei 400 mmHg erreicht die Kurve von X diesen Wert unterhalb von 20 °C, die von Z oberhalb von 80 °C; ein niedrigerer äußerer Druck senkt alle Siedepunkte, ändert aber nicht ihre Reihenfolge, X siedet also weiterhin bei tieferer Temperatur als Z (III falsch). Antwort: I und II.",
+        "fr": "Sur le graphique, Z a la plus faible pression de vapeur à toute température ; le liquide dont les molécules s'attirent le plus fortement a la plus faible tendance à s'évaporer (I exacte). Un liquide bout lorsque sa pression de vapeur égale la pression extérieure ; la courbe de Y atteint 760 mmHg à 65 °C (II exacte). À 400 mmHg, la courbe de X atteint cette valeur en dessous de 20 °C et celle de Z au-dessus de 80 °C ; une baisse de la pression extérieure abaisse toutes les températures d'ébullition sans changer leur ordre, X bout donc toujours à plus basse température que Z (III fausse). Réponse : I et II.",
+        "ru": "На графике у Z наименьшее давление пара при любой температуре; жидкость, молекулы которой притягиваются сильнее всего, испаряется хуже всего (I верно). Жидкость кипит, когда давление её пара равно внешнему; кривая Y достигает 760 мм рт. ст. при 65 °C (II верно). При 400 мм рт. ст. кривая X достигает этого значения ниже 20 °C, а кривая Z — выше 80 °C; понижение внешнего давления снижает все температуры кипения, но не меняет их порядок, поэтому X по-прежнему кипит при более низкой температуре, чем Z (III неверно). Ответ: I и II.",
+        "ar": "في الرسم يكون ضغط بخار Z هو الأدنى عند كل درجة حرارة؛ فالسائل الذي تتجاذب جزيئاته بأكبر قوة يكون أقل ميلًا إلى التبخر (I صحيحة). يغلي السائل عندما يساوي ضغط بخاره الضغط الخارجي، ومنحنى Y يبلغ 760 mmHg عند 65 °C (II صحيحة). عند 400 mmHg يبلغ منحنى X هذه القيمة دون 20 °C ومنحنى Z فوق 80 °C؛ فخفض الضغط الخارجي يخفض جميع درجات الغليان دون أن يغيّر ترتيبها، ويظل X يغلي عند درجة أقل من Z (III خاطئة). الإجابة: I و II.",
+        "zh": "图中任一温度下 Z 的蒸气压都最低；分子间吸引最强的液体最不易蒸发（I 正确）。液体的蒸气压等于外界压强时沸腾，Y 的曲线在 65 °C 时达到 760 mmHg（II 正确）。在 400 mmHg 时，X 的曲线在 20 °C 以下就达到该值，而 Z 的曲线在 80 °C 以上才达到；外界压强降低会使所有沸点降低，但不改变它们的顺序，X 仍比 Z 在更低温度下沸腾（III 错误）。答案：I 和 II。",
+        "ku": "Di grafîkê de di her germahiyê de zexta buharê ya herî nizm a Z ye; şileya ku molekulên wê herî xurt hev dikişînin meyla wê ya buharbûnê herî kêm e (I rast e). Şile dema zexta buhara wê bi zexta derve re wekhev dibe dikele; xêza Y di 65 °C de digihîje 760 mmHg (II rast e). Di 400 mmHg de xêza X di bin 20 °C de, ya Z jî li ser 80 °C digihîje vê nirxê; kêmbûna zexta derve hemû xalên kelînê nizm dike lê rêza wan naguherîne, ji ber vê X hîn jî di germahiyeke ji Z nizmtir de dikele (III şaş e). Bersiv: I û II."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Sıcaklık (°C)",
+          "en": "Temperature (°C)",
+          "de": "Temperatur (°C)",
+          "fr": "Température (°C)",
+          "ru": "Температура (°C)",
+          "ar": "درجة الحرارة (°C)",
+          "zh": "温度 (°C)",
+          "ku": "Germahî (°C)"
+        },
+        "yLabel": {
+          "tr": "Buhar basıncı (mmHg)",
+          "en": "Vapour pressure (mmHg)",
+          "de": "Dampfdruck (mmHg)",
+          "fr": "Pression de vapeur (mmHg)",
+          "ru": "Давление пара (мм рт. ст.)",
+          "ar": "ضغط البخار (mmHg)",
+          "zh": "蒸气压 (mmHg)",
+          "ku": "Zexta buharê (mmHg)"
+        },
+        "xMin": 0,
+        "xMax": 110,
+        "yMin": 0,
+        "yMax": 1000,
+        "xTicks": [
+          20,
+          35,
+          65,
+          80,
+          100
+        ],
+        "yTicks": [
+          400,
+          760
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                185
+              ],
+              [
+                10,
+                290
+              ],
+              [
+                20,
+                442
+              ],
+              [
+                30,
+                640
+              ],
+              [
+                35,
+                760
+              ],
+              [
+                40,
+                900
+              ]
+            ],
+            "label": "X"
+          },
+          {
+            "points": [
+              [
+                0,
+                30
+              ],
+              [
+                10,
+                55
+              ],
+              [
+                20,
+                96
+              ],
+              [
+                30,
+                160
+              ],
+              [
+                40,
+                260
+              ],
+              [
+                50,
+                410
+              ],
+              [
+                60,
+                625
+              ],
+              [
+                65,
+                760
+              ],
+              [
+                70,
+                925
+              ]
+            ],
+            "label": "Y"
+          },
+          {
+            "points": [
+              [
+                0,
+                5
+              ],
+              [
+                20,
+                18
+              ],
+              [
+                40,
+                55
+              ],
+              [
+                60,
+                149
+              ],
+              [
+                70,
+                234
+              ],
+              [
+                80,
+                355
+              ],
+              [
+                90,
+                526
+              ],
+              [
+                100,
+                760
+              ],
+              [
+                105,
+                906
+              ]
+            ],
+            "label": "Z"
+          }
+        ],
+        "markers": [
+          {
+            "x": 65,
+            "y": 760,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
       "id": "u04-twin06",
       "stem": {
-        "tr": "Saf bir X katısı sabit basınçta, sabit hızla ısıtılıyor. Sıcaklık–zaman verileri şöyledir:\n0–2. dakika: −20 °C'den 10 °C'ye çıkıyor\n2–6. dakika: 10 °C'de sabit kalıyor\n6–9. dakika: 10 °C'den 60 °C'ye çıkıyor\n9–15. dakika: 60 °C'de sabit kalıyor\nBuna göre aşağıdakilerden hangisi yanlıştır?",
-        "en": "A pure solid X is heated at constant pressure and a constant rate. The temperature–time data are:\n0–2 min: rises from −20 °C to 10 °C\n2–6 min: stays at 10 °C\n6–9 min: rises from 10 °C to 60 °C\n9–15 min: stays at 60 °C\nWhich of the following is incorrect?",
-        "de": "Ein reiner Feststoff X wird bei konstantem Druck gleichmäßig erhitzt. Temperatur-Zeit-Daten:\n0–2 min: Anstieg von −20 °C auf 10 °C\n2–6 min: konstant bei 10 °C\n6–9 min: Anstieg von 10 °C auf 60 °C\n9–15 min: konstant bei 60 °C\nWelche Aussage ist falsch?",
-        "fr": "Un solide pur X est chauffé à pression constante et à vitesse constante. Données température–temps :\n0–2 min : passe de −20 °C à 10 °C\n2–6 min : reste à 10 °C\n6–9 min : passe de 10 °C à 60 °C\n9–15 min : reste à 60 °C\nLaquelle des affirmations suivantes est incorrecte ?",
-        "ru": "Чистое твёрдое вещество X равномерно нагревают при постоянном давлении. Данные «температура — время»:\n0–2 мин: от −20 °C до 10 °C\n2–6 мин: постоянно 10 °C\n6–9 мин: от 10 °C до 60 °C\n9–15 мин: постоянно 60 °C\nКакое утверждение неверно?",
-        "ar": "تُسخَّن مادة صلبة نقية X عند ضغط ثابت وبمعدل ثابت. بيانات درجة الحرارة والزمن:\n0–2 دقيقة: ترتفع من −20 °C إلى 10 °C\n2–6 دقيقة: تبقى عند 10 °C\n6–9 دقيقة: ترتفع من 10 °C إلى 60 °C\n9–15 دقيقة: تبقى عند 60 °C\nأيّ العبارات الآتية خاطئة؟",
-        "zh": "在恒压下以恒定速率加热纯固体 X，温度–时间数据如下：\n0–2 min：由 −20 °C 升至 10 °C\n2–6 min：保持 10 °C\n6–9 min：由 10 °C 升至 60 °C\n9–15 min：保持 60 °C\n下列说法错误的是哪一项？",
-        "ku": "Madeyeke hişk a paqij X di zexta sabît de û bi leza sabît tê germkirin. Daneyên germahî–demê ev in:\n0–2. deqe: ji −20 °C derdikeve 10 °C\n2–6. deqe: li 10 °C sabît dimîne\n6–9. deqe: ji 10 °C derdikeve 60 °C\n9–15. deqe: li 60 °C sabît dimîne\nLi gorî vê, kîjan ji yên jêrîn şaş e?"
+        "tr": "Grafikte saf X katısının sabit basınçta, sabit hızla ısıtılmasıyla elde edilen sıcaklık–zaman eğrisi verilmiştir.\nX ile ilgili aşağıdakilerden hangisi yanlıştır?",
+        "en": "The graph shows the temperature–time curve obtained when a pure solid X is heated at constant pressure and at a constant rate.\nWhich of the following about X is incorrect?",
+        "de": "Das Diagramm zeigt die Temperatur-Zeit-Kurve, die beim gleichmäßigen Erhitzen eines reinen Feststoffs X bei konstantem Druck erhalten wird.\nWelche der folgenden Aussagen über X ist falsch?",
+        "fr": "Le graphique donne la courbe température–temps obtenue en chauffant un solide pur X à pression constante et à vitesse constante.\nLaquelle des affirmations suivantes sur X est incorrecte ?",
+        "ru": "На графике приведена кривая «температура — время», полученная при равномерном нагревании чистого твёрдого вещества X при постоянном давлении.\nКакое утверждение об X неверно?",
+        "ar": "يبيّن الرسم البياني منحنى درجة الحرارة–الزمن الناتج عن تسخين مادة صلبة نقية X عند ضغط ثابت وبمعدل ثابت.\nأيّ العبارات الآتية عن X خاطئة؟",
+        "zh": "图中给出了在恒压下以恒定速率加热纯固体 X 得到的温度–时间曲线。\n关于 X，下列说法错误的是哪一项？",
+        "ku": "Di grafîkê de xêza germahî–demê ya ku bi germkirina hişka paqij X di zexta sabît de û bi leza sabît hatiye bidestxistin heye.\nDerbarê X de kîjan ji van şaş e?"
       },
       "options": [
         {
@@ -1501,27 +1688,91 @@ export const unit04: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Isıtma sırasında sıcaklığın sabit kaldığı ilk bölüm (10 °C) erime, ikinci bölüm (60 °C) kaynamadır; 2–6. dakikalarda katı ve sıvı bir aradadır, 6–9. dakikalarda yalnızca sıvı ısınır. Ortalama kinetik enerji sıcaklığa bağlıdır; 9–15. dakikalarda sıcaklık sabit olduğundan ortalama kinetik enerji değişmez, verilen ısı moleküller arası çekimleri yenmek için harcanır (potansiyel enerji artar). Bu yüzden yanlış olan ifade kinetik enerjinin arttığını söyleyendir.",
-        "en": "During heating, the first constant-temperature stage (10 °C) is melting and the second (60 °C) is boiling; from 2 to 6 min solid and liquid coexist, and from 6 to 9 min only liquid is warming. Average kinetic energy depends on temperature; from 9 to 15 min the temperature is constant, so average kinetic energy does not change — the heat goes into overcoming intermolecular attractions (potential energy rises). The incorrect statement is therefore the one saying kinetic energy increases.",
-        "de": "Beim Erhitzen ist der erste Haltepunkt (10 °C) das Schmelzen, der zweite (60 °C) das Sieden; von 2 bis 6 min liegen fest und flüssig nebeneinander vor, von 6 bis 9 min erwärmt sich nur Flüssigkeit. Die mittlere kinetische Energie hängt von der Temperatur ab; von 9 bis 15 min ist die Temperatur konstant, sie ändert sich also nicht – die Wärme dient zum Überwinden der Anziehungskräfte (potenzielle Energie steigt). Falsch ist daher die Aussage über steigende kinetische Energie.",
-        "fr": "Lors du chauffage, le premier palier (10 °C) correspond à la fusion et le second (60 °C) à l'ébullition ; de 2 à 6 min solide et liquide coexistent, de 6 à 9 min seul le liquide s'échauffe. L'énergie cinétique moyenne dépend de la température ; de 9 à 15 min la température est constante, elle ne varie donc pas : la chaleur sert à vaincre les attractions intermoléculaires (l'énergie potentielle augmente). L'affirmation fausse est celle qui parle d'une hausse de l'énergie cinétique.",
-        "ru": "При нагревании первая площадка (10 °C) — плавление, вторая (60 °C) — кипение; с 2-й по 6-ю минуту твёрдая и жидкая фазы сосуществуют, с 6-й по 9-ю нагревается только жидкость. Средняя кинетическая энергия зависит от температуры; с 9-й по 15-ю минуту температура постоянна, значит, средняя кинетическая энергия не меняется — теплота идёт на преодоление межмолекулярного притяжения (растёт потенциальная энергия). Поэтому неверно утверждение о росте кинетической энергии.",
-        "ar": "أثناء التسخين يمثل الثبات الأول لدرجة الحرارة (10 °C) الانصهار والثاني (60 °C) الغليان؛ وبين الدقيقتين 2 و6 توجد الحالتان الصلبة والسائلة معاً، وبين 6 و9 يسخن السائل فقط. ويعتمد متوسط الطاقة الحركية على درجة الحرارة، وبين 9 و15 تكون الدرجة ثابتة فلا يتغير، بل تُستهلك الحرارة في التغلب على التجاذب بين الجزيئات (تزداد الطاقة الكامنة). لذا فالعبارة الخاطئة هي التي تقول إن الطاقة الحركية تزداد.",
-        "zh": "加热过程中第一个温度不变的阶段(10 °C)是熔化，第二个(60 °C)是沸腾；2–6 min 固液共存，6–9 min 只有液体在升温。平均动能取决于温度；9–15 min 温度不变，平均动能不变，吸收的热量用于克服分子间吸引（势能增大）。所以错误的是“平均动能增大”这一说法。",
-        "ku": "Di dema germkirinê de beşa yekem a ku germahî sabît dimîne (10 °C) helîn e, ya duyem (60 °C) kelîn e; di deqeyên 2–6. de hişk û şile bi hev re ne, di deqeyên 6–9. de tenê şile germ dibe. Enerjiya kînetîk a navînî bi germahiyê ve girêdayî ye; di deqeyên 9–15. de germahî sabît e, loma enerjiya kînetîk a navînî naguhere — germa ku tê dayîn ji bo bi ser ketina li kişandinên navmolekulî tê xerckirin (enerjiya potansiyel zêde dibe). Ji ber vê yekê gotina şaş ew e ku dibêje enerjiya kînetîk zêde dibe."
+        "tr": "Grafikte sıcaklığın sabit kaldığı ilk bölüm (2–6. dakika, 10 °C) erime, ikinci bölüm (9–15. dakika, 60 °C) kaynamadır; 2–6. dakikalarda katı ve sıvı bir aradadır, 6–9. dakikalarda yalnızca sıvı ısınır. Ortalama kinetik enerji sıcaklığa bağlıdır; 9–15. dakikalarda sıcaklık sabit olduğundan ortalama kinetik enerji değişmez, verilen ısı moleküller arası çekimleri yenmek için harcanır (potansiyel enerji artar). Bu yüzden yanlış olan ifade kinetik enerjinin arttığını söyleyendir.",
+        "en": "On the graph the first plateau (2–6 min, 10 °C) is melting and the second (9–15 min, 60 °C) is boiling; from 2 to 6 min solid and liquid coexist, and from 6 to 9 min only liquid is warming. Average kinetic energy depends on temperature; from 9 to 15 min the temperature is constant, so average kinetic energy does not change — the heat goes into overcoming intermolecular attractions (potential energy rises). The incorrect statement is therefore the one saying kinetic energy increases.",
+        "de": "Im Diagramm ist der erste Haltepunkt (2–6 min, 10 °C) das Schmelzen, der zweite (9–15 min, 60 °C) das Sieden; von 2 bis 6 min liegen fest und flüssig nebeneinander vor, von 6 bis 9 min erwärmt sich nur Flüssigkeit. Die mittlere kinetische Energie hängt von der Temperatur ab; von 9 bis 15 min ist die Temperatur konstant, sie ändert sich also nicht – die Wärme dient zum Überwinden der Anziehungskräfte (potenzielle Energie steigt). Falsch ist daher die Aussage über steigende kinetische Energie.",
+        "fr": "Sur le graphique, le premier palier (2–6 min, 10 °C) correspond à la fusion et le second (9–15 min, 60 °C) à l'ébullition ; de 2 à 6 min solide et liquide coexistent, de 6 à 9 min seul le liquide s'échauffe. L'énergie cinétique moyenne dépend de la température ; de 9 à 15 min la température est constante, elle ne varie donc pas : la chaleur sert à vaincre les attractions intermoléculaires (l'énergie potentielle augmente). L'affirmation fausse est celle qui parle d'une hausse de l'énergie cinétique.",
+        "ru": "На графике первая площадка (2–6 мин, 10 °C) — плавление, вторая (9–15 мин, 60 °C) — кипение; с 2-й по 6-ю минуту твёрдая и жидкая фазы сосуществуют, с 6-й по 9-ю нагревается только жидкость. Средняя кинетическая энергия зависит от температуры; с 9-й по 15-ю минуту температура постоянна, значит, средняя кинетическая энергия не меняется — теплота идёт на преодоление межмолекулярного притяжения (растёт потенциальная энергия). Поэтому неверно утверждение о росте кинетической энергии.",
+        "ar": "في الرسم يمثل الثبات الأول لدرجة الحرارة (الدقائق 2–6، 10 °C) الانصهار والثاني (الدقائق 9–15، 60 °C) الغليان؛ وبين الدقيقتين 2 و6 توجد الحالتان الصلبة والسائلة معًا، وبين 6 و9 يسخن السائل فقط. ويعتمد متوسط الطاقة الحركية على درجة الحرارة، وبين 9 و15 تكون الدرجة ثابتة فلا يتغير، بل تُستهلك الحرارة في التغلب على التجاذب بين الجزيئات (تزداد الطاقة الكامنة). لذا فالعبارة الخاطئة هي التي تقول إن الطاقة الحركية تزداد.",
+        "zh": "图中第一个温度不变的阶段（2–6 min，10 °C）是熔化，第二个（9–15 min，60 °C）是沸腾；2–6 min 固液共存，6–9 min 只有液体在升温。平均动能取决于温度；9–15 min 温度不变，平均动能不变，吸收的热量用于克服分子间吸引（势能增大）。所以错误的是“平均动能增大”这一说法。",
+        "ku": "Di grafîkê de beşa yekem a ku germahî sabît dimîne (deqeyên 2–6., 10 °C) helîn e, ya duyem (deqeyên 9–15., 60 °C) kelîn e; di deqeyên 2–6. de hişk û şile bi hev re ne, di deqeyên 6–9. de tenê şile germ dibe. Enerjiya kînetîk a navînî bi germahiyê ve girêdayî ye; di deqeyên 9–15. de germahî sabît e, loma enerjiya kînetîk a navînî naguhere — germa ku tê dayîn ji bo bi ser ketina li kişandinên navmolekulî tê xerckirin (enerjiya potansiyel zêde dibe). Ji ber vê yekê gotina şaş ew e ku dibêje enerjiya kînetîk zêde dibe."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman (dk)",
+          "en": "Time (min)",
+          "de": "Zeit (min)",
+          "fr": "Temps (min)",
+          "ru": "Время (мин)",
+          "ar": "الزمن (دقيقة)",
+          "zh": "时间 (min)",
+          "ku": "Dem (deq)"
+        },
+        "yLabel": {
+          "tr": "Sıcaklık (°C)",
+          "en": "Temperature (°C)",
+          "de": "Temperatur (°C)",
+          "fr": "Température (°C)",
+          "ru": "Температура (°C)",
+          "ar": "درجة الحرارة (°C)",
+          "zh": "温度 (°C)",
+          "ku": "Germahî (°C)"
+        },
+        "xMin": 0,
+        "xMax": 16,
+        "yMin": -30,
+        "yMax": 80,
+        "xTicks": [
+          2,
+          6,
+          9,
+          15
+        ],
+        "yTicks": [
+          -20,
+          10,
+          60
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                -20
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                9,
+                60
+              ],
+              [
+                15,
+                60
+              ]
+            ]
+          }
+        ]
       }
     },
     {
       "id": "u04-twin07",
       "stem": {
-        "tr": "X, Y ve Z katılarının bazı özellikleri şöyledir:\nX: Çok serttir, erime noktası çok yüksektir; katı ve sıvı hâlde elektriği iletmez.\nY: Sert ama kırılgandır, erime noktası yüksektir; katı hâlde iletmez, sıvı hâlde iletir.\nZ: Yumuşaktır, erime noktası düşüktür; hiçbir hâlde elektriği iletmez.\nBuna göre X, Y ve Z sırasıyla aşağıdakilerden hangisi olabilir?",
-        "en": "Some properties of the solids X, Y and Z are:\nX: very hard, very high melting point; does not conduct electricity as a solid or liquid.\nY: hard but brittle, high melting point; does not conduct as a solid but conducts as a liquid.\nZ: soft, low melting point; does not conduct electricity in any state.\nWhich could X, Y and Z be, respectively?",
-        "de": "Einige Eigenschaften der Feststoffe X, Y und Z:\nX: sehr hart, sehr hoher Schmelzpunkt; leitet weder fest noch flüssig.\nY: hart, aber spröde, hoher Schmelzpunkt; leitet fest nicht, flüssig schon.\nZ: weich, niedriger Schmelzpunkt; leitet in keinem Zustand.\nWelche Stoffe können X, Y und Z (in dieser Reihenfolge) sein?",
-        "fr": "Quelques propriétés des solides X, Y et Z :\nX : très dur, point de fusion très élevé ; ne conduit l'électricité ni à l'état solide ni à l'état liquide.\nY : dur mais cassant, point de fusion élevé ; ne conduit pas à l'état solide mais conduit à l'état liquide.\nZ : tendre, point de fusion bas ; ne conduit l'électricité dans aucun état.\nQue peuvent être respectivement X, Y et Z ?",
-        "ru": "Некоторые свойства твёрдых веществ X, Y и Z:\nX: очень твёрдое, очень высокая температура плавления; не проводит ток ни в твёрдом, ни в жидком состоянии.\nY: твёрдое, но хрупкое, высокая температура плавления; в твёрдом состоянии не проводит, в жидком проводит.\nZ: мягкое, низкая температура плавления; не проводит ток ни в каком состоянии.\nКакими веществами могут быть соответственно X, Y и Z?",
-        "ar": "فيما يلي بعض خواص المواد الصلبة X وY وZ:\nX: شديدة الصلابة، درجة انصهارها عالية جداً، لا توصل الكهرباء صلبةً ولا سائلةً.\nY: صلبة لكنها هشة، درجة انصهارها عالية، لا توصل صلبةً وتوصل سائلةً.\nZ: طرية، درجة انصهارها منخفضة، لا توصل الكهرباء في أيّ حالة.\nماذا يمكن أن تكون X وY وZ على الترتيب؟",
-        "zh": "固体 X、Y、Z 的部分性质如下：\nX：非常坚硬，熔点很高；固态和液态都不导电。\nY：硬而脆，熔点高；固态不导电，液态导电。\nZ：质软，熔点低；任何状态都不导电。\nX、Y、Z 依次可能是下列哪一组？",
-        "ku": "Hin taybetmendiyên madeyên hişk X, Y û Z ev in:\nX: Pir req e, xala wê ya helînê pir bilind e; di rewşa hişk û şile de elektrîkê naguhezîne.\nY: Req lê şikestbar e, xala wê ya helînê bilind e; di rewşa hişk de naguhezîne, di rewşa şile de diguhezîne.\nZ: Nerm e, xala wê ya helînê nizm e; di tu rewşê de elektrîkê naguhezîne.\nLi gorî vê, X, Y û Z bi rêzê dikarin kîjan bin?"
+        "tr": "Tabloda X, Y ve Z katılarının bazı özellikleri verilmiştir (+: iletir, −: iletmez).\nX, Y ve Z katıları sırasıyla aşağıdakilerden hangisi olabilir?",
+        "en": "The table lists some properties of the solids X, Y and Z (+: conducts, −: does not conduct).\nWhich of the following could X, Y and Z be, respectively?",
+        "de": "Die Tabelle gibt einige Eigenschaften der Feststoffe X, Y und Z an (+: leitet, −: leitet nicht).\nUm welche Stoffe kann es sich bei X, Y und Z der Reihe nach handeln?",
+        "fr": "Le tableau indique quelques propriétés des solides X, Y et Z (+ : conduit, − : ne conduit pas).\nQue peuvent être, respectivement, X, Y et Z ?",
+        "ru": "В таблице приведены некоторые свойства твёрдых веществ X, Y и Z (+: проводит, −: не проводит).\nЧем могут быть соответственно X, Y и Z?",
+        "ar": "يبيّن الجدول بعض خواص المواد الصلبة X وY وZ (+: يوصل، −: لا يوصل).\nماذا يمكن أن تكون X وY وZ على الترتيب؟",
+        "zh": "表中列出了固体 X、Y、Z 的一些性质（+：导电，−：不导电）。\nX、Y、Z 依次可能是下列哪一组？",
+        "ku": "Di tabloyê de hin taybetmendiyên hişkên X, Y û Z hatine dayîn (+: diguhezîne, −: naguhezîne).\nX, Y û Z bi rêzê dikarin kîjan bin?"
       },
       "options": [
         {
@@ -1577,14 +1828,133 @@ export const unit04: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Çok sert, erime noktası çok yüksek ve hiçbir hâlde iletken olmayan X, atomları kovalent bağlarla ağ oluşturmuş bir katıdır: kuvars. Katıyken iletmeyip eriyiği iletken olan, sert ve kırılgan Y iyonik katıdır: NaCl. Yumuşak, erime noktası düşük ve yalıtkan Z moleküler katıdır: buz. Demir katı hâlde elektriği ilettiği için X olamaz.",
-        "en": "X — very hard, very high melting point and non-conducting in every state — is a solid whose atoms form a covalent network: quartz. Y — hard and brittle, non-conducting as a solid but conducting when molten — is ionic: NaCl. Z — soft, low-melting and insulating — is a molecular solid: ice. Iron conducts electricity as a solid, so it cannot be X.",
-        "de": "X – sehr hart, sehr hoher Schmelzpunkt, in keinem Zustand leitend – ist ein Feststoff mit kovalentem Atomnetz: Quarz. Y – hart und spröde, fest nichtleitend, geschmolzen leitend – ist ionisch: NaCl. Z – weich, niedrig schmelzend, nichtleitend – ist ein Molekülkristall: Eis. Eisen leitet im festen Zustand und kann daher nicht X sein.",
-        "fr": "X — très dur, point de fusion très élevé, non conducteur dans tout état — est un solide dont les atomes forment un réseau covalent : le quartz. Y — dur et cassant, isolant à l'état solide mais conducteur fondu — est ionique : NaCl. Z — tendre, à bas point de fusion et isolant — est un solide moléculaire : la glace. Le fer conduit à l'état solide, il ne peut donc pas être X.",
-        "ru": "X — очень твёрдое вещество с очень высокой температурой плавления, не проводящее ток ни в каком состоянии, — вещество с атомной (ковалентной) кристаллической решёткой: кварц. Y — твёрдое и хрупкое, не проводит ток в твёрдом состоянии, но проводит в расплаве — ионное вещество: NaCl. Z — мягкое, легкоплавкое, не проводящее ток — молекулярное вещество: лёд. Железо проводит ток в твёрдом состоянии, поэтому не может быть X.",
-        "ar": "X الشديدة الصلابة العالية الانصهار جداً غير الموصلة في أيّ حالة مادة صلبة ترتبط ذراتها بروابط تساهمية شبكية: الكوارتز. وY الصلبة الهشة غير الموصلة صلبةً والموصلة مصهورةً صلب أيوني: NaCl. وZ الطرية المنخفضة الانصهار العازلة صلب جزيئي: الجليد. والحديد يوصل الكهرباء صلباً فلا يمكن أن يكون X.",
-        "zh": "X 非常坚硬、熔点很高、任何状态都不导电，是原子以共价键连成网状结构的固体：石英。Y 硬而脆、固态不导电而熔融态导电，是离子晶体：NaCl。Z 质软、熔点低、不导电，是分子晶体：冰。铁在固态时能导电，所以不可能是 X。",
-        "ku": "X, ku pir req e, xala wê ya helînê pir bilind e û di tu rewşê de naguhezîne, madeyeke hişk e ku atomên wê bi girêdanên kovalent torekê çêdikin: kuvars. Y, ku req û şikestbar e, di rewşa hişk de naguhezîne lê dema dihele diguhezîne, madeyeke hişk a îyonîk e: NaCl. Z, ku nerm e, xala wê ya helînê nizm e û îzolator e, madeyeke hişk a molekulî ye: qeşa. Hesin di rewşa hişk de elektrîkê diguhezîne, loma nikare X be."
+        "tr": "Tabloya göre X çok sert, erime noktası çok yüksek ve hiçbir hâlde iletken değildir: atomları kovalent bağlarla üç boyutlu ağ oluşturmuş bir katıdır, yani kuvars (SiO2). Y sert ama kırılgan, erime noktası yüksek; katıyken iletmeyip sıvıyken iletir: iyonları katıda sabit, eriyikte serbest olan iyonik katıdır, yani NaCl. Z yumuşak, erime noktası düşük ve yalıtkandır: molekülleri zayıf etkileşimlerle tutunan moleküler katıdır, yani buz. Demir katı hâlde de elektriği ilettiği için X olamaz.",
+        "en": "From the table, X is very hard, has a very high melting point and conducts in neither state: a solid whose atoms form a three-dimensional covalent network, i.e. quartz (SiO2). Y is hard but brittle with a high melting point, and conducts only when molten: an ionic solid whose ions are fixed in the solid and free in the melt, i.e. NaCl. Z is soft, melts at a low temperature and is an insulator: a molecular solid held by weak interactions, i.e. ice. Iron conducts electricity even as a solid, so it cannot be X.",
+        "de": "Laut Tabelle ist X sehr hart, hat einen sehr hohen Schmelzpunkt und leitet in keinem Zustand: ein Feststoff, dessen Atome ein dreidimensionales kovalentes Netz bilden, also Quarz (SiO2). Y ist hart, aber spröde, schmilzt hoch und leitet nur als Schmelze: ein Ionenkristall, dessen Ionen im Feststoff fixiert und in der Schmelze frei sind, also NaCl. Z ist weich, schmilzt niedrig und isoliert: ein Molekülkristall mit schwachen Wechselwirkungen, also Eis. Eisen leitet schon im festen Zustand und kann daher nicht X sein.",
+        "fr": "D'après le tableau, X est très dur, a une température de fusion très élevée et ne conduit dans aucun état : solide dont les atomes forment un réseau covalent tridimensionnel, donc le quartz (SiO2). Y est dur mais cassant, fond à haute température et ne conduit qu'à l'état fondu : solide ionique dont les ions sont fixes dans le solide et libres dans le liquide, donc NaCl. Z est mou, fond à basse température et est isolant : solide moléculaire maintenu par de faibles interactions, donc la glace. Le fer conduit déjà à l'état solide, il ne peut donc pas être X.",
+        "ru": "По таблице X очень твёрдый, плавится при очень высокой температуре и не проводит ток ни в каком состоянии: это вещество с трёхмерной ковалентной сеткой атомов, то есть кварц (SiO2). Y твёрдый, но хрупкий, тугоплавкий и проводит только в расплаве: ионный кристалл, ионы которого закреплены в твёрдом веществе и свободны в расплаве, то есть NaCl. Z мягкий, легкоплавкий и не проводит ток: молекулярный кристалл со слабыми взаимодействиями, то есть лёд. Железо проводит ток и в твёрдом виде, поэтому не может быть X.",
+        "ar": "من الجدول: X شديد الصلابة ودرجة انصهاره عالية جدًا ولا يوصل في أيّ حالة: مادة صلبة تكوّن ذراتها شبكة تساهمية ثلاثية الأبعاد، أي الكوارتز (SiO2). وY صلب لكنه هش ودرجة انصهاره عالية، لا يوصل صلبًا ويوصل مصهورًا: مادة صلبة أيونية أيوناتها ثابتة في الصلب وحرة في المصهور، أي NaCl. وZ لين ودرجة انصهاره منخفضة وعازل: مادة صلبة جزيئية تتماسك بتآثرات ضعيفة، أي الجليد. الحديد يوصل الكهرباء وهو صلب، فلا يمكن أن يكون X.",
+        "zh": "由表可知，X 很硬、熔点很高、在任何状态下都不导电：原子以共价键形成三维网状结构的固体，即石英（SiO2）。Y 硬而脆、熔点高、固态不导电而熔融态导电：离子在固体中固定、在熔体中自由移动的离子晶体，即 NaCl。Z 软、熔点低、不导电：靠较弱作用力结合的分子晶体，即冰。铁在固态时也导电，所以不可能是 X。",
+        "ku": "Li gorî tabloyê X gelek hişk e, xala wê ya helînê gelek bilind e û di tu rewşê de naguhezîne: hişkeke ku atomên wê bi girêdanên kovalent tora sêrehendî çêkirine, ango kuvars (SiO2). Y hişk lê şikestbar e, xala helînê bilind e; di rewşa hişk de naguhezîne, di rewşa şile de diguhezîne: hişkeke îyonîk e ku îyonên wê di hişkê de sabît û di helandinê de azad in, ango NaCl. Z nerm e, xala helînê nizm e û îzolator e: hişkeke molekulî ye ku bi têkiliyên lawaz bi hev ve girêdayî ye, ango qeşa. Hesin di rewşa hişk de jî elektrîkê diguhezîne, ji ber vê nikare X be."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Katı",
+            "en": "Solid",
+            "de": "Feststoff",
+            "fr": "Solide",
+            "ru": "Вещество",
+            "ar": "المادة",
+            "zh": "固体",
+            "ku": "Hişk"
+          },
+          {
+            "tr": "Sertlik",
+            "en": "Hardness",
+            "de": "Härte",
+            "fr": "Dureté",
+            "ru": "Твёрдость",
+            "ar": "الصلابة",
+            "zh": "硬度",
+            "ku": "Hişkbûn"
+          },
+          {
+            "tr": "Erime noktası",
+            "en": "Melting point",
+            "de": "Schmelzpunkt",
+            "fr": "T. de fusion",
+            "ru": "Т. плавления",
+            "ar": "درجة الانصهار",
+            "zh": "熔点",
+            "ku": "Xala helînê"
+          },
+          {
+            "tr": "İletkenlik (katı / sıvı)",
+            "en": "Conductivity (solid / liquid)",
+            "de": "Leitfähigkeit (fest / flüssig)",
+            "fr": "Conductivité (solide / liquide)",
+            "ru": "Проводимость (тв. / ж.)",
+            "ar": "التوصيل (صلب / سائل)",
+            "zh": "导电性（固 / 液）",
+            "ku": "Guhezbarî (hişk / şile)"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            {
+              "tr": "Çok sert",
+              "en": "Very hard",
+              "de": "Sehr hart",
+              "fr": "Très dur",
+              "ru": "Очень твёрдый",
+              "ar": "شديد الصلابة",
+              "zh": "很硬",
+              "ku": "Gelek hişk"
+            },
+            {
+              "tr": "Çok yüksek",
+              "en": "Very high",
+              "de": "Sehr hoch",
+              "fr": "Très élevée",
+              "ru": "Очень высокая",
+              "ar": "عالية جدًا",
+              "zh": "很高",
+              "ku": "Gelek bilind"
+            },
+            "− / −"
+          ],
+          [
+            "Y",
+            {
+              "tr": "Sert, kırılgan",
+              "en": "Hard, brittle",
+              "de": "Hart, spröde",
+              "fr": "Dur, cassant",
+              "ru": "Твёрдый, хрупкий",
+              "ar": "صلب، هش",
+              "zh": "硬而脆",
+              "ku": "Hişk, şikestbar"
+            },
+            {
+              "tr": "Yüksek",
+              "en": "High",
+              "de": "Hoch",
+              "fr": "Élevée",
+              "ru": "Высокая",
+              "ar": "عالية",
+              "zh": "高",
+              "ku": "Bilind"
+            },
+            "− / +"
+          ],
+          [
+            "Z",
+            {
+              "tr": "Yumuşak",
+              "en": "Soft",
+              "de": "Weich",
+              "fr": "Mou",
+              "ru": "Мягкий",
+              "ar": "لين",
+              "zh": "软",
+              "ku": "Nerm"
+            },
+            {
+              "tr": "Düşük",
+              "en": "Low",
+              "de": "Niedrig",
+              "fr": "Basse",
+              "ru": "Низкая",
+              "ar": "منخفضة",
+              "zh": "低",
+              "ku": "Nizm"
+            },
+            "− / −"
+          ]
+        ]
       }
     },
     {

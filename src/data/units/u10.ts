@@ -96,14 +96,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-f03",
       "fact": {
-        "tr": "Deterjanlar petrol türevidir ve sert sulardaki Ca2+ ve Mg2+ iyonlarıyla çökelek oluşturmadığından sert sularda da iyi temizler.",
-        "en": "Detergents are petroleum derivatives and clean well in hard water as they do not form precipitates with the Ca2+ and Mg2+ ions in hard water.",
-        "de": "Reinigungsmittel sind Erdölderivate und reinigen gut in hartem Wasser, da sie in hartem Wasser keine Niederschläge mit den Ca2+- und Mg2+-Ionen bilden.",
-        "fr": "Les détergents sont des dérivés du pétrole et nettoient bien dans l'eau dure car ils ne forment pas de précipités avec les ions Ca2+ et Mg2+ dans l'eau dure.",
-        "ru": "Синтетические моющие средства производят из продуктов переработки нефти; они не образуют осадка с ионами Ca2+ и Mg2+, поэтому хорошо моют и в жёсткой воде.",
-        "ar": "المنظفات الصناعية مشتقات بترولية، وتنظف جيدًا في الماء العسر أيضًا لأنها لا تكوّن رواسب مع أيونات Ca2+ وMg2+ الموجودة فيه.",
-        "zh": "洗涤剂是石油产品，不与硬水中的 Ca2+ 和 Mg2+ 离子形成沉淀，因此在硬水中也能很好地去污。",
-        "ku": "Deterjan ji derûvên neftê têne çêkirin; ji ber ku bi îyonên Ca2+ û Mg2+ yên ava hişk re niştek çênakin, di ava hişk de jî baş paqij dikin."
+        "tr": "Deterjanlar çoğunlukla petrol türevlerinden üretilir ve sert sulardaki Ca2+ ve Mg2+ iyonlarıyla çökelek oluşturmadığından sert sularda da iyi temizler.",
+        "en": "Detergents are mostly made from petroleum derivatives and clean well in hard water as they do not form precipitates with the Ca2+ and Mg2+ ions in hard water.",
+        "de": "Synthetische Reinigungsmittel werden überwiegend aus Erdölderivaten hergestellt und reinigen gut in hartem Wasser, da sie in hartem Wasser keine Niederschläge mit den Ca2+- und Mg2+-Ionen bilden.",
+        "fr": "Les détergents sont surtout fabriqués à partir de dérivés du pétrole et nettoient bien dans l'eau dure car ils ne forment pas de précipités avec les ions Ca2+ et Mg2+ dans l'eau dure.",
+        "ru": "Синтетические моющие средства производят в основном из продуктов переработки нефти; они не образуют осадка с ионами Ca2+ и Mg2+, поэтому хорошо моют и в жёсткой воде.",
+        "ar": "تُصنع المنظفات الصناعية غالبًا من مشتقات البترول، وتنظف جيدًا في الماء العسر أيضًا لأنها لا تكوّن رواسب مع أيونات Ca2+ وMg2+ الموجودة فيه.",
+        "zh": "洗涤剂大多由石油衍生物制得，不与硬水中的 Ca2+ 和 Mg2+ 离子形成沉淀，因此在硬水中也能很好地去污。",
+        "ku": "Deterjan bi piranî ji derûvên neftê têne çêkirin; ji ber ku bi îyonên Ca2+ û Mg2+ yên ava hişk re niştek çênakin, di ava hişk de jî baş paqij dikin."
       },
       "trap": {
         "tr": "Deterjan sert suda çökelerek temizleme özelliğini kaybeder.",
@@ -261,14 +261,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-f08",
       "fact": {
-        "tr": "Kevlar, kurşun geçirmez yelek, miğfer ve uçak kanatlarında kullanılan hafif ve aşırı dayanıklı sentetik poliamiddir.",
-        "en": "Kevlar is a lightweight and extremely durable synthetic polyamide used in bulletproof vests, helmets and aircraft wings.",
-        "de": "Kevlar ist ein leichtes und extrem haltbares synthetisches Polyamid, das in kugelsicheren Westen, Helmen und Flugzeugflügeln verwendet wird.",
-        "fr": "Le Kevlar est un polyamide synthétique léger et extrêmement durable utilisé dans les gilets pare-balles, les casques et les ailes d'avion.",
-        "ru": "Кевлар — лёгкий и чрезвычайно прочный синтетический полиамид; его используют в бронежилетах, шлемах и крыльях самолётов.",
-        "ar": "الكيفلار بولي أميد صناعي خفيف ومتين للغاية، يُستخدم في السترات الواقية من الرصاص والخوذ وأجنحة الطائرات.",
-        "zh": "凯夫拉是一种轻质、极其坚固的合成聚酰胺，用于防弹背心、头盔和飞机机翼。",
-        "ku": "Kevlar polîamîdeke sentetîk a sivik û pir xurt e ku di êlekên dijgule, kask û baskên balafiran de tê bikaranîn."
+        "tr": "Kevlar, kurşun geçirmez yelek, miğfer ve uçak parçalarında kullanılan hafif ve aşırı dayanıklı sentetik poliamiddir.",
+        "en": "Kevlar is a lightweight and extremely durable synthetic polyamide used in bulletproof vests, helmets and aircraft parts.",
+        "de": "Kevlar ist ein leichtes und extrem haltbares synthetisches Polyamid, das in kugelsicheren Westen, Helmen und Flugzeugbauteilen verwendet wird.",
+        "fr": "Le Kevlar est un polyamide synthétique léger et extrêmement durable utilisé dans les gilets pare-balles, les casques et des pièces d'avion.",
+        "ru": "Кевлар — лёгкий и чрезвычайно прочный синтетический полиамид; его используют в бронежилетах, шлемах и деталях самолётов.",
+        "ar": "الكيفلار بولي أميد صناعي خفيف ومتين للغاية، يُستخدم في السترات الواقية من الرصاص والخوذ وأجزاء الطائرات.",
+        "zh": "凯夫拉是一种轻质、极其坚固的合成聚酰胺，用于防弹背心、头盔和飞机部件。",
+        "ku": "Kevlar polîamîdeke sentetîk a sivik û pir xurt e ku di êlekên dijgule, kask û parçeyên balafiran de tê bikaranîn."
       },
       "trap": {
         "tr": "Kevlar tek kullanımlık plastik bardak üretiminde kullanılır.",
@@ -580,14 +580,14 @@ export const unit10: ChemistryUnitSeedData = {
         "ku": "Sabûn"
       },
       "distinction": {
-        "tr": "Deterjan petrol türevlerinden üretilir, sert sularda da temizler ancak doğada zor parçalandığı için çevreyi daha çok kirletir; sabun ise bitkisel veya hayvansal yağlardan üretilir, sert suda çökelek oluşturur ve doğada kolay parçalanır.",
-        "en": "A detergent is made from petroleum derivatives, cleans in hard water too, but pollutes the environment more because it breaks down slowly in nature; soap is made from vegetable or animal fats, forms a precipitate in hard water and breaks down easily in nature.",
-        "de": "Ein Detergens wird aus Erdölderivaten hergestellt, reinigt auch in hartem Wasser, belastet die Umwelt aber stärker, weil es in der Natur nur schwer abgebaut wird; Seife wird aus pflanzlichen oder tierischen Fetten hergestellt, bildet in hartem Wasser einen Niederschlag und wird in der Natur leicht abgebaut.",
-        "fr": "Un détergent est fabriqué à partir de dérivés du pétrole, nettoie aussi en eau dure, mais pollue davantage l'environnement car il se dégrade difficilement dans la nature ; le savon est fabriqué à partir de graisses végétales ou animales, forme un précipité en eau dure et se dégrade facilement dans la nature.",
-        "ru": "Синтетическое моющее средство получают из продуктов переработки нефти; оно моет и в жёсткой воде, но сильнее загрязняет окружающую среду, так как с трудом разлагается в природе; мыло получают из растительных или животных жиров, в жёсткой воде оно образует осадок, а в природе легко разлагается.",
-        "ar": "المنظف الصناعي يُصنع من مشتقات البترول وينظف في الماء العسر أيضًا، لكنه يلوث البيئة أكثر لأنه يتحلل بصعوبة في الطبيعة؛ أما الصابون فيُصنع من الدهون النباتية أو الحيوانية ويكوّن راسبًا في الماء العسر ويتحلل بسهولة في الطبيعة.",
-        "zh": "洗涤剂由石油衍生物制得，在硬水中也能去污，但在自然界中难以分解，因而对环境污染更大；肥皂由植物或动物油脂制得，在硬水中会生成沉淀，在自然界中容易分解。",
-        "ku": "Deterjan ji derûvên neftê tê çêkirin, di ava hişk de jî paqij dike, lê ji ber ku di xwezayê de bi zehmetî perçe dibe jîngehê bêtir qirêj dike; sabûn ji rûnên riwekî an heywanî tê çêkirin, di ava hişk de niştek çêdike û di xwezayê de bi hêsanî perçe dibe."
+        "tr": "Deterjan çoğunlukla petrol türevlerinden üretilir, sert sularda da temizler ancak doğada zor parçalandığı için çevreyi daha çok kirletir; sabun ise bitkisel veya hayvansal yağlardan üretilir, sert suda çökelek oluşturur ve doğada kolay parçalanır.",
+        "en": "A detergent is mostly made from petroleum derivatives, cleans in hard water too, but pollutes the environment more because it breaks down slowly in nature; soap is made from vegetable or animal fats, forms a precipitate in hard water and breaks down easily in nature.",
+        "de": "Ein Detergens wird überwiegend aus Erdölderivaten hergestellt, reinigt auch in hartem Wasser, belastet die Umwelt aber stärker, weil es in der Natur nur schwer abgebaut wird; Seife wird aus pflanzlichen oder tierischen Fetten hergestellt, bildet in hartem Wasser einen Niederschlag und wird in der Natur leicht abgebaut.",
+        "fr": "Un détergent est surtout fabriqué à partir de dérivés du pétrole, nettoie aussi en eau dure, mais pollue davantage l'environnement car il se dégrade difficilement dans la nature ; le savon est fabriqué à partir de graisses végétales ou animales, forme un précipité en eau dure et se dégrade facilement dans la nature.",
+        "ru": "Синтетическое моющее средство получают в основном из продуктов переработки нефти; оно моет и в жёсткой воде, но сильнее загрязняет окружающую среду, так как с трудом разлагается в природе; мыло получают из растительных или животных жиров, в жёсткой воде оно образует осадок, а в природе легко разлагается.",
+        "ar": "المنظف الصناعي يُصنع غالبًا من مشتقات البترول وينظف في الماء العسر أيضًا، لكنه يلوث البيئة أكثر لأنه يتحلل بصعوبة في الطبيعة؛ أما الصابون فيُصنع من الدهون النباتية أو الحيوانية ويكوّن راسبًا في الماء العسر ويتحلل بسهولة في الطبيعة.",
+        "zh": "洗涤剂大多由石油衍生物制得，在硬水中也能去污，但在自然界中难以分解，因而对环境污染更大；肥皂由植物或动物油脂制得，在硬水中会生成沉淀，在自然界中容易分解。",
+        "ku": "Deterjan bi piranî ji derûvên neftê tê çêkirin, di ava hişk de jî paqij dike, lê ji ber ku di xwezayê de bi zehmetî perçe dibe jîngehê bêtir qirêj dike; sabûn ji rûnên riwekî an heywanî tê çêkirin, di ava hişk de niştek çêdike û di xwezayê de bi hêsanî perçe dibe."
       }
     },
     {
@@ -712,13 +712,13 @@ export const unit10: ChemistryUnitSeedData = {
         "ku": "Polîmera sentetîk"
       },
       "distinction": {
-        "tr": "Nişasta, selüloz ve DNA doğal polimerlerdir; PE, PVC, Teflon ve Kevlar fabrikada üretilen sentetik polimerlerdir.",
-        "en": "Starch, cellulose and DNA are natural polymers; PE, PVC, Teflon and Kevlar are factory-produced synthetic polymers.",
+        "tr": "Doğal polimerler (nişasta, selüloz, proteinler, DNA) canlılar tarafından üretilir; sentetik polimerler (PE, PVC, Teflon, Kevlar) ise monomerlerden fabrikada üretilir.",
+        "en": "Natural polymers (starch, cellulose, proteins, DNA) are made by living organisms; synthetic polymers (PE, PVC, Teflon, Kevlar) are made from monomers in factories.",
         "de": "Ein natürliches Polymer kommt in der Natur vor (Stärke, Cellulose, DNA); synthetische Makromoleküle wie PE, PVC, Teflon und Kevlar werden dagegen industriell hergestellt.",
         "fr": "Un polymère naturel se trouve dans la nature (amidon, cellulose, ADN) ; un polymère synthétique est fabriqué en usine (PE, PVC, Téflon, Kevlar).",
         "ru": "Природный полимер встречается в природе (крахмал, целлюлоза, ДНК); синтетический полимер получают на заводе (ПЭ, ПВХ, тефлон, кевлар).",
         "ar": "البوليمر الطبيعي: بوليمر موجود في الطبيعة مثل النشا والسليلوز والحمض النووي (DNA)؛ أما البوليمر الاصطناعي فيُنتَج في المصانع، مثل PE وPVC والتفلون والكيفلار.",
-        "zh": "淀粉、纤维素和 DNA 属于天然聚合物；PE、PVC、特氟龙和凯夫拉是工厂生产的合成聚合物。",
+        "zh": "天然聚合物（淀粉、纤维素、蛋白质、DNA）由生物体合成；合成聚合物（PE、PVC、特氟龙、凯夫拉）则在工厂中由单体制得。",
         "ku": "Polîmera xwezayî di xwezayê de heye (nîşasta, selûloz, DNA); polîmera sentetîk di fabrîkeyê de tê çêkirin (PE, PVC, Teflon, Kevlar)."
       }
     },
@@ -881,69 +881,69 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-s02",
       "title": {
-        "tr": "Sabun Üretim Reaksiyonu",
-        "en": "Soap Production Reaction",
-        "de": "Reaktion der Seifenproduktion",
-        "fr": "Réaction de production de savon",
-        "ru": "Реакция получения мыла",
-        "ar": "تفاعل إنتاج الصابون",
-        "zh": "制皂反应",
-        "ku": "Reaksiyona Hilberîna Sabûnê"
+        "tr": "Sabun Üretimi",
+        "en": "Soap Production",
+        "de": "Seifenherstellung",
+        "fr": "Fabrication du savon",
+        "ru": "Получение мыла",
+        "ar": "إنتاج الصابون",
+        "zh": "肥皂的制取",
+        "ku": "Hilberîna Sabûnê"
       },
       "steps": [
         {
-          "tr": "Bitkisel veya hayvansal yağ ısıtılır",
-          "en": "Vegetable or animal oil is heated",
-          "de": "Pflanzen- oder tierisches Öl wird erhitzt",
-          "fr": "L'huile végétale ou animale est chauffée",
-          "ru": "Растительный или животный жир нагревают",
-          "ar": "يُسخَّن الزيت النباتي أو الدهن الحيواني",
-          "zh": "加热植物油或动物脂肪",
-          "ku": "Rûnê riwekî an heywanî tê germkirin"
+          "tr": "Bitkisel veya hayvansal yağ, derişik NaOH çözeltisiyle karıştırılır",
+          "en": "Vegetable or animal fat is mixed with concentrated NaOH solution",
+          "de": "Pflanzliches oder tierisches Fett wird mit konzentrierter NaOH-Lösung gemischt",
+          "fr": "La graisse végétale ou animale est mélangée à une solution concentrée de NaOH",
+          "ru": "Растительный или животный жир смешивают с концентрированным раствором NaOH",
+          "ar": "يُخلط الزيت النباتي أو الدهن الحيواني بمحلول NaOH المركّز",
+          "zh": "将植物油或动物脂肪与浓 NaOH 溶液混合",
+          "ku": "Rûnê riwekî an heywanî bi çareseriya NaOH-a tîr re tê tevlihevkirin"
         },
         {
-          "tr": "Derişik sodyum hidroksit (NaOH) eklenir",
-          "en": "Concentrated sodium hydroxide (NaOH) is added",
-          "de": "Konzentriertes Natriumhydroxid (NaOH) wird hinzugefügt",
-          "fr": "De l'hydroxyde de sodium concentré (NaOH) est ajouté",
-          "ru": "Добавляют концентрированный гидроксид натрия (NaOH)",
-          "ar": "يُضاف هيدروكسيد الصوديوم (NaOH) المركز",
-          "zh": "加入浓氢氧化钠(NaOH)",
-          "ku": "Hîdroksîda sodyûmê ya tîr (NaOH) tê lêzêdekirin"
+          "tr": "Karışım ısıtılarak sabunlaşma (saponifikasyon) tepkimesi gerçekleştirilir",
+          "en": "The mixture is heated so that the saponification reaction takes place",
+          "de": "Das Gemisch wird erhitzt, sodass die Verseifung abläuft",
+          "fr": "Le mélange est chauffé pour que la réaction de saponification ait lieu",
+          "ru": "Смесь нагревают, и протекает реакция омыления",
+          "ar": "يُسخَّن الخليط فيحدث تفاعل التصبّن",
+          "zh": "加热混合物，发生皂化反应",
+          "ku": "Tevlihevî tê germkirin û reaksiyona sabûnbûnê (saponîfîkasyon) pêk tê"
         },
         {
-          "tr": "Saponifikasyon (sabunlaşma) tepkimesi gerçekleşir",
-          "en": "The saponification reaction takes place",
-          "de": "Die Verseifungsreaktion findet statt",
-          "fr": "La réaction de saponification a lieu",
-          "ru": "Протекает реакция омыления",
-          "ar": "يحدث تفاعل التصبن",
-          "zh": "发生皂化反应",
-          "ku": "Reaksiyona sabûnbûnê (saponîfîkasyon) pêk tê"
+          "tr": "Oluşan karışıma yemek tuzu (NaCl) eklenerek sabun çöktürülür",
+          "en": "Table salt (NaCl) is added to the resulting mixture to precipitate the soap",
+          "de": "Dem entstandenen Gemisch wird Kochsalz (NaCl) zugesetzt, um die Seife auszufällen",
+          "fr": "On ajoute du sel de cuisine (NaCl) au mélange obtenu pour faire précipiter le savon",
+          "ru": "К полученной смеси добавляют поваренную соль (NaCl), и мыло высаливается",
+          "ar": "يُضاف ملح الطعام (NaCl) إلى الخليط الناتج فيترسّب الصابون",
+          "zh": "向所得混合物中加入食盐(NaCl)，使肥皂析出（盐析）",
+          "ku": "Li tevliheviya çêbûyî xwêya xwarinê (NaCl) tê zêdekirin û sabûn tê niştandin"
         },
         {
-          "tr": "Tuz eklenerek sabun kalıbı çöktürülür ve gliserin ayrılır",
-          "en": "By adding salt, the soap bar is precipitated and the glycerin is separated.",
-          "de": "Durch die Zugabe von Salz wird das Seifenstück ausgefällt und das Glycerin abgetrennt.",
-          "fr": "En ajoutant du sel, le pain de savon est précipité et la glycérine est séparée.",
-          "ru": "При добавлении поваренной соли мыло выделяется в твёрдом виде (высаливается), а глицерин отделяется",
-          "ar": "يُضاف الملح فيترسب الصابون على هيئة قوالب ويُفصل الغليسرين",
-          "zh": "加入食盐使肥皂析出（盐析），并分离出甘油",
-          "ku": "Bi lêzêdekirina xwê sabûn tê niştandin û glîserîn ji hev vediqete"
+          "tr": "Çöken sabun, gliserinli sıvıdan ayrılarak kalıplara dökülür",
+          "en": "The precipitated soap is separated from the glycerol-containing liquid and poured into moulds",
+          "de": "Die ausgefällte Seife wird von der glycerinhaltigen Flüssigkeit getrennt und in Formen gegossen",
+          "fr": "Le savon précipité est séparé du liquide contenant la glycérine et coulé dans des moules",
+          "ru": "Выделившееся мыло отделяют от жидкости, содержащей глицерин, и разливают по формам",
+          "ar": "يُفصل الصابون المترسّب عن السائل المحتوي على الغليسرين ويُصبّ في قوالب",
+          "zh": "将析出的肥皂与含甘油的液体分离，倒入模具成型",
+          "ku": "Sabûna niştî ji şileya bi glîserîn tê veqetandin û di qaliban de tê rijandin"
         }
       ]
     },
     {
       "id": "u10-s03",
       "title": {
-        "tr": "Katılma Polimerleşmesi Süreci (Örn. Polietilen)",
-        "en": "Addition Polymerisation Process (e.g. Polyethylene)",
-        "de": "Ablauf der Additionspolymerisation (z. B. Polyethylen)",
-        "fr": "Processus de polymérisation par addition (p. ex. polyéthylène)",
-        "ru": "Процесс полимеризации присоединением (например, полиэтилен)",
-        "ar": "عملية البلمرة بالإضافة (مثل البولي إيثيلين)",
-        "zh": "加成聚合过程（如聚乙烯）",
-        "ku": "Pêvajoya Polîmerîzasyona Lêzêdekirinê (mînak: polîetîlen)"
+        "tr": "Katılma Polimerleşmesi (Polietilen Örneği)",
+        "en": "Addition Polymerisation (Polyethylene Example)",
+        "de": "Additionspolymerisation (Beispiel Polyethylen)",
+        "fr": "Polymérisation par addition (exemple du polyéthylène)",
+        "ru": "Полимеризация присоединением (на примере полиэтилена)",
+        "ar": "البلمرة بالإضافة (مثال البولي إيثيلين)",
+        "zh": "加成聚合（以聚乙烯为例）",
+        "ku": "Polîmerîzasyona Lêzêdekirinê (mînaka polîetîlenê)"
       },
       "steps": [
         {
@@ -1124,77 +1124,83 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin02",
       "stem": {
-        "tr": "Yüksek sıcaklığa dayanıklı olan, kimyasal maddelerle çok zor tepkimeye giren ve yiyeceklerin yapışmasını önlediği için tava ve tencerelerin iç yüzeyini kaplamada kullanılan polimer aşağıdakilerden hangisidir?",
-        "en": "Which of the following polymers is heat-resistant, reacts with chemicals only with great difficulty and, because it stops food from sticking, is used to coat the inner surface of pans and pots?",
-        "de": "Welches der folgenden Polymere ist hitzebeständig, reagiert nur sehr schwer mit Chemikalien und wird, weil es das Anhaften von Speisen verhindert, zur Beschichtung der Innenfläche von Pfannen und Töpfen verwendet?",
-        "fr": "Lequel des polymères suivants résiste aux hautes températures, réagit très difficilement avec les produits chimiques et, parce qu’il empêche les aliments d’attacher, sert à revêtir l’intérieur des poêles et des casseroles ?",
-        "ru": "Какой полимер термостоек, крайне трудно вступает в реакции с химическими веществами и, так как к нему не пригорает пища, используется для покрытия внутренней поверхности сковород и кастрюль?",
-        "ar": "أيّ البوليمرات الآتية يتحمل درجات الحرارة العالية، ويصعب جدًا أن يتفاعل مع المواد الكيميائية، ويُستخدم لطلاء السطح الداخلي للمقالي والقدور لأنه يمنع التصاق الطعام؟",
-        "zh": "下列哪种聚合物耐高温、极难与化学物质发生反应，并因能防止食物粘连而被用于锅具内表面的涂层？",
-        "ku": "Kîjan ji van polîmeran li ber germahiya bilind radiweste, bi zehmetî bi madeyên kîmyewî re dikeve reaksiyonê û ji ber ku nahêle xwarin pê ve bizeliqe, ji bo rûpoşkirina rûyê hundir ê tawe û beroşan tê bikaranîn?"
+        "tr": "Şekilde X ve Y polimerlerinin zincirlerinden birer kesit verilmiştir.\nI. X'in monomeri tetrafloroetilendir (CF2=CF2).\nII. Y, yapışmaz tava ve tencere kaplamalarında kullanılan polimerdir.\nIII. X ve Y, monomerlerindeki C=C ikili bağlarının açılmasıyla oluşan katılma polimerleridir.\nyargılarından hangileri doğrudur?",
+        "en": "The figure shows a section of the chains of polymers X and Y. Which of the following statements are true?\nI. The monomer of X is tetrafluoroethylene (CF2=CF2).\nII. Y is the polymer used to coat non-stick pans and pots.\nIII. X and Y are addition polymers formed by opening the C=C double bonds of their monomers.",
+        "de": "Die Abbildung zeigt je einen Kettenausschnitt der Polymere X und Y. Welche Aussagen sind richtig?\nI. Das Monomer von X ist Tetrafluorethylen (CF2=CF2).\nII. Y ist das Polymer, mit dem Antihaft-Pfannen und -Töpfe beschichtet werden.\nIII. X und Y sind Additionspolymere, die durch Öffnen der C=C-Doppelbindungen ihrer Monomere entstehen.",
+        "fr": "La figure montre un fragment de chaîne des polymères X et Y. Quelles affirmations sont vraies ?\nI. Le monomère de X est le tétrafluoroéthylène (CF2=CF2).\nII. Y est le polymère utilisé pour le revêtement des poêles et casseroles antiadhésives.\nIII. X et Y sont des polymères d'addition formés par ouverture des doubles liaisons C=C de leurs monomères.",
+        "ru": "На рисунке показаны фрагменты цепей полимеров X и Y. Какие утверждения верны?\nI. Мономер X — тетрафторэтилен (CF2=CF2).\nII. Y — полимер, которым покрывают антипригарные сковороды и кастрюли.\nIII. X и Y — продукты полимеризации присоединением, образующиеся при раскрытии двойных связей C=C мономеров.",
+        "ar": "يبيّن الشكل جزءًا من سلسلة كلٍّ من البوليمرين X وY. أيّ العبارات الآتية صحيحة؟\nI. مونومر X هو رباعي فلورو الإيثيلين (CF2=CF2).\nII. Y هو البوليمر المستخدم في طلاء المقالي والقدور غير اللاصقة.\nIII. X وY بوليمرات إضافة تتكوّن بانفتاح الروابط الثنائية C=C في مونومراتها.",
+        "zh": "图中分别给出了聚合物 X 和 Y 的一段分子链。下列说法中哪些正确？\nI. X 的单体是四氟乙烯(CF2=CF2)。\nII. Y 是用于不粘锅涂层的聚合物。\nIII. X 和 Y 都是单体中的 C=C 双键打开后形成的加聚物。",
+        "ku": "Di şeklê de ji zincîrên polîmerên X û Y her yek beşek hatiye dayîn. Kîjan ji van gotinan rast in?\nI. Monomera X tetrafloroetîlen e (CF2=CF2).\nII. Y ew polîmer e ku di rûpoşa tawe û beroşên nezeliqok de tê bikaranîn.\nIII. X û Y polîmerên lêzêdekirinê ne ku bi vebûna girêdanên ducar ên C=C yên monomerên xwe çêdibin."
       },
       "options": [
         {
-          "tr": "Teflon (PTFE)",
-          "en": "Teflon (PTFE)",
-          "de": "Teflon (PTFE)",
-          "fr": "Téflon (PTFE)",
-          "ru": "Тефлон (ПТФЭ)",
-          "ar": "التفلون (PTFE)",
-          "zh": "聚四氟乙烯(PTFE)",
-          "ku": "Teflon (PTFE)"
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "PVC",
-          "en": "PVC",
-          "de": "PVC",
-          "fr": "PVC",
-          "ru": "ПВХ",
-          "ar": "PVC",
-          "zh": "PVC",
-          "ku": "PVC"
+          "tr": "Yalnız II",
+          "en": "Only II",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "PET",
-          "en": "PET",
-          "de": "PET",
-          "fr": "PET",
-          "ru": "ПЭТ",
-          "ar": "PET",
-          "zh": "PET",
-          "ku": "PET"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Kevlar",
-          "en": "Kevlar",
-          "de": "Kevlar",
-          "fr": "Kevlar",
-          "ru": "Кевлар",
-          "ar": "الكيفلار",
-          "zh": "凯夫拉",
-          "ku": "Kevlar"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Polietilen",
-          "en": "polyethylene",
-          "de": "Polyethylen",
-          "fr": "polyéthylène",
-          "ru": "Полиэтилен",
-          "ar": "البولي إيثيلين",
-          "zh": "聚乙烯",
-          "ku": "Polîetîlen"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Teflon (PTFE, politetrafloroetilen) yüksek sıcaklığa dayanır, kimyasallarla çok zor tepkimeye girer ve yüzeyine yiyecek yapışmaz; bu nedenle tava ve tencere kaplamalarında kullanılır. PVC pencere profili ve boruda, PET içecek şişelerinde, Kevlar kurşun geçirmez yeleklerde, polietilen ise poşet ve ambalajda kullanılır.",
-        "en": "Teflon (PTFE, polytetrafluoroethylene) withstands high temperatures, hardly reacts with chemicals and food does not stick to its surface; that is why it is used to coat pans and pots. PVC is used for window profiles and pipes, PET for beverage bottles, Kevlar for bulletproof vests and polyethylene for bags and packaging.",
-        "de": "Teflon (PTFE, Polytetrafluorethylen) hält hohen Temperaturen stand, reagiert kaum mit Chemikalien, und Speisen haften nicht an seiner Oberfläche; deshalb wird es zur Beschichtung von Pfannen und Töpfen verwendet. PVC wird für Fensterprofile und Rohre, PET für Getränkeflaschen, Kevlar für kugelsichere Westen und Polyethylen für Tüten und Verpackungen verwendet.",
-        "fr": "Le Téflon (PTFE, polytétrafluoroéthylène) résiste aux hautes températures, réagit très difficilement avec les produits chimiques et les aliments n'adhèrent pas à sa surface ; c'est pourquoi il sert à revêtir les poêles et les casseroles. Le PVC sert aux profilés de fenêtres et aux tuyaux, le PET aux bouteilles de boissons, le Kevlar aux gilets pare-balles et le polyéthylène aux sacs et emballages.",
-        "ru": "Тефлон (ПТФЭ, политетрафторэтилен) выдерживает высокие температуры, крайне трудно вступает в реакции с химическими веществами, и пища не пригорает к его поверхности; поэтому им покрывают сковороды и кастрюли. ПВХ используют для оконных профилей и труб, ПЭТ — для бутылок для напитков, кевлар — для бронежилетов, а полиэтилен — для пакетов и упаковки.",
-        "ar": "التفلون (PTFE، بولي تترافلوروإيثيلين) يتحمل درجات الحرارة العالية ويصعب جدًّا أن يتفاعل مع المواد الكيميائية ولا يلتصق الطعام بسطحه؛ لذلك يُستخدم في طلاء المقالي والقدور. أما PVC فيُستخدم في إطارات النوافذ والأنابيب، وPET في قوارير المشروبات، والكيفلار في السترات الواقية من الرصاص، والبولي إيثيلين في الأكياس ومواد التعبئة.",
-        "zh": "特氟龙(PTFE，聚四氟乙烯)耐高温，极难与化学物质反应，食物也不会粘在其表面，因此用于平底锅和锅具的涂层。PVC 用于窗框型材和管道，PET 用于饮料瓶，凯夫拉用于防弹衣，聚乙烯用于塑料袋和包装。",
-        "ku": "Teflon (PTFE, polîtetrafloroetîlen) li ber germahiya bilind radiweste, bi madeyên kîmyewî re pir bi zehmetî dikeve reaksiyonê û xwarin bi rûyê wê ve nazeliqe; ji ber vê yekê di rûpoşên tawe û beroşan de tê bikaranîn. PVC di profîlên pencereyan û boriyan de, PET di şûşeyên vexwarinan de, Kevlar di êlekên dijgule de, polîetîlen jî di kîsik û ambalajan de tê bikaranîn."
+        "tr": "Şekilde X zincirinin tekrarlanan birimi –CF2–CF2–'dir; bu, monomeri CF2=CF2 olan Teflondur (PTFE). Y zincirinin tekrarlanan birimi –CH2–CHCl–'dir; bu, monomeri vinil klorür (CH2=CHCl) olan PVC'dir. I doğrudur. II yanlıştır: yapışmaz kaplamada kullanılan polimer X'tir (Teflon); PVC pencere profili ve boru yapımında kullanılır. III doğrudur: her iki monomerde de C=C ikili bağı açılır ve monomerler kovalent bağlarla uç uca eklenir. Zincirdeki Cl atomlarını gözden kaçırıp Y'yi Teflon sanmak tipik bir hatadır.",
+        "en": "In the figure the repeating unit of chain X is –CF2–CF2–; this is Teflon (PTFE), whose monomer is CF2=CF2. The repeating unit of chain Y is –CH2–CHCl–; this is PVC, whose monomer is vinyl chloride (CH2=CHCl). I is true. II is false: the non-stick coating polymer is X (Teflon); PVC is used for window frames and pipes. III is true: in both monomers the C=C double bond opens and the monomers join end to end by covalent bonds. Overlooking the Cl atoms in the chain and taking Y for Teflon is a typical mistake.",
+        "de": "In der Abbildung ist die Wiederholungseinheit der Kette X –CF2–CF2–; das ist Teflon (PTFE) mit dem Monomer CF2=CF2. Die Wiederholungseinheit der Kette Y ist –CH2–CHCl–; das ist PVC mit dem Monomer Vinylchlorid (CH2=CHCl). I ist richtig. II ist falsch: Das Polymer für Antihaftbeschichtungen ist X (Teflon); PVC wird für Fensterprofile und Rohre verwendet. III ist richtig: In beiden Monomeren öffnet sich die C=C-Doppelbindung, und die Monomere verknüpfen sich kovalent zu einer Kette. Ein typischer Fehler ist, die Cl-Atome in der Kette zu übersehen und Y für Teflon zu halten.",
+        "fr": "Sur la figure, le motif de la chaîne X est –CF2–CF2– : c'est le Téflon (PTFE), dont le monomère est CF2=CF2. Le motif de la chaîne Y est –CH2–CHCl– : c'est le PVC, dont le monomère est le chlorure de vinyle (CH2=CHCl). I est vraie. II est fausse : le polymère des revêtements antiadhésifs est X (Téflon) ; le PVC sert aux profilés de fenêtres et aux tuyaux. III est vraie : dans les deux monomères, la double liaison C=C s'ouvre et les monomères s'unissent bout à bout par des liaisons covalentes. Ne pas voir les atomes de Cl de la chaîne et prendre Y pour du Téflon est une erreur typique.",
+        "ru": "На рисунке повторяющееся звено цепи X — –CF2–CF2–; это тефлон (ПТФЭ), мономер которого CF2=CF2. Повторяющееся звено цепи Y — –CH2–CHCl–; это ПВХ, мономер которого винилхлорид (CH2=CHCl). I верно. II неверно: антипригарным покрытием служит полимер X (тефлон), а ПВХ применяют для оконных профилей и труб. III верно: в обоих мономерах раскрывается двойная связь C=C, и мономеры соединяются ковалентными связями в цепь. Не заметить атомы Cl в цепи и принять Y за тефлон — типичная ошибка.",
+        "ar": "في الشكل الوحدة المتكررة في السلسلة X هي –CF2–CF2–، وهذا هو التفلون (PTFE) الذي مونومره CF2=CF2. والوحدة المتكررة في السلسلة Y هي –CH2–CHCl–، وهذا هو PVC الذي مونومره كلوريد الفينيل (CH2=CHCl). العبارة I صحيحة. العبارة II خاطئة: البوليمر المستخدم في الطلاء غير اللاصق هو X (التفلون)، أما PVC فيُستخدم في إطارات النوافذ والأنابيب. العبارة III صحيحة: في كلا المونومرين تنفتح الرابطة الثنائية C=C وترتبط المونومرات طرفًا بطرف بروابط تساهمية. ومن الأخطاء الشائعة إغفال ذرات Cl في السلسلة وعدّ Y تفلونًا.",
+        "zh": "图中 X 链的重复单元为 –CF2–CF2–，即单体为 CF2=CF2 的特氟龙(PTFE)；Y 链的重复单元为 –CH2–CHCl–，即单体为氯乙烯(CH2=CHCl)的 PVC。I 正确。II 错误：用作不粘涂层的是 X(特氟龙)，PVC 用于门窗型材和管道。III 正确：两种单体中的 C=C 双键都打开，单体以共价键首尾相连。忽略链中的 Cl 原子而把 Y 当作特氟龙，是典型错误。",
+        "ku": "Di şeklê de yekeya dubarebûyî ya zincîra X –CF2–CF2– ye; ev Teflon (PTFE) e ku monomera wê CF2=CF2 ye. Yekeya dubarebûyî ya zincîra Y –CH2–CHCl– ye; ev PVC ye ku monomera wê vînîl klorîd (CH2=CHCl) e. I rast e. II şaş e: polîmera ku di rûpoşa nezeliqok de tê bikaranîn X (Teflon) e; PVC di profîlên pencereyan û boriyan de tê bikaranîn. III rast e: di herdu monomeran de girêdana ducar a C=C vedibe û monomer bi girêdanên kovalent li pey hev tên girêdan. Nedîtina atomên Cl ên di zincîrê de û hesibandina Y wek Teflon xeletiyeke tîpîk e."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 230,
+        "markup": "<text x=\"22\" y=\"62\" class=\"qf-big\">X</text><line x1=\"62\" y1=\"57\" x2=\"86\" y2=\"57\" class=\"qf-line\"/><text x=\"95\" y=\"62\" text-anchor=\"middle\" class=\"qf-strong\">C</text><line x1=\"104\" y1=\"57\" x2=\"151\" y2=\"57\" class=\"qf-line\"/><line x1=\"95\" y1=\"48\" x2=\"95\" y2=\"33\" class=\"qf-line\"/><text x=\"95\" y=\"29\" text-anchor=\"middle\">F</text><line x1=\"95\" y1=\"66\" x2=\"95\" y2=\"81\" class=\"qf-line\"/><text x=\"95\" y=\"95\" text-anchor=\"middle\">F</text><text x=\"160\" y=\"62\" text-anchor=\"middle\" class=\"qf-strong\">C</text><line x1=\"169\" y1=\"57\" x2=\"216\" y2=\"57\" class=\"qf-line\"/><line x1=\"160\" y1=\"48\" x2=\"160\" y2=\"33\" class=\"qf-line\"/><text x=\"160\" y=\"29\" text-anchor=\"middle\">F</text><line x1=\"160\" y1=\"66\" x2=\"160\" y2=\"81\" class=\"qf-line\"/><text x=\"160\" y=\"95\" text-anchor=\"middle\">F</text><text x=\"225\" y=\"62\" text-anchor=\"middle\" class=\"qf-strong\">C</text><line x1=\"234\" y1=\"57\" x2=\"281\" y2=\"57\" class=\"qf-line\"/><line x1=\"225\" y1=\"48\" x2=\"225\" y2=\"33\" class=\"qf-line\"/><text x=\"225\" y=\"29\" text-anchor=\"middle\">F</text><line x1=\"225\" y1=\"66\" x2=\"225\" y2=\"81\" class=\"qf-line\"/><text x=\"225\" y=\"95\" text-anchor=\"middle\">F</text><text x=\"290\" y=\"62\" text-anchor=\"middle\" class=\"qf-strong\">C</text><line x1=\"290\" y1=\"48\" x2=\"290\" y2=\"33\" class=\"qf-line\"/><text x=\"290\" y=\"29\" text-anchor=\"middle\">F</text><line x1=\"290\" y1=\"66\" x2=\"290\" y2=\"81\" class=\"qf-line\"/><text x=\"290\" y=\"95\" text-anchor=\"middle\">F</text><line x1=\"299\" y1=\"57\" x2=\"330\" y2=\"57\" class=\"qf-line\"/><line x1=\"10\" y1=\"118\" x2=\"350\" y2=\"118\" class=\"qf-dash\"/><text x=\"22\" y=\"182\" class=\"qf-big\">Y</text><line x1=\"62\" y1=\"177\" x2=\"86\" y2=\"177\" class=\"qf-line\"/><text x=\"95\" y=\"182\" text-anchor=\"middle\" class=\"qf-strong\">C</text><line x1=\"104\" y1=\"177\" x2=\"151\" y2=\"177\" class=\"qf-line\"/><line x1=\"95\" y1=\"168\" x2=\"95\" y2=\"153\" class=\"qf-line\"/><text x=\"95\" y=\"149\" text-anchor=\"middle\">H</text><line x1=\"95\" y1=\"186\" x2=\"95\" y2=\"201\" class=\"qf-line\"/><text x=\"95\" y=\"215\" text-anchor=\"middle\">H</text><text x=\"160\" y=\"182\" text-anchor=\"middle\" class=\"qf-strong\">C</text><line x1=\"169\" y1=\"177\" x2=\"216\" y2=\"177\" class=\"qf-line\"/><line x1=\"160\" y1=\"168\" x2=\"160\" y2=\"153\" class=\"qf-line\"/><text x=\"160\" y=\"149\" text-anchor=\"middle\">H</text><line x1=\"160\" y1=\"186\" x2=\"160\" y2=\"201\" class=\"qf-line\"/><text x=\"160\" y=\"215\" text-anchor=\"middle\">Cl</text><text x=\"225\" y=\"182\" text-anchor=\"middle\" class=\"qf-strong\">C</text><line x1=\"234\" y1=\"177\" x2=\"281\" y2=\"177\" class=\"qf-line\"/><line x1=\"225\" y1=\"168\" x2=\"225\" y2=\"153\" class=\"qf-line\"/><text x=\"225\" y=\"149\" text-anchor=\"middle\">H</text><line x1=\"225\" y1=\"186\" x2=\"225\" y2=\"201\" class=\"qf-line\"/><text x=\"225\" y=\"215\" text-anchor=\"middle\">H</text><text x=\"290\" y=\"182\" text-anchor=\"middle\" class=\"qf-strong\">C</text><line x1=\"290\" y1=\"168\" x2=\"290\" y2=\"153\" class=\"qf-line\"/><text x=\"290\" y=\"149\" text-anchor=\"middle\">H</text><line x1=\"290\" y1=\"186\" x2=\"290\" y2=\"201\" class=\"qf-line\"/><text x=\"290\" y=\"215\" text-anchor=\"middle\">Cl</text><line x1=\"299\" y1=\"177\" x2=\"330\" y2=\"177\" class=\"qf-line\"/>"
       }
     },
     {
@@ -1428,153 +1434,223 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin06",
       "stem": {
-        "tr": "Plastik ürünlerin üzerinde, üçgen içindeki sayılarla gösterilen geri dönüşüm kodları bulunur (1: PET, 2: HDPE, 3: PVC, 4: LDPE, 5: PP, 6: PS, 7: diğer). Bir su şişesinin altında 1, bir pencere doğramasında 3, bir yoğurt kabında 5 kodu bulunmaktadır. Bu ürünlerin yapıldığı polimerler sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?",
-        "en": "Plastic products carry recycling codes shown as numbers inside a triangle (1: PET, 2: HDPE, 3: PVC, 4: LDPE, 5: PP, 6: PS, 7: other). A water bottle bears code 1, a window frame code 3 and a yoghurt pot code 5. In which option are the polymers of these products given correctly, in this order?",
-        "de": "Kunststoffprodukte tragen Recyclingcodes als Zahlen in einem Dreieck (1: PET, 2: HDPE, 3: PVC, 4: LDPE, 5: PP, 6: PS, 7: sonstige). Eine Wasserflasche trägt den Code 1, ein Fensterrahmen den Code 3 und ein Joghurtbecher den Code 5. In welcher Antwort sind die Polymere dieser Produkte in dieser Reihenfolge richtig angegeben?",
-        "fr": "Les produits en plastique portent des codes de recyclage indiqués par des chiffres dans un triangle (1 : PET, 2 : PEHD, 3 : PVC, 4 : PEBD, 5 : PP, 6 : PS, 7 : autres). Une bouteille d’eau porte le code 1, un cadre de fenêtre le code 3 et un pot de yaourt le code 5. Dans quelle proposition les polymères de ces produits sont-ils donnés correctement, dans cet ordre ?",
-        "ru": "На пластиковых изделиях есть коды переработки — цифры в треугольнике (1: ПЭТ, 2: ПЭНД, 3: ПВХ, 4: ПЭВД, 5: ПП, 6: ПС, 7: прочие). На бутылке для воды стоит код 1, на оконной раме — 3, на стаканчике от йогурта — 5. В каком варианте полимеры этих изделий указаны верно и в этом порядке?",
-        "ar": "تحمل المنتجات البلاستيكية رموز إعادة تدوير على شكل أرقام داخل مثلث (1: PET، 2: HDPE، 3: PVC، 4: LDPE، 5: PP، 6: PS، 7: أخرى). على زجاجة ماء الرمز 1، وعلى إطار نافذة الرمز 3، وعلى علبة لبن الرمز 5. في أيّ خيار وردت بوليمرات هذه المنتجات صحيحة وبهذا الترتيب؟",
-        "zh": "塑料制品上印有三角形内数字表示的回收代码(1：PET，2：HDPE，3：PVC，4：LDPE，5：PP，6：PS，7：其他)。某水瓶底部为 1，某窗框上为 3，某酸奶杯上为 5。下列哪一项按顺序正确给出了这些产品的聚合物？",
-        "ku": "Li ser hilberên plastîk kodên vezîvirandinê hene ku wek hejmarên di nav sêgoşeyekê de têne nîşandan (1: PET, 2: HDPE, 3: PVC, 4: LDPE, 5: PP, 6: PS, 7: yên din). Li binê şûşeyeke avê koda 1, li ser çarçoveya pencereyekê koda 3 û li ser qabeke mastê koda 5 heye. Polîmerên ku ev hilber jê hatine çêkirin, bi rêzê, di kîjan vebijarkê de rast hatine dayîn?"
+        "tr": "Tabloda dört su örneğinde çözünmüş olarak bulunan başlıca iyonlar verilmiştir (iyon derişimleri musluk suyu düzeyindedir).\nI. L ve N örneklerinde sabun, suda çözünmeyen tuzlar oluşturarak tortu bırakır.\nII. M örneğinde sabun, Na+ iyonları nedeniyle köpürmez.\nIII. Deterjan dört örneğin hepsinde köpürür.\nyargılarından hangileri doğrudur?",
+        "en": "The table lists the main ions dissolved in four water samples (ion concentrations are at tap-water level). Which of the following statements are true?\nI. In samples L and N, soap forms insoluble salts and leaves a scum.\nII. In sample M, soap does not lather because of the Na+ ions.\nIII. Detergent lathers in all four samples.",
+        "de": "Die Tabelle nennt die wichtigsten gelösten Ionen in vier Wasserproben (Ionenkonzentrationen wie in Leitungswasser). Welche Aussagen sind richtig?\nI. In den Proben L und N bildet Seife unlösliche Salze und hinterlässt einen Belag.\nII. In Probe M schäumt Seife wegen der Na+-Ionen nicht.\nIII. Ein Detergens schäumt in allen vier Proben.",
+        "fr": "Le tableau donne les principaux ions dissous dans quatre échantillons d'eau (concentrations du niveau de l'eau du robinet). Quelles affirmations sont vraies ?\nI. Dans les échantillons L et N, le savon forme des sels insolubles et laisse un dépôt.\nII. Dans l'échantillon M, le savon ne mousse pas à cause des ions Na+.\nIII. Le détergent mousse dans les quatre échantillons.",
+        "ru": "В таблице указаны основные ионы, растворённые в четырёх пробах воды (концентрации ионов — как в водопроводной воде). Какие утверждения верны?\nI. В пробах L и N мыло образует нерастворимые соли и даёт налёт.\nII. В пробе M мыло не пенится из-за ионов Na+.\nIII. Синтетическое моющее средство пенится во всех четырёх пробах.",
+        "ar": "يبيّن الجدول الأيونات الرئيسة الذائبة في أربع عينات من الماء (تراكيز الأيونات بمستوى ماء الصنبور). أيّ العبارات الآتية صحيحة؟\nI. في العينتين L وN يكوّن الصابون أملاحًا غير ذائبة ويترك راسبًا.\nII. في العينة M لا يُرغي الصابون بسبب أيونات Na+.\nIII. يُرغي المنظف الصناعي في العينات الأربع جميعها.",
+        "zh": "表中列出了四种水样中溶解的主要离子（离子浓度与自来水相当）。下列说法中哪些正确？\nI. 在 L 和 N 水样中，肥皂会生成不溶性盐并留下沉渣。\nII. 在 M 水样中，肥皂因 Na+ 离子而不起泡。\nIII. 洗涤剂在四种水样中都能起泡。",
+        "ku": "Di tabloyê de îyonên sereke yên ku di çar nimûneyên avê de helandî ne hatine dayîn (tîrbûna îyonan di asta ava lûleyê de ye). Kîjan ji van gotinan rast in?\nI. Di nimûneyên L û N de sabûn xwêyên ku di avê de nahelin çêdike û niştek dihêle.\nII. Di nimûneya M de sabûn ji ber îyonên Na+ kef nade.\nIII. Deterjan di her çar nimûneyan de jî kef dide."
       },
       "options": [
         {
-          "tr": "PET, PE, PS",
-          "en": "PET, PE, PS",
-          "de": "PET, PE, PS",
-          "fr": "PET, PE, PS",
-          "ru": "ПЭТ, ПЭ, ПС",
-          "ar": "PET، PE، PS",
-          "zh": "PET、PE、PS",
-          "ku": "PET, PE, PS"
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "PVC, PET, PP",
-          "en": "PVC, PET, PP",
-          "de": "PVC, PET, PP",
-          "fr": "PVC, PET, PP",
-          "ru": "ПВХ, ПЭТ, ПП",
-          "ar": "PVC، PET، PP",
-          "zh": "PVC、PET、PP",
-          "ku": "PVC, PET, PP"
+          "tr": "Yalnız II",
+          "en": "Only II",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "PET, PP, PVC",
-          "en": "PET, PP, PVC",
-          "de": "PET, PP, PVC",
-          "fr": "PET, PP, PVC",
-          "ru": "ПЭТ, ПП, ПВХ",
-          "ar": "PET، PP، PVC",
-          "zh": "PET、PP、PVC",
-          "ku": "PET, PP, PVC"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "PET, PVC, PP",
-          "en": "PET, PVC, PP",
-          "de": "PET, PVC, PP",
-          "fr": "PET, PVC, PP",
-          "ru": "ПЭТ, ПВХ, ПП",
-          "ar": "PET، PVC، PP",
-          "zh": "PET、PVC、PP",
-          "ku": "PET, PVC, PP"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "PE, PVC, PS",
-          "en": "PE, PVC, PS",
-          "de": "PE, PVC, PS",
-          "fr": "PE, PVC, PS",
-          "ru": "ПЭ, ПВХ, ПС",
-          "ar": "PE، PVC، PS",
-          "zh": "PE、PVC、PS",
-          "ku": "PE, PVC, PS"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         }
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Verilen kod tablosuna göre 1 = PET (su şişesi), 3 = PVC (pencere doğraması), 5 = PP (polipropilen, yoğurt kabı) olur; doğru sıra PET, PVC, PP'dir. Kodlar sırasıyla okunmalıdır: PVC ile PP'nin yerini değiştirmek ya da 5 kodunu polistirenle (kod 6) karıştırmak tipik hatalardır. Kodlar, plastiklerin geri dönüşümde türlerine göre ayrılmasını kolaylaştırır.",
-        "en": "According to the code table, 1 = PET (water bottle), 3 = PVC (window frame), 5 = PP (polypropylene, yoghurt pot); the correct order is PET, PVC, PP. The codes must be read in order: swapping PVC and PP, or confusing code 5 with polystyrene (code 6), are typical mistakes. The codes make it easier to sort plastics by type for recycling.",
-        "de": "Laut Codetabelle gilt 1 = PET (Wasserflasche), 3 = PVC (Fensterrahmen), 5 = PP (Polypropylen, Joghurtbecher); die richtige Reihenfolge ist PET, PVC, PP. Typische Fehler sind das Vertauschen von PVC und PP oder die Verwechslung von Code 5 mit Polystyrol (Code 6). Die Codes erleichtern das sortenreine Trennen beim Recycling.",
-        "fr": "D’après le tableau, 1 = PET (bouteille d’eau), 3 = PVC (cadre de fenêtre), 5 = PP (polypropylène, pot de yaourt) ; l’ordre correct est PET, PVC, PP. Intervertir PVC et PP ou confondre le code 5 avec le polystyrène (code 6) sont des erreurs typiques. Les codes facilitent le tri des plastiques par type pour le recyclage.",
-        "ru": "По таблице кодов: 1 = ПЭТ (бутылка для воды), 3 = ПВХ (оконная рама), 5 = ПП (полипропилен, стаканчик от йогурта); верный порядок — ПЭТ, ПВХ, ПП. Типичные ошибки — перепутать ПВХ и ПП или спутать код 5 с полистиролом (код 6). Коды облегчают сортировку пластика по видам при переработке.",
-        "ar": "وفق جدول الرموز: 1 = PET (زجاجة الماء)، 3 = PVC (إطار النافذة)، 5 = PP (البولي بروبيلين، علبة اللبن)، فالترتيب الصحيح هو PET، PVC، PP. ومن الأخطاء الشائعة تبديل موضعي PVC وPP أو الخلط بين الرمز 5 والبوليستيرين (الرمز 6). وتسهّل هذه الرموز فرز البلاستيك حسب نوعه عند إعادة التدوير.",
-        "zh": "根据代码表：1 = PET（水瓶），3 = PVC（窗框），5 = PP（聚丙烯，酸奶杯），正确顺序为 PET、PVC、PP。把 PVC 与 PP 顺序弄反、或把代码 5 与聚苯乙烯(代码 6)混淆，都是典型错误。回收代码便于在回收时按种类分拣塑料。",
-        "ku": "Li gorî tabloya kodan: 1 = PET (şûşeya avê), 3 = PVC (çarçoveya pencereyê), 5 = PP (polîpropîlen, qaba mastê); rêza rast PET, PVC, PP ye. Divê kod bi rêzê werin xwendin: guhertina cihê PVC û PP an tevlihevkirina koda 5 bi polîstîrenê (koda 6) re şaşiyên berbelav in. Kod veqetandina plastîkan li gorî cureyê wan di vezîvirandinê de hêsan dikin."
+        "tr": "Suyun sertliğine Ca2+ ve Mg2+ iyonları yol açar. Tablodaki L örneğinde Ca2+, N örneğinde Mg2+ bulunduğundan bu iki örnek serttir; sabun anyonları bu iyonlarla suda çözünmeyen kalsiyum ve magnezyum tuzları oluşturup tortu bırakır; I doğrudur. M örneğindeki Na+ iyonu sabunla çözünen tuz oluşturur, sertlik yapmaz; sabun M'de de köpürür; II yanlıştır. Deterjanların Ca2+ ve Mg2+ ile oluşturduğu tuzlar suda çözündüğü için deterjan sert sularda da köpürür; III doğrudur. Suda çözünmüş her iyonu sertlik nedeni sanmak tipik bir hatadır.",
+        "en": "Water hardness is caused by Ca2+ and Mg2+ ions. Sample L in the table contains Ca2+ and sample N contains Mg2+, so these two samples are hard; soap anions form insoluble calcium and magnesium salts with these ions and leave a scum; I is true. The Na+ ion in sample M forms a soluble salt with soap and does not cause hardness; soap lathers in M too; II is false. Because the salts that detergents form with Ca2+ and Mg2+ are soluble, detergent lathers in hard water as well; III is true. Thinking that every dissolved ion causes hardness is a typical mistake.",
+        "de": "Die Wasserhärte wird durch Ca2+- und Mg2+-Ionen verursacht. Probe L in der Tabelle enthält Ca2+ und Probe N Mg2+, daher sind diese beiden Proben hart; Seifenanionen bilden mit diesen Ionen unlösliche Calcium- und Magnesiumsalze und hinterlassen einen Belag; I ist richtig. Das Na+-Ion in Probe M bildet mit Seife ein lösliches Salz und verursacht keine Härte; Seife schäumt auch in M; II ist falsch. Da die Salze, die Detergenzien mit Ca2+ und Mg2+ bilden, löslich sind, schäumen Detergenzien auch in hartem Wasser; III ist richtig. Ein typischer Fehler ist, jedes gelöste Ion für eine Ursache der Härte zu halten.",
+        "fr": "La dureté de l'eau est due aux ions Ca2+ et Mg2+. L'échantillon L du tableau contient Ca2+ et l'échantillon N contient Mg2+ : ces deux eaux sont dures ; les anions du savon forment avec ces ions des sels de calcium et de magnésium insolubles et laissent un dépôt ; I est vraie. L'ion Na+ de l'échantillon M forme un sel soluble avec le savon et ne cause pas de dureté ; le savon mousse aussi dans M ; II est fausse. Comme les sels que forment les détergents avec Ca2+ et Mg2+ sont solubles, le détergent mousse aussi en eau dure ; III est vraie. Croire que tout ion dissous rend l'eau dure est une erreur typique.",
+        "ru": "Жёсткость воды обусловлена ионами Ca2+ и Mg2+. Проба L в таблице содержит Ca2+, а проба N — Mg2+, поэтому эти две пробы жёсткие; анионы мыла образуют с этими ионами нерастворимые соли кальция и магния и дают налёт; I верно. Ион Na+ в пробе M образует с мылом растворимую соль и не создаёт жёсткости; в M мыло тоже пенится; II неверно. Соли, которые синтетические моющие средства образуют с Ca2+ и Mg2+, растворимы, поэтому такие средства пенятся и в жёсткой воде; III верно. Считать причиной жёсткости любой растворённый ион — типичная ошибка.",
+        "ar": "تنتج عسرة الماء عن أيونات Ca2+ وMg2+. تحتوي العينة L في الجدول على Ca2+ والعينة N على Mg2+، لذا فهاتان العينتان عسرتان؛ وتكوّن أنيونات الصابون مع هذه الأيونات أملاح كالسيوم ومغنيسيوم غير ذائبة وتترك راسبًا؛ العبارة I صحيحة. أما أيون Na+ في العينة M فيكوّن مع الصابون ملحًا ذائبًا ولا يسبب العسرة، فيُرغي الصابون في M أيضًا؛ العبارة II خاطئة. ولأن الأملاح التي تكوّنها المنظفات الصناعية مع Ca2+ وMg2+ ذائبة، يُرغي المنظف في الماء العسر أيضًا؛ العبارة III صحيحة. ومن الأخطاء الشائعة الظن أن كل أيون ذائب يسبب العسرة.",
+        "zh": "水的硬度由 Ca2+ 和 Mg2+ 离子引起。表中 L 水样含 Ca2+，N 水样含 Mg2+，所以这两种水是硬水；肥皂阴离子与这些离子生成不溶性的钙盐和镁盐，留下沉渣；I 正确。M 水样中的 Na+ 与肥皂生成可溶性盐，不造成硬度，肥皂在 M 中也能起泡；II 错误。洗涤剂与 Ca2+、Mg2+ 生成的盐可溶，所以洗涤剂在硬水中也能起泡；III 正确。认为任何溶解的离子都会造成硬度，是典型错误。",
+        "ku": "Hişkbûna avê ji îyonên Ca2+ û Mg2+ tê. Di tabloyê de nimûneya L Ca2+ û nimûneya N Mg2+ dihewîne, ji ber vê yekê ev herdu nimûne hişk in; anyonên sabûnê bi van îyonan re xwêyên kalsiyûm û magnezyûmê yên ku nahelin çêdikin û niştek dihêlin; I rast e. Îyona Na+ ya di nimûneya M de bi sabûnê re xwêyeke helbar çêdike û hişkbûnê çênake; sabûn di M de jî kef dide; II şaş e. Ji ber ku xwêyên ku deterjan bi Ca2+ û Mg2+ re çêdikin dihelin, deterjan di ava hişk de jî kef dide; III rast e. Hesibandina her îyoneke helandî wek sedema hişkbûnê xeletiyeke tîpîk e."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Örnek",
+            "en": "Sample",
+            "de": "Probe",
+            "fr": "Échantillon",
+            "ru": "Проба",
+            "ar": "العينة",
+            "zh": "水样",
+            "ku": "Nimûne"
+          },
+          {
+            "tr": "Çözünmüş başlıca iyonlar",
+            "en": "Main dissolved ions",
+            "de": "Wichtigste gelöste Ionen",
+            "fr": "Principaux ions dissous",
+            "ru": "Основные растворённые ионы",
+            "ar": "الأيونات الذائبة الرئيسة",
+            "zh": "主要溶解离子",
+            "ku": "Îyonên sereke yên helandî"
+          }
+        ],
+        "rows": [
+          [
+            "K",
+            {
+              "tr": "Yok (damıtık su)",
+              "en": "None (distilled water)",
+              "de": "Keine (destilliertes Wasser)",
+              "fr": "Aucun (eau distillée)",
+              "ru": "Нет (дистиллированная вода)",
+              "ar": "لا يوجد (ماء مقطر)",
+              "zh": "无（蒸馏水）",
+              "ku": "Tune (ava distîlekirî)"
+            }
+          ],
+          [
+            "L",
+            "Ca2+, HCO3-"
+          ],
+          [
+            "M",
+            "Na+, Cl-"
+          ],
+          [
+            "N",
+            "Mg2+, SO4^2-"
+          ]
+        ]
       }
     },
     {
       "id": "u10-twin07",
       "stem": {
-        "tr": "Banyo temizliğinde çamaşır suyu ile tuz ruhunu aynı kovada karıştıran bir kişi kısa süre sonra gözlerinde yanma, öksürük ve nefes darlığı yaşıyor. Bu belirtilere yol açan, karışımdan açığa çıkan zehirli gaz aşağıdakilerden hangisidir?",
-        "en": "While cleaning a bathroom, a person mixes bleach and hydrochloric acid (tuz ruhu) in the same bucket and soon suffers burning eyes, coughing and shortness of breath. Which toxic gas released from the mixture causes these symptoms?",
-        "de": "Bei der Badreinigung mischt eine Person Bleichlauge und Salzsäure im selben Eimer und hat bald brennende Augen, Husten und Atemnot. Welches giftige Gas aus der Mischung verursacht diese Symptome?",
-        "fr": "En nettoyant la salle de bains, une personne mélange de l’eau de Javel et de l’acide chlorhydrique dans le même seau et ressent bientôt des brûlures aux yeux, une toux et un essoufflement. Quel gaz toxique libéré par le mélange provoque ces symptômes ?",
-        "ru": "Убирая ванную, человек смешал в одном ведре отбеливатель и соляную кислоту и вскоре почувствовал жжение в глазах, кашель и одышку. Какой ядовитый газ, выделившийся из смеси, вызывает эти симптомы?",
-        "ar": "أثناء تنظيف الحمّام خلط شخص ماء الجافيل وحمض الهيدروكلوريك (روح الملح) في الدلو نفسه، وسرعان ما شعر بحرقة في العينين وسعال وضيق تنفس. ما الغاز السام المنبعث من الخليط والمسبب لهذه الأعراض؟",
-        "zh": "某人在清洁浴室时把漂白水和盐酸混在同一个桶里，不久出现眼睛灼痛、咳嗽和呼吸困难。混合物放出的导致这些症状的有毒气体是哪一种？",
-        "ku": "Kesek di paqijkirina serşokê de ava spîkirinê û ruhê xwê (asîda hîdroklorîk) di heman satilê de tevlî hev dike; piştî demeke kurt çavên wî dişewitin, dikuxe û bêhna wî teng dibe. Gaza jehrî ya ku ji tevliheviyê derdikeve û dibe sedema van nîşanan kîjan e?"
+        "tr": "Şekilde, sulu ortamda bir kir taneciğinin sabun tanecikleri tarafından sarılmasıyla oluşan yapı modellenmiş; yapının farklı kısımları K, L ve M ile gösterilmiştir.\nI. K kısmı, su molekülleriyle etkileşen iyonik (polar) uçtur.\nII. L ve M kısımları apolardır.\nIII. M taneciği polar olduğu için sabun olmadan da suda kolayca dağılır.\nyargılarından hangileri doğrudur?",
+        "en": "The figure models the structure formed when a dirt particle is surrounded by soap particles in water; different parts of the structure are marked K, L and M. Which of the following statements are true?\nI. Part K is the ionic (polar) end that interacts with water molecules.\nII. Parts L and M are nonpolar.\nIII. Particle M is polar, so it disperses easily in water even without soap.",
+        "de": "Die Abbildung zeigt modellhaft die Struktur, die entsteht, wenn ein Schmutzteilchen in Wasser von Seifenteilchen umhüllt wird; verschiedene Teile sind mit K, L und M markiert. Welche Aussagen sind richtig?\nI. Teil K ist das ionische (polare) Ende, das mit Wassermolekülen wechselwirkt.\nII. Die Teile L und M sind unpolar.\nIII. Teilchen M ist polar und verteilt sich daher auch ohne Seife leicht in Wasser.",
+        "fr": "La figure modélise la structure formée lorsqu'une particule de saleté est entourée de particules de savon dans l'eau ; différentes parties sont notées K, L et M. Quelles affirmations sont vraies ?\nI. La partie K est l'extrémité ionique (polaire) qui interagit avec les molécules d'eau.\nII. Les parties L et M sont apolaires.\nIII. La particule M est polaire, elle se disperse donc facilement dans l'eau même sans savon.",
+        "ru": "На рисунке смоделирована структура, образующаяся в воде, когда частицу грязи окружают частицы мыла; разные части структуры обозначены K, L и M. Какие утверждения верны?\nI. Часть K — ионный (полярный) конец, взаимодействующий с молекулами воды.\nII. Части L и M неполярны.\nIII. Частица M полярна, поэтому легко распределяется в воде и без мыла.",
+        "ar": "يمثّل الشكل البنية المتكوّنة عندما تحيط دقائق الصابون بدقيقة من الأوساخ في الماء، وقد رُمز إلى أجزاء البنية بـ K وL وM. أيّ العبارات الآتية صحيحة؟\nI. الجزء K هو الطرف الأيوني (القطبي) الذي يتفاعل مع جزيئات الماء.\nII. الجزآن L وM غير قطبيين.\nIII. الدقيقة M قطبية، لذا تنتشر في الماء بسهولة حتى دون صابون.",
+        "zh": "图中模拟了在水中肥皂粒子包围一个污垢粒子所形成的结构，结构的不同部分分别用 K、L、M 表示。下列说法中哪些正确？\nI. K 部分是与水分子相互作用的离子性（极性）端。\nII. L 和 M 部分都是非极性的。\nIII. M 粒子是极性的，所以没有肥皂也能在水中轻易分散。",
+        "ku": "Di şeklê de avahiya ku dema perçeyeke qirêjê di nav avê de ji aliyê perçeyên sabûnê ve tê dorpêçkirin çêdibe hatiye modelkirin; beşên cuda yên avahiyê bi K, L û M hatine nîşandan. Kîjan ji van gotinan rast in?\nI. Beşa K serê îyonî (polar) e ku bi molekulên avê re têkiliyê datîne.\nII. Beşên L û M apolar in.\nIII. Perçeya M polar e, ji ber vê yekê bê sabûn jî di avê de bi hêsanî belav dibe."
       },
       "options": [
         {
-          "tr": "H2",
-          "en": "H2",
-          "de": "H2",
-          "fr": "H2",
-          "ru": "H2",
-          "ar": "H2",
-          "zh": "H2",
-          "ku": "H2"
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Cl2",
-          "en": "Cl2",
-          "de": "Cl2",
-          "fr": "Cl2",
-          "ru": "Cl2",
-          "ar": "Cl2",
-          "zh": "Cl2",
-          "ku": "Cl2"
+          "tr": "Yalnız III",
+          "en": "Only III",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅 III",
+          "ku": "Tenê III"
         },
         {
-          "tr": "CO2",
-          "en": "CO2",
-          "de": "CO2",
-          "fr": "CO2",
-          "ru": "CO2",
-          "ar": "CO2",
-          "zh": "CO2",
-          "ku": "CO2"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "O2",
-          "en": "O2",
-          "de": "O2",
-          "fr": "O2",
-          "ru": "O2",
-          "ar": "O2",
-          "zh": "O2",
-          "ku": "O2"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "NH3",
-          "en": "NH3",
-          "de": "NH3",
-          "fr": "NH3",
-          "ru": "NH3",
-          "ar": "NH3",
-          "zh": "NH3",
-          "ku": "NH3"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Çamaşır suyundaki sodyum hipoklorit, tuz ruhundaki HCl ile tepkimeye girer: NaClO + 2HCl → NaCl + H2O + Cl2. Açığa çıkan sarımsı yeşil klor gazı (Cl2) göz ve solunum yollarını tahriş eder, yüksek derişimde öldürücüdür. NH3 ancak çamaşır suyu amonyaklı ürünlerle karıştırılırsa söz konusu olur; H2, O2 ve CO2 bu karışımın ürünü değildir. Bu yüzden temizlik maddeleri asla karıştırılmamalı, ortam havalandırılmalıdır.",
-        "en": "The sodium hypochlorite in bleach reacts with the HCl: NaClO + 2HCl → NaCl + H2O + Cl2. The yellow-green chlorine gas (Cl2) released irritates the eyes and airways and is lethal at high concentration. NH3 would only matter if bleach were mixed with ammonia-containing products; H2, O2 and CO2 are not products of this mixture. Cleaning agents must therefore never be mixed, and the room should be ventilated.",
-        "de": "Das Natriumhypochlorit der Bleichlauge reagiert mit HCl: NaClO + 2HCl → NaCl + H2O + Cl2. Das freigesetzte gelbgrüne Chlorgas (Cl2) reizt Augen und Atemwege und ist in hoher Konzentration tödlich. NH3 spielt nur beim Mischen mit ammoniakhaltigen Mitteln eine Rolle; H2, O2 und CO2 entstehen hier nicht. Reinigungsmittel daher nie mischen und gut lüften.",
-        "fr": "L’hypochlorite de sodium de l’eau de Javel réagit avec HCl : NaClO + 2HCl → NaCl + H2O + Cl2. Le dichlore (Cl2), gaz jaune-vert libéré, irrite les yeux et les voies respiratoires et est mortel à forte concentration. NH3 n’interviendrait que si l’eau de Javel était mélangée à des produits ammoniaqués ; H2, O2 et CO2 ne sont pas produits ici. Il ne faut donc jamais mélanger les produits ménagers et il faut aérer.",
-        "ru": "Гипохлорит натрия из отбеливателя реагирует с HCl: NaClO + 2HCl → NaCl + H2O + Cl2. Выделяющийся жёлто-зелёный хлор (Cl2) раздражает глаза и дыхательные пути, а в высокой концентрации смертелен. NH3 был бы опасен лишь при смешивании отбеливателя с аммиачными средствами; H2, O2 и CO2 здесь не образуются. Поэтому чистящие средства нельзя смешивать, а помещение нужно проветривать.",
-        "ar": "يتفاعل هيبوكلوريت الصوديوم في ماء الجافيل مع HCl: NaClO + 2HCl → NaCl + H2O + Cl2. وغاز الكلور (Cl2) الأصفر المخضر المنبعث يهيّج العينين والمجاري التنفسية وهو قاتل بتراكيز عالية. أما NH3 فلا يظهر إلا عند خلط ماء الجافيل بمنتجات تحتوي على الأمونيا، وH2 وO2 وCO2 ليست من نواتج هذا الخليط. لذا يجب ألّا تُخلط مواد التنظيف أبدًا وأن يُهوّى المكان.",
-        "zh": "漂白水中的次氯酸钠与 HCl 反应：NaClO + 2HCl → NaCl + H2O + Cl2。放出的黄绿色氯气(Cl2)刺激眼睛和呼吸道，高浓度时可致命。只有漂白水与含氨产品混合时才涉及 NH3；H2、O2、CO2 都不是此混合物的产物。因此清洁剂绝不能混用，并应保持通风。",
-        "ku": "Hîpoklorîta sodyûmê ya di ava spîkirinê de bi HCl ya di ruhê xwê de re dikeve reaksiyonê: NaClO + 2HCl → NaCl + H2O + Cl2. Gaza klorê (Cl2) ya zer-kesk a ku derdikeve çav û rêyên bêhnê aciz dike û di tîrbûna bilind de kujer e. NH3 tenê dema ava spîkirinê bi hilberên amonyakdar re were tevlîkirin derdikeve holê; H2, O2 û CO2 ne hilberên vê tevliheviyê ne. Ji ber vê yekê divê madeyên paqijkirinê qet neyên tevlîkirin û divê cih were hewadan."
+        "tr": "Şekildeki yapı bir miseldir. Dışta suya dönük K kısımları sabun taneciklerinin –COO- Na+ içeren iyonik (polar, hidrofil) başlarıdır ve su molekülleriyle etkileşir; I doğrudur. L, uzun hidrokarbon kuyruğudur; M ise kuyrukların sardığı yağlı kir taneciğidir. Benzer benzeri çözdüğü için apolar kuyruklar apolar kire tutunur; II doğrudur. Kir apolar olduğundan suda kendiliğinden dağılmaz; ancak dışı polar başlarla kaplı misel içine alınınca suyla uzaklaştırılır; III yanlıştır. Başların kire, kuyrukların suya yöneldiğini sanmak tipik bir hatadır.",
+        "en": "The structure in the figure is a micelle. The outer parts K, facing the water, are the ionic (polar, hydrophilic) heads of the soap particles containing –COO- Na+, and they interact with water molecules; I is true. L is the long hydrocarbon tail and M is the greasy dirt particle surrounded by the tails. Since like dissolves like, the nonpolar tails attach to the nonpolar dirt; II is true. Dirt is nonpolar, so it does not disperse in water by itself; only when it is enclosed in a micelle whose surface is covered with polar heads can it be washed away; III is false. Thinking that the heads point towards the dirt and the tails towards the water is a typical mistake.",
+        "de": "Die Struktur in der Abbildung ist eine Mizelle. Die äußeren, dem Wasser zugewandten Teile K sind die ionischen (polaren, hydrophilen) Köpfe der Seifenteilchen mit –COO- Na+ und wechselwirken mit Wassermolekülen; I ist richtig. L ist der lange Kohlenwasserstoffschwanz, M das fettige Schmutzteilchen, das von den Schwänzen umschlossen wird. Da sich Gleiches in Gleichem löst, haften die unpolaren Schwänze am unpolaren Schmutz; II ist richtig. Schmutz ist unpolar und verteilt sich nicht von selbst in Wasser; erst eingeschlossen in eine Mizelle, deren Oberfläche aus polaren Köpfen besteht, wird er ausgewaschen; III ist falsch. Ein typischer Fehler ist anzunehmen, die Köpfe zeigten zum Schmutz und die Schwänze zum Wasser.",
+        "fr": "La structure de la figure est une micelle. Les parties K, à l'extérieur et tournées vers l'eau, sont les têtes ioniques (polaires, hydrophiles) –COO- Na+ des particules de savon ; elles interagissent avec les molécules d'eau ; I est vraie. L est la longue queue hydrocarbonée et M la particule de saleté grasse entourée par les queues. Comme le semblable dissout le semblable, les queues apolaires s'accrochent à la saleté apolaire ; II est vraie. La saleté est apolaire et ne se disperse pas seule dans l'eau ; elle n'est entraînée qu'une fois enfermée dans une micelle dont la surface est couverte de têtes polaires ; III est fausse. Croire que les têtes sont tournées vers la saleté et les queues vers l'eau est une erreur typique.",
+        "ru": "Структура на рисунке — мицелла. Внешние части K, обращённые к воде, — ионные (полярные, гидрофильные) головки частиц мыла с группой –COO- Na+; они взаимодействуют с молекулами воды; I верно. L — длинный углеводородный хвост, M — жирная частица грязи, окружённая хвостами. Подобное растворяется в подобном, поэтому неполярные хвосты прилипают к неполярной грязи; II верно. Грязь неполярна и сама в воде не распределяется; она смывается только внутри мицеллы, поверхность которой покрыта полярными головками; III неверно. Типичная ошибка — думать, что головки направлены к грязи, а хвосты к воде.",
+        "ar": "البنية في الشكل هي مُذيلة (ميسيل). الأجزاء الخارجية K المتجهة نحو الماء هي الرؤوس الأيونية (القطبية، المحبة للماء) لدقائق الصابون التي تحتوي على –COO- Na+، وهي تتفاعل مع جزيئات الماء؛ العبارة I صحيحة. L هو الذيل الهيدروكربوني الطويل، وM دقيقة الأوساخ الدهنية التي تحيط بها الذيول. ولأن الشبيه يذيب الشبيه، تلتصق الذيول غير القطبية بالأوساخ غير القطبية؛ العبارة II صحيحة. الأوساخ غير قطبية فلا تنتشر في الماء من تلقاء نفسها، ولا تُزال إلا بعد احتجازها داخل مُذيلة سطحها مغطى برؤوس قطبية؛ العبارة III خاطئة. ومن الأخطاء الشائعة الظن أن الرؤوس تتجه نحو الأوساخ والذيول نحو الماء.",
+        "zh": "图中的结构是胶束。朝向水的外侧 K 部分是肥皂粒子含 –COO- Na+ 的离子性（极性、亲水）头部，与水分子相互作用；I 正确。L 是长的烃链尾部，M 是被尾部包围的油性污垢粒子。根据相似相溶，非极性尾部附着在非极性污垢上；II 正确。污垢是非极性的，不会自行分散在水中，只有被包进表面覆盖着极性头部的胶束后才能被水冲走；III 错误。认为头部朝向污垢、尾部朝向水，是典型错误。",
+        "ku": "Avahiya di şeklê de mîsel e. Beşên K yên li derve û ber bi avê ve, serên îyonî (polar, hîdrofîl) yên perçeyên sabûnê ne ku –COO- Na+ dihewînin û bi molekulên avê re têkiliyê datînin; I rast e. L dûvê dirêj ê hîdrokarbonî ye; M jî perçeya qirêja rûnî ye ku dûv wê dorpêç dikin. Ji ber ku wekhev wekhevê dihelîne, dûvên apolar bi qirêja apolar ve dizeliqin; II rast e. Qirêj apolar e û bi serê xwe di avê de belav nabe; tenê dema ku dikeve nav mîseleke ku rûyê wê bi serên polar hatiye pêçandin, bi avê tê rakirin; III şaş e. Hesibandina ku ser ber bi qirêjê û dûv ber bi avê ve ne xeletiyeke tîpîk e."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 232,
+        "markup": "<rect x=\"8\" y=\"8\" width=\"344\" height=\"216\" rx=\"10\" class=\"qf-water\"/><text x=\"22\" y=\"30\" class=\"qf-small\">{{water}}</text><circle cx=\"180\" cy=\"118\" r=\"34\" class=\"qf-accent2\"/><text x=\"180\" y=\"124\" text-anchor=\"middle\" class=\"qf-big\">M</text><line x1=\"214.2\" y1=\"106.9\" x2=\"246.6\" y2=\"96.4\" class=\"qf-line\"/><circle cx=\"254.2\" cy=\"93.9\" r=\"8\" class=\"qf-accent\"/><line x1=\"201.2\" y1=\"88.9\" x2=\"221.1\" y2=\"61.4\" class=\"qf-line\"/><circle cx=\"225.8\" cy=\"54.9\" r=\"8\" class=\"qf-accent\"/><line x1=\"180.0\" y1=\"82.0\" x2=\"180.0\" y2=\"48.0\" class=\"qf-line\"/><circle cx=\"180.0\" cy=\"40.0\" r=\"8\" class=\"qf-accent\"/><line x1=\"158.8\" y1=\"88.9\" x2=\"138.9\" y2=\"61.4\" class=\"qf-line\"/><circle cx=\"134.2\" cy=\"54.9\" r=\"8\" class=\"qf-accent\"/><line x1=\"145.8\" y1=\"106.9\" x2=\"113.4\" y2=\"96.4\" class=\"qf-line\"/><circle cx=\"105.8\" cy=\"93.9\" r=\"8\" class=\"qf-accent\"/><line x1=\"145.8\" y1=\"129.1\" x2=\"113.4\" y2=\"139.6\" class=\"qf-line\"/><circle cx=\"105.8\" cy=\"142.1\" r=\"8\" class=\"qf-accent\"/><line x1=\"158.8\" y1=\"147.1\" x2=\"138.9\" y2=\"174.6\" class=\"qf-line\"/><circle cx=\"134.2\" cy=\"181.1\" r=\"8\" class=\"qf-accent\"/><line x1=\"180.0\" y1=\"154.0\" x2=\"180.0\" y2=\"188.0\" class=\"qf-line\"/><circle cx=\"180.0\" cy=\"196.0\" r=\"8\" class=\"qf-accent\"/><line x1=\"201.2\" y1=\"147.1\" x2=\"221.1\" y2=\"174.6\" class=\"qf-line\"/><circle cx=\"225.8\" cy=\"181.1\" r=\"8\" class=\"qf-accent\"/><line x1=\"214.2\" y1=\"129.1\" x2=\"246.6\" y2=\"139.6\" class=\"qf-line\"/><circle cx=\"254.2\" cy=\"142.1\" r=\"8\" class=\"qf-accent\"/><line x1=\"263.2\" y1=\"90.9\" x2=\"286.2\" y2=\"79.9\" class=\"qf-line\"/><text x=\"290.2\" y=\"81.9\" class=\"qf-big\">K</text><line x1=\"129.6\" y1=\"134.4\" x2=\"99.6\" y2=\"174.4\" class=\"qf-line\"/><text x=\"85.6\" y=\"186.4\" class=\"qf-big\">L</text>",
+        "labels": {
+          "water": {
+            "tr": "su",
+            "en": "water",
+            "de": "Wasser",
+            "fr": "eau",
+            "ru": "вода",
+            "ar": "ماء",
+            "zh": "水",
+            "ku": "av"
+          }
+        }
       }
     },
     {
@@ -1656,14 +1732,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin09",
       "stem": {
-        "tr": "İki zeytinyağı şişesinin etiketlerinde şu bilgiler yazmaktadır:\nX: Zeytinden yalnızca mekanik (fiziksel) yöntemlerle, hiçbir kimyasal işlem uygulanmadan elde edilmiştir; serbest yağ asitliği %0,5'tir.\nY: Rafine zeytinyağı ile natürel zeytinyağının karıştırılmasıyla elde edilmiştir.\nBuna göre X ve Y yağları sırasıyla aşağıdakilerden hangisidir?",
-        "en": "The labels of two olive-oil bottles state:\nX: Obtained from olives only by mechanical (physical) methods, with no chemical treatment; free acidity 0.5%.\nY: Obtained by blending refined olive oil with virgin olive oil.\nAccordingly, what are oils X and Y, respectively?",
-        "de": "Auf den Etiketten zweier Olivenölflaschen steht:\nX: Nur durch mechanische (physikalische) Verfahren ohne chemische Behandlung aus Oliven gewonnen; Gehalt an freien Fettsäuren 0,5 %.\nY: Durch Mischen von raffiniertem Olivenöl mit nativem Olivenöl hergestellt.\nWelche Öle sind X und Y demnach?",
+        "tr": "İki zeytinyağı şişesinin etiketlerinde şu bilgiler yazmaktadır:\nX: Zeytinden yalnızca mekanik (fiziksel) yöntemlerle, hiçbir kimyasal işlem uygulanmadan elde edilmiştir; serbest yağ asitliği %0,5'tir.\nY: Rafine zeytinyağı ile natürel zeytinyağının karıştırılmasıyla elde edilmiştir.\nX ve Y yağları sırasıyla aşağıdakilerden hangisidir?",
+        "en": "The labels of two olive-oil bottles state:\nX: Obtained from olives only by mechanical (physical) methods, with no chemical treatment; free acidity 0.5%.\nY: Obtained by blending refined olive oil with virgin olive oil.\nWhat are oils X and Y, respectively?",
+        "de": "Auf den Etiketten zweier Olivenölflaschen steht:\nX: Nur durch mechanische (physikalische) Verfahren ohne chemische Behandlung aus Oliven gewonnen; Gehalt an freien Fettsäuren 0,5 %.\nY: Durch Mischen von raffiniertem Olivenöl mit nativem Olivenöl hergestellt.\nWelche Öle sind X und Y?",
         "fr": "Les étiquettes de deux bouteilles d’huile d’olive indiquent :\nX : obtenue à partir d’olives uniquement par des procédés mécaniques (physiques), sans aucun traitement chimique ; acidité libre de 0,5 %.\nY : obtenue en mélangeant de l’huile d’olive raffinée et de l’huile d’olive vierge.\nQue sont, respectivement, les huiles X et Y ?",
         "ru": "На этикетках двух бутылок оливкового масла написано:\nX: получено из оливок только механическими (физическими) методами, без химической обработки; кислотность 0,5 %.\nY: получено смешиванием рафинированного оливкового масла с натуральным.\nКакие это масла (X и Y соответственно)?",
         "ar": "كُتب على ملصقَي زجاجتين من زيت الزيتون:\nX: استُخرج من الزيتون بالطرق الميكانيكية (الفيزيائية) فقط دون أي معالجة كيميائية؛ نسبة الحموضة الحرة 0.5%.\nY: حُضّر بخلط زيت الزيتون المكرر مع زيت الزيتون البكر.\nما الزيتان X وY على الترتيب؟",
-        "zh": "两瓶橄榄油的标签上写着：\nX：仅用机械（物理）方法从橄榄中获得，未经任何化学处理；游离酸度 0.5%。\nY：由精炼橄榄油与初榨橄榄油混合而成。\n据此，X 和 Y 分别是哪种油？",
-        "ku": "Li ser etîketên du şûşeyên rûnê zeytûnê ev agahî hene:\nX: Tenê bi rêbazên mekanîkî (fîzîkî), bê tu pêvajoya kîmyewî ji zeytûnê hatiye bidestxistin; asîdiya azad %0,5 e.\nY: Bi tevlîkirina rûnê zeytûnê yê rafînekirî û rûnê zeytûnê yê xwezayî hatiye bidestxistin.\nLi gorî vê, rûnên X û Y bi rêzê kîjan in?"
+        "zh": "两瓶橄榄油的标签上写着：\nX：仅用机械（物理）方法从橄榄中获得，未经任何化学处理；游离酸度 0.5%。\nY：由精炼橄榄油与初榨橄榄油混合而成。\nX 和 Y 分别是哪种油？",
+        "ku": "Li ser etîketên du şûşeyên rûnê zeytûnê ev agahî hene:\nX: Tenê bi rêbazên mekanîkî (fîzîkî), bê tu pêvajoya kîmyewî ji zeytûnê hatiye bidestxistin; asîdiya azad %0,5 e.\nY: Bi tevlîkirina rûnê zeytûnê yê rafînekirî û rûnê zeytûnê yê xwezayî hatiye bidestxistin.\nRûnên X û Y bi rêzê kîjan in?"
       },
       "options": [
         {
@@ -1732,77 +1808,163 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin10",
       "stem": {
-        "tr": "Pastörize süt yaklaşık 72 °C'de 15–20 saniye ısıtılıp hızla soğutulur ve buzdolabında birkaç gün saklanabilir. UHT süt ise yaklaşık 135–150 °C'de 2–4 saniye ısıtılır ve açılmamış ambalajında oda sıcaklığında aylarca bozulmadan kalabilir. Bu bilgilere göre aşağıdaki yargılardan hangisi doğrudur?",
-        "en": "Pasteurised milk is heated to about 72 °C for 15–20 seconds, cooled quickly and can be kept in the fridge for a few days. UHT milk is heated to about 135–150 °C for 2–4 seconds and can stay unspoiled for months at room temperature in its unopened pack. According to this information, which statement is correct?",
-        "de": "Pasteurisierte Milch wird etwa 15–20 Sekunden auf etwa 72 °C erhitzt, rasch abgekühlt und hält sich im Kühlschrank einige Tage. UHT-Milch wird 2–4 Sekunden auf etwa 135–150 °C erhitzt und bleibt ungeöffnet bei Raumtemperatur monatelang haltbar. Welche Aussage ist nach diesen Angaben richtig?",
-        "fr": "Le lait pasteurisé est chauffé à environ 72 °C pendant 15 à 20 secondes, refroidi rapidement et se conserve quelques jours au réfrigérateur. Le lait UHT est chauffé à environ 135–150 °C pendant 2 à 4 secondes et peut se conserver des mois à température ambiante dans son emballage fermé. D’après ces informations, quelle affirmation est correcte ?",
-        "ru": "Пастеризованное молоко нагревают примерно до 72 °C на 15–20 секунд и быстро охлаждают; в холодильнике оно хранится несколько дней. Молоко UHT нагревают примерно до 135–150 °C на 2–4 секунды, и в невскрытой упаковке оно месяцами не портится при комнатной температуре. Какое утверждение верно согласно этим данным?",
-        "ar": "يُسخَّن الحليب المبستر إلى نحو 72 °C لمدة 15–20 ثانية ثم يُبرَّد بسرعة، ويمكن حفظه في الثلاجة بضعة أيام. أما حليب UHT فيُسخَّن إلى نحو 135–150 °C لمدة 2–4 ثوانٍ، ويبقى في عبوته المغلقة دون أن يفسد أشهرًا في درجة حرارة الغرفة. وفقًا لهذه المعلومات، أيّ العبارات الآتية صحيحة؟",
-        "zh": "巴氏杀菌奶在约 72 °C 下加热 15–20 秒后迅速冷却，可在冰箱中保存几天。UHT 奶在约 135–150 °C 下加热 2–4 秒，未开封时可在室温下保存数月不变质。根据这些信息，下列哪项说法正确？",
-        "ku": "Şîrê pastorîzekirî li dora 72 °C 15–20 çirkeyan tê germkirin, zû tê sarkirin û dikare çend rojan di sarincokê de bimîne. Şîrê UHT li dora 135–150 °C 2–4 çirkeyan tê germkirin û di pakêta xwe ya venekirî de, di germahiya odeyê de bi mehan xera nabe. Li gorî van agahiyan kîjan gotin rast e?"
+        "tr": "Şekildeki grafik, aynı çiğ sütten alınan iki örneğe uygulanan X ve Y ısıl işlemlerinde sütün sıcaklığının zamanla değişimini göstermektedir (X işleminde süt en yüksek sıcaklıkta yaklaşık 15 saniye, Y işleminde yaklaşık 3 saniye tutulmuştur).\nI. X işlemi pastörizasyondur ve bu süt buzdolabında saklanmalıdır.\nII. Y işlemi uygulanmış süt, açılmamış aseptik ambalajında oda sıcaklığında aylarca bozulmadan kalabilir.\nIII. X işleminde sütteki mikroorganizmaların ve sporlarının tamamı yok edilir.\nyargılarından hangileri doğrudur?",
+        "en": "The graph shows how the temperature of milk changes with time in heat treatments X and Y applied to two samples of the same raw milk (in X the milk is held at its highest temperature for about 15 seconds, in Y for about 3 seconds). Which of the following statements are true?\nI. Treatment X is pasteurization, and this milk must be kept in a refrigerator.\nII. Milk given treatment Y can keep for months at room temperature in its unopened aseptic package.\nIII. Treatment X destroys all the microorganisms and spores in the milk.",
+        "de": "Das Diagramm zeigt den zeitlichen Temperaturverlauf der Milch bei den Wärmebehandlungen X und Y, die an zwei Proben derselben Rohmilch durchgeführt werden (bei X wird die Milch etwa 15 Sekunden, bei Y etwa 3 Sekunden auf der Höchsttemperatur gehalten). Welche Aussagen sind richtig?\nI. Behandlung X ist eine Pasteurisierung; diese Milch muss im Kühlschrank aufbewahrt werden.\nII. Mit Y behandelte Milch hält sich in der ungeöffneten aseptischen Verpackung monatelang bei Raumtemperatur.\nIII. Bei Behandlung X werden alle Mikroorganismen und Sporen in der Milch abgetötet.",
+        "fr": "Le graphique montre l'évolution de la température du lait au cours des traitements thermiques X et Y appliqués à deux échantillons du même lait cru (dans X, le lait est maintenu à sa température maximale environ 15 secondes, dans Y environ 3 secondes). Quelles affirmations sont vraies ?\nI. Le traitement X est une pasteurisation et ce lait doit être conservé au réfrigérateur.\nII. Le lait traité par Y peut se conserver des mois à température ambiante dans son emballage aseptique non ouvert.\nIII. Le traitement X détruit tous les micro-organismes et toutes les spores du lait.",
+        "ru": "На графике показано изменение температуры молока со временем при тепловой обработке X и Y двух проб одного и того же сырого молока (при X молоко выдерживают при максимальной температуре около 15 секунд, при Y — около 3 секунд). Какие утверждения верны?\nI. Обработка X — пастеризация, и такое молоко нужно хранить в холодильнике.\nII. Молоко, прошедшее обработку Y, в невскрытой асептической упаковке может храниться при комнатной температуре месяцами.\nIII. При обработке X уничтожаются все микроорганизмы и споры в молоке.",
+        "ar": "يبيّن الرسم البياني تغيّر درجة حرارة الحليب مع الزمن في المعالجتين الحراريتين X وY المطبقتين على عينتين من الحليب الخام نفسه (في X يُبقى الحليب عند أعلى درجة حرارة نحو 15 ثانية، وفي Y نحو 3 ثوانٍ). أيّ العبارات الآتية صحيحة؟\nI. المعالجة X هي البسترة، ويجب حفظ هذا الحليب في الثلاجة.\nII. يمكن أن يبقى الحليب المعالج بـ Y أشهرًا في درجة حرارة الغرفة داخل عبوته المعقمة غير المفتوحة.\nIII. تقضي المعالجة X على جميع الكائنات الدقيقة وأبواغها في الحليب.",
+        "zh": "图中给出了对同一种生牛奶的两个样品分别进行热处理 X 和 Y 时，牛奶温度随时间的变化（X 中牛奶在最高温度下保持约 15 秒，Y 中约 3 秒）。下列说法中哪些正确？\nI. 处理 X 是巴氏杀菌，这种奶必须冷藏保存。\nII. 经处理 Y 的牛奶在未开封的无菌包装中可在室温下保存数月。\nIII. 处理 X 能杀灭牛奶中全部微生物及其芽孢。",
+        "ku": "Grafîka di şeklê de nîşan dide ku di pêvajoyên germkirinê yên X û Y de ku li du nimûneyên heman şîrê xav tên sepandin, germahiya şîr bi demê re çawa diguhere (di X de şîr li germahiya herî bilind nêzî 15 çirkeyan, di Y de nêzî 3 çirkeyan tê hiştin). Kîjan ji van gotinan rast in?\nI. Pêvajoya X pastorîzasyon e û divê ev şîr di sarincê de were parastin.\nII. Şîrê ku pêvajoya Y lê hatiye sepandin di pakêta xwe ya aseptîk a venebûyî de dikare bi mehan di germahiya odeyê de xera nebe.\nIII. Di pêvajoya X de hemû mîkroorganîzma û spor ên di şîr de têne tunekirin."
       },
       "options": [
         {
-          "tr": "Pastörizasyon sütteki bütün mikroorganizmaları ve sporlarını yok eder.",
-          "en": "Pasteurisation destroys all microorganisms and their spores in milk.",
-          "de": "Pasteurisieren vernichtet alle Mikroorganismen und ihre Sporen in der Milch.",
-          "fr": "La pasteurisation détruit tous les micro-organismes et leurs spores dans le lait.",
-          "ru": "Пастеризация уничтожает все микроорганизмы и их споры в молоке.",
-          "ar": "تقضي البسترة على جميع الكائنات الدقيقة وأبواغها في الحليب.",
-          "zh": "巴氏杀菌能杀死牛奶中所有微生物及其孢子。",
-          "ku": "Pastorîzasyon hemû mîkroorganîzma û sporên wan ên di şîr de tune dike."
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "UHT sütün raf ömrü pastörize sütünkinden kısadır.",
-          "en": "UHT milk has a shorter shelf life than pasteurised milk.",
-          "de": "UHT-Milch ist kürzer haltbar als pasteurisierte Milch.",
-          "fr": "Le lait UHT a une durée de conservation plus courte que le lait pasteurisé.",
-          "ru": "Срок хранения молока UHT короче, чем у пастеризованного.",
-          "ar": "مدة صلاحية حليب UHT أقصر من مدة صلاحية الحليب المبستر.",
-          "zh": "UHT 奶的保质期比巴氏杀菌奶短。",
-          "ku": "Dema hilanînê ya şîrê UHT ji ya şîrê pastorîzekirî kurttir e."
+          "tr": "Yalnız II",
+          "en": "Only II",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "Pastörize süt, ambalajı açılmadığı sürece oda sıcaklığında aylarca saklanabilir.",
-          "en": "Pasteurised milk can be kept for months at room temperature as long as the pack is unopened.",
-          "de": "Pasteurisierte Milch ist ungeöffnet monatelang bei Raumtemperatur haltbar.",
-          "fr": "Le lait pasteurisé se conserve des mois à température ambiante tant que l’emballage n’est pas ouvert.",
-          "ru": "Пастеризованное молоко в невскрытой упаковке месяцами хранится при комнатной температуре.",
-          "ar": "يمكن حفظ الحليب المبستر أشهرًا في درجة حرارة الغرفة ما دامت عبوته مغلقة.",
-          "zh": "巴氏杀菌奶只要不开封，就能在室温下保存数月。",
-          "ku": "Şîrê pastorîzekirî heta ku pakêt venebe dikare bi mehan di germahiya odeyê de bimîne."
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "UHT işleminde sıcaklık daha yüksek olduğundan mikroorganizmalar sporlarıyla birlikte büyük ölçüde yok edilir.",
-          "en": "Because the UHT temperature is higher, microorganisms are largely destroyed together with their spores.",
-          "de": "Da die UHT-Temperatur höher ist, werden Mikroorganismen samt ihren Sporen weitgehend abgetötet.",
-          "fr": "La température UHT étant plus élevée, les micro-organismes sont en grande partie détruits avec leurs spores.",
-          "ru": "Поскольку при UHT-обработке температура выше, микроорганизмы вместе со спорами в основном уничтожаются.",
-          "ar": "يُقضى على الكائنات الدقيقة وأبواغها إلى حد كبير في معالجة UHT لأن درجة الحرارة فيها أعلى.",
-          "zh": "由于 UHT 处理温度更高，微生物连同其孢子基本被消灭。",
-          "ku": "Ji ber ku germahiya UHT bilindtir e, mîkroorganîzma bi sporên xwe re bi piranî tune dibin."
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Her iki yöntemde de süt dondurularak korunur.",
-          "en": "In both methods the milk is preserved by freezing.",
-          "de": "Bei beiden Verfahren wird die Milch durch Einfrieren haltbar gemacht.",
-          "fr": "Dans les deux procédés, le lait est conservé par congélation.",
-          "ru": "В обоих методах молоко сохраняют замораживанием.",
-          "ar": "في كلتا الطريقتين يُحفظ الحليب بالتجميد.",
-          "zh": "两种方法都是通过冷冻来保存牛奶。",
-          "ku": "Di her du rêbazan de jî şîr bi cemidandinê tê parastin."
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 3,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "UHT işlemi (sterilizasyona yakın) çok yüksek sıcaklıkta yapıldığı için mikroorganizmalar ve dayanıklı sporları büyük ölçüde yok edilir; bu yüzden aseptik ambalajda aylarca saklanabilir. Pastörizasyon daha düşük sıcaklıkta yapılır, zararlı mikroorganizmaların çoğunu öldürür ama sporların tamamını yok etmez; bu nedenle pastörize süt soğukta ve kısa süre saklanır. Verilere göre UHT sütün raf ömrü daha uzundur. İki yöntem de ısıtma işlemidir, dondurma değildir.",
-        "en": "UHT treatment (close to sterilisation) is carried out at a very high temperature, so microorganisms and their resistant spores are largely destroyed; this is why the milk keeps for months in aseptic packaging. Pasteurisation uses a lower temperature, kills most harmful microorganisms but not all spores, so pasteurised milk must be kept cold and only briefly. According to the data UHT milk has the longer shelf life. Both methods are heating processes, not freezing.",
-        "de": "Die UHT-Behandlung (nahe an der Sterilisation) erfolgt bei sehr hoher Temperatur, daher werden Mikroorganismen und ihre widerstandsfähigen Sporen weitgehend abgetötet; deshalb hält sich die Milch in aseptischer Verpackung monatelang. Beim Pasteurisieren ist die Temperatur niedriger; die meisten schädlichen Keime sterben, aber nicht alle Sporen, daher muss pasteurisierte Milch kühl und kurz gelagert werden. Laut den Angaben ist UHT-Milch länger haltbar. Beide Verfahren sind Erhitzungsverfahren, kein Einfrieren.",
-        "fr": "Le traitement UHT (proche de la stérilisation) se fait à très haute température : les micro-organismes et leurs spores résistantes sont en grande partie détruits, d’où une conservation de plusieurs mois en emballage aseptique. La pasteurisation se fait à plus basse température : elle tue la plupart des germes nuisibles mais pas toutes les spores, le lait pasteurisé se conserve donc au froid et peu de temps. D’après les données, le lait UHT se conserve plus longtemps. Les deux procédés sont des chauffages, pas des congélations.",
-        "ru": "UHT-обработка (близкая к стерилизации) проводится при очень высокой температуре, поэтому микроорганизмы и их устойчивые споры в основном уничтожаются; благодаря этому молоко хранится месяцами в асептической упаковке. Пастеризация идёт при более низкой температуре: гибнет большинство вредных микроорганизмов, но не все споры, поэтому пастеризованное молоко хранят в холоде и недолго. Согласно условию, срок хранения у молока UHT больше. Оба метода — нагревание, а не замораживание.",
-        "ar": "تُجرى معالجة UHT (القريبة من التعقيم) عند درجة حرارة عالية جدًا، فيُقضى على الكائنات الدقيقة وأبواغها المقاومة إلى حد كبير، ولهذا يُحفظ الحليب أشهرًا في عبوات معقمة. أما البسترة فتتم عند درجة حرارة أقل، فتقتل معظم الكائنات الضارة دون جميع الأبواغ، لذا يُحفظ الحليب المبستر باردًا ولمدة قصيرة. ووفق المعطيات فإن صلاحية حليب UHT أطول. وكلتا الطريقتين تسخين لا تجميد.",
-        "zh": "UHT 处理（接近灭菌）在很高温度下进行，微生物及其耐热孢子基本被消灭，因此在无菌包装中可保存数月。巴氏杀菌温度较低，能杀死大多数有害微生物，但不能杀灭全部孢子，所以巴氏杀菌奶需冷藏且保存期短。根据数据，UHT 奶保质期更长。两种方法都是加热，而不是冷冻。",
-        "ku": "Pêvajoya UHT (nêzîkî sterîlîzasyonê) di germahiyeke pir bilind de tê kirin, ji ber vê yekê mîkroorganîzma û sporên wan ên berxwedêr bi piranî tune dibin; loma şîr di pakêta aseptîk de bi mehan dimîne. Pastorîzasyon di germahiyeke nizmtir de tê kirin; piraniya mîkroorganîzmayên zirardar dikuje lê hemû sporan tune nake, ji ber vê yekê divê şîrê pastorîzekirî li cihekî sar û demeke kurt were hilanîn. Li gorî daneyan dema hilanînê ya şîrê UHT dirêjtir e. Her du rêbaz jî germkirin in, ne cemidandin."
+        "tr": "Grafikte X işleminde süt yaklaşık 72 °C'ye ısıtılıp kısa süre bekletilmiş ve 4 °C'ye soğutulmuştur; bu pastörizasyondur. Pastörizasyon zararlı mikroorganizmaların çoğunu öldürür ama dayanıklı sporların tamamını yok etmez; bu yüzden süt soğukta ve kısa süre saklanır; I doğru, III yanlıştır. Y işleminde süt yaklaşık 140 °C'ye çıkarılmıştır; bu UHT işlemidir. Bu sıcaklıkta mikroorganizmalar sporlarıyla birlikte büyük ölçüde yok edildiği için süt aseptik ambalajda oda sıcaklığında aylarca saklanabilir; II doğrudur. Pastörizasyonun sterilizasyon olduğunu sanmak tipik bir hatadır.",
+        "en": "On the graph, in treatment X the milk is heated to about 72 °C, held briefly and cooled to 4 °C; this is pasteurization. Pasteurization kills most harmful microorganisms but not all resistant spores, so the milk is kept cold and for a short time; I is true and III is false. In treatment Y the milk is raised to about 140 °C; this is UHT treatment. At this temperature microorganisms and their spores are largely destroyed, so the milk keeps for months at room temperature in aseptic packaging; II is true. Thinking that pasteurization is sterilization is a typical mistake.",
+        "de": "Im Diagramm wird die Milch bei Behandlung X auf etwa 72 °C erhitzt, kurz gehalten und auf 4 °C abgekühlt; das ist Pasteurisierung. Sie tötet die meisten schädlichen Mikroorganismen ab, aber nicht alle widerstandsfähigen Sporen; deshalb wird die Milch gekühlt und nur kurz gelagert; I ist richtig, III falsch. Bei Behandlung Y wird die Milch auf etwa 140 °C gebracht; das ist die UHT-Behandlung. Bei dieser Temperatur werden Mikroorganismen samt Sporen weitgehend abgetötet, daher hält sich die Milch in aseptischer Verpackung monatelang bei Raumtemperatur; II ist richtig. Ein typischer Fehler ist, Pasteurisierung für Sterilisation zu halten.",
+        "fr": "Sur le graphique, dans le traitement X le lait est chauffé à environ 72 °C, maintenu brièvement puis refroidi à 4 °C : c'est la pasteurisation. Elle tue la plupart des micro-organismes nuisibles, mais pas toutes les spores résistantes ; le lait se conserve donc au froid et peu de temps ; I est vraie, III est fausse. Dans le traitement Y, le lait est porté à environ 140 °C : c'est le traitement UHT. À cette température, les micro-organismes et leurs spores sont en grande partie détruits, d'où une conservation de plusieurs mois à température ambiante en emballage aseptique ; II est vraie. Confondre pasteurisation et stérilisation est une erreur typique.",
+        "ru": "По графику при обработке X молоко нагревают примерно до 72 °C, недолго выдерживают и охлаждают до 4 °C — это пастеризация. Она убивает большинство вредных микроорганизмов, но не все устойчивые споры, поэтому молоко хранят в холоде и недолго; I верно, III неверно. При обработке Y молоко нагревают примерно до 140 °C — это ультрапастеризация (UHT). При такой температуре микроорганизмы вместе со спорами в основном уничтожаются, поэтому в асептической упаковке молоко хранится месяцами при комнатной температуре; II верно. Считать пастеризацию стерилизацией — типичная ошибка.",
+        "ar": "في الرسم البياني يُسخَّن الحليب في المعالجة X إلى نحو 72 °C ويُبقى مدة قصيرة ثم يُبرَّد إلى 4 °C، وهذه هي البسترة. تقتل البسترة معظم الكائنات الدقيقة الضارة لكنها لا تقضي على جميع الأبواغ المقاومة، لذا يُحفظ الحليب باردًا ولمدة قصيرة؛ العبارة I صحيحة وIII خاطئة. وفي المعالجة Y يُرفع الحليب إلى نحو 140 °C، وهذه معالجة UHT. عند هذه الدرجة تُقتل الكائنات الدقيقة مع أبواغها إلى حد كبير، فيبقى الحليب أشهرًا في درجة حرارة الغرفة داخل عبوة معقمة؛ العبارة II صحيحة. ومن الأخطاء الشائعة الظن أن البسترة تعقيم.",
+        "zh": "图中处理 X 将牛奶加热到约 72 °C，短时保持后冷却到 4 °C，这是巴氏杀菌。巴氏杀菌能杀死大多数有害微生物，但不能杀灭全部耐热芽孢，所以牛奶要冷藏且只能短期保存；I 正确，III 错误。处理 Y 将牛奶加热到约 140 °C，这是 UHT 超高温处理。在此温度下微生物连同芽孢基本被杀灭，因此牛奶在无菌包装中可在室温下保存数月；II 正确。把巴氏杀菌当作灭菌，是典型错误。",
+        "ku": "Di grafîkê de di pêvajoya X de şîr heta nêzî 72 °C tê germkirin, demeke kurt tê hiştin û heta 4 °C tê sarkirin; ev pastorîzasyon e. Pastorîzasyon piraniya mîkroorganîzmayên zirardar dikuje lê hemû sporên berxwedêr tune nake; ji ber vê yekê şîr di sermayê de û demeke kurt tê parastin; I rast e, III şaş e. Di pêvajoya Y de şîr heta nêzî 140 °C tê bilindkirin; ev pêvajoya UHT ye. Di vê germahiyê de mîkroorganîzma bi sporên xwe re bi piranî têne tunekirin, ji ber vê yekê şîr di pakêta aseptîk de bi mehan di germahiya odeyê de dimîne; II rast e. Hesibandina pastorîzasyonê wek sterîlîzasyon xeletiyeke tîpîk e."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman",
+          "en": "Time",
+          "de": "Zeit",
+          "fr": "Temps",
+          "ru": "Время",
+          "ar": "الزمن",
+          "zh": "时间",
+          "ku": "Dem"
+        },
+        "yLabel": {
+          "tr": "Sıcaklık (°C)",
+          "en": "Temperature (°C)",
+          "de": "Temperatur (°C)",
+          "fr": "Température (°C)",
+          "ru": "Температура (°C)",
+          "ar": "درجة الحرارة (°C)",
+          "zh": "温度 (°C)",
+          "ku": "Germahî (°C)"
+        },
+        "xMax": 100,
+        "yMax": 160,
+        "yTicks": [
+          4,
+          25,
+          72,
+          140
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                4
+              ],
+              [
+                22,
+                72
+              ],
+              [
+                42,
+                72
+              ],
+              [
+                58,
+                4
+              ],
+              [
+                100,
+                4
+              ]
+            ],
+            "label": "X",
+            "dashed": true,
+            "tone": 0
+          },
+          {
+            "points": [
+              [
+                0,
+                4
+              ],
+              [
+                30,
+                140
+              ],
+              [
+                34,
+                140
+              ],
+              [
+                50,
+                25
+              ],
+              [
+                100,
+                25
+              ]
+            ],
+            "label": "Y",
+            "tone": 1
+          }
+        ]
       }
     },
     {

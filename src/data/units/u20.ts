@@ -479,24 +479,24 @@ export const unit20: ChemistryUnitSeedData = {
         "ku": "Stalaktît û stalagmîtên şikeftan û travertenên Pamukkaleyê bi hevsengiya helbûn-niştinê ya CaCO3 çêdibin."
       },
       "trap": {
-        "tr": "Sarkıt ve dikitler fiziksel buharlaşma sonucu kum birikimidir.",
-        "en": "Stalactites and stalagmites are accumulations of sand as a result of physical evaporation.",
-        "de": "Stalaktiten und Stalagmiten sind Sandansammlungen, die durch physikalische Verdunstung entstanden sind.",
-        "fr": "Les stalactites et les stalagmites sont des accumulations de sable résultant de l'évaporation physique.",
-        "ru": "Сталактиты и сталагмиты — скопления песка, образовавшиеся в результате физического испарения.",
-        "ar": "الهوابط والصواعد تراكمات رملية ناتجة عن تبخر فيزيائي.",
-        "zh": "钟乳石和石笋是物理蒸发形成的沙粒堆积物。",
-        "ku": "Stalaktît û stalagmît kombûna qûmê ne ku ji buharbûna fîzîkî çêdibe."
+        "tr": "Sarkıt ve dikitler, damlayan suyun buharlaşmasıyla geride kalan maddenin birikmesinden oluşur; CO2 kaybının ve çözünme-çökelme dengesinin bunda rolü yoktur.",
+        "en": "Stalactites and stalagmites form only because dripping water evaporates and leaves its dissolved matter behind; loss of CO2 and the dissolution-precipitation equilibrium play no role.",
+        "de": "Stalaktiten und Stalagmiten entstehen nur dadurch, dass Tropfwasser verdunstet und gelöste Stoffe zurücklässt; CO2-Verlust und das Lösungs-Fällungs-Gleichgewicht spielen keine Rolle.",
+        "fr": "Les stalactites et stalagmites se forment uniquement parce que l'eau qui goutte s'évapore et laisse ses matières dissoutes ; la perte de CO2 et l'équilibre de dissolution-précipitation n'y jouent aucun rôle.",
+        "ru": "Сталактиты и сталагмиты образуются только за счёт испарения капающей воды, оставляющей растворённые вещества; потеря CO2 и равновесие растворения-осаждения здесь роли не играют.",
+        "ar": "تتكون الهوابط والصواعد فقط من تبخر الماء المتساقط وبقاء المواد الذائبة فيه، ولا دور لفقد CO2 ولا لاتزان الذوبان والترسيب في ذلك.",
+        "zh": "钟乳石和石笋仅仅是滴水蒸发后留下溶解物质堆积而成，CO2 的逸出和溶解-沉淀平衡在其中不起作用。",
+        "ku": "Stalaktît û stalagmît tenê ji ber ku ava dilopî buhar dibe û madeyên heliyayî li dû xwe dihêle çêdibin; windabûna CO2 û hevsengiya helbûn-niştinê di vê de ti rolê nalîzin."
       },
       "whyTrapIsFalse": {
-        "tr": "Sarkıt ve dikitler kum değil CaCO3 birikimidir; Ca2+ ve HCO3- içeren sudan CO2 gazı ayrılınca denge CaCO3 yönüne kayar ve madde kimyasal olarak çöker.",
-        "en": "Stalactites and stalagmites are deposits of CaCO3, not sand; when CO2 gas escapes from water containing Ca2+ and HCO3-, the equilibrium shifts toward CaCO3 and it precipitates chemically.",
-        "de": "Stalaktiten und Stalagmiten sind Ablagerungen von CaCO3, nicht von Sand; entweicht CO2 aus Wasser mit Ca2+ und HCO3-, verschiebt sich das Gleichgewicht zu CaCO3, das chemisch ausfällt.",
-        "fr": "Les stalactites et stalagmites sont des dépôts de CaCO3, pas de sable ; quand le CO2 s'échappe d'une eau contenant Ca2+ et HCO3-, l'équilibre se déplace vers CaCO3, qui précipite chimiquement.",
-        "ru": "Сталактиты и сталагмиты — отложения CaCO3, а не песка; когда из воды, содержащей Ca2+ и HCO3-, выделяется CO2, равновесие смещается в сторону CaCO3, и он выпадает в осадок в результате химической реакции.",
-        "ar": "الهوابط والصواعد ترسبات من CaCO3 وليست رملًا؛ فعندما يتصاعد غاز CO2 من ماء يحتوي على Ca2+ و HCO3- ينزاح الاتزان نحو CaCO3 فيترسب كيميائيًا.",
-        "zh": "钟乳石和石笋是CaCO3沉积，而不是沙子；含Ca2+ 和HCO3- 的水逸出CO2时，平衡向生成CaCO3方向移动，发生化学沉淀。",
-        "ku": "Stalaktît û stalagmît ne qûm in, kombûna CaCO3 ne; dema gaza CO2 ji ava ku Ca2+ û HCO3- dihewîne derdikeve, hevsengî ber bi CaCO3 ve diçe û ev made bi awayê kîmyewî dinişe."
+        "tr": "Sarkıt ve dikitlerin oluşumunda belirleyici olan kimyasal dengedir: Ca2+ ve HCO3- içeren su mağara havasına çıkınca CO2 kaybeder, Ca2+ + 2HCO3- ⇌ CaCO3 + CO2 + H2O dengesi CaCO3 yönüne kayar ve CaCO3 çöker. Buharlaşma bu süreci yalnızca destekleyebilir.",
+        "en": "The decisive factor is a chemical equilibrium: water containing Ca2+ and HCO3- loses CO2 when it meets cave air, the equilibrium Ca2+ + 2HCO3- ⇌ CaCO3 + CO2 + H2O shifts toward CaCO3, and CaCO3 precipitates. Evaporation can only assist this process.",
+        "de": "Entscheidend ist ein chemisches Gleichgewicht: Wasser mit Ca2+ und HCO3- verliert an der Höhlenluft CO2, das Gleichgewicht Ca2+ + 2HCO3- ⇌ CaCO3 + CO2 + H2O verschiebt sich zu CaCO3, und CaCO3 fällt aus. Verdunstung kann diesen Vorgang nur unterstützen.",
+        "fr": "Le facteur déterminant est un équilibre chimique : l'eau contenant Ca2+ et HCO3- perd du CO2 au contact de l'air de la grotte, l'équilibre Ca2+ + 2HCO3- ⇌ CaCO3 + CO2 + H2O se déplace vers CaCO3 et CaCO3 précipite. L'évaporation ne peut que favoriser ce processus.",
+        "ru": "Определяющую роль играет химическое равновесие: вода с Ca2+ и HCO3- на воздухе пещеры теряет CO2, равновесие Ca2+ + 2HCO3- ⇌ CaCO3 + CO2 + H2O смещается в сторону CaCO3, и CaCO3 выпадает в осадок. Испарение может лишь способствовать этому процессу.",
+        "ar": "العامل الحاسم هو اتزان كيميائي: الماء الذي يحتوي على Ca2+ وHCO3- يفقد CO2 عند ملامسته هواء الكهف، فينزاح الاتزان Ca2+ + 2HCO3- ⇌ CaCO3 + CO2 + H2O نحو CaCO3 ويترسب CaCO3. ولا يفعل التبخر أكثر من دعم هذه العملية.",
+        "zh": "起决定作用的是化学平衡：含 Ca2+ 和 HCO3- 的水接触洞内空气时逸出 CO2，平衡 Ca2+ + 2HCO3- ⇌ CaCO3 + CO2 + H2O 向生成 CaCO3 的方向移动，CaCO3 沉淀析出。蒸发只能起辅助作用。",
+        "ku": "Faktora diyarker hevsengiyeke kîmyewî ye: ava ku Ca2+ û HCO3- dihewîne dema digihîje hewaya şikeftê CO2 winda dike, hevsengiya Ca2+ + 2HCO3- ⇌ CaCO3 + CO2 + H2O ber bi CaCO3 ve diçe û CaCO3 dinişe. Buharbûn tenê dikare piştgiriya vê pêvajoyê bike."
       }
     },
     {
@@ -590,14 +590,14 @@ export const unit20: ChemistryUnitSeedData = {
         "ku": "Qi > Ksp"
       },
       "distinction": {
-        "tr": "Qi < Kçç ise çözelti doymamıştır, çökelme olmaz ve ortama eklenen katı çözünebilir; iyon çarpımı çözünürlük çarpımından büyükse çözelti aşırı doygundur ve ikisi eşitlenene kadar çökelme olur.",
-        "en": "If Qi < Ksp, the solution is unsaturated, nothing precipitates and added solid can dissolve; if the ion product is larger than the solubility product, the solution is supersaturated and precipitation continues until the two are equal.",
-        "de": "Gilt Qi < Ksp, ist die Lösung ungesättigt, es fällt nichts aus und zugesetzter Feststoff kann sich lösen; ist das Ionenprodukt größer als das Löslichkeitsprodukt, ist die Lösung übersättigt und es fällt so lange Feststoff aus, bis beide gleich sind.",
-        "fr": "Si Qi < Ksp, la solution est insaturée, rien ne précipite et un solide ajouté peut se dissoudre ; si le produit ionique est supérieur au produit de solubilité, la solution est sursaturée et la précipitation se poursuit jusqu'à ce que les deux soient égaux.",
-        "ru": "Qi < Ksp означает, что раствор ненасыщенный, осадок не выпадает, а добавленное твёрдое вещество может раствориться; если ионное произведение больше произведения растворимости, раствор пересыщен, и осадок выпадает, пока эти величины не сравняются.",
+        "tr": "Qi < Kçç durumunda çözelti doymamıştır, çökelme olmaz ve ortama eklenen katı çözünebilir; Qi > Kçç durumunda ise çözelti aşırı doygundur ve Qi, Kçç'ye eşitlenene kadar çökelme olur.",
+        "en": "Qi < Ksp means the solution is unsaturated: nothing precipitates and added solid can dissolve; when the ion product exceeds the solubility product, the solution is supersaturated and precipitation continues until the two become equal.",
+        "de": "Qi < Ksp bedeutet eine ungesättigte Lösung: Es fällt nichts aus, und zugesetzter Feststoff kann sich lösen; ist das Ionenprodukt größer als das Löslichkeitsprodukt, ist die Lösung übersättigt, und es fällt so lange Feststoff aus, bis beide gleich sind.",
+        "fr": "Qi < Ksp signifie que la solution est insaturée : rien ne précipite et un solide ajouté peut se dissoudre ; si le produit ionique dépasse le produit de solubilité, la solution est sursaturée et la précipitation se poursuit jusqu'à ce que les deux soient égaux.",
+        "ru": "Qi < Ksp означает, что раствор ненасыщенный: осадок не выпадает, а добавленное твёрдое вещество может раствориться; если ионное произведение больше произведения растворимости, раствор пересыщен, и осадок выпадает, пока эти величины не сравняются.",
         "ar": "إذا كان Qi < Ksp فالمحلول غير مشبع ولا يحدث ترسيب ويمكن للصلب المضاف أن يذوب؛ وإذا كان الحاصل الأيوني أكبر من حاصل الإذابة فالمحلول فوق مشبع ويستمر الترسيب حتى يتساويا.",
         "zh": "Qi < Ksp 表示溶液不饱和，不生成沉淀，加入的固体还能继续溶解；若离子积大于溶度积，溶液过饱和，会析出沉淀，直到两者相等。",
-        "ku": "Heke Qi < Ksp be, çareserî netêr e, niştin pêk nayê û madeya hişk a ku lê tê zêdekirin dikare bihele; heke hasila îyonan ji hasila helbûniyê mezintir be, çareserî zêdetêr e û heta ku her du wekhev bibin niştin berdewam dike."
+        "ku": "Qi < Ksp tê wateya ku çareserî netêr e: niştin pêk nayê û madeya hişk a lê zêdekirî dikare bihele; heke hasila îyonan ji hasila helbûniyê mezintir be, çareserî zêdetêr e û heta ku her du wekhev bibin niştin berdewam dike."
       }
     },
     {
@@ -788,14 +788,14 @@ export const unit20: ChemistryUnitSeedData = {
         "ku": "Bandora Germahiyê li ser Helbûniyê"
       },
       "distinction": {
-        "tr": "Anyonu bazik olan (OH-, CO3 2- gibi) az çözünen tuzların çözünürlüğü asit eklendikçe artar ama Kçç değişmez; sıcaklık ise Kçç'nin kendisini değiştirir: çözünmesi endotermik olan tuzlarda sıcaklık artışı Kçç'yi ve çözünürlüğü artırır.",
-        "en": "Sparingly soluble salts with a basic anion (such as OH-, CO3 2-) dissolve more as acid is added, but Ksp does not change; temperature changes Ksp itself: for salts that dissolve endothermically, a rise in temperature increases both Ksp and the amount that dissolves.",
-        "de": "Die Löslichkeit schwerlöslicher Salze mit basischem Anion (wie OH-, CO3 2-) steigt bei Säurezugabe, Ksp bleibt aber gleich; die Temperatur verändert Ksp selbst: Bei endotherm löslichen Salzen erhöht eine Temperaturerhöhung Ksp und Löslichkeit.",
-        "fr": "Les sels peu solubles à anion basique (comme OH-, CO3 2-) se dissolvent davantage quand on ajoute un acide, mais Ksp ne change pas ; la température modifie Ksp lui-même : pour les sels à dissolution endothermique, une hausse de température augmente Ksp et la quantité dissoute.",
+        "tr": "pH'nın çözünürlüğe etkisi, anyonu bazik olan (OH-, CO3 2- gibi) az çözünen tuzlarda görülür: asit eklendikçe bu tuzlar daha çok çözünür ama Kçç değişmez; sıcaklık ise Kçç'nin kendisini değiştirir: çözünmesi endotermik olan tuzlarda sıcaklık artışı Kçç'yi ve çözünen madde miktarını artırır.",
+        "en": "The effect of pH on solubility appears in sparingly soluble salts with a basic anion (such as OH-, CO3 2-): they dissolve more as acid is added, but Ksp does not change; temperature, by contrast, changes Ksp itself: for salts that dissolve endothermically, a rise in temperature increases both Ksp and the amount that dissolves.",
+        "de": "Der Einfluss des pH-Werts auf die Löslichkeit zeigt sich bei schwerlöslichen Salzen mit basischem Anion (wie OH-, CO3 2-): Ihre Löslichkeit steigt bei Säurezugabe, Ksp bleibt aber gleich; der Einfluss der Temperatur auf die Löslichkeit beruht auf einer Änderung von Ksp selbst: Bei endotherm löslichen Salzen erhöht eine Temperaturerhöhung Ksp und Löslichkeit.",
+        "fr": "L'effet du pH sur la solubilité concerne les sels peu solubles à anion basique (comme OH-, CO3 2-) : ils se dissolvent davantage quand on ajoute un acide, mais Ksp ne change pas ; la température, elle, modifie Ksp lui-même : pour les sels à dissolution endothermique, une hausse de température augmente Ksp et la quantité dissoute.",
         "ru": "Влияние pH на растворимость проявляется у малорастворимых солей с основным анионом (OH-, CO3 2-): их растворимость растёт при добавлении кислоты, но Ksp не меняется; влияние температуры на растворимость связано с изменением самого Ksp: для солей с эндотермическим растворением нагревание увеличивает и Ksp, и растворимость.",
         "ar": "تأثير pH في الذائبية: إضافة حمض تزيد ذوبان الأملاح قليلة الذوبان التي أنيونها قاعدي (مثل OH- و CO3 2-)، لكن Ksp لا يتغير؛ أما درجة الحرارة فتغيّر Ksp نفسه: ففي الأملاح التي يكون ذوبانها ماصًّا للحرارة يزيد رفع درجة الحرارة Ksp ويزيد معه ذوبان الملح.",
         "zh": "pH 对溶解度的影响：含碱性阴离子(如 OH-、CO3 2-)的难溶盐加酸后溶解度增大，但 Ksp 不变；温度对溶解度的影响则是改变 Ksp 本身：吸热溶解的盐升温时 Ksp 和溶解度都增大。",
-        "ku": "Helbûniya xwêyên kêm-helbar ên ku anyona wan bazî ye (wek OH-, CO3 2-) bi zêdekirina asîdê zêde dibe, lê Ksp naguhere; germahî bi xwe Ksp-ê diguherîne: di xwêyên ku helbûna wan endotermîk e de bilindbûna germahiyê hem Ksp hem helbûniyê zêde dike."
+        "ku": "Bandora pH-ê li ser helbûniyê di xwêyên kêm-helbar ên ku anyona wan bazî ye (wek OH-, CO3 2-) de xuya dibe: bi zêdekirina asîdê ev xwê zêdetir dihelin lê Ksp naguhere; germahî jî Ksp bi xwe diguherîne: di xwêyên ku helbûna wan endotermîk e de bilindbûna germahiyê hem Ksp hem mîqdara heliyayî zêde dike."
       }
     },
     {
@@ -847,43 +847,43 @@ export const unit20: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Karışım sonrası toplam hacme göre iyon derişimleri hesaplanır",
-          "en": "The ion concentrations after mixing are calculated using the total volume",
-          "de": "Die Ionenkonzentrationen nach dem Mischen werden über das Gesamtvolumen berechnet",
-          "fr": "On calcule les concentrations des ions après mélange à partir du volume total",
-          "ru": "Вычисляют концентрации ионов после смешивания с учётом общего объёма",
-          "ar": "تُحسب تراكيز الأيونات بعد الخلط اعتمادًا على الحجم الكلي",
-          "zh": "按混合后的总体积计算各离子浓度",
-          "ku": "Piştî tevlihevkirinê tîrbûnên îyonan li gorî qebareya giştî tên hesibandin"
+          "tr": "Karıştırma sonrasındaki toplam hacim bulunur",
+          "en": "Find the total volume after mixing",
+          "de": "Das Gesamtvolumen nach dem Mischen bestimmen",
+          "fr": "Déterminer le volume total après mélange",
+          "ru": "Находят общий объём после смешивания",
+          "ar": "يُحسب الحجم الكلي بعد الخلط",
+          "zh": "求出混合后的总体积",
+          "ku": "Qebareya giştî ya piştî tevlihevkirinê tê dîtin"
         },
         {
-          "tr": "İyon çarpımı bağıntısı yazılır: Qi = [A+]^a * [B-]^b",
-          "en": "The ion product expression is written: Qi = [A+]^a * [B-]^b",
-          "de": "Der Ausdruck für das Ionenprodukt wird aufgestellt: Qi = [A+]^a * [B-]^b",
-          "fr": "On écrit l'expression du produit ionique : Qi = [A+]^a * [B-]^b",
-          "ru": "Записывают выражение ионного произведения: Qi = [A+]^a * [B-]^b",
-          "ar": "يُكتب تعبير الحاصل الأيوني: Qi = [A+]^a * [B-]^b",
-          "zh": "写出离子积表达式：Qi = [A+]^a * [B-]^b",
-          "ku": "Hevkêşeya hasila îyonan tê nivîsîn: Qi = [A+]^a * [B-]^b"
+          "tr": "Seyrelme hesaba katılarak her iyonun bu toplam hacimdeki yeni derişimi hesaplanır",
+          "en": "Taking dilution into account, calculate the new concentration of each ion in this total volume",
+          "de": "Unter Berücksichtigung der Verdünnung die neue Konzentration jedes Ions in diesem Gesamtvolumen berechnen",
+          "fr": "En tenant compte de la dilution, calculer la nouvelle concentration de chaque ion dans ce volume total",
+          "ru": "С учётом разбавления рассчитывают новую концентрацию каждого иона в этом общем объёме",
+          "ar": "يُحسب التركيز الجديد لكل أيون في هذا الحجم الكلي مع مراعاة التخفيف",
+          "zh": "考虑稀释，计算每种离子在该总体积中的新浓度",
+          "ku": "Bi hesibandina rongkirinê, tîrbûna nû ya her îyonê di vê qebareya giştî de tê hesibandin"
         },
         {
-          "tr": "Qi değeri hesaplanır",
-          "en": "The value of Qi is calculated",
-          "de": "Der Wert von Qi wird berechnet",
-          "fr": "On calcule la valeur de Qi",
-          "ru": "Вычисляют значение Qi",
-          "ar": "تُحسب قيمة Qi",
-          "zh": "计算Qi的值",
-          "ku": "Nirxa Qi tê hesibandin"
+          "tr": "Bu derişimler Qi = [A+]^a * [B-]^b bağıntısında yerine konarak Qi hesaplanır",
+          "en": "Substitute these concentrations into Qi = [A+]^a * [B-]^b to calculate Qi",
+          "de": "Diese Konzentrationen in Qi = [A+]^a * [B-]^b einsetzen und Qi berechnen",
+          "fr": "Remplacer ces concentrations dans Qi = [A+]^a * [B-]^b pour calculer Qi",
+          "ru": "Подставляют эти концентрации в выражение Qi = [A+]^a * [B-]^b и вычисляют Qi",
+          "ar": "تُعوَّض هذه التراكيز في العلاقة Qi = [A+]^a * [B-]^b لحساب Qi",
+          "zh": "将这些浓度代入 Qi = [A+]^a * [B-]^b，计算 Qi",
+          "ku": "Ev tîrbûn di têkiliya Qi = [A+]^a * [B-]^b de tên bicihkirin û Qi tê hesibandin"
         },
         {
           "tr": "Qi, Kçç ile karşılaştırılır (Qi > Kçç ise çökelme olur)",
-          "en": "Qi is compared with Ksp (if Qi > Ksp, a precipitate forms)",
-          "de": "Qi wird mit Ksp verglichen (bei Qi > Ksp fällt ein Niederschlag aus)",
-          "fr": "On compare Qi à Ksp (si Qi > Ksp, un précipité se forme)",
+          "en": "Compare Qi with Ksp (if Qi > Ksp, a precipitate forms)",
+          "de": "Qi mit Ksp vergleichen (bei Qi > Ksp fällt ein Niederschlag aus)",
+          "fr": "Comparer Qi à Ksp (si Qi > Ksp, un précipité se forme)",
           "ru": "Сравнивают Qi с Ksp (если Qi > Ksp, выпадает осадок)",
-          "ar": "يُقارَن Qi بـ Ksp (إذا كان Qi > Ksp يتكوّن راسب)",
-          "zh": "将Qi与Ksp比较(Qi > Ksp则生成沉淀)",
+          "ar": "يُقارَن Qi بـ Ksp (إذا كان Qi > Ksp يحدث ترسيب)",
+          "zh": "比较 Qi 与 Ksp（若 Qi > Ksp，则生成沉淀）",
           "ku": "Qi bi Ksp re tê berhevkirin (heke Qi > Ksp be niştin pêk tê)"
         }
       ]
@@ -1058,166 +1058,257 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin01",
       "stem": {
-        "tr": "Belirli bir sıcaklıkta AgCl katısının çözünürlük çarpımı Kçç = 1,0x10^-10'dur. Buna göre AgCl'nin saf sudaki çözünürlüğü kaç mol/L'dir?",
-        "en": "The solubility product of AgCl solid at a certain temperature is Ksp = 1.0x10^-10. Accordingly, what is the solubility of AgCl in pure water?",
-        "de": "Das Löslichkeitsprodukt des festen AgCl bei einer bestimmten Temperatur beträgt Ksp = 1,0x10^-10. Wie hoch ist dementsprechend die Löslichkeit von AgCl in reinem Wasser?",
-        "fr": "Le produit de solubilité du solide AgCl à une certaine température est Ksp = 1,0x10^-10. Par conséquent, quelle est la solubilité de AgCl dans l’eau pure ?",
-        "ru": "Произведение растворимости AgCl при определённой температуре Ksp = 1,0x10^-10. Чему равна растворимость AgCl в чистой воде, моль/л?",
-        "ar": "عند درجة حرارة معيّنة يكون حاصل الإذابة لـ AgCl الصلب Ksp = 1.0x10^-10. ما ذائبية AgCl في الماء النقي بوحدة mol/L؟",
-        "zh": "一定温度下，AgCl 固体的溶度积 Ksp = 1.0x10^-10。该温度下 AgCl 在纯水中的溶解度是多少？",
-        "ku": "Li germahiyeke diyar hasila helbûniyê ya AgCl-ya hişk Ksp = 1,0x10^-10 e. Li gorî vê yekê, helbûniya AgCl di ava paqij de çend mol/L ye?"
+        "tr": "Şekildeki eğri, belirli bir sıcaklıkta AgCl'nin doymuş sulu çözeltilerinde [Ag+] ile [Cl-] arasındaki ilişkiyi göstermektedir; K, L ve M noktaları aynı sıcaklıktaki üç çözeltiyi temsil etmektedir. I. K noktasındaki çözelti doymamıştır. II. M noktasındaki çözeltide iyon çarpımı (Qi), Kçç'den küçüktür. III. Bu sıcaklıkta AgCl'nin Kçç değeri 4,0x10^-10'dur. yargılarından hangileri doğrudur?",
+        "en": "The curve shows the relationship between [Ag+] and [Cl-] in saturated aqueous AgCl solutions at a certain temperature; points K, L and M represent three solutions at the same temperature. I. The solution at point K is unsaturated. II. In the solution at point M the ion product (Qi) is smaller than Ksp. III. At this temperature Ksp of AgCl is 4.0x10^-10. Which of these statements are correct?",
+        "de": "Die Kurve zeigt den Zusammenhang zwischen [Ag+] und [Cl-] in gesättigten wässrigen AgCl-Lösungen bei einer bestimmten Temperatur; die Punkte K, L und M stehen für drei Lösungen bei derselben Temperatur. I. Die Lösung im Punkt K ist ungesättigt. II. In der Lösung im Punkt M ist das Ionenprodukt (Qi) kleiner als Ksp. III. Bei dieser Temperatur beträgt Ksp von AgCl 4,0x10^-10. Welche Aussagen sind richtig?",
+        "fr": "La courbe montre la relation entre [Ag+] et [Cl-] dans les solutions aqueuses saturées de AgCl à une certaine température ; les points K, L et M représentent trois solutions à la même température. I. La solution au point K est insaturée. II. Dans la solution au point M, le produit ionique (Qi) est inférieur à Ksp. III. À cette température, le Ksp de AgCl vaut 4,0x10^-10. Lesquelles de ces affirmations sont exactes ?",
+        "ru": "Кривая показывает связь между [Ag+] и [Cl-] в насыщенных водных растворах AgCl при определённой температуре; точки K, L и M соответствуют трём растворам при той же температуре. I. Раствор в точке K ненасыщенный. II. В растворе в точке M ионное произведение (Qi) меньше Ksp. III. При этой температуре Ksp для AgCl равно 4,0x10^-10. Какие утверждения верны?",
+        "ar": "يبيّن المنحنى العلاقة بين [Ag+] و[Cl-] في المحاليل المائية المشبعة لـ AgCl عند درجة حرارة معينة، وتمثل النقاط K وL وM ثلاثة محاليل عند الدرجة نفسها. I. المحلول عند النقطة K غير مشبع. II. في المحلول عند النقطة M يكون الحاصل الأيوني (Qi) أصغر من Ksp. III. قيمة Ksp لـ AgCl عند هذه الدرجة 4.0x10^-10. أيّ هذه العبارات صحيحة؟",
+        "zh": "曲线表示某温度下 AgCl 饱和水溶液中 [Ag+] 与 [Cl-] 的关系；K、L、M 三点表示同一温度下的三种溶液。I. K 点的溶液是不饱和溶液。II. M 点溶液的离子积 (Qi) 小于 Ksp。III. 该温度下 AgCl 的 Ksp 为 4.0x10^-10。以上说法中哪些正确？",
+        "ku": "Kevan têkiliya di navbera [Ag+] û [Cl-] de di çareseriyên avî yên têr ên AgCl de li germahiyeke diyar nîşan dide; xalên K, L û M sê çareseriyên di heman germahiyê de temsîl dikin. I. Çareseriya li xala K netêr e. II. Di çareseriya li xala M de hasila îyonan (Qi) ji Ksp piçûktir e. III. Di vê germahiyê de Ksp ya AgCl 4,0x10^-10 e. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
-          "tr": "1,0x10^-5 M",
-          "en": "1.0x10^-5 M",
-          "de": "1,0x10^-5 M",
-          "fr": "1,0x10^-5 M",
-          "ru": "1,0x10^-5 M",
-          "ar": "1.0x10^-5 M",
-          "zh": "1.0x10^-5 M",
-          "ku": "1,0x10^-5 M"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "1,0x10^-10 M",
-          "en": "1.0x10^-10 M",
-          "de": "1,0x10^-10 M",
-          "fr": "1,0x10^-10 M",
-          "ru": "1,0x10^-10 M",
-          "ar": "1.0x10^-10 M",
-          "zh": "1.0x10^-10 M",
-          "ku": "1,0x10^-10 M"
+          "tr": "Yalnız III",
+          "en": "III only",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅 III",
+          "ku": "Tenê III"
         },
         {
-          "tr": "2,0x10^-5 M",
-          "en": "2.0x10^-5 M",
-          "de": "2,0x10^-5 M",
-          "fr": "2,0x10^-5 M",
-          "ru": "2,0x10^-5 M",
-          "ar": "2.0x10^-5 M",
-          "zh": "2.0x10^-5 M",
-          "ku": "2,0x10^-5 M"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "1,0x10^-20 M",
-          "en": "1.0x10^-20 M",
-          "de": "1,0x10^-20 M",
-          "fr": "1,0x10^-20 M",
-          "ru": "1,0x10^-20 M",
-          "ar": "1.0x10^-20 M",
-          "zh": "1.0x10^-20 M",
-          "ku": "1,0x10^-20 M"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "5,0x10^-6 M",
-          "en": "5.0x10^-6 M",
-          "de": "5,0x10^-6 M",
-          "fr": "5,0x10^-6 M",
-          "ru": "5,0x10^-6 M",
-          "ar": "5.0x10^-6 M",
-          "zh": "5.0x10^-6 M",
-          "ku": "5,0x10^-6 M"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "AgCl ⇌ Ag+ + Cl- dengesinde çözünen her 1 mol AgCl, 1 mol Ag+ ve 1 mol Cl- verir; çözünürlük s ise [Ag+] = [Cl-] = s olur. Kçç = [Ag+][Cl-] = s^2 = 1,0x10^-10 → s = √(1,0x10^-10) = 1,0x10^-5 mol/L. Kçç'nin kendisini çözünürlük saymak 1,0x10^-10, karekök yerine kare almak 1,0x10^-20 sonucunu verir.",
-        "en": "In AgCl ⇌ Ag+ + Cl-, each 1 mol of AgCl that dissolves gives 1 mol Ag+ and 1 mol Cl-; if the solubility is s, [Ag+] = [Cl-] = s. Ksp = [Ag+][Cl-] = s^2 = 1.0x10^-10 → s = √(1.0x10^-10) = 1.0x10^-5 mol/L. Taking Ksp itself as the solubility gives 1.0x10^-10; squaring instead of taking the square root gives 1.0x10^-20.",
-        "de": "Im Gleichgewicht AgCl ⇌ Ag+ + Cl- liefert jedes gelöste 1 mol AgCl 1 mol Ag+ und 1 mol Cl-; ist die Löslichkeit s, gilt [Ag+] = [Cl-] = s. Ksp = [Ag+][Cl-] = s^2 = 1,0x10^-10 → s = √(1,0x10^-10) = 1,0x10^-5 mol/L. Setzt man Ksp selbst als Löslichkeit an, erhält man 1,0x10^-10; quadriert man, statt die Wurzel zu ziehen, erhält man 1,0x10^-20.",
-        "fr": "Dans l'équilibre AgCl ⇌ Ag+ + Cl-, chaque 1 mol de AgCl dissous donne 1 mol de Ag+ et 1 mol de Cl- ; si la solubilité est s, [Ag+] = [Cl-] = s. Ksp = [Ag+][Cl-] = s^2 = 1,0x10^-10 → s = √(1,0x10^-10) = 1,0x10^-5 mol/L. Prendre Ksp lui-même pour la solubilité donne 1,0x10^-10 ; élever au carré au lieu de prendre la racine carrée donne 1,0x10^-20.",
-        "ru": "В равновесии AgCl ⇌ Ag+ + Cl- каждый растворившийся 1 моль AgCl даёт 1 моль Ag+ и 1 моль Cl-; если растворимость равна s, то [Ag+] = [Cl-] = s. Ksp = [Ag+][Cl-] = s^2 = 1,0x10^-10 → s = √(1,0x10^-10) = 1,0x10^-5 моль/л. Если принять за растворимость само значение Ksp, получится 1,0x10^-10; если возвести в квадрат вместо извлечения корня — 1,0x10^-20.",
-        "ar": "في الاتزان AgCl ⇌ Ag+ + Cl- يعطي كل 1 mol من AgCl الذائب 1 mol من Ag+ و 1 mol من Cl-؛ فإذا كانت الذائبية s كان [Ag+] = [Cl-] = s. Ksp = [Ag+][Cl-] = s^2 = 1.0x10^-10 → s = √(1.0x10^-10) = 1.0x10^-5 mol/L. اعتبار Ksp نفسه هو الذائبية يعطي 1.0x10^-10، والتربيع بدل أخذ الجذر التربيعي يعطي 1.0x10^-20.",
-        "zh": "在平衡 AgCl ⇌ Ag+ + Cl- 中，每溶解1 mol AgCl生成1 mol Ag+ 和1 mol Cl-；设溶解度为s，则 [Ag+] = [Cl-] = s。Ksp = [Ag+][Cl-] = s^2 = 1.0x10^-10 → s = √(1.0x10^-10) = 1.0x10^-5 mol/L。把Ksp本身当作溶解度得1.0x10^-10；该开平方却平方得1.0x10^-20。",
-        "ku": "Di hevsengiya AgCl ⇌ Ag+ + Cl- de her 1 mol AgCl ya ku dihele 1 mol Ag+ û 1 mol Cl- dide; heke helbûnî s be, [Ag+] = [Cl-] = s ye. Ksp = [Ag+][Cl-] = s^2 = 1,0x10^-10 → s = √(1,0x10^-10) = 1,0x10^-5 mol/L. Girtina Ksp bi xwe wek helbûnî 1,0x10^-10, girtina çargoşeyê li şûna koka çargoşe 1,0x10^-20 dide."
+        "tr": "Eğri üzerindeki her nokta doymuş çözeltidir. L noktası eğri üzerindedir: [Ag+] = [Cl-] = 2,0x10^-5 M, Kçç = (2,0x10^-5)^2 = 4,0x10^-10 (III doğru). K noktasında Qi = (1,0x10^-5)(1,0x10^-5) = 1,0x10^-10 < Kçç; nokta eğrinin altındadır, çözelti doymamıştır (I doğru). M noktasında Qi = (2,0x10^-5)(4,0x10^-5) = 8,0x10^-10 > Kçç; nokta eğrinin üstündedir, çözelti aşırı doygundur ve AgCl çöker (II yanlış).",
+        "en": "Every point on the curve is a saturated solution. L lies on the curve: [Ag+] = [Cl-] = 2.0x10^-5 M, so Ksp = (2.0x10^-5)^2 = 4.0x10^-10 (III correct). At K, Qi = (1.0x10^-5)(1.0x10^-5) = 1.0x10^-10 < Ksp; the point is below the curve and the solution is unsaturated (I correct). At M, Qi = (2.0x10^-5)(4.0x10^-5) = 8.0x10^-10 > Ksp; the point is above the curve, the solution is supersaturated and AgCl precipitates (II incorrect).",
+        "de": "Jeder Punkt auf der Kurve ist eine gesättigte Lösung. L liegt auf der Kurve: [Ag+] = [Cl-] = 2,0x10^-5 M, also Ksp = (2,0x10^-5)^2 = 4,0x10^-10 (III richtig). In K ist Qi = (1,0x10^-5)(1,0x10^-5) = 1,0x10^-10 < Ksp; der Punkt liegt unter der Kurve, die Lösung ist ungesättigt (I richtig). In M ist Qi = (2,0x10^-5)(4,0x10^-5) = 8,0x10^-10 > Ksp; der Punkt liegt über der Kurve, die Lösung ist übersättigt und AgCl fällt aus (II falsch).",
+        "fr": "Tout point de la courbe correspond à une solution saturée. L est sur la courbe : [Ag+] = [Cl-] = 2,0x10^-5 M, donc Ksp = (2,0x10^-5)^2 = 4,0x10^-10 (III exacte). En K, Qi = (1,0x10^-5)(1,0x10^-5) = 1,0x10^-10 < Ksp ; le point est sous la courbe, la solution est insaturée (I exacte). En M, Qi = (2,0x10^-5)(4,0x10^-5) = 8,0x10^-10 > Ksp ; le point est au-dessus de la courbe, la solution est sursaturée et AgCl précipite (II fausse).",
+        "ru": "Каждая точка кривой — насыщенный раствор. Точка L лежит на кривой: [Ag+] = [Cl-] = 2,0x10^-5 M, значит Ksp = (2,0x10^-5)^2 = 4,0x10^-10 (III верно). В точке K Qi = (1,0x10^-5)(1,0x10^-5) = 1,0x10^-10 < Ksp; точка ниже кривой, раствор ненасыщенный (I верно). В точке M Qi = (2,0x10^-5)(4,0x10^-5) = 8,0x10^-10 > Ksp; точка выше кривой, раствор пересыщен, и AgCl выпадает в осадок (II неверно).",
+        "ar": "كل نقطة على المنحنى تمثل محلولًا مشبعًا. النقطة L على المنحنى: [Ag+] = [Cl-] = 2.0x10^-5 M، إذن Ksp = (2.0x10^-5)^2 = 4.0x10^-10 (III صحيحة). عند K يكون Qi = (1.0x10^-5)(1.0x10^-5) = 1.0x10^-10 < Ksp؛ فالنقطة تحت المنحنى والمحلول غير مشبع (I صحيحة). عند M يكون Qi = (2.0x10^-5)(4.0x10^-5) = 8.0x10^-10 > Ksp؛ فالنقطة فوق المنحنى والمحلول فوق مشبع ويترسب AgCl (II خاطئة).",
+        "zh": "曲线上的每一点都表示饱和溶液。L 点在曲线上：[Ag+] = [Cl-] = 2.0x10^-5 M，所以 Ksp = (2.0x10^-5)^2 = 4.0x10^-10（III 正确）。K 点 Qi = (1.0x10^-5)(1.0x10^-5) = 1.0x10^-10 < Ksp，位于曲线下方，为不饱和溶液（I 正确）。M 点 Qi = (2.0x10^-5)(4.0x10^-5) = 8.0x10^-10 > Ksp，位于曲线上方，为过饱和溶液，会析出 AgCl（II 错误）。",
+        "ku": "Her xala li ser kevanê çareseriyeke têr e. Xala L li ser kevanê ye: [Ag+] = [Cl-] = 2,0x10^-5 M, yanî Ksp = (2,0x10^-5)^2 = 4,0x10^-10 (III rast e). Li xala K Qi = (1,0x10^-5)(1,0x10^-5) = 1,0x10^-10 < Ksp e; xal di binê kevanê de ye û çareserî netêr e (I rast e). Li xala M Qi = (2,0x10^-5)(4,0x10^-5) = 8,0x10^-10 > Ksp e; xal li ser kevanê ye, çareserî zêdetêr e û AgCl dinişe (II şaş e)."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": "[Cl⁻] (10⁻⁵ mol/L)",
+        "yLabel": "[Ag⁺] (10⁻⁵ mol/L)",
+        "xMax": 5.5,
+        "yMax": 5.5,
+        "xTicks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "yTicks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0.8,
+                5.0
+              ],
+              [
+                1,
+                4.0
+              ],
+              [
+                1.25,
+                3.2
+              ],
+              [
+                1.6,
+                2.5
+              ],
+              [
+                2,
+                2.0
+              ],
+              [
+                2.5,
+                1.6
+              ],
+              [
+                3.2,
+                1.25
+              ],
+              [
+                4,
+                1.0
+              ],
+              [
+                5,
+                0.8
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 1,
+            "y": 1,
+            "label": "K"
+          },
+          {
+            "x": 2,
+            "y": 2,
+            "label": "L",
+            "guides": true
+          },
+          {
+            "x": 4,
+            "y": 2,
+            "label": "M"
+          }
+        ],
+        "caption": {
+          "tr": "Doymuş çözelti eğrisi",
+          "en": "Saturated-solution curve",
+          "de": "Kurve gesättigter Lösungen",
+          "fr": "Courbe des solutions saturées",
+          "ru": "Кривая насыщенных растворов",
+          "ar": "منحنى المحاليل المشبعة",
+          "zh": "饱和溶液曲线",
+          "ku": "Kevana çareseriyên têr"
+        }
       }
     },
     {
       "id": "u20-twin02",
       "stem": {
-        "tr": "Belirli bir sıcaklıkta Kçç'si 4,0x10^-12 olan XY2 tuzunun saf sudaki molar çözünürlüğü kaçtır?",
-        "en": "What is the molar solubility of salt XY2, whose Ksp is 4.0x10^-12, in pure water at a certain temperature?",
-        "de": "Wie hoch ist die molare Löslichkeit des Salzes XY2, dessen Ksp 4,0x10^-12 beträgt, in reinem Wasser bei einer bestimmten Temperatur?",
-        "fr": "Quelle est la solubilité molaire du sel XY2, dont le Ksp est de 4,0x10^-12, dans l'eau pure à une certaine température ?",
-        "ru": "При определённой температуре Ksp соли XY2 равно 4,0x10^-12. Чему равна молярная растворимость этой соли в чистой воде?",
-        "ar": "عند درجة حرارة معيّنة، ما الذائبية المولارية في الماء النقي للملح XY2 الذي قيمة Ksp له 4.0x10^-12؟",
-        "zh": "一定温度下，盐 XY2 的 Ksp 为 4.0x10^-12，它在纯水中的摩尔溶解度是多少？",
-        "ku": "Li germahiyeke diyar helbûniya molar a xwêya XY2 ya ku Ksp ya wê 4,0x10^-12 e, di ava paqij de çend e?"
+        "tr": "Belirli bir sıcaklıkta az çözünen XY2 tuzunun saf sudaki doymuş çözeltisinde [Y-] = 2,0x10^-4 mol/L olarak ölçülüyor. Bu sıcaklıkta XY2'nin çözünürlük çarpımı (Kçç) kaçtır?",
+        "en": "In a saturated solution of the sparingly soluble salt XY2 in pure water at a certain temperature, [Y-] is measured as 2.0x10^-4 mol/L. What is the solubility product (Ksp) of XY2 at this temperature?",
+        "de": "In einer gesättigten Lösung des schwerlöslichen Salzes XY2 in reinem Wasser wird bei einer bestimmten Temperatur [Y-] = 2,0x10^-4 mol/L gemessen. Wie groß ist das Löslichkeitsprodukt (Ksp) von XY2 bei dieser Temperatur?",
+        "fr": "Dans une solution saturée du sel peu soluble XY2 dans l'eau pure, on mesure [Y-] = 2,0x10^-4 mol/L à une certaine température. Quel est le produit de solubilité (Ksp) de XY2 à cette température ?",
+        "ru": "В насыщенном растворе малорастворимой соли XY2 в чистой воде при определённой температуре измерено [Y-] = 2,0x10^-4 моль/л. Чему равно произведение растворимости (Ksp) XY2 при этой температуре?",
+        "ar": "في محلول مشبع للملح قليل الذوبان XY2 في الماء النقي عند درجة حرارة معينة قيس [Y-] فكان 2.0x10^-4 mol/L. ما حاصل الإذابة (Ksp) لـ XY2 عند هذه الدرجة؟",
+        "zh": "某温度下，在难溶盐 XY2 的纯水饱和溶液中测得 [Y-] = 2.0x10^-4 mol/L。该温度下 XY2 的溶度积 (Ksp) 是多少？",
+        "ku": "Li germahiyeke diyar di çareseriya têr a xwêya kêm-helbar XY2 de di ava paqij de [Y-] = 2,0x10^-4 mol/L hatiye pîvan. Di vê germahiyê de hasila helbûniyê (Ksp) ya XY2 çend e?"
       },
       "options": [
         {
-          "tr": "1,0x10^-4 M",
-          "en": "1.0x10^-4 M",
-          "de": "1,0x10^-4 M",
-          "fr": "1,0x10^-4 M",
-          "ru": "1,0x10^-4 M",
-          "ar": "1.0x10^-4 M",
-          "zh": "1.0x10^-4 M",
-          "ku": "1,0x10^-4 M"
+          "tr": "4,0x10^-12",
+          "en": "4.0x10^-12",
+          "de": "4,0x10^-12",
+          "fr": "4,0x10^-12",
+          "ru": "4,0x10^-12",
+          "ar": "4.0x10^-12",
+          "zh": "4.0x10^-12",
+          "ku": "4,0x10^-12"
         },
         {
-          "tr": "2,0x10^-6 M",
-          "en": "2.0x10^-6 M",
-          "de": "2,0x10^-6 M",
-          "fr": "2,0x10^-6 M",
-          "ru": "2,0x10^-6 M",
-          "ar": "2.0x10^-6 M",
-          "zh": "2.0x10^-6 M",
-          "ku": "2,0x10^-6 M"
+          "tr": "8,0x10^-12",
+          "en": "8.0x10^-12",
+          "de": "8,0x10^-12",
+          "fr": "8,0x10^-12",
+          "ru": "8,0x10^-12",
+          "ar": "8.0x10^-12",
+          "zh": "8.0x10^-12",
+          "ku": "8,0x10^-12"
         },
         {
-          "tr": "1,0x10^-6 M",
-          "en": "1.0x10^-6 M",
-          "de": "1,0x10^-6 M",
-          "fr": "1,0x10^-6 M",
-          "ru": "1,0x10^-6 M",
-          "ar": "1.0x10^-6 M",
-          "zh": "1.0x10^-6 M",
-          "ku": "1,0x10^-6 M"
+          "tr": "3,2x10^-11",
+          "en": "3.2x10^-11",
+          "de": "3,2x10^-11",
+          "fr": "3,2x10^-11",
+          "ru": "3,2x10^-11",
+          "ar": "3.2x10^-11",
+          "zh": "3.2x10^-11",
+          "ku": "3,2x10^-11"
         },
         {
-          "tr": "4,0x10^-4 M",
-          "en": "4.0x10^-4 M",
-          "de": "4,0x10^-4 M",
-          "fr": "4,0x10^-4 M",
-          "ru": "4,0x10^-4 M",
-          "ar": "4.0x10^-4 M",
-          "zh": "4.0x10^-4 M",
-          "ku": "4,0x10^-4 M"
+          "tr": "2,0x10^-8",
+          "en": "2.0x10^-8",
+          "de": "2,0x10^-8",
+          "fr": "2,0x10^-8",
+          "ru": "2,0x10^-8",
+          "ar": "2.0x10^-8",
+          "zh": "2.0x10^-8",
+          "ku": "2,0x10^-8"
         },
         {
-          "tr": "2,0x10^-4 M",
-          "en": "2.0x10^-4 M",
-          "de": "2,0x10^-4 M",
-          "fr": "2,0x10^-4 M",
-          "ru": "2,0x10^-4 M",
-          "ar": "2.0x10^-4 M",
-          "zh": "2.0x10^-4 M",
-          "ku": "2,0x10^-4 M"
+          "tr": "4,0x10^-8",
+          "en": "4.0x10^-8",
+          "de": "4,0x10^-8",
+          "fr": "4,0x10^-8",
+          "ru": "4,0x10^-8",
+          "ar": "4.0x10^-8",
+          "zh": "4.0x10^-8",
+          "ku": "4,0x10^-8"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "XY2 ⇌ X2+ + 2Y- dengesinde çözünürlük s ise [X2+] = s ve [Y-] = 2s olur. Kçç = [X2+][Y-]^2 = s · (2s)^2 = 4s^3 = 4,0x10^-12 → s^3 = 1,0x10^-12 → s = 1,0x10^-4 mol/L. Tuz XY tipi sanılıp s = √Kçç alınırsa 2,0x10^-6 M bulunur; 2,0x10^-4 M ise çözünürlük değil, [Y-] = 2s değeridir.",
-        "en": "In XY2 ⇌ X2+ + 2Y-, if the solubility is s then [X2+] = s and [Y-] = 2s. Ksp = [X2+][Y-]^2 = s · (2s)^2 = 4s^3 = 4.0x10^-12 → s^3 = 1.0x10^-12 → s = 1.0x10^-4 mol/L. Treating the salt as XY type and taking s = √Ksp gives 2.0x10^-6 M; 2.0x10^-4 M is not the solubility but the value of [Y-] = 2s.",
-        "de": "Im Gleichgewicht XY2 ⇌ X2+ + 2Y- gilt bei der Löslichkeit s: [X2+] = s und [Y-] = 2s. Ksp = [X2+][Y-]^2 = s · (2s)^2 = 4s^3 = 4,0x10^-12 → s^3 = 1,0x10^-12 → s = 1,0x10^-4 mol/L. Hält man das Salz für den Typ XY und setzt s = √Ksp, erhält man 2,0x10^-6 M; 2,0x10^-4 M ist nicht die Löslichkeit, sondern der Wert von [Y-] = 2s.",
-        "fr": "Dans l'équilibre XY2 ⇌ X2+ + 2Y-, si la solubilité est s, alors [X2+] = s et [Y-] = 2s. Ksp = [X2+][Y-]^2 = s · (2s)^2 = 4s^3 = 4,0x10^-12 → s^3 = 1,0x10^-12 → s = 1,0x10^-4 mol/L. Considérer le sel comme de type XY et prendre s = √Ksp donne 2,0x10^-6 M ; 2,0x10^-4 M n'est pas la solubilité mais la valeur de [Y-] = 2s.",
-        "ru": "В равновесии XY2 ⇌ X2+ + 2Y- при растворимости s имеем [X2+] = s и [Y-] = 2s. Ksp = [X2+][Y-]^2 = s · (2s)^2 = 4s^3 = 4,0x10^-12 → s^3 = 1,0x10^-12 → s = 1,0x10^-4 моль/л. Если принять соль за соль типа XY и взять s = √Ksp, получится 2,0x10^-6 M; 2,0x10^-4 M — это не растворимость, а значение [Y-] = 2s.",
-        "ar": "في الاتزان XY2 ⇌ X2+ + 2Y- إذا كانت الذائبية s فإن [X2+] = s و [Y-] = 2s. Ksp = [X2+][Y-]^2 = s · (2s)^2 = 4s^3 = 4.0x10^-12 → s^3 = 1.0x10^-12 → s = 1.0x10^-4 mol/L. اعتبار الملح من النوع XY وأخذ s = √Ksp يعطي 2.0x10^-6 M؛ أما 2.0x10^-4 M فليست الذائبية بل قيمة [Y-] = 2s.",
-        "zh": "在平衡 XY2 ⇌ X2+ + 2Y- 中，设溶解度为s，则 [X2+] = s，[Y-] = 2s。Ksp = [X2+][Y-]^2 = s · (2s)^2 = 4s^3 = 4.0x10^-12 → s^3 = 1.0x10^-12 → s = 1.0x10^-4 mol/L。若把该盐当作XY型而取 s = √Ksp，得2.0x10^-6 M；2.0x10^-4 M不是溶解度，而是 [Y-] = 2s 的数值。",
-        "ku": "Di hevsengiya XY2 ⇌ X2+ + 2Y- de heke helbûnî s be, [X2+] = s û [Y-] = 2s e. Ksp = [X2+][Y-]^2 = s · (2s)^2 = 4s^3 = 4,0x10^-12 → s^3 = 1,0x10^-12 → s = 1,0x10^-4 mol/L. Heke xwê ji cureyê XY were hesibandin û s = √Ksp were girtin 2,0x10^-6 M derdikeve; 2,0x10^-4 M ne helbûnî ye, nirxa [Y-] = 2s ye."
+        "tr": "XY2(k) ⇌ X2+ + 2Y- dengesinde [Y-] = 2s olduğundan s = [X2+] = 2,0x10^-4 / 2 = 1,0x10^-4 M'dir. Kçç = [X2+][Y-]^2 = (1,0x10^-4)(2,0x10^-4)^2 = 4,0x10^-12. [X2+] de 2,0x10^-4 alınırsa 8,0x10^-12; s = 2,0x10^-4 sanılıp 4s^3 uygulanırsa 3,2x10^-11; üs unutulursa (1,0x10^-4)(2,0x10^-4) = 2,0x10^-8; yalnızca [Y-]^2 hesaplanırsa 4,0x10^-8 bulunur.",
+        "en": "In XY2(s) ⇌ X2+ + 2Y-, [Y-] = 2s, so s = [X2+] = 2.0x10^-4 / 2 = 1.0x10^-4 M. Ksp = [X2+][Y-]^2 = (1.0x10^-4)(2.0x10^-4)^2 = 4.0x10^-12. Taking [X2+] = 2.0x10^-4 as well gives 8.0x10^-12; taking s = 2.0x10^-4 and using 4s^3 gives 3.2x10^-11; forgetting the exponent gives (1.0x10^-4)(2.0x10^-4) = 2.0x10^-8; computing only [Y-]^2 gives 4.0x10^-8.",
+        "de": "Für XY2(s) ⇌ X2+ + 2Y- gilt [Y-] = 2s, also s = [X2+] = 2,0x10^-4 / 2 = 1,0x10^-4 M. Ksp = [X2+][Y-]^2 = (1,0x10^-4)(2,0x10^-4)^2 = 4,0x10^-12. Wird auch [X2+] = 2,0x10^-4 gesetzt, erhält man 8,0x10^-12; mit s = 2,0x10^-4 in 4s^3 erhält man 3,2x10^-11; ohne Exponent (1,0x10^-4)(2,0x10^-4) = 2,0x10^-8; nur [Y-]^2 ergibt 4,0x10^-8.",
+        "fr": "Pour XY2(s) ⇌ X2+ + 2Y-, [Y-] = 2s, donc s = [X2+] = 2,0x10^-4 / 2 = 1,0x10^-4 M. Ksp = [X2+][Y-]^2 = (1,0x10^-4)(2,0x10^-4)^2 = 4,0x10^-12. Prendre aussi [X2+] = 2,0x10^-4 donne 8,0x10^-12 ; prendre s = 2,0x10^-4 dans 4s^3 donne 3,2x10^-11 ; oublier l'exposant donne (1,0x10^-4)(2,0x10^-4) = 2,0x10^-8 ; calculer seulement [Y-]^2 donne 4,0x10^-8.",
+        "ru": "Для XY2(тв) ⇌ X2+ + 2Y- [Y-] = 2s, поэтому s = [X2+] = 2,0x10^-4 / 2 = 1,0x10^-4 M. Ksp = [X2+][Y-]^2 = (1,0x10^-4)(2,0x10^-4)^2 = 4,0x10^-12. Если принять и [X2+] = 2,0x10^-4, получится 8,0x10^-12; если принять s = 2,0x10^-4 и применить 4s^3 — 3,2x10^-11; без показателя степени — (1,0x10^-4)(2,0x10^-4) = 2,0x10^-8; если посчитать только [Y-]^2 — 4,0x10^-8.",
+        "ar": "في XY2(s) ⇌ X2+ + 2Y- يكون [Y-] = 2s، إذن s = [X2+] = 2.0x10^-4 / 2 = 1.0x10^-4 M. Ksp = [X2+][Y-]^2 = (1.0x10^-4)(2.0x10^-4)^2 = 4.0x10^-12. أخذ [X2+] = 2.0x10^-4 أيضًا يعطي 8.0x10^-12، واعتبار s = 2.0x10^-4 وتطبيق 4s^3 يعطي 3.2x10^-11، وإهمال الأس يعطي (1.0x10^-4)(2.0x10^-4) = 2.0x10^-8، وحساب [Y-]^2 وحده يعطي 4.0x10^-8.",
+        "zh": "XY2(s) ⇌ X2+ + 2Y- 中 [Y-] = 2s，所以 s = [X2+] = 2.0x10^-4 / 2 = 1.0x10^-4 M。Ksp = [X2+][Y-]^2 = (1.0x10^-4)(2.0x10^-4)^2 = 4.0x10^-12。若把 [X2+] 也取为 2.0x10^-4，得 8.0x10^-12；若把 s 当作 2.0x10^-4 代入 4s^3，得 3.2x10^-11；忘记指数得 (1.0x10^-4)(2.0x10^-4) = 2.0x10^-8；只算 [Y-]^2 得 4.0x10^-8。",
+        "ku": "Di XY2(s) ⇌ X2+ + 2Y- de [Y-] = 2s e, ji ber vê yekê s = [X2+] = 2,0x10^-4 / 2 = 1,0x10^-4 M e. Ksp = [X2+][Y-]^2 = (1,0x10^-4)(2,0x10^-4)^2 = 4,0x10^-12. Heke [X2+] jî 2,0x10^-4 bê girtin 8,0x10^-12; heke s = 2,0x10^-4 bê hesibandin û 4s^3 bê bikaranîn 3,2x10^-11; bêyî hêzê (1,0x10^-4)(2,0x10^-4) = 2,0x10^-8; tenê [Y-]^2 bê hesibandin 4,0x10^-8 tê dîtin."
       }
     },
     {
       "id": "u20-twin03",
       "stem": {
-        "tr": "25 °C'de az çözünen M(OH)3 bileşiğinin saf sudaki molar çözünürlüğü 1,0x10^-5 mol/L'dir. Buna göre M(OH)3'ün bu sıcaklıktaki çözünürlük çarpımı (Kçç) kaçtır?",
+        "tr": "25 °C'de az çözünen M(OH)3 bileşiğinin saf sudaki molar çözünürlüğü 1,0x10^-5 mol/L'dir. M(OH)3'ün bu sıcaklıktaki çözünürlük çarpımı (Kçç) kaçtır?",
         "en": "At 25 °C the molar solubility of the sparingly soluble compound M(OH)3 in pure water is 1.0x10^-5 mol/L. What is the solubility product (Ksp) of M(OH)3 at this temperature?",
         "de": "Bei 25 °C beträgt die molare Löslichkeit der schwerlöslichen Verbindung M(OH)3 in reinem Wasser 1,0x10^-5 mol/L. Wie groß ist das Löslichkeitsprodukt (Ksp) von M(OH)3 bei dieser Temperatur?",
         "fr": "À 25 °C, la solubilité molaire du composé peu soluble M(OH)3 dans l'eau pure est de 1,0x10^-5 mol/L. Quel est le produit de solubilité (Ksp) de M(OH)3 à cette température ?",
         "ru": "При 25 °C молярная растворимость малорастворимого соединения M(OH)3 в чистой воде равна 1,0x10^-5 моль/л. Чему равно произведение растворимости (Ksp) M(OH)3 при этой температуре?",
         "ar": "عند 25 °C تبلغ الذائبية المولارية للمركب قليل الذوبان M(OH)3 في الماء النقي 1.0x10^-5 mol/L. ما قيمة حاصل الإذابة (Ksp) للمركب M(OH)3 عند هذه الدرجة؟",
         "zh": "25 °C时，难溶化合物M(OH)3在纯水中的摩尔溶解度为1.0x10^-5 mol/L。该温度下M(OH)3的溶度积(Ksp)是多少？",
-        "ku": "Li 25 °C helbûniya molar a pêkhateya kêm-helbar M(OH)3 di ava paqij de 1,0x10^-5 mol/L e. Li gorî vê yekê, hasila helbûniyê (Ksp) ya M(OH)3 di vê germahiyê de çend e?"
+        "ku": "Li 25 °C helbûniya molar a pêkhateya kêm-helbar M(OH)3 di ava paqij de 1,0x10^-5 mol/L e. Hasila helbûniyê (Ksp) ya M(OH)3 di vê germahiyê de çend e?"
       },
       "options": [
         {
@@ -1286,14 +1377,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin04",
       "stem": {
-        "tr": "25 °C'de M(OH)2 katısının çözünürlük çarpımı Kçç = 4,0x10^-12'dir. Buna göre bu sıcaklıkta M(OH)2'nin saf sudaki doymuş çözeltisinin pH değeri kaçtır? (log 2 = 0,3; Ksu = 1,0x10^-14)",
+        "tr": "25 °C'de M(OH)2 katısının çözünürlük çarpımı Kçç = 4,0x10^-12'dir. Bu sıcaklıkta M(OH)2'nin saf sudaki doymuş çözeltisinin pH değeri kaçtır? (log 2 = 0,3; Ksu = 1,0x10^-14)",
         "en": "At 25 °C the solubility product of solid M(OH)2 is Ksp = 4.0x10^-12. What is the pH of a saturated solution of M(OH)2 in pure water at this temperature? (log 2 = 0.3; Kw = 1.0x10^-14)",
         "de": "Bei 25 °C beträgt das Löslichkeitsprodukt von festem M(OH)2 Ksp = 4,0x10^-12. Welchen pH-Wert hat die gesättigte Lösung von M(OH)2 in reinem Wasser bei dieser Temperatur? (log 2 = 0,3; Kw = 1,0x10^-14)",
         "fr": "À 25 °C, le produit de solubilité du solide M(OH)2 est Ksp = 4,0x10^-12. Quel est le pH de la solution saturée de M(OH)2 dans l'eau pure à cette température ? (log 2 = 0,3 ; Ke = 1,0x10^-14)",
         "ru": "При 25 °C произведение растворимости твёрдого M(OH)2 Ksp = 4,0x10^-12. Чему равен pH насыщенного раствора M(OH)2 в чистой воде при этой температуре? (log 2 = 0,3; Kw = 1,0x10^-14)",
         "ar": "عند 25 °C يبلغ حاصل الإذابة للصلب M(OH)2 القيمة Ksp = 4.0x10^-12. ما قيمة pH للمحلول المشبع من M(OH)2 في الماء النقي عند هذه الدرجة؟ (log 2 = 0.3؛ Kw = 1.0x10^-14)",
         "zh": "25 °C时，固体M(OH)2的溶度积Ksp = 4.0x10^-12。该温度下M(OH)2在纯水中的饱和溶液的pH是多少？(log 2 = 0.3；Kw = 1.0x10^-14)",
-        "ku": "Li 25 °C hasila helbûniyê ya M(OH)2-ya hişk Ksp = 4,0x10^-12 e. Li gorî vê yekê, di vê germahiyê de pH-a çareseriya têr a M(OH)2 di ava paqij de çend e? (log 2 = 0,3; Kw = 1,0x10^-14)"
+        "ku": "Li 25 °C hasila helbûniyê ya M(OH)2-ya hişk Ksp = 4,0x10^-12 e. Di vê germahiyê de pH-a çareseriya têr a M(OH)2 di ava paqij de çend e? (log 2 = 0,3; Kw = 1,0x10^-14)"
       },
       "options": [
         {
@@ -1362,14 +1453,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin05",
       "stem": {
-        "tr": "25 °C'de CaF2'nin çözünürlük çarpımı Kçç = 4,0x10^-11'dir. Buna göre CaF2'nin aynı sıcaklıkta 0,10 M NaF çözeltisindeki molar çözünürlüğü kaç mol/L'dir? (NaF'nin tamamen iyonlaştığını kabul ediniz.)",
+        "tr": "25 °C'de CaF2'nin çözünürlük çarpımı Kçç = 4,0x10^-11'dir. CaF2'nin aynı sıcaklıkta 0,10 M NaF çözeltisindeki molar çözünürlüğü kaç mol/L'dir? (NaF'nin tamamen iyonlaştığını kabul ediniz.)",
         "en": "At 25 °C the solubility product of CaF2 is Ksp = 4.0x10^-11. What is the molar solubility of CaF2 in 0.10 M NaF solution at the same temperature, in mol/L? (Assume NaF is fully dissociated.)",
         "de": "Bei 25 °C beträgt das Löslichkeitsprodukt von CaF2 Ksp = 4,0x10^-11. Wie groß ist die molare Löslichkeit von CaF2 bei derselben Temperatur in 0,10 M NaF-Lösung in mol/L? (NaF sei vollständig dissoziiert.)",
         "fr": "À 25 °C, le produit de solubilité de CaF2 est Ksp = 4,0x10^-11. Quelle est, en mol/L, la solubilité molaire de CaF2 dans une solution de NaF 0,10 M à la même température ? (On admet que NaF est totalement dissocié.)",
         "ru": "При 25 °C произведение растворимости CaF2 Ksp = 4,0x10^-11. Чему равна молярная растворимость CaF2 (моль/л) при той же температуре в 0,10 M растворе NaF? (Считать, что NaF диссоциирует полностью.)",
         "ar": "عند 25 °C يبلغ حاصل الإذابة لـ CaF2 القيمة Ksp = 4.0x10^-11. ما الذائبية المولارية لـ CaF2 بوحدة mol/L في محلول NaF تركيزه 0.10 M عند الدرجة نفسها؟ (اعتبر أن NaF متأين كليًّا.)",
         "zh": "25 °C时CaF2的溶度积Ksp = 4.0x10^-11。同温下CaF2在0.10 M NaF溶液中的摩尔溶解度是多少mol/L？(设NaF完全电离。)",
-        "ku": "Li 25 °C hasila helbûniyê ya CaF2 Ksp = 4,0x10^-11 e. Li gorî vê yekê, di heman germahiyê de helbûniya molar a CaF2 di çareseriya 0,10 M NaF de çend mol/L ye? (Bihesibînin ku NaF bi tevahî îyonîze dibe.)"
+        "ku": "Li 25 °C hasila helbûniyê ya CaF2 Ksp = 4,0x10^-11 e. Di heman germahiyê de helbûniya molar a CaF2 di çareseriya 0,10 M NaF de çend mol/L ye? (Bihesibînin ku NaF bi tevahî îyonîze dibe.)"
       },
       "options": [
         {
@@ -1438,14 +1529,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin06",
       "stem": {
-        "tr": "25 °C'de AgCl için Kçç = 1,0x10^-10'dur. Aynı sıcaklıkta aşağıdaki çözelti çiftleri eşit hacimlerde karıştırılıyor:\nI. 2,0x10^-4 M AgNO3 ve 2,0x10^-4 M NaCl\nII. 4,0x10^-5 M AgNO3 ve 2,0x10^-5 M NaCl\nIII. 4,0x10^-3 M AgNO3 ve 1,0x10^-7 M NaCl\nBuna göre hangi karışımlarda AgCl çökelmesi gözlenir?",
-        "en": "At 25 °C, Ksp for AgCl is 1.0x10^-10. At the same temperature the following pairs of solutions are mixed in equal volumes:\nI. 2.0x10^-4 M AgNO3 and 2.0x10^-4 M NaCl\nII. 4.0x10^-5 M AgNO3 and 2.0x10^-5 M NaCl\nIII. 4.0x10^-3 M AgNO3 and 1.0x10^-7 M NaCl\nIn which mixtures is precipitation of AgCl observed?",
-        "de": "Bei 25 °C ist Ksp für AgCl 1,0x10^-10. Bei derselben Temperatur werden folgende Lösungspaare zu gleichen Volumina gemischt:\nI. 2,0x10^-4 M AgNO3 und 2,0x10^-4 M NaCl\nII. 4,0x10^-5 M AgNO3 und 2,0x10^-5 M NaCl\nIII. 4,0x10^-3 M AgNO3 und 1,0x10^-7 M NaCl\nIn welchen Mischungen fällt AgCl aus?",
-        "fr": "À 25 °C, Ksp de AgCl vaut 1,0x10^-10. À la même température, on mélange à volumes égaux les paires de solutions suivantes :\nI. AgNO3 2,0x10^-4 M et NaCl 2,0x10^-4 M\nII. AgNO3 4,0x10^-5 M et NaCl 2,0x10^-5 M\nIII. AgNO3 4,0x10^-3 M et NaCl 1,0x10^-7 M\nDans quels mélanges observe-t-on la précipitation de AgCl ?",
-        "ru": "При 25 °C Ksp AgCl = 1,0x10^-10. При той же температуре смешивают равные объёмы следующих пар растворов:\nI. 2,0x10^-4 M AgNO3 и 2,0x10^-4 M NaCl\nII. 4,0x10^-5 M AgNO3 и 2,0x10^-5 M NaCl\nIII. 4,0x10^-3 M AgNO3 и 1,0x10^-7 M NaCl\nВ каких смесях выпадет осадок AgCl?",
-        "ar": "عند 25 °C تكون قيمة Ksp لـ AgCl هي 1.0x10^-10. وعند الدرجة نفسها تُخلط أزواج المحاليل الآتية بحجوم متساوية:\nI. محلول AgNO3 تركيزه 2.0x10^-4 M ومحلول NaCl تركيزه 2.0x10^-4 M\nII. محلول AgNO3 تركيزه 4.0x10^-5 M ومحلول NaCl تركيزه 2.0x10^-5 M\nIII. محلول AgNO3 تركيزه 4.0x10^-3 M ومحلول NaCl تركيزه 1.0x10^-7 M\nفي أي الخلائط يُلاحَظ ترسب AgCl؟",
-        "zh": "25 °C时AgCl的Ksp = 1.0x10^-10。同温下将下列各对溶液等体积混合：\nI. 2.0x10^-4 M AgNO3与2.0x10^-4 M NaCl\nII. 4.0x10^-5 M AgNO3与2.0x10^-5 M NaCl\nIII. 4.0x10^-3 M AgNO3与1.0x10^-7 M NaCl\n哪些混合液中会观察到AgCl沉淀？",
-        "ku": "Li 25 °C ji bo AgCl Ksp = 1,0x10^-10 e. Di heman germahiyê de cotên çareseriyên jêrîn bi qebareyên wekhev tên tevlihevkirin:\nI. 2,0x10^-4 M AgNO3 û 2,0x10^-4 M NaCl\nII. 4,0x10^-5 M AgNO3 û 2,0x10^-5 M NaCl\nIII. 4,0x10^-3 M AgNO3 û 1,0x10^-7 M NaCl\nLi gorî vê yekê, di kîjan tevliheviyan de niştina AgCl tê dîtin?"
+        "tr": "25 °C'de AgCl için Kçç = 1,0x10^-10'dur. Tabloda derişimleri verilen AgNO3 ve NaCl çözeltileri aynı sıcaklıkta her karışımda eşit hacimlerde karıştırılıyor. Hangi karışımlarda AgCl çökelmesi gözlenir?",
+        "en": "At 25 °C, Ksp of AgCl is 1.0x10^-10. In each mixture, the AgNO3 and NaCl solutions with the concentrations given in the table are mixed in equal volumes at the same temperature. In which mixtures is a precipitate of AgCl observed?",
+        "de": "Bei 25 °C beträgt Ksp von AgCl 1,0x10^-10. In jeder Mischung werden die AgNO3- und NaCl-Lösungen mit den in der Tabelle angegebenen Konzentrationen bei derselben Temperatur in gleichen Volumina gemischt. In welchen Mischungen fällt AgCl aus?",
+        "fr": "À 25 °C, le Ksp de AgCl vaut 1,0x10^-10. Dans chaque mélange, on mélange à volumes égaux, à la même température, les solutions de AgNO3 et de NaCl dont les concentrations figurent dans le tableau. Dans quels mélanges observe-t-on un précipité de AgCl ?",
+        "ru": "При 25 °C Ksp для AgCl равно 1,0x10^-10. В каждой смеси растворы AgNO3 и NaCl с указанными в таблице концентрациями смешивают в равных объёмах при той же температуре. В каких смесях выпадает осадок AgCl?",
+        "ar": "عند 25 °C يكون Ksp لـ AgCl مساويًا 1.0x10^-10. في كل خليط يُمزج محلولا AgNO3 وNaCl اللذان يعطي الجدول تركيزيهما بحجمين متساويين عند الدرجة نفسها. في أيّ الخلائط يُلاحظ ترسب AgCl؟",
+        "zh": "25 °C 时 AgCl 的 Ksp = 1.0x10^-10。每组混合中，将表中所给浓度的 AgNO3 溶液和 NaCl 溶液在同一温度下等体积混合。哪些混合中会观察到 AgCl 沉淀？",
+        "ku": "Li 25 °C ji bo AgCl Ksp = 1,0x10^-10 e. Di her tevliheviyê de çareseriyên AgNO3 û NaCl yên ku tîrbûnên wan di tabloyê de hatine dayîn, di heman germahiyê de bi qebareyên wekhev tên tevlihevkirin. Di kîjan tevliheviyan de niştina AgCl tê dîtin?"
       },
       "options": [
         {
@@ -1509,19 +1600,107 @@ export const unit20: ChemistryUnitSeedData = {
         "ar": "عند خلط حجوم متساوية ينخفض كل تركيز إلى النصف. I: [Ag+] = [Cl-] = 1.0x10^-4 M و Qi = 1.0x10^-8 > Ksp → يحدث ترسيب. II: [Ag+] = 2.0x10^-5 M و [Cl-] = 1.0x10^-5 M و Qi = 2.0x10^-10 > Ksp → يحدث ترسيب. III: [Ag+] = 2.0x10^-3 M و [Cl-] = 5.0x10^-8 M و Qi = 1.0x10^-10 = Ksp → المحلول مشبع تمامًا ولا يحدث ترسيب. وإذا أُهمل التخفيف نحصل في III على Qi = 4.0x10^-10 فيُظَن خطأً أنه يترسب؛ والإجابة الصحيحة I و II.",
         "zh": "等体积混合后各浓度减半。I：[Ag+] = [Cl-] = 1.0x10^-4 M，Qi = 1.0x10^-8 > Ksp → 有沉淀。II：[Ag+] = 2.0x10^-5 M，[Cl-] = 1.0x10^-5 M，Qi = 2.0x10^-10 > Ksp → 有沉淀。III：[Ag+] = 2.0x10^-3 M，[Cl-] = 5.0x10^-8 M，Qi = 1.0x10^-10 = Ksp → 溶液恰好饱和，无沉淀。若忽略稀释，III得Qi = 4.0x10^-10，会误判为有沉淀；正确答案是I和II。",
         "ku": "Bi tevlihevkirina qebareyên wekhev her tîrbûn dibe nîv. I: [Ag+] = [Cl-] = 1,0x10^-4 M, Qi = 1,0x10^-8 > Ksp → niştin pêk tê. II: [Ag+] = 2,0x10^-5 M, [Cl-] = 1,0x10^-5 M, Qi = 2,0x10^-10 > Ksp → niştin pêk tê. III: [Ag+] = 2,0x10^-3 M, [Cl-] = 5,0x10^-8 M, Qi = 1,0x10^-10 = Ksp → çareserî tam têr e, niştin pêk nayê. Heke sistbûn neyê hesibandin, ji bo III Qi = 4,0x10^-10 tê dîtin û bi şaşî tê fikirîn ku niştin heye; bersiva rast I û II ye."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Karışım",
+            "en": "Mixture",
+            "de": "Mischung",
+            "fr": "Mélange",
+            "ru": "Смесь",
+            "ar": "الخليط",
+            "zh": "混合",
+            "ku": "Tevlihevî"
+          },
+          "[AgNO3] (mol/L)",
+          "[NaCl] (mol/L)"
+        ],
+        "rows": [
+          [
+            "I",
+            {
+              "tr": "2,0x10^-4",
+              "en": "2.0x10^-4",
+              "de": "2,0x10^-4",
+              "fr": "2,0x10^-4",
+              "ru": "2,0x10^-4",
+              "ar": "2.0x10^-4",
+              "zh": "2.0x10^-4",
+              "ku": "2,0x10^-4"
+            },
+            {
+              "tr": "2,0x10^-4",
+              "en": "2.0x10^-4",
+              "de": "2,0x10^-4",
+              "fr": "2,0x10^-4",
+              "ru": "2,0x10^-4",
+              "ar": "2.0x10^-4",
+              "zh": "2.0x10^-4",
+              "ku": "2,0x10^-4"
+            }
+          ],
+          [
+            "II",
+            {
+              "tr": "4,0x10^-5",
+              "en": "4.0x10^-5",
+              "de": "4,0x10^-5",
+              "fr": "4,0x10^-5",
+              "ru": "4,0x10^-5",
+              "ar": "4.0x10^-5",
+              "zh": "4.0x10^-5",
+              "ku": "4,0x10^-5"
+            },
+            {
+              "tr": "2,0x10^-5",
+              "en": "2.0x10^-5",
+              "de": "2,0x10^-5",
+              "fr": "2,0x10^-5",
+              "ru": "2,0x10^-5",
+              "ar": "2.0x10^-5",
+              "zh": "2.0x10^-5",
+              "ku": "2,0x10^-5"
+            }
+          ],
+          [
+            "III",
+            {
+              "tr": "4,0x10^-3",
+              "en": "4.0x10^-3",
+              "de": "4,0x10^-3",
+              "fr": "4,0x10^-3",
+              "ru": "4,0x10^-3",
+              "ar": "4.0x10^-3",
+              "zh": "4.0x10^-3",
+              "ku": "4,0x10^-3"
+            },
+            {
+              "tr": "1,0x10^-7",
+              "en": "1.0x10^-7",
+              "de": "1,0x10^-7",
+              "fr": "1,0x10^-7",
+              "ru": "1,0x10^-7",
+              "ar": "1.0x10^-7",
+              "zh": "1.0x10^-7",
+              "ku": "1,0x10^-7"
+            }
+          ]
+        ]
       }
     },
     {
       "id": "u20-twin07",
       "stem": {
-        "tr": "25 °C'de Cl- ve CrO4 2- iyonlarının her birini 0,010 M derişimde içeren bir çözeltiye, hacim değişimi ihmal edilecek şekilde damla damla AgNO3 çözeltisi ekleniyor.\n(AgCl için Kçç = 1,0x10^-10; Ag2CrO4 için Kçç = 1,0x10^-12)\nBuna göre ilk çöken tuz ve bu tuzun çökmeye başladığı andaki [Ag+] aşağıdakilerden hangisinde doğru verilmiştir?",
+        "tr": "25 °C'de Cl- ve CrO4 2- iyonlarının her birini 0,010 M derişimde içeren bir çözeltiye, hacim değişimi ihmal edilecek şekilde damla damla AgNO3 çözeltisi ekleniyor.\n(AgCl için Kçç = 1,0x10^-10; Ag2CrO4 için Kçç = 1,0x10^-12)\nİlk çöken tuz ve bu tuzun çökmeye başladığı andaki [Ag+] aşağıdakilerden hangisinde doğru verilmiştir?",
         "en": "At 25 °C, AgNO3 solution is added dropwise (volume change negligible) to a solution containing Cl- and CrO4 2- ions, each at 0.010 M.\n(Ksp of AgCl = 1.0x10^-10; Ksp of Ag2CrO4 = 1.0x10^-12)\nWhich option correctly gives the salt that precipitates first and the [Ag+] at which it begins to precipitate?",
         "de": "Bei 25 °C wird zu einer Lösung, die Cl-- und CrO4 2--Ionen jeweils in 0,010 M Konzentration enthält, tropfenweise AgNO3-Lösung gegeben (Volumenänderung vernachlässigbar).\n(Ksp von AgCl = 1,0x10^-10; Ksp von Ag2CrO4 = 1,0x10^-12)\nIn welcher Antwort sind das zuerst ausfallende Salz und die [Ag+] bei Beginn seiner Fällung richtig angegeben?",
         "fr": "À 25 °C, on ajoute goutte à goutte une solution de AgNO3 (variation de volume négligeable) à une solution contenant les ions Cl- et CrO4 2-, chacun à 0,010 M.\n(Ksp de AgCl = 1,0x10^-10 ; Ksp de Ag2CrO4 = 1,0x10^-12)\nQuelle proposition donne correctement le sel qui précipite en premier et la [Ag+] au début de sa précipitation ?",
         "ru": "При 25 °C к раствору, содержащему ионы Cl- и CrO4 2- (каждый по 0,010 M), по каплям добавляют раствор AgNO3 (изменением объёма пренебречь).\n(Ksp AgCl = 1,0x10^-10; Ksp Ag2CrO4 = 1,0x10^-12)\nВ каком варианте правильно указаны соль, осаждающаяся первой, и [Ag+] в момент начала её осаждения?",
         "ar": "عند 25 °C يُضاف محلول AgNO3 قطرة قطرة (مع إهمال تغيّر الحجم) إلى محلول يحتوي على أيونات Cl- و CrO4 2- بتركيز 0.010 M لكلٍّ منهما.\n(Ksp لـ AgCl = 1.0x10^-10؛ Ksp لـ Ag2CrO4 = 1.0x10^-12)\nأي الخيارات الآتية يذكر بصورة صحيحة الملح الذي يترسب أولًا وقيمة [Ag+] عند بدء ترسبه؟",
         "zh": "25 °C时，向含Cl- 和CrO4 2- 各0.010 M的溶液中逐滴加入AgNO3溶液（忽略体积变化）。\n(AgCl的Ksp = 1.0x10^-10；Ag2CrO4的Ksp = 1.0x10^-12)\n下列哪一项正确给出了最先沉淀的盐及其开始沉淀时的[Ag+]？",
-        "ku": "Li 25 °C, li çareseriyeke ku îyonên Cl- û CrO4 2- her yek bi tîrbûna 0,010 M dihewîne, çareseriya AgNO3 dilop bi dilop tê zêdekirin (guherîna qebareyê nayê hesibandin).\n(Ji bo AgCl Ksp = 1,0x10^-10; ji bo Ag2CrO4 Ksp = 1,0x10^-12)\nLi gorî vê yekê, xwêya ku pêşî dinişe û [Ag+] di kêliya ku niştina wê dest pê dike de di kîjan vebijarkê de rast hatine dayîn?"
+        "ku": "Li 25 °C, li çareseriyeke ku îyonên Cl- û CrO4 2- her yek bi tîrbûna 0,010 M dihewîne, çareseriya AgNO3 dilop bi dilop tê zêdekirin (guherîna qebareyê nayê hesibandin).\n(Ji bo AgCl Ksp = 1,0x10^-10; ji bo Ag2CrO4 Ksp = 1,0x10^-12)\nXwêya ku pêşî dinişe û [Ag+] di kêliya ku niştina wê dest pê dike de di kîjan vebijarkê de rast hatine dayîn?"
       },
       "options": [
         {
@@ -1666,14 +1845,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin09",
       "stem": {
-        "tr": "XY tipi az çözünen bir tuzun çözünürlük çarpımı 20 °C'de 1,0x10^-10, 40 °C'de ise 4,0x10^-10 olarak ölçülmüştür. Buna göre;\nI. XY tuzunun suda çözünmesi endotermiktir.\nII. 40 °C'deki molar çözünürlük, 20 °C'dekinin 4 katıdır.\nIII. 40 °C'de hazırlanan doymuş XY çözeltisi 20 °C'ye soğutulursa XY katısı çöker.\nyargılarından hangileri doğrudur?",
-        "en": "The solubility product of a sparingly soluble XY-type salt is measured as 1.0x10^-10 at 20 °C and 4.0x10^-10 at 40 °C. Accordingly:\nI. The dissolution of XY in water is endothermic.\nII. The molar solubility at 40 °C is 4 times that at 20 °C.\nIII. If a saturated XY solution prepared at 40 °C is cooled to 20 °C, solid XY precipitates.\nWhich of the statements are correct?",
-        "de": "Das Löslichkeitsprodukt eines schwerlöslichen Salzes vom Typ XY wird bei 20 °C zu 1,0x10^-10 und bei 40 °C zu 4,0x10^-10 bestimmt. Demnach:\nI. Das Lösen von XY in Wasser ist endotherm.\nII. Die molare Löslichkeit bei 40 °C ist 4-mal so groß wie bei 20 °C.\nIII. Wird eine bei 40 °C gesättigte XY-Lösung auf 20 °C abgekühlt, fällt festes XY aus.\nWelche Aussagen sind richtig?",
-        "fr": "Le produit de solubilité d'un sel peu soluble de type XY vaut 1,0x10^-10 à 20 °C et 4,0x10^-10 à 40 °C. Par conséquent :\nI. La dissolution de XY dans l'eau est endothermique.\nII. La solubilité molaire à 40 °C est 4 fois celle à 20 °C.\nIII. Si une solution saturée de XY préparée à 40 °C est refroidie à 20 °C, du XY solide précipite.\nQuelles affirmations sont correctes ?",
-        "ru": "Произведение растворимости малорастворимой соли типа XY равно 1,0x10^-10 при 20 °C и 4,0x10^-10 при 40 °C. Даны утверждения:\nI. Растворение XY в воде — эндотермический процесс.\nII. Молярная растворимость при 40 °C в 4 раза больше, чем при 20 °C.\nIII. Если насыщенный при 40 °C раствор XY охладить до 20 °C, выпадет осадок XY.\nКакие из утверждений верны?",
-        "ar": "قيست قيمة حاصل الإذابة لملح قليل الذوبان من النوع XY فكانت 1.0x10^-10 عند 20 °C و 4.0x10^-10 عند 40 °C. وبناءً على ذلك:\nI. ذوبان XY في الماء ماص للحرارة.\nII. الذائبية المولارية عند 40 °C تساوي 4 أمثالها عند 20 °C.\nIII. إذا بُرِّد محلول XY مشبع مُحضَّر عند 40 °C إلى 20 °C يترسب XY صلب.\nأيّ العبارات صحيحة؟",
-        "zh": "某XY型难溶盐的溶度积在20 °C时为1.0x10^-10，在40 °C时为4.0x10^-10。据此：\nI. XY在水中的溶解是吸热的。\nII. 40 °C时的摩尔溶解度是20 °C时的4倍。\nIII. 将40 °C时配制的XY饱和溶液冷却到20 °C，会析出XY固体。\n哪些说法正确？",
-        "ku": "Hasila helbûniyê ya xwêyeke kêm-helbar a cureyê XY li 20 °C 1,0x10^-10 û li 40 °C 4,0x10^-10 hatiye pîvan. Li gorî vê yekê;\nI. Helbûna xwêya XY di avê de endotermîk e.\nII. Helbûniya molar li 40 °C 4 qatê ya li 20 °C ye.\nIII. Heke çareseriya têr a XY ya li 40 °C hatî amadekirin heta 20 °C were sarkirin, XY-ya hişk dinişe.\nkîjan ji van gotinan rast in?"
+        "tr": "Şekildeki grafik, XY tipi az çözünen bir tuzun saf sudaki molar çözünürlüğünün (s) sıcaklıkla değişimini göstermektedir. I. XY tuzunun suda çözünmesi endotermiktir. II. 40 °C'de XY'nin Kçç değeri 2,0x10^-10'dur. III. 40 °C'de hazırlanan doymuş XY çözeltisi 20 °C'ye soğutulursa XY katısı çöker. yargılarından hangileri doğrudur?",
+        "en": "The graph shows how the molar solubility (s) of a sparingly soluble XY-type salt in pure water changes with temperature. I. The dissolution of XY in water is endothermic. II. At 40 °C, Ksp of XY is 2.0x10^-10. III. If a saturated XY solution prepared at 40 °C is cooled to 20 °C, solid XY precipitates. Which of these statements are correct?",
+        "de": "Das Diagramm zeigt die Temperaturabhängigkeit der molaren Löslichkeit (s) eines schwerlöslichen Salzes vom Typ XY in reinem Wasser. I. Das Lösen von XY in Wasser ist endotherm. II. Bei 40 °C beträgt Ksp von XY 2,0x10^-10. III. Wird eine bei 40 °C hergestellte gesättigte XY-Lösung auf 20 °C abgekühlt, fällt festes XY aus. Welche Aussagen sind richtig?",
+        "fr": "Le graphique montre l'évolution, en fonction de la température, de la solubilité molaire (s) dans l'eau pure d'un sel peu soluble de type XY. I. La dissolution de XY dans l'eau est endothermique. II. À 40 °C, le Ksp de XY vaut 2,0x10^-10. III. Si une solution saturée de XY préparée à 40 °C est refroidie à 20 °C, du XY solide précipite. Lesquelles de ces affirmations sont exactes ?",
+        "ru": "На графике показана зависимость молярной растворимости (s) малорастворимой соли типа XY в чистой воде от температуры. I. Растворение XY в воде эндотермично. II. При 40 °C Ksp для XY равно 2,0x10^-10. III. Если насыщенный при 40 °C раствор XY охладить до 20 °C, выпадет твёрдый XY. Какие утверждения верны?",
+        "ar": "يبيّن الرسم البياني تغيّر الذائبية المولارية (s) لملح قليل الذوبان من النوع XY في الماء النقي مع درجة الحرارة. I. ذوبان XY في الماء ماص للحرارة. II. قيمة Ksp لـ XY عند 40 °C هي 2.0x10^-10. III. إذا بُرّد محلول XY مشبع حُضّر عند 40 °C إلى 20 °C يترسب XY الصلب. أيّ هذه العبارات صحيحة؟",
+        "zh": "图为某 XY 型难溶盐在纯水中的摩尔溶解度 (s) 随温度的变化。I. XY 在水中的溶解是吸热的。II. 40 °C 时 XY 的 Ksp 为 2.0x10^-10。III. 将 40 °C 时配制的 XY 饱和溶液冷却到 20 °C，会析出固体 XY。以上说法中哪些正确？",
+        "ku": "Grafîk guherîna helbûniya molar (s) ya xwêyeke kêm-helbar a cureyê XY di ava paqij de li gorî germahiyê nîşan dide. I. Helbûna XY di avê de endotermîk e. II. Li 40 °C Ksp ya XY 2,0x10^-10 e. III. Heke çareseriya têr a XY ya li 40 °C amadekirî heta 20 °C bê sarkirin, XY-ya hişk dinişe. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1729,27 +1908,98 @@ export const unit20: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "I doğrudur: sıcaklık artınca Kçç büyüdüğüne göre denge ısıtmayla iyonlar yönüne kaymaktadır, yani çözünme endotermiktir. II yanlıştır: XY tipinde s = √Kçç'dir; s(20 °C) = 1,0x10^-5 M, s(40 °C) = 2,0x10^-5 M olduğundan çözünürlük 4 değil 2 katına çıkar (Kçç'deki 4 katlık artış s'ye doğrudan aktarılmaz). III doğrudur: 40 °C'deki doymuş çözeltide Qi = 4,0x10^-10'dur; 20 °C'de bu değer Kçç'den (1,0x10^-10) büyük olduğundan fazla tuz çöker.",
-        "en": "I is true: since Ksp increases with temperature, heating shifts the equilibrium toward the ions, i.e. dissolution is endothermic. II is false: for an XY salt s = √Ksp; s(20 °C) = 1.0x10^-5 M and s(40 °C) = 2.0x10^-5 M, so the solubility doubles rather than quadrupling (the fourfold increase in Ksp is not carried over directly to s). III is true: in the solution saturated at 40 °C, Qi = 4.0x10^-10; at 20 °C this exceeds Ksp (1.0x10^-10), so the excess salt precipitates.",
-        "de": "I ist richtig: Da Ksp mit der Temperatur steigt, verschiebt Erwärmen das Gleichgewicht zu den Ionen, das Lösen ist also endotherm. II ist falsch: Für ein XY-Salz gilt s = √Ksp; s(20 °C) = 1,0x10^-5 M, s(40 °C) = 2,0x10^-5 M, die Löslichkeit verdoppelt sich also nur (die Vervierfachung von Ksp überträgt sich nicht direkt auf s). III ist richtig: In der bei 40 °C gesättigten Lösung ist Qi = 4,0x10^-10; bei 20 °C ist das größer als Ksp (1,0x10^-10), daher fällt das überschüssige Salz aus.",
-        "fr": "I est vraie : Ksp augmentant avec la température, le chauffage déplace l'équilibre vers les ions, la dissolution est donc endothermique. II est fausse : pour un sel XY, s = √Ksp ; s(20 °C) = 1,0x10^-5 M et s(40 °C) = 2,0x10^-5 M, la solubilité double au lieu de quadrupler (le quadruplement de Ksp ne se reporte pas directement sur s). III est vraie : dans la solution saturée à 40 °C, Qi = 4,0x10^-10 ; à 20 °C cette valeur dépasse Ksp (1,0x10^-10), donc l'excès de sel précipite.",
-        "ru": "I верно: раз Ksp растёт с температурой, нагревание смещает равновесие в сторону ионов, т. е. растворение эндотермично. II неверно: для соли XY s = √Ksp; s(20 °C) = 1,0x10^-5 M, s(40 °C) = 2,0x10^-5 M, т. е. растворимость увеличивается в 2, а не в 4 раза (четырёхкратный рост Ksp не переносится на s напрямую). III верно: в растворе, насыщенном при 40 °C, Qi = 4,0x10^-10; при 20 °C это больше Ksp (1,0x10^-10), поэтому избыток соли выпадает в осадок.",
-        "ar": "العبارة I صحيحة: بما أن Ksp يزداد بارتفاع درجة الحرارة فإن التسخين يزيح الاتزان نحو الأيونات، أي أن الذوبان ماص للحرارة. العبارة II خاطئة: في ملح XY تكون s = √Ksp؛ s(20 °C) = 1.0x10^-5 M و s(40 °C) = 2.0x10^-5 M، فالذائبية تصبح ضعفين لا أربعة أضعاف (الزيادة الرباعية في Ksp لا تنتقل مباشرة إلى s). العبارة III صحيحة: في المحلول المشبع عند 40 °C يكون Qi = 4.0x10^-10، وهذه القيمة عند 20 °C أكبر من Ksp (1.0x10^-10) فيترسب الملح الزائد.",
-        "zh": "I正确：Ksp随温度升高而增大，说明升温使平衡向离子方向移动，即溶解吸热。II错误：XY型盐s = √Ksp；s(20 °C) = 1.0x10^-5 M，s(40 °C) = 2.0x10^-5 M，溶解度只增大到2倍而不是4倍(Ksp增大4倍不会直接转移到s上)。III正确：40 °C饱和溶液中Qi = 4.0x10^-10，在20 °C时大于Ksp(1.0x10^-10)，多余的盐析出。",
-        "ku": "I rast e: ji ber ku Ksp bi bilindbûna germahiyê mezin dibe, germkirin hevsengiyê ber bi îyonan ve dikişîne, ango helbûn endotermîk e. II şaş e: di cureyê XY de s = √Ksp e; s(20 °C) = 1,0x10^-5 M û s(40 °C) = 2,0x10^-5 M e, ji ber vê yekê helbûnî ne 4 qat, lê 2 qat dibe (zêdebûna 4 qatî ya Ksp rasterast derbasî s nabe). III rast e: di çareseriya têr a li 40 °C de Qi = 4,0x10^-10 e; li 20 °C ev nirx ji Ksp (1,0x10^-10) mezintir e, ji ber vê yekê xwêya zêde dinişe."
+        "tr": "Grafikten s(20 °C) = 1,0x10^-5 M ve s(40 °C) = 2,0x10^-5 M okunur. I doğru: sıcaklık arttıkça çözünürlük ve dolayısıyla Kçç artmaktadır; ısıtma çözünmeyi kolaylaştırdığına göre çözünme endotermiktir. II yanlış: XY tipinde Kçç = s^2'dir; 40 °C'de Kçç = (2,0x10^-5)^2 = 4,0x10^-10'dur. s'nin 2 katına çıkması Kçç'nin 4 katına çıkması demektir; 2,0x10^-10 değeri s ile Kçç'yi doğrusal sanmaktan gelir. III doğru: 20 °C'de Kçç = (1,0x10^-5)^2 = 1,0x10^-10'dur; 40 °C'deki doymuş çözeltinin iyon çarpımı (4,0x10^-10) 20 °C'de Kçç'den büyük olduğundan fazla XY çöker.",
+        "en": "From the graph, s(20 °C) = 1.0x10^-5 M and s(40 °C) = 2.0x10^-5 M. I is correct: solubility, and hence Ksp, increases with temperature; since heating favours dissolution, the dissolution is endothermic. II is incorrect: for an XY salt Ksp = s^2, so at 40 °C Ksp = (2.0x10^-5)^2 = 4.0x10^-10. Doubling s quadruples Ksp; 2.0x10^-10 comes from treating s and Ksp as proportional. III is correct: at 20 °C Ksp = (1.0x10^-5)^2 = 1.0x10^-10; the ion product of the solution saturated at 40 °C (4.0x10^-10) exceeds this, so excess XY precipitates.",
+        "de": "Aus dem Diagramm: s(20 °C) = 1,0x10^-5 M und s(40 °C) = 2,0x10^-5 M. I ist richtig: Löslichkeit und damit Ksp steigen mit der Temperatur; da Erwärmen das Lösen begünstigt, ist es endotherm. II ist falsch: Für ein XY-Salz gilt Ksp = s^2, bei 40 °C also Ksp = (2,0x10^-5)^2 = 4,0x10^-10. Verdoppelt sich s, vervierfacht sich Ksp; 2,0x10^-10 entsteht, wenn man s und Ksp für proportional hält. III ist richtig: Bei 20 °C ist Ksp = (1,0x10^-5)^2 = 1,0x10^-10; das Ionenprodukt der bei 40 °C gesättigten Lösung (4,0x10^-10) ist größer, daher fällt überschüssiges XY aus.",
+        "fr": "D'après le graphique, s(20 °C) = 1,0x10^-5 M et s(40 °C) = 2,0x10^-5 M. I est exacte : la solubilité, donc Ksp, augmente avec la température ; le chauffage favorisant la dissolution, celle-ci est endothermique. II est fausse : pour un sel XY, Ksp = s^2, donc à 40 °C Ksp = (2,0x10^-5)^2 = 4,0x10^-10. Doubler s quadruple Ksp ; 2,0x10^-10 vient du fait de croire s et Ksp proportionnels. III est exacte : à 20 °C, Ksp = (1,0x10^-5)^2 = 1,0x10^-10 ; le produit ionique de la solution saturée à 40 °C (4,0x10^-10) est supérieur, donc l'excès de XY précipite.",
+        "ru": "По графику s(20 °C) = 1,0x10^-5 M и s(40 °C) = 2,0x10^-5 M. I верно: растворимость, а значит и Ksp, растёт с температурой; раз нагревание благоприятствует растворению, оно эндотермично. II неверно: для соли XY Ksp = s^2, при 40 °C Ksp = (2,0x10^-5)^2 = 4,0x10^-10. Удвоение s увеличивает Ksp в 4 раза; 2,0x10^-10 получается, если считать s и Ksp пропорциональными. III верно: при 20 °C Ksp = (1,0x10^-5)^2 = 1,0x10^-10; ионное произведение раствора, насыщенного при 40 °C (4,0x10^-10), больше, поэтому избыток XY выпадает в осадок.",
+        "ar": "من الرسم: s(20 °C) = 1.0x10^-5 M وs(40 °C) = 2.0x10^-5 M. I صحيحة: تزداد الذائبية ومن ثم Ksp بارتفاع درجة الحرارة، وبما أن التسخين يساعد على الذوبان فالذوبان ماص للحرارة. II خاطئة: في ملح XY يكون Ksp = s^2، فعند 40 °C يكون Ksp = (2.0x10^-5)^2 = 4.0x10^-10. مضاعفة s تضاعف Ksp أربع مرات، والقيمة 2.0x10^-10 تأتي من اعتبار s وKsp متناسبين. III صحيحة: عند 20 °C يكون Ksp = (1.0x10^-5)^2 = 1.0x10^-10، والحاصل الأيوني للمحلول المشبع عند 40 °C (4.0x10^-10) أكبر منه، لذا يترسب XY الزائد.",
+        "zh": "由图读出 s(20 °C) = 1.0x10^-5 M，s(40 °C) = 2.0x10^-5 M。I 正确：溶解度（从而 Ksp）随温度升高而增大，升温有利于溶解，所以溶解吸热。II 错误：XY 型盐 Ksp = s^2，40 °C 时 Ksp = (2.0x10^-5)^2 = 4.0x10^-10。s 加倍则 Ksp 变为 4 倍；2.0x10^-10 来自把 s 与 Ksp 当成正比。III 正确：20 °C 时 Ksp = (1.0x10^-5)^2 = 1.0x10^-10；40 °C 饱和溶液的离子积 (4.0x10^-10) 大于它，所以多余的 XY 析出。",
+        "ku": "Ji grafîkê s(20 °C) = 1,0x10^-5 M û s(40 °C) = 2,0x10^-5 M tê xwendin. I rast e: bi bilindbûna germahiyê helbûnî û ji ber vê yekê Ksp zêde dibe; madem germkirin helbûnê hêsan dike, helbûn endotermîk e. II şaş e: ji bo xwêya XY Ksp = s^2 e, li 40 °C Ksp = (2,0x10^-5)^2 = 4,0x10^-10 e. Ducarbûna s Ksp-ê çar qat dike; 2,0x10^-10 ji hesibandina s û Ksp wekî rêjeyî tê. III rast e: li 20 °C Ksp = (1,0x10^-5)^2 = 1,0x10^-10 e; hasila îyonan a çareseriya ku li 40 °C têr bûye (4,0x10^-10) jê mezintir e, ji ber vê yekê XY-ya zêde dinişe."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Sıcaklık (°C)",
+          "en": "Temperature (°C)",
+          "de": "Temperatur (°C)",
+          "fr": "Température (°C)",
+          "ru": "Температура (°C)",
+          "ar": "درجة الحرارة (°C)",
+          "zh": "温度 (°C)",
+          "ku": "Germahî (°C)"
+        },
+        "yLabel": "s (10⁻⁵ mol/L)",
+        "xMax": 70,
+        "yMax": 3.6,
+        "xTicks": [
+          20,
+          40,
+          60
+        ],
+        "yTicks": [
+          1,
+          2,
+          3
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                10,
+                0.72
+              ],
+              [
+                20,
+                1
+              ],
+              [
+                30,
+                1.45
+              ],
+              [
+                40,
+                2
+              ],
+              [
+                50,
+                2.6
+              ],
+              [
+                60,
+                3.2
+              ]
+            ],
+            "label": "XY"
+          }
+        ],
+        "markers": [
+          {
+            "x": 20,
+            "y": 1,
+            "label": "",
+            "guides": true
+          },
+          {
+            "x": 40,
+            "y": 2,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
       "id": "u20-twin10",
       "stem": {
-        "tr": "25 °C'de çözünürlük çarpımları verilen az çözünen üç tuz şunlardır:\nI. MA: Kçç = 1,0x10^-10\nII. MA2: Kçç = 4,0x10^-12\nIII. NB: Kçç = 4,0x10^-10\nBu tuzların saf sudaki molar çözünürlüklerinin karşılaştırılması aşağıdakilerden hangisinde doğru verilmiştir?",
-        "en": "Three sparingly soluble salts with the following solubility products at 25 °C are given:\nI. MA: Ksp = 1.0x10^-10\nII. MA2: Ksp = 4.0x10^-12\nIII. NB: Ksp = 4.0x10^-10\nWhich option correctly compares the molar solubilities of these salts in pure water?",
-        "de": "Gegeben sind drei schwerlösliche Salze mit folgenden Löslichkeitsprodukten bei 25 °C:\nI. MA: Ksp = 1,0x10^-10\nII. MA2: Ksp = 4,0x10^-12\nIII. NB: Ksp = 4,0x10^-10\nIn welcher Antwort ist der Vergleich der molaren Löslichkeiten dieser Salze in reinem Wasser richtig angegeben?",
-        "fr": "On donne trois sels peu solubles dont les produits de solubilité à 25 °C sont :\nI. MA : Ksp = 1,0x10^-10\nII. MA2 : Ksp = 4,0x10^-12\nIII. NB : Ksp = 4,0x10^-10\nQuelle proposition compare correctement les solubilités molaires de ces sels dans l'eau pure ?",
-        "ru": "Даны три малорастворимые соли и их произведения растворимости при 25 °C:\nI. MA: Ksp = 1,0x10^-10\nII. MA2: Ksp = 4,0x10^-12\nIII. NB: Ksp = 4,0x10^-10\nВ каком варианте правильно сравнены молярные растворимости этих солей в чистой воде?",
-        "ar": "فيما يلي ثلاثة أملاح قليلة الذوبان وقيم حاصل الإذابة لها عند 25 °C:\nI. MA: Ksp = 1.0x10^-10\nII. MA2: Ksp = 4.0x10^-12\nIII. NB: Ksp = 4.0x10^-10\nفي أي خيار تكون مقارنة الذائبيات المولارية لهذه الأملاح في الماء النقي صحيحة؟",
-        "zh": "25 °C时三种难溶盐的溶度积如下：\nI. MA：Ksp = 1.0x10^-10\nII. MA2：Ksp = 4.0x10^-12\nIII. NB：Ksp = 4.0x10^-10\n下列哪一项正确比较了这些盐在纯水中的摩尔溶解度？",
-        "ku": "Li 25 °C hasila helbûniyê ya sê xwêyên kêm-helbar ev in:\nI. MA: Ksp = 1,0x10^-10\nII. MA2: Ksp = 4,0x10^-12\nIII. NB: Ksp = 4,0x10^-10\nBerhevkirina helbûniyên molar ên van xwêyan di ava paqij de di kîjan vebijarkê de rast hatiye dayîn?"
+        "tr": "Tabloda 25 °C'de az çözünen üç tuzun çözünürlük çarpımları (Kçç) verilmiştir. Bu tuzların saf sudaki molar çözünürlüklerinin karşılaştırılması aşağıdakilerden hangisinde doğru verilmiştir?",
+        "en": "The table gives the solubility products (Ksp) of three sparingly soluble salts at 25 °C. Which option correctly compares their molar solubilities in pure water?",
+        "de": "Die Tabelle gibt die Löslichkeitsprodukte (Ksp) dreier schwerlöslicher Salze bei 25 °C an. In welcher Antwort sind ihre molaren Löslichkeiten in reinem Wasser richtig verglichen?",
+        "fr": "Le tableau donne les produits de solubilité (Ksp) de trois sels peu solubles à 25 °C. Quelle proposition compare correctement leurs solubilités molaires dans l'eau pure ?",
+        "ru": "В таблице приведены произведения растворимости (Ksp) трёх малорастворимых солей при 25 °C. В каком варианте правильно сравнены их молярные растворимости в чистой воде?",
+        "ar": "يعطي الجدول حواصل الإذابة (Ksp) لثلاثة أملاح قليلة الذوبان عند 25 °C. في أيّ خيار تُقارَن ذائبياتها المولارية في الماء النقي بشكل صحيح؟",
+        "zh": "表中给出了 25 °C 时三种难溶盐的溶度积 (Ksp)。下列哪一项正确比较了它们在纯水中的摩尔溶解度？",
+        "ku": "Tablo hasilên helbûniyê (Ksp) yên sê xwêyên kêm-helbar li 25 °C dide. Di kîjan vebijarkê de helbûniyên wan ên molar di ava paqij de rast hatine berhevkirin?"
       },
       "options": [
         {
@@ -1813,19 +2063,89 @@ export const unit20: ChemistryUnitSeedData = {
         "ar": "بما أن أنواع الأملاح مختلفة يجب حساب s أولًا. I (MA، 1:1): s = √(1.0x10^-10) = 1.0x10^-5 M. II (MA2، 1:2): 4s^3 = 4.0x10^-12 → s = 1.0x10^-4 M. III (NB، 1:1): s = √(4.0x10^-10) = 2.0x10^-5 M. الترتيب هو I < III < II. أما ترتيب قيم Ksp وحدها فيعطي II < I < III، وهو الخطأ الشائع الذي يغفل أن MA2 ذا Ksp الأصغر هو في الحقيقة الأكثر ذوبانًا.",
         "zh": "盐的类型不同，必须先计算s。I(MA，1:1)：s = √(1.0x10^-10) = 1.0x10^-5 M。II(MA2，1:2)：4s^3 = 4.0x10^-12 → s = 1.0x10^-4 M。III(NB，1:1)：s = √(4.0x10^-10) = 2.0x10^-5 M。顺序为I < III < II。只按Ksp排序会得到II < I < III，这是忽视了Ksp最小的MA2实际上溶解度最大的典型错误。",
         "ku": "Ji ber ku cureyên xwêyan cuda ne, divê pêşî s were hesibandin. I (MA, 1:1): s = √(1,0x10^-10) = 1,0x10^-5 M. II (MA2, 1:2): 4s^3 = 4,0x10^-12 → s = 1,0x10^-4 M. III (NB, 1:1): s = √(4,0x10^-10) = 2,0x10^-5 M. Rêz I < III < II ye. Heke tenê nirxên Ksp werin rêzkirin II < I < III tê dîtin; ev xeletiya asayî ye ku nabîne MA2, ya ku Ksp ya wê herî piçûk e, di rastiyê de xwêya herî zêde dihele ye."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          "",
+          {
+            "tr": "Tuz",
+            "en": "Salt",
+            "de": "Salz",
+            "fr": "Sel",
+            "ru": "Соль",
+            "ar": "الملح",
+            "zh": "盐",
+            "ku": "Xwê"
+          },
+          {
+            "tr": "Kçç",
+            "en": "Ksp",
+            "de": "Ksp",
+            "fr": "Ksp",
+            "ru": "Ksp",
+            "ar": "Ksp",
+            "zh": "Ksp",
+            "ku": "Ksp"
+          }
+        ],
+        "rows": [
+          [
+            "I",
+            "MA",
+            {
+              "tr": "1,0x10^-10",
+              "en": "1.0x10^-10",
+              "de": "1,0x10^-10",
+              "fr": "1,0x10^-10",
+              "ru": "1,0x10^-10",
+              "ar": "1.0x10^-10",
+              "zh": "1.0x10^-10",
+              "ku": "1,0x10^-10"
+            }
+          ],
+          [
+            "II",
+            "MA2",
+            {
+              "tr": "4,0x10^-12",
+              "en": "4.0x10^-12",
+              "de": "4,0x10^-12",
+              "fr": "4,0x10^-12",
+              "ru": "4,0x10^-12",
+              "ar": "4.0x10^-12",
+              "zh": "4.0x10^-12",
+              "ku": "4,0x10^-12"
+            }
+          ],
+          [
+            "III",
+            "NB",
+            {
+              "tr": "4,0x10^-10",
+              "en": "4.0x10^-10",
+              "de": "4,0x10^-10",
+              "fr": "4,0x10^-10",
+              "ru": "4,0x10^-10",
+              "ar": "4.0x10^-10",
+              "zh": "4.0x10^-10",
+              "ku": "4,0x10^-10"
+            }
+          ]
+        ]
       }
     },
     {
       "id": "u20-twin11",
       "stem": {
-        "tr": "25 °C'de az çözünen MX2 tuzunun (mol kütlesi 100 g/mol) 500 mL doymuş sulu çözeltisinde 5,0x10^-3 g MX2 çözünmüş olarak bulunmaktadır. Buna göre MX2'nin 25 °C'deki çözünürlük çarpımı (Kçç) kaçtır?",
+        "tr": "25 °C'de az çözünen MX2 tuzunun (mol kütlesi 100 g/mol) 500 mL doymuş sulu çözeltisinde 5,0x10^-3 g MX2 çözünmüş olarak bulunmaktadır. MX2'nin 25 °C'deki çözünürlük çarpımı (Kçç) kaçtır?",
         "en": "At 25 °C, 500 mL of a saturated aqueous solution of the sparingly soluble salt MX2 (molar mass 100 g/mol) contains 5.0x10^-3 g of dissolved MX2. What is the solubility product (Ksp) of MX2 at 25 °C?",
         "de": "Bei 25 °C enthalten 500 mL einer gesättigten wässrigen Lösung des schwerlöslichen Salzes MX2 (molare Masse 100 g/mol) 5,0x10^-3 g gelöstes MX2. Wie groß ist das Löslichkeitsprodukt (Ksp) von MX2 bei 25 °C?",
         "fr": "À 25 °C, 500 mL d'une solution aqueuse saturée du sel peu soluble MX2 (masse molaire 100 g/mol) contiennent 5,0x10^-3 g de MX2 dissous. Quel est le produit de solubilité (Ksp) de MX2 à 25 °C ?",
         "ru": "При 25 °C в 500 мл насыщенного водного раствора малорастворимой соли MX2 (молярная масса 100 г/моль) растворено 5,0x10^-3 г MX2. Чему равно произведение растворимости (Ksp) MX2 при 25 °C?",
         "ar": "عند 25 °C يحتوي 500 mL من المحلول المائي المشبع للملح قليل الذوبان MX2 (الكتلة المولية 100 g/mol) على 5.0x10^-3 g من MX2 الذائب. ما قيمة حاصل الإذابة (Ksp) لـ MX2 عند 25 °C؟",
         "zh": "25 °C时，难溶盐MX2(摩尔质量100 g/mol)的500 mL饱和水溶液中溶有5.0x10^-3 g MX2。25 °C时MX2的溶度积(Ksp)是多少？",
-        "ku": "Li 25 °C di 500 mL çareseriya avî ya têr a xwêya kêm-helbar MX2 (girseya molî 100 g/mol) de 5,0x10^-3 g MX2 heliyayî heye. Li gorî vê yekê, hasila helbûniyê (Ksp) ya MX2 li 25 °C çend e?"
+        "ku": "Li 25 °C di 500 mL çareseriya avî ya têr a xwêya kêm-helbar MX2 (girseya molî 100 g/mol) de 5,0x10^-3 g MX2 heliyayî heye. Hasila helbûniyê (Ksp) ya MX2 li 25 °C çend e?"
       },
       "options": [
         {
@@ -1894,14 +2214,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin12",
       "stem": {
-        "tr": "Kireçtaşı bölgelerinde CaCO3(k) + CO2(g) + H2O(s) ⇌ Ca2+(suda) + 2HCO3-(suda) dengesi önemli rol oynar. Buna göre;\nI. Yeraltı suyunda çözünmüş CO2 miktarı arttıkça CaCO3'ün çözünürlüğü artar.\nII. Mağara tavanından damlayan sudan CO2 gazının ayrılması CaCO3'ün çökmesine ve sarkıtların oluşmasına yol açar.\nIII. Diş minesinin asidik yiyecek ve içeceklerle aşınması, az çözünen bazik bir tuzun çözünürlüğünün asitli ortamda artmasına örnektir.\nyargılarından hangileri doğrudur?",
-        "en": "In limestone regions the equilibrium CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) plays an important role. Accordingly:\nI. As the amount of dissolved CO2 in groundwater increases, the solubility of CaCO3 increases.\nII. The escape of CO2 gas from water dripping from a cave ceiling causes CaCO3 to precipitate and stalactites to form.\nIII. The erosion of tooth enamel by acidic foods and drinks is an example of the solubility of a sparingly soluble basic salt increasing in an acidic medium.\nWhich of the statements are correct?",
-        "de": "In Kalksteingebieten spielt das Gleichgewicht CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) eine wichtige Rolle. Demnach:\nI. Je mehr CO2 im Grundwasser gelöst ist, desto größer ist die Löslichkeit von CaCO3.\nII. Das Entweichen von CO2 aus Wasser, das von einer Höhlendecke tropft, führt zur Fällung von CaCO3 und zur Bildung von Stalaktiten.\nIII. Die Schädigung des Zahnschmelzes durch saure Speisen und Getränke ist ein Beispiel dafür, dass die Löslichkeit eines schwerlöslichen basischen Salzes in saurem Milieu steigt.\nWelche Aussagen sind richtig?",
-        "fr": "Dans les régions calcaires, l'équilibre CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) joue un rôle important. Par conséquent :\nI. Plus la quantité de CO2 dissous dans l'eau souterraine augmente, plus la solubilité de CaCO3 augmente.\nII. Le départ du CO2 gazeux de l'eau qui goutte du plafond d'une grotte provoque la précipitation de CaCO3 et la formation de stalactites.\nIII. L'érosion de l'émail dentaire par les aliments et boissons acides est un exemple d'augmentation, en milieu acide, de la solubilité d'un sel basique peu soluble.\nQuelles affirmations sont correctes ?",
+        "tr": "Kireçtaşı bölgelerinde CaCO3(k) + CO2(g) + H2O(s) ⇌ Ca2+(suda) + 2HCO3-(suda) dengesi önemli rol oynar.\nI. Yeraltı suyunda çözünmüş CO2 miktarı arttıkça CaCO3'ün çözünürlüğü artar.\nII. Mağara tavanından damlayan sudan CO2 gazının ayrılması CaCO3'ün çökmesine ve sarkıtların oluşmasına yol açar.\nIII. Diş minesinin asidik yiyecek ve içeceklerle aşınması, az çözünen bazik bir tuzun çözünürlüğünün asitli ortamda artmasına örnektir.\nyargılarından hangileri doğrudur?",
+        "en": "In limestone regions the equilibrium CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) plays an important role.\nI. As the amount of dissolved CO2 in groundwater increases, the solubility of CaCO3 increases.\nII. The escape of CO2 gas from water dripping from a cave ceiling causes CaCO3 to precipitate and stalactites to form.\nIII. The erosion of tooth enamel by acidic foods and drinks is an example of the solubility of a sparingly soluble basic salt increasing in an acidic medium.\nWhich of the statements are correct?",
+        "de": "In Kalksteingebieten spielt das Gleichgewicht CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) eine wichtige Rolle.\nI. Je mehr CO2 im Grundwasser gelöst ist, desto größer ist die Löslichkeit von CaCO3.\nII. Das Entweichen von CO2 aus Wasser, das von einer Höhlendecke tropft, führt zur Fällung von CaCO3 und zur Bildung von Stalaktiten.\nIII. Die Schädigung des Zahnschmelzes durch saure Speisen und Getränke ist ein Beispiel dafür, dass die Löslichkeit eines schwerlöslichen basischen Salzes in saurem Milieu steigt.\nWelche Aussagen sind richtig?",
+        "fr": "Dans les régions calcaires, l'équilibre CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) joue un rôle important.\nI. Plus la quantité de CO2 dissous dans l'eau souterraine augmente, plus la solubilité de CaCO3 augmente.\nII. Le départ du CO2 gazeux de l'eau qui goutte du plafond d'une grotte provoque la précipitation de CaCO3 et la formation de stalactites.\nIII. L'érosion de l'émail dentaire par les aliments et boissons acides est un exemple d'augmentation, en milieu acide, de la solubilité d'un sel basique peu soluble.\nQuelles affirmations sont correctes ?",
         "ru": "В известняковых районах важную роль играет равновесие CaCO3(тв) + CO2(г) + H2O(ж) ⇌ Ca2+(р-р) + 2HCO3-(р-р). Даны утверждения:\nI. С увеличением количества растворённого в подземной воде CO2 растворимость CaCO3 возрастает.\nII. Выделение газа CO2 из воды, капающей с потолка пещеры, вызывает осаждение CaCO3 и образование сталактитов.\nIII. Разрушение зубной эмали кислыми продуктами и напитками — пример увеличения растворимости малорастворимой основной соли в кислой среде.\nКакие из утверждений верны?",
-        "ar": "في المناطق الكلسية يؤدي الاتزان CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) دورًا مهمًّا. وبناءً على ذلك:\nI. كلما زادت كمية CO2 الذائبة في المياه الجوفية زادت ذائبية CaCO3.\nII. يؤدي تصاعد غاز CO2 من الماء المتساقط من سقف الكهف إلى ترسب CaCO3 وتكوّن الهوابط.\nIII. تآكل مينا الأسنان بفعل الأطعمة والمشروبات الحمضية مثال على ازدياد ذائبية ملح قاعدي قليل الذوبان في الوسط الحمضي.\nأيّ العبارات صحيحة؟",
-        "zh": "石灰岩地区中平衡CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq)起着重要作用。据此：\nI. 地下水中溶解的CO2越多，CaCO3的溶解度越大。\nII. 从洞顶滴下的水中逸出CO2气体，使CaCO3沉淀并形成钟乳石。\nIII. 酸性食物和饮料侵蚀牙釉质，是难溶碱性盐在酸性介质中溶解度增大的例子。\n哪些说法正确？",
-        "ku": "Li herêmên kevirê kilsê hevsengiya CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) roleke girîng dilîze. Li gorî vê yekê;\nI. Her ku mîqdara CO2 ya di ava binerdê de heliyayî zêde dibe, helbûniya CaCO3 zêde dibe.\nII. Derketina gaza CO2 ji ava ku ji banê şikeftê dilop dike dibe sedema niştina CaCO3 û çêbûna stalaktîtan.\nIII. Xwarina mîna diranan bi xwarin û vexwarinên asîdî mînakek e ji bo zêdebûna helbûniya xwêyeke bazî ya kêm-helbar di derdora asîdî de.\nkîjan ji van gotinan rast in?"
+        "ar": "في المناطق الكلسية يؤدي الاتزان CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) دورًا مهمًّا.\nI. كلما زادت كمية CO2 الذائبة في المياه الجوفية زادت ذائبية CaCO3.\nII. يؤدي تصاعد غاز CO2 من الماء المتساقط من سقف الكهف إلى ترسب CaCO3 وتكوّن الهوابط.\nIII. تآكل مينا الأسنان بفعل الأطعمة والمشروبات الحمضية مثال على ازدياد ذائبية ملح قاعدي قليل الذوبان في الوسط الحمضي.\nأيّ العبارات صحيحة؟",
+        "zh": "石灰岩地区中平衡CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq)起着重要作用。\nI. 地下水中溶解的CO2越多，CaCO3的溶解度越大。\nII. 从洞顶滴下的水中逸出CO2气体，使CaCO3沉淀并形成钟乳石。\nIII. 酸性食物和饮料侵蚀牙釉质，是难溶碱性盐在酸性介质中溶解度增大的例子。\n哪些说法正确？",
+        "ku": "Li herêmên kevirê kilsê hevsengiya CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) roleke girîng dilîze.\nI. Her ku mîqdara CO2 ya di ava binerdê de heliyayî zêde dibe, helbûniya CaCO3 zêde dibe.\nII. Derketina gaza CO2 ji ava ku ji banê şikeftê dilop dike dibe sedema niştina CaCO3 û çêbûna stalaktîtan.\nIII. Xwarina mîna diranan bi xwarin û vexwarinên asîdî mînakek e ji bo zêdebûna helbûniya xwêyeke bazî ya kêm-helbar di derdora asîdî de.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {

@@ -304,14 +304,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-f09",
       "fact": {
-        "tr": "Soy gazlar kararlı oktet/dublet yapısına sahip olduklarından elektron ilgisi ihmal edilecek kadar düşüktür.",
-        "en": "Since noble gases have a stable octet/duet structure, their electron affinity is negligibly low.",
-        "de": "Da Edelgase eine stabile Oktett-/Duett-Struktur haben, ist ihre Elektronenaffinität vernachlässigbar gering.",
-        "fr": "Étant donné que les gaz rares ont une structure octet/duet stable, leur affinité électronique est négligeable.",
-        "ru": "Благородные газы имеют устойчивую конфигурацию октета (у гелия — дублета), поэтому их сродство к электрону пренебрежимо мало.",
-        "ar": "لأن للغازات النبيلة ترتيباً ثمانياً/ثنائياً مستقراً، فإن ألفتها الإلكترونية منخفضة إلى حدّ يمكن إهماله.",
-        "zh": "稀有气体具有稳定的 8 电子(氦为 2 电子)结构，因此其电子亲和能小到可以忽略。",
-        "ku": "Ji ber ku avahiya gazên esîl a oktet/dublet stabîl e, eleqeya wan a elektronê ewqas kêm e ku nayê hesibandin."
+        "tr": "Soy gazların değerlik katmanları dolu (He'de dublet, diğerlerinde oktet) olduğundan elektron alma eğilimleri yok denecek kadar azdır.",
+        "en": "Because the valence shells of noble gases are full (a duet in He, an octet in the others), they have practically no tendency to gain electrons.",
+        "de": "Da die Valenzschalen der Edelgase voll besetzt sind (bei He ein Duett, sonst ein Oktett), haben sie praktisch keine Neigung, Elektronen aufzunehmen.",
+        "fr": "Comme la couche de valence des gaz rares est complète (duet pour He, octet pour les autres), ils n'ont pratiquement aucune tendance à gagner des électrons.",
+        "ru": "Валентные оболочки благородных газов заполнены (у He — дублет, у остальных — октет), поэтому у них практически нет склонности присоединять электроны.",
+        "ar": "لأن غلاف التكافؤ في الغازات النبيلة مكتمل (ثنائي في He وثماني في البقية)، فإن ميلها إلى اكتساب الإلكترونات يكاد يكون معدومًا.",
+        "zh": "稀有气体的价层已充满（He 为 2 电子，其余为 8 电子），因此几乎没有得电子的倾向。",
+        "ku": "Ji ber ku qatên valansê yên gazên esîl tije ne (di He de dublet, di yên din de oktet), meyla wan a wergirtina elektronan hema bêje tune ye."
       },
       "trap": {
         "tr": "Helyum 8 değerlik elektronuna sahip bir soy gazdır.",
@@ -535,14 +535,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-f16",
       "fact": {
-        "tr": "Toprak alkali metaller (2A) bileşiklerinde daima +2 değerlik alır.",
-        "en": "Alkaline earth metals (2A) always take a +2 valence in their compounds.",
-        "de": "Erdalkalimetalle (2A) nehmen in ihren Verbindungen immer eine Wertigkeit von +2 an.",
-        "fr": "Les métaux alcalino-terreux (2A) prennent toujours une valence +2 dans leurs composés.",
-        "ru": "Щёлочноземельные металлы (2A) в соединениях всегда проявляют степень окисления +2.",
-        "ar": "تأخذ الفلزات القلوية الترابية (2A) في مركباتها التكافؤ +2 دائماً.",
-        "zh": "碱土金属(2A 族)在化合物中总是显 +2 价。",
-        "ku": "Metalên alkalî-axî (2A) di pêkhateyên xwe de her tim valansa +2 digirin."
+        "tr": "Toprak alkali metaller (2A) iki değerlik elektronunu vererek bileşiklerinde +2 yükseltgenme basamağı alır.",
+        "en": "Alkaline earth metals (2A) give up their two valence electrons and take the +2 oxidation state in their compounds.",
+        "de": "Erdalkalimetalle (2A) geben ihre zwei Valenzelektronen ab und haben in ihren Verbindungen die Oxidationsstufe +2.",
+        "fr": "Les métaux alcalino-terreux (2A) cèdent leurs deux électrons de valence et prennent le nombre d'oxydation +2 dans leurs composés.",
+        "ru": "Щёлочноземельные металлы (2A) отдают два валентных электрона и в соединениях проявляют степень окисления +2.",
+        "ar": "تفقد الفلزات القلوية الترابية (2A) إلكتروني التكافؤ لديها فتأخذ في مركباتها عدد التأكسد +2.",
+        "zh": "碱土金属（2A 族）失去两个价电子，在化合物中显 +2 氧化态。",
+        "ku": "Metalên alkalî-axî (2A) du elektronên xwe yên valansê didin û di pêkhateyên xwe de pileya oksîdasyonê ya +2 digirin."
       },
       "trap": {
         "tr": "Magnezyum bileşiklerinde +1 ve +2 kararlı iyonlarını oluşturur.",
@@ -836,14 +836,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-s01",
       "title": {
-        "tr": "Periyotta Soldan Sağa Gidildikçe Neden-Sonuç Zinciri",
-        "en": "Cause-and-Effect Chain Across a Period (Left to Right)",
-        "de": "Ursache-Wirkungs-Kette innerhalb einer Periode (von links nach rechts)",
-        "fr": "Chaîne de cause à effet dans une période (de gauche à droite)",
-        "ru": "Движение по периоду слева направо: причины и следствия",
-        "ar": "سلسلة السبب والنتيجة في الدورة (من اليسار إلى اليمين)",
-        "zh": "同一周期从左到右的因果链",
-        "ku": "Zincîra Sedem-Encamê di Periyodê de (Ji Çepê ber bi Rastê)"
+        "tr": "Periyotta Soldan Sağa Özelliklerin Değişimi",
+        "en": "Change of Properties Across a Period (Left to Right)",
+        "de": "Änderung der Eigenschaften innerhalb einer Periode (von links nach rechts)",
+        "fr": "Évolution des propriétés le long d'une période (de gauche à droite)",
+        "ru": "Изменение свойств по периоду слева направо",
+        "ar": "تغيّر الخواص عبر الدورة من اليسار إلى اليمين",
+        "zh": "同周期从左到右性质的变化",
+        "ku": "Guherîna Taybetmendiyan di Periyodê de (Ji Çepê ber bi Rastê)"
       },
       "steps": [
         {
@@ -891,14 +891,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-s02",
       "title": {
-        "tr": "Tarihsel Atom Modelleri",
-        "en": "Historical Atomic Models",
-        "de": "Historische Atommodelle",
-        "fr": "Modèles atomiques historiques",
-        "ru": "Исторические модели атома",
-        "ar": "النماذج الذرية التاريخية",
+        "tr": "Atom Modellerinin Tarihsel Gelişimi",
+        "en": "Historical Development of Atomic Models",
+        "de": "Historische Entwicklung der Atommodelle",
+        "fr": "Évolution historique des modèles atomiques",
+        "ru": "Историческое развитие моделей атома",
+        "ar": "التطور التاريخي للنماذج الذرية",
         "zh": "原子模型的历史演变",
-        "ku": "Modelên Atomê yên Dîrokî"
+        "ku": "Pêşketina Dîrokî ya Modelên Atomê"
       },
       "steps": [
         {
@@ -1058,153 +1058,362 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin01",
       "stem": {
-        "tr": "Baş grup elementi olan X'in ardışık iyonlaşma enerjileri (kJ/mol): İE1: 496, İE2: 4562, İE3: 6912'dir. Buna göre X hangi gruptadır?",
-        "en": "The successive ionization energies (kJ/mol) of the main group element X are: IE1: 496, IE2: 4562, IE3: 6912. Accordingly, in which group is X?",
-        "de": "Die aufeinanderfolgenden Ionisierungsenergien (kJ/mol) des Hauptgruppenelements X betragen: IE1: 496, IE2: 4562, IE3: 6912. In welcher Gruppe befindet sich X demnach?",
-        "fr": "Les énergies d'ionisation consécutives (kJ/mol) de l'élément principal du groupe X sont : IE1 : 496, IE2 : 4562, IE3 : 6912. Par conséquent, dans quel groupe se trouve X ?",
-        "ru": "Последовательные энергии ионизации (кДж/моль) элемента X главной подгруппы: I1 = 496, I2 = 4562, I3 = 6912. В какой группе находится X?",
-        "ar": "طاقات التأين المتتالية (kJ/mol) للعنصر X من عناصر المجموعات الرئيسية هي: IE1: 496، IE2: 4562، IE3: 6912. فإلى أيّ مجموعة ينتمي X؟",
-        "zh": "主族元素 X 的逐级电离能(kJ/mol)为：IE1：496，IE2：4562，IE3：6912。据此判断，X 位于哪一族？",
-        "ku": "Enerjiyên îyonîzasyonê yên li pey hev ên elementa koma sereke X (kJ/mol) ev in: IE1: 496, IE2: 4562, IE3: 6912. Li gorî vê, X di kîjan komê de ye?"
+        "tr": "Tabloda periyodik sistemin aynı periyodunda bulunan X, Y ve Z baş grup elementlerinin ilk dört iyonlaşma enerjisi (kJ/mol) verilmiştir.\nBu elementlerle ilgili aşağıdaki yargılardan hangileri doğrudur?\nI. X, 1A grubundadır.\nII. Y'nin bileşiklerindeki kararlı iyonu Y2+ iyonudur.\nIII. Birinci iyonlaşma enerjisi en büyük olan Y, atom numarası en büyük olan elementtir.",
+        "en": "The table gives the first four ionisation energies (kJ/mol) of the main-group elements X, Y and Z, which are in the same period of the periodic table.\nWhich of the following statements about these elements are correct?\nI. X is in group 1A.\nII. The stable ion of Y in its compounds is Y2+.\nIII. Y, which has the highest first ionisation energy, is the element with the highest atomic number.",
+        "de": "Die Tabelle zeigt die ersten vier Ionisierungsenergien (kJ/mol) der Hauptgruppenelemente X, Y und Z, die in derselben Periode des Periodensystems stehen.\nWelche der folgenden Aussagen über diese Elemente sind richtig?\nI. X steht in der Gruppe 1A.\nII. Das stabile Ion von Y in seinen Verbindungen ist Y2+.\nIII. Y, das die größte erste Ionisierungsenergie hat, ist das Element mit der größten Ordnungszahl.",
+        "fr": "Le tableau donne les quatre premières énergies d'ionisation (kJ/mol) des éléments des groupes principaux X, Y et Z, situés dans la même période du tableau périodique.\nLesquelles des affirmations suivantes sur ces éléments sont exactes ?\nI. X appartient au groupe 1A.\nII. L'ion stable de Y dans ses composés est Y2+.\nIII. Y, qui a la plus grande énergie de première ionisation, est l'élément de plus grand numéro atomique.",
+        "ru": "В таблице приведены первые четыре энергии ионизации (кДж/моль) элементов главных подгрупп X, Y и Z, находящихся в одном периоде периодической системы.\nКакие из утверждений об этих элементах верны?\nI. X находится в группе 1A.\nII. Устойчивый ион Y в его соединениях — Y2+.\nIII. Y, у которого наибольшая первая энергия ионизации, имеет наибольший порядковый номер.",
+        "ar": "يبيّن الجدول طاقات التأين الأربع الأولى (kJ/mol) للعناصر الرئيسية X وY وZ الواقعة في دورة واحدة من الجدول الدوري.\nأيّ العبارات الآتية عن هذه العناصر صحيحة؟\nI. يقع X في المجموعة 1A.\nII. الأيون المستقر لـ Y في مركباته هو Y2+.\nIII. العنصر Y صاحب أعلى طاقة تأين أولى هو العنصر ذو العدد الذري الأكبر.",
+        "zh": "表中给出了位于周期表同一周期的主族元素 X、Y、Z 的前四级电离能（kJ/mol）。\n关于这些元素，下列说法中正确的是哪些？\nI. X 位于 1A 族。\nII. Y 在化合物中的稳定离子是 Y2+。\nIII. 第一电离能最大的 Y 也是原子序数最大的元素。",
+        "ku": "Di tabloyê de çar enerjiyên îyonbûnê yên pêşîn (kJ/mol) ên elementên koma sereke X, Y û Z hatine dayîn ku di heman periyoda tabloya periyodîk de ne.\nKîjan ji van hukmên derbarê van elementan de rast in?\nI. X di koma 1A de ye.\nII. Îyona stabîl a Y di pêkhateyên wê de Y2+ e.\nIII. Y ya ku enerjiya îyonbûnê ya yekem a herî mezin heye, elementa bi hejmara atomî ya herî mezin e."
       },
       "options": [
         {
-          "tr": "1A",
-          "en": "1A",
-          "de": "1A",
-          "fr": "1A",
-          "ru": "1A",
-          "ar": "1A",
-          "zh": "1A",
-          "ku": "1A"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "2A",
-          "en": "2A",
-          "de": "2A",
-          "fr": "2A",
-          "ru": "2A",
-          "ar": "2A",
-          "zh": "2A",
-          "ku": "2A"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "3A",
-          "en": "3A",
-          "de": "3A",
-          "fr": "3A",
-          "ru": "3A",
-          "ar": "3A",
-          "zh": "3A",
-          "ku": "3A"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "4A",
-          "en": "4A",
-          "de": "4A",
-          "fr": "4A",
-          "ru": "4A",
-          "ar": "4A",
-          "zh": "4A",
-          "ku": "4A"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "8A",
-          "en": "8A",
-          "de": "8A",
-          "fr": "8A",
-          "ru": "8A",
-          "ar": "8A",
-          "zh": "8A",
-          "ku": "8A"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "İE1'den İE2'ye geçişte yaklaşık 9,2 katlık çok büyük bir sıçrama vardır (496 → 4562); İE2'den İE3'e artış ise yalnızca yaklaşık 1,5 kattır. Büyük sıçrama, ilk elektron koparıldıktan sonra soy gaz düzenine ulaşıldığını gösterir. Buna göre X'in 1 değerlik elektronu vardır ve 1A grubundadır. Sıçrama ikinci elektrondan sonra olsaydı X 2A grubunda olurdu.",
-        "en": "From IE1 to IE2 there is a very large jump of about 9.2 times (496 → 4562), whereas from IE2 to IE3 the increase is only about 1.5 times. The large jump shows that a noble-gas configuration is reached after the first electron is removed. Therefore X has 1 valence electron and is in group 1A. If the jump came after the second electron, X would be in group 2A.",
-        "de": "Von IE1 zu IE2 gibt es einen sehr großen Sprung auf etwa das 9,2-Fache (496 → 4562), von IE2 zu IE3 steigt der Wert dagegen nur auf etwa das 1,5-Fache. Der große Sprung zeigt, dass nach dem Abtrennen des ersten Elektrons die Edelgaskonfiguration erreicht ist. X hat also 1 Valenzelektron und steht in Gruppe 1A. Läge der Sprung nach dem zweiten Elektron, stünde X in Gruppe 2A.",
-        "fr": "De IE1 à IE2, il y a un très grand saut, d'un facteur d'environ 9,2 (496 → 4562), alors que de IE2 à IE3 l'augmentation n'est que d'un facteur d'environ 1,5. Ce grand saut montre que la configuration de gaz noble est atteinte après le départ du premier électron. X possède donc 1 électron de valence et appartient au groupe 1A. Si le saut se produisait après le deuxième électron, X serait dans le groupe 2A.",
-        "ru": "При переходе от I1 к I2 наблюдается очень большой скачок — примерно в 9,2 раза (496 → 4562), тогда как от I2 к I3 энергия возрастает лишь примерно в 1,5 раза. Большой скачок показывает, что после отрыва первого электрона достигается конфигурация благородного газа. Значит, у X 1 валентный электрон и он находится в группе 1A. Если бы скачок наблюдался после второго электрона, X находился бы в группе 2A.",
-        "ar": "عند الانتقال من IE1 إلى IE2 توجد قفزة كبيرة جداً بنحو 9.2 مرة (496 → 4562)، أما من IE2 إلى IE3 فالزيادة بنحو 1.5 مرة فقط. تدل القفزة الكبيرة على بلوغ ترتيب الغاز النبيل بعد نزع الإلكترون الأول. إذن للعنصر X إلكترون تكافؤ واحد، وهو في المجموعة 1A. ولو كانت القفزة بعد الإلكترون الثاني لكان X في المجموعة 2A.",
-        "zh": "从 IE1 到 IE2 有约 9.2 倍的巨大突跃(496 → 4562)，而从 IE2 到 IE3 只增大约 1.5 倍。巨大的突跃说明失去第一个电子后已达到稀有气体的电子排布。因此 X 有 1 个价电子，位于 1A 族。如果突跃出现在第二个电子之后，X 就位于 2A 族。",
-        "ku": "Di derbasbûna ji IE1 bo IE2 de bazdaneke pir mezin a bi qasî 9,2 qatan heye (496 → 4562); ji IE2 bo IE3 zêdebûn tenê bi qasî 1,5 qatan e. Bazdana mezin nîşan dide ku piştî qetandina elektrona yekem rêzkirina gaza esîl pêk hatiye. Ji ber vê yekê X xwedî 1 elektrona valansê ye û di koma 1A de ye. Heke bazdan piştî elektrona duyem bûya, X dê di koma 2A de bûya."
+        "tr": "Büyük sıçrama, soy gaz düzenine ulaşıldıktan sonra koparılan ilk elektronda görülür. X'te sıçrama İE1 ile İE2 arasındadır (496 → 4562): 1 değerlik elektronu vardır, X 1A grubundadır (I doğru). Y'de sıçrama İE2 ile İE3 arasındadır (1451 → 7733): 2 değerlik elektronu vardır, Y 2A grubundadır ve kararlı iyonu Y2+'dır (II doğru). Z'de sıçrama İE3 ile İE4 arasındadır (2745 → 11577): Z 3A grubundadır. Aynı periyotta atom numarası 1A < 2A < 3A sırasıyla arttığından atom numarası en büyük olan Z'dir; Y'nin İE1 değerinin Z'ninkinden büyük olması 2A–3A arasındaki bilinen istisnadır (III yanlış). Doğru yanıt: I ve II.",
+        "en": "A large jump appears when the first electron is removed after a noble-gas configuration has been reached. For X the jump is between IE1 and IE2 (496 → 4562): one valence electron, so X is in group 1A (I correct). For Y the jump is between IE2 and IE3 (1451 → 7733): two valence electrons, so Y is in group 2A and its stable ion is Y2+ (II correct). For Z the jump is between IE3 and IE4 (2745 → 11577): Z is in group 3A. Within a period the atomic number increases 1A < 2A < 3A, so Z has the highest atomic number; Y having a larger IE1 than Z is the well-known 2A–3A exception (III false). Answer: I and II.",
+        "de": "Ein großer Sprung tritt auf, wenn nach Erreichen der Edelgaskonfiguration das erste Elektron entfernt wird. Bei X liegt der Sprung zwischen IE1 und IE2 (496 → 4562): ein Valenzelektron, X steht in Gruppe 1A (I richtig). Bei Y liegt er zwischen IE2 und IE3 (1451 → 7733): zwei Valenzelektronen, Y steht in Gruppe 2A, sein stabiles Ion ist Y2+ (II richtig). Bei Z liegt er zwischen IE3 und IE4 (2745 → 11577): Z steht in Gruppe 3A. In einer Periode steigt die Ordnungszahl in der Reihenfolge 1A < 2A < 3A, also hat Z die größte Ordnungszahl; dass IE1 von Y größer ist als die von Z, ist die bekannte Ausnahme zwischen 2A und 3A (III falsch). Antwort: I und II.",
+        "fr": "Un grand saut apparaît lorsqu'on arrache le premier électron après avoir atteint la configuration d'un gaz rare. Pour X, le saut se situe entre EI1 et EI2 (496 → 4562) : un électron de valence, X est dans le groupe 1A (I exacte). Pour Y, il se situe entre EI2 et EI3 (1451 → 7733) : deux électrons de valence, Y est dans le groupe 2A et son ion stable est Y2+ (II exacte). Pour Z, il se situe entre EI3 et EI4 (2745 → 11577) : Z est dans le groupe 3A. Dans une période, le numéro atomique croît dans l'ordre 1A < 2A < 3A ; c'est donc Z qui a le plus grand numéro atomique. Le fait que l'EI1 de Y dépasse celle de Z est l'exception connue entre 2A et 3A (III fausse). Réponse : I et II.",
+        "ru": "Резкий скачок наблюдается при отрыве первого электрона после достижения конфигурации благородного газа. У X скачок между ЭИ1 и ЭИ2 (496 → 4562): один валентный электрон, X в группе 1A (I верно). У Y скачок между ЭИ2 и ЭИ3 (1451 → 7733): два валентных электрона, Y в группе 2A, его устойчивый ион — Y2+ (II верно). У Z скачок между ЭИ3 и ЭИ4 (2745 → 11577): Z в группе 3A. В периоде порядковый номер растёт в ряду 1A < 2A < 3A, поэтому наибольший номер у Z; то, что ЭИ1 у Y больше, чем у Z, — известное исключение между 2A и 3A (III неверно). Ответ: I и II.",
+        "ar": "تظهر القفزة الكبيرة عند نزع أول إلكترون بعد الوصول إلى ترتيب الغاز النبيل. في X تقع القفزة بين طاقة التأين الأولى والثانية (496 → 4562): له إلكترون تكافؤ واحد، فهو في المجموعة 1A (I صحيحة). وفي Y تقع بين الثانية والثالثة (1451 → 7733): له إلكترونا تكافؤ، فهو في المجموعة 2A وأيونه المستقر Y2+ (II صحيحة). وفي Z تقع بين الثالثة والرابعة (2745 → 11577): Z في المجموعة 3A. في الدورة الواحدة يزداد العدد الذري بالترتيب 1A < 2A < 3A، فالعدد الذري الأكبر لـ Z؛ أما كون طاقة التأين الأولى لـ Y أكبر من Z فهو الاستثناء المعروف بين 2A و3A (III خاطئة). الإجابة: I و II.",
+        "zh": "在达到稀有气体构型后再失去第一个电子时，电离能会出现大幅跃升。X 的跃升在 IE1 与 IE2 之间（496 → 4562）：有 1 个价电子，X 在 1A 族（I 正确）。Y 的跃升在 IE2 与 IE3 之间（1451 → 7733）：有 2 个价电子，Y 在 2A 族，稳定离子为 Y2+（II 正确）。Z 的跃升在 IE3 与 IE4 之间（2745 → 11577）：Z 在 3A 族。同一周期中原子序数按 1A < 2A < 3A 递增，所以原子序数最大的是 Z；Y 的 IE1 大于 Z 是 2A 与 3A 之间众所周知的例外（III 错误）。答案：I 和 II。",
+        "ku": "Bazdana mezin dema ku piştî gihîştina rêza gaza esîl elektrona yekem tê qetandin xuya dibe. Di X de bazdan di navbera ÎE1 û ÎE2 de ye (496 → 4562): yek elektrona valansê heye, X di koma 1A de ye (I rast e). Di Y de bazdan di navbera ÎE2 û ÎE3 de ye (1451 → 7733): du elektronên valansê hene, Y di koma 2A de ye û îyona wê ya stabîl Y2+ e (II rast e). Di Z de bazdan di navbera ÎE3 û ÎE4 de ye (2745 → 11577): Z di koma 3A de ye. Di heman periyodê de hejmara atomî bi rêza 1A < 2A < 3A zêde dibe, ji ber vê hejmara atomî ya herî mezin a Z ye; mezinbûna ÎE1 ya Y ji ya Z îstîsnaya naskirî ya di navbera 2A û 3A de ye (III şaş e). Bersiv: I û II."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Element",
+            "en": "Element",
+            "de": "Element",
+            "fr": "Élément",
+            "ru": "Элемент",
+            "ar": "العنصر",
+            "zh": "元素",
+            "ku": "Element"
+          },
+          {
+            "tr": "İE₁",
+            "en": "IE₁",
+            "de": "IE₁",
+            "fr": "EI₁",
+            "ru": "ЭИ₁",
+            "ar": "IE₁",
+            "zh": "IE₁",
+            "ku": "ÎE₁"
+          },
+          {
+            "tr": "İE₂",
+            "en": "IE₂",
+            "de": "IE₂",
+            "fr": "EI₂",
+            "ru": "ЭИ₂",
+            "ar": "IE₂",
+            "zh": "IE₂",
+            "ku": "ÎE₂"
+          },
+          {
+            "tr": "İE₃",
+            "en": "IE₃",
+            "de": "IE₃",
+            "fr": "EI₃",
+            "ru": "ЭИ₃",
+            "ar": "IE₃",
+            "zh": "IE₃",
+            "ku": "ÎE₃"
+          },
+          {
+            "tr": "İE₄",
+            "en": "IE₄",
+            "de": "IE₄",
+            "fr": "EI₄",
+            "ru": "ЭИ₄",
+            "ar": "IE₄",
+            "zh": "IE₄",
+            "ku": "ÎE₄"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            "496",
+            "4562",
+            "6912",
+            "9543"
+          ],
+          [
+            "Y",
+            "738",
+            "1451",
+            "7733",
+            "10540"
+          ],
+          [
+            "Z",
+            "578",
+            "1817",
+            "2745",
+            "11577"
+          ]
+        ],
+        "caption": {
+          "tr": "Değerler kJ/mol cinsindendir.",
+          "en": "Values are in kJ/mol.",
+          "de": "Werte in kJ/mol.",
+          "fr": "Valeurs en kJ/mol.",
+          "ru": "Значения в кДж/моль.",
+          "ar": "القيم بوحدة kJ/mol.",
+          "zh": "数值单位为 kJ/mol。",
+          "ku": "Nirx bi kJ/mol in."
+        }
       }
     },
     {
       "id": "u02-twin02",
       "stem": {
-        "tr": "Periyodik sistemde aynı periyotta yer alan elementler için soldan sağa doğru gidildikçe aşağıdakilerden hangisi genellikle azalır?",
-        "en": "For elements in the same period in the periodic table, which of the following generally decreases as you move from left to right?",
-        "de": "Welcher der folgenden Werte nimmt für Elemente derselben Periode im Periodensystem im Allgemeinen ab, wenn man sich von links nach rechts bewegt?",
-        "fr": "Pour les éléments de la même période dans le tableau périodique, lequel des éléments suivants diminue généralement à mesure que vous vous déplacez de gauche à droite ?",
-        "ru": "Какая из величин у элементов одного периода, как правило, уменьшается при движении слева направо?",
-        "ar": "أيّ مما يأتي يقل عموماً بالانتقال من اليسار إلى اليمين في الدورة الواحدة من الجدول الدوري؟",
-        "zh": "在元素周期表的同一周期中，从左到右下列哪一项通常减小？",
-        "ku": "Di tabloya periyodîk de, ji bo elementên heman periyodê, ji çepê ber bi rastê kîjan ji van bi giştî kêm dibe?"
+        "tr": "Grafikte 2. ve 3. periyotta bulunan ve atom numaraları birer artan X, Y, Z, T, Q ve R elementlerinin birinci iyonlaşma enerjileri verilmiştir.\nBu elementlerle ilgili aşağıdaki yargılardan hangileri doğrudur?\nI. Y bir soy gazdır.\nII. T'nin değerlik elektron sayısı Q'nunkinden fazladır.\nIII. Z ile R aynı periyottadır.",
+        "en": "The graph shows the first ionisation energies of the elements X, Y, Z, T, Q and R, which lie in periods 2 and 3 and whose atomic numbers increase by one from each to the next.\nWhich of the following statements about these elements are correct?\nI. Y is a noble gas.\nII. T has more valence electrons than Q.\nIII. Z and R are in the same period.",
+        "de": "Das Diagramm zeigt die ersten Ionisierungsenergien der Elemente X, Y, Z, T, Q und R aus der 2. und 3. Periode, deren Ordnungszahlen jeweils um eins zunehmen.\nWelche der folgenden Aussagen über diese Elemente sind richtig?\nI. Y ist ein Edelgas.\nII. T hat mehr Valenzelektronen als Q.\nIII. Z und R stehen in derselben Periode.",
+        "fr": "Le graphique donne les énergies de première ionisation des éléments X, Y, Z, T, Q et R, situés dans les périodes 2 et 3 et dont les numéros atomiques augmentent d'une unité de l'un au suivant.\nLesquelles des affirmations suivantes sur ces éléments sont exactes ?\nI. Y est un gaz rare.\nII. T possède plus d'électrons de valence que Q.\nIII. Z et R sont dans la même période.",
+        "ru": "На графике приведены первые энергии ионизации элементов X, Y, Z, T, Q и R 2-го и 3-го периодов, порядковые номера которых последовательно увеличиваются на единицу.\nКакие из утверждений об этих элементах верны?\nI. Y — благородный газ.\nII. У T больше валентных электронов, чем у Q.\nIII. Z и R находятся в одном периоде.",
+        "ar": "يبيّن الرسم البياني طاقات التأين الأولى للعناصر X وY وZ وT وQ وR الواقعة في الدورتين الثانية والثالثة، والتي يزداد عددها الذري بمقدار واحد من كل عنصر إلى الذي يليه.\nأيّ العبارات الآتية عن هذه العناصر صحيحة؟\nI. Y غاز نبيل.\nII. عدد إلكترونات التكافؤ في T أكبر منه في Q.\nIII. يقع Z وR في الدورة نفسها.",
+        "zh": "图中给出了位于第 2、3 周期、原子序数依次增加 1 的元素 X、Y、Z、T、Q、R 的第一电离能。\n关于这些元素，下列说法中正确的是哪些？\nI. Y 是稀有气体。\nII. T 的价电子数比 Q 多。\nIII. Z 与 R 位于同一周期。",
+        "ku": "Di grafîkê de enerjiyên îyonbûnê yên yekem ên elementên X, Y, Z, T, Q û R hatine dayîn ku di periyodên 2. û 3. de ne û hejmarên wan ên atomî yek bi yek zêde dibin.\nKîjan ji van hukmên derbarê van elementan de rast in?\nI. Y gazeke esîl e.\nII. Hejmara elektronên valansê ya T ji ya Q zêdetir e.\nIII. Z û R di heman periyodê de ne."
       },
       "options": [
         {
-          "tr": "Atom yarıçapı",
-          "en": "Atomic radius",
-          "de": "Atomradius",
-          "fr": "Rayon atomique",
-          "ru": "Радиус атома",
-          "ar": "نصف القطر الذري",
-          "zh": "原子半径",
-          "ku": "Nîvçapa atomê"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "İyonlaşma enerjisi",
-          "en": "Ionization energy",
-          "de": "Ionisierungsenergie",
-          "fr": "Énergie d'ionisation",
-          "ru": "Энергия ионизации",
-          "ar": "طاقة التأين",
-          "zh": "电离能",
-          "ku": "Enerjiya îyonîzasyonê"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "Elektronegatiflik",
-          "en": "Electronegativity",
-          "de": "Elektronegativität",
-          "fr": "Électronégativité",
-          "ru": "Электроотрицательность",
-          "ar": "السالبية الكهربائية",
-          "zh": "电负性",
-          "ku": "Elektronegatîfî"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Çekirdek yükü",
-          "en": "Nuclear charge",
-          "de": "Kernladung",
-          "fr": "Charge nucléaire",
-          "ru": "Заряд ядра",
-          "ar": "الشحنة النووية",
-          "zh": "核电荷数",
-          "ku": "Bara navokê"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Ametalik aktiflik",
-          "en": "Nonmetallic activity",
-          "de": "Nichtmetallische Aktivität",
-          "fr": "Activité non métallique",
-          "ru": "Неметаллическая активность",
-          "ar": "النشاط اللافلزي",
-          "zh": "非金属活泼性",
-          "ku": "Çalakiya nemetalîk"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Aynı periyotta soldan sağa gidildikçe katman sayısı değişmezken çekirdek yükü artar; elektronlar daha kuvvetli çekilir ve atom yarıçapı küçülür. İyonlaşma enerjisi, elektronegatiflik ve ametalik aktiflik aynı nedenle genellikle artar; çekirdek yükü ise her zaman artar.",
-        "en": "Across a period from left to right, the nuclear charge increases while the number of shells stays the same; the electrons are attracted more strongly and the atomic radius decreases. For the same reason ionization energy, electronegativity and nonmetallic activity generally increase, and the nuclear charge always increases.",
-        "de": "Innerhalb einer Periode nimmt von links nach rechts die Kernladung zu, während die Zahl der Schalen gleich bleibt; die Elektronen werden stärker angezogen und der Atomradius nimmt ab. Aus demselben Grund nehmen Ionisierungsenergie, Elektronegativität und nichtmetallische Aktivität im Allgemeinen zu, und die Kernladung nimmt immer zu.",
-        "fr": "Dans une période, de gauche à droite, la charge nucléaire augmente alors que le nombre de couches reste le même ; les électrons sont plus fortement attirés et le rayon atomique diminue. Pour la même raison, l'énergie d'ionisation, l'électronégativité et l'activité non métallique augmentent généralement, et la charge nucléaire augmente toujours.",
-        "ru": "В периоде слева направо заряд ядра растёт, а число электронных слоёв не меняется; электроны притягиваются сильнее, и радиус атома уменьшается. По той же причине энергия ионизации, электроотрицательность и неметаллическая активность, как правило, возрастают, а заряд ядра возрастает всегда.",
-        "ar": "في الدورة الواحدة من اليسار إلى اليمين تزداد الشحنة النووية مع بقاء عدد الأغلفة ثابتاً؛ فتنجذب الإلكترونات بقوة أكبر ويقل نصف القطر الذري. وللسبب نفسه تزداد طاقة التأين والسالبية الكهربائية والنشاط اللافلزي عموماً، أما الشحنة النووية فتزداد دائماً.",
-        "zh": "同一周期从左到右，电子层数不变而核电荷数增加，电子受到更强的吸引，原子半径减小。出于同样的原因，电离能、电负性和非金属活泼性一般增大，核电荷数则始终增大。",
-        "ku": "Di heman periyodê de ji çepê ber bi rastê hejmara qatan naguhere, lê bara navokê zêde dibe; elektron bi hêztir tên kişandin û nîvçapa atomê kêm dibe. Ji ber heman sedemê enerjiya îyonîzasyonê, elektronegatîfî û çalakiya nemetalîk bi giştî zêde dibin; bara navokê jî her tim zêde dibe."
+        "tr": "Atom numarası birer artarken İE1'in en yüksek değerden (Y) en düşük değere (Z) inmesi, Y'nin periyodu kapatan soy gaz, Z'nin ise bir sonraki periyodun 1A elementi olduğunu gösterir (I doğru). Böylece X 7A, Y 8A; Z 1A, T 2A, Q 3A, R 4A grubundadır ve Z, T, Q, R aynı periyottadır (III doğru). T 2A, Q 3A grubunda olduğundan T'nin değerlik elektron sayısı (2), Q'nunkinden (3) azdır; T'nin İE1 değerinin Q'dan büyük olması 2A'daki dolu s alt kabuğundan kaynaklanan bir istisnadır (II yanlış). Doğru yanıt: I ve III.",
+        "en": "As the atomic number increases one by one, IE1 falls from its highest value (Y) to its lowest (Z); so Y is the noble gas closing a period and Z is the 1A element of the next period (I correct). Then X is in 7A, Y in 8A, Z in 1A, T in 2A, Q in 3A and R in 4A, and Z, T, Q and R are in the same period (III correct). T (2A) has 2 valence electrons, fewer than Q (3A) with 3; T having a larger IE1 than Q is an exception caused by the filled s subshell of group 2A (II false). Answer: I and III.",
+        "de": "Während die Ordnungszahl jeweils um eins steigt, fällt IE1 vom höchsten Wert (Y) auf den niedrigsten (Z); Y ist also das Edelgas am Ende einer Periode und Z das 1A-Element der nächsten Periode (I richtig). Damit steht X in 7A, Y in 8A, Z in 1A, T in 2A, Q in 3A und R in 4A; Z, T, Q und R stehen in derselben Periode (III richtig). T (2A) hat 2 Valenzelektronen, weniger als Q (3A) mit 3; dass IE1 von T größer ist als die von Q, ist eine Ausnahme wegen der voll besetzten s-Unterschale der Gruppe 2A (II falsch). Antwort: I und III.",
+        "fr": "Lorsque le numéro atomique augmente d'une unité à chaque fois, l'EI1 tombe de sa valeur la plus haute (Y) à la plus basse (Z) : Y est donc le gaz rare qui termine une période et Z l'élément 1A de la période suivante (I exacte). Ainsi X est en 7A, Y en 8A, Z en 1A, T en 2A, Q en 3A et R en 4A ; Z, T, Q et R sont dans la même période (III exacte). T (2A) a 2 électrons de valence, moins que Q (3A) qui en a 3 ; le fait que l'EI1 de T dépasse celle de Q est une exception due à la sous-couche s complète du groupe 2A (II fausse). Réponse : I et III.",
+        "ru": "При последовательном росте порядкового номера ЭИ1 падает от наибольшего значения (Y) до наименьшего (Z): значит, Y — благородный газ, завершающий период, а Z — элемент 1A следующего периода (I верно). Тогда X в 7A, Y в 8A, Z в 1A, T в 2A, Q в 3A, R в 4A, и Z, T, Q, R находятся в одном периоде (III верно). У T (2A) 2 валентных электрона — меньше, чем у Q (3A) с 3; то, что ЭИ1 у T больше, чем у Q, — исключение, связанное с заполненным s-подуровнем элементов 2A (II неверно). Ответ: I и III.",
+        "ar": "مع ازدياد العدد الذري بمقدار واحد تنخفض طاقة التأين الأولى من أعلى قيمة (Y) إلى أدنى قيمة (Z)، فـ Y غاز نبيل يختم الدورة وZ عنصر المجموعة 1A في الدورة التالية (I صحيحة). وبذلك يكون X في 7A وY في 8A وZ في 1A وT في 2A وQ في 3A وR في 4A، ويقع Z وT وQ وR في الدورة نفسها (III صحيحة). لـ T (2A) إلكترونا تكافؤ، أي أقل من Q (3A) الذي له 3؛ وكون طاقة التأين الأولى لـ T أكبر من Q استثناء سببه امتلاء المستوى الفرعي s في المجموعة 2A (II خاطئة). الإجابة: I و III.",
+        "zh": "原子序数逐一增加时，IE1 从最高值（Y）降到最低值（Z），说明 Y 是结束一个周期的稀有气体，Z 是下一周期的 1A 族元素（I 正确）。于是 X 在 7A、Y 在 8A、Z 在 1A、T 在 2A、Q 在 3A、R 在 4A，Z、T、Q、R 位于同一周期（III 正确）。T（2A）有 2 个价电子，少于 Q（3A）的 3 个；T 的 IE1 大于 Q 是 2A 族 s 亚层全满造成的例外（II 错误）。答案：I 和 III。",
+        "ku": "Dema ku hejmara atomî yek bi yek zêde dibe, ÎE1 ji nirxa herî bilind (Y) dadikeve nirxa herî nizm (Z); ango Y gaza esîl e ku periyodê diqedîne û Z elementa 1A ya periyoda din e (I rast e). Bi vî awayî X di 7A, Y di 8A, Z di 1A, T di 2A, Q di 3A û R di 4A de ye; Z, T, Q û R di heman periyodê de ne (III rast e). T (2A) 2 elektronên valansê hene, ji Q (3A) ya ku 3 hene kêmtir; mezinbûna ÎE1 ya T ji ya Q îstîsnayek e ku ji binqata s ya tije ya koma 2A tê (II şaş e). Bersiv: I û III."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Atom numarası →",
+          "en": "Atomic number →",
+          "de": "Ordnungszahl →",
+          "fr": "Numéro atomique →",
+          "ru": "Порядковый номер →",
+          "ar": "العدد الذري →",
+          "zh": "原子序数 →",
+          "ku": "Hejmara atomî →"
+        },
+        "yLabel": {
+          "tr": "İE₁ (kJ/mol)",
+          "en": "IE₁ (kJ/mol)",
+          "de": "IE₁ (kJ/mol)",
+          "fr": "EI₁ (kJ/mol)",
+          "ru": "ЭИ₁ (кДж/моль)",
+          "ar": "IE₁ (kJ/mol)",
+          "zh": "IE₁ (kJ/mol)",
+          "ku": "ÎE₁ (kJ/mol)"
+        },
+        "xMin": 0,
+        "xMax": 7,
+        "yMin": 0,
+        "yMax": 2400,
+        "xTicks": [
+          {
+            "v": 1,
+            "label": "X"
+          },
+          {
+            "v": 2,
+            "label": "Y"
+          },
+          {
+            "v": 3,
+            "label": "Z"
+          },
+          {
+            "v": 4,
+            "label": "T"
+          },
+          {
+            "v": 5,
+            "label": "Q"
+          },
+          {
+            "v": 6,
+            "label": "R"
+          }
+        ],
+        "yTicks": [
+          500,
+          1000,
+          1500,
+          2000
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                1,
+                1681
+              ],
+              [
+                2,
+                2081
+              ],
+              [
+                3,
+                496
+              ],
+              [
+                4,
+                738
+              ],
+              [
+                5,
+                578
+              ],
+              [
+                6,
+                787
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 1,
+            "y": 1681,
+            "label": ""
+          },
+          {
+            "x": 2,
+            "y": 2081,
+            "label": ""
+          },
+          {
+            "x": 3,
+            "y": 496,
+            "label": ""
+          },
+          {
+            "x": 4,
+            "y": 738,
+            "label": ""
+          },
+          {
+            "x": 5,
+            "y": 578,
+            "label": ""
+          },
+          {
+            "x": 6,
+            "y": 787,
+            "label": ""
+          }
+        ]
       }
     },
     {
@@ -1362,14 +1571,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin05",
       "stem": {
-        "tr": "Periyodik sistemdeki yerleri verilen X, Y ve Z elementleri için aşağıdaki yargılardan hangileri doğrudur?\nX: 2. periyot 1A grubu\nY: 2. periyot 7A grubu\nZ: 4. periyot 1A grubu\nI. Elektronegatifliği en büyük olan Y'dir.\nII. Metalik aktifliği en büyük olan X'tir.\nIII. Atom yarıçapı en küçük olan Y'dir.",
-        "en": "Which of the following statements are correct for the elements X, Y and Z whose positions in the periodic table are given?\nX: period 2, group 1A\nY: period 2, group 7A\nZ: period 4, group 1A\nI. Y has the highest electronegativity.\nII. X has the highest metallic reactivity.\nIII. Y has the smallest atomic radius.",
-        "de": "Welche Aussagen sind für die Elemente X, Y und Z mit den angegebenen Positionen im Periodensystem richtig?\nX: 2. Periode, Gruppe 1A\nY: 2. Periode, Gruppe 7A\nZ: 4. Periode, Gruppe 1A\nI. Y hat die größte Elektronegativität.\nII. X hat die größte metallische Aktivität.\nIII. Y hat den kleinsten Atomradius.",
-        "fr": "Lesquelles des affirmations suivantes sont correctes pour les éléments X, Y et Z dont la position dans le tableau périodique est donnée ?\nX : 2e période, groupe 1A\nY : 2e période, groupe 7A\nZ : 4e période, groupe 1A\nI. Y a la plus grande électronégativité.\nII. X a la plus grande réactivité métallique.\nIII. Y a le plus petit rayon atomique.",
-        "ru": "Какие утверждения верны для элементов X, Y и Z с указанным положением в периодической системе?\nX: 2-й период, группа 1A\nY: 2-й период, группа 7A\nZ: 4-й период, группа 1A\nI. Наибольшая электроотрицательность у Y.\nII. Наибольшая металлическая активность у X.\nIII. Наименьший радиус атома у Y.",
-        "ar": "أيّ العبارات الآتية صحيحة للعناصر X وY وZ المعطاة مواقعها في الجدول الدوري؟\nX: الدورة 2، المجموعة 1A\nY: الدورة 2، المجموعة 7A\nZ: الدورة 4، المجموعة 1A\nI. أعلاها سالبيةً كهربائية Y.\nII. أعلاها نشاطاً فلزياً X.\nIII. أصغرها نصف قطر ذري Y.",
-        "zh": "已知 X、Y、Z 三种元素在周期表中的位置，下列说法中哪些正确？\nX：第 2 周期 1A 族\nY：第 2 周期 7A 族\nZ：第 4 周期 1A 族\nI. 电负性最大的是 Y。\nII. 金属活动性最强的是 X。\nIII. 原子半径最小的是 Y。",
-        "ku": "Ji bo elementên X, Y û Z yên ku cihên wan ên di tabloya periyodîk de hatine dayîn, kîjan ji van hukman rast in?\nX: periyoda 2., koma 1A\nY: periyoda 2., koma 7A\nZ: periyoda 4., koma 1A\nI. Elementa herî elektronegatîf Y ye.\nII. Elementa ku çalakiya wê ya metalîk herî mezin e X ye.\nIII. Elementa ku nîvçapa wê ya atomê herî piçûk e Y ye."
+        "tr": "Şekildeki periyodik sistem kesitinde X, Y ve Z elementlerinin yerleri gösterilmiştir.\nBu elementlerle ilgili aşağıdaki yargılardan hangileri doğrudur?\nI. Elektronegatifliği en büyük olan Y'dir.\nII. Metalik aktifliği en büyük olan X'tir.\nIII. Atom yarıçapı en küçük olan Y'dir.",
+        "en": "The section of the periodic table in the figure shows the positions of the elements X, Y and Z.\nWhich of the following statements about these elements are correct?\nI. Y has the highest electronegativity.\nII. X has the highest metallic activity.\nIII. Y has the smallest atomic radius.",
+        "de": "Der Ausschnitt des Periodensystems in der Abbildung zeigt die Stellung der Elemente X, Y und Z.\nWelche der folgenden Aussagen über diese Elemente sind richtig?\nI. Y hat die größte Elektronegativität.\nII. X hat die größte metallische Aktivität.\nIII. Y hat den kleinsten Atomradius.",
+        "fr": "L'extrait du tableau périodique de la figure indique la position des éléments X, Y et Z.\nLesquelles des affirmations suivantes sur ces éléments sont exactes ?\nI. Y a la plus grande électronégativité.\nII. X a la plus grande activité métallique.\nIII. Y a le plus petit rayon atomique.",
+        "ru": "На фрагменте периодической системы показано положение элементов X, Y и Z.\nКакие из утверждений об этих элементах верны?\nI. Наибольшая электроотрицательность у Y.\nII. Наибольшая металлическая активность у X.\nIII. Наименьший радиус атома у Y.",
+        "ar": "يبيّن جزء الجدول الدوري في الشكل مواقع العناصر X وY وZ.\nأيّ العبارات الآتية عن هذه العناصر صحيحة؟\nI. أكبر كهرسلبية لـ Y.\nII. أكبر نشاط فلزي لـ X.\nIII. أصغر نصف قطر ذري لـ Y.",
+        "zh": "图中的周期表片段标出了元素 X、Y、Z 的位置。\n关于这些元素，下列说法中正确的是哪些？\nI. 电负性最大的是 Y。\nII. 金属活动性最强的是 X。\nIII. 原子半径最小的是 Y。",
+        "ku": "Di beşa tabloya periyodîk a di şiklê de cihên elementên X, Y û Z hatine nîşandan.\nKîjan ji van hukmên derbarê van elementan de rast in?\nI. Elektronegatîfiya herî mezin a Y ye.\nII. Aktîviteya metalî ya herî mezin a X ye.\nIII. Nîvçapa atomî ya herî biçûk a Y ye."
       },
       "options": [
         {
@@ -1425,14 +1634,30 @@ export const unit02: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "I doğrudur: elektronegatiflik periyotta sağa doğru artar, gruptan aşağı azalır; sağ üstte olan Y en elektronegatiftir. II yanlıştır: X ve Z aynı grupta olup Z daha aşağıdadır; değerlik elektronunu daha kolay verdiği için metalik aktifliği en büyük olan Z'dir. III doğrudur: aynı periyotta sağdaki Y, soldaki X'ten küçüktür; Z ise iki katman fazla olduğundan en büyüktür. Doğru yanıt: I ve III.",
-        "en": "I is true: electronegativity increases to the right across a period and decreases down a group; Y, at the upper right, is the most electronegative. II is false: X and Z are in the same group and Z is lower; it loses its valence electron more easily, so Z is the most reactive metal. III is true: in the same period Y (right) is smaller than X (left), and Z, with two more shells, is the largest. Answer: I and III.",
-        "de": "I ist richtig: Die Elektronegativität steigt in der Periode nach rechts und sinkt in der Gruppe nach unten; Y oben rechts ist am elektronegativsten. II ist falsch: X und Z stehen in derselben Gruppe, Z weiter unten; es gibt sein Valenzelektron leichter ab und ist am aktivsten. III ist richtig: In derselben Periode ist Y (rechts) kleiner als X (links), Z mit zwei Schalen mehr ist am größten. Antwort: I und III.",
-        "fr": "I est vraie : l'électronégativité augmente vers la droite dans une période et diminue vers le bas d'un groupe ; Y, en haut à droite, est le plus électronégatif. II est fausse : X et Z sont dans le même groupe et Z est plus bas ; il cède plus facilement son électron de valence, c'est donc Z le plus réactif. III est vraie : dans la même période, Y (à droite) est plus petit que X (à gauche) et Z, avec deux couches de plus, est le plus grand. Réponse : I et III.",
-        "ru": "I верно: электроотрицательность в периоде растёт слева направо и уменьшается вниз по группе; Y, расположенный справа вверху, самый электроотрицательный. II неверно: X и Z находятся в одной группе, Z — ниже; он легче отдаёт валентный электрон, поэтому наибольшая металлическая активность у Z. III верно: в одном периоде Y (справа) меньше X (слева), а у Z на два электронных слоя больше, поэтому его радиус наибольший. Ответ: I и III.",
-        "ar": "العبارة I صحيحة: تزداد السالبية الكهربائية نحو اليمين في الدورة وتقل نزولاً في المجموعة، وY في أعلى اليمين فهو الأعلى سالبيةً كهربائية. العبارة II خاطئة: X وZ في مجموعة واحدة وZ أدنى، فيفقد إلكترون تكافئه بسهولة أكبر ويكون الأنشط فلزياً. العبارة III صحيحة: في الدورة نفسها Y (يميناً) أصغر من X (يساراً)، وZ أكبرها لأن لديه غلافين إضافيين. الإجابة: I وIII.",
-        "zh": "I 正确：电负性同周期从左到右增大，同族从上到下减小，位于右上方的 Y 电负性最大。II 错误：X 和 Z 同族，Z 在下方，更容易失去价电子，所以金属活动性最强的是 Z。III 正确：同周期中右边的 Y 比左边的 X 小，Z 多两个电子层，半径最大。答案：I 和 III。",
-        "ku": "I rast e: elektronegatîfî di periyodê de ber bi rastê zêde dibe, di komê de ber bi jêr kêm dibe; Y ku li jor-rastê ye herî elektronegatîf e. II şaş e: X û Z di heman komê de ne û Z li jêrtir e; elektrona xwe ya valansê hêsantir dide, loma çalakiya metalîk a herî mezin a Z ye. III rast e: di heman periyodê de Y (li rastê) ji X (li çepê) piçûktir e; Z jî ji ber du qatên zêde herî mezin e. Bersiva rast: I û III."
+        "tr": "Şekle göre X 2. periyot 1A, Y 2. periyot 7A, Z 4. periyot 1A grubundadır. I doğrudur: elektronegatiflik periyotta sağa doğru artar, grupta aşağı doğru azalır; sağ üstteki Y en elektronegatiftir. II yanlıştır: X ve Z aynı gruptadır ve Z iki periyot aşağıdadır; değerlik elektronunu en kolay veren, yani metalik aktifliği en büyük olan Z'dir. III doğrudur: aynı periyotta sağdaki Y, soldaki X'ten küçüktür; Z ise iki katman fazla olduğundan en büyüktür. Doğru yanıt: I ve III.",
+        "en": "From the figure, X is in period 2 group 1A, Y in period 2 group 7A and Z in period 4 group 1A. I is correct: electronegativity increases to the right along a period and decreases down a group, so Y at the upper right is the most electronegative. II is false: X and Z are in the same group and Z is two periods lower; Z loses its valence electron most easily, so Z has the highest metallic activity. III is correct: in the same period Y, on the right, is smaller than X; Z, with two more shells, is the largest. Answer: I and III.",
+        "de": "Laut Abbildung steht X in Periode 2, Gruppe 1A, Y in Periode 2, Gruppe 7A und Z in Periode 4, Gruppe 1A. I ist richtig: Die Elektronegativität nimmt in der Periode nach rechts zu und in der Gruppe nach unten ab; Y rechts oben ist am elektronegativsten. II ist falsch: X und Z stehen in derselben Gruppe, Z zwei Perioden tiefer; Z gibt sein Valenzelektron am leichtesten ab und hat die größte metallische Aktivität. III ist richtig: In derselben Periode ist Y (rechts) kleiner als X; Z ist mit zwei Schalen mehr am größten. Antwort: I und III.",
+        "fr": "D'après la figure, X est en période 2 groupe 1A, Y en période 2 groupe 7A et Z en période 4 groupe 1A. I est exacte : l'électronégativité augmente vers la droite dans une période et diminue vers le bas dans un groupe ; Y, en haut à droite, est le plus électronégatif. II est fausse : X et Z sont dans le même groupe et Z est deux périodes plus bas ; c'est Z qui cède le plus facilement son électron de valence, donc Z a la plus grande activité métallique. III est exacte : dans la même période, Y, à droite, est plus petit que X ; Z, avec deux couches de plus, est le plus grand. Réponse : I et III.",
+        "ru": "По рисунку X — 2-й период, группа 1A; Y — 2-й период, группа 7A; Z — 4-й период, группа 1A. I верно: электроотрицательность растёт по периоду вправо и уменьшается по группе вниз, поэтому Y в правом верхнем углу самый электроотрицательный. II неверно: X и Z в одной группе, Z на два периода ниже; легче всего отдаёт валентный электрон Z, у него наибольшая металлическая активность. III верно: в одном периоде правый Y меньше X; у Z на два слоя больше, он самый крупный. Ответ: I и III.",
+        "ar": "من الشكل: X في الدورة 2 المجموعة 1A، وY في الدورة 2 المجموعة 7A، وZ في الدورة 4 المجموعة 1A. العبارة I صحيحة: تزداد الكهرسلبية نحو اليمين في الدورة وتقل نزولًا في المجموعة، فـ Y في أعلى اليمين هو الأكثر كهرسلبية. العبارة II خاطئة: X وZ في المجموعة نفسها وZ أدنى بدورتين، فهو الأسهل فقدًا لإلكترون التكافؤ وصاحب أكبر نشاط فلزي. العبارة III صحيحة: في الدورة نفسها Y الأيمن أصغر من X، أما Z فله غلافان إضافيان فهو الأكبر. الإجابة: I و III.",
+        "zh": "由图可知，X 位于第 2 周期 1A 族，Y 位于第 2 周期 7A 族，Z 位于第 4 周期 1A 族。I 正确：电负性同周期从左到右增大、同族从上到下减小，右上方的 Y 电负性最大。II 错误：X 与 Z 同族，Z 低两个周期，最容易失去价电子，金属活动性最强的是 Z。III 正确：同周期中右边的 Y 比 X 小；Z 多两个电子层，半径最大。答案：I 和 III。",
+        "ku": "Li gorî şiklê X di periyoda 2. koma 1A, Y di periyoda 2. koma 7A, Z jî di periyoda 4. koma 1A de ye. I rast e: elektronegatîfî di periyodê de ber bi rastê zêde dibe, di komê de ber bi jêr kêm dibe; Y ya li jor-rastê ya herî elektronegatîf e. II şaş e: X û Z di heman komê de ne û Z du periyodan jêrtir e; Z elektrona xwe ya valansê herî hêsan dide, ango aktîviteya metalî ya herî mezin a Z ye. III rast e: di heman periyodê de Y ya li rastê ji X biçûktir e; Z jî ji ber du qatên zêde ya herî mezin e. Bersiv: I û III."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 176,
+        "markup": "<text x=\"59\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">1A</text><text x=\"97\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">2A</text><text x=\"135\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">3A</text><text x=\"173\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">4A</text><text x=\"211\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">5A</text><text x=\"249\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">6A</text><text x=\"287\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">7A</text><text x=\"325\" y=\"22\" text-anchor=\"middle\" class=\"qf-small\">8A</text><text x=\"22\" y=\"52\" text-anchor=\"middle\" class=\"qf-small\">1</text><rect x=\"40\" y=\"30\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"306\" y=\"30\" width=\"38\" height=\"34\" class=\"qf-fill\"/><text x=\"22\" y=\"86\" text-anchor=\"middle\" class=\"qf-small\">2</text><rect x=\"40\" y=\"64\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"78\" y=\"64\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"116\" y=\"64\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"154\" y=\"64\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"192\" y=\"64\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"230\" y=\"64\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"268\" y=\"64\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"306\" y=\"64\" width=\"38\" height=\"34\" class=\"qf-fill\"/><text x=\"22\" y=\"120\" text-anchor=\"middle\" class=\"qf-small\">3</text><rect x=\"40\" y=\"98\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"78\" y=\"98\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"116\" y=\"98\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"154\" y=\"98\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"192\" y=\"98\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"230\" y=\"98\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"268\" y=\"98\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"306\" y=\"98\" width=\"38\" height=\"34\" class=\"qf-fill\"/><text x=\"22\" y=\"154\" text-anchor=\"middle\" class=\"qf-small\">4</text><rect x=\"40\" y=\"132\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"78\" y=\"132\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"116\" y=\"132\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"154\" y=\"132\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"192\" y=\"132\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"230\" y=\"132\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"268\" y=\"132\" width=\"38\" height=\"34\" class=\"qf-fill\"/><rect x=\"306\" y=\"132\" width=\"38\" height=\"34\" class=\"qf-fill\"/><text x=\"59\" y=\"87\" text-anchor=\"middle\" class=\"qf-big\">X</text><text x=\"287\" y=\"87\" text-anchor=\"middle\" class=\"qf-big\">Y</text><text x=\"59\" y=\"155\" text-anchor=\"middle\" class=\"qf-big\">Z</text>",
+        "caption": {
+          "tr": "Geçiş elementleri gösterilmemiştir.",
+          "en": "Transition elements are not shown.",
+          "de": "Übergangselemente sind nicht dargestellt.",
+          "fr": "Les éléments de transition ne sont pas représentés.",
+          "ru": "Переходные элементы не показаны.",
+          "ar": "العناصر الانتقالية غير ممثّلة.",
+          "zh": "图中未画出过渡元素。",
+          "ku": "Elementên derbasbûnê nehatine nîşandan."
+        }
       }
     },
     {
@@ -1590,90 +1815,108 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin08",
       "stem": {
-        "tr": "Bohr atom modeline göre hidrojen atomundaki elektronun 3. enerji düzeyinden 1. enerji düzeyine geçmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
-        "en": "According to the Bohr model, which statement about the electron of a hydrogen atom moving from the 3rd energy level to the 1st energy level is correct?",
-        "de": "Welche Aussage über den Übergang des Elektrons im Wasserstoffatom vom 3. zum 1. Energieniveau ist nach dem Bohr-Modell richtig?",
-        "fr": "Selon le modèle de Bohr, quelle affirmation sur le passage de l'électron de l'atome d'hydrogène du 3e au 1er niveau d'énergie est correcte ?",
-        "ru": "Какое утверждение о переходе электрона атома водорода с 3-го на 1-й энергетический уровень верно согласно модели Бора?",
-        "ar": "وفق نموذج بور، أيّ العبارات الآتية صحيحة بشأن انتقال إلكترون ذرة الهيدروجين من مستوى الطاقة الثالث إلى الأول؟",
-        "zh": "根据玻尔模型，关于氢原子中的电子从第 3 能级跃迁到第 1 能级，下列说法正确的是哪一项？",
-        "ku": "Li gorî modela atomê ya Bohr, derbarê derbasbûna elektrona atoma hîdrojenê ji asta enerjiyê ya 3. bo asta 1. de kîjan gotin rast e?"
+        "tr": "Şekilde Bohr modeline göre hidrojen atomunun ilk dört enerji düzeyi ve elektronun K, L ve M ile gösterilen üç geçişi verilmiştir.\nBu geçişlerle ilgili aşağıdaki yargılardan hangileri doğrudur?\nI. K geçişinde atom enerji soğurur.\nII. L geçişinde yayılan fotonun enerjisi, M geçişinde yayılan fotonun enerjisinden büyüktür.\nIII. M geçişinde yayılan fotonun enerjisi, K geçişinde soğurulan enerjiye eşittir.",
+        "en": "The figure shows the first four energy levels of the hydrogen atom according to the Bohr model and three electron transitions labelled K, L and M.\nWhich of the following statements about these transitions are correct?\nI. The atom absorbs energy in transition K.\nII. The photon emitted in transition L has more energy than the photon emitted in transition M.\nIII. The energy of the photon emitted in transition M equals the energy absorbed in transition K.",
+        "de": "Die Abbildung zeigt die ersten vier Energieniveaus des Wasserstoffatoms nach dem Bohr-Modell und drei mit K, L und M bezeichnete Elektronenübergänge.\nWelche der folgenden Aussagen über diese Übergänge sind richtig?\nI. Beim Übergang K nimmt das Atom Energie auf.\nII. Das beim Übergang L ausgesandte Photon ist energiereicher als das beim Übergang M ausgesandte.\nIII. Die Energie des beim Übergang M ausgesandten Photons ist gleich der beim Übergang K aufgenommenen Energie.",
+        "fr": "La figure représente les quatre premiers niveaux d'énergie de l'atome d'hydrogène selon le modèle de Bohr et trois transitions électroniques notées K, L et M.\nLesquelles des affirmations suivantes sur ces transitions sont exactes ?\nI. Lors de la transition K, l'atome absorbe de l'énergie.\nII. Le photon émis lors de la transition L est plus énergétique que celui émis lors de la transition M.\nIII. L'énergie du photon émis lors de la transition M est égale à l'énergie absorbée lors de la transition K.",
+        "ru": "На рисунке показаны первые четыре энергетических уровня атома водорода по модели Бора и три перехода электрона, обозначенные K, L и M.\nКакие из утверждений об этих переходах верны?\nI. При переходе K атом поглощает энергию.\nII. Фотон, испускаемый при переходе L, имеет большую энергию, чем фотон, испускаемый при переходе M.\nIII. Энергия фотона, испускаемого при переходе M, равна энергии, поглощаемой при переходе K.",
+        "ar": "يبيّن الشكل مستويات الطاقة الأربعة الأولى لذرة الهيدروجين وفق نموذج بور، وثلاثة انتقالات للإلكترون رُمز لها بـ K وL وM.\nأيّ العبارات الآتية عن هذه الانتقالات صحيحة؟\nI. في الانتقال K تمتص الذرة طاقة.\nII. طاقة الفوتون المنبعث في الانتقال L أكبر من طاقة الفوتون المنبعث في الانتقال M.\nIII. طاقة الفوتون المنبعث في الانتقال M تساوي الطاقة الممتصة في الانتقال K.",
+        "zh": "图中给出了玻尔模型中氢原子的前四个能级，以及用 K、L、M 表示的三次电子跃迁。\n关于这些跃迁，下列说法中正确的是哪些？\nI. 跃迁 K 中原子吸收能量。\nII. 跃迁 L 中放出的光子能量大于跃迁 M 中放出的光子能量。\nIII. 跃迁 M 中放出的光子能量等于跃迁 K 中吸收的能量。",
+        "ku": "Di şiklê de li gorî modela Bohr çar asteyên enerjiyê yên pêşîn ên atoma hîdrojenê û sê derbasbûnên elektronê yên bi K, L û M hatine nîşandan hene.\nKîjan ji van hukmên derbarê van derbasbûnan de rast in?\nI. Di derbasbûna K de atom enerjiyê dimije.\nII. Enerjiya fotona ku di derbasbûna L de tê belavkirin ji ya fotona di derbasbûna M de mezintir e.\nIII. Enerjiya fotona ku di derbasbûna M de tê belavkirin bi enerjiya ku di derbasbûna K de tê mijandin re wekhev e."
       },
       "options": [
         {
-          "tr": "Atom dışarıdan enerji soğurur.",
-          "en": "The atom absorbs energy from outside.",
-          "de": "Das Atom nimmt Energie von außen auf.",
-          "fr": "L'atome absorbe de l'énergie de l'extérieur.",
-          "ru": "Атом поглощает энергию извне.",
-          "ar": "تمتص الذرة طاقة من الخارج.",
-          "zh": "原子从外界吸收能量。",
-          "ku": "Atom ji derve enerjiyê dimijîne."
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Elektron çekirdekten uzaklaşır.",
-          "en": "The electron moves away from the nucleus.",
-          "de": "Das Elektron entfernt sich vom Kern.",
-          "fr": "L'électron s'éloigne du noyau.",
-          "ru": "Электрон удаляется от ядра.",
-          "ar": "يبتعد الإلكترون عن النواة.",
-          "zh": "电子远离原子核。",
-          "ku": "Elektron ji navokê dûr dikeve."
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "Atom ışık yayar ve elektronun enerjisi azalır.",
-          "en": "The atom emits light and the electron's energy decreases.",
-          "de": "Das Atom sendet Licht aus und die Energie des Elektrons nimmt ab.",
-          "fr": "L'atome émet de la lumière et l'énergie de l'électron diminue.",
-          "ru": "Атом испускает свет, и энергия электрона уменьшается.",
-          "ar": "تُصدر الذرة ضوءاً وتقل طاقة الإلكترون.",
-          "zh": "原子发出光，电子的能量降低。",
-          "ku": "Atom ronahiyê belav dike û enerjiya elektronê kêm dibe."
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Atom elektron kaybederek iyonlaşır.",
-          "en": "The atom loses an electron and becomes an ion.",
-          "de": "Das Atom verliert ein Elektron und wird ionisiert.",
-          "fr": "L'atome perd un électron et s'ionise.",
-          "ru": "Атом теряет электрон и ионизируется.",
-          "ar": "تفقد الذرة إلكتروناً فتتأين.",
-          "zh": "原子失去电子而电离。",
-          "ku": "Atom elektronekê winda dike û dibe îyon."
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Elektronun enerjisi artar ve atom uyarılmış hâle geçer.",
-          "en": "The electron's energy increases and the atom becomes excited.",
-          "de": "Die Energie des Elektrons steigt und das Atom wird angeregt.",
-          "fr": "L'énergie de l'électron augmente et l'atome passe à l'état excité.",
-          "ru": "Энергия электрона растёт, и атом переходит в возбуждённое состояние.",
-          "ar": "تزداد طاقة الإلكترون وتنتقل الذرة إلى الحالة المثارة.",
-          "zh": "电子能量增加，原子变为激发态。",
-          "ku": "Enerjiya elektronê zêde dibe û atom derbasî rewşa heyecanbûyî dibe."
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         }
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Bohr modelinde çekirdeğe yakın düzeyin enerjisi daha düşüktür. Elektron 3. düzeyden 1. düzeye inerken iki düzey arasındaki enerji farkını ışık (foton) olarak yayar; elektron çekirdeğe yaklaşır ve enerjisi azalır. Enerji soğurma, çekirdekten uzaklaşma ve uyarılma, elektronun düşük düzeyden yüksek düzeye çıkmasında olur; elektron atomdan ayrılmadığı için iyonlaşma da yoktur.",
-        "en": "In the Bohr model, levels closer to the nucleus have lower energy. When the electron drops from level 3 to level 1 it emits the energy difference as light (a photon); the electron moves closer to the nucleus and its energy decreases. Absorption, moving away and excitation happen when the electron rises to a higher level; the electron does not leave the atom, so there is no ionisation.",
-        "de": "Im Bohr-Modell haben kernnahe Niveaus niedrigere Energie. Fällt das Elektron von Niveau 3 auf Niveau 1, gibt es die Energiedifferenz als Licht (Photon) ab; es nähert sich dem Kern, seine Energie sinkt. Absorption, Entfernung vom Kern und Anregung treten beim Übergang nach oben auf; das Elektron verlässt das Atom nicht, also keine Ionisierung.",
-        "fr": "Dans le modèle de Bohr, les niveaux proches du noyau ont une énergie plus basse. En redescendant du niveau 3 au niveau 1, l'électron émet la différence d'énergie sous forme de lumière (photon) ; il se rapproche du noyau et son énergie diminue. L'absorption, l'éloignement et l'excitation correspondent à une montée vers un niveau supérieur ; l'électron ne quitte pas l'atome, il n'y a donc pas d'ionisation.",
-        "ru": "В модели Бора уровни ближе к ядру имеют меньшую энергию. При переходе с 3-го уровня на 1-й электрон испускает разность энергий в виде света (фотона), приближается к ядру, и его энергия уменьшается. Поглощение, удаление от ядра и возбуждение происходят при переходе на более высокий уровень; электрон не покидает атом, поэтому ионизации нет.",
-        "ar": "في نموذج بور تكون طاقة المستويات القريبة من النواة أقل. وعند هبوط الإلكترون من المستوى الثالث إلى الأول يُطلق فرق الطاقة على شكل ضوء (فوتون)، فيقترب من النواة وتقل طاقته. أما الامتصاص والابتعاد عن النواة والإثارة فتحدث عند الصعود إلى مستوى أعلى، ولا يغادر الإلكترون الذرة فلا يحدث تأين.",
-        "zh": "玻尔模型中，离核越近的能级能量越低。电子从第 3 能级跃迁到第 1 能级时，把两能级的能量差以光（光子）的形式放出，电子靠近原子核，能量降低。吸收能量、远离原子核和激发发生在电子向高能级跃迁时；电子没有离开原子，所以不发生电离。",
-        "ku": "Di modela Bohr de enerjiya astên nêzîkî navokê kêmtir e. Dema elektron ji asta 3. dadikeve asta 1., cudahiya enerjiyê ya navbera her du astan wekî ronahî (foton) belav dike; elektron nêzîkî navokê dibe û enerjiya wê kêm dibe. Mijandina enerjiyê, dûrketina ji navokê û heyecanbûn dema elektron ji asteke nizm derdikeve asteke bilind çêdibin; ji ber ku elektron atomê bernade, îyonîzasyon jî tune."
+        "tr": "K'de elektron n = 1'den n = 3'e çıkar; yüksek enerji düzeyine çıkmak için atom enerji soğurur (I doğru). Çekirdekten uzaklaştıkça düzeyler arasındaki enerji farkı küçülür: L geçişinin (n = 4 → 2) enerji farkı, M geçişininkinden (n = 3 → 1) çok küçüktür; bu yüzden L'de yayılan foton daha düşük enerjilidir (II yanlış). M ve K aynı iki düzey (n = 1 ve n = 3) arasındadır; enerji farkları aynı olduğundan M'de yayılan fotonun enerjisi K'de soğurulan enerjiye eşittir (III doğru). Doğru yanıt: I ve III.",
+        "en": "In K the electron rises from n = 1 to n = 3; to move to a higher level the atom absorbs energy (I correct). The gaps between levels get smaller farther from the nucleus: the energy difference of L (n = 4 → 2) is much smaller than that of M (n = 3 → 1), so the photon emitted in L has less energy (II false). M and K connect the same two levels (n = 1 and n = 3); their energy differences are equal, so the photon emitted in M carries exactly the energy absorbed in K (III correct). Answer: I and III.",
+        "de": "Bei K steigt das Elektron von n = 1 auf n = 3; für den Übergang auf ein höheres Niveau nimmt das Atom Energie auf (I richtig). Mit zunehmendem Abstand vom Kern werden die Abstände zwischen den Niveaus kleiner: Die Energiedifferenz bei L (n = 4 → 2) ist viel kleiner als bei M (n = 3 → 1), das bei L ausgesandte Photon ist also energieärmer (II falsch). M und K verbinden dieselben zwei Niveaus (n = 1 und n = 3); ihre Energiedifferenzen sind gleich, daher entspricht die Energie des bei M ausgesandten Photons der bei K aufgenommenen Energie (III richtig). Antwort: I und III.",
+        "fr": "En K, l'électron passe de n = 1 à n = 3 ; pour monter à un niveau plus élevé, l'atome absorbe de l'énergie (I exacte). Les écarts entre niveaux diminuent quand on s'éloigne du noyau : l'écart d'énergie de L (n = 4 → 2) est bien plus petit que celui de M (n = 3 → 1), donc le photon émis en L est moins énergétique (II fausse). M et K relient les deux mêmes niveaux (n = 1 et n = 3) ; leurs écarts d'énergie sont égaux, donc le photon émis en M emporte exactement l'énergie absorbée en K (III exacte). Réponse : I et III.",
+        "ru": "При K электрон переходит с n = 1 на n = 3; для перехода на более высокий уровень атом поглощает энергию (I верно). С удалением от ядра расстояния между уровнями уменьшаются: разность энергий для L (n = 4 → 2) намного меньше, чем для M (n = 3 → 1), поэтому фотон, испускаемый при L, обладает меньшей энергией (II неверно). M и K связывают одни и те же уровни (n = 1 и n = 3); разности энергий одинаковы, поэтому энергия фотона, испущенного при M, равна энергии, поглощённой при K (III верно). Ответ: I и III.",
+        "ar": "في K ينتقل الإلكترون من n = 1 إلى n = 3، وللانتقال إلى مستوى أعلى تمتص الذرة طاقة (I صحيحة). تتقارب المستويات كلما ابتعدنا عن النواة: فرق الطاقة في L (n = 4 → 2) أصغر بكثير منه في M (n = 3 → 1)، لذا فالفوتون المنبعث في L أقل طاقة (II خاطئة). يصل كلٌّ من M وK بين المستويين نفسيهما (n = 1 وn = 3)، ففرقا الطاقة متساويان، وطاقة الفوتون المنبعث في M تساوي الطاقة الممتصة في K (III صحيحة). الإجابة: I و III.",
+        "zh": "K 中电子从 n = 1 跃迁到 n = 3；跃迁到较高能级时原子吸收能量（I 正确）。离核越远，相邻能级间的能量差越小：L（n = 4 → 2）的能量差远小于 M（n = 3 → 1），所以 L 中放出的光子能量较小（II 错误）。M 与 K 连接的是同样两个能级（n = 1 和 n = 3），能量差相等，因此 M 中放出的光子能量等于 K 中吸收的能量（III 正确）。答案：I 和 III。",
+        "ku": "Di K de elektron ji n = 1 derdikeve n = 3; ji bo derketina asteyeke bilindtir atom enerjiyê dimije (I rast e). Her ku ji navikê dûr dibe, ferqa enerjiyê ya di navbera asteyan de biçûk dibe: ferqa enerjiyê ya L (n = 4 → 2) ji ya M (n = 3 → 1) gelek biçûktir e, ji ber vê fotona ku di L de tê belavkirin kêmenerjîtir e (II şaş e). M û K heman du asteyan (n = 1 û n = 3) girê didin; ferqên wan ên enerjiyê wekhev in, ji ber vê enerjiya fotona di M de tê belavkirin bi enerjiya ku di K de tê mijandin re wekhev e (III rast e). Bersiv: I û III."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 222,
+        "markup": "<line x1=\"70\" y1=\"205\" x2=\"335\" y2=\"205\" class=\"qf-line\"/><text x=\"18\" y=\"209\" class=\"qf-small\">n = 1</text><line x1=\"70\" y1=\"115\" x2=\"335\" y2=\"115\" class=\"qf-line\"/><text x=\"18\" y=\"119\" class=\"qf-small\">n = 2</text><line x1=\"70\" y1=\"75\" x2=\"335\" y2=\"75\" class=\"qf-line\"/><text x=\"18\" y=\"79\" class=\"qf-small\">n = 3</text><line x1=\"70\" y1=\"52\" x2=\"335\" y2=\"52\" class=\"qf-line\"/><text x=\"18\" y=\"56\" class=\"qf-small\">n = 4</text><line x1=\"125\" y1=\"203\" x2=\"125\" y2=\"84\" class=\"qf-stroke-accent\"/><polygon points=\"125,76 120,86 130,86\" class=\"qf-accent\"/><text x=\"133\" y=\"150\" class=\"qf-big\">K</text><line x1=\"205\" y1=\"54\" x2=\"205\" y2=\"106\" class=\"qf-stroke-accent\"/><polygon points=\"205,114 200,104 210,104\" class=\"qf-accent\"/><text x=\"213\" y=\"90\" class=\"qf-big\">L</text><line x1=\"285\" y1=\"77\" x2=\"285\" y2=\"196\" class=\"qf-stroke-accent\"/><polygon points=\"285,204 280,194 290,194\" class=\"qf-accent\"/><text x=\"293\" y=\"150\" class=\"qf-big\">M</text><text x=\"18\" y=\"24\" class=\"qf-small\">{{en}} ↑</text>",
+        "labels": {
+          "en": {
+            "tr": "Enerji",
+            "en": "Energy",
+            "de": "Energie",
+            "fr": "Énergie",
+            "ru": "Энергия",
+            "ar": "الطاقة",
+            "zh": "能量",
+            "ku": "Enerjî"
+          }
+        }
       }
     },
     {
       "id": "u02-twin09",
       "stem": {
-        "tr": "Oda koşullarında katı olan X, Y ve Z elementlerinin bazı özellikleri şöyledir:\nX: Parlaktır, tel ve levha hâline getirilebilir, ısı ve elektriği iyi iletir.\nY: Mattır, kırılgandır, ısı ve elektriği iletmez.\nZ: Parlaktır ancak kırılgandır; elektriği metallerden daha az iletir (yarı iletkendir).\nBuna göre X, Y ve Z'nin sınıfları aşağıdakilerin hangisinde doğru verilmiştir?",
+        "tr": "Oda koşullarında katı olan X, Y ve Z elementlerinin bazı özellikleri şöyledir:\nX: Parlaktır, tel ve levha hâline getirilebilir, ısı ve elektriği iyi iletir.\nY: Mattır, kırılgandır, ısı ve elektriği iletmez.\nZ: Parlaktır ancak kırılgandır; elektriği metallerden daha az iletir (yarı iletkendir).\nX, Y ve Z'nin sınıfları aşağıdakilerin hangisinde doğru verilmiştir?",
         "en": "Some properties of the elements X, Y and Z, all solid at room conditions, are:\nX: shiny, can be drawn into wires and hammered into sheets, conducts heat and electricity well.\nY: dull, brittle, does not conduct heat or electricity.\nZ: shiny but brittle; conducts electricity less than metals (a semiconductor).\nIn which option are the classes of X, Y and Z given correctly?",
         "de": "Einige Eigenschaften der bei Raumbedingungen festen Elemente X, Y und Z:\nX: glänzend, zu Draht und Blech formbar, leitet Wärme und Strom gut.\nY: matt, spröde, leitet weder Wärme noch Strom.\nZ: glänzend, aber spröde; leitet Strom schlechter als Metalle (Halbleiter).\nIn welcher Antwort sind die Klassen von X, Y und Z richtig angegeben?",
         "fr": "Quelques propriétés des éléments X, Y et Z, tous solides dans les conditions ambiantes :\nX : brillant, peut être étiré en fils et laminé en feuilles, bon conducteur de la chaleur et de l'électricité.\nY : terne, cassant, ne conduit ni la chaleur ni l'électricité.\nZ : brillant mais cassant ; conduit l'électricité moins bien que les métaux (semi-conducteur).\nDans quelle proposition les classes de X, Y et Z sont-elles correctes ?",
         "ru": "Некоторые свойства элементов X, Y и Z, твёрдых при комнатных условиях:\nX: блестит, вытягивается в проволоку и прокатывается в листы, хорошо проводит тепло и ток.\nY: матовый, хрупкий, не проводит тепло и ток.\nZ: блестит, но хрупкий; проводит ток хуже металлов (полупроводник).\nВ каком варианте классы X, Y и Z указаны верно?",
         "ar": "فيما يلي بعض خواص العناصر X وY وZ الصلبة في الظروف العادية:\nX: لامع، يمكن سحبه أسلاكاً وطرقه صفائح، جيد التوصيل للحرارة والكهرباء.\nY: باهت، هش، لا يوصل الحرارة ولا الكهرباء.\nZ: لامع لكنه هش، يوصل الكهرباء أقل من الفلزات (شبه موصل).\nفي أيّ الخيارات الآتية صُنّفت X وY وZ تصنيفاً صحيحاً؟",
         "zh": "常温常压下均为固体的元素 X、Y、Z 的部分性质如下：\nX：有光泽，可拉成丝、压成片，导热导电性好。\nY：无光泽，易碎，不导热也不导电。\nZ：有光泽但易碎，导电性比金属差（半导体）。\n下列哪一项对 X、Y、Z 类别的判断正确？",
-        "ku": "Hin taybetmendiyên elementên X, Y û Z yên ku di şertên odeyê de hişk in ev in:\nX: Biriqok e, dikare bibe têl û pel, germ û elektrîkê baş diguhezîne.\nY: Mat e, şikestbar e, germ û elektrîkê naguhezîne.\nZ: Biriqok e lê şikestbar e; elektrîkê ji metalan kêmtir diguhezîne (nîvguhêzer e).\nLi gorî vê, çînên X, Y û Z di kîjan vebijarkê de rast hatine dayîn?"
+        "ku": "Hin taybetmendiyên elementên X, Y û Z yên ku di şertên odeyê de hişk in ev in:\nX: Biriqok e, dikare bibe têl û pel, germ û elektrîkê baş diguhezîne.\nY: Mat e, şikestbar e, germ û elektrîkê naguhezîne.\nZ: Biriqok e lê şikestbar e; elektrîkê ji metalan kêmtir diguhezîne (nîvguhêzer e).\nÇînên X, Y û Z di kîjan vebijarkê de rast hatine dayîn?"
       },
       "options": [
         {
@@ -2198,14 +2441,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin16",
       "stem": {
-        "tr": "Periyodik sistemde aynı grupta bulunan X, Y ve Z atomlarının yarıçapları sırasıyla 152 pm, 186 pm ve 227 pm'dir. Buna göre X, Y ve Z için aşağıdakilerden hangisi doğrudur?",
+        "tr": "Periyodik sistemde aynı grupta bulunan X, Y ve Z atomlarının yarıçapları sırasıyla 152 pm, 186 pm ve 227 pm'dir. X, Y ve Z için aşağıdakilerden hangisi doğrudur?",
         "en": "The atomic radii of X, Y and Z, which are in the same group of the periodic table, are 152 pm, 186 pm and 227 pm respectively. Which statement about X, Y and Z is correct?",
         "de": "Die Atomradien von X, Y und Z, die in derselben Gruppe des Periodensystems stehen, betragen 152 pm, 186 pm und 227 pm. Welche Aussage über X, Y und Z ist richtig?",
         "fr": "Les rayons atomiques de X, Y et Z, situés dans le même groupe du tableau périodique, valent respectivement 152 pm, 186 pm et 227 pm. Quelle affirmation sur X, Y et Z est correcte ?",
         "ru": "Радиусы атомов X, Y и Z, находящихся в одной группе периодической системы, равны соответственно 152 пм, 186 пм и 227 пм. Какое утверждение об X, Y и Z верно?",
         "ar": "أنصاف أقطار الذرات X وY وZ الواقعة في مجموعة واحدة من الجدول الدوري هي على الترتيب 152 pm و186 pm و227 pm. أيّ العبارات الآتية عن X وY وZ صحيحة؟",
         "zh": "周期表中位于同一族的 X、Y、Z 三种原子的半径依次为 152 pm、186 pm 和 227 pm。关于 X、Y、Z，下列说法正确的是哪一项？",
-        "ku": "Nîvçapên atomên X, Y û Z yên ku di heman koma tabloya periyodîk de ne, bi rêzê 152 pm, 186 pm û 227 pm in. Li gorî vê, kîjan gotin ji bo X, Y û Z rast e?"
+        "ku": "Nîvçapên atomên X, Y û Z yên ku di heman koma tabloya periyodîk de ne, bi rêzê 152 pm, 186 pm û 227 pm in. Kîjan gotin ji bo X, Y û Z rast e?"
       },
       "options": [
         {

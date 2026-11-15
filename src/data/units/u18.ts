@@ -555,14 +555,14 @@ export const unit18: ChemistryUnitSeedData = {
         "ku": "Di reaksiyonên hevsengiyê de meyla enerjiya kêmtirîn û meyla bêrêziya herî zêde piştgiriya heman aliyî dikin."
       },
       "whyTrapIsFalse": {
-        "tr": "Denge, minimum enerji ve maksimum düzensizlik eğilimleri zıt yönlerde olduğunda bu iki eğilimin dengelenmesiyle kurulur. İki eğilim aynı yöndeyse olay tamamlanır, denge kurulmaz.",
-        "en": "Equilibrium arises when the tendencies toward minimum energy and maximum disorder point in opposite directions and balance each other. If both point the same way, the process goes to completion and no equilibrium forms.",
-        "de": "Ein Gleichgewicht entsteht, wenn das Streben nach minimaler Energie und nach maximaler Unordnung entgegengesetzt wirken und sich ausgleichen. Wirken beide in dieselbe Richtung, läuft der Vorgang vollständig ab.",
-        "fr": "L’équilibre s’établit lorsque les tendances à l’énergie minimale et au désordre maximal sont opposées et se compensent. Si elles vont dans le même sens, la transformation est totale et aucun équilibre ne s’établit.",
-        "ru": "Равновесие устанавливается, когда стремление к минимуму энергии и стремление к максимуму неупорядоченности направлены противоположно и уравновешивают друг друга. Если они направлены в одну сторону, процесс идёт до конца и равновесие не устанавливается.",
-        "ar": "يتكون الاتزان عندما يكون الميل نحو أقل طاقة والميل نحو أقصى عشوائية في اتجاهين متعاكسين ويتوازنان. إذا كانا في الاتجاه نفسه يكتمل التفاعل ولا يتكون اتزان.",
-        "zh": "当趋向最低能量与趋向最大混乱度这两种倾向方向相反并相互抵消时才建立平衡；若两者方向相同，过程进行到底，不建立平衡。",
-        "ku": "Hevsengî dema ku meyla enerjiya kêmtirîn û meyla bêrêziya herî zêde li aliyên dijber in, bi hevsengbûna van her du meylan saz dibe. Heke her du meyl li heman aliyî bin, bûyer temam dibe û hevsengî saz nabe."
+        "tr": "Gözlenebilir bir denge karışımı, minimum enerji ve maksimum düzensizlik eğilimleri zıt yönlerde olduğunda bu iki eğilimin dengelenmesiyle oluşur. İki eğilim de ürünler yönündeyse denge sabiti çok büyüktür ve olay pratikte tamamen ürünler yönünde ilerler.",
+        "en": "An observable equilibrium mixture forms when the tendencies toward minimum energy and maximum disorder point in opposite directions and balance each other. If both favour the products, the equilibrium constant is very large and the process goes practically to completion.",
+        "de": "Ein beobachtbares Gleichgewichtsgemisch entsteht, wenn das Streben nach minimaler Energie und nach maximaler Unordnung entgegengesetzt wirken und sich ausgleichen. Begünstigen beide die Produkte, ist die Gleichgewichtskonstante sehr groß und der Vorgang läuft praktisch vollständig ab.",
+        "fr": "Un mélange à l'équilibre observable s'établit lorsque les tendances à l'énergie minimale et au désordre maximal sont opposées et se compensent. Si les deux favorisent les produits, la constante d'équilibre est très grande et la transformation est pratiquement totale.",
+        "ru": "Наблюдаемая равновесная смесь образуется, когда стремление к минимуму энергии и стремление к максимуму неупорядоченности направлены противоположно и уравновешивают друг друга. Если оба благоприятствуют продуктам, константа равновесия очень велика и процесс практически идёт до конца.",
+        "ar": "يتكون خليط اتزان ملحوظ عندما يكون الميل نحو أقل طاقة والميل نحو أقصى عشوائية في اتجاهين متعاكسين ويتوازنان. أما إذا كان كلاهما في صالح النواتج فإن ثابت الاتزان يكون كبيرًا جدًّا ويكتمل التفاعل عمليًّا.",
+        "zh": "只有当趋向最低能量与趋向最大混乱度两种倾向方向相反、相互抵消时，才会形成可观察到的平衡混合物；若两者都有利于生成物，平衡常数极大，过程实际上进行到底。",
+        "ku": "Tevliheviyeke hevsengiyê ya ku tê dîtin dema ku meyla enerjiya kêmtirîn û meyla bêrêziya herî zêde li aliyên dijber in û hev hevseng dikin çêdibe. Heke her du jî alîgirê hilberan bin, sabîta hevsengiyê pir mezin e û bûyer bi pratîkî heta dawiyê diçe."
       }
     }
   ],
@@ -867,14 +867,14 @@ export const unit18: ChemistryUnitSeedData = {
           "ku": "Bibîne ka sîstem ji bo kêmkirina vê bandorê divê çi bike (mînak xerckirina madeya lêzêdekirî)"
         },
         {
-          "tr": "Buna göre tepkimenin kayacağı yönü belirle (ürünler veya girenler)",
-          "en": "From this, determine the direction in which the reaction shifts (products or reactants)",
-          "de": "Bestimme daraus die Richtung, in die sich die Reaktion verschiebt (Produkte oder Edukte)",
-          "fr": "En déduire le sens dans lequel la réaction se déplace (produits ou réactifs)",
-          "ru": "Исходя из этого, определите направление смещения реакции (к продуктам или к реагентам)",
-          "ar": "بناءً على ذلك حدّد الاتجاه الذي ينزاح إليه التفاعل (النواتج أو المتفاعلات)",
-          "zh": "据此确定反应移动的方向（生成物或反应物）",
-          "ku": "Li gorî vê, aliyê ku reaksiyon ber bi wî ve diçe diyar bike (hilber an reaktant)"
+          "tr": "Sistemin kayacağı yönü belirle (ürünler veya girenler)",
+          "en": "Determine the direction in which the system shifts (products or reactants)",
+          "de": "Bestimme die Richtung, in die sich das System verschiebt (Produkte oder Edukte)",
+          "fr": "Déterminer le sens dans lequel le système se déplace (produits ou réactifs)",
+          "ru": "Определите направление, в котором смещается система (к продуктам или к реагентам)",
+          "ar": "حدّد الاتجاه الذي ينزاح إليه النظام (النواتج أو المتفاعلات)",
+          "zh": "确定体系移动的方向（生成物或反应物）",
+          "ku": "Aliyê ku sîstem ber bi wî ve diçe diyar bike (hilber an reaktant)"
         },
         {
           "tr": "Son olarak Kc'nin değişip değişmediğini kontrol et (yalnızca sıcaklık değişirse değişir)",
@@ -1134,77 +1134,195 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin02",
       "stem": {
-        "tr": "C(k) + CO2(g) ⇌ 2 CO(g) tepkimesi için Kp ile Kc arasındaki bağıntı aşağıdakilerden hangisidir?",
-        "en": "Which of the following is the relationship between Kp and Kc for the reaction C(s) + CO2(g) ⇌ 2 CO(g)?",
-        "de": "Welche der folgenden Beziehungen besteht zwischen Kp und Kc für die Reaktion C(s) + CO2(g) ⇌ 2 CO(g)?",
-        "fr": "Quelle est la relation entre Kp et Kc pour la réaction C(s) + CO2(g) ⇌ 2 CO(g) ?",
-        "ru": "Какое соотношение связывает Kp и Kc для реакции C(тв) + CO2(г) ⇌ 2 CO(г)?",
-        "ar": "أي مما يلي يمثل العلاقة بين Kp وKc للتفاعل C(s) + CO2(g) ⇌ 2 CO(g)؟",
-        "zh": "对于反应 C(s) + CO2(g) ⇌ 2 CO(g)，Kp 与 Kc 的关系是下列哪一项？",
-        "ku": "Ji bo reaksiyona C(s) + CO2(g) ⇌ 2 CO(g), têkiliya di navbera Kp û Kc de kîjan e?"
+        "tr": "Şekildeki grafik, sabit hacimli kapalı bir kapta sabit sıcaklıkta gerçekleşen X(g) ⇌ 2Y(g) tepkimesinde X ve Y derişimlerinin zamanla değişimini göstermektedir. Bu sıcaklıkta tepkimenin derişimler cinsinden denge sabiti (Kc) kaçtır?",
+        "en": "The graph shows how the concentrations of X and Y change with time for the reaction X(g) ⇌ 2Y(g) in a closed rigid container at constant temperature. What is the equilibrium constant in terms of concentrations (Kc) at this temperature?",
+        "de": "Das Diagramm zeigt die zeitliche Änderung der Konzentrationen von X und Y für die Reaktion X(g) ⇌ 2Y(g) in einem geschlossenen Gefäß mit konstantem Volumen bei konstanter Temperatur. Wie groß ist die Gleichgewichtskonstante Kc bei dieser Temperatur?",
+        "fr": "Le graphique montre l'évolution des concentrations de X et de Y au cours du temps pour la réaction X(g) ⇌ 2Y(g) dans un récipient fermé de volume constant à température constante. Quelle est la constante d'équilibre en concentrations (Kc) à cette température ?",
+        "ru": "На графике показано изменение концентраций X и Y во времени для реакции X(г) ⇌ 2Y(г) в закрытом сосуде постоянного объёма при постоянной температуре. Чему равна концентрационная константа равновесия Kc при этой температуре?",
+        "ar": "يبيّن الرسم البياني تغيّر تركيزي X وY مع الزمن للتفاعل X(g) ⇌ 2Y(g) في وعاء مغلق ثابت الحجم عند درجة حرارة ثابتة. ما ثابت الاتزان بدلالة التراكيز (Kc) عند هذه الدرجة؟",
+        "zh": "图中曲线表示在恒温下密闭恒容容器中反应 X(g) ⇌ 2Y(g) 里 X 和 Y 的浓度随时间的变化。该温度下以浓度表示的平衡常数 Kc 是多少？",
+        "ku": "Grafîk ji bo reaksiyona X(g) ⇌ 2Y(g) di firaxeke girtî ya bi qebareya sabît û germahiya sabît de guherîna tîrbûnên X û Y li gorî demê nîşan dide. Di vê germahiyê de sabîta hevsengiyê ya bi tîrbûnan (Kc) çend e?"
       },
       "options": [
         {
-          "tr": "Kp = Kc * (RT)",
-          "en": "Kp = Kc * (RT)",
-          "de": "Kp = Kc * (RT)",
-          "fr": "Kp = Kc * (RT)",
-          "ru": "Kp = Kc * (RT)",
-          "ar": "Kp = Kc * (RT)",
-          "zh": "Kp = Kc * (RT)",
-          "ku": "Kp = Kc * (RT)"
+          "tr": "6,4",
+          "en": "6.4",
+          "de": "6,4",
+          "fr": "6,4",
+          "ru": "6,4",
+          "ar": "6.4",
+          "zh": "6.4",
+          "ku": "6,4"
         },
         {
-          "tr": "Kp = Kc",
-          "en": "Kp = Kc",
-          "de": "Kp = Kc",
-          "fr": "Kp = Kc",
-          "ru": "Kp = Kc",
-          "ar": "Kp = Kc",
-          "zh": "Kp = Kc",
-          "ku": "Kp = Kc"
+          "tr": "8",
+          "en": "8",
+          "de": "8",
+          "fr": "8",
+          "ru": "8",
+          "ar": "8",
+          "zh": "8",
+          "ku": "8"
         },
         {
-          "tr": "Kp = Kc * (RT)^2",
-          "en": "Kp = Kc * (RT)^2",
-          "de": "Kp = Kc * (RT)^2",
-          "fr": "Kp = Kc * (RT)^2",
-          "ru": "Kp = Kc * (RT)^2",
-          "ar": "Kp = Kc * (RT)^2",
-          "zh": "Kp = Kc * (RT)^2",
-          "ku": "Kp = Kc * (RT)^2"
+          "tr": "1,6",
+          "en": "1.6",
+          "de": "1,6",
+          "fr": "1,6",
+          "ru": "1,6",
+          "ar": "1.6",
+          "zh": "1.6",
+          "ku": "1,6"
         },
         {
-          "tr": "Kc = Kp * (RT)",
-          "en": "Kc = Kp * (RT)",
-          "de": "Kc = Kp * (RT)",
-          "fr": "Kc = Kp * (RT)",
-          "ru": "Kc = Kp * (RT)",
-          "ar": "Kc = Kp * (RT)",
-          "zh": "Kc = Kp * (RT)",
-          "ku": "Kc = Kp * (RT)"
+          "tr": "1,28",
+          "en": "1.28",
+          "de": "1,28",
+          "fr": "1,28",
+          "ru": "1,28",
+          "ar": "1.28",
+          "zh": "1.28",
+          "ku": "1,28"
         },
         {
-          "tr": "Kp = Kc / (RT)",
-          "en": "Kp = Kc / (RT)",
-          "de": "Kp = Kc / (RT)",
-          "fr": "Kp = Kc / (RT)",
-          "ru": "Kp = Kc / (RT)",
-          "ar": "Kp = Kc / (RT)",
-          "zh": "Kp = Kc / (RT)",
-          "ku": "Kp = Kc / (RT)"
+          "tr": "0,125",
+          "en": "0.125",
+          "de": "0,125",
+          "fr": "0,125",
+          "ru": "0,125",
+          "ar": "0.125",
+          "zh": "0.125",
+          "ku": "0,125"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Δn = n_ürün(gaz) - n_giren(gaz) = 2 - 1 = 1'dir (C katıdır, hesaba katılmaz). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). C de gaz gibi sayılırsa Δn = 0 ve Kp = Kc bulunur; bu hatalıdır.",
-        "en": "Δn = n(gaseous products) - n(gaseous reactants) = 2 - 1 = 1 (C is a solid and is not counted). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Counting C as a gas would give Δn = 0 and Kp = Kc, which is wrong.",
-        "de": "Δn = n(gasförmige Produkte) - n(gasförmige Edukte) = 2 - 1 = 1 (C ist ein Feststoff und wird nicht mitgezählt). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Zählt man C als Gas mit, erhält man Δn = 0 und Kp = Kc; das ist falsch.",
-        "fr": "Δn = n(produits gazeux) - n(réactifs gazeux) = 2 - 1 = 1 (C est un solide et n'est pas compté). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Si l'on comptait C comme un gaz, on obtiendrait Δn = 0 et Kp = Kc, ce qui est faux.",
-        "ru": "Δn = n(газообразных продуктов) - n(газообразных реагентов) = 2 - 1 = 1 (C — твёрдое вещество и не учитывается). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Если считать C газом, получится Δn = 0 и Kp = Kc, что неверно.",
-        "ar": "Δn = n(النواتج الغازية) - n(المتفاعلات الغازية) = 2 - 1 = 1 (C مادة صلبة ولا تُحتسب). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). ولو عُدّ C غازًا لكان Δn = 0 وKp = Kc، وهذا خطأ.",
-        "zh": "Δn = n(气态生成物) - n(气态反应物) = 2 - 1 = 1(C为固体，不计入)。Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT)。若把C当作气体计入，会得到Δn = 0、Kp = Kc，这是错误的。",
-        "ku": "Δn = n(hilberên gaz) - n(reaktantên gaz) = 2 - 1 = 1 e (C hişk e, nayê hesibandin). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Heke C jî wekî gaz were hesibandin, Δn = 0 û Kp = Kc tê dîtin; ev şaş e."
+        "tr": "Grafikte derişimler 30. saniyeden sonra sabit kalmıştır; denge derişimleri [X] = 0,1 M ve [Y] = 0,8 M'dir (X 0,4 M azalırken Y 0,8 M artmıştır, bu 1 : 2 oranı denkleme uyar). Kc = [Y]^2 / [X] = (0,8)^2 / 0,1 = 0,64 / 0,1 = 6,4. Üs alınmazsa 0,8 / 0,1 = 8; [Y] yerine X'teki azalma (0,4) alınırsa 0,16 / 0,1 = 1,6; başlangıç derişimi [X] = 0,5 kullanılırsa 0,64 / 0,5 = 1,28; oran ters ve üssüz kurulursa 0,1 / 0,8 = 0,125 bulunur.",
+        "en": "The concentrations stop changing after 30 s; at equilibrium [X] = 0.1 M and [Y] = 0.8 M (X fell by 0.4 M while Y rose by 0.8 M, matching the 1 : 2 ratio). Kc = [Y]^2 / [X] = (0.8)^2 / 0.1 = 0.64 / 0.1 = 6.4. Forgetting the exponent gives 0.8 / 0.1 = 8; using the decrease of X (0.4) instead of [Y] gives 0.16 / 0.1 = 1.6; using the initial [X] = 0.5 gives 0.64 / 0.5 = 1.28; inverting the ratio without the exponent gives 0.1 / 0.8 = 0.125.",
+        "de": "Nach 30 s ändern sich die Konzentrationen nicht mehr; im Gleichgewicht ist [X] = 0,1 M und [Y] = 0,8 M (X nahm um 0,4 M ab, Y um 0,8 M zu – passend zum Verhältnis 1 : 2). Kc = [Y]^2 / [X] = (0,8)^2 / 0,1 = 0,64 / 0,1 = 6,4. Ohne Exponent erhält man 0,8 / 0,1 = 8; mit der Abnahme von X (0,4) statt [Y] 0,16 / 0,1 = 1,6; mit der Anfangskonzentration [X] = 0,5 erhält man 0,64 / 0,5 = 1,28; der umgekehrte Quotient ohne Exponent ergibt 0,1 / 0,8 = 0,125.",
+        "fr": "Les concentrations ne varient plus après 30 s ; à l'équilibre [X] = 0,1 M et [Y] = 0,8 M (X a diminué de 0,4 M et Y augmenté de 0,8 M, conformément au rapport 1 : 2). Kc = [Y]^2 / [X] = (0,8)^2 / 0,1 = 0,64 / 0,1 = 6,4. Oublier l'exposant donne 0,8 / 0,1 = 8 ; prendre la diminution de X (0,4) au lieu de [Y] donne 0,16 / 0,1 = 1,6 ; utiliser la concentration initiale [X] = 0,5 donne 0,64 / 0,5 = 1,28 ; inverser le rapport sans exposant donne 0,1 / 0,8 = 0,125.",
+        "ru": "После 30 с концентрации перестают меняться; в равновесии [X] = 0,1 M, [Y] = 0,8 M (X убыл на 0,4 M, а Y прибавился на 0,8 M — соотношение 1 : 2 соответствует уравнению). Kc = [Y]^2 / [X] = (0,8)^2 / 0,1 = 0,64 / 0,1 = 6,4. Без показателя степени получается 0,8 / 0,1 = 8; если вместо [Y] взять убыль X (0,4) — 0,16 / 0,1 = 1,6; с начальной концентрацией [X] = 0,5 — 0,64 / 0,5 = 1,28; перевёрнутое отношение без степени даёт 0,1 / 0,8 = 0,125.",
+        "ar": "تتوقف التراكيز عن التغير بعد 30 s؛ وعند الاتزان [X] = 0.1 M و[Y] = 0.8 M (نقص X بمقدار 0.4 M وزاد Y بمقدار 0.8 M، وهذا يطابق النسبة 1 : 2). Kc = [Y]^2 / [X] = (0.8)^2 / 0.1 = 0.64 / 0.1 = 6.4. إهمال الأس يعطي 0.8 / 0.1 = 8، واستعمال نقص X (0.4) بدل [Y] يعطي 0.16 / 0.1 = 1.6، واستعمال التركيز الابتدائي [X] = 0.5 يعطي 0.64 / 0.5 = 1.28، وقلب النسبة دون أس يعطي 0.1 / 0.8 = 0.125.",
+        "zh": "30 s 后浓度不再变化；平衡时 [X] = 0.1 M，[Y] = 0.8 M（X 减少 0.4 M，Y 增加 0.8 M，符合 1 : 2 的关系）。Kc = [Y]^2 / [X] = (0.8)^2 / 0.1 = 0.64 / 0.1 = 6.4。忘记指数得 0.8 / 0.1 = 8；用 X 的减少量 (0.4) 代替 [Y] 得 0.16 / 0.1 = 1.6；用起始浓度 [X] = 0.5 得 0.64 / 0.5 = 1.28；比值倒置且不取指数得 0.1 / 0.8 = 0.125。",
+        "ku": "Piştî 30 s tîrbûn êdî naguherin; di hevsengiyê de [X] = 0,1 M û [Y] = 0,8 M e (X 0,4 M kêm bûye, Y 0,8 M zêde bûye; ev rêjeya 1 : 2 li hevkêşeyê tê). Kc = [Y]^2 / [X] = (0,8)^2 / 0,1 = 0,64 / 0,1 = 6,4. Bêyî hêzê 0,8 / 0,1 = 8; li şûna [Y] kêmbûna X (0,4) bê girtin 0,16 / 0,1 = 1,6; tîrbûna destpêkê [X] = 0,5 bê bikaranîn 0,64 / 0,5 = 1,28; rêje berevajî û bêyî hêz bê danîn 0,1 / 0,8 = 0,125 tê dîtin."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman (s)",
+          "en": "Time (s)",
+          "de": "Zeit (s)",
+          "fr": "Temps (s)",
+          "ru": "Время (с)",
+          "ar": "الزمن (s)",
+          "zh": "时间 (s)",
+          "ku": "Dem (s)"
+        },
+        "yLabel": {
+          "tr": "Derişim (mol/L)",
+          "en": "Concentration (mol/L)",
+          "de": "Konzentration (mol/L)",
+          "fr": "Concentration (mol/L)",
+          "ru": "Концентрация (моль/л)",
+          "ar": "التركيز (mol/L)",
+          "zh": "浓度 (mol/L)",
+          "ku": "Tîrbûn (mol/L)"
+        },
+        "xMax": 50,
+        "yMax": 0.9,
+        "xTicks": [
+          10,
+          20,
+          30,
+          40
+        ],
+        "yTicks": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                0.5
+              ],
+              [
+                5,
+                0.36
+              ],
+              [
+                10,
+                0.26
+              ],
+              [
+                15,
+                0.19
+              ],
+              [
+                20,
+                0.14
+              ],
+              [
+                25,
+                0.115
+              ],
+              [
+                30,
+                0.1
+              ],
+              [
+                50,
+                0.1
+              ]
+            ],
+            "label": "X"
+          },
+          {
+            "points": [
+              [
+                0,
+                0.0
+              ],
+              [
+                5,
+                0.28
+              ],
+              [
+                10,
+                0.48
+              ],
+              [
+                15,
+                0.62
+              ],
+              [
+                20,
+                0.72
+              ],
+              [
+                25,
+                0.77
+              ],
+              [
+                30,
+                0.8
+              ],
+              [
+                50,
+                0.8
+              ]
+            ],
+            "label": "Y",
+            "tone": 1
+          }
+        ]
       }
     },
     {
@@ -1217,7 +1335,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "В закрытом сосуде постоянного объёма 2 л 1 моль H2 и 1 моль I2 (газы) реагируют при определённой температуре по уравнению H2(г) + I2(г) ⇌ 2HI(г). В состоянии равновесия в сосуде находится 1,2 моль HI. Чему равна константа равновесия Kc (через концентрации) при этой температуре?",
         "ar": "في وعاء مغلق ثابت الحجم سعته 2 L، يتفاعل 1 mol من غاز H2 مع 1 mol من غاز I2 عند درجة حرارة معينة وفق H2(g) + I2(g) ⇌ 2HI(g). عند الاتزان يحتوي الوعاء على 1.2 mol من HI. ما قيمة ثابت الاتزان بدلالة التراكيز (Kc) عند هذه الدرجة؟",
         "zh": "在容积为 2 L 的密闭刚性容器中，1 mol H2 气体与 1 mol I2 气体在一定温度下按 H2(g) + I2(g) ⇌ 2HI(g) 反应。达到平衡时容器中有 1.2 mol HI。该温度下以浓度表示的平衡常数 Kc 是多少？",
-        "ku": "Di firaxeke girtî ya 2 lîtreyî ya bi qebareya sabît de, 1 mol gaza H2 û 1 mol gaza I2 di germahiyeke diyar de li gorî hevkêşeya H2(g) + I2(g) ⇌ 2HI(g) dikevin reaksiyonê. Dema sîstem digihîje hevsengiyê, di firaxê de 1,2 mol HI heye. Li gorî vê, di vê germahiyê de sabîta hevsengiyê ya bi tîrbûnan (Kc) çend e?"
+        "ku": "Di firaxeke girtî ya 2 lîtreyî ya bi qebareya sabît de, 1 mol gaza H2 û 1 mol gaza I2 di germahiyeke diyar de li gorî hevkêşeya H2(g) + I2(g) ⇌ 2HI(g) dikevin reaksiyonê. Dema sîstem digihîje hevsengiyê, di firaxê de 1,2 mol HI heye. Di vê germahiyê de sabîta hevsengiyê ya bi tîrbûnan (Kc) çend e?"
       },
       "options": [
         {
@@ -1286,14 +1404,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin04",
       "stem": {
-        "tr": "Belirli bir sıcaklıkta 2SO3(g) ⇌ 2SO2(g) + O2(g) tepkimesinin derişimler cinsinden denge sabiti Kc = 0,1'dir. Aynı sıcaklıkta sabit hacimli 2 litrelik bir kaba 2 mol SO3, 2 mol SO2 ve 1 mol O2 gazları konuluyor. Buna göre bu sistemle ilgili aşağıdakilerden hangisi doğrudur?",
+        "tr": "Belirli bir sıcaklıkta 2SO3(g) ⇌ 2SO2(g) + O2(g) tepkimesinin derişimler cinsinden denge sabiti Kc = 0,1'dir. Aynı sıcaklıkta sabit hacimli 2 litrelik bir kaba 2 mol SO3, 2 mol SO2 ve 1 mol O2 gazları konuluyor. Bu sistemle ilgili aşağıdakilerden hangisi doğrudur?",
         "en": "At a certain temperature the equilibrium constant in terms of concentrations for 2SO3(g) ⇌ 2SO2(g) + O2(g) is Kc = 0.1. At the same temperature, 2 mol SO3, 2 mol SO2 and 1 mol O2 gases are placed in a rigid 2-litre container. Which of the following is correct about this system?",
         "de": "Bei einer bestimmten Temperatur beträgt die Gleichgewichtskonstante bezüglich der Konzentrationen für 2SO3(g) ⇌ 2SO2(g) + O2(g) Kc = 0,1. Bei derselben Temperatur werden 2 mol SO3, 2 mol SO2 und 1 mol O2 in ein starres 2-Liter-Gefäß gegeben. Welche der folgenden Aussagen über dieses System ist richtig?",
         "fr": "À une certaine température, la constante d’équilibre en concentrations de 2SO3(g) ⇌ 2SO2(g) + O2(g) vaut Kc = 0,1. À la même température, on introduit 2 mol de SO3, 2 mol de SO2 et 1 mol de O2 gazeux dans un récipient rigide de 2 litres. Laquelle des affirmations suivantes sur ce système est correcte ?",
         "ru": "При определённой температуре константа равновесия (через концентрации) реакции 2SO3(г) ⇌ 2SO2(г) + O2(г) равна Kc = 0,1. При той же температуре в сосуд постоянного объёма 2 л помещают 2 моль SO3, 2 моль SO2 и 1 моль O2. Какое из утверждений об этой системе верно?",
         "ar": "عند درجة حرارة معينة يكون ثابت الاتزان بدلالة التراكيز للتفاعل 2SO3(g) ⇌ 2SO2(g) + O2(g) هو Kc = 0.1. عند الدرجة نفسها وُضع 2 mol من SO3 و2 mol من SO2 و1 mol من O2 في وعاء ثابت الحجم سعته 2 L. أي العبارات التالية صحيحة بشأن هذا النظام؟",
         "zh": "某温度下反应 2SO3(g) ⇌ 2SO2(g) + O2(g) 以浓度表示的平衡常数 Kc = 0.1。在同一温度下，向 2 L 刚性容器中加入 2 mol SO3、2 mol SO2 和 1 mol O2。下列关于该体系的说法哪一项正确？",
-        "ku": "Di germahiyeke diyar de sabîta hevsengiyê ya bi tîrbûnan a reaksiyona 2SO3(g) ⇌ 2SO2(g) + O2(g) Kc = 0,1 e. Di heman germahiyê de 2 mol SO3, 2 mol SO2 û 1 mol O2 dikevin firaxeke 2 lîtreyî ya bi qebareya sabît. Li gorî vê, derbarê vê sîstemê de kîjan ji van rast e?"
+        "ku": "Di germahiyeke diyar de sabîta hevsengiyê ya bi tîrbûnan a reaksiyona 2SO3(g) ⇌ 2SO2(g) + O2(g) Kc = 0,1 e. Di heman germahiyê de 2 mol SO3, 2 mol SO2 û 1 mol O2 dikevin firaxeke 2 lîtreyî ya bi qebareya sabît. Derbarê vê sîstemê de kîjan ji van rast e?"
       },
       "options": [
         {
@@ -1438,14 +1556,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin06",
       "stem": {
-        "tr": "PCl5(g) ⇌ PCl3(g) + Cl2(g) tepkimesinin 227 °C'deki derişimler cinsinden denge sabiti Kc = 0,05'tir. Buna göre aynı sıcaklıkta kısmi basınçlar cinsinden denge sabiti Kp kaçtır? (R = 0,082 L·atm/(mol·K))",
+        "tr": "PCl5(g) ⇌ PCl3(g) + Cl2(g) tepkimesinin 227 °C'deki derişimler cinsinden denge sabiti Kc = 0,05'tir. Aynı sıcaklıkta kısmi basınçlar cinsinden denge sabiti Kp kaçtır? (R = 0,082 L·atm/(mol·K))",
         "en": "The equilibrium constant in terms of concentrations for PCl5(g) ⇌ PCl3(g) + Cl2(g) at 227 °C is Kc = 0.05. What is the equilibrium constant in terms of partial pressures, Kp, at the same temperature? (R = 0.082 L·atm/(mol·K))",
         "de": "Die Gleichgewichtskonstante bezüglich der Konzentrationen für PCl5(g) ⇌ PCl3(g) + Cl2(g) beträgt bei 227 °C Kc = 0,05. Wie groß ist die Gleichgewichtskonstante bezüglich der Partialdrücke, Kp, bei derselben Temperatur? (R = 0,082 L·atm/(mol·K))",
         "fr": "La constante d’équilibre en concentrations de PCl5(g) ⇌ PCl3(g) + Cl2(g) à 227 °C vaut Kc = 0,05. Quelle est la constante d’équilibre en pressions partielles, Kp, à la même température ? (R = 0,082 L·atm/(mol·K))",
         "ru": "Константа равновесия (через концентрации) реакции PCl5(г) ⇌ PCl3(г) + Cl2(г) при 227 °C равна Kc = 0,05. Чему равна константа равновесия Kp (через парциальные давления) при той же температуре? (R = 0,082 л·атм/(моль·K))",
         "ar": "ثابت الاتزان بدلالة التراكيز للتفاعل PCl5(g) ⇌ PCl3(g) + Cl2(g) عند 227 °C هو Kc = 0.05. ما قيمة ثابت الاتزان بدلالة الضغوط الجزئية Kp عند الدرجة نفسها؟ (R = 0.082 L·atm/(mol·K))",
         "zh": "反应 PCl5(g) ⇌ PCl3(g) + Cl2(g) 在 227 °C 时以浓度表示的平衡常数 Kc = 0.05。同温度下以分压表示的平衡常数 Kp 是多少？(R = 0.082 L·atm/(mol·K))",
-        "ku": "Sabîta hevsengiyê ya bi tîrbûnan a reaksiyona PCl5(g) ⇌ PCl3(g) + Cl2(g) li 227 °C Kc = 0,05 e. Li gorî vê, di heman germahiyê de sabîta hevsengiyê ya bi zextên parçeyî (Kp) çend e? (R = 0,082 L·atm/(mol·K))"
+        "ku": "Sabîta hevsengiyê ya bi tîrbûnan a reaksiyona PCl5(g) ⇌ PCl3(g) + Cl2(g) li 227 °C Kc = 0,05 e. Di heman germahiyê de sabîta hevsengiyê ya bi zextên parçeyî (Kp) çend e? (R = 0,082 L·atm/(mol·K))"
       },
       "options": [
         {
@@ -1514,14 +1632,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin07",
       "stem": {
-        "tr": "Aynı sıcaklıkta X2(g) + Y2(g) ⇌ 2XY(g) tepkimesinin denge sabiti Kc1 = 4·10^-2, 2XY(g) + Y2(g) ⇌ 2XY2(g) tepkimesinin denge sabiti Kc2 = 2,5·10^-1'dir. Buna göre aynı sıcaklıkta XY2(g) ⇌ 1/2 X2(g) + Y2(g) tepkimesinin denge sabiti kaçtır?",
+        "tr": "Aynı sıcaklıkta X2(g) + Y2(g) ⇌ 2XY(g) tepkimesinin denge sabiti Kc1 = 4·10^-2, 2XY(g) + Y2(g) ⇌ 2XY2(g) tepkimesinin denge sabiti Kc2 = 2,5·10^-1'dir. Aynı sıcaklıkta XY2(g) ⇌ 1/2 X2(g) + Y2(g) tepkimesinin denge sabiti kaçtır?",
         "en": "At the same temperature, the equilibrium constant of X2(g) + Y2(g) ⇌ 2XY(g) is Kc1 = 4·10^-2 and that of 2XY(g) + Y2(g) ⇌ 2XY2(g) is Kc2 = 2.5·10^-1. What is the equilibrium constant of XY2(g) ⇌ 1/2 X2(g) + Y2(g) at the same temperature?",
         "de": "Bei derselben Temperatur beträgt die Gleichgewichtskonstante von X2(g) + Y2(g) ⇌ 2XY(g) Kc1 = 4·10^-2 und die von 2XY(g) + Y2(g) ⇌ 2XY2(g) Kc2 = 2,5·10^-1. Wie groß ist die Gleichgewichtskonstante von XY2(g) ⇌ 1/2 X2(g) + Y2(g) bei derselben Temperatur?",
         "fr": "À la même température, la constante d’équilibre de X2(g) + Y2(g) ⇌ 2XY(g) vaut Kc1 = 4·10^-2 et celle de 2XY(g) + Y2(g) ⇌ 2XY2(g) vaut Kc2 = 2,5·10^-1. Quelle est la constante d’équilibre de XY2(g) ⇌ 1/2 X2(g) + Y2(g) à la même température ?",
         "ru": "При одной и той же температуре константа равновесия реакции X2(г) + Y2(г) ⇌ 2XY(г) равна Kc1 = 4·10^-2, а реакции 2XY(г) + Y2(г) ⇌ 2XY2(г) — Kc2 = 2,5·10^-1. Чему равна константа равновесия реакции XY2(г) ⇌ 1/2 X2(г) + Y2(г) при той же температуре?",
         "ar": "عند درجة الحرارة نفسها، ثابت اتزان التفاعل X2(g) + Y2(g) ⇌ 2XY(g) هو Kc1 = 4·10^-2، وثابت اتزان التفاعل 2XY(g) + Y2(g) ⇌ 2XY2(g) هو Kc2 = 2.5·10^-1. ما ثابت اتزان التفاعل XY2(g) ⇌ 1/2 X2(g) + Y2(g) عند الدرجة نفسها؟",
         "zh": "同一温度下，反应 X2(g) + Y2(g) ⇌ 2XY(g) 的平衡常数 Kc1 = 4·10^-2，反应 2XY(g) + Y2(g) ⇌ 2XY2(g) 的平衡常数 Kc2 = 2.5·10^-1。同温度下反应 XY2(g) ⇌ 1/2 X2(g) + Y2(g) 的平衡常数是多少？",
-        "ku": "Di heman germahiyê de sabîta hevsengiyê ya reaksiyona X2(g) + Y2(g) ⇌ 2XY(g) Kc1 = 4·10^-2 û ya reaksiyona 2XY(g) + Y2(g) ⇌ 2XY2(g) Kc2 = 2,5·10^-1 e. Li gorî vê, di heman germahiyê de sabîta hevsengiyê ya reaksiyona XY2(g) ⇌ 1/2 X2(g) + Y2(g) çend e?"
+        "ku": "Di heman germahiyê de sabîta hevsengiyê ya reaksiyona X2(g) + Y2(g) ⇌ 2XY(g) Kc1 = 4·10^-2 û ya reaksiyona 2XY(g) + Y2(g) ⇌ 2XY2(g) Kc2 = 2,5·10^-1 e. Di heman germahiyê de sabîta hevsengiyê ya reaksiyona XY2(g) ⇌ 1/2 X2(g) + Y2(g) çend e?"
       },
       "options": [
         {
@@ -1742,14 +1860,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin10",
       "stem": {
-        "tr": "Gaz fazında gerçekleşen bir tepkimenin derişimler cinsinden denge sabiti 300 K'de 50, 500 K'de 2'dir. Buna göre bu tepkime ile ilgili I. Tepkime ekzotermiktir. II. Sıcaklık artırıldığında ileri tepkimenin hızı azalır. III. İleri tepkimenin aktifleşme enerjisi geri tepkimeninkinden büyüktür. yargılarından hangileri doğrudur?",
-        "en": "For a gas-phase reaction, the equilibrium constant in terms of concentrations is 50 at 300 K and 2 at 500 K. Which of the following statements about this reaction are correct? I. The reaction is exothermic. II. When the temperature is raised, the rate of the forward reaction decreases. III. The activation energy of the forward reaction is greater than that of the reverse reaction.",
-        "de": "Für eine Gasphasenreaktion beträgt die Gleichgewichtskonstante bezüglich der Konzentrationen bei 300 K 50 und bei 500 K 2. Welche der folgenden Aussagen über diese Reaktion sind richtig? I. Die Reaktion ist exotherm. II. Bei Temperaturerhöhung nimmt die Geschwindigkeit der Hinreaktion ab. III. Die Aktivierungsenergie der Hinreaktion ist größer als die der Rückreaktion.",
-        "fr": "Pour une réaction en phase gazeuse, la constante d’équilibre en concentrations vaut 50 à 300 K et 2 à 500 K. Parmi les affirmations suivantes sur cette réaction, lesquelles sont correctes ? I. La réaction est exothermique. II. Quand la température augmente, la vitesse de la réaction directe diminue. III. L’énergie d’activation de la réaction directe est supérieure à celle de la réaction inverse.",
-        "ru": "Константа равновесия (через концентрации) газофазной реакции равна 50 при 300 K и 2 при 500 K. Какие из утверждений об этой реакции верны? I. Реакция экзотермическая. II. При повышении температуры скорость прямой реакции уменьшается. III. Энергия активации прямой реакции больше, чем обратной.",
-        "ar": "لتفاعل يجري في الطور الغازي، ثابت الاتزان بدلالة التراكيز يساوي 50 عند 300 K و2 عند 500 K. أي العبارات التالية حول هذا التفاعل صحيحة؟ I. التفاعل طارد للحرارة. II. عند رفع درجة الحرارة تقل سرعة التفاعل الأمامي. III. طاقة تنشيط التفاعل الأمامي أكبر من طاقة تنشيط التفاعل العكسي.",
-        "zh": "某气相反应以浓度表示的平衡常数在 300 K 时为 50，在 500 K 时为 2。关于该反应有下列说法：I. 该反应是放热反应。II. 升高温度时正反应速率减小。III. 正反应的活化能大于逆反应的活化能。其中正确的是哪些？",
-        "ku": "Sabîta hevsengiyê ya bi tîrbûnan a reaksiyoneke di fazê gaz de li 300 K 50 û li 500 K 2 ye. Li gorî vê, derbarê vê reaksiyonê de kîjan ji van gotinan rast in? I. Reaksiyon ekzotermîk e. II. Dema germahî tê bilindkirin, leza reaksiyona pêşve kêm dibe. III. Enerjiya aktîvasyonê ya reaksiyona pêşve ji ya reaksiyona paşve mezintir e."
+        "tr": "Tabloda gaz fazında gerçekleşen bir tepkimenin derişimler cinsinden denge sabitinin (Kc) farklı sıcaklıklardaki değerleri verilmiştir. Bu tepkimeyle ilgili I. Tepkime ekzotermiktir. II. Sıcaklık artırıldığında ileri tepkimenin hızı azalır. III. İleri tepkimenin aktifleşme enerjisi geri tepkimeninkinden büyüktür. yargılarından hangileri doğrudur?",
+        "en": "The table gives the equilibrium constant in terms of concentrations (Kc) of a gas-phase reaction at different temperatures. I. The reaction is exothermic. II. Raising the temperature decreases the rate of the forward reaction. III. The activation energy of the forward reaction is larger than that of the reverse reaction. Which of these statements about the reaction are correct?",
+        "de": "Die Tabelle gibt die Gleichgewichtskonstante Kc einer Gasphasenreaktion bei verschiedenen Temperaturen an. I. Die Reaktion ist exotherm. II. Eine Temperaturerhöhung verringert die Geschwindigkeit der Hinreaktion. III. Die Aktivierungsenergie der Hinreaktion ist größer als die der Rückreaktion. Welche Aussagen über diese Reaktion sind richtig?",
+        "fr": "Le tableau donne la constante d'équilibre en concentrations (Kc) d'une réaction en phase gazeuse à différentes températures. I. La réaction est exothermique. II. Une hausse de température diminue la vitesse de la réaction directe. III. L'énergie d'activation de la réaction directe est supérieure à celle de la réaction inverse. Lesquelles de ces affirmations sur la réaction sont exactes ?",
+        "ru": "В таблице приведены значения концентрационной константы равновесия Kc газофазной реакции при разных температурах. I. Реакция экзотермическая. II. При повышении температуры скорость прямой реакции уменьшается. III. Энергия активации прямой реакции больше, чем обратной. Какие утверждения об этой реакции верны?",
+        "ar": "يعطي الجدول قيم ثابت الاتزان بدلالة التراكيز (Kc) لتفاعل في الطور الغازي عند درجات حرارة مختلفة. I. التفاعل طارد للحرارة. II. رفع درجة الحرارة يقلل سرعة التفاعل الأمامي. III. طاقة تنشيط التفاعل الأمامي أكبر من طاقة تنشيط التفاعل العكسي. أيّ هذه العبارات عن التفاعل صحيحة؟",
+        "zh": "表中给出了某气相反应在不同温度下以浓度表示的平衡常数 Kc。I. 该反应是放热反应。II. 升高温度时正反应速率减小。III. 正反应的活化能大于逆反应的活化能。关于该反应的上述说法中哪些正确？",
+        "ku": "Tablo nirxên sabîta hevsengiyê ya bi tîrbûnan (Kc) a reaksiyoneke di fazê gaz de li germahiyên cuda dide. I. Reaksiyon ekzotermîk e. II. Dema germahî tê bilindkirin leza reaksiyona pêşve kêm dibe. III. Enerjiya aktîvasyonê ya reaksiyona pêşve ji ya reaksiyona paşve mezintir e. Derbarê vê reaksiyonê de kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1813,95 +1931,267 @@ export const unit18: ChemistryUnitSeedData = {
         "ar": "I صحيحة: تقل Kc مع ارتفاع درجة الحرارة، أي أن الاتزان ينزاح نحو المتفاعلات، وهذه سمة التفاعل الطارد للحرارة. II خاطئة: رفع درجة الحرارة يسرّع التفاعلين الأمامي والعكسي معًا؛ لكن العكسي يتسارع أكثر فينزاح الاتزان نحو المتفاعلات. III خاطئة: في التفاعل الطارد للحرارة ΔH = Ea(الأمامي) - Ea(العكسي) < 0، لذا طاقة تنشيط التفاعل العكسي هي الأكبر.",
         "zh": "I 正确：温度升高 Kc 减小，说明平衡向逆反应方向移动，这是放热反应的特征。II 错误：升高温度使正、逆反应速率都增大，只是逆反应增大得更多，所以平衡逆向移动。III 错误：放热反应 ΔH = Ea(正) - Ea(逆) < 0，所以逆反应的活化能更大。",
         "ku": "I rast e: ji ber ku bi bilindbûna germahiyê Kc piçûk dibe, hevsengî ber bi reaktantan ve diçe; ev taybetmendiya reaksiyona ekzotermîk e. II şaş e: bilindbûna germahiyê hem reaksiyona pêşve hem jî ya paşve bileztir dike; ji ber ku reaksiyona paşve bêtir bilez dibe, hevsengî ber bi reaktantan ve diçe. III şaş e: di reaksiyona ekzotermîk de ΔH = Ea(pêşve) - Ea(paşve) < 0 e, ji ber vê yekê enerjiya aktîvasyonê ya reaksiyona paşve mezintir e."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Sıcaklık (K)",
+            "en": "Temperature (K)",
+            "de": "Temperatur (K)",
+            "fr": "Température (K)",
+            "ru": "Температура (K)",
+            "ar": "درجة الحرارة (K)",
+            "zh": "温度 (K)",
+            "ku": "Germahî (K)"
+          },
+          "Kc"
+        ],
+        "rows": [
+          [
+            "300",
+            "50"
+          ],
+          [
+            "400",
+            "10"
+          ],
+          [
+            "500",
+            "2"
+          ]
+        ]
       }
     },
     {
       "id": "u18-twin11",
       "stem": {
-        "tr": "X(g) + Y(g) ⇌ Z(g) tepkimesi sabit hacimli bir kapta dengededir. Sabit sıcaklıkta kaba bir miktar X gazı ekleniyor. Yeni denge kurulduğunda X, Y ve Z gazlarının derişimleri ilk dengedeki değerlerine göre nasıl değişmiştir?",
-        "en": "The reaction X(g) + Y(g) ⇌ Z(g) is at equilibrium in a rigid container. Some X gas is added at constant temperature. When the new equilibrium is established, how have the concentrations of X, Y and Z changed compared with the first equilibrium?",
-        "de": "Die Reaktion X(g) + Y(g) ⇌ Z(g) befindet sich in einem starren Gefäß im Gleichgewicht. Bei konstanter Temperatur wird etwas X-Gas zugegeben. Wie haben sich die Konzentrationen von X, Y und Z im neuen Gleichgewicht gegenüber dem ersten Gleichgewicht verändert?",
-        "fr": "La réaction X(g) + Y(g) ⇌ Z(g) est à l’équilibre dans un récipient rigide. On ajoute un peu de gaz X à température constante. Une fois le nouvel équilibre établi, comment les concentrations de X, Y et Z ont-elles varié par rapport au premier équilibre ?",
-        "ru": "Реакция X(г) + Y(г) ⇌ Z(г) находится в равновесии в сосуде постоянного объёма. При постоянной температуре в сосуд добавляют немного газа X. Как изменятся концентрации X, Y и Z в новом равновесии по сравнению с первоначальным?",
-        "ar": "التفاعل X(g) + Y(g) ⇌ Z(g) في حالة اتزان داخل وعاء ثابت الحجم. أضيفت كمية من غاز X عند ثبات درجة الحرارة. عند تكوّن الاتزان الجديد، كيف تغيرت تراكيز X وY وZ مقارنة بالاتزان الأول؟",
-        "zh": "反应 X(g) + Y(g) ⇌ Z(g) 在刚性容器中处于平衡。恒温下向容器中加入一些 X 气体。建立新平衡后，X、Y、Z 的浓度与原平衡相比如何变化？",
-        "ku": "Reaksiyona X(g) + Y(g) ⇌ Z(g) di firaxeke bi qebareya sabît de di hevsengiyê de ye. Di germahiya sabît de hinek gaza X li firaxê tê zêdekirin. Dema hevsengiya nû saz dibe, tîrbûnên gazên X, Y û Z li gorî nirxên hevsengiya yekem çawa guherîne?"
+        "tr": "Şekildeki grafik, sabit hacimli bir kapta sabit sıcaklıkta dengede bulunan X(g) + Y(g) ⇌ Z(g) sistemine t1 anında bir etki yapılmasından sonra derişimlerin zamanla değişimini göstermektedir. I. t1 anında kaba Z gazı eklenmiştir. II. t1–t2 aralığında geri tepkimenin hızı ileri tepkimenin hızından büyüktür. III. t2'den sonraki yeni dengede Kc değeri ilk dengedekinden büyüktür. yargılarından hangileri doğrudur?",
+        "en": "The graph shows how the concentrations change with time after the system X(g) + Y(g) ⇌ Z(g), at equilibrium in a rigid container at constant temperature, is disturbed at time t1. I. Gas Z was added to the container at t1. II. Between t1 and t2 the rate of the reverse reaction is greater than that of the forward reaction. III. In the new equilibrium after t2, Kc is larger than in the first equilibrium. Which of these statements are correct?",
+        "de": "Das Diagramm zeigt die zeitliche Änderung der Konzentrationen, nachdem das System X(g) + Y(g) ⇌ Z(g), das sich in einem Gefäß mit konstantem Volumen bei konstanter Temperatur im Gleichgewicht befindet, zum Zeitpunkt t1 gestört wurde. I. Zum Zeitpunkt t1 wurde Gas Z zugegeben. II. Zwischen t1 und t2 ist die Rückreaktion schneller als die Hinreaktion. III. Im neuen Gleichgewicht nach t2 ist Kc größer als im ersten Gleichgewicht. Welche Aussagen sind richtig?",
+        "fr": "Le graphique montre l'évolution des concentrations après que le système X(g) + Y(g) ⇌ Z(g), à l'équilibre dans un récipient de volume constant à température constante, a été perturbé à l'instant t1. I. Du gaz Z a été ajouté au récipient à t1. II. Entre t1 et t2, la vitesse de la réaction inverse est supérieure à celle de la réaction directe. III. Dans le nouvel équilibre après t2, Kc est plus grand que dans le premier équilibre. Lesquelles de ces affirmations sont exactes ?",
+        "ru": "На графике показано изменение концентраций во времени после того, как на систему X(г) + Y(г) ⇌ Z(г), находившуюся в равновесии в сосуде постоянного объёма при постоянной температуре, в момент t1 было оказано воздействие. I. В момент t1 в сосуд добавили газ Z. II. В промежутке t1–t2 скорость обратной реакции больше скорости прямой. III. В новом равновесии после t2 значение Kc больше, чем в первом. Какие утверждения верны?",
+        "ar": "يبيّن الرسم البياني تغيّر التراكيز مع الزمن بعد التأثير عند اللحظة t1 في النظام X(g) + Y(g) ⇌ Z(g) المتزن في وعاء ثابت الحجم عند درجة حرارة ثابتة. I. أُضيف غاز Z إلى الوعاء عند t1. II. في الفترة t1–t2 تكون سرعة التفاعل العكسي أكبر من سرعة التفاعل الأمامي. III. في الاتزان الجديد بعد t2 تكون قيمة Kc أكبر منها في الاتزان الأول. أيّ هذه العبارات صحيحة؟",
+        "zh": "图中曲线表示：在恒温恒容容器中处于平衡的体系 X(g) + Y(g) ⇌ Z(g) 在 t1 时刻受到某种改变后，各物质浓度随时间的变化。I. t1 时向容器中加入了 Z 气体。II. t1–t2 期间逆反应速率大于正反应速率。III. t2 之后的新平衡中 Kc 比原平衡大。以上说法中哪些正确？",
+        "ku": "Grafîk guherîna tîrbûnan li gorî demê nîşan dide, piştî ku li sîstema X(g) + Y(g) ⇌ Z(g) ya di firaxeke bi qebareya sabît û germahiya sabît de di hevsengiyê de, di dema t1 de bandorek hatiye kirin. I. Di dema t1 de gaza Z li firaxê hatiye zêdekirin. II. Di navbera t1–t2 de leza reaksiyona paşve ji leza reaksiyona pêşve mezintir e. III. Di hevsengiya nû ya piştî t2 de nirxa Kc ji ya hevsengiya yekem mezintir e. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
-          "tr": "[X] artar, [Y] azalır, [Z] artar",
-          "en": "[X] increases, [Y] decreases, [Z] increases",
-          "de": "[X] steigt, [Y] sinkt, [Z] steigt",
-          "fr": "[X] augmente, [Y] diminue, [Z] augmente",
-          "ru": "[X] увеличится, [Y] уменьшится, [Z] увеличится",
-          "ar": "[X] يزداد، [Y] يقل، [Z] يزداد",
-          "zh": "[X] 增大，[Y] 减小，[Z] 增大",
-          "ku": "[X] zêde dibe, [Y] kêm dibe, [Z] zêde dibe"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "[X] azalır, [Y] azalır, [Z] artar",
-          "en": "[X] decreases, [Y] decreases, [Z] increases",
-          "de": "[X] sinkt, [Y] sinkt, [Z] steigt",
-          "fr": "[X] diminue, [Y] diminue, [Z] augmente",
-          "ru": "[X] уменьшится, [Y] уменьшится, [Z] увеличится",
-          "ar": "[X] يقل، [Y] يقل، [Z] يزداد",
-          "zh": "[X] 减小，[Y] 减小，[Z] 增大",
-          "ku": "[X] kêm dibe, [Y] kêm dibe, [Z] zêde dibe"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "[X] artar, [Y] artar, [Z] artar",
-          "en": "[X] increases, [Y] increases, [Z] increases",
-          "de": "[X] steigt, [Y] steigt, [Z] steigt",
-          "fr": "[X] augmente, [Y] augmente, [Z] augmente",
-          "ru": "[X] увеличится, [Y] увеличится, [Z] увеличится",
-          "ar": "[X] يزداد، [Y] يزداد، [Z] يزداد",
-          "zh": "[X] 增大，[Y] 增大，[Z] 增大",
-          "ku": "[X] zêde dibe, [Y] zêde dibe, [Z] zêde dibe"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "[X] değişmez, [Y] azalır, [Z] artar",
-          "en": "[X] unchanged, [Y] decreases, [Z] increases",
-          "de": "[X] unverändert, [Y] sinkt, [Z] steigt",
-          "fr": "[X] inchangée, [Y] diminue, [Z] augmente",
-          "ru": "[X] не изменится, [Y] уменьшится, [Z] увеличится",
-          "ar": "[X] لا يتغير، [Y] يقل، [Z] يزداد",
-          "zh": "[X] 不变，[Y] 减小，[Z] 增大",
-          "ku": "[X] naguhere, [Y] kêm dibe, [Z] zêde dibe"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "[X] artar, [Y] azalır, [Z] değişmez",
-          "en": "[X] increases, [Y] decreases, [Z] unchanged",
-          "de": "[X] steigt, [Y] sinkt, [Z] unverändert",
-          "fr": "[X] augmente, [Y] diminue, [Z] inchangée",
-          "ru": "[X] увеличится, [Y] уменьшится, [Z] не изменится",
-          "ar": "[X] يزداد، [Y] يقل، [Z] لا يتغير",
-          "zh": "[X] 增大，[Y] 减小，[Z] 不变",
-          "ku": "[X] zêde dibe, [Y] kêm dibe, [Z] naguhere"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Eklenen X'in bir kısmı Y ile tepkimeye girerek harcanır; denge ürünler yönüne kayar, Y azalır ve Z artar. Le Chatelier etkisi değişikliği yalnızca kısmen giderir; bu yüzden yeni dengede X derişimi ilk dengedekinden yine de fazladır, yani X'in azaldığını ya da değişmediğini düşünmek hatalıdır. Sıcaklık sabit olduğundan Kc = [Z]/([X][Y]) değişmez; X ve Z artarken Y'nin azalması bunu sağlar.",
-        "en": "Part of the added X reacts with Y and is consumed; the equilibrium shifts toward the products, Y decreases and Z increases. The Le Chatelier response only partly offsets the change, so at the new equilibrium [X] is still higher than at the first one — thinking X decreased or stayed the same is a mistake. Since the temperature is constant, Kc = [Z]/([X][Y]) does not change; the decrease in Y while X and Z rise keeps it constant.",
-        "de": "Ein Teil des zugesetzten X reagiert mit Y und wird verbraucht; das Gleichgewicht verschiebt sich zu den Produkten, Y nimmt ab und Z zu. Die Le-Chatelier-Reaktion gleicht die Störung nur teilweise aus; daher ist [X] im neuen Gleichgewicht immer noch höher als im ersten – die Annahme, X sei gesunken oder unverändert, ist falsch. Bei konstanter Temperatur bleibt Kc = [Z]/([X][Y]) gleich; die Abnahme von Y bei steigendem X und Z sorgt dafür.",
-        "fr": "Une partie du X ajouté réagit avec Y et est consommée ; l’équilibre se déplace vers les produits, Y diminue et Z augmente. La réponse de Le Chatelier ne compense la perturbation que partiellement ; au nouvel équilibre [X] reste donc plus élevée qu’au premier — penser que X a diminué ou n’a pas varié est une erreur. La température étant constante, Kc = [Z]/([X][Y]) ne change pas ; la baisse de Y pendant que X et Z augmentent le garantit.",
-        "ru": "Часть добавленного X реагирует с Y и расходуется; равновесие смещается к продуктам, [Y] уменьшается, [Z] растёт. Смещение по принципу Ле Шателье компенсирует воздействие лишь частично, поэтому в новом равновесии [X] всё же выше, чем в первоначальном; считать, что концентрация X уменьшилась или не изменилась, — ошибка. Так как температура постоянна, Kc = [Z]/([X][Y]) не меняется; это обеспечивается уменьшением [Y] при росте [X] и [Z].",
-        "ar": "يتفاعل جزء من X المضاف مع Y ويُستهلك؛ فينزاح الاتزان نحو النواتج، ويقل Y ويزداد Z. استجابة لوشاتلييه تعاكس التغيير جزئيًا فقط؛ لذا يبقى [X] في الاتزان الجديد أكبر منه في الأول، والاعتقاد بأن X قل أو لم يتغير خطأ. وبما أن درجة الحرارة ثابتة فإن Kc = [Z]/([X][Y]) لا تتغير؛ ونقصان Y مع زيادة X وZ يحقق ذلك.",
-        "zh": "加入的 X 有一部分与 Y 反应被消耗，平衡向正反应方向移动，Y 减小，Z 增大。勒夏特列原理只能部分抵消这种变化，所以新平衡时 [X] 仍高于原平衡；认为 X 减小或不变是错误的。温度不变，Kc = [Z]/([X][Y]) 不变，X 和 Z 增大而 Y 减小正好保持其不变。",
-        "ku": "Beşek ji X ya lêzêdekirî bi Y re dikeve reaksiyonê û tê xerckirin; hevsengî ber bi hilberan ve diçe, Y kêm dibe û Z zêde dibe. Bandora Le Chatelier guherînê tenê beşek jê radike; ji ber vê yekê di hevsengiya nû de tîrbûna X dîsa jî ji ya hevsengiya yekem zêdetir e, û fikra ku X kêm bûye an neguheriye şaş e. Ji ber ku germahî sabît e, Kc = [Z]/([X][Y]) naguhere; kêmbûna Y dema X û Z zêde dibin vê yekê misoger dike."
+        "tr": "I doğru: t1 anında yalnızca Z'nin derişimi dikey olarak sıçramış, X ve Y ise ancak sonradan değişmeye başlamıştır; bu, kaba Z eklendiğini gösterir. Hacim değişseydi üç gazın derişimi aynı anda sıçrardı; sıcaklık değişseydi hiçbir derişimde ani sıçrama olmazdı. II doğru: t1–t2 arasında Z azalırken X ve Y artmaktadır, yani tepkime net olarak geri yönde ilerler; bu, geri tepkimenin ileri tepkimeden hızlı olduğu anlamına gelir. III yanlış: sıcaklık sabit olduğundan Kc değişmez; eklenen Z'nin bir kısmı harcanır ama yeni dengede de [Z] / ([X][Y]) aynı değeri alır.",
+        "en": "I is correct: at t1 only [Z] jumps vertically, while X and Y start to change only afterwards; this shows that Z was added. A volume change would make all three concentrations jump at once, and a temperature change would cause no sudden jump at all. II is correct: between t1 and t2, Z decreases while X and Y increase, so the reaction proceeds net in the reverse direction, meaning the reverse reaction is faster than the forward one. III is incorrect: the temperature is constant, so Kc does not change; part of the added Z is used up, but [Z] / ([X][Y]) returns to the same value.",
+        "de": "I ist richtig: Bei t1 springt nur [Z] senkrecht nach oben, X und Y ändern sich erst danach; also wurde Z zugegeben. Eine Volumenänderung ließe alle drei Konzentrationen gleichzeitig springen, eine Temperaturänderung erzeugt keinen plötzlichen Sprung. II ist richtig: Zwischen t1 und t2 nimmt Z ab, X und Y nehmen zu; die Reaktion läuft netto rückwärts, die Rückreaktion ist also schneller als die Hinreaktion. III ist falsch: Die Temperatur ist konstant, daher ändert sich Kc nicht; ein Teil des zugegebenen Z wird verbraucht, [Z] / ([X][Y]) nimmt aber wieder denselben Wert an.",
+        "fr": "I est exacte : à t1, seule [Z] fait un saut vertical, X et Y ne varient qu'ensuite ; on a donc ajouté Z. Un changement de volume ferait sauter les trois concentrations en même temps, et un changement de température ne provoquerait aucun saut brusque. II est exacte : entre t1 et t2, Z diminue tandis que X et Y augmentent ; la réaction évolue globalement dans le sens inverse, la réaction inverse est donc plus rapide que la directe. III est fausse : la température étant constante, Kc ne change pas ; une partie du Z ajouté est consommée, mais [Z] / ([X][Y]) reprend la même valeur.",
+        "ru": "I верно: в момент t1 скачком возрастает только [Z], а X и Y начинают меняться лишь потом; значит, был добавлен Z. При изменении объёма скачком изменились бы все три концентрации, а при изменении температуры резкого скачка не было бы вовсе. II верно: в промежутке t1–t2 Z убывает, а X и Y растут, т. е. реакция в целом идёт в обратном направлении — обратная реакция быстрее прямой. III неверно: температура постоянна, поэтому Kc не меняется; часть добавленного Z расходуется, но отношение [Z] / ([X][Y]) возвращается к прежнему значению.",
+        "ar": "I صحيحة: عند t1 يقفز تركيز Z وحده قفزة رأسية، ولا يبدأ X وY بالتغير إلا بعد ذلك؛ وهذا يدل على إضافة Z. لو تغيّر الحجم لقفزت تراكيز الغازات الثلاثة معًا، ولو تغيّرت درجة الحرارة لما حدثت قفزة مفاجئة. II صحيحة: بين t1 وt2 يتناقص Z ويتزايد X وY، أي أن التفاعل يسير صافيًا في الاتجاه العكسي، فالتفاعل العكسي أسرع من الأمامي. III خاطئة: درجة الحرارة ثابتة فلا يتغير Kc؛ يُستهلك جزء من Z المضاف لكن [Z] / ([X][Y]) يعود إلى القيمة نفسها.",
+        "zh": "I 正确：t1 时只有 [Z] 垂直跃升，X 和 Y 随后才开始变化，说明加入了 Z。若改变体积，三种气体的浓度会同时跃变；若改变温度，则不会出现突然的跃变。II 正确：t1–t2 期间 Z 减少而 X、Y 增加，反应净向逆方向进行，即逆反应速率大于正反应速率。III 错误：温度不变，Kc 不变；加入的 Z 部分被消耗，[Z] / ([X][Y]) 又回到原来的数值。",
+        "ku": "I rast e: di dema t1 de tenê [Z] bi awayekî vertîkal bazdaye, X û Y paşê dest bi guherînê dikin; ev nîşan dide ku Z hatiye zêdekirin. Heke qebare biguheriya, tîrbûna her sê gazan dê bi hev re baz bidaya; heke germahî biguheriya, ti bazdaneke ji nişka ve çênedibû. II rast e: di navbera t1–t2 de Z kêm dibe û X û Y zêde dibin, yanî reaksiyon bi giştî ber bi paşve diçe; ev tê wateya ku reaksiyona paşve ji ya pêşve zûtir e. III şaş e: germahî sabît e, ji ber vê yekê Kc naguhere; beşek ji Z-ya zêdekirî tê xerckirin, lê [Z] / ([X][Y]) dîsa heman nirxê digire."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman",
+          "en": "Time",
+          "de": "Zeit",
+          "fr": "Temps",
+          "ru": "Время",
+          "ar": "الزمن",
+          "zh": "时间",
+          "ku": "Dem"
+        },
+        "yLabel": {
+          "tr": "Derişim",
+          "en": "Concentration",
+          "de": "Konzentration",
+          "fr": "Concentration",
+          "ru": "Концентрация",
+          "ar": "التركيز",
+          "zh": "浓度",
+          "ku": "Tîrbûn"
+        },
+        "xMax": 35,
+        "yMax": 1.2,
+        "xTicks": [
+          {
+            "v": 10,
+            "label": "t₁"
+          },
+          {
+            "v": 25,
+            "label": "t₂"
+          }
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                0.4
+              ],
+              [
+                10,
+                0.4
+              ],
+              [
+                13,
+                0.45
+              ],
+              [
+                16,
+                0.475
+              ],
+              [
+                20,
+                0.492
+              ],
+              [
+                25,
+                0.5
+              ],
+              [
+                35,
+                0.5
+              ]
+            ],
+            "label": "X"
+          },
+          {
+            "points": [
+              [
+                0,
+                0.2
+              ],
+              [
+                10,
+                0.2
+              ],
+              [
+                13,
+                0.25
+              ],
+              [
+                16,
+                0.275
+              ],
+              [
+                20,
+                0.292
+              ],
+              [
+                25,
+                0.3
+              ],
+              [
+                35,
+                0.3
+              ]
+            ],
+            "label": "Y",
+            "tone": 1
+          },
+          {
+            "points": [
+              [
+                0,
+                0.5
+              ],
+              [
+                10,
+                0.5
+              ],
+              [
+                10,
+                1.04
+              ],
+              [
+                13,
+                0.99
+              ],
+              [
+                16,
+                0.965
+              ],
+              [
+                20,
+                0.948
+              ],
+              [
+                25,
+                0.94
+              ],
+              [
+                35,
+                0.94
+              ]
+            ],
+            "label": "Z",
+            "tone": 2
+          }
+        ]
       }
     },
     {
       "id": "u18-twin12",
       "stem": {
-        "tr": "Sabit hacimli kapalı bir kaba yalnızca N2O4 gazı konuluyor ve kaptaki başlangıç basıncı 1 atm oluyor. Sabit sıcaklıkta N2O4(g) ⇌ 2NO2(g) dengesi kurulduğunda kaptaki toplam basınç 1,8 atm oluyor. Buna göre bu sıcaklıkta kısmi basınçlar cinsinden denge sabiti Kp kaçtır?",
-        "en": "Only N2O4 gas is placed in a closed rigid container, giving an initial pressure of 1 atm. At constant temperature the equilibrium N2O4(g) ⇌ 2NO2(g) is established and the total pressure becomes 1.8 atm. What is the equilibrium constant in terms of partial pressures, Kp, at this temperature?",
-        "de": "In ein geschlossenes, starres Gefäß wird nur N2O4-Gas gegeben; der Anfangsdruck beträgt 1 atm. Bei konstanter Temperatur stellt sich das Gleichgewicht N2O4(g) ⇌ 2NO2(g) ein und der Gesamtdruck beträgt 1,8 atm. Wie groß ist die Gleichgewichtskonstante bezüglich der Partialdrücke, Kp, bei dieser Temperatur?",
-        "fr": "On introduit uniquement du N2O4 gazeux dans un récipient fermé et rigide ; la pression initiale est de 1 atm. À température constante, l’équilibre N2O4(g) ⇌ 2NO2(g) s’établit et la pression totale devient 1,8 atm. Quelle est la constante d’équilibre en pressions partielles, Kp, à cette température ?",
-        "ru": "В закрытый сосуд постоянного объёма помещают только газ N2O4; начальное давление равно 1 атм. При постоянной температуре устанавливается равновесие N2O4(г) ⇌ 2NO2(г), и общее давление становится 1,8 атм. Чему равна константа равновесия Kp (через парциальные давления) при этой температуре?",
-        "ar": "وُضع غاز N2O4 وحده في وعاء مغلق ثابت الحجم فكان الضغط الابتدائي 1 atm. عند ثبات درجة الحرارة تكوّن الاتزان N2O4(g) ⇌ 2NO2(g) وأصبح الضغط الكلي 1.8 atm. ما قيمة ثابت الاتزان بدلالة الضغوط الجزئية Kp عند هذه الدرجة؟",
-        "zh": "向密闭刚性容器中只加入 N2O4 气体，初始压强为 1 atm。恒温下建立平衡 N2O4(g) ⇌ 2NO2(g)，总压变为 1.8 atm。该温度下以分压表示的平衡常数 Kp 是多少？",
-        "ku": "Tenê gaza N2O4 dikeve firaxeke girtî ya bi qebareya sabît û zexta destpêkê ya firaxê 1 atm e. Di germahiya sabît de dema hevsengiya N2O4(g) ⇌ 2NO2(g) saz dibe, zexta giştî ya firaxê dibe 1,8 atm. Li gorî vê, di vê germahiyê de sabîta hevsengiyê ya bi zextên parçeyî (Kp) çend e?"
+        "tr": "Sabit hacimli kapalı bir kaba yalnızca N2O4 gazı konuluyor. Sabit sıcaklıkta N2O4(g) ⇌ 2NO2(g) dengesi kurulurken kaptaki toplam basıncın zamanla değişimi şekildeki grafikte verilmiştir. Bu sıcaklıkta kısmi basınçlar cinsinden denge sabiti Kp kaçtır?",
+        "en": "Only N2O4 gas is placed in a closed rigid container. The graph shows how the total pressure in the container changes with time while the equilibrium N2O4(g) ⇌ 2NO2(g) is established at constant temperature. What is the equilibrium constant in terms of partial pressures, Kp, at this temperature?",
+        "de": "In ein geschlossenes Gefäß mit konstantem Volumen wird nur N2O4-Gas gegeben. Das Diagramm zeigt die zeitliche Änderung des Gesamtdrucks, während sich bei konstanter Temperatur das Gleichgewicht N2O4(g) ⇌ 2NO2(g) einstellt. Wie groß ist die Gleichgewichtskonstante Kp bei dieser Temperatur?",
+        "fr": "On introduit uniquement du N2O4 gazeux dans un récipient fermé de volume constant. Le graphique montre l'évolution de la pression totale au cours du temps pendant que l'équilibre N2O4(g) ⇌ 2NO2(g) s'établit à température constante. Quelle est la constante d'équilibre en pressions partielles Kp à cette température ?",
+        "ru": "В закрытый сосуд постоянного объёма помещают только газ N2O4. На графике показано изменение общего давления в сосуде во времени при установлении равновесия N2O4(г) ⇌ 2NO2(г) при постоянной температуре. Чему равна константа равновесия Kp в парциальных давлениях при этой температуре?",
+        "ar": "يوضع غاز N2O4 وحده في وعاء مغلق ثابت الحجم. يبيّن الرسم البياني تغيّر الضغط الكلي في الوعاء مع الزمن في أثناء قيام الاتزان N2O4(g) ⇌ 2NO2(g) عند درجة حرارة ثابتة. ما ثابت الاتزان بدلالة الضغوط الجزئية Kp عند هذه الدرجة؟",
+        "zh": "向密闭恒容容器中只充入 N2O4 气体。恒温下建立平衡 N2O4(g) ⇌ 2NO2(g) 的过程中，容器内总压强随时间的变化如图所示。该温度下以分压表示的平衡常数 Kp 是多少？",
+        "ku": "Tenê gaza N2O4 dikeve firaxeke girtî ya bi qebareya sabît. Dema ku di germahiya sabît de hevsengiya N2O4(g) ⇌ 2NO2(g) saz dibe, guherîna zexta giştî ya firaxê li gorî demê di grafîkê de hatiye dayîn. Di vê germahiyê de sabîta hevsengiyê ya bi zextên parçeyî Kp çend e?"
       },
       "options": [
         {
@@ -1965,6 +2255,77 @@ export const unit18: ChemistryUnitSeedData = {
         "ar": "إذا نقص ضغط N2O4 بمقدار x atm يزداد ضغط NO2 بمقدار 2x atm. الضغط الكلي: (1 - x) + 2x = 1 + x = 1.8 → x = 0.8. عند الاتزان P(N2O4) = 0.2 atm وP(NO2) = 1.6 atm. Kp = P(NO2)^2 / P(N2O4) = 2.56 / 0.2 = 12.8. إهمال الأس يعطي 1.6/0.2 = 8؛ واعتبار ضغط NO2 مساويًا x بدل 2x يعطي 0.8^2/0.2 = 3.2.",
         "zh": "若 N2O4 的分压减小 x atm，则 NO2 的分压增大 2x atm。总压：(1 - x) + 2x = 1 + x = 1.8 → x = 0.8。平衡时 P(N2O4) = 0.2 atm，P(NO2) = 1.6 atm。Kp = P(NO2)^2 / P(N2O4) = 2.56 / 0.2 = 12.8。忘记指数得 1.6/0.2 = 8；把 NO2 的分压当作 x 而不是 2x 得 0.8^2/0.2 = 3.2。",
         "ku": "Heke zexta N2O4 x atm kêm bibe, zexta NO2 2x atm zêde dibe. Zexta giştî: (1 - x) + 2x = 1 + x = 1,8 → x = 0,8. Di hevsengiyê de P(N2O4) = 0,2 atm, P(NO2) = 1,6 atm. Kp = P(NO2)^2 / P(N2O4) = 2,56 / 0,2 = 12,8. Heke hêz were jibîrkirin 1,6/0,2 = 8; heke zexta NO2 li şûna 2x wekî x were girtin 0,8^2/0,2 = 3,2 tê dîtin."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman (s)",
+          "en": "Time (s)",
+          "de": "Zeit (s)",
+          "fr": "Temps (s)",
+          "ru": "Время (с)",
+          "ar": "الزمن (s)",
+          "zh": "时间 (s)",
+          "ku": "Dem (s)"
+        },
+        "yLabel": {
+          "tr": "Toplam basınç (atm)",
+          "en": "Total pressure (atm)",
+          "de": "Gesamtdruck (atm)",
+          "fr": "Pression totale (atm)",
+          "ru": "Общее давление (атм)",
+          "ar": "الضغط الكلي (atm)",
+          "zh": "总压强 (atm)",
+          "ku": "Zexta giştî (atm)"
+        },
+        "xMax": 40,
+        "yMax": 2.2,
+        "xTicks": [
+          10,
+          20,
+          30,
+          40
+        ],
+        "yTicks": [
+          0.5,
+          1,
+          1.5,
+          1.8
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                1.38
+              ],
+              [
+                10,
+                1.6
+              ],
+              [
+                15,
+                1.72
+              ],
+              [
+                20,
+                1.78
+              ],
+              [
+                25,
+                1.8
+              ],
+              [
+                40,
+                1.8
+              ]
+            ]
+          }
+        ]
       }
     },
     {

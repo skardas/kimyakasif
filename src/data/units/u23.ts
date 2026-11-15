@@ -40,37 +40,37 @@ export const unit23: ChemistryUnitSeedData = {
         "ku": "Wöhler di sala 1828an de bi germkirina amonyûm sîyanatê (NH4OCN), ku madeyeke anorganîk e, di laboratuwarê de ure sentez kir; ev ceribandin yekem delîla girîng bû ku teoriya hêza jiyanê (vîtalîzm) hejand."
       },
       "trap": {
-        "tr": "Wöhler ilk kez canlı dokudan petrol sentezlemiştir.",
-        "en": "Wöhler synthesized oil from living tissue for the first time.",
-        "de": "Wöhler synthetisierte erstmals Öl aus lebendem Gewebe.",
-        "fr": "Wöhler a synthétisé pour la première fois de l'huile à partir de tissus vivants.",
-        "ru": "Вёлер впервые синтезировал нефть из живых тканей.",
-        "ar": "حضّر فولر النفط من الأنسجة الحية لأول مرة.",
-        "zh": "维勒首次从生物组织中合成了石油。",
-        "ku": "Wöhler cara yekem ji tevna zindî petrol sentez kir."
+        "tr": "Wöhler, üreyi canlı bir organizmadan (idrardan) elde ederek yaşam gücü (vitalizm) teorisini doğrulamıştır.",
+        "en": "Wöhler obtained urea from a living organism (urine) and thereby confirmed the vital force (vitalism) theory.",
+        "de": "Wöhler gewann Harnstoff aus einem Lebewesen (Urin) und bestätigte damit die Lebenskraftlehre (Vitalismus).",
+        "fr": "Wöhler a obtenu l'urée à partir d'un être vivant (l'urine) et a ainsi confirmé la théorie de la force vitale (vitalisme).",
+        "ru": "Вёлер получил мочевину из живого организма (из мочи) и тем самым подтвердил теорию жизненной силы (витализм).",
+        "ar": "حصل فولر على اليوريا من كائن حي (من البول) فأكّد بذلك نظرية القوة الحيوية.",
+        "zh": "维勒从生物体（尿液）中得到了尿素，从而证实了生命力学说（活力论）。",
+        "ku": "Wöhler ure ji zindiyekî (mîzê) bi dest xist û bi vî awayî teoriya hêza jiyanê (vîtalîzm) piştrast kir."
       },
       "whyTrapIsFalse": {
-        "tr": "Wöhler'in deneyinin önemi, canlı kaynak kullanmadan anorganik amonyum siyanattan organik bir madde olan üreyi elde etmesidir; deneyde ne canlı doku ne de petrol vardır.",
-        "en": "The importance of Wöhler's experiment is that he obtained urea, an organic substance, from inorganic ammonium cyanate without any living source; neither living tissue nor petroleum was involved.",
-        "de": "Die Bedeutung von Wöhlers Versuch liegt darin, dass er Harnstoff, einen organischen Stoff, ohne lebende Quelle aus anorganischem Ammoniumcyanat gewann; weder lebendes Gewebe noch Erdöl spielten eine Rolle.",
-        "fr": "L'importance de l'expérience de Wöhler est d'avoir obtenu l'urée, substance organique, à partir du cyanate d'ammonium inorganique sans aucune source vivante ; il n'y avait ni tissu vivant ni pétrole.",
-        "ru": "Значение опыта Вёлера в том, что он получил органическое вещество — мочевину — из неорганического цианата аммония без какого-либо живого источника; ни живой ткани, ни нефти в опыте не было.",
-        "ar": "تكمن أهمية تجربة فولر في أنه حصل على اليوريا، وهي مادة عضوية، من سيانات الأمونيوم غير العضوية دون أي مصدر حي؛ ولم يكن في التجربة نسيج حي ولا نفط.",
-        "zh": "维勒实验的意义在于：他不借助任何生物来源，由无机物氰酸铵得到了有机物尿素；实验中既没有生物组织，也没有石油。",
-        "ku": "Girîngiya ceribandina Wöhler ew e ku wî bêyî çavkaniyeke zindî ji amonyûm sîyanata anorganîk ure, ku madeyeke organîk e, bi dest xist; di ceribandinê de ne tevna zindî hebû, ne jî petrol."
+        "tr": "Wöhler üreyi canlı bir kaynaktan değil, anorganik amonyum siyanatı ısıtarak laboratuvarda sentezlemiştir. Bu deney organik bir maddenin yaşam gücü olmadan da elde edilebileceğini gösterdiği için vitalizmi doğrulamamış, aksine sarsmıştır.",
+        "en": "Wöhler did not take urea from a living source; he synthesised it in the laboratory by heating inorganic ammonium cyanate. Because the experiment showed that an organic substance can be made without a vital force, it shook vitalism rather than confirming it.",
+        "de": "Wöhler gewann den Harnstoff nicht aus einem Lebewesen, sondern synthetisierte ihn im Labor durch Erhitzen von anorganischem Ammoniumcyanat. Da der Versuch zeigte, dass ein organischer Stoff ohne Lebenskraft entstehen kann, erschütterte er den Vitalismus, statt ihn zu bestätigen.",
+        "fr": "Wöhler n'a pas tiré l'urée d'un être vivant : il l'a synthétisée au laboratoire en chauffant du cyanate d'ammonium, un composé inorganique. Comme l'expérience montrait qu'une substance organique peut être obtenue sans force vitale, elle a ébranlé le vitalisme au lieu de le confirmer.",
+        "ru": "Вёлер получил мочевину не из живого источника, а синтезировал её в лаборатории, нагревая неорганический цианат аммония. Опыт показал, что органическое вещество можно получить без «жизненной силы», поэтому он не подтвердил, а пошатнул витализм.",
+        "ar": "لم يحصل فولر على اليوريا من مصدر حي، بل صنّعها في المختبر بتسخين سيانات الأمونيوم غير العضوية. ولأن التجربة أظهرت أن مادة عضوية يمكن الحصول عليها دون قوة حيوية، فقد زعزعت نظرية القوة الحيوية بدل أن تؤكدها.",
+        "zh": "维勒不是从生物体中取得尿素，而是在实验室中加热无机物氰酸铵合成了尿素。该实验表明有机物无需“生命力”也能制得，因此它动摇而不是证实了活力论。",
+        "ku": "Wöhler ure ne ji çavkaniyeke zindî, lê bi germkirina amonyûm sîyanata anorganîk di laboratuvarê de sentez kir. Ji ber ku ceribandinê nîşan da ku madeyeke organîk bêyî hêza jiyanê jî dikare bê bidestxistin, vîtalîzm piştrast nekir, berevajî wê hejand."
       }
     },
     {
       "id": "u23-f02",
       "fact": {
-        "tr": "Karbon atomu uyarılmış halde 4 yarı dolu orbitale sahip olur ve hibritleşerek bileşiklerinde 4 kovalent bağ yapar.",
-        "en": "In its excited state the carbon atom has 4 half-filled orbitals; through hybridization it forms 4 covalent bonds in its compounds.",
-        "de": "Im angeregten Zustand besitzt das Kohlenstoffatom 4 halb besetzte Orbitale; durch Hybridisierung bildet es in seinen Verbindungen 4 kovalente Bindungen.",
-        "fr": "À l'état excité, l'atome de carbone possède 4 orbitales à moitié remplies ; par hybridation, il forme 4 liaisons covalentes dans ses composés.",
-        "ru": "В возбуждённом состоянии атом углерода имеет 4 наполовину заполненные орбитали; за счёт гибридизации он образует в соединениях 4 ковалентные связи.",
-        "ar": "تمتلك ذرة الكربون في الحالة المثارة 4 مدارات نصف ممتلئة، وتكوّن بالتهجين 4 روابط تساهمية في مركباتها.",
-        "zh": "碳原子在激发态时有 4 个半充满轨道，通过杂化在化合物中形成 4 个共价键。",
-        "ku": "Atoma karbonê di rewşa heyecanbûyî de 4 orbîtalên nîvtijî hene û bi hîbrîdîzasyonê di pêkhateyên xwe de 4 girêdanên kovalent çêdike."
+        "tr": "Karbon atomu uyarılmış hâlde 4 yarı dolu orbitale sahip olur ve hibritleşerek organik bileşiklerinde 4 kovalent bağ yapar.",
+        "en": "In its excited state the carbon atom has 4 half-filled orbitals, and through hybridization it forms 4 covalent bonds in its organic compounds.",
+        "de": "Im angeregten Zustand besitzt das Kohlenstoffatom 4 halb besetzte Orbitale und bildet durch Hybridisierung in seinen organischen Verbindungen 4 kovalente Bindungen.",
+        "fr": "À l'état excité, l'atome de carbone possède 4 orbitales à moitié remplies et, par hybridation, forme 4 liaisons covalentes dans ses composés organiques.",
+        "ru": "В возбуждённом состоянии атом углерода имеет 4 наполовину заполненные орбитали и за счёт гибридизации образует в органических соединениях 4 ковалентные связи.",
+        "ar": "تمتلك ذرة الكربون في الحالة المثارة 4 أفلاك نصف ممتلئة، وتكوّن بالتهجين 4 روابط تساهمية في مركباتها العضوية.",
+        "zh": "碳原子在激发态有 4 个半充满轨道，通过杂化在有机化合物中形成 4 个共价键。",
+        "ku": "Atoma karbonê di rewşa heyecanî de 4 orbîtalên nîvdagirtî hene û bi hîbrîdbûnê di pêkhateyên xwe yên organîk de 4 girêdanên kovalent çêdike."
       },
       "trap": {
         "tr": "Karbon atomu bileşiklerinde en fazla 2 kovalent bağ yapabilir.",
@@ -139,24 +139,24 @@ export const unit23: ChemistryUnitSeedData = {
         "ku": "Grafît avahiyeke qatqatî ya şeşgoşeyî ye ku tê de atomên karbonê hîbrîdîzasyona sp2 dikin; bi saya elektronên pî yên azad elektrîkê diguhezîne."
       },
       "trap": {
-        "tr": "Grafit elektriği kesinlikle iletmez.",
-        "en": "Graphite does not conduct electricity at all.",
-        "de": "Graphit leitet überhaupt keinen Strom.",
-        "fr": "Le graphite ne conduit pas du tout l'électricité.",
-        "ru": "Графит совсем не проводит электрический ток.",
-        "ar": "الجرافيت لا يوصل الكهرباء على الإطلاق.",
-        "zh": "石墨根本不导电。",
-        "ku": "Grafît qet elektrîkê naguhezîne."
+        "tr": "Grafitte her karbon atomu dört komşu karbon atomuna bağlı olduğundan grafit elektriği iletmez.",
+        "en": "In graphite each carbon atom is bonded to four neighbouring carbon atoms, so graphite does not conduct electricity.",
+        "de": "Im Graphit ist jedes Kohlenstoffatom an vier benachbarte Kohlenstoffatome gebunden, daher leitet Graphit keinen Strom.",
+        "fr": "Dans le graphite, chaque atome de carbone est lié à quatre atomes de carbone voisins ; le graphite ne conduit donc pas l'électricité.",
+        "ru": "В графите каждый атом углерода связан с четырьмя соседними атомами углерода, поэтому графит не проводит электрический ток.",
+        "ar": "في الغرافيت ترتبط كل ذرة كربون بأربع ذرات كربون مجاورة، لذلك لا يوصل الغرافيت الكهرباء.",
+        "zh": "石墨中每个碳原子与四个相邻碳原子相连，所以石墨不导电。",
+        "ku": "Di grafîtê de her atomeke karbonê bi çar atomên karbonê yên cîran ve girêdayî ye, ji ber vê grafît elektrîkê naguhêze."
       },
       "whyTrapIsFalse": {
-        "tr": "Grafitte her C atomu yalnızca üç komşuya bağlanır; dördüncü elektron tabaka boyunca hareket edebilen pi elektronudur. Bu yüzden grafit elektriği iletir ve elektrot olarak kullanılır.",
-        "en": "In graphite each C atom bonds to only three neighbours; the fourth electron is a pi electron that can move along the layer. That is why graphite conducts electricity and is used as an electrode.",
-        "de": "Im Graphit ist jedes C-Atom nur an drei Nachbarn gebunden; das vierte Elektron ist ein pi-Elektron, das sich entlang der Schicht bewegen kann. Deshalb leitet Graphit den Strom und wird als Elektrode verwendet.",
-        "fr": "Dans le graphite, chaque atome de C n'est lié qu'à trois voisins ; le quatrième électron est un électron pi qui peut se déplacer le long du feuillet. C'est pourquoi le graphite conduit l'électricité et sert d'électrode.",
-        "ru": "В графите каждый атом C связан только с тремя соседями; четвёртый электрон — π-электрон, способный перемещаться вдоль слоя. Поэтому графит проводит электрический ток и используется для изготовления электродов.",
-        "ar": "في الجرافيت ترتبط كل ذرة C بثلاث ذرات مجاورة فقط؛ والإلكترون الرابع إلكترون باي يستطيع التحرك على امتداد الطبقة. لذلك يوصل الجرافيت الكهرباء ويُستعمل قطبًا كهربائيًا.",
-        "zh": "石墨中每个碳原子只与三个相邻碳原子成键，第四个电子是能沿层面移动的π电子。因此石墨能导电，可用作电极。",
-        "ku": "Di grafîtê de her atoma C tenê bi sê cîranan ve girêdayî ye; elektrona çaremîn elektroneke pî ye ku dikare di nav qatê de bilive. Ji ber vê grafît elektrîkê diguhezîne û wek elektrod tê bikaranîn."
+        "tr": "Grafitte her C atomu yalnızca üç komşuya sp2 ile bağlanır; dördüncü değerlik elektronu tabaka boyunca hareket edebilen pi elektronudur. Bu yüzden grafit elektriği iletir ve elektrot olarak kullanılır. Dört komşuya bağlı, iletken olmayan allotrop elmastır.",
+        "en": "In graphite each C atom is bonded to only three neighbours through sp2 orbitals; the fourth valence electron is a pi electron that can move along the layer. That is why graphite conducts electricity and is used for electrodes. The non-conducting allotrope with four neighbours per atom is diamond.",
+        "de": "Im Graphit ist jedes C-Atom über sp2-Orbitale nur an drei Nachbarn gebunden; das vierte Valenzelektron ist ein pi-Elektron, das sich entlang der Schicht bewegen kann. Deshalb leitet Graphit und wird für Elektroden verwendet. Das nichtleitende Allotrop mit vier Nachbarn pro Atom ist Diamant.",
+        "fr": "Dans le graphite, chaque atome C n'est lié qu'à trois voisins par des orbitales sp2 ; le quatrième électron de valence est un électron pi mobile le long du feuillet. C'est pourquoi le graphite conduit l'électricité et sert d'électrode. L'allotrope isolant à quatre voisins par atome est le diamant.",
+        "ru": "В графите каждый атом C связан sp2-орбиталями только с тремя соседями; четвёртый валентный электрон — пи-электрон, способный перемещаться вдоль слоя. Поэтому графит проводит ток и используется для электродов. Непроводящая модификация с четырьмя соседями у каждого атома — алмаз.",
+        "ar": "في الغرافيت ترتبط كل ذرة C بثلاث ذرات مجاورة فقط عبر أفلاك sp2؛ أما إلكترون التكافؤ الرابع فهو إلكترون باي يستطيع التحرك على امتداد الطبقة. لذلك يوصل الغرافيت الكهرباء ويُستخدم في صنع الأقطاب. والمتآصل غير الموصل الذي ترتبط فيه كل ذرة بأربع ذرات هو الألماس.",
+        "zh": "石墨中每个 C 原子只通过 sp2 轨道与三个相邻原子成键；第四个价电子是能沿层面移动的 π 电子。因此石墨能导电，可用作电极。每个原子与四个原子相连、不导电的同素异形体是金刚石。",
+        "ku": "Di grafîtê de her atomeke C tenê bi sê cîranan re bi sp2 girê dide; elektrona valansê ya çaremîn elektroneke pî ye ku dikare li ser çînê bilive. Ji ber vê grafît elektrîkê diguhêze û wek elektrod tê bikaranîn. Alotropa ne-guhêzbar a ku her atom bi çar cîranan ve girêdayî ye elmas e."
       }
     },
     {
@@ -172,24 +172,24 @@ export const unit23: ChemistryUnitSeedData = {
         "ku": "Grafen tora şaneşaneyî ya dudîmensî ya atomên karbonê ye ku stûriya wê yek atom e; yek ji materyalên herî bihêz ên naskirî ye, nermok e û elektrîkê pir baş diguhezîne."
       },
       "trap": {
-        "tr": "Grafen üç boyutlu kırılgan bir yalıtkandır.",
-        "en": "Graphene is a three-dimensional brittle insulator.",
-        "de": "Graphen ist ein dreidimensionaler spröder Isolator.",
-        "fr": "Le graphène est un isolant fragile tridimensionnel.",
-        "ru": "Графен — трёхмерный хрупкий изолятор.",
-        "ar": "الجرافين عازل هش ثلاثي الأبعاد.",
-        "zh": "石墨烯是一种三维的、脆性的绝缘体。",
-        "ku": "Grafen îzolatoreke sêdîmensî û şikestok e."
+        "tr": "Grafende karbon atomları sp3 hibritleşmesi yaptığından grafen elektriği iletmez.",
+        "en": "In graphene the carbon atoms are sp3 hybridized, so graphene does not conduct electricity.",
+        "de": "Im Graphen sind die Kohlenstoffatome sp3-hybridisiert, daher leitet Graphen keinen Strom.",
+        "fr": "Dans le graphène, les atomes de carbone sont hybridés sp3 ; le graphène ne conduit donc pas l'électricité.",
+        "ru": "В графене атомы углерода находятся в sp3-гибридизации, поэтому графен не проводит ток.",
+        "ar": "في الغرافين تكون ذرات الكربون مهجّنة sp3، لذلك لا يوصل الغرافين الكهرباء.",
+        "zh": "石墨烯中的碳原子为 sp3 杂化，所以石墨烯不导电。",
+        "ku": "Di grafenê de atomên karbonê sp3 hîbrîd in, ji ber vê grafen elektrîkê naguhêze."
       },
       "whyTrapIsFalse": {
-        "tr": "Grafen tek atom kalınlığında bir tabaka olduğu için iki boyutludur; sp2 karbonlarının hareketli pi elektronları onu çok iyi iletken yapar ve kırılgan değil, esnek ve dayanıklıdır.",
-        "en": "Graphene is a single-atom-thick sheet, so it is two-dimensional; the mobile pi electrons of its sp2 carbons make it an excellent conductor, and it is flexible and strong rather than brittle.",
-        "de": "Graphen ist eine nur ein Atom dicke Schicht und daher zweidimensional; die beweglichen pi-Elektronen seiner sp2-Kohlenstoffatome machen es zu einem sehr guten Leiter, und es ist flexibel und fest statt spröde.",
-        "fr": "Le graphène est un feuillet d'un seul atome d'épaisseur, il est donc bidimensionnel ; les électrons pi mobiles de ses carbones sp2 en font un excellent conducteur, et il est flexible et résistant, non fragile.",
-        "ru": "Графен — слой толщиной в один атом, поэтому он двумерный; подвижные π-электроны sp2-атомов углерода делают его отличным проводником, и он не хрупкий, а гибкий и прочный.",
-        "ar": "الجرافين طبقة سمكها ذرة واحدة فهو ثنائي الأبعاد؛ وإلكترونات باي المتحركة لذرات الكربون sp2 تجعله موصلًا ممتازًا، وهو مرن وقوي وليس هشًا.",
-        "zh": "石墨烯是单原子厚的片层，所以是二维的；其sp2碳原子的可移动π电子使它成为极好的导体，而且它柔韧坚固，并不脆。",
-        "ku": "Grafen qateke bi stûriya yek atomê ye, loma dudîmensî ye; elektronên pî yên tevgerbar ên karbonên wê yên sp2 wê dikin guhêzbareke pir baş, û ew ne şikestok e, nermok û bihêz e."
+        "tr": "Grafende her C atomu üç komşuya bağlıdır ve sp2 hibritleşmesi yapar; hibritleşmeye katılmayan p orbitallerindeki pi elektronları tabaka boyunca hareket edebildiği için grafen elektriği çok iyi iletir.",
+        "en": "In graphene each C atom is bonded to three neighbours and is sp2 hybridized; the pi electrons in the unhybridized p orbitals can move across the sheet, so graphene is an excellent electrical conductor.",
+        "de": "Im Graphen ist jedes C-Atom an drei Nachbarn gebunden und sp2-hybridisiert; die pi-Elektronen in den nicht hybridisierten p-Orbitalen können sich über die Schicht bewegen, daher leitet Graphen sehr gut.",
+        "fr": "Dans le graphène, chaque atome C est lié à trois voisins et hybridé sp2 ; les électrons pi des orbitales p non hybridées se déplacent dans le feuillet, d'où une excellente conductivité électrique.",
+        "ru": "В графене каждый атом C связан с тремя соседями и находится в sp2-гибридизации; пи-электроны негибридизованных p-орбиталей могут перемещаться по слою, поэтому графен прекрасно проводит ток.",
+        "ar": "في الغرافين ترتبط كل ذرة C بثلاث ذرات مجاورة وتكون مهجّنة sp2؛ وتستطيع إلكترونات باي في أفلاك p غير المهجّنة أن تتحرك على امتداد الطبقة، لذلك يوصل الغرافين الكهرباء جيدًا جدًا.",
+        "zh": "石墨烯中每个 C 原子与三个相邻原子相连，为 sp2 杂化；未参与杂化的 p 轨道中的 π 电子可在整个片层中移动，因此石墨烯导电性极好。",
+        "ku": "Di grafenê de her atomeke C bi sê cîranan ve girêdayî ye û sp2 hîbrîd e; elektronên pî yên di orbîtalên p ên ne-hîbrîd de dikarin li ser çînê bilivin, ji ber vê grafen elektrîkê pir baş diguhêze."
       }
     },
     {
@@ -228,34 +228,34 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f07",
       "fact": {
-        "tr": "İki atom arasında oluşan İLK bağ daima sigma (σ) bağıdır; sonradan oluşan ikinci ve üçüncü bağlar pi (π) bağıdır.",
-        "en": "The FIRST bond formed between two atoms is always a sigma (σ) bond; The second and third bonds formed later are pi (π) bonds.",
-        "de": "Die ERSTE Bindung zwischen zwei Atomen ist immer eine Sigma-Bindung (σ); Die später gebildeten zweiten und dritten Bindungen sind Pi (π)-Bindungen.",
-        "fr": "La PREMIÈRE liaison formée entre deux atomes est toujours une liaison sigma (σ) ; Les deuxième et troisième liaisons formées plus tard sont des liaisons pi (π).",
-        "ru": "Первая связь между двумя атомами всегда σ-связь (сигма-связь); вторая и третья связи — π-связи (пи-связи).",
-        "ar": "الرابطة الأولى التي تتكون بين ذرتين هي دائمًا رابطة سيجما (σ)؛ أما الرابطتان الثانية والثالثة اللتان تتكونان بعدها فهما رابطتا باي (π).",
-        "zh": "两个原子之间形成的第一个键总是σ键；随后形成的第二个和第三个键是π键。",
-        "ku": "Girêdana YEKEM a ku di navbera du atoman de çêdibe her tim girêdana sigma (σ) ye; girêdanên duyem û sêyem ên ku paşê çêdibin girêdanên pî (π) ne."
+        "tr": "İki atom arasındaki tekli bağ bir sigma (σ) bağıdır; ikili bağ bir sigma ve bir pi (π), üçlü bağ ise bir sigma ve iki pi bağından oluşur.",
+        "en": "A single bond between two atoms is one sigma (σ) bond; a double bond consists of one sigma and one pi (π) bond, and a triple bond of one sigma and two pi bonds.",
+        "de": "Eine Einfachbindung zwischen zwei Atomen ist eine Sigma-(σ-)Bindung; eine Doppelbindung besteht aus einer Sigma- und einer Pi-(π-)Bindung, eine Dreifachbindung aus einer Sigma- und zwei Pi-Bindungen.",
+        "fr": "Une liaison simple entre deux atomes est une liaison sigma (σ) ; une liaison double comprend une liaison sigma et une liaison pi (π), une liaison triple une liaison sigma et deux liaisons pi.",
+        "ru": "Одинарная связь между двумя атомами — это одна сигма-(σ)-связь; двойная связь состоит из одной сигма- и одной пи-(π)-связи, тройная — из одной сигма- и двух пи-связей.",
+        "ar": "الرابطة الأحادية بين ذرتين رابطة سيغما (σ) واحدة؛ والرابطة الثنائية تتكون من رابطة سيغما ورابطة باي (π)، والثلاثية من رابطة سيغما ورابطتي باي.",
+        "zh": "两个原子之间的单键是一个 σ 键；双键由一个 σ 键和一个 π 键组成，三键由一个 σ 键和两个 π 键组成。",
+        "ku": "Girêdana yekane ya di navbera du atoman de girêdaneke sîgma (σ) ye; girêdana ducar ji yek sîgma û yek pî (π), girêdana sêcar jî ji yek sîgma û du pî pêk tê."
       },
       "trap": {
-        "tr": "İki atom arasında önce pi bağı kurulur.",
-        "en": "First, a pi bond is established between two atoms.",
-        "de": "Zunächst wird eine Pi-Bindung zwischen zwei Atomen hergestellt.",
-        "fr": "Premièrement, une liaison pi s’établit entre deux atomes.",
-        "ru": "Между двумя атомами сначала образуется π-связь.",
-        "ar": "تتكون بين ذرتين رابطة باي أولًا.",
-        "zh": "两个原子之间首先形成的是π键。",
-        "ku": "Di navbera du atoman de pêşî girêdana pî çêdibe."
+        "tr": "Üçlü bağ iki sigma ve bir pi bağından oluşur.",
+        "en": "A triple bond consists of two sigma bonds and one pi bond.",
+        "de": "Eine Dreifachbindung besteht aus zwei Sigma-Bindungen und einer Pi-Bindung.",
+        "fr": "Une liaison triple est formée de deux liaisons sigma et d'une liaison pi.",
+        "ru": "Тройная связь состоит из двух сигма-связей и одной пи-связи.",
+        "ar": "تتكون الرابطة الثلاثية من رابطتي سيغما ورابطة باي واحدة.",
+        "zh": "三键由两个 σ 键和一个 π 键组成。",
+        "ku": "Girêdana sêcar ji du girêdanên sîgma û yek girêdana pî pêk tê."
       },
       "whyTrapIsFalse": {
-        "tr": "Pi bağı, iki çekirdeği birleştiren eksen üzerinde sigma bağı kurulduktan sonra p orbitallerinin yan yana örtüşmesiyle oluşur; yalnızca pi bağıyla bağlanmış bir atom çifti olmaz.",
-        "en": "A pi bond forms by side-by-side overlap of p orbitals only after a sigma bond has been formed along the axis joining the two nuclei; no pair of atoms is held by a pi bond alone.",
-        "de": "Eine pi-Bindung entsteht durch seitliche Überlappung von p-Orbitalen erst, nachdem entlang der Kernverbindungsachse eine sigma-Bindung gebildet wurde; kein Atompaar wird nur durch eine pi-Bindung zusammengehalten.",
-        "fr": "Une liaison pi se forme par recouvrement latéral d'orbitales p seulement après qu'une liaison sigma s'est établie sur l'axe joignant les deux noyaux ; aucune paire d'atomes n'est liée par une liaison pi seule.",
-        "ru": "π-связь образуется боковым перекрыванием p-орбиталей только после того, как на оси, соединяющей ядра, возникла σ-связь; пары атомов, связанных одной лишь π-связью, не бывает.",
-        "ar": "تتكون رابطة باي بالتداخل الجانبي لمدارات p فقط بعد تكوّن رابطة سيجما على المحور الواصل بين النواتين؛ ولا يوجد زوج من الذرات مرتبط برابطة باي وحدها.",
-        "zh": "π键只有在两核连线方向上先形成σ键之后，才能由p轨道“肩并肩”重叠形成；不存在只靠π键连接的两个原子。",
-        "ku": "Girêdana pî tenê piştî ku li ser eksena ku her du navokan digihîne hev girêdana sigma çêbû, bi hevgirtina kêlek bi kêlek a orbîtalên p çêdibe; tu cotê atoman tenê bi girêdana pî ve girêdayî nîne."
+        "tr": "Sigma bağı, orbitallerin iki çekirdeği birleştiren eksen boyunca uç uca örtüşmesiyle oluşur ve bu eksende yalnızca bir örtüşme mümkündür. Bu yüzden iki atom arasında en fazla bir sigma bağı bulunur; üçlü bağın diğer iki bağı p orbitallerinin yan yana örtüşmesiyle oluşan pi bağlarıdır.",
+        "en": "A sigma bond forms by end-to-end overlap of orbitals along the axis joining the two nuclei, and only one such overlap is possible along that axis. So two atoms can share at most one sigma bond; the other two bonds of a triple bond are pi bonds formed by side-by-side overlap of p orbitals.",
+        "de": "Eine Sigma-Bindung entsteht durch Überlappung der Orbitale entlang der Kernverbindungsachse, und entlang dieser Achse ist nur eine solche Überlappung möglich. Zwischen zwei Atomen gibt es daher höchstens eine Sigma-Bindung; die beiden anderen Bindungen einer Dreifachbindung sind Pi-Bindungen aus seitlich überlappenden p-Orbitalen.",
+        "fr": "Une liaison sigma résulte du recouvrement axial des orbitales le long de l'axe qui joint les deux noyaux, et un seul recouvrement de ce type est possible sur cet axe. Deux atomes partagent donc au plus une liaison sigma ; les deux autres liaisons d'une triple liaison sont des liaisons pi issues du recouvrement latéral d'orbitales p.",
+        "ru": "Сигма-связь образуется при перекрывании орбиталей вдоль оси, соединяющей ядра, а вдоль этой оси возможно только одно такое перекрывание. Поэтому между двумя атомами может быть не более одной сигма-связи; две другие связи тройной связи — пи-связи, образованные боковым перекрыванием p-орбиталей.",
+        "ar": "تتكون رابطة سيغما من تداخل الأفلاك رأسًا لرأس على المحور الواصل بين النواتين، ولا يمكن على هذا المحور إلا تداخل واحد. لذلك لا يوجد بين ذرتين أكثر من رابطة سيغما واحدة؛ أما الرابطتان الأخريان في الرابطة الثلاثية فهما رابطتا باي ناتجتان عن التداخل الجانبي لأفلاك p.",
+        "zh": "σ 键由轨道沿两核连线方向“头碰头”重叠形成，而沿这条轴只能有一次这样的重叠。所以两个原子之间最多只有一个 σ 键；三键中另外两个键是 p 轨道“肩并肩”重叠形成的 π 键。",
+        "ku": "Girêdana sîgma bi lihevketina orbîtalan a ser bi ser li ser eksena ku her du navikan digihîne hev çêdibe, û li ser vê eksenê tenê lihevketinek mimkun e. Ji ber vê di navbera du atoman de herî zêde girêdanek sîgma heye; du girêdanên din ên girêdana sêcar girêdanên pî ne ku bi lihevketina kêlekî ya orbîtalên p çêdibin."
       }
     },
     {
@@ -535,14 +535,14 @@ export const unit23: ChemistryUnitSeedData = {
         "ku": "Pêkhateyên organîk bi piranî şewitbar in, xalên wan ên helînê nizm in û reaksiyonên wan hêdî ne."
       },
       "trap": {
-        "tr": "Organik bileşikler erime noktası binlerce derece olan iyonik kristallerdir.",
-        "en": "Organic compounds are ionic crystals with melting points of thousands of degrees.",
-        "de": "Organische Verbindungen sind Ionenkristalle mit Schmelzpunkten von mehreren Tausend Grad.",
-        "fr": "Les composés organiques sont des cristaux ioniques dont le point de fusion atteint des milliers de degrés.",
-        "ru": "Органические соединения — ионные кристаллы с температурой плавления в тысячи градусов.",
-        "ar": "المركبات العضوية بلورات أيونية تبلغ درجات انصهارها آلاف الدرجات.",
-        "zh": "有机化合物是熔点高达数千摄氏度的离子晶体。",
-        "ku": "Pêkhateyên organîk krîstalên îyonîk in ku xalên wan ên helînê bi hezaran derece ne."
+        "tr": "Organik bileşiklerin erime noktaları genellikle NaCl gibi iyonik anorganik bileşiklerinkinden yüksektir.",
+        "en": "The melting points of organic compounds are generally higher than those of ionic inorganic compounds such as NaCl.",
+        "de": "Die Schmelzpunkte organischer Verbindungen liegen im Allgemeinen höher als die ionischer anorganischer Verbindungen wie NaCl.",
+        "fr": "Les températures de fusion des composés organiques sont en général plus élevées que celles des composés inorganiques ioniques comme NaCl.",
+        "ru": "Температуры плавления органических соединений, как правило, выше, чем у ионных неорганических соединений, например NaCl.",
+        "ar": "درجات انصهار المركبات العضوية أعلى عمومًا من درجات انصهار المركبات غير العضوية الأيونية مثل NaCl.",
+        "zh": "有机化合物的熔点一般比 NaCl 等离子型无机化合物的熔点高。",
+        "ku": "Xalên helînê yên pêkhateyên organîk bi giştî ji yên pêkhateyên anorganîk ên îyonîk ên wek NaCl bilindtir in."
       },
       "whyTrapIsFalse": {
         "tr": "Organik bileşiklerin çoğu kovalent bağlı moleküllerden oluşur; moleküller arası çekim zayıf olduğundan erime noktaları genellikle düşüktür. Yüksek erime noktalı iyonik kristaller, NaCl gibi anorganik bileşiklere özgüdür.",
@@ -826,14 +826,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-s01",
       "title": {
-        "tr": "VSEPR ve Geometri Belirleme Adımları",
-        "en": "VSEPR and Geometry Determination Steps",
-        "de": "VSEPR- und Geometriebestimmungsschritte",
-        "fr": "Étapes de détermination du VSEPR et de la géométrie",
-        "ru": "Определение формы молекулы по теории VSEPR",
-        "ar": "خطوات تحديد الشكل الهندسي وفق VSEPR",
-        "zh": "用 VSEPR 模型判断分子构型的步骤",
-        "ku": "VSEPR û Gavên Diyarkirina Geometriyê"
+        "tr": "VSEPR ile Molekül Geometrisinin Belirlenmesi",
+        "en": "Determining Molecular Geometry with VSEPR",
+        "de": "Bestimmung der Molekülgeometrie mit VSEPR",
+        "fr": "Détermination de la géométrie moléculaire par la VSEPR",
+        "ru": "Определение геометрии молекулы по теории VSEPR",
+        "ar": "تحديد الشكل الهندسي للجزيء بنظرية VSEPR",
+        "zh": "用 VSEPR 判断分子几何构型",
+        "ku": "Diyarkirina Geometriya Molekulê bi VSEPR"
       },
       "steps": [
         {
@@ -1048,153 +1048,216 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin01",
       "stem": {
-        "tr": "H2O molekülünün VSEPR formülü ve molekül geometrisi aşağıdakilerden hangisinde doğru verilmiştir?",
-        "en": "Which of the following gives the VSEPR formula and molecular geometry of the H2O molecule correctly?",
-        "de": "Welche der folgenden Aussagen gibt die VSEPR-Formel und die Molekülgeometrie des H2O-Moleküls richtig an?",
-        "fr": "Lequel des énoncés suivants donne correctement la formule VSEPR et la géométrie moléculaire de la molécule H2O ?",
-        "ru": "В каком варианте правильно указаны формула VSEPR и форма молекулы H2O?",
-        "ar": "أيٌّ مما يلي يعطي صيغة VSEPR والشكل الهندسي لجزيء H2O بصورة صحيحة؟",
-        "zh": "下列哪一项正确给出了 H2O 分子的 VSEPR 通式和分子构型？",
-        "ku": "Formula VSEPR û geometriya molekulê ya molekula H2O di kîjan vebijarkê de rast hatiye dayîn?"
+        "tr": "Tabloda X, Y, Z ve T moleküllerinin merkez atomlarına ait bilgiler verilmiştir. Her molekülde merkez atoma bağlı atomlar birbirinin aynısıdır.\nBu moleküllerle ilgili;\nI. X molekülü doğrusaldır.\nII. Y ve T moleküllerinde merkez atom sp3 hibritleşmesi yapmıştır.\nIII. Z molekülü apolardır.\nyargılarından hangileri doğrudur?",
+        "en": "The table gives information about the central atoms of molecules X, Y, Z and T. In each molecule the atoms bonded to the central atom are identical.\nWhich of the following statements about these molecules are correct?\nI. Molecule X is linear.\nII. In molecules Y and T the central atom is sp3 hybridized.\nIII. Molecule Z is nonpolar.",
+        "de": "Die Tabelle enthält Angaben zu den Zentralatomen der Moleküle X, Y, Z und T. In jedem Molekül sind die an das Zentralatom gebundenen Atome gleich.\nWelche der folgenden Aussagen über diese Moleküle sind richtig?\nI. Das Molekül X ist linear.\nII. In den Molekülen Y und T ist das Zentralatom sp3-hybridisiert.\nIII. Das Molekül Z ist unpolar.",
+        "fr": "Le tableau donne des informations sur les atomes centraux des molécules X, Y, Z et T. Dans chaque molécule, les atomes liés à l'atome central sont identiques.\nParmi les affirmations suivantes sur ces molécules, lesquelles sont correctes ?\nI. La molécule X est linéaire.\nII. Dans les molécules Y et T, l'atome central est hybridé sp3.\nIII. La molécule Z est apolaire.",
+        "ru": "В таблице приведены сведения о центральных атомах молекул X, Y, Z и T. В каждой молекуле атомы, связанные с центральным атомом, одинаковы.\nКакие утверждения об этих молекулах верны?\nI. Молекула X линейная.\nII. В молекулах Y и T центральный атом находится в sp3-гибридизации.\nIII. Молекула Z неполярна.",
+        "ar": "يبيّن الجدول معلومات عن الذرات المركزية في الجزيئات X وY وZ وT. وفي كل جزيء تكون الذرات المرتبطة بالذرة المركزية متماثلة.\nأيٌّ من العبارات الآتية عن هذه الجزيئات صحيحة؟\nI. الجزيء X خطي.\nII. الذرة المركزية في الجزيئين Y وT مهجّنة sp3.\nIII. الجزيء Z غير قطبي.",
+        "zh": "表中给出了分子 X、Y、Z、T 中心原子的有关信息。每个分子中与中心原子相连的原子都相同。\n关于这些分子的下列说法中，哪些正确？\nI. X 分子为直线形。\nII. Y 和 T 分子中的中心原子为 sp3 杂化。\nIII. Z 分子是非极性分子。",
+        "ku": "Di tabloyê de agahiyên derbarê atomên navendî yên molekulên X, Y, Z û T de hatine dayîn. Di her molekulê de atomên ku bi atoma navendî ve girêdayî ne wekhev in.\nDerbarê van molekulan de;\nI. Molekula X xêzik e.\nII. Di molekulên Y û T de atoma navendî sp3 hîbrîd bûye.\nIII. Molekula Z apolar e.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
-          "tr": "AX2E2 - Kırık doğru",
-          "en": "AX2E2 - Bent",
-          "de": "AX2E2 - Gewinkelt",
-          "fr": "AX2E2 - Coudée",
-          "ru": "AX2E2 — угловая",
-          "ar": "AX2E2 - منحنٍ",
-          "zh": "AX2E2 - V 形",
-          "ku": "AX2E2 - Goşeyî"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "AX2 - Doğrusal",
-          "en": "AX2 - Linear",
-          "de": "AX2 - Linear",
-          "fr": "AX2 - Linéaire",
-          "ru": "AX2 — линейная",
-          "ar": "AX2 - خطي",
-          "zh": "AX2 - 直线形",
-          "ku": "AX2 - Xêzikî"
+          "tr": "Yalnız III",
+          "en": "III only",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅 III",
+          "ku": "Tenê III"
         },
         {
-          "tr": "AX3E - Üçgen piramit",
-          "en": "AX3E - Trigonal pyramidal",
-          "de": "AX3E - Trigonal-pyramidal",
-          "fr": "AX3E - Pyramidale trigonale",
-          "ru": "AX3E — тригональная пирамида",
-          "ar": "AX3E - هرم ثلاثي",
-          "zh": "AX3E - 三角锥形",
-          "ku": "AX3E - Pîramîda sêgoşe"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "AX4 - Düzgün dörtyüzlü",
-          "en": "AX4 - Tetrahedral",
-          "de": "AX4 - Tetraedrisch",
-          "fr": "AX4 - Tétraédrique",
-          "ru": "AX4 — правильный тетраэдр",
-          "ar": "AX4 - رباعي أوجه منتظم",
-          "zh": "AX4 - 正四面体",
-          "ku": "AX4 - Tetrahedral"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         },
         {
-          "tr": "AX3 - Düzlem üçgen",
-          "en": "AX3 - Trigonal planar",
-          "de": "AX3 - Trigonal-planar",
-          "fr": "AX3 - Trigonale plane",
-          "ru": "AX3 — плоский треугольник",
-          "ar": "AX3 - مثلث مستوٍ",
-          "zh": "AX3 - 平面三角形",
-          "ku": "AX3 - Sêgoşeya pelî"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Oksijen merkez atomdur; 2 bağ yapar (X2) ve üzerinde 2 ortaklanmamış elektron çifti bulunur (E2). VSEPR formülü AX2E2, geometrisi kırık doğrudur (104,5°). Ortaklanmamış çiftleri hesaba katmamak molekülü AX2 (doğrusal) sanmaya yol açar; doğrusal olan CO2'dir.",
-        "en": "Oxygen is the central atom; it forms 2 bonds (X2) and carries 2 lone pairs (E2). Its VSEPR formula is AX2E2 and its geometry is bent (104.5°). Ignoring the lone pairs leads to the wrong idea that the molecule is AX2 (linear); it is CO2 that is linear.",
-        "de": "Sauerstoff ist das Zentralatom; er bildet 2 Bindungen (X2) und trägt 2 freie Elektronenpaare (E2). Die VSEPR-Formel ist AX2E2, die Geometrie gewinkelt (104,5°). Wer die freien Elektronenpaare übersieht, hält das Molekül fälschlich für AX2 (linear); linear ist CO2.",
-        "fr": "L'oxygène est l'atome central ; il forme 2 liaisons (X2) et porte 2 doublets non liants (E2). Sa formule VSEPR est AX2E2 et sa géométrie est coudée (104,5°). Oublier les doublets non liants conduit à croire à tort que la molécule est AX2 (linéaire) ; c'est CO2 qui est linéaire.",
-        "ru": "Кислород — центральный атом; он образует 2 связи (X2) и имеет 2 неподелённые электронные пары (E2). Формула VSEPR — AX2E2, молекула угловая (104,5°). Если не учесть неподелённые пары, молекулу ошибочно принимают за AX2 (линейную); линейна молекула CO2.",
-        "ar": "الأكسجين هو الذرة المركزية؛ يكوّن رابطتين (X2) ويحمل زوجين غير رابطين (E2). صيغته وفق VSEPR هي AX2E2 وشكله منحنٍ (104.5°). إهمال الأزواج غير الرابطة يؤدي إلى الظن خطأً أن الجزيء من النوع AX2 (خطي)؛ والجزيء الخطي هو CO2.",
-        "zh": "氧是中心原子，形成 2 个键(X2)，带有 2 对孤对电子(E2)。其 VSEPR 式为 AX2E2，构型为 V 形(104.5°)。若忽略孤对电子，就会误认为它是 AX2（直线形）；直线形的是 CO2。",
-        "ku": "Oksîjen atoma navendî ye; 2 girêdanan çêdike (X2) û 2 cotên elektronan ên nehevpar li ser wê hene (E2). Formula wê ya VSEPR AX2E2 ye û geometriya wê goşeyî ye (104,5°). Heke cotên nehevpar neyên hesibandin, molekul bi şaşî wek AX2 (xêzikî) tê girtin; molekula xêzikî CO2 ye."
+        "tr": "Tablodan VSEPR formülleri yazılır: X = AX2, Y = AX3E, Z = AX2E2, T = AX4. I doğru: AX2'de iki elektron bölgesi 180° açıyla yerleşir, molekül doğrusaldır. II doğru: Y'de (3 bağ + 1 ortaklanmamış çift) ve T'de (4 bağ) merkez atom çevresinde dört elektron bölgesi vardır; bu da sp3 hibritleşmesidir (Y üçgen piramit, T düzgün dörtyüzlü). III yanlış: Z'de iki ortaklanmamış çift molekülü kırık doğru yapar; bağ dipolleri birbirini yok etmez ve molekül polardır (H2O gibi). Z'yi iki atom bağladığı için X gibi doğrusal ve apolar sanmak, ortaklanmamış çiftleri gözden kaçırmaktır.",
+        "en": "From the table the VSEPR formulas are X = AX2, Y = AX3E, Z = AX2E2, T = AX4. I is correct: in AX2 the two electron domains lie at 180°, so the molecule is linear. II is correct: Y (3 bonds + 1 lone pair) and T (4 bonds) both have four electron domains around the central atom, which corresponds to sp3 hybridization (Y is trigonal pyramidal, T tetrahedral). III is wrong: the two lone pairs make Z bent; the bond dipoles do not cancel and the molecule is polar (like H2O). Thinking Z is linear and nonpolar like X because it has two bonded atoms means overlooking the lone pairs.",
+        "de": "Aus der Tabelle ergeben sich die VSEPR-Formeln X = AX2, Y = AX3E, Z = AX2E2, T = AX4. I ist richtig: Bei AX2 liegen die zwei Elektronendomänen im Winkel von 180°, das Molekül ist linear. II ist richtig: Y (3 Bindungen + 1 freies Elektronenpaar) und T (4 Bindungen) haben je vier Elektronendomänen um das Zentralatom, was einer sp3-Hybridisierung entspricht (Y trigonal-pyramidal, T tetraedrisch). III ist falsch: Die zwei freien Elektronenpaare machen Z gewinkelt; die Bindungsdipole heben sich nicht auf, das Molekül ist polar (wie H2O). Wer Z wegen der zwei gebundenen Atome wie X für linear und unpolar hält, übersieht die freien Elektronenpaare.",
+        "fr": "Le tableau donne les formules VSEPR : X = AX2, Y = AX3E, Z = AX2E2, T = AX4. I est correcte : dans AX2, les deux domaines électroniques sont à 180°, la molécule est linéaire. II est correcte : Y (3 liaisons + 1 doublet non liant) et T (4 liaisons) ont chacun quatre domaines électroniques autour de l'atome central, ce qui correspond à l'hybridation sp3 (Y pyramidale à base triangulaire, T tétraédrique). III est fausse : les deux doublets non liants rendent Z coudée ; les dipôles de liaison ne se compensent pas et la molécule est polaire (comme H2O). Croire Z linéaire et apolaire comme X parce qu'elle a deux atomes liés revient à oublier les doublets non liants.",
+        "ru": "По таблице записываем формулы VSEPR: X = AX2, Y = AX3E, Z = AX2E2, T = AX4. I верно: в AX2 две электронные области расположены под углом 180°, молекула линейная. II верно: у Y (3 связи + 1 неподелённая пара) и у T (4 связи) вокруг центрального атома по четыре электронные области, что соответствует sp3-гибридизации (Y — тригональная пирамида, T — тетраэдр). III неверно: две неподелённые пары делают Z угловой; дипольные моменты связей не компенсируются, и молекула полярна (как H2O). Считать Z линейной и неполярной, как X, только потому, что у неё два связанных атома, значит не учитывать неподелённые пары.",
+        "ar": "من الجدول تُكتب صيغ VSEPR: X = AX2، Y = AX3E، Z = AX2E2، T = AX4. العبارة I صحيحة: في AX2 تتوزع منطقتا الإلكترونات بزاوية 180° فيكون الجزيء خطيًا. العبارة II صحيحة: في Y (3 روابط + زوج حر) وفي T (4 روابط) أربع مناطق إلكترونية حول الذرة المركزية، وهذا يقابل التهجين sp3 (Y هرم ثلاثي، T رباعي أوجه منتظم). العبارة III خاطئة: الزوجان الحران يجعلان Z منحنيًا، فلا تُلغي ثنائيات أقطاب الروابط بعضها بعضًا ويكون الجزيء قطبيًا (مثل H2O). وظن Z خطيًا وغير قطبي مثل X لأنه مرتبط بذرتين هو إغفال للأزواج الحرة.",
+        "zh": "由表可写出 VSEPR 式：X = AX2，Y = AX3E，Z = AX2E2，T = AX4。I 正确：AX2 中两个电子域成 180°，分子为直线形。II 正确：Y（3 个键 + 1 对孤电子对）和 T（4 个键）的中心原子周围都有四个电子域，对应 sp3 杂化（Y 为三角锥形，T 为正四面体）。III 错误：两对孤电子对使 Z 成 V 形，键偶极不能抵消，分子有极性（如 H2O）。因为 Z 只连两个原子就认为它像 X 一样是直线形非极性分子，是忽略了孤电子对。",
+        "ku": "Ji tabloyê formulên VSEPR têne nivîsandin: X = AX2, Y = AX3E, Z = AX2E2, T = AX4. I rast e: di AX2 de du herêmên elektronan bi goşeya 180° rêz dibin, molekul xêzik e. II rast e: di Y (3 girêdan + 1 cotê ne-hevpar) û T (4 girêdan) de li dora atoma navendî çar herêmên elektronan hene; ev hîbrîdbûna sp3 e (Y pîramîda sêgoşe, T çarrûya rêkûpêk). III şaş e: du cotên ne-hevpar Z şikestî dikin; dipolên girêdanan hev betal nakin û molekul polar e (wek H2O). Hesibandina Z wek X xêzik û apolar ji ber ku du atom pê ve girêdayî ne, paşguhkirina cotên ne-hevpar e."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Molekül",
+            "en": "Molecule",
+            "de": "Molekül",
+            "fr": "Molécule",
+            "ru": "Молекула",
+            "ar": "الجزيء",
+            "zh": "分子",
+            "ku": "Molekul"
+          },
+          {
+            "tr": "Merkez atoma bağlı atom sayısı",
+            "en": "Atoms bonded to central atom",
+            "de": "An das Zentralatom gebundene Atome",
+            "fr": "Atomes liés à l'atome central",
+            "ru": "Атомов, связанных с центральным",
+            "ar": "عدد الذرات المرتبطة بالذرة المركزية",
+            "zh": "与中心原子相连的原子数",
+            "ku": "Hejmara atomên bi atoma navendî ve girêdayî"
+          },
+          {
+            "tr": "Ortaklanmamış elektron çifti sayısı",
+            "en": "Lone pairs on central atom",
+            "de": "Freie Elektronenpaare am Zentralatom",
+            "fr": "Doublets non liants de l'atome central",
+            "ru": "Неподелённых пар у центрального атома",
+            "ar": "عدد الأزواج الحرة على الذرة المركزية",
+            "zh": "中心原子的孤电子对数",
+            "ku": "Hejmara cotên elektronan ên ne-hevpar"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            "2",
+            "0"
+          ],
+          [
+            "Y",
+            "3",
+            "1"
+          ],
+          [
+            "Z",
+            "2",
+            "2"
+          ],
+          [
+            "T",
+            "4",
+            "0"
+          ]
+        ]
       }
     },
     {
       "id": "u23-twin02",
       "stem": {
-        "tr": "H-C≡C-H (Asetilen) molekülünde kaç tane sigma (σ) ve kaç tane pi (π) bağı bulunur?",
-        "en": "How many sigma (σ) and how many pi (π) bonds are there in the H-C≡C-H (Acetylene) molecule?",
-        "de": "Wie viele Sigma- (σ) und wie viele Pi-Bindungen (π) gibt es im H-C≡C-H-Molekül (Acetylen)?",
-        "fr": "Combien de liaisons sigma (σ) et combien de liaisons pi (π) y a-t-il dans la molécule H-C≡C-H (acétylène) ?",
-        "ru": "Сколько σ- и сколько π-связей содержит молекула ацетилена H-C≡C-H?",
-        "ar": "كم رابطة سيجما (σ) وكم رابطة باي (π) في جزيء H-C≡C-H (الأسيتيلين)؟",
-        "zh": "H-C≡C-H(乙炔)分子中有几个σ键和几个π键？",
-        "ku": "Di molekula H-C≡C-H (asetîlen) de çend girêdanên sigma (σ) û çend girêdanên pî (π) hene?"
+        "tr": "Şekilde yapı formülü verilen molekülde a, b ve c ile gösterilen bağ açılarının yaklaşık değerleri aşağıdakilerin hangisinde doğru verilmiştir? (1H, 6C, 7N)",
+        "en": "In the molecule whose structural formula is shown, which option gives the approximate values of the bond angles marked a, b and c? (1H, 6C, 7N)",
+        "de": "Welche Antwort gibt für das Molekül mit der abgebildeten Strukturformel die ungefähren Werte der mit a, b und c markierten Bindungswinkel richtig an? (1H, 6C, 7N)",
+        "fr": "Pour la molécule dont la formule développée est représentée, quelle proposition donne les valeurs approximatives des angles de liaison notés a, b et c ? (1H, 6C, 7N)",
+        "ru": "В каком варианте правильно указаны приблизительные значения валентных углов a, b и c в молекуле, структурная формула которой показана на рисунке? (1H, 6C, 7N)",
+        "ar": "في الجزيء المعطاة صيغته البنائية في الشكل، أيّ الخيارات يعطي القيم التقريبية لزوايا الروابط a وb وc بشكل صحيح؟ (1H، 6C، 7N)",
+        "zh": "图中给出了某分子的结构式。下列哪一项正确给出了标为 a、b、c 的键角的近似值？(1H，6C，7N)",
+        "ku": "Di molekula ku formula wê ya avahiyê di şeklê de hatiye dayîn de, nirxên nêzîk ên goşeyên girêdanê yên bi a, b û c hatine nîşandan di kîjan bijardeyê de rast hatine dayîn? (1H, 6C, 7N)"
       },
       "options": [
         {
-          "tr": "3 sigma, 2 pi",
-          "en": "3 sigma, 2 pi",
-          "de": "3 Sigma, 2 Pi",
-          "fr": "3 sigma, 2 pi",
-          "ru": "3 σ, 2 π",
-          "ar": "3 سيجما، 2 باي",
-          "zh": "3 个 σ 键，2 个 π 键",
-          "ku": "3 sigma, 2 pî"
+          "tr": "a: 109,5° – b: 120° – c: 180°",
+          "en": "a: 109.5° – b: 120° – c: 180°",
+          "de": "a: 109,5° – b: 120° – c: 180°",
+          "fr": "a : 109,5° – b : 120° – c : 180°",
+          "ru": "a: 109,5° – b: 120° – c: 180°",
+          "ar": "a: 109.5° – b: 120° – c: 180°",
+          "zh": "a：109.5° – b：120° – c：180°",
+          "ku": "a: 109,5° – b: 120° – c: 180°"
         },
         {
-          "tr": "2 sigma, 3 pi",
-          "en": "2 sigma, 3 pi",
-          "de": "2 Sigma, 3 Pi",
-          "fr": "2 sigma, 3 pi",
-          "ru": "2 σ, 3 π",
-          "ar": "2 سيجما، 3 باي",
-          "zh": "2 个 σ 键，3 个 π 键",
-          "ku": "2 sigma, 3 pî"
+          "tr": "a: 90° – b: 120° – c: 180°",
+          "en": "a: 90° – b: 120° – c: 180°",
+          "de": "a: 90° – b: 120° – c: 180°",
+          "fr": "a : 90° – b : 120° – c : 180°",
+          "ru": "a: 90° – b: 120° – c: 180°",
+          "ar": "a: 90° – b: 120° – c: 180°",
+          "zh": "a：90° – b：120° – c：180°",
+          "ku": "a: 90° – b: 120° – c: 180°"
         },
         {
-          "tr": "5 sigma, 0 pi",
-          "en": "5 sigma, 0 pi",
-          "de": "5 Sigma, 0 Pi",
-          "fr": "5 sigma, 0 pi",
-          "ru": "5 σ, 0 π",
-          "ar": "5 سيجما، 0 باي",
-          "zh": "5 个 σ 键，0 个 π 键",
-          "ku": "5 sigma, 0 pî"
+          "tr": "a: 109,5° – b: 109,5° – c: 120°",
+          "en": "a: 109.5° – b: 109.5° – c: 120°",
+          "de": "a: 109,5° – b: 109,5° – c: 120°",
+          "fr": "a : 109,5° – b : 109,5° – c : 120°",
+          "ru": "a: 109,5° – b: 109,5° – c: 120°",
+          "ar": "a: 109.5° – b: 109.5° – c: 120°",
+          "zh": "a：109.5° – b：109.5° – c：120°",
+          "ku": "a: 109,5° – b: 109,5° – c: 120°"
         },
         {
-          "tr": "1 sigma, 4 pi",
-          "en": "1 sigma, 4 pi",
-          "de": "1 Sigma, 4 Pi",
-          "fr": "1 sigma, 4 pi",
-          "ru": "1 σ, 4 π",
-          "ar": "1 سيجما، 4 باي",
-          "zh": "1 个 σ 键，4 个 π 键",
-          "ku": "1 sigma, 4 pî"
+          "tr": "a: 120° – b: 120° – c: 180°",
+          "en": "a: 120° – b: 120° – c: 180°",
+          "de": "a: 120° – b: 120° – c: 180°",
+          "fr": "a : 120° – b : 120° – c : 180°",
+          "ru": "a: 120° – b: 120° – c: 180°",
+          "ar": "a: 120° – b: 120° – c: 180°",
+          "zh": "a：120° – b：120° – c：180°",
+          "ku": "a: 120° – b: 120° – c: 180°"
         },
         {
-          "tr": "4 sigma, 1 pi",
-          "en": "4 sigma, 1 pi",
-          "de": "4 Sigma, 1 Pi",
-          "fr": "4 sigma, 1 pi",
-          "ru": "4 σ, 1 π",
-          "ar": "4 سيجما، 1 باي",
-          "zh": "4 个 σ 键，1 个 π 键",
-          "ku": "4 sigma, 1 pî"
+          "tr": "a: 109,5° – b: 120° – c: 120°",
+          "en": "a: 109.5° – b: 120° – c: 120°",
+          "de": "a: 109,5° – b: 120° – c: 120°",
+          "fr": "a : 109,5° – b : 120° – c : 120°",
+          "ru": "a: 109,5° – b: 120° – c: 120°",
+          "ar": "a: 109.5° – b: 120° – c: 120°",
+          "zh": "a：109.5° – b：120° – c：120°",
+          "ku": "a: 109,5° – b: 120° – c: 120°"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "İki C–H bağının her biri tekli bağdır: 2 sigma. C≡C üçlü bağının biri sigma, ikisi pi bağıdır: 1 sigma, 2 pi. Toplam 3 sigma ve 2 pi bağı vardır. Üçlü bağın üçünü de pi saymak 2 sigma, 3 pi; bütün bağ çizgilerini sigma saymak 5 sigma sonucunu verir, ikisi de yanlıştır.",
-        "en": "Each of the two C–H bonds is a single bond: 2 sigma. Of the C≡C triple bond, one bond is sigma and two are pi: 1 sigma, 2 pi. In total there are 3 sigma and 2 pi bonds. Counting all three bonds of the triple bond as pi gives 2 sigma, 3 pi; counting every bond line as sigma gives 5 sigma — both are wrong.",
-        "de": "Jede der beiden C–H-Bindungen ist eine Einfachbindung: 2 Sigma. Von der C≡C-Dreifachbindung ist eine Bindung eine Sigma- und zwei sind Pi-Bindungen: 1 Sigma, 2 Pi. Insgesamt gibt es 3 Sigma- und 2 Pi-Bindungen. Zählt man alle drei Bindungen der Dreifachbindung als Pi, erhält man 2 Sigma, 3 Pi; zählt man jeden Bindungsstrich als Sigma, erhält man 5 Sigma – beides ist falsch.",
-        "fr": "Chacune des deux liaisons C–H est une liaison simple : 2 sigma. Dans la triple liaison C≡C, une liaison est sigma et deux sont pi : 1 sigma, 2 pi. Au total, il y a 3 liaisons sigma et 2 liaisons pi. Compter les trois liaisons de la triple liaison comme pi donne 2 sigma, 3 pi ; compter chaque trait de liaison comme sigma donne 5 sigma : les deux sont faux.",
-        "ru": "Каждая из двух связей C–H одинарная: 2 σ. Тройная связь C≡C включает одну σ- и две π-связи: 1 σ, 2 π. Всего 3 σ- и 2 π-связи. Если считать все три связи тройной связи π-связями, получится 2 σ, 3 π; если считать σ-связью каждую черту, получится 5 σ — оба ответа неверны.",
-        "ar": "كلٌّ من رابطتي C–H رابطة أحادية: 2 سيجما. وفي الرابطة الثلاثية C≡C رابطة واحدة سيجما ورابطتان باي: 1 سيجما، 2 باي. المجموع 3 روابط سيجما و2 باي. عدّ روابط الرابطة الثلاثية كلها باي يعطي 2 سيجما، 3 باي؛ وعدّ كل خط رابطة سيجما يعطي 5 سيجما، وكلاهما خطأ.",
-        "zh": "两个 C–H 键都是单键：2 个 σ 键。C≡C 三键中 1 个是 σ 键，2 个是 π 键。共有 3 个 σ 键和 2 个 π 键。把三键中的键全部算作 π 键会得到 2 个 σ、3 个 π；把每一条键线都算作 σ 键会得到 5 个 σ，两者都是错误的。",
-        "ku": "Her yek ji du girêdanên C–H girêdaneke yekane ye: 2 sigma. Ji girêdana sêcarî ya C≡C yek girêdan sigma ye, du jî pî ne: 1 sigma, 2 pî. Bi tevahî 3 girêdanên sigma û 2 girêdanên pî hene. Heke her sê girêdanên girêdana sêcarî wek pî werin hejmartin 2 sigma, 3 pî; heke her xêza girêdanê wek sigma were hejmartin 5 sigma derdikeve; her du jî şaş in."
+        "tr": "Her açı, tepesindeki karbonun elektron bölgesi sayısıyla belirlenir. a açısının tepesindeki CH3 karbonu yalnızca tekli bağ yapar (4 bölge, sp3): yaklaşık 109,5°. b açısının tepesindeki karbon bir C=C ikili bağı yapar (3 bölge, sp2): yaklaşık 120°. c açısının tepesindeki karbon C≡N üçlü bağı yapar (2 bölge, sp): 180°. Kâğıt üzerindeki çizimi esas alıp CH3 karbonunda 90° veya 120° okumak ya da üçlü bağlı karbonu sp2 sanmak yanlış seçeneklere götürür; yapı formülleri gerçek açıları göstermez.",
+        "en": "Each angle is determined by the number of electron domains on the carbon at its vertex. The CH3 carbon at the vertex of angle a has only single bonds (4 domains, sp3): about 109.5°. The carbon at the vertex of b forms a C=C double bond (3 domains, sp2): about 120°. The carbon at the vertex of c forms a C≡N triple bond (2 domains, sp): 180°. Reading 90° or 120° at the CH3 carbon from the drawing, or treating the triple-bonded carbon as sp2, leads to the wrong options; structural formulas do not show true angles.",
+        "de": "Jeder Winkel wird durch die Zahl der Elektronendomänen am Kohlenstoff an seinem Scheitel bestimmt. Der CH3-Kohlenstoff am Scheitel von a hat nur Einfachbindungen (4 Domänen, sp3): etwa 109,5°. Der Kohlenstoff am Scheitel von b bildet eine C=C-Doppelbindung (3 Domänen, sp2): etwa 120°. Der Kohlenstoff am Scheitel von c bildet eine C≡N-Dreifachbindung (2 Domänen, sp): 180°. Wer am CH3-Kohlenstoff aus der Zeichnung 90° oder 120° abliest oder den dreifach gebundenen Kohlenstoff für sp2 hält, kommt zu falschen Antworten; Strukturformeln zeigen keine echten Winkel.",
+        "fr": "Chaque angle dépend du nombre de domaines électroniques du carbone situé à son sommet. Le carbone du CH3, au sommet de a, n'a que des liaisons simples (4 domaines, sp3) : environ 109,5°. Le carbone au sommet de b forme une double liaison C=C (3 domaines, sp2) : environ 120°. Le carbone au sommet de c forme une triple liaison C≡N (2 domaines, sp) : 180°. Lire 90° ou 120° sur le dessin au niveau du CH3, ou considérer le carbone triplement lié comme sp2, conduit aux mauvaises réponses ; une formule développée ne montre pas les vrais angles.",
+        "ru": "Каждый угол определяется числом электронных областей у атома углерода в его вершине. Углерод CH3 в вершине угла a образует только одинарные связи (4 области, sp3): около 109,5°. Углерод в вершине b образует двойную связь C=C (3 области, sp2): около 120°. Углерод в вершине c образует тройную связь C≡N (2 области, sp): 180°. Если «прочитать» на рисунке 90° или 120° у CH3 или считать углерод с тройной связью sp2-гибридным, получится неверный ответ; структурные формулы не передают реальных углов.",
+        "ar": "تتحدد كل زاوية بعدد المناطق الإلكترونية حول ذرة الكربون الواقعة في رأسها. كربون CH3 في رأس الزاوية a لا يكوّن إلا روابط أحادية (4 مناطق، sp3): نحو 109.5°. والكربون في رأس b يكوّن رابطة ثنائية C=C (3 مناطق، sp2): نحو 120°. والكربون في رأس c يكوّن رابطة ثلاثية C≡N (منطقتان، sp): 180°. وقراءة 90° أو 120° عند كربون CH3 من الرسم، أو اعتبار الكربون ذي الرابطة الثلاثية sp2، تقود إلى الخيارات الخاطئة؛ فالصيغ البنائية لا تُظهر الزوايا الحقيقية.",
+        "zh": "每个键角由其顶点碳原子的电子域数决定。a 顶点的 CH3 碳只形成单键（4 个电子域，sp3）：约 109.5°。b 顶点的碳形成 C=C 双键（3 个电子域，sp2）：约 120°。c 顶点的碳形成 C≡N 三键（2 个电子域，sp）：180°。按纸面图形把 CH3 碳处读成 90° 或 120°，或把三键碳当作 sp2，都会选错；结构式并不表示真实键角。",
+        "ku": "Her goşe bi hejmara herêmên elektronan ên karbona li serê wê tê diyarkirin. Karbona CH3 a li serê goşeya a tenê girêdanên yekane çêdike (4 herêm, sp3): nêzîkî 109,5°. Karbona li serê b girêdaneke ducar a C=C çêdike (3 herêm, sp2): nêzîkî 120°. Karbona li serê c girêdaneke sêcar a C≡N çêdike (2 herêm, sp): 180°. Xwendina 90° an 120° li karbona CH3 ji ser xêzkirinê, an hesibandina karbona bi girêdana sêcar wek sp2, ber bi bijardeyên şaş ve dibe; formulên avahiyê goşeyên rastîn nîşan nadin."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 330,
+        "height": 212,
+        "markup": "<path d=\"M70.7 145 L109.3 123\" class=\"qf-line\"/><path d=\"M128.1 120.3 L172.3 143.1\" class=\"qf-line\"/><path d=\"M125.7 124.9 L169.9 147.7\" class=\"qf-line\"/><path d=\"M188.9 145.5 L235.1 122.5\" class=\"qf-line\"/><path d=\"M251.2 110 L289.3 90.9\" class=\"qf-line\"/><path d=\"M252.9 113.5 L291.1 94.5\" class=\"qf-line\"/><path d=\"M254.7 117.1 L292.8 98\" class=\"qf-line\"/><path d=\"M52 150 L28 150\" class=\"qf-line\"/><path d=\"M57.4 158.9 L44.6 183.1\" class=\"qf-line\"/><path d=\"M66.6 158.9 L79.4 183.1\" class=\"qf-line\"/><path d=\"M118 108 L118 84\" class=\"qf-line\"/><path d=\"M180 160 L180 184\" class=\"qf-line\"/><text x=\"62\" y=\"155\" text-anchor=\"middle\" class=\"qf-strong\">C</text><text x=\"118\" y=\"123\" text-anchor=\"middle\" class=\"qf-strong\">C</text><text x=\"180\" y=\"155\" text-anchor=\"middle\" class=\"qf-strong\">C</text><text x=\"244\" y=\"123\" text-anchor=\"middle\" class=\"qf-strong\">C</text><text x=\"300\" y=\"95\" text-anchor=\"middle\" class=\"qf-strong\">N</text><text x=\"18\" y=\"155\" text-anchor=\"middle\" class=\"qf-strong\">H</text><text x=\"40\" y=\"197\" text-anchor=\"middle\" class=\"qf-strong\">H</text><text x=\"84\" y=\"197\" text-anchor=\"middle\" class=\"qf-strong\">H</text><text x=\"118\" y=\"79\" text-anchor=\"middle\" class=\"qf-strong\">H</text><text x=\"180\" y=\"199\" text-anchor=\"middle\" class=\"qf-strong\">H</text><path d=\"M45 150 A17 17 0 0 0 54.1 165.1\" class=\"qf-stroke-accent\"/><text x=\"36.3\" y=\"169.5\" text-anchor=\"middle\" class=\"qf-strong\">a</text><path d=\"M103.2 126.4 A17 17 0 0 0 133.1 125.8\" class=\"qf-stroke-accent\"/><text x=\"118.6\" y=\"152\" text-anchor=\"middle\" class=\"qf-strong\">b</text><path d=\"M228.8 125.6 A17 17 0 0 0 259.2 110.4\" class=\"qf-stroke-accent\"/><text x=\"257.5\" y=\"148.7\" text-anchor=\"middle\" class=\"qf-strong\">c</text>"
       }
     },
     {
@@ -1580,14 +1643,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin08",
       "stem": {
-        "tr": "C, H ve O elementlerinden oluşan 4,6 gram organik bir bileşik yeterli miktarda oksijenle tamamen yakıldığında 8,8 gram CO2 ve 5,4 gram H2O oluşmaktadır.\nBuna göre bileşiğin basit (empirik) formülü aşağıdakilerden hangisidir? (H: 1, C: 12, O: 16)",
-        "en": "When 4.6 grams of an organic compound made of C, H and O are burned completely in enough oxygen, 8.8 grams of CO2 and 5.4 grams of H2O are formed.\nWhat is the empirical formula of the compound? (H: 1, C: 12, O: 16)",
-        "de": "Verbrennt man 4,6 Gramm einer aus C, H und O bestehenden organischen Verbindung vollständig mit genügend Sauerstoff, entstehen 8,8 Gramm CO2 und 5,4 Gramm H2O.\nWelche Verhältnisformel (empirische Formel) hat die Verbindung? (H: 1, C: 12, O: 16)",
-        "fr": "La combustion complète, dans suffisamment de dioxygène, de 4,6 grammes d'un composé organique formé de C, H et O donne 8,8 grammes de CO2 et 5,4 grammes de H2O.\nQuelle est la formule brute la plus simple (empirique) du composé ? (H : 1, C : 12, O : 16)",
-        "ru": "При полном сгорании 4,6 грамма органического соединения, состоящего из C, H и O, в достаточном количестве кислорода образуется 8,8 грамма CO2 и 5,4 грамма H2O.\nКакова простейшая (эмпирическая) формула соединения? (H: 1, C: 12, O: 16)",
-        "ar": "عند الاحتراق التام لـ 4.6 g من مركب عضوي مكوّن من C وH وO في كمية كافية من الأكسجين يتكوّن 8.8 g من CO2 و5.4 g من H2O.\nما الصيغة الأولية (البسيطة) للمركب؟ (H: 1، C: 12، O: 16)",
-        "zh": "4.6 g 由 C、H、O 组成的有机化合物在足量氧气中完全燃烧，生成 8.8 g CO2 和 5.4 g H2O。\n该化合物的最简式（实验式）是下列哪一个？(H = 1，C = 12，O = 16)",
-        "ku": "Dema 4,6 gram pêkhateyeke organîk a ji elementên C, H û O pêk tê bi oksîjena têr bi tevahî tê şewitandin, 8,8 gram CO2 û 5,4 gram H2O çêdibin.\nLi gorî vê, formula sade (empîrîk) ya pêkhateyê kîjan e? (H: 1, C: 12, O: 16)"
+        "tr": "Yalnızca C, H ve O içeren 4,6 g X bileşiği yeterli oksijenle tamamen yakılıyor. Oluşan gazlar önce susuz CaCl2 dolu I. tüpten, sonra KOH dolu II. tüpten geçiriliyor; tüplerin deneyden önceki ve sonraki kütleleri tabloda verilmiştir.\nX'in basit (empirik) formülü aşağıdakilerden hangisidir? (H: 1, C: 12, O: 16; CaCl2 yalnızca H2O'yu, KOH yalnızca CO2'yi tutar.)",
+        "en": "4.6 g of compound X, which contains only C, H and O, is burned completely in enough oxygen. The gases formed pass first through tube I filled with anhydrous CaCl2 and then through tube II filled with KOH; the masses of the tubes before and after the experiment are given in the table.\nWhat is the empirical formula of X? (H: 1, C: 12, O: 16; CaCl2 absorbs only H2O and KOH absorbs only CO2.)",
+        "de": "4,6 g der nur aus C, H und O bestehenden Verbindung X werden mit genügend Sauerstoff vollständig verbrannt. Die entstehenden Gase strömen erst durch Rohr I mit wasserfreiem CaCl2, dann durch Rohr II mit KOH; die Massen der Rohre vor und nach dem Versuch stehen in der Tabelle.\nWelche Verhältnisformel (empirische Formel) hat X? (H: 1, C: 12, O: 16; CaCl2 bindet nur H2O, KOH nur CO2.)",
+        "fr": "On brûle complètement, dans suffisamment de dioxygène, 4,6 g d'un composé X ne contenant que C, H et O. Les gaz formés traversent d'abord le tube I rempli de CaCl2 anhydre, puis le tube II rempli de KOH ; les masses des tubes avant et après l'expérience figurent dans le tableau.\nQuelle est la formule empirique de X ? (H : 1, C : 12, O : 16 ; CaCl2 ne retient que H2O et KOH que CO2.)",
+        "ru": "4,6 г вещества X, содержащего только C, H и O, полностью сжигают в достаточном количестве кислорода. Образовавшиеся газы пропускают сначала через трубку I с безводным CaCl2, затем через трубку II с KOH; массы трубок до и после опыта приведены в таблице.\nКакова простейшая (эмпирическая) формула X? (H: 1, C: 12, O: 16; CaCl2 поглощает только H2O, KOH — только CO2.)",
+        "ar": "يُحرق 4.6 g من المركب X الذي يحتوي على C وH وO فقط احتراقًا تامًا في كمية كافية من الأكسجين. تُمرَّر الغازات الناتجة أولًا في الأنبوب I المملوء بـ CaCl2 اللامائي ثم في الأنبوب II المملوء بـ KOH، ويبيّن الجدول كتلتي الأنبوبين قبل التجربة وبعدها.\nما الصيغة الأولية (البسيطة) للمركب X؟ (H: 1، C: 12، O: 16؛ يمتص CaCl2 الماء H2O فقط، ويمتص KOH غاز CO2 فقط.)",
+        "zh": "4.6 g 只含 C、H、O 的化合物 X 在足量氧气中完全燃烧。生成的气体先通过装有无水 CaCl2 的管 I，再通过装有 KOH 的管 II；两管实验前后的质量列于表中。\nX 的最简式（实验式）是下列哪一个？(H = 1，C = 12，O = 16；CaCl2 只吸收 H2O，KOH 只吸收 CO2。)",
+        "ku": "4,6 g ji pêkhateya X ya ku tenê C, H û O dihewîne bi oksîjena têr bi tevahî tê şewitandin. Gazên çêbûyî pêşî di lûleya I ya bi CaCl2 ya bê av tije re, paşê di lûleya II ya bi KOH tije re derbas dibin; girseyên lûleyan ên beriya û piştî ceribandinê di tabloyê de hatine dayîn.\nFormula sade (empîrîk) ya X kîjan e? (H: 1, C: 12, O: 16; CaCl2 tenê H2O, KOH tenê CO2 digire.)"
       },
       "options": [
         {
@@ -1643,14 +1706,73 @@ export const unit23: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "CO2: 8,8/44 = 0,2 mol → 0,2 mol C = 2,4 g. H2O: 5,4/18 = 0,3 mol → her H2O'da 2 H olduğundan 0,6 mol H = 0,6 g. O kütlesi = 4,6 − 2,4 − 0,6 = 1,6 g → 0,1 mol. Oran C : H : O = 0,2 : 0,6 : 0,1 = 2 : 6 : 1 → C2H6O. Bileşikteki oksijeni hesaba katmamak C2H6 sonucunu verir; O'yu CO2 ve H2O'dan gelen oksijenle karıştırmak da yanlış formüllere götürür.",
-        "en": "CO2: 8.8/44 = 0.2 mol → 0.2 mol C = 2.4 g. H2O: 5.4/18 = 0.3 mol → each H2O has 2 H, so 0.6 mol H = 0.6 g. Mass of O = 4.6 − 2.4 − 0.6 = 1.6 g → 0.1 mol. Ratio C : H : O = 0.2 : 0.6 : 0.1 = 2 : 6 : 1 → C2H6O. Ignoring the oxygen in the compound gives C2H6; confusing it with the oxygen in CO2 and H2O also leads to wrong formulas.",
-        "de": "CO2: 8,8/44 = 0,2 mol → 0,2 mol C = 2,4 g. H2O: 5,4/18 = 0,3 mol → jedes H2O enthält 2 H, also 0,6 mol H = 0,6 g. Masse an O = 4,6 − 2,4 − 0,6 = 1,6 g → 0,1 mol. Verhältnis C : H : O = 0,2 : 0,6 : 0,1 = 2 : 6 : 1 → C2H6O. Wer den Sauerstoff der Verbindung vergisst, erhält C2H6; wer ihn mit dem Sauerstoff in CO2 und H2O verwechselt, kommt ebenfalls zu falschen Formeln.",
-        "fr": "CO2 : 8,8/44 = 0,2 mol → 0,2 mol de C = 2,4 g. H2O : 5,4/18 = 0,3 mol → chaque H2O contient 2 H, donc 0,6 mol de H = 0,6 g. Masse de O = 4,6 − 2,4 − 0,6 = 1,6 g → 0,1 mol. Rapport C : H : O = 0,2 : 0,6 : 0,1 = 2 : 6 : 1 → C2H6O. Négliger l'oxygène du composé donne C2H6 ; le confondre avec l'oxygène de CO2 et H2O conduit aussi à de fausses formules.",
-        "ru": "CO2: 8,8/44 = 0,2 моль → 0,2 моль C = 2,4 г. H2O: 5,4/18 = 0,3 моль → в каждой H2O 2 атома H, значит 0,6 моль H = 0,6 г. Масса O = 4,6 − 2,4 − 0,6 = 1,6 г → 0,1 моль. Отношение C : H : O = 0,2 : 0,6 : 0,1 = 2 : 6 : 1 → C2H6O. Если не учесть кислород в соединении, получится C2H6; путаница с кислородом в CO2 и H2O тоже ведёт к неверным формулам.",
-        "ar": "CO2: 8.8/44 = 0.2 mol ← 0.2 mol من C = 2.4 g. H2O: 5.4/18 = 0.3 mol ← في كل H2O ذرتا H، إذن 0.6 mol من H = 0.6 g. كتلة O = 4.6 − 2.4 − 0.6 = 1.6 g ← 0.1 mol. النسبة C : H : O = 0.2 : 0.6 : 0.1 = 2 : 6 : 1 ← C2H6O. إهمال أكسجين المركب يعطي C2H6، والخلط بينه وبين أكسجين CO2 وH2O يؤدي أيضًا إلى صيغ خاطئة.",
-        "zh": "CO2：8.8/44 = 0.2 mol → 0.2 mol C = 2.4 g。H2O：5.4/18 = 0.3 mol → 每个H2O含2个H，所以0.6 mol H = 0.6 g。O的质量 = 4.6 − 2.4 − 0.6 = 1.6 g → 0.1 mol。C : H : O = 0.2 : 0.6 : 0.1 = 2 : 6 : 1 → C2H6O。忽略化合物中的氧会得到C2H6；把它与CO2和H2O中的氧混淆也会得出错误的式子。",
-        "ku": "CO2: 8,8/44 = 0,2 mol → 0,2 mol C = 2,4 g. H2O: 5,4/18 = 0,3 mol → di her H2O de 2 H hene, loma 0,6 mol H = 0,6 g. Girseya O = 4,6 − 2,4 − 0,6 = 1,6 g → 0,1 mol. Rêje C : H : O = 0,2 : 0,6 : 0,1 = 2 : 6 : 1 → C2H6O. Nehesibandina oksîjena di pêkhateyê de encama C2H6 dide; tevlihevkirina wê bi oksîjena di CO2 û H2O de jî dibe sedema formulên şaş."
+        "tr": "Tablodan kütle artışları okunur: I. tüp 57,4 − 52,0 = 5,4 g H2O, II. tüp 88,8 − 80,0 = 8,8 g CO2 tutmuştur. CO2: 8,8/44 = 0,2 mol → 0,2 mol C = 2,4 g. H2O: 5,4/18 = 0,3 mol → 0,6 mol H = 0,6 g. O kütlesi = 4,6 − 2,4 − 0,6 = 1,6 g → 0,1 mol. Oran C : H : O = 0,2 : 0,6 : 0,1 = 2 : 6 : 1 → C2H6O. Bileşikteki oksijeni hesaba katmamak C2H6'yı verir; tüplerin son kütlelerini doğrudan ürün kütlesi sanmak ya da hangi tüpün hangi gazı tuttuğunu karıştırmak da yanlış formüllere götürür.",
+        "en": "From the table, the mass increases are: tube I 57.4 − 52.0 = 5.4 g of H2O and tube II 88.8 − 80.0 = 8.8 g of CO2. CO2: 8.8/44 = 0.2 mol → 0.2 mol C = 2.4 g. H2O: 5.4/18 = 0.3 mol → 0.6 mol H = 0.6 g. Mass of O = 4.6 − 2.4 − 0.6 = 1.6 g → 0.1 mol. Ratio C : H : O = 0.2 : 0.6 : 0.1 = 2 : 6 : 1 → C2H6O. Ignoring the oxygen in the compound gives C2H6; taking the final tube masses as product masses, or mixing up which tube holds which gas, also leads to wrong formulas.",
+        "de": "Aus der Tabelle ergeben sich die Massenzunahmen: Rohr I 57,4 − 52,0 = 5,4 g H2O, Rohr II 88,8 − 80,0 = 8,8 g CO2. CO2: 8,8/44 = 0,2 mol → 0,2 mol C = 2,4 g. H2O: 5,4/18 = 0,3 mol → 0,6 mol H = 0,6 g. Masse O = 4,6 − 2,4 − 0,6 = 1,6 g → 0,1 mol. Verhältnis C : H : O = 0,2 : 0,6 : 0,1 = 2 : 6 : 1 → C2H6O. Wer den Sauerstoff der Verbindung vergisst, erhält C2H6; wer die Endmassen der Rohre als Produktmassen nimmt oder die Zuordnung der Gase zu den Rohren vertauscht, kommt ebenfalls zu falschen Formeln.",
+        "fr": "Le tableau donne les augmentations de masse : tube I 57,4 − 52,0 = 5,4 g de H2O, tube II 88,8 − 80,0 = 8,8 g de CO2. CO2 : 8,8/44 = 0,2 mol → 0,2 mol de C = 2,4 g. H2O : 5,4/18 = 0,3 mol → 0,6 mol de H = 0,6 g. Masse de O = 4,6 − 2,4 − 0,6 = 1,6 g → 0,1 mol. Rapport C : H : O = 0,2 : 0,6 : 0,1 = 2 : 6 : 1 → C2H6O. Oublier l'oxygène du composé donne C2H6 ; prendre les masses finales des tubes pour les masses des produits, ou confondre quel tube retient quel gaz, conduit aussi à de fausses formules.",
+        "ru": "По таблице находим увеличение массы: трубка I 57,4 − 52,0 = 5,4 г H2O, трубка II 88,8 − 80,0 = 8,8 г CO2. CO2: 8,8/44 = 0,2 моль → 0,2 моль C = 2,4 г. H2O: 5,4/18 = 0,3 моль → 0,6 моль H = 0,6 г. Масса O = 4,6 − 2,4 − 0,6 = 1,6 г → 0,1 моль. Соотношение C : H : O = 0,2 : 0,6 : 0,1 = 2 : 6 : 1 → C2H6O. Если не учесть кислород в веществе, получится C2H6; если принять конечные массы трубок за массы продуктов или перепутать, какая трубка что поглощает, тоже получатся неверные формулы.",
+        "ar": "من الجدول تُقرأ زيادتا الكتلة: الأنبوب I امتص 57.4 − 52.0 = 5.4 g من H2O، والأنبوب II امتص 88.8 − 80.0 = 8.8 g من CO2. CO2: 8.8/44 = 0.2 mol ← 0.2 mol من C = 2.4 g. H2O: 5.4/18 = 0.3 mol ← 0.6 mol من H = 0.6 g. كتلة O = 4.6 − 2.4 − 0.6 = 1.6 g ← 0.1 mol. النسبة C : H : O = 0.2 : 0.6 : 0.1 = 2 : 6 : 1 ← C2H6O. وإهمال أكسجين المركب يعطي C2H6، واعتبار الكتلتين النهائيتين للأنبوبين كتلتي النواتج أو الخلط بين الغاز الذي يمتصه كل أنبوب يقود أيضًا إلى صيغ خاطئة.",
+        "zh": "由表读出质量增加量：管 I 吸收 57.4 − 52.0 = 5.4 g H2O，管 II 吸收 88.8 − 80.0 = 8.8 g CO2。CO2：8.8/44 = 0.2 mol → C 0.2 mol = 2.4 g。H2O：5.4/18 = 0.3 mol → H 0.6 mol = 0.6 g。O 的质量 = 4.6 − 2.4 − 0.6 = 1.6 g → 0.1 mol。C : H : O = 0.2 : 0.6 : 0.1 = 2 : 6 : 1 → C2H6O。忽略化合物中的氧会得到 C2H6；把两管的最终质量当作产物质量，或弄混哪根管吸收哪种气体，也会得到错误的化学式。",
+        "ku": "Ji tabloyê zêdebûna girseyan tê xwendin: lûleya I 57,4 − 52,0 = 5,4 g H2O, lûleya II 88,8 − 80,0 = 8,8 g CO2 girtiye. CO2: 8,8/44 = 0,2 mol → 0,2 mol C = 2,4 g. H2O: 5,4/18 = 0,3 mol → 0,6 mol H = 0,6 g. Girseya O = 4,6 − 2,4 − 0,6 = 1,6 g → 0,1 mol. Rêje C : H : O = 0,2 : 0,6 : 0,1 = 2 : 6 : 1 → C2H6O. Paşguhkirina oksîjena pêkhateyê C2H6 dide; hesibandina girseyên dawî yên lûleyan wek girseya berheman an tevlihevkirina kîjan lûle kîjan gazê digire jî ber bi formulên şaş ve dibe."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Tüp",
+            "en": "Tube",
+            "de": "Rohr",
+            "fr": "Tube",
+            "ru": "Трубка",
+            "ar": "الأنبوب",
+            "zh": "管",
+            "ku": "Lûle"
+          },
+          {
+            "tr": "Dolgu",
+            "en": "Filling",
+            "de": "Füllung",
+            "fr": "Contenu",
+            "ru": "Наполнитель",
+            "ar": "الحشوة",
+            "zh": "填充物",
+            "ku": "Dagirtî"
+          },
+          {
+            "tr": "İlk kütle (g)",
+            "en": "Initial mass (g)",
+            "de": "Anfangsmasse (g)",
+            "fr": "Masse initiale (g)",
+            "ru": "Масса до (г)",
+            "ar": "الكتلة الابتدائية (g)",
+            "zh": "初始质量 (g)",
+            "ku": "Girseya destpêkê (g)"
+          },
+          {
+            "tr": "Son kütle (g)",
+            "en": "Final mass (g)",
+            "de": "Endmasse (g)",
+            "fr": "Masse finale (g)",
+            "ru": "Масса после (г)",
+            "ar": "الكتلة النهائية (g)",
+            "zh": "最终质量 (g)",
+            "ku": "Girseya dawî (g)"
+          }
+        ],
+        "rows": [
+          [
+            "I",
+            "CaCl2",
+            "52,0",
+            "57,4"
+          ],
+          [
+            "II",
+            "KOH",
+            "80,0",
+            "88,8"
+          ]
+        ]
       }
     },
     {
@@ -1732,14 +1854,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin10",
       "stem": {
-        "tr": "Elmas, grafit ve C60 fullereni ile ilgili;\nI. Aynı elementin farklı allotroplarıdır; yeterli oksijenle tamamen yakıldıklarında yalnızca CO2 oluşur.\nII. Üçünde de karbon atomları sp3 hibritleşmesi yapmıştır.\nIII. Normal koşullarda elmas elektriği iletmezken grafit iletir.\nyargılarından hangileri doğrudur?",
-        "en": "Regarding diamond, graphite and fullerene C60;\nI. They are different allotropes of the same element; when burned completely in enough oxygen, only CO2 is formed.\nII. In all three, the carbon atoms are sp3-hybridized.\nIII. Under normal conditions diamond does not conduct electricity, whereas graphite does.\nwhich of the statements are correct?",
-        "de": "Welche der folgenden Aussagen über Diamant, Graphit und das Fulleren C60 sind richtig?\nI. Sie sind verschiedene Allotrope desselben Elements; bei vollständiger Verbrennung mit genügend Sauerstoff entsteht nur CO2.\nII. In allen dreien sind die Kohlenstoffatome sp3-hybridisiert.\nIII. Unter Normalbedingungen leitet Diamant den Strom nicht, Graphit dagegen schon.",
-        "fr": "Concernant le diamant, le graphite et le fullerène C60 :\nI. Ce sont des variétés allotropiques différentes du même élément ; leur combustion complète dans suffisamment de dioxygène ne donne que du CO2.\nII. Dans les trois, les atomes de carbone sont hybridés sp3.\nIII. Dans les conditions normales, le diamant ne conduit pas l'électricité alors que le graphite la conduit.\nlesquelles de ces affirmations sont exactes ?",
-        "ru": "Какие из утверждений об алмазе, графите и фуллерене C60 верны?\nI. Это разные аллотропные модификации одного элемента; при полном сгорании в достаточном количестве кислорода образуется только CO2.\nII. Во всех трёх атомы углерода находятся в sp3-гибридизации.\nIII. При обычных условиях алмаз не проводит электрический ток, а графит проводит.",
-        "ar": "فيما يتعلق بالماس والجرافيت وفوليرين C60:\nI. هي متآصلات مختلفة لعنصر واحد؛ وعند احتراقها التام في كمية كافية من الأكسجين لا يتكوّن إلا CO2.\nII. ذرات الكربون في الثلاثة مهجنة sp3.\nIII. في الظروف العادية لا يوصل الماس الكهرباء بينما يوصلها الجرافيت.\nأي العبارات صحيحة؟",
-        "zh": "关于金刚石、石墨和富勒烯C60：\nI. 它们是同一种元素的不同同素异形体；在足量氧气中完全燃烧都只生成CO2。\nII. 三者中碳原子都是sp3杂化。\nIII. 通常条件下金刚石不导电，而石墨导电。\n以上说法中正确的是哪些？",
-        "ku": "Derbarê elmas, grafît û fûlerena C60 de;\nI. Ew allotropên cuda yên heman elementê ne; dema bi oksîjena têr bi tevahî têne şewitandin tenê CO2 çêdibe.\nII. Di her sêyan de jî atomên karbonê hîbrîdîzasyona sp3 kirine.\nIII. Di şertên normal de elmas elektrîkê naguhezîne, lê grafît diguhezîne.\nkîjan ji van gotinan rast in?"
+        "tr": "Tabloda karbonun X, Y ve Z allotroplarına ait bazı bilgiler verilmiştir.\nBu allotroplarla ilgili;\nI. X'te karbon atomları sp3 hibritleşmesi yapmıştır ve X elektriği iletmez.\nII. Y'de her C atomunun hibritleşmeye katılmamış bir p orbitali vardır.\nIII. Z yeterli oksijenle tamamen yandığında CO2'den başka ürün de oluşur.\nyargılarından hangileri doğrudur?",
+        "en": "The table gives some information about the carbon allotropes X, Y and Z.\nWhich of the following statements about these allotropes are correct?\nI. In X the carbon atoms are sp3 hybridized and X does not conduct electricity.\nII. In Y every C atom has one p orbital that does not take part in hybridization.\nIII. When Z burns completely in enough oxygen, a product other than CO2 also forms.",
+        "de": "Die Tabelle enthält einige Angaben zu den Kohlenstoffallotropen X, Y und Z.\nWelche der folgenden Aussagen über diese Allotrope sind richtig?\nI. In X sind die Kohlenstoffatome sp3-hybridisiert, und X leitet keinen Strom.\nII. In Y besitzt jedes C-Atom ein nicht an der Hybridisierung beteiligtes p-Orbital.\nIII. Bei vollständiger Verbrennung von Z mit genügend Sauerstoff entsteht außer CO2 noch ein weiteres Produkt.",
+        "fr": "Le tableau donne quelques informations sur les allotropes X, Y et Z du carbone.\nParmi les affirmations suivantes sur ces allotropes, lesquelles sont correctes ?\nI. Dans X, les atomes de carbone sont hybridés sp3 et X ne conduit pas l'électricité.\nII. Dans Y, chaque atome C possède une orbitale p qui ne participe pas à l'hybridation.\nIII. La combustion complète de Z dans suffisamment de dioxygène donne aussi un produit autre que CO2.",
+        "ru": "В таблице приведены некоторые сведения об аллотропных модификациях углерода X, Y и Z.\nКакие утверждения об этих модификациях верны?\nI. В X атомы углерода находятся в sp3-гибридизации, и X не проводит ток.\nII. В Y у каждого атома C есть одна p-орбиталь, не участвующая в гибридизации.\nIII. При полном сгорании Z в достаточном количестве кислорода, кроме CO2, образуется ещё какой-то продукт.",
+        "ar": "يبيّن الجدول بعض المعلومات عن متآصلات الكربون X وY وZ.\nأيٌّ من العبارات الآتية عن هذه المتآصلات صحيحة؟\nI. ذرات الكربون في X مهجّنة sp3، وX لا يوصل الكهرباء.\nII. لكل ذرة C في Y فلك p واحد لا يشارك في التهجين.\nIII. عند احتراق Z احتراقًا تامًا في كمية كافية من الأكسجين يتكوّن ناتج آخر غير CO2.",
+        "zh": "表中给出了碳的同素异形体 X、Y、Z 的一些信息。\n关于这些同素异形体的下列说法中，哪些正确？\nI. X 中碳原子为 sp3 杂化，X 不导电。\nII. Y 中每个 C 原子都有一个未参与杂化的 p 轨道。\nIII. Z 在足量氧气中完全燃烧时，除 CO2 外还生成其他产物。",
+        "ku": "Di tabloyê de hin agahî derbarê alotropên karbonê X, Y û Z de hatine dayîn.\nDerbarê van alotropan de;\nI. Di X de atomên karbonê sp3 hîbrîd bûne û X elektrîkê naguhêze.\nII. Di Y de her atomeke C orbîtaleke p heye ku beşdarî hîbrîdbûnê nebûye.\nIII. Dema Z bi oksîjena têr bi tevahî dişewite, ji bilî CO2 berhemeke din jî çêdibe.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1753,24 +1875,24 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Tenê I"
         },
         {
-          "tr": "Yalnız II",
-          "en": "II only",
-          "de": "Nur II",
-          "fr": "II seulement",
-          "ru": "Только II",
-          "ar": "II فقط",
-          "zh": "仅 II",
-          "ku": "Tenê II"
+          "tr": "Yalnız III",
+          "en": "III only",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅 III",
+          "ku": "Tenê III"
         },
         {
-          "tr": "I ve III",
-          "en": "I and III",
-          "de": "I und III",
-          "fr": "I et III",
-          "ru": "I и III",
-          "ar": "I و III",
-          "zh": "I 和 III",
-          "ku": "I û III"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
           "tr": "II ve III",
@@ -1795,27 +1917,106 @@ export const unit23: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "I doğru: üçü de yalnızca karbon atomlarından oluşan allotroplardır, bu yüzden tam yanmada tek ürün CO2'dir. II yanlış: yalnız elmasta her C dört komşuya bağlı ve sp3'tür; grafit ve C60'ta her C üç komşuya bağlıdır ve sp2'dir. III doğru: elmasta hareketli elektron yoktur, grafitte tabaka boyunca hareket eden pi elektronları iletkenlik sağlar.",
-        "en": "I is true: all three are allotropes made only of carbon atoms, so the only product of complete combustion is CO2. II is false: only in diamond is each C bonded to four neighbours and sp3; in graphite and C60 each C is bonded to three neighbours and is sp2. III is true: diamond has no mobile electrons, while in graphite the pi electrons moving along the layers provide conductivity.",
-        "de": "I ist richtig: Alle drei sind Allotrope nur aus Kohlenstoffatomen, daher ist das einzige Produkt der vollständigen Verbrennung CO2. II ist falsch: Nur im Diamanten ist jedes C an vier Nachbarn gebunden und sp3; in Graphit und C60 ist jedes C an drei Nachbarn gebunden und sp2. III ist richtig: Diamant hat keine beweglichen Elektronen, im Graphit sorgen die entlang der Schichten beweglichen pi-Elektronen für Leitfähigkeit.",
-        "fr": "I est vraie : les trois sont des variétés allotropiques formées uniquement d'atomes de carbone, donc le seul produit de la combustion complète est CO2. II est fausse : seul le diamant a chaque C lié à quatre voisins et hybridé sp3 ; dans le graphite et C60, chaque C est lié à trois voisins et hybridé sp2. III est vraie : le diamant n'a pas d'électrons mobiles, tandis que dans le graphite les électrons pi mobiles le long des feuillets assurent la conduction.",
-        "ru": "I верно: все три — аллотропные модификации, состоящие только из атомов углерода, поэтому единственный продукт полного сгорания — CO2. II неверно: только в алмазе каждый атом C связан с четырьмя соседями и находится в sp3-гибридизации; в графите и C60 каждый атом C связан с тремя соседями и находится в sp2-гибридизации. III верно: в алмазе нет подвижных электронов, а в графите электропроводность обеспечивают π-электроны, движущиеся вдоль слоёв.",
-        "ar": "العبارة I صحيحة: الثلاثة متآصلات مكوّنة من ذرات الكربون فقط، لذا فالناتج الوحيد للاحتراق التام هو CO2. العبارة II خاطئة: في الماس وحده ترتبط كل ذرة C بأربع ذرات وتكون sp3، أما في الجرافيت وC60 فترتبط كل ذرة C بثلاث ذرات وتكون sp2. العبارة III صحيحة: لا توجد في الماس إلكترونات متحركة، بينما توفر إلكترونات باي المتحركة على امتداد طبقات الجرافيت التوصيل.",
-        "zh": "I正确：三者都是只由碳原子构成的同素异形体，完全燃烧的唯一产物是CO2。II错误：只有金刚石中每个碳原子与四个碳原子相连、为sp3杂化；石墨和C60中每个碳原子与三个碳原子相连、为sp2杂化。III正确：金刚石中没有可移动的电子，而石墨中沿层面移动的π电子使其导电。",
-        "ku": "I rast e: her sê jî allotropên ku tenê ji atomên karbonê pêk tên in, loma hilbera yekane ya şewitîna tevahî CO2 ye. II şaş e: tenê di elmasê de her C bi çar cîranan ve girêdayî û sp3 e; di grafît û C60 de her C bi sê cîranan ve girêdayî û sp2 e. III rast e: di elmasê de elektronên tevgerbar tune ne, di grafîtê de jî elektronên pî yên di nav qatan de diliven guhêzbariyê peyda dikin."
+        "tr": "Her C'si dört komşuya bağlı, üç boyutlu ağ yapılı X elmastır: karbonlar sp3'tür ve hareketli elektron bulunmadığından elmas elektriği iletmez (I doğru). Her C'si üç komşuya bağlı, tek atom kalınlığında düz tabaka olan Y grafendir: karbonlar sp2'dir ve her birinde hibritleşmeye katılmayan bir p orbitali bulunur; pi bağları bu orbitallerle kurulur (II doğru). Beşgen ve altıgenlerden oluşan kapalı kafes Z fullerendir; yalnızca karbon atomlarından oluştuğu için tam yanmada tek ürün CO2'dir (III yanlış). Bağlı komşu sayısı 3 olan iki allotropu ayırmak için tablodaki yapı bilgisini kullanmak gerekir.",
+        "en": "X, in which each C is bonded to four neighbours in a three-dimensional network, is diamond: the carbons are sp3 and, with no mobile electrons, diamond does not conduct electricity (I correct). Y, in which each C is bonded to three neighbours in a flat sheet one atom thick, is graphene: the carbons are sp2 and each keeps one unhybridized p orbital, which forms the pi bonds (II correct). Z, a closed cage of pentagons and hexagons, is a fullerene; it consists only of carbon atoms, so the only product of complete combustion is CO2 (III wrong). The structure column of the table is needed to tell apart the two allotropes whose atoms have three neighbours.",
+        "de": "X, in dem jedes C-Atom in einem dreidimensionalen Netz an vier Nachbarn gebunden ist, ist Diamant: Die Kohlenstoffatome sind sp3-hybridisiert, und ohne bewegliche Elektronen leitet Diamant nicht (I richtig). Y, in dem jedes C-Atom in einer ein Atom dicken ebenen Schicht an drei Nachbarn gebunden ist, ist Graphen: Die Kohlenstoffatome sind sp2-hybridisiert und besitzen je ein nicht hybridisiertes p-Orbital, das die Pi-Bindungen bildet (II richtig). Z, ein geschlossener Käfig aus Fünf- und Sechsecken, ist ein Fulleren; es besteht nur aus Kohlenstoff, daher ist CO2 das einzige Produkt der vollständigen Verbrennung (III falsch). Um die beiden Allotrope mit drei Nachbarn pro Atom zu unterscheiden, braucht man die Strukturangabe der Tabelle.",
+        "fr": "X, où chaque C est lié à quatre voisins dans un réseau tridimensionnel, est le diamant : les carbones sont sp3 et, sans électrons mobiles, le diamant ne conduit pas l'électricité (I correcte). Y, où chaque C est lié à trois voisins dans un feuillet plan d'un atome d'épaisseur, est le graphène : les carbones sont sp2 et gardent chacun une orbitale p non hybridée qui forme les liaisons pi (II correcte). Z, cage fermée de pentagones et d'hexagones, est un fullerène ; il n'est formé que d'atomes de carbone, donc sa combustion complète ne donne que du CO2 (III fausse). La colonne « structure » du tableau est nécessaire pour distinguer les deux allotropes à trois voisins.",
+        "ru": "X, в котором каждый атом C связан с четырьмя соседями в трёхмерной сетке, — алмаз: атомы углерода находятся в sp3-гибридизации, подвижных электронов нет, и алмаз не проводит ток (I верно). Y, в котором каждый атом C связан с тремя соседями в плоском слое толщиной в один атом, — графен: атомы углерода sp2-гибридны, и у каждого остаётся одна негибридизованная p-орбиталь, образующая пи-связи (II верно). Z — замкнутый каркас из пяти- и шестиугольников — фуллерен; он состоит только из атомов углерода, поэтому единственный продукт полного сгорания — CO2 (III неверно). Чтобы различить две модификации с тремя соседями у атома, нужен столбец таблицы о строении.",
+        "ar": "المتآصل X الذي ترتبط فيه كل ذرة C بأربع ذرات في شبكة ثلاثية الأبعاد هو الألماس: ذراته مهجّنة sp3، ولعدم وجود إلكترونات حرة الحركة لا يوصل الكهرباء (I صحيحة). والمتآصل Y الذي ترتبط فيه كل ذرة C بثلاث ذرات في طبقة مستوية سمكها ذرة واحدة هو الغرافين: ذراته مهجّنة sp2 ولكل منها فلك p غير مهجّن تتكوّن منه روابط باي (II صحيحة). أما Z، وهو قفص مغلق من حلقات خماسية وسداسية، فهو فوليرين؛ ويتكوّن من ذرات كربون فقط، لذا يكون CO2 الناتج الوحيد لاحتراقه التام (III خاطئة). ويلزم عمود البنية في الجدول للتمييز بين المتآصلين اللذين ترتبط فيهما كل ذرة بثلاث ذرات.",
+        "zh": "X 中每个 C 原子与四个相邻原子相连形成三维网状结构，是金刚石：碳原子为 sp3 杂化，没有可移动的电子，所以不导电（I 正确）。Y 中每个 C 原子与三个相邻原子相连，形成一个原子厚的平面片层，是石墨烯：碳原子为 sp2 杂化，每个都保留一个未杂化的 p 轨道，由它们形成 π 键（II 正确）。Z 是由五边形和六边形组成的封闭笼状结构，是富勒烯；它只由碳原子组成，完全燃烧的唯一产物是 CO2（III 错误）。要区分两种每个原子都有三个相邻原子的同素异形体，必须利用表中的结构信息。",
+        "ku": "X ku tê de her atomeke C di tora sê-alî de bi çar cîranan ve girêdayî ye elmas e: karbon sp3 in û ji ber ku elektronên tevger tune ne elmas elektrîkê naguhêze (I rast e). Y ku tê de her atomeke C di çîneke rast a bi qalindahiya yek atomê de bi sê cîranan ve girêdayî ye grafen e: karbon sp2 in û her yekê orbîtaleke p ya ne-hîbrîd heye ku girêdanên pî pê çêdibin (II rast e). Z ku qefeseke girtî ya ji pêncgoşe û şeşgoşeyan e fulleren e; tenê ji atomên karbonê pêk tê, ji ber vê berhema tenê ya şewitandina temam CO2 ye (III şaş e). Ji bo cudakirina du alotropên ku her atom bi sê cîranan ve girêdayî ye, agahiya avahiyê ya tabloyê pêwîst e."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Allotrop",
+            "en": "Allotrope",
+            "de": "Allotrop",
+            "fr": "Allotrope",
+            "ru": "Модификация",
+            "ar": "المتآصل",
+            "zh": "同素异形体",
+            "ku": "Alotrop"
+          },
+          {
+            "tr": "Her C atomunun bağlı olduğu C sayısı",
+            "en": "C neighbours of each C atom",
+            "de": "C-Nachbarn je C-Atom",
+            "fr": "Voisins C de chaque atome C",
+            "ru": "Соседних атомов C у каждого C",
+            "ar": "عدد ذرات C المرتبطة بكل ذرة C",
+            "zh": "每个 C 原子相连的 C 原子数",
+            "ku": "Hejmara cîranên C yên her atoma C"
+          },
+          {
+            "tr": "Yapı",
+            "en": "Structure",
+            "de": "Struktur",
+            "fr": "Structure",
+            "ru": "Строение",
+            "ar": "البنية",
+            "zh": "结构",
+            "ku": "Avahî"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            "4",
+            {
+              "tr": "Üç boyutlu ağ örgü",
+              "en": "Three-dimensional network",
+              "de": "Dreidimensionales Netz",
+              "fr": "Réseau tridimensionnel",
+              "ru": "Трёхмерная сетка",
+              "ar": "شبكة ثلاثية الأبعاد",
+              "zh": "三维网状结构",
+              "ku": "Tora sê-alî"
+            }
+          ],
+          [
+            "Y",
+            "3",
+            {
+              "tr": "Tek atom kalınlığında düz tabaka",
+              "en": "Flat sheet one atom thick",
+              "de": "Ebene Schicht, ein Atom dick",
+              "fr": "Feuillet plan d'un atome d'épaisseur",
+              "ru": "Плоский слой толщиной в один атом",
+              "ar": "طبقة مستوية بسمك ذرة واحدة",
+              "zh": "一个原子厚的平面片层",
+              "ku": "Çîneke rast bi qalindahiya yek atomê"
+            }
+          ],
+          [
+            "Z",
+            "3",
+            {
+              "tr": "Beşgen ve altıgen halkalardan oluşan kapalı kafes",
+              "en": "Closed cage of pentagons and hexagons",
+              "de": "Geschlossener Käfig aus Fünf- und Sechsecken",
+              "fr": "Cage fermée de pentagones et d'hexagones",
+              "ru": "Замкнутый каркас из пяти- и шестиугольников",
+              "ar": "قفص مغلق من حلقات خماسية وسداسية",
+              "zh": "由五边形和六边形组成的封闭笼",
+              "ku": "Qefeseke girtî ji pêncgoşe û şeşgoşeyan"
+            }
+          ]
+        ]
       }
     },
     {
       "id": "u23-twin11",
       "stem": {
-        "tr": "Wöhler 1828'de, anorganik bir tuz olan amonyum siyanatı (NH4OCN) ısıtarak organik bir bileşik olan üreyi (CO(NH2)2) elde etmiştir.\nBuna göre aşağıdaki bileşiklerden hangisi, karbon içermesine rağmen organik bileşik sınıfında yer almaz?",
+        "tr": "Wöhler 1828'de, anorganik bir tuz olan amonyum siyanatı (NH4OCN) ısıtarak organik bir bileşik olan üreyi (CO(NH2)2) elde etmiştir.\nAşağıdaki bileşiklerden hangisi, karbon içermesine rağmen organik bileşik sınıfında yer almaz?",
         "en": "In 1828 Wöhler obtained urea (CO(NH2)2), an organic compound, by heating ammonium cyanate (NH4OCN), an inorganic salt.\nWhich of the following compounds, although it contains carbon, is NOT classified as an organic compound?",
         "de": "Wöhler gewann 1828 durch Erhitzen des anorganischen Salzes Ammoniumcyanat (NH4OCN) die organische Verbindung Harnstoff (CO(NH2)2).\nWelche der folgenden Verbindungen wird trotz ihres Kohlenstoffgehalts NICHT zu den organischen Verbindungen gezählt?",
         "fr": "En 1828, Wöhler a obtenu l'urée (CO(NH2)2), composé organique, en chauffant le cyanate d'ammonium (NH4OCN), un sel inorganique.\nLequel des composés suivants, bien qu'il contienne du carbone, n'est PAS classé parmi les composés organiques ?",
         "ru": "В 1828 году Вёлер получил органическое соединение — мочевину (CO(NH2)2), нагревая неорганическую соль — цианат аммония (NH4OCN).\nКакое из следующих соединений, несмотря на наличие углерода, НЕ относится к органическим?",
         "ar": "حصل فولر عام 1828 على اليوريا (CO(NH2)2)، وهي مركب عضوي، بتسخين سيانات الأمونيوم (NH4OCN)، وهي ملح غير عضوي.\nأي المركبات التالية لا يُصنَّف مركبًا عضويًا على الرغم من احتوائه على الكربون؟",
         "zh": "1828年，维勒加热无机盐氰酸铵(NH4OCN)得到了有机化合物尿素(CO(NH2)2)。\n下列化合物中，哪一种虽然含有碳，却不属于有机化合物？",
-        "ku": "Wöhler di sala 1828an de bi germkirina amonyûm sîyanatê (NH4OCN), ku xwêyeke anorganîk e, ure (CO(NH2)2), ku pêkhateyeke organîk e, bi dest xist.\nLi gorî vê, kîjan ji van pêkhateyan tevî ku karbon dihewîne di nav pêkhateyên organîk de cih nagire?"
+        "ku": "Wöhler di sala 1828an de bi germkirina amonyûm sîyanatê (NH4OCN), ku xwêyeke anorganîk e, ure (CO(NH2)2), ku pêkhateyeke organîk e, bi dest xist.\nKîjan ji van pêkhateyan tevî ku karbon dihewîne di nav pêkhateyên organîk de cih nagire?"
       },
       "options": [
         {

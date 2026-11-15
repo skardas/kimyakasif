@@ -460,9 +460,13 @@ export async function runTier3Tests(): Promise<void> {
       const enQs = compileUnitQuestions(ALL_CHEMISTRY_UNITS[0], 'en');
       const arQs = compileUnitQuestions(ALL_CHEMISTRY_UNITS[0], 'ar');
 
-      expect(trQs[0].stem).toContain('Kimya Bilimi');
-      expect(enQs[0].stem).toContain('Chemistry as a Science');
-      expect(arQs[0].stem).toContain('علم الكيمياء');
+      // Stems are direct scientific questions in the active language and never cite the unit/book.
+      expect(trQs[0].stem).toContain('hangileri');
+      expect(enQs[0].stem).toContain('Which');
+      expect(arQs[0].stem).toContain('أيّ');
+      for (const q of trQs) {
+        expect(q.stem.includes('Kimya Bilimi') || /ünitesi|kazanım|kitab/i.test(q.stem)).toBe(false);
+      }
     })
   );
 }

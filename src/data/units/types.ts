@@ -11,6 +11,7 @@ import type {
   GoldenFormulaRule,
   MemoryMnemonicItem,
   UnitDeepStudyGuide,
+  QuestionFigureSeed,
 } from '../../types/chemistry';
 
 export type {
@@ -26,6 +27,7 @@ export type {
   GoldenFormulaRule,
   MemoryMnemonicItem,
   UnitDeepStudyGuide,
+  QuestionFigureSeed,
 };
 
 export interface FactTrapPair {
@@ -55,6 +57,8 @@ export interface OsymTwinQuestionSeed {
   options: [LocalizedText, LocalizedText, LocalizedText, LocalizedText, LocalizedText];
   correctIndex: 0 | 1 | 2 | 3 | 4;
   explanation: LocalizedText;
+  /** figure the question depends on (şekilli soru); shown above the stem */
+  figure?: QuestionFigureSeed;
 }
 
 export interface ChemistryUnitSeedData {

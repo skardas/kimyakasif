@@ -836,14 +836,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-s01",
       "title": {
-        "tr": "Çözelti Karıştırma Hesap Adımları",
-        "en": "Solution Mixing Calculation Steps",
-        "de": "Berechnungsschritte für das Lösungsmischen",
-        "fr": "Étapes de calcul du mélange de solutions",
-        "ru": "Порядок расчёта при смешивании растворов",
-        "ar": "حساب تراكيز المحاليل المخلوطة",
-        "zh": "溶液混合计算步骤",
-        "ku": "Gavên Hesabê Tevlihevkirina Çareseriyan"
+        "tr": "Karışımda iyon derişimi hesabı",
+        "en": "Calculating an ion's concentration in a mixture",
+        "de": "Berechnung einer Ionenkonzentration in einer Mischung",
+        "fr": "Calcul de la concentration d'un ion dans un mélange",
+        "ru": "Расчёт концентрации иона в смеси",
+        "ar": "حساب تركيز أيون في محلول مخلوط",
+        "zh": "混合溶液中离子浓度的计算",
+        "ku": "Hesabkirina tîrbûna îyonekê di tevliheviyê de"
       },
       "steps": [
         {
@@ -1210,77 +1210,151 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin03",
       "stem": {
-        "tr": "8 g NaOH katısı saf suda çözülerek hacmi 250 mL olan bir çözelti hazırlanıyor. Bu çözeltinin molar derişimi kaç M'dır? (NaOH: 40 g/mol)",
-        "en": "A solution with a volume of 250 mL is prepared by dissolving 8 g of solid NaOH in pure water. What is the molar concentration of this solution in M? (NaOH: 40 g/mol)",
-        "de": "Durch Lösen von 8 g festem NaOH in reinem Wasser wird eine Lösung mit einem Volumen von 250 mL hergestellt. Welche molare Konzentration (in M) hat diese Lösung? (NaOH: 40 g/mol)",
-        "fr": "On prépare une solution de 250 mL en dissolvant 8 g de NaOH solide dans de l'eau pure. Quelle est la concentration molaire de cette solution, en M ? (NaOH : 40 g/mol)",
-        "ru": "Растворив 8 г твёрдого NaOH в чистой воде, приготовили 250 мл раствора. Чему равна молярная концентрация этого раствора (M)? (NaOH: 40 г/моль)",
-        "ar": "يُحضَّر محلول حجمه 250 mL بإذابة 8 g من NaOH الصلب في ماء نقي. ما التركيز المولاري لهذا المحلول بوحدة M؟ (NaOH: 40 g/mol)",
-        "zh": "将 8 g 固体 NaOH 溶于纯水，配成 250 mL 溶液。该溶液的物质的量浓度是多少 M？(NaOH：40 g/mol)",
-        "ku": "Bi helandina 8 g NaOH ya hişk di ava paqij de çareseriyeke bi qebareya 250 mL tê amadekirin. Tîrbûna molar a vê çareseriyê çend M e? (NaOH: 40 g/mol)"
+        "tr": "Tabloda saf suyla hazırlanan üç çözeltideki çözünen kütleleri ve çözelti hacimleri verilmiştir. Bu çözeltilerin molar derişimlerinin büyükten küçüğe sıralanışı hangisidir? (NaOH = 40 g/mol, KOH = 56 g/mol)",
+        "en": "The table gives the mass of solute and the solution volume for three solutions prepared with pure water. Which shows the molar concentrations of these solutions in decreasing order? (NaOH = 40 g/mol, KOH = 56 g/mol)",
+        "de": "Die Tabelle gibt für drei mit reinem Wasser hergestellte Lösungen die Masse des gelösten Stoffes und das Lösungsvolumen an. Welche Reihenfolge gibt die Stoffmengenkonzentrationen dieser Lösungen von groß nach klein an? (NaOH = 40 g/mol, KOH = 56 g/mol)",
+        "fr": "Le tableau indique la masse de soluté et le volume de solution de trois solutions préparées avec de l'eau pure. Quel est l'ordre décroissant des concentrations molaires de ces solutions ? (NaOH = 40 g/mol, KOH = 56 g/mol)",
+        "ru": "В таблице приведены массы растворённого вещества и объёмы трёх растворов, приготовленных на чистой воде. В каком варианте растворы расположены в порядке убывания молярной концентрации? (NaOH = 40 г/моль, KOH = 56 г/моль)",
+        "ar": "يبيّن الجدول كتلة المذاب وحجم المحلول لثلاثة محاليل حُضِّرت بالماء النقي. ما ترتيب التراكيز المولارية لهذه المحاليل من الأكبر إلى الأصغر؟ (NaOH = 40 g/mol، KOH = 56 g/mol)",
+        "zh": "表中给出了用纯水配制的三种溶液中溶质的质量和溶液的体积。这些溶液的物质的量浓度由大到小的顺序是哪一项？(NaOH = 40 g/mol，KOH = 56 g/mol)",
+        "ku": "Di tabloyê de giraniya madeya helandî û qebareya çareseriyê ya sê çareseriyên bi ava paqij hatine amadekirin hatine dayîn. Rêzkirina tîrbûnên molar ên van çareseriyan ji mezin ber bi piçûk kîjan e? (NaOH = 40 g/mol, KOH = 56 g/mol)"
       },
       "options": [
         {
-          "tr": "0,032 M",
-          "en": "0.032 M",
-          "de": "0,032 M",
-          "fr": "0,032 M",
-          "ru": "0,032 M",
-          "ar": "0.032 M",
-          "zh": "0.032 M",
-          "ku": "0,032 M"
+          "tr": "I > II > III",
+          "en": "I > II > III",
+          "de": "I > II > III",
+          "fr": "I > II > III",
+          "ru": "I > II > III",
+          "ar": "I > II > III",
+          "zh": "I > II > III",
+          "ku": "I > II > III"
         },
         {
-          "tr": "0,2 M",
-          "en": "0.2 M",
-          "de": "0,2 M",
-          "fr": "0,2 M",
-          "ru": "0,2 M",
-          "ar": "0.2 M",
-          "zh": "0.2 M",
-          "ku": "0,2 M"
+          "tr": "I > III > II",
+          "en": "I > III > II",
+          "de": "I > III > II",
+          "fr": "I > III > II",
+          "ru": "I > III > II",
+          "ar": "I > III > II",
+          "zh": "I > III > II",
+          "ku": "I > III > II"
         },
         {
-          "tr": "0,8 M",
-          "en": "0.8 M",
-          "de": "0,8 M",
-          "fr": "0,8 M",
-          "ru": "0,8 M",
-          "ar": "0.8 M",
-          "zh": "0.8 M",
-          "ku": "0,8 M"
+          "tr": "II > I > III",
+          "en": "II > I > III",
+          "de": "II > I > III",
+          "fr": "II > I > III",
+          "ru": "II > I > III",
+          "ar": "II > I > III",
+          "zh": "II > I > III",
+          "ku": "II > I > III"
         },
         {
-          "tr": "3,2 M",
-          "en": "3.2 M",
-          "de": "3,2 M",
-          "fr": "3,2 M",
-          "ru": "3,2 M",
-          "ar": "3.2 M",
-          "zh": "3.2 M",
-          "ku": "3,2 M"
+          "tr": "III > I > II",
+          "en": "III > I > II",
+          "de": "III > I > II",
+          "fr": "III > I > II",
+          "ru": "III > I > II",
+          "ar": "III > I > II",
+          "zh": "III > I > II",
+          "ku": "III > I > II"
         },
         {
-          "tr": "32 M",
-          "en": "32 M",
-          "de": "32 M",
-          "fr": "32 M",
-          "ru": "32 M",
-          "ar": "32 M",
-          "zh": "32 M",
-          "ku": "32 M"
+          "tr": "I = II > III",
+          "en": "I = II > III",
+          "de": "I = II > III",
+          "fr": "I = II > III",
+          "ru": "I = II > III",
+          "ar": "I = II > III",
+          "zh": "I = II > III",
+          "ku": "I = II > III"
         }
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "explanation": {
-        "tr": "n(NaOH) = 8 / 40 = 0,2 mol; V = 250 mL = 0,25 L. M = n / V = 0,2 / 0,25 = 0,8 M. 0,2 M sonucu mol sayısını derişim sanmaktan, 0,032 M sonucu hacmi litreye çevirmeden 250'ye bölmekten, 32 M sonucu kütleyi (g) doğrudan litreye bölmekten kaynaklanır.",
-        "en": "n(NaOH) = 8 / 40 = 0.2 mol; V = 250 mL = 0.25 L. M = n / V = 0.2 / 0.25 = 0.8 M. The result 0.2 M comes from mistaking the number of moles for the concentration, 0.032 M from dividing by 250 without converting to litres, and 32 M from dividing the mass in grams directly by the volume in litres.",
-        "de": "n(NaOH) = 8 / 40 = 0,2 mol; V = 250 mL = 0,25 L. M = n / V = 0,2 / 0,25 = 0,8 M. 0,2 M entsteht, wenn man die Stoffmenge für die Konzentration hält, 0,032 M, wenn man ohne Umrechnung in Liter durch 250 teilt, und 32 M, wenn man die Masse in Gramm direkt durch das Volumen in Litern teilt.",
-        "fr": "n(NaOH) = 8 / 40 = 0,2 mol ; V = 250 mL = 0,25 L. M = n / V = 0,2 / 0,25 = 0,8 M. Le résultat 0,2 M vient de la confusion entre nombre de moles et concentration, 0,032 M d'une division par 250 sans conversion en litres, et 32 M de la division directe de la masse en grammes par le volume en litres.",
-        "ru": "n(NaOH) = 8 / 40 = 0,2 моль; V = 250 мл = 0,25 л. M = n / V = 0,2 / 0,25 = 0,8 M. Ответ 0,2 M получается, если принять число молей за концентрацию, 0,032 M — если делить на 250 без перевода в литры, 32 M — если делить массу в граммах прямо на объём в литрах.",
-        "ar": "n(NaOH) = 8 / 40 = 0.2 mol؛ V = 250 mL = 0.25 L. M = n / V = 0.2 / 0.25 = 0.8 M. النتيجة 0.2 M تنتج عن اعتبار عدد المولات هو التركيز، و0.032 M عن القسمة على 250 دون التحويل إلى لتر، و32 M عن قسمة الكتلة بالغرام مباشرة على الحجم باللتر.",
-        "zh": "n(NaOH) = 8 / 40 = 0.2 mol；V = 250 mL = 0.25 L。M = n / V = 0.2 / 0.25 = 0.8 M。得到 0.2 M 是把物质的量当成了浓度，0.032 M 是没有换算成升就除以 250，32 M 是直接用质量(g)除以体积(L)。",
-        "ku": "n(NaOH) = 8 / 40 = 0,2 mol; V = 250 mL = 0,25 L. M = n / V = 0,2 / 0,25 = 0,8 M. Encama 0,2 M ji hesibandina hejmara molan wek tîrbûnê tê; 0,032 M ji dabeşkirina li ser 250 bêyî veguhertina bo lître; 32 M jî ji dabeşkirina girseyê (g) rasterast li ser qebareya bi lître."
+        "tr": "Molarite = n / V(L). I: n = 8/40 = 0,2 mol, V = 0,25 L → 0,8 M. II: n = 11,2/56 = 0,2 mol, V = 0,5 L → 0,4 M. III: n = 4/40 = 0,1 mol, V = 0,2 L → 0,5 M. Sıralama I > III > II'dir. Yalnızca çözünen kütlelerine bakan II > I > III, yalnızca mol sayılarına bakan I = II > III, mol sayısı yerine g/L değerlerini (32; 22,4; 20 g/L) karşılaştıran ise I > II > III sonucuna ulaşır.",
+        "en": "Molarity = n / V(L). I: n = 8/40 = 0.2 mol, V = 0.25 L → 0.8 M. II: n = 11.2/56 = 0.2 mol, V = 0.5 L → 0.4 M. III: n = 4/40 = 0.1 mol, V = 0.2 L → 0.5 M. The order is I > III > II. Looking only at the solute masses gives II > I > III, looking only at the moles gives I = II > III, and comparing g/L values (32, 22.4 and 20 g/L) instead of moles gives I > II > III.",
+        "de": "Stoffmengenkonzentration = n / V(L). I: n = 8/40 = 0,2 mol, V = 0,25 L → 0,8 M. II: n = 11,2/56 = 0,2 mol, V = 0,5 L → 0,4 M. III: n = 4/40 = 0,1 mol, V = 0,2 L → 0,5 M. Die Reihenfolge ist I > III > II. Wer nur die Massen betrachtet, erhält II > I > III; wer nur die Stoffmengen betrachtet, I = II > III; wer statt der Stoffmengen die g/L-Werte (32; 22,4; 20 g/L) vergleicht, I > II > III.",
+        "fr": "Concentration molaire = n / V(L). I : n = 8/40 = 0,2 mol, V = 0,25 L → 0,8 M. II : n = 11,2/56 = 0,2 mol, V = 0,5 L → 0,4 M. III : n = 4/40 = 0,1 mol, V = 0,2 L → 0,5 M. L'ordre est I > III > II. Ne regarder que les masses donne II > I > III ; ne regarder que les quantités de matière donne I = II > III ; comparer les valeurs en g/L (32 ; 22,4 ; 20 g/L) au lieu des moles donne I > II > III.",
+        "ru": "Молярная концентрация = n / V(л). I: n = 8/40 = 0,2 моль, V = 0,25 л → 0,8 M. II: n = 11,2/56 = 0,2 моль, V = 0,5 л → 0,4 M. III: n = 4/40 = 0,1 моль, V = 0,2 л → 0,5 M. Порядок: I > III > II. Если смотреть только на массы, получится II > I > III; только на количества вещества — I = II > III; если сравнивать значения в г/л (32; 22,4; 20 г/л) вместо молей — I > II > III.",
+        "ar": "المولارية = n / V(L). I: n = 8/40 = 0.2 mol وV = 0.25 L → 0.8 M. II: n = 11.2/56 = 0.2 mol وV = 0.5 L → 0.4 M. III: n = 4/40 = 0.1 mol وV = 0.2 L → 0.5 M. الترتيب هو I > III > II. من ينظر إلى كتل المذاب وحدها يحصل على II > I > III، ومن ينظر إلى عدد المولات وحده يحصل على I = II > III، ومن يقارن قيم g/L (32 و22.4 و20 g/L) بدل المولات يحصل على I > II > III.",
+        "zh": "物质的量浓度 = n / V(L)。I：n = 8/40 = 0.2 mol，V = 0.25 L → 0.8 M。II：n = 11.2/56 = 0.2 mol，V = 0.5 L → 0.4 M。III：n = 4/40 = 0.1 mol，V = 0.2 L → 0.5 M。顺序为 I > III > II。只看溶质质量会得到 II > I > III；只看物质的量会得到 I = II > III；用 g/L 数值 (32、22.4、20 g/L) 代替物质的量比较会得到 I > II > III。",
+        "ku": "Molarîte = n / V(L). I: n = 8/40 = 0,2 mol, V = 0,25 L → 0,8 M. II: n = 11,2/56 = 0,2 mol, V = 0,5 L → 0,4 M. III: n = 4/40 = 0,1 mol, V = 0,2 L → 0,5 M. Rêzkirin I > III > II ye. Kesê ku tenê li giraniyên madeya helandî dinêre II > I > III, kesê ku tenê li hejmara molan dinêre I = II > III, kesê ku li şûna molan nirxên g/L (32; 22,4; 20 g/L) berhev dike jî I > II > III dibîne."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Çözelti",
+            "en": "Solution",
+            "de": "Lösung",
+            "fr": "Solution",
+            "ru": "Раствор",
+            "ar": "المحلول",
+            "zh": "溶液",
+            "ku": "Çareserî"
+          },
+          {
+            "tr": "Çözünen",
+            "en": "Solute",
+            "de": "Gelöster Stoff",
+            "fr": "Soluté",
+            "ru": "Растворённое вещество",
+            "ar": "المذاب",
+            "zh": "溶质",
+            "ku": "Madeya helandî"
+          },
+          {
+            "tr": "Çözünen kütlesi (g)",
+            "en": "Mass of solute (g)",
+            "de": "Masse des gelösten Stoffes (g)",
+            "fr": "Masse de soluté (g)",
+            "ru": "Масса растворённого вещества (г)",
+            "ar": "كتلة المذاب (g)",
+            "zh": "溶质质量 (g)",
+            "ku": "Giraniya madeya helandî (g)"
+          },
+          {
+            "tr": "Çözelti hacmi (mL)",
+            "en": "Solution volume (mL)",
+            "de": "Lösungsvolumen (mL)",
+            "fr": "Volume de solution (mL)",
+            "ru": "Объём раствора (мл)",
+            "ar": "حجم المحلول (mL)",
+            "zh": "溶液体积 (mL)",
+            "ku": "Qebareya çareseriyê (mL)"
+          }
+        ],
+        "rows": [
+          [
+            "I",
+            "NaOH",
+            "8",
+            "250"
+          ],
+          [
+            "II",
+            "KOH",
+            {
+              "tr": "11,2",
+              "en": "11.2",
+              "de": "11,2",
+              "fr": "11,2",
+              "ru": "11,2",
+              "ar": "11.2",
+              "zh": "11.2",
+              "ku": "11,2"
+            },
+            "500"
+          ],
+          [
+            "III",
+            "NaOH",
+            "4",
+            "200"
+          ]
+        ]
       }
     },
     {
@@ -1590,36 +1664,16 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin08",
       "stem": {
-        "tr": "0,6 M 200 mL HNO3 çözeltisinin derişimini 0,2 M'a düşürmek için çözeltiye kaç mL saf su eklenmelidir? (Hacimlerin toplanabildiği kabul edilecektir.)",
-        "en": "How many mL of pure water must be added to 200 mL of a 0.6 M HNO3 solution to lower its concentration to 0.2 M? (Assume the volumes are additive.)",
-        "de": "Wie viele mL reines Wasser müssen zu 200 mL einer 0,6 M HNO3-Lösung gegeben werden, um ihre Konzentration auf 0,2 M zu senken? (Die Volumina sollen als additiv angenommen werden.)",
-        "fr": "Combien de mL d'eau pure faut-il ajouter à 200 mL d'une solution de HNO3 à 0,6 M pour ramener sa concentration à 0,2 M ? (On admet que les volumes s'additionnent.)",
-        "ru": "Сколько мл чистой воды нужно добавить к 200 мл 0,6 M раствора HNO3, чтобы снизить его концентрацию до 0,2 M? (Объёмы считать аддитивными.)",
-        "ar": "كم mL من الماء النقي يجب إضافتها إلى 200 mL من محلول HNO3 تركيزه 0.6 M لخفض تركيزه إلى 0.2 M؟ (يُفترض أن الحجوم تُجمع.)",
-        "zh": "要把 200 mL 0.6 M HNO3 溶液的浓度降到 0.2 M，需要加入多少 mL 纯水？（假设体积可以相加。）",
-        "ku": "Ji bo ku tîrbûna 200 mL çareseriya HNO3 ya 0,6 M dakeve 0,2 M, divê çend mL ava paqij lê were zêdekirin? (Tê qebûlkirin ku qebare li hev zêde dibin.)"
+        "tr": "Şekildeki grafik, sabit sıcaklıkta bir HNO3 çözeltisine saf su eklendikçe çözeltinin molar derişiminin nasıl değiştiğini göstermektedir. L noktasındaki çözeltiye kaç mL daha saf su eklenirse derişim 0,1 M olur? (Hacimlerin toplanabildiği kabul edilecektir.)",
+        "en": "The graph shows how the molar concentration of an HNO3 solution changes as pure water is added at constant temperature. How many more mL of pure water must be added to the solution at point L to bring its concentration to 0.1 M? (Assume the volumes are additive.)",
+        "de": "Das Diagramm zeigt, wie sich die Stoffmengenkonzentration einer HNO3-Lösung bei konstanter Temperatur ändert, wenn reines Wasser zugegeben wird. Wie viele mL reines Wasser müssen der Lösung im Punkt L noch zugegeben werden, damit die Konzentration 0,1 M beträgt? (Die Volumina sollen als additiv angenommen werden.)",
+        "fr": "Le graphique montre comment varie la concentration molaire d'une solution de HNO3 lorsqu'on y ajoute de l'eau pure à température constante. Combien de mL d'eau pure faut-il encore ajouter à la solution au point L pour que sa concentration soit de 0,1 M ? (On admet que les volumes s'additionnent.)",
+        "ru": "На графике показано, как меняется молярная концентрация раствора HNO3 при добавлении чистой воды при постоянной температуре. Сколько ещё мл чистой воды нужно добавить к раствору в точке L, чтобы его концентрация стала 0,1 M? (Объёмы считать аддитивными.)",
+        "ar": "يبيّن الرسم البياني كيف يتغيّر التركيز المولاري لمحلول HNO3 كلما أُضيف إليه ماء نقي عند درجة حرارة ثابتة. كم mL أخرى من الماء النقي يجب إضافتها إلى المحلول عند النقطة L ليصبح تركيزه 0.1 M؟ (يُفترض أن الحجوم تُجمع.)",
+        "zh": "图示为恒温下向 HNO3 溶液中加入纯水时溶液物质的量浓度的变化。要使 L 点时的溶液浓度变为 0.1 M，还需再加入多少 mL 纯水？（假设体积可以相加。）",
+        "ku": "Grafîka di şiklê de nîşan dide ku dema di germahiya sabît de ava paqij li çareseriyeke HNO3 tê zêdekirin, tîrbûna molar a çareseriyê çawa diguhere. Divê çend mL ava paqij a din li çareseriya xala L were zêdekirin da ku tîrbûn bibe 0,1 M? (Tê qebûlkirin ku qebare li hev zêde dibin.)"
       },
       "options": [
-        {
-          "tr": "200 mL",
-          "en": "200 mL",
-          "de": "200 mL",
-          "fr": "200 mL",
-          "ru": "200 мл",
-          "ar": "200 mL",
-          "zh": "200 mL",
-          "ku": "200 mL"
-        },
-        {
-          "tr": "300 mL",
-          "en": "300 mL",
-          "de": "300 mL",
-          "fr": "300 mL",
-          "ru": "300 мл",
-          "ar": "300 mL",
-          "zh": "300 mL",
-          "ku": "300 mL"
-        },
         {
           "tr": "400 mL",
           "en": "400 mL",
@@ -1649,18 +1703,123 @@ export const unit14: ChemistryUnitSeedData = {
           "ar": "800 mL",
           "zh": "800 mL",
           "ku": "800 mL"
+        },
+        {
+          "tr": "1000 mL",
+          "en": "1000 mL",
+          "de": "1000 mL",
+          "fr": "1000 mL",
+          "ru": "1000 мл",
+          "ar": "1000 mL",
+          "zh": "1000 mL",
+          "ku": "1000 mL"
+        },
+        {
+          "tr": "1200 mL",
+          "en": "1200 mL",
+          "de": "1200 mL",
+          "fr": "1200 mL",
+          "ru": "1200 мл",
+          "ar": "1200 mL",
+          "zh": "1200 mL",
+          "ku": "1200 mL"
         }
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Seyreltmede çözünenin mol sayısı değişmez: M1V1 = M2V2 → 0,6 · 200 = 0,2 · V2 → V2 = 600 mL. Bu, son çözeltinin hacmidir; başlangıçta 200 mL bulunduğundan eklenmesi gereken su 600 − 200 = 400 mL'dir. 600 mL'yi eklenecek su sanmak en sık yapılan hatadır.",
-        "en": "On dilution the moles of solute do not change: M1V1 = M2V2 → 0.6 · 200 = 0.2 · V2 → V2 = 600 mL. This is the volume of the final solution; since 200 mL were present at the start, the water to be added is 600 − 200 = 400 mL. Taking 600 mL as the water added is the most common mistake.",
-        "de": "Beim Verdünnen ändert sich die Stoffmenge des gelösten Stoffes nicht: M1V1 = M2V2 → 0,6 · 200 = 0,2 · V2 → V2 = 600 mL. Das ist das Volumen der Endlösung; da anfangs 200 mL vorlagen, müssen 600 − 200 = 400 mL Wasser zugegeben werden. 600 mL für die zuzugebende Wassermenge zu halten, ist der häufigste Fehler.",
-        "fr": "Lors d'une dilution, le nombre de moles de soluté ne change pas : M1V1 = M2V2 → 0,6 · 200 = 0,2 · V2 → V2 = 600 mL. C'est le volume de la solution finale ; comme il y avait 200 mL au départ, il faut ajouter 600 − 200 = 400 mL d'eau. Prendre 600 mL pour le volume d'eau ajouté est l'erreur la plus fréquente.",
-        "ru": "При разбавлении число молей растворённого вещества не меняется: M1V1 = M2V2 → 0,6 · 200 = 0,2 · V2 → V2 = 600 мл. Это объём конечного раствора; так как вначале было 200 мл, добавить нужно 600 − 200 = 400 мл воды. Самая частая ошибка — считать 600 мл объёмом добавленной воды.",
-        "ar": "في التخفيف لا يتغير عدد مولات المذاب: M1V1 = M2V2 → 0.6 · 200 = 0.2 · V2 → V2 = 600 mL. هذا هو حجم المحلول النهائي؛ وبما أنه كان في البداية 200 mL فإن الماء الواجب إضافته هو 600 − 200 = 400 mL. اعتبار 600 mL هو حجم الماء المضاف هو الخطأ الأكثر شيوعًا.",
-        "zh": "稀释时溶质的物质的量不变：M1V1 = M2V2 → 0.6 × 200 = 0.2 × V2 → V2 = 600 mL。这是最终溶液的体积；原有 200 mL，所以需加水 600 − 200 = 400 mL。把 600 mL 当作加入的水量是最常见的错误。",
-        "ku": "Di sistkirinê de hejmara molên madeya helbûyî naguhere: M1V1 = M2V2 → 0,6 · 200 = 0,2 · V2 → V2 = 600 mL. Ev qebareya çareseriya dawî ye; ji ber ku di destpêkê de 200 mL hebû, ava ku divê were zêdekirin 600 − 200 = 400 mL e. Hesibandina 600 mL wek ava zêdekirî şaşiya herî berbelav e."
+        "tr": "Grafikte K noktasında (eklenen su 0 mL) derişim 0,6 M, L noktasında (200 mL su eklenmiş) 0,3 M'dır. Başlangıç hacmi V olsun; çözünenin mol sayısı değişmediğinden 0,6 · V = 0,3 · (V + 200) → V = 200 mL. n(HNO3) = 0,6 · 0,2 = 0,12 mol. Derişimin 0,1 M olması için toplam hacim 0,12 / 0,1 = 1,2 L = 1200 mL olmalıdır. L noktasında hacim 200 + 200 = 400 mL olduğundan 1200 − 400 = 800 mL daha su eklenmelidir. 1000 mL başlangıçtan itibaren eklenmesi gereken toplam su, 1200 mL ise son çözeltinin hacmidir.",
+        "en": "On the graph the concentration is 0.6 M at K (0 mL water added) and 0.3 M at L (200 mL water added). Let the initial volume be V; since the moles of solute do not change, 0.6 · V = 0.3 · (V + 200) → V = 200 mL. n(HNO3) = 0.6 · 0.2 = 0.12 mol. For a concentration of 0.1 M the total volume must be 0.12 / 0.1 = 1.2 L = 1200 mL. At point L the volume is 200 + 200 = 400 mL, so 1200 − 400 = 800 mL more water must be added. 1000 mL is the total water needed from the start, and 1200 mL is the final solution volume.",
+        "de": "Im Diagramm beträgt die Konzentration im Punkt K (0 mL Wasser zugegeben) 0,6 M und im Punkt L (200 mL Wasser zugegeben) 0,3 M. Sei V das Anfangsvolumen; da die Stoffmenge des gelösten Stoffes gleich bleibt, gilt 0,6 · V = 0,3 · (V + 200) → V = 200 mL. n(HNO3) = 0,6 · 0,2 = 0,12 mol. Für 0,1 M muss das Gesamtvolumen 0,12 / 0,1 = 1,2 L = 1200 mL betragen. Im Punkt L beträgt das Volumen 200 + 200 = 400 mL, also müssen noch 1200 − 400 = 800 mL Wasser zugegeben werden. 1000 mL ist die vom Anfang an insgesamt nötige Wassermenge, 1200 mL das Endvolumen der Lösung.",
+        "fr": "Sur le graphique, la concentration vaut 0,6 M au point K (0 mL d'eau ajoutée) et 0,3 M au point L (200 mL d'eau ajoutés). Soit V le volume initial ; la quantité de soluté ne changeant pas, 0,6 · V = 0,3 · (V + 200) → V = 200 mL. n(HNO3) = 0,6 · 0,2 = 0,12 mol. Pour 0,1 M, le volume total doit être 0,12 / 0,1 = 1,2 L = 1200 mL. Au point L le volume est 200 + 200 = 400 mL, il faut donc encore ajouter 1200 − 400 = 800 mL d'eau. 1000 mL est l'eau totale à ajouter depuis le début et 1200 mL le volume final de la solution.",
+        "ru": "На графике в точке K (добавлено 0 мл воды) концентрация 0,6 M, в точке L (добавлено 200 мл воды) — 0,3 M. Пусть начальный объём V; количество растворённого вещества не меняется, поэтому 0,6 · V = 0,3 · (V + 200) → V = 200 мл. n(HNO3) = 0,6 · 0,2 = 0,12 моль. Для концентрации 0,1 M общий объём должен быть 0,12 / 0,1 = 1,2 л = 1200 мл. В точке L объём 200 + 200 = 400 мл, значит, нужно добавить ещё 1200 − 400 = 800 мл воды. 1000 мл — это вся вода, которую нужно добавить с самого начала, а 1200 мл — конечный объём раствора.",
+        "ar": "في الرسم يكون التركيز 0.6 M عند النقطة K (لم يُضَف ماء) و0.3 M عند النقطة L (أُضيف 200 mL من الماء). ليكن الحجم الابتدائي V؛ ولأن عدد مولات المذاب لا يتغيّر فإن 0.6 · V = 0.3 · (V + 200) → V = 200 mL. n(HNO3) = 0.6 · 0.2 = 0.12 mol. ليصبح التركيز 0.1 M يجب أن يكون الحجم الكلي 0.12 / 0.1 = 1.2 L = 1200 mL. الحجم عند النقطة L هو 200 + 200 = 400 mL، لذا يجب إضافة 1200 − 400 = 800 mL أخرى من الماء. أما 1000 mL فهي كمية الماء الكلية اللازمة منذ البداية، و1200 mL هو الحجم النهائي للمحلول.",
+        "zh": "由图可知，K 点（加水 0 mL）浓度为 0.6 M，L 点（已加水 200 mL）浓度为 0.3 M。设初始体积为 V，溶质的物质的量不变：0.6 · V = 0.3 · (V + 200) → V = 200 mL。n(HNO3) = 0.6 · 0.2 = 0.12 mol。浓度为 0.1 M 时总体积应为 0.12 / 0.1 = 1.2 L = 1200 mL。L 点时体积为 200 + 200 = 400 mL，所以还需加水 1200 − 400 = 800 mL。1000 mL 是从开始算起需加入的总水量，1200 mL 是最终溶液的体积。",
+        "ku": "Di grafîkê de tîrbûn li xala K (0 mL av hatiye zêdekirin) 0,6 M, li xala L (200 mL av hatiye zêdekirin) 0,3 M e. Bila qebareya destpêkê V be; ji ber ku hejmara molên madeya helandî naguhere, 0,6 · V = 0,3 · (V + 200) → V = 200 mL. n(HNO3) = 0,6 · 0,2 = 0,12 mol. Ji bo tîrbûna 0,1 M divê qebareya giştî 0,12 / 0,1 = 1,2 L = 1200 mL be. Li xala L qebare 200 + 200 = 400 mL e, ji ber vê divê 1200 − 400 = 800 mL ava din lê were zêdekirin. 1000 mL ava giştî ya ji destpêkê ve pêwîst e, 1200 mL jî qebareya dawî ya çareseriyê ye."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Eklenen su (mL)",
+          "en": "Water added (mL)",
+          "de": "Zugegebenes Wasser (mL)",
+          "fr": "Eau ajoutée (mL)",
+          "ru": "Добавлено воды (мл)",
+          "ar": "الماء المضاف (mL)",
+          "zh": "加入的水 (mL)",
+          "ku": "Ava lêzêdekirî (mL)"
+        },
+        "yLabel": {
+          "tr": "Derişim (M)",
+          "en": "Concentration (M)",
+          "de": "Konzentration (M)",
+          "fr": "Concentration (M)",
+          "ru": "Концентрация (M)",
+          "ar": "التركيز (M)",
+          "zh": "浓度 (M)",
+          "ku": "Tîrbûn (M)"
+        },
+        "xMax": 300,
+        "yMax": 0.7,
+        "xTicks": [
+          100,
+          200
+        ],
+        "yTicks": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                0.6
+              ],
+              [
+                25,
+                0.5333
+              ],
+              [
+                50,
+                0.48
+              ],
+              [
+                75,
+                0.4364
+              ],
+              [
+                100,
+                0.4
+              ],
+              [
+                150,
+                0.3429
+              ],
+              [
+                200,
+                0.3
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 0,
+            "y": 0.6,
+            "label": "K",
+            "guides": true
+          },
+          {
+            "x": 200,
+            "y": 0.3,
+            "label": "L",
+            "guides": true
+          }
+        ]
       }
     },
     {
@@ -2046,14 +2205,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin14",
       "stem": {
-        "tr": "I. 0,2 M 100 mL Na2SO4 çözeltisi II. 0,1 M 200 mL KCl çözeltisi III. 0,1 M 200 mL AlCl3 çözeltisi Tuzların suda tamamen iyonlarına ayrıştığı bu çözeltilerdeki toplam iyon mol sayılarının büyükten küçüğe sıralanışı hangisidir?",
-        "en": "I. 100 mL of 0.2 M Na2SO4 solution II. 200 mL of 0.1 M KCl solution III. 200 mL of 0.1 M AlCl3 solution In these solutions the salts are completely dissociated into ions. Which shows the total number of moles of ions in decreasing order?",
-        "de": "I. 100 mL 0,2 M Na2SO4-Lösung II. 200 mL 0,1 M KCl-Lösung III. 200 mL 0,1 M AlCl3-Lösung In diesen Lösungen sind die Salze vollständig in Ionen dissoziiert. Welche Reihenfolge gibt die Gesamtstoffmenge der Ionen von groß nach klein an?",
-        "fr": "I. 100 mL de solution de Na2SO4 à 0,2 M II. 200 mL de solution de KCl à 0,1 M III. 200 mL de solution de AlCl3 à 0,1 M Dans ces solutions, les sels sont totalement dissociés en ions. Quel est l'ordre décroissant du nombre total de moles d'ions ?",
-        "ru": "I. 100 мл 0,2 M раствора Na2SO4 II. 200 мл 0,1 M раствора KCl III. 200 мл 0,1 M раствора AlCl3 В этих растворах соли полностью диссоциированы на ионы. В каком варианте растворы расположены в порядке убывания общего числа молей ионов?",
-        "ar": "I. 100 mL من محلول Na2SO4 تركيزه 0.2 M II. 200 mL من محلول KCl تركيزه 0.1 M III. 200 mL من محلول AlCl3 تركيزه 0.1 M تتفكك الأملاح في هذه المحاليل إلى أيوناتها تفككًا تامًا. ما ترتيب العدد الكلي لمولات الأيونات في هذه المحاليل من الأكبر إلى الأصغر؟",
-        "zh": "有下列三种溶液：I. 100 mL 0.2 M Na2SO4 溶液；II. 200 mL 0.1 M KCl 溶液；III. 200 mL 0.1 M AlCl3 溶液。这些溶液中的盐都完全电离，按离子总物质的量由大到小排列，正确的是哪一项？",
-        "ku": "I. 100 mL çareseriya Na2SO4 ya 0,2 M II. 200 mL çareseriya KCl ya 0,1 M III. 200 mL çareseriya AlCl3 ya 0,1 M Di van çareseriyan de xwê bi tevahî li îyonên xwe vediqetin. Rêzkirina hejmara giştî ya molên îyonan ji mezin ber bi piçûk kîjan e?"
+        "tr": "Tabloda verilen çözeltilerde tuzlar suda tamamen iyonlarına ayrışmıştır. Bu çözeltilerdeki toplam iyon mol sayılarının büyükten küçüğe sıralanışı hangisidir?",
+        "en": "In the solutions given in the table, the salts are completely dissociated into ions. Which shows the total number of moles of ions in these solutions in decreasing order?",
+        "de": "In den in der Tabelle angegebenen Lösungen sind die Salze vollständig in Ionen dissoziiert. Welche Reihenfolge gibt die Gesamtstoffmenge der Ionen in diesen Lösungen von groß nach klein an?",
+        "fr": "Dans les solutions données dans le tableau, les sels sont totalement dissociés en ions. Quel est l'ordre décroissant du nombre total de moles d'ions dans ces solutions ?",
+        "ru": "В растворах, приведённых в таблице, соли полностью диссоциированы на ионы. В каком варианте растворы расположены в порядке убывания общего числа молей ионов?",
+        "ar": "تتفكك الأملاح في المحاليل المعطاة في الجدول إلى أيوناتها تفككًا تامًا. ما ترتيب العدد الكلي لمولات الأيونات في هذه المحاليل من الأكبر إلى الأصغر؟",
+        "zh": "表中所列溶液里的盐都完全电离。按离子总物质的量由大到小排列，正确的是哪一项？",
+        "ku": "Di çareseriyên di tabloyê de hatine dayîn de xwê bi tevahî li îyonên xwe vediqetin. Rêzkirina hejmara giştî ya molên îyonan di van çareseriyan de ji mezin ber bi piçûk kîjan e?"
       },
       "options": [
         {
@@ -2117,6 +2276,98 @@ export const unit14: ChemistryUnitSeedData = {
         "ar": "n(الأيونات) = M · V · (عدد الأيونات في الصيغة). I: 0.2 · 0.1 · 3 = 0.06 mol (2Na+ + SO4^2-). II: 0.1 · 0.2 · 2 = 0.04 mol (K+ + Cl-). III: 0.1 · 0.2 · 4 = 0.08 mol (Al3+ + 3Cl-). الترتيب III > I > II. الطالب الذي يقارن تراكيز الأيونات فقط (I: 0.6 M، III: 0.4 M، II: 0.2 M) دون مراعاة الحجوم يصل إلى I > III > II.",
         "zh": "n(离子) = c · V · (化学式中离子个数)。I：0.2 × 0.1 × 3 = 0.06 mol(2Na+ + SO4^2-)。II：0.1 × 0.2 × 2 = 0.04 mol(K+ + Cl-)。III：0.1 × 0.2 × 4 = 0.08 mol(Al3+ + 3Cl-)。顺序为 III > I > II。只比较离子浓度(I：0.6 M，III：0.4 M，II：0.2 M)而忽略体积的学生会得到 I > III > II。",
         "ku": "n(îyon) = M · V · (hejmara îyonan di formulê de). I: 0,2 · 0,1 · 3 = 0,06 mol (2Na+ + SO4^2-). II: 0,1 · 0,2 · 2 = 0,04 mol (K+ + Cl-). III: 0,1 · 0,2 · 4 = 0,08 mol (Al3+ + 3Cl-). Rêz III > I > II e. Xwendekarê ku qebareyan nahesibîne û tenê tîrbûnên îyonan (I: 0,6 M, III: 0,4 M, II: 0,2 M) dide ber hev, digihîje rêza I > III > II."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Çözelti",
+            "en": "Solution",
+            "de": "Lösung",
+            "fr": "Solution",
+            "ru": "Раствор",
+            "ar": "المحلول",
+            "zh": "溶液",
+            "ku": "Çareserî"
+          },
+          {
+            "tr": "Tuz",
+            "en": "Salt",
+            "de": "Salz",
+            "fr": "Sel",
+            "ru": "Соль",
+            "ar": "الملح",
+            "zh": "盐",
+            "ku": "Xwê"
+          },
+          {
+            "tr": "Derişim (M)",
+            "en": "Concentration (M)",
+            "de": "Konzentration (M)",
+            "fr": "Concentration (M)",
+            "ru": "Концентрация (M)",
+            "ar": "التركيز (M)",
+            "zh": "浓度 (M)",
+            "ku": "Tîrbûn (M)"
+          },
+          {
+            "tr": "Hacim (mL)",
+            "en": "Volume (mL)",
+            "de": "Volumen (mL)",
+            "fr": "Volume (mL)",
+            "ru": "Объём (мл)",
+            "ar": "الحجم (mL)",
+            "zh": "体积 (mL)",
+            "ku": "Qebare (mL)"
+          }
+        ],
+        "rows": [
+          [
+            "I",
+            "Na2SO4",
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            "100"
+          ],
+          [
+            "II",
+            "KCl",
+            {
+              "tr": "0,1",
+              "en": "0.1",
+              "de": "0,1",
+              "fr": "0,1",
+              "ru": "0,1",
+              "ar": "0.1",
+              "zh": "0.1",
+              "ku": "0,1"
+            },
+            "200"
+          ],
+          [
+            "III",
+            "AlCl3",
+            {
+              "tr": "0,1",
+              "en": "0.1",
+              "de": "0,1",
+              "fr": "0,1",
+              "ru": "0,1",
+              "ar": "0.1",
+              "zh": "0.1",
+              "ku": "0,1"
+            },
+            "200"
+          ]
+        ]
       }
     },
     {
@@ -2198,14 +2449,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin16",
       "stem": {
-        "tr": "25 °C'de 100 g suda X katısından en çok 0,2 g, şekerden ise en çok 200 g çözünebilmektedir. Bu sıcaklıkta 1. kapta 100 g suya 0,2 g X, 2. kapta 100 g suya 50 g şeker eklenip tamamen çözünüyor. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
-        "en": "At 25 °C, at most 0.2 g of solid X and at most 200 g of sugar can dissolve in 100 g of water. At this temperature, 0.2 g of X is added to 100 g of water in container 1, and 50 g of sugar to 100 g of water in container 2; both dissolve completely. Which of the following statements is correct?",
-        "de": "Bei 25 °C lösen sich in 100 g Wasser höchstens 0,2 g des Feststoffs X und höchstens 200 g Zucker. Bei dieser Temperatur werden in Gefäß 1 0,2 g X und in Gefäß 2 50 g Zucker jeweils zu 100 g Wasser gegeben und vollständig gelöst. Welche der folgenden Aussagen ist richtig?",
-        "fr": "À 25 °C, 100 g d'eau peuvent dissoudre au maximum 0,2 g du solide X et au maximum 200 g de sucre. À cette température, on ajoute 0,2 g de X à 100 g d'eau dans le récipient 1 et 50 g de sucre à 100 g d'eau dans le récipient 2 ; tout se dissout. Laquelle des affirmations suivantes est correcte ?",
-        "ru": "При 25 °C в 100 г воды может раствориться не более 0,2 г твёрдого вещества X и не более 200 г сахара. При этой температуре в сосуд 1 к 100 г воды добавили 0,2 г X, а в сосуд 2 к 100 г воды — 50 г сахара; оба вещества полностью растворились. Какое из утверждений верно?",
-        "ar": "عند 25 °C يذوب في 100 g من الماء 0.2 g على الأكثر من المادة الصلبة X و200 g على الأكثر من السكر. عند هذه الدرجة أُضيف 0.2 g من X إلى 100 g من الماء في الوعاء 1، و50 g من السكر إلى 100 g من الماء في الوعاء 2، فذاب كل منهما تمامًا. أيّ العبارات الآتية صحيحة؟",
-        "zh": "25 °C 时，100 g 水中最多能溶解 0.2 g 固体 X，最多能溶解 200 g 糖。在此温度下，向 1 号容器的 100 g 水中加入 0.2 g X，向 2 号容器的 100 g 水中加入 50 g 糖，均完全溶解。下列说法中正确的是哪一项？",
-        "ku": "Di 25 °C de di 100 g avê de herî zêde 0,2 g ji madeya hişk a X û herî zêde 200 g şekir dikare bihele. Di vê germahiyê de li firaxa 1. 0,2 g X li 100 g avê, li firaxa 2. jî 50 g şekir li 100 g avê tê zêdekirin û her du bi tevahî dihelin. Li gorî vê, kîjan ji gotinên jêrîn rast e?"
+        "tr": "Tabloda 25 °C'de 100'er g su bulunan iki kaba eklenen katılarla ilgili bilgiler verilmiştir. Eklenen katıların tamamı çözündüğüne göre aşağıdaki ifadelerden hangisi doğrudur?",
+        "en": "The table gives information about the solids added at 25 °C to two containers, each holding 100 g of water. Given that the added solids dissolve completely, which of the following statements is correct?",
+        "de": "Die Tabelle enthält Angaben zu den Feststoffen, die bei 25 °C in zwei Gefäße mit je 100 g Wasser gegeben werden. Die zugegebenen Feststoffe lösen sich vollständig. Welche der folgenden Aussagen ist richtig?",
+        "fr": "Le tableau donne des informations sur les solides ajoutés à 25 °C dans deux récipients contenant chacun 100 g d'eau. Les solides ajoutés se dissolvent entièrement. Laquelle des affirmations suivantes est correcte ?",
+        "ru": "В таблице приведены сведения о твёрдых веществах, добавленных при 25 °C в два сосуда, в каждом из которых 100 г воды. Добавленные вещества растворились полностью. Какое из утверждений верно?",
+        "ar": "يبيّن الجدول معلومات عن المواد الصلبة المضافة عند 25 °C إلى وعاءين في كلٍّ منهما 100 g من الماء. إذا ذابت المواد المضافة كلها، فأيّ العبارات الآتية صحيحة؟",
+        "zh": "表中给出了 25 °C 时向两个各盛 100 g 水的容器中加入固体的有关数据。加入的固体均完全溶解，下列说法中正确的是哪一项？",
+        "ku": "Di tabloyê de agahiyên derbarê madeyên hişk ên ku di 25 °C de li du firaxên ku di her yekê de 100 g av heye tên zêdekirin hatine dayîn. Madeyên lêzêdekirî bi tevahî dihelin; kîjan ji gotinên jêrîn rast e?"
       },
       "options": [
         {
@@ -2269,6 +2520,92 @@ export const unit14: ChemistryUnitSeedData = {
         "ar": "في الوعاء 1 ذابت أكبر كمية يمكن أن تذوب في 100 g من الماء (0.2 g من X)، فالمحلول مشبع لكنه مخفف لأن كمية المذاب قليلة جدًا. في الوعاء 2 ذاب 50 g فقط من السكر مع أنه يمكن أن يذوب 200 g، فالمحلول غير مشبع لكنه مركّز لاحتوائه على كمية كبيرة من المذاب. التشبع يتعلق بحد الذائبية، والتركيز يتعلق بكمية المذاب. ولو أُضيف 200 g أخرى إلى الوعاء 2 لأصبح المجموع 250 g، وهذا يتجاوز الذائبية (200 g)، فيبقى 50 g من السكر دون ذوبان.",
         "zh": "1 号容器中溶解了 100 g 水所能溶解的最大量(0.2 g X)，溶液是饱和的，但溶质极少，所以很稀。2 号容器中最多可溶 200 g 糖，只溶了 50 g，溶液不饱和，但溶质很多，所以很浓。饱和与否取决于溶解度极限，浓稀取决于溶质的多少。若再向 2 号容器加入 200 g 糖，共 250 g，超过溶解度(200 g)，会有 50 g 糖不能溶解。",
         "ku": "Di firaxa 1. de mîqdara herî zêde ya ku 100 g av dikare bihelîne (0,2 g X) heliyaye; çareserî têr e, lê ji ber ku madeya helbûyî pir kêm e sist e. Di firaxa 2. de dema ku 200 g dikaribû bihele, tenê 50 g şekir heliyaye; çareserî netêr e, lê ji ber ku gelek madeya helbûyî tê de heye tîr e. Têrbûn bi sînorê helbûniyê, tîrbûn jî bi mîqdara madeya helbûyî ve girêdayî ye. Ger 200 g din li firaxa 2. were zêdekirin bi giştî dibe 250 g; ev ji helbûniyê (200 g) derbas dibe, ji ber vê yekê 50 g şekir nahele û dimîne."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Kap",
+            "en": "Container",
+            "de": "Gefäß",
+            "fr": "Récipient",
+            "ru": "Сосуд",
+            "ar": "الوعاء",
+            "zh": "容器",
+            "ku": "Firax"
+          },
+          {
+            "tr": "Çözünen",
+            "en": "Solute",
+            "de": "Gelöster Stoff",
+            "fr": "Soluté",
+            "ru": "Растворённое вещество",
+            "ar": "المذاب",
+            "zh": "溶质",
+            "ku": "Madeya helandî"
+          },
+          {
+            "tr": "Çözünürlük (g/100 g su)",
+            "en": "Solubility (g/100 g water)",
+            "de": "Löslichkeit (g/100 g Wasser)",
+            "fr": "Solubilité (g/100 g d'eau)",
+            "ru": "Растворимость (г/100 г воды)",
+            "ar": "الذائبية (g/100 g ماء)",
+            "zh": "溶解度 (g/100 g 水)",
+            "ku": "Helbûn (g/100 g av)"
+          },
+          {
+            "tr": "Eklenen kütle (g)",
+            "en": "Mass added (g)",
+            "de": "Zugegebene Masse (g)",
+            "fr": "Masse ajoutée (g)",
+            "ru": "Добавленная масса (г)",
+            "ar": "الكتلة المضافة (g)",
+            "zh": "加入的质量 (g)",
+            "ku": "Giraniya lêzêdekirî (g)"
+          }
+        ],
+        "rows": [
+          [
+            "1",
+            "X",
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            }
+          ],
+          [
+            "2",
+            {
+              "tr": "Şeker",
+              "en": "Sugar",
+              "de": "Zucker",
+              "fr": "Sucre",
+              "ru": "Сахар",
+              "ar": "السكر",
+              "zh": "糖",
+              "ku": "Şekir"
+            },
+            "200",
+            "50"
+          ]
+        ]
       }
     }
   ]

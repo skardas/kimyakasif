@@ -205,14 +205,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-f06",
       "fact": {
-        "tr": "Sıcaklık artışı hem endotermik hem ekzotermik tüm tepkimelerin hızını ve hız sabiti k'yı artırır.",
-        "en": "Increasing temperature increases the rate and rate constant k of all endothermic and exothermic reactions.",
-        "de": "Mit zunehmender Temperatur erhöhen sich die Geschwindigkeit und die Geschwindigkeitskonstante k aller endothermen und exothermen Reaktionen.",
-        "fr": "L'augmentation de la température augmente la vitesse et la constante de vitesse k de toutes les réactions endothermiques et exothermiques.",
-        "ru": "Повышение температуры увеличивает скорость и константу скорости k любых реакций — как эндотермических, так и экзотермических.",
-        "ar": "يؤدي رفع درجة الحرارة إلى زيادة سرعة جميع التفاعلات، الماصة والطاردة للحرارة، وزيادة ثابت السرعة k.",
-        "zh": "升高温度会使所有反应（无论吸热还是放热）的速率和速率常数 k 增大。",
-        "ku": "Zêdebûna germahiyê leza hemû reaksiyonan, çi endotermîk çi ekzotermîk, û sabîta lezê k zêde dike."
+        "tr": "Sıcaklık artışı, tepkimenin endotermik ya da ekzotermik olmasından bağımsız olarak tepkime hızını ve hız sabiti k'yı artırır.",
+        "en": "Raising the temperature increases the reaction rate and the rate constant k, regardless of whether the reaction is endothermic or exothermic.",
+        "de": "Eine Temperaturerhöhung steigert die Reaktionsgeschwindigkeit und die Geschwindigkeitskonstante k, unabhängig davon, ob die Reaktion endotherm oder exotherm ist.",
+        "fr": "Une hausse de température augmente la vitesse de réaction et la constante de vitesse k, que la réaction soit endothermique ou exothermique.",
+        "ru": "Повышение температуры увеличивает скорость реакции и константу скорости k независимо от того, эндотермическая реакция или экзотермическая.",
+        "ar": "يزيد رفع درجة الحرارة سرعة التفاعل وثابت السرعة k، سواء كان التفاعل ماصًّا للحرارة أو طاردًا لها.",
+        "zh": "无论反应吸热还是放热，升高温度都会使反应速率和速率常数 k 增大。",
+        "ku": "Bilindkirina germahiyê, çi reaksiyon endotermîk be çi ekzotermîk, leza reaksiyonê û sabîta lezê k zêde dike."
       },
       "trap": {
         "tr": "Ekzotermik tepkimelerde sıcaklık arttıkça tepkime hızı yavaşlar.",
@@ -413,14 +413,14 @@ export const unit17: ChemistryUnitSeedData = {
         "ku": "Pileya reaksiyonê koma hêzên tîrbûnan e di hevkêşeya lezê ya ceribandinî de."
       },
       "trap": {
-        "tr": "Tepkime derecesi net tepkimenin stokiyometrik katsayıları toplamına eşittir.",
-        "en": "The order of a reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
-        "de": "Die Reaktionsordnung ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
-        "fr": "L'ordre de réaction est égal à la somme des coefficients stœchiométriques de la réaction nette.",
-        "ru": "Порядок реакции равен сумме стехиометрических коэффициентов суммарной реакции.",
-        "ar": "رتبة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
-        "zh": "反应级数等于总反应方程式中各化学计量数之和。",
-        "ku": "Pileya reaksiyonê wekhevî koma hevberên stokiyometrîk ên reaksiyona net e."
+        "tr": "Tepkime derecesi, mekanizmadan bağımsız olarak her zaman net tepkimedeki girenlerin katsayıları toplamına eşittir.",
+        "en": "The order of a reaction is always equal to the sum of the reactant coefficients in the net equation, whatever the mechanism.",
+        "de": "Die Reaktionsordnung ist unabhängig vom Mechanismus immer gleich der Summe der Eduktkoeffizienten der Nettogleichung.",
+        "fr": "L'ordre de réaction est toujours égal à la somme des coefficients des réactifs de l'équation bilan, quel que soit le mécanisme.",
+        "ru": "Порядок реакции независимо от механизма всегда равен сумме коэффициентов реагентов в суммарном уравнении.",
+        "ar": "رتبة التفاعل تساوي دائمًا مجموع معاملات المتفاعلات في المعادلة الصافية مهما كانت آلية التفاعل.",
+        "zh": "无论反应机理如何，反应级数总是等于总反应方程式中反应物化学计量数之和。",
+        "ku": "Pileya reaksiyonê, ji mekanîzmayê serbixwe, her tim wekhevî koma hevberên reaktantan ên hevkêşeya net e."
       },
       "whyTrapIsFalse": {
         "tr": "Katsayılar ancak tek basamaklı (temel) tepkimelerde üslere eşittir; çok basamaklı tepkimelerde derece deneyle ya da yavaş basamaktan bulunur, net denklemin katsayılarından okunamaz.",
@@ -1068,77 +1068,231 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin01",
       "stem": {
-        "tr": "Bir tepkimenin hız denklemi r = k * [A]^2 * [B] olduğuna göre hız sabiti k'nın birimi aşağıdakilerden hangisidir?",
-        "en": "Since the rate equation of a reaction is r = k * [A]^2 * [B], which of the following is the unit of the rate constant k?",
-        "de": "Da die Geschwindigkeitsgleichung einer Reaktion r = k * [A]^2 * [B] lautet, welche der folgenden ist die Einheit der Geschwindigkeitskonstante k?",
-        "fr": "Puisque l’équation de vitesse d’une réaction est r = k * [A]^2 * [B], laquelle des options suivantes est l’unité de la constante de vitesse k ?",
-        "ru": "Кинетическое уравнение реакции имеет вид r = k * [A]^2 * [B]. Какова единица константы скорости k?",
-        "ar": "إذا كان قانون سرعة تفاعل ما r = k * [A]^2 * [B]، فأيّ مما يأتي وحدة ثابت السرعة k؟",
-        "zh": "某反应的速率方程为 r = k * [A]^2 * [B]，速率常数 k 的单位是下列哪一项？",
-        "ku": "Hevkêşeya lezê ya reaksiyonekê r = k * [A]^2 * [B] e. Li gorî vê, yekîneya sabîta lezê k kîjan e?"
+        "tr": "Şekildeki grafik, sabit hacimli bir kapta sabit sıcaklıkta gerçekleşen tek bir tepkimede X ve Y gazlarının derişimlerinin zamanla değişimini göstermektedir (başlangıçta kapta yalnızca X vardır). Tepkimenin denklemi ve 0–20 s aralığında Y'nin ortalama oluşma hızı (mol/(L·s)) aşağıdakilerin hangisinde birlikte doğru verilmiştir?",
+        "en": "The graph shows how the concentrations of gases X and Y change with time in a single reaction taking place in a rigid container at constant temperature (initially only X is present). Which option gives both the equation of the reaction and the average rate of formation of Y over 0–20 s (in mol/(L·s)) correctly?",
+        "de": "Das Diagramm zeigt die zeitliche Änderung der Konzentrationen der Gase X und Y bei einer einzigen Reaktion in einem Gefäß mit konstantem Volumen bei konstanter Temperatur (zu Beginn liegt nur X vor). In welcher Antwort sind die Reaktionsgleichung und die mittlere Bildungsgeschwindigkeit von Y im Intervall 0–20 s (in mol/(L·s)) beide richtig angegeben?",
+        "fr": "Le graphique montre l'évolution des concentrations des gaz X et Y au cours du temps pour une réaction unique se déroulant dans un récipient de volume constant à température constante (au départ, seul X est présent). Quelle proposition donne correctement à la fois l'équation de la réaction et la vitesse moyenne de formation de Y sur l'intervalle 0–20 s (en mol/(L·s)) ?",
+        "ru": "На графике показано изменение концентраций газов X и Y во времени для одной реакции, протекающей в сосуде постоянного объёма при постоянной температуре (вначале в сосуде есть только X). В каком варианте правильно указаны и уравнение реакции, и средняя скорость образования Y в интервале 0–20 с (в моль/(л·с))?",
+        "ar": "يبيّن الرسم البياني تغيّر تركيزي الغازين X وY مع الزمن في تفاعل واحد يجري في وعاء ثابت الحجم عند درجة حرارة ثابتة (في البداية لا يوجد في الوعاء إلا X). في أيّ خيار تُعطى معادلة التفاعل ومتوسط سرعة تكوّن Y في الفترة 0–20 s (بوحدة mol/(L·s)) كلاهما بشكل صحيح؟",
+        "zh": "图中曲线表示在恒容、恒温容器中进行的某一反应里气体 X 和 Y 的浓度随时间的变化（开始时容器中只有 X）。下列哪一项同时正确给出了反应方程式和 0–20 s 内 Y 的平均生成速率（单位 mol/(L·s)）？",
+        "ku": "Grafîk di reaksiyoneke tenê de ku di firaxeke bi qebareya sabît û germahiya sabît de pêk tê, guherîna tîrbûnên gazên X û Y li gorî demê nîşan dide (di destpêkê de tenê X heye). Di kîjan vebijarkê de hem hevkêşeya reaksiyonê hem jî leza navînî ya çêbûna Y di navbera 0–20 s de (bi mol/(L·s)) bi hev re rast hatine dayîn?"
       },
       "options": [
         {
-          "tr": "L^2 / (mol^2 * s)",
-          "en": "L^2 / (mol^2 * s)",
-          "de": "L^2 / (mol^2 * s)",
-          "fr": "L^2 / (mol^2 * s)",
-          "ru": "L^2 / (mol^2 * s)",
-          "ar": "L^2 / (mol^2 * s)",
-          "zh": "L^2 / (mol^2 * s)",
-          "ku": "L^2 / (mol^2 * s)"
+          "tr": "2X → Y; 1,0x10^-2",
+          "en": "2X → Y; 1.0x10^-2",
+          "de": "2X → Y; 1,0x10^-2",
+          "fr": "2X → Y; 1,0x10^-2",
+          "ru": "2X → Y; 1,0x10^-2",
+          "ar": "2X → Y; 1.0x10^-2",
+          "zh": "2X → Y; 1.0x10^-2",
+          "ku": "2X → Y; 1,0x10^-2"
         },
         {
-          "tr": "L / (mol * s)",
-          "en": "L / (mol * s)",
-          "de": "L / (mol * s)",
-          "fr": "L / (mol * s)",
-          "ru": "L / (mol * s)",
-          "ar": "L / (mol * s)",
-          "zh": "L / (mol * s)",
-          "ku": "L / (mol * s)"
+          "tr": "X → 2Y; 1,0x10^-2",
+          "en": "X → 2Y; 1.0x10^-2",
+          "de": "X → 2Y; 1,0x10^-2",
+          "fr": "X → 2Y; 1,0x10^-2",
+          "ru": "X → 2Y; 1,0x10^-2",
+          "ar": "X → 2Y; 1.0x10^-2",
+          "zh": "X → 2Y; 1.0x10^-2",
+          "ku": "X → 2Y; 1,0x10^-2"
         },
         {
-          "tr": "mol / (L * s)",
-          "en": "mol / (L * s)",
-          "de": "mol / (L * s)",
-          "fr": "mol / (L * s)",
-          "ru": "mol / (L * s)",
-          "ar": "mol / (L * s)",
-          "zh": "mol / (L * s)",
-          "ku": "mol / (L * s)"
+          "tr": "2X → Y; 2,0x10^-2",
+          "en": "2X → Y; 2.0x10^-2",
+          "de": "2X → Y; 2,0x10^-2",
+          "fr": "2X → Y; 2,0x10^-2",
+          "ru": "2X → Y; 2,0x10^-2",
+          "ar": "2X → Y; 2.0x10^-2",
+          "zh": "2X → Y; 2.0x10^-2",
+          "ku": "2X → Y; 2,0x10^-2"
         },
         {
-          "tr": "L^3 / (mol^3 * s)",
-          "en": "L^3 / (mol^3 * s)",
-          "de": "L^3 / (mol^3 * s)",
-          "fr": "L^3 / (mol^3 * s)",
-          "ru": "L^3 / (mol^3 * s)",
-          "ar": "L^3 / (mol^3 * s)",
-          "zh": "L^3 / (mol^3 * s)",
-          "ku": "L^3 / (mol^3 * s)"
+          "tr": "X → 2Y; 2,0x10^-2",
+          "en": "X → 2Y; 2.0x10^-2",
+          "de": "X → 2Y; 2,0x10^-2",
+          "fr": "X → 2Y; 2,0x10^-2",
+          "ru": "X → 2Y; 2,0x10^-2",
+          "ar": "X → 2Y; 2.0x10^-2",
+          "zh": "X → 2Y; 2.0x10^-2",
+          "ku": "X → 2Y; 2,0x10^-2"
         },
         {
-          "tr": "s^-1",
-          "en": "s^-1",
-          "de": "s^-1",
-          "fr": "s^-1",
-          "ru": "s^-1",
-          "ar": "s^-1",
-          "zh": "s^-1",
-          "ku": "s^-1"
+          "tr": "2X → Y; 7,5x10^-3",
+          "en": "2X → Y; 7.5x10^-3",
+          "de": "2X → Y; 7,5x10^-3",
+          "fr": "2X → Y; 7,5x10^-3",
+          "ru": "2X → Y; 7,5x10^-3",
+          "ar": "2X → Y; 7.5x10^-3",
+          "zh": "2X → Y; 7.5x10^-3",
+          "ku": "2X → Y; 7,5x10^-3"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Tepkime derecesi n = 2 + 1 = 3'tür. k birimi = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
-        "en": "The order of reaction is n = 2 + 1 = 3. Unit of k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
-        "de": "Die Reaktionsordnung ist n = 2 + 1 = 3. Einheit von k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
-        "fr": "L'ordre de réaction est n = 2 + 1 = 3. Unité de k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
-        "ru": "Порядок реакции: n = 2 + 1 = 3. Единица k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
-        "ar": "رتبة التفاعل هي n = 2 + 1 = 3. وحدة k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
-        "zh": "反应级数 n = 2 + 1 = 3。k 的单位 = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s)。",
-        "ku": "Pileya reaksiyonê n = 2 + 1 = 3 e. Yekîneya k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s)."
+        "tr": "Grafikte 0–20 s aralığında [X] 0,8'den 0,4 mol/L'ye inmiş (Δ = 0,4), [Y] ise 0'dan 0,2 mol/L'ye çıkmıştır (Δ = 0,2). Harcanan X ile oluşan Y'nin oranı 0,4 : 0,2 = 2 : 1 olduğundan denklem 2X → Y'dir. Y'nin ortalama oluşma hızı = 0,2 / 20 = 1,0x10^-2 mol/(L·s). 2,0x10^-2 X'in harcanma hızıdır; 7,5x10^-3 ise 0–40 s aralığının ortalamasıdır (0,3 / 40). X → 2Y denklemi, Y'nin X'ten iki kat hızlı artmasını gerektirir; grafikte tersi görülmektedir.",
+        "en": "Over 0–20 s the graph shows [X] falling from 0.8 to 0.4 mol/L (Δ = 0.4) and [Y] rising from 0 to 0.2 mol/L (Δ = 0.2). X consumed : Y formed = 0.4 : 0.2 = 2 : 1, so the equation is 2X → Y. Average rate of formation of Y = 0.2 / 20 = 1.0x10^-2 mol/(L·s). 2.0x10^-2 is the rate of consumption of X; 7.5x10^-3 is the average over 0–40 s (0.3 / 40). X → 2Y would require Y to rise twice as fast as X falls; the graph shows the opposite.",
+        "de": "Im Intervall 0–20 s sinkt [X] laut Diagramm von 0,8 auf 0,4 mol/L (Δ = 0,4), [Y] steigt von 0 auf 0,2 mol/L (Δ = 0,2). Verbrauchtes X : gebildetes Y = 0,4 : 0,2 = 2 : 1, die Gleichung lautet also 2X → Y. Mittlere Bildungsgeschwindigkeit von Y = 0,2 / 20 = 1,0x10^-2 mol/(L·s). 2,0x10^-2 ist die Verbrauchsgeschwindigkeit von X; 7,5x10^-3 ist der Mittelwert über 0–40 s (0,3 / 40). Bei X → 2Y müsste Y doppelt so schnell zunehmen, wie X abnimmt; das Diagramm zeigt das Gegenteil.",
+        "fr": "Sur 0–20 s, le graphique montre que [X] passe de 0,8 à 0,4 mol/L (Δ = 0,4) et que [Y] passe de 0 à 0,2 mol/L (Δ = 0,2). X consommé : Y formé = 0,4 : 0,2 = 2 : 1, donc l'équation est 2X → Y. Vitesse moyenne de formation de Y = 0,2 / 20 = 1,0x10^-2 mol/(L·s). 2,0x10^-2 est la vitesse de disparition de X ; 7,5x10^-3 est la moyenne sur 0–40 s (0,3 / 40). Avec X → 2Y, Y augmenterait deux fois plus vite que X ne diminue ; le graphique montre l'inverse.",
+        "ru": "По графику за 0–20 с [X] уменьшается с 0,8 до 0,4 моль/л (Δ = 0,4), а [Y] растёт от 0 до 0,2 моль/л (Δ = 0,2). Израсходованный X : образовавшийся Y = 0,4 : 0,2 = 2 : 1, значит, уравнение 2X → Y. Средняя скорость образования Y = 0,2 / 20 = 1,0x10^-2 моль/(л·с). 2,0x10^-2 — скорость расходования X; 7,5x10^-3 — средняя скорость за 0–40 с (0,3 / 40). При X → 2Y концентрация Y росла бы вдвое быстрее, чем убывает X; график показывает обратное.",
+        "ar": "يبيّن الرسم أنه في الفترة 0–20 s انخفض [X] من 0.8 إلى 0.4 mol/L (Δ = 0.4) وارتفع [Y] من 0 إلى 0.2 mol/L (Δ = 0.2). نسبة X المستهلك إلى Y المتكوّن 0.4 : 0.2 = 2 : 1، لذا المعادلة 2X → Y. متوسط سرعة تكوّن Y = 0.2 / 20 = 1.0x10^-2 mol/(L·s). القيمة 2.0x10^-2 هي سرعة استهلاك X، و7.5x10^-3 هي المتوسط في الفترة 0–40 s (0.3 / 40). المعادلة X → 2Y تتطلب أن يزداد Y بضعف سرعة تناقص X، والرسم يبيّن العكس.",
+        "zh": "由图可知，0–20 s 内 [X] 从 0.8 降到 0.4 mol/L（Δ = 0.4），[Y] 从 0 升到 0.2 mol/L（Δ = 0.2）。消耗的 X 与生成的 Y 之比为 0.4 : 0.2 = 2 : 1，故方程式为 2X → Y。Y 的平均生成速率 = 0.2 / 20 = 1.0x10^-2 mol/(L·s)。2.0x10^-2 是 X 的消耗速率；7.5x10^-3 是 0–40 s 内的平均值（0.3 / 40）。若为 X → 2Y，Y 的增加速率应是 X 减少速率的两倍，图中恰好相反。",
+        "ku": "Li gorî grafîkê di navbera 0–20 s de [X] ji 0,8 daketiye 0,4 mol/L (Δ = 0,4), [Y] jî ji 0 derketiye 0,2 mol/L (Δ = 0,2). Rêjeya X-ya xerckirî û Y-ya çêbûyî 0,4 : 0,2 = 2 : 1 e, ji ber vê yekê hevkêşe 2X → Y ye. Leza navînî ya çêbûna Y = 0,2 / 20 = 1,0x10^-2 mol/(L·s). 2,0x10^-2 leza xerckirina X ye; 7,5x10^-3 navînîya navbera 0–40 s ye (0,3 / 40). Ji bo X → 2Y diviya Y du qat zûtir ji kêmbûna X zêde bibûya; grafîk berevajî vê nîşan dide."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman (s)",
+          "en": "Time (s)",
+          "de": "Zeit (s)",
+          "fr": "Temps (s)",
+          "ru": "Время (с)",
+          "ar": "الزمن (s)",
+          "zh": "时间 (s)",
+          "ku": "Dem (s)"
+        },
+        "yLabel": {
+          "tr": "Derişim (mol/L)",
+          "en": "Concentration (mol/L)",
+          "de": "Konzentration (mol/L)",
+          "fr": "Concentration (mol/L)",
+          "ru": "Концентрация (моль/л)",
+          "ar": "التركيز (mol/L)",
+          "zh": "浓度 (mol/L)",
+          "ku": "Tîrbûn (mol/L)"
+        },
+        "xMax": 50,
+        "yMax": 0.9,
+        "xTicks": [
+          10,
+          20,
+          30,
+          40
+        ],
+        "yTicks": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                0.8
+              ],
+              [
+                5,
+                0.66
+              ],
+              [
+                10,
+                0.55
+              ],
+              [
+                15,
+                0.47
+              ],
+              [
+                20,
+                0.4
+              ],
+              [
+                25,
+                0.34
+              ],
+              [
+                30,
+                0.28
+              ],
+              [
+                35,
+                0.24
+              ],
+              [
+                40,
+                0.2
+              ],
+              [
+                50,
+                0.15
+              ]
+            ],
+            "label": "X"
+          },
+          {
+            "points": [
+              [
+                0,
+                0.0
+              ],
+              [
+                5,
+                0.07
+              ],
+              [
+                10,
+                0.125
+              ],
+              [
+                15,
+                0.165
+              ],
+              [
+                20,
+                0.2
+              ],
+              [
+                25,
+                0.23
+              ],
+              [
+                30,
+                0.26
+              ],
+              [
+                35,
+                0.28
+              ],
+              [
+                40,
+                0.3
+              ],
+              [
+                50,
+                0.325
+              ]
+            ],
+            "label": "Y",
+            "tone": 1
+          }
+        ],
+        "markers": [
+          {
+            "x": 20,
+            "y": 0.4,
+            "label": "",
+            "guides": true
+          },
+          {
+            "x": 20,
+            "y": 0.2,
+            "label": "",
+            "guides": true
+          },
+          {
+            "x": 40,
+            "y": 0.3,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
@@ -1220,90 +1374,242 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin03",
       "stem": {
-        "tr": "2A(g) + B(g) → C(g) tepkimesi için sabit sıcaklıkta yapılan deneylerin sonuçları şöyledir: 1. deney: [A] = 0,1 M, [B] = 0,1 M, hız = 2×10^-4 mol/(L·s); 2. deney: [A] = 0,2 M, [B] = 0,1 M, hız = 8×10^-4 mol/(L·s); 3. deney: [A] = 0,2 M, [B] = 0,2 M, hız = 8×10^-4 mol/(L·s). Buna göre tepkimenin hız bağıntısı aşağıdakilerden hangisidir?",
-        "en": "For the reaction 2A(g) + B(g) → C(g), experiments at constant temperature gave: Experiment 1: [A] = 0.1 M, [B] = 0.1 M, rate = 2×10^-4 mol/(L·s); Experiment 2: [A] = 0.2 M, [B] = 0.1 M, rate = 8×10^-4 mol/(L·s); Experiment 3: [A] = 0.2 M, [B] = 0.2 M, rate = 8×10^-4 mol/(L·s). What is the rate law of the reaction?",
-        "de": "Für die Reaktion 2A(g) + B(g) → C(g) ergaben Versuche bei konstanter Temperatur: Versuch 1: [A] = 0,1 M, [B] = 0,1 M, Geschwindigkeit = 2×10^-4 mol/(L·s); Versuch 2: [A] = 0,2 M, [B] = 0,1 M, Geschwindigkeit = 8×10^-4 mol/(L·s); Versuch 3: [A] = 0,2 M, [B] = 0,2 M, Geschwindigkeit = 8×10^-4 mol/(L·s). Wie lautet das Geschwindigkeitsgesetz?",
-        "fr": "Pour la réaction 2A(g) + B(g) → C(g), des expériences à température constante ont donné : expérience 1 : [A] = 0,1 M, [B] = 0,1 M, vitesse = 2×10^-4 mol/(L·s) ; expérience 2 : [A] = 0,2 M, [B] = 0,1 M, vitesse = 8×10^-4 mol/(L·s) ; expérience 3 : [A] = 0,2 M, [B] = 0,2 M, vitesse = 8×10^-4 mol/(L·s). Quelle est la loi de vitesse de la réaction ?",
-        "ru": "Для реакции 2A(г) + B(г) → C(г) при постоянной температуре получены данные: опыт 1: [A] = 0,1 M, [B] = 0,1 M, скорость = 2×10^-4 моль/(л·с); опыт 2: [A] = 0,2 M, [B] = 0,1 M, скорость = 8×10^-4 моль/(л·с); опыт 3: [A] = 0,2 M, [B] = 0,2 M, скорость = 8×10^-4 моль/(л·с). Какое кинетическое уравнение соответствует этой реакции?",
-        "ar": "للتفاعل 2A(g) + B(g) → C(g) أعطت تجارب عند درجة حرارة ثابتة النتائج التالية: التجربة 1: [A] = 0.1 M و[B] = 0.1 M والسرعة = 2×10^-4 mol/(L·s)؛ التجربة 2: [A] = 0.2 M و[B] = 0.1 M والسرعة = 8×10^-4 mol/(L·s)؛ التجربة 3: [A] = 0.2 M و[B] = 0.2 M والسرعة = 8×10^-4 mol/(L·s). ما قانون سرعة التفاعل؟",
-        "zh": "对于反应 2A(g) + B(g) → C(g)，恒温下的实验结果为：实验1：[A] = 0.1 M，[B] = 0.1 M，速率 = 2×10^-4 mol/(L·s)；实验2：[A] = 0.2 M，[B] = 0.1 M，速率 = 8×10^-4 mol/(L·s)；实验3：[A] = 0.2 M，[B] = 0.2 M，速率 = 8×10^-4 mol/(L·s)。该反应的速率方程是哪一项？",
-        "ku": "Ji bo reaksiyona 2A(g) + B(g) → C(g), encamên ceribandinên di germahiya sabît de hatine kirin ev in: ceribandina 1.: [A] = 0,1 M, [B] = 0,1 M, lez = 2×10^-4 mol/(L·s); ceribandina 2.: [A] = 0,2 M, [B] = 0,1 M, lez = 8×10^-4 mol/(L·s); ceribandina 3.: [A] = 0,2 M, [B] = 0,2 M, lez = 8×10^-4 mol/(L·s). Li gorî vê, hevkêşeya lezê ya reaksiyonê kîjan e?"
+        "tr": "Tabloda, 2A(g) + B(g) → C(g) tepkimesi için aynı sıcaklıkta yapılan deneylerin sonuçları verilmiştir. Tepkimenin hız bağıntısı ve 4. deneydeki başlangıç hızı v (mol/(L·s)) aşağıdakilerin hangisinde birlikte doğru verilmiştir?",
+        "en": "The table gives the results of experiments carried out at the same temperature for the reaction 2A(g) + B(g) → C(g). Which option gives both the rate law and the initial rate v in experiment 4 (in mol/(L·s)) correctly?",
+        "de": "Die Tabelle enthält Ergebnisse von Versuchen bei gleicher Temperatur für die Reaktion 2A(g) + B(g) → C(g). In welcher Antwort sind das Geschwindigkeitsgesetz und die Anfangsgeschwindigkeit v in Versuch 4 (in mol/(L·s)) beide richtig angegeben?",
+        "fr": "Le tableau donne les résultats d'expériences réalisées à la même température pour la réaction 2A(g) + B(g) → C(g). Quelle proposition donne correctement à la fois la loi de vitesse et la vitesse initiale v de l'expérience 4 (en mol/(L·s)) ?",
+        "ru": "В таблице приведены результаты опытов, проведённых при одной и той же температуре для реакции 2A(г) + B(г) → C(г). В каком варианте правильно указаны и кинетическое уравнение, и начальная скорость v в опыте 4 (в моль/(л·с))?",
+        "ar": "يعطي الجدول نتائج تجارب أُجريت عند درجة الحرارة نفسها للتفاعل 2A(g) + B(g) → C(g). في أيّ خيار يُعطى قانون السرعة والسرعة الابتدائية v في التجربة 4 (بوحدة mol/(L·s)) كلاهما بشكل صحيح؟",
+        "zh": "表中给出了在同一温度下对反应 2A(g) + B(g) → C(g) 进行实验的结果。下列哪一项同时正确给出了速率方程和实验 4 的初始速率 v（单位 mol/(L·s)）？",
+        "ku": "Tablo encamên ceribandinên ku ji bo reaksiyona 2A(g) + B(g) → C(g) di heman germahiyê de hatine kirin dide. Di kîjan vebijarkê de hem hevkêşeya lezê hem jî leza destpêkê v di ceribandina 4. de (bi mol/(L·s)) bi hev re rast hatine dayîn?"
       },
       "options": [
         {
-          "tr": "r = k[A]^2",
-          "en": "r = k[A]^2",
-          "de": "r = k[A]^2",
-          "fr": "r = k[A]^2",
-          "ru": "r = k[A]^2",
-          "ar": "r = k[A]^2",
-          "zh": "r = k[A]^2",
-          "ku": "r = k[A]^2"
+          "tr": "r = k[A]^2; 1,8x10^-3",
+          "en": "r = k[A]^2; 1.8x10^-3",
+          "de": "r = k[A]^2; 1,8x10^-3",
+          "fr": "r = k[A]^2; 1,8x10^-3",
+          "ru": "r = k[A]^2; 1,8x10^-3",
+          "ar": "r = k[A]^2; 1.8x10^-3",
+          "zh": "r = k[A]^2; 1.8x10^-3",
+          "ku": "r = k[A]^2; 1,8x10^-3"
         },
         {
-          "tr": "r = k[A]^2[B]",
-          "en": "r = k[A]^2[B]",
-          "de": "r = k[A]^2[B]",
-          "fr": "r = k[A]^2[B]",
-          "ru": "r = k[A]^2[B]",
-          "ar": "r = k[A]^2[B]",
-          "zh": "r = k[A]^2[B]",
-          "ku": "r = k[A]^2[B]"
+          "tr": "r = k[A]^2[B]; 7,2x10^-3",
+          "en": "r = k[A]^2[B]; 7.2x10^-3",
+          "de": "r = k[A]^2[B]; 7,2x10^-3",
+          "fr": "r = k[A]^2[B]; 7,2x10^-3",
+          "ru": "r = k[A]^2[B]; 7,2x10^-3",
+          "ar": "r = k[A]^2[B]; 7.2x10^-3",
+          "zh": "r = k[A]^2[B]; 7.2x10^-3",
+          "ku": "r = k[A]^2[B]; 7,2x10^-3"
         },
         {
-          "tr": "r = k[A][B]",
-          "en": "r = k[A][B]",
-          "de": "r = k[A][B]",
-          "fr": "r = k[A][B]",
-          "ru": "r = k[A][B]",
-          "ar": "r = k[A][B]",
-          "zh": "r = k[A][B]",
-          "ku": "r = k[A][B]"
+          "tr": "r = k[A]^2; 6,0x10^-4",
+          "en": "r = k[A]^2; 6.0x10^-4",
+          "de": "r = k[A]^2; 6,0x10^-4",
+          "fr": "r = k[A]^2; 6,0x10^-4",
+          "ru": "r = k[A]^2; 6,0x10^-4",
+          "ar": "r = k[A]^2; 6.0x10^-4",
+          "zh": "r = k[A]^2; 6.0x10^-4",
+          "ku": "r = k[A]^2; 6,0x10^-4"
         },
         {
-          "tr": "r = k[A]",
-          "en": "r = k[A]",
-          "de": "r = k[A]",
-          "fr": "r = k[A]",
-          "ru": "r = k[A]",
-          "ar": "r = k[A]",
-          "zh": "r = k[A]",
-          "ku": "r = k[A]"
+          "tr": "r = k[A][B]; 2,4x10^-3",
+          "en": "r = k[A][B]; 2.4x10^-3",
+          "de": "r = k[A][B]; 2,4x10^-3",
+          "fr": "r = k[A][B]; 2,4x10^-3",
+          "ru": "r = k[A][B]; 2,4x10^-3",
+          "ar": "r = k[A][B]; 2.4x10^-3",
+          "zh": "r = k[A][B]; 2.4x10^-3",
+          "ku": "r = k[A][B]; 2,4x10^-3"
         },
         {
-          "tr": "r = k[B]",
-          "en": "r = k[B]",
-          "de": "r = k[B]",
-          "fr": "r = k[B]",
-          "ru": "r = k[B]",
-          "ar": "r = k[B]",
-          "zh": "r = k[B]",
-          "ku": "r = k[B]"
+          "tr": "r = k[A]^2[B]; 1,8x10^-3",
+          "en": "r = k[A]^2[B]; 1.8x10^-3",
+          "de": "r = k[A]^2[B]; 1,8x10^-3",
+          "fr": "r = k[A]^2[B]; 1,8x10^-3",
+          "ru": "r = k[A]^2[B]; 1,8x10^-3",
+          "ar": "r = k[A]^2[B]; 1.8x10^-3",
+          "zh": "r = k[A]^2[B]; 1.8x10^-3",
+          "ku": "r = k[A]^2[B]; 1,8x10^-3"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "1. ve 2. deneyde [B] sabit, [A] 2 katına çıkınca hız 2×10^-4'ten 8×10^-4'e, yani 4 katına çıkmış: 2^x = 4 → A'ya göre 2. derece. 2. ve 3. deneyde [A] sabit, [B] 2 katına çıkınca hız değişmemiş: B'ye göre 0. derece. r = k[A]^2. Net denklemdeki katsayılardan r = k[A]^2[B] yazmak tipik hatadır; derece deney verisinden bulunur.",
-        "en": "In experiments 1 and 2 [B] is constant; doubling [A] raises the rate from 2×10^-4 to 8×10^-4, i.e. 4 times: 2^x = 4 → second order in A. In experiments 2 and 3 [A] is constant; doubling [B] leaves the rate unchanged: zero order in B. r = k[A]^2. Writing r = k[A]^2[B] from the coefficients of the net equation is the typical mistake; orders come from the data.",
-        "de": "In Versuch 1 und 2 ist [B] konstant; Verdopplung von [A] erhöht die Geschwindigkeit von 2×10^-4 auf 8×10^-4, also auf das 4-Fache: 2^x = 4 → 2. Ordnung bezüglich A. In Versuch 2 und 3 ist [A] konstant; Verdopplung von [B] ändert die Geschwindigkeit nicht: 0. Ordnung bezüglich B. r = k[A]^2. r = k[A]^2[B] aus den Koeffizienten der Nettogleichung abzulesen ist der typische Fehler; Ordnungen stammen aus den Messdaten.",
-        "fr": "Dans les expériences 1 et 2, [B] est constante ; doubler [A] fait passer la vitesse de 2×10^-4 à 8×10^-4, soit 4 fois : 2^x = 4 → ordre 2 par rapport à A. Dans les expériences 2 et 3, [A] est constante ; doubler [B] ne change pas la vitesse : ordre 0 par rapport à B. r = k[A]^2. Écrire r = k[A]^2[B] d'après les coefficients de l'équation bilan est l'erreur typique ; les ordres viennent des données.",
-        "ru": "В опытах 1 и 2 [B] постоянна; при удвоении [A] скорость растёт с 2×10^-4 до 8×10^-4, т. е. в 4 раза: 2^x = 4 → второй порядок по A. В опытах 2 и 3 [A] постоянна; удвоение [B] скорость не меняет: нулевой порядок по B. r = k[A]^2. Записать r = k[A]^2[B] по коэффициентам суммарного уравнения — типичная ошибка: порядки находят из опытных данных.",
-        "ar": "في التجربتين 1 و2 يبقى [B] ثابتًا؛ ومضاعفة [A] ترفع السرعة من 2×10^-4 إلى 8×10^-4 أي 4 مرات: 2^x = 4 → الرتبة الثانية بالنسبة إلى A. في التجربتين 2 و3 يبقى [A] ثابتًا؛ ومضاعفة [B] لا تغيّر السرعة: الرتبة صفر بالنسبة إلى B. r = k[A]^2. كتابة r = k[A]^2[B] من معاملات المعادلة الصافية خطأ شائع؛ فالرتب تُستخرج من البيانات التجريبية.",
-        "zh": "实验1和2中[B]不变，[A]加倍时速率由2×10^-4增至8×10^-4，即4倍：2^x = 4 → 对A为二级。实验2和3中[A]不变，[B]加倍时速率不变：对B为零级。r = k[A]^2。按总反应方程式的系数写成r = k[A]^2[B]是典型错误；级数必须由实验数据确定。",
-        "ku": "Di ceribandina 1. û 2. de [B] sabît e; dema [A] du qat dibe, lez ji 2×10^-4 dibe 8×10^-4, ango 4 qat: 2^x = 4 → li gorî A pileya 2. e. Di ceribandina 2. û 3. de [A] sabît e; dema [B] du qat dibe lez naguhere: li gorî B pileya 0. e. r = k[A]^2. Nivîsandina r = k[A]^2[B] li gorî hevberên hevkêşeya net şaşiyeke tîpîk e; pile ji daneyên ceribandinê tê dîtin."
+        "tr": "1. ve 2. deneyde [B] sabitken [A] 2 katına çıkınca hız 4 katına çıkmıştır: A'ya göre 2. derece. 2. ve 3. deneyde [A] sabitken [B] 2 katına çıkınca hız değişmemiştir: B'ye göre 0. derece. Hız bağıntısı r = k[A]^2'dir; 1. deneyden k = 2,0x10^-4 / (0,1)^2 = 2,0x10^-2 L/(mol·s). 4. deneyde v = 2,0x10^-2 · (0,3)^2 = 1,8x10^-3 mol/(L·s); [B]'nin 0,4 olması hızı etkilemez. Net denklemin katsayılarından r = k[A]^2[B] yazmak 7,2x10^-3, hızı [A] ile doğrusal artırmak 6,0x10^-4, r = k[A][B] almak 2,4x10^-3 sonucunu verir; r = k[A]^2[B] bağıntısının yanına 1,8x10^-3 yazan seçenekte sayı doğru olsa da bağıntı yanlıştır.",
+        "en": "In experiments 1 and 2 [B] is constant and doubling [A] multiplies the rate by 4: second order in A. In experiments 2 and 3 [A] is constant and doubling [B] leaves the rate unchanged: zero order in B. The rate law is r = k[A]^2; from experiment 1, k = 2.0x10^-4 / (0.1)^2 = 2.0x10^-2 L/(mol·s). In experiment 4, v = 2.0x10^-2 · (0.3)^2 = 1.8x10^-3 mol/(L·s); [B] = 0.4 has no effect. Writing r = k[A]^2[B] from the coefficients gives 7.2x10^-3, scaling the rate linearly with [A] gives 6.0x10^-4, and r = k[A][B] gives 2.4x10^-3; the option pairing r = k[A]^2[B] with 1.8x10^-3 has the right number but the wrong rate law.",
+        "de": "In Versuch 1 und 2 ist [B] konstant; die Verdopplung von [A] vervierfacht die Geschwindigkeit: 2. Ordnung bezüglich A. In Versuch 2 und 3 ist [A] konstant; die Verdopplung von [B] ändert die Geschwindigkeit nicht: 0. Ordnung bezüglich B. Das Geschwindigkeitsgesetz lautet r = k[A]^2; aus Versuch 1 folgt k = 2,0x10^-4 / (0,1)^2 = 2,0x10^-2 L/(mol·s). In Versuch 4 ist v = 2,0x10^-2 · (0,3)^2 = 1,8x10^-3 mol/(L·s); [B] = 0,4 spielt keine Rolle. Aus den Koeffizienten r = k[A]^2[B] abzuleiten ergibt 7,2x10^-3, eine lineare Abhängigkeit von [A] ergibt 6,0x10^-4, r = k[A][B] ergibt 2,4x10^-3; die Antwort, die r = k[A]^2[B] mit 1,8x10^-3 kombiniert, hat zwar die richtige Zahl, aber das falsche Geschwindigkeitsgesetz.",
+        "fr": "Dans les expériences 1 et 2, [B] est constante et doubler [A] multiplie la vitesse par 4 : ordre 2 par rapport à A. Dans les expériences 2 et 3, [A] est constante et doubler [B] ne change pas la vitesse : ordre 0 par rapport à B. La loi de vitesse est r = k[A]^2 ; l'expérience 1 donne k = 2,0x10^-4 / (0,1)^2 = 2,0x10^-2 L/(mol·s). Dans l'expérience 4, v = 2,0x10^-2 · (0,3)^2 = 1,8x10^-3 mol/(L·s) ; [B] = 0,4 n'a aucun effet. Écrire r = k[A]^2[B] à partir des coefficients donne 7,2x10^-3, faire varier la vitesse linéairement avec [A] donne 6,0x10^-4, r = k[A][B] donne 2,4x10^-3 ; la proposition associant r = k[A]^2[B] à 1,8x10^-3 a le bon nombre mais une loi de vitesse fausse.",
+        "ru": "В опытах 1 и 2 [B] постоянна, и при удвоении [A] скорость возрастает в 4 раза: второй порядок по A. В опытах 2 и 3 [A] постоянна, и удвоение [B] не меняет скорость: нулевой порядок по B. Кинетическое уравнение r = k[A]^2; из опыта 1 k = 2,0x10^-4 / (0,1)^2 = 2,0x10^-2 л/(моль·с). В опыте 4 v = 2,0x10^-2 · (0,3)^2 = 1,8x10^-3 моль/(л·с); значение [B] = 0,4 не влияет на скорость. Запись r = k[A]^2[B] по коэффициентам даёт 7,2x10^-3, линейная зависимость от [A] — 6,0x10^-4, r = k[A][B] — 2,4x10^-3; в варианте, где r = k[A]^2[B] стоит рядом с 1,8x10^-3, число верное, но уравнение неверно.",
+        "ar": "في التجربتين 1 و2 يكون [B] ثابتًا ومضاعفة [A] تضاعف السرعة 4 مرات: الرتبة 2 بالنسبة إلى A. في التجربتين 2 و3 يكون [A] ثابتًا ومضاعفة [B] لا تغيّر السرعة: الرتبة 0 بالنسبة إلى B. قانون السرعة r = k[A]^2، ومن التجربة 1 نجد k = 2.0x10^-4 / (0.1)^2 = 2.0x10^-2 L/(mol·s). في التجربة 4: v = 2.0x10^-2 · (0.3)^2 = 1.8x10^-3 mol/(L·s)، ولا أثر لكون [B] = 0.4. كتابة r = k[A]^2[B] من المعاملات تعطي 7.2x10^-3، وجعل السرعة تتناسب خطيًّا مع [A] يعطي 6.0x10^-4، وr = k[A][B] يعطي 2.4x10^-3؛ والخيار الذي يقرن r = k[A]^2[B] بالقيمة 1.8x10^-3 عدده صحيح لكن قانونه خاطئ.",
+        "zh": "实验 1 和 2 中 [B] 不变，[A] 加倍时速率变为 4 倍：对 A 为二级。实验 2 和 3 中 [A] 不变，[B] 加倍时速率不变：对 B 为零级。速率方程为 r = k[A]^2；由实验 1 得 k = 2.0x10^-4 / (0.1)^2 = 2.0x10^-2 L/(mol·s)。实验 4 中 v = 2.0x10^-2 · (0.3)^2 = 1.8x10^-3 mol/(L·s)；[B] = 0.4 对速率无影响。按系数写成 r = k[A]^2[B] 得 7.2x10^-3，认为速率与 [A] 成正比得 6.0x10^-4，用 r = k[A][B] 得 2.4x10^-3；把 r = k[A]^2[B] 与 1.8x10^-3 配在一起的选项数值虽对，但速率方程是错的。",
+        "ku": "Di ceribandinên 1 û 2 de [B] sabît e û bi ducarkirina [A] lez 4 qat dibe: li gorî A pileya 2. Di ceribandinên 2 û 3 de [A] sabît e û bi ducarkirina [B] lez naguhere: li gorî B pileya 0. Hevkêşeya lezê r = k[A]^2 e; ji ceribandina 1. k = 2,0x10^-4 / (0,1)^2 = 2,0x10^-2 L/(mol·s). Di ceribandina 4. de v = 2,0x10^-2 · (0,3)^2 = 1,8x10^-3 mol/(L·s); [B] = 0,4 bandorê li lezê nake. Nivîsandina r = k[A]^2[B] ji hevberan 7,2x10^-3, girêdana xêzikî bi [A] re 6,0x10^-4, r = k[A][B] jî 2,4x10^-3 dide; di vebijarka ku r = k[A]^2[B] bi 1,8x10^-3 re dide de hejmar rast e lê hevkêşeya lezê şaş e."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Deney",
+            "en": "Experiment",
+            "de": "Versuch",
+            "fr": "Expérience",
+            "ru": "Опыт",
+            "ar": "التجربة",
+            "zh": "实验",
+            "ku": "Ceribandin"
+          },
+          "[A] (mol/L)",
+          "[B] (mol/L)",
+          {
+            "tr": "Hız (mol/(L·s))",
+            "en": "Rate (mol/(L·s))",
+            "de": "Geschwindigkeit (mol/(L·s))",
+            "fr": "Vitesse (mol/(L·s))",
+            "ru": "Скорость (моль/(л·с))",
+            "ar": "السرعة (mol/(L·s))",
+            "zh": "速率 (mol/(L·s))",
+            "ku": "Lez (mol/(L·s))"
+          }
+        ],
+        "rows": [
+          [
+            "1",
+            {
+              "tr": "0,1",
+              "en": "0.1",
+              "de": "0,1",
+              "fr": "0,1",
+              "ru": "0,1",
+              "ar": "0.1",
+              "zh": "0.1",
+              "ku": "0,1"
+            },
+            {
+              "tr": "0,1",
+              "en": "0.1",
+              "de": "0,1",
+              "fr": "0,1",
+              "ru": "0,1",
+              "ar": "0.1",
+              "zh": "0.1",
+              "ku": "0,1"
+            },
+            {
+              "tr": "2,0x10^-4",
+              "en": "2.0x10^-4",
+              "de": "2,0x10^-4",
+              "fr": "2,0x10^-4",
+              "ru": "2,0x10^-4",
+              "ar": "2.0x10^-4",
+              "zh": "2.0x10^-4",
+              "ku": "2,0x10^-4"
+            }
+          ],
+          [
+            "2",
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            {
+              "tr": "0,1",
+              "en": "0.1",
+              "de": "0,1",
+              "fr": "0,1",
+              "ru": "0,1",
+              "ar": "0.1",
+              "zh": "0.1",
+              "ku": "0,1"
+            },
+            {
+              "tr": "8,0x10^-4",
+              "en": "8.0x10^-4",
+              "de": "8,0x10^-4",
+              "fr": "8,0x10^-4",
+              "ru": "8,0x10^-4",
+              "ar": "8.0x10^-4",
+              "zh": "8.0x10^-4",
+              "ku": "8,0x10^-4"
+            }
+          ],
+          [
+            "3",
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            {
+              "tr": "8,0x10^-4",
+              "en": "8.0x10^-4",
+              "de": "8,0x10^-4",
+              "fr": "8,0x10^-4",
+              "ru": "8,0x10^-4",
+              "ar": "8.0x10^-4",
+              "zh": "8.0x10^-4",
+              "ku": "8,0x10^-4"
+            }
+          ],
+          [
+            "4",
+            {
+              "tr": "0,3",
+              "en": "0.3",
+              "de": "0,3",
+              "fr": "0,3",
+              "ru": "0,3",
+              "ar": "0.3",
+              "zh": "0.3",
+              "ku": "0,3"
+            },
+            {
+              "tr": "0,4",
+              "en": "0.4",
+              "de": "0,4",
+              "fr": "0,4",
+              "ru": "0,4",
+              "ar": "0.4",
+              "zh": "0.4",
+              "ku": "0,4"
+            },
+            "v"
+          ]
+        ]
       }
     },
     {
       "id": "u17-twin04",
       "stem": {
-        "tr": "Tek basamakta (temel tepkime olarak) gerçekleşen X(g) + 2Y(g) → Z(g) tepkimesinde belirli bir sıcaklıkta [X] = 0,2 M ve [Y] = 0,1 M iken tepkime hızı 4×10^-4 mol/(L·s) olarak ölçülüyor. Buna göre bu sıcaklıkta hız sabiti k aşağıdakilerden hangisidir?",
+        "tr": "Tek basamakta (temel tepkime olarak) gerçekleşen X(g) + 2Y(g) → Z(g) tepkimesinde belirli bir sıcaklıkta [X] = 0,2 M ve [Y] = 0,1 M iken tepkime hızı 4×10^-4 mol/(L·s) olarak ölçülüyor. Bu sıcaklıkta hız sabiti k aşağıdakilerden hangisidir?",
         "en": "For the reaction X(g) + 2Y(g) → Z(g), which occurs in a single (elementary) step, the rate at a certain temperature is 4×10^-4 mol/(L·s) when [X] = 0.2 M and [Y] = 0.1 M. What is the rate constant k at this temperature?",
         "de": "Für die in einem einzigen Schritt (als Elementarreaktion) ablaufende Reaktion X(g) + 2Y(g) → Z(g) beträgt die Geschwindigkeit bei einer bestimmten Temperatur 4×10^-4 mol/(L·s), wenn [X] = 0,2 M und [Y] = 0,1 M sind. Wie groß ist die Geschwindigkeitskonstante k bei dieser Temperatur?",
         "fr": "Pour la réaction X(g) + 2Y(g) → Z(g), qui se fait en une seule étape (réaction élémentaire), la vitesse mesurée à une certaine température vaut 4×10^-4 mol/(L·s) lorsque [X] = 0,2 M et [Y] = 0,1 M. Quelle est la constante de vitesse k à cette température ?",
         "ru": "Реакция X(г) + 2Y(г) → Z(г) протекает в одну стадию (элементарная реакция). При некоторой температуре, когда [X] = 0,2 M и [Y] = 0,1 M, скорость равна 4×10^-4 моль/(л·с). Чему равна константа скорости k при этой температуре?",
         "ar": "التفاعل X(g) + 2Y(g) → Z(g) يحدث في خطوة واحدة (تفاعل أولي). عند درجة حرارة معيّنة، وعندما [X] = 0.2 M و[Y] = 0.1 M، كانت السرعة 4×10^-4 mol/(L·s). ما قيمة ثابت السرعة k عند هذه الدرجة؟",
         "zh": "反应 X(g) + 2Y(g) → Z(g) 一步完成（基元反应）。在某温度下，当[X] = 0.2 M、[Y] = 0.1 M时，测得速率为4×10^-4 mol/(L·s)。该温度下速率常数k为多少？",
-        "ku": "Reaksiyona X(g) + 2Y(g) → Z(g) di yek gavê de (wekî reaksiyoneke bingehîn) pêk tê. Di germahiyeke diyar de, dema [X] = 0,2 M û [Y] = 0,1 M e, leza reaksiyonê 4×10^-4 mol/(L·s) tê pîvandin. Li gorî vê, di vê germahiyê de sabîta lezê k kîjan e?"
+        "ku": "Reaksiyona X(g) + 2Y(g) → Z(g) di yek gavê de (wekî reaksiyoneke bingehîn) pêk tê. Di germahiyeke diyar de, dema [X] = 0,2 M û [Y] = 0,1 M e, leza reaksiyonê 4×10^-4 mol/(L·s) tê pîvandin. Di vê germahiyê de sabîta lezê k kîjan e?"
       },
       "options": [
         {
@@ -1372,14 +1678,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin05",
       "stem": {
-        "tr": "NO2(g) + CO(g) → NO(g) + CO2(g) tepkimesinin mekanizması şöyledir: 1. basamak: NO2(g) + NO2(g) → NO3(g) + NO(g) (yavaş); 2. basamak: NO3(g) + CO(g) → NO2(g) + CO2(g) (hızlı). Buna göre, I. Tepkimenin hız bağıntısı r = k[NO2]^2'dir. II. NO3 ara üründür. III. Sabit sıcaklıkta CO derişimi artırılırsa tepkime hızı artar. yargılarından hangileri doğrudur?",
-        "en": "The mechanism of the reaction NO2(g) + CO(g) → NO(g) + CO2(g) is: Step 1: NO2(g) + NO2(g) → NO3(g) + NO(g) (slow); Step 2: NO3(g) + CO(g) → NO2(g) + CO2(g) (fast). Accordingly, which of the following statements are correct? I. The rate law is r = k[NO2]^2. II. NO3 is an intermediate. III. At constant temperature, increasing the CO concentration increases the reaction rate.",
+        "tr": "NO2(g) + CO(g) → NO(g) + CO2(g) tepkimesinin mekanizması şöyledir: 1. basamak: NO2(g) + NO2(g) → NO3(g) + NO(g) (yavaş); 2. basamak: NO3(g) + CO(g) → NO2(g) + CO2(g) (hızlı). I. Tepkimenin hız bağıntısı r = k[NO2]^2'dir. II. NO3 ara üründür. III. Sabit sıcaklıkta CO derişimi artırılırsa tepkime hızı artar. yargılarından hangileri doğrudur?",
+        "en": "The mechanism of the reaction NO2(g) + CO(g) → NO(g) + CO2(g) is: Step 1: NO2(g) + NO2(g) → NO3(g) + NO(g) (slow); Step 2: NO3(g) + CO(g) → NO2(g) + CO2(g) (fast). Which of the following statements are correct? I. The rate law is r = k[NO2]^2. II. NO3 is an intermediate. III. At constant temperature, increasing the CO concentration increases the reaction rate.",
         "de": "Der Mechanismus der Reaktion NO2(g) + CO(g) → NO(g) + CO2(g) lautet: Schritt 1: NO2(g) + NO2(g) → NO3(g) + NO(g) (langsam); Schritt 2: NO3(g) + CO(g) → NO2(g) + CO2(g) (schnell). Welche Aussagen sind richtig? I. Das Geschwindigkeitsgesetz lautet r = k[NO2]^2. II. NO3 ist ein Zwischenprodukt. III. Bei konstanter Temperatur erhöht eine größere CO-Konzentration die Reaktionsgeschwindigkeit.",
         "fr": "Le mécanisme de la réaction NO2(g) + CO(g) → NO(g) + CO2(g) est : étape 1 : NO2(g) + NO2(g) → NO3(g) + NO(g) (lente) ; étape 2 : NO3(g) + CO(g) → NO2(g) + CO2(g) (rapide). Lesquelles des affirmations suivantes sont correctes ? I. La loi de vitesse est r = k[NO2]^2. II. NO3 est un intermédiaire réactionnel. III. À température constante, augmenter la concentration de CO augmente la vitesse de réaction.",
         "ru": "Механизм реакции NO2(г) + CO(г) → NO(г) + CO2(г): стадия 1: NO2(г) + NO2(г) → NO3(г) + NO(г) (медленная); стадия 2: NO3(г) + CO(г) → NO2(г) + CO2(г) (быстрая). Какие из утверждений верны? I. Уравнение скорости: r = k[NO2]^2. II. NO3 — промежуточное вещество. III. При постоянной температуре увеличение концентрации CO увеличивает скорость реакции.",
         "ar": "آلية التفاعل NO2(g) + CO(g) → NO(g) + CO2(g) هي: الخطوة 1: NO2(g) + NO2(g) → NO3(g) + NO(g) (بطيئة)؛ الخطوة 2: NO3(g) + CO(g) → NO2(g) + CO2(g) (سريعة). أيّ العبارات التالية صحيحة؟ I. قانون السرعة هو r = k[NO2]^2. II. NO3 مركب وسيط. III. عند ثبات درجة الحرارة تؤدي زيادة تركيز CO إلى زيادة سرعة التفاعل.",
         "zh": "反应 NO2(g) + CO(g) → NO(g) + CO2(g) 的机理为：第1步：NO2(g) + NO2(g) → NO3(g) + NO(g)（慢）；第2步：NO3(g) + CO(g) → NO2(g) + CO2(g)（快）。有下列说法：I. 速率方程为 r = k[NO2]^2。II. NO3 是中间产物。III. 恒温下增大 CO 浓度，反应速率增大。其中正确的是哪些？",
-        "ku": "Mekanîzmaya reaksiyona NO2(g) + CO(g) → NO(g) + CO2(g) ev e: gava 1.: NO2(g) + NO2(g) → NO3(g) + NO(g) (hêdî); gava 2.: NO3(g) + CO(g) → NO2(g) + CO2(g) (bilez). Li gorî vê, kîjan ji van gotinan rast in? I. Hevkêşeya lezê ya reaksiyonê r = k[NO2]^2 e. II. NO3 hilbera navber e. III. Di germahiya sabît de heke tîrbûna CO were zêdekirin, leza reaksiyonê zêde dibe."
+        "ku": "Mekanîzmaya reaksiyona NO2(g) + CO(g) → NO(g) + CO2(g) ev e: gava 1.: NO2(g) + NO2(g) → NO3(g) + NO(g) (hêdî); gava 2.: NO3(g) + CO(g) → NO2(g) + CO2(g) (bilez). Kîjan ji van gotinan rast in? I. Hevkêşeya lezê ya reaksiyonê r = k[NO2]^2 e. II. NO3 hilbera navber e. III. Di germahiya sabît de heke tîrbûna CO were zêdekirin, leza reaksiyonê zêde dibe."
       },
       "options": [
         {
@@ -1448,90 +1754,245 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin06",
       "stem": {
-        "tr": "Bir tepkimenin potansiyel enerji–tepkime koordinatı grafiğinde girenlerin potansiyel enerjisi 40 kJ, aktifleşmiş kompleksin potansiyel enerjisi 120 kJ ve ürünlerin potansiyel enerjisi 10 kJ'dir. Buna göre geri tepkimenin aktifleşme enerjisi (Eag) ve ileri tepkimenin entalpi değişimi (ΔH) aşağıdakilerden hangisidir?",
-        "en": "On the potential energy–reaction coordinate diagram of a reaction, the potential energy of the reactants is 40 kJ, that of the activated complex is 120 kJ and that of the products is 10 kJ. What are the activation energy of the reverse reaction (Ea,reverse) and the enthalpy change (ΔH) of the forward reaction?",
-        "de": "Im Diagramm potenzielle Energie–Reaktionskoordinate einer Reaktion beträgt die potenzielle Energie der Edukte 40 kJ, die des aktivierten Komplexes 120 kJ und die der Produkte 10 kJ. Wie groß sind die Aktivierungsenergie der Rückreaktion (Ea,rück) und die Enthalpieänderung (ΔH) der Hinreaktion?",
-        "fr": "Sur le diagramme énergie potentielle–coordonnée de réaction d'une réaction, l'énergie potentielle des réactifs vaut 40 kJ, celle du complexe activé 120 kJ et celle des produits 10 kJ. Quelles sont l'énergie d'activation de la réaction inverse (Ea,inv) et la variation d'enthalpie (ΔH) de la réaction directe ?",
-        "ru": "На диаграмме «потенциальная энергия — координата реакции» потенциальная энергия реагентов равна 40 кДж, активированного комплекса — 120 кДж, продуктов — 10 кДж. Чему равны энергия активации обратной реакции Ea(обр) и изменение энтальпии (ΔH) прямой реакции?",
-        "ar": "في مخطط الطاقة الكامنة–مسار التفاعل لتفاعل ما، تبلغ الطاقة الكامنة للمتفاعلات 40 kJ، وللمعقد المنشَّط 120 kJ، وللنواتج 10 kJ. ما طاقة تنشيط التفاعل العكسي (Eag) والتغير في المحتوى الحراري (ΔH) للتفاعل الأمامي؟",
-        "zh": "某反应的势能–反应进程图中，反应物的势能为 40 kJ，活化络合物的势能为 120 kJ，生成物的势能为 10 kJ。逆反应的活化能(Ea,逆)和正反应的焓变(ΔH)分别是多少？",
-        "ku": "Di grafîka enerjiya potansiyel–koordînata reaksiyonê ya reaksiyonekê de, enerjiya potansiyel a reaktantan 40 kJ, ya kompleksa aktîvkirî 120 kJ û ya hilberan 10 kJ e. Li gorî vê, enerjiya aktîvasyonê ya reaksiyona paşve (Ea,paş) û guherîna entalpiyê (ΔH) ya reaksiyona pêşve kîjan in?"
+        "tr": "Şekildeki potansiyel enerji diyagramında aynı tepkimenin katalizörsüz ve katalizörlü yolları gösterilmiştir. Katalizörlü yolda geri tepkimenin aktifleşme enerjisi (Eag) ve ileri tepkimenin entalpi değişimi (ΔH) aşağıdakilerin hangisinde birlikte doğru verilmiştir?",
+        "en": "The potential energy diagram shows the uncatalysed and the catalysed paths of the same reaction. Which option gives both the activation energy of the reverse reaction (Ea,rev) on the catalysed path and the enthalpy change (ΔH) of the forward reaction correctly?",
+        "de": "Das Energiediagramm zeigt den Weg derselben Reaktion ohne und mit Katalysator. In welcher Antwort sind die Aktivierungsenergie der Rückreaktion (Ea,rück) auf dem katalysierten Weg und die Reaktionsenthalpie (ΔH) der Hinreaktion beide richtig angegeben?",
+        "fr": "Le diagramme d'énergie potentielle montre le chemin non catalysé et le chemin catalysé d'une même réaction. Quelle proposition donne correctement à la fois l'énergie d'activation de la réaction inverse (Ea,inv) sur le chemin catalysé et la variation d'enthalpie (ΔH) de la réaction directe ?",
+        "ru": "На энергетической диаграмме показаны некаталитический и каталитический пути одной и той же реакции. В каком варианте правильно указаны и энергия активации обратной реакции (Ea,обр) на каталитическом пути, и изменение энтальпии (ΔH) прямой реакции?",
+        "ar": "يبيّن مخطط الطاقة الكامنة مساري التفاعل نفسه دون حفّاز وبوجوده. في أيّ خيار تُعطى طاقة تنشيط التفاعل العكسي (Ea,عكسي) على المسار المحفَّز والتغير في المحتوى الحراري (ΔH) للتفاعل الأمامي كلاهما بشكل صحيح؟",
+        "zh": "势能图中给出了同一反应无催化剂和有催化剂两条途径。下列哪一项同时正确给出了有催化剂途径中逆反应的活化能（Ea,逆）和正反应的焓变（ΔH）？",
+        "ku": "Di diyagrama enerjiya potansiyel de rêya bê katalîzor û rêya bi katalîzor a heman reaksiyonê hatine nîşandan. Di kîjan vebijarkê de hem enerjiya aktîvasyonê ya reaksiyona paşve (Eag) li ser rêya bi katalîzor hem jî guherîna entalpiyê (ΔH) ya reaksiyona pêşve bi hev re rast hatine dayîn?"
       },
       "options": [
         {
-          "tr": "Eag = 80 kJ; ΔH = -30 kJ",
-          "en": "Ea,reverse = 80 kJ; ΔH = -30 kJ",
-          "de": "Ea,rück = 80 kJ; ΔH = -30 kJ",
-          "fr": "Ea,inv = 80 kJ ; ΔH = -30 kJ",
-          "ru": "Ea(обр) = 80 кДж; ΔH = -30 кДж",
-          "ar": "Eag = 80 kJ؛ ΔH = -30 kJ",
-          "zh": "Ea,逆 = 80 kJ；ΔH = -30 kJ",
-          "ku": "Ea,paş = 80 kJ; ΔH = -30 kJ"
+          "tr": "Eag = 70 kJ; ΔH = -30 kJ",
+          "en": "Ea,rev = 70 kJ; ΔH = -30 kJ",
+          "de": "Ea,rück = 70 kJ; ΔH = -30 kJ",
+          "fr": "Ea,inv = 70 kJ; ΔH = -30 kJ",
+          "ru": "Ea,обр = 70 kJ; ΔH = -30 kJ",
+          "ar": "Ea,عكسي = 70 kJ; ΔH = -30 kJ",
+          "zh": "Ea,逆 = 70 kJ; ΔH = -30 kJ",
+          "ku": "Eag = 70 kJ; ΔH = -30 kJ"
         },
         {
           "tr": "Eag = 110 kJ; ΔH = -30 kJ",
-          "en": "Ea,reverse = 110 kJ; ΔH = -30 kJ",
+          "en": "Ea,rev = 110 kJ; ΔH = -30 kJ",
           "de": "Ea,rück = 110 kJ; ΔH = -30 kJ",
-          "fr": "Ea,inv = 110 kJ ; ΔH = -30 kJ",
-          "ru": "Ea(обр) = 110 кДж; ΔH = -30 кДж",
-          "ar": "Eag = 110 kJ؛ ΔH = -30 kJ",
-          "zh": "Ea,逆 = 110 kJ；ΔH = -30 kJ",
-          "ku": "Ea,paş = 110 kJ; ΔH = -30 kJ"
+          "fr": "Ea,inv = 110 kJ; ΔH = -30 kJ",
+          "ru": "Ea,обр = 110 kJ; ΔH = -30 kJ",
+          "ar": "Ea,عكسي = 110 kJ; ΔH = -30 kJ",
+          "zh": "Ea,逆 = 110 kJ; ΔH = -30 kJ",
+          "ku": "Eag = 110 kJ; ΔH = -30 kJ"
         },
         {
-          "tr": "Eag = 110 kJ; ΔH = +30 kJ",
-          "en": "Ea,reverse = 110 kJ; ΔH = +30 kJ",
-          "de": "Ea,rück = 110 kJ; ΔH = +30 kJ",
-          "fr": "Ea,inv = 110 kJ ; ΔH = +30 kJ",
-          "ru": "Ea(обр) = 110 кДж; ΔH = +30 кДж",
-          "ar": "Eag = 110 kJ؛ ΔH = +30 kJ",
-          "zh": "Ea,逆 = 110 kJ；ΔH = +30 kJ",
-          "ku": "Ea,paş = 110 kJ; ΔH = +30 kJ"
+          "tr": "Eag = 70 kJ; ΔH = +30 kJ",
+          "en": "Ea,rev = 70 kJ; ΔH = +30 kJ",
+          "de": "Ea,rück = 70 kJ; ΔH = +30 kJ",
+          "fr": "Ea,inv = 70 kJ; ΔH = +30 kJ",
+          "ru": "Ea,обр = 70 kJ; ΔH = +30 kJ",
+          "ar": "Ea,عكسي = 70 kJ; ΔH = +30 kJ",
+          "zh": "Ea,逆 = 70 kJ; ΔH = +30 kJ",
+          "ku": "Eag = 70 kJ; ΔH = +30 kJ"
         },
         {
-          "tr": "Eag = 120 kJ; ΔH = -30 kJ",
-          "en": "Ea,reverse = 120 kJ; ΔH = -30 kJ",
-          "de": "Ea,rück = 120 kJ; ΔH = -30 kJ",
-          "fr": "Ea,inv = 120 kJ ; ΔH = -30 kJ",
-          "ru": "Ea(обр) = 120 кДж; ΔH = -30 кДж",
-          "ar": "Eag = 120 kJ؛ ΔH = -30 kJ",
-          "zh": "Ea,逆 = 120 kJ；ΔH = -30 kJ",
-          "ku": "Ea,paş = 120 kJ; ΔH = -30 kJ"
+          "tr": "Eag = 40 kJ; ΔH = -30 kJ",
+          "en": "Ea,rev = 40 kJ; ΔH = -30 kJ",
+          "de": "Ea,rück = 40 kJ; ΔH = -30 kJ",
+          "fr": "Ea,inv = 40 kJ; ΔH = -30 kJ",
+          "ru": "Ea,обр = 40 kJ; ΔH = -30 kJ",
+          "ar": "Ea,عكسي = 40 kJ; ΔH = -30 kJ",
+          "zh": "Ea,逆 = 40 kJ; ΔH = -30 kJ",
+          "ku": "Eag = 40 kJ; ΔH = -30 kJ"
         },
         {
-          "tr": "Eag = 130 kJ; ΔH = +30 kJ",
-          "en": "Ea,reverse = 130 kJ; ΔH = +30 kJ",
-          "de": "Ea,rück = 130 kJ; ΔH = +30 kJ",
-          "fr": "Ea,inv = 130 kJ ; ΔH = +30 kJ",
-          "ru": "Ea(обр) = 130 кДж; ΔH = +30 кДж",
-          "ar": "Eag = 130 kJ؛ ΔH = +30 kJ",
-          "zh": "Ea,逆 = 130 kJ；ΔH = +30 kJ",
-          "ku": "Ea,paş = 130 kJ; ΔH = +30 kJ"
+          "tr": "Eag = 90 kJ; ΔH = -30 kJ",
+          "en": "Ea,rev = 90 kJ; ΔH = -30 kJ",
+          "de": "Ea,rück = 90 kJ; ΔH = -30 kJ",
+          "fr": "Ea,inv = 90 kJ; ΔH = -30 kJ",
+          "ru": "Ea,обр = 90 kJ; ΔH = -30 kJ",
+          "ar": "Ea,عكسي = 90 kJ; ΔH = -30 kJ",
+          "zh": "Ea,逆 = 90 kJ; ΔH = -30 kJ",
+          "ku": "Eag = 90 kJ; ΔH = -30 kJ"
         }
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": {
-        "tr": "Eai = 120 - 40 = 80 kJ; Eag = 120 - 10 = 110 kJ. ΔH = PE(ürünler) - PE(girenler) = 10 - 40 = -30 kJ (ekzotermik); kontrol: ΔH = Eai - Eag = 80 - 110 = -30 kJ. 80 kJ ileri tepkimenin aktifleşme enerjisidir; 120 kJ kompleksin kendi enerjisidir, aktifleşme enerjisi değildir; ΔH'ı +30 almak işaret hatasıdır.",
-        "en": "Ea,forward = 120 - 40 = 80 kJ; Ea,reverse = 120 - 10 = 110 kJ. ΔH = PE(products) - PE(reactants) = 10 - 40 = -30 kJ (exothermic); check: ΔH = Ea,forward - Ea,reverse = 80 - 110 = -30 kJ. 80 kJ is the forward activation energy; 120 kJ is the energy of the complex itself, not an activation energy; taking ΔH as +30 is a sign error.",
-        "de": "Ea,hin = 120 - 40 = 80 kJ; Ea,rück = 120 - 10 = 110 kJ. ΔH = PE(Produkte) - PE(Edukte) = 10 - 40 = -30 kJ (exotherm); Probe: ΔH = Ea,hin - Ea,rück = 80 - 110 = -30 kJ. 80 kJ ist die Aktivierungsenergie der Hinreaktion; 120 kJ ist die Energie des Komplexes selbst, keine Aktivierungsenergie; ΔH = +30 ist ein Vorzeichenfehler.",
-        "fr": "Ea,dir = 120 - 40 = 80 kJ ; Ea,inv = 120 - 10 = 110 kJ. ΔH = EP(produits) - EP(réactifs) = 10 - 40 = -30 kJ (exothermique) ; vérification : ΔH = Ea,dir - Ea,inv = 80 - 110 = -30 kJ. 80 kJ est l'énergie d'activation directe ; 120 kJ est l'énergie du complexe lui-même, pas une énergie d'activation ; prendre ΔH = +30 est une erreur de signe.",
-        "ru": "Ea(пр) = 120 - 40 = 80 кДж; Ea(обр) = 120 - 10 = 110 кДж. ΔH = Eп(продуктов) - Eп(реагентов) = 10 - 40 = -30 кДж (реакция экзотермическая); проверка: ΔH = Ea(пр) - Ea(обр) = 80 - 110 = -30 кДж. 80 кДж — энергия активации прямой реакции; 120 кДж — энергия самого комплекса, а не энергия активации; ΔH = +30 кДж — ошибка в знаке.",
-        "ar": "Eai = 120 - 40 = 80 kJ؛ Eag = 120 - 10 = 110 kJ. ΔH = طاقة النواتج - طاقة المتفاعلات = 10 - 40 = -30 kJ (طارد للحرارة)؛ وللتحقق: ΔH = Eai - Eag = 80 - 110 = -30 kJ. القيمة 80 kJ هي طاقة تنشيط التفاعل الأمامي، و120 kJ طاقة المعقد نفسه لا طاقة تنشيط، واعتبار ΔH = +30 خطأ في الإشارة.",
-        "zh": "Ea,正 = 120 - 40 = 80 kJ；Ea,逆 = 120 - 10 = 110 kJ。ΔH = 生成物势能 - 反应物势能 = 10 - 40 = -30 kJ（放热）；验证：ΔH = Ea,正 - Ea,逆 = 80 - 110 = -30 kJ。80 kJ是正反应活化能；120 kJ是活化络合物本身的能量，不是活化能；把ΔH取为+30是符号错误。",
-        "ku": "Ea,pêş = 120 - 40 = 80 kJ; Ea,paş = 120 - 10 = 110 kJ. ΔH = EP(hilber) - EP(reaktant) = 10 - 40 = -30 kJ (ekzotermîk); kontrol: ΔH = Ea,pêş - Ea,paş = 80 - 110 = -30 kJ. 80 kJ enerjiya aktîvasyonê ya reaksiyona pêşve ye; 120 kJ enerjiya kompleksê bi xwe ye, ne enerjiya aktîvasyonê ye; girtina ΔH wekî +30 şaşiya nîşanê ye."
+        "tr": "Grafikten girenlerin potansiyel enerjisi 50 kJ, ürünlerinki 20 kJ, katalizörsüz yolun tepe noktası 130 kJ, katalizörlü yolunki 90 kJ okunur. ΔH = 20 - 50 = -30 kJ'dür ve katalizör ΔH'ı değiştirmez. Katalizörlü yolda Eai = 90 - 50 = 40 kJ, Eag = 90 - 20 = 70 kJ'dür. 110 kJ katalizörsüz yolun Eag değeridir (130 - 20); 40 kJ katalizörlü ileri aktifleşme enerjisidir; 90 kJ tepe noktasının kendi enerjisidir, aktifleşme enerjisi değildir; ΔH'ı +30 almak işaret hatasıdır.",
+        "en": "From the graph: reactants 50 kJ, products 20 kJ, peak of the uncatalysed path 130 kJ, peak of the catalysed path 90 kJ. ΔH = 20 - 50 = -30 kJ, and a catalyst does not change ΔH. On the catalysed path Ea,fwd = 90 - 50 = 40 kJ and Ea,rev = 90 - 20 = 70 kJ. 110 kJ is Ea,rev of the uncatalysed path (130 - 20); 40 kJ is the catalysed forward activation energy; 90 kJ is the energy of the peak itself, not an activation energy; +30 kJ is a sign error.",
+        "de": "Aus dem Diagramm: Edukte 50 kJ, Produkte 20 kJ, Maximum ohne Katalysator 130 kJ, Maximum mit Katalysator 90 kJ. ΔH = 20 - 50 = -30 kJ; ein Katalysator ändert ΔH nicht. Auf dem katalysierten Weg ist Ea,hin = 90 - 50 = 40 kJ und Ea,rück = 90 - 20 = 70 kJ. 110 kJ ist Ea,rück ohne Katalysator (130 - 20); 40 kJ ist die katalysierte Aktivierungsenergie der Hinreaktion; 90 kJ ist die Energie des Maximums selbst, keine Aktivierungsenergie; +30 kJ ist ein Vorzeichenfehler.",
+        "fr": "Lecture du graphique : réactifs 50 kJ, produits 20 kJ, sommet du chemin non catalysé 130 kJ, sommet du chemin catalysé 90 kJ. ΔH = 20 - 50 = -30 kJ, et un catalyseur ne modifie pas ΔH. Sur le chemin catalysé, Ea,dir = 90 - 50 = 40 kJ et Ea,inv = 90 - 20 = 70 kJ. 110 kJ est Ea,inv sans catalyseur (130 - 20) ; 40 kJ est l'énergie d'activation directe catalysée ; 90 kJ est l'énergie du sommet lui-même, pas une énergie d'activation ; +30 kJ est une erreur de signe.",
+        "ru": "По графику: реагенты 50 кДж, продукты 20 кДж, вершина некаталитического пути 130 кДж, каталитического — 90 кДж. ΔH = 20 - 50 = -30 кДж, катализатор ΔH не меняет. На каталитическом пути Ea,пр = 90 - 50 = 40 кДж, Ea,обр = 90 - 20 = 70 кДж. 110 кДж — Ea,обр без катализатора (130 - 20); 40 кДж — энергия активации прямой реакции с катализатором; 90 кДж — энергия самой вершины, а не энергия активации; +30 кДж — ошибка в знаке.",
+        "ar": "من الرسم: طاقة المتفاعلات 50 kJ، والنواتج 20 kJ، وقمة المسار غير المحفَّز 130 kJ، وقمة المسار المحفَّز 90 kJ. ΔH = 20 - 50 = -30 kJ، والحفّاز لا يغيّر ΔH. في المسار المحفَّز: Ea,أمامي = 90 - 50 = 40 kJ وEa,عكسي = 90 - 20 = 70 kJ. القيمة 110 kJ هي Ea,عكسي دون حفّاز (130 - 20)، و40 kJ طاقة التنشيط الأمامية بوجود الحفّاز، و90 kJ طاقة القمة نفسها وليست طاقة تنشيط، و+30 kJ خطأ في الإشارة.",
+        "zh": "由图读出：反应物 50 kJ，生成物 20 kJ，无催化剂途径峰值 130 kJ，有催化剂途径峰值 90 kJ。ΔH = 20 - 50 = -30 kJ，催化剂不改变 ΔH。有催化剂途径中 Ea,正 = 90 - 50 = 40 kJ，Ea,逆 = 90 - 20 = 70 kJ。110 kJ 是无催化剂时的 Ea,逆（130 - 20）；40 kJ 是有催化剂时正反应的活化能；90 kJ 是峰值本身的能量而不是活化能；+30 kJ 是符号错误。",
+        "ku": "Ji grafîkê: reaktant 50 kJ, hilber 20 kJ, lûtkeya rêya bê katalîzor 130 kJ, ya rêya bi katalîzor 90 kJ. ΔH = 20 - 50 = -30 kJ e û katalîzor ΔH naguherîne. Li ser rêya bi katalîzor Eai = 90 - 50 = 40 kJ û Eag = 90 - 20 = 70 kJ e. 110 kJ Eag ya rêya bê katalîzor e (130 - 20); 40 kJ enerjiya aktîvasyonê ya pêşve ya bi katalîzor e; 90 kJ enerjiya lûtkeyê bi xwe ye, ne enerjiya aktîvasyonê ye; +30 kJ xeletiya nîşanê ye."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Tepkime koordinatı",
+          "en": "Reaction coordinate",
+          "de": "Reaktionskoordinate",
+          "fr": "Coordonnée de réaction",
+          "ru": "Координата реакции",
+          "ar": "إحداثي التفاعل",
+          "zh": "反应进程",
+          "ku": "Koordînata reaksiyonê"
+        },
+        "yLabel": {
+          "tr": "Potansiyel enerji (kJ)",
+          "en": "Potential energy (kJ)",
+          "de": "Potenzielle Energie (kJ)",
+          "fr": "Énergie potentielle (kJ)",
+          "ru": "Потенциальная энергия (кДж)",
+          "ar": "الطاقة الكامنة (kJ)",
+          "zh": "势能 (kJ)",
+          "ku": "Enerjiya potansiyel (kJ)"
+        },
+        "xMax": 10,
+        "yMax": 150,
+        "yTicks": [
+          20,
+          50,
+          90,
+          130
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                50
+              ],
+              [
+                1.5,
+                50
+              ],
+              [
+                2.5,
+                60
+              ],
+              [
+                3.5,
+                95
+              ],
+              [
+                4.5,
+                125
+              ],
+              [
+                5,
+                130
+              ],
+              [
+                5.5,
+                125
+              ],
+              [
+                6.5,
+                85
+              ],
+              [
+                7.5,
+                40
+              ],
+              [
+                8.5,
+                20
+              ],
+              [
+                10,
+                20
+              ]
+            ]
+          },
+          {
+            "points": [
+              [
+                0,
+                50
+              ],
+              [
+                1.5,
+                50
+              ],
+              [
+                2.5,
+                55
+              ],
+              [
+                3.5,
+                75
+              ],
+              [
+                4.5,
+                88
+              ],
+              [
+                5,
+                90
+              ],
+              [
+                5.5,
+                88
+              ],
+              [
+                6.5,
+                65
+              ],
+              [
+                7.5,
+                32
+              ],
+              [
+                8.5,
+                20
+              ],
+              [
+                10,
+                20
+              ]
+            ],
+            "dashed": true,
+            "tone": 1
+          }
+        ],
+        "markers": [
+          {
+            "x": 5,
+            "y": 130,
+            "label": "",
+            "guides": true
+          },
+          {
+            "x": 5,
+            "y": 90,
+            "label": "",
+            "guides": true
+          }
+        ],
+        "caption": {
+          "tr": "Düz çizgi: katalizörsüz yol; kesikli çizgi: katalizörlü yol",
+          "en": "Solid line: uncatalysed path; dashed line: catalysed path",
+          "de": "Durchgezogene Linie: ohne Katalysator; gestrichelte Linie: mit Katalysator",
+          "fr": "Trait plein : sans catalyseur ; pointillés : avec catalyseur",
+          "ru": "Сплошная линия: без катализатора; пунктир: с катализатором",
+          "ar": "الخط المتصل: المسار دون حفّاز؛ الخط المتقطع: المسار بوجود حفّاز",
+          "zh": "实线：无催化剂途径；虚线：有催化剂途径",
+          "ku": "Xeta domdar: rêya bê katalîzor; xeta xalxalî: rêya bi katalîzor"
+        }
       }
     },
     {
       "id": "u17-twin07",
       "stem": {
-        "tr": "2 litrelik sabit hacimli bir kapta gerçekleşen 2N2O5(g) → 4NO2(g) + O2(g) tepkimesinde N2O5'in mol sayısı 40 saniyede 0,8 molden 0,4 mole düşüyor. Buna göre bu zaman aralığında NO2'nin ortalama oluşma hızı kaç mol/(L·s)'dir?",
+        "tr": "2 litrelik sabit hacimli bir kapta gerçekleşen 2N2O5(g) → 4NO2(g) + O2(g) tepkimesinde N2O5'in mol sayısı 40 saniyede 0,8 molden 0,4 mole düşüyor. Bu zaman aralığında NO2'nin ortalama oluşma hızı kaç mol/(L·s)'dir?",
         "en": "In the reaction 2N2O5(g) → 4NO2(g) + O2(g) taking place in a 2-litre rigid container, the amount of N2O5 falls from 0.8 mol to 0.4 mol in 40 seconds. What is the average rate of formation of NO2 in this interval, in mol/(L·s)?",
         "de": "Bei der Reaktion 2N2O5(g) → 4NO2(g) + O2(g) in einem starren 2-Liter-Gefäß sinkt die Stoffmenge von N2O5 in 40 Sekunden von 0,8 mol auf 0,4 mol. Wie groß ist die mittlere Bildungsgeschwindigkeit von NO2 in diesem Zeitraum in mol/(L·s)?",
         "fr": "Dans la réaction 2N2O5(g) → 4NO2(g) + O2(g) se déroulant dans un récipient rigide de 2 litres, la quantité de N2O5 passe de 0,8 mol à 0,4 mol en 40 secondes. Quelle est la vitesse moyenne de formation de NO2 sur cet intervalle, en mol/(L·s) ?",
         "ru": "В реакции 2N2O5(г) → 4NO2(г) + O2(г), протекающей в сосуде постоянного объёма 2 л, количество N2O5 за 40 секунд уменьшается с 0,8 моль до 0,4 моль. Какова средняя скорость образования NO2 за этот промежуток времени, моль/(л·с)?",
         "ar": "في التفاعل 2N2O5(g) → 4NO2(g) + O2(g) الذي يجري في وعاء ثابت الحجم سعته 2 L، تنخفض كمية N2O5 من 0.8 mol إلى 0.4 mol خلال 40 ثانية. ما متوسط سرعة تكوّن NO2 في هذه الفترة بوحدة mol/(L·s)؟",
         "zh": "在容积为 2 L 的恒容容器中进行反应 2N2O5(g) → 4NO2(g) + O2(g)，40 s 内 N2O5 的物质的量由 0.8 mol 降至 0.4 mol。这段时间内 NO2 的平均生成速率是多少 mol/(L·s)？",
-        "ku": "Di firaxeke 2 lîtreyî ya bi qebareya sabît de reaksiyona 2N2O5(g) → 4NO2(g) + O2(g) pêk tê û hejmara molên N2O5 di 40 saniyeyan de ji 0,8 molî dadikeve 0,4 molî. Li gorî vê, di vê navberana demê de leza navîn a çêbûna NO2 çend mol/(L·s) e?"
+        "ku": "Di firaxeke 2 lîtreyî ya bi qebareya sabît de reaksiyona 2N2O5(g) → 4NO2(g) + O2(g) pêk tê û hejmara molên N2O5 di 40 saniyeyan de ji 0,8 molî dadikeve 0,4 molî. Di vê navberana demê de leza navîn a çêbûna NO2 çend mol/(L·s) e?"
       },
       "options": [
         {
@@ -1600,14 +2061,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin08",
       "stem": {
-        "tr": "Gaz fazında gerçekleşen ve hız bağıntısı r = k[X]^2[Y] olan bir tepkimenin bulunduğu kabın hacmi, sıcaklık sabit tutularak yarıya indiriliyor. Buna göre tepkimenin başlangıç hızı kaç katına çıkar?",
+        "tr": "Gaz fazında gerçekleşen ve hız bağıntısı r = k[X]^2[Y] olan bir tepkimenin bulunduğu kabın hacmi, sıcaklık sabit tutularak yarıya indiriliyor. Tepkimenin başlangıç hızı kaç katına çıkar?",
         "en": "For a gas-phase reaction with the rate law r = k[X]^2[Y], the volume of the container is halved at constant temperature. By what factor does the initial rate increase?",
         "de": "Bei einer Gasphasenreaktion mit dem Geschwindigkeitsgesetz r = k[X]^2[Y] wird das Gefäßvolumen bei konstanter Temperatur halbiert. Um welchen Faktor steigt die Anfangsgeschwindigkeit?",
         "fr": "Pour une réaction en phase gazeuse de loi de vitesse r = k[X]^2[Y], on divise par deux le volume du récipient à température constante. Par quel facteur la vitesse initiale est-elle multipliée ?",
         "ru": "Для газофазной реакции с уравнением скорости r = k[X]^2[Y] объём сосуда при постоянной температуре уменьшают вдвое. Во сколько раз возрастёт начальная скорость?",
         "ar": "لتفاعل في الطور الغازي قانون سرعته r = k[X]^2[Y]، يُخفَّض حجم الوعاء إلى النصف مع ثبات درجة الحرارة. فكم ضعفًا تصبح السرعة الابتدائية للتفاعل؟",
         "zh": "对于速率方程为 r = k[X]^2[Y] 的气相反应，在恒温下将容器体积减半。初始速率变为原来的多少倍？",
-        "ku": "Qebareya firaxa reaksiyoneke di fazê gaz de ku hevkêşeya wê ya lezê r = k[X]^2[Y] e, di germahiya sabît de nîv tê kirin. Li gorî vê, leza destpêkê ya reaksiyonê çend qat dibe?"
+        "ku": "Qebareya firaxa reaksiyoneke di fazê gaz de ku hevkêşeya wê ya lezê r = k[X]^2[Y] e, di germahiya sabît de nîv tê kirin. Leza destpêkê ya reaksiyonê çend qat dibe?"
       },
       "options": [
         {
@@ -1828,14 +2289,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin11",
       "stem": {
-        "tr": "İki basamakta gerçekleşen bir tepkimenin potansiyel enerji grafiğinde iki tepe noktası bulunmaktadır. Grafiğe göre 1. basamağın aktifleşme enerjisi 90 kJ, 2. basamağın aktifleşme enerjisi 30 kJ'dir. Buna göre, I. Tepkime sırasında iki farklı aktifleşmiş kompleks oluşur. II. Tepkimenin hızını 2. basamak belirler. III. Ara ürünün potansiyel enerjisi iki tepe noktası arasındaki çukurla gösterilir. yargılarından hangileri doğrudur?",
-        "en": "The potential energy diagram of a two-step reaction has two peaks. According to the diagram, the activation energy of step 1 is 90 kJ and that of step 2 is 30 kJ. Accordingly, which of the following statements are correct? I. Two different activated complexes form during the reaction. II. Step 2 determines the rate of the reaction. III. The potential energy of the intermediate is shown by the valley between the two peaks.",
-        "de": "Das Energiediagramm einer zweistufigen Reaktion zeigt zwei Maxima. Laut Diagramm beträgt die Aktivierungsenergie von Schritt 1 90 kJ und die von Schritt 2 30 kJ. Welche Aussagen sind richtig? I. Während der Reaktion entstehen zwei verschiedene aktivierte Komplexe. II. Schritt 2 bestimmt die Reaktionsgeschwindigkeit. III. Die potenzielle Energie des Zwischenprodukts entspricht dem Tal zwischen den beiden Maxima.",
-        "fr": "Le diagramme d'énergie potentielle d'une réaction en deux étapes présente deux sommets. D'après le diagramme, l'énergie d'activation de l'étape 1 vaut 90 kJ et celle de l'étape 2 vaut 30 kJ. Lesquelles des affirmations suivantes sont correctes ? I. Deux complexes activés différents se forment au cours de la réaction. II. L'étape 2 détermine la vitesse de la réaction. III. L'énergie potentielle de l'intermédiaire correspond au creux situé entre les deux sommets.",
-        "ru": "На диаграмме потенциальной энергии двухстадийной реакции два максимума. Энергия активации стадии 1 равна 90 кДж, стадии 2 — 30 кДж. Какие из утверждений верны? I. В ходе реакции образуются два разных активированных комплекса. II. Скорость реакции определяет стадия 2. III. Потенциальной энергии промежуточного вещества соответствует впадина между двумя максимумами.",
-        "ar": "يُظهر مخطط الطاقة الكامنة لتفاعل يحدث في خطوتين قمتين. وفق المخطط تبلغ طاقة تنشيط الخطوة 1 قيمة 90 kJ وطاقة تنشيط الخطوة 2 قيمة 30 kJ. أيّ العبارات التالية صحيحة؟ I. يتكوّن أثناء التفاعل معقدان منشَّطان مختلفان. II. الخطوة 2 هي التي تحدد سرعة التفاعل. III. تُمثَّل الطاقة الكامنة للمركب الوسيط بالقاع الواقع بين القمتين.",
-        "zh": "某两步反应的势能图上有两个峰。由图可知，第1步的活化能为 90 kJ，第2步的活化能为 30 kJ。有下列说法：I. 反应过程中形成两种不同的活化络合物。II. 反应速率由第2步决定。III. 中间产物的势能由两个峰之间的谷表示。其中正确的是哪些？",
-        "ku": "Di grafîka enerjiya potansiyel a reaksiyoneke ku di du gavan de pêk tê de du lûtke hene. Li gorî grafîkê, enerjiya aktîvasyonê ya gava 1. 90 kJ û ya gava 2. 30 kJ e. Li gorî vê, kîjan ji van gotinan rast in? I. Di dema reaksiyonê de du kompleksên aktîvkirî yên cuda çêdibin. II. Leza reaksiyonê gava 2. diyar dike. III. Enerjiya potansiyel a hilbera navber bi çala di navbera her du lûtkeyan de tê nîşandan."
+        "tr": "Şekildeki potansiyel enerji diyagramı iki basamakta gerçekleşen bir tepkimeye aittir. I. Tepkimenin hızını belirleyen basamağın aktifleşme enerjisi 80 kJ'dir. II. Net tepkimenin entalpi değişimi ΔH = -20 kJ'dir. III. Birinci basamak ekzotermiktir. yargılarından hangileri doğrudur?",
+        "en": "The potential energy diagram belongs to a reaction that takes place in two steps. I. The activation energy of the rate-determining step is 80 kJ. II. The enthalpy change of the overall reaction is ΔH = -20 kJ. III. The first step is exothermic. Which of these statements are correct?",
+        "de": "Das Energiediagramm gehört zu einer Reaktion, die in zwei Schritten abläuft. I. Die Aktivierungsenergie des geschwindigkeitsbestimmenden Schritts beträgt 80 kJ. II. Die Reaktionsenthalpie der Gesamtreaktion beträgt ΔH = -20 kJ. III. Der erste Schritt ist exotherm. Welche Aussagen sind richtig?",
+        "fr": "Le diagramme d'énergie potentielle correspond à une réaction qui se déroule en deux étapes. I. L'énergie d'activation de l'étape cinétiquement déterminante vaut 80 kJ. II. La variation d'enthalpie de la réaction globale est ΔH = -20 kJ. III. La première étape est exothermique. Lesquelles de ces affirmations sont exactes ?",
+        "ru": "Энергетическая диаграмма относится к реакции, протекающей в две стадии. I. Энергия активации лимитирующей стадии равна 80 кДж. II. Изменение энтальпии суммарной реакции ΔH = -20 кДж. III. Первая стадия экзотермическая. Какие утверждения верны?",
+        "ar": "يعود مخطط الطاقة الكامنة إلى تفاعل يجري على خطوتين. I. طاقة تنشيط الخطوة المحددة للسرعة 80 kJ. II. التغير في المحتوى الحراري للتفاعل الكلي ΔH = -20 kJ. III. الخطوة الأولى طاردة للحرارة. أيّ هذه العبارات صحيحة؟",
+        "zh": "势能图属于一个分两步进行的反应。I. 决速步骤的活化能为 80 kJ。II. 总反应的焓变 ΔH = -20 kJ。III. 第一步是放热的。以上说法中哪些正确？",
+        "ku": "Diyagrama enerjiya potansiyel a reaksiyoneke ku di du gavan de pêk tê ye. I. Enerjiya aktîvasyonê ya gava ku lezê diyar dike 80 kJ e. II. Guherîna entalpiyê ya reaksiyona net ΔH = -20 kJ e. III. Gava yekem ekzotermîk e. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1859,6 +2320,16 @@ export const unit17: ChemistryUnitSeedData = {
           "ku": "Tenê II"
         },
         {
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
+        },
+        {
           "tr": "I ve III",
           "en": "I and III",
           "de": "I und III",
@@ -1867,16 +2338,6 @@ export const unit17: ChemistryUnitSeedData = {
           "ar": "I و III",
           "zh": "I 和 III",
           "ku": "I û III"
-        },
-        {
-          "tr": "II ve III",
-          "en": "II and III",
-          "de": "II und III",
-          "fr": "II et III",
-          "ru": "II и III",
-          "ar": "II و III",
-          "zh": "II 和 III",
-          "ku": "II û III"
         },
         {
           "tr": "I, II ve III",
@@ -1891,27 +2352,148 @@ export const unit17: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "I doğru: her tepe bir basamağın aktifleşmiş kompleksidir; iki tepe, iki kompleks demektir. II yanlış: aktifleşme enerjisi büyük olan (90 kJ) 1. basamak yavaştır ve hızı o belirler. III doğru: ara ürün 1. basamakta oluşup 2. basamakta harcanır; iki tepe arasındaki çukurda yer alır. Ara ürünü en yüksek enerjili tür sanmak yaygın bir yanılgıdır; en yüksek noktalar aktifleşmiş komplekslerdir.",
-        "en": "I is correct: each peak is the activated complex of one step; two peaks mean two complexes. II is wrong: step 1, with the larger activation energy (90 kJ), is the slow step and determines the rate. III is correct: the intermediate forms in step 1 and is consumed in step 2; it sits in the valley between the peaks. Thinking the intermediate is the highest-energy species is a common misconception; the highest points are the activated complexes.",
-        "de": "I ist richtig: Jedes Maximum ist der aktivierte Komplex eines Schritts; zwei Maxima bedeuten zwei Komplexe. II ist falsch: Schritt 1 mit der größeren Aktivierungsenergie (90 kJ) ist langsam und bestimmt die Geschwindigkeit. III ist richtig: Das Zwischenprodukt entsteht in Schritt 1 und wird in Schritt 2 verbraucht; es liegt im Tal zwischen den Maxima. Das Zwischenprodukt für die energiereichste Spezies zu halten ist ein verbreiteter Irrtum; die höchsten Punkte sind die aktivierten Komplexe.",
-        "fr": "I est correcte : chaque sommet est le complexe activé d'une étape ; deux sommets, deux complexes. II est fausse : l'étape 1, dont l'énergie d'activation est la plus grande (90 kJ), est lente et détermine la vitesse. III est correcte : l'intermédiaire se forme à l'étape 1 et est consommé à l'étape 2 ; il se situe dans le creux entre les sommets. Croire que l'intermédiaire est l'espèce la plus énergétique est une idée fausse courante ; les points les plus hauts sont les complexes activés.",
-        "ru": "I верно: каждый максимум — активированный комплекс одной стадии; два максимума — два комплекса. II неверно: стадия 1 с большей энергией активации (90 кДж) медленная, и скорость определяет именно она. III верно: промежуточное вещество образуется на стадии 1 и расходуется на стадии 2; ему соответствует впадина между максимумами. Считать промежуточное вещество частицей с наибольшей энергией — частая ошибка: высшие точки — это активированные комплексы.",
-        "ar": "I صحيحة: كل قمة هي المعقد المنشَّط لخطوة؛ قمتان تعنيان معقدين. II خاطئة: الخطوة 1 ذات طاقة التنشيط الأكبر (90 kJ) هي البطيئة وهي التي تحدد السرعة. III صحيحة: يتكوّن المركب الوسيط في الخطوة 1 ويُستهلك في الخطوة 2، ويقع في القاع بين القمتين. الاعتقاد بأن المركب الوسيط هو الأعلى طاقة خطأ شائع؛ فأعلى النقاط هي المعقدات المنشَّطة.",
-        "zh": "I正确：每个峰是某一步的活化络合物，两个峰即两种络合物。II错误：活化能较大(90 kJ)的第1步是慢步骤，决定反应速率。III正确：中间产物在第1步生成、第2步消耗，位于两峰之间的谷中。认为中间产物是能量最高的物种是常见误解；最高点是活化络合物。",
-        "ku": "I rast e: her lûtke kompleksa aktîvkirî ya gavekê ye; du lûtke tê wateya du kompleksan. II şaş e: gava 1. ya ku enerjiya wê ya aktîvasyonê mezintir e (90 kJ) hêdî ye û lezê ew diyar dike. III rast e: hilbera navber di gava 1. de çêdibe û di gava 2. de tê xerckirin; di çala navbera her du lûtkeyan de cih digire. Hesibandina hilbera navber wekî cureyê bi enerjiya herî bilind şaşiyeke berbelav e; xalên herî bilind kompleksên aktîvkirî ne."
+        "tr": "Grafikten girenler 20 kJ, 1. tepe 100 kJ, ara ürün (iki tepe arasındaki çukur) 50 kJ, 2. tepe 70 kJ, ürünler 0 kJ okunur. 1. basamağın aktifleşme enerjisi 100 - 20 = 80 kJ, 2. basamağınki 70 - 50 = 20 kJ'dir; aktifleşme enerjisi büyük olan 1. basamak yavaştır ve hızı belirler (I doğru). ΔH = 0 - 20 = -20 kJ (II doğru). 1. basamakta girenlerden (20 kJ) ara ürüne (50 kJ) çıkılır; ΔH1 = +30 kJ olduğundan bu basamak endotermiktir (III yanlış). Tepe noktasının değerini (100 kJ) aktifleşme enerjisi sanmak tipik hatadır.",
+        "en": "From the graph: reactants 20 kJ, first peak 100 kJ, intermediate (the valley between the peaks) 50 kJ, second peak 70 kJ, products 0 kJ. Step 1 has Ea = 100 - 20 = 80 kJ and step 2 has Ea = 70 - 50 = 20 kJ; step 1, with the larger activation energy, is slow and determines the rate (I correct). ΔH = 0 - 20 = -20 kJ (II correct). Step 1 goes from the reactants (20 kJ) up to the intermediate (50 kJ); ΔH1 = +30 kJ, so this step is endothermic (III incorrect). Taking the peak value (100 kJ) as the activation energy is a typical mistake.",
+        "de": "Aus dem Diagramm: Edukte 20 kJ, erstes Maximum 100 kJ, Zwischenprodukt (Mulde zwischen den Maxima) 50 kJ, zweites Maximum 70 kJ, Produkte 0 kJ. Schritt 1 hat Ea = 100 - 20 = 80 kJ, Schritt 2 hat Ea = 70 - 50 = 20 kJ; der langsame Schritt 1 mit der größeren Aktivierungsenergie bestimmt die Geschwindigkeit (I richtig). ΔH = 0 - 20 = -20 kJ (II richtig). Schritt 1 führt von den Edukten (20 kJ) zum Zwischenprodukt (50 kJ); ΔH1 = +30 kJ, dieser Schritt ist also endotherm (III falsch). Den Wert des Maximums (100 kJ) für die Aktivierungsenergie zu halten, ist ein typischer Fehler.",
+        "fr": "Lecture du graphique : réactifs 20 kJ, premier sommet 100 kJ, intermédiaire (creux entre les sommets) 50 kJ, second sommet 70 kJ, produits 0 kJ. L'étape 1 a Ea = 100 - 20 = 80 kJ et l'étape 2 a Ea = 70 - 50 = 20 kJ ; l'étape 1, d'énergie d'activation plus grande, est lente et impose la vitesse (I exacte). ΔH = 0 - 20 = -20 kJ (II exacte). L'étape 1 mène des réactifs (20 kJ) à l'intermédiaire (50 kJ) ; ΔH1 = +30 kJ, cette étape est donc endothermique (III fausse). Prendre la valeur du sommet (100 kJ) pour l'énergie d'activation est une erreur classique.",
+        "ru": "По графику: реагенты 20 кДж, первая вершина 100 кДж, промежуточный продукт (впадина между вершинами) 50 кДж, вторая вершина 70 кДж, продукты 0 кДж. Для стадии 1 Ea = 100 - 20 = 80 кДж, для стадии 2 Ea = 70 - 50 = 20 кДж; стадия 1 с большей энергией активации медленная и определяет скорость (I верно). ΔH = 0 - 20 = -20 кДж (II верно). На стадии 1 система переходит от реагентов (20 кДж) к промежуточному продукту (50 кДж); ΔH1 = +30 кДж, т. е. эта стадия эндотермическая (III неверно). Принимать значение вершины (100 кДж) за энергию активации — типичная ошибка.",
+        "ar": "من الرسم: المتفاعلات 20 kJ، والقمة الأولى 100 kJ، والناتج الوسيط (القاع بين القمتين) 50 kJ، والقمة الثانية 70 kJ، والنواتج 0 kJ. طاقة تنشيط الخطوة 1 هي 100 - 20 = 80 kJ، والخطوة 2 هي 70 - 50 = 20 kJ؛ فالخطوة 1 ذات طاقة التنشيط الأكبر بطيئة وتحدد السرعة (I صحيحة). ΔH = 0 - 20 = -20 kJ (II صحيحة). في الخطوة 1 ننتقل من المتفاعلات (20 kJ) إلى الناتج الوسيط (50 kJ)؛ ΔH1 = +30 kJ فهي ماصة للحرارة (III خاطئة). اعتبار قيمة القمة (100 kJ) طاقةَ التنشيط خطأ شائع.",
+        "zh": "由图读出：反应物 20 kJ，第一个峰 100 kJ，中间体（两峰之间的谷）50 kJ，第二个峰 70 kJ，生成物 0 kJ。第一步 Ea = 100 - 20 = 80 kJ，第二步 Ea = 70 - 50 = 20 kJ；活化能较大的第一步是慢反应，决定总速率（I 正确）。ΔH = 0 - 20 = -20 kJ（II 正确）。第一步由反应物（20 kJ）升到中间体（50 kJ），ΔH1 = +30 kJ，是吸热的（III 错误）。把峰值（100 kJ）当成活化能是常见错误。",
+        "ku": "Ji grafîkê: reaktant 20 kJ, lûtkeya yekem 100 kJ, hilbera navber (çala di navbera lûtkeyan de) 50 kJ, lûtkeya duyem 70 kJ, hilber 0 kJ. Enerjiya aktîvasyonê ya gava 1. 100 - 20 = 80 kJ, ya gava 2. 70 - 50 = 20 kJ e; gava 1. ya ku enerjiya wê ya aktîvasyonê mezintir e hêdî ye û lezê diyar dike (I rast e). ΔH = 0 - 20 = -20 kJ (II rast e). Di gava 1. de ji reaktantan (20 kJ) ber bi hilbera navber (50 kJ) ve tê çûn; ΔH1 = +30 kJ e, ji ber vê yekê ev gav endotermîk e (III şaş e). Nirxa lûtkeyê (100 kJ) wekî enerjiya aktîvasyonê hesibandin xeletiyeke berbelav e."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Tepkime koordinatı",
+          "en": "Reaction coordinate",
+          "de": "Reaktionskoordinate",
+          "fr": "Coordonnée de réaction",
+          "ru": "Координата реакции",
+          "ar": "إحداثي التفاعل",
+          "zh": "反应进程",
+          "ku": "Koordînata reaksiyonê"
+        },
+        "yLabel": {
+          "tr": "Potansiyel enerji (kJ)",
+          "en": "Potential energy (kJ)",
+          "de": "Potenzielle Energie (kJ)",
+          "fr": "Énergie potentielle (kJ)",
+          "ru": "Потенциальная энергия (кДж)",
+          "ar": "الطاقة الكامنة (kJ)",
+          "zh": "势能 (kJ)",
+          "ku": "Enerjiya potansiyel (kJ)"
+        },
+        "xMax": 10,
+        "yMax": 120,
+        "yTicks": [
+          20,
+          50,
+          70,
+          100
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                20
+              ],
+              [
+                1,
+                20
+              ],
+              [
+                1.8,
+                38
+              ],
+              [
+                2.5,
+                82
+              ],
+              [
+                3,
+                100
+              ],
+              [
+                3.5,
+                82
+              ],
+              [
+                4.2,
+                55
+              ],
+              [
+                4.8,
+                50
+              ],
+              [
+                5.4,
+                54
+              ],
+              [
+                6,
+                66
+              ],
+              [
+                6.4,
+                70
+              ],
+              [
+                6.8,
+                66
+              ],
+              [
+                7.5,
+                38
+              ],
+              [
+                8.3,
+                6
+              ],
+              [
+                9,
+                0
+              ],
+              [
+                10,
+                0
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 3,
+            "y": 100,
+            "label": "",
+            "guides": true
+          },
+          {
+            "x": 4.8,
+            "y": 50,
+            "label": "",
+            "guides": true
+          },
+          {
+            "x": 6.4,
+            "y": 70,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
       "id": "u17-twin12",
       "stem": {
-        "tr": "İleri aktifleşme enerjisi (Eai) 60 kJ ve entalpi değişimi ΔH = +20 kJ olan bir tepkimeye uygun bir katalizör eklendiğinde ileri aktifleşme enerjisi 35 kJ'ye düşüyor. Buna göre katalizörlü ortamda geri tepkimenin aktifleşme enerjisi (Eag) kaç kJ'dir?",
+        "tr": "İleri aktifleşme enerjisi (Eai) 60 kJ ve entalpi değişimi ΔH = +20 kJ olan bir tepkimeye uygun bir katalizör eklendiğinde ileri aktifleşme enerjisi 35 kJ'ye düşüyor. Katalizörlü ortamda geri tepkimenin aktifleşme enerjisi (Eag) kaç kJ'dir?",
         "en": "A reaction has a forward activation energy of 60 kJ and ΔH = +20 kJ. When a suitable catalyst is added, the forward activation energy falls to 35 kJ. What is the activation energy of the reverse reaction in the presence of the catalyst, in kJ?",
         "de": "Eine Reaktion hat eine Aktivierungsenergie der Hinreaktion von 60 kJ und ΔH = +20 kJ. Nach Zugabe eines geeigneten Katalysators sinkt die Aktivierungsenergie der Hinreaktion auf 35 kJ. Wie groß ist die Aktivierungsenergie der Rückreaktion mit Katalysator in kJ?",
         "fr": "Une réaction a une énergie d'activation directe de 60 kJ et ΔH = +20 kJ. Après ajout d'un catalyseur approprié, l'énergie d'activation directe tombe à 35 kJ. Quelle est, en kJ, l'énergie d'activation de la réaction inverse en présence du catalyseur ?",
         "ru": "Энергия активации прямой реакции равна 60 кДж, ΔH = +20 кДж. После добавления подходящего катализатора энергия активации прямой реакции снижается до 35 кДж. Чему равна энергия активации обратной реакции в присутствии катализатора, кДж?",
         "ar": "تفاعل طاقة تنشيطه الأمامية 60 kJ وΔH = +20 kJ. عند إضافة حفاز مناسب تنخفض طاقة التنشيط الأمامية إلى 35 kJ. ما طاقة تنشيط التفاعل العكسي بوجود الحفاز بوحدة kJ؟",
         "zh": "某反应正反应活化能为60 kJ，ΔH = +20 kJ。加入合适的催化剂后，正反应活化能降至35 kJ。有催化剂时逆反应的活化能是多少kJ？",
-        "ku": "Enerjiya aktîvasyonê ya pêşve ya reaksiyonekê 60 kJ û ΔH = +20 kJ e. Dema katalîzoreke guncav tê lêzêdekirin, enerjiya aktîvasyonê ya pêşve dadikeve 35 kJ. Li gorî vê, bi hebûna katalîzorê enerjiya aktîvasyonê ya reaksiyona paşve çend kJ e?"
+        "ku": "Enerjiya aktîvasyonê ya pêşve ya reaksiyonekê 60 kJ û ΔH = +20 kJ e. Dema katalîzoreke guncav tê lêzêdekirin, enerjiya aktîvasyonê ya pêşve dadikeve 35 kJ. Bi hebûna katalîzorê enerjiya aktîvasyonê ya reaksiyona paşve çend kJ e?"
       },
       "options": [
         {
@@ -1980,14 +2562,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin13",
       "stem": {
-        "tr": "Bir gazın T1 ve T2 sıcaklıklarındaki (T1 < T2) kinetik enerji dağılım eğrileri aynı grafikte çizilmiş ve tepkimenin eşik enerjisi (Ea) grafikte işaretlenmiştir. Buna göre, I. T2 eğrisinin tepe noktası daha yüksek kinetik enerji değerine kaymış ve eğri daha basık hâle gelmiştir. II. Eşik enerjisini aşan tanecik sayısı T2 sıcaklığında daha fazladır. III. T2 sıcaklığında eşik enerjisinin değeri daha küçüktür. yargılarından hangileri doğrudur?",
-        "en": "The kinetic energy distribution curves of a gas at temperatures T1 and T2 (T1 < T2) are drawn on the same graph, and the threshold energy (Ea) of the reaction is marked. Accordingly, which of the following statements are correct? I. The peak of the T2 curve has shifted to a higher kinetic energy and the curve has become flatter. II. More particles exceed the threshold energy at T2. III. The threshold energy is smaller at T2.",
+        "tr": "Bir gazın T1 ve T2 sıcaklıklarındaki (T1 < T2) kinetik enerji dağılım eğrileri aynı grafikte çizilmiş ve tepkimenin eşik enerjisi (Ea) grafikte işaretlenmiştir. I. T2 eğrisinin tepe noktası daha yüksek kinetik enerji değerine kaymış ve eğri daha basık hâle gelmiştir. II. Eşik enerjisini aşan tanecik sayısı T2 sıcaklığında daha fazladır. III. T2 sıcaklığında eşik enerjisinin değeri daha küçüktür. yargılarından hangileri doğrudur?",
+        "en": "The kinetic energy distribution curves of a gas at temperatures T1 and T2 (T1 < T2) are drawn on the same graph, and the threshold energy (Ea) of the reaction is marked. Which of the following statements are correct? I. The peak of the T2 curve has shifted to a higher kinetic energy and the curve has become flatter. II. More particles exceed the threshold energy at T2. III. The threshold energy is smaller at T2.",
         "de": "Die kinetischen Energieverteilungskurven eines Gases bei T1 und T2 (T1 < T2) sind im selben Diagramm gezeichnet, die Schwellenenergie (Ea) der Reaktion ist markiert. Welche Aussagen sind richtig? I. Das Maximum der T2-Kurve ist zu höherer kinetischer Energie verschoben und die Kurve ist flacher. II. Bei T2 überschreiten mehr Teilchen die Schwellenenergie. III. Bei T2 ist die Schwellenenergie kleiner.",
         "fr": "Les courbes de distribution de l'énergie cinétique d'un gaz aux températures T1 et T2 (T1 < T2) sont tracées sur le même graphique, et l'énergie seuil (Ea) de la réaction y est indiquée. Lesquelles des affirmations suivantes sont correctes ? I. Le sommet de la courbe T2 s'est déplacé vers une énergie cinétique plus élevée et la courbe s'est aplatie. II. Davantage de particules dépassent l'énergie seuil à T2. III. L'énergie seuil est plus petite à T2.",
         "ru": "На одном графике построены кривые распределения частиц газа по кинетической энергии при температурах T1 и T2 (T1 < T2) и отмечена пороговая энергия (Ea) реакции. Какие из утверждений верны? I. Максимум кривой T2 смещён в сторону большей кинетической энергии, а сама кривая стала более пологой. II. При T2 пороговую энергию превышает больше частиц. III. При T2 пороговая энергия меньше.",
         "ar": "رُسمت منحنيات توزيع الطاقة الحركية لغاز عند درجتي الحرارة T1 وT2 (T1 < T2) على الرسم نفسه، وعُيّنت عليه طاقة العتبة (Ea) للتفاعل. أيّ العبارات التالية صحيحة؟ I. انزاحت قمة منحنى T2 نحو طاقة حركية أعلى وأصبح المنحنى أكثر انبساطًا. II. يكون عدد الجسيمات التي تتجاوز طاقة العتبة أكبر عند T2. III. تكون قيمة طاقة العتبة أصغر عند T2.",
         "zh": "在同一图中画出某气体在温度 T1 和 T2(T1 < T2)下的动能分布曲线，并标出反应的阈能(Ea)。有下列说法：I. T2 曲线的峰移向更高的动能，曲线变得更平坦。II. T2 时能量超过阈能的粒子更多。III. T2 时阈能的数值更小。其中正确的是哪些？",
-        "ku": "Kevanên belavbûna enerjiya kînetîk a gazekê di germahiyên T1 û T2 de (T1 < T2) li ser heman grafîkê hatine xêzkirin û enerjiya sînor (Ea) ya reaksiyonê li ser grafîkê hatiye nîşankirin. Li gorî vê, kîjan ji van gotinan rast in? I. Lûtkeya kevana T2 ber bi nirxeke bilindtir a enerjiya kînetîk ve çûye û kevan pehntir bûye. II. Di germahiya T2 de hejmara perçeyên ku enerjiya sînor derbas dikin zêdetir e. III. Di germahiya T2 de nirxa enerjiya sînor piçûktir e."
+        "ku": "Kevanên belavbûna enerjiya kînetîk a gazekê di germahiyên T1 û T2 de (T1 < T2) li ser heman grafîkê hatine xêzkirin û enerjiya sînor (Ea) ya reaksiyonê li ser grafîkê hatiye nîşankirin. Kîjan ji van gotinan rast in? I. Lûtkeya kevana T2 ber bi nirxeke bilindtir a enerjiya kînetîk ve çûye û kevan pehntir bûye. II. Di germahiya T2 de hejmara perçeyên ku enerjiya sînor derbas dikin zêdetir e. III. Di germahiya T2 de nirxa enerjiya sînor piçûktir e."
       },
       "options": [
         {
@@ -2208,14 +2790,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin16",
       "stem": {
-        "tr": "2NO(g) + 2H2(g) → N2(g) + 2H2O(g) tepkimesinin deneysel hız bağıntısı r = k[NO]^2[H2] olarak bulunmuştur. Buna göre, I. Tepkime, denklemde yazıldığı gibi tek basamakta gerçekleşmez. II. Tepkimenin toplam derecesi 3'tür. III. Sabit sıcaklıkta NO derişimi yarıya indirilirse (H2 derişimi sabit) tepkime hızı 1/4'üne düşer. yargılarından hangileri doğrudur?",
-        "en": "The experimental rate law of the reaction 2NO(g) + 2H2(g) → N2(g) + 2H2O(g) is r = k[NO]^2[H2]. Accordingly, which of the following statements are correct? I. The reaction does not occur in a single step as written. II. The overall order of the reaction is 3. III. At constant temperature, if the NO concentration is halved (H2 concentration constant), the rate falls to 1/4.",
+        "tr": "2NO(g) + 2H2(g) → N2(g) + 2H2O(g) tepkimesinin deneysel hız bağıntısı r = k[NO]^2[H2] olarak bulunmuştur. I. Tepkime, denklemde yazıldığı gibi tek basamakta gerçekleşmez. II. Tepkimenin toplam derecesi 3'tür. III. Sabit sıcaklıkta NO derişimi yarıya indirilirse (H2 derişimi sabit) tepkime hızı 1/4'üne düşer. yargılarından hangileri doğrudur?",
+        "en": "The experimental rate law of the reaction 2NO(g) + 2H2(g) → N2(g) + 2H2O(g) is r = k[NO]^2[H2]. Which of the following statements are correct? I. The reaction does not occur in a single step as written. II. The overall order of the reaction is 3. III. At constant temperature, if the NO concentration is halved (H2 concentration constant), the rate falls to 1/4.",
         "de": "Das experimentelle Geschwindigkeitsgesetz der Reaktion 2NO(g) + 2H2(g) → N2(g) + 2H2O(g) lautet r = k[NO]^2[H2]. Welche Aussagen sind richtig? I. Die Reaktion verläuft nicht, wie geschrieben, in einem einzigen Schritt. II. Die Gesamtordnung der Reaktion ist 3. III. Wird bei konstanter Temperatur die NO-Konzentration halbiert (H2-Konzentration konstant), sinkt die Geschwindigkeit auf 1/4.",
         "fr": "La loi de vitesse expérimentale de la réaction 2NO(g) + 2H2(g) → N2(g) + 2H2O(g) est r = k[NO]^2[H2]. Lesquelles des affirmations suivantes sont correctes ? I. La réaction ne se fait pas en une seule étape telle qu'elle est écrite. II. L'ordre global de la réaction est 3. III. À température constante, si la concentration de NO est divisée par deux (concentration de H2 constante), la vitesse tombe au 1/4.",
         "ru": "Экспериментально установлено кинетическое уравнение реакции 2NO(г) + 2H2(г) → N2(г) + 2H2O(г): r = k[NO]^2[H2]. Какие из утверждений верны? I. Реакция не протекает в одну стадию так, как она записана. II. Общий порядок реакции равен 3. III. Если при постоянной температуре уменьшить концентрацию NO вдвое (концентрация H2 постоянна), скорость уменьшится в 4 раза.",
         "ar": "قانون السرعة التجريبي للتفاعل 2NO(g) + 2H2(g) → N2(g) + 2H2O(g) هو r = k[NO]^2[H2]. أيّ العبارات التالية صحيحة؟ I. لا يحدث التفاعل في خطوة واحدة كما هو مكتوب. II. الرتبة الكلية للتفاعل 3. III. عند ثبات درجة الحرارة، إذا خُفّض تركيز NO إلى النصف (مع ثبات تركيز H2) تنخفض السرعة إلى 1/4.",
         "zh": "反应 2NO(g) + 2H2(g) → N2(g) + 2H2O(g) 的实验速率方程为 r = k[NO]^2[H2]。有下列说法：I. 该反应不是按所写方程式一步完成的。II. 反应的总级数为3。III. 恒温下若 NO 浓度减半(H2 浓度不变)，反应速率降为原来的1/4。其中正确的是哪些？",
-        "ku": "Hevkêşeya lezê ya ceribandinî ya reaksiyona 2NO(g) + 2H2(g) → N2(g) + 2H2O(g) wekî r = k[NO]^2[H2] hatiye dîtin. Li gorî vê, kîjan ji van gotinan rast in? I. Reaksiyon wekî ku di hevkêşeyê de hatiye nivîsandin di yek gavê de pêk nayê. II. Pileya giştî ya reaksiyonê 3 e. III. Di germahiya sabît de heke tîrbûna NO nîv bibe (tîrbûna H2 sabît), leza reaksiyonê dadikeve 1/4-a xwe."
+        "ku": "Hevkêşeya lezê ya ceribandinî ya reaksiyona 2NO(g) + 2H2(g) → N2(g) + 2H2O(g) wekî r = k[NO]^2[H2] hatiye dîtin. Kîjan ji van gotinan rast in? I. Reaksiyon wekî ku di hevkêşeyê de hatiye nivîsandin di yek gavê de pêk nayê. II. Pileya giştî ya reaksiyonê 3 e. III. Di germahiya sabît de heke tîrbûna NO nîv bibe (tîrbûna H2 sabît), leza reaksiyonê dadikeve 1/4-a xwe."
       },
       "options": [
         {

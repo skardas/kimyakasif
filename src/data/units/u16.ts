@@ -162,14 +162,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-f05",
       "fact": {
-        "tr": "Elementlerin oda koşullarındaki en kararlı hallerinin standart oluşum entalpisi sıfırdır (O2(g)=0, C(grafit)=0; O3(g)≠0, C(elmas)≠0).",
-        "en": "The standard formation enthalpy of the most stable states of the elements at room conditions is zero (O2(g)=0, C(graphite)=0; O3(g)≠0, C(diamond)≠0).",
-        "de": "Die Standardbildungsenthalpie der stabilsten Zustände der Elemente bei Raumbedingungen beträgt Null (O2(g)=0, C(Graphit)=0; O3(g)≠0, C(Diamant)≠0).",
-        "fr": "L'enthalpie standard de formation des états les plus stables des éléments dans les conditions ambiantes est nulle (O2(g)=0, C(graphite)=0 ; O3(g)≠0, C(diamant)≠0).",
-        "ru": "Стандартная энтальпия образования простых веществ в наиболее устойчивом при комнатных условиях состоянии равна нулю (O2(г)=0, C(графит)=0; O3(г)≠0, C(алмаз)≠0).",
-        "ar": "المحتوى الحراري القياسي لتكوين العناصر في أكثر حالاتها استقرارًا في ظروف الغرفة يساوي صفرًا (O2(g) = 0، C(جرافيت) = 0؛ أما O3(g) ≠ 0 وC(ماس) ≠ 0).",
-        "zh": "在 25 °C、1 atm 下，元素最稳定单质的标准生成焓为零(O2(g) = 0，C(石墨) = 0；O3(g) ≠ 0，C(金刚石) ≠ 0)。",
-        "ku": "Entalpiya çêbûnê ya standard a rewşên herî stabîl ên elementan di şertên odeyê de sifir e (O2(g)=0, C(grafît)=0; O3(g)≠0, C(elmas)≠0)."
+        "tr": "Elementlerin standart hâllerinin (25 °C ve 1 atm'de genellikle en kararlı hâlleri) standart oluşum entalpisi sıfırdır (O2(g)=0, C(grafit)=0; O3(g)≠0, C(elmas)≠0).",
+        "en": "The standard formation enthalpy of an element in its standard state (usually its most stable form at 25 °C and 1 atm) is zero (O2(g)=0, C(graphite)=0; O3(g)≠0, C(diamond)≠0).",
+        "de": "Die Standardbildungsenthalpie eines Elements in seinem Standardzustand (meist seiner stabilsten Form bei 25 °C und 1 atm) beträgt null (O2(g)=0, C(Graphit)=0; O3(g)≠0, C(Diamant)≠0).",
+        "fr": "L'enthalpie standard de formation d'un élément dans son état standard (en général sa forme la plus stable à 25 °C et 1 atm) est nulle (O2(g)=0, C(graphite)=0 ; O3(g)≠0, C(diamant)≠0).",
+        "ru": "Стандартная энтальпия образования простого вещества в стандартном состоянии (как правило, в наиболее устойчивой при 25 °C и 1 атм форме) равна нулю (O2(г)=0, C(графит)=0; O3(г)≠0, C(алмаз)≠0).",
+        "ar": "المحتوى الحراري القياسي لتكوين العنصر في حالته القياسية (وهي غالبًا أكثر صوره استقرارًا عند 25 °C و1 atm) يساوي صفرًا (O2(g) = 0، C(جرافيت) = 0؛ أما O3(g) ≠ 0 وC(ماس) ≠ 0).",
+        "zh": "元素处于标准态（通常是 25 °C、1 atm 下最稳定的单质形态）时，其标准生成焓为零(O2(g) = 0，C(石墨) = 0；O3(g) ≠ 0，C(金刚石) ≠ 0)。",
+        "ku": "Entalpiya çêbûnê ya standard a elementekê di rewşa wê ya standard de (bi gelemperî forma wê ya herî stabîl li 25 °C û 1 atm) sifir e (O2(g)=0, C(grafît)=0; O3(g)≠0, C(elmas)≠0)."
       },
       "trap": {
         "tr": "Elmasın standart oluşum entalpisi sıfırdır.",
@@ -745,14 +745,14 @@ export const unit16: ChemistryUnitSeedData = {
         "ku": "Çêbûna Girêdanê"
       },
       "distinction": {
-        "tr": "Bağ kırılması daima endotermiktir (ısı alınır); bağ oluşumu ise daima ekzotermiktir (ısı açığa çıkar).",
-        "en": "Bond breaking is always endothermic (heat is absorbed); bond formation is always exothermic (heat is released).",
-        "de": "Bindungsbruch ist immer endotherm (Wärme wird aufgenommen); Bindungsbildung ist immer exotherm (Wärme wird abgegeben).",
-        "fr": "Rupture de liaison : toujours endothermique (de la chaleur est absorbée) ; formation de liaison : toujours exothermique (de la chaleur est libérée).",
-        "ru": "Разрыв связи — всегда эндотермический процесс (теплота поглощается); образование связи — всегда экзотермический процесс (теплота выделяется).",
-        "ar": "كسر الرابطة يكون دائمًا ماصًّا للحرارة (تُمتص حرارة)؛ أما تكوين الرابطة فيكون دائمًا طاردًا للحرارة (تنطلق حرارة).",
-        "zh": "化学键断裂总是吸热的（吸收热量）；化学键形成总是放热的（放出热量）。",
-        "ku": "Şikestina girêdanê her tim endotermîk e (germ tê girtin); çêbûna girêdanê her tim ekzotermîk e (germ derdikeve)."
+        "tr": "Bağ kırılması, atomlar arasındaki çekimi yenmek için enerji gerektirdiğinden daima endotermiktir; bağ oluşumu ise atomlar arasında çekim kurulurken enerji açığa çıktığından daima ekzotermiktir.",
+        "en": "Bond breaking always requires energy to overcome the attraction between atoms, so it is always endothermic; bond formation, by contrast, releases energy as the attraction between atoms is established, so it is always exothermic.",
+        "de": "Bindungsbruch erfordert stets Energie, um die Anziehung zwischen den Atomen zu überwinden, und ist daher immer endotherm; Bindungsbildung setzt dagegen Energie frei, wenn sich die Anziehung zwischen den Atomen ausbildet, und ist daher immer exotherm.",
+        "fr": "La rupture de liaison exige toujours de l'énergie pour vaincre l'attraction entre les atomes : elle est donc toujours endothermique ; la formation de liaison, elle, libère de l'énergie lorsque l'attraction entre les atomes s'établit : elle est donc toujours exothermique.",
+        "ru": "Разрыв связи всегда требует энергии для преодоления притяжения между атомами, поэтому он всегда эндотермичен; образование связи, напротив, сопровождается выделением энергии при возникновении притяжения между атомами, поэтому оно всегда экзотермично.",
+        "ar": "كسر الرابطة يتطلب دائمًا طاقة للتغلب على التجاذب بين الذرات، ولذلك يكون دائمًا ماصًّا للحرارة؛ أما تكوين الرابطة فتنطلق فيه طاقة عند نشوء التجاذب بين الذرات، ولذلك يكون دائمًا طاردًا للحرارة.",
+        "zh": "化学键断裂需要吸收能量来克服原子间的吸引，因此总是吸热的；而化学键形成时原子间建立起吸引、放出能量，因此总是放热的。",
+        "ku": "Şikestina girêdanê ji bo derbaskirina kişandina navbera atoman her tim enerjiyê dixwaze, ji ber vê her tim endotermîk e; çêbûna girêdanê jî dema ku kişandina navbera atoman pêk tê enerjiyê derdixe, ji ber vê her tim ekzotermîk e."
       }
     },
     {
@@ -778,14 +778,14 @@ export const unit16: ChemistryUnitSeedData = {
         "ku": "Zagona Yekem a Termodînamîkê"
       },
       "distinction": {
-        "tr": "Hess yasası tepkime entalpisinin izlenen yoldan bağımsız olduğunu belirtir; 1. yasa enerjinin yoktan var, vardan yok edilemeyeceğini ifade eder.",
-        "en": "Hess's law states that the reaction enthalpy is independent of the path followed; The 1st law states that energy cannot be created or destroyed.",
-        "de": "Satz von Hess: Die Reaktionsenthalpie ist unabhängig vom eingeschlagenen Reaktionsweg; 1. Hauptsatz der Thermodynamik: Energie kann weder erzeugt noch vernichtet werden.",
-        "fr": "La loi de Hess stipule que l'enthalpie de réaction est indépendante du chemin suivi ; La 1ère loi stipule que l’énergie ne peut être ni créée ni détruite.",
-        "ru": "Закон Гесса утверждает, что энтальпия реакции не зависит от пути её протекания; первый закон термодинамики утверждает, что энергия не возникает из ничего и не исчезает бесследно.",
-        "ar": "ينص قانون هس على أن المحتوى الحراري للتفاعل مستقل عن المسار المتبع؛ وينص القانون الأول للديناميكا الحرارية على أن الطاقة لا تُستحدث ولا تفنى.",
+        "tr": "Hess yasası, tepkime entalpisinin izlenen yoldan bağımsız olduğunu belirtir; termodinamiğin 1. yasası ise enerjinin yoktan var edilemeyeceğini ve vardan yok edilemeyeceğini ifade eder.",
+        "en": "Hess's law states that the reaction enthalpy is independent of the path followed; the first law of thermodynamics, by contrast, states that energy can be neither created nor destroyed.",
+        "de": "Der Satz von Hess besagt, dass die Reaktionsenthalpie unabhängig vom eingeschlagenen Weg ist; der 1. Hauptsatz der Thermodynamik besagt dagegen, dass Energie weder erzeugt noch vernichtet werden kann.",
+        "fr": "La loi de Hess énonce que l'enthalpie de réaction ne dépend pas du chemin suivi ; la première loi de la thermodynamique énonce, elle, que l'énergie ne peut être ni créée ni détruite.",
+        "ru": "Закон Гесса утверждает, что энтальпия реакции не зависит от пути её протекания; первый закон термодинамики, напротив, утверждает, что энергия не возникает из ничего и не исчезает бесследно.",
+        "ar": "ينص قانون هس على أن المحتوى الحراري للتفاعل مستقل عن المسار المتبع؛ أما القانون الأول للديناميكا الحرارية فينص على أن الطاقة لا تُستحدث ولا تفنى.",
         "zh": "盖斯定律指出，反应焓变与反应途径无关；而热力学第一定律指出，能量既不能凭空产生，也不能凭空消失。",
-        "ku": "Zagona Hess dibêje ku entalpiya reaksiyonê bi riya ku tê şopandin ve ne girêdayî ye; zagona yekem a termodînamîkê dibêje ku enerjî ji tunebûnê nayê afirandin û nayê tunekirin."
+        "ku": "Zagona Hess dibêje ku entalpiya reaksiyonê bi riya ku tê şopandin ve ne girêdayî ye; zagona yekem a termodînamîkê jî dibêje ku enerjî ji tunebûnê nayê afirandin û nayê tunekirin."
       }
     },
     {
@@ -811,14 +811,14 @@ export const unit16: ChemistryUnitSeedData = {
         "ku": "Hilbera Stabîl"
       },
       "distinction": {
-        "tr": "Aktifleşmiş kompleks potansiyel enerji grafiğinin tepe noktasındaki anlık, kararsız ve yalıtılamayan yapıdır; ürün ise grafiğin çukurunda bulunan, yalıtılabilen kararlı maddedir.",
-        "en": "The activated complex is the momentary, unstable structure at the peak of the potential energy diagram that cannot be isolated; the product is a stable substance lying in an energy valley of the diagram that can be isolated.",
-        "de": "Aktivierter Komplex: die kurzlebige, instabile und nicht isolierbare Struktur am Gipfel des Energiediagramms; stabiles Produkt: ein isolierbarer Stoff in einer Energiesenke des Diagramms.",
-        "fr": "Complexe activé : structure instantanée, instable et non isolable située au sommet du diagramme d'énergie potentielle ; produit stable : substance isolable située dans un creux du diagramme.",
-        "ru": "Активированный комплекс — мгновенно существующая неустойчивая структура на вершине диаграммы потенциальной энергии, которую нельзя выделить; устойчивый продукт — вещество в энергетической впадине диаграммы, которое можно выделить.",
-        "ar": "المعقد المنشط بنية لحظية غير مستقرة لا يمكن عزلها توجد عند قمة مخطط الطاقة الكامنة؛ أما الناتج المستقر فمادة يمكن عزلها توجد في قاع المخطط.",
+        "tr": "Aktifleşmiş kompleks, potansiyel enerji grafiğinin tepe noktasındaki anlık, kararsız ve yalıtılamayan yapıdır; kararlı ürün ise grafiğin çukurunda bulunan, yalıtılabilen maddedir.",
+        "en": "The activated complex is the momentary, unstable structure at the peak of the potential energy diagram and cannot be isolated; a stable product, by contrast, lies in an energy valley of the diagram and can be isolated.",
+        "de": "Der aktivierte Komplex ist die kurzlebige, instabile und nicht isolierbare Struktur am Gipfel des Energiediagramms; ein stabiles Produkt liegt dagegen in einer Energiesenke des Diagramms und ist isolierbar.",
+        "fr": "Le complexe activé est la structure instantanée, instable et non isolable située au sommet du diagramme d'énergie potentielle ; un produit stable, lui, se trouve dans un creux du diagramme et peut être isolé.",
+        "ru": "Активированный комплекс — мгновенно существующая неустойчивая структура на вершине диаграммы потенциальной энергии, которую нельзя выделить; устойчивый продукт же находится в энергетической впадине диаграммы и может быть выделен.",
+        "ar": "المعقد المنشط بنية لحظية غير مستقرة لا يمكن عزلها توجد عند قمة مخطط الطاقة الكامنة؛ أما الناتج المستقر فيوجد في قاع المخطط ويمكن عزله.",
         "zh": "活化络合物是势能图顶点处瞬间存在、不稳定且无法分离的结构；而稳定的生成物位于势能图的低谷处，可以分离出来。",
-        "ku": "Kompleksa aktîvkirî avahiyeke demkî, nestabîl û neveqetandinbar e ku li lûtkeya grafîka enerjiya potansiyel e; hilbera stabîl jî madeyeke stabîl e ku di çala grafîkê de ye û dikare were veqetandin."
+        "ku": "Kompleksa aktîvkirî avahiyeke demkî, nestabîl û neveqetandinbar e ku li lûtkeya grafîka enerjiya potansiyel e; hilbera stabîl jî di çala grafîkê de ye û dikare were veqetandin."
       }
     }
   ],
@@ -826,14 +826,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-s01",
       "title": {
-        "tr": "Hess Yasası Uygulama Adımları",
-        "en": "Steps for Applying Hess's Law",
-        "de": "Schritte zur Anwendung des Satzes von Hess",
-        "fr": "Étapes d'application de la loi de Hess",
-        "ru": "Этапы применения закона Гесса",
+        "tr": "Hess yasasının uygulanması",
+        "en": "Applying Hess's law",
+        "de": "Anwendung des Satzes von Hess",
+        "fr": "Application de la loi de Hess",
+        "ru": "Применение закона Гесса",
         "ar": "تطبيق قانون هس",
-        "zh": "盖斯定律的应用步骤",
-        "ku": "Gavên Sepandina Zagona Hess"
+        "zh": "盖斯定律的应用",
+        "ku": "Sepandina zagona Hess"
       },
       "steps": [
         {
@@ -902,24 +902,14 @@ export const unit16: ChemistryUnitSeedData = {
           "ku": "Formulên avahiyê yên vekirî yên reaktant û hilberan tên nivîsandin û cure û hejmara girêdanan tê diyarkirin"
         },
         {
-          "tr": "Girenlerde kırılan bağların enerjileri toplanır",
-          "en": "The energies of the bonds broken in the reactants are added up",
-          "de": "Die Energien der in den Edukten gebrochenen Bindungen werden addiert",
-          "fr": "On additionne les énergies des liaisons rompues dans les réactifs",
-          "ru": "Суммируют энергии связей, разрываемых в реагентах",
-          "ar": "تُجمع طاقات الروابط المكسورة في المتفاعلات",
-          "zh": "把反应物中断裂的化学键的键能相加",
-          "ku": "Enerjiyên girêdanên ku di reaktantan de dişkên tên berhevkirin"
-        },
-        {
-          "tr": "Ürünlerde oluşan bağların enerjileri toplanır",
-          "en": "The energies of the bonds formed in the products are added up",
-          "de": "Die Energien der in den Produkten gebildeten Bindungen werden addiert",
-          "fr": "On additionne les énergies des liaisons formées dans les produits",
-          "ru": "Суммируют энергии связей, образующихся в продуктах",
-          "ar": "تُجمع طاقات الروابط المتكونة في النواتج",
-          "zh": "把生成物中形成的化学键的键能相加",
-          "ku": "Enerjiyên girêdanên ku di hilberan de çêdibin tên berhevkirin"
+          "tr": "Girenlerde kırılan bağların enerjileri ile ürünlerde oluşan bağların enerjileri ayrı ayrı toplanır",
+          "en": "The energies of the bonds broken in the reactants and of the bonds formed in the products are summed separately",
+          "de": "Die Energien der in den Edukten gespaltenen und der in den Produkten gebildeten Bindungen werden getrennt addiert",
+          "fr": "On additionne séparément les énergies des liaisons rompues dans les réactifs et celles des liaisons formées dans les produits",
+          "ru": "Отдельно суммируют энергии связей, разрываемых в реагентах, и связей, образующихся в продуктах",
+          "ar": "تُجمع على حدة طاقات الروابط المكسورة في المتفاعلات وطاقات الروابط المتكونة في النواتج",
+          "zh": "分别求出反应物中断裂的化学键和生成物中形成的化学键的键能总和",
+          "ku": "Enerjiyên girêdanên ku di reaktantan de dişkên û yên ku di hilberan de çêdibin ji hev cuda tên berhevkirin"
         },
         {
           "tr": "Kırılan bağların toplam enerjisinden oluşan bağların toplam enerjisi çıkarılarak ΔH bulunur",
@@ -930,6 +920,16 @@ export const unit16: ChemistryUnitSeedData = {
           "ar": "تُحسب ΔH بطرح مجموع طاقات الروابط المتكونة من مجموع طاقات الروابط المكسورة",
           "zh": "用断裂化学键的总键能减去形成化学键的总键能，得到 ΔH",
           "ku": "Enerjiya giştî ya girêdanên çêbûyî ji enerjiya giştî ya girêdanên şikestî tê derxistin û ΔH tê dîtin"
+        },
+        {
+          "tr": "ΔH'nin işaretine bakılarak tepkimenin ekzotermik mi endotermik mi olduğuna karar verilir",
+          "en": "The sign of ΔH is used to decide whether the reaction is exothermic or endothermic",
+          "de": "Anhand des Vorzeichens von ΔH wird entschieden, ob die Reaktion exotherm oder endotherm ist",
+          "fr": "Le signe de ΔH permet de décider si la réaction est exothermique ou endothermique",
+          "ru": "По знаку ΔH определяют, экзотермическая это реакция или эндотермическая",
+          "ar": "يُحدَّد من إشارة ΔH ما إذا كان التفاعل طاردًا للحرارة أم ماصًّا لها",
+          "zh": "根据 ΔH 的正负判断反应是放热反应还是吸热反应",
+          "ku": "Li gorî nîşana ΔH tê biryardan ka reaksiyon ekzotermîk e an endotermîk e"
         }
       ]
     },
@@ -991,55 +991,55 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-s04",
       "title": {
-        "tr": "Potansiyel Enerji Grafiği Analizi",
-        "en": "Potential Energy Diagram Analysis",
-        "de": "Analyse des Energiediagramms (potentielle Energie)",
-        "fr": "Analyse du diagramme d'énergie potentielle",
-        "ru": "Анализ диаграммы потенциальной энергии",
-        "ar": "تحليل مخطط الطاقة الكامنة",
-        "zh": "势能图分析",
-        "ku": "Analîza Grafîka Enerjiya Potansiyel"
+        "tr": "Tek basamaklı bir tepkimenin ilerleyişi",
+        "en": "Progress of a single-step reaction",
+        "de": "Ablauf einer einstufigen Reaktion",
+        "fr": "Déroulement d'une réaction en une étape",
+        "ru": "Протекание одностадийной реакции",
+        "ar": "سير تفاعل أحادي الخطوة",
+        "zh": "一步反应的进程",
+        "ku": "Pêşveçûna reaksiyoneke yek-gavî"
       },
       "steps": [
         {
-          "tr": "Girenlerin potansiyel enerjisi grafikten okunur",
-          "en": "The potential energy of the reactants is read from the graph",
-          "de": "Die potentielle Energie der Reaktanten wird aus dem Diagramm abgelesen",
-          "fr": "L'énergie potentielle des réactifs est lue sur le graphique",
-          "ru": "По графику определяют потенциальную энергию реагентов",
-          "ar": "تُقرأ الطاقة الكامنة للمواد المتفاعلة من المخطط",
-          "zh": "从图中读取反应物的势能",
-          "ku": "Enerjiya potansiyel a reaktantan ji grafîkê tê xwendin"
+          "tr": "Girenlerin tanecikleri yeterli enerjiyle ve uygun yönelimle çarpışır",
+          "en": "Reactant particles collide with sufficient energy and proper orientation",
+          "de": "Die Eduktteilchen stoßen mit ausreichender Energie und geeigneter Orientierung zusammen",
+          "fr": "Les particules de réactifs se heurtent avec une énergie suffisante et une orientation favorable",
+          "ru": "Частицы реагентов сталкиваются с достаточной энергией и при подходящей ориентации",
+          "ar": "تتصادم جسيمات المتفاعلات بطاقة كافية وباتجاه مناسب",
+          "zh": "反应物粒子以足够的能量和合适的取向发生碰撞",
+          "ku": "Perçeyên reaktantan bi enerjiya têra xwe û bi arasteya guncav li hev dikevin"
         },
         {
-          "tr": "Tepe noktasındaki aktifleşmiş kompleksin potansiyel enerjisi belirlenir",
-          "en": "The potential energy of the activated complex at the peak is determined",
-          "de": "Die potentielle Energie des aktivierten Komplexes am Gipfel wird bestimmt",
-          "fr": "On détermine l'énergie potentielle du complexe activé au sommet",
-          "ru": "Определяют потенциальную энергию активированного комплекса на вершине кривой",
-          "ar": "تُحدَّد الطاقة الكامنة للمعقد المنشط عند القمة",
-          "zh": "确定顶点处活化络合物的势能",
-          "ku": "Enerjiya potansiyel a kompleksa aktîvkirî ya li lûtkeyê tê diyarkirin"
+          "tr": "Potansiyel enerji yükselerek tepe noktasında aktifleşmiş kompleks oluşur",
+          "en": "The potential energy rises and the activated complex forms at the peak",
+          "de": "Die potentielle Energie steigt, und am Gipfel bildet sich der aktivierte Komplex",
+          "fr": "L'énergie potentielle augmente et le complexe activé se forme au sommet",
+          "ru": "Потенциальная энергия растёт, и на вершине образуется активированный комплекс",
+          "ar": "ترتفع الطاقة الكامنة ويتكوّن المعقد المنشط عند القمة",
+          "zh": "势能升高，在峰顶形成活化络合物",
+          "ku": "Enerjiya potansiyel bilind dibe û li lûtkeyê kompleksa aktîvkirî çêdibe"
         },
         {
-          "tr": "Eai = Eaktifleşmiş - Egirenler ile ileri aktifleşme enerjisi bulunur",
-          "en": "The forward activation energy is found from Eai = E(activated complex) - E(reactants)",
-          "de": "Die Aktivierungsenergie der Hinreaktion ergibt sich aus Eai = E(aktivierter Komplex) - E(Edukte)",
-          "fr": "L'énergie d'activation directe est obtenue par Eai = E(complexe activé) - E(réactifs)",
-          "ru": "Энергию активации прямой реакции находят по формуле Ea(пр) = E(активированного комплекса) - E(реагентов)",
-          "ar": "تُحسب طاقة تنشيط التفاعل الأمامي من العلاقة Eai = E(المعقد المنشط) - E(المتفاعلات)",
-          "zh": "由 Eai = E(活化络合物) - E(反应物) 求出正反应活化能",
-          "ku": "Enerjiya aktîvasyonê ya pêşve bi Eai = E(kompleksa aktîvkirî) - E(reaktant) tê dîtin"
+          "tr": "Aktifleşmiş kompleks dağılır; yeni bağlar tamamlanırken potansiyel enerji düşer",
+          "en": "The activated complex breaks apart; the potential energy falls as the new bonds are completed",
+          "de": "Der aktivierte Komplex zerfällt; während sich die neuen Bindungen vollständig ausbilden, sinkt die potentielle Energie",
+          "fr": "Le complexe activé se dissocie ; l'énergie potentielle diminue à mesure que les nouvelles liaisons s'achèvent",
+          "ru": "Активированный комплекс распадается; по мере завершения образования новых связей потенциальная энергия снижается",
+          "ar": "يتفكك المعقد المنشط، وتنخفض الطاقة الكامنة مع اكتمال تكوّن الروابط الجديدة",
+          "zh": "活化络合物分解，新键逐渐形成，势能下降",
+          "ku": "Kompleksa aktîvkirî ji hev dikeve; dema girêdanên nû temam dibin enerjiya potansiyel dadikeve"
         },
         {
-          "tr": "Eag = Eaktifleşmiş − Eürünler bulunur ve ΔH = Eai − Eag (= Eürünler − Egirenler) ile tepkime ısısı hesaplanır",
-          "en": "Eag = E(activated complex) − E(products) is found and the heat of reaction is calculated with ΔH = Eai − Eag (= E(products) − E(reactants))",
-          "de": "Eag = E(aktivierter Komplex) − E(Produkte) wird bestimmt und die Reaktionswärme mit ΔH = Eai − Eag (= E(Produkte) − E(Edukte)) berechnet",
-          "fr": "On obtient Eag = E(complexe activé) − E(produits) puis on calcule la chaleur de réaction avec ΔH = Eai − Eag (= E(produits) − E(réactifs))",
-          "ru": "Находят Ea(обр) = E(активированного комплекса) − E(продуктов) и вычисляют теплоту реакции по ΔH = Ea(пр) − Ea(обр) (= E(продуктов) − E(реагентов))",
-          "ar": "تُحسب Eag = E(المعقد المنشط) − E(النواتج) ثم تُحسب حرارة التفاعل من ΔH = Eai − Eag (= E(النواتج) − E(المتفاعلات))",
-          "zh": "求出 Eag = E(活化络合物) − E(生成物)，再由 ΔH = Eai − Eag(= E(生成物) − E(反应物))计算反应热",
-          "ku": "Eag = E(kompleksa aktîvkirî) − E(hilber) tê dîtin û germa reaksiyonê bi ΔH = Eai − Eag (= E(hilber) − E(reaktant)) tê hesibandin"
+          "tr": "Ürünler oluşur; ürünlerin potansiyel enerjisi girenlerinkinden düşükse aradaki fark ısı olarak açığa çıkar",
+          "en": "The products form; if their potential energy is lower than that of the reactants, the difference is released as heat",
+          "de": "Die Produkte entstehen; ist ihre potentielle Energie niedriger als die der Edukte, wird die Differenz als Wärme frei",
+          "fr": "Les produits se forment ; si leur énergie potentielle est inférieure à celle des réactifs, la différence est libérée sous forme de chaleur",
+          "ru": "Образуются продукты; если их потенциальная энергия ниже, чем у реагентов, разность выделяется в виде теплоты",
+          "ar": "تتكوّن النواتج؛ وإذا كانت طاقتها الكامنة أقل من طاقة المتفاعلات ينطلق الفرق على شكل حرارة",
+          "zh": "生成物形成；若生成物的势能低于反应物，差值以热的形式放出",
+          "ku": "Hilber çêdibin; heke enerjiya potansiyel a wan ji ya reaktantan nizmtir be, cudahî wek germ derdikeve"
         }
       ]
     }
@@ -1048,153 +1048,254 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin01",
       "stem": {
-        "tr": "Bir kimyasal tepkimenin ileri aktifleşme enerjisi Eai = 85 kJ ve geri aktifleşme enerjisi Eag = 130 kJ olduğuna göre tepkime entalpisi (ΔH) kaç kJ'dir?",
-        "en": "If the forward activation energy of a chemical reaction is Eai = 85 kJ and the reverse activation energy Eag = 130 kJ, what is the reaction enthalpy (ΔH) in kJ?",
-        "de": "Wenn die Vorwärtsaktivierungsenergie einer chemischen Reaktion Eai = 85 kJ und die Rückwärtsaktivierungsenergie Eag = 130 kJ beträgt, wie groß ist dann die Reaktionsenthalpie (ΔH) in kJ?",
-        "fr": "Si l'énergie d'activation directe d'une réaction chimique est Eai = 85 kJ et l'énergie d'activation inverse Eag = 130 kJ, quelle est l'enthalpie de réaction (ΔH) en kJ ?",
-        "ru": "Энергия активации прямой реакции Ea(пр) = 85 кДж, энергия активации обратной реакции Ea(обр) = 130 кДж. Чему равна энтальпия реакции (ΔH) в кДж?",
-        "ar": "إذا كانت طاقة التنشيط الأمامية لتفاعل كيميائي Eai = 85 kJ وطاقة التنشيط العكسية Eag = 130 kJ، فكم يبلغ المحتوى الحراري للتفاعل (ΔH) بوحدة kJ؟",
-        "zh": "某化学反应的正反应活化能 Eai = 85 kJ，逆反应活化能 Eag = 130 kJ，该反应的焓变(ΔH)是多少 kJ？",
-        "ku": "Enerjiya aktîvasyonê ya pêşve ya reaksiyoneke kîmyewî Eai = 85 kJ û enerjiya aktîvasyonê ya paşve Eag = 130 kJ e. Li gorî vê, entalpiya reaksiyonê (ΔH) çend kJ ye?"
+        "tr": "Tabloda bazı bağların ortalama bağ enerjileri verilmiştir. H2(g) + Cl2(g) → 2HCl(g) tepkimesinde 1 mol HCl(g) oluşurken gerçekleşen ısı alışverişi aşağıdakilerden hangisidir?",
+        "en": "The table gives the average bond energies of some bonds. Which of the following describes the heat exchanged when 1 mol of HCl(g) forms in the reaction H2(g) + Cl2(g) → 2HCl(g)?",
+        "de": "Die Tabelle gibt die mittleren Bindungsenergien einiger Bindungen an. Welcher Wärmeaustausch findet statt, wenn bei der Reaktion H2(g) + Cl2(g) → 2HCl(g) 1 mol HCl(g) entsteht?",
+        "fr": "Le tableau donne les énergies moyennes de quelques liaisons. Quel échange de chaleur accompagne la formation de 1 mol de HCl(g) dans la réaction H2(g) + Cl2(g) → 2HCl(g) ?",
+        "ru": "В таблице приведены средние энергии некоторых связей. Какой тепловой эффект сопровождает образование 1 моль HCl(г) в реакции H2(г) + Cl2(г) → 2HCl(г)?",
+        "ar": "يبيّن الجدول متوسطات طاقات بعض الروابط. ما التبادل الحراري المصاحب لتكوّن 1 mol من HCl(g) في التفاعل H2(g) + Cl2(g) → 2HCl(g)؟",
+        "zh": "表中给出了一些化学键的平均键能。在反应 H2(g) + Cl2(g) → 2HCl(g) 中生成 1 mol HCl(g) 时的热量变化是下列哪一项？",
+        "ku": "Di tabloyê de enerjiyên girêdanê yên navînî yên hin girêdanan hatine dayîn. Di reaksiyona H2(g) + Cl2(g) → 2HCl(g) de dema 1 mol HCl(g) çêdibe, guherandina germê ya ku pêk tê kîjan e?"
       },
       "options": [
         {
-          "tr": "-45 kJ",
-          "en": "-45 kJ",
-          "de": "-45 kJ",
-          "fr": "-45 kJ",
-          "ru": "-45 кДж",
-          "ar": "-45 kJ",
-          "zh": "-45 kJ",
-          "ku": "-45 kJ"
+          "tr": "91,5 kJ ısı açığa çıkar",
+          "en": "91.5 kJ of heat is released",
+          "de": "Es werden 91,5 kJ Wärme frei",
+          "fr": "91,5 kJ de chaleur sont libérés",
+          "ru": "Выделяется 91,5 кДж теплоты",
+          "ar": "تنطلق 91.5 kJ من الحرارة",
+          "zh": "放出 91.5 kJ 热量",
+          "ku": "91,5 kJ germ derdikeve"
         },
         {
-          "tr": "+45 kJ",
-          "en": "+45 kJ",
-          "de": "+45 kJ",
-          "fr": "+45 kJ",
-          "ru": "+45 кДж",
-          "ar": "+45 kJ",
-          "zh": "+45 kJ",
-          "ku": "+45 kJ"
+          "tr": "183 kJ ısı açığa çıkar",
+          "en": "183 kJ of heat is released",
+          "de": "Es werden 183 kJ Wärme frei",
+          "fr": "183 kJ de chaleur sont libérés",
+          "ru": "Выделяется 183 кДж теплоты",
+          "ar": "تنطلق 183 kJ من الحرارة",
+          "zh": "放出 183 kJ 热量",
+          "ku": "183 kJ germ derdikeve"
         },
         {
-          "tr": "+215 kJ",
-          "en": "+215 kJ",
-          "de": "+215 kJ",
-          "fr": "+215 kJ",
-          "ru": "+215 кДж",
-          "ar": "+215 kJ",
-          "zh": "+215 kJ",
-          "ku": "+215 kJ"
+          "tr": "91,5 kJ ısı alınır",
+          "en": "91.5 kJ of heat is absorbed",
+          "de": "Es werden 91,5 kJ Wärme aufgenommen",
+          "fr": "91,5 kJ de chaleur sont absorbés",
+          "ru": "Поглощается 91,5 кДж теплоты",
+          "ar": "تُمتص 91.5 kJ من الحرارة",
+          "zh": "吸收 91.5 kJ 热量",
+          "ku": "91,5 kJ germ tê girtin"
         },
         {
-          "tr": "-215 kJ",
-          "en": "-215 kJ",
-          "de": "-215 kJ",
-          "fr": "-215 kJ",
-          "ru": "-215 кДж",
-          "ar": "-215 kJ",
-          "zh": "-215 kJ",
-          "ku": "-215 kJ"
+          "tr": "248 kJ ısı alınır",
+          "en": "248 kJ of heat is absorbed",
+          "de": "Es werden 248 kJ Wärme aufgenommen",
+          "fr": "248 kJ de chaleur sont absorbés",
+          "ru": "Поглощается 248 кДж теплоты",
+          "ar": "تُمتص 248 kJ من الحرارة",
+          "zh": "吸收 248 kJ 热量",
+          "ku": "248 kJ germ tê girtin"
         },
         {
-          "tr": "+85 kJ",
-          "en": "+85 kJ",
-          "de": "+85 kJ",
-          "fr": "+85 kJ",
-          "ru": "+85 кДж",
-          "ar": "+85 kJ",
-          "zh": "+85 kJ",
-          "ku": "+85 kJ"
+          "tr": "183 kJ ısı alınır",
+          "en": "183 kJ of heat is absorbed",
+          "de": "Es werden 183 kJ Wärme aufgenommen",
+          "fr": "183 kJ de chaleur sont absorbés",
+          "ru": "Поглощается 183 кДж теплоты",
+          "ar": "تُمتص 183 kJ من الحرارة",
+          "zh": "吸收 183 kJ 热量",
+          "ku": "183 kJ germ tê girtin"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "ΔH = Eai - Eag = 85 - 130 = -45 kJ'dir (ekzotermik tepkime).",
-        "en": "ΔH = Eai - Eag = 85 - 130 = -45 kJ (exothermic reaction).",
-        "de": "ΔH = Eai – Eag = 85 – 130 = –45 kJ (exotherme Reaktion).",
-        "fr": "ΔH = Eai - Eag = 85 - 130 = -45 kJ (réaction exothermique).",
-        "ru": "ΔH = Ea(пр) - Ea(обр) = 85 - 130 = -45 кДж (экзотермическая реакция).",
-        "ar": "ΔH = Eai - Eag = 85 - 130 = -45 kJ (تفاعل طارد للحرارة).",
-        "zh": "ΔH = Eai - Eag = 85 - 130 = -45 kJ（放热反应）。",
-        "ku": "ΔH = Eai - Eag = 85 - 130 = -45 kJ e (reaksiyona ekzotermîk)."
+        "tr": "Tablodan tepkimede yer alan bağlar seçilir (Br–Br bu tepkimede yoktur). Kırılan bağlar: 1 H–H + 1 Cl–Cl = 436 + 243 = 679 kJ. Oluşan bağlar: 2 H–Cl = 2 × 431 = 862 kJ. ΔH = Σ(kırılan) − Σ(oluşan) = 679 − 862 = −183 kJ; bu değer 2 mol HCl oluşumuna aittir. 1 mol HCl için ΔH = −183/2 = −91,5 kJ, yani 91,5 kJ ısı açığa çıkar. 183 kJ, 2 mol'e ait değeri 1 mol'e bölmemekten; 248 kJ alınır sonucu, oluşan H–Cl bağlarını 2 yerine 1 saymaktan (679 − 431) gelir. Çıkarma sırasını ters alan öğrenci ise ısının alındığını sanır.",
+        "en": "Choose the bonds that take part in the reaction from the table (Br–Br is not involved). Bonds broken: 1 H–H + 1 Cl–Cl = 436 + 243 = 679 kJ. Bonds formed: 2 H–Cl = 2 × 431 = 862 kJ. ΔH = Σ(broken) − Σ(formed) = 679 − 862 = −183 kJ; this value refers to the formation of 2 mol of HCl. For 1 mol of HCl, ΔH = −183/2 = −91.5 kJ, i.e. 91.5 kJ of heat is released. 183 kJ comes from not dividing the 2 mol value by two; '248 kJ absorbed' comes from counting one H–Cl bond formed instead of two (679 − 431). Reversing the order of subtraction makes the heat appear to be absorbed.",
+        "de": "Aus der Tabelle werden die an der Reaktion beteiligten Bindungen gewählt (Br–Br kommt nicht vor). Gespaltene Bindungen: 1 H–H + 1 Cl–Cl = 436 + 243 = 679 kJ. Gebildete Bindungen: 2 H–Cl = 2 · 431 = 862 kJ. ΔH = Σ(gespalten) − Σ(gebildet) = 679 − 862 = −183 kJ; dieser Wert gilt für die Bildung von 2 mol HCl. Für 1 mol HCl ist ΔH = −183/2 = −91,5 kJ, es werden also 91,5 kJ Wärme frei. 183 kJ entsteht, wenn man den Wert für 2 mol nicht halbiert; „248 kJ aufgenommen“, wenn man nur eine statt zwei gebildeter H–Cl-Bindungen zählt (679 − 431). Wer die Subtraktion umkehrt, meint, die Wärme werde aufgenommen.",
+        "fr": "On choisit dans le tableau les liaisons intervenant dans la réaction (Br–Br n'intervient pas). Liaisons rompues : 1 H–H + 1 Cl–Cl = 436 + 243 = 679 kJ. Liaisons formées : 2 H–Cl = 2 × 431 = 862 kJ. ΔH = Σ(rompues) − Σ(formées) = 679 − 862 = −183 kJ ; cette valeur correspond à la formation de 2 mol de HCl. Pour 1 mol de HCl, ΔH = −183/2 = −91,5 kJ : 91,5 kJ de chaleur sont libérés. 183 kJ vient de l'oubli de la division par deux ; « 248 kJ absorbés » vient du comptage d'une seule liaison H–Cl formée au lieu de deux (679 − 431). Inverser l'ordre de la soustraction fait croire que la chaleur est absorbée.",
+        "ru": "Из таблицы выбирают связи, участвующие в реакции (Br–Br в ней не участвует). Разрываемые связи: 1 H–H + 1 Cl–Cl = 436 + 243 = 679 кДж. Образующиеся связи: 2 H–Cl = 2 · 431 = 862 кДж. ΔH = Σ(разрываемых) − Σ(образующихся) = 679 − 862 = −183 кДж; это значение относится к образованию 2 моль HCl. Для 1 моль HCl ΔH = −183/2 = −91,5 кДж, т. е. выделяется 91,5 кДж теплоты. 183 кДж получается, если не разделить значение для 2 моль на два; «поглощается 248 кДж» — если учесть одну образующуюся связь H–Cl вместо двух (679 − 431). Если поменять порядок вычитания, покажется, что теплота поглощается.",
+        "ar": "تُختار من الجدول الروابط المشاركة في التفاعل (الرابطة Br–Br لا تشارك). الروابط المكسورة: 1 H–H + 1 Cl–Cl = 436 + 243 = 679 kJ. الروابط المتكوّنة: 2 H–Cl = 2 × 431 = 862 kJ. ΔH = Σ(المكسورة) − Σ(المتكوّنة) = 679 − 862 = −183 kJ، وهذه القيمة لتكوّن 2 mol من HCl. لـ 1 mol من HCl يكون ΔH = −183/2 = −91.5 kJ، أي تنطلق 91.5 kJ من الحرارة. القيمة 183 kJ تنتج عن عدم قسمة قيمة 2 mol على اثنين، و«تُمتص 248 kJ» تنتج عن حساب رابطة H–Cl واحدة متكوّنة بدل اثنتين (679 − 431). ومن يعكس ترتيب الطرح يظن أن الحرارة تُمتص.",
+        "zh": "从表中选出参与反应的化学键（Br–Br 不参与反应）。断裂的键：1 H–H + 1 Cl–Cl = 436 + 243 = 679 kJ。形成的键：2 H–Cl = 2 × 431 = 862 kJ。ΔH = Σ(断裂) − Σ(形成) = 679 − 862 = −183 kJ，这是生成 2 mol HCl 的数值。生成 1 mol HCl 时 ΔH = −183/2 = −91.5 kJ，即放出 91.5 kJ 热量。183 kJ 是没有把 2 mol 的数值除以 2；\"吸收 248 kJ\" 是把形成的 H–Cl 键算成 1 个而不是 2 个 (679 − 431)。若把减法顺序颠倒，就会误以为吸收热量。",
+        "ku": "Ji tabloyê girêdanên ku di reaksiyonê de cih digirin tên hilbijartin (Br–Br di vê reaksiyonê de tune). Girêdanên dişkên: 1 H–H + 1 Cl–Cl = 436 + 243 = 679 kJ. Girêdanên çêdibin: 2 H–Cl = 2 × 431 = 862 kJ. ΔH = Σ(şikestî) − Σ(çêbûyî) = 679 − 862 = −183 kJ; ev nirx ya çêbûna 2 mol HCl e. Ji bo 1 mol HCl ΔH = −183/2 = −91,5 kJ e, yanî 91,5 kJ germ derdikeve. 183 kJ ji parnekirina nirxa 2 mol li duyan, encama '248 kJ tê girtin' jî ji hesabkirina yek girêdana H–Cl li şûna duyan (679 − 431) tê. Kesê ku rêza derxistinê berevajî dike, digire ku germ tê girtin."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Bağ",
+            "en": "Bond",
+            "de": "Bindung",
+            "fr": "Liaison",
+            "ru": "Связь",
+            "ar": "الرابطة",
+            "zh": "化学键",
+            "ku": "Girêdan"
+          },
+          {
+            "tr": "Ortalama bağ enerjisi (kJ/mol)",
+            "en": "Average bond energy (kJ/mol)",
+            "de": "Mittlere Bindungsenergie (kJ/mol)",
+            "fr": "Énergie de liaison moyenne (kJ/mol)",
+            "ru": "Средняя энергия связи (кДж/моль)",
+            "ar": "متوسط طاقة الرابطة (kJ/mol)",
+            "zh": "平均键能 (kJ/mol)",
+            "ku": "Enerjiya girêdanê ya navînî (kJ/mol)"
+          }
+        ],
+        "rows": [
+          [
+            "H–H",
+            "436"
+          ],
+          [
+            "Cl–Cl",
+            "243"
+          ],
+          [
+            "H–Cl",
+            "431"
+          ],
+          [
+            "Br–Br",
+            "193"
+          ]
+        ]
       }
     },
     {
       "id": "u16-twin02",
       "stem": {
-        "tr": "Aşağıdaki maddelerden hangisinin 25 °C ve 1 atm'deki standart molar oluşum entalpisi sıfır kabul edilir?",
-        "en": "Which of the following substances has a standard molar enthalpy of formation of zero at 25 °C and 1 atm?",
-        "de": "Welcher der folgenden Stoffe hat eine standardmäßige molare Bildungsenthalpie von Null bei 25 °C und 1 atm?",
-        "fr": "Laquelle des substances suivantes a une enthalpie molaire standard de formation de zéro à 25 °C et 1 atm ?",
-        "ru": "Для какого из следующих веществ стандартная молярная энтальпия образования при 25 °C и 1 атм принимается равной нулю?",
-        "ar": "أيّ المواد الآتية يُعدّ المحتوى الحراري المولي القياسي لتكوينها صفرًا عند 25 °C و1 atm؟",
-        "zh": "下列物质中，哪一种在 25 °C、1 atm 下的标准摩尔生成焓规定为零？",
-        "ku": "Entalpiya çêbûnê ya molî ya standard a kîjan ji van madeyan li 25 °C û 1 atm sifir tê qebûlkirin?"
+        "tr": "Şekildeki entalpi diyagramında karbon ve oksijen içeren bazı sistemlerin 25 °C ve 1 atm'deki entalpi düzeyleri verilmiştir. CO(g) + 1/2 O2(g) → CO2(g) tepkimesinin ΔH değeri kaç kJ'dir?",
+        "en": "The enthalpy diagram shows the enthalpy levels of some systems containing carbon and oxygen at 25 °C and 1 atm. What is ΔH, in kJ, for the reaction CO(g) + 1/2 O2(g) → CO2(g)?",
+        "de": "Das Enthalpiediagramm zeigt die Enthalpieniveaus einiger kohlenstoff- und sauerstoffhaltiger Systeme bei 25 °C und 1 atm. Wie groß ist ΔH in kJ für die Reaktion CO(g) + 1/2 O2(g) → CO2(g)?",
+        "fr": "Le diagramme d'enthalpie montre les niveaux d'enthalpie de quelques systèmes contenant du carbone et de l'oxygène à 25 °C et 1 atm. Quelle est la valeur de ΔH, en kJ, pour la réaction CO(g) + 1/2 O2(g) → CO2(g) ?",
+        "ru": "На энтальпийной диаграмме показаны уровни энтальпии некоторых систем, содержащих углерод и кислород, при 25 °C и 1 атм. Чему равно ΔH (кДж) реакции CO(г) + 1/2 O2(г) → CO2(г)?",
+        "ar": "يبيّن مخطط المحتوى الحراري مستويات المحتوى الحراري لبعض الأنظمة المحتوية على الكربون والأكسجين عند 25 °C و1 atm. كم تبلغ قيمة ΔH بوحدة kJ للتفاعل CO(g) + 1/2 O2(g) → CO2(g)؟",
+        "zh": "焓图给出了 25 °C、1 atm 下一些含碳和氧的体系的焓值。反应 CO(g) + 1/2 O2(g) → CO2(g) 的 ΔH 是多少 kJ？",
+        "ku": "Di diyagrama entalpiyê ya şiklê de asta entalpiyê ya hin sîstemên ku karbon û oksîjen dihewînin di 25 °C û 1 atm de hatiye dayîn. Nirxa ΔH ya reaksiyona CO(g) + 1/2 O2(g) → CO2(g) çend kJ e?"
       },
       "options": [
         {
-          "tr": "O2(g)",
-          "en": "O2(g)",
-          "de": "O2(g)",
-          "fr": "O2(g)",
-          "ru": "O2(g)",
-          "ar": "O2(g)",
-          "zh": "O2(g)",
-          "ku": "O2(g)"
+          "tr": "−504",
+          "en": "−504",
+          "de": "−504",
+          "fr": "−504",
+          "ru": "−504",
+          "ar": "−504",
+          "zh": "−504",
+          "ku": "−504"
         },
         {
-          "tr": "O3(g)",
-          "en": "O3(g)",
-          "de": "O3(g)",
-          "fr": "O3(g)",
-          "ru": "O3(g)",
-          "ar": "O3(g)",
-          "zh": "O3(g)",
-          "ku": "O3(g)"
+          "tr": "−393,5",
+          "en": "−393.5",
+          "de": "−393,5",
+          "fr": "−393,5",
+          "ru": "−393,5",
+          "ar": "−393.5",
+          "zh": "−393.5",
+          "ku": "−393,5"
         },
         {
-          "tr": "H2O(s)",
-          "en": "H2O(l)",
-          "de": "H2O(l)",
-          "fr": "H2O(l)",
-          "ru": "H2O(l)",
-          "ar": "H2O(l)",
-          "zh": "H2O(l)",
-          "ku": "H2O(l)"
+          "tr": "−283",
+          "en": "−283",
+          "de": "−283",
+          "fr": "−283",
+          "ru": "−283",
+          "ar": "−283",
+          "zh": "−283",
+          "ku": "−283"
         },
         {
-          "tr": "CO2(g)",
-          "en": "CO2(g)",
-          "de": "CO2(g)",
-          "fr": "CO2(g)",
-          "ru": "CO2(g)",
-          "ar": "CO2(g)",
-          "zh": "CO2(g)",
-          "ku": "CO2(g)"
+          "tr": "−110,5",
+          "en": "−110.5",
+          "de": "−110,5",
+          "fr": "−110,5",
+          "ru": "−110,5",
+          "ar": "−110.5",
+          "zh": "−110.5",
+          "ku": "−110,5"
         },
         {
-          "tr": "C(elmas)",
-          "en": "C(diamond)",
-          "de": "C (Diamant)",
-          "fr": "C(diamant)",
-          "ru": "C(алмаз)",
-          "ar": "C(الماس)",
-          "zh": "C(金刚石)",
-          "ku": "C(elmas)"
+          "tr": "+283",
+          "en": "+283",
+          "de": "+283",
+          "fr": "+283",
+          "ru": "+283",
+          "ar": "+283",
+          "zh": "+283",
+          "ku": "+283"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Elementlerin oda koşullarındaki en kararlı allotrop ve fiziksel hallerinin standart oluşum entalpisi sıfırdır: O2(g) = 0'dır.",
-        "en": "The standard enthalpy of formation of the most stable allotrope and physical states of the elements at room conditions is zero: O2(g) = 0.",
-        "de": "Die Standardbildungsenthalpie der stabilsten allotropen und physikalischen Zustände der Elemente bei Raumbedingungen ist Null: O2(g) = 0.",
-        "fr": "L'enthalpie standard de formation de l'allotrope et des états physiques les plus stables des éléments dans les conditions ambiantes est nulle : O2(g) = 0.",
-        "ru": "Стандартная энтальпия образования простого вещества в наиболее устойчивых при комнатных условиях аллотропной модификации и агрегатном состоянии равна нулю: O2(г) = 0.",
-        "ar": "المحتوى الحراري القياسي لتكوين العناصر في أكثر متآصلاتها وحالاتها الفيزيائية استقرارًا في ظروف الغرفة يساوي صفرًا: O2(g) = 0.",
-        "zh": "在 25 °C、1 atm 下，元素最稳定的同素异形体和物态的标准生成焓为零：O2(g) = 0。",
-        "ku": "Entalpiya çêbûnê ya standard a allotrop û rewşa fîzîkî ya herî stabîl a elementan di şertên odeyê de sifir e: O2(g) = 0 e."
+        "tr": "Diyagramdan, C(grafit) + O2(g) düzeyi 0 alınarak, CO(g) + 1/2 O2(g) düzeyi −110,5 kJ ve CO2(g) düzeyi −393,5 kJ okunur. ΔH = H(ürünler) − H(girenler) = −393,5 − (−110,5) = −283 kJ. Hess yasasına göre aynı sonuç, C(grafit) + O2(g) → CO2(g) (−393,5 kJ) tepkimesinden C(grafit) + 1/2 O2(g) → CO(g) (−110,5 kJ) tepkimesi çıkarılarak da bulunur. İki değeri toplayan −504, yalnızca CO2 düzeyini okuyan −393,5, yalnızca CO düzeyini okuyan −110,5, çıkarma sırasını ters alan ise +283 bulur.",
+        "en": "Taking the C(graphite) + O2(g) level as 0, the diagram gives −110.5 kJ for CO(g) + 1/2 O2(g) and −393.5 kJ for CO2(g). ΔH = H(products) − H(reactants) = −393.5 − (−110.5) = −283 kJ. By Hess's law the same result follows from subtracting C(graphite) + 1/2 O2(g) → CO(g) (−110.5 kJ) from C(graphite) + O2(g) → CO2(g) (−393.5 kJ). Adding the two values gives −504, reading only the CO2 level gives −393.5, reading only the CO level gives −110.5, and reversing the subtraction gives +283.",
+        "de": "Mit dem Niveau C(Graphit) + O2(g) als 0 liest man ab: CO(g) + 1/2 O2(g) liegt bei −110,5 kJ und CO2(g) bei −393,5 kJ. ΔH = H(Produkte) − H(Edukte) = −393,5 − (−110,5) = −283 kJ. Nach dem Satz von Hess ergibt sich dasselbe, wenn man C(Graphit) + 1/2 O2(g) → CO(g) (−110,5 kJ) von C(Graphit) + O2(g) → CO2(g) (−393,5 kJ) abzieht. Wer beide Werte addiert, erhält −504; wer nur das CO2-Niveau abliest, −393,5; wer nur das CO-Niveau abliest, −110,5; wer die Subtraktion umkehrt, +283.",
+        "fr": "En prenant le niveau C(graphite) + O2(g) égal à 0, on lit −110,5 kJ pour CO(g) + 1/2 O2(g) et −393,5 kJ pour CO2(g). ΔH = H(produits) − H(réactifs) = −393,5 − (−110,5) = −283 kJ. D'après la loi de Hess, on obtient le même résultat en retranchant C(graphite) + 1/2 O2(g) → CO(g) (−110,5 kJ) de C(graphite) + O2(g) → CO2(g) (−393,5 kJ). Additionner les deux valeurs donne −504, lire seulement le niveau de CO2 donne −393,5, lire seulement celui de CO donne −110,5, et inverser la soustraction donne +283.",
+        "ru": "Если принять уровень C(графит) + O2(г) за 0, по диаграмме уровень CO(г) + 1/2 O2(г) равен −110,5 кДж, а уровень CO2(г) — −393,5 кДж. ΔH = H(продуктов) − H(реагентов) = −393,5 − (−110,5) = −283 кДж. По закону Гесса тот же результат получается, если из C(графит) + O2(г) → CO2(г) (−393,5 кДж) вычесть C(графит) + 1/2 O2(г) → CO(г) (−110,5 кДж). Сложение двух значений даёт −504, чтение только уровня CO2 — −393,5, только уровня CO — −110,5, а обратный порядок вычитания — +283.",
+        "ar": "بأخذ مستوى C(غرافيت) + O2(g) مساويًا للصفر، يُقرأ من المخطط أن مستوى CO(g) + 1/2 O2(g) هو −110.5 kJ ومستوى CO2(g) هو −393.5 kJ. ΔH = H(النواتج) − H(المتفاعلات) = −393.5 − (−110.5) = −283 kJ. وبحسب قانون هس نحصل على النتيجة نفسها بطرح التفاعل C(غرافيت) + 1/2 O2(g) → CO(g) (−110.5 kJ) من التفاعل C(غرافيت) + O2(g) → CO2(g) (−393.5 kJ). من يجمع القيمتين يحصل على −504، ومن يقرأ مستوى CO2 وحده يحصل على −393.5، ومن يقرأ مستوى CO وحده يحصل على −110.5، ومن يعكس ترتيب الطرح يحصل على +283.",
+        "zh": "以 C(石墨) + O2(g) 的焓为 0，由图读出 CO(g) + 1/2 O2(g) 为 −110.5 kJ，CO2(g) 为 −393.5 kJ。ΔH = H(生成物) − H(反应物) = −393.5 − (−110.5) = −283 kJ。由盖斯定律，用 C(石墨) + O2(g) → CO2(g) (−393.5 kJ) 减去 C(石墨) + 1/2 O2(g) → CO(g) (−110.5 kJ) 也得到同样结果。把两个数值相加得 −504；只读 CO2 的焓值得 −393.5；只读 CO 的焓值得 −110.5；减法顺序颠倒得 +283。",
+        "ku": "Bi hesibandina asta C(grafît) + O2(g) wek 0, ji diyagramê asta CO(g) + 1/2 O2(g) −110,5 kJ û asta CO2(g) −393,5 kJ tê xwendin. ΔH = H(hilber) − H(reaktant) = −393,5 − (−110,5) = −283 kJ. Li gorî zagona Hess heman encam bi derxistina reaksiyona C(grafît) + 1/2 O2(g) → CO(g) (−110,5 kJ) ji reaksiyona C(grafît) + O2(g) → CO2(g) (−393,5 kJ) jî tê dîtin. Kesê ku her du nirxan berhev dike −504, kesê ku tenê asta CO2 dixwîne −393,5, kesê ku tenê asta CO dixwîne −110,5, kesê ku rêza derxistinê berevajî dike jî +283 dibîne."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 230,
+        "markup": "<path d='M50,218 V22' class='qf-line'/><path d='M50,12 L45,23 H55 Z' class='qf-dot'/><text x='60' y='18'>H (kJ)</text><path d='M46,40 H54 M46,86 H54 M46,205 H54' class='qf-line'/><path d='M54,40 H110 M54,86 H110 M54,205 H110' class='qf-dash'/><path d='M110,40 H300 M110,86 H300 M110,205 H300' class='qf-stroke-accent'/><text x='42' y='44' text-anchor='end'>0</text><text x='42' y='90' text-anchor='end'>{{v1}}</text><text x='42' y='209' text-anchor='end'>{{v2}}</text><text x='205' y='33' text-anchor='middle' class='qf-strong'>{{l0}}</text><text x='205' y='79' text-anchor='middle' class='qf-strong'>{{l1}}</text><text x='205' y='198' text-anchor='middle' class='qf-strong'>{{l2}}</text>",
+        "labels": {
+          "v1": {
+            "tr": "−110,5",
+            "en": "−110.5",
+            "de": "−110,5",
+            "fr": "−110,5",
+            "ru": "−110,5",
+            "ar": "−110.5",
+            "zh": "−110.5",
+            "ku": "−110,5"
+          },
+          "v2": {
+            "tr": "−393,5",
+            "en": "−393.5",
+            "de": "−393,5",
+            "fr": "−393,5",
+            "ru": "−393,5",
+            "ar": "−393.5",
+            "zh": "−393.5",
+            "ku": "−393,5"
+          },
+          "l0": {
+            "tr": "C(grafit) + O₂(g)",
+            "en": "C(graphite) + O₂(g)",
+            "de": "C(Graphit) + O₂(g)",
+            "fr": "C(graphite) + O₂(g)",
+            "ru": "C(графит) + O₂(г)",
+            "ar": "C(غرافيت) + O₂(g)",
+            "zh": "C(石墨) + O₂(g)",
+            "ku": "C(grafît) + O₂(g)"
+          },
+          "l1": {
+            "tr": "CO(g) + ½O₂(g)",
+            "en": "CO(g) + ½O₂(g)",
+            "de": "CO(g) + ½O₂(g)",
+            "fr": "CO(g) + ½O₂(g)",
+            "ru": "CO(г) + ½O₂(г)",
+            "ar": "CO(g) + ½O₂(g)",
+            "zh": "CO(g) + ½O₂(g)",
+            "ku": "CO(g) + ½O₂(g)"
+          },
+          "l2": {
+            "tr": "CO₂(g)",
+            "en": "CO₂(g)",
+            "de": "CO₂(g)",
+            "fr": "CO₂(g)",
+            "ru": "CO₂(г)",
+            "ar": "CO₂(g)",
+            "zh": "CO₂(g)",
+            "ku": "CO₂(g)"
+          }
+        }
       }
     },
     {
@@ -1504,14 +1605,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin07",
       "stem": {
-        "tr": "Tek basamakta gerçekleşen X(g) → Y(g) tepkimesinin potansiyel enerji grafiğinde girenlerin potansiyel enerjisi 40 kJ, aktifleşmiş kompleksin potansiyel enerjisi 150 kJ, ürünlerin potansiyel enerjisi 90 kJ olarak okunuyor. Buna göre, I. Tepkime ekzotermiktir. II. İleri tepkimenin aktifleşme enerjisi 110 kJ'dir. III. Geri tepkimenin aktifleşme enerjisi 50 kJ'dir. yargılarından hangileri doğrudur?",
-        "en": "On the potential energy diagram of the single-step reaction X(g) → Y(g), the potential energy of the reactants is read as 40 kJ, that of the activated complex as 150 kJ and that of the products as 90 kJ. Accordingly, which of the statements I. The reaction is exothermic. II. The activation energy of the forward reaction is 110 kJ. III. The activation energy of the reverse reaction is 50 kJ. are correct?",
-        "de": "Im Energiediagramm der einstufigen Reaktion X(g) → Y(g) liest man ab: potentielle Energie der Edukte 40 kJ, des aktivierten Komplexes 150 kJ, der Produkte 90 kJ. Welche der Aussagen I. Die Reaktion ist exotherm. II. Die Aktivierungsenergie der Hinreaktion beträgt 110 kJ. III. Die Aktivierungsenergie der Rückreaktion beträgt 50 kJ. sind richtig?",
-        "fr": "Sur le diagramme d'énergie potentielle de la réaction en une étape X(g) → Y(g), on lit : énergie potentielle des réactifs 40 kJ, du complexe activé 150 kJ, des produits 90 kJ. Parmi les affirmations I. La réaction est exothermique. II. L'énergie d'activation de la réaction directe vaut 110 kJ. III. L'énergie d'activation de la réaction inverse vaut 50 kJ. lesquelles sont correctes ?",
-        "ru": "На диаграмме потенциальной энергии одностадийной реакции X(г) → Y(г) потенциальная энергия реагентов равна 40 кДж, активированного комплекса — 150 кДж, продуктов — 90 кДж. Какие из утверждений верны? I. Реакция экзотермическая. II. Энергия активации прямой реакции равна 110 кДж. III. Энергия активации обратной реакции равна 50 кДж.",
-        "ar": "في مخطط الطاقة الكامنة للتفاعل أحادي الخطوة X(g) → Y(g) تُقرأ الطاقة الكامنة للمتفاعلات 40 kJ، وللمعقد المنشط 150 kJ، وللنواتج 90 kJ. بناءً على ذلك، أيّ العبارات الآتية صحيحة؟ I. التفاعل طارد للحرارة. II. طاقة تنشيط التفاعل الأمامي 110 kJ. III. طاقة تنشيط التفاعل العكسي 50 kJ.",
-        "zh": "一步完成的反应 X(g) → Y(g) 的势能图中，读得反应物势能为 40 kJ，活化络合物势能为 150 kJ，生成物势能为 90 kJ。据此有下列说法：I. 该反应是放热反应。II. 正反应的活化能为 110 kJ。III. 逆反应的活化能为 50 kJ。其中正确的是哪些？",
-        "ku": "Di grafîka enerjiya potansiyel a reaksiyona X(g) → Y(g) ya ku di yek gavê de pêk tê de, enerjiya potansiyel a reaktantan 40 kJ, ya kompleksa aktîvkirî 150 kJ û ya hilberan 90 kJ tê xwendin. Li gorî vê, kîjan ji van gotinan rast in? I. Reaksiyon ekzotermîk e. II. Enerjiya aktîvasyonê ya reaksiyona pêşve 110 kJ e. III. Enerjiya aktîvasyonê ya reaksiyona paşve 50 kJ e."
+        "tr": "Şekilde tek basamakta gerçekleşen X(g) → Y(g) tepkimesinin potansiyel enerji–tepkime koordinatı grafiği verilmiştir. Bu tepkimeyle ilgili; I. İleri tepkimenin aktifleşme enerjisi 150 kJ'dir. II. Geri tepkimenin aktifleşme enerjisi 60 kJ'dir. III. Y(g) → X(g) tepkimesinde 50 kJ ısı açığa çıkar. yargılarından hangileri doğrudur?",
+        "en": "The graph shows potential energy versus reaction coordinate for the single-step reaction X(g) → Y(g). Which of the following statements about this reaction are correct? I. The activation energy of the forward reaction is 150 kJ. II. The activation energy of the reverse reaction is 60 kJ. III. 50 kJ of heat is released in the reaction Y(g) → X(g).",
+        "de": "Das Diagramm zeigt die potentielle Energie in Abhängigkeit von der Reaktionskoordinate für die einstufige Reaktion X(g) → Y(g). Welche Aussagen über diese Reaktion sind richtig? I. Die Aktivierungsenergie der Hinreaktion beträgt 150 kJ. II. Die Aktivierungsenergie der Rückreaktion beträgt 60 kJ. III. Bei der Reaktion Y(g) → X(g) werden 50 kJ Wärme frei.",
+        "fr": "Le graphique représente l'énergie potentielle en fonction de la coordonnée de réaction pour la réaction en une étape X(g) → Y(g). Lesquelles des affirmations suivantes sur cette réaction sont correctes ? I. L'énergie d'activation de la réaction directe vaut 150 kJ. II. L'énergie d'activation de la réaction inverse vaut 60 kJ. III. La réaction Y(g) → X(g) libère 50 kJ de chaleur.",
+        "ru": "На графике показана зависимость потенциальной энергии от координаты реакции для одностадийной реакции X(г) → Y(г). Какие утверждения об этой реакции верны? I. Энергия активации прямой реакции равна 150 кДж. II. Энергия активации обратной реакции равна 60 кДж. III. В реакции Y(г) → X(г) выделяется 50 кДж теплоты.",
+        "ar": "يبيّن الرسم الطاقة الكامنة مقابل إحداثي التفاعل للتفاعل أحادي الخطوة X(g) → Y(g). أيّ العبارات الآتية عن هذا التفاعل صحيحة؟ I. طاقة تنشيط التفاعل الأمامي 150 kJ. II. طاقة تنشيط التفاعل العكسي 60 kJ. III. تنطلق 50 kJ من الحرارة في التفاعل Y(g) → X(g).",
+        "zh": "图示为一步完成的反应 X(g) → Y(g) 的势能–反应进程图。关于该反应有下列说法：I. 正反应的活化能为 150 kJ。II. 逆反应的活化能为 60 kJ。III. 反应 Y(g) → X(g) 放出 50 kJ 热量。其中正确的是哪些？",
+        "ku": "Di şiklê de grafîka enerjiya potansiyel–koordînata reaksiyonê ya reaksiyona X(g) → Y(g) ya ku di yek gavê de pêk tê hatiye dayîn. Derbarê vê reaksiyonê de; I. Enerjiya aktîvasyonê ya reaksiyona pêşve 150 kJ e. II. Enerjiya aktîvasyonê ya reaksiyona paşve 60 kJ e. III. Di reaksiyona Y(g) → X(g) de 50 kJ germ derdikeve. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1521,7 +1622,7 @@ export const unit16: ChemistryUnitSeedData = {
           "fr": "I seulement",
           "ru": "Только I",
           "ar": "I فقط",
-          "zh": "仅 I",
+          "zh": "仅I",
           "ku": "Tenê I"
         },
         {
@@ -1531,7 +1632,7 @@ export const unit16: ChemistryUnitSeedData = {
           "fr": "II seulement",
           "ru": "Только II",
           "ar": "II فقط",
-          "zh": "仅 II",
+          "zh": "仅II",
           "ku": "Tenê II"
         },
         {
@@ -1541,7 +1642,7 @@ export const unit16: ChemistryUnitSeedData = {
           "fr": "I et II",
           "ru": "I и II",
           "ar": "I و II",
-          "zh": "I 和 II",
+          "zh": "I和II",
           "ku": "I û II"
         },
         {
@@ -1551,7 +1652,7 @@ export const unit16: ChemistryUnitSeedData = {
           "fr": "I et III",
           "ru": "I и III",
           "ar": "I و III",
-          "zh": "I 和 III",
+          "zh": "I和III",
           "ku": "I û III"
         },
         {
@@ -1561,20 +1662,110 @@ export const unit16: ChemistryUnitSeedData = {
           "fr": "II et III",
           "ru": "II и III",
           "ar": "II و III",
-          "zh": "II 和 III",
+          "zh": "II和III",
           "ku": "II û III"
         }
       ],
-      "correctIndex": 1,
+      "correctIndex": 4,
       "explanation": {
-        "tr": "ΔH = Eürünler − Egirenler = 90 − 40 = +50 kJ; ΔH > 0 olduğundan tepkime endotermiktir, I yanlıştır. Eai = EAK − Egirenler = 150 − 40 = 110 kJ, II doğrudur. Eag = EAK − Eürünler = 150 − 90 = 60 kJ'dir; 50 kJ ΔH'nin değeridir, III yanlıştır. Yalnız II doğrudur.",
-        "en": "ΔH = Eproducts − Ereactants = 90 − 40 = +50 kJ; since ΔH > 0 the reaction is endothermic, so I is false. Eai = Ecomplex − Ereactants = 150 − 40 = 110 kJ, so II is true. Eag = Ecomplex − Eproducts = 150 − 90 = 60 kJ; 50 kJ is the value of ΔH, so III is false. Only II is correct.",
-        "de": "ΔH = EProdukte − EEdukte = 90 − 40 = +50 kJ; da ΔH > 0, ist die Reaktion endotherm, I ist falsch. Eai = EKomplex − EEdukte = 150 − 40 = 110 kJ, II ist richtig. Eag = EKomplex − EProdukte = 150 − 90 = 60 kJ; 50 kJ ist der Wert von ΔH, III ist falsch. Nur II ist richtig.",
-        "fr": "ΔH = Eproduits − Eréactifs = 90 − 40 = +50 kJ ; ΔH > 0 donc la réaction est endothermique, I est fausse. Eai = Ecomplexe − Eréactifs = 150 − 40 = 110 kJ, II est vraie. Eag = Ecomplexe − Eproduits = 150 − 90 = 60 kJ ; 50 kJ est la valeur de ΔH, III est fausse. Seule II est correcte.",
-        "ru": "ΔH = Eпродуктов − Eреагентов = 90 − 40 = +50 кДж; так как ΔH > 0, реакция эндотермическая, I неверно. Ea(пр) = Eкомплекса − Eреагентов = 150 − 40 = 110 кДж, II верно. Ea(обр) = Eкомплекса − Eпродуктов = 150 − 90 = 60 кДж; 50 кДж — это значение ΔH, III неверно. Верно только II.",
-        "ar": "ΔH = Eالنواتج − Eالمتفاعلات = 90 − 40 = +50 kJ؛ وبما أن ΔH > 0 فالتفاعل ماص للحرارة، فالعبارة I خاطئة. Eai = Eالمعقد − Eالمتفاعلات = 150 − 40 = 110 kJ، فالعبارة II صحيحة. Eag = Eالمعقد − Eالنواتج = 150 − 90 = 60 kJ؛ و50 kJ هي قيمة ΔH، فالعبارة III خاطئة. الصحيحة II فقط.",
-        "zh": "ΔH = E生成物 − E反应物 = 90 − 40 = +50 kJ；ΔH > 0，反应吸热，I 错误。Eai = E络合物 − E反应物 = 150 − 40 = 110 kJ，II 正确。Eag = E络合物 − E生成物 = 150 − 90 = 60 kJ；50 kJ 是 ΔH 的值，III 错误。只有 II 正确。",
-        "ku": "ΔH = Ehilber − Ereaktant = 90 − 40 = +50 kJ; ji ber ku ΔH > 0 e, reaksiyon endotermîk e: I şaş e. Eai = Ekompleks − Ereaktant = 150 − 40 = 110 kJ: II rast e. Eag = Ekompleks − Ehilber = 150 − 90 = 60 kJ e; 50 kJ nirxa ΔH ye: III şaş e. Tenê II rast e."
+        "tr": "Grafikten girenlerin (X) potansiyel enerjisi 40 kJ, aktifleşmiş kompleksinki 150 kJ, ürünlerin (Y) potansiyel enerjisi 90 kJ olarak okunur. I yanlıştır: Eai = 150 − 40 = 110 kJ'dir; 150 kJ aktifleşmiş kompleksin potansiyel enerjisidir, aktifleşme enerjisi değildir. II doğrudur: Eag = 150 − 90 = 60 kJ. III doğrudur: X → Y için ΔH = 90 − 40 = +50 kJ olduğundan ters tepkime Y → X için ΔH = −50 kJ'dir, yani 50 kJ ısı açığa çıkar. Doğru yargılar II ve III'tür.",
+        "en": "From the graph, the potential energy of the reactant (X) is 40 kJ, that of the activated complex is 150 kJ and that of the product (Y) is 90 kJ. I is wrong: Ea(forward) = 150 − 40 = 110 kJ; 150 kJ is the potential energy of the activated complex, not the activation energy. II is correct: Ea(reverse) = 150 − 90 = 60 kJ. III is correct: for X → Y, ΔH = 90 − 40 = +50 kJ, so for the reverse reaction Y → X, ΔH = −50 kJ, i.e. 50 kJ of heat is released. The correct statements are II and III.",
+        "de": "Aus dem Diagramm: potentielle Energie des Edukts (X) 40 kJ, des aktivierten Komplexes 150 kJ, des Produkts (Y) 90 kJ. I ist falsch: Ea(hin) = 150 − 40 = 110 kJ; 150 kJ ist die potentielle Energie des aktivierten Komplexes, nicht die Aktivierungsenergie. II ist richtig: Ea(rück) = 150 − 90 = 60 kJ. III ist richtig: Für X → Y gilt ΔH = 90 − 40 = +50 kJ, für die Rückreaktion Y → X also ΔH = −50 kJ, d. h. es werden 50 kJ Wärme frei. Richtig sind II und III.",
+        "fr": "Sur le graphique, l'énergie potentielle du réactif (X) vaut 40 kJ, celle du complexe activé 150 kJ et celle du produit (Y) 90 kJ. I est fausse : Ea(directe) = 150 − 40 = 110 kJ ; 150 kJ est l'énergie potentielle du complexe activé, pas l'énergie d'activation. II est correcte : Ea(inverse) = 150 − 90 = 60 kJ. III est correcte : pour X → Y, ΔH = 90 − 40 = +50 kJ, donc pour la réaction inverse Y → X, ΔH = −50 kJ : 50 kJ de chaleur sont libérés. Les affirmations correctes sont II et III.",
+        "ru": "По графику потенциальная энергия реагента (X) равна 40 кДж, активированного комплекса — 150 кДж, продукта (Y) — 90 кДж. I неверно: Ea(прям) = 150 − 40 = 110 кДж; 150 кДж — это потенциальная энергия активированного комплекса, а не энергия активации. II верно: Ea(обр) = 150 − 90 = 60 кДж. III верно: для X → Y ΔH = 90 − 40 = +50 кДж, значит, для обратной реакции Y → X ΔH = −50 кДж, т. е. выделяется 50 кДж теплоты. Верны II и III.",
+        "ar": "يُقرأ من الرسم أن الطاقة الكامنة للمتفاعل (X) هي 40 kJ، وللمعقد المنشط 150 kJ، وللناتج (Y) 90 kJ. العبارة I خاطئة: طاقة التنشيط الأمامية = 150 − 40 = 110 kJ، و150 kJ هي الطاقة الكامنة للمعقد المنشط لا طاقة التنشيط. العبارة II صحيحة: طاقة التنشيط العكسية = 150 − 90 = 60 kJ. العبارة III صحيحة: للتفاعل X → Y يكون ΔH = 90 − 40 = +50 kJ، فللتفاعل العكسي Y → X يكون ΔH = −50 kJ، أي تنطلق 50 kJ من الحرارة. العبارتان الصحيحتان هما II وIII.",
+        "zh": "由图读出反应物 (X) 的势能为 40 kJ，活化络合物为 150 kJ，生成物 (Y) 为 90 kJ。I 错误：正反应活化能 = 150 − 40 = 110 kJ，150 kJ 是活化络合物的势能，不是活化能。II 正确：逆反应活化能 = 150 − 90 = 60 kJ。III 正确：X → Y 的 ΔH = 90 − 40 = +50 kJ，所以逆反应 Y → X 的 ΔH = −50 kJ，即放出 50 kJ 热量。正确的是 II 和 III。",
+        "ku": "Ji grafîkê enerjiya potansiyel a reaktantê (X) 40 kJ, ya kompleksa aktîvkirî 150 kJ, ya hilberê (Y) jî 90 kJ tê xwendin. I şaş e: Eai = 150 − 40 = 110 kJ; 150 kJ enerjiya potansiyel a kompleksa aktîvkirî ye, ne enerjiya aktîvasyonê ye. II rast e: Eag = 150 − 90 = 60 kJ. III rast e: ji bo X → Y ΔH = 90 − 40 = +50 kJ e, ji ber vê ji bo reaksiyona berevajî Y → X ΔH = −50 kJ e, yanî 50 kJ germ derdikeve. Gotinên rast II û III ne."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Tepkime koordinatı",
+          "en": "Reaction coordinate",
+          "de": "Reaktionskoordinate",
+          "fr": "Coordonnée de réaction",
+          "ru": "Координата реакции",
+          "ar": "إحداثي التفاعل",
+          "zh": "反应进程",
+          "ku": "Koordînata reaksiyonê"
+        },
+        "yLabel": {
+          "tr": "Potansiyel enerji (kJ)",
+          "en": "Potential energy (kJ)",
+          "de": "Potentielle Energie (kJ)",
+          "fr": "Énergie potentielle (kJ)",
+          "ru": "Потенциальная энергия (кДж)",
+          "ar": "الطاقة الكامنة (kJ)",
+          "zh": "势能 (kJ)",
+          "ku": "Enerjiya potansiyel (kJ)"
+        },
+        "xMax": 10,
+        "yMax": 170,
+        "yTicks": [
+          40,
+          90,
+          150
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                40
+              ],
+              [
+                2,
+                40
+              ],
+              [
+                3,
+                52
+              ],
+              [
+                4,
+                100
+              ],
+              [
+                5,
+                150
+              ],
+              [
+                6,
+                128
+              ],
+              [
+                7,
+                98
+              ],
+              [
+                8,
+                90
+              ],
+              [
+                10,
+                90
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 1,
+            "y": 40,
+            "label": "X(g)"
+          },
+          {
+            "x": 9,
+            "y": 90,
+            "label": "Y(g)"
+          },
+          {
+            "x": 5,
+            "y": 150,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
@@ -1656,14 +1847,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin09",
       "stem": {
-        "tr": "2H2(g) + O2(g) → 2H2O(s)  ΔH = −572 kJ. Kapalı bir kapta 4 g H2 ile 16 g O2 tam verimle tepkimeye giriyor. Buna göre en fazla kaç kJ ısı açığa çıkar? (H = 1, O = 16)",
+        "tr": "2H2(g) + O2(g) → 2H2O(s)  ΔH = −572 kJ. Kapalı bir kapta 4 g H2 ile 16 g O2 tam verimle tepkimeye giriyor. En fazla kaç kJ ısı açığa çıkar? (H = 1, O = 16)",
         "en": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ. In a closed container 4 g of H2 and 16 g of O2 react with complete yield. How many kJ of heat are released at most? (H = 1, O = 16)",
         "de": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ. In einem geschlossenen Gefäß reagieren 4 g H2 und 16 g O2 vollständig. Wie viel kJ Wärme werden höchstens frei? (H = 1, O = 16)",
         "fr": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ. Dans un récipient fermé, 4 g de H2 et 16 g de O2 réagissent avec un rendement total. Combien de kJ de chaleur sont libérés au maximum ? (H = 1, O = 16)",
         "ru": "2H2(г) + O2(г) → 2H2O(ж)  ΔH = −572 кДж. В закрытом сосуде 4 г H2 и 16 г O2 реагируют с выходом 100 %. Какое наибольшее количество теплоты (кДж) может выделиться? (H = 1, O = 16)",
         "ar": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ. في وعاء مغلق يتفاعل 4 g من H2 مع 16 g من O2 بمردود كامل. كم kJ من الحرارة تنطلق على الأكثر؟ (H = 1، O = 16)",
         "zh": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ。在密闭容器中 4 g H2 与 16 g O2 完全反应。最多放出多少 kJ 热量？(H = 1，O = 16)",
-        "ku": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ. Di firaxeke girtî de 4 g H2 û 16 g O2 bi berhema tam dikevin reaksiyonê. Li gorî vê, herî zêde çend kJ germ derdikeve? (H = 1, O = 16)"
+        "ku": "2H2(g) + O2(g) → 2H2O(l)  ΔH = −572 kJ. Di firaxeke girtî de 4 g H2 û 16 g O2 bi berhema tam dikevin reaksiyonê. Herî zêde çend kJ germ derdikeve? (H = 1, O = 16)"
       },
       "options": [
         {
@@ -1884,14 +2075,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin12",
       "stem": {
-        "tr": "Bazı bağların ortalama bağ enerjileri H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol'dür. Buna göre, I. Bu üç bağ arasında en sağlam bağ H–F bağıdır. II. 1 mol HBr(g)'yi gaz hâlindeki H ve Br atomlarına ayırmak için 366 kJ enerji gerekir. III. H(g) + Cl(g) → HCl(g) olayı endotermiktir. yargılarından hangileri doğrudur?",
-        "en": "The average bond energies of some bonds are H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol. Accordingly, which of the statements I. Of these three bonds, the strongest is the H–F bond. II. 366 kJ of energy is needed to separate 1 mol of HBr(g) into gaseous H and Br atoms. III. The process H(g) + Cl(g) → HCl(g) is endothermic. are correct?",
+        "tr": "Bazı bağların ortalama bağ enerjileri H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol'dür. Bu bağlarla ilgili; I. Bu üç bağ arasında en sağlam bağ H–F bağıdır. II. 1 mol HBr(g)'yi gaz hâlindeki H ve Br atomlarına ayırmak için 366 kJ enerji gerekir. III. H(g) + Cl(g) → HCl(g) olayı endotermiktir. yargılarından hangileri doğrudur?",
+        "en": "The average bond energies of some bonds are H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol. Which of the statements I. Of these three bonds, the strongest is the H–F bond. II. 366 kJ of energy is needed to separate 1 mol of HBr(g) into gaseous H and Br atoms. III. The process H(g) + Cl(g) → HCl(g) is endothermic. are correct?",
         "de": "Die mittleren Bindungsenergien einiger Bindungen sind H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol. Welche der Aussagen I. Von diesen drei Bindungen ist die H–F-Bindung die stärkste. II. Um 1 mol HBr(g) in gasförmige H- und Br-Atome zu zerlegen, sind 366 kJ nötig. III. Der Vorgang H(g) + Cl(g) → HCl(g) ist endotherm. sind richtig?",
         "fr": "Les énergies moyennes de quelques liaisons sont H–F : 567 kJ/mol, H–Cl : 431 kJ/mol, H–Br : 366 kJ/mol. Parmi les affirmations I. Des trois liaisons, la plus solide est la liaison H–F. II. Il faut 366 kJ pour séparer 1 mol de HBr(g) en atomes H et Br gazeux. III. Le processus H(g) + Cl(g) → HCl(g) est endothermique. lesquelles sont correctes ?",
         "ru": "Средние энергии некоторых связей: H–F — 567 кДж/моль, H–Cl — 431 кДж/моль, H–Br — 366 кДж/моль. Какие из утверждений верны? I. Из этих трёх связей самая прочная — H–F. II. Чтобы разложить 1 моль HBr(г) на атомы H и Br в газовой фазе, нужно 366 кДж. III. Процесс H(г) + Cl(г) → HCl(г) эндотермический.",
-        "ar": "متوسطات طاقات بعض الروابط: H–F: 567 kJ/mol، H–Cl: 431 kJ/mol، H–Br: 366 kJ/mol. بناءً على ذلك، أيّ العبارات الآتية صحيحة؟ I. أقوى هذه الروابط الثلاث هي الرابطة H–F. II. يلزم 366 kJ لفصل 1 mol من HBr(g) إلى ذرات H وBr غازية. III. العملية H(g) + Cl(g) → HCl(g) ماصة للحرارة.",
-        "zh": "一些化学键的平均键能为 H–F 567 kJ/mol、H–Cl 431 kJ/mol、H–Br 366 kJ/mol。据此有下列说法：I. 三种键中最牢固的是 H–F 键。II. 将 1 mol HBr(g) 分解为气态 H 原子和 Br 原子需要 366 kJ 能量。III. 过程 H(g) + Cl(g) → HCl(g) 是吸热的。其中正确的是哪些？",
-        "ku": "Enerjiyên girêdanê yên navînî yên hin girêdanan ev in: H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol. Li gorî vê, kîjan ji van gotinan rast in? I. Di nav van sê girêdanan de girêdana herî xurt H–F ye. II. Ji bo ku 1 mol HBr(g) bibe atomên H û Br ên di rewşa gaz de, 366 kJ enerjî pêwîst e. III. Bûyera H(g) + Cl(g) → HCl(g) endotermîk e."
+        "ar": "متوسطات طاقات بعض الروابط: H–F: 567 kJ/mol، H–Cl: 431 kJ/mol، H–Br: 366 kJ/mol. أيّ العبارات الآتية صحيحة؟ I. أقوى هذه الروابط الثلاث هي الرابطة H–F. II. يلزم 366 kJ لفصل 1 mol من HBr(g) إلى ذرات H وBr غازية. III. العملية H(g) + Cl(g) → HCl(g) ماصة للحرارة.",
+        "zh": "一些化学键的平均键能为 H–F 567 kJ/mol、H–Cl 431 kJ/mol、H–Br 366 kJ/mol。有下列说法：I. 三种键中最牢固的是 H–F 键。II. 将 1 mol HBr(g) 分解为气态 H 原子和 Br 原子需要 366 kJ 能量。III. 过程 H(g) + Cl(g) → HCl(g) 是吸热的。其中正确的是哪些？",
+        "ku": "Enerjiyên girêdanê yên navînî yên hin girêdanan ev in: H–F: 567 kJ/mol, H–Cl: 431 kJ/mol, H–Br: 366 kJ/mol. Kîjan ji van gotinan rast in? I. Di nav van sê girêdanan de girêdana herî xurt H–F ye. II. Ji bo ku 1 mol HBr(g) bibe atomên H û Br ên di rewşa gaz de, 366 kJ enerjî pêwîst e. III. Bûyera H(g) + Cl(g) → HCl(g) endotermîk e."
       },
       "options": [
         {
@@ -2112,14 +2303,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin15",
       "stem": {
-        "tr": "C2H5OH(s) + 3O2(g) → 2CO2(g) + 3H2O(s)  ΔH = −1367 kJ. CO2(g) ve H2O(s)'nin standart oluşum entalpileri sırasıyla −394 kJ/mol ve −286 kJ/mol olduğuna göre C2H5OH(s)'nin standart oluşum entalpisi kaç kJ/mol'dür?",
-        "en": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. Given that the standard enthalpies of formation of CO2(g) and H2O(l) are −394 kJ/mol and −286 kJ/mol respectively, what is the standard enthalpy of formation of C2H5OH(l) in kJ/mol?",
-        "de": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. Die Standardbildungsenthalpien von CO2(g) und H2O(l) betragen −394 kJ/mol bzw. −286 kJ/mol. Wie groß ist die Standardbildungsenthalpie von C2H5OH(l) in kJ/mol?",
-        "fr": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. Les enthalpies standard de formation de CO2(g) et H2O(l) valent respectivement −394 kJ/mol et −286 kJ/mol. Quelle est l'enthalpie standard de formation de C2H5OH(l) en kJ/mol ?",
-        "ru": "C2H5OH(ж) + 3O2(г) → 2CO2(г) + 3H2O(ж)  ΔH = −1367 кДж. Стандартные энтальпии образования CO2(г) и H2O(ж) равны −394 кДж/моль и −286 кДж/моль соответственно. Чему равна стандартная энтальпия образования C2H5OH(ж) в кДж/моль?",
-        "ar": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. إذا كان المحتوى الحراري القياسي لتكوين CO2(g) وH2O(l) هو −394 kJ/mol و−286 kJ/mol على الترتيب، فكم يبلغ المحتوى الحراري القياسي لتكوين C2H5OH(l) بوحدة kJ/mol؟",
-        "zh": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ。已知 CO2(g) 和 H2O(l) 的标准生成焓分别为 −394 kJ/mol 和 −286 kJ/mol，则 C2H5OH(l) 的标准生成焓是多少 kJ/mol？",
-        "ku": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. Heke entalpiyên çêbûnê yên standard ên CO2(g) û H2O(l) bi rêzê −394 kJ/mol û −286 kJ/mol bin, entalpiya çêbûnê ya standard a C2H5OH(l) çend kJ/mol e?"
+        "tr": "C2H5OH(s) + 3O2(g) → 2CO2(g) + 3H2O(s)  ΔH = −1367 kJ. Tabloda bazı maddelerin standart oluşum entalpileri verilmiştir. C2H5OH(s)'nin standart oluşum entalpisi kaç kJ/mol'dür?",
+        "en": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. The table gives the standard enthalpies of formation of some substances. What is the standard enthalpy of formation of C2H5OH(l) in kJ/mol?",
+        "de": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. Die Tabelle gibt die Standardbildungsenthalpien einiger Stoffe an. Wie groß ist die Standardbildungsenthalpie von C2H5OH(l) in kJ/mol?",
+        "fr": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. Le tableau donne les enthalpies standard de formation de quelques substances. Quelle est l'enthalpie standard de formation de C2H5OH(l) en kJ/mol ?",
+        "ru": "C2H5OH(ж) + 3O2(г) → 2CO2(г) + 3H2O(ж)  ΔH = −1367 кДж. В таблице приведены стандартные энтальпии образования некоторых веществ. Чему равна стандартная энтальпия образования C2H5OH(ж) в кДж/моль?",
+        "ar": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. يبيّن الجدول المحتوى الحراري القياسي لتكوين بعض المواد. كم يبلغ المحتوى الحراري القياسي لتكوين C2H5OH(l) بوحدة kJ/mol؟",
+        "zh": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ。表中给出了一些物质的标准生成焓。C2H5OH(l) 的标准生成焓是多少 kJ/mol？",
+        "ku": "C2H5OH(l) + 3O2(g) → 2CO2(g) + 3H2O(l)  ΔH = −1367 kJ. Di tabloyê de entalpiyên çêbûnê yên standard ên hin madeyan hatine dayîn. Entalpiya çêbûnê ya standard a C2H5OH(l) çend kJ/mol e?"
       },
       "options": [
         {
@@ -2143,6 +2334,16 @@ export const unit16: ChemistryUnitSeedData = {
           "ku": "−279"
         },
         {
+          "tr": "−147",
+          "en": "−147",
+          "de": "−147",
+          "fr": "−147",
+          "ru": "−147",
+          "ar": "−147",
+          "zh": "−147",
+          "ku": "−147"
+        },
+        {
           "tr": "+279",
           "en": "+279",
           "de": "+279",
@@ -2161,28 +2362,97 @@ export const unit16: ChemistryUnitSeedData = {
           "ar": "+687",
           "zh": "+687",
           "ku": "+687"
-        },
-        {
-          "tr": "+3013",
-          "en": "+3013",
-          "de": "+3013",
-          "fr": "+3013",
-          "ru": "+3013",
-          "ar": "+3013",
-          "zh": "+3013",
-          "ku": "+3013"
         }
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "ΔH = ΣΔHf(ürünler) − ΣΔHf(girenler). Ürünler: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 element olduğundan ΔHf° = 0'dır. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Eşitliği yanlış düzenleyip −1646 − 1367 işlemini yapan −3013, katsayıları unutan (−394 − 286 = −680) +687 kJ/mol bulur.",
-        "en": "ΔH = ΣΔHf(products) − ΣΔHf(reactants). Products: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 is an element, so ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Rearranging wrongly as −1646 − 1367 gives −3013; forgetting the coefficients (−394 − 286 = −680) gives +687 kJ/mol.",
-        "de": "ΔH = ΣΔHf(Produkte) − ΣΔHf(Edukte). Produkte: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 ist ein Element, ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Wer falsch umstellt (−1646 − 1367), erhält −3013; wer die Koeffizienten vergisst (−394 − 286 = −680), +687 kJ/mol.",
-        "fr": "ΔH = ΣΔHf(produits) − ΣΔHf(réactifs). Produits : 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 est un corps simple, ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Mal réarranger l'égalité (−1646 − 1367) donne −3013 ; oublier les coefficients (−394 − 286 = −680) donne +687 kJ/mol.",
-        "ru": "ΔH = ΣΔHf(продуктов) − ΣΔHf(реагентов). Продукты: 2(−394) + 3(−286) = −788 − 858 = −1646 кДж. O2 — простое вещество, ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 кДж/моль. Ученик, неверно преобразовавший равенство (−1646 − 1367), получит −3013; забывший коэффициенты (−394 − 286 = −680) — +687 кДж/моль.",
-        "ar": "ΔH = ΣΔHf(النواتج) − ΣΔHf(المتفاعلات). النواتج: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 عنصر فـ ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. من يرتب المعادلة خطأً (−1646 − 1367) يحصل على −3013، ومن ينسى المعاملات (−394 − 286 = −680) يحصل على +687 kJ/mol.",
-        "zh": "ΔH = ΣΔHf(生成物) − ΣΔHf(反应物)。生成物：2(−394) + 3(−286) = −788 − 858 = −1646 kJ。O2 是单质，ΔHf° = 0。−1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol。错误变形为 −1646 − 1367 得 −3013；忘记化学计量数(−394 − 286 = −680)得 +687 kJ/mol。",
-        "ku": "ΔH = ΣΔHf(hilber) − ΣΔHf(reaktant). Hilber: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 element e, loma ΔHf° = 0 e. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Kesê ku wekheviyê şaş saz dike û −1646 − 1367 hesab dike −3013, kesê ku hevberan ji bîr dike (−394 − 286 = −680) +687 kJ/mol dibîne."
+        "tr": "Tablodan denklemdeki fiziksel hâllere uygun değerler seçilir: su sıvı hâlde oluştuğundan H2O(s) için −286 kJ/mol kullanılır; H2O(g) değeri bu tepkimeye ait değildir. ΔH = ΣΔHf(ürünler) − ΣΔHf(girenler). Ürünler: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 element olduğundan ΔHf° = 0'dır. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Eşitliği yanlış düzenleyip −1646 − 1367 işlemini yapan −3013, katsayıları unutan (−394 − 286 = −680) +687 kJ/mol bulur. Su için H2O(g) değerini (−242) kullanan öğrenci −147 kJ/mol bulur.",
+        "en": "From the table, the values matching the physical states in the equation are chosen: water forms as a liquid, so −286 kJ/mol for H2O(l) is used; the H2O(g) value does not belong to this reaction. ΔH = ΣΔHf(products) − ΣΔHf(reactants). Products: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 is an element, so ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Rearranging wrongly as −1646 − 1367 gives −3013; forgetting the coefficients (−394 − 286 = −680) gives +687 kJ/mol. Using the H2O(g) value (−242) for water gives −147 kJ/mol.",
+        "de": "Aus der Tabelle werden die zu den Aggregatzuständen der Gleichung passenden Werte gewählt: Wasser entsteht flüssig, daher wird −286 kJ/mol für H2O(l) verwendet; der Wert für H2O(g) gehört nicht zu dieser Reaktion. ΔH = ΣΔHf(Produkte) − ΣΔHf(Edukte). Produkte: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 ist ein Element, ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Wer falsch umstellt (−1646 − 1367), erhält −3013; wer die Koeffizienten vergisst (−394 − 286 = −680), +687 kJ/mol. Wer für Wasser den Wert von H2O(g) (−242) einsetzt, erhält −147 kJ/mol.",
+        "fr": "Dans le tableau, on choisit les valeurs correspondant aux états physiques de l'équation : l'eau se forme à l'état liquide, on utilise donc −286 kJ/mol pour H2O(l) ; la valeur de H2O(g) ne concerne pas cette réaction. ΔH = ΣΔHf(produits) − ΣΔHf(réactifs). Produits : 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 est un corps simple, ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Mal réarranger l'égalité (−1646 − 1367) donne −3013 ; oublier les coefficients (−394 − 286 = −680) donne +687 kJ/mol. Utiliser la valeur de H2O(g) (−242) pour l'eau donne −147 kJ/mol.",
+        "ru": "Из таблицы выбирают значения, соответствующие агрегатным состояниям в уравнении: вода образуется жидкой, поэтому берут −286 кДж/моль для H2O(ж); значение для H2O(г) к этой реакции не относится. ΔH = ΣΔHf(продуктов) − ΣΔHf(реагентов). Продукты: 2(−394) + 3(−286) = −788 − 858 = −1646 кДж. O2 — простое вещество, ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 кДж/моль. Ученик, неверно преобразовавший равенство (−1646 − 1367), получит −3013; забывший коэффициенты (−394 − 286 = −680) — +687 кДж/моль. Если взять для воды значение H2O(г) (−242), получится −147 кДж/моль.",
+        "ar": "تُختار من الجدول القيم المطابقة للحالات الفيزيائية في المعادلة: يتكوّن الماء سائلًا، لذا تُستخدم القيمة −286 kJ/mol لـ H2O(l)، أما قيمة H2O(g) فلا تخص هذا التفاعل. ΔH = ΣΔHf(النواتج) − ΣΔHf(المتفاعلات). النواتج: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 عنصر فـ ΔHf° = 0. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. من يرتب المعادلة خطأً (−1646 − 1367) يحصل على −3013، ومن ينسى المعاملات (−394 − 286 = −680) يحصل على +687 kJ/mol. ومن يستخدم قيمة H2O(g) (−242) للماء يحصل على −147 kJ/mol.",
+        "zh": "从表中选取与方程式中物质状态相符的数据：生成的水是液态，应取 H2O(l) 的 −286 kJ/mol；H2O(g) 的数据不适用于该反应。ΔH = ΣΔHf(生成物) − ΣΔHf(反应物)。生成物：2(−394) + 3(−286) = −788 − 858 = −1646 kJ。O2 是单质，ΔHf° = 0。−1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol。错误变形为 −1646 − 1367 得 −3013；忘记化学计量数(−394 − 286 = −680)得 +687 kJ/mol。若对水误用 H2O(g) 的数据 (−242)，则得 −147 kJ/mol。",
+        "ku": "Ji tabloyê nirxên ku li gorî rewşên fîzîkî yên di hevkêşeyê de ne tên hilbijartin: av bi rewşa şile çêdibe, ji ber vê ji bo H2O(l) −286 kJ/mol tê bikaranîn; nirxa H2O(g) ne ya vê reaksiyonê ye. ΔH = ΣΔHf(hilber) − ΣΔHf(reaktant). Hilber: 2(−394) + 3(−286) = −788 − 858 = −1646 kJ. O2 element e, loma ΔHf° = 0 e. −1367 = −1646 − ΔHf(C2H5OH) → ΔHf(C2H5OH) = −1646 + 1367 = −279 kJ/mol. Kesê ku wekheviyê şaş saz dike û −1646 − 1367 hesab dike −3013, kesê ku hevberan ji bîr dike (−394 − 286 = −680) +687 kJ/mol dibîne. Kesê ku ji bo avê nirxa H2O(g) (−242) bi kar tîne −147 kJ/mol dibîne."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Madde",
+            "en": "Substance",
+            "de": "Stoff",
+            "fr": "Substance",
+            "ru": "Вещество",
+            "ar": "المادة",
+            "zh": "物质",
+            "ku": "Made"
+          },
+          {
+            "tr": "ΔHf° (kJ/mol)",
+            "en": "ΔHf° (kJ/mol)",
+            "de": "ΔHf° (kJ/mol)",
+            "fr": "ΔHf° (kJ/mol)",
+            "ru": "ΔHf° (кДж/моль)",
+            "ar": "ΔHf° (kJ/mol)",
+            "zh": "ΔHf° (kJ/mol)",
+            "ku": "ΔHf° (kJ/mol)"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "tr": "CO2(g)",
+              "en": "CO2(g)",
+              "de": "CO2(g)",
+              "fr": "CO2(g)",
+              "ru": "CO2(г)",
+              "ar": "CO2(g)",
+              "zh": "CO2(g)",
+              "ku": "CO2(g)"
+            },
+            "−394"
+          ],
+          [
+            {
+              "tr": "H2O(s)",
+              "en": "H2O(l)",
+              "de": "H2O(l)",
+              "fr": "H2O(l)",
+              "ru": "H2O(ж)",
+              "ar": "H2O(l)",
+              "zh": "H2O(l)",
+              "ku": "H2O(l)"
+            },
+            "−286"
+          ],
+          [
+            {
+              "tr": "H2O(g)",
+              "en": "H2O(g)",
+              "de": "H2O(g)",
+              "fr": "H2O(g)",
+              "ru": "H2O(г)",
+              "ar": "H2O(g)",
+              "zh": "H2O(g)",
+              "ku": "H2O(g)"
+            },
+            "−242"
+          ],
+          [
+            {
+              "tr": "O2(g)",
+              "en": "O2(g)",
+              "de": "O2(g)",
+              "fr": "O2(g)",
+              "ru": "O2(г)",
+              "ar": "O2(g)",
+              "zh": "O2(g)",
+              "ku": "O2(g)"
+            },
+            "0"
+          ]
+        ]
       }
     },
     {
