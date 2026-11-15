@@ -5,6 +5,7 @@ import type { AppState } from '../../store/useAppStore';
 import type { DailyGoal, TextSizeStep } from '../../store/usePreferences';
 import { LANGUAGES, UI_TRANSLATIONS } from '../../i18n/translations';
 import { redesignStrings, redesignExtra } from '../../i18n/redesignStrings';
+import { trackOptions } from '../../i18n/examLevels';
 import { ConfirmDialog } from '../common/ConfirmDialog';
 import { MUSIC_TRACKS } from '../../audio/musicEngine';
 import { notificationManager } from '../../utils/notificationManager';
@@ -265,14 +266,8 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
             <p className="ky-eyebrow st-group__title" id="st-g-study">{r.study}</p>
             <div className="ky-row">
               <span className="ky-row__lbl" id="st-track">{r.targetExam}</span>
-              <div className="ky-seg ky-seg--sm" role="radiogroup" aria-labelledby="st-track">
-                {(
-                  [
-                    ['TYT_ONLY', 'TYT'],
-                    ['AYT_FOCUS', 'AYT'],
-                    ['TYT_FIRST', 'TYT → AYT'],
-                  ] as const
-                ).map(([val, label]) => (
+              <div className="ky-seg ky-seg--sm st-track-seg" role="radiogroup" aria-labelledby="st-track">
+                {trackOptions(lang).map(([val, label]) => (
                   <button
                     key={val}
                     type="button"

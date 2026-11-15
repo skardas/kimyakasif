@@ -61,13 +61,13 @@ export const unit04: ChemistryUnitSeedData = {
       },
       "osymTip": {
         "tr": "ÖSYM tuzağı: Buhar basıncı dış basınca bağlı değildir!",
-        "en": "ÖSYM trap: Vapour pressure does not depend on external pressure!",
-        "de": "ÖSYM-Falle: Dampfdruck ist nicht vom Außendruck abhängig!",
-        "fr": "Piège ÖSYM : La pression de vapeur ne dépend pas de la pression extérieure !",
+        "en": "Exam trap: Vapour pressure does not depend on external pressure!",
+        "de": "Prüfungsfalle: Dampfdruck ist nicht vom Außendruck abhängig!",
+        "fr": "Piège d’examen : la pression de vapeur ne dépend pas de la pression extérieure !",
         "ru": "Типичная ловушка на экзамене: давление пара не зависит от внешнего давления!",
         "ar": "فخ شائع في الامتحان: ضغط البخار لا يعتمد على الضغط الخارجي!",
         "zh": "考试陷阱：蒸气压与外界压强无关！",
-        "ku": "Xefika ÖSYM-ê: Zexta buharê bi zexta derve ve ne girêdayî ye!"
+        "ku": "Xefika azmûnê: Zexta buharê bi zexta derve ve ne girêdayî ye!"
       }
     },
     {

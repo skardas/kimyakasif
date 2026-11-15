@@ -2242,6 +2242,9 @@ button.ky-chip.on, button.ky-chip[aria-pressed="true"] {
   font-weight: 700;
   cursor: pointer;
   line-height: 1.15;
+  /* Long level names ("Approfondissement", "Углублённый") break at syllables instead of overflowing. */
+  overflow-wrap: break-word;
+  hyphens: auto;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 

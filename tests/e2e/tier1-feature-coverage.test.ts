@@ -969,7 +969,7 @@ export async function runTier1Tests(): Promise<void> {
       expect(LANGUAGES[0].code).toBe('tr');
       expect(LANGUAGES[0].dir).toBe('ltr');
       const tr = UI_TRANSLATIONS.tr;
-      expect(tr.appName).toBe('Kimya 3D');
+      expect(tr.appName).toBe('Kimolab');
       expect(tr.nav.curriculum).toBe('Konular');
       expect(tr.nav.lab3d).toBe('3D Lab');
       expect(tr.nav.cards).toBe('Kartlar');
@@ -983,7 +983,7 @@ export async function runTier1Tests(): Promise<void> {
   printTestResult(
     await test('T1.F13.02', 1, 'F13-I18N', 'English (EN) translation contains complete shell mappings', () => {
       const en = UI_TRANSLATIONS.en;
-      expect(en.appName).toBe('Chemistry 3D');
+      expect(en.appName).toBe('Kimolab');
       expect(en.nav.curriculum).toBe('Curriculum');
       expect(en.nav.lab3d).toBe('3D Lab');
       expect(SHELL_STRINGS.en.next).toBe('Next');
@@ -994,7 +994,7 @@ export async function runTier1Tests(): Promise<void> {
   printTestResult(
     await test('T1.F13.03', 1, 'F13-I18N', 'German (DE) translation contains complete shell mappings', () => {
       const de = UI_TRANSLATIONS.de;
-      expect(de.appName).toBe('Chemie 3D');
+      expect(de.appName).toBe('Kimolab');
       expect(de.nav.curriculum).toBe('Themen');
       expect(de.nav.lab3d).toBe('3D-Labor');
       expect(SHELL_STRINGS.de.next).toBe('Weiter');
@@ -1005,7 +1005,7 @@ export async function runTier1Tests(): Promise<void> {
   printTestResult(
     await test('T1.F13.04', 1, 'F13-I18N', 'French (FR) translation contains complete shell mappings', () => {
       const fr = UI_TRANSLATIONS.fr;
-      expect(fr.appName).toBe('Chimie 3D');
+      expect(fr.appName).toBe('Kimolab');
       expect(fr.nav.curriculum).toBe('Programme');
       expect(fr.nav.lab3d).toBe('Labo 3D');
       expect(SHELL_STRINGS.fr.next).toBe('Suivant');
@@ -1016,7 +1016,7 @@ export async function runTier1Tests(): Promise<void> {
   printTestResult(
     await test('T1.F13.05', 1, 'F13-I18N', 'Russian (RU) translation contains complete shell mappings', () => {
       const ru = UI_TRANSLATIONS.ru;
-      expect(ru.appName).toBe('Химия 3D');
+      expect(ru.appName).toBe('Kimolab');
       expect(ru.nav.curriculum).toBe('Темы');
       expect(ru.nav.lab3d).toBe('3D-лаб');
       expect(SHELL_STRINGS.ru.next).toBe('Далее');
@@ -1031,7 +1031,7 @@ export async function runTier1Tests(): Promise<void> {
       const ar = UI_TRANSLATIONS.ar;
       expect(ar.nav.curriculum).toBe('المنهج');
       expect(SHELL_STRINGS.ar.start).toBe('ادخل المختبر');
-      expect(/[\u0600-\u06FF]/.test(ar.appName)).toBe(true);
+      expect(/[\u0600-\u06FF]/.test(SHELL_STRINGS.ar.ob1Body)).toBe(true);
     })
   );
 
@@ -1041,7 +1041,7 @@ export async function runTier1Tests(): Promise<void> {
       expect(zh.nav.curriculum).toBe('知识点');
       expect(zh.nav.lab3d).toBe('3D实验室');
       expect(SHELL_STRINGS.zh.start).toBe('进入实验室');
-      expect(/[\u4E00-\u9FFF]/.test(zh.appName)).toBe(true);
+      expect(/[\u4E00-\u9FFF]/.test(SHELL_STRINGS.zh.ob1Body)).toBe(true);
     })
   );
 

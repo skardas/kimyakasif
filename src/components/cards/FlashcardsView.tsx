@@ -436,8 +436,8 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
               aria-label={r.unit}
             >
               <option value="all">{t.cards.allUnits}</option>
-              <option value="tyt">TYT Kimya (u01 - u10)</option>
-              <option value="ayt">AYT Kimya (u11 - u22)</option>
+              <option value="tyt">{t.filters.tyt} (u01 - u10)</option>
+              <option value="ayt">{t.filters.ayt} (u11 - u22)</option>
               {ALL_CHEMISTRY_UNITS.slice(0, 22).map((u) => (
                 <option key={u.id} value={u.id}>
                   {u.id.toUpperCase()}: {u.title[lang]}

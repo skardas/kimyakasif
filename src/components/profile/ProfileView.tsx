@@ -22,6 +22,7 @@ import type { AppState, LearnerProfile } from '../../store/useAppStore';
 import { todayStamp } from '../../store/useAppStore';
 import { redesignStrings, redesignExtra } from '../../i18n/redesignStrings';
 import { APP_SHELL_STRINGS } from '../../i18n/appShellStrings';
+import { levelLabel, trackOptions } from '../../i18n/examLevels';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { ALL_CHEMISTRY_UNITS } from '../../data/units';
 import { compileUnitQuestions } from '../../engine/questionGenerator';
@@ -72,11 +73,6 @@ const BADGES: { icon: React.ReactNode; c: string; cd: string }[] = [
   { icon: <Crown size={24} />, c: '#C9A2FF', cd: '#5B32C9' },
 ];
 
-const TRACK_OPTIONS: [Track, string][] = [
-  ['TYT_ONLY', 'TYT'],
-  ['AYT_FOCUS', 'AYT'],
-  ['TYT_FIRST', 'TYT → AYT'],
-];
 
 const AvatarTile: React.FC<{ profile: Pick<LearnerProfile, 'avatar' | 'name'>; lang: LanguageCode; size?: 'md' | 'lg' }> = ({
   profile,
@@ -304,8 +300,8 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
     const tytUnits = ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'TYT').length;
     const aytUnits = ALL_CHEMISTRY_UNITS.length - tytUnits;
     const stages = [
-      { exam: 'TYT', pct: report.tytMasteryPercent, n: tytUnits, color: 'var(--accent)' },
-      { exam: 'AYT', pct: report.aytMasteryPercent, n: aytUnits, color: 'var(--violet)' },
+      { exam: levelLabel('TYT', lang), pct: report.tytMasteryPercent, n: tytUnits, color: 'var(--accent)' },
+      { exam: levelLabel('AYT', lang), pct: report.aytMasteryPercent, n: aytUnits, color: 'var(--violet)' },
     ];
 
     const days = Array.from({ length: 7 }, (_, i) => {
@@ -639,7 +635,7 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
         <div className="pf-field">
           <span className="ky-eyebrow" id="pf-track-label">{rx.targetLabel}</span>
           <div className="ky-seg" role="radiogroup" aria-labelledby="pf-track-label">
-            {TRACK_OPTIONS.map(([val, label]) => (
+            {trackOptions(lang).map(([val, label]) => (
               <button
                 key={val}
                 type="button"

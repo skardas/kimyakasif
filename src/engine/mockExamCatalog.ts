@@ -105,13 +105,13 @@ function buildTytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
     case 'standart':
       return L(
         'Tam ÖSYM müfredat dengesi: 7 özgün soruyla 9. ve 10. sınıf TYT kimya genel tarama provası.',
-        'Standard ÖSYM exam balance: 7 curated questions spanning Grade 9 & 10 TYT chemistry.',
-        'Standardmäßige ÖSYM-Prüfungsverteilung: 7 kuratierte Fragen für die Klassen 9 und 10.',
+        'Standard exam balance: 7 curated questions spanning Grade 9 & 10 chemistry.',
+        'Standardmäßige Prüfungsverteilung: 7 kuratierte Fragen für die Klassen 9 und 10.',
         "Équilibre officiel de l'examen : 7 questions types couvrant la chimie de 9e et 10e années.",
-        'Полный баланс экзаменационной программы: 7 оригинальных заданий по химии 9–10 классов (TYT).',
+        'Полный баланс экзаменационной программы: 7 оригинальных заданий по химии 9–10 классов.',
         'توزيع قياسي وفق معايير الاختبار: 7 أسئلة متوازنة في كيمياء الصفين التاسع والعاشر.',
-        '按考试大纲比例命题：7 道原创题，全面复习 9、10 年级 TYT 化学。',
-        'Hevsengiya tevahî ya mufredata ÖSYM-ê: provaya giştî ya kîmyaya TYT a pola 9 û 10 bi 7 pirsên orîjînal.'
+        '按考试大纲比例命题：7 道原创题，全面复习 9、10 年级化学。',
+        'Hevsengiya tevahî ya mufredata azmûnê: provaya giştî ya kîmyaya pola 9 û 10 bi 7 pirsên orîjînal.'
       );
     case 'ileri':
       return L(
@@ -127,13 +127,13 @@ function buildTytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
     case 'osym-prova':
       return L(
         'Türkiye Geneli Derece Provası: Tuzaklı kazanımlar, molekül polarlığı, mol hesapları ve asit-baz tuzakları.',
-        'National Rank Simulation: Tricky traps, molecular polarity, mole stoichiometry and acid-base metal reactions.',
-        'Nationale Rang-Simulation: Prüfungsfallen, Molekülpolarität, Molrechnungen und Säure-Base-Metalle.',
-        "Simulation Concours National : Pièges d'examen, polarité, stœchiométrie et réactions acides-métaux.",
-        'Рейтинговая репетиция всей страны: задания-ловушки, полярность молекул, расчёты количества вещества и кислотно-основные ловушки.',
-        'محاكاة اختبار التفوق الوطني: أسئلة الفخاخ، قطبية الجزيئات، حسابات المولات وتفاعلات الأحماض مع الفلزات.',
-        '全国排名模拟：易错陷阱、分子极性、物质的量计算与酸碱陷阱。',
-        'Provaya Pileyên Jorîn li seranserê Tirkiyeyê: Xefikên azmûnê, polarîteya molekulan, hesabên molê û xefikên asîd-baz.'
+        'Final practice exam: Tricky traps, molecular polarity, mole stoichiometry and acid-base metal reactions.',
+        'Abschlussprobe: Prüfungsfallen, Molekülpolarität, Molrechnungen und Säure-Base-Metalle.',
+        "Examen blanc final : Pièges d'examen, polarité, stœchiométrie et réactions acides-métaux.",
+        'Итоговая репетиция: задания-ловушки, полярность молекул, расчёты количества вещества и кислотно-основные ловушки.',
+        'الاختبار التجريبي النهائي: أسئلة الفخاخ، قطبية الجزيئات، حسابات المولات وتفاعلات الأحماض مع الفلزات.',
+        '冲刺模拟：易错陷阱、分子极性、物质的量计算与酸碱陷阱。',
+        'Provaya dawî: Xefikên azmûnê, polarîteya molekulan, hesabên molê û xefikên asîd-baz.'
       );
   }
 }
@@ -154,13 +154,13 @@ function buildAytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
     case 'standart':
       return L(
         'Tam ÖSYM müfredat dengesi: 13 özgün soruyla 11. ve 12. sınıf AYT kimya tam kapsamlı alan provası.',
-        'Standard ÖSYM exam balance: 13 curated questions spanning Grade 11 & 12 AYT chemistry comprehensive test.',
-        'Standardmäßige ÖSYM-Prüfungsverteilung: 13 kuratierte Fragen für die Klassen 11 und 12 im Fach Chemie.',
-        "Équilibre officiel de l'examen : 13 questions types couvrant toute la chimie AYT de 11e et 12e années.",
-        'Полный баланс экзаменационной программы: 13 оригинальных заданий по всей химии 11–12 классов (AYT).',
+        'Standard exam balance: 13 curated questions covering all of Grade 11 & 12 chemistry.',
+        'Standardmäßige Prüfungsverteilung: 13 kuratierte Fragen für die Klassen 11 und 12 im Fach Chemie.',
+        "Équilibre officiel de l'examen : 13 questions types couvrant toute la chimie de 11e et 12e années.",
+        'Полный баланс экзаменационной программы: 13 оригинальных заданий по всей химии 11–12 классов.',
         'توزيع قياسي وفق معايير الاختبار: 13 سؤالاً متكاملاً تغطي منهج الكيمياء للصفين الحادي عشر والثاني عشر.',
-        '按考试大纲比例命题：13 道原创题，全面考查 11、12 年级 AYT 化学。',
-        'Hevsengiya tevahî ya mufredata ÖSYM-ê: provaya berfireh a kîmyaya AYT a pola 11 û 12 bi 13 pirsên orîjînal.'
+        '按考试大纲比例命题：13 道原创题，全面考查 11、12 年级化学。',
+        'Hevsengiya tevahî ya mufredata azmûnê: provaya berfireh a kîmyaya pola 11 û 12 bi 13 pirsên orîjînal.'
       );
     case 'ileri':
       return L(
@@ -176,13 +176,13 @@ function buildAytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
     case 'osym-prova':
       return L(
         'Türkiye Geneli Derece Provası: Pil gerilimi ve derişim pilleri, Kçç ortak iyon, Le Chatelier şokları, VSEPR ve Markovnikov mekanizmaları.',
-        'National Rank Simulation: cell voltage and concentration cells, Ksp common ion, Le Chatelier shifts, VSEPR and Markovnikov mechanisms.',
-        'Nationale Rang-Simulation: Zellspannung und Konzentrationszellen, Ksp-Gemeinsamer-Ion-Effekt, Le Chatelier, VSEPR und Markovnikov.',
-        "Simulation Concours National : tension de pile et piles de concentration, effet d'ion commun Ksp, Le Chatelier, VSEPR et Markovnikov.",
-        'Рейтинговая репетиция всей страны: ЭДС и концентрационные элементы, Ksp и одноимённый ион, смещение равновесия по Ле Шателье, VSEPR и правило Марковникова.',
-        'محاكاة اختبار التفوق الوطني: جهد الخلية وخلايا التركيز، الأيون المشترك Ksp، مبدأ لوشاتلييه، أشكال VSEPR وقاعدة ماركوفنيكوف.',
-        '全国排名模拟：电池电压与浓差电池、Ksp 与同离子效应、勒夏特列原理、VSEPR 与马氏规则。',
-        'Provaya Pileyên Jorîn li seranserê Tirkiyeyê: Voltaja pîlê û pîlên tîrbûnê, îyona hevpar û Ksp, guherînên Le Chatelier, VSEPR û mekanîzmayên Markovnikov.'
+        'Final practice exam: cell voltage and concentration cells, Ksp common ion, Le Chatelier shifts, VSEPR and Markovnikov mechanisms.',
+        'Abschlussprobe: Zellspannung und Konzentrationszellen, Ksp-Gemeinsamer-Ion-Effekt, Le Chatelier, VSEPR und Markovnikov.',
+        "Examen blanc final : tension de pile et piles de concentration, effet d'ion commun Ksp, Le Chatelier, VSEPR et Markovnikov.",
+        'Итоговая репетиция: ЭДС и концентрационные элементы, Ksp и одноимённый ион, смещение равновесия по Ле Шателье, VSEPR и правило Марковникова.',
+        'الاختبار التجريبي النهائي: جهد الخلية وخلايا التركيز، الأيون المشترك Ksp، مبدأ لوشاتلييه، أشكال VSEPR وقاعدة ماركوفنيكوف.',
+        '冲刺模拟：电池电压与浓差电池、Ksp 与同离子效应、勒夏特列原理、VSEPR 与马氏规则。',
+        'Provaya dawî: Voltaja pîlê û pîlên tîrbûnê, îyona hevpar û Ksp, guherînên Le Chatelier, VSEPR û mekanîzmayên Markovnikov.'
       );
   }
 }
@@ -209,13 +209,13 @@ const TYT_SPECS: MockExamSeedSpec[] = Array.from({ length: 40 }, (_, i) => {
     visualFocus,
     title: L(
       `TYT Kimya Branş Denemesi #${n}`,
-      `TYT Chemistry Branch Mock #${n}`,
-      `TYT Chemie Fachprobe #${n}`,
-      `Examen Blanc TYT Chimie #${n}`,
-      `Пробный тест TYT по химии № ${n}`,
-      `اختبار TYT التجريبي في الكيمياء #${n}`,
-      `TYT 化学专项模考 #${n}`,
-      `Azmûna Ceribandinê ya Kîmyaya TYT #${n}`
+      `Basic Chemistry Mock Exam #${n}`,
+      `Chemie-Probeprüfung Grundlagen #${n}`,
+      `Examen blanc de chimie – Fondamentaux #${n}`,
+      `Пробный тест по химии, базовый уровень, № ${n}`,
+      `اختبار تجريبي في الكيمياء – المستوى الأساسي #${n}`,
+      `基础化学专项模考 #${n}`,
+      `Azmûna Ceribandinê ya Kîmyayê – Bingehîn #${n}`
     ),
     subtitle: buildTytSubtitle(tier),
   };
@@ -243,13 +243,13 @@ const AYT_SPECS: MockExamSeedSpec[] = Array.from({ length: 40 }, (_, i) => {
     visualFocus,
     title: L(
       `AYT Kimya Branş Denemesi #${n}`,
-      `AYT Chemistry Branch Mock #${n}`,
-      `AYT Chemie Fachprobe #${n}`,
-      `Examen Blanc AYT Chimie #${n}`,
-      `Пробный тест AYT по химии № ${n}`,
-      `اختبار AYT التجريبي في الكيمياء #${n}`,
-      `AYT 化学专项模考 #${n}`,
-      `Azmûna Ceribandinê ya Kîmyaya AYT #${n}`
+      `Advanced Chemistry Mock Exam #${n}`,
+      `Chemie-Probeprüfung Vertiefung #${n}`,
+      `Examen blanc de chimie – Approfondissement #${n}`,
+      `Пробный тест по химии, углублённый уровень, № ${n}`,
+      `اختبار تجريبي في الكيمياء – المستوى المتقدم #${n}`,
+      `进阶化学专项模考 #${n}`,
+      `Azmûna Ceribandinê ya Kîmyayê – Pêşketî #${n}`
     ),
     subtitle: buildAytSubtitle(tier),
   };
@@ -537,37 +537,37 @@ export const TG_PROVA_SPEC: MockExamSeedSpec = {
   visualFocus: true,
   title: L(
     'Türkiye Geneli YKS Kimya Derece Provası',
-    'Nationwide YKS Chemistry Elite Trial Exam',
-    'Bundesweite YKS Chemie Spitzenrang-Probe',
-    'Examen Blanc National YKS Chimie Élite',
-    'Общенациональная рейтинговая репетиция YKS по химии',
-    'بروفة التفوق العامة لامتحان YKS كيمياء',
-    '全国 YKS 化学排名模拟考',
-    'Provaya Giştî ya Tirkiyeyê ya Kîmyayê ya Dereceyê'
+    'Final Chemistry Practice Exam',
+    'Chemie-Abschlussprobe',
+    'Examen blanc final de chimie',
+    'Итоговая репетиция по химии',
+    'الاختبار التجريبي النهائي في الكيمياء',
+    '化学冲刺模拟考',
+    'Provaya Dawî ya Kîmyayê'
   ),
   subtitle: L(
     '20 Soru (7 TYT + 13 AYT) • 30 Dakika • Gerçek YKS Zorluğu & ÖSYM Yüzdelik Dilim Tahmini',
-    '20 Questions (7 TYT + 13 AYT) • 30 Minutes • Realistic YKS Difficulty & Rank Percentile Estimation',
-    '20 Fragen (7 TYT + 13 AYT) • 30 Minuten • Reale Prüfungsschwere & Perzentil-Schätzung',
-    '20 Questions (7 TYT + 13 AYT) • 30 Minutes • Difficulté Réelle & Estimation de Rang',
-    '20 вопросов (7 TYT + 13 AYT) • 30 минут • реальная сложность YKS и оценка процентиля',
-    '20 سؤالاً (7 TYT + 13 AYT) • 30 دقيقة • صعوبة حقيقية وحساب النسبة المئوية',
-    '20 题(7 题 TYT + 13 题 AYT) • 30 分钟 • 真实 YKS 难度与百分位排名估算',
-    '20 Pirs (7 TYT + 13 AYT) • 30 Xulek • Zehmetiya Rastîn & Texmîna Rêzê'
+    '20 Questions (7 Basic + 13 Advanced) • 30 Minutes • Real Exam Difficulty & Rank Percentile Estimation',
+    '20 Fragen (7 Grundlagen + 13 Vertiefung) • 30 Minuten • Reale Prüfungsschwere & Perzentil-Schätzung',
+    '20 questions (7 Fondamentaux + 13 Approfondissement) • 30 minutes • Difficulté Réelle & Estimation de Rang',
+    '20 вопросов (7 базового + 13 углублённого уровня) • 30 минут • реальная сложность экзамена и оценка процентиля',
+    '20 سؤالاً (7 من المستوى الأساسي + 13 من المستوى المتقدم) • 30 دقيقة • صعوبة حقيقية وحساب النسبة المئوية',
+    '20 题(7 题基础 + 13 题进阶) • 30 分钟 • 真实考试难度与百分位排名估算',
+    '20 Pirs (7 Bingehîn + 13 Pêşketî) • 30 Xulek • Zehmetiya Rastîn & Texmîna Rêzê'
   ),
   customBadge: L(
     '🏆 TG Derece Provası',
-    '🏆 Elite National Trial',
-    '🏆 Spitzenrang-Probe',
-    '🏆 Élite Nationale',
-    '🏆 Рейтинговая репетиция',
-    '🏆 بروفة التفوق',
-    '🏆 全国精英冲刺',
-    '🏆 Provaya Dereceyê'
+    '🏆 Final practice exam',
+    '🏆 Abschlussprobe',
+    '🏆 Examen blanc final',
+    '🏆 Итоговая репетиция',
+    '🏆 الاختبار النهائي',
+    '🏆 冲刺模拟',
+    '🏆 Provaya dawî'
   ),
 };
 
-export function estimateTgPercentile(netScore: number): TgPercentileResult {
+function estimateTgPercentileTr(netScore: number): TgPercentileResult {
   const net = Number(netScore.toFixed(2));
   if (net >= 19.5) {
     return {
@@ -650,6 +650,137 @@ export function estimateTgPercentile(netScore: number): TgPercentileResult {
     tierColor: '#ef4444',
     badgeIcon: '🌱',
     feedbackMessage: 'Düzenli konu çalışması ve flashcard tekrarlarıyla kimya netlerini adım adım inşa edeceğiz.',
+  };
+}
+
+/**
+ * Non-Turkish wording for the top-rank rehearsal result. The Turkish texts refer to
+ * Turkish national ranks, universities and exam names, so other languages get a
+ * neutral tier title and feedback, and no national rank range (empty string).
+ * Index order follows the tiers in estimateTgPercentileTr (best first).
+ */
+type TgLocaleText = { titles: string[]; feedback: string[]; top: (p: string) => string; bottom: string };
+const TG_LOCALE_TEXT: Record<Exclude<LanguageCode, 'tr'>, TgLocaleText> = {
+  en: {
+    titles: ['Top of the field', 'Outstanding', 'Very strong', 'High achiever', 'Solid foundation', 'Basic proficiency', 'Getting started'],
+    feedback: [
+      'Flawless performance: a result at the very top.',
+      'Outstanding! Enough for even the most competitive programmes you are aiming for.',
+      'A very strong score. Close one or two small gaps with the Mistake Log and you will be at the top.',
+      'A great foundation: you are ahead of about 94% of candidates.',
+      'Your core concepts are solid. Revising equilibrium, electrochemistry and organic reactions will raise your score quickly.',
+      'You are still filling topic gaps. Work through the visual slides and the unit test sets.',
+      'Steady topic study and flashcard reviews will build your chemistry score step by step.',
+    ],
+    top: (p) => `Top ${p}%`,
+    bottom: 'Bottom 50%',
+  },
+  de: {
+    titles: ['Spitzenklasse', 'Herausragend', 'Sehr stark', 'Leistungsstark', 'Solide Basis', 'Grundkenntnisse', 'Einstieg'],
+    feedback: [
+      'Fehlerfreie Leistung: ein Ergebnis ganz an der Spitze.',
+      'Herausragend! Das reicht selbst für die begehrtesten Studiengänge, die du anstrebst.',
+      'Ein sehr starkes Ergebnis. Schließe ein, zwei kleine Lücken mit dem Fehlerheft, dann bist du ganz oben.',
+      'Eine großartige Basis: Du liegst vor etwa 94 % der Teilnehmenden.',
+      'Die Grundbegriffe sitzen. Mit Wiederholungen zu Gleichgewicht, Elektrochemie und organischen Reaktionen steigerst du dein Ergebnis schnell.',
+      'Du schließt gerade Themenlücken. Arbeite die visuellen Folien und die Testsets der Einheiten durch.',
+      'Mit regelmäßigem Lernen und Karteikarten-Wiederholungen baust du dein Chemie-Ergebnis Schritt für Schritt auf.',
+    ],
+    top: (p) => `Top ${p} %`,
+    bottom: 'Untere 50 %',
+  },
+  fr: {
+    titles: ['Au sommet', 'Exceptionnel', 'Très solide', 'Très bon niveau', 'Bonnes bases', 'Niveau de base', 'Premiers pas'],
+    feedback: [
+      'Une performance parfaite : un résultat tout en haut du classement.',
+      'Exceptionnel ! Largement suffisant pour les filières les plus sélectives que tu vises.',
+      'Un très bon score. Comble une ou deux petites lacunes avec le carnet d’erreurs et tu seras au sommet.',
+      'De très bonnes bases : tu devances environ 94 % des candidats.',
+      'Les notions de base sont solides. Réviser l’équilibre, l’électrochimie et les réactions organiques fera vite monter ton score.',
+      'Tu es en train de combler des lacunes. Parcours les diapositives visuelles et les séries de tests par unité.',
+      'Un travail régulier et des révisions avec les cartes mémoire construiront ton score en chimie pas à pas.',
+    ],
+    top: (p) => `Top ${p} %`,
+    bottom: '50 % inférieurs',
+  },
+  ru: {
+    titles: ['Высший уровень', 'Выдающийся результат', 'Очень сильный результат', 'Высокий уровень', 'Прочная база', 'Базовая подготовка', 'Начальный этап'],
+    feedback: [
+      'Безупречно: результат на самой вершине.',
+      'Выдающийся результат! Этого хватит даже для самых конкурсных направлений, к которым ты стремишься.',
+      'Очень сильный результат. Закрой один-два небольших пробела с помощью тетради ошибок, и ты будешь на вершине.',
+      'Отличная база: ты опережаешь около 94 % участников.',
+      'Основные понятия усвоены прочно. Повтори равновесие, электрохимию и органические реакции, и балл быстро вырастет.',
+      'Ты восполняешь пробелы по темам. Пройди наглядные слайды и тестовые наборы по темам.',
+      'Регулярные занятия и повторение карточек шаг за шагом поднимут твой балл по химии.',
+    ],
+    top: (p) => `Лучшие ${p} %`,
+    bottom: 'Нижние 50 %',
+  },
+  ar: {
+    titles: ['في القمة', 'أداء استثنائي', 'قوي جدًا', 'مستوى متفوق', 'أساس متين', 'كفاءة أساسية', 'مرحلة البداية'],
+    feedback: [
+      'أداء بلا أخطاء: نتيجة في القمة تمامًا.',
+      'أداء استثنائي! يكفي حتى لأكثر التخصصات تنافسًا التي تطمح إليها.',
+      'نتيجة قوية جدًا. سدّ ثغرة أو اثنتين صغيرتين بدفتر الأخطاء وستكون في القمة.',
+      'أساس رائع: أنت متقدم على نحو 94% من المتقدمين.',
+      'المفاهيم الأساسية متينة. مراجعة الاتزان والكيمياء الكهربائية والتفاعلات العضوية سترفع نتيجتك بسرعة.',
+      'أنت في مرحلة سدّ الثغرات. راجع الشرائح المصوّرة ومجموعات اختبارات الوحدات.',
+      'بالدراسة المنتظمة ومراجعة البطاقات ستبني نتيجتك في الكيمياء خطوة بخطوة.',
+    ],
+    top: (p) => `أعلى ${p}%`,
+    bottom: 'أدنى 50%',
+  },
+  zh: {
+    titles: ['顶尖水平', '出类拔萃', '非常优秀', '优秀', '基础扎实', '基本达标', '起步阶段'],
+    feedback: [
+      '零失误！成绩位于最顶端。',
+      '出类拔萃！即使是你目标中竞争最激烈的专业也绰绰有余。',
+      '非常优秀的成绩。用错题本补上一两个小漏洞，你就能登顶。',
+      '基础很棒：你领先约94%的考生。',
+      '核心概念很扎实。复习化学平衡、电化学和有机反应，分数会快速提升。',
+      '你正在补齐知识漏洞。请学习图解幻灯片并完成单元测验题组。',
+      '坚持系统学习并复习抽认卡，你的化学成绩会一步步提高。',
+    ],
+    top: (p) => `前 ${p}%`,
+    bottom: '后 50%',
+  },
+  ku: {
+    titles: ['Li lûtkeyê', 'Awarte', 'Pir xurt', 'Serkeftina bilind', 'Bingeha xurt', 'Asta bingehîn', 'Destpêk'],
+    feedback: [
+      'Performanseke bêkêmasî: encamek li lûtkeyê.',
+      'Serkeftineke awarte! Ji bo beşên herî bi pêşbazî yên ku tu dixwazî jî bes e.',
+      'Encameke pir xurt. Bi Deftera Şaşiyan yek-du kêmasiyên biçûk biqedîne û tu li lûtkeyê yî.',
+      'Bingeheke hêja: tu li pêşiya nêzîkî %94ê namzedan î.',
+      'Têgehên bingehîn xurt in. Bi dubarekirina hevsengiyê, elektrokîmyayê û reaksiyonên organîk tu dikarî encama xwe zû bilind bikî.',
+      'Tu hîn kêmasiyên mijaran temam dikî. Slaytên dîtbarî û komên testên yekîneyê bixebitîne.',
+      'Bi xebata birêkûpêk û dubarekirina kartan em ê encama te ya kîmyayê gav bi gav ava bikin.',
+    ],
+    top: (p) => `%${p} yên pêşîn`,
+    bottom: '%50 yên dawî',
+  },
+};
+
+const TG_TIER_PERCENTILES = [0.05, 0.8, 2.5, 6.0, 15.0, 35.0, 55.0];
+
+export function estimateTgPercentile(netScore: number, lang: LanguageCode = 'tr'): TgPercentileResult {
+  const base = estimateTgPercentileTr(netScore);
+  if (lang === 'tr') return base;
+  const text = TG_LOCALE_TEXT[lang] ?? TG_LOCALE_TEXT.en;
+  const tier = Math.max(0, TG_TIER_PERCENTILES.indexOf(base.percentile));
+  const isLast = tier === TG_TIER_PERCENTILES.length - 1;
+  let pct: string;
+  try {
+    pct = base.percentile.toLocaleString(lang, { minimumFractionDigits: 1, maximumFractionDigits: 2 });
+  } catch {
+    pct = String(base.percentile);
+  }
+  return {
+    ...base,
+    percentileFormatted: isLast ? text.bottom : text.top(pct),
+    estimatedRankRange: '',
+    tierTitle: text.titles[tier],
+    feedbackMessage: text.feedback[tier],
   };
 }
 

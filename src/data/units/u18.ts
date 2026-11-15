@@ -127,13 +127,13 @@ export const unit18: ChemistryUnitSeedData = {
       },
       "osymTip": {
         "tr": "ÖSYM kuralı: Aynı tepkime denklemi için Kc'yi değiştiren TEK faktör sıcaklıktır!",
-        "en": "ÖSYM rule: for the same reaction equation, temperature is the ONLY factor that changes Kc!",
-        "de": "ÖSYM-Regel: Für dieselbe Reaktionsgleichung ist die Temperatur der EINZIGE Faktor, der Kc ändert!",
-        "fr": "Règle ÖSYM : pour une même équation de réaction, la température est le SEUL facteur qui modifie Kc !",
+        "en": "Exam rule: for the same reaction equation, temperature is the ONLY factor that changes Kc!",
+        "de": "Prüfungsregel: Für dieselbe Reaktionsgleichung ist die Temperatur der EINZIGE Faktor, der Kc ändert!",
+        "fr": "Règle d’examen : pour une même équation de réaction, la température est le SEUL facteur qui modifie Kc !",
         "ru": "Запомните: для одного и того же уравнения реакции Kc изменяет ТОЛЬКО температура!",
         "ar": "قاعدة مهمة في الامتحان: لمعادلة التفاعل نفسها، درجة الحرارة هي العامل الوحيد الذي يغيّر Kc!",
         "zh": "考试要点：对同一反应方程式，唯一能改变 Kc 的因素是温度！",
-        "ku": "Qaîdeya ÖSYM-ê: ji bo heman hevkêşeya reaksiyonê, tenê faktora ku Kc diguherîne germahî ye!"
+        "ku": "Qaîdeya azmûnê: ji bo heman hevkêşeya reaksiyonê, tenê faktora ku Kc diguherîne germahî ye!"
       }
     },
     {

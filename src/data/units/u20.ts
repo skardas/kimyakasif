@@ -94,13 +94,13 @@ export const unit20: ChemistryUnitSeedData = {
       },
       "osymTip": {
         "tr": "ÖSYM kuralı: Kçç'yi yalnızca sıcaklık değiştirir!",
-        "en": "ÖSYM rule: Only temperature changes Ksp!",
-        "de": "ÖSYM-Regel: Nur die Temperatur ändert Ksp!",
-        "fr": "Règle ÖSYM : seule la température modifie Ksp !",
+        "en": "Exam rule: Only temperature changes Ksp!",
+        "de": "Prüfungsregel: Nur die Temperatur ändert Ksp!",
+        "fr": "Règle d’examen : seule la température modifie Ksp !",
         "ru": "Запомните: Ksp изменяет только температура!",
         "ar": "قاعدة مهمة في الامتحان: درجة الحرارة وحدها تغيّر Ksp!",
         "zh": "只有温度能改变 Ksp！",
-        "ku": "Qaîdeya ÖSYM-ê: Ksp-ê tenê germahî diguherîne!"
+        "ku": "Qaîdeya azmûnê: Ksp-ê tenê germahî diguherîne!"
       }
     },
     {

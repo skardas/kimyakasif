@@ -193,13 +193,13 @@ export const unit17: ChemistryUnitSeedData = {
       },
       "osymTip": {
         "tr": "ÖSYM tuzağı: Katalizör Ea'yı düşürür, ΔH'ı değiştirmez!",
-        "en": "ÖSYM trap: Catalyst reduces Ea, DOES NOT CHANGE ΔH!",
-        "de": "ÖSYM-Falle: Katalysator reduziert Ea, VERÄNDERT ΔH NICHT!",
-        "fr": "Piège ÖSYM : le catalyseur réduit Ea, NE CHANGE PAS ΔH !",
+        "en": "Exam trap: Catalyst reduces Ea, DOES NOT CHANGE ΔH!",
+        "de": "Prüfungsfalle: Katalysator reduziert Ea, VERÄNDERT ΔH NICHT!",
+        "fr": "Piège d’examen : le catalyseur réduit Ea, NE CHANGE PAS ΔH !",
         "ru": "Ловушка на экзамене: катализатор снижает Ea, но НЕ меняет ΔH!",
         "ar": "فخ شائع في الامتحان: الحفاز يقلل Ea، ولا يغير ΔH!",
         "zh": "考试陷阱：催化剂降低 Ea，但不改变 ΔH！",
-        "ku": "Xefika ÖSYM-ê: Katalîzor Ea kêm dike, ΔH naguherîne!"
+        "ku": "Xefika azmûnê: Katalîzor Ea kêm dike, ΔH naguherîne!"
       }
     },
     {

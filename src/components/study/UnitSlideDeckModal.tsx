@@ -421,7 +421,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
               {slideHead(8)}
               <div className="ky-card sl-block">
                 <div className="sl-twin-head">
-                  <span className="ky-chip ky-chip--gold">ÖSYM #{twinIdx + 1}</span>
+                  <span className="ky-chip ky-chip--gold">{s.twinChip} #{twinIdx + 1}</span>
                   <button
                     type="button"
                     className="ky-chip sl-twin-next"

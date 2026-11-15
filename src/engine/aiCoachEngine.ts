@@ -134,7 +134,7 @@ const COACH_STRINGS: Record<LanguageCode, CoachI18nStrings> = {
   },
   en: {
     prereqWarning: (pct) =>
-      `Your TYT Chemistry mastery is currently at ${pct}%. In the Turkish YKS exam system, reaching at least 60% TYT mastery is strongly recommended before diving deep into AYT units.`,
+      `Your Basic-level chemistry mastery is currently at ${pct}%. Reaching at least 60% at the Basic level is strongly recommended before diving deep into Advanced units.`,
     missionDailyQuestions: (target) => ({
       title: `Daily Target: ${target} Questions`,
       desc: `Complete at least ${target} chemistry questions today to stay on track.`,
@@ -170,7 +170,7 @@ const COACH_STRINGS: Record<LanguageCode, CoachI18nStrings> = {
   },
   de: {
     prereqWarning: (pct) =>
-      `Ihre TYT-Chemie-Beherrschung liegt derzeit bei ${pct}%. Vor Vertiefung in AYT-Themen wird eine TYT-Quote von mindestens 60% dringend empfohlen.`,
+      `Ihre Beherrschung der Chemie-Grundlagen liegt derzeit bei ${pct}%. Vor dem Einstieg in die Vertiefung wird in den Grundlagen eine Quote von mindestens 60% dringend empfohlen.`,
     missionDailyQuestions: (target) => ({
       title: `Tagesziel: ${target} Fragen lösen`,
       desc: `Löse heute mindestens ${target} Chemiefragen, um dein Ziel zu erreichen.`,
@@ -206,7 +206,7 @@ const COACH_STRINGS: Record<LanguageCode, CoachI18nStrings> = {
   },
   fr: {
     prereqWarning: (pct) =>
-      `Votre maîtrise de la chimie TYT est actuellement à ${pct}%. Il est vivement conseillé d'atteindre au moins 60% avant d'aborder le programme AYT.`,
+      `Votre maîtrise des Fondamentaux de chimie est actuellement de ${pct}%. Il est vivement conseillé d'atteindre au moins 60% avant d'aborder l'Approfondissement.`,
     missionDailyQuestions: (target) => ({
       title: `Objectif du jour: ${target} questions`,
       desc: `Résolvez au moins ${target} questions de chimie aujourd'hui pour garder le rythme.`,
@@ -242,7 +242,7 @@ const COACH_STRINGS: Record<LanguageCode, CoachI18nStrings> = {
   },
   ru: {
     prereqWarning: (pct) =>
-      `Твой уровень по химии TYT — ${pct} %. Прежде чем углубляться в AYT, лучше довести его до 60 %.`,
+      `Базовый уровень по химии освоен на ${pct} %. Прежде чем переходить к углублённому уровню, лучше довести его до 60 %.`,
     missionDailyQuestions: (target) => ({
       title: `Цель на день — вопросов: ${target}`,
       desc: `Реши сегодня не меньше ${target} вопр. по химии.`,
@@ -278,7 +278,7 @@ const COACH_STRINGS: Record<LanguageCode, CoachI18nStrings> = {
   },
   ar: {
     prereqWarning: (pct) =>
-      `مستوى إتقانك لكيمياء TYT حالياً هو ${pct}%. في نظام امتحانات YKS، يُنصح بشدة ببلوغ عتبة 60% في TYT قبل التعمق في دروس AYT.`,
+      `مستوى إتقانك لكيمياء المستوى الأساسي حالياً هو ${pct}%. يُنصح بشدة ببلوغ عتبة 60% في المستوى الأساسي قبل التعمق في دروس المستوى المتقدم.`,
     missionDailyQuestions: (target) => ({
       title: `الهدف اليومي: حل ${target} سؤال`,
       desc: `أنجز اليوم ما لا يقل عن ${target} سؤال كيمياء لتحقيق هدفك.`,
@@ -314,7 +314,7 @@ const COACH_STRINGS: Record<LanguageCode, CoachI18nStrings> = {
   },
   zh: {
     prereqWarning: (pct) =>
-      `您的 TYT 化学基础掌握度目前为 ${pct}%。为了 YKS 排名，建议先将 TYT 各单元提升到 60% 以上，再深入学习 AYT 内容。`,
+      `您的基础化学掌握度目前为 ${pct}%。建议先将基础各单元提升到 60% 以上，再深入学习进阶内容。`,
     missionDailyQuestions: (target) => ({
       title: `今日目标：${target} 道题`,
       desc: `今天在题库中至少完成 ${target} 道化学题。`,
@@ -350,14 +350,14 @@ const COACH_STRINGS: Record<LanguageCode, CoachI18nStrings> = {
   },
   ku: {
     prereqWarning: (pct) =>
-      `Bingeha te ya Kîmyaya TYT hîn li asta %${pct} e. Ji bo rêzbendiya YKS-ê, berî ku tu bi kûrahî derbasî mijarên AYT bibî, tê pêşniyarkirin ku tu yekîneyên TYT bigihînî sînorê %60.`,
+      `Serweriya te li ser kîmyaya Bingehîn hîn li asta %${pct} e. Berî ku tu bi kûrahî derbasî mijarên Pêşketî bibî, tê pêşniyarkirin ku tu yekîneyên Bingehîn bigihînî sînorê %60.`,
     missionDailyQuestions: (target) => ({
       title: `Armanca Rojane: ${target} Pirs`,
       desc: `Îro ji bankeya pirsan herî kêm ${target} pirsên kîmyayê bi serkeftî temam bike.`,
     }),
     missionUnitPractice: (unitTitle, target) => ({
       title: `${unitTitle}: ${target} Pirsan Çareser Bike`,
-      desc: `Ji bo xurtkirina şêwazên pirsên ÖSYM-ê, ji vê yekîneyê ${target} pirsan çareser bike.`,
+      desc: `Ji bo xurtkirina şêwazên pirsên azmûnê, ji vê yekîneyê ${target} pirsan çareser bike.`,
     }),
     missionFlashcards: (target) => ({
       title: `${target} Kartan Dubare Bike`,

@@ -48,7 +48,7 @@ export const EXAM_STRINGS: Record<LanguageCode, ExamLocale> = {
     time: 'Time', net: 'Net', exitAria: 'Leave exam', bookmarkAdd: 'Save question', bookmarkRemove: 'Remove from saved',
     navigator: 'Question navigator', questionAria: (n) => `Question ${n}`, options: 'Options', sessionDone: 'Finish session',
     tabUnits: 'Unit tests', tabTg: 'Top-rank trial', reviewList: 'Question summary',
-    difficulty: { easy: 'Easy', medium: 'Medium', hard: 'Hard', osym: 'ÖSYM' },
+    difficulty: { easy: 'Easy', medium: 'Medium', hard: 'Hard', osym: 'Exam level' },
   },
   de: {
     featured: 'Empfohlene Probeprüfung', replay: 'Wiederholen', notSolved: 'Nicht gelöst',
@@ -58,7 +58,7 @@ export const EXAM_STRINGS: Record<LanguageCode, ExamLocale> = {
     time: 'Zeit', net: 'Net', exitAria: 'Prüfung verlassen', bookmarkAdd: 'Frage speichern', bookmarkRemove: 'Aus Gespeicherten entfernen',
     navigator: 'Fragenübersicht', questionAria: (n) => `Frage ${n}`, options: 'Antworten', sessionDone: 'Sitzung beenden',
     tabUnits: 'Einheitentests', tabTg: 'Spitzenprobe', reviewList: 'Fragenübersicht',
-    difficulty: { easy: 'Leicht', medium: 'Mittel', hard: 'Schwer', osym: 'ÖSYM' },
+    difficulty: { easy: 'Leicht', medium: 'Mittel', hard: 'Schwer', osym: 'Prüfungsniveau' },
   },
   fr: {
     featured: 'Examen blanc à la une', replay: 'Refaire', notSolved: 'Non fait',
@@ -68,7 +68,7 @@ export const EXAM_STRINGS: Record<LanguageCode, ExamLocale> = {
     time: 'Durée', net: 'Net', exitAria: "Quitter l'examen", bookmarkAdd: 'Enregistrer la question', bookmarkRemove: 'Retirer des enregistrées',
     navigator: 'Navigateur de questions', questionAria: (n) => `Question ${n}`, options: 'Réponses', sessionDone: 'Terminer la session',
     tabUnits: "Tests d'unité", tabTg: 'Épreuve de rang', reviewList: 'Résumé des questions',
-    difficulty: { easy: 'Facile', medium: 'Moyen', hard: 'Difficile', osym: 'ÖSYM' },
+    difficulty: { easy: 'Facile', medium: 'Moyen', hard: 'Difficile', osym: 'Niveau examen' },
   },
   ru: {
     featured: 'Рекомендуемый пробник', replay: 'Пройти снова', notSolved: 'Не пройден',
@@ -78,7 +78,7 @@ export const EXAM_STRINGS: Record<LanguageCode, ExamLocale> = {
     time: 'Время', net: 'Балл', exitAria: 'Выйти из экзамена', bookmarkAdd: 'Сохранить вопрос', bookmarkRemove: 'Убрать из сохранённых',
     navigator: 'Навигация по вопросам', questionAria: (n) => `Вопрос ${n}`, options: 'Варианты', sessionDone: 'Завершить',
     tabUnits: 'Тесты по темам', tabTg: 'Репетиция', reviewList: 'Сводка по вопросам',
-    difficulty: { easy: 'Лёгкий', medium: 'Средний', hard: 'Сложный', osym: 'ÖSYM' },
+    difficulty: { easy: 'Лёгкий', medium: 'Средний', hard: 'Сложный', osym: 'Уровень экзамена' },
   },
   ar: {
     featured: 'اختبار تجريبي مميز', replay: 'أعد الحل', notSolved: 'لم يُحل',
@@ -88,7 +88,7 @@ export const EXAM_STRINGS: Record<LanguageCode, ExamLocale> = {
     time: 'الوقت', net: 'الصافي', exitAria: 'الخروج من الاختبار', bookmarkAdd: 'حفظ السؤال', bookmarkRemove: 'إزالة من المحفوظات',
     navigator: 'متصفح الأسئلة', questionAria: (n) => `السؤال ${n}`, options: 'الخيارات', sessionDone: 'إنهاء الجلسة',
     tabUnits: 'اختبارات الوحدات', tabTg: 'تجربة المراتب الأولى', reviewList: 'ملخص الأسئلة',
-    difficulty: { easy: 'سهل', medium: 'متوسط', hard: 'صعب', osym: 'ÖSYM' },
+    difficulty: { easy: 'سهل', medium: 'متوسط', hard: 'صعب', osym: 'مستوى الامتحان' },
   },
   zh: {
     featured: '精选模考', replay: '重做', notSolved: '未做',
@@ -108,6 +108,6 @@ export const EXAM_STRINGS: Record<LanguageCode, ExamLocale> = {
     time: 'Dem', net: 'Net', exitAria: 'Ji azmûnê derkeve', bookmarkAdd: 'Pirsê tomar bike', bookmarkRemove: 'Ji tomarkiriyan rake',
     navigator: 'Lîsteya pirsan', questionAria: (n) => `Pirsa ${n}`, options: 'Vebijark', sessionDone: 'Xebatê biqedîne',
     tabUnits: 'Testên yekîneyê', tabTg: 'Ceribandina pileyê', reviewList: 'Kurteya pirsan',
-    difficulty: { easy: 'Hêsan', medium: 'Navîn', hard: 'Dijwar', osym: 'ÖSYM' },
+    difficulty: { easy: 'Hêsan', medium: 'Navîn', hard: 'Dijwar', osym: 'Asta azmûnê' },
   },
 };
