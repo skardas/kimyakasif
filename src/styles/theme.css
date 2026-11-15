@@ -2181,6 +2181,18 @@ button.ky-chip.on, button.ky-chip[aria-pressed="true"] {
   .ky-only-narrow { display: none !important; }
 }
 
+/* Portrait tablets (iPad upright): the side-by-side pane leaves the lower half of the screen
+   empty, so lead and controls stack as on phones while the sidebar stays. */
+@media (min-width: 900px) and (orientation: portrait) {
+  .ky-pane {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .ky-pane > .ky-lead { align-self: stretch; }
+}
+
 /* Action keys: icon over label, equal widths */
 .ky-acts {
   display: flex;
