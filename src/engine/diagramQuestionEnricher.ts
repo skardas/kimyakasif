@@ -1677,36 +1677,134 @@ export function getAllUnitDiagramSpecs(unitId: string, lang: LanguageCode): [Que
   ];
 }
 
+const STOP_STEMS = new Set(['olan', 'daha', 'gibi', 'için', 'veya', 'arası', 'sonra', 'değil', 'kadar', 'olarak', 'which', 'their', 'there', 'about', 'between', 'with', 'from', 'that', 'this', 'into']);
+
+/** Crude language-agnostic content stems (first 5 letters of words with >= 4 letters). */
+function contentStems(text: string): Set<string> {
+  const out = new Set<string>();
+  for (const w of (text || '').toLocaleLowerCase('tr').split(/[^\p{L}\p{N}]+/u)) {
+    if (w.length < 4 || STOP_STEMS.has(w)) continue;
+    out.add(w.slice(0, 5));
+  }
+  return out;
+}
+
+/** Statements a student evaluates in a question: the options plus any I./II./III. lines of the stem. */
+function questionStatements(q: CompiledQuestion): string[] {
+  const lines = q.stem.split('\n').filter((l) => /^(I|II|III|IV)\.\s/.test(l)).map((l) => l.replace(/^[IV]+\.\s*/, ''));
+  // Quoted clues inside the stem (e.g. the trait in a matching question) are judged too.
+  const quoted = (q.stem.match(/["“«]([^"”»]{25,})["”»]/g) || []).map((m) => m.slice(1, -1));
+  return [...q.options, ...lines, ...quoted];
+}
+
 /**
- * Enriches figure-applicable questions within a unit with interactive animated diagrams.
- * Attaches at least 24 to 32 diagrams per 128 questions in every unit.
+ * A diagram whose caption restates one of the statements being judged hands the student the
+ * answer (e.g. a caption "katalizör ΔH değerini değiştirmez" on a question that asks whether that
+ * very statement is true). Such pairings are not allowed.
+ */
+function diagramGivesAway(q: CompiledQuestion, spec: QuestionDiagramSpec): boolean {
+  // A figure whose title, caption or labels name the keyed option (e.g. "Geçici sertlik" for a
+  // question whose answer is "Geçici Sertlik") gives the answer away outright.
+  const key = (q.options[q.correctIndex] || '').replace(/\s*[（(][^）)]*[）)]/g, '').trim().toLocaleLowerCase('tr');
+  const figureText = `${spec.title} ${spec.caption} ${Object.values(spec.labels || {}).join(' ')}`.toLocaleLowerCase('tr');
+  if (key.length >= 4 && key.length <= 40) {
+    if (figureText.includes(key)) return true;
+    const keyStems = contentStems(key);
+    const figStems = contentStems(figureText);
+    if (keyStems.size > 0 && [...keyStems].every((k) => figStems.has(k))) return true;
+  }
+  const cap = contentStems(spec.caption);
+  if (cap.size === 0) return false;
+  for (const st of questionStatements(q)) {
+    const s = contentStems(st);
+    let shared = 0;
+    for (const c of cap) if (s.has(c)) shared++;
+    if (shared >= 3 && shared / cap.size >= 0.4) return true;
+  }
+  return false;
+}
+
+function diagramRelevance(q: CompiledQuestion, spec: QuestionDiagramSpec): number {
+  const d = contentStems(`${spec.title} ${spec.caption} ${Object.values(spec.labels || {}).join(' ')}`);
+  const t = contentStems(`${q.stem} ${q.options.join(' ')}`);
+  let shared = 0;
+  for (const x of d) if (t.has(x)) shared++;
+  return shared;
+}
+
+/** Diagram placement (question id -> variant) decided once per unit on the Turkish bank. */
+export type DiagramPlacement = Map<string, 1 | 2>;
+
+/**
+ * Chooses, in every 16-question set, 2 questions for the unit's primary diagram and 2 for the
+ * secondary one (32 per unit, 16 + 16), preferring the questions whose content matches the
+ * diagram's topic and never attaching a diagram whose caption gives away the answer. ÖSYM twins
+ * keep their authored form (no generic figure attached).
+ */
+export function planDiagramPlacement(
+  unit: ChemistryUnitSeedData,
+  questions: CompiledQuestion[],
+  lang: LanguageCode
+): DiagramPlacement {
+  const specs = getAllUnitDiagramSpecs(unit.id, lang);
+  const placement: DiagramPlacement = new Map();
+  const bySet = new Map<number, CompiledQuestion[]>();
+  for (const q of questions) {
+    const s = Math.floor((q.questionNumberInUnit - 1) / 16);
+    if (!bySet.has(s)) bySet.set(s, []);
+    bySet.get(s)!.push(q);
+  }
+  const legacySlot = (q: CompiledQuestion) => {
+    const qInSet = ((q.questionNumberInUnit - 1) % 16) + 1;
+    return qInSet === 1 || qInSet === 5 || qInSet === 9 || qInSet === 13 ? 1 : 0;
+  };
+  for (const setQs of bySet.values()) {
+    const taken = new Set<string>();
+    for (const variantIdx of [0, 1] as const) {
+      const spec = specs[variantIdx];
+      const ranked = setQs
+        .filter((q) => q.archetype !== 'osym-twin' && !taken.has(q.id))
+        .map((q) => ({ q, safe: !diagramGivesAway(q, spec), rel: diagramRelevance(q, spec) }))
+        .sort((a, b) =>
+          Number(b.safe) - Number(a.safe) ||
+          b.rel - a.rel ||
+          legacySlot(b.q) - legacySlot(a.q) ||
+          a.q.questionNumberInUnit - b.q.questionNumberInUnit);
+      for (const entry of ranked.slice(0, 2)) {
+        taken.add(entry.q.id);
+        placement.set(entry.q.id, (variantIdx + 1) as 1 | 2);
+      }
+    }
+  }
+  return placement;
+}
+
+/**
+ * Enriches figure-applicable questions within a unit with interactive animated diagrams
+ * (exactly 32 per 128 questions: 16 primary + 16 secondary). Pass `placement` (computed on the
+ * Turkish bank) so every language attaches the figure to the same question ids.
  */
 export function enrichQuestionsWithDiagrams(
   unit: ChemistryUnitSeedData,
   questions: CompiledQuestion[],
-  lang: LanguageCode
+  lang: LanguageCode,
+  placement?: DiagramPlacement
 ): CompiledQuestion[] {
   const [diag1, diag2] = getAllUnitDiagramSpecs(unit.id, lang);
+  const plan = placement ?? planDiagramPlacement(unit, questions, lang);
 
   return questions.map((q) => {
-    // Determine if question is figure-applicable
-    // We attach diagrams to questions at indices 1, 5, 9, 13 in each set (4 per set = 32 per unit)
-    const qInSet = ((q.questionNumberInUnit - 1) % 16) + 1;
-    const isFigureApplicable = qInSet === 1 || qInSet === 5 || qInSet === 9 || qInSet === 13;
-
-    if (isFigureApplicable) {
-      // Alternate between diagram 1 and diagram 2 across figure slots {1, 5, 9, 13}
-      const spec = (qInSet === 1 || qInSet === 9) ? diag1 : diag2;
-      return {
-        ...q,
-        diagram: {
-          ...spec,
-          animated: true,
-        },
-      };
-    }
-
-    return q;
+    const variant = plan.get(q.id);
+    const { diagram: _previous, ...rest } = q;
+    if (!variant) return rest as CompiledQuestion;
+    const spec = variant === 1 ? diag1 : diag2;
+    return {
+      ...rest,
+      diagram: {
+        ...spec,
+        animated: true,
+      },
+    };
   });
 }
 

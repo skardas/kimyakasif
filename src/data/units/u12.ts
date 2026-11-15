@@ -30,7 +30,7 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-f01",
       "fact": {
-        "tr": "İdeal Gaz Denklemi: PV = nRT'dir (P*V = n*R*T). (P: atm, V: litre, n: mol, T: Kelvin, R: 0.0821 veya 22.4/273).",
+        "tr": "İdeal Gaz Denklemi: PV = nRT'dir (P*V = n*R*T). (P: atm, V: litre, n: mol, T: Kelvin, R: 0,0821 veya 22,4/273).",
         "en": "Ideal Gas Equation: PV = nRT (P*V = n*R*T). (P: atm, V: liter, n: mole, T: Kelvin, R: 0.0821 or 22.4/273).",
         "de": "Ideale Gasgleichung: PV = nRT (P*V = n*R*T). (P: atm, V: Liter, n: Mol, T: Kelvin, R: 0,0821 oder 22,4/273).",
         "fr": "Équation des gaz parfaits : PV = nRT (P*V = n*R*T). (P : atm, V : litre, n : mole, T : Kelvin, R : 0,0821 ou 22,4/273).",
@@ -53,7 +53,7 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-f02",
       "fact": {
-        "tr": "Kelvin sıcaklığı T(K) = t(°C) + 273.15 formülüyle bulunur; mutlak sıcaklık sıfırın altına inemez.",
+        "tr": "Kelvin sıcaklığı T(K) = t(°C) + 273,15 formülüyle bulunur; mutlak sıcaklık sıfırın altına inemez.",
         "en": "Kelvin temperature is found by the formula T(K) = t(°C) + 273.15; The absolute temperature cannot fall below zero.",
         "de": "Die Kelvin-Temperatur wird durch die Formel T(K) = t(°C) + 273,15 ermittelt; Die absolute Temperatur kann nicht unter Null fallen.",
         "fr": "La température Kelvin est trouvée par la formule T(K) = t(°C) + 273,15 ; La température absolue ne peut pas descendre en dessous de zéro.",
@@ -79,7 +79,7 @@ export const unit12: ChemistryUnitSeedData = {
         "tr": "Boyle Yasası: Sabit sıcaklık ve mol sayısında basınç ile hacim ters orantılıdır (P1V1 = P2V2).",
         "en": "Boyle's Law: At constant temperature and number of moles, pressure and volume are inversely proportional (P1V1 = P2V2).",
         "de": "Boyles Gesetz: Bei konstanter Temperatur und Molzahl sind Druck und Volumen umgekehrt proportional (P1V1 = P2V2).",
-        "fr": "Loi de Boyle : À température et nombre de taupes constants, la pression et le volume sont inversement proportionnels (P1V1 = P2V2).",
+        "fr": "Loi de Boyle : À température et nombre de moles constants, la pression et le volume sont inversement proportionnels (P1V1 = P2V2).",
         "ru": "Закон Бойля: При постоянной температуре и количестве молей давление и объем обратно пропорциональны (P1V1 = P2V2).",
         "ar": "قانون بويل: عند ثبات درجة الحرارة وعدد المولات، يتناسب الضغط والحجم عكسيا (P1V1 = P2V2).",
         "zh": "波义耳定律：在恒定的温度和摩尔数下，压力和体积成反比（P1V1 = P2V2）。",
@@ -106,7 +106,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Закон Шарля: при постоянном давлении и количестве молей объем и абсолютная температура прямо пропорциональны (V1/T1 = V2/T2).",
         "ar": "قانون تشارلز: عند الضغط الثابت وعدد المولات، يتناسب الحجم ودرجة الحرارة المطلقة طرديًا (V1/T1 = V2/T2).",
         "zh": "查尔斯定律：在恒定压力和摩尔数下，体积和绝对温度成正比（V1/T1 = V2/T2）。",
-        "ku": "Zagona Charles: Di zexta domdar û hejmara molan de, volt û germahiya mutleq rasterast lihevhatî ne (V1/T1 = V2/T2)."
+        "ku": "Zagona Charles: Di zexta domdar û hejmara molan de, qebare û germahiya mutleq rasterast lihevhatî ne (V1/T1 = V2/T2)."
       },
       "trap": {
         "tr": "Gazın sıcaklığı 20 °C'den 40 °C'ye çıktığında hacmi tam 2 katına çıkar.",
@@ -123,13 +123,13 @@ export const unit12: ChemistryUnitSeedData = {
       "id": "u12-f05",
       "fact": {
         "tr": "Gay-Lussac Yasası: Sabit hacim ve mol sayısında basınç ile mutlak sıcaklık doğru orantılıdır (P1/T1 = P2/T2).",
-        "en": "Gay-Lussac's Law: Pressure and absolute temperature are directly proportional to constant volume and number of moles (P1/T1 = P2/T2).",
-        "de": "Gay-Lussac-Gesetz: Druck und absolute Temperatur sind direkt proportional zum konstanten Volumen und der Molzahl (P1/T1 = P2/T2).",
-        "fr": "Loi de Gay-Lussac : La pression et la température absolue sont directement proportionnelles au volume et au nombre de moles constants (P1/T1 = P2/T2).",
-        "ru": "Закон Гей-Люссака: Давление и абсолютная температура прямо пропорциональны постоянному объему и количеству молей (P1/T1 = P2/T2).",
-        "ar": "قانون جاي لوساك: الضغط ودرجة الحرارة المطلقة يتناسبان طرديا مع الحجم الثابت وعدد المولات (P1/T1 = P2/T2).",
-        "zh": "盖吕萨克定律：压力和绝对温度与恒定体积和摩尔数成正比（P1/T1 = P2/T2）。",
-        "ku": "Zagona Gay-Lussac: Zext û germahiya mutleq rasterast bi qebareya domdar û hejmara molan re têkildar in (P1/T1 = P2/T2)."
+        "en": "Gay-Lussac's Law: At constant volume and number of moles, pressure and absolute temperature are directly proportional (P1/T1 = P2/T2).",
+        "de": "Gesetz von Gay-Lussac: Bei konstantem Volumen und konstanter Molzahl sind Druck und absolute Temperatur direkt proportional (P1/T1 = P2/T2).",
+        "fr": "Loi de Gay-Lussac : à volume et nombre de moles constants, la pression et la température absolue sont directement proportionnelles (P1/T1 = P2/T2).",
+        "ru": "Закон Гей-Люссака: при постоянных объёме и количестве молей давление и абсолютная температура прямо пропорциональны (P1/T1 = P2/T2).",
+        "ar": "قانون جاي لوساك: عند ثبات الحجم وعدد المولات يتناسب الضغط ودرجة الحرارة المطلقة تناسبًا طرديًا (P1/T1 = P2/T2).",
+        "zh": "盖-吕萨克定律：在体积和物质的量不变时，压强与绝对温度成正比（P1/T1 = P2/T2）。",
+        "ku": "Zagona Gay-Lussac: Di qebare û hejmara molan a domdar de, zext û germahiya mutleq rasterast lihevhatî ne (P1/T1 = P2/T2)."
       },
       "trap": {
         "tr": "Sabit hacimli kapta gaz ısıtılırsa basıncı azalır.",
@@ -215,13 +215,13 @@ export const unit12: ChemistryUnitSeedData = {
       "id": "u12-f09",
       "fact": {
         "tr": "Sabit basınçlı sistemler sürtünmesiz pistonlu kaplar ve esnek balonlardır (iç basınç dış basınca eşittir).",
-        "en": "Constant pressure systems are frictionless reciprocating vessels and flexible balloons (internal pressure equals external pressure).",
-        "de": "Konstantdrucksysteme sind reibungsfreie hin- und hergehende Gefäße und flexible Ballons (Innendruck entspricht Außendruck).",
-        "fr": "Les systèmes à pression constante sont des récipients à mouvement alternatif sans friction et des ballons flexibles (la pression interne est égale à la pression externe).",
-        "ru": "Системы постоянного давления представляют собой сосуды, совершающие возвратно-поступательное движение без трения, и гибкие баллоны (внутреннее давление равно внешнему давлению).",
-        "ar": "أنظمة الضغط الثابت عبارة عن أوعية ترددية عديمة الاحتكاك وبالونات مرنة (الضغط الداخلي يساوي الضغط الخارجي).",
-        "zh": "恒压系统是无摩擦往复式容器和柔性气球（内部压力等于外部压力）。",
-        "ku": "Pergalên zexta domdar keştiyên vegerê yên bê ferq û balonên maqûl in (zexta hundurîn wekî zexta derve ye)."
+        "en": "Constant-pressure systems are containers with a frictionless piston and flexible balloons (internal pressure equals external pressure).",
+        "de": "Systeme mit konstantem Druck sind Gefäße mit reibungsfreiem Kolben und elastische Ballons (Innendruck gleich Außendruck).",
+        "fr": "Les systèmes à pression constante sont les récipients à piston sans frottement et les ballons souples (pression intérieure égale à la pression extérieure).",
+        "ru": "Системы с постоянным давлением — сосуды с поршнем без трения и эластичные шары (внутреннее давление равно внешнему).",
+        "ar": "الأنظمة ذات الضغط الثابت هي الأوعية ذات المكبس عديم الاحتكاك والبالونات المرنة (الضغط الداخلي يساوي الضغط الخارجي).",
+        "zh": "恒压体系是带无摩擦活塞的容器和弹性气球（内部压强等于外部压强）。",
+        "ku": "Pergalên bi zexta domdar firaxên bi pistona bê sûrtin û balonên nerm in (zexta hundir bi zexta derve re wekhev e)."
       },
       "trap": {
         "tr": "Çelik kapalı kaplarda gazın basıncı daima atmosfer basıncına eşittir.",
@@ -237,14 +237,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-f10",
       "fact": {
-        "tr": "Gaz molekülleri her yöne doğrusal, rastgele ve hızlı hareket eder (Brown hareketi).",
-        "en": "Gas molecules move linearly, randomly and rapidly in all directions (Brown motion).",
-        "de": "Gasmoleküle bewegen sich linear, zufällig und schnell in alle Richtungen (Brown-Bewegung).",
-        "fr": "Les molécules de gaz se déplacent de manière linéaire, aléatoire et rapide dans toutes les directions (mouvement Brown).",
-        "ru": "Молекулы газа движутся линейно, хаотично и быстро во всех направлениях (движение Брауна).",
-        "ar": "تتحرك جزيئات الغاز بشكل خطي وعشوائي وسريع في جميع الاتجاهات (الحركة البنية).",
-        "zh": "气体分子在各个方向上线性、随机且快速地运动（布朗运动）。",
-        "ku": "Molekulên gazê bi rêkûpêk, bi rasthatinî û bi lez di her alî de dimeşin (Tevgera qehweyî)."
+        "tr": "Kinetik teoriye göre gaz tanecikleri sürekli, rastgele ve hızlı hareket eder; çarpışmalar arasında doğrusal yol izler.",
+        "en": "According to kinetic theory, gas particles move constantly, randomly and rapidly, travelling in straight lines between collisions.",
+        "de": "Nach der kinetischen Gastheorie bewegen sich Gasteilchen ständig, zufällig und schnell und legen zwischen den Stößen geradlinige Wege zurück.",
+        "fr": "Selon la théorie cinétique, les particules de gaz se déplacent constamment, aléatoirement et rapidement, en ligne droite entre deux collisions.",
+        "ru": "Согласно кинетической теории, частицы газа движутся непрерывно, хаотично и быстро, прямолинейно между столкновениями.",
+        "ar": "وفقًا للنظرية الحركية، تتحرك جسيمات الغاز باستمرار وبشكل عشوائي وسريع، وتسلك مسارات مستقيمة بين التصادمات.",
+        "zh": "根据分子运动论，气体粒子不停地做快速、无规则运动，在两次碰撞之间沿直线运动。",
+        "ku": "Li gorî teoriya kînetîk, tenekên gazê bi berdewamî, bêserûber û bi lez dilivin û di navbera du pevketinan de li ser xêza rast diçin."
       },
       "trap": {
         "tr": "Gaz molekülleri sadece dairesel yörüngelerde hareket eder.",
@@ -329,14 +329,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-f14",
       "fact": {
-        "tr": "Manometreler kapalı veya açık uçlu kaplardaki gaz basıncını cıva yüksekliğiyle ölçer.",
-        "en": "Manometers measure gas pressure in closed or open-ended containers using the height of mercury.",
-        "de": "Manometer messen den Gasdruck in geschlossenen oder offenen Behältern anhand der Quecksilbersäule.",
-        "fr": "Les manomètres mesurent la pression du gaz dans des récipients fermés ou ouverts en utilisant la hauteur du mercure.",
-        "ru": "Манометры измеряют давление газа в закрытых или открытых емкостях, используя высоту ртутного столба.",
-        "ar": "تقوم أجهزة قياس الضغط بقياس ضغط الغاز في حاويات مغلقة أو مفتوحة باستخدام ارتفاع الزئبق.",
-        "zh": "压力计利用水银的高度来测量封闭或开口容器中的气压。",
-        "ku": "Manometre zexta gazê di konteynerên girtî an vekirî de bi karanîna bilindahiya merkurê dipîvin."
+        "tr": "Manometreler kapalı kaplardaki gaz basıncını ölçer; açık veya kapalı uçlu olabilir ve basınç cıva seviyeleri arasındaki farktan bulunur.",
+        "en": "Manometers measure the pressure of a gas in a closed container; they may be open-ended or closed-ended, and the pressure is found from the difference in mercury levels.",
+        "de": "Manometer messen den Druck eines Gases in einem geschlossenen Behälter; sie können offen oder geschlossen sein, und der Druck ergibt sich aus dem Höhenunterschied der Quecksilberspiegel.",
+        "fr": "Les manomètres mesurent la pression d'un gaz dans un récipient fermé ; ils peuvent être à bout ouvert ou fermé, et la pression se déduit de la différence des niveaux de mercure.",
+        "ru": "Манометры измеряют давление газа в закрытом сосуде; они бывают открытыми и закрытыми, а давление определяют по разности уровней ртути.",
+        "ar": "تقيس المانومترات ضغط الغاز في وعاء مغلق، وقد تكون مفتوحة الطرف أو مغلقة الطرف، ويُحسب الضغط من فرق مستويي الزئبق.",
+        "zh": "压力计用于测量密闭容器中气体的压强，可分为开口式和闭口式，压强由两侧汞面高度差求得。",
+        "ku": "Manometre zexta gazê di firaxeke girtî de dipîvin; dikarin serê wan vekirî an girtî be û zext ji cudahiya astên cîweyê tê dîtin."
       },
       "trap": {
         "tr": "Manometre havanın nemini ölçen alettir.",
@@ -363,13 +363,13 @@ export const unit12: ChemistryUnitSeedData = {
       },
       "trap": {
         "tr": "Pistonlu kaba gaz eklendiğinde iç basınç hızla artar.",
-        "en": "When gas is added to the reciprocating vessel, the internal pressure increases rapidly.",
+        "en": "When gas is added to a piston container, the internal pressure rises sharply.",
         "de": "Wenn dem Kolbenbehälter Gas zugeführt wird, steigt der Innendruck schnell an.",
-        "fr": "Lorsque du gaz est ajouté au récipient alternatif, la pression interne augmente rapidement.",
-        "ru": "Когда газ добавляется в возвратно-поступательный сосуд, внутреннее давление быстро увеличивается.",
-        "ar": "عند إضافة الغاز إلى الوعاء الترددي، يزداد الضغط الداخلي بسرعة.",
-        "zh": "当往复式容器中添加气体时，内部压力迅速增加。",
-        "ku": "Dema ku gaz li keştiya veguhestinê tê zêdekirin, zexta hundur zû zêde dibe."
+        "fr": "Lorsque du gaz est ajouté dans un récipient à piston, la pression interne augmente rapidement.",
+        "ru": "При добавлении газа в сосуд с поршнем внутреннее давление быстро возрастает.",
+        "ar": "عند إضافة غاز إلى وعاء ذي مكبس، يزداد الضغط الداخلي بسرعة.",
+        "zh": "向活塞容器中加入气体时，内部压强迅速增大。",
+        "ku": "Dema ku gaz li firaxa bi piston tê zêdekirin, zexta hundir zû zêde dibe."
       }
     },
     {
@@ -382,7 +382,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Если температура в контейнере фиксированного объема, содержащем тот же газ, увеличивается вдвое в Кельвинах, давление удваивается.",
         "ar": "إذا تضاعفت درجة الحرارة في وعاء ثابت الحجم يحتوي على نفس الغاز بالكلفن، فإن الضغط يتضاعف.",
         "zh": "如果含有相同气体的固定体积容器中的开尔文温度加倍，则压力加倍。",
-        "ku": "Ger germahiya di konteynirek volga sabît a ku heman gazê tê de di Kelvin de duqat bibe, zext du qat dibe."
+        "ku": "Ger germahiya di konteynirek bi qebareya sabît a ku heman gazê tê de di Kelvin de duqat bibe, zext du qat dibe."
       },
       "trap": {
         "tr": "Sıcaklık 25 °C'den 50 °C'ye çıkarsa basınç iki katına çıkar.",
@@ -411,13 +411,13 @@ export const unit12: ChemistryUnitSeedData = {
       },
       "conceptB": {
         "tr": "Charles Yasası",
-        "en": "Charles Law",
-        "de": "Charles Law",
-        "fr": "Charles Loi",
-        "ru": "Чарльз Лоу",
+        "en": "Charles's Law",
+        "de": "Gesetz von Charles",
+        "fr": "Loi de Charles",
+        "ru": "Закон Шарля",
         "ar": "قانون تشارلز",
-        "zh": "查尔斯·劳",
-        "ku": "Charles Law"
+        "zh": "查理定律",
+        "ku": "Qanûna Charles"
       },
       "distinction": {
         "tr": "Boyle P-V ters orantısını; Charles V-T(K) doğru orantısını açıklar.",
@@ -436,11 +436,11 @@ export const unit12: ChemistryUnitSeedData = {
         "tr": "Pistonlu Kap",
         "en": "Piston Vessel",
         "de": "Kolbengefäß",
-        "fr": "Navire à pistons",
+        "fr": "Récipient à piston",
         "ru": "Поршневой сосуд",
-        "ar": "سفينة المكبس",
+        "ar": "وعاء ذو مكبس",
         "zh": "活塞容器",
-        "ku": "Keştiya Piston"
+        "ku": "Firaxa bi piston"
       },
       "conceptB": {
         "tr": "Sabit Hacimli Kap",
@@ -460,7 +460,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "В поршневом сосуде давление постоянно, а объем переменный; В стальном сосуде объем постоянный, а давление переменное.",
         "ar": "في وعاء المكبس، يكون الضغط ثابتًا والحجم متغيرًا؛ في الوعاء الفولاذي، يكون الحجم ثابتًا والضغط متغيرًا.",
         "zh": "在活塞容器中，压力恒定，体积可变；在钢容器中，体积是恒定的，压力是可变的。",
-        "ku": "Di keştiya pistonê de, zext domdar e û qebarek guhêrbar e; Di keştiyek pola de, hecm domdar e û zext jî guherbar e."
+        "ku": "Di firaxa bi piston de zext domdar e û qebare diguhere; di firaxa pola de qebare domdar e û zext diguhere."
       }
     },
     {
@@ -487,11 +487,11 @@ export const unit12: ChemistryUnitSeedData = {
       },
       "distinction": {
         "tr": "Gay-Lussac sabit hacimde P ile T'nin doğru orantısını; Avogadro sabit P ve T'de V ile mol sayısının doğru orantısını açıklar.",
-        "en": "Gay-Lussac finds the direct proportion of P and T at constant volume; Avogadro explains the direct proportionality of the number of moles to V and the constant P and T.",
-        "de": "Gay-Lussac findet das direkte Verhältnis von P und T bei konstantem Volumen; Avogadro erklärt die direkte Proportionalität der Molzahl zu V und den Konstanten P und T.",
-        "fr": "Gay-Lussac trouve la proportion directe de P et T à volume constant ; Avogadro explique la proportionnalité directe du nombre de taupes à V et aux constantes P et T.",
-        "ru": "Гей-Люссак находит прямую зависимость Р и Т при постоянном объеме; Авогадро объясняет прямую пропорциональность числа родинок V и константам Р и Т.",
-        "ar": "يجد جاي لوساك النسبة المباشرة لـ P وT عند حجم ثابت؛ يشرح أفوجادرو التناسب المباشر لعدد الشامات مع V والثابت P وT.",
+        "en": "Gay-Lussac describes the direct proportionality of P and T at constant volume; Avogadro describes the direct proportionality of V and the number of moles at constant P and T.",
+        "de": "Gay-Lussac beschreibt die direkte Proportionalität von P und T bei konstantem Volumen; Avogadro die direkte Proportionalität von V und Molzahl bei konstantem P und T.",
+        "fr": "Gay-Lussac décrit la proportionnalité directe entre P et T à volume constant ; Avogadro décrit la proportionnalité directe entre V et le nombre de moles à P et T constants.",
+        "ru": "Гей-Люссак описывает прямую пропорциональность P и T при постоянном объёме; Авогадро — прямую пропорциональность V и числа молей при постоянных P и T.",
+        "ar": "يصف قانون جاي لوساك التناسب الطردي بين P وT عند ثبات الحجم؛ ويصف قانون أفوجادرو التناسب الطردي بين V وعدد المولات عند ثبات P وT.",
         "zh": "盖-吕萨克 发现恒体积下 P 和 T 的正比例；阿伏加德罗解释了摩尔数与 V 以及常数 P 和 T 的正比关系。",
         "ku": "Gay-Lussac rêjeya rasterast ya P û T di qebareya domdar de dibîne; Avogadro hevsengiya rasterast a hejmara molan bi V û P û T-ya domdar rave dike."
       }
@@ -499,34 +499,34 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-c04",
       "conceptA": {
-        "tr": "Sabit Hacimli Kap",
-        "en": "Fixed Volume Container",
-        "de": "Container mit festem Volumen",
-        "fr": "Conteneur à volume fixe",
-        "ru": "Контейнер фиксированного объема",
-        "ar": "حاوية ذات حجم ثابت",
-        "zh": "固定容积容器",
-        "ku": "Konteynirê Voluma Sabît"
+        "tr": "İdeal Gaz",
+        "en": "Ideal Gas",
+        "de": "Ideales Gas",
+        "fr": "Gaz parfait",
+        "ru": "Идеальный газ",
+        "ar": "الغاز المثالي",
+        "zh": "理想气体",
+        "ku": "Gaza îdeal"
       },
       "conceptB": {
-        "tr": "Hareketli Pistonlu Kap",
-        "en": "Movable Piston Vessel",
-        "de": "Bewegliches Kolbengefäß",
-        "fr": "Récipient à piston mobile",
-        "ru": "Подвижный поршневой сосуд",
-        "ar": "سفينة المكبس المنقولة",
-        "zh": "可移动活塞容器",
-        "ku": "Keştiya Piston Movable"
+        "tr": "Gerçek Gaz",
+        "en": "Real Gas",
+        "de": "Reales Gas",
+        "fr": "Gaz réel",
+        "ru": "Реальный газ",
+        "ar": "الغاز الحقيقي",
+        "zh": "真实气体",
+        "ku": "Gaza rastîn"
       },
       "distinction": {
-        "tr": "Sabit hacimli kapta V sabittir, sıcaklık arttıkça P artar; pistonlu kapta dış basınç iç basınca eşit olup P sabittir, V artar.",
-        "en": "In a constant volume container, V is constant, P increases as the temperature increases; In a piston vessel, the external pressure is equal to the internal pressure, P is constant, V increases.",
-        "de": "In einem Behälter mit konstantem Volumen ist V konstant, P nimmt mit steigender Temperatur zu; In einem Kolbenbehälter ist der Außendruck gleich dem Innendruck, P ist konstant, V steigt.",
-        "fr": "Dans un récipient à volume constant, V est constant, P augmente avec la température ; Dans un récipient à piston, la pression externe est égale à la pression interne, P est constante, V augmente.",
-        "ru": "В контейнере постоянного объема V постоянно, P увеличивается с повышением температуры; В поршневом сосуде внешнее давление равно внутреннему, Р постоянно, V увеличивается.",
-        "ar": "في حاوية ذات حجم ثابت، تكون V ثابتة، وتزداد P مع زيادة درجة الحرارة؛ في وعاء المكبس، الضغط الخارجي يساوي الضغط الداخلي، P ثابت، V يزداد.",
-        "zh": "在定容容器中，V不变，P随温度升高而增大；在活塞容器中，外部压力等于内部压力，P 恒定，V 增大。",
-        "ku": "Di konteynirek qebareya domdar de, V sabit e, P her ku germahî zêde dibe zêde dibe; Di keştiyek piston de, zexta derve bi zexta hundurîn re wekhev e, P domdar e, V zêde dibe."
+        "tr": "İdeal gazda tanecikler arası çekim kuvveti yoktur ve taneciklerin öz hacmi ihmal edilir; gerçek gazlar yüksek sıcaklık ve düşük basınçta ideal davranışa yaklaşır.",
+        "en": "In an ideal gas there are no attractive forces between particles and the particles' own volume is neglected; real gases approach ideal behaviour at high temperature and low pressure.",
+        "de": "Im idealen Gas gibt es keine Anziehungskräfte zwischen den Teilchen, und ihr Eigenvolumen wird vernachlässigt; reale Gase nähern sich bei hoher Temperatur und niedrigem Druck dem idealen Verhalten.",
+        "fr": "Dans un gaz parfait, il n'y a pas de forces d'attraction entre les particules et leur volume propre est négligé ; les gaz réels se rapprochent du comportement idéal à haute température et basse pression.",
+        "ru": "В идеальном газе нет сил притяжения между частицами, а собственный объём частиц не учитывается; реальные газы приближаются к идеальному поведению при высокой температуре и низком давлении.",
+        "ar": "في الغاز المثالي لا توجد قوى تجاذب بين الجسيمات ويُهمل حجمها الذاتي؛ وتقترب الغازات الحقيقية من السلوك المثالي عند درجات الحرارة المرتفعة والضغوط المنخفضة.",
+        "zh": "理想气体粒子间没有引力，粒子本身的体积可忽略；真实气体在高温、低压下接近理想气体行为。",
+        "ku": "Di gaza îdeal de di navbera tenekan de hêza kişandinê tune ye û qebareya tenekan bi xwe nayê hesibandin; gazên rastîn di germahiya bilind û zexta nizm de nêzî tevgera îdeal dibin."
       }
     },
     {
@@ -610,55 +610,55 @@ export const unit12: ChemistryUnitSeedData = {
       "conceptB": {
         "tr": "Gaz Efüzyonu",
         "en": "Gas Effusion",
-        "de": "Gasaustritt",
-        "fr": "Épanchement de gaz",
-        "ru": "Выброс газа",
+        "de": "Effusion von Gasen",
+        "fr": "Effusion de gaz",
+        "ru": "Эффузия газа",
         "ar": "انصباب الغاز",
         "zh": "气体逸出",
-        "ku": "Derxistina Gazê"
+        "ku": "Efûzyona gazê"
       },
       "distinction": {
         "tr": "Gaz difüzyonu bir gazın başka bir gaz içinde kendiliğinden yayılmasıdır; efüzyon gazın küçük bir delikten boşluğa kaçmasıdır.",
-        "en": "Gas diffusion is the spontaneous spreading of one gas within another gas; Effusion is the escape of gas into space through a small hole.",
-        "de": "Gasdiffusion ist die spontane Ausbreitung eines Gases innerhalb eines anderen Gases; Unter Effusion versteht man das Entweichen von Gas durch ein kleines Loch in den Weltraum.",
-        "fr": "La diffusion de gaz est la propagation spontanée d’un gaz dans un autre gaz ; L'épanchement est la fuite de gaz dans l'espace par un petit trou.",
-        "ru": "Газовая диффузия — это самопроизвольное распространение одного газа внутри другого газа; Эффузия – это выход газа в космос через небольшое отверстие.",
-        "ar": "انتشار الغاز هو التوسع التلقائي لغاز ما داخل غاز آخر؛ الانصباب هو خروج الغاز إلى الفضاء من خلال ثقب صغير.",
-        "zh": "气体扩散是一种气体在另一种气体中的自发混合；逸出是指气体通过小孔逃逸到太空中。",
-        "ku": "Belavbûna gazê belavbûna spontan a gazekê di nav gazeke din de ye; Effuzyon reviya gazê ye ku bi kunek piçûk ve diçe fezayê."
+        "en": "Gas diffusion is the spontaneous spreading of one gas within another gas; effusion is the escape of a gas through a tiny hole into an evacuated region.",
+        "de": "Gasdiffusion ist die spontane Ausbreitung eines Gases in einem anderen Gas; Effusion ist das Ausströmen eines Gases durch eine winzige Öffnung in einen evakuierten Raum.",
+        "fr": "La diffusion gazeuse est la propagation spontanée d'un gaz dans un autre gaz ; l'effusion est l'échappement d'un gaz par un minuscule orifice vers une région vide.",
+        "ru": "Диффузия газа — самопроизвольное распространение одного газа в другом; эффузия — истечение газа через крошечное отверстие в вакуумированную область.",
+        "ar": "انتشار الغاز هو تمدد غاز تلقائيًا داخل غاز آخر؛ والتدفق (الانصباب) هو خروج الغاز عبر ثقب صغير جدًا إلى حيّز مفرغ.",
+        "zh": "气体扩散是一种气体在另一种气体中自发地扩展；泻流（逸出）是气体通过微小孔隙逸入真空区域。",
+        "ku": "Belavbûna gazê belavbûna xweber a gazekê di nav gazeke din de ye; efûzyon derketina gazê ye bi kunekê pir piçûk ber bi herêmeke vala (bê hewa)."
       }
     },
     {
       "id": "u12-c08",
       "conceptA": {
-        "tr": "Boyle Yasası",
-        "en": "Boyle's Law",
-        "de": "Boyles Gesetz",
-        "fr": "Loi de Boyle",
-        "ru": "Закон Бойля",
-        "ar": "قانون بويل",
-        "zh": "波义耳定律",
-        "ku": "Qanûna Boyle"
+        "tr": "Buhar",
+        "en": "Vapour",
+        "de": "Dampf",
+        "fr": "Vapeur",
+        "ru": "Пар",
+        "ar": "البخار",
+        "zh": "蒸气",
+        "ku": "Hilm"
       },
       "conceptB": {
-        "tr": "Charles Yasası",
-        "en": "Charles Law",
-        "de": "Charles Law",
-        "fr": "Charles Loi",
-        "ru": "Чарльз Лоу",
-        "ar": "قانون تشارلز",
-        "zh": "查尔斯·劳",
-        "ku": "Charles Law"
+        "tr": "Gaz",
+        "en": "Gas",
+        "de": "Gas",
+        "fr": "Gaz",
+        "ru": "Газ",
+        "ar": "الغاز",
+        "zh": "气体",
+        "ku": "Gaz"
       },
       "distinction": {
-        "tr": "Boyle P-V ters orantısını; Charles V-T(K) doğru orantısını açıklar.",
-        "en": "Boyle P-V inverse ratio; Explains Charles V-T(K) direct proportion.",
-        "de": "Boyle P-V-Umkehrverhältnis; Erklärt die direkte Proportion von Charles V-T(K).",
-        "fr": "Rapport inverse PV de Boyle ; Explique la proportion directe Charles V-T(K).",
-        "ru": "Обратное соотношение Бойля P-V; Объясняет прямую зависимость Чарльза V-T(K).",
-        "ar": "بويل PV نسبة عكسية؛ يفسر نسبة تشارلز V-T(K) المباشرة.",
-        "zh": "波义耳 P-V 反比；解释 Charles V-T(K) 正比例。",
-        "ku": "Rêjeya berevajî ya Boyle P-V; Rêjeya rasterast Charles V-T(K) rave dike."
+        "tr": "Kritik sıcaklığın altındaki gaz hâline buhar denir ve yalnızca basınç artırılarak sıvılaştırılabilir; kritik sıcaklığın üzerindeki madde gazdır ve tek başına basınç artışıyla sıvılaştırılamaz.",
+        "en": "A substance in the gas phase below its critical temperature is called a vapour and can be liquefied by increasing pressure alone; above the critical temperature it is a gas and cannot be liquefied by pressure alone.",
+        "de": "Ein Stoff im Gaszustand unterhalb seiner kritischen Temperatur heißt Dampf und kann allein durch Druckerhöhung verflüssigt werden; oberhalb der kritischen Temperatur ist er ein Gas und lässt sich durch Druck allein nicht verflüssigen.",
+        "fr": "Une substance à l'état gazeux en dessous de sa température critique est appelée vapeur et peut être liquéfiée par simple augmentation de pression ; au-dessus de la température critique, c'est un gaz qui ne peut pas être liquéfié par la seule pression.",
+        "ru": "Вещество в газообразном состоянии ниже критической температуры называют паром, его можно сжижить одним повышением давления; выше критической температуры это газ, и одним давлением его не сжижить.",
+        "ar": "تسمى المادة في الحالة الغازية تحت درجة حرارتها الحرجة بخارًا ويمكن تسييلها بزيادة الضغط وحدها؛ أما فوق درجة الحرارة الحرجة فهي غاز ولا يمكن تسييلها بالضغط وحده.",
+        "zh": "处于临界温度以下的气态物质称为蒸气，仅靠加压即可液化；高于临界温度时称为气体，仅靠加压无法液化。",
+        "ku": "Madeya di rewşa gazê de ya di bin germahiya krîtîk de jê re hilm tê gotin û tenê bi zêdekirina zextê dikare bibe şile; li jor germahiya krîtîk ew gaz e û tenê bi zextê nabe şile."
       }
     }
   ],
@@ -677,58 +677,58 @@ export const unit12: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Verilen sıcaklığı Kelvin'e dönüştür (t + 273)",
-          "en": "Convert given temperature to Kelvin (t + 273)",
-          "de": "Konvertieren Sie die angegebene Temperatur in Kelvin (t + 273).",
-          "fr": "Convertir la température donnée en Kelvin (t + 273)",
-          "ru": "Преобразовать данную температуру в Кельвины (t + 273)",
-          "ar": "تحويل درجة الحرارة المعطاة إلى كلفن (t + 273)",
-          "zh": "将给定温度转换为开尔文 (t + 273)",
-          "ku": "Germahiya diyarkirî veguherînin Kelvin (t + 273)"
+          "tr": "Verilen ve istenen nicelikleri belirle",
+          "en": "Identify the given and the requested quantities",
+          "de": "Gegebene und gesuchte Größen bestimmen",
+          "fr": "Identifier les grandeurs données et demandées",
+          "ru": "Определить данные и искомые величины",
+          "ar": "حدّد الكميات المعطاة والمطلوبة",
+          "zh": "确定已知量和所求量",
+          "ku": "Mezinahiyên dayî û yên tên xwestin diyar bike"
         },
         {
-          "tr": "Basıncı atm, hacmi litreye çevir",
-          "en": "Release the pressure, convert the volume to liters",
-          "de": "Lassen Sie den Druck ab und rechnen Sie das Volumen in Liter um",
-          "fr": "Relâchez la pression, convertissez le volume en litres",
-          "ru": "Сбросьте давление, переведите объём в литры.",
-          "ar": "حرر الضغط، وقم بتحويل الحجم إلى لتر",
-          "zh": "释放压力，将体积换算为升",
-          "ku": "Zextê berdin, hejmûnê veguherînin lîtreyan"
+          "tr": "Sıcaklığı Kelvin'e, basıncı atm'ye, hacmi litreye çevir",
+          "en": "Convert temperature to kelvin, pressure to atm and volume to litres",
+          "de": "Temperatur in Kelvin, Druck in atm und Volumen in Liter umrechnen",
+          "fr": "Convertir la température en kelvins, la pression en atm et le volume en litres",
+          "ru": "Перевести температуру в кельвины, давление в атм, объём в литры",
+          "ar": "حوّل درجة الحرارة إلى كلفن والضغط إلى atm والحجم إلى لتر",
+          "zh": "将温度换算为开尔文、压强换算为atm、体积换算为升",
+          "ku": "Germahiyê bike Kelvin, zextê bike atm û qebareyê bike lître"
         },
         {
-          "tr": "PV = nRT formülünü yaz",
-          "en": "Write the formula PV = nRT",
-          "de": "Schreiben Sie die Formel PV = nRT",
-          "fr": "Écrivez la formule PV = nRT",
-          "ru": "Запишите формулу PV = nRT.",
-          "ar": "اكتب الصيغة PV = nRT",
-          "zh": "写出公式 PV = nRT",
-          "ku": "Formula PV = nRT binivîse"
+          "tr": "Değerleri PV = nRT denkleminde yerine koy",
+          "en": "Substitute the values into PV = nRT",
+          "de": "Werte in PV = nRT einsetzen",
+          "fr": "Remplacer les valeurs dans PV = nRT",
+          "ru": "Подставить значения в уравнение PV = nRT",
+          "ar": "عوّض القيم في المعادلة PV = nRT",
+          "zh": "将数值代入PV = nRT",
+          "ku": "Nirxan têxe hevkêşeya PV = nRT"
         },
         {
-          "tr": "Sabitleri sadeleştirip orantıyı kur",
-          "en": "Simplify the constants and establish the proportion",
-          "de": "Vereinfachen Sie die Konstanten und ermitteln Sie das Verhältnis",
-          "fr": "Simplifier les constantes et établir la proportion",
-          "ru": "Упростим константы и установим пропорцию",
-          "ar": "تبسيط الثوابت وتحديد النسبة",
-          "zh": "简化常数并建立比例",
-          "ku": "Sabitan hêsan bikin û nîsbetê saz bikin"
+          "tr": "Bilinmeyeni çekip sonucu birimiyle yaz",
+          "en": "Solve for the unknown and write the result with its unit",
+          "de": "Nach der Unbekannten auflösen und das Ergebnis mit Einheit angeben",
+          "fr": "Isoler l'inconnue et écrire le résultat avec son unité",
+          "ru": "Выразить неизвестное и записать ответ с единицами измерения",
+          "ar": "استخرج المجهول واكتب النتيجة مع وحدتها",
+          "zh": "求出未知量并写出带单位的结果",
+          "ku": "Nenasê derxe û encamê bi yekîneya wê binivîse"
         }
       ]
     },
     {
       "id": "u12-s02",
       "title": {
-        "tr": "İdeal Gaz Yasası Türetimi",
-        "en": "Ideal Gas Law Derivation",
-        "de": "Herleitung des idealen Gasgesetzes",
-        "fr": "Dérivation de la loi des gaz parfaits",
-        "ru": "Вывод закона идеального газа",
-        "ar": "اشتقاق قانون الغاز المثالي",
-        "zh": "理想气体定律推导",
-        "ku": "Derxistina Qanûna Gazê ya Îdeal"
+        "tr": "İdeal Gaz Denklemine Giden Gaz Yasaları (Tarihsel Sıra)",
+        "en": "Gas Laws Leading to the Ideal Gas Equation (Historical Order)",
+        "de": "Gasgesetze auf dem Weg zur idealen Gasgleichung (historische Reihenfolge)",
+        "fr": "Lois des gaz menant à l'équation des gaz parfaits (ordre historique)",
+        "ru": "Газовые законы, приведшие к уравнению идеального газа (в историческом порядке)",
+        "ar": "قوانين الغازات المؤدية إلى معادلة الغاز المثالي (بالترتيب التاريخي)",
+        "zh": "通向理想气体方程的气体定律（按历史顺序）",
+        "ku": "Zagonên gazê yên ber bi hevkêşeya gaza îdeal ve (rêza dîrokî)"
       },
       "steps": [
         {
@@ -776,14 +776,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-s03",
       "title": {
-        "tr": "Bileşik Gaz Denklemi Uygulaması",
-        "en": "Compound Gas Equation Application",
-        "de": "Anwendung der zusammengesetzten Gasgleichung",
-        "fr": "Application de l’équation des gaz composés",
-        "ru": "Приложение для уравнения составного газа",
-        "ar": "تطبيق معادلة الغازات المركبة",
-        "zh": "复合气体方程应用",
-        "ku": "Serlêdana Wekheviya Gazê ya Pêkhatî"
+        "tr": "Birleşik Gaz Denklemi Uygulaması",
+        "en": "Applying the Combined Gas Equation",
+        "de": "Anwendung der kombinierten Gasgleichung",
+        "fr": "Application de l'équation combinée des gaz",
+        "ru": "Применение объединённого газового закона",
+        "ar": "تطبيق معادلة الغازات الموحدة",
+        "zh": "合并气体方程的应用",
+        "ku": "Sepandina hevkêşeya gazê ya yekbûyî"
       },
       "steps": [
         {
@@ -818,13 +818,13 @@ export const unit12: ChemistryUnitSeedData = {
         },
         {
           "tr": "Bilinmeyen hacim veya basınç değeri çekilir",
-          "en": "Unknown volume or pressure value is drawn",
-          "de": "Unbekannter Volumen- oder Druckwert wird gezeichnet",
-          "fr": "Un volume ou une valeur de pression inconnu est dessiné",
-          "ru": "Отображается неизвестное значение объема или давления.",
-          "ar": "يتم رسم حجم أو قيمة ضغط غير معروفة",
-          "zh": "绘制未知的体积或压力值",
-          "ku": "Hêjmar an nirxa zextê ya nenas tê kişandin"
+          "en": "The unknown volume or pressure is solved for",
+          "de": "Das unbekannte Volumen bzw. der unbekannte Druck wird berechnet",
+          "fr": "On isole le volume ou la pression inconnu(e)",
+          "ru": "Вычисляется неизвестный объём или давление",
+          "ar": "يُحسب الحجم أو الضغط المجهول",
+          "zh": "求出未知的体积或压强",
+          "ku": "Qebare an zexta nenas tê hesibandin"
         }
       ]
     },
@@ -842,24 +842,24 @@ export const unit12: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "U borusuna belirli yoğunlukta cıva doldurulur",
-          "en": "A certain density of mercury is filled into the U tube.",
-          "de": "In das U-Rohr ist Quecksilber einer bestimmten Dichte eingefüllt.",
-          "fr": "Une certaine densité de mercure est introduite dans le tube en U.",
-          "ru": "U-образная трубка заполнена ртутью определенной плотности.",
-          "ar": "يتم ملء كثافة معينة من الزئبق في أنبوب U.",
-          "zh": "U型管内充有一定密度的汞。",
-          "ku": "Tîrêjek diyar a merkurê di lûleya U de tê dagirtin."
+          "tr": "U borusuna cıva doldurulur",
+          "en": "The U-tube is filled with mercury",
+          "de": "Das U-Rohr wird mit Quecksilber gefüllt",
+          "fr": "Le tube en U est rempli de mercure",
+          "ru": "U-образную трубку заполняют ртутью",
+          "ar": "يُملأ الأنبوب على شكل U بالزئبق",
+          "zh": "U形管中装入汞",
+          "ku": "Lûleya U bi cîwe tê dagirtin"
         },
         {
-          "tr": "Bir kol kapalı gaza, diğer kol atmosfere açılır",
-          "en": "One arm is closed to the gas, the other arm is opened to the atmosphere.",
-          "de": "Ein Arm ist zum Gas hin geschlossen, der andere Arm ist zur Atmosphäre hin geöffnet.",
-          "fr": "Un bras est fermé au gaz, l’autre bras est ouvert à l’atmosphère.",
-          "ru": "Одно плечо закрыто для газа, другое открыто для атмосферы.",
-          "ar": "ذراع واحدة مغلقة أمام الغاز، والذراع الأخرى مفتوحة للغلاف الجوي.",
-          "zh": "一只臂对气体关闭，另一只臂对大气开放。",
-          "ku": "Destek ji gazê re girtî ye, milê din ji atmosferê re vekirî ye."
+          "tr": "Bir kol gaz bulunan kaba bağlanır, diğer kol atmosfere açık bırakılır",
+          "en": "One arm is connected to the gas container, the other is open to the atmosphere",
+          "de": "Ein Schenkel wird mit dem Gasbehälter verbunden, der andere ist zur Atmosphäre offen",
+          "fr": "Une branche est reliée au récipient de gaz, l'autre est ouverte à l'atmosphère",
+          "ru": "Одно колено соединяют с сосудом с газом, другое открыто в атмосферу",
+          "ar": "يوصل أحد الذراعين بوعاء الغاز ويُترك الآخر مفتوحًا للجو",
+          "zh": "一臂与盛气体的容器相连，另一臂通大气",
+          "ku": "Milek bi firaxa gazê ve tê girêdan, milê din ji atmosferê re vekirî ye"
         },
         {
           "tr": "Cıva seviyeleri arasındaki yükseklik farkı h ölçülür",
@@ -872,14 +872,14 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Cûdahiya bilindahiya h di navbera astên mercury de tê pîvandin"
         },
         {
-          "tr": "Açık hava basıncıyla toplanarak gaz basıncı hesaplanır",
-          "en": "Gas pressure is calculated by adding it with the open air pressure",
-          "de": "Der Gasdruck wird durch Addition mit dem Luftdruck im Freien berechnet",
-          "fr": "La pression du gaz est calculée en l'ajoutant à la pression de l'air libre",
-          "ru": "Давление газа рассчитывается путем сложения его с давлением открытого воздуха.",
-          "ar": "يتم حساب ضغط الغاز عن طريق إضافته مع ضغط الهواء المفتوح",
-          "zh": "气体压力是通过将其与开放气压相加来计算的",
-          "ku": "Zexta gazê bi pêvekirina wê bi zexta hewaya vekirî re tê hesibandin"
+          "tr": "Gaz tarafındaki cıva seviyesi düşükse h açık hava basıncına eklenir, yüksekse çıkarılır",
+          "en": "If the mercury level on the gas side is lower, h is added to atmospheric pressure; if higher, it is subtracted",
+          "de": "Steht das Quecksilber auf der Gasseite tiefer, wird h zum Luftdruck addiert, steht es höher, wird h abgezogen",
+          "fr": "Si le niveau du mercure côté gaz est plus bas, h s'ajoute à la pression atmosphérique ; s'il est plus haut, on le soustrait",
+          "ru": "Если уровень ртути со стороны газа ниже, h прибавляют к атмосферному давлению, если выше — вычитают",
+          "ar": "إذا كان مستوى الزئبق في جهة الغاز أدنى يُضاف h إلى الضغط الجوي، وإذا كان أعلى يُطرح منه",
+          "zh": "若气体一侧汞面较低，则将h加到大气压上；若较高，则从大气压中减去h",
+          "ku": "Ger asta cîweyê li aliyê gazê nizmtir be, h li zexta atmosferê tê zêdekirin; ger bilindtir be, jê tê kêmkirin"
         }
       ]
     }
@@ -888,7 +888,7 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin01",
       "stem": {
-        "tr": "0 °C'de 4.48 litrelik sabit hacimli kapta 0.5 mol He gazının uyguladığı basınç kaç atmosferdir?",
+        "tr": "0 °C'de 4,48 litrelik sabit hacimli kapta 0,5 mol He gazının uyguladığı basınç kaç atmosferdir?",
         "en": "What is the pressure exerted by 0.5 mol He gas in a 4.48 liter fixed volume container at 0 °C?",
         "de": "Welchen Druck übt 0,5 mol He-Gas in einem 4,48-Liter-Behälter mit festem Volumen bei 0 °C aus?",
         "fr": "Quelle est la pression exercée par 0,5 mole de gaz He dans un récipient de 4,48 litres à volume fixe à 0 °C ?",
@@ -899,7 +899,7 @@ export const unit12: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "2.5 atm",
+          "tr": "2,5 atm",
           "en": "2.5 atm",
           "de": "2,5 atm",
           "fr": "2,5 atm",
@@ -909,7 +909,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "2,5 atm"
         },
         {
-          "tr": "1.0 atm",
+          "tr": "1,0 atm",
           "en": "1.0 atm",
           "de": "1,0 atm",
           "fr": "1,0 atm",
@@ -919,7 +919,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "1.0 atm"
         },
         {
-          "tr": "5.0 atm",
+          "tr": "5,0 atm",
           "en": "5.0 atm",
           "de": "5,0 atm",
           "fr": "5,0 atm",
@@ -929,7 +929,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "5.0 atm"
         },
         {
-          "tr": "0.5 atm",
+          "tr": "0,5 atm",
           "en": "0.5 atm",
           "de": "0,5 atm",
           "fr": "0,5 atm",
@@ -939,7 +939,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "0,5 atm"
         },
         {
-          "tr": "2.24 atm",
+          "tr": "2,24 atm",
           "en": "2.24 atm",
           "de": "2,24 atm",
           "fr": "2,24 atm",
@@ -951,7 +951,7 @@ export const unit12: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "P * V = n * R * T -> P * 4.48 = 0.5 * (22.4 / 273) * 273 -> P * 4.48 = 11.2 -> P = 11.2 / 4.48 = 2.5 atm.",
+        "tr": "P * V = n * R * T -> P * 4,48 = 0,5 * (22,4 / 273) * 273 -> P * 4,48 = 11,2 -> P = 11,2 / 4,48 = 2,5 atm.",
         "en": "P * V = n * R * T -> P * 4.48 = 0.5 * (22.4 / 273) * 273 -> P * 4.48 = 11.2 -> P = 11.2 / 4.48 = 2.5 atm.",
         "de": "P * V = n * R * T -> P * 4,48 = 0,5 * (22,4 / 273) * 273 -> P * 4,48 = 11,2 -> P = 11,2 / 4,48 = 2,5 atm.",
         "fr": "P * V = n * R * T -> P * 4,48 = 0,5 * (22,4 / 273) * 273 -> P * 4,48 = 11,2 -> P = 11,2 / 4,48 = 2,5 atm.",
@@ -1074,7 +1074,7 @@ export const unit12: ChemistryUnitSeedData = {
           "tr": "Boyle Yasası: Sabit sıcaklık ve mol sayısında basınç ile hacim ters orantılıdır (P1V1 = P2V2).",
           "en": "Boyle's Law: At constant temperature and number of moles, pressure and volume are inversely proportional (P1V1 = P2V2).",
           "de": "Boyles Gesetz: Bei konstanter Temperatur und Molzahl sind Druck und Volumen umgekehrt proportional (P1V1 = P2V2).",
-          "fr": "Loi de Boyle : À température et nombre de taupes constants, la pression et le volume sont inversement proportionnels (P1V1 = P2V2).",
+          "fr": "Loi de Boyle : À température et nombre de moles constants, la pression et le volume sont inversement proportionnels (P1V1 = P2V2).",
           "ru": "Закон Бойля: При постоянной температуре и количестве молей давление и объем обратно пропорциональны (P1V1 = P2V2).",
           "ar": "قانون بويل: عند ثبات درجة الحرارة وعدد المولات، يتناسب الضغط والحجم عكسيا (P1V1 = P2V2).",
           "zh": "波义耳定律：在恒定的温度和摩尔数下，压力和体积成反比（P1V1 = P2V2）。",
@@ -1092,13 +1092,13 @@ export const unit12: ChemistryUnitSeedData = {
         },
         {
           "tr": "Pistonlu kaba gaz eklendiğinde iç basınç hızla artar.",
-          "en": "When gas is added to the reciprocating vessel, the internal pressure increases rapidly.",
+          "en": "When gas is added to a piston container, the internal pressure rises sharply.",
           "de": "Wenn dem Kolbenbehälter Gas zugeführt wird, steigt der Innendruck schnell an.",
-          "fr": "Lorsque du gaz est ajouté au récipient alternatif, la pression interne augmente rapidement.",
-          "ru": "Когда газ добавляется в возвратно-поступательный сосуд, внутреннее давление быстро увеличивается.",
-          "ar": "عند إضافة الغاز إلى الوعاء الترددي، يزداد الضغط الداخلي بسرعة.",
-          "zh": "当往复式容器中添加气体时，内部压力迅速增加。",
-          "ku": "Dema ku gaz li keştiya veguhestinê tê zêdekirin, zexta hundur zû zêde dibe."
+          "fr": "Lorsque du gaz est ajouté dans un récipient à piston, la pression interne augmente rapidement.",
+          "ru": "При добавлении газа в сосуд с поршнем внутреннее давление быстро возрастает.",
+          "ar": "عند إضافة غاز إلى وعاء ذي مكبس، يزداد الضغط الداخلي بسرعة.",
+          "zh": "向活塞容器中加入气体时，内部压强迅速增大。",
+          "ku": "Dema ku gaz li firaxa bi piston tê zêdekirin, zexta hundir zû zêde dibe."
         }
       ],
       "correctIndex": 2,
@@ -1106,7 +1106,7 @@ export const unit12: ChemistryUnitSeedData = {
         "tr": "Doğru cevap \"Boyle Yasası: Sabit sıcaklık ve mol sayısında basınç ile hacim ters orantılıdır (P1V1 = P2V2).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Boyle's Law: At constant temperature and number of moles, pressure and volume are inversely proportional (P1V1 = P2V2).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Boyles Gesetz: Bei konstanter Temperatur und Molzahl sind Druck und Volumen umgekehrt proportional (P1V1 = P2V2).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Loi de Boyle : À température et nombre de taupes constants, la pression et le volume sont inversement proportionnels (P1V1 = P2V2).\". Notion fondamentale du programme officiel de chimie.",
+        "fr": "L'affirmation exacte est: \"Loi de Boyle : À température et nombre de moles constants, la pression et le volume sont inversement proportionnels (P1V1 = P2V2).\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Закон Бойля: При постоянной температуре и количестве молей давление и объем обратно пропорциональны (P1V1 = P2V2).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"قانون بويل: عند ثبات درجة الحرارة وعدد المولات، يتناسب الضغط والحجم عكسيا (P1V1 = P2V2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“波义耳定律：在恒定的温度和摩尔数下，压力和体积成反比（P1V1 = P2V2）。”。属于化学学科必考的核心客观真理。",
@@ -1164,7 +1164,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Закон Шарля: при постоянном давлении и количестве молей объем и абсолютная температура прямо пропорциональны (V1/T1 = V2/T2).",
           "ar": "قانون تشارلز: عند الضغط الثابت وعدد المولات، يتناسب الحجم ودرجة الحرارة المطلقة طرديًا (V1/T1 = V2/T2).",
           "zh": "查尔斯定律：在恒定压力和摩尔数下，体积和绝对温度成正比（V1/T1 = V2/T2）。",
-          "ku": "Zagona Charles: Di zexta domdar û hejmara molan de, volt û germahiya mutleq rasterast lihevhatî ne (V1/T1 = V2/T2)."
+          "ku": "Zagona Charles: Di zexta domdar û hejmara molan de, qebare û germahiya mutleq rasterast lihevhatî ne (V1/T1 = V2/T2)."
         },
         {
           "tr": "Sıcaklık 25 °C'den 50 °C'ye çıkarsa basınç iki katına çıkar.",
@@ -1186,7 +1186,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Закон Шарля: при постоянном давлении и количестве молей объем и абсолютная температура прямо пропорциональны (V1/T1 = V2/T2).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"قانون تشارلز: عند الضغط الثابت وعدد المولات، يتناسب الحجم ودرجة الحرارة المطلقة طرديًا (V1/T1 = V2/T2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“查尔斯定律：在恒定压力和摩尔数下，体积和绝对温度成正比（V1/T1 = V2/T2）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Zagona Charles: Di zexta domdar û hejmara molan de, volt û germahiya mutleq rasterast lihevhatî ne (V1/T1 = V2/T2).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Zagona Charles: Di zexta domdar û hejmara molan de, qebare û germahiya mutleq rasterast lihevhatî ne (V1/T1 = V2/T2).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1244,25 +1244,25 @@ export const unit12: ChemistryUnitSeedData = {
         },
         {
           "tr": "Gay-Lussac Yasası: Sabit hacim ve mol sayısında basınç ile mutlak sıcaklık doğru orantılıdır (P1/T1 = P2/T2).",
-          "en": "Gay-Lussac's Law: Pressure and absolute temperature are directly proportional to constant volume and number of moles (P1/T1 = P2/T2).",
-          "de": "Gay-Lussac-Gesetz: Druck und absolute Temperatur sind direkt proportional zum konstanten Volumen und der Molzahl (P1/T1 = P2/T2).",
-          "fr": "Loi de Gay-Lussac : La pression et la température absolue sont directement proportionnelles au volume et au nombre de moles constants (P1/T1 = P2/T2).",
-          "ru": "Закон Гей-Люссака: Давление и абсолютная температура прямо пропорциональны постоянному объему и количеству молей (P1/T1 = P2/T2).",
-          "ar": "قانون جاي لوساك: الضغط ودرجة الحرارة المطلقة يتناسبان طرديا مع الحجم الثابت وعدد المولات (P1/T1 = P2/T2).",
-          "zh": "盖吕萨克定律：压力和绝对温度与恒定体积和摩尔数成正比（P1/T1 = P2/T2）。",
-          "ku": "Zagona Gay-Lussac: Zext û germahiya mutleq rasterast bi qebareya domdar û hejmara molan re têkildar in (P1/T1 = P2/T2)."
+          "en": "Gay-Lussac's Law: At constant volume and number of moles, pressure and absolute temperature are directly proportional (P1/T1 = P2/T2).",
+          "de": "Gesetz von Gay-Lussac: Bei konstantem Volumen und konstanter Molzahl sind Druck und absolute Temperatur direkt proportional (P1/T1 = P2/T2).",
+          "fr": "Loi de Gay-Lussac : à volume et nombre de moles constants, la pression et la température absolue sont directement proportionnelles (P1/T1 = P2/T2).",
+          "ru": "Закон Гей-Люссака: при постоянных объёме и количестве молей давление и абсолютная температура прямо пропорциональны (P1/T1 = P2/T2).",
+          "ar": "قانون جاي لوساك: عند ثبات الحجم وعدد المولات يتناسب الضغط ودرجة الحرارة المطلقة تناسبًا طرديًا (P1/T1 = P2/T2).",
+          "zh": "盖-吕萨克定律：在体积和物质的量不变时，压强与绝对温度成正比（P1/T1 = P2/T2）。",
+          "ku": "Zagona Gay-Lussac: Di qebare û hejmara molan a domdar de, zext û germahiya mutleq rasterast lihevhatî ne (P1/T1 = P2/T2)."
         }
       ],
       "correctIndex": 4,
       "explanation": {
         "tr": "Doğru cevap \"Gay-Lussac Yasası: Sabit hacim ve mol sayısında basınç ile mutlak sıcaklık doğru orantılıdır (P1/T1 = P2/T2).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Gay-Lussac's Law: Pressure and absolute temperature are directly proportional to constant volume and number of moles (P1/T1 = P2/T2).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Gay-Lussac-Gesetz: Druck und absolute Temperatur sind direkt proportional zum konstanten Volumen und der Molzahl (P1/T1 = P2/T2).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Loi de Gay-Lussac : La pression et la température absolue sont directement proportionnelles au volume et au nombre de moles constants (P1/T1 = P2/T2).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Закон Гей-Люссака: Давление и абсолютная температура прямо пропорциональны постоянному объему и количеству молей (P1/T1 = P2/T2).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"قانون جاي لوساك: الضغط ودرجة الحرارة المطلقة يتناسبان طرديا مع الحجم الثابت وعدد المولات (P1/T1 = P2/T2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“盖吕萨克定律：压力和绝对温度与恒定体积和摩尔数成正比（P1/T1 = P2/T2）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Zagona Gay-Lussac: Zext û germahiya mutleq rasterast bi qebareya domdar û hejmara molan re têkildar in (P1/T1 = P2/T2).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Gay-Lussac's Law: At constant volume and number of moles, pressure and absolute temperature are directly proportional (P1/T1 = P2/T2).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Gesetz von Gay-Lussac: Bei konstantem Volumen und konstanter Molzahl sind Druck und absolute Temperatur direkt proportional (P1/T1 = P2/T2).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Loi de Gay-Lussac : à volume et nombre de moles constants, la pression et la température absolue sont directement proportionnelles (P1/T1 = P2/T2).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Закон Гей-Люссака: при постоянных объёме и количестве молей давление и абсолютная температура прямо пропорциональны (P1/T1 = P2/T2).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"قانون جاي لوساك: عند ثبات الحجم وعدد المولات يتناسب الضغط ودرجة الحرارة المطلقة تناسبًا طرديًا (P1/T1 = P2/T2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“盖-吕萨克定律：在体积和物质的量不变时，压强与绝对温度成正比（P1/T1 = P2/T2）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Zagona Gay-Lussac: Di qebare û hejmara molan a domdar de, zext û germahiya mutleq rasterast lihevhatî ne (P1/T1 = P2/T2).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1310,13 +1310,13 @@ export const unit12: ChemistryUnitSeedData = {
         },
         {
           "tr": "Pistonlu kaba gaz eklendiğinde iç basınç hızla artar.",
-          "en": "When gas is added to the reciprocating vessel, the internal pressure increases rapidly.",
+          "en": "When gas is added to a piston container, the internal pressure rises sharply.",
           "de": "Wenn dem Kolbenbehälter Gas zugeführt wird, steigt der Innendruck schnell an.",
-          "fr": "Lorsque du gaz est ajouté au récipient alternatif, la pression interne augmente rapidement.",
-          "ru": "Когда газ добавляется в возвратно-поступательный сосуд, внутреннее давление быстро увеличивается.",
-          "ar": "عند إضافة الغاز إلى الوعاء الترددي، يزداد الضغط الداخلي بسرعة.",
-          "zh": "当往复式容器中添加气体时，内部压力迅速增加。",
-          "ku": "Dema ku gaz li keştiya veguhestinê tê zêdekirin, zexta hundur zû zêde dibe."
+          "fr": "Lorsque du gaz est ajouté dans un récipient à piston, la pression interne augmente rapidement.",
+          "ru": "При добавлении газа в сосуд с поршнем внутреннее давление быстро возрастает.",
+          "ar": "عند إضافة غاز إلى وعاء ذي مكبس، يزداد الضغط الداخلي بسرعة.",
+          "zh": "向活塞容器中加入气体时，内部压强迅速增大。",
+          "ku": "Dema ku gaz li firaxa bi piston tê zêdekirin, zexta hundir zû zêde dibe."
         },
         {
           "tr": "Sıcaklık 10 °C'den 20 °C'ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
@@ -1518,13 +1518,13 @@ export const unit12: ChemistryUnitSeedData = {
         },
         {
           "tr": "Pistonlu kaba gaz eklendiğinde iç basınç hızla artar.",
-          "en": "When gas is added to the reciprocating vessel, the internal pressure increases rapidly.",
+          "en": "When gas is added to a piston container, the internal pressure rises sharply.",
           "de": "Wenn dem Kolbenbehälter Gas zugeführt wird, steigt der Innendruck schnell an.",
-          "fr": "Lorsque du gaz est ajouté au récipient alternatif, la pression interne augmente rapidement.",
-          "ru": "Когда газ добавляется в возвратно-поступательный сосуд, внутреннее давление быстро увеличивается.",
-          "ar": "عند إضافة الغاز إلى الوعاء الترددي، يزداد الضغط الداخلي بسرعة.",
-          "zh": "当往复式容器中添加气体时，内部压力迅速增加。",
-          "ku": "Dema ku gaz li keştiya veguhestinê tê zêdekirin, zexta hundur zû zêde dibe."
+          "fr": "Lorsque du gaz est ajouté dans un récipient à piston, la pression interne augmente rapidement.",
+          "ru": "При добавлении газа в сосуд с поршнем внутреннее давление быстро возрастает.",
+          "ar": "عند إضافة غاز إلى وعاء ذي مكبس، يزداد الضغط الداخلي بسرعة.",
+          "zh": "向活塞容器中加入气体时，内部压强迅速增大。",
+          "ku": "Dema ku gaz li firaxa bi piston tê zêdekirin, zexta hundir zû zêde dibe."
         },
         {
           "tr": "Sıcaklık 10 °C'den 20 °C'ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
@@ -1538,13 +1538,13 @@ export const unit12: ChemistryUnitSeedData = {
         },
         {
           "tr": "Sabit basınçlı sistemler sürtünmesiz pistonlu kaplar ve esnek balonlardır (iç basınç dış basınca eşittir).",
-          "en": "Constant pressure systems are frictionless reciprocating vessels and flexible balloons (internal pressure equals external pressure).",
-          "de": "Konstantdrucksysteme sind reibungsfreie hin- und hergehende Gefäße und flexible Ballons (Innendruck entspricht Außendruck).",
-          "fr": "Les systèmes à pression constante sont des récipients à mouvement alternatif sans friction et des ballons flexibles (la pression interne est égale à la pression externe).",
-          "ru": "Системы постоянного давления представляют собой сосуды, совершающие возвратно-поступательное движение без трения, и гибкие баллоны (внутреннее давление равно внешнему давлению).",
-          "ar": "أنظمة الضغط الثابت عبارة عن أوعية ترددية عديمة الاحتكاك وبالونات مرنة (الضغط الداخلي يساوي الضغط الخارجي).",
-          "zh": "恒压系统是无摩擦往复式容器和柔性气球（内部压力等于外部压力）。",
-          "ku": "Pergalên zexta domdar keştiyên vegerê yên bê ferq û balonên maqûl in (zexta hundurîn wekî zexta derve ye)."
+          "en": "Constant-pressure systems are containers with a frictionless piston and flexible balloons (internal pressure equals external pressure).",
+          "de": "Systeme mit konstantem Druck sind Gefäße mit reibungsfreiem Kolben und elastische Ballons (Innendruck gleich Außendruck).",
+          "fr": "Les systèmes à pression constante sont les récipients à piston sans frottement et les ballons souples (pression intérieure égale à la pression extérieure).",
+          "ru": "Системы с постоянным давлением — сосуды с поршнем без трения и эластичные шары (внутреннее давление равно внешнему).",
+          "ar": "الأنظمة ذات الضغط الثابت هي الأوعية ذات المكبس عديم الاحتكاك والبالونات المرنة (الضغط الداخلي يساوي الضغط الخارجي).",
+          "zh": "恒压体系是带无摩擦活塞的容器和弹性气球（内部压强等于外部压强）。",
+          "ku": "Pergalên bi zexta domdar firaxên bi pistona bê sûrtin û balonên nerm in (zexta hundir bi zexta derve re wekhev e)."
         },
         {
           "tr": "Sabit hacimli kapta gaz ısıtılırsa basıncı azalır.",
@@ -1560,13 +1560,13 @@ export const unit12: ChemistryUnitSeedData = {
       "correctIndex": 3,
       "explanation": {
         "tr": "Doğru cevap \"Sabit basınçlı sistemler sürtünmesiz pistonlu kaplar ve esnek balonlardır (iç basınç dış basınca eşittir).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Constant pressure systems are frictionless reciprocating vessels and flexible balloons (internal pressure equals external pressure).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Konstantdrucksysteme sind reibungsfreie hin- und hergehende Gefäße und flexible Ballons (Innendruck entspricht Außendruck).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les systèmes à pression constante sont des récipients à mouvement alternatif sans friction et des ballons flexibles (la pression interne est égale à la pression externe).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Системы постоянного давления представляют собой сосуды, совершающие возвратно-поступательное движение без трения, и гибкие баллоны (внутреннее давление равно внешнему давлению).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"أنظمة الضغط الثابت عبارة عن أوعية ترددية عديمة الاحتكاك وبالونات مرنة (الضغط الداخلي يساوي الضغط الخارجي).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“恒压系统是无摩擦往复式容器和柔性气球（内部压力等于外部压力）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Pergalên zexta domdar keştiyên vegerê yên bê ferq û balonên maqûl in (zexta hundurîn wekî zexta derve ye).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Constant-pressure systems are containers with a frictionless piston and flexible balloons (internal pressure equals external pressure).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Systeme mit konstantem Druck sind Gefäße mit reibungsfreiem Kolben und elastische Ballons (Innendruck gleich Außendruck).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les systèmes à pression constante sont les récipients à piston sans frottement et les ballons souples (pression intérieure égale à la pression extérieure).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Системы с постоянным давлением — сосуды с поршнем без трения и эластичные шары (внутреннее давление равно внешнему).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"الأنظمة ذات الضغط الثابت هي الأوعية ذات المكبس عديم الاحتكاك والبالونات المرنة (الضغط الداخلي يساوي الضغط الخارجي).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“恒压体系是带无摩擦活塞的容器和弹性气球（内部压强等于外部压强）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Pergalên bi zexta domdar firaxên bi pistona bê sûrtin û balonên nerm in (zexta hundir bi zexta derve re wekhev e).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1623,26 +1623,26 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Hecma yeksan a gazên cuda timî xwedî girseya yeksan in."
         },
         {
-          "tr": "Gaz molekülleri her yöne doğrusal, rastgele ve hızlı hareket eder (Brown hareketi).",
-          "en": "Gas molecules move linearly, randomly and rapidly in all directions (Brown motion).",
-          "de": "Gasmoleküle bewegen sich linear, zufällig und schnell in alle Richtungen (Brown-Bewegung).",
-          "fr": "Les molécules de gaz se déplacent de manière linéaire, aléatoire et rapide dans toutes les directions (mouvement Brown).",
-          "ru": "Молекулы газа движутся линейно, хаотично и быстро во всех направлениях (движение Брауна).",
-          "ar": "تتحرك جزيئات الغاز بشكل خطي وعشوائي وسريع في جميع الاتجاهات (الحركة البنية).",
-          "zh": "气体分子在各个方向上线性、随机且快速地运动（布朗运动）。",
-          "ku": "Molekulên gazê bi rêkûpêk, bi rasthatinî û bi lez di her alî de dimeşin (Tevgera qehweyî)."
+          "tr": "Kinetik teoriye göre gaz tanecikleri sürekli, rastgele ve hızlı hareket eder; çarpışmalar arasında doğrusal yol izler.",
+          "en": "According to kinetic theory, gas particles move constantly, randomly and rapidly, travelling in straight lines between collisions.",
+          "de": "Nach der kinetischen Gastheorie bewegen sich Gasteilchen ständig, zufällig und schnell und legen zwischen den Stößen geradlinige Wege zurück.",
+          "fr": "Selon la théorie cinétique, les particules de gaz se déplacent constamment, aléatoirement et rapidement, en ligne droite entre deux collisions.",
+          "ru": "Согласно кинетической теории, частицы газа движутся непрерывно, хаотично и быстро, прямолинейно между столкновениями.",
+          "ar": "وفقًا للنظرية الحركية، تتحرك جسيمات الغاز باستمرار وبشكل عشوائي وسريع، وتسلك مسارات مستقيمة بين التصادمات.",
+          "zh": "根据分子运动论，气体粒子不停地做快速、无规则运动，在两次碰撞之间沿直线运动。",
+          "ku": "Li gorî teoriya kînetîk, tenekên gazê bi berdewamî, bêserûber û bi lez dilivin û di navbera du pevketinan de li ser xêza rast diçin."
         }
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Gaz molekülleri her yöne doğrusal, rastgele ve hızlı hareket eder (Brown hareketi).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Gas molecules move linearly, randomly and rapidly in all directions (Brown motion).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Gasmoleküle bewegen sich linear, zufällig und schnell in alle Richtungen (Brown-Bewegung).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les molécules de gaz se déplacent de manière linéaire, aléatoire et rapide dans toutes les directions (mouvement Brown).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Молекулы газа движутся линейно, хаотично и быстро во всех направлениях (движение Брауна).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تتحرك جزيئات الغاز بشكل خطي وعشوائي وسريع في جميع الاتجاهات (الحركة البنية).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“气体分子在各个方向上线性、随机且快速地运动（布朗运动）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Molekulên gazê bi rêkûpêk, bi rasthatinî û bi lez di her alî de dimeşin (Tevgera qehweyî).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Kinetik teoriye göre gaz tanecikleri sürekli, rastgele ve hızlı hareket eder; çarpışmalar arasında doğrusal yol izler.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"According to kinetic theory, gas particles move constantly, randomly and rapidly, travelling in straight lines between collisions.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Nach der kinetischen Gastheorie bewegen sich Gasteilchen ständig, zufällig und schnell und legen zwischen den Stößen geradlinige Wege zurück.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Selon la théorie cinétique, les particules de gaz se déplacent constamment, aléatoirement et rapidement, en ligne droite entre deux collisions.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Согласно кинетической теории, частицы газа движутся непрерывно, хаотично и быстро, прямолинейно между столкновениями.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"وفقًا للنظرية الحركية، تتحرك جسيمات الغاز باستمرار وبشكل عشوائي وسريع، وتسلك مسارات مستقيمة بين التصادمات.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“根据分子运动论，气体粒子不停地做快速、无规则运动，在两次碰撞之间沿直线运动。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Li gorî teoriya kînetîk, tenekên gazê bi berdewamî, bêserûber û bi lez dilivin û di navbera du pevketinan de li ser xêza rast diçin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1736,13 +1736,13 @@ export const unit12: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Pistonlu kaba gaz eklendiğinde iç basınç hızla artar.",
-          "en": "When gas is added to the reciprocating vessel, the internal pressure increases rapidly.",
+          "en": "When gas is added to a piston container, the internal pressure rises sharply.",
           "de": "Wenn dem Kolbenbehälter Gas zugeführt wird, steigt der Innendruck schnell an.",
-          "fr": "Lorsque du gaz est ajouté au récipient alternatif, la pression interne augmente rapidement.",
-          "ru": "Когда газ добавляется в возвратно-поступательный сосуд, внутреннее давление быстро увеличивается.",
-          "ar": "عند إضافة الغاز إلى الوعاء الترددي، يزداد الضغط الداخلي بسرعة.",
-          "zh": "当往复式容器中添加气体时，内部压力迅速增加。",
-          "ku": "Dema ku gaz li keştiya veguhestinê tê zêdekirin, zexta hundur zû zêde dibe."
+          "fr": "Lorsque du gaz est ajouté dans un récipient à piston, la pression interne augmente rapidement.",
+          "ru": "При добавлении газа в сосуд с поршнем внутреннее давление быстро возрастает.",
+          "ar": "عند إضافة غاز إلى وعاء ذي مكبس، يزداد الضغط الداخلي بسرعة.",
+          "zh": "向活塞容器中加入气体时，内部压强迅速增大。",
+          "ku": "Dema ku gaz li firaxa bi piston tê zêdekirin, zexta hundir zû zêde dibe."
         },
         {
           "tr": "Gazlar bulundukları kabın hacmini tamamen doldurur ve her noktasına eşit basınç uygular.",
@@ -1917,14 +1917,14 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Her ku germahî zêde dibe, tîrêjiya gazê zêde dibe."
         },
         {
-          "tr": "Manometreler kapalı veya açık uçlu kaplardaki gaz basıncını cıva yüksekliğiyle ölçer.",
-          "en": "Manometers measure gas pressure in closed or open-ended containers using the height of mercury.",
-          "de": "Manometer messen den Gasdruck in geschlossenen oder offenen Behältern anhand der Quecksilbersäule.",
-          "fr": "Les manomètres mesurent la pression du gaz dans des récipients fermés ou ouverts en utilisant la hauteur du mercure.",
-          "ru": "Манометры измеряют давление газа в закрытых или открытых емкостях, используя высоту ртутного столба.",
-          "ar": "تقوم أجهزة قياس الضغط بقياس ضغط الغاز في حاويات مغلقة أو مفتوحة باستخدام ارتفاع الزئبق.",
-          "zh": "压力计利用水银的高度来测量封闭或开口容器中的气压。",
-          "ku": "Manometre zexta gazê di konteynerên girtî an vekirî de bi karanîna bilindahiya merkurê dipîvin."
+          "tr": "Manometreler kapalı kaplardaki gaz basıncını ölçer; açık veya kapalı uçlu olabilir ve basınç cıva seviyeleri arasındaki farktan bulunur.",
+          "en": "Manometers measure the pressure of a gas in a closed container; they may be open-ended or closed-ended, and the pressure is found from the difference in mercury levels.",
+          "de": "Manometer messen den Druck eines Gases in einem geschlossenen Behälter; sie können offen oder geschlossen sein, und der Druck ergibt sich aus dem Höhenunterschied der Quecksilberspiegel.",
+          "fr": "Les manomètres mesurent la pression d'un gaz dans un récipient fermé ; ils peuvent être à bout ouvert ou fermé, et la pression se déduit de la différence des niveaux de mercure.",
+          "ru": "Манометры измеряют давление газа в закрытом сосуде; они бывают открытыми и закрытыми, а давление определяют по разности уровней ртути.",
+          "ar": "تقيس المانومترات ضغط الغاز في وعاء مغلق، وقد تكون مفتوحة الطرف أو مغلقة الطرف، ويُحسب الضغط من فرق مستويي الزئبق.",
+          "zh": "压力计用于测量密闭容器中气体的压强，可分为开口式和闭口式，压强由两侧汞面高度差求得。",
+          "ku": "Manometre zexta gazê di firaxeke girtî de dipîvin; dikarin serê wan vekirî an girtî be û zext ji cudahiya astên cîweyê tê dîtin."
         },
         {
           "tr": "Gaz molekülleri sadece dairesel yörüngelerde hareket eder.",
@@ -1939,14 +1939,14 @@ export const unit12: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Manometreler kapalı veya açık uçlu kaplardaki gaz basıncını cıva yüksekliğiyle ölçer.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Manometers measure gas pressure in closed or open-ended containers using the height of mercury.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Manometer messen den Gasdruck in geschlossenen oder offenen Behältern anhand der Quecksilbersäule.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les manomètres mesurent la pression du gaz dans des récipients fermés ou ouverts en utilisant la hauteur du mercure.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Манометры измеряют давление газа в закрытых или открытых емкостях, используя высоту ртутного столба.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تقوم أجهزة قياس الضغط بقياس ضغط الغاز في حاويات مغلقة أو مفتوحة باستخدام ارتفاع الزئبق.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“压力计利用水银的高度来测量封闭或开口容器中的气压。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Manometre zexta gazê di konteynerên girtî an vekirî de bi karanîna bilindahiya merkurê dipîvin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Manometreler kapalı kaplardaki gaz basıncını ölçer; açık veya kapalı uçlu olabilir ve basınç cıva seviyeleri arasındaki farktan bulunur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Manometers measure the pressure of a gas in a closed container; they may be open-ended or closed-ended, and the pressure is found from the difference in mercury levels.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Manometer messen den Druck eines Gases in einem geschlossenen Behälter; sie können offen oder geschlossen sein, und der Druck ergibt sich aus dem Höhenunterschied der Quecksilberspiegel.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les manomètres mesurent la pression d'un gaz dans un récipient fermé ; ils peuvent être à bout ouvert ou fermé, et la pression se déduit de la différence des niveaux de mercure.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Манометры измеряют давление газа в закрытом сосуде; они бывают открытыми и закрытыми, а давление определяют по разности уровней ртути.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تقيس المانومترات ضغط الغاز في وعاء مغلق، وقد تكون مفتوحة الطرف أو مغلقة الطرف، ويُحسب الضغط من فرق مستويي الزئبق.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“压力计用于测量密闭容器中气体的压强，可分为开口式和闭口式，压强由两侧汞面高度差求得。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Manometre zexta gazê di firaxeke girtî de dipîvin; dikarin serê wan vekirî an girtî be û zext ji cudahiya astên cîweyê tê dîtin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2046,7 +2046,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ru": "Если температура в контейнере фиксированного объема, содержащем тот же газ, увеличивается вдвое в Кельвинах, давление удваивается.",
           "ar": "إذا تضاعفت درجة الحرارة في وعاء ثابت الحجم يحتوي على نفس الغاز بالكلفن، فإن الضغط يتضاعف.",
           "zh": "如果含有相同气体的固定体积容器中的开尔文温度加倍，则压力加倍。",
-          "ku": "Ger germahiya di konteynirek volga sabît a ku heman gazê tê de di Kelvin de duqat bibe, zext du qat dibe."
+          "ku": "Ger germahiya di konteynirek bi qebareya sabît a ku heman gazê tê de di Kelvin de duqat bibe, zext du qat dibe."
         },
         {
           "tr": "Sabit sıcaklıkta gazın hacmi sıkıştırılarak yarıya indirilirse basıncı da yarıya iner.",
@@ -2098,7 +2098,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Если температура в контейнере фиксированного объема, содержащем тот же газ, увеличивается вдвое в Кельвинах, давление удваивается.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"إذا تضاعفت درجة الحرارة في وعاء ثابت الحجم يحتوي على نفس الغاز بالكلفن، فإن الضغط يتضاعف.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“如果含有相同气体的固定体积容器中的开尔文温度加倍，则压力加倍。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger germahiya di konteynirek volga sabît a ku heman gazê tê de di Kelvin de duqat bibe, zext du qat dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Ger germahiya di konteynirek bi qebareya sabît a ku heman gazê tê de di Kelvin de duqat bibe, zext du qat dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }
   ]

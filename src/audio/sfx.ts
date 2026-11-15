@@ -10,6 +10,22 @@ let bus: GainNode | null = null;
 let noise: AudioBuffer | null = null;
 let enabled = true;
 let masterVolume = 0.8;
+/** performance.now() of the last non-click sound; lets the delegated UI click stay silent
+ *  when a handler already produced its own feedback sound for the same gesture. */
+let lastFeedbackAt = -Infinity;
+
+function now(): number {
+  return typeof performance !== 'undefined' ? performance.now() : Date.now();
+}
+
+function markFeedback(): void {
+  lastFeedbackAt = now();
+}
+
+/** True when a feedback sound (correct, wrong, start, …) fired within `windowMs`. */
+export function feedbackPlayedWithin(windowMs = 120): boolean {
+  return now() - lastFeedbackAt < windowMs;
+}
 
 export function setSfxEnabled(on: boolean): void {
   enabled = on;
@@ -61,7 +77,8 @@ export function unlockAudio(targetCtx?: AudioContext): void {
   }
 }
 
-function ensure(): AudioContext | null {
+function ensure(isClick = false): AudioContext | null {
+  if (!isClick) markFeedback();
   if (!enabled) return null;
   if (!ctx || ctx.state === 'closed') {
     const Ctor: typeof AudioContext | undefined =
@@ -410,8 +427,46 @@ export function playApplause(seconds = 3.2): void {
   hum.stop(t0 + seconds + 0.4);
 }
 
+/** Short tactile keycap "tick": a filtered noise transient over a low body thump. */
+export function playClick(): void {
+  const c = ensure(true);
+  if (!c) return;
+  const t = c.currentTime + 0.003;
+  tone(c, 180, t, 0.05, 0.11, 'sine', 90);
+  if (noise) {
+    const src = c.createBufferSource();
+    src.buffer = noise;
+    const bp = c.createBiquadFilter();
+    bp.type = 'bandpass';
+    bp.frequency.value = 3800;
+    bp.Q.value = 2.2;
+    const g = c.createGain();
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.linearRampToValueAtTime(0.12, t + 0.002);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + 0.03);
+    src.connect(bp);
+    bp.connect(g);
+    g.connect(bus!);
+    src.start(t, Math.random() * 0.5);
+    src.stop(t + 0.04);
+  }
+}
+
+/** "Start / play" whoosh-up: rising sweep + bright two-note arrival (quiz, exam, game start). */
+export function playStart(): void {
+  const c = ensure();
+  if (!c) return;
+  const t = c.currentTime + 0.01;
+  tone(c, 330, t, 0.22, 0.12, 'sawtooth', 880);
+  tone(c, 659.25, t + 0.16, 0.22, 0.16, 'triangle'); // E5
+  tone(c, 987.77, t + 0.26, 0.42, 0.18, 'triangle'); // B5
+  tone(c, 1975.5, t + 0.26, 0.2, 0.03, 'sine');
+}
+
 export const sfx = {
   playCorrect,
+  playClick,
+  playStart,
   playWrong,
   playError: playWrong,
   playSuccess,

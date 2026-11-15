@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { LANGUAGES } from '../i18n/translations';
 import type { LanguageCode } from '../types/chemistry';
+import { clearLeitnerDataForProfile, migrateLegacyLeitnerData } from '../engine/leitnerEngine';
 
 export type { LanguageCode };
 export type ThemeSetting = 'system' | 'light' | 'dark';
@@ -52,6 +53,14 @@ export interface DailyActivityRecord {
   xpEarned: number;
 }
 
+/** What the learner picked when a question was last answered wrong. */
+export interface MistakeDetail {
+  /** Chosen option index (0-4). Missing when the wrong answer came from a source that did not report it. */
+  picked?: number;
+  /** ISO timestamp of the wrong answer. */
+  at: string;
+}
+
 export interface LearnerProfile {
   id: string;
   name: string;
@@ -69,6 +78,8 @@ export interface LearnerProfile {
   masteredCardIds: string[];
   dailyHistory: DailyActivityRecord[];
   solvedMap?: Record<string, boolean>; // qId -> isCorrect
+  /** qId -> last wrong pick. Optional: records saved before this existed have none. */
+  mistakeDetails?: Record<string, MistakeDetail>;
 }
 
 /**
@@ -88,6 +99,7 @@ export interface AppState {
   streakDays: number;
   solvedQuestionIds: Record<string, boolean>; // qId -> isCorrect
   mistakeQuestionIds: string[];
+  mistakeDetails: Record<string, MistakeDetail>;
   bookmarkedQuestionIds: string[];
   masteredCardIds: string[];
   completedSlideUnits: string[];
@@ -111,7 +123,7 @@ export interface AppState {
   setMusicVolume: (v: number) => void;
   setSfxVolume: (v: number) => void;
   earnXp: (delta: number) => void;
-  recordQuestionResult: (qId: string, isCorrect: boolean) => void;
+  recordQuestionResult: (qId: string, isCorrect: boolean, pickedIndex?: number) => void;
   toggleBookmark: (qId: string) => void;
   markCardMastered: (cardId: string, mastered: boolean, xpReward: number) => void;
   markUnitSlidesCompleted: (unitId: string) => void;
@@ -192,6 +204,10 @@ const DEFAULT_DATA: PersistedData = {
 };
 
 function calculateStreak(lastActive: string, currentStreak: number, today: string): number {
+  // 0 = progress was reset and nothing has been done since; the next activity starts a new streak.
+  if (currentStreak === 0 && typeof lastActive === 'string' && lastActive) {
+    return lastActive === today ? 0 : 1;
+  }
   let streak = typeof currentStreak === 'number' && Number.isFinite(currentStreak) && currentStreak > 0 ? currentStreak : 1;
   if (!lastActive || typeof lastActive !== 'string') return streak;
   if (lastActive === today) return streak;
@@ -261,6 +277,14 @@ function sanitizeProfile(rawProf: any, defaultId: string): LearnerProfile {
   const mistakeQuestionIds = Array.isArray(rawProf?.mistakeQuestionIds)
     ? rawProf.mistakeQuestionIds
     : [];
+  const mistakeDetails: Record<string, MistakeDetail> = {};
+  if (rawProf?.mistakeDetails && typeof rawProf.mistakeDetails === 'object' && !Array.isArray(rawProf.mistakeDetails)) {
+    Object.entries(rawProf.mistakeDetails as Record<string, any>).forEach(([qId, d]) => {
+      if (!mistakeQuestionIds.includes(qId) || !d || typeof d !== 'object') return;
+      const picked = Number.isInteger(d.picked) && d.picked >= 0 && d.picked <= 9 ? d.picked : undefined;
+      mistakeDetails[qId] = { at: typeof d.at === 'string' ? d.at : '', ...(picked !== undefined ? { picked } : {}) };
+    });
+  }
   const bookmarkedQuestionIds = Array.isArray(rawProf?.bookmarkedQuestionIds)
     ? rawProf.bookmarkedQuestionIds
     : [];
@@ -315,10 +339,14 @@ function sanitizeProfile(rawProf: any, defaultId: string): LearnerProfile {
     masteredCardIds,
     dailyHistory: dailyHistory.slice(-30),
     solvedMap,
+    mistakeDetails,
   };
 }
 
 function loadStoredData(): PersistedData {
+  // Card boxes used to be stored once for the whole app; hand them to the profile
+  // that was active at the last save before anything else changes the store.
+  migrateLegacyLeitnerData();
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return DEFAULT_DATA;
@@ -636,6 +664,7 @@ export function useAppStore(): AppState {
   const deleteProfile = useCallback((profileId: string) => {
     setData((prev) => {
       if (prev.profiles.length <= 1) return prev; // Preserve at least one profile
+      clearLeitnerDataForProfile(profileId);
       const remaining = prev.profiles.filter((p) => p.id !== profileId);
       const nextActiveId =
         prev.activeProfileId === profileId ? remaining[0].id : prev.activeProfileId;
@@ -708,6 +737,7 @@ export function useAppStore(): AppState {
         stats: {
           ...targetProf.stats,
           xp: nextXp,
+          streakDays: Math.max(1, targetProf.stats.streakDays),
           lastActiveDate: today,
         },
         dailyHistory: history.slice(-30),
@@ -720,7 +750,7 @@ export function useAppStore(): AppState {
     });
   }, []);
 
-  const recordQuestionResult = useCallback((questionId: string, isCorrect: boolean) => {
+  const recordQuestionResult = useCallback((questionId: string, isCorrect: boolean, pickedIndex?: number) => {
     const today = todayStamp();
     setData((prev) => {
       const targetProf = prev.profiles.find((p) => p.id === prev.activeProfileId) ?? prev.profiles[0];
@@ -732,10 +762,16 @@ export function useAppStore(): AppState {
       solvedSet.add(questionId);
 
       const mistakeSet = new Set(targetProf.mistakeQuestionIds);
+      const nextDetails = { ...(targetProf.mistakeDetails ?? {}) };
       if (isCorrect) {
         mistakeSet.delete(questionId);
+        delete nextDetails[questionId];
       } else {
         mistakeSet.add(questionId);
+        nextDetails[questionId] = {
+          at: new Date().toISOString(),
+          ...(Number.isInteger(pickedIndex) && (pickedIndex as number) >= 0 ? { picked: pickedIndex } : {}),
+        };
       }
 
       const xpDelta = isCorrect ? 15 : 3;
@@ -763,11 +799,13 @@ export function useAppStore(): AppState {
         stats: {
           ...targetProf.stats,
           xp: nextXp,
+          streakDays: Math.max(1, targetProf.stats.streakDays),
           lastActiveDate: today,
         },
         solvedQuestionIds: Array.from(solvedSet),
         solvedMap: nextSolvedMap,
         mistakeQuestionIds: Array.from(mistakeSet),
+        mistakeDetails: nextDetails,
         dailyHistory: history.slice(-30),
       };
 
@@ -810,6 +848,7 @@ export function useAppStore(): AppState {
         stats: {
           ...targetProf.stats,
           xp: nextXp,
+          streakDays: Math.max(1, targetProf.stats.streakDays),
           lastActiveDate: today,
         },
         masteredCardIds: Array.from(set),
@@ -833,6 +872,7 @@ export function useAppStore(): AppState {
         stats: {
           ...targetProf.stats,
           xp: nextXp,
+          streakDays: Math.max(1, targetProf.stats.streakDays),
           lastActiveDate: today,
           completedSlideUnits: [...targetProf.stats.completedSlideUnits, unitId],
         },
@@ -857,6 +897,7 @@ export function useAppStore(): AppState {
         stats: {
           ...targetProf.stats,
           xp: nextXp,
+          streakDays: Math.max(1, targetProf.stats.streakDays),
           lastActiveDate: today,
           gameHighScores: {
             ...targetProf.stats.gameHighScores,
@@ -907,6 +948,7 @@ export function useAppStore(): AppState {
         stats: {
           ...targetProf.stats,
           xp: nextXp,
+          streakDays: Math.max(1, targetProf.stats.streakDays),
           lastActiveDate: today,
           mockBestScores: nextMockBest,
           examResults: [entry, ...targetProf.stats.examResults].slice(0, 50),
@@ -928,7 +970,7 @@ export function useAppStore(): AppState {
         ...targetProf,
         stats: {
           xp: 0,
-          streakDays: 1,
+          streakDays: 0,
           lastActiveDate: today,
           completedSlideUnits: [],
           gameHighScores: {},
@@ -938,6 +980,7 @@ export function useAppStore(): AppState {
         solvedQuestionIds: [],
         solvedMap: {},
         mistakeQuestionIds: [],
+        mistakeDetails: {},
         bookmarkedQuestionIds: [],
         masteredCardIds: [],
         dailyHistory: [{ date: today, questionsSolved: 0, studyMinutes: 0, xpEarned: 0 }],
@@ -971,6 +1014,7 @@ export function useAppStore(): AppState {
     streakDays: activeProfile.stats.streakDays,
     solvedQuestionIds: solvedQuestionMap,
     mistakeQuestionIds: activeProfile.mistakeQuestionIds,
+    mistakeDetails: activeProfile.mistakeDetails ?? {},
     bookmarkedQuestionIds: activeProfile.bookmarkedQuestionIds,
     masteredCardIds: activeProfile.masteredCardIds,
     completedSlideUnits: activeProfile.stats.completedSlideUnits,

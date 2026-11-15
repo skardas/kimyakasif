@@ -1,21 +1,12 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
-import {
-  ArrowLeft,
-  Sparkles,
-  Trophy,
-  Timer,
-  Check,
-  X,
-  RotateCcw,
-  Zap,
-  Flame,
-  BookOpen,
-  Award,
-} from 'lucide-react';
+import { Trophy, Check, X, RotateCcw, Zap, BookOpen, Award, ArrowLeft } from 'lucide-react';
+import { GameHud, GameStat } from './GameHud';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { GAMES_STRINGS, fmt } from '../../i18n/gamesStrings';
 import { ALL_CHEMISTRY_UNITS } from '../../data/units';
-import { playCorrect, playWrong, playFinish, playSuccess, playApplause } from '../../audio/sfx';
+import { playCorrect, playWrong, playFinish, playApplause } from '../../audio/sfx';
+import { formatChemText } from '../common/ChemFormula';
 
 export interface ChemBlitzGameProps {
   lang: LanguageCode;
@@ -32,8 +23,12 @@ export interface BlitzItem {
   unitId: string;
 }
 
+const ROUND_SECONDS = 60;
+const RING_C = 2 * Math.PI * 44;
+
 // Compile 50+ high-yield True/False statements from all 24 units
 export function generateBlitzQuestions(lang: LanguageCode): BlitzItem[] {
+  const g = GAMES_STRINGS[lang] ?? GAMES_STRINGS.en;
   const items: BlitzItem[] = [];
 
   ALL_CHEMISTRY_UNITS.forEach((unit) => {
@@ -43,7 +38,7 @@ export function generateBlitzQuestions(lang: LanguageCode): BlitzItem[] {
         id: `${unit.id}-t-${idx}`,
         statement: f.fact[lang] || f.fact['tr'],
         isTrue: true,
-        trapExplanation: f.osymTip?.[lang] || 'ÖSYM sınavlarında doğru kabul edilen temel MEB bilgisidir.',
+        trapExplanation: f.osymTip?.[lang] || g.zTrueFallback,
         unitId: unit.id,
       });
 
@@ -52,7 +47,7 @@ export function generateBlitzQuestions(lang: LanguageCode): BlitzItem[] {
         id: `${unit.id}-f-${idx}`,
         statement: f.trap[lang] || f.trap['tr'],
         isTrue: false,
-        trapExplanation: f.whyTrapIsFalse?.[lang] || 'Tuzak: Bu ifade MEB ve ÖSYM müfredatına göre yanlıştır.',
+        trapExplanation: f.whyTrapIsFalse?.[lang] || g.zFalseFallback,
         unitId: unit.id,
       });
     });
@@ -74,11 +69,21 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
   onBack,
 }) => {
   const t = UI_TRANSLATIONS[lang];
+  const g = GAMES_STRINGS[lang] ?? GAMES_STRINGS.en;
+  const bestAtStart = useRef(highScore);
+  const [flash, setFlash] = useState<{ ok: boolean; n: number } | null>(null);
 
   const questionsPool = useMemo(() => generateBlitzQuestions(lang), [lang]);
+  const unitTitles = useMemo(() => {
+    const map: Record<string, string> = {};
+    ALL_CHEMISTRY_UNITS.forEach((u) => {
+      map[u.id] = u.title[lang] || u.title.tr;
+    });
+    return map;
+  }, [lang]);
 
   const [isPlaying, setIsPlaying] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(ROUND_SECONDS);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [combo, setCombo] = useState(0);
@@ -96,9 +101,11 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
 
   // Start Blitz Sprint
   const handleStart = () => {
+    bestAtStart.current = highScore;
+    setFlash(null);
     setIsPlaying(true);
     setIsGameOver(false);
-    setTimeLeft(60);
+    setTimeLeft(ROUND_SECONDS);
     setScore(0);
     setCombo(0);
     setMaxCombo(0);
@@ -128,7 +135,7 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
       setIsPlaying(false);
       setIsGameOver(true);
       playFinish();
-      playApplause();
+      if (scoreRef.current > bestAtStart.current) playApplause();
       onFinish(scoreRef.current);
     }
   }, [isPlaying, timeLeft, onFinish]);
@@ -154,6 +161,8 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
         setCombo(0);
       }
 
+      setFlash((f) => ({ ok: isCorrect, n: (f?.n ?? 0) + 1 }));
+
       setAnswersLog((prev) => [
         ...prev,
         {
@@ -169,16 +178,16 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
     [isPlaying, timeLeft, currentQ, combo, maxCombo]
   );
 
-  // Keyboard controls
+  // Keyboard controls follow the on-screen order: False on the left, True on the right
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!isPlaying) return;
       if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {
         e.preventDefault();
-        handleAnswer(true); // Left: True / Doğru
+        handleAnswer(false);
       } else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') {
         e.preventDefault();
-        handleAnswer(false); // Right: False / Yanlış
+        handleAnswer(true);
       }
     };
 
@@ -186,163 +195,170 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isPlaying, handleAnswer]);
 
-  return (
-    <div className="chem-blitz-container p-4 max-w-3xl mx-auto flex flex-col gap-5">
-      {/* Top Bar */}
-      <div className="flex items-center justify-between">
-        <button
-          type="button"
-          onClick={onBack}
-          className="btn-secondary flex items-center gap-1.5 py-1.5 px-3 text-xs"
-        >
-          <ArrowLeft size={16} />
-          <span>Geri</span>
-        </button>
+  const isNewBest = score > 0 && score > bestAtStart.current;
+  const best = Math.max(highScore, score);
+  const lowTime = isPlaying && timeLeft <= 10;
 
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-1 text-sm font-semibold">
-            <Trophy size={16} className="text-amber-400" />
-            <span>Rekor: {Math.max(highScore, score)}</span>
-          </div>
-
-          <div className="flex items-center gap-1 text-sm font-bold text-primary">
-            <Sparkles size={16} />
-            <span>Puan: {score}</span>
-          </div>
-
-          <div
-            className={`flex items-center gap-1 text-sm font-mono px-3 py-1 rounded-full ${
-              timeLeft <= 10 && isPlaying
-                ? 'bg-ruby/20 text-ruby animate-pulse font-black'
-                : 'bg-surface-elevated'
-            }`}
-          >
-            <Timer size={16} />
-            <span>{timeLeft}s</span>
-          </div>
-        </div>
-      </div>
-
-      {!isPlaying && !isGameOver ? (
-        /* Intro Card */
-        <div className="intro-card p-8 bg-surface border border-subtle rounded-2xl text-center flex flex-col items-center gap-4 shadow-lg">
-          <div className="w-16 h-16 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center">
-            <Zap size={36} />
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold mb-1">{t.games.blitzTitle}</h2>
-            <p className="subtitle-text text-sm max-w-md mx-auto">{t.games.blitzDesc}</p>
-          </div>
-
-          <div className="p-4 bg-surface-elevated rounded-xl border border-subtle text-xs text-left max-w-md w-full flex flex-col gap-2">
-            <div className="font-bold text-primary">Kurallar:</div>
-            <div>• 60 saniyede mümkün olduğunca çok kimya öncülünü yanıtlayın.</div>
-            <div>• Doğru cevaplar seriyi artırır (+5 puan / seri kat sayısı).</div>
-            <div>• Yanlış cevap seriyi sıfırlar!</div>
-            <div>• Klavye: [Sol Ok / A] Doğru • [Sağ Ok / D] Yanlış</div>
-          </div>
-
-          <button
-            type="button"
-            onClick={handleStart}
-            className="btn-primary py-3 px-8 font-bold text-base flex items-center gap-2 shadow-lg"
-          >
-            <Zap size={20} />
-            <span>Koşuyu Başlat (60s)</span>
-          </button>
-        </div>
-      ) : isPlaying ? (
-        /* Active Game Arena */
-        <div className="blitz-arena flex flex-col gap-5">
-          {/* Combo & Progress Banner */}
-          <div className="flex items-center justify-between px-2">
-            <span className="text-xs font-mono opacity-70">Soru #{currentIndex + 1}</span>
-            {combo >= 2 && (
-              <span className="flex items-center gap-1 text-xs font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/30 animate-bounce">
-                <Flame size={14} />
-                <span>{combo}x Seri! (+{20 + combo * 5} Puan)</span>
-              </span>
-            )}
-          </div>
-
-          {/* Statement Card */}
-          <div className="statement-card min-h-[220px] p-8 bg-surface border-2 border-primary/30 rounded-2xl flex flex-col items-center justify-center text-center shadow-xl">
-            <div className="text-lg md:text-2xl font-bold leading-relaxed max-w-xl">
-              &ldquo;{currentQ?.statement ?? ''}&rdquo;
-            </div>
-          </div>
-
-          {/* Big Action Buttons */}
-          <div className="grid grid-cols-2 gap-4">
-            <button
-              type="button"
-              onClick={() => handleAnswer(true)}
-              className="py-5 px-6 rounded-2xl font-black text-lg md:text-xl flex items-center justify-center gap-3 border-2 border-emerald-500/50 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-400 transition-all active:scale-95 shadow-lg"
-            >
-              <Check size={28} />
-              <span>DOĞRU (True)</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => handleAnswer(false)}
-              className="py-5 px-6 rounded-2xl font-black text-lg md:text-xl flex items-center justify-center gap-3 border-2 border-ruby/50 bg-ruby/15 hover:bg-ruby/25 text-ruby transition-all active:scale-95 shadow-lg"
-            >
-              <X size={28} />
-              <span>YANLIŞ (False)</span>
-            </button>
-          </div>
-        </div>
+  const hud = (
+    <GameHud title={t.games.blitzTitle} backLabel={t.games.backToHub} onBack={onBack}>
+      {isPlaying && combo >= 1 ? (
+        <GameStat
+          key={combo}
+          icon={<Zap size={14} fill="currentColor" aria-hidden="true" />}
+          label=""
+          value={fmt(g.streakN, { n: combo })}
+          tone="gold"
+          mono={false}
+        />
       ) : (
-        /* Game Over & Post-Game Review */
-        <div className="review-card p-6 bg-surface border border-subtle rounded-2xl flex flex-col gap-5 shadow-xl">
-          <div className="text-center flex flex-col items-center gap-2">
-            <div className="w-14 h-14 rounded-full bg-primary/20 text-primary flex items-center justify-center">
-              <Award size={32} />
-            </div>
-            <h2 className="text-2xl font-bold">Koşu Tamamlandı!</h2>
-            <div className="text-3xl font-black text-primary font-mono">{score} Puan</div>
-            <div className="text-xs opacity-75">
-              En Yüksek Seri: {maxCombo} • Toplam Cevap: {answersLog.length}
-            </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={handleStart}
-            className="btn-primary py-3 px-6 font-bold flex items-center justify-center gap-2 w-full"
-          >
-            <RotateCcw size={18} />
-            <span>Yeniden Oyna</span>
-          </button>
-
-          {/* Review List */}
-          <div className="review-list flex flex-col gap-2.5 max-h-[350px] overflow-y-auto pr-1">
-            <h3 className="text-sm font-bold flex items-center gap-2 text-primary">
-              <BookOpen size={16} />
-              <span>YKS Tuzakları & Cevap İncelemesi:</span>
-            </h3>
-            {answersLog.map((log, idx) => (
-              <div
-                key={idx}
-                className={`p-3 rounded-xl border text-xs flex flex-col gap-1 ${
-                  log.isCorrect ? 'border-emerald-500/30 bg-emerald-500/5' : 'border-ruby/30 bg-ruby/5'
-                }`}
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-semibold">{log.statement}</span>
-                  <span className={`font-bold ${log.isCorrect ? 'text-emerald-400' : 'text-ruby'}`}>
-                    {log.isCorrect ? '✓ Doğru' : '✗ Yanlış'}
-                  </span>
-                </div>
-                <div className="text-[11px] opacity-75 italic text-amber-400/90">
-                  {log.explanation}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <GameStat icon={<Trophy size={14} aria-hidden="true" />} label={g.best} value={best > 0 ? best : '—'} tone="gold" />
       )}
+    </GameHud>
+  );
+
+  if (!isPlaying && !isGameOver) {
+    return (
+      <div className="gm-play chem-blitz-container">
+        {hud}
+        <main className="ky-fit gm-main gm-main--center">
+          <section className="ky-stage gm-intro ky-persp">
+            <div className="ky-floor" aria-hidden="true" />
+            <span className="ky-tile ky-tile--lg ky-tile--ok gm-bob" aria-hidden="true">
+              <Zap size={32} fill="currentColor" />
+            </span>
+            <h2 className="ky-disp">{t.games.blitzTitle}</h2>
+            <p>{t.games.blitzDesc}</p>
+            <ul className="gm-rules">
+              <li>{g.zRule1}</li>
+              <li>{g.zRule2}</li>
+              <li>{g.zRule3}</li>
+              <li>{g.zRule4}</li>
+            </ul>
+          </section>
+        </main>
+        <footer className="ky-screen-foot gm-foot">
+          <button type="button" onClick={handleStart} className="ky-btn ky-btn--gold ky-btn--lg ky-grow gm-cta" data-sfx="start">
+            <Zap size={20} fill="currentColor" aria-hidden="true" />
+            <span>{g.zStart}</span>
+          </button>
+        </footer>
+      </div>
+    );
+  }
+
+  if (isGameOver) {
+    return (
+      <div className="gm-play chem-blitz-container">
+        {hud}
+        <main className="ky-fit gm-main gm-main--center">
+          <section className="ky-card gm-result">
+            <span className="ky-tile ky-tile--lg ky-tile--gold" aria-hidden="true">
+              <Award size={30} />
+            </span>
+            <h2 className="ky-disp">{g.finished}</h2>
+            <div className="gm-score ky-pop">{score}</div>
+            <span className="ky-chip ky-chip--gold">
+              <Trophy size={14} aria-hidden="true" /> {isNewBest ? g.newBest : `${g.best}: ${best}`}
+            </span>
+            <p className="gm-result-meta">{fmt(g.zSummary, { a: maxCombo, b: answersLog.length })}</p>
+          </section>
+
+          {answersLog.length > 0 && (
+            <section className="ky-card gm-review">
+              <h3 className="ky-fs-14">
+                <BookOpen size={16} aria-hidden="true" />
+                <span>{g.zReview}</span>
+              </h3>
+              {answersLog.map((log, idx) => (
+                <div key={idx} className={`gm-review-item ${log.isCorrect ? 'ok' : 'bad'}`}>
+                  <div className="head">
+                    <span>{formatChemText(log.statement)}</span>
+                    <span className={`ky-chip ${log.isCorrect ? 'ky-chip--ok' : 'ky-chip--bad'}`}>
+                      {log.isCorrect ? <Check size={12} aria-hidden="true" /> : <X size={12} aria-hidden="true" />}
+                      {log.choice ? g.correct : g.wrong}
+                    </span>
+                  </div>
+                  <em>{formatChemText(log.explanation)}</em>
+                </div>
+              ))}
+            </section>
+          )}
+        </main>
+        <footer className="ky-screen-foot gm-foot">
+          <button type="button" onClick={onBack} className="ky-btn ky-btn--quiet">
+            <ArrowLeft size={18} aria-hidden="true" className="gm-flip" />
+            <span className="gm-narrow-sr">{g.backToGames}</span>
+          </button>
+          <button type="button" onClick={handleStart} className="ky-btn ky-btn--primary ky-grow" data-sfx="start">
+            <RotateCcw size={18} aria-hidden="true" />
+            <span>{g.replay}</span>
+          </button>
+        </footer>
+      </div>
+    );
+  }
+
+  const statement = currentQ?.statement ?? '';
+  const sizeClass = statement.length > 140 ? 'ky-fs-18' : statement.length > 80 ? 'ky-fs-20' : 'ky-fs-24';
+
+  return (
+    <div className="gm-play chem-blitz-container">
+      {hud}
+
+      <main className="ky-fit ky-pane gm-main">
+        <section className="ky-stage gm-blitz-stage">
+          <svg
+            className={`gm-ring${lowTime ? ' is-low' : ''}`}
+            viewBox="0 0 104 104"
+            role="img"
+            aria-label={fmt(g.zTimeLeft, { n: timeLeft })}
+          >
+            <circle cx="52" cy="52" r="44" fill="none" stroke="rgba(255,255,255,.12)" strokeWidth="10" />
+            <circle
+              className="gm-ring-arc"
+              cx="52"
+              cy="52"
+              r="44"
+              fill="none"
+              strokeWidth="10"
+              strokeLinecap="round"
+              strokeDasharray={RING_C}
+              strokeDashoffset={RING_C * (1 - timeLeft / ROUND_SECONDS)}
+              transform="rotate(-90 52 52)"
+            />
+            <text x="52" y="62" textAnchor="middle" className="gm-ring-num">
+              {timeLeft}
+            </text>
+          </svg>
+          <div className="gm-blitz-score">
+            <p className="ky-eyebrow">{g.zScore}</p>
+            <p key={score} className="ky-disp ky-mono gm-blitz-num ky-pop">{score}</p>
+            <p className="ky-fs-13 gm-blitz-target">{fmt(g.zTarget, { b: best > 0 ? best : '—' })}</p>
+          </div>
+        </section>
+
+        <section
+          key={flash?.n ?? 0}
+          className={`ky-card ky-lead gm-statement${flash ? (flash.ok ? ' is-ok ky-pop' : ' is-bad ky-shake') : ''}`}
+          aria-live="polite"
+        >
+          {currentQ && <span className="ky-chip ky-chip--accent gm-statement-unit">{unitTitles[currentQ.unitId] ?? ''}</span>}
+          {/* <q> takes the quote marks of the page language, so RTL/Arabic gets the right pair */}
+          <p className={`ky-disp gm-statement-text ${sizeClass}`}><q>{formatChemText(statement)}</q></p>
+          <p className="ky-fs-14 gm-statement-ask">{g.zAsk}</p>
+        </section>
+      </main>
+
+      <footer className="ky-screen-foot gm-foot gm-tf" dir="ltr">
+        <button type="button" onClick={() => handleAnswer(false)} className="ky-btn ky-btn--danger gm-tf-key">
+          <X size={24} strokeWidth={3} aria-hidden="true" />
+          <span>{g.wrong}</span>
+        </button>
+        <button type="button" onClick={() => handleAnswer(true)} className="ky-btn ky-btn--ok gm-tf-key">
+          <Check size={24} strokeWidth={3} aria-hidden="true" />
+          <span>{g.correct}</span>
+        </button>
+      </footer>
     </div>
   );
 };

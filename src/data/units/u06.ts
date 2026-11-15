@@ -193,7 +193,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die Formel für die Molzahl lautet: n = m / MA (Masse / Molmasse) oder n = N / NA.",
         "fr": "La formule du nombre de moles est : n = m/MA (masse/masse molaire) ou n = N/NA.",
         "ru": "Формула количества молей: n = m/MA (масса/молярная масса) или n = N/NA.",
-        "ar": "صيغة عدد الشامات هي: n = m / MA (الكتلة / الكتلة المولية) أو n = N / NA.",
+        "ar": "صيغة عدد المولات هي: n = m / MA (الكتلة / الكتلة المولية) أو n = N / NA.",
         "zh": "摩尔数的公式为：n = m / MA（质量/摩尔质量）或 n = N / NA。",
         "ku": "Formula hejmara molan ev e: n = m / MA (girse / girseya molê) an n = N / NA."
       },
@@ -201,7 +201,7 @@ export const unit06: ChemistryUnitSeedData = {
         "tr": "Mol sayısı kütle ile mol kütlesinin çarpımına eşittir.",
         "en": "The number of moles is equal to the mass multiplied by the molar mass.",
         "de": "Die Anzahl der Mol ist gleich der Masse multipliziert mit der Molmasse.",
-        "fr": "Le nombre de taupes est égal à la masse multipliée par la masse molaire.",
+        "fr": "Le nombre de moles est égal à la masse multipliée par la masse molaire.",
         "ru": "Количество молей равно массе, умноженной на молярную массу.",
         "ar": "عدد المولات يساوي الكتلة مضروبة في الكتلة المولية.",
         "zh": "摩尔数等于质量乘以摩尔质量。",
@@ -232,13 +232,13 @@ export const unit06: ChemistryUnitSeedData = {
       },
       "osymTip": {
         "tr": "1 tane CO2 44 akb'dir; 1 mol CO2 44 gramdır.",
-        "en": "1 grain of CO2 is 44 akb; 1 mole of CO2 is 44 grams.",
-        "de": "1 Korn CO2 ist 44 akb; 1 Mol CO2 sind 44 Gramm.",
-        "fr": "1 grain de CO2 équivaut à 44 akb ; 1 mole de CO2 équivaut à 44 grammes.",
-        "ru": "1 крупинка СО2 – 44 акб; 1 моль CO2 равен 44 граммам.",
-        "ar": "1 حبة من ثاني أكسيد الكربون هي 44 ألف كيلو بايت؛ 1 مول من ثاني أكسيد الكربون يساوي 44 جرامًا.",
-        "zh": "1 格令 CO2 为 44 akb； 1 摩尔 CO2 为 44 克。",
-        "ku": "1 genim CO2 44 akb e; 1 mol CO2 44 gram e."
+        "en": "1 CO2 molecule is 44 amu; 1 mole of CO2 is 44 grams.",
+        "de": "1 CO2-Molekül hat 44 u; 1 Mol CO2 wiegt 44 Gramm.",
+        "fr": "1 molécule de CO2 pèse 44 uma ; 1 mole de CO2 pèse 44 grammes.",
+        "ru": "1 молекула CO2 имеет массу 44 а.е.м.; 1 моль CO2 — 44 грамма.",
+        "ar": "جزيء واحد من CO2 كتلته 44 وحدة كتل ذرية؛ و1 مول من CO2 كتلته 44 غرامًا.",
+        "zh": "1 个 CO2 分子为 44 原子质量单位；1 摩尔 CO2 为 44 克。",
+        "ku": "1 molekula CO2 44 akb ye; 1 mol CO2 44 gram e."
       }
     },
     {
@@ -319,7 +319,7 @@ export const unit06: ChemistryUnitSeedData = {
         "fr": "1 atome-gramme = 1 mole d'atomes, 1 molécule-gramme = 1 mole de molécules, 1 formule-gramme = 1 mole de composé ionique.",
         "ru": "1 атом-грамм = 1 моль атомов, 1 молекула-грамм = 1 моль молекул, 1 формульный грамм = 1 моль ионного соединения.",
         "ar": "1 ذرة جرام = 1 مول من الذرات، 1 جرام جزيء = 1 مول من الجزيئات، 1 جرام صيغة = 1 مول من المركب الأيوني.",
-        "zh": "1 原子克 = 1 摩尔原子，1 分子克 = 1 摩尔分子，1 分子式 = 1 摩尔离子化合物。",
+        "zh": "1 原子克 = 1 摩尔原子，1 分子克 = 1 摩尔分子，1 式克 = 1 摩尔离子化合物。",
         "ku": "1 atom-gram = 1 mol atom, 1 molekul-gram = 1 molek molekul, 1 formula-gram = 1 mol pêkhateya îyonî."
       },
       "trap": {
@@ -386,10 +386,10 @@ export const unit06: ChemistryUnitSeedData = {
         "en": "For solid and liquid substances, the 22.4 L volume rule in NC does NOT apply; For gases only.",
         "de": "Für feste und flüssige Stoffe gilt die 22,4-L-Volumenregel in NC NICHT; Nur für Gase.",
         "fr": "Pour les substances solides et liquides, la règle du volume de 22,4 L en NC ne s'applique PAS ; Pour les gaz uniquement.",
-        "ru": "Для твердых и жидких веществ правило объема 22,4 л в Северной Каролине НЕ применяется; Только для газов.",
+        "ru": "Для твердых и жидких веществ правило объема 22,4 л при нормальных условиях НЕ применяется; Только для газов.",
         "ar": "بالنسبة للمواد الصلبة والسائلة، لا تنطبق قاعدة الحجم 22.4 لترًا في NC؛ للغازات فقط.",
         "zh": "对于固体和液体物质，NC 中的 22.4 L 体积规则不适用；仅适用于气体。",
-        "ku": "Ji bo maddeyên hişk û şil, qaîdeya qebareya 22,4 L di NC-ê de NA derbas dibe; Tenê ji bo gazan."
+        "ku": "Ji bo maddeyên hişk û şil, qaîdeya qebareya 22,4 L di şertên normal de derbas nabe; Tenê ji bo gazan."
       },
       "trap": {
         "tr": "0 °C'de 1 mol sıvı su 22.4 litre hacim kaplar.",
@@ -431,22 +431,22 @@ export const unit06: ChemistryUnitSeedData = {
       "id": "u06-c01",
       "conceptA": {
         "tr": "Sabit Oranlar",
-        "en": "Fixed Odds",
-        "de": "Feste Quoten",
-        "fr": "Cotes fixes",
-        "ru": "Фиксированные коэффициенты",
-        "ar": "احتمالات ثابتة",
-        "zh": "固定赔率",
-        "ku": "Odds Fixed"
+        "en": "Constant Proportions",
+        "de": "Konstante Proportionen",
+        "fr": "Proportions définies",
+        "ru": "Постоянные соотношения",
+        "ar": "النسب الثابتة",
+        "zh": "定比",
+        "ku": "Rêjeyên Sabit"
       },
       "conceptB": {
         "tr": "Katlı Oranlar",
-        "en": "Multiple Ratios",
-        "de": "Mehrere Verhältnisse",
-        "fr": "Rapports multiples",
-        "ru": "Множественные соотношения",
-        "ar": "نسب متعددة",
-        "zh": "多重比率",
+        "en": "Multiple Proportions",
+        "de": "Multiple Proportionen",
+        "fr": "Proportions multiples",
+        "ru": "Кратные соотношения",
+        "ar": "النسب المتعددة",
+        "zh": "倍比",
         "ku": "Rêjeyên Pirjimar"
       },
       "distinction": {
@@ -464,12 +464,12 @@ export const unit06: ChemistryUnitSeedData = {
       "id": "u06-c02",
       "conceptA": {
         "tr": "1 akb",
-        "en": "1 akb",
-        "de": "1 Akb",
-        "fr": "1 clé USB",
-        "ru": "1 акб",
-        "ar": "1 أكب",
-        "zh": "1 AKB",
+        "en": "1 amu",
+        "de": "1 u (amu)",
+        "fr": "1 uma",
+        "ru": "1 а.е.м.",
+        "ar": "1 وحدة كتل ذرية (amu)",
+        "zh": "1 原子质量单位 (amu)",
         "ku": "1 akb"
       },
       "conceptB": {
@@ -484,13 +484,13 @@ export const unit06: ChemistryUnitSeedData = {
       },
       "distinction": {
         "tr": "1 akb = 1 / NA gramdır; mikroskobik tek atom kütle birimidir.",
-        "en": "1 akb = 1 / NA gram; It is a microscopic single atomic mass unit.",
-        "de": "1 akb = 1 / NA Gramm; Es handelt sich um eine mikroskopisch kleine einzelne atomare Masseneinheit.",
-        "fr": "1 akb = 1 / NA gramme ; Il s’agit d’une unité microscopique de masse atomique unique.",
-        "ru": "1 акб = 1/НА грамм; Это микроскопическая одноатомная единица массы.",
-        "ar": "1 أكب = 1 / غ جرام؛ إنها وحدة كتلة ذرية مجهرية واحدة.",
-        "zh": "1 akb = 1 / NA 克；它是微观的单个原子质量单位。",
-        "ku": "1 akb = 1 / gram NA; Ew yekîneyek girseya atomî ya mîkroskopî ye."
+        "en": "1 amu = 1 / NA gram; it is the mass unit used for single (microscopic) atoms.",
+        "de": "1 u = 1 / NA Gramm; sie ist die Masseneinheit für einzelne (mikroskopische) Atome.",
+        "fr": "1 uma = 1 / NA gramme ; c'est l'unité de masse des atomes individuels (microscopiques).",
+        "ru": "1 а.е.м. = 1 / NA грамма; это единица массы для отдельных (микроскопических) атомов.",
+        "ar": "1 وحدة كتل ذرية = 1 / NA غرام؛ وهي وحدة كتلة الذرات المفردة (المجهرية).",
+        "zh": "1 原子质量单位 = 1 / NA 克；它是单个（微观）原子的质量单位。",
+        "ku": "1 akb = 1 / NA gram e; yekîneya girseyê ya atomên yekane (mîkroskobîk) e."
       }
     },
     {
@@ -506,57 +506,57 @@ export const unit06: ChemistryUnitSeedData = {
         "ku": "Parastina Komkujiyê (Lavoisier)"
       },
       "conceptB": {
-        "tr": "Sabit Oranlar (Proust)",
-        "en": "Fixed Proportions (Proust)",
-        "de": "Feste Proportionen (Proust)",
-        "fr": "Proportions fixes (Proust)",
-        "ru": "Фиксированные пропорции (Пруст)",
-        "ar": "النسب الثابتة (بروست)",
-        "zh": "固定比例（普鲁斯特）",
-        "ku": "Rêjeyên sabît (Proust)"
+        "tr": "Avogadro Hipotezi",
+        "en": "Avogadro's Hypothesis",
+        "de": "Avogadro-Hypothese",
+        "fr": "Hypothèse d'Avogadro",
+        "ru": "Гипотеза Авогадро",
+        "ar": "فرضية أفوجادرو",
+        "zh": "阿伏加德罗假说",
+        "ku": "Hîpoteza Avogadro"
       },
       "distinction": {
-        "tr": "Kütlenin korunumu giren kütlesi ile ürün kütlesinin eşitliğini; sabit oranlar bileşikteki elementlerin sabit kütlece oranını ifade eder.",
-        "en": "Conservation of mass states that the mass of the reactant and the mass of the product are equal; Constant ratios express the fixed mass ratio of the elements in the compound.",
-        "de": "Die Massenerhaltung besagt, dass die Masse des Reaktanten und die Masse des Produkts gleich sind; Konstante Verhältnisse drücken das feste Massenverhältnis der Elemente in der Verbindung aus.",
-        "fr": "La conservation de la masse stipule que la masse du réactif et la masse du produit sont égales ; Les rapports constants expriment le rapport de masse fixe des éléments du composé.",
-        "ru": "Закон сохранения массы гласит, что масса реагента и масса продукта равны; Постоянные соотношения выражают фиксированное массовое соотношение элементов в соединении.",
-        "ar": "ينص حفظ الكتلة على أن كتلة المادة المتفاعلة وكتلة المنتج متساويتان؛ النسب الثابتة تعبر عن نسبة الكتلة الثابتة للعناصر الموجودة في المركب.",
-        "zh": "质量守恒表明反应物的质量和生成物的质量相等；恒定比率表示化合物中元素的固定质量比。",
-        "ku": "Parastina girseyê dibêje ku girseya reaktant û girseya berhemê wek hev in; Rêjeyên domdar rêjeya girseya sabît a hêmanên di pêkhateyê de diyar dikin."
+        "tr": "Kütlenin korunumu tepkimeye girenlerin toplam kütlesinin ürünlerin toplam kütlesine eşit olduğunu; Avogadro hipotezi ise aynı sıcaklık ve basınçta eşit hacimli gazların eşit sayıda tanecik içerdiğini ifade eder.",
+        "en": "Conservation of mass states that the total mass of the reactants equals the total mass of the products; Avogadro's hypothesis states that equal volumes of gases at the same temperature and pressure contain equal numbers of particles.",
+        "de": "Die Massenerhaltung besagt, dass die Gesamtmasse der Edukte gleich der Gesamtmasse der Produkte ist; die Avogadro-Hypothese besagt, dass gleiche Gasvolumina bei gleicher Temperatur und gleichem Druck gleich viele Teilchen enthalten.",
+        "fr": "La conservation de la masse énonce que la masse totale des réactifs est égale à la masse totale des produits ; l'hypothèse d'Avogadro énonce que des volumes égaux de gaz, à même température et même pression, contiennent le même nombre de particules.",
+        "ru": "Закон сохранения массы утверждает, что общая масса реагентов равна общей массе продуктов; гипотеза Авогадро утверждает, что равные объёмы газов при одинаковых температуре и давлении содержат одинаковое число частиц.",
+        "ar": "ينص حفظ الكتلة على أن مجموع كتل المواد المتفاعلة يساوي مجموع كتل النواتج؛ وتنص فرضية أفوجادرو على أن الحجوم المتساوية من الغازات عند درجة الحرارة والضغط نفسيهما تحتوي على العدد نفسه من الجسيمات.",
+        "zh": "质量守恒指反应物的总质量等于生成物的总质量；阿伏加德罗假说指同温同压下，相同体积的气体含有相同数目的粒子。",
+        "ku": "Parastina girseyê dibêje ku girseya giştî ya reaktantan bi girseya giştî ya hilberan re wekhev e; hîpoteza Avogadro dibêje ku di heman germahî û zextê de qebareyên wekhev ên gazan heman hejmara perçeyan dihewînin."
       }
     },
     {
       "id": "u06-c04",
       "conceptA": {
-        "tr": "Sabit Oranlar (Proust)",
-        "en": "Fixed Proportions (Proust)",
-        "de": "Feste Proportionen (Proust)",
-        "fr": "Proportions fixes (Proust)",
-        "ru": "Фиксированные пропорции (Пруст)",
-        "ar": "النسب الثابتة (بروست)",
-        "zh": "固定比例（普鲁斯特）",
-        "ku": "Rêjeyên sabît (Proust)"
+        "tr": "Basit Formül",
+        "en": "Simple (Empirical) Formula",
+        "de": "Einfache (empirische) Formel",
+        "fr": "Formule simple (empirique)",
+        "ru": "Простейшая формула",
+        "ar": "الصيغة البسيطة (الأولية)",
+        "zh": "最简式（实验式）",
+        "ku": "Formula sade"
       },
       "conceptB": {
-        "tr": "Katlı Oranlar (Dalton)",
-        "en": "Multiple Ratios (Dalton)",
-        "de": "Mehrere Verhältnisse (Dalton)",
-        "fr": "Rapports multiples (Dalton)",
-        "ru": "Множественные соотношения (Дальтон)",
-        "ar": "النسب المتعددة (دالتون)",
-        "zh": "多重比率（道尔顿）",
-        "ku": "Rêjeyên Pirjimar (Dalton)"
+        "tr": "Molekül Formülü",
+        "en": "Molecular Formula",
+        "de": "Molekülformel",
+        "fr": "Formule moléculaire",
+        "ru": "Молекулярная формула",
+        "ar": "الصيغة الجزيئية",
+        "zh": "分子式",
+        "ku": "Formula molekulî"
       },
       "distinction": {
-        "tr": "Sabit oran tek bir bileşikteki element oranını; katlı oran ise aynı iki elementten oluşan farklı bileşikler arasındaki oranı belirtir.",
-        "en": "Fixed ratio refers to the ratio of elements in a single compound; Multiple ratio indicates the ratio between different compounds consisting of the same two elements.",
-        "de": "Das feste Verhältnis bezieht sich auf das Verhältnis der Elemente in einer einzelnen Verbindung; Das Mehrfachverhältnis gibt das Verhältnis zwischen verschiedenen Verbindungen an, die aus denselben zwei Elementen bestehen.",
-        "fr": "Le rapport fixe fait référence au rapport des éléments dans un seul composé ; Le rapport multiple indique le rapport entre différents composés constitués des deux mêmes éléments.",
-        "ru": "Фиксированное соотношение относится к соотношению элементов в одном соединении; Множественное соотношение указывает на соотношение между различными соединениями, состоящими из двух одних и тех же элементов.",
-        "ar": "تشير النسبة الثابتة إلى نسبة العناصر في مركب واحد؛ تشير النسبة المتعددة إلى النسبة بين المركبات المختلفة التي تتكون من نفس العنصرين.",
-        "zh": "固定比是指单一化合物中元素的比例；倍数比是指由相同两种元素组成的不同化合物之间的比例。",
-        "ku": "Rêjeya sabît bi rêjeya hêmanan di yek pêkhatî de vedibêje; Rêjeya pirjimar rêjeya di navbera pêkhateyên cihêreng ên ku ji heman du hêmanan pêk tên nîşan dide."
+        "tr": "Basit formül bileşikteki atomların en küçük tam sayılı oranını; molekül formülü ise bir moleküldeki gerçek atom sayılarını gösterir (örn. C2H4'ün basit formülü CH2'dir).",
+        "en": "The simple formula shows the smallest whole-number ratio of atoms in a compound; the molecular formula shows the actual numbers of atoms in one molecule (e.g. the simple formula of C2H4 is CH2).",
+        "de": "Die einfache Formel gibt das kleinste ganzzahlige Atomzahlverhältnis in einer Verbindung an; die Molekülformel gibt die tatsächliche Anzahl der Atome in einem Molekül an (z. B. ist die einfache Formel von C2H4 CH2).",
+        "fr": "La formule simple indique le plus petit rapport entier des atomes dans un composé ; la formule moléculaire indique le nombre réel d'atomes dans une molécule (par ex. la formule simple de C2H4 est CH2).",
+        "ru": "Простейшая формула показывает наименьшее целочисленное соотношение атомов в соединении; молекулярная формула показывает истинное число атомов в одной молекуле (например, простейшая формула C2H4 — CH2).",
+        "ar": "تبيّن الصيغة البسيطة أصغر نسبة عددية صحيحة بين الذرات في المركب؛ وتبيّن الصيغة الجزيئية العدد الفعلي للذرات في الجزيء الواحد (مثلًا الصيغة البسيطة لـ C2H4 هي CH2).",
+        "zh": "最简式表示化合物中各原子的最简整数比；分子式表示一个分子中各原子的实际数目（例如 C2H4 的最简式为 CH2）。",
+        "ku": "Formula sade rêjeya herî biçûk a bi hejmarên tam a atoman di pêkhateyê de nîşan dide; formula molekulî hejmara rastîn a atoman di molekulekê de nîşan dide (mînak formula sade ya C2H4 CH2 ye)."
       }
     },
     {
@@ -567,7 +567,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Avogadros Zahl (NA)",
         "fr": "Numéro d'Avogadro (NA)",
         "ru": "Число Авогадро (NA)",
-        "ar": "رقم أفوجادرو (نسبة غير معلومة)",
+        "ar": "عدد أفوجادرو (NA)",
         "zh": "阿伏伽德罗常数 (NA)",
         "ku": "Hejmara Avogadro (NA)"
       },
@@ -605,14 +605,14 @@ export const unit06: ChemistryUnitSeedData = {
         "ku": "Şertên Normal (NC)"
       },
       "conceptB": {
-        "tr": "Oda Koşulları (Standart Şartlar)",
-        "en": "Room Conditions (Standard Conditions)",
-        "de": "Zimmerkonditionen (Standardkonditionen)",
-        "fr": "Conditions des chambres (Conditions standards)",
-        "ru": "Условия в номере (стандартные условия)",
-        "ar": "شروط الغرفة (الشروط القياسية)",
-        "zh": "房间条件（标准条件）",
-        "ku": "Mercên Odeyê (Şertên Standard)"
+        "tr": "Oda Koşulları (OK)",
+        "en": "Room Conditions",
+        "de": "Raumbedingungen",
+        "fr": "Conditions ambiantes",
+        "ru": "Комнатные условия",
+        "ar": "ظروف الغرفة",
+        "zh": "室温条件",
+        "ku": "Şertên odeyê"
       },
       "distinction": {
         "tr": "NK 0 °C ve 1 atm olup 1 mol gaz 22.4 L'dir; Oda koşulları 25 °C ve 1 atm olup 1 mol gaz 24.5 L'dir.",
@@ -645,7 +645,7 @@ export const unit06: ChemistryUnitSeedData = {
         "ru": "Фактическая атомная масса",
         "ar": "الكتلة الذرية الفعلية",
         "zh": "实际原子质量",
-        "ku": "Komkujiya Atomî ya Rastî"
+        "ku": "Girseya Atomî ya Rastîn"
       },
       "distinction": {
         "tr": "Bağıl atom kütlesi Karbon-12'ye göre birimsiz orandır; gerçek atom kütlesi 1 tek atomun gram cinsinden kütlesidir (MA / NA).",
@@ -667,7 +667,7 @@ export const unit06: ChemistryUnitSeedData = {
         "fr": "Atome-gramme",
         "ru": "Атом-грамм",
         "ar": "ذرة جرام",
-        "zh": "原子图谱",
+        "zh": "原子克",
         "ku": "Atom-Gram"
       },
       "conceptB": {
@@ -677,7 +677,7 @@ export const unit06: ChemistryUnitSeedData = {
         "fr": "Molécule-gramme",
         "ru": "Молекула-грамм",
         "ar": "جزيء غرام",
-        "zh": "分子图",
+        "zh": "分子克",
         "ku": "Molekul-Gram"
       },
       "distinction": {
@@ -699,7 +699,7 @@ export const unit06: ChemistryUnitSeedData = {
         "tr": "Mol Hesaplama Adımları",
         "en": "Mole Calculation Steps",
         "de": "Schritte zur Mole-Berechnung",
-        "fr": "Étapes de calcul de la taupe",
+        "fr": "Étapes du calcul du nombre de moles",
         "ru": "Этапы расчета моля",
         "ar": "خطوات حساب المول",
         "zh": "摩尔计算步骤",
@@ -751,55 +751,55 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-s02",
       "title": {
-        "tr": "Mol Hesaplama Algoritması",
-        "en": "Mole Calculation Algorithm",
-        "de": "Algorithmus zur Mole-Berechnung",
-        "fr": "Algorithme de calcul de taupe",
-        "ru": "Алгоритм расчета моля",
-        "ar": "خوارزمية حساب الخلد",
-        "zh": "摩尔计算算法",
-        "ku": "Algorîtmaya Hesabkirina Mole"
+        "tr": "Kütlece Bileşimden Basit Formül Bulma",
+        "en": "Finding the Simple Formula from Mass Composition",
+        "de": "Bestimmung der einfachen Formel aus der Massenzusammensetzung",
+        "fr": "Détermination de la formule simple à partir de la composition massique",
+        "ru": "Нахождение простейшей формулы по массовому составу",
+        "ar": "إيجاد الصيغة البسيطة من التركيب الكتلي",
+        "zh": "由质量组成求最简式",
+        "ku": "Dîtina formula sade ji pêkhatina girseyî"
       },
       "steps": [
         {
-          "tr": "Verilen maddenin kütlesi belirlenir",
-          "en": "The mass of the given substance is determined",
-          "de": "Die Masse des gegebenen Stoffes wird bestimmt",
-          "fr": "La masse de la substance donnée est déterminée",
-          "ru": "Массу данного вещества определяют",
-          "ar": "يتم تحديد كتلة المادة المعطاة",
-          "zh": "确定给定物质的质量",
-          "ku": "Girseya maddeya diyarkirî tê diyarkirin"
+          "tr": "Elementlerin kütleleri (veya kütlece yüzdeleri) belirlenir",
+          "en": "The masses (or mass percentages) of the elements are determined",
+          "de": "Die Massen (oder Massenanteile) der Elemente werden bestimmt",
+          "fr": "Les masses (ou pourcentages massiques) des éléments sont déterminées",
+          "ru": "Определяют массы (или массовые доли) элементов",
+          "ar": "تُحدَّد كتل العناصر (أو نسبها المئوية الكتلية)",
+          "zh": "确定各元素的质量（或质量分数）",
+          "ku": "Girseyên (an rêjeyên girseyî yên) hêmanan tên diyarkirin"
         },
         {
-          "tr": "Periyodik tablodan mol kütlesi hesaplanır",
-          "en": "Calculate molar mass from the periodic table",
-          "de": "Berechnen Sie die Molmasse aus dem Periodensystem",
-          "fr": "Calculer la masse molaire à partir du tableau périodique",
-          "ru": "Рассчитать молярную массу по таблице Менделеева",
-          "ar": "حساب الكتلة المولية من الجدول الدوري",
-          "zh": "从元素周期表计算摩尔质量",
-          "ku": "Girseya molarê ji tabloya peryodîk hesab bike"
+          "tr": "Her elementin kütlesi atom kütlesine bölünerek mol sayısı bulunur",
+          "en": "Each element's mass is divided by its atomic mass to find the number of moles",
+          "de": "Die Masse jedes Elements wird durch seine Atommasse geteilt, um die Stoffmenge zu erhalten",
+          "fr": "La masse de chaque élément est divisée par sa masse atomique pour obtenir le nombre de moles",
+          "ru": "Массу каждого элемента делят на его атомную массу и находят число молей",
+          "ar": "تُقسم كتلة كل عنصر على كتلته الذرية لإيجاد عدد المولات",
+          "zh": "用各元素的质量除以其原子量，求出摩尔数",
+          "ku": "Girseya her hêmanê li girseya wê ya atomî tê parvekirin û hejmara molan tê dîtin"
         },
         {
-          "tr": "n = m / MA formülüyle mol sayısı bulunur",
-          "en": "The number of moles is found with the formula n = m / MA",
-          "de": "Die Anzahl der Mol wird mit der Formel n = m / MA ermittelt",
-          "fr": "Le nombre de taupes se trouve avec la formule n = m / MA",
-          "ru": "Количество молей находится по формуле n = m/MA",
-          "ar": "تم العثور على عدد الشامات بالصيغة n = m / MA",
-          "zh": "摩尔数的计算公式为 n = m / MA",
-          "ku": "Hejmara molan bi formula n = m / MA tê dîtin"
+          "tr": "Mol sayıları en küçük mol sayısına bölünerek oranlanır",
+          "en": "The mole numbers are divided by the smallest mole number",
+          "de": "Die Stoffmengen werden durch die kleinste Stoffmenge geteilt",
+          "fr": "Les nombres de moles sont divisés par le plus petit d’entre eux",
+          "ru": "Числа молей делят на наименьшее из них",
+          "ar": "تُقسم أعداد المولات على أصغر عدد مولات",
+          "zh": "用各摩尔数除以其中最小的摩尔数",
+          "ku": "Hejmarên molan li hejmara molan a herî biçûk tên parvekirin"
         },
         {
-          "tr": "NK'da hacim için mol 22.4 ile çarpılır",
-          "en": "In NK, moles are multiplied by 22.4 for volume.",
-          "de": "In NK werden Mol für das Volumen mit 22,4 multipliziert.",
-          "fr": "En NK, les taupes sont multipliées par 22,4 pour le volume.",
-          "ru": "В НК родинки умножают на 22,4 для объема.",
-          "ar": "في NK، يتم ضرب الشامات بـ 22.4 للحجم.",
-          "zh": "在 NK 中，摩尔乘以 22.4 即可得到体积。",
-          "ku": "Li NK, mol ji bo 22.4-ê têne zêdekirin."
+          "tr": "Oranlar en küçük tam sayılara çevrilerek basit formül yazılır",
+          "en": "The ratios are converted to the smallest whole numbers and the simple formula is written",
+          "de": "Die Verhältnisse werden in kleinste ganze Zahlen umgewandelt und die einfache Formel wird aufgestellt",
+          "fr": "Les rapports sont convertis en plus petits nombres entiers et la formule simple est écrite",
+          "ru": "Отношения приводят к наименьшим целым числам и записывают простейшую формулу",
+          "ar": "تُحوَّل النسب إلى أصغر أعداد صحيحة وتُكتب الصيغة البسيطة",
+          "zh": "将比值化为最简整数比，写出最简式",
+          "ku": "Rêjeyan dikin hejmarên tam ên herî biçûk û formula sade tê nivîsandin"
         }
       ]
     },
@@ -922,9 +922,9 @@ export const unit06: ChemistryUnitSeedData = {
         "en": "How many grams of C2H4 gas occupying 5.6 liters of volume under normal conditions (0 °C, 1 atm)? (C:12, H:1)",
         "de": "Wie viele Gramm C2H4-Gas nehmen unter normalen Bedingungen (0 °C, 1 atm) ein Volumen von 5,6 Litern ein? (C:12, H:1)",
         "fr": "Combien de grammes de gaz C2H4 occupent 5,6 litres de volume dans des conditions normales (0 °C, 1 atm) ? (C:12, H:1)",
-        "ru": "Сколько граммов газа C2H4 занимает объем 5,6 л при нормальных условиях (0 °С, 1 атм)? (К:12, Ч:1)",
-        "ar": "ما عدد جرامات غاز C2H4 التي تشغل 5.6 لترًا من الحجم في الظروف العادية (0 درجة مئوية، 1 ضغط جوي)؟ (ج: 12، ح: 1)",
-        "zh": "在正常条件下（0℃，1atm），5.6升体积中含有多少克C2H4气体？ （中：12，高：1）",
+        "ru": "Сколько граммов газа C2H4 занимает объем 5,6 л при нормальных условиях (0 °С, 1 атм)? (C: 12, H: 1)",
+        "ar": "ما عدد جرامات غاز C2H4 التي تشغل 5.6 لترًا من الحجم في الظروف العادية (0 درجة مئوية، 1 ضغط جوي)؟ (C: 12، H: 1)",
+        "zh": "在正常条件下（0℃，1atm），5.6升体积中含有多少克C2H4气体？ （C：12，H：1）",
         "ku": "Di şert û mercên normal de (0 °C, 1 atm) çend gram gaza C2H4 5,6 lître qebar digire? (C:12, H:1)"
       },
       "options": [
@@ -1015,14 +1015,14 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "CO û CO2"
         },
         {
-          "tr": "CH4 ve C2H4",
-          "en": "CH4 and C2H4",
-          "de": "CH4 und C2H4",
-          "fr": "CH4 et C2H4",
-          "ru": "CH4 и C2H4",
-          "ar": "CH4 و C2H4",
-          "zh": "CH4 和 C2H4",
-          "ku": "CH4 û C2H4"
+          "tr": "C2H4 ve C3H6",
+          "en": "C2H4 and C3H6",
+          "de": "C2H4 und C3H6",
+          "fr": "C2H4 et C3H6",
+          "ru": "C2H4 и C3H6",
+          "ar": "C2H4 و C3H6",
+          "zh": "C2H4 和 C3H6",
+          "ku": "C2H4 û C3H6"
         },
         {
           "tr": "H2SO4 ve H2SO3",
@@ -1045,26 +1045,26 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "NaCl û KBr"
         },
         {
-          "tr": "C2H6 ve C3H8",
-          "en": "C2H6 and C3H8",
-          "de": "C2H6 und C3H8",
-          "fr": "C2H6 et C3H8",
-          "ru": "C2H6 и C3H8",
-          "ar": "C2H6 و C3H8",
-          "zh": "C2H6 和 C3H8",
-          "ku": "C2H6 û C3H8"
+          "tr": "NO ve CO2",
+          "en": "NO and CO2",
+          "de": "NO und CO2",
+          "fr": "NO et CO2",
+          "ru": "NO и CO2",
+          "ar": "NO و CO2",
+          "zh": "NO 和 CO2",
+          "ku": "NO û CO2"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "CO ve CO2 aynı iki elementten oluşur, basit formülleri farklıdır ve 2 element içerir. Sabit C miktarına karşılık O'lar arasındaki katlı oran 1/2'dir.",
-        "en": "CO and CO2 consist of the same two elements, their simple formulas are different and they contain 2 elements. The multiple ratio between Os in response to a fixed amount of C is 1/2.",
-        "de": "CO und CO2 bestehen aus den gleichen zwei Elementen, ihre einfachen Formeln sind unterschiedlich und sie enthalten 2 Elemente. Das Mehrfachverhältnis zwischen Os als Reaktion auf eine feste Menge an C beträgt 1/2.",
-        "fr": "Le CO et le CO2 sont constitués des deux mêmes éléments, leurs formules simples sont différentes et ils contiennent 2 éléments. Le rapport multiple entre Os en réponse à une quantité fixe de C est de 1/2.",
-        "ru": "CO и CO2 состоят из одних и тех же двух элементов, их простые формулы различны и они содержат по два элемента. Множественное соотношение между Os в ответ на фиксированное количество C составляет 1/2.",
-        "ar": "يتكون ثاني أكسيد الكربون وثاني أكسيد الكربون من نفس العنصرين، وتختلف صيغهما البسيطة، حيث تحتويان على عنصرين. النسبة المتعددة بين Os استجابة لكمية ثابتة من C هي 1/2.",
-        "zh": "CO和CO2由相同的两种元素组成，它们的简单化学式不同，并且含有两种元素。 Os 与固定量 C 的响应倍数比为 1/2。",
-        "ku": "CO û CO2 ji heman du hêmanan pêk tên, formulên wan ên sade cuda ne û 2 hêmanan dihewîne. Rêjeya piralî ya di navbera Os-ê de di bersiva mîqdarek sabît a C de 1/2 ye."
+        "tr": "CO ve CO2 aynı iki elementten oluşur ve basit formülleri farklıdır; sabit C kütlesine karşılık O kütleleri oranı 1/2'dir. C2H4 ve C3H6'nın basit formülü aynıdır (CH2), H2SO4 ve H2SO3 üç element içerir, NaCl-KBr ve NO-CO2 ise farklı elementlerden oluşur.",
+        "en": "CO and CO2 are made of the same two elements and have different simple formulas; for a fixed mass of C, the ratio of the O masses is 1/2. C2H4 and C3H6 have the same simple formula (CH2), H2SO4 and H2SO3 contain three elements, and NaCl-KBr and NO-CO2 consist of different elements.",
+        "de": "CO und CO2 bestehen aus denselben zwei Elementen und haben verschiedene einfache Formeln; bei gleicher Masse an C beträgt das Verhältnis der O-Massen 1/2. C2H4 und C3H6 haben dieselbe einfache Formel (CH2), H2SO4 und H2SO3 enthalten drei Elemente, und NaCl-KBr sowie NO-CO2 bestehen aus unterschiedlichen Elementen.",
+        "fr": "CO et CO2 sont formés des deux mêmes éléments et ont des formules simples différentes ; pour une masse fixe de C, le rapport des masses de O est 1/2. C2H4 et C3H6 ont la même formule simple (CH2), H2SO4 et H2SO3 contiennent trois éléments, et NaCl-KBr ainsi que NO-CO2 sont formés d'éléments différents.",
+        "ru": "CO и CO2 состоят из одних и тех же двух элементов и имеют разные простейшие формулы; при одинаковой массе C отношение масс O равно 1/2. У C2H4 и C3H6 одинаковая простейшая формула (CH2), H2SO4 и H2SO3 содержат три элемента, а NaCl-KBr и NO-CO2 состоят из разных элементов.",
+        "ar": "يتكوّن CO وCO2 من العنصرين نفسيهما وصيغتاهما البسيطتان مختلفتان؛ وعند ثبات كتلة C تكون نسبة كتلتي O هي 1/2. أما C2H4 وC3H6 فلهما الصيغة البسيطة نفسها (CH2)، وH2SO4 وH2SO3 يحتويان على ثلاثة عناصر، وNaCl-KBr وNO-CO2 يتكونان من عناصر مختلفة.",
+        "zh": "CO 和 CO2 由相同的两种元素组成且最简式不同；C 的质量固定时，O 的质量比为 1/2。C2H4 和 C3H6 的最简式相同（CH2），H2SO4 和 H2SO3 含三种元素，NaCl-KBr 与 NO-CO2 由不同元素组成。",
+        "ku": "CO û CO2 ji heman du hêmanan pêk tên û formulên wan ên sade cuda ne; ji bo girseyeke sabît a C, rêjeya girseyên O 1/2 ye. Formula sade ya C2H4 û C3H6 yek e (CH2), H2SO4 û H2SO3 sê hêman dihewînin, NaCl-KBr û NO-CO2 jî ji hêmanên cuda pêk tên."
       }
     },
     {
@@ -1160,7 +1160,7 @@ export const unit06: ChemistryUnitSeedData = {
           "tr": "Mol sayısı kütle ile mol kütlesinin çarpımına eşittir.",
           "en": "The number of moles is equal to the mass multiplied by the molar mass.",
           "de": "Die Anzahl der Mol ist gleich der Masse multipliziert mit der Molmasse.",
-          "fr": "Le nombre de taupes est égal à la masse multipliée par la masse molaire.",
+          "fr": "Le nombre de moles est égal à la masse multipliée par la masse molaire.",
           "ru": "Количество молей равно массе, умноженной на молярную массу.",
           "ar": "عدد المولات يساوي الكتلة مضروبة في الكتلة المولية.",
           "zh": "摩尔数等于质量乘以摩尔质量。",
@@ -1400,7 +1400,7 @@ export const unit06: ChemistryUnitSeedData = {
           "de": "Die Formel für die Molzahl lautet: n = m / MA (Masse / Molmasse) oder n = N / NA.",
           "fr": "La formule du nombre de moles est : n = m/MA (masse/masse molaire) ou n = N/NA.",
           "ru": "Формула количества молей: n = m/MA (масса/молярная масса) или n = N/NA.",
-          "ar": "صيغة عدد الشامات هي: n = m / MA (الكتلة / الكتلة المولية) أو n = N / NA.",
+          "ar": "صيغة عدد المولات هي: n = m / MA (الكتلة / الكتلة المولية) أو n = N / NA.",
           "zh": "摩尔数的公式为：n = m / MA（质量/摩尔质量）或 n = N / NA。",
           "ku": "Formula hejmara molan ev e: n = m / MA (girse / girseya molê) an n = N / NA."
         },
@@ -1442,7 +1442,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Die Formel für die Molzahl lautet: n = m / MA (Masse / Molmasse) oder n = N / NA.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La formule du nombre de moles est : n = m/MA (masse/masse molaire) ou n = N/NA.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Формула количества молей: n = m/MA (масса/молярная масса) или n = N/NA.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"صيغة عدد الشامات هي: n = m / MA (الكتلة / الكتلة المولية) أو n = N / NA.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"صيغة عدد المولات هي: n = m / MA (الكتلة / الكتلة المولية) أو n = N / NA.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“摩尔数的公式为：n = m / MA（质量/摩尔质量）或 n = N / NA。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Formula hejmara molan ev e: n = m / MA (girse / girseya molê) an n = N / NA.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
@@ -1514,13 +1514,13 @@ export const unit06: ChemistryUnitSeedData = {
       "correctIndex": 2,
       "explanation": {
         "tr": "Doğru cevap \"Mol kütlesi (MA), 1 mol maddenin gram cinsinden kütlesidir (akb cinsinden molekül ağırlığının gram karşılığıdır).\" ifadesidir. 1 tane CO2 44 akb'dir; 1 mol CO2 44 gramdır.",
-        "en": "The correct statement is: \"Molar mass (MA) is the mass in grams of 1 mole of substance (gram equivalent to the molecular weight in amu).\". 1 grain of CO2 is 44 akb; 1 mole of CO2 is 44 grams.",
-        "de": "Die zutreffende Aussage lautet: \"Die Molmasse (MA) ist die Masse in Gramm von 1 Mol einer Substanz (Gramm entspricht dem Molekulargewicht in amu).\". 1 Korn CO2 ist 44 akb; 1 Mol CO2 sind 44 Gramm.",
-        "fr": "L'affirmation exacte est: \"La masse molaire (MA) est la masse en grammes de 1 mole de substance (gramme équivalent au poids moléculaire en amu).\". 1 grain de CO2 équivaut à 44 akb ; 1 mole de CO2 équivaut à 44 grammes.",
-        "ru": "Правильное утверждение: «Молярная масса (МА) — это масса 1 моля вещества в граммах (грамм эквивалентен молекулярной массе в а.е.м.).». 1 крупинка СО2 – 44 акб; 1 моль CO2 равен 44 граммам.",
-        "ar": "العبارة الصحيحة هي: \"الكتلة المولية (MA) هي الكتلة بالجرام لمول واحد من المادة (جرام يعادل الوزن الجزيئي بوحدة amu).\". 1 حبة من ثاني أكسيد الكربون هي 44 ألف كيلو بايت؛ 1 مول من ثاني أكسيد الكربون يساوي 44 جرامًا.",
-        "zh": "正确表述为：“摩尔质量 (MA) 是 1 摩尔物质的质量（克）（克相当于 amu 分子量）。”。1 格令 CO2 为 44 akb； 1 摩尔 CO2 为 44 克。",
-        "ku": "Gotina rast ev e: \"Girseya Molar (MA) girseya bi gramên 1 mole maddeyê ye (gram bi giraniya molekulê ya di amu de ye).\". 1 genim CO2 44 akb e; 1 mol CO2 44 gram e."
+        "en": "The correct statement is: \"Molar mass (MA) is the mass in grams of 1 mole of substance (gram equivalent to the molecular weight in amu).\". 1 CO2 molecule is 44 amu; 1 mole of CO2 is 44 grams.",
+        "de": "Die zutreffende Aussage lautet: \"Die Molmasse (MA) ist die Masse in Gramm von 1 Mol einer Substanz (Gramm entspricht dem Molekulargewicht in amu).\". 1 CO2-Molekül hat 44 u; 1 Mol CO2 wiegt 44 Gramm.",
+        "fr": "L'affirmation exacte est: \"La masse molaire (MA) est la masse en grammes de 1 mole de substance (gramme équivalent au poids moléculaire en amu).\". 1 molécule de CO2 pèse 44 uma ; 1 mole de CO2 pèse 44 grammes.",
+        "ru": "Правильное утверждение: «Молярная масса (МА) — это масса 1 моля вещества в граммах (грамм эквивалентен молекулярной массе в а.е.м.).». 1 молекула CO2 имеет массу 44 а.е.м.; 1 моль CO2 — 44 грамма.",
+        "ar": "العبارة الصحيحة هي: \"الكتلة المولية (MA) هي الكتلة بالجرام لمول واحد من المادة (جرام يعادل الوزن الجزيئي بوحدة amu).\". جزيء واحد من CO2 كتلته 44 وحدة كتل ذرية؛ و1 مول من CO2 كتلته 44 غرامًا.",
+        "zh": "正确表述为：“摩尔质量 (MA) 是 1 摩尔物质的质量（克）（克相当于 amu 分子量）。”。1 个 CO2 分子为 44 原子质量单位；1 摩尔 CO2 为 44 克。",
+        "ku": "Gotina rast ev e: \"Girseya Molar (MA) girseya bi gramên 1 mole maddeyê ye (gram bi giraniya molekulê ya di amu de ye).\". 1 molekula CO2 44 akb ye; 1 mol CO2 44 gram e."
       }
     },
     {
@@ -1732,7 +1732,7 @@ export const unit06: ChemistryUnitSeedData = {
           "tr": "Mol sayısı kütle ile mol kütlesinin çarpımına eşittir.",
           "en": "The number of moles is equal to the mass multiplied by the molar mass.",
           "de": "Die Anzahl der Mol ist gleich der Masse multipliziert mit der Molmasse.",
-          "fr": "Le nombre de taupes est égal à la masse multipliée par la masse molaire.",
+          "fr": "Le nombre de moles est égal à la masse multipliée par la masse molaire.",
           "ru": "Количество молей равно массе, умноженной на молярную массу.",
           "ar": "عدد المولات يساوي الكتلة مضروبة في الكتلة المولية.",
           "zh": "摩尔数等于质量乘以摩尔质量。",
@@ -1781,7 +1781,7 @@ export const unit06: ChemistryUnitSeedData = {
           "fr": "1 atome-gramme = 1 mole d'atomes, 1 molécule-gramme = 1 mole de molécules, 1 formule-gramme = 1 mole de composé ionique.",
           "ru": "1 атом-грамм = 1 моль атомов, 1 молекула-грамм = 1 моль молекул, 1 формульный грамм = 1 моль ионного соединения.",
           "ar": "1 ذرة جرام = 1 مول من الذرات، 1 جرام جزيء = 1 مول من الجزيئات، 1 جرام صيغة = 1 مول من المركب الأيوني.",
-          "zh": "1 原子克 = 1 摩尔原子，1 分子克 = 1 摩尔分子，1 分子式 = 1 摩尔离子化合物。",
+          "zh": "1 原子克 = 1 摩尔原子，1 分子克 = 1 摩尔分子，1 式克 = 1 摩尔离子化合物。",
           "ku": "1 atom-gram = 1 mol atom, 1 molekul-gram = 1 molek molekul, 1 formula-gram = 1 mol pêkhateya îyonî."
         },
         {
@@ -1823,7 +1823,7 @@ export const unit06: ChemistryUnitSeedData = {
         "fr": "L'affirmation exacte est: \"1 atome-gramme = 1 mole d'atomes, 1 molécule-gramme = 1 mole de molécules, 1 formule-gramme = 1 mole de composé ionique.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «1 атом-грамм = 1 моль атомов, 1 молекула-грамм = 1 моль молекул, 1 формульный грамм = 1 моль ионного соединения.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"1 ذرة جرام = 1 مول من الذرات، 1 جرام جزيء = 1 مول من الجزيئات، 1 جرام صيغة = 1 مول من المركب الأيوني.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“1 原子克 = 1 摩尔原子，1 分子克 = 1 摩尔分子，1 分子式 = 1 摩尔离子化合物。”。属于化学学科必考的核心客观真理。",
+        "zh": "正确表述为：“1 原子克 = 1 摩尔原子，1 分子克 = 1 摩尔分子，1 式克 = 1 摩尔离子化合物。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"1 atom-gram = 1 mol atom, 1 molekul-gram = 1 molek molekul, 1 formula-gram = 1 mol pêkhateya îyonî.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
@@ -1940,7 +1940,7 @@ export const unit06: ChemistryUnitSeedData = {
           "tr": "Mol sayısı kütle ile mol kütlesinin çarpımına eşittir.",
           "en": "The number of moles is equal to the mass multiplied by the molar mass.",
           "de": "Die Anzahl der Mol ist gleich der Masse multipliziert mit der Molmasse.",
-          "fr": "Le nombre de taupes est égal à la masse multipliée par la masse molaire.",
+          "fr": "Le nombre de moles est égal à la masse multipliée par la masse molaire.",
           "ru": "Количество молей равно массе, умноженной на молярную массу.",
           "ar": "عدد المولات يساوي الكتلة مضروبة في الكتلة المولية.",
           "zh": "摩尔数等于质量乘以摩尔质量。",
@@ -2037,10 +2037,10 @@ export const unit06: ChemistryUnitSeedData = {
           "en": "For solid and liquid substances, the 22.4 L volume rule in NC does NOT apply; For gases only.",
           "de": "Für feste und flüssige Stoffe gilt die 22,4-L-Volumenregel in NC NICHT; Nur für Gase.",
           "fr": "Pour les substances solides et liquides, la règle du volume de 22,4 L en NC ne s'applique PAS ; Pour les gaz uniquement.",
-          "ru": "Для твердых и жидких веществ правило объема 22,4 л в Северной Каролине НЕ применяется; Только для газов.",
+          "ru": "Для твердых и жидких веществ правило объема 22,4 л при нормальных условиях НЕ применяется; Только для газов.",
           "ar": "بالنسبة للمواد الصلبة والسائلة، لا تنطبق قاعدة الحجم 22.4 لترًا في NC؛ للغازات فقط.",
           "zh": "对于固体和液体物质，NC 中的 22.4 L 体积规则不适用；仅适用于气体。",
-          "ku": "Ji bo maddeyên hişk û şil, qaîdeya qebareya 22,4 L di NC-ê de NA derbas dibe; Tenê ji bo gazan."
+          "ku": "Ji bo maddeyên hişk û şil, qaîdeya qebareya 22,4 L di şertên normal de derbas nabe; Tenê ji bo gazan."
         }
       ],
       "correctIndex": 4,
@@ -2049,10 +2049,10 @@ export const unit06: ChemistryUnitSeedData = {
         "en": "The correct statement is: \"For solid and liquid substances, the 22.4 L volume rule in NC does NOT apply; For gases only.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Für feste und flüssige Stoffe gilt die 22,4-L-Volumenregel in NC NICHT; Nur für Gase.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Pour les substances solides et liquides, la règle du volume de 22,4 L en NC ne s'applique PAS ; Pour les gaz uniquement.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Для твердых и жидких веществ правило объема 22,4 л в Северной Каролине НЕ применяется; Только для газов.». Фундаментальный химический факт официальной программы.",
+        "ru": "Правильное утверждение: «Для твердых и жидких веществ правило объема 22,4 л при нормальных условиях НЕ применяется; Только для газов.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"بالنسبة للمواد الصلبة والسائلة، لا تنطبق قاعدة الحجم 22.4 لترًا في NC؛ للغازات فقط.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“对于固体和液体物质，NC 中的 22.4 L 体积规则不适用；仅适用于气体。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ji bo maddeyên hişk û şil, qaîdeya qebareya 22,4 L di NC-ê de NA derbas dibe; Tenê ji bo gazan.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Ji bo maddeyên hişk û şil, qaîdeya qebareya 22,4 L di şertên normal de derbas nabe; Tenê ji bo gazan.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {

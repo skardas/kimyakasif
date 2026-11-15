@@ -63,14 +63,14 @@ export const unit13: ChemistryUnitSeedData = {
         "ku": "Rêjeya belavbûna gazan rasterast bi koka çargoşe ya germahiya mutleq re têkildar e (v1/v2 = sqrt((T1*M2)/(T2*M1)))."
       },
       "trap": {
-        "tr": "Sıcaklık 4 katına çıkarsa difüzyon hızı 4 katına çıkar.",
-        "en": "If the temperature increases by 4 times, the diffusion rate increases by 4 times.",
-        "de": "Bei einer Temperaturerhöhung um das Vierfache erhöht sich die Diffusionsgeschwindigkeit um das Vierfache.",
-        "fr": "Si la température augmente de 4 fois, le taux de diffusion augmente de 4 fois.",
-        "ru": "Если температура увеличится в 4 раза, скорость диффузии увеличится в 4 раза.",
-        "ar": "إذا زادت درجة الحرارة بمقدار 4 مرات، يزيد معدل الانتشار بمقدار 4 مرات.",
-        "zh": "如果温度增加4倍，扩散速率增加4倍。",
-        "ku": "Ger germahî 4 qat zêde bibe, rêjeya belavbûnê 4 qat zêde dibe."
+        "tr": "Bir gazın mutlak sıcaklığı 4 katına çıkarılırsa difüzyon hızı da 4 katına çıkar.",
+        "en": "If the absolute temperature of a gas is quadrupled, its diffusion rate also quadruples.",
+        "de": "Wird die absolute Temperatur eines Gases vervierfacht, vervierfacht sich auch seine Diffusionsgeschwindigkeit.",
+        "fr": "Si la température absolue d'un gaz est multipliée par 4, sa vitesse de diffusion est aussi multipliée par 4.",
+        "ru": "Если абсолютную температуру газа увеличить в 4 раза, скорость его диффузии тоже увеличится в 4 раза.",
+        "ar": "إذا زادت درجة الحرارة المطلقة لغاز 4 مرات، يزداد معدل انتشاره أيضًا 4 مرات.",
+        "zh": "若气体的绝对温度增大到原来的4倍，其扩散速率也增大到原来的4倍。",
+        "ku": "Ger germahiya mutleq a gazekê 4 qat bibe, leza belavbûna wê jî 4 qat dibe."
       },
       "osymTip": {
         "tr": "Karekök ilişkisi vardır; hız 2 katına çıkar!",
@@ -113,20 +113,20 @@ export const unit13: ChemistryUnitSeedData = {
         "en": "The average kinetic energy of gases (Ek = 3/2 kT) depends ONLY on absolute temperature; is independent of the type of gas.",
         "de": "Die durchschnittliche kinetische Energie von Gasen (Ek = 3/2 kT) hängt NUR von der absoluten Temperatur ab; ist unabhängig von der Gasart.",
         "fr": "L'énergie cinétique moyenne des gaz (Ek = 3/2 kT) dépend UNIQUEMENT de la température absolue ; est indépendant du type de gaz.",
-        "ru": "Средняя кинетическая энергия газов (Ек = 3/2 кТл) зависит ТОЛЬКО от абсолютной температуры; не зависит от типа газа.",
-        "ar": "متوسط ​​الطاقة الحركية للغازات (Ek = 3/2 كيلو طن) يعتمد فقط على درجة الحرارة المطلقة؛ لا يعتمد على نوع الغاز .",
+        "ru": "Средняя кинетическая энергия газов (Ek = 3/2 kT) зависит ТОЛЬКО от абсолютной температуры; она не зависит от природы газа.",
+        "ar": "متوسط الطاقة الحركية للغازات (Ek = 3/2 kT) يعتمد فقط على درجة الحرارة المطلقة؛ ولا يعتمد على نوع الغاز.",
         "zh": "气体的平均动能 (Ek = 3/2 kT) 仅取决于绝对温度；与气体类型无关。",
         "ku": "Enerjiya kînetîk a navîn a gazan (Ek = 3/2 kT) TENÊ bi germahiya mutleq ve girêdayî ye; ji cureyê gazê serbixwe ye."
       },
       "trap": {
-        "tr": "Aynı sıcaklıktaki CO2 gazının kinetik enerjisi H2 gazınınkinden büyüktür.",
-        "en": "The kinetic energy of CO2 gas at the same temperature is greater than that of H2 gas.",
-        "de": "Die kinetische Energie von CO2-Gas ist bei gleicher Temperatur größer als die von H2-Gas.",
-        "fr": "L’énergie cinétique du gaz CO2 à la même température est supérieure à celle du gaz H2.",
-        "ru": "Кинетическая энергия газа CO2 при той же температуре больше, чем у газа H2.",
-        "ar": "الطاقة الحركية لغاز ثاني أكسيد الكربون عند نفس درجة الحرارة أكبر من طاقة غاز الهيدروجين.",
-        "zh": "相同温度下CO2气体的动能大于H2气体的动能。",
-        "ku": "Enerjiya kinetîk a gaza CO2 di heman germahiyê de ji ya gaza H2 mezintir e."
+        "tr": "Aynı sıcaklıktaki CO2 moleküllerinin ortalama kinetik enerjisi H2 moleküllerininkinden büyüktür.",
+        "en": "At the same temperature, the average kinetic energy of CO2 molecules is greater than that of H2 molecules.",
+        "de": "Bei gleicher Temperatur ist die mittlere kinetische Energie von CO2-Molekülen größer als die von H2-Molekülen.",
+        "fr": "À la même température, l'énergie cinétique moyenne des molécules de CO2 est supérieure à celle des molécules de H2.",
+        "ru": "При одинаковой температуре средняя кинетическая энергия молекул CO2 больше, чем у молекул H2.",
+        "ar": "عند درجة الحرارة نفسها، يكون متوسط الطاقة الحركية لجزيئات CO2 أكبر من متوسط الطاقة الحركية لجزيئات H2.",
+        "zh": "相同温度下，CO2分子的平均动能大于H2分子的平均动能。",
+        "ku": "Di heman germahiyê de, enerjiya kînetîk a navîn a molekulên CO2 ji ya molekulên H2 mezintir e."
       },
       "osymTip": {
         "tr": "Aynı sıcaklıktaki tüm gazların ortalama kinetik enerjisi eşittir!",
@@ -143,13 +143,13 @@ export const unit13: ChemistryUnitSeedData = {
       "id": "u13-f05",
       "fact": {
         "tr": "Yüksek sıcaklık, düşük basınç ve küçük mol kütlesi (zayıf çekim) gazları idealliğe yaklaştırır.",
-        "en": "High temperature, low pressure and small molar mass (weak gravity) bring gases closer to ideality.",
-        "de": "Hohe Temperaturen, niedriger Druck und kleine Molmassen (schwache Schwerkraft) bringen Gase näher an den Idealzustand.",
-        "fr": "Une température élevée, une basse pression et une petite masse molaire (faible gravité) rapprochent les gaz de l'idéalité.",
-        "ru": "Высокая температура, низкое давление и малая молярная масса (слабая гравитация) приближают газы к идеальности.",
-        "ar": "درجة الحرارة المرتفعة والضغط المنخفض والكتلة المولية الصغيرة (الجاذبية الضعيفة) تجعل الغازات أقرب إلى المثالية.",
-        "zh": "高温、低压和小摩尔质量（弱重力）使气体更接近理想状态。",
-        "ku": "Germahiya bilind, tansiyona nizm û girseya molarê ya piçûk (gravîta qels) gazan nêzî îdealîteyê dike."
+        "en": "High temperature, low pressure and small molar mass (weak intermolecular attraction) bring gases closer to ideal behavior.",
+        "de": "Hohe Temperatur, niedriger Druck und kleine Molmasse (schwache zwischenmolekulare Anziehung) bringen Gase dem idealen Verhalten näher.",
+        "fr": "Une température élevée, une basse pression et une petite masse molaire (faible attraction intermoléculaire) rapprochent les gaz du comportement idéal.",
+        "ru": "Высокая температура, низкое давление и малая молярная масса (слабое межмолекулярное притяжение) приближают поведение газов к идеальному.",
+        "ar": "درجة الحرارة المرتفعة والضغط المنخفض والكتلة المولية الصغيرة (تجاذب ضعيف بين الجزيئات) تقرّب الغازات من السلوك المثالي.",
+        "zh": "高温、低压和较小的摩尔质量（分子间引力弱）使气体更接近理想气体行为。",
+        "ku": "Germahiya bilind, zexta nizm û girseya molar a biçûk (kişandina navmolekulî ya qels) gazan nêzîkî tevgera îdeal dikin."
       },
       "trap": {
         "tr": "Yüksek basınç ve düşük sıcaklıkta gazlar ideale en yakındır.",
@@ -166,13 +166,13 @@ export const unit13: ChemistryUnitSeedData = {
       "id": "u13-f06",
       "fact": {
         "tr": "Gerçek gaz molekülleri arasında çekim kuvveti vardır ve öz hacimleri sıfır değildir.",
-        "en": "There is a force of attraction between real gas molecules and their specific volumes are not zero.",
-        "de": "Zwischen realen Gasmolekülen besteht eine Anziehungskraft und ihr spezifisches Volumen ist nicht Null.",
-        "fr": "Il existe une force d’attraction entre les molécules de gaz réelles et leurs volumes spécifiques ne sont pas nuls.",
-        "ru": "Между реальными молекулами газа существует сила притяжения, и их удельные объемы не равны нулю.",
-        "ar": "توجد قوة تجاذب بين جزيئات الغاز الحقيقية وحجمها النوعي ليس صفرًا.",
-        "zh": "真实气体分子之间存在吸引力，其比体积不为零。",
-        "ku": "Di navbera molekulên gazê yên resen de hêzek kêşanê heye û cildên wan ên taybetî ne sifir in."
+        "en": "Real gas molecules attract each other, and their own volumes are not zero.",
+        "de": "Zwischen den Molekülen realer Gase wirken Anziehungskräfte, und ihr Eigenvolumen ist nicht null.",
+        "fr": "Les molécules d'un gaz réel s'attirent mutuellement et leur volume propre n'est pas nul.",
+        "ru": "Между молекулами реального газа действуют силы притяжения, и их собственный объём не равен нулю.",
+        "ar": "توجد قوى تجاذب بين جزيئات الغاز الحقيقي، وحجمها الذاتي لا يساوي صفرًا.",
+        "zh": "真实气体分子之间存在引力，且分子自身体积不为零。",
+        "ku": "Di navbera molekulên gaza rastîn de hêza kişandinê heye û qebareya wan a xwe ne sifir e."
       },
       "trap": {
         "tr": "İdeal gazların molekülleri arasında güçlü elektrostatik çekim vardır.",
@@ -234,14 +234,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-f09",
       "fact": {
-        "tr": "Buhar, kritik sıcaklık ile kaynama noktası arasındaki sıkıştırılarak sıvılaşabilen akışkandır.",
-        "en": "Vapor is a fluid that can be liquefied by compression between the critical temperature and the boiling point.",
-        "de": "Dampf ist eine Flüssigkeit, die durch Kompression zwischen der kritischen Temperatur und dem Siedepunkt verflüssigt werden kann.",
-        "fr": "La vapeur est un fluide qui peut être liquéfié par compression entre la température critique et le point d'ébullition.",
-        "ru": "Пар — это жидкость, которую можно сжижать путем сжатия между критической температурой и температурой кипения.",
-        "ar": "البخار هو سائل يمكن تسييله عن طريق الضغط بين درجة الحرارة الحرجة ونقطة الغليان.",
-        "zh": "蒸气是在临界温度和沸点之间通过压缩可以液化的流体。",
-        "ku": "Vapor şilekek e ku dikare bi pêçandina di navbera germahiya krîtîk û xala kelandinê de şil bibe."
+        "tr": "Buhar, bir maddenin kritik sıcaklığının altındaki gaz hâlidir; sabit sıcaklıkta basınç artırılarak sıvılaştırılabilir.",
+        "en": "Vapor is the gaseous state of a substance below its critical temperature; it can be liquefied by increasing the pressure at constant temperature.",
+        "de": "Dampf ist der gasförmige Zustand eines Stoffes unterhalb seiner kritischen Temperatur; er kann bei konstanter Temperatur durch Druckerhöhung verflüssigt werden.",
+        "fr": "La vapeur est l'état gazeux d'une substance en dessous de sa température critique ; elle peut être liquéfiée en augmentant la pression à température constante.",
+        "ru": "Пар — это газообразное состояние вещества ниже его критической температуры; его можно сжижить, повышая давление при постоянной температуре.",
+        "ar": "البخار هو الحالة الغازية للمادة عند درجة حرارة أقل من درجة حرارتها الحرجة؛ ويمكن تسييله بزيادة الضغط عند درجة حرارة ثابتة.",
+        "zh": "蒸气是物质在其临界温度以下的气态；在温度不变时增大压强即可使其液化。",
+        "ku": "Buhar rewşa gazî ya maddeyekê ye di bin germahiya wê ya krîtîk de; di germahiya sabît de bi zêdekirina zextê dikare were şilkirin."
       },
       "trap": {
         "tr": "Buhar ve gaz kavramları bilimsel olarak birebir aynıdır.",
@@ -280,14 +280,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-f11",
       "fact": {
-        "tr": "Suyun buhar basıncı kabın hacmi değiştirildiğinde sıcaklık sabit kaldığı sürece DEĞİŞMEZ.",
-        "en": "The vapor pressure of water DOES NOT change when the volume of the container is changed as long as the temperature remains constant.",
-        "de": "Der Dampfdruck von Wasser ändert sich NICHT, wenn das Volumen des Behälters verändert wird, solange die Temperatur konstant bleibt.",
-        "fr": "La pression de vapeur de l’eau NE change PAS lorsque le volume du récipient change tant que la température reste constante.",
-        "ru": "Давление пара воды НЕ меняется при изменении объема сосуда, пока температура остается постоянной.",
-        "ar": "لا يتغير ضغط بخار الماء بتغير حجم الوعاء طالما ظلت درجة الحرارة ثابتة.",
-        "zh": "只要温度保持恒定，当容器体积改变时，水的蒸气压就不会改变。",
-        "ku": "Dema ku qebareya konteynerê tê guherandin heta ku germahî sabît bimîne, tansiyona buharê ya avê NAguhere."
+        "tr": "Kapta sıvı su bulunduğu sürece sabit sıcaklıkta kabın hacmi değiştirilse de suyun buhar basıncı DEĞİŞMEZ.",
+        "en": "As long as liquid water remains in the container, the vapor pressure of water DOES NOT change when the volume is changed at constant temperature.",
+        "de": "Solange flüssiges Wasser im Behälter vorhanden ist, ändert sich der Dampfdruck des Wassers bei konstanter Temperatur NICHT, auch wenn das Volumen verändert wird.",
+        "fr": "Tant qu'il reste de l'eau liquide dans le récipient, la pression de vapeur de l'eau NE change PAS lorsque le volume varie à température constante.",
+        "ru": "Пока в сосуде остаётся жидкая вода, давление её пара при постоянной температуре НЕ меняется при изменении объёма.",
+        "ar": "ما دام الماء السائل موجودًا في الوعاء، فإن ضغط بخار الماء لا يتغير عند تغيير الحجم مع ثبات درجة الحرارة.",
+        "zh": "只要容器中仍有液态水，在温度不变时改变容器体积，水的蒸气压不会改变。",
+        "ku": "Heta ku di firaxê de ava şil hebe, di germahiya sabît de qebare were guhertin jî zexta buhara avê NAGUHERE."
       },
       "trap": {
         "tr": "Piston yukarı çekilip hacim artırıldığında suyun buhar basıncı yarıya iner.",
@@ -326,47 +326,47 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-f13",
       "fact": {
-        "tr": "CH4 (MA=16) gazı SO2 (MA=64) gazından sqrt(64/16) = 2 kat daha hızlı difüzlenir.",
-        "en": "CH4 (MA=16) gas diffuses sqrt(64/16) = 2 times faster than SO2 (MA=64) gas.",
-        "de": "CH4-Gas (MA=16) diffundiert sqrt(64/16) = 2-mal schneller als SO2-Gas (MA=64).",
-        "fr": "Le gaz CH4 (MA=16) diffuse sqrt(64/16) = 2 fois plus rapide que le gaz SO2 (MA=64).",
-        "ru": "Газ CH4 (MA=16) распространяется sqrt(64/16) = в 2 раза быстрее, чем газ SO2 (MA=64).",
-        "ar": "ينتشر غاز CH4 (MA=16) sqrt(64/16) = مرتين أسرع من غاز SO2 (MA=64).",
-        "zh": "CH4 (MA=16) 气体的扩散 sqrt(64/16) = 比 SO2 (MA=64) 气体快 2 倍。",
-        "ku": "Gaza CH4 (MA=16) sqrt(64/16) = 2 qat ji gaza SO2 (MA=64) zûtir belav dike."
+        "tr": "Aynı sıcaklıkta CH4 (MA=16) gazı, SO2 (MA=64) gazından sqrt(64/16) = 2 kat daha hızlı difüzlenir.",
+        "en": "At the same temperature, CH4 (MA=16) gas diffuses sqrt(64/16) = 2 times faster than SO2 (MA=64) gas.",
+        "de": "Bei gleicher Temperatur diffundiert CH4-Gas (MA=16) sqrt(64/16) = 2-mal schneller als SO2-Gas (MA=64).",
+        "fr": "À la même température, le gaz CH4 (MA=16) diffuse sqrt(64/16) = 2 fois plus vite que le gaz SO2 (MA=64).",
+        "ru": "При одинаковой температуре газ CH4 (MA=16) диффундирует в sqrt(64/16) = 2 раза быстрее, чем газ SO2 (MA=64).",
+        "ar": "عند درجة الحرارة نفسها، ينتشر غاز CH4 (MA=16) أسرع بـ sqrt(64/16) = 2 مرة من غاز SO2 (MA=64).",
+        "zh": "相同温度下，CH4（MA=16）气体的扩散速率是SO2（MA=64）气体的 sqrt(64/16) = 2 倍。",
+        "ku": "Di heman germahiyê de gaza CH4 (MA=16) sqrt(64/16) = 2 qat ji gaza SO2 (MA=64) zûtir belav dibe."
       },
       "trap": {
-        "tr": "CH4 gazı SO2'den 4 kat daha hızlı hareket eder.",
-        "en": "CH4 gas moves 4 times faster than SO2.",
-        "de": "CH4-Gas bewegt sich viermal schneller als SO2.",
-        "fr": "Le gaz CH4 se déplace 4 fois plus vite que le SO2.",
-        "ru": "Газ CH4 движется в 4 раза быстрее, чем SO2.",
-        "ar": "يتحرك غاز CH4 أسرع بأربع مرات من ثاني أكسيد الكبريت.",
-        "zh": "CH4 气体的移动速度比 SO2 快 4 倍。",
-        "ku": "Gaza CH4 ji SO2 4 caran zûtir dimeşe."
+        "tr": "Aynı sıcaklıkta CH4 gazı SO2 gazından 4 kat daha hızlı difüzlenir.",
+        "en": "At the same temperature, CH4 gas diffuses 4 times faster than SO2 gas.",
+        "de": "Bei gleicher Temperatur diffundiert CH4-Gas 4-mal schneller als SO2-Gas.",
+        "fr": "À la même température, le gaz CH4 diffuse 4 fois plus vite que le gaz SO2.",
+        "ru": "При одинаковой температуре газ CH4 диффундирует в 4 раза быстрее, чем газ SO2.",
+        "ar": "عند درجة الحرارة نفسها، ينتشر غاز CH4 أسرع بـ 4 مرات من غاز SO2.",
+        "zh": "相同温度下，CH4气体的扩散速率是SO2气体的4倍。",
+        "ku": "Di heman germahiyê de gaza CH4 4 qat ji gaza SO2 zûtir belav dibe."
       }
     },
     {
       "id": "u13-f14",
       "fact": {
-        "tr": "Effüzyon, gaz moleküllerinin küçük bir delikten vakumlu boşluğa kaçması olayıdır.",
+        "tr": "Efüzyon, gaz moleküllerinin küçük bir delikten vakumlu boşluğa kaçması olayıdır.",
         "en": "Effusion is the phenomenon of gas molecules escaping into a vacuum space through a small hole.",
         "de": "Unter Effusion versteht man das Phänomen, dass Gasmoleküle durch ein kleines Loch in einen Vakuumraum entweichen.",
-        "fr": "L'épanchement est le phénomène par lequel des molécules de gaz s'échappent dans un espace vide par un petit trou.",
+        "fr": "L'effusion est le phénomène par lequel des molécules de gaz s'échappent vers le vide par un petit orifice.",
         "ru": "Эффузия – это явление, когда молекулы газа выходят в вакуумное пространство через небольшое отверстие.",
         "ar": "الانصباب هو ظاهرة هروب جزيئات الغاز إلى فراغ من خلال ثقب صغير.",
-        "zh": "逸出是气体分子通过小孔逃逸到真空空间的现象。",
-        "ku": "Effuzyon diyardeya molekulên gazê ye ku di qulikek piçûk de diherikin cîhek valahiyê."
+        "zh": "泻流是气体分子通过小孔逸入真空空间的现象。",
+        "ku": "Efûzyon diyardeya reva molekulên gazê ji qulikeke biçûk ber bi valahiyê (vakûmê) ye."
       },
       "trap": {
-        "tr": "Effüzyon iki gazın birbiri içinde karışmasıdır.",
+        "tr": "Efüzyon iki gazın birbiri içinde karışmasıdır.",
         "en": "Effusion is the mixing of two gases with each other.",
         "de": "Unter Effusion versteht man die Vermischung zweier Gase miteinander.",
-        "fr": "L'épanchement est le mélange de deux gaz entre eux.",
+        "fr": "L'effusion est le mélange de deux gaz l'un dans l'autre.",
         "ru": "Эффузия – это смешение двух газов друг с другом.",
         "ar": "الانصباب هو اختلاط غازين مع بعضهما البعض.",
-        "zh": "逸出是两种气体相互混合。",
-        "ku": "Efusion tevlîhevkirina du gazan bi hev re ye."
+        "zh": "泻流是两种气体相互混合的过程。",
+        "ku": "Efûzyon tevlihevbûna du gazan di nav hev de ye."
       }
     },
     {
@@ -396,13 +396,13 @@ export const unit13: ChemistryUnitSeedData = {
       "id": "u13-f16",
       "fact": {
         "tr": "Gaz taneciklerinin öz hacmi yüksek basınç altında ihmal edilemez büyüklüğe ulaşır.",
-        "en": "The specific volume of gas particles reaches a non-negligible size under high pressure.",
-        "de": "Unter hohem Druck erreicht das spezifische Volumen der Gaspartikel eine nicht vernachlässigbare Größe.",
-        "fr": "Le volume spécifique des particules de gaz atteint une taille non négligeable sous haute pression.",
-        "ru": "Удельный объем частиц газа достигает немаловажных размеров под высоким давлением.",
-        "ar": "يصل الحجم النوعي لجزيئات الغاز إلى حجم غير مهم تحت الضغط العالي.",
-        "zh": "气体颗粒的比体积在高压下达到不可忽略的尺寸。",
-        "ku": "Hêjmara taybetî ya pariyên gazê di bin tansiyona bilind de digihîje mezinahiyek ne-hesab."
+        "en": "Under high pressure, the own volume of gas particles becomes non-negligible.",
+        "de": "Unter hohem Druck wird das Eigenvolumen der Gasteilchen nicht mehr vernachlässigbar.",
+        "fr": "Sous haute pression, le volume propre des particules de gaz n'est plus négligeable.",
+        "ru": "При высоком давлении собственным объёмом частиц газа уже нельзя пренебречь.",
+        "ar": "تحت الضغط المرتفع يصبح الحجم الذاتي لجسيمات الغاز غير قابل للإهمال.",
+        "zh": "在高压下，气体粒子自身的体积变得不可忽略。",
+        "ku": "Di bin zexta bilind de qebareya xwe ya perçeyên gazê êdî nayê paşguhkirin."
       },
       "trap": {
         "tr": "Yüksek basınç altında gaz taneciklerinin hacmi tamamen yok olur.",
@@ -441,13 +441,13 @@ export const unit13: ChemistryUnitSeedData = {
       },
       "distinction": {
         "tr": "İdeal gazda tanecik hacmi sıfır ve çekim yok kabul edilir; gerçek gazda öz hacim ve çekim kuvveti vardır.",
-        "en": "In an ideal gas, the particle volume is assumed to be zero and there is no gravity; In real gas, there is specific volume and gravitational force.",
-        "de": "In einem idealen Gas wird angenommen, dass das Partikelvolumen Null ist und es keine Schwerkraft gibt; In echtem Gas gibt es ein spezifisches Volumen und eine spezifische Gravitationskraft.",
-        "fr": "Dans un gaz parfait, le volume des particules est supposé nul et il n’y a pas de gravité ; Dans le gaz réel, il existe un volume spécifique et une force gravitationnelle.",
-        "ru": "В идеальном газе объем частицы предполагается равным нулю и гравитация отсутствует; В реальном газе есть удельный объем и гравитационная сила.",
-        "ar": "في الغاز المثالي، يفترض أن يكون حجم الجسيم صفرًا ولا توجد جاذبية؛ في الغاز الحقيقي، هناك حجم محدد وقوة جاذبية.",
-        "zh": "在理想气体中，假设粒子体积为零并且没有重力；在真实气体中，存在比体积和重力。",
-        "ku": "Di gazek îdeal de, qebareya parçikê wekî sifir tê hesibandin û gravîtî tune; Di gaza rastîn de, hêjmarek taybetî û hêza gravîtasyonê heye."
+        "en": "In an ideal gas, particle volume is taken as zero and there is no attraction; in a real gas, particles have their own volume and attractive forces.",
+        "de": "Beim idealen Gas werden ein Teilchenvolumen von null und keine Anziehung angenommen; beim realen Gas gibt es Eigenvolumen und Anziehungskräfte.",
+        "fr": "Dans un gaz parfait, le volume des particules est supposé nul et il n'y a pas d'attraction ; dans un gaz réel, il existe un volume propre et des forces d'attraction.",
+        "ru": "В идеальном газе объём частиц принимается равным нулю и притяжения нет; в реальном газе есть собственный объём частиц и силы притяжения.",
+        "ar": "في الغاز المثالي يُفترض أن حجم الجسيمات صفر ولا يوجد تجاذب؛ أما في الغاز الحقيقي فللجسيمات حجم ذاتي وتوجد قوى تجاذب.",
+        "zh": "理想气体中假定粒子体积为零且粒子间无引力；真实气体中粒子有自身体积并存在引力。",
+        "ku": "Di gaza îdeal de qebareya perçeyan sifir û kişandin tune tê qebûlkirin; di gaza rastîn de qebareya xwe û hêza kişandinê heye."
       }
     },
     {
@@ -519,34 +519,34 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-c04",
       "conceptA": {
-        "tr": "Gerçek Gaz",
-        "en": "Real Gas",
-        "de": "Echtes Gas",
-        "fr": "Gaz réel",
-        "ru": "Реальный газ",
-        "ar": "الغاز الحقيقي",
-        "zh": "真实气体",
-        "ku": "Gaza Rastî"
+        "tr": "Difüzyon",
+        "en": "Diffusion",
+        "de": "Diffusion",
+        "fr": "Diffusion",
+        "ru": "Диффузия",
+        "ar": "الانتشار",
+        "zh": "扩散",
+        "ku": "Belavbûn (difûzyon)"
       },
       "conceptB": {
-        "tr": "İdeal Gaz",
-        "en": "Ideal Gas",
-        "de": "Ideales Gas",
-        "fr": "Gaz parfait",
-        "ru": "Идеальный газ",
-        "ar": "الغاز المثالي",
-        "zh": "理想气体",
-        "ku": "Gaza Îdeal"
+        "tr": "Efüzyon",
+        "en": "Effusion",
+        "de": "Effusion",
+        "fr": "Effusion",
+        "ru": "Эффузия",
+        "ar": "الانصباب",
+        "zh": "泻流",
+        "ku": "Efûzyon"
       },
       "distinction": {
-        "tr": "İdeal gazda tanecik hacmi ve çekim kuvveti sıfırdır; gerçek gazlarda moleküller arası çekim basıncı idealden daha düşük yapar.",
-        "en": "In an ideal gas, particle volume and gravitational force are zero; In real gases, intermolecular attraction makes the pressure lower than ideal.",
-        "de": "In einem idealen Gas sind Partikelvolumen und Gravitationskraft Null; In realen Gasen führt die intermolekulare Anziehung dazu, dass der Druck unter dem Idealwert liegt.",
-        "fr": "Dans un gaz parfait, le volume des particules et la force gravitationnelle sont nuls ; Dans les gaz réels, l’attraction intermoléculaire rend la pression inférieure à la pression idéale.",
-        "ru": "В идеальном газе объем частицы и сила гравитации равны нулю; В реальных газах межмолекулярное притяжение делает давление ниже идеального.",
-        "ar": "في الغاز المثالي، يكون حجم الجسيمات وقوة الجاذبية صفرًا؛ في الغازات الحقيقية، يؤدي التجاذب بين الجزيئات إلى انخفاض الضغط عن المستوى المثالي.",
-        "zh": "在理想气体中，粒子体积和重力为零；在实际气体中，分子间吸引力使压力低于理想压力。",
-        "ku": "Di gazek îdeal de, qebareya parçik û hêza gravîtasyonê sifir e; Di gazên rastîn de, kişandina navmolekularî zextê ji îdeal kêmtir dike."
+        "tr": "Difüzyon, gaz taneciklerinin başka bir gaz ortamında yayılarak karışmasıdır; efüzyon ise gaz taneciklerinin küçük bir delikten boşluğa (vakuma) kaçmasıdır.",
+        "en": "Diffusion is the spreading and mixing of gas particles through another gas; effusion is the escape of gas particles through a small hole into a vacuum.",
+        "de": "Diffusion ist das Ausbreiten und Vermischen von Gasteilchen in einem anderen Gas; Effusion ist das Entweichen von Gasteilchen durch eine kleine Öffnung ins Vakuum.",
+        "fr": "La diffusion est la propagation et le mélange des particules d'un gaz dans un autre gaz ; l'effusion est la fuite de particules de gaz par un petit orifice vers le vide.",
+        "ru": "Диффузия — распространение и смешивание частиц газа в среде другого газа; эффузия — вытекание частиц газа через маленькое отверстие в вакуум.",
+        "ar": "الانتشار هو تفرّق جسيمات الغاز واختلاطها داخل غاز آخر؛ أما الانصباب فهو خروج جسيمات الغاز عبر ثقب صغير إلى فراغ.",
+        "zh": "扩散是气体粒子在另一种气体中散开并混合；泻流是气体粒子通过小孔逸入真空。",
+        "ku": "Belavbûn belavbûn û tevlihevbûna perçeyên gazê di nav gazeke din de ye; efûzyon reva perçeyên gazê ji qulikeke biçûk ber bi valahiyê (vakûmê) ye."
       }
     },
     {
@@ -671,14 +671,14 @@ export const unit13: ChemistryUnitSeedData = {
         "ku": "Zexta Krîtîk"
       },
       "distinction": {
-        "tr": "İdeal gazda Z = 1'dir; gerçek gazlarda Z 1'den sapar ve kritik basınçta sıvı-buhar faz sınırı kaybolur.",
-        "en": "In an ideal gas, Z = 1; In real gases, Z deviates from 1 and the liquid-vapor phase boundary disappears at the critical pressure.",
-        "de": "In einem idealen Gas ist Z = 1; In realen Gasen weicht Z von 1 ab und die Flüssigkeits-Dampf-Phasengrenze verschwindet beim kritischen Druck.",
-        "fr": "Dans un gaz parfait, Z = 1 ; Dans les gaz réels, Z s'écarte de 1 et la limite de phase liquide-vapeur disparaît à la pression critique.",
-        "ru": "В идеальном газе Z = 1; В реальных газах Z отклоняется от 1 и граница фаз жидкость-пар исчезает при критическом давлении.",
-        "ar": "في الغاز المثالي، Z = 1؛ في الغازات الحقيقية، ينحرف Z عن 1 ويختفي حد طور البخار السائل عند الضغط الحرج.",
-        "zh": "在理想气体中，Z = 1；在实际气体中，Z 偏离 1，并且液-汽相界在临界压力下消失。",
-        "ku": "Di gazek îdeal de, Z = 1; Di gazên rastîn de, Z ji 1-ê vediqete û sînorê qonaxa şil-buharê di zexta krîtîk de winda dibe."
+        "tr": "İdeal gazda Z = 1'dir, gerçek gazlarda Z 1'den sapar; kritik basınç ise bir gazı kritik sıcaklığında sıvılaştırmak için gereken en düşük basınçtır.",
+        "en": "For an ideal gas Z = 1, while for real gases Z deviates from 1; critical pressure is the minimum pressure needed to liquefy a gas at its critical temperature.",
+        "de": "Für ein ideales Gas ist Z = 1, bei realen Gasen weicht Z von 1 ab; der kritische Druck ist der Mindestdruck, der zur Verflüssigung eines Gases bei seiner kritischen Temperatur nötig ist.",
+        "fr": "Pour un gaz parfait Z = 1, pour les gaz réels Z s'écarte de 1 ; la pression critique est la pression minimale nécessaire pour liquéfier un gaz à sa température critique.",
+        "ru": "Для идеального газа Z = 1, у реальных газов Z отклоняется от 1; критическое давление — минимальное давление, необходимое для сжижения газа при его критической температуре.",
+        "ar": "في الغاز المثالي Z = 1، وفي الغازات الحقيقية ينحرف Z عن 1؛ أما الضغط الحرج فهو أقل ضغط لازم لتسييل الغاز عند درجة حرارته الحرجة.",
+        "zh": "理想气体 Z = 1，真实气体的 Z 偏离 1；临界压强是在临界温度下使气体液化所需的最低压强。",
+        "ku": "Di gaza îdeal de Z = 1 e, di gazên rastîn de Z ji 1 dûr dikeve; zexta krîtîk zexta herî kêm e ku ji bo şilkirina gazê di germahiya wê ya krîtîk de pêwîst e."
       }
     }
   ],
@@ -882,14 +882,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Gaz ji nişkê ve di nav qulikek piçûk de berbi zexta nizm ve tê berfireh kirin"
         },
         {
-          "tr": "Moleküller arası çekimi yenmek için öz ısı enerjisi harcanır",
-          "en": "Specific heat energy is consumed to overcome intermolecular attraction.",
-          "de": "Um die intermolekulare Anziehung zu überwinden, wird spezifische Wärmeenergie verbraucht.",
-          "fr": "L'énergie thermique spécifique est consommée pour vaincre l'attraction intermoléculaire.",
-          "ru": "Удельная тепловая энергия расходуется на преодоление межмолекулярного притяжения.",
-          "ar": "يتم استهلاك طاقة حرارية محددة للتغلب على التجاذب بين الجزيئات.",
-          "zh": "消耗比热能来克服分子间吸引力。",
-          "ku": "Enerjiya germê ya taybetî tê xerc kirin da ku balkişandina navmolekularî têk bibe."
+          "tr": "Moleküller arası çekimi yenmek için gaz kendi kinetik enerjisini harcar",
+          "en": "The gas uses up its own kinetic energy to overcome intermolecular attraction",
+          "de": "Das Gas verbraucht eigene kinetische Energie, um die zwischenmolekulare Anziehung zu überwinden",
+          "fr": "Le gaz consomme sa propre énergie cinétique pour vaincre l'attraction intermoléculaire",
+          "ru": "Газ расходует собственную кинетическую энергию на преодоление межмолекулярного притяжения",
+          "ar": "يستهلك الغاز جزءًا من طاقته الحركية للتغلب على التجاذب بين الجزيئات",
+          "zh": "气体消耗自身动能以克服分子间引力",
+          "ku": "Gaz ji bo derbaskirina kişandina navmolekulî enerjiya xwe ya kînetîk xerc dike"
         },
         {
           "tr": "Gazın sıcaklığı aniden düşerek soğur",
@@ -919,8 +919,8 @@ export const unit13: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "66.7 cm",
-          "en": "66.7cm",
+          "tr": "66,7 cm",
+          "en": "66.7 cm",
           "de": "66,7 cm",
           "fr": "66,7 cm",
           "ru": "66,7 см",
@@ -929,28 +929,28 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "66,7 cm"
         },
         {
-          "tr": "50.0 cm",
-          "en": "50.0cm",
+          "tr": "50,0 cm",
+          "en": "50.0 cm",
           "de": "50,0 cm",
           "fr": "50,0 cm",
           "ru": "50,0 см",
           "ar": "50.0 سم",
           "zh": "50.0厘米",
-          "ku": "50.0 cm"
+          "ku": "50,0 cm"
         },
         {
-          "tr": "80.0 cm",
-          "en": "80.0cm",
+          "tr": "80,0 cm",
+          "en": "80.0 cm",
           "de": "80,0 cm",
           "fr": "80,0 cm",
           "ru": "80,0 см",
           "ar": "80.0 سم",
           "zh": "80.0厘米",
-          "ku": "80.0cm"
+          "ku": "80,0 cm"
         },
         {
-          "tr": "33.3 cm",
-          "en": "33.3cm",
+          "tr": "33,3 cm",
+          "en": "33.3 cm",
           "de": "33,3 cm",
           "fr": "33,3 cm",
           "ru": "33,3 см",
@@ -959,25 +959,25 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "33,3 cm"
         },
         {
-          "tr": "25.0 cm",
-          "en": "25.0cm",
+          "tr": "25,0 cm",
+          "en": "25.0 cm",
           "de": "25,0 cm",
           "fr": "25,0 cm",
           "ru": "25,0 см",
           "ar": "25.0 سم",
           "zh": "25.0厘米",
-          "ku": "25.0cm"
+          "ku": "25,0 cm"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. CH4 2x yol alırken SO2 x yol alır. 3x = 100 cm -> x = 33.3 cm. CH4 ucundan 2x = 66.7 cm uzakta karşılaşırlar.",
+        "tr": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. CH4 2x yol alırken SO2 x yol alır. 3x = 100 cm -> x = 33,3 cm. CH4 ucundan 2x = 66,7 cm uzakta karşılaşırlar.",
         "en": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. While CH4 travels 2x, SO2 travels x. 3x = 100 cm -> x = 33.3 cm. They meet at a distance of 2x = 66.7 cm from the CH4 tip.",
         "de": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Während CH4 2x wandert, wandert SO2 x. 3x = 100 cm -> x = 33,3 cm. Sie treffen sich im Abstand von 2x = 66,7 cm von der CH4-Spitze.",
         "fr": "v(CH4)/v(SO2) = carré(64/16) = 2/1. Alors que CH4 voyage 2x, SO2 voyage x. 3x = 100 cm -> x = 33,3 cm. Ils se rejoignent à une distance de 2x = 66,7 cm de la pointe CH4.",
         "ru": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. В то время как CH4 проходит 2x, SO2 проходит x. 3х = 100 см -> х = 33,3 см. Они встречаются на расстоянии 2х = 66,7 см от вершины СН4.",
         "ar": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. في حين أن CH4 يسافر 2x، فإن SO2 يسافر x. 3س = 100 سم -> س = 33.3 سم. يلتقيان على مسافة 2x = 66.7 سم من طرف CH4.",
-        "zh": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1。当 CH4 传播 2 次时，SO2 传播 x 次。 3x = 100 厘米 -> x = 33.3 厘米。它们在距离 CH4 尖端 2x = 66.7 cm 处相遇。",
+        "zh": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1。相同时间内 CH4 走 2x，SO2 走 x。3x = 100 cm -> x = 33.3 cm。两者在距 CH4 端 2x = 66.7 cm 处相遇。",
         "ku": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Dema ku CH4 2x digere, SO2 x digere. 3x = 100 cm -> x = 33,3 cm. Ew li dûrahiya 2x = 66,7 cm ji tîpa CH4 têne hev."
       }
     },
@@ -997,12 +997,12 @@ export const unit13: ChemistryUnitSeedData = {
         {
           "tr": "He basıncı 2 katına çıkar, suyun buhar basıncı değişmez",
           "en": "He pressure doubles, vapor pressure of water does not change",
-          "de": "Der Druck verdoppelt sich, der Dampfdruck des Wassers ändert sich nicht",
-          "fr": "La pression double, la pression de vapeur de l'eau ne change pas",
-          "ru": "Давление увеличивается в два раза, давление пара воды не меняется.",
-          "ar": "يتضاعف الضغط، ولا يتغير ضغط بخار الماء",
-          "zh": "压力加倍，水的蒸气压不变",
-          "ku": "Zexta wî du qat dibe, tansiyona buharê ya avê naguhere"
+          "de": "Der He-Druck verdoppelt sich, der Dampfdruck des Wassers ändert sich nicht",
+          "fr": "La pression de He double, la pression de vapeur de l'eau ne change pas",
+          "ru": "Давление He увеличивается в два раза, давление пара воды не меняется",
+          "ar": "يتضاعف ضغط He، ولا يتغير ضغط بخار الماء",
+          "zh": "He的压强加倍，水的蒸气压不变",
+          "ku": "Zexta He du qat dibe, zexta buhara avê naguhere"
         },
         {
           "tr": "Her ikisi de 2 katına çıkar",
@@ -1027,22 +1027,22 @@ export const unit13: ChemistryUnitSeedData = {
         {
           "tr": "He basıncı değişmez, su buhar basıncı artar",
           "en": "He pressure does not change, water vapor pressure increases",
-          "de": "Der Druck ändert sich nicht, der Wasserdampfdruck steigt",
-          "fr": "La pression ne change pas, la pression de la vapeur d'eau augmente",
-          "ru": "Давление не меняется, давление водяного пара увеличивается",
-          "ar": "لا يتغير الضغط، ويزداد ضغط بخار الماء",
+          "de": "Der He-Druck ändert sich nicht, der Wasserdampfdruck steigt",
+          "fr": "La pression de He ne change pas, la pression de vapeur de l'eau augmente",
+          "ru": "Давление He не меняется, давление водяного пара увеличивается",
+          "ar": "لا يتغير ضغط He، ويزداد ضغط بخار الماء",
           "zh": "He压力不变，水蒸气压增加",
-          "ku": "Zexta wî naguhere, tansiyona buhara avê zêde dibe"
+          "ku": "Zexta He naguhere, zexta buhara avê zêde dibe"
         },
         {
           "tr": "He basıncı 4 katına çıkar, su buhar basıncı azalır",
           "en": "He pressure increases 4 times, water vapor pressure decreases",
-          "de": "Der Druck erhöht sich um das Vierfache, der Wasserdampfdruck nimmt ab",
-          "fr": "La pression augmente 4 fois, la pression de la vapeur d'eau diminue",
-          "ru": "Давление увеличивается в 4 раза, давление водяного пара уменьшается",
-          "ar": "يزداد الضغط 4 مرات، وينخفض ضغط بخار الماء",
+          "de": "Der He-Druck vervierfacht sich, der Wasserdampfdruck nimmt ab",
+          "fr": "La pression de He est multipliée par 4, la pression de vapeur de l'eau diminue",
+          "ru": "Давление He увеличивается в 4 раза, давление водяного пара уменьшается",
+          "ar": "يزداد ضغط He أربع مرات، وينخفض ضغط بخار الماء",
           "zh": "He压力增加4倍，水蒸气压力降低",
-          "ku": "Zexta wî 4 qat zêde dibe, tansiyona buxara avê kêm dibe"
+          "ku": "Zexta He 4 qat dibe, zexta buhara avê kêm dibe"
         }
       ],
       "correctIndex": 0,
@@ -1167,22 +1167,22 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Zexta buhara avê ji tansiyona gaza ku li jora avê hatiye berhevkirin nayê kêmkirin."
         },
         {
-          "tr": "CH4 gazı SO2'den 4 kat daha hızlı hareket eder.",
-          "en": "CH4 gas moves 4 times faster than SO2.",
-          "de": "CH4-Gas bewegt sich viermal schneller als SO2.",
-          "fr": "Le gaz CH4 se déplace 4 fois plus vite que le SO2.",
-          "ru": "Газ CH4 движется в 4 раза быстрее, чем SO2.",
-          "ar": "يتحرك غاز CH4 أسرع بأربع مرات من ثاني أكسيد الكبريت.",
-          "zh": "CH4 气体的移动速度比 SO2 快 4 倍。",
-          "ku": "Gaza CH4 ji SO2 4 caran zûtir dimeşe."
+          "tr": "Aynı sıcaklıkta CH4 gazı SO2 gazından 4 kat daha hızlı difüzlenir.",
+          "en": "At the same temperature, CH4 gas diffuses 4 times faster than SO2 gas.",
+          "de": "Bei gleicher Temperatur diffundiert CH4-Gas 4-mal schneller als SO2-Gas.",
+          "fr": "À la même température, le gaz CH4 diffuse 4 fois plus vite que le gaz SO2.",
+          "ru": "При одинаковой температуре газ CH4 диффундирует в 4 раза быстрее, чем газ SO2.",
+          "ar": "عند درجة الحرارة نفسها، ينتشر غاز CH4 أسرع بـ 4 مرات من غاز SO2.",
+          "zh": "相同温度下，CH4气体的扩散速率是SO2气体的4倍。",
+          "ku": "Di heman germahiyê de gaza CH4 4 qat ji gaza SO2 zûtir belav dibe."
         },
         {
           "tr": "Gazların ortalama kinetik enerjisi (Ek = 3/2 kT) YALNIZCA mutlak sıcaklığa bağlıdır; gazın türünden bağımsızdır.",
           "en": "The average kinetic energy of gases (Ek = 3/2 kT) depends ONLY on absolute temperature; is independent of the type of gas.",
           "de": "Die durchschnittliche kinetische Energie von Gasen (Ek = 3/2 kT) hängt NUR von der absoluten Temperatur ab; ist unabhängig von der Gasart.",
           "fr": "L'énergie cinétique moyenne des gaz (Ek = 3/2 kT) dépend UNIQUEMENT de la température absolue ; est indépendant du type de gaz.",
-          "ru": "Средняя кинетическая энергия газов (Ек = 3/2 кТл) зависит ТОЛЬКО от абсолютной температуры; не зависит от типа газа.",
-          "ar": "متوسط ​​الطاقة الحركية للغازات (Ek = 3/2 كيلو طن) يعتمد فقط على درجة الحرارة المطلقة؛ لا يعتمد على نوع الغاز .",
+          "ru": "Средняя кинетическая энергия газов (Ek = 3/2 kT) зависит ТОЛЬКО от абсолютной температуры; она не зависит от природы газа.",
+          "ar": "متوسط الطاقة الحركية للغازات (Ek = 3/2 kT) يعتمد فقط على درجة الحرارة المطلقة؛ ولا يعتمد على نوع الغاز.",
           "zh": "气体的平均动能 (Ek = 3/2 kT) 仅取决于绝对温度；与气体类型无关。",
           "ku": "Enerjiya kînetîk a navîn a gazan (Ek = 3/2 kT) TENÊ bi germahiya mutleq ve girêdayî ye; ji cureyê gazê serbixwe ye."
         },
@@ -1203,8 +1203,8 @@ export const unit13: ChemistryUnitSeedData = {
         "en": "The correct statement is: \"The average kinetic energy of gases (Ek = 3/2 kT) depends ONLY on absolute temperature; is independent of the type of gas.\". The average kinetic energy of all gases at the same temperature is equal!",
         "de": "Die zutreffende Aussage lautet: \"Die durchschnittliche kinetische Energie von Gasen (Ek = 3/2 kT) hängt NUR von der absoluten Temperatur ab; ist unabhängig von der Gasart.\". Die durchschnittliche kinetische Energie aller Gase bei gleicher Temperatur ist gleich!",
         "fr": "L'affirmation exacte est: \"L'énergie cinétique moyenne des gaz (Ek = 3/2 kT) dépend UNIQUEMENT de la température absolue ; est indépendant du type de gaz.\". L'énergie cinétique moyenne de tous les gaz à la même température est égale !",
-        "ru": "Правильное утверждение: «Средняя кинетическая энергия газов (Ек = 3/2 кТл) зависит ТОЛЬКО от абсолютной температуры; не зависит от типа газа.». Средняя кинетическая энергия всех газов при одинаковой температуре одинакова!",
-        "ar": "العبارة الصحيحة هي: \"متوسط ​​الطاقة الحركية للغازات (Ek = 3/2 كيلو طن) يعتمد فقط على درجة الحرارة المطلقة؛ لا يعتمد على نوع الغاز .\". متوسط ​​الطاقة الحركية لجميع الغازات عند نفس درجة الحرارة متساوي!",
+        "ru": "Правильное утверждение: «Средняя кинетическая энергия газов (Ek = 3/2 kT) зависит ТОЛЬКО от абсолютной температуры; она не зависит от природы газа.». Средняя кинетическая энергия всех газов при одинаковой температуре одинакова!",
+        "ar": "العبارة الصحيحة هي: \"متوسط الطاقة الحركية للغازات (Ek = 3/2 kT) يعتمد فقط على درجة الحرارة المطلقة؛ ولا يعتمد على نوع الغاز.\". متوسط ​​الطاقة الحركية لجميع الغازات عند نفس درجة الحرارة متساوي!",
         "zh": "正确表述为：“气体的平均动能 (Ek = 3/2 kT) 仅取决于绝对温度；与气体类型无关。”。相同温度下所有气体的平均动能相等！",
         "ku": "Gotina rast ev e: \"Enerjiya kînetîk a navîn a gazan (Ek = 3/2 kT) TENÊ bi germahiya mutleq ve girêdayî ye; ji cureyê gazê serbixwe ye.\". Enerjiya kînetîk a navînî ya hemî gazên di heman germahiyê de wekhev e!"
       }
@@ -1243,14 +1243,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Dema ku piston bi jor ve tê kişandin û hêjmar zêde dibe, zexta buharê ya avê nîvî dibe."
         },
         {
-          "tr": "Effüzyon iki gazın birbiri içinde karışmasıdır.",
+          "tr": "Efüzyon iki gazın birbiri içinde karışmasıdır.",
           "en": "Effusion is the mixing of two gases with each other.",
           "de": "Unter Effusion versteht man die Vermischung zweier Gase miteinander.",
-          "fr": "L'épanchement est le mélange de deux gaz entre eux.",
+          "fr": "L'effusion est le mélange de deux gaz l'un dans l'autre.",
           "ru": "Эффузия – это смешение двух газов друг с другом.",
           "ar": "الانصباب هو اختلاط غازين مع بعضهما البعض.",
-          "zh": "逸出是两种气体相互混合。",
-          "ku": "Efusion tevlîhevkirina du gazan bi hev re ye."
+          "zh": "泻流是两种气体相互混合的过程。",
+          "ku": "Efûzyon tevlihevbûna du gazan di nav hev de ye."
         },
         {
           "tr": "Mol kütlesi büyük olan gazlar daha hızlı difüzlenir.",
@@ -1264,25 +1264,25 @@ export const unit13: ChemistryUnitSeedData = {
         },
         {
           "tr": "Yüksek sıcaklık, düşük basınç ve küçük mol kütlesi (zayıf çekim) gazları idealliğe yaklaştırır.",
-          "en": "High temperature, low pressure and small molar mass (weak gravity) bring gases closer to ideality.",
-          "de": "Hohe Temperaturen, niedriger Druck und kleine Molmassen (schwache Schwerkraft) bringen Gase näher an den Idealzustand.",
-          "fr": "Une température élevée, une basse pression et une petite masse molaire (faible gravité) rapprochent les gaz de l'idéalité.",
-          "ru": "Высокая температура, низкое давление и малая молярная масса (слабая гравитация) приближают газы к идеальности.",
-          "ar": "درجة الحرارة المرتفعة والضغط المنخفض والكتلة المولية الصغيرة (الجاذبية الضعيفة) تجعل الغازات أقرب إلى المثالية.",
-          "zh": "高温、低压和小摩尔质量（弱重力）使气体更接近理想状态。",
-          "ku": "Germahiya bilind, tansiyona nizm û girseya molarê ya piçûk (gravîta qels) gazan nêzî îdealîteyê dike."
+          "en": "High temperature, low pressure and small molar mass (weak intermolecular attraction) bring gases closer to ideal behavior.",
+          "de": "Hohe Temperatur, niedriger Druck und kleine Molmasse (schwache zwischenmolekulare Anziehung) bringen Gase dem idealen Verhalten näher.",
+          "fr": "Une température élevée, une basse pression et une petite masse molaire (faible attraction intermoléculaire) rapprochent les gaz du comportement idéal.",
+          "ru": "Высокая температура, низкое давление и малая молярная масса (слабое межмолекулярное притяжение) приближают поведение газов к идеальному.",
+          "ar": "درجة الحرارة المرتفعة والضغط المنخفض والكتلة المولية الصغيرة (تجاذب ضعيف بين الجزيئات) تقرّب الغازات من السلوك المثالي.",
+          "zh": "高温、低压和较小的摩尔质量（分子间引力弱）使气体更接近理想气体行为。",
+          "ku": "Germahiya bilind, zexta nizm û girseya molar a biçûk (kişandina navmolekulî ya qels) gazan nêzîkî tevgera îdeal dikin."
         }
       ],
       "correctIndex": 4,
       "explanation": {
         "tr": "Doğru cevap \"Yüksek sıcaklık, düşük basınç ve küçük mol kütlesi (zayıf çekim) gazları idealliğe yaklaştırır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"High temperature, low pressure and small molar mass (weak gravity) bring gases closer to ideality.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Hohe Temperaturen, niedriger Druck und kleine Molmassen (schwache Schwerkraft) bringen Gase näher an den Idealzustand.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Une température élevée, une basse pression et une petite masse molaire (faible gravité) rapprochent les gaz de l'idéalité.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Высокая температура, низкое давление и малая молярная масса (слабая гравитация) приближают газы к идеальности.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"درجة الحرارة المرتفعة والضغط المنخفض والكتلة المولية الصغيرة (الجاذبية الضعيفة) تجعل الغازات أقرب إلى المثالية.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“高温、低压和小摩尔质量（弱重力）使气体更接近理想状态。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Germahiya bilind, tansiyona nizm û girseya molarê ya piçûk (gravîta qels) gazan nêzî îdealîteyê dike.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"High temperature, low pressure and small molar mass (weak intermolecular attraction) bring gases closer to ideal behavior.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Hohe Temperatur, niedriger Druck und kleine Molmasse (schwache zwischenmolekulare Anziehung) bringen Gase dem idealen Verhalten näher.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Une température élevée, une basse pression et une petite masse molaire (faible attraction intermoléculaire) rapprochent les gaz du comportement idéal.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Высокая температура, низкое давление и малая молярная масса (слабое межмолекулярное притяжение) приближают поведение газов к идеальному.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"درجة الحرارة المرتفعة والضغط المنخفض والكتلة المولية الصغيرة (تجاذب ضعيف بين الجزيئات) تقرّب الغازات من السلوك المثالي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“高温、低压和较小的摩尔质量（分子间引力弱）使气体更接近理想气体行为。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Germahiya bilind, zexta nizm û girseya molar a biçûk (kişandina navmolekulî ya qels) gazan nêzîkî tevgera îdeal dikin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1300,13 +1300,13 @@ export const unit13: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Gerçek gaz molekülleri arasında çekim kuvveti vardır ve öz hacimleri sıfır değildir.",
-          "en": "There is a force of attraction between real gas molecules and their specific volumes are not zero.",
-          "de": "Zwischen realen Gasmolekülen besteht eine Anziehungskraft und ihr spezifisches Volumen ist nicht Null.",
-          "fr": "Il existe une force d’attraction entre les molécules de gaz réelles et leurs volumes spécifiques ne sont pas nuls.",
-          "ru": "Между реальными молекулами газа существует сила притяжения, и их удельные объемы не равны нулю.",
-          "ar": "توجد قوة تجاذب بين جزيئات الغاز الحقيقية وحجمها النوعي ليس صفرًا.",
-          "zh": "真实气体分子之间存在吸引力，其比体积不为零。",
-          "ku": "Di navbera molekulên gazê yên resen de hêzek kêşanê heye û cildên wan ên taybetî ne sifir in."
+          "en": "Real gas molecules attract each other, and their own volumes are not zero.",
+          "de": "Zwischen den Molekülen realer Gase wirken Anziehungskräfte, und ihr Eigenvolumen ist nicht null.",
+          "fr": "Les molécules d'un gaz réel s'attirent mutuellement et leur volume propre n'est pas nul.",
+          "ru": "Между молекулами реального газа действуют силы притяжения, и их собственный объём не равен нулю.",
+          "ar": "توجد قوى تجاذب بين جزيئات الغاز الحقيقي، وحجمها الذاتي لا يساوي صفرًا.",
+          "zh": "真实气体分子之间存在引力，且分子自身体积不为零。",
+          "ku": "Di navbera molekulên gaza rastîn de hêza kişandinê heye û qebareya wan a xwe ne sifir e."
         },
         {
           "tr": "Buhar ve gaz kavramları bilimsel olarak birebir aynıdır.",
@@ -1339,26 +1339,26 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Di hemî gazên rastîn de, nirxa Z her gav bi 1 re ye."
         },
         {
-          "tr": "Sıcaklık 4 katına çıkarsa difüzyon hızı 4 katına çıkar.",
-          "en": "If the temperature increases by 4 times, the diffusion rate increases by 4 times.",
-          "de": "Bei einer Temperaturerhöhung um das Vierfache erhöht sich die Diffusionsgeschwindigkeit um das Vierfache.",
-          "fr": "Si la température augmente de 4 fois, le taux de diffusion augmente de 4 fois.",
-          "ru": "Если температура увеличится в 4 раза, скорость диффузии увеличится в 4 раза.",
-          "ar": "إذا زادت درجة الحرارة بمقدار 4 مرات، يزيد معدل الانتشار بمقدار 4 مرات.",
-          "zh": "如果温度增加4倍，扩散速率增加4倍。",
-          "ku": "Ger germahî 4 qat zêde bibe, rêjeya belavbûnê 4 qat zêde dibe."
+          "tr": "Bir gazın mutlak sıcaklığı 4 katına çıkarılırsa difüzyon hızı da 4 katına çıkar.",
+          "en": "If the absolute temperature of a gas is quadrupled, its diffusion rate also quadruples.",
+          "de": "Wird die absolute Temperatur eines Gases vervierfacht, vervierfacht sich auch seine Diffusionsgeschwindigkeit.",
+          "fr": "Si la température absolue d'un gaz est multipliée par 4, sa vitesse de diffusion est aussi multipliée par 4.",
+          "ru": "Если абсолютную температуру газа увеличить в 4 раза, скорость его диффузии тоже увеличится в 4 раза.",
+          "ar": "إذا زادت درجة الحرارة المطلقة لغاز 4 مرات، يزداد معدل انتشاره أيضًا 4 مرات.",
+          "zh": "若气体的绝对温度增大到原来的4倍，其扩散速率也增大到原来的4倍。",
+          "ku": "Ger germahiya mutleq a gazekê 4 qat bibe, leza belavbûna wê jî 4 qat dibe."
         }
       ],
       "correctIndex": 0,
       "explanation": {
         "tr": "Doğru cevap \"Gerçek gaz molekülleri arasında çekim kuvveti vardır ve öz hacimleri sıfır değildir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"There is a force of attraction between real gas molecules and their specific volumes are not zero.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Zwischen realen Gasmolekülen besteht eine Anziehungskraft und ihr spezifisches Volumen ist nicht Null.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Il existe une force d’attraction entre les molécules de gaz réelles et leurs volumes spécifiques ne sont pas nuls.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Между реальными молекулами газа существует сила притяжения, и их удельные объемы не равны нулю.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"توجد قوة تجاذب بين جزيئات الغاز الحقيقية وحجمها النوعي ليس صفرًا.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“真实气体分子之间存在吸引力，其比体积不为零。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di navbera molekulên gazê yên resen de hêzek kêşanê heye û cildên wan ên taybetî ne sifir in.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Real gas molecules attract each other, and their own volumes are not zero.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Zwischen den Molekülen realer Gase wirken Anziehungskräfte, und ihr Eigenvolumen ist nicht null.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les molécules d'un gaz réel s'attirent mutuellement et leur volume propre n'est pas nul.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Между молекулами реального газа действуют силы притяжения, и их собственный объём не равен нулю.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"توجد قوى تجاذب بين جزيئات الغاز الحقيقي، وحجمها الذاتي لا يساوي صفرًا.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“真实气体分子之间存在引力，且分子自身体积不为零。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di navbera molekulên gaza rastîn de hêza kişandinê heye û qebareya wan a xwe ne sifir e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1395,14 +1395,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Bandora Joule-Thomson: Ew sarbûna gaza berbelavkirî ye ku bi vexwarina enerjiya xweya hundurîn (sax û klîma) ve ye."
         },
         {
-          "tr": "CH4 gazı SO2'den 4 kat daha hızlı hareket eder.",
-          "en": "CH4 gas moves 4 times faster than SO2.",
-          "de": "CH4-Gas bewegt sich viermal schneller als SO2.",
-          "fr": "Le gaz CH4 se déplace 4 fois plus vite que le SO2.",
-          "ru": "Газ CH4 движется в 4 раза быстрее, чем SO2.",
-          "ar": "يتحرك غاز CH4 أسرع بأربع مرات من ثاني أكسيد الكبريت.",
-          "zh": "CH4 气体的移动速度比 SO2 快 4 倍。",
-          "ku": "Gaza CH4 ji SO2 4 caran zûtir dimeşe."
+          "tr": "Aynı sıcaklıkta CH4 gazı SO2 gazından 4 kat daha hızlı difüzlenir.",
+          "en": "At the same temperature, CH4 gas diffuses 4 times faster than SO2 gas.",
+          "de": "Bei gleicher Temperatur diffundiert CH4-Gas 4-mal schneller als SO2-Gas.",
+          "fr": "À la même température, le gaz CH4 diffuse 4 fois plus vite que le gaz SO2.",
+          "ru": "При одинаковой температуре газ CH4 диффундирует в 4 раза быстрее, чем газ SO2.",
+          "ar": "عند درجة الحرارة نفسها، ينتشر غاز CH4 أسرع بـ 4 مرات من غاز SO2.",
+          "zh": "相同温度下，CH4气体的扩散速率是SO2气体的4倍。",
+          "ku": "Di heman germahiyê de gaza CH4 4 qat ji gaza SO2 zûtir belav dibe."
         },
         {
           "tr": "Yüksek basınç altında gaz taneciklerinin hacmi tamamen yok olur.",
@@ -1461,14 +1461,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Dema ku piston bi jor ve tê kişandin û hêjmar zêde dibe, zexta buharê ya avê nîvî dibe."
         },
         {
-          "tr": "Effüzyon iki gazın birbiri içinde karışmasıdır.",
+          "tr": "Efüzyon iki gazın birbiri içinde karışmasıdır.",
           "en": "Effusion is the mixing of two gases with each other.",
           "de": "Unter Effusion versteht man die Vermischung zweier Gase miteinander.",
-          "fr": "L'épanchement est le mélange de deux gaz entre eux.",
+          "fr": "L'effusion est le mélange de deux gaz l'un dans l'autre.",
           "ru": "Эффузия – это смешение двух газов друг с другом.",
           "ar": "الانصباب هو اختلاط غازين مع بعضهما البعض.",
-          "zh": "逸出是两种气体相互混合。",
-          "ku": "Efusion tevlîhevkirina du gazan bi hev re ye."
+          "zh": "泻流是两种气体相互混合的过程。",
+          "ku": "Efûzyon tevlihevbûna du gazan di nav hev de ye."
         },
         {
           "tr": "Kritik sıcaklık: Bir gazın basınç uygulanarak sıvılaştırılabileceği en yüksek sıcaklıktır; üzerindeki sıcaklıkta gaz sıvılaştırılamaz.",
@@ -1491,14 +1491,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Gazên bi girseyên molî yên mezintir zûtir belav dibin."
         },
         {
-          "tr": "Aynı sıcaklıktaki CO2 gazının kinetik enerjisi H2 gazınınkinden büyüktür.",
-          "en": "The kinetic energy of CO2 gas at the same temperature is greater than that of H2 gas.",
-          "de": "Die kinetische Energie von CO2-Gas ist bei gleicher Temperatur größer als die von H2-Gas.",
-          "fr": "L’énergie cinétique du gaz CO2 à la même température est supérieure à celle du gaz H2.",
-          "ru": "Кинетическая энергия газа CO2 при той же температуре больше, чем у газа H2.",
-          "ar": "الطاقة الحركية لغاز ثاني أكسيد الكربون عند نفس درجة الحرارة أكبر من طاقة غاز الهيدروجين.",
-          "zh": "相同温度下CO2气体的动能大于H2气体的动能。",
-          "ku": "Enerjiya kinetîk a gaza CO2 di heman germahiyê de ji ya gaza H2 mezintir e."
+          "tr": "Aynı sıcaklıktaki CO2 moleküllerinin ortalama kinetik enerjisi H2 moleküllerininkinden büyüktür.",
+          "en": "At the same temperature, the average kinetic energy of CO2 molecules is greater than that of H2 molecules.",
+          "de": "Bei gleicher Temperatur ist die mittlere kinetische Energie von CO2-Molekülen größer als die von H2-Molekülen.",
+          "fr": "À la même température, l'énergie cinétique moyenne des molécules de CO2 est supérieure à celle des molécules de H2.",
+          "ru": "При одинаковой температуре средняя кинетическая энергия молекул CO2 больше, чем у молекул H2.",
+          "ar": "عند درجة الحرارة نفسها، يكون متوسط الطاقة الحركية لجزيئات CO2 أكبر من متوسط الطاقة الحركية لجزيئات H2.",
+          "zh": "相同温度下，CO2分子的平均动能大于H2分子的平均动能。",
+          "ku": "Di heman germahiyê de, enerjiya kînetîk a navîn a molekulên CO2 ji ya molekulên H2 mezintir e."
         }
       ],
       "correctIndex": 2,
@@ -1547,24 +1547,24 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Di hemî gazên rastîn de, nirxa Z her gav bi 1 re ye."
         },
         {
-          "tr": "Sıcaklık 4 katına çıkarsa difüzyon hızı 4 katına çıkar.",
-          "en": "If the temperature increases by 4 times, the diffusion rate increases by 4 times.",
-          "de": "Bei einer Temperaturerhöhung um das Vierfache erhöht sich die Diffusionsgeschwindigkeit um das Vierfache.",
-          "fr": "Si la température augmente de 4 fois, le taux de diffusion augmente de 4 fois.",
-          "ru": "Если температура увеличится в 4 раза, скорость диффузии увеличится в 4 раза.",
-          "ar": "إذا زادت درجة الحرارة بمقدار 4 مرات، يزيد معدل الانتشار بمقدار 4 مرات.",
-          "zh": "如果温度增加4倍，扩散速率增加4倍。",
-          "ku": "Ger germahî 4 qat zêde bibe, rêjeya belavbûnê 4 qat zêde dibe."
+          "tr": "Bir gazın mutlak sıcaklığı 4 katına çıkarılırsa difüzyon hızı da 4 katına çıkar.",
+          "en": "If the absolute temperature of a gas is quadrupled, its diffusion rate also quadruples.",
+          "de": "Wird die absolute Temperatur eines Gases vervierfacht, vervierfacht sich auch seine Diffusionsgeschwindigkeit.",
+          "fr": "Si la température absolue d'un gaz est multipliée par 4, sa vitesse de diffusion est aussi multipliée par 4.",
+          "ru": "Если абсолютную температуру газа увеличить в 4 раза, скорость его диффузии тоже увеличится в 4 раза.",
+          "ar": "إذا زادت درجة الحرارة المطلقة لغاز 4 مرات، يزداد معدل انتشاره أيضًا 4 مرات.",
+          "zh": "若气体的绝对温度增大到原来的4倍，其扩散速率也增大到原来的4倍。",
+          "ku": "Ger germahiya mutleq a gazekê 4 qat bibe, leza belavbûna wê jî 4 qat dibe."
         },
         {
-          "tr": "Buhar, kritik sıcaklık ile kaynama noktası arasındaki sıkıştırılarak sıvılaşabilen akışkandır.",
-          "en": "Vapor is a fluid that can be liquefied by compression between the critical temperature and the boiling point.",
-          "de": "Dampf ist eine Flüssigkeit, die durch Kompression zwischen der kritischen Temperatur und dem Siedepunkt verflüssigt werden kann.",
-          "fr": "La vapeur est un fluide qui peut être liquéfié par compression entre la température critique et le point d'ébullition.",
-          "ru": "Пар — это жидкость, которую можно сжижать путем сжатия между критической температурой и температурой кипения.",
-          "ar": "البخار هو سائل يمكن تسييله عن طريق الضغط بين درجة الحرارة الحرجة ونقطة الغليان.",
-          "zh": "蒸气是在临界温度和沸点之间通过压缩可以液化的流体。",
-          "ku": "Vapor şilekek e ku dikare bi pêçandina di navbera germahiya krîtîk û xala kelandinê de şil bibe."
+          "tr": "Buhar, bir maddenin kritik sıcaklığının altındaki gaz hâlidir; sabit sıcaklıkta basınç artırılarak sıvılaştırılabilir.",
+          "en": "Vapor is the gaseous state of a substance below its critical temperature; it can be liquefied by increasing the pressure at constant temperature.",
+          "de": "Dampf ist der gasförmige Zustand eines Stoffes unterhalb seiner kritischen Temperatur; er kann bei konstanter Temperatur durch Druckerhöhung verflüssigt werden.",
+          "fr": "La vapeur est l'état gazeux d'une substance en dessous de sa température critique ; elle peut être liquéfiée en augmentant la pression à température constante.",
+          "ru": "Пар — это газообразное состояние вещества ниже его критической температуры; его можно сжижить, повышая давление при постоянной температуре.",
+          "ar": "البخار هو الحالة الغازية للمادة عند درجة حرارة أقل من درجة حرارتها الحرجة؛ ويمكن تسييله بزيادة الضغط عند درجة حرارة ثابتة.",
+          "zh": "蒸气是物质在其临界温度以下的气态；在温度不变时增大压强即可使其液化。",
+          "ku": "Buhar rewşa gazî ya maddeyekê ye di bin germahiya wê ya krîtîk de; di germahiya sabît de bi zêdekirina zextê dikare were şilkirin."
         },
         {
           "tr": "Yüksek basınç ve düşük sıcaklıkta gazlar ideale en yakındır.",
@@ -1579,14 +1579,14 @@ export const unit13: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Buhar, kritik sıcaklık ile kaynama noktası arasındaki sıkıştırılarak sıvılaşabilen akışkandır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Vapor is a fluid that can be liquefied by compression between the critical temperature and the boiling point.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Dampf ist eine Flüssigkeit, die durch Kompression zwischen der kritischen Temperatur und dem Siedepunkt verflüssigt werden kann.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La vapeur est un fluide qui peut être liquéfié par compression entre la température critique et le point d'ébullition.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Пар — это жидкость, которую можно сжижать путем сжатия между критической температурой и температурой кипения.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"البخار هو سائل يمكن تسييله عن طريق الضغط بين درجة الحرارة الحرجة ونقطة الغليان.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“蒸气是在临界温度和沸点之间通过压缩可以液化的流体。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Vapor şilekek e ku dikare bi pêçandina di navbera germahiya krîtîk û xala kelandinê de şil bibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Buhar, bir maddenin kritik sıcaklığının altındaki gaz hâlidir; sabit sıcaklıkta basınç artırılarak sıvılaştırılabilir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Vapor is the gaseous state of a substance below its critical temperature; it can be liquefied by increasing the pressure at constant temperature.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Dampf ist der gasförmige Zustand eines Stoffes unterhalb seiner kritischen Temperatur; er kann bei konstanter Temperatur durch Druckerhöhung verflüssigt werden.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"La vapeur est l'état gazeux d'une substance en dessous de sa température critique ; elle peut être liquéfiée en augmentant la pression à température constante.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Пар — это газообразное состояние вещества ниже его критической температуры; его можно сжижить, повышая давление при постоянной температуре.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"البخار هو الحالة الغازية للمادة عند درجة حرارة أقل من درجة حرارتها الحرجة؛ ويمكن تسييله بزيادة الضغط عند درجة حرارة ثابتة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“蒸气是物质在其临界温度以下的气态；在温度不变时增大压强即可使其液化。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Buhar rewşa gazî ya maddeyekê ye di bin germahiya wê ya krîtîk de; di germahiya sabît de bi zêdekirina zextê dikare were şilkirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1603,14 +1603,14 @@ export const unit13: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "CH4 gazı SO2'den 4 kat daha hızlı hareket eder.",
-          "en": "CH4 gas moves 4 times faster than SO2.",
-          "de": "CH4-Gas bewegt sich viermal schneller als SO2.",
-          "fr": "Le gaz CH4 se déplace 4 fois plus vite que le SO2.",
-          "ru": "Газ CH4 движется в 4 раза быстрее, чем SO2.",
-          "ar": "يتحرك غاز CH4 أسرع بأربع مرات من ثاني أكسيد الكبريت.",
-          "zh": "CH4 气体的移动速度比 SO2 快 4 倍。",
-          "ku": "Gaza CH4 ji SO2 4 caran zûtir dimeşe."
+          "tr": "Aynı sıcaklıkta CH4 gazı SO2 gazından 4 kat daha hızlı difüzlenir.",
+          "en": "At the same temperature, CH4 gas diffuses 4 times faster than SO2 gas.",
+          "de": "Bei gleicher Temperatur diffundiert CH4-Gas 4-mal schneller als SO2-Gas.",
+          "fr": "À la même température, le gaz CH4 diffuse 4 fois plus vite que le gaz SO2.",
+          "ru": "При одинаковой температуре газ CH4 диффундирует в 4 раза быстрее, чем газ SO2.",
+          "ar": "عند درجة الحرارة نفسها، ينتشر غاز CH4 أسرع بـ 4 مرات من غاز SO2.",
+          "zh": "相同温度下，CH4气体的扩散速率是SO2气体的4倍。",
+          "ku": "Di heman germahiyê de gaza CH4 4 qat ji gaza SO2 zûtir belav dibe."
         },
         {
           "tr": "Yüksek basınç altında gaz taneciklerinin hacmi tamamen yok olur.",
@@ -1679,24 +1679,24 @@ export const unit13: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Suyun buhar basıncı kabın hacmi değiştirildiğinde sıcaklık sabit kaldığı sürece DEĞİŞMEZ.",
-          "en": "The vapor pressure of water DOES NOT change when the volume of the container is changed as long as the temperature remains constant.",
-          "de": "Der Dampfdruck von Wasser ändert sich NICHT, wenn das Volumen des Behälters verändert wird, solange die Temperatur konstant bleibt.",
-          "fr": "La pression de vapeur de l’eau NE change PAS lorsque le volume du récipient change tant que la température reste constante.",
-          "ru": "Давление пара воды НЕ меняется при изменении объема сосуда, пока температура остается постоянной.",
-          "ar": "لا يتغير ضغط بخار الماء بتغير حجم الوعاء طالما ظلت درجة الحرارة ثابتة.",
-          "zh": "只要温度保持恒定，当容器体积改变时，水的蒸气压就不会改变。",
-          "ku": "Dema ku qebareya konteynerê tê guherandin heta ku germahî sabît bimîne, tansiyona buharê ya avê NAguhere."
+          "tr": "Kapta sıvı su bulunduğu sürece sabit sıcaklıkta kabın hacmi değiştirilse de suyun buhar basıncı DEĞİŞMEZ.",
+          "en": "As long as liquid water remains in the container, the vapor pressure of water DOES NOT change when the volume is changed at constant temperature.",
+          "de": "Solange flüssiges Wasser im Behälter vorhanden ist, ändert sich der Dampfdruck des Wassers bei konstanter Temperatur NICHT, auch wenn das Volumen verändert wird.",
+          "fr": "Tant qu'il reste de l'eau liquide dans le récipient, la pression de vapeur de l'eau NE change PAS lorsque le volume varie à température constante.",
+          "ru": "Пока в сосуде остаётся жидкая вода, давление её пара при постоянной температуре НЕ меняется при изменении объёма.",
+          "ar": "ما دام الماء السائل موجودًا في الوعاء، فإن ضغط بخار الماء لا يتغير عند تغيير الحجم مع ثبات درجة الحرارة.",
+          "zh": "只要容器中仍有液态水，在温度不变时改变容器体积，水的蒸气压不会改变。",
+          "ku": "Heta ku di firaxê de ava şil hebe, di germahiya sabît de qebare were guhertin jî zexta buhara avê NAGUHERE."
         },
         {
-          "tr": "Effüzyon iki gazın birbiri içinde karışmasıdır.",
+          "tr": "Efüzyon iki gazın birbiri içinde karışmasıdır.",
           "en": "Effusion is the mixing of two gases with each other.",
           "de": "Unter Effusion versteht man die Vermischung zweier Gase miteinander.",
-          "fr": "L'épanchement est le mélange de deux gaz entre eux.",
+          "fr": "L'effusion est le mélange de deux gaz l'un dans l'autre.",
           "ru": "Эффузия – это смешение двух газов друг с другом.",
           "ar": "الانصباب هو اختلاط غازين مع بعضهما البعض.",
-          "zh": "逸出是两种气体相互混合。",
-          "ku": "Efusion tevlîhevkirina du gazan bi hev re ye."
+          "zh": "泻流是两种气体相互混合的过程。",
+          "ku": "Efûzyon tevlihevbûna du gazan di nav hev de ye."
         },
         {
           "tr": "Mol kütlesi büyük olan gazlar daha hızlı difüzlenir.",
@@ -1709,14 +1709,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Gazên bi girseyên molî yên mezintir zûtir belav dibin."
         },
         {
-          "tr": "Aynı sıcaklıktaki CO2 gazının kinetik enerjisi H2 gazınınkinden büyüktür.",
-          "en": "The kinetic energy of CO2 gas at the same temperature is greater than that of H2 gas.",
-          "de": "Die kinetische Energie von CO2-Gas ist bei gleicher Temperatur größer als die von H2-Gas.",
-          "fr": "L’énergie cinétique du gaz CO2 à la même température est supérieure à celle du gaz H2.",
-          "ru": "Кинетическая энергия газа CO2 при той же температуре больше, чем у газа H2.",
-          "ar": "الطاقة الحركية لغاز ثاني أكسيد الكربون عند نفس درجة الحرارة أكبر من طاقة غاز الهيدروجين.",
-          "zh": "相同温度下CO2气体的动能大于H2气体的动能。",
-          "ku": "Enerjiya kinetîk a gaza CO2 di heman germahiyê de ji ya gaza H2 mezintir e."
+          "tr": "Aynı sıcaklıktaki CO2 moleküllerinin ortalama kinetik enerjisi H2 moleküllerininkinden büyüktür.",
+          "en": "At the same temperature, the average kinetic energy of CO2 molecules is greater than that of H2 molecules.",
+          "de": "Bei gleicher Temperatur ist die mittlere kinetische Energie von CO2-Molekülen größer als die von H2-Molekülen.",
+          "fr": "À la même température, l'énergie cinétique moyenne des molécules de CO2 est supérieure à celle des molécules de H2.",
+          "ru": "При одинаковой температуре средняя кинетическая энергия молекул CO2 больше, чем у молекул H2.",
+          "ar": "عند درجة الحرارة نفسها، يكون متوسط الطاقة الحركية لجزيئات CO2 أكبر من متوسط الطاقة الحركية لجزيئات H2.",
+          "zh": "相同温度下，CO2分子的平均动能大于H2分子的平均动能。",
+          "ku": "Di heman germahiyê de, enerjiya kînetîk a navîn a molekulên CO2 ji ya molekulên H2 mezintir e."
         },
         {
           "tr": "Joule-Thomson genleşmesinde gaz hızla ısınır.",
@@ -1731,14 +1731,14 @@ export const unit13: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Suyun buhar basıncı kabın hacmi değiştirildiğinde sıcaklık sabit kaldığı sürece DEĞİŞMEZ.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The vapor pressure of water DOES NOT change when the volume of the container is changed as long as the temperature remains constant.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Der Dampfdruck von Wasser ändert sich NICHT, wenn das Volumen des Behälters verändert wird, solange die Temperatur konstant bleibt.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La pression de vapeur de l’eau NE change PAS lorsque le volume du récipient change tant que la température reste constante.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Давление пара воды НЕ меняется при изменении объема сосуда, пока температура остается постоянной.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"لا يتغير ضغط بخار الماء بتغير حجم الوعاء طالما ظلت درجة الحرارة ثابتة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“只要温度保持恒定，当容器体积改变时，水的蒸气压就不会改变。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Dema ku qebareya konteynerê tê guherandin heta ku germahî sabît bimîne, tansiyona buharê ya avê NAguhere.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Kapta sıvı su bulunduğu sürece sabit sıcaklıkta kabın hacmi değiştirilse de suyun buhar basıncı DEĞİŞMEZ.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"As long as liquid water remains in the container, the vapor pressure of water DOES NOT change when the volume is changed at constant temperature.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Solange flüssiges Wasser im Behälter vorhanden ist, ändert sich der Dampfdruck des Wassers bei konstanter Temperatur NICHT, auch wenn das Volumen verändert wird.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Tant qu'il reste de l'eau liquide dans le récipient, la pression de vapeur de l'eau NE change PAS lorsque le volume varie à température constante.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Пока в сосуде остаётся жидкая вода, давление её пара при постоянной температуре НЕ меняется при изменении объёма.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"ما دام الماء السائل موجودًا في الوعاء، فإن ضغط بخار الماء لا يتغير عند تغيير الحجم مع ثبات درجة الحرارة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“只要容器中仍有液态水，在温度不变时改变容器体积，水的蒸气压不会改变。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Heta ku di firaxê de ava şil hebe, di germahiya sabît de qebare were guhertin jî zexta buhara avê NAGUHERE.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1775,14 +1775,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Refrigerants: Pêdivî ye ku germahiyek krîtîk a bilind, xala kelandinê kêm, ne-jehrîn û hawîrdorparêz be."
         },
         {
-          "tr": "Sıcaklık 4 katına çıkarsa difüzyon hızı 4 katına çıkar.",
-          "en": "If the temperature increases by 4 times, the diffusion rate increases by 4 times.",
-          "de": "Bei einer Temperaturerhöhung um das Vierfache erhöht sich die Diffusionsgeschwindigkeit um das Vierfache.",
-          "fr": "Si la température augmente de 4 fois, le taux de diffusion augmente de 4 fois.",
-          "ru": "Если температура увеличится в 4 раза, скорость диффузии увеличится в 4 раза.",
-          "ar": "إذا زادت درجة الحرارة بمقدار 4 مرات، يزيد معدل الانتشار بمقدار 4 مرات.",
-          "zh": "如果温度增加4倍，扩散速率增加4倍。",
-          "ku": "Ger germahî 4 qat zêde bibe, rêjeya belavbûnê 4 qat zêde dibe."
+          "tr": "Bir gazın mutlak sıcaklığı 4 katına çıkarılırsa difüzyon hızı da 4 katına çıkar.",
+          "en": "If the absolute temperature of a gas is quadrupled, its diffusion rate also quadruples.",
+          "de": "Wird die absolute Temperatur eines Gases vervierfacht, vervierfacht sich auch seine Diffusionsgeschwindigkeit.",
+          "fr": "Si la température absolue d'un gaz est multipliée par 4, sa vitesse de diffusion est aussi multipliée par 4.",
+          "ru": "Если абсолютную температуру газа увеличить в 4 раза, скорость его диффузии тоже увеличится в 4 раза.",
+          "ar": "إذا زادت درجة الحرارة المطلقة لغاز 4 مرات، يزداد معدل انتشاره أيضًا 4 مرات.",
+          "zh": "若气体的绝对温度增大到原来的4倍，其扩散速率也增大到原来的4倍。",
+          "ku": "Ger germahiya mutleq a gazekê 4 qat bibe, leza belavbûna wê jî 4 qat dibe."
         },
         {
           "tr": "Yüksek basınç ve düşük sıcaklıkta gazlar ideale en yakındır.",
@@ -1851,14 +1851,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Zexta qismî ji beşa molê serbixwe ye."
         },
         {
-          "tr": "CH4 (MA=16) gazı SO2 (MA=64) gazından sqrt(64/16) = 2 kat daha hızlı difüzlenir.",
-          "en": "CH4 (MA=16) gas diffuses sqrt(64/16) = 2 times faster than SO2 (MA=64) gas.",
-          "de": "CH4-Gas (MA=16) diffundiert sqrt(64/16) = 2-mal schneller als SO2-Gas (MA=64).",
-          "fr": "Le gaz CH4 (MA=16) diffuse sqrt(64/16) = 2 fois plus rapide que le gaz SO2 (MA=64).",
-          "ru": "Газ CH4 (MA=16) распространяется sqrt(64/16) = в 2 раза быстрее, чем газ SO2 (MA=64).",
-          "ar": "ينتشر غاز CH4 (MA=16) sqrt(64/16) = مرتين أسرع من غاز SO2 (MA=64).",
-          "zh": "CH4 (MA=16) 气体的扩散 sqrt(64/16) = 比 SO2 (MA=64) 气体快 2 倍。",
-          "ku": "Gaza CH4 (MA=16) sqrt(64/16) = 2 qat ji gaza SO2 (MA=64) zûtir belav dike."
+          "tr": "Aynı sıcaklıkta CH4 (MA=16) gazı, SO2 (MA=64) gazından sqrt(64/16) = 2 kat daha hızlı difüzlenir.",
+          "en": "At the same temperature, CH4 (MA=16) gas diffuses sqrt(64/16) = 2 times faster than SO2 (MA=64) gas.",
+          "de": "Bei gleicher Temperatur diffundiert CH4-Gas (MA=16) sqrt(64/16) = 2-mal schneller als SO2-Gas (MA=64).",
+          "fr": "À la même température, le gaz CH4 (MA=16) diffuse sqrt(64/16) = 2 fois plus vite que le gaz SO2 (MA=64).",
+          "ru": "При одинаковой температуре газ CH4 (MA=16) диффундирует в sqrt(64/16) = 2 раза быстрее, чем газ SO2 (MA=64).",
+          "ar": "عند درجة الحرارة نفسها، ينتشر غاز CH4 (MA=16) أسرع بـ sqrt(64/16) = 2 مرة من غاز SO2 (MA=64).",
+          "zh": "相同温度下，CH4（MA=16）气体的扩散速率是SO2（MA=64）气体的 sqrt(64/16) = 2 倍。",
+          "ku": "Di heman germahiyê de gaza CH4 (MA=16) sqrt(64/16) = 2 qat ji gaza SO2 (MA=64) zûtir belav dibe."
         },
         {
           "tr": "İdeal gazların molekülleri arasında güçlü elektrostatik çekim vardır.",
@@ -1883,14 +1883,14 @@ export const unit13: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"CH4 (MA=16) gazı SO2 (MA=64) gazından sqrt(64/16) = 2 kat daha hızlı difüzlenir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"CH4 (MA=16) gas diffuses sqrt(64/16) = 2 times faster than SO2 (MA=64) gas.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"CH4-Gas (MA=16) diffundiert sqrt(64/16) = 2-mal schneller als SO2-Gas (MA=64).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Le gaz CH4 (MA=16) diffuse sqrt(64/16) = 2 fois plus rapide que le gaz SO2 (MA=64).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Газ CH4 (MA=16) распространяется sqrt(64/16) = в 2 раза быстрее, чем газ SO2 (MA=64).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"ينتشر غاز CH4 (MA=16) sqrt(64/16) = مرتين أسرع من غاز SO2 (MA=64).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“CH4 (MA=16) 气体的扩散 sqrt(64/16) = 比 SO2 (MA=64) 气体快 2 倍。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Gaza CH4 (MA=16) sqrt(64/16) = 2 qat ji gaza SO2 (MA=64) zûtir belav dike.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Aynı sıcaklıkta CH4 (MA=16) gazı, SO2 (MA=64) gazından sqrt(64/16) = 2 kat daha hızlı difüzlenir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"At the same temperature, CH4 (MA=16) gas diffuses sqrt(64/16) = 2 times faster than SO2 (MA=64) gas.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Bei gleicher Temperatur diffundiert CH4-Gas (MA=16) sqrt(64/16) = 2-mal schneller als SO2-Gas (MA=64).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"À la même température, le gaz CH4 (MA=16) diffuse sqrt(64/16) = 2 fois plus vite que le gaz SO2 (MA=64).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «При одинаковой температуре газ CH4 (MA=16) диффундирует в sqrt(64/16) = 2 раза быстрее, чем газ SO2 (MA=64).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"عند درجة الحرارة نفسها، ينتشر غاز CH4 (MA=16) أسرع بـ sqrt(64/16) = 2 مرة من غاز SO2 (MA=64).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“相同温度下，CH4（MA=16）气体的扩散速率是SO2（MA=64）气体的 sqrt(64/16) = 2 倍。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di heman germahiyê de gaza CH4 (MA=16) sqrt(64/16) = 2 qat ji gaza SO2 (MA=64) zûtir belav dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1917,14 +1917,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Gazên bi girseyên molî yên mezintir zûtir belav dibin."
         },
         {
-          "tr": "Aynı sıcaklıktaki CO2 gazının kinetik enerjisi H2 gazınınkinden büyüktür.",
-          "en": "The kinetic energy of CO2 gas at the same temperature is greater than that of H2 gas.",
-          "de": "Die kinetische Energie von CO2-Gas ist bei gleicher Temperatur größer als die von H2-Gas.",
-          "fr": "L’énergie cinétique du gaz CO2 à la même température est supérieure à celle du gaz H2.",
-          "ru": "Кинетическая энергия газа CO2 при той же температуре больше, чем у газа H2.",
-          "ar": "الطاقة الحركية لغاز ثاني أكسيد الكربون عند نفس درجة الحرارة أكبر من طاقة غاز الهيدروجين.",
-          "zh": "相同温度下CO2气体的动能大于H2气体的动能。",
-          "ku": "Enerjiya kinetîk a gaza CO2 di heman germahiyê de ji ya gaza H2 mezintir e."
+          "tr": "Aynı sıcaklıktaki CO2 moleküllerinin ortalama kinetik enerjisi H2 moleküllerininkinden büyüktür.",
+          "en": "At the same temperature, the average kinetic energy of CO2 molecules is greater than that of H2 molecules.",
+          "de": "Bei gleicher Temperatur ist die mittlere kinetische Energie von CO2-Molekülen größer als die von H2-Molekülen.",
+          "fr": "À la même température, l'énergie cinétique moyenne des molécules de CO2 est supérieure à celle des molécules de H2.",
+          "ru": "При одинаковой температуре средняя кинетическая энергия молекул CO2 больше, чем у молекул H2.",
+          "ar": "عند درجة الحرارة نفسها، يكون متوسط الطاقة الحركية لجزيئات CO2 أكبر من متوسط الطاقة الحركية لجزيئات H2.",
+          "zh": "相同温度下，CO2分子的平均动能大于H2分子的平均动能。",
+          "ku": "Di heman germahiyê de, enerjiya kînetîk a navîn a molekulên CO2 ji ya molekulên H2 mezintir e."
         },
         {
           "tr": "Joule-Thomson genleşmesinde gaz hızla ısınır.",
@@ -1937,14 +1937,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Di berfirehbûna Joule-Thomson de, gaz bi lez germ dibe."
         },
         {
-          "tr": "Effüzyon, gaz moleküllerinin küçük bir delikten vakumlu boşluğa kaçması olayıdır.",
+          "tr": "Efüzyon, gaz moleküllerinin küçük bir delikten vakumlu boşluğa kaçması olayıdır.",
           "en": "Effusion is the phenomenon of gas molecules escaping into a vacuum space through a small hole.",
           "de": "Unter Effusion versteht man das Phänomen, dass Gasmoleküle durch ein kleines Loch in einen Vakuumraum entweichen.",
-          "fr": "L'épanchement est le phénomène par lequel des molécules de gaz s'échappent dans un espace vide par un petit trou.",
+          "fr": "L'effusion est le phénomène par lequel des molécules de gaz s'échappent vers le vide par un petit orifice.",
           "ru": "Эффузия – это явление, когда молекулы газа выходят в вакуумное пространство через небольшое отверстие.",
           "ar": "الانصباب هو ظاهرة هروب جزيئات الغاز إلى فراغ من خلال ثقب صغير.",
-          "zh": "逸出是气体分子通过小孔逃逸到真空空间的现象。",
-          "ku": "Effuzyon diyardeya molekulên gazê ye ku di qulikek piçûk de diherikin cîhek valahiyê."
+          "zh": "泻流是气体分子通过小孔逸入真空空间的现象。",
+          "ku": "Efûzyon diyardeya reva molekulên gazê ji qulikeke biçûk ber bi valahiyê (vakûmê) ye."
         },
         {
           "tr": "Su üstünde toplanan gazın basıncından suyun buhar basıncı çıkarılmaz.",
@@ -1959,14 +1959,14 @@ export const unit13: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Effüzyon, gaz moleküllerinin küçük bir delikten vakumlu boşluğa kaçması olayıdır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Efüzyon, gaz moleküllerinin küçük bir delikten vakumlu boşluğa kaçması olayıdır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Effusion is the phenomenon of gas molecules escaping into a vacuum space through a small hole.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Unter Effusion versteht man das Phänomen, dass Gasmoleküle durch ein kleines Loch in einen Vakuumraum entweichen.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"L'épanchement est le phénomène par lequel des molécules de gaz s'échappent dans un espace vide par un petit trou.\". Notion fondamentale du programme officiel de chimie.",
+        "fr": "L'affirmation exacte est: \"L'effusion est le phénomène par lequel des molécules de gaz s'échappent vers le vide par un petit orifice.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Эффузия – это явление, когда молекулы газа выходят в вакуумное пространство через небольшое отверстие.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"الانصباب هو ظاهرة هروب جزيئات الغاز إلى فراغ من خلال ثقب صغير.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“逸出是气体分子通过小孔逃逸到真空空间的现象。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Effuzyon diyardeya molekulên gazê ye ku di qulikek piçûk de diherikin cîhek valahiyê.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "zh": "正确表述为：“泻流是气体分子通过小孔逸入真空空间的现象。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Efûzyon diyardeya reva molekulên gazê ji qulikeke biçûk ber bi valahiyê (vakûmê) ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1983,14 +1983,14 @@ export const unit13: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Sıcaklık 4 katına çıkarsa difüzyon hızı 4 katına çıkar.",
-          "en": "If the temperature increases by 4 times, the diffusion rate increases by 4 times.",
-          "de": "Bei einer Temperaturerhöhung um das Vierfache erhöht sich die Diffusionsgeschwindigkeit um das Vierfache.",
-          "fr": "Si la température augmente de 4 fois, le taux de diffusion augmente de 4 fois.",
-          "ru": "Если температура увеличится в 4 раза, скорость диффузии увеличится в 4 раза.",
-          "ar": "إذا زادت درجة الحرارة بمقدار 4 مرات، يزيد معدل الانتشار بمقدار 4 مرات.",
-          "zh": "如果温度增加4倍，扩散速率增加4倍。",
-          "ku": "Ger germahî 4 qat zêde bibe, rêjeya belavbûnê 4 qat zêde dibe."
+          "tr": "Bir gazın mutlak sıcaklığı 4 katına çıkarılırsa difüzyon hızı da 4 katına çıkar.",
+          "en": "If the absolute temperature of a gas is quadrupled, its diffusion rate also quadruples.",
+          "de": "Wird die absolute Temperatur eines Gases vervierfacht, vervierfacht sich auch seine Diffusionsgeschwindigkeit.",
+          "fr": "Si la température absolue d'un gaz est multipliée par 4, sa vitesse de diffusion est aussi multipliée par 4.",
+          "ru": "Если абсолютную температуру газа увеличить в 4 раза, скорость его диффузии тоже увеличится в 4 раза.",
+          "ar": "إذا زادت درجة الحرارة المطلقة لغاز 4 مرات، يزداد معدل انتشاره أيضًا 4 مرات.",
+          "zh": "若气体的绝对温度增大到原来的4倍，其扩散速率也增大到原来的4倍。",
+          "ku": "Ger germahiya mutleq a gazekê 4 qat bibe, leza belavbûna wê jî 4 qat dibe."
         },
         {
           "tr": "Yüksek basınç ve düşük sıcaklıkta gazlar ideale en yakındır.",
@@ -2060,13 +2060,13 @@ export const unit13: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Gaz taneciklerinin öz hacmi yüksek basınç altında ihmal edilemez büyüklüğe ulaşır.",
-          "en": "The specific volume of gas particles reaches a non-negligible size under high pressure.",
-          "de": "Unter hohem Druck erreicht das spezifische Volumen der Gaspartikel eine nicht vernachlässigbare Größe.",
-          "fr": "Le volume spécifique des particules de gaz atteint une taille non négligeable sous haute pression.",
-          "ru": "Удельный объем частиц газа достигает немаловажных размеров под высоким давлением.",
-          "ar": "يصل الحجم النوعي لجزيئات الغاز إلى حجم غير مهم تحت الضغط العالي.",
-          "zh": "气体颗粒的比体积在高压下达到不可忽略的尺寸。",
-          "ku": "Hêjmara taybetî ya pariyên gazê di bin tansiyona bilind de digihîje mezinahiyek ne-hesab."
+          "en": "Under high pressure, the own volume of gas particles becomes non-negligible.",
+          "de": "Unter hohem Druck wird das Eigenvolumen der Gasteilchen nicht mehr vernachlässigbar.",
+          "fr": "Sous haute pression, le volume propre des particules de gaz n'est plus négligeable.",
+          "ru": "При высоком давлении собственным объёмом частиц газа уже нельзя пренебречь.",
+          "ar": "تحت الضغط المرتفع يصبح الحجم الذاتي لجسيمات الغاز غير قابل للإهمال.",
+          "zh": "在高压下，气体粒子自身的体积变得不可忽略。",
+          "ku": "Di bin zexta bilind de qebareya xwe ya perçeyên gazê êdî nayê paşguhkirin."
         },
         {
           "tr": "Kısmi basınç mol kesrinden bağımsızdır.",
@@ -2112,13 +2112,13 @@ export const unit13: ChemistryUnitSeedData = {
       "correctIndex": 0,
       "explanation": {
         "tr": "Doğru cevap \"Gaz taneciklerinin öz hacmi yüksek basınç altında ihmal edilemez büyüklüğe ulaşır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The specific volume of gas particles reaches a non-negligible size under high pressure.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Unter hohem Druck erreicht das spezifische Volumen der Gaspartikel eine nicht vernachlässigbare Größe.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Le volume spécifique des particules de gaz atteint une taille non négligeable sous haute pression.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Удельный объем частиц газа достигает немаловажных размеров под высоким давлением.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"يصل الحجم النوعي لجزيئات الغاز إلى حجم غير مهم تحت الضغط العالي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“气体颗粒的比体积在高压下达到不可忽略的尺寸。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Hêjmara taybetî ya pariyên gazê di bin tansiyona bilind de digihîje mezinahiyek ne-hesab.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Under high pressure, the own volume of gas particles becomes non-negligible.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Unter hohem Druck wird das Eigenvolumen der Gasteilchen nicht mehr vernachlässigbar.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Sous haute pression, le volume propre des particules de gaz n'est plus négligeable.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «При высоком давлении собственным объёмом частиц газа уже нельзя пренебречь.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تحت الضغط المرتفع يصبح الحجم الذاتي لجسيمات الغاز غير قابل للإهمال.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“在高压下，气体粒子自身的体积变得不可忽略。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di bin zexta bilind de qebareya xwe ya perçeyên gazê êdî nayê paşguhkirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }
   ]

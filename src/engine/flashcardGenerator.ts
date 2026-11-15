@@ -27,6 +27,8 @@ export interface FlashcardTemplate {
   compPrompt: (title: string, a: string, b: string) => string;
   factAnswerPrefix: string;
   trapAnswerPrefix: string;
+  /** Opening verdict on the back of a misconception card ("No — this statement is false."). */
+  trapVerdict: string;
   compAnswerPrefix: string;
   defaultTip: string;
   compTip: string;
@@ -37,11 +39,12 @@ export interface FlashcardTemplate {
 export const FLASHCARD_TEMPLATES: Record<LanguageCode, FlashcardTemplate> = {
   tr: {
     tipLabel: 'ÖSYM İpucu',
-    factPrompt: (title, snippet) => `${title} — Temel Kavram: "${snippet}" hakkında bilinmesi gereken temel bilimsel gerçek nedir?`,
+    factPrompt: (title, snippet) => `${title} — Temel Kavram: "${snippet} …" ifadesini bilimsel olarak doğru biçimde tamamlayınız.`,
     trapPrompt: (title, trap) => `${title} — Kavram Yanılgısı: "${trap}" yargısı bilimsel olarak doğru mudur?`,
     compPrompt: (title, a, b) => `${title} — Karşılaştırma: ${a} ile ${b} arasındaki temel ayrım nedir?`,
     factAnswerPrefix: 'Doğru Bilgi',
     trapAnswerPrefix: 'Doğru Açıklama',
+    trapVerdict: 'Hayır, bu yargı yanlıştır.',
     compAnswerPrefix: 'Ayırıcı Özellik',
     defaultTip: 'ÖSYM sınavlarında bu kavrama ve soru kökündeki ifadelere dikkat ediniz.',
     compTip: 'ÖSYM iki benzer kavramın ayırıcı özelliklerini öncüllü sorularda sıkça test eder.',
@@ -50,11 +53,12 @@ export const FLASHCARD_TEMPLATES: Record<LanguageCode, FlashcardTemplate> = {
   },
   en: {
     tipLabel: 'Exam Tip',
-    factPrompt: (title, snippet) => `${title} — Core Concept: What is the established scientific fact regarding "${snippet}"?`,
+    factPrompt: (title, snippet) => `${title} — Core Concept: Complete the statement correctly: "${snippet} …"`,
     trapPrompt: (title, trap) => `${title} — Misconception Check: Is the statement "${trap}" scientifically accurate?`,
     compPrompt: (title, a, b) => `${title} — Comparison: What is the fundamental difference between ${a} and ${b}?`,
     factAnswerPrefix: 'Scientific Fact',
     trapAnswerPrefix: 'Scientific Correction',
+    trapVerdict: 'No — this statement is false.',
     compAnswerPrefix: 'Distinguishing Trait',
     defaultTip: 'Pay close attention to this concept and the specific phrasing in examination questions.',
     compTip: 'Examiners frequently test the distinguishing traits of similar concepts in multi-statement items.',
@@ -63,11 +67,12 @@ export const FLASHCARD_TEMPLATES: Record<LanguageCode, FlashcardTemplate> = {
   },
   de: {
     tipLabel: 'Prüfungshinweis',
-    factPrompt: (title, snippet) => `${title} — Kernkonzept: Welche gesicherte chemische Tatsache gilt für "${snippet}"?`,
+    factPrompt: (title, snippet) => `${title} — Kernkonzept: Vervollständigen Sie die Aussage fachlich korrekt: "${snippet} …"`,
     trapPrompt: (title, trap) => `${title} — Fehlvorstellungs-Check: Ist die Aussage "${trap}" wissenschaftlich zutreffend?`,
     compPrompt: (title, a, b) => `${title} — Vergleich: Was ist der wesentliche Unterschied zwischen ${a} und ${b}?`,
     factAnswerPrefix: 'Wissenschaftliches Faktum',
     trapAnswerPrefix: 'Richtigstellung',
+    trapVerdict: 'Nein — diese Aussage ist falsch.',
     compAnswerPrefix: 'Unterscheidungsmerkmal',
     defaultTip: 'Achten Sie in Prüfungsfragen besonders auf dieses Konzept und die genaue Fragestellung.',
     compTip: 'Prüfungen testen häufig die Unterscheidungsmerkmale ähnlicher chemischer Begriffe.',
@@ -76,11 +81,12 @@ export const FLASHCARD_TEMPLATES: Record<LanguageCode, FlashcardTemplate> = {
   },
   fr: {
     tipLabel: "Conseil d'examen",
-    factPrompt: (title, snippet) => `${title} — Notion clé : Quel est le fait scientifique établi concernant "${snippet}" ?`,
+    factPrompt: (title, snippet) => `${title} — Notion clé : Complétez correctement l'affirmation : « ${snippet} … »`,
     trapPrompt: (title, trap) => `${title} — Piège classique : L'affirmation "${trap}" est-elle scientifiquement exacte ?`,
     compPrompt: (title, a, b) => `${title} — Comparaison : Quelle est la distinction fondamentale entre ${a} et ${b} ?`,
     factAnswerPrefix: 'Fait scientifique',
     trapAnswerPrefix: 'Explication exacte',
+    trapVerdict: 'Non — cette affirmation est fausse.',
     compAnswerPrefix: 'Caractéristique distinctive',
     defaultTip: "Prêtez attention à cette notion et aux termes exacts du sujet d'examen.",
     compTip: 'Les épreuves testent fréquemment les critères distinctifs entre notions chimiques similaires.',
@@ -89,11 +95,12 @@ export const FLASHCARD_TEMPLATES: Record<LanguageCode, FlashcardTemplate> = {
   },
   ru: {
     tipLabel: 'Экзаменационная подсказка',
-    factPrompt: (title, snippet) => `${title} — Базовое понятие: Каково научно доказанное положение относительно «${snippet}»?`,
+    factPrompt: (title, snippet) => `${title} — Базовое понятие: Закончите утверждение научно верно: «${snippet} …»`,
     trapPrompt: (title, trap) => `${title} — Проверка заблуждения: Верно ли утверждение «${trap}»?`,
     compPrompt: (title, a, b) => `${title} — Сравнение: В чем ключевое различие между «${a}» и «${b}»?`,
     factAnswerPrefix: 'Научный факт',
     trapAnswerPrefix: 'Правильное положение',
+    trapVerdict: 'Нет — это утверждение неверно.',
     compAnswerPrefix: 'Отличительное свойство',
     defaultTip: 'Обратите особое внимание на это понятие и формулировки в экзаменационных вопросах.',
     compTip: 'Экзаменаторы часто проверяют отличительные свойства похожих понятий в комплексных вопросах.',
@@ -102,11 +109,12 @@ export const FLASHCARD_TEMPLATES: Record<LanguageCode, FlashcardTemplate> = {
   },
   ar: {
     tipLabel: 'إرشادات الاختبار',
-    factPrompt: (title, snippet) => `${title} — المفهوم الأساسي: ما هي الحقيقة العلمية المثبتة بخصوص "${snippet}"؟`,
+    factPrompt: (title, snippet) => `${title} — المفهوم الأساسي: أكمل العبارة بشكل علمي صحيح: "${snippet} …"`,
     trapPrompt: (title, trap) => `${title} — فحص المغالطة: هل العبارة "${trap}" صحيحة علمياً؟`,
     compPrompt: (title, a, b) => `${title} — مقارنة: ما هو الفرق الكيميائي الجوهري بين ${a} و ${b}؟`,
     factAnswerPrefix: 'الحقيقة العلمية',
     trapAnswerPrefix: 'التصحيح العلمي',
+    trapVerdict: 'لا، هذه العبارة خاطئة.',
     compAnswerPrefix: 'السمة المميزة',
     defaultTip: 'انتبه جيداً لهذا المفهوم وصياغة السؤال في الامتحانات.',
     compTip: 'غالباً ما تركز أسئلة الامتحانات على السمات المميزة بين المفاهيم المتقاربة.',
@@ -115,11 +123,12 @@ export const FLASHCARD_TEMPLATES: Record<LanguageCode, FlashcardTemplate> = {
   },
   zh: {
     tipLabel: '高考备考建议',
-    factPrompt: (title, snippet) => `${title} — 核心考点设问：关于“${snippet}”客观确立的科学事实是什么？`,
+    factPrompt: (title, snippet) => `${title} — 核心考点设问：请科学准确地补全下列说法：“${snippet}……”`,
     trapPrompt: (title, trap) => `${title} — 概念陷阱辨析：“${trap}”这一说法在科学上是否正确？`,
     compPrompt: (title, a, b) => `${title} — 概念对比：“${a}”与“${b}”之间的核心本质区别是什么？`,
     factAnswerPrefix: '科学客观真理',
     trapAnswerPrefix: '科学规范解析',
+    trapVerdict: '不正确，这一说法是错误的。',
     compAnswerPrefix: '核心特征区别',
     defaultTip: '在高考备考复习中需特别注意该核心概念及题干设问的具体限定词。',
     compTip: '高考命题常在多重组合选择题中重点考查易混淆概念的区别与联系。',
@@ -128,11 +137,12 @@ export const FLASHCARD_TEMPLATES: Record<LanguageCode, FlashcardTemplate> = {
   },
   ku: {
     tipLabel: 'Serşîreta Ezmûnê',
-    factPrompt: (title, snippet) => `${title} — Têgeha Bingehîn: Rastiya zanistî ya derbarê "${snippet}" de çi ye?`,
+    factPrompt: (title, snippet) => `${title} — Têgeha Bingehîn: Gotinê bi awayekî zanistî rast temam bikin: "${snippet} …"`,
     trapPrompt: (title, trap) => `${title} — Kontrola Xefikê: Gelo îfadeya "${trap}" ji aliyê zanistî ve rast e?`,
     compPrompt: (title, a, b) => `${title} — Berhevdan: Ciyawaziya sereke di navbera ${a} û ${b} de çi ye?`,
     factAnswerPrefix: 'Rastiya Zanistî',
     trapAnswerPrefix: 'Şîroveya Rast',
+    trapVerdict: 'Na, ev gotin şaş e.',
     compAnswerPrefix: 'Taybetmendiya Cihêker',
     defaultTip: 'Di ezmûnan de bala xwe bidin vê têgehê û vegotinên koka pirsê.',
     compTip: 'Ezmûn bi gelemperî taybetmendiyên cihêker ên têgehên nêzîkî hev diceribîne.',
@@ -141,11 +151,22 @@ export const FLASHCARD_TEMPLATES: Record<LanguageCode, FlashcardTemplate> = {
   },
 };
 
-function extractSnippet(factText: string): string {
-  const parts = factText.split(/[,:;]/);
-  const first = (parts[0] || '').trim();
-  if (first.length >= 5 && first.length <= 60) return first;
-  return factText.slice(0, 45).trim();
+/**
+ * Opening part of a fact for a cloze-style front ("Lavoisier, Kütlenin Korunumu …"). Always a
+ * strict, word-aligned prefix (never cut mid-word) that leaves the essential remainder for the back,
+ * so the front no longer contains — or truncates — the whole answer.
+ */
+function extractSnippet(factText: string, lang: LanguageCode): string {
+  const text = factText.trim().replace(/[.。!！]$/u, '');
+  if (lang === 'zh') {
+    const chars = Array.from(text);
+    const take = Math.max(4, Math.min(chars.length - 4, Math.round(chars.length * 0.4)));
+    return chars.slice(0, Math.max(1, take)).join('').replace(/[，、：；,:;\s]+$/u, '');
+  }
+  const words = text.split(/\s+/);
+  if (words.length <= 3) return words.slice(0, 1).join(' ');
+  const take = Math.max(2, Math.min(words.length - 2, Math.round(words.length * 0.45)));
+  return words.slice(0, take).join(' ').replace(/[,:;–—-]+$/u, '');
 }
 
 /**
@@ -193,13 +214,16 @@ export function compileAllFlashcards(
         const rawTip = factItem.osymTip?.[lang] || (lang === 'tr' ? factItem.osymTip?.['tr'] : undefined) || tmpl.defaultTip;
         const tipText = sanitizeFlashcardTip(rawTip, lang, tmpl);
 
-        const snippet = extractSnippet(factText);
+        const snippet = extractSnippet(factText, lang);
         const prompt = isTrap
           ? tmpl.trapPrompt(unitTitle, trapText)
           : tmpl.factPrompt(unitTitle, snippet);
 
+        // Misconception cards now always state the verdict and the correct fact (plus the reason, if any).
         const answer = isTrap
-          ? (whyFalse.length > 10 ? whyFalse : `${tmpl.trapAnswerPrefix}: ${factText}`)
+          ? [tmpl.trapVerdict, whyFalse.length > 10 ? whyFalse.trim() : '', `${tmpl.trapAnswerPrefix}${lang === 'zh' ? '：' : ': '}${factText}`]
+            .filter(Boolean)
+            .join(lang === 'zh' ? '' : ' ')
           : `${tmpl.factAnswerPrefix}: ${factText}`;
 
         cards.push({

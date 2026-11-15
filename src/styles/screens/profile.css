@@ -1,0 +1,354 @@
+/* ============================================================================
+   Profile — "Obsidian Lab Glass" (Coach / Analytics / Mistakes / Profiles
+   artboards). Prefix: .pf-*. Uses theme.css tokens + ky- recipes, logical
+   properties only (RTL-safe), sizes in rem or calc(px * --fs) so the text-size
+   setting scales everything.
+   ============================================================================ */
+
+.pf.ky-screen { gap: 0; }
+.pf * { min-inline-size: 0; }
+.pf h1, .pf h2, .pf h3, .pf p, .pf ul { margin: 0; }
+.pf ul { padding: 0; list-style: none; }
+
+.pf-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-inline-size: 760px;
+  margin-inline: auto;
+  inline-size: 100%;
+}
+
+.pf-stack { display: flex; flex-direction: column; gap: 14px; }
+
+.pf-head h1 { flex: 1; }
+.pf-head__streak { min-block-size: 36px; padding: 0 12px; white-space: nowrap; }
+.pf-flip { flex: none; }
+[dir="rtl"] .pf-flip { transform: scaleX(-1); }
+
+.pf-tabs {
+  gap: 8px;
+  padding-block: 2px 12px;
+  padding-inline: max(20px, env(safe-area-inset-left, 0px));
+  flex: none;
+}
+
+@media (min-width: 900px) {
+  .pf-tabs { padding-inline: 32px; }
+}
+
+.pf-tab { white-space: nowrap; }
+
+.pf-muted { color: var(--muted); font-weight: 600; }
+.pf-count { font-size: calc(13px * var(--fs, 1)); font-weight: 700; color: var(--muted); }
+
+.pf-sr {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---- Coach -------------------------------------------------------------- */
+.pf-coach {
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.pf-coach__tile {
+  inline-size: 56px;
+  block-size: 56px;
+  border-radius: 18px;
+}
+
+.pf-coach__text { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.pf-coach__eyebrow { color: #9fb0c6; }
+.pf-coach__line { font-weight: 700; line-height: 1.25; color: #f2f6fb; }
+
+/* Card that holds a list of rows separated by hairlines */
+.pf-list { padding: 6px 16px; }
+
+.pf-list__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-block-size: 44px;
+  border-block-end: 1px solid var(--line);
+}
+
+.pf-list__head h2 { flex: 1; font-weight: 800; }
+.pf-list__empty { padding-block: 14px; line-height: 1.45; }
+
+.pf-plan {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-block-size: 58px;
+  padding-block: 6px;
+  border-block-end: 1px solid var(--line);
+}
+
+.pf-plan:last-child { border-block-end: 0; }
+
+.pf-check {
+  inline-size: 26px;
+  block-size: 26px;
+  flex: none;
+  border-radius: 9px;
+  border: 2px solid var(--line);
+  background: var(--raised);
+  display: grid;
+  place-items: center;
+  color: var(--on-accent);
+}
+
+.pf-plan.is-done .pf-check { background: var(--accent); border-color: var(--accent); }
+.pf-plan.is-done .pf-plan__title { color: var(--muted); text-decoration: line-through; }
+
+.pf-plan__text { flex: 1; display: flex; flex-direction: column; gap: 1px; }
+.pf-plan__title { font-weight: 600; line-height: 1.3; }
+.pf-plan__sub { color: var(--muted); font-weight: 600; overflow-wrap: anywhere; }
+.pf-plan__go { flex: none; }
+
+.pf-sechead { display: flex; align-items: center; gap: 8px; }
+.pf-sechead h2 { flex: 1; font-weight: 800; }
+
+.pf-badges {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px 10px;
+}
+
+.pf-badge {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.pf-badge__orb {
+  inline-size: min(64px, 100%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: radial-gradient(circle at 32% 26%, #c9d2dc 0%, #6b778a 38%, #2a3445 85%);
+  box-shadow: inset -5px -8px 14px rgba(0, 0, 0, 0.45), 0 5px 0 var(--edge);
+  opacity: 0.75;
+}
+
+.pf-badge.is-on .pf-badge__orb {
+  background: radial-gradient(circle at 32% 26%, #fff 0%, var(--c) 32%, var(--cd) 80%, #020409 118%);
+  opacity: 1;
+}
+
+.pf-badge__orb svg { filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.45)); }
+.pf-badge__name { font-weight: 700; line-height: 1.2; color: var(--text2); overflow-wrap: anywhere; }
+
+/* ---- Analytics ---------------------------------------------------------- */
+.pf-rings { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+
+.pf-ring {
+  padding: 14px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pf-ring svg { flex: none; }
+.pf-ring__v { font-size: calc(22px * var(--fs, 1)); font-weight: 800; line-height: 1.1; }
+.pf-ring__fg { transition: stroke-dashoffset 0.6s var(--ease-out); }
+
+.pf-panel { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.pf-panel h2 { font-weight: 800; }
+.pf-panel__head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 8px; }
+.pf-panel__head h2 { flex: 1 1 auto; }
+
+.pf-chart { display: flex; flex-direction: column; gap: 6px; }
+
+.pf-chart__plot {
+  position: relative;
+  block-size: calc(var(--bar-max) + 20px);
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+  align-items: end;
+}
+
+.pf-chart__goal {
+  position: absolute;
+  inset-inline: 0;
+  border-block-start: 2px dashed var(--gold);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.pf-chart__col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; block-size: 100%; }
+.pf-chart__v { font-size: calc(11px * var(--fs, 1)); font-weight: 700; color: var(--text2); }
+
+.pf-chart__bar {
+  inline-size: 100%;
+  border-radius: 8px;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  box-shadow: 0 3px 0 var(--edge);
+}
+
+.pf-chart__bar.is-hit {
+  background: var(--accent);
+  border-color: transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 3px 0 var(--accent-deep);
+}
+
+.pf-chart__days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+  text-align: center;
+  font-size: calc(11px * var(--fs, 1));
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.pf-chart__days span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.pf-split {
+  display: flex;
+  block-size: 16px;
+  gap: 3px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.pf-split > span { flex-basis: 0; min-inline-size: 6px; }
+.pf-split__ok { background: var(--ok); }
+.pf-split__bad { background: var(--bad); }
+.pf-split__empty { background: var(--muted); }
+.pf-split__none { flex-grow: 1; background: var(--raised); }
+
+.pf-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.pf-chips__end { margin-inline-start: auto; }
+
+.pf-topic {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-block-size: 52px;
+  border-block-end: 1px solid var(--line);
+}
+
+.pf-topic:last-child { border-block-end: 0; }
+.pf-topic__name { flex: 1; font-weight: 600; line-height: 1.3; }
+.pf-topic__bar { inline-size: 90px; flex: none; }
+.pf-topic__pct { inline-size: 3em; flex: none; text-align: end; font-size: calc(13px * var(--fs, 1)); font-weight: 700; }
+
+/* ---- Mistakes & starred ------------------------------------------------- */
+.pf-qlist { display: flex; flex-direction: column; gap: 12px; }
+
+.pf-q {
+  padding: 14px 16px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pf-q__meta { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.pf-q__unit { max-inline-size: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; line-height: 26px; }
+.pf-q__star { margin-inline-start: auto; color: var(--gold); }
+.pf-q__stem { font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
+.pf-q__foot { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+/* Mistakes artboard: "Senin cevabın: … · Doğru: …" on one wrapping line, Çözüm chip at the end */
+.pf-q__answers { flex: 1 1 160px; min-inline-size: 0; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; row-gap: 2px; font-weight: 600; line-height: 1.35; }
+.pf-q__mine { color: var(--bad); overflow-wrap: anywhere; }
+.pf-q__sep { color: var(--muted); }
+.pf-q__right { color: var(--ok); overflow-wrap: anywhere; }
+.pf-q__when { margin-inline-start: auto; display: inline-block; color: var(--muted); font-weight: 600; }
+.pf-q__when::first-letter { text-transform: uppercase; }
+.pf-q__go { margin-inline-start: auto; }
+
+.pf-foot { max-inline-size: 760px; margin-inline: auto; inline-size: 100%; box-sizing: border-box; }
+
+/* ---- Profiles ----------------------------------------------------------- */
+.pf-profiles { display: flex; flex-direction: column; gap: 10px; }
+.pf-profile-row { display: flex; align-items: center; gap: 8px; }
+
+.pf-profile {
+  flex: 1;
+  min-block-size: 76px;
+  text-align: start;
+}
+
+.pf-profile__text { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.pf-profile__text strong { overflow-wrap: anywhere; }
+.pf-profile__text > span { color: var(--text2); line-height: 1.3; }
+.pf-profile__del { flex: none; color: var(--bad); }
+
+.pf-avatar { margin-block-end: 4px; }
+.pf-avatar--md { inline-size: 48px; block-size: 48px; border-radius: 15px; font-size: 1.25rem; }
+
+.pf-form { padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+.pf-form h2 { font-weight: 800; }
+.pf-field { display: flex; flex-direction: column; gap: 6px; }
+
+.pf-input { min-block-size: 52px; font-size: 16px; font-weight: 600; }
+
+.pf-colors { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.pf-color {
+  inline-size: 44px;
+  block-size: 44px;
+  border-radius: 14px;
+  border: 0;
+  cursor: pointer;
+  background: var(--c);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 4px 0 var(--ce);
+}
+
+.pf-color[aria-checked="true"] {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 4px 0 var(--ce), 0 0 0 3px var(--surface), 0 0 0 5px var(--accent);
+}
+
+.pf-seg-wide { flex-grow: 1.4 !important; }
+
+.pf-note { color: var(--muted); line-height: 1.45; text-align: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pf-ring__fg { transition: none; }
+}
+:root[data-reduce-motion] .pf-ring__fg { transition: none; }
+
+/* ---- Shared confirmation sheet (ConfirmDialog) --------------------------- */
+.ky-confirm-backdrop { z-index: 95; place-items: center; padding: 16px; }
+
+.ky-confirm {
+  inline-size: min(100%, 420px);
+  max-block-size: 90dvh;
+  overflow-y: auto;
+  padding: 22px 20px 18px;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.ky-confirm__title { margin: 0; font-weight: 800; line-height: 1.2; }
+.ky-confirm__body { margin: 0; color: var(--text2); line-height: 1.5; }
+.ky-confirm__actions { display: flex; flex-wrap: wrap; gap: 12px; inline-size: 100%; margin-block-start: 8px; }
+.ky-confirm__actions .ky-btn { flex: 1 1 130px; }
+
+/* Profile and Settings are pushed screens with their own back key (per the
+   artboards): no floating tab bar on phones, so the reading area ends at the
+   safe area and a footer key sits at the bottom edge. */
+.app-col--pushed .mobile-bottom-nav { display: none; }
+.app-col--pushed .app-main-stage .ky-fit { padding-block-end: max(28px, env(safe-area-inset-bottom, 0px)); }

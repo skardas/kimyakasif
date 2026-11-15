@@ -1,1279 +1,756 @@
-import React, { useState, useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import {
-  User,
-  Volume2,
-  Music,
-  RotateCcw,
-  Palette,
-  Globe,
-  BarChart3,
-  BookOpen,
-  Star,
-  Settings,
-  Trophy,
-  CheckCircle2,
-  XCircle,
-  Clock,
-  TrendingUp,
+  ChevronLeft,
   Sparkles,
-  Play,
-  Lock,
-  Layers,
-  Flame,
-  Award,
-  Bell,
-  BellOff,
-  UserPlus,
-  Trash2,
-  Edit2,
-  Target,
   Check,
+  Star,
+  Play,
+  Plus,
+  Trash2,
+  CheckCircle2,
+  Zap,
+  Search,
+  FlaskConical,
+  Scale,
+  Target,
+  Trophy,
+  Flame,
+  Crown,
 } from 'lucide-react';
 import type { CompiledQuestion, LanguageCode } from '../../types/chemistry';
 import type { AppState, LearnerProfile } from '../../store/useAppStore';
-import type { DailyGoal } from '../../store/usePreferences';
-import { LANGUAGES, UI_TRANSLATIONS } from '../../i18n/translations';
-import { MUSIC_TRACKS } from '../../audio/musicEngine';
+import { todayStamp } from '../../store/useAppStore';
+import { redesignStrings, redesignExtra } from '../../i18n/redesignStrings';
+import { APP_SHELL_STRINGS } from '../../i18n/appShellStrings';
+import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { ALL_CHEMISTRY_UNITS } from '../../data/units';
 import { compileUnitQuestions } from '../../engine/questionGenerator';
+import { compileAllFlashcards } from '../../engine/flashcardGenerator';
+import { generateAiCoachReport } from '../../engine/aiCoachEngine';
+import { formatChemText } from '../common/ChemFormula';
+import { ConfirmDialog } from '../common/ConfirmDialog';
 import { QuizSessionModal } from '../exams/QuizSessionModal';
-import { StudyStatsDashboard } from '../dashboard/StudyStatsDashboard';
-import { notificationManager } from '../../utils/notificationManager';
 
-export type ProfileTab = 'dashboard' | 'analytics' | 'mistakes' | 'bookmarks' | 'profiles' | 'settings';
+export type ProfileTab = 'dashboard' | 'analytics' | 'mistakes' | 'bookmarks' | 'profiles';
+type Track = LearnerProfile['targetTrack'];
 
 export interface ProfileViewProps {
   lang: LanguageCode;
   store: AppState;
-  dailyGoal: DailyGoal;
-  reduceMotion: boolean;
-  sfxOn: boolean;
-  musicOn: boolean;
-  musicTrackId: string;
-  musicVolume: number;
-  onSetSfxOn: (v: boolean) => void;
-  onSetMusicOn: (v: boolean) => void;
-  onSetMusicTrack: (t: string) => void;
-  onSetMusicVolume: (v: number) => void;
-  onSetDailyGoal: (g: DailyGoal) => void;
-  onSetReduceMotion: (r: boolean) => void;
-  onRelaunchOnboarding: () => void;
+  initialTab?: ProfileTab;
+  /** Daily question goal and today's solved count (the same numbers as the home ring). */
+  dailyGoal?: number;
+  todayCount?: number;
+  onOpenSettings: () => void;
+  onBack?: () => void;
+  onOpenUnitQuiz?: (unitId: string) => void;
+  onOpenCards?: () => void;
+  onOpenSlides?: () => void;
+  /** Records an answer (defaults to the store; App wraps it to also bump today's count). */
+  onRecordQuestion?: (qId: string, isCorrect: boolean, pickedIndex?: number) => void;
 }
 
-interface GamificationBadge {
-  id: string;
-  title: string;
-  description: string;
-  icon: string;
-  isUnlocked: boolean;
-}
+/** Avatar colours (face, edge) for new profiles; stored on the profile as "c0".."c5". */
+const AVATAR_COLORS: [string, string, string][] = [
+  ['#A78BFA', '#5B32C9', '#3B1C91'],
+  ['#2DD9C3', '#0C8073', '#07564E'],
+  ['#F6B73C', '#A86A08', '#7A4B02'],
+  ['#6FA8FF', '#1B3FA8', '#173680'],
+  ['#FF8FA0', '#C2264A', '#7F1630'],
+  ['#5EE6A8', '#0E8A52', '#06603E'],
+];
 
-const AVATAR_OPTIONS = ['👨‍🎓', '👩‍🎓', '🔬', '⚛️', '🧪', '🏆', '🚀', '🎯'];
+/** Lit-sphere colours and icons for the 8 badges (unlocked state). */
+const BADGES: { icon: React.ReactNode; c: string; cd: string }[] = [
+  { icon: <Zap size={24} />, c: '#FFD873', cd: '#A86A08' },
+  { icon: <Search size={24} />, c: '#6FA8FF', cd: '#1B3FA8' },
+  { icon: <FlaskConical size={24} />, c: '#5EE6A8', cd: '#0E8A52' },
+  { icon: <Scale size={24} />, c: '#C9A2FF', cd: '#5B32C9' },
+  { icon: <Target size={24} />, c: '#FF8FA0', cd: '#9C1830' },
+  { icon: <Trophy size={24} />, c: '#FFD873', cd: '#A86A08' },
+  { icon: <Flame size={24} />, c: '#FF8FA0', cd: '#9C1830' },
+  { icon: <Crown size={24} />, c: '#C9A2FF', cd: '#5B32C9' },
+];
+
+const TRACK_OPTIONS: [Track, string][] = [
+  ['TYT_ONLY', 'TYT'],
+  ['AYT_FOCUS', 'AYT'],
+  ['TYT_FIRST', 'TYT → AYT'],
+];
+
+const AvatarTile: React.FC<{ profile: Pick<LearnerProfile, 'avatar' | 'name'>; lang: LanguageCode; size?: 'md' | 'lg' }> = ({
+  profile,
+  lang,
+  size = 'md',
+}) => {
+  const m = /^c(\d)$/.exec(profile.avatar || '');
+  const col = m ? AVATAR_COLORS[Number(m[1])] ?? AVATAR_COLORS[0] : AVATAR_COLORS[0];
+  const label = m ? (profile.name.trim().charAt(0) || '?').toLocaleUpperCase(lang) : profile.avatar || '?';
+  return (
+    <span
+      className={`ky-tile pf-avatar pf-avatar--${size}`}
+      aria-hidden="true"
+      style={{ ['--t' as string]: col[0], ['--td' as string]: col[1], ['--te' as string]: col[2] }}
+    >
+      {label}
+    </span>
+  );
+};
 
 export const ProfileView: React.FC<ProfileViewProps> = ({
   lang,
   store,
+  initialTab = 'dashboard',
   dailyGoal,
-  reduceMotion,
-  sfxOn,
-  musicOn,
-  musicTrackId,
-  musicVolume,
-  onSetSfxOn,
-  onSetMusicOn,
-  onSetMusicTrack,
-  onSetMusicVolume,
-  onSetDailyGoal,
-  onSetReduceMotion,
-  onRelaunchOnboarding,
+  todayCount,
+  onOpenSettings,
+  onBack,
+  onOpenUnitQuiz,
+  onOpenCards,
+  onOpenSlides,
+  onRecordQuestion,
 }) => {
+  const r = redesignStrings(lang);
+  const rx = redesignExtra(lang);
+  const sh = APP_SHELL_STRINGS[lang] ?? APP_SHELL_STRINGS.tr;
   const t = UI_TRANSLATIONS[lang];
-  const activeProfile = store.activeProfile;
+  const profile = store.activeProfile;
+  const goal = dailyGoal ?? profile.dailyQuestionGoal;
 
-  // Active segmented tab
-  const [activeTab, setActiveTab] = useState<ProfileTab>('dashboard');
-
-  // Hata Defteri Filter: 'ALL' | 'TYT' | 'AYT' | unitId
-  const [mistakeExamFilter, setMistakeExamFilter] = useState<'ALL' | 'TYT' | 'AYT'>('ALL');
-  const [mistakeUnitFilter, setMistakeUnitFilter] = useState<string>('ALL');
-
-  // Profile Manager Modal / Form State
-  const [showNewProfileModal, setShowNewProfileModal] = useState(false);
-  const [newProfileName, setNewProfileName] = useState('');
-  const [newProfileAvatar, setNewProfileAvatar] = useState('👨‍🎓');
-  const [newProfileTrack, setNewProfileTrack] = useState<'TYT_FIRST' | 'TYT_ONLY' | 'AYT_FOCUS'>('TYT_FIRST');
-
-  // Notification Test Feedback
-  const [notificationFeedback, setNotificationFeedback] = useState<string | null>(null);
-
-  // Active Quiz Modal Session (for retrying mistakes or bookmarks)
-  const [activeQuizSession, setActiveQuizSession] = useState<{
+  const [activeTab, setActiveTab] = useState<ProfileTab>(initialTab);
+  const [session, setSession] = useState<{
     title: string;
     subtitle?: string;
     examType: 'MISTAKE' | 'BOOKMARK';
     questions: CompiledQuestion[];
+    /** Opens the question in solution review with the stored wrong pick shown. */
+    reviewPicks?: Record<string, number | undefined>;
   } | null>(null);
+  const [newName, setNewName] = useState('');
+  const [newColor, setNewColor] = useState(1);
+  const [newTrack, setNewTrack] = useState<Track>('TYT_FIRST');
+  const [pendingDelete, setPendingDelete] = useState<LearnerProfile | null>(null);
 
-  // Stats Calculations
-  const totalSolved = Object.keys(store.solvedQuestionIds).length;
-  const correctCount = Object.values(store.solvedQuestionIds).filter((v) => v === true).length;
-  const accuracyPercent = totalSolved > 0 ? Math.round((correctCount / totalSolved) * 100) : 0;
+  const trackLabel = (track: Track) =>
+    track === 'TYT_ONLY' ? sh.trackTytOnly : track === 'AYT_FOCUS' ? sh.trackAytFocus : sh.trackSequential;
 
-  // Resolve Questions on Demand
-  const resolveQuestionsByIds = (ids: string[]): CompiledQuestion[] => {
-    const unitMap = new Map<string, CompiledQuestion[]>();
-    const resolved: CompiledQuestion[] = [];
+  // Coach report, built with the same daily goal the home screen shows
+  const report = useMemo(
+    () => generateAiCoachReport({ ...profile, dailyQuestionGoal: goal }, lang),
+    [profile, goal, lang]
+  );
 
+  const totalCards = useMemo(() => compileAllFlashcards(ALL_CHEMISTRY_UNITS, lang).length, [lang]);
+
+  const resolveQuestions = (ids: string[]): CompiledQuestion[] => {
+    const cache = new Map<string, CompiledQuestion[]>();
+    const out: CompiledQuestion[] = [];
     ids.forEach((id) => {
       const uId = id.slice(0, 3);
-      if (!unitMap.has(uId)) {
+      if (!cache.has(uId)) {
         const u = ALL_CHEMISTRY_UNITS.find((unit) => unit.id === uId);
-        if (u) {
-          unitMap.set(uId, compileUnitQuestions(u, lang));
-        } else {
-          unitMap.set(uId, []);
-        }
+        cache.set(uId, u ? compileUnitQuestions(u, lang) : []);
       }
-      const pool = unitMap.get(uId)!;
-      const found = pool.find((q) => q.id === id);
-      if (found) resolved.push(found);
+      const found = cache.get(uId)!.find((q) => q.id === id);
+      if (found) out.push(found);
     });
-
-    return resolved;
+    return out;
   };
 
-  // Filtered Mistakes
-  const filteredMistakes = useMemo(() => {
-    const allMistakeQs = resolveQuestionsByIds(store.mistakeQuestionIds);
-    return allMistakeQs.filter((q) => {
-      if (mistakeExamFilter === 'TYT' && q.exam !== 'TYT') return false;
-      if (mistakeExamFilter === 'AYT' && q.exam !== 'AYT') return false;
-      if (mistakeUnitFilter !== 'ALL' && q.unitId !== mistakeUnitFilter) return false;
-      return true;
-    });
-  }, [store.mistakeQuestionIds, mistakeExamFilter, mistakeUnitFilter, lang]);
+  const mistakes = useMemo(() => resolveQuestions(store.mistakeQuestionIds), [store.mistakeQuestionIds, lang]);
+  const starred = useMemo(() => resolveQuestions(store.bookmarkedQuestionIds), [store.bookmarkedQuestionIds, lang]);
 
-  // Starred Questions
-  const starredQuestions = useMemo(() => {
-    return resolveQuestionsByIds(store.bookmarkedQuestionIds);
-  }, [store.bookmarkedQuestionIds, lang]);
+  const unitLabel = (unitId: string) => {
+    const u = ALL_CHEMISTRY_UNITS.find((x) => x.id === unitId);
+    if (!u) return unitId.toUpperCase();
+    return `${String(u.order).padStart(2, '0')} · ${u.title[lang] || u.title.tr}`;
+  };
 
-  // 8 Gamification Badges
-  const badges: GamificationBadge[] = useMemo(() => {
-    const hasHighExamNet = store.examResults.some((r) => r.netScore >= 14);
-    return [
+  const tabs: { id: ProfileTab | 'settings'; label: string }[] = [
+    { id: 'dashboard', label: r.tabCoach },
+    { id: 'analytics', label: r.tabAnalytics },
+    { id: 'mistakes', label: r.tabMistakes },
+    { id: 'profiles', label: r.profiles },
+    { id: 'settings', label: r.openSettings },
+  ];
+  const isTabOn = (id: ProfileTab | 'settings') => id === activeTab || (id === 'mistakes' && activeTab === 'bookmarks');
+
+  // ------------------------------------------------------------------ Coach
+  const renderCoach = () => {
+    const focusMission = report.dailyMissions.find((m) => m.unitId);
+    const focusUnitId = focusMission?.unitId ?? 'u01';
+    const focusTitle = report.allTopics.find((x) => x.unitId === focusUnitId)?.unitTitle ?? focusUnitId;
+    const solvedToday = todayCount ?? report.dailyMissions[0]?.currentCount ?? 0;
+    const cardsMission = report.dailyMissions.find((m) => m.category === 'CARDS');
+    const todayRec = profile.dailyHistory.find((h) => h.date === todayStamp());
+    const minutesToday = todayRec?.studyMinutes ?? 0;
+    const minutesGoal = profile.dailyStudyMinutesGoal;
+    const waitingCards = Math.max(0, totalCards - profile.masteredCardIds.length);
+
+    const plan = [
       {
-        id: 'b1',
-        title: 'İlk Kıvılcım',
-        description: 'İlk soruyu başarıyla çözdün',
-        icon: '⚡',
-        isUnlocked: totalSolved >= 1,
+        key: 'solve',
+        done: solvedToday >= goal,
+        title: rx.planSolve(goal),
+        sub: rx.planSolveSub(unitLabel(focusUnitId), Math.min(solvedToday, goal), goal),
+        action: rx.planStart,
+        primary: true,
+        onClick: () => onOpenUnitQuiz?.(focusUnitId),
       },
       {
-        id: 'b2',
-        title: 'Element Avcısı',
-        description: '50 soru çözerek temelini attın',
-        icon: '🔍',
-        isUnlocked: totalSolved >= 50,
+        key: 'cards',
+        done: !!cardsMission?.completed,
+        title: rx.planCards(cardsMission?.targetCount ?? 10),
+        sub: rx.planCardsSub(waitingCards),
+        action: rx.planOpen,
+        primary: false,
+        onClick: () => onOpenCards?.(),
       },
       {
-        id: 'b3',
-        title: 'Laboratuvar Çırağı',
-        description: '500+ Deneyim Puanına (XP) ulaştın',
-        icon: '🧪',
-        isUnlocked: store.xp >= 500,
-      },
-      {
-        id: 'b4',
-        title: 'Denge Ustası',
-        description: '200 soru çözerek kavramları pekiştirdin',
-        icon: '⚖️',
-        isUnlocked: totalSolved >= 200,
-      },
-      {
-        id: 'b5',
-        title: 'Hata Avcısı',
-        description: 'Hatalarının üzerine gidip ustalaştın',
-        icon: '🎯',
-        isUnlocked: totalSolved >= 20 && store.mistakeQuestionIds.length <= 5,
-      },
-      {
-        id: 'b6',
-        title: 'Deneme Şampiyonu',
-        description: 'En az 5 deneme sınavını tamamladın',
-        icon: '🏆',
-        isUnlocked: store.examResults.length >= 5,
-      },
-      {
-        id: 'b7',
-        title: 'Ateşli Seri',
-        description: '3 gün üst üste kimya çalıştın',
-        icon: '🔥',
-        isUnlocked: store.streakDays >= 3,
-      },
-      {
-        id: 'b8',
-        title: 'Derece & Tıp Hedefi',
-        description: '14+ Net skoruna veya 1.000 XP barajına ulaştın',
-        icon: '👑',
-        isUnlocked: hasHighExamNet || store.xp >= 1000,
+        key: 'study',
+        done: minutesToday >= minutesGoal,
+        title: rx.planStudy(minutesGoal),
+        sub: rx.planStudySub(Math.min(minutesToday, minutesGoal), minutesGoal),
+        action: rx.planSlides,
+        primary: false,
+        onClick: () => onOpenSlides?.(),
       },
     ];
-  }, [totalSolved, store.xp, store.mistakeQuestionIds.length, store.examResults, store.streakDays]);
+    const doneCount = plan.filter((p) => p.done).length;
 
-  // Handle Create Profile
-  const handleCreateProfile = (e: React.FormEvent) => {
+    const totalSolved = profile.solvedQuestionIds.length;
+    const highNet = store.examResults.some((x) => x.netScore >= 14);
+    const unlocked = [
+      totalSolved >= 1,
+      totalSolved >= 50,
+      store.xp >= 500,
+      totalSolved >= 200,
+      totalSolved >= 20 && store.mistakeQuestionIds.length <= 5,
+      store.examResults.length >= 5,
+      store.streakDays >= 3,
+      highNet || store.xp >= 1000,
+    ];
+    const unlockedCount = unlocked.filter(Boolean).length;
+
+    return (
+      <div className="pf-stack">
+        <section className="ky-stage pf-coach">
+          <div className="ky-floor" aria-hidden="true" />
+          <span className="ky-tile ky-tile--violet pf-coach__tile ky-float" aria-hidden="true">
+            <Sparkles size={26} />
+          </span>
+          <div className="pf-coach__text">
+            <p className="ky-eyebrow pf-coach__eyebrow">{rx.coachEyebrow(profile.name)}</p>
+            <p className="ky-disp ky-fs-20 pf-coach__line">{rx.coachHeadline(focusTitle, goal)}</p>
+          </div>
+        </section>
+
+        <section className="ky-card pf-list" aria-labelledby="pf-plan-title">
+          <div className="pf-list__head">
+            <h2 id="pf-plan-title" className="ky-fs-16">{rx.todayPlan}</h2>
+            <span className="ky-mono pf-count">
+              {doneCount} / {plan.length}
+            </span>
+          </div>
+          {plan.map((p) => (
+            <div key={p.key} className={`pf-plan ${p.done ? 'is-done' : ''}`}>
+              <span className="pf-check" aria-hidden="true">
+                {p.done && <Check size={16} strokeWidth={3} />}
+              </span>
+              <span className="pf-plan__text">
+                <span className="ky-fs-15 pf-plan__title">{p.title}</span>
+                <span className="ky-fs-12 pf-plan__sub">{p.sub}</span>
+              </span>
+              <button
+                type="button"
+                className={`ky-chip ky-chip--lg pf-plan__go ${p.primary ? 'ky-chip--accent' : ''}`}
+                data-sfx={p.primary ? 'start' : undefined}
+                onClick={p.onClick}
+              >
+                {p.action}
+              </button>
+            </div>
+          ))}
+        </section>
+
+        <div className="pf-sechead">
+          <h2 className="ky-fs-18">{rx.badges}</h2>
+          <span className="ky-mono pf-count">
+            {unlockedCount} / {BADGES.length}
+          </span>
+        </div>
+        <ul className="pf-badges" aria-label={rx.badges}>
+          {BADGES.map((b, i) => (
+            <li key={i} className={`pf-badge ${unlocked[i] ? 'is-on' : ''}`} title={rx.badgeDescs[i]}>
+              <span
+                className="pf-badge__orb"
+                aria-hidden="true"
+                style={unlocked[i] ? { ['--c' as string]: b.c, ['--cd' as string]: b.cd } : undefined}
+              >
+                {unlocked[i] && b.icon}
+              </span>
+              <span className="ky-fs-12 pf-badge__name">{rx.badgeNames[i]}</span>
+              <span className="pf-sr">{unlocked[i] ? rx.badgeDescs[i] : rx.badgeLocked}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+
+  // ------------------------------------------------------------- Analytics
+  const renderAnalytics = () => {
+    const ringLen = 2 * Math.PI * 24;
+    const tytUnits = ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'TYT').length;
+    const aytUnits = ALL_CHEMISTRY_UNITS.length - tytUnits;
+    const stages = [
+      { exam: 'TYT', pct: report.tytMasteryPercent, n: tytUnits, color: 'var(--accent)' },
+      { exam: 'AYT', pct: report.aytMasteryPercent, n: aytUnits, color: 'var(--violet)' },
+    ];
+
+    const days = Array.from({ length: 7 }, (_, i) => {
+      const d = new Date();
+      d.setDate(d.getDate() - (6 - i));
+      const stamp = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+      const v = profile.dailyHistory.find((h) => h.date === stamp)?.questionsSolved ?? 0;
+      return { stamp, v, day: rx.dayShort[(d.getDay() + 6) % 7] };
+    });
+    const max = Math.max(goal, ...days.map((d) => d.v), 1);
+    const BAR_MAX = 100;
+
+    const answers = Object.values(store.solvedQuestionIds);
+    const correct = answers.filter((v) => v === true).length;
+    const wrong = answers.length - correct;
+    const empty = store.examResults.reduce((acc, x) => acc + (x.empty || 0), 0);
+    const net = (correct - wrong / 4).toLocaleString(lang, { maximumFractionDigits: 2 });
+    const weak = report.weakTopics.slice(0, 4);
+
+    return (
+      <div className="pf-stack">
+        <section className="pf-rings" aria-label={r.tabAnalytics}>
+          {stages.map((s) => (
+            <div key={s.exam} className="ky-card pf-ring">
+              <svg role="img" aria-label={rx.stageAria(s.exam, s.pct)} width="60" height="60" viewBox="0 0 60 60">
+                <circle cx="30" cy="30" r="24" fill="none" stroke="var(--raised)" strokeWidth="8" />
+                {s.pct > 0 && (
+                  <circle
+                    cx="30"
+                    cy="30"
+                    r="24"
+                    fill="none"
+                    stroke={s.color}
+                    strokeWidth="8"
+                    strokeLinecap="round"
+                    strokeDasharray={ringLen}
+                    strokeDashoffset={ringLen * (1 - Math.min(100, s.pct) / 100)}
+                    transform="rotate(-90 30 30)"
+                    className="pf-ring__fg"
+                  />
+                )}
+              </svg>
+              <div>
+                <p className="ky-mono ky-disp pf-ring__v">%{s.pct}</p>
+                <p className="ky-fs-12 pf-muted">{rx.stageUnits(s.exam, s.n)}</p>
+              </div>
+            </div>
+          ))}
+        </section>
+
+        <section className="ky-card pf-panel" aria-labelledby="pf-daily-title">
+          <div className="pf-panel__head">
+            <h2 id="pf-daily-title" className="ky-fs-16">{rx.dailySolved}</h2>
+            <span className="ky-fs-12 pf-muted">{rx.last7Goal(goal)}</span>
+          </div>
+          <div className="pf-chart" role="img" aria-label={rx.chartAria(days.map((d) => d.v).join(', '))}>
+            <div className="pf-chart__plot" style={{ ['--bar-max' as string]: `${BAR_MAX}px` }}>
+              <div
+                className="pf-chart__goal"
+                aria-hidden="true"
+                style={{ insetBlockEnd: `${Math.round((goal / max) * BAR_MAX)}px` }}
+              />
+              {days.map((d) => (
+                <div key={d.stamp} className="pf-chart__col" aria-hidden="true">
+                  <span className="ky-mono pf-chart__v">{d.v}</span>
+                  <span
+                    className={`pf-chart__bar ${d.v >= goal ? 'is-hit' : ''}`}
+                    style={{ blockSize: `${Math.max(4, Math.round((d.v / max) * BAR_MAX))}px` }}
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="pf-chart__days" aria-hidden="true">
+              {days.map((d) => (
+                <span key={d.stamp}>{d.day}</span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="ky-card pf-panel" aria-labelledby="pf-split-title">
+          <h2 id="pf-split-title" className="ky-fs-16">{rx.answerSplit}</h2>
+          <div
+            className="pf-split"
+            role="img"
+            aria-label={`${rx.correctN(correct)}, ${rx.wrongN(wrong)}, ${rx.emptyN(empty)}`}
+          >
+            {correct + wrong + empty === 0 ? (
+              <span className="pf-split__none" />
+            ) : (
+              <>
+                {correct > 0 && <span className="pf-split__ok" style={{ flexGrow: correct }} />}
+                {wrong > 0 && <span className="pf-split__bad" style={{ flexGrow: wrong }} />}
+                {empty > 0 && <span className="pf-split__empty" style={{ flexGrow: empty }} />}
+              </>
+            )}
+          </div>
+          <div className="pf-chips">
+            <span className="ky-chip ky-chip--ok">{rx.correctN(correct)}</span>
+            <span className="ky-chip ky-chip--bad">{rx.wrongN(wrong)}</span>
+            <span className="ky-chip">{rx.emptyN(empty)}</span>
+            <span className="ky-chip ky-chip--accent pf-chips__end">{rx.netN(net)}</span>
+          </div>
+        </section>
+
+        <section className="ky-card pf-list" aria-labelledby="pf-weak-title">
+          <div className="pf-list__head">
+            <h2 id="pf-weak-title" className="ky-fs-16">{rx.weakTopics}</h2>
+          </div>
+          {weak.length === 0 ? (
+            <p className="ky-fs-14 pf-muted pf-list__empty">{rx.noWeakTopics}</p>
+          ) : (
+            weak.map((w) => {
+              const tone = w.accuracyPercent < 50 ? 'var(--bad)' : w.accuracyPercent < 70 ? 'var(--gold)' : 'var(--ok)';
+              return (
+                <div key={w.unitId} className="pf-topic">
+                  <span className="ky-fs-14 pf-topic__name">{w.unitTitle}</span>
+                  <div className="ky-track pf-topic__bar" aria-hidden="true">
+                    <div className="ky-fill" style={{ inlineSize: `${Math.max(3, w.accuracyPercent)}%`, background: tone }} />
+                  </div>
+                  <span className="ky-mono pf-topic__pct">%{w.accuracyPercent}</span>
+                </div>
+              );
+            })
+          )}
+        </section>
+      </div>
+    );
+  };
+
+  // ------------------------------------------------------ Mistakes / starred
+  const showStarred = activeTab === 'bookmarks';
+  const listQs = showStarred ? starred : mistakes;
+
+  const openSingle = (q: CompiledQuestion, kind: 'MISTAKE' | 'BOOKMARK') =>
+    setSession({
+      title: kind === 'MISTAKE' ? rx.retryTitle : rx.starredTitle,
+      subtitle: unitLabel(q.unitId),
+      examType: kind,
+      questions: [q],
+      ...(kind === 'MISTAKE' ? { reviewPicks: { [q.id]: store.mistakeDetails[q.id]?.picked } } : {}),
+    });
+
+  // "Bugün / Dün / 2 gün önce" from the stored wrong-answer time, in the app language.
+  // Skipped when the record predates tracking or the runtime has no locale data for the language.
+  const whenLabel = (iso?: string): string | null => {
+    if (!iso) return null;
+    const t = Date.parse(iso);
+    if (!Number.isFinite(t)) return null;
+    try {
+      const rtf = new Intl.RelativeTimeFormat(lang, { numeric: 'auto' });
+      if (!rtf.resolvedOptions().locale.toLowerCase().startsWith(lang)) return null;
+      const startOf = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+      const days = Math.round((startOf(new Date(t)) - startOf(new Date())) / 86400000);
+      return rtf.format(Math.min(0, days), 'day');
+    } catch {
+      return null;
+    }
+  };
+
+  const optionLabel = (q: CompiledQuestion, idx: number) =>
+    `${String.fromCharCode(65 + idx)}) ${q.options[idx] ?? ''}`;
+
+  const renderMistakes = () => (
+    <div className="pf-stack">
+      <div role="tablist" aria-label={rx.listAria} className="ky-seg">
+        <button type="button" role="tab" aria-selected={!showStarred} className="ky-fs-14" onClick={() => setActiveTab('mistakes')}>
+          {r.myMistakes} · <span className="ky-mono">{store.mistakeQuestionIds.length}</span>
+        </button>
+        <button type="button" role="tab" aria-selected={showStarred} className="ky-fs-14" onClick={() => setActiveTab('bookmarks')}>
+          {r.starred} · <span className="ky-mono">{store.bookmarkedQuestionIds.length}</span>
+        </button>
+      </div>
+
+      {listQs.length === 0 ? (
+        <div className="ky-card ky-empty">
+          <span className={`ky-tile ${showStarred ? 'ky-tile--gold' : 'ky-tile--ok'}`} aria-hidden="true">
+            {showStarred ? <Star size={24} /> : <CheckCircle2 size={24} />}
+          </span>
+          <h3 className="ky-disp">{showStarred ? rx.emptyStarredTitle : rx.emptyMistakesTitle}</h3>
+          <p>{showStarred ? rx.emptyStarredBody : rx.emptyMistakesBody}</p>
+        </div>
+      ) : (
+        <ul className="pf-qlist">
+          {listQs.map((q) => (
+            <li key={q.id} className="ky-card pf-q">
+              <div className="pf-q__meta">
+                {showStarred ? (
+                  <span className="ky-chip ky-chip--gold">{r.starred}</span>
+                ) : (
+                  <span className="ky-chip ky-chip--bad">{rx.wrongChip}</span>
+                )}
+                <span className="ky-chip pf-q__unit">{unitLabel(q.unitId)}</span>
+                {!showStarred && whenLabel(store.mistakeDetails[q.id]?.at) && (
+                  <span className="ky-fs-12 pf-q__when">{whenLabel(store.mistakeDetails[q.id]?.at)}</span>
+                )}
+                {showStarred && (
+                  <button
+                    type="button"
+                    className="ky-icon-btn is-on pf-q__star"
+                    onClick={() => store.toggleBookmark(q.id)}
+                    aria-label={rx.unstar}
+                    title={rx.unstar}
+                  >
+                    <Star size={18} fill="currentColor" aria-hidden="true" />
+                  </button>
+                )}
+              </div>
+              <p className="ky-fs-15 pf-q__stem">{formatChemText(q.stem)}</p>
+              <div className="pf-q__foot">
+                <span className="ky-fs-13 pf-q__answers">
+                  {!showStarred &&
+                    (() => {
+                      const picked = store.mistakeDetails[q.id]?.picked;
+                      if (picked === undefined || picked === q.correctIndex || !q.options[picked]) return null;
+                      return (
+                        <>
+                          <span className="pf-q__mine">
+                            {rx.yourAnswerIs} {formatChemText(optionLabel(q, picked))}
+                          </span>
+                          <span className="pf-q__sep" aria-hidden="true">
+                            ·
+                          </span>
+                        </>
+                      );
+                    })()}
+                  <span className="pf-q__right">
+                    {rx.correctIs} {formatChemText(optionLabel(q, q.correctIndex))}
+                  </span>
+                </span>
+                <button
+                  type="button"
+                  className="ky-chip ky-chip--lg pf-q__go"
+                  data-sfx="start"
+                  onClick={() => openSingle(q, showStarred ? 'BOOKMARK' : 'MISTAKE')}
+                >
+                  {showStarred ? rx.solveOne : rx.solution}
+                </button>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+
+  // -------------------------------------------------------------- Profiles
+  const handleCreate = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newProfileName.trim()) return;
-    const newId = store.createProfile(newProfileName.trim(), newProfileAvatar, newProfileTrack);
-    setShowNewProfileModal(false);
-    setNewProfileName('');
-    setActiveTab('dashboard');
+    const name = newName.trim();
+    if (!name) return;
+    store.createProfile(name, `c${newColor}`, newTrack);
+    setNewName('');
   };
 
-  // Handle Notifications Toggle
-  const handleToggleNotifications = async (enabled: boolean) => {
-    store.updateProfile(activeProfile.id, { notificationsEnabled: enabled });
-    if (enabled) {
-      const granted = await notificationManager.requestPermission();
-      if (granted) {
-        await notificationManager.scheduleDailyReminder(
-          activeProfile.reminderTime || '20:00',
-          'Kimya YKS Günlük Çalışma Hatırlatması',
-          `Merhaba ${activeProfile.name}! Günlük hedefini tamamlamak için 15 dakika ayır.`,
-          true
-        );
-        setNotificationFeedback('✅ Bildirimler aktif edildi ve günlük hatırlatma planlandı.');
-      } else {
-        setNotificationFeedback('⚠️ Tarayıcı bildirim izni verilmedi.');
-      }
-    } else {
-      await notificationManager.cancelAllReminders();
-      setNotificationFeedback('🔕 Bildirimler tamamen kapatıldı.');
-    }
-    setTimeout(() => setNotificationFeedback(null), 4000);
-  };
+  const renderProfiles = () => (
+    <div className="pf-stack">
+      <p className="ky-eyebrow">{rx.studentProfiles(store.profiles.length)}</p>
+      <ul className="pf-profiles">
+        {store.profiles.map((p) => {
+          const isActive = p.id === profile.id;
+          const lv = Math.max(1, Math.floor(Math.max(0, p.stats.xp) / 250) + 1);
+          return (
+            <li key={p.id} className="pf-profile-row">
+              <button
+                type="button"
+                className={`ky-opt pf-profile ${isActive ? 'on' : ''}`}
+                aria-pressed={isActive}
+                onClick={() => !isActive && store.switchProfile(p.id)}
+              >
+                <AvatarTile profile={p} lang={lang} />
+                <span className="pf-profile__text">
+                  <strong className="ky-fs-16">{p.name}</strong>
+                  <span className="ky-fs-13">
+                    Lv.{lv} · <span className="ky-mono">{p.stats.xp}</span> XP · {trackLabel(p.targetTrack)}
+                  </span>
+                </span>
+                {isActive ? (
+                  <span className="ky-chip ky-chip--accent">{r.active.charAt(0).toLocaleUpperCase(lang) + r.active.slice(1)}</span>
+                ) : (
+                  <span className="ky-chip">{rx.makeActive}</span>
+                )}
+              </button>
+              {!isActive && store.profiles.length > 1 && (
+                <button
+                  type="button"
+                  className="ky-icon-btn pf-profile__del"
+                  onClick={() => setPendingDelete(p)}
+                  aria-label={`${rx.deleteProfile}: ${p.name}`}
+                  title={rx.deleteProfile}
+                >
+                  <Trash2 size={18} aria-hidden="true" />
+                </button>
+              )}
+            </li>
+          );
+        })}
+      </ul>
 
-  // Handle Reminder Time Change
-  const handleChangeReminderTime = (time: string) => {
-    store.updateProfile(activeProfile.id, { reminderTime: time });
-    if (activeProfile.notificationsEnabled) {
-      notificationManager.scheduleDailyReminder(
-        time,
-        'Kimya YKS Günlük Çalışma Hatırlatması',
-        `Merhaba ${activeProfile.name}! Günlük hedefini tamamlamak için 15 dakika ayır.`,
-        true
-      );
-    }
-  };
+      <form className="ky-card pf-form" onSubmit={handleCreate} aria-labelledby="pf-new-title">
+        <h2 id="pf-new-title" className="ky-fs-18">{rx.newProfile}</h2>
+        <label className="pf-field">
+          <span className="ky-eyebrow">{rx.nameLabel}</span>
+          <input
+            type="text"
+            className="ky-input pf-input"
+            value={newName}
+            maxLength={40}
+            onChange={(e) => setNewName(e.target.value)}
+            placeholder={rx.namePlaceholder}
+            required
+          />
+        </label>
+        <div className="pf-field">
+          <span className="ky-eyebrow" id="pf-color-label">{rx.avatarColor}</span>
+          <div className="pf-colors" role="radiogroup" aria-labelledby="pf-color-label">
+            {AVATAR_COLORS.map(([c, , e], i) => (
+              <button
+                key={c}
+                type="button"
+                role="radio"
+                aria-checked={newColor === i}
+                aria-label={rx.colorNames[i]}
+                className="pf-color"
+                style={{ ['--c' as string]: c, ['--ce' as string]: e }}
+                onClick={() => setNewColor(i)}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="pf-field">
+          <span className="ky-eyebrow" id="pf-track-label">{rx.targetLabel}</span>
+          <div className="ky-seg" role="radiogroup" aria-labelledby="pf-track-label">
+            {TRACK_OPTIONS.map(([val, label]) => (
+              <button
+                key={val}
+                type="button"
+                role="radio"
+                aria-checked={newTrack === val}
+                className={`ky-fs-14 ${val === 'TYT_FIRST' ? 'pf-seg-wide' : ''}`}
+                onClick={() => setNewTrack(val)}
+              >
+                <bdi>{label}</bdi>
+              </button>
+            ))}
+          </div>
+        </div>
+        <button type="submit" className="ky-btn ky-btn--primary ky-btn--block" disabled={!newName.trim()}>
+          <Plus size={18} aria-hidden="true" />
+          <span>{rx.createProfile}</span>
+        </button>
+      </form>
+
+      <p className="ky-fs-13 pf-note">{rx.privacyNote}</p>
+    </div>
+  );
+
+  const listFooter =
+    (activeTab === 'mistakes' || activeTab === 'bookmarks') && listQs.length > 0 ? (
+      <footer className="ky-screen-foot pf-foot">
+        <button
+          type="button"
+          className="ky-btn ky-btn--primary ky-btn--lg ky-grow"
+          data-sfx="start"
+          onClick={() =>
+            setSession({
+              title: showStarred ? rx.starredTitle : rx.retryTitle,
+              subtitle: showStarred ? rx.starredSessionSub(listQs.length) : rx.mistakeSessionSub(listQs.length),
+              examType: showStarred ? 'BOOKMARK' : 'MISTAKE',
+              questions: listQs,
+            })
+          }
+        >
+          <Play size={16} fill="currentColor" aria-hidden="true" />
+          <span>{showStarred ? rx.solveAllStarred(listQs.length) : rx.retryAll(listQs.length)}</span>
+        </button>
+      </footer>
+    ) : null;
 
   return (
-    <section className="profile-container" aria-label={t.nav.profile}>
-      {/* Profile Header Card */}
-      <div className="profile-hero-card">
-        <div className="profile-hero-main-row">
-          <div className="profile-avatar-badge">
-            <span className="profile-avatar-icon">{activeProfile.avatar || '👨‍🎓'}</span>
-          </div>
+    <section className="ky-screen pf" aria-labelledby="pf-title">
+      <header className="ky-screen-head pf-head">
+        {onBack && (
+          <button type="button" className="ky-icon-btn ky-only-narrow" onClick={onBack} aria-label={rx.back}>
+            <ChevronLeft size={20} aria-hidden="true" className="pf-flip" />
+          </button>
+        )}
+        <h1 id="pf-title" className="ky-disp ky-fs-24">{rx.profileTitle}</h1>
+        <span className="ky-chip ky-chip--gold pf-head__streak">{rx.streakDays(store.streakDays)}</span>
+      </header>
 
-          <div className="profile-titles-col">
-            <div className="profile-name-tag-row">
-              <h1 className="profile-user-name">{activeProfile.name}</h1>
-              <span className="profile-level-pill">
-                {t.stats.level} {store.level}
-              </span>
-              <span className="profile-streak-pill">
-                🔥 {store.streakDays} Gün Seri
-              </span>
-            </div>
-            <p className="profile-telemetry-sub">
-              <strong>{store.xp} XP</strong> • {totalSolved} Soru Çözüldü • %{accuracyPercent} Doğruluk Oranı
-            </p>
-          </div>
+      <nav className="ky-scroll-x pf-tabs" role="tablist" aria-label={rx.profileTabs}>
+        {tabs.map((tab) => (
+          <button
+            key={tab.id}
+            type="button"
+            role="tab"
+            aria-selected={isTabOn(tab.id)}
+            className={`ky-chip ky-chip--lg pf-tab ${isTabOn(tab.id) ? 'ky-chip--accent' : ''}`}
+            onClick={() => (tab.id === 'settings' ? onOpenSettings() : setActiveTab(tab.id))}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </nav>
 
-          <div className="profile-hero-actions">
-            <button
-              type="button"
-              className="quick-profile-switch-btn"
-              onClick={() => setActiveTab('profiles')}
-              title="Profil Değiştir veya Yönet"
-            >
-              <User size={15} />
-              <span>Profil Değiştir ({store.profiles.length})</span>
-            </button>
-          </div>
+      <div className="ky-fit">
+        <div className="pf-body">
+          {activeTab === 'dashboard' && renderCoach()}
+          {activeTab === 'analytics' && renderAnalytics()}
+          {(activeTab === 'mistakes' || activeTab === 'bookmarks') && renderMistakes()}
+          {activeTab === 'profiles' && renderProfiles()}
         </div>
       </div>
 
-      {/* Segmented Tab Navigation */}
-      <nav className="profile-segmented-nav" role="tablist" aria-label="Profil Sekmeleri">
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'dashboard'}
-          className={`profile-seg-btn ${activeTab === 'dashboard' ? 'active' : ''}`}
-          onClick={() => setActiveTab('dashboard')}
-        >
-          <Sparkles size={17} />
-          <span>AI Koç & Dashboard</span>
-        </button>
+      {listFooter}
 
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'analytics'}
-          className={`profile-seg-btn ${activeTab === 'analytics' ? 'active' : ''}`}
-          onClick={() => setActiveTab('analytics')}
-        >
-          <BarChart3 size={17} />
-          <span>Ünite Analitiği</span>
-        </button>
-
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'mistakes'}
-          className={`profile-seg-btn ${activeTab === 'mistakes' ? 'active' : ''}`}
-          onClick={() => setActiveTab('mistakes')}
-        >
-          <RotateCcw size={17} />
-          <span>Hata Defteri ({store.mistakeQuestionIds.length})</span>
-        </button>
-
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'bookmarks'}
-          className={`profile-seg-btn ${activeTab === 'bookmarks' ? 'active' : ''}`}
-          onClick={() => setActiveTab('bookmarks')}
-        >
-          <Star size={17} />
-          <span>Yıldızlılar ({store.bookmarkedQuestionIds.length})</span>
-        </button>
-
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'profiles'}
-          className={`profile-seg-btn ${activeTab === 'profiles' ? 'active' : ''}`}
-          onClick={() => setActiveTab('profiles')}
-        >
-          <User size={17} />
-          <span>Profiller ({store.profiles.length})</span>
-        </button>
-
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'settings'}
-          className={`profile-seg-btn ${activeTab === 'settings' ? 'active' : ''}`}
-          onClick={() => setActiveTab('settings')}
-        >
-          <Settings size={17} />
-          <span>Ayarlar</span>
-        </button>
-      </nav>
-
-      {/* ================================================================= */}
-      {/* TAB 0: AI KOÇ & SVG GRAFİK DASHBOARD                               */}
-      {/* ================================================================= */}
-      {activeTab === 'dashboard' && (
-        <StudyStatsDashboard
-          profile={activeProfile}
-          lang={lang}
-          onNavigateTab={(tab, meta) => {
-            if (tab === 'exams' && meta?.mode === 'mistakes') {
-              setActiveTab('mistakes');
-            }
+      {pendingDelete && (
+        <ConfirmDialog
+          title={rx.deleteConfirmTitle(pendingDelete.name)}
+          body={rx.deleteConfirmBody}
+          confirmLabel={rx.deleteAction}
+          cancelLabel={t.profile.cancel}
+          onCancel={() => setPendingDelete(null)}
+          onConfirm={() => {
+            store.deleteProfile(pendingDelete.id);
+            setPendingDelete(null);
           }}
         />
       )}
 
-      {/* ================================================================= */}
-      {/* TAB 1: PERFORMANS ANALİTİĞİ & 24 ÜNİTE İLERLEMESİ                 */}
-      {/* ================================================================= */}
-      {activeTab === 'analytics' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-          {/* Quick Metrics 4-Box Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '0.75rem' }}>
-            <div style={{ background: 'var(--bg-surface)', border: '1px solid var(--border-subtle)', borderRadius: 'var(--radius-md)', padding: '1rem', textAlign: 'center' }}>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>TOPLAM XP</div>
-              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--brand-primary)', marginTop: '0.25rem' }}>
-                {store.xp}
-              </div>
-            </div>
-
-            <div style={{ background: 'var(--bg-surface)', border: '1px solid var(--border-subtle)', borderRadius: 'var(--radius-md)', padding: '1rem', textAlign: 'center' }}>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>DOĞRU CEVAP</div>
-              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--accent-emerald)', marginTop: '0.25rem' }}>
-                {correctCount}
-              </div>
-            </div>
-
-            <div style={{ background: 'var(--bg-surface)', border: '1px solid var(--border-subtle)', borderRadius: 'var(--radius-md)', padding: '1rem', textAlign: 'center' }}>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>HATA SAYISI</div>
-              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--accent-ruby)', marginTop: '0.25rem' }}>
-                {store.mistakeQuestionIds.length}
-              </div>
-            </div>
-
-            <div style={{ background: 'var(--bg-surface)', border: '1px solid var(--border-subtle)', borderRadius: 'var(--radius-md)', padding: '1rem', textAlign: 'center' }}>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>TAMAMLANAN DENEME</div>
-              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--accent-cyan)', marginTop: '0.25rem' }}>
-                {store.examResults.length}
-              </div>
-            </div>
-          </div>
-
-          {/* Gamification Badges (8 Badges) */}
-          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-              <Award size={20} color="var(--brand-primary)" />
-              <h3 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800 }}>
-                Kazanılan Başarı Rozetleri (8 Başarı)
-              </h3>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem' }}>
-              {badges.map((b) => (
-                <div
-                  key={b.id}
-                  style={{
-                    background: b.isUnlocked ? 'var(--bg-surface)' : 'var(--bg-elevated)',
-                    border: `1.5px solid ${b.isUnlocked ? 'var(--brand-primary)' : 'var(--border-subtle)'}`,
-                    borderRadius: 'var(--radius-md)',
-                    padding: '0.85rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.75rem',
-                    opacity: b.isUnlocked ? 1 : 0.5,
-                  }}
-                >
-                  <div style={{ fontSize: '1.75rem' }}>{b.icon}</div>
-                  <div>
-                    <strong style={{ display: 'block', fontSize: '0.9rem', color: 'var(--text-primary)' }}>
-                      {b.title}
-                    </strong>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: 1.3 }}>
-                      {b.description}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* 24 Units Progress Breakdown */}
-          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-              <BookOpen size={20} color="var(--brand-primary)" />
-              <h3 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800 }}>
-                24 Ünite Ustalık Dağılımı
-              </h3>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.625rem' }}>
-              {ALL_CHEMISTRY_UNITS.map((u) => {
-                let solved = 0;
-                for (let q = 1; q <= 128; q++) {
-                  const qId = `${u.id}-q${String(q).padStart(3, '0')}`;
-                  if (store.solvedQuestionIds[qId]) solved++;
-                }
-                const pct = Math.min(100, Math.round((solved / 128) * 100));
-                return (
-                  <div key={u.id} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <span style={{ fontSize: '0.75rem', fontWeight: 800, width: '42px', color: 'var(--text-muted)' }}>
-                      {u.id.toUpperCase()}
-                    </span>
-                    <span style={{ fontSize: '0.85rem', flex: 1, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                      {u.title[lang] || u.title.tr}
-                    </span>
-                    <div style={{ width: '120px', height: '8px', background: 'var(--bg-elevated)', borderRadius: '4px', overflow: 'hidden' }}>
-                      <div
-                        style={{
-                          height: '100%',
-                          width: `${pct}%`,
-                          background: u.exam === 'TYT' ? 'var(--brand-primary)' : 'var(--brand-secondary)',
-                          borderRadius: '4px',
-                        }}
-                      />
-                    </div>
-                    <span style={{ fontSize: '0.8rem', fontWeight: 700, width: '38px', textAlign: 'end' }}>
-                      %{pct}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* ================================================================= */}
-      {/* TAB 2: HATA DEFTERİ (WRONG QUESTIONS NOTEBOOK)                     */}
-      {/* ================================================================= */}
-      {activeTab === 'mistakes' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-              Yanlış çözdüğün <strong>{store.mistakeQuestionIds.length}</strong> soru listeleniyor.
-            </p>
-            {filteredMistakes.length > 0 && (
-              <button
-                type="button"
-                className="btn-primary"
-                onClick={() => {
-                  setActiveQuizSession({
-                    title: 'Hata Defteri Tekrar Sınavı',
-                    subtitle: `${filteredMistakes.length} Yanlış Soru`,
-                    examType: 'MISTAKE',
-                    questions: filteredMistakes,
-                  });
-                }}
-              >
-                <Play size={16} />
-                <span>Tüm Hataları Tekrar Çöz ({filteredMistakes.length})</span>
-              </button>
-            )}
-          </div>
-
-          {filteredMistakes.length === 0 ? (
-            <div className="placeholder-card" style={{ padding: '2.5rem', textAlign: 'center' }}>
-              <CheckCircle2 size={42} color="var(--accent-emerald)" style={{ margin: '0 auto 0.75rem' }} />
-              <h3>Harika! Hata Defterin Tertemiz</h3>
-              <p style={{ color: 'var(--text-muted)' }}>
-                Yanlış yaptığın hiçbir soru bulunmuyor veya tüm hatalarını çözerek ustalaştın.
-              </p>
-            </div>
-          ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {filteredMistakes.map((q) => (
-                <div
-                  key={q.id}
-                  style={{
-                    background: 'var(--bg-surface)',
-                    border: '1px solid var(--border-subtle)',
-                    borderRadius: 'var(--radius-md)',
-                    padding: '1rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: '1rem',
-                  }}
-                >
-                  <div style={{ minWidth: 0, flex: 1 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.35rem' }}>
-                      <span
-                        style={{
-                          fontSize: '0.75rem',
-                          fontWeight: 700,
-                          background: q.exam === 'TYT' ? 'rgba(29, 78, 216, 0.15)' : 'rgba(13, 148, 136, 0.15)',
-                          color: q.exam === 'TYT' ? 'var(--brand-primary)' : 'var(--brand-secondary)',
-                          padding: '0.15rem 0.45rem',
-                          borderRadius: '4px',
-                        }}
-                      >
-                        {q.exam} • {q.unitId.toUpperCase()}
-                      </span>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                        {q.id}
-                      </span>
-                    </div>
-                    <p
-                      style={{
-                        margin: 0,
-                        fontSize: '0.875rem',
-                        lineHeight: 1.4,
-                        color: 'var(--text-primary)',
-                        whiteSpace: 'nowrap',
-                        overflow: 'hidden',
-                        textOverflow: 'ellipsis',
-                      }}
-                    >
-                      {q.stem}
-                    </p>
-                  </div>
-
-                  <button
-                    type="button"
-                    className="btn-secondary"
-                    onClick={() => {
-                      setActiveQuizSession({
-                        title: `${q.unitId.toUpperCase()} • Hata Tekrarı`,
-                        subtitle: 'ÖSYM İkiz Soru Çözümü',
-                        examType: 'MISTAKE',
-                        questions: [q],
-                      });
-                    }}
-                    style={{ padding: '0.45rem 0.85rem', fontSize: '0.85rem' }}
-                  >
-                    Tekrar Çöz
-                  </button>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* ================================================================= */}
-      {/* TAB 3: YILDIZLI SORULAR (BOOKMARKS)                                */}
-      {/* ================================================================= */}
-      {activeTab === 'bookmarks' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-              Yıldızladığın <strong>{store.bookmarkedQuestionIds.length}</strong> soru listeleniyor.
-            </p>
-            {starredQuestions.length > 0 && (
-              <button
-                type="button"
-                className="btn-primary"
-                onClick={() => {
-                  setActiveQuizSession({
-                    title: 'Yıldızlı Sorular Tekrar Sınavı',
-                    subtitle: `${starredQuestions.length} Soru`,
-                    examType: 'BOOKMARK',
-                    questions: starredQuestions,
-                  });
-                }}
-              >
-                <Play size={16} />
-                <span>Tüm Yıldızlıları Çöz ({starredQuestions.length})</span>
-              </button>
-            )}
-          </div>
-
-          {starredQuestions.length === 0 ? (
-            <div className="placeholder-card" style={{ padding: '2.5rem', textAlign: 'center' }}>
-              <Star size={42} color="var(--accent-amber)" style={{ margin: '0 auto 0.75rem' }} />
-              <h3>Henüz Yıldızlı Soru Eklenmedi</h3>
-              <p style={{ color: 'var(--text-muted)' }}>
-                Soru bankasında veya denemelerde beğendiğin soruların yıldız ikonuna tıklayarak buraya kaydedebilirsin.
-              </p>
-            </div>
-          ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {starredQuestions.map((q) => (
-                <div
-                  key={q.id}
-                  style={{
-                    background: 'var(--bg-surface)',
-                    border: '1px solid var(--border-subtle)',
-                    borderRadius: 'var(--radius-md)',
-                    padding: '1rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: '1rem',
-                  }}
-                >
-                  <div style={{ minWidth: 0, flex: 1 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.35rem' }}>
-                      <span
-                        style={{
-                          fontSize: '0.75rem',
-                          fontWeight: 700,
-                          background: 'rgba(245, 158, 11, 0.15)',
-                          color: 'var(--accent-amber)',
-                          padding: '0.15rem 0.45rem',
-                          borderRadius: '4px',
-                        }}
-                      >
-                        {q.unitId.toUpperCase()}
-                      </span>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                        {q.id}
-                      </span>
-                    </div>
-                    <p
-                      style={{
-                        margin: 0,
-                        fontSize: '0.875rem',
-                        lineHeight: 1.4,
-                        color: 'var(--text-primary)',
-                        whiteSpace: 'nowrap',
-                        overflow: 'hidden',
-                        textOverflow: 'ellipsis',
-                      }}
-                    >
-                      {q.stem}
-                    </p>
-                  </div>
-
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <button
-                      type="button"
-                      onClick={() => store.toggleBookmark(q.id)}
-                      style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--accent-amber)', padding: '0.4rem' }}
-                      title="Yıldızdan Çıkar"
-                    >
-                      <Star size={18} fill="var(--accent-amber)" />
-                    </button>
-                    <button
-                      type="button"
-                      className="btn-secondary"
-                      onClick={() => {
-                        setActiveQuizSession({
-                          title: `${q.unitId.toUpperCase()} • Yıldızlı Soru`,
-                          subtitle: 'Özel Pratik',
-                          examType: 'BOOKMARK',
-                          questions: [q],
-                        });
-                      }}
-                      style={{ padding: '0.45rem 0.85rem', fontSize: '0.85rem' }}
-                    >
-                      Çöz
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* ================================================================= */}
-      {/* TAB 4: PROFİL YÖNETİMİ (MULTI-PROFILE MANAGER)                    */}
-      {/* ================================================================= */}
-      {activeTab === 'profiles' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem' }}>
-            <div>
-              <h3 style={{ margin: 0, fontSize: '1.15rem', fontWeight: 800 }}>
-                Öğrenci Profilleri ({store.profiles.length})
-              </h3>
-              <p style={{ margin: '0.2rem 0 0', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
-                Farklı öğrenciler veya farklı hedefler için izole çalışma istatistikleri ve hedefler oluşturun.
-              </p>
-            </div>
-            <button
-              type="button"
-              className="btn-primary"
-              onClick={() => setShowNewProfileModal(true)}
-            >
-              <UserPlus size={16} />
-              <span>Yeni Profil Ekle</span>
-            </button>
-          </div>
-
-          {/* New Profile Form Modal */}
-          {showNewProfileModal && (
-            <div className="placeholder-card" style={{ padding: '1.25rem', border: '2px solid var(--brand-primary)', background: 'var(--bg-surface)' }}>
-              <h4 style={{ margin: '0 0 0.8rem', fontSize: '1.05rem', fontWeight: 800 }}>Yeni Öğrenci Profili Oluştur</h4>
-              <form onSubmit={handleCreateProfile} style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.3rem' }}>
-                    Öğrenci Adı / Takma Ad
-                  </label>
-                  <input
-                    type="text"
-                    value={newProfileName}
-                    onChange={(e) => setNewProfileName(e.target.value)}
-                    placeholder="Örn: Ayşe YKS 2027"
-                    required
-                    style={{
-                      width: '100%',
-                      padding: '0.6rem 0.8rem',
-                      borderRadius: '8px',
-                      background: 'var(--bg-elevated)',
-                      color: 'var(--text-primary)',
-                      border: '1px solid var(--border-subtle)',
-                      boxSizing: 'border-box',
-                    }}
-                  />
-                </div>
-
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.3rem' }}>
-                    Avatar Seçimi
-                  </label>
-                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                    {AVATAR_OPTIONS.map((av) => (
-                      <button
-                        key={av}
-                        type="button"
-                        onClick={() => setNewProfileAvatar(av)}
-                        style={{
-                          fontSize: '1.5rem',
-                          padding: '0.4rem 0.6rem',
-                          borderRadius: '8px',
-                          background: newProfileAvatar === av ? 'var(--brand-primary)' : 'var(--bg-elevated)',
-                          border: `2px solid ${newProfileAvatar === av ? 'var(--brand-primary)' : 'var(--border-subtle)'}`,
-                          cursor: 'pointer',
-                        }}
-                      >
-                        {av}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.3rem' }}>
-                    YKS Sınav İlerleme Tercihi
-                  </label>
-                  <select
-                    value={newProfileTrack}
-                    onChange={(e) => setNewProfileTrack(e.target.value as any)}
-                    style={{
-                      width: '100%',
-                      padding: '0.6rem 0.8rem',
-                      borderRadius: '8px',
-                      background: 'var(--bg-elevated)',
-                      color: 'var(--text-primary)',
-                      border: '1px solid var(--border-subtle)',
-                    }}
-                  >
-                    <option value="TYT_FIRST">1. TYT Kimya (u01–u10) Sonra AYT (Önerilen)</option>
-                    <option value="TYT_ONLY">Sadece TYT Kimya Odaklı</option>
-                    <option value="AYT_FOCUS">AYT Kimya Ağırlıklı (11-12. Sınıf)</option>
-                  </select>
-                </div>
-
-                <div style={{ display: 'flex', gap: '0.6rem', justifyContent: 'flex-end', marginTop: '0.5rem' }}>
-                  <button
-                    type="button"
-                    className="btn-secondary"
-                    onClick={() => setShowNewProfileModal(false)}
-                  >
-                    İptal
-                  </button>
-                  <button type="submit" className="btn-primary">
-                    Profili Kaydet
-                  </button>
-                </div>
-              </form>
-            </div>
-          )}
-
-          {/* Profiles Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
-            {store.profiles.map((p) => {
-              const isActive = p.id === activeProfile.id;
-              const solvedCount = p.solvedQuestionIds.length;
-              return (
-                <div
-                  key={p.id}
-                  style={{
-                    background: 'var(--bg-surface)',
-                    border: `2px solid ${isActive ? 'var(--brand-primary)' : 'var(--border-subtle)'}`,
-                    borderRadius: 'var(--radius-md)',
-                    padding: '1.25rem',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '0.75rem',
-                    position: 'relative',
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                      <span style={{ fontSize: '2rem' }}>{p.avatar || '👨‍🎓'}</span>
-                      <div>
-                        <strong style={{ fontSize: '1.05rem', color: 'var(--text-primary)' }}>{p.name}</strong>
-                        <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                          {p.targetTrack === 'TYT_ONLY'
-                            ? 'Sadece TYT'
-                            : p.targetTrack === 'AYT_FOCUS'
-                            ? 'AYT Odaklı'
-                            : 'TYT → AYT Sıralı'}
-                        </span>
-                      </div>
-                    </div>
-                    {isActive ? (
-                      <span
-                        style={{
-                          fontSize: '0.75rem',
-                          fontWeight: 800,
-                          padding: '0.2rem 0.5rem',
-                          borderRadius: 'var(--radius-full)',
-                          background: 'rgba(16, 185, 129, 0.15)',
-                          color: 'var(--accent-emerald)',
-                          border: '1px solid rgba(16, 185, 129, 0.3)',
-                        }}
-                      >
-                        Aktif
-                      </span>
-                    ) : (
-                      <button
-                        type="button"
-                        className="btn-secondary"
-                        onClick={() => store.switchProfile(p.id)}
-                        style={{ padding: '0.35rem 0.75rem', fontSize: '0.8rem' }}
-                      >
-                        Aktif Yap
-                      </button>
-                    )}
-                  </div>
-
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.5rem', background: 'var(--bg-elevated)', padding: '0.5rem', borderRadius: '8px', textAlign: 'center' }}>
-                    <div>
-                      <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>XP</span>
-                      <strong style={{ display: 'block', fontSize: '0.9rem', color: 'var(--brand-primary)' }}>
-                        {p.stats.xp}
-                      </strong>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Seri</span>
-                      <strong style={{ display: 'block', fontSize: '0.9rem', color: 'var(--accent-amber)' }}>
-                        {p.stats.streakDays}g
-                      </strong>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Çözülen</span>
-                      <strong style={{ display: 'block', fontSize: '0.9rem', color: 'var(--accent-emerald)' }}>
-                        {solvedCount}
-                      </strong>
-                    </div>
-                  </div>
-
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-                    Hedef: {p.dailyQuestionGoal} soru/gün • {p.dailyStudyMinutesGoal} dk/gün
-                  </div>
-
-                  {!isActive && store.profiles.length > 1 && (
-                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'auto' }}>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          if (window.confirm(`${p.name} profilini silmek istediğinize emin misiniz?`)) {
-                            store.deleteProfile(p.id);
-                          }
-                        }}
-                        style={{
-                          background: 'none',
-                          border: 'none',
-                          cursor: 'pointer',
-                          color: 'var(--accent-ruby)',
-                          fontSize: '0.8rem',
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: '0.3rem',
-                        }}
-                      >
-                        <Trash2 size={14} />
-                        <span>Profili Sil</span>
-                      </button>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* ================================================================= */}
-      {/* TAB 5: AYARLAR & TERCİHLER                                        */}
-      {/* ================================================================= */}
-      {activeTab === 'settings' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-          {/* Daily Goals Configuration (Questions & Study Minutes) */}
-          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.8rem' }}>
-              <Target size={20} color="var(--brand-primary)" />
-              <strong style={{ fontSize: '1.05rem' }}>Günlük Çalışma Hedefleri ({activeProfile.name})</strong>
-            </div>
-
-            {/* Daily Questions Goal Presets */}
-            <div style={{ marginBottom: '1rem' }}>
-              <span style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.4rem' }}>
-                Günlük Soru Çözme Hedefi
-              </span>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                {[15, 30, 50, 100].map((goalVal) => (
-                  <button
-                    key={goalVal}
-                    type="button"
-                    className={activeProfile.dailyQuestionGoal === goalVal ? 'primary-btn' : 'secondary-btn'}
-                    onClick={() => {
-                      store.updateProfile(activeProfile.id, { dailyQuestionGoal: goalVal });
-                      onSetDailyGoal(goalVal as any);
-                    }}
-                  >
-                    {goalVal} Soru
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Daily Study Minutes Goal Presets */}
-            <div>
-              <span style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.4rem' }}>
-                Günlük Çalışma Süresi Hedefi (Dakika)
-              </span>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                {[15, 30, 45, 60].map((minVal) => (
-                  <button
-                    key={minVal}
-                    type="button"
-                    className={activeProfile.dailyStudyMinutesGoal === minVal ? 'primary-btn' : 'secondary-btn'}
-                    onClick={() => store.updateProfile(activeProfile.id, { dailyStudyMinutesGoal: minVal })}
-                  >
-                    {minVal} Dakika
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Toggleable Mobile/Web Notifications */}
-          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.8rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                {activeProfile.notificationsEnabled ? (
-                  <Bell size={20} color="var(--brand-primary)" />
-                ) : (
-                  <BellOff size={20} color="var(--text-muted)" />
-                )}
-                <strong style={{ fontSize: '1.05rem' }}>Mobil & Web Bildirimleri</strong>
-              </div>
-
-              <input
-                type="checkbox"
-                checked={activeProfile.notificationsEnabled}
-                onChange={(e) => handleToggleNotifications(e.target.checked)}
-                style={{ width: '18px', height: '18px', cursor: 'pointer' }}
-              />
-            </div>
-
-            <p style={{ margin: '0 0 0.8rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-              Hedef tutturulmadığında veya aralıklı tekrar zamanı geldiğinde AI Koç size hatırlatma bildirimi gönderir.
-            </p>
-
-            {activeProfile.notificationsEnabled && (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <span style={{ fontSize: '0.85rem', fontWeight: 700 }}>Günlük Hatırlatma Saati:</span>
-                <select
-                  value={activeProfile.reminderTime || '20:00'}
-                  onChange={(e) => handleChangeReminderTime(e.target.value)}
-                  style={{
-                    padding: '0.4rem 0.6rem',
-                    borderRadius: '8px',
-                    background: 'var(--bg-elevated)',
-                    color: 'var(--text-primary)',
-                    border: '1px solid var(--border-subtle)',
-                  }}
-                >
-                  <option value="18:00">18:00</option>
-                  <option value="19:00">19:00</option>
-                  <option value="20:00">20:00</option>
-                  <option value="21:00">21:00</option>
-                  <option value="22:00">22:00</option>
-                </select>
-
-                <button
-                  type="button"
-                  className="secondary-btn"
-                  onClick={async () => {
-                    const ok = await notificationManager.sendImmediateNotification(
-                      'Kimya YKS AI Koç',
-                      'Harika gidiyorsun! Bildirim sistemi başarıyla çalışıyor.',
-                      true
-                    );
-                    setNotificationFeedback(ok ? '✅ Test bildirimi gönderildi.' : '⚠️ Bildirim izni veya desteği bulunamadı.');
-                    setTimeout(() => setNotificationFeedback(null), 3000);
-                  }}
-                  style={{ fontSize: '0.8rem', padding: '0.35rem 0.7rem' }}
-                >
-                  Test Bildirimi Gönder
-                </button>
-              </div>
-            )}
-
-            {notificationFeedback && (
-              <div style={{ marginTop: '0.6rem', fontSize: '0.85rem', color: 'var(--accent-emerald)', fontWeight: 700 }}>
-                {notificationFeedback}
-              </div>
-            )}
-          </div>
-
-          {/* Target Track Preference */}
-          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
-            <strong style={{ fontSize: '1.05rem', marginBottom: '0.8rem' }}>YKS Sınav İlerleme Tercihi</strong>
-            <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
-              <button
-                type="button"
-                className={activeProfile.targetTrack === 'TYT_FIRST' ? 'primary-btn' : 'secondary-btn'}
-                onClick={() => store.updateProfile(activeProfile.id, { targetTrack: 'TYT_FIRST' })}
-              >
-                1. TYT → 2. AYT Sıralı (Varsayılan)
-              </button>
-              <button
-                type="button"
-                className={activeProfile.targetTrack === 'TYT_ONLY' ? 'primary-btn' : 'secondary-btn'}
-                onClick={() => store.updateProfile(activeProfile.id, { targetTrack: 'TYT_ONLY' })}
-              >
-                Sadece TYT Kimya (10 Ünite)
-              </button>
-              <button
-                type="button"
-                className={activeProfile.targetTrack === 'AYT_FOCUS' ? 'primary-btn' : 'secondary-btn'}
-                onClick={() => store.updateProfile(activeProfile.id, { targetTrack: 'AYT_FOCUS' })}
-              >
-                AYT Odaklı (14 Ünite)
-              </button>
-            </div>
-          </div>
-
-          {/* Theme Settings */}
-          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.8rem' }}>
-              <Palette size={20} color="var(--brand-primary)" />
-              <strong style={{ fontSize: '1.05rem' }}>{t.profile.themeLabel}</strong>
-            </div>
-            <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
-              <button
-                type="button"
-                className={store.themeSetting === 'system' ? 'primary-btn' : 'secondary-btn'}
-                onClick={() => store.setThemeSetting('system')}
-              >
-                {t.profile.themeSystem}
-              </button>
-              <button
-                type="button"
-                className={store.themeSetting === 'light' ? 'primary-btn' : 'secondary-btn'}
-                onClick={() => store.setThemeSetting('light')}
-              >
-                {t.profile.themeLight}
-              </button>
-              <button
-                type="button"
-                className={store.themeSetting === 'dark' ? 'primary-btn' : 'secondary-btn'}
-                onClick={() => store.setThemeSetting('dark')}
-              >
-                {t.profile.themeDark}
-              </button>
-            </div>
-          </div>
-
-          {/* Language Selection (8 Languages) */}
-          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.8rem' }}>
-              <Globe size={20} color="var(--brand-primary)" />
-              <strong style={{ fontSize: '1.05rem' }}>{t.profile.languageLabel} (8 Dil)</strong>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: '0.5rem' }}>
-              {LANGUAGES.map((l) => (
-                <button
-                  key={l.code}
-                  type="button"
-                  className={store.language === l.code ? 'primary-btn' : 'secondary-btn'}
-                  onClick={() => store.setLanguage(l.code)}
-                >
-                  <span>{l.flag}</span>
-                  <span>{l.nativeName}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Audio & Music Controls */}
-          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.8rem' }}>
-              <Volume2 size={20} color="var(--brand-primary)" />
-              <strong style={{ fontSize: '1.05rem' }}>Ses ve Müzik Kontrolleri</strong>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              <label style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer' }}>
-                <span>Ses Efektleri (SFX)</span>
-                <input
-                  type="checkbox"
-                  checked={sfxOn}
-                  onChange={(e) => onSetSfxOn(e.target.checked)}
-                />
-              </label>
-              <label style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer' }}>
-                <span>Arka Plan Müziği</span>
-                <input
-                  type="checkbox"
-                  checked={musicOn}
-                  onChange={(e) => onSetMusicOn(e.target.checked)}
-                />
-              </label>
-              {musicOn && (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', marginTop: '0.4rem' }}>
-                  <span>Parça Seçimi (7 Parça):</span>
-                  <select
-                    value={musicTrackId}
-                    onChange={(e) => onSetMusicTrack(e.target.value)}
-                    style={{
-                      padding: '0.5rem',
-                      borderRadius: '8px',
-                      background: 'var(--bg-elevated)',
-                      color: 'var(--text-primary)',
-                      border: '1px solid var(--border-subtle)',
-                    }}
-                  >
-                    {MUSIC_TRACKS.map((tr) => (
-                      <option key={tr.id} value={tr.id}>
-                        {tr.title[lang] || tr.title.tr}
-                      </option>
-                    ))}
-                  </select>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginTop: '0.4rem' }}>
-                    <Music size={16} />
-                    <input
-                      type="range"
-                      min="0"
-                      max="1"
-                      step="0.05"
-                      value={musicVolume}
-                      onChange={(e) => onSetMusicVolume(parseFloat(e.target.value))}
-                      style={{ flex: 1 }}
-                    />
-                  </label>
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* Motion Accessibility */}
-          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
-            <label style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer' }}>
-              <span>Hareketi Azalt (Reduce Motion)</span>
-              <input
-                type="checkbox"
-                checked={reduceMotion}
-                onChange={(e) => onSetReduceMotion(e.target.checked)}
-              />
-            </label>
-          </div>
-
-          {/* Reset & Onboarding actions */}
-          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <button type="button" className="secondary-btn" onClick={onRelaunchOnboarding}>
-              Tanıtımı Tekrar Başlat
-            </button>
-            <button
-              type="button"
-              className="secondary-btn"
-              style={{ color: 'var(--accent-ruby)' }}
-              onClick={() => {
-                if (window.confirm(t.profile.resetConfirmBody)) {
-                  store.resetAllProgress();
-                }
-              }}
-            >
-              <RotateCcw size={16} />
-              <span>{t.profile.resetProgress}</span>
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Active Quiz Session Modal inside Profile (for Hata Defteri and Bookmarks practice) */}
-      {activeQuizSession && (
+      {session && (
         <QuizSessionModal
-          title={activeQuizSession.title}
-          subtitle={activeQuizSession.subtitle}
-          examType={activeQuizSession.examType}
-          questions={activeQuizSession.questions}
+          title={session.title}
+          subtitle={session.subtitle}
+          examType={session.examType}
+          questions={session.questions}
           isExamMode={false}
-          durationMinutes={Math.max(10, Math.ceil(activeQuizSession.questions.length * 1.5))}
+          durationMinutes={Math.max(10, Math.ceil(session.questions.length * 1.5))}
           lang={lang}
           bookmarkedQuestionIds={store.bookmarkedQuestionIds}
-          onRecordQuestion={store.recordQuestionResult}
+          reviewPicks={session.reviewPicks}
+          onRecordQuestion={onRecordQuestion ?? store.recordQuestionResult}
           onToggleBookmark={store.toggleBookmark}
-          onClose={() => setActiveQuizSession(null)}
+          onClose={() => setSession(null)}
         />
       )}
     </section>

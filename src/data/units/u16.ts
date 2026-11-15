@@ -31,13 +31,13 @@ export const unit16: ChemistryUnitSeedData = {
       "id": "u16-f01",
       "fact": {
         "tr": "Entalpi değişimi (ΔH): Sabit basınç altında gerçekleşen tepkimede alınıp verilen ısı miktarıdır (ΔH = Hürünler - Hgirenler).",
-        "en": "Enthalpy change (ΔH): It is the amount of heat taken in and given out in the reaction that takes place under constant pressure (ΔH = Hproducts - Henters).",
-        "de": "Enthalpieänderung (ΔH): Es handelt sich um die Wärmemenge, die bei der unter konstantem Druck stattfindenden Reaktion aufgenommen und abgegeben wird (ΔH = H-Produkte – Henters).",
-        "fr": "Changement d'enthalpie (ΔH) : C'est la quantité de chaleur absorbée et restituée dans la réaction qui se déroule sous pression constante (ΔH = Hproducts - Henters).",
-        "ru": "Изменение энтальпии (ΔH): это количество тепла, поступившее и отданное в реакции, протекающей под постоянным давлением (ΔH = Hпродукты – Хентерс).",
-        "ar": "التغير في الإنثالبي (ΔH): هو كمية الحرارة الداخلة والخارجة في التفاعل الذي يحدث تحت ضغط ثابت (ΔH = Hمنتجات - هنتر).",
-        "zh": "焓变（ΔH）：是在恒压下发生的反应中吸收和放出的热量（ΔH = H产品 - 亨特斯）。",
-        "ku": "Guherîna entalpî (ΔH): Ew mîqdara germa ku di reaksiyonê de tê girtin û derdikeve ku di bin zexta domdar de pêk tê (ΔH = Hproducts - Henters)."
+        "en": "Enthalpy change (ΔH): the heat absorbed or released in a reaction taking place at constant pressure (ΔH = Hproducts - Hreactants).",
+        "de": "Enthalpieänderung (ΔH): die bei einer Reaktion unter konstantem Druck aufgenommene oder abgegebene Wärme (ΔH = HProdukte - HEdukte).",
+        "fr": "Variation d'enthalpie (ΔH) : chaleur absorbée ou dégagée lors d'une réaction à pression constante (ΔH = Hproduits - Hréactifs).",
+        "ru": "Изменение энтальпии (ΔH) — теплота, поглощаемая или выделяемая в реакции при постоянном давлении (ΔH = Hпродуктов - Hреагентов).",
+        "ar": "تغير الإنثالبي (ΔH): هو كمية الحرارة الممتصة أو المنطلقة في تفاعل يحدث عند ضغط ثابت (ΔH = Hالنواتج - Hالمتفاعلات).",
+        "zh": "焓变（ΔH）：在恒压下进行的反应中吸收或放出的热量（ΔH = H生成物 - H反应物）。",
+        "ku": "Guherîna entalpiyê (ΔH): germa ku di reaksiyoneke di bin zexta sabît de tê girtin an berdan (ΔH = Hberhem - Hreaktant)."
       },
       "trap": {
         "tr": "Entalpi doğrudan ölçülebilen bir büyüklüktür, farkı ölçülemez.",
@@ -54,13 +54,13 @@ export const unit16: ChemistryUnitSeedData = {
       "id": "u16-f02",
       "fact": {
         "tr": "Ekzotermik tepkimelerde ΔH < 0 dır; ısı ürünler tarafına yazılır ve sistem çevreye ısı verir.",
-        "en": "In exothermic reactions, ΔH < 0; Heat is transferred to the products side and the system releases heat to the environment.",
-        "de": "Bei exothermen Reaktionen ist ΔH < 0; Die Wärme wird auf die Produktseite übertragen und das System gibt Wärme an die Umgebung ab.",
-        "fr": "Dans les réactions exothermiques, ΔH < 0 ; La chaleur est transférée du côté des produits et le système libère de la chaleur dans l'environnement.",
-        "ru": "В экзотермических реакциях ΔH < 0; Тепло передается на сторону продукта, а система отдает тепло в окружающую среду.",
-        "ar": "في التفاعلات الطاردة للحرارة، ΔH < 0؛ يتم نقل الحرارة إلى جانب المنتجات ويقوم النظام بإطلاق الحرارة إلى البيئة.",
-        "zh": "在放热反应中，ΔH<0；热量传递到产品侧，系统将热量释放到环境中。",
-        "ku": "Di reaksiyonên exotermîk de, ΔH <0; Germ ji hêla hilberan ve tê veguheztin û pergalê germê berdide hawîrdorê."
+        "en": "In exothermic reactions ΔH < 0; heat is written on the products side and the system releases heat to the surroundings.",
+        "de": "Bei exothermen Reaktionen ist ΔH < 0; die Wärme wird auf der Produktseite notiert und das System gibt Wärme an die Umgebung ab.",
+        "fr": "Dans les réactions exothermiques, ΔH < 0 ; la chaleur s'écrit du côté des produits et le système cède de la chaleur au milieu extérieur.",
+        "ru": "В экзотермических реакциях ΔH < 0; теплоту записывают со стороны продуктов, и система отдаёт тепло окружающей среде.",
+        "ar": "في التفاعلات الطاردة للحرارة ΔH < 0؛ تُكتب الحرارة في جهة النواتج ويطلق النظام حرارة إلى الوسط المحيط.",
+        "zh": "放热反应中 ΔH < 0；热量写在生成物一侧，体系向环境放出热量。",
+        "ku": "Di reaksiyonên ekzotermîk de ΔH < 0 e; germ li aliyê berheman tê nivîsandin û sîstem germê dide hawîrdorê."
       },
       "trap": {
         "tr": "Ekzotermik tepkimelerde ürünlerin entalpisi girenlerinkinden daha büyüktür.",
@@ -77,13 +77,13 @@ export const unit16: ChemistryUnitSeedData = {
       "id": "u16-f03",
       "fact": {
         "tr": "Endotermik tepkimelerde ΔH > 0 dır; ısı girenler tarafına yazılır ve sistem çevreden ısı alır.",
-        "en": "In endothermic reactions, ΔH > 0; Heat is transferred to the input side and the system receives heat from the environment.",
-        "de": "Bei endothermen Reaktionen ist ΔH > 0; Wärme wird auf die Eingangsseite übertragen und das System erhält Wärme aus der Umgebung.",
-        "fr": "Dans les réactions endothermiques, ΔH > 0 ; La chaleur est transférée du côté entrée et le système reçoit la chaleur de l’environnement.",
-        "ru": "В эндотермических реакциях ΔH > 0; Тепло передается на входную сторону, и система получает тепло из окружающей среды.",
-        "ar": "في التفاعلات الماصة للحرارة، ΔH > 0؛ يتم نقل الحرارة إلى جانب الإدخال ويستقبل النظام الحرارة من البيئة.",
-        "zh": "在吸热反应中，ΔH > 0；热量传递到输入侧，系统接收来自环境的热量。",
-        "ku": "Di reaksiyonên endotermîk de, ΔH > 0; Germ li aliyê têketinê tê veguheztin û pergal germê ji hawîrdorê werdigire."
+        "en": "In endothermic reactions ΔH > 0; heat is written on the reactants side and the system absorbs heat from the surroundings.",
+        "de": "Bei endothermen Reaktionen ist ΔH > 0; die Wärme wird auf der Eduktseite notiert und das System nimmt Wärme aus der Umgebung auf.",
+        "fr": "Dans les réactions endothermiques, ΔH > 0 ; la chaleur s'écrit du côté des réactifs et le système absorbe de la chaleur du milieu extérieur.",
+        "ru": "В эндотермических реакциях ΔH > 0; теплоту записывают со стороны реагентов, и система поглощает тепло из окружающей среды.",
+        "ar": "في التفاعلات الماصة للحرارة ΔH > 0؛ تُكتب الحرارة في جهة المتفاعلات ويمتص النظام حرارة من الوسط المحيط.",
+        "zh": "吸热反应中 ΔH > 0；热量写在反应物一侧，体系从环境吸收热量。",
+        "ku": "Di reaksiyonên endotermîk de ΔH > 0 e; germ li aliyê reaktantan tê nivîsandin û sîstem germê ji hawîrdorê distîne."
       },
       "trap": {
         "tr": "Endotermik tepkimeler başladıktan sonra kendiliğinden devam eder.",
@@ -122,14 +122,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-f05",
       "fact": {
-        "tr": "Elementlerin oda koşullarındaki en kararlı hallerinin standart oluşum entalpisi sıfırdır (O2(g)=0, C(grafit)=0; O3(g)!=0, C(elmas)!=0).",
-        "en": "The standard formation enthalpy of the most stable states of the elements at room conditions is zero (O2(g)=0, C(graphite)=0; O3(g)!=0, C(diamond)!=0).",
-        "de": "Die Standardbildungsenthalpie der stabilsten Zustände der Elemente bei Raumbedingungen beträgt Null (O2(g)=0, C(Graphit)=0; O3(g)!=0, C(Diamant)!=0).",
-        "fr": "L'enthalpie standard de formation des états les plus stables des éléments dans les conditions ambiantes est nulle (O2(g)=0, C(graphite)=0 ; O3(g)!=0, C(diamant)!=0).",
-        "ru": "Стандартная энтальпия образования наиболее стабильных состояний элементов в комнатных условиях равна нулю (O2(g)=0, C(графит)=0; O3(g)!=0, C(алмаз)!=0).",
-        "ar": "المحتوى الحراري للتكوين القياسي للحالات الأكثر استقرارًا للعناصر في ظروف الغرفة هو صفر (O2(g)=0, C(graphite)=0; O3(g)!=0, C(diamond)!=0).",
-        "zh": "室温条件下元素最稳定状态的标准生成焓为零（O2（g）= 0，C（石墨）= 0；O3（g）！= 0，C（金刚石）！= 0）。",
-        "ku": "Entalpiya pêkhatina standard a rewşên herî bi îstîqrar ên hêmanan di şert û mercên odeyê de sifir e (O2(g)=0, C(grafît)=0; O3(g)!=0, C(almas)!=0)."
+        "tr": "Elementlerin oda koşullarındaki en kararlı hallerinin standart oluşum entalpisi sıfırdır (O2(g)=0, C(grafit)=0; O3(g)≠0, C(elmas)≠0).",
+        "en": "The standard formation enthalpy of the most stable states of the elements at room conditions is zero (O2(g)=0, C(graphite)=0; O3(g)≠0, C(diamond)≠0).",
+        "de": "Die Standardbildungsenthalpie der stabilsten Zustände der Elemente bei Raumbedingungen beträgt Null (O2(g)=0, C(Graphit)=0; O3(g)≠0, C(Diamant)≠0).",
+        "fr": "L'enthalpie standard de formation des états les plus stables des éléments dans les conditions ambiantes est nulle (O2(g)=0, C(graphite)=0 ; O3(g)≠0, C(diamant)≠0).",
+        "ru": "Стандартная энтальпия образования наиболее стабильных состояний элементов в комнатных условиях равна нулю (O2(g)=0, C(графит)=0; O3(g)≠0, C(алмаз)≠0).",
+        "ar": "المحتوى الحراري للتكوين القياسي للحالات الأكثر استقرارًا للعناصر في ظروف الغرفة هو صفر (O2(g)=0, C(graphite)=0; O3(g)≠0, C(diamond)≠0).",
+        "zh": "室温条件下元素最稳定状态的标准生成焓为零（O2（g）= 0，C（石墨）= 0；O3（g）≠ 0，C（金刚石）≠ 0）。",
+        "ku": "Entalpiya pêkhatina standard a rewşên herî bi îstîqrar ên hêmanan di şert û mercên odeyê de sifir e (O2(g)=0, C(grafît)=0; O3(g)≠0, C(almas)≠0)."
       },
       "trap": {
         "tr": "Elmasın standart oluşum entalpisi sıfırdır.",
@@ -307,23 +307,23 @@ export const unit16: ChemistryUnitSeedData = {
       "id": "u16-f13",
       "fact": {
         "tr": "Gazların suda çözünmesi, donma, yoğuşma ve kırağılaşma ekzotermiktir.",
-        "en": "Dissolution of gases in water, freezing, condensation and frost are exothermic.",
-        "de": "Die Auflösung von Gasen in Wasser, Gefrieren, Kondensation und Frost sind exotherm.",
-        "fr": "La dissolution des gaz dans l'eau, le gel, la condensation et le gel sont exothermiques.",
-        "ru": "Растворение газов в воде, замерзание, конденсация и иней экзотермичны.",
-        "ar": "إن ذوبان الغازات في الماء والتجميد والتكثيف والصقيع تعتبر طاردة للحرارة.",
-        "zh": "气体在水中的溶解、冻结、凝结和霜都是放热的。",
-        "ku": "Hilweşîna gazên di avê de, cemidandin, kondensasyon û cemidî germahî ne."
+        "en": "The dissolution of gases in water, freezing, condensation and deposition (gas → solid) are exothermic.",
+        "de": "Das Lösen von Gasen in Wasser, das Gefrieren, die Kondensation und die Resublimation sind exotherm.",
+        "fr": "La dissolution des gaz dans l'eau, la solidification, la liquéfaction (condensation) et la condensation solide (gaz → solide) sont exothermiques.",
+        "ru": "Растворение газов в воде, замерзание, конденсация и десублимация экзотермичны.",
+        "ar": "ذوبان الغازات في الماء والتجمد والتكاثف والترسيب (تحول الغاز إلى صلب) عمليات طاردة للحرارة.",
+        "zh": "气体溶于水、凝固、液化和凝华都是放热过程。",
+        "ku": "Helbûna gazan di avê de, cemidîn, şilbûn (kondensasyon) û depozîsyon (gaz → hişk) ekzotermîk in."
       },
       "trap": {
         "tr": "Kırağılaşma olayında madde çevreden ısı alır.",
-        "en": "In the event of frost, the substance receives heat from the environment.",
-        "de": "Bei Frost erhält der Stoff Wärme aus der Umgebung.",
-        "fr": "En cas de gel, la substance reçoit de la chaleur de l'environnement.",
-        "ru": "В случае мороза вещество получает тепло из окружающей среды.",
-        "ar": "في حالة الصقيع، تتلقى المادة الحرارة من البيئة.",
-        "zh": "如果发生霜冻，该物质会从环境中吸收热量。",
-        "ku": "Di dema cemedê de madde ji hawîrdorê germê distîne."
+        "en": "During deposition (gas → solid), the substance absorbs heat from the surroundings.",
+        "de": "Bei der Resublimation nimmt der Stoff Wärme aus der Umgebung auf.",
+        "fr": "Lors de la condensation solide (gaz → solide), la substance absorbe de la chaleur du milieu extérieur.",
+        "ru": "При десублимации вещество поглощает тепло из окружающей среды.",
+        "ar": "أثناء الترسيب (تحول الغاز إلى صلب) تمتص المادة حرارة من الوسط المحيط.",
+        "zh": "凝华过程中物质从环境吸收热量。",
+        "ku": "Di dema depozîsyonê de (gaz → hişk) madde germê ji hawîrdorê distîne."
       }
     },
     {
@@ -375,24 +375,24 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-f16",
       "fact": {
-        "tr": "Ekzotermik tepkimelerde düşük sıcaklıkta ürünler girenlerden daha kararlıdır.",
-        "en": "In exothermic reactions, the products are more stable than the reactants at low temperatures.",
-        "de": "Bei exothermen Reaktionen sind die Produkte bei niedrigen Temperaturen stabiler als die Reaktanten.",
-        "fr": "Dans les réactions exothermiques, les produits sont plus stables que les réactifs à basse température.",
-        "ru": "Продукты экзотермических реакций более стабильны, чем реагенты, при низких температурах.",
-        "ar": "في التفاعلات الطاردة للحرارة، تكون المنتجات أكثر استقرارًا من المواد المتفاعلة عند درجات حرارة منخفضة.",
-        "zh": "在放热反应中，产物在低温下比反应物更稳定。",
-        "ku": "Di reaksiyonên exotermîk de, hilber ji reaktantên di germahiyên nizm de aramtir in."
+        "tr": "Ekzotermik tepkimelerde ürünlerin potansiyel enerjisi (entalpisi) girenlerinkinden düşük olduğundan ürünler girenlerden daha kararlıdır.",
+        "en": "In exothermic reactions the products have lower potential energy (enthalpy) than the reactants, so the products are more stable than the reactants.",
+        "de": "Bei exothermen Reaktionen haben die Produkte eine geringere potentielle Energie (Enthalpie) als die Edukte und sind daher stabiler als diese.",
+        "fr": "Dans les réactions exothermiques, les produits ont une énergie potentielle (enthalpie) plus faible que les réactifs ; ils sont donc plus stables que les réactifs.",
+        "ru": "В экзотермических реакциях потенциальная энергия (энтальпия) продуктов ниже, чем у реагентов, поэтому продукты устойчивее реагентов.",
+        "ar": "في التفاعلات الطاردة للحرارة تكون الطاقة الكامنة (الإنثالبي) للنواتج أقل منها للمتفاعلات، لذا تكون النواتج أكثر استقرارًا من المتفاعلات.",
+        "zh": "放热反应中生成物的势能（焓）低于反应物，因此生成物比反应物更稳定。",
+        "ku": "Di reaksiyonên ekzotermîk de enerjiya potansiyel (entalpî) ya berheman ji ya reaktantan kêmtir e, ji ber vê berhem ji reaktantan stabîltir in."
       },
       "trap": {
-        "tr": "Endotermik tepkimelerde düşük sıcaklıkta ürünler daha kararlıdır.",
-        "en": "In endothermic reactions, products are more stable at low temperatures.",
-        "de": "Bei endothermen Reaktionen sind die Produkte bei niedrigen Temperaturen stabiler.",
-        "fr": "Dans les réactions endothermiques, les produits sont plus stables à basse température.",
-        "ru": "Продукты эндотермических реакций более стабильны при низких температурах.",
-        "ar": "في التفاعلات الماصة للحرارة، تكون المنتجات أكثر استقرارًا عند درجات الحرارة المنخفضة.",
-        "zh": "在吸热反应中，产物在低温下更稳定。",
-        "ku": "Di reaksiyonên endotermîk de, hilber di germên nizm de aramtir in."
+        "tr": "Endotermik tepkimelerde ürünler girenlerden daha kararlıdır.",
+        "en": "In endothermic reactions the products are more stable than the reactants.",
+        "de": "Bei endothermen Reaktionen sind die Produkte stabiler als die Edukte.",
+        "fr": "Dans les réactions endothermiques, les produits sont plus stables que les réactifs.",
+        "ru": "В эндотермических реакциях продукты устойчивее реагентов.",
+        "ar": "في التفاعلات الماصة للحرارة تكون النواتج أكثر استقرارًا من المتفاعلات.",
+        "zh": "吸热反应中生成物比反应物更稳定。",
+        "ku": "Di reaksiyonên endotermîk de berhem ji reaktantan stabîltir in."
       }
     }
   ],
@@ -447,15 +447,15 @@ export const unit16: ChemistryUnitSeedData = {
         "en": "Bond Energy",
         "de": "Bindungsenergie",
         "fr": "Énergie de liaison",
-        "ru": "Бонд Энерджи",
-        "ar": "طاقة السندات",
-        "zh": "邦德能源",
-        "ku": "Enerjiya Bond"
+        "ru": "Энергия связи",
+        "ar": "طاقة الرابطة",
+        "zh": "键能",
+        "ku": "Enerjiya girêdanê"
       },
       "distinction": {
         "tr": "Oluşum entalpisi elementlerden sentez ısısıdır; bağ enerjisi gaz fazında 1 mol bağı kırma enerjisidir.",
         "en": "Enthalpy of formation is the heat of synthesis from elements; Bond energy is the energy of breaking 1 mole of bonds in the gas phase.",
-        "de": "Die Bildungsenthalpie ist die Wärme der Synthese von Elementen; Die Bindungsenergie ist die Energie, die beim Aufbrechen von 1 Mol Bindungen in der Gasphase entsteht.",
+        "de": "Die Bildungsenthalpie ist die Wärme bei der Bildung aus den Elementen; die Bindungsenergie ist die Energie, die zum Aufbrechen von 1 mol Bindungen in der Gasphase nötig ist.",
         "fr": "L'enthalpie de formation est la chaleur de synthèse des éléments ; L’énergie de liaison est l’énergie de rupture d’1 mole de liaisons en phase gazeuse.",
         "ru": "Энтальпия образования — это теплота синтеза элементов; Энергия связи — это энергия разрыва 1 моля связей в газовой фазе.",
         "ar": "المحتوى الحراري للتكوين هو حرارة التوليف من العناصر. طاقة الرابطة هي طاقة كسر 1 مول من الروابط في الطور الغازي.",
@@ -486,14 +486,14 @@ export const unit16: ChemistryUnitSeedData = {
         "ku": "Entalpiya Reaksiyonê (Delta H°)"
       },
       "distinction": {
-        "tr": "Oluşum entalpisi 1 mol bileşiğin standart haldeki kararlı elementlerinden oluşma ısısıdır; tepkime entalpisi girenlerle ürünler arası ısı farkıdır.",
-        "en": "Enthalpy of formation is the heat of formation of 1 mole of a compound from stable elements in the standard state; Reaction enthalpy is the temperature difference between the reactants and the products.",
-        "de": "Die Bildungsenthalpie ist die Bildungswärme von 1 Mol einer Verbindung aus stabilen Elementen im Standardzustand; Die Reaktionsenthalpie ist der Temperaturunterschied zwischen den Reaktanten und den Produkten.",
-        "fr": "L'enthalpie de formation est la chaleur de formation de 1 mole d'un composé à partir d'éléments stables à l'état standard ; L'enthalpie de réaction est la différence de température entre les réactifs et les produits.",
-        "ru": "Энтальпия образования — теплота образования 1 моля соединения из стабильных элементов в стандартном состоянии; Энтальпия реакции – это разница температур между реагентами и продуктами.",
-        "ar": "إنثالبي التكوين هي حرارة تكوين 1 مول من مركب من عناصر مستقرة في الحالة القياسية؛ المحتوى الحراري للتفاعل هو الفرق في درجة الحرارة بين المواد المتفاعلة والمنتجات.",
-        "zh": "生成热是指标准状态下的稳定元素生成 1 摩尔化合物的热量；反应焓是反应物和产物之间的温差。",
-        "ku": "Entalpiya pêkhatinê germahiya çêbûna 1 molê pêkhateyek ji hêmanên stabîl di rewşa standard de ye; Entalpiya reaksiyonê cudahiya germahiyê ya di navbera reaktant û hilberan de ye."
+        "tr": "Standart oluşum entalpisi 1 mol bileşiğin standart koşullarda kararlı elementlerinden oluşmasındaki entalpi değişimidir; tepkime entalpisi ise ürünlerin toplam entalpisi ile girenlerin toplam entalpisi arasındaki farktır.",
+        "en": "Standard enthalpy of formation is the enthalpy change when 1 mol of a compound forms from its stable elements under standard conditions; reaction enthalpy is the difference between the total enthalpy of the products and that of the reactants.",
+        "de": "Die Standardbildungsenthalpie ist die Enthalpieänderung bei der Bildung von 1 mol einer Verbindung aus ihren stabilen Elementen unter Standardbedingungen; die Reaktionsenthalpie ist die Differenz zwischen der Gesamtenthalpie der Produkte und der der Edukte.",
+        "fr": "L'enthalpie standard de formation est la variation d'enthalpie lors de la formation de 1 mol d'un composé à partir de ses éléments stables dans les conditions standard ; l'enthalpie de réaction est la différence entre l'enthalpie totale des produits et celle des réactifs.",
+        "ru": "Стандартная энтальпия образования — изменение энтальпии при образовании 1 моль соединения из устойчивых простых веществ в стандартных условиях; энтальпия реакции — разность суммарных энтальпий продуктов и реагентов.",
+        "ar": "إنثالبي التكوين القياسي هو تغير الإنثالبي عند تكوين 1 مول من المركب من عناصره المستقرة في الظروف القياسية؛ أما إنثالبي التفاعل فهو الفرق بين مجموع إنثالبي النواتج ومجموع إنثالبي المتفاعلات.",
+        "zh": "标准生成焓是在标准状况下由稳定单质生成 1 mol 化合物时的焓变；反应焓是生成物总焓与反应物总焓之差。",
+        "ku": "Entalpiya standard a pêkhatinê guherîna entalpiyê ye dema ku 1 mol pêkhate di şert û mercên standard de ji hêmanên xwe yên stabîl çêdibe; entalpiya reaksiyonê cudahiya navbera entalpiya giştî ya berheman û ya reaktantan e."
       }
     },
     {
@@ -510,13 +510,13 @@ export const unit16: ChemistryUnitSeedData = {
       },
       "conceptB": {
         "tr": "Geri Aktifleşme Enerjisi (Eag)",
-        "en": "Back Activation Energy (Eag)",
-        "de": "Rückenaktivierungsenergie (Eag)",
-        "fr": "Énergie d'activation du dos (Eag)",
-        "ru": "Назад Энергия активации (Eag)",
-        "ar": "طاقة التنشيط الخلفي (Eag)",
-        "zh": "反激活能 (Eag)",
-        "ku": "Enerjiya Çalakkirina Paşê (Eag)"
+        "en": "Reverse Activation Energy (Eag)",
+        "de": "Aktivierungsenergie der Rückreaktion (Eag)",
+        "fr": "Énergie d'activation inverse (Eag)",
+        "ru": "Энергия активации обратной реакции (Eag)",
+        "ar": "طاقة تنشيط التفاعل العكسي (Eag)",
+        "zh": "逆反应活化能 (Eag)",
+        "ku": "Enerjiya aktîvasyonê ya reaksiyona berevajî (Eag)"
       },
       "distinction": {
         "tr": "Eai girenlerin aktifleşmiş komplekse ulaşma bariyeridir; Eag ürünlerin geri dönme bariyeridir; Delta H = Eai - Eag'dir.",
@@ -532,57 +532,57 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-c05",
       "conceptA": {
-        "tr": "Ekzotermik Tepkime (Delta H < 0)",
-        "en": "Exothermic Reaction (Delta H < 0)",
-        "de": "Exotherme Reaktion (Delta H < 0)",
-        "fr": "Réaction exothermique (Delta H < 0)",
-        "ru": "Экзотермическая реакция (Дельта H < 0)",
-        "ar": "التفاعل الطارد للحرارة (دلتا H <0)",
-        "zh": "放热反应（Delta H < 0）",
-        "ku": "Reaksiyona Exotermîk (Delta H <0)"
+        "tr": "Sistem",
+        "en": "System",
+        "de": "System",
+        "fr": "Système",
+        "ru": "Система",
+        "ar": "النظام",
+        "zh": "体系",
+        "ku": "Sîstem"
       },
       "conceptB": {
-        "tr": "Endotermik Tepkime (Delta H > 0)",
-        "en": "Endothermic Reaction (Delta H > 0)",
-        "de": "Endotherme Reaktion (Delta H > 0)",
-        "fr": "Réaction endothermique (Delta H > 0)",
-        "ru": "Эндотермическая реакция (Дельта H > 0)",
-        "ar": "التفاعل الماص للحرارة (Delta H > 0)",
-        "zh": "吸热反应（Delta H > 0）",
-        "ku": "Reaksiyona Endotermîk (Delta H > 0)"
+        "tr": "Ortam (Çevre)",
+        "en": "Surroundings",
+        "de": "Umgebung",
+        "fr": "Milieu extérieur",
+        "ru": "Окружающая среда",
+        "ar": "الوسط المحيط",
+        "zh": "环境",
+        "ku": "Hawîrdor"
       },
       "distinction": {
-        "tr": "Ekzotermik tepkimede ürünler girenlerden daha kararlıdır ve ısı açığa çıkar; endotermik tepkimede dışarıdan ısı alınır.",
-        "en": "In an exothermic reaction, the products are more stable than the reactants and heat is released; In an endothermic reaction, heat is taken from outside.",
-        "de": "Bei einer exothermen Reaktion sind die Produkte stabiler als die Reaktanten und es wird Wärme frei; Bei einer endothermen Reaktion wird Wärme von außen aufgenommen.",
-        "fr": "Dans une réaction exothermique, les produits sont plus stables que les réactifs et de la chaleur est dégagée ; Dans une réaction endothermique, la chaleur provient de l’extérieur.",
-        "ru": "В экзотермической реакции продукты более стабильны, чем реагенты, и выделяется тепло; При эндотермической реакции тепло забирается извне.",
-        "ar": "في التفاعل الطارد للحرارة، تكون المنتجات أكثر استقرارًا من المواد المتفاعلة ويتم إطلاق الحرارة؛ في التفاعل الماص للحرارة، يتم أخذ الحرارة من الخارج.",
-        "zh": "在放热反应中，产物比反应物更稳定并释放热量；在吸热反应中，从外部获取热量。",
-        "ku": "Di reaksiyonek exotermîk de, hilber ji reaktantan aramtir in û germ tê berdan; Di reaksiyonek endotermîk de, germ ji derve tê girtin."
+        "tr": "Sistem, incelenen madde ya da tepkime karışımıdır; ortam (çevre) ise sistemin dışında kalan ve sistemle ısı ya da iş şeklinde enerji alışverişi yapan her şeydir.",
+        "en": "The system is the substance or reaction mixture being studied; the surroundings are everything outside the system that exchanges energy with it as heat or work.",
+        "de": "Das System ist der untersuchte Stoff bzw. das Reaktionsgemisch; die Umgebung ist alles außerhalb des Systems, das mit ihm Energie in Form von Wärme oder Arbeit austauscht.",
+        "fr": "Le système est la substance ou le mélange réactionnel étudié ; le milieu extérieur est tout ce qui se trouve hors du système et échange de l'énergie avec lui sous forme de chaleur ou de travail.",
+        "ru": "Система — изучаемое вещество или реакционная смесь; окружающая среда — всё, что находится вне системы и обменивается с ней энергией в виде теплоты или работы.",
+        "ar": "النظام هو المادة أو خليط التفاعل قيد الدراسة؛ أما الوسط المحيط فهو كل ما يقع خارج النظام ويتبادل معه الطاقة على شكل حرارة أو شغل.",
+        "zh": "体系是所研究的物质或反应混合物；环境是体系以外、以热或功的形式与体系交换能量的一切部分。",
+        "ku": "Sîstem madde an tevliheviya reaksiyonê ye ku tê lêkolîn; hawîrdor her tişt e ku li derveyî sîstemê ye û bi wê re bi awayê germ an kar enerjiyê diguhere."
       }
     },
     {
       "id": "u16-c06",
       "conceptA": {
         "tr": "Bağ Kırılması",
-        "en": "Ligament Break",
-        "de": "Bänderriss",
-        "fr": "Rupture ligamentaire",
-        "ru": "Разрыв связок",
-        "ar": "كسر الرباط",
-        "zh": "韧带断裂",
-        "ku": "Ligament Break"
+        "en": "Bond Breaking",
+        "de": "Bindungsbruch",
+        "fr": "Rupture de liaison",
+        "ru": "Разрыв связи",
+        "ar": "كسر الرابطة",
+        "zh": "化学键断裂",
+        "ku": "Şikandina girêdanê"
       },
       "conceptB": {
         "tr": "Bağ Oluşumu",
         "en": "Bond Formation",
         "de": "Bindungsbildung",
-        "fr": "Formation de liens",
-        "ru": "Формирование облигаций",
-        "ar": "تشكيل السندات",
-        "zh": "债券形成",
-        "ku": "Damezrandina Bond"
+        "fr": "Formation de liaison",
+        "ru": "Образование связи",
+        "ar": "تكوين الرابطة",
+        "zh": "化学键形成",
+        "ku": "Çêbûna girêdanê"
       },
       "distinction": {
         "tr": "Kimyasal bağ kırılması daima endotermiktir (ısı alır); kimyasal bağ oluşumu daima ekzotermiktir (ısı verir).",
@@ -647,8 +647,8 @@ export const unit16: ChemistryUnitSeedData = {
         "fr": "Produit stable",
         "ru": "Стабильный продукт",
         "ar": "منتج مستقر",
-        "zh": "产品稳定",
-        "ku": "Hilbera Stable"
+        "zh": "稳定产物",
+        "ku": "Berhema stabîl"
       },
       "distinction": {
         "tr": "Aktifleşmiş kompleks en yüksek enerjili tepe noktasındaki anlık kararsız yapıdır; ürün minimum enerjili kararlı moleküldür.",
@@ -797,34 +797,34 @@ export const unit16: ChemistryUnitSeedData = {
           "ku": "Madeyên ku di reaksiyonê de dikevin û derdikevin têne navnîş kirin."
         },
         {
-          "tr": "Ürünlerin standart oluşum entalpileri katsayılarıyla çarpılır",
-          "en": "The standard formation enthalpies of the products are multiplied by their coefficients",
-          "de": "Die Standardbildungsenthalpien der Produkte werden mit ihren Koeffizienten multipliziert",
-          "fr": "Les enthalpies standards de formation des produits sont multipliées par leurs coefficients",
-          "ru": "Стандартные энтальпии образования продуктов умножаются на их коэффициенты.",
-          "ar": "يتم ضرب المحتوى الحراري للتكوين القياسي للمنتجات في معاملاتها",
-          "zh": "产品的标准生成焓乘以它们的系数",
-          "ku": "Entalpiyên pêkhatina standard ên hilberan bi hevberên wan têne zêdekirin"
+          "tr": "Ürünlerin standart oluşum entalpileri katsayılarıyla çarpılıp toplanır",
+          "en": "The standard enthalpies of formation of the products are multiplied by their coefficients and added",
+          "de": "Die Standardbildungsenthalpien der Produkte werden mit ihren Koeffizienten multipliziert und addiert",
+          "fr": "Les enthalpies standard de formation des produits sont multipliées par leurs coefficients puis additionnées",
+          "ru": "Стандартные энтальпии образования продуктов умножают на коэффициенты и складывают",
+          "ar": "تُضرب إنثالبيات التكوين القياسية للنواتج في معاملاتها ثم تُجمع",
+          "zh": "生成物的标准生成焓乘以各自系数后相加",
+          "ku": "Entalpiyên standard ên pêkhatinê yên berheman bi rêjeyên xwe tên lêkdan û berhevkirin"
         },
         {
-          "tr": "Girenlerin standart oluşum entalpileri katsayılarıyla toplanır",
-          "en": "The standard enthalpies of formation of the reactants are summed with their coefficients",
-          "de": "Die Standardbildungsenthalpien der Reaktanten werden mit ihren Koeffizienten summiert",
-          "fr": "Les enthalpies standards de formation des réactifs sont sommées avec leurs coefficients",
-          "ru": "Стандартные энтальпии образования реагентов суммируются с их коэффициентами",
-          "ar": "يتم جمع المحتوى الحراري القياسي لتكوين المواد المتفاعلة مع معاملاتها",
-          "zh": "反应物的标准生成焓与其系数相加",
-          "ku": "Entalpiyên standard ên pêkhatina reaktantan bi hevberên wan re têne berhev kirin"
+          "tr": "Girenlerin standart oluşum entalpileri katsayılarıyla çarpılıp toplanır",
+          "en": "The standard enthalpies of formation of the reactants are multiplied by their coefficients and added",
+          "de": "Die Standardbildungsenthalpien der Edukte werden mit ihren Koeffizienten multipliziert und addiert",
+          "fr": "Les enthalpies standard de formation des réactifs sont multipliées par leurs coefficients puis additionnées",
+          "ru": "Стандартные энтальпии образования реагентов умножают на коэффициенты и складывают",
+          "ar": "تُضرب إنثالبيات التكوين القياسية للمتفاعلات في معاملاتها ثم تُجمع",
+          "zh": "反应物的标准生成焓乘以各自系数后相加",
+          "ku": "Entalpiyên standard ên pêkhatinê yên reaktantan bi rêjeyên xwe tên lêkdan û berhevkirin"
         },
         {
           "tr": "Delta H = Toplam H(ürünler) - Toplam H(girenler) formülü uygulanır",
-          "en": "Delta H = Total H(products) - Total H(reactants) formula is applied",
-          "de": "Delta H = Gesamt-H (Produkte) – Die Formel für Gesamt-H (Reaktanten) wird angewendet",
-          "fr": "Delta H = Total H (produits) - La formule Total H (réactifs) est appliquée",
-          "ru": "Дельта H = Общее количество H(продуктов) – применяется формула общего количества H(реагентов).",
-          "ar": "دلتا H = إجمالي H (المنتجات) - يتم تطبيق صيغة إجمالي H (المواد المتفاعلة).",
-          "zh": "Delta H = 总 H（产物）- 总 H（反应物）应用公式",
-          "ku": "Delta H = Bi tevahî H (hilber) - Formula tevahî H (reaktant) tê sepandin"
+          "en": "The formula ΔH = ΣH(products) - ΣH(reactants) is applied",
+          "de": "Die Formel ΔH = ΣH(Produkte) - ΣH(Edukte) wird angewendet",
+          "fr": "On applique la formule ΔH = ΣH(produits) - ΣH(réactifs)",
+          "ru": "Применяют формулу ΔH = ΣH(продуктов) - ΣH(реагентов)",
+          "ar": "تُطبَّق العلاقة ΔH = ΣH(النواتج) - ΣH(المتفاعلات)",
+          "zh": "应用公式 ΔH = ΣH(生成物) - ΣH(反应物)",
+          "ku": "Formula ΔH = ΣH(berhem) - ΣH(reaktant) tê sepandin"
         }
       ]
     },
@@ -863,13 +863,13 @@ export const unit16: ChemistryUnitSeedData = {
         },
         {
           "tr": "Eai = Eaktifleşmiş - Egirenler ile ileri aktifleşme enerjisi bulunur",
-          "en": "Eai = Eactivated - Advanced activation energy is found with Egirens",
-          "de": "Eai = Eactivated – Erweiterte Aktivierungsenergie wird bei Egirens gefunden",
-          "fr": "Eai = Eactivated - L'énergie d'activation avancée se trouve avec Egirens",
-          "ru": "Eai = Eactivated — расширенная энергия активации обнаруживается с помощью Egirens.",
-          "ar": "Eai = مفعل - تم العثور على طاقة التنشيط المتقدمة مع Egirens",
-          "zh": "Eai = Eactivated - 通过 Egirens 发现高级活化能",
-          "ku": "Eai = Çalakkirî - Enerjiya çalakkirina pêşkeftî bi Egirens re tê dîtin"
+          "en": "The forward activation energy is found from Eai = E(activated complex) - E(reactants)",
+          "de": "Die Aktivierungsenergie der Hinreaktion ergibt sich aus Eai = E(aktivierter Komplex) - E(Edukte)",
+          "fr": "L'énergie d'activation directe est obtenue par Eai = E(complexe activé) - E(réactifs)",
+          "ru": "Энергию активации прямой реакции находят по формуле Eai = E(активированного комплекса) - E(реагентов)",
+          "ar": "تُحسب طاقة تنشيط التفاعل الأمامي من العلاقة Eai = E(المعقد المنشط) - E(المتفاعلات)",
+          "zh": "由 Eai = E(活化络合物) - E(反应物) 求出正反应活化能",
+          "ku": "Enerjiya aktîvasyonê ya pêşve bi Eai = E(kompleksa aktîfkirî) - E(reaktant) tê dîtin"
         },
         {
           "tr": "Delta H = Eai - Eag eşitliğiyle tepkime ısısı doğrulanır",
@@ -905,7 +905,7 @@ export const unit16: ChemistryUnitSeedData = {
           "fr": "-45 kJ",
           "ru": "-45 кДж",
           "ar": "-45 كيلوجول",
-          "zh": "-45焦耳",
+          "zh": "-45 kJ",
           "ku": "-45 kJ"
         },
         {
@@ -915,7 +915,7 @@ export const unit16: ChemistryUnitSeedData = {
           "fr": "+45 kJ",
           "ru": "+45 кДж",
           "ar": "+45 كيلوجول",
-          "zh": "+45kJ",
+          "zh": "+45 kJ",
           "ku": "+45 kJ"
         },
         {
@@ -925,7 +925,7 @@ export const unit16: ChemistryUnitSeedData = {
           "fr": "+215 kJ",
           "ru": "+215 кДж",
           "ar": "+215 كيلوجول",
-          "zh": "+215kJ",
+          "zh": "+215 kJ",
           "ku": "+215 kJ"
         },
         {
@@ -935,7 +935,7 @@ export const unit16: ChemistryUnitSeedData = {
           "fr": "-215 kJ",
           "ru": "-215 кДж",
           "ar": "-215 كيلوجول",
-          "zh": "-215焦耳",
+          "zh": "-215 kJ",
           "ku": "-215 kJ"
         },
         {
@@ -945,7 +945,7 @@ export const unit16: ChemistryUnitSeedData = {
           "fr": "+85 kJ",
           "ru": "+85 кДж",
           "ar": "+85 كيلوجول",
-          "zh": "+85kJ",
+          "zh": "+85 kJ",
           "ku": "+85 kJ"
         }
       ],
@@ -996,13 +996,13 @@ export const unit16: ChemistryUnitSeedData = {
         },
         {
           "tr": "H2O(s)",
-          "en": "H2O(s)",
-          "de": "H2O(s)",
-          "fr": "H2O(s)",
-          "ru": "H2O(s)",
-          "ar": "H2O(s)",
-          "zh": "H2O(s)",
-          "ku": "H2O(s)"
+          "en": "H2O(l)",
+          "de": "H2O(l)",
+          "fr": "H2O(l)",
+          "ru": "H2O(l)",
+          "ar": "H2O(l)",
+          "zh": "H2O(l)",
+          "ku": "H2O(l)"
         },
         {
           "tr": "CO2(g)",
@@ -1019,9 +1019,9 @@ export const unit16: ChemistryUnitSeedData = {
           "en": "C(diamond)",
           "de": "C (Diamant)",
           "fr": "C(diamant)",
-          "ru": "С(бриллиант)",
-          "ar": "ج (الماس)",
-          "zh": "C(钻石)",
+          "ru": "C(алмаз)",
+          "ar": "C(الماس)",
+          "zh": "C(金刚石)",
           "ku": "C (almas)"
         }
       ],
@@ -1072,13 +1072,13 @@ export const unit16: ChemistryUnitSeedData = {
         },
         {
           "tr": "Endotermik tepkimelerde ΔH > 0 dır; ısı girenler tarafına yazılır ve sistem çevreden ısı alır.",
-          "en": "In endothermic reactions, ΔH > 0; Heat is transferred to the input side and the system receives heat from the environment.",
-          "de": "Bei endothermen Reaktionen ist ΔH > 0; Wärme wird auf die Eingangsseite übertragen und das System erhält Wärme aus der Umgebung.",
-          "fr": "Dans les réactions endothermiques, ΔH > 0 ; La chaleur est transférée du côté entrée et le système reçoit la chaleur de l’environnement.",
-          "ru": "В эндотермических реакциях ΔH > 0; Тепло передается на входную сторону, и система получает тепло из окружающей среды.",
-          "ar": "في التفاعلات الماصة للحرارة، ΔH > 0؛ يتم نقل الحرارة إلى جانب الإدخال ويستقبل النظام الحرارة من البيئة.",
-          "zh": "在吸热反应中，ΔH > 0；热量传递到输入侧，系统接收来自环境的热量。",
-          "ku": "Di reaksiyonên endotermîk de, ΔH > 0; Germ li aliyê têketinê tê veguheztin û pergal germê ji hawîrdorê werdigire."
+          "en": "In endothermic reactions ΔH > 0; heat is written on the reactants side and the system absorbs heat from the surroundings.",
+          "de": "Bei endothermen Reaktionen ist ΔH > 0; die Wärme wird auf der Eduktseite notiert und das System nimmt Wärme aus der Umgebung auf.",
+          "fr": "Dans les réactions endothermiques, ΔH > 0 ; la chaleur s'écrit du côté des réactifs et le système absorbe de la chaleur du milieu extérieur.",
+          "ru": "В эндотермических реакциях ΔH > 0; теплоту записывают со стороны реагентов, и система поглощает тепло из окружающей среды.",
+          "ar": "في التفاعلات الماصة للحرارة ΔH > 0؛ تُكتب الحرارة في جهة المتفاعلات ويمتص النظام حرارة من الوسط المحيط.",
+          "zh": "吸热反应中 ΔH > 0；热量写在反应物一侧，体系从环境吸收热量。",
+          "ku": "Di reaksiyonên endotermîk de ΔH > 0 e; germ li aliyê reaktantan tê nivîsandin û sîstem germê ji hawîrdorê distîne."
         },
         {
           "tr": "ΔH = Eag - Eai dir.",
@@ -1104,13 +1104,13 @@ export const unit16: ChemistryUnitSeedData = {
       "correctIndex": 2,
       "explanation": {
         "tr": "Doğru cevap \"Endotermik tepkimelerde ΔH > 0 dır; ısı girenler tarafına yazılır ve sistem çevreden ısı alır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"In endothermic reactions, ΔH > 0; Heat is transferred to the input side and the system receives heat from the environment.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Bei endothermen Reaktionen ist ΔH > 0; Wärme wird auf die Eingangsseite übertragen und das System erhält Wärme aus der Umgebung.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Dans les réactions endothermiques, ΔH > 0 ; La chaleur est transférée du côté entrée et le système reçoit la chaleur de l’environnement.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «В эндотермических реакциях ΔH > 0; Тепло передается на входную сторону, и система получает тепло из окружающей среды.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في التفاعلات الماصة للحرارة، ΔH > 0؛ يتم نقل الحرارة إلى جانب الإدخال ويستقبل النظام الحرارة من البيئة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“在吸热反应中，ΔH > 0；热量传递到输入侧，系统接收来自环境的热量。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di reaksiyonên endotermîk de, ΔH > 0; Germ li aliyê têketinê tê veguheztin û pergal germê ji hawîrdorê werdigire.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"In endothermic reactions ΔH > 0; heat is written on the reactants side and the system absorbs heat from the surroundings.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Bei endothermen Reaktionen ist ΔH > 0; die Wärme wird auf der Eduktseite notiert und das System nimmt Wärme aus der Umgebung auf.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Dans les réactions endothermiques, ΔH > 0 ; la chaleur s'écrit du côté des réactifs et le système absorbe de la chaleur du milieu extérieur.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «В эндотермических реакциях ΔH > 0; теплоту записывают со стороны реагентов, и система поглощает тепло из окружающей среды.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"في التفاعلات الماصة للحرارة ΔH > 0؛ تُكتب الحرارة في جهة المتفاعلات ويمتص النظام حرارة من الوسط المحيط.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“吸热反应中 ΔH > 0；热量写在反应物一侧，体系从环境吸收热量。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di reaksiyonên endotermîk de ΔH > 0 e; germ li aliyê reaktantan tê nivîsandin û sîstem germê ji hawîrdorê distîne.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1148,13 +1148,13 @@ export const unit16: ChemistryUnitSeedData = {
         },
         {
           "tr": "Kırağılaşma olayında madde çevreden ısı alır.",
-          "en": "In the event of frost, the substance receives heat from the environment.",
-          "de": "Bei Frost erhält der Stoff Wärme aus der Umgebung.",
-          "fr": "En cas de gel, la substance reçoit de la chaleur de l'environnement.",
-          "ru": "В случае мороза вещество получает тепло из окружающей среды.",
-          "ar": "في حالة الصقيع، تتلقى المادة الحرارة من البيئة.",
-          "zh": "如果发生霜冻，该物质会从环境中吸收热量。",
-          "ku": "Di dema cemedê de madde ji hawîrdorê germê distîne."
+          "en": "During deposition (gas → solid), the substance absorbs heat from the surroundings.",
+          "de": "Bei der Resublimation nimmt der Stoff Wärme aus der Umgebung auf.",
+          "fr": "Lors de la condensation solide (gaz → solide), la substance absorbe de la chaleur du milieu extérieur.",
+          "ru": "При десублимации вещество поглощает тепло из окружающей среды.",
+          "ar": "أثناء الترسيب (تحول الغاز إلى صلب) تمتص المادة حرارة من الوسط المحيط.",
+          "zh": "凝华过程中物质从环境吸收热量。",
+          "ku": "Di dema depozîsyonê de (gaz → hişk) madde germê ji hawîrdorê distîne."
         },
         {
           "tr": "Standart oluşum entalpisi (ΔHf°): 25 °C ve 1 atm de 1 mol bileşiğin kararlı elementlerinden oluşması sırasındaki entalpi değişimidir.",
@@ -1167,14 +1167,14 @@ export const unit16: ChemistryUnitSeedData = {
           "ku": "Entalpiya avabûnê ya standard (ΔHf°): Ew guherîna entalpiyê ye di dema çêbûna 1 molek pêkhateyek ji hêmanên wê yên domdar di 25 °C û 1 atm de."
         },
         {
-          "tr": "Endotermik tepkimelerde düşük sıcaklıkta ürünler daha kararlıdır.",
-          "en": "In endothermic reactions, products are more stable at low temperatures.",
-          "de": "Bei endothermen Reaktionen sind die Produkte bei niedrigen Temperaturen stabiler.",
-          "fr": "Dans les réactions endothermiques, les produits sont plus stables à basse température.",
-          "ru": "Продукты эндотермических реакций более стабильны при низких температурах.",
-          "ar": "في التفاعلات الماصة للحرارة، تكون المنتجات أكثر استقرارًا عند درجات الحرارة المنخفضة.",
-          "zh": "在吸热反应中，产物在低温下更稳定。",
-          "ku": "Di reaksiyonên endotermîk de, hilber di germên nizm de aramtir in."
+          "tr": "Endotermik tepkimelerde ürünler girenlerden daha kararlıdır.",
+          "en": "In endothermic reactions the products are more stable than the reactants.",
+          "de": "Bei endothermen Reaktionen sind die Produkte stabiler als die Edukte.",
+          "fr": "Dans les réactions endothermiques, les produits sont plus stables que les réactifs.",
+          "ru": "В эндотермических реакциях продукты устойчивее реагентов.",
+          "ar": "في التفاعلات الماصة للحرارة تكون النواتج أكثر استقرارًا من المتفاعلات.",
+          "zh": "吸热反应中生成物比反应物更稳定。",
+          "ku": "Di reaksiyonên endotermîk de berhem ji reaktantan stabîltir in."
         }
       ],
       "correctIndex": 3,
@@ -1243,26 +1243,26 @@ export const unit16: ChemistryUnitSeedData = {
           "ku": "Entalpî mîqdarek e ku rasterast dikare were pîvandin, cûdahiya wê nayê pîvandin."
         },
         {
-          "tr": "Elementlerin oda koşullarındaki en kararlı hallerinin standart oluşum entalpisi sıfırdır (O2(g)=0, C(grafit)=0; O3(g)!=0, C(elmas)!=0).",
-          "en": "The standard formation enthalpy of the most stable states of the elements at room conditions is zero (O2(g)=0, C(graphite)=0; O3(g)!=0, C(diamond)!=0).",
-          "de": "Die Standardbildungsenthalpie der stabilsten Zustände der Elemente bei Raumbedingungen beträgt Null (O2(g)=0, C(Graphit)=0; O3(g)!=0, C(Diamant)!=0).",
-          "fr": "L'enthalpie standard de formation des états les plus stables des éléments dans les conditions ambiantes est nulle (O2(g)=0, C(graphite)=0 ; O3(g)!=0, C(diamant)!=0).",
-          "ru": "Стандартная энтальпия образования наиболее стабильных состояний элементов в комнатных условиях равна нулю (O2(g)=0, C(графит)=0; O3(g)!=0, C(алмаз)!=0).",
-          "ar": "المحتوى الحراري للتكوين القياسي للحالات الأكثر استقرارًا للعناصر في ظروف الغرفة هو صفر (O2(g)=0, C(graphite)=0; O3(g)!=0, C(diamond)!=0).",
-          "zh": "室温条件下元素最稳定状态的标准生成焓为零（O2（g）= 0，C（石墨）= 0；O3（g）！= 0，C（金刚石）！= 0）。",
-          "ku": "Entalpiya pêkhatina standard a rewşên herî bi îstîqrar ên hêmanan di şert û mercên odeyê de sifir e (O2(g)=0, C(grafît)=0; O3(g)!=0, C(almas)!=0)."
+          "tr": "Elementlerin oda koşullarındaki en kararlı hallerinin standart oluşum entalpisi sıfırdır (O2(g)=0, C(grafit)=0; O3(g)≠0, C(elmas)≠0).",
+          "en": "The standard formation enthalpy of the most stable states of the elements at room conditions is zero (O2(g)=0, C(graphite)=0; O3(g)≠0, C(diamond)≠0).",
+          "de": "Die Standardbildungsenthalpie der stabilsten Zustände der Elemente bei Raumbedingungen beträgt Null (O2(g)=0, C(Graphit)=0; O3(g)≠0, C(Diamant)≠0).",
+          "fr": "L'enthalpie standard de formation des états les plus stables des éléments dans les conditions ambiantes est nulle (O2(g)=0, C(graphite)=0 ; O3(g)≠0, C(diamant)≠0).",
+          "ru": "Стандартная энтальпия образования наиболее стабильных состояний элементов в комнатных условиях равна нулю (O2(g)=0, C(графит)=0; O3(g)≠0, C(алмаз)≠0).",
+          "ar": "المحتوى الحراري للتكوين القياسي للحالات الأكثر استقرارًا للعناصر في ظروف الغرفة هو صفر (O2(g)=0, C(graphite)=0; O3(g)≠0, C(diamond)≠0).",
+          "zh": "室温条件下元素最稳定状态的标准生成焓为零（O2（g）= 0，C（石墨）= 0；O3（g）≠ 0，C（金刚石）≠ 0）。",
+          "ku": "Entalpiya pêkhatina standard a rewşên herî bi îstîqrar ên hêmanan di şert û mercên odeyê de sifir e (O2(g)=0, C(grafît)=0; O3(g)≠0, C(almas)≠0)."
         }
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Elementlerin oda koşullarındaki en kararlı hallerinin standart oluşum entalpisi sıfırdır (O2(g)=0, C(grafit)=0; O3(g)!=0, C(elmas)!=0).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The standard formation enthalpy of the most stable states of the elements at room conditions is zero (O2(g)=0, C(graphite)=0; O3(g)!=0, C(diamond)!=0).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die Standardbildungsenthalpie der stabilsten Zustände der Elemente bei Raumbedingungen beträgt Null (O2(g)=0, C(Graphit)=0; O3(g)!=0, C(Diamant)!=0).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"L'enthalpie standard de formation des états les plus stables des éléments dans les conditions ambiantes est nulle (O2(g)=0, C(graphite)=0 ; O3(g)!=0, C(diamant)!=0).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Стандартная энтальпия образования наиболее стабильных состояний элементов в комнатных условиях равна нулю (O2(g)=0, C(графит)=0; O3(g)!=0, C(алмаз)!=0).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"المحتوى الحراري للتكوين القياسي للحالات الأكثر استقرارًا للعناصر في ظروف الغرفة هو صفر (O2(g)=0, C(graphite)=0; O3(g)!=0, C(diamond)!=0).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“室温条件下元素最稳定状态的标准生成焓为零（O2（g）= 0，C（石墨）= 0；O3（g）！= 0，C（金刚石）！= 0）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Entalpiya pêkhatina standard a rewşên herî bi îstîqrar ên hêmanan di şert û mercên odeyê de sifir e (O2(g)=0, C(grafît)=0; O3(g)!=0, C(almas)!=0).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Elementlerin oda koşullarındaki en kararlı hallerinin standart oluşum entalpisi sıfırdır (O2(g)=0, C(grafit)=0; O3(g)≠0, C(elmas)≠0).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"The standard formation enthalpy of the most stable states of the elements at room conditions is zero (O2(g)=0, C(graphite)=0; O3(g)≠0, C(diamond)≠0).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Die Standardbildungsenthalpie der stabilsten Zustände der Elemente bei Raumbedingungen beträgt Null (O2(g)=0, C(Graphit)=0; O3(g)≠0, C(Diamant)≠0).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"L'enthalpie standard de formation des états les plus stables des éléments dans les conditions ambiantes est nulle (O2(g)=0, C(graphite)=0 ; O3(g)≠0, C(diamant)≠0).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Стандартная энтальпия образования наиболее стабильных состояний элементов в комнатных условиях равна нулю (O2(g)=0, C(графит)=0; O3(g)≠0, C(алмаз)≠0).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"المحتوى الحراري للتكوين القياسي للحالات الأكثر استقرارًا للعناصر في ظروف الغرفة هو صفر (O2(g)=0, C(graphite)=0; O3(g)≠0, C(diamond)≠0).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“室温条件下元素最稳定状态的标准生成焓为零（O2（g）= 0，C（石墨）= 0；O3（g）≠ 0，C（金刚石）≠ 0）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Entalpiya pêkhatina standard a rewşên herî bi îstîqrar ên hêmanan di şert û mercên odeyê de sifir e (O2(g)=0, C(grafît)=0; O3(g)≠0, C(almas)≠0).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1376,23 +1376,23 @@ export const unit16: ChemistryUnitSeedData = {
         },
         {
           "tr": "Kırağılaşma olayında madde çevreden ısı alır.",
-          "en": "In the event of frost, the substance receives heat from the environment.",
-          "de": "Bei Frost erhält der Stoff Wärme aus der Umgebung.",
-          "fr": "En cas de gel, la substance reçoit de la chaleur de l'environnement.",
-          "ru": "В случае мороза вещество получает тепло из окружающей среды.",
-          "ar": "في حالة الصقيع، تتلقى المادة الحرارة من البيئة.",
-          "zh": "如果发生霜冻，该物质会从环境中吸收热量。",
-          "ku": "Di dema cemedê de madde ji hawîrdorê germê distîne."
+          "en": "During deposition (gas → solid), the substance absorbs heat from the surroundings.",
+          "de": "Bei der Resublimation nimmt der Stoff Wärme aus der Umgebung auf.",
+          "fr": "Lors de la condensation solide (gaz → solide), la substance absorbe de la chaleur du milieu extérieur.",
+          "ru": "При десублимации вещество поглощает тепло из окружающей среды.",
+          "ar": "أثناء الترسيب (تحول الغاز إلى صلب) تمتص المادة حرارة من الوسط المحيط.",
+          "zh": "凝华过程中物质从环境吸收热量。",
+          "ku": "Di dema depozîsyonê de (gaz → hişk) madde germê ji hawîrdorê distîne."
         },
         {
-          "tr": "Endotermik tepkimelerde düşük sıcaklıkta ürünler daha kararlıdır.",
-          "en": "In endothermic reactions, products are more stable at low temperatures.",
-          "de": "Bei endothermen Reaktionen sind die Produkte bei niedrigen Temperaturen stabiler.",
-          "fr": "Dans les réactions endothermiques, les produits sont plus stables à basse température.",
-          "ru": "Продукты эндотермических реакций более стабильны при низких температурах.",
-          "ar": "في التفاعلات الماصة للحرارة، تكون المنتجات أكثر استقرارًا عند درجات الحرارة المنخفضة.",
-          "zh": "在吸热反应中，产物在低温下更稳定。",
-          "ku": "Di reaksiyonên endotermîk de, hilber di germên nizm de aramtir in."
+          "tr": "Endotermik tepkimelerde ürünler girenlerden daha kararlıdır.",
+          "en": "In endothermic reactions the products are more stable than the reactants.",
+          "de": "Bei endothermen Reaktionen sind die Produkte stabiler als die Edukte.",
+          "fr": "Dans les réactions endothermiques, les produits sont plus stables que les réactifs.",
+          "ru": "В эндотермических реакциях продукты устойчивее реагентов.",
+          "ar": "في التفاعلات الماصة للحرارة تكون النواتج أكثر استقرارًا من المتفاعلات.",
+          "zh": "吸热反应中生成物比反应物更稳定。",
+          "ku": "Di reaksiyonên endotermîk de berhem ji reaktantan stabîltir in."
         },
         {
           "tr": "Endotermik tepkimeler başladıktan sonra kendiliğinden devam eder.",
@@ -1584,23 +1584,23 @@ export const unit16: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Kırağılaşma olayında madde çevreden ısı alır.",
-          "en": "In the event of frost, the substance receives heat from the environment.",
-          "de": "Bei Frost erhält der Stoff Wärme aus der Umgebung.",
-          "fr": "En cas de gel, la substance reçoit de la chaleur de l'environnement.",
-          "ru": "В случае мороза вещество получает тепло из окружающей среды.",
-          "ar": "في حالة الصقيع، تتلقى المادة الحرارة من البيئة.",
-          "zh": "如果发生霜冻，该物质会从环境中吸收热量。",
-          "ku": "Di dema cemedê de madde ji hawîrdorê germê distîne."
+          "en": "During deposition (gas → solid), the substance absorbs heat from the surroundings.",
+          "de": "Bei der Resublimation nimmt der Stoff Wärme aus der Umgebung auf.",
+          "fr": "Lors de la condensation solide (gaz → solide), la substance absorbe de la chaleur du milieu extérieur.",
+          "ru": "При десублимации вещество поглощает тепло из окружающей среды.",
+          "ar": "أثناء الترسيب (تحول الغاز إلى صلب) تمتص المادة حرارة من الوسط المحيط.",
+          "zh": "凝华过程中物质从环境吸收热量。",
+          "ku": "Di dema depozîsyonê de (gaz → hişk) madde germê ji hawîrdorê distîne."
         },
         {
-          "tr": "Endotermik tepkimelerde düşük sıcaklıkta ürünler daha kararlıdır.",
-          "en": "In endothermic reactions, products are more stable at low temperatures.",
-          "de": "Bei endothermen Reaktionen sind die Produkte bei niedrigen Temperaturen stabiler.",
-          "fr": "Dans les réactions endothermiques, les produits sont plus stables à basse température.",
-          "ru": "Продукты эндотермических реакций более стабильны при низких температурах.",
-          "ar": "في التفاعلات الماصة للحرارة، تكون المنتجات أكثر استقرارًا عند درجات الحرارة المنخفضة.",
-          "zh": "在吸热反应中，产物在低温下更稳定。",
-          "ku": "Di reaksiyonên endotermîk de, hilber di germên nizm de aramtir in."
+          "tr": "Endotermik tepkimelerde ürünler girenlerden daha kararlıdır.",
+          "en": "In endothermic reactions the products are more stable than the reactants.",
+          "de": "Bei endothermen Reaktionen sind die Produkte stabiler als die Edukte.",
+          "fr": "Dans les réactions endothermiques, les produits sont plus stables que les réactifs.",
+          "ru": "В эндотермических реакциях продукты устойчивее реагентов.",
+          "ar": "في التفاعلات الماصة للحرارة تكون النواتج أكثر استقرارًا من المتفاعلات.",
+          "zh": "吸热反应中生成物比反应物更稳定。",
+          "ku": "Di reaksiyonên endotermîk de berhem ji reaktantan stabîltir in."
         },
         {
           "tr": "Endotermik tepkimeler başladıktan sonra kendiliğinden devam eder.",
@@ -1811,14 +1811,14 @@ export const unit16: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Endotermik tepkimelerde düşük sıcaklıkta ürünler daha kararlıdır.",
-          "en": "In endothermic reactions, products are more stable at low temperatures.",
-          "de": "Bei endothermen Reaktionen sind die Produkte bei niedrigen Temperaturen stabiler.",
-          "fr": "Dans les réactions endothermiques, les produits sont plus stables à basse température.",
-          "ru": "Продукты эндотермических реакций более стабильны при низких температурах.",
-          "ar": "في التفاعلات الماصة للحرارة، تكون المنتجات أكثر استقرارًا عند درجات الحرارة المنخفضة.",
-          "zh": "在吸热反应中，产物在低温下更稳定。",
-          "ku": "Di reaksiyonên endotermîk de, hilber di germên nizm de aramtir in."
+          "tr": "Endotermik tepkimelerde ürünler girenlerden daha kararlıdır.",
+          "en": "In endothermic reactions the products are more stable than the reactants.",
+          "de": "Bei endothermen Reaktionen sind die Produkte stabiler als die Edukte.",
+          "fr": "Dans les réactions endothermiques, les produits sont plus stables que les réactifs.",
+          "ru": "В эндотермических реакциях продукты устойчивее реагентов.",
+          "ar": "في التفاعلات الماصة للحرارة تكون النواتج أكثر استقرارًا من المتفاعلات.",
+          "zh": "吸热反应中生成物比反应物更稳定。",
+          "ku": "Di reaksiyonên endotermîk de berhem ji reaktantan stabîltir in."
         },
         {
           "tr": "Endotermik tepkimeler başladıktan sonra kendiliğinden devam eder.",
@@ -1832,13 +1832,13 @@ export const unit16: ChemistryUnitSeedData = {
         },
         {
           "tr": "Gazların suda çözünmesi, donma, yoğuşma ve kırağılaşma ekzotermiktir.",
-          "en": "Dissolution of gases in water, freezing, condensation and frost are exothermic.",
-          "de": "Die Auflösung von Gasen in Wasser, Gefrieren, Kondensation und Frost sind exotherm.",
-          "fr": "La dissolution des gaz dans l'eau, le gel, la condensation et le gel sont exothermiques.",
-          "ru": "Растворение газов в воде, замерзание, конденсация и иней экзотермичны.",
-          "ar": "إن ذوبان الغازات في الماء والتجميد والتكثيف والصقيع تعتبر طاردة للحرارة.",
-          "zh": "气体在水中的溶解、冻结、凝结和霜都是放热的。",
-          "ku": "Hilweşîna gazên di avê de, cemidandin, kondensasyon û cemidî germahî ne."
+          "en": "The dissolution of gases in water, freezing, condensation and deposition (gas → solid) are exothermic.",
+          "de": "Das Lösen von Gasen in Wasser, das Gefrieren, die Kondensation und die Resublimation sind exotherm.",
+          "fr": "La dissolution des gaz dans l'eau, la solidification, la liquéfaction (condensation) et la condensation solide (gaz → solide) sont exothermiques.",
+          "ru": "Растворение газов в воде, замерзание, конденсация и десублимация экзотермичны.",
+          "ar": "ذوبان الغازات في الماء والتجمد والتكاثف والترسيب (تحول الغاز إلى صلب) عمليات طاردة للحرارة.",
+          "zh": "气体溶于水、凝固、液化和凝华都是放热过程。",
+          "ku": "Helbûna gazan di avê de, cemidîn, şilbûn (kondensasyon) û depozîsyon (gaz → hişk) ekzotermîk in."
         },
         {
           "tr": "Tepkime ters çevrilirse ΔH ın işareti değişmez.",
@@ -1864,13 +1864,13 @@ export const unit16: ChemistryUnitSeedData = {
       "correctIndex": 2,
       "explanation": {
         "tr": "Doğru cevap \"Gazların suda çözünmesi, donma, yoğuşma ve kırağılaşma ekzotermiktir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Dissolution of gases in water, freezing, condensation and frost are exothermic.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die Auflösung von Gasen in Wasser, Gefrieren, Kondensation und Frost sind exotherm.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La dissolution des gaz dans l'eau, le gel, la condensation et le gel sont exothermiques.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Растворение газов в воде, замерзание, конденсация и иней экзотермичны.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"إن ذوبان الغازات في الماء والتجميد والتكثيف والصقيع تعتبر طاردة للحرارة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“气体在水中的溶解、冻结、凝结和霜都是放热的。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Hilweşîna gazên di avê de, cemidandin, kondensasyon û cemidî germahî ne.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"The dissolution of gases in water, freezing, condensation and deposition (gas → solid) are exothermic.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Das Lösen von Gasen in Wasser, das Gefrieren, die Kondensation und die Resublimation sind exotherm.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"La dissolution des gaz dans l'eau, la solidification, la liquéfaction (condensation) et la condensation solide (gaz → solide) sont exothermiques.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Растворение газов в воде, замерзание, конденсация и десублимация экзотермичны.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"ذوبان الغازات في الماء والتجمد والتكاثف والترسيب (تحول الغاز إلى صلب) عمليات طاردة للحرارة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“气体溶于水、凝固、液化和凝华都是放热过程。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Helbûna gazan di avê de, cemidîn, şilbûn (kondensasyon) û depozîsyon (gaz → hişk) ekzotermîk in.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2039,14 +2039,14 @@ export const unit16: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Ekzotermik tepkimelerde düşük sıcaklıkta ürünler girenlerden daha kararlıdır.",
-          "en": "In exothermic reactions, the products are more stable than the reactants at low temperatures.",
-          "de": "Bei exothermen Reaktionen sind die Produkte bei niedrigen Temperaturen stabiler als die Reaktanten.",
-          "fr": "Dans les réactions exothermiques, les produits sont plus stables que les réactifs à basse température.",
-          "ru": "Продукты экзотермических реакций более стабильны, чем реагенты, при низких температурах.",
-          "ar": "في التفاعلات الطاردة للحرارة، تكون المنتجات أكثر استقرارًا من المواد المتفاعلة عند درجات حرارة منخفضة.",
-          "zh": "在放热反应中，产物在低温下比反应物更稳定。",
-          "ku": "Di reaksiyonên exotermîk de, hilber ji reaktantên di germahiyên nizm de aramtir in."
+          "tr": "Ekzotermik tepkimelerde ürünlerin potansiyel enerjisi (entalpisi) girenlerinkinden düşük olduğundan ürünler girenlerden daha kararlıdır.",
+          "en": "In exothermic reactions the products have lower potential energy (enthalpy) than the reactants, so the products are more stable than the reactants.",
+          "de": "Bei exothermen Reaktionen haben die Produkte eine geringere potentielle Energie (Enthalpie) als die Edukte und sind daher stabiler als diese.",
+          "fr": "Dans les réactions exothermiques, les produits ont une énergie potentielle (enthalpie) plus faible que les réactifs ; ils sont donc plus stables que les réactifs.",
+          "ru": "В экзотермических реакциях потенциальная энергия (энтальпия) продуктов ниже, чем у реагентов, поэтому продукты устойчивее реагентов.",
+          "ar": "في التفاعلات الطاردة للحرارة تكون الطاقة الكامنة (الإنثالبي) للنواتج أقل منها للمتفاعلات، لذا تكون النواتج أكثر استقرارًا من المتفاعلات.",
+          "zh": "放热反应中生成物的势能（焓）低于反应物，因此生成物比反应物更稳定。",
+          "ku": "Di reaksiyonên ekzotermîk de enerjiya potansiyel (entalpî) ya berheman ji ya reaktantan kêmtir e, ji ber vê berhem ji reaktantan stabîltir in."
         },
         {
           "tr": "Endotermik tepkimeler başladıktan sonra kendiliğinden devam eder.",
@@ -2091,14 +2091,14 @@ export const unit16: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Ekzotermik tepkimelerde düşük sıcaklıkta ürünler girenlerden daha kararlıdır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"In exothermic reactions, the products are more stable than the reactants at low temperatures.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Bei exothermen Reaktionen sind die Produkte bei niedrigen Temperaturen stabiler als die Reaktanten.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Dans les réactions exothermiques, les produits sont plus stables que les réactifs à basse température.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Продукты экзотермических реакций более стабильны, чем реагенты, при низких температурах.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في التفاعلات الطاردة للحرارة، تكون المنتجات أكثر استقرارًا من المواد المتفاعلة عند درجات حرارة منخفضة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“在放热反应中，产物在低温下比反应物更稳定。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di reaksiyonên exotermîk de, hilber ji reaktantên di germahiyên nizm de aramtir in.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Ekzotermik tepkimelerde ürünlerin potansiyel enerjisi (entalpisi) girenlerinkinden düşük olduğundan ürünler girenlerden daha kararlıdır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"In exothermic reactions the products have lower potential energy (enthalpy) than the reactants, so the products are more stable than the reactants.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Bei exothermen Reaktionen haben die Produkte eine geringere potentielle Energie (Enthalpie) als die Edukte und sind daher stabiler als diese.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Dans les réactions exothermiques, les produits ont une énergie potentielle (enthalpie) plus faible que les réactifs ; ils sont donc plus stables que les réactifs.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «В экзотермических реакциях потенциальная энергия (энтальпия) продуктов ниже, чем у реагентов, поэтому продукты устойчивее реагентов.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"في التفاعلات الطاردة للحرارة تكون الطاقة الكامنة (الإنثالبي) للنواتج أقل منها للمتفاعلات، لذا تكون النواتج أكثر استقرارًا من المتفاعلات.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“放热反应中生成物的势能（焓）低于反应物，因此生成物比反应物更稳定。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di reaksiyonên ekzotermîk de enerjiya potansiyel (entalpî) ya berheman ji ya reaktantan kêmtir e, ji ber vê berhem ji reaktantan stabîltir in.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }
   ]

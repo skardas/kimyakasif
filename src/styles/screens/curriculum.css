@@ -1,0 +1,122 @@
+/* ============================================================================
+   Home (Konular): title + profile + settings, today's goal row, exam filter,
+   unit list. One scrolling list; nothing else on the page.
+   ============================================================================ */
+
+.cur-offline { min-block-size: 32px; }
+
+@media (max-width: 519px) {
+  .cur-offline__label { display: none; }
+}
+
+.cur-top {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-block: 2px 14px;
+  padding-inline: max(20px, env(safe-area-inset-left, 0px)) max(20px, env(safe-area-inset-right, 0px));
+}
+
+.cur-goal {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 22px;
+  min-inline-size: 0;
+}
+
+.cur-goal__ring { flex: none; }
+
+.cur-goal__text {
+  flex: 1 1 auto;
+  min-inline-size: 0;
+}
+
+.cur-goal__title {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.cur-goal__count {
+  margin: 0;
+  color: var(--text2);
+  font-weight: 600;
+}
+
+.cur-goal__cta { flex: none; margin-block-end: 4px; }
+
+.cur-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-block-start: 2px;
+}
+
+.cur-unit {
+  padding: 18px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-inline-size: 0;
+}
+
+.cur-unit__meta {
+  margin: 0;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cur-unit__title {
+  margin: 6px 0 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cur-unit__sub {
+  margin: 4px 0 0;
+  color: var(--text2);
+  line-height: 1.4;
+}
+
+.cur-unit__progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cur-unit__progress .ky-track {
+  flex: 1 1 auto;
+  block-size: 6px;
+}
+
+.cur-unit__done { color: var(--ok); flex: none; }
+
+.cur-unit__count {
+  color: var(--text2);
+  font-weight: 600;
+  flex: none;
+}
+
+@media (min-width: 900px) {
+  .cur-top {
+    padding-inline: 32px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cur-goal { flex: 1 1 0; }
+  .cur-top .ky-seg { flex: 1 1 0; }
+
+  .cur-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    align-content: start;
+  }
+}

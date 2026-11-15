@@ -5,7 +5,10 @@ import type {
   ChemistryArchetype,
 } from '../types/chemistry';
 import type { ChemistryUnitSeedData } from '../data/units/types';
-import { enrichQuestionsWithDiagrams } from './diagramQuestionEnricher';
+import { enrichQuestionsWithDiagrams, planDiagramPlacement, type DiagramPlacement } from './diagramQuestionEnricher';
+
+// Diagram placement is decided once on the Turkish bank so every language shows the figure on the same question ids.
+const TR_DIAGRAM_PLACEMENT = new WeakMap<ChemistryUnitSeedData, DiagramPlacement>();
 
 export const QUESTION_SETS_PER_UNIT = 8;
 export const QUESTIONS_PER_SET = 16;
@@ -98,124 +101,177 @@ const ROMAN_COMBINATIONS: Record<
   },
 };
 
+// Neutral placeholder that replaces the target concept's name inside a matching clue.
+// "bu kavram" (not "bu kimyasal tür") because many targets are laws, processes or properties
+// (e.g. "Geçici Sertlik", "Raoult Yasası", "Korozyon"), not chemical species.
 const ENTITY_SPECIES_REPLACEMENT: Record<LanguageCode, string> = {
-  tr: 'bu kimyasal tür',
-  en: 'this chemical species',
-  de: 'diese chemische Spezies',
-  fr: 'cette espèce chimique',
-  ru: 'данная химическая частица',
-  ar: 'هذا النوع الكيميائي',
-  zh: '该化学微粒',
-  ku: 'ev cûreyê kîmyewî',
+  tr: 'bu kavram',
+  en: 'this concept',
+  de: 'dieser Begriff',
+  fr: 'cette notion',
+  ru: 'это понятие',
+  ar: 'هذا المفهوم',
+  zh: '该概念',
+  ku: 'ev têgeh',
 };
 
 export interface ExplanationTemplates {
+  /** Closing sentence of a Roman-numeral explanation when the stem asks for the TRUE statements. */
   romanTrue: (combo: string) => string;
+  /** Closing sentence of a Roman-numeral explanation when the stem asks for the FALSE statements. */
   romanFalse: (combo: string) => string;
+  romanValid: (numeral: string, fact: string, tip?: string) => string;
+  romanInvalid: (numeral: string, fact: string, whyFalse?: string) => string;
   negativeTrapWhy: (correctOption: string, whyFalse: string, correctFact: string) => string;
   negativeTrapDefault: (correctOption: string, correctFact: string) => string;
   positiveConceptTip: (correctOption: string, tip: string) => string;
   positiveConceptDefault: (correctOption: string) => string;
+  /** Intro for the list that corrects every wrong option, e.g. "Diğer seçeneklerin doğrusu:". */
+  otherOptionsIntro: string;
   structureMatch: (correctOption: string, conceptA: string, conceptB: string, distinction: string) => string;
+  structureTrait: (conceptB: string, conceptA: string, distinction: string) => string;
   reactionOrder: (correctOption: string, seqTitle: string, fullProgression?: string) => string;
+  missingStep: (correctOption: string, seqTitle: string, fullProgression: string) => string;
 }
+
+const bare = (s: string) => stripTerminalPunctuation(s);
 
 export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> = {
   tr: {
-    romanTrue: (combo) => `Doğru cevap ${combo} seçeneğidir. Öncüller incelendiğinde bilimsel gerçeklerle tam uyumlu olanlar doğrulanmıştır.`,
-    romanFalse: (combo) => `Doğru cevap ${combo} seçeneğidir. Belirtilen öncüller kimyasal kavram yanılgıları ve hatalı yargılar içermektedir.`,
-    negativeTrapWhy: (opt, why, fact) => `Yanlış olan ifade "${opt}" ifadesidir. Bilimsel açıklama: ${why}. Doğrusu: ${fact}`,
-    negativeTrapDefault: (opt, fact) => `Yanlış olan ifade "${opt}" ifadesidir. Bu bir ÖSYM kavram tuzağıdır. Bilimsel doğrusu: ${fact}`,
-    positiveConceptTip: (opt, tip) => `Kesinlikle doğru olan ifade "${opt}" seçeneğidir. ÖSYM İpucu: ${tip}`,
-    positiveConceptDefault: (opt) => `Kesinlikle doğru olan ifade "${opt}" seçeneğidir. Diğer seçenekler yaygın sınav yanılgılarını içermektedir.`,
-    structureMatch: (opt, a, b, dist) => `Doğru eşleştirme "${opt}" seçeneğidir. ${a} ve ${b} arasındaki temel kimyasal ayrım: ${dist}`,
-    reactionOrder: (opt, title, fullProgression) => fullProgression
-      ? `Doğru sıralama veya basamak "${opt}" seçeneğidir. "${title}" sürecinin tam basamakları: ${fullProgression}`
-      : `Doğru sıralama veya basamak "${opt}" seçeneğidir. "${title}" sürecinin tüm aşamaları MEB müfredatında belirtilen deneysel ve kimyasal sıraya göre gerçekleşir.`,
+    romanTrue: (combo) => `Buna göre doğru olan yargıları içeren seçenek "${combo}" seçeneğidir.`,
+    romanFalse: (combo) => `Buna göre yanlış olan yargıları içeren seçenek "${combo}" seçeneğidir.`,
+    romanValid: (n, fact, tip) => `${n}. Doğrudur: ${bare(fact)}.${tip ? ` (ÖSYM notu: ${bare(tip)}.)` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. Yanlıştır: ${why ? `${bare(why)}. ` : ''}Doğrusu: ${bare(fact)}.`,
+    negativeTrapWhy: (opt, why, fact) => `Yanlış olan ifade "${bare(opt)}" ifadesidir. ${bare(why)}. Doğrusu: ${bare(fact)}. Diğer seçeneklerdeki ifadelerin tamamı doğrudur.`,
+    negativeTrapDefault: (opt, fact) => `Yanlış olan ifade "${bare(opt)}" ifadesidir. Doğrusu: ${bare(fact)}. Diğer seçeneklerdeki ifadelerin tamamı doğrudur.`,
+    positiveConceptTip: (opt, tip) => `Doğru olan ifade "${bare(opt)}" ifadesidir. ÖSYM notu: ${bare(tip)}.`,
+    positiveConceptDefault: (opt) => `Doğru olan ifade "${bare(opt)}" ifadesidir.`,
+    otherOptionsIntro: 'Diğer seçeneklerdeki ifadeler yanlıştır; doğruları şöyledir:',
+    structureMatch: (opt, a, b, dist) => `Doğru cevap "${bare(opt)}" seçeneğidir. ${a} ile ${b} arasındaki temel ayrım: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `"${b}" ile ilgili doğru ifade, ${a} ile ${b} arasındaki temel ayrımı veren ifadedir: ${bare(dist)}.`,
+    reactionOrder: (opt, title, full) => full
+      ? `Doğru sıralama "${opt}" seçeneğidir. "${title}" basamaklarının doğru sırası: ${full}.`
+      : `Doğru sıralama "${opt}" seçeneğidir.`,
+    missingStep: (opt, title, full) => `Eksik basamak "${bare(opt)}" basamağıdır. "${title}" basamaklarının doğru sırası: ${full}.`,
   },
   en: {
-    romanTrue: (combo) => `The correct answer is ${combo}. An analysis of the propositions confirms those fully aligned with established scientific facts.`,
-    romanFalse: (combo) => `The correct answer is ${combo}. The specified propositions contain chemical misconceptions and incorrect assertions.`,
-    negativeTrapWhy: (opt, why, fact) => `The incorrect statement is "${opt}". Scientific explanation: ${why}. Correct fact: ${fact}`,
-    negativeTrapDefault: (opt, fact) => `The incorrect statement is "${opt}". This is a common exam trap. Scientific fact: ${fact}`,
-    positiveConceptTip: (opt, tip) => `The strictly correct statement is "${opt}". Exam Tip: ${tip}`,
-    positiveConceptDefault: (opt) => `The strictly correct statement is "${opt}". The other options represent common misconceptions.`,
-    structureMatch: (opt, a, b, dist) => `The correct match is "${opt}". Key distinction between ${a} and ${b}: ${dist}`,
-    reactionOrder: (opt, title, fullProgression) => fullProgression
-      ? `The correct sequence or step is "${opt}". Full steps of "${title}": ${fullProgression}`
-      : `The correct sequence or step is "${opt}". All stages of "${title}" follow the curriculum-defined experimental and chemical order.`,
+    romanTrue: (combo) => `Therefore, the option containing exactly the correct statements is "${combo}".`,
+    romanFalse: (combo) => `Therefore, the option containing exactly the incorrect statements is "${combo}".`,
+    romanValid: (n, fact, tip) => `${n}. Correct: ${bare(fact)}.${tip ? ` (Exam note: ${bare(tip)}.)` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. Incorrect: ${why ? `${bare(why)}. ` : ''}Correct version: ${bare(fact)}.`,
+    negativeTrapWhy: (opt, why, fact) => `The incorrect statement is "${bare(opt)}". ${bare(why)}. Correct version: ${bare(fact)}. All the other options are correct.`,
+    negativeTrapDefault: (opt, fact) => `The incorrect statement is "${bare(opt)}". Correct version: ${bare(fact)}. All the other options are correct.`,
+    positiveConceptTip: (opt, tip) => `The correct statement is "${bare(opt)}". Exam note: ${bare(tip)}.`,
+    positiveConceptDefault: (opt) => `The correct statement is "${bare(opt)}".`,
+    otherOptionsIntro: 'The other options are incorrect; the correct versions are:',
+    structureMatch: (opt, a, b, dist) => `The correct answer is "${bare(opt)}". Key distinction between ${a} and ${b}: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `The correct statement about "${b}" is the one giving the key distinction between ${a} and ${b}: ${bare(dist)}.`,
+    reactionOrder: (opt, title, full) => full
+      ? `The correct order is "${opt}". Correct sequence of "${title}": ${full}.`
+      : `The correct order is "${opt}".`,
+    missingStep: (opt, title, full) => `The missing step is "${bare(opt)}". Correct sequence of "${title}": ${full}.`,
   },
   de: {
-    romanTrue: (combo) => `Die richtige Antwort ist ${combo}. Die Überprüfung der Aussagen bestätigt die Übereinstimmung mit gesicherten wissenschaftlichen Fakten.`,
-    romanFalse: (combo) => `Die richtige Antwort ist ${combo}. Die genannten Aussagen enthalten typische chemische Fehlvorstellungen.`,
-    negativeTrapWhy: (opt, why, fact) => `Die falsche Aussage lautet "${opt}". Wissenschaftliche Erklärung: ${why}. Richtigstellung: ${fact}`,
-    negativeTrapDefault: (opt, fact) => `Die falsche Aussage lautet "${opt}". Dies ist eine Prüfungsfalle. Wissenschaftlich korrekt: ${fact}`,
-    positiveConceptTip: (opt, tip) => `Die eindeutig zutreffende Aussage ist "${opt}". Prüfungshinweis: ${tip}`,
-    positiveConceptDefault: (opt) => `Die eindeutig zutreffende Aussage ist "${opt}". Die übrigen Antwortmöglichkeiten enthalten verbreitete Fehlannahmen.`,
-    structureMatch: (opt, a, b, dist) => `Die richtige Zuordnung ist "${opt}". Grundlegende Unterscheidung zwischen ${a} und ${b}: ${dist}`,
-    reactionOrder: (opt, title, fullProgression) => fullProgression
-      ? `Die richtige Reihenfolge bzw. der korrekte Schritt lautet: "${opt}". Vollständiger Ablauf von "${title}": ${fullProgression}`
-      : `Die richtige Reihenfolge bzw. der korrekte Schritt lautet: "${opt}". Der Ablauf von "${title}" folgt der experimentellen chemischen Logik.`,
+    romanTrue: (combo) => `Die Antwort, die genau die richtigen Aussagen enthält, ist daher "${combo}".`,
+    romanFalse: (combo) => `Die Antwort, die genau die falschen Aussagen enthält, ist daher "${combo}".`,
+    romanValid: (n, fact, tip) => `${n}. Richtig: ${bare(fact)}.${tip ? ` (Prüfungshinweis: ${bare(tip)}.)` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. Falsch: ${why ? `${bare(why)}. ` : ''}Richtig ist: ${bare(fact)}.`,
+    negativeTrapWhy: (opt, why, fact) => `Die falsche Aussage lautet "${bare(opt)}". ${bare(why)}. Richtig ist: ${bare(fact)}. Alle übrigen Aussagen sind zutreffend.`,
+    negativeTrapDefault: (opt, fact) => `Die falsche Aussage lautet "${bare(opt)}". Richtig ist: ${bare(fact)}. Alle übrigen Aussagen sind zutreffend.`,
+    positiveConceptTip: (opt, tip) => `Die zutreffende Aussage ist "${bare(opt)}". Prüfungshinweis: ${bare(tip)}.`,
+    positiveConceptDefault: (opt) => `Die zutreffende Aussage ist "${bare(opt)}".`,
+    otherOptionsIntro: 'Die übrigen Antworten sind falsch; richtig wäre:',
+    structureMatch: (opt, a, b, dist) => `Die richtige Antwort ist "${bare(opt)}". Grundlegende Unterscheidung zwischen ${a} und ${b}: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `Zutreffend für "${b}" ist die Aussage, die den Unterschied zwischen ${a} und ${b} beschreibt: ${bare(dist)}.`,
+    reactionOrder: (opt, title, full) => full
+      ? `Die richtige Reihenfolge ist "${opt}". Korrekter Ablauf von "${title}": ${full}.`
+      : `Die richtige Reihenfolge ist "${opt}".`,
+    missingStep: (opt, title, full) => `Der fehlende Schritt ist "${bare(opt)}". Korrekter Ablauf von "${title}": ${full}.`,
   },
   fr: {
-    romanTrue: (combo) => `La bonne réponse est ${combo}. L'analyse des propositions confirme celles qui sont en parfait accord avec les faits scientifiques.`,
-    romanFalse: (combo) => `La bonne réponse est ${combo}. Les propositions indiquées comportent des erreurs conceptuelles en chimie.`,
-    negativeTrapWhy: (opt, why, fact) => `L'affirmation incorrecte est "${opt}". Explication scientifique : ${why}. Fait exact : ${fact}`,
-    negativeTrapDefault: (opt, fact) => `L'affirmation incorrecte est "${opt}". C'est un piège classique d'examen. Fait scientifique : ${fact}`,
-    positiveConceptTip: (opt, tip) => `L'affirmation rigoureusement exacte est "${opt}". Conseil d'examen : ${tip}`,
-    positiveConceptDefault: (opt) => `L'affirmation rigoureusement exacte est "${opt}". Les autres options comportent des erreurs fréquentes.`,
-    structureMatch: (opt, a, b, dist) => `L'association correcte est "${opt}". Distinction fondamentale entre ${a} et ${b} : ${dist}`,
-    reactionOrder: (opt, title, fullProgression) => fullProgression
-      ? `L'ordre ou l'étape correcte est : "${opt}". Toutes les étapes du processus "${title}" : ${fullProgression}`
-      : `L'ordre ou l'étape correcte est : "${opt}". Toutes les étapes du processus "${title}" suivent la chronologie expérimentale requise.`,
+    romanTrue: (combo) => `La réponse qui contient exactement les affirmations exactes est donc « ${combo} ».`,
+    romanFalse: (combo) => `La réponse qui contient exactement les affirmations fausses est donc « ${combo} ».`,
+    romanValid: (n, fact, tip) => `${n}. Exact : ${bare(fact)}.${tip ? ` (Conseil : ${bare(tip)}.)` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. Faux : ${why ? `${bare(why)}. ` : ''}Version exacte : ${bare(fact)}.`,
+    negativeTrapWhy: (opt, why, fact) => `L'affirmation incorrecte est « ${bare(opt)} ». ${bare(why)}. Version exacte : ${bare(fact)}. Toutes les autres propositions sont exactes.`,
+    negativeTrapDefault: (opt, fact) => `L'affirmation incorrecte est « ${bare(opt)} ». Version exacte : ${bare(fact)}. Toutes les autres propositions sont exactes.`,
+    positiveConceptTip: (opt, tip) => `L'affirmation exacte est « ${bare(opt)} ». Conseil d'examen : ${bare(tip)}.`,
+    positiveConceptDefault: (opt) => `L'affirmation exacte est « ${bare(opt)} ».`,
+    otherOptionsIntro: 'Les autres propositions sont fausses ; les versions exactes sont :',
+    structureMatch: (opt, a, b, dist) => `La bonne réponse est « ${bare(opt)} ». Distinction fondamentale entre ${a} et ${b} : ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `L'affirmation exacte sur « ${b} » est celle qui donne la distinction entre ${a} et ${b} : ${bare(dist)}.`,
+    reactionOrder: (opt, title, full) => full
+      ? `L'ordre correct est « ${opt} ». Déroulement correct de « ${title} » : ${full}.`
+      : `L'ordre correct est « ${opt} ».`,
+    missingStep: (opt, title, full) => `L'étape manquante est « ${bare(opt)} ». Déroulement correct de « ${title} » : ${full}.`,
   },
   ru: {
-    romanTrue: (combo) => `Правильный ответ — вариант ${combo}. Анализ утверждений подтверждает их полное соответствие установленным научным фактам.`,
-    romanFalse: (combo) => `Правильный ответ — вариант ${combo}. Указанные утверждения содержат химические заблуждения и ошибки.`,
-    negativeTrapWhy: (opt, why, fact) => `Ошибочным утверждением является «${opt}». Научное объяснение: ${why}. Правильное положение: ${fact}`,
-    negativeTrapDefault: (opt, fact) => `Ошибочным утверждением является «${opt}». Это типичная экзаменационная ловушка. Научный факт: ${fact}`,
-    positiveConceptTip: (opt, tip) => `Абсолютно верным утверждением является «${opt}». Экзаменационная подсказка: ${tip}`,
-    positiveConceptDefault: (opt) => `Абсолютно верным утверждением является «${opt}». Остальные варианты содержат распространенные ошибки.`,
-    structureMatch: (opt, a, b, dist) => `Правильное соответствие — «${opt}». Ключевое различие между «${a}» и «${b}»: ${dist}`,
-    reactionOrder: (opt, title, fullProgression) => fullProgression
-      ? `Правильная последовательность или этап: «${opt}». Полная последовательность процесса «${title}»: ${fullProgression}`
-      : `Правильная последовательность или этап: «${opt}». Все стадии процесса «${title}» соответствуют экспериментальному химическому порядку.`,
+    romanTrue: (combo) => `Следовательно, вариант, содержащий именно верные утверждения, — «${combo}».`,
+    romanFalse: (combo) => `Следовательно, вариант, содержащий именно неверные утверждения, — «${combo}».`,
+    romanValid: (n, fact, tip) => `${n}. Верно: ${bare(fact)}.${tip ? ` (Подсказка: ${bare(tip)}.)` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. Неверно: ${why ? `${bare(why)}. ` : ''}Правильно: ${bare(fact)}.`,
+    negativeTrapWhy: (opt, why, fact) => `Неверное утверждение — «${bare(opt)}». ${bare(why)}. Правильно: ${bare(fact)}. Все остальные утверждения верны.`,
+    negativeTrapDefault: (opt, fact) => `Неверное утверждение — «${bare(opt)}». Правильно: ${bare(fact)}. Все остальные утверждения верны.`,
+    positiveConceptTip: (opt, tip) => `Верное утверждение — «${bare(opt)}». Экзаменационная подсказка: ${bare(tip)}.`,
+    positiveConceptDefault: (opt) => `Верное утверждение — «${bare(opt)}».`,
+    otherOptionsIntro: 'Остальные варианты неверны; правильные формулировки:',
+    structureMatch: (opt, a, b, dist) => `Правильный ответ — «${bare(opt)}». Ключевое различие между «${a}» и «${b}»: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `Верное утверждение о «${b}» — то, которое описывает различие между «${a}» и «${b}»: ${bare(dist)}.`,
+    reactionOrder: (opt, title, full) => full
+      ? `Правильная последовательность — «${opt}». Правильный порядок этапов процесса «${title}»: ${full}.`
+      : `Правильная последовательность — «${opt}».`,
+    missingStep: (opt, title, full) => `Пропущенный этап — «${bare(opt)}». Правильный порядок этапов процесса «${title}»: ${full}.`,
   },
   ar: {
-    romanTrue: (combo) => `الإجابة الصحيحة هي الخيار ${combo}. يؤكد تحليل العبارات توافقها التام مع الحقائق العلمية المثبتة.`,
-    romanFalse: (combo) => `الإجابة الصحيحة هي الخيار ${combo}. تتضمن العبارات المذكورة مغالطات مفهومية كيميائية وأحكاماً خاطئة.`,
-    negativeTrapWhy: (opt, why, fact) => `العبارة غير الصحيحة هي "${opt}". التفسير العلمي: ${why}. الصواب العلمي: ${fact}`,
-    negativeTrapDefault: (opt, fact) => `العبارة غير الصحيحة هي "${opt}". هذا فخ امتحاني شائع. الحقيقة العلمية: ${fact}`,
-    positiveConceptTip: (opt, tip) => `العبارة الصحيحة تماماً هي "${opt}". نصيحة امتحانية: ${tip}`,
-    positiveConceptDefault: (opt) => `العبارة الصحيحة تماماً هي "${opt}". تحتوي بقية الخيارات على مغالطات شائعة.`,
-    structureMatch: (opt, a, b, dist) => `المطابقة الصحيحة هي "${opt}". الفرق الكيميائي الجوهري بين ${a} و ${b}: ${dist}`,
-    reactionOrder: (opt, title, fullProgression) => fullProgression
-      ? `الترتيب أو الخطوة الصحيحة هي: "${opt}". المسار الكامل لخطوات "${title}": ${fullProgression}`
-      : `الترتيب أو الخطوة الصحيحة هي: "${opt}". جميع مراحل مسار "${title}" تتبع الترتيب الكيميائي والتجريبي المعتمد.`,
+    romanTrue: (combo) => `وعليه فإن الخيار الذي يضم العبارات الصحيحة تماماً هو "${combo}".`,
+    romanFalse: (combo) => `وعليه فإن الخيار الذي يضم العبارات الخاطئة تماماً هو "${combo}".`,
+    romanValid: (n, fact, tip) => `${n}. صحيح: ${bare(fact)}.${tip ? ` (ملاحظة: ${bare(tip)}.)` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. خاطئ: ${why ? `${bare(why)}. ` : ''}الصواب: ${bare(fact)}.`,
+    negativeTrapWhy: (opt, why, fact) => `العبارة غير الصحيحة هي "${bare(opt)}". ${bare(why)}. الصواب: ${bare(fact)}. جميع العبارات الأخرى صحيحة.`,
+    negativeTrapDefault: (opt, fact) => `العبارة غير الصحيحة هي "${bare(opt)}". الصواب: ${bare(fact)}. جميع العبارات الأخرى صحيحة.`,
+    positiveConceptTip: (opt, tip) => `العبارة الصحيحة هي "${bare(opt)}". نصيحة امتحانية: ${bare(tip)}.`,
+    positiveConceptDefault: (opt) => `العبارة الصحيحة هي "${bare(opt)}".`,
+    otherOptionsIntro: 'الخيارات الأخرى خاطئة، والصواب فيها:',
+    structureMatch: (opt, a, b, dist) => `الإجابة الصحيحة هي "${bare(opt)}". الفرق الجوهري بين ${a} و ${b}: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `العبارة الصحيحة حول "${b}" هي التي تبيّن الفرق بين ${a} و ${b}: ${bare(dist)}.`,
+    reactionOrder: (opt, title, full) => full
+      ? `الترتيب الصحيح هو "${opt}". التسلسل الصحيح لخطوات "${title}": ${full}.`
+      : `الترتيب الصحيح هو "${opt}".`,
+    missingStep: (opt, title, full) => `الخطوة المفقودة هي "${bare(opt)}". التسلسل الصحيح لخطوات "${title}": ${full}.`,
   },
   zh: {
-    romanTrue: (combo) => `正确答案是 ${combo} 选项。对各命题进行辨析，确认其完全符合化学客观事实。`,
-    romanFalse: (combo) => `正确答案是 ${combo} 选项。所给命题中包含常见的化学概念误区与错误判断。`,
-    negativeTrapWhy: (opt, why, fact) => `不正确的说法是“${opt}”。科学解析：${why}。正确事实：${fact}`,
-    negativeTrapDefault: (opt, fact) => `不正确的说法是“${opt}”。这是常见的高考概念陷阱。科学事实：${fact}`,
-    positiveConceptTip: (opt, tip) => `完全正确无误的表述是“${opt}”选项。高考解题锦囊：${tip}`,
-    positiveConceptDefault: (opt) => `完全正确无误的表述是“${opt}”选项。其余选项均包含典型学科认知偏差。`,
-    structureMatch: (opt, a, b, dist) => `正确对应项为“${opt}”。“${a}”与“${b}”之间的核心本质区别为：${dist}`,
-    reactionOrder: (opt, title, fullProgression) => fullProgression
-      ? `正确顺序或对应步骤是：“${opt}”。“${title}”过程的完整步骤历程为：${fullProgression}`
-      : `正确顺序或对应步骤是：“${opt}”。“${title}”过程的全部阶段严格符合考纲规定的实验与反应历程顺序。`,
+    romanTrue: (combo) => `因此，恰好包含全部正确说法的选项是“${combo}”。`,
+    romanFalse: (combo) => `因此，恰好包含全部错误说法的选项是“${combo}”。`,
+    romanValid: (n, fact, tip) => `${n}. 正确：${bare(fact)}。${tip ? `（解题要点：${bare(tip)}。）` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. 错误：${why ? `${bare(why)}。` : ''}正确说法：${bare(fact)}。`,
+    negativeTrapWhy: (opt, why, fact) => `不正确的说法是“${bare(opt)}”。${bare(why)}。正确说法：${bare(fact)}。其余选项均正确。`,
+    negativeTrapDefault: (opt, fact) => `不正确的说法是“${bare(opt)}”。正确说法：${bare(fact)}。其余选项均正确。`,
+    positiveConceptTip: (opt, tip) => `正确的说法是“${bare(opt)}”。解题要点：${bare(tip)}。`,
+    positiveConceptDefault: (opt) => `正确的说法是“${bare(opt)}”。`,
+    otherOptionsIntro: '其余选项均错误，正确说法分别为：',
+    structureMatch: (opt, a, b, dist) => `正确答案是“${bare(opt)}”。“${a}”与“${b}”的核心区别：${bare(dist)}。`,
+    structureTrait: (b, a, dist) => `关于“${b}”的正确说法是阐明“${a}”与“${b}”区别的那一项：${bare(dist)}。`,
+    reactionOrder: (opt, title, full) => full
+      ? `正确顺序是“${opt}”。“${title}”的正确步骤顺序：${full}。`
+      : `正确顺序是“${opt}”。`,
+    missingStep: (opt, title, full) => `缺失的步骤是“${bare(opt)}”。“${title}”的正确步骤顺序：${full}。`,
   },
   ku: {
-    romanTrue: (combo) => `Bersiva rast vebijarka ${combo} ye. Dema ku pêşniyar tên lêkolîn, yên ku bi rastiyên zanistî re li hev dikin hatine piştrast kirin.`,
-    romanFalse: (combo) => `Bersiva rast vebijarka ${combo} ye. Pêşniyarên diyarkirî têgihîştinên şaş ên kîmyewî û darazên çewt dihewînin.`,
-    negativeTrapWhy: (opt, why, fact) => `Gotina şaş "${opt}" e. Şîroveya zanistî: ${why}. Ya rast: ${fact}`,
-    negativeTrapDefault: (opt, fact) => `Gotina şaş "${opt}" e. Ev xefikek ezmûnê ya berbelav e. Rastiya zanistî: ${fact}`,
-    positiveConceptTip: (opt, tip) => `Gotina ku bi temamî rast e vebijarka "${opt}" e. Serişteya Ezmûnê: ${tip}`,
-    positiveConceptDefault: (opt) => `Gotina ku bi temamî rast e vebijarka "${opt}" e. Vebijarkên din şaşiyên berbelav dihewînin.`,
-    structureMatch: (opt, a, b, dist) => `Hevberdana rast "${opt}" e. Ciyawaziya sereke ya kîmyewî di navbera ${a} û ${b} de: ${dist}`,
-    reactionOrder: (opt, title, fullProgression) => fullProgression
-      ? `Rêzkirina an qonaxa rast: "${opt}" e. Hemû qonaxên pêvajoya "${title}": ${fullProgression}`
-      : `Rêzkirina an qonaxa rast: "${opt}" e. Hemû qonaxên pêvajoya "${title}" li gorî rêza ezmûnî û kîmyewî pêk tên.`,
+    romanTrue: (combo) => `Ji ber vê yekê vebijarka ku tam gotinên rast dihewîne "${combo}" e.`,
+    romanFalse: (combo) => `Ji ber vê yekê vebijarka ku tam gotinên şaş dihewîne "${combo}" e.`,
+    romanValid: (n, fact, tip) => `${n}. Rast e: ${bare(fact)}.${tip ? ` (Nîşe: ${bare(tip)}.)` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. Şaş e: ${why ? `${bare(why)}. ` : ''}Ya rast: ${bare(fact)}.`,
+    negativeTrapWhy: (opt, why, fact) => `Gotina şaş "${bare(opt)}" e. ${bare(why)}. Ya rast: ${bare(fact)}. Hemû gotinên din rast in.`,
+    negativeTrapDefault: (opt, fact) => `Gotina şaş "${bare(opt)}" e. Ya rast: ${bare(fact)}. Hemû gotinên din rast in.`,
+    positiveConceptTip: (opt, tip) => `Gotina rast "${bare(opt)}" e. Serişteya ezmûnê: ${bare(tip)}.`,
+    positiveConceptDefault: (opt) => `Gotina rast "${bare(opt)}" e.`,
+    otherOptionsIntro: 'Vebijarkên din şaş in; rastiyên wan ev in:',
+    structureMatch: (opt, a, b, dist) => `Bersiva rast "${bare(opt)}" e. Ciyawaziya sereke di navbera ${a} û ${b} de: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `Gotina rast li ser "${b}" ew e ku ciyawaziya navbera ${a} û ${b} dide: ${bare(dist)}.`,
+    reactionOrder: (opt, title, full) => full
+      ? `Rêzkirina rast "${opt}" e. Rêza rast a qonaxên "${title}": ${full}.`
+      : `Rêzkirina rast "${opt}" e.`,
+    missingStep: (opt, title, full) => `Qonaxa kêm "${bare(opt)}" e. Rêza rast a qonaxên "${title}": ${full}.`,
   },
 };
 
@@ -246,6 +302,22 @@ export function normalizeProseOption(text: string, lang: LanguageCode): string {
   }
   const withoutBang = trimmed.replace(/!$/, '.');
   return /[.؟?]$/.test(withoutBang) ? withoutBang : `${withoutBang}.`;
+}
+
+/**
+ * Removes trailing sentence punctuation (".", "。", "!", "！") so a seed sentence can be embedded
+ * inside a larger template sentence without producing "..", ".)." or ".。" artefacts.
+ */
+export function stripTerminalPunctuation(text: string): string {
+  return (text || '').trim().replace(/[\s.。!！]+$/u, '').trim();
+}
+
+/** Ensures a fragment ends with exactly one sentence terminator appropriate for the language. */
+function asSentence(text: string, lang: LanguageCode): string {
+  const core = stripTerminalPunctuation(text);
+  if (!core) return core;
+  if (/[?？؟]$/u.test(core)) return core;
+  return lang === 'zh' ? `${core}。` : `${core}.`;
 }
 
 /**
@@ -282,6 +354,12 @@ const GENERIC_SPECIES_WORDS = new Set([
   'كيميائي', 'النوع', 'نوع', 'إلى', 'الى',
   '化学', '微粒',
   'kîmyewî', 'cûreyê',
+  'kavram', 'concept', 'begriff', 'dieser', 'notion', 'cette', 'понятие', 'это',
+  'المفهوم', 'مفهوم', 'هذا', '概念', '该概念', 'têgeh',
+  // Generic constituent words of multi-word concept names. Masking them on their own garbled clues
+  // ("Thomson modelinde pozitif yük atom içinde" -> "bu kavram modelinde ... bu kavram içinde").
+  'atom', 'atomu', 'atomlar', 'molekül', 'moleküler', 'moleküller', 'kovalent', 'kuantum', 'madde',
+  'maddenin', 'model', 'modeli', 'baş', 'temel', 'standart', 'molecule', 'molecular', 'covalent', 'quantum',
 ]);
 
 function isValidHeadword(term: string, isCJK: boolean, minLen: number): boolean {
@@ -564,6 +642,23 @@ export function extractEntityCandidates(entityName: string, lang: LanguageCode):
 }
 
 /**
+ * Keeps the grammatical case of a masked Turkish noun: "Ozmozda ... geçer" becomes
+ * "bu kavramda ... geçer" rather than the ungrammatical "bu kavram ... geçer".
+ */
+function inflectTurkishPlaceholder(placeholder: string, matched: string, candidate: string): string {
+  if (matched.length <= candidate.length) return placeholder;
+  const tail = matched.slice(candidate.length).toLocaleLowerCase('tr');
+  if (/(d|t)(ı|i|u|ü)r$/.test(tail)) return `${placeholder}dır`;
+  if (/(d|t)(a|e)n$/.test(tail)) return `${placeholder}dan`;
+  if (/(d|t)(a|e)$/.test(tail)) return `${placeholder}da`;
+  if (/(ın|in|un|ün)$/.test(tail)) return `${placeholder}ın`;
+  if (/l(a|e)$/.test(tail)) return `${placeholder}la`;
+  if (/(ı|i|u|ü)$/.test(tail)) return `${placeholder}ı`;
+  if (/(a|e)$/.test(tail)) return `${placeholder}a`;
+  return placeholder;
+}
+
+/**
  * Sanitizes entity clues to prevent answer leakage in matching questions.
  * Handles single-character entities (e.g. Chinese CJK: 醛, 酮, 醇, 酸, 酯, 苯 >= 1 char),
  * Turkish/Kurdish agglutinative/inflectional suffixes (e.g. -ler, -lar, -nin, -ta, -den, etc.),
@@ -626,10 +721,23 @@ export function sanitizeEntityClue(clueText: string, entityName: string, lang: L
         const lookahead = (lang === 'zh') ? '(?![a-zA-Z0-9])' : '(?![\\p{L}\\p{N}])';
         const arabicPrefix = '';
         const regex = new RegExp(`${lookbehind}${arabicPrefix}${candidatePattern}${suffixPattern}${lookahead}`, 'giu');
-        cleaned = cleaned.replace(regex, replacement);
+        cleaned = cleaned.replace(regex, (m: string) => (lang === 'tr' ? inflectTurkishPlaceholder(replacement, m, cand) : replacement));
       }
     }
-  return normalizeProseOption(cleaned.trim(), lang);
+  cleaned = cleaned.trim();
+  // Collapse runs created when several words of one name were masked ("bu kavram bu kavram ...").
+  const escRep = replacement.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  cleaned = cleaned.replace(new RegExp(`(${escRep})(?:[\\s-]+${escRep})+`, 'giu'), '$1');
+  if (lang === 'tr') {
+    // Detached Turkish case endings after the placeholder ("bu kavram'ye", "bu kavram yi").
+    cleaned = cleaned.replace(new RegExp(`(${escRep})(?:['’]|\\s+)(y[ıiuü]|n[ıiuü]n|y[ae]|d[ae]n|t[ae]n|d[ae]|t[ae]|[ıiuü]n)(?![\\p{L}])`, 'gu'),
+      (_m: string, rep: string, suf: string) => inflectTurkishPlaceholder(rep, `${rep}${suf}`, rep));
+  }
+  // Sentence-initial placeholder must be capitalised ("Bu kavram ...", "This concept ...").
+  if (cleaned.startsWith(replacement)) {
+    cleaned = cleaned.charAt(0).toLocaleUpperCase(lang) + cleaned.slice(1);
+  }
+  return normalizeProseOption(cleaned, lang);
 }
 
 /**
@@ -724,30 +832,18 @@ export function rotateOptions(correctItem: string, distractors: string[], desire
   return [result[0], result[1], result[2], result[3], result[4]];
 }
 
-// Stems for Roman True / False questions
-function getRomanTrueStem(title: string, lang: LanguageCode): string {
+// Roman-numeral (I / II / III) stems in ÖSYM layout: lead-in, statements, then the question.
+function buildRomanStem(title: string, statements: [string, string, string], askTrue: boolean, lang: LanguageCode): string {
+  const body = `I. ${statements[0]}\nII. ${statements[1]}\nIII. ${statements[2]}`;
   switch (lang) {
-    case 'tr': return `"${title}" konusu kapsamında yukarıda verilen kimyasal öncüllerden hangileri bilimsel olarak doğrudur?`;
-    case 'en': return `In the context of "${title}", which of the propositions given above are scientifically correct?`;
-    case 'de': return `Welche der oben genannten Aussagen zu "${title}" sind wissenschaftlich zutreffend?`;
-    case 'fr': return `Dans le cadre de "${title}", lesquelles des propositions ci-dessus sont scientifiquement exactes ?`;
-    case 'ru': return `В контексте темы «${title}», какие из вышеприведённых химических утверждений верны?`;
-    case 'ar': return `في سياق موضوع "${title}"، أي من العبارات الكيميائية الواردة أعلاه صحيحة علمياً؟`;
-    case 'zh': return `在“${title}”主题背景下，上述给出的化学命题中哪些在科学上是正确的？`;
-    case 'ku': return `Di çarçoveya mijara "${title}" de, kîjan ji pêşniyarên kîmyewî yên jorîn ji aliyê zanistî ve rast in?`;
-  }
-}
-
-function getRomanFalseStem(title: string, lang: LanguageCode): string {
-  switch (lang) {
-    case 'tr': return `"${title}" ünitesi dikkate alındığında, yukarıdaki yargılardan hangileri kavram yanılgısı içerir (yanlıştır)?`;
-    case 'en': return `Considering the unit "${title}", which of the propositions above contain misconceptions (are incorrect)?`;
-    case 'de': return `Welche der obigen Aussagen zur Einheit "${title}" enthalten Fehlvorstellungen (sind falsch)?`;
-    case 'fr': return `En considérant l'unité "${title}", lesquelles des affirmations ci-dessus contiennent des erreurs (sont fausses) ?`;
-    case 'ru': return `Учитывая материал раздела «${title}», какие из вышеперечисленных суждений содержат ошибки (неверны)?`;
-    case 'ar': return `بالنظر إلى وحدة "${title}"، أي من الأحكام الواردة أعلاه تتضمن مغالطات مفهومية (غير صحيحة)؟`;
-    case 'zh': return `结合“${title}”单元核心概念，上述判断中哪些包含概念误区（属于错误命题）？`;
-    case 'ku': return `Gava ku beşa "${title}" li ber çavan bê girtin, kîjan ji darazên jorîn şaşiyên têgehî dihewîne (şaş in)?`;
+    case 'tr': return `${title} konusuyla ilgili aşağıdaki yargılar veriliyor:\n\n${body}\n\nBuna göre, bu yargılardan hangileri ${askTrue ? 'doğrudur' : 'yanlıştır'}?`;
+    case 'en': return `The following statements are given about the topic "${title}":\n\n${body}\n\nWhich of these statements are ${askTrue ? 'correct' : 'incorrect'}?`;
+    case 'de': return `Zum Thema "${title}" werden folgende Aussagen gemacht:\n\n${body}\n\nWelche dieser Aussagen sind ${askTrue ? 'richtig' : 'falsch'}?`;
+    case 'fr': return `On donne les affirmations suivantes sur le thème « ${title} » :\n\n${body}\n\nLesquelles de ces affirmations sont ${askTrue ? 'exactes' : 'fausses'} ?`;
+    case 'ru': return `По теме «${title}» даны следующие утверждения:\n\n${body}\n\nКакие из этих утверждений ${askTrue ? 'верны' : 'неверны'}?`;
+    case 'ar': return `وردت العبارات التالية حول موضوع "${title}":\n\n${body}\n\nأيّ من هذه العبارات ${askTrue ? 'صحيحة' : 'خاطئة'}؟`;
+    case 'zh': return `关于“${title}”，给出下列说法：\n\n${body}\n\n上述说法中，${askTrue ? '正确' : '错误'}的是哪些？`;
+    case 'ku': return `Derbarê mijara "${title}" de ev gotin hatine dayîn:\n\n${body}\n\nKîjan ji van gotinan ${askTrue ? 'rast' : 'şaş'} in?`;
   }
 }
 
@@ -758,7 +854,7 @@ function getNegativeTrapStem(title: string, lang: LanguageCode, variant = 0): st
       if (v === 0) return `"${title}" konusu ile ilgili olarak aşağıda verilen ifadelerden hangisi yanlıştır (doğru değildir)?`;
       if (v === 1) return `"${title}" kazanımları dikkate alındığında aşağıdaki yargılardan hangisi bilimsel bir yanılgı içerir?`;
       if (v === 2) return `"${title}" kapsamında ileri sürülen aşağıdaki önermelerden hangisi doğru değildir?`;
-      if (v === 3) return `"${title}" ile ilgili kimyasal ilkeler incelendiğinde hangisinin hatalı bir açıklama olduğu görülür?`;
+      if (v === 3) return `"${title}" ile ilgili aşağıdaki açıklamalardan hangisi hatalıdır?`;
       if (v === 4) return `"${title}" konusuna dair hazırlanan aşağıdaki yargılardan hangisi bilimsel gerçeklerle çelişir?`;
       return `Aşağıdaki ifadelerden hangisi "${title}" konusundaki temel kimya ilkelerine göre hatalıdır?`;
     }
@@ -797,7 +893,7 @@ function getNegativeTrapStem(title: string, lang: LanguageCode, variant = 0): st
     case 'ar': {
       if (v === 0) return `فيما يتعلق بموضوع "${title}"، أي من العبارات التالية غير صحيحة (خاطئة)؟`;
       if (v === 1) return `بالنظر إلى "${title}"، أي من الأحكام التالية يتضمن مغالطة علمية؟`;
-      if (v === 2) return `أي افتراض مقدم في سياq "${title}" يعتبر غير صحيح؟`;
+      if (v === 2) return `أي افتراض مقدم في سياق "${title}" يعتبر غير صحيح؟`;
       if (v === 3) return `عند دراسة مبادئ "${title}"، أي تفسير يعتبر خاطئاً؟`;
       if (v === 4) return `أي من العبارات التالية يتعارض مع الحقائق العلمية المثبتة في "${title}"؟`;
       return `أي عبارة تعتبر خاطئة وفقاً للمبادئ الكيميائية الأساسية لوحدة "${title}"؟`;
@@ -906,7 +1002,7 @@ function getMatchStemA(title: string, clue: string, lang: LanguageCode): string 
 
 function getMatchStemB(title: string, conceptName: string, lang: LanguageCode): string {
   switch (lang) {
-    case 'tr': return `"${title}" kapsamında incelenen "${conceptName}" ile ilgili aşağıdaki niteliklerden hangisi doğrudur?`;
+    case 'tr': return `"${title}" kapsamında incelenen "${conceptName}" ile ilgili aşağıdaki ifadelerden hangisi doğrudur?`;
     case 'en': return `Which of the following characteristics accurately describes "${conceptName}" within "${title}"?`;
     case 'de': return `Welche der folgenden Eigenschaften beschreibt "${conceptName}" im Rahmen von "${title}" zutreffend?`;
     case 'fr': return `Laquelle des caractéristiques suivantes décrit correctement "${conceptName}" dans le cadre de "${title}" ?`;
@@ -919,14 +1015,14 @@ function getMatchStemB(title: string, conceptName: string, lang: LanguageCode): 
 
 function getSequenceOrderStem(title: string, seqTitle: string, lang: LanguageCode): string {
   switch (lang) {
-    case 'tr': return `"${title}" ünitesinde ele alınan "${seqTitle}" basamaklarının mantıksal ve kronolojik sırası aşağıdakilerden hangisinde doğru verilmiştir?`;
-    case 'en': return `In the unit "${title}", which option gives the correct logical and chronological order of the steps for "${seqTitle}"?`;
+    case 'tr': return `"${title}" ünitesinde ele alınan "${seqTitle}" basamaklarının doğru sıralaması aşağıdakilerin hangisinde verilmiştir?`;
+    case 'en': return `In the unit "${title}", which option gives the correct order of the steps of "${seqTitle}"?`;
     case 'de': return `Welche Option gibt die korrekte Reihenfolge der Schritte für "${seqTitle}" in "${title}" wieder?`;
-    case 'fr': return `Quelle option présente l'ordre logique et chronologique correct des étapes pour "${seqTitle}" dans "${title}" ?`;
+    case 'fr': return `Quelle option présente l'ordre correct des étapes de "${seqTitle}" dans "${title}" ?`;
     case 'ru': return `В каком из вариантов указана правильная последовательность этапов процесса «${seqTitle}» в теме «${title}»?`;
-    case 'ar': return `أي الخيارات يعبر عن الترتيب المنطقي والزمني الصحيح لخطوات "${seqTitle}" في وحدة "${title}"؟`;
-    case 'zh': return `在“${title}”单元中，下列哪个选项正确给出了“${seqTitle}”各阶段步骤的逻辑发生顺序？`;
-    case 'ku': return `Rêza mantiqî û kronolojîk a qonaxên "${seqTitle}" di beşa "${title}" de di kîjan vebijarkê de rast hatiye dayîn?`;
+    case 'ar': return `أي الخيارات يعبر عن الترتيب الصحيح لخطوات "${seqTitle}" في وحدة "${title}"؟`;
+    case 'zh': return `在“${title}”单元中，下列哪个选项正确给出了“${seqTitle}”各步骤的先后顺序？`;
+    case 'ku': return `Rêza rast a qonaxên "${seqTitle}" di beşa "${title}" de di kîjan vebijarkê de hatiye dayîn?`;
   }
 }
 
@@ -951,56 +1047,132 @@ interface PropositionDetail {
   tip?: string;
 }
 
-function getRomanSynthesis(combo: string, askTrue: boolean, lang: LanguageCode): string {
-  const t = EXPLANATION_TEMPLATES[lang] || EXPLANATION_TEMPLATES.tr;
-  return askTrue ? t.romanTrue(combo) : t.romanFalse(combo);
-}
-
 function buildRomanEvaluationExplanation(
   combo: string,
   askTrue: boolean,
   props: [PropositionDetail, PropositionDetail, PropositionDetail],
   lang: LanguageCode
 ): string {
-  const evalParts = props.map((p) => {
-    switch (lang) {
-      case 'tr':
-        return p.isValid
-          ? `${p.numeral}. Doğrudur: ${p.fact}${p.tip ? ` (ÖSYM Notu: ${p.tip})` : ''}.`
-          : `${p.numeral}. Yanlıştır: ${p.whyTrap ? `${p.whyTrap} ` : ''}(Doğrusu: ${p.fact}).`;
-      case 'en':
-        return p.isValid
-          ? `${p.numeral}. Correct: ${p.fact}${p.tip ? ` (Exam Note: ${p.tip})` : ''}.`
-          : `${p.numeral}. Incorrect: ${p.whyTrap ? `${p.whyTrap} ` : ''}(Scientific fact: ${p.fact}).`;
-      case 'de':
-        return p.isValid
-          ? `${p.numeral}. Richtig: ${p.fact}${p.tip ? ` (Prüfungshinweis: ${p.tip})` : ''}.`
-          : `${p.numeral}. Falsch: ${p.whyTrap ? `${p.whyTrap} ` : ''}(Wissenschaftlich korrekt: ${p.fact}).`;
-      case 'fr':
-        return p.isValid
-          ? `${p.numeral}. Exact : ${p.fact}${p.tip ? ` (Conseil : ${p.tip})` : ''}.`
-          : `${p.numeral}. Faux : ${p.whyTrap ? `${p.whyTrap} ` : ''}(Fait exact : ${p.fact}).`;
-      case 'ru':
-        return p.isValid
-          ? `${p.numeral}. Верно: ${p.fact}${p.tip ? ` (Подсказка: ${p.tip})` : ''}.`
-          : `${p.numeral}. Неверно: ${p.whyTrap ? `${p.whyTrap} ` : ''}(Правильное положение: ${p.fact}).`;
-      case 'ar':
-        return p.isValid
-          ? `${p.numeral}. صحيح: ${p.fact}${p.tip ? ` (ملاحظة: ${p.tip})` : ''}.`
-          : `${p.numeral}. خاطئ: ${p.whyTrap ? `${p.whyTrap} ` : ''}(الصواب العلمي: ${p.fact}).`;
-      case 'zh':
-        return p.isValid
-          ? `${p.numeral}. 正确：${p.fact}${p.tip ? `（解题要点：${p.tip}）` : ''}。`
-          : `${p.numeral}. 错误：${p.whyTrap ? `${p.whyTrap} ` : ''}（客观事实：${p.fact}）。`;
-      case 'ku':
-        return p.isValid
-          ? `${p.numeral}. Rast e: ${p.fact}${p.tip ? ` (Nîşe: ${p.tip})` : ''}.`
-          : `${p.numeral}. Şaş e: ${p.whyTrap ? `${p.whyTrap} ` : ''}(Ya rast: ${p.fact}).`;
-    }
-  });
-
-  const synthesis = getRomanSynthesis(combo, askTrue, lang);
+  const t = EXPLANATION_TEMPLATES[lang] || EXPLANATION_TEMPLATES.tr;
+  const evalParts = props.map((p) => (p.isValid ? t.romanValid(p.numeral, p.fact, p.tip) : t.romanInvalid(p.numeral, p.fact, p.whyTrap)));
+  const synthesis = askTrue ? t.romanTrue(combo) : t.romanFalse(combo);
   return `${evalParts.join(' ')} ${synthesis}`;
+}
+
+/** Roman-numeral answer combinations in the canonical ÖSYM option order. */
+type RomanComboKey = 'only1' | 'only2' | 'only3' | 'oneTwo' | 'oneThree' | 'twoThree' | 'all';
+const ROMAN_CANONICAL_ORDER: RomanComboKey[] = ['only1', 'only2', 'only3', 'oneTwo', 'oneThree', 'twoThree', 'all'];
+const ROMAN_COMBO_SELECTION: Record<RomanComboKey, [boolean, boolean, boolean]> = {
+  only1: [true, false, false],
+  only2: [false, true, false],
+  only3: [false, false, true],
+  oneTwo: [true, true, false],
+  oneThree: [true, false, true],
+  twoThree: [false, true, true],
+  all: [true, true, true],
+};
+
+/**
+ * Chooses the 5 visible Roman options: the keyed combination plus 4 of the remaining 6, listed in
+ * canonical ÖSYM order. The distractor set is chosen independently of which combination is keyed
+ * (so e.g. "Yalnız III" or "II ve III" are no longer only present when they are the answer) and so
+ * that the key lands on `position` (0..4).
+ */
+function buildRomanOptionSet(key: RomanComboKey, position: number, rotation: number): RomanComboKey[] {
+  const rank = ROMAN_CANONICAL_ORDER.indexOf(key);
+  const lower = ROMAN_CANONICAL_ORDER.slice(0, rank);
+  const upper = ROMAN_CANONICAL_ORDER.slice(rank + 1);
+  const takeLower = position;
+  const takeUpper = 4 - position;
+  const pick = (pool: RomanComboKey[], n: number): RomanComboKey[] => {
+    if (n >= pool.length) return [...pool];
+    // Drop (pool.length - n) items, rotating which ones are dropped.
+    const drop = pool.length - n;
+    const dropped = new Set<number>();
+    for (let k = 0; k < drop; k++) dropped.add((rotation + k * 2) % pool.length);
+    let extra = 0;
+    while (dropped.size < drop) dropped.add((rotation + drop * 2 + extra++) % pool.length);
+    return pool.filter((_, i) => !dropped.has(i));
+  };
+  const chosen = [...pick(lower, takeLower), key, ...pick(upper, takeUpper)];
+  return ROMAN_CANONICAL_ORDER.filter((k) => chosen.includes(k));
+}
+
+/** Positions (0..4) the keyed combination can occupy in a canonical 5-option list. */
+function romanFeasiblePositions(key: RomanComboKey): number[] {
+  const rank = ROMAN_CANONICAL_ORDER.indexOf(key);
+  const out: number[] = [];
+  for (let p = Math.max(0, rank - 2); p <= Math.min(4, rank); p++) out.push(p);
+  return out;
+}
+
+/**
+ * Splits the unit's fact/trap pairs for one 16-question set so that no pair is shown as a TRUE
+ * statement in one question and as its FALSE twin in another question of the same set, and so
+ * that the keyed statement of a negative-trap / positive-concept question never re-appears
+ * elsewhere in that set (which would let a student infer the key from another question).
+ */
+function partitionFactsForSet(
+  factCount: number,
+  setNum: number,
+  twinKeyItems: Set<number> = new Set(),
+  twinTrapItems: Set<number> = new Set()
+) {
+  const base = ((setNum - 1) * 3) % factCount;
+  const half = Math.floor(factCount / 2);
+  const taken = new Set<number>();
+  // Keys of negative-trap / positive-concept questions must not also be visible inside the set's
+  // ÖSYM twins (many twins reuse the fact/trap texts verbatim), else one question answers the other.
+  const pickKeys = (start: number): number[] => {
+    const out: number[] = [];
+    for (const allowTwinTraps of [false, true]) {
+      for (let i = 0; i < factCount && out.length < 3; i++) {
+        const idx = (start + i) % factCount;
+        if (taken.has(idx) || twinKeyItems.has(idx)) continue;
+        if (!allowTwinTraps && twinTrapItems.has(idx)) continue;
+        out.push(idx);
+        taken.add(idx);
+      }
+    }
+    return out;
+  };
+  const negKeys = pickKeys(base);
+  const posKeys = pickKeys(base + half);
+  // The fact behind a twin's correct option is never shown elsewhere in the set.
+  const rest: number[] = [];
+  for (let i = 0; i < factCount; i++) if (!taken.has(i) && !twinKeyItems.has(i)) rest.push(i);
+  const shownTrue: number[] = [];
+  const shownFalse: number[] = [];
+  // Items whose trap appears in a twin are shown as traps too (never as the contradicting fact).
+  let k = 0;
+  for (const idx of rest) {
+    if (twinTrapItems.has(idx)) shownFalse.push(idx);
+    else ((k++ + setNum) % 2 === 0 ? shownTrue : shownFalse).push(idx);
+  }
+  const MIN = 4;
+  const moveToTrue = (preferNonTwin: boolean) => {
+    const i = shownFalse.findIndex((idx) => !preferNonTwin || !twinTrapItems.has(idx));
+    if (i >= 0) shownTrue.push(...shownFalse.splice(i, 1));
+    return i >= 0;
+  };
+  while (shownTrue.length < MIN && shownFalse.length > MIN && moveToTrue(true));
+  while (shownFalse.length < MIN && shownTrue.length > MIN) shownFalse.push(shownTrue.pop()!);
+  return { negKeys, posKeys, shownTrue, shownFalse };
+}
+
+/**
+ * Deterministically rotates an ÖSYM-twin's options so its key lands on `desired`, unless the
+ * options must keep their authored order (Roman-numeral combos, ascending numeric answers,
+ * "hepsi/hiçbiri" style options, or an explanation that names option letters).
+ */
+function twinIsRotatable(twin: ChemistryUnitSeedData['osymTwins'][number]): boolean {
+  const opts = twin.options.map((o) => (o.tr || '').trim());
+  if (opts.some((o) => /^(Yalnız\s+I|I\s*(ve|,)\s*I|II\s*(ve|,)\s*I|I,\s*II)/.test(o))) return false;
+  if (opts.some((o) => /^(hepsi|hiçbiri|tümü|i̇kisi de)\b/i.test(o))) return false;
+  const nums = opts.map((o) => parseFloat(o.replace(',', '.')));
+  if (nums.every((n) => !Number.isNaN(n)) && nums.every((n, i) => i === 0 || n >= nums[i - 1])) return false;
+  if (/\b[A-E]\)|\b[A-E]\s+seçene|seçene(ği|k)\s+[A-E]\b|\b[A-E]\s+şıkkı/.test(twin.explanation.tr || '')) return false;
+  return true;
 }
 
 /**
@@ -1014,98 +1186,87 @@ export function compileUnitQuestions(
   const questions: CompiledQuestion[] = [];
   const romanCombos = ROMAN_COMBINATIONS[lang] || ROMAN_COMBINATIONS.tr;
   const explTemplates = EXPLANATION_TEMPLATES[lang] || EXPLANATION_TEMPLATES.tr;
+  const L = (t: { tr: string } & Partial<Record<LanguageCode, string>>) => t[lang] || t.tr;
+  const fCount = unit.facts.length;
 
-  // Key tracking to achieve exact [25, 26, 26, 25, 26] distribution across A, B, C, D, E
+  // Answer-key balancing: every key position A..E ends at 25 or 26 per unit, and no key is
+  // repeated three times in a row. All archetypes (including ÖSYM twins, whose options are
+  // rotated when safe) take part, so authored twin keys no longer skew the distribution.
   const keyCounts = [0, 0, 0, 0, 0];
+  const recentKeys: number[] = [];
 
-  function pickBestKey(qNum: number, setNum: number): 0 | 1 | 2 | 3 | 4 {
-    const minVal = Math.min(...keyCounts);
-    const candidates: number[] = [];
-    for (let k = 0; k < 5; k++) {
-      if (keyCounts[k] === minVal) candidates.push(k);
-    }
+  function pickBestKey(qNum: number, setNum: number, allowed: number[] = [0, 1, 2, 3, 4]): 0 | 1 | 2 | 3 | 4 {
+    const notRun = allowed.filter((k) => !(recentKeys.length >= 2 && recentKeys[recentKeys.length - 1] === k && recentKeys[recentKeys.length - 2] === k));
+    const pool = notRun.length > 0 ? notRun : allowed;
+    const minVal = Math.min(...pool.map((k) => keyCounts[k]));
+    const candidates = pool.filter((k) => keyCounts[k] === minVal);
     const rot = (qNum * 2 + setNum * 3 + unit.order) % candidates.length;
     return candidates[rot] as 0 | 1 | 2 | 3 | 4;
   }
-
-  // Pre-authored Roman numeral combinations roster (32 unique patterns)
-  const ROMAN_TARGETS: Array<{
-    t1: boolean;
-    t2: boolean;
-    t3: boolean;
-    askTrue: boolean;
-    ansIdx: 0 | 1 | 2 | 3 | 4;
-    correctCombo: string;
-    options: [string, string, string, string, string];
-  }> = [];
-
-  for (let r = 0; r < 32; r++) {
-    const askTrue = r < 24; // sets 1-6 ask True, sets 7-8 ask False
-    const pattern = r % 8;
-    let t1 = true;
-    let t2 = true;
-    let t3 = true;
-    let ansIdx: 0 | 1 | 2 | 3 | 4 = 4;
-    let correctCombo = romanCombos.all;
-
-    if (pattern === 0) {
-      t1 = askTrue; t2 = !askTrue; t3 = !askTrue;
-      ansIdx = 0; correctCombo = romanCombos.only1;
-    } else if (pattern === 1) {
-      t1 = !askTrue; t2 = askTrue; t3 = !askTrue;
-      ansIdx = 1; correctCombo = romanCombos.only2;
-    } else if (pattern === 2) {
-      t1 = !askTrue; t2 = !askTrue; t3 = askTrue;
-      ansIdx = 2; correctCombo = romanCombos.only3;
-    } else if (pattern === 3) {
-      t1 = askTrue; t2 = askTrue; t3 = !askTrue;
-      ansIdx = 2; correctCombo = romanCombos.oneTwo;
-    } else if (pattern === 4) {
-      t1 = askTrue; t2 = !askTrue; t3 = askTrue;
-      ansIdx = 3; correctCombo = romanCombos.oneThree;
-    } else if (pattern === 5) {
-      t1 = !askTrue; t2 = askTrue; t3 = askTrue;
-      ansIdx = 3; correctCombo = romanCombos.twoThree;
-    } else if (pattern === 6) {
-      t1 = askTrue; t2 = askTrue; t3 = askTrue;
-      ansIdx = 4; correctCombo = romanCombos.all;
-    } else {
-      t1 = !askTrue; t2 = askTrue; t3 = !askTrue;
-      ansIdx = 1; correctCombo = romanCombos.only2;
-    }
-
-    const optTemplates = [
-      romanCombos.only1,
-      romanCombos.only2,
-      romanCombos.oneTwo,
-      romanCombos.oneThree,
-      romanCombos.all,
-    ];
-    if (correctCombo === romanCombos.only3) optTemplates[2] = romanCombos.only3;
-    if (correctCombo === romanCombos.twoThree) optTemplates[3] = romanCombos.twoThree;
-
-    const curIdx = optTemplates.indexOf(correctCombo);
-    if (curIdx !== -1 && curIdx !== ansIdx) {
-      const temp = optTemplates[ansIdx];
-      optTemplates[ansIdx] = optTemplates[curIdx];
-      optTemplates[curIdx] = temp;
-    }
-
-    ROMAN_TARGETS.push({
-      t1,
-      t2,
-      t3,
-      askTrue,
-      ansIdx,
-      correctCombo,
-      options: [optTemplates[0], optTemplates[1], optTemplates[2], optTemplates[3], optTemplates[4]],
-    });
+  function commitKey(k: number) {
+    keyCounts[k]++;
+    recentKeys.push(k);
   }
 
-  // 8 Sets of 16 Questions = 128 Questions
+  /** Corrections for wrong (trap) options, listed by letter, for explanations. */
+  function trapCorrections(options: string[], correctIndex: number, trapToFact: Map<string, string>): string {
+    const parts: string[] = [];
+    options.forEach((opt, i) => {
+      if (i === correctIndex) return;
+      const fact = trapToFact.get(opt);
+      if (fact) parts.push(`${'ABCDE'[i]}) ${asSentence(fact, lang)}`);
+    });
+    return parts.length > 0 ? ` ${explTemplates.otherOptionsIntro} ${parts.join(' ')}` : '';
+  }
+
+  const factText = (i: number) => L(unit.facts[i].fact);
+  const trapText = (i: number) => L(unit.facts[i].trap);
+  const trapToFact = new Map<string, string>();
+  for (const f of unit.facts) trapToFact.set(normalizeProseOption(L(f.trap), lang), L(f.fact));
+
+  const factIndexByTrText = new Map<string, { idx: number; kind: 'fact' | 'trap' }>();
+  unit.facts.forEach((f, idx) => {
+    factIndexByTrText.set(stripTerminalPunctuation(f.fact.tr).toLocaleLowerCase('tr'), { idx, kind: 'fact' });
+    factIndexByTrText.set(stripTerminalPunctuation(f.trap.tr).toLocaleLowerCase('tr'), { idx, kind: 'trap' });
+  });
+
+  // Many twins reproduce fact/trap texts verbatim. Pair twins that share fact items (so the two
+  // twins of a set touch as few items as possible), never pairing a twin with one that shows the
+  // partner's key item, then deal the pairs out set by set.
+  const twinItems = unit.osymTwins.map((twin) => {
+    const all = new Set<number>();
+    let keyItem = -1;
+    twin.options.forEach((o, oi) => {
+      const hit = factIndexByTrText.get(stripTerminalPunctuation(o.tr).toLocaleLowerCase('tr'));
+      if (!hit) return;
+      all.add(hit.idx);
+      if (oi === twin.correctIndex) keyItem = hit.idx;
+    });
+    return { all, keyItem };
+  });
+  const twinOrder: number[] = [];
+  {
+    const used = new Set<number>();
+    for (let i = 0; i < unit.osymTwins.length; i++) {
+      if (used.has(i)) continue;
+      used.add(i);
+      twinOrder.push(i);
+      let best = -1;
+      let bestCost = Infinity;
+      for (let j = i + 1; j < unit.osymTwins.length; j++) {
+        if (used.has(j)) continue;
+        const a = twinItems[i];
+        const b = twinItems[j];
+        const leak = (a.keyItem >= 0 && b.all.has(a.keyItem)) || (b.keyItem >= 0 && a.all.has(b.keyItem));
+        const cost = (leak ? 100 : 0) + new Set([...a.all, ...b.all]).size;
+        if (cost < bestCost) { bestCost = cost; best = j; }
+      }
+      if (best >= 0) { used.add(best); twinOrder.push(best); }
+    }
+  }
+  const twinAt = (slot: number) => unit.osymTwins[twinOrder[slot % twinOrder.length]];
+
   let romanCounter = 0;
-  let trapCounter = 0;
-  let posCounter = 0;
   let matchCounter = 0;
   let orderCounter = 0;
   let twinCounter = 0;
@@ -1118,6 +1279,43 @@ export function compileUnitQuestions(
     else if (setNum <= 6) difficulty = 'hard';
     else difficulty = 'osym';
 
+    // Fact items that this set's ÖSYM twins reproduce verbatim (matched on the Turkish seed text,
+    // so every language gets the same partition).
+    const twinKeyItems = new Set<number>();
+    const twinTrapItems = new Set<number>();
+    for (let t = 0; t < 2; t++) {
+      const twin = twinAt(twinCounter + t);
+      twin.options.forEach((o, oi) => {
+        const hit = factIndexByTrText.get(stripTerminalPunctuation(o.tr).toLocaleLowerCase('tr'));
+        if (!hit) return;
+        if (oi === twin.correctIndex || hit.kind === 'fact') twinKeyItems.add(hit.idx);
+        else twinTrapItems.add(hit.idx);
+      });
+    }
+    for (const idx of twinKeyItems) twinTrapItems.delete(idx);
+    const part = partitionFactsForSet(fCount, setNum, twinKeyItems, twinTrapItems);
+    // TRUE statements available to this set: the facts assigned to the "shown true" side, topped
+    // up (when the set's twins reserve many fact items) with comparison distinctions, which are
+    // also true statements. Distinctions of the two comparisons this set's matching questions use
+    // are excluded, since seeing them elsewhere would reveal those answers.
+    const cCountAll = unit.comparisons.length;
+    const setCompA = (setNum - 1) % cCountAll;
+    const setCompB = (setNum - 1 + Math.floor(cCountAll / 2)) % cCountAll;
+    const truePool: Array<{ text: string; tip?: string }> = part.shownTrue.map((idx) => ({
+      text: factText(idx),
+      tip: unit.facts[idx].osymTip ? L(unit.facts[idx].osymTip!) : undefined,
+    }));
+    for (let c = 0; c < cCountAll && truePool.length < 6; c++) {
+      const ci = (setNum + c) % cCountAll;
+      if (ci === setCompA || ci === setCompB) continue;
+      const text = L(unit.comparisons[ci].distinction);
+      if (!truePool.some((t) => t.text === text)) truePool.push({ text });
+    }
+    let truePtr = setNum;
+    let falsePtr = setNum * 2;
+    const nextTrue = () => truePtr++ % truePool.length;
+    const nextFalse = () => part.shownFalse[falsePtr++ % part.shownFalse.length];
+
     for (let qInSet = 1; qInSet <= QUESTIONS_PER_SET; qInSet++) {
       const qNum = (s - 1) * QUESTIONS_PER_SET + qInSet;
       const qId = `${unit.id}-q${String(qNum).padStart(3, '0')}`;
@@ -1125,55 +1323,51 @@ export function compileUnitQuestions(
       if (qInSet <= 4) {
         // --- 1. Roman Numeral (4 per set = 32 per unit) ---
         const archetype: ChemistryArchetype = 'roman-numeral';
-        const rConfig = ROMAN_TARGETS[romanCounter++];
-        const fCount = unit.facts.length;
+        const r = romanCounter++;
+        const askTrue = setNum <= 6; // sets 1-6 ask for the true statements, sets 7-8 for the false ones
 
-        const i1 = (qInSet * 3 + (setNum - 1) * 7 + unit.order) % fCount;
-        const i2 = (qInSet * 3 + (setNum - 1) * 7 + unit.order + 5) % fCount;
-        const i3 = (qInSet * 3 + (setNum - 1) * 7 + unit.order + 11) % fCount;
+        // Cycle through all 7 combinations (r * 3 visits every residue mod 7); skip a combination
+        // whose only feasible key positions would create a run of three identical keys.
+        let comboKey: RomanComboKey = ROMAN_CANONICAL_ORDER[(r * 3 + unit.order) % 7];
+        for (let tries = 0; tries < 7; tries++) {
+          const candidate = ROMAN_CANONICAL_ORDER[(r * 3 + unit.order + tries) % 7];
+          const feasible = romanFeasiblePositions(candidate);
+          const runKey = recentKeys.length >= 2 && recentKeys[recentKeys.length - 1] === recentKeys[recentKeys.length - 2]
+            ? recentKeys[recentKeys.length - 1] : -1;
+          if (feasible.some((p) => p !== runKey)) { comboKey = candidate; break; }
+        }
+        const selection = ROMAN_COMBO_SELECTION[comboKey];
+        // The selection names the statements the stem asks for (true ones, or false ones).
+        const truth = selection.map((sel) => (askTrue ? sel : !sel)) as [boolean, boolean, boolean];
+        const items: number[] = [];
+        truth.forEach((isTrue, k) => {
+          // Never print the same statement twice inside one question.
+          let idx = isTrue ? nextTrue() : nextFalse();
+          for (let guard = 0; guard < 8 && items.some((prev, pk) => truth[pk] === isTrue && prev === idx); guard++) {
+            idx = isTrue ? nextTrue() : nextFalse();
+          }
+          items[k] = idx;
+        });
+        const statements = items.map((idx, k) => (truth[k] ? truePool[idx].text : trapText(idx))) as [string, string, string];
 
-        const f1 = unit.facts[i1];
-        const f2 = unit.facts[i2];
-        const f3 = unit.facts[i3];
+        const correctIndex = pickBestKey(qNum, s, romanFeasiblePositions(comboKey));
+        commitKey(correctIndex);
+        const optionKeys = buildRomanOptionSet(comboKey, correctIndex, r + unit.order);
+        const options = optionKeys.map((k) => romanCombos[k]) as [string, string, string, string, string];
 
-        const stmt1 = rConfig.t1 ? f1.fact[lang] || f1.fact.tr : f1.trap[lang] || f1.trap.tr;
-        const stmt2 = rConfig.t2 ? f2.fact[lang] || f2.fact.tr : f2.trap[lang] || f2.trap.tr;
-        const stmt3 = rConfig.t3 ? f3.fact[lang] || f3.fact.tr : f3.trap[lang] || f3.trap.tr;
-
-        const stemQuestion = rConfig.askTrue
-          ? getRomanTrueStem(unitTitle, lang)
-          : getRomanFalseStem(unitTitle, lang);
-
-        const stem = `${unitTitle}:\nI. ${stmt1}\nII. ${stmt2}\nIII. ${stmt3}\n\n${stemQuestion}`;
-        const correctIndex = rConfig.ansIdx;
-        keyCounts[correctIndex]++;
-
+        const stem = buildRomanStem(unitTitle, statements, askTrue, lang);
+        const numerals: Array<'I' | 'II' | 'III'> = ['I', 'II', 'III'];
         const explanation = buildRomanEvaluationExplanation(
-          rConfig.correctCombo,
-          rConfig.askTrue,
-          [
-            {
-              numeral: 'I',
-              isValid: rConfig.t1,
-              fact: f1.fact[lang] || f1.fact.tr,
-              whyTrap: f1.whyTrapIsFalse?.[lang] || f1.whyTrapIsFalse?.tr,
-              tip: f1.osymTip?.[lang] || f1.osymTip?.tr,
-            },
-            {
-              numeral: 'II',
-              isValid: rConfig.t2,
-              fact: f2.fact[lang] || f2.fact.tr,
-              whyTrap: f2.whyTrapIsFalse?.[lang] || f2.whyTrapIsFalse?.tr,
-              tip: f2.osymTip?.[lang] || f2.osymTip?.tr,
-            },
-            {
-              numeral: 'III',
-              isValid: rConfig.t3,
-              fact: f3.fact[lang] || f3.fact.tr,
-              whyTrap: f3.whyTrapIsFalse?.[lang] || f3.whyTrapIsFalse?.tr,
-              tip: f3.osymTip?.[lang] || f3.osymTip?.tr,
-            },
-          ],
+          romanCombos[comboKey],
+          askTrue,
+          items.map((idx, k) => (truth[k]
+            ? { numeral: numerals[k], isValid: true, fact: truePool[idx].text, tip: truePool[idx].tip }
+            : {
+              numeral: numerals[k],
+              isValid: false,
+              fact: factText(idx),
+              whyTrap: unit.facts[idx].whyTrapIsFalse ? L(unit.facts[idx].whyTrapIsFalse!) : undefined,
+            })) as [PropositionDetail, PropositionDetail, PropositionDetail],
           lang
         );
 
@@ -1186,34 +1380,32 @@ export function compileUnitQuestions(
           difficulty,
           archetype,
           stem,
-          options: rConfig.options,
+          options,
           correctIndex,
           explanation,
         });
       } else if (qInSet <= 7) {
         // --- 2. Negative Trap (3 per set = 24 per unit) ---
         const archetype: ChemistryArchetype = 'negative-trap';
-        const fCount = unit.facts.length;
-        const targetFactIdx = trapCounter++ % fCount;
+        const j = qInSet - 5;
+        const targetFactIdx = part.negKeys[j];
         const targetPair = unit.facts[targetFactIdx];
+        const correctOption = normalizeProseOption(L(targetPair.trap), lang);
 
-        const correctOption = normalizeProseOption(targetPair.trap[lang] || targetPair.trap.tr, lang);
-
-        const stride = setNum % 2 === 1 ? 3 : 5;
         const distractors: string[] = [];
-        for (let d = 1; d <= 4; d++) {
-          const dPair = unit.facts[(targetFactIdx + d * stride) % fCount];
-          distractors.push(normalizeProseOption(dPair.fact[lang] || dPair.fact.tr, lang));
+        for (let d = 0; d < truePool.length && distractors.length < 4; d++) {
+          const text = normalizeProseOption(truePool[(j * 2 + setNum + d) % truePool.length].text, lang);
+          if (!distractors.includes(text)) distractors.push(text);
         }
 
         const desiredIndex = pickBestKey(qNum, s);
-        keyCounts[desiredIndex]++;
+        commitKey(desiredIndex);
         const options = rotateOptions(correctOption, distractors, desiredIndex);
-        const stemVariant = (setNum - 1) * 3 + (qInSet - 5);
+        const stemVariant = (setNum - 1) * 3 + j;
         const stem = getNegativeTrapStem(unitTitle, lang, stemVariant);
 
-        const whyFalse = targetPair.whyTrapIsFalse?.[lang] || targetPair.whyTrapIsFalse?.tr;
-        const correctFact = targetPair.fact[lang] || targetPair.fact.tr;
+        const whyFalse = targetPair.whyTrapIsFalse ? L(targetPair.whyTrapIsFalse) : undefined;
+        const correctFact = L(targetPair.fact);
         const explanation = whyFalse
           ? explTemplates.negativeTrapWhy(correctOption, whyFalse, correctFact)
           : explTemplates.negativeTrapDefault(correctOption, correctFact);
@@ -1234,29 +1426,28 @@ export function compileUnitQuestions(
       } else if (qInSet <= 10) {
         // --- 3. Positive Concept (3 per set = 24 per unit) ---
         const archetype: ChemistryArchetype = 'positive-concept';
-        const fCount = unit.facts.length;
-        const targetFactIdx = posCounter++ % fCount;
+        const j = qInSet - 8;
+        const targetFactIdx = part.posKeys[j];
         const targetPair = unit.facts[targetFactIdx];
+        const correctOption = normalizeProseOption(L(targetPair.fact), lang);
 
-        const correctOption = normalizeProseOption(targetPair.fact[lang] || targetPair.fact.tr, lang);
-
-        const stride = setNum % 2 === 1 ? 3 : 5;
         const distractors: string[] = [];
-        for (let d = 1; d <= 4; d++) {
-          const dPair = unit.facts[(targetFactIdx + d * stride) % fCount];
-          distractors.push(normalizeProseOption(dPair.trap[lang] || dPair.trap.tr, lang));
+        for (let d = 0; d < part.shownFalse.length && distractors.length < 4; d++) {
+          const idx = part.shownFalse[(j * 2 + setNum + d) % part.shownFalse.length];
+          const text = normalizeProseOption(trapText(idx), lang);
+          if (!distractors.includes(text)) distractors.push(text);
         }
 
         const desiredIndex = pickBestKey(qNum, s);
-        keyCounts[desiredIndex]++;
+        commitKey(desiredIndex);
         const options = rotateOptions(correctOption, distractors, desiredIndex);
-        const stemVariant = (setNum - 1) * 3 + (qInSet - 8);
+        const stemVariant = (setNum - 1) * 3 + j;
         const stem = getPositiveConceptStem(unitTitle, lang, stemVariant);
 
-        const tip = targetPair.osymTip?.[lang] || targetPair.osymTip?.tr;
-        const explanation = tip
+        const tip = targetPair.osymTip ? L(targetPair.osymTip) : undefined;
+        const explanation = (tip
           ? explTemplates.positiveConceptTip(correctOption, tip)
-          : explTemplates.positiveConceptDefault(correctOption);
+          : explTemplates.positiveConceptDefault(correctOption)) + trapCorrections(options, desiredIndex, trapToFact);
 
         questions.push({
           id: qId,
@@ -1274,34 +1465,41 @@ export function compileUnitQuestions(
       } else if (qInSet <= 12) {
         // --- 4. Structure-Property Match (2 per set = 16 per unit) ---
         const archetype: ChemistryArchetype = 'structure-property-match';
+        matchCounter++;
         const cCount = unit.comparisons.length;
         const isTypeA = (qInSet === 11);
         const cIdx = isTypeA
           ? ((setNum - 1) % cCount)
           : ((setNum - 1 + Math.floor(cCount / 2)) % cCount);
         const comp = unit.comparisons[cIdx];
+        const conceptAStr = L(comp.conceptA);
+        const conceptBStr = L(comp.conceptB);
+        const distinctionStr = L(comp.distinction);
 
         let correctOption = '';
         const distractors: string[] = [];
         let stem = '';
+        let explanation = '';
+        let desiredIndex: 0 | 1 | 2 | 3 | 4;
+        let options: [string, string, string, string, string];
 
         if (isTypeA) {
-          // Given distinction trait -> identify Concept A
-          const rawClue = comp.distinction[lang] || comp.distinction.tr;
-          const conceptAName = comp.conceptA[lang] || comp.conceptA.tr;
-          const sanitizedClue = sanitizeEntityClue(rawClue, conceptAName, lang);
-          const matchTitle = sanitizeUnitTitleForStem(unitTitle, conceptAName, lang);
+          // Given the distinguishing trait (with concept A's name masked) -> identify concept A.
+          // Inner double quotes would break the quoted clue in the stem; use single quotes instead.
+          const sanitizedClue = stripTerminalPunctuation(sanitizeEntityClue(distinctionStr, conceptAStr, lang)).replace(/"/g, "'");
+          const matchTitle = sanitizeUnitTitleForStem(unitTitle, conceptAStr, lang);
           stem = getMatchStemA(matchTitle, sanitizedClue, lang);
-          correctOption = normalizeEntityOption(conceptAName);
+          correctOption = normalizeEntityOption(conceptAStr);
 
-          // Collect all unique concept names across unit comparisons, excluding correctOption and near-duplicates
+          // Candidate concepts from the unit, excluding concept A and its own contrast partner B:
+          // the distinction text describes BOTH members of the pair, so offering B as a
+          // distractor made the item ambiguous (e.g. kaynama noktası yükselmesi / donma noktası alçalması).
           const allUnitConcepts: string[] = [];
-          const seenKeys = new Set<string>();
-          seenKeys.add(canonicalOptionKey(correctOption));
+          const seenKeys = new Set<string>([canonicalOptionKey(correctOption), canonicalOptionKey(normalizeEntityOption(conceptBStr))]);
           for (let i = 0; i < cCount; i++) {
             const c = unit.comparisons[(cIdx + 1 + i) % cCount];
             for (const item of [c.conceptB, c.conceptA]) {
-              const name = normalizeEntityOption(item[lang] || item.tr);
+              const name = normalizeEntityOption(L(item));
               const key = canonicalOptionKey(name);
               if (key.length > 0 && !seenKeys.has(key)) {
                 seenKeys.add(key);
@@ -1313,46 +1511,40 @@ export function compileUnitQuestions(
             const pickIdx = ((setNum - 1) * 3 + d) % allUnitConcepts.length;
             distractors.push(allUnitConcepts[pickIdx]);
           }
+          desiredIndex = pickBestKey(qNum, s);
+          commitKey(desiredIndex);
+          options = rotateOptions(correctOption, distractors, desiredIndex);
+          explanation = explTemplates.structureMatch(correctOption, conceptAStr, conceptBStr, distinctionStr);
         } else {
-          // Given Concept B in stem -> identify its distinction property
-          const conceptBName = comp.conceptB[lang] || comp.conceptB.tr;
-          stem = getMatchStemB(unitTitle, conceptBName, lang);
-          correctOption = normalizeProseOption(comp.distinction[lang] || comp.distinction.tr, lang);
-
-          // Collect all unique distinctions across unit comparisons, excluding correctOption
-          const allUnitDistinctions: string[] = [];
-          const seenDists = new Set<string>();
-          for (let i = 0; i < cCount; i++) {
-            const c = unit.comparisons[(cIdx + 1 + i) % cCount];
-            const dist = normalizeProseOption(c.distinction[lang] || c.distinction.tr, lang);
-            if (dist !== correctOption && !seenDists.has(dist)) {
-              seenDists.add(dist);
-              allUnitDistinctions.push(dist);
+          // Given concept B -> pick the one TRUE statement about it. Distractors are the unit's
+          // false (trap) statements, preferring traps that mention the same concepts, so that
+          // exactly one option is correct (previously other comparisons' distinctions were used,
+          // which are themselves true and could describe the same concept).
+          stem = getMatchStemB(unitTitle, conceptBStr, lang);
+          correctOption = normalizeProseOption(distinctionStr, lang);
+          const heads = new Set<string>();
+          for (const name of [conceptBStr, conceptAStr]) {
+            for (const c of extractEntityCandidates(name, lang)) {
+              if (c.length >= (lang === 'zh' ? 2 : 4)) heads.add(c.toLocaleLowerCase(lang));
             }
           }
-          // Supplementary facts from unit.facts if fewer than 4 unique distinctions
-          if (allUnitDistinctions.length < 4) {
-            for (const f of unit.facts) {
-              const text = normalizeProseOption(f.fact[lang] || f.fact.tr, lang);
-              if (text !== correctOption && !seenDists.has(text)) {
-                seenDists.add(text);
-                allUnitDistinctions.push(text);
-              }
-            }
+          const mentions = (text: string) => {
+            const low = text.toLocaleLowerCase(lang);
+            for (const h of heads) if (low.includes(h)) return true;
+            return false;
+          };
+          const pool = [...part.shownFalse].map((idx) => normalizeProseOption(trapText(idx), lang));
+          const rotated = pool.map((_, i) => pool[(i + setNum) % pool.length]);
+          const ordered = [...rotated.filter(mentions), ...rotated.filter((t) => !mentions(t))];
+          for (const t of ordered) {
+            if (distractors.length >= 4) break;
+            if (t !== correctOption && !distractors.includes(t)) distractors.push(t);
           }
-          for (let d = 0; d < 4; d++) {
-            const pickIdx = ((setNum - 1) * 2 + d) % allUnitDistinctions.length;
-            distractors.push(allUnitDistinctions[pickIdx]);
-          }
+          desiredIndex = pickBestKey(qNum, s);
+          commitKey(desiredIndex);
+          options = rotateOptions(correctOption, distractors, desiredIndex);
+          explanation = explTemplates.structureTrait(conceptBStr, conceptAStr, distinctionStr) + trapCorrections(options, desiredIndex, trapToFact);
         }
-
-        const desiredIndex = pickBestKey(qNum, s);
-        keyCounts[desiredIndex]++;
-        const options = rotateOptions(correctOption, distractors, desiredIndex);
-        const conceptAStr = comp.conceptA[lang] || comp.conceptA.tr;
-        const conceptBStr = comp.conceptB[lang] || comp.conceptB.tr;
-        const distinctionStr = comp.distinction[lang] || comp.distinction.tr;
-        const explanation = explTemplates.structureMatch(correctOption, conceptAStr, conceptBStr, distinctionStr);
 
         questions.push({
           id: qId,
@@ -1373,7 +1565,7 @@ export function compileUnitQuestions(
         const sCount = unit.sequences.length;
         const seqIdx = orderCounter++ % sCount;
         const seq = unit.sequences[seqIdx];
-        const seqTitle = seq.title[lang] || seq.title.tr;
+        const seqTitle = L(seq.title);
 
         const isTypeA = (qInSet % 2 === 1);
         let stem = '';
@@ -1391,60 +1583,51 @@ export function compileUnitQuestions(
           { order: [1, 2, 3, 0], correct: 'IV → I → II → III', dists: ['I → II → III → IV', 'II → IV → I → III', 'III → II → IV → I', 'IV → III → II → I'] },
         ];
 
+        const fullProgression = seq.steps
+          .map((st, i) => `${i + 1}. ${stripTerminalPunctuation(L(st))}`)
+          .join(' → ');
+        let explanation = '';
+
         if (isTypeA && seq.steps.length >= 4) {
           const pat = SCRAMBLE_PATTERNS[(setNum - 1) % SCRAMBLE_PATTERNS.length];
-          const st1 = seq.steps[pat.order[0]][lang] || seq.steps[pat.order[0]].tr;
-          const st2 = seq.steps[pat.order[1]][lang] || seq.steps[pat.order[1]].tr;
-          const st3 = seq.steps[pat.order[2]][lang] || seq.steps[pat.order[2]].tr;
-          const st4 = seq.steps[pat.order[3]][lang] || seq.steps[pat.order[3]].tr;
-
-          stem = `${getSequenceOrderStem(unitTitle, seqTitle, lang)}\n\nI. ${st1}\nII. ${st2}\nIII. ${st3}\nIV. ${st4}`;
+          const st = pat.order.map((o) => L(seq.steps[o]));
+          stem = `${getSequenceOrderStem(unitTitle, seqTitle, lang)}\n\nI. ${st[0]}\nII. ${st[1]}\nIII. ${st[2]}\nIV. ${st[3]}`;
           correctOption = pat.correct;
           distractors.push(...pat.dists);
         } else {
           // Missing step [ ? ]
           const stepIdx = (setNum - 1) % (seq.steps.length || 4);
           const safeIdx = Math.min(stepIdx, seq.steps.length - 1);
-          const missingStep = seq.steps[safeIdx][lang] || seq.steps[safeIdx].tr;
+          const missingStep = L(seq.steps[safeIdx]);
 
           const stepsView = seq.steps.map((st, i) => {
-            const text = (i === safeIdx) ? '[ ? ]' : (st[lang] || st.tr);
+            const text = (i === safeIdx) ? '[ ? ]' : L(st);
             return `${i + 1}. ${text}`;
           }).join('\n');
 
           stem = `${getSequenceMissingStepStem(unitTitle, seqTitle, lang)}\n\n${stepsView}`;
           correctOption = normalizeProseOption(missingStep, lang);
 
-          // Build a robust, deduplicated candidate pool of steps from other sequences first
+          // Distractors come from the unit's OTHER sequences; steps of this sequence are already
+          // printed in the stem, so offering them as options was a give-away.
           const allStepCandidates: string[] = [];
-          const seenSteps = new Set<string>();
-
+          const seenSteps = new Set<string>([correctOption]);
+          for (const st of seq.steps) seenSteps.add(normalizeProseOption(L(st), lang));
           for (let i = 1; i < sCount; i++) {
             const otherSeq = unit.sequences[(seqIdx + i) % sCount];
             for (const st of otherSeq.steps) {
-              const text = normalizeProseOption(st[lang] || st.tr, lang);
-              if (text !== correctOption && !seenSteps.has(text)) {
+              const text = normalizeProseOption(L(st), lang);
+              if (!seenSteps.has(text)) {
                 seenSteps.add(text);
                 allStepCandidates.push(text);
               }
             }
           }
-          // If needed, steps from the current sequence (excluding missingStep)
-          for (const st of seq.steps) {
-            const text = normalizeProseOption(st[lang] || st.tr, lang);
-            if (text !== correctOption && !seenSteps.has(text)) {
-              seenSteps.add(text);
-              allStepCandidates.push(text);
-            }
-          }
-          // Supplementary action facts if still needed
+          // Fallback only for very small seeds: visible steps of the same sequence.
           if (allStepCandidates.length < 4) {
-            for (const f of unit.facts) {
-              const text = normalizeProseOption(f.fact[lang] || f.fact.tr, lang);
-              if (text !== correctOption && !seenSteps.has(text)) {
-                seenSteps.add(text);
-                allStepCandidates.push(text);
-              }
+            for (const st of seq.steps) {
+              const text = normalizeProseOption(L(st), lang);
+              if (text !== correctOption && !allStepCandidates.includes(text)) allStepCandidates.push(text);
             }
           }
 
@@ -1455,12 +1638,11 @@ export function compileUnitQuestions(
         }
 
         const desiredIndex = pickBestKey(qNum, s);
-        keyCounts[desiredIndex]++;
+        commitKey(desiredIndex);
         const options = rotateOptions(correctOption, distractors, desiredIndex);
-        const fullProgression = seq.steps
-          .map((st, i) => `${i + 1}. ${st[lang] || st.tr}`)
-          .join(' → ');
-        const explanation = explTemplates.reactionOrder(correctOption, seqTitle, fullProgression);
+        explanation = (isTypeA && seq.steps.length >= 4)
+          ? explTemplates.reactionOrder(correctOption, seqTitle, fullProgression)
+          : explTemplates.missingStep(correctOption, seqTitle, fullProgression);
 
         questions.push({
           id: qId,
@@ -1478,20 +1660,21 @@ export function compileUnitQuestions(
       } else {
         // --- 6. Handcrafted ÖSYM Exam Twin (2 per set = 16 per unit) ---
         const archetype: ChemistryArchetype = 'osym-twin';
-        const twinIdx = twinCounter++ % unit.osymTwins.length;
-        const twin = unit.osymTwins[twinIdx];
+        const twin = twinAt(twinCounter++);
 
-        const stem = twin.stem[lang] || twin.stem.tr;
-        const options: [string, string, string, string, string] = [
-          twin.options[0][lang] || twin.options[0].tr,
-          twin.options[1][lang] || twin.options[1].tr,
-          twin.options[2][lang] || twin.options[2].tr,
-          twin.options[3][lang] || twin.options[3].tr,
-          twin.options[4][lang] || twin.options[4].tr,
-        ];
-        const correctIndex = twin.correctIndex;
-        keyCounts[correctIndex]++;
-        const explanation = twin.explanation[lang] || twin.explanation.tr;
+        const stem = L(twin.stem);
+        const authored = twin.options.map((o) => L(o));
+        let correctIndex: 0 | 1 | 2 | 3 | 4 = twin.correctIndex;
+        let options = authored as [string, string, string, string, string];
+        if (twinIsRotatable(twin)) {
+          // Rotation is language-independent (decided on the seed), so every language keeps the same key.
+          const desired = pickBestKey(qNum, s);
+          const shift = (desired - twin.correctIndex + 5) % 5;
+          options = [0, 1, 2, 3, 4].map((i) => authored[(i - shift + 5) % 5]) as [string, string, string, string, string];
+          correctIndex = desired;
+        }
+        commitKey(correctIndex);
+        const explanation = L(twin.explanation);
 
         questions.push({
           id: qId,
@@ -1511,7 +1694,15 @@ export function compileUnitQuestions(
   }
 
   // Enrich with animated diagram figures
-  return enrichQuestionsWithDiagrams(unit, questions, lang);
+  let placement: DiagramPlacement | undefined;
+  if (lang === 'tr') {
+    placement = planDiagramPlacement(unit, questions, 'tr');
+    TR_DIAGRAM_PLACEMENT.set(unit, placement);
+  } else {
+    if (!TR_DIAGRAM_PLACEMENT.has(unit)) compileUnitQuestions(unit, 'tr');
+    placement = TR_DIAGRAM_PLACEMENT.get(unit);
+  }
+  return enrichQuestionsWithDiagrams(unit, questions, lang, placement);
 }
 
 /**

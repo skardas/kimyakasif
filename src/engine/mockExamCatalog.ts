@@ -363,6 +363,26 @@ const AYT_UNIT_IDS = [
 ];
 
 /**
+ * Units each tier's subtitle explicitly promises. They are always included so the exam really
+ * covers what its card describes (previously a plain rotation could drop, e.g., "Kimya bilimi,
+ * atom, periyodik sistem" from a 'temel' TYT exam whose subtitle lists exactly those topics).
+ */
+const CLAIMED_UNITS: Record<'TYT_BRANCH' | 'AYT_BRANCH', Record<MockExamDifficultyTier, string[]>> = {
+  TYT_BRANCH: {
+    temel: ['u01', 'u02', 'u03', 'u04', 'u08'], // kimya bilimi, atom/periyodik sistem, bağlar, maddenin halleri, karışımlar
+    standart: [],
+    ileri: ['u01', 'u02', 'u04', 'u06'], // laboratuvar düzenekleri, Bohr, faz grafikleri, pistonlu kaplar
+    'osym-prova': ['u03', 'u06', 'u09'], // molekül polarlığı, mol hesapları, asit-baz
+  },
+  AYT_BRANCH: {
+    temel: ['u11', 'u12', 'u14', 'u16', 'u18'], // orbitaller, ideal gaz, molarite, entalpi, denge
+    standart: [],
+    ileri: ['u13', 'u17', 'u19', 'u21', 'u22'], // Maxwell-Boltzmann/potansiyel enerji, titrasyon, Daniell, Hoffman
+    'osym-prova': ['u18', 'u20', 'u21', 'u23', 'u24'], // Le Chatelier, Kçç, Nernst, VSEPR, Markovnikov
+  },
+};
+
+/**
  * Builds the 7 questions for a specific TYT trial by sampling across 7 distinct TYT units.
  */
 function buildTytTrialQuestions(
@@ -371,14 +391,14 @@ function buildTytTrialQuestions(
   usedIds: Set<string>
 ): CompiledQuestion[] {
   const rng = mulberry32(hashSeed(spec.id));
-  // Deterministically rotate/shuffle 7 distinct units from the 10 TYT units
-  const offset = (spec.examNumber - 1) % TYT_UNIT_IDS.length;
-  const rotated = [
-    ...TYT_UNIT_IDS.slice(offset),
-    ...TYT_UNIT_IDS.slice(0, offset),
-  ];
-  // Select first 7 units
-  const chosenUnits = rotated.slice(0, 7);
+  // Units promised by the subtitle first, then a deterministic rotation of the remaining TYT units.
+  const required = CLAIMED_UNITS.TYT_BRANCH[spec.difficultyTier];
+  const others = TYT_UNIT_IDS.filter((u) => !required.includes(u));
+  const offset = (spec.examNumber - 1) % others.length;
+  const rotated = [...others.slice(offset), ...others.slice(0, offset)];
+  const chosenUnits = [...required, ...rotated]
+    .slice(0, 7)
+    .sort((a, b) => TYT_UNIT_IDS.indexOf(a) - TYT_UNIT_IDS.indexOf(b));
 
   const picked: CompiledQuestion[] = [];
   for (let i = 0; i < chosenUnits.length; i++) {
@@ -409,9 +429,11 @@ function buildAytTrialQuestions(
   usedIds: Set<string>
 ): CompiledQuestion[] {
   const rng = mulberry32(hashSeed(spec.id));
-  // Deterministically rotate/shuffle 13 distinct units from the 14 AYT units
-  const skipIndex = (spec.examNumber - 1) % AYT_UNIT_IDS.length;
-  const chosenUnits = AYT_UNIT_IDS.filter((_, idx) => idx !== skipIndex);
+  // Skip one AYT unit per exam (rotating), never one that the subtitle promises.
+  const required = CLAIMED_UNITS.AYT_BRANCH[spec.difficultyTier];
+  const skippable = AYT_UNIT_IDS.filter((u) => !required.includes(u));
+  const skipped = skippable[(spec.examNumber - 1) % skippable.length];
+  const chosenUnits = AYT_UNIT_IDS.filter((u) => u !== skipped);
 
   const picked: CompiledQuestion[] = [];
   for (let i = 0; i < chosenUnits.length; i++) {

@@ -1,20 +1,10 @@
-import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
-import {
-  ArrowLeft,
-  Sparkles,
-  Trophy,
-  Droplets,
-  Play,
-  Square,
-  RotateCcw,
-  FlaskConical,
-  Activity,
-  CheckCircle2,
-  AlertTriangle,
-} from 'lucide-react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Square, RotateCcw, CheckCircle2, ArrowLeft } from 'lucide-react';
+import { GameHud, GameStat } from './GameHud';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
-import { playDrop, playBubble, playFinish, playFizz } from '../../audio/sfx';
+import { GAMES_STRINGS, fmt } from '../../i18n/gamesStrings';
+import { playDrop, playBubble, playCorrect, playWrong, playSuccess } from '../../audio/sfx';
 
 export interface TitrationSimulatorProps {
   lang: LanguageCode;
@@ -39,8 +29,9 @@ export function calculatePhCurve(volumeAddedMl: number): {
   if (Math.abs(clampedVol - vEquiv) <= 0.05) {
     phVal = 7.0;
   } else if (clampedVol < vEquiv) {
-    const fraction = clampedVol / vEquiv;
-    phVal = 1.0 + Math.log10(1 + fraction * 9);
+    // Strong acid left over: [H⁺] = (0,100 M · (25,0 − V)) / (25,0 + V)
+    const excessAcidMolarity = (0.100 * (vEquiv - clampedVol)) / (25.0 + clampedVol);
+    phVal = -Math.log10(excessAcidMolarity);
     phVal = Math.min(phVal, 6.5);
   } else {
     const excessVol = clampedVol - vEquiv;
@@ -72,20 +63,32 @@ export function calculatePhCurve(volumeAddedMl: number): {
   };
 }
 
+
+const COMMA_LANGS: LanguageCode[] = ['tr', 'de', 'fr', 'ru', 'ku'];
+
 export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
+  lang,
   highScore = 0,
   onFinish,
   onBack,
 }) => {
+  const t = UI_TRANSLATIONS[lang];
+  const g = GAMES_STRINGS[lang] ?? GAMES_STRINGS.en;
   const [volumeDispensed, setVolumeDispensed] = useState(0.0);
   const [selectedIndicator, setSelectedIndicator] = useState<IndicatorType>('phenolphthalein');
   const [stirrerOn, setStirrerOn] = useState(true);
   const [flowRate, setFlowRate] = useState<0 | 0.2 | 1.0 | 5.0>(0); // mL/s
   const [score, setScore] = useState(0);
   const [hasFinished, setHasFinished] = useState(false);
+  const [dropN, setDropN] = useState(0);
   const [historyPoints, setHistoryPoints] = useState<{ v: number; ph: number }[]>([
     { v: 0, ph: 1.0 },
   ]);
+
+  const num = (v: number, d: number) => {
+    const s = v.toFixed(d);
+    return COMMA_LANGS.includes(lang) ? s.replace('.', ',') : s;
+  };
 
   const curveData = useMemo(() => calculatePhCurve(volumeDispensed), [volumeDispensed]);
 
@@ -148,6 +151,7 @@ export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
   const handleDropwise = () => {
     if (hasFinished || volumeDispensed >= 50.0) return;
     playDrop();
+    setDropN((n) => n + 1);
     setVolumeDispensed((prev) => Math.min(50.0, parseFloat((prev + 0.05).toFixed(2))));
   };
 
@@ -166,15 +170,16 @@ export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
     let pts = 0;
     if (deltaV <= 0.05) {
       pts = 300; // Perfect equivalence!
-      playFinish();
-      playFizz();
+      playSuccess();
     } else if (deltaV <= 0.20) {
       pts = 200;
-      playFinish();
+      playCorrect();
     } else if (deltaV <= 1.0) {
       pts = 100;
+      playCorrect();
     } else {
       pts = 30;
+      playWrong();
     }
 
     setScore(pts);
@@ -190,266 +195,172 @@ export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
     setHistoryPoints([{ v: 0, ph: 1.0 }]);
   };
 
+  const deltaV = Math.abs(volumeDispensed - 25.0);
+  const indicators: { id: IndicatorType; label: string; dot: string }[] = [
+    { id: 'phenolphthalein', label: g.tPhenol, dot: '#ec4899' },
+    { id: 'methyl-orange', label: g.tMethyl, dot: '#f97316' },
+    { id: 'bromothymol-blue', label: g.tBromo, dot: '#22c55e' },
+  ];
+  const activeIndicator = indicators.find((i) => i.id === selectedIndicator) ?? indicators[0];
+  const canDispense = !hasFinished && volumeDispensed < 50.0;
+  const statusLabel =
+    curveData.status === 'equivalence' ? g.tEquiv : curveData.status === 'basic' ? g.tBasic : curveData.status === 'overshot' ? g.tOvershot : g.tAcidic;
+  const clear = flaskColor.startsWith('rgba');
+  const phColor = clear ? '#F2F6FB' : flaskColor === '#ec4899' ? '#F7A8D8' : flaskColor;
+
+  // Burette geometry (artboard: tube y 14..184, liquid inside)
+  const tubeTop = 17;
+  const tubeBottom = 181;
+  const liquidTop = tubeTop + (tubeBottom - tubeTop) * (curveData.clampedVol / 50);
+  const flowing = flowRate > 0 && canDispense;
+
+  // Mini curve
+  const cx = (v: number) => 8 + (v / 50) * 136;
+  const cy = (ph: number) => 88 - (ph / 14) * 80;
+  const curvePath = historyPoints
+    .map((pt, i) => `${i === 0 ? 'M' : 'L'}${cx(pt.v).toFixed(1)} ${cy(pt.ph).toFixed(1)}`)
+    .join(' ');
+
+  const flowKey = (rate: 0.2 | 1.0, labelText: string, sub: string) => (
+    <button
+      type="button"
+      className={`ky-btn ky-btn--quiet gm-dose${flowRate === rate ? ' is-on' : ''}`}
+      aria-pressed={flowRate === rate}
+      disabled={!canDispense}
+      onClick={() => setFlowRate(flowRate === rate ? 0 : rate)}
+    >
+      {flowRate === rate ? <Square size={14} fill="currentColor" aria-hidden="true" /> : null}
+      <span className="gm-dose-main">{flowRate === rate ? g.tStop : labelText}</span>
+      <span className="gm-dose-sub ky-mono" dir="ltr">{sub}</span>
+    </button>
+  );
+
   return (
-    <div className="titration-simulator-container p-4 max-w-4xl mx-auto flex flex-col gap-5">
-      {/* Top Bar */}
-      <div className="flex items-center justify-between">
-        <button
-          type="button"
-          onClick={onBack}
-          className="btn-secondary flex items-center gap-1.5 py-1.5 px-3 text-xs"
-        >
-          <ArrowLeft size={16} />
-          <span>Geri</span>
-        </button>
+    <div className="gm-play titration-simulator-container">
+      <GameHud title={t.games.titrationTitle} backLabel={t.games.backToHub} onBack={onBack}>
+        <GameStat label={g.tIndicator} value={activeIndicator.label} tone="violet" mono={false} />
+        {hasFinished && <GameStat label={g.score} value={fmt(g.pts, { n: score })} tone="accent" />}
+        {!hasFinished && highScore > 0 && <GameStat label={g.best} value={fmt(g.recordN, { n: highScore })} />}
+      </GameHud>
 
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-1 text-sm font-semibold">
-            <Trophy size={16} className="text-amber-400" />
-            <span>En Yüksek: {Math.max(highScore, score)}</span>
-          </div>
-
-          <div className="flex items-center gap-1 text-sm font-bold text-primary">
-            <Sparkles size={16} />
-            <span>Puan: {score}</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Titration Stage */}
-      <div className="titration-board p-6 bg-surface border border-subtle rounded-2xl shadow-lg grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Left: Lab Apparatus Visual */}
-        <div className="apparatus-stage flex flex-col items-center justify-between p-4 bg-surface-elevated/40 border border-subtle rounded-xl min-h-[360px] relative">
-          <div className="w-full flex items-center justify-between text-xs font-semibold opacity-75">
-            <span>Büret: 0.100 M NaOH (Baz)</span>
-            <span className="font-mono">{volumeDispensed.toFixed(2)} / 50.00 mL</span>
-          </div>
-
-          {/* Virtual Burette Tube */}
-          <div className="burette-tube w-10 h-44 bg-surface-elevated border-2 border-subtle rounded-b-md relative overflow-hidden flex flex-col justify-end shadow-inner">
-            <div
-              className="burette-liquid bg-cyan-500/40 w-full transition-all duration-100"
-              style={{
-                height: `${Math.max(0, ((50.0 - volumeDispensed) / 50.0) * 100)}%`,
-              }}
+      <main className="ky-fit ky-pane gm-main">
+        <section className="ky-stage ky-lead gm-titr-stage apparatus-stage" aria-label={g.tApparatus}>
+          <div className="ky-floor" aria-hidden="true" />
+          <svg className="gm-app-svg" viewBox="0 0 190 330" aria-hidden="true">
+            <rect x="84" y="14" width="22" height="170" rx="5" fill="rgba(255,255,255,.08)" stroke="#8CF5E7" strokeWidth="2.5" />
+            <rect
+              className="gm-bur-liquid"
+              x="87"
+              y={liquidTop}
+              width="16"
+              height={Math.max(0, tubeBottom - liquidTop)}
+              rx="3"
+              fill="#6FA8FF"
+              opacity=".85"
             />
-            {/* Graduations */}
-            <div className="absolute inset-0 pointer-events-none flex flex-col justify-between py-1 px-0.5 opacity-40 text-[7px] font-mono">
-              <span>0 mL</span>
-              <span>10</span>
-              <span>20</span>
-              <span>25 (Eq)</span>
-              <span>30</span>
-              <span>40</span>
-              <span>50 mL</span>
+            <g stroke="#E8EEF6" strokeWidth="1.5" opacity=".7">
+              <path d="M106 40h8" />
+              <path d="M106 70h12" />
+              <path d="M106 100h8" />
+              <path d="M106 130h12" />
+              <path d="M106 160h8" />
+            </g>
+            <path d="M95 184v22" stroke="#8CF5E7" strokeWidth="5" strokeLinecap="round" />
+            <rect x="78" y="190" width="34" height="9" rx="4.5" fill="#F6B73C" className={flowing ? 'gm-cock is-open' : 'gm-cock'} />
+            {(flowing || dropN > 0) && (
+              <circle key={flowing ? 'flow' : `d-${dropN}`} cx="95" cy="214" r="5" fill="#6FA8FF" className={flowing ? 'gm-drip is-loop' : 'gm-drip'} />
+            )}
+            <path
+              d="M82 236h26v22l34 50a8 8 0 0 1-7 13H55a8 8 0 0 1-7-13l34-50z"
+              fill="rgba(255,255,255,.07)"
+              stroke="#8CF5E7"
+              strokeWidth="2.5"
+              strokeLinejoin="round"
+            />
+            <path className="gm-flask-liquid" d="M68 284h54l18 26a6 6 0 0 1-5 9H55a6 6 0 0 1-5-9z" fill={clear ? 'rgba(220,235,255,.22)' : flaskColor} opacity=".92" />
+            <ellipse className="gm-flask-surface" cx="95" cy="284" rx="27" ry="4" fill={clear ? 'rgba(255,255,255,.35)' : '#FFD9EE'} opacity={clear ? 1 : 0.55} />
+            {stirrerOn && <ellipse className="gm-vortex" cx="95" cy="306" rx="12" ry="3" fill="none" stroke="rgba(255,255,255,.55)" strokeWidth="2" />}
+          </svg>
+
+          <div className="gm-titr-side">
+            <div className="gm-readout">
+              <p className="gm-readout-label">pH</p>
+              <p className="ky-disp ky-mono gm-readout-ph" style={{ color: phColor }} aria-live="polite">
+                {num(curveData.ph, 1)}
+              </p>
+              <span className={`gm-ph-tag is-${curveData.status}`}>{statusLabel}</span>
             </div>
-          </div>
-
-          {/* Stopcock valve droplet */}
-          <div className="drop-nozzle flex flex-col items-center my-1">
-            <div className={`w-1.5 h-1.5 rounded-full ${flowRate > 0 ? 'bg-cyan-400 animate-ping' : 'bg-cyan-400'}`} />
-          </div>
-
-          {/* Erlenmeyer Flask Visual */}
-          <div className="erlenmeyer-flask relative flex flex-col items-center">
-            <div
-              className="flask-body w-32 h-28 border-4 border-subtle rounded-b-3xl rounded-t-lg transition-colors duration-300 flex items-end justify-center overflow-hidden shadow-md"
-              style={{
-                backgroundColor: flaskColor,
-              }}
-            >
-              {/* Stirring vortex animation */}
-              {stirrerOn && (
-                <div className="w-12 h-2.5 bg-foreground/30 rounded-full animate-spin mb-2" />
-              )}
+            <div className="gm-readout">
+              <p className="gm-readout-label">{g.tAdded}</p>
+              <p className="ky-mono gm-readout-vol" dir="ltr">
+                {num(volumeDispensed, 2)} <span>mL</span>
+              </p>
             </div>
-            <div className="text-[10px] opacity-75 mt-1 font-mono text-center">
-              25 mL 0.100 M HCl (Asit) + İndikatör
-            </div>
-          </div>
-
-          {/* Real-time pH Readout HUD */}
-          <div className="ph-hud w-full flex items-center justify-between p-2.5 bg-surface border border-subtle rounded-lg mt-2">
-            <span className="text-xs font-bold flex items-center gap-1.5">
-              <Activity size={14} className="text-primary" />
-              <span>pH Metre:</span>
-            </span>
-            <span className={`text-lg font-mono font-black ${curveData.ph < 7 ? 'text-ruby' : curveData.ph === 7 ? 'text-purple-400' : 'text-cyan-400'}`}>
-              {curveData.ph.toFixed(2)}
-            </span>
-            <span className={`text-xs px-2 py-0.5 rounded font-semibold ${curveData.status === 'equivalence' ? 'bg-purple-500/20 text-purple-300' : curveData.status === 'overshot' ? 'bg-ruby/20 text-ruby' : 'bg-surface-elevated'}`}>
-              {curveData.status.toUpperCase()}
-            </span>
-          </div>
-        </div>
-
-        {/* Right: Controls & Real-time S-Curve Graph */}
-        <div className="controls-and-curve flex flex-col justify-between gap-4">
-          {/* Indicator Selection */}
-          <div className="indicator-selector flex flex-col gap-1.5">
-            <label className="text-xs font-semibold opacity-80">İndikatör Seçimi:</label>
-            <div className="grid grid-cols-3 gap-2">
-              <button
-                type="button"
-                onClick={() => setSelectedIndicator('phenolphthalein')}
-                className={`p-2 rounded-lg border text-xs font-semibold transition-all ${selectedIndicator === 'phenolphthalein' ? 'border-pink-500 bg-pink-500/10 text-pink-300' : 'border-subtle bg-surface'}`}
-              >
-                Fenolftalein (8.2-10)
-              </button>
-              <button
-                type="button"
-                onClick={() => setSelectedIndicator('methyl-orange')}
-                className={`p-2 rounded-lg border text-xs font-semibold transition-all ${selectedIndicator === 'methyl-orange' ? 'border-amber-500 bg-amber-500/10 text-amber-300' : 'border-subtle bg-surface'}`}
-              >
-                Metil Oranj (3.1-4.4)
-              </button>
-              <button
-                type="button"
-                onClick={() => setSelectedIndicator('bromothymol-blue')}
-                className={`p-2 rounded-lg border text-xs font-semibold transition-all ${selectedIndicator === 'bromothymol-blue' ? 'border-cyan-500 bg-cyan-500/10 text-cyan-300' : 'border-subtle bg-surface'}`}
-              >
-                Bromtimol (6.0-7.6)
-              </button>
-            </div>
-          </div>
-
-          {/* SVG S-Curve Plot */}
-          <div className="svg-curve-box p-3 bg-surface-elevated/40 border border-subtle rounded-xl flex flex-col gap-1">
-            <div className="flex items-center justify-between text-[11px] font-semibold opacity-75">
-              <span>Titrasyon Eğrisi (pH / V_eklenen)</span>
-              <span>Eşdeğerlik: 25.00 mL (pH 7.00)</span>
-            </div>
-
-            <svg viewBox="0 0 205 102" className="w-full h-28 bg-surface rounded-md border border-subtle">
-              {/* Axes and grid */}
-              <line x1="20" y1="90" x2="195" y2="90" stroke="currentColor" strokeOpacity="0.2" />
-              <line x1="20" y1="10" x2="20" y2="90" stroke="currentColor" strokeOpacity="0.2" />
-              {/* Equivalence guide line at V=25 mL (x = 20 + 25*(170/50) = 105) */}
-              <line x1="105" y1="10" x2="105" y2="90" stroke="#a855f7" strokeDasharray="3 3" strokeOpacity="0.6" />
-              <line x1="20" y1="50" x2="195" y2="50" stroke="#a855f7" strokeDasharray="3 3" strokeOpacity="0.3" />
-
-              {/* Y axis numerical scale labels (0, 7, 14 pH) */}
-              {[0, 7, 14].map((ph) => {
-                const y = 90 - (ph / 14.0) * 80;
-                return (
-                  <g key={`y-tick-${ph}`}>
-                    <line x1="17" y1={y} x2="20" y2={y} stroke="currentColor" strokeOpacity="0.4" />
-                    <text x="15" y={y + 1.8} fontSize="4.8" fill="currentColor" fillOpacity="0.75" textAnchor="end" fontFamily="monospace">
-                      {ph}
-                    </text>
-                  </g>
-                );
-              })}
-
-              {/* X axis numerical scale labels (0, 10, 20, 25, 30, 40, 50 mL) */}
-              {[0, 10, 20, 25, 30, 40, 50].map((v) => {
-                const x = 20 + (v / 50.0) * 170;
-                return (
-                  <g key={`x-tick-${v}`}>
-                    <line x1={x} y1="90" x2={x} y2="93" stroke="currentColor" strokeOpacity="0.4" />
-                    <text x={x} y="98" fontSize="4.8" fill="currentColor" fillOpacity="0.75" textAnchor="middle" fontFamily="monospace">
-                      {v}
-                    </text>
-                  </g>
-                );
-              })}
-
-              {/* S-curve path */}
-              <path
-                d={historyPoints.map((pt, i) => {
-                  const x = 20 + (pt.v / 50.0) * 170;
-                  const y = 90 - (pt.ph / 14.0) * 80;
-                  return `${i === 0 ? 'M' : 'L'} ${x.toFixed(1)} ${y.toFixed(1)}`;
-                }).join(' ')}
-                fill="none"
-                stroke="var(--brand-primary)"
-                strokeWidth="2.5"
-              />
-
-              {/* Current Point */}
-              <circle
-                cx={20 + (curveData.clampedVol / 50.0) * 170}
-                cy={90 - (curveData.ph / 14.0) * 80}
-                r="4"
-                fill="#a855f7"
-              />
+            <svg className="gm-mini-curve" viewBox="0 0 150 96" role="img" aria-label={g.tCurve}>
+              <path d="M6 90V6" stroke="rgba(255,255,255,.3)" strokeWidth="1.5" />
+              <path d="M6 90h140" stroke="rgba(255,255,255,.3)" strokeWidth="1.5" />
+              <path d={`M${cx(25)} 6V90`} stroke="rgba(167,139,250,.55)" strokeWidth="1.2" strokeDasharray="3 3" />
+              <path d={curvePath} fill="none" stroke="#2DD9C3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+              <circle cx={cx(curveData.clampedVol)} cy={cy(curveData.ph)} r="5" fill="#F6B73C" />
             </svg>
           </div>
+        </section>
 
-          {/* Valve and Stirrer Action Controls */}
-          <div className="valve-controls-box flex flex-col gap-2">
-            <div className="grid grid-cols-2 gap-2">
-              <button
-                type="button"
-                onClick={handleDropwise}
-                disabled={hasFinished || volumeDispensed >= 50.0}
-                className="btn-secondary py-2.5 px-3 flex items-center justify-center gap-2 font-bold text-xs"
-              >
-                <Droplets size={16} />
-                <span>Damla Damla (+0.05 mL)</span>
-              </button>
+        <section className="ky-card gm-task">
+          <p className="ky-fs-16 gm-task-title">{g.tTask}</p>
+          <p className="ky-fs-13 gm-task-desc">{g.tTaskDesc}</p>
+        </section>
 
-              <button
-                type="button"
-                onClick={toggleStirrer}
-                className={`py-2.5 px-3 rounded-xl border text-xs font-bold flex items-center justify-center gap-2 transition-all ${stirrerOn ? 'border-primary/40 bg-primary/10 text-primary' : 'border-subtle bg-surface'}`}
-              >
-                <Activity size={16} />
-                <span>Manyetik Karıştırıcı: {stirrerOn ? 'Açık' : 'Kapalı'}</span>
-              </button>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-semibold opacity-75 shrink-0">Sürekli Akış:</span>
-              <button
-                type="button"
-                onClick={() => setFlowRate(flowRate === 0.2 ? 0 : 0.2)}
-                disabled={hasFinished || volumeDispensed >= 50.0}
-                className={`btn-secondary flex-1 py-1.5 text-xs ${flowRate === 0.2 ? 'border-primary text-primary' : ''}`}
-              >
-                Yavaş (0.2 mL/s)
-              </button>
-              <button
-                type="button"
-                onClick={() => setFlowRate(flowRate === 1.0 ? 0 : 1.0)}
-                disabled={hasFinished || volumeDispensed >= 50.0}
-                className={`btn-secondary flex-1 py-1.5 text-xs ${flowRate === 1.0 ? 'border-primary text-primary' : ''}`}
-              >
-                Orta (1.0 mL/s)
-              </button>
-              <button
-                type="button"
-                onClick={() => setFlowRate(0)}
-                className="btn-secondary py-1.5 px-3 text-xs text-ruby border-ruby/30"
-              >
-                Durdur
-              </button>
-            </div>
-          </div>
-
-          {/* End Point / Finish Button */}
-          <div className="flex items-center justify-between gap-3 pt-2">
-            <button
-              type="button"
-              onClick={handleReset}
-              className="btn-secondary py-2.5 px-4 text-xs flex items-center gap-1.5"
-            >
-              <RotateCcw size={14} />
-              <span>Yeniden Başla</span>
+        <div className="ky-seg gm-ind" role="group" aria-label={g.tIndicator}>
+          {indicators.map((ind) => (
+            <button key={ind.id} type="button" aria-pressed={selectedIndicator === ind.id} onClick={() => setSelectedIndicator(ind.id)} className="ky-fs-13">
+              <span className="gm-dot" style={{ background: ind.dot }} aria-hidden="true" />
+              {ind.label}
             </button>
-
-            <button
-              type="button"
-              onClick={handleStopTitration}
-              disabled={hasFinished}
-              className="btn-primary py-2.5 px-6 font-bold flex items-center gap-2 flex-1 justify-center"
-            >
-              <CheckCircle2 size={18} />
-              <span>Dönüm Noktası (Eşdeğerlik) İlan Et</span>
-            </button>
-          </div>
+          ))}
         </div>
-      </div>
+
+        <div className="gm-doses valve-controls-box">
+          <button type="button" onClick={handleDropwise} disabled={!canDispense} className="ky-btn ky-btn--quiet gm-dose">
+            <span className="gm-dose-main">{g.tDrop}</span>
+            <span className="gm-dose-sub ky-mono" dir="ltr">+{num(0.05, 2)} mL</span>
+          </button>
+          {flowKey(0.2, g.tSlow, `${num(0.2, 1)} mL/s`)}
+          {flowKey(1.0, g.tFast, `${num(1, 1)} mL/s`)}
+        </div>
+
+        <div className="ky-well gm-stir">
+          <span className="ky-fs-14">{g.tStirrer}</span>
+          <button type="button" role="switch" aria-checked={stirrerOn} aria-label={g.tStirrer} className="ky-switch" onClick={toggleStirrer} />
+        </div>
+      </main>
+
+      <footer className={`ky-screen-foot gm-foot${hasFinished ? ' ky-screen-foot--stack' : ''}`}>
+        {hasFinished && (
+          <p className={`gm-status ky-fs-14 ${score >= 100 ? 'ok ky-pop' : 'bad ky-shake'}`} role="status">
+            {score >= 300
+              ? fmt(g.tPerfect, { d: num(deltaV, 2), n: score })
+              : fmt(g.tResult, { d: num(deltaV, 2), n: score })}
+          </p>
+        )}
+        <div className="gm-foot-row">
+          <button type="button" onClick={hasFinished ? onBack : handleReset} className="ky-btn ky-btn--quiet">
+            {hasFinished ? <ArrowLeft size={16} aria-hidden="true" className="gm-flip" /> : <RotateCcw size={16} aria-hidden="true" />}
+            <span className={hasFinished ? "gm-narrow-sr" : undefined}>{hasFinished ? g.backToGames : g.reset}</span>
+          </button>
+          {hasFinished ? (
+            <button type="button" onClick={handleReset} className="ky-btn ky-btn--primary ky-grow gm-cta" data-sfx="start">
+              <RotateCcw size={18} aria-hidden="true" />
+              <span>{g.replay}</span>
+            </button>
+          ) : (
+            <button type="button" onClick={handleStopTitration} className="ky-btn ky-btn--primary ky-grow gm-cta">
+              <CheckCircle2 size={18} aria-hidden="true" />
+              <span>{g.tEndpoint}</span>
+            </button>
+          )}
+        </div>
+      </footer>
     </div>
   );
 };

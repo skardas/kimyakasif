@@ -1,21 +1,10 @@
 import React, { useState, useMemo } from 'react';
-import {
-  BookOpen,
-  Search,
-  CheckCircle2,
-  FileCheck2,
-  Box,
-  Layers,
-  Sparkles,
-  Filter,
-  AlertTriangle,
-  Award,
-  Target,
-  ArrowRight,
-} from 'lucide-react';
+import { CheckCircle2, FileCheck2, Box, Layers, Presentation, User, SlidersHorizontal, WifiOff } from 'lucide-react';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { CURRICULUM_STRINGS } from '../../i18n/curriculumStrings';
 import { SLIDE_DECK_STRINGS } from '../../i18n/slideDeckStrings';
+import { redesignStrings } from '../../i18n/redesignStrings';
 import { ALL_CHEMISTRY_UNITS } from '../../data/units';
 import type { ChemistryUnitSeedData } from '../../data/units/types';
 import { UnitSlideDeckModal } from './UnitSlideDeckModal';
@@ -43,54 +32,51 @@ export interface CurriculumViewProps {
   todayCount: number;
   dailyGoal: number;
   lang: LanguageCode;
+  isOffline?: boolean;
   solvedQuestions: Record<string, boolean>;
   completedSlideUnits: string[];
-  targetTrack?: 'TYT_FIRST' | 'TYT_ONLY' | 'AYT_FOCUS';
   onMarkUnitSlidesCompleted: (unitId: string) => void;
+  onOpenProfile: () => void;
+  onOpenSettings: () => void;
   onOpenUnitQuiz: (unitId: string) => void;
   onOpenUnitCards: (unitId: string) => void;
   onOpen3DScene: (sceneId: string) => void;
 }
 
+/**
+ * Home: title + profile + settings, one "today's goal" row, a Tümü/TYT/AYT filter
+ * and the unit list. Each unit card has four equal action keys.
+ */
 export const CurriculumView: React.FC<CurriculumViewProps> = ({
   initialExamFilter = 'ALL',
   todayCount,
   dailyGoal,
   lang,
+  isOffline = false,
   solvedQuestions,
   completedSlideUnits,
-  targetTrack = 'TYT_FIRST',
   onMarkUnitSlidesCompleted,
+  onOpenProfile,
+  onOpenSettings,
   onOpenUnitQuiz,
   onOpenUnitCards,
   onOpen3DScene,
 }) => {
   const t = UI_TRANSLATIONS[lang];
   const s = SLIDE_DECK_STRINGS[lang] || SLIDE_DECK_STRINGS.tr;
+  const cs = CURRICULUM_STRINGS[lang] ?? CURRICULUM_STRINGS.tr;
+  const r = redesignStrings(lang);
   const pills = UNIT_ACTION_PILLS[lang] ?? UNIT_ACTION_PILLS.tr;
 
   const [examFilter, setExamFilter] = useState<'ALL' | 'TYT' | 'AYT'>(initialExamFilter);
-  const [gradeFilter, setGradeFilter] = useState<number | 'ALL'>('ALL');
-  const [searchQuery, setSearchQuery] = useState<string>('');
   const [activeUnitForDeck, setActiveUnitForDeck] = useState<ChemistryUnitSeedData | null>(null);
 
-  // Filter units based on exam, grade, and search query
-  const filteredUnits = useMemo(() => {
-    return ALL_CHEMISTRY_UNITS.filter((u) => {
-      if (examFilter !== 'ALL' && u.exam !== examFilter) return false;
-      if (gradeFilter !== 'ALL' && u.grade !== gradeFilter) return false;
-      if (searchQuery.trim()) {
-        const query = searchQuery.toLowerCase();
-        const titleMatch = (u.title[lang] || u.title.tr).toLowerCase().includes(query);
-        const subtitleMatch = (u.subtitle[lang] || u.subtitle.tr).toLowerCase().includes(query);
-        const idMatch = u.id.toLowerCase().includes(query);
-        return titleMatch || subtitleMatch || idMatch;
-      }
-      return true;
-    });
-  }, [examFilter, gradeFilter, searchQuery, lang]);
+  const filteredUnits = useMemo(
+    () => ALL_CHEMISTRY_UNITS.filter((u) => examFilter === 'ALL' || u.exam === examFilter),
+    [examFilter]
+  );
 
-  // Calculate unit progress (solved out of 128)
+  // Unit progress (solved out of 128)
   const getUnitSolvedCount = (unitId: string) => {
     let count = 0;
     for (let q = 1; q <= 128; q++) {
@@ -100,281 +86,144 @@ export const CurriculumView: React.FC<CurriculumViewProps> = ({
     return count;
   };
 
-  // TYT Stage Stats (u01–u10)
-  const tytUnits = useMemo(() => ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'TYT'), []);
-  const tytSolvedCount = useMemo(() => {
-    return tytUnits.reduce((acc, u) => acc + getUnitSolvedCount(u.id), 0);
-  }, [tytUnits, solvedQuestions]);
-  const tytMasteryPct = Math.min(100, Math.round((tytSolvedCount / (10 * 16)) * 100)); // 1 set of 16/unit = 100% baseline
+  const tytCount = useMemo(() => ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'TYT').length, []);
+  const aytCount = ALL_CHEMISTRY_UNITS.length - tytCount;
 
-  // AYT Stage Stats (u11–u24)
-  const aytUnits = useMemo(() => ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'AYT'), []);
-  const aytSolvedCount = useMemo(() => {
-    return aytUnits.reduce((acc, u) => acc + getUnitSolvedCount(u.id), 0);
-  }, [aytUnits, solvedQuestions]);
-  const aytMasteryPct = Math.min(100, Math.round((aytSolvedCount / (14 * 16)) * 100));
-
-  // Prerequisite prompt: if TYT_FIRST is active and TYT mastery < 60%
-  const showPrereqWarning = targetTrack === 'TYT_FIRST' && tytMasteryPct < 60;
+  const goalPct = dailyGoal > 0 ? Math.min(1, todayCount / dailyGoal) : 0;
+  const ringLen = 2 * Math.PI * 21;
+  const nextUnit =
+    filteredUnits.find((u) => getUnitSolvedCount(u.id) < 128) ?? filteredUnits[0] ?? ALL_CHEMISTRY_UNITS[0];
 
   return (
-    <section className="curriculum-container" aria-label={t.curriculum.heroTitle}>
-      {/* Hero Header */}
-      <div className="section-header">
-        <div>
-          <div className="curriculum-header-badge-row">
-            <h1>{t.curriculum.heroTitle}</h1>
-            <span className="yks-progression-chip">
-              {targetTrack === 'TYT_ONLY'
-                ? '🎯 TYT Odaklı'
-                : targetTrack === 'AYT_FOCUS'
-                ? '⚡ AYT Odaklı'
-                : '🇹🇷 1. TYT → 2. AYT Sıralı Takip'}
-            </span>
-          </div>
-          <p className="subtitle-text">{t.curriculum.heroSubtitle}</p>
-        </div>
-        <div className="telemetry-pill">
-          <span>
-            {todayCount} / {dailyGoal} {t.stats.solved}
+    <section className="ky-screen cur" aria-label={t.curriculum.heroTitle}>
+      <header className="ky-screen-head">
+        <h1 className="ky-disp ky-fs-28">{t.nav.curriculum}</h1>
+        {isOffline && (
+          <span className="ky-chip ky-chip--ok cur-offline" title={t.offlineModeActive}>
+            <WifiOff size={14} aria-hidden="true" />
+            <span className="cur-offline__label">{t.offlineModeActive}</span>
           </span>
-        </div>
-      </div>
+        )}
+        <button type="button" className="ky-icon-btn" onClick={onOpenProfile} aria-label={r.openProfile} title={r.openProfile}>
+          <User size={20} aria-hidden="true" />
+        </button>
+        <button type="button" className="ky-icon-btn" onClick={onOpenSettings} aria-label={r.openSettings} title={r.openSettings}>
+          <SlidersHorizontal size={20} aria-hidden="true" />
+        </button>
+      </header>
 
-      {/* YKS Sequential Exam Progression Overview Bar */}
-      <div className="yks-stages-summary-strip">
-        <div
-          className={`yks-stage-pill ${examFilter === 'TYT' ? 'active' : ''}`}
-          onClick={() => setExamFilter(examFilter === 'TYT' ? 'ALL' : 'TYT')}
-          role="button"
-          tabIndex={0}
-        >
-          <div className="stage-pill-meta">
-            <span className="stage-num-badge tyt">1. Aşama</span>
-            <strong className="stage-title-text">TYT Kimya</strong>
-            <span className="stage-q-count">u01–u10 • 7 YKS Sorusu</span>
-          </div>
-          <div className="stage-mini-progress">
-            <span className="stage-pct">%{tytMasteryPct}</span>
-            <div className="stage-track">
-              <div className="stage-fill tyt" style={{ width: `${tytMasteryPct}%` }} />
-            </div>
-          </div>
-        </div>
-
-        <div className="yks-stage-divider">
-          <ArrowRight size={16} />
-        </div>
-
-        <div
-          className={`yks-stage-pill ${examFilter === 'AYT' ? 'active' : ''}`}
-          onClick={() => setExamFilter(examFilter === 'AYT' ? 'ALL' : 'AYT')}
-          role="button"
-          tabIndex={0}
-        >
-          <div className="stage-pill-meta">
-            <span className="stage-num-badge ayt">2. Aşama</span>
-            <strong className="stage-title-text">AYT Kimya</strong>
-            <span className="stage-q-count">u11–u24 • 13 YKS Sorusu</span>
-          </div>
-          <div className="stage-mini-progress">
-            <span className="stage-pct">%{aytMasteryPct}</span>
-            <div className="stage-track">
-              <div className="stage-fill ayt" style={{ width: `${aytMasteryPct}%` }} />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Prerequisite Coaching Prompt */}
-      {showPrereqWarning && (
-        <div className="prereq-curriculum-banner" role="status">
-          <AlertTriangle size={18} className="prereq-alert-icon" />
-          <div className="prereq-body">
-            <strong>YKS Koçluk Tavsiyesi:</strong>
-            <span>
-              1. Aşama TYT Kimya temeliniz henüz %{tytMasteryPct} seviyesinde. YKS başarısı için
-              AYT konularına geçmeden önce TYT ünitelerinde en az %60 barajına ulaşmanız önerilir.
-            </span>
+      <div className="cur-top">
+        <div className="ky-card cur-goal">
+          <svg role="img" aria-label={r.goalRing(todayCount, dailyGoal)} width="52" height="52" viewBox="0 0 52 52" className="cur-goal__ring">
+            <circle cx="26" cy="26" r="21" fill="none" stroke="var(--raised)" strokeWidth="7" />
+            {/* Nothing answered today = empty track (no 3% stub that reads as progress after a reset) */}
+            {goalPct > 0 && (
+              <circle
+                cx="26"
+                cy="26"
+                r="21"
+                fill="none"
+                stroke="var(--accent)"
+                strokeWidth="7"
+                strokeLinecap="round"
+                strokeDasharray={ringLen}
+                strokeDashoffset={ringLen * (1 - Math.max(0.03, goalPct))}
+                transform="rotate(-90 26 26)"
+              />
+            )}
+          </svg>
+          <div className="cur-goal__text">
+            <p className="ky-fs-16 cur-goal__title">{cs.goalEyebrow}</p>
+            <p className="ky-fs-14 ky-mono cur-goal__count">{r.goalCount(todayCount, dailyGoal)}</p>
           </div>
           <button
             type="button"
-            className="prereq-filter-btn"
-            onClick={() => setExamFilter('TYT')}
+            className="ky-btn ky-btn--primary ky-btn--sm cur-goal__cta"
+            data-sfx="start"
+            onClick={() => nextUnit && onOpenUnitQuiz(nextUnit.id)}
           >
-            TYT Ünitelerine Odaklan
-          </button>
-        </div>
-      )}
-
-      {/* Filters and Search Bar */}
-      <div className="curriculum-filter-bar">
-        {/* Exam Type Filters */}
-        <div className="filter-chips-group" role="radiogroup" aria-label="Sınav Filtresi">
-          <button
-            type="button"
-            className={`filter-chip ${examFilter === 'ALL' ? 'active' : ''}`}
-            onClick={() => setExamFilter('ALL')}
-          >
-            {t.filters.all} (24)
-          </button>
-          <button
-            type="button"
-            className={`filter-chip ${examFilter === 'TYT' ? 'active' : ''}`}
-            onClick={() => setExamFilter('TYT')}
-          >
-            TYT (10)
-          </button>
-          <button
-            type="button"
-            className={`filter-chip ${examFilter === 'AYT' ? 'active' : ''}`}
-            onClick={() => setExamFilter('AYT')}
-          >
-            AYT (14)
+            {cs.solveCta}
           </button>
         </div>
 
-        {/* Grade Filters */}
-        <div className="grade-chips-group" role="radiogroup" aria-label="Sınıf Filtresi">
-          <button
-            type="button"
-            className={`grade-chip ${gradeFilter === 'ALL' ? 'active' : ''}`}
-            onClick={() => setGradeFilter('ALL')}
-          >
-            {t.filters.all}
-          </button>
-          {[9, 10, 11, 12].map((g) => (
+        <div role="tablist" aria-label={r.examFilter} className="ky-seg">
+          {(
+            [
+              ['ALL', `${r.all} · ${ALL_CHEMISTRY_UNITS.length}`],
+              ['TYT', `TYT · ${tytCount}`],
+              ['AYT', `AYT · ${aytCount}`],
+            ] as const
+          ).map(([key, label]) => (
             <button
-              key={g}
+              key={key}
               type="button"
-              className={`grade-chip ${gradeFilter === g ? 'active' : ''}`}
-              onClick={() => setGradeFilter(g)}
+              role="tab"
+              aria-selected={examFilter === key}
+              className="ky-fs-14"
+              onClick={() => setExamFilter(key)}
             >
-              {g}. {t.filters.grade}
+              {label}
             </button>
           ))}
         </div>
-
-        {/* Search Input */}
-        <div className="search-input-wrapper">
-          <Search size={18} className="search-icon" />
-          <input
-            type="text"
-            className="curriculum-search-input"
-            placeholder={t.filters.searchPlaceholder || 'Ünite veya kavram ara...'}
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-        </div>
       </div>
 
-      {/* Units Grid with Compact Premium Action Pills */}
-      <div className="units-grid-container">
-        {filteredUnits.map((u) => {
-          const solved = getUnitSolvedCount(u.id);
-          const percent = Math.min(100, Math.round((solved / 128) * 100));
-          const isSlidesCompleted = completedSlideUnits.includes(u.id);
+      <div className="ky-fit">
+        <div className="cur-list">
+          {filteredUnits.map((u) => {
+            const solved = getUnitSolvedCount(u.id);
+            const percent = Math.min(100, Math.round((solved / 128) * 100));
+            const isSlidesCompleted = completedSlideUnits.includes(u.id);
+            const title = u.title[lang] || u.title.tr;
+            const no = String(u.order).padStart(2, '0');
 
-          return (
-            <article key={u.id} className="unit-card compact-unit-card">
-              {/* Unit Card Header */}
-              <div className="unit-card-top">
-                <div className="unit-meta-badges">
-                  <span className={`exam-tag ${u.exam.toLowerCase()}`}>{u.exam}</span>
-                  <span className="grade-tag">{u.grade}. Sınıf</span>
-                  <span className="unit-number-tag">#{String(u.order).padStart(2, '0')}</span>
+            return (
+              <article key={u.id} className="ky-card cur-unit">
+                <div>
+                  <p className="ky-fs-12 cur-unit__meta">{r.unitMeta(no, u.exam, u.grade)}</p>
+                  <h2 className="ky-fs-20 cur-unit__title">{title}</h2>
+                  <p className="ky-fs-14 cur-unit__sub">{u.subtitle[lang] || u.subtitle.tr}</p>
                 </div>
-
-                {/* Slide Status Badge */}
-                {isSlidesCompleted ? (
-                  <span className="slide-status-badge completed" title={s.slidesDoneBadge}>
-                    <CheckCircle2 size={13} />
-                    <span className="badge-text-compact">{s.slidesDoneBadge}</span>
-                  </span>
-                ) : (
-                  <span className="slide-status-badge" title={s.slidesBadge}>
-                    <BookOpen size={13} />
-                    <span className="badge-text-compact">{s.slidesBadge}</span>
-                  </span>
-                )}
-              </div>
-
-              {/* Title & Subtitle */}
-              <h3 className="unit-card-title">{u.title[lang] || u.title.tr}</h3>
-              <p className="unit-card-subtitle">{u.subtitle[lang] || u.subtitle.tr}</p>
-
-              {/* Solved Progress Bar */}
-              <div className="unit-progress-container compact-progress">
-                <div className="progress-labels">
-                  <span className="solved-count">
-                    {solved} / 128 {t.stats.solved}
-                  </span>
-                  <span className="progress-pct">%{percent}</span>
-                </div>
-                <div className="progress-track-bg">
+                <div className="cur-unit__progress">
                   <div
-                    className="progress-fill-bar"
-                    style={{ width: `${percent}%` }}
+                    className="ky-track"
                     role="progressbar"
                     aria-valuenow={percent}
                     aria-valuemin={0}
                     aria-valuemax={100}
-                  />
+                    aria-label={title}
+                  >
+                    <div className={`ky-fill ${u.exam === 'AYT' ? 'ky-fill--violet' : ''}`} style={{ inlineSize: `${Math.max(percent, 2)}%` }} />
+                  </div>
+                  {isSlidesCompleted && (
+                    <CheckCircle2 size={16} className="cur-unit__done" aria-label={s.slidesDoneBadge} />
+                  )}
+                  <span className="ky-mono ky-fs-12 cur-unit__count">{solved} / 128</span>
                 </div>
-              </div>
-
-              {/* Compact Localized Action Pills (Slayt, Test, 3D, Kart) */}
-              <div className="unit-card-action-pills">
-                {/* 1. Open Study Slide Deck */}
-                <button
-                  type="button"
-                  className="action-pill pill-slide"
-                  onClick={() => setActiveUnitForDeck(u)}
-                  title={`${u.title[lang] || u.title.tr} - ${pills.slide}`}
-                >
-                  <BookOpen size={14} />
-                  <span>{pills.slide}</span>
-                </button>
-
-                {/* 2. Open 128-Q Quiz Bank */}
-                <button
-                  type="button"
-                  className="action-pill pill-quiz"
-                  onClick={() => onOpenUnitQuiz(u.id)}
-                  title={`${u.title[lang] || u.title.tr} - ${pills.quiz}`}
-                >
-                  <FileCheck2 size={14} />
-                  <span>{pills.quiz}</span>
-                </button>
-
-                {/* 3. Open 3D Scene */}
-                <button
-                  type="button"
-                  className="action-pill pill-3d"
-                  onClick={() => onOpen3DScene(u.id)}
-                  title={`${u.title[lang] || u.title.tr} - ${pills.lab3d}`}
-                >
-                  <Box size={14} />
-                  <span>{pills.lab3d}</span>
-                </button>
-
-                {/* 4. Open Flashcards */}
-                <button
-                  type="button"
-                  className="action-pill pill-cards"
-                  onClick={() => onOpenUnitCards(u.id)}
-                  title={`${u.title[lang] || u.title.tr} - ${pills.cards}`}
-                >
-                  <Layers size={14} />
-                  <span>{pills.cards}</span>
-                </button>
-              </div>
-            </article>
-          );
-        })}
+                <div className="ky-acts">
+                  <button type="button" className="ky-act" onClick={() => setActiveUnitForDeck(u)} aria-label={`${title} – ${pills.slide}`}>
+                    <Presentation size={22} aria-hidden="true" />
+                    <span aria-hidden="true">{pills.slide}</span>
+                  </button>
+                  <button type="button" className="ky-act" data-sfx="start" onClick={() => onOpenUnitQuiz(u.id)} aria-label={`${title} – ${pills.quiz}`}>
+                    <FileCheck2 size={22} aria-hidden="true" />
+                    <span aria-hidden="true">{pills.quiz}</span>
+                  </button>
+                  <button type="button" className="ky-act" onClick={() => onOpen3DScene(u.id)} aria-label={`${title} – ${pills.lab3d}`}>
+                    <Box size={22} aria-hidden="true" />
+                    <span aria-hidden="true">{pills.lab3d}</span>
+                  </button>
+                  <button type="button" className="ky-act" onClick={() => onOpenUnitCards(u.id)} aria-label={`${title} – ${pills.cards}`}>
+                    <Layers size={22} aria-hidden="true" />
+                    <span aria-hidden="true">{pills.cards}</span>
+                  </button>
+                </div>
+              </article>
+            );
+          })}
+        </div>
       </div>
 
-      {/* Interactive 9-Slide Deep Study Deck Modal */}
       {activeUnitForDeck && (
         <UnitSlideDeckModal
           unit={activeUnitForDeck}

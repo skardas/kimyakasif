@@ -23,21 +23,21 @@ export const unit23: ChemistryUnitSeedData = {
     "fr": "Allotropes, hybridation, Sigma/Pi et VSEPR",
     "ru": "Аллотропы, гибридизация, сигма/пи и VSEPR",
     "ar": "المتآصلة، التهجين، سيجما/باي وVSEPR",
-    "zh": "同素异形体、杂交、Sigma/Pi 和 VSEPR",
-    "ku": "Allotropes, Hybridization, Sigma / Pi û VSEPR"
+    "zh": "同素异形体、杂化、σ/π 键与 VSEPR",
+    "ku": "Allotrop, Hîbrîdîzasyon, Sigma/Pî û VSEPR"
   },
   "facts": [
     {
       "id": "u23-f01",
       "fact": {
-        "tr": "Wöhler, 1828'de anorganik bir madde olan potasyum siyanattan laboratuvarda üre sentezleyerek vitalizm (yaşam gücü) teorisini çürütmüştür.",
-        "en": "In 1828, Wöhler refuted the theory of vitalism by synthesizing urea in the laboratory from potassium cyanate, an inorganic substance.",
-        "de": "Im Jahr 1828 widerlegte Wöhler die Theorie des Vitalismus, indem er im Labor Harnstoff aus Kaliumcyanat, einer anorganischen Substanz, synthetisierte.",
-        "fr": "En 1828, Wöhler réfute la théorie du vitalisme en synthétisant de l'urée en laboratoire à partir du cyanate de potassium, une substance inorganique.",
-        "ru": "В 1828 году Вёлер опроверг теорию витализма, синтезировав в лаборатории мочевину из неорганического вещества цианата калия.",
-        "ar": "في عام 1828، دحض فولر نظرية الحيوية عن طريق تصنيع اليوريا في المختبر من سيانات البوتاسيوم، وهي مادة غير عضوية.",
-        "zh": "1828年，沃勒在实验室中用无机物氰酸钾合成尿素，驳斥了活力论。",
-        "ku": "Di sala 1828 de, Wöhler teoriya vitalîzmê bi sentezkirina urea di laboratuarê de ji potasyum cyanate, maddeyek neorganîk, red kir."
+        "tr": "Wöhler, 1828'de anorganik bir madde olan amonyum siyanatı (NH4OCN) ısıtarak laboratuvarda üre sentezlemiş ve yaşam gücü (vitalizm) teorisini çürütmüştür.",
+        "en": "In 1828 Wöhler synthesized urea in the laboratory by heating ammonium cyanate (NH4OCN), an inorganic substance, and thereby refuted the vital force (vitalism) theory.",
+        "de": "Wöhler synthetisierte 1828 im Labor Harnstoff durch Erhitzen von Ammoniumcyanat (NH4OCN), einem anorganischen Stoff, und widerlegte damit die Lebenskrafttheorie (Vitalismus).",
+        "fr": "En 1828, Wöhler a synthétisé de l'urée au laboratoire en chauffant du cyanate d'ammonium (NH4OCN), une substance inorganique, réfutant ainsi la théorie de la force vitale (vitalisme).",
+        "ru": "В 1828 году Вёлер синтезировал в лаборатории мочевину нагреванием неорганического вещества — цианата аммония (NH4OCN) — и тем самым опроверг теорию жизненной силы (витализм).",
+        "ar": "في عام 1828 حضّر فولر اليوريا في المختبر بتسخين سيانات الأمونيوم (NH4OCN)، وهي مادة غير عضوية، فدحض بذلك نظرية القوة الحيوية.",
+        "zh": "1828 年，维勒通过加热无机物氰酸铵（NH4OCN）在实验室合成了尿素，从而推翻了生命力论。",
+        "ku": "Wöhler di sala 1828an de bi germkirina amonyum sîyanatê (NH4OCN), ku madeyeke anorganîk e, di laboratuwarê de ure sentez kir û teoriya hêza jiyanê (vîtalîzm) betal kir."
       },
       "trap": {
         "tr": "Wöhler ilk kez canlı dokudan petrol sentezlemiştir.",
@@ -53,14 +53,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f02",
       "fact": {
-        "tr": "Karbon atomu temel halde 4 kovalent bağ yapar ve hibritleşerek bağ enerjilerini eşitler.",
-        "en": "The carbon atom makes 4 covalent bonds in its ground state and equalizes the bond energies by hybridizing.",
-        "de": "Das Kohlenstoffatom geht im Grundzustand 4 kovalente Bindungen ein und gleicht die Bindungsenergien durch Hybridisierung aus.",
-        "fr": "L'atome de carbone établit 4 liaisons covalentes dans son état fondamental et égalise les énergies des liaisons en s'hybridant.",
-        "ru": "Атом углерода образует 4 ковалентные связи в основном состоянии и уравнивает энергии связей путем гибридизации.",
-        "ar": "تصنع ذرة الكربون 4 روابط تساهمية في حالتها الأرضية وتعادل طاقات الروابط عن طريق التهجين.",
-        "zh": "碳原子在基态下形成 4 个共价键，并通过杂化使键能相等。",
-        "ku": "Atoma karbonê di rewşa xwe ya bingehîn de 4 bendên kovalentî çêdike û bi hîbrîdîzekirinê enerjiya girêdanê wekhev dike."
+        "tr": "Karbon atomu uyarılmış halde 4 yarı dolu orbitale sahip olur ve hibritleşerek bileşiklerinde 4 kovalent bağ yapar.",
+        "en": "In its excited state the carbon atom has 4 half-filled orbitals; through hybridization it forms 4 covalent bonds in its compounds.",
+        "de": "Im angeregten Zustand besitzt das Kohlenstoffatom 4 halb besetzte Orbitale; durch Hybridisierung bildet es in seinen Verbindungen 4 kovalente Bindungen.",
+        "fr": "À l'état excité, l'atome de carbone possède 4 orbitales à moitié remplies ; par hybridation, il forme 4 liaisons covalentes dans ses composés.",
+        "ru": "В возбуждённом состоянии атом углерода имеет 4 наполовину заполненные орбитали; за счёт гибридизации он образует в соединениях 4 ковалентные связи.",
+        "ar": "تمتلك ذرة الكربون في الحالة المثارة 4 مدارات نصف ممتلئة، وتكوّن بالتهجين 4 روابط تساهمية في مركباتها.",
+        "zh": "碳原子在激发态时有 4 个半充满轨道，通过杂化在化合物中形成 4 个共价键。",
+        "ku": "Atoma karbonê di rewşa uyarkirî de xwedî 4 orbîtalên nîv-tijî ye û bi hîbrîdîzasyonê di pêkhateyên xwe de 4 girêdanên kovalent çêdike."
       },
       "trap": {
         "tr": "Karbon atomu bileşiklerinde en fazla 2 kovalent bağ yapabilir.",
@@ -145,14 +145,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f06",
       "fact": {
-        "tr": "Fullerenler yapay karbon allotropları olup futbol topu, nano tüp ve nano tüpler şeklinde sentezlenir.",
-        "en": "Fullerenes are artificial carbon allotropes and are synthesized in the form of footballs, nanotubes and nanotubes.",
-        "de": "Fullerene sind künstliche Kohlenstoffallotrope und werden in Form von Fußbällen, Nanoröhren und Nanoröhren synthetisiert.",
-        "fr": "Les fullerènes sont des allotropes de carbone artificiels et sont synthétisés sous forme de ballons de football, de nanotubes et de nanotubes.",
-        "ru": "Фуллерены представляют собой искусственные аллотропы углерода и синтезируются в форме футбольных мячей, нанотрубок и нанотрубок.",
-        "ar": "الفوليرين عبارة عن متآصلات كربونية صناعية ويتم تصنيعها على شكل كرات قدم وأنابيب نانوية وأنابيب نانوية.",
-        "zh": "富勒烯是人造碳同素异形体，以足球、纳米管和纳米管的形式合成。",
-        "ku": "Fulleren allotropên karbonê yên çêkirî ne û di forma futbol, ​​nanotube û nanotube de têne sentez kirin."
+        "tr": "Fullerenler (örn. futbol topu biçimli C60) karbon atomlarının beşgen ve altıgen halkalarla oluşturduğu kafes yapılı allotroplardır; doğada çok az bulunur, çoğunlukla laboratuvarda sentezlenir.",
+        "en": "Fullerenes (e.g., the football-shaped C60) are cage-like carbon allotropes built from pentagonal and hexagonal rings; they occur only in tiny amounts in nature and are mostly synthesized in the laboratory.",
+        "de": "Fullerene (z. B. das fußballförmige C60) sind käfigartige Kohlenstoffallotrope aus Fünf- und Sechsringen; sie kommen in der Natur nur in Spuren vor und werden meist im Labor hergestellt.",
+        "fr": "Les fullerènes (par ex. le C60 en forme de ballon de football) sont des allotropes du carbone en forme de cage, formés de cycles pentagonaux et hexagonaux ; on les trouve en très faibles quantités dans la nature et ils sont surtout synthétisés en laboratoire.",
+        "ru": "Фуллерены (например, C60 в форме футбольного мяча) — каркасные аллотропные модификации углерода из пяти- и шестичленных циклов; в природе встречаются в ничтожных количествах и в основном синтезируются в лаборатории.",
+        "ar": "الفوليرينات (مثل C60 الشبيه بكرة القدم) متآصلات كربونية قفصية البنية تتكون من حلقات خماسية وسداسية؛ توجد في الطبيعة بكميات ضئيلة جدًا وتُحضّر غالبًا في المختبر.",
+        "zh": "富勒烯（如足球状的 C60）是由五元环和六元环构成的笼状碳同素异形体；在自然界中含量极少，主要在实验室合成。",
+        "ku": "Fullerên (mînak C60 ya bi şiklê topa futbolê) allotropên karbonê yên qefesî ne ku ji xelekên pêncgoşe û şeşgoşe pêk tên; di xwezayê de pir hindik hene û bi piranî di laboratuwarê de têne sentezkirin."
       },
       "trap": {
         "tr": "Fullerenler doğada madenlerde kristal halde bolca bulunur.",
@@ -203,12 +203,12 @@ export const unit23: ChemistryUnitSeedData = {
       "trap": {
         "tr": "Pi bağları sigma bağlarından çok daha güçlüdür.",
         "en": "Pi bonds are much stronger than sigma bonds.",
-        "de": "Pi-Anleihen sind viel stärker als Sigma-Anleihen.",
+        "de": "Pi-Bindungen sind viel stärker als Sigma-Bindungen.",
         "fr": "Les liaisons Pi sont beaucoup plus fortes que les liaisons sigma.",
-        "ru": "Пи-связи намного прочнее сигма-облигаций.",
+        "ru": "Пи-связи намного прочнее сигма-связей.",
         "ar": "روابط باي أقوى بكثير من روابط سيجما.",
         "zh": "Pi 键比 Sigma 键强得多。",
-        "ku": "Girêdanên pi ji bendên sigma pir xurttir in."
+        "ku": "Girêdanên pî ji girêdanên sigma pir xurttir in."
       }
     },
     {
@@ -221,7 +221,7 @@ export const unit23: ChemistryUnitSeedData = {
         "ru": "Если атом углерода образовал все одинарные связи, он имеет sp3-гибридизацию, если он образовал одну двойную связь, он имеет sp2-гибридизацию, а если он образовал одну тройную связь (или две двойные связи), он имеет sp-гибридизацию.",
         "ar": "إذا كونت ذرة الكربون كل الروابط المفردة، فإنها تكون لديها تهجين sp3، وإذا كونت رابطة مزدوجة واحدة، فإنها تكون لديها تهجين sp2، وإذا كونت رابطة ثلاثية واحدة (أو رابطتين مزدوجتين)، فإنها تكون لديها تهجين sp.",
         "zh": "如果碳原子全部形成单键，则为 sp3 杂化；如果形成 1 个双键，则为 sp2 杂化；如果形成 1 个三键（或 2 个双键），则为 sp 杂化。",
-        "ku": "Ger atoma karbonê hemû girêkên yekcar çêkiribe, wê hîbrîdîzasyona sp3, ger girêdanek ducar çêkiribe, wê hîbrîdîzasyona sp2, û ger ew girêdanek sêqalî (an jî du bend) çêkiribe, wê hîbrîdîzasyona sp heye."
+        "ku": "Heke atoma karbonê hemû girêdanên xwe yekcarî çêkiribin sp3, heke girêdanek ducarî çêkiribe sp2, heke girêdanek sêcarî (an du girêdanên ducarî) çêkiribe hîbrîdîzasyona sp kiriye."
       },
       "trap": {
         "tr": "CH4 molekülünde karbon atomu sp hibritleşmesi yapmıştır.",
@@ -238,36 +238,36 @@ export const unit23: ChemistryUnitSeedData = {
       "id": "u23-f10",
       "fact": {
         "tr": "VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180°'dir (örn. BeH2, CO2, C2H2).",
-        "en": "VSEPR AX2: Molecular geometry is LINEAR, bond angle is 180° (e.g. BeH2, CO2, C2H2).",
-        "de": "VSEPR AX2: Die Molekülgeometrie ist LINEAR, der Bindungswinkel beträgt 180° (z. B. BeH2, CO2, C2H2).",
-        "fr": "VSEPR AX2 : La géométrie moléculaire est LINÉAIRE, l'angle de liaison est de 180° (par exemple BeH2, CO2, C2H2).",
-        "ru": "VSEPR AX2: Молекулярная геометрия ЛИНЕЙНАЯ, валентный угол 180° (например, BeH2, CO2, C2H2).",
-        "ar": "VSEPR AX2: الهندسة الجزيئية خطية، وزاوية الرابطة 180 درجة (مثل BeH2، CO2، C2H2).",
-        "zh": "VSEPR AX2：分子几何形状为线性，键角为 180°（例如 BeH2、CO2、C2H2）。",
-        "ku": "VSEPR AX2: Geometriya molekulê XÊZÎ ye, goşeya girêdanê 180° ye (mînak: BeH2, CO2, C2H2)."
+        "en": "VSEPR AX2: molecular geometry is LINEAR, bond angle 180° (e.g., BeH2, CO2, C2H2).",
+        "de": "VSEPR AX2: Die Molekülgeometrie ist LINEAR, Bindungswinkel 180° (z. B. BeH2, CO2, C2H2).",
+        "fr": "VSEPR AX2 : géométrie moléculaire LINÉAIRE, angle de liaison 180° (par ex. BeH2, CO2, C2H2).",
+        "ru": "VSEPR AX2: геометрия молекулы ЛИНЕЙНАЯ, валентный угол 180° (например, BeH2, CO2, C2H2).",
+        "ar": "VSEPR AX2: الشكل الجزيئي خطي، وزاوية الرابطة 180° (مثل BeH2 و CO2 و C2H2).",
+        "zh": "VSEPR AX2：分子构型为直线形，键角 180°（如 BeH2、CO2、C2H2）。",
+        "ku": "VSEPR AX2: geometriya molekulê XÊZIKÎ ye, goşeya girêdanê 180° ye (mînak BeH2, CO2, C2H2)."
       },
       "trap": {
         "tr": "CO2 molekülü kırık doğru geometrisindedir.",
-        "en": "The CO2 molecule is in broken line geometry.",
-        "de": "Das CO2-Molekül hat eine gestrichelte Liniengeometrie.",
-        "fr": "La molécule de CO2 est en forme de ligne brisée.",
-        "ru": "Молекула CO2 имеет ломаную геометрию.",
-        "ar": "يوجد جزيء ثاني أكسيد الكربون في شكل هندسي متقطع.",
-        "zh": "CO2 分子呈折线几何形状。",
-        "ku": "Molekula CO2 di geometriya xeta şikestî de ye."
+        "en": "The CO2 molecule has a bent geometry.",
+        "de": "Das CO2-Molekül ist gewinkelt.",
+        "fr": "La molécule de CO2 a une géométrie coudée.",
+        "ru": "Молекула CO2 имеет угловую геометрию.",
+        "ar": "جزيء CO2 ذو شكل منحنٍ (زاوي).",
+        "zh": "CO2 分子呈 V 形（角形）结构。",
+        "ku": "Molekula CO2 xwedî geometriya xwar (goşeyî) ye."
       }
     },
     {
       "id": "u23-f11",
       "fact": {
         "tr": "VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120°'dir (örn. BH3, BF3, SO3).",
-        "en": "VSEPR AX3: Molecular geometry is PLANE TRIANGLE, bond angle is 120° (e.g. BH3, BF3, SO3).",
-        "de": "VSEPR AX3: Die Molekülgeometrie ist ein ebenes Dreieck, der Bindungswinkel beträgt 120° (z. B. BH3, BF3, SO3).",
-        "fr": "VSEPR AX3 : La géométrie moléculaire est un TRIANGLE PLAN, l'angle de liaison est de 120° (par exemple BH3, BF3, SO3).",
-        "ru": "VSEPR AX3: Молекулярная геометрия — ПЛОСКИЙ ТРЕУГОЛЬНИК, валентный угол — 120° (например, BH3, BF3, SO3).",
-        "ar": "VSEPR AX3: الهندسة الجزيئية هي مثلث مسطح، زاوية الرابطة هي 120 درجة (على سبيل المثال BH3، BF3، SO3).",
-        "zh": "VSEPR AX3：分子几何形状为平面三角形，键角为120°（例如BH3、BF3、SO3）。",
-        "ku": "VSEPR AX3: Erdometriya molekulî SÊGOŞA PALÎN e, goşeya girêdanê 120° ye (mînak BH3, BF3, SO3)."
+        "en": "VSEPR AX3: molecular geometry is TRIGONAL PLANAR, bond angle 120° (e.g., BH3, BF3, SO3).",
+        "de": "VSEPR AX3: Die Molekülgeometrie ist TRIGONAL-PLANAR, Bindungswinkel 120° (z. B. BH3, BF3, SO3).",
+        "fr": "VSEPR AX3 : géométrie moléculaire TRIGONALE PLANE, angle de liaison 120° (par ex. BH3, BF3, SO3).",
+        "ru": "VSEPR AX3: геометрия молекулы ПЛОСКАЯ ТРЕУГОЛЬНАЯ, валентный угол 120° (например, BH3, BF3, SO3).",
+        "ar": "VSEPR AX3: الشكل الجزيئي مثلث مستوٍ، وزاوية الرابطة 120° (مثل BH3 و BF3 و SO3).",
+        "zh": "VSEPR AX3：分子构型为平面三角形，键角 120°（如 BH3、BF3、SO3）。",
+        "ku": "VSEPR AX3: geometriya molekulê SÊGOŞEYA DÛZ e, goşeya girêdanê 120° ye (mînak BH3, BF3, SO3)."
       },
       "trap": {
         "tr": "BF3 molekülü düzgün dörtyüzlüdür.",
@@ -283,14 +283,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f12",
       "fact": {
-        "tr": "VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5°'dir (örn. CH4, CCl4).",
-        "en": "VSEPR AX4: Molecular geometry is REGULAR TETATHEDRAL, bond angle is 109.5° (e.g. CH4, CCl4).",
-        "de": "VSEPR AX4: Die Molekülgeometrie ist REGELMÄßIG TETATHEDRAL, der Bindungswinkel beträgt 109,5° (z. B. CH4, CCl4).",
-        "fr": "VSEPR AX4 : La géométrie moléculaire est RÉGULIÈRE TÉTATHÉDRALE, l'angle de liaison est de 109,5° (par exemple CH4, CCl4).",
-        "ru": "VSEPR AX4: Молекулярная геометрия ПРАВИЛЬНАЯ ТЕТАТЕДРАЛЬНАЯ, валентный угол 109,5° (например, CH4, CCl4).",
-        "ar": "VSEPR AX4: الهندسة الجزيئية هي رباعية السطوح العادية، وزاوية الرابطة هي 109.5 درجة (على سبيل المثال CH4، CCl4).",
-        "zh": "VSEPR AX4：分子几何形状为规则四面体，键角为 109.5°（例如 CH4、CCl4）。",
-        "ku": "VSEPR AX4: Geometrîya molekular TETATEDRA REQULAR e, goşeya girêdanê 109,5° ye (mînak CH4, CCl4)."
+        "tr": "VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109,5°'dir (örn. CH4, CCl4).",
+        "en": "VSEPR AX4: molecular geometry is TETRAHEDRAL, bond angle 109.5° (e.g., CH4, CCl4).",
+        "de": "VSEPR AX4: Die Molekülgeometrie ist TETRAEDRISCH, Bindungswinkel 109,5° (z. B. CH4, CCl4).",
+        "fr": "VSEPR AX4 : géométrie moléculaire TÉTRAÉDRIQUE, angle de liaison 109,5° (par ex. CH4, CCl4).",
+        "ru": "VSEPR AX4: геометрия молекулы ТЕТРАЭДРИЧЕСКАЯ, валентный угол 109,5° (например, CH4, CCl4).",
+        "ar": "VSEPR AX4: الشكل الجزيئي رباعي أوجه منتظم، وزاوية الرابطة 109.5° (مثل CH4 و CCl4).",
+        "zh": "VSEPR AX4：分子构型为正四面体，键角 109.5°（如 CH4、CCl4）。",
+        "ku": "VSEPR AX4: geometriya molekulê ÇARRÛYA RÊKÛPÊK e, goşeya girêdanê 109,5° ye (mînak CH4, CCl4)."
       },
       "trap": {
         "tr": "CH4 molekülünde bağ açısı 90°'dir.",
@@ -306,14 +306,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f13",
       "fact": {
-        "tr": "VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3°'dir (örn. NH3); molekül polardır.",
-        "en": "VSEPR AX3E: Molecular geometry TRIANGULAR PYRAMID, bond angle is 107.3° (e.g. NH3); The molecule is polar.",
-        "de": "VSEPR AX3E: Molekülgeometrie DREIECKIGE PYRAMIDE, Bindungswinkel beträgt 107,3° (z. B. NH3); Das Molekül ist polar.",
-        "fr": "VSEPR AX3E : PYRAMIDE TRIANGULAIRE à géométrie moléculaire, l'angle de liaison est de 107,3° (par exemple NH3) ; La molécule est polaire.",
-        "ru": "VSEPR AX3E: Молекулярная геометрия ТРЕУГОЛЬНАЯ ПИРАМИДА, валентный угол 107,3° (например, NH3); Молекула полярна.",
-        "ar": "VSEPR AX3E: الهندسة الجزيئية الهرم الثلاثي، زاوية الرابطة هي 107.3 درجة (على سبيل المثال NH3)؛ الجزيء قطبي.",
-        "zh": "VSEPR AX3E：分子几何三角锥，键角为107.3°（例如NH3）；该分子是极性的。",
-        "ku": "VSEPR AX3E: PÎRAMIYA SÊ GOŞÎ ya geometriya molekular, goşeya girêdanê 107,3° ye (mînak NH3); Molekul polar e."
+        "tr": "VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107,3°'dir (örn. NH3); molekül polardır.",
+        "en": "VSEPR AX3E: molecular geometry is TRIGONAL PYRAMIDAL, bond angle 107.3° (e.g., NH3); the molecule is polar.",
+        "de": "VSEPR AX3E: Die Molekülgeometrie ist TRIGONAL-PYRAMIDAL, Bindungswinkel 107,3° (z. B. NH3); das Molekül ist polar.",
+        "fr": "VSEPR AX3E : géométrie moléculaire PYRAMIDALE TRIGONALE, angle de liaison 107,3° (par ex. NH3) ; la molécule est polaire.",
+        "ru": "VSEPR AX3E: геометрия молекулы ТРИГОНАЛЬНАЯ ПИРАМИДА, валентный угол 107,3° (например, NH3); молекула полярна.",
+        "ar": "VSEPR AX3E: الشكل الجزيئي هرم ثلاثي، وزاوية الرابطة 107.3° (مثل NH3)؛ والجزيء قطبي.",
+        "zh": "VSEPR AX3E：分子构型为三角锥形，键角 107.3°（如 NH3）；分子有极性。",
+        "ku": "VSEPR AX3E: geometriya molekulê PÎRAMÎDA SÊGOŞE ye, goşeya girêdanê 107,3° ye (mînak NH3); molekul polar e."
       },
       "trap": {
         "tr": "NH3 molekülü apolar ve düzlem üçgendir.",
@@ -329,14 +329,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f14",
       "fact": {
-        "tr": "VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5°'dir (örn. H2O); molekül polardır.",
-        "en": "VSEPR AX2E2: Molecular geometry BROKEN CORRECT (angular), bond angle is 104.5° (e.g. H2O); The molecule is polar.",
-        "de": "VSEPR AX2E2: Molekülgeometrie korrekt gebrochen (eckig), Bindungswinkel beträgt 104,5° (z. B. H2O); Das Molekül ist polar.",
-        "fr": "VSEPR AX2E2 : Géométrie moléculaire CASSÉE CORRECT (angulaire), l'angle de liaison est de 104,5° (par exemple H2O) ; La molécule est polaire.",
-        "ru": "VSEPR AX2E2: Молекулярная геометрия НАРУШЕНА ПРАВИЛЬНО (угловая), валентный угол 104,5° (например, H2O); Молекула полярна.",
-        "ar": "VSEPR AX2E2: الهندسة الجزيئية صحيحة ومكسورة (زاوي)، زاوية الرابطة هي 104.5 درجة (على سبيل المثال H2O)؛ الجزيء قطبي.",
-        "zh": "VSEPR AX2E2：分子几何形状不正确（有角度），键角为 104.5°（例如 H2O）；该分子是极性的。",
-        "ku": "VSEPR AX2E2: Geometrîya molekulî BIŞKEVE ÇALAKÎ (goşeyî), goşeya girêdanê 104,5° ye (mînak H2O); Molekul polar e."
+        "tr": "VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104,5°'dir (örn. H2O); molekül polardır.",
+        "en": "VSEPR AX2E2: molecular geometry is BENT (angular), bond angle 104.5° (e.g., H2O); the molecule is polar.",
+        "de": "VSEPR AX2E2: Die Molekülgeometrie ist GEWINKELT, Bindungswinkel 104,5° (z. B. H2O); das Molekül ist polar.",
+        "fr": "VSEPR AX2E2 : géométrie moléculaire COUDÉE (angulaire), angle de liaison 104,5° (par ex. H2O) ; la molécule est polaire.",
+        "ru": "VSEPR AX2E2: геометрия молекулы УГЛОВАЯ, валентный угол 104,5° (например, H2O); молекула полярна.",
+        "ar": "VSEPR AX2E2: الشكل الجزيئي منحنٍ (زاوي)، وزاوية الرابطة 104.5° (مثل H2O)؛ والجزيء قطبي.",
+        "zh": "VSEPR AX2E2：分子构型为 V 形（角形），键角 104.5°（如 H2O）；分子有极性。",
+        "ku": "VSEPR AX2E2: geometriya molekulê XWAR (goşeyî) e, goşeya girêdanê 104,5° ye (mînak H2O); molekul polar e."
       },
       "trap": {
         "tr": "H2O molekülü doğrusal geometride apolardır.",
@@ -352,14 +352,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f15",
       "fact": {
-        "tr": "Organik bileşiklerin ana kaynağı genellikle canlılar ve fosil yakıtlardır; anorganik bileşikler minerallerdir.",
-        "en": "The main sources of organic compounds are generally living things and fossil fuels; inorganic compounds are minerals.",
-        "de": "Die Hauptquellen organischer Verbindungen sind im Allgemeinen Lebewesen und fossile Brennstoffe; Anorganische Verbindungen sind Mineralien.",
-        "fr": "Les principales sources de composés organiques sont généralement les êtres vivants et les combustibles fossiles ; les composés inorganiques sont des minéraux.",
-        "ru": "Основными источниками органических соединений обычно являются живые существа и ископаемое топливо; неорганические соединения – минералы.",
-        "ar": "المصادر الرئيسية للمركبات العضوية هي الكائنات الحية والوقود الأحفوري؛ المركبات غير العضوية هي المعادن.",
-        "zh": "有机化合物的主要来源一般是生物和化石燃料；无机化合物是矿物质。",
-        "ku": "Çavkaniyên sereke yên pêkhateyên organîk bi giştî zindî û sotemeniyên fosîl in; pêkhateyên neorganîk mîneral in."
+        "tr": "Organik bileşiklerin ana kaynağı genellikle canlılar ve fosil yakıtlardır; anorganik bileşiklerin kaynağı ise çoğunlukla mineraller ve cansız doğadır.",
+        "en": "The main sources of organic compounds are generally living things and fossil fuels, whereas inorganic compounds come mostly from minerals and non-living nature.",
+        "de": "Hauptquellen organischer Verbindungen sind im Allgemeinen Lebewesen und fossile Brennstoffe; anorganische Verbindungen stammen überwiegend aus Mineralien und der unbelebten Natur.",
+        "fr": "Les principales sources des composés organiques sont généralement les êtres vivants et les combustibles fossiles ; les composés inorganiques proviennent surtout des minéraux et de la nature inerte.",
+        "ru": "Основными источниками органических соединений обычно являются живые организмы и ископаемое топливо; неорганические соединения получают в основном из минералов и неживой природы.",
+        "ar": "المصادر الرئيسية للمركبات العضوية هي غالبًا الكائنات الحية والوقود الأحفوري، أما المركبات غير العضوية فمصدرها في الغالب المعادن والطبيعة غير الحية.",
+        "zh": "有机化合物的主要来源通常是生物体和化石燃料；无机化合物则主要来自矿物和非生物界。",
+        "ku": "Çavkaniya sereke ya pêkhateyên organîk bi gelemperî zindî û sotemeniyên fosîl in; çavkaniya pêkhateyên anorganîk jî bi piranî mîneral û xwezaya nezindî ye."
       },
       "trap": {
         "tr": "Anorganik bileşiklerin sayısı organik bileşiklerden çok daha fazladır.",
@@ -417,17 +417,17 @@ export const unit23: ChemistryUnitSeedData = {
         "ru": "графит",
         "ar": "الجرافيت",
         "zh": "石墨",
-        "ku": "graphite"
+        "ku": "Grafît"
       },
       "distinction": {
         "tr": "Elmas sp3 hibritleşmeli elektriği iletmez serttir; grafit sp2 hibritleşmeli tabakalı elektriği iletir yumuşaktır.",
-        "en": "Diamond is sp3 hybridized and does not conduct electricity; it is hard; Graphite sp2 hybridized layer conducts electricity and is soft.",
-        "de": "Diamant ist sp3-hybridisiert und leitet keinen Strom; es ist schwer; Die hybridisierte Graphit-SP2-Schicht leitet Elektrizität und ist weich.",
-        "fr": "Le diamant est hybridé sp3 et ne conduit pas l’électricité ; c'est dur; La couche hybridée en graphite sp2 conduit l'électricité et est douce.",
-        "ru": "Алмаз представляет собой гибрид sp3 и не проводит электричество; это тяжело; Гибридный слой графита sp2 проводит электричество и является мягким.",
-        "ar": "الماس عبارة عن sp3 مهجن ولا يوصل الكهرباء؛ إنه صعب؛ طبقة الجرافيت sp2 المهجنة توصل الكهرباء وهي ناعمة.",
-        "zh": "金刚石是sp3杂化，不导电；这很难；石墨sp2杂化层导电且柔软。",
-        "ku": "Elmas sp3 hîbrîdîzekirî ye û elektrîkê nake; zehmet e; Tebeqeya hîbrîdkirî ya grafît sp2 elektrîkê dike û nerm e."
+        "en": "Diamond is sp3-hybridized, does not conduct electricity and is hard; graphite is sp2-hybridized, layered, conducts electricity and is soft.",
+        "de": "Diamant ist sp3-hybridisiert, leitet keinen Strom und ist hart; Graphit ist sp2-hybridisiert, schichtförmig, leitet Strom und ist weich.",
+        "fr": "Le diamant est hybridé sp3, ne conduit pas l'électricité et est dur ; le graphite est hybridé sp2, lamellaire, conduit l'électricité et est tendre.",
+        "ru": "Алмаз: sp3-гибридизация, не проводит ток, твёрдый; графит: sp2-гибридизация, слоистый, проводит ток, мягкий.",
+        "ar": "الماس مهجن sp3 لا يوصل الكهرباء وهو صلد؛ والجرافيت مهجن sp2 طبقي يوصل الكهرباء وهو طري.",
+        "zh": "金刚石为 sp3 杂化，不导电，坚硬；石墨为 sp2 杂化，层状，能导电，质软。",
+        "ku": "Elmas sp3 hîbrîdîzekirî ye, elektrîkê naguhezîne û hişk e; grafît sp2 hîbrîdîzekirî ye, qatqatî ye, elektrîkê diguhezîne û nerm e."
       }
     },
     {
@@ -435,65 +435,65 @@ export const unit23: ChemistryUnitSeedData = {
       "conceptA": {
         "tr": "Sigma (σ) Bağı",
         "en": "Sigma (σ) Bond",
-        "de": "Sigma (σ) Bindung",
+        "de": "Sigma-(σ)-Bindung",
         "fr": "Liaison Sigma (σ)",
         "ru": "Сигма (σ) связь",
         "ar": "رابطة سيجما (σ)",
-        "zh": "西格玛 (σ) 键",
+        "zh": "σ 键",
         "ku": "Girêdana Sigma (σ)"
       },
       "conceptB": {
         "tr": "Pi (π) Bağı",
         "en": "Pi (π) Bond",
-        "de": "Pi (π) Bindung",
+        "de": "Pi-(π)-Bindung",
         "fr": "Liaison Pi (π)",
         "ru": "Пи (π) Связь",
-        "ar": "بي (π) السندات",
-        "zh": "Pi (π) 键",
-        "ku": "Pi (π) Bond"
+        "ar": "رابطة باي (π)",
+        "zh": "π 键",
+        "ku": "Girêdana Pî (π)"
       },
       "distinction": {
         "tr": "Sigma bağı eksenel uç uca örtüşür sağlamdır; pi bağı yan yana p orbitallerinin örtüşmesidir kolay kırılır.",
-        "en": "The sigma bond is intact with axial end-to-end overlap; The pi bond is an overlap of side-by-side p orbitals and is easily broken.",
-        "de": "Die Sigma-Bindung ist intakt und weist eine axiale End-zu-End-Überlappung auf. Die Pi-Bindung ist eine Überlappung nebeneinander liegender p-Orbitale und kann leicht gebrochen werden.",
-        "fr": "La liaison sigma est intacte avec un chevauchement axial bout à bout ; La liaison pi est un chevauchement d’orbitales p côte à côte et est facilement rompue.",
-        "ru": "Сигма-связь не повреждена, с осевым перекрытием от конца к концу; Пи-связь представляет собой перекрытие расположенных рядом p-орбиталей и легко разрывается.",
-        "ar": "رابطة سيجما سليمة مع تداخل محوري من طرف إلى طرف؛ الرابطة pi عبارة عن تداخل بين مدارات p المتجاورة ويمكن كسرها بسهولة.",
-        "zh": "西格玛键完好无损，轴向端对端重叠； pi 键是并排 p 轨道的重叠，很容易断裂。",
-        "ku": "Girêdana sigmayê bi hevgirtina dawî-bi-dawî ya axial saxlem e; Girêdana pi lihevhatina orbîtalên p li kêleka hev e û bi hêsanî tê şikandin."
+        "en": "A sigma bond forms by axial end-to-end overlap and is strong; a pi bond is the side-by-side overlap of p orbitals and breaks more easily.",
+        "de": "Eine Sigma-Bindung entsteht durch axiale Überlappung (Kopf an Kopf) und ist stabil; eine Pi-Bindung ist die seitliche Überlappung von p-Orbitalen und bricht leichter.",
+        "fr": "Une liaison sigma résulte d'un recouvrement axial bout à bout et est solide ; une liaison pi est le recouvrement latéral d'orbitales p et se rompt plus facilement.",
+        "ru": "Сигма-связь образуется при осевом перекрывании орбиталей и прочна; пи-связь — боковое перекрывание p-орбиталей, она разрывается легче.",
+        "ar": "تتكون رابطة سيجما بالتداخل المحوري رأسًا لرأس وهي قوية؛ أما رابطة باي فهي تداخل جانبي لمدارات p وتنكسر بسهولة أكبر.",
+        "zh": "σ 键由轨道沿键轴“头碰头”重叠形成，较牢固；π 键是 p 轨道“肩并肩”重叠形成的，较易断裂。",
+        "ku": "Girêdana sigma bi hevgirtina eksenî ya serî-bi-serî çêdibe û xurt e; girêdana pî hevgirtina kêlekî ya orbîtalên p ye û hêsantir dişkê."
       }
     },
     {
       "id": "u23-c03",
       "conceptA": {
-        "tr": "Elmas Allotropu",
-        "en": "Diamond Allotrope",
-        "de": "Diamant-Allotrop",
-        "fr": "Allotrope de diamant",
-        "ru": "Алмазный аллотроп",
-        "ar": "تآصل الماس",
-        "zh": "金刚石同素异形体",
-        "ku": "Elmas Allotrop"
+        "tr": "Organik Bileşik",
+        "en": "Organic Compound",
+        "de": "Organische Verbindung",
+        "fr": "Composé organique",
+        "ru": "Органическое соединение",
+        "ar": "مركب عضوي",
+        "zh": "有机化合物",
+        "ku": "Pêkhateya Organîk"
       },
       "conceptB": {
-        "tr": "Grafit Allotropu",
-        "en": "Graphite Allotrope",
-        "de": "Graphit-Allotrop",
-        "fr": "Allotrope de graphite",
-        "ru": "Графитовый аллотроп",
-        "ar": "الجرافيت المتآصلة",
-        "zh": "石墨同素异形体",
-        "ku": "Graphite Allotrope"
+        "tr": "Anorganik Bileşik",
+        "en": "Inorganic Compound",
+        "de": "Anorganische Verbindung",
+        "fr": "Composé inorganique",
+        "ru": "Неорганическое соединение",
+        "ar": "مركب غير عضوي",
+        "zh": "无机化合物",
+        "ku": "Pêkhateya Anorganîk"
       },
       "distinction": {
-        "tr": "Elmas sp3 hibritleşmesi yapar, 3 boyutlu dev ağ örgülüdür ve elektriği iletmez; grafit sp2 yapar, tabakalıdır ve elektriği iletir.",
-        "en": "Diamond performs sp3 hybridization, has a 3D giant network and does not conduct electricity; Graphite makes sp2, is layered and conducts electricity.",
-        "de": "Diamant führt eine SP3-Hybridisierung durch, verfügt über ein 3D-Riesennetzwerk und leitet keinen Strom. Graphit bildet sp2, ist geschichtet und leitet Elektrizität.",
-        "fr": "Le diamant réalise l'hybridation sp3, dispose d'un réseau géant 3D et ne conduit pas l'électricité ; Le graphite produit du sp2, est stratifié et conduit l'électricité.",
-        "ru": "Алмаз выполняет гибридизацию sp3, имеет гигантскую 3D-сеть и не проводит электричество; Графит образует sp2, имеет слоистую структуру и проводит электричество.",
-        "ar": "يقوم الماس بإجراء تهجين sp3، ولديه شبكة عملاقة ثلاثية الأبعاد ولا يوصل الكهرباء؛ يصنع الجرافيت sp2، وهو عبارة عن طبقات ويوصل الكهرباء.",
-        "zh": "金刚石进行sp3杂化，具有3D巨型网络且不导电；石墨形成sp2，呈层状并导电。",
-        "ku": "Elmas hîbrîdîzasyona sp3 pêk tîne, xwedan torgilokek mezin a 3D ye û elektrîkê nake; Grafît sp2 çêdike, qat dibe û elektrîkê dimeşîne."
+        "tr": "Organik bileşikler karbon iskeletli (genellikle C–H bağı içeren), çoğunlukla kovalent bağlı moleküllerdir; anorganik bileşikler çoğunlukla iyonik yapılı, erime noktası yüksek, mineral kökenli maddelerdir.",
+        "en": "Organic compounds are molecules with a carbon skeleton (usually containing C–H bonds) and mostly covalent bonding; inorganic compounds are mostly ionic, high-melting substances of mineral origin.",
+        "de": "Organische Verbindungen sind Moleküle mit Kohlenstoffgerüst (meist mit C–H-Bindungen) und überwiegend kovalenter Bindung; anorganische Verbindungen sind überwiegend ionisch aufgebaute, hochschmelzende Stoffe mineralischen Ursprungs.",
+        "fr": "Les composés organiques sont des molécules à squelette carboné (contenant généralement des liaisons C–H), surtout covalentes ; les composés inorganiques sont surtout ioniques, à point de fusion élevé et d'origine minérale.",
+        "ru": "Органические соединения — молекулы с углеродным скелетом (обычно со связями C–H), преимущественно ковалентные; неорганические соединения чаще ионного строения, тугоплавкие, минерального происхождения.",
+        "ar": "المركبات العضوية جزيئات ذات هيكل كربوني (تحتوي عادة على روابط C–H) وروابطها تساهمية في الغالب؛ أما المركبات غير العضوية فهي في الغالب أيونية مرتفعة درجة الانصهار ومعدنية المنشأ.",
+        "zh": "有机化合物是以碳为骨架（通常含 C–H 键）、多为共价键结合的分子；无机化合物多为离子型、熔点较高、来源于矿物的物质。",
+        "ku": "Pêkhateyên organîk molekulên bi îskeleta karbonê ne (bi gelemperî girêdanên C–H dihewînin) û bi piranî kovalent in; pêkhateyên anorganîk bi piranî îyonîk, xala helandinê bilind û bi eslê xwe mîneral in."
       }
     },
     {
@@ -516,7 +516,7 @@ export const unit23: ChemistryUnitSeedData = {
         "ru": "Углеродная нанотрубка",
         "ar": "أنابيب الكربون النانوية",
         "zh": "碳纳米管",
-        "ku": "Karbon Nanotube"
+        "ku": "Nanotûba Karbonê"
       },
       "distinction": {
         "tr": "Grafen tek atom kalınlığında iki boyutlu bal peteği tabakadır; nanotüp grafen tabakasının silindir şeklinde sarılmış halidir.",
@@ -526,40 +526,40 @@ export const unit23: ChemistryUnitSeedData = {
         "ru": "Графен представляет собой двумерный сотовый слой толщиной в один атом; Нанотрубка представляет собой цилиндрическую форму графенового листа.",
         "ar": "الجرافين عبارة عن طبقة عسلية ثنائية الأبعاد يبلغ سمكها ذرة واحدة؛ الأنابيب النانوية هي شكل أسطواني من صفائح الجرافين.",
         "zh": "石墨烯是一种单原子厚度的二维蜂窝状层；纳米管是圆柱形石墨烯片。",
-        "ku": "Grafene tebeqeya hingivîn a du-alî ya yek atomê stûr e; Nanotube formek silindrikî ya pelê grafene ye."
+        "ku": "Grafen qateke hingivînî ya dudimensî ye ku stûriya wê yek atom e; nanotûb qata grafenê ye ku bi şiklê silindirê hatiye pêçandin."
       }
     },
     {
       "id": "u23-c05",
       "conceptA": {
-        "tr": "Sigma (sigma) Bağı",
-        "en": "Sigma (sigma) Bond",
-        "de": "Sigma (Sigma) Bindung",
-        "fr": "Lien Sigma (sigma)",
-        "ru": "Сигма (сигма) Бонд",
-        "ar": "سيجما (سيجما) بوند",
-        "zh": "西格玛 (Sigma) 键",
-        "ku": "Sigma (sigma) Bond"
+        "tr": "Polar Molekül",
+        "en": "Polar Molecule",
+        "de": "Polares Molekül",
+        "fr": "Molécule polaire",
+        "ru": "Полярная молекула",
+        "ar": "جزيء قطبي",
+        "zh": "极性分子",
+        "ku": "Molekula Polar"
       },
       "conceptB": {
-        "tr": "Pi (pi) Bağı",
-        "en": "Pi (pi) Bond",
-        "de": "Pi (pi) Bindung",
-        "fr": "Liaison Pi (pi)",
-        "ru": "Пи (пи) Бонд",
-        "ar": "باي (بي) بوند",
-        "zh": "Pi (pi) 键",
-        "ku": "Pi (pi) Bond"
+        "tr": "Apolar Molekül",
+        "en": "Nonpolar Molecule",
+        "de": "Unpolares Molekül",
+        "fr": "Molécule apolaire",
+        "ru": "Неполярная молекула",
+        "ar": "جزيء غير قطبي",
+        "zh": "非极性分子",
+        "ku": "Molekula Apolar"
       },
       "distinction": {
-        "tr": "Sigma bağı orbitallerin uç uca örtüşmesiyle oluşan ilk ve en güçlü bağdır; pi bağı p orbitallerinin yan yana örtüşmesiyle oluşur.",
-        "en": "The sigma bond is the first and strongest bond formed by overlapping orbitals end to end; The pi bond is formed by overlapping p orbitals side by side.",
-        "de": "Die Sigma-Bindung ist die erste und stärkste Bindung, die durch überlappende Orbitale an ihren Enden entsteht; Die Pi-Bindung entsteht durch überlappende nebeneinanderliegende p-Orbitale.",
-        "fr": "La liaison sigma est la première et la plus forte liaison formée par des orbitales qui se chevauchent bout à bout ; La liaison pi est formée par le chevauchement d’orbitales p côte à côte.",
-        "ru": "Сигма-связь — это первая и самая прочная связь, образованная перекрывающимися орбиталями встык; Пи-связь образуется путем перекрывания p-орбиталей рядом.",
-        "ar": "رابطة سيجما هي أول وأقوى رابطة تتكون من المدارات المتداخلة من طرف إلى طرف؛ تتكون الرابطة pi من تداخل مدارات p جنبًا إلى جنب.",
-        "zh": "西格玛键是首尾重叠轨道形成的第一个也是最强的键； pi 键是通过并排重叠的 p 轨道形成的。",
-        "ku": "Girêdana sigma girêdana yekem û bihêztirîn e ku ji hêla orbitalên lihevhatî yên dawî bi dawî pêk tê; Girêdana pi bi hevgirtina p orbîtalên li kêleka hev pêk tê."
+        "tr": "Polar molekülde bağ dipolleri birbirini yok etmez, net dipol momenti sıfırdan farklıdır (H2O, NH3); apolar molekülde simetri nedeniyle bağ dipolleri birbirini yok eder (CO2, CH4, BF3).",
+        "en": "In a polar molecule the bond dipoles do not cancel and the net dipole moment is non-zero (H2O, NH3); in a nonpolar molecule the bond dipoles cancel because of symmetry (CO2, CH4, BF3).",
+        "de": "In einem polaren Molekül heben sich die Bindungsdipole nicht auf, das Gesamtdipolmoment ist ungleich null (H2O, NH3); in einem unpolaren Molekül heben sich die Bindungsdipole aufgrund der Symmetrie auf (CO2, CH4, BF3).",
+        "fr": "Dans une molécule polaire, les dipôles de liaison ne s'annulent pas et le moment dipolaire total est non nul (H2O, NH3) ; dans une molécule apolaire, ils s'annulent par symétrie (CO2, CH4, BF3).",
+        "ru": "В полярной молекуле дипольные моменты связей не компенсируются и суммарный дипольный момент не равен нулю (H2O, NH3); в неполярной молекуле они компенсируются благодаря симметрии (CO2, CH4, BF3).",
+        "ar": "في الجزيء القطبي لا تلغي ثنائيات أقطاب الروابط بعضها، فيكون عزم ثنائي القطب الكلي غير صفري (H2O، NH3)؛ وفي الجزيء غير القطبي تلغي بعضها بسبب التماثل (CO2، CH4، BF3).",
+        "zh": "极性分子中各键的偶极不能相互抵消，分子偶极矩不为零（H2O、NH3）；非极性分子由于结构对称，键的偶极相互抵消（CO2、CH4、BF3）。",
+        "ku": "Di molekula polar de dîpolên girêdanan hevdu betal nakin, momenta dîpolê ya net ne sifir e (H2O, NH3); di molekula apolar de ji ber sîmetriyê dîpolên girêdanan hevdu betal dikin (CO2, CH4, BF3)."
       }
     },
     {
@@ -571,8 +571,8 @@ export const unit23: ChemistryUnitSeedData = {
         "fr": "Hybridation sp3",
         "ru": "sp3 Гибридизация",
         "ar": "تهجين sp3",
-        "zh": "sp3杂交",
-        "ku": "sp3 Hybridization"
+        "zh": "sp3 杂化",
+        "ku": "Hîbrîdîzasyona sp3"
       },
       "conceptB": {
         "tr": "sp2 Hibritleşmesi",
@@ -581,18 +581,18 @@ export const unit23: ChemistryUnitSeedData = {
         "fr": "Hybridation sp2",
         "ru": "sp2 Гибридизация",
         "ar": "تهجين sp2",
-        "zh": "sp2杂交",
-        "ku": "sp2 Hybridization"
+        "zh": "sp2 杂化",
+        "ku": "Hîbrîdîzasyona sp2"
       },
       "distinction": {
-        "tr": "sp3 4 doğrultulu tetrahedral geometride görülür (109.5°); sp2 3 doğrultulu düzlem üçgen geometride görülür (120°).",
-        "en": "sp3 appears in 4-direction tetrahedral geometry (109.5°); sp2 is seen in 3-direction plane triangular geometry (120°).",
-        "de": "sp3 erscheint in 4-Richtungs-Tetraedergeometrie (109,5°); sp2 wird in einer ebenen dreieckigen Geometrie in drei Richtungen (120°) gesehen.",
-        "fr": "sp3 apparaît dans une géométrie tétraédrique à 4 directions (109,5°) ; sp2 est vu dans une géométrie triangulaire plane à 3 directions (120 °).",
-        "ru": "sp3 появляется в 4-направленной тетраэдрической геометрии (109,5°); sp2 виден в 3-х плоской треугольной геометрии (120°).",
-        "ar": "يظهر sp3 في هندسة رباعية السطوح ذات 4 اتجاهات (109.5 درجة)؛ يتم رؤية sp2 في هندسة ثلاثية المستوى (120 درجة).",
-        "zh": "sp3 出现在 4 方向四面体几何形状 (109.5°) 中； sp2 在 3 方向平面三角形几何 (120°) 中可见。",
-        "ku": "sp3 di geometriya tetrahedral ya 4-alî de xuya dike (109,5°); sp2 di geometriya sêgoşeyî ya 3-alî (120°) de tê dîtin."
+        "tr": "sp3 hibritleşmesinde bir s ve üç p orbitali karışarak 4 hibrit orbital oluşur (109,5°); sp2 hibritleşmesinde bir s ve iki p orbitali karışarak 3 hibrit orbital oluşur (120°).",
+        "en": "In sp3 hybridization one s and three p orbitals mix to form 4 hybrid orbitals (109.5°); in sp2 hybridization one s and two p orbitals mix to form 3 hybrid orbitals (120°).",
+        "de": "Bei der sp3-Hybridisierung mischen sich ein s- und drei p-Orbitale zu 4 Hybridorbitalen (109,5°); bei der sp2-Hybridisierung mischen sich ein s- und zwei p-Orbitale zu 3 Hybridorbitalen (120°).",
+        "fr": "Dans l'hybridation sp3, une orbitale s et trois orbitales p se combinent pour donner 4 orbitales hybrides (109,5°) ; dans l'hybridation sp2, une orbitale s et deux orbitales p donnent 3 orbitales hybrides (120°).",
+        "ru": "При sp3-гибридизации одна s- и три p-орбитали смешиваются, образуя 4 гибридные орбитали (109,5°); при sp2-гибридизации одна s- и две p-орбитали образуют 3 гибридные орбитали (120°).",
+        "ar": "في تهجين sp3 يندمج مدار s واحد مع ثلاثة مدارات p لتكوين 4 مدارات مهجنة (109.5°)؛ وفي تهجين sp2 يندمج مدار s واحد مع مدارين p لتكوين 3 مدارات مهجنة (120°).",
+        "zh": "sp3 杂化中 1 个 s 轨道与 3 个 p 轨道混合形成 4 个杂化轨道（109.5°）；sp2 杂化中 1 个 s 轨道与 2 个 p 轨道混合形成 3 个杂化轨道（120°）。",
+        "ku": "Di hîbrîdîzasyona sp3 de orbîtalek s û sê orbîtalên p tevlihev dibin û 4 orbîtalên hîbrîd çêdikin (109,5°); di hîbrîdîzasyona sp2 de orbîtalek s û du orbîtalên p 3 orbîtalên hîbrîd çêdikin (120°)."
       }
     },
     {
@@ -603,9 +603,9 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "Regelmäßiges Tetraeder (AX4)",
         "fr": "Tétraèdre régulier (AX4)",
         "ru": "Правильный тетраэдр (AX4)",
-        "ar": "رباعي الاسطح العادي (AX4)",
+        "ar": "رباعي الأوجه المنتظم (AX4)",
         "zh": "正四面体 (AX4)",
-        "ku": "Tetrahedron bi rêkûpêk (AX4)"
+        "ku": "Çarrûya Rêkûpêk (AX4)"
       },
       "conceptB": {
         "tr": "Üçgen Piramit (AX3E)",
@@ -618,14 +618,14 @@ export const unit23: ChemistryUnitSeedData = {
         "ku": "Pîramîda Sêgoşeyî (AX3E)"
       },
       "distinction": {
-        "tr": "AX4'te ortaklanmamış çift yoktur ve bağ açısı 109.5°'dir (CH4); AX3E'de 1 serbest çift bağları iterek 107.3° yapar (NH3).",
-        "en": "There are no unshared pairs in AX4 and the bond angle is 109.5° (CH4); AX3E also pushes 1 free double bond to make 107.3° (NH3).",
-        "de": "Es gibt keine ungeteilten Paare in AX4 und der Bindungswinkel beträgt 109,5° (CH4); AX3E drückt außerdem eine freie Doppelbindung, um 107,3° (NH3) zu ergeben.",
-        "fr": "Il n'y a pas de paires non partagées dans AX4 et l'angle de liaison est de 109,5° (CH4) ; AX3E pousse également 1 double liaison libre pour faire 107,3° (NH3).",
-        "ru": "В AX4 нет неподеленных пар, а валентный угол равен 109,5 ° (CH4); AX3E также сдвигает 1 свободную двойную связь, образуя 107,3° (NH3).",
-        "ar": "لا توجد أزواج غير مشتركة في AX4 وزاوية الرابطة هي 109.5° (CH4)؛ يقوم AX3E أيضًا بدفع رابطة مزدوجة مجانية واحدة لتكوين 107.3° (NH3).",
-        "zh": "AX4中不存在非共享对，键角为109.5°（CH4）； AX3E 还推动 1 个自由双键形成 107.3° (NH3)。",
-        "ku": "Di AX4 de cotên nehevkirî nînin û goşeya girêdanê 109,5° (CH4) e; AX3E di heman demê de 1 girêdana ducarî ya belaş jî dihêle ku 107,3 ​​° (NH3) çêbike."
+        "tr": "AX4'te ortaklanmamış elektron çifti yoktur ve bağ açısı 109,5°'dir (CH4); AX3E'de 1 ortaklanmamış çift bağları iterek bağ açısını 107,3°'ye düşürür (NH3).",
+        "en": "AX4 has no lone pairs and its bond angle is 109.5° (CH4); in AX3E, 1 lone pair pushes the bonds closer, reducing the angle to 107.3° (NH3).",
+        "de": "AX4 besitzt kein freies Elektronenpaar, der Bindungswinkel beträgt 109,5° (CH4); bei AX3E drückt 1 freies Elektronenpaar die Bindungen zusammen, sodass der Winkel auf 107,3° sinkt (NH3).",
+        "fr": "AX4 ne possède aucun doublet non liant et son angle de liaison est de 109,5° (CH4) ; dans AX3E, 1 doublet non liant repousse les liaisons et l'angle diminue à 107,3° (NH3).",
+        "ru": "В AX4 нет неподелённых пар, валентный угол 109,5° (CH4); в AX3E одна неподелённая пара отталкивает связи, и угол уменьшается до 107,3° (NH3).",
+        "ar": "لا يوجد في AX4 أزواج إلكترونية غير رابطة وزاوية الرابطة 109.5° (CH4)؛ أما في AX3E فيدفع زوج غير رابط واحد الروابط فتنخفض الزاوية إلى 107.3° (NH3).",
+        "zh": "AX4 中没有孤对电子，键角为 109.5°（CH4）；AX3E 中 1 对孤对电子排斥成键电子对，使键角减小到 107.3°（NH3）。",
+        "ku": "Di AX4 de cotên elektronan ên nehevpar tune ne û goşeya girêdanê 109,5° ye (CH4); di AX3E de 1 cotê nehevpar girêdanan dehf dide û goşe dadikeve 107,3° (NH3)."
       }
     },
     {
@@ -642,23 +642,23 @@ export const unit23: ChemistryUnitSeedData = {
       },
       "conceptB": {
         "tr": "Kırık Doğru (AX2E2)",
-        "en": "Broken Right (AX2E2)",
-        "de": "Rechts gebrochen (AX2E2)",
-        "fr": "Cassé droit (AX2E2)",
-        "ru": "Сломанный правый (AX2E2)",
-        "ar": "اليمين المكسور (AX2E2)",
-        "zh": "右断 (AX2E2)",
-        "ku": "Rast şikestî (AX2E2)"
+        "en": "Bent (AX2E2)",
+        "de": "Gewinkelt (AX2E2)",
+        "fr": "Coudée (AX2E2)",
+        "ru": "Угловая (AX2E2)",
+        "ar": "منحنٍ (AX2E2)",
+        "zh": "V 形（AX2E2）",
+        "ku": "Xwar (AX2E2)"
       },
       "distinction": {
-        "tr": "AX2 sp hibritleşmesiyle 180° doğrusal yapıdadır (CO2); AX2E2 2 serbest çift etkisiyle 104.5° kırık doğru geometridedir (H2O).",
-        "en": "AX2 has a 180° linear structure with sp hybridization (CO2); AX2E2 104.5° fracture is in the correct geometry (H2O) due to the effect of 2 free pairs.",
-        "de": "AX2 hat eine 180°-lineare Struktur mit sp-Hybridisierung (CO2); Der Bruch AX2E2 104,5° hat aufgrund der Wirkung von 2 freien Paaren die richtige Geometrie (H2O).",
-        "fr": "AX2 a une structure linéaire à 180° avec hybridation sp (CO2) ; La fracture AX2E2 à 104,5° est dans la bonne géométrie (H2O) en raison de l'effet de 2 paires libres.",
-        "ru": "AX2 имеет линейную структуру на 180° с sp-гибридизацией (CO2); Разлом AX2E2 104,5° имеет правильную геометрию (H2O) за счет влияния 2-х свободных пар.",
-        "ar": "يحتوي AX2 على بنية خطية بزاوية 180 درجة مع تهجين sp (CO2)؛ يوجد كسر AX2E2 بزاوية 104.5° في الشكل الهندسي الصحيح (H2O) بسبب تأثير زوجين حرين.",
-        "zh": "AX2具有sp杂化（CO2）的180°线性结构；由于 2 个自由对的影响，AX2E2 104.5° 断裂处于正确的几何形状 (H2O)。",
-        "ku": "AX2 xwedan avahiyek xêzikî ya 180 ° bi hîbrîdîzasyona sp (CO2) ye; AX2E2 104.5° şikestin di geometriya rast (H2O) de ye ji ber bandora 2 cotên belaş."
+        "tr": "AX2 sp hibritleşmesiyle 180° doğrusal yapıdadır (CO2); AX2E2 2 serbest çift etkisiyle 104,5° kırık doğru geometridedir (H2O).",
+        "en": "AX2 is linear (180°) with sp hybridization (CO2); in AX2E2 the effect of 2 lone pairs gives a bent geometry with 104.5° (H2O).",
+        "de": "AX2 ist mit sp-Hybridisierung linear (180°) (CO2); bei AX2E2 führen 2 freie Elektronenpaare zu einer gewinkelten Geometrie mit 104,5° (H2O).",
+        "fr": "AX2 est linéaire (180°) avec une hybridation sp (CO2) ; dans AX2E2, l'effet de 2 doublets non liants donne une géométrie coudée de 104,5° (H2O).",
+        "ru": "AX2 при sp-гибридизации имеет линейное строение (180°) (CO2); в AX2E2 из-за 2 неподелённых пар геометрия угловая, 104,5° (H2O).",
+        "ar": "AX2 خطي (180°) مع تهجين sp (CO2)؛ أما في AX2E2 فيؤدي تأثير زوجين غير رابطين إلى شكل منحنٍ بزاوية 104.5° (H2O).",
+        "zh": "AX2 为 sp 杂化，呈 180° 直线形（CO2）；AX2E2 受 2 对孤对电子影响，呈 104.5° 的 V 形（H2O）。",
+        "ku": "AX2 bi hîbrîdîzasyona sp xêzikî ye (180°) (CO2); di AX2E2 de bandora 2 cotên nehevpar geometriyeke xwar a 104,5° çêdike (H2O)."
       }
     }
   ],
@@ -721,110 +721,110 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-s02",
       "title": {
-        "tr": "Hibritleşme Türünün Belirlenmesi",
-        "en": "Determining the Type of Hybridization",
-        "de": "Bestimmung der Art der Hybridisierung",
-        "fr": "Détermination du type d'hybridation",
-        "ru": "Определение типа гибридизации",
-        "ar": "تحديد نوع التهجين",
-        "zh": "确定杂交类型",
-        "ku": "Tespîtkirina Cureyê Hybridization"
+        "tr": "Karbonda sp3 Hibritleşmesinin Oluşumu (CH4)",
+        "en": "Formation of sp3 Hybridization in Carbon (CH4)",
+        "de": "Entstehung der sp3-Hybridisierung am Kohlenstoff (CH4)",
+        "fr": "Formation de l'hybridation sp3 du carbone (CH4)",
+        "ru": "Образование sp3-гибридизации атома углерода (CH4)",
+        "ar": "تكوّن التهجين sp3 في الكربون (CH4)",
+        "zh": "碳原子 sp3 杂化的形成（CH4）",
+        "ku": "Çêbûna Hîbrîdîzasyona sp3 li Karbonê (CH4)"
       },
       "steps": [
         {
-          "tr": "Merkez atomun Lewis nokta yapısı çizilir",
-          "en": "Lewis dot structure of the central atom is drawn",
-          "de": "Lewis-Punkt-Struktur des Zentralatoms ist eingezeichnet",
-          "fr": "La structure des points de Lewis de l'atome central est dessinée",
-          "ru": "Нарисована точечная структура Льюиса центрального атома.",
-          "ar": "تم رسم البنية النقطية لويس للذرة المركزية",
-          "zh": "绘制中心原子的路易斯点结构",
-          "ku": "Struktura xala Lewis ya atoma navendî hatiye kişandin"
+          "tr": "Karbonun temel hal elektron dizilimi yazılır: 1s2 2s2 2p2 (2 yarı dolu orbital)",
+          "en": "Write carbon's ground-state electron configuration: 1s2 2s2 2p2 (2 half-filled orbitals)",
+          "de": "Die Grundzustands-Elektronenkonfiguration des Kohlenstoffs wird notiert: 1s2 2s2 2p2 (2 halb besetzte Orbitale)",
+          "fr": "On écrit la configuration électronique fondamentale du carbone : 1s2 2s2 2p2 (2 orbitales à moitié remplies)",
+          "ru": "Записывают электронную конфигурацию углерода в основном состоянии: 1s2 2s2 2p2 (2 наполовину заполненные орбитали)",
+          "ar": "يُكتب التوزيع الإلكتروني للكربون في الحالة الأرضية: 1s2 2s2 2p2 (مداران نصف ممتلئين)",
+          "zh": "写出碳原子基态电子排布：1s2 2s2 2p2（2 个半充满轨道）",
+          "ku": "Rêzbûna elektronan a rewşa bingehîn a karbonê tê nivîsîn: 1s2 2s2 2p2 (2 orbîtalên nîv-tijî)"
         },
         {
-          "tr": "Merkez atomun yaptığı sigma bağları sayılır",
-          "en": "Sigma bonds made by the central atom are counted.",
-          "de": "Vom Zentralatom hergestellte Sigma-Bindungen werden gezählt.",
-          "fr": "Les liaisons sigma établies par l'atome central sont comptées.",
-          "ru": "Подсчитываются сигма-связи, образованные центральным атомом.",
-          "ar": "يتم حساب روابط سيجما التي تصنعها الذرة المركزية.",
-          "zh": "计算由中心原子形成的西格玛键。",
-          "ku": "Girêdanên sigma yên ku ji hêla atoma navendî ve têne çêkirin têne hejmartin."
+          "tr": "2s orbitalindeki bir elektron boş 2p orbitaline uyarılır (4 yarı dolu orbital)",
+          "en": "One electron from the 2s orbital is promoted to the empty 2p orbital (4 half-filled orbitals)",
+          "de": "Ein Elektron aus dem 2s-Orbital wird in das leere 2p-Orbital angehoben (4 halb besetzte Orbitale)",
+          "fr": "Un électron de l'orbitale 2s est promu dans l'orbitale 2p vide (4 orbitales à moitié remplies)",
+          "ru": "Один электрон с 2s-орбитали переходит на свободную 2p-орбиталь (4 наполовину заполненные орбитали)",
+          "ar": "ينتقل إلكترون من المدار 2s إلى مدار 2p الفارغ (4 مدارات نصف ممتلئة)",
+          "zh": "2s 轨道上的一个电子跃迁到空的 2p 轨道（4 个半充满轨道）",
+          "ku": "Elektronek ji orbîtala 2s derbasî orbîtala 2p ya vala dibe (4 orbîtalên nîv-tijî)"
         },
         {
-          "tr": "Merkez atomun ortaklanmamış elektron çiftleri eklenir",
-          "en": "Unshared electron pairs of the central atom are added",
-          "de": "Es kommen ungeteilte Elektronenpaare des Zentralatoms hinzu",
-          "fr": "Des paires d'électrons non partagés de l'atome central sont ajoutées",
-          "ru": "Добавляются неподеленные электронные пары центрального атома.",
-          "ar": "تتم إضافة أزواج الإلكترونات غير المشتركة للذرة المركزية",
-          "zh": "添加中心原子的非共享电子对",
-          "ku": "Cotên elektron ên neparvekirî yên atoma navendî lê zêde dibin"
+          "tr": "Bir 2s ve üç 2p orbitali karışarak eş enerjili dört sp3 hibrit orbitali oluşturur",
+          "en": "One 2s and three 2p orbitals mix to form four equivalent sp3 hybrid orbitals",
+          "de": "Ein 2s- und drei 2p-Orbitale mischen sich zu vier energiegleichen sp3-Hybridorbitalen",
+          "fr": "Une orbitale 2s et trois orbitales 2p se combinent pour former quatre orbitales hybrides sp3 équivalentes",
+          "ru": "Одна 2s- и три 2p-орбитали смешиваются, образуя четыре равноценные sp3-гибридные орбитали",
+          "ar": "يندمج مدار 2s مع ثلاثة مدارات 2p لتكوين أربعة مدارات مهجنة sp3 متكافئة",
+          "zh": "一个 2s 轨道与三个 2p 轨道混合，形成四个等价的 sp3 杂化轨道",
+          "ku": "Orbîtalek 2s û sê orbîtalên 2p tevlihev dibin û çar orbîtalên hîbrîd ên sp3 yên wekhev çêdikin"
         },
         {
-          "tr": "Toplam doğrultu sayısı: 2 ise sp, 3 ise sp2, 4 ise sp3 hibritleşmesidir",
-          "en": "Total number of directions: 2 is sp, 3 is sp2, 4 is sp3 hybridization.",
-          "de": "Gesamtzahl der Richtungen: 2 ist sp, 3 ist sp2, 4 ist sp3-Hybridisierung.",
-          "fr": "Nombre total de directions : 2 est sp, 3 est sp2, 4 est une hybridation sp3.",
-          "ru": "Общее количество направлений: 2 – sp, 3 – sp2, 4 – sp3-гибридизация.",
-          "ar": "إجمالي عدد الاتجاهات: 2 هو sp، 3 هو sp2، 4 هو sp3 التهجين.",
-          "zh": "方向总数：2个是sp，3个是sp2，4个是sp3杂交。",
-          "ku": "Hejmara giştî ya rêwerzan: 2 sp e, 3 sp2 ye, 4 jî hîbrîdîzasyona sp3 ye."
+          "tr": "Dört sp3 orbitali H atomlarının 1s orbitalleriyle örtüşerek 109,5° açılı dört C–H sigma bağı yapar",
+          "en": "The four sp3 orbitals overlap with the 1s orbitals of H atoms to form four C–H sigma bonds at 109.5°",
+          "de": "Die vier sp3-Orbitale überlappen mit den 1s-Orbitalen der H-Atome zu vier C–H-Sigma-Bindungen mit 109,5°",
+          "fr": "Les quatre orbitales sp3 recouvrent les orbitales 1s des atomes H et forment quatre liaisons sigma C–H à 109,5°",
+          "ru": "Четыре sp3-орбитали перекрываются с 1s-орбиталями атомов H, образуя четыре сигма-связи C–H под углом 109,5°",
+          "ar": "تتداخل مدارات sp3 الأربعة مع مدارات 1s لذرات H مكونة أربع روابط سيجما C–H بزاوية 109.5°",
+          "zh": "四个 sp3 轨道与 H 原子的 1s 轨道重叠，形成四个键角为 109.5° 的 C–H σ 键",
+          "ku": "Çar orbîtalên sp3 bi orbîtalên 1s yên atomên H re hev digirin û çar girêdanên sigma yên C–H bi goşeya 109,5° çêdikin"
         }
       ]
     },
     {
       "id": "u23-s03",
       "title": {
-        "tr": "VSEPR Geometrisi Türetimi",
-        "en": "VSEPR Geometry Derivation",
-        "de": "VSEPR-Geometrieableitung",
-        "fr": "Dérivation de la géométrie VSEPR",
-        "ru": "Вывод геометрии VSEPR",
-        "ar": "VSEPR اشتقاق الهندسة",
-        "zh": "VSEPR 几何推导",
-        "ku": "VSEPR Geometry Derivation"
+        "tr": "Wöhler Deneyi ve Organik Kimyanın Doğuşu",
+        "en": "Wöhler's Experiment and the Birth of Organic Chemistry",
+        "de": "Wöhlers Versuch und die Geburt der organischen Chemie",
+        "fr": "L'expérience de Wöhler et la naissance de la chimie organique",
+        "ru": "Опыт Вёлера и зарождение органической химии",
+        "ar": "تجربة فولر ونشأة الكيمياء العضوية",
+        "zh": "维勒实验与有机化学的诞生",
+        "ku": "Ceribandina Wöhler û Destpêka Kîmyaya Organîk"
       },
       "steps": [
         {
-          "tr": "Merkez atom A, bağlı atomlar X ve ortaklanmamış çift E belirlenir",
-          "en": "The central atom is A, the bonded atoms are X, and the unshared pair is E.",
-          "de": "Das Zentralatom ist A, die gebundenen Atome sind X und das ungeteilte Paar ist E.",
-          "fr": "L'atome central est A, les atomes liés sont X et la paire non partagée est E.",
-          "ru": "Центральный атом — А, связанные атомы — Х, неподеленная пара — Е.",
-          "ar": "الذرة المركزية هي A، والذرات المرتبطة هي X، والزوج غير المشترك هو E.",
-          "zh": "中心原子是A，键合原子是X，未共享的原子对是E。",
-          "ku": "Atoma navendî A ye, atomên girêdayî X in, û cotê neparvekirî E ye."
+          "tr": "Organik maddelerin yalnızca canlılarda yaşam gücüyle oluşabileceği (vitalizm) kabul ediliyordu",
+          "en": "It was believed that organic substances could form only in living things through a vital force (vitalism)",
+          "de": "Man nahm an, dass organische Stoffe nur in Lebewesen durch eine Lebenskraft entstehen können (Vitalismus)",
+          "fr": "On pensait que les substances organiques ne pouvaient se former que chez les êtres vivants grâce à une force vitale (vitalisme)",
+          "ru": "Считалось, что органические вещества могут образовываться только в живых организмах благодаря жизненной силе (витализм)",
+          "ar": "كان يُعتقد أن المواد العضوية لا تتكون إلا في الكائنات الحية بفعل قوة حيوية (المذهب الحيوي)",
+          "zh": "人们曾认为有机物只能在生物体内依靠“生命力”产生（生命力论）",
+          "ku": "Dihat bawerkirin ku madeyên organîk tenê di zindiyan de bi hêza jiyanê çêdibin (vîtalîzm)"
         },
         {
-          "tr": "AX2 formülü 180° doğrusal geometri verir",
-          "en": "The formula AX2 gives 180° linear geometry",
-          "de": "Die Formel AX2 ergibt eine lineare 180°-Geometrie",
-          "fr": "La formule AX2 donne une géométrie linéaire à 180°",
-          "ru": "Формула AX2 дает линейную геометрию 180°.",
-          "ar": "تعطي الصيغة AX2 هندسة خطية 180 درجة",
-          "zh": "公式 AX2 给出 180° 线性几何",
-          "ku": "Formula AX2 geometriya xêzikî 180° dide"
+          "tr": "1828'de Wöhler anorganik amonyum siyanatı ısıtarak üre elde etti",
+          "en": "In 1828 Wöhler obtained urea by heating inorganic ammonium cyanate",
+          "de": "1828 erhielt Wöhler durch Erhitzen von anorganischem Ammoniumcyanat Harnstoff",
+          "fr": "En 1828, Wöhler obtint de l'urée en chauffant du cyanate d'ammonium inorganique",
+          "ru": "В 1828 году Вёлер получил мочевину нагреванием неорганического цианата аммония",
+          "ar": "في عام 1828 حصل فولر على اليوريا بتسخين سيانات الأمونيوم غير العضوية",
+          "zh": "1828 年，维勒加热无机物氰酸铵得到了尿素",
+          "ku": "Di sala 1828an de Wöhler bi germkirina amonyum sîyanata anorganîk ure bi dest xist"
         },
         {
-          "tr": "AX3 formülü 120° düzlem üçgen geometri oluşturur",
-          "en": "Formula AX3 creates 120° plane triangular geometry",
-          "de": "Die Formel AX3 erzeugt eine 120°-ebene Dreiecksgeometrie",
-          "fr": "La formule AX3 crée une géométrie triangulaire plane à 120°",
-          "ru": "Формула AX3 создает плоскую треугольную геометрию под углом 120°.",
-          "ar": "تقوم الصيغة AX3 بإنشاء هندسة مثلثية بزاوية 120 درجة",
-          "zh": "公式 AX3 创建 120° 平面三角形几何",
-          "ku": "Formula AX3 geometriya sêgoşeyî ya 120° diafirîne"
+          "tr": "Organik maddelerin laboratuvarda anorganik maddelerden sentezlenebileceği anlaşıldı",
+          "en": "It became clear that organic substances can be synthesized in the laboratory from inorganic ones",
+          "de": "Es wurde klar, dass organische Stoffe im Labor aus anorganischen hergestellt werden können",
+          "fr": "On comprit que les substances organiques peuvent être synthétisées au laboratoire à partir de substances inorganiques",
+          "ru": "Стало ясно, что органические вещества можно синтезировать в лаборатории из неорганических",
+          "ar": "اتضح أنه يمكن تحضير المواد العضوية في المختبر من مواد غير عضوية",
+          "zh": "人们认识到有机物可以在实验室由无机物合成",
+          "ku": "Hate fêmkirin ku madeyên organîk dikarin di laboratuwarê de ji madeyên anorganîk werin sentezkirin"
         },
         {
-          "tr": "AX4 formülü 109.5° düzgün dörtyüzlü (tetrahedral) geometri kurar",
-          "en": "The AX4 formula establishes 109.5° tetrahedral geometry",
-          "de": "Die AX4-Formel legt eine 109,5°-Tetraedergeometrie fest",
-          "fr": "La formule AX4 établit une géométrie tétraédrique de 109,5°",
-          "ru": "Формула AX4 устанавливает тетраэдрическую геометрию 109,5 °.",
-          "ar": "تحدد صيغة AX4 هندسة رباعية السطوح بزاوية 109.5 درجة",
-          "zh": "AX4 公式建立 109.5° 四面体几何",
-          "ku": "Formula AX4 geometriya tetrahedral 109,5° saz dike"
+          "tr": "Organik kimya, karbon bileşiklerinin kimyası olarak yeniden tanımlandı",
+          "en": "Organic chemistry was redefined as the chemistry of carbon compounds",
+          "de": "Die organische Chemie wurde als Chemie der Kohlenstoffverbindungen neu definiert",
+          "fr": "La chimie organique fut redéfinie comme la chimie des composés du carbone",
+          "ru": "Органическую химию стали определять как химию соединений углерода",
+          "ar": "أُعيد تعريف الكيمياء العضوية بأنها كيمياء مركبات الكربون",
+          "zh": "有机化学被重新定义为研究碳化合物的化学",
+          "ku": "Kîmyaya organîk wek kîmyaya pêkhateyên karbonê ji nû ve hate pênasekirin"
         }
       ]
     },
@@ -832,54 +832,54 @@ export const unit23: ChemistryUnitSeedData = {
       "id": "u23-s04",
       "title": {
         "tr": "Sigma ve Pi Bağı Sayımı",
-        "en": "Sigma and Pi Bond Counting",
-        "de": "Sigma- und Pi-Bond-Zählung",
+        "en": "Counting Sigma and Pi Bonds",
+        "de": "Zählen von Sigma- und Pi-Bindungen",
         "fr": "Comptage de liaisons Sigma et Pi",
-        "ru": "Подсчет сигм и пи-связей",
-        "ar": "عد سيجما و باي بوند",
-        "zh": "Sigma 和 Pi 键计数",
-        "ku": "Sigma û Pi Bond Counting"
+        "ru": "Подсчёт сигма- и пи-связей",
+        "ar": "عدّ روابط سيجما وباي",
+        "zh": "σ 键与 π 键的计数",
+        "ku": "Hejmartina Girêdanên Sigma û Pî"
       },
       "steps": [
         {
-          "tr": "Moleküldeki tüm tekli bağlar 1'er sigma bağı olarak sayılır",
-          "en": "All single bonds in the molecule are counted as 1 sigma bond.",
-          "de": "Alle Einfachbindungen im Molekül werden als 1-Sigma-Bindung gezählt.",
-          "fr": "Toutes les liaisons simples de la molécule sont comptées comme 1 liaison sigma.",
-          "ru": "Все одинарные связи в молекуле считаются 1 сигма-связью.",
-          "ar": "يتم احتساب جميع الروابط الفردية في الجزيء كرابطة سيجما واحدة.",
-          "zh": "分子中的所有单键均计为 1 个西格玛键。",
-          "ku": "Di molekulê de hemî girêdanên yekane wekî girêdana 1 sigma têne hesibandin."
+          "tr": "Molekülün açık yapı formülü yazılarak atomlar arasındaki bağlar belirlenir",
+          "en": "Write the full structural formula and identify all bonds between atoms",
+          "de": "Die vollständige Strukturformel wird aufgestellt und alle Bindungen zwischen den Atomen werden bestimmt",
+          "fr": "On écrit la formule développée et on repère toutes les liaisons entre atomes",
+          "ru": "Записывают развёрнутую структурную формулу и определяют все связи между атомами",
+          "ar": "تُكتب الصيغة البنائية المفصلة وتُحدد جميع الروابط بين الذرات",
+          "zh": "写出分子的结构式，确定原子之间的所有化学键",
+          "ku": "Formula avahiyê ya vekirî tê nivîsîn û hemû girêdanên di navbera atoman de têne diyarkirin"
         },
         {
-          "tr": "İkili bağlarda 1 sigma ve 1 pi bağı bulunur",
-          "en": "Double bonds have 1 sigma and 1 pi bond",
-          "de": "Doppelbindungen haben 1 Sigma- und 1 Pi-Bindung",
-          "fr": "Les doubles liaisons ont 1 sigma et 1 liaison pi",
-          "ru": "Двойные связи имеют 1 сигму и 1 пи-связь.",
-          "ar": "تحتوي الروابط المزدوجة على رابطة سيجما واحدة ورابطة باي واحدة",
-          "zh": "双键有 1 个 sigma 和 1 个 pi 键",
-          "ku": "Girêdanên ducarî 1 sigma û 1 girêdana pi hene"
+          "tr": "Her iki atom arasındaki ilk bağ sigma bağı olarak sayılır",
+          "en": "Count the first bond between any two atoms as a sigma bond",
+          "de": "Die erste Bindung zwischen zwei Atomen wird als Sigma-Bindung gezählt",
+          "fr": "La première liaison entre deux atomes est comptée comme liaison sigma",
+          "ru": "Первую связь между двумя атомами считают сигма-связью",
+          "ar": "تُحسب الرابطة الأولى بين أي ذرتين رابطة سيجما",
+          "zh": "任意两个原子之间的第一个键计为 σ 键",
+          "ku": "Girêdana yekem a di navbera du atoman de wek girêdana sigma tê hejmartin"
         },
         {
-          "tr": "Üçlü bağlarda 1 sigma ve 2 pi bağı yer alır",
-          "en": "Triple bonds contain 1 sigma and 2 pi bonds.",
-          "de": "Dreifachbindungen enthalten 1 Sigma- und 2 Pi-Bindungen.",
-          "fr": "Les liaisons triples contiennent 1 liaison sigma et 2 liaisons pi.",
-          "ru": "Тройные связи содержат 1 сигму и 2 пи-связи.",
-          "ar": "الروابط الثلاثية تحتوي على 1 سيجما و 2 باي.",
-          "zh": "三键包含 1 个 sigma 和 2 个 pi 键。",
-          "ku": "Girêdanên sêalî 1 sigma û 2 girêdanên pi hene."
+          "tr": "İkili bağdaki ikinci bağ ile üçlü bağdaki ikinci ve üçüncü bağlar pi bağı olarak sayılır",
+          "en": "Count the second bond of a double bond and the second and third bonds of a triple bond as pi bonds",
+          "de": "Die zweite Bindung einer Doppelbindung sowie die zweite und dritte Bindung einer Dreifachbindung werden als Pi-Bindungen gezählt",
+          "fr": "La deuxième liaison d'une double liaison et les deuxième et troisième liaisons d'une triple liaison sont comptées comme liaisons pi",
+          "ru": "Вторую связь в двойной связи, а также вторую и третью связи в тройной связи считают пи-связями",
+          "ar": "تُحسب الرابطة الثانية في الرابطة الثنائية والرابطتان الثانية والثالثة في الرابطة الثلاثية روابط باي",
+          "zh": "双键中的第二个键以及三键中的第二、第三个键计为 π 键",
+          "ku": "Girêdana duyem a girêdana ducarî û girêdanên duyem û sêyem ên girêdana sêcarî wek girêdana pî têne hejmartin"
         },
         {
-          "tr": "Toplam sigma ve pi bağ sayıları belirlenir",
-          "en": "Total sigma and pi bond numbers are determined",
-          "de": "Es werden die gesamten Sigma- und Pi-Bindungszahlen bestimmt",
-          "fr": "Les nombres totaux de liaisons sigma et pi sont déterminés",
-          "ru": "Определяются общие числа сигма- и пи-связей.",
-          "ar": "يتم تحديد إجمالي أرقام روابط سيجما وباي",
-          "zh": "确定总 sigma 和 pi 键数",
-          "ku": "Bi tevahî hejmarên sigma û pi bond têne destnîşankirin"
+          "tr": "Sigma ve pi bağları ayrı ayrı toplanır (örn. C2H2: 3 sigma, 2 pi)",
+          "en": "Add up sigma and pi bonds separately (e.g., C2H2: 3 sigma, 2 pi)",
+          "de": "Sigma- und Pi-Bindungen werden getrennt addiert (z. B. C2H2: 3 Sigma, 2 Pi)",
+          "fr": "On additionne séparément les liaisons sigma et pi (par ex. C2H2 : 3 sigma, 2 pi)",
+          "ru": "Отдельно суммируют сигма- и пи-связи (например, C2H2: 3 сигма, 2 пи)",
+          "ar": "تُجمع روابط سيجما وباي كلٌّ على حدة (مثل C2H2: 3 سيجما، 2 باي)",
+          "zh": "分别统计 σ 键和 π 键的总数（如 C2H2：3 个 σ 键，2 个 π 键）",
+          "ku": "Girêdanên sigma û pî cuda cuda têne berhevkirin (mînak C2H2: 3 sigma, 2 pî)"
         }
       ]
     }
@@ -900,65 +900,65 @@ export const unit23: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "AX2E2 - Kırık doğru",
-          "en": "AX2E2 - Broken right",
-          "de": "AX2E2 – Rechts kaputt",
-          "fr": "AX2E2 - Cassé à droite",
-          "ru": "AX2E2 — сломано правое",
-          "ar": "AX2E2 - يمين مكسور",
-          "zh": "AX2E2 - 右断",
-          "ku": "AX2E2 - Rast şikestî"
+          "en": "AX2E2 - Bent",
+          "de": "AX2E2 - Gewinkelt",
+          "fr": "AX2E2 - Coudée",
+          "ru": "AX2E2 - Угловая",
+          "ar": "AX2E2 - منحنٍ",
+          "zh": "AX2E2 - V 形",
+          "ku": "AX2E2 - Xwar"
         },
         {
           "tr": "AX2 - Doğrusal",
           "en": "AX2 - Linear",
-          "de": "AX2 – Linear",
+          "de": "AX2 - Linear",
           "fr": "AX2 - Linéaire",
-          "ru": "AX2 — линейный",
+          "ru": "AX2 - Линейная",
           "ar": "AX2 - خطي",
-          "zh": "AX2 - 线性",
-          "ku": "AX2 - Linear"
+          "zh": "AX2 - 直线形",
+          "ku": "AX2 - Xêzikî"
         },
         {
           "tr": "AX3E - Üçgen piramit",
-          "en": "AX3E - Triangular pyramid",
-          "de": "AX3E – Dreieckige Pyramide",
-          "fr": "AX3E - Pyramide triangulaire",
-          "ru": "AX3E — Треугольная пирамида",
-          "ar": "AX3E - الهرم الثلاثي",
-          "zh": "AX3E - 三棱锥",
-          "ku": "AX3E - pîramîda sêgoşe"
+          "en": "AX3E - Trigonal pyramidal",
+          "de": "AX3E - Trigonal-pyramidal",
+          "fr": "AX3E - Pyramidale trigonale",
+          "ru": "AX3E - Тригональная пирамида",
+          "ar": "AX3E - هرم ثلاثي",
+          "zh": "AX3E - 三角锥形",
+          "ku": "AX3E - Pîramîda sêgoşe"
         },
         {
           "tr": "AX4 - Düzgün dörtyüzlü",
-          "en": "AX4 - Regular tetrahedral",
-          "de": "AX4 – Regelmäßiges Tetraeder",
-          "fr": "AX4 - Tétraédrique régulier",
-          "ru": "AX4 - Правильный тетраэдр",
-          "ar": "AX4 - رباعي السطوح منتظم",
+          "en": "AX4 - Tetrahedral",
+          "de": "AX4 - Tetraedrisch",
+          "fr": "AX4 - Tétraédrique",
+          "ru": "AX4 - Тетраэдр",
+          "ar": "AX4 - رباعي أوجه منتظم",
           "zh": "AX4 - 正四面体",
-          "ku": "AX4 - Tetrahedral bi rêkûpêk"
+          "ku": "AX4 - Çarrûya rêkûpêk"
         },
         {
           "tr": "AX3 - Düzlem üçgen",
-          "en": "AX3 - Plane triangle",
-          "de": "AX3 - Ebenes Dreieck",
-          "fr": "AX3 - Triangle plan",
-          "ru": "AX3 — Плоский треугольник",
-          "ar": "AX3 - المثلث المستوي",
+          "en": "AX3 - Trigonal planar",
+          "de": "AX3 - Trigonal-planar",
+          "fr": "AX3 - Trigonale plane",
+          "ru": "AX3 - Плоский треугольник",
+          "ar": "AX3 - مثلث مستوٍ",
           "zh": "AX3 - 平面三角形",
-          "ku": "AX3 - Triangle Plane"
+          "ku": "AX3 - Sêgoşeya dûz"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Oksijen merkez atomdur. 2 bağ yapmıştır (X2) ve 2 çift ortaklanmamış elektron taşır (E2). Formülü AX2E2 ve geometrisi kırık doğrudur (104.5°).",
-        "en": "Oxygen is the central atom. It has made 2 bonds (X2) and carries 2 pairs of unshared electrons (E2). Its formula is AX2E2 and its geometry is correct (104.5°).",
-        "de": "Sauerstoff ist das Zentralatom. Es hat 2 Bindungen (X2) eingegangen und trägt 2 Paare ungeteilter Elektronen (E2). Seine Formel lautet AX2E2 und seine Geometrie ist korrekt (104,5°).",
-        "fr": "L'oxygène est l'atome central. Il a réalisé 2 liaisons (X2) et porte 2 paires d'électrons non partagés (E2). Sa formule est AX2E2 et sa géométrie est correcte (104,5°).",
-        "ru": "Кислород является центральным атомом. Он образовал 2 связи (Х2) и несет 2 пары неподеленных электронов (Е2). Его формула — AX2E2, геометрия правильная (104,5°).",
-        "ar": "الأكسجين هو الذرة المركزية. وقد كونت رابطتين (X2) وتحمل زوجين من الإلكترونات غير المشتركة (E2). صيغتها هي AX2E2 وهندستها صحيحة (104.5°).",
-        "zh": "氧是中心原子。它形成了 2 个键 (X2) 并携带 2 对非共享电子 (E2)。其公式为 AX2E2，其几何形状正确（104.5°）。",
-        "ku": "Oksîjen atoma navendî ye. 2 girêdan (X2) çêkiriye û 2 cot elektronên bêpar (E2) hildigire. Formula wê AX2E2 û geometriya wê rast e (104,5°)."
+        "tr": "Oksijen merkez atomdur. 2 bağ yapmıştır (X2) ve 2 çift ortaklanmamış elektron taşır (E2). Formülü AX2E2 ve geometrisi kırık doğrudur (104,5°).",
+        "en": "Oxygen is the central atom. It forms 2 bonds (X2) and carries 2 lone pairs (E2). Its formula is AX2E2 and its geometry is bent (104.5°).",
+        "de": "Sauerstoff ist das Zentralatom. Er bildet 2 Bindungen (X2) und trägt 2 freie Elektronenpaare (E2). Die Formel ist AX2E2, die Geometrie gewinkelt (104,5°).",
+        "fr": "L'oxygène est l'atome central. Il forme 2 liaisons (X2) et porte 2 doublets non liants (E2). Sa formule est AX2E2 et sa géométrie est coudée (104,5°).",
+        "ru": "Кислород — центральный атом. Он образует 2 связи (X2) и имеет 2 неподелённые электронные пары (E2). Формула AX2E2, геометрия угловая (104,5°).",
+        "ar": "الأكسجين هو الذرة المركزية؛ يكوّن رابطتين (X2) ويحمل زوجين غير رابطين (E2). صيغته AX2E2 وشكله منحنٍ (104.5°).",
+        "zh": "氧是中心原子，形成 2 个键（X2），带有 2 对孤对电子（E2）。其 VSEPR 式为 AX2E2，构型为 V 形（104.5°）。",
+        "ku": "Oksîjen atoma navendî ye. 2 girêdanan çêdike (X2) û 2 cotên elektronan ên nehevpar hildigire (E2). Formula wê AX2E2 ye û geometriya wê xwar e (104,5°)."
       }
     },
     {
@@ -981,7 +981,7 @@ export const unit23: ChemistryUnitSeedData = {
           "fr": "3 sigma, 2 pi",
           "ru": "3 сигма, 2 пи",
           "ar": "3 سيجما، 2 بي",
-          "zh": "3 西格玛，2 pi",
+          "zh": "3 个 σ 键，2 个 π 键",
           "ku": "3 sigma, 2 pi"
         },
         {
@@ -991,7 +991,7 @@ export const unit23: ChemistryUnitSeedData = {
           "fr": "2 sigma, 3 pi",
           "ru": "2 сигма, 3 пи",
           "ar": "2 سيجما، 3 بي",
-          "zh": "2 西格玛、3 pi",
+          "zh": "2 个 σ 键，3 个 π 键",
           "ku": "2 sigma, 3 pi"
         },
         {
@@ -1001,7 +1001,7 @@ export const unit23: ChemistryUnitSeedData = {
           "fr": "5 sigma, 0 pi",
           "ru": "5 сигм, 0 пи",
           "ar": "5 سيجما، 0 بي",
-          "zh": "5 西格玛，0 圆周率",
+          "zh": "5 个 σ 键，0 个 π 键",
           "ku": "5 sigma, 0 pi"
         },
         {
@@ -1011,7 +1011,7 @@ export const unit23: ChemistryUnitSeedData = {
           "fr": "1 sigma, 4 pi",
           "ru": "1 сигма, 4 пи",
           "ar": "1 سيجما، 4 بي",
-          "zh": "1 西格玛，4 pi",
+          "zh": "1 个 σ 键，4 个 π 键",
           "ku": "1 sigma, 4 pi"
         },
         {
@@ -1021,19 +1021,19 @@ export const unit23: ChemistryUnitSeedData = {
           "fr": "4 sigma, 1 pi",
           "ru": "4 сигма, 1 пи",
           "ar": "4 سيجما، 1 بي",
-          "zh": "4 西格玛，1 pi",
+          "zh": "4 个 σ 键，1 个 π 键",
           "ku": "4 sigma, 1 pi"
         }
       ],
       "correctIndex": 0,
       "explanation": {
         "tr": "C-H bağları birer sigma (2 sigma), üçlü bağın biri sigma ikisi pi bağıdır (1 sigma, 2 pi). Toplamda 3 sigma ve 2 pi bağı bulunur.",
-        "en": "C-H bonds are one sigma (2 sigma), one of the triple bonds is sigma and two are pi bonds (1 sigma, 2 pi). There are 3 sigma and 2 pi bonds in total.",
-        "de": "C-H-Bindungen sind ein Sigma (2 Sigma), eine der Dreifachbindungen ist Sigma und zwei sind Pi-Bindungen (1 Sigma, 2 Pi). Insgesamt gibt es 3 Sigma- und 2 Pi-Anleihen.",
+        "en": "Each C-H bond is one sigma bond (2 sigma); of the triple bond, one is sigma and two are pi (1 sigma, 2 pi). In total there are 3 sigma and 2 pi bonds.",
+        "de": "Jede C-H-Bindung ist eine Sigma-Bindung (2 Sigma); von der Dreifachbindung ist eine Sigma- und zwei sind Pi-Bindungen (1 Sigma, 2 Pi). Insgesamt gibt es 3 Sigma- und 2 Pi-Bindungen.",
         "fr": "Les liaisons C-H sont un sigma (2 sigma), l'une des triples liaisons est sigma et deux sont des liaisons pi (1 sigma, 2 pi). Il y a 3 liaisons sigma et 2 liaisons pi au total.",
         "ru": "Связи CH представляют собой одну сигму (2 сигма), одна из тройных связей является сигма и две являются пи-связями (1 сигма, 2 пи). Всего имеется 3 сигма- и 2 пи-связи.",
         "ar": "روابط C-H هي روابط سيجما واحدة (2 سيجما)، وإحدى الروابط الثلاثية هي روابط سيجما واثنتان عبارة عن روابط باي (1 سيجما، 2 بي). هناك 3 روابط سيجما و2 باي في المجموع.",
-        "zh": "C-H 键为 1 个 sigma (2 sigma)，三键之一为 sigma，两个为 pi 键 (1 sigma, 2 pi)。总共有 3 个 sigma 和 2 个 pi 键。",
+        "zh": "每个 C-H 键是 1 个 σ 键（共 2 个 σ 键）；三键中 1 个是 σ 键，2 个是 π 键。共有 3 个 σ 键和 2 个 π 键。",
         "ku": "Girêdanên C-H yek sigma (2 sigma) ne, yek ji bendên sêqat sigma ye û du jî girêdanên pi ne (1 sigma, 2 pi). Bi tevahî 3 girêdanên sigma û 2 pi hene."
       }
     },
@@ -1138,13 +1138,13 @@ export const unit23: ChemistryUnitSeedData = {
         },
         {
           "tr": "CO2 molekülü kırık doğru geometrisindedir.",
-          "en": "The CO2 molecule is in broken line geometry.",
-          "de": "Das CO2-Molekül hat eine gestrichelte Liniengeometrie.",
-          "fr": "La molécule de CO2 est en forme de ligne brisée.",
-          "ru": "Молекула CO2 имеет ломаную геометрию.",
-          "ar": "يوجد جزيء ثاني أكسيد الكربون في شكل هندسي متقطع.",
-          "zh": "CO2 分子呈折线几何形状。",
-          "ku": "Molekula CO2 di geometriya xeta şikestî de ye."
+          "en": "The CO2 molecule has a bent geometry.",
+          "de": "Das CO2-Molekül ist gewinkelt.",
+          "fr": "La molécule de CO2 a une géométrie coudée.",
+          "ru": "Молекула CO2 имеет угловую геометрию.",
+          "ar": "جزيء CO2 ذو شكل منحنٍ (زاوي).",
+          "zh": "CO2 分子呈 V 形（角形）结构。",
+          "ku": "Molekula CO2 xwedî geometriya xwar (goşeyî) ye."
         },
         {
           "tr": "NH3 molekülü apolar ve düzlem üçgendir.",
@@ -1205,12 +1205,12 @@ export const unit23: ChemistryUnitSeedData = {
         {
           "tr": "Pi bağları sigma bağlarından çok daha güçlüdür.",
           "en": "Pi bonds are much stronger than sigma bonds.",
-          "de": "Pi-Anleihen sind viel stärker als Sigma-Anleihen.",
+          "de": "Pi-Bindungen sind viel stärker als Sigma-Bindungen.",
           "fr": "Les liaisons Pi sont beaucoup plus fortes que les liaisons sigma.",
-          "ru": "Пи-связи намного прочнее сигма-облигаций.",
+          "ru": "Пи-связи намного прочнее сигма-связей.",
           "ar": "روابط باي أقوى بكثير من روابط سيجما.",
           "zh": "Pi 键比 Sigma 键强得多。",
-          "ku": "Girêdanên pi ji bendên sigma pir xurttir in."
+          "ku": "Girêdanên pî ji girêdanên sigma pir xurttir in."
         },
         {
           "tr": "BF3 molekülü düzgün dörtyüzlüdür.",
@@ -1279,14 +1279,14 @@ export const unit23: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Fullerenler yapay karbon allotropları olup futbol topu, nano tüp ve nano tüpler şeklinde sentezlenir.",
-          "en": "Fullerenes are artificial carbon allotropes and are synthesized in the form of footballs, nanotubes and nanotubes.",
-          "de": "Fullerene sind künstliche Kohlenstoffallotrope und werden in Form von Fußbällen, Nanoröhren und Nanoröhren synthetisiert.",
-          "fr": "Les fullerènes sont des allotropes de carbone artificiels et sont synthétisés sous forme de ballons de football, de nanotubes et de nanotubes.",
-          "ru": "Фуллерены представляют собой искусственные аллотропы углерода и синтезируются в форме футбольных мячей, нанотрубок и нанотрубок.",
-          "ar": "الفوليرين عبارة عن متآصلات كربونية صناعية ويتم تصنيعها على شكل كرات قدم وأنابيب نانوية وأنابيب نانوية.",
-          "zh": "富勒烯是人造碳同素异形体，以足球、纳米管和纳米管的形式合成。",
-          "ku": "Fulleren allotropên karbonê yên çêkirî ne û di forma futbol, ​​nanotube û nanotube de têne sentez kirin."
+          "tr": "Fullerenler (örn. futbol topu biçimli C60) karbon atomlarının beşgen ve altıgen halkalarla oluşturduğu kafes yapılı allotroplardır; doğada çok az bulunur, çoğunlukla laboratuvarda sentezlenir.",
+          "en": "Fullerenes (e.g., the football-shaped C60) are cage-like carbon allotropes built from pentagonal and hexagonal rings; they occur only in tiny amounts in nature and are mostly synthesized in the laboratory.",
+          "de": "Fullerene (z. B. das fußballförmige C60) sind käfigartige Kohlenstoffallotrope aus Fünf- und Sechsringen; sie kommen in der Natur nur in Spuren vor und werden meist im Labor hergestellt.",
+          "fr": "Les fullerènes (par ex. le C60 en forme de ballon de football) sont des allotropes du carbone en forme de cage, formés de cycles pentagonaux et hexagonaux ; on les trouve en très faibles quantités dans la nature et ils sont surtout synthétisés en laboratoire.",
+          "ru": "Фуллерены (например, C60 в форме футбольного мяча) — каркасные аллотропные модификации углерода из пяти- и шестичленных циклов; в природе встречаются в ничтожных количествах и в основном синтезируются в лаборатории.",
+          "ar": "الفوليرينات (مثل C60 الشبيه بكرة القدم) متآصلات كربونية قفصية البنية تتكون من حلقات خماسية وسداسية؛ توجد في الطبيعة بكميات ضئيلة جدًا وتُحضّر غالبًا في المختبر.",
+          "zh": "富勒烯（如足球状的 C60）是由五元环和六元环构成的笼状碳同素异形体；在自然界中含量极少，主要在实验室合成。",
+          "ku": "Fullerên (mînak C60 ya bi şiklê topa futbolê) allotropên karbonê yên qefesî ne ku ji xelekên pêncgoşe û şeşgoşe pêk tên; di xwezayê de pir hindik hene û bi piranî di laboratuwarê de têne sentezkirin."
         },
         {
           "tr": "CH4 molekülünde karbon atomu sp hibritleşmesi yapmıştır.",
@@ -1331,14 +1331,14 @@ export const unit23: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Fullerenler yapay karbon allotropları olup futbol topu, nano tüp ve nano tüpler şeklinde sentezlenir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Fullerenes are artificial carbon allotropes and are synthesized in the form of footballs, nanotubes and nanotubes.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Fullerene sind künstliche Kohlenstoffallotrope und werden in Form von Fußbällen, Nanoröhren und Nanoröhren synthetisiert.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les fullerènes sont des allotropes de carbone artificiels et sont synthétisés sous forme de ballons de football, de nanotubes et de nanotubes.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Фуллерены представляют собой искусственные аллотропы углерода и синтезируются в форме футбольных мячей, нанотрубок и нанотрубок.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"الفوليرين عبارة عن متآصلات كربونية صناعية ويتم تصنيعها على شكل كرات قدم وأنابيب نانوية وأنابيب نانوية.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“富勒烯是人造碳同素异形体，以足球、纳米管和纳米管的形式合成。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Fulleren allotropên karbonê yên çêkirî ne û di forma futbol, ​​nanotube û nanotube de têne sentez kirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Fullerenler (örn. futbol topu biçimli C60) karbon atomlarının beşgen ve altıgen halkalarla oluşturduğu kafes yapılı allotroplardır; doğada çok az bulunur, çoğunlukla laboratuvarda sentezlenir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Fullerenes (e.g., the football-shaped C60) are cage-like carbon allotropes built from pentagonal and hexagonal rings; they occur only in tiny amounts in nature and are mostly synthesized in the laboratory.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Fullerene (z. B. das fußballförmige C60) sind käfigartige Kohlenstoffallotrope aus Fünf- und Sechsringen; sie kommen in der Natur nur in Spuren vor und werden meist im Labor hergestellt.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les fullerènes (par ex. le C60 en forme de ballon de football) sont des allotropes du carbone en forme de cage, formés de cycles pentagonaux et hexagonaux ; on les trouve en très faibles quantités dans la nature et ils sont surtout synthétisés en laboratoire.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Фуллерены (например, C60 в форме футбольного мяча) — каркасные аллотропные модификации углерода из пяти- и шестичленных циклов; в природе встречаются в ничтожных количествах и в основном синтезируются в лаборатории.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"الفوليرينات (مثل C60 الشبيه بكرة القدم) متآصلات كربونية قفصية البنية تتكون من حلقات خماسية وسداسية؛ توجد في الطبيعة بكميات ضئيلة جدًا وتُحضّر غالبًا في المختبر.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“富勒烯（如足球状的 C60）是由五元环和六元环构成的笼状碳同素异形体；在自然界中含量极少，主要在实验室合成。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Fullerên (mînak C60 ya bi şiklê topa futbolê) allotropên karbonê yên qefesî ne ku ji xelekên pêncgoşe û şeşgoşe pêk tên; di xwezayê de pir hindik hene û bi piranî di laboratuwarê de têne sentezkirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1356,13 +1356,13 @@ export const unit23: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "CO2 molekülü kırık doğru geometrisindedir.",
-          "en": "The CO2 molecule is in broken line geometry.",
-          "de": "Das CO2-Molekül hat eine gestrichelte Liniengeometrie.",
-          "fr": "La molécule de CO2 est en forme de ligne brisée.",
-          "ru": "Молекула CO2 имеет ломаную геометрию.",
-          "ar": "يوجد جزيء ثاني أكسيد الكربون في شكل هندسي متقطع.",
-          "zh": "CO2 分子呈折线几何形状。",
-          "ku": "Molekula CO2 di geometriya xeta şikestî de ye."
+          "en": "The CO2 molecule has a bent geometry.",
+          "de": "Das CO2-Molekül ist gewinkelt.",
+          "fr": "La molécule de CO2 a une géométrie coudée.",
+          "ru": "Молекула CO2 имеет угловую геометрию.",
+          "ar": "جزيء CO2 ذو شكل منحنٍ (زاوي).",
+          "zh": "CO2 分子呈 V 形（角形）结构。",
+          "ku": "Molekula CO2 xwedî geometriya xwar (goşeyî) ye."
         },
         {
           "tr": "İki atom arasında oluşan İLK bağ daima sigma (σ) bağıdır; sonradan oluşan ikinci ve üçüncü bağlar pi (π) bağıdır.",
@@ -1544,7 +1544,7 @@ export const unit23: ChemistryUnitSeedData = {
           "ru": "Если атом углерода образовал все одинарные связи, он имеет sp3-гибридизацию, если он образовал одну двойную связь, он имеет sp2-гибридизацию, а если он образовал одну тройную связь (или две двойные связи), он имеет sp-гибридизацию.",
           "ar": "إذا كونت ذرة الكربون كل الروابط المفردة، فإنها تكون لديها تهجين sp3، وإذا كونت رابطة مزدوجة واحدة، فإنها تكون لديها تهجين sp2، وإذا كونت رابطة ثلاثية واحدة (أو رابطتين مزدوجتين)، فإنها تكون لديها تهجين sp.",
           "zh": "如果碳原子全部形成单键，则为 sp3 杂化；如果形成 1 个双键，则为 sp2 杂化；如果形成 1 个三键（或 2 个双键），则为 sp 杂化。",
-          "ku": "Ger atoma karbonê hemû girêkên yekcar çêkiribe, wê hîbrîdîzasyona sp3, ger girêdanek ducar çêkiribe, wê hîbrîdîzasyona sp2, û ger ew girêdanek sêqalî (an jî du bend) çêkiribe, wê hîbrîdîzasyona sp heye."
+          "ku": "Heke atoma karbonê hemû girêdanên xwe yekcarî çêkiribin sp3, heke girêdanek ducarî çêkiribe sp2, heke girêdanek sêcarî (an du girêdanên ducarî) çêkiribe hîbrîdîzasyona sp kiriye."
         },
         {
           "tr": "Grafen üç boyutlu kırılgan bir yalıtkandır.",
@@ -1566,7 +1566,7 @@ export const unit23: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Если атом углерода образовал все одинарные связи, он имеет sp3-гибридизацию, если он образовал одну двойную связь, он имеет sp2-гибридизацию, а если он образовал одну тройную связь (или две двойные связи), он имеет sp-гибридизацию.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"إذا كونت ذرة الكربون كل الروابط المفردة، فإنها تكون لديها تهجين sp3، وإذا كونت رابطة مزدوجة واحدة، فإنها تكون لديها تهجين sp2، وإذا كونت رابطة ثلاثية واحدة (أو رابطتين مزدوجتين)، فإنها تكون لديها تهجين sp.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“如果碳原子全部形成单键，则为 sp3 杂化；如果形成 1 个双键，则为 sp2 杂化；如果形成 1 个三键（或 2 个双键），则为 sp 杂化。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger atoma karbonê hemû girêkên yekcar çêkiribe, wê hîbrîdîzasyona sp3, ger girêdanek ducar çêkiribe, wê hîbrîdîzasyona sp2, û ger ew girêdanek sêqalî (an jî du bend) çêkiribe, wê hîbrîdîzasyona sp heye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Heke atoma karbonê hemû girêdanên xwe yekcarî çêkiribin sp3, heke girêdanek ducarî çêkiribe sp2, heke girêdanek sêcarî (an du girêdanên ducarî) çêkiribe hîbrîdîzasyona sp kiriye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1624,25 +1624,25 @@ export const unit23: ChemistryUnitSeedData = {
         },
         {
           "tr": "VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180°'dir (örn. BeH2, CO2, C2H2).",
-          "en": "VSEPR AX2: Molecular geometry is LINEAR, bond angle is 180° (e.g. BeH2, CO2, C2H2).",
-          "de": "VSEPR AX2: Die Molekülgeometrie ist LINEAR, der Bindungswinkel beträgt 180° (z. B. BeH2, CO2, C2H2).",
-          "fr": "VSEPR AX2 : La géométrie moléculaire est LINÉAIRE, l'angle de liaison est de 180° (par exemple BeH2, CO2, C2H2).",
-          "ru": "VSEPR AX2: Молекулярная геометрия ЛИНЕЙНАЯ, валентный угол 180° (например, BeH2, CO2, C2H2).",
-          "ar": "VSEPR AX2: الهندسة الجزيئية خطية، وزاوية الرابطة 180 درجة (مثل BeH2، CO2، C2H2).",
-          "zh": "VSEPR AX2：分子几何形状为线性，键角为 180°（例如 BeH2、CO2、C2H2）。",
-          "ku": "VSEPR AX2: Geometriya molekulê XÊZÎ ye, goşeya girêdanê 180° ye (mînak: BeH2, CO2, C2H2)."
+          "en": "VSEPR AX2: molecular geometry is LINEAR, bond angle 180° (e.g., BeH2, CO2, C2H2).",
+          "de": "VSEPR AX2: Die Molekülgeometrie ist LINEAR, Bindungswinkel 180° (z. B. BeH2, CO2, C2H2).",
+          "fr": "VSEPR AX2 : géométrie moléculaire LINÉAIRE, angle de liaison 180° (par ex. BeH2, CO2, C2H2).",
+          "ru": "VSEPR AX2: геометрия молекулы ЛИНЕЙНАЯ, валентный угол 180° (например, BeH2, CO2, C2H2).",
+          "ar": "VSEPR AX2: الشكل الجزيئي خطي، وزاوية الرابطة 180° (مثل BeH2 و CO2 و C2H2).",
+          "zh": "VSEPR AX2：分子构型为直线形，键角 180°（如 BeH2、CO2、C2H2）。",
+          "ku": "VSEPR AX2: geometriya molekulê XÊZIKÎ ye, goşeya girêdanê 180° ye (mînak BeH2, CO2, C2H2)."
         }
       ],
       "correctIndex": 4,
       "explanation": {
         "tr": "Doğru cevap \"VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180°'dir (örn. BeH2, CO2, C2H2).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"VSEPR AX2: Molecular geometry is LINEAR, bond angle is 180° (e.g. BeH2, CO2, C2H2).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"VSEPR AX2: Die Molekülgeometrie ist LINEAR, der Bindungswinkel beträgt 180° (z. B. BeH2, CO2, C2H2).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"VSEPR AX2 : La géométrie moléculaire est LINÉAIRE, l'angle de liaison est de 180° (par exemple BeH2, CO2, C2H2).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «VSEPR AX2: Молекулярная геометрия ЛИНЕЙНАЯ, валентный угол 180° (например, BeH2, CO2, C2H2).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"VSEPR AX2: الهندسة الجزيئية خطية، وزاوية الرابطة 180 درجة (مثل BeH2، CO2، C2H2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“VSEPR AX2：分子几何形状为线性，键角为 180°（例如 BeH2、CO2、C2H2）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"VSEPR AX2: Geometriya molekulê XÊZÎ ye, goşeya girêdanê 180° ye (mînak: BeH2, CO2, C2H2).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"VSEPR AX2: molecular geometry is LINEAR, bond angle 180° (e.g., BeH2, CO2, C2H2).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"VSEPR AX2: Die Molekülgeometrie ist LINEAR, Bindungswinkel 180° (z. B. BeH2, CO2, C2H2).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"VSEPR AX2 : géométrie moléculaire LINÉAIRE, angle de liaison 180° (par ex. BeH2, CO2, C2H2).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «VSEPR AX2: геометрия молекулы ЛИНЕЙНАЯ, валентный угол 180° (например, BeH2, CO2, C2H2).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"VSEPR AX2: الشكل الجزيئي خطي، وزاوية الرابطة 180° (مثل BeH2 و CO2 و C2H2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“VSEPR AX2：分子构型为直线形，键角 180°（如 BeH2、CO2、C2H2）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"VSEPR AX2: geometriya molekulê XÊZIKÎ ye, goşeya girêdanê 180° ye (mînak BeH2, CO2, C2H2).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1660,13 +1660,13 @@ export const unit23: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120°'dir (örn. BH3, BF3, SO3).",
-          "en": "VSEPR AX3: Molecular geometry is PLANE TRIANGLE, bond angle is 120° (e.g. BH3, BF3, SO3).",
-          "de": "VSEPR AX3: Die Molekülgeometrie ist ein ebenes Dreieck, der Bindungswinkel beträgt 120° (z. B. BH3, BF3, SO3).",
-          "fr": "VSEPR AX3 : La géométrie moléculaire est un TRIANGLE PLAN, l'angle de liaison est de 120° (par exemple BH3, BF3, SO3).",
-          "ru": "VSEPR AX3: Молекулярная геометрия — ПЛОСКИЙ ТРЕУГОЛЬНИК, валентный угол — 120° (например, BH3, BF3, SO3).",
-          "ar": "VSEPR AX3: الهندسة الجزيئية هي مثلث مسطح، زاوية الرابطة هي 120 درجة (على سبيل المثال BH3، BF3، SO3).",
-          "zh": "VSEPR AX3：分子几何形状为平面三角形，键角为120°（例如BH3、BF3、SO3）。",
-          "ku": "VSEPR AX3: Erdometriya molekulî SÊGOŞA PALÎN e, goşeya girêdanê 120° ye (mînak BH3, BF3, SO3)."
+          "en": "VSEPR AX3: molecular geometry is TRIGONAL PLANAR, bond angle 120° (e.g., BH3, BF3, SO3).",
+          "de": "VSEPR AX3: Die Molekülgeometrie ist TRIGONAL-PLANAR, Bindungswinkel 120° (z. B. BH3, BF3, SO3).",
+          "fr": "VSEPR AX3 : géométrie moléculaire TRIGONALE PLANE, angle de liaison 120° (par ex. BH3, BF3, SO3).",
+          "ru": "VSEPR AX3: геометрия молекулы ПЛОСКАЯ ТРЕУГОЛЬНАЯ, валентный угол 120° (например, BH3, BF3, SO3).",
+          "ar": "VSEPR AX3: الشكل الجزيئي مثلث مستوٍ، وزاوية الرابطة 120° (مثل BH3 و BF3 و SO3).",
+          "zh": "VSEPR AX3：分子构型为平面三角形，键角 120°（如 BH3、BF3、SO3）。",
+          "ku": "VSEPR AX3: geometriya molekulê SÊGOŞEYA DÛZ e, goşeya girêdanê 120° ye (mînak BH3, BF3, SO3)."
         },
         {
           "tr": "H2O molekülü doğrusal geometride apolardır.",
@@ -1712,13 +1712,13 @@ export const unit23: ChemistryUnitSeedData = {
       "correctIndex": 0,
       "explanation": {
         "tr": "Doğru cevap \"VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120°'dir (örn. BH3, BF3, SO3).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"VSEPR AX3: Molecular geometry is PLANE TRIANGLE, bond angle is 120° (e.g. BH3, BF3, SO3).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"VSEPR AX3: Die Molekülgeometrie ist ein ebenes Dreieck, der Bindungswinkel beträgt 120° (z. B. BH3, BF3, SO3).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"VSEPR AX3 : La géométrie moléculaire est un TRIANGLE PLAN, l'angle de liaison est de 120° (par exemple BH3, BF3, SO3).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «VSEPR AX3: Молекулярная геометрия — ПЛОСКИЙ ТРЕУГОЛЬНИК, валентный угол — 120° (например, BH3, BF3, SO3).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"VSEPR AX3: الهندسة الجزيئية هي مثلث مسطح، زاوية الرابطة هي 120 درجة (على سبيل المثال BH3، BF3، SO3).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“VSEPR AX3：分子几何形状为平面三角形，键角为120°（例如BH3、BF3、SO3）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"VSEPR AX3: Erdometriya molekulî SÊGOŞA PALÎN e, goşeya girêdanê 120° ye (mînak BH3, BF3, SO3).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"VSEPR AX3: molecular geometry is TRIGONAL PLANAR, bond angle 120° (e.g., BH3, BF3, SO3).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"VSEPR AX3: Die Molekülgeometrie ist TRIGONAL-PLANAR, Bindungswinkel 120° (z. B. BH3, BF3, SO3).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"VSEPR AX3 : géométrie moléculaire TRIGONALE PLANE, angle de liaison 120° (par ex. BH3, BF3, SO3).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «VSEPR AX3: геометрия молекулы ПЛОСКАЯ ТРЕУГОЛЬНАЯ, валентный угол 120° (например, BH3, BF3, SO3).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"VSEPR AX3: الشكل الجزيئي مثلث مستوٍ، وزاوية الرابطة 120° (مثل BH3 و BF3 و SO3).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“VSEPR AX3：分子构型为平面三角形，键角 120°（如 BH3、BF3、SO3）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"VSEPR AX3: geometriya molekulê SÊGOŞEYA DÛZ e, goşeya girêdanê 120° ye (mînak BH3, BF3, SO3).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1745,14 +1745,14 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Hejmara pêkhateyên înorganîk ji pêkhateyên organîk gelek zêdetir e."
         },
         {
-          "tr": "VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5°'dir (örn. CH4, CCl4).",
-          "en": "VSEPR AX4: Molecular geometry is REGULAR TETATHEDRAL, bond angle is 109.5° (e.g. CH4, CCl4).",
-          "de": "VSEPR AX4: Die Molekülgeometrie ist REGELMÄßIG TETATHEDRAL, der Bindungswinkel beträgt 109,5° (z. B. CH4, CCl4).",
-          "fr": "VSEPR AX4 : La géométrie moléculaire est RÉGULIÈRE TÉTATHÉDRALE, l'angle de liaison est de 109,5° (par exemple CH4, CCl4).",
-          "ru": "VSEPR AX4: Молекулярная геометрия ПРАВИЛЬНАЯ ТЕТАТЕДРАЛЬНАЯ, валентный угол 109,5° (например, CH4, CCl4).",
-          "ar": "VSEPR AX4: الهندسة الجزيئية هي رباعية السطوح العادية، وزاوية الرابطة هي 109.5 درجة (على سبيل المثال CH4، CCl4).",
-          "zh": "VSEPR AX4：分子几何形状为规则四面体，键角为 109.5°（例如 CH4、CCl4）。",
-          "ku": "VSEPR AX4: Geometrîya molekular TETATEDRA REQULAR e, goşeya girêdanê 109,5° ye (mînak CH4, CCl4)."
+          "tr": "VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109,5°'dir (örn. CH4, CCl4).",
+          "en": "VSEPR AX4: molecular geometry is TETRAHEDRAL, bond angle 109.5° (e.g., CH4, CCl4).",
+          "de": "VSEPR AX4: Die Molekülgeometrie ist TETRAEDRISCH, Bindungswinkel 109,5° (z. B. CH4, CCl4).",
+          "fr": "VSEPR AX4 : géométrie moléculaire TÉTRAÉDRIQUE, angle de liaison 109,5° (par ex. CH4, CCl4).",
+          "ru": "VSEPR AX4: геометрия молекулы ТЕТРАЭДРИЧЕСКАЯ, валентный угол 109,5° (например, CH4, CCl4).",
+          "ar": "VSEPR AX4: الشكل الجزيئي رباعي أوجه منتظم، وزاوية الرابطة 109.5° (مثل CH4 و CCl4).",
+          "zh": "VSEPR AX4：分子构型为正四面体，键角 109.5°（如 CH4、CCl4）。",
+          "ku": "VSEPR AX4: geometriya molekulê ÇARRÛYA RÊKÛPÊK e, goşeya girêdanê 109,5° ye (mînak CH4, CCl4)."
         },
         {
           "tr": "Karbon atomu bileşiklerinde en fazla 2 kovalent bağ yapabilir.",
@@ -1777,24 +1777,24 @@ export const unit23: ChemistryUnitSeedData = {
         {
           "tr": "Pi bağları sigma bağlarından çok daha güçlüdür.",
           "en": "Pi bonds are much stronger than sigma bonds.",
-          "de": "Pi-Anleihen sind viel stärker als Sigma-Anleihen.",
+          "de": "Pi-Bindungen sind viel stärker als Sigma-Bindungen.",
           "fr": "Les liaisons Pi sont beaucoup plus fortes que les liaisons sigma.",
-          "ru": "Пи-связи намного прочнее сигма-облигаций.",
+          "ru": "Пи-связи намного прочнее сигма-связей.",
           "ar": "روابط باي أقوى بكثير من روابط سيجما.",
           "zh": "Pi 键比 Sigma 键强得多。",
-          "ku": "Girêdanên pi ji bendên sigma pir xurttir in."
+          "ku": "Girêdanên pî ji girêdanên sigma pir xurttir in."
         }
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5°'dir (örn. CH4, CCl4).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"VSEPR AX4: Molecular geometry is REGULAR TETATHEDRAL, bond angle is 109.5° (e.g. CH4, CCl4).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"VSEPR AX4: Die Molekülgeometrie ist REGELMÄßIG TETATHEDRAL, der Bindungswinkel beträgt 109,5° (z. B. CH4, CCl4).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"VSEPR AX4 : La géométrie moléculaire est RÉGULIÈRE TÉTATHÉDRALE, l'angle de liaison est de 109,5° (par exemple CH4, CCl4).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «VSEPR AX4: Молекулярная геометрия ПРАВИЛЬНАЯ ТЕТАТЕДРАЛЬНАЯ, валентный угол 109,5° (например, CH4, CCl4).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"VSEPR AX4: الهندسة الجزيئية هي رباعية السطوح العادية، وزاوية الرابطة هي 109.5 درجة (على سبيل المثال CH4، CCl4).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“VSEPR AX4：分子几何形状为规则四面体，键角为 109.5°（例如 CH4、CCl4）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"VSEPR AX4: Geometrîya molekular TETATEDRA REQULAR e, goşeya girêdanê 109,5° ye (mînak CH4, CCl4).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109,5°'dir (örn. CH4, CCl4).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"VSEPR AX4: molecular geometry is TETRAHEDRAL, bond angle 109.5° (e.g., CH4, CCl4).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"VSEPR AX4: Die Molekülgeometrie ist TETRAEDRISCH, Bindungswinkel 109,5° (z. B. CH4, CCl4).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"VSEPR AX4 : géométrie moléculaire TÉTRAÉDRIQUE, angle de liaison 109,5° (par ex. CH4, CCl4).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «VSEPR AX4: геометрия молекулы ТЕТРАЭДРИЧЕСКАЯ, валентный угол 109,5° (например, CH4, CCl4).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"VSEPR AX4: الشكل الجزيئي رباعي أوجه منتظم، وزاوية الرابطة 109.5° (مثل CH4 و CCl4).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“VSEPR AX4：分子构型为正四面体，键角 109.5°（如 CH4、CCl4）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"VSEPR AX4: geometriya molekulê ÇARRÛYA RÊKÛPÊK e, goşeya girêdanê 109,5° ye (mînak CH4, CCl4).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1831,14 +1831,14 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Elmas elektrîkê pir baş derbas dike û wek grafît nerm e."
         },
         {
-          "tr": "VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3°'dir (örn. NH3); molekül polardır.",
-          "en": "VSEPR AX3E: Molecular geometry TRIANGULAR PYRAMID, bond angle is 107.3° (e.g. NH3); The molecule is polar.",
-          "de": "VSEPR AX3E: Molekülgeometrie DREIECKIGE PYRAMIDE, Bindungswinkel beträgt 107,3° (z. B. NH3); Das Molekül ist polar.",
-          "fr": "VSEPR AX3E : PYRAMIDE TRIANGULAIRE à géométrie moléculaire, l'angle de liaison est de 107,3° (par exemple NH3) ; La molécule est polaire.",
-          "ru": "VSEPR AX3E: Молекулярная геометрия ТРЕУГОЛЬНАЯ ПИРАМИДА, валентный угол 107,3° (например, NH3); Молекула полярна.",
-          "ar": "VSEPR AX3E: الهندسة الجزيئية الهرم الثلاثي، زاوية الرابطة هي 107.3 درجة (على سبيل المثال NH3)؛ الجزيء قطبي.",
-          "zh": "VSEPR AX3E：分子几何三角锥，键角为107.3°（例如NH3）；该分子是极性的。",
-          "ku": "VSEPR AX3E: PÎRAMIYA SÊ GOŞÎ ya geometriya molekular, goşeya girêdanê 107,3° ye (mînak NH3); Molekul polar e."
+          "tr": "VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107,3°'dir (örn. NH3); molekül polardır.",
+          "en": "VSEPR AX3E: molecular geometry is TRIGONAL PYRAMIDAL, bond angle 107.3° (e.g., NH3); the molecule is polar.",
+          "de": "VSEPR AX3E: Die Molekülgeometrie ist TRIGONAL-PYRAMIDAL, Bindungswinkel 107,3° (z. B. NH3); das Molekül ist polar.",
+          "fr": "VSEPR AX3E : géométrie moléculaire PYRAMIDALE TRIGONALE, angle de liaison 107,3° (par ex. NH3) ; la molécule est polaire.",
+          "ru": "VSEPR AX3E: геометрия молекулы ТРИГОНАЛЬНАЯ ПИРАМИДА, валентный угол 107,3° (например, NH3); молекула полярна.",
+          "ar": "VSEPR AX3E: الشكل الجزيئي هرم ثلاثي، وزاوية الرابطة 107.3° (مثل NH3)؛ والجزيء قطبي.",
+          "zh": "VSEPR AX3E：分子构型为三角锥形，键角 107.3°（如 NH3）；分子有极性。",
+          "ku": "VSEPR AX3E: geometriya molekulê PÎRAMÎDA SÊGOŞE ye, goşeya girêdanê 107,3° ye (mînak NH3); molekul polar e."
         },
         {
           "tr": "Fullerenler doğada madenlerde kristal halde bolca bulunur.",
@@ -1863,14 +1863,14 @@ export const unit23: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3°'dir (örn. NH3); molekül polardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"VSEPR AX3E: Molecular geometry TRIANGULAR PYRAMID, bond angle is 107.3° (e.g. NH3); The molecule is polar.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"VSEPR AX3E: Molekülgeometrie DREIECKIGE PYRAMIDE, Bindungswinkel beträgt 107,3° (z. B. NH3); Das Molekül ist polar.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"VSEPR AX3E : PYRAMIDE TRIANGULAIRE à géométrie moléculaire, l'angle de liaison est de 107,3° (par exemple NH3) ; La molécule est polaire.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «VSEPR AX3E: Молекулярная геометрия ТРЕУГОЛЬНАЯ ПИРАМИДА, валентный угол 107,3° (например, NH3); Молекула полярна.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"VSEPR AX3E: الهندسة الجزيئية الهرم الثلاثي، زاوية الرابطة هي 107.3 درجة (على سبيل المثال NH3)؛ الجزيء قطبي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“VSEPR AX3E：分子几何三角锥，键角为107.3°（例如NH3）；该分子是极性的。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"VSEPR AX3E: PÎRAMIYA SÊ GOŞÎ ya geometriya molekular, goşeya girêdanê 107,3° ye (mînak NH3); Molekul polar e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107,3°'dir (örn. NH3); molekül polardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"VSEPR AX3E: molecular geometry is TRIGONAL PYRAMIDAL, bond angle 107.3° (e.g., NH3); the molecule is polar.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"VSEPR AX3E: Die Molekülgeometrie ist TRIGONAL-PYRAMIDAL, Bindungswinkel 107,3° (z. B. NH3); das Molekül ist polar.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"VSEPR AX3E : géométrie moléculaire PYRAMIDALE TRIGONALE, angle de liaison 107,3° (par ex. NH3) ; la molécule est polaire.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «VSEPR AX3E: геометрия молекулы ТРИГОНАЛЬНАЯ ПИРАМИДА, валентный угол 107,3° (например, NH3); молекула полярна.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"VSEPR AX3E: الشكل الجزيئي هرم ثلاثي، وزاوية الرابطة 107.3° (مثل NH3)؛ والجزيء قطبي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“VSEPR AX3E：分子构型为三角锥形，键角 107.3°（如 NH3）；分子有极性。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"VSEPR AX3E: geometriya molekulê PÎRAMÎDA SÊGOŞE ye, goşeya girêdanê 107,3° ye (mînak NH3); molekul polar e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1917,36 +1917,36 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Pêşîn, girêdanek pi di navbera du atoman de tê saz kirin."
         },
         {
-          "tr": "VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5°'dir (örn. H2O); molekül polardır.",
-          "en": "VSEPR AX2E2: Molecular geometry BROKEN CORRECT (angular), bond angle is 104.5° (e.g. H2O); The molecule is polar.",
-          "de": "VSEPR AX2E2: Molekülgeometrie korrekt gebrochen (eckig), Bindungswinkel beträgt 104,5° (z. B. H2O); Das Molekül ist polar.",
-          "fr": "VSEPR AX2E2 : Géométrie moléculaire CASSÉE CORRECT (angulaire), l'angle de liaison est de 104,5° (par exemple H2O) ; La molécule est polaire.",
-          "ru": "VSEPR AX2E2: Молекулярная геометрия НАРУШЕНА ПРАВИЛЬНО (угловая), валентный угол 104,5° (например, H2O); Молекула полярна.",
-          "ar": "VSEPR AX2E2: الهندسة الجزيئية صحيحة ومكسورة (زاوي)، زاوية الرابطة هي 104.5 درجة (على سبيل المثال H2O)؛ الجزيء قطبي.",
-          "zh": "VSEPR AX2E2：分子几何形状不正确（有角度），键角为 104.5°（例如 H2O）；该分子是极性的。",
-          "ku": "VSEPR AX2E2: Geometrîya molekulî BIŞKEVE ÇALAKÎ (goşeyî), goşeya girêdanê 104,5° ye (mînak H2O); Molekul polar e."
+          "tr": "VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104,5°'dir (örn. H2O); molekül polardır.",
+          "en": "VSEPR AX2E2: molecular geometry is BENT (angular), bond angle 104.5° (e.g., H2O); the molecule is polar.",
+          "de": "VSEPR AX2E2: Die Molekülgeometrie ist GEWINKELT, Bindungswinkel 104,5° (z. B. H2O); das Molekül ist polar.",
+          "fr": "VSEPR AX2E2 : géométrie moléculaire COUDÉE (angulaire), angle de liaison 104,5° (par ex. H2O) ; la molécule est polaire.",
+          "ru": "VSEPR AX2E2: геометрия молекулы УГЛОВАЯ, валентный угол 104,5° (например, H2O); молекула полярна.",
+          "ar": "VSEPR AX2E2: الشكل الجزيئي منحنٍ (زاوي)، وزاوية الرابطة 104.5° (مثل H2O)؛ والجزيء قطبي.",
+          "zh": "VSEPR AX2E2：分子构型为 V 形（角形），键角 104.5°（如 H2O）；分子有极性。",
+          "ku": "VSEPR AX2E2: geometriya molekulê XWAR (goşeyî) e, goşeya girêdanê 104,5° ye (mînak H2O); molekul polar e."
         },
         {
           "tr": "CO2 molekülü kırık doğru geometrisindedir.",
-          "en": "The CO2 molecule is in broken line geometry.",
-          "de": "Das CO2-Molekül hat eine gestrichelte Liniengeometrie.",
-          "fr": "La molécule de CO2 est en forme de ligne brisée.",
-          "ru": "Молекула CO2 имеет ломаную геометрию.",
-          "ar": "يوجد جزيء ثاني أكسيد الكربون في شكل هندسي متقطع.",
-          "zh": "CO2 分子呈折线几何形状。",
-          "ku": "Molekula CO2 di geometriya xeta şikestî de ye."
+          "en": "The CO2 molecule has a bent geometry.",
+          "de": "Das CO2-Molekül ist gewinkelt.",
+          "fr": "La molécule de CO2 a une géométrie coudée.",
+          "ru": "Молекула CO2 имеет угловую геометрию.",
+          "ar": "جزيء CO2 ذو شكل منحنٍ (زاوي).",
+          "zh": "CO2 分子呈 V 形（角形）结构。",
+          "ku": "Molekula CO2 xwedî geometriya xwar (goşeyî) ye."
         }
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5°'dir (örn. H2O); molekül polardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"VSEPR AX2E2: Molecular geometry BROKEN CORRECT (angular), bond angle is 104.5° (e.g. H2O); The molecule is polar.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"VSEPR AX2E2: Molekülgeometrie korrekt gebrochen (eckig), Bindungswinkel beträgt 104,5° (z. B. H2O); Das Molekül ist polar.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"VSEPR AX2E2 : Géométrie moléculaire CASSÉE CORRECT (angulaire), l'angle de liaison est de 104,5° (par exemple H2O) ; La molécule est polaire.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «VSEPR AX2E2: Молекулярная геометрия НАРУШЕНА ПРАВИЛЬНО (угловая), валентный угол 104,5° (например, H2O); Молекула полярна.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"VSEPR AX2E2: الهندسة الجزيئية صحيحة ومكسورة (زاوي)، زاوية الرابطة هي 104.5 درجة (على سبيل المثال H2O)؛ الجزيء قطبي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“VSEPR AX2E2：分子几何形状不正确（有角度），键角为 104.5°（例如 H2O）；该分子是极性的。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"VSEPR AX2E2: Geometrîya molekulî BIŞKEVE ÇALAKÎ (goşeyî), goşeya girêdanê 104,5° ye (mînak H2O); Molekul polar e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104,5°'dir (örn. H2O); molekül polardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"VSEPR AX2E2: molecular geometry is BENT (angular), bond angle 104.5° (e.g., H2O); the molecule is polar.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"VSEPR AX2E2: Die Molekülgeometrie ist GEWINKELT, Bindungswinkel 104,5° (z. B. H2O); das Molekül ist polar.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"VSEPR AX2E2 : géométrie moléculaire COUDÉE (angulaire), angle de liaison 104,5° (par ex. H2O) ; la molécule est polaire.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «VSEPR AX2E2: геометрия молекулы УГЛОВАЯ, валентный угол 104,5° (например, H2O); молекула полярна.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"VSEPR AX2E2: الشكل الجزيئي منحنٍ (زاوي)، وزاوية الرابطة 104.5° (مثل H2O)؛ والجزيء قطبي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“VSEPR AX2E2：分子构型为 V 形（角形），键角 104.5°（如 H2O）；分子有极性。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"VSEPR AX2E2: geometriya molekulê XWAR (goşeyî) e, goşeya girêdanê 104,5° ye (mînak H2O); molekul polar e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1985,12 +1985,12 @@ export const unit23: ChemistryUnitSeedData = {
         {
           "tr": "Pi bağları sigma bağlarından çok daha güçlüdür.",
           "en": "Pi bonds are much stronger than sigma bonds.",
-          "de": "Pi-Anleihen sind viel stärker als Sigma-Anleihen.",
+          "de": "Pi-Bindungen sind viel stärker als Sigma-Bindungen.",
           "fr": "Les liaisons Pi sont beaucoup plus fortes que les liaisons sigma.",
-          "ru": "Пи-связи намного прочнее сигма-облигаций.",
+          "ru": "Пи-связи намного прочнее сигма-связей.",
           "ar": "روابط باي أقوى بكثير من روابط سيجما.",
           "zh": "Pi 键比 Sigma 键强得多。",
-          "ku": "Girêdanên pi ji bendên sigma pir xurttir in."
+          "ku": "Girêdanên pî ji girêdanên sigma pir xurttir in."
         },
         {
           "tr": "BF3 molekülü düzgün dörtyüzlüdür.",
@@ -2003,26 +2003,26 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Molekula BF3 tetrahedronek asayî ye."
         },
         {
-          "tr": "Organik bileşiklerin ana kaynağı genellikle canlılar ve fosil yakıtlardır; anorganik bileşikler minerallerdir.",
-          "en": "The main sources of organic compounds are generally living things and fossil fuels; inorganic compounds are minerals.",
-          "de": "Die Hauptquellen organischer Verbindungen sind im Allgemeinen Lebewesen und fossile Brennstoffe; Anorganische Verbindungen sind Mineralien.",
-          "fr": "Les principales sources de composés organiques sont généralement les êtres vivants et les combustibles fossiles ; les composés inorganiques sont des minéraux.",
-          "ru": "Основными источниками органических соединений обычно являются живые существа и ископаемое топливо; неорганические соединения – минералы.",
-          "ar": "المصادر الرئيسية للمركبات العضوية هي الكائنات الحية والوقود الأحفوري؛ المركبات غير العضوية هي المعادن.",
-          "zh": "有机化合物的主要来源一般是生物和化石燃料；无机化合物是矿物质。",
-          "ku": "Çavkaniyên sereke yên pêkhateyên organîk bi giştî zindî û sotemeniyên fosîl in; pêkhateyên neorganîk mîneral in."
+          "tr": "Organik bileşiklerin ana kaynağı genellikle canlılar ve fosil yakıtlardır; anorganik bileşiklerin kaynağı ise çoğunlukla mineraller ve cansız doğadır.",
+          "en": "The main sources of organic compounds are generally living things and fossil fuels, whereas inorganic compounds come mostly from minerals and non-living nature.",
+          "de": "Hauptquellen organischer Verbindungen sind im Allgemeinen Lebewesen und fossile Brennstoffe; anorganische Verbindungen stammen überwiegend aus Mineralien und der unbelebten Natur.",
+          "fr": "Les principales sources des composés organiques sont généralement les êtres vivants et les combustibles fossiles ; les composés inorganiques proviennent surtout des minéraux et de la nature inerte.",
+          "ru": "Основными источниками органических соединений обычно являются живые организмы и ископаемое топливо; неорганические соединения получают в основном из минералов и неживой природы.",
+          "ar": "المصادر الرئيسية للمركبات العضوية هي غالبًا الكائنات الحية والوقود الأحفوري، أما المركبات غير العضوية فمصدرها في الغالب المعادن والطبيعة غير الحية.",
+          "zh": "有机化合物的主要来源通常是生物体和化石燃料；无机化合物则主要来自矿物和非生物界。",
+          "ku": "Çavkaniya sereke ya pêkhateyên organîk bi gelemperî zindî û sotemeniyên fosîl in; çavkaniya pêkhateyên anorganîk jî bi piranî mîneral û xwezaya nezindî ye."
         }
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Organik bileşiklerin ana kaynağı genellikle canlılar ve fosil yakıtlardır; anorganik bileşikler minerallerdir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The main sources of organic compounds are generally living things and fossil fuels; inorganic compounds are minerals.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die Hauptquellen organischer Verbindungen sind im Allgemeinen Lebewesen und fossile Brennstoffe; Anorganische Verbindungen sind Mineralien.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les principales sources de composés organiques sont généralement les êtres vivants et les combustibles fossiles ; les composés inorganiques sont des minéraux.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Основными источниками органических соединений обычно являются живые существа и ископаемое топливо; неорганические соединения – минералы.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"المصادر الرئيسية للمركبات العضوية هي الكائنات الحية والوقود الأحفوري؛ المركبات غير العضوية هي المعادن.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“有机化合物的主要来源一般是生物和化石燃料；无机化合物是矿物质。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Çavkaniyên sereke yên pêkhateyên organîk bi giştî zindî û sotemeniyên fosîl in; pêkhateyên neorganîk mîneral in.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Organik bileşiklerin ana kaynağı genellikle canlılar ve fosil yakıtlardır; anorganik bileşiklerin kaynağı ise çoğunlukla mineraller ve cansız doğadır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"The main sources of organic compounds are generally living things and fossil fuels, whereas inorganic compounds come mostly from minerals and non-living nature.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Hauptquellen organischer Verbindungen sind im Allgemeinen Lebewesen und fossile Brennstoffe; anorganische Verbindungen stammen überwiegend aus Mineralien und der unbelebten Natur.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les principales sources des composés organiques sont généralement les êtres vivants et les combustibles fossiles ; les composés inorganiques proviennent surtout des minéraux et de la nature inerte.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Основными источниками органических соединений обычно являются живые организмы и ископаемое топливо; неорганические соединения получают в основном из минералов и неживой природы.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"المصادر الرئيسية للمركبات العضوية هي غالبًا الكائنات الحية والوقود الأحفوري، أما المركبات غير العضوية فمصدرها في الغالب المعادن والطبيعة غير الحية.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“有机化合物的主要来源通常是生物体和化石燃料；无机化合物则主要来自矿物和非生物界。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Çavkaniya sereke ya pêkhateyên organîk bi gelemperî zindî û sotemeniyên fosîl in; çavkaniya pêkhateyên anorganîk jî bi piranî mîneral û xwezaya nezindî ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {

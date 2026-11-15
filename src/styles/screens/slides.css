@@ -1,0 +1,421 @@
+/* ==========================================================================
+   Unit slide deck modal + chemical diagram chrome  (Obsidian Lab Glass)
+   ========================================================================== */
+
+/* ---- Slides: immersive reading screen (header / one reading area / footer) */
+.sl-top {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.sl-top__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-inline-size: 0;
+}
+
+.sl-segs {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 4px;
+  margin-block: -16px -18px;
+}
+
+.sl-seg {
+  min-block-size: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sl-seg > span {
+  display: block;
+  inline-size: 100%;
+  block-size: 6px;
+  border-radius: 999px;
+  background: var(--raised);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+.sl-seg.on > span { background: var(--accent); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45); }
+
+.sl-pane { padding-block-start: 10px; animation: kyPop2 0.3s var(--ease-out) both; }
+
+.sl-main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-inline-size: 0;
+}
+
+.sl-head .ky-chip { margin: 0; }
+
+.sl-title {
+  margin: 12px 0 0;
+  font-weight: 800;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+
+.sl-quote {
+  margin: 0;
+  padding: 18px 20px;
+  border-radius: 20px;
+  border-inline-start: 4px solid var(--accent);
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.sl-block {
+  padding: 16px 18px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-inline-size: 0;
+}
+
+.sl-block > * { max-inline-size: 100%; }
+.sl-block__title { margin: 0; font-weight: 700; line-height: 1.25; }
+.sl-block__text { margin: 0; color: var(--text2); line-height: 1.5; }
+.sl-block__strong { margin: 0; font-weight: 600; line-height: 1.45; color: var(--text); }
+
+.sl-points {
+  margin: 0;
+  padding-inline-start: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.sl-points li::marker { color: var(--accent); }
+
+/* Formula on its own line, note under it */
+.sl-formula {
+  padding: 16px 18px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sl-formula__label {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.sl-formula__eq {
+  margin: 0;
+  font-family: var(--font-formula);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.sl-formula__eq bdi { display: inline; }
+.sl-formula__note { margin: 0; color: var(--text2); line-height: 1.45; }
+
+/* Exam trap as its own block */
+.sl-trap {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: var(--bad-soft);
+  border: 1px solid var(--bad);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sl-trap p { margin: 0; }
+.sl-trap__title, .sl-truth__title { display: flex; align-items: center; gap: 6px; font-weight: 800; }
+.sl-trap__title { color: var(--bad); }
+.sl-truth__title { color: var(--ok); margin-block-start: 8px !important; }
+.sl-trap__text, .sl-truth__text { line-height: 1.5; color: var(--text); }
+
+.sl-tip {
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  color: var(--text2);
+  line-height: 1.45;
+}
+
+.sl-tip svg { color: var(--gold); flex: none; margin-block-start: 2px; }
+
+.sl-diagram {
+  position: relative;
+  padding: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sl-diagram .chemical-diagram-container { margin: 0; }
+
+.sl-zoom-btn {
+  position: absolute;
+  inset-inline-end: 10px;
+  top: 10px;
+  min-block-size: 36px;
+}
+/* Keep the 36px chip look but give it a 44px hit area */
+.sl-zoom-btn::after { content: ''; position: absolute; inset: -4px; }
+
+.sl-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  inline-size: 100%;
+}
+
+.sl-step {
+  inline-size: 100%;
+  min-block-size: 52px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--raised);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: start;
+  font: inherit;
+  cursor: pointer;
+}
+
+.sl-step.on { border-color: var(--accent); background: var(--accent-soft); }
+
+.sl-step__n {
+  inline-size: 30px;
+  block-size: 30px;
+  flex: none;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  background: var(--surface);
+  color: var(--text2);
+  border: 1px solid var(--line);
+}
+
+.sl-step.on .sl-step__n { background: var(--accent); color: var(--on-accent); border-color: transparent; }
+.sl-step__text { line-height: 1.4; }
+
+.sl-vs { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.sl-vs .ky-chip { white-space: normal; min-block-size: 32px; line-height: 1.2; padding-block: 4px; }
+
+.sl-vs__pill {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.sl-recall-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.sl-recall-head p { flex: 1 1 200px; }
+.sl-recall.is-right { border-color: var(--ok); }
+.sl-recall.is-wrong { border-color: var(--bad); }
+.sl-recall__n { font-size: 0.75rem; font-weight: 800; color: var(--muted); }
+
+.sl-recall__btns {
+  display: flex;
+  gap: 10px;
+  inline-size: 100%;
+}
+
+.sl-recall__btns .ky-btn { flex: 1 1 0; }
+.sl-recall__fb p { margin: 0; }
+.sl-ok { color: var(--ok); font-weight: 700; display: flex; align-items: center; gap: 6px; }
+.sl-bad { color: var(--bad); font-weight: 700; display: flex; align-items: center; gap: 6px; }
+
+.sl-twin-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  inline-size: 100%;
+}
+
+.sl-twin-next { min-block-size: 36px; }
+
+.sl-twin-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  inline-size: 100%;
+}
+
+.sl-twin-opts .ky-opt { min-block-size: 56px; padding: 10px 14px; }
+.sl-opt-text { flex: 1; font-weight: 600; line-height: 1.35; }
+
+.sl-solution {
+  inline-size: 100%;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: var(--accent-soft);
+  border: 1px solid var(--line-strong);
+}
+
+.sl-solution p { margin: 0; line-height: 1.5; color: var(--text); }
+.sl-done { align-self: flex-start; }
+
+.sl-prev { flex: none; padding: 0 18px; min-block-size: 56px; }
+.sl-next { min-block-size: 56px; font-size: 1.06rem; }
+[dir="rtl"] .sl-flip { transform: scaleX(-1); }
+
+/* ---- Diagram zoom dialog (inside deck) -------------------------------- */
+.sd-zoom {
+  padding: 0;
+  margin: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--bg);
+  color: var(--text);
+  inline-size: min(96vw, 960px);
+  max-block-size: 92dvh;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 var(--hi), var(--shadow-pop);
+}
+
+.sd-zoom:not([open]) { display: none; }
+.sd-zoom::backdrop { background: var(--scrim); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.sd-zoom-card { display: flex; flex-direction: column; max-block-size: 92dvh; overflow-y: auto; }
+.sd-zoom-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border-block-end: 1px solid var(--line); }
+.sd-zoom-head h3 { margin: 0; min-inline-size: 0; font-size: 1.05rem; font-weight: 800; color: var(--text); overflow-wrap: anywhere; }
+.sd-zoom-body { padding: 14px 16px; }
+.sd-zoom-body .chemical-diagram-container { margin: 0; }
+.diagram-zoom-modal-caption { margin: 0; padding: 0 16px 16px; font-size: 0.875rem; color: var(--muted); }
+
+/* ---- Chemical diagram chrome ------------------------------------------ */
+.chemical-diagram-container {
+  display: flex;
+  flex-direction: column;
+  min-inline-size: 0;
+  max-inline-size: 100%;
+  margin-block-end: 1rem;
+  /* The figure always sits on the dark lab stage, in light and dark themes:
+     remap the legacy colour names the SVG drawings use onto stage colours. */
+  --accent-cyan: #2dd9c3;
+  --accent-amber: #f6b73c;
+  --accent-ruby: #ff6b7a;
+  --accent-emerald: #5ee6a8;
+  --accent-cyan-subtle: rgba(45, 217, 195, 0.18);
+  --accent-amber-subtle: rgba(246, 183, 60, 0.18);
+  --accent-emerald-subtle: rgba(94, 230, 168, 0.18);
+  --accent-ruby-subtle: rgba(255, 107, 122, 0.32);
+  --text-primary: #f2f6fb;
+  --text-secondary: #b4c0d0;
+  --text-muted: #9fb0c6;
+  --border-subtle: rgba(159, 176, 198, 0.32);
+  --border-strong: #93a1b5;
+  --brand-on-primary: #f2f6fb;
+  --bg-surface-elevated: #0d1626;
+  --bg-canvas: #070b14;
+}
+
+.diagram-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-block-end: 8px; }
+.diagram-title {
+  margin: 0;
+  flex: 1 1 140px;
+  min-inline-size: 0;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.diagram-zoom-toolbar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+
+.diagram-zoom-btn { color: var(--text); }
+.diagram-zoom-btn[data-role="level"] {
+  inline-size: auto;
+  min-inline-size: 56px;
+  padding-inline: 8px;
+  font-family: var(--font-formula);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.diagram-svg-wrapper {
+  inline-size: 100%;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.chemical-diagram-svg { position: relative; inline-size: 100%; max-inline-size: 100%; block-size: auto; display: block; }
+.diagram-caption { margin: 8px 0 0; font-size: 0.8rem; line-height: 1.45; color: var(--muted); }
+
+.diagram-zoom-overlay { z-index: 9999; }
+
+.diagram-zoom-card {
+  inline-size: min(100%, 960px);
+  max-block-size: 94dvh;
+  padding-block-end: env(safe-area-inset-bottom, 0px);
+}
+
+.diagram-zoom-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; border-block-end: 1px solid var(--line); }
+.diagram-zoom-header h3 { margin: 0; min-inline-size: 0; font-size: 1.05rem; font-weight: 800; color: var(--text); overflow-wrap: anywhere; }
+.diagram-zoom-body { margin: 14px 16px; padding: 8px; display: flex; justify-content: center; border-radius: 22px; overflow: hidden; }
+.zoom-svg { max-inline-size: 100%; block-size: auto; }
+.diagram-zoom-caption { margin: 0; padding: 0 16px 16px; font-size: 0.875rem; color: var(--muted); }
+
+/* Compact stage (quiz): no title/zoom row; one small expand control on the stage corner.
+   The button is a 44px hit area around a smaller glass face so it stays unobtrusive. */
+.chemical-diagram-container.is-compact .diagram-svg-wrapper { cursor: zoom-in; }
+.diagram-expand-btn {
+  position: absolute;
+  inset-block-start: 2px;
+  inset-inline-end: 2px;
+  z-index: 2;
+  inline-size: 44px;
+  block-size: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #f2f6fb;
+  cursor: pointer;
+}
+.diagram-expand-btn__face {
+  inline-size: 32px;
+  block-size: 32px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  background: rgba(7, 11, 20, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.diagram-expand-btn:hover .diagram-expand-btn__face,
+.diagram-expand-btn:focus-visible .diagram-expand-btn__face { background: rgba(45, 217, 195, 0.28); border-color: #2dd9c3; }
+.diagram-expand-btn:focus-visible { outline: none; }

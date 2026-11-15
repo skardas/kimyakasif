@@ -1,0 +1,195 @@
+/* ============================================================================
+   Cards: one big card that turns over in real 3D, unit filter, slim Leitner
+   row and two rating keys. Prefix: fc-
+   ============================================================================ */
+
+.fc-count { min-block-size: 44px; padding: 0 14px; font-size: 0.875rem; }
+
+.fc-pane { padding-block-start: 2px; }
+
+/* Stage: perspective + swipe drag wrapper + flip card */
+.fc-stage {
+  position: relative;
+  block-size: clamp(300px, 46dvh, 520px);
+  touch-action: pan-y;
+}
+
+.fc-drag {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.fc-card {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.fc-face {
+  border-radius: 28px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  box-shadow: inset 0 1px 0 var(--hi), 0 6px 0 var(--edge), var(--shadow);
+}
+
+.fc-face::-webkit-scrollbar { display: none; }
+
+.fc-face--back {
+  border-color: var(--accent);
+  box-shadow: inset 0 1px 0 var(--hi), 0 6px 0 var(--accent-deep), var(--shadow);
+}
+
+.fc-face__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex: none;
+}
+
+.fc-face__body {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  min-inline-size: 0;
+}
+
+.fc-prompt {
+  font-weight: 700;
+  line-height: 1.22;
+  overflow-wrap: anywhere;
+}
+
+.fc-answer {
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+  overflow-wrap: anywhere;
+  white-space: pre-line;
+}
+
+.fc-tip {
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: var(--gold-soft);
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.fc-tip strong { color: var(--gold); display: inline-flex; align-items: center; gap: 4px; }
+
+.fc-face__hint {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--muted);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Swipe stamps */
+.fc-stamp {
+  position: absolute;
+  top: 18px;
+  z-index: 3;
+  padding: 6px 14px;
+  border-radius: 12px;
+  border: 2px solid currentColor;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.05rem;
+  pointer-events: none;
+  background: var(--surface);
+}
+
+.fc-stamp--again { inset-inline-end: 18px; color: var(--bad); transform: rotate(8deg); }
+.fc-stamp--know { inset-inline-start: 18px; color: var(--ok); transform: rotate(-8deg); }
+
+.fc-empty { block-size: auto; padding: 32px 20px; }
+.fc-empty__title { margin: 0; font-size: 1.2rem; font-weight: 800; color: var(--text); }
+.fc-empty__txt { margin: 0; }
+
+/* Unit filter */
+.fc-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fc-unit .ky-select { min-block-size: 52px; }
+
+/* Leitner row */
+.fc-leitner__head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-block-end: 8px;
+}
+
+.fc-leitner__head .ky-eyebrow { flex: 1; }
+.fc-leitner__learned { color: var(--muted); font-weight: 600; }
+
+.fc-boxes {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.fc-box {
+  min-block-size: 52px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--raised);
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  cursor: pointer;
+  font: inherit;
+  transition: transform 0.08s ease;
+}
+
+.fc-box:active { transform: translateY(2px); }
+.fc-box.has-cards { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+.fc-box.on { background: var(--accent); color: var(--on-accent); border-color: transparent; box-shadow: 0 3px 0 var(--accent-deep); }
+.fc-box__n { font-weight: 800; line-height: 1.1; }
+.fc-box__l { font-weight: 700; opacity: 0.85; }
+
+/* Rating keys */
+.fc-rate {
+  display: flex;
+  gap: 12px;
+  padding-block-end: 6px;
+}
+
+.fc-rate .ky-btn { flex: 1 1 0; min-block-size: 56px; font-size: 1.02rem; }
+
+.fc-rate__again {
+  --cap-face: var(--bad-soft);
+  --cap-ink: var(--bad);
+  --cap-edge: var(--bad-deep);
+  border: 1.5px solid var(--bad) !important;
+}
+
+@media (min-width: 900px) {
+  .fc-stage { block-size: calc(100dvh - 140px); max-block-size: 680px; min-block-size: 360px; }
+}

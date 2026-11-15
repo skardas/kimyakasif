@@ -65,12 +65,12 @@ export const unit05: ChemistryUnitSeedData = {
       "trap": {
         "tr": "Kalıcı sertlik suyu basitçe kaynatarak tamamen yok edilir.",
         "en": "Persistent hardness is completely eliminated by simply boiling the water.",
-        "de": "Durch einfaches Abkochen des Wassers wird die hartnäckige Härte vollständig beseitigt.",
+        "de": "Durch einfaches Abkochen des Wassers wird die bleibende Härte vollständig beseitigt.",
         "fr": "La dureté persistante est complètement éliminée en faisant simplement bouillir l’eau.",
         "ru": "Постоянная жесткость полностью устраняется простым кипячением воды.",
-        "ar": "يتم التخلص من الصلابة المستمرة تمامًا بمجرد غلي الماء.",
+        "ar": "يتم التخلص من العسر الدائم تمامًا بمجرد غلي الماء.",
         "zh": "只需将水煮沸即可完全消除持续的硬度。",
-        "ku": "Zehmetiya domdar bi tenê bi kelandina avê bi tevahî ji holê radibe."
+        "ku": "Serhişkiya daîmî bi tenê bi kelandina avê bi tevahî ji holê radibe."
       }
     },
     {
@@ -81,19 +81,19 @@ export const unit05: ChemistryUnitSeedData = {
         "de": "Die dauerhafte Härte wird durch Sulfat- (SO4^2-) und Chlorid- (Cl-) Salze verursacht und durch Ionenaustauscherharze entfernt.",
         "fr": "La dureté permanente est causée par les sels de sulfate (SO4^2-) et de chlorure (Cl-) et est éliminée par des résines échangeuses d'ions.",
         "ru": "Постоянная жесткость создается сульфатными (SO4^2-) и хлоридными (Cl-) солями и удаляется ионообменными смолами.",
-        "ar": "تنتج الصلابة الدائمة عن أملاح الكبريتات (SO4^2-) والكلوريد (Cl-)، ويتم إزالتها بواسطة راتنجات التبادل الأيوني.",
+        "ar": "ينتج العسر الدائم عن أملاح الكبريتات (SO4^2-) والكلوريد (Cl-)، ويتم إزالتها بواسطة راتنجات التبادل الأيوني.",
         "zh": "永久硬度是由硫酸盐 (SO4^2-) 和氯化物 (Cl-) 盐引起的，可通过离子交换树脂去除。",
         "ku": "Serhişkiya daîmî ji ber xwêyên sulfate (SO4^2-) û klorîd (Cl-) çêdibe û bi rezînên veguheztina îyonan tê derxistin."
       },
       "trap": {
-        "tr": "Kalıcı sertliğe neden olan tuzlar kireç taşı CaCO3 çöktürmez.",
-        "en": "Salts that cause permanent hardness do not precipitate limestone CaCO3.",
-        "de": "Salze, die dauerhafte Härte verursachen, führen nicht zur Ausfällung von Kalkstein CaCO3.",
-        "fr": "Les sels qui provoquent une dureté permanente ne précipitent pas le calcaire CaCO3.",
-        "ru": "Соли, вызывающие постоянную жесткость, не осаждают известняк CaCO3.",
-        "ar": "الأملاح التي تسبب صلابة دائمة لا تترسب الحجر الجيري CaCO3.",
-        "zh": "导致永久硬度的盐不会沉淀石灰石 CaCO3。",
-        "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, kevirê kilsin CaCO3 dernaxin."
+        "tr": "Kalıcı sertliğe neden olan CaSO4 ve MgCl2 gibi tuzlar, su kaynatıldığında CaCO3 olarak çöker ve giderilir.",
+        "en": "Salts causing permanent hardness, such as CaSO4 and MgCl2, precipitate as CaCO3 and are removed when the water is boiled.",
+        "de": "Salze, die bleibende Härte verursachen, wie CaSO4 und MgCl2, fallen beim Abkochen des Wassers als CaCO3 aus und werden so entfernt.",
+        "fr": "Les sels responsables de la dureté permanente, comme CaSO4 et MgCl2, précipitent sous forme de CaCO3 et sont éliminés lorsqu'on fait bouillir l'eau.",
+        "ru": "Соли, вызывающие постоянную жёсткость, такие как CaSO4 и MgCl2, при кипячении воды выпадают в осадок в виде CaCO3 и удаляются.",
+        "ar": "الأملاح المسببة للعسر الدائم، مثل CaSO4 وMgCl2، تترسب على شكل CaCO3 وتُزال عند غلي الماء.",
+        "zh": "引起永久硬度的盐（如 CaSO4 和 MgCl2）在煮沸水时会以 CaCO3 形式沉淀而被除去。",
+        "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, wek CaSO4 û MgCl2, dema av tê kelandin wek CaCO3 dinişin û tên rakirin."
       }
     },
     {
@@ -173,7 +173,7 @@ export const unit05: ChemistryUnitSeedData = {
         "de": "Schwermetalle (Blei Pb, Quecksilber Hg, Cadmium Cd) wirken durch Bioakkumulation toxisch auf die Nahrungskette.",
         "fr": "Les métaux lourds (plomb Pb, mercure Hg, cadmium Cd) ont un effet toxique sur la chaîne alimentaire par bioaccumulation.",
         "ru": "Тяжелые металлы (свинец Pb, ртуть Hg, кадмий Cd) оказывают токсическое воздействие на пищевую цепь путем биоаккумуляции.",
-        "ar": "المعادن الثقيلة (الرصاص، الزئبق، الزئبق، الكادميوم والكادميوم) لها تأثير سام على السلسلة الغذائية من خلال التراكم الحيوي.",
+        "ar": "المعادن الثقيلة (الرصاص Pb، الزئبق Hg، الكادميوم Cd) لها تأثير سام على السلسلة الغذائية من خلال التراكم الحيوي.",
         "zh": "重金属（铅Pb、汞Hg、镉Cd）通过生物累积对食物链产生毒性作用。",
         "ku": "Metalên giran (serpîb Pb, merkur Hg, kadmium Cd) bi biyolojîkî bandorek jehrîn li ser zincîra xwarinê dikin."
       },
@@ -214,14 +214,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-f09",
       "fact": {
-        "tr": "Koagülasyon (yumaklaştırma) ve flokülasyon su arıtımında askıdaki katı partikülleri çöktürmek için uygulanır.",
-        "en": "Coagulation (flocculation) and flocculation are applied to precipitate suspended solid particles in water treatment.",
-        "de": "Koagulation (Flockung) und Flockung werden zur Ausfällung suspendierter Feststoffpartikel in der Wasseraufbereitung eingesetzt.",
-        "fr": "La coagulation (floculation) et la floculation sont appliquées pour précipiter les particules solides en suspension dans le traitement de l'eau.",
-        "ru": "Коагуляция (флокуляция) и флокуляция применяются для осаждения взвешенных твердых частиц при очистке воды.",
-        "ar": "يتم تطبيق التخثر (التلبد) والتلبد لترسيب الجزيئات الصلبة العالقة في معالجة المياه.",
-        "zh": "混凝（絮凝）和絮凝作用在水处理中用于沉淀悬浮固体颗粒。",
-        "ku": "Coagulation (flocculation) û flokulasyon têne sepandin ku di tedawiya avê de perçeyên zexm ên rawestandî dakevin."
+        "tr": "Koagülasyon (pıhtılaştırma) ve flokülasyon (yumaklaştırma) su arıtımında askıdaki katı tanecikleri çöktürmek için uygulanır.",
+        "en": "Coagulation and flocculation are applied in water treatment to settle suspended solid particles.",
+        "de": "Koagulation und Flockung werden in der Wasseraufbereitung angewendet, um suspendierte Feststoffteilchen abzusetzen.",
+        "fr": "La coagulation et la floculation sont appliquées dans le traitement de l'eau pour faire décanter les particules solides en suspension.",
+        "ru": "Коагуляция и флокуляция применяются при очистке воды для осаждения взвешенных твёрдых частиц.",
+        "ar": "يُطبَّق التخثير والتلبيد في معالجة المياه لترسيب الجسيمات الصلبة العالقة.",
+        "zh": "在水处理中采用混凝和絮凝使悬浮的固体颗粒沉降。",
+        "ku": "Koagulasyon û flokulasyon di paqijkirina avê de ji bo niştandina perçeyên hişk ên daliqandî tên bikaranîn."
       },
       "trap": {
         "tr": "Koagülasyon suyun içindeki kireci kaynatarak buharlaştırma işlemidir.",
@@ -254,7 +254,7 @@ export const unit05: ChemistryUnitSeedData = {
         "ru": "Хлорирование проводится для осаждения свинца и ртути в воде.",
         "ar": "تتم عملية الكلورة لترسيب الرصاص والزئبق في الماء.",
         "zh": "进行氯化以沉淀水中的铅和汞。",
-        "ku": "Klorkirin ji bo rijandina pîvaz û merkur di avê de tê kirin."
+        "ku": "Klorkirin ji bo niştandina sirb û merkurê di avê de tê kirin."
       }
     },
     {
@@ -306,7 +306,7 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-f13",
       "fact": {
-        "tr": "pH değeri 5.6'nın altında olan yağışlar asit yağmuru olarak kabul edilir.",
+        "tr": "pH değeri 5,6'nın altında olan yağışlar asit yağmuru olarak kabul edilir.",
         "en": "Precipitation with a pH value below 5.6 is considered acid rain.",
         "de": "Als saurer Regen gilt Niederschlag mit einem pH-Wert unter 5,6.",
         "fr": "Les précipitations dont le pH est inférieur à 5,6 sont considérées comme des pluies acides.",
@@ -316,7 +316,7 @@ export const unit05: ChemistryUnitSeedData = {
         "ku": "Barîna bi nirxa pH di bin 5,6 de wekî barana asîd tê hesibandin."
       },
       "trap": {
-        "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0'dir.",
+        "tr": "Doğal saf yağmur suyunun pH değeri tam 7,0'dır.",
         "en": "The pH value of natural pure rainwater is exactly 7.0.",
         "de": "Der pH-Wert von natürlichem, reinem Regenwasser beträgt genau 7,0.",
         "fr": "Le pH de l’eau de pluie pure et naturelle est exactement de 7,0.",
@@ -375,14 +375,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-f16",
       "fact": {
-        "tr": "Hafif sular (yumuşak sular) içimi rahat, lezzetli ve tesisat dostu sulardır.",
-        "en": "Light waters (soft waters) are comfortable to drink, delicious and plumbing-friendly waters.",
-        "de": "Leichtes Wasser (weiches Wasser) ist angenehm zu trinken, köstlich und wasserfreundlich.",
-        "fr": "Les eaux légères (eaux douces) sont agréables à boire, délicieuses et respectueuses de la plomberie.",
-        "ru": "Легкие воды (мягкие воды) удобны для питья, вкусные и безопасные для водопровода.",
-        "ar": "المياه الخفيفة (المياه الغازية) مريحة للشرب، وهي مياه لذيذة وصديقة للسباكة.",
-        "zh": "淡水（软水）饮用舒适、美味且对管道友好。",
-        "ku": "Avên sivik (ava nerm) ji bo vexwarinê rehet in, avên xweş û xweşbar in."
+        "tr": "Yumuşak sular Ca2+ ve Mg2+ iyonlarınca fakir olduğundan sabunu kolay köpürtür ve tesisatta kireç tortusu bırakmaz.",
+        "en": "Soft waters are poor in Ca2+ and Mg2+ ions, so they lather soap easily and do not leave limescale in plumbing.",
+        "de": "Weiches Wasser ist arm an Ca2+- und Mg2+-Ionen; daher schäumt Seife leicht und es bildet sich kein Kalk in den Leitungen.",
+        "fr": "Les eaux douces sont pauvres en ions Ca2+ et Mg2+ ; elles font donc facilement mousser le savon et ne laissent pas de tartre dans la plomberie.",
+        "ru": "Мягкая вода бедна ионами Ca2+ и Mg2+, поэтому мыло в ней легко пенится, а в трубах не образуется накипь.",
+        "ar": "المياه اليسرة فقيرة بأيونات Ca2+ وMg2+، لذا تُرغي الصابون بسهولة ولا تترك ترسبات كلسية في التمديدات.",
+        "zh": "软水中 Ca2+ 和 Mg2+ 离子含量低，因此肥皂易起泡，且不会在管道中留下水垢。",
+        "ku": "Avên nerm ji aliyê îyonên Ca2+ û Mg2+ ve feqîr in, ji ber vê yekê sabûn bi hêsanî kef dike û di boriyan de kils namîne."
       },
       "trap": {
         "tr": "Yumuşak sular bol miktarda kireç tortusu bırakır.",
@@ -404,18 +404,18 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Temporary Hardness",
         "de": "Vorübergehende Härte",
         "fr": "Dureté temporaire",
-        "ru": "Временная твердость",
-        "ar": "صلابة مؤقتة",
+        "ru": "Временная жёсткость",
+        "ar": "العسر المؤقت",
         "zh": "临时硬度",
-        "ku": "Zehmetiya Demkî"
+        "ku": "Serhişkiya Demkî"
       },
       "conceptB": {
         "tr": "Kalıcı Sertlik",
         "en": "Permanent Hardness",
         "de": "Dauerhafte Härte",
         "fr": "Dureté permanente",
-        "ru": "Постоянная твердость",
-        "ar": "صلابة دائمة",
+        "ru": "Постоянная жёсткость",
+        "ar": "العسر الدائم",
         "zh": "永久硬度",
         "ku": "Serhişkiya Daîmî"
       },
@@ -425,9 +425,9 @@ export const unit05: ChemistryUnitSeedData = {
         "de": "Vorübergehende Härte entsteht durch Bikarbonatsalze und wird durch Kochen beseitigt; Dauerhafte Härte entsteht durch Sulfat-/Chloridsalze und wird durch das Harz abgebaut.",
         "fr": "La dureté temporaire est causée par les sels de bicarbonate et est éliminée par ébullition ; La dureté permanente est causée par les sels de sulfate/chlorure et est éliminée par la résine.",
         "ru": "Временная жесткость вызвана бикарбонатными солями и удаляется кипячением; Постоянная жесткость вызвана сульфатными/хлоридными солями и удаляется смолой.",
-        "ar": "تنتج الصلابة المؤقتة عن أملاح البيكربونات وتتم إزالتها بالغليان؛ تنتج الصلابة الدائمة عن أملاح الكبريتات/الكلوريد ويتم إزالتها بواسطة الراتنج.",
+        "ar": "ينتج العسر المؤقت عن أملاح البيكربونات ويُزال بالغليان؛ وينتج العسر الدائم عن أملاح الكبريتات/الكلوريد ويُزال بالراتنج.",
         "zh": "暂时硬度是由碳酸氢盐引起的，可通过煮沸去除；永久硬度是由硫酸盐/氯化物盐引起的，并被树脂去除。",
-        "ku": "Serhişkiya demkî ji ber xwêyên bîkarbonat çêdibe û bi kelandinê tê derxistin; Zehmetiya daîmî ji ber xwêyên sulfate/klorîdê çêdibe û ji hêla resinê ve tê derxistin."
+        "ku": "Serhişkiya demkî ji ber xwêyên bîkarbonat çêdibe û bi kelandinê tê derxistin; serhişkiya daîmî ji ber xwêyên sulfat/klorîdê çêdibe û bi rezînê tê derxistin."
       }
     },
     {
@@ -473,7 +473,7 @@ export const unit05: ChemistryUnitSeedData = {
         "ru": "Жесткая вода",
         "ar": "الماء العسر",
         "zh": "硬水",
-        "ku": "Hard Water"
+        "ku": "Ava hişk"
       },
       "conceptB": {
         "tr": "Yumuşak Su",
@@ -481,7 +481,7 @@ export const unit05: ChemistryUnitSeedData = {
         "de": "Weiches Wasser",
         "fr": "Eau douce",
         "ru": "Мягкая вода",
-        "ar": "الماء العذب",
+        "ar": "الماء اليسر",
         "zh": "软水",
         "ku": "Avê nerm"
       },
@@ -491,7 +491,7 @@ export const unit05: ChemistryUnitSeedData = {
         "de": "Hartes Wasser enthält viel Ca2+ und Mg2+ und bildet mit Seife Niederschläge; Weiches Wasser ist arm an Mineralien und sorgt dafür, dass Seife leicht schäumt.",
         "fr": "L'eau dure contient beaucoup de Ca2+ et de Mg2+ et forme des précipités avec le savon ; L’eau douce est pauvre en minéraux et fait mousser facilement le savon.",
         "ru": "Жесткая вода содержит большое количество Ca2+ и Mg2+ и образует осадки с мылом; В мягкой воде мало минералов, поэтому мыло легко пенится.",
-        "ar": "يحتوي الماء العسر على نسبة عالية من Ca2+ وMg2+ ويتشكل رواسب مع الصابون؛ الماء العذب منخفض في المعادن ويجعل الصابون رغويًا بسهولة.",
+        "ar": "يحتوي الماء العسر على نسبة عالية من Ca2+ وMg2+ ويتشكل رواسب مع الصابون؛ الماء اليسر منخفض في المعادن ويجعل الصابون رغويًا بسهولة.",
         "zh": "硬水含有较高的Ca2+和Mg2+，与肥皂形成沉淀；软水矿物质含量低，容易使肥皂起泡。",
         "ku": "Di ava hişk de Ca2+ û Mg2+-ya zêde heye û bi sabûnê diherike; Ava nerm di mîneralan de kêm e û sabûnê bi hêsanî çêdike."
       }
@@ -499,34 +499,34 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-c04",
       "conceptA": {
-        "tr": "Sera Gazı (CO2, CH4)",
-        "en": "Greenhouse Gas (CO2, CH4)",
-        "de": "Treibhausgas (CO2, CH4)",
-        "fr": "Gaz à effet de serre (CO2, CH4)",
-        "ru": "Парниковый газ (CO2, CH4)",
-        "ar": "الغازات الدفيئة (CO2، CH4)",
-        "zh": "温室气体（CO2、CH4）",
-        "ku": "Gaza serayê (CO2, CH4)"
+        "tr": "Koagülasyon (Pıhtılaştırma)",
+        "en": "Coagulation",
+        "de": "Koagulation",
+        "fr": "Coagulation",
+        "ru": "Коагуляция",
+        "ar": "التخثير",
+        "zh": "混凝",
+        "ku": "Koagulasyon"
       },
       "conceptB": {
-        "tr": "Ozon Tabakası İncelten Gaz (CFC)",
-        "en": "Ozone Layer Depleting Gas (CFC)",
-        "de": "Ozonschichtschädigendes Gas (FCKW)",
-        "fr": "Gaz appauvrissant la couche d’ozone (CFC)",
-        "ru": "Газ, разрушающий озоновый слой (CFC)",
-        "ar": "الغاز المستنفد لطبقة الأوزون (CFC)",
-        "zh": "消耗臭氧层气体 (CFC)",
-        "ku": "Gaza Tebeqeya Ozonê (CFC)"
+        "tr": "Klorlama (Dezenfeksiyon)",
+        "en": "Chlorination (Disinfection)",
+        "de": "Chlorung (Desinfektion)",
+        "fr": "Chloration (désinfection)",
+        "ru": "Хлорирование (дезинфекция)",
+        "ar": "الكلورة (التطهير)",
+        "zh": "氯化（消毒）",
+        "ku": "Klorkirin (Dezenfeksiyon)"
       },
       "distinction": {
-        "tr": "Sera gazları kızılötesi ışınları tutarak küresel ısınmaya yol açar; CFC gazları stratosferdeki ozon tabakasını parçalar.",
-        "en": "Greenhouse gases trap infrared rays, causing global warming; CFC gases destroy the ozone layer in the stratosphere.",
-        "de": "Treibhausgase fangen Infrarotstrahlen ein und verursachen so die globale Erwärmung; FCKW-Gase zerstören die Ozonschicht in der Stratosphäre.",
-        "fr": "Les gaz à effet de serre piègent les rayons infrarouges, provoquant le réchauffement climatique ; Les gaz CFC détruisent la couche d'ozone dans la stratosphère.",
-        "ru": "Парниковые газы улавливают инфракрасные лучи, вызывая глобальное потепление; Газы CFC разрушают озоновый слой в стратосфере.",
-        "ar": "تحبس الغازات الدفيئة الأشعة تحت الحمراء، مما يتسبب في ظاهرة الاحتباس الحراري؛ تعمل غازات مركبات الكربون الكلورية فلورية على تدمير طبقة الأوزون في الستراتوسفير.",
-        "zh": "温室气体捕获红外线，导致全球变暖；氟氯化碳气体会破坏平流层的臭氧层。",
-        "ku": "Gazên serayê tîrêjên infrasor digire, dibe sedema germbûna global; Gazên CFC tebeqeya ozonê ya di stratosferê de hilweşîne."
+        "tr": "Koagülasyon, askıdaki küçük tanecikleri alüminyum sülfat gibi maddelerle topaklaştırıp çöktürür; klorlama ise sudaki hastalık yapıcı mikroorganizmaları öldürür.",
+        "en": "Coagulation clumps small suspended particles together with agents such as aluminium sulfate so that they settle; chlorination kills disease-causing microorganisms in the water.",
+        "de": "Die Koagulation ballt kleine Schwebeteilchen mit Mitteln wie Aluminiumsulfat zusammen, sodass sie sich absetzen; die Chlorung tötet krankheitserregende Mikroorganismen im Wasser ab.",
+        "fr": "La coagulation agglomère les petites particules en suspension à l'aide d'agents comme le sulfate d'aluminium pour qu'elles décantent ; la chloration tue les micro-organismes pathogènes de l'eau.",
+        "ru": "Коагуляция с помощью веществ вроде сульфата алюминия укрупняет мелкие взвешенные частицы, и они оседают; хлорирование убивает болезнетворные микроорганизмы в воде.",
+        "ar": "يجمّع التخثير الجسيمات العالقة الصغيرة بمواد مثل كبريتات الألومنيوم فتترسب؛ أما الكلورة فتقتل الكائنات الدقيقة المسببة للأمراض في الماء.",
+        "zh": "混凝是用硫酸铝等试剂使细小悬浮颗粒聚集沉降；氯化则杀死水中的致病微生物。",
+        "ku": "Koagulasyon perçeyên piçûk ên daliqandî bi madeyên wek sulfata aluminyûmê kom dike da ku binişin; klorkirin jî mîkroorganîzmayên nexweşîçêker ên di avê de dikuje."
       }
     },
     {
@@ -631,34 +631,34 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-c08",
       "conceptA": {
-        "tr": "Geçici Sertlik",
-        "en": "Temporary Hardness",
-        "de": "Vorübergehende Härte",
-        "fr": "Dureté temporaire",
-        "ru": "Временная твердость",
-        "ar": "صلابة مؤقتة",
-        "zh": "临时硬度",
-        "ku": "Zehmetiya Demkî"
+        "tr": "Ters Ozmoz",
+        "en": "Reverse Osmosis",
+        "de": "Umkehrosmose",
+        "fr": "Osmose inverse",
+        "ru": "Обратный осмос",
+        "ar": "التناضح العكسي",
+        "zh": "反渗透",
+        "ku": "Osmoza berevajî"
       },
       "conceptB": {
-        "tr": "Kalıcı Sertlik",
-        "en": "Permanent Hardness",
-        "de": "Dauerhafte Härte",
-        "fr": "Dureté permanente",
-        "ru": "Постоянная твердость",
-        "ar": "صلابة دائمة",
-        "zh": "永久硬度",
-        "ku": "Serhişkiya Daîmî"
+        "tr": "Damıtma",
+        "en": "Distillation",
+        "de": "Destillation",
+        "fr": "Distillation",
+        "ru": "Дистилляция",
+        "ar": "التقطير",
+        "zh": "蒸馏",
+        "ku": "Distîlasyon"
       },
       "distinction": {
-        "tr": "Geçici sertlik bikarbonat tuzlarından kaynaklanır ve kaynatılarak giderilir; kalıcı sertlik sülfat/klorür tuzlarından kaynaklanır reçineyle giderilir.",
-        "en": "Temporary hardness is caused by bicarbonate salts and is removed by boiling; Permanent hardness is caused by sulfate/chloride salts and is removed by the resin.",
-        "de": "Vorübergehende Härte entsteht durch Bikarbonatsalze und wird durch Kochen beseitigt; Dauerhafte Härte entsteht durch Sulfat-/Chloridsalze und wird durch das Harz abgebaut.",
-        "fr": "La dureté temporaire est causée par les sels de bicarbonate et est éliminée par ébullition ; La dureté permanente est causée par les sels de sulfate/chlorure et est éliminée par la résine.",
-        "ru": "Временная жесткость вызвана бикарбонатными солями и удаляется кипячением; Постоянная жесткость вызвана сульфатными/хлоридными солями и удаляется смолой.",
-        "ar": "تنتج الصلابة المؤقتة عن أملاح البيكربونات وتتم إزالتها بالغليان؛ تنتج الصلابة الدائمة عن أملاح الكبريتات/الكلوريد ويتم إزالتها بواسطة الراتنج.",
-        "zh": "暂时硬度是由碳酸氢盐引起的，可通过煮沸去除；永久硬度是由硫酸盐/氯化物盐引起的，并被树脂去除。",
-        "ku": "Serhişkiya demkî ji ber xwêyên bîkarbonat çêdibe û bi kelandinê tê derxistin; Zehmetiya daîmî ji ber xwêyên sulfate/klorîdê çêdibe û ji hêla resinê ve tê derxistin."
+        "tr": "Ters ozmozda tuzlu suya basınç uygulanır, su molekülleri yarı geçirgen zardan geçer ve iyonlar zarda tutulur; damıtmada su ısıtılarak buharlaştırılır ve buhar yoğuşturularak saf su elde edilir.",
+        "en": "In reverse osmosis, pressure is applied to salt water so that water molecules pass through a semi-permeable membrane while the ions are retained; in distillation, water is heated to vaporize it and the vapor is condensed to obtain pure water.",
+        "de": "Bei der Umkehrosmose wird Druck auf Salzwasser ausgeübt, sodass Wassermoleküle eine semipermeable Membran passieren und die Ionen zurückgehalten werden; bei der Destillation wird Wasser durch Erhitzen verdampft und der Dampf zu reinem Wasser kondensiert.",
+        "fr": "En osmose inverse, on applique une pression à l'eau salée : les molécules d'eau traversent une membrane semi-perméable et les ions sont retenus ; en distillation, l'eau est chauffée pour être vaporisée, puis la vapeur est condensée pour obtenir de l'eau pure.",
+        "ru": "При обратном осмосе на солёную воду оказывают давление, молекулы воды проходят через полупроницаемую мембрану, а ионы задерживаются; при дистилляции воду нагревают до испарения, а пар конденсируют, получая чистую воду.",
+        "ar": "في التناضح العكسي يُطبَّق ضغط على الماء المالح فتعبر جزيئات الماء غشاءً شبه منفذ وتُحتجز الأيونات؛ وفي التقطير يُسخَّن الماء حتى يتبخر ثم يُكثَّف البخار للحصول على ماء نقي.",
+        "zh": "反渗透是对盐水加压，使水分子透过半透膜而离子被截留；蒸馏是加热使水汽化，再将水蒸气冷凝得到纯水。",
+        "ku": "Di osmoza berevajî de zext li ava şor tê kirin, molekulên avê di parzûna nîv-derbasbar re derbas dibin û îyon li ser parzûnê dimînin; di distîlasyonê de av tê germkirin û dibe buhar, paşê buhar tê kondensekirin û ava paqij tê bidestxistin."
       }
     }
   ],
@@ -684,7 +684,7 @@ export const unit05: ChemistryUnitSeedData = {
           "ru": "Грубый скрининг",
           "ar": "الفحص الخشن",
           "zh": "粗筛",
-          "ku": "Vebijêrkek hişk"
+          "ku": "Derbaskirin ji parzûna qelew"
         },
         {
           "tr": "Koagülasyon ve çöktürme",
@@ -692,9 +692,9 @@ export const unit05: ChemistryUnitSeedData = {
           "de": "Koagulation und Niederschlag",
           "fr": "Coagulation et précipitation",
           "ru": "Коагуляция и осаждение",
-          "ar": "التخثر وهطول الأمطار",
+          "ar": "التخثير والترسيب",
           "zh": "混凝沉淀",
-          "ku": "Coagulation û baranê"
+          "ku": "Koagulasyon û niştandin"
         },
         {
           "tr": "Kum filtrelerinden süzme",
@@ -762,14 +762,14 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Asîdê sulfurîk û asîda nîtrîk çêdibin"
         },
         {
-          "tr": "pH değeri 5'in altında asit yağmuru yağar",
-          "en": "Acid rain occurs when the pH value is below 5.",
-          "de": "Saurer Regen tritt auf, wenn der pH-Wert unter 5 liegt.",
-          "fr": "Les pluies acides se produisent lorsque la valeur du pH est inférieure à 5.",
-          "ru": "Кислотные дожди возникают, когда значение pH ниже 5.",
-          "ar": "يحدث المطر الحمضي عندما تكون قيمة الرقم الهيدروجيني أقل من 5.",
-          "zh": "当pH值低于5时，就会出现酸雨。",
-          "ku": "Barana asîd dema ku nirxa pH di bin 5 de be çêdibe."
+          "tr": "pH değeri 5,6'nın altında olan asit yağmuru yağar",
+          "en": "Acid rain with a pH below 5.6 falls",
+          "de": "Es fällt saurer Regen mit einem pH-Wert unter 5,6",
+          "fr": "Il tombe une pluie acide de pH inférieur à 5,6",
+          "ru": "Выпадает кислотный дождь с pH ниже 5,6",
+          "ar": "يهطل مطر حمضي قيمة الرقم الهيدروجيني له أقل من 5.6",
+          "zh": "降下 pH 低于 5.6 的酸雨",
+          "ku": "Barana asîdî ya bi pH di bin 5,6 de dibare"
         }
       ]
     },
@@ -877,7 +877,7 @@ export const unit05: ChemistryUnitSeedData = {
           "de": "Man erhält weiches Wasser, das keinen Kalk bildet",
           "fr": "On obtient de l'eau douce qui ne forme pas de calcaire",
           "ru": "Получается мягкая вода, не образующая извести.",
-          "ar": "يتم الحصول على الماء العذب الذي لا يشكل الجير",
+          "ar": "يتم الحصول على الماء اليسر الذي لا يشكل الجير",
           "zh": "获得不形成石灰的软水",
           "ku": "Ava nerm a ku lîm çênabe tê bidestxistin"
         }
@@ -965,13 +965,13 @@ export const unit05: ChemistryUnitSeedData = {
       "id": "u05-twin02",
       "stem": {
         "tr": "Sularda sertliğe neden olan temel katyonlar aşağıdakilerin hangisinde doğru verilmiştir?",
-        "en": "Which of the following correctly lists the basic cations that cause hardness in water?",
-        "de": "Welche der folgenden Aussagen führt die basischen Kationen, die Wasserhärte verursachen, korrekt auf?",
-        "fr": "Lequel des énoncés suivants répertorie correctement les cations basiques qui causent la dureté de l’eau ?",
+        "en": "Which of the following correctly lists the main cations that cause hardness in water?",
+        "de": "Welche der folgenden Aussagen führt die wichtigsten Kationen, die Wasserhärte verursachen, korrekt auf?",
+        "fr": "Lequel des énoncés suivants répertorie correctement les principaux cations qui causent la dureté de l’eau ?",
         "ru": "В каком из следующих пунктов правильно перечислены основные катионы, вызывающие жесткость воды?",
-        "ar": "أي مما يلي يُدرج بشكل صحيح الكاتيونات الأساسية التي تسبب عسر الماء؟",
-        "zh": "以下哪项正确列出了导致水硬度的碱性阳离子？",
-        "ku": "Kîjan ji yên jêrîn kationên bingehîn ên ku di avê de dibin sedema serhişkiyê rast rêz dike?"
+        "ar": "أي مما يلي يُدرج بشكل صحيح الكاتيونات الرئيسية التي تسبب عسر الماء؟",
+        "zh": "以下哪项正确列出了导致水硬度的主要阳离子？",
+        "ku": "Kîjan ji yên jêrîn kationên sereke ên ku di avê de dibin sedema serhişkiyê rast rêz dike?"
       },
       "options": [
         {
@@ -1076,7 +1076,7 @@ export const unit05: ChemistryUnitSeedData = {
           "de": "Die dauerhafte Härte wird durch Sulfat- (SO4^2-) und Chlorid- (Cl-) Salze verursacht und durch Ionenaustauscherharze entfernt.",
           "fr": "La dureté permanente est causée par les sels de sulfate (SO4^2-) et de chlorure (Cl-) et est éliminée par des résines échangeuses d'ions.",
           "ru": "Постоянная жесткость создается сульфатными (SO4^2-) и хлоридными (Cl-) солями и удаляется ионообменными смолами.",
-          "ar": "تنتج الصلابة الدائمة عن أملاح الكبريتات (SO4^2-) والكلوريد (Cl-)، ويتم إزالتها بواسطة راتنجات التبادل الأيوني.",
+          "ar": "ينتج العسر الدائم عن أملاح الكبريتات (SO4^2-) والكلوريد (Cl-)، ويتم إزالتها بواسطة راتنجات التبادل الأيوني.",
           "zh": "永久硬度是由硫酸盐 (SO4^2-) 和氯化物 (Cl-) 盐引起的，可通过离子交换树脂去除。",
           "ku": "Serhişkiya daîmî ji ber xwêyên sulfate (SO4^2-) û klorîd (Cl-) çêdibe û bi rezînên veguheztina îyonan tê derxistin."
         },
@@ -1108,7 +1108,7 @@ export const unit05: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Die dauerhafte Härte wird durch Sulfat- (SO4^2-) und Chlorid- (Cl-) Salze verursacht und durch Ionenaustauscherharze entfernt.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La dureté permanente est causée par les sels de sulfate (SO4^2-) et de chlorure (Cl-) et est éliminée par des résines échangeuses d'ions.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Постоянная жесткость создается сульфатными (SO4^2-) и хлоридными (Cl-) солями и удаляется ионообменными смолами.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تنتج الصلابة الدائمة عن أملاح الكبريتات (SO4^2-) والكلوريد (Cl-)، ويتم إزالتها بواسطة راتنجات التبادل الأيوني.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"ينتج العسر الدائم عن أملاح الكبريتات (SO4^2-) والكلوريد (Cl-)، ويتم إزالتها بواسطة راتنجات التبادل الأيوني.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“永久硬度是由硫酸盐 (SO4^2-) 和氯化物 (Cl-) 盐引起的，可通过离子交换树脂去除。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Serhişkiya daîmî ji ber xwêyên sulfate (SO4^2-) û klorîd (Cl-) çêdibe û bi rezînên veguheztina îyonan tê derxistin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
@@ -1144,10 +1144,10 @@ export const unit05: ChemistryUnitSeedData = {
           "ru": "Хлорирование проводится для осаждения свинца и ртути в воде.",
           "ar": "تتم عملية الكلورة لترسيب الرصاص والزئبق في الماء.",
           "zh": "进行氯化以沉淀水中的铅和汞。",
-          "ku": "Klorkirin ji bo rijandina pîvaz û merkur di avê de tê kirin."
+          "ku": "Klorkirin ji bo niştandina sirb û merkurê di avê de tê kirin."
         },
         {
-          "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0'dir.",
+          "tr": "Doğal saf yağmur suyunun pH değeri tam 7,0'dır.",
           "en": "The pH value of natural pure rainwater is exactly 7.0.",
           "de": "Der pH-Wert von natürlichem, reinem Regenwasser beträgt genau 7,0.",
           "fr": "Le pH de l’eau de pluie pure et naturelle est exactement de 7,0.",
@@ -1321,12 +1321,12 @@ export const unit05: ChemistryUnitSeedData = {
         {
           "tr": "Kalıcı sertlik suyu basitçe kaynatarak tamamen yok edilir.",
           "en": "Persistent hardness is completely eliminated by simply boiling the water.",
-          "de": "Durch einfaches Abkochen des Wassers wird die hartnäckige Härte vollständig beseitigt.",
+          "de": "Durch einfaches Abkochen des Wassers wird die bleibende Härte vollständig beseitigt.",
           "fr": "La dureté persistante est complètement éliminée en faisant simplement bouillir l’eau.",
           "ru": "Постоянная жесткость полностью устраняется простым кипячением воды.",
-          "ar": "يتم التخلص من الصلابة المستمرة تمامًا بمجرد غلي الماء.",
+          "ar": "يتم التخلص من العسر الدائم تمامًا بمجرد غلي الماء.",
           "zh": "只需将水煮沸即可完全消除持续的硬度。",
-          "ku": "Zehmetiya domdar bi tenê bi kelandina avê bi tevahî ji holê radibe."
+          "ku": "Serhişkiya daîmî bi tenê bi kelandina avê bi tevahî ji holê radibe."
         }
       ],
       "correctIndex": 0,
@@ -1362,7 +1362,7 @@ export const unit05: ChemistryUnitSeedData = {
           "ru": "Хлорирование проводится для осаждения свинца и ртути в воде.",
           "ar": "تتم عملية الكلورة لترسيب الرصاص والزئبق في الماء.",
           "zh": "进行氯化以沉淀水中的铅和汞。",
-          "ku": "Klorkirin ji bo rijandina pîvaz û merkur di avê de tê kirin."
+          "ku": "Klorkirin ji bo niştandina sirb û merkurê di avê de tê kirin."
         },
         {
           "tr": "Ağır metaller (kurşun Pb, cıva Hg, kadmiyum Cd) biyolojik birikimle besin zincirinde zehir etkisi yapar.",
@@ -1370,12 +1370,12 @@ export const unit05: ChemistryUnitSeedData = {
           "de": "Schwermetalle (Blei Pb, Quecksilber Hg, Cadmium Cd) wirken durch Bioakkumulation toxisch auf die Nahrungskette.",
           "fr": "Les métaux lourds (plomb Pb, mercure Hg, cadmium Cd) ont un effet toxique sur la chaîne alimentaire par bioaccumulation.",
           "ru": "Тяжелые металлы (свинец Pb, ртуть Hg, кадмий Cd) оказывают токсическое воздействие на пищевую цепь путем биоаккумуляции.",
-          "ar": "المعادن الثقيلة (الرصاص، الزئبق، الزئبق، الكادميوم والكادميوم) لها تأثير سام على السلسلة الغذائية من خلال التراكم الحيوي.",
+          "ar": "المعادن الثقيلة (الرصاص Pb، الزئبق Hg، الكادميوم Cd) لها تأثير سام على السلسلة الغذائية من خلال التراكم الحيوي.",
           "zh": "重金属（铅Pb、汞Hg、镉Cd）通过生物累积对食物链产生毒性作用。",
           "ku": "Metalên giran (serpîb Pb, merkur Hg, kadmium Cd) bi biyolojîkî bandorek jehrîn li ser zincîra xwarinê dikin."
         },
         {
-          "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0'dir.",
+          "tr": "Doğal saf yağmur suyunun pH değeri tam 7,0'dır.",
           "en": "The pH value of natural pure rainwater is exactly 7.0.",
           "de": "Der pH-Wert von natürlichem, reinem Regenwasser beträgt genau 7,0.",
           "fr": "Le pH de l’eau de pluie pure et naturelle est exactement de 7,0.",
@@ -1395,14 +1395,14 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Avên nerm gelek depoyên lîmê dihêlin."
         },
         {
-          "tr": "Kalıcı sertliğe neden olan tuzlar kireç taşı CaCO3 çöktürmez.",
-          "en": "Salts that cause permanent hardness do not precipitate limestone CaCO3.",
-          "de": "Salze, die dauerhafte Härte verursachen, führen nicht zur Ausfällung von Kalkstein CaCO3.",
-          "fr": "Les sels qui provoquent une dureté permanente ne précipitent pas le calcaire CaCO3.",
-          "ru": "Соли, вызывающие постоянную жесткость, не осаждают известняк CaCO3.",
-          "ar": "الأملاح التي تسبب صلابة دائمة لا تترسب الحجر الجيري CaCO3.",
-          "zh": "导致永久硬度的盐不会沉淀石灰石 CaCO3。",
-          "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, kevirê kilsin CaCO3 dernaxin."
+          "tr": "Kalıcı sertliğe neden olan CaSO4 ve MgCl2 gibi tuzlar, su kaynatıldığında CaCO3 olarak çöker ve giderilir.",
+          "en": "Salts causing permanent hardness, such as CaSO4 and MgCl2, precipitate as CaCO3 and are removed when the water is boiled.",
+          "de": "Salze, die bleibende Härte verursachen, wie CaSO4 und MgCl2, fallen beim Abkochen des Wassers als CaCO3 aus und werden so entfernt.",
+          "fr": "Les sels responsables de la dureté permanente, comme CaSO4 et MgCl2, précipitent sous forme de CaCO3 et sont éliminés lorsqu'on fait bouillir l'eau.",
+          "ru": "Соли, вызывающие постоянную жёсткость, такие как CaSO4 и MgCl2, при кипячении воды выпадают в осадок в виде CaCO3 и удаляются.",
+          "ar": "الأملاح المسببة للعسر الدائم، مثل CaSO4 وMgCl2، تترسب على شكل CaCO3 وتُزال عند غلي الماء.",
+          "zh": "引起永久硬度的盐（如 CaSO4 和 MgCl2）在煮沸水时会以 CaCO3 形式沉淀而被除去。",
+          "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, wek CaSO4 û MgCl2, dema av tê kelandin wek CaCO3 dinişin û tên rakirin."
         }
       ],
       "correctIndex": 1,
@@ -1412,7 +1412,7 @@ export const unit05: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Schwermetalle (Blei Pb, Quecksilber Hg, Cadmium Cd) wirken durch Bioakkumulation toxisch auf die Nahrungskette.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Les métaux lourds (plomb Pb, mercure Hg, cadmium Cd) ont un effet toxique sur la chaîne alimentaire par bioaccumulation.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Тяжелые металлы (свинец Pb, ртуть Hg, кадмий Cd) оказывают токсическое воздействие на пищевую цепь путем биоаккумуляции.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"المعادن الثقيلة (الرصاص، الزئبق، الزئبق، الكادميوم والكادميوم) لها تأثير سام على السلسلة الغذائية من خلال التراكم الحيوي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"المعادن الثقيلة (الرصاص Pb، الزئبق Hg، الكادميوم Cd) لها تأثير سام على السلسلة الغذائية من خلال التراكم الحيوي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“重金属（铅Pb、汞Hg、镉Cd）通过生物累积对食物链产生毒性作用。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Metalên giran (serpîb Pb, merkur Hg, kadmium Cd) bi biyolojîkî bandorek jehrîn li ser zincîra xwarinê dikin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
@@ -1529,22 +1529,22 @@ export const unit05: ChemistryUnitSeedData = {
         {
           "tr": "Kalıcı sertlik suyu basitçe kaynatarak tamamen yok edilir.",
           "en": "Persistent hardness is completely eliminated by simply boiling the water.",
-          "de": "Durch einfaches Abkochen des Wassers wird die hartnäckige Härte vollständig beseitigt.",
+          "de": "Durch einfaches Abkochen des Wassers wird die bleibende Härte vollständig beseitigt.",
           "fr": "La dureté persistante est complètement éliminée en faisant simplement bouillir l’eau.",
           "ru": "Постоянная жесткость полностью устраняется простым кипячением воды.",
-          "ar": "يتم التخلص من الصلابة المستمرة تمامًا بمجرد غلي الماء.",
+          "ar": "يتم التخلص من العسر الدائم تمامًا بمجرد غلي الماء.",
           "zh": "只需将水煮沸即可完全消除持续的硬度。",
-          "ku": "Zehmetiya domdar bi tenê bi kelandina avê bi tevahî ji holê radibe."
+          "ku": "Serhişkiya daîmî bi tenê bi kelandina avê bi tevahî ji holê radibe."
         },
         {
-          "tr": "Koagülasyon (yumaklaştırma) ve flokülasyon su arıtımında askıdaki katı partikülleri çöktürmek için uygulanır.",
-          "en": "Coagulation (flocculation) and flocculation are applied to precipitate suspended solid particles in water treatment.",
-          "de": "Koagulation (Flockung) und Flockung werden zur Ausfällung suspendierter Feststoffpartikel in der Wasseraufbereitung eingesetzt.",
-          "fr": "La coagulation (floculation) et la floculation sont appliquées pour précipiter les particules solides en suspension dans le traitement de l'eau.",
-          "ru": "Коагуляция (флокуляция) и флокуляция применяются для осаждения взвешенных твердых частиц при очистке воды.",
-          "ar": "يتم تطبيق التخثر (التلبد) والتلبد لترسيب الجزيئات الصلبة العالقة في معالجة المياه.",
-          "zh": "混凝（絮凝）和絮凝作用在水处理中用于沉淀悬浮固体颗粒。",
-          "ku": "Coagulation (flocculation) û flokulasyon têne sepandin ku di tedawiya avê de perçeyên zexm ên rawestandî dakevin."
+          "tr": "Koagülasyon (pıhtılaştırma) ve flokülasyon (yumaklaştırma) su arıtımında askıdaki katı tanecikleri çöktürmek için uygulanır.",
+          "en": "Coagulation and flocculation are applied in water treatment to settle suspended solid particles.",
+          "de": "Koagulation und Flockung werden in der Wasseraufbereitung angewendet, um suspendierte Feststoffteilchen abzusetzen.",
+          "fr": "La coagulation et la floculation sont appliquées dans le traitement de l'eau pour faire décanter les particules solides en suspension.",
+          "ru": "Коагуляция и флокуляция применяются при очистке воды для осаждения взвешенных твёрдых частиц.",
+          "ar": "يُطبَّق التخثير والتلبيد في معالجة المياه لترسيب الجسيمات الصلبة العالقة.",
+          "zh": "在水处理中采用混凝和絮凝使悬浮的固体颗粒沉降。",
+          "ku": "Koagulasyon û flokulasyon di paqijkirina avê de ji bo niştandina perçeyên hişk ên daliqandî tên bikaranîn."
         },
         {
           "tr": "Asit yağmurlarına atmosferdeki saf oksijen ve azot gazları neden olur.",
@@ -1559,14 +1559,14 @@ export const unit05: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Koagülasyon (yumaklaştırma) ve flokülasyon su arıtımında askıdaki katı partikülleri çöktürmek için uygulanır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Coagulation (flocculation) and flocculation are applied to precipitate suspended solid particles in water treatment.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Koagulation (Flockung) und Flockung werden zur Ausfällung suspendierter Feststoffpartikel in der Wasseraufbereitung eingesetzt.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La coagulation (floculation) et la floculation sont appliquées pour précipiter les particules solides en suspension dans le traitement de l'eau.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Коагуляция (флокуляция) и флокуляция применяются для осаждения взвешенных твердых частиц при очистке воды.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"يتم تطبيق التخثر (التلبد) والتلبد لترسيب الجزيئات الصلبة العالقة في معالجة المياه.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“混凝（絮凝）和絮凝作用在水处理中用于沉淀悬浮固体颗粒。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Coagulation (flocculation) û flokulasyon têne sepandin ku di tedawiya avê de perçeyên zexm ên rawestandî dakevin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Koagülasyon (pıhtılaştırma) ve flokülasyon (yumaklaştırma) su arıtımında askıdaki katı tanecikleri çöktürmek için uygulanır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Coagulation and flocculation are applied in water treatment to settle suspended solid particles.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Koagulation und Flockung werden in der Wasseraufbereitung angewendet, um suspendierte Feststoffteilchen abzusetzen.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"La coagulation et la floculation sont appliquées dans le traitement de l'eau pour faire décanter les particules solides en suspension.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Коагуляция и флокуляция применяются при очистке воды для осаждения взвешенных твёрдых частиц.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"يُطبَّق التخثير والتلبيد في معالجة المياه لترسيب الجسيمات الصلبة العالقة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“在水处理中采用混凝和絮凝使悬浮的固体颗粒沉降。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Koagulasyon û flokulasyon di paqijkirina avê de ji bo niştandina perçeyên hişk ên daliqandî tên bikaranîn.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1583,7 +1583,7 @@ export const unit05: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0'dir.",
+          "tr": "Doğal saf yağmur suyunun pH değeri tam 7,0'dır.",
           "en": "The pH value of natural pure rainwater is exactly 7.0.",
           "de": "Der pH-Wert von natürlichem, reinem Regenwasser beträgt genau 7,0.",
           "fr": "Le pH de l’eau de pluie pure et naturelle est exactement de 7,0.",
@@ -1603,14 +1603,14 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Avên nerm gelek depoyên lîmê dihêlin."
         },
         {
-          "tr": "Kalıcı sertliğe neden olan tuzlar kireç taşı CaCO3 çöktürmez.",
-          "en": "Salts that cause permanent hardness do not precipitate limestone CaCO3.",
-          "de": "Salze, die dauerhafte Härte verursachen, führen nicht zur Ausfällung von Kalkstein CaCO3.",
-          "fr": "Les sels qui provoquent une dureté permanente ne précipitent pas le calcaire CaCO3.",
-          "ru": "Соли, вызывающие постоянную жесткость, не осаждают известняк CaCO3.",
-          "ar": "الأملاح التي تسبب صلابة دائمة لا تترسب الحجر الجيري CaCO3.",
-          "zh": "导致永久硬度的盐不会沉淀石灰石 CaCO3。",
-          "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, kevirê kilsin CaCO3 dernaxin."
+          "tr": "Kalıcı sertliğe neden olan CaSO4 ve MgCl2 gibi tuzlar, su kaynatıldığında CaCO3 olarak çöker ve giderilir.",
+          "en": "Salts causing permanent hardness, such as CaSO4 and MgCl2, precipitate as CaCO3 and are removed when the water is boiled.",
+          "de": "Salze, die bleibende Härte verursachen, wie CaSO4 und MgCl2, fallen beim Abkochen des Wassers als CaCO3 aus und werden so entfernt.",
+          "fr": "Les sels responsables de la dureté permanente, comme CaSO4 et MgCl2, précipitent sous forme de CaCO3 et sont éliminés lorsqu'on fait bouillir l'eau.",
+          "ru": "Соли, вызывающие постоянную жёсткость, такие как CaSO4 и MgCl2, при кипячении воды выпадают в осадок в виде CaCO3 и удаляются.",
+          "ar": "الأملاح المسببة للعسر الدائم، مثل CaSO4 وMgCl2، تترسب على شكل CaCO3 وتُزال عند غلي الماء.",
+          "zh": "引起永久硬度的盐（如 CaSO4 和 MgCl2）在煮沸水时会以 CaCO3 形式沉淀而被除去。",
+          "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, wek CaSO4 û MgCl2, dema av tê kelandin wek CaCO3 dinişin û tên rakirin."
         },
         {
           "tr": "CFC gazları ozon tabakasını onararak ultraviyole ışınları tamamen engeller.",
@@ -1757,12 +1757,12 @@ export const unit05: ChemistryUnitSeedData = {
         {
           "tr": "Kalıcı sertlik suyu basitçe kaynatarak tamamen yok edilir.",
           "en": "Persistent hardness is completely eliminated by simply boiling the water.",
-          "de": "Durch einfaches Abkochen des Wassers wird die hartnäckige Härte vollständig beseitigt.",
+          "de": "Durch einfaches Abkochen des Wassers wird die bleibende Härte vollständig beseitigt.",
           "fr": "La dureté persistante est complètement éliminée en faisant simplement bouillir l’eau.",
           "ru": "Постоянная жесткость полностью устраняется простым кипячением воды.",
-          "ar": "يتم التخلص من الصلابة المستمرة تمامًا بمجرد غلي الماء.",
+          "ar": "يتم التخلص من العسر الدائم تمامًا بمجرد غلي الماء.",
           "zh": "只需将水煮沸即可完全消除持续的硬度。",
-          "ku": "Zehmetiya domdar bi tenê bi kelandina avê bi tevahî ji holê radibe."
+          "ku": "Serhişkiya daîmî bi tenê bi kelandina avê bi tevahî ji holê radibe."
         },
         {
           "tr": "Asit yağmurlarına atmosferdeki saf oksijen ve azot gazları neden olur.",
@@ -1821,17 +1821,17 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Avên nerm gelek depoyên lîmê dihêlin."
         },
         {
-          "tr": "Kalıcı sertliğe neden olan tuzlar kireç taşı CaCO3 çöktürmez.",
-          "en": "Salts that cause permanent hardness do not precipitate limestone CaCO3.",
-          "de": "Salze, die dauerhafte Härte verursachen, führen nicht zur Ausfällung von Kalkstein CaCO3.",
-          "fr": "Les sels qui provoquent une dureté permanente ne précipitent pas le calcaire CaCO3.",
-          "ru": "Соли, вызывающие постоянную жесткость, не осаждают известняк CaCO3.",
-          "ar": "الأملاح التي تسبب صلابة دائمة لا تترسب الحجر الجيري CaCO3.",
-          "zh": "导致永久硬度的盐不会沉淀石灰石 CaCO3。",
-          "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, kevirê kilsin CaCO3 dernaxin."
+          "tr": "Kalıcı sertliğe neden olan CaSO4 ve MgCl2 gibi tuzlar, su kaynatıldığında CaCO3 olarak çöker ve giderilir.",
+          "en": "Salts causing permanent hardness, such as CaSO4 and MgCl2, precipitate as CaCO3 and are removed when the water is boiled.",
+          "de": "Salze, die bleibende Härte verursachen, wie CaSO4 und MgCl2, fallen beim Abkochen des Wassers als CaCO3 aus und werden so entfernt.",
+          "fr": "Les sels responsables de la dureté permanente, comme CaSO4 et MgCl2, précipitent sous forme de CaCO3 et sont éliminés lorsqu'on fait bouillir l'eau.",
+          "ru": "Соли, вызывающие постоянную жёсткость, такие как CaSO4 и MgCl2, при кипячении воды выпадают в осадок в виде CaCO3 и удаляются.",
+          "ar": "الأملاح المسببة للعسر الدائم، مثل CaSO4 وMgCl2، تترسب على شكل CaCO3 وتُزال عند غلي الماء.",
+          "zh": "引起永久硬度的盐（如 CaSO4 和 MgCl2）在煮沸水时会以 CaCO3 形式沉淀而被除去。",
+          "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, wek CaSO4 û MgCl2, dema av tê kelandin wek CaCO3 dinişin û tên rakirin."
         },
         {
-          "tr": "pH değeri 5.6'nın altında olan yağışlar asit yağmuru olarak kabul edilir.",
+          "tr": "pH değeri 5,6'nın altında olan yağışlar asit yağmuru olarak kabul edilir.",
           "en": "Precipitation with a pH value below 5.6 is considered acid rain.",
           "de": "Als saurer Regen gilt Niederschlag mit einem pH-Wert unter 5,6.",
           "fr": "Les précipitations dont le pH est inférieur à 5,6 sont considérées comme des pluies acides.",
@@ -1863,7 +1863,7 @@ export const unit05: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"pH değeri 5.6'nın altında olan yağışlar asit yağmuru olarak kabul edilir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"pH değeri 5,6'nın altında olan yağışlar asit yağmuru olarak kabul edilir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Precipitation with a pH value below 5.6 is considered acid rain.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Als saurer Regen gilt Niederschlag mit einem pH-Wert unter 5,6.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Les précipitations dont le pH est inférieur à 5,6 sont considérées comme des pluies acides.\". Notion fondamentale du programme officiel de chimie.",
@@ -1934,7 +1934,7 @@ export const unit05: ChemistryUnitSeedData = {
           "ru": "Хлорирование проводится для осаждения свинца и ртути в воде.",
           "ar": "تتم عملية الكلورة لترسيب الرصاص والزئبق في الماء.",
           "zh": "进行氯化以沉淀水中的铅和汞。",
-          "ku": "Klorkirin ji bo rijandina pîvaz û merkur di avê de tê kirin."
+          "ku": "Klorkirin ji bo niştandina sirb û merkurê di avê de tê kirin."
         }
       ],
       "correctIndex": 3,
@@ -1965,12 +1965,12 @@ export const unit05: ChemistryUnitSeedData = {
         {
           "tr": "Kalıcı sertlik suyu basitçe kaynatarak tamamen yok edilir.",
           "en": "Persistent hardness is completely eliminated by simply boiling the water.",
-          "de": "Durch einfaches Abkochen des Wassers wird die hartnäckige Härte vollständig beseitigt.",
+          "de": "Durch einfaches Abkochen des Wassers wird die bleibende Härte vollständig beseitigt.",
           "fr": "La dureté persistante est complètement éliminée en faisant simplement bouillir l’eau.",
           "ru": "Постоянная жесткость полностью устраняется простым кипячением воды.",
-          "ar": "يتم التخلص من الصلابة المستمرة تمامًا بمجرد غلي الماء.",
+          "ar": "يتم التخلص من العسر الدائم تمامًا بمجرد غلي الماء.",
           "zh": "只需将水煮沸即可完全消除持续的硬度。",
-          "ku": "Zehmetiya domdar bi tenê bi kelandina avê bi tevahî ji holê radibe."
+          "ku": "Serhişkiya daîmî bi tenê bi kelandina avê bi tevahî ji holê radibe."
         },
         {
           "tr": "Asit yağmurlarına atmosferdeki saf oksijen ve azot gazları neden olur.",
@@ -2039,24 +2039,24 @@ export const unit05: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Hafif sular (yumuşak sular) içimi rahat, lezzetli ve tesisat dostu sulardır.",
-          "en": "Light waters (soft waters) are comfortable to drink, delicious and plumbing-friendly waters.",
-          "de": "Leichtes Wasser (weiches Wasser) ist angenehm zu trinken, köstlich und wasserfreundlich.",
-          "fr": "Les eaux légères (eaux douces) sont agréables à boire, délicieuses et respectueuses de la plomberie.",
-          "ru": "Легкие воды (мягкие воды) удобны для питья, вкусные и безопасные для водопровода.",
-          "ar": "المياه الخفيفة (المياه الغازية) مريحة للشرب، وهي مياه لذيذة وصديقة للسباكة.",
-          "zh": "淡水（软水）饮用舒适、美味且对管道友好。",
-          "ku": "Avên sivik (ava nerm) ji bo vexwarinê rehet in, avên xweş û xweşbar in."
+          "tr": "Yumuşak sular Ca2+ ve Mg2+ iyonlarınca fakir olduğundan sabunu kolay köpürtür ve tesisatta kireç tortusu bırakmaz.",
+          "en": "Soft waters are poor in Ca2+ and Mg2+ ions, so they lather soap easily and do not leave limescale in plumbing.",
+          "de": "Weiches Wasser ist arm an Ca2+- und Mg2+-Ionen; daher schäumt Seife leicht und es bildet sich kein Kalk in den Leitungen.",
+          "fr": "Les eaux douces sont pauvres en ions Ca2+ et Mg2+ ; elles font donc facilement mousser le savon et ne laissent pas de tartre dans la plomberie.",
+          "ru": "Мягкая вода бедна ионами Ca2+ и Mg2+, поэтому мыло в ней легко пенится, а в трубах не образуется накипь.",
+          "ar": "المياه اليسرة فقيرة بأيونات Ca2+ وMg2+، لذا تُرغي الصابون بسهولة ولا تترك ترسبات كلسية في التمديدات.",
+          "zh": "软水中 Ca2+ 和 Mg2+ 离子含量低，因此肥皂易起泡，且不会在管道中留下水垢。",
+          "ku": "Avên nerm ji aliyê îyonên Ca2+ û Mg2+ ve feqîr in, ji ber vê yekê sabûn bi hêsanî kef dike û di boriyan de kils namîne."
         },
         {
-          "tr": "Kalıcı sertliğe neden olan tuzlar kireç taşı CaCO3 çöktürmez.",
-          "en": "Salts that cause permanent hardness do not precipitate limestone CaCO3.",
-          "de": "Salze, die dauerhafte Härte verursachen, führen nicht zur Ausfällung von Kalkstein CaCO3.",
-          "fr": "Les sels qui provoquent une dureté permanente ne précipitent pas le calcaire CaCO3.",
-          "ru": "Соли, вызывающие постоянную жесткость, не осаждают известняк CaCO3.",
-          "ar": "الأملاح التي تسبب صلابة دائمة لا تترسب الحجر الجيري CaCO3.",
-          "zh": "导致永久硬度的盐不会沉淀石灰石 CaCO3。",
-          "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, kevirê kilsin CaCO3 dernaxin."
+          "tr": "Kalıcı sertliğe neden olan CaSO4 ve MgCl2 gibi tuzlar, su kaynatıldığında CaCO3 olarak çöker ve giderilir.",
+          "en": "Salts causing permanent hardness, such as CaSO4 and MgCl2, precipitate as CaCO3 and are removed when the water is boiled.",
+          "de": "Salze, die bleibende Härte verursachen, wie CaSO4 und MgCl2, fallen beim Abkochen des Wassers als CaCO3 aus und werden so entfernt.",
+          "fr": "Les sels responsables de la dureté permanente, comme CaSO4 et MgCl2, précipitent sous forme de CaCO3 et sont éliminés lorsqu'on fait bouillir l'eau.",
+          "ru": "Соли, вызывающие постоянную жёсткость, такие как CaSO4 и MgCl2, при кипячении воды выпадают в осадок в виде CaCO3 и удаляются.",
+          "ar": "الأملاح المسببة للعسر الدائم، مثل CaSO4 وMgCl2، تترسب على شكل CaCO3 وتُزال عند غلي الماء.",
+          "zh": "引起永久硬度的盐（如 CaSO4 和 MgCl2）在煮沸水时会以 CaCO3 形式沉淀而被除去。",
+          "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, wek CaSO4 û MgCl2, dema av tê kelandin wek CaCO3 dinişin û tên rakirin."
         },
         {
           "tr": "CFC gazları ozon tabakasını onararak ultraviyole ışınları tamamen engeller.",
@@ -2091,14 +2091,14 @@ export const unit05: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Hafif sular (yumuşak sular) içimi rahat, lezzetli ve tesisat dostu sulardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Light waters (soft waters) are comfortable to drink, delicious and plumbing-friendly waters.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Leichtes Wasser (weiches Wasser) ist angenehm zu trinken, köstlich und wasserfreundlich.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les eaux légères (eaux douces) sont agréables à boire, délicieuses et respectueuses de la plomberie.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Легкие воды (мягкие воды) удобны для питья, вкусные и безопасные для водопровода.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"المياه الخفيفة (المياه الغازية) مريحة للشرب، وهي مياه لذيذة وصديقة للسباكة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“淡水（软水）饮用舒适、美味且对管道友好。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Avên sivik (ava nerm) ji bo vexwarinê rehet in, avên xweş û xweşbar in.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Yumuşak sular Ca2+ ve Mg2+ iyonlarınca fakir olduğundan sabunu kolay köpürtür ve tesisatta kireç tortusu bırakmaz.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Soft waters are poor in Ca2+ and Mg2+ ions, so they lather soap easily and do not leave limescale in plumbing.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Weiches Wasser ist arm an Ca2+- und Mg2+-Ionen; daher schäumt Seife leicht und es bildet sich kein Kalk in den Leitungen.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les eaux douces sont pauvres en ions Ca2+ et Mg2+ ; elles font donc facilement mousser le savon et ne laissent pas de tartre dans la plomberie.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Мягкая вода бедна ионами Ca2+ и Mg2+, поэтому мыло в ней легко пенится, а в трубах не образуется накипь.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"المياه اليسرة فقيرة بأيونات Ca2+ وMg2+، لذا تُرغي الصابون بسهولة ولا تترك ترسبات كلسية في التمديدات.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“软水中 Ca2+ 和 Mg2+ 离子含量低，因此肥皂易起泡，且不会在管道中留下水垢。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Avên nerm ji aliyê îyonên Ca2+ û Mg2+ ve feqîr in, ji ber vê yekê sabûn bi hêsanî kef dike û di boriyan de kils namîne.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }
   ]

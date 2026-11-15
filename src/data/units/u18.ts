@@ -37,7 +37,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Химическое равновесие динамично; Он устанавливается, когда скорость прямой реакции равна скорости обратной реакции (ri = rg).",
         "ar": "التوازن الكيميائي ديناميكي. يتم تأسيسه عندما يكون معدل التفاعل الأمامي مساوياً لمعدل التفاعل العكسي (ri = rg).",
         "zh": "化学平衡是动态的；当正向反应速率等于逆向反应速率（ri = rg）时成立。",
-        "ku": "Hevsengiya kîmyewî dînamîk e; Dema ku rêjeya berteka berevajî bi rêjeya berevajî (ri = rg) wekhev be, tê saz kirin."
+        "ku": "Hevsengiya kîmyewî dînamîk e; dema ku leza reaksiyona pêşve bi leza reaksiyona paşve re wekhev be, tê sazkirin (ri = rg)."
       },
       "trap": {
         "tr": "Denge kurulduğunda tüm kimyasal tepkimeler ve tanecik hareketleri tamamen durur.",
@@ -93,7 +93,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "При добавлении катализатора константа равновесия Kc системы увеличивается.",
         "ar": "عند إضافة محفز، يزداد ثابت التوازن Kc للنظام.",
         "zh": "当添加催化剂时，体系的平衡常数Kc增加。",
-        "ku": "Dema ku katalîzatorek tê zêdekirin, hevsengiya hevsengiya Kc ya pergalê zêde dibe."
+        "ku": "Dema ku katalîzator tê zêdekirin, sabîta hevsengiyê Kc ya pergalê mezin dibe."
       },
       "osymTip": {
         "tr": "ÖSYM kuralı: Kc yi değiştiren TEK faktör sıcaklıktır!",
@@ -101,7 +101,7 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "ÖSYM-Regel: Der EINZIGE Faktor, der Kc verändert, ist die Temperatur!",
         "fr": "Règle ÖSYM : le SEUL facteur qui modifie Kc est la température !",
         "ru": "Правило ÖSYM: ЕДИНСТВЕННЫЙ фактор, который меняет Kc, — это температура!",
-        "ar": "قاعدة ÖSYM: العامل الوحيد الذي يغير درجة الحرارة هو درجة الحرارة!",
+        "ar": "قاعدة ÖSYM: العامل الوحيد الذي يغيّر Kc هو درجة الحرارة!",
         "zh": "ÖSYM 规则：改变 Kc 的唯一因素是温度！",
         "ku": "Qanûna ÖSYM: TENÊ faktora ku Kc diguherîne germahî ye!"
       }
@@ -115,7 +115,7 @@ export const unit18: ChemistryUnitSeedData = {
         "fr": "La relation entre Kp et Kc est : Kp = Kc * (R*T)^Δn (Δn : somme des coefficients des produits en phase gazeuse - somme des coefficients des réactifs).",
         "ru": "Связь между Kp и Kc следующая: Kp = Kc * (R*T)^Δn (Δn: сумма коэффициентов продуктов в газовой фазе - сумма коэффициентов реагентов).",
         "ar": "العلاقة بين Kp وKc هي: Kp = Kc * (R*T)^Δn (Δn: مجموع معاملات الناتج في الطور الغازي - مجموع معاملات المواد المتفاعلة).",
-        "zh": "Kp与Kc的关系为：Kp=Kc*(R*T)^Δn（Δn：气相乘积系数之和-反应物系数之和）。",
+        "zh": "Kp与Kc的关系为：Kp = Kc * (R*T)^Δn（Δn：气态产物系数之和 - 气态反应物系数之和）。",
         "ku": "Têkiliya di navbera Kp û Kc de ev e: Kp = Kc * (R*T)^Δn (Δn: berhevoka hevberên hilberan ên di qonaxa gazê de - berhevoka hevberên reaktant)."
       },
       "trap": {
@@ -271,13 +271,13 @@ export const unit18: ChemistryUnitSeedData = {
       "id": "u18-f11",
       "fact": {
         "tr": "Denge kesri Qc = Kc ise sistem dengededir; Qc < Kc ise ürünlere kayar; Qc > Kc ise girenlere kayar.",
-        "en": "If the equilibrium fraction Qc = Kc, the system is in equilibrium; If Qc < Kc, it shifts to products; If Qc > Kc, it shifts to the reactants.",
-        "de": "Wenn der Gleichgewichtsanteil Qc = Kc ist, befindet sich das System im Gleichgewicht; Wenn Qc < Kc, verlagert es sich auf Produkte; Wenn Qc > Kc, verlagert es sich auf die Reaktanten.",
-        "fr": "Si la fraction d'équilibre Qc = Kc, le système est en équilibre ; Si Qc < Kc, cela se déplace vers les produits ; Si Qc > Kc, cela se déplace vers les réactifs.",
-        "ru": "Если равновесная доля Qc = Kc, система находится в равновесии; Если Qc < Kc, он переходит к продуктам; Если Qc > Kc, то он переходит к реагентам.",
-        "ar": "إذا كان جزء التوازن Qc = Kc، يكون النظام في حالة توازن؛ إذا كانت Qc <Kc، فإنها تتحول إلى المنتجات؛ إذا كانت Qc > Kc، فإنها تنتقل إلى المواد المتفاعلة.",
-        "zh": "若平衡分数Qc = Kc，则系统处于平衡状态；如果 Qc < Kc，则转向乘积；如果 Qc > Kc，则转移到反应物。",
-        "ku": "Ger para hevsengiyê Qc = Kc, sîstem di hevsengiyê de ye; Ger Qc < Kc, ew ​​ber bi hilberan ve diguhere; Ger Qc > Kc, ew ​​berbi reaktantan ve diguhere."
+        "en": "If the reaction quotient Qc = Kc, the system is at equilibrium; if Qc < Kc, it shifts toward the products; if Qc > Kc, it shifts toward the reactants.",
+        "de": "Ist der Reaktionsquotient Qc = Kc, befindet sich das System im Gleichgewicht; ist Qc < Kc, verschiebt es sich zu den Produkten; ist Qc > Kc, verschiebt es sich zu den Edukten.",
+        "fr": "Si le quotient de réaction Qc = Kc, le système est à l'équilibre ; si Qc < Kc, il évolue vers les produits ; si Qc > Kc, il évolue vers les réactifs.",
+        "ru": "Если коэффициент реакции Qc = Kc, система находится в равновесии; если Qc < Kc, она смещается в сторону продуктов; если Qc > Kc — в сторону реагентов.",
+        "ar": "إذا كان حاصل التفاعل Qc = Kc فالنظام في حالة اتزان؛ وإذا كان Qc < Kc يتجه نحو النواتج؛ وإذا كان Qc > Kc يتجه نحو المتفاعلات.",
+        "zh": "若反应商Qc = Kc，体系处于平衡；若Qc < Kc，平衡向产物方向移动；若Qc > Kc，向反应物方向移动。",
+        "ku": "Ger kesra hevsengiyê Qc = Kc be, pergal di hevsengiyê de ye; ger Qc < Kc be, ber bi hilberan ve diçe; ger Qc > Kc be, ber bi reaktantan ve diçe."
       },
       "trap": {
         "tr": "Qc > Kc olduğunda sistem dengededir.",
@@ -293,24 +293,24 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-f12",
       "fact": {
-        "tr": "Denge bağıntısına yalnızca gazlar ve suda çözünmüş (aq) iyonlar yazılır; saf katı ve sıvılar yazılmaz.",
-        "en": "Only gases and ions dissolved in water (aq) are entered into the equilibrium equation; Pure solids and liquids are not written.",
-        "de": "In die Gleichgewichtsgleichung gehen nur in Wasser (aq) gelöste Gase und Ionen ein; Reine Feststoffe und Flüssigkeiten werden nicht beschrieben.",
-        "fr": "Seuls les gaz et les ions dissous dans l'eau (aq) entrent dans l'équation d'équilibre ; Les solides et liquides purs ne sont pas écrits.",
-        "ru": "В уравнение равновесия входят только газы и ионы, растворенные в воде (водн.); Чистые твердые тела и жидкости не пишутся.",
-        "ar": "يتم إدخال الغازات والأيونات الذائبة في الماء فقط في معادلة التوازن؛ لا يتم كتابة المواد الصلبة والسوائل النقية.",
-        "zh": "只有溶解在水（aq）中的气体和离子才进入平衡方程；没有写出纯固体和液体。",
-        "ku": "Tenê gaz û îyonên ku di avê de (aq) hatine helandin, dikevin nav hevsengiya hevsengiyê; Tiştên safî û şil nayên nivîsandin."
+        "tr": "Denge bağıntısına yalnızca gazlar ve suda çözünmüş (aq) maddeler yazılır; saf katı ve sıvılar yazılmaz.",
+        "en": "Only gases and substances dissolved in water (aq) are written in the equilibrium expression; pure solids and liquids are not written.",
+        "de": "In den Gleichgewichtsausdruck werden nur Gase und in Wasser gelöste Stoffe (aq) aufgenommen; reine Feststoffe und Flüssigkeiten werden nicht geschrieben.",
+        "fr": "Seuls les gaz et les substances dissoutes dans l'eau (aq) figurent dans l'expression d'équilibre ; les solides et liquides purs n'y sont pas écrits.",
+        "ru": "В выражение константы равновесия записываются только газы и вещества, растворённые в воде (водн.); чистые твёрдые вещества и жидкости не записываются.",
+        "ar": "لا يُكتب في تعبير الاتزان إلا الغازات والمواد المذابة في الماء (aq)؛ أما المواد الصلبة والسوائل النقية فلا تُكتب.",
+        "zh": "平衡表达式中只写气体和溶于水的物质（aq）；纯固体和纯液体不写入。",
+        "ku": "Di têkiliya hevsengiyê de tenê gaz û maddeyên di avê de helandî (aq) tên nivîsandin; hişk û şilên saf nayên nivîsandin."
       },
       "trap": {
         "tr": "Saf katıların derişimleri denge kesrinde paydada yer alır.",
-        "en": "The concentrations of pure solids are included in the denominator of the equilibrium fraction.",
-        "de": "Die Konzentrationen reiner Feststoffe gehen in den Nenner des Gleichgewichtsanteils ein.",
-        "fr": "Les concentrations de solides purs sont incluses dans le dénominateur de la fraction d'équilibre.",
-        "ru": "Концентрации чистых твердых веществ включаются в знаменатель равновесной фракции.",
-        "ar": "يتم تضمين تركيزات المواد الصلبة النقية في مقام جزء التوازن.",
-        "zh": "纯固体的浓度包含在平衡分数的分母中。",
-        "ku": "Giraniyên maddeyên safî di nav danûstendina beşa hevsengiyê de cih digirin."
+        "en": "The concentrations of pure solids appear in the denominator of the equilibrium expression.",
+        "de": "Die Konzentrationen reiner Feststoffe stehen im Nenner des Gleichgewichtsausdrucks.",
+        "fr": "Les concentrations des solides purs figurent au dénominateur de l'expression d'équilibre.",
+        "ru": "Концентрации чистых твёрдых веществ входят в знаменатель выражения константы равновесия.",
+        "ar": "تظهر تراكيز المواد الصلبة النقية في مقام تعبير الاتزان.",
+        "zh": "纯固体的浓度出现在平衡表达式的分母中。",
+        "ku": "Tîrbûna hişkên saf di kesra hevsengiyê de li jêrê (di parvekerê de) cih digire."
       }
     },
     {
@@ -318,12 +318,12 @@ export const unit18: ChemistryUnitSeedData = {
       "fact": {
         "tr": "Tepkime ters çevrilirse yeni denge sabiti Kc_yeni = 1 / Kc olur.",
         "en": "If the reaction is reversed, the new equilibrium constant is Kc_new = 1 / Kc.",
-        "de": "Wenn die Reaktion umgekehrt ist, ist die neue Gleichgewichtskonstante Kc_new = 1 / Kc.",
+        "de": "Wird die Reaktion umgekehrt geschrieben, ist die neue Gleichgewichtskonstante Kc_new = 1 / Kc.",
         "fr": "Si la réaction est inversée, la nouvelle constante d'équilibre est Kc_new = 1 / Kc.",
-        "ru": "Если реакция обратима, новая константа равновесия равна Kc_new = 1/Kc.",
+        "ru": "Если реакцию записать в обратном направлении, новая константа равновесия Kc_new = 1/Kc.",
         "ar": "إذا تم عكس التفاعل، فإن ثابت التوازن الجديد هو Kc_new = 1 / Kc.",
         "zh": "如果反应逆转，则新的平衡常数为 Kc_new = 1 / Kc。",
-        "ku": "Ger reaksîyon berevajî be, berdewamiya hevsengiya nû Kc_new = 1 / Kc ye."
+        "ku": "Ger reaksiyon berevajî were nivîsandin, sabîta hevsengiyê ya nû Kc_new = 1 / Kc ye."
       },
       "trap": {
         "tr": "Tepkime ters çevrildiğinde Kc nin işareti eksi olur.",
@@ -346,7 +346,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Если реакция умножается на коэффициент n, новая константа равновесия становится Kc_new = (Kc)^n.",
         "ar": "إذا تم ضرب التفاعل في المعامل n، يصبح ثابت التوازن الجديد Kc_new = (Kc)^n.",
         "zh": "如果反应乘以系数n，则新的平衡常数变为Kc_new = (Kc)^n。",
-        "ku": "Ger reaksîyon bi hevsengiya n-yê were zêdekirin, domdariya hevsengiya nû dibe Kc_new = (Kc)^n."
+        "ku": "Ger reaksiyon bi hejmara n were carkirin, sabîta hevsengiyê ya nû dibe Kc_new = (Kc)^n."
       },
       "trap": {
         "tr": "Tepkime 2 ile çarpılırsa Kc de 2 ile çarpılır.",
@@ -356,7 +356,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Если реакцию умножить на 2, Kc также умножится на 2.",
         "ar": "إذا تم ضرب التفاعل بـ 2، يتم ضرب Kc أيضًا بـ 2.",
         "zh": "如果反应乘以 2，则 Kc 也乘以 2。",
-        "ku": "Ger reaksîyon bi 2-yê pirtir bibe, Kc jî bi 2-yê tê zêdekirin."
+        "ku": "Ger reaksiyon bi 2 were carkirin, Kc jî bi 2 tê carkirin."
       }
     },
     {
@@ -369,7 +369,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Если реакции суммируются, константы равновесия перемножаются (Kc_net = Kc1 * Kc2).",
         "ar": "إذا تم جمع التفاعلات، يتم ضرب ثوابت التوازن معًا (Kc_net = Kc1 * Kc2).",
         "zh": "如果将反应相加，则平衡常数相乘 (Kc_net = Kc1 * Kc2)。",
-        "ku": "Ger reaksîyon bên berhevkirin, sabitên hevsengiyê bi hev re têne zêdekirin (Kc_net = Kc1 * Kc2)."
+        "ku": "Ger reaksiyon bên berhevkirin, sabîtên hevsengiyê bi hev re tên carkirin (Kc_net = Kc1 * Kc2)."
       },
       "trap": {
         "tr": "Tepkimeler toplandığında denge sabitleri de birbiriyle toplanır.",
@@ -391,8 +391,8 @@ export const unit18: ChemistryUnitSeedData = {
         "fr": "La tendance minimale de l'énergie est vers le côté où il y a de la chaleur, la tendance maximale du désordre est vers le côté où le nombre de moles de gaz est élevé.",
         "ru": "Минимальная тенденция энергии наблюдается в сторону тепла, максимальная тенденция беспорядка — в сторону, где количество молей газа велико.",
         "ar": "الحد الأدنى لميل الطاقة يكون نحو الجانب الذي توجد فيه الحرارة، والحد الأقصى لميل الاضطراب يكون نحو الجانب الذي يكون فيه عدد مولات الغاز مرتفعًا.",
-        "zh": "能量趋势最小的是有热量的一侧，无序趋势最大的是气体摩尔数高的一侧。",
-        "ku": "Meyla enerjiyê ya herî hindik ber bi aliyê ku germ lê heye, meyla herî zêde ya nexweşiyê ber bi aliyê ku hejmara molên gazê lê zêde ye ye."
+        "zh": "最低能量趋势指向写有热量的一侧，最大无序趋势指向气体摩尔数较多的一侧。",
+        "ku": "Meyla enerjiya herî kêm ber bi aliyê ku germ lê hatiye nivîsandin e; meyla bêrêziya herî zêde ber bi aliyê ku hejmara molên gazê lê zêde ye."
       },
       "trap": {
         "tr": "Denge daima sadece minimum enerji yönünde kurulur.",
@@ -496,27 +496,27 @@ export const unit18: ChemistryUnitSeedData = {
         "ku": "Hevsengiya di warê zextên qismî de (Kp)"
       },
       "distinction": {
-        "tr": "Kc molar derişimlerle gaz ve sulu çözeltileri içerir; Kp = Kc(RT)^Delta n formülüyle yalnızca gaz fazını içerir.",
-        "en": "Kc includes gas and aqueous solutions with molar concentrations; It contains only the gas phase with the formula Kp = Kc(RT)^Delta n.",
-        "de": "Kc umfasst gasförmige und wässrige Lösungen mit molaren Konzentrationen; Es enthält nur die Gasphase mit der Formel Kp = Kc(RT)^Delta n.",
-        "fr": "Kc comprend des solutions gazeuses et aqueuses avec des concentrations molaires ; Il contient uniquement la phase gazeuse de formule Kp = Kc(RT)^Delta n.",
-        "ru": "Кс включает газ и водные растворы с молярными концентрациями; Он содержит только газовую фазу с формулой Kp = Kc(RT)^Delta n.",
-        "ar": "تشتمل Kc على محاليل غازية ومائية بتركيزات مولية؛ يحتوي فقط على الطور الغازي بالصيغة Kp = Kc(RT)^Delta n.",
-        "zh": "Kc 包括气体和水溶液的摩尔浓度；它仅包含气相，其公式为 Kp = Kc(RT)^Delta n。",
-        "ku": "Kc gaz û çareseriyên avî yên bi giraniya molar dihewîne; Tenê qonaxa gazê ya bi formula Kp = Kc(RT)^Delta n dihewîne."
+        "tr": "Kc molar derişimlerle gaz ve sulu çözeltileri içerir; Kp yalnızca gaz fazını içerir ve Kp = Kc(RT)^Δn ile bulunur.",
+        "en": "Kc uses molar concentrations of gases and aqueous species; Kp includes only the gas phase and is found from Kp = Kc(RT)^Δn.",
+        "de": "Kc verwendet molare Konzentrationen von Gasen und gelösten (aq) Stoffen; Kp umfasst nur die Gasphase und ergibt sich aus Kp = Kc(RT)^Δn.",
+        "fr": "Kc utilise les concentrations molaires des gaz et des espèces aqueuses ; Kp ne concerne que la phase gazeuse et s'obtient par Kp = Kc(RT)^Δn.",
+        "ru": "Kc выражается через молярные концентрации газов и растворённых веществ; Kp относится только к газовой фазе и находится по формуле Kp = Kc(RT)^Δn.",
+        "ar": "يستخدم Kc التراكيز المولية للغازات والمواد المائية؛ أما Kp فيشمل الطور الغازي فقط ويُحسب من Kp = Kc(RT)^Δn.",
+        "zh": "Kc使用气体和水溶液物质的物质的量浓度；Kp只涉及气相，由Kp = Kc(RT)^Δn求得。",
+        "ku": "Kc bi tîrbûnên molar ên gaz û maddeyên avî tê nivîsandin; Kp tenê qonaxa gazê dihewîne û bi Kp = Kc(RT)^Δn tê dîtin."
       }
     },
     {
       "id": "u18-c04",
       "conceptA": {
         "tr": "Denge Kesri (Qc)",
-        "en": "Equilibrium Fraction (Qc)",
-        "de": "Gleichgewichtsanteil (Qc)",
-        "fr": "Fraction d'équilibre (Qc)",
-        "ru": "Равновесная фракция (Qc)",
+        "en": "Reaction Quotient (Qc)",
+        "de": "Reaktionsquotient (Qc)",
+        "fr": "Quotient de réaction (Qc)",
+        "ru": "Коэффициент реакции (Qc)",
         "ar": "حاصل التفاعل (Qc)",
-        "zh": "平衡分数 (Qc)",
-        "ku": "Parçeya Hevsengiyê (Qc)"
+        "zh": "反应商 (Qc)",
+        "ku": "Kesra Hevsengiyê (Qc)"
       },
       "conceptB": {
         "tr": "Denge Sabiti (Kc)",
@@ -532,10 +532,10 @@ export const unit18: ChemistryUnitSeedData = {
         "tr": "Qc herhangi bir andaki derişimler oranıdır; Qc = Kc olduğunda sistem dengededir, Qc < Kc ise sistem ürünlere kayar.",
         "en": "Qc is the ratio of concentrations at any given moment; When Qc = Kc the system is in equilibrium, if Qc < Kc the system shifts to products.",
         "de": "Qc ist das Verhältnis der Konzentrationen zu einem bestimmten Zeitpunkt; Wenn Qc = Kc, befindet sich das System im Gleichgewicht, wenn Qc < Kc, verschiebt sich das System zu Produkten.",
-        "fr": "Qc est le rapport des concentrations à un instant donné ; Lorsque Qc = Kc le système est en équilibre, si Qc < Kc le système passe aux produits.",
+        "fr": "Qc est le rapport des concentrations à un instant quelconque ; si Qc = Kc le système est à l'équilibre, si Qc < Kc il évolue vers les produits.",
         "ru": "Qc — отношение концентраций в любой данный момент; При Qc = Kc система находится в равновесии, если Qc < Kc, система переходит к продуктам.",
         "ar": "حاصل التفاعل (Qc) هو نسبة التراكيز في أي لحظة معينة؛ عندما تكون Qc = Kc يكون النظام في حالة توازن، وإذا كانت Qc < Kc يتجه التوازن نحو النواتج.",
-        "zh": "Qc 是任意给定时刻的浓度比；当 Qc = Kc 时，系统处于平衡状态；如果 Qc < Kc，则系统转向产品。",
+        "zh": "Qc是任意时刻的浓度比；当Qc = Kc时体系处于平衡，若Qc < Kc则平衡向产物方向移动。",
         "ku": "Qc rêjeya konsantreyan di her kêliyê de ye; Dema Qc = Kc pergal di hevsengiyê de be, ger Qc < Kc pergal ber bi hilberan ve diçe."
       }
     },
@@ -543,13 +543,13 @@ export const unit18: ChemistryUnitSeedData = {
       "id": "u18-c05",
       "conceptA": {
         "tr": "Homojen Denge",
-        "en": "Homogeneous Balance",
+        "en": "Homogeneous Equilibrium",
         "de": "Homogenes Gleichgewicht",
         "fr": "Equilibre homogène",
-        "ru": "Гомогенный баланс",
+        "ru": "Гомогенное равновесие",
         "ar": "توازن متجانس",
-        "zh": "均匀平衡",
-        "ku": "Balansa homojen"
+        "zh": "均相平衡",
+        "ku": "Hevsengiya Homojen"
       },
       "conceptB": {
         "tr": "Heterojen Denge",
@@ -558,8 +558,8 @@ export const unit18: ChemistryUnitSeedData = {
         "fr": "Équilibre hétérogène",
         "ru": "Гетерогенное равновесие",
         "ar": "التوازن غير المتجانس",
-        "zh": "异质平衡",
-        "ku": "Hevsengiya Heterogeneous"
+        "zh": "非均相平衡",
+        "ku": "Hevsengiya Heterojen"
       },
       "distinction": {
         "tr": "Homojen dengede tüm reaktif ve ürünler aynı fiziksel fazdadır; heterojen dengede katı, sıvı veya gaz farklı fazlar bulunur.",
@@ -595,14 +595,14 @@ export const unit18: ChemistryUnitSeedData = {
         "ku": "Bandora Katalîzatorê li ser Hevsengiyê"
       },
       "distinction": {
-        "tr": "Denge sabitinin (Kc) sayısal değerini yalnızca ve yalnızca bu etki değiştirir; katalizör ise denge sabiti Kc'yi asla değiştirmez, yalnızca dengeye ulaşma süresini kısaltır.",
-        "en": "Only this effect changes the numerical value of the equilibrium constant (Kc); a catalyst never changes the equilibrium constant Kc, only shortening the time to reach equilibrium.",
-        "de": "Nur dieser Einfluss verändert den numerischen Wert der Gleichgewichtskonstante (Kc); ein Katalysator verändert die Gleichgewichtskonstante Kc nie, sondern verkürzt nur die Zeit bis zum Erreichen des Gleichgewichts.",
-        "fr": "Seul cet effet modifie la valeur numérique de la constante d'équilibre (Kc) ; un catalyseur ne modifie jamais la constante d'équilibre Kc, réduisant seulement le temps nécessaire pour atteindre l'équilibre.",
-        "ru": "Только это влияние изменяет численное значение константы равновесия (Kc); катализатор никогда не изменяет константу равновесия Kc, лишь сокращая время достижения равновесия.",
-        "ar": "هذا التأثير فقط هو الذي يغير القيمة العددية لثابت التوازن (Kc)؛ بينما المحفز لا يغير أبداً ثابت التوازن Kc بل يقلل فقط زمن الوصول إلى التوازن.",
-        "zh": "只有该影响才会改变平衡常数 (Kc) 的数值；而催化剂绝不改变平衡常数 Kc，仅缩短达到平衡所需的时间。",
-        "ku": "Tenê ev bandor nirxa hejmarî ya sabita hevsengiyê (Kc) diguherîne; katalîzator qet sabita hevsengiyê Kc naguherîne, tenê dema gihîştina hevsengiyê kurt dike."
+        "tr": "Denge sabitinin (Kc) sayısal değerini değiştiren tek etken sıcaklıktır; katalizör ise Kc yi değiştirmez, yalnızca dengeye ulaşma süresini kısaltır.",
+        "en": "Temperature is the only factor that changes the numerical value of the equilibrium constant (Kc); a catalyst does not change Kc, it only shortens the time needed to reach equilibrium.",
+        "de": "Die Temperatur ist der einzige Faktor, der den Zahlenwert der Gleichgewichtskonstante (Kc) ändert; ein Katalysator ändert Kc nicht, er verkürzt nur die Zeit bis zum Gleichgewicht.",
+        "fr": "La température est le seul facteur qui modifie la valeur numérique de la constante d'équilibre (Kc) ; un catalyseur ne modifie pas Kc, il réduit seulement le temps nécessaire pour atteindre l'équilibre.",
+        "ru": "Температура — единственный фактор, изменяющий численное значение константы равновесия (Kc); катализатор не изменяет Kc, он лишь сокращает время достижения равновесия.",
+        "ar": "درجة الحرارة هي العامل الوحيد الذي يغيّر القيمة العددية لثابت الاتزان (Kc)؛ أما المحفز فلا يغيّر Kc بل يقلّل فقط زمن الوصول إلى الاتزان.",
+        "zh": "温度是改变平衡常数（Kc）数值的唯一因素；催化剂不改变Kc，只缩短达到平衡所需的时间。",
+        "ku": "Germahî tenê faktor e ku nirxa hejmarî ya sabîta hevsengiyê (Kc) diguherîne; katalîzator Kc naguherîne, tenê dema gihîştina hevsengiyê kurt dike."
       }
     },
     {
@@ -615,7 +615,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Эффект уменьшения объема",
         "ar": "تأثير انكماش الحجم",
         "zh": "体积收缩效应",
-        "ku": "Bandora Kêmbûna Volume"
+        "ku": "Bandora Kêmbûna Qebareyê"
       },
       "conceptB": {
         "tr": "Soy Gaz Ekleme Etkisi",
@@ -625,40 +625,40 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Эффект от добавления благородного газа",
         "ar": "تأثير إضافة الغاز النبيل",
         "zh": "添加稀有气体的效果",
-        "ku": "Bandora Zêdekirina Gaza Noble"
+        "ku": "Bandora Zêdekirina Gaza Asîl"
       },
       "distinction": {
         "tr": "Pistonla hacim küçültülünce sistem gaz molü az olan tarafa kayar; sabit hacimde soy gaz eklenmesi kısmi basınçları ve dengeyi değiştirmez.",
-        "en": "When the volume is reduced with the piston, the system shifts to the side with fewer gas moles; Adding a constant volume of inert gas does not change partial pressures and equilibrium.",
-        "de": "Wenn das Volumen mit dem Kolben verringert wird, verschiebt sich das System auf die Seite mit weniger Gasmolen; Die Zugabe eines konstanten Inertgasvolumens verändert die Partialdrücke und das Gleichgewicht nicht.",
-        "fr": "Lorsque le volume est réduit avec le piston, le système se déplace vers le côté avec moins de taupes de gaz ; L'ajout d'un volume constant de gaz inerte ne modifie pas les pressions partielles et l'équilibre.",
-        "ru": "При уменьшении объема поршнем система смещается в сторону с меньшим количеством молей газа; Добавление постоянного объема инертного газа не меняет парциальное давление и равновесие.",
-        "ar": "عندما يتم تقليل الحجم باستخدام المكبس، ينتقل النظام إلى الجانب الذي يحتوي على عدد أقل من مولات الغاز؛ إن إضافة حجم ثابت من الغاز الخامل لا يغير الضغوط الجزئية والتوازن.",
-        "zh": "当活塞体积减小时，系统会向气体摩尔数较少的一侧移动；添加恒定体积的惰性气体不会改变分压和平衡。",
-        "ku": "Dema ku deng bi pistonê kêm dibe, pergal diguhezîne aliyê ku kêmtir molên gazê hene; Zêdekirina qebarek domdar a gaza bêserûber zext û hevsengiya qismî naguherîne."
+        "en": "When the volume is reduced with a piston, the system shifts to the side with fewer moles of gas; adding a noble gas at constant volume does not change the partial pressures or the equilibrium.",
+        "de": "Wird das Volumen mit einem Kolben verringert, verschiebt sich das System zur Seite mit weniger Gasmolen; die Zugabe eines Edelgases bei konstantem Volumen ändert weder die Partialdrücke noch das Gleichgewicht.",
+        "fr": "Lorsque le volume est réduit à l'aide d'un piston, le système se déplace vers le côté comportant le moins de moles de gaz ; l'ajout d'un gaz noble à volume constant ne modifie ni les pressions partielles ni l'équilibre.",
+        "ru": "При уменьшении объёма поршнем система смещается в сторону меньшего числа молей газа; добавление благородного газа при постоянном объёме не изменяет парциальные давления и равновесие.",
+        "ar": "عند تقليل الحجم بالمكبس يتجه النظام نحو الجانب الأقل في عدد مولات الغاز؛ أما إضافة غاز نبيل عند حجم ثابت فلا تغيّر الضغوط الجزئية ولا الاتزان.",
+        "zh": "用活塞减小体积时，体系向气体摩尔数较少的一侧移动；在恒容条件下加入稀有气体不改变各分压，也不使平衡移动。",
+        "ku": "Dema ku qebare bi pistonê tê kêmkirin, pergal ber bi aliyê ku molên gazê kêmtir in ve diçe; zêdekirina gaza asîl di qebareya sabît de zextên qismî û hevsengiyê naguherîne."
       }
     },
     {
       "id": "u18-c08",
       "conceptA": {
         "tr": "Dinamik Denge",
-        "en": "Dynamic Balance",
+        "en": "Dynamic Equilibrium",
         "de": "Dynamisches Gleichgewicht",
         "fr": "Equilibre dynamique",
-        "ru": "Динамический баланс",
+        "ru": "Динамическое равновесие",
         "ar": "التوازن الديناميكي",
         "zh": "动态平衡",
-        "ku": "Balansa dînamîk"
+        "ku": "Hevsengiya Dînamîk"
       },
       "conceptB": {
         "tr": "Statik Denge",
-        "en": "Static Balance",
+        "en": "Static Equilibrium",
         "de": "Statisches Gleichgewicht",
-        "fr": "Solde statique",
-        "ru": "Статический баланс",
-        "ar": "توازن ثابت",
+        "fr": "Équilibre statique",
+        "ru": "Статическое равновесие",
+        "ar": "التوازن الساكن",
         "zh": "静态平衡",
-        "ku": "Balansa Statîk"
+        "ku": "Hevsengiya Statîk"
       },
       "distinction": {
         "tr": "Kimyasal denge dinamiktir, ileri ve geri tepkime eşit hızda sürekli devam eder; statik dengede ise olay tamamen durmuştur.",
@@ -694,17 +694,17 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "Определить произведенное внешнее воздействие (температура, концентрация, объем)",
           "ar": "تحديد التأثير الخارجي المحدث (درجة الحرارة، التركيز، الحجم)",
           "zh": "确定所造成的外部影响（温度、浓度、体积）",
-          "ku": "Bandora derve ya çêkirî diyar bike (germahî, kombûn, volt)"
+          "ku": "Bandora derve diyar bike (germahî, tîrbûn, qebare)"
         },
         {
           "tr": "Sistemin etkiyi azaltıcı yönünü bul",
-          "en": "Find the mitigating aspect of the system",
-          "de": "Finden Sie den mildernden Aspekt des Systems",
-          "fr": "Trouver l’aspect atténuant du système",
-          "ru": "Найдите смягчающий аспект системы",
-          "ar": "ابحث عن الجانب المخفف للنظام",
-          "zh": "找到系统的缓解方面",
-          "ku": "Aliyê kêmkirina pergalê bibînin"
+          "en": "Find the direction in which the system counteracts the change",
+          "de": "Bestimme die Richtung, in der das System der Störung entgegenwirkt",
+          "fr": "Trouver le sens dans lequel le système s'oppose à la perturbation",
+          "ru": "Найдите направление, в котором система ослабляет воздействие",
+          "ar": "حدّد الاتجاه الذي يقلّل فيه النظام أثر التغيير",
+          "zh": "找出体系削弱该影响的方向",
+          "ku": "Aliyê ku pergal bandorê kêm dike bibîne"
         },
         {
           "tr": "Tepkimenin kaydığı yönü belirle (ürünler veya girenler)",
@@ -745,21 +745,21 @@ export const unit18: ChemistryUnitSeedData = {
           "tr": "Başlangıç mol sayıları ve kap hacmi yazılır",
           "en": "Initial mole numbers and container volume are written.",
           "de": "Anfängliche Molzahlen und Behältervolumen werden angegeben.",
-          "fr": "Les numéros de taupes initiaux et le volume du conteneur sont écrits.",
+          "fr": "Les nombres de moles initiaux et le volume du récipient sont écrits",
           "ru": "Записываются начальные числа молей и объем контейнера.",
-          "ar": "تتم كتابة أرقام الخلد الأولية وحجم الحاوية.",
+          "ar": "تُكتب أعداد المولات الابتدائية وحجم الوعاء",
           "zh": "写下初始摩尔数和容器体积。",
-          "ku": "Hejmarên mole yên destpêkê û hêjmara konteynerê têne nivîsandin."
+          "ku": "Hejmarên molan ên destpêkê û qebareya firaxê tên nivîsandin"
         },
         {
           "tr": "Tepkime katsayılarına göre değişim satırı doldurulur",
-          "en": "The change line is filled according to the reaction coefficients",
-          "de": "Die Änderungslinie wird entsprechend den Reaktionskoeffizienten gefüllt",
-          "fr": "La ligne de changement est remplie en fonction des coefficients de réaction",
+          "en": "The change row is filled in according to the reaction coefficients",
+          "de": "Die Änderungszeile wird gemäß den Reaktionskoeffizienten ausgefüllt",
+          "fr": "La ligne de variation est remplie selon les coefficients de la réaction",
           "ru": "Строка изменения заполняется в соответствии с коэффициентами реакции",
-          "ar": "يتم ملء خط التغيير وفقًا لمعاملات التفاعل",
-          "zh": "根据反应系数填充变化线",
-          "ku": "Xeta guherandinê li gorî qasê reaksiyonê tê dagirtin"
+          "ar": "يُملأ سطر التغيّر وفق معاملات التفاعل",
+          "zh": "根据反应系数填写变化量一行",
+          "ku": "Rêza guherînê li gorî hevberên reaksiyonê tê dagirtin"
         },
         {
           "tr": "Denge anındaki mol sayıları hacme bölünerek derişimler bulunur",
@@ -767,19 +767,19 @@ export const unit18: ChemistryUnitSeedData = {
           "de": "Konzentrationen werden ermittelt, indem die Anzahl der Mol im Gleichgewicht durch das Volumen dividiert wird.",
           "fr": "Les concentrations sont obtenues en divisant le nombre de moles à l'équilibre par le volume.",
           "ru": "Концентрации находятся путем деления количества молей, находящихся в равновесии, на объем.",
-          "ar": "يتم العثور على التركيزات بقسمة عدد الشامات في حالة التوازن على الحجم.",
+          "ar": "تُحسب التراكيز بقسمة أعداد المولات عند الاتزان على الحجم",
           "zh": "浓度是通过平衡时的摩尔数除以体积得出的。",
-          "ku": "Bi dabeşkirina hejmara molên di hevsengiyê de li ser qebareyê tê dîtin."
+          "ku": "Tîrbûn bi parvekirina hejmarên molan ên di hevsengiyê de li ser qebareyê tên dîtin"
         },
         {
           "tr": "Kc = [Ürünler] / [Girenler] bağıntısında yerine konur",
-          "en": "It is substituted into the relation Kc = [Products] / [Entrants]",
-          "de": "Es wird in die Beziehung Kc = [Produkte] / [Teilnehmer] eingesetzt.",
-          "fr": "Il se substitue à la relation Kc = [Produits] / [Entrants]",
-          "ru": "Подставляется в соотношение Кс = [Продукция]/[Абитуриенты]",
-          "ar": "يتم استبداله في العلاقة Kc = [المنتجات] / [المدخلون]",
-          "zh": "将其代入关系式 Kc = [产品] / [进入者]",
-          "ku": "Ew di têkiliya Kc = [Berhem] / [Têketî] de cih digire"
+          "en": "They are substituted into Kc = [Products] / [Reactants]",
+          "de": "Sie werden in Kc = [Produkte] / [Edukte] eingesetzt",
+          "fr": "On les remplace dans Kc = [Produits] / [Réactifs]",
+          "ru": "Их подставляют в выражение Kc = [Продукты] / [Реагенты]",
+          "ar": "تُعوَّض في العلاقة Kc = [النواتج] / [المتفاعلات]",
+          "zh": "代入Kc = [产物] / [反应物]",
+          "ku": "Di têkiliya Kc = [Hilber] / [Reaktant] de tên bicihkirin"
         }
       ]
     },
@@ -789,10 +789,10 @@ export const unit18: ChemistryUnitSeedData = {
         "tr": "Le Chatelier Sıcaklık Etkisi",
         "en": "Le Chatelier Temperature Effect",
         "de": "Le Chatelier Temperatureffekt",
-        "fr": "Effet de température du Chatelier",
+        "fr": "Effet de la température selon Le Chatelier",
         "ru": "Температурный эффект Ле Шателье",
         "ar": "تأثير درجة الحرارة لو شاتيليه",
-        "zh": "勒夏特里尔温度效应",
+        "zh": "勒夏特列原理：温度的影响",
         "ku": "Bandora germahiya Le Chatelier"
       },
       "steps": [
@@ -807,34 +807,34 @@ export const unit18: ChemistryUnitSeedData = {
           "ku": "Diyar bikin ka reaksîyon endotermîk e an exotermîk e"
         },
         {
-          "tr": "Sıcaklık artırıldığında sistem ısıyı azaltacak yöne kayar",
-          "en": "When the temperature is increased, the system shifts in the direction that reduces the heat.",
-          "de": "Wenn die Temperatur erhöht wird, verschiebt sich das System in die Richtung, die die Wärme verringert.",
-          "fr": "Lorsque la température augmente, le système se déplace dans la direction qui réduit la chaleur.",
-          "ru": "При повышении температуры система смещается в сторону уменьшения нагрева.",
-          "ar": "عند زيادة درجة الحرارة، يتحول النظام في الاتجاه الذي يقلل الحرارة.",
-          "zh": "当温度升高时，系统向减少热量的方向移动。",
-          "ku": "Dema ku germahî zêde dibe, pergal di riya ku germê kêm dike de diguhere."
+          "tr": "Isı, ekzotermik tepkimede ürünler, endotermik tepkimede girenler tarafına yazılır",
+          "en": "Heat is written on the product side for an exothermic reaction and on the reactant side for an endothermic reaction",
+          "de": "Wärme wird bei einer exothermen Reaktion auf der Produktseite, bei einer endothermen Reaktion auf der Eduktseite geschrieben",
+          "fr": "La chaleur est écrite du côté des produits pour une réaction exothermique et du côté des réactifs pour une réaction endothermique",
+          "ru": "Теплоту записывают в сторону продуктов для экзотермической реакции и в сторону реагентов для эндотермической",
+          "ar": "تُكتب الحرارة في جهة النواتج في التفاعل الطارد للحرارة، وفي جهة المتفاعلات في التفاعل الماص للحرارة",
+          "zh": "放热反应把热量写在产物一侧，吸热反应把热量写在反应物一侧",
+          "ku": "Germ di reaksiyona ekzotermîk de li aliyê hilberan, di ya endotermîk de li aliyê reaktantan tê nivîsandin"
         },
         {
-          "tr": "Ekzotermik tepkimede denge girenlere kayarak Kc azalır",
-          "en": "In an exothermic reaction, the equilibrium shifts to the reactants and Kc decreases.",
-          "de": "Bei einer exothermen Reaktion verschiebt sich das Gleichgewicht zu den Reaktanten und Kc sinkt.",
-          "fr": "Dans une réaction exothermique, l’équilibre se déplace vers les réactifs et Kc diminue.",
-          "ru": "В экзотермической реакции равновесие смещается в сторону реагентов и Kc уменьшается.",
-          "ar": "في التفاعل الطارد للحرارة، ينتقل التوازن إلى المواد المتفاعلة وتقل قيمة Kc.",
-          "zh": "在放热反应中，平衡向反应物方向移动并且 Kc 降低。",
-          "ku": "Di reaksiyonek exotermîk de, hevsengî ber bi reaktantan ve diçe û Kc kêm dibe."
+          "tr": "Sıcaklık artırıldığında denge, ısının harcandığı (endotermik) yöne kayar",
+          "en": "When the temperature is raised, the equilibrium shifts in the direction that consumes heat (the endothermic direction)",
+          "de": "Bei Temperaturerhöhung verschiebt sich das Gleichgewicht in die wärmeverbrauchende (endotherme) Richtung",
+          "fr": "Quand la température augmente, l'équilibre se déplace dans le sens qui consomme de la chaleur (sens endothermique)",
+          "ru": "При повышении температуры равновесие смещается в сторону поглощения теплоты (эндотермическое направление)",
+          "ar": "عند رفع درجة الحرارة يتجه الاتزان في الاتجاه الذي يستهلك الحرارة (الاتجاه الماص للحرارة)",
+          "zh": "升高温度时，平衡向吸收热量的方向（吸热方向）移动",
+          "ku": "Dema ku germahî tê bilindkirin, hevsengî ber bi aliyê ku germ lê tê xerckirin (endotermîk) ve diçe"
         },
         {
-          "tr": "Endotermik tepkimede denge ürünlere kayarak Kc artar",
-          "en": "In an endothermic reaction, the equilibrium shifts to the products and Kc increases.",
-          "de": "Bei einer endothermen Reaktion verschiebt sich das Gleichgewicht hin zu den Produkten und Kc steigt.",
-          "fr": "Dans une réaction endothermique, l’équilibre se déplace vers les produits et Kc augmente.",
-          "ru": "В эндотермической реакции равновесие смещается в сторону продуктов и Кс увеличивается.",
-          "ar": "في التفاعل الماص للحرارة، ينتقل التوازن إلى النواتج وتزداد Kc.",
-          "zh": "在吸热反应中，平衡向产物方向移动并且 Kc 增加。",
-          "ku": "Di reaksiyonek endotermîk de, hevsengî ber bi hilberan ve diçe û Kc zêde dibe."
+          "tr": "Denge ürünlere kaydıysa Kc artar, girenlere kaydıysa Kc azalır",
+          "en": "If the equilibrium shifts toward the products Kc increases; if it shifts toward the reactants Kc decreases",
+          "de": "Verschiebt sich das Gleichgewicht zu den Produkten, steigt Kc; verschiebt es sich zu den Edukten, sinkt Kc",
+          "fr": "Si l'équilibre se déplace vers les produits, Kc augmente ; s'il se déplace vers les réactifs, Kc diminue",
+          "ru": "Если равновесие сместилось к продуктам, Kc увеличивается; если к реагентам — Kc уменьшается",
+          "ar": "إذا اتجه الاتزان نحو النواتج تزداد Kc، وإذا اتجه نحو المتفاعلات تقل Kc",
+          "zh": "若平衡向产物方向移动，Kc增大；若向反应物方向移动，Kc减小",
+          "ku": "Ger hevsengî ber bi hilberan ve çûbe Kc zêde dibe; ger ber bi reaktantan ve çûbe Kc kêm dibe"
         }
       ]
     },
@@ -882,14 +882,14 @@ export const unit18: ChemistryUnitSeedData = {
           "ku": "Pergal diguhezîne aliyê ku kêmtir molên gazê hene."
         },
         {
-          "tr": "Yeni dengede derişimler başlangıçtan daha yüksek kalır",
-          "en": "At new equilibrium, concentrations remain higher than initial",
-          "de": "Im neuen Gleichgewicht bleiben die Konzentrationen höher als ursprünglich",
-          "fr": "Au nouvel équilibre, les concentrations restent supérieures aux valeurs initiales",
-          "ru": "При новом равновесии концентрации остаются выше первоначальных.",
-          "ar": "وفي حالة التوازن الجديد، تظل التركيزات أعلى من الأولية",
-          "zh": "在新的平衡状态下，浓度仍高于初始值",
-          "ku": "Di hevsengiya nû de, giranî ji destpêkê bilindtir dimîne"
+          "tr": "Yeni dengede gazların derişimleri ilk dengedekinden daha yüksektir",
+          "en": "At the new equilibrium, gas concentrations are higher than at the first equilibrium",
+          "de": "Im neuen Gleichgewicht sind die Gaskonzentrationen höher als im ersten Gleichgewicht",
+          "fr": "Au nouvel équilibre, les concentrations des gaz sont plus élevées qu’au premier équilibre",
+          "ru": "В новом равновесии концентрации газов выше, чем в первом равновесии",
+          "ar": "في الاتزان الجديد تكون تراكيز الغازات أعلى منها في الاتزان الأول",
+          "zh": "在新平衡中，各气体的浓度高于原平衡时",
+          "ku": "Di hevsengiya nû de tîrbûna gazan ji ya hevsengiya pêşîn bilindtir e"
         }
       ]
     }
@@ -975,13 +975,13 @@ export const unit18: ChemistryUnitSeedData = {
       "id": "u18-twin02",
       "stem": {
         "tr": "C(k) + CO2(g) ⇌ 2 CO(g) tepkimesi için Kp ile Kc arasındaki bağıntı aşağıdakilerden hangisidir?",
-        "en": "Which of the following is the relationship between Kp and Kc for the reaction C(k) + CO2(g) ⇌ 2 CO(g)?",
-        "de": "Welche der folgenden Beziehungen besteht zwischen Kp und Kc für die Reaktion C(k) + CO2(g) ⇌ 2 CO(g)?",
-        "fr": "Quelle est la relation entre Kp et Kc pour la réaction C(k) + CO2(g) ⇌ 2 CO(g) ?",
-        "ru": "Что из перечисленного является взаимосвязью между Kp и Kc для реакции C(k) + CO2(g) ⇌ 2 CO(g)?",
-        "ar": "أي مما يلي يمثل العلاقة بين Kp وKc للتفاعل C(k) + CO2(g) ⇌ 2 CO(g)؟",
-        "zh": "对于 C(k) + CO2(g) ⇌ 2 CO(g) 反应，Kp 和 Kc 之间存在以下哪项关系？",
-        "ku": "Têkiliya Kp û Kc ji bo reaksiyona C(k) + CO2(g) ⇌ 2 CO(g) ji kîjan ji van jêrîn e?"
+        "en": "Which of the following is the relationship between Kp and Kc for the reaction C(s) + CO2(g) ⇌ 2 CO(g)?",
+        "de": "Welche der folgenden Beziehungen besteht zwischen Kp und Kc für die Reaktion C(s) + CO2(g) ⇌ 2 CO(g)?",
+        "fr": "Quelle est la relation entre Kp et Kc pour la réaction C(s) + CO2(g) ⇌ 2 CO(g) ?",
+        "ru": "Что из перечисленного является взаимосвязью между Kp и Kc для реакции C(s) + CO2(g) ⇌ 2 CO(g)?",
+        "ar": "أي مما يلي يمثل العلاقة بين Kp وKc للتفاعل C(s) + CO2(g) ⇌ 2 CO(g)؟",
+        "zh": "对于 C(s) + CO2(g) ⇌ 2 CO(g) 反应，Kp 和 Kc 之间存在以下哪项关系？",
+        "ku": "Têkiliya Kp û Kc ji bo reaksiyona C(s) + CO2(g) ⇌ 2 CO(g) ji kîjan ji van jêrîn e?"
       },
       "options": [
         {
@@ -1037,13 +1037,13 @@ export const unit18: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Δn = n_ürün(gaz) - n_giren(gaz) = 2 - 1 = 1 dir (C katıdır, alınmaz). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT).",
-        "en": "Δn = n_product(gas) - n_enter(gas) = ​​2 - 1 = 1 (C is a solid, not taken). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT).",
-        "de": "Δn = n_product(gas) – n_enter(gas) = ​​​​2 – 1 = 1 (C ist ein Feststoff, nicht genommen). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT).",
-        "fr": "Δn = n_product(gas) - n_enter(gas) = ​​​​2 - 1 = 1 (C est un solide, non pris). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT).",
-        "ru": "Δn = n_product(gas) - n_enter(gas) = ​​2 - 1 = 1 (C - твердое вещество, не взято). Кр = Кс * (RT)^Δn = Кс * (RT)^1 = Кс * (RT).",
-        "ar": "Δn = n_product(gas) - n_enter(gas) = ​​​​2 - 1 = 1 (C مادة صلبة، غير مأخوذة). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT).",
-        "zh": "Δn = n_product(gas) - n_enter(gas) =​​ 2 - 1 = 1（C为固体，未取）。 Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT)。",
+        "tr": "Δn = n_ürün(gaz) - n_giren(gaz) = 2 - 1 = 1 dir (C katıdır, hesaba katılmaz). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT).",
+        "en": "Δn = n_product(gas) - n_enter(gas) = 2 - 1 = 1 (C is a solid, not taken). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT).",
+        "de": "Δn = n_product(gas) – n_enter(gas) = 2 – 1 = 1 (C ist ein Feststoff, nicht genommen). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT).",
+        "fr": "Δn = n_product(gas) - n_enter(gas) = 2 - 1 = 1 (C est un solide, non pris). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT).",
+        "ru": "Δn = n_product(gas) - n_enter(gas) = 2 - 1 = 1 (C - твердое вещество, не взято). Кр = Кс * (RT)^Δn = Кс * (RT)^1 = Кс * (RT).",
+        "ar": "Δn = n_product(gas) - n_enter(gas) = 2 - 1 = 1 (C مادة صلبة، غير مأخوذة). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT).",
+        "zh": "Δn = n_product(gas) - n_enter(gas) = 2 - 1 = 1（C为固体，未取）。 Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT)。",
         "ku": "Δn = n_hilber (gaz) - n_enter (gaz) = 2 - 1 = 1 (C hişk e, nayê girtin). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT)."
       }
     },
@@ -1092,13 +1092,13 @@ export const unit18: ChemistryUnitSeedData = {
         },
         {
           "tr": "Saf katıların derişimleri denge kesrinde paydada yer alır.",
-          "en": "The concentrations of pure solids are included in the denominator of the equilibrium fraction.",
-          "de": "Die Konzentrationen reiner Feststoffe gehen in den Nenner des Gleichgewichtsanteils ein.",
-          "fr": "Les concentrations de solides purs sont incluses dans le dénominateur de la fraction d'équilibre.",
-          "ru": "Концентрации чистых твердых веществ включаются в знаменатель равновесной фракции.",
-          "ar": "يتم تضمين تركيزات المواد الصلبة النقية في مقام جزء التوازن.",
-          "zh": "纯固体的浓度包含在平衡分数的分母中。",
-          "ku": "Giraniyên maddeyên safî di nav danûstendina beşa hevsengiyê de cih digirin."
+          "en": "The concentrations of pure solids appear in the denominator of the equilibrium expression.",
+          "de": "Die Konzentrationen reiner Feststoffe stehen im Nenner des Gleichgewichtsausdrucks.",
+          "fr": "Les concentrations des solides purs figurent au dénominateur de l'expression d'équilibre.",
+          "ru": "Концентрации чистых твёрдых веществ входят в знаменатель выражения константы равновесия.",
+          "ar": "تظهر تراكيز المواد الصلبة النقية في مقام تعبير الاتزان.",
+          "zh": "纯固体的浓度出现在平衡表达式的分母中。",
+          "ku": "Tîrbûna hişkên saf di kesra hevsengiyê de li jêrê (di parvekerê de) cih digire."
         },
         {
           "tr": "Tepkimeler toplandığında denge sabitleri de birbiriyle toplanır.",
@@ -1118,7 +1118,7 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Die Gleichgewichtskonstante Kc variiert nur mit der Temperatur; Konzentration, Druck, Volumen oder Katalysator verändern Kc NICHT.\". ÖSYM-Regel: Der EINZIGE Faktor, der Kc verändert, ist die Temperatur!",
         "fr": "L'affirmation exacte est: \"La constante d'équilibre Kc ne varie qu'avec la température ; la concentration, la pression, le volume ou le catalyseur ne change PAS Kc.\". Règle ÖSYM : le SEUL facteur qui modifie Kc est la température !",
         "ru": "Правильное утверждение: «Константа равновесия Кс меняется только с температурой; концентрация, давление, объем или катализатор НЕ изменяют Kc.». Правило ÖSYM: ЕДИНСТВЕННЫЙ фактор, который меняет Kc, — это температура!",
-        "ar": "العبارة الصحيحة هي: \"يتغير ثابت التوازن Kc فقط مع درجة الحرارة؛ التركيز أو الضغط أو الحجم أو المحفز لا يغير Kc.\". قاعدة ÖSYM: العامل الوحيد الذي يغير درجة الحرارة هو درجة الحرارة!",
+        "ar": "العبارة الصحيحة هي: \"يتغير ثابت التوازن Kc فقط مع درجة الحرارة؛ التركيز أو الضغط أو الحجم أو المحفز لا يغير Kc.\". قاعدة ÖSYM: العامل الوحيد الذي يغيّر Kc هو درجة الحرارة!",
         "zh": "正确表述为：“平衡常数Kc仅随温度变化；浓度、压力、体积或催化剂不会改变 Kc。”。ÖSYM 规则：改变 Kc 的唯一因素是温度！",
         "ku": "Gotina rast ev e: \"Berdewamiya hevsengiyê Kc tenê bi germahiyê diguhere; konsantasyon, zext, cild an katalîzator Kc naguhere.\". Qanûna ÖSYM: TENÊ faktora ku Kc diguherîne germahî ye!"
       }
@@ -1173,7 +1173,7 @@ export const unit18: ChemistryUnitSeedData = {
           "fr": "La relation entre Kp et Kc est : Kp = Kc * (R*T)^Δn (Δn : somme des coefficients des produits en phase gazeuse - somme des coefficients des réactifs).",
           "ru": "Связь между Kp и Kc следующая: Kp = Kc * (R*T)^Δn (Δn: сумма коэффициентов продуктов в газовой фазе - сумма коэффициентов реагентов).",
           "ar": "العلاقة بين Kp وKc هي: Kp = Kc * (R*T)^Δn (Δn: مجموع معاملات الناتج في الطور الغازي - مجموع معاملات المواد المتفاعلة).",
-          "zh": "Kp与Kc的关系为：Kp=Kc*(R*T)^Δn（Δn：气相乘积系数之和-反应物系数之和）。",
+          "zh": "Kp与Kc的关系为：Kp = Kc * (R*T)^Δn（Δn：气态产物系数之和 - 气态反应物系数之和）。",
           "ku": "Têkiliya di navbera Kp û Kc de ev e: Kp = Kc * (R*T)^Δn (Δn: berhevoka hevberên hilberan ên di qonaxa gazê de - berhevoka hevberên reaktant)."
         },
         {
@@ -1195,7 +1195,7 @@ export const unit18: ChemistryUnitSeedData = {
         "fr": "L'affirmation exacte est: \"La relation entre Kp et Kc est : Kp = Kc * (R*T)^Δn (Δn : somme des coefficients des produits en phase gazeuse - somme des coefficients des réactifs).\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Связь между Kp и Kc следующая: Kp = Kc * (R*T)^Δn (Δn: сумма коэффициентов продуктов в газовой фазе - сумма коэффициентов реагентов).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"العلاقة بين Kp وKc هي: Kp = Kc * (R*T)^Δn (Δn: مجموع معاملات الناتج في الطور الغازي - مجموع معاملات المواد المتفاعلة).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“Kp与Kc的关系为：Kp=Kc*(R*T)^Δn（Δn：气相乘积系数之和-反应物系数之和）。”。属于化学学科必考的核心客观真理。",
+        "zh": "正确表述为：“Kp与Kc的关系为：Kp = Kc * (R*T)^Δn（Δn：气态产物系数之和 - 气态反应物系数之和）。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Têkiliya di navbera Kp û Kc de ev e: Kp = Kc * (R*T)^Δn (Δn: berhevoka hevberên hilberan ên di qonaxa gazê de - berhevoka hevberên reaktant).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
@@ -1240,7 +1240,7 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "Если реакцию умножить на 2, Kc также умножится на 2.",
           "ar": "إذا تم ضرب التفاعل بـ 2، يتم ضرب Kc أيضًا بـ 2.",
           "zh": "如果反应乘以 2，则 Kc 也乘以 2。",
-          "ku": "Ger reaksîyon bi 2-yê pirtir bibe, Kc jî bi 2-yê tê zêdekirin."
+          "ku": "Ger reaksiyon bi 2 were carkirin, Kc jî bi 2 tê carkirin."
         },
         {
           "tr": "Denge kurulduğunda tüm kimyasal tepkimeler ve tanecik hareketleri tamamen durur.",
@@ -1310,13 +1310,13 @@ export const unit18: ChemistryUnitSeedData = {
         },
         {
           "tr": "Saf katıların derişimleri denge kesrinde paydada yer alır.",
-          "en": "The concentrations of pure solids are included in the denominator of the equilibrium fraction.",
-          "de": "Die Konzentrationen reiner Feststoffe gehen in den Nenner des Gleichgewichtsanteils ein.",
-          "fr": "Les concentrations de solides purs sont incluses dans le dénominateur de la fraction d'équilibre.",
-          "ru": "Концентрации чистых твердых веществ включаются в знаменатель равновесной фракции.",
-          "ar": "يتم تضمين تركيزات المواد الصلبة النقية في مقام جزء التوازن.",
-          "zh": "纯固体的浓度包含在平衡分数的分母中。",
-          "ku": "Giraniyên maddeyên safî di nav danûstendina beşa hevsengiyê de cih digirin."
+          "en": "The concentrations of pure solids appear in the denominator of the equilibrium expression.",
+          "de": "Die Konzentrationen reiner Feststoffe stehen im Nenner des Gleichgewichtsausdrucks.",
+          "fr": "Les concentrations des solides purs figurent au dénominateur de l'expression d'équilibre.",
+          "ru": "Концентрации чистых твёрдых веществ входят в знаменатель выражения константы равновесия.",
+          "ar": "تظهر تراكيز المواد الصلبة النقية في مقام تعبير الاتزان.",
+          "zh": "纯固体的浓度出现在平衡表达式的分母中。",
+          "ku": "Tîrbûna hişkên saf di kesra hevsengiyê de li jêrê (di parvekerê de) cih digire."
         },
         {
           "tr": "Tepkimeler toplandığında denge sabitleri de birbiriyle toplanır.",
@@ -1412,7 +1412,7 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "При добавлении катализатора константа равновесия Kc системы увеличивается.",
           "ar": "عند إضافة محفز، يزداد ثابت التوازن Kc للنظام.",
           "zh": "当添加催化剂时，体系的平衡常数Kc增加。",
-          "ku": "Dema ku katalîzatorek tê zêdekirin, hevsengiya hevsengiya Kc ya pergalê zêde dibe."
+          "ku": "Dema ku katalîzator tê zêdekirin, sabîta hevsengiyê Kc ya pergalê mezin dibe."
         }
       ],
       "correctIndex": 1,
@@ -1458,7 +1458,7 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "Если реакцию умножить на 2, Kc также умножится на 2.",
           "ar": "إذا تم ضرب التفاعل بـ 2، يتم ضرب Kc أيضًا بـ 2.",
           "zh": "如果反应乘以 2，则 Kc 也乘以 2。",
-          "ku": "Ger reaksîyon bi 2-yê pirtir bibe, Kc jî bi 2-yê tê zêdekirin."
+          "ku": "Ger reaksiyon bi 2 were carkirin, Kc jî bi 2 tê carkirin."
         },
         {
           "tr": "Ekzotermik tepkimelerde (ΔH < 0) sıcaklık artırılırsa denge girenler lehine kayar ve Kc azalır.",
@@ -1518,13 +1518,13 @@ export const unit18: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Saf katıların derişimleri denge kesrinde paydada yer alır.",
-          "en": "The concentrations of pure solids are included in the denominator of the equilibrium fraction.",
-          "de": "Die Konzentrationen reiner Feststoffe gehen in den Nenner des Gleichgewichtsanteils ein.",
-          "fr": "Les concentrations de solides purs sont incluses dans le dénominateur de la fraction d'équilibre.",
-          "ru": "Концентрации чистых твердых веществ включаются в знаменатель равновесной фракции.",
-          "ar": "يتم تضمين تركيزات المواد الصلبة النقية في مقام جزء التوازن.",
-          "zh": "纯固体的浓度包含在平衡分数的分母中。",
-          "ku": "Giraniyên maddeyên safî di nav danûstendina beşa hevsengiyê de cih digirin."
+          "en": "The concentrations of pure solids appear in the denominator of the equilibrium expression.",
+          "de": "Die Konzentrationen reiner Feststoffe stehen im Nenner des Gleichgewichtsausdrucks.",
+          "fr": "Les concentrations des solides purs figurent au dénominateur de l'expression d'équilibre.",
+          "ru": "Концентрации чистых твёрдых веществ входят в знаменатель выражения константы равновесия.",
+          "ar": "تظهر تراكيز المواد الصلبة النقية في مقام تعبير الاتزان.",
+          "zh": "纯固体的浓度出现在平衡表达式的分母中。",
+          "ku": "Tîrbûna hişkên saf di kesra hevsengiyê de li jêrê (di parvekerê de) cih digire."
         },
         {
           "tr": "Tepkimeler toplandığında denge sabitleri de birbiriyle toplanır.",
@@ -1620,7 +1620,7 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "При добавлении катализатора константа равновесия Kc системы увеличивается.",
           "ar": "عند إضافة محفز، يزداد ثابت التوازن Kc للنظام.",
           "zh": "当添加催化剂时，体系的平衡常数Kc增加。",
-          "ku": "Dema ku katalîzatorek tê zêdekirin, hevsengiya hevsengiya Kc ya pergalê zêde dibe."
+          "ku": "Dema ku katalîzator tê zêdekirin, sabîta hevsengiyê Kc ya pergalê mezin dibe."
         },
         {
           "tr": "Dengedeki sisteme madde eklenirse sistem o maddenin derişimini daha da artıracak yöne kayar.",
@@ -1670,13 +1670,13 @@ export const unit18: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Denge kesri Qc = Kc ise sistem dengededir; Qc < Kc ise ürünlere kayar; Qc > Kc ise girenlere kayar.",
-          "en": "If the equilibrium fraction Qc = Kc, the system is in equilibrium; If Qc < Kc, it shifts to products; If Qc > Kc, it shifts to the reactants.",
-          "de": "Wenn der Gleichgewichtsanteil Qc = Kc ist, befindet sich das System im Gleichgewicht; Wenn Qc < Kc, verlagert es sich auf Produkte; Wenn Qc > Kc, verlagert es sich auf die Reaktanten.",
-          "fr": "Si la fraction d'équilibre Qc = Kc, le système est en équilibre ; Si Qc < Kc, cela se déplace vers les produits ; Si Qc > Kc, cela se déplace vers les réactifs.",
-          "ru": "Если равновесная доля Qc = Kc, система находится в равновесии; Если Qc < Kc, он переходит к продуктам; Если Qc > Kc, то он переходит к реагентам.",
-          "ar": "إذا كان جزء التوازن Qc = Kc، يكون النظام في حالة توازن؛ إذا كانت Qc <Kc، فإنها تتحول إلى المنتجات؛ إذا كانت Qc > Kc، فإنها تنتقل إلى المواد المتفاعلة.",
-          "zh": "若平衡分数Qc = Kc，则系统处于平衡状态；如果 Qc < Kc，则转向乘积；如果 Qc > Kc，则转移到反应物。",
-          "ku": "Ger para hevsengiyê Qc = Kc, sîstem di hevsengiyê de ye; Ger Qc < Kc, ew ​​ber bi hilberan ve diguhere; Ger Qc > Kc, ew ​​berbi reaktantan ve diguhere."
+          "en": "If the reaction quotient Qc = Kc, the system is at equilibrium; if Qc < Kc, it shifts toward the products; if Qc > Kc, it shifts toward the reactants.",
+          "de": "Ist der Reaktionsquotient Qc = Kc, befindet sich das System im Gleichgewicht; ist Qc < Kc, verschiebt es sich zu den Produkten; ist Qc > Kc, verschiebt es sich zu den Edukten.",
+          "fr": "Si le quotient de réaction Qc = Kc, le système est à l'équilibre ; si Qc < Kc, il évolue vers les produits ; si Qc > Kc, il évolue vers les réactifs.",
+          "ru": "Если коэффициент реакции Qc = Kc, система находится в равновесии; если Qc < Kc, она смещается в сторону продуктов; если Qc > Kc — в сторону реагентов.",
+          "ar": "إذا كان حاصل التفاعل Qc = Kc فالنظام في حالة اتزان؛ وإذا كان Qc < Kc يتجه نحو النواتج؛ وإذا كان Qc > Kc يتجه نحو المتفاعلات.",
+          "zh": "若反应商Qc = Kc，体系处于平衡；若Qc < Kc，平衡向产物方向移动；若Qc > Kc，向反应物方向移动。",
+          "ku": "Ger kesra hevsengiyê Qc = Kc be, pergal di hevsengiyê de ye; ger Qc < Kc be, ber bi hilberan ve diçe; ger Qc > Kc be, ber bi reaktantan ve diçe."
         },
         {
           "tr": "Tepkime 2 ile çarpılırsa Kc de 2 ile çarpılır.",
@@ -1686,7 +1686,7 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "Если реакцию умножить на 2, Kc также умножится на 2.",
           "ar": "إذا تم ضرب التفاعل بـ 2، يتم ضرب Kc أيضًا بـ 2.",
           "zh": "如果反应乘以 2，则 Kc 也乘以 2。",
-          "ku": "Ger reaksîyon bi 2-yê pirtir bibe, Kc jî bi 2-yê tê zêdekirin."
+          "ku": "Ger reaksiyon bi 2 were carkirin, Kc jî bi 2 tê carkirin."
         },
         {
           "tr": "Denge kurulduğunda tüm kimyasal tepkimeler ve tanecik hareketleri tamamen durur.",
@@ -1722,13 +1722,13 @@ export const unit18: ChemistryUnitSeedData = {
       "correctIndex": 0,
       "explanation": {
         "tr": "Doğru cevap \"Denge kesri Qc = Kc ise sistem dengededir; Qc < Kc ise ürünlere kayar; Qc > Kc ise girenlere kayar.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"If the equilibrium fraction Qc = Kc, the system is in equilibrium; If Qc < Kc, it shifts to products; If Qc > Kc, it shifts to the reactants.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Wenn der Gleichgewichtsanteil Qc = Kc ist, befindet sich das System im Gleichgewicht; Wenn Qc < Kc, verlagert es sich auf Produkte; Wenn Qc > Kc, verlagert es sich auf die Reaktanten.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Si la fraction d'équilibre Qc = Kc, le système est en équilibre ; Si Qc < Kc, cela se déplace vers les produits ; Si Qc > Kc, cela se déplace vers les réactifs.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Если равновесная доля Qc = Kc, система находится в равновесии; Если Qc < Kc, он переходит к продуктам; Если Qc > Kc, то он переходит к реагентам.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"إذا كان جزء التوازن Qc = Kc، يكون النظام في حالة توازن؛ إذا كانت Qc <Kc، فإنها تتحول إلى المنتجات؛ إذا كانت Qc > Kc، فإنها تنتقل إلى المواد المتفاعلة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“若平衡分数Qc = Kc，则系统处于平衡状态；如果 Qc < Kc，则转向乘积；如果 Qc > Kc，则转移到反应物。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger para hevsengiyê Qc = Kc, sîstem di hevsengiyê de ye; Ger Qc < Kc, ew ​​ber bi hilberan ve diguhere; Ger Qc > Kc, ew ​​berbi reaktantan ve diguhere.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"If the reaction quotient Qc = Kc, the system is at equilibrium; if Qc < Kc, it shifts toward the products; if Qc > Kc, it shifts toward the reactants.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Ist der Reaktionsquotient Qc = Kc, befindet sich das System im Gleichgewicht; ist Qc < Kc, verschiebt es sich zu den Produkten; ist Qc > Kc, verschiebt es sich zu den Edukten.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Si le quotient de réaction Qc = Kc, le système est à l'équilibre ; si Qc < Kc, il évolue vers les produits ; si Qc > Kc, il évolue vers les réactifs.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Если коэффициент реакции Qc = Kc, система находится в равновесии; если Qc < Kc, она смещается в сторону продуктов; если Qc > Kc — в сторону реагентов.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"إذا كان حاصل التفاعل Qc = Kc فالنظام في حالة اتزان؛ وإذا كان Qc < Kc يتجه نحو النواتج؛ وإذا كان Qc > Kc يتجه نحو المتفاعلات.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“若反应商Qc = Kc，体系处于平衡；若Qc < Kc，平衡向产物方向移动；若Qc > Kc，向反应物方向移动。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Ger kesra hevsengiyê Qc = Kc be, pergal di hevsengiyê de ye; ger Qc < Kc be, ber bi hilberan ve diçe; ger Qc > Kc be, ber bi reaktantan ve diçe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1755,14 +1755,14 @@ export const unit18: ChemistryUnitSeedData = {
           "ku": "Dema ku reaksîyon li hev tên zêdekirin, sabitên hevsengiyê jî li hev tên zêdekirin."
         },
         {
-          "tr": "Denge bağıntısına yalnızca gazlar ve suda çözünmüş (aq) iyonlar yazılır; saf katı ve sıvılar yazılmaz.",
-          "en": "Only gases and ions dissolved in water (aq) are entered into the equilibrium equation; Pure solids and liquids are not written.",
-          "de": "In die Gleichgewichtsgleichung gehen nur in Wasser (aq) gelöste Gase und Ionen ein; Reine Feststoffe und Flüssigkeiten werden nicht beschrieben.",
-          "fr": "Seuls les gaz et les ions dissous dans l'eau (aq) entrent dans l'équation d'équilibre ; Les solides et liquides purs ne sont pas écrits.",
-          "ru": "В уравнение равновесия входят только газы и ионы, растворенные в воде (водн.); Чистые твердые тела и жидкости не пишутся.",
-          "ar": "يتم إدخال الغازات والأيونات الذائبة في الماء فقط في معادلة التوازن؛ لا يتم كتابة المواد الصلبة والسوائل النقية.",
-          "zh": "只有溶解在水（aq）中的气体和离子才进入平衡方程；没有写出纯固体和液体。",
-          "ku": "Tenê gaz û îyonên ku di avê de (aq) hatine helandin, dikevin nav hevsengiya hevsengiyê; Tiştên safî û şil nayên nivîsandin."
+          "tr": "Denge bağıntısına yalnızca gazlar ve suda çözünmüş (aq) maddeler yazılır; saf katı ve sıvılar yazılmaz.",
+          "en": "Only gases and substances dissolved in water (aq) are written in the equilibrium expression; pure solids and liquids are not written.",
+          "de": "In den Gleichgewichtsausdruck werden nur Gase und in Wasser gelöste Stoffe (aq) aufgenommen; reine Feststoffe und Flüssigkeiten werden nicht geschrieben.",
+          "fr": "Seuls les gaz et les substances dissoutes dans l'eau (aq) figurent dans l'expression d'équilibre ; les solides et liquides purs n'y sont pas écrits.",
+          "ru": "В выражение константы равновесия записываются только газы и вещества, растворённые в воде (водн.); чистые твёрдые вещества и жидкости не записываются.",
+          "ar": "لا يُكتب في تعبير الاتزان إلا الغازات والمواد المذابة في الماء (aq)؛ أما المواد الصلبة والسوائل النقية فلا تُكتب.",
+          "zh": "平衡表达式中只写气体和溶于水的物质（aq）；纯固体和纯液体不写入。",
+          "ku": "Di têkiliya hevsengiyê de tenê gaz û maddeyên di avê de helandî (aq) tên nivîsandin; hişk û şilên saf nayên nivîsandin."
         },
         {
           "tr": "Dengeye ulaşan bir sistemde girenlerin ve ürünlerin derişimleri daima eşittir.",
@@ -1797,14 +1797,14 @@ export const unit18: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"Denge bağıntısına yalnızca gazlar ve suda çözünmüş (aq) iyonlar yazılır; saf katı ve sıvılar yazılmaz.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Only gases and ions dissolved in water (aq) are entered into the equilibrium equation; Pure solids and liquids are not written.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"In die Gleichgewichtsgleichung gehen nur in Wasser (aq) gelöste Gase und Ionen ein; Reine Feststoffe und Flüssigkeiten werden nicht beschrieben.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Seuls les gaz et les ions dissous dans l'eau (aq) entrent dans l'équation d'équilibre ; Les solides et liquides purs ne sont pas écrits.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «В уравнение равновесия входят только газы и ионы, растворенные в воде (водн.); Чистые твердые тела и жидкости не пишутся.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"يتم إدخال الغازات والأيونات الذائبة في الماء فقط في معادلة التوازن؛ لا يتم كتابة المواد الصلبة والسوائل النقية.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“只有溶解在水（aq）中的气体和离子才进入平衡方程；没有写出纯固体和液体。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Tenê gaz û îyonên ku di avê de (aq) hatine helandin, dikevin nav hevsengiya hevsengiyê; Tiştên safî û şil nayên nivîsandin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Denge bağıntısına yalnızca gazlar ve suda çözünmüş (aq) maddeler yazılır; saf katı ve sıvılar yazılmaz.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Only gases and substances dissolved in water (aq) are written in the equilibrium expression; pure solids and liquids are not written.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"In den Gleichgewichtsausdruck werden nur Gase und in Wasser gelöste Stoffe (aq) aufgenommen; reine Feststoffe und Flüssigkeiten werden nicht geschrieben.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Seuls les gaz et les substances dissoutes dans l'eau (aq) figurent dans l'expression d'équilibre ; les solides et liquides purs n'y sont pas écrits.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «В выражение константы равновесия записываются только газы и вещества, растворённые в воде (водн.); чистые твёрдые вещества и жидкости не записываются.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"لا يُكتب في تعبير الاتزان إلا الغازات والمواد المذابة في الماء (aq)؛ أما المواد الصلبة والسوائل النقية فلا تُكتب.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“平衡表达式中只写气体和溶于水的物质（aq）；纯固体和纯液体不写入。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di têkiliya hevsengiyê de tenê gaz û maddeyên di avê de helandî (aq) tên nivîsandin; hişk û şilên saf nayên nivîsandin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1838,17 +1838,17 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "При добавлении катализатора константа равновесия Kc системы увеличивается.",
           "ar": "عند إضافة محفز، يزداد ثابت التوازن Kc للنظام.",
           "zh": "当添加催化剂时，体系的平衡常数Kc增加。",
-          "ku": "Dema ku katalîzatorek tê zêdekirin, hevsengiya hevsengiya Kc ya pergalê zêde dibe."
+          "ku": "Dema ku katalîzator tê zêdekirin, sabîta hevsengiyê Kc ya pergalê mezin dibe."
         },
         {
           "tr": "Tepkime ters çevrilirse yeni denge sabiti Kc_yeni = 1 / Kc olur.",
           "en": "If the reaction is reversed, the new equilibrium constant is Kc_new = 1 / Kc.",
-          "de": "Wenn die Reaktion umgekehrt ist, ist die neue Gleichgewichtskonstante Kc_new = 1 / Kc.",
+          "de": "Wird die Reaktion umgekehrt geschrieben, ist die neue Gleichgewichtskonstante Kc_new = 1 / Kc.",
           "fr": "Si la réaction est inversée, la nouvelle constante d'équilibre est Kc_new = 1 / Kc.",
-          "ru": "Если реакция обратима, новая константа равновесия равна Kc_new = 1/Kc.",
+          "ru": "Если реакцию записать в обратном направлении, новая константа равновесия Kc_new = 1/Kc.",
           "ar": "إذا تم عكس التفاعل، فإن ثابت التوازن الجديد هو Kc_new = 1 / Kc.",
           "zh": "如果反应逆转，则新的平衡常数为 Kc_new = 1 / Kc。",
-          "ku": "Ger reaksîyon berevajî be, berdewamiya hevsengiya nû Kc_new = 1 / Kc ye."
+          "ku": "Ger reaksiyon berevajî were nivîsandin, sabîta hevsengiyê ya nû Kc_new = 1 / Kc ye."
         },
         {
           "tr": "Dengedeki sisteme madde eklenirse sistem o maddenin derişimini daha da artıracak yöne kayar.",
@@ -1875,12 +1875,12 @@ export const unit18: ChemistryUnitSeedData = {
       "explanation": {
         "tr": "Doğru cevap \"Tepkime ters çevrilirse yeni denge sabiti Kc_yeni = 1 / Kc olur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"If the reaction is reversed, the new equilibrium constant is Kc_new = 1 / Kc.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Wenn die Reaktion umgekehrt ist, ist die neue Gleichgewichtskonstante Kc_new = 1 / Kc.\". Gesichertes chemisches Grundprinzip.",
+        "de": "Die zutreffende Aussage lautet: \"Wird die Reaktion umgekehrt geschrieben, ist die neue Gleichgewichtskonstante Kc_new = 1 / Kc.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Si la réaction est inversée, la nouvelle constante d'équilibre est Kc_new = 1 / Kc.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Если реакция обратима, новая константа равновесия равна Kc_new = 1/Kc.». Фундаментальный химический факт официальной программы.",
+        "ru": "Правильное утверждение: «Если реакцию записать в обратном направлении, новая константа равновесия Kc_new = 1/Kc.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"إذا تم عكس التفاعل، فإن ثابت التوازن الجديد هو Kc_new = 1 / Kc.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“如果反应逆转，则新的平衡常数为 Kc_new = 1 / Kc。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger reaksîyon berevajî be, berdewamiya hevsengiya nû Kc_new = 1 / Kc ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Ger reaksiyon berevajî were nivîsandin, sabîta hevsengiyê ya nû Kc_new = 1 / Kc ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1934,7 +1934,7 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "Если реакция умножается на коэффициент n, новая константа равновесия становится Kc_new = (Kc)^n.",
           "ar": "إذا تم ضرب التفاعل في المعامل n، يصبح ثابت التوازن الجديد Kc_new = (Kc)^n.",
           "zh": "如果反应乘以系数n，则新的平衡常数变为Kc_new = (Kc)^n。",
-          "ku": "Ger reaksîyon bi hevsengiya n-yê were zêdekirin, domdariya hevsengiya nû dibe Kc_new = (Kc)^n."
+          "ku": "Ger reaksiyon bi hejmara n were carkirin, sabîta hevsengiyê ya nû dibe Kc_new = (Kc)^n."
         },
         {
           "tr": "Hacim küçültüldüğünde sistem gaz mol sayısının çok olduğu yöne kayar.",
@@ -1956,7 +1956,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Если реакция умножается на коэффициент n, новая константа равновесия становится Kc_new = (Kc)^n.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"إذا تم ضرب التفاعل في المعامل n، يصبح ثابت التوازن الجديد Kc_new = (Kc)^n.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“如果反应乘以系数n，则新的平衡常数变为Kc_new = (Kc)^n。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger reaksîyon bi hevsengiya n-yê were zêdekirin, domdariya hevsengiya nû dibe Kc_new = (Kc)^n.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Ger reaksiyon bi hejmara n were carkirin, sabîta hevsengiyê ya nû dibe Kc_new = (Kc)^n.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2020,7 +2020,7 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "Если реакции суммируются, константы равновесия перемножаются (Kc_net = Kc1 * Kc2).",
           "ar": "إذا تم جمع التفاعلات، يتم ضرب ثوابت التوازن معًا (Kc_net = Kc1 * Kc2).",
           "zh": "如果将反应相加，则平衡常数相乘 (Kc_net = Kc1 * Kc2)。",
-          "ku": "Ger reaksîyon bên berhevkirin, sabitên hevsengiyê bi hev re têne zêdekirin (Kc_net = Kc1 * Kc2)."
+          "ku": "Ger reaksiyon bên berhevkirin, sabîtên hevsengiyê bi hev re tên carkirin (Kc_net = Kc1 * Kc2)."
         }
       ],
       "correctIndex": 4,
@@ -2032,7 +2032,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Если реакции суммируются, константы равновесия перемножаются (Kc_net = Kc1 * Kc2).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"إذا تم جمع التفاعلات، يتم ضرب ثوابت التوازن معًا (Kc_net = Kc1 * Kc2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“如果将反应相加，则平衡常数相乘 (Kc_net = Kc1 * Kc2)。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger reaksîyon bên berhevkirin, sabitên hevsengiyê bi hev re têne zêdekirin (Kc_net = Kc1 * Kc2).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Ger reaksiyon bên berhevkirin, sabîtên hevsengiyê bi hev re tên carkirin (Kc_net = Kc1 * Kc2).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2055,8 +2055,8 @@ export const unit18: ChemistryUnitSeedData = {
           "fr": "La tendance minimale de l'énergie est vers le côté où il y a de la chaleur, la tendance maximale du désordre est vers le côté où le nombre de moles de gaz est élevé.",
           "ru": "Минимальная тенденция энергии наблюдается в сторону тепла, максимальная тенденция беспорядка — в сторону, где количество молей газа велико.",
           "ar": "الحد الأدنى لميل الطاقة يكون نحو الجانب الذي توجد فيه الحرارة، والحد الأقصى لميل الاضطراب يكون نحو الجانب الذي يكون فيه عدد مولات الغاز مرتفعًا.",
-          "zh": "能量趋势最小的是有热量的一侧，无序趋势最大的是气体摩尔数高的一侧。",
-          "ku": "Meyla enerjiyê ya herî hindik ber bi aliyê ku germ lê heye, meyla herî zêde ya nexweşiyê ber bi aliyê ku hejmara molên gazê lê zêde ye ye."
+          "zh": "最低能量趋势指向写有热量的一侧，最大无序趋势指向气体摩尔数较多的一侧。",
+          "ku": "Meyla enerjiya herî kêm ber bi aliyê ku germ lê hatiye nivîsandin e; meyla bêrêziya herî zêde ber bi aliyê ku hejmara molên gazê lê zêde ye."
         },
         {
           "tr": "Katalizör eklendiğinde sistemin denge sabiti Kc büyür.",
@@ -2066,7 +2066,7 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "При добавлении катализатора константа равновесия Kc системы увеличивается.",
           "ar": "عند إضافة محفز، يزداد ثابت التوازن Kc للنظام.",
           "zh": "当添加催化剂时，体系的平衡常数Kc增加。",
-          "ku": "Dema ku katalîzatorek tê zêdekirin, hevsengiya hevsengiya Kc ya pergalê zêde dibe."
+          "ku": "Dema ku katalîzator tê zêdekirin, sabîta hevsengiyê Kc ya pergalê mezin dibe."
         },
         {
           "tr": "Dengedeki sisteme madde eklenirse sistem o maddenin derişimini daha da artıracak yöne kayar.",
@@ -2090,13 +2090,13 @@ export const unit18: ChemistryUnitSeedData = {
         },
         {
           "tr": "Saf katıların derişimleri denge kesrinde paydada yer alır.",
-          "en": "The concentrations of pure solids are included in the denominator of the equilibrium fraction.",
-          "de": "Die Konzentrationen reiner Feststoffe gehen in den Nenner des Gleichgewichtsanteils ein.",
-          "fr": "Les concentrations de solides purs sont incluses dans le dénominateur de la fraction d'équilibre.",
-          "ru": "Концентрации чистых твердых веществ включаются в знаменатель равновесной фракции.",
-          "ar": "يتم تضمين تركيزات المواد الصلبة النقية في مقام جزء التوازن.",
-          "zh": "纯固体的浓度包含在平衡分数的分母中。",
-          "ku": "Giraniyên maddeyên safî di nav danûstendina beşa hevsengiyê de cih digirin."
+          "en": "The concentrations of pure solids appear in the denominator of the equilibrium expression.",
+          "de": "Die Konzentrationen reiner Feststoffe stehen im Nenner des Gleichgewichtsausdrucks.",
+          "fr": "Les concentrations des solides purs figurent au dénominateur de l'expression d'équilibre.",
+          "ru": "Концентрации чистых твёрдых веществ входят в знаменатель выражения константы равновесия.",
+          "ar": "تظهر تراكيز المواد الصلبة النقية في مقام تعبير الاتزان.",
+          "zh": "纯固体的浓度出现在平衡表达式的分母中。",
+          "ku": "Tîrbûna hişkên saf di kesra hevsengiyê de li jêrê (di parvekerê de) cih digire."
         }
       ],
       "correctIndex": 0,
@@ -2107,8 +2107,8 @@ export const unit18: ChemistryUnitSeedData = {
         "fr": "L'affirmation exacte est: \"La tendance minimale de l'énergie est vers le côté où il y a de la chaleur, la tendance maximale du désordre est vers le côté où le nombre de moles de gaz est élevé.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Минимальная тенденция энергии наблюдается в сторону тепла, максимальная тенденция беспорядка — в сторону, где количество молей газа велико.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"الحد الأدنى لميل الطاقة يكون نحو الجانب الذي توجد فيه الحرارة، والحد الأقصى لميل الاضطراب يكون نحو الجانب الذي يكون فيه عدد مولات الغاز مرتفعًا.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“能量趋势最小的是有热量的一侧，无序趋势最大的是气体摩尔数高的一侧。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Meyla enerjiyê ya herî hindik ber bi aliyê ku germ lê heye, meyla herî zêde ya nexweşiyê ber bi aliyê ku hejmara molên gazê lê zêde ye ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "zh": "正确表述为：“最低能量趋势指向写有热量的一侧，最大无序趋势指向气体摩尔数较多的一侧。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Meyla enerjiya herî kêm ber bi aliyê ku germ lê hatiye nivîsandin e; meyla bêrêziya herî zêde ber bi aliyê ku hejmara molên gazê lê zêde ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }
   ]

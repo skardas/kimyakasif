@@ -57,7 +57,7 @@ export const unit03: ChemistryUnitSeedData = {
         "en": "Covalent bond occurs as a result of electron sharing between nonmetal atoms.",
         "de": "Eine kovalente Bindung entsteht durch die gemeinsame Nutzung von Elektronen zwischen Nichtmetallatomen.",
         "fr": "La liaison covalente résulte du partage d’électrons entre des atomes non métalliques.",
-        "ru": "Ковалентная связь возникает в результате обмена электронов между атомами неметалла.",
+        "ru": "Ковалентная связь возникает в результате обобществления электронов между атомами неметалла.",
         "ar": "تحدث الرابطة التساهمية نتيجة لتقاسم الإلكترون بين الذرات اللافلزية.",
         "zh": "共价键是非金属原子之间共享电子的结果。",
         "ku": "Girêdana kovalentî di encama parvekirina elektronên di navbera atomên nemetal de pêk tê."
@@ -76,14 +76,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-f03",
       "fact": {
-        "tr": "Hidrojen bağı, hidrojenin F, O, N atomlarına bağlı olduğu moleküller arasında görülen en güçlü zayıf etkileşimdir.",
-        "en": "Hydrogen bond is the strongest weak interaction between molecules in which hydrogen is bonded to F, O, N atoms.",
-        "de": "Die Wasserstoffbindung ist die stärkste schwache Wechselwirkung zwischen Molekülen, bei der Wasserstoff an F-, O- und N-Atome gebunden ist.",
-        "fr": "La liaison hydrogène est l'interaction faible la plus forte entre des molécules dans laquelle l'hydrogène est lié aux atomes F, O, N.",
-        "ru": "Водородная связь – это сильнейшее слабое взаимодействие между молекулами, в котором водород связан с атомами F, O, N.",
-        "ar": "الرابطة الهيدروجينية هي أقوى تفاعل ضعيف بين الجزيئات حيث يرتبط الهيدروجين بذرات F، O، N.",
-        "zh": "氢键是分子间最强的弱相互作用，其中氢与F、O、N原子键合。",
-        "ku": "Girêdana hîdrojenê têkiliya herî qels a di navbera molekulan de ye ku tê de hîdrojen bi atomên F, O, N ve girêdayî ye."
+        "tr": "Hidrojen bağı; F, O veya N atomuna bağlı H atomu ile komşu moleküldeki F, O veya N atomu arasında oluşan ve nötr moleküller arasındaki en güçlü zayıf etkileşimdir.",
+        "en": "A hydrogen bond forms between an H atom bonded to F, O or N and an F, O or N atom of a neighboring molecule; it is the strongest weak interaction between neutral molecules.",
+        "de": "Eine Wasserstoffbrückenbindung bildet sich zwischen einem an F, O oder N gebundenen H-Atom und einem F-, O- oder N-Atom eines Nachbarmoleküls; sie ist die stärkste schwache Wechselwirkung zwischen neutralen Molekülen.",
+        "fr": "La liaison hydrogène se forme entre un atome H lié à F, O ou N et un atome F, O ou N d'une molécule voisine ; c'est l'interaction faible la plus forte entre molécules neutres.",
+        "ru": "Водородная связь образуется между атомом H, связанным с F, O или N, и атомом F, O или N соседней молекулы; это самое сильное слабое взаимодействие между нейтральными молекулами.",
+        "ar": "تتكوّن الرابطة الهيدروجينية بين ذرة H مرتبطة بـ F أو O أو N وذرة F أو O أو N في جزيء مجاور، وهي أقوى التفاعلات الضعيفة بين الجزيئات المتعادلة.",
+        "zh": "氢键在与F、O或N相连的H原子和相邻分子中的F、O或N原子之间形成，是中性分子之间最强的弱相互作用。",
+        "ku": "Girêdana hîdrojenê di navbera atoma H ya bi F, O an N ve girêdayî û atoma F, O an N ya molekula cîran de çêdibe; ew di navbera molekulên bêalî de têkiliya qels a herî xurt e."
       },
       "trap": {
         "tr": "Hidrojen bağı H2 molekülleri arasındaki kovalent bağdır.",
@@ -102,7 +102,7 @@ export const unit03: ChemistryUnitSeedData = {
         "tr": "London kuvvetleri anlık (indüklenmiş) dipollerden kaynaklanır ve tüm taneciklerde bulunur.",
         "en": "London forces arise from instantaneous (induced) dipoles and are present in all particles.",
         "de": "London-Kräfte entstehen durch momentane (induzierte) Dipole und sind in allen Teilchen vorhanden.",
-        "fr": "Les forces de Londres proviennent de dipôles instantanés (induits) et sont présentes dans toutes les particules.",
+        "fr": "Les forces de London proviennent de dipôles instantanés (induits) et sont présentes dans toutes les particules.",
         "ru": "Силы Лондона возникают из-за мгновенных (индуцированных) диполей и присутствуют во всех частицах.",
         "ar": "تنشأ قوى لندن من ثنائيات القطب اللحظية (المستحثة) وهي موجودة في جميع الجسيمات.",
         "zh": "伦敦力由瞬时（感应）偶极子产生，存在于所有粒子中。",
@@ -112,7 +112,7 @@ export const unit03: ChemistryUnitSeedData = {
         "tr": "London kuvvetleri kalıcı dipol momentine sahip kutuplu moleküllerde bulunmaz.",
         "en": "London forces do not exist in polar molecules with permanent dipole moments.",
         "de": "In polaren Molekülen mit permanenten Dipolmomenten gibt es keine Londoner Kräfte.",
-        "fr": "Les forces de Londres n'existent pas dans les molécules polaires avec des moments dipolaires permanents.",
+        "fr": "Les forces de London n'existent pas dans les molécules polaires avec des moments dipolaires permanents.",
         "ru": "Силы Лондона не существуют в полярных молекулах с постоянными дипольными моментами.",
         "ar": "لا توجد قوى لندن في الجزيئات القطبية ذات العزوم الثنائية القطبية الدائمة.",
         "zh": "伦敦力不存在于具有永久偶极矩的极性分子中。",
@@ -125,7 +125,7 @@ export const unit03: ChemistryUnitSeedData = {
         "tr": "Elektron sayısı arttıkça polarize olabilirlik artar ve London çekim kuvveti güçlenir.",
         "en": "As the number of electrons increases, polarizability increases and the London attraction force becomes stronger.",
         "de": "Mit zunehmender Elektronenzahl nimmt die Polarisierbarkeit zu und die Londoner Anziehungskraft wird stärker.",
-        "fr": "À mesure que le nombre d’électrons augmente, la polarisabilité augmente et la force d’attraction de Londres devient plus forte.",
+        "fr": "À mesure que le nombre d’électrons augmente, la polarisabilité augmente et la force d’attraction de London devient plus forte.",
         "ru": "По мере увеличения числа электронов поляризуемость увеличивается и сила притяжения Лондона становится сильнее.",
         "ar": "ومع زيادة عدد الإلكترونات، تزداد قابلية الاستقطاب وتصبح قوة جذب لندن أقوى.",
         "zh": "随着电子数量的增加，极化率增加，伦敦吸引力变得更强。",
@@ -135,7 +135,7 @@ export const unit03: ChemistryUnitSeedData = {
         "tr": "London kuvveti moleküldeki elektron sayısı azaldıkça artar.",
         "en": "London force increases as the number of electrons in the molecule decreases.",
         "de": "Die London-Kraft nimmt zu, wenn die Anzahl der Elektronen im Molekül abnimmt.",
-        "fr": "La force de Londres augmente à mesure que le nombre d’électrons dans la molécule diminue.",
+        "fr": "La force de London augmente à mesure que le nombre d’électrons dans la molécule diminue.",
         "ru": "Сила Лондона увеличивается по мере уменьшения числа электронов в молекуле.",
         "ar": "تزداد قوة لندن مع انخفاض عدد الإلكترونات في الجزيء.",
         "zh": "伦敦力随着分子中电子数量的减少而增加。",
@@ -146,13 +146,13 @@ export const unit03: ChemistryUnitSeedData = {
       "id": "u03-f06",
       "fact": {
         "tr": "İyonik katılar katı halde elektriği iletmez; sıvı halde ve sulu çözeltilerinde serbest iyonlarla iletir.",
-        "en": "Ionic solids do not conduct electricity in the solid state; It conducts with free ions in liquid form and in aqueous solutions.",
-        "de": "Ionische Feststoffe leiten im festen Zustand keinen Strom; Es leitet mit freien Ionen in flüssiger Form und in wässrigen Lösungen.",
-        "fr": "Les solides ioniques ne conduisent pas l’électricité à l’état solide ; Il conduit les ions libres sous forme liquide et dans les solutions aqueuses.",
-        "ru": "Ионные твердые тела не проводят электричество в твердом состоянии; Он проводит свободные ионы в жидкой форме и в водных растворах.",
-        "ar": "المواد الصلبة الأيونية لا توصل الكهرباء في الحالة الصلبة؛ ويجري مع الأيونات الحرة في صورة سائلة وفي المحاليل المائية.",
-        "zh": "离子固体在固态时不导电；它与液体形式和水溶液中的自由离子进行传导。",
-        "ku": "Zeviyên îyonî di rewşa hişk de elektrîkê nagirin; Ew bi îyonên azad di forma şilek û di çareseriyên avî de tevdigere."
+        "en": "Ionic solids do not conduct electricity in the solid state; in the molten state and in aqueous solution they conduct by means of free ions.",
+        "de": "Ionische Feststoffe leiten im festen Zustand keinen Strom; in der Schmelze und in wässriger Lösung leiten sie über frei bewegliche Ionen.",
+        "fr": "Les solides ioniques ne conduisent pas l'électricité à l'état solide ; à l'état fondu et en solution aqueuse, ils conduisent grâce aux ions libres.",
+        "ru": "Ионные твёрдые вещества не проводят электрический ток в твёрдом состоянии; в расплаве и в водном растворе они проводят ток за счёт свободных ионов.",
+        "ar": "المواد الصلبة الأيونية لا توصل الكهرباء في الحالة الصلبة؛ وتوصلها في الحالة السائلة (المنصهرة) وفي المحاليل المائية بواسطة الأيونات الحرة.",
+        "zh": "离子固体在固态时不导电；在熔融状态和水溶液中依靠自由离子导电。",
+        "ku": "Madeyên hişk ên îyonî di rewşa hişk de elektrîkê naguhezînin; di rewşa şile (helandî) û di çareseriyên avî de bi îyonên azad elektrîkê diguhezînin."
       },
       "trap": {
         "tr": "Yemek tuzu (NaCl) katı kristal halde elektrik akımını mükemmel iletir.",
@@ -169,20 +169,20 @@ export const unit03: ChemistryUnitSeedData = {
       "id": "u03-f07",
       "fact": {
         "tr": "Metalik bağ, serbest değerlik elektronlarının oluşturduğu elektron denizi ile pozitif metal iyonları arasındadır.",
-        "en": "The metallic bond is between the electron sea formed by free valence electrons and positive metal ions.",
-        "de": "Die metallische Bindung besteht zwischen dem Elektronenmeer, das aus freien Valenzelektronen und positiven Metallionen besteht.",
-        "fr": "La liaison métallique se situe entre la mer d’électrons formée par les électrons de valence libres et les ions métalliques positifs.",
-        "ru": "Металлическая связь возникает между электронным морем, образованным свободными валентными электронами и положительными ионами металлов.",
-        "ar": "الرابطة المعدنية هي بين بحر الإلكترون الذي يتكون من إلكترونات التكافؤ الحرة وأيونات المعادن الموجبة.",
-        "zh": "金属键位于自由价电子与正金属离子形成的电子海之间。",
-        "ku": "Girêdana metalî di navbera deryaya elektronê de ye ku ji hêla elektronên valahiya azad û îyonên metal ên erênî ve hatî çêkirin."
+        "en": "The metallic bond is the attraction between the electron sea formed by free valence electrons and the positive metal ions.",
+        "de": "Die metallische Bindung besteht zwischen dem aus freien Valenzelektronen gebildeten Elektronensee und den positiven Metallionen.",
+        "fr": "La liaison métallique s'établit entre la mer d'électrons, formée par les électrons de valence libres, et les ions métalliques positifs.",
+        "ru": "Металлическая связь возникает между электронным морем, образованным свободными валентными электронами, и положительными ионами металла.",
+        "ar": "الرابطة الفلزية هي التجاذب بين بحر الإلكترونات المتكوّن من إلكترونات التكافؤ الحرة وأيونات الفلز الموجبة.",
+        "zh": "金属键是由自由价电子形成的电子海与金属阳离子之间的作用。",
+        "ku": "Girêdana metalî di navbera deryaya elektronan a ku ji elektronên valansê yên azad pêk tê û îyonên metal ên erênî de ye."
       },
       "trap": {
         "tr": "Metalik bağ ametaller arasında ortaklaşan elektronlarla kurulur.",
         "en": "Metallic bonds are established by sharing electrons between nonmetals.",
         "de": "Metallische Bindungen entstehen durch die gemeinsame Nutzung von Elektronen zwischen Nichtmetallen.",
         "fr": "Les liaisons métalliques sont établies en partageant des électrons entre des non-métaux.",
-        "ru": "Металлические связи устанавливаются путем обмена электронами между неметаллами.",
+        "ru": "Металлические связи устанавливаются путём обобществления электронов между неметаллами.",
         "ar": "يتم إنشاء الروابط المعدنية من خلال مشاركة الإلكترونات بين اللافلزات.",
         "zh": "金属键是通过非金属之间共享电子建立的。",
         "ku": "Girêdanên metalîk bi parvekirina elektronan di navbera nemetalan de têne damezrandin."
@@ -300,7 +300,7 @@ export const unit03: ChemistryUnitSeedData = {
         "ru": "Диполь-дипольное взаимодействие — это фундаментальная сила, наблюдаемая между атомами благородного газа.",
         "ar": "التفاعل ثنائي القطب ثنائي القطب هو القوة الأساسية التي تظهر بين ذرات الغاز النبيل.",
         "zh": "偶极-偶极相互作用是稀有气体原子之间的基本力。",
-        "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza hêja de tê dîtin."
+        "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza esîl de tê dîtin."
       }
     },
     {
@@ -375,24 +375,24 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-f16",
       "fact": {
-        "tr": "Bileşik adlandırmada kovalent bileşiklerde mono, di, tri gibi Latince sayılar kullanılır.",
-        "en": "In compound naming, Latin numbers such as mono, di, tri are used in covalent compounds.",
-        "de": "Bei der Benennung von Verbindungen werden lateinische Zahlen wie Mono, Di, Tri in kovalenten Verbindungen verwendet.",
-        "fr": "Dans la dénomination des composés, les nombres latins tels que mono, di, tri sont utilisés dans les composés covalents.",
-        "ru": "При наименовании соединений в ковалентных соединениях используются латинские цифры, такие как моно, ди, три.",
-        "ar": "في تسمية المركبات، يتم استخدام الأرقام اللاتينية مثل mono، di، tri في المركبات التساهمية.",
-        "zh": "在化合物命名中，共价化合物使用拉丁数字，例如单、二、三。",
-        "ku": "Di binavkirina hevedudanî de, jimareyên latînî yên wekî mono, di, tri di pêkhateyên kovalentî de têne bikaranîn."
+        "tr": "Bileşik adlandırmada kovalent bileşiklerde mono, di, tri gibi sayı ön ekleri kullanılır.",
+        "en": "In naming compounds, numerical prefixes such as mono, di, tri are used for covalent compounds.",
+        "de": "Bei der Benennung von Verbindungen werden bei kovalenten Verbindungen Zahlpräfixe wie mono, di, tri verwendet.",
+        "fr": "Dans la nomenclature, les préfixes numériques tels que mono, di, tri sont utilisés pour les composés covalents.",
+        "ru": "При названии ковалентных соединений используются числовые приставки, такие как моно, ди, три.",
+        "ar": "في تسمية المركبات التساهمية تُستخدم البادئات العددية مثل أحادي (mono) وثنائي (di) وثلاثي (tri).",
+        "zh": "共价化合物命名时使用一、二、三（mono、di、tri）等数字前缀。",
+        "ku": "Di binavkirina pêkhateyên kovalent de pêşgirên hejmarî yên wekî mono, di, tri têne bikaranîn."
       },
       "trap": {
-        "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre Latince ön ekler kullanılır.",
-        "en": "When naming ionic compounds, Latin prefixes are used according to the number of nonmetals.",
-        "de": "Bei der Benennung ionischer Verbindungen werden lateinische Präfixe entsprechend der Anzahl der Nichtmetalle verwendet.",
-        "fr": "Lors de la dénomination des composés ioniques, des préfixes latins sont utilisés en fonction du nombre de non-métaux.",
-        "ru": "При названии ионных соединений используются латинские приставки по числу неметаллов.",
-        "ar": "عند تسمية المركبات الأيونية، يتم استخدام البادئات اللاتينية وفقًا لعدد اللافلزات.",
-        "zh": "命名离子化合物时，根据非金属的数量使用拉丁语前缀。",
-        "ku": "Dema navdêrên pêkhateyên îyonî, pêşpirtikên latînî li gorî hejmara nemetalan têne bikaranîn."
+        "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre mono, di, tri gibi ön ekler kullanılır.",
+        "en": "When naming ionic compounds, prefixes such as mono, di, tri are used according to the number of nonmetal atoms.",
+        "de": "Bei der Benennung ionischer Verbindungen werden je nach Anzahl der Nichtmetallatome Präfixe wie mono, di, tri verwendet.",
+        "fr": "Lors de la dénomination des composés ioniques, des préfixes tels que mono, di, tri sont utilisés selon le nombre d'atomes non métalliques.",
+        "ru": "При названии ионных соединений используются приставки моно, ди, три по числу атомов неметалла.",
+        "ar": "عند تسمية المركبات الأيونية تُستخدم بادئات مثل mono وdi وtri وفقًا لعدد ذرات اللافلز.",
+        "zh": "离子化合物命名时根据非金属原子数使用mono、di、tri等前缀。",
+        "ku": "Di binavkirina pêkhateyên îyonî de li gorî hejmara atomên nemetal pêşgirên wekî mono, di, tri têne bikaranîn."
       }
     }
   ],
@@ -407,7 +407,7 @@ export const unit03: ChemistryUnitSeedData = {
         "ru": "Ионная связь",
         "ar": "الرابطة الأيونية",
         "zh": "离子键",
-        "ku": "Ionic Bond"
+        "ku": "Girêdana Îyonî"
       },
       "conceptB": {
         "tr": "Kovalent Bağ",
@@ -417,7 +417,7 @@ export const unit03: ChemistryUnitSeedData = {
         "ru": "Ковалентная связь",
         "ar": "الرابطة التساهمية",
         "zh": "共价键",
-        "ku": "Covalent Bond"
+        "ku": "Girêdana Kovalent"
       },
       "distinction": {
         "tr": "İyonik bağ elektron alışverişiyle kristal örgü oluşturur; kovalent bağ elektron ortaklaşmasıyla oluşur.",
@@ -473,7 +473,7 @@ export const unit03: ChemistryUnitSeedData = {
         "ru": "Полярная ковалентная связь",
         "ar": "الرابطة التساهمية القطبية",
         "zh": "极性共价键",
-        "ku": "Bond Covalent Polar"
+        "ku": "Girêdana Kovalent a Polar"
       },
       "conceptB": {
         "tr": "Apolar Kovalent Bağ",
@@ -483,7 +483,7 @@ export const unit03: ChemistryUnitSeedData = {
         "ru": "Неполярная ковалентная связь",
         "ar": "الرابطة التساهمية غير القطبية",
         "zh": "非极性共价键",
-        "ku": "Bond Covalent Nonpolar"
+        "ku": "Girêdana Kovalent a Nepolar"
       },
       "distinction": {
         "tr": "Polar kovalent bağ farklı ametaller arasında kutuplu bağdır; apolar kovalent bağ aynı ametaller arasında kutupsuz bağdır.",
@@ -503,26 +503,26 @@ export const unit03: ChemistryUnitSeedData = {
         "en": "Metallic Bond",
         "de": "Metallische Bindung",
         "fr": "Liaison métallique",
-        "ru": "Металлическая Бонд",
-        "ar": "السندات المعدنية",
-        "zh": "金属结合剂",
-        "ku": "Metallic Bond"
+        "ru": "Металлическая связь",
+        "ar": "الرابطة الفلزية",
+        "zh": "金属键",
+        "ku": "Girêdana Metalî"
       },
       "conceptB": {
         "tr": "London Kuvveti",
         "en": "London Force",
-        "de": "London Force",
-        "fr": "Force de Londres",
-        "ru": "Лондон Форс",
+        "de": "London-Kräfte",
+        "fr": "Force de London",
+        "ru": "Лондоновские силы",
         "ar": "قوة لندن",
-        "zh": "伦敦部队",
+        "zh": "伦敦力",
         "ku": "Hêza Londonê"
       },
       "distinction": {
         "tr": "Metalik bağ elektron denizi ile pozitif iyonlar arasındaki güçlü bağdır; London kuvveti anlık dipollerle oluşan en zayıf etkileşimdir.",
         "en": "Metallic bonding is the strong bond between a sea of electrons and positive ions; London force is the weakest interaction that occurs with instantaneous dipoles.",
         "de": "Metallbindung ist die starke Bindung zwischen einem Meer aus Elektronen und positiven Ionen; Die Londoner Kraft ist die schwächste Wechselwirkung, die bei momentanen Dipolen auftritt.",
-        "fr": "La liaison métallique est le lien fort entre une mer d’électrons et d’ions positifs ; La force de Londres est l'interaction la plus faible qui se produit avec les dipôles instantanés.",
+        "fr": "La liaison métallique est le lien fort entre une mer d’électrons et d’ions positifs ; La force de London est l'interaction la plus faible qui se produit avec les dipôles instantanés.",
         "ru": "Металлическая связь — это прочная связь между морем электронов и положительными ионами; Сила Лондона — самое слабое взаимодействие, возникающее с мгновенными диполями.",
         "ar": "الرابطة المعدنية هي الرابطة القوية بين بحر من الإلكترونات والأيونات الموجبة؛ قوة لندن هي أضعف تفاعل يحدث مع ثنائيات القطب اللحظية.",
         "zh": "金属键合是电子海和正离子之间的牢固键合；伦敦力是瞬时偶极子发生的最弱的相互作用。",
@@ -572,7 +572,7 @@ export const unit03: ChemistryUnitSeedData = {
         "ru": "Сетевое ковалентное твердое тело",
         "ar": "شبكة تساهمية صلبة",
         "zh": "网络化共价固体",
-        "ku": "Tora Covalent Solid"
+        "ku": "Madeya Hişk a Tora Kovalent"
       },
       "conceptB": {
         "tr": "Moleküler Katı",
@@ -582,7 +582,7 @@ export const unit03: ChemistryUnitSeedData = {
         "ru": "Молекулярное твердое вещество",
         "ar": "الصلبة الجزيئية",
         "zh": "分子固体",
-        "ku": "Molecular Solid"
+        "ku": "Madeya Hişk a Molekulî"
       },
       "distinction": {
         "tr": "Elmas ve kuars gibi ağ örgülü katılar dev kovalent ağa sahiptir ve çok serttir; buz ve kuru buz moleküler katı olup zayıf bağlarla tutunur.",
@@ -598,67 +598,67 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-c07",
       "conceptA": {
-        "tr": "İyonik Bağ",
-        "en": "Ionic Bond",
-        "de": "Ionenbindung",
-        "fr": "Liaison ionique",
-        "ru": "Ионная связь",
-        "ar": "الرابطة الأيونية",
-        "zh": "离子键",
-        "ku": "Ionic Bond"
+        "tr": "İyon-Dipol Etkileşimi",
+        "en": "Ion-Dipole Interaction",
+        "de": "Ion-Dipol-Wechselwirkung",
+        "fr": "Interaction ion-dipôle",
+        "ru": "Ион-дипольное взаимодействие",
+        "ar": "التفاعل أيون-ثنائي القطب",
+        "zh": "离子-偶极作用",
+        "ku": "Têkiliya Îyon-Dîpol"
       },
       "conceptB": {
-        "tr": "Kovalent Bağ",
-        "en": "Covalent Bond",
-        "de": "Kovalente Bindung",
-        "fr": "Liaison covalente",
-        "ru": "Ковалентная связь",
-        "ar": "الرابطة التساهمية",
-        "zh": "共价键",
-        "ku": "Covalent Bond"
+        "tr": "Dipol-Dipol Etkileşimi",
+        "en": "Dipole-Dipole Interaction",
+        "de": "Dipol-Dipol-Wechselwirkung",
+        "fr": "Interaction dipôle-dipôle",
+        "ru": "Диполь-дипольное взаимодействие",
+        "ar": "التفاعل ثنائي القطب-ثنائي القطب",
+        "zh": "偶极-偶极作用",
+        "ku": "Têkiliya Dîpol-Dîpol"
       },
       "distinction": {
-        "tr": "İyonik bağ elektron alışverişiyle kristal örgü oluşturur; kovalent bağ elektron ortaklaşmasıyla oluşur.",
-        "en": "Ionic bond forms a crystal lattice through electron exchange; Covalent bonds are formed by sharing electrons.",
-        "de": "Eine Ionenbindung bildet durch Elektronenaustausch ein Kristallgitter; Kovalente Bindungen entstehen durch die gemeinsame Nutzung von Elektronen.",
-        "fr": "La liaison ionique forme un réseau cristallin par échange d'électrons ; Les liaisons covalentes se forment en partageant des électrons.",
-        "ru": "Ионная связь образует кристаллическую решетку посредством электронного обмена; Ковалентные связи образуются за счет общих электронов.",
-        "ar": "تشكل الرابطة الأيونية شبكة بلورية من خلال تبادل الإلكترون؛ تتشكل الروابط التساهمية من خلال مشاركة الإلكترونات.",
-        "zh": "离子键通过电子交换形成晶格；共价键是通过共享电子形成的。",
-        "ku": "Girêdana îyonî bi rêya pevguherîna elektronê şebeke krîstal çêdike; Girêdanên kovalent bi parvekirina elektronan çêdibin."
+        "tr": "İyon-dipol etkileşimi bir iyon ile polar molekül arasında (örn. NaCl'nin suda çözünmesi) görülür; dipol-dipol etkileşimi iki polar molekül arasında (örn. HCl molekülleri) görülür.",
+        "en": "An ion-dipole interaction occurs between an ion and a polar molecule (e.g., NaCl dissolving in water); a dipole-dipole interaction occurs between two polar molecules (e.g., HCl molecules).",
+        "de": "Eine Ion-Dipol-Wechselwirkung tritt zwischen einem Ion und einem polaren Molekül auf (z. B. beim Lösen von NaCl in Wasser); eine Dipol-Dipol-Wechselwirkung tritt zwischen zwei polaren Molekülen auf (z. B. HCl-Moleküle).",
+        "fr": "L'interaction ion-dipôle s'établit entre un ion et une molécule polaire (ex. dissolution de NaCl dans l'eau) ; l'interaction dipôle-dipôle s'établit entre deux molécules polaires (ex. molécules de HCl).",
+        "ru": "Ион-дипольное взаимодействие возникает между ионом и полярной молекулой (например, при растворении NaCl в воде); диполь-дипольное — между двумя полярными молекулами (например, молекулами HCl).",
+        "ar": "يحدث تفاعل أيون-ثنائي القطب بين أيون وجزيء قطبي (مثل ذوبان NaCl في الماء)؛ ويحدث تفاعل ثنائي القطب-ثنائي القطب بين جزيئين قطبيين (مثل جزيئات HCl).",
+        "zh": "离子-偶极作用发生在离子与极性分子之间（如NaCl溶于水）；偶极-偶极作用发生在两个极性分子之间（如HCl分子之间）。",
+        "ku": "Têkiliya îyon-dîpol di navbera îyonekê û molekuleke polar de çêdibe (mînak helîna NaCl di avê de); têkiliya dîpol-dîpol di navbera du molekulên polar de çêdibe (mînak molekulên HCl)."
       }
     },
     {
       "id": "u03-c08",
       "conceptA": {
-        "tr": "İyonik Bağ",
-        "en": "Ionic Bond",
-        "de": "Ionenbindung",
-        "fr": "Liaison ionique",
-        "ru": "Ионная связь",
-        "ar": "الرابطة الأيونية",
-        "zh": "离子键",
-        "ku": "Ionic Bond"
+        "tr": "Fiziksel Değişim",
+        "en": "Physical Change",
+        "de": "Physikalische Veränderung",
+        "fr": "Changement physique",
+        "ru": "Физическое изменение",
+        "ar": "التغير الفيزيائي",
+        "zh": "物理变化",
+        "ku": "Guherîna Fîzîkî"
       },
       "conceptB": {
-        "tr": "Kovalent Bağ",
-        "en": "Covalent Bond",
-        "de": "Kovalente Bindung",
-        "fr": "Liaison covalente",
-        "ru": "Ковалентная связь",
-        "ar": "الرابطة التساهمية",
-        "zh": "共价键",
-        "ku": "Covalent Bond"
+        "tr": "Kimyasal Değişim",
+        "en": "Chemical Change",
+        "de": "Chemische Veränderung",
+        "fr": "Changement chimique",
+        "ru": "Химическое изменение",
+        "ar": "التغير الكيميائي",
+        "zh": "化学变化",
+        "ku": "Guherîna Kîmyewî"
       },
       "distinction": {
-        "tr": "İyonik bağ elektron alışverişiyle kristal örgü oluşturur; kovalent bağ elektron ortaklaşmasıyla oluşur.",
-        "en": "Ionic bond forms a crystal lattice through electron exchange; Covalent bonds are formed by sharing electrons.",
-        "de": "Eine Ionenbindung bildet durch Elektronenaustausch ein Kristallgitter; Kovalente Bindungen entstehen durch die gemeinsame Nutzung von Elektronen.",
-        "fr": "La liaison ionique forme un réseau cristallin par échange d'électrons ; Les liaisons covalentes se forment en partageant des électrons.",
-        "ru": "Ионная связь образует кристаллическую решетку посредством электронного обмена; Ковалентные связи образуются за счет общих электронов.",
-        "ar": "تشكل الرابطة الأيونية شبكة بلورية من خلال تبادل الإلكترون؛ تتشكل الروابط التساهمية من خلال مشاركة الإلكترونات.",
-        "zh": "离子键通过电子交换形成晶格；共价键是通过共享电子形成的。",
-        "ku": "Girêdana îyonî bi rêya pevguherîna elektronê şebeke krîstal çêdike; Girêdanên kovalent bi parvekirina elektronan çêdibin."
+        "tr": "Fiziksel değişimde maddenin kimliği korunur ve genellikle yalnızca zayıf etkileşimler değişir; kimyasal değişimde kimyasal bağlar kırılıp yeni bağlar oluşur ve yeni maddeler meydana gelir.",
+        "en": "In a physical change the identity of the substance is preserved and usually only weak interactions change; in a chemical change chemical bonds are broken, new bonds form and new substances are produced.",
+        "de": "Bei einer physikalischen Veränderung bleibt die Identität des Stoffes erhalten und meist ändern sich nur schwache Wechselwirkungen; bei einer chemischen Veränderung werden chemische Bindungen gebrochen, neue Bindungen gebildet und neue Stoffe entstehen.",
+        "fr": "Lors d'un changement physique, l'identité de la substance est conservée et ce sont généralement les seules interactions faibles qui changent ; lors d'un changement chimique, des liaisons chimiques sont rompues, de nouvelles liaisons se forment et de nouvelles substances apparaissent.",
+        "ru": "При физическом изменении вещество сохраняет свою природу и обычно меняются лишь слабые взаимодействия; при химическом изменении разрываются химические связи, образуются новые связи и новые вещества.",
+        "ar": "في التغير الفيزيائي تبقى هوية المادة محفوظة وغالبًا ما تتغير التفاعلات الضعيفة فقط؛ أما في التغير الكيميائي فتنكسر الروابط الكيميائية وتتكوّن روابط جديدة وتنتج مواد جديدة.",
+        "zh": "物理变化中物质的本质不变，通常只有弱相互作用发生改变；化学变化中化学键断裂、形成新键并生成新物质。",
+        "ku": "Di guherîna fîzîkî de nasnameya maddeyê tê parastin û bi gelemperî tenê têkiliyên qels diguherin; di guherîna kîmyewî de girêdanên kîmyewî dişikên, girêdanên nû çêdibin û maddeyên nû peyda dibin."
       }
     }
   ],
@@ -666,14 +666,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-s01",
       "title": {
-        "tr": "Zayıf Etkileşim Güç Sıralaması",
-        "en": "Weak Engagement Power Ranking",
-        "de": "Schwaches Engagement-Power-Ranking",
-        "fr": "Faible classement du pouvoir d’engagement",
-        "ru": "Рейтинг слабой вовлеченности",
-        "ar": "تصنيف قوة المشاركة الضعيفة",
-        "zh": "弱参与度排名",
-        "ku": "Ranking Power Engagement qels"
+        "tr": "Zayıf Etkileşimlerin Güç Sıralaması (En Güçlüden En Zayıfa)",
+        "en": "Strength Ranking of Weak Interactions (Strongest to Weakest)",
+        "de": "Stärkereihenfolge schwacher Wechselwirkungen (von der stärksten zur schwächsten)",
+        "fr": "Classement des interactions faibles par force (de la plus forte à la plus faible)",
+        "ru": "Ряд слабых взаимодействий по силе (от самого сильного к самому слабому)",
+        "ar": "ترتيب التفاعلات الضعيفة حسب القوة (من الأقوى إلى الأضعف)",
+        "zh": "弱相互作用强度排序（由强到弱）",
+        "ku": "Rêzkirina Hêza Têkiliyên Qels (Ji ya Herî Xurt ber bi ya Herî Qels)"
       },
       "steps": [
         {
@@ -684,7 +684,7 @@ export const unit03: ChemistryUnitSeedData = {
           "ru": "Ионно-дипольное взаимодействие",
           "ar": "التفاعل الأيوني ثنائي القطب",
           "zh": "离子偶极相互作用",
-          "ku": "Têkiliya Ion-dipole"
+          "ku": "Têkiliya îyon-dîpol"
         },
         {
           "tr": "Hidrojen bağı",
@@ -709,11 +709,11 @@ export const unit03: ChemistryUnitSeedData = {
         {
           "tr": "London dispersiyon kuvvetleri",
           "en": "London dispersion forces",
-          "de": "Londoner Zerstreuungskräfte",
-          "fr": "Forces de dispersion de Londres",
-          "ru": "Лондонские дисперсионные силы",
-          "ar": "قوات التشتت لندن",
-          "zh": "伦敦分散力量",
+          "de": "London-Dispersionskräfte",
+          "fr": "Forces de dispersion de London",
+          "ru": "Лондоновские дисперсионные силы",
+          "ar": "قوى تشتت لندن",
+          "zh": "伦敦色散力",
           "ku": "hêzên belavbûna Londonê"
         }
       ]
@@ -728,7 +728,7 @@ export const unit03: ChemistryUnitSeedData = {
         "ru": "Стадии образования ионной связи",
         "ar": "مراحل تكوين الرابطة الأيونية",
         "zh": "离子键形成阶段",
-        "ku": "Qonaxên Çêkirina Bondê Îyonî"
+        "ku": "Qonaxên Çêbûna Girêdana Îyonî"
       },
       "steps": [
         {
@@ -777,13 +777,13 @@ export const unit03: ChemistryUnitSeedData = {
       "id": "u03-s03",
       "title": {
         "tr": "Hidrojen Bağı Ağı Kurulumu",
-        "en": "Hydrogen Bond Network Setup",
+        "en": "Formation of a Hydrogen Bond Network",
         "de": "Aufbau eines Wasserstoffbrückennetzwerks",
-        "fr": "Configuration du réseau de liaison hydrogène",
-        "ru": "Настройка сети водородных связей",
-        "ar": "إعداد شبكة رابطة الهيدروجين",
-        "zh": "氢键网络设置",
-        "ku": "Setup Network Bond Hydrogen"
+        "fr": "Formation d'un réseau de liaisons hydrogène",
+        "ru": "Образование сети водородных связей",
+        "ar": "تكوّن شبكة الروابط الهيدروجينية",
+        "zh": "氢键网络的形成",
+        "ku": "Çêbûna Tora Girêdana Hîdrojenê"
       },
       "steps": [
         {
@@ -803,7 +803,7 @@ export const unit03: ChemistryUnitSeedData = {
           "fr": "Concentration partielle de charge positive sur l'atome H",
           "ru": "Концентрация частичного положительного заряда на атоме H",
           "ar": "تركيز الشحنة الموجبة الجزئية على ذرة H",
-          "zh": "H原子上的部分正电荷浓度",
+          "zh": "H原子上集中部分正电荷",
           "ku": "Li ser atoma H-ê ya qismî giraniya barê erênî"
         },
         {
@@ -813,7 +813,7 @@ export const unit03: ChemistryUnitSeedData = {
           "fr": "Paire d'électrons non partagés dans la molécule voisine",
           "ru": "Неразделенная электронная пара в соседней молекуле",
           "ar": "زوج إلكترون غير مشترك في الجزيء المجاور",
-          "zh": "相邻分子中不共享的电子对",
+          "zh": "相邻分子中的孤对电子",
           "ku": "Di molekula cîran de cotek elektronên neparvekirî"
         },
         {
@@ -833,11 +833,11 @@ export const unit03: ChemistryUnitSeedData = {
       "title": {
         "tr": "London Kuvveti Büyüme Basamakları",
         "en": "London Force Growth Steps",
-        "de": "London erzwingt Wachstumsschritte",
-        "fr": "Étapes de croissance de London Force",
+        "de": "Stufen der Zunahme der London-Kräfte",
+        "fr": "Étapes du renforcement des forces de London",
         "ru": "Этапы роста лондонских сил",
         "ar": "خطوات نمو قوة لندن",
-        "zh": "伦敦力量成长步骤",
+        "zh": "伦敦力增强的步骤",
         "ku": "Pêngavên Pêşveçûna Hêza Londonê"
       },
       "steps": [
@@ -872,14 +872,14 @@ export const unit03: ChemistryUnitSeedData = {
           "ku": "Dipolên demkî yên demkî bihêztir dibin"
         },
         {
-          "tr": "Molekülün kaynama noktası yükselir",
-          "en": "The boiling point of the molecule increases",
-          "de": "Der Siedepunkt des Moleküls steigt",
-          "fr": "Le point d'ébullition de la molécule augmente",
-          "ru": "Температура кипения молекулы увеличивается.",
-          "ar": "تزداد درجة غليان الجزيء",
-          "zh": "分子的沸点升高",
-          "ku": "Xala kelandinê ya molekulê zêde dibe"
+          "tr": "Maddenin kaynama noktası yükselir",
+          "en": "The boiling point of the substance rises",
+          "de": "Der Siedepunkt des Stoffes steigt",
+          "fr": "Le point d'ébullition de la substance augmente",
+          "ru": "Температура кипения вещества повышается",
+          "ar": "ترتفع درجة غليان المادة",
+          "zh": "物质的沸点升高",
+          "ku": "Xala kelandinê ya maddeyê bilind dibe"
         }
       ]
     }
@@ -951,7 +951,7 @@ export const unit03: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "H2O da hidrojen atomu elektronegatifliği yüksek oksijene bağlıdır ve molekülleri arasında yoğun fazda hidrojen bağı kurar.",
+        "tr": "H2O'da hidrojen atomu elektronegatifliği yüksek oksijene bağlıdır ve molekülleri arasında yoğun fazda hidrojen bağı kurar.",
         "en": "In H2O, the hydrogen atom is bonded to oxygen with high electronegativity and establishes hydrogen bonds between its molecules in the dense phase.",
         "de": "In H2O ist das Wasserstoffatom mit hoher Elektronegativität an Sauerstoff gebunden und baut in der dichten Phase Wasserstoffbrückenbindungen zwischen seinen Molekülen auf.",
         "fr": "Dans H2O, l’atome d’hydrogène est lié à l’oxygène avec une électronégativité élevée et établit des liaisons hydrogène entre ses molécules dans la phase dense.",
@@ -978,20 +978,20 @@ export const unit03: ChemistryUnitSeedData = {
           "tr": "İyon-dipol",
           "en": "ion-dipole",
           "de": "Ionendipol",
-          "fr": "dipôle ionique",
+          "fr": "ion-dipôle",
           "ru": "ионно-дипольный",
           "ar": "ثنائي القطب الأيوني",
-          "zh": "离子偶极子",
-          "ku": "ion-dipole"
+          "zh": "离子-偶极作用",
+          "ku": "îyon-dîpol"
         },
         {
           "tr": "London",
           "en": "London",
           "de": "London",
-          "fr": "Londres",
-          "ru": "Лондон",
+          "fr": "London",
+          "ru": "Лондоновские силы",
           "ar": "لندن",
-          "zh": "伦敦",
+          "zh": "伦敦力",
           "ku": "London"
         },
         {
@@ -1006,13 +1006,13 @@ export const unit03: ChemistryUnitSeedData = {
         },
         {
           "tr": "Apolar bağ",
-          "en": "nonpolar ligament",
-          "de": "unpolares Band",
-          "fr": "ligament non polaire",
-          "ru": "неполярная связка",
-          "ar": "الرباط غير القطبي",
-          "zh": "非极韧带",
-          "ku": "ligamenta nepolar"
+          "en": "nonpolar bond",
+          "de": "unpolare Bindung",
+          "fr": "liaison non polaire",
+          "ru": "неполярная связь",
+          "ar": "الرابطة غير القطبية",
+          "zh": "非极性键",
+          "ku": "girêdana nepolar"
         },
         {
           "tr": "Hidrojen bağı",
@@ -1071,14 +1071,14 @@ export const unit03: ChemistryUnitSeedData = {
           "ku": "Girêdana di molekula HCl de girêdaneke kovalentî ya nepolar e."
         },
         {
-          "tr": "Hidrojen bağı, hidrojenin F, O, N atomlarına bağlı olduğu moleküller arasında görülen en güçlü zayıf etkileşimdir.",
-          "en": "Hydrogen bond is the strongest weak interaction between molecules in which hydrogen is bonded to F, O, N atoms.",
-          "de": "Die Wasserstoffbindung ist die stärkste schwache Wechselwirkung zwischen Molekülen, bei der Wasserstoff an F-, O- und N-Atome gebunden ist.",
-          "fr": "La liaison hydrogène est l'interaction faible la plus forte entre des molécules dans laquelle l'hydrogène est lié aux atomes F, O, N.",
-          "ru": "Водородная связь – это сильнейшее слабое взаимодействие между молекулами, в котором водород связан с атомами F, O, N.",
-          "ar": "الرابطة الهيدروجينية هي أقوى تفاعل ضعيف بين الجزيئات حيث يرتبط الهيدروجين بذرات F، O، N.",
-          "zh": "氢键是分子间最强的弱相互作用，其中氢与F、O、N原子键合。",
-          "ku": "Girêdana hîdrojenê têkiliya herî qels a di navbera molekulan de ye ku tê de hîdrojen bi atomên F, O, N ve girêdayî ye."
+          "tr": "Hidrojen bağı; F, O veya N atomuna bağlı H atomu ile komşu moleküldeki F, O veya N atomu arasında oluşan ve nötr moleküller arasındaki en güçlü zayıf etkileşimdir.",
+          "en": "A hydrogen bond forms between an H atom bonded to F, O or N and an F, O or N atom of a neighboring molecule; it is the strongest weak interaction between neutral molecules.",
+          "de": "Eine Wasserstoffbrückenbindung bildet sich zwischen einem an F, O oder N gebundenen H-Atom und einem F-, O- oder N-Atom eines Nachbarmoleküls; sie ist die stärkste schwache Wechselwirkung zwischen neutralen Molekülen.",
+          "fr": "La liaison hydrogène se forme entre un atome H lié à F, O ou N et un atome F, O ou N d'une molécule voisine ; c'est l'interaction faible la plus forte entre molécules neutres.",
+          "ru": "Водородная связь образуется между атомом H, связанным с F, O или N, и атомом F, O или N соседней молекулы; это самое сильное слабое взаимодействие между нейтральными молекулами.",
+          "ar": "تتكوّن الرابطة الهيدروجينية بين ذرة H مرتبطة بـ F أو O أو N وذرة F أو O أو N في جزيء مجاور، وهي أقوى التفاعلات الضعيفة بين الجزيئات المتعادلة.",
+          "zh": "氢键在与F、O或N相连的H原子和相邻分子中的F、O或N原子之间形成，是中性分子之间最强的弱相互作用。",
+          "ku": "Girêdana hîdrojenê di navbera atoma H ya bi F, O an N ve girêdayî û atoma F, O an N ya molekula cîran de çêdibe; ew di navbera molekulên bêalî de têkiliya qels a herî xurt e."
         },
         {
           "tr": "Dipol-dipol etkileşimi soy gaz atomları arasında görülen temel kuvvettir.",
@@ -1088,7 +1088,7 @@ export const unit03: ChemistryUnitSeedData = {
           "ru": "Диполь-дипольное взаимодействие — это фундаментальная сила, наблюдаемая между атомами благородного газа.",
           "ar": "التفاعل ثنائي القطب ثنائي القطب هو القوة الأساسية التي تظهر بين ذرات الغاز النبيل.",
           "zh": "偶极-偶极相互作用是稀有气体原子之间的基本力。",
-          "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza hêja de tê dîtin."
+          "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza esîl de tê dîtin."
         },
         {
           "tr": "İyonik kristaller çekiçle vurulduğunda tel ve levha haline getirilebilir.",
@@ -1103,14 +1103,14 @@ export const unit03: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Hidrojen bağı, hidrojenin F, O, N atomlarına bağlı olduğu moleküller arasında görülen en güçlü zayıf etkileşimdir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Hydrogen bond is the strongest weak interaction between molecules in which hydrogen is bonded to F, O, N atoms.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die Wasserstoffbindung ist die stärkste schwache Wechselwirkung zwischen Molekülen, bei der Wasserstoff an F-, O- und N-Atome gebunden ist.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La liaison hydrogène est l'interaction faible la plus forte entre des molécules dans laquelle l'hydrogène est lié aux atomes F, O, N.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Водородная связь – это сильнейшее слабое взаимодействие между молекулами, в котором водород связан с атомами F, O, N.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"الرابطة الهيدروجينية هي أقوى تفاعل ضعيف بين الجزيئات حيث يرتبط الهيدروجين بذرات F، O، N.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“氢键是分子间最强的弱相互作用，其中氢与F、O、N原子键合。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Girêdana hîdrojenê têkiliya herî qels a di navbera molekulan de ye ku tê de hîdrojen bi atomên F, O, N ve girêdayî ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Hidrojen bağı; F, O veya N atomuna bağlı H atomu ile komşu moleküldeki F, O veya N atomu arasında oluşan ve nötr moleküller arasındaki en güçlü zayıf etkileşimdir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"A hydrogen bond forms between an H atom bonded to F, O or N and an F, O or N atom of a neighboring molecule; it is the strongest weak interaction between neutral molecules.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Eine Wasserstoffbrückenbindung bildet sich zwischen einem an F, O oder N gebundenen H-Atom und einem F-, O- oder N-Atom eines Nachbarmoleküls; sie ist die stärkste schwache Wechselwirkung zwischen neutralen Molekülen.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"La liaison hydrogène se forme entre un atome H lié à F, O ou N et un atome F, O ou N d'une molécule voisine ; c'est l'interaction faible la plus forte entre molécules neutres.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Водородная связь образуется между атомом H, связанным с F, O или N, и атомом F, O или N соседней молекулы; это самое сильное слабое взаимодействие между нейтральными молекулами.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تتكوّن الرابطة الهيدروجينية بين ذرة H مرتبطة بـ F أو O أو N وذرة F أو O أو N في جزيء مجاور، وهي أقوى التفاعلات الضعيفة بين الجزيئات المتعادلة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“氢键在与F、O或N相连的H原子和相邻分子中的F、O或N原子之间形成，是中性分子之间最强的弱相互作用。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Girêdana hîdrojenê di navbera atoma H ya bi F, O an N ve girêdayî û atoma F, O an N ya molekula cîran de çêdibe; ew di navbera molekulên bêalî de têkiliya qels a herî xurt e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1131,7 +1131,7 @@ export const unit03: ChemistryUnitSeedData = {
           "en": "Metallic bonds are established by sharing electrons between nonmetals.",
           "de": "Metallische Bindungen entstehen durch die gemeinsame Nutzung von Elektronen zwischen Nichtmetallen.",
           "fr": "Les liaisons métalliques sont établies en partageant des électrons entre des non-métaux.",
-          "ru": "Металлические связи устанавливаются путем обмена электронами между неметаллами.",
+          "ru": "Металлические связи устанавливаются путём обобществления электронов между неметаллами.",
           "ar": "يتم إنشاء الروابط المعدنية من خلال مشاركة الإلكترونات بين اللافلزات.",
           "zh": "金属键是通过非金属之间共享电子建立的。",
           "ku": "Girêdanên metalîk bi parvekirina elektronan di navbera nemetalan de têne damezrandin."
@@ -1160,21 +1160,21 @@ export const unit03: ChemistryUnitSeedData = {
           "tr": "London kuvvetleri anlık (indüklenmiş) dipollerden kaynaklanır ve tüm taneciklerde bulunur.",
           "en": "London forces arise from instantaneous (induced) dipoles and are present in all particles.",
           "de": "London-Kräfte entstehen durch momentane (induzierte) Dipole und sind in allen Teilchen vorhanden.",
-          "fr": "Les forces de Londres proviennent de dipôles instantanés (induits) et sont présentes dans toutes les particules.",
+          "fr": "Les forces de London proviennent de dipôles instantanés (induits) et sont présentes dans toutes les particules.",
           "ru": "Силы Лондона возникают из-за мгновенных (индуцированных) диполей и присутствуют во всех частицах.",
           "ar": "تنشأ قوى لندن من ثنائيات القطب اللحظية (المستحثة) وهي موجودة في جميع الجسيمات.",
           "zh": "伦敦力由瞬时（感应）偶极子产生，存在于所有粒子中。",
           "ku": "Hêzên Londonê ji dupolên tavilê (derxistî) çêdibin û di hemî pirtikan de hene."
         },
         {
-          "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre Latince ön ekler kullanılır.",
-          "en": "When naming ionic compounds, Latin prefixes are used according to the number of nonmetals.",
-          "de": "Bei der Benennung ionischer Verbindungen werden lateinische Präfixe entsprechend der Anzahl der Nichtmetalle verwendet.",
-          "fr": "Lors de la dénomination des composés ioniques, des préfixes latins sont utilisés en fonction du nombre de non-métaux.",
-          "ru": "При названии ионных соединений используются латинские приставки по числу неметаллов.",
-          "ar": "عند تسمية المركبات الأيونية، يتم استخدام البادئات اللاتينية وفقًا لعدد اللافلزات.",
-          "zh": "命名离子化合物时，根据非金属的数量使用拉丁语前缀。",
-          "ku": "Dema navdêrên pêkhateyên îyonî, pêşpirtikên latînî li gorî hejmara nemetalan têne bikaranîn."
+          "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre mono, di, tri gibi ön ekler kullanılır.",
+          "en": "When naming ionic compounds, prefixes such as mono, di, tri are used according to the number of nonmetal atoms.",
+          "de": "Bei der Benennung ionischer Verbindungen werden je nach Anzahl der Nichtmetallatome Präfixe wie mono, di, tri verwendet.",
+          "fr": "Lors de la dénomination des composés ioniques, des préfixes tels que mono, di, tri sont utilisés selon le nombre d'atomes non métalliques.",
+          "ru": "При названии ионных соединений используются приставки моно, ди, три по числу атомов неметалла.",
+          "ar": "عند تسمية المركبات الأيونية تُستخدم بادئات مثل mono وdi وtri وفقًا لعدد ذرات اللافلز.",
+          "zh": "离子化合物命名时根据非金属原子数使用mono、di、tri等前缀。",
+          "ku": "Di binavkirina pêkhateyên îyonî de li gorî hejmara atomên nemetal pêşgirên wekî mono, di, tri têne bikaranîn."
         }
       ],
       "correctIndex": 3,
@@ -1182,7 +1182,7 @@ export const unit03: ChemistryUnitSeedData = {
         "tr": "Doğru cevap \"London kuvvetleri anlık (indüklenmiş) dipollerden kaynaklanır ve tüm taneciklerde bulunur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"London forces arise from instantaneous (induced) dipoles and are present in all particles.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"London-Kräfte entstehen durch momentane (induzierte) Dipole und sind in allen Teilchen vorhanden.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les forces de Londres proviennent de dipôles instantanés (induits) et sont présentes dans toutes les particules.\". Notion fondamentale du programme officiel de chimie.",
+        "fr": "L'affirmation exacte est: \"Les forces de London proviennent de dipôles instantanés (induits) et sont présentes dans toutes les particules.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Силы Лондона возникают из-за мгновенных (индуцированных) диполей и присутствуют во всех частицах.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"تنشأ قوى لندن من ثنائيات القطب اللحظية (المستحثة) وهي موجودة في جميع الجسيمات.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“伦敦力由瞬时（感应）偶极子产生，存在于所有粒子中。”。属于化学学科必考的核心客观真理。",
@@ -1246,7 +1246,7 @@ export const unit03: ChemistryUnitSeedData = {
           "tr": "Elektron sayısı arttıkça polarize olabilirlik artar ve London çekim kuvveti güçlenir.",
           "en": "As the number of electrons increases, polarizability increases and the London attraction force becomes stronger.",
           "de": "Mit zunehmender Elektronenzahl nimmt die Polarisierbarkeit zu und die Londoner Anziehungskraft wird stärker.",
-          "fr": "À mesure que le nombre d’électrons augmente, la polarisabilité augmente et la force d’attraction de Londres devient plus forte.",
+          "fr": "À mesure que le nombre d’électrons augmente, la polarisabilité augmente et la force d’attraction de London devient plus forte.",
           "ru": "По мере увеличения числа электронов поляризуемость увеличивается и сила притяжения Лондона становится сильнее.",
           "ar": "ومع زيادة عدد الإلكترونات، تزداد قابلية الاستقطاب وتصبح قوة جذب لندن أقوى.",
           "zh": "随着电子数量的增加，极化率增加，伦敦吸引力变得更强。",
@@ -1258,7 +1258,7 @@ export const unit03: ChemistryUnitSeedData = {
         "tr": "Doğru cevap \"Elektron sayısı arttıkça polarize olabilirlik artar ve London çekim kuvveti güçlenir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"As the number of electrons increases, polarizability increases and the London attraction force becomes stronger.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Mit zunehmender Elektronenzahl nimmt die Polarisierbarkeit zu und die Londoner Anziehungskraft wird stärker.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"À mesure que le nombre d’électrons augmente, la polarisabilité augmente et la force d’attraction de Londres devient plus forte.\". Notion fondamentale du programme officiel de chimie.",
+        "fr": "L'affirmation exacte est: \"À mesure que le nombre d’électrons augmente, la polarisabilité augmente et la force d’attraction de London devient plus forte.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «По мере увеличения числа электронов поляризуемость увеличивается и сила притяжения Лондона становится сильнее.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"ومع زيادة عدد الإلكترونات، تزداد قابلية الاستقطاب وتصبح قوة جذب لندن أقوى.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“随着电子数量的增加，极化率增加，伦敦吸引力变得更强。”。属于化学学科必考的核心客观真理。",
@@ -1280,13 +1280,13 @@ export const unit03: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "İyonik katılar katı halde elektriği iletmez; sıvı halde ve sulu çözeltilerinde serbest iyonlarla iletir.",
-          "en": "Ionic solids do not conduct electricity in the solid state; It conducts with free ions in liquid form and in aqueous solutions.",
-          "de": "Ionische Feststoffe leiten im festen Zustand keinen Strom; Es leitet mit freien Ionen in flüssiger Form und in wässrigen Lösungen.",
-          "fr": "Les solides ioniques ne conduisent pas l’électricité à l’état solide ; Il conduit les ions libres sous forme liquide et dans les solutions aqueuses.",
-          "ru": "Ионные твердые тела не проводят электричество в твердом состоянии; Он проводит свободные ионы в жидкой форме и в водных растворах.",
-          "ar": "المواد الصلبة الأيونية لا توصل الكهرباء في الحالة الصلبة؛ ويجري مع الأيونات الحرة في صورة سائلة وفي المحاليل المائية.",
-          "zh": "离子固体在固态时不导电；它与液体形式和水溶液中的自由离子进行传导。",
-          "ku": "Zeviyên îyonî di rewşa hişk de elektrîkê nagirin; Ew bi îyonên azad di forma şilek û di çareseriyên avî de tevdigere."
+          "en": "Ionic solids do not conduct electricity in the solid state; in the molten state and in aqueous solution they conduct by means of free ions.",
+          "de": "Ionische Feststoffe leiten im festen Zustand keinen Strom; in der Schmelze und in wässriger Lösung leiten sie über frei bewegliche Ionen.",
+          "fr": "Les solides ioniques ne conduisent pas l'électricité à l'état solide ; à l'état fondu et en solution aqueuse, ils conduisent grâce aux ions libres.",
+          "ru": "Ионные твёрдые вещества не проводят электрический ток в твёрдом состоянии; в расплаве и в водном растворе они проводят ток за счёт свободных ионов.",
+          "ar": "المواد الصلبة الأيونية لا توصل الكهرباء في الحالة الصلبة؛ وتوصلها في الحالة السائلة (المنصهرة) وفي المحاليل المائية بواسطة الأيونات الحرة.",
+          "zh": "离子固体在固态时不导电；在熔融状态和水溶液中依靠自由离子导电。",
+          "ku": "Madeyên hişk ên îyonî di rewşa hişk de elektrîkê naguhezînin; di rewşa şile (helandî) û di çareseriyên avî de bi îyonên azad elektrîkê diguhezînin."
         },
         {
           "tr": "HCl molekülündeki bağ apolar kovalent bağdır.",
@@ -1306,7 +1306,7 @@ export const unit03: ChemistryUnitSeedData = {
           "ru": "Диполь-дипольное взаимодействие — это фундаментальная сила, наблюдаемая между атомами благородного газа.",
           "ar": "التفاعل ثنائي القطب ثنائي القطب هو القوة الأساسية التي تظهر بين ذرات الغاز النبيل.",
           "zh": "偶极-偶极相互作用是稀有气体原子之间的基本力。",
-          "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza hêja de tê dîtin."
+          "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza esîl de tê dîtin."
         },
         {
           "tr": "İyonik kristaller çekiçle vurulduğunda tel ve levha haline getirilebilir.",
@@ -1332,13 +1332,13 @@ export const unit03: ChemistryUnitSeedData = {
       "correctIndex": 0,
       "explanation": {
         "tr": "Doğru cevap \"İyonik katılar katı halde elektriği iletmez; sıvı halde ve sulu çözeltilerinde serbest iyonlarla iletir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Ionic solids do not conduct electricity in the solid state; It conducts with free ions in liquid form and in aqueous solutions.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Ionische Feststoffe leiten im festen Zustand keinen Strom; Es leitet mit freien Ionen in flüssiger Form und in wässrigen Lösungen.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les solides ioniques ne conduisent pas l’électricité à l’état solide ; Il conduit les ions libres sous forme liquide et dans les solutions aqueuses.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Ионные твердые тела не проводят электричество в твердом состоянии; Он проводит свободные ионы в жидкой форме и в водных растворах.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"المواد الصلبة الأيونية لا توصل الكهرباء في الحالة الصلبة؛ ويجري مع الأيونات الحرة في صورة سائلة وفي المحاليل المائية.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“离子固体在固态时不导电；它与液体形式和水溶液中的自由离子进行传导。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Zeviyên îyonî di rewşa hişk de elektrîkê nagirin; Ew bi îyonên azad di forma şilek û di çareseriyên avî de tevdigere.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Ionic solids do not conduct electricity in the solid state; in the molten state and in aqueous solution they conduct by means of free ions.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Ionische Feststoffe leiten im festen Zustand keinen Strom; in der Schmelze und in wässriger Lösung leiten sie über frei bewegliche Ionen.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les solides ioniques ne conduisent pas l'électricité à l'état solide ; à l'état fondu et en solution aqueuse, ils conduisent grâce aux ions libres.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Ионные твёрдые вещества не проводят электрический ток в твёрдом состоянии; в расплаве и в водном растворе они проводят ток за счёт свободных ионов.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"المواد الصلبة الأيونية لا توصل الكهرباء في الحالة الصلبة؛ وتوصلها في الحالة السائلة (المنصهرة) وفي المحاليل المائية بواسطة الأيونات الحرة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“离子固体在固态时不导电；在熔融状态和水溶液中依靠自由离子导电。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Madeyên hişk ên îyonî di rewşa hişk de elektrîkê naguhezînin; di rewşa şile (helandî) û di çareseriyên avî de bi îyonên azad elektrîkê diguhezînin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1366,13 +1366,13 @@ export const unit03: ChemistryUnitSeedData = {
         },
         {
           "tr": "Metalik bağ, serbest değerlik elektronlarının oluşturduğu elektron denizi ile pozitif metal iyonları arasındadır.",
-          "en": "The metallic bond is between the electron sea formed by free valence electrons and positive metal ions.",
-          "de": "Die metallische Bindung besteht zwischen dem Elektronenmeer, das aus freien Valenzelektronen und positiven Metallionen besteht.",
-          "fr": "La liaison métallique se situe entre la mer d’électrons formée par les électrons de valence libres et les ions métalliques positifs.",
-          "ru": "Металлическая связь возникает между электронным морем, образованным свободными валентными электронами и положительными ионами металлов.",
-          "ar": "الرابطة المعدنية هي بين بحر الإلكترون الذي يتكون من إلكترونات التكافؤ الحرة وأيونات المعادن الموجبة.",
-          "zh": "金属键位于自由价电子与正金属离子形成的电子海之间。",
-          "ku": "Girêdana metalî di navbera deryaya elektronê de ye ku ji hêla elektronên valahiya azad û îyonên metal ên erênî ve hatî çêkirin."
+          "en": "The metallic bond is the attraction between the electron sea formed by free valence electrons and the positive metal ions.",
+          "de": "Die metallische Bindung besteht zwischen dem aus freien Valenzelektronen gebildeten Elektronensee und den positiven Metallionen.",
+          "fr": "La liaison métallique s'établit entre la mer d'électrons, formée par les électrons de valence libres, et les ions métalliques positifs.",
+          "ru": "Металлическая связь возникает между электронным морем, образованным свободными валентными электронами, и положительными ионами металла.",
+          "ar": "الرابطة الفلزية هي التجاذب بين بحر الإلكترونات المتكوّن من إلكترونات التكافؤ الحرة وأيونات الفلز الموجبة.",
+          "zh": "金属键是由自由价电子形成的电子海与金属阳离子之间的作用。",
+          "ku": "Girêdana metalî di navbera deryaya elektronan a ku ji elektronên valansê yên azad pêk tê û îyonên metal ên erênî de ye."
         },
         {
           "tr": "Kimyasal bağ kırılırken çevreye daima yüksek miktarda ısı yayılır.",
@@ -1385,14 +1385,14 @@ export const unit03: ChemistryUnitSeedData = {
           "ku": "Ji ber ku girêdana kîmyewî têk diçe, her dem rêjeyek mezin germahî berdide hawîrdorê."
         },
         {
-          "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre Latince ön ekler kullanılır.",
-          "en": "When naming ionic compounds, Latin prefixes are used according to the number of nonmetals.",
-          "de": "Bei der Benennung ionischer Verbindungen werden lateinische Präfixe entsprechend der Anzahl der Nichtmetalle verwendet.",
-          "fr": "Lors de la dénomination des composés ioniques, des préfixes latins sont utilisés en fonction du nombre de non-métaux.",
-          "ru": "При названии ионных соединений используются латинские приставки по числу неметаллов.",
-          "ar": "عند تسمية المركبات الأيونية، يتم استخدام البادئات اللاتينية وفقًا لعدد اللافلزات.",
-          "zh": "命名离子化合物时，根据非金属的数量使用拉丁语前缀。",
-          "ku": "Dema navdêrên pêkhateyên îyonî, pêşpirtikên latînî li gorî hejmara nemetalan têne bikaranîn."
+          "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre mono, di, tri gibi ön ekler kullanılır.",
+          "en": "When naming ionic compounds, prefixes such as mono, di, tri are used according to the number of nonmetal atoms.",
+          "de": "Bei der Benennung ionischer Verbindungen werden je nach Anzahl der Nichtmetallatome Präfixe wie mono, di, tri verwendet.",
+          "fr": "Lors de la dénomination des composés ioniques, des préfixes tels que mono, di, tri sont utilisés selon le nombre d'atomes non métalliques.",
+          "ru": "При названии ионных соединений используются приставки моно, ди, три по числу атомов неметалла.",
+          "ar": "عند تسمية المركبات الأيونية تُستخدم بادئات مثل mono وdi وtri وفقًا لعدد ذرات اللافلز.",
+          "zh": "离子化合物命名时根据非金属原子数使用mono、di、tri等前缀。",
+          "ku": "Di binavkirina pêkhateyên îyonî de li gorî hejmara atomên nemetal pêşgirên wekî mono, di, tri têne bikaranîn."
         },
         {
           "tr": "Hidrojen bağı H2 molekülleri arasındaki kovalent bağdır.",
@@ -1408,13 +1408,13 @@ export const unit03: ChemistryUnitSeedData = {
       "correctIndex": 1,
       "explanation": {
         "tr": "Doğru cevap \"Metalik bağ, serbest değerlik elektronlarının oluşturduğu elektron denizi ile pozitif metal iyonları arasındadır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The metallic bond is between the electron sea formed by free valence electrons and positive metal ions.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die metallische Bindung besteht zwischen dem Elektronenmeer, das aus freien Valenzelektronen und positiven Metallionen besteht.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La liaison métallique se situe entre la mer d’électrons formée par les électrons de valence libres et les ions métalliques positifs.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Металлическая связь возникает между электронным морем, образованным свободными валентными электронами и положительными ионами металлов.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"الرابطة المعدنية هي بين بحر الإلكترون الذي يتكون من إلكترونات التكافؤ الحرة وأيونات المعادن الموجبة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“金属键位于自由价电子与正金属离子形成的电子海之间。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Girêdana metalî di navbera deryaya elektronê de ye ku ji hêla elektronên valahiya azad û îyonên metal ên erênî ve hatî çêkirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"The metallic bond is the attraction between the electron sea formed by free valence electrons and the positive metal ions.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Die metallische Bindung besteht zwischen dem aus freien Valenzelektronen gebildeten Elektronensee und den positiven Metallionen.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"La liaison métallique s'établit entre la mer d'électrons, formée par les électrons de valence libres, et les ions métalliques positifs.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Металлическая связь возникает между электронным морем, образованным свободными валентными электронами, и положительными ионами металла.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"الرابطة الفلزية هي التجاذب بين بحر الإلكترونات المتكوّن من إلكترونات التكافؤ الحرة وأيونات الفلز الموجبة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“金属键是由自由价电子形成的电子海与金属阳离子之间的作用。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Girêdana metalî di navbera deryaya elektronan a ku ji elektronên valansê yên azad pêk tê û îyonên metal ên erênî de ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1474,7 +1474,7 @@ export const unit03: ChemistryUnitSeedData = {
           "tr": "London kuvvetleri kalıcı dipol momentine sahip kutuplu moleküllerde bulunmaz.",
           "en": "London forces do not exist in polar molecules with permanent dipole moments.",
           "de": "In polaren Molekülen mit permanenten Dipolmomenten gibt es keine Londoner Kräfte.",
-          "fr": "Les forces de Londres n'existent pas dans les molécules polaires avec des moments dipolaires permanents.",
+          "fr": "Les forces de London n'existent pas dans les molécules polaires avec des moments dipolaires permanents.",
           "ru": "Силы Лондона не существуют в полярных молекулах с постоянными дипольными моментами.",
           "ar": "لا توجد قوى لندن في الجزيئات القطبية ذات العزوم الثنائية القطبية الدائمة.",
           "zh": "伦敦力不存在于具有永久偶极矩的极性分子中。",
@@ -1514,7 +1514,7 @@ export const unit03: ChemistryUnitSeedData = {
           "ru": "Диполь-дипольное взаимодействие — это фундаментальная сила, наблюдаемая между атомами благородного газа.",
           "ar": "التفاعل ثنائي القطب ثنائي القطب هو القوة الأساسية التي تظهر بين ذرات الغاز النبيل.",
           "zh": "偶极-偶极相互作用是稀有气体原子之间的基本力。",
-          "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza hêja de tê dîtin."
+          "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza esîl de tê dîtin."
         },
         {
           "tr": "İyonik kristaller çekiçle vurulduğunda tel ve levha haline getirilebilir.",
@@ -1550,7 +1550,7 @@ export const unit03: ChemistryUnitSeedData = {
           "tr": "London kuvveti moleküldeki elektron sayısı azaldıkça artar.",
           "en": "London force increases as the number of electrons in the molecule decreases.",
           "de": "Die London-Kraft nimmt zu, wenn die Anzahl der Elektronen im Molekül abnimmt.",
-          "fr": "La force de Londres augmente à mesure que le nombre d’électrons dans la molécule diminue.",
+          "fr": "La force de London augmente à mesure que le nombre d’électrons dans la molécule diminue.",
           "ru": "Сила Лондона увеличивается по мере уменьшения числа электронов в молекуле.",
           "ar": "تزداد قوة لندن مع انخفاض عدد الإلكترونات في الجزيء.",
           "zh": "伦敦力随着分子中电子数量的减少而增加。",
@@ -1593,14 +1593,14 @@ export const unit03: ChemistryUnitSeedData = {
           "ku": "Ji ber ku girêdana kîmyewî têk diçe, her dem rêjeyek mezin germahî berdide hawîrdorê."
         },
         {
-          "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre Latince ön ekler kullanılır.",
-          "en": "When naming ionic compounds, Latin prefixes are used according to the number of nonmetals.",
-          "de": "Bei der Benennung ionischer Verbindungen werden lateinische Präfixe entsprechend der Anzahl der Nichtmetalle verwendet.",
-          "fr": "Lors de la dénomination des composés ioniques, des préfixes latins sont utilisés en fonction du nombre de non-métaux.",
-          "ru": "При названии ионных соединений используются латинские приставки по числу неметаллов.",
-          "ar": "عند تسمية المركبات الأيونية، يتم استخدام البادئات اللاتينية وفقًا لعدد اللافلزات.",
-          "zh": "命名离子化合物时，根据非金属的数量使用拉丁语前缀。",
-          "ku": "Dema navdêrên pêkhateyên îyonî, pêşpirtikên latînî li gorî hejmara nemetalan têne bikaranîn."
+          "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre mono, di, tri gibi ön ekler kullanılır.",
+          "en": "When naming ionic compounds, prefixes such as mono, di, tri are used according to the number of nonmetal atoms.",
+          "de": "Bei der Benennung ionischer Verbindungen werden je nach Anzahl der Nichtmetallatome Präfixe wie mono, di, tri verwendet.",
+          "fr": "Lors de la dénomination des composés ioniques, des préfixes tels que mono, di, tri sont utilisés selon le nombre d'atomes non métalliques.",
+          "ru": "При названии ионных соединений используются приставки моно, ди, три по числу атомов неметалла.",
+          "ar": "عند تسمية المركبات الأيونية تُستخدم بادئات مثل mono وdi وtri وفقًا لعدد ذرات اللافلز.",
+          "zh": "离子化合物命名时根据非金属原子数使用mono、di、tri等前缀。",
+          "ku": "Di binavkirina pêkhateyên îyonî de li gorî hejmara atomên nemetal pêşgirên wekî mono, di, tri têne bikaranîn."
         },
         {
           "tr": "Hidrojen bağı H2 molekülleri arasındaki kovalent bağdır.",
@@ -1692,7 +1692,7 @@ export const unit03: ChemistryUnitSeedData = {
           "tr": "London kuvvetleri kalıcı dipol momentine sahip kutuplu moleküllerde bulunmaz.",
           "en": "London forces do not exist in polar molecules with permanent dipole moments.",
           "de": "In polaren Molekülen mit permanenten Dipolmomenten gibt es keine Londoner Kräfte.",
-          "fr": "Les forces de Londres n'existent pas dans les molécules polaires avec des moments dipolaires permanents.",
+          "fr": "Les forces de London n'existent pas dans les molécules polaires avec des moments dipolaires permanents.",
           "ru": "Силы Лондона не существуют в полярных молекулах с постоянными дипольными моментами.",
           "ar": "لا توجد قوى لندن في الجزيئات القطبية ذات العزوم الثنائية القطبية الدائمة.",
           "zh": "伦敦力不存在于具有永久偶极矩的极性分子中。",
@@ -1703,7 +1703,7 @@ export const unit03: ChemistryUnitSeedData = {
           "en": "Metallic bonds are established by sharing electrons between nonmetals.",
           "de": "Metallische Bindungen entstehen durch die gemeinsame Nutzung von Elektronen zwischen Nichtmetallen.",
           "fr": "Les liaisons métalliques sont établies en partageant des électrons entre des non-métaux.",
-          "ru": "Металлические связи устанавливаются путем обмена электронами между неметаллами.",
+          "ru": "Металлические связи устанавливаются путём обобществления электронов между неметаллами.",
           "ar": "يتم إنشاء الروابط المعدنية من خلال مشاركة الإلكترونات بين اللافلزات.",
           "zh": "金属键是通过非金属之间共享电子建立的。",
           "ku": "Girêdanên metalîk bi parvekirina elektronan di navbera nemetalan de têne damezrandin."
@@ -1768,7 +1768,7 @@ export const unit03: ChemistryUnitSeedData = {
           "tr": "London kuvveti moleküldeki elektron sayısı azaldıkça artar.",
           "en": "London force increases as the number of electrons in the molecule decreases.",
           "de": "Die London-Kraft nimmt zu, wenn die Anzahl der Elektronen im Molekül abnimmt.",
-          "fr": "La force de Londres augmente à mesure que le nombre d’électrons dans la molécule diminue.",
+          "fr": "La force de London augmente à mesure que le nombre d’électrons dans la molécule diminue.",
           "ru": "Сила Лондона увеличивается по мере уменьшения числа электронов в молекуле.",
           "ar": "تزداد قوة لندن مع انخفاض عدد الإلكترونات في الجزيء.",
           "zh": "伦敦力随着分子中电子数量的减少而增加。",
@@ -1811,14 +1811,14 @@ export const unit03: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre Latince ön ekler kullanılır.",
-          "en": "When naming ionic compounds, Latin prefixes are used according to the number of nonmetals.",
-          "de": "Bei der Benennung ionischer Verbindungen werden lateinische Präfixe entsprechend der Anzahl der Nichtmetalle verwendet.",
-          "fr": "Lors de la dénomination des composés ioniques, des préfixes latins sont utilisés en fonction du nombre de non-métaux.",
-          "ru": "При названии ионных соединений используются латинские приставки по числу неметаллов.",
-          "ar": "عند تسمية المركبات الأيونية، يتم استخدام البادئات اللاتينية وفقًا لعدد اللافلزات.",
-          "zh": "命名离子化合物时，根据非金属的数量使用拉丁语前缀。",
-          "ku": "Dema navdêrên pêkhateyên îyonî, pêşpirtikên latînî li gorî hejmara nemetalan têne bikaranîn."
+          "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre mono, di, tri gibi ön ekler kullanılır.",
+          "en": "When naming ionic compounds, prefixes such as mono, di, tri are used according to the number of nonmetal atoms.",
+          "de": "Bei der Benennung ionischer Verbindungen werden je nach Anzahl der Nichtmetallatome Präfixe wie mono, di, tri verwendet.",
+          "fr": "Lors de la dénomination des composés ioniques, des préfixes tels que mono, di, tri sont utilisés selon le nombre d'atomes non métalliques.",
+          "ru": "При названии ионных соединений используются приставки моно, ди, три по числу атомов неметалла.",
+          "ar": "عند تسمية المركبات الأيونية تُستخدم بادئات مثل mono وdi وtri وفقًا لعدد ذرات اللافلز.",
+          "zh": "离子化合物命名时根据非金属原子数使用mono、di、tri等前缀。",
+          "ku": "Di binavkirina pêkhateyên îyonî de li gorî hejmara atomên nemetal pêşgirên wekî mono, di, tri têne bikaranîn."
         },
         {
           "tr": "Hidrojen bağı H2 molekülleri arasındaki kovalent bağdır.",
@@ -1900,7 +1900,7 @@ export const unit03: ChemistryUnitSeedData = {
           "tr": "London kuvvetleri kalıcı dipol momentine sahip kutuplu moleküllerde bulunmaz.",
           "en": "London forces do not exist in polar molecules with permanent dipole moments.",
           "de": "In polaren Molekülen mit permanenten Dipolmomenten gibt es keine Londoner Kräfte.",
-          "fr": "Les forces de Londres n'existent pas dans les molécules polaires avec des moments dipolaires permanents.",
+          "fr": "Les forces de London n'existent pas dans les molécules polaires avec des moments dipolaires permanents.",
           "ru": "Силы Лондона не существуют в полярных молекулах с постоянными дипольными моментами.",
           "ar": "لا توجد قوى لندن في الجزيئات القطبية ذات العزوم الثنائية القطبية الدائمة.",
           "zh": "伦敦力不存在于具有永久偶极矩的极性分子中。",
@@ -1911,7 +1911,7 @@ export const unit03: ChemistryUnitSeedData = {
           "en": "Metallic bonds are established by sharing electrons between nonmetals.",
           "de": "Metallische Bindungen entstehen durch die gemeinsame Nutzung von Elektronen zwischen Nichtmetallen.",
           "fr": "Les liaisons métalliques sont établies en partageant des électrons entre des non-métaux.",
-          "ru": "Металлические связи устанавливаются путем обмена электронами между неметаллами.",
+          "ru": "Металлические связи устанавливаются путём обобществления электронов между неметаллами.",
           "ar": "يتم إنشاء الروابط المعدنية من خلال مشاركة الإلكترونات بين اللافلزات.",
           "zh": "金属键是通过非金属之间共享电子建立的。",
           "ku": "Girêdanên metalîk bi parvekirina elektronan di navbera nemetalan de têne damezrandin."
@@ -1976,7 +1976,7 @@ export const unit03: ChemistryUnitSeedData = {
           "tr": "London kuvveti moleküldeki elektron sayısı azaldıkça artar.",
           "en": "London force increases as the number of electrons in the molecule decreases.",
           "de": "Die London-Kraft nimmt zu, wenn die Anzahl der Elektronen im Molekül abnimmt.",
-          "fr": "La force de Londres augmente à mesure que le nombre d’électrons dans la molécule diminue.",
+          "fr": "La force de London augmente à mesure que le nombre d’électrons dans la molécule diminue.",
           "ru": "Сила Лондона увеличивается по мере уменьшения числа электронов в молекуле.",
           "ar": "تزداد قوة لندن مع انخفاض عدد الإلكترونات في الجزيء.",
           "zh": "伦敦力随着分子中电子数量的减少而增加。",
@@ -2039,14 +2039,14 @@ export const unit03: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Bileşik adlandırmada kovalent bileşiklerde mono, di, tri gibi Latince sayılar kullanılır.",
-          "en": "In compound naming, Latin numbers such as mono, di, tri are used in covalent compounds.",
-          "de": "Bei der Benennung von Verbindungen werden lateinische Zahlen wie Mono, Di, Tri in kovalenten Verbindungen verwendet.",
-          "fr": "Dans la dénomination des composés, les nombres latins tels que mono, di, tri sont utilisés dans les composés covalents.",
-          "ru": "При наименовании соединений в ковалентных соединениях используются латинские цифры, такие как моно, ди, три.",
-          "ar": "في تسمية المركبات، يتم استخدام الأرقام اللاتينية مثل mono، di، tri في المركبات التساهمية.",
-          "zh": "在化合物命名中，共价化合物使用拉丁数字，例如单、二、三。",
-          "ku": "Di binavkirina hevedudanî de, jimareyên latînî yên wekî mono, di, tri di pêkhateyên kovalentî de têne bikaranîn."
+          "tr": "Bileşik adlandırmada kovalent bileşiklerde mono, di, tri gibi sayı ön ekleri kullanılır.",
+          "en": "In naming compounds, numerical prefixes such as mono, di, tri are used for covalent compounds.",
+          "de": "Bei der Benennung von Verbindungen werden bei kovalenten Verbindungen Zahlpräfixe wie mono, di, tri verwendet.",
+          "fr": "Dans la nomenclature, les préfixes numériques tels que mono, di, tri sont utilisés pour les composés covalents.",
+          "ru": "При названии ковалентных соединений используются числовые приставки, такие как моно, ди, три.",
+          "ar": "في تسمية المركبات التساهمية تُستخدم البادئات العددية مثل أحادي (mono) وثنائي (di) وثلاثي (tri).",
+          "zh": "共价化合物命名时使用一、二、三（mono、di、tri）等数字前缀。",
+          "ku": "Di binavkirina pêkhateyên kovalent de pêşgirên hejmarî yên wekî mono, di, tri têne bikaranîn."
         },
         {
           "tr": "Hidrojen bağı H2 molekülleri arasındaki kovalent bağdır.",
@@ -2086,19 +2086,19 @@ export const unit03: ChemistryUnitSeedData = {
           "ru": "Диполь-дипольное взаимодействие — это фундаментальная сила, наблюдаемая между атомами благородного газа.",
           "ar": "التفاعل ثنائي القطب ثنائي القطب هو القوة الأساسية التي تظهر بين ذرات الغاز النبيل.",
           "zh": "偶极-偶极相互作用是稀有气体原子之间的基本力。",
-          "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza hêja de tê dîtin."
+          "ku": "Têkiliya dupol-dîpol hêza bingehîn e ku di navbera atomên gaza esîl de tê dîtin."
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Bileşik adlandırmada kovalent bileşiklerde mono, di, tri gibi Latince sayılar kullanılır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"In compound naming, Latin numbers such as mono, di, tri are used in covalent compounds.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Bei der Benennung von Verbindungen werden lateinische Zahlen wie Mono, Di, Tri in kovalenten Verbindungen verwendet.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Dans la dénomination des composés, les nombres latins tels que mono, di, tri sont utilisés dans les composés covalents.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «При наименовании соединений в ковалентных соединениях используются латинские цифры, такие как моно, ди, три.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في تسمية المركبات، يتم استخدام الأرقام اللاتينية مثل mono، di، tri في المركبات التساهمية.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“在化合物命名中，共价化合物使用拉丁数字，例如单、二、三。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di binavkirina hevedudanî de, jimareyên latînî yên wekî mono, di, tri di pêkhateyên kovalentî de têne bikaranîn.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Bileşik adlandırmada kovalent bileşiklerde mono, di, tri gibi sayı ön ekleri kullanılır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"In naming compounds, numerical prefixes such as mono, di, tri are used for covalent compounds.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Bei der Benennung von Verbindungen werden bei kovalenten Verbindungen Zahlpräfixe wie mono, di, tri verwendet.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Dans la nomenclature, les préfixes numériques tels que mono, di, tri sont utilisés pour les composés covalents.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «При названии ковалентных соединений используются числовые приставки, такие как моно, ди, три.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"في تسمية المركبات التساهمية تُستخدم البادئات العددية مثل أحادي (mono) وثنائي (di) وثلاثي (tri).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“共价化合物命名时使用一、二、三（mono、di、tri）等数字前缀。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di binavkirina pêkhateyên kovalent de pêşgirên hejmarî yên wekî mono, di, tri têne bikaranîn.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }
   ]

@@ -1,27 +1,15 @@
-import React, { useEffect, useState, useMemo } from 'react';
-import {
-  BookOpen,
-  Box,
-  Layers,
-  Gamepad2,
-  FileCheck2,
-  User,
-  Flame,
-  Sun,
-  Moon,
-  WifiOff,
-  Download,
-  Check,
-  AlertCircle,
-  X,
-  ChevronDown,
-} from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { BookOpen, Box, Layers, Gamepad2, FileCheck2, User } from 'lucide-react';
 import { UI_TRANSLATIONS } from './i18n/translations';
+import { APP_SHELL_STRINGS } from './i18n/appShellStrings';
+import { redesignStrings } from './i18n/redesignStrings';
+import { playClick, playStart, feedbackPlayedWithin } from './audio/sfx';
 import { useBackgroundMusic } from './audio/useBackgroundMusic';
 import { useAppStore } from './store/useAppStore';
 import { usePreferences } from './store/usePreferences';
 import { Onboarding, type ExamPreference } from './components/onboarding/Onboarding';
 import { FlaskMark } from './components/common/FlaskMark';
+import { LeitnerBoxEngine } from './engine/leitnerEngine';
 import { Confetti } from './components/common/Confetti';
 
 import { CurriculumView } from './components/study/CurriculumView';
@@ -29,9 +17,10 @@ import { Kimya3DLab } from './components/three/Kimya3DLab';
 import { FlashcardsView } from './components/cards/FlashcardsView';
 import { GamesHub } from './components/games/GamesHub';
 import { ExamCenter } from './components/exams/ExamCenter';
-import { ProfileView } from './components/profile/ProfileView';
+import { ProfileView, type ProfileTab } from './components/profile/ProfileView';
+import { SettingsView } from './components/settings/SettingsView';
 
-export type NavTab = 'curriculum' | 'lab3d' | 'cards' | 'games' | 'exams' | 'profile';
+export type NavTab = 'curriculum' | 'lab3d' | 'cards' | 'games' | 'exams' | 'profile' | 'settings';
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -41,20 +30,32 @@ export const App: React.FC = () => {
   const store = useAppStore();
   const { musicOn, musicTrackId, musicVolume, setMusicOn, setMusicTrack, setMusicVolume } =
     useBackgroundMusic();
-  const { dailyGoal, reduceMotion, sfxOn, setSfxOn, todayCount, setDailyGoal, setReduceMotion, bumpToday } =
-    usePreferences();
+  const {
+    dailyGoal,
+    reduceMotion,
+    sfxOn,
+    setSfxOn,
+    textSize,
+    textScale,
+    setTextSize,
+    todayCount,
+    setDailyGoal,
+    setReduceMotion,
+    bumpToday,
+    resetToday,
+  } = usePreferences(store.activeProfileId);
 
   const lang = store.language;
   const t = UI_TRANSLATIONS[lang];
+  const sh = APP_SHELL_STRINGS[lang] ?? APP_SHELL_STRINGS.tr;
+  const r = redesignStrings(lang);
 
   const [activeTab, setActiveTab] = useState<NavTab>('curriculum');
+  const [profileTab, setProfileTab] = useState<ProfileTab>('dashboard');
   const [targetSceneId, setTargetSceneId] = useState<string>('water-vsepr');
   const [targetCardUnitId, setTargetCardUnitId] = useState<string | null>(null);
   const [targetExamUnitId, setTargetExamUnitId] = useState<string | null>(null);
   const [celebrationKey, setCelebrationKey] = useState<number>(0);
-
-  const [showProfileSwitcher, setShowProfileSwitcher] = useState<boolean>(false);
-  const [warningDismissed, setWarningDismissed] = useState<boolean>(false);
 
   const [isOffline, setIsOffline] = useState<boolean>(
     typeof navigator !== 'undefined' ? !navigator.onLine : false
@@ -83,6 +84,31 @@ export const App: React.FC = () => {
     }
   });
   const [installPrompt, setInstallPrompt] = useState<BeforeInstallPromptEvent | null>(null);
+
+  // App-wide tactile UI click. Runs in the bubble phase on window, i.e. after React's
+  // handlers, so it stays silent when a handler already played feedback (correct, wrong,
+  // start…). data-sfx="start" plays the start sound instead; data-sfx="none" mutes.
+  useEffect(() => {
+    let lastClickAt = 0;
+    const onClick = (e: MouseEvent) => {
+      const target = e.target as Element | null;
+      const el = target?.closest?.(
+        'button, [role="button"], [role="tab"], [role="switch"], [role="radio"], [role="option"], [role="menuitem"], [role="menuitemradio"], a[href], summary, input[type="checkbox"], input[type="radio"]'
+      );
+      if (!el) return;
+      if ((el as HTMLButtonElement).disabled || el.getAttribute('aria-disabled') === 'true') return;
+      const mode = el.getAttribute('data-sfx') ?? el.closest('[data-sfx]')?.getAttribute('data-sfx');
+      if (mode === 'none') return;
+      if (feedbackPlayedWithin(150)) return;
+      const now = performance.now();
+      if (now - lastClickAt < 60) return; // label + input double click events
+      lastClickAt = now;
+      if (mode === 'start') playStart();
+      else playClick();
+    };
+    window.addEventListener('click', onClick);
+    return () => window.removeEventListener('click', onClick);
+  }, []);
 
   // Active study time tracking: 1 minute interval
   useEffect(() => {
@@ -117,25 +143,32 @@ export const App: React.FC = () => {
     };
   }, []);
 
-  // Goal-miss detection
-  const todayRecord = store.activeProfile.dailyHistory[store.activeProfile.dailyHistory.length - 1];
-  const questionsToday = todayRecord?.questionsSolved ?? 0;
-  const studyMinToday = todayRecord?.studyMinutes ?? 0;
-  const qGoal = store.activeProfile.dailyQuestionGoal || 30;
-  const minGoal = store.activeProfile.dailyStudyMinutesGoal || 30;
-  const isGoalMissed = questionsToday < qGoal || studyMinToday < minGoal;
-
   const navItems: { id: NavTab; label: string; icon: React.ComponentType<{ size?: number; 'aria-hidden'?: boolean }> }[] = [
     { id: 'curriculum', label: t.nav.curriculum, icon: BookOpen },
     { id: 'lab3d', label: t.nav.lab3d, icon: Box },
     { id: 'cards', label: t.nav.cards, icon: Layers },
     { id: 'games', label: t.nav.games, icon: Gamepad2 },
     { id: 'exams', label: t.nav.exams, icon: FileCheck2 },
-    { id: 'profile', label: t.nav.profile, icon: User },
+    { id: 'profile', label: r.navProfileSettings, icon: User },
   ];
 
+  const profile = store.activeProfile;
+  const trackLabel = (track: string) =>
+    track === 'TYT_ONLY' ? sh.trackTytOnly : track === 'AYT_FOCUS' ? sh.trackAytFocus : sh.trackSequential;
+  const isNavOn = (id: NavTab) => activeTab === id || (id === 'profile' && activeTab === 'settings');
+
+  const goTab = (tab: NavTab) => {
+    if (tab === 'exams') setTargetExamUnitId(null);
+    setActiveTab(tab);
+  };
+
+  const openProfile = (tab: ProfileTab = 'dashboard') => {
+    setProfileTab(tab);
+    setActiveTab('profile');
+  };
+
   return (
-    <div className="app-shell">
+    <div className="app-shell" style={{ ['--fs' as string]: String(textScale) }}>
       <Confetti burstKey={celebrationKey} />
 
       {showOnboarding && !showSplash && (
@@ -145,6 +178,7 @@ export const App: React.FC = () => {
           onFinish={(pref, goal) => {
             setExamPref(pref);
             setDailyGoal(goal);
+            store.updateProfile(store.activeProfile.id, { dailyQuestionGoal: goal });
             setShowOnboarding(false);
             try {
               localStorage.setItem('kimya-onboarded', '1');
@@ -158,353 +192,246 @@ export const App: React.FC = () => {
       )}
 
       {showSplash && (
-        <div className="app-splash" role="status" aria-label={t.appName}>
+        <div className="app-splash" role="status" aria-label={sh.splashLoading}>
+          <div className="ky-floor" aria-hidden="true" />
           <div className="splash-3d-stage" aria-hidden="true">
+            <div className="splash-3d-glow" />
             <div className="splash-3d-orbit-ring ring-a" />
             <div className="splash-3d-orbit-ring ring-b" />
-            <div className="splash-3d-orbit-ring ring-c" />
             <div className="splash-3d-core">
-              <FlaskMark width={144} height={144} />
+              <FlaskMark width={260} height={260} />
             </div>
           </div>
-          <strong className="splash-word">{t.appName}</strong>
-          <span className="splash-subtitle">TYT & AYT Kimya Laboratuvarı</span>
-          <div className="splash-3d-pills" aria-hidden="true">
-            <span className="splash-pill">1. TYT</span>
-            <span className="splash-pill">2. AYT</span>
-            <span className="splash-pill">3D Lab</span>
-            <span className="splash-pill">AI Koç</span>
-          </div>
-          <div className="splash-3d-progress" aria-hidden="true">
-            <div className="splash-3d-progress-fill" />
+          <strong className="splash-word">
+            Kimya <em>3D</em>
+          </strong>
+          <span className="splash-subtitle">{sh.splashSubtitle}</span>
+          <div className="splash-footer" aria-hidden="true">
+            <div className="splash-3d-progress">
+              <div className="splash-3d-progress-fill" />
+            </div>
+            <span className="splash-loading">{sh.splashLoading}</span>
           </div>
         </div>
       )}
 
-      {/* Desktop & iPad Sidebar */}
+      {/* iPad & desktop sidebar (hub screens) */}
       <aside className="app-sidebar">
         <div className="sidebar-brand-head">
           <div className="brand-logo-mark" aria-hidden="true">
-            <FlaskMark width={36} height={36} />
+            <FlaskMark width={32} height={32} variant="mark" />
           </div>
-          <div>
-            <strong>{t.appName}</strong>
-            <span>TYT & AYT Kimya</span>
-          </div>
-        </div>
-
-        {/* Sidebar Active Profile Widget */}
-        <div
-          className="sidebar-profile-widget"
-          onClick={() => setActiveTab('profile')}
-          role="button"
-          tabIndex={0}
-          title="Profili Görüntüle"
-        >
-          <div className="sidebar-profile-avatar">{store.activeProfile.avatar || '👨‍🎓'}</div>
-          <div className="sidebar-profile-details">
-            <strong className="sidebar-profile-name">{store.activeProfile.name}</strong>
-            <span className="sidebar-profile-track">
-              {store.activeProfile.targetTrack === 'TYT_ONLY'
-                ? 'TYT Odaklı'
-                : store.activeProfile.targetTrack === 'AYT_FOCUS'
-                ? 'AYT Odaklı'
-                : '1. TYT → 2. AYT'}
-            </span>
+          <div className="sidebar-brand-text">
+            <strong>
+              Kimya <em>3D</em>
+            </strong>
+            <span>{sh.brandTagline}</span>
           </div>
         </div>
 
-        <nav className="sidebar-nav-list" aria-label="Main Navigation">
+        <nav className="sidebar-nav-list" aria-label={t.appName}>
           {navItems.map((item) => {
             const Icon = item.icon;
+            const on = isNavOn(item.id);
             return (
               <button
                 key={item.id}
                 type="button"
-                className={`sidebar-nav-btn ${activeTab === item.id ? 'active' : ''}`}
-                onClick={() => setActiveTab(item.id)}
-              >
-                <Icon size={19} aria-hidden={true} />
-                <span>{item.label}</span>
-              </button>
-            );
-          })}
-        </nav>
-
-        <div className="sidebar-xp-box">
-          <div className="progress-meta-row">
-            <strong>
-              {t.stats.level} {store.level}
-            </strong>
-            <span>{store.xp} XP</span>
-          </div>
-          <div className="progress-track">
-            <div className="progress-fill" style={{ inlineSize: `${store.levelProgressPct}%` }} />
-          </div>
-        </div>
-      </aside>
-
-      {/* Glassmorphic Top Telemetry Bar with Profile Switcher */}
-      <header className="app-topbar">
-        <div className="brand-mobile-cluster">
-          <div className="brand-logo-mark" aria-hidden="true">
-            <FlaskMark width={32} height={32} />
-          </div>
-          <strong className="mobile-only-title">{t.appName}</strong>
-        </div>
-
-        <div className="topbar-stats-strip">
-          {isOffline && (
-            <span className="telemetry-pill offline">
-              <WifiOff size={14} aria-hidden="true" />
-              <span>{t.offlineModeActive}</span>
-            </span>
-          )}
-
-          {installPrompt && (
-            <button
-              type="button"
-              className="telemetry-pill gems"
-              onClick={async () => {
-                await installPrompt.prompt();
-                setInstallPrompt(null);
-              }}
-            >
-              <Download size={14} aria-hidden="true" />
-              <span>{t.installApp}</span>
-            </button>
-          )}
-
-          <span className="telemetry-pill streak" title={t.stats.streak}>
-            <Flame size={15} aria-hidden="true" />
-            <span>
-              {store.streakDays} {t.stats.days}
-            </span>
-          </span>
-
-          <button
-            type="button"
-            className="theme-toggle-icon-btn"
-            aria-label={t.profile.themeLabel}
-            onClick={store.quickToggleTheme}
-          >
-            {store.theme === 'dark' ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
-          </button>
-
-          {/* Quick Profile Switcher Dropdown */}
-          <div className="topbar-profile-container">
-            <button
-              type="button"
-              className={`topbar-profile-btn ${activeTab === 'profile' ? 'active' : ''}`}
-              aria-label={t.nav.profile}
-              onClick={() => setShowProfileSwitcher((prev) => !prev)}
-            >
-              <span className="topbar-avatar-emoji">{store.activeProfile.avatar || '👨‍🎓'}</span>
-              <span className="topbar-name-text">{store.activeProfile.name}</span>
-              <span className="topbar-level-tag">Lv.{store.level}</span>
-              <ChevronDown size={14} className="topbar-caret" />
-            </button>
-
-            {showProfileSwitcher && (
-              <div className="topbar-profile-dropdown" role="menu">
-                <div className="dropdown-header">
-                  <strong>Öğrenci Profilleri ({store.profiles.length})</strong>
-                </div>
-                <div className="dropdown-profile-list">
-                  {store.profiles.map((p) => {
-                    const isCur = p.id === store.activeProfileId;
-                    return (
-                      <button
-                        key={p.id}
-                        type="button"
-                        className={`dropdown-profile-item ${isCur ? 'active' : ''}`}
-                        onClick={() => {
-                          store.switchProfile(p.id);
-                          setShowProfileSwitcher(false);
-                        }}
-                      >
-                        <span className="dropdown-item-avatar">{p.avatar || '👨‍🎓'}</span>
-                        <div className="dropdown-item-meta">
-                          <strong className="dropdown-item-name">{p.name}</strong>
-                          <span className="dropdown-item-sub">
-                            {p.stats.xp} XP • {p.targetTrack === 'TYT_ONLY' ? 'TYT' : p.targetTrack === 'AYT_FOCUS' ? 'AYT' : 'TYT→AYT'}
-                          </span>
-                        </div>
-                        {isCur && <Check size={14} className="dropdown-check-icon" />}
-                      </button>
-                    );
-                  })}
-                </div>
-                <div className="dropdown-footer">
-                  <button
-                    type="button"
-                    className="dropdown-manage-link"
-                    onClick={() => {
-                      setShowProfileSwitcher(false);
-                      setActiveTab('profile');
-                    }}
-                  >
-                    Profil Ekle & Yönet →
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </header>
-
-      {/* Main Responsive Stage */}
-      <main className="app-main-stage">
-        {/* Dismissible AI Coach Goal-Miss Warning Banner */}
-        {isGoalMissed && !warningDismissed && (
-          <div className="goal-miss-top-banner" role="status">
-            <div className="banner-content-cluster">
-              <span className="banner-robot-icon">🤖</span>
-              <div className="banner-text-block">
-                <strong>AI Koç Hedef Hatırlatması ({store.activeProfile.name}):</strong>
-                <span>
-                  Bugünkü hedefine henüz ulaşmadın: {questionsToday}/{qGoal} Soru • {studyMinToday}/{minGoal} Dakika.
-                  Günlük hedefini tutturmak için 1 test çöz veya flashcard tekrarı yap!
-                </span>
-              </div>
-            </div>
-            <div className="banner-btns-cluster">
-              <button
-                type="button"
-                className="banner-solve-btn"
-                onClick={() => setActiveTab('exams')}
-              >
-                Hemen Soru Çöz
-              </button>
-              <button
-                type="button"
-                className="banner-close-btn"
-                onClick={() => setWarningDismissed(true)}
-                title="Uyarıyı Kapat"
-              >
-                <X size={16} />
-              </button>
-            </div>
-          </div>
-        )}
-
-        {activeTab === 'curriculum' && (
-          <CurriculumView
-            key={examPref}
-            initialExamFilter={examPref}
-            todayCount={todayCount}
-            dailyGoal={dailyGoal}
-            lang={lang}
-            solvedQuestions={store.solvedQuestionIds}
-            completedSlideUnits={store.completedSlideUnits}
-            targetTrack={store.activeProfile.targetTrack}
-            onMarkUnitSlidesCompleted={store.markUnitSlidesCompleted}
-            onOpenUnitQuiz={(uId) => {
-              setTargetExamUnitId(uId);
-              setActiveTab('exams');
-            }}
-            onOpenUnitCards={(uId) => {
-              setTargetCardUnitId(uId);
-              setActiveTab('cards');
-            }}
-            onOpen3DScene={(scId) => {
-              setTargetSceneId(scId);
-              setActiveTab('lab3d');
-            }}
-          />
-        )}
-
-        {activeTab === 'lab3d' && (
-          <Kimya3DLab
-            lang={lang}
-            initialSceneId={targetSceneId}
-            resolvedDark={store.theme === 'dark'}
-            onEarnXp={(amt) => store.earnXp(amt)}
-            onOpenUnitExam={(uId) => {
-              setTargetExamUnitId(uId);
-              setActiveTab('exams');
-            }}
-            onNavigateTab={(tab) => setActiveTab(tab as NavTab)}
-          />
-        )}
-
-        {activeTab === 'cards' && (
-          <FlashcardsView
-            lang={lang}
-            initialUnitId={targetCardUnitId}
-            masteredCardIds={store.masteredCardIds}
-            onRateCard={store.markCardMastered}
-          />
-        )}
-
-        {activeTab === 'games' && (
-          <GamesHub
-            lang={lang}
-            highScores={store.gameHighScores}
-            onFinishGame={store.recordGameScore}
-          />
-        )}
-
-        {activeTab === 'exams' && (
-          <ExamCenter
-            lang={lang}
-            preselectedUnitId={targetExamUnitId}
-            solvedQuestions={store.solvedQuestionIds}
-            wrongQuestionIds={store.mistakeQuestionIds}
-            bookmarkedQuestionIds={store.bookmarkedQuestionIds}
-            mockBestScores={store.mockBestScores}
-            onRecordQuestion={(qId, isCorrect) => {
-              store.recordQuestionResult(qId, isCorrect);
-              bumpToday();
-            }}
-            onToggleBookmark={store.toggleBookmark}
-            onSaveAttempt={(attempt) => {
-              store.recordExamAttempt(attempt);
-              setCelebrationKey((k) => k + 1);
-            }}
-          />
-        )}
-
-        {activeTab === 'profile' && (
-          <ProfileView
-            lang={lang}
-            store={store}
-            dailyGoal={dailyGoal}
-            reduceMotion={reduceMotion}
-            sfxOn={sfxOn}
-            musicOn={musicOn}
-            musicTrackId={musicTrackId}
-            musicVolume={musicVolume}
-            onSetSfxOn={setSfxOn}
-            onSetMusicOn={setMusicOn}
-            onSetMusicTrack={setMusicTrack}
-            onSetMusicVolume={setMusicVolume}
-            onSetDailyGoal={setDailyGoal}
-            onSetReduceMotion={setReduceMotion}
-            onRelaunchOnboarding={() => setShowOnboarding(true)}
-          />
-        )}
-      </main>
-
-      {/* Mobile Safe-Area Bottom Navigation */}
-      <nav className="mobile-bottom-nav" aria-label="Mobile Navigation">
-        {navItems
-          .filter((item) => item.id !== 'profile')
-          .map((item) => {
-            const Icon = item.icon;
-            return (
-              <button
-                key={item.id}
-                type="button"
-                className={`mobile-tab-btn ${activeTab === item.id ? 'active' : ''}`}
-                onClick={() => setActiveTab(item.id)}
+                className={`sidebar-nav-btn ${on ? 'active' : ''}`}
+                aria-current={on ? 'page' : undefined}
+                onClick={() => (item.id === 'profile' ? openProfile() : goTab(item.id))}
               >
                 <Icon size={20} aria-hidden={true} />
                 <span>{item.label}</span>
               </button>
             );
           })}
-      </nav>
+        </nav>
+
+        <button type="button" className="sidebar-xp-box" onClick={() => openProfile()} aria-label={sh.viewProfile}>
+          <span className="sidebar-xp-name">
+            <span>{profile.name}</span>
+            <span className="ky-chip ky-chip--accent">Lv.{store.level}</span>
+          </span>
+          <span className="sidebar-xp-meta">
+            <span>{trackLabel(profile.targetTrack)}</span>
+            <span className="ky-mono">{store.xp} XP</span>
+          </span>
+          <span className="ky-track" aria-hidden="true">
+            <span className="ky-fill ky-fill--gold" style={{ display: 'block', inlineSize: `${Math.max(3, store.levelProgressPct)}%` }} />
+          </span>
+        </button>
+      </aside>
+
+      <div className={`app-col ${activeTab === 'profile' || activeTab === 'settings' ? 'app-col--pushed' : ''}`}>
+        <main className="app-main-stage">
+          {activeTab === 'curriculum' && (
+            <CurriculumView
+              key={examPref}
+              initialExamFilter={examPref}
+              todayCount={todayCount}
+              dailyGoal={dailyGoal}
+              lang={lang}
+              isOffline={isOffline}
+              solvedQuestions={store.solvedQuestionIds}
+              completedSlideUnits={store.completedSlideUnits}
+              onMarkUnitSlidesCompleted={store.markUnitSlidesCompleted}
+              onOpenProfile={() => openProfile()}
+              onOpenSettings={() => setActiveTab('settings')}
+              onOpenUnitQuiz={(uId) => {
+                setTargetExamUnitId(uId);
+                setActiveTab('exams');
+              }}
+              onOpenUnitCards={(uId) => {
+                setTargetCardUnitId(uId);
+                setActiveTab('cards');
+              }}
+              onOpen3DScene={(scId) => {
+                setTargetSceneId(scId);
+                setActiveTab('lab3d');
+              }}
+            />
+          )}
+
+          {activeTab === 'lab3d' && (
+            <Kimya3DLab
+              lang={lang}
+              initialSceneId={targetSceneId}
+              resolvedDark={true}
+              onEarnXp={(amt) => store.earnXp(amt)}
+              onOpenUnitExam={(uId) => {
+                setTargetExamUnitId(uId);
+                setActiveTab('exams');
+              }}
+              onNavigateTab={(tab) => setActiveTab(tab as NavTab)}
+            />
+          )}
+
+          {activeTab === 'cards' && (
+            <FlashcardsView
+              key={store.activeProfileId}
+              lang={lang}
+              profileId={store.activeProfileId}
+              initialUnitId={targetCardUnitId}
+              masteredCardIds={store.masteredCardIds}
+              onRateCard={store.markCardMastered}
+            />
+          )}
+
+          {activeTab === 'games' && (
+            <GamesHub
+              lang={lang}
+              highScores={store.gameHighScores}
+              onFinishGame={store.recordGameScore}
+            />
+          )}
+
+          {activeTab === 'exams' && (
+            <ExamCenter
+              lang={lang}
+              preselectedUnitId={targetExamUnitId}
+              solvedQuestions={store.solvedQuestionIds}
+              wrongQuestionIds={store.mistakeQuestionIds}
+              bookmarkedQuestionIds={store.bookmarkedQuestionIds}
+              mockBestScores={store.mockBestScores}
+              onRecordQuestion={(qId, isCorrect, picked) => {
+                store.recordQuestionResult(qId, isCorrect, picked);
+                bumpToday();
+              }}
+              onToggleBookmark={store.toggleBookmark}
+              onSaveAttempt={(attempt) => {
+                store.recordExamAttempt(attempt);
+                setCelebrationKey((k) => k + 1);
+              }}
+            />
+          )}
+
+          {activeTab === 'profile' && (
+            <ProfileView
+              key={profileTab}
+              lang={lang}
+              store={store}
+              initialTab={profileTab}
+              dailyGoal={dailyGoal}
+              todayCount={todayCount}
+              onOpenSettings={() => setActiveTab('settings')}
+              onBack={() => setActiveTab('curriculum')}
+              onOpenUnitQuiz={(uId) => {
+                setTargetExamUnitId(uId);
+                setActiveTab('exams');
+              }}
+              onOpenCards={() => {
+                setTargetCardUnitId(null);
+                setActiveTab('cards');
+              }}
+              onOpenSlides={() => setActiveTab('curriculum')}
+              onRecordQuestion={(qId, isCorrect, picked) => {
+                store.recordQuestionResult(qId, isCorrect, picked);
+                bumpToday();
+              }}
+            />
+          )}
+
+          {activeTab === 'settings' && (
+            <SettingsView
+              lang={lang}
+              store={store}
+              dailyGoal={dailyGoal}
+              reduceMotion={reduceMotion}
+              sfxOn={sfxOn}
+              textSize={textSize}
+              musicOn={musicOn}
+              musicTrackId={musicTrackId}
+              musicVolume={musicVolume}
+              onSetSfxOn={setSfxOn}
+              onSetTextSize={setTextSize}
+              onSetMusicOn={setMusicOn}
+              onSetMusicTrack={setMusicTrack}
+              onSetMusicVolume={setMusicVolume}
+              onSetDailyGoal={setDailyGoal}
+              onSetReduceMotion={setReduceMotion}
+              onRelaunchOnboarding={() => setShowOnboarding(true)}
+              onResetProgress={() => {
+                resetToday();
+                new LeitnerBoxEngine(null, { profileId: store.activeProfileId }).reset();
+              }}
+              onOpenProfiles={() => openProfile('profiles')}
+              onBack={() => setActiveTab('curriculum')}
+              onInstall={
+                installPrompt
+                  ? async () => {
+                      await installPrompt.prompt();
+                      setInstallPrompt(null);
+                    }
+                  : undefined
+              }
+            />
+          )}
+        </main>
+
+        {/* Floating bottom tab bar (phones & tablet portrait) */}
+        <nav className="mobile-bottom-nav" aria-label={t.appName}>
+          <div className="tabbar">
+            {navItems
+              .filter((item) => item.id !== 'profile')
+              .map((item) => {
+                const Icon = item.icon;
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    className={`mobile-tab-btn ${activeTab === item.id ? 'active' : ''}`}
+                    aria-current={activeTab === item.id ? 'page' : undefined}
+                    onClick={() => goTab(item.id)}
+                  >
+                    <Icon size={22} aria-hidden={true} />
+                    <span>{item.label}</span>
+                  </button>
+                );
+              })}
+          </div>
+        </nav>
+      </div>
     </div>
   );
 };

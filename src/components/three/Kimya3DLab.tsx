@@ -7,7 +7,6 @@ import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import {
-  Box,
   RotateCw,
   Play,
   Pause,
@@ -16,7 +15,6 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
-  HelpCircle,
   Award,
   Sparkles,
   Focus,
@@ -27,10 +25,12 @@ import {
   FileCheck2,
   ZoomIn,
   ZoomOut,
+  RotateCcw,
 } from 'lucide-react';
 
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { redesignStrings, redesignExtra, type LabCategoryId } from '../../i18n/redesignStrings';
 import {
   PRIMARY_32_SCENES,
   getSceneById,
@@ -143,6 +143,31 @@ export function calculateFitDistance(
   return { requiredDistance, center, size };
 }
 
+type RGB2 = [string, string];
+/** Three lit-sphere colours per category for the gallery thumbnails (centre, left, right). */
+const SCENE_THUMB_COLORS: Record<string, [RGB2, RGB2, RGB2]> = {
+  vsepr: [['#FF6B7A', '#9C1830'], ['#E9EEF5', '#7C8798'], ['#E9EEF5', '#7C8798']],
+  crystal: [['#7DF0A8', '#0E8A52'], ['#C9A2FF', '#5B32C9'], ['#C9A2FF', '#5B32C9']],
+  electrochem: [['#FFD873', '#A86A08'], ['#6FA8FF', '#1B3FA8'], ['#7C8AA0', '#1B2536']],
+  organic: [['#7C8AA0', '#1B2536'], ['#E9EEF5', '#7C8798'], ['#E9EEF5', '#7C8798']],
+  atomic: [['#FF6B7A', '#9C1830'], ['#FFD873', '#A86A08'], ['#FFD873', '#A86A08']],
+  gas_solution: [['#6FA8FF', '#1B3FA8'], ['#5FF2DF', '#0C8073'], ['#E9EEF5', '#7C8798']],
+  general: [['#5FF2DF', '#0C8073'], ['#6FA8FF', '#1B3FA8'], ['#E9EEF5', '#7C8798']],
+};
+
+/** Gallery filter chips: "all" plus every category present in the scene data, in a fixed display order. */
+const LAB_CATEGORY_ORDER: LabCategoryId[] = ['vsepr', 'crystal', 'electrochem', 'organic', 'atomic', 'gas_solution', 'general'];
+const LAB_CATEGORY_IDS: string[] = [
+  'all',
+  ...LAB_CATEGORY_ORDER.filter((id) => PRIMARY_32_SCENES.some((s) => s.category === id)),
+];
+
+/** True when the OS or the in-app "reduce motion" setting asks for less animation. */
+const prefersReducedMotion = (): boolean =>
+  typeof document !== 'undefined' &&
+  (document.documentElement.hasAttribute('data-reduce-motion') ||
+    (typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches));
+
 export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
   lang,
   initialSceneId = 'water-vsepr',
@@ -160,7 +185,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
   const [currentScene, setCurrentScene] = useState<ChemicalSceneSpec>(initialScene);
   const [selectedHotspot, setSelectedHotspot] = useState<Hotspot3D | null>(null);
   const [mode, setMode] = useState<LabMode>('explore');
-  const [isLiveSim, setIsLiveSim] = useState<boolean>(true);
+  const [isLiveSim, setIsLiveSim] = useState<boolean>(() => !prefersReducedMotion());
   const [isAutoRotate, setIsAutoRotate] = useState<boolean>(false);
   const [explodeFactor, setExplodeFactor] = useState<number>(0);
   const [isSceneModalOpen, setIsSceneModalOpen] = useState<boolean>(false);
@@ -721,983 +746,386 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
     }
   };
 
-  return (
-    <section
-      ref={containerRef}
-      className="lab-container"
-      aria-label={t.lab3d.title}
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '100%',
-        height: '100%',
-        minHeight: '680px',
-        position: 'relative',
-        background: resolvedDark ? 'var(--bg-canvas-dark, #0b0f19)' : 'var(--bg-canvas-light, #f8fafc)',
-        color: resolvedDark ? '#f8fafc' : '#0f172a',
-        borderRadius: '16px',
-        overflow: 'hidden',
-      }}
-    >
-      {/* -------------------------------------------------------------------- */}
-      {/* Top Controls Toolbar */}
-      {/* -------------------------------------------------------------------- */}
-      <header
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-          gap: 12,
-          padding: '12px 18px',
-          borderBottom: '1px solid var(--border-color, rgba(148, 163, 184, 0.2))',
-          background: resolvedDark ? 'rgba(17, 24, 39, 0.95)' : 'rgba(255, 255, 255, 0.95)',
-          backdropFilter: 'blur(10px)',
-          zIndex: 20,
-        }}
-      >
-        {/* Scene Selector & Steppers */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <button
-            onClick={handlePrevScene}
-            aria-label="Önceki Model"
-            title="Önceki Model"
-            style={{
-              padding: '8px',
-              borderRadius: '8px',
-              border: '1px solid rgba(148, 163, 184, 0.3)',
-              background: 'transparent',
-              color: 'inherit',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-            }}
-          >
-            <ChevronLeft size={18} />
-          </button>
+  const r = redesignStrings(lang);
+  const rx = redesignExtra(lang);
+  const sceneTitle = currentScene.title[lang] || currentScene.title.tr;
+  const sceneSub = currentScene.subtitle[lang] || currentScene.subtitle.tr;
+  const fitLabel = ZOOM_FIT_I18N[lang]?.fitScreen || ZOOM_FIT_I18N.tr.fitScreen;
+  const closeSceneModal = () => setIsSceneModalOpen(false);
+  const catCount = (id: string) =>
+    id === 'all' ? PRIMARY_32_SCENES.length : PRIMARY_32_SCENES.filter((sc) => sc.category === id).length;
+  const catLabel = (id: string) => (id === 'all' ? r.all : r.categories[id as LabCategoryId] ?? id);
+  const isExploded = explodeFactor > 0.01;
 
-          <button
-            onClick={() => setIsSceneModalOpen(true)}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 10,
-              padding: '6px 14px',
-              borderRadius: '10px',
-              border: '1px solid var(--brand-primary, #0284c7)',
-              background: resolvedDark ? 'rgba(56, 189, 248, 0.1)' : 'rgba(2, 132, 199, 0.08)',
-              color: 'inherit',
-              cursor: 'pointer',
-              textAlign: 'left',
-            }}
-          >
-            <span
-              style={{
-                fontSize: '0.72rem',
-                fontWeight: 800,
-                padding: '2px 6px',
-                borderRadius: '4px',
-                background: currentScene.badge === 'TYT' ? '#10b981' : '#f59e0b',
-                color: '#ffffff',
-              }}
-            >
-              {currentScene.badge}
-            </span>
-            <div>
-              <div style={{ fontSize: '0.88rem', fontWeight: 700, lineHeight: 1.2 }}>
-                <bdi dir="ltr">{currentScene.title[lang] || currentScene.title.tr}</bdi>
-              </div>
-              <div style={{ fontSize: '0.75rem', opacity: 0.7 }}>
-                {currentScene.unitId.toUpperCase()} • {currentScene.category}
-              </div>
-            </div>
-            <Search size={16} style={{ marginLeft: 6, opacity: 0.7 }} />
+  // Scene gallery (LabScenes): category chips with counts + 2/3-column tile grid
+  const galleryNode = isSceneModalOpen ? (
+      <section className="lab-gallery" aria-labelledby="lab-scenes-title">
+        <header className="ky-screen-head">
+          <button type="button" className="ky-icon-btn" onClick={closeSceneModal} aria-label={r.backToLab}>
+            <ChevronLeft size={20} aria-hidden="true" className="lab-flip-rtl" />
           </button>
+          <h1 id="lab-scenes-title" className="ky-disp ky-fs-24">
+            {r.scenesTitle}
+          </h1>
+          <span className="ky-chip ky-mono lab-count">{filteredScenes.length}</span>
+        </header>
 
-          <button
-            onClick={handleNextScene}
-            aria-label="Sonraki Model"
-            title="Sonraki Model"
-            style={{
-              padding: '8px',
-              borderRadius: '8px',
-              border: '1px solid rgba(148, 163, 184, 0.3)',
-              background: 'transparent',
-              color: 'inherit',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-            }}
-          >
-            <ChevronRight size={18} />
-          </button>
-        </div>
-
-        {/* Mode Switcher: Explore vs Blind Quiz */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            borderRadius: '10px',
-            background: resolvedDark ? '#1f293d' : '#e2e8f0',
-            padding: '3px',
-          }}
-        >
-          <button
-            onClick={() => handleToggleMode('explore')}
-            style={{
-              padding: '6px 14px',
-              borderRadius: '8px',
-              border: 'none',
-              fontSize: '0.82rem',
-              fontWeight: 700,
-              cursor: 'pointer',
-              background: mode === 'explore' ? 'var(--brand-primary, #0284c7)' : 'transparent',
-              color: mode === 'explore' ? '#ffffff' : 'inherit',
-              transition: 'all 0.15s ease',
-            }}
-          >
-            Keşif Modu
-          </button>
-          <button
-            onClick={() => handleToggleMode('quiz')}
-            style={{
-              padding: '6px 14px',
-              borderRadius: '8px',
-              border: 'none',
-              fontSize: '0.82rem',
-              fontWeight: 700,
-              cursor: 'pointer',
-              background: mode === 'quiz' ? '#10b981' : 'transparent',
-              color: mode === 'quiz' ? '#ffffff' : 'inherit',
-              display: 'flex',
-              alignItems: 'center',
-              gap: 6,
-              transition: 'all 0.15s ease',
-            }}
-          >
-            <Sparkles size={14} />
-            Kör İğne Sınavı
-          </button>
-        </div>
-      </header>
-
-      {/* -------------------------------------------------------------------- */}
-      {/* Quiz Prompt Banner (When mode === 'quiz') */}
-      {/* -------------------------------------------------------------------- */}
-      {mode === 'quiz' && (
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            padding: '10px 20px',
-            background: resolvedDark ? 'rgba(16, 185, 129, 0.15)' : 'rgba(16, 185, 129, 0.12)',
-            borderBottom: '1px solid rgba(16, 185, 129, 0.3)',
-            zIndex: 15,
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <span
-              style={{
-                fontWeight: 800,
-                fontSize: '0.82rem',
-                color: '#10b981',
-                padding: '4px 8px',
-                borderRadius: '6px',
-                background: 'rgba(16, 185, 129, 0.2)',
-              }}
-            >
-              Soru {quizState.questionIndex + 1} / {quizState.totalQuestions}
-            </span>
-            <div style={{ fontSize: '0.92rem', fontWeight: 600 }}>
-              Hedef:{' '}
-              <span style={{ color: '#10b981', fontWeight: 800 }}>
-                <bdi dir="ltr">[{targetHotspot?.title[lang] || targetHotspot?.title.tr}]</bdi>
-              </span>{' '}
-              noktasını 3D model üzerinde bulun ve tıklayın!
-            </div>
+        <div className="lab-gallery__filters">
+          <label className="lab-search">
+            <Search size={18} aria-hidden="true" className="lab-search__icon" />
+            <input
+              type="search"
+              className="ky-input lab-search__input"
+              placeholder={r.searchScenes}
+              aria-label={r.searchScenes}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </label>
+          <div className="lab-cats" role="group" aria-label={r.scenesTitle}>
+            {LAB_CATEGORY_IDS.map((id) => (
+              <button
+                key={id}
+                type="button"
+                className={`ky-chip lab-cat${categoryFilter === id ? ' on' : ''}`}
+                aria-pressed={categoryFilter === id}
+                onClick={() => setCategoryFilter(id)}
+              >
+                {catLabel(id)} <span className="ky-mono">{catCount(id)}</span>
+              </button>
+            ))}
           </div>
-
-          {quizState.feedback === 'correct' && (
-            <span
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 6,
-                fontWeight: 800,
-                color: '#10b981',
-                fontSize: '0.9rem',
-              }}
-            >
-              <CheckCircle2 size={18} /> Doğru! +10 XP
-            </span>
-          )}
-          {quizState.feedback === 'wrong' && (
-            <span
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 6,
-                fontWeight: 800,
-                color: '#ef4444',
-                fontSize: '0.9rem',
-              }}
-            >
-              <XCircle size={18} /> Yanlış Nokta! Tekrar Dene
-            </span>
-          )}
         </div>
-      )}
 
-      {/* -------------------------------------------------------------------- */}
-      {/* Viewport Stage (WebGL Mount + Screen Projected Badges) */}
-      {/* -------------------------------------------------------------------- */}
-      <div
-        style={{
-          position: 'relative',
-          flex: 1,
-          width: '100%',
-          overflow: 'hidden',
-          display: 'flex',
-          touchAction: 'none',
-        }}
-        onPointerDown={handlePointerDown}
-      >
-        {!webglSupported ? (
-          <Kimya3DFallbackCanvas
-            scene={currentScene}
-            lang={lang}
-            selectedHotspotId={selectedHotspot?.id || null}
-            onSelectHotspot={(hs) => handleHotspotClick(hs)}
-            isDark={resolvedDark}
-            mode={mode}
-            quizTargetHotspotId={quizState.targetHotspotId}
-          />
-        ) : (
-          <div
-            ref={canvasMountRef}
-            style={{
-              position: 'absolute',
-              inset: 0,
-              width: '100%',
-              height: '100%',
-            }}
-          />
-        )}
-
-        {/* Screen-Projected Hotspot Badges Overlay (Direct DOM Ref positioning) */}
-        {webglSupported && (
-          <div
-            style={{
-              position: 'absolute',
-              inset: 0,
-              pointerEvents: 'none',
-              zIndex: 10,
-            }}
-          >
-            {currentScene.hotspots.map((hs) => {
-              const isSelected = selectedHotspot?.id === hs.id;
-
+        <div className="ky-fit">
+          <div className="lab-tiles">
+            {filteredScenes.map((sc) => {
+              const isSelected = sc.id === currentScene.id;
+              const [c1, c2, c3] = SCENE_THUMB_COLORS[sc.category] ?? SCENE_THUMB_COLORS.general;
               return (
                 <button
-                  key={hs.id}
-                  ref={(el) => {
-                    badgeRefs.current[hs.id] = el;
-                  }}
-                  onClick={(e) => handleHotspotClick(hs, e)}
-                  style={{
-                    position: 'absolute',
-                    left: 0,
-                    top: 0,
-                    transform: 'translate3d(-9999px, -9999px, 0)',
-                    display: 'none',
-                    pointerEvents: 'auto',
-                    cursor: 'pointer',
-                    alignItems: 'center',
-                    gap: 6,
-                    padding: mode === 'quiz' ? '6px' : '4px 8px',
-                    borderRadius: mode === 'quiz' ? '50%' : '20px',
-                    width: mode === 'quiz' ? 36 : 'auto',
-                    height: mode === 'quiz' ? 36 : 'auto',
-                    justifyContent: 'center',
-                    background: isSelected
-                      ? 'var(--brand-primary, #38bdf8)'
-                      : resolvedDark
-                      ? 'rgba(17, 24, 39, 0.9)'
-                      : 'rgba(255, 255, 255, 0.95)',
-                    color: isSelected ? '#ffffff' : resolvedDark ? '#f8fafc' : '#0f172a',
-                    border: `2px solid ${hs.color || '#38bdf8'}`,
-                    boxShadow: isSelected
-                      ? '0 0 16px var(--brand-primary, #38bdf8)'
-                      : '0 2px 8px rgba(0, 0, 0, 0.25)',
-                    fontSize: '0.78rem',
-                    fontWeight: 700,
-                    transition: 'background 0.15s ease',
-                  }}
-                  aria-label={mode === 'quiz' ? `İğne ${hs.pinNumber}` : hs.title[lang] || hs.title.tr}
+                  key={sc.id}
+                  type="button"
+                  className={`ky-card lab-tile${isSelected ? ' on' : ''}`}
+                  aria-pressed={isSelected}
+                  onClick={() => handleSelectScene(sc)}
                 >
-                  <span
-                    style={{
-                      width: 8,
-                      height: 8,
-                      borderRadius: '50%',
-                      backgroundColor: hs.color || '#38bdf8',
-                    }}
-                  />
-                  <bdi dir="ltr">
-                    <span>
-                      {mode === 'quiz' ? hs.pinNumber : (hs.badgeLabel || hs.title[lang] || hs.title.tr)}
+                  <span className="ky-stage ky-persp ky-thumb" aria-hidden="true">
+                    <span className="ky-floor" />
+                    <span className="ky-rig">
+                      <span className="ky-atom lab-thumb-a" style={{ ['--c' as string]: c2[0], ['--cd' as string]: c2[1] }} />
+                      <span className="ky-atom lab-thumb-b" style={{ ['--c' as string]: c3[0], ['--cd' as string]: c3[1] }} />
+                      <span className="ky-atom lab-thumb-c" style={{ ['--c' as string]: c1[0], ['--cd' as string]: c1[1] }} />
                     </span>
-                  </bdi>
+                  </span>
+                  <span className="lab-tile__body">
+                    <span className="ky-fs-16 lab-tile__title">
+                      <bdi>{sc.title[lang] || sc.title.tr}</bdi>
+                    </span>
+                    <span className="lab-tile__meta">
+                      <span className={`ky-chip ${sc.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'}`}>{sc.badge}</span>
+                      <span className="ky-fs-12">{catLabel(sc.category)}</span>
+                    </span>
+                  </span>
                 </button>
               );
             })}
           </div>
-        )}
+        </div>
+      </section>
+  ) : null;
 
-        {/* ------------------------------------------------------------------ */}
-        {/* Floating Viewport HUD (Controls Bar) */}
-        {/* ------------------------------------------------------------------ */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 20,
-            left: '50%',
-            transform: 'translateX(-50%)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: 10,
-            padding: '8px 16px',
-            borderRadius: '9999px',
-            background: resolvedDark ? 'rgba(17, 24, 39, 0.92)' : 'rgba(255, 255, 255, 0.92)',
-            backdropFilter: 'blur(12px)',
-            border: '1px solid var(--border-color, rgba(148, 163, 184, 0.25))',
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)',
-            zIndex: 15,
-            maxWidth: '92vw',
-            overflowX: 'auto',
-          }}
+  return (
+    <section ref={containerRef} className="ky-screen lab" aria-label={t.lab3d.title}>
+      <header className="ky-screen-head">
+        <h1 className="ky-disp ky-fs-28">{r.labTitle}</h1>
+        <button
+          type="button"
+          className="ky-chip lab-all"
+          onClick={() => setIsSceneModalOpen(true)}
+          aria-haspopup="dialog"
         >
-          {/* Explicit Zoom In (+) */}
-          <button
-            onClick={handleZoomIn}
-            title={ZOOM_FIT_I18N[lang]?.zoomIn || ZOOM_FIT_I18N.tr.zoomIn}
-            aria-label={ZOOM_FIT_I18N[lang]?.zoomIn || ZOOM_FIT_I18N.tr.zoomIn}
-            style={{
-              padding: '6px',
-              borderRadius: '50%',
-              border: 'none',
-              background: 'transparent',
-              color: 'inherit',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <ZoomIn size={18} />
-          </button>
+          {r.allScenes(PRIMARY_32_SCENES.length)}
+        </button>
+      </header>
 
-          {/* Explicit Zoom Out (-) */}
-          <button
-            onClick={handleZoomOut}
-            title={ZOOM_FIT_I18N[lang]?.zoomOut || ZOOM_FIT_I18N.tr.zoomOut}
-            aria-label={ZOOM_FIT_I18N[lang]?.zoomOut || ZOOM_FIT_I18N.tr.zoomOut}
-            style={{
-              padding: '6px',
-              borderRadius: '50%',
-              border: 'none',
-              background: 'transparent',
-              color: 'inherit',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <ZoomOut size={18} />
-          </button>
+      <div className="ky-fit">
+        <div className="ky-pane lab-pane">
+          <section className="ky-lead ky-stage lab-stage" aria-label={sceneTitle} onPointerDown={handlePointerDown}>
+            <div className="ky-floor" aria-hidden="true" />
 
-          {/* Fit to Screen (Ekrana Sığdır) */}
-          <button
-            onClick={handleFitToScreen}
-            title={ZOOM_FIT_I18N[lang]?.fitScreen || ZOOM_FIT_I18N.tr.fitScreen}
-            aria-label={ZOOM_FIT_I18N[lang]?.fitScreen || ZOOM_FIT_I18N.tr.fitScreen}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 5,
-              padding: '5px 12px',
-              borderRadius: '9999px',
-              border: '1px solid var(--brand-primary, #0284c7)',
-              background: resolvedDark ? 'rgba(56, 189, 248, 0.15)' : 'rgba(2, 132, 199, 0.1)',
-              color: 'inherit',
-              fontSize: '0.75rem',
-              fontWeight: 700,
-              cursor: 'pointer',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            <Maximize2 size={14} />
-            <span>{ZOOM_FIT_I18N[lang]?.fitScreen || ZOOM_FIT_I18N.tr.fitScreen}</span>
-          </button>
+            {!webglSupported ? (
+              <Kimya3DFallbackCanvas
+                scene={currentScene}
+                lang={lang}
+                selectedHotspotId={selectedHotspot?.id || null}
+                onSelectHotspot={(hs) => handleHotspotClick(hs)}
+                isDark={true}
+                mode={mode}
+                quizTargetHotspotId={quizState.targetHotspotId}
+              />
+            ) : (
+              <div ref={canvasMountRef} className="lab-canvas" />
+            )}
 
-          {/* Reset Camera */}
-          <button
-            onClick={handleResetCamera}
-            title={t.lab3d.resetCamera}
-            aria-label={t.lab3d.resetCamera}
-            style={{
-              padding: '6px',
-              borderRadius: '50%',
-              border: 'none',
-              background: 'transparent',
-              color: 'inherit',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <Focus size={18} />
-          </button>
+            {/* Numbered gold hotspot pins (positioned by the render loop) */}
+            {webglSupported && (
+              <div className="lab-pins">
+                {currentScene.hotspots.map((hs) => {
+                  const isSelected = selectedHotspot?.id === hs.id;
+                  return (
+                    <button
+                      key={hs.id}
+                      type="button"
+                      ref={(el) => {
+                        badgeRefs.current[hs.id] = el;
+                      }}
+                      onClick={(e) => handleHotspotClick(hs, e)}
+                      className={`lab-pin${isSelected ? ' on' : ''}${mode === 'quiz' ? ' is-quiz' : ''}`}
+                      aria-label={mode === 'quiz' ? `${hs.pinNumber}` : `${hs.pinNumber}. ${hs.title[lang] || hs.title.tr}`}
+                    >
+                      {hs.pinNumber}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
 
-          {/* Auto Rotate Toggle */}
-          <button
-            onClick={() => setIsAutoRotate(!isAutoRotate)}
-            title={isAutoRotate ? t.lab3d.pauseRotate : t.lab3d.autoRotate}
-            aria-label={isAutoRotate ? t.lab3d.pauseRotate : t.lab3d.autoRotate}
-            style={{
-              padding: '6px',
-              borderRadius: '50%',
-              border: 'none',
-              background: isAutoRotate ? 'var(--brand-primary, #0284c7)' : 'transparent',
-              color: isAutoRotate ? '#ffffff' : 'inherit',
-              cursor: 'pointer',
-              display: 'flex',
-            }}
-          >
-            <RotateCw size={18} />
-          </button>
+            <button type="button" className="ky-icon-btn lab-step lab-step--prev" onClick={handlePrevScene} aria-label={r.prevScene}>
+              <ChevronLeft size={20} aria-hidden="true" className="lab-flip-rtl" />
+            </button>
+            <button type="button" className="ky-icon-btn lab-step lab-step--next" onClick={handleNextScene} aria-label={r.nextScene}>
+              <ChevronRight size={20} aria-hidden="true" className="lab-flip-rtl" />
+            </button>
 
-          {/* Live Simulation Toggle */}
-          <button
-            onClick={() => setIsLiveSim(!isLiveSim)}
-            title={isLiveSim ? 'Canlı Simülasyonu Durdur' : 'Canlı Simülasyonu Başlat'}
-            aria-label={isLiveSim ? 'Canlı Simülasyonu Durdur' : 'Canlı Simülasyonu Başlat'}
-            style={{
-              padding: '6px',
-              borderRadius: '50%',
-              border: 'none',
-              background: isLiveSim ? '#10b981' : 'transparent',
-              color: isLiveSim ? '#ffffff' : 'inherit',
-              cursor: 'pointer',
-              display: 'flex',
-            }}
-          >
-            {isLiveSim ? <Play size={18} /> : <Pause size={18} />}
-          </button>
+            <div className="lab-hud">
+              <button type="button" className="ky-icon-btn lab-hud-btn" onClick={handleZoomIn} aria-label={ZOOM_FIT_I18N[lang]?.zoomIn || ZOOM_FIT_I18N.tr.zoomIn}>
+                <ZoomIn size={18} aria-hidden="true" />
+              </button>
+              <button type="button" className="ky-icon-btn lab-hud-btn" onClick={handleZoomOut} aria-label={ZOOM_FIT_I18N[lang]?.zoomOut || ZOOM_FIT_I18N.tr.zoomOut}>
+                <ZoomOut size={18} aria-hidden="true" />
+              </button>
+              <button type="button" className="ky-icon-btn lab-hud-btn" onClick={handleFitToScreen} aria-label={fitLabel}>
+                <Maximize2 size={18} aria-hidden="true" />
+              </button>
+            </div>
 
-          {/* Explode View Slider */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }} title={t.lab3d.explodeView}>
-            <Layers size={16} />
-            <input
-              type="range"
-              min="0"
-              max="1"
-              step="0.05"
-              value={explodeFactor}
-              onChange={(e) => setExplodeFactor(parseFloat(e.target.value))}
-              aria-label={t.lab3d.explodeView}
-              style={{ width: '80px', accentColor: 'var(--brand-primary, #0284c7)' }}
-            />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, minWidth: '32px' }}>
-              {Math.round(explodeFactor * 100)}%
+            <p className="lab-hint">{t.lab3d.dragHint}</p>
+          </section>
+
+          {/* Category chip, title + formula, subtitle */}
+          <div className="lab-info">
+            <span className="ky-chip ky-chip--accent">
+              {catLabel(currentScene.category)} · {currentScene.unitId.toUpperCase()}
             </span>
+            <h2 className="ky-fs-24 lab-info__title">
+              <bdi>{sceneTitle}</bdi>{' '}
+              <span className={`ky-chip ${currentScene.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'} lab-info__badge`}>
+                {currentScene.badge}
+              </span>
+            </h2>
+            <p className="ky-fs-14 lab-info__sub">
+              <bdi>{sceneSub}</bdi>
+            </p>
           </div>
 
-          {/* Fullscreen Toggle */}
-          <button
-            onClick={handleToggleFullscreen}
-            title={isFullscreen ? 'Tam Ekrandan Çık' : 'Tam Ekran'}
-            aria-label={isFullscreen ? 'Tam Ekrandan Çık' : 'Tam Ekran'}
-            style={{
-              padding: '6px',
-              borderRadius: '50%',
-              border: 'none',
-              background: 'transparent',
-              color: 'inherit',
-              cursor: 'pointer',
-              display: 'flex',
-            }}
-          >
-            {isFullscreen ? <Minimize2 size={18} /> : <Maximize2 size={18} />}
-          </button>
-        </div>
-
-        {/* ------------------------------------------------------------------ */}
-        {/* Hotspot Drawer / Detail Modal (When hotspot is clicked in explore) */}
-        {/* ------------------------------------------------------------------ */}
-        {selectedHotspot && mode === 'explore' && (
-          <aside
-            style={{
-              position: 'absolute',
-              top: 20,
-              right: 20,
-              width: '360px',
-              maxHeight: 'calc(100% - 40px)',
-              overflowY: 'auto',
-              borderRadius: '16px',
-              background: resolvedDark ? 'rgba(17, 24, 39, 0.95)' : 'rgba(255, 255, 255, 0.98)',
-              backdropFilter: 'blur(16px)',
-              border: '1px solid var(--border-color, rgba(148, 163, 184, 0.3))',
-              boxShadow: '0 16px 40px rgba(0, 0, 0, 0.3)',
-              padding: '18px',
-              zIndex: 25,
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12 }}>
-              <div>
-                <span
-                  style={{
-                    fontSize: '0.72rem',
-                    fontWeight: 800,
-                    padding: '2px 8px',
-                    borderRadius: '4px',
-                    background: selectedHotspot.color || '#38bdf8',
-                    color: '#ffffff',
-                  }}
-                >
-                  Nokta {selectedHotspot.pinNumber}
+          {/* Blind-pin quiz banner */}
+          {mode === 'quiz' && (
+            <div
+              className={`ky-card lab-quiz ky-pop${quizState.feedback === 'correct' ? ' is-right' : ''}${
+                quizState.feedback === 'wrong' ? ' is-wrong ky-shake' : ''
+              }`}
+              role="status"
+              aria-live="polite"
+            >
+              <span className="ky-chip ky-chip--gold ky-mono">
+                {Math.min(quizState.questionIndex + 1, quizState.totalQuestions)} / {quizState.totalQuestions}
+              </span>
+              <p className="ky-fs-16 lab-quiz__prompt">
+                <strong className="lab-quiz__target">
+                  <bdi>{targetHotspot?.title[lang] || targetHotspot?.title.tr}</bdi>
+                </strong>
+              </p>
+              {quizState.feedback === 'correct' && (
+                <span className="lab-quiz__fb lab-quiz__fb--ok">
+                  <CheckCircle2 size={18} aria-hidden="true" /> +10 XP
                 </span>
-                <h2 style={{ fontSize: '1.05rem', fontWeight: 800, marginTop: 6, lineHeight: 1.3 }}>
-                  <bdi dir="ltr">{selectedHotspot.title[lang] || selectedHotspot.title.tr}</bdi>
-                </h2>
-              </div>
-              <button
-                onClick={() => setSelectedHotspot(null)}
-                aria-label="Kapat"
-                style={{
-                  background: 'transparent',
-                  border: 'none',
-                  color: 'inherit',
-                  cursor: 'pointer',
-                  padding: 4,
-                }}
-              >
-                <X size={20} />
-              </button>
-            </div>
-
-            <p style={{ fontSize: '0.86rem', lineHeight: 1.5, opacity: 0.9, marginTop: 12 }}>
-              <bdi dir="ltr">{selectedHotspot.description[lang] || selectedHotspot.description.tr}</bdi>
-            </p>
-
-            {/* ÖSYM Exam Fact Card */}
-            <div
-              style={{
-                marginTop: 14,
-                padding: '12px 14px',
-                borderRadius: '10px',
-                background: resolvedDark ? 'rgba(245, 158, 11, 0.12)' : 'rgba(245, 158, 11, 0.08)',
-                border: '1px solid rgba(245, 158, 11, 0.35)',
-              }}
-            >
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 6,
-                  color: '#f59e0b',
-                  fontSize: '0.8rem',
-                  fontWeight: 800,
-                  marginBottom: 6,
-                }}
-              >
-                <Award size={16} />
-                <span>ÖSYM Sınav İpucu / Exam Fact</span>
-              </div>
-              <div style={{ fontSize: '0.82rem', lineHeight: 1.5 }}>
-                <bdi dir="ltr">{selectedHotspot.examFact[lang] || selectedHotspot.examFact.tr}</bdi>
-              </div>
-            </div>
-
-            <button
-              onClick={() => handleFocusHotspot(selectedHotspot)}
-              style={{
-                marginTop: 14,
-                width: '100%',
-                padding: '8px 14px',
-                borderRadius: '8px',
-                border: '1px solid var(--brand-primary, #0284c7)',
-                background: 'transparent',
-                color: 'var(--brand-primary, #0284c7)',
-                fontSize: '0.82rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: 6,
-              }}
-            >
-              <Focus size={16} />
-              <span>3D Kamerayı Odakla</span>
-            </button>
-          </aside>
-        )}
-      </div>
-
-      {/* -------------------------------------------------------------------- */}
-      {/* Quiz Completion Summary Modal */}
-      {/* -------------------------------------------------------------------- */}
-      {quizState.isComplete && (
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'rgba(0, 0, 0, 0.65)',
-            backdropFilter: 'blur(8px)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            zIndex: 50,
-            padding: 20,
-          }}
-        >
-          <div
-            style={{
-              width: '100%',
-              maxWidth: '440px',
-              padding: '28px',
-              borderRadius: '20px',
-              background: resolvedDark ? '#111827' : '#ffffff',
-              border: '1px solid var(--border-color, rgba(148, 163, 184, 0.3))',
-              textAlign: 'center',
-              boxShadow: '0 24px 60px rgba(0, 0, 0, 0.4)',
-            }}
-          >
-            <div
-              style={{
-                width: 64,
-                height: 64,
-                borderRadius: '50%',
-                background: 'rgba(16, 185, 129, 0.15)',
-                color: '#10b981',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                margin: '0 auto 16px',
-              }}
-            >
-              <Award size={36} />
-            </div>
-
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 8 }}>
-              Kör İğne Sınavı Tamamlandı!
-            </h2>
-            <p style={{ opacity: 0.8, fontSize: '0.92rem', marginBottom: 18 }}>
-              <bdi dir="ltr">{currentScene.title[lang] || currentScene.title.tr}</bdi> modelindeki tüm kritik uzamsal noktaları
-              başarıyla incelediniz.
-            </p>
-
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'space-around',
-                padding: '12px',
-                borderRadius: '12px',
-                background: resolvedDark ? '#1f293d' : '#f1f5f9',
-                marginBottom: 20,
-              }}
-            >
-              <div>
-                <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#10b981' }}>
-                  {quizState.correctCount} / {quizState.totalQuestions}
-                </div>
-                <div style={{ fontSize: '0.75rem', opacity: 0.7 }}>Doğru İğne</div>
-              </div>
-              <div>
-                <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#f59e0b' }}>
-                  +{quizState.earnedXp} XP
-                </div>
-                <div style={{ fontSize: '0.75rem', opacity: 0.7 }}>Kazanılan Deneyim</div>
-              </div>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <button
-                onClick={() => initQuizForScene(currentScene)}
-                style={{
-                  padding: '10px 18px',
-                  borderRadius: '10px',
-                  border: 'none',
-                  background: 'var(--brand-primary, #0284c7)',
-                  color: '#ffffff',
-                  fontWeight: 700,
-                  fontSize: '0.9rem',
-                  cursor: 'pointer',
-                }}
-              >
-                Tekrar Çöz
-              </button>
-
-              <button
-                onClick={() => handleToggleMode('explore')}
-                style={{
-                  padding: '10px 18px',
-                  borderRadius: '10px',
-                  border: '1px solid rgba(148, 163, 184, 0.3)',
-                  background: 'transparent',
-                  color: 'inherit',
-                  fontWeight: 700,
-                  fontSize: '0.9rem',
-                  cursor: 'pointer',
-                }}
-              >
-                Modeli Keşfetmeye Dön
-              </button>
-
-              {onOpenUnitExam && (
-                <button
-                  onClick={() => onOpenUnitExam(currentScene.unitId)}
-                  style={{
-                    padding: '10px 18px',
-                    borderRadius: '10px',
-                    border: 'none',
-                    background: 'rgba(16, 185, 129, 0.15)',
-                    color: '#10b981',
-                    fontWeight: 700,
-                    fontSize: '0.9rem',
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: 6,
-                  }}
-                >
-                  <FileCheck2 size={16} />
-                  <span>Bu Ünitenin Deneme Sınavına Git</span>
-                </button>
+              )}
+              {quizState.feedback === 'wrong' && (
+                <span className="lab-quiz__fb lab-quiz__fb--bad">
+                  <XCircle size={18} aria-hidden="true" />
+                </span>
               )}
             </div>
-          </div>
-        </div>
-      )}
+          )}
 
-      {/* -------------------------------------------------------------------- */}
-      {/* 32-Scene Selection Modal */}
-      {/* -------------------------------------------------------------------- */}
-      {isSceneModalOpen && (
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'rgba(0, 0, 0, 0.7)',
-            backdropFilter: 'blur(8px)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            zIndex: 60,
-            padding: 20,
-          }}
-        >
-          <div
-            style={{
-              width: '100%',
-              maxWidth: '860px',
-              maxHeight: '90vh',
-              borderRadius: '20px',
-              background: resolvedDark ? '#111827' : '#ffffff',
-              border: '1px solid var(--border-color, rgba(148, 163, 184, 0.3))',
-              display: 'flex',
-              flexDirection: 'column',
-              boxShadow: '0 24px 60px rgba(0, 0, 0, 0.4)',
-              overflow: 'hidden',
-            }}
-          >
-            {/* Modal Header */}
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                padding: '16px 22px',
-                borderBottom: '1px solid var(--border-color, rgba(148, 163, 184, 0.2))',
+          {/* Hotspot card: title + "Sınavda:" exam fact */}
+          {mode === 'explore' &&
+            (selectedHotspot ? (
+              <section className="ky-card lab-spot ky-pop" key={selectedHotspot.id} aria-label={selectedHotspot.title[lang] || selectedHotspot.title.tr}>
+                <span className="lab-pin-static" aria-hidden="true">
+                  {selectedHotspot.pinNumber}
+                </span>
+                <div className="lab-spot__body">
+                  <p className="ky-fs-16 lab-spot__title">
+                    <bdi>{selectedHotspot.title[lang] || selectedHotspot.title.tr}</bdi>
+                  </p>
+                  <p className="ky-fs-14 lab-spot__desc">
+                    <bdi>{selectedHotspot.description[lang] || selectedHotspot.description.tr}</bdi>
+                  </p>
+                  <p className="ky-fs-14 lab-spot__fact">
+                    <strong>{r.inExam}</strong> <bdi>{selectedHotspot.examFact[lang] || selectedHotspot.examFact.tr}</bdi>
+                  </p>
+                  <button type="button" className="ky-btn-text lab-spot__focus" onClick={() => handleFocusHotspot(selectedHotspot)}>
+                    <Focus size={16} aria-hidden="true" />
+                    <span>{r.focusCamera}</span>
+                  </button>
+                </div>
+                <button type="button" className="ky-icon-btn lab-spot__close" onClick={() => setSelectedHotspot(null)} aria-label={t.profile.close}>
+                  <X size={18} aria-hidden="true" />
+                </button>
+              </section>
+            ) : (
+              <p className="ky-fs-14 lab-prompt">{t.lab3d.selectHotspotPrompt}</p>
+            ))}
+
+          {/* Three action keys */}
+          <div className="ky-acts">
+            <button
+              type="button"
+              className="ky-act"
+              onClick={() => {
+                setExplodeFactor(0);
+                handleResetCamera();
               }}
             >
-              <div>
-                <h2 style={{ fontSize: '1.2rem', fontWeight: 800 }}>3D Molekül & Laboratuvar Modelleri</h2>
-                <p style={{ fontSize: '0.8rem', opacity: 0.7, marginTop: 2 }}>
-                  Tüm 24 üniteyi kapsayan 32 prosedürel 3D kimya sahnesi
-                </p>
-              </div>
-              <button
-                onClick={() => setIsSceneModalOpen(false)}
-                aria-label="Kapat"
-                style={{
-                  background: 'transparent',
-                  border: 'none',
-                  color: 'inherit',
-                  cursor: 'pointer',
-                  padding: 4,
-                }}
-              >
-                <X size={22} />
+              <RotateCcw size={22} aria-hidden="true" />
+              {r.resetAct}
+            </button>
+            <button type="button" className="ky-act" aria-pressed={isExploded} onClick={() => setExplodeFactor(isExploded ? 0 : 1)}>
+              <Layers size={22} aria-hidden="true" />
+              {r.explodeAct}
+            </button>
+            <button
+              type="button"
+              className="ky-act"
+              data-sfx="start"
+              disabled={!onOpenUnitExam}
+              onClick={() => onOpenUnitExam?.(currentScene.unitId)}
+            >
+              <FileCheck2 size={22} aria-hidden="true" />
+              {r.solveTest}
+            </button>
+          </div>
+
+          {/* Secondary controls: mode, explode amount, rotation, live sim, full screen */}
+          <div className="ky-well lab-controls">
+            <div className="ky-seg ky-seg--sm lab-modes" role="group" aria-label={r.explore}>
+              <button type="button" aria-pressed={mode === 'explore'} onClick={() => handleToggleMode('explore')}>
+                {r.explore}
+              </button>
+              <button type="button" aria-pressed={mode === 'quiz'} onClick={() => handleToggleMode('quiz')} data-sfx="start">
+                <Sparkles size={14} aria-hidden="true" /> {r.blindPin}
               </button>
             </div>
-
-            {/* Search & Category Filter Pills */}
-            <div style={{ padding: '14px 22px', display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 10,
-                  padding: '8px 14px',
-                  borderRadius: '10px',
-                  background: resolvedDark ? '#1f293d' : '#f1f5f9',
-                  border: '1px solid var(--border-color, rgba(148, 163, 184, 0.25))',
-                }}
+            <label className="lab-explode">
+              <Layers size={18} aria-hidden="true" />
+              <input
+                type="range"
+                className="ky-range"
+                min="0"
+                max="1"
+                step="0.05"
+                value={explodeFactor}
+                onChange={(e) => setExplodeFactor(parseFloat(e.target.value))}
+                aria-label={t.lab3d.explodeView}
+                style={{ '--pct': `${Math.round(explodeFactor * 100)}%` } as React.CSSProperties}
+              />
+              <span className="ky-mono lab-explode__val">{Math.round(explodeFactor * 100)}%</span>
+            </label>
+            <div className="lab-toggles">
+              <button
+                type="button"
+                className="ky-icon-btn"
+                onClick={() => setIsAutoRotate(!isAutoRotate)}
+                aria-pressed={isAutoRotate}
+                aria-label={isAutoRotate ? t.lab3d.pauseRotate : t.lab3d.autoRotate}
+                title={isAutoRotate ? t.lab3d.pauseRotate : t.lab3d.autoRotate}
               >
-                <Search size={18} style={{ opacity: 0.6 }} />
-                <input
-                  type="text"
-                  placeholder="Model adı, formül, ünite no (örn: VSEPR, NaCl, u03, Pil)..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  style={{
-                    flex: 1,
-                    background: 'transparent',
-                    border: 'none',
-                    outline: 'none',
-                    color: 'inherit',
-                    fontSize: '0.9rem',
-                  }}
-                />
-                {searchQuery && (
-                  <button
-                    onClick={() => setSearchQuery('')}
-                    style={{ background: 'transparent', border: 'none', color: 'inherit', cursor: 'pointer' }}
-                  >
-                    <X size={16} />
-                  </button>
-                )}
-              </div>
+                <RotateCw size={20} aria-hidden="true" />
+              </button>
+              <button
+                type="button"
+                className="ky-icon-btn"
+                onClick={() => setIsLiveSim(!isLiveSim)}
+                aria-pressed={isLiveSim}
+                aria-label={r.liveSim}
+                title={r.liveSim}
+              >
+                {isLiveSim ? <Pause size={20} aria-hidden="true" /> : <Play size={20} aria-hidden="true" />}
+              </button>
+              <button
+                type="button"
+                className="ky-icon-btn"
+                onClick={handleToggleFullscreen}
+                aria-pressed={isFullscreen}
+                aria-label={r.fullscreen}
+                title={r.fullscreen}
+              >
+                {isFullscreen ? <Minimize2 size={20} aria-hidden="true" /> : <Maximize2 size={20} aria-hidden="true" />}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-              {/* Category Pills */}
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-                {[
-                  { id: 'all', label: 'Tümü (32)' },
-                  { id: 'vsepr', label: 'VSEPR (7)' },
-                  { id: 'crystal', label: 'Kristal (2)' },
-                  { id: 'electrochem', label: 'Elektrokimya (3)' },
-                  { id: 'organic', label: 'Organik (2)' },
-                  { id: 'atomic', label: 'Atom & Kuantum (3)' },
-                  { id: 'gas_solution', label: 'Gaz & Çözelti (7)' },
-                  { id: 'general', label: 'Laboratuvar & Denge (8)' },
-                ].map((cat) => (
-                  <button
-                    key={cat.id}
-                    onClick={() => setCategoryFilter(cat.id)}
-                    style={{
-                      padding: '4px 10px',
-                      borderRadius: '8px',
-                      border: 'none',
-                      fontSize: '0.78rem',
-                      fontWeight: 600,
-                      cursor: 'pointer',
-                      background:
-                        categoryFilter === cat.id
-                          ? 'var(--brand-primary, #0284c7)'
-                          : resolvedDark
-                          ? '#1f293d'
-                          : '#e2e8f0',
-                      color: categoryFilter === cat.id ? '#ffffff' : 'inherit',
-                    }}
-                  >
-                    {cat.label}
-                  </button>
-                ))}
+      {galleryNode}
+
+      {/* Quiz completion summary */}
+      {quizState.isComplete && (
+        <div className="ky-modal-backdrop" role="presentation">
+          <div className="ky-sheet lab-sheet lab-done ky-pop" role="dialog" aria-modal="true" aria-labelledby="lab-done-title">
+            <div className="ky-tile ky-tile--ok ky-tile--lg lab-done__tile" aria-hidden="true">
+              <Award size={32} />
+            </div>
+            <h2 id="lab-done-title" className="ky-disp lab-done__title">{rx.labDoneTitle}</h2>
+            <p className="lab-done__txt">{rx.labDoneText(sceneTitle)}</p>
+
+            <div className="ky-well lab-done__stats">
+              <div>
+                <div className="ky-mono lab-done__num lab-done__num--ok">
+                  {quizState.correctCount} / {quizState.totalQuestions}
+                </div>
+                <div className="lab-done__lbl">{rx.labDoneCorrect}</div>
+              </div>
+              <div>
+                <div className="ky-mono lab-done__num lab-done__num--gold">+{quizState.earnedXp} XP</div>
+                <div className="lab-done__lbl">{rx.labDoneXp}</div>
               </div>
             </div>
 
-            {/* Scenes Grid List */}
-            <div
-              style={{
-                flex: 1,
-                overflowY: 'auto',
-                padding: '10px 22px 22px',
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
-                gap: 12,
-              }}
-            >
-              {filteredScenes.map((s) => {
-                const isSelected = s.id === currentScene.id;
-                return (
-                  <button
-                    key={s.id}
-                    onClick={() => handleSelectScene(s)}
-                    style={{
-                      padding: '12px',
-                      borderRadius: '12px',
-                      border: isSelected
-                        ? '2px solid var(--brand-primary, #0284c7)'
-                        : '1px solid var(--border-color, rgba(148, 163, 184, 0.25))',
-                      background: isSelected
-                        ? resolvedDark
-                          ? 'rgba(56, 189, 248, 0.12)'
-                          : 'rgba(2, 132, 199, 0.08)'
-                        : resolvedDark
-                        ? '#1f293d'
-                        : '#f8fafc',
-                      color: 'inherit',
-                      textAlign: 'left',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: 6,
-                      transition: 'all 0.15s ease',
-                    }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                      <span
-                        style={{
-                          fontSize: '0.68rem',
-                          fontWeight: 800,
-                          padding: '2px 6px',
-                          borderRadius: '4px',
-                          background: s.badge === 'TYT' ? '#10b981' : '#f59e0b',
-                          color: '#ffffff',
-                        }}
-                      >
-                        {s.badge} • {s.unitId.toUpperCase()}
-                      </span>
-                      <span style={{ fontSize: '0.72rem', opacity: 0.6 }}>{s.category}</span>
-                    </div>
-
-                    <div style={{ fontSize: '0.88rem', fontWeight: 700, lineHeight: 1.25 }}>
-                      <bdi dir="ltr">{s.title[lang] || s.title.tr}</bdi>
-                    </div>
-
-                    <div
-                      style={{
-                        fontSize: '0.75rem',
-                        opacity: 0.75,
-                        display: '-webkit-box',
-                        WebkitLineClamp: 2,
-                        WebkitBoxOrient: 'vertical',
-                        overflow: 'hidden',
-                        lineHeight: 1.3,
-                      }}
-                    >
-                      <bdi dir="ltr">{s.subtitle[lang] || s.subtitle.tr}</bdi>
-                    </div>
-                  </button>
-                );
-              })}
+            <div className="lab-done__actions">
+              <button
+                type="button"
+                className="ky-btn ky-btn--primary ky-btn--block"
+                data-sfx="start"
+                onClick={() => initQuizForScene(currentScene)}
+              >
+                {rx.labRetry}
+              </button>
+              <button type="button" className="ky-btn ky-btn--quiet ky-btn--block" onClick={() => handleToggleMode('explore')}>
+                {rx.labBackExplore}
+              </button>
+              {onOpenUnitExam && (
+                <button
+                  type="button"
+                  className="ky-btn ky-btn--ok ky-btn--block"
+                  onClick={() => onOpenUnitExam(currentScene.unitId)}
+                >
+                  <FileCheck2 size={16} aria-hidden="true" />
+                  <span>{rx.labGoUnitTest}</span>
+                </button>
+              )}
             </div>
           </div>
         </div>

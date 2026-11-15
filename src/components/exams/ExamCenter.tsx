@@ -1,20 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import {
-  FileCheck2,
-  Clock,
-  Sparkles,
-  Trophy,
-  Award,
-  BookOpen,
-  Filter,
-  CheckCircle2,
-  Star,
-  RotateCcw,
-  AlertCircle,
-  Play,
-  Layers,
-  Flame,
-} from 'lucide-react';
+import { Clock, Sparkles, Trophy, CheckCircle2, Bookmark, X, RotateCcw, Play } from 'lucide-react';
 import type { CompiledQuestion, LanguageCode, MockExamDefinition } from '../../types/chemistry';
 import type { ExamResultRecord, MockBestScore } from '../../store/useAppStore';
 import { ALL_CHEMISTRY_UNITS } from '../../data/units';
@@ -27,7 +12,10 @@ import {
 } from '../../engine/mockExamCatalog';
 import { compileUnitQuestions } from '../../engine/questionGenerator';
 import { QuizSessionModal } from './QuizSessionModal';
+import { formatChemText } from '../common/ChemFormula';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { EXAM_STRINGS } from '../../i18n/examStrings';
+import { redesignExtra } from '../../i18n/redesignStrings';
 
 export type ExamCenterCategory =
   | 'tyt'
@@ -44,7 +32,7 @@ export interface ExamCenterProps {
   wrongQuestionIds: string[];
   bookmarkedQuestionIds: string[];
   mockBestScores: Record<string, MockBestScore>;
-  onRecordQuestion: (qId: string, isCorrect: boolean) => void;
+  onRecordQuestion: (qId: string, isCorrect: boolean, pickedIndex?: number) => void;
   onToggleBookmark: (qId: string) => void;
   onSaveAttempt: (attempt: Omit<ExamResultRecord, 'id' | 'dateIso'>) => void;
 }
@@ -61,9 +49,11 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
   onSaveAttempt,
 }) => {
   const t = UI_TRANSLATIONS[lang];
+  const x = EXAM_STRINGS[lang] ?? EXAM_STRINGS.tr;
+  const rx = redesignExtra(lang);
 
   // Active Category Tab
-  const [activeTab, setActiveTab] = useState<ExamCenterCategory>('tyt');
+  const [activeTab, setActiveTab] = useState<ExamCenterCategory>(preselectedUnitId ? 'sets' : 'tyt');
 
   // Filter for %100 Şekilli Denemeler (Trials 26–35)
   const [visualOnlyFilter, setVisualOnlyFilter] = useState(false);
@@ -139,7 +129,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
     const qs = buildMockExamQuestions(mock.id, ALL_CHEMISTRY_UNITS, lang);
     setActiveSession({
       title: mock.title,
-      subtitle: `${mock.badgeText} • ${mock.questionCount} Soru • ${mock.durationMinutes} Dakika`,
+      subtitle: rx.trialSub(mock.badgeText, mock.questionCount, mock.durationMinutes),
       examType: mock.category === 'TYT_BRANCH' ? 'TYT' : 'AYT',
       mockId: mock.id,
       questions: qs,
@@ -169,7 +159,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
     const unitTitle = currentUnit.title[lang] || currentUnit.title.tr;
     setActiveSession({
       title: `${currentUnit.id.toUpperCase()} • ${unitTitle}`,
-      subtitle: `Test Seti #${setNumber} • 16 Soru • Pratik Modu (Anında Çözüm & İpucu)`,
+      subtitle: rx.unitSetSub(setNumber),
       examType: 'UNIT',
       unitId: currentUnit.id,
       questions: qs,
@@ -183,8 +173,8 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
     const qs = resolveQuestionsByIds(wrongQuestionIds);
     if (qs.length === 0) return;
     setActiveSession({
-      title: 'Hata Defteri • Pekiştirme Oturumu',
-      subtitle: `${qs.length} Yanlış Soru • Doğru Yanıtladığında Hata Defterinden Otomatik Çıkarılır`,
+      title: t.exams.modeMistakes,
+      subtitle: rx.mistakeSessionSub(qs.length),
       examType: 'MISTAKE',
       questions: qs,
       isExamMode: false,
@@ -197,8 +187,8 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
     const qs = resolveQuestionsByIds(bookmarkedQuestionIds);
     if (qs.length === 0) return;
     setActiveSession({
-      title: 'Yıldızlı Sorular • Özel Pratik',
-      subtitle: `${qs.length} Yıldızlı Soru • Favori Soru Koleksiyonun`,
+      title: t.exams.modeBookmarks,
+      subtitle: rx.starredSessionSub(qs.length),
       examType: 'BOOKMARK',
       questions: qs,
       isExamMode: false,
@@ -206,853 +196,405 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
     });
   };
 
-  return (
-    <section className="exam-center-container" aria-label={t.exams.title}>
-      {/* Header */}
-      <div className="section-header" style={{ marginBottom: '1.25rem' }}>
-        <div>
-          <h1 style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', fontSize: '1.75rem', margin: 0 }}>
-            <FileCheck2 size={28} color="var(--brand-primary)" />
-            <span>{t.exams.title}</span>
-          </h1>
-          <p className="subtitle-text" style={{ margin: '0.35rem 0 0', color: 'var(--text-secondary)' }}>
-            40 TYT, 40 AYT Branş Denemesi, 192 Ünite Testi ve Türkiye Geneli Derece Provası
-          </p>
+  const TILE_VARIANTS = ['', 'ky-tile--violet', 'ky-tile--gold', 'ky-tile--blue', 'ky-tile--ok', 'ky-tile--rose'];
+
+  const renderMockCard = (mock: MockExamDefinition) => {
+    const bestScore = mockBestScores[mock.id];
+    return (
+      <article key={mock.id} className="ky-card ex-card">
+        <div className="ex-card__top">
+          <div className={`ky-tile ${TILE_VARIANTS[mock.examNumber % TILE_VARIANTS.length]}`} aria-hidden="true">
+            #{mock.examNumber}
+          </div>
+          <div className="ex-card__body">
+            <h3 className="ex-card__title">{mock.title}</h3>
+            <p className="ex-card__sub">{mock.subtitle}</p>
+          </div>
+        </div>
+        <div className="ex-meta">
+          <span className="ky-chip ky-chip--accent">{mock.badgeText}</span>
+          {mock.visualFocus && <span className="ky-chip ky-chip--violet">{rx.visualChip}</span>}
+          <span className="ky-chip ky-mono">
+            <Clock size={12} aria-hidden="true" />
+            {mock.durationMinutes} {x.minShort}
+          </span>
+          <span className="ky-chip ky-mono">{x.questionsN(mock.questionCount)}</span>
+          {bestScore ? (
+            <span className="ex-meta__end ex-meta__end--ok">{x.bestNet(bestScore.bestNet.toFixed(2), bestScore.attempts)}</span>
+          ) : (
+            <span className="ex-meta__end">{x.notSolved}</span>
+          )}
+        </div>
+        <button
+          type="button"
+          className={`ky-btn ky-btn--block ${bestScore ? 'ky-btn--quiet' : 'ky-btn--primary'}`}
+          data-sfx="start"
+          onClick={() => handleLaunchTrial(mock)}
+        >
+          <Play size={16} fill="currentColor" aria-hidden="true" />
+          <span>{bestScore ? x.replay : t.exams.startExam}</span>
+        </button>
+      </article>
+    );
+  };
+
+  const renderTrialList = (list: MockExamDefinition[], label: string) => {
+    const featured = list.find((m) => !mockBestScores[m.id]) ?? list[0];
+    const rest = featured ? list.filter((m) => m.id !== featured.id) : [];
+    return (
+      <>
+        <div className="ex-filters">
+          <p className="ex-subhead">{label}</p>
+          <button
+            type="button"
+            className="ky-chip ky-chip--lg"
+            aria-pressed={visualOnlyFilter}
+            onClick={() => setVisualOnlyFilter((prev) => !prev)}
+          >
+            <Sparkles size={14} aria-hidden="true" />
+            <span>{rx.visualFilter}</span>
+          </button>
+        </div>
+
+        {featured && (
+          <section className="ky-stage ex-feature" aria-label={x.featured}>
+            <div className="ky-floor" />
+            <div className="ex-feature__art ky-persp" aria-hidden="true">
+              <div className="ky-rig" style={{ inset: 0 }}>
+              <span className="ky-bond" style={{ left: 55, top: 36, width: 36, transform: 'rotate(145deg)' }} />
+              <span className="ky-bond" style={{ left: 55, top: 36, width: 36, transform: 'rotate(35deg)' }} />
+              <span className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 8, top: 44, width: 28, height: 28, transform: 'translateZ(-18px)' }} />
+              <span className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 74, top: 44, width: 28, height: 28, transform: 'translateZ(18px)' }} />
+              <span className="ky-atom" style={{ ['--c' as string]: '#FF6B7A', ['--cd' as string]: '#9C1830', left: 32, top: 8, width: 46, height: 46 }} />
+              </div>
+            </div>
+            <div className="ex-feature__top">
+              <span className="ky-eyebrow">{x.featured} · #{featured.examNumber}</span>
+              <h2 className="ky-disp">{featured.title}</h2>
+              <p>{featured.subtitle}</p>
+            </div>
+            <div className="ex-meta">
+              <span className="ky-chip ky-chip--gold">{featured.badgeText}</span>
+              <span className="ky-chip ky-mono">
+                <Clock size={12} aria-hidden="true" />
+                {featured.durationMinutes} {x.minShort}
+              </span>
+              <span className="ky-chip ky-mono">{x.questionsN(featured.questionCount)}</span>
+            </div>
+            <button
+              type="button"
+              className="ky-btn ky-btn--primary ky-btn--block"
+              data-sfx="start"
+              onClick={() => handleLaunchTrial(featured)}
+            >
+              <Play size={16} fill="currentColor" aria-hidden="true" />
+              <span>{mockBestScores[featured.id] ? x.replay : t.exams.startExam}</span>
+            </button>
+          </section>
+        )}
+
+        <div className="ky-grid" style={{ ['--ky-grid-min' as string]: '300px' }}>
+          {rest.map(renderMockCard)}
+        </div>
+      </>
+    );
+  };
+
+  const renderQuestionRows = (
+    ids: string[],
+    kind: 'mistake' | 'bookmark'
+  ) =>
+    resolveQuestionsByIds(ids).map((q) => (
+      <div key={q.id} className="ky-card ex-row">
+        <div className="ex-row__body">
+          <div className="ex-row__meta">
+            <span className={`ky-chip ky-mono ${kind === 'mistake' ? 'ky-chip--bad' : 'ky-chip--gold'}`}>{q.unitId.toUpperCase()}</span>
+            <span className="ky-chip ky-mono">{q.id}</span>
+            {kind === 'mistake' && q.diagram && <span className="ky-chip ky-chip--violet">{rx.visualChip}</span>}
+          </div>
+          <p className="ex-row__stem">{formatChemText(q.stem)}</p>
+        </div>
+        <div className="ex-row__actions">
+          {kind === 'bookmark' && (
+            <button
+              type="button"
+              className="ky-icon-btn is-on"
+              style={{ color: 'var(--gold)' }}
+              onClick={() => onToggleBookmark(q.id)}
+              aria-label={x.bookmarkRemove}
+            >
+              <Bookmark size={18} fill="currentColor" aria-hidden="true" />
+            </button>
+          )}
+          <button
+            type="button"
+            className="ky-btn ky-btn--quiet ky-btn--sm"
+            data-sfx="start"
+            onClick={() =>
+              setActiveSession(
+                kind === 'mistake'
+                  ? {
+                      title: t.exams.modeMistakes,
+                      subtitle: q.unitId.toUpperCase(),
+                      examType: 'MISTAKE',
+                      questions: [q],
+                      isExamMode: false,
+                      durationMinutes: 5,
+                    }
+                  : {
+                      title: t.exams.modeBookmarks,
+                      subtitle: q.unitId.toUpperCase(),
+                      examType: 'BOOKMARK',
+                      questions: [q],
+                      isExamMode: false,
+                      durationMinutes: 5,
+                    }
+              )
+            }
+          >
+            {kind === 'mistake' ? rx.retryOne : rx.solveOne}
+          </button>
         </div>
       </div>
+    ));
 
-      {/* Category Tabs Switcher */}
-      <nav className="exam-category-tabs" role="tablist" aria-label="Sınav Kategorileri">
+  const tabs: { id: ExamCenterCategory; label: string }[] = [
+    { id: 'tyt', label: rx.tabTyt },
+    { id: 'ayt', label: rx.tabAyt },
+    { id: 'sets', label: x.tabUnits },
+    { id: 'tg', label: x.tabTg },
+  ];
+
+  return (
+    <section className="ky-screen ex-screen" aria-label={t.exams.title}>
+      <div className="ky-fit">
+      <div className="ex-center">
+      <header className="ex-head">
+        <p className="ky-eyebrow">{rx.examsEyebrow}</p>
+        <h1 className="ky-disp ky-fs-28">{rx.examsTitle}</h1>
+      </header>
+
+      <div className="ky-segmented ex-tabs" role="tablist" aria-label={t.exams.title}>
+        {tabs.map((tab) => (
+          <button
+            key={tab.id}
+            type="button"
+            role="tab"
+            aria-selected={activeTab === tab.id}
+            onClick={() => setActiveTab(tab.id)}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="ex-wells">
         <button
           type="button"
-          role="tab"
-          aria-selected={activeTab === 'tyt'}
-          className={`exam-category-tab ${activeTab === 'tyt' ? 'active' : ''}`}
-          onClick={() => setActiveTab('tyt')}
-        >
-          1. Aşama TYT (40)
-        </button>
-
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'ayt'}
-          className={`exam-category-tab ${activeTab === 'ayt' ? 'active' : ''}`}
-          onClick={() => setActiveTab('ayt')}
-        >
-          2. Aşama AYT (40)
-        </button>
-
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'sets'}
-          className={`exam-category-tab ${activeTab === 'sets' ? 'active' : ''}`}
-          onClick={() => setActiveTab('sets')}
-        >
-          Ünite Soru Setleri (192)
-        </button>
-
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'tg'}
-          className={`exam-category-tab ${activeTab === 'tg' ? 'active' : ''}`}
-          onClick={() => setActiveTab('tg')}
-          style={{
-            borderColor: activeTab === 'tg' ? 'var(--accent-amber)' : 'var(--border-subtle)',
-            color: activeTab === 'tg' ? '#000' : 'inherit',
-            background: activeTab === 'tg' ? 'var(--accent-amber)' : undefined,
-          }}
-        >
-          🏆 {t.exams.modeTgProva}
-        </button>
-
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeTab === 'mistakes'}
-          className={`exam-category-tab ${activeTab === 'mistakes' ? 'active' : ''}`}
+          className="ky-well ex-well"
+          aria-pressed={activeTab === 'mistakes'}
           onClick={() => setActiveTab('mistakes')}
         >
-          {t.exams.modeMistakes} ({wrongQuestionIds.length})
+          <span className="ex-well__icon ex-well__icon--bad">
+            <X size={18} strokeWidth={2.6} aria-hidden="true" />
+          </span>
+          <span className="ex-well__text">
+            <strong className="ky-mono">{wrongQuestionIds.length}</strong>
+            <span>{t.exams.modeMistakes}</span>
+          </span>
         </button>
-
         <button
           type="button"
-          role="tab"
-          aria-selected={activeTab === 'bookmarks'}
-          className={`exam-category-tab ${activeTab === 'bookmarks' ? 'active' : ''}`}
+          className="ky-well ex-well"
+          aria-pressed={activeTab === 'bookmarks'}
           onClick={() => setActiveTab('bookmarks')}
         >
-          {t.exams.modeBookmarks} ({bookmarkedQuestionIds.length})
+          <span className="ex-well__icon ex-well__icon--gold">
+            <Bookmark size={18} aria-hidden="true" />
+          </span>
+          <span className="ex-well__text">
+            <strong className="ky-mono">{bookmarkedQuestionIds.length}</strong>
+            <span>{t.exams.modeBookmarks}</span>
+          </span>
         </button>
-      </nav>
+      </div>
 
-      {/* ================================================================= */}
-      {/* 1. TYT BRANŞ DENEMELERİ (40 DENEME)                              */}
-      {/* ================================================================= */}
-      {activeTab === 'tyt' && (
-        <div>
-          {/* Subheader & %100 Şekilli Denemeler Filter Toggle */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              flexWrap: 'wrap',
-              gap: '0.75rem',
-              marginBottom: '1rem',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
-                1. Aşama TYT Kimya (40 Deneme • 7 Soru • 10 Dakika)
-              </span>
-            </div>
+      {activeTab === 'tyt' && renderTrialList(tytMocks, rx.tytListLabel)}
+      {activeTab === 'ayt' && renderTrialList(aytMocks, rx.aytListLabel)}
 
-            <button
-              type="button"
-              onClick={() => setVisualOnlyFilter((prev) => !prev)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                padding: '0.4rem 0.85rem',
-                borderRadius: 'var(--radius-full)',
-                fontSize: '0.825rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                background: visualOnlyFilter ? 'var(--accent-cyan)' : 'var(--bg-surface)',
-                color: visualOnlyFilter ? '#000' : 'var(--text-secondary)',
-                border: `1.5px solid ${visualOnlyFilter ? 'var(--accent-cyan)' : 'var(--border-subtle)'}`,
-                transition: 'all 0.15s ease',
-              }}
-            >
-              <Sparkles size={14} />
-              <span>%100 Şekilli Denemeler (Deneme 26–35)</span>
-            </button>
-          </div>
-
-          <div className="exam-card-grid">
-            {tytMocks.map((mock) => {
-              const bestScore = mockBestScores[mock.id];
-              return (
-                <div key={mock.id} className="exam-card">
-                  <div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem' }}>
-                      <span
-                        style={{
-                          fontSize: '0.75rem',
-                          fontWeight: 800,
-                          padding: '0.2rem 0.55rem',
-                          borderRadius: '4px',
-                          background: `${mock.accentColor}20`,
-                          color: mock.accentColor,
-                          border: `1px solid ${mock.accentColor}50`,
-                        }}
-                      >
-                        {mock.badgeText}
-                      </span>
-                      {mock.visualFocus && (
-                        <span
-                          style={{
-                            fontSize: '0.7rem',
-                            fontWeight: 700,
-                            padding: '0.15rem 0.45rem',
-                            borderRadius: '4px',
-                            background: 'rgba(6, 182, 212, 0.15)',
-                            color: 'var(--accent-cyan)',
-                          }}
-                        >
-                          Şekilli
-                        </span>
-                      )}
-                    </div>
-
-                    <h3 style={{ margin: '0.625rem 0 0.35rem', fontSize: '1.05rem', fontWeight: 800 }}>
-                      {mock.title}
-                    </h3>
-                    <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
-                      {mock.subtitle}
-                    </p>
-                  </div>
-
-                  <div style={{ marginTop: '1.125rem', paddingTop: '0.75rem', borderTop: '1px solid var(--border-subtle)' }}>
-                    <div
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        fontSize: '0.825rem',
-                        marginBottom: '0.75rem',
-                      }}
-                    >
-                      <span style={{ color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                        <Clock size={14} />
-                        {mock.durationMinutes} dk • 7 Soru
-                      </span>
-
-                      {bestScore ? (
-                        <span style={{ fontWeight: 800, color: 'var(--accent-emerald)' }}>
-                          En İyi: {bestScore.bestNet.toFixed(2)} Net ({bestScore.attempts}x)
-                        </span>
-                      ) : (
-                        <span style={{ color: 'var(--text-muted)' }}>Henüz Çözülmedi</span>
-                      )}
-                    </div>
-
-                    <button
-                      type="button"
-                      className="btn-primary"
-                      onClick={() => handleLaunchTrial(mock)}
-                      style={{ width: '100%', justifyContent: 'center', gap: '0.4rem', padding: '0.55rem' }}
-                    >
-                      <Play size={15} fill="currentColor" />
-                      <span>{bestScore ? 'Tekrar Çöz' : 'Sınava Başla'}</span>
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* ================================================================= */}
-      {/* 2. AYT BRANŞ DENEMELERİ (40 DENEME)                              */}
-      {/* ================================================================= */}
-      {activeTab === 'ayt' && (
-        <div>
-          {/* Subheader & %100 Şekilli Denemeler Filter Toggle */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              flexWrap: 'wrap',
-              gap: '0.75rem',
-              marginBottom: '1rem',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
-                2. Aşama AYT Kimya (40 Deneme • 13 Soru • 20 Dakika)
-              </span>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => setVisualOnlyFilter((prev) => !prev)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                padding: '0.4rem 0.85rem',
-                borderRadius: 'var(--radius-full)',
-                fontSize: '0.825rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                background: visualOnlyFilter ? 'var(--accent-cyan)' : 'var(--bg-surface)',
-                color: visualOnlyFilter ? '#000' : 'var(--text-secondary)',
-                border: `1.5px solid ${visualOnlyFilter ? 'var(--accent-cyan)' : 'var(--border-subtle)'}`,
-                transition: 'all 0.15s ease',
-              }}
-            >
-              <Sparkles size={14} />
-              <span>%100 Şekilli Denemeler (Deneme 26–35)</span>
-            </button>
-          </div>
-
-          <div className="exam-card-grid">
-            {aytMocks.map((mock) => {
-              const bestScore = mockBestScores[mock.id];
-              return (
-                <div key={mock.id} className="exam-card">
-                  <div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem' }}>
-                      <span
-                        style={{
-                          fontSize: '0.75rem',
-                          fontWeight: 800,
-                          padding: '0.2rem 0.55rem',
-                          borderRadius: '4px',
-                          background: `${mock.accentColor}20`,
-                          color: mock.accentColor,
-                          border: `1px solid ${mock.accentColor}50`,
-                        }}
-                      >
-                        {mock.badgeText}
-                      </span>
-                      {mock.visualFocus && (
-                        <span
-                          style={{
-                            fontSize: '0.7rem',
-                            fontWeight: 700,
-                            padding: '0.15rem 0.45rem',
-                            borderRadius: '4px',
-                            background: 'rgba(6, 182, 212, 0.15)',
-                            color: 'var(--accent-cyan)',
-                          }}
-                        >
-                          Şekilli
-                        </span>
-                      )}
-                    </div>
-
-                    <h3 style={{ margin: '0.625rem 0 0.35rem', fontSize: '1.05rem', fontWeight: 800 }}>
-                      {mock.title}
-                    </h3>
-                    <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
-                      {mock.subtitle}
-                    </p>
-                  </div>
-
-                  <div style={{ marginTop: '1.125rem', paddingTop: '0.75rem', borderTop: '1px solid var(--border-subtle)' }}>
-                    <div
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        fontSize: '0.825rem',
-                        marginBottom: '0.75rem',
-                      }}
-                    >
-                      <span style={{ color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                        <Clock size={14} />
-                        {mock.durationMinutes} dk • 13 Soru
-                      </span>
-
-                      {bestScore ? (
-                        <span style={{ fontWeight: 800, color: 'var(--accent-emerald)' }}>
-                          En İyi: {bestScore.bestNet.toFixed(2)} Net ({bestScore.attempts}x)
-                        </span>
-                      ) : (
-                        <span style={{ color: 'var(--text-muted)' }}>Henüz Çözülmedi</span>
-                      )}
-                    </div>
-
-                    <button
-                      type="button"
-                      className="btn-primary"
-                      onClick={() => handleLaunchTrial(mock)}
-                      style={{ width: '100%', justifyContent: 'center', gap: '0.4rem', padding: '0.55rem' }}
-                    >
-                      <Play size={15} fill="currentColor" />
-                      <span>{bestScore ? 'Tekrar Çöz' : 'Sınava Başla'}</span>
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* ================================================================= */}
-      {/* 3. ÜNİTE SORU SETLERİ (192 SET)                                  */}
-      {/* ================================================================= */}
+      {/* Unit practice sets */}
       {activeTab === 'sets' && (
-        <div>
-          {/* Unit Selector Header */}
-          <div
-            style={{
-              background: 'var(--bg-surface)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              padding: '1rem',
-              marginBottom: '1.25rem',
-            }}
-          >
-            <label
-              htmlFor="unit-picker-select"
-              style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-secondary)', marginBottom: '0.5rem' }}
-            >
-              Çalışmak İstediğin Üniteyi Seç (24 Ünite):
-            </label>
-
+        <>
+          <div className="ky-card ex-picker">
+            <label htmlFor="unit-picker-select">{rx.pickUnit}</label>
             <select
               id="unit-picker-select"
+              className="ky-select"
               value={selectedUnitId}
               onChange={(e) => setSelectedUnitId(e.target.value)}
-              style={{
-                width: '100%',
-                padding: '0.625rem 0.875rem',
-                borderRadius: 'var(--radius-sm)',
-                background: 'var(--bg-elevated)',
-                color: 'var(--text-primary)',
-                border: '1px solid var(--border-subtle)',
-                fontSize: '0.925rem',
-                fontWeight: 600,
-              }}
             >
-              <optgroup label="TYT Kimya Üniteleri (u01 - u10)">
+              <optgroup label={rx.tytUnitsGroup}>
                 {ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'TYT').map((u) => (
                   <option key={u.id} value={u.id}>
-                    {u.id.toUpperCase()} • {u.title[lang] || u.title.tr} ({u.grade}. Sınıf)
+                    {u.id.toUpperCase()} · {u.title[lang] || u.title.tr} ({rx.gradeN(u.grade)})
                   </option>
                 ))}
               </optgroup>
-              <optgroup label="AYT Kimya Üniteleri (u11 - u24)">
+              <optgroup label={rx.aytUnitsGroup}>
                 {ALL_CHEMISTRY_UNITS.filter((u) => u.exam === 'AYT').map((u) => (
                   <option key={u.id} value={u.id}>
-                    {u.id.toUpperCase()} • {u.title[lang] || u.title.tr} ({u.grade}. Sınıf)
+                    {u.id.toUpperCase()} · {u.title[lang] || u.title.tr} ({rx.gradeN(u.grade)})
                   </option>
                 ))}
               </optgroup>
             </select>
           </div>
 
-          {/* 8 Sets Grid for Chosen Unit */}
-          <div style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <h2 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0 }}>
+          <div className="ky-section-head">
+            <h2 className="ky-disp" style={{ fontSize: '1.15rem' }}>
               {currentUnit.id.toUpperCase()}: {currentUnit.title[lang] || currentUnit.title.tr}
             </h2>
-            <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-              8 Test Seti • 128 Soru
-            </span>
+            <span className="ky-chip">{rx.setsMeta}</span>
           </div>
 
-          <div className="exam-card-grid">
+          <div className="ky-grid" style={{ ['--ky-grid-min' as string]: '260px' }}>
             {[1, 2, 3, 4, 5, 6, 7, 8].map((setNum) => {
               const setQuestions = currentUnitQuestions.filter((q) => q.setNumber === setNum);
               const solvedCount = setQuestions.filter((q) => solvedQuestions[q.id] !== undefined).length;
               const isCompleted = solvedCount === setQuestions.length;
 
-              const tierName =
-                setNum <= 2 ? 'Kolay' : setNum <= 4 ? 'Orta' : setNum <= 6 ? 'Zor' : 'ÖSYM Düzeyi';
-
-              const tierColor =
-                setNum <= 2
-                  ? 'var(--accent-emerald)'
-                  : setNum <= 4
-                  ? 'var(--brand-primary)'
-                  : setNum <= 6
-                  ? 'var(--accent-amber)'
-                  : 'var(--accent-ruby)';
+              const tierName = rx.tiers[setNum <= 2 ? 0 : setNum <= 4 ? 1 : setNum <= 6 ? 2 : 3];
+              const tierChip =
+                setNum <= 2 ? 'ky-chip--ok' : setNum <= 4 ? 'ky-chip--accent' : setNum <= 6 ? 'ky-chip--gold' : 'ky-chip--bad';
+              const tileVariant = setNum <= 2 ? 'ky-tile--ok' : setNum <= 4 ? '' : setNum <= 6 ? 'ky-tile--gold' : 'ky-tile--rose';
 
               return (
-                <div key={setNum} className="exam-card">
-                  <div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span
-                        style={{
-                          fontSize: '0.75rem',
-                          fontWeight: 800,
-                          padding: '0.2rem 0.5rem',
-                          borderRadius: '4px',
-                          background: `${tierColor}20`,
-                          color: tierColor,
-                        }}
-                      >
-                        {tierName}
-                      </span>
-                      <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                        Set #{setNum}
-                      </span>
+                <article key={setNum} className="ky-card ex-card">
+                  <div className="ex-card__top">
+                    <div className={`ky-tile ${tileVariant}`} aria-hidden="true">
+                      #{setNum}
                     </div>
-
-                    <h3 style={{ margin: '0.625rem 0 0.25rem', fontSize: '1rem', fontWeight: 800 }}>
-                      Test Seti {setNum}
-                    </h3>
-                    <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                      16 Soru • 4 Şekilli Soru • Pratik Modu
-                    </p>
+                    <div className="ex-card__body">
+                      <h3 className="ex-card__title">{rx.setTitle(setNum)}</h3>
+                      <p className="ex-card__sub">{rx.setSub}</p>
+                    </div>
                   </div>
-
-                  <div style={{ marginTop: '1rem', paddingTop: '0.75rem', borderTop: '1px solid var(--border-subtle)' }}>
-                    <div
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        fontSize: '0.825rem',
-                        marginBottom: '0.5rem',
-                      }}
-                    >
-                      <span style={{ color: 'var(--text-secondary)' }}>Çözülen:</span>
-                      <span style={{ fontWeight: 700, color: isCompleted ? 'var(--accent-emerald)' : 'var(--text-primary)' }}>
-                        {solvedCount} / 16
-                      </span>
-                    </div>
-
-                    <div className="unit-progress-bar">
+                  <div className="ex-meta">
+                    <span className={`ky-chip ${tierChip}`}>{tierName}</span>
+                  </div>
+                  <div className="ex-progress">
+                    <div className="ky-track" aria-hidden="true">
                       <div
-                        className="unit-progress-fill"
-                        style={{
-                          width: `${(solvedCount / 16) * 100}%`,
-                          background: isCompleted ? 'var(--accent-emerald)' : undefined,
-                        }}
+                        className={`ky-fill ${isCompleted ? 'ky-fill--ok' : ''}`}
+                        style={{ inlineSize: `${(solvedCount / 16) * 100}%` }}
                       />
                     </div>
-
-                    <button
-                      type="button"
-                      className="btn-primary"
-                      onClick={() => handleLaunchUnitSet(setNum)}
-                      style={{ width: '100%', marginTop: '0.875rem', justifyContent: 'center', padding: '0.5rem' }}
-                    >
-                      <Play size={14} fill="currentColor" />
-                      <span>{isCompleted ? 'Tekrar Et' : 'Sete Başla'}</span>
-                    </button>
+                    <span className="ky-mono">{solvedCount} / 16</span>
                   </div>
-                </div>
+                  <button
+                    type="button"
+                    className={`ky-btn ky-btn--block ${isCompleted ? 'ky-btn--quiet' : 'ky-btn--primary'}`}
+                    data-sfx="start"
+                    onClick={() => handleLaunchUnitSet(setNum)}
+                  >
+                    <Play size={16} fill="currentColor" aria-hidden="true" />
+                    <span>{isCompleted ? rx.repeatSet : rx.startSet}</span>
+                  </button>
+                </article>
               );
             })}
           </div>
-        </div>
+        </>
       )}
 
-      {/* ================================================================= */}
-      {/* 4. TG DERECE PROVASI (20 SORU: 7 TYT + 13 AYT)                    */}
-      {/* ================================================================= */}
+      {/* TG Derece Provasi */}
       {activeTab === 'tg' && (
-        <div style={{ maxWidth: 780, margin: '0 auto' }}>
-          <div
-            style={{
-              background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(16, 185, 129, 0.08))',
-              border: '2px solid var(--accent-amber)',
-              borderRadius: 'var(--radius-lg)',
-              padding: '1.75rem',
-              boxShadow: 'var(--shadow-card)',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
-              <span style={{ fontSize: '2rem' }}>🏆</span>
-              <div>
-                <span
-                  style={{
-                    background: 'var(--accent-amber)',
-                    color: '#000',
-                    fontWeight: 900,
-                    fontSize: '0.75rem',
-                    padding: '0.15rem 0.5rem',
-                    borderRadius: '4px',
-                    textTransform: 'uppercase',
-                  }}
-                >
-                  YKS Şampiyonluk Simülasyonu
-                </span>
-                <h2 style={{ margin: '0.35rem 0 0', fontSize: '1.35rem', fontWeight: 900 }}>
-                  {TG_PROVA_SPEC.title[lang] || TG_PROVA_SPEC.title.tr}
-                </h2>
-              </div>
-            </div>
-
-            <p style={{ fontSize: '0.925rem', lineHeight: 1.6, color: 'var(--text-secondary)', margin: '0 0 1.25rem' }}>
-              Gerçek sınav formatında <strong>20 Soru</strong> (7 TYT + 13 AYT). 30 dakika katı süre sınırlaması,
-              ÖSYM 4 yanlış 1 doğruyu götürür Net hesaplaması ve Türkiye Geneli YKS Sayısal Kimya tahmini yüzdelik
-              dilim hesaplaması içerir.
-            </p>
-
-            {/* Spec Feature Badges */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '0.75rem', marginBottom: '1.5rem' }}>
-              <div style={{ background: 'var(--bg-surface)', padding: '0.75rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>SORU DAĞILIMI</div>
-                <div style={{ fontWeight: 800, fontSize: '1rem', color: 'var(--brand-primary)', marginTop: '0.2rem' }}>
-                  7 TYT + 13 AYT (20 Q)
-                </div>
-              </div>
-
-              <div style={{ background: 'var(--bg-surface)', padding: '0.75rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>SINAV SÜRESİ</div>
-                <div style={{ fontWeight: 800, fontSize: '1rem', color: 'var(--accent-ruby)', marginTop: '0.2rem' }}>
-                  30 Dakika (Katı Sayaç)
-                </div>
-              </div>
-
-              <div style={{ background: 'var(--bg-surface)', padding: '0.75rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>ANALİZ RAPORU</div>
-                <div style={{ fontWeight: 800, fontSize: '1rem', color: 'var(--accent-emerald)', marginTop: '0.2rem' }}>
-                  ÖSYM Yüzdelik Dilim
-                </div>
-              </div>
-            </div>
-
-            {/* Launch Button */}
-            <button
-              type="button"
-              className="btn-primary"
-              onClick={handleLaunchTgProva}
-              style={{
-                width: '100%',
-                padding: '0.875rem',
-                fontSize: '1.05rem',
-                fontWeight: 800,
-                background: 'var(--accent-amber)',
-                color: '#000',
-                borderColor: 'var(--accent-amber)',
-                justifyContent: 'center',
-                gap: '0.5rem',
-              }}
-            >
-              <Trophy size={20} />
-              <span>Derece Provasını Başlat (30 Dk)</span>
-            </button>
+        <section className="ky-stage ex-tg">
+          <div className="ky-floor" />
+          <div>
+            <span className="ky-chip ky-chip--gold">{rx.tgBadge}</span>
+            <h2 className="ky-disp">{TG_PROVA_SPEC.title[lang] || TG_PROVA_SPEC.title.tr}</h2>
           </div>
-        </div>
+          <p>{rx.tgDesc}</p>
+          <div className="ex-tg__specs">
+            <div className="ky-well ex-tg__spec">
+              <small>{rx.tgSpecQ}</small>
+              <strong style={{ color: 'var(--accent)' }}>{rx.tgSpecQVal}</strong>
+            </div>
+            <div className="ky-well ex-tg__spec">
+              <small>{rx.tgSpecTime}</small>
+              <strong style={{ color: 'var(--bad)' }}>{rx.tgSpecTimeVal}</strong>
+            </div>
+            <div className="ky-well ex-tg__spec">
+              <small>{rx.tgSpecReport}</small>
+              <strong style={{ color: 'var(--ok)' }}>{rx.tgSpecReportVal}</strong>
+            </div>
+          </div>
+          <button type="button" className="ky-btn ky-btn--gold ky-btn--lg ky-btn--block" data-sfx="start" onClick={handleLaunchTgProva}>
+            <Trophy size={20} aria-hidden="true" />
+            <span>{rx.tgStart}</span>
+          </button>
+        </section>
       )}
 
-      {/* ================================================================= */}
-      {/* 5. HATA DEFTERİ (MISTAKE NOTEBOOK) TAB                           */}
-      {/* ================================================================= */}
+      {/* Mistakes */}
       {activeTab === 'mistakes' && (
-        <div style={{ maxWidth: 840, margin: '0 auto' }}>
-          <div
-            style={{
-              background: 'var(--bg-surface)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-lg)',
-              padding: '1.5rem',
-              marginBottom: '1.5rem',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
-              <div>
-                <h2 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <RotateCcw size={22} color="var(--accent-ruby)" />
-                  <span>{t.exams.modeMistakes}</span>
-                </h2>
-                <p style={{ margin: '0.25rem 0 0', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                  Yanlış yaptığın sorular burada birikir. Tekrar çözüp doğru yanıtladığında otomatik olarak temizlenir.
-                </p>
-              </div>
-
-              {wrongQuestionIds.length > 0 && (
-                <button
-                  type="button"
-                  className="btn-primary"
-                  onClick={handleLaunchMistakes}
-                  style={{ gap: '0.4rem', background: 'var(--accent-ruby)', borderColor: 'var(--accent-ruby)' }}
-                >
-                  <Play size={16} fill="currentColor" />
-                  <span>Tüm Hataları Tekrar Çöz ({wrongQuestionIds.length})</span>
-                </button>
-              )}
+        <div className="ex-list">
+          <div className="ky-card ex-listhead">
+            <div className="ex-listhead__text">
+              <h2 className="ky-disp">{t.exams.modeMistakes}</h2>
+              <p>{rx.mistakesDesc}</p>
             </div>
+            {wrongQuestionIds.length > 0 && (
+              <button type="button" className="ky-btn ky-btn--danger ky-btn--sm" data-sfx="start" onClick={handleLaunchMistakes}>
+                <RotateCcw size={16} aria-hidden="true" />
+                <span>{rx.retryAll(wrongQuestionIds.length)}</span>
+              </button>
+            )}
           </div>
 
           {wrongQuestionIds.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '3rem 1rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-md)' }}>
-              <CheckCircle2 size={48} color="var(--accent-emerald)" style={{ margin: '0 auto 0.75rem' }} />
-              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.2rem' }}>Hata Defterin Tamamen Boş!</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-                Harika gidiyorsun! Yanlış yaptığın hiçbir soru kalmadı. Yeni deneme sınavları çözerek kendini test edebilirsin.
-              </p>
+            <div className="ky-card ky-empty">
+              <CheckCircle2 size={44} color="var(--ok)" aria-hidden="true" />
+              <h3 className="ky-disp">{rx.emptyMistakesTitle}</h3>
+              <p>{rx.emptyMistakesBody}</p>
             </div>
           ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {resolveQuestionsByIds(wrongQuestionIds).map((q) => (
-                <div
-                  key={q.id}
-                  style={{
-                    background: 'var(--bg-surface)',
-                    border: '1px solid var(--border-subtle)',
-                    borderRadius: 'var(--radius-md)',
-                    padding: '1rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: '1rem',
-                  }}
-                >
-                  <div style={{ minWidth: 0, flex: 1 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.35rem' }}>
-                      <span
-                        style={{
-                          fontSize: '0.75rem',
-                          fontWeight: 700,
-                          background: 'rgba(244, 63, 94, 0.15)',
-                          color: 'var(--accent-ruby)',
-                          padding: '0.15rem 0.45rem',
-                          borderRadius: '4px',
-                        }}
-                      >
-                        {q.unitId.toUpperCase()}
-                      </span>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                        {q.id}
-                      </span>
-                      {q.diagram && (
-                        <span style={{ fontSize: '0.75rem', color: 'var(--accent-cyan)' }}>
-                          • Şekilli
-                        </span>
-                      )}
-                    </div>
-                    <p
-                      style={{
-                        margin: 0,
-                        fontSize: '0.875rem',
-                        lineHeight: 1.4,
-                        color: 'var(--text-primary)',
-                        whiteSpace: 'nowrap',
-                        overflow: 'hidden',
-                        textOverflow: 'ellipsis',
-                      }}
-                    >
-                      {q.stem}
-                    </p>
-                  </div>
-
-                  <button
-                    type="button"
-                    className="btn-secondary"
-                    onClick={() => {
-                      setActiveSession({
-                        title: `${q.unitId.toUpperCase()} • Tekrar Çöz`,
-                        subtitle: 'Hata Defteri Mastery',
-                        examType: 'MISTAKE',
-                        questions: [q],
-                        isExamMode: false,
-                        durationMinutes: 5,
-                      });
-                    }}
-                    style={{ flexShrink: 0, padding: '0.45rem 0.85rem', fontSize: '0.85rem' }}
-                  >
-                    Tekrar Çöz
-                  </button>
-                </div>
-              ))}
-            </div>
+            renderQuestionRows(wrongQuestionIds, 'mistake')
           )}
         </div>
       )}
 
-      {/* ================================================================= */}
-      {/* 6. YILDIZLI SORULAR (BOOKMARKED QUESTIONS) TAB                    */}
-      {/* ================================================================= */}
+      {/* Bookmarks */}
       {activeTab === 'bookmarks' && (
-        <div style={{ maxWidth: 840, margin: '0 auto' }}>
-          <div
-            style={{
-              background: 'var(--bg-surface)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-lg)',
-              padding: '1.5rem',
-              marginBottom: '1.5rem',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
-              <div>
-                <h2 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Star size={22} color="var(--accent-amber)" fill="var(--accent-amber)" />
-                  <span>{t.exams.modeBookmarks}</span>
-                </h2>
-                <p style={{ margin: '0.25rem 0 0', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                  Önemli gördüğün veya beğendiğin yıldızlı soruların kişisel koleksiyonu.
-                </p>
-              </div>
-
-              {bookmarkedQuestionIds.length > 0 && (
-                <button
-                  type="button"
-                  className="btn-primary"
-                  onClick={handleLaunchStarred}
-                  style={{ gap: '0.4rem', background: 'var(--accent-amber)', color: '#000', borderColor: 'var(--accent-amber)' }}
-                >
-                  <Play size={16} fill="currentColor" />
-                  <span>Yıldızlı Soruları Çöz ({bookmarkedQuestionIds.length})</span>
-                </button>
-              )}
+        <div className="ex-list">
+          <div className="ky-card ex-listhead">
+            <div className="ex-listhead__text">
+              <h2 className="ky-disp">{t.exams.modeBookmarks}</h2>
+              <p>{rx.starredDesc}</p>
             </div>
+            {bookmarkedQuestionIds.length > 0 && (
+              <button type="button" className="ky-btn ky-btn--gold ky-btn--sm" data-sfx="start" onClick={handleLaunchStarred}>
+                <Play size={16} fill="currentColor" aria-hidden="true" />
+                <span>{rx.solveAllStarred(bookmarkedQuestionIds.length)}</span>
+              </button>
+            )}
           </div>
 
           {bookmarkedQuestionIds.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '3rem 1rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-md)' }}>
-              <Star size={48} color="var(--accent-amber)" style={{ margin: '0 auto 0.75rem' }} />
-              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.2rem' }}>Henüz Yıldızlı Soru Yok</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-                Test çözerken beğendiğin veya tekrar göz atmak istediğin soruları sağ üstteki yıldız butonuna basarak buraya ekleyebilirsin.
-              </p>
+            <div className="ky-card ky-empty">
+              <Bookmark size={44} color="var(--gold)" aria-hidden="true" />
+              <h3 className="ky-disp">{rx.emptyStarredTitle}</h3>
+              <p>{rx.emptyStarredBody}</p>
             </div>
           ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {resolveQuestionsByIds(bookmarkedQuestionIds).map((q) => (
-                <div
-                  key={q.id}
-                  style={{
-                    background: 'var(--bg-surface)',
-                    border: '1px solid var(--border-subtle)',
-                    borderRadius: 'var(--radius-md)',
-                    padding: '1rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: '1rem',
-                  }}
-                >
-                  <div style={{ minWidth: 0, flex: 1 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.35rem' }}>
-                      <span
-                        style={{
-                          fontSize: '0.75rem',
-                          fontWeight: 700,
-                          background: 'rgba(245, 158, 11, 0.15)',
-                          color: 'var(--accent-amber)',
-                          padding: '0.15rem 0.45rem',
-                          borderRadius: '4px',
-                        }}
-                      >
-                        {q.unitId.toUpperCase()}
-                      </span>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                        {q.id}
-                      </span>
-                    </div>
-                    <p
-                      style={{
-                        margin: 0,
-                        fontSize: '0.875rem',
-                        lineHeight: 1.4,
-                        color: 'var(--text-primary)',
-                        whiteSpace: 'nowrap',
-                        overflow: 'hidden',
-                        textOverflow: 'ellipsis',
-                      }}
-                    >
-                      {q.stem}
-                    </p>
-                  </div>
-
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <button
-                      type="button"
-                      onClick={() => onToggleBookmark(q.id)}
-                      style={{
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                        color: 'var(--accent-amber)',
-                        padding: '0.4rem',
-                      }}
-                      title="Yıldızdan Çıkar"
-                    >
-                      <Star size={18} fill="var(--accent-amber)" />
-                    </button>
-                    <button
-                      type="button"
-                      className="btn-secondary"
-                      onClick={() => {
-                        setActiveSession({
-                          title: `${q.unitId.toUpperCase()} • Yıldızlı Soru`,
-                          subtitle: 'Özel Pratik',
-                          examType: 'BOOKMARK',
-                          questions: [q],
-                          isExamMode: false,
-                          durationMinutes: 5,
-                        });
-                      }}
-                      style={{ padding: '0.45rem 0.85rem', fontSize: '0.85rem' }}
-                    >
-                      Çöz
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
+            renderQuestionRows(bookmarkedQuestionIds, 'bookmark')
           )}
         </div>
       )}
+
+      </div>
+      </div>
 
       {/* Active Quiz Session Modal */}
       {activeSession && (
