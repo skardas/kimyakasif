@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useBackDismiss } from '../../hooks/useBackDismiss';
 import {
   Box,
   CheckCircle2,
@@ -60,6 +61,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
   const [twinIdx, setTwinIdx] = useState<number>(0);
   const [selectedTwinOpt, setSelectedTwinOpt] = useState<number | null>(null);
   const [zoomedDiagram, setZoomedDiagram] = useState<QuestionDiagramSpec | null>(null);
+  useBackDismiss(zoomedDiagram !== null, () => setZoomedDiagram(null));
 
   const deepGuide = useMemo(
     () => (unit ? getUnitDeepStudyGuide(unit.id) : null),

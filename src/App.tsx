@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useBackDismiss } from './hooks/useBackDismiss';
 import { BookOpen, Box, Layers, Gamepad2, FileCheck2, User } from 'lucide-react';
 import { UI_TRANSLATIONS } from './i18n/translations';
 import { APP_SHELL_STRINGS } from './i18n/appShellStrings';
@@ -51,6 +52,8 @@ export const App: React.FC = () => {
   const r = redesignStrings(lang);
 
   const [activeTab, setActiveTab] = useState<NavTab>('curriculum');
+  // System back from any other tab returns to the home tab; from home it leaves the app as usual.
+  useBackDismiss(activeTab !== 'curriculum', () => setActiveTab('curriculum'));
   const [profileTab, setProfileTab] = useState<ProfileTab>('dashboard');
   const [targetSceneId, setTargetSceneId] = useState<string>('water-vsepr');
   const [targetCardUnitId, setTargetCardUnitId] = useState<string | null>(null);

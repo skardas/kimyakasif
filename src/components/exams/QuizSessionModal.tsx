@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { useBackDismiss } from '../../hooks/useBackDismiss';
 import {
   Clock,
   Star,
@@ -350,6 +351,8 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
       onClose();
     }
   };
+  // System back: close the confirm sheet if it is open, otherwise behave like the X button.
+  useBackDismiss(true, () => (showExitConfirm ? setShowExitConfirm(false) : requestClose()));
 
   const goNext = () => setCurrentIndex((prev) => Math.min(questions.length - 1, prev + 1));
 
@@ -525,7 +528,9 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
     </span>
   );
 
-  const showNavigator = (isExamMode || inReview) && questions.length > 1;
+  // The numbered question grid took a third of a phone screen; the header ("Soru 6 / 13"), the
+  // progress bar and the previous/next buttons already cover navigation, so it is not shown.
+  const showNavigator = false;
 
   return (
     <div className="ky-immersive qz" role="dialog" aria-modal="true" aria-label={title}>

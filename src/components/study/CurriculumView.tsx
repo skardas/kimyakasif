@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { useBackDismiss } from '../../hooks/useBackDismiss';
 import { CheckCircle2, FileCheck2, Box, Layers, Presentation, User, SlidersHorizontal, WifiOff } from 'lucide-react';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
@@ -71,6 +72,7 @@ export const CurriculumView: React.FC<CurriculumViewProps> = ({
 
   const [examFilter, setExamFilter] = useState<'ALL' | 'TYT' | 'AYT'>(initialExamFilter);
   const [activeUnitForDeck, setActiveUnitForDeck] = useState<ChemistryUnitSeedData | null>(null);
+  useBackDismiss(activeUnitForDeck !== null, () => setActiveUnitForDeck(null));
 
   const filteredUnits = useMemo(
     () => ALL_CHEMISTRY_UNITS.filter((u) => examFilter === 'ALL' || u.exam === examFilter),
