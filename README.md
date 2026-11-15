@@ -111,7 +111,7 @@ Content totals:
 
 ## Getting started
 
-Requirements: Node.js 20+ and npm.
+Requirements: Node.js 26 LTS or newer (pinned in `.nvmrc`) and npm. Native builds need JDK 21 (Android Studio's bundled JBR works) and Xcode for iOS.
 
 ```bash
 npm install
