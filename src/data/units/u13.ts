@@ -853,7 +853,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Сравнение скоростей газов по закону Грэма",
         "ar": "مقارنة سرعات الغازات بقانون جراهام",
         "zh": "用格雷厄姆定律比较气体速率",
-        "ku": "Berhevdana leza gazan bi qanûna Graham"
+        "ku": "Berhevdana leza gazan bi zagona Graham"
       },
       "steps": [
         {
@@ -1075,7 +1075,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Газ He и газ X при одинаковой температуре одновременно выпускают из ватных тампонов на двух концах изображённой стеклянной трубки; газы впервые встречаются в отмеченной точке. Какова молярная масса X (г/моль)? (He = 4 г/моль)",
         "ar": "يُطلَق غاز He وغاز X، عند درجة الحرارة نفسها، في اللحظة نفسها من قطعتَي قطن عند طرفَي الأنبوب الزجاجي المبيَّن في الشكل، فيلتقي الغازان أول مرة عند النقطة المحدَّدة. ما الكتلة المولية للغاز X بوحدة g/mol؟ (He = 4 g/mol)",
         "zh": "同温下，He 和气体 X 同时从图中玻璃管两端的棉团处释放，两种气体首次在图中标出的位置相遇。X 的摩尔质量是多少 g/mol？(He = 4 g/mol)",
-        "ku": "Gaza He û gaza X, di heman germahiyê de, di heman demê de ji pembûyên her du serên lûleya camê ya di şiklê de tên berdan û gaz cara yekem li xala nîşankirî digihîjin hev. Giraniya molî ya X çend g/mol e? (He = 4 g/mol)"
+        "ku": "Gaza He û gaza X, di heman germahiyê de, di heman demê de ji pembûyên her du serên lûleya camê ya di şiklê de tên berdan û gaz cara yekem li xala nîşankirî digihîjin hev. Girseya molî ya gaza X çend g/mol e? (He = 4 g/mol)"
       },
       "options": [
         {
@@ -1138,7 +1138,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "По рисунку за одно и то же время He проходит 80 см, а X — 40 см. Пути, пройденные за одинаковое время, пропорциональны скоростям: v(He)/v(X) = 80/40 = 2. По закону Грэма v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 г/моль. Если забыть квадратный корень (MX = 4 · 2), получится 8; если перевернуть отношение, считая X более быстрым, — 1 (без корня 2); если спутать путь He с полной длиной трубки (120 см) и взять 120/40 = 3, — 36.",
         "ar": "يُقرأ من الشكل أن He يقطع 80 cm وأن X يقطع 40 cm في الزمن نفسه. المسافات المقطوعة في الزمن نفسه تتناسب مع السرعات، لذا v(He)/v(X) = 80/40 = 2. وبحسب قانون جراهام v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol. من ينسى الجذر التربيعي (MX = 4 × 2) يحصل على 8، ومن يعكس النسبة ظانًّا أن X أسرع يحصل على 1 (أو 2 دون الجذر)، ومن يخلط المسافة التي يقطعها He بالطول الكلي للأنبوب (120 cm) فيستخدم 120/40 = 3 يحصل على 36.",
         "zh": "由图可知，相同时间内 He 走过 80 cm，X 走过 40 cm。相同时间内走过的路程与速率成正比，故 v(He)/v(X) = 80/40 = 2。由格雷厄姆定律 v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol。忘记开平方 (MX = 4 × 2) 得 8；把比值颠倒、误以为 X 更快得 1（不开平方得 2）；把 He 走过的路程与管的总长 (120 cm) 混淆、用 120/40 = 3 计算得 36。",
-        "ku": "Ji şiklê tê xwendin ku di heman demê de He 80 cm, X jî 40 cm rê diçe. Rêyên di heman demê de hatine birîn bi lezan re rêjeyî ne, ji ber vê v(He)/v(X) = 80/40 = 2 ye. Li gorî qanûna Graham v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol. Kesê ku koka çargoşe ji bîr dike (MX = 4 × 2) 8; kesê ku rêjeyê berevajî dike û X bileztir dihesibîne 1 (bê kok 2); kesê ku rêya He bi dirêjahiya giştî ya lûleyê (120 cm) re tevlihev dike û 120/40 = 3 bi kar tîne 36 dibîne."
+        "ku": "Ji şiklê tê xwendin ku di heman demê de He 80 cm, X jî 40 cm rê diçe. Rêyên di heman demê de hatine birîn bi lezan re rêjeyî ne, ji ber vê v(He)/v(X) = 80/40 = 2 ye. Li gorî zagona Graham v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol. Kesê ku koka çargoşe ji bîr dike (MX = 4 × 2) 8; kesê ku rêjeyê berevajî dike û X bileztir dihesibîne 1 (bê kok 2); kesê ku rêya He bi dirêjahiya giştî ya lûleyê (120 cm) re tevlihev dike û 120/40 = 3 bi kar tîne 36 dibîne."
       },
       "figure": {
         "kind": "svg",
@@ -1382,7 +1382,7 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Ein Stoff unterhalb seiner kritischen Temperatur heißt Dampf, oberhalb davon Gas. Laut Tabelle liegt 25 °C unter den kritischen Temperaturen von X (132 °C) und Y (36 °C) und über der von Z (−119 °C); I ist richtig. Z liegt bei 25 °C oberhalb seiner kritischen Temperatur und lässt sich auch bei beliebig hohem Druck nicht verflüssigen; II ist falsch. Bei 1 atm ist der Siedepunkt von Y (−88 °C) niedriger als der von X (−33 °C), daher siedet Y bei der niedrigeren Temperatur; III ist richtig. Richtig sind I und III.",
         "fr": "Une substance en dessous de sa température critique est appelée vapeur ; au-dessus, gaz. Le tableau montre que 25 °C est en dessous des températures critiques de X (132 °C) et de Y (36 °C) et au-dessus de celle de Z (−119 °C) : I est correcte. À 25 °C, Z est au-dessus de sa température critique et ne peut pas être liquéfié, quelle que soit la pression : II est fausse. Sous 1 atm, la température d'ébullition de Y (−88 °C) est inférieure à celle de X (−33 °C), donc Y bout à la température la plus basse : III est correcte. Les affirmations correctes sont I et III.",
         "ru": "Вещество ниже своей критической температуры называют паром, выше — газом. По таблице 25 °C ниже критических температур X (132 °C) и Y (36 °C) и выше критической температуры Z (−119 °C), поэтому I верно. При 25 °C Z находится выше своей критической температуры и не сжижается ни при каком давлении, поэтому II неверно. При 1 атм температура кипения Y (−88 °C) ниже, чем у X (−33 °C), поэтому Y кипит при более низкой температуре; III верно. Верны I и III.",
-        "ar": "تُسمّى المادة بخارًا إذا كانت دون درجة حرارتها الحرجة، وغازًا إذا كانت فوقها. يبيّن الجدول أن 25 °C أدنى من درجتَي الحرارة الحرجتين لـ X (132 °C) وY (36 °C) وأعلى من درجة Z (−119 °C)، فالعبارة I صحيحة. عند 25 °C يكون Z فوق درجة حرارته الحرجة فلا يُسال مهما زاد الضغط، فالعبارة II خاطئة. عند 1 atm تكون درجة غليان Y (−88 °C) أدنى من درجة غليان X (−33 °C)، لذا يغلي Y عند درجة الحرارة الأدنى، فالعبارة III صحيحة. العبارتان الصحيحتان هما I وIII.",
+        "ar": "تُسمّى المادة بخارًا إذا كانت دون درجة حرارتها الحرجة، وغازًا إذا كانت فوقها. يبيّن الجدول أن 25 °C أدنى من درجتَي الحرارة الحرجتين لـ X (132 °C) وY (36 °C) وأعلى من درجة Z (−119 °C)، فالعبارة I صحيحة. عند 25 °C يكون Z فوق درجة حرارته الحرجة فلا يُسال مهما زاد الضغط، فالعبارة II خاطئة. عند 1 atm تكون درجة غليان Y (−88 °C) أدنى من درجة غليان X (−33 °C)، لذا يغلي Y عند درجة الحرارة الأدنى، فالعبارة III صحيحة. العبارتان الصحيحتان هما I و III.",
         "zh": "物质低于其临界温度时称为蒸气，高于临界温度时称为气体。由表可知，25 °C 低于 X (132 °C) 和 Y (36 °C) 的临界温度，高于 Z (−119 °C) 的临界温度，I 正确。25 °C 时 Z 高于其临界温度，无论压强多大都不能液化，II 错误。1 atm 下 Y 的沸点 (−88 °C) 低于 X 的沸点 (−33 °C)，所以 Y 在较低温度下沸腾，III 正确。正确的是 I 和 III。",
         "ku": "Madeyek di bin germahiya xwe ya krîtîk de buhar, li ser wê jî gaz tê binavkirin. Tablo nîşan dide ku 25 °C ji germahiyên krîtîk ên X (132 °C) û Y (36 °C) nizmtir, ji ya Z (−119 °C) jî bilindtir e; I rast e. Z di 25 °C de li ser germahiya xwe ya krîtîk e û zext çiqas zêde bibe jî nayê şilekirin; II şaş e. Di 1 atm de xala kelînê ya Y (−88 °C) ji ya X (−33 °C) nizmtir e, ji ber vê Y di germahiya nizmtir de dikele; III rast e. Gotinên rast I û III ne."
       },
@@ -1601,7 +1601,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ru": "Кусочек цинка внесли в избыток раствора HCl, и он полностью прореагировал по уравнению Zn(тв) + 2HCl(р-р) → ZnCl2(р-р) + H2(г). Образовавшийся H2 собрали над водой при 27 °C в сосуд объёмом 24,6 л; общее давление в сосуде 1,03 атм. Сколько граммов Zn вступило в реакцию? (Давление водяного пара при 27 °C 0,03 атм; R = 0,082 л·атм/(моль·K); Zn = 65 г/моль)",
         "ar": "أُضيفت قطعة من فلز Zn إلى كمية زائدة من محلول HCl فاستُهلكت كليًا وفق التفاعل Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g). جُمع غاز H2 الناتج فوق الماء عند 27 °C في وعاء حجمه 24.6 L، فكان الضغط الكلي في الوعاء 1.03 atm. كم غرامًا من Zn تفاعل؟ (ضغط بخار الماء عند 27 °C = 0.03 atm؛ R = 0.082 L·atm/(mol·K)؛ Zn = 65 g/mol)",
         "zh": "将一定量的 Zn 放入足量盐酸中，按 Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) 完全反应。生成的 H2 在 27 °C 下用排水法收集于 24.6 L 的容器中，测得容器内总压强为 1.03 atm。参加反应的 Zn 是多少克？(27 °C 时水的蒸气压为 0.03 atm；R = 0.082 L·atm/(mol·K)；Zn = 65 g/mol)",
-        "ku": "Perçeyek metala Zn tê avêtin nav çareseriyeke HCl a têra xwe û li gorî reaksiyona Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) bi tevahî tê xerckirin. Gaza H2 ya çêbûyî di 27 °C de di firaxeke 24,6 L de li ser avê tê berhevkirin û zexta giştî ya di firaxê de 1,03 atm tê pîvandin. Çend gram Zn ketiye reaksiyonê? (Zexta buhara avê di 27 °C de 0,03 atm e; R = 0,082 L·atm/(mol·K); Zn = 65 g/mol)"
+        "ku": "Perçeyek metala Zn tê avêtin nav çareseriyeke HCl ya têra xwe û li gorî reaksiyona Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) bi tevahî tê xerckirin. Gaza H2 ya çêbûyî di 27 °C de di firaxeke 24,6 L de li ser avê tê berhevkirin û zexta giştî ya di firaxê de 1,03 atm tê pîvandin. Çend gram Zn ketiye reaksiyonê? (Zexta buhara avê di 27 °C de 0,03 atm e; R = 0,082 L·atm/(mol·K); Zn = 65 g/mol)"
       },
       "options": [
         {
@@ -2061,9 +2061,9 @@ export const unit13: ChemistryUnitSeedData = {
         "de": "Welche der folgenden Beziehungen zwischen den Diffusionsgeschwindigkeiten der Gase I, II und III, deren molare Massen und absolute Temperaturen in der Tabelle stehen, ist richtig?",
         "fr": "Laquelle des relations suivantes entre les vitesses de diffusion des gaz I, II et III, dont les masses molaires et les températures absolues sont données dans le tableau, est correcte ?",
         "ru": "Какое из соотношений между скоростями диффузии газов I, II и III, молярные массы и абсолютные температуры которых даны в таблице, верно?",
-        "ar": "أيّ العلاقات الآتية بين سرعات انتشار الغازات I وII وIII، المعطاة كتلها المولية ودرجات حرارتها المطلقة في الجدول، صحيحة؟",
+        "ar": "أيّ العلاقات الآتية بين سرعات انتشار الغازات I و II و III، المعطاة كتلها المولية ودرجات حرارتها المطلقة في الجدول، صحيحة؟",
         "zh": "表中给出了气体 I、II、III 的摩尔质量和热力学温度。下列关于它们扩散速率关系的表述中，正确的是哪一项？",
-        "ku": "Têkiliya di navbera lezên difûzyonê yên gazên I, II û III de, ku giraniyên wan ên molî û germahiyên wan ên mutleq di tabloyê de hatine dayîn, di kîjan vebijarkê de rast hatiye dayîn?"
+        "ku": "Têkiliya di navbera lezên difûzyonê yên gazên I, II û III de, ku girseyên wan ên molî û germahiyên wan ên mutleq di tabloyê de hatine dayîn, di kîjan vebijarkê de rast hatiye dayîn?"
       },
       "options": [
         {
@@ -2150,7 +2150,7 @@ export const unit13: ChemistryUnitSeedData = {
             "ru": "Молярная масса (г/моль)",
             "ar": "الكتلة المولية (g/mol)",
             "zh": "摩尔质量 (g/mol)",
-            "ku": "Giraniya molî (g/mol)"
+            "ku": "Girseya molî (g/mol)"
           },
           {
             "tr": "Mutlak sıcaklık (K)",

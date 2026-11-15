@@ -618,7 +618,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "In einem Kolloid liegt die Teilchengröße etwa zwischen 1 und 1000 nm, das Gemisch ist heterogen und zeigt den Tyndall-Effekt; in einer Lösung dagegen ist die Teilchengröße kleiner als 1 nm und das Gemisch homogen.",
         "fr": "Dans un colloïde, la taille des particules est comprise environ entre 1 et 1000 nm, le mélange est hétérogène et présente l'effet Tyndall ; dans une solution, en revanche, elle est inférieure à 1 nm et le mélange est homogène.",
         "ru": "В коллоиде размер частиц примерно от 1 до 1000 нм, смесь неоднородна и проявляет эффект Тиндаля; в растворе же размер частиц меньше 1 нм, и смесь однородна.",
-        "ar": "في الغروي يتراوح حجم الجسيمات تقريبًا بين 1 و1000 nm، ويكون المخلوط غير متجانس ويُظهر ظاهرة تندال؛ أما في المحلول فحجم الجسيمات أقل من 1 nm والمخلوط متجانس.",
+        "ar": "في الغروي يتراوح حجم الجسيمات تقريبًا بين 1 و1000 nm، ويكون الخليط غير متجانس ويُظهر ظاهرة تندال؛ أما في المحلول فحجم الجسيمات أقل من 1 nm والخليط متجانس.",
         "zh": "胶体中粒子直径约在 1~1000 nm 之间，混合物是非均匀的，并有丁达尔效应；而溶液中粒子直径小于 1 nm，混合物是均匀的。",
         "ku": "Di kolloîdê de mezinahiya perçeyan nêzîkî di navbera 1 û 1000 nm de ye, tevlihevî heterojen e û bandora Tyndall nîşan dide; di çareseriyê de jî mezinahiya perçeyan ji 1 nm piçûktir e û tevlihevî homojen e."
       }
@@ -1129,7 +1129,7 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Die Tabelle zeigt einige Eigenschaften der Flüssigkeiten X, Y und Z; X und Z sind außerdem in jedem Verhältnis miteinander mischbar. Welche der folgenden Aussagen über Gemische aus diesen Flüssigkeiten sind richtig?\nI. Ein X-Wasser-Gemisch lässt sich mit einem Scheidetrichter trennen.\nII. Ein Y-Wasser-Gemisch bildet im Scheidetrichter zwei Schichten, wobei Y die obere Schicht bildet.\nIII. Bei der fraktionierten Destillation eines X-Z-Gemisches wird zuerst X aufgefangen.",
         "fr": "Le tableau donne quelques propriétés des liquides X, Y et Z ; X et Z sont en outre miscibles entre eux en toutes proportions. Lesquelles des affirmations suivantes sur des mélanges préparés avec ces liquides sont correctes ?\nI. Un mélange X–eau peut être séparé à l'ampoule à décanter.\nII. Un mélange Y–eau forme deux couches dans l'ampoule à décanter, Y se trouvant dans la couche supérieure.\nIII. Lors de la distillation fractionnée d'un mélange X–Z, X est recueilli en premier.",
         "ru": "В таблице приведены некоторые свойства жидкостей X, Y и Z; кроме того, X и Z смешиваются друг с другом в любых соотношениях. Какие из следующих утверждений о смесях этих жидкостей верны?\nI. Смесь X с водой можно разделить с помощью делительной воронки.\nII. Смесь Y с водой образует в делительной воронке два слоя, причём Y находится в верхнем слое.\nIII. При фракционной перегонке смеси X и Z первым собирают X.",
-        "ar": "يبين الجدول بعض خواص السوائل X وY وZ، كما أن X وZ يمتزجان معًا بأي نسبة. أيّ العبارات الآتية عن مخاليط محضرة من هذه السوائل صحيحة؟\nI. يمكن فصل مخلوط X والماء بقمع الفصل.\nII. يكوّن مخلوط Y والماء طبقتين في قمع الفصل، ويكون Y في الطبقة العليا.\nIII. عند فصل مخلوط X وZ بالتقطير التجزيئي يُجمع X أولًا.",
+        "ar": "يبين الجدول بعض خواص السوائل X وY وZ، كما أن X وZ يمتزجان معًا بأي نسبة. أيّ العبارات الآتية عن مخاليط محضرة من هذه السوائل صحيحة؟\nI. يمكن فصل خليط X والماء بقمع الفصل.\nII. يكوّن خليط Y والماء طبقتين في قمع الفصل، ويكون Y في الطبقة العليا.\nIII. عند فصل خليط X وZ بالتقطير التجزيئي يُجمع X أولًا.",
         "zh": "表中给出了液体 X、Y、Z 的一些性质；此外 X 与 Z 也能以任意比例互溶。下列关于用这些液体配成的混合物的说法中哪些正确？\nI. X 与水的混合物可以用分液漏斗分离。\nII. Y 与水的混合物在分液漏斗中分为两层，Y 在上层。\nIII. 用分馏法分离 X 与 Z 的混合物时，先收集到 X。",
         "ku": "Di tabloyê de hin taybetiyên şileyên X, Y û Z hatine dayîn; X û Z jî bi her rêjeyê bi hev re tevlihev dibin. Derbarê tevliheviyên ku bi van şileyan tên amadekirin de kîjan ji van gotinan rast in?\nI. Tevliheviya X–av bi hunîka veqetandinê dikare were veqetandin.\nII. Tevliheviya Y–av di hunîka veqetandinê de du qatan çêdike û Y di qata jorîn de ye.\nIII. Dema tevliheviya X–Z bi distîlasyona perçeyî tê veqetandin, pêşî X tê berhevkirin."
       },
@@ -1192,9 +1192,9 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Laut Tabelle ist X in jedem Verhältnis mit Wasser mischbar; das X-Wasser-Gemisch ist homogen, bildet keine Schichten, und ein Scheidetrichter ist ungeeignet (I falsch). Y ist mit Wasser nicht mischbar und hat eine kleinere Dichte (0,66 g/mL) als Wasser (1,00 g/mL); im Scheidetrichter bildet Y die obere Schicht (II richtig). X und Z bilden ein homogenes Gemisch mit stark unterschiedlichen Siedepunkten (56 °C und 197 °C); bei der fraktionierten Destillation verdampft das niedriger siedende X zuerst und wird zuerst aufgefangen (III richtig).",
         "fr": "D'après le tableau, X est miscible à l'eau en toutes proportions ; le mélange X–eau est homogène, ne forme pas de couches et l'ampoule à décanter est inutilisable (I fausse). Y n'est pas miscible à l'eau et sa masse volumique (0,66 g/mL) est inférieure à celle de l'eau (1,00 g/mL) : Y forme la couche supérieure (II correcte). X et Z forment un mélange homogène aux températures d'ébullition très différentes (56 °C et 197 °C) ; en distillation fractionnée, X, plus volatil, se vaporise et est recueilli en premier (III correcte).",
         "ru": "По таблице X смешивается с водой в любых соотношениях; смесь X с водой однородна, слоёв не образует, и делительная воронка непригодна (I неверно). Y с водой не смешивается и легче воды (0,66 г/мл против 1,00 г/мл), поэтому в воронке Y образует верхний слой (II верно). X и Z образуют однородную смесь с сильно различающимися температурами кипения (56 °C и 197 °C); при фракционной перегонке первым испаряется и собирается X, кипящий при более низкой температуре (III верно).",
-        "ar": "وفق الجدول يمتزج X بالماء بأي نسبة، فمخلوط X والماء متجانس لا يكوّن طبقات ولا يصلح له قمع الفصل (I خاطئة). وY لا يمتزج بالماء وكثافته (0.66 g/mL) أقل من كثافة الماء (1.00 g/mL)، فيكوّن الطبقة العليا في القمع (II صحيحة). ويكوّن X وZ مخلوطًا متجانسًا درجتا غليان مكوّنيه متباعدتان جدًا (56 °C و197 °C)؛ وفي التقطير التجزيئي يتبخر X ذو درجة الغليان الأدنى ويُجمع أولًا (III صحيحة).",
+        "ar": "وفق الجدول يمتزج X بالماء بأي نسبة، فخليط X والماء متجانس لا يكوّن طبقات ولا يصلح له قمع الفصل (I خاطئة). وY لا يمتزج بالماء وكثافته (0.66 g/mL) أقل من كثافة الماء (1.00 g/mL)، فيكوّن الطبقة العليا في القمع (II صحيحة). ويكوّن X وZ خليطًا متجانسًا درجتا غليان مكوّنيه متباعدتان جدًا (56 °C و197 °C)؛ وفي التقطير التجزيئي يتبخر X ذو درجة الغليان الأدنى ويُجمع أولًا (III صحيحة).",
         "zh": "由表可知，X 与水以任意比例互溶，X–水混合物是均匀的，不分层，不能用分液漏斗分离（I 错误）。Y 与水不互溶，且密度(0.66 g/mL)小于水(1.00 g/mL)，在分液漏斗中 Y 在上层（II 正确）。X 与 Z 形成均匀混合物，沸点相差很大(56 °C 和 197 °C)；分馏时沸点较低的 X 先汽化并先被收集（III 正确）。",
-        "ku": "Li gorî tabloyê X bi her rêjeyê bi avê re tevlihev dibe; tevliheviya X–av homojen e, qatan çênake û hunîka veqetandinê nayê bikaranîn (I xelet e). Y bi avê re tevlihev nabe û çirbûna wê (0,66 g/mL) ji ya avê (1,00 g/mL) kêmtir e; di hunîkê de qata jorîn Y ye (II rast e). X û Z tevliheviyeke homojen çêdikin û xalên kelînê yên wan gelek cuda ne (56 °C û 197 °C); di distîlasyona perçeyî de X ya ku xala kelînê ya wê nizimtir e pêşî dibe hilm û tê berhevkirin (III rast e)."
+        "ku": "Li gorî tabloyê X bi her rêjeyê bi avê re tevlihev dibe; tevliheviya X–av homojen e, qatan çênake û hunîka veqetandinê nayê bikaranîn (I xelet e). Y bi avê re tevlihev nabe û çiriya wê (0,66 g/mL) ji ya avê (1,00 g/mL) kêmtir e; di hunîkê de qata jorîn Y ye (II rast e). X û Z tevliheviyeke homojen çêdikin û xalên kelînê yên wan gelek cuda ne (56 °C û 197 °C); di distîlasyona perçeyî de X ya ku xala kelînê ya wê nizimtir e pêşî dibe buhar û tê berhevkirin (III rast e)."
       },
       "figure": {
         "kind": "table",
@@ -1227,7 +1227,7 @@ export const unit08: ChemistryUnitSeedData = {
             "ru": "Плотность (г/мл)",
             "ar": "الكثافة (g/mL)",
             "zh": "密度 (g/mL)",
-            "ku": "Çirbûn (g/mL)"
+            "ku": "Çirî (g/mL)"
           },
           {
             "tr": "Suyla karışma",
@@ -1880,7 +1880,7 @@ export const unit08: ChemistryUnitSeedData = {
             "de": "Gemisch",
             "fr": "Mélange",
             "ru": "Смесь",
-            "ar": "المخلوط",
+            "ar": "الخليط",
             "zh": "混合物",
             "ku": "Tevlihevî"
           },
@@ -2104,7 +2104,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "На графике показана зависимость растворимости KNO3 и NaCl в воде от температуры. Раствор 90 г KNO3 и 20 г NaCl в 100 г воды при 60 °C охлаждают до 20 °C без потери воды (считается, что соли не влияют на растворимость друг друга). Какие из следующих утверждений верны?\nI. Выкристаллизовывается 60 г KNO3.\nII. NaCl не выпадает в осадок и остаётся в растворе.\nIII. При 60 °C раствор насыщен по KNO3.",
         "ar": "يبين الرسم البياني تغيّر ذائبية KNO3 وNaCl في الماء مع درجة الحرارة. يُبرَّد محلول يحتوي 90 g من KNO3 و20 g من NaCl مذابة في 100 g من الماء عند 60 °C إلى 20 °C دون فقدان ماء (بافتراض أن الملحين لا يؤثر أحدهما في ذائبية الآخر). أيّ العبارات الآتية صحيحة؟\nI. يتبلور 60 g من KNO3.\nII. لا يترسب NaCl بل يبقى في المحلول.\nIII. المحلول عند 60 °C مشبع بـ KNO3.",
         "zh": "图中给出了 KNO3 和 NaCl 在水中的溶解度随温度的变化。60 °C 时将 90 g KNO3 和 20 g NaCl 溶于 100 g 水中，在不损失水的情况下冷却到 20 °C（假设两种盐互不影响溶解度）。下列说法中哪些正确？\nI. 析出 60 g KNO3 晶体。\nII. NaCl 不析出，仍留在溶液中。\nIII. 60 °C 时该溶液对 KNO3 是饱和的。",
-        "ku": "Grafîk nîşan dide ka helbûnên KNO3 û NaCl di avê de bi germahiyê re çawa diguherin. Çareseriyek ku tê de di 60 °C de 90 g KNO3 û 20 g NaCl di 100 g avê de helandî ne, bêyî windabûna avê heta 20 °C tê sarkirin (tê texmînkirin ku xwê bandorê li helbûna hev nakin). Derbarê vê pêvajoyê de kîjan ji van gotinan rast in?\nI. 60 g KNO3 krîstal dibe.\nII. NaCl nanişe, di çareseriyê de dimîne.\nIII. Di 60 °C de çareserî ji aliyê KNO3 ve têr e."
+        "ku": "Grafîk nîşan dide ka helbûniyên KNO3 û NaCl di avê de bi germahiyê re çawa diguherin. Çareseriyek ku tê de di 60 °C de 90 g KNO3 û 20 g NaCl di 100 g avê de helandî ne, bêyî windabûna avê heta 20 °C tê sarkirin (tê texmînkirin ku xwê bandorê li helbûniya hev nakin). Derbarê vê pêvajoyê de kîjan ji van gotinan rast in?\nI. 60 g KNO3 krîstal dibe.\nII. NaCl nanişe, di çareseriyê de dimîne.\nIII. Di 60 °C de çareserî ji aliyê KNO3 ve têr e."
       },
       "options": [
         {
@@ -2167,7 +2167,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "По графику растворимость KNO3 на 100 г воды при 60 °C равна 110 г, при 20 °C — 30 г. При 60 °C 90 г < 110 г, поэтому раствор не насыщен по KNO3 (III неверно). При 20 °C в растворе может остаться не более 30 г KNO3, значит выкристаллизовывается 90 − 30 = 60 г (I верно). Растворимость NaCl почти не зависит от температуры и при 20 °C составляет около 36 г; 20 г NaCl остаются в растворе (II верно). Так KNO3 отделяют от NaCl дробной кристаллизацией, используя различие в растворимости.",
         "ar": "من الرسم تبلغ ذائبية KNO3 في 100 g من الماء 110 g عند 60 °C و30 g عند 20 °C. عند 60 °C يكون 90 g < 110 g، فالمحلول غير مشبع بـ KNO3 (III خاطئة). وعند 20 °C لا يبقى ذائبًا أكثر من 30 g من KNO3، فيتبلور 90 − 30 = 60 g (I صحيحة). أما ذائبية NaCl فتتغير قليلًا جدًا مع الحرارة وتبلغ نحو 36 g عند 20 °C، فيبقى 20 g من NaCl ذائبًا (II صحيحة). وهكذا يُفصل KNO3 عن NaCl بالتبلور التجزيئي اعتمادًا على اختلاف الذائبية.",
         "zh": "由图可知，每 100 g 水中 KNO3 的溶解度在 60 °C 时为 110 g，在 20 °C 时为 30 g。60 °C 时 90 g < 110 g，溶液对 KNO3 不饱和（III 错误）。20 °C 时最多只能溶解 30 g KNO3，所以析出 90 − 30 = 60 g KNO3（I 正确）。NaCl 的溶解度随温度变化很小，20 °C 时约为 36 g，20 g NaCl 仍溶解在溶液中（II 正确）。这样就利用溶解度的差异，用分步结晶法把 KNO3 与 NaCl 分开。",
-        "ku": "Ji grafîkê, helbûna KNO3 di 100 g avê de di 60 °C de 110 g, di 20 °C de 30 g ye. Di 60 °C de 90 g < 110 g ye, loma çareserî ji aliyê KNO3 ve ne têr e (III xelet e). Di 20 °C de herî zêde 30 g KNO3 dikare helandî bimîne, loma 90 − 30 = 60 g KNO3 krîstal dibe (I rast e). Helbûna NaCl bi germahiyê re pir hindik diguhere û di 20 °C de nêzîkî 36 g ye; 20 g NaCl helandî dimîne (II rast e). Bi vî awayî KNO3 bi krîstalbûna perçeyî, bi alîkariya cudahiya helbûnê, ji NaCl tê veqetandin."
+        "ku": "Ji grafîkê, helbûniya KNO3 di 100 g avê de di 60 °C de 110 g, di 20 °C de 30 g ye. Di 60 °C de 90 g < 110 g ye, loma çareserî ji aliyê KNO3 ve ne têr e (III xelet e). Di 20 °C de herî zêde 30 g KNO3 dikare helandî bimîne, loma 90 − 30 = 60 g KNO3 krîstal dibe (I rast e). Helbûniya NaCl bi germahiyê re pir hindik diguhere û di 20 °C de nêzîkî 36 g ye; 20 g NaCl helandî dimîne (II rast e). Bi vî awayî KNO3 bi krîstalbûna perçeyî, bi alîkariya cudahiya helbûniyê, ji NaCl tê veqetandin."
       },
       "figure": {
         "kind": "graph",
@@ -2189,7 +2189,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Растворимость (г / 100 г воды)",
           "ar": "الذائبية (g / 100 g ماء)",
           "zh": "溶解度 (g / 100 g 水)",
-          "ku": "Helbûn (g / 100 g av)"
+          "ku": "Helbûnî (g / 100 g av)"
         },
         "xMax": 80,
         "yMax": 180,
@@ -2362,7 +2362,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Чистую воду и солёную воду нагревают по отдельности при одинаковом внешнем давлении; полученные графики зависимости температуры от времени обозначены K и L. Какие из следующих утверждений верны?\nI. Кривая K относится к чистой воде.\nII. В L температура между t1 и t2 растёт, потому что по мере испарения воды раствор становится концентрированнее.\nIII. В L масса растворённой соли между t1 и t2 уменьшается.",
         "ar": "يُسخَّن الماء النقي والماء المالح كلٌّ على حدة تحت الضغط الخارجي نفسه، ورُمز لمنحنيي درجة الحرارة–الزمن الناتجين بـ K وL. أيّ العبارات الآتية صحيحة؟\nI. المنحنى K يعود إلى الماء النقي.\nII. في L ترتفع درجة الحرارة بين t1 وt2 لأن المحلول يزداد تركيزًا كلما تبخر الماء.\nIII. في L تقل كتلة الملح الذائب بين t1 وt2.",
         "zh": "在相同外压下分别加热纯水和盐水，得到的温度–时间曲线分别标为 K 和 L。下列关于这两条曲线的说法中哪些正确？\nI. 曲线 K 属于纯水。\nII. L 在 t1–t2 之间温度升高，是因为水不断蒸发，溶液变浓。\nIII. L 在 t1–t2 之间溶解的盐的质量减少。",
-        "ku": "Di heman zexta derve de ava paqij û ava şor cuda cuda tên germkirin; grafîkên germahî–demê yên ku tên bidestxistin bi K û L hatine nîşankirin. Derbarê grafîkan de kîjan ji van gotinan rast in?\nI. Xêza K ya ava paqij e.\nII. Di L de di navbera t1–t2 de zêdebûna germahiyê ji ber ku her ku av dibe hilm çareserî tîrtir dibe.\nIII. Di L de di navbera t1–t2 de girseya xwêya helandî kêm dibe."
+        "ku": "Di heman zexta derve de ava paqij û ava şor cuda cuda tên germkirin; grafîkên germahî–demê yên ku tên bidestxistin bi K û L hatine nîşankirin. Derbarê grafîkan de kîjan ji van gotinan rast in?\nI. Xêza K ya ava paqij e.\nII. Di L de di navbera t1–t2 de germahî zêde dibe, ji ber ku her ku av dibe buhar çareserî tîrtir dibe.\nIII. Di L de di navbera t1–t2 de girseya xwêya helandî kêm dibe."
       },
       "options": [
         {
@@ -2425,7 +2425,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "После начала кипения K остаётся при 100 °C; постоянная температура при кипении характерна для чистого вещества, значит K — чистая вода (I верно). L начинает кипеть выше 100 °C, и между t1 и t2 её температура растёт: по мере испарения воды концентрация нелетучей соли увеличивается и температура кипения повышается (II верно). Соль нелетуча, поэтому масса растворённой соли между t1 и t2 не меняется — уменьшается только вода. В момент t2 раствор становится насыщенным; далее соль выпадает в осадок, а концентрация и температура остаются постоянными (III неверно).",
         "ar": "بعد بدء الغليان يبقى K ثابتًا عند 100 °C، وثبات درجة الحرارة أثناء الغليان صفة المادة النقية، فـ K هو الماء النقي (I صحيحة). يبدأ L بالغليان فوق 100 °C وترتفع درجة حرارته بين t1 وt2: كلما تبخر الماء ازداد تركيز الملح غير المتطاير وارتفعت درجة الغليان (II صحيحة). وبما أن الملح غير متطاير فإن كتلة الملح الذائب لا تتغير بين t1 وt2، بل يقل الماء فقط. وعند t2 يصبح المحلول مشبعًا، وبعدها يترسب الملح بينما يبقى التركيز ودرجة الحرارة ثابتين (III خاطئة).",
         "zh": "开始沸腾后，K 保持在 100 °C 不变；沸腾时温度恒定是纯净物的特征，所以 K 是纯水（I 正确）。L 在高于 100 °C 时开始沸腾，在 t1–t2 之间温度升高：水不断蒸发，不挥发的盐浓度增大，沸腾温度升高（II 正确）。盐不挥发，所以 t1–t2 之间溶解的盐的质量不变，减少的只是水。t2 时溶液达到饱和，此后盐析出，而浓度和温度保持不变（III 错误）。",
-        "ku": "Piştî ku kelîn dest pê dike, K li 100 °C sabit dimîne; sabitbûna germahiyê di dema kelînê de taybetiya madeya paqij e, loma K ava paqij e (I rast e). L li jor 100 °C dest bi kelînê dike û di navbera t1–t2 de germahiya wê zêde dibe: her ku av dibe hilm, tîrbûna xwêya nefirî zêde dibe û germahiya kelînê bilind dibe (II rast e). Ji ber ku xwê nafire, di navbera t1–t2 de girseya xwêya helandî naguhere; tenê av kêm dibe. Di t2 de çareserî têr dibe; piştî wê xwê dinişe û tîrbûn û germahî sabit dimînin (III xelet e)."
+        "ku": "Piştî ku kelîn dest pê dike, K li 100 °C sabit dimîne; sabitbûna germahiyê di dema kelînê de taybetiya madeya paqij e, loma K ava paqij e (I rast e). L li jor 100 °C dest bi kelînê dike û di navbera t1–t2 de germahiya wê zêde dibe: her ku av dibe buhar, tîrbûna xwêya nefirî zêde dibe û germahiya kelînê bilind dibe (II rast e). Ji ber ku xwê nafire, di navbera t1–t2 de girseya xwêya helandî naguhere; tenê av kêm dibe. Di t2 de çareserî têr dibe; piştî wê xwê dinişe û tîrbûn û germahî sabit dimînin (III xelet e)."
       },
       "figure": {
         "kind": "graph",

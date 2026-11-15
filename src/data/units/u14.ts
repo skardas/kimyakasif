@@ -841,7 +841,7 @@ export const unit14: ChemistryUnitSeedData = {
         "de": "Berechnung einer Ionenkonzentration in einer Mischung",
         "fr": "Calcul de la concentration d'un ion dans un mélange",
         "ru": "Расчёт концентрации иона в смеси",
-        "ar": "حساب تركيز أيون في محلول مخلوط",
+        "ar": "حساب تركيز أيون في خليط",
         "zh": "混合溶液中离子浓度的计算",
         "ku": "Hesabkirina tîrbûna îyonekê di tevliheviyê de"
       },
@@ -1217,7 +1217,7 @@ export const unit14: ChemistryUnitSeedData = {
         "ru": "В таблице приведены массы растворённого вещества и объёмы трёх растворов, приготовленных на чистой воде. В каком варианте растворы расположены в порядке убывания молярной концентрации? (NaOH = 40 г/моль, KOH = 56 г/моль)",
         "ar": "يبيّن الجدول كتلة المذاب وحجم المحلول لثلاثة محاليل حُضِّرت بالماء النقي. ما ترتيب التراكيز المولارية لهذه المحاليل من الأكبر إلى الأصغر؟ (NaOH = 40 g/mol، KOH = 56 g/mol)",
         "zh": "表中给出了用纯水配制的三种溶液中溶质的质量和溶液的体积。这些溶液的物质的量浓度由大到小的顺序是哪一项？(NaOH = 40 g/mol，KOH = 56 g/mol)",
-        "ku": "Di tabloyê de giraniya madeya helandî û qebareya çareseriyê ya sê çareseriyên bi ava paqij hatine amadekirin hatine dayîn. Rêzkirina tîrbûnên molar ên van çareseriyan ji mezin ber bi piçûk kîjan e? (NaOH = 40 g/mol, KOH = 56 g/mol)"
+        "ku": "Di tabloyê de girseya madeya helbûyî û qebareya çareseriyê ya sê çareseriyên bi ava paqij hatine amadekirin hatine dayîn. Rêzkirina tîrbûnên molar ên van çareseriyan ji mezin ber bi piçûk kîjan e? (NaOH = 40 g/mol, KOH = 56 g/mol)"
       },
       "options": [
         {
@@ -1280,7 +1280,7 @@ export const unit14: ChemistryUnitSeedData = {
         "ru": "Молярная концентрация = n / V(л). I: n = 8/40 = 0,2 моль, V = 0,25 л → 0,8 M. II: n = 11,2/56 = 0,2 моль, V = 0,5 л → 0,4 M. III: n = 4/40 = 0,1 моль, V = 0,2 л → 0,5 M. Порядок: I > III > II. Если смотреть только на массы, получится II > I > III; только на количества вещества — I = II > III; если сравнивать значения в г/л (32; 22,4; 20 г/л) вместо молей — I > II > III.",
         "ar": "المولارية = n / V(L). I: n = 8/40 = 0.2 mol وV = 0.25 L → 0.8 M. II: n = 11.2/56 = 0.2 mol وV = 0.5 L → 0.4 M. III: n = 4/40 = 0.1 mol وV = 0.2 L → 0.5 M. الترتيب هو I > III > II. من ينظر إلى كتل المذاب وحدها يحصل على II > I > III، ومن ينظر إلى عدد المولات وحده يحصل على I = II > III، ومن يقارن قيم g/L (32 و22.4 و20 g/L) بدل المولات يحصل على I > II > III.",
         "zh": "物质的量浓度 = n / V(L)。I：n = 8/40 = 0.2 mol，V = 0.25 L → 0.8 M。II：n = 11.2/56 = 0.2 mol，V = 0.5 L → 0.4 M。III：n = 4/40 = 0.1 mol，V = 0.2 L → 0.5 M。顺序为 I > III > II。只看溶质质量会得到 II > I > III；只看物质的量会得到 I = II > III；用 g/L 数值 (32、22.4、20 g/L) 代替物质的量比较会得到 I > II > III。",
-        "ku": "Molarîte = n / V(L). I: n = 8/40 = 0,2 mol, V = 0,25 L → 0,8 M. II: n = 11,2/56 = 0,2 mol, V = 0,5 L → 0,4 M. III: n = 4/40 = 0,1 mol, V = 0,2 L → 0,5 M. Rêzkirin I > III > II ye. Kesê ku tenê li giraniyên madeya helandî dinêre II > I > III, kesê ku tenê li hejmara molan dinêre I = II > III, kesê ku li şûna molan nirxên g/L (32; 22,4; 20 g/L) berhev dike jî I > II > III dibîne."
+        "ku": "Molarîte = n / V(L). I: n = 8/40 = 0,2 mol, V = 0,25 L → 0,8 M. II: n = 11,2/56 = 0,2 mol, V = 0,5 L → 0,4 M. III: n = 4/40 = 0,1 mol, V = 0,2 L → 0,5 M. Rêzkirin I > III > II ye. Kesê ku tenê li girseyên madeya helbûyî dinêre II > I > III, kesê ku tenê li hejmara molan dinêre I = II > III, kesê ku li şûna molan nirxên g/L (32; 22,4; 20 g/L) berhev dike jî I > II > III dibîne."
       },
       "figure": {
         "kind": "table",
@@ -1303,7 +1303,7 @@ export const unit14: ChemistryUnitSeedData = {
             "ru": "Растворённое вещество",
             "ar": "المذاب",
             "zh": "溶质",
-            "ku": "Madeya helandî"
+            "ku": "Madeya helbûyî"
           },
           {
             "tr": "Çözünen kütlesi (g)",
@@ -1313,7 +1313,7 @@ export const unit14: ChemistryUnitSeedData = {
             "ru": "Масса растворённого вещества (г)",
             "ar": "كتلة المذاب (g)",
             "zh": "溶质质量 (g)",
-            "ku": "Giraniya madeya helandî (g)"
+            "ku": "Girseya madeya helbûyî (g)"
           },
           {
             "tr": "Çözelti hacmi (mL)",
@@ -1734,7 +1734,7 @@ export const unit14: ChemistryUnitSeedData = {
         "ru": "На графике в точке K (добавлено 0 мл воды) концентрация 0,6 M, в точке L (добавлено 200 мл воды) — 0,3 M. Пусть начальный объём V; количество растворённого вещества не меняется, поэтому 0,6 · V = 0,3 · (V + 200) → V = 200 мл. n(HNO3) = 0,6 · 0,2 = 0,12 моль. Для концентрации 0,1 M общий объём должен быть 0,12 / 0,1 = 1,2 л = 1200 мл. В точке L объём 200 + 200 = 400 мл, значит, нужно добавить ещё 1200 − 400 = 800 мл воды. 1000 мл — это вся вода, которую нужно добавить с самого начала, а 1200 мл — конечный объём раствора.",
         "ar": "في الرسم يكون التركيز 0.6 M عند النقطة K (لم يُضَف ماء) و0.3 M عند النقطة L (أُضيف 200 mL من الماء). ليكن الحجم الابتدائي V؛ ولأن عدد مولات المذاب لا يتغيّر فإن 0.6 · V = 0.3 · (V + 200) → V = 200 mL. n(HNO3) = 0.6 · 0.2 = 0.12 mol. ليصبح التركيز 0.1 M يجب أن يكون الحجم الكلي 0.12 / 0.1 = 1.2 L = 1200 mL. الحجم عند النقطة L هو 200 + 200 = 400 mL، لذا يجب إضافة 1200 − 400 = 800 mL أخرى من الماء. أما 1000 mL فهي كمية الماء الكلية اللازمة منذ البداية، و1200 mL هو الحجم النهائي للمحلول.",
         "zh": "由图可知，K 点（加水 0 mL）浓度为 0.6 M，L 点（已加水 200 mL）浓度为 0.3 M。设初始体积为 V，溶质的物质的量不变：0.6 · V = 0.3 · (V + 200) → V = 200 mL。n(HNO3) = 0.6 · 0.2 = 0.12 mol。浓度为 0.1 M 时总体积应为 0.12 / 0.1 = 1.2 L = 1200 mL。L 点时体积为 200 + 200 = 400 mL，所以还需加水 1200 − 400 = 800 mL。1000 mL 是从开始算起需加入的总水量，1200 mL 是最终溶液的体积。",
-        "ku": "Di grafîkê de tîrbûn li xala K (0 mL av hatiye zêdekirin) 0,6 M, li xala L (200 mL av hatiye zêdekirin) 0,3 M e. Bila qebareya destpêkê V be; ji ber ku hejmara molên madeya helandî naguhere, 0,6 · V = 0,3 · (V + 200) → V = 200 mL. n(HNO3) = 0,6 · 0,2 = 0,12 mol. Ji bo tîrbûna 0,1 M divê qebareya giştî 0,12 / 0,1 = 1,2 L = 1200 mL be. Li xala L qebare 200 + 200 = 400 mL e, ji ber vê divê 1200 − 400 = 800 mL ava din lê were zêdekirin. 1000 mL ava giştî ya ji destpêkê ve pêwîst e, 1200 mL jî qebareya dawî ya çareseriyê ye."
+        "ku": "Di grafîkê de tîrbûn li xala K (0 mL av hatiye zêdekirin) 0,6 M, li xala L (200 mL av hatiye zêdekirin) 0,3 M e. Bila qebareya destpêkê V be; ji ber ku hejmara molên madeya helbûyî naguhere, 0,6 · V = 0,3 · (V + 200) → V = 200 mL. n(HNO3) = 0,6 · 0,2 = 0,12 mol. Ji bo tîrbûna 0,1 M divê qebareya giştî 0,12 / 0,1 = 1,2 L = 1200 mL be. Li xala L qebare 200 + 200 = 400 mL e, ji ber vê divê 1200 − 400 = 800 mL ava din lê were zêdekirin. 1000 mL ava giştî ya ji destpêkê ve pêwîst e, 1200 mL jî qebareya dawî ya çareseriyê ye."
       },
       "figure": {
         "kind": "graph",
@@ -2542,7 +2542,7 @@ export const unit14: ChemistryUnitSeedData = {
             "ru": "Растворённое вещество",
             "ar": "المذاب",
             "zh": "溶质",
-            "ku": "Madeya helandî"
+            "ku": "Madeya helbûyî"
           },
           {
             "tr": "Çözünürlük (g/100 g su)",
@@ -2552,7 +2552,7 @@ export const unit14: ChemistryUnitSeedData = {
             "ru": "Растворимость (г/100 г воды)",
             "ar": "الذائبية (g/100 g ماء)",
             "zh": "溶解度 (g/100 g 水)",
-            "ku": "Helbûn (g/100 g av)"
+            "ku": "Helbûnî (g/100 g av)"
           },
           {
             "tr": "Eklenen kütle (g)",
@@ -2562,7 +2562,7 @@ export const unit14: ChemistryUnitSeedData = {
             "ru": "Добавленная масса (г)",
             "ar": "الكتلة المضافة (g)",
             "zh": "加入的质量 (g)",
-            "ku": "Giraniya lêzêdekirî (g)"
+            "ku": "Girseya lêzêdekirî (g)"
           }
         ],
         "rows": [

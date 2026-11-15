@@ -8,10 +8,11 @@ import {
   extractEntityCandidates,
 } from '../src/engine/questionGenerator';
 import { compileAllFlashcards } from '../src/engine/flashcardGenerator';
-import { getUnitDiagramSpecs } from '../src/engine/diagramQuestionEnricher';
+import { getUnitDiagramSpecs, explainDiagramPlacement, MAX_DIAGRAMS_PER_VARIANT_PER_SET } from '../src/engine/diagramQuestionEnricher';
 import {
   getMockExamCatalog,
   buildMockExamQuestions,
+  buildTgProvaQuestions,
   ALL_MOCK_EXAM_SPECS,
 } from '../src/engine/mockExamCatalog';
 import { LANGUAGES } from '../src/i18n/translations';
@@ -41,6 +42,17 @@ const ALL_11_DIAGRAM_ARCHETYPES: DiagramArchetypeId[] = [
 ];
 
 const FOREIGN_LANGUAGES: LanguageCode[] = ['en', 'de', 'fr', 'ru', 'ar', 'zh', 'ku'];
+
+/**
+ * Generic unit diagrams are attached only to on-topic questions (no forced fill), so counts vary
+ * per unit. Floors are the measured minimum (scripts/auditDiagramPlacement.ts) minus a margin.
+ * u18 V2 (reaction quotient Qc vs Kc) has no Turkish question that is about it without the figure
+ * giving the answer away, so it is allowed to stay empty.
+ */
+const MIN_DIAGRAMS_PER_VARIANT = 1;
+const SPARSE_DIAGRAM_VARIANTS: Record<string, number> = { 'u18:2': 0 };
+const MIN_DIAGRAMS_PER_UNIT = 6;
+const MAX_DIAGRAMS_PER_UNIT = 32;
 
 console.log('================================================================================');
 console.log('🔬 Kimya YKS — Comprehensive Question Bank, 9-Slide Deep Study Decks,');
@@ -195,6 +207,7 @@ console.log(`[Stage 4/6] Compiling and Validating 24,576 Question Instances (8 L
 let grandTotalQuestions = 0;
 let grandTotalDiagrammedQuestions = 0;
 const trQuestionsMap = new Map<string, CompiledQuestion>();
+const trDiagramIdsByUnit = new Map<string, string>();
 
 for (const langMeta of LANGUAGES) {
   const lang = langMeta.code as LanguageCode;
@@ -229,6 +242,7 @@ for (const langMeta of LANGUAGES) {
     let unitDiagCount = 0;
     let unitVariant1Count = 0;
     let unitVariant2Count = 0;
+    const perSetVariant = new Map<string, number>();
 
     for (const q of uQs) {
       // 1. Stem integrity
@@ -320,7 +334,11 @@ for (const langMeta of LANGUAGES) {
           langVariant2Count++;
         }
         encounteredArchetypes.add(q.diagram.archetype);
+        const setKey = `${Math.floor((q.questionNumberInUnit - 1) / 16)}:${q.diagram.variant}`;
+        perSetVariant.set(setKey, (perSetVariant.get(setKey) ?? 0) + 1);
 
+        assert(q.figure === undefined, `[${lang}] ${q.id} carries both a unit diagram and its own figure`);
+        assert(q.archetype !== 'osym-twin', `[${lang}] ÖSYM twin ${q.id} carries a generic unit diagram`);
         assert(!!q.diagram.archetype, `[${lang}] Missing diagram archetype in ${q.id}`);
         assert(!!q.diagram.title && !q.diagram.title.includes('undefined'), `[${lang}] Incomplete diagram title in ${q.id}`);
         assert(!!q.diagram.caption && !q.diagram.caption.includes('undefined'), `[${lang}] Incomplete diagram caption in ${q.id}`);
@@ -336,19 +354,44 @@ for (const langMeta of LANGUAGES) {
       );
     }
 
-    // Strict diagram variant count check: exactly 16 variant 1 and 16 variant 2 per unit
+    // Diagram counts: only on-topic questions get a figure, at most 2 per variant per 16-question set.
+    for (const [variant, count] of [[1, unitVariant1Count], [2, unitVariant2Count]] as const) {
+      const floor = SPARSE_DIAGRAM_VARIANTS[`${u.id}:${variant}`] ?? MIN_DIAGRAMS_PER_VARIANT;
+      assert(count <= 16, `[${lang}] Unit ${u.id} has ${count} variant ${variant} diagrams (max 16)`);
+      assert(count >= floor, `[${lang}] Unit ${u.id} has ${count} variant ${variant} diagrams (floor ${floor})`);
+    }
+    for (const [setKey, count] of perSetVariant) {
+      assert(
+        count <= MAX_DIAGRAMS_PER_VARIANT_PER_SET,
+        `[${lang}] Unit ${u.id} set/variant ${setKey} has ${count} diagrams (max ${MAX_DIAGRAMS_PER_VARIANT_PER_SET})`
+      );
+    }
     assert(
-      unitVariant1Count === 16,
-      `[${lang}] Unit ${u.id} has ${unitVariant1Count} variant 1 diagrams (expected exactly 16)`
+      unitDiagCount >= MIN_DIAGRAMS_PER_UNIT && unitDiagCount <= MAX_DIAGRAMS_PER_UNIT,
+      `[${lang}] Unit ${u.id} has ${unitDiagCount} diagram questions (expected ${MIN_DIAGRAMS_PER_UNIT}-${MAX_DIAGRAMS_PER_UNIT})`
     );
-    assert(
-      unitVariant2Count === 16,
-      `[${lang}] Unit ${u.id} has ${unitVariant2Count} variant 2 diagrams (expected exactly 16)`
-    );
-    assert(
-      unitDiagCount === 32,
-      `[${lang}] Unit ${u.id} has ${unitDiagCount} diagram questions (expected exactly 32)`
-    );
+
+    // Same question ids carry the same figure in every language (placement is decided on Turkish).
+    const diagramIds = uQs.filter((q) => q.diagram).map((q) => `${q.id}:${q.diagram!.variant}`).join(',');
+    if (lang === 'tr') {
+      trDiagramIdsByUnit.set(u.id, diagramIds);
+      // Every Turkish attachment is on-topic (tier >= 2), not vetoed and does not give the answer away.
+      const rows = explainDiagramPlacement(u, uQs);
+      const rowOf = new Map(rows.map((r) => [`${r.id}:${r.variant}`, r]));
+      for (const q of uQs) {
+        if (!q.diagram) continue;
+        const r = rowOf.get(`${q.id}:${q.diagram.variant}`);
+        assert(!!r, `[tr] ${q.id} carries a diagram but is not a placement candidate`);
+        assert(r.topicTier >= 2, `[tr] ${q.id} V${r.variant} diagram is off-topic (tier ${r.topicTier}): ${r.stem}`);
+        assert(!r.offTopic, `[tr] ${q.id} V${r.variant} diagram is vetoed as off-topic: ${r.stem}`);
+        assert(r.safe, `[tr] ${q.id} V${r.variant} diagram gives the answer away: ${r.stem}`);
+      }
+    } else {
+      assert(
+        diagramIds === trDiagramIdsByUnit.get(u.id),
+        `[${lang}] Unit ${u.id} diagram placement differs from the Turkish bank`
+      );
+    }
   }
 
   // Strict diagram archetype check: ALL 11 scientific archetypes must exist in compiled questions
@@ -364,7 +407,7 @@ for (const langMeta of LANGUAGES) {
   );
 
   console.log(
-    `  ✅ [${lang.toUpperCase()} - ${langMeta.nativeName}] 3,072 Qs verified (32 diagrams/unit: 16 V1 + 16 V2, all 11 archetypes present) | Keys A-E strictly balanced across all 24 units`
+    `  ✅ [${lang.toUpperCase()} - ${langMeta.nativeName}] 3,072 Qs verified (${langDiagramCount} on-topic diagrams: ${langVariant1Count} V1 + ${langVariant2Count} V2, all 11 archetypes present) | Keys A-E strictly balanced across all 24 units`
   );
 }
 
@@ -410,12 +453,27 @@ for (const langMeta of LANGUAGES) {
         );
       }
 
+      if (spec.visualFocus) {
+        assert(
+          q.diagram !== undefined || q.figure !== undefined,
+          `[${lang}] Visual-focus trial ${spec.id} has a question without diagram or figure: ${q.id}`
+        );
+      }
+
       if (isTyt) {
         assert(q.exam === 'TYT', `[${lang}] Non-TYT question in TYT trial ${spec.id}: ${q.id}`);
       } else {
         assert(q.exam === 'AYT', `[${lang}] Non-AYT question in AYT trial ${spec.id}: ${q.id}`);
       }
     }
+  }
+
+  // TG Derece Provası is a visual-focus exam too: every question carries a diagram or a figure.
+  for (const q of buildTgProvaQuestions(ALL_CHEMISTRY_UNITS, lang)) {
+    assert(
+      q.diagram !== undefined || q.figure !== undefined,
+      `[${lang}] TG Derece Provası question without diagram or figure: ${q.id}`
+    );
   }
 
   console.log(`  ✅ [${lang.toUpperCase()}] Verified ALL 80 Mock Exams (40 TYT 7-Q + 40 AYT 13-Q) with zero placeholder options`);
@@ -1032,7 +1090,7 @@ console.log(`  - Total Visual Deep Study Decks: ${Object.keys(ALL_UNIT_DEEP_STUD
 console.log(`  - Total Questions per Language: 3,072 questions (128 per unit)`);
 console.log(`  - Grand Total Compiled Question Instances: ${grandTotalQuestions.toLocaleString()} across 8 languages`);
 console.log(`  - Grand Total Diagrammed Question Instances: ${grandTotalDiagrammedQuestions.toLocaleString()}`);
-console.log(`  - Diagram Variant Distribution: Exactly 16 V1 and 16 V2 per unit (384 each per language)`);
+console.log(`  - Diagram Placement: ${trDiagramIdsByUnit.size} units, ${[...trDiagramIdsByUnit.values()].reduce((n, ids) => n + (ids ? ids.split(',').length : 0), 0)} on-topic diagrammed questions per language (≤ 2 per variant per set, identical ids in all 8 languages)`);
 console.log(`  - Diagram Archetypes: All 11 scientific archetypes present on student question cards`);
 console.log(`  - Answer Key Balance: A, B, C, D, E each strictly between 22 and 30 per 128 questions`);
 console.log(`  - Total Mock Trials Catalog: 80 Distinct Exams (40 TYT @ 7 Qs + 40 AYT @ 13 Qs)`);

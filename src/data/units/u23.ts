@@ -70,7 +70,7 @@ export const unit23: ChemistryUnitSeedData = {
         "ru": "В возбуждённом состоянии атом углерода имеет 4 наполовину заполненные орбитали и за счёт гибридизации образует в органических соединениях 4 ковалентные связи.",
         "ar": "تمتلك ذرة الكربون في الحالة المثارة 4 أفلاك نصف ممتلئة، وتكوّن بالتهجين 4 روابط تساهمية في مركباتها العضوية.",
         "zh": "碳原子在激发态有 4 个半充满轨道，通过杂化在有机化合物中形成 4 个共价键。",
-        "ku": "Atoma karbonê di rewşa heyecanî de 4 orbîtalên nîvdagirtî hene û bi hîbrîdbûnê di pêkhateyên xwe yên organîk de 4 girêdanên kovalent çêdike."
+        "ku": "Atoma karbonê di rewşa heyecanî de xwedî 4 orbîtalên nîvdagirtî ye û bi hîbrîdbûnê di pêkhateyên xwe yên organîk de 4 girêdanên kovalent çêdike."
       },
       "trap": {
         "tr": "Karbon atomu bileşiklerinde en fazla 2 kovalent bağ yapabilir.",
@@ -255,7 +255,7 @@ export const unit23: ChemistryUnitSeedData = {
         "ru": "Сигма-связь образуется при перекрывании орбиталей вдоль оси, соединяющей ядра, а вдоль этой оси возможно только одно такое перекрывание. Поэтому между двумя атомами может быть не более одной сигма-связи; две другие связи тройной связи — пи-связи, образованные боковым перекрыванием p-орбиталей.",
         "ar": "تتكون رابطة سيغما من تداخل الأفلاك رأسًا لرأس على المحور الواصل بين النواتين، ولا يمكن على هذا المحور إلا تداخل واحد. لذلك لا يوجد بين ذرتين أكثر من رابطة سيغما واحدة؛ أما الرابطتان الأخريان في الرابطة الثلاثية فهما رابطتا باي ناتجتان عن التداخل الجانبي لأفلاك p.",
         "zh": "σ 键由轨道沿两核连线方向“头碰头”重叠形成，而沿这条轴只能有一次这样的重叠。所以两个原子之间最多只有一个 σ 键；三键中另外两个键是 p 轨道“肩并肩”重叠形成的 π 键。",
-        "ku": "Girêdana sîgma bi lihevketina orbîtalan a ser bi ser li ser eksena ku her du navikan digihîne hev çêdibe, û li ser vê eksenê tenê lihevketinek mimkun e. Ji ber vê di navbera du atoman de herî zêde girêdanek sîgma heye; du girêdanên din ên girêdana sêcar girêdanên pî ne ku bi lihevketina kêlekî ya orbîtalên p çêdibin."
+        "ku": "Girêdana sîgma bi hevgirtina orbîtalan a serî bi serî li ser eksena ku her du navikan digihîne hev çêdibe, û li ser vê eksenê tenê hevgirtinek mimkun e. Ji ber vê di navbera du atoman de herî zêde girêdanek sîgma heye; du girêdanên din ên girêdana sêcar girêdanên pî ne ku bi hevgirtina kêlekî ya orbîtalên p çêdibin."
       }
     },
     {
@@ -1188,7 +1188,7 @@ export const unit23: ChemistryUnitSeedData = {
         "ru": "В каком варианте правильно указаны приблизительные значения валентных углов a, b и c в молекуле, структурная формула которой показана на рисунке? (1H, 6C, 7N)",
         "ar": "في الجزيء المعطاة صيغته البنائية في الشكل، أيّ الخيارات يعطي القيم التقريبية لزوايا الروابط a وb وc بشكل صحيح؟ (1H، 6C، 7N)",
         "zh": "图中给出了某分子的结构式。下列哪一项正确给出了标为 a、b、c 的键角的近似值？(1H，6C，7N)",
-        "ku": "Di molekula ku formula wê ya avahiyê di şeklê de hatiye dayîn de, nirxên nêzîk ên goşeyên girêdanê yên bi a, b û c hatine nîşandan di kîjan bijardeyê de rast hatine dayîn? (1H, 6C, 7N)"
+        "ku": "Di molekula ku formula wê ya avahiyê di şiklê de hatiye dayîn de, nirxên nêzîk ên goşeyên girêdanê yên bi a, b û c hatine nîşandan di kîjan bijardeyê de rast hatine dayîn? (1H, 6C, 7N)"
       },
       "options": [
         {
@@ -1648,7 +1648,7 @@ export const unit23: ChemistryUnitSeedData = {
         "de": "4,6 g der nur aus C, H und O bestehenden Verbindung X werden mit genügend Sauerstoff vollständig verbrannt. Die entstehenden Gase strömen erst durch Rohr I mit wasserfreiem CaCl2, dann durch Rohr II mit KOH; die Massen der Rohre vor und nach dem Versuch stehen in der Tabelle.\nWelche Verhältnisformel (empirische Formel) hat X? (H: 1, C: 12, O: 16; CaCl2 bindet nur H2O, KOH nur CO2.)",
         "fr": "On brûle complètement, dans suffisamment de dioxygène, 4,6 g d'un composé X ne contenant que C, H et O. Les gaz formés traversent d'abord le tube I rempli de CaCl2 anhydre, puis le tube II rempli de KOH ; les masses des tubes avant et après l'expérience figurent dans le tableau.\nQuelle est la formule empirique de X ? (H : 1, C : 12, O : 16 ; CaCl2 ne retient que H2O et KOH que CO2.)",
         "ru": "4,6 г вещества X, содержащего только C, H и O, полностью сжигают в достаточном количестве кислорода. Образовавшиеся газы пропускают сначала через трубку I с безводным CaCl2, затем через трубку II с KOH; массы трубок до и после опыта приведены в таблице.\nКакова простейшая (эмпирическая) формула X? (H: 1, C: 12, O: 16; CaCl2 поглощает только H2O, KOH — только CO2.)",
-        "ar": "يُحرق 4.6 g من المركب X الذي يحتوي على C وH وO فقط احتراقًا تامًا في كمية كافية من الأكسجين. تُمرَّر الغازات الناتجة أولًا في الأنبوب I المملوء بـ CaCl2 اللامائي ثم في الأنبوب II المملوء بـ KOH، ويبيّن الجدول كتلتي الأنبوبين قبل التجربة وبعدها.\nما الصيغة الأولية (البسيطة) للمركب X؟ (H: 1، C: 12، O: 16؛ يمتص CaCl2 الماء H2O فقط، ويمتص KOH غاز CO2 فقط.)",
+        "ar": "يُحرق 4.6 g من المركب X الذي يحتوي على C وH وO فقط احتراقًا تامًا في كمية كافية من الأكسجين. تُمرَّر الغازات الناتجة أولًا في الأنبوب I المملوء بـ CaCl2 اللامائي ثم في الأنبوب II المملوء بـ KOH، ويبيّن الجدول كتلتي الأنبوبين قبل التجربة وبعدها.\nما الصيغة الأولية (التجريبية) للمركب X؟ (H: 1، C: 12، O: 16؛ يمتص CaCl2 الماء H2O فقط، ويمتص KOH غاز CO2 فقط.)",
         "zh": "4.6 g 只含 C、H、O 的化合物 X 在足量氧气中完全燃烧。生成的气体先通过装有无水 CaCl2 的管 I，再通过装有 KOH 的管 II；两管实验前后的质量列于表中。\nX 的最简式（实验式）是下列哪一个？(H = 1，C = 12，O = 16；CaCl2 只吸收 H2O，KOH 只吸收 CO2。)",
         "ku": "4,6 g ji pêkhateya X ya ku tenê C, H û O dihewîne bi oksîjena têr bi tevahî tê şewitandin. Gazên çêbûyî pêşî di lûleya I ya bi CaCl2 ya bê av tije re, paşê di lûleya II ya bi KOH tije re derbas dibin; girseyên lûleyan ên beriya û piştî ceribandinê di tabloyê de hatine dayîn.\nFormula sade (empîrîk) ya X kîjan e? (H: 1, C: 12, O: 16; CaCl2 tenê H2O, KOH tenê CO2 digire.)"
       },
@@ -1736,7 +1736,7 @@ export const unit23: ChemistryUnitSeedData = {
             "ru": "Наполнитель",
             "ar": "الحشوة",
             "zh": "填充物",
-            "ku": "Dagirtî"
+            "ku": "Madeya dagirtinê"
           },
           {
             "tr": "İlk kütle (g)",

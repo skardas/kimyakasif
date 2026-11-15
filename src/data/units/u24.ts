@@ -70,7 +70,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Алкены (олефины) — углеводороды, содержащие хотя бы одну двойную связь C=C; общая формула ациклических алкенов с одной двойной связью — CnH2n. Алкены вступают в реакции присоединения и полимеризации.",
         "ar": "الألكينات (الأوليفينات) هيدروكربونات تحتوي على رابطة ثنائية C=C واحدة على الأقل؛ والصيغة العامة للألكينات مفتوحة السلسلة ذات الرابطة الثنائية الواحدة هي CnH2n. وتدخل الألكينات في تفاعلات الإضافة والبلمرة.",
         "zh": "烯烃是至少含有一个 C=C 双键的烃；只含一个双键的链状烯烃的通式为 CnH2n。烯烃能发生加成反应和聚合反应。",
-        "ku": "Alken (olefîn) hîdrokarbonên ku herî kêm girêdaneke ducar a C=C dihewînin in; formula giştî ya alkenên zincîra vekirî yên bi yek girêdana ducar CnH2n e. Alken reaksiyonên lêzêdekirin û polîmerîzasyonê didin."
+        "ku": "Alken (olefîn) ew hîdrokarbon in ku herî kêm girêdaneke ducar a C=C dihewînin; formula giştî ya alkenên zincîra vekirî yên bi yek girêdana ducar CnH2n e. Alken reaksiyonên lêzêdekirin û polîmerîzasyonê didin."
       },
       "trap": {
         "tr": "Alkenler doymuş hidrokarbonlar sınıfındadır.",
@@ -179,7 +179,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Алкины — углеводороды, содержащие хотя бы одну тройную связь C≡C (общая формула ациклических алкинов с одной тройной связью — CnH2n-2); концевые алкины дают белый осадок с аммиачным раствором AgNO3 и красный осадок с аммиачным раствором CuCl.",
         "ar": "الألكاينات هيدروكربونات تحتوي على رابطة ثلاثية C≡C واحدة على الأقل (والصيغة العامة للألكاينات مفتوحة السلسلة ذات الرابطة الثلاثية الواحدة هي CnH2n-2)؛ وتعطي الألكاينات الطرفية راسبًا أبيض مع محلول AgNO3 النشادري وراسبًا أحمر مع محلول CuCl النشادري.",
         "zh": "炔烃是至少含有一个 C≡C 三键的烃（只含一个三键的链状炔烃通式为 CnH2n-2）；端炔与氨性 AgNO3 溶液生成白色沉淀，与氨性 CuCl 溶液生成红色沉淀。",
-        "ku": "Alkîn hîdrokarbonên ku herî kêm girêdaneke sêcar a C≡C dihewînin in (formula giştî ya alkînên zincîra vekirî yên bi yek girêdana sêcar CnH2n-2 ye); alkînên dawiyê bi çareseriya AgNO3 ya amonyakî re niştekeke spî, bi çareseriya CuCl ya amonyakî re niştekeke sor didin."
+        "ku": "Alkîn ew hîdrokarbon in ku herî kêm girêdaneke sêcar a C≡C dihewînin (formula giştî ya alkînên zincîra vekirî yên bi yek girêdana sêcar CnH2n-2 ye); alkînên dawiyê bi çareseriya AgNO3 ya amonyakî re niştekeke spî, bi çareseriya CuCl ya amonyakî re niştekeke sor didin."
       },
       "trap": {
         "tr": "İç alkinler amonyaklı AgNO3 (Tollens) çözeltisiyle çökelek verir.",
@@ -1065,7 +1065,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "На графике показано, как температуры кипения первых шести неразветвлённых алканов при 1 атм меняются с числом атомов углерода в молекуле; штриховая линия соответствует 25 °C.\nКакие утверждения об этих алканах верны?\nI. При 25 °C и 1 атм C5H12 (пентан) — жидкость, а C4H10 (бутан) — газ.\nII. С ростом числа атомов углерода температура кипения повышается, потому что усиливаются лондоновские силы между молекулами.\nIII. Разветвлённый изомер 2,2-диметилпропан, C5H12, кипит при 1 атм выше 36 °C.",
         "ar": "يبيّن الرسم البياني تغيّر درجات غليان الألكانات الستة الأولى ذات السلسلة المستقيمة عند 1 atm مع عدد ذرات الكربون في الجزيء؛ ويمثل الخط المتقطع 25 °C.\nأيٌّ من العبارات الآتية عن هذه الألكانات صحيحة؟\nI. عند 25 °C و1 atm يكون C5H12 (البنتان) سائلًا وC4H10 (البيوتان) غازًا.\nII. ترتفع درجة الغليان بزيادة عدد ذرات الكربون لأن قوى لندن بين الجزيئات تزداد.\nIII. المتماكب المتفرع 2,2-ثنائي ميثيل البروبان، C5H12، يغلي عند 1 atm فوق 36 °C.",
         "zh": "图中给出了前六种直链烷烃在 1 atm 下的沸点随分子中碳原子数的变化；虚线表示 25 °C。\n关于这些烷烃的下列说法中，哪些正确？\nI. 在 25 °C、1 atm 下，C5H12（戊烷）为液体，C4H10（丁烷）为气体。\nII. 碳原子数增加时，分子间伦敦力增强，因此沸点升高。\nIII. 支链异构体 2,2-二甲基丙烷（C5H12）在 1 atm 下的沸点高于 36 °C。",
-        "ku": "Di grafîka şeklê de guherîna xalên kelînê yên şeş alkanên pêşîn ên zincîra rast li 1 atm li gorî hejmara karbonan a di molekulê de hatiye dayîn; xeta qutqutkirî 25 °C nîşan dide.\nDerbarê van alkanan de;\nI. Li 25 °C û 1 atm, C5H12 (pentan) şile û C4H10 (bûtan) gaz e.\nII. Her ku hejmara karbonan zêde dibe, ji ber ku hêzên London ên navbera molekulan xurt dibin xala kelînê bilind dibe.\nIII. Xala kelînê ya îzomera şaxdar 2,2-dîmetîlpropan (C5H12) li 1 atm ji 36 °C bilindtir e.\nkîjan ji van gotinan rast in?"
+        "ku": "Di grafîka şiklê de guherîna xalên kelînê yên şeş alkanên pêşîn ên zincîra rast li 1 atm li gorî hejmara karbonan a di molekulê de hatiye dayîn; xeta qutqutkirî 25 °C nîşan dide.\nDerbarê van alkanan de;\nI. Li 25 °C û 1 atm, C5H12 (pentan) şile û C4H10 (bûtan) gaz e.\nII. Her ku hejmara karbonan zêde dibe, ji ber ku hêzên London ên navbera molekulan xurt dibin xala kelînê bilind dibe.\nIII. Xala kelînê ya îzomera şaxdar 2,2-dîmetîlpropan (C5H12) li 1 atm ji 36 °C bilindtir e.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1669,7 +1669,7 @@ export const unit24: ChemistryUnitSeedData = {
               "ru": "Осадка нет",
               "ar": "لا راسب",
               "zh": "无沉淀",
-              "ku": "Nişte tune"
+              "ku": "Niştek tune"
             }
           ],
           [
@@ -1692,7 +1692,7 @@ export const unit24: ChemistryUnitSeedData = {
               "ru": "Белый осадок",
               "ar": "راسب أبيض",
               "zh": "白色沉淀",
-              "ku": "Nişteya spî"
+              "ku": "Niştekeke spî"
             }
           ],
           [
@@ -1715,7 +1715,7 @@ export const unit24: ChemistryUnitSeedData = {
               "ru": "Осадка нет",
               "ar": "لا راسب",
               "zh": "无沉淀",
-              "ku": "Nişte tune"
+              "ku": "Niştek tune"
             }
           ]
         ]
@@ -2035,7 +2035,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Какое из следующих утверждений о сложном эфире, структурная формула которого показана на рисунке, верно?",
         "ar": "أيّ العبارات الآتية عن الإستر المعطاة صيغته البنائية في الشكل صحيحة؟",
         "zh": "关于图中给出结构式的酯，下列说法中哪一项正确？",
-        "ku": "Derbarê esterê ku formula wê ya avahiyê di şeklê de hatiye dayîn de kîjan gotin rast e?"
+        "ku": "Derbarê estera ku formula wê ya avahiyê di şiklê de hatiye dayîn de kîjan gotin rast e?"
       },
       "options": [
         {
@@ -2098,7 +2098,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "В сложноэфирной группе (–COO–) часть с карбонильным углеродом происходит от кислоты, а алкильная группа, связанная с кислородом одинарной связью, — от спирта. На рисунке углерод C=O связан с группой CH3–CH2–, значит, эта часть происходит от пропановой кислоты с тремя атомами углерода. Группа CH3 при кислороде происходит от метанола. Сложный эфир называют: алкильная группа + название кислоты (-оат) — метилпропаноат; при гидролизе образуются пропановая кислота и метанол. Этилэтаноат (CH3–COO–CH2–CH3) и пропилметаноат (H–COO–CH2–CH2–CH3) имеют ту же формулу, но другое положение группы C=O. Формула C4H8O2 верна, но сложный эфир и карбоновая кислота — межклассовые изомеры, а не изомеры углеродного скелета.",
         "ar": "في مجموعة الإستر (–COO–) يأتي الجزء الذي يحتوي على كربون الكربونيل من الحمض، وتأتي مجموعة الألكيل المرتبطة بالأكسجين برابطة أحادية من الكحول. في الشكل يرتبط كربون C=O بمجموعة CH3–CH2–، فهذا الجزء آتٍ من حمض البروبانويك ثلاثي الكربون. ومجموعة CH3 المرتبطة بالأكسجين آتية من الميثانول. ويُسمّى الإستر باسم الحمض (-وات) ثم مجموعة الألكيل: بروبانوات الميثيل، ويعطي تحلّله المائي حمض البروبانويك والميثانول. أما إيثانوات الإيثيل (CH3–COO–CH2–CH3) وميثانوات البروبيل (H–COO–CH2–CH2–CH3) فلهما الصيغة نفسها لكن موقع C=O مختلف. والصيغة C4H8O2 صحيحة، لكن العلاقة بين الإستر والحمض الكربوكسيلي تماكب مجموعة وظيفية لا تماكب سلسلة.",
         "zh": "酯基（–COO–）中含羰基碳的部分来自酸，以单键连在氧上的烷基来自醇。图中 C=O 碳连着 CH3–CH2– 基团，这部分来自含三个碳的丙酸；氧上的 CH3 来自甲醇。酯按“酸名 + 醇的烷基名 + 酯”命名：丙酸甲酯，水解生成丙酸和甲醇。乙酸乙酯（CH3–COO–CH2–CH3）和甲酸丙酯（H–COO–CH2–CH2–CH3）分子式相同，但 C=O 的位置不同。分子式 C4H8O2 正确，但酯与羧酸之间是官能团异构，而不是碳链异构。",
-        "ku": "Di koma esterê (–COO–) de beşa ku karbona karbonîlê dihewîne ji asîdê, koma alkîlê ya ku bi girêdana yekane bi oksîjenê ve girêdayî ye ji alkolê tê. Di şeklê de karbona C=O bi koma CH3–CH2– ve girêdayî ye; ev beş ji asîda propanoîk a bi 3 karbonan tê. Koma CH3 ya li ser oksîjenê ji metanolê tê. Ester bi koma alkîlê + navê asîdê (-oat) tê binavkirin: metîl propanoat; di hîdrolîza wê de asîda propanoîk û metanol çêdibin. Etîl etanoat (CH3–COO–CH2–CH3) û propîl metanoat (H–COO–CH2–CH2–CH3) xwedî heman formulê ne lê cihê koma C=O cuda ye. Formula C4H8O2 rast e, lê têkiliya navbera ester û asîda karboksîlîk îzomeriya koma fonksiyonel e, ne îzomeriya zincîrê."
+        "ku": "Di koma esterê (–COO–) de beşa ku karbona karbonîlê dihewîne ji asîdê, koma alkîlê ya ku bi girêdana yekane bi oksîjenê ve girêdayî ye ji alkolê tê. Di şiklê de karbona C=O bi koma CH3–CH2– ve girêdayî ye; ev beş ji asîda propanoîk a bi 3 karbonan tê. Koma CH3 ya li ser oksîjenê ji metanolê tê. Ester bi koma alkîlê + navê asîdê (-oat) tê binavkirin: metîl propanoat; di hîdrolîza wê de asîda propanoîk û metanol çêdibin. Etîl etanoat (CH3–COO–CH2–CH3) û propîl metanoat (H–COO–CH2–CH2–CH3) xwedî heman formulê ne lê cihê koma C=O cuda ye. Formula C4H8O2 rast e, lê têkiliya navbera ester û asîda karboksîlîk îzomeriya koma fonksiyonel e, ne îzomeriya zincîrê."
       },
       "figure": {
         "kind": "svg",

@@ -420,7 +420,7 @@ export const unit17: ChemistryUnitSeedData = {
         "ru": "Порядок реакции независимо от механизма всегда равен сумме коэффициентов реагентов в суммарном уравнении.",
         "ar": "رتبة التفاعل تساوي دائمًا مجموع معاملات المتفاعلات في المعادلة الصافية مهما كانت آلية التفاعل.",
         "zh": "无论反应机理如何，反应级数总是等于总反应方程式中反应物化学计量数之和。",
-        "ku": "Pileya reaksiyonê, ji mekanîzmayê serbixwe, her tim wekhevî koma hevberên reaktantan ên hevkêşeya net e."
+        "ku": "Pileya reaksiyonê, ji mekanîzmayê serbixwe, her tim bi koma hevberên reaktantan ên di hevkêşeya net de re wekhev e."
       },
       "whyTrapIsFalse": {
         "tr": "Katsayılar ancak tek basamaklı (temel) tepkimelerde üslere eşittir; çok basamaklı tepkimelerde derece deneyle ya da yavaş basamaktan bulunur, net denklemin katsayılarından okunamaz.",
@@ -1138,7 +1138,7 @@ export const unit17: ChemistryUnitSeedData = {
         "ru": "По графику за 0–20 с [X] уменьшается с 0,8 до 0,4 моль/л (Δ = 0,4), а [Y] растёт от 0 до 0,2 моль/л (Δ = 0,2). Израсходованный X : образовавшийся Y = 0,4 : 0,2 = 2 : 1, значит, уравнение 2X → Y. Средняя скорость образования Y = 0,2 / 20 = 1,0x10^-2 моль/(л·с). 2,0x10^-2 — скорость расходования X; 7,5x10^-3 — средняя скорость за 0–40 с (0,3 / 40). При X → 2Y концентрация Y росла бы вдвое быстрее, чем убывает X; график показывает обратное.",
         "ar": "يبيّن الرسم أنه في الفترة 0–20 s انخفض [X] من 0.8 إلى 0.4 mol/L (Δ = 0.4) وارتفع [Y] من 0 إلى 0.2 mol/L (Δ = 0.2). نسبة X المستهلك إلى Y المتكوّن 0.4 : 0.2 = 2 : 1، لذا المعادلة 2X → Y. متوسط سرعة تكوّن Y = 0.2 / 20 = 1.0x10^-2 mol/(L·s). القيمة 2.0x10^-2 هي سرعة استهلاك X، و7.5x10^-3 هي المتوسط في الفترة 0–40 s (0.3 / 40). المعادلة X → 2Y تتطلب أن يزداد Y بضعف سرعة تناقص X، والرسم يبيّن العكس.",
         "zh": "由图可知，0–20 s 内 [X] 从 0.8 降到 0.4 mol/L（Δ = 0.4），[Y] 从 0 升到 0.2 mol/L（Δ = 0.2）。消耗的 X 与生成的 Y 之比为 0.4 : 0.2 = 2 : 1，故方程式为 2X → Y。Y 的平均生成速率 = 0.2 / 20 = 1.0x10^-2 mol/(L·s)。2.0x10^-2 是 X 的消耗速率；7.5x10^-3 是 0–40 s 内的平均值（0.3 / 40）。若为 X → 2Y，Y 的增加速率应是 X 减少速率的两倍，图中恰好相反。",
-        "ku": "Li gorî grafîkê di navbera 0–20 s de [X] ji 0,8 daketiye 0,4 mol/L (Δ = 0,4), [Y] jî ji 0 derketiye 0,2 mol/L (Δ = 0,2). Rêjeya X-ya xerckirî û Y-ya çêbûyî 0,4 : 0,2 = 2 : 1 e, ji ber vê yekê hevkêşe 2X → Y ye. Leza navînî ya çêbûna Y = 0,2 / 20 = 1,0x10^-2 mol/(L·s). 2,0x10^-2 leza xerckirina X ye; 7,5x10^-3 navînîya navbera 0–40 s ye (0,3 / 40). Ji bo X → 2Y diviya Y du qat zûtir ji kêmbûna X zêde bibûya; grafîk berevajî vê nîşan dide."
+        "ku": "Li gorî grafîkê di navbera 0–20 s de [X] ji 0,8 daketiye 0,4 mol/L (Δ = 0,4), [Y] jî ji 0 derketiye 0,2 mol/L (Δ = 0,2). Rêjeya X-ya xerckirî û Y-ya çêbûyî 0,4 : 0,2 = 2 : 1 e, ji ber vê yekê hevkêşe 2X → Y ye. Leza navînî ya çêbûna Y = 0,2 / 20 = 1,0x10^-2 mol/(L·s). 2,0x10^-2 leza xerckirina X ye; 7,5x10^-3 navîniya navbera 0–40 s ye (0,3 / 40). Ji bo X → 2Y diviya Y du qat zûtir ji kêmbûna X zêde bibûya; grafîk berevajî vê nîşan dide."
       },
       "figure": {
         "kind": "graph",
@@ -1759,7 +1759,7 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Das Energiediagramm zeigt den Weg derselben Reaktion ohne und mit Katalysator. In welcher Antwort sind die Aktivierungsenergie der Rückreaktion (Ea,rück) auf dem katalysierten Weg und die Reaktionsenthalpie (ΔH) der Hinreaktion beide richtig angegeben?",
         "fr": "Le diagramme d'énergie potentielle montre le chemin non catalysé et le chemin catalysé d'une même réaction. Quelle proposition donne correctement à la fois l'énergie d'activation de la réaction inverse (Ea,inv) sur le chemin catalysé et la variation d'enthalpie (ΔH) de la réaction directe ?",
         "ru": "На энергетической диаграмме показаны некаталитический и каталитический пути одной и той же реакции. В каком варианте правильно указаны и энергия активации обратной реакции (Ea,обр) на каталитическом пути, и изменение энтальпии (ΔH) прямой реакции?",
-        "ar": "يبيّن مخطط الطاقة الكامنة مساري التفاعل نفسه دون حفّاز وبوجوده. في أيّ خيار تُعطى طاقة تنشيط التفاعل العكسي (Ea,عكسي) على المسار المحفَّز والتغير في المحتوى الحراري (ΔH) للتفاعل الأمامي كلاهما بشكل صحيح؟",
+        "ar": "يبيّن مخطط الطاقة الكامنة مساري التفاعل نفسه دون حفّاز وبوجوده. في أيّ خيار تُعطى طاقة تنشيط التفاعل العكسي (Eag) على المسار المحفَّز والتغير في المحتوى الحراري (ΔH) للتفاعل الأمامي كلاهما بشكل صحيح؟",
         "zh": "势能图中给出了同一反应无催化剂和有催化剂两条途径。下列哪一项同时正确给出了有催化剂途径中逆反应的活化能（Ea,逆）和正反应的焓变（ΔH）？",
         "ku": "Di diyagrama enerjiya potansiyel de rêya bê katalîzor û rêya bi katalîzor a heman reaksiyonê hatine nîşandan. Di kîjan vebijarkê de hem enerjiya aktîvasyonê ya reaksiyona paşve (Eag) li ser rêya bi katalîzor hem jî guherîna entalpiyê (ΔH) ya reaksiyona pêşve bi hev re rast hatine dayîn?"
       },
@@ -1770,7 +1770,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Ea,rück = 70 kJ; ΔH = -30 kJ",
           "fr": "Ea,inv = 70 kJ; ΔH = -30 kJ",
           "ru": "Ea,обр = 70 kJ; ΔH = -30 kJ",
-          "ar": "Ea,عكسي = 70 kJ; ΔH = -30 kJ",
+          "ar": "Eag = 70 kJ; ΔH = -30 kJ",
           "zh": "Ea,逆 = 70 kJ; ΔH = -30 kJ",
           "ku": "Eag = 70 kJ; ΔH = -30 kJ"
         },
@@ -1780,7 +1780,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Ea,rück = 110 kJ; ΔH = -30 kJ",
           "fr": "Ea,inv = 110 kJ; ΔH = -30 kJ",
           "ru": "Ea,обр = 110 kJ; ΔH = -30 kJ",
-          "ar": "Ea,عكسي = 110 kJ; ΔH = -30 kJ",
+          "ar": "Eag = 110 kJ; ΔH = -30 kJ",
           "zh": "Ea,逆 = 110 kJ; ΔH = -30 kJ",
           "ku": "Eag = 110 kJ; ΔH = -30 kJ"
         },
@@ -1790,7 +1790,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Ea,rück = 70 kJ; ΔH = +30 kJ",
           "fr": "Ea,inv = 70 kJ; ΔH = +30 kJ",
           "ru": "Ea,обр = 70 kJ; ΔH = +30 kJ",
-          "ar": "Ea,عكسي = 70 kJ; ΔH = +30 kJ",
+          "ar": "Eag = 70 kJ; ΔH = +30 kJ",
           "zh": "Ea,逆 = 70 kJ; ΔH = +30 kJ",
           "ku": "Eag = 70 kJ; ΔH = +30 kJ"
         },
@@ -1800,7 +1800,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Ea,rück = 40 kJ; ΔH = -30 kJ",
           "fr": "Ea,inv = 40 kJ; ΔH = -30 kJ",
           "ru": "Ea,обр = 40 kJ; ΔH = -30 kJ",
-          "ar": "Ea,عكسي = 40 kJ; ΔH = -30 kJ",
+          "ar": "Eag = 40 kJ; ΔH = -30 kJ",
           "zh": "Ea,逆 = 40 kJ; ΔH = -30 kJ",
           "ku": "Eag = 40 kJ; ΔH = -30 kJ"
         },
@@ -1810,7 +1810,7 @@ export const unit17: ChemistryUnitSeedData = {
           "de": "Ea,rück = 90 kJ; ΔH = -30 kJ",
           "fr": "Ea,inv = 90 kJ; ΔH = -30 kJ",
           "ru": "Ea,обр = 90 kJ; ΔH = -30 kJ",
-          "ar": "Ea,عكسي = 90 kJ; ΔH = -30 kJ",
+          "ar": "Eag = 90 kJ; ΔH = -30 kJ",
           "zh": "Ea,逆 = 90 kJ; ΔH = -30 kJ",
           "ku": "Eag = 90 kJ; ΔH = -30 kJ"
         }
@@ -1822,9 +1822,9 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Aus dem Diagramm: Edukte 50 kJ, Produkte 20 kJ, Maximum ohne Katalysator 130 kJ, Maximum mit Katalysator 90 kJ. ΔH = 20 - 50 = -30 kJ; ein Katalysator ändert ΔH nicht. Auf dem katalysierten Weg ist Ea,hin = 90 - 50 = 40 kJ und Ea,rück = 90 - 20 = 70 kJ. 110 kJ ist Ea,rück ohne Katalysator (130 - 20); 40 kJ ist die katalysierte Aktivierungsenergie der Hinreaktion; 90 kJ ist die Energie des Maximums selbst, keine Aktivierungsenergie; +30 kJ ist ein Vorzeichenfehler.",
         "fr": "Lecture du graphique : réactifs 50 kJ, produits 20 kJ, sommet du chemin non catalysé 130 kJ, sommet du chemin catalysé 90 kJ. ΔH = 20 - 50 = -30 kJ, et un catalyseur ne modifie pas ΔH. Sur le chemin catalysé, Ea,dir = 90 - 50 = 40 kJ et Ea,inv = 90 - 20 = 70 kJ. 110 kJ est Ea,inv sans catalyseur (130 - 20) ; 40 kJ est l'énergie d'activation directe catalysée ; 90 kJ est l'énergie du sommet lui-même, pas une énergie d'activation ; +30 kJ est une erreur de signe.",
         "ru": "По графику: реагенты 50 кДж, продукты 20 кДж, вершина некаталитического пути 130 кДж, каталитического — 90 кДж. ΔH = 20 - 50 = -30 кДж, катализатор ΔH не меняет. На каталитическом пути Ea,пр = 90 - 50 = 40 кДж, Ea,обр = 90 - 20 = 70 кДж. 110 кДж — Ea,обр без катализатора (130 - 20); 40 кДж — энергия активации прямой реакции с катализатором; 90 кДж — энергия самой вершины, а не энергия активации; +30 кДж — ошибка в знаке.",
-        "ar": "من الرسم: طاقة المتفاعلات 50 kJ، والنواتج 20 kJ، وقمة المسار غير المحفَّز 130 kJ، وقمة المسار المحفَّز 90 kJ. ΔH = 20 - 50 = -30 kJ، والحفّاز لا يغيّر ΔH. في المسار المحفَّز: Ea,أمامي = 90 - 50 = 40 kJ وEa,عكسي = 90 - 20 = 70 kJ. القيمة 110 kJ هي Ea,عكسي دون حفّاز (130 - 20)، و40 kJ طاقة التنشيط الأمامية بوجود الحفّاز، و90 kJ طاقة القمة نفسها وليست طاقة تنشيط، و+30 kJ خطأ في الإشارة.",
+        "ar": "من الرسم: طاقة المتفاعلات 50 kJ، والنواتج 20 kJ، وقمة المسار غير المحفَّز 130 kJ، وقمة المسار المحفَّز 90 kJ. ΔH = 20 - 50 = -30 kJ، والحفّاز لا يغيّر ΔH. في المسار المحفَّز: Eai = 90 - 50 = 40 kJ وEag = 90 - 20 = 70 kJ. القيمة 110 kJ هي Eag دون حفّاز (130 - 20)، و40 kJ طاقة التنشيط الأمامية بوجود الحفّاز، و90 kJ طاقة القمة نفسها وليست طاقة تنشيط، وأخذ ΔH = +30 kJ خطأ في الإشارة.",
         "zh": "由图读出：反应物 50 kJ，生成物 20 kJ，无催化剂途径峰值 130 kJ，有催化剂途径峰值 90 kJ。ΔH = 20 - 50 = -30 kJ，催化剂不改变 ΔH。有催化剂途径中 Ea,正 = 90 - 50 = 40 kJ，Ea,逆 = 90 - 20 = 70 kJ。110 kJ 是无催化剂时的 Ea,逆（130 - 20）；40 kJ 是有催化剂时正反应的活化能；90 kJ 是峰值本身的能量而不是活化能；+30 kJ 是符号错误。",
-        "ku": "Ji grafîkê: reaktant 50 kJ, hilber 20 kJ, lûtkeya rêya bê katalîzor 130 kJ, ya rêya bi katalîzor 90 kJ. ΔH = 20 - 50 = -30 kJ e û katalîzor ΔH naguherîne. Li ser rêya bi katalîzor Eai = 90 - 50 = 40 kJ û Eag = 90 - 20 = 70 kJ e. 110 kJ Eag ya rêya bê katalîzor e (130 - 20); 40 kJ enerjiya aktîvasyonê ya pêşve ya bi katalîzor e; 90 kJ enerjiya lûtkeyê bi xwe ye, ne enerjiya aktîvasyonê ye; +30 kJ xeletiya nîşanê ye."
+        "ku": "Ji grafîkê: reaktant 50 kJ, hilber 20 kJ, lûtkeya rêya bê katalîzor 130 kJ, ya rêya bi katalîzor 90 kJ. ΔH = 20 - 50 = -30 kJ e û katalîzor ΔH naguherîne. Li ser rêya bi katalîzor Eai = 90 - 50 = 40 kJ û Eag = 90 - 20 = 70 kJ e. 110 kJ Eag ya rêya bê katalîzor e (130 - 20); 40 kJ enerjiya aktîvasyonê ya pêşve ya bi katalîzor e; 90 kJ enerjiya lûtkeyê bi xwe ye, ne enerjiya aktîvasyonê ye; girtina ΔH wekî +30 kJ xeletiya nîşanê ye."
       },
       "figure": {
         "kind": "graph",
@@ -1992,7 +1992,7 @@ export const unit17: ChemistryUnitSeedData = {
         "ru": "В реакции 2N2O5(г) → 4NO2(г) + O2(г), протекающей в сосуде постоянного объёма 2 л, количество N2O5 за 40 секунд уменьшается с 0,8 моль до 0,4 моль. Какова средняя скорость образования NO2 за этот промежуток времени, моль/(л·с)?",
         "ar": "في التفاعل 2N2O5(g) → 4NO2(g) + O2(g) الذي يجري في وعاء ثابت الحجم سعته 2 L، تنخفض كمية N2O5 من 0.8 mol إلى 0.4 mol خلال 40 ثانية. ما متوسط سرعة تكوّن NO2 في هذه الفترة بوحدة mol/(L·s)؟",
         "zh": "在容积为 2 L 的恒容容器中进行反应 2N2O5(g) → 4NO2(g) + O2(g)，40 s 内 N2O5 的物质的量由 0.8 mol 降至 0.4 mol。这段时间内 NO2 的平均生成速率是多少 mol/(L·s)？",
-        "ku": "Di firaxeke 2 lîtreyî ya bi qebareya sabît de reaksiyona 2N2O5(g) → 4NO2(g) + O2(g) pêk tê û hejmara molên N2O5 di 40 saniyeyan de ji 0,8 molî dadikeve 0,4 molî. Di vê navberana demê de leza navîn a çêbûna NO2 çend mol/(L·s) e?"
+        "ku": "Di firaxeke 2 lîtreyî ya bi qebareya sabît de reaksiyona 2N2O5(g) → 4NO2(g) + O2(g) pêk tê û hejmara molên N2O5 di 40 saniyeyan de ji 0,8 molî dadikeve 0,4 molî. Di vê navbera demê de leza navîn a çêbûna NO2 çend mol/(L·s) e?"
       },
       "options": [
         {
@@ -2491,9 +2491,9 @@ export const unit17: ChemistryUnitSeedData = {
         "de": "Eine Reaktion hat eine Aktivierungsenergie der Hinreaktion von 60 kJ und ΔH = +20 kJ. Nach Zugabe eines geeigneten Katalysators sinkt die Aktivierungsenergie der Hinreaktion auf 35 kJ. Wie groß ist die Aktivierungsenergie der Rückreaktion mit Katalysator in kJ?",
         "fr": "Une réaction a une énergie d'activation directe de 60 kJ et ΔH = +20 kJ. Après ajout d'un catalyseur approprié, l'énergie d'activation directe tombe à 35 kJ. Quelle est, en kJ, l'énergie d'activation de la réaction inverse en présence du catalyseur ?",
         "ru": "Энергия активации прямой реакции равна 60 кДж, ΔH = +20 кДж. После добавления подходящего катализатора энергия активации прямой реакции снижается до 35 кДж. Чему равна энергия активации обратной реакции в присутствии катализатора, кДж?",
-        "ar": "تفاعل طاقة تنشيطه الأمامية 60 kJ وΔH = +20 kJ. عند إضافة حفاز مناسب تنخفض طاقة التنشيط الأمامية إلى 35 kJ. ما طاقة تنشيط التفاعل العكسي بوجود الحفاز بوحدة kJ؟",
+        "ar": "تفاعل طاقة تنشيطه الأمامية (Eai) 60 kJ وΔH = +20 kJ. عند إضافة حفاز مناسب تنخفض طاقة التنشيط الأمامية إلى 35 kJ. ما طاقة تنشيط التفاعل العكسي (Eag) بوجود الحفاز بوحدة kJ؟",
         "zh": "某反应正反应活化能为60 kJ，ΔH = +20 kJ。加入合适的催化剂后，正反应活化能降至35 kJ。有催化剂时逆反应的活化能是多少kJ？",
-        "ku": "Enerjiya aktîvasyonê ya pêşve ya reaksiyonekê 60 kJ û ΔH = +20 kJ e. Dema katalîzoreke guncav tê lêzêdekirin, enerjiya aktîvasyonê ya pêşve dadikeve 35 kJ. Bi hebûna katalîzorê enerjiya aktîvasyonê ya reaksiyona paşve çend kJ e?"
+        "ku": "Enerjiya aktîvasyonê ya pêşve (Eai) ya reaksiyonekê 60 kJ û ΔH = +20 kJ e. Dema katalîzoreke guncav tê lêzêdekirin, enerjiya aktîvasyonê ya pêşve dadikeve 35 kJ. Bi hebûna katalîzorê enerjiya aktîvasyonê ya reaksiyona paşve (Eag) çend kJ e?"
       },
       "options": [
         {

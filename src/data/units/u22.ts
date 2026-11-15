@@ -266,7 +266,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Bei der Elektrolyse einer wässrigen Lösung wird an der Kathode zuerst die am leichtesten reduzierbare Spezies (mit dem höchsten Reduktionspotential) reduziert: Kationen edler Metalle wie Cu2+ und Ag+ werden vor dem Wasser reduziert, während anstelle von Kationen unedler Metalle wie Na+ und K+ das Wasser reduziert wird und H2 entsteht.",
         "fr": "Lors de l'électrolyse d'une solution aqueuse, l'espèce la plus facile à réduire (celle de plus haut potentiel de réduction) est réduite en premier à la cathode : les cations de métaux peu actifs comme Cu2+ et Ag+ sont réduits avant l'eau, tandis qu'à la place des cations de métaux actifs comme Na+ et K+, c'est l'eau qui est réduite et H2 se dégage.",
         "ru": "При электролизе водного раствора на катоде первой восстанавливается частица, которая восстанавливается легче всего (с наибольшим потенциалом восстановления): катионы малоактивных металлов, например Cu2+ и Ag+, восстанавливаются раньше воды, а вместо катионов активных металлов, например Na+ и K+, восстанавливается вода с выделением H2.",
-        "ar": "في التحليل الكهربائي للمحاليل المائية يُختزل عند المهبط أولًا النوع الأسهل اختزالًا (ذو جهد الاختزال الأكبر): فكاتيونات الفلزات قليلة النشاط مثل Cu2+ وAg+ تُختزل قبل الماء، أما بدل كاتيونات الفلزات النشطة مثل Na+ وK+ فيُختزل الماء ويتصاعد H2.",
+        "ar": "في التحليل الكهربائي للمحاليل المائية يُختزل عند المهبط أولًا النوع الأسهل اختزالًا (ذو جهد الاختزال الأكبر): فكاتيونات الفلزات قليلة النشاط مثل Cu2+ وAg+ تُختزل قبل الماء، أما في حالة كاتيونات الفلزات النشطة مثل Na+ وK+ فيُختزل الماء بدلًا منها ويتصاعد H2.",
         "zh": "电解水溶液时，阴极上最容易被还原的粒子（还原电势最大者）先被还原：Cu2+、Ag+ 等不活泼金属的阳离子比水先被还原，而 Na+、K+ 等活泼金属阳离子不被还原，代之以水被还原放出 H2。",
         "ku": "Di elektrolîza çareseriyên avî de li katodê pêşî ew cure redûkte dibe ku herî hêsan redûkte dibe (potansiyela wê ya redûksiyonê herî mezin e): katyonên metalên pasîf ên wek Cu2+ û Ag+ beriya avê redûkte dibin, lê li şûna katyonên metalên çalak ên wek Na+ û K+ av redûkte dibe û H2 derdikeve."
       },
@@ -1131,7 +1131,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ru": "Из двух последовательно соединённых электролизёров в I находится водный раствор AgNO3, во II — водный раствор хлорида металла M. На графике показано изменение во времени массы металла, выделившегося на катодах.\nВ каком варианте правильно указаны сила тока в цепи и заряд иона M? (Ag = 108 г/моль, M = 59 г/моль; 1 F = 96500 Кл)",
         "ar": "خليتا تحليل كهربائي موصولتان على التوالي: في الخلية I محلول AgNO3 المائي، وفي الخلية II محلول مائي لكلوريد الفلز M. يبيّن الرسم البياني تغيّر كتلتي الفلزين المترسبتين على المهبطين مع الزمن.\nفي أيّ خيار تُعطى شدة التيار المار في الدائرة وشحنة أيون M بشكل صحيح؟ (Ag = 108 g/mol، M = 59 g/mol؛ 1 F = 96500 C)",
         "zh": "两个电解池串联，池 I 中为 AgNO3 水溶液，池 II 中为金属 M 的氯化物水溶液。图中给出了两个阴极上析出金属的质量随时间的变化。\n下列哪一项正确给出了电路中的电流和 M 离子的电荷？(Ag = 108 g/mol，M = 59 g/mol；1 F = 96500 C)",
-        "ku": "Ji du şaneyên elektrolîzê yên bi rêzî girêdayî, di ya I de AgNO3 a avî û di ya II de çareseriya klorûrê ya avî ya metala M heye. Guherîna girseyên metalên ku li ser katodan kom dibin li gorî demê di grafîka şeklê de hatiye dayîn.\nŞiddeta herikîna di devreyê de û barê îyona M di kîjan bijardeyê de rast hatine dayîn? (Ag = 108 g/mol, M = 59 g/mol; 1 F = 96500 C)"
+        "ku": "Ji du şaneyên elektrolîzê yên bi rêzî girêdayî, di ya I de çareseriya avî ya AgNO3 û di ya II de çareseriya klorûrê ya avî ya metala M heye. Guherîna girseyên metalên ku li ser katodan kom dibin li gorî demê di grafîka şiklê de hatiye dayîn.\nŞiddeta herikîna di devreyê de û barê îyona M di kîjan bijardeyê de rast hatine dayîn? (Ag = 108 g/mol, M = 59 g/mol; 1 F = 96500 C)"
       },
       "options": [
         {
@@ -1804,7 +1804,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ru": "Железный ключ нужно посеребрить с помощью показанной установки. Ключ и пластину из чистого серебра помещают в позиции X и Y, подключённые к источнику постоянного тока.\nКакое из следующих утверждений об этом процессе верно?",
         "ar": "يُراد طلاء مفتاح من الحديد بالفضة باستخدام الجهاز المبيّن في الشكل. سيوضع المفتاح وصفيحة من الفضة النقية في الموضعين X وY الموصولين بمصدر التيار المستمر.\nأيّ العبارات الآتية عن هذه العملية صحيحة؟",
         "zh": "用图示装置给铁钥匙镀银。钥匙和纯银片将分别放在与直流电源相连的位置 X 和 Y 上。\n关于这一过程，下列说法中哪一项正确？",
-        "ku": "Tê xwestin ku mifteyeke hesin bi amûra şeklê bi zîv bê pêçandin. Mifte û pelekî zîvê paqij dê li cihên X û Y yên ku bi çavkaniya herikîna rasterast ve girêdayî ne bên danîn.\nDerbarê vê karî de kîjan gotin rast e?"
+        "ku": "Tê xwestin ku mifteyeke hesin bi amûra şiklê bi zîv bê pêçandin. Mifte û pelekî zîvê paqij dê li cihên X û Y yên ku bi çavkaniya herikîna rasterast ve girêdayî ne bên danîn.\nDerbarê vê karî de kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1867,7 +1867,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ru": "На рисунке X подключён к положительному (+), а Y — к отрицательному (−) полюсу источника. В электролизёре электрод, подключённый к положительному полюсу, — анод, к отрицательному — катод. Чтобы на ключе по реакции Ag+ + e- → Ag осаждалось серебро, ключ должен быть катодом, то есть находиться в Y, а серебряная пластина — анодом, в X. В X пластина растворяется: Ag → Ag+ + e-. Сколько Ag+ образуется на аноде, столько расходуется на катоде, поэтому концентрация почти не меняется. Электроны уходят с анода (X) к положительному полюсу и от отрицательного полюса идут к катоду (Y): направление — от X к Y, а не наоборот.",
         "ar": "في الشكل يتصل X بالقطب الموجب (+) للمصدر وY بالقطب السالب (−). في خلية التحليل الكهربائي يكون القطب المتصل بالطرف الموجب مصعدًا والمتصل بالطرف السالب مهبطًا. ولكي تترسب الفضة على المفتاح وفق Ag+ + e- → Ag يجب أن يكون المفتاح مهبطًا أي في Y، وصفيحة الفضة مصعدًا أي في X. عند X تذوب الصفيحة: Ag → Ag+ + e-. ويتكوّن عند المصعد من Ag+ قدر ما يُستهلك عند المهبط، فيبقى التركيز ثابتًا تقريبًا. وتخرج الإلكترونات من المصعد (X) إلى الطرف الموجب ثم من الطرف السالب إلى المهبط (Y)، أي من X إلى Y لا العكس.",
         "zh": "图中 X 接电源正极（+），Y 接负极（−）。电解池中接电源正极的电极是阳极，接负极的是阴极。要使银按 Ag+ + e- → Ag 沉积在钥匙上，钥匙必须是阴极，即放在 Y；银片是阳极，放在 X。X 处银片溶解：Ag → Ag+ + e-。阳极生成的 Ag+ 与阴极消耗的 Ag+ 相等，所以浓度基本不变。电子从阳极 X 流入电源正极，再从负极流向阴极 Y：方向是从 X 到 Y，而不是相反。",
-        "ku": "Di şeklê de X bi polê erênî (+) û Y bi polê neyînî (−) yê çavkaniyê ve girêdayî ye. Di şaneya elektrolîzê de elektroda ku bi polê erênî ve girêdayî ye anod, ya ku bi polê neyînî ve girêdayî ye katod e. Ji bo ku bi Ag+ + e- → Ag zîv li ser miftê kom bibe, divê mifte katod be, ango li Y be; pelê zîv anod e, ango li X ye. Li X pel dihele: Ag → Ag+ + e-. Çiqas Ag+ li anodê çêbibe ewqas li katodê tê xerckirin, ji ber vê tîrbûn hema hema sabît dimîne. Elektron ji anodê (X) diçin polê erênî û ji polê neyînî diçin katodê (Y): rê ji X ber bi Y ve ye, ne berevajî."
+        "ku": "Di şiklê de X bi qutba erênî (+) û Y bi qutba neyînî (−) ya çavkaniyê ve girêdayî ye. Di şaneya elektrolîzê de elektroda ku bi qutba erênî ve girêdayî ye anod, ya ku bi qutba neyînî ve girêdayî ye katod e. Ji bo ku bi Ag+ + e- → Ag zîv li ser miftê kom bibe, divê mifte katod be, ango li Y be; pelê zîv anod e, ango li X ye. Li X pel dihele: Ag → Ag+ + e-. Çiqas Ag+ li anodê çêbibe ewqas li katodê tê xerckirin, ji ber vê tîrbûn hema hema sabît dimîne. Elektron ji anodê (X) diçin qutba erênî û ji qutba neyînî diçin katodê (Y): rê ji X ber bi Y ve ye, ne berevajî."
       },
       "figure": {
         "kind": "svg",
@@ -1883,7 +1883,7 @@ export const unit22: ChemistryUnitSeedData = {
             "ru": "AgNO₃ (р-р)",
             "ar": "AgNO₃(aq)",
             "zh": "AgNO₃ 溶液",
-            "ku": "AgNO₃(av)"
+            "ku": "AgNO₃(aq)"
           }
         }
       }
@@ -1898,7 +1898,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ru": "С тремя одинаковыми очищенными железными гвоздями собирают показанные установки и оставляют на неделю (безводный CaCl2 — осушитель).\nВ каких пробирках гвоздь заметно ржавеет?",
         "ar": "حُضِّرت الأجهزة المبيّنة في الشكل باستخدام ثلاثة مسامير حديدية متماثلة ونظيفة وتُركت أسبوعًا (CaCl2 اللامائي مادة مجففة).\nفي أيّ الأنابيب يُلاحظ صدأ واضح على المسمار؟",
         "zh": "用三根相同且已清洁的铁钉按图示装置放置一周（无水 CaCl2 是干燥剂）。\n哪些试管中的铁钉明显生锈？",
-        "ku": "Bi sê bizmarên hesin ên wekhev û paqijkirî amûrên şeklê têne amadekirin û hefteyekê têne hiştin (CaCl2 ya bê av madeyeke hişkker e).\nDi kîjan lûleyan de bizmar bi awayekî diyar zengar digire?"
+        "ku": "Bi sê bizmarên hesin ên wekhev û paqijkirî amûrên şiklê têne amadekirin û hefteyekê têne hiştin (CaCl2 ya bê av madeyeke hişkker e).\nDi kîjan lûleyan de bizmar bi awayekî diyar zengar digire?"
       },
       "options": [
         {
@@ -2105,7 +2105,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ru": "Жертвенный металл должен окисляться раньше железа, то есть быть активнее его, а значит, его потенциал восстановления должен быть меньше (отрицательнее) -0,44 В. Из таблицы этому условию удовлетворяет только цинк (-0,76 В). Никель и олово кажутся подходящими, так как их потенциалы тоже отрицательны, но -0,25 В и -0,14 В больше -0,44 В; эти металлы менее активны, чем железо, и при их подключении анодом станет железо и будет корродировать быстрее. То же относится к меди и серебру.",
         "ar": "يجب أن يتأكسد الفلز المضحّي قبل الحديد، أي أن يكون أنشط منه، وهذا يعني أن يكون جهد اختزاله أصغر (أكثر سالبية) من -0.44 V. ولا يحقق هذا الشرط في الجدول إلا الزنك (-0.76 V). يبدو النيكل والقصدير مغريين لأن جهديهما سالبان أيضًا، لكن -0.25 V و -0.14 V أكبر من -0.44 V؛ فهذان الفلزان أقل نشاطًا من الحديد، وإذا وُصلا أصبح الحديد مصعدًا وتآكل أسرع. والأمر نفسه ينطبق على النحاس والفضة.",
         "zh": "牺牲金属必须先于铁被氧化，即比铁活泼，也就是其还原电势要低于（更负于）-0.44 V。表中只有锌(-0.76 V)满足条件。镍和锡的电势也是负值，看似可选，但 -0.25 V 和 -0.14 V 都大于 -0.44 V，它们不如铁活泼，若与铁相连，铁反而成为负极而腐蚀更快。铜和银同理。",
-        "ku": "Divê metala qurbanî berî hesin oksîde bibe, ango ji hesin çalaktir be; ev tê wê wateyê ku divê potansiyela wê ya redûksiyonê ji -0,44 V piçûktir (neyînîtir) be. Di tabloyê de tenê zink (-0,76 V) vî şertî pêk tîne. Nîkel û qelay jî ji ber ku potansiyelên wan neyînî ne balkêş xuya dikin, lê -0,25 V û -0,14 V ji -0,44 V mezintir in; ev metal ji hesin kêmçalaktir in û heke werin girêdan, hesin dibe anod û zûtir tê xwarin. Ji bo sifir û zîv jî heman rewş derbasdar e."
+        "ku": "Divê metala qurbanî berî hesin oksîde bibe, ango ji hesin çalaktir be; ev tê wê wateyê ku divê potansiyela wê ya redûksiyonê ji -0,44 V piçûktir (neyînîtir) be. Di tabloyê de tenê zink (-0,76 V) vî şertî pêk tîne. Nîkel û qelay jî ji ber ku potansiyelên wan neyînî ne balkêş xuya dikin, lê -0,25 V û -0,14 V ji -0,44 V mezintir in; ev metal ji hesin kêmçalaktir in û heke werin girêdan, hesin dibe anod û zûtir dixure. Ji bo sifir û zîv jî heman rewş derbasdar e."
       },
       "figure": {
         "kind": "table",
@@ -2158,7 +2158,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Zwei Eisenbleche, eines verzinnt (Sn), das andere verzinkt (Zn), werden so angeritzt, dass das Eisen freiliegt, und in feuchter Luft gelagert. (Aktivitätsreihe: Zn > Fe > Sn) Welche Aussagen sind richtig? I. Beim verzinkten Blech wird an der Ritzstelle Zink statt Eisen oxidiert. II. Beim verzinnten Blech kann das Eisen an der Ritzstelle schneller rosten als unbeschichtetes Eisen. III. Solange sie unbeschädigt sind, schützen beide Überzüge das Eisen, indem sie den Kontakt mit O2 und Feuchtigkeit verhindern.",
         "fr": "Deux tôles de fer, l'une étamée (Sn), l'autre galvanisée (Zn), sont rayées de façon à mettre le fer à nu, puis laissées à l'air humide. (Ordre d'activité : Zn > Fe > Sn) Parmi les affirmations suivantes, lesquelles sont correctes ? I. Sur la tôle zinguée, c'est le zinc et non le fer qui s'oxyde au niveau de la rayure. II. Sur la tôle étamée, le fer de la rayure peut rouiller plus vite que du fer non revêtu. III. Tant qu'ils sont intacts, les deux revêtements protègent le fer en l'isolant de O2 et de l'humidité.",
         "ru": "У двух железных листов, один из которых покрыт оловом (Sn), а другой цинком (Zn), процарапывают покрытие до железа и оставляют во влажном воздухе. (Ряд активности: Zn > Fe > Sn) Какие утверждения верны? I. На оцинкованном листе в месте царапины окисляется цинк, а не железо. II. На лужёном листе железо в месте царапины может ржаветь быстрее, чем железо без покрытия. III. Пока покрытия целы, оба защищают железо, изолируя его от O2 и влаги.",
-        "ar": "لوحان من الحديد أحدهما مطلي بالقصدير (Sn) والآخر بالزنك (Zn)، يُخدش طلاؤهما حتى يظهر الحديد ثم يُتركان في هواء رطب. (ترتيب النشاط: Zn > Fe > Sn) أيٌّ من العبارات الآتية صحيحة؟ I. في اللوح المطلي بالزنك يتأكسد الزنك بدلًا من الحديد عند الخدش. II. في اللوح المطلي بالقصدير قد يصدأ الحديد عند الخدش أسرع من الحديد غير المطلي. III. ما دام الطلاءان سليمين فإن كليهما يحمي الحديد بعزله عن O2 والرطوبة.",
+        "ar": "لوحان من الحديد أحدهما مطلي بالقصدير (Sn) والآخر بالزنك (Zn)، يُخدش طلاؤهما حتى يظهر الحديد ثم يُتركان في هواء رطب. (ترتيب النشاط: Zn > Fe > Sn) أيٌّ من العبارات الآتية عن هذين اللوحين صحيحة؟ I. في اللوح المطلي بالزنك يتأكسد الزنك بدلًا من الحديد عند الخدش. II. في اللوح المطلي بالقصدير قد يصدأ الحديد عند الخدش أسرع من الحديد غير المطلي. III. ما دام الطلاءان سليمين فإن كليهما يحمي الحديد بعزله عن O2 والرطوبة.",
         "zh": "两块铁板分别镀锡(Sn)和镀锌(Zn)，将镀层划破露出铁，放在潮湿空气中。(活动性顺序：Zn > Fe > Sn)下列说法中哪些正确？I. 镀锌铁板划痕处被氧化的是锌而不是铁。II. 镀锡铁板划痕处的铁可能比未镀层的铁生锈更快。III. 镀层完好时，两种镀层都能隔绝铁与 O2 和水分的接触而起保护作用。",
         "ku": "Pêçanên du pelên hesin ên ku yek bi qelayê (Sn), yê din bi zinkê (Zn) hatiye pêçandin têne xêzkirin da ku rûyê hesin derkeve holê, û pel di hewaya şil de têne hiştin. (Rêza çalakiyê: Zn > Fe > Sn) Derbarê van pelan de; I. Li ser pelê bi zinkê pêçayî, li cihê xêzê li şûna hesin zink oksîde dibe. II. Li ser pelê bi qelayê pêçayî, hesinê li cihê xêzê dikare ji hesinê qet nepêçayî zûtir zengar bigire. III. Heta ku pêçan saxlem bin, her du pêçan jî bi birîna têkiliya hesin bi O2 û şiliyê re wî diparêzin. kîjan ji van gotinan rast in?"
       },
@@ -2310,7 +2310,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Bei der Elektrolyse einer CuCl2-Lösung mit inerten Elektroden entsteht an der Kathode Cu und an der Anode Cl2. Mit Cu2+ + 2e- → Cu E° = +0,34 V und Cl2 + 2e- → 2Cl- E° = +1,36 V: Welche Mindestspannung (theoretisch) in Volt muss die äußere Quelle unter Standardbedingungen anlegen?",
         "fr": "Lors de l'électrolyse d'une solution de CuCl2 avec des électrodes inertes, Cu se forme à la cathode et Cl2 à l'anode. Sachant que Cu2+ + 2e- → Cu E° = +0,34 V et Cl2 + 2e- → 2Cl- E° = +1,36 V, quelle tension minimale (théorique), en volts, la source extérieure doit-elle appliquer dans les conditions standard ?",
         "ru": "При электролизе раствора CuCl2 с инертными электродами на катоде образуется Cu, на аноде — Cl2. Дано: Cu2+ + 2e- → Cu E° = +0,34 В; Cl2 + 2e- → 2Cl- E° = +1,36 В. Какое минимальное (теоретическое) напряжение в вольтах должен подать внешний источник, чтобы провести этот электролиз при стандартных условиях?",
-        "ar": "عند التحليل الكهربائي لمحلول CuCl2 بأقطاب خاملة يتكون Cu عند المهبط و Cl2 عند المصعد. إذا كان Cu2+ + 2e- → Cu E° = +0.34 V و Cl2 + 2e- → 2Cl- E° = +1.36 V، فما أقل جهد (نظري) بالفولت يجب أن يطبقه المصدر الخارجي لإجراء هذا التحليل في الظروف القياسية؟",
+        "ar": "عند التحليل الكهربائي لمحلول CuCl2 بأقطاب خاملة يتكون Cu عند المهبط وCl2 عند المصعد. إذا كان Cu2+ + 2e- → Cu E° = +0.34 V وCl2 + 2e- → 2Cl- E° = +1.36 V، فما أقل جهد (نظري) بالفولت يجب أن يطبقه المصدر الخارجي لإجراء هذا التحليل في الظروف القياسية؟",
         "zh": "用惰性电极电解 CuCl2 溶液时，阴极生成 Cu，阳极生成 Cl2。已知 Cu2+ + 2e- → Cu E° = +0.34 V，Cl2 + 2e- → 2Cl- E° = +1.36 V，在标准状态下外电源至少（理论上）需要施加多少伏电压？",
         "ku": "Dema çareseriya CuCl2 bi elektrodên înert tê elektrolîzkirin, li katodê Cu û li anodê Cl2 çêdibe. Li gorî Cu2+ + 2e- → Cu E° = +0,34 V û Cl2 + 2e- → 2Cl- E° = +1,36 V, di şertên standard de ji bo pêkhatina vê elektrolîzê divê çavkaniya derve herî kêm (bi teorîk) çend volt bide?"
       },

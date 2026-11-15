@@ -762,7 +762,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Газ — текучая среда выше своей критической температуры, поэтому его нельзя сжижить одним лишь повышением давления (O2, N2, He при комнатных условиях); пар — текучая среда ниже своей критической температуры, его можно сконденсировать одним повышением давления (водяной пар, пары иода).",
         "ar": "الغاز مائع فوق درجة حرارته الحرجة، فلا يمكن إسالته بزيادة الضغط وحدها (O2 وN2 وHe في الظروف العادية)؛ أما البخار فمائع تحت درجة حرارته الحرجة، فيمكن تكثيفه بزيادة الضغط وحدها (بخار الماء، بخار اليود).",
         "zh": "气体是处于其临界温度以上的流体，仅靠加压不能使其液化（常温下的 O2、N2、He）；而蒸气是处于其临界温度以下的流体，仅靠加压就能使其凝结（水蒸气、碘蒸气）。",
-        "ku": "Gaz ew herikbar e ku li ser germahiya xwe ya krîtîk e, ji ber vê tenê bi zêdekirina zextê nayê şilekirin (di şertên odeyê de O2, N2, He); buhar jî ew herikbar e ku li binê germahiya xwe ya krîtîk e, ji ber vê tenê bi zêdekirina zextê dikare were hilmandin (buhara avê, buhara îyotê)."
+        "ku": "Gaz ew herikbar e ku li ser germahiya xwe ya krîtîk e, ji ber vê tenê bi zêdekirina zextê nayê şilekirin (di şertên odeyê de O2, N2, He); buhar jî ew herikbar e ku li binê germahiya xwe ya krîtîk e, ji ber vê tenê bi zêdekirina zextê dikare were şilekirin (buhara avê, buhara îyotê)."
       }
     },
     {
@@ -1126,7 +1126,7 @@ export const unit04: ChemistryUnitSeedData = {
         "de": "Der Gleichgewichtsdampfdruck hängt nur von Art, Reinheit und Temperatur der Flüssigkeit ab, nicht von der Flüssigkeitsmenge oder dem Gasraum darüber. I und II enthalten reines Wasser bei derselben Temperatur (25 °C), also ist P(I) = P(II), obwohl die Mengen verschieden sind. In III ist nichtflüchtiges NaCl gelöst; gelöste Teilchen besetzen einen Teil der Oberfläche, die Verdunstung nimmt ab und der Dampfdruck ist niedriger als der von reinem Wasser gleicher Temperatur. Reihenfolge: P(I) = P(II) > P(III).",
         "fr": "La pression de vapeur à l'équilibre ne dépend que de la nature, de la pureté et de la température du liquide, et non de la quantité de liquide ni du volume au-dessus. I et II contiennent de l'eau pure à la même température (25 °C) : P(I) = P(II), même si les quantités diffèrent. En III, du NaCl non volatil est dissous ; les particules dissoutes occupent une partie de la surface, l'évaporation diminue et la pression de vapeur est inférieure à celle de l'eau pure à la même température. Ordre : P(I) = P(II) > P(III).",
         "ru": "Равновесное давление пара зависит только от природы, чистоты и температуры жидкости, но не от количества жидкости или объёма над ней. В I и II чистая вода при одной и той же температуре (25 °C), поэтому P(I) = P(II), хотя количества воды разные. В III растворён нелетучий NaCl; растворённые частицы занимают часть поверхности, испарение уменьшается, и давление пара ниже, чем у чистой воды при той же температуре. Порядок: P(I) = P(II) > P(III).",
-        "ar": "يعتمد ضغط البخار عند الاتزان على نوع السائل ونقاوته ودرجة حرارته فقط، لا على كمية السائل أو حجم الفراغ فوقه. يحتوي الوعاءان I وII على ماء نقي عند درجة الحرارة نفسها (25 °C)، لذا P(I) = P(II) رغم اختلاف الكميتين. وفي III ذاب NaCl غير المتطاير في الماء؛ فتشغل الجسيمات المذابة جزءًا من السطح ويقل التبخر، فيكون ضغط البخار أقل منه للماء النقي عند درجة الحرارة نفسها. الترتيب: P(I) = P(II) > P(III).",
+        "ar": "يعتمد ضغط البخار عند الاتزان على نوع السائل ونقاوته ودرجة حرارته فقط، لا على كمية السائل أو حجم الفراغ فوقه. يحتوي الوعاءان I و II على ماء نقي عند درجة الحرارة نفسها (25 °C)، لذا P(I) = P(II) رغم اختلاف الكميتين. وفي III ذاب NaCl غير المتطاير في الماء؛ فتشغل الجسيمات المذابة جزءًا من السطح ويقل التبخر، فيكون ضغط البخار أقل منه للماء النقي عند درجة الحرارة نفسها. الترتيب: P(I) = P(II) > P(III).",
         "zh": "平衡蒸气压只取决于液体的种类、纯度和温度，与液体的量及其上方空间的体积无关。I 和 II 中都是相同温度（25 °C）的纯水，虽然水量不同，P(I) = P(II)。III 中溶有不挥发的 NaCl，溶质粒子占据了部分液面，蒸发减少，蒸气压低于同温度下的纯水。顺序：P(I) = P(II) > P(III)。",
         "ku": "Zexta buharê ya hevsengiyê tenê bi cure, paqijî û germahiya şileyê ve girêdayî ye; bi mîqdara şileyê an qebareya ser wê ve ne girêdayî ye. Di I û II de di heman germahiyê de (25 °C) ava pak heye, ji ber vê her çend mîqdar cuda bin jî P(I) = P(II) e. Di III de NaCl ya nefirok di avê de heliyaye; perçeyên helandî cihê hin molekulên avê yên li ser rûyê digirin, buharbûn kêm dibe û zexta buharê ji ya ava pak a di heman germahiyê de nizmtir e. Rêz: P(I) = P(II) > P(III)."
       },
@@ -1858,7 +1858,7 @@ export const unit04: ChemistryUnitSeedData = {
             "ru": "Твёрдость",
             "ar": "الصلابة",
             "zh": "硬度",
-            "ku": "Hişkbûn"
+            "ku": "Hişkî"
           },
           {
             "tr": "Erime noktası",

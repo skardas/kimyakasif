@@ -296,10 +296,11 @@ function scoreCandidate(
   visualFocus: boolean,
   jitter: number
 ): number {
-  const hasDiagram = q.diagram !== undefined;
+  // A question is visual when it carries a unit diagram or its own authored figure (şekilli soru).
+  const hasVisual = q.diagram !== undefined || q.figure !== undefined;
   let score = jitter;
 
-  if (visualFocus && hasDiagram) {
+  if (visualFocus && hasVisual) {
     score += 1000;
   }
 
@@ -309,7 +310,7 @@ function scoreCandidate(
       else if (q.difficulty === 'medium') score += 35;
       else if (q.difficulty === 'hard') score += 10;
       else score += 15;
-      if (!hasDiagram) score += 15;
+      if (!hasVisual) score += 15;
       break;
     case 'standart':
       if (q.difficulty === 'medium') score += 40;
@@ -318,7 +319,7 @@ function scoreCandidate(
       else score += 20;
       break;
     case 'ileri':
-      if (hasDiagram) score += 1000;
+      if (hasVisual) score += 1000;
       if (q.difficulty === 'hard') score += 45;
       else if (q.difficulty === 'osym') score += 40;
       else if (q.difficulty === 'medium') score += 25;
@@ -327,7 +328,7 @@ function scoreCandidate(
       if (q.difficulty === 'osym') score += 50;
       else if (q.difficulty === 'hard') score += 45;
       else if (q.difficulty === 'medium') score += 20;
-      if (hasDiagram) score += 25;
+      if (hasVisual) score += 25;
       break;
   }
 
@@ -791,7 +792,7 @@ export function calculateOsymNet(correct: number, wrong: number): number {
 /**
  * Builds the 20 questions for TG Derece Provası:
  * Exactly 7 TYT questions (from u01..u10) + 13 AYT questions (from u11..u24).
- * Prioritizes high difficulty ('osym' / 'hard') and diagram questions.
+ * Prioritizes high difficulty ('osym' / 'hard') and visual (diagram or figure) questions.
  */
 export function buildTgProvaQuestions(
   units: ChemistryUnitSeedData[],

@@ -1563,7 +1563,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Константа равновесия (через концентрации) реакции PCl5(г) ⇌ PCl3(г) + Cl2(г) при 227 °C равна Kc = 0,05. Чему равна константа равновесия Kp (через парциальные давления) при той же температуре? (R = 0,082 л·атм/(моль·K))",
         "ar": "ثابت الاتزان بدلالة التراكيز للتفاعل PCl5(g) ⇌ PCl3(g) + Cl2(g) عند 227 °C هو Kc = 0.05. ما قيمة ثابت الاتزان بدلالة الضغوط الجزئية Kp عند الدرجة نفسها؟ (R = 0.082 L·atm/(mol·K))",
         "zh": "反应 PCl5(g) ⇌ PCl3(g) + Cl2(g) 在 227 °C 时以浓度表示的平衡常数 Kc = 0.05。同温度下以分压表示的平衡常数 Kp 是多少？(R = 0.082 L·atm/(mol·K))",
-        "ku": "Sabîta hevsengiyê ya bi tîrbûnan a reaksiyona PCl5(g) ⇌ PCl3(g) + Cl2(g) li 227 °C Kc = 0,05 e. Di heman germahiyê de sabîta hevsengiyê ya bi zextên parçeyî (Kp) çend e? (R = 0,082 L·atm/(mol·K))"
+        "ku": "Sabîta hevsengiyê ya bi tîrbûnan a reaksiyona PCl5(g) ⇌ PCl3(g) + Cl2(g) li 227 °C Kc = 0,05 e. Di heman germahiyê de sabîta hevsengiyê ya bi zextên qismî (Kp) çend e? (R = 0,082 L·atm/(mol·K))"
       },
       "options": [
         {
@@ -1971,7 +1971,7 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Das Diagramm zeigt die zeitliche Änderung der Konzentrationen, nachdem das System X(g) + Y(g) ⇌ Z(g), das sich in einem Gefäß mit konstantem Volumen bei konstanter Temperatur im Gleichgewicht befindet, zum Zeitpunkt t1 gestört wurde. I. Zum Zeitpunkt t1 wurde Gas Z zugegeben. II. Zwischen t1 und t2 ist die Rückreaktion schneller als die Hinreaktion. III. Im neuen Gleichgewicht nach t2 ist Kc größer als im ersten Gleichgewicht. Welche Aussagen sind richtig?",
         "fr": "Le graphique montre l'évolution des concentrations après que le système X(g) + Y(g) ⇌ Z(g), à l'équilibre dans un récipient de volume constant à température constante, a été perturbé à l'instant t1. I. Du gaz Z a été ajouté au récipient à t1. II. Entre t1 et t2, la vitesse de la réaction inverse est supérieure à celle de la réaction directe. III. Dans le nouvel équilibre après t2, Kc est plus grand que dans le premier équilibre. Lesquelles de ces affirmations sont exactes ?",
         "ru": "На графике показано изменение концентраций во времени после того, как на систему X(г) + Y(г) ⇌ Z(г), находившуюся в равновесии в сосуде постоянного объёма при постоянной температуре, в момент t1 было оказано воздействие. I. В момент t1 в сосуд добавили газ Z. II. В промежутке t1–t2 скорость обратной реакции больше скорости прямой. III. В новом равновесии после t2 значение Kc больше, чем в первом. Какие утверждения верны?",
-        "ar": "يبيّن الرسم البياني تغيّر التراكيز مع الزمن بعد التأثير عند اللحظة t1 في النظام X(g) + Y(g) ⇌ Z(g) المتزن في وعاء ثابت الحجم عند درجة حرارة ثابتة. I. أُضيف غاز Z إلى الوعاء عند t1. II. في الفترة t1–t2 تكون سرعة التفاعل العكسي أكبر من سرعة التفاعل الأمامي. III. في الاتزان الجديد بعد t2 تكون قيمة Kc أكبر منها في الاتزان الأول. أيّ هذه العبارات صحيحة؟",
+        "ar": "يبيّن الرسم البياني تغيّر التراكيز مع الزمن بعد إحداث تأثير في النظام X(g) + Y(g) ⇌ Z(g) المتزن في وعاء ثابت الحجم عند درجة حرارة ثابتة، وذلك عند اللحظة t1. I. أُضيف غاز Z إلى الوعاء عند t1. II. في الفترة t1–t2 تكون سرعة التفاعل العكسي أكبر من سرعة التفاعل الأمامي. III. في الاتزان الجديد بعد t2 تكون قيمة Kc أكبر منها في الاتزان الأول. أيّ هذه العبارات صحيحة؟",
         "zh": "图中曲线表示：在恒温恒容容器中处于平衡的体系 X(g) + Y(g) ⇌ Z(g) 在 t1 时刻受到某种改变后，各物质浓度随时间的变化。I. t1 时向容器中加入了 Z 气体。II. t1–t2 期间逆反应速率大于正反应速率。III. t2 之后的新平衡中 Kc 比原平衡大。以上说法中哪些正确？",
         "ku": "Grafîk guherîna tîrbûnan li gorî demê nîşan dide, piştî ku li sîstema X(g) + Y(g) ⇌ Z(g) ya di firaxeke bi qebareya sabît û germahiya sabît de di hevsengiyê de, di dema t1 de bandorek hatiye kirin. I. Di dema t1 de gaza Z li firaxê hatiye zêdekirin. II. Di navbera t1–t2 de leza reaksiyona paşve ji leza reaksiyona pêşve mezintir e. III. Di hevsengiya nû ya piştî t2 de nirxa Kc ji ya hevsengiya yekem mezintir e. Kîjan ji van gotinan rast in?"
       },
@@ -2191,7 +2191,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "В закрытый сосуд постоянного объёма помещают только газ N2O4. На графике показано изменение общего давления в сосуде во времени при установлении равновесия N2O4(г) ⇌ 2NO2(г) при постоянной температуре. Чему равна константа равновесия Kp в парциальных давлениях при этой температуре?",
         "ar": "يوضع غاز N2O4 وحده في وعاء مغلق ثابت الحجم. يبيّن الرسم البياني تغيّر الضغط الكلي في الوعاء مع الزمن في أثناء قيام الاتزان N2O4(g) ⇌ 2NO2(g) عند درجة حرارة ثابتة. ما ثابت الاتزان بدلالة الضغوط الجزئية Kp عند هذه الدرجة؟",
         "zh": "向密闭恒容容器中只充入 N2O4 气体。恒温下建立平衡 N2O4(g) ⇌ 2NO2(g) 的过程中，容器内总压强随时间的变化如图所示。该温度下以分压表示的平衡常数 Kp 是多少？",
-        "ku": "Tenê gaza N2O4 dikeve firaxeke girtî ya bi qebareya sabît. Dema ku di germahiya sabît de hevsengiya N2O4(g) ⇌ 2NO2(g) saz dibe, guherîna zexta giştî ya firaxê li gorî demê di grafîkê de hatiye dayîn. Di vê germahiyê de sabîta hevsengiyê ya bi zextên parçeyî Kp çend e?"
+        "ku": "Tenê gaza N2O4 dikeve firaxeke girtî ya bi qebareya sabît. Dema ku di germahiya sabît de hevsengiya N2O4(g) ⇌ 2NO2(g) saz dibe, guherîna zexta giştî ya firaxê li gorî demê di grafîkê de hatiye dayîn. Di vê germahiyê de sabîta hevsengiyê ya bi zextên qismî Kp çend e?"
       },
       "options": [
         {

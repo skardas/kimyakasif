@@ -1131,7 +1131,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "На графике показана зависимость давления от объёма для постоянного количества идеального газа при температурах T1 и T2. Если T1 = 27 °C, чему равна T2 (в °C)?",
         "ar": "يبيّن الرسم البياني العلاقة بين الضغط والحجم لكمية ثابتة من غاز مثالي عند درجتي الحرارة T1 وT2. إذا كانت T1 تساوي 27 °C فكم تساوي T2 بوحدة °C؟",
         "zh": "图中给出了一定量理想气体在温度 T1 和 T2 下的压强–体积关系。若 T1 为 27 °C，则 T2 为多少 °C？",
-        "ku": "Di grafîka şeklê de guherîna zext–qebareyê ya mîqdareke sabît a gazeke îdeal di germahiyên T1 û T2 de hatiye dayîn. Eger T1 27 °C be, T2 çend °C ye?"
+        "ku": "Di grafîka şiklê de guherîna zext–qebareyê ya mîqdareke sabît a gazeke îdeal di germahiyên T1 û T2 de hatiye dayîn. Eger T1 27 °C be, T2 çend °C ye?"
       },
       "options": [
         {
@@ -1140,7 +1140,7 @@ export const unit12: ChemistryUnitSeedData = {
           "de": "13,5 °C",
           "fr": "13,5 °C",
           "ru": "13,5 °C",
-          "ar": "13,5 °C",
+          "ar": "13.5 °C",
           "zh": "13,5 °C",
           "ku": "13,5 °C"
         },
@@ -1714,7 +1714,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "In einem starren Behälter hat ein Gemisch aus 4 g He, 16 g O2 und 14 g N2 einen Gesamtdruck von 1,6 atm. Wie groß ist der Partialdruck von O2 in atm? (He = 4, N = 14, O = 16)",
         "fr": "Dans un récipient rigide, un mélange de 4 g de He, 16 g de O2 et 14 g de N2 a une pression totale de 1,6 atm. Quelle est la pression partielle de O2 en atm ? (He = 4, N = 14, O = 16)",
         "ru": "В сосуде постоянного объёма смесь из 4 г He, 16 г O2 и 14 г N2 имеет общее давление 1,6 атм. Каково парциальное давление O2 (в атм)? (He = 4, N = 14, O = 16)",
-        "ar": "في وعاء ثابت الحجم، الضغط الكلي لمخلوط من 4 g He و16 g O2 و14 g N2 يساوي 1.6 atm. كم يبلغ الضغط الجزئي لغاز O2 بوحدة atm؟ (He = 4، N = 14، O = 16)",
+        "ar": "في وعاء ثابت الحجم، الضغط الكلي لخليط من 4 g He و16 g O2 و14 g N2 يساوي 1.6 atm. كم يبلغ الضغط الجزئي لغاز O2 بوحدة atm؟ (He = 4، N = 14، O = 16)",
         "zh": "刚性容器中由 4 g He、16 g O2 和 14 g N2 组成的混合气体总压强为 1.6 atm。O2 的分压是多少 atm？(He = 4，N = 14，O = 16)",
         "ku": "Di firaxeke bi qebareya sabît de zexta giştî ya tevliheviya ji gazên 4 g He, 16 g O2 û 14 g N2 1,6 atm e. Zexta qismî ya gaza O2 çend atm e? (He = 4, N = 14, O = 16)"
       },
@@ -1792,7 +1792,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "Газ из сосуда подключён к открытому ртутному манометру, как показано на рисунке. Какой была бы разность уровней ртути (в см), если бы тот же газ при тех же условиях подключили к закрытому ртутному манометру? (Атмосферное давление 76 см рт. ст.)",
         "ar": "وُصل غاز في وعاء بمانومتر زئبقي مفتوح الطرف كما في الشكل. لو وُصل الغاز نفسه في الظروف نفسها بمانومتر زئبقي مغلق الطرف، فكم يكون فرق مستويي الزئبق بوحدة cm؟ (الضغط الجوي 76 cmHg.)",
         "zh": "如图所示，容器中的气体连接在开口汞压强计上。若在相同条件下把该气体连接到闭口汞压强计上，两侧汞面高度差为多少 cm？(大气压为 76 cmHg。)",
-        "ku": "Gaza di firaxekê de wek di şeklê de bi manometreyeke cîweyî ya devvekirî ve hatiye girêdan. Heke heman gaz di heman şertan de bi manometreyeke cîweyî ya devgirtî ve bihata girêdan, ferqa di navbera astên cîweyê de dê çend cm bûya? (Zexta hewaya vekirî 76 cmHg ye.)"
+        "ku": "Gaza di firaxekê de wek di şiklê de bi manometreyeke cîweyî ya devvekirî ve hatiye girêdan. Heke heman gaz di heman şertan de bi manometreyeke cîweyî ya devgirtî ve bihata girêdan, ferqa di navbera astên cîweyê de dê çend cm bûya? (Zexta hewaya vekirî 76 cmHg ye.)"
       },
       "options": [
         {
@@ -1855,7 +1855,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "На рисунке уровень ртути в колене, открытом в атмосферу, на 14 см выше, чем в колене, соединённом с газом; газ вытеснил ртуть в открытое колено, значит, его давление больше атмосферного: P(газа) = 76 + 14 = 90 см рт. ст. В закрытом колене закрытого манометра вакуум (давление ≈ 0), поэтому разность уровней прямо равна давлению газа: h = 90 см. Вычесть разность из атмосферного давления (76 − 14 = 62), взять разность открытого манометра без изменений (14) или указать лишь атмосферное давление (76) — типичные ошибки.",
         "ar": "في الشكل يكون مستوى الزئبق في الذراع المفتوحة للجو أعلى بمقدار 14 cm منه في الذراع المتصلة بالغاز؛ أي إن الغاز دفع الزئبق نحو الذراع المفتوحة، فضغطه أكبر من الضغط الجوي: P(الغاز) = 76 + 14 = 90 cmHg. وفي الذراع المغلقة للمانومتر مغلق الطرف يوجد فراغ (الضغط ≈ 0)، لذا يساوي فرق المستويين ضغط الغاز مباشرة: h = 90 cm. ومن الأخطاء الشائعة طرح الفرق من الضغط الجوي (76 − 14 = 62)، أو أخذ فرق المانومتر المفتوح كما هو (14)، أو كتابة الضغط الجوي وحده (76).",
         "zh": "图中通大气一侧的汞面比连接气体一侧高 14 cm，说明气体把汞压向开口侧，气体压强大于大气压：P(气体) = 76 + 14 = 90 cmHg。闭口压强计的封闭侧为真空(压强 ≈ 0)，所以高度差直接等于气体压强：h = 90 cm。用大气压减去高度差(76 − 14 = 62)、照搬开口压强计的高度差(14)或只写大气压(76)，都是典型错误。",
-        "ku": "Di şeklê de asta cîweyê di milê ku ji atmosferê re vekirî ye de 14 cm ji ya milê ku bi gazê ve girêdayî ye bilindtir e; gazê cîwe ber bi milê vekirî ve paldaye, yanî zexta gazê ji zexta hewaya vekirî mezintir e: P(gaz) = 76 + 14 = 90 cmHg. Di milê girtî yê manometreya devgirtî de valahî heye (zext ≈ 0), ji ber vê yekê ferqa astan rasterast bi zexta gazê re wekhev e: h = 90 cm. Derxistina ferqê ji zexta hewaya vekirî (76 − 14 = 62), wergirtina ferqa manometreya devvekirî wek xwe (14) an tenê nivîsandina zexta hewayê (76) xeletiyên tîpîk in."
+        "ku": "Di şiklê de asta cîweyê di milê ku ji atmosferê re vekirî ye de 14 cm ji ya milê ku bi gazê ve girêdayî ye bilindtir e; gazê cîwe ber bi milê vekirî ve paldaye, yanî zexta gazê ji zexta hewaya vekirî mezintir e: P(gaz) = 76 + 14 = 90 cmHg. Di milê girtî yê manometreya devgirtî de valahî heye (zext ≈ 0), ji ber vê yekê ferqa astan rasterast bi zexta gazê re wekhev e: h = 90 cm. Derxistina ferqê ji zexta hewaya vekirî (76 − 14 = 62), wergirtina ferqa manometreya devvekirî wek xwe (14) an tenê nivîsandina zexta hewayê (76) xeletiyên tîpîk in."
       },
       "figure": {
         "kind": "svg",
@@ -1894,9 +1894,9 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "In der gezeigten Anordnung enthalten die Behälter bei geschlossenem Hahn die angegebenen Gase. Bei konstanter Temperatur wird der Hahn geöffnet, und die Gase vermischen sich vollständig (das Volumen des Verbindungsrohrs ist zu vernachlässigen). Welche Aussagen sind richtig?\nI. Am Ende beträgt der Gesamtdruck 2,4 atm.\nII. Am Ende ist der Partialdruck von He gleich dem Partialdruck von Ne.\nIII. Die Stoffmenge von Ne ist größer als die von He.",
         "fr": "Dans le dispositif représenté, les récipients contiennent les gaz indiqués lorsque le robinet est fermé. À température constante, on ouvre le robinet et les gaz se mélangent complètement (on néglige le volume du tube de liaison). Quelles affirmations sont vraies ?\nI. La pression totale finale vaut 2,4 atm.\nII. À la fin, la pression partielle de He est égale à celle de Ne.\nIII. La quantité de matière de Ne est supérieure à celle de He.",
         "ru": "В показанной установке при закрытом кране в сосудах находятся указанные газы. При постоянной температуре кран открывают, и газы полностью смешиваются (объёмом соединительной трубки пренебречь). Какие утверждения верны?\nI. Конечное общее давление равно 2,4 атм.\nII. В конце парциальное давление He равно парциальному давлению Ne.\nIII. Количество вещества Ne больше, чем He.",
-        "ar": "في الجهاز المبيَّن تحتوي الأوعية على الغازات المذكورة والصمام مغلق. يُفتح الصمام مع إبقاء درجة الحرارة ثابتة فيختلط الغازان تمامًا (يُهمل حجم أنبوب التوصيل). أيّ العبارات الآتية صحيحة؟\nI. يصبح الضغط الكلي النهائي 2.4 atm.\nII. في النهاية يساوي الضغط الجزئي لـ He الضغط الجزئي لـ Ne.\nIII. عدد مولات Ne أكبر من عدد مولات He.",
+        "ar": "في الجهاز المبيَّن في الشكل تحتوي الأوعية على الغازات المذكورة والصمام مغلق. يُفتح الصمام مع إبقاء درجة الحرارة ثابتة فيختلط الغازان تمامًا (يُهمل حجم أنبوب التوصيل). أيّ العبارات الآتية صحيحة؟\nI. يصبح الضغط الكلي النهائي 2.4 atm.\nII. في النهاية يساوي الضغط الجزئي لـ He الضغط الجزئي لـ Ne.\nIII. عدد مولات Ne أكبر من عدد مولات He.",
         "zh": "如图所示装置中，阀门关闭时两容器中装有图示气体。保持温度不变打开阀门，气体完全混合（连接管体积忽略不计）。下列说法中哪些正确？\nI. 最终总压强为 2.4 atm。\nII. 最终 He 的分压等于 Ne 的分压。\nIII. Ne 的物质的量大于 He。",
-        "ku": "Di sazûmana şeklê de dema muslux girtî ye, gazên diyarkirî di firaxan de ne. Germahî sabît tê hiştin, muslux tê vekirin û gaz bi tevahî tevlî hev dibin (qebareya lûleya girêdanê nayê hesibandin). Kîjan ji van gotinan rast in?\nI. Di dawiyê de zexta giştî 2,4 atm e.\nII. Di dawiyê de zexta qismî ya He bi zexta qismî ya Ne re wekhev e.\nIII. Hejmara molan a gaza Ne ji ya He mezintir e."
+        "ku": "Di sazûmana şiklê de dema muslux girtî ye, gazên diyarkirî di firaxan de ne. Germahî sabît tê hiştin, muslux tê vekirin û gaz bi tevahî tevlî hev dibin (qebareya lûleya girêdanê nayê hesibandin). Kîjan ji van gotinan rast in?\nI. Di dawiyê de zexta giştî 2,4 atm e.\nII. Di dawiyê de zexta qismî ya He bi zexta qismî ya Ne re wekhev e.\nIII. Hejmara molan a gaza Ne ji ya He mezintir e."
       },
       "options": [
         {
@@ -1959,7 +1959,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "На рисунке He находится в сосуде объёмом 2 л при 3 атм, Ne — в сосуде объёмом 3 л при 2 атм. После открытия крана каждый газ занимает общий объём 2 + 3 = 5 л; при постоянной температуре P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 атм, P(Ne) = 2·3/5 = 1,2 атм. I верно: общее давление 1,2 + 1,2 = 2,4 атм. II верно: оба парциальных давления равны 1,2 атм. III неверно: при одинаковой температуре количество вещества пропорционально P·V; P·V(He) = 3·2 = 6 и P·V(Ne) = 2·3 = 6, т. е. количества веществ равны. Усреднять давления (2,5 атм) или считать, что в большем сосуде газа больше, — типичные ошибки.",
         "ar": "في الشكل يكون He في الوعاء ذي 2 L عند 3 atm، وNe في الوعاء ذي 3 L عند 2 atm. عند فتح الصمام ينتشر كل غاز في الحجم الكلي 2 + 3 = 5 L، وعند ثبات درجة الحرارة P1·V1 = P2·V2: P(He) = 3·2/5 = 1.2 atm وP(Ne) = 2·3/5 = 1.2 atm. العبارة I صحيحة: الضغط الكلي 1.2 + 1.2 = 2.4 atm. العبارة II صحيحة: الضغطان الجزئيان كلاهما 1.2 atm. العبارة III خاطئة: عند درجة الحرارة نفسها يتناسب عدد المولات مع P·V، وP·V(He) = 3·2 = 6 وP·V(Ne) = 2·3 = 6، فعددا المولات متساويان. ومن الأخطاء الشائعة أخذ متوسط الضغطين (2.5 atm) أو الظن أن الغاز في الوعاء الأكبر عدد مولاته أكبر.",
         "zh": "图中 He 在 2 L 容器中，压强 3 atm；Ne 在 3 L 容器中，压强 2 atm。打开阀门后，每种气体都扩散到 2 + 3 = 5 L 的总体积中；温度不变时 P1·V1 = P2·V2：P(He) = 3·2/5 = 1.2 atm，P(Ne) = 2·3/5 = 1.2 atm。I 正确：总压强为 1.2 + 1.2 = 2.4 atm。II 正确：两种气体的分压都是 1.2 atm。III 错误：同温下物质的量与 P·V 成正比，P·V(He) = 3·2 = 6，P·V(Ne) = 2·3 = 6，所以物质的量相等。把两压强取平均(2.5 atm)或认为大容器中的气体物质的量更大，都是典型错误。",
-        "ku": "Di şeklê de He di firaxa 2 L de bi zexta 3 atm, Ne jî di firaxa 3 L de bi zexta 2 atm e. Dema muslux tê vekirin her gaz li qebareya giştî ya 2 + 3 = 5 L belav dibe; di germahiya sabît de P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm. I rast e: zexta giştî 1,2 + 1,2 = 2,4 atm e. II rast e: herdu zextên qismî 1,2 atm in. III şaş e: di heman germahiyê de hejmara molan bi P·V re rêjeyî ye; P·V(He) = 3·2 = 6 û P·V(Ne) = 2·3 = 6, ji ber vê yekê hejmarên molan wekhev in. Girtina navînê ya zextan (2,5 atm) an hesibandina ku gaza di firaxa mezintir de bêtir mol e xeletiyên tîpîk in."
+        "ku": "Di şiklê de He di firaxa 2 L de bi zexta 3 atm, Ne jî di firaxa 3 L de bi zexta 2 atm e. Dema muslux tê vekirin her gaz li qebareya giştî ya 2 + 3 = 5 L belav dibe; di germahiya sabît de P1·V1 = P2·V2: P(He) = 3·2/5 = 1,2 atm, P(Ne) = 2·3/5 = 1,2 atm. I rast e: zexta giştî 1,2 + 1,2 = 2,4 atm e. II rast e: herdu zextên qismî 1,2 atm in. III şaş e: di heman germahiyê de hejmara molan bi P·V re rêjeyî ye; P·V(He) = 3·2 = 6 û P·V(Ne) = 2·3 = 6, ji ber vê yekê hejmarên molan wekhev in. Girtina navînê ya zextan (2,5 atm) an hesibandina ku gaza di firaxa mezintir de bêtir mol e xeletiyên tîpîk in."
       },
       "figure": {
         "kind": "svg",
@@ -2142,7 +2142,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ru": "На графике показано изменение объёмов идеальных газов X и Y, находящихся при одинаковом постоянном давлении, в зависимости от абсолютной температуры. Какие утверждения верны?\nI. При одинаковой температуре количество вещества X в 2 раза больше, чем Y.\nII. Объём X при 27 °C равен 3 л.\nIII. Если массы X и Y равны, молярная масса X больше, чем Y.",
         "ar": "يبيّن الرسم البياني تغيّر حجمي الغازين المثاليين X وY الموجودين عند الضغط الثابت نفسه مع درجة الحرارة المطلقة. أيّ العبارات الآتية صحيحة؟\nI. عند درجة الحرارة نفسها يكون عدد مولات X ضعف عدد مولات Y.\nII. حجم X عند 27 °C يساوي 3 L.\nIII. إذا تساوت كتلتا X وY فإن الكتلة المولية لـ X أكبر منها لـ Y.",
         "zh": "图中给出了处于相同恒定压强下的理想气体 X 和 Y 的体积随热力学温度的变化。下列说法中哪些正确？\nI. 同一温度下 X 的物质的量是 Y 的 2 倍。\nII. X 在 27 °C 时的体积为 3 L。\nIII. 若 X 和 Y 质量相等，则 X 的摩尔质量大于 Y。",
-        "ku": "Grafîka di şeklê de nîşan dide ku qebareyên gazên îdeal ên X û Y ku di heman zexta sabît de ne, bi germahiya mutleq re çawa diguherin. Kîjan ji van gotinan rast in?\nI. Di heman germahiyê de hejmara molan a X du qatê ya Y ye.\nII. Qebareya X di 27 °C de 3 L ye.\nIII. Eger girseyên X û Y wekhev bin, girseya molar a X ji ya Y mezintir e."
+        "ku": "Grafîka di şiklê de nîşan dide ku qebareyên gazên îdeal ên X û Y ku di heman zexta sabît de ne, bi germahiya mutleq re çawa diguherin. Kîjan ji van gotinan rast in?\nI. Di heman germahiyê de hejmara molan a X du qatê ya Y ye.\nII. Qebareya X di 27 °C de 3 L ye.\nIII. Eger girseyên X û Y wekhev bin, girseya molar a X ji ya Y mezintir e."
       },
       "options": [
         {

@@ -507,7 +507,7 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "Auch wenn die Salzbrücke entfernt wird, arbeitet die Zelle weiter, weil die Elektronen weiterhin durch den äußeren Draht fließen.",
         "fr": "Même si l'on retire le pont salin, la pile continue de fonctionner car les électrons circulent toujours dans le fil extérieur.",
         "ru": "Даже если убрать солевой мостик, элемент продолжает работать, потому что электроны по-прежнему текут по внешнему проводу.",
-        "ar": "حتى لو أُزيل الجسر الملحي تستمر الخلية في العمل لأن الإلكترونات تواصل التدفق عبر السلك الخارجي.",
+        "ar": "حتى لو أُزيلت القنطرة الملحية تستمر الخلية في العمل لأن الإلكترونات تواصل التدفق عبر السلك الخارجي.",
         "zh": "即使撤去盐桥，电池仍会继续工作，因为电子仍在外电路导线中流动。",
         "ku": "Heke pira xwê jî bê rakirin, pîl xebata xwe didomîne ji ber ku elektron di têla derve de diherikin."
       },
@@ -517,7 +517,7 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "Elektronen können nur dann durch den äußeren Stromkreis fließen, wenn in den Lösungen das Ladungsgleichgewicht erhalten bleibt. Ohne Brücke sammelt sich im Anodenraum positive und im Kathodenraum negative Ladung an, und der Elektronenfluss bricht sofort ab; ohne Weg für die Ionenwanderung ist der Stromkreis nicht geschlossen.",
         "fr": "Les électrons ne peuvent circuler dans le circuit extérieur que si l'électroneutralité des solutions est maintenue. Sans pont, une charge positive s'accumule côté anode et une charge négative côté cathode, et le flux d'électrons s'arrête aussitôt ; sans chemin pour la migration des ions, le circuit n'est pas fermé.",
         "ru": "Электроны могут течь по внешней цепи, только если в растворах сохраняется баланс зарядов. Без мостика в анодном пространстве накапливается положительный заряд, а в катодном — отрицательный, и поток электронов сразу прекращается; без пути для миграции ионов цепь не замкнута.",
-        "ar": "لا يمكن للإلكترونات أن تتدفق في الدائرة الخارجية إلا إذا حُفظ توازن الشحنات في المحاليل. وبدون الجسر تتراكم شحنة موجبة في وعاء المصعد وشحنة سالبة في وعاء المهبط فيتوقف تدفق الإلكترونات فورًا؛ فالدائرة لا تكتمل من دون مسار لهجرة الأيونات.",
+        "ar": "لا يمكن للإلكترونات أن تتدفق في الدائرة الخارجية إلا إذا حُفظ توازن الشحنات في المحاليل. وبدون القنطرة تتراكم شحنة موجبة في وعاء المصعد وشحنة سالبة في وعاء المهبط فيتوقف تدفق الإلكترونات فورًا؛ فالدائرة لا تكتمل من دون مسار لهجرة الأيونات.",
         "zh": "只有溶液中保持电荷平衡，电子才能在外电路中流动。撤去盐桥后，负极区积累正电荷，正极区积累负电荷，电子流立即停止；没有离子迁移的通路，电路就不闭合。",
         "ku": "Elektron tenê dikarin di devreya derve de biherikin heke di çareseriyan de hevsengiya barê bê parastin. Bê pira xwê, di firaxa anodê de barê erênî û di ya katodê de barê neyînî kom dibe û herikîna elektronan yekser disekine; bêyî rêyeke ji bo koçkirina îyonan devre temam nabe."
       }
@@ -686,7 +686,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Потенциал окисления показывает склонность полуэлемента отдавать электроны и равен потенциалу восстановления той же полуреакции с противоположным знаком; потенциал восстановления показывает склонность принимать электроны.",
         "ar": "جهد التأكسد يبيّن ميل نصف الخلية إلى فقد الإلكترونات، ويساوي جهد الاختزال لنصف التفاعل نفسه بإشارة معاكسة؛ أما جهد الاختزال فيبيّن الميل إلى اكتساب الإلكترونات.",
         "zh": "氧化电势表示半电池失去电子的倾向，等于同一半反应还原电势的相反数；还原电势表示得到电子的倾向。",
-        "ku": "Potansiyela oksîdasyonê meyla nîvşaneyekê ya dayîna elektronan nîşan dide û bi nîşana berevajî wekhevî potansiyela redûksiyonê ya heman nîvreaksiyonê ye; potansiyela redûksiyonê jî meyla girtina elektronan nîşan dide."
+        "ku": "Potansiyela oksîdasyonê meyla nîvşaneyekê ya dayîna elektronan nîşan dide û bi nîşana berevajî bi potansiyela redûksiyonê ya heman nîvreaksiyonê re wekhev e; potansiyela redûksiyonê jî meyla girtina elektronan nîşan dide."
       }
     },
     {
@@ -852,9 +852,9 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "Die Anodenhalbreaktion wird in Oxidationsrichtung geschrieben und das Vorzeichen ihres Potentials umgekehrt",
           "fr": "La demi-réaction anodique est écrite dans le sens de l'oxydation et le signe de son potentiel est inversé",
           "ru": "Полуреакцию на аноде записывают в направлении окисления и меняют знак её потенциала",
-          "ar": "يُكتب نصف تفاعل المصعد باتجاه الأكسدة ويُعكس إشارة جهده",
+          "ar": "يُكتب نصف تفاعل المصعد باتجاه الأكسدة وتُعكس إشارة جهده",
           "zh": "把负极半反应写成氧化方向，并把其电势的符号反过来",
-          "ku": "Nîvreaksiyona anodê bi alê oksîdasyonê tê nivîsandin û nîşana potansiyela wê tê guhertin"
+          "ku": "Nîvreaksiyona anodê di arasteya oksîdasyonê de tê nivîsandin û nîşana potansiyela wê tê guhertin"
         },
         {
           "tr": "Anodun yükseltgenme potansiyeli ile katodun indirgenme potansiyeli toplanarak E°pil bulunur (yarı tepkime katsayılarıyla çarpılmaz)",
@@ -864,7 +864,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "E°эл находят, складывая потенциал окисления анода и потенциал восстановления катода (без умножения на коэффициенты полуреакций)",
           "ar": "يُحسب E°cell بجمع جهد تأكسد المصعد وجهد اختزال المهبط (دون الضرب في معاملات أنصاف التفاعلات)",
           "zh": "把负极的氧化电势与正极的还原电势相加得到 E°电池（不乘半反应的系数）",
-          "ku": "E°pîl bi berhevkirina potansiyela oksîdasyonê ya anodê û potansiyela redûksiyonê ya katodê tê dîtin (bi kêşeyên nîvreaksiyonan nayê zêdekirin)"
+          "ku": "E°pîl bi berhevkirina potansiyela oksîdasyonê ya anodê û potansiyela redûksiyonê ya katodê tê dîtin (bi hevberên nîvreaksiyonan nayê pirjimarkirin)"
         },
         {
           "tr": "Bulunan E°pil pozitifse yazılan pil tepkimesinin standart koşullarda istemli olduğuna karar verilir",
@@ -1053,9 +1053,9 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "Die Abbildung zeigt eine galvanische Zelle aus den Metallen X und Y; während die Zelle arbeitet, fließen die Elektronen im äußeren Stromkreis in Pfeilrichtung.\nWelche der folgenden Aussagen über diese Zelle sind richtig?\nI. Metall Y ist aktiver (unedler) als Metall X.\nII. Die Anionen der Salzbrücke wandern zu dem Gefäß mit der Y2+-Lösung.\nIII. Während die Zelle arbeitet, steigt die Konzentration der X2+-Ionen.",
         "fr": "La figure représente une pile galvanique construite avec les métaux X et Y ; quand la pile fonctionne, les électrons circulent dans le circuit extérieur dans le sens de la flèche.\nParmi les affirmations suivantes sur cette pile, lesquelles sont correctes ?\nI. Le métal Y est plus actif (plus réducteur) que le métal X.\nII. Les anions du pont salin migrent vers le récipient contenant la solution de Y2+.\nIII. Au cours du fonctionnement, la concentration des ions X2+ augmente.",
         "ru": "На рисунке изображён гальванический элемент из металлов X и Y; при работе элемента электроны во внешней цепи движутся в направлении стрелки.\nКакие утверждения об этом элементе верны?\nI. Металл Y активнее металла X.\nII. Анионы солевого мостика мигрируют к сосуду с раствором Y2+.\nIII. По мере работы элемента концентрация ионов X2+ увеличивается.",
-        "ar": "يبيّن الشكل خلية جلفانية مكوّنة من الفلزين X وY؛ وفي أثناء عمل الخلية تتدفق الإلكترونات في الدائرة الخارجية في اتجاه السهم.\nأيٌّ من العبارات الآتية عن هذه الخلية صحيحة؟\nI. الفلز Y أنشط من الفلز X.\nII. تهاجر أنيونات الجسر الملحي نحو الوعاء الذي يحتوي محلول Y2+.\nIII. يزداد تركيز أيونات X2+ مع استمرار عمل الخلية.",
+        "ar": "يبيّن الشكل خلية جلفانية مكوّنة من الفلزين X وY؛ وفي أثناء عمل الخلية تتدفق الإلكترونات في الدائرة الخارجية في اتجاه السهم.\nأيٌّ من العبارات الآتية عن هذه الخلية صحيحة؟\nI. الفلز Y أنشط من الفلز X.\nII. تهاجر أنيونات القنطرة الملحية نحو الوعاء الذي يحتوي محلول Y2+.\nIII. يزداد تركيز أيونات X2+ مع استمرار عمل الخلية.",
         "zh": "图中是用金属 X 和 Y 组成的原电池；电池工作时，外电路中电子沿箭头方向流动。\n关于该电池的下列说法中，哪些正确？\nI. 金属 Y 比金属 X 活泼。\nII. 盐桥中的阴离子向盛有 Y2+ 溶液的容器迁移。\nIII. 随着电池工作，X2+ 离子的浓度增大。",
-        "ku": "Di şeklê de pîleke galvanîk a bi metalên X û Y hatiye avakirin xuya dike; dema pîl dixebite, elektron di devreya derve de li gorî rêya tîrê diherikin.\nDerbarê vê pîlê de;\nI. Çalakiya metala Y ji ya metala X mezintir e.\nII. Anyonên pira xwê ber bi firaxa ku çareseriya Y2+ tê de ye ve koç dikin.\nIII. Her ku pîl dixebite, tîrbûna îyonên X2+ zêde dibe.\nkîjan ji van gotinan rast in?"
+        "ku": "Di şiklê de pîleke galvanîk a bi metalên X û Y hatiye avakirin xuya dike; dema pîl dixebite, elektron di devreya derve de li gorî rêya tîrê diherikin.\nDerbarê vê pîlê de;\nI. Çalakiya metala Y ji ya metala X mezintir e.\nII. Anyonên pira xwê ber bi firaxa ku çareseriya Y2+ tê de ye ve koç dikin.\nIII. Her ku pîl dixebite, tîrbûna îyonên X2+ zêde dibe.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1116,9 +1116,9 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "In der Abbildung fließen die Elektronen im äußeren Stromkreis von Elektrode Y zu Elektrode X. Da die Elektronen die Anode verlassen, an der die Oxidation stattfindet, ist Y die Anode und X die Kathode. I ist richtig: Y, die Elektronen abgebende Anode, ist das aktivere Metall. II ist richtig: Im Anodenraum (Y2+-Lösung) entsteht durch Y → Y2+ + 2e- ein Überschuss an positiver Ladung; zum Ausgleich wandern die Anionen der Salzbrücke dorthin. III ist falsch: An der Kathode werden durch X2+ + 2e- → X X2+-Ionen verbraucht, ihre Konzentration sinkt. Wer den Pfeil übersieht und die linke Elektrode für die Anode hält, beurteilt alle Aussagen umgekehrt.",
         "fr": "Sur la figure, les électrons circulent dans le circuit extérieur de l'électrode Y vers l'électrode X. Comme les électrons quittent l'anode, siège de l'oxydation, Y est l'anode et X la cathode. I est correcte : Y, l'anode qui cède des électrons, est le métal le plus actif. II est correcte : dans le compartiment anodique (solution de Y2+), Y → Y2+ + 2e- crée un excès de charge positive ; les anions du pont salin y migrent pour le compenser. III est fausse : à la cathode, X2+ + 2e- → X consomme les ions X2+, dont la concentration diminue. Ignorer la flèche et supposer que l'électrode de gauche est l'anode inverse toutes les conclusions.",
         "ru": "На рисунке электроны во внешней цепи текут от электрода Y к электроду X. Поскольку электроны выходят из анода, где идёт окисление, Y — анод, X — катод. I верно: Y, анод, отдающий электроны, — более активный металл. II верно: в анодном пространстве (раствор Y2+) по реакции Y → Y2+ + 2e- накапливается положительный заряд, и для его компенсации туда мигрируют анионы солевого мостика. III неверно: на катоде по реакции X2+ + 2e- → X ионы X2+ расходуются, их концентрация уменьшается. Если не учитывать стрелку и считать левый электрод анодом, все выводы получатся обратными.",
-        "ar": "في الشكل تتدفق الإلكترونات في الدائرة الخارجية من القطب Y إلى القطب X. وبما أن الإلكترونات تخرج من المصعد حيث تحدث الأكسدة، فإن Y هو المصعد وX هو المهبط. العبارة I صحيحة: Y، المصعد الذي يفقد الإلكترونات، هو الفلز الأنشط. العبارة II صحيحة: في وعاء المصعد (محلول Y2+) تزداد الشحنة الموجبة بالتفاعل Y → Y2+ + 2e-، فتهاجر أنيونات الجسر الملحي إليه لمعادلتها. العبارة III خاطئة: عند المهبط تُستهلك أيونات X2+ بالتفاعل X2+ + 2e- → X فيقل تركيزها. وتجاهل اتجاه السهم واعتبار القطب الأيسر مصعدًا يقلب كل الأحكام.",
+        "ar": "في الشكل تتدفق الإلكترونات في الدائرة الخارجية من القطب Y إلى القطب X. وبما أن الإلكترونات تخرج من المصعد حيث تحدث الأكسدة، فإن Y هو المصعد وX هو المهبط. العبارة I صحيحة: Y، المصعد الذي يفقد الإلكترونات، هو الفلز الأنشط. العبارة II صحيحة: في وعاء المصعد (محلول Y2+) تزداد الشحنة الموجبة بالتفاعل Y → Y2+ + 2e-، فتهاجر أنيونات القنطرة الملحية إليه لمعادلتها. العبارة III خاطئة: عند المهبط تُستهلك أيونات X2+ بالتفاعل X2+ + 2e- → X فيقل تركيزها. وتجاهل اتجاه السهم واعتبار القطب الأيسر مصعدًا يقلب كل الأحكام.",
         "zh": "图中电子在外电路中从电极 Y 流向电极 X。电子从发生氧化的负极流出，所以 Y 是负极，X 是正极。I 正确：失去电子的负极 Y 是较活泼的金属。II 正确：负极区（Y2+ 溶液）因 Y → Y2+ + 2e- 而正电荷增多，盐桥中的阴离子向该处迁移以平衡电荷。III 错误：正极上 X2+ + 2e- → X 消耗 X2+，其浓度减小。忽视箭头方向、把左边电极当作负极，会使所有判断都颠倒。",
-        "ku": "Di şeklê de elektron di devreya derve de ji elektroda Y ber bi elektroda X ve diherikin. Ji ber ku elektron ji anoda ku oksîdasyon lê çêdibe derdikevin, Y anod e û X katod e. I rast e: Y, anoda ku elektronan dide, metala çalaktir e. II rast e: di firaxa anodê de (çareseriya Y2+) bi Y → Y2+ + 2e- barê erênî zêde dibe; ji bo hevsengkirinê anyonên pira xwê diçin wê firaxê. III şaş e: li katodê bi X2+ + 2e- → X îyonên X2+ têne xerckirin û tîrbûna wan kêm dibe. Paşguhkirina rêya tîrê û hesibandina elektroda çepê wek anod hemû biryaran berevajî dike."
+        "ku": "Di şiklê de elektron di devreya derve de ji elektroda Y ber bi elektroda X ve diherikin. Ji ber ku elektron ji anoda ku oksîdasyon lê çêdibe derdikevin, Y anod e û X katod e. I rast e: Y, anoda ku elektronan dide, metala çalaktir e. II rast e: di firaxa anodê de (çareseriya Y2+) bi Y → Y2+ + 2e- barê erênî zêde dibe; ji bo hevsengkirinê anyonên pira xwê diçin wê firaxê. III şaş e: li katodê bi X2+ + 2e- → X îyonên X2+ têne xerckirin û tîrbûna wan kêm dibe. Paşguhkirina rêya tîrê û hesibandina elektroda çepê wek anod hemû biryaran berevajî dike."
       },
       "figure": {
         "kind": "svg",
@@ -1132,7 +1132,7 @@ export const unit21: ChemistryUnitSeedData = {
             "de": "Salzbrücke",
             "fr": "pont salin",
             "ru": "солевой мостик",
-            "ar": "جسر ملحي",
+            "ar": "قنطرة ملحية",
             "zh": "盐桥",
             "ku": "pira xwê"
           }
@@ -1149,7 +1149,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "На графике показано изменение во времени напряжения элемента Zn(тв) | Zn2+(1 M) || Cu2+(1 M) | Cu(тв), работающего при 25 °C.\nКакое из следующих действий могло быть выполнено с элементом в момент t1?",
         "ar": "يبيّن الرسم البياني تغيّر جهد الخلية Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) العاملة عند 25 °C مع الزمن.\nأيّ العمليات الآتية يمكن أن تكون قد أُجريت على الخلية عند اللحظة t1؟",
         "zh": "图中给出了在 25 °C 下工作的 Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) 电池的电压随时间的变化。\n在 t1 时刻，对电池可能进行了下列哪项操作？",
-        "ku": "Di grafîka şeklê de guherîna voltaja pîla Zn(r) | Zn2+(1 M) || Cu2+(1 M) | Cu(r) ya ku li 25 °C dixebite li gorî demê hatiye dayîn.\nDi dema t1 de dibe ku kîjan ji van karan li pîlê hatibe kirin?"
+        "ku": "Di grafîka şiklê de guherîna voltaja pîla Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) ya ku li 25 °C dixebite li gorî demê hatiye dayîn.\nDi dema t1 de dibe ku kîjan ji van karan li pîlê hatibe kirin?"
       },
       "options": [
         {
@@ -1190,7 +1190,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Осадить часть ионов Zn2+ в анодном пространстве в виде ZnS",
           "ar": "ترسيب جزء من أيونات Zn2+ في وعاء المصعد على شكل ZnS",
           "zh": "使负极区的部分 Zn2+ 以 ZnS 形式沉淀",
-          "ku": "Daxistina beşekî îyonên Zn2+ yên firaxa anodê wek ZnS"
+          "ku": "Niştandina beşekî îyonên Zn2+ yên firaxa anodê wek ZnS"
         },
         {
           "tr": "Tuz köprüsünü devreden çıkarmak",
@@ -1198,7 +1198,7 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "Die Salzbrücke aus dem Stromkreis entfernen",
           "fr": "Retirer le pont salin du circuit",
           "ru": "Убрать солевой мостик из цепи",
-          "ar": "إزالة الجسر الملحي من الدائرة",
+          "ar": "إزالة القنطرة الملحية من الدائرة",
           "zh": "把盐桥从电路中撤去",
           "ku": "Derxistina pira xwê ji devreyê"
         }
@@ -1210,9 +1210,9 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "Zum Zeitpunkt t1 fällt die Spannung im Diagramm plötzlich ab, sinkt aber nicht auf null und nimmt weiter langsam ab, weil die Zelle weiterarbeitet. Die Gesamtreaktion lautet Zn + Cu2+ → Zn2+ + Cu. Wasserzugabe in den Kathodenraum verdünnt das Edukt Cu2+, das Gleichgewicht verschiebt sich zu den Edukten und die Spannung sinkt. Wasserzugabe in den Anodenraum oder Ausfällen von Zn2+ als ZnS verringert die Produktkonzentration und erhöht die Spannung; eine größere Elektrode ändert keine Konzentration und damit auch nicht die Spannung. Entfernt man die Salzbrücke, wird der Stromkreis unterbrochen und die Spannung fällt auf null, nicht auf einen Wert, der wie im Diagramm langsam weiter abnimmt.",
         "fr": "À l'instant t1, la tension chute brusquement sur le graphique, mais elle ne tombe pas à zéro et continue de diminuer lentement car la pile fonctionne toujours. La réaction globale est Zn + Cu2+ → Zn2+ + Cu. Ajouter de l'eau côté cathode dilue Cu2+, un réactif : l'équilibre se déplace vers les réactifs et la tension baisse. Ajouter de l'eau côté anode ou précipiter Zn2+ sous forme de ZnS diminue la concentration d'un produit et augmente la tension ; agrandir l'électrode ne modifie aucune concentration, donc pas la tension. Retirer le pont salin ouvre le circuit et la tension tombe à zéro, et non à une valeur qui continue de baisser lentement comme sur le graphique.",
         "ru": "На графике в момент t1 напряжение резко падает, но не до нуля, и затем продолжает медленно снижаться, так как элемент продолжает работать. Суммарная реакция: Zn + Cu2+ → Zn2+ + Cu. Добавление воды в катодное пространство разбавляет реагент Cu2+, равновесие смещается к реагентам, и напряжение падает. Добавление воды в анодное пространство или осаждение Zn2+ в виде ZnS уменьшает концентрацию продукта и повышает напряжение; увеличение электрода не меняет концентраций и поэтому не меняет напряжения. Если убрать солевой мостик, цепь размыкается и напряжение падает до нуля, а не до значения, которое продолжает медленно уменьшаться, как на графике.",
-        "ar": "في الرسم البياني ينخفض الجهد فجأة عند اللحظة t1، لكنه لا يهبط إلى الصفر ويستمر في التناقص ببطء لأن الخلية ما زالت تعمل. التفاعل الكلي هو Zn + Cu2+ → Zn2+ + Cu. إضافة الماء إلى وعاء المهبط تخفف Cu2+ وهو من المتفاعلات، فيزاح الاتزان نحو المتفاعلات وينخفض الجهد. أما إضافة الماء إلى وعاء المصعد أو ترسيب Zn2+ على شكل ZnS فتقلل تركيز النواتج وترفع الجهد؛ وتكبير القطب لا يغيّر أي تركيز فلا يتغير الجهد. وإزالة الجسر الملحي تقطع الدائرة فيهبط الجهد إلى الصفر، لا إلى قيمة تواصل التناقص ببطء كما في الرسم.",
+        "ar": "في الرسم البياني ينخفض الجهد فجأة عند اللحظة t1، لكنه لا يهبط إلى الصفر ويستمر في التناقص ببطء لأن الخلية ما زالت تعمل. التفاعل الكلي هو Zn + Cu2+ → Zn2+ + Cu. إضافة الماء إلى وعاء المهبط تخفف Cu2+ وهو من المتفاعلات، فيزاح الاتزان نحو المتفاعلات وينخفض الجهد. أما إضافة الماء إلى وعاء المصعد أو ترسيب Zn2+ على شكل ZnS فتقلل تركيز النواتج وترفع الجهد؛ وتكبير القطب لا يغيّر أي تركيز فلا يتغير الجهد. وإزالة القنطرة الملحية تقطع الدائرة فيهبط الجهد إلى الصفر، لا إلى قيمة تواصل التناقص ببطء كما في الرسم.",
         "zh": "图中 t1 时刻电压突然下降，但没有降到零，并且由于电池仍在工作而继续缓慢下降。总反应为 Zn + Cu2+ → Zn2+ + Cu。向正极区加水会稀释反应物 Cu2+，平衡向反应物方向移动，电压下降。向负极区加水或使 Zn2+ 以 ZnS 沉淀会降低产物浓度，使电压升高；增大电极不改变任何浓度，电压不变。撤去盐桥会使电路断开，电压降为零，而不是像图中那样降到一个仍缓慢下降的数值。",
-        "ku": "Di grafîkê de di dema t1 de voltaj ji nişka ve kêm dibe, lê heta sifirê danakeve û ji ber ku pîl hîn dixebite hêdî hêdî kêm dibe. Reaksiyona giştî Zn + Cu2+ → Zn2+ + Cu ye. Dema av li firaxa katodê tê zêdekirin, Cu2+ ku di aliyê tevlêbûyan de ye sist dibe, hevsengî ber bi tevlêbûyan ve diçe û voltaj dadikeve. Zêdekirina avê li firaxa anodê an daxistina Zn2+ wek ZnS tîrbûna berhemê kêm dike û voltajê bilind dike; mezinkirina elektrodê tu tîrbûnê naguherîne, ji ber vê voltaj naguhere. Heke pira xwê bê derxistin devre diqete û voltaj dadikeve sifirê, ne nirxeke ku wek di grafîkê de hêdî hêdî kêm dibe."
+        "ku": "Di grafîkê de di dema t1 de voltaj ji nişka ve kêm dibe, lê heta sifirê danakeve û ji ber ku pîl hîn dixebite hêdî hêdî kêm dibe. Reaksiyona giştî Zn + Cu2+ → Zn2+ + Cu ye. Dema av li firaxa katodê tê zêdekirin, tîrbûna Cu2+ ku di aliyê reaktantan de ye kêm dibe, hevsengî ber bi reaktantan ve diçe û voltaj dadikeve. Zêdekirina avê li firaxa anodê an niştandina Zn2+ wek ZnS tîrbûna berhemê kêm dike û voltajê bilind dike; mezinkirina elektrodê tu tîrbûnê naguherîne, ji ber vê voltaj naguhere. Heke pira xwê bê derxistin devre diqete û voltaj dadikeve sifirê, ne nirxeke ku wek di grafîkê de hêdî hêdî kêm dibe."
       },
       "figure": {
         "kind": "graph",
@@ -1717,7 +1717,7 @@ export const unit21: ChemistryUnitSeedData = {
               "de": "Y scheidet sich auf dem Metall ab",
               "fr": "Y se dépose sur le métal",
               "ru": "На металле осаждается Y",
-              "ar": "يترسب Y على الفلز",
+              "ar": "يترسب Y على سطح الفلز",
               "zh": "金属表面析出 Y",
               "ku": "Y li ser metalê kom dibe"
             }
@@ -1747,7 +1747,7 @@ export const unit21: ChemistryUnitSeedData = {
               "de": "Y scheidet sich auf dem Metall ab",
               "fr": "Y se dépose sur le métal",
               "ru": "На металле осаждается Y",
-              "ar": "يترسب Y على الفلز",
+              "ar": "يترسب Y على سطح الفلز",
               "zh": "金属表面析出 Y",
               "ku": "Y li ser metalê kom dibe"
             }

@@ -1779,16 +1779,18 @@ export function compileUnitQuestions(
     }
   }
 
-  // Enrich with animated diagram figures
+  // Enrich with animated diagram figures. The placement is planned on the polished Turkish bank
+  // (the same text the audit scripts see) and reused for every language.
+  const polished = questions.map((q) => polishQuestion(q, lang));
   let placement: DiagramPlacement | undefined;
   if (lang === 'tr') {
-    placement = planDiagramPlacement(unit, questions, 'tr');
+    placement = planDiagramPlacement(unit, polished);
     TR_DIAGRAM_PLACEMENT.set(unit, placement);
   } else {
     if (!TR_DIAGRAM_PLACEMENT.has(unit)) compileUnitQuestions(unit, 'tr');
     placement = TR_DIAGRAM_PLACEMENT.get(unit);
   }
-  return enrichQuestionsWithDiagrams(unit, questions.map((q) => polishQuestion(q, lang)), lang, placement);
+  return enrichQuestionsWithDiagrams(unit, polished, lang, placement);
 }
 
 /**

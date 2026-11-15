@@ -484,9 +484,9 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Stalaktiten und Stalagmiten entstehen nur dadurch, dass Tropfwasser verdunstet und gelöste Stoffe zurücklässt; CO2-Verlust und das Lösungs-Fällungs-Gleichgewicht spielen keine Rolle.",
         "fr": "Les stalactites et stalagmites se forment uniquement parce que l'eau qui goutte s'évapore et laisse ses matières dissoutes ; la perte de CO2 et l'équilibre de dissolution-précipitation n'y jouent aucun rôle.",
         "ru": "Сталактиты и сталагмиты образуются только за счёт испарения капающей воды, оставляющей растворённые вещества; потеря CO2 и равновесие растворения-осаждения здесь роли не играют.",
-        "ar": "تتكون الهوابط والصواعد فقط من تبخر الماء المتساقط وبقاء المواد الذائبة فيه، ولا دور لفقد CO2 ولا لاتزان الذوبان والترسيب في ذلك.",
+        "ar": "تتكون الهوابط والصواعد من تراكم المادة التي تبقى بعد تبخر الماء المتساقط، ولا دور لفقد CO2 ولا لاتزان الذوبان والترسيب في ذلك.",
         "zh": "钟乳石和石笋仅仅是滴水蒸发后留下溶解物质堆积而成，CO2 的逸出和溶解-沉淀平衡在其中不起作用。",
-        "ku": "Stalaktît û stalagmît tenê ji ber ku ava dilopî buhar dibe û madeyên heliyayî li dû xwe dihêle çêdibin; windabûna CO2 û hevsengiya helbûn-niştinê di vê de ti rolê nalîzin."
+        "ku": "Stalaktît û stalagmît ji kombûna madeya ku piştî buharbûna ava dilopî li dû dimîne çêdibin; windabûna CO2 û hevsengiya helbûn-niştinê di vê de ti rol nalîzin."
       },
       "whyTrapIsFalse": {
         "tr": "Sarkıt ve dikitlerin oluşumunda belirleyici olan kimyasal dengedir: Ca2+ ve HCO3- içeren su mağara havasına çıkınca CO2 kaybeder, Ca2+ + 2HCO3- ⇌ CaCO3 + CO2 + H2O dengesi CaCO3 yönüne kayar ve CaCO3 çöker. Buharlaşma bu süreci yalnızca destekleyebilir.",
@@ -595,7 +595,7 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Qi < Ksp bedeutet eine ungesättigte Lösung: Es fällt nichts aus, und zugesetzter Feststoff kann sich lösen; ist das Ionenprodukt größer als das Löslichkeitsprodukt, ist die Lösung übersättigt, und es fällt so lange Feststoff aus, bis beide gleich sind.",
         "fr": "Qi < Ksp signifie que la solution est insaturée : rien ne précipite et un solide ajouté peut se dissoudre ; si le produit ionique dépasse le produit de solubilité, la solution est sursaturée et la précipitation se poursuit jusqu'à ce que les deux soient égaux.",
         "ru": "Qi < Ksp означает, что раствор ненасыщенный: осадок не выпадает, а добавленное твёрдое вещество может раствориться; если ионное произведение больше произведения растворимости, раствор пересыщен, и осадок выпадает, пока эти величины не сравняются.",
-        "ar": "إذا كان Qi < Ksp فالمحلول غير مشبع ولا يحدث ترسيب ويمكن للصلب المضاف أن يذوب؛ وإذا كان الحاصل الأيوني أكبر من حاصل الإذابة فالمحلول فوق مشبع ويستمر الترسيب حتى يتساويا.",
+        "ar": "إذا كان Qi < Ksp فالمحلول غير مشبع ولا يحدث ترسيب ويمكن للصلب المضاف أن يذوب؛ أما إذا كان Qi > Ksp فالمحلول فوق مشبع ويستمر الترسيب حتى يتساوى Qi مع Ksp.",
         "zh": "Qi < Ksp 表示溶液不饱和，不生成沉淀，加入的固体还能继续溶解；若离子积大于溶度积，溶液过饱和，会析出沉淀，直到两者相等。",
         "ku": "Qi < Ksp tê wateya ku çareserî netêr e: niştin pêk nayê û madeya hişk a lê zêdekirî dikare bihele; heke hasila îyonan ji hasila helbûniyê mezintir be, çareserî zêdetêr e û heta ku her du wekhev bibin niştin berdewam dike."
       }
@@ -793,7 +793,7 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Der Einfluss des pH-Werts auf die Löslichkeit zeigt sich bei schwerlöslichen Salzen mit basischem Anion (wie OH-, CO3 2-): Ihre Löslichkeit steigt bei Säurezugabe, Ksp bleibt aber gleich; der Einfluss der Temperatur auf die Löslichkeit beruht auf einer Änderung von Ksp selbst: Bei endotherm löslichen Salzen erhöht eine Temperaturerhöhung Ksp und Löslichkeit.",
         "fr": "L'effet du pH sur la solubilité concerne les sels peu solubles à anion basique (comme OH-, CO3 2-) : ils se dissolvent davantage quand on ajoute un acide, mais Ksp ne change pas ; la température, elle, modifie Ksp lui-même : pour les sels à dissolution endothermique, une hausse de température augmente Ksp et la quantité dissoute.",
         "ru": "Влияние pH на растворимость проявляется у малорастворимых солей с основным анионом (OH-, CO3 2-): их растворимость растёт при добавлении кислоты, но Ksp не меняется; влияние температуры на растворимость связано с изменением самого Ksp: для солей с эндотермическим растворением нагревание увеличивает и Ksp, и растворимость.",
-        "ar": "تأثير pH في الذائبية: إضافة حمض تزيد ذوبان الأملاح قليلة الذوبان التي أنيونها قاعدي (مثل OH- و CO3 2-)، لكن Ksp لا يتغير؛ أما درجة الحرارة فتغيّر Ksp نفسه: ففي الأملاح التي يكون ذوبانها ماصًّا للحرارة يزيد رفع درجة الحرارة Ksp ويزيد معه ذوبان الملح.",
+        "ar": "يظهر تأثير pH في الذائبية في الأملاح قليلة الذوبان التي أنيونها قاعدي (مثل OH- وCO3 2-): فكلما أُضيف حمض ذابت هذه الأملاح أكثر، لكن Ksp لا يتغير؛ أما درجة الحرارة فتغيّر Ksp نفسه: ففي الأملاح التي يكون ذوبانها ماصًّا للحرارة يزيد رفع درجة الحرارة Ksp وكمية المادة الذائبة.",
         "zh": "pH 对溶解度的影响：含碱性阴离子(如 OH-、CO3 2-)的难溶盐加酸后溶解度增大，但 Ksp 不变；温度对溶解度的影响则是改变 Ksp 本身：吸热溶解的盐升温时 Ksp 和溶解度都增大。",
         "ku": "Bandora pH-ê li ser helbûniyê di xwêyên kêm-helbar ên ku anyona wan bazî ye (wek OH-, CO3 2-) de xuya dibe: bi zêdekirina asîdê ev xwê zêdetir dihelin lê Ksp naguhere; germahî jî Ksp bi xwe diguherîne: di xwêyên ku helbûna wan endotermîk e de bilindbûna germahiyê hem Ksp hem mîqdara heliyayî zêde dike."
       }
@@ -864,7 +864,7 @@ export const unit20: ChemistryUnitSeedData = {
           "ru": "С учётом разбавления рассчитывают новую концентрацию каждого иона в этом общем объёме",
           "ar": "يُحسب التركيز الجديد لكل أيون في هذا الحجم الكلي مع مراعاة التخفيف",
           "zh": "考虑稀释，计算每种离子在该总体积中的新浓度",
-          "ku": "Bi hesibandina rongkirinê, tîrbûna nû ya her îyonê di vê qebareya giştî de tê hesibandin"
+          "ku": "Bi hesibandina sistkirinê, tîrbûna nû ya her îyonê di vê qebareya giştî de tê hesibandin"
         },
         {
           "tr": "Bu derişimler Qi = [A+]^a * [B-]^b bağıntısında yerine konarak Qi hesaplanır",
@@ -1128,7 +1128,7 @@ export const unit20: ChemistryUnitSeedData = {
         "ru": "Каждая точка кривой — насыщенный раствор. Точка L лежит на кривой: [Ag+] = [Cl-] = 2,0x10^-5 M, значит Ksp = (2,0x10^-5)^2 = 4,0x10^-10 (III верно). В точке K Qi = (1,0x10^-5)(1,0x10^-5) = 1,0x10^-10 < Ksp; точка ниже кривой, раствор ненасыщенный (I верно). В точке M Qi = (2,0x10^-5)(4,0x10^-5) = 8,0x10^-10 > Ksp; точка выше кривой, раствор пересыщен, и AgCl выпадает в осадок (II неверно).",
         "ar": "كل نقطة على المنحنى تمثل محلولًا مشبعًا. النقطة L على المنحنى: [Ag+] = [Cl-] = 2.0x10^-5 M، إذن Ksp = (2.0x10^-5)^2 = 4.0x10^-10 (III صحيحة). عند K يكون Qi = (1.0x10^-5)(1.0x10^-5) = 1.0x10^-10 < Ksp؛ فالنقطة تحت المنحنى والمحلول غير مشبع (I صحيحة). عند M يكون Qi = (2.0x10^-5)(4.0x10^-5) = 8.0x10^-10 > Ksp؛ فالنقطة فوق المنحنى والمحلول فوق مشبع ويترسب AgCl (II خاطئة).",
         "zh": "曲线上的每一点都表示饱和溶液。L 点在曲线上：[Ag+] = [Cl-] = 2.0x10^-5 M，所以 Ksp = (2.0x10^-5)^2 = 4.0x10^-10（III 正确）。K 点 Qi = (1.0x10^-5)(1.0x10^-5) = 1.0x10^-10 < Ksp，位于曲线下方，为不饱和溶液（I 正确）。M 点 Qi = (2.0x10^-5)(4.0x10^-5) = 8.0x10^-10 > Ksp，位于曲线上方，为过饱和溶液，会析出 AgCl（II 错误）。",
-        "ku": "Her xala li ser kevanê çareseriyeke têr e. Xala L li ser kevanê ye: [Ag+] = [Cl-] = 2,0x10^-5 M, yanî Ksp = (2,0x10^-5)^2 = 4,0x10^-10 (III rast e). Li xala K Qi = (1,0x10^-5)(1,0x10^-5) = 1,0x10^-10 < Ksp e; xal di binê kevanê de ye û çareserî netêr e (I rast e). Li xala M Qi = (2,0x10^-5)(4,0x10^-5) = 8,0x10^-10 > Ksp e; xal li ser kevanê ye, çareserî zêdetêr e û AgCl dinişe (II şaş e)."
+        "ku": "Her xala li ser kevanê çareseriyeke têr e. Xala L li ser kevanê ye: [Ag+] = [Cl-] = 2,0x10^-5 M, yanî Ksp = (2,0x10^-5)^2 = 4,0x10^-10 (III rast e). Li xala K Qi = (1,0x10^-5)(1,0x10^-5) = 1,0x10^-10 < Ksp e; xal di binê kevanê de ye û çareserî netêr e (I rast e). Li xala M Qi = (2,0x10^-5)(4,0x10^-5) = 8,0x10^-10 > Ksp e; xal li jorî kevanê ye, çareserî zêdetêr e û AgCl dinişe (II şaş e)."
       },
       "figure": {
         "kind": "graph",
@@ -1534,7 +1534,7 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Bei 25 °C beträgt Ksp von AgCl 1,0x10^-10. In jeder Mischung werden die AgNO3- und NaCl-Lösungen mit den in der Tabelle angegebenen Konzentrationen bei derselben Temperatur in gleichen Volumina gemischt. In welchen Mischungen fällt AgCl aus?",
         "fr": "À 25 °C, le Ksp de AgCl vaut 1,0x10^-10. Dans chaque mélange, on mélange à volumes égaux, à la même température, les solutions de AgNO3 et de NaCl dont les concentrations figurent dans le tableau. Dans quels mélanges observe-t-on un précipité de AgCl ?",
         "ru": "При 25 °C Ksp для AgCl равно 1,0x10^-10. В каждой смеси растворы AgNO3 и NaCl с указанными в таблице концентрациями смешивают в равных объёмах при той же температуре. В каких смесях выпадает осадок AgCl?",
-        "ar": "عند 25 °C يكون Ksp لـ AgCl مساويًا 1.0x10^-10. في كل خليط يُمزج محلولا AgNO3 وNaCl اللذان يعطي الجدول تركيزيهما بحجمين متساويين عند الدرجة نفسها. في أيّ الخلائط يُلاحظ ترسب AgCl؟",
+        "ar": "عند 25 °C يكون Ksp لـ AgCl مساويًا 1.0x10^-10. في كل خليط يُمزج محلولا AgNO3 وNaCl اللذان يعطي الجدول تركيزيهما بحجمين متساويين عند الدرجة نفسها. في أيّ المخاليط يُلاحظ ترسب AgCl؟",
         "zh": "25 °C 时 AgCl 的 Ksp = 1.0x10^-10。每组混合中，将表中所给浓度的 AgNO3 溶液和 NaCl 溶液在同一温度下等体积混合。哪些混合中会观察到 AgCl 沉淀？",
         "ku": "Li 25 °C ji bo AgCl Ksp = 1,0x10^-10 e. Di her tevliheviyê de çareseriyên AgNO3 û NaCl yên ku tîrbûnên wan di tabloyê de hatine dayîn, di heman germahiyê de bi qebareyên wekhev tên tevlihevkirin. Di kîjan tevliheviyan de niştina AgCl tê dîtin?"
       },
@@ -1698,7 +1698,7 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Bei 25 °C wird zu einer Lösung, die Cl-- und CrO4 2--Ionen jeweils in 0,010 M Konzentration enthält, tropfenweise AgNO3-Lösung gegeben (Volumenänderung vernachlässigbar).\n(Ksp von AgCl = 1,0x10^-10; Ksp von Ag2CrO4 = 1,0x10^-12)\nIn welcher Antwort sind das zuerst ausfallende Salz und die [Ag+] bei Beginn seiner Fällung richtig angegeben?",
         "fr": "À 25 °C, on ajoute goutte à goutte une solution de AgNO3 (variation de volume négligeable) à une solution contenant les ions Cl- et CrO4 2-, chacun à 0,010 M.\n(Ksp de AgCl = 1,0x10^-10 ; Ksp de Ag2CrO4 = 1,0x10^-12)\nQuelle proposition donne correctement le sel qui précipite en premier et la [Ag+] au début de sa précipitation ?",
         "ru": "При 25 °C к раствору, содержащему ионы Cl- и CrO4 2- (каждый по 0,010 M), по каплям добавляют раствор AgNO3 (изменением объёма пренебречь).\n(Ksp AgCl = 1,0x10^-10; Ksp Ag2CrO4 = 1,0x10^-12)\nВ каком варианте правильно указаны соль, осаждающаяся первой, и [Ag+] в момент начала её осаждения?",
-        "ar": "عند 25 °C يُضاف محلول AgNO3 قطرة قطرة (مع إهمال تغيّر الحجم) إلى محلول يحتوي على أيونات Cl- و CrO4 2- بتركيز 0.010 M لكلٍّ منهما.\n(Ksp لـ AgCl = 1.0x10^-10؛ Ksp لـ Ag2CrO4 = 1.0x10^-12)\nأي الخيارات الآتية يذكر بصورة صحيحة الملح الذي يترسب أولًا وقيمة [Ag+] عند بدء ترسبه؟",
+        "ar": "عند 25 °C يُضاف محلول AgNO3 قطرة قطرة (مع إهمال تغيّر الحجم) إلى محلول يحتوي على أيونات Cl- وCrO4 2- بتركيز 0.010 M لكلٍّ منهما.\n(Ksp لـ AgCl = 1.0x10^-10؛ Ksp لـ Ag2CrO4 = 1.0x10^-12)\nأي الخيارات الآتية يذكر بصورة صحيحة الملح الذي يترسب أولًا وقيمة [Ag+] عند بدء ترسبه؟",
         "zh": "25 °C时，向含Cl- 和CrO4 2- 各0.010 M的溶液中逐滴加入AgNO3溶液（忽略体积变化）。\n(AgCl的Ksp = 1.0x10^-10；Ag2CrO4的Ksp = 1.0x10^-12)\n下列哪一项正确给出了最先沉淀的盐及其开始沉淀时的[Ag+]？",
         "ku": "Li 25 °C, li çareseriyeke ku îyonên Cl- û CrO4 2- her yek bi tîrbûna 0,010 M dihewîne, çareseriya AgNO3 dilop bi dilop tê zêdekirin (guherîna qebareyê nayê hesibandin).\n(Ji bo AgCl Ksp = 1,0x10^-10; ji bo Ag2CrO4 Ksp = 1,0x10^-12)\nXwêya ku pêşî dinişe û [Ag+] di kêliya ku niştina wê dest pê dike de di kîjan vebijarkê de rast hatine dayîn?"
       },
@@ -2221,7 +2221,7 @@ export const unit20: ChemistryUnitSeedData = {
         "ru": "В известняковых районах важную роль играет равновесие CaCO3(тв) + CO2(г) + H2O(ж) ⇌ Ca2+(р-р) + 2HCO3-(р-р). Даны утверждения:\nI. С увеличением количества растворённого в подземной воде CO2 растворимость CaCO3 возрастает.\nII. Выделение газа CO2 из воды, капающей с потолка пещеры, вызывает осаждение CaCO3 и образование сталактитов.\nIII. Разрушение зубной эмали кислыми продуктами и напитками — пример увеличения растворимости малорастворимой основной соли в кислой среде.\nКакие из утверждений верны?",
         "ar": "في المناطق الكلسية يؤدي الاتزان CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) دورًا مهمًّا.\nI. كلما زادت كمية CO2 الذائبة في المياه الجوفية زادت ذائبية CaCO3.\nII. يؤدي تصاعد غاز CO2 من الماء المتساقط من سقف الكهف إلى ترسب CaCO3 وتكوّن الهوابط.\nIII. تآكل مينا الأسنان بفعل الأطعمة والمشروبات الحمضية مثال على ازدياد ذائبية ملح قاعدي قليل الذوبان في الوسط الحمضي.\nأيّ العبارات صحيحة؟",
         "zh": "石灰岩地区中平衡CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq)起着重要作用。\nI. 地下水中溶解的CO2越多，CaCO3的溶解度越大。\nII. 从洞顶滴下的水中逸出CO2气体，使CaCO3沉淀并形成钟乳石。\nIII. 酸性食物和饮料侵蚀牙釉质，是难溶碱性盐在酸性介质中溶解度增大的例子。\n哪些说法正确？",
-        "ku": "Li herêmên kevirê kilsê hevsengiya CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) roleke girîng dilîze.\nI. Her ku mîqdara CO2 ya di ava binerdê de heliyayî zêde dibe, helbûniya CaCO3 zêde dibe.\nII. Derketina gaza CO2 ji ava ku ji banê şikeftê dilop dike dibe sedema niştina CaCO3 û çêbûna stalaktîtan.\nIII. Xwarina mîna diranan bi xwarin û vexwarinên asîdî mînakek e ji bo zêdebûna helbûniya xwêyeke bazî ya kêm-helbar di derdora asîdî de.\nkîjan ji van gotinan rast in?"
+        "ku": "Li herêmên kevirê kilsê hevsengiya CaCO3(s) + CO2(g) + H2O(l) ⇌ Ca2+(aq) + 2HCO3-(aq) roleke girîng dilîze.\nI. Her ku mîqdara CO2 ya di ava binerdê de heliyayî zêde dibe, helbûniya CaCO3 zêde dibe.\nII. Derketina gaza CO2 ji ava ku ji banê şikeftê dilop dike dibe sedema niştina CaCO3 û çêbûna stalaktîtan.\nIII. Xwarina mîna diranan bi xwarin û vexwarinên asîdî mînakek e ji bo zêdebûna helbûniya xwêyeke bazî ya kêm-helbar di derdora asîdî de.\nKîjan ji van gotinan rast in?"
       },
       "options": [
         {

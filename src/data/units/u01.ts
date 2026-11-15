@@ -209,7 +209,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Сосуд с одной меткой на горлышке для приготовления раствора заданного объёма — мерная колба. Бюретка — тонкая градуированная стеклянная трубка с краном; при титровании она служит для покапельного отмеренного добавления жидкости.",
         "ar": "الوعاء ذو العلامة الواحدة على العنق والمستخدم لتحضير محلول بحجم محدد هو الدورق الحجمي. أما السحاحة فأنبوب زجاجي رفيع مدرّج ذو صنبور، تُضاف به السوائل قطرةً قطرةً وبكميات مقيسة أثناء المعايرة.",
         "zh": "颈部只有一条刻度线、用于配制一定体积溶液的是容量瓶。滴定管是带活塞的细长刻度玻璃管，用于滴定时逐滴、定量地加入液体。",
-        "ku": "Firaxa ku tenê xêzeke pîvanê li ser stûyê wê heye û ji bo amadekirina çareseriyeke bi qebareya diyar e balona jojeyê ye. Buret boriyeke camê ya zirav, bi derece û şîrek e; di tîtrasyonê de şileyê dilop bi dilop û bi pîvan zêde dike."
+        "ku": "Firaxa ku tenê xêzeke pîvanê li ser stûyê wê heye û ji bo amadekirina çareseriyeke bi qebareya diyar tê bikaranîn balona jojeyê ye. Buret boriyeke camê ya zirav, bi derece û şîrek e; di tîtrasyonê de şileyê dilop bi dilop û bi pîvan zêde dike."
       }
     },
     {
@@ -1138,7 +1138,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "I верно: охлаждающая вода входит через нижний патрубок X и выходит через верхний патрубок Y, поэтому рубашка полностью заполнена, и самая холодная вода встречается с паром у конца, ближнего к приёмнику. II неверно: соль нелетуча и остаётся в колбе; в приёмнике K собирается сконденсированная чистая вода. III верно: шарик термометра находится на уровне отводной трубки, поэтому он измеряет температуру пара, поступающего в холодильник. Ответ: I и III.",
         "ar": "العبارة I صحيحة: يدخل ماء التبريد من الوصلة X في الطرف السفلي للمكثّف ويخرج من Y في طرفه العلوي، فيمتلئ الغلاف تمامًا ويلتقي أبرد ماء بالبخار عند الطرف القريب من وعاء الجمع. العبارة II خاطئة: الملح غير متطاير فيبقى في الدورق، ويتجمّع في K الماء النقي المتكثّف. العبارة III صحيحة: مستودع مقياس الحرارة عند مستوى الأنبوب الجانبي، فهو يقيس درجة حرارة البخار الداخل إلى المكثّف. الإجابة: I و III.",
         "zh": "I 正确：冷却水从冷凝管下端的 X 口进入、从上端的 Y 口流出，这样夹套能完全充满水，最冷的水在靠近接收瓶的一端与蒸气相遇。II 错误：盐不挥发，留在蒸馏烧瓶中；K 中收集的是冷凝下来的纯水。III 正确：温度计的水银球与支管口相平，测量的是进入冷凝管的蒸气温度。答案：I 和 III。",
-        "ku": "I rast e: ava sarkirinê ji girêdana X ya li dawiya jêrîn a sarker dikeve û ji Y ya li dawiya jorîn derdikeve; bi vî awayî kiras bi tevahî bi avê tije dibe û ava herî sar li aliyê nêzî firaxa berhevkirinê rastî buharê tê. II şaş e: xwê nafire, di balonê de dimîne; di K de ava pak a ku hilmiyaye kom dibe. III rast e: hezîneya germpîvê li hemberî boriya kêlekê ye, ji ber vê germahiya buhara ku derbasî sarker dibe dipîve. Bersiv: I û III."
+        "ku": "I rast e: ava sarkirinê ji girêdana X ya li dawiya jêrîn a sarker dikeve û ji Y ya li dawiya jorîn derdikeve; bi vî awayî kiras bi tevahî bi avê tije dibe û ava herî sar li aliyê nêzî firaxa berhevkirinê rastî buharê tê. II şaş e: xwê nafire, di balonê de dimîne; di K de ava pak a ku şile bûye kom dibe. III rast e: hezîneya germpîvê li hemberî boriya kêlekê ye, ji ber vê germahiya buhara ku derbasî sarker dibe dipîve. Bersiv: I û III."
       },
       "figure": {
         "kind": "svg",
@@ -2161,7 +2161,7 @@ export const unit01: ChemistryUnitSeedData = {
         "de": "Die Abbildung zeigt Teilchenmodelle der Stoffe in den Gefäßen I, II, III und IV. Jede Kreisart steht für eine andere Atomsorte, sich berührende Kreise bilden ein Molekül.\nWelche der folgenden Aussagen über diese Stoffe ist richtig?",
         "fr": "La figure présente les modèles particulaires des substances contenues dans les récipients I, II, III et IV. Chaque type de cercle représente un type d'atome différent et des cercles qui se touchent forment une molécule.\nLaquelle des affirmations suivantes sur ces substances est exacte ?",
         "ru": "На рисунке показаны модели частиц веществ в сосудах I, II, III и IV. Каждый вид кружка обозначает свой вид атомов, соприкасающиеся кружки образуют одну молекулу.\nКакое утверждение об этих веществах верно?",
-        "ar": "يبيّن الشكل نماذج جسيمية للمواد الموجودة في الأوعية I وII وIII وIV. يمثّل كل نوع من الدوائر نوعًا مختلفًا من الذرات، وتمثّل الدوائر المتلامسة جزيئًا واحدًا.\nأيّ العبارات الآتية صحيحة بشأن هذه المواد؟",
+        "ar": "يبيّن الشكل نماذج جسيمية للمواد الموجودة في الأوعية I و II و III و IV. يمثّل كل نوع من الدوائر نوعًا مختلفًا من الذرات، وتمثّل الدوائر المتلامسة جزيئًا واحدًا.\nأيّ العبارات الآتية صحيحة بشأن هذه المواد؟",
         "zh": "图中给出了容器 I、II、III、IV 中物质的粒子模型。每种圆圈代表一种原子，相互接触的圆圈表示一个分子。\n关于这些物质，下列说法正确的是哪一项？",
         "ku": "Di şiklê de modelên perçeyan ên maddeyên di firaxên I, II, III û IV de hatine dayîn. Her cureyê xelekê cureyekî din ê atomê nîşan dide, xelekên ku bi hev dikevin jî molekulekê nîşan didin.\nDerbarê van maddeyan de kîjan rast e?"
       },
@@ -2172,9 +2172,9 @@ export const unit01: ChemistryUnitSeedData = {
           "de": "Nur I ist ein Element; II und III sind Verbindungen; IV ist ein Gemisch.",
           "fr": "Seul I est un élément ; II et III sont des composés ; IV est un mélange.",
           "ru": "Только I — простое вещество; II и III — сложные вещества; IV — смесь.",
-          "ar": "I وحده عنصر؛ وII وIII مركّبان؛ وIV مخلوط.",
+          "ar": "I وحده عنصر؛ و II و III مركّبان؛ و IV خليط.",
           "zh": "只有 I 是单质；II 和 III 是化合物；IV 是混合物。",
-          "ku": "Tenê I element e; II û III pêkhatî ne; IV tevlihevî ye."
+          "ku": "Tenê I element e; II û III pêkhate ne; IV tevlihevî ye."
         },
         {
           "tr": "I ve II element; III bileşik; IV karışımdır.",
@@ -2182,9 +2182,9 @@ export const unit01: ChemistryUnitSeedData = {
           "de": "I und II sind Elemente; III ist eine Verbindung; IV ist ein Gemisch.",
           "fr": "I et II sont des éléments ; III est un composé ; IV est un mélange.",
           "ru": "I и II — простые вещества; III — сложное вещество; IV — смесь.",
-          "ar": "I وII عنصران؛ وIII مركّب؛ وIV مخلوط.",
+          "ar": "I و II عنصران؛ و III مركّب؛ و IV خليط.",
           "zh": "I 和 II 是单质；III 是化合物；IV 是混合物。",
-          "ku": "I û II element in; III pêkhatî ye; IV tevlihevî ye."
+          "ku": "I û II element in; III pêkhate ye; IV tevlihevî ye."
         },
         {
           "tr": "I element; II ve IV bileşik; III karışımdır.",
@@ -2192,9 +2192,9 @@ export const unit01: ChemistryUnitSeedData = {
           "de": "I ist ein Element; II und IV sind Verbindungen; III ist ein Gemisch.",
           "fr": "I est un élément ; II et IV sont des composés ; III est un mélange.",
           "ru": "I — простое вещество; II и IV — сложные вещества; III — смесь.",
-          "ar": "I عنصر؛ وII وIV مركّبان؛ وIII مخلوط.",
+          "ar": "I عنصر؛ و II و IV مركّبان؛ و III خليط.",
           "zh": "I 是单质；II 和 IV 是化合物；III 是混合物。",
-          "ku": "I element e; II û IV pêkhatî ne; III tevlihevî ye."
+          "ku": "I element e; II û IV pêkhate ne; III tevlihevî ye."
         },
         {
           "tr": "I, II ve III saf maddedir; bunlardan yalnız III moleküllerden oluşur.",
@@ -2202,7 +2202,7 @@ export const unit01: ChemistryUnitSeedData = {
           "de": "I, II und III sind Reinstoffe; davon besteht nur III aus Molekülen.",
           "fr": "I, II et III sont des corps purs ; parmi eux, seul III est formé de molécules.",
           "ru": "I, II и III — чистые вещества; из них только III состоит из молекул.",
-          "ar": "I وII وIII مواد نقية؛ ومن بينها يتكوّن III وحده من جزيئات.",
+          "ar": "I و II و III مواد نقية؛ ومن بينها يتكوّن III وحده من جزيئات.",
           "zh": "I、II、III 是纯净物；其中只有 III 由分子构成。",
           "ku": "I, II û III maddeyên saf in; ji wan tenê III ji molekulan pêk tê."
         },
@@ -2212,9 +2212,9 @@ export const unit01: ChemistryUnitSeedData = {
           "de": "II und III sind Verbindungen; I und IV sind Elemente.",
           "fr": "II et III sont des composés ; I et IV sont des éléments.",
           "ru": "II и III — сложные вещества; I и IV — простые вещества.",
-          "ar": "II وIII مركّبان؛ وI وIV عنصران.",
+          "ar": "II و III مركّبان؛ و I و IV عنصران.",
           "zh": "II 和 III 是化合物；I 和 IV 是单质。",
-          "ku": "II û III pêkhatî ne; I û IV element in."
+          "ku": "II û III pêkhate ne; I û IV element in."
         }
       ],
       "correctIndex": 1,
@@ -2224,9 +2224,9 @@ export const unit01: ChemistryUnitSeedData = {
         "de": "In I liegen Atome einer einzigen Sorte einzeln vor: ein Element. II enthält zweiatomige Moleküle aus nur einer Atomsorte: ein Element aus Molekülen; Moleküle zu enthalten macht einen Stoff nicht zur Verbindung. In III enthält jedes der gleichen Moleküle zwei verschiedene Atomsorten: eine Verbindung. IV enthält einzelne Atome und zweiatomige Moleküle, also zwei verschiedene Stoffe: ein Gemisch. I, II und III sind Reinstoffe; II und III bestehen aus Molekülen.",
         "fr": "En I, des atomes d'un seul type sont isolés : c'est un élément. II contient des molécules diatomiques formées d'un seul type d'atome : un élément moléculaire ; contenir des molécules ne fait pas d'une substance un composé. En III, chaque molécule, toutes identiques, contient deux types d'atomes : c'est un composé. IV contient des atomes isolés et des molécules diatomiques, donc deux substances différentes : c'est un mélange. I, II et III sont des corps purs ; II et III sont formés de molécules.",
         "ru": "В I находятся отдельные атомы одного вида — простое вещество. В II — двухатомные молекулы из атомов одного вида: это простое вещество молекулярного строения; наличие молекул не делает вещество сложным. В III каждая из одинаковых молекул содержит атомы двух видов — сложное вещество. В IV одновременно есть отдельные атомы и двухатомные молекулы, то есть два разных вещества — смесь. I, II и III — чистые вещества; II и III состоят из молекул.",
-        "ar": "في I ذرات من نوع واحد منفصلة: عنصر. وفي II جزيئات ثنائية الذرة مكوّنة من نوع واحد من الذرات فقط: عنصر جزيئي، واحتواء المادة على جزيئات لا يجعلها مركّبًا. وفي III يحتوي كل جزيء من الجزيئات المتماثلة على نوعين مختلفين من الذرات: مركّب. وفي IV ذرات منفردة مع جزيئات ثنائية الذرة، أي مادتان مختلفتان: مخلوط. المواد I وII وIII نقية، وII وIII تتكوّنان من جزيئات.",
+        "ar": "في I ذرات من نوع واحد منفصلة: عنصر. وفي II جزيئات ثنائية الذرة مكوّنة من نوع واحد من الذرات فقط: عنصر جزيئي، واحتواء المادة على جزيئات لا يجعلها مركّبًا. وفي III يحتوي كل جزيء من الجزيئات المتماثلة على نوعين مختلفين من الذرات: مركّب. وفي IV ذرات منفردة مع جزيئات ثنائية الذرة، أي مادتان مختلفتان: خليط. المواد I و II و III نقية، و II و III تتكوّنان من جزيئات.",
         "zh": "I 中是同种原子单独存在：单质。II 中是只由同种原子构成的双原子分子：由分子构成的单质；含有分子并不意味着是化合物。III 中每个相同的分子都含有两种不同的原子：化合物。IV 中单个原子和双原子分子共存，即两种不同的物质：混合物。I、II、III 是纯净物，其中 II 和 III 都由分子构成。",
-        "ku": "Di I de atomên tenê yek curî bi serê xwe hene: element. Di II de molekulên duatomî yên tenê ji yek curê atomê pêk hatine hene: elementeke molekulî; hebûna molekulan maddeyekê nake pêkhatî. Di III de her yek ji molekulên wekhev du curên cuda yên atomê dihewîne: pêkhatî. Di IV de atomên tenê û molekulên duatomî, ango du maddeyên cuda bi hev re ne: tevlihevî. I, II û III maddeyên saf in; II û III ji molekulan pêk tên."
+        "ku": "Di I de atomên tenê yek curî bi serê xwe hene: element. Di II de molekulên duatomî yên tenê ji yek curê atomê pêk hatine hene: elementeke molekulî; hebûna molekulan maddeyekê nake pêkhate. Di III de her yek ji molekulên wekhev du curên cuda yên atomê dihewîne: pêkhate. Di IV de atomên tenê û molekulên duatomî, ango du maddeyên cuda bi hev re ne: tevlihevî. I, II û III maddeyên saf in; II û III ji molekulan pêk tên."
       },
       "figure": {
         "kind": "svg",
@@ -2243,9 +2243,9 @@ export const unit01: ChemistryUnitSeedData = {
         "de": "Die Tabelle zeigt die Massen, die in drei Versuchen vor und nach dem Vorgang gewogen wurden.\nWelche der folgenden Deutungen der Ergebnisse sind richtig?\nI. Versuch 1 zeigt, dass die Gesamtmasse in einem geschlossenen System erhalten bleibt.\nII. In Versuch 2 nahm die Masse des Feststoffs zu, weil sich 1,6 g Sauerstoff aus der Luft mit dem Magnesium verbanden.\nIII. In Versuch 3 wurden 47,0 g Materie vernichtet; die Massenerhaltung gilt in offenen Gefäßen nicht.",
         "fr": "Le tableau donne les masses pesées avant et après l'opération dans trois expériences.\nLesquelles des interprétations suivantes des résultats sont exactes ?\nI. L'expérience 1 montre que la masse totale se conserve dans un système fermé.\nII. Dans l'expérience 2, la masse du solide a augmenté parce que 1,6 g de dioxygène de l'air s'est fixé sur le magnésium.\nIII. Dans l'expérience 3, 47,0 g de matière ont disparu ; la conservation de la masse ne s'applique pas aux récipients ouverts.",
         "ru": "В таблице приведены массы, измеренные до и после процесса в трёх опытах.\nКакие из следующих выводов из результатов верны?\nI. Опыт 1 показывает, что в закрытой системе общая масса сохраняется.\nII. В опыте 2 масса твёрдого вещества увеличилась, потому что с магнием соединилось 1,6 г кислорода из воздуха.\nIII. В опыте 3 исчезло 47,0 г вещества; закон сохранения массы в открытых сосудах не выполняется.",
-        "ar": "يبيّن الجدول الكتل المقيسة قبل العملية وبعدها في ثلاث تجارب.\nأيّ التفسيرات الآتية للنتائج صحيحة؟\nI. تُظهر التجربة 1 أن الكتلة الكلية محفوظة في نظام مغلق.\nII. في التجربة 2 ازدادت كتلة المادة الصلبة لأن 1,6 g من أكسجين الهواء اتحدت مع المغنيسيوم.\nIII. في التجربة 3 فَنِيَت 47,0 g من المادة؛ فقانون حفظ الكتلة لا يصحّ في الأوعية المفتوحة.",
+        "ar": "يبيّن الجدول الكتل المقيسة قبل العملية وبعدها في ثلاث تجارب.\nأيّ التفسيرات الآتية للنتائج صحيحة؟\nI. تُظهر التجربة 1 أن الكتلة الكلية محفوظة في نظام مغلق.\nII. في التجربة 2 ازدادت كتلة المادة الصلبة لأن 1.6 g من أكسجين الهواء اتحدت مع المغنيسيوم.\nIII. في التجربة 3 فَنِيَت 47.0 g من المادة؛ فقانون حفظ الكتلة لا يصحّ في الأوعية المفتوحة.",
         "zh": "表中给出了三个实验在操作前后称得的质量。\n关于实验结果，下列解释中正确的是哪些？\nI. 实验 1 表明在封闭体系中总质量守恒。\nII. 实验 2 中固体质量增加，是因为空气中 1.6 g 氧与镁结合了。\nIII. 实验 3 中有 47.0 g 物质消失了；质量守恒定律在敞口容器中不成立。",
-        "ku": "Di tabloyê de encamên kêşanên berî û piştî karûbarê di sê ceribandinan de hatine dayîn.\nKîjan ji van şîroveyên encaman rast in?\nI. Ceribandina 1. nîşan dide ku di pergaleke girtî de girseya giştî tê parastin.\nII. Di ceribandina 2. de girseya hişkê zêde bûye, ji ber ku 1,6 g oksîjena hewayê bi magnezyûmê ve girêdayî bûye.\nIII. Di ceribandina 3. de 47,0 g madde winda bûye; parastina girseyê di firaxên vekirî de derbasdar nîne."
+        "ku": "Di tabloyê de encamên kêşanên berî û piştî karûbarê di sê ceribandinan de hatine dayîn.\nKîjan ji van şîroveyên encaman rast in?\nI. Ceribandina 1. nîşan dide ku di pergaleke girtî de girseya giştî tê parastin.\nII. Di ceribandina 2. de girseya hişkê zêde bûye, ji ber ku 1,6 g oksîjena hewayê bi magnezyûmê ve girêdayî bûye.\nIII. Di ceribandina 3. de 47,0 g madde winda bûye; parastina girseyê di firaxên vekirî de ne derbasdar e."
       },
       "options": [
         {
@@ -2306,7 +2306,7 @@ export const unit01: ChemistryUnitSeedData = {
         "de": "In Versuch 1 ist das Gefäß geschlossen, sodass kein Stoff hinein- oder hinausgelangt; obwohl das Zinn oxidiert wird, bleibt die Gesamtmasse bei 120,0 g (I richtig). In Versuch 2 verbindet sich Magnesium mit Luftsauerstoff zu MgO; die Zunahme 4,0 − 2,4 = 1,6 g ist die Masse des gebundenen Sauerstoffs (II richtig). In Versuch 3 entweichen das beim Verbrennen gebildete CO2 und der Wasserdampf aus dem offenen Gefäß; die Abnahme um 50,0 − 3,0 = 47,0 g stammt von den entweichenden Gasen. Die Masse bleibt bei jeder Reaktion erhalten; im offenen Gefäß werden nur die zu- und abströmenden Gase nicht mitgewogen (III falsch). Antwort: I und II.",
         "fr": "Dans l'expérience 1, le récipient est fermé : aucune matière ne peut entrer ni sortir ; bien que l'étain s'oxyde, la masse totale reste 120,0 g (I exacte). Dans l'expérience 2, le magnésium se combine au dioxygène de l'air pour former MgO ; l'augmentation 4,0 − 2,4 = 1,6 g est la masse d'oxygène fixée (II exacte). Dans l'expérience 3, le CO2 et la vapeur d'eau formés par la combustion s'échappent du récipient ouvert ; la diminution de 50,0 − 3,0 = 47,0 g est due aux gaz qui s'échappent. La masse se conserve dans toute réaction ; dans un récipient ouvert, on ne pèse simplement pas les gaz qui entrent et sortent (III fausse). Réponse : I et II.",
         "ru": "В опыте 1 сосуд закрыт, вещество не может ни войти, ни выйти; хотя олово окисляется, общая масса остаётся 120,0 г (I верно). В опыте 2 магний соединяется с кислородом воздуха, образуя MgO; прирост 4,0 − 2,4 = 1,6 г — это масса присоединившегося кислорода (II верно). В опыте 3 образующиеся при горении CO2 и водяной пар уходят из открытого сосуда; уменьшение на 50,0 − 3,0 = 47,0 г вызвано улетевшими газами. Масса сохраняется в любой реакции; в открытом сосуде просто не взвешиваются поступающие и уходящие газы (III неверно). Ответ: I и II.",
-        "ar": "في التجربة 1 الوعاء مغلق فلا تدخل مادة ولا تخرج؛ ومع أن القصدير يتأكسد تبقى الكتلة الكلية 120,0 g (I صحيحة). في التجربة 2 يتحد المغنيسيوم مع أكسجين الهواء مكوّنًا MgO؛ والزيادة 4,0 − 2,4 = 1,6 g هي كتلة الأكسجين المتحد (II صحيحة). في التجربة 3 يتسرّب CO2 وبخار الماء الناتجان عن الاحتراق من الوعاء المفتوح؛ فالنقص 50,0 − 3,0 = 47,0 g سببه الغازات المتسرّبة. الكتلة محفوظة في كل تفاعل، وفي الوعاء المفتوح لا تُوزن الغازات الداخلة والخارجة فقط (III خاطئة). الإجابة: I و II.",
+        "ar": "في التجربة 1 الوعاء مغلق فلا تدخل مادة ولا تخرج؛ ومع أن القصدير يتأكسد تبقى الكتلة الكلية 120.0 g (I صحيحة). في التجربة 2 يتحد المغنيسيوم مع أكسجين الهواء مكوّنًا MgO؛ والزيادة 4.0 − 2.4 = 1.6 g هي كتلة الأكسجين المتحد (II صحيحة). في التجربة 3 يتسرّب CO2 وبخار الماء الناتجان عن الاحتراق من الوعاء المفتوح؛ فالنقص 50.0 − 3.0 = 47.0 g سببه الغازات المتسرّبة. الكتلة محفوظة في كل تفاعل، أما في الوعاء المفتوح فالغازات الداخلة والخارجة وحدها هي التي لا يمكن وزنها (III خاطئة). الإجابة: I و II.",
         "zh": "实验 1 中容器密闭，物质既不能进入也不能逸出；虽然锡被氧化，总质量仍为 120.0 g（I 正确）。实验 2 中镁与空气中的氧结合生成 MgO；质量增加 4.0 − 2.4 = 1.6 g，就是结合的氧的质量（II 正确）。实验 3 中燃烧生成的 CO2 和水蒸气从敞口容器逸散到空气中；减少的 50.0 − 3.0 = 47.0 g 来自逸出的气体。任何反应中质量都守恒；敞口容器中只是进出的气体没有被称量（III 错误）。答案：I 和 II。",
         "ku": "Di ceribandina 1. de firax girtî ye, ji ber vê madde nikare bikeve û derkeve; her çend qelay oksîde dibe jî girseya giştî di 120,0 g de dimîne (I rast e). Di ceribandina 2. de magnezyûm bi oksîjena hewayê re dibe yek û MgO çêdike; zêdebûna 4,0 − 2,4 = 1,6 g girseya oksîjena girêdayî ye (II rast e). Di ceribandina 3. de CO2 û buhara avê ya ji şewitandinê çêdibin ji firaxa vekirî derdikevin hewayê; kêmbûna 50,0 − 3,0 = 47,0 g ji gazên ku direvin tê. Girse di her reaksiyonê de tê parastin; di firaxa vekirî de tenê gazên ku dikevin û derdikevin nayên kêşan (III şaş e). Bersiv: I û II."
       },
@@ -2341,7 +2341,7 @@ export const unit01: ChemistryUnitSeedData = {
             "ru": "Масса до (г)",
             "ar": "الكتلة قبل (g)",
             "zh": "操作前质量 (g)",
-            "ku": "Girse berê (g)"
+            "ku": "Girseya berê (g)"
           },
           {
             "tr": "Sonraki kütle (g)",
@@ -2351,7 +2351,7 @@ export const unit01: ChemistryUnitSeedData = {
             "ru": "Масса после (г)",
             "ar": "الكتلة بعد (g)",
             "zh": "操作后质量 (g)",
-            "ku": "Girse paşê (g)"
+            "ku": "Girseya paşê (g)"
           }
         ],
         "rows": [

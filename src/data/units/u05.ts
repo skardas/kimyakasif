@@ -179,7 +179,7 @@ export const unit05: ChemistryUnitSeedData = {
         "ru": "Главная причина кислотных дождей — растворение в дождевой воде CO2, концентрация которого в атмосфере растёт.",
         "ar": "السبب الرئيس للمطر الحمضي هو ذوبان CO2، الذي يتزايد تركيزه في الغلاف الجوي، في مياه المطر.",
         "zh": "酸雨的主要原因是大气中浓度不断升高的 CO2 溶解在雨水中。",
-        "ku": "Sedema sereke ya barana asîdî helîna CO2 ya ku tîrbûna wê di atmosferê de zêde dibe, di ava baranê de ye."
+        "ku": "Sedema sereke ya barana asîdî helbûna CO2 ya ku tîrbûna wê di atmosferê de zêde dibe, di ava baranê de ye."
       },
       "whyTrapIsFalse": {
         "tr": "CO2'nin çözünmesi yağmurun pH değerini yalnızca yaklaşık 5,6'ya düşürür; bu, kirlenmemiş yağmurun doğal asitliğidir. pH'ı 5,6'nın altına indiren asit yağmuru, yanma sırasında oluşan SO2, SO3 ve azot oksitlerinin su buharıyla H2SO4 ve HNO3 oluşturmasından kaynaklanır.",
@@ -189,7 +189,7 @@ export const unit05: ChemistryUnitSeedData = {
         "ru": "Растворённый CO2 снижает pH дождя лишь примерно до 5,6 — это естественная кислотность незагрязнённого дождя. Кислотные дожди с pH ниже 5,6 вызывают SO2, SO3 и оксиды азота от сжигания топлива, которые с водяным паром образуют H2SO4 и HNO3.",
         "ar": "ذوبان CO2 يخفض pH المطر إلى نحو 5.6 فقط، وهذه هي الحموضة الطبيعية للمطر غير الملوث. أما المطر الحمضي الذي يقل pH له عن 5.6 فسببه SO2 وSO3 وأكاسيد النيتروجين الناتجة عن الاحتراق، إذ تكوّن مع بخار الماء H2SO4 وHNO3.",
         "zh": "溶解的 CO2 只能使雨水的 pH 降到约 5.6，这是未受污染雨水的天然酸性。pH 低于 5.6 的酸雨是由燃烧产生的 SO2、SO3 和氮氧化物与水蒸气生成 H2SO4 和 HNO3 造成的。",
-        "ku": "Helîna CO2 pH-ya baranê tenê heta nêzîkî 5,6 kêm dike; ev asîdîbûna xwezayî ya barana neqirêj e. Barana asîdî ya ku pH-ya wê ji 5,6 kêmtir e, ji SO2, SO3 û oksîtên azotê yên di şewitandinê de çêdibin û bi hilma avê re H2SO4 û HNO3 çêdikin, tê."
+        "ku": "Helbûna CO2 pH-ya baranê tenê heta nêzîkî 5,6 kêm dike; ev asîdîbûna xwezayî ya barana neqirêj e. Barana asîdî ya ku pH-ya wê ji 5,6 kêmtir e, ji SO2, SO3 û oksîtên azotê yên di şewitandinê de çêdibin û bi buhara avê re H2SO4 û HNO3 çêdikin, tê."
       }
     },
     {
@@ -288,7 +288,7 @@ export const unit05: ChemistryUnitSeedData = {
         "ru": "Накипь (CaCO3) образует теплоизолирующий слой, который проводит тепло гораздо хуже металла. Передача тепла от нагревателя к воде затрудняется, нагрев длится дольше и требует больше энергии; по мере утолщения слоя сужаются и трубы.",
         "ar": "يكوّن الحجر الجيري (CaCO3) طبقة عازلة توصل الحرارة أسوأ بكثير من الفلز، فيصعب انتقال الحرارة من المقاومة إلى الماء، ويستغرق التسخين وقتًا أطول ويستهلك طاقة أكبر؛ ومع ازدياد سماكة الطبقة تضيق الأنابيب أيضًا.",
         "zh": "水垢（CaCO3）会形成一层导热性远比金属差的隔热层，阻碍热量从加热元件传给水，加热时间变长、耗能增加；水垢变厚还会使管道变窄。",
-        "ku": "Kevirê kilsê (CaCO3) qatek îzolekirî çêdike ku germê ji metalê gelek xirabtir dibe. Derbasbûna germê ji rezîstansê bo avê dijwar dibe, germkirin dirêjtir dikişîne û bêtir enerjî xerc dibe; her ku qat stûr dibe, borî jî teng dibin."
+        "ku": "Kevirê kilsê (CaCO3) qateke îzolekirî çêdike ku germê ji metalê gelek xirabtir dibe. Derbasbûna germê ji rezîstansê bo avê dijwar dibe, germkirin dirêjtir dikişîne û bêtir enerjî xerc dibe; her ku qat stûr dibe, borî jî teng dibin."
       }
     },
     {
@@ -517,7 +517,7 @@ export const unit05: ChemistryUnitSeedData = {
         "de": "Das erste und grundlegende Prinzip der grünen Chemie ist nicht, Abfall nachträglich zu behandeln, sondern seine Entstehung an der Quelle zu vermeiden. Dazu werden Reaktionswege abfallarm gestaltet und harmlose Lösungsmittel, Katalysatoren und nachwachsende Rohstoffe bevorzugt.",
         "fr": "Le premier principe fondamental de la chimie verte n'est pas de traiter les déchets après leur formation, mais de les éviter à la source. Pour cela, on conçoit des voies de synthèse produisant peu de déchets et l'on privilégie solvants inoffensifs, catalyseurs et matières premières renouvelables.",
         "ru": "Первый и основной принцип зелёной химии — не очищать отходы после их образования, а предотвращать их появление в источнике. Для этого реакции проектируют так, чтобы отходов было мало, и выбирают безвредные растворители, катализаторы и возобновляемое сырьё.",
-        "ar": "المبدأ الأول والأساسي للكيمياء الخضراء ليس معالجة النفايات بعد تكوّنها، بل منع تكوّنها من المصدر. ولهذا تُصمَّم مسارات التفاعل بحيث تنتج نفايات قليلة، وتُفضَّل المذيبات غير الضارة والمحفزات والمواد الخام المتجددة.",
+        "ar": "المبدأ الأول والأساسي للكيمياء الخضراء ليس معالجة النفايات بعد تكوّنها، بل منع تكوّنها من المصدر. ولهذا تُصمَّم مسارات التفاعل بحيث تنتج نفايات قليلة، وتُفضَّل المذيبات غير الضارة والحفازات والمواد الخام المتجددة.",
         "zh": "绿色化学的首要基本原则不是在废物产生后再处理，而是从源头上防止其产生。为此，要把反应路线设计成少产生废物，并优先选用无害溶剂、催化剂和可再生原料。",
         "ku": "Prensîba yekem û bingehîn a kîmyaya kesk ne paqijkirina bermayiyê piştî çêbûnê ye, lê pêşîgirtina çêbûna wê li çavkaniyê ye. Ji bo vê, rêyên reaksiyonê wisa tên sêwirandin ku kêm bermayî çêbikin û helkerên bêzerar, katalîzor û madeyên xav ên nûbûyî tên tercîhkirin."
       }
@@ -1194,7 +1194,7 @@ export const unit05: ChemistryUnitSeedData = {
         "ru": "По таблице колонка задерживает Ca2+ 3 ммоль/л и Mg2+ 1 ммоль/л. Анионы не меняются, поэтому должна сохраняться электронейтральность воды: каждый задержанный ион 2+ заменяется двумя ионами Na+. Выделившийся Na+ = 2 · (3 + 1) = 8 ммоль/л; Na+ на выходе = 2 + 8 = 10 ммоль/л. Обмен 1 : 1 даёт 6, если забыть Na+ входной воды — 8, а если считать, что Na+ не меняется, — 2.",
         "ar": "من الجدول يحتجز العمود Ca2+ بمقدار 3 mmol/L وMg2+ بمقدار 1 mmol/L. وبما أن الأنيونات لا تتغير يجب أن يبقى الماء متعادلًا كهربائيًا: كل أيون ثنائي الشحنة محتجز يحل محله أيونان Na+. Na+ المنطلق = 2 · (3 + 1) = 8 mmol/L، وNa+ في الماء الخارج = 2 + 8 = 10 mmol/L. افتراض تبادل 1 : 1 يعطي 6، ونسيان Na+ الموجود في الماء الداخل يعطي 8، وظن أن Na+ لا يتغير يعطي 2.",
         "zh": "由表可知，树脂柱截留了 3 mmol/L 的 Ca2+ 和 1 mmol/L 的 Mg2+。阴离子不变，水必须保持电中性：每截留一个 2+ 离子，就有 2 个 Na+ 进入水中。释放的 Na+ = 2 · (3 + 1) = 8 mmol/L；出柱水中 Na+ = 2 + 8 = 10 mmol/L。按 1 : 1 交换会得到 6，忘记进柱水中原有的 Na+ 会得到 8，认为 Na+ 不变则得到 2。",
-        "ku": "Li gorî tabloyê stûn Ca2+ 3 mmol/L û Mg2+ 1 mmol/L digire. Ji ber ku anyon naguherin, divê hevsengiya barê avê biparêze: li şûna her îyoneke 2+ ya hatî girtin 2 Na+ derbasî avê dibin. Na+ ya derbasî avê dibe = 2 · (3 + 1) = 8 mmol/L; Na+ di ava derketinê de = 2 + 8 = 10 mmol/L. Guherîna 1 : 1 encama 6, jibîrkirina Na+ ya ava têketinê 8, û fikra ku Na+ naguhere 2 dide."
+        "ku": "Li gorî tabloyê stûn Ca2+ 3 mmol/L û Mg2+ 1 mmol/L digire. Ji ber ku anyon naguherin, divê hevsengiya barê avê were parastin: li şûna her îyoneke 2+ ya hatî girtin 2 Na+ derbasî avê dibin. Na+ ya derbasî avê dibe = 2 · (3 + 1) = 8 mmol/L; Na+ di ava derketinê de = 2 + 8 = 10 mmol/L. Guherîna 1 : 1 encama 6, jibîrkirina Na+ ya ava têketinê 8, û fikra ku Na+ naguhere 2 dide."
       },
       "figure": {
         "kind": "table",
@@ -1724,7 +1724,7 @@ export const unit05: ChemistryUnitSeedData = {
               "de": "Ja (weiß)",
               "fr": "Oui (blanc)",
               "ru": "Есть (белый)",
-              "ar": "نعم (أبيض)",
+              "ar": "يوجد (أبيض)",
               "zh": "有（白色）",
               "ku": "Heye (spî)"
             },
@@ -1785,7 +1785,7 @@ export const unit05: ChemistryUnitSeedData = {
         "ru": "В таблице приведены концентрации ртути, измеренные в воде загрязнённого ртутью озера и в обитающих в нём организмах. Какой из следующих выводов верен?",
         "ar": "يبين الجدول تراكيز الزئبق المقيسة في ماء بحيرة ملوثة بالزئبق وفي الكائنات الحية التي تعيش فيها. أيّ الاستنتاجات الآتية صحيح؟",
         "zh": "表中给出了在某受汞污染湖泊的湖水及湖中生物体内测得的汞浓度。下列结论中哪一项正确？",
-        "ku": "Di tabloyê de tîrbûnên cîweyê yên di ava golek bi cîweyê qirêjbûyî û di zindiyên ku tê de dijîn de hatine pîvan, hatine dayîn. Kîjan ji van encaman rast e?"
+        "ku": "Di tabloyê de tîrbûnên cîweyê yên di ava goleke bi cîweyê qirêjbûyî û di zindiyên ku tê de dijîn de hatine pîvan, hatine dayîn. Kîjan ji van encaman rast e?"
       },
       "options": [
         {
@@ -2345,7 +2345,7 @@ export const unit05: ChemistryUnitSeedData = {
         "de": "Das Diagramm zeigt, wie sich die Gesamthärte (als CaCO3) einer Wasserprobe beim Kochen ändert; der entstehende Niederschlag wird abfiltriert. Wie viel Prozent der Gesamthärte dieses Wassers ist temporäre Härte?",
         "fr": "Le graphique montre l'évolution de la dureté totale (exprimée en CaCO3) d'un échantillon d'eau pendant son ébullition ; le dépôt formé est éliminé par filtration. Quel pourcentage de la dureté totale de cette eau correspond à la dureté temporaire ?",
         "ru": "На графике показано изменение общей жёсткости (в пересчёте на CaCO3) пробы воды при кипячении; образующийся осадок отделяют фильтрованием. Какой процент общей жёсткости этой воды составляет временная жёсткость?",
-        "ar": "يبين الرسم البياني تغيّر العسرة الكلية (مقدّرة بـ CaCO3) لعينة ماء أثناء غليها، ويُفصل الراسب المتكوّن بالترشيح. ما النسبة المئوية التي تمثلها العسرة المؤقتة من العسرة الكلية لهذا الماء؟",
+        "ar": "يبين الرسم البياني تغيّر العسر الكلي (مقدّرة بـ CaCO3) لعينة ماء أثناء غليها، ويُفصل الراسب المتكوّن بالترشيح. ما النسبة المئوية التي يمثلها العسر المؤقت من العسر الكلي لهذا الماء؟",
         "zh": "图中给出了某水样在煮沸过程中总硬度（以 CaCO3 计）随时间的变化，生成的沉淀经过滤除去。该水的暂时硬度占总硬度的百分之几？",
         "ku": "Grafîk nîşan dide ka hişkiya giştî (wekî CaCO3) ya nimûneyeke avê di dema kelandinê de çawa diguhere; bermayiya ku çêdibe bi parzûnkirinê tê veqetandin. Hişkiya demkî ya vê avê ji sedî çendê hişkiya giştî ye?"
       },
@@ -2408,7 +2408,7 @@ export const unit05: ChemistryUnitSeedData = {
         "de": "Im Diagramm beginnt die Härte bei 300 ppm und bleibt dann bei 120 ppm konstant. Durch Kochen wird nur die temporäre Härte entfernt; die verbleibenden 120 ppm sind bleibende Härte. Temporäre Härte = 300 − 120 = 180 ppm. Anteil an der Gesamthärte = 180 / 300 × 100 = 60 %. 40 % ist der Anteil der verbleibenden (bleibenden) Härte (120 / 300); 180 % entsteht, wenn man den ppm-Wert direkt als Prozent schreibt, 150 % und 250 % durch umgekehrt gebildete Verhältnisse (180 / 120, 300 / 120).",
         "fr": "Sur le graphique, la dureté part de 300 ppm et se stabilise à 120 ppm. L'ébullition n'élimine que la dureté temporaire ; les 120 ppm restants sont la dureté permanente. Dureté temporaire = 300 − 120 = 180 ppm. Part dans le total = 180 / 300 × 100 = 60 %. Le résultat 40 % est la part de la dureté restante (permanente) (120 / 300) ; 180 % vient de l'écriture directe de la valeur en ppm comme pourcentage, et 150 % et 250 % de rapports inversés (180 / 120, 300 / 120).",
         "ru": "На графике жёсткость начинается с 300 ppm и выходит на постоянное значение 120 ppm. Кипячением устраняется только временная жёсткость; оставшиеся 120 ppm — постоянная жёсткость. Временная жёсткость = 300 − 120 = 180 ppm. Её доля = 180 / 300 × 100 = 60 %. Ответ 40 % — это доля оставшейся (постоянной) жёсткости (120 / 300); 180 % получается, если записать значение в ppm как проценты, а 150 % и 250 % — если перевернуть отношения (180 / 120, 300 / 120).",
-        "ar": "في الرسم البياني تبدأ العسرة عند 300 ppm ثم تثبت عند 120 ppm. يزيل الغليان العسر المؤقت فقط؛ والـ 120 ppm المتبقية هي العسر الدائم. العسر المؤقت = 300 − 120 = 180 ppm. نسبته من الكلي = 180 / 300 × 100 = 60%. الناتج 40% هو نسبة العسر المتبقي (الدائم) (120 / 300)؛ و180% يأتي من كتابة قيمة ppm مباشرة كنسبة مئوية، و150% و250% من قلب النسبتين (180 / 120، 300 / 120).",
+        "ar": "في الرسم البياني يبدأ العسر عند 300 ppm ثم يثبت عند 120 ppm. يزيل الغليان العسر المؤقت فقط؛ والـ 120 ppm المتبقية هي العسر الدائم. العسر المؤقت = 300 − 120 = 180 ppm. نسبته من الكلي = 180 / 300 × 100 = 60%. الناتج 40% هو نسبة العسر المتبقي (الدائم) (120 / 300)؛ و180% يأتي من كتابة قيمة ppm مباشرة كنسبة مئوية، و150% و250% من قلب النسبتين (180 / 120، 300 / 120).",
         "zh": "图中硬度从 300 ppm 开始，最后稳定在 120 ppm。煮沸只能除去暂时硬度，剩下的 120 ppm 是永久硬度。暂时硬度 = 300 − 120 = 180 ppm，占总硬度的 180 / 300 × 100 = 60%。40% 是剩余（永久）硬度所占的比例(120 / 300)；180% 是把 ppm 数值直接当成百分数；150% 和 250% 是把比值倒过来算(180 / 120、300 / 120)。",
         "ku": "Di grafîkê de hişkî ji 300 ppm dest pê dike û li 120 ppm sabit dibe. Bi kelandinê tenê hişkiya demkî tê rakirin; 120 ppm-ya mayî hişkiya daîmî ye. Hişkiya demkî = 300 − 120 = 180 ppm. Para wê di hişkiya giştî de = 180 / 300 × 100 = %60. Encama %40 para hişkiya mayî (daîmî) ye (120 / 300); %180 ji nivîsandina nirxa ppm rasterast wekî ji sedî tê, %150 û %250 jî ji danîna rêjeyan bi berevajî (180 / 120, 300 / 120) tên."
       },
@@ -2430,7 +2430,7 @@ export const unit05: ChemistryUnitSeedData = {
           "de": "Härte (ppm CaCO₃)",
           "fr": "Dureté (ppm CaCO₃)",
           "ru": "Жёсткость (ppm CaCO₃)",
-          "ar": "العسرة (ppm CaCO₃)",
+          "ar": "العسر (ppm CaCO₃)",
           "zh": "硬度 (ppm CaCO₃)",
           "ku": "Hişkî (ppm CaCO₃)"
         },
