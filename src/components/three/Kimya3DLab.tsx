@@ -555,13 +555,15 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
     fitToScreenRef.current?.();
 
     // Animation Loop
-    let clock = new THREE.Clock();
+    // THREE.Clock is deprecated since r183; THREE.Timer is its replacement.
+    const timer = new THREE.Timer();
     const tempVec = new THREE.Vector3();
 
-    const animate = () => {
+    const animate = (timestamp?: number) => {
       animFrameIdRef.current = requestAnimationFrame(animate);
 
-      const elapsedTime = clock.getElapsedTime();
+      timer.update(timestamp);
+      const elapsedTime = timer.getElapsed();
 
       // Procedural object animation
       if (proceduralObjectRef.current?.animate) {
@@ -631,6 +633,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
       if (animFrameIdRef.current) {
         cancelAnimationFrame(animFrameIdRef.current);
       }
+      timer.dispose();
       controls.dispose();
       if (proceduralObjectRef.current?.dispose) {
         proceduralObjectRef.current.dispose();
