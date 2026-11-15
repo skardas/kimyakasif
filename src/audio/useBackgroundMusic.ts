@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { MUSIC_TRACKS, musicEngine } from './musicEngine';
+import { suspendSfx } from './sfx';
+import { onAppActiveChange } from '../utils/appLifecycle';
 
 const KEY = 'kimya-music';
 
@@ -54,15 +56,17 @@ export function useBackgroundMusic() {
     return () => events.forEach((ev) => window.removeEventListener(ev, kick));
   }, [prefs.on]);
 
-  // Gracefully pause on tab background, resume on focus
-  useEffect(() => {
-    const onVis = () => {
-      if (document.hidden) musicEngine.stop();
-      else if (prefs.on) void musicEngine.start(prefs.trackId);
-    };
-    document.addEventListener('visibilitychange', onVis);
-    return () => document.removeEventListener('visibilitychange', onVis);
-  }, [prefs.on, prefs.trackId]);
+  // Pause (and release both audio contexts) when the app is backgrounded, resume on return
+  useEffect(
+    () =>
+      onAppActiveChange((active) => {
+        if (!active) {
+          musicEngine.pauseForBackground();
+          suspendSfx();
+        } else if (prefs.on) void musicEngine.start(prefs.trackId);
+      }),
+    [prefs.on, prefs.trackId]
+  );
 
   const setMusicOn = useCallback((on: boolean) => {
     if (on) void musicEngine.start(prefsRef.current.trackId);

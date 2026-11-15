@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, lazy, useEffect, useState } from 'react';
 import { useBackDismiss } from './hooks/useBackDismiss';
+import { useUnitLanguage } from './hooks/useUnitLanguage';
 import { BookOpen, Box, Layers, Gamepad2, FileCheck2, User } from 'lucide-react';
 import { UI_TRANSLATIONS } from './i18n/translations';
 import { APP_SHELL_STRINGS } from './i18n/appShellStrings';
@@ -14,12 +15,17 @@ import { LeitnerBoxEngine } from './engine/leitnerEngine';
 import { Confetti } from './components/common/Confetti';
 
 import { CurriculumView } from './components/study/CurriculumView';
-import { Kimya3DLab } from './components/three/Kimya3DLab';
-import { FlashcardsView } from './components/cards/FlashcardsView';
-import { GamesHub } from './components/games/GamesHub';
-import { ExamCenter } from './components/exams/ExamCenter';
-import { ProfileView, type ProfileTab } from './components/profile/ProfileView';
-import { SettingsView } from './components/settings/SettingsView';
+import type { ProfileTab } from './components/profile/ProfileView';
+
+// Every tab except the home tab is its own chunk: three.js, the 3D scene catalogue, the games and the
+// exam engine are parsed only when their tab is first opened, which keeps launch time and the
+// WebView's resident JS heap down on phones.
+const Kimya3DLab = lazy(() => import('./components/three/Kimya3DLab').then((m) => ({ default: m.Kimya3DLab })));
+const FlashcardsView = lazy(() => import('./components/cards/FlashcardsView').then((m) => ({ default: m.FlashcardsView })));
+const GamesHub = lazy(() => import('./components/games/GamesHub').then((m) => ({ default: m.GamesHub })));
+const ExamCenter = lazy(() => import('./components/exams/ExamCenter').then((m) => ({ default: m.ExamCenter })));
+const ProfileView = lazy(() => import('./components/profile/ProfileView').then((m) => ({ default: m.ProfileView })));
+const SettingsView = lazy(() => import('./components/settings/SettingsView').then((m) => ({ default: m.SettingsView })));
 
 export type NavTab = 'curriculum' | 'lab3d' | 'cards' | 'games' | 'exams' | 'profile' | 'settings';
 
@@ -46,7 +52,8 @@ export const App: React.FC = () => {
     resetToday,
   } = usePreferences(store.activeProfileId);
 
-  const lang = store.language;
+  // Follows store.language once that language's unit texts are loaded (see useUnitLanguage).
+  const lang = useUnitLanguage(store.language);
   const t = UI_TRANSLATIONS[lang];
   const sh = APP_SHELL_STRINGS[lang] ?? APP_SHELL_STRINGS.tr;
   const r = redesignStrings(lang);
@@ -268,6 +275,7 @@ export const App: React.FC = () => {
 
       <div className={`app-col ${activeTab === 'profile' || activeTab === 'settings' ? 'app-col--pushed' : ''}`}>
         <main className="app-main-stage">
+          <Suspense fallback={null}>
           {activeTab === 'curriculum' && (
             <CurriculumView
               key={examPref}
@@ -410,6 +418,7 @@ export const App: React.FC = () => {
               }
             />
           )}
+          </Suspense>
         </main>
 
         {/* Floating bottom tab bar (phones & tablet portrait) */}

@@ -39,6 +39,7 @@ import {
   Hotspot3D,
 } from '../../data/threeScenesData';
 import { ProceduralSceneObject } from './proceduralBuilders';
+import { onAppActiveChange } from '../../utils/appLifecycle';
 import { Kimya3DFallbackCanvas } from './Kimya3DFallbackCanvas';
 import { formatChemText } from '../common/ChemFormula';
 import { playCorrect, playWrong, playSuccess, playFinish } from '../../audio/sfx';
@@ -483,9 +484,13 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
     const height = mount.clientHeight || 560;
 
     // Renderer
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
+    // 'default' lets the OS pick the GPU ('high-performance' forces the discrete GPU on laptops and
+    // buys nothing on phones). Touch devices render at most 1.5x: with 4x MSAA a 2x drawing buffer
+    // costs roughly twice the GPU memory for a difference that is hard to see on a phone screen.
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'default' });
     renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    const coarsePointer = typeof window.matchMedia === 'function' && window.matchMedia('(pointer: coarse)').matches;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, coarsePointer ? 1.5 : 2));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.1;
     mount.appendChild(renderer.domElement);
@@ -559,8 +564,16 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
     const timer = new THREE.Timer();
     const tempVec = new THREE.Vector3();
 
+    // 90/120 Hz phones would otherwise draw the scene up to twice as often as needed; cap at ~60 FPS.
+    // The margin keeps 60 Hz displays (vsync-aligned timestamps with a little jitter) at every frame.
+    const MIN_FRAME_MS = 1000 / 60 - 4;
+    let lastFrameAt = -Infinity;
+
     const animate = (timestamp?: number) => {
       animFrameIdRef.current = requestAnimationFrame(animate);
+      const frameAt = timestamp ?? performance.now();
+      if (frameAt - lastFrameAt < MIN_FRAME_MS) return;
+      lastFrameAt = frameAt;
 
       timer.update(timestamp);
       const elapsedTime = timer.getElapsed();
@@ -611,6 +624,17 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
 
     animate();
 
+    // Stop drawing while the app is in the background (Android's WebView keeps firing
+    // requestAnimationFrame after the activity pauses); pick up again on return.
+    const stopAppListener = onAppActiveChange((active) => {
+      if (!active) {
+        if (animFrameIdRef.current) cancelAnimationFrame(animFrameIdRef.current);
+        animFrameIdRef.current = null;
+      } else if (animFrameIdRef.current === null) {
+        animate();
+      }
+    });
+
     // Container ResizeObserver for robust layout & sidebar transitions
     const resizeObserver = new ResizeObserver((entries) => {
       for (const entry of entries) {
@@ -627,6 +651,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
 
     // Cleanup on unmount
     return () => {
+      stopAppListener();
       resizeObserver.disconnect();
       renderer.domElement.removeEventListener('webglcontextlost', handleContextLost);
       renderer.domElement.removeEventListener('webglcontextrestored', handleContextRestored);

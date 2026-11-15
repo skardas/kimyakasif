@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { Suspense, lazy, useState, useMemo } from 'react';
 import { useBackDismiss } from '../../hooks/useBackDismiss';
 import { CheckCircle2, FileCheck2, Box, Layers, Presentation, User, SlidersHorizontal, WifiOff } from 'lucide-react';
 import type { LanguageCode } from '../../types/chemistry';
@@ -9,8 +9,11 @@ import { redesignStrings } from '../../i18n/redesignStrings';
 import { levelLabel } from '../../i18n/examLevels';
 import { ALL_CHEMISTRY_UNITS } from '../../data/units';
 import type { ChemistryUnitSeedData } from '../../data/units/types';
-import { UnitSlideDeckModal } from './UnitSlideDeckModal';
 import { formatChemText } from '../common/ChemFormula';
+
+// The slide deck pulls in the study slides, the diagram renderer and the diagram planner; load them
+// on first open instead of at launch.
+const UnitSlideDeckModal = lazy(() => import('./UnitSlideDeckModal').then((m) => ({ default: m.UnitSlideDeckModal })));
 
 export interface UnitActionPillLabels {
   slide: string;
@@ -229,6 +232,7 @@ export const CurriculumView: React.FC<CurriculumViewProps> = ({
       </div>
 
       {activeUnitForDeck && (
+        <Suspense fallback={null}>
         <UnitSlideDeckModal
           unit={activeUnitForDeck}
           lang={lang}
@@ -239,6 +243,7 @@ export const CurriculumView: React.FC<CurriculumViewProps> = ({
           onOpenUnitCards={onOpenUnitCards}
           onOpen3DScene={onOpen3DScene}
         />
+        </Suspense>
       )}
     </section>
   );

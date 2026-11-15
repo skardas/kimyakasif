@@ -808,9 +808,27 @@ class MusicEngine {
       this.out.gain.setTargetAtTime(0, this.ctx.currentTime, 0.25);
       const ctx = this.ctx;
       window.setTimeout(() => {
-        if (!this.playing && ctx.state === 'running') this.stopTextures();
+        if (this.playing || ctx.state !== 'running') return;
+        this.stopTextures();
+        // A running AudioContext keeps the audio thread rendering silence (battery drain, and on iOS
+        // an active audio session); start() resumes it.
+        void ctx.suspend().catch(() => {});
       }, 1500);
     }
+  }
+
+  /** App went to the background: stop at once (no fade, timers may not fire) and release the audio thread. */
+  pauseForBackground() {
+    this.playing = false;
+    if (this.timer !== null) {
+      window.clearInterval(this.timer);
+      this.timer = null;
+    }
+    if (!this.ctx) return;
+    this.out?.gain.cancelScheduledValues(this.ctx.currentTime);
+    if (this.out) this.out.gain.value = 0;
+    this.stopTextures();
+    if (this.ctx.state === 'running') void this.ctx.suspend().catch(() => {});
   }
 }
 
