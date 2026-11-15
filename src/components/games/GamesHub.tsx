@@ -42,67 +42,79 @@ export const GamesHub: React.FC<GamesHubProps> = ({
   // If a game is active, render that game component
   if (activeGame === 'periodic-hunter') {
     return (
-      <PeriodicTableHunter
-        lang={lang}
-        highScore={highScores['periodic-hunter'] || 0}
-        onFinish={(score) => handleGameFinish('periodic-hunter', score)}
-        onBack={() => setActiveGame(null)}
-      />
+      <div className="ky-immersive gm-run">
+        <PeriodicTableHunter
+          lang={lang}
+          highScore={highScores['periodic-hunter'] || 0}
+          onFinish={(score) => handleGameFinish('periodic-hunter', score)}
+          onBack={() => setActiveGame(null)}
+          />
+      </div>
     );
   }
 
   if (activeGame === 'equation-balancer') {
     return (
-      <EquationBalancer
-        lang={lang}
-        highScore={highScores['equation-balancer'] || 0}
-        onFinish={(score) => handleGameFinish('equation-balancer', score)}
-        onBack={() => setActiveGame(null)}
-      />
+      <div className="ky-immersive gm-run">
+        <EquationBalancer
+          lang={lang}
+          highScore={highScores['equation-balancer'] || 0}
+          onFinish={(score) => handleGameFinish('equation-balancer', score)}
+          onBack={() => setActiveGame(null)}
+          />
+      </div>
     );
   }
 
   if (activeGame === 'lewis-builder') {
     return (
-      <LewisDotBuilder
-        lang={lang}
-        highScore={highScores['lewis-builder'] || 0}
-        onFinish={(score) => handleGameFinish('lewis-builder', score)}
-        onBack={() => setActiveGame(null)}
-      />
+      <div className="ky-immersive gm-run">
+        <LewisDotBuilder
+          lang={lang}
+          highScore={highScores['lewis-builder'] || 0}
+          onFinish={(score) => handleGameFinish('lewis-builder', score)}
+          onBack={() => setActiveGame(null)}
+          />
+      </div>
     );
   }
 
   if (activeGame === 'titration-simulator') {
     return (
-      <TitrationSimulator
-        lang={lang}
-        highScore={highScores['titration-simulator'] || 0}
-        onFinish={(score) => handleGameFinish('titration-simulator', score)}
-        onBack={() => setActiveGame(null)}
-      />
+      <div className="ky-immersive gm-run">
+        <TitrationSimulator
+          lang={lang}
+          highScore={highScores['titration-simulator'] || 0}
+          onFinish={(score) => handleGameFinish('titration-simulator', score)}
+          onBack={() => setActiveGame(null)}
+          />
+      </div>
     );
   }
 
   if (activeGame === 'compound-synthesis') {
     return (
-      <CompoundSynthesisGame
-        lang={lang}
-        highScore={highScores['compound-synthesis'] || 0}
-        onFinish={(score) => handleGameFinish('compound-synthesis', score)}
-        onBack={() => setActiveGame(null)}
-      />
+      <div className="ky-immersive gm-run">
+        <CompoundSynthesisGame
+          lang={lang}
+          highScore={highScores['compound-synthesis'] || 0}
+          onFinish={(score) => handleGameFinish('compound-synthesis', score)}
+          onBack={() => setActiveGame(null)}
+          />
+      </div>
     );
   }
 
   if (activeGame === 'chem-blitz') {
     return (
-      <ChemBlitzGame
-        lang={lang}
-        highScore={highScores['chem-blitz'] || 0}
-        onFinish={(score) => handleGameFinish('chem-blitz', score)}
-        onBack={() => setActiveGame(null)}
-      />
+      <div className="ky-immersive gm-run">
+        <ChemBlitzGame
+          lang={lang}
+          highScore={highScores['chem-blitz'] || 0}
+          onFinish={(score) => handleGameFinish('chem-blitz', score)}
+          onBack={() => setActiveGame(null)}
+          />
+      </div>
     );
   }
 
@@ -124,75 +136,63 @@ export const GamesHub: React.FC<GamesHubProps> = ({
   ];
 
   return (
-    <section className="gm gm--wide" aria-label={t.games.title}>
-      <header>
-        <p className="ky-eyebrow">{g.miniGames}</p>
-        <h1 className="ky-disp" style={{ fontSize: '1.65rem', fontWeight: 800, margin: '4px 0 2px' }}>
-          {t.games.title}
-        </h1>
-        <p className="gm-sub">{t.games.subtitle}</p>
-      </header>
+    <section className="ky-screen gm-hub" aria-label={t.games.title}>
+      <div className="ky-fit">
+        <div className="gm-hub__body">
+          <header className="gm-hub__head">
+            <p className="ky-eyebrow">{g.miniGames}</p>
+            <h1 className="ky-disp ky-fs-28">{t.games.title}</h1>
+          </header>
 
-      {/* Daily challenge */}
-      <section className="ky-stage gm-hero" aria-label={g.daily}>
-        <div className="ky-floor" aria-hidden="true" />
-        <div className="gm-hero-orb ky-float" aria-hidden="true">
-          <span className="ky-atom" style={{ ['--c' as string]: '#FFD873', ['--cd' as string]: '#A86A08' }} />
-          <Zap size={30} fill="currentColor" />
+          {/* Daily challenge */}
+          <section className="ky-stage gm-hero ky-persp" aria-label={g.daily}>
+            <div className="ky-floor" aria-hidden="true" />
+            <div className="gm-hero-orb" aria-hidden="true">
+              <span className="ky-orbit3d gm-hero-ring" />
+              <span className="ky-atom ky-float" style={{ ['--c' as string]: '#FFD873', ['--cd' as string]: '#A86A08' }} />
+              <Zap size={30} fill="currentColor" />
+            </div>
+            <span className="ky-chip ky-chip--gold">{g.daily}</span>
+            <h2>{g.dailyTitle}</h2>
+            <p>{g.dailyDesc}</p>
+            <button type="button" className="ky-btn ky-btn--gold" data-sfx="start" onClick={() => setActiveGame('chem-blitz')}>
+              <Play size={16} fill="currentColor" aria-hidden="true" className="gm-flip" />
+              <span>{g.challenge}</span>
+            </button>
+          </section>
+
+          {/* Game tiles */}
+          <ul className="gm-tiles" aria-label={t.games.title}>
+            {gamesList.map((game) => {
+              const GameIcon = game.icon;
+              const bestScore = highScores[game.id] || 0;
+              return (
+                <li key={game.id}>
+                  <button
+                    type="button"
+                    className="ky-card gm-tile"
+                    data-sfx="start"
+                    onClick={() => setActiveGame(game.id)}
+                    aria-label={`${g.play}: ${game.title}`}
+                  >
+                    <span className={`ky-tile ${game.tile}`} aria-hidden="true">
+                      <GameIcon size={26} />
+                    </span>
+                    <strong className="ky-fs-15">{game.title}</strong>
+                    <span className="gm-tile__desc ky-fs-13">{game.desc}</span>
+                    <span className="gm-tile__foot">
+                      <span className="ky-chip gm-tag">{game.tag}</span>
+                      <span className="gm-tile__best ky-fs-12">
+                        <Trophy size={13} aria-hidden="true" /> {g.best}: {bestScore > 0 ? bestScore : '\u2014'}
+                      </span>
+                    </span>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-        <span className="ky-chip ky-chip--gold">{g.daily}</span>
-        <h2>{g.dailyTitle}</h2>
-        <p>{g.dailyDesc}</p>
-        <button
-          type="button"
-          className="ky-btn ky-btn--gold"
-          data-sfx="start"
-          onClick={() => setActiveGame('chem-blitz')}
-        >
-          <Play size={16} fill="currentColor" aria-hidden="true" className="gm-flip" />
-          <span>{g.challenge}</span>
-        </button>
-      </section>
-
-      {/* Game list */}
-      <ul className="gm-grid" aria-label={t.games.title}>
-        {gamesList.map((game) => {
-          const GameIcon = game.icon;
-          const bestScore = highScores[game.id] || 0;
-          return (
-            <li key={game.id} className="ky-card gm-card">
-              <div className="gm-card-top">
-                <span className={`ky-tile ${game.tile}`} aria-hidden="true">
-                  <GameIcon size={26} />
-                </span>
-                <span className="ky-chip gm-tag">{game.tag}</span>
-              </div>
-              <div>
-                <h3>{game.title}</h3>
-                <p>{game.desc}</p>
-              </div>
-              <div className="gm-card-foot">
-                <span className="ky-chip ky-chip--gold">
-                  <Trophy size={14} aria-hidden="true" />
-                  <span>
-                    {g.best}: {bestScore > 0 ? bestScore : '\u2014'}
-                  </span>
-                </span>
-                <button
-                  type="button"
-                  className="ky-btn ky-btn--primary ky-btn--sm gm-card-play"
-                  data-sfx="start"
-                  onClick={() => setActiveGame(game.id)}
-                  aria-label={`${g.play}: ${game.title}`}
-                >
-                  <Play size={14} fill="currentColor" aria-hidden="true" className="gm-flip" />
-                  <span>{g.play}</span>
-                </button>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+      </div>
     </section>
   );
 };

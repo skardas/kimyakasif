@@ -1,0 +1,121 @@
+/* ============================================================================
+   Settings: four grouped cards of rows. Rows wrap their control under the
+   label when there is not enough width (320px at the largest text size).
+   ============================================================================ */
+
+.st-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.st-group {
+  padding: 2px 16px;
+  min-inline-size: 0;
+}
+
+.st-group__title {
+  margin: 0;
+  padding-block-start: 14px;
+}
+
+.st-flip { flex: none; }
+[dir="rtl"] .st-flip { transform: scaleX(-1); }
+
+.st-size-btn {
+  font-family: var(--font-display);
+  min-inline-size: 40px;
+}
+
+.st-preview { align-items: flex-start; padding-block: 12px; }
+
+.st-preview p {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--text2);
+}
+
+.st-preview__strong { color: var(--text); font-weight: 600; }
+.st-preview__formula { color: var(--accent); }
+
+/* A row that is a native <select>: the select covers the whole row, invisible */
+.st-select-row {
+  position: relative;
+  cursor: pointer;
+}
+
+.st-select-overlay {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.st-select-overlay option {
+  background: var(--surface);
+  color: var(--text);
+}
+
+.st-select-row:has(.st-select-overlay:focus-visible) {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
+.st-select-row .ky-row__val {
+  max-inline-size: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.st-chev { color: var(--muted); flex: none; }
+
+.ky-row.is-off { opacity: 0.55; }
+
+.st-vol-lbl { flex: 0 1 auto; }
+
+.st-vol {
+  flex: 1 1 120px;
+  min-inline-size: 100px;
+}
+
+.st-vol-val { flex: none; min-inline-size: 3.2em; text-align: end; }
+
+button.ky-row.st-link {
+  inline-size: 100%;
+  border-inline: 0;
+  border-block-start: 0;
+  background: transparent;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.st-danger { color: var(--bad); }
+
+.st-reset {
+  min-block-size: 40px;
+  padding: 0 14px;
+}
+
+.st-feedback {
+  margin: 0;
+  padding: 10px 0 14px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (min-width: 900px) {
+  .st-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    align-items: start;
+    gap: 16px;
+  }
+}

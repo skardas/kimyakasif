@@ -609,7 +609,7 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
           </div>
         )}
 
-        <div className="ky-stage" dir="ltr">
+        <div className="ky-stage ky-lead" dir="ltr">
           <div className="ky-floor" aria-hidden="true" />
           <div className="gm-eq equation-stepper-stage">
             {currentEq.reactants.map((r, idx) => (

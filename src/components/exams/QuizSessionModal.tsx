@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import {
   Clock,
-  Bookmark,
+  Star,
+  Sparkles,
   Check,
   X,
   ChevronLeft,
@@ -22,6 +23,7 @@ import { ChemicalDiagram } from '../diagrams/ChemicalDiagram';
 import { formatChemText } from '../common/ChemFormula';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { EXAM_STRINGS } from '../../i18n/examStrings';
+import { redesignStrings } from '../../i18n/redesignStrings';
 
 export interface QuizSessionModalProps {
   title: string;
@@ -63,6 +65,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
 }) => {
   const t = UI_TRANSLATIONS[lang];
   const x = EXAM_STRINGS[lang] ?? EXAM_STRINGS.tr;
+  const r = redesignStrings(lang);
 
   // Current Question Pointer
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -341,243 +344,218 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
   const correctLetter = currentQ ? String.fromCharCode(65 + currentQ.correctIndex) : '';
   const inReview = examStatus === 'review';
 
+  const kindLabel = (() => {
+    if (examType === 'UNIT') return `${r.unitTest} · ${subtitle || title}`;
+    if (inReview) return `${x.reviewQuestions} · ${title}`;
+    return subtitle ? `${title} · ${subtitle}` : title;
+  })();
+
   const renderSummary = () => {
     if (!finalResult) return null;
-    const ratio = questions.length ? finalResult.correctCount / questions.length : 0;
-    const lit = Math.min(3, Math.ceil(ratio * 3));
-    const atom = (i: number, left: number, top: number, size: number) => (
-      <span
-        className="ky-atom"
-        style={{
-          left,
-          top,
-          width: size,
-          height: size,
-          ['--c' as string]: i < lit ? '#2dd9c3' : '#5b6b82',
-          ['--cd' as string]: i < lit ? '#0c8073' : '#2a3446',
-        }}
-      />
-    );
+    const total = questions.length || 1;
+    const ringLen = 2 * Math.PI * 62;
+    const ratio = finalResult.correctCount / total;
+    const wrongIds = questions.filter((q) => {
+      const a = selectedAnswers[q.id];
+      return a !== undefined && a !== q.correctIndex;
+    }).length;
 
     return (
-      <div className="qz-body qz-summary">
-        <section className="ky-stage qz-hero" aria-label={x.results}>
-          <div className="ky-floor" />
-          <div className="qz-hero__atoms ky-float" aria-hidden="true">
-            <span className="ky-bond" style={{ left: 46, top: 40, width: 30, transform: 'rotate(-32deg)' }} />
-            <span className="ky-bond" style={{ left: 78, top: 24, width: 30, transform: 'rotate(32deg)' }} />
-            {atom(0, 6, 36, 40)}
-            {atom(1, 47, 6, 56)}
-            {atom(2, 104, 36, 40)}
-          </div>
-          <h2 className="ky-disp">{examType === 'TG' ? 'Derece Provası Tamamlandı!' : 'Deneme Sınavı Tamamlandı!'}</h2>
-          <p>
-            {title} • {x.questionsN(questions.length)}
+      <>
+        <section className="ky-stage qz-res-stage" aria-label={x.results}>
+          <div className="ky-floor" aria-hidden="true" />
+          <p className="ky-eyebrow qz-res-eyebrow">
+            {title} · {r.completed}
           </p>
-          <div className="qz-hero__score ky-disp ky-mono">{finalResult.netScore.toFixed(2)}</div>
-          <div className="qz-hero__unit">{x.net}</div>
+          <svg className="qz-ring ky-pop" viewBox="0 0 150 150" role="img" aria-label={`${x.net} ${finalResult.netScore.toFixed(2)}`}>
+            <circle cx="75" cy="75" r="62" fill="none" stroke="rgba(255,255,255,.12)" strokeWidth="12" />
+            <circle
+              cx="75"
+              cy="75"
+              r="62"
+              fill="none"
+              stroke="#2dd9c3"
+              strokeWidth="12"
+              strokeLinecap="round"
+              strokeDasharray={ringLen}
+              strokeDashoffset={ringLen * (1 - Math.max(0.02, ratio))}
+              transform="rotate(-90 75 75)"
+            />
+            <text x="75" y="76" textAnchor="middle" className="qz-ring__num">
+              {finalResult.correctCount}/{questions.length}
+            </text>
+            <text x="75" y="100" textAnchor="middle" className="qz-ring__lbl">
+              {t.exams.correctCount}
+            </text>
+          </svg>
+          {finalResult.tgPercentile && (
+            <span className="ky-chip qz-res-chip">
+              {finalResult.tgPercentile.tierTitle} · {finalResult.tgPercentile.percentileFormatted}
+            </span>
+          )}
         </section>
 
-        {finalResult.tgPercentile && (
-          <div className="ky-card qz-tg">
-            <div className="qz-tg__row">
-              <span className="qz-tg__tier">{finalResult.tgPercentile.tierTitle}</span>
-              <span className="ky-chip ky-chip--gold">{finalResult.tgPercentile.percentileFormatted}</span>
-            </div>
-            <p>
-              Tahmini YKS Sayısal Kimya Sıralama Bandı: <strong>{finalResult.tgPercentile.estimatedRankRange}</strong>
-            </p>
-            <em>"{finalResult.tgPercentile.feedbackMessage}"</em>
-          </div>
-        )}
+        <div className="ky-fit">
+          <div className="ky-pane qz-res">
+            <section aria-label={x.results} className="ky-lead qz-res-stats ky-pop">
+              <div className="ky-well qz-res-stat">
+                <p className="ky-mono ky-disp qz-c-ok">{finalResult.correctCount}</p>
+                <p>{t.exams.correctCount}</p>
+              </div>
+              <div className="ky-well qz-res-stat">
+                <p className="ky-mono ky-disp qz-c-bad">{finalResult.wrongCount}</p>
+                <p>{t.exams.wrongCount}</p>
+              </div>
+              <div className="ky-well qz-res-stat">
+                <p className="ky-mono ky-disp">{finalResult.emptyCount}</p>
+                <p>{t.exams.emptyCount}</p>
+              </div>
+              <div className="ky-well qz-res-stat qz-res-stat--net">
+                <p className="ky-mono ky-disp qz-c-accent">{finalResult.netScore.toFixed(2)}</p>
+                <p>{x.net}</p>
+              </div>
+            </section>
 
-        <div className="qz-stats">
-          <div className="ky-well qz-stat qz-stat--ok">
-            <strong className="ky-mono">{finalResult.correctCount}</strong>
-            <span>{t.exams.correctCount}</span>
-          </div>
-          <div className="ky-well qz-stat qz-stat--bad">
-            <strong className="ky-mono">{finalResult.wrongCount}</strong>
-            <span>{t.exams.wrongCount}</span>
-          </div>
-          <div className="ky-well qz-stat qz-stat--empty">
-            <strong className="ky-mono">{finalResult.emptyCount}</strong>
-            <span>{t.exams.emptyCount}</span>
-          </div>
-          <div className="ky-well qz-stat qz-stat--time">
-            <strong className="ky-mono">{formatTime(finalResult.durationUsedSeconds)}</strong>
-            <span>{x.time}</span>
+            {finalResult.tgPercentile && (
+              <div className="ky-card qz-tg">
+                <p className="ky-fs-14">
+                  <strong>{finalResult.tgPercentile.estimatedRankRange}</strong>
+                </p>
+                <p className="ky-fs-14 qz-muted">“{finalResult.tgPercentile.feedbackMessage}”</p>
+              </div>
+            )}
+
+            <section className="ky-card qz-breakdown" aria-label={r.breakdown}>
+              <div className="qz-breakdown__head">
+                <p className="ky-fs-15">{r.breakdown}</p>
+                <span className="ky-mono">
+                  {x.time} {formatTime(finalResult.durationUsedSeconds)}
+                </span>
+              </div>
+              <div className="qz-breakdown__grid">
+                {questions.map((q, idx) => {
+                  const answer = selectedAnswers[q.id];
+                  const status = answer === undefined ? 'empty' : answer === q.correctIndex ? 'ok' : 'bad';
+                  return (
+                    <button
+                      key={q.id}
+                      type="button"
+                      className={`qz-bd qz-bd--${status}`}
+                      aria-label={`${x.questionAria(idx + 1)}: ${
+                        status === 'ok' ? x.correctTitle : status === 'bad' ? x.wrongTitle : t.exams.emptyCount
+                      }`}
+                      onClick={() => {
+                        setExamStatus('review');
+                        setCurrentIndex(idx);
+                      }}
+                    >
+                      {idx + 1}
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+
+            <div className="ky-card qz-coach">
+              <span className="qz-coach__icon" aria-hidden="true">
+                <Sparkles size={20} />
+              </span>
+              <p className="ky-fs-13">
+                <strong>{r.coachLabel}:</strong> {wrongIds > 0 ? r.coachWrong(wrongIds) : r.coachPerfect}
+              </p>
+            </div>
           </div>
         </div>
 
-        <section className="qz-review" aria-label={x.reviewList}>
-          <h3>{x.reviewList}</h3>
-          {questions.map((q, idx) => {
-            const answer = selectedAnswers[q.id];
-            const status = answer === undefined ? 'empty' : answer === q.correctIndex ? 'ok' : 'bad';
-            return (
-              <button
-                key={q.id}
-                type="button"
-                className={`ky-card qz-review__row qz-review__row--${status}`}
-                onClick={() => {
-                  setExamStatus('review');
-                  setCurrentIndex(idx);
-                }}
-              >
-                <span className="qz-review__n ky-mono">{idx + 1}</span>
-                <span className="qz-review__stem">{q.stem}</span>
-                <span className="qz-review__mark" aria-hidden="true">
-                  {status === 'ok' ? <CircleCheck size={20} /> : status === 'bad' ? <CircleX size={20} /> : <Minus size={20} />}
-                </span>
-              </button>
-            );
-          })}
-        </section>
-
-        <div className="qz-actions">
+        <footer className="ky-screen-foot ky-screen-foot--stack qz-res-foot">
           <button
             type="button"
-            className="ky-btn ky-btn--quiet"
+            className="ky-btn ky-btn--primary ky-grow qz-res-main"
             onClick={() => {
               setExamStatus('review');
               setCurrentIndex(0);
             }}
           >
             <ListChecks size={18} aria-hidden="true" />
-            <span>{x.reviewQuestions}</span>
+            <span>{r.reviewSolutions}</span>
           </button>
-          <button type="button" className="ky-btn ky-btn--quiet" data-sfx="start" onClick={handleRetry}>
-            <RotateCcw size={18} aria-hidden="true" />
-            <span>{x.retry}</span>
-          </button>
-          <button type="button" className="ky-btn ky-btn--primary" onClick={onClose}>
-            <span>{x.close}</span>
-          </button>
-        </div>
-      </div>
+          <div className="qz-res-row">
+            <button type="button" className="ky-btn ky-btn--quiet" data-sfx="start" onClick={handleRetry}>
+              <RotateCcw size={18} aria-hidden="true" />
+              <span>{x.retry}</span>
+            </button>
+            <button type="button" className="ky-btn ky-btn--quiet" onClick={onClose}>
+              <span>{r.backToExams}</span>
+            </button>
+          </div>
+        </footer>
+      </>
     );
   };
 
+  const timerChip = (
+    <span
+      className={`ky-chip ky-mono qz-timer ${isExamMode ? 'ky-chip--gold' : ''} ${isTimeLow ? 'qz-timer--low' : ''}`}
+      role="timer"
+      aria-live="off"
+    >
+      <Clock size={15} aria-hidden="true" />
+      <span>{isExamMode ? formatTime(secondsRemaining) : formatTime(elapsedSeconds)}</span>
+    </span>
+  );
+
+  const showNavigator = isExamMode || inReview;
+
   return (
-    <div className="ky-modal-backdrop qz-backdrop" role="dialog" aria-modal="true" aria-label={title}>
-      <div className="qz">
-        {/* Top Header */}
-        <header className="qz-head">
-          <div className="qz-top">
-            <button type="button" className="ky-icon-btn" onClick={requestClose} aria-label={x.exitAria}>
-              <X size={20} aria-hidden="true" />
-            </button>
-
-            <div className="qz-titles">
-              <span className="ky-eyebrow">{subtitle || title}</span>
-              <h2>{title}</h2>
-            </div>
-
-            <span
-              className={`ky-chip ky-chip--gold ky-mono qz-timer ${isTimeLow ? 'qz-timer--low' : ''}`}
-              role="timer"
-              aria-live="off"
-            >
-              <Clock size={15} aria-hidden="true" />
-              <span>{isExamMode ? formatTime(secondsRemaining) : formatTime(elapsedSeconds)}</span>
-            </span>
-
-            {currentQ && examStatus !== 'submitted' && (
-              <button
-                type="button"
-                className={`ky-icon-btn ${isBookmarked ? 'is-on' : ''}`}
-                aria-pressed={isBookmarked}
-                aria-label={isBookmarked ? x.bookmarkRemove : x.bookmarkAdd}
-                onClick={() => onToggleBookmark(currentQ.id)}
-                style={isBookmarked ? { color: 'var(--gold)' } : undefined}
-              >
-                <Bookmark size={18} aria-hidden="true" fill={isBookmarked ? 'currentColor' : 'none'} />
+    <div className="ky-immersive qz" role="dialog" aria-modal="true" aria-label={title}>
+      {examStatus === 'submitted' && finalResult ? (
+        renderSummary()
+      ) : (
+        <>
+          <header className="ky-screen-head qz-head">
+            <div className="qz-top">
+              <button type="button" className="ky-icon-btn" onClick={requestClose} aria-label={x.exitAria}>
+                <X size={20} aria-hidden="true" />
               </button>
-            )}
-          </div>
-
-          {examStatus !== 'submitted' && (
-            <div className="qz-progress">
-              <div
-                className="ky-track"
-                role="progressbar"
-                aria-valuemin={0}
-                aria-valuemax={questions.length}
-                aria-valuenow={currentIndex + 1}
-              >
-                <div
-                  className="ky-fill"
-                  style={{ inlineSize: `${questions.length ? ((currentIndex + 1) / questions.length) * 100 : 0}%` }}
-                />
+              <div className="ky-head-text">
+                <p className="ky-meta ky-fs-12">{kindLabel}</p>
+                <p className="ky-head-sub ky-fs-16">{r.questionOf(currentIndex + 1, questions.length)}</p>
               </div>
-              <span className="qz-count ky-mono">
-                {currentIndex + 1} / {questions.length}
-              </span>
-              {isExamMode && examStatus === 'in-progress' && (
+              {timerChip}
+              {currentQ && (
                 <button
                   type="button"
-                  className="ky-btn ky-btn--gold qz-finish"
-                  onClick={() => setShowSubmitConfirm(true)}
+                  className={`ky-icon-btn ${isBookmarked ? 'is-on qz-star-on' : ''}`}
+                  aria-pressed={isBookmarked}
+                  aria-label={isBookmarked ? x.bookmarkRemove : x.bookmarkAdd}
+                  onClick={() => onToggleBookmark(currentQ.id)}
                 >
-                  {t.exams.finishExam}
-                </button>
-              )}
-              {inReview && finalResult && (
-                <button type="button" className="ky-btn ky-btn--quiet qz-finish" onClick={() => setExamStatus('submitted')}>
-                  {x.results}
+                  <Star size={18} aria-hidden="true" fill={isBookmarked ? 'currentColor' : 'none'} />
                 </button>
               )}
             </div>
-          )}
-        </header>
-
-        {/* Modal Body */}
-        {examStatus === 'submitted' && finalResult ? (
-          renderSummary()
-        ) : (
-          <div className="qz-body">
-            {/* Question Navigator */}
-            <div ref={dotsRef} className="qz-dots ky-scroll-x" role="tablist" aria-label={x.navigator}>
-              {questions.map((q, idx) => {
-                const answer = selectedAnswers[q.id];
-                const isCurrent = idx === currentIndex;
-                const isQBookmarked = bookmarkedQuestionIds.includes(q.id);
-
-                let statusClass = 'unvisited';
-                if (!isExamMode) {
-                  if (evaluatedQuestions[q.id]) {
-                    statusClass = answer === q.correctIndex ? 'correct' : 'wrong';
-                  }
-                } else if (examStatus === 'review') {
-                  if (answer === undefined) statusClass = 'unvisited';
-                  else if (answer === q.correctIndex) statusClass = 'correct';
-                  else statusClass = 'wrong';
-                } else if (answer !== undefined) {
-                  statusClass = 'answered';
-                }
-
-                return (
-                  <button
-                    key={q.id}
-                    type="button"
-                    role="tab"
-                    aria-selected={isCurrent}
-                    aria-label={x.questionAria(idx + 1)}
-                    className={`qz-dot ${statusClass} ${isCurrent ? 'active' : ''} ${isQBookmarked ? 'bookmarked' : ''}`}
-                    onClick={() => setCurrentIndex(idx)}
-                  >
-                    {idx + 1}
-                  </button>
-                );
-              })}
+            <div
+              className="ky-track qz-track"
+              role="progressbar"
+              aria-valuemin={0}
+              aria-valuemax={questions.length}
+              aria-valuenow={currentIndex + 1}
+              aria-label={r.questionOf(currentIndex + 1, questions.length)}
+            >
+              <div className="ky-fill" style={{ inlineSize: `${questions.length ? ((currentIndex + 1) / questions.length) * 100 : 0}%` }} />
             </div>
+          </header>
 
+          <div className="ky-fit">
             {currentQ && (
-              <>
-                {/* Stem card */}
-                <div className="ky-card qz-stem">
-                  <div className="qz-stem__meta">
+              <div className="ky-pane qz-pane" key={currentQ.id}>
+                <div className="ky-lead qz-lead">
+                  {currentQ.diagram && (
+                    <div className="qz-diagram">
+                      <ChemicalDiagram spec={currentQ.diagram} allowZoom={true} />
+                    </div>
+                  )}
+                  <div className="qz-meta">
                     <span
                       className={`ky-chip ${
                         currentQ.difficulty === 'osym' ? 'ky-chip--bad' : currentQ.difficulty === 'hard' ? 'ky-chip--gold' : ''
@@ -587,13 +565,9 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                     </span>
                     <span className="ky-chip ky-mono">{currentQ.unitId.toUpperCase()}</span>
                   </div>
-
-                  {currentQ.diagram && <ChemicalDiagram spec={currentQ.diagram} allowZoom={true} />}
-
-                  <div className="qz-stem__text">{formatChemText(currentQ.stem)}</div>
+                  <h1 className="ky-fs-20 qz-stem">{formatChemText(currentQ.stem)}</h1>
                 </div>
 
-                {/* Options (A-E) */}
                 <div className="qz-options" role="radiogroup" aria-label={x.options}>
                   {currentQ.options.map((optText, optIdx) => {
                     const optionLetter = String.fromCharCode(65 + optIdx);
@@ -615,19 +589,19 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                         role="radio"
                         aria-checked={isSelected}
                         disabled={frozen}
-                        className={`ky-opt ${stateClass} ${stateClass === 'wrong' && !isExamMode ? 'ky-shake' : ''}`}
+                        className={`ky-opt qz-opt ${stateClass} ${stateClass === 'wrong' && !isExamMode ? 'ky-shake' : ''}`}
                         onClick={() => handleSelectOption(optIdx)}
                       >
                         <span className="ky-key">{optionLetter}</span>
-                        <span className="qz-opt-text">{formatChemText(optText)}</span>
+                        <span className="ky-fs-16 qz-opt-text">{formatChemText(optText)}</span>
                         {stateClass === 'right' && (
                           <span className="qz-opt-mark" aria-hidden="true">
-                            <Check size={22} strokeWidth={3} />
+                            <Check size={20} strokeWidth={3} />
                           </span>
                         )}
                         {stateClass === 'wrong' && (
                           <span className="qz-opt-mark" aria-hidden="true">
-                            <X size={22} strokeWidth={3} />
+                            <X size={20} strokeWidth={3} />
                           </span>
                         )}
                       </button>
@@ -635,153 +609,157 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                   })}
                 </div>
 
-                {/* Review explanation (exam mode review only; practice uses the result panel) */}
-                {inReview && (
-                  <div className={`ky-card qz-note ${currentPicked === currentQ.correctIndex ? 'qz-note--ok' : 'qz-note--bad'}`}>
-                    <div className="qz-note__title ky-disp">
-                      {currentPicked === currentQ.correctIndex ? (
+                {(practiceEvaluated || inReview) && (
+                  <section
+                    className={`ky-card qz-solution ky-pop ${currentCorrect ? 'qz-solution--ok' : 'qz-solution--bad'}`}
+                    role="status"
+                  >
+                    <p className="ky-disp ky-fs-18 qz-verdict">
+                      {currentCorrect ? (
                         <>
-                          <Check size={18} aria-hidden="true" />
-                          <span>{x.correctTitle}</span>
+                          <Check size={18} aria-hidden="true" /> {x.correctTitle}
+                        </>
+                      ) : currentPicked === undefined ? (
+                        <>
+                          <Minus size={18} aria-hidden="true" /> {x.wrongAnswer(correctLetter)}
                         </>
                       ) : (
                         <>
-                          <X size={18} aria-hidden="true" />
-                          <span>{x.wrongAnswer(correctLetter)}</span>
+                          <X size={18} aria-hidden="true" /> {x.wrongTitle} — {x.wrongAnswer(correctLetter)}
                         </>
                       )}
-                    </div>
-                    <p>{formatChemText(currentQ.explanation)}</p>
-                  </div>
+                    </p>
+                    <p className="ky-fs-14 qz-solution__text">{formatChemText(currentQ.explanation)}</p>
+                  </section>
                 )}
-
-                {(practiceEvaluated || inReview) && (
-                  <div className="ky-well qz-tip">
-                    <Lightbulb size={18} aria-hidden="true" />
-                    <div>
-                      <strong>ÖSYM Dikkat Tuzağı:</strong> Soruda verilen reaksiyon denklemi, gaz kanunu veya asit-baz
-                      kuralını incelerken öncüllerdeki kesinlik ve istisna ifadelerine odaklanınız.
-                    </div>
-                  </div>
-                )}
-              </>
+              </div>
             )}
           </div>
-        )}
 
-        {/* Practice result panel: slides up from the bottom after answering */}
-        {practiceEvaluated && currentQ && examStatus !== 'submitted' && (
-          <div className="qz-dock">
-            <div role="status" className={`ky-card qz-result ${currentCorrect ? 'qz-result--ok' : 'qz-result--bad'}`}>
-              <div className="qz-result__text">
-                <p className="qz-result__title ky-disp">
-                  {currentCorrect ? x.correctTitle : `${x.wrongTitle} — ${x.wrongAnswer(correctLetter)}`}
-                </p>
-                <p>{formatChemText(currentQ.explanation)}</p>
+          <footer className="ky-screen-foot ky-screen-foot--stack qz-foot">
+            {showNavigator && (
+              <div ref={dotsRef} className="qz-nav" role="tablist" aria-label={x.navigator}>
+                {questions.map((q, idx) => {
+                  const answer = selectedAnswers[q.id];
+                  const isCurrent = idx === currentIndex;
+                  const isFlagged = bookmarkedQuestionIds.includes(q.id);
+                  let statusClass = 'none';
+                  if (inReview) {
+                    statusClass = answer === undefined ? 'none' : answer === q.correctIndex ? 'ok' : 'bad';
+                  } else if (answer !== undefined) {
+                    statusClass = 'answered';
+                  }
+                  return (
+                    <button
+                      key={q.id}
+                      type="button"
+                      role="tab"
+                      aria-selected={isCurrent}
+                      aria-label={x.questionAria(idx + 1)}
+                      className={`qz-nav__dot qz-nav__dot--${statusClass} ${isFlagged ? 'is-flag' : ''} ${isCurrent ? 'is-cur' : ''}`}
+                      onClick={() => setCurrentIndex(idx)}
+                    >
+                      {idx + 1}
+                    </button>
+                  );
+                })}
               </div>
+            )}
+            <div className="qz-foot__row">
+              <button
+                type="button"
+                className="ky-btn ky-btn--quiet qz-prev"
+                disabled={currentIndex === 0}
+                onClick={() => setCurrentIndex((prev) => Math.max(0, prev - 1))}
+                aria-label={t.exams.prevQuestion}
+              >
+                <ChevronLeft size={20} aria-hidden="true" className="qz-flip" />
+              </button>
+              {isExamMode && examStatus === 'in-progress' && !isLast && (
+                <button type="button" className="ky-btn ky-btn--quiet qz-finish" onClick={() => setShowSubmitConfirm(true)}>
+                  <span>{r.finish}</span>
+                  <span className="ky-mono qz-finish__n">
+                    {answeredCount}/{questions.length}
+                  </span>
+                </button>
+              )}
+              {inReview && finalResult && (
+                <button type="button" className="ky-btn ky-btn--quiet qz-finish" onClick={() => setExamStatus('submitted')}>
+                  {x.results}
+                </button>
+              )}
               {!isLast ? (
-                <button type="button" className="ky-btn ky-btn--primary" onClick={goNext}>
-                  <span>{t.exams.nextQuestion}</span>
+                <button type="button" className="ky-btn ky-btn--primary ky-grow qz-next" onClick={goNext}>
+                  <span>{inReview ? r.nextSolution : t.exams.nextQuestion}</span>
                   <ChevronRight size={18} aria-hidden="true" className="qz-flip" />
                 </button>
+              ) : isExamMode && examStatus === 'in-progress' ? (
+                <button type="button" className="ky-btn ky-btn--ok ky-grow qz-next" onClick={() => setShowSubmitConfirm(true)}>
+                  <span>{t.exams.finishExam}</span>
+                </button>
               ) : (
-                <button type="button" className="ky-btn ky-btn--primary" onClick={onClose}>
-                  <span>{x.sessionDone}</span>
+                <button type="button" className="ky-btn ky-btn--primary ky-grow qz-next" onClick={inReview && finalResult ? () => setExamStatus('submitted') : onClose}>
+                  <span>{inReview && finalResult ? x.results : x.sessionDone}</span>
                 </button>
               )}
             </div>
-          </div>
-        )}
-
-        {/* Footer Controls */}
-        {examStatus !== 'submitted' && !practiceEvaluated && (
-          <footer className="qz-foot">
-            <button
-              type="button"
-              className="ky-btn ky-btn--quiet"
-              disabled={currentIndex === 0}
-              onClick={() => setCurrentIndex((prev) => Math.max(0, prev - 1))}
-              aria-label={t.exams.prevQuestion}
-            >
-              <ChevronLeft size={18} aria-hidden="true" className="qz-flip" />
-              <span className="qz-lbl-prev">{t.exams.prevQuestion}</span>
-            </button>
-
-            <span className="qz-foot__mid ky-mono">
-              {isExamMode && examStatus === 'in-progress' ? `${answeredCount} / ${questions.length}` : ''}
-            </span>
-
-            {!isLast ? (
-              <button type="button" className="ky-btn ky-btn--primary" onClick={goNext}>
-                <span>{t.exams.nextQuestion}</span>
-                <ChevronRight size={18} aria-hidden="true" className="qz-flip" />
-              </button>
-            ) : isExamMode && examStatus === 'in-progress' ? (
-              <button type="button" className="ky-btn ky-btn--ok" onClick={() => setShowSubmitConfirm(true)}>
-                <span>{t.exams.finishExam}</span>
-              </button>
-            ) : (
-              <button type="button" className="ky-btn ky-btn--primary" onClick={onClose}>
-                <span>{x.sessionDone}</span>
-              </button>
-            )}
           </footer>
-        )}
+        </>
+      )}
 
-        {/* Confirmation: Finish Exam */}
-        {showSubmitConfirm && (
-          <div className="ky-modal-backdrop qz-confirm-backdrop" onClick={() => setShowSubmitConfirm(false)}>
-            <div
-              className="ky-card qz-confirm ky-pop"
-              role="alertdialog"
-              aria-modal="true"
-              aria-label="Sınavı Bitirmek İstiyor musun?"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <AlertTriangle size={34} className="qz-confirm__icon" aria-hidden="true" />
-              <h3 className="ky-disp">Sınavı Bitirmek İstiyor musun?</h3>
-              <p>
-                {answeredCount < questions.length
-                  ? `${questions.length - answeredCount} adet boş sorun var. Yanıtların puanlanıp Net skorun hesaplanacak.`
-                  : 'Tüm soruları yanıtladın. Net skorun hesaplanıp kaydedilecek.'}
-              </p>
-              <div className="qz-confirm__actions">
-                <button type="button" className="ky-btn ky-btn--quiet" onClick={() => setShowSubmitConfirm(false)}>
-                  Devam Et
-                </button>
-                <button type="button" className="ky-btn ky-btn--ok" onClick={() => handleSubmitExam(false)}>
-                  Evet, Bitir
-                </button>
-              </div>
+      {/* Confirmation: Finish Exam */}
+      {showSubmitConfirm && (
+        <div className="ky-modal-backdrop qz-confirm-backdrop" onClick={() => setShowSubmitConfirm(false)}>
+          <div
+            className="ky-card qz-confirm ky-pop"
+            role="alertdialog"
+            aria-modal="true"
+            aria-label="Sınavı Bitirmek İstiyor musun?"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <AlertTriangle size={34} className="qz-confirm__icon" aria-hidden="true" />
+            <h3 className="ky-disp">Sınavı Bitirmek İstiyor musun?</h3>
+            <p>
+              {answeredCount < questions.length
+                ? `${questions.length - answeredCount} adet boş sorun var. Yanıtların puanlanıp Net skorun hesaplanacak.`
+                : 'Tüm soruları yanıtladın. Net skorun hesaplanıp kaydedilecek.'}
+            </p>
+            <div className="qz-confirm__actions">
+              <button type="button" className="ky-btn ky-btn--quiet" onClick={() => setShowSubmitConfirm(false)}>
+                Devam Et
+              </button>
+              <button type="button" className="ky-btn ky-btn--ok" onClick={() => handleSubmitExam(false)}>
+                Evet, Bitir
+              </button>
             </div>
           </div>
-        )}
+        </div>
+      )}
 
-        {/* Confirmation: Exit Early */}
-        {showExitConfirm && (
-          <div className="ky-modal-backdrop qz-confirm-backdrop" onClick={() => setShowExitConfirm(false)}>
-            <div
-              className="ky-card qz-confirm ky-pop"
-              role="alertdialog"
-              aria-modal="true"
-              aria-label="Sınavdan Çıkmak İstiyor musun?"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <AlertTriangle size={34} className="qz-confirm__icon qz-confirm__icon--bad" aria-hidden="true" />
-              <h3 className="ky-disp">Sınavdan Çıkmak İstiyor musun?</h3>
-              <p>Şimdi çıkarsan sınav kaydedilmeyecektir.</p>
-              <div className="qz-confirm__actions">
-                <button type="button" className="ky-btn ky-btn--quiet" onClick={() => setShowExitConfirm(false)}>
-                  Sınava Dön
-                </button>
-                <button type="button" className="ky-btn ky-btn--danger" onClick={onClose}>
-                  Çık
-                </button>
-              </div>
+      {/* Confirmation: Exit Early */}
+      {showExitConfirm && (
+        <div className="ky-modal-backdrop qz-confirm-backdrop" onClick={() => setShowExitConfirm(false)}>
+          <div
+            className="ky-card qz-confirm ky-pop"
+            role="alertdialog"
+            aria-modal="true"
+            aria-label="Sınavdan Çıkmak İstiyor musun?"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <AlertTriangle size={34} className="qz-confirm__icon qz-confirm__icon--bad" aria-hidden="true" />
+            <h3 className="ky-disp">Sınavdan Çıkmak İstiyor musun?</h3>
+            <p>Şimdi çıkarsan sınav kaydedilmeyecektir.</p>
+            <div className="qz-confirm__actions">
+              <button type="button" className="ky-btn ky-btn--quiet" onClick={() => setShowExitConfirm(false)}>
+                Sınava Dön
+              </button>
+              <button type="button" className="ky-btn ky-btn--danger" onClick={onClose}>
+                Çık
+              </button>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

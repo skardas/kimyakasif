@@ -7,10 +7,15 @@ const DAILY_KEY = 'kimya-daily';
 export const DAILY_GOAL_OPTIONS = [10, 20, 40] as const;
 export type DailyGoal = (typeof DAILY_GOAL_OPTIONS)[number];
 
+/** Reading text size: 4 steps mapped to the --fs multiplier on the app root. */
+export const TEXT_SIZE_SCALES = [0.9, 1, 1.15, 1.3] as const;
+export type TextSizeStep = 0 | 1 | 2 | 3;
+
 interface Prefs {
   dailyGoal: DailyGoal;
   reduceMotion: boolean;
   sfxOn: boolean;
+  textSize: TextSizeStep;
 }
 
 interface DailyCount {
@@ -33,13 +38,14 @@ function loadPrefs(): Prefs {
           dailyGoal: DAILY_GOAL_OPTIONS.includes(p.dailyGoal as DailyGoal) ? (p.dailyGoal as DailyGoal) : 20,
           reduceMotion: p.reduceMotion === true,
           sfxOn: p.sfxOn !== false,
+          textSize: [0, 1, 2, 3].includes(p.textSize) ? (p.textSize as TextSizeStep) : 1,
         };
       }
     }
   } catch {
     // Default fallback
   }
-  return { dailyGoal: 20, reduceMotion: false, sfxOn: true };
+  return { dailyGoal: 20, reduceMotion: false, sfxOn: true, textSize: 1 };
 }
 
 function loadDaily(): DailyCount {
@@ -60,7 +66,7 @@ function loadDaily(): DailyCount {
   return { date: today, count: 0 };
 }
 
-/** Günlük hedef, bugün çözülen soru sayısı ve "hareketi azalt" tercihi. */
+/** Günlük hedef, bugün çözülen soru sayısı, "hareketi azalt" ve yazı boyutu tercihleri. */
 export function usePreferences() {
   const [prefs, setPrefs] = useState<Prefs>(loadPrefs);
   const [daily, setDaily] = useState<DailyCount>(loadDaily);
@@ -73,6 +79,7 @@ export function usePreferences() {
     }
     document.documentElement.toggleAttribute('data-reduce-motion', prefs.reduceMotion);
     setSfxEnabled(prefs.sfxOn);
+    document.documentElement.style?.setProperty?.('--fs', String(TEXT_SIZE_SCALES[prefs.textSize]));
   }, [prefs]);
 
   useEffect(() => {
@@ -86,6 +93,7 @@ export function usePreferences() {
   const setDailyGoal = useCallback((dailyGoal: DailyGoal) => setPrefs((p) => ({ ...p, dailyGoal })), []);
   const setReduceMotion = useCallback((reduceMotion: boolean) => setPrefs((p) => ({ ...p, reduceMotion })), []);
   const setSfxOn = useCallback((sfxOn: boolean) => setPrefs((p) => ({ ...p, sfxOn })), []);
+  const setTextSize = useCallback((textSize: TextSizeStep) => setPrefs((p) => ({ ...p, textSize })), []);
   const bumpToday = useCallback(() => {
     setDaily((d) => {
       const today = todayStamp();
@@ -98,6 +106,9 @@ export function usePreferences() {
     reduceMotion: prefs.reduceMotion,
     sfxOn: prefs.sfxOn,
     setSfxOn,
+    textSize: prefs.textSize,
+    textScale: TEXT_SIZE_SCALES[prefs.textSize],
+    setTextSize,
     todayCount: daily.date === todayStamp() ? daily.count : 0,
     setDailyGoal,
     setReduceMotion,

@@ -25,10 +25,12 @@ import {
   FileCheck2,
   ZoomIn,
   ZoomOut,
+  RotateCcw,
 } from 'lucide-react';
 
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { redesignStrings, type LabCategoryId } from '../../i18n/redesignStrings';
 import {
   PRIMARY_32_SCENES,
   getSceneById,
@@ -140,6 +142,18 @@ export function calculateFitDistance(
 
   return { requiredDistance, center, size };
 }
+
+type RGB2 = [string, string];
+/** Three lit-sphere colours per category for the gallery thumbnails (centre, left, right). */
+const SCENE_THUMB_COLORS: Record<string, [RGB2, RGB2, RGB2]> = {
+  vsepr: [['#FF6B7A', '#9C1830'], ['#E9EEF5', '#7C8798'], ['#E9EEF5', '#7C8798']],
+  crystal: [['#7DF0A8', '#0E8A52'], ['#C9A2FF', '#5B32C9'], ['#C9A2FF', '#5B32C9']],
+  electrochem: [['#FFD873', '#A86A08'], ['#6FA8FF', '#1B3FA8'], ['#7C8AA0', '#1B2536']],
+  organic: [['#7C8AA0', '#1B2536'], ['#E9EEF5', '#7C8798'], ['#E9EEF5', '#7C8798']],
+  atomic: [['#FF6B7A', '#9C1830'], ['#FFD873', '#A86A08'], ['#FFD873', '#A86A08']],
+  gas_solution: [['#6FA8FF', '#1B3FA8'], ['#5FF2DF', '#0C8073'], ['#E9EEF5', '#7C8798']],
+  general: [['#5FF2DF', '#0C8073'], ['#6FA8FF', '#1B3FA8'], ['#E9EEF5', '#7C8798']],
+};
 
 const LAB_CATEGORIES: { id: string; label: string }[] = [
   { id: 'all', label: 'Tümü (32)' },
@@ -730,108 +744,111 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
     }
   };
 
-  const unitCategoryLine = `${currentScene.unitId.toUpperCase()} · ${currentScene.category}`;
+  const r = redesignStrings(lang);
   const sceneTitle = currentScene.title[lang] || currentScene.title.tr;
-  const categoryScenes =
-    categoryFilter === 'all' ? PRIMARY_32_SCENES : PRIMARY_32_SCENES.filter((s) => s.category === categoryFilter);
+  const sceneSub = currentScene.subtitle[lang] || currentScene.subtitle.tr;
   const fitLabel = ZOOM_FIT_I18N[lang]?.fitScreen || ZOOM_FIT_I18N.tr.fitScreen;
   const closeSceneModal = () => setIsSceneModalOpen(false);
+  const catCount = (id: string) =>
+    id === 'all' ? PRIMARY_32_SCENES.length : PRIMARY_32_SCENES.filter((sc) => sc.category === id).length;
+  const catLabel = (id: string) => (id === 'all' ? r.all : r.categories[id as LabCategoryId] ?? id);
+  const isExploded = explodeFactor > 0.01;
+
+  // Scene gallery (LabScenes): category chips with counts + 2/3-column tile grid
+  const galleryNode = isSceneModalOpen ? (
+      <section className="lab-gallery" aria-labelledby="lab-scenes-title">
+        <header className="ky-screen-head">
+          <button type="button" className="ky-icon-btn" onClick={closeSceneModal} aria-label={r.backToLab}>
+            <ChevronLeft size={20} aria-hidden="true" className="lab-flip-rtl" />
+          </button>
+          <h1 id="lab-scenes-title" className="ky-disp ky-fs-24">
+            {r.scenesTitle}
+          </h1>
+          <span className="ky-chip ky-mono lab-count">{filteredScenes.length}</span>
+        </header>
+
+        <div className="lab-gallery__filters">
+          <label className="lab-search">
+            <Search size={18} aria-hidden="true" className="lab-search__icon" />
+            <input
+              type="search"
+              className="ky-input lab-search__input"
+              placeholder={r.searchScenes}
+              aria-label={r.searchScenes}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </label>
+          <div className="lab-cats" role="group" aria-label={r.scenesTitle}>
+            {LAB_CATEGORIES.map((cat) => (
+              <button
+                key={cat.id}
+                type="button"
+                className={`ky-chip lab-cat${categoryFilter === cat.id ? ' on' : ''}`}
+                aria-pressed={categoryFilter === cat.id}
+                onClick={() => setCategoryFilter(cat.id)}
+              >
+                {catLabel(cat.id)} {catCount(cat.id)}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="ky-fit">
+          <div className="lab-tiles">
+            {filteredScenes.map((sc) => {
+              const isSelected = sc.id === currentScene.id;
+              const [c1, c2, c3] = SCENE_THUMB_COLORS[sc.category] ?? SCENE_THUMB_COLORS.general;
+              return (
+                <button
+                  key={sc.id}
+                  type="button"
+                  className={`ky-card lab-tile${isSelected ? ' on' : ''}`}
+                  aria-pressed={isSelected}
+                  onClick={() => handleSelectScene(sc)}
+                >
+                  <span className="ky-stage ky-persp ky-thumb" aria-hidden="true">
+                    <span className="ky-floor" />
+                    <span className="ky-rig">
+                      <span className="ky-atom lab-thumb-a" style={{ ['--c' as string]: c2[0], ['--cd' as string]: c2[1] }} />
+                      <span className="ky-atom lab-thumb-b" style={{ ['--c' as string]: c3[0], ['--cd' as string]: c3[1] }} />
+                      <span className="ky-atom lab-thumb-c" style={{ ['--c' as string]: c1[0], ['--cd' as string]: c1[1] }} />
+                    </span>
+                  </span>
+                  <span className="lab-tile__body">
+                    <span className="ky-fs-16 lab-tile__title">
+                      <bdi dir="ltr">{sc.title[lang] || sc.title.tr}</bdi>
+                    </span>
+                    <span className="lab-tile__meta">
+                      <span className={`ky-chip ${sc.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'}`}>{sc.badge}</span>
+                      <span className="ky-fs-12">{catLabel(sc.category)}</span>
+                    </span>
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+  ) : null;
 
   return (
-    <section ref={containerRef} className="lab" aria-label={t.lab3d.title}>
-      {/* Header */}
-      <header className="lab-head">
-        <div className="lab-head__txt">
-          <p className="ky-eyebrow lab-head__eyebrow">{unitCategoryLine}</p>
-          <h1 className="lab-title">{t.lab3d.title}</h1>
-        </div>
+    <section ref={containerRef} className="ky-screen lab" aria-label={t.lab3d.title}>
+      <header className="ky-screen-head">
+        <h1 className="ky-disp ky-fs-28">{r.labTitle}</h1>
         <button
           type="button"
-          className="ky-icon-btn"
+          className="ky-chip lab-all"
           onClick={() => setIsSceneModalOpen(true)}
-          aria-label="Sahne ara"
-          title="Sahne ara"
           aria-haspopup="dialog"
         >
-          <Search size={20} aria-hidden="true" />
+          {r.allScenes(PRIMARY_32_SCENES.length)}
         </button>
       </header>
 
-      {/* Scene stepper + mode switch */}
-      <div className="lab-toolbar">
-        <button
-          type="button"
-          className="ky-icon-btn"
-          onClick={handlePrevScene}
-          aria-label="Önceki Model"
-          title="Önceki Model"
-        >
-          <ChevronLeft size={20} aria-hidden="true" className="lab-flip-rtl" />
-        </button>
-
-        <div className="ky-segmented lab-toolbar__modes" role="group" aria-label="Mod">
-          <button type="button" aria-pressed={mode === 'explore'} onClick={() => handleToggleMode('explore')}>
-            Keşif Modu
-          </button>
-          <button
-            type="button"
-            aria-pressed={mode === 'quiz'}
-            onClick={() => handleToggleMode('quiz')}
-            data-sfx="start"
-            className="lab-mode-quiz"
-          >
-            <Sparkles size={14} aria-hidden="true" />
-            Kör İğne Sınavı
-          </button>
-        </div>
-
-        <button
-          type="button"
-          className="ky-icon-btn"
-          onClick={handleNextScene}
-          aria-label="Sonraki Model"
-          title="Sonraki Model"
-        >
-          <ChevronRight size={20} aria-hidden="true" className="lab-flip-rtl" />
-        </button>
-      </div>
-
-      {/* Quiz prompt banner */}
-      {mode === 'quiz' && (
-        <div
-          className={`ky-card lab-quiz${quizState.feedback === 'correct' ? ' is-right' : ''}${
-            quizState.feedback === 'wrong' ? ' is-wrong ky-shake' : ''
-          }`}
-          role="status"
-          aria-live="polite"
-        >
-          <span className="ky-chip ky-chip--ok ky-mono">
-            Soru {Math.min(quizState.questionIndex + 1, quizState.totalQuestions)} / {quizState.totalQuestions}
-          </span>
-          <p className="lab-quiz__prompt">
-            Hedef:{' '}
-            <strong className="lab-quiz__target">
-              <bdi dir="ltr">[{targetHotspot?.title[lang] || targetHotspot?.title.tr}]</bdi>
-            </strong>{' '}
-            noktasını 3D model üzerinde bulun ve tıklayın!
-          </p>
-          {quizState.feedback === 'correct' && (
-            <span className="lab-quiz__fb lab-quiz__fb--ok">
-              <CheckCircle2 size={18} aria-hidden="true" /> Doğru! +10 XP
-            </span>
-          )}
-          {quizState.feedback === 'wrong' && (
-            <span className="lab-quiz__fb lab-quiz__fb--bad">
-              <XCircle size={18} aria-hidden="true" /> Yanlış Nokta! Tekrar Dene
-            </span>
-          )}
-        </div>
-      )}
-
-      <div className="lab-body">
-        {/* Viewport column */}
-        <div className="lab-viewcol">
-          <div className="ky-stage lab-stage" onPointerDown={handlePointerDown}>
+      <div className="ky-fit">
+        <div className="ky-pane lab-pane">
+          <section className="ky-lead ky-stage lab-stage" aria-label={sceneTitle} onPointerDown={handlePointerDown}>
             <div className="ky-floor" aria-hidden="true" />
 
             {!webglSupported ? (
@@ -848,7 +865,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
               <div ref={canvasMountRef} className="lab-canvas" />
             )}
 
-            {/* Screen-projected hotspot badges (positioned directly via DOM refs) */}
+            {/* Numbered gold hotspot pins (positioned by the render loop) */}
             {webglSupported && (
               <div className="lab-pins">
                 {currentScene.hotspots.map((hs) => {
@@ -862,93 +879,153 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                       }}
                       onClick={(e) => handleHotspotClick(hs, e)}
                       className={`lab-pin${isSelected ? ' on' : ''}${mode === 'quiz' ? ' is-quiz' : ''}`}
-                      style={{ '--pin': hs.color || '#38bdf8' } as React.CSSProperties}
-                      aria-label={mode === 'quiz' ? `İğne ${hs.pinNumber}` : hs.title[lang] || hs.title.tr}
+                      aria-label={mode === 'quiz' ? `${hs.pinNumber}` : `${hs.pinNumber}. ${hs.title[lang] || hs.title.tr}`}
                     >
-                      <span className="lab-dot" aria-hidden="true" />
-                      <bdi dir="ltr">
-                        <span>{mode === 'quiz' ? hs.pinNumber : hs.badgeLabel || hs.title[lang] || hs.title.tr}</span>
-                      </bdi>
+                      {hs.pinNumber}
                     </button>
                   );
                 })}
               </div>
             )}
 
-            {/* Overlay info chip */}
-            <span className="ky-chip lab-overlay-chip">
-              <span className={`lab-level lab-level--${currentScene.badge === 'TYT' ? 'tyt' : 'ayt'}`}>
-                {currentScene.badge}
-              </span>
-              <bdi dir="ltr">{sceneTitle}</bdi>
-            </span>
+            <button type="button" className="ky-icon-btn lab-step lab-step--prev" onClick={handlePrevScene} aria-label={r.prevScene}>
+              <ChevronLeft size={20} aria-hidden="true" className="lab-flip-rtl" />
+            </button>
+            <button type="button" className="ky-icon-btn lab-step lab-step--next" onClick={handleNextScene} aria-label={r.nextScene}>
+              <ChevronRight size={20} aria-hidden="true" className="lab-flip-rtl" />
+            </button>
 
-            {/* Zoom / camera keycaps */}
             <div className="lab-hud">
-              <button
-                type="button"
-                className="ky-icon-btn lab-hud-btn"
-                onClick={handleZoomIn}
-                title={ZOOM_FIT_I18N[lang]?.zoomIn || ZOOM_FIT_I18N.tr.zoomIn}
-                aria-label={ZOOM_FIT_I18N[lang]?.zoomIn || ZOOM_FIT_I18N.tr.zoomIn}
-              >
-                <ZoomIn size={20} aria-hidden="true" />
+              <button type="button" className="ky-icon-btn lab-hud-btn" onClick={handleZoomIn} aria-label={ZOOM_FIT_I18N[lang]?.zoomIn || ZOOM_FIT_I18N.tr.zoomIn}>
+                <ZoomIn size={18} aria-hidden="true" />
               </button>
-              <button
-                type="button"
-                className="ky-icon-btn lab-hud-btn"
-                onClick={handleZoomOut}
-                title={ZOOM_FIT_I18N[lang]?.zoomOut || ZOOM_FIT_I18N.tr.zoomOut}
-                aria-label={ZOOM_FIT_I18N[lang]?.zoomOut || ZOOM_FIT_I18N.tr.zoomOut}
-              >
-                <ZoomOut size={20} aria-hidden="true" />
+              <button type="button" className="ky-icon-btn lab-hud-btn" onClick={handleZoomOut} aria-label={ZOOM_FIT_I18N[lang]?.zoomOut || ZOOM_FIT_I18N.tr.zoomOut}>
+                <ZoomOut size={18} aria-hidden="true" />
               </button>
-              <button
-                type="button"
-                className="ky-icon-btn lab-hud-btn"
-                onClick={handleFitToScreen}
-                title={fitLabel}
-                aria-label={fitLabel}
-              >
-                <Maximize2 size={20} aria-hidden="true" />
-              </button>
-              <button
-                type="button"
-                className="ky-icon-btn lab-hud-btn"
-                onClick={handleResetCamera}
-                title={t.lab3d.resetCamera}
-                aria-label={t.lab3d.resetCamera}
-              >
-                <Focus size={20} aria-hidden="true" />
+              <button type="button" className="ky-icon-btn lab-hud-btn" onClick={handleFitToScreen} aria-label={fitLabel}>
+                <Maximize2 size={18} aria-hidden="true" />
               </button>
             </div>
 
             <p className="lab-hint">{t.lab3d.dragHint}</p>
+          </section>
+
+          {/* Category chip, title + formula, subtitle */}
+          <div className="lab-info">
+            <span className="ky-chip ky-chip--accent">
+              {catLabel(currentScene.category)} · {currentScene.unitId.toUpperCase()}
+            </span>
+            <h2 className="ky-fs-24 lab-info__title">
+              <bdi dir="ltr">{sceneTitle}</bdi>{' '}
+              <span className={`ky-chip ${currentScene.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'} lab-info__badge`}>
+                {currentScene.badge}
+              </span>
+            </h2>
+            <p className="ky-fs-14 lab-info__sub">
+              <bdi dir="ltr">{sceneSub}</bdi>
+            </p>
           </div>
 
-          {/* Secondary controls */}
-          <div className="ky-card lab-controls">
+          {/* Blind-pin quiz banner */}
+          {mode === 'quiz' && (
+            <div
+              className={`ky-card lab-quiz ky-pop${quizState.feedback === 'correct' ? ' is-right' : ''}${
+                quizState.feedback === 'wrong' ? ' is-wrong ky-shake' : ''
+              }`}
+              role="status"
+              aria-live="polite"
+            >
+              <span className="ky-chip ky-chip--gold ky-mono">
+                {Math.min(quizState.questionIndex + 1, quizState.totalQuestions)} / {quizState.totalQuestions}
+              </span>
+              <p className="ky-fs-16 lab-quiz__prompt">
+                <strong className="lab-quiz__target">
+                  <bdi dir="ltr">{targetHotspot?.title[lang] || targetHotspot?.title.tr}</bdi>
+                </strong>
+              </p>
+              {quizState.feedback === 'correct' && (
+                <span className="lab-quiz__fb lab-quiz__fb--ok">
+                  <CheckCircle2 size={18} aria-hidden="true" /> +10 XP
+                </span>
+              )}
+              {quizState.feedback === 'wrong' && (
+                <span className="lab-quiz__fb lab-quiz__fb--bad">
+                  <XCircle size={18} aria-hidden="true" />
+                </span>
+              )}
+            </div>
+          )}
+
+          {/* Hotspot card: title + "Sınavda:" exam fact */}
+          {mode === 'explore' &&
+            (selectedHotspot ? (
+              <section className="ky-card lab-spot ky-pop" key={selectedHotspot.id} aria-label={selectedHotspot.title[lang] || selectedHotspot.title.tr}>
+                <span className="lab-pin-static" aria-hidden="true">
+                  {selectedHotspot.pinNumber}
+                </span>
+                <div className="lab-spot__body">
+                  <p className="ky-fs-16 lab-spot__title">
+                    <bdi dir="ltr">{selectedHotspot.title[lang] || selectedHotspot.title.tr}</bdi>
+                  </p>
+                  <p className="ky-fs-14 lab-spot__desc">
+                    <bdi dir="ltr">{selectedHotspot.description[lang] || selectedHotspot.description.tr}</bdi>
+                  </p>
+                  <p className="ky-fs-14 lab-spot__fact">
+                    <strong>{r.inExam}</strong> <bdi dir="ltr">{selectedHotspot.examFact[lang] || selectedHotspot.examFact.tr}</bdi>
+                  </p>
+                  <button type="button" className="ky-btn-text lab-spot__focus" onClick={() => handleFocusHotspot(selectedHotspot)}>
+                    <Focus size={16} aria-hidden="true" />
+                    <span>{r.focusCamera}</span>
+                  </button>
+                </div>
+                <button type="button" className="ky-icon-btn lab-spot__close" onClick={() => setSelectedHotspot(null)} aria-label={t.profile.close}>
+                  <X size={18} aria-hidden="true" />
+                </button>
+              </section>
+            ) : (
+              <p className="ky-fs-14 lab-prompt">{t.lab3d.selectHotspotPrompt}</p>
+            ))}
+
+          {/* Three action keys */}
+          <div className="ky-acts">
             <button
               type="button"
-              className="ky-icon-btn"
-              onClick={() => setIsAutoRotate(!isAutoRotate)}
-              aria-pressed={isAutoRotate}
-              title={isAutoRotate ? t.lab3d.pauseRotate : t.lab3d.autoRotate}
-              aria-label={isAutoRotate ? t.lab3d.pauseRotate : t.lab3d.autoRotate}
+              className="ky-act"
+              onClick={() => {
+                setExplodeFactor(0);
+                handleResetCamera();
+              }}
             >
-              <RotateCw size={20} aria-hidden="true" />
+              <RotateCcw size={22} aria-hidden="true" />
+              {r.resetAct}
+            </button>
+            <button type="button" className="ky-act" aria-pressed={isExploded} onClick={() => setExplodeFactor(isExploded ? 0 : 1)}>
+              <Layers size={22} aria-hidden="true" />
+              {r.explodeAct}
             </button>
             <button
               type="button"
-              className="ky-icon-btn"
-              onClick={() => setIsLiveSim(!isLiveSim)}
-              aria-pressed={isLiveSim}
-              title={isLiveSim ? 'Canlı Simülasyonu Durdur' : 'Canlı Simülasyonu Başlat'}
-              aria-label={isLiveSim ? 'Canlı Simülasyonu Durdur' : 'Canlı Simülasyonu Başlat'}
+              className="ky-act"
+              data-sfx="start"
+              disabled={!onOpenUnitExam}
+              onClick={() => onOpenUnitExam?.(currentScene.unitId)}
             >
-              {isLiveSim ? <Pause size={20} aria-hidden="true" /> : <Play size={20} aria-hidden="true" />}
+              <FileCheck2 size={22} aria-hidden="true" />
+              {r.solveTest}
             </button>
-            <label className="lab-explode" title={t.lab3d.explodeView}>
+          </div>
+
+          {/* Secondary controls: mode, explode amount, rotation, live sim, full screen */}
+          <div className="ky-well lab-controls">
+            <div className="ky-seg ky-seg--sm lab-modes" role="group" aria-label={r.explore}>
+              <button type="button" aria-pressed={mode === 'explore'} onClick={() => handleToggleMode('explore')}>
+                {r.explore}
+              </button>
+              <button type="button" aria-pressed={mode === 'quiz'} onClick={() => handleToggleMode('quiz')} data-sfx="start">
+                <Sparkles size={14} aria-hidden="true" /> {r.blindPin}
+              </button>
+            </div>
+            <label className="lab-explode">
               <Layers size={18} aria-hidden="true" />
               <input
                 type="range"
@@ -963,123 +1040,43 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
               />
               <span className="ky-mono lab-explode__val">{Math.round(explodeFactor * 100)}%</span>
             </label>
-            <button
-              type="button"
-              className="ky-icon-btn"
-              onClick={handleToggleFullscreen}
-              aria-pressed={isFullscreen}
-              title={isFullscreen ? 'Tam Ekrandan Çık' : 'Tam Ekran'}
-              aria-label={isFullscreen ? 'Tam Ekrandan Çık' : 'Tam Ekran'}
-            >
-              {isFullscreen ? <Minimize2 size={20} aria-hidden="true" /> : <Maximize2 size={20} aria-hidden="true" />}
-            </button>
-          </div>
-        </div>
-
-        {/* Side panel */}
-        <div className="lab-side">
-          <section className="ky-card lab-info">
-            <div className="lab-info__top">
-              <h2 className="lab-info__title">
-                <bdi dir="ltr">{sceneTitle}</bdi>
-              </h2>
-              <span className={`ky-chip ${currentScene.badge === 'TYT' ? 'ky-chip--ok' : 'ky-chip--gold'}`}>
-                {currentScene.badge}
-              </span>
-            </div>
-            <div className="lab-info__tags">
-              <span className="ky-chip ky-chip--accent">{currentScene.unitId.toUpperCase()}</span>
-              <span className="ky-chip">{currentScene.category}</span>
-              {mode === 'explore' && (
-                <span className="ky-chip ky-chip--violet">{currentScene.hotspots.length} nokta</span>
-              )}
-            </div>
-            <p className="lab-info__desc">
-              <bdi dir="ltr">{currentScene.subtitle[lang] || currentScene.subtitle.tr}</bdi>
-            </p>
-            {mode === 'explore' && !selectedHotspot && (
-              <p className="lab-info__prompt">{t.lab3d.selectHotspotPrompt}</p>
-            )}
-          </section>
-
-          {selectedHotspot && mode === 'explore' && (
-            <aside className="ky-card lab-hotspot ky-pop" aria-label="Nokta detayı">
-              <div className="lab-hotspot__top">
-                <div className="lab-hotspot__ttl">
-                  <span className="ky-chip lab-hotspot__pin" style={{ '--pin': selectedHotspot.color || '#38bdf8' } as React.CSSProperties}>
-                    <span className="lab-dot" aria-hidden="true" />
-                    Nokta {selectedHotspot.pinNumber}
-                  </span>
-                  <h3 className="lab-hotspot__name">
-                    <bdi dir="ltr">{selectedHotspot.title[lang] || selectedHotspot.title.tr}</bdi>
-                  </h3>
-                </div>
-                <button
-                  type="button"
-                  className="ky-icon-btn"
-                  onClick={() => setSelectedHotspot(null)}
-                  aria-label="Kapat"
-                >
-                  <X size={20} aria-hidden="true" />
-                </button>
-              </div>
-
-              <p className="lab-hotspot__desc">
-                <bdi dir="ltr">{selectedHotspot.description[lang] || selectedHotspot.description.tr}</bdi>
-              </p>
-
-              <div className="lab-fact">
-                <div className="lab-fact__head">
-                  <Award size={16} aria-hidden="true" />
-                  <span>ÖSYM Sınav İpucu / Exam Fact</span>
-                </div>
-                <div className="lab-fact__body">
-                  <bdi dir="ltr">{selectedHotspot.examFact[lang] || selectedHotspot.examFact.tr}</bdi>
-                </div>
-              </div>
-
+            <div className="lab-toggles">
               <button
                 type="button"
-                className="ky-btn ky-btn--quiet ky-btn--block"
-                onClick={() => handleFocusHotspot(selectedHotspot)}
+                className="ky-icon-btn"
+                onClick={() => setIsAutoRotate(!isAutoRotate)}
+                aria-pressed={isAutoRotate}
+                aria-label={isAutoRotate ? t.lab3d.pauseRotate : t.lab3d.autoRotate}
+                title={isAutoRotate ? t.lab3d.pauseRotate : t.lab3d.autoRotate}
               >
-                <Focus size={16} aria-hidden="true" />
-                <span>3D Kamerayı Odakla</span>
+                <RotateCw size={20} aria-hidden="true" />
               </button>
-            </aside>
-          )}
-
-          {/* Scene picker chips */}
-          <div className="lab-picker" aria-label="Modeller">
-            <div className="ky-scroll-x lab-picker__cats">
-              {LAB_CATEGORIES.map((cat) => (
-                <button
-                  key={cat.id}
-                  type="button"
-                  className={`ky-chip ky-chip--lg${categoryFilter === cat.id ? ' on' : ''}`}
-                  aria-pressed={categoryFilter === cat.id}
-                  onClick={() => setCategoryFilter(cat.id)}
-                >
-                  {cat.label}
-                </button>
-              ))}
-            </div>
-            <div className="ky-scroll-x lab-picker__scenes">
-              {categoryScenes.map((s) => (
-                <button
-                  key={s.id}
-                  type="button"
-                  className={`ky-chip${s.id === currentScene.id ? ' on' : ''}`}
-                  aria-pressed={s.id === currentScene.id}
-                  onClick={() => handleSelectScene(s)}
-                >
-                  <bdi dir="ltr">{s.title[lang] || s.title.tr}</bdi>
-                </button>
-              ))}
+              <button
+                type="button"
+                className="ky-icon-btn"
+                onClick={() => setIsLiveSim(!isLiveSim)}
+                aria-pressed={isLiveSim}
+                aria-label={r.liveSim}
+                title={r.liveSim}
+              >
+                {isLiveSim ? <Pause size={20} aria-hidden="true" /> : <Play size={20} aria-hidden="true" />}
+              </button>
+              <button
+                type="button"
+                className="ky-icon-btn"
+                onClick={handleToggleFullscreen}
+                aria-pressed={isFullscreen}
+                aria-label={r.fullscreen}
+                title={r.fullscreen}
+              >
+                {isFullscreen ? <Minimize2 size={20} aria-hidden="true" /> : <Maximize2 size={20} aria-hidden="true" />}
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      {galleryNode}
 
       {/* Quiz completion summary */}
       {quizState.isComplete && (
@@ -1128,85 +1125,6 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                   <span>Bu Ünitenin Deneme Sınavına Git</span>
                 </button>
               )}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Scene selection modal */}
-      {isSceneModalOpen && (
-        <div
-          className="ky-modal-backdrop"
-          role="presentation"
-          onClick={(e) => {
-            if (e.target === e.currentTarget) closeSceneModal();
-          }}
-        >
-          <div className="ky-sheet lab-sheet lab-scenes ky-pop" role="dialog" aria-modal="true" aria-labelledby="lab-scenes-title">
-            <div className="lab-scenes__head">
-              <div className="lab-scenes__txt">
-                <h2 id="lab-scenes-title" className="lab-scenes__title">3D Molekül & Laboratuvar Modelleri</h2>
-                <p className="lab-scenes__sub">Tüm 24 üniteyi kapsayan 32 prosedürel 3D kimya sahnesi</p>
-              </div>
-              <button type="button" className="ky-icon-btn" onClick={closeSceneModal} aria-label="Kapat">
-                <X size={20} aria-hidden="true" />
-              </button>
-            </div>
-
-            <div className="lab-scenes__filters">
-              <div className="lab-search">
-                <Search size={18} aria-hidden="true" className="lab-search__icon" />
-                <input
-                  type="search"
-                  className="ky-input lab-search__input"
-                  placeholder="Model adı, formül, ünite no (örn: VSEPR, NaCl, u03, Pil)..."
-                  aria-label="Model ara"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-              </div>
-
-              <div className="ky-scroll-x">
-                {LAB_CATEGORIES.map((cat) => (
-                  <button
-                    key={cat.id}
-                    type="button"
-                    className={`ky-chip ky-chip--lg${categoryFilter === cat.id ? ' on' : ''}`}
-                    aria-pressed={categoryFilter === cat.id}
-                    onClick={() => setCategoryFilter(cat.id)}
-                  >
-                    {cat.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="lab-scenes__grid">
-              {filteredScenes.map((s) => {
-                const isSelected = s.id === currentScene.id;
-                return (
-                  <button
-                    key={s.id}
-                    type="button"
-                    className={`ky-opt lab-scene-card${isSelected ? ' on' : ''}`}
-                    aria-pressed={isSelected}
-                    onClick={() => handleSelectScene(s)}
-                  >
-                    <span className="lab-scene-card__meta">
-                      <span className={`lab-level lab-level--${s.badge === 'TYT' ? 'tyt' : 'ayt'}`}>
-                        {s.badge} • {s.unitId.toUpperCase()}
-                      </span>
-                      <span className="lab-scene-card__cat">{s.category}</span>
-                    </span>
-                    <span className="lab-scene-card__name">
-                      <bdi dir="ltr">{s.title[lang] || s.title.tr}</bdi>
-                    </span>
-                    <span className="lab-scene-card__sub">
-                      <bdi dir="ltr">{s.subtitle[lang] || s.subtitle.tr}</bdi>
-                    </span>
-                  </button>
-                );
-              })}
             </div>
           </div>
         </div>

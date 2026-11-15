@@ -15,7 +15,7 @@ export interface OnboardingProps {
 }
 
 /** Dark 3D hero per step: NH3 molecule → TYT→AYT tiles → goal bars → lit atom. */
-const OnboardingHero: React.FC<{ step: number; chip: string }> = ({ step, chip }) => (
+const OnboardingHero: React.FC<{ step: number; chip: string; goalIndex: number }> = ({ step, chip, goalIndex }) => (
   <div
     className={`onboarding-hero hero-3d-stage ky-stage step-${step} ${step > 0 ? 'compact' : ''}`}
     aria-hidden="true"
@@ -23,15 +23,17 @@ const OnboardingHero: React.FC<{ step: number; chip: string }> = ({ step, chip }
     <div className="ky-floor" />
     {step === 0 && (
       <>
-        <div className="hero-molecule ky-float">
-          <div className="ky-orbit" style={{ left: 10, top: 86, inlineSize: 260, blockSize: 92, transform: 'rotate(-20deg)' }} />
-          <div className="ky-bond" style={{ left: 140, top: 126, inlineSize: 96, transform: 'rotate(150deg)' }} />
-          <div className="ky-bond" style={{ left: 140, top: 126, inlineSize: 96, transform: 'rotate(30deg)' }} />
-          <div className="ky-bond" style={{ left: 140, top: 126, inlineSize: 84, transform: 'rotate(-90deg)' }} />
-          <div className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 22, top: 142, inlineSize: 68, blockSize: 68 }} />
-          <div className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 190, top: 142, inlineSize: 68, blockSize: 68 }} />
-          <div className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 110, top: 6, inlineSize: 60, blockSize: 60 }} />
-          <div className="ky-atom" style={{ ['--c' as string]: '#6FA8FF', ['--cd' as string]: '#1B3FA8', left: 84, top: 72, inlineSize: 112, blockSize: 112 }} />
+        <div className="hero-molecule ky-persp">
+          <div className="ky-orbit3d hero-molecule-ring" />
+          <div className="ky-rig hero-molecule-rig">
+            <div className="ky-bond" style={{ left: 140, top: 126, inlineSize: 96, transform: 'rotate(150deg)' }} />
+            <div className="ky-bond" style={{ left: 140, top: 126, inlineSize: 96, transform: 'rotate(30deg)' }} />
+            <div className="ky-bond" style={{ left: 140, top: 126, inlineSize: 84, transform: 'rotate(-90deg)' }} />
+            <div className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 22, top: 142, inlineSize: 68, blockSize: 68, transform: 'translateZ(-40px)' }} />
+            <div className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 190, top: 142, inlineSize: 68, blockSize: 68, transform: 'translateZ(40px)' }} />
+            <div className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 110, top: 6, inlineSize: 60, blockSize: 60, transform: 'translateZ(-20px)' }} />
+            <div className="ky-atom" style={{ ['--c' as string]: '#6FA8FF', ['--cd' as string]: '#1B3FA8', left: 84, top: 72, inlineSize: 112, blockSize: 112 }} />
+          </div>
         </div>
         <span className="ky-chip onboarding-3d-chip" key="chip-0">
           {chip}
@@ -46,17 +48,18 @@ const OnboardingHero: React.FC<{ step: number; chip: string }> = ({ step, chip }
       </div>
     )}
     {step === 2 && (
-      <div className="hero-goal ky-float">
-        <span />
-        <span />
-        <span />
-        <span />
+      <div className="hero-goal ky-persp">
+        {DAILY_GOAL_OPTIONS.map((n, i) => (
+          <span key={n} className={`hero-goal-bar bar-${i} ${i === goalIndex ? 'on' : ''}`} />
+        ))}
       </div>
     )}
     {step === 3 && (
       <div className="hero-atom ky-float">
         <div className="ky-atom" style={{ ['--c' as string]: '#5FF2DF', ['--cd' as string]: '#0C8073', left: 0, top: 0, inlineSize: 96, blockSize: 96 }} />
-        <div className="ky-orbit" style={{ left: -22, top: 30, inlineSize: 140, blockSize: 38, transform: 'rotate(-18deg)' }} />
+        <div className="hero-atom-ring">
+          <div className="ky-orbit3d" style={{ inset: 0 }} />
+        </div>
       </div>
     )}
   </div>
@@ -80,7 +83,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ lang, onSetLanguage, onF
   return (
     <div className="onboarding-overlay" role="dialog" aria-modal="true" aria-labelledby="onboarding-title">
       <div className="onboarding-sheet">
-        <OnboardingHero step={step} chip={sh.obChips[0]} />
+        <OnboardingHero step={step} chip={sh.obChips[0]} goalIndex={DAILY_GOAL_OPTIONS.indexOf(goal)} />
 
         {step === 0 && (
           <div key="step-body-0" className="onboarding-body step-0 onboarding-3d-enter">
@@ -141,7 +144,6 @@ export const Onboarding: React.FC<OnboardingProps> = ({ lang, onSetLanguage, onF
                       </strong>
                       <span>{s.goalNames[i]}</span>
                     </span>
-                    {on && <Check className="onboarding-option-check" size={22} strokeWidth={3} aria-hidden="true" />}
                   </button>
                 );
               })}

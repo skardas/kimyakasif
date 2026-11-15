@@ -13,7 +13,18 @@
   max-inline-size: 100%;
 }
 
-.pf { max-inline-size: 960px; margin-inline: auto; inline-size: 100%; }
+.pf.ky-screen { gap: 0; }
+
+.pf-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-inline-size: 960px;
+  margin-inline: auto;
+  inline-size: 100%;
+}
+
+.pf-head__streak { min-block-size: 36px; padding: 0 12px; font-size: 0.82rem; }
 
 .pf *, .sd * { min-inline-size: 0; }
 .pf h1, .pf h2, .pf h3, .pf h4, .pf h5, .pf p, .pf ul,
@@ -79,7 +90,19 @@
 .pf-stat__l { font-size: 0.75rem; font-weight: 600; color: var(--muted); }
 
 /* ---------------------------------------------------------------- Tabs */
-.pf-tabs { margin-block: -2px 0; }
+.pf-tabs {
+  flex: none;
+  margin: 0;
+  padding-block: 0 12px;
+  padding-inline: max(20px, env(safe-area-inset-left, 0px)) 20px;
+}
+
+@media (min-width: 900px) {
+  .pf-tabs { padding-inline: 32px; }
+}
+
+.pf-hero { position: relative; }
+.pf-hero > :not(.ky-floor) { position: relative; }
 .pf-tab svg { flex: none; }
 
 /* ---------------------------------------------------------------- Colour helpers */

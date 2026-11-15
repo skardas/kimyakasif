@@ -35,34 +35,21 @@ import {
 } from 'lucide-react';
 import type { CompiledQuestion, LanguageCode } from '../../types/chemistry';
 import type { AppState, LearnerProfile } from '../../store/useAppStore';
-import type { DailyGoal } from '../../store/usePreferences';
-import { LANGUAGES, UI_TRANSLATIONS } from '../../i18n/translations';
+import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { redesignStrings } from '../../i18n/redesignStrings';
 import { SHELL_STRINGS } from '../../i18n/shellStrings';
-import { MUSIC_TRACKS } from '../../audio/musicEngine';
 import { ALL_CHEMISTRY_UNITS } from '../../data/units';
 import { compileUnitQuestions } from '../../engine/questionGenerator';
 import { QuizSessionModal } from '../exams/QuizSessionModal';
 import { StudyStatsDashboard } from '../dashboard/StudyStatsDashboard';
-import { notificationManager } from '../../utils/notificationManager';
 
-export type ProfileTab = 'dashboard' | 'analytics' | 'mistakes' | 'bookmarks' | 'profiles' | 'settings';
+export type ProfileTab = 'dashboard' | 'analytics' | 'mistakes' | 'bookmarks' | 'profiles';
 
 export interface ProfileViewProps {
   lang: LanguageCode;
   store: AppState;
-  dailyGoal: DailyGoal;
-  reduceMotion: boolean;
-  sfxOn: boolean;
-  musicOn: boolean;
-  musicTrackId: string;
-  musicVolume: number;
-  onSetSfxOn: (v: boolean) => void;
-  onSetMusicOn: (v: boolean) => void;
-  onSetMusicTrack: (t: string) => void;
-  onSetMusicVolume: (v: number) => void;
-  onSetDailyGoal: (g: DailyGoal) => void;
-  onSetReduceMotion: (r: boolean) => void;
-  onRelaunchOnboarding: () => void;
+  initialTab?: ProfileTab;
+  onOpenSettings: () => void;
 }
 
 interface GamificationBadge {
@@ -97,29 +84,13 @@ const BADGE_TILE: Record<string, string> = {
 
 const AVATAR_OPTIONS = ['👨‍🎓', '👩‍🎓', '🔬', '⚛️', '🧪', '🏆', '🚀', '🎯'];
 
-export const ProfileView: React.FC<ProfileViewProps> = ({
-  lang,
-  store,
-  dailyGoal,
-  reduceMotion,
-  sfxOn,
-  musicOn,
-  musicTrackId,
-  musicVolume,
-  onSetSfxOn,
-  onSetMusicOn,
-  onSetMusicTrack,
-  onSetMusicVolume,
-  onSetDailyGoal,
-  onSetReduceMotion,
-  onRelaunchOnboarding,
-}) => {
+export const ProfileView: React.FC<ProfileViewProps> = ({ lang, store, initialTab = 'dashboard', onOpenSettings }) => {
   const t = UI_TRANSLATIONS[lang];
   const sh = SHELL_STRINGS[lang];
   const activeProfile = store.activeProfile;
 
   // Active segmented tab
-  const [activeTab, setActiveTab] = useState<ProfileTab>('dashboard');
+  const [activeTab, setActiveTab] = useState<ProfileTab>(initialTab);
 
   // Hata Defteri Filter: 'ALL' | 'TYT' | 'AYT' | unitId
   const [mistakeExamFilter, setMistakeExamFilter] = useState<'ALL' | 'TYT' | 'AYT'>('ALL');
@@ -130,9 +101,6 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
   const [newProfileName, setNewProfileName] = useState('');
   const [newProfileAvatar, setNewProfileAvatar] = useState('👨‍🎓');
   const [newProfileTrack, setNewProfileTrack] = useState<'TYT_FIRST' | 'TYT_ONLY' | 'AYT_FOCUS'>('TYT_FIRST');
-
-  // Notification Test Feedback
-  const [notificationFeedback, setNotificationFeedback] = useState<string | null>(null);
 
   // Active Quiz Modal Session (for retrying mistakes or bookmarks)
   const [activeQuizSession, setActiveQuizSession] = useState<{
@@ -259,58 +227,18 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
     setActiveTab('dashboard');
   };
 
-  // Handle Notifications Toggle
-  const handleToggleNotifications = async (enabled: boolean) => {
-    store.updateProfile(activeProfile.id, { notificationsEnabled: enabled });
-    if (enabled) {
-      const granted = await notificationManager.requestPermission();
-      if (granted) {
-        await notificationManager.scheduleDailyReminder(
-          activeProfile.reminderTime || '20:00',
-          'Kimya YKS Günlük Çalışma Hatırlatması',
-          `Merhaba ${activeProfile.name}! Günlük hedefini tamamlamak için 15 dakika ayır.`,
-          true
-        );
-        setNotificationFeedback('Bildirimler aktif edildi ve günlük hatırlatma planlandı.');
-      } else {
-        setNotificationFeedback('Tarayıcı bildirim izni verilmedi.');
-      }
-    } else {
-      await notificationManager.cancelAllReminders();
-      setNotificationFeedback('Bildirimler tamamen kapatıldı.');
-    }
-    setTimeout(() => setNotificationFeedback(null), 4000);
-  };
-
-  // Handle Reminder Time Change
-  const handleChangeReminderTime = (time: string) => {
-    store.updateProfile(activeProfile.id, { reminderTime: time });
-    if (activeProfile.notificationsEnabled) {
-      notificationManager.scheduleDailyReminder(
-        time,
-        'Kimya YKS Günlük Çalışma Hatırlatması',
-        `Merhaba ${activeProfile.name}! Günlük hedefini tamamlamak için 15 dakika ayır.`,
-        true
-      );
-    }
-  };
-
   const trackLabel = (tr: string) =>
     tr === 'TYT_ONLY' ? 'Sadece TYT' : tr === 'AYT_FOCUS' ? 'AYT Odaklı' : 'TYT → AYT';
-  const currentTrack = MUSIC_TRACKS.find((x) => x.id === musicTrackId) ?? MUSIC_TRACKS[0];
-  const currentTrackTitle = currentTrack ? currentTrack.title[lang] || currentTrack.title.tr : '';
-  const volPct = Math.round(Math.max(0, Math.min(1, musicVolume)) * 100);
-
-  const tabs: { id: ProfileTab; icon: React.ReactNode; label: string }[] = [
-    { id: 'dashboard', icon: <Sparkles size={16} aria-hidden="true" />, label: 'AI Koç' },
-    { id: 'analytics', icon: <BarChart3 size={16} aria-hidden="true" />, label: 'Analitik' },
-    { id: 'mistakes', icon: <RotateCcw size={16} aria-hidden="true" />, label: `Hata Defteri (${store.mistakeQuestionIds.length})` },
-    { id: 'bookmarks', icon: <Star size={16} aria-hidden="true" />, label: `Yıldızlı (${store.bookmarkedQuestionIds.length})` },
-    { id: 'profiles', icon: <User size={16} aria-hidden="true" />, label: `Profiller (${store.profiles.length})` },
-    { id: 'settings', icon: <Settings size={16} aria-hidden="true" />, label: sh.settings },
+  const r = redesignStrings(lang);
+  const tabs: { id: ProfileTab | 'settings'; label: string }[] = [
+    { id: 'dashboard', label: r.tabCoach },
+    { id: 'analytics', label: r.tabAnalytics },
+    { id: 'mistakes', label: r.tabMistakes },
+    { id: 'profiles', label: r.profiles },
+    { id: 'settings', label: sh.settings },
   ];
-
-  const goalOptions: DailyGoal[] = [10, 20, 40];
+  const isTabOn = (id: ProfileTab | 'settings') =>
+    id === activeTab || (id === 'mistakes' && activeTab === 'bookmarks');
 
   const renderQuestionRow = (q: CompiledQuestion, mode: 'mistake' | 'bookmark') => (
     <li key={q.id} className="ky-card pf-qrow">
@@ -352,16 +280,17 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
     </li>
   );
 
-  return (
-    <section className="pf" aria-label={t.nav.profile}>
-      {/* Header stage: avatar, name, level/track chips, XP track */}
+  const heroBlock = (
+    <>
+      {/* Learner stage: avatar, name, level/track chips, XP track */}
       <div className="ky-stage pf-hero">
-        <span className="ky-tile ky-tile--violet ky-tile--lg pf-hero__avatar" aria-hidden="true">
+        <div className="ky-floor" aria-hidden="true" />
+        <span className="ky-tile ky-tile--violet ky-tile--lg pf-hero__avatar ky-float" aria-hidden="true">
           {activeProfile.avatar || '👨‍🎓'}
         </span>
         <div className="pf-hero__body">
           <div className="pf-hero__name-row">
-            <h1 className="pf-hero__name ky-disp">{activeProfile.name}</h1>
+            <h2 className="pf-hero__name ky-disp">{activeProfile.name}</h2>
             <span className="ky-chip ky-chip--accent">
               {t.stats.level} {store.level}
             </span>
@@ -381,15 +310,6 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
             <span className="ky-mono pf-hero__xp-val">{store.xp} XP</span>
           </div>
         </div>
-        <button
-          type="button"
-          className="ky-icon-btn pf-hero__switch"
-          onClick={() => setActiveTab('profiles')}
-          aria-label={`Profil Değiştir veya Yönet (${store.profiles.length})`}
-          title="Profil Değiştir veya Yönet"
-        >
-          <ArrowLeftRight size={18} aria-hidden="true" />
-        </button>
       </div>
 
       {/* Stat wells */}
@@ -409,6 +329,21 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
           <p className="pf-stat__l">doğruluk</p>
         </div>
       </div>
+    </>
+  );
+
+  return (
+    <section className="ky-screen pf" aria-label={t.nav.profile}>
+      <header className="ky-screen-head pf-head">
+        <h1 className="ky-disp ky-fs-24">{t.nav.profile}</h1>
+        <span className="ky-chip ky-chip--gold pf-head__streak">
+          <Flame size={14} aria-hidden="true" />
+          <span className="ky-mono">{store.streakDays}</span>
+        </span>
+        <button type="button" className="ky-icon-btn" onClick={onOpenSettings} aria-label={sh.settings} title={sh.settings}>
+          <Settings size={20} aria-hidden="true" />
+        </button>
+      </header>
 
       {/* Tabs */}
       <nav className="ky-scroll-x pf-tabs" role="tablist" aria-label="Profil Sekmeleri">
@@ -417,16 +352,17 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
             key={tab.id}
             type="button"
             role="tab"
-            aria-selected={activeTab === tab.id}
-            className={`ky-chip ky-chip--lg pf-tab ${activeTab === tab.id ? 'on' : ''}`}
-            onClick={() => setActiveTab(tab.id)}
+            aria-selected={isTabOn(tab.id)}
+            className={`ky-chip ky-chip--lg pf-tab ${isTabOn(tab.id) ? 'on' : ''}`}
+            onClick={() => (tab.id === 'settings' ? onOpenSettings() : setActiveTab(tab.id))}
           >
-            {tab.icon}
             <span>{tab.label}</span>
           </button>
         ))}
       </nav>
 
+      <div className="ky-fit">
+      <div className="pf-body">
       {/* TAB 0: AI COACH & DASHBOARD */}
       {activeTab === 'dashboard' && (
         <StudyStatsDashboard
@@ -443,6 +379,7 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
       {/* TAB 1: ANALYTICS */}
       {activeTab === 'analytics' && (
         <div className="pf-stack">
+          {heroBlock}
           <div className="pf-metrics">
             <div className="ky-well pf-metric">
               <span className="pf-metric__l">TOPLAM XP</span>
@@ -514,6 +451,14 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
       {/* TAB 2: MISTAKES */}
       {activeTab === 'mistakes' && (
         <div className="pf-stack">
+          <div role="tablist" aria-label={r.tabMistakes} className="ky-seg">
+            <button type="button" role="tab" aria-selected={(activeTab as ProfileTab) === 'mistakes'} className="ky-fs-14" onClick={() => setActiveTab('mistakes')}>
+              {r.myMistakes} · {store.mistakeQuestionIds.length}
+            </button>
+            <button type="button" role="tab" aria-selected={(activeTab as ProfileTab) === 'bookmarks'} className="ky-fs-14" onClick={() => setActiveTab('bookmarks')}>
+              {r.starred} · {store.bookmarkedQuestionIds.length}
+            </button>
+          </div>
           <div className="pf-listhead">
             <p>
               Yanlış çözdüğün <strong>{store.mistakeQuestionIds.length}</strong> soru listeleniyor.
@@ -554,6 +499,14 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
       {/* TAB 3: BOOKMARKS */}
       {activeTab === 'bookmarks' && (
         <div className="pf-stack">
+          <div role="tablist" aria-label={r.tabMistakes} className="ky-seg">
+            <button type="button" role="tab" aria-selected={(activeTab as ProfileTab) === 'mistakes'} className="ky-fs-14" onClick={() => setActiveTab('mistakes')}>
+              {r.myMistakes} · {store.mistakeQuestionIds.length}
+            </button>
+            <button type="button" role="tab" aria-selected={(activeTab as ProfileTab) === 'bookmarks'} className="ky-fs-14" onClick={() => setActiveTab('bookmarks')}>
+              {r.starred} · {store.bookmarkedQuestionIds.length}
+            </button>
+          </div>
           <div className="pf-listhead">
             <p>
               Yıldızladığın <strong>{store.bookmarkedQuestionIds.length}</strong> soru listeleniyor.
@@ -728,321 +681,6 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
         </div>
       )}
 
-      {/* TAB 5: SETTINGS */}
-      {activeTab === 'settings' && (
-        <div className="pf-stack">
-          <section className="ky-card pf-group" aria-label={sh.settings}>
-            {/* Theme */}
-            <div className="pf-row">
-              <span className="pf-row__icon" aria-hidden="true"><Palette size={20} /></span>
-              <span className="pf-row__text">
-                <span className="pf-row__label" id="pf-theme-l">{t.profile.themeLabel}</span>
-              </span>
-            </div>
-            <div className="pf-row pf-row--ctl">
-              <div className="ky-segmented pf-seg-full" role="radiogroup" aria-labelledby="pf-theme-l">
-                {(
-                  [
-                    ['system', t.profile.themeSystem],
-                    ['light', t.profile.themeLight],
-                    ['dark', t.profile.themeDark],
-                  ] as const
-                ).map(([val, label]) => (
-                  <button
-                    key={val}
-                    type="button"
-                    role="radio"
-                    aria-checked={store.themeSetting === val}
-                    onClick={() => store.setThemeSetting(val)}
-                  >
-                    {label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Language */}
-            <div className="pf-row">
-              <span className="pf-row__icon" aria-hidden="true"><Globe size={20} /></span>
-              <label className="pf-row__text" htmlFor="pf-lang">
-                <span className="pf-row__label">{t.profile.languageLabel}</span>
-              </label>
-              <div className="pf-row__ctl pf-row__ctl--select">
-                <select
-                  id="pf-lang"
-                  className="ky-select"
-                  value={store.language}
-                  onChange={(e) => store.setLanguage(e.target.value as LanguageCode)}
-                >
-                  {LANGUAGES.map((l) => (
-                    <option key={l.code} value={l.code}>
-                      {l.flag} {l.nativeName}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-
-            {/* Music */}
-            <div className="pf-row">
-              <span className="pf-row__icon" aria-hidden="true"><Music size={20} /></span>
-              <span className="pf-row__text">
-                <span className="pf-row__label" id="pf-music-l">{sh.music}</span>
-                <span className="pf-row__hint">{sh.musicHint}</span>
-              </span>
-              <button
-                type="button"
-                role="switch"
-                aria-checked={musicOn}
-                aria-labelledby="pf-music-l"
-                className="ky-switch"
-                onClick={() => onSetMusicOn(!musicOn)}
-              />
-            </div>
-            <div className={`pf-sub-controls ${musicOn ? '' : 'is-off'}`}>
-              {musicOn && (
-                <p className="pf-nowplaying" aria-live="polite">
-                  <span className="pf-eq" aria-hidden="true"><i /><i /><i /></span>
-                  <span>
-                    {sh.nowPlaying}: <strong>{currentTrackTitle}</strong>
-                  </span>
-                </p>
-              )}
-              <div className="pf-field">
-                <label htmlFor="pf-track">{sh.musicTrack}</label>
-                <select
-                  id="pf-track"
-                  className="ky-select"
-                  value={musicTrackId}
-                  disabled={!musicOn}
-                  onChange={(e) => onSetMusicTrack(e.target.value)}
-                >
-                  {MUSIC_TRACKS.map((tr) => (
-                    <option key={tr.id} value={tr.id}>
-                      {tr.title[lang] || tr.title.tr}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="pf-field">
-                <label htmlFor="pf-vol" className="pf-vol-label">
-                  <span>{sh.musicVolume}</span>
-                  <span className="ky-mono">{volPct}%</span>
-                </label>
-                <div className="pf-vol">
-                  <VolumeX size={18} aria-hidden="true" />
-                  <input
-                    id="pf-vol"
-                    type="range"
-                    className="ky-range"
-                    min="0"
-                    max="1"
-                    step="0.05"
-                    value={musicVolume}
-                    disabled={!musicOn}
-                    style={{ ['--pct' as string]: `${volPct}%` }}
-                    onChange={(e) => onSetMusicVolume(parseFloat(e.target.value))}
-                  />
-                  <Volume2 size={18} aria-hidden="true" />
-                </div>
-              </div>
-            </div>
-
-            {/* SFX */}
-            <div className="pf-row">
-              <span className="pf-row__icon" aria-hidden="true"><Volume2 size={20} /></span>
-              <span className="pf-row__text">
-                <span className="pf-row__label" id="pf-sfx-l">{sh.sfx}</span>
-                <span className="pf-row__hint">{sh.sfxHint}</span>
-              </span>
-              <button
-                type="button"
-                role="switch"
-                aria-checked={sfxOn}
-                aria-labelledby="pf-sfx-l"
-                className="ky-switch"
-                onClick={() => onSetSfxOn(!sfxOn)}
-              />
-            </div>
-
-            {/* Daily goal */}
-            <div className="pf-row">
-              <span className="pf-row__icon" aria-hidden="true"><Target size={20} /></span>
-              <span className="pf-row__text">
-                <span className="pf-row__label" id="pf-goal-l">{sh.dailyGoal}</span>
-                <span className="pf-row__hint">{activeProfile.name} · {sh.goalUnit}</span>
-              </span>
-              <div className="ky-segmented pf-seg-compact" role="radiogroup" aria-labelledby="pf-goal-l">
-                {goalOptions.map((goalVal) => (
-                  <button
-                    key={goalVal}
-                    type="button"
-                    role="radio"
-                    aria-checked={activeProfile.dailyQuestionGoal === goalVal}
-                    className="ky-mono"
-                    onClick={() => {
-                      store.updateProfile(activeProfile.id, { dailyQuestionGoal: goalVal });
-                      onSetDailyGoal(goalVal);
-                    }}
-                  >
-                    {goalVal}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="pf-row">
-              <span className="pf-row__icon" aria-hidden="true"><Clock size={20} /></span>
-              <span className="pf-row__text">
-                <span className="pf-row__label" id="pf-min-l">Günlük Çalışma Süresi</span>
-                <span className="pf-row__hint">dakika</span>
-              </span>
-              <div className="ky-segmented pf-seg-compact" role="radiogroup" aria-labelledby="pf-min-l">
-                {[15, 30, 45, 60].map((minVal) => (
-                  <button
-                    key={minVal}
-                    type="button"
-                    role="radio"
-                    aria-checked={activeProfile.dailyStudyMinutesGoal === minVal}
-                    className="ky-mono"
-                    onClick={() => store.updateProfile(activeProfile.id, { dailyStudyMinutesGoal: minVal })}
-                  >
-                    {minVal}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Reduce motion */}
-            <div className="pf-row">
-              <span className="pf-row__icon" aria-hidden="true"><Wind size={20} /></span>
-              <span className="pf-row__text">
-                <span className="pf-row__label" id="pf-motion-l">{sh.reduceMotion}</span>
-                <span className="pf-row__hint">{sh.reduceMotionHint}</span>
-              </span>
-              <button
-                type="button"
-                role="switch"
-                aria-checked={reduceMotion}
-                aria-labelledby="pf-motion-l"
-                className="ky-switch"
-                onClick={() => onSetReduceMotion(!reduceMotion)}
-              />
-            </div>
-          </section>
-
-          {/* Notifications */}
-          <section className="ky-card pf-group" aria-label="Mobil & Web Bildirimleri">
-            <div className="pf-row">
-              <span className="pf-row__icon" aria-hidden="true">
-                {activeProfile.notificationsEnabled ? <Bell size={20} /> : <BellOff size={20} />}
-              </span>
-              <span className="pf-row__text">
-                <span className="pf-row__label" id="pf-notif-l">Mobil & Web Bildirimleri</span>
-                <span className="pf-row__hint">
-                  Hedef tutturulmadığında veya aralıklı tekrar zamanı geldiğinde AI Koç size hatırlatma gönderir.
-                </span>
-              </span>
-              <button
-                type="button"
-                role="switch"
-                aria-checked={activeProfile.notificationsEnabled}
-                aria-labelledby="pf-notif-l"
-                className="ky-switch"
-                onClick={() => handleToggleNotifications(!activeProfile.notificationsEnabled)}
-              />
-            </div>
-
-            {activeProfile.notificationsEnabled && (
-              <div className="pf-sub-controls">
-                <div className="pf-field">
-                  <label htmlFor="pf-remind">Günlük Hatırlatma Saati</label>
-                  <select
-                    id="pf-remind"
-                    className="ky-select"
-                    value={activeProfile.reminderTime || '20:00'}
-                    onChange={(e) => handleChangeReminderTime(e.target.value)}
-                  >
-                    {['18:00', '19:00', '20:00', '21:00', '22:00'].map((h) => (
-                      <option key={h} value={h}>{h}</option>
-                    ))}
-                  </select>
-                </div>
-                <button
-                  type="button"
-                  className="ky-btn ky-btn--quiet ky-btn--sm"
-                  onClick={async () => {
-                    const ok = await notificationManager.sendImmediateNotification(
-                      'Kimya YKS AI Koç',
-                      'Harika gidiyorsun! Bildirim sistemi başarıyla çalışıyor.',
-                      true
-                    );
-                    setNotificationFeedback(ok ? 'Test bildirimi gönderildi.' : 'Bildirim izni veya desteği bulunamadı.');
-                    setTimeout(() => setNotificationFeedback(null), 3000);
-                  }}
-                >
-                  <Bell size={16} aria-hidden="true" />
-                  <span>Test Bildirimi Gönder</span>
-                </button>
-              </div>
-            )}
-
-            {notificationFeedback && (
-              <p className="pf-feedback" role="status">{notificationFeedback}</p>
-            )}
-          </section>
-
-          {/* Target track */}
-          <section className="pf-panel-plain" aria-label="YKS Sınav İlerleme Tercihi">
-            <h3 className="pf-h4" id="pf-track-pref">YKS Sınav İlerleme Tercihi</h3>
-            <div className="pf-opts" role="radiogroup" aria-labelledby="pf-track-pref">
-              {(
-                [
-                  ['TYT_FIRST', '1', '1. TYT → 2. AYT Sıralı (Varsayılan)'],
-                  ['TYT_ONLY', 'T', 'Sadece TYT Kimya (10 Ünite)'],
-                  ['AYT_FOCUS', 'A', 'AYT Odaklı (14 Ünite)'],
-                ] as const
-              ).map(([val, key, label]) => (
-                <button
-                  key={val}
-                  type="button"
-                  role="radio"
-                  aria-checked={activeProfile.targetTrack === val}
-                  className="ky-opt"
-                  onClick={() => store.updateProfile(activeProfile.id, { targetTrack: val })}
-                >
-                  <span className="ky-key" aria-hidden="true">{key}</span>
-                  <span className="pf-opt__label">{label}</span>
-                </button>
-              ))}
-            </div>
-          </section>
-
-          {/* Data actions */}
-          <section className="ky-card pf-group" aria-label={sh.dataTitle}>
-            <div className="pf-data">
-              <h3 className="pf-h4">{sh.dataTitle}</h3>
-              <button type="button" className="ky-btn ky-btn--quiet ky-btn--block" onClick={onRelaunchOnboarding}>
-                <Play size={16} aria-hidden="true" />
-                <span>Tanıtımı Tekrar Başlat</span>
-              </button>
-              <button
-                type="button"
-                className="ky-btn ky-btn--danger ky-btn--block"
-                onClick={() => {
-                  if (window.confirm(t.profile.resetConfirmBody)) {
-                    store.resetAllProgress();
-                  }
-                }}
-              >
-                <RotateCcw size={16} aria-hidden="true" />
-                <span>{t.profile.resetProgress}</span>
-              </button>
-            </div>
-          </section>
-        </div>
-      )}
-
       {/* Active Quiz Session Modal inside Profile (for Hata Defteri and Bookmarks practice) */}
       {activeQuizSession && (
         <QuizSessionModal
@@ -1059,6 +697,8 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
           onClose={() => setActiveQuizSession(null)}
         />
       )}
+      </div>
+      </div>
     </section>
   );
 };

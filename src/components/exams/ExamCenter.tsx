@@ -256,12 +256,14 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
         {featured && (
           <section className="ky-stage ex-feature" aria-label={x.featured}>
             <div className="ky-floor" />
-            <div className="ex-feature__art ky-float" aria-hidden="true">
+            <div className="ex-feature__art ky-persp" aria-hidden="true">
+              <div className="ky-rig" style={{ inset: 0 }}>
               <span className="ky-bond" style={{ left: 55, top: 36, width: 36, transform: 'rotate(145deg)' }} />
               <span className="ky-bond" style={{ left: 55, top: 36, width: 36, transform: 'rotate(35deg)' }} />
-              <span className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 8, top: 44, width: 28, height: 28 }} />
-              <span className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 74, top: 44, width: 28, height: 28 }} />
+              <span className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 8, top: 44, width: 28, height: 28, transform: 'translateZ(-18px)' }} />
+              <span className="ky-atom" style={{ ['--c' as string]: '#E9EEF5', ['--cd' as string]: '#7C8798', left: 74, top: 44, width: 28, height: 28, transform: 'translateZ(18px)' }} />
               <span className="ky-atom" style={{ ['--c' as string]: '#FF6B7A', ['--cd' as string]: '#9C1830', left: 32, top: 8, width: 46, height: 46 }} />
+              </div>
             </div>
             <div className="ex-feature__top">
               <span className="ky-eyebrow">{x.featured} · #{featured.examNumber}</span>
@@ -361,10 +363,12 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
   ];
 
   return (
-    <section className="ex-center" aria-label={t.exams.title}>
+    <section className="ky-screen ex-screen" aria-label={t.exams.title}>
+      <div className="ky-fit">
+      <div className="ex-center">
       <header className="ex-head">
         <p className="ky-eyebrow">40 TYT · 40 AYT · 192</p>
-        <h1 className="ky-disp">{t.exams.title}</h1>
+        <h1 className="ky-disp ky-fs-28">{t.exams.title}</h1>
       </header>
 
       <div className="ky-segmented ex-tabs" role="tablist" aria-label={t.exams.title}>
@@ -589,6 +593,9 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
           )}
         </div>
       )}
+
+      </div>
+      </div>
 
       {/* Active Quiz Session Modal */}
       {activeSession && (

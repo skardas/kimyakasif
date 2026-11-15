@@ -717,3 +717,154 @@
 .gm-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 10px; }
 
 .gm-beaker-res { display: flex; flex-direction: column; align-items: center; gap: 10px; position: relative; z-index: 1; }
+
+/* ============================================================================
+   Pass 2: hub screen + immersive running games (full screen, two-pane ≥900px)
+   ============================================================================ */
+.gm-hub__body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-block-start: max(16px, env(safe-area-inset-top, 0px));
+}
+
+.gm-hub__head h1 { margin: 4px 0 0; font-weight: 800; }
+.gm-hub__head p { margin: 0; }
+
+.gm-hero-orb { inline-size: 92px; block-size: 92px; transform-style: preserve-3d; }
+.gm-hero-orb svg { z-index: 2; }
+.gm-hero-orb .ky-atom { inset: 10px; inline-size: 72px; block-size: 72px; }
+.gm-hero-ring { inset: 0; }
+
+.gm-tiles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.gm-tile {
+  inline-size: 100%;
+  block-size: 100%;
+  padding: 14px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: start;
+  font: inherit;
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 var(--hi), 0 5px 0 var(--edge);
+  margin-block-end: 5px;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.gm-tile:active { transform: translateY(4px); box-shadow: inset 0 1px 0 var(--hi), 0 1px 0 var(--edge); }
+.gm-tile strong { line-height: 1.2; overflow-wrap: anywhere; }
+
+.gm-tile__desc {
+  color: var(--text2);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.gm-tile__foot {
+  margin-block-start: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.gm-tile__best {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.gm-tile__best svg { color: var(--gold); }
+
+@media (min-width: 900px) {
+  .gm-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+}
+
+/* Running game: one scrolling area under a sticky top bar */
+.gm-run > .gm {
+  flex: 1 1 auto;
+  min-block-size: 0;
+  max-inline-size: none;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-block-end: max(20px, env(safe-area-inset-bottom, 0px));
+  padding-inline: max(20px, env(safe-area-inset-left, 0px)) max(20px, env(safe-area-inset-right, 0px));
+}
+
+.gm-run .gm-hud {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  margin-inline: -20px;
+  padding-block: max(14px, env(safe-area-inset-top, 0px)) 10px;
+  padding-inline: 20px;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.gm-run .gm-hud-title { font-size: 1.25rem; }
+
+/* Without a lead element (intro, result) the content stays one centred column */
+.gm-run > .gm > :not(.gm-hud) {
+  inline-size: 100%;
+  max-inline-size: 760px;
+  margin-inline: auto;
+}
+
+@media (min-width: 900px) {
+  .gm-run > .gm { padding-inline: 32px; }
+  .gm-run .gm-hud { margin-inline: -32px; padding-inline: 32px; }
+
+  /* Lead element (board, statement, table) on the left, controls on the right */
+  .gm-run > .gm:has(> .ky-lead) {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    grid-auto-flow: row dense;
+    column-gap: 28px;
+    row-gap: 14px;
+    align-content: start;
+  }
+
+  .gm-run > .gm:has(> .ky-lead) > * { max-inline-size: none; grid-column: 2; }
+  .gm-run > .gm:has(> .ky-lead) > .gm-hud,
+  .gm-run > .gm:has(> .ky-lead) > .gm-progress { grid-column: 1 / -1; }
+  .gm-run > .gm > .ky-lead { grid-column: 1 !important; grid-row: 3 / span 20; align-self: start; }
+
+  .gm-run .gm-board:has(> .ky-lead) {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    grid-auto-flow: row dense;
+    column-gap: 28px;
+    align-content: start;
+  }
+
+  .gm-run .gm-board:has(> .ky-lead) > * { grid-column: 2; }
+  .gm-run .gm-board > .ky-lead { grid-column: 1; grid-row: 1 / span 20; align-self: start; min-block-size: 320px; }
+  .gm-run > .gm > .gm-board { max-inline-size: none; }
+
+  /* Footer action rows align to the end */
+  .gm-run .gm-actions { justify-content: flex-end; }
+}
+
+/* Result panels pop in */
+.gm-result { animation: kyPop2 0.35s cubic-bezier(0.2, 1.4, 0.4, 1) both; }

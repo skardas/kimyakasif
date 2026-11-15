@@ -2,460 +2,290 @@
    Unit slide deck modal + chemical diagram chrome  (Obsidian Lab Glass)
    ========================================================================== */
 
-/* ---- Deck dialog: full-screen sheet on phones, centred on larger screens -- */
-.sd {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  inline-size: 100vw;
-  max-inline-size: 100vw;
-  block-size: 100dvh;
-  max-block-size: 100dvh;
-  background: var(--bg);
-  color: var(--text);
-  overflow: hidden;
-  font-family: var(--font-sans);
-}
-
-.sd:not([open]) { display: none; }
-
-.sd::backdrop {
-  background: var(--scrim);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-}
-
-@media (min-width: 720px) {
-  .sd {
-    margin: auto;
-    inline-size: min(94vw, 980px);
-    max-inline-size: 980px;
-    block-size: min(90dvh, 820px);
-    border: 1px solid var(--line);
-    border-radius: var(--radius-xl);
-    box-shadow: inset 0 1px 0 var(--hi), var(--shadow-pop);
-  }
-}
-
-.sd-box {
-  display: flex;
+/* ---- Slides: immersive reading screen (header / one reading area / footer) */
+.sl-top {
   flex-direction: column;
-  block-size: 100%;
-  min-block-size: 0;
-  padding-block-start: env(safe-area-inset-top, 0px);
+  align-items: stretch;
+  gap: 12px;
 }
 
-.sd-head {
+.sl-top__row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 14px 16px 10px;
-  padding-inline-start: max(16px, env(safe-area-inset-left, 0px));
-  padding-inline-end: max(16px, env(safe-area-inset-right, 0px));
+  gap: 10px;
   min-inline-size: 0;
 }
 
-.sd-head-info { flex: 1 1 0; min-inline-size: 0; display: flex; flex-direction: column; gap: 2px; }
-
-.unit-slide-title,
-.sd-title {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 800;
-  line-height: 1.2;
-  color: var(--text);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.sl-segs {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 4px;
+  margin-block: -16px -18px;
 }
 
-.slide-counter-badge { flex: none; }
-
-.sd-markers {
-  flex: none;
-  margin-inline: 0;
-  padding-inline: 16px;
-  padding-block: 2px 6px;
-  border-block-end: 1px solid var(--line);
-}
-
-/* ---- Carousel ---------------------------------------------------------- */
-.slide-deck-track {
+.sl-seg {
+  min-block-size: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
   display: flex;
-  flex: 1 1 0;
-  min-block-size: 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  overscroll-behavior-x: contain;
-  -webkit-overflow-scrolling: touch;
+  align-items: center;
+  cursor: pointer;
 }
 
-.slide-deck-track::-webkit-scrollbar { display: none; }
-
-:root[data-reduce-motion] .slide-deck-track { scroll-behavior: auto; }
-@media (prefers-reduced-motion: reduce) { .slide-deck-track { scroll-behavior: auto; } }
-
-.study-slide-card {
-  flex: 0 0 100%;
+.sl-seg > span {
+  display: block;
   inline-size: 100%;
-  min-inline-size: 0;
-  box-sizing: border-box;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-  padding: 16px;
-  padding-block-end: 24px;
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  block-size: 6px;
+  border-radius: 999px;
+  background: var(--raised);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+.sl-seg.on > span { background: var(--accent); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45); }
+
+.sl-pane { padding-block-start: 10px; animation: kyPop2 0.3s var(--ease-out) both; }
+
+.sl-main {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-inline-size: 0;
 }
 
-.study-slide-card > * { flex: none; min-inline-size: 0; }
+.sl-head .ky-chip { margin: 0; }
 
-@media (min-width: 720px) {
-  .study-slide-card { padding: 20px 28px 28px; gap: 16px; }
-}
-
-.slide-card-header { display: flex; flex-direction: column; gap: 4px; }
-
-.slide-badge-tag {
-  font-size: 0.72rem;
+.sl-title {
+  margin: 12px 0 0;
   font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
 }
 
-.slide-card-title {
+.sl-quote {
   margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  font-weight: 800;
-  line-height: 1.2;
-  color: var(--text);
-  text-wrap: balance;
-}
-
-/* ---- Footer ------------------------------------------------------------ */
-.sd-foot {
-  flex: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 10px 16px;
-  padding-block-end: max(12px, env(safe-area-inset-bottom, 0px));
-  border-block-start: 1px solid var(--line);
-  background: var(--surface);
-}
-
-.sd-nav { min-block-size: 48px; padding-inline: 14px; flex: none; }
-.sd-nav:disabled { opacity: 0.4; }
-[dir="rtl"] .sd-nav svg { transform: scaleX(-1); }
-.sd-dots { flex: 0 1 auto; min-inline-size: 0; overflow: hidden; gap: 5px; }
-.sd-dots > span { inline-size: 7px; block-size: 7px; flex: none; }
-.sd-dots > span.on { inline-size: 20px; }
-
-@media (max-width: 479px) {
-  .sd-nav span { display: none; }
-  .sd-nav { padding-inline: 16px; }
-}
-
-/* ---- Slide 1/3: diagrams + big picture --------------------------------- */
-.big-picture-quote {
-  margin: 0;
-  padding: 16px 18px;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  font-style: italic;
-  color: var(--text);
-  background: var(--accent-soft);
+  padding: 18px 20px;
+  border-radius: 20px;
   border-inline-start: 4px solid var(--accent);
-  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
 }
 
-.slide-diagram-box { position: relative; border-radius: var(--radius-md); overflow: hidden; }
-.slide-diagram-box .chemical-diagram-container { margin: 0; }
+.sl-block {
+  padding: 16px 18px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-inline-size: 0;
+}
 
-.diagram-expand-overlay-btn {
-  position: absolute;
-  inset-block-start: 0.6rem;
-  inset-inline-end: 0.6rem;
-  background: var(--surface);
+.sl-block > * { max-inline-size: 100%; }
+.sl-block__title { margin: 0; font-weight: 700; line-height: 1.25; }
+.sl-block__text { margin: 0; color: var(--text2); line-height: 1.5; }
+.sl-block__strong { margin: 0; font-weight: 600; line-height: 1.45; color: var(--text); }
+
+.sl-points {
+  margin: 0;
+  padding-inline-start: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  line-height: 1.45;
   color: var(--text);
-  border-color: var(--line-strong);
-  cursor: pointer;
+}
+
+.sl-points li::marker { color: var(--accent); }
+
+/* Formula on its own line, note under it */
+.sl-formula {
+  padding: 16px 18px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sl-formula__label {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.sl-formula__eq {
+  margin: 0;
+  font-family: var(--font-formula);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.sl-formula__eq bdi { display: inline; }
+.sl-formula__note { margin: 0; color: var(--text2); line-height: 1.45; }
+
+/* Exam trap as its own block */
+.sl-trap {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: var(--bad-soft);
+  border: 1px solid var(--bad);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sl-trap p { margin: 0; }
+.sl-trap__title, .sl-truth__title { display: flex; align-items: center; gap: 6px; font-weight: 800; }
+.sl-trap__title { color: var(--bad); }
+.sl-truth__title { color: var(--ok); margin-block-start: 8px !important; }
+.sl-trap__text, .sl-truth__text { line-height: 1.5; color: var(--text); }
+
+.sl-tip {
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  color: var(--text2);
+  line-height: 1.45;
+}
+
+.sl-tip svg { color: var(--gold); flex: none; margin-block-start: 2px; }
+
+.sl-diagram {
+  position: relative;
+  padding: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sl-diagram .chemical-diagram-container { margin: 0; }
+
+.sl-zoom-btn {
+  position: absolute;
+  inset-inline-end: 10px;
+  top: 10px;
   min-block-size: 36px;
 }
 
-/* ---- Slide 2: subtopics ------------------------------------------------ */
-.deep-subtopics-stack { display: flex; flex-direction: column; gap: 12px; }
-
-.subtopic-card-item {
-  --sub: var(--accent);
-  padding: 16px;
+.sl-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  border-inline-start: 4px solid var(--sub);
-}
-
-.subtopic-card-header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
-
-.subtopic-badge {
-  padding: 4px 10px;
-  border-radius: var(--radius-full);
-  font-size: 0.72rem;
-  font-weight: 800;
-  color: var(--text);
-  background: color-mix(in srgb, var(--sub) 22%, transparent);
-  border: 1px solid color-mix(in srgb, var(--sub) 45%, transparent);
-}
-
-.subtopic-title { margin: 0; font-size: 1.02rem; font-weight: 700; color: var(--text); flex: 1 1 160px; min-inline-size: 0; }
-.subtopic-summary { margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--text2); }
-.subtopic-keypoints { margin: 0; padding-inline-start: 1.2rem; display: flex; flex-direction: column; gap: 6px; font-size: 0.88rem; line-height: 1.5; color: var(--text); }
-.subtopic-keypoints li::marker { color: var(--sub); }
-
-/* ---- Slide 3: golden formulas ----------------------------------------- */
-.golden-formulas-stack { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); }
-
-.golden-formula-card {
-  padding: 16px;
-  border-radius: var(--radius-md);
-  background: var(--gold-soft);
-  border: 1px solid var(--line);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.formula-header { display: flex; align-items: center; gap: 8px; }
-.formula-icon { color: var(--gold); flex: none; }
-.formula-label { font-size: 0.82rem; font-weight: 800; color: var(--text); }
-
-.formula-expression {
-  padding: 12px 14px;
-  border-radius: var(--radius-sm);
-  background: var(--bg2);
-  border: 1px solid var(--line);
-  overflow-x: auto;
-}
-
-.formula-expression code {
-  font-family: var(--font-formula);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text);
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
-}
-
-.formula-exam-note { margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text2); }
-.formula-exam-note strong { color: var(--text); }
-
-/* ---- Slide 4: mnemonics ------------------------------------------------ */
-.mnemonics-cards-grid { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); }
-
-.mnemonic-card { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
-
-.mnemonic-badge {
-  align-self: flex-start;
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-  font-family: var(--font-formula);
-  font-size: 0.82rem;
-  font-weight: 800;
-  background: var(--violet-soft);
-  color: var(--violet);
-}
-
-.mnemonic-title { margin: 0; font-size: 1.02rem; font-weight: 700; color: var(--text); }
-
-.mnemonic-box { padding: 10px 12px; border-radius: var(--radius-sm); background: var(--raised); border: 1px solid var(--line); }
-.mnemonic-sublabel { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
-.mnemonic-expansion { margin: 4px 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--text); }
-
-.mnemonic-tip { margin: 0; display: flex; gap: 8px; align-items: flex-start; font-size: 0.85rem; line-height: 1.5; color: var(--text2); }
-.tip-icon { color: var(--gold); flex: none; margin-block-start: 2px; }
-
-/* ---- Slide 5: pathways / steppers ------------------------------------- */
-.visual-pathways-stack { display: flex; flex-direction: column; gap: 12px; }
-.sequence-pathway-card { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
-.pathway-title { margin: 0; font-size: 1rem; font-weight: 700; color: var(--text); }
-.stepper-track { display: flex; flex-direction: column; gap: 8px; position: relative; }
-
-.stepper-node {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
+  gap: 8px;
   inline-size: 100%;
-  min-block-size: 48px;
+}
+
+.sl-step {
+  inline-size: 100%;
+  min-block-size: 52px;
   padding: 10px 12px;
-  border-radius: var(--radius-sm);
-  background: var(--raised);
+  border-radius: 14px;
   border: 1px solid var(--line);
-  color: var(--text2);
+  background: var(--raised);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 12px;
   text-align: start;
   font: inherit;
   cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
-.stepper-node.active { background: var(--accent-soft); border-color: var(--accent); color: var(--text); }
+.sl-step.on { border-color: var(--accent); background: var(--accent-soft); }
 
-.node-num {
+.sl-step__n {
+  inline-size: 30px;
+  block-size: 30px;
   flex: none;
-  inline-size: 28px;
-  block-size: 28px;
-  border-radius: 9px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-formula);
-  font-size: 0.82rem;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
   font-weight: 800;
   background: var(--surface);
+  color: var(--text2);
   border: 1px solid var(--line);
-  color: var(--text);
 }
 
-.stepper-node.active .node-num { background: var(--accent); color: var(--on-accent); border-color: transparent; }
-.node-text { flex: 1 1 0; min-inline-size: 0; font-size: 0.9rem; line-height: 1.45; padding-block-start: 3px; overflow-wrap: anywhere; }
+.sl-step.on .sl-step__n { background: var(--accent); color: var(--on-accent); border-color: transparent; }
+.sl-step__text { line-height: 1.4; }
 
-/* ---- Slide 6: comparisons --------------------------------------------- */
-.visual-matrix-cards-grid { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); }
-.comparison-card { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.sl-vs { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.sl-vs .ky-chip { white-space: normal; min-block-size: 32px; line-height: 1.2; padding-block: 4px; }
 
-.comparison-concepts-header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
-
-.concept-chip-a,
-.concept-chip-b {
-  padding: 6px 12px;
-  border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 700;
-  min-inline-size: 0;
-  overflow-wrap: anywhere;
-}
-
-.concept-chip-a { background: var(--accent-soft); color: var(--accent); }
-.concept-chip-b { background: var(--violet-soft); color: var(--violet); }
-
-.vs-pill {
-  font-family: var(--font-formula);
-  font-size: 0.7rem;
+.sl-vs__pill {
+  font-family: var(--font-display);
   font-weight: 800;
+  font-size: 0.75rem;
   color: var(--muted);
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--line);
 }
 
-.comparison-distinction { margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--text2); }
-
-/* ---- Slide 7: traps ---------------------------------------------------- */
-.trap-hunter-stack { display: flex; flex-direction: column; gap: 12px; }
-.trap-hunter-card { padding: 14px; display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
-
-.trap-item-bad,
-.trap-item-good { display: flex; flex-direction: column; gap: 6px; padding: 12px; border-radius: var(--radius-sm); }
-.trap-item-bad { background: var(--bad-soft); }
-.trap-item-good { background: var(--ok-soft); }
-
-.trap-label,
-.truth-label { display: flex; align-items: center; gap: 6px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
-.trap-label { color: var(--bad); }
-.truth-label { color: var(--ok); }
-.trap-label svg, .truth-label svg { flex: none; }
-
-.trap-statement,
-.truth-statement { margin: 0; font-size: 0.9rem; line-height: 1.5; color: var(--text); }
-
-@media (min-width: 720px) {
-  .trap-hunter-card { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .mnemonics-cards-grid,
-  .visual-matrix-cards-grid,
-  .golden-formulas-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
-/* ---- Slide 8: active recall ------------------------------------------- */
-.active-recall-header-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; }
-.recall-instruction { margin: 0; flex: 1 1 200px; font-size: 0.9rem; line-height: 1.5; color: var(--text2); }
-
-.recall-score-pill {
-  padding: 6px 12px;
-  border-radius: var(--radius-full);
-  background: var(--gold-soft);
-  color: var(--gold);
-  font-size: 0.82rem;
-  font-weight: 800;
-  white-space: nowrap;
-}
-
-.active-recall-deck { display: flex; flex-direction: column; gap: 12px; }
-.recall-question-card { padding: 14px; display: flex; flex-direction: column; gap: 10px; transition: border-color 0.2s ease; }
-.recall-question-card.correct { border-color: var(--ok); }
-.recall-question-card.wrong { border-color: var(--bad); }
-.recall-q-num { font-family: var(--font-formula); font-size: 0.75rem; font-weight: 800; color: var(--muted); }
-.recall-q-text { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--text); }
-.recall-options-row { display: flex; flex-wrap: wrap; gap: 10px; }
-.recall-btn { flex: 1 1 120px; min-inline-size: 0; }
-.recall-btn:disabled:not(.ky-btn--ok):not(.ky-btn--danger) { opacity: 0.55; }
-
-.recall-feedback-box { display: flex; flex-direction: column; gap: 6px; padding-block-start: 10px; border-block-start: 1px dashed var(--line); font-size: 0.85rem; line-height: 1.5; }
-.recall-feedback-box p { margin: 0; }
-.feedback-correct,
-.feedback-wrong { display: flex; align-items: center; gap: 6px; font-weight: 800; }
-.feedback-correct { color: var(--ok); }
-.feedback-wrong { color: var(--bad); }
-.truth-note { color: var(--text2); }
-.truth-note strong { color: var(--text); }
-
-/* ---- Slide 9: twin quiz + action hub ---------------------------------- */
-.slide-twin-card { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
-.twin-card-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
-.twin-badge { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold); }
-.twin-cycle-btn { cursor: pointer; min-block-size: 36px; }
-.twin-stem { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--text); overflow-wrap: anywhere; }
-.twin-options-list { display: flex; flex-direction: column; gap: 8px; }
-.twin-option-btn { min-block-size: 52px; padding-block: 8px; }
-.opt-text { flex: 1 1 0; min-inline-size: 0; font-size: 0.92rem; line-height: 1.45; overflow-wrap: anywhere; }
-.twin-explanation-box { padding: 12px 14px; border-radius: var(--radius-sm); background: var(--accent-soft); }
-.twin-explanation-text { margin: 0; font-size: 0.88rem; line-height: 1.55; color: var(--text); overflow-wrap: anywhere; }
-
-.slide-completion-box { display: flex; }
-.completion-badge-done { flex: 1; justify-content: center; }
-
-.action-hub-section { display: flex; flex-direction: column; gap: 10px; }
-.action-hub-title { margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text); }
-.action-hub-grid { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
-
-.action-card-btn {
+.sl-recall-head {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 12px;
-  padding: 12px 14px;
-  min-block-size: 64px;
-  text-align: start;
-  font: inherit;
-  cursor: pointer;
-  transition: transform 0.08s ease, border-color 0.15s ease;
+  gap: 8px 12px;
 }
 
-.action-card-btn:active { transform: translateY(2px); }
-@media (hover: hover) { .action-card-btn:hover { border-color: var(--line-strong); } }
-.action-card-btn .ky-tile { margin-block-end: 4px; }
-.action-card-text { display: flex; flex-direction: column; gap: 2px; min-inline-size: 0; flex: 1; }
-.action-title { font-size: 0.95rem; font-weight: 700; color: var(--text); }
-.action-sub { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
+.sl-recall-head p { flex: 1 1 200px; }
+.sl-recall.is-right { border-color: var(--ok); }
+.sl-recall.is-wrong { border-color: var(--bad); }
+.sl-recall__n { font-size: 0.75rem; font-weight: 800; color: var(--muted); }
 
-@media (min-width: 720px) { .action-hub-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .action-card-btn { flex-direction: column; align-items: flex-start; } }
+.sl-recall__btns {
+  display: flex;
+  gap: 10px;
+  inline-size: 100%;
+}
+
+.sl-recall__btns .ky-btn { flex: 1 1 0; }
+.sl-recall__fb p { margin: 0; }
+.sl-ok { color: var(--ok); font-weight: 700; display: flex; align-items: center; gap: 6px; }
+.sl-bad { color: var(--bad); font-weight: 700; display: flex; align-items: center; gap: 6px; }
+
+.sl-twin-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  inline-size: 100%;
+}
+
+.sl-twin-next { min-block-size: 36px; }
+
+.sl-twin-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  inline-size: 100%;
+}
+
+.sl-twin-opts .ky-opt { min-block-size: 56px; padding: 10px 14px; }
+.sl-opt-text { flex: 1; font-weight: 600; line-height: 1.35; }
+
+.sl-solution {
+  inline-size: 100%;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: var(--accent-soft);
+  border: 1px solid var(--line-strong);
+}
+
+.sl-solution p { margin: 0; line-height: 1.5; color: var(--text); }
+.sl-done { align-self: flex-start; }
+
+.sl-prev { flex: none; padding: 0 18px; min-block-size: 56px; }
+.sl-next { min-block-size: 56px; font-size: 1.06rem; }
+[dir="rtl"] .sl-flip { transform: scaleX(-1); }
 
 /* ---- Diagram zoom dialog (inside deck) -------------------------------- */
 .sd-zoom {

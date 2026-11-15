@@ -11,6 +11,7 @@ import './styles/screens/cards.css';
 import './styles/screens/games.css';
 import './styles/screens/exams.css';
 import './styles/screens/profile.css';
+import './styles/screens/settings.css';
 
 // Register Offline PWA Service Worker
 if ('serviceWorker' in navigator && import.meta.env.PROD) {

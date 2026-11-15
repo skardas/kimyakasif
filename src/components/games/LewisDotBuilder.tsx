@@ -446,7 +446,7 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
           </div>
         </div>
 
-        <div className="ky-stage gm-lewis-stage lewis-canvas-stage">
+        <div className="ky-stage gm-lewis-stage lewis-canvas-stage ky-lead">
           <div className="ky-floor" aria-hidden="true" />
           <div className="gm-lewis-canvas">
             <svg viewBox="-128 -128 256 256" aria-hidden="true">

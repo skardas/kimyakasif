@@ -16,6 +16,7 @@ import { ALL_CHEMISTRY_UNITS } from '../../data/units';
 import { compileAllFlashcards, type CompiledFlashcard } from '../../engine/flashcardGenerator';
 import { LeitnerBoxEngine } from '../../engine/leitnerEngine';
 import { formatChemText } from '../common/ChemFormula';
+import { redesignStrings } from '../../i18n/redesignStrings';
 import {
   playDrop,
   playCorrect,
@@ -290,264 +291,218 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   const swipeOpacityRight = Math.min(1, Math.max(0, (dragOffset.x - 20) / 70));
   const swipeOpacityLeft = Math.min(1, Math.max(0, (-dragOffset.x - 20) / 70));
 
-  const deckProgress = activeDeck.length > 0 ? ((currentIndex + 1) / activeDeck.length) * 100 : 0;
+  const r = redesignStrings(lang);
 
   return (
-    <section className="fc" aria-label={t.cards.title}>
-      {/* Header */}
-      <header className="fc-head">
-        <div className="fc-head__txt">
-          <p className="ky-eyebrow">Leitner sistemi · {allCards.length} kart</p>
-          <h1 className="fc-title">{t.cards.title}</h1>
-        </div>
-        <span className="ky-chip ky-chip--ok ky-chip--lg fc-head__chip">
-          {t.cards.masteredCount}: {masteredCardIds.length}
+    <section className="ky-screen fc" aria-label={t.cards.title}>
+      <header className="ky-screen-head">
+        <h1 className="ky-disp ky-fs-28">{t.nav.cards}</h1>
+        <span className="ky-chip ky-mono fc-count" aria-live="polite">
+          {activeDeck.length > 0 ? `${currentIndex + 1} / ${activeDeck.length}` : '0 / 0'}
         </span>
-      </header>
-      <p className="fc-sub">{t.cards.subtitle}</p>
-
-      {/* Leitner 5-box tiles (tap to filter) */}
-      <section className="fc-boxes" aria-label="Leitner kutuları">
-        {[1, 2, 3, 4, 5].map((b) => {
-          const on = selectedBox === b;
-          const count = distribution[b] || 0;
-          return (
-            <button
-              key={b}
-              type="button"
-              aria-pressed={on}
-              title={`Kutu ${b}: ${count} kart`}
-              onClick={() => {
-                setSelectedBox((prev) => (prev === b ? 'all' : b));
-                setCurrentIndex(0);
-                setIsFlipped(false);
-              }}
-              className={`ky-well fc-box fc-box--${b}${on ? ' on' : ''}${count === 0 ? ' is-empty' : ''}`}
-            >
-              <span className="ky-mono fc-box__n">{count}</span>
-              <span className="fc-box__l">Kutu {b}</span>
-            </button>
-          );
-        })}
-      </section>
-
-      {/* Unit filter + shuffle */}
-      <div className="fc-controls">
-        <label className="fc-unit">
-          <span className="ky-eyebrow">Ünite</span>
-          <select
-            value={selectedUnit}
-            onChange={(e) => {
-              setSelectedUnit(e.target.value);
-              setCurrentIndex(0);
-              setIsFlipped(false);
-            }}
-            className="ky-select"
-            aria-label="Ünite Filtresi"
-          >
-            <option value="all">{t.cards.allUnits}</option>
-            <option value="tyt">TYT Kimya (u01 - u10)</option>
-            <option value="ayt">AYT Kimya (u11 - u22)</option>
-            {ALL_CHEMISTRY_UNITS.slice(0, 22).map((u) => (
-              <option key={u.id} value={u.id}>
-                {u.id.toUpperCase()}: {u.title[lang]}
-              </option>
-            ))}
-          </select>
-        </label>
         <button
           type="button"
           onClick={handleShuffle}
-          className="ky-btn ky-btn--quiet fc-shuffle"
+          className="ky-icon-btn"
           title={t.cards.shuffleDeck}
+          aria-label={t.cards.shuffleDeck}
           data-sfx="none"
         >
-          <Shuffle size={16} aria-hidden="true" />
-          <span>{t.cards.shuffleDeck}</span>
+          <Shuffle size={18} aria-hidden="true" />
         </button>
-      </div>
+      </header>
 
-      {/* Progress */}
-      <div className="fc-progress">
-        <div
-          className="ky-track"
-          role="progressbar"
-          aria-valuemin={0}
-          aria-valuemax={activeDeck.length}
-          aria-valuenow={activeDeck.length > 0 ? currentIndex + 1 : 0}
-          aria-label={t.cards.title}
-        >
-          <div className="ky-fill" style={{ inlineSize: `${deckProgress}%` }} />
-        </div>
-        <span className="ky-mono fc-progress__n">
-          {activeDeck.length > 0 ? `${currentIndex + 1} / ${activeDeck.length}` : '0 / 0'}
-        </span>
-      </div>
-
-      {/* 3D Flip Card or Empty State */}
-      {activeDeck.length === 0 ? (
-        <div className="ky-empty fc-empty">
-          <div className="ky-tile ky-tile--lg" aria-hidden="true">
-            <Layers size={28} />
-          </div>
-          <h2 className="fc-empty__title">{t.cards.title}</h2>
-          <p className="fc-empty__txt">{t.cards.tapToFlip}</p>
-          <span className="ky-chip ky-chip--ok">
-            {t.cards.masteredCount}: {masteredCardIds.length}
-          </span>
-          <button
-            type="button"
-            onClick={() => {
-              setSelectedUnit('all');
-              setSelectedBox('all');
-            }}
-            className="ky-btn ky-btn--primary"
-          >
-            {t.cards.allUnits}
-          </button>
-        </div>
-      ) : currentCard ? (
-        <div className="fc-viewport">
-          <div
-            className="fc-scene"
-            onTouchStart={onTouchStart}
-            onTouchMove={onTouchMove}
-            onTouchEnd={onTouchEnd}
-            onPointerDown={onPointerDown}
-            onPointerMove={onPointerMove}
-            onPointerUp={onPointerUp}
-          >
-            {/* Rubber Stamp Swipe Overlays */}
-            <div className="swipe-stamp stamp-demote" style={{ opacity: swipeOpacityLeft }} aria-hidden="true">
-              TEKRAR ET (KUTU 1)
+      <div className="ky-fit">
+        <div className="ky-pane fc-pane">
+          {/* One big card that turns over in real 3D */}
+          {activeDeck.length === 0 ? (
+            <div className="ky-lead ky-card ky-empty fc-empty">
+              <div className="ky-tile ky-tile--lg" aria-hidden="true">
+                <Layers size={28} />
+              </div>
+              <h2 className="fc-empty__title">{t.cards.title}</h2>
+              <p className="fc-empty__txt">{t.cards.tapToFlip}</p>
+              <button
+                type="button"
+                onClick={() => {
+                  setSelectedUnit('all');
+                  setSelectedBox('all');
+                }}
+                className="ky-btn ky-btn--primary"
+              >
+                {t.cards.allUnits}
+              </button>
             </div>
-            <div className="swipe-stamp stamp-promote" style={{ opacity: swipeOpacityRight }} aria-hidden="true">
-              BİLİYORUM (+1 KUTU)
-            </div>
-
-            {/* 3D Rotatable Card Container */}
+          ) : currentCard ? (
             <div
-              className={`flashcard-3d-card ${isFlipped ? 'flipped' : ''}`}
-              onClick={() => {
-                if (touchHandledFlipRef.current) {
-                  touchHandledFlipRef.current = false;
-                  return;
-                }
-                if (pointerSwipedRef.current) {
-                  pointerSwipedRef.current = false;
-                  return;
-                }
-                handleFlip();
-              }}
-              style={{
-                transform: `translate3d(${dragOffset.x}px, ${dragOffset.y * 0.3}px, 0) rotate(${dragOffset.x * 0.05}deg) ${isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'}`,
-                transition: isDragging ? 'none' : 'transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
-              }}
+              className="ky-lead ky-persp fc-stage"
+              onTouchStart={onTouchStart}
+              onTouchMove={onTouchMove}
+              onTouchEnd={onTouchEnd}
+              onPointerDown={onPointerDown}
+              onPointerMove={onPointerMove}
+              onPointerUp={onPointerUp}
             >
-              {/* Card Face Front */}
-              <div className="ky-card flashcard-face flashcard-face-front">
-                <div className="fc-face__top">
-                  {currentCard.category === 'trap' ? (
-                    <span className="ky-chip ky-chip--gold">
-                      <AlertTriangle size={14} aria-hidden="true" /> {t.cards.osymTrapLabel}
-                    </span>
-                  ) : (
-                    <span className="ky-chip ky-chip--accent">
-                      <BookOpen size={14} aria-hidden="true" /> {t.cards.frontBadge}
-                    </span>
-                  )}
-                  <span className="ky-chip fc-face__box">Kutu {currentBox}</span>
-                </div>
-
-                <div className="fc-face__body">
-                  <div className="ky-disp fc-prompt">{formatChemText(currentCard.frontPrompt)}</div>
-                </div>
-
-                <div className="fc-face__bottom">
-                  <span className="fc-face__hint">
-                    <RotateCw size={14} aria-hidden="true" /> {t.cards.tapToFlip}
-                  </span>
-                  <span className="ky-mono fc-face__id">{currentCard.id}</span>
-                </div>
+              <div className="fc-stamp fc-stamp--again" style={{ opacity: swipeOpacityLeft }} aria-hidden="true">
+                {r.again}
               </div>
-
-              {/* Card Face Back */}
-              <div className="ky-card flashcard-face flashcard-face-back">
-                <div className="fc-face__top">
-                  <span className="ky-chip ky-chip--ok">
-                    <CheckCircle2 size={14} aria-hidden="true" /> {t.cards.backBadge}
+              <div className="fc-stamp fc-stamp--know" style={{ opacity: swipeOpacityRight }} aria-hidden="true">
+                {r.know}
+              </div>
+              <div
+                className="fc-drag"
+                style={{
+                  transform: `translate3d(${dragOffset.x}px, ${dragOffset.y * 0.3}px, 0) rotate(${dragOffset.x * 0.05}deg)`,
+                  transition: isDragging ? 'none' : 'transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                }}
+              >
+                <button
+                  type="button"
+                  className={`ky-flip fc-card ${isFlipped ? 'turned' : ''}`}
+                  aria-label={`${t.cards.tapToFlip}: ${isFlipped ? r.answer : r.question}`}
+                  aria-pressed={isFlipped}
+                  data-sfx="none"
+                  onClick={() => {
+                    if (touchHandledFlipRef.current) {
+                      touchHandledFlipRef.current = false;
+                      return;
+                    }
+                    if (pointerSwipedRef.current) {
+                      pointerSwipedRef.current = false;
+                      return;
+                    }
+                    handleFlip();
+                  }}
+                >
+                  <span className="ky-face ky-card fc-face" aria-hidden={isFlipped}>
+                    <span className="fc-face__top">
+                      {currentCard.category === 'trap' ? (
+                        <span className="ky-chip ky-chip--gold">
+                          <AlertTriangle size={14} aria-hidden="true" /> {t.cards.osymTrapLabel}
+                        </span>
+                      ) : (
+                        <span className="ky-chip ky-chip--accent">{r.question}</span>
+                      )}
+                      <span className="ky-chip ky-mono">{r.boxShort(currentBox)}</span>
+                    </span>
+                    <span className="fc-face__body">
+                      <span className="ky-disp ky-fs-28 fc-prompt">{formatChemText(currentCard.frontPrompt)}</span>
+                    </span>
+                    <span className="ky-fs-14 fc-face__hint">
+                      <RotateCw size={14} aria-hidden="true" /> {t.cards.tapToFlip}
+                    </span>
                   </span>
-                  <span className="ky-chip fc-face__box">
-                    {currentBox === 5 ? 'Usta (Mastered)' : `Kutu ${currentBox} → ${Math.min(5, currentBox + 1)}`}
-                  </span>
-                </div>
 
-                <div className="fc-face__body fc-face__body--back">
-                  <div className="fc-answer">{formatChemText(currentCard.backAnswer)}</div>
-                  {currentCard.osymTip && (
-                    <div className="fc-tip">
-                      <strong className="fc-tip__head">
-                        <Sparkles size={14} aria-hidden="true" /> {t.cards.osymTrapLabel}:
-                      </strong>
-                      <span>{currentCard.osymTip}</span>
-                    </div>
-                  )}
-                </div>
-
-                <div className="fc-face__bottom">
-                  <span className="fc-face__hint">
-                    <RotateCw size={14} aria-hidden="true" /> {t.cards.tapToFlip}
+                  <span className="ky-face ky-face--back ky-card fc-face fc-face--back" aria-hidden={!isFlipped}>
+                    <span className="fc-face__top">
+                      <span className="ky-chip ky-chip--gold">{r.answer}</span>
+                      <span className="ky-chip ky-mono">{currentCard.unitId.toUpperCase()}</span>
+                    </span>
+                    <span className="fc-face__body">
+                      <span className="ky-fs-20 fc-answer">{formatChemText(currentCard.backAnswer)}</span>
+                      {currentCard.osymTip && (
+                        <span className="ky-fs-14 fc-tip">
+                          <strong>
+                            <Sparkles size={14} aria-hidden="true" /> {t.cards.osymTrapLabel}:
+                          </strong>{' '}
+                          {currentCard.osymTip}
+                        </span>
+                      )}
+                    </span>
+                    <span className="ky-fs-14 ky-mono fc-face__hint">
+                      {currentBox === 5 ? '★ 5' : `${r.boxShort(currentBox)} → ${r.boxShort(Math.min(5, currentBox + 1))}`}
+                    </span>
                   </span>
-                  <span className="ky-mono fc-face__id">{currentCard.unitId.toUpperCase()}</span>
-                </div>
+                </button>
               </div>
             </div>
-          </div>
+          ) : null}
 
-          {/* Rating keycaps */}
-          <div className="fc-actions">
+          <label className="fc-unit">
+            <span className="ky-eyebrow">{r.unit}</span>
+            <select
+              value={selectedUnit}
+              onChange={(e) => {
+                setSelectedUnit(e.target.value);
+                setCurrentIndex(0);
+                setIsFlipped(false);
+              }}
+              className="ky-select ky-fs-16"
+              aria-label={r.unit}
+            >
+              <option value="all">{t.cards.allUnits}</option>
+              <option value="tyt">TYT Kimya (u01 - u10)</option>
+              <option value="ayt">AYT Kimya (u11 - u22)</option>
+              {ALL_CHEMISTRY_UNITS.slice(0, 22).map((u) => (
+                <option key={u.id} value={u.id}>
+                  {u.id.toUpperCase()}: {u.title[lang]}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          {/* Slim Leitner row (tap a box to study only that box) */}
+          <section className="fc-leitner" aria-label={r.leitnerBoxes}>
+            <div className="fc-leitner__head">
+              <span className="ky-eyebrow">{r.leitnerBoxes}</span>
+              <span className="ky-fs-13 fc-leitner__learned">
+                {t.cards.masteredCount}: {masteredCardIds.length}
+              </span>
+            </div>
+            <div className="fc-boxes">
+              {[1, 2, 3, 4, 5].map((b) => {
+                const on = selectedBox === b;
+                const count = distribution[b] || 0;
+                return (
+                  <button
+                    key={b}
+                    type="button"
+                    aria-pressed={on}
+                    aria-label={r.boxAria(b, count)}
+                    onClick={() => {
+                      setSelectedBox((prev) => (prev === b ? 'all' : b));
+                      setCurrentIndex(0);
+                      setIsFlipped(false);
+                    }}
+                    className={`fc-box${count > 0 ? ' has-cards' : ''}${on ? ' on' : ''}`}
+                  >
+                    <span className="ky-mono ky-fs-16 fc-box__n">{count}</span>
+                    <span className="ky-fs-12 fc-box__l">{r.boxShort(b)}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+
+          {/* Two rating keys */}
+          <div className="fc-rate">
             <button
               type="button"
+              disabled={!currentCard}
               onClick={(e) => {
                 e.stopPropagation();
                 handleRate(false);
               }}
-              className="ky-btn ky-btn--danger fc-act"
+              className="ky-btn fc-rate__again"
             >
               <X size={18} aria-hidden="true" />
-              <span>{t.cards.rateHard} (Kutu 1)</span>
+              <span>{r.again}</span>
             </button>
-
             <button
               type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                handleFlip();
-              }}
-              className="ky-btn ky-btn--primary ky-btn--icon fc-flip"
-              title={t.cards.tapToFlip}
-              aria-label={t.cards.tapToFlip}
-              data-sfx="none"
-            >
-              <RotateCw size={20} aria-hidden="true" />
-            </button>
-
-            <button
-              type="button"
+              disabled={!currentCard}
               onClick={(e) => {
                 e.stopPropagation();
                 handleRate(true);
               }}
-              className="ky-btn ky-btn--ok fc-act"
+              className="ky-btn ky-btn--ok fc-rate__know"
             >
               <Check size={18} aria-hidden="true" />
-              <span>{t.cards.rateEasy} (+15 XP)</span>
+              <span>{r.know}</span>
             </button>
           </div>
-
-          <p className="fc-kbd">Klavye: [Boşluk] Kartı Çevir • [1] / [←] Zor • [2] / [→] Öğrendim • [S] Karıştır</p>
         </div>
-      ) : null}
+      </div>
     </section>
   );
 };

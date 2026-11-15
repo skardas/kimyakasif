@@ -412,7 +412,7 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
           </div>
         </div>
 
-        <div className="ky-stage gm-beaker reaction-stage" aria-live="polite">
+        <div className="ky-stage gm-beaker reaction-stage ky-lead" aria-live="polite">
           <div className="ky-floor" aria-hidden="true" />
           {isBrewing ? (
             <>

@@ -408,7 +408,7 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
 
           {gameMode === 'hunt' ? (
             <>
-              <div className="gm-pt-wrap" tabIndex={0} role="group" aria-label={t.games.periodicTitle}>
+              <div className="gm-pt-wrap ky-lead" tabIndex={0} role="group" aria-label={t.games.periodicTitle}>
                 <div className="gm-pt-grid">
                   {ELEMENTS_DB.map((el) => (
                     <button
@@ -430,7 +430,7 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
               <p className="gm-pt-hint">{g.scrollHint}</p>
             </>
           ) : battleQuestion ? (
-            <div className="gm-duel">
+            <div className="gm-duel ky-lead">
               {[battleQuestion.elemA, battleQuestion.elemB].map((elem) => (
                 <button key={elem.z} type="button" onClick={() => handleBattleAnswer(elem.symbol)} className="gm-duel-card">
                   <span className="ky-tile ky-tile--lg ky-tile--blue" aria-hidden="true">

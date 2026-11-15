@@ -235,7 +235,7 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
 
           <div
             key={flash?.n ?? 0}
-            className={`ky-card gm-statement${flash && !flash.ok ? ' ky-shake' : ''}`}
+            className={`ky-card gm-statement ky-lead${flash && !flash.ok ? ' ky-shake' : ''}`}
             style={flash ? { borderColor: flash.ok ? 'var(--ok)' : 'var(--bad)' } : undefined}
             aria-live="polite"
           >
