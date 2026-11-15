@@ -629,7 +629,7 @@ for (const langMeta of LANGUAGES) {
       q.stem.includes('quelle espèce chimique ou notion est définie') ||
       q.stem.includes('Какое химическое вещество или понятие') ||
       q.stem.includes('أي نوع كيميائي أو مفهوم يتميز بالخاصية') ||
-      q.stem.includes('以下哪种化学微粒或概念具有显著特征') ||
+      q.stem.includes('下列哪一项具有以下显著特征') ||
       q.stem.includes('kîjan cûreyê kîmyewî an têgeh bi taybetmendiya')
     );
     if (isTypeA) {
@@ -938,7 +938,7 @@ console.log(`  ✅ assertRegressionQuestionSanitization: u24-q043, u24-q059, u24
 
   // 9. Sigma bond localized terms in Russian, Arabic, Kurdish, Chinese
   const sigmaChecks = [
-    { lang: 'ru', qId: 'u23-q027', expectedOpt: 'Сигма (σ) связь', forbidden: ['Сигма'] },
+    { lang: 'ru', qId: 'u23-q027', expectedOpt: 'Сигма-связь (σ)', forbidden: ['Сигма'] },
     { lang: 'ar', qId: 'u23-q027', expectedOpt: 'رابطة سيجما (σ)', forbidden: ['سيجما'] },
     { lang: 'ku', qId: 'u23-q027', expectedOpt: 'Girêdana Sigma (σ)', forbidden: ['Sigma', 'sigmayê'] },
     // '非该概念' would mean the partner "非极性分子" was half-masked (garbled clue that still points at the key).
@@ -970,7 +970,7 @@ for (const langMeta of LANGUAGES) {
       q.stem.includes('quelle espèce chimique ou notion est définie') ||
       q.stem.includes('Какое химическое вещество или понятие') ||
       q.stem.includes('أي نوع كيميائي أو مفهوم يتميز بالخاصية') ||
-      q.stem.includes('以下哪种化学微粒或概念具有显著特征') ||
+      q.stem.includes('下列哪一项具有以下显著特征') ||
       q.stem.includes('kîjan cûreyê kîmyewî an têgeh bi taybetmendiya');
     if (isTypeA) {
       const correctOpt = q.options[q.correctIndex].trim();

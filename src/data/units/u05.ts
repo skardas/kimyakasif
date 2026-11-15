@@ -23,7 +23,7 @@ export const unit05: ChemistryUnitSeedData = {
     "fr": "Traitement de l'eau, pollution de l'environnement et gaz à effet de serre",
     "ru": "Водоочистка, загрязнение окружающей среды и парниковые газы",
     "ar": "معالجة المياه والتلوث البيئي والغازات الدفيئة",
-    "zh": "水处理、环境污染和温室气体",
+    "zh": "水处理、环境污染与温室气体",
     "ku": "Dermankirina avê, qirêjiya jîngehê û gazên serayê"
   },
   "facts": [
@@ -34,9 +34,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Hard waters are waters with high concentrations of Ca2+ and Mg2+ ions; It increases soap consumption and leaves residue.",
         "de": "Hartes Wasser ist Wasser mit hohen Konzentrationen an Ca2+- und Mg2+-Ionen; Es erhöht den Seifenverbrauch und hinterlässt Rückstände.",
         "fr": "Les eaux dures sont des eaux avec de fortes concentrations d’ions Ca2+ et Mg2+ ; Cela augmente la consommation de savon et laisse des résidus.",
-        "ru": "К жестким водам относятся воды с высоким содержанием ионов Ca2+ и Mg2+; Это увеличивает расход мыла и оставляет следы.",
+        "ru": "Жёсткая вода содержит много ионов Ca2+ и Mg2+; она увеличивает расход мыла и оставляет отложения (накипь).",
         "ar": "المياه العسرة هي مياه تحتوي على تركيزات عالية من أيونات Ca2+ وMg2+؛ يزيد من استهلاك الصابون ويترك بقايا.",
-        "zh": "硬水是Ca2+和Mg2+离子浓度高的水；它会增加肥皂的消耗并留下残留物。",
+        "zh": "硬水是 Ca2+ 和 Mg2+ 浓度较高的水，会增加肥皂用量并留下水垢。",
         "ku": "Avên hişk, avên bi îyonên Ca2+ û Mg2+ yên bi giranî ne; Ew vexwarina sabûnê zêde dike û bermayiyê dihêle."
       },
       "trap": {
@@ -44,9 +44,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "In hard water, detergent does not foam and completely loses its cleaning properties.",
         "de": "In hartem Wasser schäumt das Waschmittel nicht und verliert seine Reinigungswirkung vollständig.",
         "fr": "Dans l'eau dure, le détergent ne mousse pas et perd complètement ses propriétés nettoyantes.",
-        "ru": "В жесткой воде моющее средство не пенится и полностью теряет свои чистящие свойства.",
+        "ru": "В жёсткой воде синтетическое моющее средство не пенится и полностью теряет моющую способность.",
         "ar": "في الماء العسر، لا يشكل المنظف رغوة ويفقد خصائصه التنظيفية تمامًا.",
-        "zh": "在硬水中，洗涤剂不会起泡并完全失去其清洁性能。",
+        "zh": "在硬水中，合成洗涤剂不起泡，并完全失去去污能力。",
         "ku": "Di ava hişk de, detergent kef nake û taybetmendiyên xwe yên paqijkirinê bi tevahî winda dike."
       },
       "whyTrapIsFalse": {
@@ -56,7 +56,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "C'est le savon qui précipite avec les ions de la dureté ; les détergents synthétiques ne précipitent pas avec Ca2+ et Mg2+, ils moussent et nettoient donc aussi en eau dure. L'eau dure augmente seulement la consommation de savon.",
         "ru": "Осадок с ионами жёсткости образует мыло; синтетические моющие средства не осаждаются ионами Ca2+ и Mg2+, поэтому пенятся и моют и в жёсткой воде. Жёсткая вода лишь увеличивает расход мыла.",
         "ar": "الصابون هو الذي يكوّن راسبًا مع أيونات العسر؛ أما المنظفات الصناعية فلا تترسب مع Ca2+ وMg2+، لذا تُرغي وتنظف في الماء العسر أيضًا. الماء العسر يزيد استهلاك الصابون فقط.",
-        "zh": "与硬度离子生成沉淀的是肥皂；合成洗涤剂不与Ca2+和Mg2+生成沉淀，因此在硬水中仍能起泡和去污。硬水只是增加肥皂的消耗。",
+        "zh": "与硬度离子生成沉淀的是肥皂；合成洗涤剂不与 Ca2+ 和 Mg2+ 生成沉淀，因此在硬水中仍能起泡和去污。硬水只是增加肥皂的用量。",
         "ku": "Ya ku bi îyonên hişkiyê re niştek çêdike sabûn e; deterjanên sentetîk bi Ca2+ û Mg2+ re niştek çênakin, ji ber vê yekê di ava hişk de jî kef dikin û paqij dikin. Ava hişk tenê xerckirina sabûnê zêde dike."
       }
     },
@@ -67,9 +67,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Temporary hardness is caused by Ca(HCO3)2 and Mg(HCO3)2 and can be removed by boiling water.",
         "de": "Vorübergehende Härte wird durch Ca(HCO3)2 und Mg(HCO3)2 verursacht und kann durch kochendes Wasser entfernt werden.",
         "fr": "La dureté temporaire est causée par Ca(HCO3)2 et Mg(HCO3)2 et peut être éliminée par de l'eau bouillante.",
-        "ru": "Временная жесткость вызвана Ca(HCO3)2 и Mg(HCO3)2 и может быть устранена кипячением воды.",
+        "ru": "Временная жёсткость обусловлена Ca(HCO3)2 и Mg(HCO3)2 и устраняется кипячением воды.",
         "ar": "تنتج العسر المؤقت عن Ca(HCO3)2 وMg(HCO3)2 ويمكن إزالتها بالماء المغلي.",
-        "zh": "暂时硬度是由Ca(HCO3)2和Mg(HCO3)2引起的，可以用沸水去除。",
+        "zh": "暂时硬度由 Ca(HCO3)2 和 Mg(HCO3)2 引起，可以通过煮沸除去。",
         "ku": "Serhişkiya demkî ji hêla Ca(HCO3)2 û Mg(HCO3)2 ve çêdibe û bi ava kelandî dikare jê were derxistin."
       },
       "trap": {
@@ -77,9 +77,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Persistent hardness is completely eliminated by simply boiling the water.",
         "de": "Durch einfaches Abkochen des Wassers wird die bleibende Härte vollständig beseitigt.",
         "fr": "La dureté persistante est complètement éliminée en faisant simplement bouillir l’eau.",
-        "ru": "Постоянная жесткость полностью устраняется простым кипячением воды.",
+        "ru": "Постоянная жёсткость полностью устраняется простым кипячением воды.",
         "ar": "يتم التخلص من العسر الدائم تمامًا بمجرد غلي الماء.",
-        "zh": "只需将水煮沸即可完全消除持续的硬度。",
+        "zh": "只需把水煮沸，就能完全消除永久硬度。",
         "ku": "Serhişkiya daîmî bi tenê bi kelandina avê bi tevahî ji holê radibe."
       },
       "whyTrapIsFalse": {
@@ -89,7 +89,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "L'ébullition ne précipite, sous forme de CaCO3, que la dureté temporaire due aux hydrogénocarbonates. Les sulfates et chlorures responsables de la dureté permanente ne précipitent pas à la chaleur ; il faut un échange d'ions ou une précipitation par Na2CO3.",
         "ru": "При кипячении в виде CaCO3 осаждается только временная (гидрокарбонатная) жёсткость. Сульфаты и хлориды, создающие постоянную жёсткость, при нагревании не осаждаются; нужен ионный обмен или осаждение содой Na2CO3.",
         "ar": "الغليان يرسّب فقط العسر المؤقت الناتج عن البيكربونات على شكل CaCO3. أما أملاح الكبريتات والكلوريدات المسببة للعسر الدائم فلا تترسب بالتسخين؛ ويلزم التبادل الأيوني أو الترسيب بـ Na2CO3.",
-        "zh": "煮沸只能使碳酸氢盐引起的暂时硬度以CaCO3形式沉淀。造成永久硬度的硫酸盐和氯化物受热不沉淀，需要离子交换或加Na2CO3沉淀。",
+        "zh": "煮沸只能使碳酸氢盐引起的暂时硬度以 CaCO3 的形式沉淀。造成永久硬度的硫酸盐和氯化物受热不沉淀，需要离子交换或加 Na2CO3 沉淀。",
         "ku": "Bi kelandinê tenê hişkiya demkî ya ji bîkarbonatan wek CaCO3 dinişe. Xwêyên sulfat û klorîdê yên hişkiya daîmî bi germkirinê nanişin; guherandina îyonan an niştandin bi Na2CO3 pêwîst e."
       }
     },
@@ -102,7 +102,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "La dureté permanente est due aux sulfates (SO4^2-) et aux chlorures (Cl-) ; elle ne s'élimine pas par ébullition mais avec des résines échangeuses d'ions ou par précipitation avec Na2CO3.",
         "ru": "Постоянная жёсткость обусловлена сульфатами (SO4^2-) и хлоридами (Cl-); кипячением она не устраняется, её удаляют ионообменными смолами или осаждением содой Na2CO3.",
         "ar": "ينتج العسر الدائم عن أملاح الكبريتات (SO4^2-) والكلوريدات (Cl-)؛ ولا يزول بالغليان، بل يُزال براتنجات التبادل الأيوني أو بالترسيب باستخدام Na2CO3.",
-        "zh": "永久硬度由硫酸盐（SO4^2-）和氯化物（Cl-）引起；不能用煮沸除去，而要用离子交换树脂或加Na2CO3沉淀除去。",
+        "zh": "永久硬度由硫酸盐(SO4^2-)和氯化物(Cl-)引起；不能用煮沸除去，而要用离子交换树脂或加 Na2CO3 沉淀除去。",
         "ku": "Hişkiya daîmî ji xwêyên sulfat (SO4^2-) û klorîd (Cl-) çêdibe; bi kelandinê nayê rakirin, bi rezînên guherandina îyonan an bi niştandina bi Na2CO3 tê rakirin."
       },
       "trap": {
@@ -112,7 +112,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Les sels responsables de la dureté permanente, comme CaSO4 et MgCl2, précipitent sous forme de CaCO3 et sont éliminés lorsqu'on fait bouillir l'eau.",
         "ru": "Соли, вызывающие постоянную жёсткость, такие как CaSO4 и MgCl2, при кипячении воды выпадают в осадок в виде CaCO3 и удаляются.",
         "ar": "الأملاح المسببة للعسر الدائم، مثل CaSO4 وMgCl2، تترسب على شكل CaCO3 وتُزال عند غلي الماء.",
-        "zh": "引起永久硬度的盐（如 CaSO4 和 MgCl2）在煮沸水时会以 CaCO3 形式沉淀而被除去。",
+        "zh": "引起永久硬度的 CaSO4、MgCl2 等盐，在水煮沸时会以 CaCO3 的形式沉淀而被除去。",
         "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, wek CaSO4 û MgCl2, dema av tê kelandin wek CaCO3 dinişin û tên rakirin."
       },
       "whyTrapIsFalse": {
@@ -122,7 +122,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "CaSO4 et MgCl2 ne contiennent ni carbonate ni hydrogénocarbonate : le chauffage ne peut donc pas en former du CaCO3. Le CaCO3 qui précipite à l'ébullition provient uniquement de la décomposition de Ca(HCO3)2.",
         "ru": "В CaSO4 и MgCl2 нет карбонат- или гидрокарбонат-ионов, поэтому при нагревании CaCO3 из них образоваться не может. Выпадающий при кипячении CaCO3 получается только при разложении Ca(HCO3)2.",
         "ar": "لا يحتوي CaSO4 وMgCl2 على كربونات أو بيكربونات، لذا لا يمكن أن يتكوّن منهما CaCO3 بالتسخين. فالـ CaCO3 الذي يترسب عند الغليان ينتج فقط من تفكك Ca(HCO3)2.",
-        "zh": "CaSO4和MgCl2中不含碳酸根或碳酸氢根，加热不可能由它们生成CaCO3。煮沸时析出的CaCO3只来自Ca(HCO3)2的分解。",
+        "zh": "CaSO4 和 MgCl2 中不含碳酸根或碳酸氢根，加热不可能由它们生成 CaCO3。煮沸时析出的 CaCO3 只来自 Ca(HCO3)2 的分解。",
         "ku": "Di CaSO4 û MgCl2 de karbonat an bîkarbonat tune ye, ji ber vê yekê bi germkirinê CaCO3 ji wan çênabe. CaCO3 ya ku bi kelandinê dinişe tenê ji hilweşîna Ca(HCO3)2 tê."
       }
     },
@@ -143,9 +143,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "O2 and N2 gases are responsible for 90% of the world's greenhouse effect.",
         "de": "O2- und N2-Gase sind für 90 % des weltweiten Treibhauseffekts verantwortlich.",
         "fr": "Les gaz O2 et N2 sont responsables de 90 % de l’effet de serre mondial.",
-        "ru": "Газы O2 и N2 ответственны за 90% мирового парникового эффекта.",
+        "ru": "Газы O2 и N2 обусловливают 90 % парникового эффекта на Земле.",
         "ar": "تعتبر غازات O2 وN2 مسؤولة عن 90% من ظاهرة الاحتباس الحراري في العالم.",
-        "zh": "世界上 90% 的温室效应是由氧气和氮气造成的。",
+        "zh": "地球上 90% 的温室效应是由 O2 和 N2 造成的。",
         "ku": "Gazên O2 û N2 ji %90 bandora serayê ya cîhanê berpirsiyar in."
       },
       "whyTrapIsFalse": {
@@ -166,9 +166,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Sulfur dioxide (SO2), sulfur trioxide (SO3) and nitrogen dioxide (NO2) are gases that cause acid rain.",
         "de": "Schwefeldioxid (SO2), Schwefeltrioxid (SO3) und Stickstoffdioxid (NO2) sind Gase, die sauren Regen verursachen.",
         "fr": "Le dioxyde de soufre (SO2), le trioxyde de soufre (SO3) et le dioxyde d'azote (NO2) sont des gaz responsables des pluies acides.",
-        "ru": "Диоксид серы (SO2), триоксид серы (SO3) и диоксид азота (NO2) — это газы, вызывающие кислотные дожди.",
+        "ru": "Диоксид серы (SO2), триоксид серы (SO3) и диоксид азота (NO2) — газы, вызывающие кислотные дожди.",
         "ar": "ثاني أكسيد الكبريت (SO2) وثالث أكسيد الكبريت (SO3) وثاني أكسيد النيتروجين (NO2) غازات تسبب الأمطار الحمضية.",
-        "zh": "二氧化硫 (SO2)、三氧化硫 (SO3) 和二氧化氮 (NO2) 是导致酸雨的气体。",
+        "zh": "二氧化硫(SO2)、三氧化硫(SO3)和二氧化氮(NO2)是导致酸雨的气体。",
         "ku": "Dîoksîda kewkurtê (SO2), trîoksîda kewkurtê (SO3) û dîoksîda nîtrojenê (NO2) gazên ku dibin sedema barana asîdî ne."
       },
       "trap": {
@@ -176,7 +176,7 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Acid rain is caused by pure oxygen and nitrogen gases in the atmosphere.",
         "de": "Saurer Regen wird durch reine Sauerstoff- und Stickstoffgase in der Atmosphäre verursacht.",
         "fr": "Les pluies acides sont causées par l’oxygène pur et l’azote présents dans l’atmosphère.",
-        "ru": "Кислотные дожди вызываются чистым кислородом и азотными газами в атмосфере.",
+        "ru": "Кислотные дожди вызывают содержащиеся в атмосфере чистые кислород и азот.",
         "ar": "وينتج المطر الحمضي عن وجود غازي الأكسجين والنيتروجين النقي في الغلاف الجوي.",
         "zh": "酸雨是由大气中的纯氧气和氮气引起的。",
         "ku": "Barana asîdî ji ber gazên oksîjen û nîtrojenê yên paqij ên li atmosferê çêdibe."
@@ -188,7 +188,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "O2 et N2 ne forment pas d'acide avec l'eau. Les pluies acides sont dues au SO2, au SO3 et aux oxydes d'azote formés lors des combustions, qui réagissent avec la vapeur d'eau pour donner H2SO4 et HNO3.",
         "ru": "O2 и N2 не образуют кислот с водой. Кислотные дожди вызывают SO2, SO3 и оксиды азота, образующиеся при горении: с водяным паром они дают H2SO4 и HNO3.",
         "ar": "لا يكوّن O2 وN2 أحماضًا مع الماء. ينتج المطر الحمضي عن SO2 وSO3 وأكاسيد النيتروجين المتكوّنة أثناء الاحتراق، إذ تتفاعل مع بخار الماء مكوّنة H2SO4 وHNO3.",
-        "zh": "O2和N2与水不生成酸。酸雨是由燃烧产生的SO2、SO3和氮氧化物与水蒸气反应生成H2SO4和HNO3造成的。",
+        "zh": "O2 和 N2 与水不生成酸。酸雨是燃烧产生的 SO2、SO3 和氮氧化物与水蒸气反应生成 H2SO4 和 HNO3 造成的。",
         "ku": "O2 û N2 bi avê re asîd çênakin. Barana asîdî ji SO2, SO3 û oksîtên nîtrojenê yên di şewitandinê de çêdibin tê; ew bi buhara avê re H2SO4 û HNO3 çêdikin."
       }
     },
@@ -199,9 +199,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Chlorofluorocarbons (CFC gases) cause depletion of the ozone (O3) layer in the stratosphere.",
         "de": "Fluorchlorkohlenwasserstoffe (FCKW-Gase) verursachen einen Abbau der Ozonschicht (O3) in der Stratosphäre.",
         "fr": "Les chlorofluorocarbures (gaz CFC) provoquent l'appauvrissement de la couche d'ozone (O3) dans la stratosphère.",
-        "ru": "Хлорфторуглероды (газы CFC) вызывают истощение озонового слоя (O3) в стратосфере.",
+        "ru": "Хлорфторуглероды (ХФУ, фреоны) вызывают истончение озонового слоя (O3) в стратосфере.",
         "ar": "تتسبب مركبات الكلوروفلوروكربون (غازات مركبات الكربون الكلورية فلورية) في استنفاد طبقة الأوزون (O3) في طبقة الستراتوسفير.",
-        "zh": "氯氟烃（CFC 气体）会导致平流层臭氧 (O3) 层消耗。",
+        "zh": "氟氯烃(CFC)会使平流层的臭氧(O3)层变薄。",
         "ku": "Klorofluorokarbon (gazên CFC) dibin sedema tinebûna qata ozonê (O3) a li stratosferê."
       },
       "trap": {
@@ -209,9 +209,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "CFC gases repair the ozone layer and completely block ultraviolet rays.",
         "de": "FCKW-Gase reparieren die Ozonschicht und blockieren ultraviolette Strahlen vollständig.",
         "fr": "Les gaz CFC réparent la couche d'ozone et bloquent complètement les rayons ultraviolets.",
-        "ru": "Газы CFC восстанавливают озоновый слой и полностью блокируют ультрафиолетовые лучи.",
+        "ru": "ХФУ восстанавливают озоновый слой и полностью задерживают ультрафиолетовое излучение.",
         "ar": "تعمل غازات مركبات الكربون الكلورية فلورية على إصلاح طبقة الأوزون وتمنع الأشعة فوق البنفسجية تمامًا.",
-        "zh": "CFC气体修复臭氧层并完全阻挡紫外线。",
+        "zh": "氟氯烃能修复臭氧层，并完全阻挡紫外线。",
         "ku": "Gazên CFC tebeqeya ozonê tamîr dikin û tîrêjên ultraviolet bi tevahî asteng dikin."
       },
       "whyTrapIsFalse": {
@@ -221,7 +221,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Lorsque les CFC sont dissociés par les UV dans la stratosphère, les atomes de Cl libérés détruisent les molécules d'O3 en chaîne. Les CFC ne réparent donc pas la couche d'ozone : ils l'amincissent et augmentent les UV qui atteignent le sol.",
         "ru": "Когда молекулы ХФУ разрушаются УФ-излучением в стратосфере, освободившиеся атомы Cl по цепному механизму разрушают молекулы O3. Значит, ХФУ не восстанавливают озоновый слой, а истончают его и увеличивают УФ-излучение у поверхности.",
         "ar": "عندما تتفكك جزيئات مركبات الكلوروفلوروكربون بالأشعة فوق البنفسجية في الستراتوسفير، تحطم ذرات Cl المتحررة جزيئات O3 بشكل متسلسل. أي أنها لا ترمم طبقة الأوزون بل ترققها وتزيد الأشعة فوق البنفسجية الواصلة إلى الأرض.",
-        "zh": "氟氯烃分子在平流层被紫外线分解后，释放出的Cl原子以链式方式破坏O3分子。所以氟氯烃不会修复臭氧层，而是使其变薄，增加到达地面的紫外线。",
+        "zh": "氟氯烃分子在平流层被紫外线分解后，释放出的 Cl 原子以链式方式破坏 O3 分子。所以氟氯烃不会修复臭氧层，而是使其变薄，增加到达地面的紫外线。",
         "ku": "Dema ku molekulên CFC di stratosferê de bi tîrêjên UV tên perçekirin, atomên Cl yên azad molekulên O3 bi rêzê xera dikin. Ango CFC tebeqeya ozonê sererast nake, wê tenik dike û UV ya digihîje erdê zêde dike."
       }
     },
@@ -232,9 +232,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Heavy metals (lead Pb, mercury Hg, cadmium Cd) have a toxic effect on the food chain through bioaccumulation.",
         "de": "Schwermetalle (Blei Pb, Quecksilber Hg, Cadmium Cd) wirken durch Bioakkumulation toxisch auf die Nahrungskette.",
         "fr": "Les métaux lourds (plomb Pb, mercure Hg, cadmium Cd) ont un effet toxique sur la chaîne alimentaire par bioaccumulation.",
-        "ru": "Тяжелые металлы (свинец Pb, ртуть Hg, кадмий Cd) оказывают токсическое воздействие на пищевую цепь путем биоаккумуляции.",
+        "ru": "Тяжёлые металлы (свинец Pb, ртуть Hg, кадмий Cd) накапливаются в организмах (биоаккумуляция) и оказывают токсическое действие по всей пищевой цепи.",
         "ar": "المعادن الثقيلة (الرصاص Pb، الزئبق Hg، الكادميوم Cd) لها تأثير سام على السلسلة الغذائية من خلال التراكم الحيوي.",
-        "zh": "重金属（铅Pb、汞Hg、镉Cd）通过生物累积对食物链产生毒性作用。",
+        "zh": "重金属(铅 Pb、汞 Hg、镉 Cd)通过生物富集在食物链中产生毒害。",
         "ku": "Metalên giran (serpîb Pb, merkur Hg, kadmium Cd) bi biyolojîkî bandorek jehrîn li ser zincîra xwarinê dikin."
       },
       "trap": {
@@ -242,9 +242,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Mercury is a useful mineral that is easily broken down in the human body.",
         "de": "Quecksilber ist ein nützliches Mineral, das im menschlichen Körper leicht abgebaut wird.",
         "fr": "Le mercure est un minéral utile qui se décompose facilement dans le corps humain.",
-        "ru": "Ртуть – полезный минерал, который легко расщепляется в организме человека.",
+        "ru": "Ртуть — полезный минерал, который легко разрушается в организме человека.",
         "ar": "الزئبق معدن مفيد يتحلل بسهولة في جسم الإنسان.",
-        "zh": "汞是一种有用的矿物质，很容易在人体内分解。",
+        "zh": "汞是一种在人体内容易分解的有益矿物质。",
         "ku": "Mercury mîneralek kêrhatî ye ku di laşê mirovan de bi hêsanî tê perçe kirin."
       },
       "whyTrapIsFalse": {
@@ -265,9 +265,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Hard water creates a limestone (CaCO3) layer in water heaters, washing machines and pipes, causing energy loss.",
         "de": "Hartes Wasser bildet in Warmwasserbereitern, Waschmaschinen und Rohren eine Kalkschicht (CaCO3), die zu Energieverlusten führt.",
         "fr": "L'eau dure crée une couche de calcaire (CaCO3) dans les chauffe-eau, les machines à laver et les canalisations, entraînant une perte d'énergie.",
-        "ru": "Жесткая вода создает слой известняка (CaCO3) в водонагревателях, стиральных машинах и трубах, что приводит к потерям энергии.",
+        "ru": "Жёсткая вода образует слой накипи (CaCO3) в водонагревателях, стиральных машинах и трубах, что приводит к потерям энергии.",
         "ar": "يشكل الماء العسر طبقة من الحجر الجيري (CaCO3) في سخانات المياه والغسالات والأنابيب، مما يتسبب في فقدان الطاقة.",
-        "zh": "硬水会在热水器、洗衣机和管道中形成石灰石 (CaCO3) 层，导致能量损失。",
+        "zh": "硬水会在热水器、洗衣机和管道中形成水垢(CaCO3)层，造成能量损失。",
         "ku": "Ava hişk di nav germkerên avê, makîneyên şuştinê û boriyan de qatek kevirê kilsin (CaCO3) çêdike û dibe sedema windakirina enerjiyê."
       },
       "trap": {
@@ -275,7 +275,7 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Hard water does not create scale in the pipes, on the contrary, it protects the pipes against corrosion.",
         "de": "Hartes Wasser bildet keinen Kalk in den Rohren, sondern schützt die Rohre im Gegenteil vor Korrosion.",
         "fr": "L’eau dure ne crée pas de tartre dans les canalisations, au contraire, elle protège les canalisations contre la corrosion.",
-        "ru": "Жесткая вода не создает накипи в трубах, а наоборот, защищает трубы от коррозии.",
+        "ru": "Жёсткая вода не образует накипи в трубах, а, наоборот, защищает их от коррозии.",
         "ar": "الماء العسر لا يخلق ترسبات في الأنابيب، بل على العكس، فهو يحمي الأنابيب من التآكل.",
         "zh": "硬水不会在管道中产生水垢，相反，它可以保护管道免受腐蚀。",
         "ku": "Ava hişk di lûleyan de pîvanê çênake, berovajî boriyan ji korozyonê diparêze."
@@ -287,7 +287,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Quand l'eau dure est chauffée, Ca(HCO3)2 se décompose et CaCO3 précipite. Ce tartre se dépose dans les tuyaux et les résistances, réduit le transfert de chaleur et provoque pertes d'énergie et obstructions ; il ne protège pas les tuyaux.",
         "ru": "При нагревании жёсткой воды Ca(HCO3)2 разлагается и выпадает CaCO3. Эта накипь оседает в трубах и на нагревательных элементах, ухудшает теплопередачу, вызывает потери энергии и засоры; трубы она не защищает.",
         "ar": "عند تسخين الماء العسر يتفكك Ca(HCO3)2 ويترسب CaCO3. تتراكم هذه الترسبات الكلسية في الأنابيب وعناصر التسخين فتقلل انتقال الحرارة وتسبب هدر الطاقة والانسداد؛ ولا تحمي الأنابيب.",
-        "zh": "硬水受热时Ca(HCO3)2分解，析出CaCO3。这种水垢沉积在管道和加热元件上，降低传热，造成能量损失和堵塞，并不能保护管道。",
+        "zh": "硬水受热时 Ca(HCO3)2 分解，析出 CaCO3。这种水垢沉积在管道和加热元件上，降低传热，造成能量损失和堵塞，并不能保护管道。",
         "ku": "Dema ava hişk germ dibe, Ca(HCO3)2 hildiweşe û CaCO3 dinişe. Ev kevirê kilsê di boriyan û rezîstansan de kom dibe, veguhestina germê kêm dike û dibe sedema windabûna enerjiyê û girtina boriyan; boriyan naparêze."
       }
     },
@@ -298,7 +298,7 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Coagulation and flocculation are applied in water treatment to settle suspended solid particles.",
         "de": "Koagulation und Flockung werden in der Wasseraufbereitung angewendet, um suspendierte Feststoffteilchen abzusetzen.",
         "fr": "La coagulation et la floculation sont appliquées dans le traitement de l'eau pour faire décanter les particules solides en suspension.",
-        "ru": "Коагуляция и флокуляция применяются при очистке воды для осаждения взвешенных твёрдых частиц.",
+        "ru": "Коагуляцию и флокуляцию (хлопьеобразование) применяют при очистке воды, чтобы осадить взвешенные твёрдые частицы.",
         "ar": "يُطبَّق التخثير والتلبيد في معالجة المياه لترسيب الجسيمات الصلبة العالقة.",
         "zh": "在水处理中采用混凝和絮凝使悬浮的固体颗粒沉降。",
         "ku": "Koagulasyon û flokulasyon di paqijkirina avê de ji bo niştandina perçeyên hişk ên daliqandî tên bikaranîn."
@@ -308,9 +308,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Coagulation is the process of evaporating the lime in the water by boiling it.",
         "de": "Bei der Koagulation wird der Kalk im Wasser durch Kochen verdampft.",
         "fr": "La coagulation est le processus d'évaporation du calcaire présent dans l'eau en la faisant bouillir.",
-        "ru": "Коагуляция – это процесс испарения извести в воде путем ее кипячения.",
+        "ru": "Коагуляция — это выпаривание извести из воды при кипячении.",
         "ar": "التخثر هو عملية تبخير الجير الموجود في الماء عن طريق غليه.",
-        "zh": "混凝是通过煮沸水中的石灰来蒸发的过程。",
+        "zh": "混凝是把水中的水垢煮沸、使其蒸发的过程。",
         "ku": "Coagulation pêvajoya helandina lîmê di nav avê de bi kelandina wê ye."
       },
       "whyTrapIsFalse": {
@@ -320,7 +320,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Lors de la coagulation, on ajoute des coagulants comme Al2(SO4)3 : les fines particules en suspension s'agglomèrent et décantent. Il n'y a ni chauffage ni évaporation, et le calcaire n'est pas une substance qui s'évapore.",
         "ru": "При коагуляции в воду добавляют коагулянты, например Al2(SO4)3, и мелкие взвешенные частицы слипаются и оседают. Нагревания и испарения здесь нет, а накипь вообще не испаряется.",
         "ar": "في التخثير تُضاف مواد مخثرة مثل Al2(SO4)3 فتتكتل الجسيمات الدقيقة العالقة وتترسب. لا يوجد في هذه العملية تسخين أو تبخير، والكلس ليس مادة تتبخر.",
-        "zh": "混凝时向水中加入Al2(SO4)3等混凝剂，使细小的悬浮颗粒凝聚并沉降。这一过程没有加热或蒸发，水垢也不是会蒸发的物质。",
+        "zh": "混凝时向水中加入 Al2(SO4)3 等混凝剂，使细小的悬浮颗粒凝聚并沉降。这一过程没有加热或蒸发，水垢也不是会蒸发的物质。",
         "ku": "Di koagulasyonê de madeyên mayînker ên wek Al2(SO4)3 li avê tên zêdekirin û perçeyên hûr ên daliqandî kom dibin û dinişin. Di vê pêvajoyê de germkirin an buharkirin tune ye; kils jî madeyek ku buhar dibe nîne."
       }
     },
@@ -331,9 +331,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Chlorination is a disinfection process applied to destroy pathogenic microorganisms in drinking water.",
         "de": "Chlorierung ist ein Desinfektionsverfahren zur Abtötung pathogener Mikroorganismen im Trinkwasser.",
         "fr": "La chloration est un procédé de désinfection appliqué pour détruire les micro-organismes pathogènes présents dans l'eau potable.",
-        "ru": "Хлорирование – это процесс дезинфекции, применяемый для уничтожения патогенных микроорганизмов в питьевой воде.",
+        "ru": "Хлорирование — дезинфекция питьевой воды, уничтожающая болезнетворные (патогенные) микроорганизмы.",
         "ar": "الكلورة هي عملية تطهير تطبق لتدمير الكائنات الحية الدقيقة المسببة للأمراض في مياه الشرب.",
-        "zh": "氯化是一种用于消灭饮用水中病原微生物的消毒过程。",
+        "zh": "加氯消毒是用来杀灭饮用水中病原微生物的消毒方法。",
         "ku": "Klorkirin pêvajoyek dezenfektekirinê ye ku ji bo tunekirina mîkrojenîzmayên pathogenîk ên di ava vexwarinê de tê bikar anîn."
       },
       "trap": {
@@ -341,9 +341,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Chlorination is done to precipitate lead and mercury in water.",
         "de": "Durch Chlorierung werden Blei und Quecksilber im Wasser ausgefällt.",
         "fr": "La chloration vise à précipiter le plomb et le mercure dans l'eau.",
-        "ru": "Хлорирование проводится для осаждения свинца и ртути в воде.",
+        "ru": "Хлорирование проводят, чтобы осадить содержащиеся в воде свинец и ртуть.",
         "ar": "تتم عملية الكلورة لترسيب الرصاص والزئبق في الماء.",
-        "zh": "进行氯化以沉淀水中的铅和汞。",
+        "zh": "加氯消毒是为了使水中的铅和汞沉淀。",
         "ku": "Klorkirin ji bo niştandina sirb û merkurê di avê de tê kirin."
       },
       "whyTrapIsFalse": {
@@ -364,9 +364,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Reverse osmosis is a method of obtaining fresh water from salt water by applying high pressure through a semi-permeable membrane.",
         "de": "Umkehrosmose ist eine Methode zur Gewinnung von Frischwasser aus Salzwasser durch Anwendung von hohem Druck durch eine semipermeable Membran.",
         "fr": "L'osmose inverse est une méthode permettant d'obtenir de l'eau douce à partir d'eau salée en appliquant une haute pression à travers une membrane semi-perméable.",
-        "ru": "Обратный осмос – это метод получения пресной воды из соленой воды путем подачи высокого давления через полупроницаемую мембрану.",
+        "ru": "Обратный осмос — способ получения пресной воды из солёной: её под высоким давлением продавливают через полупроницаемую мембрану.",
         "ar": "التناضح العكسي هو وسيلة للحصول على المياه العذبة من المياه المالحة عن طريق الضغط العالي من خلال غشاء شبه منفذ.",
-        "zh": "反渗透是一种通过半透膜施加高压从盐水中获取淡水的方法。",
+        "zh": "反渗透是在半透膜的盐水一侧施加高压，从盐水中获得淡水的方法。",
         "ku": "osmoza berevajî rêbazek e ku ji ava şor ava şirîn tê bidestxistin bi pêkanîna tansiyona bilind di nav membranek nîv-permeable de."
       },
       "trap": {
@@ -374,9 +374,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "No energy or pressure is required in the reverse osmosis process.",
         "de": "Für den Umkehrosmoseprozess ist weder Energie noch Druck erforderlich.",
         "fr": "Aucune énergie ni pression n’est requise dans le processus d’osmose inverse.",
-        "ru": "В процессе обратного осмоса не требуется никакой энергии или давления.",
+        "ru": "Для обратного осмоса не требуются ни энергия, ни давление.",
         "ar": "لا توجد حاجة إلى طاقة أو ضغط في عملية التناضح العكسي.",
-        "zh": "反渗透过程不需要能量或压力。",
+        "zh": "反渗透过程既不需要能量，也不需要加压。",
         "ku": "Di pêvajoya osmoza berevajî de tu enerjî an zext hewce nake."
       },
       "whyTrapIsFalse": {
@@ -386,7 +386,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "L'eau passe spontanément du côté dilué vers le côté concentré (osmose). Pour inverser ce flux, il faut appliquer côté eau salée une pression supérieure à la pression osmotique, ce qui demande des pompes et de l'énergie.",
         "ru": "Вода самопроизвольно переходит из разбавленного раствора в концентрированный (осмос). Чтобы обратить этот поток, на солёную воду нужно подать давление больше осмотического, а для этого нужны насосы и затраты энергии.",
         "ar": "ينتقل الماء تلقائيًا من الجانب المخفف إلى الجانب المركز (التناضح). ولعكس هذا الاتجاه يجب تطبيق ضغط أكبر من الضغط الأسموزي على جانب الماء المالح، وهذا يتطلب مضخات وطاقة.",
-        "zh": "水会自发地从稀溶液一侧流向浓溶液一侧（渗透）。要使这一流动反向，必须在盐水一侧施加大于渗透压的压力，这需要水泵和能量。",
+        "zh": "水会自发地从稀溶液一侧流向浓溶液一侧（渗透）。要使这一流动反向，必须在盐水一侧施加大于渗透压的压强，这需要用水泵消耗能量。",
         "ku": "Av bi xwe ji aliyê sist ber bi aliyê tîr ve diçe (osmoz). Ji bo berevajîkirina vê herikînê divê li aliyê ava şor zextek ji zexta osmotîk mezintir were sepandin; ji bo vê jî pompe û enerjî pêwîst in."
       }
     },
@@ -397,9 +397,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Uncontrolled burning of fossil fuels disrupts the global carbon cycle, leading to CO2 accumulation in the atmosphere.",
         "de": "Die unkontrollierte Verbrennung fossiler Brennstoffe stört den globalen Kohlenstoffkreislauf und führt zur CO2-Anreicherung in der Atmosphäre.",
         "fr": "La combustion incontrôlée de combustibles fossiles perturbe le cycle mondial du carbone, entraînant une accumulation de CO2 dans l’atmosphère.",
-        "ru": "Неконтролируемое сжигание ископаемого топлива нарушает глобальный углеродный цикл, что приводит к накоплению CO2 в атмосфере.",
+        "ru": "Бесконтрольное сжигание ископаемого топлива нарушает глобальный круговорот углерода и приводит к накоплению CO2 в атмосфере.",
         "ar": "يؤدي حرق الوقود الأحفوري بشكل غير منضبط إلى تعطيل دورة الكربون العالمية، مما يؤدي إلى تراكم ثاني أكسيد الكربون في الغلاف الجوي.",
-        "zh": "化石燃料不受控制的燃烧扰乱了全球碳循环，导致二氧化碳在大气中积累。",
+        "zh": "无节制地燃烧化石燃料会破坏全球碳循环，导致 CO2 在大气中积累。",
         "ku": "Şewitandina bêkontrol a sotemeniyên fosîl çerxa karbonê ya gerdûnî têk dibe û dibe sedema kombûna CO2 li atmosferê."
       },
       "trap": {
@@ -407,9 +407,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "When fossil fuels are burned, they release only pure water vapor into the atmosphere.",
         "de": "Bei der Verbrennung fossiler Brennstoffe wird lediglich reiner Wasserdampf in die Atmosphäre abgegeben.",
         "fr": "Lorsque les combustibles fossiles sont brûlés, ils ne rejettent que de la vapeur d’eau pure dans l’atmosphère.",
-        "ru": "Когда ископаемое топливо сжигается, в атмосферу выделяется только чистый водяной пар.",
+        "ru": "При сгорании ископаемого топлива в атмосферу выделяется только чистый водяной пар.",
         "ar": "عندما يتم حرق الوقود الأحفوري، فإنه يطلق فقط بخار الماء النقي في الغلاف الجوي.",
-        "zh": "当化石燃料燃烧时，它们仅向大气中释放纯净的水蒸气。",
+        "zh": "化石燃料燃烧时只向大气释放纯净的水蒸气。",
         "ku": "Dema sotemeniyên fosîl dişewitînin, tenê buhara ava paqij berdidin atmosferê."
       },
       "whyTrapIsFalse": {
@@ -419,7 +419,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Les combustibles fossiles contiennent du carbone : leur combustion produit du CO2 (du CO si elle est incomplète). À cause du soufre qu'ils contiennent et de l'azote de l'air, il se forme aussi du SO2 et des oxydes d'azote ; le produit n'est pas que de la vapeur d'eau.",
         "ru": "Ископаемое топливо содержит углерод, поэтому при его сгорании образуется CO2 (при неполном сгорании — CO). Из-за содержащейся в нём серы и азота воздуха выделяются также SO2 и оксиды азота; продукт — не только водяной пар.",
         "ar": "تحتوي أنواع الوقود الأحفوري على الكربون، لذا ينتج عن احتراقها CO2 (وCO في الاحتراق غير الكامل). وبسبب الكبريت الذي تحتويه ونيتروجين الهواء ينطلق أيضًا SO2 وأكاسيد النيتروجين؛ فالناتج ليس بخار ماء فقط.",
-        "zh": "化石燃料含碳，燃烧时生成CO2（不完全燃烧时生成CO）。由于其中含硫以及空气中含氮，还会放出SO2和氮氧化物；产物并不只是水蒸气。",
+        "zh": "化石燃料含碳，燃烧时生成 CO2(不完全燃烧时生成 CO)。由于其中含硫以及空气中含氮，还会放出 SO2 和氮氧化物；产物并不只是水蒸气。",
         "ku": "Sotemeniyên fosîl karbon dihewînin, ji ber vê yekê şewitandina wan CO2 (di şewitandina netemam de CO) çêdike. Ji ber kewkurta wan û nîtrojena hewayê SO2 û oksîtên nîtrojenê jî derdikevin; berhem tenê buhara avê nîne."
       }
     },
@@ -432,7 +432,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "L'eau de pluie non polluée est légèrement acide à cause du CO2 dissous (pH d'environ 5,6) ; les précipitations dont le pH est inférieur à 5,6 sont considérées comme des pluies acides.",
         "ru": "Незагрязнённая дождевая вода из-за растворённого CO2 слабокислая (pH около 5,6); осадки с pH ниже 5,6 считаются кислотными дождями.",
         "ar": "ماء المطر غير الملوث حمضي قليلًا بسبب CO2 الذائب (pH نحو 5.6)؛ ويُعد الهطول الذي يقل pH له عن 5.6 مطرًا حمضيًا.",
-        "zh": "未受污染的雨水因溶有CO2而呈弱酸性（pH约为5.6）；pH低于5.6的降水被视为酸雨。",
+        "zh": "未受污染的雨水因溶有 CO2 而呈弱酸性(pH 约为 5.6)；pH 低于 5.6 的降水称为酸雨。",
         "ku": "Ava baranê ya neqirêjbûyî ji ber CO2 ya heliyayî hinekî asîdî ye (pH nêzîkî 5,6); barîna ku pH-ya wê di bin 5,6 de ye wekî barana asîdî tê hesibandin."
       },
       "trap": {
@@ -440,9 +440,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "The pH value of natural pure rainwater is exactly 7.0.",
         "de": "Der pH-Wert von natürlichem, reinem Regenwasser beträgt genau 7,0.",
         "fr": "Le pH de l’eau de pluie pure et naturelle est exactement de 7,0.",
-        "ru": "Значение pH природной чистой дождевой воды составляет ровно 7,0.",
+        "ru": "pH природной чистой дождевой воды равен ровно 7,0.",
         "ar": "قيمة الرقم الهيدروجيني لمياه الأمطار الطبيعية النقية هي بالضبط 7.0.",
-        "zh": "天然纯净雨水的pH值恰好为7.0。",
+        "zh": "天然纯净雨水的 pH 恰好为 7.0。",
         "ku": "Nirxa pH ya ava baranê ya safî ya xwezayî tam 7.0 e."
       },
       "whyTrapIsFalse": {
@@ -452,7 +452,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "L'eau de pluie dissout le CO2 de l'air et forme un acide carbonique faible. C'est pourquoi le pH d'une pluie non polluée est d'environ 5,6 et non de 7.",
         "ru": "Дождевая вода растворяет CO2 из воздуха и образует слабую угольную кислоту. Поэтому pH незагрязнённого дождя около 5,6, а не 7.",
         "ar": "يذيب ماء المطر غاز CO2 الموجود في الهواء مكوّنًا حمض الكربونيك الضعيف. لذلك تكون قيمة pH للمطر غير الملوث نحو 5.6 وليست 7.",
-        "zh": "雨水溶解空气中的CO2，形成弱的碳酸。因此未受污染的雨水pH约为5.6，而不是7。",
+        "zh": "雨水溶解空气中的 CO2，形成弱酸碳酸。因此未受污染的雨水 pH 约为 5.6，而不是 7。",
         "ku": "Ava baranê CO2 ya hewayê dihelîne û asîda karbonîk a qels çêdike. Ji ber vê yekê pH ya barana ne qirêj nêzîkî 5,6 ye, ne 7."
       }
     },
@@ -463,9 +463,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Batteries that cause soil and water pollution should never be thrown away and should be collected in waste battery boxes.",
         "de": "Batterien, die Boden- und Wasserverschmutzung verursachen, sollten niemals weggeworfen und in Altbatterieboxen gesammelt werden.",
         "fr": "Les batteries qui polluent le sol et l’eau ne doivent jamais être jetées et doivent être collectées dans des conteneurs pour batteries usagées.",
-        "ru": "Батарейки, загрязняющие почву и воду, никогда не следует выбрасывать, их следует собирать в контейнеры для использованных батарей.",
+        "ru": "Батарейки загрязняют почву и воду, поэтому их ни в коем случае нельзя выбрасывать в мусор — их сдают в специальные контейнеры для сбора.",
         "ar": "لا ينبغي أبدًا التخلص من البطاريات التي تسبب تلوث التربة والمياه، ويجب جمعها في صناديق نفايات البطاريات.",
-        "zh": "造成土壤和水污染的电池切勿丢弃，应收集在废电池箱中。",
+        "zh": "电池会造成土壤和水污染，绝不能扔进垃圾桶，应投入废电池回收箱。",
         "ku": "Pîlên ku dibin sedema qirêjiya ax û avê divê tu carî neyên avêtin û di qutiyên pîlê yên çopê de werin berhev kirin."
       },
       "trap": {
@@ -473,7 +473,7 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Used batteries can be safely disposed of by burning.",
         "de": "Verbrauchte Batterien können durch Verbrennen sicher entsorgt werden.",
         "fr": "Les piles usagées peuvent être éliminées en toute sécurité en les brûlant.",
-        "ru": "Использованные батарейки можно безопасно утилизировать путем сжигания.",
+        "ru": "Использованные батарейки можно безопасно уничтожить сжиганием.",
         "ar": "يمكن التخلص من البطاريات المستعملة بشكل آمن عن طريق حرقها.",
         "zh": "废旧电池可以通过焚烧的方式安全处置。",
         "ku": "Pîlên bikar anîn dikarin bi şewitandinê bi ewlehî werin avêtin."
@@ -496,9 +496,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Green chemistry principles aim to prevent waste generation at its source and use renewable raw materials.",
         "de": "Die Grundsätze der Grünen Chemie zielen darauf ab, die Entstehung von Abfällen an der Quelle zu verhindern und nachwachsende Rohstoffe zu verwenden.",
         "fr": "Les principes de la chimie verte visent à prévenir la production de déchets à la source et à utiliser des matières premières renouvelables.",
-        "ru": "Принципы зеленой химии направлены на предотвращение образования отходов у их источника и использование возобновляемого сырья.",
+        "ru": "Принципы зелёной химии нацелены на предотвращение образования отходов в самом источнике и на использование возобновляемого сырья.",
         "ar": "تهدف مبادئ الكيمياء الخضراء إلى منع توليد النفايات من مصدرها واستخدام المواد الخام المتجددة.",
-        "zh": "绿色化学原则旨在从源头防止废物产生并使用可再生原材料。",
+        "zh": "绿色化学的原则是从源头上防止废物产生，并使用可再生原料。",
         "ku": "Prensîbên kîmya kesk armanc dike ku pêşî li hilberîna bermayiyê li çavkaniya xwe bigire û madeyên xav ên nûvekirî bikar bîne."
       },
       "trap": {
@@ -506,7 +506,7 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Green chemistry advocates storing nuclear waste on the ocean floor.",
         "de": "Grüne Chemie befürwortet die Lagerung von Atommüll auf dem Meeresboden.",
         "fr": "La chimie verte prône le stockage des déchets nucléaires au fond des océans.",
-        "ru": "Зеленая химия выступает за хранение ядерных отходов на дне океана.",
+        "ru": "Зелёная химия предлагает хранить ядерные отходы на дне океана.",
         "ar": "تدعو الكيمياء الخضراء إلى تخزين النفايات النووية في قاع المحيط.",
         "zh": "绿色化学提倡将核废料储存在海底。",
         "ku": "Kîmyaya kesk parêzvaniya hilanîna bermahiyên nukleerî li ser binê okyanûsê dike."
@@ -516,7 +516,7 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Green chemistry aims to prevent waste from forming at the source, not to move waste somewhere else after it has formed. Dumping waste on the ocean floor is a polluting practice.",
         "de": "Grüne Chemie will die Entstehung von Abfall an der Quelle verhindern und nicht entstandenen Abfall woanders hinbringen. Abfälle auf dem Meeresboden abzulagern ist umweltschädlich.",
         "fr": "La chimie verte vise à empêcher la formation des déchets à la source, et non à les déplacer une fois formés. Déposer des déchets au fond de l'océan est une pratique polluante.",
-        "ru": "Зелёная химия стремится предотвратить образование отходов в источнике, а не перемещать уже образовавшиеся отходы. Сброс отходов на дно океана загрязняет окружающую среду.",
+        "ru": "Зелёная химия стремится не перемещать уже образовавшиеся отходы, а предотвращать их образование в самом источнике. Сброс отходов на дно океана загрязняет окружающую среду.",
         "ar": "تهدف الكيمياء الخضراء إلى منع تكوّن النفايات من مصدرها، لا إلى نقلها إلى مكان آخر بعد تكوّنها. وإلقاء النفايات في قاع المحيط ممارسة ملوِّثة للبيئة.",
         "zh": "绿色化学的目标是从源头上防止废物产生，而不是在废物产生后把它转移到别处。把废物倾倒在海底是污染环境的做法。",
         "ku": "Kîmyaya kesk armanc dike ku çêbûna bermayiyan ji çavkaniyê ve asteng bike, ne ku piştî çêbûnê wan bibe cihekî din. Avêtina bermayiyan li binê okyanûsê kiryarek qirêjker e."
@@ -531,7 +531,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Les eaux douces sont pauvres en ions Ca2+ et Mg2+ : elles font facilement mousser le savon et laissent peu ou pas de tartre dans les canalisations.",
         "ru": "Мягкая вода бедна ионами Ca2+ и Mg2+, поэтому мыло в ней легко пенится, а накипи в трубах почти или совсем не образуется.",
         "ar": "المياه اليسرة فقيرة بأيونات Ca2+ وMg2+، لذا تُرغي الصابون بسهولة ولا تترك ترسبات كلسية في التمديدات أو تترك القليل منها فقط.",
-        "zh": "软水中Ca2+和Mg2+离子少，因此肥皂易起泡，在管道中几乎不留下水垢。",
+        "zh": "软水中 Ca2+ 和 Mg2+ 很少，肥皂容易起泡，管道中几乎不留水垢。",
         "ku": "Avên nerm ji îyonên Ca2+ û Mg2+ feqîr in, ji ber vê yekê sabûnê bi hêsanî kef dikin û di boriyan de kils qet nahêlin an pir hindik dihêlin."
       },
       "trap": {
@@ -539,9 +539,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Soft waters leave plenty of lime deposits.",
         "de": "Weiches Wasser hinterlässt viele Kalkablagerungen.",
         "fr": "Les eaux douces laissent beaucoup de dépôts calcaires.",
-        "ru": "Мягкие воды оставляют много известковых отложений.",
+        "ru": "Мягкая вода оставляет много накипи.",
         "ar": "تترك المياه الناعمة الكثير من رواسب الجير.",
-        "zh": "软水会留下大量石灰沉积物。",
+        "zh": "软水会留下大量水垢。",
         "ku": "Avên nerm gelek depoyên lîmê dihêlin."
       },
       "whyTrapIsFalse": {
@@ -551,7 +551,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Le tartre (CaCO3) se forme à partir des ions Ca2+. L'eau douce contient très peu de Ca2+ et de Mg2+ : il se forme peu ou pas de tartre ; un entartrage important est typique de l'eau dure.",
         "ru": "Накипь (CaCO3) образуется из ионов Ca2+. В мягкой воде очень мало Ca2+ и Mg2+, поэтому накипи почти нет; обильная накипь характерна для жёсткой воды.",
         "ar": "تتكوّن الترسبات الكلسية (CaCO3) من أيونات Ca2+. ويحتوي الماء اليسر على كميات قليلة جدًا من Ca2+ وMg2+، لذا لا تتكوّن ترسبات أو تكون ضئيلة؛ والترسبات الغزيرة سمة الماء العسر.",
-        "zh": "水垢（CaCO3）由Ca2+形成。软水中Ca2+和Mg2+很少，几乎不产生水垢；大量结垢是硬水的特征。",
+        "zh": "水垢(CaCO3)由 Ca2+ 形成。软水中 Ca2+ 和 Mg2+ 很少，几乎不产生水垢；大量结垢是硬水的特征。",
         "ku": "Kevirê kilsê (CaCO3) ji îyonên Ca2+ çêdibe. Di ava nerm de Ca2+ û Mg2+ pir kêm in, ji ber vê yekê kils çênabe an pir hindik e; kilsa pir taybetiya ava hişk e."
       }
     }
@@ -586,7 +586,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "La dureté temporaire provient des hydrogénocarbonates et s'élimine par ébullition ; la dureté permanente provient des sulfates et chlorures, ne disparaît pas à l'ébullition et s'élimine par une résine échangeuse d'ions.",
         "ru": "Временная жёсткость вызывается гидрокарбонатами и устраняется кипячением; постоянная жёсткость вызывается сульфатами и хлоридами, кипячением не устраняется и удаляется ионообменной смолой.",
         "ar": "ينتج العسر المؤقت عن أملاح البيكربونات ويزول بالغليان؛ أما العسر الدائم فينتج عن أملاح الكبريتات والكلوريدات ولا يزول بالغليان بل يُزال براتنج التبادل الأيوني.",
-        "zh": "暂时硬度来自碳酸氢盐，可通过煮沸除去；永久硬度来自硫酸盐和氯化物，煮沸不能除去，需用离子交换树脂除去。",
+        "zh": "暂时硬度来自碳酸氢盐，可通过煮沸除去；而永久硬度来自硫酸盐和氯化物，煮沸不能除去，需用离子交换树脂除去。",
         "ku": "Serhişkiya demkî ji xwêyên bîkarbonatê tê û bi kelandinê tê rakirin; serhişkiya daîmî ji xwêyên sulfat û klorîdê tê, bi kelandinê nayê rakirin û bi rezîna guherandina îyonan tê rakirin."
       }
     },
@@ -607,9 +607,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Ozone Layer Depletion",
         "de": "Abbau der Ozonschicht",
         "fr": "Appauvrissement de la couche d'ozone",
-        "ru": "Истощение озонового слоя",
+        "ru": "Истончение озонового слоя",
         "ar": "استنفاد طبقة الأوزون",
-        "zh": "臭氧层消耗",
+        "zh": "臭氧层变薄",
         "ku": "Tenikbûna Tebeqeya Ozonê"
       },
       "distinction": {
@@ -617,9 +617,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "The greenhouse effect is strengthened by rising levels of gases such as CO2 and CH4, which leads to global warming; thinning of the ozone layer by CFC gases lets more harmful UV radiation reach the Earth's surface.",
         "de": "Der Treibhauseffekt wird durch die Zunahme von Gasen wie CO2 und CH4 verstärkt, was zur globalen Erwärmung führt; die Ausdünnung der Ozonschicht durch CFC-Gase (FCKW) lässt dagegen mehr schädliche UV-Strahlung zur Erdoberfläche gelangen.",
         "fr": "Le renforcement de l'effet de serre par l'augmentation de gaz tels que CO2 et CH4 entraîne le réchauffement climatique, tandis que l'amincissement de la couche d'ozone par les gaz CFC laisse davantage d'UV nocifs atteindre la surface de la Terre.",
-        "ru": "Парниковый эффект усиливается из-за роста содержания таких газов, как CO2 и CH4, что ведёт к глобальному потеплению; истончение озонового слоя под действием газов CFC (ХФУ) пропускает к поверхности Земли больше вредного УФ-излучения.",
+        "ru": "Парниковый эффект усиливается при росте содержания CO2, CH4 и других подобных газов и ведёт к глобальному потеплению; истончение озонового слоя под действием ХФУ пропускает к поверхности Земли больше вредного УФ-излучения.",
         "ar": "يؤدي تعزّز الاحتباس الحراري بازدياد غازات مثل CO2 وCH4 إلى الاحترار العالمي، بينما يسمح ترقق طبقة الأوزون بفعل غازات CFC بوصول مزيد من الأشعة فوق البنفسجية الضارة إلى سطح الأرض.",
-        "zh": "温室效应因CO2、CH4等气体增加而增强，导致全球变暖；CFC气体（氟氯烃）使臭氧层变薄，则让更多有害紫外线到达地面。",
+        "zh": "温室效应因 CO2、CH4 等气体增加而增强，导致全球变暖；而臭氧层变薄是由氟氯烃(CFC)造成的，它使更多有害紫外线到达地面。",
         "ku": "Bandora serayê bi zêdebûna gazên wekî CO2 û CH4 xurt dibe û dibe sedema germbûna gerdûnî; tenikbûna tebeqeya ozonê ya ji ber gazên CFC jî dihêle ku bêtir tîrêjên UV yên zirardar bigihîjin rûyê erdê."
       }
     },
@@ -630,7 +630,7 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Hard Water",
         "de": "Hartes Wasser",
         "fr": "Eau dure",
-        "ru": "Жесткая вода",
+        "ru": "Жёсткая вода",
         "ar": "الماء العسر",
         "zh": "硬水",
         "ku": "Ava hişk"
@@ -650,9 +650,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Hard water contains high concentrations of Ca2+ and Mg2+ ions and forms a precipitate with soap; soft water is poor in these ions and lathers easily with soap.",
         "de": "Hartes Wasser enthält Ca2+ und Mg2+ in hoher Konzentration und bildet mit Seife einen Niederschlag; weiches hingegen ist arm an diesen Ionen und schäumt mit Seife leicht.",
         "fr": "L'eau dure contient Ca2+ et Mg2+ en forte concentration et forme un précipité avec le savon ; l'eau douce est pauvre en ces ions et mousse facilement avec le savon.",
-        "ru": "Жесткая вода содержит Ca2+ и Mg2+ в высокой концентрации и образует с мылом осадок; мягкая вода бедна этими ионами и легко пенится с мылом.",
+        "ru": "Жёсткая вода содержит ионы Ca2+ и Mg2+ в высокой концентрации и образует с мылом осадок; мягкая вода бедна этими ионами, и мыло в ней легко пенится.",
         "ar": "يحتوي الماء العسر على Ca2+ وMg2+ بتركيز مرتفع ويكوّن راسبًا مع الصابون؛ أما الماء اليسر فهو فقير بهذه الأيونات ويرغو بسهولة مع الصابون.",
-        "zh": "硬水含有较高浓度的Ca2+和Mg2+，与肥皂形成沉淀；软水中这些离子含量很低，容易使肥皂起泡。",
+        "zh": "硬水含有较高浓度的 Ca2+ 和 Mg2+，与肥皂生成沉淀；而软水中这些离子含量很低，肥皂容易起泡。",
         "ku": "Ava hişk Ca2+ û Mg2+ bi rêjeyeke bilind dihewîne û bi sabûnê re niştek çêdike; ya nerm ji van îyonan feqîr e û bi sabûnê re bi hêsanî kef dide."
       }
     },
@@ -675,7 +675,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Chloration (désinfection)",
         "ru": "Хлорирование (дезинфекция)",
         "ar": "الكلورة (التطهير)",
-        "zh": "氯化（消毒）",
+        "zh": "加氯消毒",
         "ku": "Klorkirin (Dezenfeksiyon)"
       },
       "distinction": {
@@ -683,9 +683,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Coagulation clumps small suspended particles together with agents such as aluminium sulfate so that they settle; chlorination kills disease-causing microorganisms in the water.",
         "de": "Die Koagulation ballt kleine Schwebeteilchen mit Mitteln wie Aluminiumsulfat zusammen, sodass sie sich absetzen; die Chlorung tötet krankheitserregende Mikroorganismen im Wasser ab.",
         "fr": "La coagulation agglomère les petites particules en suspension à l'aide d'agents comme le sulfate d'aluminium pour qu'elles décantent ; la chloration tue les micro-organismes pathogènes de l'eau.",
-        "ru": "Коагуляция с помощью веществ вроде сульфата алюминия укрупняет мелкие взвешенные частицы, и они оседают; хлорирование убивает болезнетворные микроорганизмы в воде.",
+        "ru": "Коагуляция укрупняет мелкие взвешенные частицы с помощью веществ вроде сульфата алюминия, и они оседают; хлорирование (дезинфекция) убивает болезнетворные микроорганизмы в воде.",
         "ar": "يجمّع التخثير الجسيمات العالقة الصغيرة بمواد مثل كبريتات الألومنيوم فتترسب؛ أما الكلورة فتقتل الكائنات الدقيقة المسببة للأمراض في الماء.",
-        "zh": "混凝是用硫酸铝等试剂使细小悬浮颗粒聚集沉降；氯化则杀死水中的致病微生物。",
+        "zh": "混凝是用硫酸铝等试剂使细小悬浮颗粒聚集沉降；而加氯消毒则杀灭水中的致病微生物。",
         "ku": "Koagulasyon perçeyên piçûk ên daliqandî bi madeyên wek sulfata aluminyûmê kom dike da ku binişin; klorkirin jî mîkroorganîzmayên nexweşîçêker ên di avê de dikuje."
       }
     },
@@ -698,7 +698,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Oxyde acide (SO3, NO2)",
         "ru": "Кислотный оксид (SO3, NO2)",
         "ar": "أكسيد حمضي (SO3، NO2)",
-        "zh": "酸性氧化物（SO3、NO2）",
+        "zh": "酸性氧化物(SO3、NO2)",
         "ku": "Oksîdê Asîdî (SO3, NO2)"
       },
       "conceptB": {
@@ -708,7 +708,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Oxyde neutre (CO, NO)",
         "ru": "Несолеобразующий оксид (CO, NO)",
         "ar": "أكسيد متعادل (CO، NO)",
-        "zh": "中性氧化物（CO、NO）",
+        "zh": "中性氧化物(CO、NO)",
         "ku": "Oksîdê Bêalî (CO, NO)"
       },
       "distinction": {
@@ -716,9 +716,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Acidic oxides react with water to form acids and contribute to acid rain; neutral oxides (CO, NO) do not react with water to form acids.",
         "de": "Ein saures Oxid reagiert mit Wasser zu einer Säure und trägt zum sauren Regen bei; neutrale Oxide (CO, NO) bilden mit Wasser keine Säure.",
         "fr": "Un oxyde acide réagit avec l'eau pour former un acide et contribue aux pluies acides ; les oxydes neutres (CO, NO) ne forment pas d'acide avec l'eau.",
-        "ru": "Кислотный оксид реагирует с водой с образованием кислоты и способствует кислотным дождям; несолеобразующие оксиды (CO, NO) с водой кислоту не образуют.",
+        "ru": "Кислотный оксид (SO3, NO2) реагирует с водой с образованием кислоты и способствует кислотным дождям; несолеобразующий оксид (CO, NO) с водой кислоту не образует.",
         "ar": "الأكسيد الحمضي يتفاعل مع الماء مكوّنًا حمضًا ويسهم في المطر الحمضي؛ أما الأكاسيد المتعادلة (CO وNO) فلا تكوّن حمضًا مع الماء.",
-        "zh": "酸性氧化物与水反应生成酸，促成酸雨；中性（不成盐）氧化物（CO、NO）不与水反应生成酸。",
+        "zh": "酸性氧化物与水反应生成酸，促成酸雨；而中性氧化物(CO、NO)不与水反应生成酸。",
         "ku": "Oksîdê asîdî bi avê re bertek dide û asîd çêdike, beşdarî barana asîdî dibe; oksîdên bêalî (CO, NO) bi avê re asîd çênakin."
       }
     },
@@ -731,7 +731,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Bioaccumulation",
         "ru": "Биоаккумуляция",
         "ar": "التراكم الحيوي",
-        "zh": "生物累积",
+        "zh": "生物富集",
         "ku": "Biyokombûn"
       },
       "conceptB": {
@@ -741,7 +741,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Recyclage naturel",
         "ru": "Естественная переработка",
         "ar": "إعادة التدوير الطبيعية",
-        "zh": "自然回收",
+        "zh": "自然循环",
         "ku": "Vezîvirandina xwezayî"
       },
       "distinction": {
@@ -749,9 +749,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Heavy metals build up in organisms at increasing levels towards the top of the food chain and have a toxic effect; organic wastes, by contrast, are broken down by microorganisms and returned to nature.",
         "de": "Schwermetalle reichern sich in Lebewesen zur Spitze der Nahrungskette hin immer stärker an und wirken giftig; organische Abfälle werden dagegen von Mikroorganismen zersetzt und in den Naturkreislauf zurückgeführt.",
         "fr": "Les métaux lourds se concentrent de plus en plus dans les organismes vers le sommet de la chaîne alimentaire et ont un effet toxique ; les déchets organiques, eux, sont décomposés par les micro-organismes et restitués à la nature.",
-        "ru": "Тяжёлые металлы всё сильнее накапливаются в организмах к вершине пищевой цепи и оказывают токсическое действие; органические отходы, напротив, разлагаются микроорганизмами и возвращаются в природный круговорот.",
+        "ru": "Биоаккумуляция — накопление тяжёлых металлов в организмах, которое усиливается к вершине пищевой цепи и вызывает отравление; естественная переработка — разложение органических отходов микроорганизмами и их возвращение в природный круговорот.",
         "ar": "تتركز الفلزات الثقيلة في الكائنات الحية بمقادير متزايدة باتجاه قمة السلسلة الغذائية وتُحدث تأثيرًا سامًّا؛ أما النفايات العضوية فتحللها الكائنات الدقيقة وتعيدها إلى الطبيعة.",
-        "zh": "重金属沿食物链向上在生物体内逐级富集并产生毒害；有机废物则被微生物分解，重新回到自然界。",
+        "zh": "生物富集是指重金属沿食物链向上在生物体内逐级积累并产生毒害；而自然循环是指有机废物被微生物分解，重新回到自然界。",
         "ku": "Metalên giran ber bi jora zincîra xwarinê ve di zindiyan de her ku diçe zêdetir kom dibin û bandora jehrî dikin; bermayiyên organîk jî ji aliyê mîkroorganîzmayan ve têne hilweşandin û vedigerin xwezayê."
       }
     },
@@ -784,7 +784,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Les principales sources de pollution des sols sont l'excès d'engrais et de pesticides ainsi que les déchets solides ; la pollution de l'eau provient surtout du rejet d'eaux usées industrielles et domestiques, de métaux lourds et de produits agricoles dans les eaux.",
         "ru": "Загрязнение почвы вызывается главным образом избытком удобрений и пестицидов и твёрдыми отходами; загрязнение воды возникает главным образом при попадании в водоёмы промышленных и бытовых стоков, тяжёлых металлов и агрохимикатов.",
         "ar": "تلوث التربة ينتج أساسًا عن الإفراط في استخدام الأسمدة والمبيدات وعن النفايات الصلبة؛ أما تلوث المياه فينتج أساسًا عن اختلاط مياه الصرف الصناعي والمنزلي والفلزات الثقيلة والمبيدات الزراعية بالمياه.",
-        "zh": "土壤污染的主要来源是过量使用化肥、农药以及固体废物；水污染主要由工业和生活污水、重金属及农药进入水体造成。",
+        "zh": "土壤污染的主要来源是过量施用的化肥、农药以及固体废物；而水污染主要由工业废水、生活污水、重金属及农药进入水体造成。",
         "ku": "Qirêjiya axê bi giranî ji bikaranîna zêde ya gubre û pestîsîdan û ji bermayiyên hişk çêdibe; qirêjiya avê jî bi giranî ji tevlîbûna avên bermayî yên pîşesazî û malan, metalên giran û dermanên çandiniyê bi avê re çêdibe."
       }
     },
@@ -815,9 +815,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "In reverse osmosis, pressure is applied to salt water so that water molecules pass through a semi-permeable membrane while the ions are retained; in distillation, water is heated to vaporize it and the vapor is condensed to obtain pure water.",
         "de": "Bei der Umkehrosmose wird Druck auf Salzwasser ausgeübt, sodass Wassermoleküle eine semipermeable Membran passieren und die Ionen zurückgehalten werden; bei der Destillation wird Wasser durch Erhitzen verdampft und der Dampf zu reinem Wasser kondensiert.",
         "fr": "L'osmose inverse consiste à appliquer une pression à l'eau salée : les molécules d'eau traversent une membrane semi-perméable et les ions sont retenus ; la distillation consiste à chauffer l'eau pour la vaporiser, puis à condenser la vapeur pour obtenir de l'eau pure.",
-        "ru": "Обратный осмос — это метод, при котором на солёную воду оказывают давление: молекулы воды проходят через полупроницаемую мембрану, а ионы задерживаются; при дистилляции воду нагревают до испарения, а пар конденсируют, получая чистую воду.",
+        "ru": "Обратный осмос использует давление на солёную воду: молекулы воды проходят через полупроницаемую мембрану, а ионы задерживаются; дистилляция основана на испарении воды при нагревании и конденсации пара, что даёт чистую воду.",
         "ar": "في التناضح العكسي يُطبَّق ضغط على الماء المالح فتعبر جزيئات الماء غشاءً شبه منفذ وتُحتجز الأيونات؛ وفي التقطير يُسخَّن الماء حتى يتبخر ثم يُكثَّف البخار للحصول على ماء نقي.",
-        "zh": "反渗透是对盐水加压，使水分子透过半透膜而离子被截留；蒸馏是加热使水汽化，再将水蒸气冷凝得到纯水。",
+        "zh": "反渗透是对盐水加压，使水分子透过半透膜而离子被截留；而蒸馏是加热使水汽化，再将水蒸气冷凝得到纯水。",
         "ku": "Di osmoza berevajî de zext li ava şor tê kirin, molekulên avê di parzûna nîv-derbasbar re derbas dibin û îyon li ser parzûnê dimînin; di distîlasyonê de av tê germkirin û dibe buhar, paşê buhar tê kondensekirin û ava paqij tê bidestxistin."
       }
     }
@@ -832,7 +832,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Étapes de purification de l’eau potable",
         "ru": "Этапы очистки питьевой воды",
         "ar": "مراحل تنقية مياه الشرب",
-        "zh": "饮用水净化阶段",
+        "zh": "饮用水的净化步骤",
         "ku": "Qonaxên Paqijkirina Ava Vexwarinê"
       },
       "steps": [
@@ -841,9 +841,9 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "Coarse screening",
           "de": "Grobe Siebung",
           "fr": "Criblage grossier",
-          "ru": "Грубый скрининг",
+          "ru": "Процеживание через грубые решётки",
           "ar": "الفحص الخشن",
-          "zh": "粗筛",
+          "zh": "通过粗格栅",
           "ku": "Derbaskirin ji parzûna qelew"
         },
         {
@@ -861,9 +861,9 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "Filtering through sand filters",
           "de": "Filterung durch Sandfilter",
           "fr": "Filtrage à travers des filtres à sable",
-          "ru": "Фильтрация через песочные фильтры",
+          "ru": "Фильтрование через песчаные фильтры",
           "ar": "التصفية من خلال المرشحات الرملية",
-          "zh": "通过砂滤器过滤",
+          "zh": "砂滤池过滤",
           "ku": "Parzûnkirina bi parzûnên qûmê"
         },
         {
@@ -873,7 +873,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "Désinfection au chlore",
           "ru": "Дезинфекция хлором",
           "ar": "التطهير بالكلور",
-          "zh": "用氯消毒",
+          "zh": "加氯消毒",
           "ku": "Dezenfektekirina bi klorê"
         }
       ]
@@ -887,7 +887,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Chaîne de formation des pluies acides",
         "ru": "Цепочка образования кислотных дождей",
         "ar": "سلسلة تكوين المطر الحمضي",
-        "zh": "酸雨形成链",
+        "zh": "酸雨的形成过程",
         "ku": "Zincîra Çêbûna Barana Asîdî"
       },
       "steps": [
@@ -898,7 +898,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "La combustion des combustibles fossiles libère du SO2 et des oxydes d'azote (NO, NO2)",
           "ru": "При сжигании ископаемого топлива выделяются SO2 и оксиды азота (NO, NO2)",
           "ar": "يؤدي احتراق الوقود الأحفوري إلى انطلاق SO2 وأكاسيد النيتروجين (NO وNO2)",
-          "zh": "化石燃料燃烧放出SO2和氮氧化物（NO、NO2）",
+          "zh": "化石燃料燃烧放出 SO2 和氮氧化物(NO、NO2)",
           "ku": "Bi şewitandina sotemeniyên fosîl SO2 û oksîtên nîtrojenê (NO, NO2) derdikevin"
         },
         {
@@ -906,7 +906,7 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "Gases encounter water vapor in the atmosphere",
           "de": "Gase treffen in der Atmosphäre auf Wasserdampf",
           "fr": "Les gaz rencontrent de la vapeur d'eau dans l'atmosphère",
-          "ru": "Газы встречаются с водяным паром в атмосфере",
+          "ru": "Газы взаимодействуют с водяным паром атмосферы",
           "ar": "تواجه الغازات بخار الماء في الغلاف الجوي",
           "zh": "气体在大气中遇到水蒸气",
           "ku": "Gaz di atmosferê de bi buhra avê re rû bi rû dimînin"
@@ -916,7 +916,7 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "Sulfuric acid and nitric acid are formed",
           "de": "Es entstehen Schwefelsäure und Salpetersäure",
           "fr": "De l'acide sulfurique et de l'acide nitrique se forment",
-          "ru": "Образуются серная и азотная кислоты.",
+          "ru": "Образуются серная и азотная кислоты",
           "ar": "يتكون حمض الكبريتيك وحمض النيتريك",
           "zh": "生成硫酸和硝酸",
           "ku": "Asîdê sulfurîk û asîda nîtrîk çêdibin"
@@ -942,7 +942,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Effet de serre et réchauffement climatique",
         "ru": "Парниковый эффект и глобальное потепление",
         "ar": "تأثير الاحتباس الحراري والاحترار العالمي",
-        "zh": "温室效应和全球变暖",
+        "zh": "温室效应与全球变暖",
         "ku": "Bandora Serayê û Germbûna Gerdûnî"
       },
       "steps": [
@@ -951,9 +951,9 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "Short wave rays from the sun reach the earth",
           "de": "Kurzwellige Strahlen der Sonne erreichen die Erde",
           "fr": "Les rayons à ondes courtes du soleil atteignent la terre",
-          "ru": "Коротковолновые лучи Солнца достигают Земли",
+          "ru": "Коротковолновое излучение Солнца достигает земной поверхности",
           "ar": "تصل الأشعة القصيرة الموجة القادمة من الشمس إلى الأرض",
-          "zh": "来自太阳的短波光线到达地球",
+          "zh": "太阳发出的短波辐射到达地面",
           "ku": "Tîrêjên pêlên kurt ên rojê digihêjin erdê"
         },
         {
@@ -961,9 +961,9 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "The earth heats up and emits long-wave infrared radiation",
           "de": "Die Erde erwärmt sich und sendet langwellige Infrarotstrahlung aus",
           "fr": "La Terre se réchauffe et émet un rayonnement infrarouge à ondes longues",
-          "ru": "Земля нагревается и испускает длинноволновое инфракрасное излучение.",
+          "ru": "Земная поверхность нагревается и испускает длинноволновое инфракрасное излучение",
           "ar": "تسخن الأرض وتنبعث منها الأشعة تحت الحمراء ذات الموجة الطويلة",
-          "zh": "地球升温并发出长波红外辐射",
+          "zh": "地面升温，发出长波红外辐射",
           "ku": "Erd germ dibe û tîrêjên înfrasor ên pêlên dirêj derdixe"
         },
         {
@@ -971,9 +971,9 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "CO2 and CH4 gases absorb these rays",
           "de": "CO2- und CH4-Gase absorbieren diese Strahlen",
           "fr": "Les gaz CO2 et CH4 absorbent ces rayons",
-          "ru": "Газы CO2 и CH4 поглощают эти лучи.",
+          "ru": "Газы CO2 и CH4 поглощают это излучение",
           "ar": "وتمتص غازات ثاني أكسيد الكربون والميثان هذه الأشعة",
-          "zh": "CO2 和 CH4 气体吸收这些射线",
+          "zh": "CO2 和 CH4 吸收这些辐射",
           "ku": "Gazên CO2 û CH4 van tîrêjan digirin"
         },
         {
@@ -995,9 +995,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Water Softening with Ion Exchanger",
         "de": "Wasserenthärtung mit Ionenaustauscher",
         "fr": "Adoucissement de l'eau avec échangeur d'ions",
-        "ru": "Умягчение воды ионообменником",
+        "ru": "Умягчение воды ионообменной смолой",
         "ar": "تليين المياه باستخدام المبادل الأيوني",
-        "zh": "使用离子交换器软化水",
+        "zh": "用离子交换树脂软化水",
         "ku": "Nermkirina Avê bi Guherkera Îyonan"
       },
       "steps": [
@@ -1006,7 +1006,7 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "Hard water is passed through the resin column",
           "de": "Hartes Wasser wird durch die Harzsäule geleitet",
           "fr": "L'eau dure passe à travers la colonne de résine",
-          "ru": "Жесткая вода проходит через колонну смолы.",
+          "ru": "Жёсткую воду пропускают через колонку с ионообменной смолой",
           "ar": "يتم تمرير الماء العسر من خلال عمود الراتنج",
           "zh": "硬水通过树脂柱",
           "ku": "Ava hişk di stûna resin re derbas dibe"
@@ -1016,9 +1016,9 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "Ca2+ and Mg2+ ions in water bind to the resin",
           "de": "Ca2+- und Mg2+-Ionen im Wasser binden an das Harz",
           "fr": "Les ions Ca2+ et Mg2+ dans l'eau se lient à la résine",
-          "ru": "Ионы Ca2+ и Mg2+ в воде связываются со смолой.",
+          "ru": "Ионы Ca2+ и Mg2+ из воды связываются со смолой",
           "ar": "ترتبط أيونات Ca2+ وMg2+ الموجودة في الماء بالراتنج",
-          "zh": "水中的 Ca2+ 和 Mg2+ 离子与树脂结合",
+          "zh": "水中的 Ca2+ 和 Mg2+ 被树脂吸附",
           "ku": "Di avê de îyonên Ca2+ û Mg2+ bi resinê ve girêdidin"
         },
         {
@@ -1026,9 +1026,9 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "Na+ ions are released from the resin into the water",
           "de": "Na+-Ionen werden aus dem Harz an das Wasser abgegeben",
           "fr": "Les ions Na+ sont libérés de la résine dans l'eau",
-          "ru": "Ионы Na+ выделяются из смолы в воду.",
+          "ru": "Смола отдаёт в воду ионы Na+",
           "ar": "يتم إطلاق أيونات Na+ من الراتنج إلى الماء",
-          "zh": "Na+离子从树脂中释放到水中",
+          "zh": "树脂向水中释放 Na+",
           "ku": "Îyonên Na+ ji resinê berdidin nav avê"
         },
         {
@@ -1036,9 +1036,9 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "Soft water that does not form lime is obtained",
           "de": "Man erhält weiches Wasser, das keinen Kalk bildet",
           "fr": "On obtient de l'eau douce qui ne forme pas de calcaire",
-          "ru": "Получается мягкая вода, не образующая извести.",
+          "ru": "Получается мягкая вода, не образующая накипи",
           "ar": "يتم الحصول على الماء اليسر الذي لا يشكل الجير",
-          "zh": "获得不形成石灰的软水",
+          "zh": "得到不结水垢的软水",
           "ku": "Ava nerm a ku lîm çênabe tê bidestxistin"
         }
       ]
@@ -1052,9 +1052,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Which of the following gases is one of the acidic oxides that directly contribute to the formation of acid rain in the atmosphere?",
         "de": "Welches der folgenden Gase gehört zu den sauren Oxiden, die direkt zur Bildung von saurem Regen in der Atmosphäre beitragen?",
         "fr": "Lequel des gaz suivants fait partie des oxydes acides qui contribuent directement à la formation de pluies acides dans l’atmosphère ?",
-        "ru": "Какой из следующих газов относится к числу кислотных оксидов, которые непосредственно способствуют образованию кислотных дождей в атмосфере?",
+        "ru": "Какой из газов относится к кислотным оксидам, непосредственно способствующим образованию кислотных дождей в атмосфере?",
         "ar": "أي الغازات التالية يعد أحد الأكاسيد الحمضية التي تساهم بشكل مباشر في تكوين المطر الحمضي في الغلاف الجوي؟",
-        "zh": "以下哪种气体是直接导致大气中酸雨形成的酸性氧化物之一？",
+        "zh": "下列气体中，哪一种是直接导致酸雨形成的酸性氧化物？",
         "ku": "Kîjan ji van gazên jêrîn yek ji wan oksîtên asîd e ku rasterast beşdarî çêbûna barana asîd li atmosferê dibe?"
       },
       "options": [
@@ -1117,7 +1117,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "SO3 est un oxyde acide ; il réagit avec la vapeur d'eau de l'atmosphère pour former de l'acide sulfurique : SO3 + H2O → H2SO4. CO est aussi un oxyde, mais un oxyde neutre qui ne forme pas d'acide avec l'eau ; CH4, N2 et He ne sont pas des oxydes.",
         "ru": "SO3 — кислотный оксид; он реагирует с водяным паром атмосферы с образованием серной кислоты: SO3 + H2O → H2SO4. CO тоже оксид, но несолеобразующий: с водой кислоту не образует; CH4, N2 и He оксидами не являются.",
         "ar": "SO3 أكسيد حمضي؛ يتفاعل مع بخار الماء في الجو مكوّنًا حمض الكبريتيك: SO3 + H2O → H2SO4. أما CO فهو أكسيد أيضًا لكنه متعادل لا يكوّن حمضًا مع الماء؛ وCH4 وN2 وHe ليست أكاسيد.",
-        "zh": "SO3是酸性氧化物，与大气中的水蒸气反应生成硫酸：SO3 + H2O → H2SO4。CO也是氧化物，但属于中性（不成盐）氧化物，不与水生成酸；CH4、N2和He不是氧化物。",
+        "zh": "SO3 是酸性氧化物，与大气中的水蒸气反应生成硫酸：SO3 + H2O → H2SO4。CO 也是氧化物，但属于中性（不成盐）氧化物，不与水生成酸；CH4、N2 和 He 不是氧化物。",
         "ku": "SO3 oksîdekî asîdî ye; bi buxara avê ya atmosferê re bertek dide û asîda sulfurîk çêdike: SO3 + H2O → H2SO4. CO jî oksîd e, lê oksîdekî bêalî ye û bi avê re asîd çênake; CH4, N2 û He ne oksîd in."
       }
     },
@@ -1128,9 +1128,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Which of the following correctly lists the main cations that cause hardness in water?",
         "de": "Welche der folgenden Aussagen führt die wichtigsten Kationen, die Wasserhärte verursachen, korrekt auf?",
         "fr": "Lequel des énoncés suivants répertorie correctement les principaux cations qui causent la dureté de l’eau ?",
-        "ru": "В каком из следующих пунктов правильно перечислены основные катионы, вызывающие жесткость воды?",
+        "ru": "В каком варианте правильно указаны основные катионы, обусловливающие жёсткость воды?",
         "ar": "أي مما يلي يُدرج بشكل صحيح الكاتيونات الرئيسية التي تسبب عسر الماء؟",
-        "zh": "以下哪项正确列出了导致水硬度的主要阳离子？",
+        "zh": "下列哪一项正确列出了导致水硬度的主要阳离子？",
         "ku": "Kîjan ji yên jêrîn kationên sereke ên ku di avê de dibin sedema serhişkiyê rast rêz dike?"
       },
       "options": [
@@ -1193,7 +1193,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "La dureté de l'eau est due principalement aux ions calcium (Ca2+) et magnésium (Mg2+) dissous, qui forment un précipité avec le savon. Les ions Na+ et K+ ne précipitent pas avec le savon et ne causent donc pas de dureté.",
         "ru": "Жёсткость воды обусловлена главным образом растворёнными ионами кальция (Ca2+) и магния (Mg2+), которые образуют с мылом осадок. Ионы Na+ и K+ осадка с мылом не дают и поэтому жёсткости не вызывают.",
         "ar": "يرجع عسر الماء أساسًا إلى أيونات الكالسيوم (Ca2+) والمغنيسيوم (Mg2+) الذائبة التي تكوّن راسبًا مع الصابون. أما أيونات Na+ وK+ فلا تترسب مع الصابون ولذلك لا تسبب العسر.",
-        "zh": "水的硬度主要由溶解的钙离子（Ca2+）和镁离子（Mg2+）引起，它们与肥皂生成沉淀。Na+和K+不与肥皂生成沉淀，因此不会造成硬度。",
+        "zh": "水的硬度主要由溶解的钙离子(Ca2+)和镁离子(Mg2+)引起，它们与肥皂生成沉淀。Na+ 和 K+ 不与肥皂生成沉淀，因此不会造成硬度。",
         "ku": "Serhişkiya avê bi giranî ji îyonên kalsiyûmê (Ca2+) û magnezyûmê (Mg2+) yên heliyayî tê; ev îyon bi sabûnê re niştek çêdikin. Îyonên Na+ û K+ bi sabûnê re niştek çênakin, ji ber vê yekê nabin sedema serhişkiyê."
       }
     },
@@ -1206,7 +1206,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "On fait bouillir 4 L d'eau du robinet dans une bouilloire jusqu'à évaporation complète ; il reste 0,6 g de solide, entièrement constitué de CaCO3. En prenant la masse volumique de l'eau égale à 1 g/mL, quelle est la concentration en CaCO3 dissous de cette eau, en ppm ?",
         "ru": "При кипячении 4 л водопроводной воды в чайнике до полного испарения на дне остаётся 0,6 г твёрдого вещества, целиком состоящего из CaCO3. Принимая плотность воды равной 1 г/мл, найдите концентрацию растворённого CaCO3 в этой воде в ppm.",
         "ar": "عند غلي 4 L من ماء الصنبور في غلاية حتى يتبخر كليًا، يتبقى 0.6 g من مادة صلبة تبيّن أنها CaCO3 بالكامل. إذا اعتُبرت كثافة الماء 1 g/mL، فما تركيز CaCO3 المذاب في ماء الصنبور هذا بوحدة ppm؟",
-        "zh": "将水壶中4 L自来水煮沸至完全蒸干，壶底留下0.6 g固体，经测定全部为CaCO3。取水的密度为1 g/mL，这种自来水中溶解的CaCO3浓度是多少ppm？",
+        "zh": "将水壶中 4 L 自来水煮沸至完全蒸干，壶底留下 0.6 g 固体，经测定全部为 CaCO3。取水的密度为 1 g/mL，这种自来水中溶解的 CaCO3 浓度是多少 ppm？",
         "ku": "Dema 4 L ava şîrê di çaydankekê de tê kelandin heta bi tevahî buhar dibe, 0,6 g madeya hişk dimîne û hemû jê CaCO3 e. Heke tîrbûna avê 1 g/mL were girtin, giraniya CaCO3 ya helandî di vê ava şîrê de çend ppm e?"
       },
       "options": [
@@ -1269,7 +1269,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Masse d'eau = 4 L × 1000 g/L = 4000 g = 4x10^6 mg. CaCO3 dissous = 0,6 g = 600 mg. ppm = (600 mg / 4x10^6 mg) × 10^6 = 150 ppm (pour une eau diluée, cela équivaut aux mg/L : 600 mg / 4 L = 150). Le résultat 600 vient de l'oubli de la division par le volume, et 2400 d'une multiplication par 4 au lieu d'une division.",
         "ru": "Масса воды = 4 л × 1000 г/л = 4000 г = 4x10^6 мг. Растворённый CaCO3 = 0,6 г = 600 мг. ppm = (600 мг / 4x10^6 мг) × 10^6 = 150 ppm (для разбавленной воды это то же, что мг/л: 600 мг / 4 л = 150). Ответ 600 получается, если забыть разделить на объём, а 2400 — если умножить на 4 вместо деления.",
         "ar": "كتلة الماء = 4 L × 1000 g/L = 4000 g = 4x10^6 mg. CaCO3 المذاب = 0.6 g = 600 mg. ppm = (600 mg / 4x10^6 mg) × 10^6 = 150 ppm (وهي في المياه المخففة تساوي mg/L: 600 mg / 4 L = 150). الناتج 600 يأتي من نسيان القسمة على الحجم، و2400 من الضرب في 4 بدل القسمة.",
-        "zh": "水的质量 = 4 L × 1000 g/L = 4000 g = 4x10^6 mg。溶解的CaCO3 = 0.6 g = 600 mg。ppm = (600 mg / 4x10^6 mg) × 10^6 = 150 ppm（稀水溶液中等于mg/L：600 mg / 4 L = 150）。得到600是忘了除以体积，得到2400是把除以4错成乘以4。",
+        "zh": "水的质量 = 4 L × 1000 g/L = 4000 g = 4x10^6 mg。溶解的 CaCO3 = 0.6 g = 600 mg。ppm = (600 mg / 4x10^6 mg) × 10^6 = 150 ppm(稀溶液中与 mg/L 数值相同：600 mg / 4 L = 150)。得到 600 是忘了除以体积，得到 2400 是把除以 4 错成乘以 4。",
         "ku": "Girseya avê = 4 L × 1000 g/L = 4000 g = 4x10^6 mg. CaCO3 ya helandî = 0,6 g = 600 mg. ppm = (600 mg / 4x10^6 mg) × 10^6 = 150 ppm (di avên sist de wek mg/L e: 600 mg / 4 L = 150). Encama 600 ji jibîrkirina parvekirina bi qebareyê tê, 2400 jî ji lêxistina bi 4 li şûna parvekirinê."
       }
     },
@@ -1282,7 +1282,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Concernant les eaux dures,\nI. Quand on fait bouillir une eau contenant Ca(HCO3)2, CaCO3 précipite et la dureté diminue.\nII. La dureté d'une eau contenant MgSO4 peut être éliminée par ébullition.\nIII. Le savon forme un précipité insoluble avec les ions Ca2+ de l'eau dure.\nlesquelles de ces affirmations sont vraies ?",
         "ru": "Какие из утверждений о жёсткой воде верны?\nI. При кипячении воды, содержащей Ca(HCO3)2, выпадает CaCO3 и жёсткость уменьшается.\nII. Жёсткость воды, содержащей MgSO4, можно устранить кипячением.\nIII. Мыло образует с ионами Ca2+ жёсткой воды нерастворимый осадок.",
         "ar": "فيما يتعلق بالماء العسر،\nI. عند غلي ماء يحتوي على Ca(HCO3)2 يترسب CaCO3 ويقل العسر.\nII. يمكن إزالة عسر الماء المحتوي على MgSO4 بالغليان.\nIII. يكوّن الصابون مع أيونات Ca2+ في الماء العسر راسبًا غير ذائب.\nأي العبارات صحيحة؟",
-        "zh": "关于硬水的下列说法：\nI. 含Ca(HCO3)2的水煮沸时析出CaCO3，硬度降低。\nII. 含MgSO4的水的硬度可以通过煮沸除去。\nIII. 肥皂与硬水中的Ca2+生成不溶于水的沉淀。\n哪些是正确的？",
+        "zh": "关于硬水的下列说法：\nI. 含 Ca(HCO3)2 的水煮沸时析出 CaCO3，硬度降低。\nII. 含 MgSO4 的水的硬度可以通过煮沸除去。\nIII. 肥皂与硬水中的 Ca2+ 生成不溶于水的沉淀。\n哪些是正确的？",
         "ku": "Derbarê avên hişk de,\nI. Dema ava bi Ca(HCO3)2 tê kelandin, CaCO3 dinişe û hişkî kêm dibe.\nII. Hişkiya ava bi MgSO4 bi kelandinê dikare were rakirin.\nIII. Sabûn bi îyonên Ca2+ yên ava hişk re niştekek nehelbar çêdike.\nKîjan ji van gotinan rast in?"
       },
       "options": [
@@ -1293,7 +1293,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I seulement",
           "ru": "Только I",
           "ar": "I فقط",
-          "zh": "仅I",
+          "zh": "仅 I",
           "ku": "Tenê I"
         },
         {
@@ -1303,7 +1303,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "III seulement",
           "ru": "Только III",
           "ar": "III فقط",
-          "zh": "仅III",
+          "zh": "仅 III",
           "ku": "Tenê III"
         },
         {
@@ -1313,7 +1313,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I et II",
           "ru": "I и II",
           "ar": "I و II",
-          "zh": "I和II",
+          "zh": "I 和 II",
           "ku": "I û II"
         },
         {
@@ -1323,7 +1323,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I et III",
           "ru": "I и III",
           "ar": "I و III",
-          "zh": "I和III",
+          "zh": "I 和 III",
           "ku": "I û III"
         },
         {
@@ -1333,7 +1333,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "II et III",
           "ru": "II и III",
           "ar": "II و III",
-          "zh": "II和III",
+          "zh": "II 和 III",
           "ku": "II û III"
         }
       ],
@@ -1345,7 +1345,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "I est vraie : la dureté temporaire précipite selon Ca(HCO3)2 → CaCO3 + H2O + CO2. II est fausse : MgSO4 crée une dureté permanente et ne précipite pas à la chaleur ; il faut un échange d'ions ou une précipitation par Na2CO3. III est vraie : l'anion du savon forme avec Ca2+ un savon calcique insoluble, d'où moins de mousse. Les affirmations vraies sont I et III.",
         "ru": "I верно: временная жёсткость осаждается по реакции Ca(HCO3)2 → CaCO3 + H2O + CO2. II неверно: MgSO4 создаёт постоянную жёсткость и при нагревании не осаждается; нужен ионный обмен или осаждение Na2CO3. III верно: анион мыла образует с Ca2+ нерастворимое кальциевое мыло, поэтому пены меньше. Верны I и III.",
         "ar": "العبارة I صحيحة: يترسب العسر المؤقت وفق Ca(HCO3)2 → CaCO3 + H2O + CO2. العبارة II خاطئة: يسبب MgSO4 عسرًا دائمًا ولا يترسب بالتسخين؛ ويلزم التبادل الأيوني أو الترسيب بـ Na2CO3. العبارة III صحيحة: يكوّن أنيون الصابون مع Ca2+ صابون كالسيوم غير ذائب فتقل الرغوة. الصحيح I وIII.",
-        "zh": "I正确：暂时硬度按Ca(HCO3)2 → CaCO3 + H2O + CO2沉淀。II错误：MgSO4造成永久硬度，受热不沉淀，需离子交换或加Na2CO3沉淀。III正确：肥皂阴离子与Ca2+生成不溶的钙皂，所以泡沫减少。正确的是I和III。",
+        "zh": "I 正确：暂时硬度按 Ca(HCO3)2 → CaCO3 + H2O + CO2 沉淀。II 错误：MgSO4 造成永久硬度，受热不沉淀，需离子交换或加 Na2CO3 沉淀。III 正确：肥皂阴离子与 Ca2+ 生成不溶的钙皂，所以泡沫减少。正确的是 I 和 III。",
         "ku": "I rast e: hişkiya demkî bi Ca(HCO3)2 → CaCO3 + H2O + CO2 dinişe. II şaş e: MgSO4 hişkiya daîmî çêdike û bi germkirinê nanişe; guherandina îyonan an niştandin bi Na2CO3 pêwîst e. III rast e: anyona sabûnê bi Ca2+ re sabûna kalsiyûmê ya nehelbar çêdike, ji ber vê kef kêm dibe. Rast I û III in."
       }
     },
@@ -1421,7 +1421,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "La résine échangeuse d'ions sert à adoucir l'eau : elle fixe les ions Ca2+ et Mg2+ et libère à la place des ions Na+ (ou H+) ; elle ne tue pas les micro-organismes. La désinfection se fait par chloration (ou ozonation, UV). Le dégrillage, l'aération, le filtre à sable et la chloration sont correctement associés.",
         "ru": "Ионообменная смола служит для умягчения воды: она поглощает ионы Ca2+ и Mg2+, отдавая вместо них Na+ (или H+); микроорганизмы она не убивает. Обеззараживание проводят хлорированием (или озонированием, УФ). Решётка, аэрация, песчаный фильтр и хлорирование сопоставлены верно.",
         "ar": "يُستخدم راتنج التبادل الأيوني لتيسير الماء: فهو يحتجز أيونات Ca2+ وMg2+ ويطلق بدلها أيونات Na+ (أو H+)، ولا يقتل الكائنات الدقيقة. أما التخلص من الميكروبات فيتم بالكلورة (أو الأوزون أو الأشعة فوق البنفسجية). والمصافي والتهوية والمرشح الرملي والكلورة مطابقة لأهدافها الصحيحة.",
-        "zh": "离子交换树脂用于软化水：它吸附Ca2+和Mg2+，同时释放Na+（或H+），并不能杀灭微生物。除菌要靠加氯（或臭氧、紫外线）。格栅、曝气、砂滤池和加氯的配对都是正确的。",
+        "zh": "离子交换树脂用于软化水：它吸附 Ca2+ 和 Mg2+，同时释放 Na+(或 H+)，并不能杀灭微生物。除菌要靠加氯（或臭氧、紫外线）。格栅、曝气、砂滤池和加氯的配对都是正确的。",
         "ku": "Rezîna guherandina îyonan ji bo nermkirina avê tê bikaranîn: îyonên Ca2+ û Mg2+ digire û li şûna wan îyonên Na+ (an H+) dide; mîkroorganîzmayan nakuje. Paqijkirina ji mîkroban bi klorkirinê (an ozon, UV) tê kirin. Izgare, hewadan, fîltera qûmê û klorkirin bi armancên xwe yên rast re hatine hevberkirin."
       }
     },
@@ -1473,7 +1473,7 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "Particulate matter (soot, dust) – increases respiratory diseases.",
           "de": "Feinstaub (Ruß, Staub) – erhöht Atemwegserkrankungen.",
           "fr": "Particules (suie, poussières) – augmentent les maladies respiratoires.",
-          "ru": "Твёрдые частицы (сажа, пыль) – увеличивают заболевания дыхательных путей.",
+          "ru": "Твёрдые частицы (сажа, пыль) – способствуют росту заболеваний дыхательных путей.",
           "ar": "الجسيمات الدقيقة (السخام والغبار) – تزيد أمراض الجهاز التنفسي.",
           "zh": "颗粒物（烟尘、粉尘）——增加呼吸道疾病。",
           "ku": "Perçeyên hûr (dûde, toz) – nexweşiyên rêya bêhnê zêde dikin."
@@ -1483,7 +1483,7 @@ export const unit05: ChemistryUnitSeedData = {
           "en": "CO – being an acidic oxide, it reacts with water and is the main cause of acid rain.",
           "de": "CO – ist als saures Oxid durch Reaktion mit Wasser die Hauptursache des sauren Regens.",
           "fr": "CO – étant un oxyde acide, il réagit avec l'eau et constitue la cause principale des pluies acides.",
-          "ru": "CO – как кислотный оксид реагирует с водой и является главной причиной кислотных дождей.",
+          "ru": "CO – будучи кислотным оксидом, реагирует с водой и служит главной причиной кислотных дождей.",
           "ar": "CO – لكونه أكسيدًا حمضيًا يتفاعل مع الماء ويشكّل السبب الرئيسي للمطر الحمضي.",
           "zh": "CO——作为酸性氧化物与水反应，是酸雨的主要原因。",
           "ku": "CO – ji ber ku oksîtek asîdî ye bi avê re tevdigere û sedema sereke ya barana asîdî ye."
@@ -1497,7 +1497,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "CO est un oxyde neutre (qui ne forme pas d'acide) ; il ne donne pas d'acide avec l'eau et n'est donc pas une cause des pluies acides. CO se forme lors des combustions incomplètes et est toxique car il se fixe sur l'hémoglobine du sang. Les pluies acides sont dues au SO2, au SO3 et aux oxydes d'azote. Les associations pour SO2, CH4, CFC et particules sont correctes.",
         "ru": "CO — несолеобразующий (безразличный) оксид; с водой кислоты не даёт и поэтому не вызывает кислотных дождей. CO образуется при неполном сгорании и ядовит, так как связывается с гемоглобином крови. Кислотные дожди вызывают SO2, SO3 и оксиды азота. Сопоставления для SO2, CH4, ХФУ и твёрдых частиц верны.",
         "ar": "CO أكسيد متعادل (لا يكوّن أحماضًا)؛ لا يعطي حمضًا مع الماء ولذلك ليس سببًا للمطر الحمضي. يتكوّن CO في الاحتراق غير الكامل وهو سام لأنه يرتبط بهيموغلوبين الدم. أما المطر الحمضي فتسببه SO2 وSO3 وأكاسيد النيتروجين. ومطابقات SO2 وCH4 ومركبات الكلوروفلوروكربون والجسيمات الدقيقة صحيحة.",
-        "zh": "CO是中性（不成盐）氧化物，与水不生成酸，因此不是酸雨的成因。CO在不完全燃烧时生成，因与血液中的血红蛋白结合而使人中毒。酸雨由SO2、SO3和氮氧化物引起。SO2、CH4、氟氯烃和颗粒物的配对都是正确的。",
+        "zh": "CO 是中性（不成盐）氧化物，与水不生成酸，因此不是酸雨的成因。CO 在不完全燃烧时生成，能与血液中的血红蛋白结合而使人中毒。酸雨由 SO2、SO3 和氮氧化物引起。SO2、CH4、氟氯烃和颗粒物的配对都是正确的。",
         "ku": "CO oksîtek nêtral e (asîd çênake); bi avê re asîd nade, ji ber vê yekê ne sedema barana asîdî ye. CO di şewitandina netemam de çêdibe û bi girêdana bi hemoglobîna xwînê re jehrî dike. Barana asîdî ji SO2, SO3 û oksîtên nîtrojenê tê. Hevberkirinên SO2, CH4, CFC û perçeyên hûr rast in."
       }
     },
@@ -1510,7 +1510,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Lors d'une expérience avec les échantillons d'eau X, Y et Z, on note :\nX : mousse abondante avec le savon ; aucun dépôt à l'ébullition.\nY : peu de mousse avec le savon ; un dépôt blanc se forme à l'ébullition et l'eau filtrée mousse ensuite abondamment.\nZ : peu de mousse avec le savon ; aucun dépôt à l'ébullition, et l'eau bouillie puis filtrée mousse toujours peu.\nQuelle affirmation est alors correcte ?",
         "ru": "В опыте с образцами воды X, Y и Z записаны наблюдения:\nX: с мылом даёт много пены; при кипячении осадка нет.\nY: с мылом даёт мало пены; при кипячении образуется белый осадок, а отфильтрованная вода даёт с мылом много пены.\nZ: с мылом даёт мало пены; при кипячении осадка нет, и прокипячённая отфильтрованная вода по-прежнему даёт мало пены.\nКакое утверждение верно?",
         "ar": "في تجربة على عينات الماء X وY وZ سُجلت الملاحظات الآتية:\nX: يكوّن رغوة كثيرة مع الصابون؛ ولا يترك راسبًا عند الغليان.\nY: يكوّن رغوة قليلة مع الصابون؛ ويتكوّن راسب أبيض عند الغليان، والماء المرشَّح بعدها يعطي رغوة كثيرة.\nZ: يكوّن رغوة قليلة مع الصابون؛ ولا يتكوّن راسب عند الغليان، والماء المغلي المرشَّح يبقى قليل الرغوة.\nبناءً على ذلك، أي العبارات الآتية صحيحة؟",
-        "zh": "用X、Y、Z三种水样做实验，记录如下：\nX：与肥皂产生大量泡沫；煮沸后无沉淀。\nY：与肥皂泡沫很少；煮沸后生成白色沉淀，过滤后的水与肥皂产生大量泡沫。\nZ：与肥皂泡沫很少；煮沸后无沉淀，煮沸并过滤后的水泡沫仍然很少。\n据此，下列哪项说法正确？",
+        "zh": "用 X、Y、Z 三种水样做实验，记录如下：\nX：与肥皂产生大量泡沫；煮沸后无沉淀。\nY：与肥皂产生的泡沫很少；煮沸后生成白色沉淀，过滤后的水与肥皂产生大量泡沫。\nZ：与肥皂产生的泡沫很少；煮沸后无沉淀，煮沸并过滤后的水泡沫仍然很少。\n据此，下列说法正确的是哪一项？",
         "ku": "Di ceribandinekê de bi nimûneyên avê X, Y û Z ev çavdêrî hatin tomarkirin:\nX: Bi sabûnê re pir kef dide; bi kelandinê niştek nahêle.\nY: Bi sabûnê re kêm kef dide; bi kelandinê niştekek spî çêdibe, ava parzûnkirî paşê bi sabûnê re pir kef dide.\nZ: Bi sabûnê re kêm kef dide; bi kelandinê niştek çênabe, ava kelandî û parzûnkirî jî kêm kef dide.\nLi gorî vê, kîjan gotin rast e?"
       },
       "options": [
@@ -1521,7 +1521,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "X est une eau dure.",
           "ru": "X — жёсткая вода.",
           "ar": "X ماء عسر.",
-          "zh": "X是硬水。",
+          "zh": "X 是硬水。",
           "ku": "X ava hişk e."
         },
         {
@@ -1531,7 +1531,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "La dureté de Y est une dureté temporaire.",
           "ru": "Жёсткость Y — временная.",
           "ar": "عسر Y عسر مؤقت.",
-          "zh": "Y的硬度是暂时硬度。",
+          "zh": "Y 的硬度是暂时硬度。",
           "ku": "Hişkiya Y hişkiya demkî ye."
         },
         {
@@ -1541,7 +1541,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "La dureté de Y provient des sulfates et des chlorures.",
           "ru": "Жёсткость Y обусловлена сульфатами и хлоридами.",
           "ar": "ينتج عسر Y عن أملاح الكبريتات والكلوريدات.",
-          "zh": "Y的硬度来自硫酸盐和氯化物。",
+          "zh": "Y 的硬度来自硫酸盐和氯化物。",
           "ku": "Hişkiya Y ji xwêyên sulfat û klorîdê tê."
         },
         {
@@ -1551,7 +1551,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "La dureté de Z peut être éliminée par ébullition.",
           "ru": "Жёсткость Z можно устранить кипячением.",
           "ar": "يمكن إزالة عسر Z بالغليان.",
-          "zh": "Z的硬度可以通过煮沸除去。",
+          "zh": "Z 的硬度可以通过煮沸除去。",
           "ku": "Hişkiya Z bi kelandinê dikare were rakirin."
         },
         {
@@ -1561,7 +1561,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "Z ne contient pas d’ions Ca2+ ni Mg2+.",
           "ru": "В Z нет ионов Ca2+ и Mg2+.",
           "ar": "لا يحتوي Z على أيونات Ca2+ وMg2+.",
-          "zh": "Z中不含Ca2+和Mg2+。",
+          "zh": "Z 中不含 Ca2+ 和 Mg2+。",
           "ku": "Di Z de îyonên Ca2+ û Mg2+ tune ne."
         }
       ],
@@ -1573,7 +1573,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Comme Y forme un dépôt de CaCO3 à l'ébullition puis mousse bien, sa dureté a été entièrement éliminée par ébullition : c'est une dureté temporaire due aux hydrogénocarbonates. X mousse bien, il est donc doux. Z mousse peu et ne s'améliore pas à l'ébullition : il contient Ca2+/Mg2+ et présente une dureté permanente (sulfates/chlorures) que l'ébullition n'élimine pas.",
         "ru": "Так как Y при кипячении даёт осадок CaCO3, а затем хорошо пенится, его жёсткость полностью устранена кипячением; это временная (гидрокарбонатная) жёсткость. X хорошо пенится, значит, вода мягкая. Z пенится плохо и после кипячения не меняется, значит, содержит Ca2+/Mg2+ и имеет постоянную (сульфатную/хлоридную) жёсткость, не устраняемую кипячением.",
         "ar": "بما أن Y كوّن راسب CaCO3 عند الغليان ثم أعطى رغوة كثيرة، فقد أزيل عسره كليًا بالغليان؛ وهذا عسر مؤقت ناتج عن البيكربونات. X يعطي رغوة كثيرة فهو يسر. أما Z فرغوته قليلة ولا يتحسن بالغليان، فهو يحتوي على Ca2+/Mg2+ وعسره دائم ناتج عن الكبريتات/الكلوريدات ولا يزول بالغليان.",
-        "zh": "Y煮沸时生成CaCO3沉淀，之后与肥皂泡沫丰富，说明其硬度已被煮沸完全除去，是碳酸氢盐引起的暂时硬度。X泡沫多，是软水。Z泡沫少且煮沸后无改善，说明含Ca2+/Mg2+，属于硫酸盐/氯化物引起的永久硬度，不能用煮沸除去。",
+        "zh": "Y 煮沸时生成 CaCO3 沉淀，之后与肥皂产生大量泡沫，说明其硬度已被煮沸完全除去，是碳酸氢盐引起的暂时硬度。X 泡沫多，是软水。Z 泡沫少且煮沸后无改善，说明含 Ca2+ 或 Mg2+，属于硫酸盐或氯化物引起的永久硬度，不能用煮沸除去。",
         "ku": "Ji ber ku Y bi kelandinê niştekek CaCO3 çêdike û paşê bi sabûnê re pir kef dide, hişkiya wê bi kelandinê bi tevahî hatiye rakirin; ev hişkiya demkî ya ji bîkarbonatan e. X pir kef dide, ji ber vê nerm e. Z kêm kef dide û bi kelandinê baştir nabe; ango Ca2+/Mg2+ dihewîne û hişkiya wê ya daîmî (sulfat/klorîd) e, bi kelandinê nayê rakirin."
       }
     },
@@ -1586,7 +1586,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Dans un lac pollué au mercure, on mesure les concentrations suivantes : eau du lac 0,0001 ppm ; plancton 0,01 ppm ; petit poisson 0,2 ppm ; grand poisson prédateur 1 ppm. Que peut-on conclure de ces données ?",
         "ru": "В озере, загрязнённом ртутью, измерены концентрации ртути: вода 0,0001 ppm; планктон 0,01 ppm; мелкая рыба 0,2 ppm; крупная хищная рыба 1 ppm. Какой вывод можно сделать из этих данных?",
         "ar": "قيست تراكيز الزئبق في بحيرة ملوثة بالزئبق فكانت: ماء البحيرة 0.0001 ppm؛ العوالق 0.01 ppm؛ سمكة صغيرة 0.2 ppm؛ سمكة مفترسة كبيرة 1 ppm. أي مما يلي يمكن استنتاجه من هذه البيانات؟",
-        "zh": "在一个受汞污染的湖中测得汞浓度如下：湖水0.0001 ppm；浮游生物0.01 ppm；小鱼0.2 ppm；大型肉食性鱼1 ppm。根据这些数据可以得出下列哪个结论？",
+        "zh": "在一个受汞污染的湖中测得汞浓度如下：湖水 0.0001 ppm；浮游生物 0.01 ppm；小鱼 0.2 ppm；大型肉食性鱼 1 ppm。根据这些数据可以得出下列哪个结论？",
         "ku": "Di golek bi cîwe qirêjbûyî de giraniyên cîweyê wiha hatin pîvan: ava golê 0,0001 ppm; plankton 0,01 ppm; masiyê biçûk 0,2 ppm; masiyê nêçîrvan ê mezin 1 ppm. Li gorî van daneyan kîjan dikare were gotin?"
       },
       "options": [
@@ -1617,7 +1617,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "La concentration en mercure du grand prédateur est 100 fois celle de l'eau du lac.",
           "ru": "Концентрация ртути в крупной хищной рыбе в 100 раз больше, чем в воде.",
           "ar": "تركيز الزئبق في السمكة المفترسة الكبيرة يساوي 100 ضعف تركيزه في ماء البحيرة.",
-          "zh": "大型肉食性鱼体内的汞浓度是湖水的100倍。",
+          "zh": "大型肉食性鱼体内的汞浓度是湖水的 100 倍。",
           "ku": "Giraniya cîweyê di masiyê nêçîrvan ê mezin de 100 qatê ya ava golê ye."
         },
         {
@@ -1649,7 +1649,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "La concentration augmente régulièrement de l'eau au plancton, au petit poisson puis au grand poisson (0,0001 → 0,01 → 0,2 → 1 ppm). Cela montre que le métal lourd n'est ni dégradé ni éliminé mais s'accumule (bioaccumulation). La valeur la plus faible est dans l'eau ; le plancton en a 100 fois plus. Le grand poisson n'en a pas 100 fois plus, mais 1 / 0,0001 = 10000 fois plus que l'eau.",
         "ru": "Концентрация последовательно растёт в ряду вода → планктон → мелкая рыба → крупная рыба (0,0001 → 0,01 → 0,2 → 1 ppm). Это показывает, что тяжёлый металл не разлагается и не выводится, а накапливается (биоаккумуляция). Наименьшее значение — в воде; в планктоне оно в 100 раз больше. В крупной рыбе оно больше не в 100, а в 1 / 0,0001 = 10000 раз.",
         "ar": "يزداد التركيز باستمرار في الاتجاه ماء → عوالق → سمكة صغيرة → سمكة كبيرة (0.0001 → 0.01 → 0.2 → 1 ppm). وهذا يدل على أن الفلز الثقيل لا يتحلل ولا يُطرح بل يتراكم في الكائنات (التراكم الحيوي). أقل قيمة في الماء، وقيمة العوالق 100 ضعف قيمة الماء. أما السمكة الكبيرة فقيمتها ليست 100 ضعف بل 1 / 0.0001 = 10000 ضعف.",
-        "zh": "浓度沿着水→浮游生物→小鱼→大鱼的方向不断升高（0.0001 → 0.01 → 0.2 → 1 ppm），说明重金属在生物体内不被分解、不易排出而积累（生物富集）。最低值在水中；浮游生物是水的100倍。大鱼不是水的100倍，而是1 / 0.0001 = 10000倍。",
+        "zh": "浓度沿着水 → 浮游生物 → 小鱼 → 大鱼的方向不断升高(0.0001 → 0.01 → 0.2 → 1 ppm)，说明重金属在生物体内不被分解、不易排出而积累（生物富集）。最低值在水中；浮游生物是水的 100 倍。大鱼不是水的 100 倍，而是 1 / 0.0001 = 10000 倍。",
         "ku": "Giranî li ser rêza av → plankton → masiyê biçûk → masiyê mezin bi berdewamî zêde dibe (0,0001 → 0,01 → 0,2 → 1 ppm). Ev nîşan dide ku metala giran nayê perçekirin û dernakeve, lê kom dibe (komkirina biyolojîk). Nirxa herî kêm di avê de ye; ya planktonê 100 qatê avê ye. Ya masiyê mezin ne 100 qat, lê 1 / 0,0001 = 10000 qatê avê ye."
       }
     },
@@ -1662,7 +1662,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "On mesure le pH d'échantillons d'eau de pluie prélevés dans trois régions :\nÉchantillon I : pH = 4,2\nÉchantillon II : pH = 5,3\nÉchantillon III : pH = 6,0\nLesquels de ces échantillons sont classés comme pluie acide ?",
         "ru": "Измерены pH проб дождевой воды из трёх районов:\nПроба I: pH = 4,2\nПроба II: pH = 5,3\nПроба III: pH = 6,0\nКакие из проб относятся к кислотным дождям?",
         "ar": "قيست قيم pH لعينات من مياه الأمطار جُمعت من ثلاث مناطق مختلفة:\nالعينة I: pH = 4.2\nالعينة II: pH = 5.3\nالعينة III: pH = 6.0\nأي هذه العينات تُصنَّف مطرًا حمضيًا؟",
-        "zh": "测得三个不同地区采集的雨水样品的pH：\n样品I：pH = 4.2\n样品II：pH = 5.3\n样品III：pH = 6.0\n其中哪些样品属于酸雨？",
+        "zh": "测得三个不同地区采集的雨水样品的 pH：\n样品 I：pH = 4.2\n样品 II：pH = 5.3\n样品 III：pH = 6.0\n其中哪些样品属于酸雨？",
         "ku": "pH ya nimûneyên ava baranê yên ji sê herêmên cuda hatin berhevkirin tê pîvan:\nNimûneya I: pH = 4,2\nNimûneya II: pH = 5,3\nNimûneya III: pH = 6,0\nKîjan ji van nimûneyan wek barana asîdî tên dabeşkirin?"
       },
       "options": [
@@ -1673,7 +1673,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I seulement",
           "ru": "Только I",
           "ar": "I فقط",
-          "zh": "仅I",
+          "zh": "仅 I",
           "ku": "Tenê I"
         },
         {
@@ -1683,7 +1683,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I et II",
           "ru": "I и II",
           "ar": "I و II",
-          "zh": "I和II",
+          "zh": "I 和 II",
           "ku": "I û II"
         },
         {
@@ -1693,7 +1693,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I et III",
           "ru": "I и III",
           "ar": "I و III",
-          "zh": "I和III",
+          "zh": "I 和 III",
           "ku": "I û III"
         },
         {
@@ -1703,7 +1703,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "II et III",
           "ru": "II и III",
           "ar": "II و III",
-          "zh": "II和III",
+          "zh": "II 和 III",
           "ku": "II û III"
         },
         {
@@ -1713,7 +1713,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I, II et III",
           "ru": "I, II и III",
           "ar": "I و II و III",
-          "zh": "I、II和III",
+          "zh": "I、II 和 III",
           "ku": "I, II û III"
         }
       ],
@@ -1725,7 +1725,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "La pluie non polluée est déjà légèrement acide à cause du CO2 de l'air, avec un pH d'environ 5,6 ; c'est le seuil de la pluie acide. Les échantillons de pH 4,2 et 5,3 sont en dessous : ce sont des pluies acides. L'échantillon de pH 6,0 est inférieur à 7 mais supérieur à 5,6 : ce n'est pas une pluie acide. Penser « pH < 7 signifie pluie acide » est l'erreur à éviter.",
         "ru": "Незагрязнённый дождь уже слабокислый из-за CO2 воздуха, его pH около 5,6; это и есть граница кислотного дождя. Пробы с pH 4,2 и 5,3 ниже 5,6 — это кислотные дожди. Проба с pH 6,0 хотя и меньше 7, но выше 5,6 и кислотным дождём не считается. Ошибочно думать, что «pH < 7 — значит кислотный дождь».",
         "ar": "المطر غير الملوث حمضي قليلًا أصلًا بسبب CO2 في الهواء، وقيمة pH له نحو 5.6؛ وهذه هي عتبة المطر الحمضي. العينتان ذواتا pH 4.2 و5.3 أقل من 5.6 فهما مطر حمضي. أما العينة ذات pH 6.0 فهي أقل من 7 لكنها أعلى من 5.6 فلا تُعدّ مطرًا حمضيًا. والاعتقاد بأن \"pH أقل من 7 يعني مطرًا حمضيًا\" خطأ.",
-        "zh": "未受污染的雨水因溶有空气中的CO2本来就略呈酸性，pH约为5.6，这就是酸雨的界限。pH为4.2和5.3的样品低于5.6，属于酸雨。pH为6.0的样品虽小于7，但高于5.6，不算酸雨。认为“pH < 7就是酸雨”是错误的。",
+        "zh": "未受污染的雨水因溶有空气中的 CO2 本来就略呈酸性，pH 约为 5.6，这就是酸雨的界限。pH 为 4.2 和 5.3 的样品低于 5.6，属于酸雨。pH 为 6.0 的样品虽小于 7，但高于 5.6，不算酸雨。认为“pH < 7 就是酸雨”是错误的。",
         "ku": "Barana ne qirêj ji ber CO2 ya hewayê jixwe hinekî asîdî ye û pH ya wê nêzîkî 5,6 ye; sînorê barana asîdî ev nirx e. Nimûneyên bi pH 4,2 û 5,3 ji 5,6 kêmtir in, ji ber vê barana asîdî ne. Nimûneya bi pH 6,0 her çend ji 7 kêmtir be jî ji 5,6 bilindtir e û barana asîdî nayê hesibandin. Fikra \"pH < 7 be barana asîdî ye\" şaş e."
       }
     },
@@ -1749,7 +1749,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "La cause principale de l'amincissement est le CO2 libéré par la combustion des combustibles fossiles.",
           "ru": "Главная причина истончения — CO2, выделяющийся при сжигании ископаемого топлива.",
           "ar": "السبب الرئيسي للترقق هو CO2 المنطلق من احتراق الوقود الأحفوري.",
-          "zh": "臭氧层变薄的主要原因是燃烧化石燃料放出的CO2。",
+          "zh": "臭氧层变薄的主要原因是燃烧化石燃料放出的 CO2。",
           "ku": "Sedema sereke ya tenikbûnê CO2 ya ji şewitandina sotemeniyên fosîl derdikeve ye."
         },
         {
@@ -1759,7 +1759,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "Les atomes de Cl arrachés aux molécules de CFC par les UV détruisent les molécules d'O3.",
           "ru": "Атомы Cl, отщепляющиеся от молекул ХФУ под действием УФ, разрушают молекулы O3.",
           "ar": "تحطم ذرات Cl المنفصلة عن جزيئات الكلوروفلوروكربون بتأثير الأشعة فوق البنفسجية جزيئات O3.",
-          "zh": "紫外线使氟氯烃分子释放出的Cl原子会分解O3分子。",
+          "zh": "紫外线使氟氯烃分子释放出的 Cl 原子会破坏 O3 分子。",
           "ku": "Atomên Cl ên bi bandora UV ji molekulên CFC vediqetin molekulên O3 perçe dikin."
         },
         {
@@ -1801,7 +1801,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "La cause principale de l'amincissement n'est pas le CO2 mais les gaz chlorés et bromés comme les CFC : les atomes de Cl libérés par les UV détruisent en chaîne de nombreuses molécules d'O3. Le CO2 ne détruit pas l'ozone ; il renforce l'effet de serre et contribue au réchauffement climatique. Il ne faut pas confondre ces deux problèmes. Les autres affirmations (destruction d'O3 par Cl, plus d'UV, risques sanitaires, protocole de Montréal) sont vraies.",
         "ru": "Главная причина истончения озонового слоя — не CO2, а хлор- и бромсодержащие газы, например ХФУ: освобождённые УФ-излучением атомы Cl по цепному механизму разрушают множество молекул O3. CO2 озон не разрушает; он усиливает парниковый эффект и способствует глобальному потеплению. Эти две экологические проблемы нельзя путать. Остальные утверждения (разрушение O3 хлором, рост УФ, риск для здоровья, Монреальский протокол) верны.",
         "ar": "السبب الرئيسي لترقق الأوزون ليس CO2 بل الغازات المحتوية على الكلور والبروم مثل مركبات الكلوروفلوروكربون: إذ تحطم ذرات Cl المتحررة بالأشعة فوق البنفسجية عددًا كبيرًا من جزيئات O3 بشكل متسلسل. أما CO2 فلا يحطم الأوزون، بل يعزز الاحتباس الحراري ويسهم في الاحترار العالمي. ويجب عدم الخلط بين المشكلتين. والعبارات الأخرى (تحطيم O3 بالكلور، زيادة الأشعة فوق البنفسجية، المخاطر الصحية، بروتوكول مونتريال) صحيحة.",
-        "zh": "臭氧层变薄的主要原因不是CO2，而是氟氯烃等含氯、含溴气体：紫外线释放出的Cl原子以链式方式破坏大量O3分子。CO2不破坏臭氧，它增强温室效应，促使全球变暖。这两个环境问题不能混淆。其余说法（Cl破坏O3、紫外线增加、健康风险、《蒙特利尔议定书》）都是正确的。",
+        "zh": "臭氧层变薄的主要原因不是 CO2，而是氟氯烃等含氯、含溴的气体：紫外线释放出的 Cl 原子以链式方式破坏大量 O3 分子。CO2 不破坏臭氧，它增强温室效应，促使全球变暖。这两个环境问题不能混淆。其余说法(Cl 破坏 O3、紫外线增加、健康风险、《蒙特利尔议定书》)都是正确的。",
         "ku": "Sedema sereke ya tenikbûna ozonê ne CO2 ye, lê gazên bi klor û bromê yên wek CFC ne: atomên Cl ên bi UV azad dibin bi rêzê gelek molekulên O3 perçe dikin. CO2 ozonê xera nake; bandora serayê xurt dike û beşdarî germbûna gerdûnî dibe. Divê ev her du pirsgirêkên jîngehê neyên tevlihevkirin. Gotinên din (xerakirina O3 bi Cl, zêdebûna UV, xetereyên tenduristiyê, Protokola Montrealê) rast in."
       }
     },
@@ -1812,9 +1812,9 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "Regarding the greenhouse effect,\nI. A CH4 molecule traps infrared radiation more effectively than a CO2 molecule.\nII. N2 and O2, which make up most of the atmosphere, do not absorb infrared radiation significantly.\nIII. Water vapour is also a greenhouse gas that absorbs infrared radiation.\nwhich of the statements are true?",
         "de": "Welche der folgenden Aussagen zum Treibhauseffekt sind richtig?\nI. Ein CH4-Molekül hält Infrarotstrahlung wirksamer zurück als ein CO2-Molekül.\nII. N2 und O2, die den größten Teil der Atmosphäre bilden, absorbieren Infrarotstrahlung nicht nennenswert.\nIII. Auch Wasserdampf ist ein Treibhausgas, das Infrarotstrahlung absorbiert.",
         "fr": "Concernant l'effet de serre,\nI. Une molécule de CH4 retient le rayonnement infrarouge plus efficacement qu'une molécule de CO2.\nII. N2 et O2, qui forment la majeure partie de l'atmosphère, n'absorbent pas notablement l'infrarouge.\nIII. La vapeur d'eau est aussi un gaz à effet de serre qui absorbe l'infrarouge.\nlesquelles de ces affirmations sont vraies ?",
-        "ru": "Какие из утверждений о парниковом эффекте верны?\nI. Молекула CH4 удерживает инфракрасное излучение эффективнее, чем молекула CO2.\nII. N2 и O2, составляющие большую часть атмосферы, заметно не поглощают инфракрасное излучение.\nIII. Водяной пар тоже является парниковым газом, поглощающим инфракрасное излучение.",
+        "ru": "Какие из утверждений о парниковом эффекте верны?\nI. Молекула CH4 удерживает инфракрасное излучение эффективнее, чем молекула CO2.\nII. N2 и O2, составляющие большую часть атмосферы, заметно не поглощают инфракрасное излучение.\nIII. Водяной пар — тоже парниковый газ, поглощающий инфракрасное излучение.",
         "ar": "فيما يتعلق بالاحتباس الحراري،\nI. يحتجز جزيء CH4 الأشعة تحت الحمراء بفعالية أكبر من جزيء CO2.\nII. لا يمتص N2 وO2، اللذان يشكلان معظم الغلاف الجوي، الأشعة تحت الحمراء بدرجة تُذكر.\nIII. بخار الماء أيضًا غاز دفيء يمتص الأشعة تحت الحمراء.\nأي العبارات صحيحة؟",
-        "zh": "关于温室效应的下列说法：\nI. 一个CH4分子截留红外辐射的能力比一个CO2分子强。\nII. 占大气绝大部分的N2和O2基本不吸收红外辐射。\nIII. 水蒸气也是吸收红外辐射的温室气体。\n哪些是正确的？",
+        "zh": "关于温室效应的下列说法：\nI. 一个 CH4 分子截留红外辐射的能力比一个 CO2 分子强。\nII. 占大气绝大部分的 N2 和 O2 基本不吸收红外辐射。\nIII. 水蒸气也是吸收红外辐射的温室气体。\n哪些是正确的？",
         "ku": "Derbarê bandora serayê de,\nI. Molekulek CH4 tîrêjên binsor ji molekulek CO2 bi bandortir digire.\nII. N2 û O2 yên beşa mezin a atmosferê pêk tînin tîrêjên binsor bi awayekî girîng nagirin.\nIII. Buhara avê jî gazeke serayê ye ku tîrêjên binsor digire.\nKîjan ji van gotinan rast in?"
       },
       "options": [
@@ -1825,7 +1825,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I seulement",
           "ru": "Только I",
           "ar": "I فقط",
-          "zh": "仅I",
+          "zh": "仅 I",
           "ku": "Tenê I"
         },
         {
@@ -1835,7 +1835,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "II seulement",
           "ru": "Только II",
           "ar": "II فقط",
-          "zh": "仅II",
+          "zh": "仅 II",
           "ku": "Tenê II"
         },
         {
@@ -1845,7 +1845,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I et II",
           "ru": "I и II",
           "ar": "I و II",
-          "zh": "I和II",
+          "zh": "I 和 II",
           "ku": "I û II"
         },
         {
@@ -1855,7 +1855,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "II et III",
           "ru": "II и III",
           "ar": "II و III",
-          "zh": "II和III",
+          "zh": "II 和 III",
           "ku": "II û III"
         },
         {
@@ -1865,7 +1865,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I, II et III",
           "ru": "I, II и III",
           "ar": "I و II و III",
-          "zh": "I、II和III",
+          "zh": "I、II 和 III",
           "ku": "I, II û III"
         }
       ],
@@ -1877,7 +1877,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "I est vraie : par molécule, CH4 retient la chaleur bien plus que CO2 ; la grande contribution totale du CO2 vient de son abondance bien plus élevée. II est vraie : N2 et O2, apolaires et formés de deux atomes identiques, n'absorbent presque pas l'infrarouge. III est vraie : la vapeur d'eau contribue le plus à l'effet de serre naturel ; sa quantité dépendant de la température, elle agit comme une rétroaction qui amplifie le réchauffement. Les trois affirmations sont vraies.",
         "ru": "I верно: в расчёте на молекулу CH4 удерживает тепло намного сильнее CO2; большой общий вклад CO2 объясняется его гораздо большим содержанием. II верно: неполярные N2 и O2 из двух одинаковых атомов почти не поглощают ИК-излучение. III верно: водяной пар вносит наибольший вклад в естественный парниковый эффект; так как его количество зависит от температуры, он действует как усиливающая обратная связь. Верны все три утверждения.",
         "ar": "العبارة I صحيحة: لكل جزيء، يحتجز CH4 الحرارة أقوى بكثير من CO2، وكِبَر المساهمة الكلية لـ CO2 سببه وفرته الأكبر بكثير. العبارة II صحيحة: N2 وO2 غير القطبيين والمكوّنين من ذرتين متماثلتين لا يمتصان الأشعة تحت الحمراء تقريبًا. العبارة III صحيحة: بخار الماء أكبر مساهم في الاحتباس الحراري الطبيعي، وبما أن كميته تتبع الحرارة فهو يعمل كتغذية راجعة تضخّم الاحترار. العبارات الثلاث صحيحة.",
-        "zh": "I正确：按每个分子计，CH4的保温能力远大于CO2；CO2总贡献大是因为它在大气中的含量多得多。II正确：由两个相同原子构成的非极性N2和O2几乎不吸收红外辐射。III正确：水蒸气对自然温室效应的贡献最大；其含量随温度变化，起放大变暖的反馈作用。三项都正确。",
+        "zh": "I 正确：按每个分子计，CH4 的保温能力远大于 CO2；CO2 总贡献大是因为它在大气中的含量多得多。II 正确：由两个相同原子构成的非极性 N2 和 O2 几乎不吸收红外辐射。III 正确：水蒸气对自然温室效应的贡献最大；其含量随温度变化，起放大变暖的反馈作用。三项都正确。",
         "ku": "I rast e: li gorî her molekulê CH4 germê ji CO2 pir bêtir digire; mezinbûna beşdariya giştî ya CO2 ji ber pirbûna wê ye. II rast e: N2 û O2 yên nepolar ên ji du atomên wekhev hema hema tîrêjên binsor nagirin. III rast e: buhara avê herî zêde beşdarî bandora serayê ya xwezayî dibe; ji ber ku mîqdara wê bi germahiyê ve girêdayî ye, wek vegerandineke ku germbûnê xurt dike tevdigere. Her sê gotin rast in."
       }
     },
@@ -1888,7 +1888,7 @@ export const unit05: ChemistryUnitSeedData = {
         "en": "A chemical plant is redesigning its production process. Which of the following practices is not compatible with the principles of green chemistry?",
         "de": "Eine Chemiefabrik gestaltet ihren Produktionsprozess neu. Welche der folgenden Maßnahmen ist mit den Prinzipien der Grünen Chemie nicht vereinbar?",
         "fr": "Une usine chimique repense son procédé de production. Laquelle des pratiques suivantes n'est pas compatible avec les principes de la chimie verte ?",
-        "ru": "Химический завод перепроектирует производственный процесс. Какая из следующих мер не согласуется с принципами зелёной химии?",
+        "ru": "Химический завод меняет технологию производства. Какая из мер не согласуется с принципами зелёной химии?",
         "ar": "يعيد مصنع كيميائي تصميم عملية إنتاجه. أي الممارسات الآتية لا تتوافق مع مبادئ الكيمياء الخضراء؟",
         "zh": "一家化工厂正在重新设计其生产工艺。下列做法中，哪一项不符合绿色化学原则？",
         "ku": "Fabrîqeyek kîmyayî pêvajoya xwe ya hilberînê ji nû ve dîzayn dike. Kîjan ji van kiryaran bi prensîbên kîmyaya kesk re li hev nayê?"
@@ -1966,7 +1966,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Concernant l'osmose inverse, utilisée pour produire de l'eau potable à partir d'eau de mer,\nI. On applique côté eau salée une pression supérieure à la pression osmotique.\nII. La membrane semi-perméable retient la plus grande partie des ions Na+ et Cl-.\nIII. Comme dans la distillation, l'eau est d'abord évaporée puis condensée.\nlesquelles de ces affirmations sont fausses ?",
         "ru": "Какие из утверждений об обратном осмосе, используемом для получения питьевой воды из морской, неверны?\nI. Со стороны солёной воды прикладывают давление больше осмотического.\nII. Полупроницаемая мембрана задерживает большую часть ионов Na+ и Cl-.\nIII. Как и при перегонке, воду сначала испаряют, а затем конденсируют.",
         "ar": "فيما يتعلق بالتناضح العكسي المستخدم للحصول على مياه الشرب من مياه البحر،\nI. يُطبَّق على جانب الماء المالح ضغط أكبر من الضغط الأسموزي.\nII. يحتجز الغشاء شبه المنفذ معظم أيونات Na+ وCl-.\nIII. يُبخَّر الماء أولًا ثم يُكثَّف كما في التقطير.\nأي العبارات خاطئة؟",
-        "zh": "关于用于从海水制取饮用水的反渗透法的下列说法：\nI. 在盐水一侧施加大于渗透压的压力。\nII. 半透膜截留大部分Na+和Cl-。\nIII. 和蒸馏一样，水先被蒸发再被冷凝。\n哪些是错误的？",
+        "zh": "关于从海水制取饮用水所用的反渗透法，有下列说法：\nI. 在盐水一侧施加大于渗透压的压强。\nII. 半透膜截留大部分 Na+ 和 Cl-。\nIII. 和蒸馏一样，水先被蒸发再被冷凝。\n哪些是错误的？",
         "ku": "Derbarê rêbaza osmoza berevajî ya ji bo bidestxistina ava vexwarinê ji ava deryayê de,\nI. Li aliyê ava şor zextek ji zexta osmotîk mezintir tê sepandin.\nII. Perdeya nîvderbasbar piraniya îyonên Na+ û Cl- digire.\nIII. Wek di dilopkirinê de, av pêşî tê buharkirin û paşê tê çirkirin.\nKîjan ji van gotinan şaş in?"
       },
       "options": [
@@ -1977,7 +1977,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I seulement",
           "ru": "Только I",
           "ar": "I فقط",
-          "zh": "仅I",
+          "zh": "仅 I",
           "ku": "Tenê I"
         },
         {
@@ -1987,7 +1987,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "II seulement",
           "ru": "Только II",
           "ar": "II فقط",
-          "zh": "仅II",
+          "zh": "仅 II",
           "ku": "Tenê II"
         },
         {
@@ -1997,7 +1997,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "III seulement",
           "ru": "Только III",
           "ar": "III فقط",
-          "zh": "仅III",
+          "zh": "仅 III",
           "ku": "Tenê III"
         },
         {
@@ -2007,7 +2007,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "I et II",
           "ru": "I и II",
           "ar": "I و II",
-          "zh": "I和II",
+          "zh": "I 和 II",
           "ku": "I û II"
         },
         {
@@ -2017,7 +2017,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "II et III",
           "ru": "II и III",
           "ar": "II و III",
-          "zh": "II和III",
+          "zh": "II 和 III",
           "ku": "II û III"
         }
       ],
@@ -2029,7 +2029,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "I est vraie : l'eau passe normalement du côté dilué au côté concentré ; pour inverser le flux, on applique côté eau salée une pression supérieure à la pression osmotique. II est vraie : les molécules d'eau traversent la membrane tandis que la plupart des ions dissous sont retenus. III est fausse : en osmose inverse il n'y a pas de changement d'état ; l'eau traverse la membrane à l'état liquide, l'évaporation et la condensation relèvent de la distillation. Seule III est fausse.",
         "ru": "I верно: обычно вода переходит из разбавленного раствора в концентрированный; чтобы обратить поток, со стороны солёной воды прикладывают давление больше осмотического. II верно: молекулы воды проходят через мембрану, а большая часть растворённых ионов задерживается. III неверно: при обратном осмосе нет фазового перехода, вода проходит через мембрану в жидком виде; испарение и конденсация характерны для перегонки. Неверно только III.",
         "ar": "العبارة I صحيحة: ينتقل الماء عادة من الجانب المخفف إلى المركز، ولعكس الاتجاه يُطبَّق على جانب الماء المالح ضغط أكبر من الضغط الأسموزي. العبارة II صحيحة: تعبر جزيئات الماء الغشاء بينما يُحتجز معظم الأيونات المذابة. العبارة III خاطئة: لا يحدث في التناضح العكسي تغيّر في الحالة، فالماء يعبر الغشاء وهو سائل، أما التبخير والتكثيف فيخصّان التقطير. الخاطئة هي III فقط.",
-        "zh": "I正确：水通常从稀溶液一侧向浓溶液一侧渗透；要使其反向，需在盐水一侧施加大于渗透压的压力。II正确：水分子透过膜，而大部分溶解的离子被截留。III错误：反渗透没有物态变化，水以液态透过膜；蒸发和冷凝属于蒸馏。只有III是错误的。",
+        "zh": "I 正确：水通常从稀溶液一侧向浓溶液一侧渗透；要使其反向，需在盐水一侧施加大于渗透压的压强。II 正确：水分子透过膜，而大部分溶解的离子被截留。III 错误：反渗透没有物态变化，水以液态透过膜；蒸发和冷凝属于蒸馏。只有 III 是错误的。",
         "ku": "I rast e: av bi asayî ji aliyê sist ber bi aliyê tîr ve diçe; ji bo berevajîkirina herikînê li aliyê ava şor zextek ji zexta osmotîk mezintir tê sepandin. II rast e: molekulên avê di perdeyê re derbas dibin, piraniya îyonên helandî tên girtin. III şaş e: di osmoza berevajî de guherîna rewşê tune ye, av wek şile di perdeyê re derbas dibe; buharkirin û çirkirin taybetiya dilopkirinê ne. Tenê III şaş e."
       }
     },
@@ -2042,7 +2042,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "La dureté totale d'un échantillon d'eau est de 300 ppm (en CaCO3). Après ébullition et filtration du précipité, la dureté n'est plus que de 120 ppm. Quel pourcentage de la dureté totale de cette eau représente la dureté temporaire ?",
         "ru": "Общая жёсткость пробы воды равна 300 ppm (в пересчёте на CaCO3). После кипячения и отделения осадка фильтрованием жёсткость снизилась до 120 ppm. Сколько процентов общей жёсткости этой воды составляет временная жёсткость?",
         "ar": "قيس العسر الكلي لعينة ماء فكان 300 ppm (مقدّرًا بـ CaCO3). وبعد غلي الماء وترشيح الراسب انخفض العسر إلى 120 ppm. ما النسبة المئوية للعسر المؤقت من العسر الكلي لهذا الماء؟",
-        "zh": "某水样的总硬度为300 ppm（以CaCO3计）。将水煮沸并滤去沉淀后，硬度降为120 ppm。这种水的暂时硬度占总硬度的百分之几？",
+        "zh": "某水样的总硬度为 300 ppm(以 CaCO3 计)。将水煮沸并滤去沉淀后，硬度降为 120 ppm。这种水的暂时硬度占总硬度的百分之几？",
         "ku": "Hişkiya giştî ya nimûneyek avê wek CaCO3 300 ppm hatiye pîvan. Piştî ku av tê kelandin û niştek tê parzûnkirin, hişkî dadikeve 120 ppm. Li gorî vê, hişkiya demkî ya vê avê ji sedî çendê hişkiya giştî ye?"
       },
       "options": [
@@ -2105,7 +2105,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "L'ébullition n'élimine que la dureté temporaire ; les 120 ppm restants sont la dureté permanente. Dureté temporaire = 300 − 120 = 180 ppm. Part dans le total = 180 / 300 × 100 = 60 %. Le résultat 40 % est la part de la dureté restante (permanente) (120 / 300) ; 180 % vient de l'écriture directe de la valeur en ppm comme pourcentage, et 150 % et 250 % de rapports inversés (180 / 120, 300 / 120).",
         "ru": "Кипячением устраняется только временная жёсткость; оставшиеся 120 ppm — постоянная жёсткость. Временная жёсткость = 300 − 120 = 180 ppm. Её доля = 180 / 300 × 100 = 60 %. Ответ 40 % — это доля оставшейся (постоянной) жёсткости (120 / 300); 180 % получается, если записать значение в ppm как проценты, а 150 % и 250 % — если перевернуть отношения (180 / 120, 300 / 120).",
         "ar": "يزيل الغليان العسر المؤقت فقط؛ والـ 120 ppm المتبقية هي العسر الدائم. العسر المؤقت = 300 − 120 = 180 ppm. نسبته من الكلي = 180 / 300 × 100 = 60%. الناتج 40% هو نسبة العسر المتبقي (الدائم) (120 / 300)؛ و180% يأتي من كتابة قيمة ppm مباشرة كنسبة مئوية، و150% و250% من قلب النسبتين (180 / 120، 300 / 120).",
-        "zh": "煮沸只能除去暂时硬度，剩下的120 ppm是永久硬度。暂时硬度 = 300 − 120 = 180 ppm，占总硬度的 180 / 300 × 100 = 60%。40%是剩余（永久）硬度所占的比例（120 / 300）；180%是把ppm数值直接当成百分数；150%和250%是把比值倒过来算（180 / 120、300 / 120）。",
+        "zh": "煮沸只能除去暂时硬度，剩下的 120 ppm 是永久硬度。暂时硬度 = 300 − 120 = 180 ppm，占总硬度的 180 / 300 × 100 = 60%。40% 是剩余（永久）硬度所占的比例(120 / 300)；180% 是把 ppm 数值直接当成百分数；150% 和 250% 是把比值倒过来算(180 / 120、300 / 120)。",
         "ku": "Bi kelandinê tenê hişkiya demkî tê rakirin; 120 ppm ya mayî hişkiya daîmî ye. Hişkiya demkî = 300 − 120 = 180 ppm. Para wê di giştî de = 180 / 300 × 100 = %60. Encama %40 para hişkiya mayî (daîmî) ye (120 / 300); %180 ji nivîsandina nirxa ppm rasterast wek ji sedî tê, %150 û %250 jî ji berevajîkirina rêjeyan (180 / 120, 300 / 120)."
       }
     },
@@ -2215,7 +2215,7 @@ export const unit05: ChemistryUnitSeedData = {
           "fr": "Équiper les cheminées des centrales thermiques de systèmes de désulfuration des fumées qui captent le SO2",
           "ru": "Установить на трубах ТЭС системы сероочистки дымовых газов, улавливающие SO2",
           "ar": "تركيب أنظمة إزالة الكبريت من غازات المداخن تحتجز SO2 في محطات الطاقة الحرارية",
-          "zh": "在火电厂烟囱上安装吸收SO2的烟气脱硫装置",
+          "zh": "在火电厂烟囱上安装吸收 SO2 的烟气脱硫装置",
           "ku": "Danîna pergalên paqijkirina gaza dûkêşê (desulfurîzasyon) yên ku SO2 digirin li dûkêşên santralên termîk"
         },
         {
@@ -2257,7 +2257,7 @@ export const unit05: ChemistryUnitSeedData = {
         "fr": "Rehausser les cheminées ne change pas la quantité de SO2 et d'oxydes d'azote ; cela réduit seulement la pollution locale et le vent emporte les gaz plus loin, si bien que les pluies acides tombent ailleurs. Le traitement des fumées, les combustibles pauvres en soufre, les pots catalytiques et les énergies renouvelables réduisent directement la formation ou le rejet des gaz polluants.",
         "ru": "Повышение труб не меняет количества SO2 и оксидов азота; оно лишь снижает местное загрязнение, а ветер уносит газы дальше, и кислотные дожди выпадают в других районах. Очистка дымовых газов, малосернистое топливо, каталитические нейтрализаторы и возобновляемая энергетика непосредственно уменьшают образование или выброс загрязняющих газов.",
         "ar": "رفع المداخن لا يغيّر كمية SO2 وأكاسيد النيتروجين؛ بل يقلل التلوث المحلي فقط وتحمل الرياح الغازات إلى مسافات أبعد فيهطل المطر الحمضي في مناطق أخرى. أما تنقية غازات المداخن والوقود منخفض الكبريت والمحولات الحفزية والطاقة المتجددة فتقلل مباشرة تكوّن الغازات الملوِّثة أو انطلاقها.",
-        "zh": "加高烟囱并不改变SO2和氮氧化物的排放量，只是减轻了当地污染，风把气体带到更远处，酸雨落在别的地区。烟气净化、低硫燃料、催化转化器和可再生能源则直接减少污染气体的生成或排放。",
+        "zh": "加高烟囱并不改变 SO2 和氮氧化物的排放量，只是减轻了当地污染，风把气体带到更远处，酸雨落在别的地区。烟气脱硫、低硫燃料、催化转化器和可再生能源则直接减少污染气体的生成或排放。",
         "ku": "Bilindkirina dûkêşan mîqdara SO2 û oksîtên nîtrojenê naguherîne; tenê qirêjiya herêmî kêm dike û ba gazan dûrtir dibe, ji ber vê barana asîdî li herêmên din dibare. Paqijkirina gaza dûkêşê, sotemeniya bi kewkurta kêm, konvertora katalîtîk û enerjiya nûbûyî rasterast çêbûn an berdana gazên qirêjker kêm dikin."
       }
     }

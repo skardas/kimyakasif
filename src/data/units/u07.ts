@@ -21,9 +21,9 @@ export const unit07: ChemistryUnitSeedData = {
     "en": "Limiting Reagents, Yield & Net Ionic",
     "de": "Reaktionstypen, Reststoff- und Ausbeuteberechnungen",
     "fr": "Types de réactions, matières résiduelles et calculs de rendement",
-    "ru": "Типы реакций, остаточные вещества и расчеты выхода.",
+    "ru": "Типы реакций, избыток и недостаток, расчёт выхода продукта",
     "ar": "أنواع التفاعلات والمواد المتبقية وحسابات المحصول",
-    "zh": "反应类型、残留物和产率计算",
+    "zh": "反应类型、过量计算与产率计算",
     "ku": "Cureyên Reaksiyonê, Madeya Bermayî û Hesabkirina Hilberînê"
   },
   "facts": [
@@ -34,7 +34,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Combustion reactions are reactions of a substance with O2 and are generally exothermic; however, the reaction of N2 gas with O2 forming nitrogen oxides absorbs heat (endothermic).",
         "de": "Verbrennungsreaktionen sind Reaktionen eines Stoffes mit O2 und meist exotherm; die Reaktion von N2-Gas mit O2 zu Stickstoffoxiden nimmt dagegen Wärme auf (endotherm).",
         "fr": "Les réactions de combustion sont des réactions d'une substance avec O2 et sont généralement exothermiques ; en revanche, la réaction du diazote N2 avec O2 donnant des oxydes d'azote absorbe de la chaleur (endothermique).",
-        "ru": "Реакции горения — это реакции вещества с O2, и обычно они экзотермические; однако реакция N2 с O2 с образованием оксидов азота идёт с поглощением теплоты (эндотермическая).",
+        "ru": "Реакции горения — реакции веществ с O2; обычно они экзотермические, однако реакция N2 с O2 с образованием оксидов азота идёт с поглощением теплоты (эндотермическая).",
         "ar": "تفاعلات الاحتراق هي تفاعلات مادة مع O2 وتكون عادةً طاردة للحرارة؛ أما تفاعل غاز N2 مع O2 لتكوين أكاسيد النيتروجين فهو ماص للحرارة.",
         "zh": "燃烧反应是物质与 O2 的反应，通常是放热的；而 N2 与 O2 反应生成氮氧化物则是吸热反应。",
         "ku": "Reaksiyonên şewatê reaksiyonên maddeyekê bi O2 re ne û bi gelemperî ekzotermîk in; lê reaksiyona gaza N2 bi O2 re ku oksîtên nîtrojenê çêdike germê digire (endotermîk e)."
@@ -79,7 +79,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Dans les réactions de neutralisation acide-base, H+ de l’acide et OH- de la base se combinent pour former de l’eau (H2O).",
         "ru": "В реакциях кислотно-основной нейтрализации H+ кислоты и OH- основания соединяются с образованием воды (H2O).",
         "ar": "في تفاعلات معادلة الحمض مع القاعدة، يتحد H+ من الحمض و OH- من القاعدة لتكوين الماء (H2O).",
-        "zh": "在酸碱中和反应中，酸中的 H+ 和碱中的 OH- 结合形成水 (H2O)。",
+        "zh": "在酸碱中和反应中，酸中的 H+ 和碱中的 OH- 结合生成水(H2O)。",
         "ku": "Di reaksiyonên neutralîzasyona asîd-bazê de H+ ya asîdê û OH- ya bazê dibin yek û avê (H2O) çêdikin."
       },
       "trap": {
@@ -87,9 +87,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "In all acid-base reactions, salt and water are formed together.",
         "de": "Bei allen Säure-Base-Reaktionen entstehen gemeinsam Salz und Wasser.",
         "fr": "Dans toutes les réactions acido-basiques, le sel et l’eau se forment ensemble.",
-        "ru": "Во всех кислотно-основных реакциях соль и вода образуются вместе.",
+        "ru": "Во всех кислотно-основных реакциях обязательно образуются и соль, и вода.",
         "ar": "في جميع التفاعلات الحمضية القاعدية، يتكون الملح والماء معًا.",
-        "zh": "在所有酸碱反应中，盐和水都会一起形成。",
+        "zh": "所有酸碱反应都一定同时生成盐和水。",
         "ku": "Di hemû reaksiyonên asîd-bazê de xwê û av bi hev re çêdibin."
       },
       "whyTrapIsFalse": {
@@ -99,7 +99,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Ce que les neutralisations ont en commun, c'est l'union de H+ et OH- ; mais avec des bases sans OH- comme NH3 (NH3 + HCl -> NH4Cl), il ne se forme qu'un sel, sans eau. Dire « il se forme toujours de l'eau » est donc faux.",
         "ru": "Общее у реакций нейтрализации — соединение H+ с OH-; но с основаниями без OH-, например NH3 (NH3 + HCl -> NH4Cl), образуется только соль, без воды. Поэтому «всегда образуется и вода» — неверно.",
         "ar": "القاسم المشترك في التعادل هو اتحاد H+ مع OH-، لكن مع قواعد لا تحتوي OH- مثل NH3 (NH3 + HCl -> NH4Cl) يتكون ملح فقط دون ماء، لذا فعبارة «يتكون الماء دائمًا» خاطئة.",
-        "zh": "中和反应的共同点是 H+ 与 OH- 结合；但与不含 OH- 的碱如 NH3 反应（NH3 + HCl -> NH4Cl）时只生成盐而不生成水，所以“一定也生成水”是错误的。",
+        "zh": "中和反应的共同点是 H+ 与 OH- 结合；但与不含 OH- 的碱如 NH3 反应(NH3 + HCl -> NH4Cl)时只生成盐而不生成水，所以“一定也生成水”是错误的。",
         "ku": "Di neutralîzasyonê de tiştê hevpar yekbûna H+ û OH- ye; lê bi bazên bê OH- yên wek NH3 (NH3 + HCl -> NH4Cl) tenê xwê çêdibe, av çênabe. Ji ber vê \"her tim av jî çêdibe\" şaş e."
       },
       "osymTip": {
@@ -120,9 +120,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "In a synthesis reaction, two or more substances combine to form a single compound.",
         "de": "Bei einer Synthesereaktion verbinden sich zwei oder mehr Stoffe zu einer einzigen Verbindung.",
         "fr": "Dans une réaction de synthèse, deux ou plusieurs substances se combinent pour former un seul composé.",
-        "ru": "В реакции синтеза два или более веществ соединяются с образованием одного соединения.",
+        "ru": "В реакции соединения (синтеза) два или более веществ соединяются в одно сложное вещество.",
         "ar": "في تفاعل التركيب تتحد مادتان أو أكثر لتكوين مركب واحد.",
-        "zh": "在合成反应中，两种或多种物质结合形成单一化合物。",
+        "zh": "在化合（合成）反应中，两种或两种以上物质结合生成一种化合物。",
         "ku": "Di reaksiyona sentezê de du an zêdetir madde dibin yek û pêkhateyeke tenê çêdikin."
       },
       "trap": {
@@ -130,9 +130,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "The breaking down of a single compound into smaller substances is a synthesis reaction.",
         "de": "Die Zerlegung einer einzelnen Verbindung in kleinere Stoffe ist eine Synthesereaktion.",
         "fr": "La décomposition d'un seul composé en substances plus petites est une réaction de synthèse.",
-        "ru": "Распад одного соединения на более мелкие вещества — это реакция синтеза.",
+        "ru": "Распад одного соединения на более простые вещества — это реакция соединения (синтеза).",
         "ar": "تفكك مركب واحد إلى مواد أصغر هو تفاعل تركيب.",
-        "zh": "一种化合物分解成更小的物质属于合成反应。",
+        "zh": "一种化合物分解成几种较简单的物质属于化合（合成）反应。",
         "ku": "Perçebûna pêkhateyeke tenê bo maddeyên biçûktir reaksiyoneke sentezê ye."
       },
       "whyTrapIsFalse": {
@@ -140,7 +140,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "What is described here is the breaking down of a compound, which is an analysis (decomposition) reaction. In synthesis, substances combine to form a single compound — the opposite direction.",
         "de": "Beschrieben wird hier die Zerlegung einer Verbindung, also eine Analyse (Zersetzung). Bei der Synthese vereinigen sich Stoffe zu einer einzigen Verbindung – genau die umgekehrte Richtung.",
         "fr": "Ce qui est décrit est la décomposition d'un composé, c'est-à-dire une réaction d'analyse. Dans la synthèse, les substances s'unissent pour former un seul composé : c'est le sens inverse.",
-        "ru": "Здесь описан распад соединения — это реакция разложения (анализ). При синтезе вещества соединяются в одно соединение, то есть направление противоположное.",
+        "ru": "Здесь описан распад соединения — это реакция разложения. В реакции соединения вещества, наоборот, объединяются в одно сложное вещество.",
         "ar": "ما وُصف هنا هو تفكك مركب، وهذا تفاعل تحليل (تفكك). أما في التخليق فتتحد المواد لتكوين مركب واحد، أي الاتجاه المعاكس تمامًا.",
         "zh": "这里描述的是一种化合物的分解，属于分解反应；化合（合成）反应则是几种物质结合成一种化合物，方向正好相反。",
         "ku": "Li vir perçebûna pêkhateyekê tê vegotin; ev reaksiyona analîzê (perçebûnê) ye. Di sentezê de madde dibin yek û pêkhateyek tenê çêdikin, ango arasta berevajî ye."
@@ -153,7 +153,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "In an analysis (decomposition) reaction, a compound is broken down into simpler substances by heat or electrical energy.",
         "de": "Bei einer Analysereaktion (Zersetzung) wird eine Verbindung durch Wärme oder elektrische Energie in einfachere Stoffe zerlegt.",
         "fr": "Lors d'une réaction d'analyse (décomposition), un composé est décomposé en substances plus simples par la chaleur ou l'énergie électrique.",
-        "ru": "В реакции анализа (разложения) соединение распадается на более простые вещества под действием тепла или электрической энергии.",
+        "ru": "В реакции разложения сложное вещество под действием теплоты или электрического тока распадается на более простые вещества.",
         "ar": "في تفاعل التحليل (التفكك) يتفكك المركب إلى مواد أبسط بالحرارة أو بالطاقة الكهربائية.",
         "zh": "在分解反应中，化合物在加热或通电的条件下分解成更简单的物质。",
         "ku": "Di reaksiyona analîzê (perçebûnê) de pêkhateyek bi germ an enerjiya elektrîkê dibe maddeyên hêsantir."
@@ -163,7 +163,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Analysis reactions always occur spontaneously and exothermically.",
         "de": "Analysereaktionen laufen immer spontan und exotherm ab.",
         "fr": "Les réactions d'analyse se produisent toujours de manière spontanée et exothermique.",
-        "ru": "Реакции анализа всегда протекают спонтанно и экзотермически.",
+        "ru": "Реакции разложения всегда протекают самопроизвольно и с выделением теплоты.",
         "ar": "تحدث تفاعلات التحليل دائمًا بشكل عفوي وطارد للحرارة.",
         "zh": "分解反应总是自发进行并且放热。",
         "ku": "Reaksiyonên analîzê her tim bi xwe û ekzotermîk pêk tên."
@@ -186,9 +186,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "In a dissolution-precipitation reaction, when two aqueous solutions are mixed, a solid precipitate that is slightly soluble in water is formed.",
         "de": "Bei einer Lösungs-Fällungs-Reaktion entsteht beim Mischen zweier wässriger Lösungen ein fester Niederschlag, der in Wasser schwer löslich ist.",
         "fr": "Dans une réaction de dissolution-précipitation, lorsque deux solutions aqueuses sont mélangées, il se forme un précipité solide peu soluble dans l'eau.",
-        "ru": "В реакции растворения-осаждения при смешивании двух водных растворов образуется твердый осадок, малорастворимый в воде.",
+        "ru": "В реакции осаждения при смешивании двух водных растворов образуется твёрдый малорастворимый осадок.",
         "ar": "في تفاعل الذوبان والترسيب، عندما يتم خلط محلولين مائيين، يتكون راسب صلب قابل للذوبان قليلاً في الماء.",
-        "zh": "在溶解-沉淀反应中，当两种水溶液混合时，会形成微溶于水的固体沉淀物。",
+        "zh": "在沉淀反应中，两种水溶液混合时生成难溶于水的固体沉淀。",
         "ku": "Di reaksiyona helbûn-niştinê de, dema du çareseriyên avî tên tevlihevkirin, niştekeke hişk a ku di avê de kêm dihele çêdibe."
       },
       "trap": {
@@ -196,9 +196,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "The precipitate formed in the dissolution-precipitation reaction consists of spectator ions.",
         "de": "Der bei der Lösungs-Fällungs-Reaktion gebildete Niederschlag besteht aus Zuschauerionen.",
         "fr": "Le précipité formé lors de la réaction de dissolution-précipitation est constitué d'ions spectateurs.",
-        "ru": "Осадок, образующийся в реакции растворения-осаждения, состоит из ионов-наблюдателей.",
+        "ru": "Осадок в реакции осаждения образуют ионы-наблюдатели.",
         "ar": "يتكون الراسب المتكون في تفاعل الذوبان والترسيب من أيونات متفرجة.",
-        "zh": "溶解-沉淀反应中形成的沉淀物由旁观离子组成。",
+        "zh": "沉淀反应中生成的沉淀由旁观离子组成。",
         "ku": "Nişteka ku di reaksiyona helbûn-niştinê de çêdibe ji îyonên temaşevan pêk tê."
       },
       "whyTrapIsFalse": {
@@ -208,7 +208,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Les ions spectateurs ne participent pas à la réaction et restent inchangés en solution. Le précipité est formé par les ions qui donnent ensemble un composé peu soluble (par ex. Ag+ et Cl-).",
         "ru": "Ионы-наблюдатели не участвуют в реакции и остаются в растворе без изменений. Осадок образуют ионы, дающие вместе малорастворимое соединение (например, Ag+ и Cl-).",
         "ar": "الأيونات المتفرجة لا تشارك في التفاعل وتبقى في المحلول دون تغيير، أما الراسب فيتكون من الأيونات التي تكوّن معًا مركبًا قليل الذوبان (مثل Ag+ وCl-).",
-        "zh": "旁观离子不参与反应，在溶液中保持不变；沉淀是由能结合成难溶化合物的离子（如 Ag+ 和 Cl-）形成的。",
+        "zh": "旁观离子不参与反应，在溶液中保持不变；沉淀是由能结合成难溶化合物的离子(如 Ag+ 和 Cl-)形成的。",
         "ku": "Îyonên temaşevan beşdarî reaksiyonê nabin û di çareseriyê de bê guhertin dimînin. Niştek ji wan îyonan çêdibe ku bi hev re pêkhateyeke kêm-helbar çêdikin (mînak Ag+ û Cl-)."
       }
     },
@@ -219,9 +219,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "In a dissolution-precipitation reaction, the net ionic equation is written with the ions that form the solid precipitate.",
         "de": "Bei der Lösungs-Fällungs-Reaktion wird die Nettoionengleichung mit den Ionen geschrieben, die den festen Niederschlag bilden.",
         "fr": "Dans une réaction de dissolution-précipitation, l'équation ionique nette s'écrit à partir des ions qui forment le précipité solide.",
-        "ru": "В реакции растворения-осаждения сокращённое ионное уравнение записывают по ионам, образующим твёрдый осадок.",
+        "ru": "Для реакции осаждения сокращённое ионное уравнение составляют по ионам, образующим твёрдый осадок.",
         "ar": "في تفاعل الذوبان والترسيب تُكتب المعادلة الأيونية الصافية بالأيونات التي تكوّن الراسب الصلب.",
-        "zh": "在溶解-沉淀反应中，净离子方程式按照生成固体沉淀的离子来书写。",
+        "zh": "在沉淀反应中，净离子方程式按照生成固体沉淀的离子来书写。",
         "ku": "Di reaksiyona helbûn-niştinê de hevkêşeya îyonî ya net li gorî îyonên ku nişteka hişk çêdikin tê nivîsandin."
       },
       "trap": {
@@ -229,7 +229,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "The net ionic equation is written with the spectator ions that remain in the solution.",
         "de": "Die Nettoionengleichung wird entsprechend den in der Lösung verbleibenden Zuschauerionen geschrieben.",
         "fr": "L'équation ionique nette s'écrit à partir des ions spectateurs qui restent dans la solution.",
-        "ru": "Сокращённое ионное уравнение записывают по ионам-наблюдателям, остающимся в растворе.",
+        "ru": "Сокращённое ионное уравнение составляют по ионам-наблюдателям, остающимся в растворе.",
         "ar": "تُكتب المعادلة الأيونية الصافية بالأيونات المتفرجة المتبقية في المحلول.",
         "zh": "净离子方程式按照留在溶液中的旁观离子来书写。",
         "ku": "Hevkêşeya îyonî ya net li gorî îyonên temaşevan ên ku di çareseriyê de dimînin tê nivîsandin."
@@ -241,7 +241,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Comme les ions spectateurs ne changent pas, ils figurent à l'identique des deux côtés et sont éliminés de l'équation ionique nette. Celle-ci ne montre que les ions qui forment le précipité.",
         "ru": "Поскольку ионы-наблюдатели не изменяются, они одинаково стоят в обеих частях и сокращаются в сокращённом ионном уравнении. Оно показывает только ионы, образующие осадок.",
         "ar": "لأن الأيونات المتفرجة لا تتغير فإنها تظهر في الطرفين بالشكل نفسه وتُحذف من المعادلة الأيونية الصافية، التي لا تُظهر إلا الأيونات المكونة للراسب.",
-        "zh": "旁观离子没有变化，在两边相同出现，因此在净离子方程式中被消去；净离子方程式只表示生成沉淀的离子。",
+        "zh": "旁观离子没有发生变化，在方程式两边同样出现，因此在净离子方程式中被消去；净离子方程式只表示生成沉淀的离子。",
         "ku": "Ji ber ku îyonên temaşevan nayên guhertin, li her du aliyan wek hev cih digirin û ji hevkêşeya îyonî ya net tên derxistin. Hevkêşeya net tenê îyonên ku niştê çêdikin nîşan dide."
       }
     },
@@ -252,7 +252,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "The limiting reactant is the reactant that is used up first in the reaction and determines the amount of product formed.",
         "de": "Der limitierende Reaktant ist das Edukt, das bei der Reaktion zuerst verbraucht wird und die Menge des gebildeten Produkts bestimmt.",
         "fr": "Le réactif limitant est le réactif qui est consommé en premier dans la réaction et qui détermine la quantité de produit formé.",
-        "ru": "Лимитирующий реагент — это реагент, который расходуется в реакции первым и определяет количество образующегося продукта.",
+        "ru": "Лимитирующий реагент (вещество в недостатке) расходуется в реакции первым и определяет количество образующегося продукта.",
         "ar": "المادة المحددة هي المادة المتفاعلة التي تُستهلك أولًا في التفاعل وتحدد كمية الناتج المتكوّن.",
         "zh": "限量反应物是反应中最先消耗完并决定生成产物的量的反应物。",
         "ku": "Reaktanta sînordar ew reaktant e ku di reaksiyonê de pêşî diqede û mîqdara hilbera ku çêdibe diyar dike."
@@ -274,7 +274,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Ce n'est pas la masse mais le rapport quantité de matière/coefficient qui détermine le réactif limitant. Une substance de plus petite masse peut contenir plus de moles si sa masse molaire est faible, et même être en excès.",
         "ru": "Лимитирующий реагент определяется не массой, а отношением количества вещества к коэффициенту. Вещество меньшей массы при малой молярной массе может содержать больше моль и даже остаться в избытке.",
         "ar": "لا تحدد الكتلة المادة المحددة، بل نسبة عدد المولات إلى المعامل؛ فالمادة الأقل كتلة قد تحتوي مولات أكثر إذا كانت كتلتها المولية صغيرة، بل وقد تتبقى.",
-        "zh": "决定限量反应物的不是质量，而是物质的量与系数之比。质量小的物质若摩尔质量也小，可能含有更多摩尔，甚至有剩余。",
+        "zh": "决定限量反应物的不是质量，而是物质的量与系数之比。质量小的物质若摩尔质量也小，其物质的量反而可能更大，在反应中甚至有剩余。",
         "ku": "Ne girse, rêjeya hejmara molan li ser hevberê sînordarbûnê diyar dike. Maddeya bi girseya kêm, eger girseya wê ya molar biçûk be, dikare zêdetir mol hebe û heta bimîne."
       }
     },
@@ -285,9 +285,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Percent yield is calculated with the formula (Actual Yield / Theoretical Yield) x 100.",
         "de": "Die prozentuale Ausbeute wird mit der Formel (tatsächliche Ausbeute / theoretische Ausbeute) x 100 berechnet.",
         "fr": "Le rendement en pourcentage est calculé avec la formule = (Rendement réel / Rendement théorique) x 100.",
-        "ru": "Процентный выход рассчитывается по формуле = (Фактический выход / Теоретический выход) x 100.",
+        "ru": "Выход продукта (%) = (практический выход / теоретический выход) x 100.",
         "ar": "يتم حساب نسبة المردود باستخدام الصيغة = (المردود الفعلي / المردود النظري) × 100.",
-        "zh": "百分产率的计算公式为 =（实际产量/理论产量）x 100。",
+        "zh": "百分产率 =（实际产量/理论产量）x 100。",
         "ku": "Berhema ji sedî bi formula = (Berhema Rastîn / Berhema Teorîk) x 100 tê hesibandin."
       },
       "trap": {
@@ -295,7 +295,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "The actual yield is always greater than the theoretical yield.",
         "de": "Die tatsächliche Ausbeute ist immer größer als die theoretische Ausbeute.",
         "fr": "Le rendement réel est toujours supérieur au rendement théorique.",
-        "ru": "Фактический выход всегда больше теоретического выхода.",
+        "ru": "Практический выход всегда больше теоретического.",
         "ar": "المردود الفعلي دائمًا أكبر من المردود النظري.",
         "zh": "实际产量总是大于理论产量。",
         "ku": "Berhema rastîn her gav ji berhema teorîk mezintir e."
@@ -305,7 +305,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "The theoretical yield is the maximum amount of product that would form if the reaction went to completion. Because of losses and side reactions the actual yield stays below it; percent yield cannot exceed 100%.",
         "de": "Die theoretische Ausbeute ist die größtmögliche Produktmenge bei vollständigem Ablauf. Wegen Verlusten und Nebenreaktionen bleibt die tatsächliche Ausbeute darunter; die prozentuale Ausbeute kann 100 % nicht übersteigen.",
         "fr": "Le rendement théorique est la quantité maximale de produit qui se formerait si la réaction était totale. À cause des pertes et des réactions secondaires, le rendement réel reste inférieur ; le pourcentage de rendement ne peut pas dépasser 100 %.",
-        "ru": "Теоретический выход — максимальное количество продукта при полном протекании реакции. Из-за потерь и побочных реакций фактический выход меньше; процентный выход не может превышать 100 %.",
+        "ru": "Теоретический выход — максимальное количество продукта при полном протекании реакции. Из-за потерь и побочных реакций практический выход меньше; выход продукта не может превышать 100 %.",
         "ar": "المردود النظري هو أكبر كمية من الناتج تتكون لو اكتمل التفاعل. وبسبب الفقد والتفاعلات الجانبية يبقى المردود الفعلي أقل منه، ولا يمكن أن تتجاوز النسبة المئوية للمردود 100%.",
         "zh": "理论产量是反应完全进行时所能得到的最大产物量。由于损失和副反应，实际产量低于理论产量，百分产率不可能超过 100%。",
         "ku": "Berhema teorîk mîqdara herî zêde ya hilberê ye ku eger reaksiyon bi tevahî pêk bihata dê çêbibûya. Ji ber windabûn û reaksiyonên alî berhema rastîn kêmtir dimîne; berhema ji sedî nikare ji %100 derbas bibe."
@@ -318,9 +318,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Hydrocarbons (CxHy) produce only CO2 and H2O when completely burned.",
         "de": "Kohlenwasserstoffe (CxHy) erzeugen bei vollständiger Verbrennung nur CO2 und H2O.",
         "fr": "Les hydrocarbures (CxHy) ne produisent que du CO2 et du H2O lorsqu'ils sont complètement brûlés.",
-        "ru": "Углеводороды (CxHy) при полном сгорании производят только CO2 и H2O.",
+        "ru": "При полном сгорании углеводородов (CxHy) образуются только CO2 и H2O.",
         "ar": "تنتج الهيدروكربونات (CxHy) ثاني أكسيد الكربون وH2O فقط عند حرقها بالكامل.",
-        "zh": "碳氢化合物 (CxHy) 完全燃烧时仅产生 CO2 和 H2O。",
+        "zh": "烃(CxHy)完全燃烧时只生成 CO2 和 H2O。",
         "ku": "Hîdrokarbon (CxHy) dema bi tevahî dişewitin tenê CO2 û H2O derdixin."
       },
       "trap": {
@@ -330,7 +330,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Lorsque les hydrocarbures brûlent, du gaz H2 est libéré avec du CO2.",
         "ru": "При сгорании углеводородов вместе с CO2 выделяется газ H2.",
         "ar": "عند احتراق الهيدروكربونات، ينطلق غاز H2 مع ثاني أكسيد الكربون.",
-        "zh": "当碳氢化合物燃烧时，氢气与二氧化碳一起释放。",
+        "zh": "烃燃烧时，除 CO2 外还会放出 H2 气体。",
         "ku": "Dema ku hîdrokarbon dişewitin, gaza H2 ligel CO2 derdikeve."
       },
       "whyTrapIsFalse": {
@@ -361,7 +361,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "In all chemical reactions, the number of molecules and the gas volume are always conserved.",
         "de": "Bei allen chemischen Reaktionen bleiben die Anzahl der Moleküle und das Gasvolumen stets erhalten.",
         "fr": "Dans toutes les réactions chimiques, le nombre de molécules et le volume de gaz sont toujours conservés.",
-        "ru": "Во всех химических реакциях число молекул и объем газа всегда сохраняются.",
+        "ru": "Во всех химических реакциях число молекул и объём газов обязательно сохраняются.",
         "ar": "في جميع التفاعلات الكيميائية، يظل عدد الجزيئات وحجم الغاز محفوظين دائمًا.",
         "zh": "在所有化学反应中，分子数和气体体积始终守恒。",
         "ku": "Di hemû reaksiyonên kîmyewî de, hejmara molekulan û qebareya gazê timî tê parastin."
@@ -386,7 +386,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Dans les calculs d'excès, on divise la quantité de matière (en moles) de chaque réactif par son coefficient ; celui dont le rapport est le plus petit est le réactif limitant et l'autre réactif est en excès.",
         "ru": "В задачах на избыток количество вещества (моль) каждого реагента делят на его коэффициент; реагент с наименьшим отношением — лимитирующий, другой реагент остаётся в избытке.",
         "ar": "في مسائل المادة الفائضة يُقسم عدد مولات كل مادة متفاعلة على معاملها؛ والمادة ذات النسبة الأصغر هي المادة المحددة، ويتبقى جزء من المادة الأخرى.",
-        "zh": "在过量计算中，将各反应物的物质的量（摩尔）除以其系数；比值最小者为限量反应物，另一种反应物有剩余。",
+        "zh": "在过量计算中，用各反应物的物质的量除以其系数；比值最小者为限量反应物，另一种反应物有剩余。",
         "ku": "Di hesabê maddeya zêde de hejmara molên reaktantan li ser hevberên wan tê dabeşkirin; ya ku rêjeya wê herî biçûk e reaktanta sînordar e, ji reaktanta din jî beşek dimîne."
       },
       "trap": {
@@ -394,9 +394,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Whichever substance has the most moles, that substance runs out first.",
         "de": "Der Stoff, von dem die meisten Mol vorhanden sind, wird zuerst aufgebraucht.",
         "fr": "La substance qui a le plus grand nombre de moles s'épuise en premier.",
-        "ru": "Первым расходуется то вещество, которого взято больше молей.",
+        "ru": "Первым заканчивается то вещество, количество которого (в моль) больше.",
         "ar": "المادة التي لديها أكبر عدد من المولات هي التي تنفد أولاً.",
-        "zh": "哪种物质的摩尔数最多，哪种物质就先消耗完。",
+        "zh": "哪种反应物的物质的量最大，哪种就先消耗完。",
         "ku": "Kîjan maddeya ku herî zêde molên wê hebin, ew madde pêşî diqede."
       },
       "whyTrapIsFalse": {
@@ -417,7 +417,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Purity percentage = (Pure Substance Mass / Sample Mass) x 100.",
         "de": "Reinheitsprozentsatz = (Reinstoffmasse / Probenmasse) x 100.",
         "fr": "Pourcentage de pureté = (Masse de substance pure / Masse d'échantillon) x 100.",
-        "ru": "Процент чистоты = (масса чистого вещества / масса образца) x 100.",
+        "ru": "Массовая доля чистого вещества (%) = (масса чистого вещества / масса образца) x 100.",
         "ar": "نسبة النقاء = (كتلة المادة النقية / كتلة العينة) × 100.",
         "zh": "纯度百分比 =（纯物质质量/样品质量）x 100。",
         "ku": "Rêjeya paqijiyê ya ji sedî = (Girseya madeya paqij / Girseya nimûneyê) x 100."
@@ -427,9 +427,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "When calculating percent purity, the impure part of the sample is assumed to take part in the reaction.",
         "de": "Bei der Berechnung der Reinheit in Prozent wird angenommen, dass der unreine Anteil der Probe mitreagiert.",
         "fr": "Lors du calcul du pourcentage de pureté, on suppose que la partie impure de l'échantillon réagit.",
-        "ru": "При расчете степени чистоты предполагается, что примесная часть образца вступает в реакцию.",
+        "ru": "При расчёте массовой доли чистого вещества считают, что примеси тоже вступают в реакцию.",
         "ar": "عند حساب نسبة النقاء يُفترض أن الجزء غير النقي من العينة يتفاعل.",
-        "zh": "计算纯度时，假设样品的杂质部分发生反应。",
+        "zh": "计算纯度时，认为样品中的杂质也参加反应。",
         "ku": "Dema rêjeya paqijiyê tê hesibandin, tê qebûlkirin ku beşa nepak a nimûneyê dikeve reaksiyonê."
       },
       "whyTrapIsFalse": {
@@ -439,7 +439,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "On considère que les impuretés ne réagissent pas. On n'utilise donc dans le calcul que la masse de substance pure contenue dans l'échantillon, et non l'échantillon entier.",
         "ru": "Считается, что примеси в реакцию не вступают. Поэтому в расчёте используется только масса чистого вещества в образце, а не масса всего образца.",
         "ar": "يُفترض أن الشوائب لا تتفاعل، لذا لا يُستخدم في الحساب إلا كتلة المادة النقية في العينة وليس كتلة العينة كلها.",
-        "zh": "杂质被认为不参加反应，因此计算时只用样品中纯物质的质量，而不是整个样品的质量。",
+        "zh": "计算时认为杂质不参加反应，因此只用样品中纯物质的质量，而不是整个样品的质量。",
         "ku": "Tê qebûlkirin ku nepakî nakevin reaksiyonê. Ji ber vê yekê di hesabê de ne hemû nimûne, tenê girseya maddeya paqij a tê de tê bikaranîn."
       }
     },
@@ -452,7 +452,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "La rouille du fer (écrite simplement 4Fe + 3O2 -> 2Fe2O3) est un exemple de combustion lente sans flamme, c'est-à-dire d'oxydation lente.",
         "ru": "Ржавление железа (упрощённо 4Fe + 3O2 -> 2Fe2O3) — пример медленного беспламенного горения, то есть медленного окисления.",
         "ar": "صدأ الحديد (يُكتب ببساطة 4Fe + 3O2 -> 2Fe2O3) مثال على الاحتراق البطيء بدون لهب، أي الأكسدة البطيئة.",
-        "zh": "铁生锈（简化表示为 4Fe + 3O2 -> 2Fe2O3）是缓慢无焰燃烧即缓慢氧化的例子。",
+        "zh": "铁生锈(简化表示为 4Fe + 3O2 -> 2Fe2O3)是无焰的缓慢燃烧，即缓慢氧化的例子。",
         "ku": "Zengarbûna hesin (bi awayekî hêsan 4Fe + 3O2 -> 2Fe2O3) mînaka şewata hêdî ya bê agir, yanî oksîdasyona hêdî ye."
       },
       "trap": {
@@ -460,9 +460,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Rusting of iron is a physical dissolution phenomenon.",
         "de": "Das Rosten von Eisen ist ein physikalisches Auflösungsphänomen.",
         "fr": "La rouille du fer est un phénomène de dissolution physique.",
-        "ru": "Ржавление железа – это явление физического растворения.",
+        "ru": "Ржавление железа — физический процесс растворения.",
         "ar": "صدأ الحديد هو ظاهرة انحلال فيزيائي.",
-        "zh": "铁的生锈是一种物理溶解现象。",
+        "zh": "铁生锈是一种物理溶解过程。",
         "ku": "Zengarbûna hesin diyardeyeke fîzîkî ya helbûnê ye."
       },
       "whyTrapIsFalse": {
@@ -526,7 +526,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "When equal moles are taken, the reactant with the smaller coefficient is used up first.",
         "de": "Bei gleichen Stoffmengen wird zuerst das Edukt mit dem kleineren Koeffizienten verbraucht.",
         "fr": "Lorsque des moles égales sont prises, le réactif avec le coefficient le plus petit est consommé en premier.",
-        "ru": "При равных молях первым расходуется реагент с меньшим коэффициентом.",
+        "ru": "При равных количествах вещества первым расходуется реагент с меньшим коэффициентом.",
         "ar": "عند أخذ مولات متساوية تُستهلك أولًا المادة المتفاعلة ذات المعامل الأصغر.",
         "zh": "取相同物质的量时，系数较小的反应物先消耗完。",
         "ku": "Dema mol wekhev tên girtin, reaktanta bi hevbera biçûktir pêşî diqede."
@@ -536,7 +536,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "When equal moles are taken, the substance with the larger coefficient is consumed faster in every unit of reaction, so it runs out first. The one with the smaller coefficient is left over.",
         "de": "Bei gleichen Stoffmengen wird der Stoff mit dem größeren Koeffizienten pro Formelumsatz stärker verbraucht und ist daher zuerst aufgebraucht. Der Stoff mit dem kleineren Koeffizienten bleibt übrig.",
         "fr": "À quantités de matière égales, la substance de plus grand coefficient est davantage consommée à chaque unité de réaction ; elle s'épuise donc en premier. Celle de plus petit coefficient est en excès.",
-        "ru": "При равных количествах вещества реагент с большим коэффициентом расходуется быстрее в каждом акте реакции и поэтому заканчивается первым. Реагент с меньшим коэффициентом остаётся в избытке.",
+        "ru": "При равных количествах вещества реагента с большим коэффициентом на каждый акт реакции расходуется больше, поэтому он заканчивается первым. Реагент с меньшим коэффициентом остаётся в избытке.",
         "ar": "عند تساوي عدد المولات تُستهلك المادة ذات المعامل الأكبر بكمية أكبر في كل وحدة تفاعل فتنفد أولًا، أما المادة ذات المعامل الأصغر فتتبقى.",
         "zh": "物质的量相同时，系数大的物质每进行一次反应消耗得更多，因此先耗尽；系数小的物质有剩余。",
         "ku": "Dema mol wekhev bin, maddeya bi hevbera mezintir di her yekîneya reaksiyonê de zêdetir tê xerckirin û pêşî diqede. Maddeya bi hevbera biçûktir dimîne."
@@ -559,7 +559,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "In gas reactions, the total volume of the reactants is always equal to the total volume of the products.",
         "de": "Bei Gasreaktionen ist das Gesamtvolumen der Reaktanten immer gleich dem Gesamtvolumen der Produkte.",
         "fr": "Dans les réactions gazeuses, le volume total des réactifs est toujours égal au volume total des produits.",
-        "ru": "В газовых реакциях общий объем реагентов всегда равен общему объему продуктов.",
+        "ru": "В газовых реакциях суммарный объём реагентов всегда равен суммарному объёму продуктов.",
         "ar": "في التفاعلات الغازية، يكون الحجم الإجمالي للمواد المتفاعلة دائمًا مساويًا للحجم الإجمالي للنواتج.",
         "zh": "在气体反应中，反应物的总体积始终等于产物的总体积。",
         "ku": "Di reaksiyonên gazê de, qebareya giştî ya reaktantan her dem bi qebareya giştî ya hilberan re wekhev e."
@@ -584,9 +584,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Synthesis",
         "de": "Synthese",
         "fr": "Synthèse",
-        "ru": "Синтез",
+        "ru": "Реакция соединения",
         "ar": "التركيب",
-        "zh": "合成",
+        "zh": "化合反应",
         "ku": "Sentez"
       },
       "conceptB": {
@@ -594,9 +594,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Analysis",
         "de": "Analyse",
         "fr": "Analyse",
-        "ru": "Анализ",
+        "ru": "Реакция разложения",
         "ar": "التحليل",
-        "zh": "分解",
+        "zh": "分解反应",
         "ku": "Analîz"
       },
       "distinction": {
@@ -604,9 +604,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "In synthesis, substances combine to give a single product; analysis is the breakdown of a single compound.",
         "de": "Bei der Synthese verbinden sich Stoffe zu einem einzigen Produkt; die Analyse ist die Zerlegung einer einzelnen Verbindung.",
         "fr": "Dans la synthèse, des substances se combinent pour donner un seul produit ; l'analyse est la décomposition d'un seul composé.",
-        "ru": "При синтезе вещества соединяются в один продукт; анализ — это разложение одного соединения.",
+        "ru": "Реакция соединения — объединение нескольких веществ в один продукт; реакция разложения — распад одного сложного вещества на несколько более простых.",
         "ar": "في التركيب تتحد المواد لتعطي ناتجًا واحدًا؛ والتحليل هو تفكك مركب واحد.",
-        "zh": "合成是多种物质结合生成单一产物；分解是一种化合物分解成更简单的物质。",
+        "zh": "化合反应是多种物质结合生成一种产物的反应；分解反应是由一种物质生成几种较简单物质的反应。",
         "ku": "Di sentezê de madde bi hev re dibin yek hilber; analîz perçebûna yek pêkhateyê ye."
       }
     },
@@ -617,7 +617,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Actual Yield",
         "de": "Tatsächliche Ausbeute",
         "fr": "Rendement réel",
-        "ru": "Фактический выход",
+        "ru": "Практический выход",
         "ar": "المردود الفعلي",
         "zh": "实际产量",
         "ku": "Berhema Rastîn"
@@ -637,7 +637,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "The theoretical yield is the calculated maximum amount of product; the actual yield is the amount actually obtained in the experiment.",
         "de": "Die theoretische Ausbeute ist die berechnete maximale Produktmenge; die tatsächliche Ausbeute ist die im Experiment tatsächlich erhaltene Menge.",
         "fr": "Le rendement théorique est la quantité maximale de produit calculée ; le rendement réel est la quantité réellement obtenue lors de l'expérience.",
-        "ru": "Теоретический выход — рассчитанное максимальное количество продукта; фактический выход — количество, реально полученное в эксперименте.",
+        "ru": "Теоретический выход — рассчитанное максимальное количество продукта; практический выход — количество продукта, реально полученное в опыте.",
         "ar": "المردود النظري هو أكبر كمية ناتج محسوبة؛ أما المردود الفعلي فهو الكمية التي يتم الحصول عليها فعلًا في التجربة.",
         "zh": "理论产量是计算得到的最大产物量；实际产量是实验中实际得到的量。",
         "ku": "Berhema teorîk mîqdara herî zêde ya hilberê ya hesabkirî ye; berhema rastîn mîqdara ku di ceribandinê de bi rastî tê bidestxistin e."
@@ -650,7 +650,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Percent Purity",
         "de": "Reinheit in Prozent",
         "fr": "Pourcentage de pureté",
-        "ru": "Процент чистоты",
+        "ru": "Массовая доля чистого вещества",
         "ar": "نسبة النقاء",
         "zh": "纯度百分比",
         "ku": "Rêjeya paqijiyê ya ji sedî"
@@ -660,7 +660,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Percent Yield",
         "de": "Prozentuale Ausbeute",
         "fr": "Rendement en pourcentage",
-        "ru": "Процентный выход",
+        "ru": "Выход продукта",
         "ar": "النسبة المئوية للمردود",
         "zh": "百分产率",
         "ku": "Berhema ji sedî"
@@ -670,9 +670,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Percent purity is the ratio of the mass of pure substance to the mass of the sample (x100); percent yield is the ratio of the amount of product actually obtained to the maximum amount of product calculated (x100).",
         "de": "Die Reinheit in Prozent ist das Verhältnis der Masse des reinen Stoffes zur Masse der Probe (x100); die prozentuale Ausbeute ist das Verhältnis der tatsächlich erhaltenen Produktmenge zur berechneten maximalen Produktmenge (x100).",
         "fr": "Le pourcentage de pureté est le rapport de la masse de substance pure à la masse de l'échantillon (x100) ; le rendement en pourcentage est le rapport de la quantité de produit réellement obtenue à la quantité maximale de produit calculée (x100).",
-        "ru": "Процент чистоты — это отношение массы чистого вещества к массе образца (x100); процентный выход — это отношение реально полученного количества продукта к рассчитанному максимальному количеству продукта (x100).",
+        "ru": "Массовая доля чистого вещества — отношение массы чистого вещества к массе образца (x100); выход продукта — отношение практически полученного количества продукта к теоретически рассчитанному максимальному (x100).",
         "ar": "نسبة النقاء هي نسبة كتلة المادة النقية إلى كتلة العينة (x100)؛ والنسبة المئوية للمردود هي نسبة كمية الناتج التي حُصل عليها فعلًا إلى أكبر كمية ناتج محسوبة (x100).",
-        "zh": "纯度百分比是纯物质质量与样品质量之比（x100）；百分产率是实际得到的产物量与计算出的最大产物量之比（x100）。",
+        "zh": "纯度百分比是纯物质质量与样品质量之比(x100)；百分产率是实际得到的产物量与计算出的最大产物量之比(x100)。",
         "ku": "Rêjeya paqijiyê ya ji sedî rêjeya girseya madeya paqij li girseya nimûneyê ye (x100); berhema ji sedî rêjeya mîqdara hilberê ya bi rastî hatî bidestxistin li mîqdara herî zêde ya hesabkirî ye (x100)."
       }
     },
@@ -705,7 +705,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Une réaction exothermique libère de la chaleur vers le milieu extérieur ; une réaction endothermique se produit en absorbant de la chaleur du milieu extérieur.",
         "ru": "Экзотермическая реакция идёт с выделением теплоты в окружающую среду; эндотермическая реакция идёт с поглощением теплоты из окружающей среды.",
         "ar": "التفاعل الطارد للحرارة يطلق الحرارة إلى الوسط المحيط؛ أما التفاعل الماص للحرارة فيحدث بامتصاص الحرارة من الوسط المحيط.",
-        "zh": "放热反应放出热量；吸热反应通过从环境中吸收热量而发生。",
+        "zh": "放热反应向外界放出热量；吸热反应要从环境中吸收热量才能进行。",
         "ku": "Reaksiyona ekzotermîk germê dide derve; reaksiyona endotermîk bi wergirtina germê ji derdorê pêk tê."
       }
     },
@@ -726,7 +726,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Excess Reactant",
         "de": "Überschussreaktant",
         "fr": "Réactif en excès",
-        "ru": "Избыточный реагент",
+        "ru": "Вещество в избытке",
         "ar": "المادة الفائضة",
         "zh": "过量反应物",
         "ku": "Reaktanta zêde"
@@ -736,7 +736,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "The limiting reactant is the substance that is used up first in the reaction and determines the amount of product; the excess reactant is the substance part of which is left unreacted when the reaction ends.",
         "de": "Der limitierende Reaktant ist der Stoff, der bei der Reaktion zuerst verbraucht wird und die Produktmenge bestimmt; der Überschussreaktant ist der Stoff, von dem nach Ende der Reaktion ein Teil unverbraucht übrig bleibt.",
         "fr": "Le réactif limitant est la substance consommée en premier dans la réaction et qui détermine la quantité de produit ; le réactif en excès est la substance dont une partie reste sans avoir réagi à la fin de la réaction.",
-        "ru": "Лимитирующий реагент — вещество, которое расходуется в реакции первым и определяет количество продукта; избыточный реагент — вещество, часть которого остаётся непрореагировавшей после окончания реакции.",
+        "ru": "Лимитирующий реагент расходуется в реакции первым и определяет количество продукта; вещество в избытке частично остаётся непрореагировавшим после окончания реакции.",
         "ar": "المادة المحددة هي المادة التي تُستهلك أولًا في التفاعل وتحدد كمية الناتج؛ أما المادة الفائضة فهي المادة التي يبقى جزء منها دون تفاعل عند انتهاء التفاعل.",
         "zh": "限量反应物是反应中最先消耗完并决定产物量的物质；过量反应物是反应结束时有一部分未参加反应而剩余的物质。",
         "ku": "Reaktanta sînordar ew madde ye ku di reaksiyonê de pêşî diqede û mîqdara hilberê diyar dike; reaktanta zêde ew madde ye ku dema reaksiyon diqede beşek jê bêyî ku bikeve reaksiyonê dimîne."
@@ -769,7 +769,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "The net ionic equation shows the precipitate or the water that forms and contains only the ions that take part in the reaction; spectator ions are ions that remain unchanged in solution.",
         "de": "Die Nettoionengleichung zeigt den ausgefällten Feststoff bzw. das gebildete Wasser und enthält nur die an der Reaktion beteiligten Ionen; Zuschauerionen sind Ionen, die in Lösung unverändert bleiben.",
         "fr": "L'équation ionique nette montre le solide précipité ou l'eau formée et ne contient que les ions qui participent à la réaction ; les ions spectateurs sont des ions qui restent inchangés en solution.",
-        "ru": "Сокращённое ионное уравнение показывает выпавший осадок или образовавшуюся воду и содержит только ионы, участвующие в реакции; ионы-наблюдатели — это ионы, которые остаются в растворе без изменений.",
+        "ru": "Сокращённое ионное уравнение показывает выпавший осадок или образовавшуюся воду и содержит только ионы, участвующие в реакции; ионы-наблюдатели — ионы, которые остаются в растворе без изменений.",
         "ar": "توضح المعادلة الأيونية الصافية المادة الصلبة المترسبة أو الماء المتكوّن ولا تحتوي إلا على الأيونات المشاركة في التفاعل؛ أما الأيونات المتفرجة فهي أيونات تبقى في المحلول دون تغيير.",
         "zh": "净离子方程式表示生成的沉淀或水，只包含参加反应的离子；旁观离子是在溶液中保持不变的离子。",
         "ku": "Hevkêşeya îyonî ya net madeya hişk a ku dinişe an ava ku çêdibe nîşan dide û tenê îyonên ku beşdarî reaksiyonê dibin dihewîne; îyonên temaşevan ew îyon in ku di çareseriyê de bê guhertin dimînin."
@@ -802,9 +802,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Combustion is the reaction of a substance with O2 (an oxidation-reduction reaction); neutralization is the combination of H+ from the acid and OH- from the base to form water.",
         "de": "Die Verbrennung ist die Reaktion eines Stoffes mit O2 (eine Redoxreaktion); bei der Neutralisation verbinden sich die H+-Ionen der Säure mit den OH--Ionen der Base zu Wasser.",
         "fr": "La combustion est la réaction d'une substance avec O2 (réaction d'oxydoréduction) ; la neutralisation est la combinaison des ions H+ de l'acide et OH- de la base pour former de l'eau.",
-        "ru": "Горение — это реакция вещества с O2 (окислительно-восстановительная реакция); нейтрализация — это соединение ионов H+ кислоты и OH- основания с образованием воды.",
+        "ru": "Реакция горения — взаимодействие вещества с O2 (окислительно-восстановительная реакция); кислотно-основная нейтрализация — соединение ионов H+ кислоты и OH- основания с образованием воды.",
         "ar": "الاحتراق هو تفاعل مادة مع O2 (تفاعل أكسدة واختزال)؛ أما التعادل فهو اتحاد أيونات H+ من الحمض وOH- من القاعدة لتكوين الماء.",
-        "zh": "燃烧是物质与 O2 发生的反应（氧化还原反应）；中和是酸的 H+ 与碱的 OH- 结合生成水。",
+        "zh": "燃烧反应是物质与 O2 发生的反应（氧化还原反应）；酸碱中和是酸的 H+ 与碱的 OH- 结合生成水。",
         "ku": "Reaksiyona şewatê reaksiyona maddeyekê bi O2 re ye (reaksiyoneke oksîdasyon-reduksiyonê); neutralîzasyon yekbûna H+ ya asîdê û OH- ya bazê ye ku avê çêdike."
       }
     },
@@ -817,7 +817,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Rapport molaire",
         "ru": "Мольное соотношение",
         "ar": "النسبة المولية",
-        "zh": "摩尔比",
+        "zh": "物质的量之比",
         "ku": "Rêjeya molan"
       },
       "conceptB": {
@@ -837,7 +837,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Le rapport molaire est égal au rapport des coefficients de l'équation équilibrée ; le rapport massique s'obtient en multipliant les coefficients par les masses molaires.",
         "ru": "Мольное соотношение равно отношению коэффициентов в уравненной реакции; массовое соотношение находят, умножая коэффициенты на молярные массы.",
         "ar": "النسبة المولية تساوي نسبة المعاملات في المعادلة الموزونة؛ أما النسبة الكتلية فتُحسب بضرب المعاملات في الكتل المولية.",
-        "zh": "摩尔比等于配平方程式中各物质的系数之比；质量比则由系数乘以各自的摩尔质量求得。",
+        "zh": "物质的量之比等于配平的化学方程式中各物质的系数之比；质量比则由系数乘以各自的摩尔质量求得。",
         "ku": "Rêjeya molan bi rêjeya hevberên di hevkêşeya hevsengkirî de wekhev e; rêjeya girseyan jî bi lêdana hevberan bi girseyên molar tê dîtin."
       }
     }
@@ -871,9 +871,9 @@ export const unit07: ChemistryUnitSeedData = {
           "en": "Convert the given amounts to moles",
           "de": "Gegebene Mengen in Mol umrechnen",
           "fr": "Convertir les quantités données en moles",
-          "ru": "Перевести данные количества в моли",
+          "ru": "Перевести данные величины в количество вещества (моль)",
           "ar": "حوّل الكميات المعطاة إلى مولات",
-          "zh": "将已知量换算成摩尔数",
+          "zh": "将已知量换算成物质的量",
           "ku": "Mîqdarên dayî veguherîne molan"
         },
         {
@@ -881,9 +881,9 @@ export const unit07: ChemistryUnitSeedData = {
           "en": "Divide each mole number by its coefficient to find the limiting reactant",
           "de": "Stoffmengen durch die Koeffizienten teilen und den limitierenden Reaktanten bestimmen",
           "fr": "Diviser le nombre de moles par le coefficient et trouver le réactif limitant",
-          "ru": "Разделить число молей на коэффициент и найти лимитирующий реагент",
+          "ru": "Разделить количество вещества каждого реагента на его коэффициент и найти лимитирующий реагент",
           "ar": "اقسم عدد المولات على المعامل وحدد المادة المحددة",
-          "zh": "用摩尔数除以系数，找出限量反应物",
+          "zh": "用物质的量除以系数，找出限量反应物",
           "ku": "Hejmara molan li hevberê parve bike û reaktanta sînordar bibîne"
         },
         {
@@ -891,9 +891,9 @@ export const unit07: ChemistryUnitSeedData = {
           "en": "Calculate the moles and mass of product from the limiting reactant",
           "de": "Stoffmenge und Masse des Produkts über den limitierenden Reaktanten berechnen",
           "fr": "Calculer le nombre de moles et la masse de produit à partir du réactif limitant",
-          "ru": "Рассчитать количество молей и массу продукта по лимитирующему реагенту",
+          "ru": "По лимитирующему реагенту рассчитать количество вещества и массу продукта",
           "ar": "احسب عدد مولات الناتج وكتلته اعتمادًا على المادة المحددة",
-          "zh": "根据限量反应物计算产物的摩尔数和质量",
+          "zh": "根据限量反应物计算产物的物质的量和质量",
           "ku": "Li gorî reaktanta sînordar mol û girseya hilberê hesab bike"
         }
       ]
@@ -905,7 +905,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Steps for Balancing a Reaction",
         "de": "Schritte zum Ausgleichen einer Reaktionsgleichung",
         "fr": "Étapes pour équilibrer une réaction",
-        "ru": "Этапы уравнивания реакции",
+        "ru": "Расстановка коэффициентов в уравнении реакции",
         "ar": "خطوات موازنة التفاعل",
         "zh": "配平化学方程式的步骤",
         "ku": "Gavên hevsengkirina reaksiyonê"
@@ -946,7 +946,7 @@ export const unit07: ChemistryUnitSeedData = {
           "en": "Reduce the coefficients to the smallest whole numbers",
           "de": "Die Koeffizienten werden auf die kleinsten ganzen Zahlen gekürzt",
           "fr": "Les coefficients sont réduits aux plus petits nombres entiers",
-          "ru": "Коэффициенты сокращают до наименьших целых чисел",
+          "ru": "Коэффициенты приводят к наименьшим целым числам",
           "ar": "تُختزل المعاملات إلى أصغر أعداد صحيحة",
           "zh": "将系数化为最简整数",
           "ku": "Hevber bi hejmarên tam ên herî biçûk tên kêmkirin"
@@ -1015,7 +1015,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Determining Percent Yield",
         "de": "Bestimmung der prozentualen Ausbeute",
         "fr": "Détermination du pourcentage de rendement",
-        "ru": "Определение процентного выхода",
+        "ru": "Определение выхода продукта",
         "ar": "تحديد النسبة المئوية للمردود",
         "zh": "百分产率的测定",
         "ku": "Diyarkirina berhema ji sedî"
@@ -1036,7 +1036,7 @@ export const unit07: ChemistryUnitSeedData = {
           "en": "The dry product is weighed to determine the actual yield",
           "de": "Das trockene Produkt wird gewogen, um die tatsächliche Ausbeute zu bestimmen",
           "fr": "Le produit sec est pesé pour déterminer le rendement réel",
-          "ru": "Сухой продукт взвешивают и определяют фактический выход",
+          "ru": "Сухой продукт взвешивают и определяют практический выход",
           "ar": "يُوزن الناتج الجاف لتحديد المردود الفعلي",
           "zh": "称量干燥的产物，确定实际产量",
           "ku": "Hilbera ziwa tê kêşan û berhema rastîn tê diyarkirin"
@@ -1046,7 +1046,7 @@ export const unit07: ChemistryUnitSeedData = {
           "en": "The actual yield is divided by the calculated theoretical yield",
           "de": "Die tatsächliche Ausbeute wird durch die berechnete theoretische Ausbeute geteilt",
           "fr": "Le rendement réel est divisé par le rendement théorique calculé",
-          "ru": "Фактический выход делят на рассчитанный теоретический выход",
+          "ru": "Практический выход делят на рассчитанный теоретический выход",
           "ar": "يُقسم المردود الفعلي على المردود النظري المحسوب",
           "zh": "用实际产量除以计算出的理论产量",
           "ku": "Berhema rastîn li ser berhema teorîk a hesibandî tê dabeşkirin"
@@ -1056,7 +1056,7 @@ export const unit07: ChemistryUnitSeedData = {
           "en": "The quotient is multiplied by 100 to give the percent yield",
           "de": "Der Quotient wird mit 100 multipliziert und ergibt die prozentuale Ausbeute",
           "fr": "Le quotient est multiplié par 100 pour obtenir le pourcentage de rendement",
-          "ru": "Частное умножают на 100 и получают процентный выход",
+          "ru": "Частное умножают на 100 и получают выход продукта в процентах",
           "ar": "يُضرب ناتج القسمة في 100 للحصول على النسبة المئوية للمردود",
           "zh": "将商乘以 100 得到百分产率",
           "ku": "Encam bi 100 tê lêdan û berhema ji sedî tê dîtin"
@@ -1072,7 +1072,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "According to the reaction C3H8 + 5 O2 -> 3 CO2 + 4 H2O, what is the minimum volume in litres of O2 gas, at standard conditions (STP), needed for the complete combustion of 0.2 mol C3H8?",
         "de": "Wie viele Liter O2-Gas werden gemäß der Reaktion C3H8 + 5 O2 -> 3 CO2 + 4 H2O unter Normalbedingungen mindestens für die vollständige Verbrennung von 0,2 mol C3H8 benötigt?",
         "fr": "D'après la réaction C3H8 + 5 O2 -> 3 CO2 + 4 H2O, quel volume minimal de dioxygène O2, en litres, mesuré dans les conditions normales, faut-il pour la combustion complète de 0,2 mol de C3H8 ?",
-        "ru": "Согласно реакции C3H8 + 5 O2 -> 3 CO2 + 4 H2O, какой минимальный объём O2 (в литрах, н. у.) необходим для полного сгорания 0,2 моль C3H8?",
+        "ru": "Какой наименьший объём O2 (в литрах, н. у.) необходим для полного сгорания 0,2 моль C3H8 по реакции C3H8 + 5 O2 -> 3 CO2 + 4 H2O?",
         "ar": "وفقًا للتفاعل C3H8 + 5 O2 -> 3 CO2 + 4 H2O، ما أقل حجم بالتر من غاز O2 في الظروف القياسية يلزم للاحتراق الكامل لـ 0.2 mol من C3H8؟",
         "zh": "根据反应 C3H8 + 5 O2 -> 3 CO2 + 4 H2O，0.2 mol C3H8 完全燃烧至少需要标准状况下多少升 O2？",
         "ku": "Li gorî reaksiyona C3H8 + 5 O2 -> 3 CO2 + 4 H2O, ji bo şewata tevahî ya 0,2 mol C3H8 di şertên normal de herî kêm çend lître gaza O2 hewce ye?"
@@ -1150,7 +1150,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Laquelle des formules suivantes est l'équation ionique nette de la réaction AgNO3(aq) + KBr(aq) -> AgBr(s) + KNO3(aq) ?",
         "ru": "Какое из приведённых уравнений является сокращённым ионным уравнением реакции AgNO3(р-р) + KBr(р-р) -> AgBr(тв) + KNO3(р-р)?",
         "ar": "أي مما يلي يمثل المعادلة الأيونية الصافية للتفاعل AgNO3(aq) + KBr(aq) -> AgBr(s) + KNO3(aq)؟",
-        "zh": "以下哪项是反应 AgNO3(aq) + KBr(aq) -> AgBr(s) + KNO3(aq) 的净离子方程式？",
+        "zh": "反应 AgNO3(aq) + KBr(aq) -> AgBr(s) + KNO3(aq) 的净离子方程式是下列哪一项？",
         "ku": "Kîjan ji yên jêrîn hevkêşeya îyonî ya net a reaksiyona AgNO3(aq) + KBr(aq) -> AgBr(k) + KNO3(aq) e?"
       },
       "options": [
@@ -1213,7 +1213,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Dans une réaction de dissolution-précipitation, l'équation ionique nette s'écrit uniquement avec les ions qui forment le précipité : Ag+(aq) + Br-(aq) -> AgBr(s). K+ et NO3- sont des ions spectateurs qui restent inchangés en solution ; ils ne figurent donc pas dans l'équation ionique nette.",
         "ru": "В реакции растворения-осаждения сокращённое ионное уравнение записывают только с ионами, образующими осадок: Ag+(р-р) + Br-(р-р) -> AgBr(тв). Ионы K+ и NO3- — ионы-наблюдатели: они остаются в растворе без изменений и поэтому в сокращённое ионное уравнение не входят.",
         "ar": "في تفاعل الذوبان والترسيب تُكتب المعادلة الأيونية الصافية بالأيونات التي تكوّن الراسب فقط: Ag+(aq) + Br-(aq) -> AgBr(s). أما K+ وNO3- فأيونان متفرجان يبقيان في المحلول دون تغيير، ولذلك لا يظهران في المعادلة الأيونية الصافية.",
-        "zh": "在溶解-沉淀反应中，净离子方程式只用生成沉淀的离子来书写：Ag+(aq) + Br-(aq) -> AgBr(s)。K+ 和 NO3- 是留在溶液中不发生变化的旁观离子，因此不出现在净离子方程式中。",
+        "zh": "在沉淀反应中，净离子方程式只用生成沉淀的离子来书写：Ag+(aq) + Br-(aq) -> AgBr(s)。K+ 和 NO3- 是留在溶液中不发生变化的旁观离子，因此不出现在净离子方程式中。",
         "ku": "Di reaksiyonên helbûn-niştinê de hevkêşeya îyonî ya net tenê bi îyonên ku niştê çêdikin tê nivîsandin: Ag+(aq) + Br-(aq) -> AgBr(k). K+ û NO3- îyonên temaşevan in ku di çareseriyê de bê guhertin dimînin; ji ber vê yekê di hevkêşeya îyonî ya net de cih nagirin."
       }
     },
@@ -1300,7 +1300,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Three reactions and one statement about each are given below.\nI. CaCO3(s) -> CaO(s) + CO2(g) is an analysis (decomposition) reaction.\nII. 2H2(g) + O2(g) -> 2H2O(l) is both a synthesis and a combustion reaction.\nIII. In HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l), Na+ and Cl- are spectator ions.\nWhich of these statements are correct?",
         "de": "Unten sind drei Reaktionen mit je einer Aussage angegeben.\nI. CaCO3(s) -> CaO(s) + CO2(g) ist eine Zersetzungsreaktion (Analyse).\nII. 2H2(g) + O2(g) -> 2H2O(l) ist sowohl eine Synthese als auch eine Verbrennung.\nIII. Bei HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l) sind Na+ und Cl- Zuschauerionen.\nWelche dieser Aussagen sind richtig?",
         "fr": "Trois réactions et une affirmation sur chacune sont données ci-dessous.\nI. CaCO3(s) -> CaO(s) + CO2(g) est une réaction de décomposition (analyse).\nII. 2H2(g) + O2(g) -> 2H2O(l) est à la fois une synthèse et une combustion.\nIII. Dans HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l), Na+ et Cl- sont des ions spectateurs.\nLesquelles de ces affirmations sont correctes ?",
-        "ru": "Ниже даны три реакции и по одному утверждению о каждой.\nI. CaCO3(тв) -> CaO(тв) + CO2(г) — реакция разложения (анализ).\nII. 2H2(г) + O2(г) -> 2H2O(ж) — одновременно реакция соединения (синтеза) и горения.\nIII. В реакции HCl(р-р) + NaOH(р-р) -> NaCl(р-р) + H2O(ж) ионы Na+ и Cl- являются ионами-наблюдателями.\nКакие из этих утверждений верны?",
+        "ru": "Ниже даны три реакции и по одному утверждению о каждой.\nI. CaCO3(тв) -> CaO(тв) + CO2(г) — реакция разложения.\nII. 2H2(г) + O2(г) -> 2H2O(ж) — одновременно реакция соединения и горения.\nIII. В реакции HCl(р-р) + NaOH(р-р) -> NaCl(р-р) + H2O(ж) ионы Na+ и Cl- являются ионами-наблюдателями.\nКакие из этих утверждений верны?",
         "ar": "فيما يلي ثلاثة تفاعلات وعبارة عن كل منها:\nI. التفاعل CaCO3(s) -> CaO(s) + CO2(g) تفاعل تحليل (تفكك).\nII. التفاعل 2H2(g) + O2(g) -> 2H2O(l) تفاعل تخليق واحتراق في آن واحد.\nIII. في التفاعل HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l) يكون Na+ وCl- أيونين متفرجين.\nأي هذه العبارات صحيحة؟",
         "zh": "下面给出三个反应及关于每个反应的一个说法：\nI. CaCO3(s) -> CaO(s) + CO2(g) 是分解反应。\nII. 2H2(g) + O2(g) -> 2H2O(l) 既是化合反应又是燃烧反应。\nIII. 在 HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(l) 中，Na+ 和 Cl- 是旁观离子。\n以上说法中哪些正确？",
         "ku": "Li jêr sê reaksiyon û li ser her yekê gotinek hatine dayîn.\nI. CaCO3(k) -> CaO(k) + CO2(g) reaksiyoneke analîzê (perçebûnê) ye.\nII. 2H2(g) + O2(g) -> 2H2O(s) hem reaksiyona sentezê hem jî ya şewatê ye.\nIII. Di HCl(aq) + NaOH(aq) -> NaCl(aq) + H2O(s) de îyonên Na+ û Cl- îyonên temaşevan in.\nKîjan ji van gotinan rast in?"
@@ -1363,9 +1363,9 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "I is correct: a single compound (CaCO3) splits into two simpler substances on heating. II is correct: two elements combine into one compound (synthesis) and H2 reacts with O2 (combustion). III is correct: the net ionic equation is H+(aq) + OH-(aq) -> H2O(l), and Na+ and Cl- remain unchanged in solution. All three statements are correct.",
         "de": "I ist richtig: Eine einzige Verbindung (CaCO3) zerfällt beim Erhitzen in zwei einfachere Stoffe. II ist richtig: Zwei Elemente vereinigen sich zu einer Verbindung (Synthese), und H2 reagiert mit O2 (Verbrennung). III ist richtig: Die Netto-Ionengleichung lautet H+(aq) + OH-(aq) -> H2O(l); Na+ und Cl- bleiben unverändert in Lösung. Alle drei Aussagen sind richtig.",
         "fr": "I est correcte : un seul composé (CaCO3) se décompose par chauffage en deux substances plus simples. II est correcte : deux éléments s'unissent en un composé (synthèse) et H2 réagit avec O2 (combustion). III est correcte : l'équation ionique nette est H+(aq) + OH-(aq) -> H2O(l) ; Na+ et Cl- restent inchangés en solution. Les trois affirmations sont correctes.",
-        "ru": "I верно: одно соединение (CaCO3) при нагревании распадается на два более простых вещества. II верно: два простых вещества соединяются в одно (синтез), и H2 реагирует с O2 (горение). III верно: сокращённое ионное уравнение H+(р-р) + OH-(р-р) -> H2O(ж), а Na+ и Cl- остаются в растворе без изменений. Верны все три утверждения.",
+        "ru": "I верно: одно соединение (CaCO3) при нагревании распадается на два более простых вещества. II верно: два простых вещества соединяются в одно (реакция соединения), и H2 реагирует с O2 (горение). III верно: сокращённое ионное уравнение H+(р-р) + OH-(р-р) -> H2O(ж), а Na+ и Cl- остаются в растворе без изменений. Верны все три утверждения.",
         "ar": "العبارة I صحيحة: مركب واحد (CaCO3) يتفكك بالتسخين إلى مادتين أبسط. العبارة II صحيحة: يتحد عنصران لتكوين مركب واحد (تخليق) ويتفاعل H2 مع O2 (احتراق). العبارة III صحيحة: المعادلة الأيونية الصافية H+(aq) + OH-(aq) -> H2O(l)، ويبقى Na+ وCl- دون تغيير في المحلول. العبارات الثلاث صحيحة.",
-        "zh": "I 正确：一种化合物（CaCO3）受热分解成两种较简单的物质。II 正确：两种单质结合成一种化合物（化合），且 H2 与 O2 反应（燃烧）。III 正确：净离子方程式为 H+(aq) + OH-(aq) -> H2O(l)，Na+ 和 Cl- 在溶液中保持不变。三个说法都正确。",
+        "zh": "I 正确：一种化合物(CaCO3)受热分解成两种较简单的物质。II 正确：两种单质结合成一种化合物（化合），且 H2 与 O2 反应（燃烧）。III 正确：净离子方程式为 H+(aq) + OH-(aq) -> H2O(l)，Na+ 和 Cl- 在溶液中保持不变。三个说法都正确。",
         "ku": "I rast e: pêkhateyek tenê (CaCO3) bi germê dibe du maddeyên hêsantir. II rast e: du element dibin yek û pêkhateyekê çêdikin (sentez) û H2 bi O2 re reaksiyonê dike (şewat). III rast e: hevkêşeya îyonî ya net H+(aq) + OH-(aq) -> H2O(s) e; Na+ û Cl- di çareseriyê de bê guhertin dimînin. Her sê gotin rast in."
       }
     },
@@ -1378,7 +1378,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "D'après 2KClO3(s) -> 2KCl(s) + 3O2(g), quelle masse de dioxygène O2 se forme lorsque 24,5 g de KClO3 solide se décomposent complètement ? (KClO3 = 122,5 g/mol, O = 16 g/mol)",
         "ru": "Сколько граммов O2 образуется по реакции 2KClO3(тв) -> 2KCl(тв) + 3O2(г) при полном разложении 24,5 г KClO3? (KClO3 = 122,5 г/моль, O = 16 г/моль)",
         "ar": "وفقًا للتفاعل 2KClO3(s) -> 2KCl(s) + 3O2(g)، كم غرامًا من غاز O2 يتكون عند التفكك الكامل لـ 24.5 g من KClO3 الصلب؟ (KClO3 = 122.5 g/mol، O = 16 g/mol)",
-        "zh": "根据 2KClO3(s) -> 2KCl(s) + 3O2(g)，24.5 g 固体 KClO3 完全分解生成多少克 O2？（KClO3 = 122.5 g/mol，O = 16 g/mol）",
+        "zh": "根据 2KClO3(s) -> 2KCl(s) + 3O2(g)，24.5 g 固体 KClO3 完全分解生成多少克 O2？(KClO3 = 122.5 g/mol，O = 16 g/mol)",
         "ku": "Li gorî 2KClO3(k) -> 2KCl(k) + 3O2(g), dema ku 24,5 g KClO3 ya hişk bi tevahî perçe dibe, çend gram gaza O2 çêdibe? (KClO3 = 122,5 g/mol, O = 16 g/mol)"
       },
       "options": [
@@ -1441,7 +1441,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "n(KClO3) = 24,5 / 122,5 = 0,2 mol. D'après l'équation, 2 mol de KClO3 donnent 3 mol de O2 : n(O2) = 0,2 x 3/2 = 0,3 mol. m(O2) = 0,3 x 32 = 9,6 g. La réponse 24,5 g suppose que tout le KClO3 devient O2 (il se forme aussi KCl) ; 19,2 g vient de la multiplication de la quantité d'atomes O (0,6 mol) par la masse molaire de O2.",
         "ru": "n(KClO3) = 24,5 / 122,5 = 0,2 моль. По уравнению из 2 моль KClO3 образуется 3 моль O2: n(O2) = 0,2 x 3/2 = 0,3 моль. m(O2) = 0,3 x 32 = 9,6 г. Ответ 24,5 г получается, если считать, что весь KClO3 превращается в O2 (образуется и KCl), а 19,2 г — если число моль атомов O (0,6 моль) умножить на молярную массу O2.",
         "ar": "n(KClO3) = 24.5 / 122.5 = 0.2 mol. وفق المعادلة ينتج 3 mol من O2 من 2 mol من KClO3: n(O2) = 0.2 × 3/2 = 0.3 mol، وm(O2) = 0.3 × 32 = 9.6 g. أما الجواب 24.5 g فيأتي من افتراض تحول KClO3 كله إلى O2 (مع أن KCl يتكون أيضًا)، والجواب 19.2 g من ضرب عدد مولات ذرات O ‏(0.6 mol) في الكتلة المولية لـ O2.",
-        "zh": "n(KClO3) = 24.5 / 122.5 = 0.2 mol。由方程式 2 mol KClO3 生成 3 mol O2：n(O2) = 0.2 x 3/2 = 0.3 mol，m(O2) = 0.3 x 32 = 9.6 g。得 24.5 g 是误以为 KClO3 全部变成 O2（还生成 KCl）；得 19.2 g 是把 O 原子的物质的量（0.6 mol）乘以 O2 的摩尔质量。",
+        "zh": "n(KClO3) = 24.5 / 122.5 = 0.2 mol。由方程式 2 mol KClO3 生成 3 mol O2：n(O2) = 0.2 x 3/2 = 0.3 mol，m(O2) = 0.3 x 32 = 9.6 g。得 24.5 g 是误以为 KClO3 全部变成 O2 (还生成 KCl)；得 19.2 g 是把 O 原子的物质的量(0.6 mol)乘以 O2 的摩尔质量。",
         "ku": "n(KClO3) = 24,5 / 122,5 = 0,2 mol. Li gorî hevkêşeyê ji 2 mol KClO3 3 mol O2 çêdibe: n(O2) = 0,2 x 3/2 = 0,3 mol. m(O2) = 0,3 x 32 = 9,6 g. Bersiva 24,5 g ji texmîna ku hemû KClO3 vediguhere O2 tê (KCl jî çêdibe); 19,2 g jî ji lêdana hejmara molên atomên O (0,6 mol) bi girseya molar a O2 tê."
       }
     },
@@ -1454,7 +1454,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "D'après l'équation équilibrée 2X + 7O2 -> 4CO2 + 6H2O, quelle est la formule de la substance X ?",
         "ru": "Какова формула вещества X согласно уравнению 2X + 7O2 -> 4CO2 + 6H2O?",
         "ar": "وفقًا للمعادلة الموزونة 2X + 7O2 -> 4CO2 + 6H2O، ما صيغة المادة X؟",
-        "zh": "根据已配平的方程式 2X + 7O2 -> 4CO2 + 6H2O，物质 X 的化学式是什么？",
+        "zh": "根据已配平的方程式 2X + 7O2 -> 4CO2 + 6H2O，物质 X 的化学式是下列哪一项？",
         "ku": "Li gorî hevkêşeya hevsengkirî 2X + 7O2 -> 4CO2 + 6H2O, formula maddeya X kîjan e?"
       },
       "options": [
@@ -1530,7 +1530,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "D'après CaCO3(s) -> CaO(s) + CO2(g), le chauffage de 50 g de CaCO3 pur donne 22,4 g de CaO. Quel est le pourcentage de rendement de la réaction ? (CaCO3 = 100 g/mol, CaO = 56 g/mol)",
         "ru": "По реакции CaCO3(тв) -> CaO(тв) + CO2(г) при нагревании 50 г чистого CaCO3 получено 22,4 г CaO. Каков процентный выход реакции? (CaCO3 = 100 г/моль, CaO = 56 г/моль)",
         "ar": "وفقًا للتفاعل CaCO3(s) -> CaO(s) + CO2(g)، عند تسخين 50 g من CaCO3 النقي نحصل على 22.4 g من CaO. ما النسبة المئوية لمردود التفاعل؟ (CaCO3 = 100 g/mol، CaO = 56 g/mol)",
-        "zh": "根据 CaCO3(s) -> CaO(s) + CO2(g)，加热 50 g 纯 CaCO3 得到 22.4 g CaO。该反应的百分产率是多少？（CaCO3 = 100 g/mol，CaO = 56 g/mol）",
+        "zh": "根据 CaCO3(s) -> CaO(s) + CO2(g)，加热 50 g 纯 CaCO3 得到 22.4 g CaO。该反应的百分产率是多少？(CaCO3 = 100 g/mol，CaO = 56 g/mol)",
         "ku": "Li gorî CaCO3(k) -> CaO(k) + CO2(g), dema ku 50 g CaCO3 ya paqij tê germkirin 22,4 g CaO tê bidestxistin. Berhema ji sedî ya reaksiyonê çend e? (CaCO3 = 100 g/mol, CaO = 56 g/mol)"
       },
       "options": [
@@ -1606,7 +1606,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Un échantillon de zinc impur de 13 g réagit complètement avec un excès de solution de HCl selon Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g) et l'on obtient 0,2 g de dihydrogène H2. Les impuretés ne réagissent pas avec HCl. Quel est le pourcentage massique de Zn dans l'échantillon ? (Zn = 65 g/mol, H = 1 g/mol)",
         "ru": "Образец цинка массой 13 г с примесями полностью прореагировал с избытком раствора HCl по реакции Zn(тв) + 2HCl(р-р) -> ZnCl2(р-р) + H2(г); получено 0,2 г H2. Примеси с HCl не реагируют. Какова массовая доля Zn в образце (в %)? (Zn = 65 г/моль, H = 1 г/моль)",
         "ar": "تتفاعل عينة زنك كتلتها 13 g تحتوي على شوائب تفاعلًا كاملًا مع فائض من محلول HCl وفق Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g)، فيتكون 0.2 g من غاز H2. إذا كانت الشوائب لا تتفاعل مع HCl، فما النسبة المئوية الكتلية لـ Zn في العينة؟ (Zn = 65 g/mol، H = 1 g/mol)",
-        "zh": "13 g 含杂质的锌样品与足量 HCl 溶液按 Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g) 完全反应，得到 0.2 g H2。杂质不与 HCl 反应，样品中 Zn 的质量分数是多少？（Zn = 65 g/mol，H = 1 g/mol）",
+        "zh": "13 g 含杂质的锌样品与足量 HCl 溶液按 Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g) 完全反应，得到 0.2 g H2。杂质不与 HCl 反应，样品中 Zn 的质量分数是多少？(Zn = 65 g/mol，H = 1 g/mol)",
         "ku": "Nimûneyeke zinkê ya 13 gramî ku hinek nepakî tê de heye, li gorî Zn(k) + 2HCl(aq) -> ZnCl2(aq) + H2(g) bi têra xwe çareseriya HCl re bi tevahî reaksiyonê dike û 0,2 g gaza H2 tê bidestxistin. Nepakî bi HCl re reaksiyonê nakin; nimûne ji hêla girseyê ve ji sedî çend Zn dihewîne? (Zn = 65 g/mol, H = 1 g/mol)"
       },
       "options": [
@@ -1667,7 +1667,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "n(H2) = 0.2 / 2 = 0.1 mol. With Zn : H2 = 1 : 1, 0.1 mol Zn reacted: m(Zn) = 0.1 x 65 = 6.5 g. Purity = (6.5 / 13) x 100 = 50%. A student who takes the molar mass of H2 as 1 g/mol finds 0.2 mol Zn = 13 g and wrongly concludes the sample is 100% pure.",
         "de": "n(H2) = 0,2 / 2 = 0,1 mol. Bei Zn : H2 = 1 : 1 haben 0,1 mol Zn reagiert: m(Zn) = 0,1 x 65 = 6,5 g. Reinheit = (6,5 / 13) x 100 = 50 %. Wer für H2 die molare Masse 1 g/mol ansetzt, erhält 0,2 mol Zn = 13 g und hält die Probe fälschlich für 100 % rein.",
         "fr": "n(H2) = 0,2 / 2 = 0,1 mol. Comme Zn : H2 = 1 : 1, 0,1 mol de Zn a réagi : m(Zn) = 0,1 x 65 = 6,5 g. Pureté = (6,5 / 13) x 100 = 50 %. Prendre 1 g/mol comme masse molaire de H2 donne 0,2 mol de Zn = 13 g et fait croire à tort que l'échantillon est pur à 100 %.",
-        "ru": "n(H2) = 0,2 / 2 = 0,1 моль. Так как Zn : H2 = 1 : 1, прореагировало 0,1 моль Zn: m(Zn) = 0,1 x 65 = 6,5 г. Чистота = (6,5 / 13) x 100 = 50 %. Если взять молярную массу H2 равной 1 г/моль, получится 0,2 моль Zn = 13 г и ошибочный вывод о 100 % чистоте.",
+        "ru": "n(H2) = 0,2 / 2 = 0,1 моль. Так как Zn : H2 = 1 : 1, прореагировало 0,1 моль Zn: m(Zn) = 0,1 x 65 = 6,5 г. Массовая доля Zn = (6,5 / 13) x 100 = 50 %. Если взять молярную массу H2 равной 1 г/моль, получится 0,2 моль Zn = 13 г и ошибочный вывод, что образец на 100 % чистый.",
         "ar": "n(H2) = 0.2 / 2 = 0.1 mol. وبما أن Zn : H2 = 1 : 1 فقد تفاعل 0.1 mol من Zn: m(Zn) = 0.1 × 65 = 6.5 g. النقاوة = (6.5 / 13) × 100 = 50%. ومن يأخذ الكتلة المولية لـ H2 على أنها 1 g/mol يحصل على 0.2 mol Zn = 13 g فيظن خطأً أن العينة نقية 100%.",
         "zh": "n(H2) = 0.2 / 2 = 0.1 mol。Zn : H2 = 1 : 1，故反应的 Zn 为 0.1 mol：m(Zn) = 0.1 x 65 = 6.5 g。纯度 = (6.5 / 13) x 100 = 50%。把 H2 的摩尔质量当作 1 g/mol 会得到 0.2 mol Zn = 13 g，误认为样品纯度为 100%。",
         "ku": "n(H2) = 0,2 / 2 = 0,1 mol. Ji ber ku Zn : H2 = 1 : 1 e, 0,1 mol Zn reaksiyon kiriye: m(Zn) = 0,1 x 65 = 6,5 g. Paqijî = (6,5 / 13) x 100 = %50. Kesê girseya molar a H2 wek 1 g/mol digire 0,2 mol Zn = 13 g dibîne û bi şaşî nimûneyê %100 paqij dihesibîne."
@@ -1821,7 +1821,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Dans un récipient fermé, aucune matière n'entre ni ne sort : la masse totale est conservée (I). Les atomes sont seulement réarrangés : il y a 2 S et 6 O de chaque côté (II). Le nombre de molécules dépend des coefficients : 2 + 1 = 3 molécules en donnent 2, il n'est donc pas conservé (III est faux).",
         "ru": "В закрытом сосуде вещество не поступает и не уходит, поэтому общая масса сохраняется (I). Атомы лишь перегруппировываются: в обеих частях 2 атома S и 6 атомов O (II). Число молекул зависит от коэффициентов: из 2 + 1 = 3 молекул образуются 2, поэтому оно не сохраняется (III неверно).",
         "ar": "في الوعاء المغلق لا تدخل مادة ولا تخرج، لذا تُحفظ الكتلة الكلية (I). والذرات لا تفنى بل يُعاد ترتيبها، ففي كل طرف ذرتا S و6 ذرات O ‏(II). أما عدد الجزيئات فيعتمد على المعاملات: من 2 + 1 = 3 جزيئات ينتج جزيئان، فلا يُحفظ (III خاطئة).",
-        "zh": "密闭容器中没有物质进出，总质量守恒（I）。原子只是重新组合：两边都有 2 个 S 和 6 个 O（II）。分子数取决于系数：2 + 1 = 3 个分子生成 2 个分子，因此不守恒（III 错误）。",
+        "zh": "密闭容器中没有物质进出，总质量守恒(I)。原子只是重新组合：两边都有 2 个 S 和 6 个 O (II)。分子数取决于系数：2 + 1 = 3 个分子生成 2 个分子，因此不守恒(III 错误)。",
         "ku": "Di firaxeke girtî de tu madde nakeve û dernakeve, ji ber vê girseya giştî tê parastin (I). Atom tenê ji nû ve tên rêzkirin: li her du aliyan 2 S û 6 atomên O hene (II). Hejmara molekulan bi hevberan ve girêdayî ye: ji 2 + 1 = 3 molekulan 2 molekul çêdibin, ji ber vê nayê parastin (III şaş e)."
       }
     },
@@ -1908,7 +1908,7 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Which of the following everyday events is an example of an acid–base (neutralisation) reaction?",
         "de": "Welches der folgenden Alltagsereignisse ist ein Beispiel für eine Säure-Base-Reaktion (Neutralisation)?",
         "fr": "Lequel des phénomènes quotidiens suivants est un exemple de réaction acide-base (neutralisation) ?",
-        "ru": "Какое из следующих повседневных явлений является примером кислотно-основной реакции (нейтрализации)?",
+        "ru": "Какое из бытовых явлений служит примером кислотно-основной реакции (нейтрализации)?",
         "ar": "أي من الظواهر اليومية التالية مثال على تفاعل حمض-قاعدة (تعادل)؟",
         "zh": "下列日常现象中，哪一项是酸碱（中和）反应的例子？",
         "ku": "Kîjan ji van bûyerên jiyana rojane mînaka reaksiyoneke asît-baz (neutralîzasyonê) ye?"
@@ -1921,7 +1921,7 @@ export const unit07: ChemistryUnitSeedData = {
           "fr": "Le calcaire chauffé dans un four qui se transforme en chaux vive (CaO)",
           "ru": "Превращение известняка при прокаливании в печи в негашёную известь (CaO)",
           "ar": "تحول الحجر الجيري بالتسخين في الفرن إلى جير حي (CaO)",
-          "zh": "石灰石在窑中加热变成生石灰（CaO）",
+          "zh": "石灰石在窑中加热变成生石灰(CaO)",
           "ku": "Kevirê kilsê di firnê de tê germkirin û vediguhere kilsa nevemirî (CaO)"
         },
         {
@@ -1931,7 +1931,7 @@ export const unit07: ChemistryUnitSeedData = {
           "fr": "L'excès d'acide gastrique (HCl) neutralisé par un antiacide contenant Mg(OH)2",
           "ru": "Устранение избытка желудочной кислоты (HCl) антацидом, содержащим Mg(OH)2",
           "ar": "معالجة فرط حمض المعدة (HCl) بمضاد حموضة يحتوي على Mg(OH)2",
-          "zh": "用含 Mg(OH)2 的抗酸药消除过多的胃酸（HCl）",
+          "zh": "用含 Mg(OH)2 的抗酸药消除过多的胃酸(HCl)",
           "ku": "Rakirina zêdebûna asîda mîdeyê (HCl) bi antîasîdeke ku Mg(OH)2 dihewîne"
         },
         {
@@ -1941,7 +1941,7 @@ export const unit07: ChemistryUnitSeedData = {
           "fr": "Le gaz naturel (CH4) qui brûle sur une cuisinière",
           "ru": "Горение природного газа (CH4) на плите",
           "ar": "احتراق الغاز الطبيعي (CH4) على الموقد",
-          "zh": "天然气（CH4）在灶上燃烧",
+          "zh": "天然气(CH4)在灶上燃烧",
           "ku": "Şewata gaza xwezayî (CH4) li ser ocaxê"
         },
         {
@@ -1986,7 +1986,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "On prend des masses égales, 8 g chacune, de H2 et de O2, et on réalise la réaction 2H2(g) + O2(g) -> 2H2O(l) avec un rendement de 100 %. Quelle masse d'eau se forme ? (H = 1 g/mol, O = 16 g/mol)",
         "ru": "Взяли равные массы, по 8 г, газов H2 и O2 и провели реакцию 2H2(г) + O2(г) -> 2H2O(ж) со 100 %-ным выходом. Сколько граммов воды образуется? (H = 1 г/моль, O = 16 г/моль)",
         "ar": "أُخذت كتلتان متساويتان، 8 g من كل من غازي H2 وO2، وأُجري التفاعل 2H2(g) + O2(g) -> 2H2O(l) بمردود كامل. كم غرامًا من الماء يتكون؟ (H = 1 g/mol، O = 16 g/mol)",
-        "zh": "取等质量（各 8 g）的 H2 和 O2，按 2H2(g) + O2(g) -> 2H2O(l) 完全反应。生成多少克水？（H = 1 g/mol，O = 16 g/mol）",
+        "zh": "取等质量(各 8 g)的 H2 和 O2，按 2H2(g) + O2(g) -> 2H2O(l) 完全反应。生成多少克水？(H = 1 g/mol，O = 16 g/mol)",
         "ku": "Ji gazên H2 û O2 girseyên wekhev, her yek 8 g, tên girtin û reaksiyona 2H2(g) + O2(g) -> 2H2O(s) bi berhema tevahî pêk tê. Çend gram av çêdibe? (H = 1 g/mol, O = 16 g/mol)"
       },
       "options": [
@@ -2049,7 +2049,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "n(H2) = 8 / 2 = 4 mol, n(O2) = 8 / 32 = 0,25 mol. Moles/coefficient : H2 4/2 = 2, O2 0,25/1 = 0,25 ; O2 est limitant. 0,25 mol de O2 donne 0,5 mol de H2O : 0,5 x 18 = 9 g. La réponse 16 g suppose que toute la masse devient de l'eau, et 72 g considère H2 comme limitant, alors que la majeure partie de H2 (3,5 mol) reste en excès.",
         "ru": "n(H2) = 8 / 2 = 4 моль, n(O2) = 8 / 32 = 0,25 моль. Моль/коэффициент: H2 4/2 = 2, O2 0,25/1 = 0,25; O2 — лимитирующий. Из 0,25 моль O2 образуется 0,5 моль H2O: 0,5 x 18 = 9 г. Ответ 16 г предполагает, что вся масса превращается в воду, а 72 г — что лимитирует H2, хотя большая часть H2 (3,5 моль) остаётся.",
         "ar": "n(H2) = 8 / 2 = 4 mol، وn(O2) = 8 / 32 = 0.25 mol. المول/المعامل: H2 ‏4/2 = 2، وO2 ‏0.25/1 = 0.25، فـ O2 هو المادة المحددة. ينتج 0.25 mol من O2 ‏0.5 mol من H2O: ‏0.5 × 18 = 9 g. والجواب 16 g يفترض تحول الكتلة كلها إلى ماء، والجواب 72 g يعدّ H2 مادة محددة مع أن معظم H2 ‏(3.5 mol) يتبقى.",
-        "zh": "n(H2) = 8 / 2 = 4 mol，n(O2) = 8 / 32 = 0.25 mol。物质的量/系数：H2 为 4/2 = 2，O2 为 0.25/1 = 0.25，O2 是限量反应物。0.25 mol O2 生成 0.5 mol H2O：0.5 x 18 = 9 g。答 16 g 是误以为全部质量都变成水；答 72 g 是把 H2 当作限量反应物，而实际上大部分 H2（3.5 mol）剩余。",
+        "zh": "n(H2) = 8 / 2 = 4 mol，n(O2) = 8 / 32 = 0.25 mol。物质的量/系数：H2 为 4/2 = 2，O2 为 0.25/1 = 0.25，O2 是限量反应物。0.25 mol O2 生成 0.5 mol H2O：0.5 x 18 = 9 g。答 16 g 是误以为全部质量都变成水；答 72 g 是把 H2 当作限量反应物，而实际上大部分 H2 (3.5 mol)剩余。",
         "ku": "n(H2) = 8 / 2 = 4 mol, n(O2) = 8 / 32 = 0,25 mol. Mol/hevber: H2 4/2 = 2, O2 0,25/1 = 0,25; O2 sînordar e. Ji 0,25 mol O2 0,5 mol H2O çêdibe: 0,5 x 18 = 9 g. Bersiva 16 g texmîn dike ku hemû girse dibe av; 72 g jî H2 sînordar dihesibîne, lê beşa mezin a H2 (3,5 mol) dimîne."
       }
     },
@@ -2138,7 +2138,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "Des masses égales (1 g chacune) de CH4, C2H6 et C3H8 sont brûlées complètement, séparément. Laquelle des comparaisons suivantes des quantités de O2 consommées (en moles) est correcte ? (H = 1 g/mol, C = 12 g/mol)",
         "ru": "Равные массы (по 1 г) CH4, C2H6 и C3H8 по отдельности полностью сожгли. Какое сравнение количеств вещества израсходованного O2 верно? (H = 1 г/моль, C = 12 г/моль)",
         "ar": "أُحرقت كتل متساوية (1 g من كل منها) من CH4 وC2H6 وC3H8 احتراقًا كاملًا كلٌّ على حدة. أي المقارنات التالية لعدد مولات O2 المستهلكة صحيحة؟ (H = 1 g/mol، C = 12 g/mol)",
-        "zh": "分别将等质量（各 1 g）的 CH4、C2H6 和 C3H8 完全燃烧。下列关于消耗 O2 物质的量的比较哪一项正确？（H = 1 g/mol，C = 12 g/mol）",
+        "zh": "分别将等质量(各 1 g)的 CH4、C2H6 和 C3H8 完全燃烧。下列关于消耗 O2 物质的量的比较哪一项正确？(H = 1 g/mol，C = 12 g/mol)",
         "ku": "Ji gazên CH4, C2H6 û C3H8 girseyên wekhev (her yek 1 g) cuda cuda bi tevahî tên şewitandin. Berawirdkirina hejmara molên O2 yên xerckirî di kîjan vebijarkê de rast hatiye dayîn? (H = 1 g/mol, C = 12 g/mol)"
       },
       "options": [
@@ -2277,7 +2277,7 @@ export const unit07: ChemistryUnitSeedData = {
         "fr": "On compare les rapports moles/coefficient. Expérience 1 : Y 0,1/2 = 0,05 < X 0,2 ; expérience 2 : Y 0,2/2 = 0,1 < 0,2 ; dans les deux, Y est limitant et la quantité de Z suit Y (I correcte). Dans l'expérience 3, 0,2 mol de X et 0,4 mol de Y sont exactement dans le rapport 1 : 2, les deux sont consommés (III correcte). Dans l'expérience 4, X est limitant ; 0,2 mol de X consomme 0,4 mol de Y, il reste 0,6 - 0,4 = 0,2 mol de Y et non 0,4 mol (II fausse).",
         "ru": "Сравниваем отношения моль/коэффициент. Опыт 1: Y 0,1/2 = 0,05 < X 0,2; опыт 2: Y 0,2/2 = 0,1 < 0,2; в обоих лимитирует Y, и количество Z определяется Y (I верно). В опыте 3 0,2 моль X и 0,4 моль Y находятся точно в отношении 1 : 2, оба расходуются полностью (III верно). В опыте 4 лимитирует X; 0,2 моль X расходуют 0,4 моль Y, остаётся 0,6 - 0,4 = 0,2 моль Y, а не 0,4 моль (II неверно).",
         "ar": "نقارن نسب المول/المعامل. في التجربة 1: ‏Y ‏0.1/2 = 0.05 < X ‏0.2، وفي التجربة 2: ‏Y ‏0.2/2 = 0.1 < 0.2؛ ففي كلتيهما Y هي المادة المحددة وتتبع كمية Z كمية Y ‏(I صحيحة). في التجربة 3 يكون 0.2 mol من X و0.4 mol من Y بنسبة 1 : 2 تمامًا فتُستهلك المادتان (III صحيحة). في التجربة 4 تكون X هي المادة المحددة؛ يستهلك 0.2 mol من X ‏0.4 mol من Y فيتبقى 0.6 - 0.4 = 0.2 mol من Y لا 0.4 mol ‏(II خاطئة).",
-        "zh": "比较物质的量/系数之比。实验 1：Y 0.1/2 = 0.05 < X 0.2；实验 2：Y 0.2/2 = 0.1 < 0.2；两者中 Y 都是限量反应物，Z 的量随 Y 而变（I 正确）。实验 3 中 0.2 mol X 与 0.4 mol Y 恰好为 1 : 2，二者都耗尽（III 正确）。实验 4 中 X 是限量反应物；0.2 mol X 消耗 0.4 mol Y，剩余 0.6 - 0.4 = 0.2 mol Y，而不是 0.4 mol（II 错误）。",
+        "zh": "比较物质的量/系数之比。实验 1：Y 0.1/2 = 0.05 < X 0.2；实验 2：Y 0.2/2 = 0.1 < 0.2；两者中 Y 都是限量反应物，Z 的量随 Y 而变(I 正确)。实验 3 中 0.2 mol X 与 0.4 mol Y 恰好为 1 : 2，二者都耗尽(III 正确)。实验 4 中 X 是限量反应物；0.2 mol X 消耗 0.4 mol Y，剩余 0.6 - 0.4 = 0.2 mol Y，而不是 0.4 mol (II 错误)。",
         "ku": "Rêjeyên mol/hevber tên berawirdkirin. Ceribandin 1: Y 0,1/2 = 0,05 < X 0,2; ceribandin 2: Y 0,2/2 = 0,1 < 0,2; di herduyan de Y sînordar e û mîqdara Z li gorî Y diguhere (I rast e). Di ceribandina 3 de 0,2 mol X û 0,4 mol Y tam bi rêjeya 1 : 2 ne, herdu diqedin (III rast e). Di ceribandina 4 de X sînordar e; 0,2 mol X 0,4 mol Y xerc dike, 0,6 - 0,4 = 0,2 mol Y dimîne, ne 0,4 mol (II şaş e)."
       }
     }

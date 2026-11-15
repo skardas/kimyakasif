@@ -23,7 +23,7 @@ export const unit08: ChemistryUnitSeedData = {
     "fr": "Mélanges homogènes et hétérogènes, concentration et distillation",
     "ru": "Гомогенные и гетерогенные смеси, концентрация и перегонка",
     "ar": "المخاليط المتجانسة وغير المتجانسة والتركيز والتقطير",
-    "zh": "均相与非均相混合物、浓度和蒸馏",
+    "zh": "均匀与非均匀混合物、浓度和蒸馏",
     "ku": "Tevliheviyên homojen û heterojen, giranbûn û distilasyon"
   },
   "facts": [
@@ -36,7 +36,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Les mélanges homogènes (solutions) sont des systèmes monophasés qui ont partout les mêmes propriétés.",
         "ru": "Гомогенные смеси (растворы) — это однофазные системы, обладающие одинаковыми свойствами по всему объёму.",
         "ar": "المخاليط المتجانسة (المحاليل) أنظمة أحادية الطور لها الخصائص نفسها في جميع أجزائها.",
-        "zh": "均相混合物（溶液）是各处性质都相同的单相体系。",
+        "zh": "均匀混合物（溶液）是各处性质都相同的单相体系。",
         "ku": "Tevliheviyên homojen (çareserî) pergalên yek-qonaxî ne ku li her derê wan heman taybetmendî hene."
       },
       "trap": {
@@ -44,9 +44,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Even when viewed without a microscope, colloids appear heterogeneous and precipitate immediately.",
         "de": "Selbst bei Betrachtung ohne Mikroskop erscheinen Kolloide heterogen und fallen sofort aus.",
         "fr": "Même observés sans microscope, les colloïdes semblent hétérogènes et précipitent immédiatement.",
-        "ru": "Даже при осмотре без микроскопа коллоиды кажутся неоднородными и сразу же выпадают в осадок.",
+        "ru": "Коллоиды даже без микроскопа выглядят неоднородными и сразу оседают.",
         "ar": "حتى عند النظر إليها بدون مجهر، تبدو الغرويات غير متجانسة وتترسب على الفور.",
-        "zh": "即使不用显微镜观察，胶体也会显得不均匀并立即沉淀。",
+        "zh": "胶体即使不用显微镜观察也显得不均匀，并且会立即沉降。",
         "ku": "Kolloîd bêyî mîkroskopê jî heterojen xuya dikin û yekser diniştin."
       },
       "whyTrapIsFalse": {
@@ -56,7 +56,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Les colloïdes paraissent homogènes à l'œil nu et, leurs particules étant très petites, ne sédimentent pas rapidement d'eux-mêmes ; leur hétérogénéité n'apparaît qu'avec l'effet Tyndall ou au microscope.",
         "ru": "Коллоиды на глаз выглядят однородными и из-за очень малого размера частиц сами по себе быстро не оседают; их неоднородность выявляется только эффектом Тиндаля или под микроскопом.",
         "ar": "تبدو الغرويات متجانسة بالعين المجردة، ولا تترسب سريعًا من تلقاء نفسها لصغر دقائقها؛ ولا يُكشف عدم تجانسها إلا بظاهرة تندال أو بالمجهر.",
-        "zh": "胶体用肉眼看是均匀的，而且粒子很小，不会自行迅速沉降；只有通过丁达尔效应或显微镜才能看出它是非均相的。",
+        "zh": "胶体用肉眼看是均匀的，而且粒子很小，不会自行迅速沉降；只有通过丁达尔效应或显微镜才能看出它是非均匀的。",
         "ku": "Kolloîd bi çavê tazî homojen xuya dikin û ji ber ku perçeyên wan pir piçûk in, bi xwe zû naniştin; heterojenbûna wan tenê bi bandora Tyndall an bi mîkroskopê tê fêmkirin."
       }
     },
@@ -67,9 +67,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "A suspension is a solid-liquid heterogeneous mixture (e.g. chalk powder in water, Turkish coffee; ayran, given as a suspension example in the Turkish curriculum, whose yoghurt particles settle on standing).",
         "de": "Eine Suspension ist ein heterogenes Fest-flüssig-Gemisch (z. B. Kreidepulver in Wasser, türkischer Kaffee; Ayran, im türkischen Lehrplan als Suspensionsbeispiel genannt, dessen Joghurtteilchen sich beim Stehen absetzen).",
         "fr": "Une suspension est un mélange hétérogène solide-liquide (ex. : poudre de craie dans l'eau, café turc ; l'ayran, donné comme exemple de suspension dans le programme turc, dont les particules de yaourt se déposent au repos).",
-        "ru": "Суспензия — неоднородная смесь твёрдого вещества с жидкостью (например, меловой порошок в воде, турецкий кофе; айран, который турецкая программа приводит как пример суспензии: частицы йогурта в нём оседают при стоянии).",
+        "ru": "Суспензия — неоднородная смесь твёрдого вещества с жидкостью (например, мел в воде, кофе по-турецки; в турецкой школьной программе пример суспензии — айран, в котором при стоянии оседают частицы йогурта).",
         "ar": "المعلق خليط غير متجانس من صلب وسائل (مثل مسحوق الطباشير في الماء، والقهوة التركية؛ والعيران الذي يورده المنهج التركي مثالًا للمعلق إذ تترسب دقائق اللبن فيه عند الترك).",
-        "zh": "悬浊液是固-液非均相混合物（如粉笔灰与水、土耳其咖啡；土耳其课程中作为悬浊液例子的酸奶饮料ayran，静置后酸奶颗粒会沉到底部）。",
+        "zh": "悬浊液是固-液非均匀混合物（如粉笔灰-水、土耳其咖啡；土耳其教材还以一种酸奶饮料为例，静置后其中的酸奶颗粒会沉到底部）。",
         "ku": "Suspansiyon tevliheviyek heterojen a hişk-şil e (mînak: toza tebeşîrê-av, qehweya tirkî; dew, ku bernameya MEB wek mînaka suspansiyonê dide û dema tê hiştin perçeyên mastê lê diniştin)."
       },
       "trap": {
@@ -77,9 +77,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "A suspension is a single-phase homogeneous solution.",
         "de": "Die Suspension ist eine einphasige homogene Lösung.",
         "fr": "La suspension est une solution homogène monophasée.",
-        "ru": "Суспензия представляет собой однофазный гомогенный раствор.",
+        "ru": "Суспензия — однофазный однородный раствор.",
         "ar": "المعلق محلول متجانس أحادي الطور.",
-        "zh": "悬浊液是单相的均相溶液。",
+        "zh": "悬浊液是单相的均匀溶液。",
         "ku": "Suspansiyon çareseriyeke homojen a yek-qonaxî ye."
       },
       "whyTrapIsFalse": {
@@ -89,7 +89,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Dans une suspension, les particules solides sont dispersées dans le liquide sans s'y dissoudre ; il y a au moins deux phases et les particules sédimentent au repos : c'est un mélange hétérogène, pas une solution homogène.",
         "ru": "В суспензии твёрдые частицы распределены в жидкости, не растворяясь; фаз как минимум две, и при стоянии частицы оседают, поэтому это неоднородная смесь, а не однородный раствор.",
         "ar": "في المعلق تنتشر الدقائق الصلبة في السائل دون أن تذوب؛ فيوجد طوران على الأقل وتترسب الدقائق عند الترك، لذا فهو خليط غير متجانس وليس محلولًا متجانسًا.",
-        "zh": "悬浊液中固体颗粒分散在液体中但并不溶解；至少有两个相，静置后颗粒会沉降，因此它是非均相混合物，而不是均匀溶液。",
+        "zh": "悬浊液中固体颗粒分散在液体中但并不溶解；至少有两个相，静置后颗粒会沉降，因此它是非均匀混合物，而不是均匀溶液。",
         "ku": "Di suspansiyonê de perçeyên hişk bêyî ku bihelin di şilê de belav bûne; herî kêm du qonax hene û dema tê hiştin perçe diniştin, ji ber vê yekê ew ne çareseriyek homojen e, tevliheviyek heterojen e."
       }
     },
@@ -100,9 +100,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "An emulsion is a heterogeneous mixture of two liquids that do not dissolve in each other (e.g. olive oil-water, mayonnaise).",
         "de": "Eine Emulsion ist ein heterogenes Gemisch zweier ineinander unlöslicher Flüssigkeiten (z. B. Olivenöl-Wasser, Mayonnaise).",
         "fr": "Une émulsion est un mélange hétérogène de deux liquides qui ne se dissolvent pas l'un dans l'autre (ex. : huile d'olive-eau, mayonnaise).",
-        "ru": "Эмульсия — это неоднородная смесь двух нерастворимых друг в друге жидкостей (например, оливковое масло–вода, майонез).",
+        "ru": "Эмульсия — неоднородная смесь двух нерастворимых друг в друге жидкостей (например, оливковое масло с водой, майонез).",
         "ar": "المستحلب خليط غير متجانس من سائلين لا يذوب أحدهما في الآخر (مثل زيت الزيتون-الماء، والمايونيز).",
-        "zh": "乳浊液是两种互不相溶的液体形成的非均相混合物（如橄榄油-水、蛋黄酱）。",
+        "zh": "乳浊液是两种互不相溶的液体形成的非均匀混合物（如橄榄油-水、蛋黄酱）。",
         "ku": "Emulsiyon tevliheviyeke heterojen a du şilên ku di hev de nahelin e (mînak: rûnê zeytûnê-av, mayonez)."
       },
       "trap": {
@@ -133,9 +133,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "An aerosol is formed by the dispersion of a solid or liquid in a gas (e.g. fog, smoke, spray).",
         "de": "Ein Aerosol entsteht durch die Dispersion eines Feststoffs oder einer Flüssigkeit in einem Gas (z. B. Nebel, Rauch, Spray).",
         "fr": "Un aérosol est formé par la dispersion d'un solide ou d'un liquide dans un gaz (par exemple brouillard, fumée, spray).",
-        "ru": "Аэрозоль образуется при распределении твёрдого вещества или жидкости в газе (например, туман, дым, спрей).",
+        "ru": "Аэрозоль — система, в которой твёрдое вещество или жидкость распределены в газе (например, туман, дым, спрей).",
         "ar": "يتكون الهباء الجوي من تشتت مادة صلبة أو سائلة في الغاز (مثل الضباب والدخان والرذاذ).",
-        "zh": "气溶胶是由固体或液体分散在气体中形成的（例如雾、烟、喷雾）。",
+        "zh": "气溶胶是固体或液体分散在气体中形成的（如雾、烟、喷雾）。",
         "ku": "Aerosol bi belavbûna madeyeke hişk an şil di gazekê de çêdibe (mînak: mij, dûman, sprey)."
       },
       "trap": {
@@ -143,7 +143,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Smoke is a suspension in which the solid is dispersed in the liquid.",
         "de": "Rauch ist eine Suspension, in der der Feststoff in der Flüssigkeit dispergiert ist.",
         "fr": "La fumée est une suspension dans laquelle le solide est dispersé dans le liquide.",
-        "ru": "Дым представляет собой суспензию, в которой твердое вещество рассеяно в жидкости.",
+        "ru": "Дым — суспензия, в которой твёрдое вещество распределено в жидкости.",
         "ar": "الدخان عبارة عن معلق يتم فيه تشتيت المادة الصلبة في السائل.",
         "zh": "烟是固体分散在液体中形成的悬浊液。",
         "ku": "Dûman suspansiyonek e ku tê de madeya hişk di şilekê de belav bûye."
@@ -178,7 +178,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Dans les solutions vraies (homogènes), le faisceau lumineux est fortement diffusé et visible.",
         "ru": "В истинных (гомогенных) растворах луч света сильно рассеивается и становится видимым.",
         "ar": "في المحاليل الحقيقية المتجانسة يتشتت شعاع الضوء بقوة ويصبح مرئيًا.",
-        "zh": "在真溶液中，光束被强烈散射并且可见。",
+        "zh": "在真溶液中，光束会被强烈散射而显出光路。",
         "ku": "Di çareseriyên homojen ên rastîn de, tîrêjê ronahiyê bi tundî belav dibe û xuya dibe."
       },
       "whyTrapIsFalse": {
@@ -188,7 +188,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Les particules d'une vraie solution (moins de 1 nm) sont trop petites pour diffuser nettement la lumière, le trajet du faisceau reste donc invisible ; un trajet visible est justement ce qui distingue un colloïde d'une solution.",
         "ru": "Частицы истинных растворов (меньше 1 нм) слишком малы, чтобы заметно рассеивать свет, поэтому путь луча не виден; видимый путь луча как раз отличает коллоиды от растворов.",
         "ar": "دقائق المحاليل الحقيقية (أصغر من 1 nm) أصغر من أن تشتت الضوء بشكل ملحوظ، فلا يظهر مسار الحزمة؛ وظهور مسار الضوء هو ما يميز الغرويات عن المحاليل.",
-        "zh": "真溶液中的粒子（小于1 nm）太小，不能明显散射光，所以看不到光路；能看到光路正是胶体区别于溶液的特征。",
+        "zh": "真溶液中的粒子(小于1 nm)太小，不能明显散射光，所以看不到光路；能看到光路正是胶体区别于溶液的特征。",
         "ku": "Perçeyên çareseriyên rastîn (ji 1 nm piçûktir) ji bo ku ronahiyê bi awayekî diyar belav bikin pir piçûk in, ji ber vê yekê riya ronahiyê nayê dîtin; xuyabûna riya ronahiyê kolloîdan ji çareseriyan cuda dike."
       }
     },
@@ -199,9 +199,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Percent concentration by mass = (Solute Mass / Solution Mass) x 100.",
         "de": "Massenprozent = (Masse des gelösten Stoffes / Masse der Lösung) x 100.",
         "fr": "Pourcentage de concentration en masse = (Masse du soluté / Masse de la solution) x 100.",
-        "ru": "Процентная концентрация по массе = (Масса растворенного вещества / Масса раствора) x 100.",
+        "ru": "Массовая доля растворённого вещества (%) = (масса растворённого вещества / масса раствора) x 100.",
         "ar": "النسبة المئوية الكتلية = (كتلة المذاب / كتلة المحلول) × 100.",
-        "zh": "质量百分比浓度 =（溶质质量 / 溶液质量）x 100。",
+        "zh": "质量分数 =（溶质质量/溶液质量）x 100。",
         "ku": "Rêjeya girseyî ya ji sedî = (Girseya madeya helyayî / Girseya çareseriyê) x 100."
       },
       "trap": {
@@ -209,9 +209,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Percent concentration by mass is calculated by dividing the mass of the solute by the mass of the solvent.",
         "de": "Der Massenprozentgehalt wird berechnet, indem die Masse des gelösten Stoffes durch die Masse des Lösungsmittels geteilt wird.",
         "fr": "La concentration en pourcentage en masse est calculée en divisant la masse du soluté par la masse du solvant.",
-        "ru": "Массовая процентная концентрация рассчитывается путем деления массы растворенного вещества на массу растворителя.",
+        "ru": "Массовую долю (%) находят делением массы растворённого вещества на массу растворителя.",
         "ar": "تُحسب النسبة المئوية الكتلية بقسمة كتلة المذاب على كتلة المذيب.",
-        "zh": "质量百分比浓度通过溶质质量除以溶剂质量来计算。",
+        "zh": "质量分数是用溶质质量除以溶剂质量求得的。",
         "ku": "Rêjeya girseyî ya ji sedî bi parvekirina girseya madeya helyayî li girseya helkerê tê dîtin."
       },
       "whyTrapIsFalse": {
@@ -221,7 +221,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Le dénominateur est la masse de la solution (soluté + solvant), pas celle du solvant ; diviser par la seule masse du solvant donne une concentration trop élevée.",
         "ru": "В знаменателе стоит масса раствора (растворённое вещество + растворитель), а не растворителя; деление только на массу растворителя даёт завышенную концентрацию.",
         "ar": "المقام هو كتلة المحلول (المذاب + المذيب) لا كتلة المذيب؛ والقسمة على كتلة المذيب وحدها تعطي تركيزًا أكبر من الحقيقي.",
-        "zh": "分母是溶液的质量（溶质+溶剂），而不是溶剂的质量；只除以溶剂质量会使算出的浓度偏大。",
+        "zh": "分母是溶液的质量(溶质 + 溶剂)，而不是溶剂的质量；只除以溶剂质量会使算出的浓度偏大。",
         "ku": "Di parvekerê de ne girseya helkerê, girseya çareseriyê (helbûyî + helker) heye; tenê bi girseya helkerê parvekirin giranbûnê ji ya rastîn mezintir dide."
       }
     },
@@ -232,9 +232,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "ppm (parts per million) = (Solute Mass / Solution Mass) x 10^6.",
         "de": "ppm (parts per million) = (Masse des gelösten Stoffes / Masse der Lösung) x 10^6.",
         "fr": "ppm (parties par million) = (Masse de soluté / Masse de solution) x 10^6.",
-        "ru": "ppm (частей на миллион) = (Масса растворенного вещества / Масса раствора) x 10^6.",
+        "ru": "ppm (миллионная доля) = (масса растворённого вещества / масса раствора) x 10^6.",
         "ar": "ppm (جزء في المليون) = (كتلة المذاب / كتلة المحلول) × 10^6.",
-        "zh": "ppm（百万分之一）=（溶质质量/溶液质量）x 10^6。",
+        "zh": "ppm(百万分率) =（溶质质量/溶液质量）x 10^6。",
         "ku": "ppm (parçe di mîlyonekê de) = (Girseya madeya helyayî / Girseya çareseriyê) x 10^6."
       },
       "trap": {
@@ -242,9 +242,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "When calculating ppm, the multiplier is 100.",
         "de": "Bei der Berechnung von ppm beträgt der Multiplikator 100.",
         "fr": "Lors du calcul du ppm, le multiplicateur est de 100.",
-        "ru": "При расчете ppm множитель равен 100.",
+        "ru": "При расчёте ppm множитель равен 100.",
         "ar": "عند حساب ppm يكون معامل الضرب 100.",
-        "zh": "计算 ppm 时，乘数为 100。",
+        "zh": "计算 ppm 时乘数是 100。",
         "ku": "Dema ppm tê hesibandin, lêker 100 e."
       },
       "whyTrapIsFalse": {
@@ -252,9 +252,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Multiplying by 100 gives the percentage concentration; ppm means \"parts per million\", so the factor is 10^6 (1 ppm = 0.0001%).",
         "de": "Die Multiplikation mit 100 ergibt die Prozentkonzentration; ppm bedeutet „Teile pro Million“, daher ist der Faktor 10^6 (1 ppm = 0,0001 %).",
         "fr": "Multiplier par 100 donne le pourcentage ; ppm signifie « partie par million », le facteur est donc 10^6 (1 ppm = 0,0001 %).",
-        "ru": "Умножение на 100 даёт процентную концентрацию; ppm означает «частей на миллион», поэтому множитель равен 10^6 (1 ppm = 0,0001%).",
+        "ru": "Умножение на 100 даёт массовую долю в процентах; ppm означает «миллионная доля», поэтому множитель равен 10^6 (1 ppm = 0,0001 %).",
         "ar": "الضرب في 100 يعطي النسبة المئوية؛ أما ppm فتعني «جزءًا في المليون»، لذا يكون المعامل 10^6 (1 ppm = 0.0001%).",
-        "zh": "乘以100得到的是百分比浓度；ppm表示“百万分之一”，所以乘数是10^6（1 ppm = 0.0001%）。",
+        "zh": "乘以 100 得到的是质量分数（百分数）；ppm 表示“百万分之一”，所以乘数是 10^6 (1 ppm = 0.0001%)。",
         "ku": "Bi 100 re lêdan giranbûna sedî dide; ppm tê wateya \"parçeyek di milyonekê de\", ji ber vê yekê lêker 10^6 e (1 ppm = %0,0001)."
       }
     },
@@ -265,7 +265,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Fractional distillation is used to separate homogeneous liquid-liquid mixtures whose components have different boiling points (e.g. separating crude oil into its fractions, acetone-water).",
         "de": "Die fraktionierte Destillation dient zur Trennung homogener Flüssig-flüssig-Gemische mit unterschiedlichen Siedepunkten (z. B. Zerlegung von Erdöl in Fraktionen, Aceton-Wasser).",
         "fr": "La distillation fractionnée sert à séparer des mélanges homogènes liquide-liquide dont les constituants ont des températures d'ébullition différentes (ex. : fractionnement du pétrole brut, acétone-eau).",
-        "ru": "Фракционная перегонка применяется для разделения однородных смесей жидкостей с разными температурами кипения (например, разделение нефти на фракции, ацетон–вода).",
+        "ru": "Фракционную перегонку применяют для разделения однородных смесей жидкостей с разными температурами кипения (например, разделение нефти на фракции, смесь ацетона и воды).",
         "ar": "يُستخدم التقطير التجزيئي لفصل المخاليط السائلة المتجانسة التي تختلف مكوناتها في درجات الغليان (مثل فصل النفط الخام إلى مكوناته، والأسيتون-الماء).",
         "zh": "分馏用于分离各组分沸点不同的均匀液-液混合物（如将原油分离成各馏分、丙酮-水）。",
         "ku": "Distilasyona perçeyî ji bo veqetandina tevliheviyên şil-şil ên homojen ên ku xalên kelandinê yên pêkhateyan cuda ne tê bikaranîn (mînak: veqetandina petrola xav li pêkhateyên wê, aseton-av)."
@@ -277,7 +277,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "La distillation fractionnée est une technique de séparation basée sur la différence de densité.",
         "ru": "Фракционная перегонка — это метод разделения, основанный на разнице плотностей.",
         "ar": "التقطير التجزيئي هو تقنية فصل تعتمد على اختلاف الكثافة.",
-        "zh": "分馏是一种基于密度差的分离技术。",
+        "zh": "分馏是一种依据密度差异的分离方法。",
         "ku": "Distilasyona perçeyî teknîkeke veqetandinê ye ku li ser cudahiya çiriyê ye."
       },
       "whyTrapIsFalse": {
@@ -298,9 +298,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "A separatory funnel separates heterogeneous mixtures of immiscible liquids of different densities (e.g. olive oil-water).",
         "de": "Der Scheidetrichter trennt heterogene Gemische aus ineinander unlöslichen Flüssigkeiten unterschiedlicher Dichte (z. B. Olivenöl-Wasser).",
         "fr": "L'ampoule à décanter sépare les mélanges hétérogènes de liquides non miscibles de masses volumiques différentes (ex. : huile d'olive-eau).",
-        "ru": "Делительная воронка разделяет неоднородные смеси нерастворимых друг в друге жидкостей разной плотности (например, оливковое масло–вода).",
+        "ru": "Делительная воронка разделяет неоднородные смеси нерастворимых друг в друге жидкостей разной плотности (например, оливковое масло и воду).",
         "ar": "يفصل قمع الفصل المخاليط غير المتجانسة من سوائل لا يذوب بعضها في بعض وتختلف في الكثافة (مثل زيت الزيتون-الماء).",
-        "zh": "分液漏斗用于分离密度不同、互不相溶的液-液非均相混合物（如橄榄油-水）。",
+        "zh": "分液漏斗用于分离密度不同、互不相溶的液-液非均匀混合物（如橄榄油-水）。",
         "ku": "Hunîya veqetandinê tevliheviyên heterojen ên şil-şil ên ku di hev de nahelin û çiriyên wan cuda ne ji hev vediqetîne (mînak: rûnê zeytûnê-av)."
       },
       "trap": {
@@ -310,7 +310,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "L'ampoule à décanter sépare des mélanges homogènes dont les points d'ébullition sont différents.",
         "ru": "Делительная воронка разделяет однородные смеси с разной температурой кипения.",
         "ar": "يفصل قمع الفصل المخاليط المتجانسة المختلفة في درجات الغليان.",
-        "zh": "分液漏斗分离具有不同沸点的均匀混合物。",
+        "zh": "分液漏斗用于分离沸点不同的均匀混合物。",
         "ku": "Hunîya veqetandinê tevliheviyên homojen ên ku xalên wan ên kelandinê cuda ne vediqetîne."
       },
       "whyTrapIsFalse": {
@@ -333,7 +333,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Dans la flottation, les particules solides sont séparées dans un liquide en particules qui flottent et particules qui coulent : les cas simples comme sciure-sable exploitent la différence de masse volumique, tandis que l'enrichissement des minerais sulfurés en exploitation minière exploite la différence de mouillabilité (les grains non mouillés s'accrochent aux bulles d'air et montent dans la mousse).",
         "ru": "При флотации твёрдые частицы в жидкости разделяются на всплывающие и тонущие: в простых случаях (опилки–песок) используют разницу плотностей, а при обогащении сульфидных руд в горном деле — разницу смачиваемости (несмачиваемые зёрна прилипают к пузырькам воздуха и поднимаются в пену).",
         "ar": "في التعويم تُفصل الدقائق الصلبة في سائل إلى طافية وغاطسة: ففي الأمثلة البسيطة كنشارة الخشب والرمل يُستفاد من اختلاف الكثافة، أما في إغناء خامات الكبريتيدات في التعدين فيُستفاد من اختلاف قابلية البلل بالماء (تلتصق الحبيبات غير المبللة بفقاعات الهواء وتصعد إلى الرغوة).",
-        "zh": "浮选是在液体中把固体颗粒分成浮起的和下沉的：木屑-沙子等简单情况利用密度差，而采矿中硫化矿的富集利用的是颗粒被水润湿性的差异（不被润湿的颗粒附着在气泡上进入泡沫层）。",
+        "zh": "浮选是在液体中把固体颗粒分成浮起的和下沉的两部分：木屑-沙子等简单情况利用密度差，而采矿中硫化矿的富集利用的是颗粒被水润湿性的差异（不被润湿的颗粒附着在气泡上进入泡沫层）。",
         "ku": "Di flotasyonê de perçeyên hişk di şilekê de wek yên ku avjenî dikin û yên ku dadikevin tên veqetandin: di mînakên hêsan ên wek qirş-qûmê de ji cudahiya çiriyê, di dewlemendkirina madenên sulfîdî yên madenê de jî ji cudahiya şilbûna bi avê (perçeyên ku şil nabin bi bilbilên hewayê derdikevin kefê) sûd tê wergirtin."
       },
       "trap": {
@@ -341,9 +341,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Flotation is the process of separating iron with the help of a magnet.",
         "de": "Bei der Flotation wird Eisen mit Hilfe eines Magneten abgetrennt.",
         "fr": "La flottation est le processus de séparation du fer à l'aide d'un aimant.",
-        "ru": "Флотация – это процесс отделения железа с помощью магнита.",
+        "ru": "Флотация — это отделение железа с помощью магнита.",
         "ar": "التعويم هو عملية فصل الحديد بمساعدة المغناطيس.",
-        "zh": "浮选是借助磁铁分离铁的过程。",
+        "zh": "浮选是借助磁铁分离铁的方法。",
         "ku": "Flotasyon pêvajoya veqetandina hesin bi alîkariya magnetekê ye."
       },
       "whyTrapIsFalse": {
@@ -407,9 +407,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Dialysis is settling by centrifugation.",
         "de": "Die Dialyse ist ein Absetzen durch Zentrifugieren.",
         "fr": "La dialyse est une sédimentation par centrifugation.",
-        "ru": "Диализ – это процесс осаждения центрифугированием.",
+        "ru": "Диализ — это осаждение с помощью центрифуги.",
         "ar": "الديلزة عملية ترسيب بالطرد المركزي.",
-        "zh": "透析是一种离心沉淀过程。",
+        "zh": "透析是一种离心沉降操作。",
         "ku": "Dialîz pêvajoyeke niştandinê bi santrîfûjê ye."
       },
       "whyTrapIsFalse": {
@@ -432,7 +432,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Si l'on ajoute de l'eau à une solution (dilution), la masse de soluté ne change pas et la concentration diminue ; pour le pourcentage massique, on utilise C1m1 = C2m2 (m : masse de la solution).",
         "ru": "При добавлении воды к раствору (разбавлении) масса растворённого вещества не меняется, а концентрация уменьшается; для массовой доли в процентах используют соотношение C1m1 = C2m2 (m — масса раствора).",
         "ar": "إذا أُضيف الماء إلى محلول (تخفيف) لا تتغير كتلة المذاب ويقل التركيز؛ وللنسبة المئوية الكتلية تُستخدم العلاقة C1m1 = C2m2 (m: كتلة المحلول).",
-        "zh": "向溶液中加水（稀释）时，溶质质量不变，浓度降低；对质量分数可用关系式 C1m1 = C2m2（m为溶液质量）。",
+        "zh": "向溶液中加水（稀释）时，溶质质量不变，浓度降低；对质量分数可用关系式 C1m1 = C2m2 (m 为溶液质量)。",
         "ku": "Ger av li çareseriyê were zêdekirin (sivikkirin) girseya helbûyî naguhere û giranbûn kêm dibe; ji bo giranbûna sedî ya girseyî têkiliya C1m1 = C2m2 tê bikaranîn (m: girseya çareseriyê)."
       },
       "trap": {
@@ -440,9 +440,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "When water is added, the mass of solute also increases.",
         "de": "Bei Zugabe von Wasser erhöht sich auch die Masse des gelösten Stoffes.",
         "fr": "Lorsque de l’eau est ajoutée, la masse de soluté augmente également.",
-        "ru": "При добавлении воды масса растворенного вещества также увеличивается.",
+        "ru": "При добавлении воды масса растворённого вещества тоже увеличивается.",
         "ar": "عند إضافة الماء، تزداد كتلة المذاب أيضًا.",
-        "zh": "当添加水时，溶质的质量也会增加。",
+        "zh": "加水时，溶质的质量也会增大。",
         "ku": "Dema ku av lê tê zêdekirin, girseya madeya helyayî jî zêde dibe."
       },
       "whyTrapIsFalse": {
@@ -463,9 +463,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "\"Like dissolves like\" rule: Polar substances dissolve well in polar solvents, and nonpolar substances dissolve well in nonpolar solvents.",
         "de": "Regel „Gleiches löst sich in Gleichem“: Polare Stoffe lösen sich gut in polaren Lösungsmitteln, unpolare Stoffe in unpolaren Lösungsmitteln.",
         "fr": "Règle « le semblable dissout le semblable » : les substances polaires se dissolvent bien dans les solvants polaires et les substances apolaires dans les solvants apolaires.",
-        "ru": "Правило «Подобное растворяется в подобном»: полярные вещества хорошо растворяются в полярных растворителях, а неполярные вещества хорошо растворяются в неполярных растворителях.",
+        "ru": "Правило «подобное растворяется в подобном»: полярные вещества хорошо растворяются в полярных растворителях, неполярные — в неполярных.",
         "ar": "قاعدة «الشبيه يذيب الشبيه»: تذوب المواد القطبية جيدًا في المذيبات القطبية، والمواد غير القطبية في المذيبات غير القطبية.",
-        "zh": "“相似相溶”法则：极性物质在极性溶剂中溶解良好，非极性物质在非极性溶剂中溶解良好。",
+        "zh": "“相似相溶”规律：极性物质易溶于极性溶剂，非极性物质易溶于非极性溶剂。",
         "ku": "Qaydeya \"wekhev wekhevê dihelîne\": madeyên polar di helkerên polar de, madeyên ne-polar jî di helkerên ne-polar de baş dihelin."
       },
       "trap": {
@@ -506,9 +506,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "While salt water boils, its temperature remains constant from the beginning.",
         "de": "Während Salzwasser kocht, bleibt seine Temperatur von Anfang an konstant.",
         "fr": "Pendant que l’eau salée bout, sa température reste constante depuis le début.",
-        "ru": "Пока соленая вода кипит, ее температура с самого начала остается постоянной.",
+        "ru": "Солёная вода кипит при постоянной температуре с самого начала кипения.",
         "ar": "فبينما يغلي الماء المالح، تظل درجة حرارته ثابتة منذ البداية.",
-        "zh": "当盐水沸腾时，其温度从一开始就保持恒定。",
+        "zh": "盐水沸腾时，温度从一开始就保持不变。",
         "ku": "Dema ava şor dikele, germahiya wê ji destpêkê ve sabit dimîne."
       },
       "whyTrapIsFalse": {
@@ -529,9 +529,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "If more solute is added to the saturated solution at the same temperature, it will precipitate to the bottom without dissolving and the concentration will not change.",
         "de": "Wenn der gesättigten Lösung bei gleicher Temperatur mehr gelöster Stoff zugesetzt wird, fällt dieser am Boden aus, ohne sich aufzulösen, und die Konzentration ändert sich nicht.",
         "fr": "Si davantage de soluté est ajouté à la solution saturée à la même température, il précipitera au fond sans se dissoudre et la concentration ne changera pas.",
-        "ru": "Если к насыщенному раствору при той же температуре добавить больше растворенного вещества, оно выпадет в осадок на дно, не растворяясь, и концентрация не изменится.",
+        "ru": "Если к насыщенному раствору при той же температуре добавить ещё растворяемого вещества, оно не растворится и останется на дне, а концентрация не изменится.",
         "ar": "إذا تمت إضافة المزيد من المذاب إلى المحلول المشبع عند نفس درجة الحرارة، فسوف يترسب إلى القاع دون أن يذوب ولن يتغير التركيز.",
-        "zh": "如果在相同温度下向饱和溶液中加入更多的溶质，它会沉淀到底部而不溶解，浓度不会改变。",
+        "zh": "在相同温度下向饱和溶液中再加入溶质，溶质不再溶解而沉在底部，浓度不变。",
         "ku": "Ger di heman germahiyê de hinek din madeya helyayî li çareseriya têrbûyî were zêdekirin, bêyî ku bihele li binî dinişe û giranbûn naguhere."
       },
       "trap": {
@@ -586,7 +586,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "La distillation simple sépare le liquide d'une solution solide-liquide en l'évaporant puis en le condensant ; la distillation fractionnée sépare des mélanges homogènes liquide-liquide dont les points d'ébullition sont proches.",
         "ru": "Простая перегонка отделяет жидкость от раствора твёрдого вещества в жидкости, испаряя и конденсируя её; фракционная перегонка разделяет однородные смеси жидкостей с близкими температурами кипения.",
         "ar": "يفصل التقطير البسيط السائل عن محلول صلب في سائل بتبخيره ثم تكثيفه؛ ويفصل التقطير التجزيئي المخاليط المتجانسة من سائلين متقاربين في درجة الغليان.",
-        "zh": "简单蒸馏通过蒸发和冷凝把固-液溶液中的液体分离出来；分馏用于分离沸点接近的液-液均相混合物。",
+        "zh": "简单蒸馏通过蒸发和冷凝把固-液溶液中的液体分离出来；分馏用于分离沸点接近的液-液均匀混合物。",
         "ku": "Distilasyona sade şilê ji çareseriya hişk-şil bi hilmkirin û dûv re bi şilkirina hilmê vediqetîne; distilasyona perçeyî tevliheviyên homojen ên şil-şil ên ku xalên wan ên kelandinê nêzîkî hev in vediqetîne."
       }
     },
@@ -617,9 +617,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "In a solution the particle size is below 1 nm and the mixture is homogeneous; in a colloid the particle size is between 1 and 1000 nm, and the mixture is heterogeneous and shows the Tyndall effect.",
         "de": "In einer Lösung ist die Teilchengröße kleiner als 1 nm und das Gemisch homogen; in einem Kolloid liegt die Teilchengröße zwischen 1 und 1000 nm, das Gemisch ist heterogen und zeigt den Tyndall-Effekt.",
         "fr": "Dans une solution, la taille des particules est inférieure à 1 nm et le mélange est homogène ; dans un colloïde, elle est comprise entre 1 et 1000 nm, le mélange est hétérogène et présente l'effet Tyndall.",
-        "ru": "В растворе размер частиц меньше 1 нм и смесь однородна; в коллоиде размер частиц составляет от 1 до 1000 нм, смесь неоднородна и проявляет эффект Тиндаля.",
+        "ru": "Раствор — однородная смесь с частицами меньше 1 нм; коллоид — неоднородная смесь с частицами от 1 до 1000 нм, проявляющая эффект Тиндаля.",
         "ar": "في المحلول يكون حجم الجسيمات أقل من 1 نانومتر ويكون المخلوط متجانسًا؛ أما في الغروي فيتراوح حجم الجسيمات بين 1 و1000 نانومتر، ويكون المخلوط غير متجانس ويُظهر تأثير تيندال.",
-        "zh": "溶液中粒子直径小于 1 nm，混合物是均相的；胶体中粒子直径在 1~1000 nm 之间，混合物是非均相的，并有丁达尔效应。",
+        "zh": "溶液中粒子直径小于 1 nm，混合物是均匀的；胶体中粒子直径在 1~1000 nm 之间，混合物是非均匀的，并有丁达尔效应。",
         "ku": "Di çareseriyê de mezinahiya perçeyan ji 1 nm biçûktir e û tevlihevî homojen e; di kolloîdê de mezinahiya perçeyan di navbera 1 û 1000 nm de ye, tevlihevî heterojen e û bandora Tyndall nîşan dide."
       }
     },
@@ -650,9 +650,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "A suspension is a solid-liquid heterogeneous mixture (e.g. chalk powder-water, Turkish coffee); an emulsion is a liquid-liquid heterogeneous mixture (e.g. olive oil-water).",
         "de": "Eine Suspension ist ein heterogenes Fest-flüssig-Gemisch (z. B. Kreidepulver-Wasser, türkischer Kaffee); eine Emulsion ist ein heterogenes Flüssig-flüssig-Gemisch (z. B. Olivenöl-Wasser).",
         "fr": "Une suspension est un mélange hétérogène solide-liquide (ex. : poudre de craie-eau, café turc) ; une émulsion est un mélange hétérogène liquide-liquide (ex. : huile d'olive-eau).",
-        "ru": "Суспензия — неоднородная смесь твёрдого вещества и жидкости (например, меловой порошок–вода, турецкий кофе); эмульсия — неоднородная смесь двух жидкостей (например, оливковое масло–вода).",
+        "ru": "Суспензия — неоднородная смесь твёрдого вещества и жидкости (например, мел в воде, кофе по-турецки); эмульсия — неоднородная смесь двух жидкостей (например, оливковое масло с водой).",
         "ar": "المعلق خليط غير متجانس من صلب وسائل (مثل مسحوق الطباشير-الماء، والقهوة التركية)؛ والمستحلب خليط غير متجانس من سائلين (مثل زيت الزيتون-الماء).",
-        "zh": "悬浊液是固-液非均相混合物（如粉笔灰-水、土耳其咖啡）；乳浊液是液-液非均相混合物（如橄榄油-水）。",
+        "zh": "悬浊液是固-液非均匀混合物（如粉笔灰-水、土耳其咖啡）；乳浊液是液-液非均匀混合物（如橄榄油-水）。",
         "ku": "Suspansiyon tevliheviyek heterojen a hişk-şil e (mînak: toza tebeşîrê-av, qehweya tirkî); emulsiyon tevliheviyek heterojen a şil-şil e (mînak: rûnê zeytûnê-av)."
       }
     },
@@ -683,9 +683,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Filtration separates heterogeneous solid-liquid mixtures by retaining the solid particles on filter paper; dialysis separates small ions and molecules from colloidal particles by passing them through a semi-permeable membrane.",
         "de": "Die Filtration trennt heterogene Fest-flüssig-Gemische, indem die Feststoffteilchen im Filterpapier zurückgehalten werden; die Dialyse trennt kleine Ionen und Moleküle von kolloidalen Teilchen, indem sie diese durch eine semipermeable Membran treten lässt.",
         "fr": "La filtration sépare les mélanges hétérogènes solide-liquide en retenant les particules solides sur le papier filtre ; la dialyse sépare les petits ions et molécules des particules colloïdales en les faisant passer à travers une membrane semi-perméable.",
-        "ru": "Фильтрование разделяет гетерогенные смеси твёрдое-жидкость, задерживая твёрдые частицы на фильтровальной бумаге; диализ отделяет малые ионы и молекулы от коллоидных частиц, пропуская их через полупроницаемую мембрану.",
+        "ru": "Фильтрование разделяет неоднородные смеси твёрдого вещества с жидкостью, задерживая твёрдые частицы на фильтровальной бумаге; диализ отделяет малые ионы и молекулы от коллоидных частиц, пропуская их через полупроницаемую мембрану.",
         "ar": "يفصل الترشيح المخاليط غير المتجانسة الصلبة-السائلة باحتجاز الجسيمات الصلبة على ورق الترشيح؛ وتفصل الديلزة الأيونات والجزيئات الصغيرة عن الجسيمات الغروية بتمريرها عبر غشاء شبه منفذ.",
-        "zh": "过滤是用滤纸截留固体颗粒，分离非均相的固-液混合物；透析是让小的离子和分子透过半透膜，使其与胶体粒子分离。",
+        "zh": "过滤是用滤纸截留固体颗粒，分离非均匀的固-液混合物；透析是让小的离子和分子透过半透膜，使其与胶体粒子分离。",
         "ku": "Parzûnkirin perçeyên hişk li ser kaxeza parzûnê digire û tevliheviyên heterojen ên hişk-şil ji hev vediqetîne; dialîz îyon û molekulên biçûk di parzûneke nîv-derbasbar re derbas dike û wan ji perçeyên koloîdal vediqetîne."
       }
     },
@@ -731,7 +731,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Pourcentage massique",
         "ru": "Массовая доля в процентах",
         "ar": "النسبة المئوية الكتلية",
-        "zh": "质量百分比浓度",
+        "zh": "质量分数",
         "ku": "Rêjeya girseyî ya ji sedî"
       },
       "conceptB": {
@@ -741,7 +741,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Pourcentage volumique",
         "ru": "Объёмная доля в процентах",
         "ar": "النسبة المئوية الحجمية",
-        "zh": "体积百分比浓度",
+        "zh": "体积分数",
         "ku": "Rêjeya qebareyî ya ji sedî"
       },
       "distinction": {
@@ -751,7 +751,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Le pourcentage massique est le rapport de la masse de soluté à la masse de solution (x100) ; le pourcentage volumique est le rapport du volume de soluté liquide au volume de solution (x100).",
         "ru": "Массовая доля в процентах — отношение массы растворённого вещества к массе раствора (x100); объёмная доля в процентах — отношение объёма жидкого растворённого вещества к объёму раствора (x100).",
         "ar": "النسبة المئوية الكتلية هي نسبة كتلة المذاب إلى كتلة المحلول (x100)؛ والنسبة المئوية الحجمية هي نسبة حجم المذاب السائل إلى حجم المحلول (x100).",
-        "zh": "质量百分比浓度是溶质质量与溶液质量之比（x100）；体积百分比浓度是液态溶质体积与溶液体积之比（x100）。",
+        "zh": "质量分数是溶质质量与溶液质量之比(x100)；体积分数是液态溶质体积与溶液体积之比(x100)。",
         "ku": "Rêjeya girseyî ya ji sedî rêjeya girseya madeya helyayî li girseya çareseriyê ye (x100); rêjeya qebareyî ya ji sedî rêjeya qebareya madeya helyayî ya şil li qebareya çareseriyê ye (x100)."
       }
     },
@@ -784,7 +784,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Une solution saturée a dissous, à une température donnée, la quantité maximale de soluté qu'elle peut dissoudre ; une solution sursaturée est une solution instable qui en contient davantage à la même température.",
         "ru": "Насыщенный раствор при данной температуре содержит максимально возможное количество растворённого вещества; пересыщенный раствор — неустойчивый раствор, содержащий при той же температуре больше растворённого вещества.",
         "ar": "المحلول المشبع هو محلول أذاب أكبر كمية ممكنة من المذاب عند درجة حرارة معينة؛ أما المحلول فوق المشبع فهو محلول غير مستقر يحتوي على كمية مذابة أكبر من ذلك عند الدرجة نفسها.",
-        "zh": "饱和溶液是在一定温度下溶解了最大量溶质的溶液；在同一温度下所含溶质超过这一限度的溶液是不稳定的。",
+        "zh": "饱和溶液是在一定温度下溶解了最大量溶质的溶液；而在同一温度下所含溶质超过这一限度的溶液很不稳定。",
         "ku": "Çareseriya têrbûyî di germahiyeke diyar de herî zêde mîqdara madeya ku dikare bihelîne helandiye; çareseriya bêîstîqrar a ku di heman germahiyê de ji vê mîqdarê zêdetir madeya helyayî dihewîne zêde-têrbûyî tê gotin."
       }
     },
@@ -815,7 +815,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "In dilution, solvent is added, the mass of solute stays the same and the concentration decreases; in concentrating, solvent is evaporated or more solute is added and the concentration increases.",
         "de": "Beim Verdünnen wird Lösungsmittel zugegeben, die Masse des gelösten Stoffes bleibt gleich und die Konzentration sinkt; beim Aufkonzentrieren wird Lösungsmittel verdampft oder mehr gelöster Stoff zugegeben, und die Konzentration steigt.",
         "fr": "La dilution consiste à ajouter du solvant : la masse de soluté reste la même et la concentration diminue ; pour concentrer, on évapore du solvant ou on ajoute du soluté, et la concentration augmente.",
-        "ru": "Разбавление — это добавление растворителя: масса растворённого вещества не меняется, и концентрация уменьшается; при концентрировании растворитель выпаривают или добавляют растворённое вещество, и концентрация растёт.",
+        "ru": "Разбавление — добавление растворителя: масса растворённого вещества не меняется, а концентрация уменьшается; концентрирование — выпаривание растворителя или добавление растворённого вещества, при котором концентрация растёт.",
         "ar": "في التخفيف يُضاف المذيب فتبقى كتلة المذاب ثابتة ويقل التركيز؛ وفي التركيز يُبخَّر المذيب أو يُضاف مزيد من المذاب فيزداد التركيز.",
         "zh": "稀释是加入溶剂，溶质质量不变，浓度降低；浓缩是蒸发溶剂或加入更多溶质，浓度升高。",
         "ku": "Di seyrelandinê de helker tê zêdekirin, girseya madeya helyayî naguhere û giranbûn kêm dibe; di tîrkirinê de helker tê hilmikandin an madeya helyayî tê zêdekirin û giranbûn zêde dibe."
@@ -830,7 +830,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Steps to Separate Salt-Sand-Water Mixture",
         "de": "Schritte zur Trennung des Salz-Sand-Wasser-Gemisches",
         "fr": "Étapes pour séparer le mélange sel-sable-eau",
-        "ru": "Действия по разделению смеси соли, песка и воды",
+        "ru": "Разделение смеси соли, песка и воды",
         "ar": "خطوات فصل خليط الملح والرمل والماء",
         "zh": "分离盐-沙-水混合物的步骤",
         "ku": "Gavên veqetandina tevliheviya xwê-qûm-av"
@@ -861,7 +861,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "The filtrate is heated to evaporate the water (simple distillation if the water is also to be recovered)",
           "de": "Das Filtrat wird erhitzt und das Wasser verdampft (einfache Destillation, wenn auch das Wasser zurückgewonnen werden soll)",
           "fr": "Le filtrat est chauffé pour évaporer l'eau (distillation simple si l'on veut aussi récupérer l'eau)",
-          "ru": "Фильтрат нагревают и выпаривают воду (простая перегонка, если воду тоже нужно собрать)",
+          "ru": "Фильтрат нагревают и выпаривают воду (если воду тоже нужно собрать, проводят простую перегонку)",
           "ar": "يُسخَّن الراشح لتبخير الماء (تقطير بسيط إذا أُريد استرجاع الماء أيضًا)",
           "zh": "加热滤液使水蒸发（若还要回收水，则进行简单蒸馏）",
           "ku": "Parzûnkirî tê germkirin û av tê hilmikandin (ger av jî bê vegerandin, distilasyona sade tê kirin)"
@@ -898,7 +898,7 @@ export const unit08: ChemistryUnitSeedData = {
           "fr": "On chauffe un mélange liquide homogène dont les constituants ont des points d'ébullition différents",
           "ru": "Нагревают однородную жидкую смесь, компоненты которой имеют разные температуры кипения",
           "ar": "يُسخَّن خليط سائل متجانس تختلف مكوناته في درجات الغليان",
-          "zh": "加热各组分沸点不同的均相液体混合物",
+          "zh": "加热各组分沸点不同的均匀液体混合物",
           "ku": "Tevliheviyeke şil a homojen a ku xalên kelandinê yên pêkhateyên wê cuda ne tê germkirin"
         },
         {
@@ -942,7 +942,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Préparation d'une solution de pourcentage massique donné",
         "ru": "Приготовление раствора с заданной массовой долей",
         "ar": "تحضير محلول بنسبة مئوية كتلية محددة",
-        "zh": "配制一定质量百分比浓度的溶液",
+        "zh": "配制一定质量分数的溶液",
         "ku": "Amadekirina çareseriyeke bi rêjeya girseyî ya ji sedî"
       },
       "steps": [
@@ -953,7 +953,7 @@ export const unit08: ChemistryUnitSeedData = {
           "fr": "On calcule la masse de soluté nécessaire à partir de la masse de solution et du pourcentage voulus",
           "ru": "По нужной массе раствора и массовой доле рассчитывают необходимую массу растворённого вещества",
           "ar": "تُحسب كتلة المذاب اللازمة من كتلة المحلول والنسبة المئوية المطلوبتين",
-          "zh": "根据所需溶液的质量和百分比浓度计算所需溶质的质量",
+          "zh": "根据所需溶液的质量和质量分数计算所需溶质的质量",
           "ku": "Ji girseya çareseriyê û rêjeya ji sedî ya xwestî girseya pêwîst a madeya helyayî tê hesibandin"
         },
         {
@@ -963,7 +963,7 @@ export const unit08: ChemistryUnitSeedData = {
           "fr": "On pèse la masse de soluté calculée dans un récipient",
           "ru": "Рассчитанную массу вещества отвешивают в сосуд",
           "ar": "تُوزن كتلة المذاب المحسوبة في وعاء",
-          "zh": "称取计算出的溶质质量放入容器中",
+          "zh": "称取计算出质量的溶质，放入容器中",
           "ku": "Girseya hesibandî ya madeya helyayî tê kêşan û dikeve firaxekê"
         },
         {
@@ -997,7 +997,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Séparation par cristallisation",
         "ru": "Разделение кристаллизацией",
         "ar": "الفصل عن طريق التبلور",
-        "zh": "结晶分离",
+        "zh": "用结晶法分离",
         "ku": "Veqetandin bi krîstalkirinê"
       },
       "steps": [
@@ -1026,7 +1026,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "As the temperature decreases, the solubility decreases and the solid precipitates",
           "de": "Mit sinkender Temperatur nimmt die Löslichkeit ab und der Feststoff fällt aus",
           "fr": "À mesure que la température diminue, la solubilité diminue et le solide précipite",
-          "ru": "При понижении температуры растворимость снижается и твердое вещество выпадает в осадок",
+          "ru": "При понижении температуры растворимость уменьшается, и твёрдое вещество выпадает в осадок",
           "ar": "مع انخفاض درجة الحرارة، تنخفض قابلية الذوبان وتترسب المواد الصلبة",
           "zh": "随着温度降低，溶解度降低，固体析出",
           "ku": "Her ku germahî kêm dibe, helbûnî kêm dibe û madeya hişk dinişe"
@@ -1052,9 +1052,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "When 50 grams of pure water is added to 200 grams of 20% salt water solution by mass, what percentage by mass will the new solution be?",
         "de": "Wenn 50 Gramm reines Wasser zu 200 Gramm einer 20-prozentigen Salzwasserlösung hinzugefügt werden, wie viel Prozent der Masse beträgt die neue Lösung?",
         "fr": "Lorsque 50 grammes d’eau pure sont ajoutés à 200 grammes de solution d’eau salée à 20 % en masse, quel sera le pourcentage en masse de la nouvelle solution ?",
-        "ru": "Какую массовую долю составит новый раствор, если к 200 граммам 20%-ного по массе раствора соленой воды добавить 50 граммов чистой воды?",
+        "ru": "К 200 г раствора соли с массовой долей 20 % добавили 50 г чистой воды. Какова массовая доля соли в новом растворе?",
         "ar": "عند إضافة 50 جرامًا من الماء النقي إلى 200 جرام من محلول الماء المالح بنسبة 20% بالكتلة، ما النسبة المئوية بالكتلة للمحلول الجديد؟",
-        "zh": "将50克纯水按质量分数加入200克20%的盐水溶液中，新溶液的质量百分比是多少？",
+        "zh": "向200 g质量分数为20%的盐水中加入50 g纯水，所得新溶液的质量分数是多少？",
         "ku": "Dema ku 50 gram ava saf bi girseyê li 200 gram ava şor a %20 were zêdekirin, wê çareseriya nû ji sedî çend be?"
       },
       "options": [
@@ -1063,7 +1063,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "16%",
           "de": "16 %",
           "fr": "16%",
-          "ru": "16%",
+          "ru": "16 %",
           "ar": "16%",
           "zh": "16%",
           "ku": "%16"
@@ -1073,7 +1073,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "10%",
           "de": "10 %",
           "fr": "10%",
-          "ru": "10%",
+          "ru": "10 %",
           "ar": "10%",
           "zh": "10%",
           "ku": "%10"
@@ -1083,7 +1083,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "15%",
           "de": "15 %",
           "fr": "15%",
-          "ru": "15%",
+          "ru": "15 %",
           "ar": "15%",
           "zh": "15%",
           "ku": "%15"
@@ -1093,7 +1093,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "25%",
           "de": "25 %",
           "fr": "25%",
-          "ru": "25%",
+          "ru": "25 %",
           "ar": "25%",
           "zh": "25%",
           "ku": "%25"
@@ -1103,7 +1103,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "12%",
           "de": "12 %",
           "fr": "12%",
-          "ru": "12%",
+          "ru": "12 %",
           "ar": "12%",
           "zh": "12%",
           "ku": "%12"
@@ -1115,9 +1115,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Dissolved salt = 200 * 0.20 = 40 grams. New total mass = 200 + 50 = 250 grams. New percentage = (40 / 250) * 100 = 16%. In dilution the mass of salt does not change and only the mass of solution increases, so the concentration falls below 20%; a larger value such as 25% is impossible.",
         "de": "Gelöstes Salz = 200 * 0,20 = 40 Gramm. Neue Gesamtmasse = 200 + 50 = 250 Gramm. Neuer Prozentsatz = (40 / 250) * 100 = 16 %. Beim Verdünnen ändert sich die Salzmasse nicht, nur die Masse der Lösung nimmt zu; daher sinkt die Konzentration unter 20 %, ein größerer Wert wie 25 % ist unmöglich.",
         "fr": "Sel dissous = 200 * 0,20 = 40 grammes. Nouvelle masse totale = 200 + 50 = 250 grammes. Nouveau pourcentage = (40 / 250) * 100 = 16 %. Lors d'une dilution, la masse de sel ne change pas, seule la masse de solution augmente ; la concentration passe donc sous 20 %, et une valeur plus grande comme 25 % est impossible.",
-        "ru": "Растворенная соль = 200*0,20=40 грамм. Новая общая масса = 200 + 50 = 250 грамм. Новый процент = (40/250) * 100 = 16%. При разбавлении масса соли не меняется, растёт только масса раствора; поэтому концентрация опускается ниже 20%, а большее значение, например 25%, невозможно.",
+        "ru": "Масса соли = 200 · 0,20 = 40 г. Новая масса раствора = 200 + 50 = 250 г. Массовая доля = (40 / 250) · 100 = 16 %. При разбавлении масса соли не меняется, растёт только масса раствора; поэтому концентрация становится ниже 20 %, и большее значение, например 25 %, невозможно.",
         "ar": "ملح مذاب = 200 * 0.20 = 40 جرام. الكتلة الكلية الجديدة = 200 + 50 = 250 جرام. النسبة الجديدة = (40 / 250) * 100 = 16%. في التخفيف لا تتغير كتلة الملح وتزداد كتلة المحلول فقط؛ لذلك ينخفض التركيز إلى أقل من 20%، ولا يمكن أن تكون القيمة أكبر مثل 25%.",
-        "zh": "溶解盐=200*0.20=40克。新总质量 = 200 + 50 = 250 克。新百分比 = (40 / 250) * 100 = 16%。稀释时盐的质量不变，只有溶液质量增加，所以浓度降到 20% 以下，不可能是 25% 这样更大的值。",
+        "zh": "溶解的盐 = 200 · 0.20 = 40 g。新溶液总质量 = 200 + 50 = 250 g。新质量分数 = (40 / 250) · 100 = 16%。稀释时盐的质量不变，只有溶液质量增加，所以浓度降到 20% 以下，不可能是 25% 这样更大的值。",
         "ku": "Xwêya helkirî = 200 * 0,20 = 40 gram. Girseya giştî ya nû = 200 + 50 = 250 gram. Rêjeya nû = (40 / 250) * 100 = 16%. Di sivikkirinê de girseya xwê naguhere, tenê girseya çareseriyê zêde dibe; ji ber vê yekê giranbûn dikeve bin 20%, nirxeke mezintir wek 25% ne mimkun e."
       }
     },
@@ -1130,7 +1130,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Quelle méthode faut-il utiliser pour séparer en ses constituants le mélange homogène d'acétone (56 °C) et d'eau (100 °C), qui ont des températures d'ébullition différentes ?",
         "ru": "Каким методом следует разделить на компоненты однородную смесь ацетона (56 °C) и воды (100 °C), имеющих разные температуры кипения?",
         "ar": "ما الطريقة التي ينبغي استخدامها لفصل الخليط المتجانس من الأسيتون (56 °C) والماء (100 °C)، المختلفين في درجة الغليان، إلى مكوناته؟",
-        "zh": "丙酮（56 °C）和水（100 °C）沸点不同，要把它们的均匀混合物分离成各组分，应采用哪种方法？",
+        "zh": "丙酮(56 °C)和水(100 °C)沸点不同，要把它们的均匀混合物分离成各组分，应采用哪种方法？",
         "ku": "Ji bo veqetandina tevliheviya homojen a aseton (56 °C) û avê (100 °C), ku xalên wan ên kelandinê cuda ne, li pêkhateyên wê divê kîjan rêbaz were bikaranîn?"
       },
       "options": [
@@ -1204,7 +1204,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "A cologne solution with a total volume of 250 mL is prepared by mixing 60 mL of ethyl alcohol with water. What is the percent by volume of this solution?",
         "de": "Durch Mischen von 60 mL Ethylalkohol mit Wasser wird eine Kölnisch-Wasser-Lösung mit einem Gesamtvolumen von 250 mL hergestellt. Wie groß ist der Volumenanteil in Prozent dieser Lösung?",
         "fr": "On prépare une eau de Cologne de volume total 250 mL en mélangeant 60 mL d'alcool éthylique avec de l'eau. Quel est le pourcentage volumique de cette solution ?",
-        "ru": "Смешиванием 60 мл этилового спирта с водой готовят одеколон общим объёмом 250 мл. Какова объёмная доля спирта в процентах в этом растворе?",
+        "ru": "Смешав 60 мл этилового спирта с водой, приготовили одеколон общим объёмом 250 мл. Какова объёмная доля спирта (в %) в этом растворе?",
         "ar": "يُحضَّر محلول كولونيا حجمه الكلي 250 mL بخلط 60 mL من الكحول الإيثيلي مع الماء. ما النسبة المئوية الحجمية لهذا المحلول؟",
         "zh": "将60 mL乙醇与水混合，配成总体积为250 mL的古龙水溶液。该溶液中乙醇的体积分数是多少？",
         "ku": "Bi tevlihevkirina 60 mL etîl alkolê bi avê re çareseriyek kolonyayê ya ku hecma wê ya giştî 250 mL e tê amadekirin. Sedîya hecmî ya vê çareseriyê çend e?"
@@ -1215,7 +1215,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "19.4%",
           "de": "19,4 %",
           "fr": "19,4 %",
-          "ru": "19,4%",
+          "ru": "19,4 %",
           "ar": "19.4%",
           "zh": "19.4%",
           "ku": "%19,4"
@@ -1225,7 +1225,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "24%",
           "de": "24 %",
           "fr": "24 %",
-          "ru": "24%",
+          "ru": "24 %",
           "ar": "24%",
           "zh": "24%",
           "ku": "%24"
@@ -1235,7 +1235,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "31.6%",
           "de": "31,6 %",
           "fr": "31,6 %",
-          "ru": "31,6%",
+          "ru": "31,6 %",
           "ar": "31.6%",
           "zh": "31.6%",
           "ku": "%31,6"
@@ -1245,7 +1245,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "60%",
           "de": "60 %",
           "fr": "60 %",
-          "ru": "60%",
+          "ru": "60 %",
           "ar": "60%",
           "zh": "60%",
           "ku": "%60"
@@ -1255,7 +1255,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "76%",
           "de": "76 %",
           "fr": "76 %",
-          "ru": "76%",
+          "ru": "76 %",
           "ar": "76%",
           "zh": "76%",
           "ku": "%76"
@@ -1267,9 +1267,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Percent by volume = (volume of solute / volume of solution) · 100 = (60 / 250) · 100 = 24%. Adding the alcohol volume to 250 mL again and dividing by 310 gives 19.4%; treating 250 − 60 = 190 mL as solvent and dividing by it gives 31.6% — both are errors. 76% is the share of water, not alcohol.",
         "de": "Volumenprozent = (Volumen des Gelösten / Volumen der Lösung) · 100 = (60 / 250) · 100 = 24 %. Addiert man das Alkoholvolumen nochmals zu 250 mL und teilt durch 310, erhält man fälschlich 19,4 %; teilt man durch 250 − 60 = 190 mL „Lösungsmittel“, fälschlich 31,6 %. 76 % ist der Anteil des Wassers, nicht des Alkohols.",
         "fr": "Pourcentage volumique = (volume de soluté / volume de solution) · 100 = (60 / 250) · 100 = 24 %. Rajouter le volume d'alcool aux 250 mL et diviser par 310 donne 19,4 % ; diviser par 250 − 60 = 190 mL considérés comme solvant donne 31,6 % : ce sont des erreurs. 76 % est la part de l'eau, pas de l'alcool.",
-        "ru": "Объёмная доля = (объём растворённого вещества / объём раствора) · 100 = (60 / 250) · 100 = 24%. Если ещё раз прибавить объём спирта к 250 мл и делить на 310, получится ошибочные 19,4%; если делить на 250 − 60 = 190 мл «растворителя» — ошибочные 31,6%. 76% — это доля воды, а не спирта.",
+        "ru": "Объёмная доля = (объём растворённого вещества / объём раствора) · 100 = (60 / 250) · 100 = 24 %. Если ещё раз прибавить объём спирта к 250 мл и делить на 310, получится ошибочное значение 19,4 %; если делить на 250 − 60 = 190 мл «растворителя» — ошибочное 31,6 %. 76 % — это доля воды, а не спирта.",
         "ar": "النسبة المئوية الحجمية = (حجم المذاب / حجم المحلول) · 100 = (60 / 250) · 100 = 24%. إضافة حجم الكحول مرة أخرى إلى 250 mL والقسمة على 310 تعطي 19.4% خطأً، والقسمة على 250 − 60 = 190 mL باعتبارها المذيب تعطي 31.6% خطأً. أما 76% فهي حصة الماء لا الكحول.",
-        "zh": "体积分数 = (溶质体积 / 溶液体积) · 100 = (60 / 250) · 100 = 24%。把乙醇体积再加到250 mL上、除以310得19.4%，把250 − 60 = 190 mL当作溶剂并除以它得31.6%，都是错误的。76%是水所占的比例，不是乙醇。",
+        "zh": "体积分数 = (溶质体积 / 溶液体积) · 100 = (60 / 250) · 100 = 24%。把乙醇体积再加到250 mL上、除以310得19.4%，把250 − 60 = 190 mL当作溶剂并除以它得31.6%，都是错误的。76%是水所占的比例，不是乙醇的。",
         "ku": "Sedîya hecmî = (hecma helbûyî / hecma çareseriyê) · 100 = (60 / 250) · 100 = %24. Ger hecma alkolê dîsa li 250 mL were zêdekirin û li 310 were parvekirin %19,4, ger 250 − 60 = 190 mL wek helker were hesibandin û li wê were parvekirin %31,6 derdikeve; ev şaş in. %76 para avê ye, ne ya alkolê."
       }
     },
@@ -1282,7 +1282,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Parmi les affirmations suivantes sur la dissolution, lesquelles sont exactes ?\nI. Le diiode (I2) se dissout mieux dans CCl4 apolaire que dans l'eau polaire.\nII. Lors de la dissolution de NaCl dans l'eau, des interactions ion-dipôle s'établissent entre les ions Na+ et Cl- et les molécules d'eau.\nIII. L'huile d'olive et l'eau se dissolvent bien l'une dans l'autre parce que ce sont deux liquides.",
         "ru": "Какие из следующих утверждений о растворении верны?\nI. Йод (I2) растворяется в неполярном CCl4 лучше, чем в полярной воде.\nII. При растворении NaCl в воде между ионами Na+ и Cl- и молекулами воды возникают ион-дипольные взаимодействия.\nIII. Оливковое масло и вода хорошо растворяются друг в друге, так как обе являются жидкостями.",
         "ar": "أيّ العبارات الآتية عن الذوبان صحيحة؟\nI. يذوب اليود (I2) في CCl4 غير القطبي أفضل من ذوبانه في الماء القطبي.\nII. عند ذوبان NaCl في الماء تتكون تآثرات أيون-ثنائي القطب بين أيونات Na+ وCl- وجزيئات الماء.\nIII. يذوب زيت الزيتون والماء أحدهما في الآخر جيدًا لأن كليهما سائل.",
-        "zh": "下列关于溶解的说法中，哪些是正确的？\nI. 碘（I2）在非极性的CCl4中比在极性的水中溶解得更好。\nII. NaCl溶于水时，Na+和Cl-离子与水分子之间形成离子-偶极作用。\nIII. 橄榄油和水都是液体，所以能很好地互相溶解。",
+        "zh": "下列关于溶解的说法中，哪些是正确的？\nI. 碘(I2)在非极性的CCl4中比在极性的水中溶解得更好。\nII. NaCl溶于水时，Na+ 和 Cl- 离子与水分子之间形成离子-偶极作用。\nIII. 橄榄油和水都是液体，所以能很好地互相溶解。",
         "ku": "Ji van hukmên jêrîn ên derbarê helandinê de kîjan rast in?\nI. Îyod (I2) di CCl4 ya ne-polar de ji ava polar baştir dihele.\nII. Dema NaCl di avê de dihele, di navbera îyonên Na+ û Cl- û molekulên avê de têkiliyên îyon-dîpol çêdibin.\nIII. Rûnê zeytûnê û av, ji ber ku herdu jî şil in, di hev de baş dihelin."
       },
       "options": [
@@ -1356,7 +1356,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "100 g of a 20% by mass sugar solution is mixed with 300 g of a 40% by mass sugar solution. What is the percent by mass of the resulting solution?",
         "de": "100 g einer Zuckerlösung mit 20 Massenprozent werden mit 300 g einer Zuckerlösung mit 40 Massenprozent gemischt. Wie viel Massenprozent hat die entstehende Lösung?",
         "fr": "On mélange 100 g d'eau sucrée à 20 % en masse avec 300 g d'eau sucrée à 40 % en masse. Quel est le pourcentage massique de la solution obtenue ?",
-        "ru": "Смешивают 100 г 20%-ного (по массе) раствора сахара и 300 г 40%-ного (по массе) раствора сахара. Какова массовая доля сахара в процентах в полученном растворе?",
+        "ru": "Смешали 100 г раствора сахара с массовой долей 20 % и 300 г раствора сахара с массовой долей 40 %. Какова массовая доля сахара в полученном растворе?",
         "ar": "يُخلط 100 g من محلول سكري تركيزه 20% بالكتلة مع 300 g من محلول سكري تركيزه 40% بالكتلة. ما النسبة المئوية الكتلية للمحلول الناتج؟",
         "zh": "将100 g质量分数为20%的糖水与300 g质量分数为40%的糖水混合。所得溶液的质量分数是多少？",
         "ku": "100 g ava şekirî ya %20 a girseyî bi 300 g ava şekirî ya %40 a girseyî re tê tevlihevkirin. Sedîya girseyî ya çareseriya ku çêdibe çend e?"
@@ -1367,7 +1367,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "20%",
           "de": "20 %",
           "fr": "20 %",
-          "ru": "20%",
+          "ru": "20 %",
           "ar": "20%",
           "zh": "20%",
           "ku": "%20"
@@ -1377,7 +1377,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "30%",
           "de": "30 %",
           "fr": "30 %",
-          "ru": "30%",
+          "ru": "30 %",
           "ar": "30%",
           "zh": "30%",
           "ku": "%30"
@@ -1387,7 +1387,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "35%",
           "de": "35 %",
           "fr": "35 %",
-          "ru": "35%",
+          "ru": "35 %",
           "ar": "35%",
           "zh": "35%",
           "ku": "%35"
@@ -1397,7 +1397,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "40%",
           "de": "40 %",
           "fr": "40 %",
-          "ru": "40%",
+          "ru": "40 %",
           "ar": "40%",
           "zh": "40%",
           "ku": "%40"
@@ -1407,7 +1407,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "60%",
           "de": "60 %",
           "fr": "60 %",
-          "ru": "60%",
+          "ru": "60 %",
           "ar": "60%",
           "zh": "60%",
           "ku": "%60"
@@ -1419,7 +1419,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Sugar in the first solution = 100 · 0.20 = 20 g; in the second = 300 · 0.40 = 120 g. Total sugar = 140 g, total solution = 400 g. Percentage = (140 / 400) · 100 = 35%. Averaging the two percentages without the masses gives 30%, adding them gives 60% — both wrong; the mixture's concentration lies between the two and closer to the one with the larger mass.",
         "de": "Zucker in der ersten Lösung = 100 · 0,20 = 20 g; in der zweiten = 300 · 0,40 = 120 g. Gesamtzucker = 140 g, Gesamtlösung = 400 g. Prozent = (140 / 400) · 100 = 35 %. Der Mittelwert der Prozentangaben ohne Massen ergibt fälschlich 30 %, ihre Summe 60 %; die Konzentration der Mischung liegt zwischen beiden und näher an der Lösung mit der größeren Masse.",
         "fr": "Sucre dans la première solution = 100 · 0,20 = 20 g ; dans la seconde = 300 · 0,40 = 120 g. Sucre total = 140 g, solution totale = 400 g. Pourcentage = (140 / 400) · 100 = 35 %. Faire la moyenne des pourcentages sans tenir compte des masses donne 30 %, les additionner donne 60 % : erreurs. La concentration du mélange est comprise entre les deux et plus proche de celle de la solution la plus lourde.",
-        "ru": "Сахар в первом растворе = 100 · 0,20 = 20 г; во втором = 300 · 0,40 = 120 г. Всего сахара 140 г, всего раствора 400 г. Доля = (140 / 400) · 100 = 35%. Среднее двух процентов без учёта масс даёт ошибочные 30%, их сумма — 60%; концентрация смеси лежит между двумя исходными и ближе к той, чья масса больше.",
+        "ru": "Сахар в первом растворе = 100 · 0,20 = 20 г; во втором = 300 · 0,40 = 120 г. Всего сахара 140 г, всего раствора 400 г. Массовая доля = (140 / 400) · 100 = 35 %. Среднее двух процентов без учёта масс даёт ошибочные 30 %, их сумма — 60 %; концентрация смеси всегда лежит между двумя исходными и ближе к концентрации раствора с большей массой.",
         "ar": "السكر في المحلول الأول = 100 · 0.20 = 20 g، وفي الثاني = 300 · 0.40 = 120 g. مجموع السكر = 140 g ومجموع المحلول = 400 g. النسبة = (140 / 400) · 100 = 35%. أخذ متوسط النسبتين دون الكتل يعطي 30% وجمعهما يعطي 60% وكلاهما خطأ؛ فتركيز الخليط يقع بين التركيزين وأقرب إلى المحلول الأكبر كتلة.",
         "zh": "第一份溶液中糖 = 100 · 0.20 = 20 g；第二份中糖 = 300 · 0.40 = 120 g。糖共140 g，溶液共400 g。质量分数 = (140 / 400) · 100 = 35%。不考虑质量而直接取两个百分数的平均值得30%，把它们相加得60%，都是错误的；混合液的浓度介于两者之间，且更接近质量较大的那份溶液。",
         "ku": "Şekirê di çareseriya yekem de = 100 · 0,20 = 20 g; di ya duyem de = 300 · 0,40 = 120 g. Şekirê giştî = 140 g, çareseriya giştî = 400 g. Sedî = (140 / 400) · 100 = %35. Navgîniya herdu sedîyan bêyî girseyan %30, berhevkirina wan %60 dide; ev şaş in. Giranbûna tevliheviyê di navbera herduyan de ye û nêzîkî ya bi girseya mezintir e."
@@ -1432,7 +1432,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "200 g of 15% by mass salt water is heated and 50 g of water is evaporated without any salt crystallising. What is the percent by mass of the final solution?",
         "de": "200 g Salzwasser mit 15 Massenprozent werden erhitzt, und 50 g Wasser verdampfen, ohne dass Salz ausfällt. Wie viel Massenprozent hat die Lösung danach?",
         "fr": "On chauffe 200 g d'eau salée à 15 % en masse et on évapore 50 g d'eau sans que le sel ne cristallise. Quel est le pourcentage massique de la solution finale ?",
-        "ru": "200 г 15%-ного (по массе) раствора соли нагревают и выпаривают 50 г воды так, что соль не выпадает. Какова массовая доля соли в процентах в конечном растворе?",
+        "ru": "Из 200 г раствора соли с массовой долей 15 % при нагревании выпарили 50 г воды; соль в осадок не выпала. Какова массовая доля соли в конечном растворе?",
         "ar": "يُسخَّن 200 g من ماء مالح تركيزه 15% بالكتلة فيتبخر 50 g من الماء دون أن يترسب الملح. ما النسبة المئوية الكتلية للمحلول النهائي؟",
         "zh": "将200 g质量分数为15%的盐水加热，蒸发掉50 g水，且没有盐析出。最终溶液的质量分数是多少？",
         "ku": "200 g ava şor a %15 a girseyî tê germkirin û bêyî ku xwê binişe 50 g av hilm dibe. Sedîya girseyî ya çareseriya dawî çend e?"
@@ -1443,7 +1443,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "10%",
           "de": "10 %",
           "fr": "10 %",
-          "ru": "10%",
+          "ru": "10 %",
           "ar": "10%",
           "zh": "10%",
           "ku": "%10"
@@ -1453,7 +1453,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "12%",
           "de": "12 %",
           "fr": "12 %",
-          "ru": "12%",
+          "ru": "12 %",
           "ar": "12%",
           "zh": "12%",
           "ku": "%12"
@@ -1463,7 +1463,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "15%",
           "de": "15 %",
           "fr": "15 %",
-          "ru": "15%",
+          "ru": "15 %",
           "ar": "15%",
           "zh": "15%",
           "ku": "%15"
@@ -1473,7 +1473,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "20%",
           "de": "20 %",
           "fr": "20 %",
-          "ru": "20%",
+          "ru": "20 %",
           "ar": "20%",
           "zh": "20%",
           "ku": "%20"
@@ -1483,7 +1483,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "25%",
           "de": "25 %",
           "fr": "25 %",
-          "ru": "25%",
+          "ru": "25 %",
           "ar": "25%",
           "zh": "25%",
           "ku": "%25"
@@ -1495,9 +1495,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Mass of salt = 200 · 0.15 = 30 g and it does not change on evaporation. New mass of solution = 200 − 50 = 150 g. Percentage = (30 / 150) · 100 = 20%. Taking the mass as 250 g (as if water were added) gives 12%; assuming the concentration is unchanged gives 15%; dividing by the remaining water (120 g) gives 25% — all wrong.",
         "de": "Salzmasse = 200 · 0,15 = 30 g; sie ändert sich beim Verdampfen nicht. Neue Lösungsmasse = 200 − 50 = 150 g. Prozent = (30 / 150) · 100 = 20 %. Mit 250 g zu rechnen (als wäre Wasser zugegeben) ergibt 12 %, eine unveränderte Konzentration anzunehmen 15 %, durch das verbleibende Wasser (120 g) zu teilen 25 % — alles falsch.",
         "fr": "Masse de sel = 200 · 0,15 = 30 g, inchangée par l'évaporation. Nouvelle masse de solution = 200 − 50 = 150 g. Pourcentage = (30 / 150) · 100 = 20 %. Prendre 250 g (comme si on avait ajouté de l'eau) donne 12 % ; supposer la concentration inchangée donne 15 % ; diviser par l'eau restante (120 g) donne 25 % : erreurs.",
-        "ru": "Масса соли = 200 · 0,15 = 30 г, при выпаривании она не меняется. Новая масса раствора = 200 − 50 = 150 г. Доля = (30 / 150) · 100 = 20%. Если взять массу 250 г (как будто воду добавили) — получится 12%, если считать концентрацию неизменной — 15%, если делить на оставшуюся воду (120 г) — 25%; всё это ошибки.",
+        "ru": "Масса соли = 200 · 0,15 = 30 г, при выпаривании она не меняется. Новая масса раствора = 200 − 50 = 150 г. Массовая доля = (30 / 150) · 100 = 20 %. Если взять массу 250 г (как будто воду добавили), получится 12 %; если считать концентрацию неизменной — 15 %; если делить на оставшуюся воду (120 г) — 25 %. Всё это ошибки.",
         "ar": "كتلة الملح = 200 · 0.15 = 30 g ولا تتغير بالتبخير. كتلة المحلول الجديدة = 200 − 50 = 150 g. النسبة = (30 / 150) · 100 = 20%. اعتبار الكتلة 250 g (كأن الماء أُضيف) يعطي 12%، وافتراض ثبات التركيز يعطي 15%، والقسمة على الماء المتبقي (120 g) تعطي 25%، وكلها خطأ.",
-        "zh": "盐的质量 = 200 · 0.15 = 30 g，蒸发时不变。新溶液质量 = 200 − 50 = 150 g。质量分数 = (30 / 150) · 100 = 20%。把质量当作250 g（像加了水一样）得12%，认为浓度不变得15%，除以剩余的水（120 g）得25%，都是错误的。",
+        "zh": "盐的质量 = 200 · 0.15 = 30 g，蒸发时不变。新溶液质量 = 200 − 50 = 150 g。质量分数 = (30 / 150) · 100 = 20%。把质量当作250 g（像加了水一样）得12%，认为浓度不变得15%，除以剩余的水(120 g)得25%，都是错误的。",
         "ku": "Girseya xwê = 200 · 0,15 = 30 g û bi hilmkirinê naguhere. Girseya nû ya çareseriyê = 200 − 50 = 150 g. Sedî = (30 / 150) · 100 = %20. Girse wek 250 g hesibandin (wek ku av hatibe zêdekirin) %12, giranbûn neguherî hesibandin %15, parvekirina li ava mayî (120 g) %25 dide; hemû şaş in."
       }
     },
@@ -1508,7 +1508,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "How many grams of sugar must be added to 160 g of a 25% by mass sugar solution, all of it dissolving at the same temperature, to obtain a 40% by mass solution?",
         "de": "Wie viel Gramm Zucker muss man 160 g einer Zuckerlösung mit 25 Massenprozent bei gleicher Temperatur zufügen (der Zucker löst sich vollständig), um eine Lösung mit 40 Massenprozent zu erhalten?",
         "fr": "Combien de grammes de sucre faut-il ajouter à 160 g d'eau sucrée à 25 % en masse, le sucre se dissolvant entièrement à la même température, pour obtenir une solution à 40 % en masse ?",
-        "ru": "Сколько граммов сахара нужно добавить к 160 г 25%-ного (по массе) раствора сахара, чтобы при той же температуре весь сахар растворился и получился 40%-ный (по массе) раствор?",
+        "ru": "Сколько граммов сахара нужно добавить при той же температуре к 160 г раствора сахара с массовой долей 25 %, чтобы весь сахар растворился и получился раствор с массовой долей 40 %?",
         "ar": "كم غرامًا من السكر يجب إضافتها إلى 160 g من محلول سكري تركيزه 25% بالكتلة، بحيث يذوب كله عند درجة الحرارة نفسها، للحصول على محلول تركيزه 40% بالكتلة؟",
         "zh": "向160 g质量分数为25%的糖水中加入多少克糖（在同一温度下全部溶解），可得到质量分数为40%的溶液？",
         "ku": "Ji bo ku çareseriyek %40 a girseyî bê bidestxistin, divê çend gram şekir li 160 g ava şekirî ya %25 a girseyî were zêdekirin (di heman germahiyê de hemû dihele)?"
@@ -1519,7 +1519,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "16 g",
           "de": "16 g",
           "fr": "16 g",
-          "ru": "16 g",
+          "ru": "16 г",
           "ar": "16 g",
           "zh": "16 g",
           "ku": "16 g"
@@ -1529,7 +1529,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "24 g",
           "de": "24 g",
           "fr": "24 g",
-          "ru": "24 g",
+          "ru": "24 г",
           "ar": "24 g",
           "zh": "24 g",
           "ku": "24 g"
@@ -1539,7 +1539,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "32 g",
           "de": "32 g",
           "fr": "32 g",
-          "ru": "32 g",
+          "ru": "32 г",
           "ar": "32 g",
           "zh": "32 g",
           "ku": "32 g"
@@ -1549,7 +1549,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "40 g",
           "de": "40 g",
           "fr": "40 g",
-          "ru": "40 g",
+          "ru": "40 г",
           "ar": "40 g",
           "zh": "40 g",
           "ku": "40 g"
@@ -1559,7 +1559,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "64 g",
           "de": "64 g",
           "fr": "64 g",
-          "ru": "64 g",
+          "ru": "64 г",
           "ar": "64 g",
           "zh": "64 g",
           "ku": "64 g"
@@ -1571,9 +1571,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Initial sugar = 160 · 0.25 = 40 g. Let the added sugar be x; both the solute and the solution mass increase by x: (40 + x) / (160 + x) = 0.40 → 40 + x = 64 + 0.4x → 0.6x = 24 → x = 40 g. Check: 80 / 200 = 40%. Forgetting that the solution mass also increases (0.40 · 160 − 40 = 24 g) or taking 64 g as the sugar to add are typical errors.",
         "de": "Anfangszucker = 160 · 0,25 = 40 g. Zugegebener Zucker sei x; Gelöstes und Lösung nehmen beide um x zu: (40 + x) / (160 + x) = 0,40 → 40 + x = 64 + 0,4x → 0,6x = 24 → x = 40 g. Probe: 80 / 200 = 40 %. Typische Fehler: vergessen, dass auch die Lösungsmasse wächst (0,40 · 160 − 40 = 24 g), oder 64 g für die zuzugebende Menge halten.",
         "fr": "Sucre initial = 160 · 0,25 = 40 g. Soit x le sucre ajouté ; la masse de soluté et celle de la solution augmentent toutes deux de x : (40 + x) / (160 + x) = 0,40 → 40 + x = 64 + 0,4x → 0,6x = 24 → x = 40 g. Vérification : 80 / 200 = 40 %. Oublier que la masse de solution augmente aussi (0,40 · 160 − 40 = 24 g) ou prendre 64 g pour la masse à ajouter sont des erreurs classiques.",
-        "ru": "Исходный сахар = 160 · 0,25 = 40 г. Пусть добавлено x г сахара; масса и растворённого вещества, и раствора увеличивается на x: (40 + x) / (160 + x) = 0,40 → 40 + x = 64 + 0,4x → 0,6x = 24 → x = 40 г. Проверка: 80 / 200 = 40%. Типичные ошибки — забыть, что растёт и масса раствора (0,40 · 160 − 40 = 24 г), или принять 64 г за добавляемое количество.",
+        "ru": "Исходный сахар = 160 · 0,25 = 40 г. Пусть добавлено x г сахара; масса и растворённого вещества, и раствора увеличивается на x: (40 + x) / (160 + x) = 0,40 → 40 + x = 64 + 0,4x → 0,6x = 24 → x = 40 г. Проверка: 80 / 200 = 40 %. Типичные ошибки — забыть, что растёт и масса раствора (0,40 · 160 − 40 = 24 г), или принять 64 г за добавляемое количество.",
         "ar": "السكر الابتدائي = 160 · 0.25 = 40 g. ليكن السكر المضاف x؛ فتزداد كتلة المذاب وكتلة المحلول كلتاهما بمقدار x: (40 + x) / (160 + x) = 0.40 → 40 + x = 64 + 0.4x → 0.6x = 24 → x = 40 g. التحقق: 80 / 200 = 40%. من الأخطاء الشائعة نسيان ازدياد كتلة المحلول (0.40 · 160 − 40 = 24 g) أو اعتبار 64 g هي الكمية المضافة.",
-        "zh": "原有糖 = 160 · 0.25 = 40 g。设加入糖x g，溶质和溶液的质量都增加x：(40 + x) / (160 + x) = 0.40 → 40 + x = 64 + 0.4x → 0.6x = 24 → x = 40 g。检验：80 / 200 = 40%。忘记溶液质量也增加（0.40 · 160 − 40 = 24 g），或把64 g当作要加入的糖，都是典型错误。",
+        "zh": "原有糖 = 160 · 0.25 = 40 g。设加入糖x g，溶质和溶液的质量都增加x：(40 + x) / (160 + x) = 0.40 → 40 + x = 64 + 0.4x → 0.6x = 24 → x = 40 g。检验：80 / 200 = 40%。忘记溶液质量也增加(0.40 · 160 − 40 = 24 g)，或把64 g当作要加入的糖，都是典型错误。",
         "ku": "Şekirê destpêkê = 160 · 0,25 = 40 g. Bila şekirê zêdekirî x be; hem girseya helbûyî hem ya çareseriyê bi qasî x zêde dibe: (40 + x) / (160 + x) = 0,40 → 40 + x = 64 + 0,4x → 0,6x = 24 → x = 40 g. Kontrol: 80 / 200 = %40. Jibîrkirina zêdebûna girseya çareseriyê (0,40 · 160 − 40 = 24 g) an 64 g wek şekirê ku bê zêdekirin hesibandin şaşiyên berbelav in."
       }
     },
@@ -1671,7 +1671,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "Gelatine in water",
           "de": "Gelatine in Wasser",
           "fr": "Gélatine dans l'eau",
-          "ru": "Раствор желатина в воде",
+          "ru": "Вода с желатином",
           "ar": "الجيلاتين في الماء",
           "zh": "明胶水溶液",
           "ku": "Jelatîn di avê de"
@@ -1681,7 +1681,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "Sugar water",
           "de": "Zuckerwasser",
           "fr": "Eau sucrée",
-          "ru": "Сахарная вода",
+          "ru": "Вода с сахаром",
           "ar": "الماء المحلّى بالسكر",
           "zh": "糖水",
           "ku": "Ava şekirî"
@@ -1691,7 +1691,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "Salt water",
           "de": "Salzwasser",
           "fr": "Eau salée",
-          "ru": "Солёная вода",
+          "ru": "Вода с солью",
           "ar": "الماء المالح",
           "zh": "盐水",
           "ku": "Ava şor"
@@ -1701,7 +1701,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "Chalk powder in water",
           "de": "Kreidepulver in Wasser",
           "fr": "Poudre de craie dans l'eau",
-          "ru": "Меловой порошок в воде",
+          "ru": "Мел с водой",
           "ar": "مسحوق الطباشير في الماء",
           "zh": "粉笔灰与水",
           "ku": "Toza tebeşîrê-av"
@@ -1711,7 +1711,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "Olive oil and water",
           "de": "Olivenöl und Wasser",
           "fr": "Huile d'olive et eau",
-          "ru": "Оливковое масло и вода",
+          "ru": "Оливковое масло с водой",
           "ar": "زيت الزيتون والماء",
           "zh": "橄榄油与水",
           "ku": "Rûnê zeytûnê-av"
@@ -1723,9 +1723,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "A visible light path (Tyndall effect) shows that the particles are of colloidal size (about 1–1000 nm); colloidal particles pass through filter paper and do not settle on standing. Gelatine in water is a colloid. Sugar water and salt water are true solutions and do not scatter light. Chalk in water is a suspension that leaves residue on the filter and settles; olive oil–water is an emulsion that separates into two layers on standing.",
         "de": "Ein sichtbarer Lichtweg (Tyndall-Effekt) zeigt Teilchen kolloidaler Größe (etwa 1–1000 nm); sie passieren Filterpapier und setzen sich nicht ab. Gelatine in Wasser ist ein Kolloid. Zucker- und Salzwasser sind echte Lösungen und streuen kein Licht. Kreide in Wasser ist eine Suspension, hinterlässt Rückstand und setzt sich ab; Olivenöl-Wasser ist eine Emulsion, die sich beim Stehen in zwei Schichten trennt.",
         "fr": "Un trajet lumineux visible (effet Tyndall) indique des particules de taille colloïdale (environ 1–1000 nm) ; elles traversent le papier filtre et ne sédimentent pas. La gélatine dans l'eau est un colloïde. L'eau sucrée et l'eau salée sont de vraies solutions et ne diffusent pas la lumière. La craie dans l'eau est une suspension qui laisse un résidu et se dépose ; l'huile d'olive–eau est une émulsion qui se sépare en deux couches au repos.",
-        "ru": "Видимый путь луча (эффект Тиндаля) говорит о частицах коллоидного размера (примерно 1–1000 нм); они проходят через фильтровальную бумагу и не оседают. Раствор желатина — коллоид. Сахарная и солёная вода — истинные растворы и свет не рассеивают. Мел в воде — суспензия: оставляет осадок на фильтре и оседает; оливковое масло с водой — эмульсия, при стоянии расслаивается на два слоя.",
+        "ru": "Видимый путь луча (эффект Тиндаля) говорит о частицах коллоидного размера (примерно 1–1000 нм); они проходят через фильтровальную бумагу и не оседают. Вода с желатином — коллоид. Вода с сахаром и вода с солью — истинные растворы и свет не рассеивают. Мел с водой — суспензия: оставляет осадок на фильтре и оседает; оливковое масло с водой — эмульсия, при стоянии расслаивается на два слоя.",
         "ar": "ظهور مسار الضوء (ظاهرة تندال) يدل على أن الدقائق بحجم غروي (نحو 1–1000 nm)، والدقائق الغروية تمر عبر ورق الترشيح ولا تترسب عند الترك. والجيلاتين في الماء غروي. أما الماء المحلّى والماء المالح فمحاليل حقيقية لا تشتت الضوء. والطباشير في الماء معلق يترك راسبًا ويترسب، وزيت الزيتون والماء مستحلب ينفصل إلى طبقتين عند الترك.",
-        "zh": "能看到光路（丁达尔效应）说明粒子是胶体大小（约1–1000 nm）；胶体粒子能透过滤纸，静置也不沉降。明胶水溶液是胶体。糖水和盐水是真溶液，不散射光。粉笔灰与水是悬浊液，会在滤纸上留下残留物并沉降；橄榄油与水是乳浊液，静置后分成两层。",
+        "zh": "能看到光路（丁达尔效应）说明粒子是胶体大小(约1–1000 nm)；胶体粒子能透过滤纸，静置也不沉降。明胶水溶液是胶体。糖水和盐水是真溶液，不散射光。粉笔灰与水是悬浊液，会在滤纸上留下残留物并沉降；橄榄油与水是乳浊液，静置后分成两层。",
         "ku": "Xuyabûna riya ronahiyê (bandora Tyndall) nîşan dide ku perçe bi mezinahiya kolloîdî ne (nêzîkî 1–1000 nm); perçeyên kolloîdî di kaxeza parzûnê re derbas dibin û naniştin. Jelatîn di avê de kolloîd e. Ava şekirî û ava şor çareseriyên rastîn in, ronahiyê belav nakin. Toza tebeşîrê-av suspansiyon e, bermayî dihêle û diniştin; rûnê zeytûnê-av emulsiyon e û dema tê hiştin dibe du qat."
       }
     },
@@ -1747,7 +1747,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "Iron filings–sulfur powder – magnetic separation",
           "de": "Eisenpulver-Schwefelpulver – Magnetscheidung",
           "fr": "Limaille de fer–poudre de soufre – séparation magnétique",
-          "ru": "Железные опилки–порошок серы – магнитная сепарация",
+          "ru": "Железный порошок–порошок серы – магнитная сепарация",
           "ar": "برادة الحديد-مسحوق الكبريت – الفصل المغناطيسي",
           "zh": "铁粉-硫粉 – 磁铁分离",
           "ku": "Toza hesin-toza kukurtê – veqetandina bi mexnatîsê"
@@ -1787,7 +1787,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "Sugar water – filtration",
           "de": "Zuckerwasser – Filtration",
           "fr": "Eau sucrée – filtration",
-          "ru": "Сахарная вода – фильтрование",
+          "ru": "Раствор сахара в воде – фильтрование",
           "ar": "الماء المحلّى بالسكر – الترشيح",
           "zh": "糖水 – 过滤",
           "ku": "Ava şekirî – parzûnkirin"
@@ -1799,9 +1799,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "Sugar water is a homogeneous solution; sugar molecules pass easily through the pores of filter paper, so filtration cannot separate it. The sugar is recovered by evaporating the water (or by simple distillation if the water is wanted too). The other pairs are correct: iron is attracted by a magnet, sand stays on the filter, immiscible oil and water form two layers in the funnel, and sawdust floats on water while sand sinks.",
         "de": "Zuckerwasser ist eine homogene Lösung; Zuckermoleküle passieren die Poren des Filterpapiers leicht, daher lässt sie sich nicht filtrieren. Den Zucker gewinnt man durch Verdampfen des Wassers (oder einfache Destillation, wenn auch Wasser gewünscht ist). Die übrigen Zuordnungen stimmen: Eisen wird vom Magneten angezogen, Sand bleibt im Filter, nicht mischbares Öl und Wasser bilden im Trichter zwei Schichten, Sägemehl schwimmt auf Wasser, Sand sinkt.",
         "fr": "L'eau sucrée est une solution homogène ; les molécules de sucre traversent facilement les pores du papier filtre, la filtration ne peut donc pas la séparer. On récupère le sucre en évaporant l'eau (ou par distillation simple si l'on veut aussi l'eau). Les autres associations sont correctes : le fer est attiré par l'aimant, le sable reste sur le filtre, l'huile et l'eau non miscibles forment deux couches dans l'ampoule, la sciure flotte sur l'eau tandis que le sable coule.",
-        "ru": "Сахарная вода — однородный раствор; молекулы сахара легко проходят через поры фильтровальной бумаги, поэтому фильтрованием её не разделить. Сахар получают выпариванием воды (или простой перегонкой, если нужна и вода). Остальные сочетания верны: железо притягивается магнитом, песок остаётся на фильтре, несмешивающиеся масло и вода образуют в воронке два слоя, опилки плавают на воде, а песок тонет.",
+        "ru": "Раствор сахара в воде — однородная смесь; молекулы сахара легко проходят через поры фильтровальной бумаги, поэтому фильтрованием его не разделить. Сахар получают выпариванием воды (или простой перегонкой, если нужна и вода). Остальные сочетания верны: железо притягивается магнитом, песок остаётся на фильтре, несмешивающиеся масло и вода образуют в воронке два слоя, опилки плавают на воде, а песок тонет.",
         "ar": "الماء المحلّى بالسكر محلول متجانس؛ تمر جزيئات السكر بسهولة عبر مسام ورق الترشيح، فلا يمكن فصله بالترشيح. ويُحصل على السكر بتبخير الماء (أو بالتقطير البسيط إذا أُريد الماء أيضًا). أما المزاوجات الأخرى فصحيحة: ينجذب الحديد إلى المغناطيس، ويبقى الرمل على المرشح، ويكوّن الزيت والماء غير الممتزجين طبقتين في القمع، وتطفو النشارة على الماء بينما يغوص الرمل.",
-        "zh": "糖水是均匀溶液；糖分子很容易透过滤纸的孔隙，所以不能用过滤分离。糖可以通过蒸发水得到（若也要得到水，则用简单蒸馏）。其余对应都正确：铁被磁铁吸引，沙子留在滤纸上，不互溶的油和水在漏斗中分成两层，木屑浮在水面而沙子下沉。",
+        "zh": "糖水是均匀溶液；糖分子很容易透过滤纸的孔隙，所以不能用过滤分离。糖可以通过蒸发水得到（若也要得到水，则用简单蒸馏）。其余对应都正确：铁被磁铁吸引，沙子留在滤纸上，不互溶的油和水在分液漏斗中分成两层，木屑浮在水面而沙子下沉。",
         "ku": "Ava şekirî çareseriyek homojen e; molekulên şekir bi hêsanî di qulên kaxeza parzûnê re derbas dibin, ji ber vê yekê bi parzûnkirinê nayê veqetandin. Şekir bi hilmkirina avê (ger av jî bê xwestin bi distilasyona hêsan) tê bidestxistin. Hevgirtinên din rast in: hesin ber bi mexnatîsê ve tê kişandin, qûm li ser parzûnê dimîne, rûn û ava ku tevlî hev nabin di hunîyê de du qatan çêdikin, qirş li ser avê avjenî dike û qûm dadikeve."
       }
     },
@@ -1890,7 +1890,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "On chauffe les liquides suivants, tous sous la même pression extérieure :\nI. Eau pure\nII. Solution de 0,1 mol de NaCl dans 1 kg d'eau\nIII. Solution de 0,1 mol de glucose (C6H12O6) dans 1 kg d'eau\nQuel est l'ordre des températures de début d'ébullition, de la plus élevée à la plus basse ?",
         "ru": "Следующие жидкости нагревают при одинаковом внешнем давлении:\nI. Чистая вода\nII. Раствор 0,1 моль NaCl в 1 кг воды\nIII. Раствор 0,1 моль глюкозы (C6H12O6) в 1 кг воды\nКаков порядок температур начала кипения от наибольшей к наименьшей?",
         "ar": "تُسخَّن السوائل الآتية وجميعها تحت الضغط الخارجي نفسه:\nI. ماء نقي\nII. محلول من 0.1 mol من NaCl مذاب في 1 kg من الماء\nIII. محلول من 0.1 mol من الغلوكوز (C6H12O6) مذاب في 1 kg من الماء\nما ترتيب درجات حرارة بدء غليانها من الأعلى إلى الأدنى؟",
-        "zh": "在相同外压下加热下列液体：\nI. 纯水\nII. 1 kg水中溶解0.1 mol NaCl的溶液\nIII. 1 kg水中溶解0.1 mol葡萄糖（C6H12O6）的溶液\n它们开始沸腾的温度由高到低的顺序是哪一项？",
+        "zh": "在相同外压下加热下列液体：\nI. 纯水\nII. 1 kg水中溶解0.1 mol NaCl的溶液\nIII. 1 kg水中溶解0.1 mol葡萄糖(C6H12O6)的溶液\n它们开始沸腾的温度由高到低的顺序是哪一项？",
         "ku": "Ev şilên jêrîn di bin heman pestoya derve de tên germkirin:\nI. Ava safî\nII. Çareseriya ku 0,1 mol NaCl di 1 kg avê de helandiye\nIII. Çareseriya ku 0,1 mol glukoz (C6H12O6) di 1 kg avê de helandiye\nRêzkirina germahiyên destpêka kelandina van şilan ji mezin ber bi piçûk kîjan e?"
       },
       "options": [
@@ -1953,7 +1953,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Lorsqu'une substance non volatile se dissout, la solution commence à bouillir à une température plus élevée que l'eau pure, et l'élévation est proportionnelle à la concentration en particules dissoutes. NaCl se dissocie en ions Na+ et Cl- : 0,1 mol de NaCl → 0,2 mol de particules. Le glucose se dissout sous forme de molécules : 0,1 mol de particules. L'ordre est donc II > III > I. Considérer les deux solutions comme égales revient à oublier la dissociation de NaCl.",
         "ru": "При растворении нелетучего вещества раствор начинает кипеть при более высокой температуре, чем чистая вода, причём повышение пропорционально концентрации растворённых частиц. NaCl диссоциирует на ионы Na+ и Cl-: 0,1 моль NaCl → 0,2 моль частиц. Глюкоза растворяется в виде молекул: 0,1 моль частиц. Поэтому порядок II > III > I. Считать оба раствора одинаковыми — значит упустить диссоциацию NaCl.",
         "ar": "عند ذوبان مادة غير متطايرة يبدأ المحلول بالغليان عند درجة أعلى من الماء النقي، ويتناسب الارتفاع مع تركيز الدقائق المذابة. يتفكك NaCl إلى أيونات Na+ وCl-: 0.1 mol من NaCl → 0.2 mol من الدقائق. أما الغلوكوز فيذوب على هيئة جزيئات: 0.1 mol من الدقائق. لذا يكون الترتيب II > III > I. واعتبار المحلولين متساويين إغفال لتفكك NaCl.",
-        "zh": "非挥发性物质溶解后，溶液开始沸腾的温度高于纯水，升高的幅度与溶解粒子的浓度成正比。NaCl解离为Na+和Cl-离子：0.1 mol NaCl → 0.2 mol粒子。葡萄糖以分子形式溶解：0.1 mol粒子。因此顺序为 II > III > I。认为两种溶液相同，就是忽视了NaCl的电离。",
+        "zh": "非挥发性物质溶解后，溶液开始沸腾的温度高于纯水，升高的幅度与溶解粒子的浓度成正比。NaCl 电离为 Na+ 和 Cl- 离子：0.1 mol NaCl → 0.2 mol粒子。葡萄糖以分子形式溶解：0.1 mol粒子。因此顺序为 II > III > I。认为两种溶液相同，就是忽视了NaCl的电离。",
         "ku": "Dema madeyek ne-firok dihele, çareserî di germahiyek ji ava safî bilindtir de dest bi kelandinê dike û zêdebûn bi giranbûna perçeyên helbûyî re hevrêje ye. NaCl dibe îyonên Na+ û Cl-: 0,1 mol NaCl → 0,2 mol perçe. Glukoz wek molekul dihele: 0,1 mol perçe. Ji ber vê yekê rêz II > III > I ye. Wekhev hesibandina herdu çareseriyan îyonbûna NaCl ji bîr dike."
       }
     },
@@ -2040,7 +2040,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "The label of a toothpaste states that it contains 0.15% fluoride by mass. What is the fluoride concentration of this toothpaste in ppm?",
         "de": "Auf dem Etikett einer Zahnpasta steht, dass sie 0,15 Massenprozent Fluorid enthält. Wie groß ist die Fluoridkonzentration in ppm?",
         "fr": "L'étiquette d'un dentifrice indique qu'il contient 0,15 % de fluorure en masse. Quelle est la concentration en fluorure de ce dentifrice en ppm ?",
-        "ru": "На этикетке зубной пасты указано, что она содержит 0,15% фторида по массе. Какова концентрация фторида в этой пасте в ppm?",
+        "ru": "На этикетке зубной пасты указано, что массовая доля фторида в ней равна 0,15 %. Какова концентрация фторида в этой пасте в ppm?",
         "ar": "يُذكر على ملصق معجون أسنان أنه يحتوي على 0.15% فلوريد بالكتلة. ما تركيز الفلوريد في هذا المعجون بوحدة ppm؟",
         "zh": "某牙膏标签上注明其含氟化物的质量分数为0.15%。这种牙膏中氟化物的浓度是多少ppm？",
         "ku": "Li ser etîketa melhema diranan hatiye nivîsandin ku ew %0,15 a girseyî florîd dihewîne. Giranbûna florîdê di vê melhemê de çend ppm e?"
@@ -2103,9 +2103,9 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "0.15% by mass means 0.15 g of fluoride in 100 g of paste. ppm = (mass of solute / total mass) · 10^6 = (0.15 / 100) · 10^6 = 1500 ppm. Shortcut: since 1 ppm = 0.0001%, the percentage is multiplied by 10^4 (0.15 · 10^4 = 1500). Using 100 or 1000 as the factor gives smaller, wrong values.",
         "de": "0,15 Massenprozent bedeutet 0,15 g Fluorid in 100 g Paste. ppm = (Masse des Stoffes / Gesamtmasse) · 10^6 = (0,15 / 100) · 10^6 = 1500 ppm. Abkürzung: Da 1 ppm = 0,0001 %, multipliziert man den Prozentwert mit 10^4 (0,15 · 10^4 = 1500). Ein Faktor 100 oder 1000 liefert zu kleine, falsche Werte.",
         "fr": "0,15 % en masse signifie 0,15 g de fluorure pour 100 g de pâte. ppm = (masse de soluté / masse totale) · 10^6 = (0,15 / 100) · 10^6 = 1500 ppm. Raccourci : comme 1 ppm = 0,0001 %, on multiplie le pourcentage par 10^4 (0,15 · 10^4 = 1500). Prendre 100 ou 1000 comme facteur donne des valeurs trop petites et fausses.",
-        "ru": "0,15% по массе означает 0,15 г фторида в 100 г пасты. ppm = (масса вещества / общая масса) · 10^6 = (0,15 / 100) · 10^6 = 1500 ppm. Короче: так как 1 ppm = 0,0001%, процент умножают на 10^4 (0,15 · 10^4 = 1500). Множитель 100 или 1000 даёт заниженные, неверные значения.",
+        "ru": "Массовая доля 0,15 % означает 0,15 г фторида в 100 г пасты. ppm = (масса вещества / общая масса) · 10^6 = (0,15 / 100) · 10^6 = 1500 ppm. Короче: так как 1 ppm = 0,0001 %, значение в процентах умножают на 10^4 (0,15 · 10^4 = 1500). Множитель 100 или 1000 даёт заниженные, неверные значения.",
         "ar": "0.15% بالكتلة تعني 0.15 g من الفلوريد في 100 g من المعجون. ppm = (كتلة المذاب / الكتلة الكلية) · 10^6 = (0.15 / 100) · 10^6 = 1500 ppm. طريقة مختصرة: بما أن 1 ppm = 0.0001%، تُضرب النسبة المئوية في 10^4 (0.15 · 10^4 = 1500). واعتبار المعامل 100 أو 1000 يعطي قيمًا أصغر وخاطئة.",
-        "zh": "质量分数0.15%表示100 g牙膏中含0.15 g氟化物。ppm = (溶质质量 / 总质量) · 10^6 = (0.15 / 100) · 10^6 = 1500 ppm。简便方法：因为1 ppm = 0.0001%，把百分数乘以10^4即可（0.15 · 10^4 = 1500）。把乘数当作100或1000会得到偏小的错误数值。",
+        "zh": "质量分数0.15%表示100 g牙膏中含0.15 g氟化物。ppm = (溶质质量 / 总质量) · 10^6 = (0.15 / 100) · 10^6 = 1500 ppm。简便方法：因为1 ppm = 0.0001%，把百分数乘以10^4即可(0.15 · 10^4 = 1500)。把乘数当作100或1000会得到偏小的错误数值。",
         "ku": "%0,15 a girseyî tê wateya 0,15 g florîd di 100 g melhemê de. ppm = (girseya helbûyî / girseya giştî) · 10^6 = (0,15 / 100) · 10^6 = 1500 ppm. Rêya kurt: ji ber ku 1 ppm = %0,0001 e, nirxa sedî bi 10^4 re tê lêdan (0,15 · 10^4 = 1500). Hesibandina lêkerê wek 100 an 1000 nirxên piçûktir û şaş dide."
       }
     },
@@ -2192,7 +2192,7 @@ export const unit08: ChemistryUnitSeedData = {
         "en": "How many grams of NaOH are dissolved in 500 mL of an NaOH solution that is 20% by mass and has a density of 1.2 g/mL?",
         "de": "Wie viel Gramm NaOH sind in 500 mL einer NaOH-Lösung mit 20 Massenprozent und einer Dichte von 1,2 g/mL gelöst?",
         "fr": "Combien de grammes de NaOH sont dissous dans 500 mL d'une solution de NaOH à 20 % en masse, de masse volumique 1,2 g/mL ?",
-        "ru": "Сколько граммов NaOH растворено в 500 мл раствора NaOH с массовой долей 20% и плотностью 1,2 г/мл?",
+        "ru": "Сколько граммов NaOH растворено в 500 мл раствора NaOH с массовой долей 20 % и плотностью 1,2 г/мл?",
         "ar": "كم غرامًا من NaOH مذاب في 500 mL من محلول NaOH تركيزه 20% بالكتلة وكثافته 1.2 g/mL؟",
         "zh": "500 mL质量分数为20%、密度为1.2 g/mL的NaOH溶液中溶有多少克NaOH？",
         "ku": "Di 500 mL çareseriya NaOH ya %20 a girseyî û bi çiriya 1,2 g/mL de çend gram NaOH helandî ye?"
@@ -2203,7 +2203,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "83.3 g",
           "de": "83,3 g",
           "fr": "83,3 g",
-          "ru": "83,3 g",
+          "ru": "83,3 г",
           "ar": "83.3 g",
           "zh": "83.3 g",
           "ku": "83,3 g"
@@ -2213,7 +2213,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "100 g",
           "de": "100 g",
           "fr": "100 g",
-          "ru": "100 g",
+          "ru": "100 г",
           "ar": "100 g",
           "zh": "100 g",
           "ku": "100 g"
@@ -2223,7 +2223,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "120 g",
           "de": "120 g",
           "fr": "120 g",
-          "ru": "120 g",
+          "ru": "120 г",
           "ar": "120 g",
           "zh": "120 g",
           "ku": "120 g"
@@ -2233,7 +2233,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "480 g",
           "de": "480 g",
           "fr": "480 g",
-          "ru": "480 g",
+          "ru": "480 г",
           "ar": "480 g",
           "zh": "480 g",
           "ku": "480 g"
@@ -2243,7 +2243,7 @@ export const unit08: ChemistryUnitSeedData = {
           "en": "600 g",
           "de": "600 g",
           "fr": "600 g",
-          "ru": "600 g",
+          "ru": "600 г",
           "ar": "600 g",
           "zh": "600 g",
           "ku": "600 g"
@@ -2257,7 +2257,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "On convertit d'abord le volume en masse : masse de solution = masse volumique · volume = 1,2 · 500 = 600 g. Masse de NaOH = 600 · 0,20 = 120 g. Ignorer la masse volumique (500 · 0,20 = 100 g), diviser le volume par la masse volumique (500 / 1,2 · 0,20 ≈ 83,3 g) ou donner la masse d'eau (480 g) ou de solution (600 g) sont des erreurs classiques.",
         "ru": "Сначала переводят объём в массу: масса раствора = плотность · объём = 1,2 · 500 = 600 г. Масса NaOH = 600 · 0,20 = 120 г. Типичные ошибки: не учитывать плотность (500 · 0,20 = 100 г), делить объём на плотность (500 / 1,2 · 0,20 ≈ 83,3 г) или принимать за ответ массу воды (480 г) либо раствора (600 г).",
         "ar": "يُحوَّل الحجم أولًا إلى كتلة: كتلة المحلول = الكثافة · الحجم = 1.2 · 500 = 600 g. كتلة NaOH = 600 · 0.20 = 120 g. ومن الأخطاء الشائعة إهمال الكثافة (500 · 0.20 = 100 g)، أو قسمة الحجم على الكثافة (500 / 1.2 · 0.20 ≈ 83.3 g)، أو اعتبار كتلة الماء (480 g) أو كتلة المحلول (600 g) هي الجواب.",
-        "zh": "先把体积换算成质量：溶液质量 = 密度 · 体积 = 1.2 · 500 = 600 g。NaOH质量 = 600 · 0.20 = 120 g。忽略密度（500 · 0.20 = 100 g）、用体积除以密度（500 / 1.2 · 0.20 ≈ 83.3 g），或把水的质量（480 g）、溶液质量（600 g）当作答案，都是典型错误。",
+        "zh": "先把体积换算成质量：溶液质量 = 密度 · 体积 = 1.2 · 500 = 600 g。NaOH质量 = 600 · 0.20 = 120 g。忽略密度(500 · 0.20 = 100 g)、用体积除以密度(500 / 1.2 · 0.20 ≈ 83.3 g)，或把水的质量(480 g)、溶液质量(600 g)当作答案，都是典型错误。",
         "ku": "Pêşî hecm tê guhertin bo girseyê: girseya çareseriyê = çirî · hecm = 1,2 · 500 = 600 g. Girseya NaOH = 600 · 0,20 = 120 g. Şaşiyên berbelav: çirî paşguh kirin (500 · 0,20 = 100 g), parvekirina hecmê li çiriyê (500 / 1,2 · 0,20 ≈ 83,3 g), an girseya avê (480 g) an girseya çareseriyê (600 g) wek bersiv hesibandin."
       }
     }

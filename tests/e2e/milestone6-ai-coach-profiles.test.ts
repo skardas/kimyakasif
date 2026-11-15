@@ -189,7 +189,7 @@ export async function runMilestone6Tests(): Promise<void> {
       expect(UNIT_ACTION_PILLS.en.slide).toBe('Slide');
       expect(UNIT_ACTION_PILLS.de.slide).toBe('Folie');
       expect(UNIT_ACTION_PILLS.fr.slide).toBe('Diapo');
-      expect(UNIT_ACTION_PILLS.ru.slide).toBe('Слайд');
+      expect(UNIT_ACTION_PILLS.ru.slide).toBe('Слайды');
       expect(UNIT_ACTION_PILLS.ar.slide).toBe('شريحة');
       expect(UNIT_ACTION_PILLS.zh.slide).toBe('幻灯片');
       expect(UNIT_ACTION_PILLS.ku.slide).toBe('Slayt');

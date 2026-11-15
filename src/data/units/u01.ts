@@ -21,7 +21,7 @@ export const unit01: ChemistryUnitSeedData = {
     "en": "From Alchemy to Chemistry & Safety",
     "de": "Von der Alchemie zur Chemie und Laborsicherheit",
     "fr": "De l'alchimie à la chimie et sécurité au laboratoire",
-    "ru": "От алхимии к химии и лабораторной безопасности",
+    "ru": "От алхимии к химии. Безопасность в лаборатории",
     "ar": "من الخيمياء إلى الكيمياء والسلامة المختبرية",
     "zh": "从炼金术到化学与实验室安全",
     "ku": "Ji Simyayê ber bi Kîmyayê û Ewlehiya Laboratûwarê"
@@ -34,9 +34,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Lavoisier is considered the founder of modern chemistry with his Law of Conservation of Mass.",
         "de": "Lavoisier gilt mit seinem Massenerhaltungsgesetz als Begründer der modernen Chemie.",
         "fr": "Lavoisier est considéré comme le fondateur de la chimie moderne avec sa loi de conservation de la masse.",
-        "ru": "Лавуазье считается основоположником современной химии с его Законом сохранения массы.",
+        "ru": "Лавуазье, открывший закон сохранения массы, считается основоположником современной химии.",
         "ar": "يعتبر لافوازييه مؤسس الكيمياء الحديثة من خلال قانون حفظ الكتلة.",
-        "zh": "拉瓦锡以其质量守恒定律被认为是现代化学的创始人。",
+        "zh": "拉瓦锡因提出质量守恒定律而被公认为近代化学的奠基人。",
         "ku": "Lavoisier bi Qanûna Parastina Girseyê damezrînerê kîmyaya nûjen tê hesibandin."
       },
       "trap": {
@@ -44,9 +44,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Alchemists proved the conservation of mass by using the analytical balance precisely.",
         "de": "Alchemisten bewiesen die Massenerhaltung durch die präzise Verwendung der Analysenwaage.",
         "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément la balance analytique.",
-        "ru": "Алхимики доказали сохранение массы, точно используя аналитические весы.",
+        "ru": "Алхимики доказали закон сохранения массы с помощью точных взвешиваний.",
         "ar": "أثبت الخيميائيون حفظ الكتلة باستخدام الميزان التحليلي الدقيق.",
-        "zh": "炼金术士通过精确使用精密天平证明了质量守恒。",
+        "zh": "炼金术士借助精密天平进行精确称量，证明了质量守恒。",
         "ku": "Alkîmîstan parastina girseyê bi karanîna terezûya hesas îspat kirin."
       },
       "whyTrapIsFalse": {
@@ -64,9 +64,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Alchemy is not based on theoretical foundations and systematic experiments.",
         "de": "Alchemie basiert nicht auf theoretischen Grundlagen und systematischen Experimenten.",
         "fr": "L'alchimie ne repose pas sur des fondements théoriques et des expériences systématiques.",
-        "ru": "Алхимия не основана на теоретических основах и систематических экспериментах.",
+        "ru": "Алхимия не опирается ни на теорию, ни на систематический эксперимент.",
         "ar": "لا تعتمد الخيمياء على أسس نظرية وتجارب منهجية.",
-        "zh": "炼金术不是建立在理论基础和系统实验的基础上的。",
+        "zh": "炼金术并不以理论基础和系统实验为依据。",
         "ku": "Alkîmya ne li ser bingehên teorîk û ceribandinên sîstematîk e."
       }
     },
@@ -77,9 +77,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Oil of vitriol is H2SO4 (sulfuric acid); spirit of salt (muriatic acid) is the traditional name for HCl (hydrochloric acid).",
         "de": "Vitriolöl ist H2SO4 (Schwefelsäure); Salzgeist ist der traditionelle Name für HCl (Salzsäure).",
         "fr": "L'huile de vitriol est H2SO4 (acide sulfurique) ; l'esprit de sel est le nom traditionnel de HCl (acide chlorhydrique).",
-        "ru": "Купоросное масло — это H2SO4 (серная кислота), а соляной спирт — традиционное название HCl (соляной кислоты).",
+        "ru": "Купоросное масло — традиционное название H2SO4 (серной кислоты), соляной спирт — HCl (соляной кислоты).",
         "ar": "زيت الزاج هو H2SO4 (حمض الكبريتيك)، والاسم التقليدي لروح الملح هو HCl (حمض الهيدروكلوريك).",
-        "zh": "矾油是H2SO4（硫酸）的传统名称，盐精是HCl（盐酸）的传统名称。",
+        "zh": "矾油是硫酸(H2SO4)的传统名称，盐镪水是盐酸(HCl)的传统名称。",
         "ku": "Rûnê zaçê H2SO4 (asîda sulfurîk) e, navê kevneşopî yê ruhê xwê HCl (asîda hîdroclorîk) e."
       },
       "trap": {
@@ -97,9 +97,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "HNO3 is the formula of nitric acid (kezzap); 'zaç yağı' (oil of vitriol) is sulfur-containing sulfuric acid, H2SO4. The two traditional names have been mixed up.",
         "de": "HNO3 ist die Formel der Salpetersäure (Kezzap); „Vitriolöl“ (zaç yağı) ist die schwefelhaltige Schwefelsäure H2SO4. Die beiden traditionellen Namen wurden verwechselt.",
         "fr": "HNO3 est la formule de l'acide nitrique (kezzap) ; l'« huile de vitriol » (zaç yağı) est l'acide sulfurique H2SO4, qui contient du soufre. Les deux noms traditionnels ont été confondus.",
-        "ru": "HNO3 — формула азотной кислоты (кеззап); «купоросное масло» (zaç yağı) — это серосодержащая серная кислота H2SO4. Традиционные названия двух кислот перепутаны.",
+        "ru": "HNO3 — формула крепкой водки (азотной кислоты); купоросное масло — серосодержащая серная кислота H2SO4. Здесь перепутаны традиционные названия двух кислот.",
         "ar": "HNO3 هي صيغة حمض النيتريك (الكزّاب)؛ أما زيت الزاج فهو حمض الكبريتيك H2SO4 المحتوي على الكبريت. لقد خُلط بين الاسمين التقليديين للحمضين.",
-        "zh": "HNO3 是硝酸（kezzap）的化学式；“矾油”（zaç yağı）是含硫的硫酸 H2SO4。这里把两种酸的传统名称弄混了。",
+        "zh": "HNO3 是硝镪水（硝酸）的化学式；矾油是含硫的硫酸(H2SO4)。这里把两种酸的传统名称弄混了。",
         "ku": "HNO3 formula asîda nîtrîk (kezzap) e; rûnê zacê (zaç yağı) asîda sulfurîk a bi kukurt H2SO4 e. Navên kevneşopî yên her du asîdan tevlihev bûne."
       },
       "osymTip": {
@@ -107,9 +107,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "HNO3 is aqua fortis (nitric acid), whereas oil of vitriol is H2SO4 (sulfuric acid).",
         "de": "HNO3 ist Scheidewasser (Salpetersäure), während Vitriolöl H2SO4 (Schwefelsäure) ist.",
         "fr": "HNO3 est l'eau-forte (acide nitrique), tandis que l'huile de vitriol est H2SO4 (acide sulfurique).",
-        "ru": "HNO3 — это крепкая водка (азотная кислота), тогда как купоросное масло — это H2SO4 (серная кислота).",
+        "ru": "HNO3 — крепкая водка (азотная кислота), H2SO4 — купоросное масло (серная кислота).",
         "ar": "HNO3 هو ماء الفضة (حمض النيتريك)، بينما زيت الزاج هو H2SO4 (حمض الكبريتيك).",
-        "zh": "HNO3是浓硝酸（硝镪水），而矾油才是H2SO4（硫酸）。",
+        "zh": "HNO3 是硝镪水（硝酸），矾油才是 H2SO4（硫酸）。",
         "ku": "HNO3 kezzap (asîda nîtrîk) e, lê rûnê zaçê H2SO4 (asîda sulfurîk) e."
       }
     },
@@ -122,7 +122,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "Jabir ibn Hayyan a perfectionné l'alambic et obtenu l'acide nitrique et l'eau régale.",
         "ru": "Джабир ибн Хайян усовершенствовал перегонный куб (аламбик) и получил азотную кислоту и царскую водку.",
         "ar": "قام جابر بن حيان بتطوير الإنبيق وحصل على حمض النيتريك والماء الملكي.",
-        "zh": "贾比尔·伊本·哈扬改进了蒸馏器（alembic）并制得了硝酸和王水。",
+        "zh": "贾比尔·伊本·哈扬改进了蒸馏器，并制得了硝酸和王水。",
         "ku": "Cabir bin Heyyan alambîk pêş xist û asîda nîtrîk û ava şahî bi dest xist."
       },
       "trap": {
@@ -130,7 +130,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Aristotle explained aqua regia using the four elements theory.",
         "de": "Aristoteles erklärte Königswasser mit der Vier-Elemente-Lehre.",
         "fr": "Aristote a expliqué l'eau régale par la théorie des quatre éléments.",
-        "ru": "Аристотель объяснил царскую водку теорией четырех элементов.",
+        "ru": "Аристотель объяснил свойства царской водки учением о четырёх элементах.",
         "ar": "فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
         "zh": "亚里士多德用四元素学说解释了王水。",
         "ku": "Arîsto ava şahî bi teoriya çar hêmanan rave kir."
@@ -142,7 +142,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "Aristote était un philosophe qui ne faisait pas d'expériences et vécut des siècles avant l'eau régale ; l'eau régale, mélange de HCl et HNO3 concentrés, a été obtenue par Jabir ibn Hayyan.",
         "ru": "Аристотель — философ, не ставивший опытов и живший за века до открытия царской водки; царскую водку (смесь концентрированных HCl и HNO3) получил Джабир ибн Хайян.",
         "ar": "أرسطو فيلسوف لم يُجرِ تجارب وعاش قبل الماء الملكي بقرون؛ والذي حضّر الماء الملكي، وهو مزيج من HCl وHNO3 المركزين، هو جابر بن حيان.",
-        "zh": "亚里士多德是不做实验的哲学家，生活在王水出现之前数百年；王水（浓 HCl 与浓 HNO3 的混合物）是贾比尔·伊本·哈扬制得的。",
+        "zh": "亚里士多德是不做实验的哲学家，生活在王水出现之前数百年；王水(浓 HCl 与浓 HNO3 的混合物)是贾比尔·伊本·哈扬制得的。",
         "ku": "Arîstoteles fîlozofek bû ku ceribandin nedikir û bi sedsalan berî ava qral jiya; yê ku ava qral (tevliheviya HCl û HNO3 ya hûrbûyî) bi dest xist Cabir bin Hayyan e."
       }
     },
@@ -163,7 +163,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Abu Bakr al-Razi classified substances according to their solid, liquid and gaseous states.",
         "de": "Abu Bakr al-Razi ordnete die Stoffe nach festem, flüssigem und gasförmigem Zustand.",
         "fr": "Abu Bakr al-Razi a classé les substances selon leurs états solide, liquide et gazeux.",
-        "ru": "Абу Бакр ар-Рази классифицировал вещества по твёрдому, жидкому и газообразному состояниям.",
+        "ru": "Абу Бакр ар-Рази классифицировал вещества по агрегатному состоянию: на твёрдые, жидкие и газообразные.",
         "ar": "صنّف أبو بكر الرازي المواد بحسب حالاتها الصلبة والسائلة والغازية.",
         "zh": "阿布·贝克尔·拉齐按固态、液态和气态对物质进行了分类。",
         "ku": "Ebû Bekir er-Razî madde li gorî rewşên hişk, şile û gaz dabeş kirin."
@@ -186,9 +186,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "The burette is used for precise liquid volume measurement and controlled dripping in titration experiments.",
         "de": "Die Bürette dient der präzisen Messung des Flüssigkeitsvolumens und dem kontrollierten Tropfen in Titrationsexperimenten.",
         "fr": "La burette est utilisée pour une mesure précise du volume de liquide et un égouttement contrôlé dans les expériences de titrage.",
-        "ru": "Бюретка используется для точного измерения объема жидкости и контроля капания в экспериментах по титрованию.",
+        "ru": "Бюретку используют при титровании для точного измерения объёма жидкости и её контролируемого покапельного добавления.",
         "ar": "يتم استخدام السحاحة لقياس حجم السائل بشكل دقيق والتحكم في التقطير في تجارب المعايرة.",
-        "zh": "滴定管用于滴定实验中精确测量液体体积和控制滴注。",
+        "zh": "滴定管用于在滴定实验中精确量取液体体积和控制滴加。",
         "ku": "Buret ji bo pîvandina hêjmara şilavê ya rast û di ceribandinên titrasyonê de rijandina kontrolkirî tê bikar anîn."
       },
       "trap": {
@@ -198,7 +198,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "La burette est utilisée uniquement pour faire bouillir des liquides à haute température.",
         "ru": "Бюретку используют только для кипячения жидкостей при высоких температурах.",
         "ar": "تُستخدم السحاحة فقط لغلي السوائل في درجات حرارة عالية.",
-        "zh": "滴定管仅用于高温沸腾液体。",
+        "zh": "滴定管只用于在高温下煮沸液体。",
         "ku": "Buret tenê ji bo kelandina şilekên di germahiyên bilind de tê bikar anîn."
       },
       "whyTrapIsFalse": {
@@ -219,9 +219,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "The Erlenmeyer flask is widely used for preparing solutions that need swirling and in titration.",
         "de": "Erlenmayer wird häufig bei der Lösungsvorbereitung und Titration verwendet, die Schütteln erfordert.",
         "fr": "Erlenmayer est largement utilisé dans la préparation et le titrage de solutions nécessitant une agitation.",
-        "ru": "Эрленмайера широко используется при приготовлении растворов и титровании, требующем встряхивания.",
+        "ru": "Колбу Эрленмейера широко используют при приготовлении растворов, которые нужно перемешивать, и при титровании.",
         "ar": "يستخدم إرلينماير على نطاق واسع في تحضير المحاليل والمعايرة التي تتطلب الرج.",
-        "zh": "锥形瓶广泛用于需要摇动的溶液制备和滴定。",
+        "zh": "锥形瓶常用于需要振荡的溶液配制和滴定。",
         "ku": "Erlenmayer bi berfirehî di amadekirina çareseriyê û titrkirina ku hewceyê hejandinê de ye tê bikar anîn."
       },
       "trap": {
@@ -252,7 +252,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "The volumetric flask is a narrow-necked precision glass container for preparing a standard solution at a specific concentration.",
         "de": "Der Messkolben ist ein enghalsiger Präzisionsglasbehälter zur Herstellung einer Standardlösung in einer bestimmten Konzentration.",
         "fr": "La fiole jaugée est un récipient en verre de précision à col étroit permettant de préparer une solution étalon à une concentration spécifique.",
-        "ru": "Мерная колба представляет собой прецизионную стеклянную емкость с узким горлышком для приготовления стандартного раствора определенной концентрации.",
+        "ru": "Мерная колба — стеклянный сосуд с узким горлом, точно откалиброванный на определённый объём; в ней готовят стандартные растворы заданной концентрации.",
         "ar": "الدورق الحجمي عبارة عن حاوية زجاجية دقيقة ضيقة العنق لتحضير محلول قياسي بتركيز معين.",
         "zh": "容量瓶是一种细颈精密玻璃容器，用于配制特定浓度的标准溶液。",
         "ku": "Balon joje firaxeke camê ya hesas û stûteng e ku ji bo amadekirina çareseriyeke standard bi konsantreyeke diyar tê bikaranîn."
@@ -287,7 +287,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "L'eau-forte est le nom traditionnel de HNO3, le calcaire celui de CaCO3 et la soude caustique celui de NaOH.",
         "ru": "Крепкая водка — традиционное название HNO3, известняк — CaCO3, едкий натр — NaOH.",
         "ar": "ماء الفضة هو الاسم التقليدي لـ HNO3، والحجر الجيري لـ CaCO3، والصودا الكاوية لـ NaOH.",
-        "zh": "硝镪水是HNO3的传统名称，石灰石是CaCO3的传统名称，烧碱是NaOH的传统名称。",
+        "zh": "硝镪水、石灰石、烧碱分别是 HNO3、CaCO3、NaOH 的传统名称。",
         "ku": "Kezzap navê kevneşopî yê HNO3, kevirê kilsê yê CaCO3 û soda kaustîk yê NaOH e."
       },
       "trap": {
@@ -297,7 +297,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "Le calcaire est le même composé que la chaux vive (CaO).",
         "ru": "Известняк — это то же соединение, что и негашёная известь (CaO).",
         "ar": "الحجر الجيري هو المركب نفسه الذي يُسمّى الجير الحي (CaO).",
-        "zh": "石灰石与生石灰（CaO）是同一种化合物。",
+        "zh": "石灰石与生石灰(CaO)是同一种化合物。",
         "ku": "Kevirê kilsê û kilsa nevemirî (CaO) heman pêkhate ne."
       },
       "whyTrapIsFalse": {
@@ -305,7 +305,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Limestone is CaCO3; on heating it loses CO2 and forms quicklime, CaO. One is the decomposition product of the other, not the same compound.",
         "de": "Kalkstein ist CaCO3; beim Erhitzen verliert er CO2 und bildet Branntkalk CaO. Das eine ist das Zersetzungsprodukt des anderen, nicht dieselbe Verbindung.",
         "fr": "Le calcaire est CaCO3 ; chauffé, il perd du CO2 et donne la chaux vive CaO. L'un est le produit de décomposition de l'autre, pas le même composé.",
-        "ru": "Известняк — CaCO3; при нагревании он теряет CO2 и образует негашёную известь CaO. Одно — продукт разложения другого, а не то же соединение.",
+        "ru": "Известняк — CaCO3; при нагревании он теряет CO2 и превращается в негашёную известь CaO. Одно вещество — продукт разложения другого, а не то же самое соединение.",
         "ar": "الحجر الجيري هو CaCO3؛ وعند تسخينه يفقد CO2 ويتكوّن الجير الحي CaO. فأحدهما ناتج تفكك الآخر وليسا المركب نفسه.",
         "zh": "石灰石是 CaCO3，受热失去 CO2 生成生石灰 CaO。一个是另一个的分解产物，并不是同一种化合物。",
         "ku": "Kevirê kilsê CaCO3 e; dema tê germkirin CO2 winda dike û kilsa nekuştî CaO çêdibe. Yek berhema hilweşîna ya din e, ne heman pêkhate ye."
@@ -318,9 +318,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Physical chemistry studies temperature, pressure, work and energy transformations in chemical systems.",
         "de": "Die physikalische Chemie untersucht Temperatur-, Druck-, Arbeits- und Energieumwandlungen in chemischen Systemen.",
         "fr": "La chimie physique étudie les transformations de température, de pression, de travail et d’énergie dans les systèmes chimiques.",
-        "ru": "Физическая химия изучает температуру, давление, превращения работы и энергии в химических системах.",
+        "ru": "Физическая химия изучает температуру, давление, работу и превращения энергии в химических системах.",
         "ar": "تدرس الكيمياء الفيزيائية درجة الحرارة والضغط والعمل وتحولات الطاقة في الأنظمة الكيميائية.",
-        "zh": "物理化学研究化学系统中的温度、压力、功和能量转换。",
+        "zh": "物理化学研究化学体系中的温度、压强、功和能量转化。",
         "ku": "Kîmyaya fizîkî di pergalên kîmyewî de germahî, zext, kar û veguherînên enerjiyê lêkolîn dike."
       },
       "trap": {
@@ -328,9 +328,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Physical chemistry studies only the molecules involved in the metabolism of living things.",
         "de": "Die Physikochemie untersucht nur Moleküle im lebenden Stoffwechsel.",
         "fr": "La physicochimie étudie uniquement les molécules du métabolisme vivant.",
-        "ru": "Физикохимия изучает только молекулы в живом метаболизме.",
+        "ru": "Физическая химия изучает только молекулы, участвующие в обмене веществ живых организмов.",
         "ar": "الكيمياء الفيزيائية تدرس فقط الجزيئات في عملية التمثيل الغذائي الحي.",
-        "zh": "物理化学仅研究生命代谢中的分子。",
+        "zh": "物理化学只研究生物体代谢中的分子。",
         "ku": "Fîzokîmya tenê molekulên di metabolîzma zindî de lêkolîn dike."
       },
       "whyTrapIsFalse": {
@@ -361,7 +361,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Analytical chemistry is the branch that synthesizes carbon-based polymers.",
         "de": "Die analytische Chemie ist der Zweig, der kohlenstoffbasierte Polymere synthetisiert.",
         "fr": "La chimie analytique est la branche qui synthétise les polymères à base de carbone.",
-        "ru": "Аналитическая химия — это раздел, занимающийся синтезом полимеров на основе углерода.",
+        "ru": "Аналитическая химия — раздел, который занимается синтезом полимеров на основе углерода.",
         "ar": "الكيمياء التحليلية هي الفرع الذي يقوم بتصنيع البوليمرات القائمة على الكربون.",
         "zh": "分析化学是合成碳基聚合物的分支。",
         "ku": "Kîmyaya analîtîk şaxek e ku polîmerên karbon-based sentez dike."
@@ -384,7 +384,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Biochemistry studies DNA, protein and enzyme reactions in living organisms.",
         "de": "Die Biochemie untersucht DNA-, Protein- und Enzymreaktionen in lebenden Organismen.",
         "fr": "La biochimie étudie les réactions de l'ADN, des protéines et des enzymes dans les organismes vivants.",
-        "ru": "Биохимия изучает реакции ДНК, белков и ферментов в живых организмах.",
+        "ru": "Биохимия изучает ДНК, белки и ферментативные реакции в живых организмах.",
         "ar": "تدرس الكيمياء الحيوية تفاعلات الحمض النووي والبروتين والإنزيمات في الكائنات الحية.",
         "zh": "生物化学研究生物体中的 DNA、蛋白质和酶反应。",
         "ku": "Biyokîmya reaksiyonên ADN, proteîn û enzîman di organîzmayên zindî de lêkolîn dike."
@@ -417,7 +417,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "The safety pictogram for irritant substances is an exclamation mark.",
         "de": "Das Sicherheitspiktogramm für reizende Stoffe ist ein Ausrufezeichen.",
         "fr": "Le pictogramme de sécurité des substances irritantes est un point d'exclamation.",
-        "ru": "Пиктограмма безопасности для раздражающих веществ — восклицательный знак.",
+        "ru": "Для раздражающих веществ используется пиктограмма опасности «восклицательный знак».",
         "ar": "رمز السلامة للمواد المهيِّجة هو علامة التعجب.",
         "zh": "刺激性物质的安全象形图是感叹号。",
         "ku": "Pîktograma ewlehiyê ya maddeyên ku çerm û çavan aciz dikin nîşana bangkirinê (!) ye."
@@ -427,7 +427,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "The exclamation pictogram represents explosive substances.",
         "de": "Das Ausrufezeichen-Piktogramm steht für explosive Stoffe.",
         "fr": "Le pictogramme d'exclamation représente des substances explosives.",
-        "ru": "Восклицательный знак обозначает взрывоопасные вещества.",
+        "ru": "Пиктограмма «восклицательный знак» обозначает взрывчатые вещества.",
         "ar": "يمثل رسم التعجب المواد المتفجرة.",
         "zh": "感叹号象形图代表爆炸性物质。",
         "ku": "Pîktograma nîşana bangkirinê (!) madeyên teqemenî nîşan dide."
@@ -450,9 +450,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Substances that are harmful to the environment are indicated by the symbol of dried trees and dead fish.",
         "de": "Auf umweltschädliche Stoffe wird durch das Symbol vertrockneter Bäume und toter Fische hingewiesen.",
         "fr": "Les substances nocives pour l'environnement sont signalées par le symbole des arbres séchés et des poissons morts.",
-        "ru": "Вещества, вредные для окружающей среды, обозначаются символом засохших деревьев и мертвой рыбы.",
+        "ru": "Вещества, опасные для окружающей среды, обозначают пиктограммой с засохшим деревом и мёртвой рыбой.",
         "ar": "يشار إلى المواد الضارة بالبيئة برمز الأشجار المجففة والأسماك الميتة.",
-        "zh": "对环境有害的物质用干树和死鱼的符号表示。",
+        "zh": "对环境有害的物质用枯树和死鱼的图形表示。",
         "ku": "Madeyên ku zerarê didin jîngehê bi nîşana darên hişkbûyî û masiyên mirî têne nîşandayîn."
       },
       "trap": {
@@ -460,9 +460,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Substances that are harmful to the environment are indicated with a flame symbol.",
         "de": "Umweltschädliche Stoffe sind mit einem Flammensymbol gekennzeichnet.",
         "fr": "Les substances nocives pour l'environnement sont signalées par un symbole de flamme.",
-        "ru": "Вещества, вредные для окружающей среды, обозначаются символом пламени.",
+        "ru": "Вещества, опасные для окружающей среды, обозначают пиктограммой «пламя».",
         "ar": "تتم الإشارة إلى المواد الضارة بالبيئة برمز اللهب.",
-        "zh": "对环境有害的物质用火焰符号表示。",
+        "zh": "对环境有害的物质用火焰图形表示。",
         "ku": "Madeyên ku ji jîngehê re zerardar in, bi nîşana şewatê têne destnîşan kirin."
       },
       "whyTrapIsFalse": {
@@ -483,9 +483,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Poisonous (toxic) substances carry the skull symbol and should not be inhaled.",
         "de": "Giftige (toxische) Stoffe tragen das Totenkopf-Symbol und sollten nicht eingeatmet werden.",
         "fr": "Les substances toxiques (toxiques) portent le symbole du crâne et ne doivent pas être inhalées.",
-        "ru": "Ядовитые (токсичные) вещества имеют символ черепа, и их нельзя вдыхать.",
+        "ru": "Ядовитые (токсичные) вещества обозначают знаком «череп со скрещёнными костями»; их пары нельзя вдыхать.",
         "ar": "المواد السامة (السامة) تحمل رمز الجمجمة ويجب عدم استنشاقها.",
-        "zh": "有毒（有毒）物质带有骷髅符号，不应吸入。",
+        "zh": "有毒物质带有骷髅标志，不得吸入。",
         "ku": "Madeyên jehrî (toksîk) sembola qafa serî hildigirin û divê neyên hilmijandin."
       },
       "trap": {
@@ -493,9 +493,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "The skull symbol indicates substances that emit radioactive radiation.",
         "de": "Das Totenkopfsymbol weist auf Stoffe hin, die radioaktive Strahlung aussenden.",
         "fr": "Le symbole du crâne indique les substances qui émettent des rayonnements radioactifs.",
-        "ru": "Символ черепа обозначает вещества, излучающие радиоактивное излучение.",
+        "ru": "Знак «череп со скрещёнными костями» обозначает радиоактивные вещества.",
         "ar": "يشير رمز الجمجمة إلى المواد التي تنبعث منها إشعاعات مشعة.",
-        "zh": "骷髅符号表示发射放射性辐射的物质。",
+        "zh": "骷髅标志表示具有放射性的物质。",
         "ku": "Sembola qafa serî maddeyên ku tîrêjên radyoaktîf derdixin nîşan dide."
       },
       "whyTrapIsFalse": {
@@ -503,7 +503,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "The skull and crossbones indicates acute toxicity; radioactive materials are marked separately with the three-bladed radiation (trefoil) symbol.",
         "de": "Totenkopf mit Knochen bedeutet akute Toxizität; radioaktive Stoffe werden gesondert mit dem dreiflügeligen Strahlenwarnzeichen gekennzeichnet.",
         "fr": "La tête de mort indique une toxicité aiguë ; les matières radioactives sont signalées séparément par le trèfle de radioactivité à trois pales.",
-        "ru": "Череп с костями означает острую токсичность; радиоактивные вещества обозначают отдельно знаком радиационной опасности (трилистником).",
+        "ru": "Череп со скрещёнными костями означает острую токсичность; радиоактивные вещества обозначают отдельным знаком радиационной опасности (трилистником).",
         "ar": "الجمجمة والعظمتان تدلان على السمّية الحادة؛ أما المواد المشعة فتُميَّز برمز الإشعاع ذي الشفرات الثلاث.",
         "zh": "骷髅头表示急性毒性；放射性物质另用三叶形电离辐射标志表示。",
         "ku": "Serê kuştî jehrîbûna tûj nîşan dide; madeyên radyoaktîf bi sembola radyasyonê ya sê-pel cuda tên nîşankirin."
@@ -526,9 +526,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "When diluting concentrated acid, cold water should be quickly poured over it.",
         "de": "Beim Verdünnen von konzentrierter Säure sollte diese schnell mit kaltem Wasser übergossen werden.",
         "fr": "Lors de la dilution d'un acide concentré, il convient de verser rapidement de l'eau froide dessus.",
-        "ru": "При разбавлении концентрированной кислоты ее следует быстро залить холодной водой.",
+        "ru": "При разбавлении концентрированной кислоты в неё нужно быстро налить холодную воду.",
         "ar": "عند تخفيف الحمض المركز، يجب سكب الماء البارد عليه بسرعة.",
-        "zh": "稀释浓酸时，应迅速倒入冷水。",
+        "zh": "稀释浓酸时，应迅速向酸中倒入冷水。",
         "ku": "Dema ku asîda konsantrekirî tê rijandin, divê ava sar zû bi ser de were rijandin."
       },
       "whyTrapIsFalse": {
@@ -594,7 +594,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Chemistry",
         "de": "Chemie",
         "fr": "Chimie",
-        "ru": "Химия",
+        "ru": "Современная химия",
         "ar": "الكيمياء",
         "zh": "化学",
         "ku": "Kîmya"
@@ -604,9 +604,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "While alchemy is an endeavor based on trial and error, chemistry is a positive science based on systematic experimentation and measurement.",
         "de": "Während die Alchemie ein auf Versuch und Irrtum basierendes Unterfangen ist, ist die Chemie eine positive Wissenschaft, die auf systematischem Experimentieren und Messen basiert.",
         "fr": "Alors que l'alchimie est une entreprise basée sur des essais et des erreurs, la chimie est une science positive basée sur l'expérimentation et la mesure systématiques.",
-        "ru": "В то время как алхимия — это попытка, основанная на пробах и ошибках, химия — позитивная наука, основанная на систематических экспериментах и измерениях.",
+        "ru": "Алхимия опирается на метод проб и ошибок; современная химия — наука, основанная на систематических экспериментах и измерениях.",
         "ar": "في حين أن الخيمياء مسعى يعتمد على التجربة والخطأ، فإن الكيمياء علم وضعي يعتمد على التجريب والقياس المنهجي.",
-        "zh": "炼金术是一门基于反复试验的努力，而化学是一门基于系统实验和测量的实证科学。",
+        "zh": "炼金术是以反复试错为基础的活动，而化学是以系统实验和测量为基础的实证科学。",
         "ku": "Simya hewldaneke li ser ceribandin û xeletiyê ye; kîmya jî zanisteke pozîtîf e ku li ser ceribandin û pîvandina sîstematîk ava bûye."
       }
     },
@@ -617,7 +617,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "element",
         "de": "Element",
         "fr": "élément",
-        "ru": "элемент",
+        "ru": "Элемент",
         "ar": "عنصر",
         "zh": "元素",
         "ku": "element"
@@ -627,7 +627,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "compound",
         "de": "Verbindung",
         "fr": "composé",
-        "ru": "соединение",
+        "ru": "Соединение",
         "ar": "مركب",
         "zh": "化合物",
         "ku": "pêkhatî"
@@ -637,7 +637,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "An element consists of a single kind of atom, whereas a compound is a pure substance formed when atoms of different kinds combine in fixed proportions.",
         "de": "Ein Element besteht aus nur einer Atomart, eine Verbindung dagegen ist ein Reinstoff, in dem Atome verschiedener Art in festen Verhältnissen verbunden sind.",
         "fr": "Un élément ne contient qu'une seule sorte d'atomes, alors qu'un composé est une substance pure formée d'atomes de sortes différentes combinés dans des proportions fixes.",
-        "ru": "Элемент состоит из атомов одного вида, а соединение — это чистое вещество, образованное атомами разных видов, соединёнными в постоянных соотношениях.",
+        "ru": "Элемент состоит из атомов одного вида; соединение — чистое вещество, образованное атомами разных видов, объединёнными в определённых соотношениях.",
         "ar": "العنصر يتكوّن من نوع واحد من الذرات، أما المركب فهو مادة نقية تتكوّن من اتحاد ذرات من أنواع مختلفة بنسب ثابتة.",
         "zh": "元素只由一种原子组成，而化合物是由不同种类的原子按固定比例结合而成的纯净物。",
         "ku": "Element ji yek cure atoman pêk tê; pêkhatî jî maddeyeke saf e ku ji yekbûna atomên cureyên cuda bi rêjeyên sabît çêdibe."
@@ -670,7 +670,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Qualitative analysis answers the question “what is present?”; quantitative analysis answers “how much is present?”.",
         "de": "Die qualitative Analyse beantwortet die Frage „Was ist vorhanden?“, die quantitative Analyse die Frage „Wie viel ist vorhanden?“.",
         "fr": "L'analyse qualitative répond à la question « qu'y a-t-il ? », l'analyse quantitative à la question « combien y en a-t-il ? ».",
-        "ru": "Качественный анализ отвечает на вопрос «что содержится?», количественный — на вопрос «сколько содержится?».",
+        "ru": "Качественный анализ отвечает на вопрос „что содержится?“, количественный анализ — на вопрос „сколько содержится?“.",
         "ar": "يجيب التحليل النوعي عن سؤال «ماذا يوجد؟»، ويجيب التحليل الكمي عن سؤال «كم يوجد؟».",
         "zh": "定性分析回答“有什么？”的问题，定量分析回答“有多少？”的问题。",
         "ku": "Analîza çawaniyê bersiva pirsa “çi heye?” dide, analîza çendaniyê bersiva pirsa “çiqas heye?” dide."
@@ -683,7 +683,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "burette",
         "de": "Bürette",
         "fr": "burette",
-        "ru": "бюретка",
+        "ru": "Бюретка",
         "ar": "السحاحة",
         "zh": "滴定管",
         "ku": "Buret"
@@ -693,9 +693,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "pipette",
         "de": "Pipette",
         "fr": "pipette",
-        "ru": "пипетка",
+        "ru": "Пипетка",
         "ar": "ماصة",
-        "zh": "移液器",
+        "zh": "移液管",
         "ku": "Pîpet"
       },
       "distinction": {
@@ -703,9 +703,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "A burette has a stopcock and is used for dropwise addition in titration; a pipette transfers small, measured volumes of liquid.",
         "de": "Eine Bürette besitzt einen Hahn und dient zum tropfenweisen Zugeben bei der Titration; eine Pipette überträgt kleine, abgemessene Flüssigkeitsvolumina.",
         "fr": "La burette possède un robinet et sert à l'ajout goutte à goutte lors du titrage ; la pipette sert à transférer de petits volumes mesurés de liquide.",
-        "ru": "Бюретка снабжена краном и используется для покапельного добавления при титровании; пипетка служит для переноса небольших отмеренных объёмов жидкости.",
+        "ru": "Бюретка имеет кран и служит для покапельного добавления жидкости при титровании; пипетка служит для отбора и переноса небольшого точно отмеренного объёма жидкости.",
         "ar": "السحاحة مزودة بصنبور وتُستخدم للإضافة قطرةً قطرة في المعايرة؛ أما الماصة فتنقل أحجامًا صغيرة مقيسة من السائل.",
-        "zh": "滴定管带有活塞，用于滴定时逐滴加入；移液管用于转移少量定量的液体。",
+        "zh": "滴定管带有活塞，用于滴定时逐滴加入液体；而移液管用于吸取并转移少量一定体积的液体。",
         "ku": "Buret xwedî musluk e û di tîtrasyonê de ji bo dilop-dilop rijandinê tê bikaranîn; pîpet ji bo veguhestina qebareyên piçûk ên şilekê ye."
       }
     },
@@ -736,9 +736,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "The Erlenmeyer flask is used for shaking and titration; the volumetric flask is used to prepare a solution of exact concentration at an exact volume.",
         "de": "Der Erlenmeyerkolben wird zum Schütteln und Titrieren verwendet; der Messkolben dient zur Herstellung einer Lösung genauer Konzentration mit genauem Volumen.",
         "fr": "La fiole d'Erlenmeyer sert à l'agitation et au titrage ; la fiole jaugée sert à préparer une solution de concentration précise à un volume exact.",
-        "ru": "Колба Эрленмейера используется для перемешивания и титрования; мерная колба — для приготовления раствора точной концентрации точного объёма.",
+        "ru": "Колба Эрленмейера применяется при перемешивании растворов и титровании; мерная колба применяется для приготовления раствора точной концентрации в точно заданном объёме.",
         "ar": "يُستخدم دورق إرلنماير في الرج والمعايرة؛ أما الدورق الحجمي فيُستخدم لتحضير محلول دقيق التركيز بحجم محدد تمامًا.",
-        "zh": "锥形瓶用于摇动和滴定；容量瓶用于配制体积准确、浓度精确的溶液。",
+        "zh": "锥形瓶用于振荡和滴定；而容量瓶用于配制体积准确、浓度精确的溶液。",
         "ku": "Erlenmayer ji bo hejandin û tîtrasyonê tê bikaranîn; balon joje ji bo amadekirina çareseriyeke bi qebare û konsantreya rast tê bikaranîn."
       }
     },
@@ -751,7 +751,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "Huile de vitriol (H2SO4)",
         "ru": "Купоросное масло (H2SO4)",
         "ar": "زيت الزاج (H2SO4)",
-        "zh": "矾油 (H2SO4)",
+        "zh": "矾油(H2SO4)",
         "ku": "Rûnê zaçê (H2SO4)"
       },
       "conceptB": {
@@ -761,7 +761,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "Eau-forte (HNO3)",
         "ru": "Крепкая водка (HNO3)",
         "ar": "ماء الفضة (HNO3)",
-        "zh": "硝镪水 (HNO3)",
+        "zh": "硝镪水(HNO3)",
         "ku": "Kezzap (HNO3)"
       },
       "distinction": {
@@ -769,9 +769,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Oil of vitriol is sulfuric acid and is known as battery acid; aqua fortis (kezzap) is nitric acid and is used in fertilizer and explosives production.",
         "de": "Vitriolöl ist Schwefelsäure (Batteriesäure); Scheidewasser (Kezzap) ist Salpetersäure und dient der Düngemittel- und Sprengstoffherstellung.",
         "fr": "L'huile de vitriol est de l'acide sulfurique (acide de batterie) ; l'eau-forte (kezzap) est de l'acide nitrique utilisé pour les engrais et explosifs.",
-        "ru": "Купоросное масло — это серная кислота (аккумуляторная кислота); азотная кислота (крепкая водка) используется в производстве удобрений и взрывчатых веществ.",
+        "ru": "Купоросное масло (H2SO4) — серная кислота, известная как аккумуляторная кислота; крепкая водка (HNO3) — азотная кислота, которую используют в производстве удобрений и взрывчатых веществ.",
         "ar": "زيت الزاج هو حمض الكبريتيك ويعرف بماء البطارية؛ أما ماء الفضة (النيتريك) فيستخدم في صناعة الأسمدة والمتفجرات.",
-        "zh": "矾油是硫酸（蓄电池酸）；硝镪水（硝酸）则用于生产化肥和炸药。",
+        "zh": "矾油即硫酸，俗称蓄电池酸；而硝镪水即硝酸，用于生产化肥和炸药。",
         "ku": "Rûnê zaçê asîda sulfurîk e û wekî asîda pîlê tê zanîn; kezzap asîda nîtrîk e û di hilberîna gubre û teqemeniyan de tê bikaranîn."
       }
     },
@@ -782,7 +782,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Physical Change",
         "de": "Physikalische Veränderung",
         "fr": "Changement physique",
-        "ru": "Физические изменения",
+        "ru": "Физическое явление",
         "ar": "التغير الفيزيائي",
         "zh": "物理变化",
         "ku": "Guhertina Fîzîkî"
@@ -792,7 +792,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Chemical Change",
         "de": "Chemische Veränderung",
         "fr": "Changement chimique",
-        "ru": "Химические изменения",
+        "ru": "Химическое явление",
         "ar": "التغير الكيميائي",
         "zh": "化学变化",
         "ku": "Guhertina Kîmyewî"
@@ -802,9 +802,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "In a physical change, the internal structure and identity of the substance are preserved; in a chemical change, new chemical species (new substances) are formed.",
         "de": "Physikalische Veränderung bedeutet, dass die innere Struktur und die Identität des Stoffes erhalten bleiben; bei einer chemischen Veränderung entstehen neue chemische Spezies (neue Stoffe).",
         "fr": "Changement physique : la structure interne et l'identité de la substance sont conservées ; changement chimique : de nouvelles espèces chimiques (de nouvelles substances) se forment.",
-        "ru": "При физическом изменении внутреннее строение и природа вещества сохраняются; при химическом изменении образуются новые химические частицы (новые вещества).",
+        "ru": "Физическое явление сохраняет внутреннее строение и природу вещества; химическое явление приводит к образованию новых химических частиц (новых веществ).",
         "ar": "في التغير الفيزيائي تبقى البنية الداخلية للمادة وهويتها كما هي؛ أما في التغير الكيميائي فتتكوّن أنواع كيميائية جديدة (مواد جديدة).",
-        "zh": "物理变化中物质的内部结构和本质保持不变；化学变化中生成新的化学物种（新物质）。",
+        "zh": "物理变化不改变物质的内部结构和本性；而化学变化有新的化学粒子（即新物质）生成。",
         "ku": "Di guhertina fîzîkî de avahiya navxweyî û nasnameya maddeyê tê parastin; di guhertina kîmyewî de cureyên kîmyewî yên nû (maddeyên nû) çêdibin."
       }
     },
@@ -815,7 +815,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Toxic Substance",
         "de": "Giftiger Stoff",
         "fr": "Substance toxique",
-        "ru": "Токсическое вещество",
+        "ru": "Токсичное вещество",
         "ar": "مادة سامة",
         "zh": "有毒物质",
         "ku": "Madeya Toksîk"
@@ -825,7 +825,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Corrosive Substance",
         "de": "Ätzender Stoff",
         "fr": "Substance corrosive",
-        "ru": "Коррозионное вещество",
+        "ru": "Едкое (коррозионное) вещество",
         "ar": "مادة أكّالة",
         "zh": "腐蚀性物质",
         "ku": "Madeya korozive"
@@ -835,9 +835,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Toxic substances are poisonous and bear the skull pictogram; corrosive substances attack and destroy skin and metals.",
         "de": "Giftiger Stoff bedeutet: toxisch, mit dem Totenkopf-Piktogramm gekennzeichnet; ein ätzender Stoff greift Haut und Metalle an und zerstört sie.",
         "fr": "Substance toxique : elle est vénéneuse et porte le pictogramme tête de mort ; substance corrosive : elle attaque et détruit la peau et les métaux.",
-        "ru": "Токсическое вещество ядовито и обозначается пиктограммой «череп»; коррозионное вещество разъедает кожу и металлы.",
+        "ru": "Токсичное вещество вызывает отравление и обозначается пиктограммой „череп со скрещёнными костями“; едкое (коррозионное) вещество разрушает кожу и металлы.",
         "ar": "مادة سامة: تسبب التسمم وتحمل رمز الجمجمة؛ مادة أكّالة: تُتلف الجلد والفلزات وتؤدي إلى تآكلها.",
-        "zh": "有毒物质具有毒性，带有骷髅标志；腐蚀性物质会腐蚀并损伤皮肤和金属。",
+        "zh": "有毒物质具有毒性，带有骷髅标志；而腐蚀性物质会腐蚀并损伤皮肤和金属。",
         "ku": "Madeya toksîk jehrî ye û pîktograma qafa serî hildigire; madeya korozîf çerm û metalan dixwe û xera dike."
       }
     }
@@ -850,9 +850,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Solution Preparation Steps",
         "de": "Schritte zur Lösungsvorbereitung",
         "fr": "Étapes de préparation de la solution",
-        "ru": "Этапы подготовки раствора",
+        "ru": "Этапы приготовления раствора",
         "ar": "خطوات تحضير المحلول",
-        "zh": "溶液制备步骤",
+        "zh": "溶液配制步骤",
         "ku": "Pêngavên Amadekirina Çareseriyê"
       },
       "steps": [
@@ -861,7 +861,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The solid is weighed on a precision balance",
           "de": "Der Feststoff wird auf einer Präzisionswaage abgewogen",
           "fr": "Le solide est pesé sur une balance de précision",
-          "ru": "Твёрдое вещество взвешивают на точных весах",
+          "ru": "Навеску твёрдого вещества взвешивают на точных весах",
           "ar": "يُوزن المذاب الصلب بميزان دقيق",
           "zh": "用精密天平称量固体",
           "ku": "Madeya hişk bi terazûya hesas tê kişandin"
@@ -871,7 +871,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "It is dissolved in a small amount of pure water in a beaker",
           "de": "Er wird im Becherglas in wenig reinem Wasser gelöst",
           "fr": "Il est dissous dans un peu d'eau pure dans un bécher",
-          "ru": "Его растворяют в небольшом количестве чистой воды в стакане",
+          "ru": "Твёрдое вещество растворяют в небольшом количестве дистиллированной воды в химическом стакане",
           "ar": "يُذاب في كمية قليلة من الماء النقي داخل كأس زجاجية",
           "zh": "在烧杯中用少量纯水溶解",
           "ku": "Di beherê de di hindek ava paqij de tê helandin"
@@ -891,7 +891,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Pure water is added up to the mark and the flask is shaken",
           "de": "Reines Wasser wird bis zur Eichmarke aufgefüllt und der Kolben geschüttelt",
           "fr": "On complète avec de l'eau pure jusqu'au trait de jauge et on agite",
-          "ru": "Доливают чистую воду до метки и перемешивают",
+          "ru": "Доливают дистиллированную воду до метки и перемешивают",
           "ar": "يُضاف الماء النقي حتى العلامة ويُرج الدورق",
           "zh": "加纯水至刻度线并摇匀",
           "ku": "Ava paqij heta xetê tê zêdekirin û tê hejandin"
@@ -916,7 +916,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The liquid mixture is placed in the flask",
           "de": "Das Flüssigkeitsgemisch wird in den Rundkolben gegeben",
           "fr": "Le mélange liquide est placé dans le ballon",
-          "ru": "Жидкую смесь помещают в колбу",
+          "ru": "Жидкую смесь наливают в колбу",
           "ar": "يوضع الخليط السائل في الدورق",
           "zh": "将液体混合物放入烧瓶中",
           "ku": "Tevliheviya şil di balonê de tê danîn"
@@ -936,7 +936,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The vapor passes into the condenser",
           "de": "Der Dampf gelangt in den Kühler",
           "fr": "La vapeur passe dans le réfrigérant",
-          "ru": "Пар поступает в холодильник",
+          "ru": "Пары поступают в холодильник",
           "ar": "يمر البخار إلى المكثف",
           "zh": "蒸气进入冷凝管",
           "ku": "Hilm derbasî sarker dibe"
@@ -946,9 +946,9 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The condensed liquid is collected in the conical flask.",
           "de": "Die kondensierte Flüssigkeit wird im Erlenmeyerkolben gesammelt.",
           "fr": "Le liquide condensé est récupéré dans la fiole conique.",
-          "ru": "Конденсированную жидкость собирают в коническую колбу.",
+          "ru": "Сконденсировавшуюся жидкость собирают в коническую колбу",
           "ar": "يتم جمع السائل المكثف في الدورق المخروطي.",
-          "zh": "将冷凝液收集在锥形瓶中。",
+          "zh": "冷凝液收集在锥形瓶中",
           "ku": "Şileya ku tê kondenskirin di erlenmayerê de tê berhevkirin."
         }
       ]
@@ -962,7 +962,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "Séparation de phases avec entonnoir séparateur",
         "ru": "Разделение фаз с помощью делительной воронки",
         "ar": "فصل الطورين بقمع الفصل",
-        "zh": "使用分液漏斗进行相分离",
+        "zh": "用分液漏斗分液",
         "ku": "Veqetandina Fazan bi Qîfa Veqetandinê"
       },
       "steps": [
@@ -971,9 +971,9 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The heterogeneous liquid mixture is placed in the funnel.",
           "de": "Die heterogene Flüssigkeitsmischung wird in den Trichter gegeben.",
           "fr": "Le mélange liquide hétérogène est placé dans l'entonnoir.",
-          "ru": "Неоднородную жидкую смесь помещают в воронку.",
+          "ru": "Неоднородную жидкую смесь наливают в делительную воронку",
           "ar": "يتم وضع الخليط السائل غير المتجانس في القمع.",
-          "zh": "将异质液体混合物置于漏斗中。",
+          "zh": "将互不相溶的液体混合物倒入分液漏斗",
           "ku": "Tevliheviya şile ya heterojen di qîfa veqetandinê de tê danîn."
         },
         {
@@ -981,9 +981,9 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The funnel is shaken and the built-up gas pressure is released.",
           "de": "Der Trichter wird geschüttelt und der entstandene Gasdruck abgelassen.",
           "fr": "On agite l'entonnoir et on libère la pression de gaz accumulée.",
-          "ru": "Воронку встряхивают и сбрасывают накопившееся давление газа.",
+          "ru": "Воронку встряхивают и сбрасывают давление накопившегося газа",
           "ar": "يُرجّ القمع ويُصرَّف ضغط الغاز المتكوّن.",
-          "zh": "振荡漏斗并放气减压。",
+          "zh": "振荡分液漏斗并放气",
           "ku": "Qîf tê hejandin û pestoya gaza kombûyî tê berdan."
         },
         {
@@ -991,7 +991,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The mixture is left to stand until the phases separate by density difference",
           "de": "Man wartet, bis sich die Phasen aufgrund des Dichteunterschieds getrennt haben",
           "fr": "On laisse reposer jusqu'à ce que les phases se séparent par différence de densité",
-          "ru": "Смесь оставляют до расслоения фаз из-за разности плотностей.",
+          "ru": "Дают фазам расслоиться за счёт разности плотностей",
           "ar": "يُترك الخليط حتى ينفصل الطوران بسبب اختلاف الكثافة",
           "zh": "静置，待两相因密度不同而分层",
           "ku": "Tê hiştin heta ku faz ji ber cudahiya tîrbûnê ji hev veqetin"
@@ -1001,9 +1001,9 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The lower phase is separated by opening the tap.",
           "de": "Durch Öffnen des Hahns wird die untere Phase abgetrennt.",
           "fr": "La phase inférieure est séparée en ouvrant le robinet.",
-          "ru": "Нижнюю фазу отделяют открытием крана.",
+          "ru": "Открывают кран и сливают нижнюю фазу",
           "ar": "يُفتح الصنبور ويُفصل الطور السفلي.",
-          "zh": "通过打开龙头分离下层相。",
+          "zh": "打开活塞，放出下层液体",
           "ku": "Bi vekirina muslukê faza jêrîn tê veqetandin."
         }
       ]
@@ -1015,9 +1015,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Solid-Liquid Filtration Process",
         "de": "Fest-Flüssig-Filtrationsprozess",
         "fr": "Processus de filtration solide-liquide",
-        "ru": "Процесс твердожидкостной фильтрации",
+        "ru": "Фильтрование (отделение твёрдого вещества от жидкости)",
         "ar": "ترشيح خليط صلب-سائل",
-        "zh": "固液过滤工艺",
+        "zh": "固液过滤操作",
         "ku": "Pêvajoya Parzûnkirina Hişk-Şile"
       },
       "steps": [
@@ -1026,7 +1026,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The filter paper is folded into a cone shape",
           "de": "Das Filterpapier wird kegelförmig gefaltet",
           "fr": "Le papier filtre est plié en forme de cône",
-          "ru": "Фильтровальная бумага сложена в форме конуса.",
+          "ru": "Фильтровальную бумагу складывают конусом",
           "ar": "يتم طي ورقة الترشيح في شكل مخروطي",
           "zh": "将滤纸折叠成圆锥形",
           "ku": "Kaxeza parzûnê bi şiklê konî tê pêçan"
@@ -1036,9 +1036,9 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "It is placed in the funnel and wetted.",
           "de": "Es wird in den Trichter gegeben und angefeuchtet.",
           "fr": "Il est placé dans l'entonnoir et mouillé.",
-          "ru": "Его помещают в воронку и смачивают.",
+          "ru": "Фильтр помещают в воронку и смачивают",
           "ar": "يتم وضعها في القمع وترطيبها.",
-          "zh": "将其放入漏斗中并润湿。",
+          "zh": "将滤纸放入漏斗并用水润湿",
           "ku": "Di qîfê de tê danîn û tê şilkirin."
         },
         {
@@ -1046,9 +1046,9 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The heterogeneous mixture is poured along a glass rod",
           "de": "Das heterogene Gemisch wird an einem Glasstab entlang eingegossen",
           "fr": "Le mélange hétérogène est versé le long d'une baguette de verre",
-          "ru": "Неоднородную смесь наливают по стеклянной палочке",
+          "ru": "Неоднородную смесь выливают в воронку по стеклянной палочке",
           "ar": "يُسكب الخليط غير المتجانس على ساق زجاجية",
-          "zh": "沿玻璃棒倒入非均相混合物",
+          "zh": "用玻璃棒引流，将非均匀混合物倒入漏斗",
           "ku": "Tevliheviya heterojen bi alîkariya çovika camê tê rijandin"
         },
         {
@@ -1056,9 +1056,9 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "The filtrate is collected in the beaker.",
           "de": "Das Filtrat wird im Becherglas gesammelt.",
           "fr": "Le filtrat est récupéré dans le bécher.",
-          "ru": "Фильтрат собирают в стакан.",
+          "ru": "Фильтрат собирают в химический стакан",
           "ar": "يُجمع الراشح في الكأس الزجاجية.",
-          "zh": "将滤液收集在烧杯中。",
+          "zh": "滤液收集在烧杯中",
           "ku": "Şileya parzûnkirî di beherê de tê berhevkirin."
         }
       ]
@@ -1072,9 +1072,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Which of the following pieces of laboratory equipment should a researcher use to prepare 250 mL of a 0.1 M standard NaCl solution?",
         "de": "Welches der folgenden Laborgeräte sollte ein Forscher verwenden, der 250 mL einer 0,1 M NaCl-Standardlösung herstellen möchte?",
         "fr": "Lequel des instruments de laboratoire suivants un chercheur doit-il utiliser pour préparer 250 mL d'une solution étalon de NaCl à 0,1 M ?",
-        "ru": "Какое из перечисленных лабораторных приспособлений следует использовать исследователю, чтобы приготовить 250 мл стандартного раствора NaCl с концентрацией 0,1 М?",
+        "ru": "Исследователю нужно приготовить в лаборатории 250 мл стандартного раствора NaCl с концентрацией 0,1 M. Какой лабораторной посудой ему следует воспользоваться?",
         "ar": "أيّ الأدوات المختبرية الآتية يجب أن يستخدمها باحث يريد تحضير 250 mL من محلول NaCl قياسي تركيزه 0.1 M؟",
-        "zh": "研究人员要在实验室配制 250 mL 0.1 M 的 NaCl 标准溶液，应使用下列哪种实验器材？",
+        "zh": "研究人员要在实验室配制 250 mL 0.1 mol/L 的 NaCl 标准溶液，应使用下列哪种实验仪器？",
         "ku": "Lêkolînerek dixwaze 250 mL çareseriya standard a NaCl ya 0,1 M amade bike. Divê kîjan ji van amûrên laboratuvarê bi kar bîne?"
       },
       "options": [
@@ -1083,7 +1083,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "volumetric flask",
           "de": "Messkolben",
           "fr": "fiole jaugée",
-          "ru": "мерная колба",
+          "ru": "Мерная колба",
           "ar": "قارورة حجمية",
           "zh": "容量瓶",
           "ku": "Balon joje"
@@ -1093,7 +1093,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "separatory funnel",
           "de": "Scheidetrichter",
           "fr": "entonnoir séparateur",
-          "ru": "делительная воронка",
+          "ru": "Делительная воронка",
           "ar": "قمع الفصل",
           "zh": "分液漏斗",
           "ku": "Qîfa veqetandinê"
@@ -1103,7 +1103,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "short test tube",
           "de": "kurzes Reagenzglas",
           "fr": "tube à essai court",
-          "ru": "короткая пробирка",
+          "ru": "Короткая пробирка",
           "ar": "أنبوب اختبار قصير",
           "zh": "短试管",
           "ku": "lûleya testê ya kurt"
@@ -1113,7 +1113,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "mortar",
           "de": "Mörser",
           "fr": "mortier",
-          "ru": "ступка",
+          "ru": "Ступка",
           "ar": "هاون",
           "zh": "研钵",
           "ku": "Hawan"
@@ -1123,7 +1123,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "crucible",
           "de": "Tiegel",
           "fr": "creuset",
-          "ru": "тигель",
+          "ru": "Тигель",
           "ar": "بوتقة",
           "zh": "坩埚",
           "ku": "Kroze"
@@ -1135,7 +1135,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "A solution of known volume and concentration is prepared in a volumetric flask, which has a single calibration mark on its neck and is calibrated to one exact volume. A separatory funnel separates immiscible liquids, a test tube is for small-scale trials, a mortar is for grinding solids and a crucible is for strongly heating solids; none of them measures volume precisely.",
         "de": "Eine Lösung mit bestimmtem Volumen und bestimmter Konzentration wird im Messkolben hergestellt, der am Hals eine einzige Eichmarke trägt und auf genau ein Volumen kalibriert ist. Der Scheidetrichter trennt nicht mischbare Flüssigkeiten, das Reagenzglas dient für Versuche mit kleinen Mengen, der Mörser zum Zerreiben von Feststoffen und der Tiegel zum Glühen von Feststoffen; keines dieser Geräte misst Volumen genau.",
         "fr": "Une solution de volume et de concentration déterminés se prépare dans une fiole jaugée, qui porte un seul trait de jauge sur son col et est étalonnée pour un volume précis. L'entonnoir séparateur (ampoule à décanter) sépare des liquides non miscibles, le tube à essai sert aux essais sur de petites quantités, le mortier à broyer les solides et le creuset à calciner les solides ; aucun ne mesure précisément un volume.",
-        "ru": "Раствор определённого объёма и концентрации готовят в мерной колбе: на её горлышке есть одна метка, и она откалибрована на один точный объём. Делительная воронка служит для разделения несмешивающихся жидкостей, пробирка — для опытов с малыми количествами, ступка — для измельчения твёрдых веществ, тигель — для прокаливания твёрдых веществ; ни один из этих предметов не измеряет объём точно.",
+        "ru": "Раствор определённого объёма и концентрации готовят в мерной колбе: на её горле одна метка, и она откалибрована на один точный объём. Делительная воронка служит для разделения несмешивающихся жидкостей, пробирка — для опытов с малыми количествами веществ, ступка — для измельчения твёрдых веществ, тигель — для прокаливания твёрдых веществ; ни один из этих предметов не позволяет точно измерить объём.",
         "ar": "يُحضَّر المحلول ذو الحجم والتركيز المحدَّدين في القارورة الحجمية (الدورق الحجمي)، وعلى عنقها علامة واحدة وهي معايَرة على حجم واحد دقيق. أما قمع الفصل فيفصل السوائل غير الممتزجة، وأنبوب الاختبار يُستخدم للتجارب بكميات صغيرة، والهاون لسحق المواد الصلبة، والبوتقة لتسخين المواد الصلبة تسخيناً شديداً؛ ولا يقيس أيٌّ منها الحجم بدقة.",
         "zh": "一定体积和浓度的溶液要在容量瓶中配制：容量瓶瓶颈上只有一条刻度线，校准为一个准确的体积。分液漏斗用于分离互不相溶的液体，试管用于少量物质的实验，研钵用于研磨固体，坩埚用于灼烧固体；它们都不能精确量取体积。",
         "ku": "Çareseriya bi qebare û konsantreya diyar di balon jojeyê de tê amadekirin; li ser stûyê wê tenê xêzeke pîvanê heye û ji bo yek qebareya rast hatiye eyarkirin. Qîfa veqetandinê ji bo veqetandina şileyên ku tevlî hev nabin, lûleya testê ji bo ceribandinên bi mîqdarên piçûk, hawan ji bo hûrkirina maddeyên hişk û kroze ji bo sorkirina maddeyên hişk tê bikaranîn; yek ji wan jî qebareyê bi hesasî napîve."
@@ -1148,9 +1148,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Which of the following conventionally named compounds has the wrong chemical formula?",
         "de": "Welche der folgenden konventionell benannten Verbindungen hat die falsche chemische Formel?",
         "fr": "Lequel des composés suivants nommés conventionnellement a la mauvaise formule chimique ?",
-        "ru": "Какое из следующих условно названных соединений имеет неправильную химическую формулу?",
+        "ru": "Для какого из соединений, приведённых под традиционными названиями, химическая формула указана неверно?",
         "ar": "أي من المركبات التالية ذات الأسماء التقليدية لها صيغة كيميائية خاطئة؟",
-        "zh": "以下哪种传统命名的化合物的化学式是错误的？",
+        "zh": "下列用传统名称表示的化合物中，哪一种的化学式是错误的？",
         "ku": "Kîjan ji pêkhateyên jêrîn bi navên kevneşopî xwedî formula kîmyewî ya çewt e?"
       },
       "options": [
@@ -1161,7 +1161,7 @@ export const unit01: ChemistryUnitSeedData = {
           "fr": "Huile de vitriol : H2SO4",
           "ru": "Купоросное масло: H2SO4",
           "ar": "زيت الزاج: H2SO4",
-          "zh": "矾油: H2SO4",
+          "zh": "矾油：H2SO4",
           "ku": "Rûnê zaçê: H2SO4"
         },
         {
@@ -1171,7 +1171,7 @@ export const unit01: ChemistryUnitSeedData = {
           "fr": "Eau-forte : HNO3",
           "ru": "Крепкая водка: HNO3",
           "ar": "ماء الفضة: HNO3",
-          "zh": "硝镪水: HNO3",
+          "zh": "硝镪水：HNO3",
           "ku": "Kezzap: HNO3"
         },
         {
@@ -1181,7 +1181,7 @@ export const unit01: ChemistryUnitSeedData = {
           "fr": "Esprit de sel : HCl",
           "ru": "Соляной спирт: HCl",
           "ar": "روح الملح: HCl",
-          "zh": "盐精: HCl",
+          "zh": "盐镪水：HCl",
           "ku": "Ruhê xwê: HCl"
         },
         {
@@ -1199,7 +1199,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Slaked lime: CaO",
           "de": "Löschkalk: CaO",
           "fr": "Chaux éteinte : CaO",
-          "ru": "Гашеная известь: CaO",
+          "ru": "Гашёная известь: CaO",
           "ar": "الجير المطفأ : CaO",
           "zh": "熟石灰：CaO",
           "ku": "Kilsa vemirî: CaO"
@@ -1213,7 +1213,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "La chaux éteinte est Ca(OH)2 ; CaO est la formule de la chaux vive. La chaux vive réagit avec l'eau pour donner la chaux éteinte : CaO + H2O → Ca(OH)2. Les formules données pour l'huile de vitriol, l'eau-forte, l'esprit de sel et le calcaire sont correctes.",
         "ru": "Гашёная известь — это Ca(OH)2; CaO — формула негашёной извести. Негашёная известь реагирует с водой с образованием гашёной: CaO + H2O → Ca(OH)2. Формулы купоросного масла, крепкой водки, соляного спирта и известняка указаны верно.",
         "ar": "الجير المطفأ هو Ca(OH)2؛ أما CaO فهي صيغة الجير الحي. يتفاعل الجير الحي مع الماء مكوّناً الجير المطفأ: CaO + H2O → Ca(OH)2. أما الصيغ المعطاة لزيت الزاج وماء الفضة وروح الملح والحجر الجيري فصحيحة.",
-        "zh": "熟石灰是 Ca(OH)2；CaO 是生石灰的化学式。生石灰与水反应生成熟石灰：CaO + H2O → Ca(OH)2。矾油、硝镪水、盐精和石灰石的化学式都是正确的。",
+        "zh": "熟石灰是 Ca(OH)2；CaO 是生石灰的化学式。生石灰与水反应生成熟石灰：CaO + H2O → Ca(OH)2。矾油、硝镪水、盐镪水和石灰石的化学式都是正确的。",
         "ku": "Kilsa vemirî Ca(OH)2 ye; CaO formula kilsa nevemirî ye. Kilsa nevemirî bi avê re reaksiyonê dike û kilsa vemirî çêdibe: CaO + H2O → Ca(OH)2. Formulên ku ji bo rûnê zaçê, kezzap, ruhê xwê û kevirê kilsê hatine dayîn rast in."
       }
     },
@@ -1287,7 +1287,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "I is true: techniques such as distillation, filtration and crystallisation, and tools like the alembic, were developed in the alchemical era. II is true: turning metals into gold and finding an elixir of life were main aims of alchemy. III is false: alchemy relied on trial and error; quantitative measurement and testable theory characterise chemistry, especially after Boyle and Lavoisier. Answer: I and II.",
         "de": "I ist richtig: Techniken wie Destillation, Filtration, Kristallisation und Geräte wie der Alembik entstanden in der Alchemie. II ist richtig: Metalle in Gold zu verwandeln und ein Lebenselixier zu finden waren Hauptziele. III ist falsch: Die Alchemie beruhte auf Versuch und Irrtum; quantitative Messung und überprüfbare Theorien kennzeichnen die Chemie, besonders seit Boyle und Lavoisier. Antwort: I und II.",
         "fr": "I est vraie : la distillation, la filtration, la cristallisation et l'alambic datent de l'époque alchimique. II est vraie : changer les métaux en or et trouver l'élixir de vie étaient des buts majeurs. III est fausse : l'alchimie reposait sur des essais et erreurs ; la mesure quantitative et les théories vérifiables caractérisent la chimie, surtout après Boyle et Lavoisier. Réponse : I et II.",
-        "ru": "I верно: перегонка, фильтрование, кристаллизация и перегонный куб появились в эпоху алхимии. II верно: превращение металлов в золото и поиск эликсира жизни были главными целями алхимии. III неверно: алхимия опиралась на пробы и ошибки; количественные измерения и проверяемые теории характерны для химии, особенно после Бойля и Лавуазье. Ответ: I и II.",
+        "ru": "I верно: перегонка, фильтрование, кристаллизация и такие приборы, как перегонный куб, появились в эпоху алхимии. II верно: превращение металлов в золото и поиск эликсира бессмертия были главными целями алхимии. III неверно: алхимия опиралась на метод проб и ошибок; количественные измерения и проверяемые теории характерны для химии, особенно после Бойля и Лавуазье. Ответ: I и II.",
         "ar": "العبارة I صحيحة: تطورت تقنيات التقطير والترشيح والتبلور وأدوات كالإنبيق في عصر الخيمياء. العبارة II صحيحة: كان تحويل الفلزات إلى ذهب وإيجاد إكسير الحياة من أهم أهداف الخيمياء. العبارة III خاطئة: اعتمدت الخيمياء على التجربة والخطأ، أما القياس الكمي والنظريات القابلة للاختبار فمن سمات الكيمياء، خاصة بعد بويل ولافوازييه. الإجابة: I وII.",
         "zh": "I 正确：蒸馏、过滤、结晶等技术以及蒸馏器等仪器是在炼金术时期发展起来的。II 正确：把金属变成黄金、寻找长生不老药是炼金术的主要目标。III 错误：炼金术依靠反复试错；定量测量和可检验的理论是化学的特征，尤其是在波义耳和拉瓦锡之后。答案：I 和 II。",
         "ku": "I rast e: teknîkên wekî distîlasyon, parzûnkirin, krîstalkirin û amûrên wekî imbîkê di serdema simyayê de pêş ketin. II rast e: veguherandina metalan bo zêr û dîtina îksîra jiyanê armancên sereke bûn. III şaş e: simya li ser ceribandin û şaşiyê bû; pîvana hejmarî û teoriyên ceribandinbar taybetiyên kîmyayê ne, nemaze piştî Boyle û Lavoisier. Bersiv: I û II."
@@ -1376,7 +1376,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Which of the following element name – symbol pairs is incorrect?",
         "de": "Welche der folgenden Zuordnungen Elementname – Symbol ist falsch?",
         "fr": "Laquelle des associations nom d'élément – symbole suivantes est incorrecte ?",
-        "ru": "Какое из следующих соответствий «название элемента – символ» неверно?",
+        "ru": "Какое из соответствий «название элемента — символ» неверно?",
         "ar": "أيّ المزاوجات الآتية بين اسم العنصر ورمزه خاطئة؟",
         "zh": "下列元素名称与元素符号的对应中，哪一项是错误的？",
         "ku": "Kîjan ji van hevberdanên navê elementê – sembol şaş e?"
@@ -1387,7 +1387,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Silver – Au",
           "de": "Silber – Au",
           "fr": "Argent – Au",
-          "ru": "Серебро – Au",
+          "ru": "Серебро — Au",
           "ar": "الفضة – Au",
           "zh": "银 – Au",
           "ku": "Zîv – Au"
@@ -1397,7 +1397,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Sodium – Na",
           "de": "Natrium – Na",
           "fr": "Sodium – Na",
-          "ru": "Натрий – Na",
+          "ru": "Натрий — Na",
           "ar": "الصوديوم – Na",
           "zh": "钠 – Na",
           "ku": "Sodyûm – Na"
@@ -1407,7 +1407,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Potassium – K",
           "de": "Kalium – K",
           "fr": "Potassium – K",
-          "ru": "Калий – K",
+          "ru": "Калий — K",
           "ar": "البوتاسيوم – K",
           "zh": "钾 – K",
           "ku": "Potasyûm – K"
@@ -1417,7 +1417,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Iron – Fe",
           "de": "Eisen – Fe",
           "fr": "Fer – Fe",
-          "ru": "Железо – Fe",
+          "ru": "Железо — Fe",
           "ar": "الحديد – Fe",
           "zh": "铁 – Fe",
           "ku": "Hesin – Fe"
@@ -1427,7 +1427,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Mercury – Hg",
           "de": "Quecksilber – Hg",
           "fr": "Mercure – Hg",
-          "ru": "Ртуть – Hg",
+          "ru": "Ртуть — Hg",
           "ar": "الزئبق – Hg",
           "zh": "汞 – Hg",
           "ku": "Cîwe – Hg"
@@ -1439,9 +1439,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Many symbols come from Latin names: sodium natrium (Na), potassium kalium (K), iron ferrum (Fe), mercury hydrargyrum (Hg). Silver is argentum in Latin, so its symbol is Ag; Au (aurum) is gold. The wrong pair is silver – Au.",
         "de": "Viele Symbole stammen aus lateinischen Namen: Natrium (Na), Kalium (K), Ferrum (Fe), Hydrargyrum (Hg). Silber heißt lateinisch argentum, sein Symbol ist Ag; Au (aurum) ist Gold. Falsch ist Silber – Au.",
         "fr": "Beaucoup de symboles viennent du latin : natrium (Na), kalium (K), ferrum (Fe), hydrargyrum (Hg). L'argent se dit argentum, son symbole est Ag ; Au (aurum) désigne l'or. L'association fausse est argent – Au.",
-        "ru": "Многие символы происходят от латинских названий: натрий natrium (Na), калий kalium (K), железо ferrum (Fe), ртуть hydrargyrum (Hg). Серебро по-латыни argentum, его символ Ag; Au (aurum) — золото. Неверно: серебро – Au.",
+        "ru": "Многие символы происходят от латинских названий: натрий — natrium (Na), калий — kalium (K), железо — ferrum (Fe), ртуть — hydrargyrum (Hg). Серебро по-латыни argentum, поэтому его символ Ag; Au (aurum) — символ золота. Неверное соответствие: серебро — Au.",
         "ar": "كثير من الرموز مشتق من الأسماء اللاتينية: الصوديوم natrium (Na)، البوتاسيوم kalium (K)، الحديد ferrum (Fe)، الزئبق hydrargyrum (Hg). واسم الفضة اللاتيني argentum فرمزها Ag، أما Au (aurum) فهو رمز الذهب. المزاوجة الخاطئة: الفضة – Au.",
-        "zh": "许多元素符号来自拉丁名：钠 natrium（Na）、钾 kalium（K）、铁 ferrum（Fe）、汞 hydrargyrum（Hg）。银的拉丁名是 argentum，符号为 Ag；Au（aurum）是金的符号。错误的是“银 – Au”。",
+        "zh": "许多元素符号来自拉丁名：钠 natrium(Na)、钾 kalium(K)、铁 ferrum(Fe)、汞 hydrargyrum(Hg)。银的拉丁名是 argentum，符号为 Ag；Au(aurum)是金的符号。错误的是“银 – Au”。",
         "ku": "Gelek sembol ji navên latînî tên: sodyûm natrium (Na), potasyûm kalium (K), hesin ferrum (Fe), cîwe hydrargyrum (Hg). Navê latînî yê zîv argentum e, loma sembola wê Ag ye; Au (aurum) sembola zêr e. Hevberdana şaş zîv – Au ye."
       }
     },
@@ -1515,7 +1515,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "The subscript outside the brackets multiplies every atom inside. Ca(OH)2: 1 Ca + 2 O + 2 H = 5, so x = 5. Al2(SO4)3: 2 Al + 3 S + 3·4 = 12 O = 17, so y = 17. x + y = 22. Ignoring the brackets gives 4 + 7 = 11, and applying the subscript only to the last atom in the brackets gives 4 + 15 = 19; these are typical errors.",
         "de": "Der Index außerhalb der Klammer multipliziert jedes Atom in der Klammer. Ca(OH)2: 1 Ca + 2 O + 2 H = 5, also x = 5. Al2(SO4)3: 2 Al + 3 S + 3·4 = 12 O = 17, also y = 17. x + y = 22. Ohne Klammer ergibt sich 4 + 7 = 11, wendet man den Index nur auf das letzte Atom an, 4 + 15 = 19; das sind typische Fehler.",
         "fr": "L'indice placé hors de la parenthèse multiplie chaque atome qu'elle contient. Ca(OH)2 : 1 Ca + 2 O + 2 H = 5, donc x = 5. Al2(SO4)3 : 2 Al + 3 S + 3·4 = 12 O = 17, donc y = 17. x + y = 22. En ignorant la parenthèse on obtient 4 + 7 = 11, et en appliquant l'indice au seul dernier atome 4 + 15 = 19 ; ce sont des erreurs typiques.",
-        "ru": "Индекс за скобкой умножается на каждый атом в скобке. Ca(OH)2: 1 Ca + 2 O + 2 H = 5, x = 5. Al2(SO4)3: 2 Al + 3 S + 3·4 = 12 O = 17, y = 17. x + y = 22. Если не учитывать скобки, получится 4 + 7 = 11, а если применить индекс только к последнему атому в скобке — 4 + 15 = 19; это типичные ошибки.",
+        "ru": "Индекс за скобкой умножается на число каждого атома в скобке. Ca(OH)2: 1 Ca + 2 O + 2 H = 5, x = 5. Al2(SO4)3: 2 Al + 3 S + 3·4 = 12 O = 17, y = 17. x + y = 22. Если не учитывать скобки, получится 4 + 7 = 11, а если применить индекс только к последнему атому в скобке — 4 + 15 = 19; это типичные ошибки.",
         "ar": "الرقم السفلي خارج القوس يُضرب في كل ذرة داخله. Ca(OH)2: ‏1 Ca + 2 O + 2 H = 5، إذن x = 5. Al2(SO4)3: ‏2 Al + 3 S + 3·4 = 12 O = 17، إذن y = 17. x + y = 22. وإهمال القوس يعطي 4 + 7 = 11، وتطبيق الرقم على آخر ذرة فقط يعطي 4 + 15 = 19؛ وهما خطآن شائعان.",
         "zh": "括号外的下标要乘以括号内的每一种原子。Ca(OH)2：1 个 Ca + 2 个 O + 2 个 H = 5，x = 5。Al2(SO4)3：2 个 Al + 3 个 S + 3·4 = 12 个 O = 17，y = 17。x + y = 22。忽略括号会得到 4 + 7 = 11，只把下标乘到括号内最后一个原子上会得到 4 + 15 = 19，这些都是典型错误。",
         "ku": "Îndeksa li derveyî kevanê bi her atomeke hundirê wê tê zêdekirin (pirjimarkirin). Ca(OH)2: 1 Ca + 2 O + 2 H = 5, ango x = 5. Al2(SO4)3: 2 Al + 3 S + 3·4 = 12 O = 17, ango y = 17. x + y = 22. Heke kevan neyê hesibandin 4 + 7 = 11, heke îndeks tenê li atoma dawî were sepandin 4 + 15 = 19 derdikeve; ev şaşiyên asayî ne."
@@ -1530,7 +1530,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "Un élève veut calciner longuement, sur la flamme d'un bec Bunsen, un échantillon solide réduit en poudre au mortier, afin d'étudier la variation de sa masse. Quel matériel doit-il utiliser pour la calcination ?",
         "ru": "Ученик хочет долго прокаливать в пламени горелки твёрдый образец, растёртый в ступке, чтобы изучить изменение его массы. Какую посуду следует использовать для прокаливания?",
         "ar": "يريد طالب تسخين عينة صلبة طحنها في الهاون تسخيناً شديداً لمدة طويلة على لهب موقد بنزن لدراسة تغيّر كتلتها. أيّ الأدوات الآتية يجب أن يستخدم للتسخين؟",
-        "zh": "一名学生想把在研钵中研成粉末的固体样品放在酒精喷灯（本生灯）火焰上长时间高温灼烧，以研究其质量变化。灼烧时应使用下列哪种仪器？",
+        "zh": "一名学生想把在研钵中研成粉末的固体样品放在本生灯火焰上长时间高温灼烧，以研究其质量变化。灼烧时应使用下列哪种仪器？",
         "ku": "Xwendekarek dixwaze nimûneyeke hişk a ku di havanê de kiriye toz, ji bo lêkolîna guherîna girseya wê demeke dirêj di agirê bekê de bi germahiya bilind sor bike. Ji bo sorkirinê divê kîjan amûrê bi kar bîne?"
       },
       "options": [
@@ -1604,7 +1604,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Which of the following matches of safety pictograms on chemical packaging are correct?\nI. Flame pictogram: easily ignitable substance\nII. Skull and crossbones: substance that corrodes metals and skin\nIII. Gas cylinder pictogram: gas stored under pressure",
         "de": "Welche der folgenden Zuordnungen von Gefahrenpiktogrammen auf Chemikalienverpackungen sind richtig?\nI. Flamme: leicht entzündbarer Stoff\nII. Totenkopf: Stoff, der Metalle und Haut angreift\nIII. Gasflasche: unter Druck gelagertes Gas",
         "fr": "Lesquelles des associations suivantes concernant les pictogrammes de sécurité sont correctes ?\nI. Flamme : substance facilement inflammable\nII. Tête de mort : substance qui corrode les métaux et la peau\nIII. Bouteille de gaz : gaz stocké sous pression",
-        "ru": "Какие из следующих соответствий пиктограмм опасности на упаковке химикатов верны?\nI. Пламя: легко воспламеняющееся вещество\nII. Череп с костями: вещество, разъедающее металлы и кожу\nIII. Газовый баллон: газ, хранящийся под давлением",
+        "ru": "Какие из приведённых соответствий пиктограмм опасности на упаковках химических веществ верны?\nI. Пламя: легковоспламеняющееся вещество\nII. Череп со скрещёнными костями: вещество, разъедающее металлы и кожу\nIII. Газовый баллон: газ, хранящийся под давлением",
         "ar": "أيّ المزاوجات الآتية لرسوم السلامة على عبوات المواد الكيميائية صحيحة؟\nI. رسم اللهب: مادة سهلة الاشتعال\nII. رسم الجمجمة: مادة تآكل الفلزات والجلد\nIII. رسم أسطوانة الغاز: غاز مخزَّن تحت ضغط",
         "zh": "下列关于化学品包装上安全象形图的对应中，哪些是正确的？\nI. 火焰：易燃物质\nII. 骷髅头：腐蚀金属和皮肤的物质\nIII. 气瓶：加压储存的气体",
         "ku": "Kîjan ji van hevberdanên pîktogramên ewlehiyê yên li ser pakêtên kîmyewî rast in?\nI. Pîktograma agir: madeya ku zû dişewite\nII. Pîktograma serê kuştî: madeya ku metal û çerm dixwe (aşindar)\nIII. Pîktograma silindira gazê: gaza di bin zextê de hatî hilanîn"
@@ -1667,7 +1667,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "I is true: the flame pictogram marks flammable substances. III is true: the gas cylinder marks gases under pressure. II is false: the skull and crossbones means acute toxicity; substances that corrode metal and skin carry the corrosive pictogram showing liquid dripping onto a hand and a metal. Answer: I and III.",
         "de": "I ist richtig: Die Flamme kennzeichnet entzündbare Stoffe. III ist richtig: Die Gasflasche steht für Gase unter Druck. II ist falsch: Der Totenkopf bedeutet akute Toxizität; ätzende Stoffe tragen das Piktogramm mit Flüssigkeit, die auf eine Hand und ein Metall tropft. Antwort: I und III.",
         "fr": "I est vraie : la flamme signale les substances inflammables. III est vraie : la bouteille de gaz signale les gaz sous pression. II est fausse : la tête de mort indique une toxicité aiguë ; les substances corrosives portent le pictogramme d'un liquide coulant sur une main et un métal. Réponse : I et III.",
-        "ru": "I верно: пламя обозначает легковоспламеняющиеся вещества. III верно: баллон обозначает газы под давлением. II неверно: череп с костями означает острую токсичность; разъедающие вещества обозначают пиктограммой с жидкостью, капающей на руку и металл. Ответ: I и III.",
+        "ru": "I верно: пламя обозначает легковоспламеняющиеся вещества. III верно: газовый баллон обозначает газы под давлением. II неверно: череп со скрещёнными костями означает острую токсичность; едкие (коррозионные) вещества, разъедающие металл и кожу, обозначают пиктограммой, на которой жидкость капает на руку и на металл. Ответ: I и III.",
         "ar": "العبارة I صحيحة: رسم اللهب يدل على المواد القابلة للاشتعال. العبارة III صحيحة: أسطوانة الغاز تدل على الغازات المضغوطة. العبارة II خاطئة: الجمجمة تدل على السمّية الحادة، أما المواد الأكّالة فرمزها سائل يقطر على يد وقطعة فلز. الإجابة: I وIII.",
         "zh": "I 正确：火焰表示易燃物质。III 正确：气瓶表示加压气体。II 错误：骷髅头表示急性毒性；腐蚀金属和皮肤的物质用“液体滴到手和金属上”的腐蚀性象形图表示。答案：I 和 III。",
         "ku": "I rast e: pîktograma agir madeyên şewatbar nîşan dide. III rast e: silindira gazê gazên di bin zextê de nîşan dide. II şaş e: serê kuştî jehrîbûna tûj nîşan dide; madeyên ku metal û çerm dixwin bi pîktograma aşindar a ku şile li ser dest û metalekê dilop dibe tên nîşandan. Bersiv: I û III."
@@ -1680,7 +1680,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "The packaging of a chemical carries a pictogram showing a flame rising above a circle. Which statement about this substance is correct?",
         "de": "Auf der Verpackung einer Chemikalie ist ein Piktogramm mit einer Flamme über einem Kreis abgebildet. Welche Aussage über diesen Stoff ist richtig?",
         "fr": "L'emballage d'un produit chimique porte un pictogramme représentant une flamme au-dessus d'un cercle. Quelle affirmation sur cette substance est correcte ?",
-        "ru": "На упаковке химиката изображена пиктограмма: пламя над кругом. Какое утверждение об этом веществе верно?",
+        "ru": "На упаковке химического вещества изображена пиктограмма «пламя над кругом». Какое утверждение об этом веществе верно?",
         "ar": "تحمل عبوة مادة كيميائية رسماً للهب يعلو دائرة. أيّ العبارات الآتية عن هذه المادة صحيحة؟",
         "zh": "某化学品包装上印有“圆圈上方有火焰”的象形图。关于该物质，下列说法正确的是哪一项？",
         "ku": "Li ser pakêta madeyeke kîmyewî pîktogramek heye ku agirekî li ser xelekekê nîşan dide. Kîjan gotin derbarê vê madeyê de rast e?"
@@ -1756,7 +1756,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Which of the following study – branch of chemistry pairs is incorrect?",
         "de": "Welche der folgenden Zuordnungen Untersuchung – Teilgebiet der Chemie ist falsch?",
         "fr": "Laquelle des associations travail – branche de la chimie suivantes est incorrecte ?",
-        "ru": "Какое из следующих соответствий «исследование – раздел химии» неверно?",
+        "ru": "Какое из соответствий «вид работы — раздел химии» неверно?",
         "ar": "أيّ المزاوجات الآتية بين الدراسة وفرع الكيمياء خاطئة؟",
         "zh": "下列“研究内容 – 化学分支”的对应中，哪一项是错误的？",
         "ku": "Kîjan ji van hevberdanên xebat – şaxa kîmyayê şaş e?"
@@ -1767,7 +1767,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Large-scale production of fertilisers and sulfuric acid – Industrial chemistry",
           "de": "Großtechnische Herstellung von Düngemitteln und Schwefelsäure – Industrielle Chemie",
           "fr": "Production à grande échelle d'engrais et d'acide sulfurique – Chimie industrielle",
-          "ru": "Крупномасштабное производство удобрений и серной кислоты – Промышленная химия",
+          "ru": "Крупномасштабное производство удобрений и серной кислоты — промышленная химия",
           "ar": "إنتاج الأسمدة وحمض الكبريتيك على نطاق واسع – الكيمياء الصناعية",
           "zh": "大规模生产化肥和硫酸 – 工业化学",
           "ku": "Hilberîna mezin a zibil û asîda sulfurîk – Kîmyaya pîşesazî"
@@ -1777,7 +1777,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Synthesising the carbon skeleton of a new drug molecule – Organic chemistry",
           "de": "Synthese des Kohlenstoffgerüsts eines neuen Arzneimittelmoleküls – Organische Chemie",
           "fr": "Synthèse du squelette carboné d'une nouvelle molécule de médicament – Chimie organique",
-          "ru": "Синтез углеродного скелета новой молекулы лекарства – Органическая химия",
+          "ru": "Синтез углеродного скелета новой молекулы лекарства — органическая химия",
           "ar": "تحضير الهيكل الكربوني لجزيء دواء جديد – الكيمياء العضوية",
           "zh": "合成一种新药分子的碳骨架 – 有机化学",
           "ku": "Senteza skeleta karbonê ya molekuleke dermanê nû – Kîmyaya organîk"
@@ -1787,7 +1787,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Measuring the heat released and the rate of a reaction – Biochemistry",
           "de": "Messung der freigesetzten Wärme und der Geschwindigkeit einer Reaktion – Biochemie",
           "fr": "Mesure de la chaleur dégagée et de la vitesse d'une réaction – Biochimie",
-          "ru": "Измерение выделяющейся теплоты и скорости реакции – Биохимия",
+          "ru": "Измерение выделяющейся теплоты и скорости реакции — биохимия",
           "ar": "قياس الحرارة المنطلقة وسرعة تفاعل ما – الكيمياء الحيوية",
           "zh": "测定反应放出的热量和反应速率 – 生物化学",
           "ku": "Pîvana germahiya ku di reaksiyonekê de derdikeve û leza reaksiyonê – Biyokîmya"
@@ -1797,7 +1797,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Studying how enzymes work inside the cell – Biochemistry",
           "de": "Untersuchung der Wirkungsweise von Enzymen in der Zelle – Biochemie",
           "fr": "Étude du fonctionnement des enzymes dans la cellule – Biochimie",
-          "ru": "Изучение работы ферментов в клетке – Биохимия",
+          "ru": "Изучение работы ферментов в клетке — биохимия",
           "ar": "دراسة عمل الإنزيمات داخل الخلية – الكيمياء الحيوية",
           "zh": "研究酶在细胞内的作用方式 – 生物化学",
           "ku": "Lêkolîna xebata enzîman di hundirê şaneyê de – Biyokîmya"
@@ -1807,7 +1807,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Studying the structure of metal salts and minerals – Inorganic chemistry",
           "de": "Untersuchung der Struktur von Metallsalzen und Mineralen – Anorganische Chemie",
           "fr": "Étude de la structure des sels métalliques et des minéraux – Chimie inorganique",
-          "ru": "Изучение строения солей металлов и минералов – Неорганическая химия",
+          "ru": "Изучение строения солей металлов и минералов — неорганическая химия",
           "ar": "دراسة بنية أملاح الفلزات والمعادن – الكيمياء غير العضوية",
           "zh": "研究金属盐和矿物的结构 – 无机化学",
           "ku": "Lêkolîna avahiya xwêyên metalan û mîneralan – Kîmyaya anorganîk"
@@ -1819,7 +1819,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Measurements of energy and rate, such as heat of reaction and reaction rate, belong to physical chemistry, not biochemistry. Fertiliser and acid production (industrial), carbon-skeleton drug synthesis (organic), enzyme function (biochemistry) and metal salts and minerals (inorganic) are matched correctly.",
         "de": "Energie- und Geschwindigkeitsmessungen wie Reaktionswärme und Reaktionsgeschwindigkeit gehören zur physikalischen Chemie, nicht zur Biochemie. Dünger- und Säureproduktion (industriell), Synthese von Kohlenstoffgerüsten (organisch), Enzymwirkung (Biochemie) und Metallsalze/Minerale (anorganisch) sind richtig zugeordnet.",
         "fr": "Les mesures d'énergie et de vitesse, comme la chaleur et la vitesse de réaction, relèvent de la chimie physique, pas de la biochimie. Production d'engrais et d'acide (industrielle), synthèse de squelettes carbonés (organique), fonctionnement des enzymes (biochimie) et sels métalliques/minéraux (inorganique) sont correctement associés.",
-        "ru": "Измерения энергии и скорости — теплоты и скорости реакции — относятся к физической химии, а не к биохимии. Производство удобрений и кислот (промышленная), синтез углеродного скелета лекарства (органическая), работа ферментов (биохимия), соли металлов и минералы (неорганическая) сопоставлены верно.",
+        "ru": "Измерения энергии и скорости, например теплоты и скорости реакции, относятся к физической химии, а не к биохимии. Остальные пары составлены верно: производство удобрений и кислот — промышленная химия, синтез углеродного скелета лекарства — органическая химия, работа ферментов — биохимия, соли металлов и минералы — неорганическая химия.",
         "ar": "قياسات الطاقة والسرعة كحرارة التفاعل وسرعته من اختصاص الكيمياء الفيزيائية لا الكيمياء الحيوية. أما إنتاج الأسمدة والأحماض (صناعية)، وتحضير الهيكل الكربوني للدواء (عضوية)، وعمل الإنزيمات (حيوية)، وأملاح الفلزات والمعادن (غير عضوية) فمزاوجات صحيحة.",
         "zh": "反应热和反应速率等能量与速率的测定属于物理化学，而不是生物化学。化肥与酸的生产（工业化学）、药物碳骨架的合成（有机化学）、酶的作用（生物化学）、金属盐和矿物（无机化学）的对应都是正确的。",
         "ku": "Pîvanên enerjî û lezê yên wekî germahiya reaksiyonê û leza reaksiyonê mijara fîzîkokîmyayê ne, ne ya biyokîmyayê. Hilberîna zibil û asîdê (pîşesazî), senteza skeleta karbonê ya dermanan (organîk), xebata enzîman (biyokîmya) û xwêyên metalan û mîneral (anorganîk) rast hatine hevberdan."
@@ -1843,7 +1843,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Metallurgical and materials engineering",
           "de": "Metallurgie- und Werkstofftechnik",
           "fr": "Ingénierie métallurgique et des matériaux",
-          "ru": "Металлургия и материаловедение (инженер)",
+          "ru": "Инженер-металлург (материаловед)",
           "ar": "هندسة الفلزات والمواد",
           "zh": "冶金与材料工程",
           "ku": "Endezyariya metalurjî û materyalan"
@@ -1853,7 +1853,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Pharmacy",
           "de": "Pharmazie",
           "fr": "Pharmacie",
-          "ru": "Фармация",
+          "ru": "Фармацевт",
           "ar": "الصيدلة",
           "zh": "药学",
           "ku": "Dermansazî"
@@ -1863,7 +1863,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Food engineering",
           "de": "Lebensmitteltechnik",
           "fr": "Génie alimentaire",
-          "ru": "Пищевая инженерия",
+          "ru": "Инженер-технолог пищевых производств",
           "ar": "هندسة الأغذية",
           "zh": "食品工程",
           "ku": "Endezyariya xwarinê"
@@ -1873,7 +1873,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Agricultural engineering",
           "de": "Agrartechnik",
           "fr": "Ingénierie agronomique",
-          "ru": "Агроинженерия",
+          "ru": "Агроном",
           "ar": "الهندسة الزراعية",
           "zh": "农业工程",
           "ku": "Endezyariya çandiniyê"
@@ -1883,7 +1883,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Chemistry teaching",
           "de": "Chemielehramt",
           "fr": "Enseignement de la chimie",
-          "ru": "Преподавание химии",
+          "ru": "Учитель химии",
           "ar": "تدريس الكيمياء",
           "zh": "化学教师",
           "ku": "Mamostetiya kîmyayê"
@@ -1895,7 +1895,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Producing metals from ores, refining them and designing alloys is the field of metallurgical and materials engineering. Pharmacy deals with medicines, food engineering with producing and preserving food, agricultural engineering with farming and fertilising; chemistry teaching is in education.",
         "de": "Metallgewinnung aus Erzen, Raffination und Legierungsentwicklung sind das Gebiet der Metallurgie- und Werkstofftechnik. Pharmazie befasst sich mit Arzneimitteln, Lebensmitteltechnik mit Herstellung und Haltbarmachung von Lebensmitteln, Agrartechnik mit Landwirtschaft und Düngung; das Chemielehramt gehört zur Bildung.",
         "fr": "L'obtention des métaux à partir des minerais, leur affinage et la conception d'alliages relèvent de l'ingénierie métallurgique et des matériaux. La pharmacie traite des médicaments, le génie alimentaire de la production et de la conservation des aliments, l'agronomie de l'agriculture et de la fertilisation ; l'enseignement de la chimie relève de l'éducation.",
-        "ru": "Получение металлов из руд, их очистка и разработка сплавов — область металлургии и материаловедения. Фармация занимается лекарствами, пищевая инженерия — производством и сохранением продуктов, агроинженерия — сельским хозяйством и удобрениями; преподавание химии относится к образованию.",
+        "ru": "Получение металлов из руд, их очистка и разработка сплавов — область металлургии и материаловедения. Фармацевт работает с лекарствами, технолог пищевых производств — с производством и хранением продуктов питания, агроном — с сельским хозяйством и удобрениями; учитель химии работает в сфере образования.",
         "ar": "إنتاج الفلزات من خاماتها وتنقيتها وتصميم السبائك من اختصاص هندسة الفلزات والمواد. أما الصيدلة فتهتم بالأدوية، وهندسة الأغذية بإنتاج الغذاء وحفظه، والهندسة الزراعية بالزراعة والتسميد، وتدريس الكيمياء مجال تعليمي.",
         "zh": "从矿石中生产金属、精炼金属和设计合金属于冶金与材料工程的领域。药学研究药物，食品工程研究食品的生产与保存，农业工程研究农业与施肥；化学教师属于教育领域。",
         "ku": "Hilberîna metalan ji madenan, paqijkirin û sêwirandina alyajan qada endezyariya metalurjî û materyalan e. Dermansazî bi dermanan, endezyariya xwarinê bi hilberîn û parastina xwarinê, endezyariya çandiniyê bi çandinî û zibilkirinê re eleqedar dibe; mamostetiya kîmyayê di qada perwerdehiyê de ye."
@@ -1908,7 +1908,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "During a laboratory experiment, a dilute chemical splashes into a student's eye. What should be done first?",
         "de": "Bei einem Laborversuch spritzt einem Schüler eine verdünnte Chemikalie ins Auge. Was ist als Erstes zu tun?",
         "fr": "Pendant une expérience, un produit chimique dilué éclabousse l'œil d'un élève. Que faut-il faire en premier ?",
-        "ru": "Во время лабораторного опыта ученику в глаз попал разбавленный химикат. Что нужно сделать в первую очередь?",
+        "ru": "Во время лабораторного опыта ученику в глаз попало разбавленное химическое вещество. Что нужно сделать в первую очередь?",
         "ar": "أثناء تجربة مخبرية تطايرت مادة كيميائية مخففة إلى عين أحد الطلاب. ما الذي يجب فعله أولاً؟",
         "zh": "做实验时，一种稀的化学试剂溅入一名学生的眼睛。首先应当怎么做？",
         "ku": "Di dema ceribandineke laboratuwarê de madeyeke kîmyewî ya sivik pijiqî çavê xwendekarekî. Divê pêşî çi were kirin?"
@@ -1949,7 +1949,7 @@ export const unit01: ChemistryUnitSeedData = {
           "en": "Rinse the eye with plenty of water at the eyewash station for at least 15 minutes",
           "de": "Das Auge an der Augendusche mindestens 15 Minuten mit viel Wasser spülen",
           "fr": "Rincer l'œil abondamment à la douche oculaire pendant au moins 15 minutes",
-          "ru": "Промывать глаз большим количеством воды у фонтанчика не менее 15 минут",
+          "ru": "Промывать глаз большим количеством воды у фонтанчика для глаз не менее 15 минут",
           "ar": "غسل العين بكمية وفيرة من الماء في مغسلة العين مدة 15 دقيقة على الأقل",
           "zh": "在洗眼器下用大量清水冲洗眼睛至少 15 分钟",
           "ku": "Çavê li duşa çavan bi gelek avê herî kêm 15 deqeyan bişo"
@@ -1971,7 +1971,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "A chemical in the eye must be diluted and washed away as quickly as possible with plenty of water, so the eye is rinsed at the eyewash for at least 15 minutes; then the teacher is told and medical help sought. Rubbing spreads the chemical and scratches the eye; dropping another chemical in can cause further damage through the heat of neutralisation; waiting or covering leaves the chemical in the eye.",
         "de": "Eine Chemikalie im Auge muss so schnell wie möglich mit viel Wasser verdünnt und ausgespült werden, daher spült man mindestens 15 Minuten an der Augendusche, informiert dann die Lehrkraft und holt ärztliche Hilfe. Reiben verteilt die Chemikalie und verletzt das Auge; eine weitere Chemikalie kann durch Neutralisationswärme zusätzlich schaden; Warten oder Abdecken lässt die Chemikalie im Auge.",
         "fr": "Un produit dans l'œil doit être dilué et éliminé le plus vite possible avec beaucoup d'eau : on rince à la douche oculaire au moins 15 minutes, puis on prévient l'enseignant et on consulte. Se frotter étale le produit et raye l'œil ; y verser un autre produit peut aggraver les lésions par la chaleur de neutralisation ; attendre ou couvrir laisse le produit dans l'œil.",
-        "ru": "Химикат в глазу нужно как можно быстрее разбавить и смыть большим количеством воды, поэтому глаз промывают у фонтанчика не менее 15 минут, затем сообщают учителю и обращаются к врачу. Трение распределяет химикат и травмирует глаз; другой химикат может вызвать дополнительный вред из-за теплоты нейтрализации; ожидание или повязка оставляют вещество в глазу.",
+        "ru": "Химическое вещество, попавшее в глаз, нужно как можно быстрее разбавить и смыть большим количеством воды, поэтому глаз промывают у фонтанчика не менее 15 минут, затем сообщают учителю и обращаются к врачу. Если тереть глаз, вещество распределяется и травмирует его; другое вещество, закапанное для нейтрализации, может нанести дополнительный вред из-за теплоты нейтрализации; если ждать или закрыть глаз повязкой, вещество останется в глазу.",
         "ar": "يجب تخفيف المادة الكيميائية في العين وإزالتها بأسرع ما يمكن بكمية وفيرة من الماء، لذا تُغسل العين في مغسلة العين 15 دقيقة على الأقل ثم يُبلَّغ المعلم ويُطلب العلاج. الفرك ينشر المادة ويخدش العين، وتقطير مادة أخرى قد يسبب ضرراً إضافياً بحرارة التعادل، والانتظار أو التغطية يُبقيان المادة في العين.",
         "zh": "眼睛里的化学品必须尽快用大量清水稀释并冲走，所以要在洗眼器下冲洗至少 15 分钟，然后报告老师并就医。揉眼会使试剂扩散并划伤眼睛；滴入别的试剂可能因中和放热造成更大伤害；等待或遮盖会使试剂留在眼中。",
         "ku": "Madeya kîmyewî ya di çav de divê bi lez û bi gelek avê were sivikkirin û rakirin; loma çav li duşa çavan herî kêm 15 deqeyan tê şûştin, paşê mamoste tê agahdarkirin û serî li dixtor tê dayîn. Malandin madeyê belav dike û çav diqelişîne; dilopkirina madeyeke din dikare bi germahiya bêbandorbûnê zirara zêde bike; li bendê man an girtin dihêle ku made di çav de bimîne."
@@ -1984,7 +1984,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Which of the following laboratory practices are wrong?\nI. When heating a liquid in a test tube, its mouth is pointed away from everyone.\nII. Leftover chemical from an experiment is poured back into the stock bottle to avoid waste.\nIII. Experiments that release toxic or choking gases are done in a fume hood.",
         "de": "Welche der folgenden Laborpraktiken sind falsch?\nI. Beim Erhitzen einer Flüssigkeit im Reagenzglas zeigt die Öffnung von allen Personen weg.\nII. Übrig gebliebene Chemikalie wird, um nichts zu verschwenden, in die Vorratsflasche zurückgegossen.\nIII. Versuche, bei denen giftige oder erstickende Gase entstehen, werden im Abzug durchgeführt.",
         "fr": "Lesquelles des pratiques de laboratoire suivantes sont incorrectes ?\nI. En chauffant un liquide dans un tube à essai, on oriente l'ouverture loin de toute personne.\nII. Le reste de produit d'une expérience est reversé dans le flacon de stock pour éviter le gaspillage.\nIII. Les expériences dégageant des gaz toxiques ou suffocants se font sous une hotte.",
-        "ru": "Какие из следующих лабораторных действий неправильны?\nI. При нагревании жидкости в пробирке её отверстие направляют в сторону, где нет людей.\nII. Оставшийся после опыта реактив сливают обратно в склянку с запасом, чтобы не расходовать зря.\nIII. Опыты с выделением ядовитых или удушающих газов проводят в вытяжном шкафу.",
+        "ru": "Какие из приведённых действий нарушают правила лабораторной безопасности?\nI. При нагревании жидкости в пробирке её отверстие направляют в сторону, где нет людей.\nII. Оставшийся после опыта реактив сливают обратно в склянку с запасом, чтобы не расходовать его зря.\nIII. Опыты, при которых выделяются ядовитые или удушающие газы, проводят в вытяжном шкафу.",
         "ar": "أيّ الممارسات المخبرية الآتية خاطئة؟\nI. عند تسخين سائل في أنبوب اختبار تُوجَّه فوهته بعيداً عن الأشخاص.\nII. تُعاد المادة الكيميائية الزائدة إلى زجاجة المخزون تجنباً للهدر.\nIII. تُجرى التجارب التي تُطلق غازات سامة أو خانقة داخل خزانة الغازات (ساحبة الأبخرة).",
         "zh": "下列实验室做法中，哪些是错误的？\nI. 在试管中加热液体时，管口朝向无人的方向。\nII. 实验剩余的试剂为避免浪费倒回原试剂瓶。\nIII. 产生有毒或窒息性气体的实验在通风橱中进行。",
         "ku": "Kîjan ji van kiryarên laboratuwarê şaş in?\nI. Dema şile di lûleya ceribandinê de tê germkirin, devê lûleyê ber bi aliyê ku kes lê tune tê zivirandin.\nII. Madeya kîmyewî ya ku ji ceribandinê dimîne, ji bo ku winda nebe, dîsa tê rijandin şûşeya stokê.\nIII. Ceribandinên ku gazên jehrî an xeniqîner derdixin di dolaba kişandinê de tên kirin."
@@ -2047,7 +2047,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "I is a correct practice: a heated liquid may suddenly boil and spurt, so the tube is never pointed at anyone. III is correct: harmful gases are removed in a fume hood. II is wrong: leftover chemical may be contaminated and would spoil the whole stock; it goes into the waste container. Only II is wrong.",
         "de": "I ist richtig: Erhitzte Flüssigkeit kann plötzlich aufsieden und herausspritzen, daher zeigt das Glas auf niemanden. III ist richtig: Schädliche Gase werden im Abzug abgeführt. II ist falsch: Reste können verunreinigt sein und den ganzen Vorrat verderben; sie gehören in den Abfallbehälter. Falsch ist nur II.",
         "fr": "I est correcte : un liquide chauffé peut bouillir brusquement et jaillir, on ne dirige donc jamais le tube vers quelqu'un. III est correcte : les gaz nocifs sont évacués par la hotte. II est incorrecte : un reste peut être contaminé et gâcherait tout le stock ; il va dans le bidon de déchets. Seule II est incorrecte.",
-        "ru": "I — правильное действие: нагретая жидкость может внезапно вскипеть и выплеснуться, поэтому пробирку ни на кого не направляют. III — правильное: вредные газы удаляются через вытяжной шкаф. II — неправильное: остаток может быть загрязнён и испортит весь запас; его сливают в ёмкость для отходов. Неправильно только II.",
+        "ru": "I — правильное действие: нагретая жидкость может внезапно вскипеть и выплеснуться, поэтому отверстие пробирки ни на кого не направляют. III — правильное действие: вредные газы удаляются через вытяжной шкаф. II — нарушение: использованный или оставшийся реактив может быть загрязнён и испортит весь запас; его сливают в ёмкость для отходов. Неправильно только II.",
         "ar": "الممارسة I صحيحة: قد يغلي السائل المسخَّن فجأة ويندفع، فلا تُوجَّه الفوهة نحو أحد. الممارسة III صحيحة: تُطرد الغازات الضارة عبر خزانة الغازات. الممارسة II خاطئة: قد تكون المادة الزائدة ملوثة فتُفسد المخزون كله، لذا توضع في وعاء النفايات. الخاطئة هي II فقط.",
         "zh": "I 是正确做法：受热液体可能突然沸腾喷出，所以管口不能对着人。III 是正确做法：有害气体通过通风橱排出。II 是错误做法：剩余试剂可能已被污染，倒回会污染整瓶试剂，应倒入废液容器。错误的只有 II。",
         "ku": "I kiryareke rast e: şileya germ dikare ji nişka ve bikele û biperike, loma devê lûleyê ber bi kesî nayê girtin. III rast e: gazên zirardar bi dolaba kişandinê tên derxistin. II şaş e: madeya mayî dibe ku qirêj bûbe û hemû stokê xera bike; divê bikeve firaxa bermahiyan. Tenê II şaş e."
@@ -2062,7 +2062,7 @@ export const unit01: ChemistryUnitSeedData = {
         "fr": "Laquelle des formules suivantes représente une molécule d'un élément ?",
         "ru": "Какая из следующих формул обозначает молекулу простого вещества (элемента)?",
         "ar": "أيّ الصيغ الآتية تمثل جزيء عنصر؟",
-        "zh": "下列化学式中，哪一个表示单质（元素）分子？",
+        "zh": "下列化学式中，表示单质分子的是哪一个？",
         "ku": "Kîjan ji van formulan molekuleke elementekê nîşan dide?"
       },
       "options": [
@@ -2123,9 +2123,9 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "An element molecule consists of only one kind of atom. O3 (ozone) is made of three oxygen atoms, so it is an element molecule. H2O, CO, CH4 and NH3 contain atoms of at least two different elements and are compound molecules. Having many atoms does not make a compound; what matters is the number of kinds of atom.",
         "de": "Ein Elementmolekül besteht nur aus einer Atomsorte. O3 (Ozon) besteht aus drei Sauerstoffatomen und ist daher ein Elementmolekül. H2O, CO, CH4 und NH3 enthalten Atome mindestens zweier Elemente und sind Verbindungsmoleküle. Viele Atome bedeuten keine Verbindung; entscheidend ist die Zahl der Atomsorten.",
         "fr": "Une molécule d'élément ne contient qu'une seule sorte d'atome. O3 (ozone) est formé de trois atomes d'oxygène : c'est une molécule d'élément. H2O, CO, CH4 et NH3 contiennent des atomes d'au moins deux éléments différents : ce sont des molécules de composés. Un grand nombre d'atomes ne fait pas un composé ; c'est le nombre de sortes d'atomes qui compte.",
-        "ru": "Молекула простого вещества состоит из атомов одного вида. O3 (озон) состоит из трёх атомов кислорода, поэтому это молекула простого вещества. H2O, CO, CH4 и NH3 содержат атомы как минимум двух элементов и являются молекулами сложных веществ. Большое число атомов не делает вещество сложным — важно число видов атомов.",
+        "ru": "Молекула простого вещества состоит из атомов одного вида. O3 (озон) состоит из трёх атомов кислорода, поэтому это молекула простого вещества. H2O, CO, CH4 и NH3 содержат атомы как минимум двух разных элементов, это молекулы сложных веществ. Большое число атомов в формуле не делает вещество сложным — важно число видов атомов.",
         "ar": "يتكوّن جزيء العنصر من نوع واحد فقط من الذرات. O3 (الأوزون) يتكون من ثلاث ذرات أكسجين، فهو جزيء عنصر. أما H2O وCO وCH4 وNH3 فتحتوي على ذرات عنصرين مختلفين على الأقل، فهي جزيئات مركبات. كثرة الذرات لا تعني مركباً؛ المهم عدد أنواع الذرات.",
-        "zh": "单质分子只由一种原子构成。O3（臭氧）由三个氧原子构成，是单质分子。H2O、CO、CH4、NH3 至少含有两种不同元素的原子，是化合物分子。原子个数多并不意味着是化合物，关键看原子的种类数。",
+        "zh": "单质分子只由一种原子构成。O3(臭氧)由三个氧原子构成，是单质分子。H2O、CO、CH4、NH3 至少含有两种不同元素的原子，是化合物分子。原子个数多并不意味着是化合物，关键看原子的种类数。",
         "ku": "Molekula elementekê tenê ji yek cure atomê pêk tê. O3 (ozon) ji sê atomên oksîjenê pêk tê, loma molekula elementekê ye. H2O, CO, CH4 û NH3 atomên herî kêm du elementên cuda dihewînin û molekulên pêkhateyan in. Zêdebûna hejmara atoman pêkhatebûnê nîşan nade; ya girîng hejmara cureyên atoman e."
       }
     },
@@ -2199,7 +2199,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "Aristotle (building on Empedocles) held that matter is made of earth, water, air and fire; alchemists thought that by changing these proportions one metal could be turned into another. Real elements like hydrogen and oxygen, and particles like protons and electrons, were defined much later. The sulfur–mercury–salt trio is a later alchemical idea, not Aristotle's.",
         "de": "Aristoteles (nach Empedokles) lehrte, dass Stoffe aus Erde, Wasser, Luft und Feuer bestehen; Alchemisten glaubten, durch Ändern dieser Anteile ein Metall in ein anderes verwandeln zu können. Echte Elemente wie Wasserstoff und Sauerstoff sowie Teilchen wie Protonen und Elektronen wurden viel später definiert. Die Trias Schwefel–Quecksilber–Salz ist eine spätere alchemistische Idee, nicht die des Aristoteles.",
         "fr": "Aristote (reprenant Empédocle) affirmait que la matière est formée de terre, d'eau, d'air et de feu ; les alchimistes pensaient pouvoir changer un métal en un autre en modifiant ces proportions. Les vrais éléments comme l'hydrogène et l'oxygène, et les particules comme le proton ou l'électron, ont été définis bien plus tard. La triade soufre–mercure–sel est une idée alchimique postérieure, pas celle d'Aristote.",
-        "ru": "Аристотель (вслед за Эмпедоклом) считал, что вещества состоят из земли, воды, воздуха и огня; алхимики полагали, что, меняя эти пропорции, можно превратить один металл в другой. Настоящие элементы, такие как водород и кислород, и частицы — протоны, электроны — были определены гораздо позже. Триада «сера–ртуть–соль» — более поздняя алхимическая идея, а не Аристотеля.",
+        "ru": "Аристотель (вслед за Эмпедоклом) считал, что вещества состоят из земли, воды, воздуха и огня; алхимики полагали, что, меняя соотношение этих стихий, можно превратить один металл в другой. Настоящие элементы, такие как водород и кислород, и частицы — протоны, электроны — были открыты гораздо позже. Триада «сера — ртуть — соль» — более поздняя идея алхимиков, а не Аристотеля.",
         "ar": "رأى أرسطو (متأثراً بإمبيدوكليس) أن المواد تتكون من التراب والماء والهواء والنار، واعتقد الخيميائيون أنهم بتغيير هذه النسب يستطيعون تحويل فلز إلى آخر. أما العناصر الحقيقية كالهيدروجين والأكسجين والجسيمات كالبروتون والإلكترون فعُرّفت بعد ذلك بكثير. وثلاثية الكبريت والزئبق والملح فكرة خيميائية لاحقة وليست لأرسطو.",
         "zh": "亚里士多德（继承恩培多克勒的观点）认为物质由土、水、气、火构成；炼金术士认为改变这些比例就能把一种金属变成另一种。氢、氧等真正的元素以及质子、电子等粒子是很久以后才被定义的。“硫–汞–盐”三要素是后来炼金术士的观点，不属于亚里士多德。",
         "ku": "Arîstoteles (li ser bingeha Empedokles) digot ku made ji ax, av, hewa û agir pêk tên; simyageran difikirîn ku bi guhertina van rêjeyan dikarin metalekê veguherînin metaleke din. Elementên rastîn ên wekî hîdrojen û oksîjen û perçikên wekî proton û elektron gelek paşê hatin pênasekirin. Sêyîtiya kukurt–cîwe–xwê ramaneke paşîn a simyageran e, ne ya Arîstoteles e."
@@ -2275,7 +2275,7 @@ export const unit01: ChemistryUnitSeedData = {
         "en": "A pipette is used to take and deliver a precise volume; a volumetric pipette is calibrated for a single volume such as 25.00 mL. The marks on beakers and Erlenmeyer flasks give only approximate volumes. A funnel is for pouring or filtering and a watch glass for weighing solids or as a cover; neither measures volume.",
         "de": "Zum genauen Abmessen und Überführen eines Volumens dient eine Pipette; eine Vollpipette ist auf ein einziges Volumen wie 25,00 mL geeicht. Die Markierungen an Becherglas und Erlenmeyerkolben sind nur ungefähr. Ein Trichter dient zum Umfüllen oder Filtrieren, ein Uhrglas zum Wägen von Feststoffen oder als Abdeckung; beide messen kein Volumen.",
         "fr": "On utilise une pipette pour prélever et délivrer un volume précis ; la pipette jaugée est étalonnée pour un seul volume, par exemple 25,00 mL. Les graduations du bécher et de l'erlenmeyer ne sont qu'approximatives. L'entonnoir sert à transvaser ou filtrer, le verre de montre à peser des solides ou à couvrir ; aucun ne mesure un volume.",
-        "ru": "Для точного отбора и переноса объёма используют пипетку; мерная пипетка откалибрована на один объём, например 25,00 мл. Деления на стакане и колбе Эрленмейера лишь приблизительны. Воронка нужна для переливания или фильтрования, часовое стекло — для взвешивания твёрдых веществ или как крышка; объём они не измеряют.",
+        "ru": "Для точного отбора и переноса определённого объёма используют пипетку; пипетка Мора откалибрована на один объём, например 25,00 мл. Деления на химическом стакане и колбе Эрленмейера показывают объём лишь приблизительно. Воронка нужна для переливания или фильтрования, часовое стекло — для взвешивания твёрдых веществ или как крышка; объём они не измеряют.",
         "ar": "تُستخدم الماصة لأخذ حجم دقيق ونقله، والماصة الحجمية معايَرة على حجم واحد مثل 25,00 mL. أما علامات الكأس ودورق إرلنماير فتقريبية. والقمع للنقل أو الترشيح، وزجاجة الساعة لوزن المواد الصلبة أو كغطاء، ولا يقيس أيّ منهما الحجم.",
         "zh": "准确量取并转移一定体积的液体要用移液管；胖肚移液管只校准一个体积，如 25.00 mL。烧杯和锥形瓶上的刻度只是近似值。漏斗用于转移液体或过滤，表面皿用于称量固体或作盖子，它们都不能量体积。",
         "ku": "Ji bo girtin û veguhastina qebareyeke hesas pîpet tê bikaranîn; pîpeta balonî li ser yek qebareyê (wekî 25,00 mL) hatiye kalîbrekirin. Xetên li ser beher û erlenmayerê tenê qebareya nêzîkî nîşan didin. Hunî ji bo veguhastin an parzûnkirinê, cama saetê ji bo kêşana madeyên hişk an wekî qapax e; qebareyê napîvin."

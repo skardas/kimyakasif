@@ -242,39 +242,39 @@ const COACH_STRINGS: Record<LanguageCode, CoachI18nStrings> = {
   },
   ru: {
     prereqWarning: (pct) =>
-      `Ваш уровень освоения химии TYT составляет ${pct}%. Перед углубленным изучением раздела AYT рекомендуется достичь порога 60% в TYT.`,
+      `Твой уровень по химии TYT — ${pct} %. Прежде чем углубляться в AYT, лучше довести его до 60 %.`,
     missionDailyQuestions: (target) => ({
-      title: `Цель на день: ${target} вопросов`,
-      desc: `Решите сегодня как минимум ${target} вопросов по химии.`,
+      title: `Цель на день — вопросов: ${target}`,
+      desc: `Реши сегодня не меньше ${target} вопр. по химии.`,
     }),
     missionUnitPractice: (unitTitle, target) => ({
-      title: `${unitTitle}: решить ${target} вопр.`,
-      desc: `Закрепите типовые экзаменационные задания по данной теме.`,
+      title: `${unitTitle}: реши ${target} вопр.`,
+      desc: `Закрепи типовые экзаменационные задания по этой теме.`,
     }),
     missionFlashcards: (target) => ({
-      title: `Повторить ${target} флеш-карт`,
-      desc: `Используйте систему Лейтнера для запоминания химических формул.`,
+      title: `Повтори карточки: ${target}`,
+      desc: `Запоминай формулы и понятия по системе Лейтнера.`,
     }),
     missionMistakes: (target) => ({
-      title: `Разобрать ${target} ошибок из журнала`,
-      desc: `Повторно решите неверные задания для исключения ловушек.`,
+      title: `Разбери ошибки из тетради: ${target}`,
+      desc: `Реши заново задания, в которых ошибся, чтобы больше не попадаться в ловушки.`,
     }),
-    recMistakesTitle: (unitTitle) => `Разобрать ошибки в теме ${unitTitle}`,
+    recMistakesTitle: (unitTitle) => `Разбери ошибки по теме «${unitTitle}»`,
     recMistakesReason: (unitTitle, count) =>
-      `В теме ${unitTitle} зафиксировано ${count} ошибок. Изучите пошаговые решения.`,
-    recSlidesTitle: (unitTitle) => `Изучить слайды по теме ${unitTitle}`,
+      `Ошибок по теме «${unitTitle}»: ${count}. Изучи пошаговые решения.`,
+    recSlidesTitle: (unitTitle) => `Изучи слайды по теме «${unitTitle}»`,
     recSlidesReason: (unitTitle) =>
-      `Краткий иллюстрированный конспект из 9 слайдов по теме ${unitTitle} еще не пройден.`,
-    recPracticeTitle: (unitTitle) => `Решить тест по теме ${unitTitle}`,
+      `Краткий иллюстрированный конспект из 9 слайдов по теме «${unitTitle}» ещё не пройден.`,
+    recPracticeTitle: (unitTitle) => `Реши тест по теме «${unitTitle}»`,
     recPracticeReason: (unitTitle) =>
-      `Решите блок из 16 вопросов для отработки скорости и точности.`,
-    actionSolveMistakes: 'Решить ошибки',
+      `Реши набор из 16 вопросов, чтобы отработать скорость и точность.`,
+    actionSolveMistakes: 'К ошибкам',
     actionReviewSlides: 'Открыть слайды',
     actionStartQuiz: 'Начать тест',
-    actionStudyCards: 'Повторить карты',
+    actionStudyCards: 'К карточкам',
     actionTakeTrial: 'Пройти пробник',
     spacedRepSummary: (cards, mistakes) =>
-      `Интервальное повторение: сегодня к повторению запланировано ${cards} карт и ${mistakes} вопросов с ошибками.`,
+      `Интервальное повторение на сегодня: карточек — ${cards}, вопросов с ошибками — ${mistakes}.`,
   },
   ar: {
     prereqWarning: (pct) =>
@@ -314,39 +314,39 @@ const COACH_STRINGS: Record<LanguageCode, CoachI18nStrings> = {
   },
   zh: {
     prereqWarning: (pct) =>
-      `您的TYT化学掌握度目前为 ${pct}%。在土耳其YKS考制中，强烈建议在深入学习AYT考点前，将TYT基础提升至60%以上。`,
+      `您的 TYT 化学基础掌握度目前为 ${pct}%。为了 YKS 排名，建议先将 TYT 各单元提升到 60% 以上，再深入学习 AYT 内容。`,
     missionDailyQuestions: (target) => ({
-      title: `今日目标：完成 ${target} 道题目`,
-      desc: `今天在化学题库中完成至少 ${target} 题以保持学习进度。`,
+      title: `今日目标：${target} 道题`,
+      desc: `今天在题库中至少完成 ${target} 道化学题。`,
     }),
     missionUnitPractice: (unitTitle, target) => ({
       title: `${unitTitle}：练习 ${target} 题`,
-      desc: `完成 ${target} 道典型试题以强化对本单元知识点的掌握。`,
+      desc: `完成本单元 ${target} 道题，熟悉考试常见题型。`,
     }),
     missionFlashcards: (target) => ({
-      title: `复习 ${target} 张记忆闪卡`,
-      desc: `在莱特纳3D闪卡箱中进行主动回忆，强化化学式与反应条件。`,
+      title: `复习 ${target} 张闪卡`,
+      desc: `用主动回忆法复习莱特纳 3D 记忆盒中的化学概念。`,
     }),
     missionMistakes: (target) => ({
-      title: `清除错题本中 ${target} 道错题`,
-      desc: `重新剖析曾经做错的题目，避免在考场上重复踩坑。`,
+      title: `清理错题本中的 ${target} 道题`,
+      desc: `重新分析以前做错的题目，提高得分。`,
     }),
-    recMistakesTitle: (unitTitle) => `攻克 ${unitTitle} 的薄弱错题`,
+    recMistakesTitle: (unitTitle) => `清理“${unitTitle}”单元的错题`,
     recMistakesReason: (unitTitle, count) =>
-      `您在 ${unitTitle} 中累积了 ${count} 道错题，建议研读逐步推导解析以彻底搞懂概念。`,
-    recSlidesTitle: (unitTitle) => `研读 ${unitTitle} 知识点图解幻灯片`,
+      `“${unitTitle}”单元的错题本中已积累 ${count} 道题。分析其中的概念陷阱，真正掌握知识。`,
+    recSlidesTitle: (unitTitle) => `复习“${unitTitle}”知识点总结`,
     recSlidesReason: (unitTitle) =>
-      `您尚未完成 ${unitTitle} 的9张精美核心概念图解幻灯片，复习有助于理清脉络。`,
-    recPracticeTitle: (unitTitle) => `巩固 ${unitTitle} 题库刷题`,
+      `您还没有看完“${unitTitle}”单元的 9 张图解幻灯片总结。请复习其中的重要反应和公式。`,
+    recPracticeTitle: (unitTitle) => `加强“${unitTitle}”题库练习`,
     recPracticeReason: (unitTitle) =>
-      `本单元题量较少，建议完成一组16道新题以提高做题速度与准确率。`,
+      `本单元已做的题目还较少。完成一组 16 道题的新测验，提高速度和得分。`,
     actionSolveMistakes: '订正错题',
     actionReviewSlides: '查看幻灯片',
-    actionStartQuiz: '开始刷题',
+    actionStartQuiz: '开始测验',
     actionStudyCards: '复习闪卡',
     actionTakeTrial: '开始模拟考',
     spacedRepSummary: (cards, mistakes) =>
-      `根据间隔重复算法，今日计划复习 ${cards} 张闪卡以及 ${mistakes} 道错题。`,
+      `根据间隔重复算法，今天有 ${cards} 张闪卡和错题本中的 ${mistakes} 道题等待复习。`,
   },
   ku: {
     prereqWarning: (pct) =>

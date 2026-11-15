@@ -13,7 +13,7 @@ export const unit04: ChemistryUnitSeedData = {
     "fr": "États de la Matière",
     "ru": "Агрегатные состояния вещества",
     "ar": "حالات المادة",
-    "zh": "物态",
+    "zh": "物质的状态",
     "ku": "Rewşên Madeyê"
   },
   "subtitle": {
@@ -21,9 +21,9 @@ export const unit04: ChemistryUnitSeedData = {
     "en": "Solids, Liquids, Vapor Pressure",
     "de": "Feststoffe, Flüssigkeiten, Dampfdruck und Viskosität",
     "fr": "Solides, liquides, pression de vapeur et viscosité",
-    "ru": "Твердые вещества, жидкости, давление паров и вязкость",
+    "ru": "Твёрдые вещества, жидкости, давление пара и вязкость",
     "ar": "المواد الصلبة والسوائل وضغط البخار واللزوجة",
-    "zh": "固体、液体、蒸气压和粘度",
+    "zh": "固体、液体、蒸气压与黏度",
     "ku": "Solids, Liquids, Vapor Pressure and Viskozity"
   },
   "facts": [
@@ -34,9 +34,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Equilibrium vapour pressure depends on the type, purity and temperature of the liquid; It does NOT depend on external pressure and surface area.",
         "de": "Der Gleichgewichtsdampfdruck hängt von der Art, Reinheit und Temperatur der Flüssigkeit ab; Es hängt NICHT vom äußeren Druck und der Oberfläche ab.",
         "fr": "La pression de vapeur à l'équilibre dépend du type, de la pureté et de la température du liquide ; Cela ne dépend PAS de la pression externe et de la surface.",
-        "ru": "Равновесное давление пара зависит от типа, чистоты и температуры жидкости; Оно НЕ зависит от внешнего давления и площади поверхности.",
+        "ru": "Равновесное давление пара зависит от природы жидкости, её чистоты и температуры; оно не зависит от внешнего давления и площади поверхности.",
         "ar": "ويعتمد ضغط البخار المتوازن على نوع السائل ونقائه ودرجة حرارته؛ لا يعتمد على الضغط الخارجي ومساحة السطح.",
-        "zh": "平衡蒸气压取决于液体的类型、纯度和温度；它不依赖于外部压力和表面积。",
+        "zh": "平衡蒸气压取决于液体的种类、纯度和温度，与外界压强和表面积无关。",
         "ku": "Zexta buharê ya hevsengiyê bi celeb, paqijî û germahiya şilê ve girêdayî ye; Ew bi zexta derveyî û qada rûxê ve girêdayî NE."
       },
       "trap": {
@@ -44,9 +44,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Equilibrium vapour pressure increases as the external atmospheric pressure increases.",
         "de": "Der Gleichgewichtsdampfdruck steigt mit zunehmendem äußeren Atmosphärendruck.",
         "fr": "La pression de vapeur à l’équilibre augmente à mesure que la pression atmosphérique externe augmente.",
-        "ru": "Равновесное давление пара увеличивается по мере увеличения внешнего атмосферного давления.",
+        "ru": "Равновесное давление пара растёт с увеличением внешнего атмосферного давления.",
         "ar": "يزداد ضغط البخار المتوازن مع زيادة الضغط الجوي الخارجي.",
-        "zh": "平衡蒸气压随着外部大气压力的增加而增加。",
+        "zh": "平衡蒸气压随外界大气压的增大而增大。",
         "ku": "Zexta buharê ya hevseng her ku tansiyona atmosferê ya derve zêde dibe zêde dibe."
       },
       "whyTrapIsFalse": {
@@ -64,9 +64,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "ÖSYM trap: Vapour pressure does not depend on external pressure!",
         "de": "ÖSYM-Falle: Dampfdruck ist nicht vom Außendruck abhängig!",
         "fr": "Piège ÖSYM : La pression de vapeur ne dépend pas de la pression extérieure !",
-        "ru": "Ловушка на экзамене: Давление пара не зависит от внешнего давления!",
+        "ru": "Типичная ловушка на экзамене: давление пара не зависит от внешнего давления!",
         "ar": "مصيدة ÖSYM: ضغط البخار لا يعتمد على الضغط الخارجي!",
-        "zh": "高考避坑指南：蒸气压不依赖于外部压力！",
+        "zh": "考试陷阱：蒸气压与外界压强无关！",
         "ku": "Xefika ÖSYM: Zexta vaporê bi zexta derve ve namîne!"
       }
     },
@@ -77,9 +77,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Boiling occurs when the internal vapour pressure of the liquid equals the external atmospheric pressure.",
         "de": "Sieden tritt auf, wenn der innere Dampfdruck der Flüssigkeit dem äußeren Atmosphärendruck entspricht.",
         "fr": "L'ébullition se produit lorsque la pression de vapeur interne du liquide est égale à la pression atmosphérique externe.",
-        "ru": "Кипение происходит, когда внутреннее давление паров жидкости становится равным внешнему атмосферному давлению.",
+        "ru": "Жидкость закипает, когда давление её пара становится равным внешнему атмосферному давлению.",
         "ar": "يحدث الغليان عندما يكون ضغط البخار الداخلي للسائل مساوياً للضغط الجوي الخارجي.",
-        "zh": "当液体的内部蒸气压等于外部大气压时，就会发生沸腾。",
+        "zh": "当液体的蒸气压等于外界大气压时，液体沸腾。",
         "ku": "Kelandin çêdibe dema ku tansiyona buhara navxweyî ya şilekê bi zexta atmosfera derve re bibe yek."
       },
       "trap": {
@@ -87,7 +87,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Boiling is simply evaporation that occurs at the surface of the liquid.",
         "de": "Beim Sieden handelt es sich lediglich um eine Verdunstung, die an der Oberfläche der Flüssigkeit auftritt.",
         "fr": "L’ébullition est simplement une évaporation qui se produit à la surface du liquide.",
-        "ru": "Кипение – это просто испарение, происходящее на поверхности жидкости.",
+        "ru": "Кипение — это просто испарение, происходящее только с поверхности жидкости.",
         "ar": "الغليان هو ببساطة التبخر الذي يحدث على سطح السائل.",
         "zh": "沸腾只是发生在液体表面的蒸发。",
         "ku": "Kelandîn bi tenê evaporasyon e ku li rûyê şilê çêdibe."
@@ -97,7 +97,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "The process that happens only at the surface is evaporation; in boiling, vapour bubbles form throughout the liquid.",
         "de": "Nur an der Oberfläche findet die Verdunstung statt; beim Sieden bilden sich Dampfblasen in der ganzen Flüssigkeit.",
         "fr": "C'est l'évaporation qui ne se produit qu'en surface ; lors de l'ébullition, des bulles de vapeur se forment dans tout le liquide.",
-        "ru": "Только на поверхности происходит испарение; при кипении пузырьки пара образуются во всём объёме жидкости.",
+        "ru": "Только с поверхности происходит испарение; при кипении пузырьки пара образуются во всём объёме жидкости.",
         "ar": "العملية التي تحدث عند السطح فقط هي التبخر؛ أما في الغليان فتتكوّن فقاعات البخار في جميع أجزاء السائل.",
         "zh": "只在表面发生的是蒸发；沸腾时整个液体内部都产生气泡。",
         "ku": "Bûyera ku tenê li ser rûyê çêdibe buharbûn e; di kelandinê de kulîlkên buharê li her derê şileyê çêdibin."
@@ -110,9 +110,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "The resistance of liquids to flow is called viscosity; As temperature increases, viscosity decreases.",
         "de": "Der Strömungswiderstand von Flüssigkeiten wird als Viskosität bezeichnet; Mit zunehmender Temperatur nimmt die Viskosität ab.",
         "fr": "La résistance des liquides à l’écoulement est appelée viscosité ; À mesure que la température augmente, la viscosité diminue.",
-        "ru": "Сопротивление жидкостей течению называется вязкостью; С повышением температуры вязкость уменьшается.",
+        "ru": "Сопротивление жидкости течению называется вязкостью; с повышением температуры вязкость уменьшается.",
         "ar": "تسمى مقاومة السوائل للتدفق باللزوجة؛ مع زيادة درجة الحرارة، تنخفض اللزوجة.",
-        "zh": "液体流动的阻力称为粘度；随着温度升高，粘度降低。",
+        "zh": "液体对流动的阻力称为黏度；温度升高，黏度减小。",
         "ku": "Ji berxwedana şilekên li hember herikînê re viskosîte tê gotin; Her ku germahî zêde dibe, vîskozîtî kêm dibe."
       },
       "trap": {
@@ -120,9 +120,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "As the temperature increases, the viscosity of honey and glycerin increases.",
         "de": "Mit steigender Temperatur erhöht sich die Viskosität von Honig und Glycerin.",
         "fr": "À mesure que la température augmente, la viscosité du miel et de la glycérine augmente.",
-        "ru": "С повышением температуры вязкость меда и глицерина увеличивается.",
+        "ru": "С повышением температуры вязкость мёда и глицерина увеличивается.",
         "ar": "مع ارتفاع درجة الحرارة، تزداد لزوجة العسل والجلسرين.",
-        "zh": "随着温度升高，蜂蜜和甘油的粘度增加。",
+        "zh": "温度升高时，蜂蜜和甘油的黏度增大。",
         "ku": "Her ku germahî zêde dibe, vîskozîteya hingiv û glycerin zêde dibe."
       },
       "whyTrapIsFalse": {
@@ -143,9 +143,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Glass, plastic, butter and rubber are amorphous solids that do not have a specific melting point.",
         "de": "Glas, Kunststoff, Butter und Gummi sind amorphe Feststoffe, die keinen bestimmten Schmelzpunkt haben.",
         "fr": "Le verre, le plastique, le beurre et le caoutchouc sont des solides amorphes qui n'ont pas de point de fusion spécifique.",
-        "ru": "Стекло, пластик, сливочное масло и резина представляют собой аморфные твердые вещества, не имеющие определенной температуры плавления.",
+        "ru": "Стекло, пластмассы, сливочное масло и резина — аморфные твёрдые вещества, не имеющие определённой температуры плавления.",
         "ar": "الزجاج والبلاستيك والزبدة والمطاط هي مواد صلبة غير متبلورة ليس لها نقطة انصهار محددة.",
-        "zh": "玻璃、塑料、黄油和橡胶是无定形固体，没有特定的熔点。",
+        "zh": "玻璃、塑料、黄油和橡胶是没有固定熔点的非晶体。",
         "ku": "Cam, plastîk, nivîşk û gomûk madeyên amorf in ku xwedî xala helînê ya taybetî nînin."
       },
       "trap": {
@@ -153,9 +153,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Glass has an ionic crystal structure and a sharp melting point.",
         "de": "Glas hat eine ionische Kristallstruktur und einen scharfen Schmelzpunkt.",
         "fr": "Le verre a une structure cristalline ionique et un point de fusion précis.",
-        "ru": "Стекло имеет ионно-кристаллическую структуру и резкую температуру плавления.",
+        "ru": "Стекло имеет ионную кристаллическую структуру и чёткую температуру плавления.",
         "ar": "يحتوي الزجاج على بنية بلورية أيونية ونقطة انصهار حادة.",
-        "zh": "玻璃具有离子晶体结构和明确的熔点。",
+        "zh": "玻璃是离子晶体，有明确的熔点。",
         "ku": "Cam xwedan avahiyek krîstal a yonîkî û xalek helînê ya tûj e."
       },
       "whyTrapIsFalse": {
@@ -176,9 +176,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Diamond and quartz (SiO2) are examples of covalent networked crystalline solids.",
         "de": "Diamant und Quarz (SiO2) sind Beispiele für kovalent vernetzte kristalline Feststoffe.",
         "fr": "Le diamant et le quartz (SiO2) sont des exemples de solides cristallins en réseau covalent.",
-        "ru": "Алмаз и кварц (SiO2) являются примерами кристаллических твердых тел с ковалентной сеткой.",
+        "ru": "Алмаз и кварц (SiO2) — примеры веществ с атомной (ковалентной) кристаллической решёткой.",
         "ar": "يعتبر الماس والكوارتز (SiO2) من الأمثلة على المواد الصلبة البلورية الشبكية التساهمية.",
-        "zh": "金刚石和石英 (SiO2) 是共价网络结晶固体的例子。",
+        "zh": "金刚石和石英(SiO2)是共价晶体的实例。",
         "ku": "Almas û quartz (SiO2) mînakên madeyên hişk ên krîstal ên bi tora kovalentî ne."
       },
       "trap": {
@@ -186,9 +186,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Quartz is a molecular solid held together by van der Waals bonds.",
         "de": "Quarz ist ein molekularer Feststoff, der durch Van-der-Waals-Bindungen zusammengehalten wird.",
         "fr": "Le quartz est un solide moléculaire maintenu par des liaisons de Van der Waals.",
-        "ru": "Кварц – это молекулярное твердое вещество, скрепленное ван-дер-ваальсовыми связями.",
+        "ru": "Кварц — молекулярное твёрдое вещество, частицы которого удерживаются ван-дер-ваальсовыми силами.",
         "ar": "الكوارتز عبارة عن مادة صلبة جزيئية متماسكة بواسطة روابط فان دير فالس.",
-        "zh": "石英是一种通过范德华键结合在一起的分子固体。",
+        "zh": "石英是靠范德华力结合的分子晶体。",
         "ku": "Quartz hişkek molekular e ku ji hêla girêkên van der Waals ve tê girtin."
       },
       "whyTrapIsFalse": {
@@ -198,7 +198,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Le quartz (SiO2) ne contient pas de molécules distinctes ; les atomes Si et O sont liés de façon covalente en un réseau tridimensionnel. C'est pourquoi il est très dur et fond à très haute température.",
         "ru": "В кварце (SiO2) нет отдельных молекул: атомы Si и O связаны ковалентными связями в трёхмерную сетку. Поэтому кварц очень твёрдый и имеет очень высокую температуру плавления.",
         "ar": "لا توجد جزيئات منفصلة في الكوارتز (SiO2)؛ بل ترتبط ذرات Si وO بروابط تساهمية في شبكة ثلاثية الأبعاد، ولذلك فهو شديد الصلابة ودرجة انصهاره عالية جداً.",
-        "zh": "石英（SiO2）中没有独立的分子，Si 和 O 原子以共价键连成三维网状结构，所以石英非常坚硬、熔点很高。",
+        "zh": "石英(SiO2)中没有独立的分子，Si 和 O 原子以共价键连成三维网状结构，所以石英非常坚硬、熔点很高。",
         "ku": "Di kuvarsê (SiO2) de molekulên cuda tune ne; atomên Si û O bi girêdanên kovalent wekî torekê sê-alî bi hev ve girêdayî ne. Ji ber vê yekê kuvars pir hişk e û xala helînê pir bilind e."
       }
     },
@@ -209,9 +209,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Dry ice (solid CO2) and ice (solid H2O) are molecular crystalline solids.",
         "de": "Trockeneis (festes CO2) und Eis (festes H2O) sind molekulare kristalline Feststoffe.",
         "fr": "La neige carbonique (CO2 solide) et la glace (H2O solide) sont des solides cristallins moléculaires.",
-        "ru": "Сухой лед (твердый CO2) и лед (твердый H2O) представляют собой молекулярные кристаллические твердые вещества.",
+        "ru": "Сухой лёд (твёрдый CO2) и лёд (твёрдая H2O) — вещества с молекулярной кристаллической решёткой.",
         "ar": "الثلج الجاف (CO2 الصلب) والثلج (H2O الصلب) عبارة عن مواد صلبة بلورية جزيئية.",
-        "zh": "干冰（固体CO2）和冰（固体H2O）是分子结晶固体。",
+        "zh": "干冰(固态 CO2)和冰(固态 H2O)都是分子晶体。",
         "ku": "Qeşa hişk (CO2 hişk) û qeşa (H2O hişk) madeyên krîstal ên molekulî ne."
       },
       "trap": {
@@ -219,9 +219,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Dry ice is a very hard crystal with a covalent network.",
         "de": "Trockeneis ist ein sehr harter Kristall mit einem kovalenten Netzwerk.",
         "fr": "La neige carbonique est un cristal très dur doté d’un réseau covalent.",
-        "ru": "Сухой лед — очень твердый кристалл с ковалентной сетью.",
+        "ru": "Сухой лёд — очень твёрдый кристалл с атомной (ковалентной) решёткой.",
         "ar": "الثلج الجاف عبارة عن بلورة صلبة للغاية ولها شبكة تساهمية.",
-        "zh": "干冰是一种非常坚硬的晶体，具有共价网络。",
+        "zh": "干冰是具有共价网状结构、非常坚硬的晶体。",
         "ku": "Qeşaya hişk krîstaleke pir hişk û bi tevneke kovalent e."
       },
       "whyTrapIsFalse": {
@@ -242,9 +242,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Table salt (NaCl) and limestone (CaCO3) are examples of ionic crystalline solids.",
         "de": "Speisesalz (NaCl) und Kalkstein (CaCO3) sind Beispiele für ionische kristalline Feststoffe.",
         "fr": "Le sel de table (NaCl) et le calcaire (CaCO3) sont des exemples de solides cristallins ioniques.",
-        "ru": "Поваренная соль (NaCl) и известняк (CaCO3) являются примерами ионных кристаллических твердых веществ.",
+        "ru": "Поваренная соль (NaCl) и известняк (CaCO3) — примеры веществ с ионной кристаллической решёткой.",
         "ar": "يعتبر ملح الطعام (NaCl) والحجر الجيري (CaCO3) من الأمثلة على المواد الصلبة البلورية الأيونية.",
-        "zh": "食盐 (NaCl) 和石灰石 (CaCO3) 是离子结晶固体的例子。",
+        "zh": "食盐(NaCl)和石灰石(CaCO3)是离子晶体的实例。",
         "ku": "Xwêya sifrê (NaCl) û kevirê kilsin (CaCO3) mînakên hişk ên krîstal ên îyonî ne."
       },
       "trap": {
@@ -252,9 +252,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "NaCl is in the molecular solid class.",
         "de": "NaCl gehört zur Klasse der molekularen Feststoffe.",
         "fr": "NaCl appartient à la classe des solides moléculaires.",
-        "ru": "NaCl относится к классу молекулярных твердых веществ.",
+        "ru": "NaCl относится к молекулярным твёрдым веществам.",
         "ar": "ينتمي NaCl إلى فئة المواد الصلبة الجزيئية.",
-        "zh": "氯化钠属于分子固体类。",
+        "zh": "NaCl 属于分子晶体。",
         "ku": "NaCl di çîna madeyên hişk ên molekulî de ye."
       },
       "whyTrapIsFalse": {
@@ -262,7 +262,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "NaCl has no molecules; Na+ and Cl- ions are arranged in a crystal lattice held by ionic bonds. Its high melting point and the conductivity of its melt show it is an ionic solid.",
         "de": "NaCl enthält keine Moleküle; Na+- und Cl--Ionen bilden ein durch Ionenbindungen zusammengehaltenes Kristallgitter. Hoher Schmelzpunkt und leitende Schmelze zeigen, dass es ein Ionenkristall ist.",
         "fr": "NaCl ne contient pas de molécules ; les ions Na+ et Cl- forment un réseau cristallin maintenu par des liaisons ioniques. Son point de fusion élevé et la conductivité de son état fondu montrent que c'est un solide ionique.",
-        "ru": "В NaCl нет молекул: ионы Na+ и Cl- образуют кристаллическую решётку, удерживаемую ионными связями. Высокая температура плавления и электропроводность расплава показывают, что это ионное вещество.",
+        "ru": "В NaCl нет молекул: ионы Na+ и Cl- образуют кристаллическую решётку, удерживаемую ионными связями. Высокая температура плавления и электропроводность расплава показывают, что это ионное кристаллическое вещество.",
         "ar": "لا توجد جزيئات في NaCl؛ بل تترتب أيونات Na+ وCl- في شبكة بلورية تربطها روابط أيونية، وتدل درجة انصهاره العالية وتوصيل مصهوره للكهرباء على أنه صلب أيوني.",
         "zh": "NaCl 中没有分子，Na+ 和 Cl- 通过离子键排列成晶格。熔点高、熔融态能导电，说明它是离子晶体。",
         "ku": "Di NaCl de molekul tune; îyonên Na+ û Cl- bi girêdanên îyonîk di torê krîstalê de rêz dibin. Xala helînê ya bilind û guhezîna elektrîkê ya helyaya wê nîşan didin ku hişkeke îyonîk e."
@@ -275,7 +275,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Iron, copper and gold are in the metallic crystal class and their valence electrons move freely.",
         "de": "Eisen, Kupfer und Gold gehören zur Klasse der metallischen Kristalle und ihre Valenzelektronen bewegen sich frei.",
         "fr": "Le fer, le cuivre et l’or appartiennent à la classe des cristaux métalliques et leurs électrons de valence se déplacent librement.",
-        "ru": "Железо, медь и золото относятся к классу металлических кристаллов, и их валентные электроны движутся свободно.",
+        "ru": "Железо, медь и золото имеют металлическую кристаллическую решётку, их валентные электроны свободно перемещаются.",
         "ar": "يقع الحديد والنحاس والذهب في فئة البلورات المعدنية وتتحرك إلكترونات التكافؤ الخاصة بها بحرية.",
         "zh": "铁、铜和金属于金属晶体类，它们的价电子可以自由移动。",
         "ku": "Hesin, sifir û zêr di çîna krîstalên metalîk de ne û elektronên wan ên valence bi serbestî tevdigerin."
@@ -285,9 +285,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Since iron solid is a covalent crystal, it does not conduct electricity.",
         "de": "Da fester Eisen ein kovalenter Kristall ist, leitet er keinen Strom.",
         "fr": "Le fer solide étant un cristal covalent, il ne conduit pas l’électricité.",
-        "ru": "Поскольку твердое железо представляет собой ковалентный кристалл, оно не проводит электричество.",
+        "ru": "Твёрдое железо — ковалентный кристалл, поэтому оно не проводит электрический ток.",
         "ar": "وبما أن الحديد الصلب عبارة عن بلورة تساهمية، فإنه لا يوصل الكهرباء.",
-        "zh": "由于铁固体是共价晶体，因此它不导电。",
+        "zh": "铁是共价晶体，所以不导电。",
         "ku": "Ji ber ku hesinê hişk krîstaleke kovalent e, elektrîkê naguhezîne."
       },
       "whyTrapIsFalse": {
@@ -308,9 +308,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "While evaporation occurs at any temperature, boiling occurs in the entire liquid at a particular temperature.",
         "de": "Während es bei jeder Temperatur zu einer Verdampfung kommt, kommt es bei einer bestimmten Temperatur zum Sieden der gesamten Flüssigkeit.",
         "fr": "Alors que l’évaporation se produit à n’importe quelle température, l’ébullition se produit dans tout le liquide à une température particulière.",
-        "ru": "Хотя испарение происходит при любой температуре, при определенной температуре происходит кипение всей жидкости.",
+        "ru": "Испарение происходит при любой температуре, а кипение — при определённой температуре и во всём объёме жидкости.",
         "ar": "في حين أن التبخر يحدث عند أي درجة حرارة، فإن الغليان يحدث في السائل بأكمله عند درجة حرارة معينة.",
-        "zh": "虽然蒸发在任何温度下都会发生，但在特定温度下整个液体都会发生沸腾。",
+        "zh": "蒸发在任何温度下都能发生，而沸腾在一定温度下、在整个液体中发生。",
         "ku": "Dema ku evaporasyon di her germahiyê de çêdibe, di germahiyek taybetî de kelandin di tevahiya şilê de pêk tê."
       },
       "trap": {
@@ -320,7 +320,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "L'évaporation ne se produit qu'à la température d'ébullition.",
         "ru": "Испарение происходит только при температуре кипения.",
         "ar": "يحدث التبخر فقط عند درجة حرارة الغليان.",
-        "zh": "蒸发仅在沸腾温度下发生。",
+        "zh": "蒸发只在沸点时发生。",
         "ku": "Avhilandin tenê di germahiya kelandinê de pêk tê."
       },
       "whyTrapIsFalse": {
@@ -341,9 +341,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "As the external pressure decreases (as you climb higher mountains), the boiling point of water decreases.",
         "de": "Wenn der äußere Druck abnimmt (beim Aufstieg auf höhere Berge), sinkt der Siedepunkt des Wassers.",
         "fr": "À mesure que la pression externe diminue (à mesure que vous gravissez des montagnes plus hautes), le point d’ébullition de l’eau diminue.",
-        "ru": "По мере уменьшения внешнего давления (по мере подъема на более высокие горы) температура кипения воды снижается.",
+        "ru": "С уменьшением внешнего давления (например, при подъёме высоко в горы) температура кипения воды понижается.",
         "ar": "ومع انخفاض الضغط الخارجي (أثناء تسلق الجبال العالية)، تنخفض درجة غليان الماء.",
-        "zh": "随着外部压力降低（当你爬上更高的山时），水的沸点降低。",
+        "zh": "外界压强降低时（如登上高山），水的沸点降低。",
         "ku": "Her ku zexta derve kêm dibe (her ku hûn hilkişin çiyayên bilind), xala kelandinê ya avê kêm dibe."
       },
       "trap": {
@@ -351,9 +351,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Since the external pressure decreases in the pressure cooker, food cooks faster.",
         "de": "Da im Schnellkochtopf der Außendruck abnimmt, garen die Speisen schneller.",
         "fr": "Puisque la pression externe diminue dans la cocotte minute, les aliments cuisent plus rapidement.",
-        "ru": "Поскольку в скороварке снижается внешнее давление, пища готовится быстрее.",
+        "ru": "В скороварке пища готовится быстрее, потому что внешнее давление в ней понижается.",
         "ar": "نظرًا لانخفاض الضغط الخارجي في قدر الضغط، يتم طهي الطعام بشكل أسرع.",
-        "zh": "由于高压锅内的外部压力降低，食物煮得更快。",
+        "zh": "用高压锅时外界压强降低，所以食物熟得更快。",
         "ku": "Ji ber ku zexta derve di beroşa zextê de kêm dibe, xwarin zûtir çêdibe."
       },
       "whyTrapIsFalse": {
@@ -376,7 +376,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "L'humidité relative est le rapport entre la pression partielle de vapeur d'eau dans l'air et la pression de vapeur saturée à cette température.",
         "ru": "Относительная влажность — это отношение парциального давления водяного пара в воздухе к давлению насыщенного пара при этой температуре.",
         "ar": "الرطوبة النسبية هي نسبة الضغط الجزئي لبخار الماء في الهواء إلى ضغط البخار المشبع عند درجة الحرارة تلك.",
-        "zh": "相对湿度是空气中水蒸气的分压与该温度下的饱和水蒸气压的比值。",
+        "zh": "相对湿度是空气中水蒸气的分压与同温度下饱和蒸气压之比。",
         "ku": "Nemiya nisbî rêjeya zexta qismî ya buhara avê ya li hewayê bi tansiyona têrbûyî ya wê germahiyê ye."
       },
       "trap": {
@@ -407,9 +407,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "The plasma state is an electrically conductive state in which neutral atoms, ions, free electrons and photons coexist.",
         "de": "Der Plasmazustand ist ein elektrisch leitender Zustand, in dem neutrale Atome, Ionen, freie Elektronen und Photonen nebeneinander existieren.",
         "fr": "L’état plasma est un état électriquement conducteur dans lequel coexistent des atomes neutres, des ions, des électrons libres et des photons.",
-        "ru": "Состояние плазмы — это электропроводящее состояние, в котором сосуществуют нейтральные атомы, ионы, свободные электроны и фотоны.",
+        "ru": "Плазма — электропроводящее состояние вещества, в котором одновременно присутствуют нейтральные атомы, ионы, свободные электроны и фотоны.",
         "ar": "حالة البلازما حالة موصلة للكهرباء تتعايش فيها الذرات المتعادلة والأيونات والإلكترونات الحرة والفوتونات.",
-        "zh": "等离子体状态是中性原子、离子、自由电子和光子共存的导电状态。",
+        "zh": "等离子态是中性原子、离子、自由电子和光子共存的导电状态。",
         "ku": "Rewşa plazmayê rewşeke ku elektrîkê diguhezîne ye û tê de atomên bêalî, îyon, elektronên azad û foton bi hev re hene."
       },
       "trap": {
@@ -417,9 +417,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "The plasma state does not conduct electricity and is not affected by the magnetic field.",
         "de": "Der Plasmazustand leitet keinen Strom und wird durch das Magnetfeld nicht beeinflusst.",
         "fr": "L’état plasma ne conduit pas l’électricité et n’est pas affecté par le champ magnétique.",
-        "ru": "Состояние плазмы не проводит электричество и не подвержено влиянию магнитного поля.",
+        "ru": "Плазма не проводит электрический ток и не испытывает действия магнитного поля.",
         "ar": "حالة البلازما لا توصل الكهرباء ولا تتأثر بالمجال المغناطيسي.",
-        "zh": "等离子体状态不导电，也不受磁场影响。",
+        "zh": "等离子态不导电，也不受磁场影响。",
         "ku": "Rewşa plazmayê elektrîkê naguhezîne û ji qada magnetîsî bandor nabe."
       },
       "whyTrapIsFalse": {
@@ -427,7 +427,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Plasma contains charged particles such as free electrons and ions; thanks to them it conducts electricity and is affected by magnetic fields.",
         "de": "Plasma enthält geladene Teilchen wie freie Elektronen und Ionen; dadurch leitet es Strom und wird von Magnetfeldern beeinflusst.",
         "fr": "Le plasma contient des particules chargées comme des électrons libres et des ions ; grâce à elles il conduit l'électricité et subit l'action des champs magnétiques.",
-        "ru": "В плазме есть заряженные частицы — свободные электроны и ионы; благодаря им плазма проводит ток и реагирует на магнитное поле.",
+        "ru": "В плазме есть заряженные частицы — свободные электроны и ионы; благодаря им плазма проводит ток и испытывает действие магнитного поля.",
         "ar": "تحتوي البلازما على دقائق مشحونة كالإلكترونات الحرة والأيونات، وبفضلها توصل الكهرباء وتتأثر بالمجال المغناطيسي.",
         "zh": "等离子体中含有自由电子和离子等带电微粒，因此能导电，并受磁场影响。",
         "ku": "Di plazmayê de perçikên barkirî yên wekî elektronên serbest û îyonan hene; bi saya wan plazma elektrîkê diguhezîne û ji qada magnetîk bandor dibe."
@@ -440,9 +440,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Liquids with strong intermolecular forces have high viscosity and low vapour pressure.",
         "de": "Flüssigkeiten mit starken intermolekularen Kräften haben eine hohe Viskosität und einen niedrigen Dampfdruck.",
         "fr": "Les liquides dotés de fortes forces intermoléculaires ont une viscosité élevée et une faible pression de vapeur.",
-        "ru": "Жидкости с сильными межмолекулярными силами имеют высокую вязкость и низкое давление пара.",
+        "ru": "Жидкости с сильным межмолекулярным притяжением имеют высокую вязкость и низкое давление пара.",
         "ar": "السوائل ذات القوى الجزيئية القوية لها لزوجة عالية وضغط بخار منخفض.",
-        "zh": "分子间力强的液体具有高粘度和低蒸气压。",
+        "zh": "分子间作用力强的液体黏度大、蒸气压低。",
         "ku": "Şilekên bi hêzên navmolekularî yên xurt xwedî vîskozîtîya bilind û tansiyona vaporê ya kêm in."
       },
       "trap": {
@@ -452,7 +452,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Les liquides à fortes forces intermoléculaires s'évaporent très rapidement et ont une pression de vapeur élevée.",
         "ru": "Жидкости с сильным межмолекулярным притяжением очень быстро испаряются и имеют высокое давление пара.",
         "ar": "السوائل ذات قوى التجاذب القوية بين الجزيئات تتبخر بسرعة كبيرة ولها ضغط بخار مرتفع.",
-        "zh": "分子间作用力强的液体蒸发得非常快，蒸气压高。",
+        "zh": "分子间作用力强的液体蒸发得很快，蒸气压高。",
         "ku": "Şilekên ku hêzên kêşanê yên navmolekulî yên xurt hene pir zû hilm dibin û zexta wan a buharê bilind e."
       },
       "whyTrapIsFalse": {
@@ -473,9 +473,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "The equilibrium vapour pressures of all pure liquids boiling in the same environment are equal to each other (equal to the external pressure).",
         "de": "Die Gleichgewichtsdampfdrücke aller reinen Flüssigkeiten, die in derselben Umgebung sieden, sind einander gleich (gleich dem Außendruck).",
         "fr": "Les pressions de vapeur à l'équilibre de tous les liquides purs bouillant dans le même environnement sont égales les unes aux autres (égales à la pression externe).",
-        "ru": "Равновесные давления паров всех чистых жидкостей, кипящих в одной среде, равны друг другу (равны внешнему давлению).",
+        "ru": "Равновесные давления пара всех чистых жидкостей, кипящих в одних и тех же условиях, равны друг другу (и равны внешнему давлению).",
         "ar": "إن ضغوط البخار المتوازنة لجميع السوائل النقية التي تغلي في نفس البيئة تكون متساوية مع بعضها البعض (مساوية للضغط الخارجي).",
-        "zh": "在同一环境中沸腾的所有纯液体的平衡蒸气压彼此相等（等于外部压力）。",
+        "zh": "在同一环境中沸腾的所有纯液体，其平衡蒸气压都相等（都等于外界压强）。",
         "ku": "Zextên buharê yên hevseng ên hemî şilekên pak ên ku di heman hawîrdorê de diqelînin bi hevûdu re (wek zexta derve) wekhev in."
       },
       "trap": {
@@ -493,7 +493,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "A liquid boils when its vapour pressure equals the external pressure; alcohol and water boiling in the same place both have vapour pressure equal to the external pressure, hence to each other. Alcohol simply boils at a lower temperature.",
         "de": "Eine Flüssigkeit siedet, wenn ihr Dampfdruck dem äußeren Druck gleich ist; siedender Alkohol und siedendes Wasser am selben Ort haben daher denselben Dampfdruck. Alkohol siedet nur bei niedrigerer Temperatur.",
         "fr": "Un liquide bout quand sa pression de vapeur égale la pression extérieure ; l'alcool et l'eau bouillant au même endroit ont donc la même pression de vapeur. L'alcool bout seulement à une température plus basse.",
-        "ru": "Жидкость кипит, когда давление её пара равно внешнему; у кипящих в одном месте спирта и воды давление пара равно внешнему, а значит, и друг другу. Спирт лишь кипит при более низкой температуре.",
+        "ru": "Жидкость кипит, когда давление её пара равно внешнему; у спирта и воды, кипящих в одних и тех же условиях, давление пара равно внешнему давлению, а значит, и друг другу. Спирт лишь кипит при более низкой температуре.",
         "ar": "يغلي السائل عندما يساوي ضغط بخاره الضغط الخارجي، فالكحول والماء المغليان في المكان نفسه ضغط بخارهما يساوي الضغط الخارجي، وبالتالي متساويان. والكحول يغلي فقط عند درجة حرارة أدنى.",
         "zh": "液体在蒸气压等于外界压强时沸腾；在同一环境中沸腾的酒精和水，其蒸气压都等于外界压强，因而彼此相等。酒精只是沸腾温度更低。",
         "ku": "Şileyek dema zexta buhara wê bi zexta derve re wekhev dibe dikele; alkol û ava ku li heman cihî dikelin zexta buhara wan bi zexta derve, ango bi hev re wekhev e. Alkol tenê di germahiyeke nizmtir de dikele."
@@ -508,7 +508,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "À mesure que la surface du liquide augmente, le taux d’évaporation augmente, mais la pression de vapeur à l’équilibre ne change pas.",
         "ru": "С увеличением площади поверхности жидкости скорость испарения увеличивается, но равновесное давление пара не меняется.",
         "ar": "مع زيادة مساحة سطح السائل، يزداد معدل التبخر، ولكن ضغط البخار المتوازن لا يتغير.",
-        "zh": "随着液体表面积的增加，蒸发速率增加，但平衡蒸气压不改变。",
+        "zh": "液体表面积增大，蒸发速率增大，但平衡蒸气压不变。",
         "ku": "Her ku qada rûbera şilekê zêde dibe, rêjeya evaporasyonê zêde dibe, lê tansiyona buharê ya hevsengiyê naguhere."
       },
       "trap": {
@@ -518,7 +518,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "La pression de vapeur d’équilibre de l’eau dans le récipient large est supérieure à celle du récipient étroit.",
         "ru": "Равновесное давление пара воды в широком сосуде больше, чем в узком.",
         "ar": "يكون ضغط بخار الماء المتوازن في الوعاء الواسع أكبر منه في الوعاء الضيق.",
-        "zh": "宽容器中水的平衡蒸气压大于窄容器中水的平衡蒸气压。",
+        "zh": "宽口容器中水的平衡蒸气压比窄口容器中的大。",
         "ku": "Zexta buharê ya hevseng ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
       },
       "whyTrapIsFalse": {
@@ -539,9 +539,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "In windy weather, the evaporation rate increases because vapour molecules on the surface are removed.",
         "de": "Bei windigem Wetter erhöht sich die Verdunstungsrate, da Dampfmoleküle an der Oberfläche entfernt werden.",
         "fr": "Par temps venteux, le taux d’évaporation augmente car les molécules de vapeur à la surface sont éliminées.",
-        "ru": "В ветреную погоду скорость испарения увеличивается за счет удаления молекул пара с поверхности.",
+        "ru": "В ветреную погоду испарение идёт быстрее, так как ветер уносит молекулы пара от поверхности.",
         "ar": "وفي الطقس العاصف، يزداد معدل التبخر بسبب إزالة جزيئات البخار الموجودة على السطح.",
-        "zh": "在大风天气中，由于表面的蒸气分子被去除，蒸发率会增加。",
+        "zh": "有风时，液面附近的蒸气分子被吹走，蒸发速率增大。",
         "ku": "Di hewaya bayê de, ji ber ku molekulên buharê yên li ser rûyê şilekê têne rakirin, rêjeya evaporasyonê zêde dibe."
       },
       "trap": {
@@ -551,7 +551,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Par temps venteux, le temps de séchage du linge prend plus de temps.",
         "ru": "В ветреную погоду время высыхания белья увеличивается.",
         "ar": "في الطقس العاصف، يستغرق وقت تجفيف الغسيل وقتًا أطول.",
-        "zh": "在有风的天气里，衣物的干燥时间需要更长的时间。",
+        "zh": "有风的天气里，衣服晾干所需的时间更长。",
         "ku": "Di hewaya bayê de, dema zuhakirina cilşûştinê dirêjtir dibe."
       },
       "whyTrapIsFalse": {
@@ -594,9 +594,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Evaporation occurs at all temperatures and only on the surface; Boiling occurs at a certain temperature and everywhere in the liquid.",
         "de": "Die Verdunstung erfolgt bei allen Temperaturen und nur an der Oberfläche; Das Sieden findet bei einer bestimmten Temperatur und überall in der Flüssigkeit statt.",
         "fr": "L'évaporation se produit à toutes les températures et uniquement en surface ; L'ébullition se produit à une certaine température et partout dans le liquide.",
-        "ru": "Испарение происходит при всех температурах и только на поверхности; Кипение происходит при определенной температуре и повсеместно в жидкости.",
+        "ru": "Испарение происходит при любой температуре и только с поверхности жидкости; кипение происходит при определённой температуре и во всём объёме жидкости.",
         "ar": "يحدث التبخر في جميع درجات الحرارة وعلى السطح فقط؛ يحدث الغليان عند درجة حرارة معينة وفي كل مكان في السائل.",
-        "zh": "蒸发在所有温度下都会发生，并且仅发生在表面；沸腾发生在一定温度下，并且发生在液体的各处。",
+        "zh": "蒸发在任何温度下都能发生，且只发生在液体表面；而沸腾在一定温度下发生，液体内部和表面同时汽化。",
         "ku": "Hilmbûn di her germahiyê de û tenê li ser rûyê çêdibe; Kelandin di germahiyek diyar de û li her derê şilê çêdibe."
       }
     },
@@ -627,9 +627,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Amorphous solids have no definite melting point and soften gradually over a temperature range when heated; crystalline solids have regularly stacked particles and a sharp melting point.",
         "de": "Amorphe Feststoffe haben keinen bestimmten Schmelzpunkt und erweichen beim Erhitzen allmählich über einen Temperaturbereich; kristalline Feststoffe haben regelmäßig angeordnete Teilchen und einen scharfen Schmelzpunkt.",
         "fr": "Les solides amorphes n'ont pas de point de fusion défini et se ramollissent progressivement sur un intervalle de température ; les solides cristallins ont des particules empilées de façon ordonnée et un point de fusion net.",
-        "ru": "Аморфное твёрдое вещество не имеет определённой температуры плавления и при нагревании постепенно размягчается в интервале температур; у кристаллического вещества частицы упакованы упорядоченно и температура плавления чёткая.",
+        "ru": "Аморфное твёрдое вещество не имеет определённой температуры плавления и при нагревании постепенно размягчается в интервале температур; кристаллическое твёрдое вещество имеет упорядоченную упаковку частиц и чёткую температуру плавления.",
         "ar": "المواد الصلبة غير المتبلورة ليس لها درجة انصهار محددة وتلين تدريجيًا عند التسخين ضمن مدى من درجات الحرارة؛ أما المواد الصلبة البلورية فدقائقها مرتبة بانتظام ولها درجة انصهار حادة.",
-        "zh": "非晶态固体没有固定熔点，受热时在一定温度范围内逐渐软化；晶体中粒子排列有序，具有明确的熔点。",
+        "zh": "非晶态固体没有固定熔点，受热时在一定温度范围内逐渐软化熔化；而晶体中微粒排列有序，有固定的熔点。",
         "ku": "Madeya hişk a amorf xwedî xala helînê ya diyar nîne û dema germ dibe di navbereke germahiyê de hêdî hêdî nerm dibe; di madeya krîstal de tenoşk bi rêk û pêk rêz bûne û xala wê ya helînê tûj e."
       }
     },
@@ -642,7 +642,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Viscosité",
         "ru": "Вязкость",
         "ar": "اللزوجة",
-        "zh": "粘度",
+        "zh": "黏度",
         "ku": "Vîskozîtî"
       },
       "conceptB": {
@@ -660,9 +660,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Viscosity is the internal resistance of a liquid to flow; fluidity is the opposite property, the ease with which a liquid flows.",
         "de": "Viskosität ist der innere Widerstand einer Flüssigkeit gegen das Fließen; Fließfähigkeit ist die entgegengesetzte Eigenschaft, also die Leichtigkeit, mit der eine Flüssigkeit fließt.",
         "fr": "La viscosité est la résistance interne d'un liquide à l'écoulement ; la fluidité est la propriété inverse, c'est-à-dire la facilité avec laquelle un liquide s'écoule.",
-        "ru": "Вязкость — это внутреннее сопротивление жидкости течению; текучесть — противоположное свойство, то есть лёгкость, с которой жидкость течёт.",
+        "ru": "Вязкость — внутреннее сопротивление жидкости течению; текучесть — противоположное свойство, способность жидкости легко течь.",
         "ar": "اللزوجة هي المقاومة الداخلية التي يبديها السائل للجريان؛ أما السيولة فهي الخاصية المعاكسة، أي سهولة جريان السائل.",
-        "zh": "粘度是液体流动时的内部阻力；流动性则是与之相反的性质，表示液体容易流动的程度。",
+        "zh": "黏度是液体流动时的内部阻力；而流动性则相反，表示液体容易流动的程度。",
         "ku": "Vîskozîtî berxwedana navxweyî ya şileyê li hember herikînê ye; herikbarî taybetmendiya berevajî ye, ango hêsaniya herikîna şileyê ye."
       }
     },
@@ -685,7 +685,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Pression externe",
         "ru": "Внешнее давление",
         "ar": "الضغط الخارجي",
-        "zh": "外部压力",
+        "zh": "外界压强",
         "ku": "Zexta Derve"
       },
       "distinction": {
@@ -693,9 +693,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Vapour pressure is the pressure exerted by a liquid's vapour and depends on the kind of liquid and its temperature; external pressure is the pressure the surrounding atmosphere exerts on the liquid surface.",
         "de": "Der Dampfdruck ist der Druck des Dampfes einer Flüssigkeit und hängt von der Flüssigkeit und ihrer Temperatur ab; der äußere Druck ist der Druck der umgebenden Atmosphäre auf die Flüssigkeitsoberfläche.",
         "fr": "La pression de vapeur est la pression exercée par la vapeur d'un liquide et dépend de la nature du liquide et de sa température ; la pression extérieure est celle que l'atmosphère exerce sur la surface du liquide.",
-        "ru": "Давление пара — давление, создаваемое паром жидкости; оно зависит от природы жидкости и температуры. Внешнее давление — давление окружающей атмосферы на поверхность жидкости.",
+        "ru": "Давление пара — давление, создаваемое паром жидкости и зависящее от её природы и температуры; внешнее давление — давление окружающей атмосферы на поверхность жидкости.",
         "ar": "ضغط البخار هو الضغط الذي يُحدثه بخار السائل ويعتمد على نوع السائل ودرجة حرارته؛ أما الضغط الخارجي فهو ضغط الغلاف الجوي المحيط على سطح السائل.",
-        "zh": "蒸气压是液体的蒸气产生的压强，取决于液体的种类和温度；外界压强是周围大气作用在液面上的压强。",
+        "zh": "蒸气压是液体的蒸气产生的压强，取决于液体的种类和温度；而外界压强是周围大气作用在液面上的压强。",
         "ku": "Zexta buharê ew zext e ku buhara şileyê çêdike û bi cureyê şileyê û germahiya wê ve girêdayî ye; zexta derve ew zext e ku atmosfera derdorê li ser rûyê şileyê dike."
       }
     },
@@ -716,9 +716,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Covalent Network Crystal",
         "de": "Kovalenter Netzwerkkristall",
         "fr": "Cristal covalent (réseau covalent)",
-        "ru": "Ковалентный (атомный) кристалл",
+        "ru": "Атомный (ковалентный) кристалл",
         "ar": "البلورة التساهمية الشبكية",
-        "zh": "共价网络晶体（原子晶体）",
+        "zh": "共价晶体",
         "ku": "Krîstala Tora Kovalent"
       },
       "distinction": {
@@ -726,9 +726,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "In molecular crystals (ice, dry ice) molecules are held together by weak interactions and melting points are low; in covalent network crystals (diamond, quartz) atoms are joined by covalent bonds and melting points are very high.",
         "de": "In Molekülkristallen (Eis, Trockeneis) werden die Moleküle durch schwache Wechselwirkungen zusammengehalten, die Schmelzpunkte sind niedrig; in kovalenten Netzwerkkristallen (Diamant, Quarz) sind die Atome durch kovalente Bindungen verknüpft, die Schmelzpunkte sind sehr hoch.",
         "fr": "Un cristal moléculaire (glace, neige carbonique) est formé de molécules liées par des interactions faibles et son point de fusion est bas ; dans un réseau covalent (diamant, quartz), les atomes sont unis par des liaisons covalentes et le point de fusion est très élevé.",
-        "ru": "Молекулярный кристалл (лёд, сухой лёд) состоит из молекул, удерживаемых слабыми взаимодействиями, и имеет низкую температуру плавления; в ковалентном кристалле (алмаз, кварц) атомы связаны ковалентными связями, и температура плавления очень высокая.",
+        "ru": "Молекулярный кристалл (лёд, сухой лёд) состоит из молекул, удерживаемых слабыми взаимодействиями, и имеет низкую температуру плавления; атомный (ковалентный) кристалл (алмаз, кварц) состоит из атомов, связанных ковалентными связями, и имеет очень высокую температуру плавления.",
         "ar": "البلورة الجزيئية (الجليد، الثلج الجاف) تتكون من جزيئات ترتبط بتآثرات ضعيفة ودرجة انصهارها منخفضة؛ أما في البلورة التساهمية الشبكية (الماس، الكوارتز) فترتبط الذرات بروابط تساهمية ودرجة انصهارها مرتفعة جدًا.",
-        "zh": "分子晶体（冰、干冰）中分子靠弱相互作用结合，熔点低；共价网络晶体（金刚石、石英）中原子以共价键相连，熔点很高。",
+        "zh": "分子晶体（冰、干冰）中分子靠弱相互作用结合，熔点低；而共价晶体（金刚石、石英）中原子以共价键相连，熔点很高。",
         "ku": "Krîstala molekulî (qeşa, qeşaya hişk) ji molekulên ku bi têkiliyên qels li hev tên girtin pêk tê û xala helîna wê nizm e; di krîstala tora kovalent de (elmas, kuarts) atom bi girêdanên kovalent bi hev ve girêdayî ne û xala helînê pir bilind e."
       }
     },
@@ -759,9 +759,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Gas is the term for substances that exist in this state at room conditions (O2, N2, CO2); vapour is the term for the state that a substance which is liquid or solid at room conditions (water, iodine) enters by evaporating or subliming.",
         "de": "Als Gas bezeichnet man Stoffe, die bei Raumbedingungen in diesem Zustand vorliegen (O2, N2, CO2); als Dampf bezeichnet man den Zustand, in den ein bei Raumbedingungen flüssiger oder fester Stoff (Wasser, Iod) durch Verdampfen oder Sublimieren übergeht.",
         "fr": "On appelle gaz une substance qui se trouve dans cet état dans les conditions ambiantes (O2, N2, CO2) ; on appelle vapeur l'état que prend, par évaporation ou sublimation, une substance liquide ou solide dans ces conditions (eau, diiode).",
-        "ru": "Газ — вещество, которое при комнатных условиях находится в этом состоянии (O2, N2, CO2); пар — состояние, в которое при испарении или сублимации переходит вещество, жидкое или твёрдое при комнатных условиях (вода, иод).",
+        "ru": "Газ — вещество, которое при комнатных условиях находится в газообразном состоянии (O2, N2, CO2); пар — газообразное состояние вещества, жидкого или твёрдого при комнатных условиях (вода, иод), в которое оно переходит при испарении или возгонке.",
         "ar": "الغاز اسم يُطلق على المواد التي توجد في هذه الحالة في الظروف العادية (O2 وN2 وCO2)؛ أما البخار فهو الحالة التي تتحول إليها بالتبخر أو التسامي مادة تكون سائلة أو صلبة في الظروف العادية (الماء، اليود).",
-        "zh": "气体是指在常温常压下就以这种状态存在的物质（O2、N2、CO2）；蒸气则是常温常压下为液态或固态的物质（水、碘）经蒸发或升华后形成的状态。",
+        "zh": "气体是指在常温常压下本身就呈气态的物质(O2、N2、CO2)；而蒸气是常温常压下为液态或固态的物质（水、碘）经蒸发或升华形成的气态。",
         "ku": "Gaz ew nav e ku ji bo madeyên di şertên odeyê de di vê rewşê de ne (O2, N2, CO2) tê bikaranîn; buhar jî ew rewş e ku madeyeke di şertên odeyê de şile an hişk (av, îyot) bi hilmbûn an sublîmasyonê dikeve wê."
       }
     },
@@ -792,9 +792,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Gas consists of neutral atoms or molecules; Plasma is a conductive fluid in which ions, free electrons and neutral particles coexist.",
         "de": "Gas besteht aus neutralen Atomen oder Molekülen; Plasma ist ein elektrisch leitfähiges Fluid, in der Ionen, freie Elektronen und neutrale Teilchen nebeneinander existieren.",
         "fr": "Le gaz est constitué d’atomes ou de molécules neutres ; Le plasma est un fluide conducteur dans lequel coexistent des ions, des électrons libres et des particules neutres.",
-        "ru": "Газ состоит из нейтральных атомов или молекул; Плазма – это проводящая ионизированная среда, в которой сосуществуют ионы, свободные электроны и нейтральные частицы.",
+        "ru": "Газ состоит из нейтральных атомов или молекул; плазма — электропроводящая среда, в которой одновременно присутствуют ионы, свободные электроны и нейтральные частицы.",
         "ar": "يتكون الغاز من ذرات أو جزيئات محايدة؛ البلازما هي مائع موصل تتعايش فيه الأيونات والإلكترونات الحرة والجسيمات المحايدة.",
-        "zh": "气体由中性原子或分子组成；等离子体是离子、自由电子和中性粒子共存的导电流体。",
+        "zh": "气体由中性原子或分子构成；而等离子体是离子、自由电子和中性微粒共存的导电流体。",
         "ku": "Gaz ji atom an jî molekulên bêalî pêk tê; Plazma herikbarek ku elektrîkê diguhezîne e ku tê de îyon, elektronên azad û pariyên bêalî bi hev re dijîn."
       }
     },
@@ -825,9 +825,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "In ionic crystals, cations and anions are held by ionic bonds and the solid does not conduct electricity; in metallic crystals, positive metal ions are held by an electron sea and the solid conducts electricity.",
         "de": "In Ionenkristallen sind Kationen und Anionen durch Ionenbindungen verbunden, und der Feststoff leitet keinen Strom; in Metallkristallen sind positive Metallionen durch einen Elektronensee verbunden, und der Feststoff leitet Strom.",
         "fr": "Un cristal ionique est formé de cations et d'anions unis par des liaisons ioniques et ne conduit pas l'électricité à l'état solide ; dans un solide métallique, les ions métalliques positifs sont liés par une mer d'électrons et le solide conduit l'électricité.",
-        "ru": "Ионный кристалл состоит из катионов и анионов, связанных ионной связью, и в твёрдом состоянии не проводит ток; в металлическом кристалле положительные ионы металла связаны электронным морем, и он проводит ток в твёрдом состоянии.",
+        "ru": "Ионный кристалл состоит из катионов и анионов, связанных ионной связью, и в твёрдом состоянии не проводит ток; металлический кристалл состоит из положительных ионов металла, удерживаемых „электронным морем“, и проводит ток в твёрдом состоянии.",
         "ar": "البلورة الأيونية تتكون من كاتيونات وأنيونات ترتبط بروابط أيونية ولا توصل الكهرباء في الحالة الصلبة؛ أما في البلورة الفلزية فترتبط أيونات الفلز الموجبة ببحر الإلكترونات وتوصل الكهرباء في الحالة الصلبة.",
-        "zh": "离子晶体中阴阳离子以离子键结合，固态时不导电；金属晶体中金属阳离子由电子海结合，固态时导电。",
+        "zh": "离子晶体中阴、阳离子以离子键结合，固态时不导电；而金属晶体中的阳离子靠自由电子“海”结合在一起，固态时能导电。",
         "ku": "Krîstala îyonî ji katyon û anyonên ku bi girêdana îyonî bi hev ve girêdayî ne pêk tê û di rewşa hişk de elektrîkê naguhezîne; di krîstala metalî de îyonên metal ên erênî bi deryaya elektronan ve girêdayî ne û ew di rewşa hişk de elektrîkê diguhezîne."
       }
     }
@@ -873,7 +873,7 @@ export const unit04: ChemistryUnitSeedData = {
           "fr": "Le taux d’évaporation augmente",
           "ru": "Скорость испарения увеличивается",
           "ar": "يزداد معدل التبخر",
-          "zh": "蒸发率增加",
+          "zh": "蒸发速率增大",
           "ku": "Rêjeya evaporasyonê zêde dibe"
         },
         {
@@ -895,9 +895,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Heating and State Change of Pure Water (1 atm)",
         "de": "Erwärmung und Zustandsänderung von reinem Wasser (1 atm)",
         "fr": "Chauffage et changement d'état de l'eau pure (1 atm)",
-        "ru": "Нагревание и изменение состояния чистой воды (1 атм)",
+        "ru": "Нагревание чистой воды и смена агрегатного состояния (1 атм)",
         "ar": "تسخين الماء النقي وتغير حالته (1 atm)",
-        "zh": "纯水的加热和状态变化（1 atm）",
+        "zh": "纯水的受热与状态变化(1 atm)",
         "ku": "Germbûn û Guherîna Halê ya Ava Paqij (1 atm)"
       },
       "steps": [
@@ -906,9 +906,9 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "Ice at 0 °C melts and turns into water",
           "de": "Eis schmilzt bei 0 °C und verwandelt sich in Wasser",
           "fr": "La glace à 0 °C fond et se transforme en eau",
-          "ru": "Лед при 0°C тает и превращается в воду.",
+          "ru": "Лёд при 0 °C тает и превращается в воду",
           "ar": "يذوب الثلج عند درجة 0 مئوية ويتحول إلى ماء",
-          "zh": "冰在0°C融化并变成水",
+          "zh": "0 °C 的冰熔化成水",
           "ku": "Qeşa di 0 °C de dihele û dibe av"
         },
         {
@@ -916,7 +916,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "Liquid water heats up to 100 °C",
           "de": "Flüssiges Wasser erhitzt sich auf bis zu 100 °C",
           "fr": "L'eau liquide chauffe jusqu'à 100 °C",
-          "ru": "Жидкая вода нагревается до 100°С.",
+          "ru": "Жидкая вода нагревается до 100 °C",
           "ar": "يسخن الماء السائل حتى 100 درجة مئوية",
           "zh": "液态水加热至 100 °C",
           "ku": "Ava şil heta 100 °C germ dibe"
@@ -926,7 +926,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "Boils at a constant temperature of 100 °C",
           "de": "Siedet bei einer konstanten Temperatur von 100 °C",
           "fr": "Bouillonne à une température constante de 100 °C",
-          "ru": "Кипит при постоянной температуре 100°С.",
+          "ru": "Вода кипит при постоянной температуре 100 °C",
           "ar": "يغلي عند درجة حرارة ثابتة 100 درجة مئوية",
           "zh": "在 100 °C 恒温下沸腾",
           "ku": "Di germahiyek domdar 100 °C de tê kelandin"
@@ -1007,7 +1007,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Compression dans un récipient à piston",
         "ru": "Сжатие газа в сосуде с поршнем",
         "ar": "انضغاط الغاز في وعاء ذي مكبس",
-        "zh": "活塞容器中的气体压缩",
+        "zh": "活塞容器中气体的压缩",
         "ku": "Pêçandina Gazê di Firaxa bi Piston de"
       },
       "steps": [
@@ -1016,9 +1016,9 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "The moving piston is pushed down",
           "de": "Der bewegliche Kolben wird nach unten gedrückt",
           "fr": "Le piston mobile est poussé vers le bas",
-          "ru": "Движущийся поршень опускается вниз",
+          "ru": "Подвижный поршень опускают вниз",
           "ar": "يتم دفع المكبس المتحرك إلى الأسفل",
-          "zh": "移动活塞被向下推",
+          "zh": "向下推动活塞",
           "ku": "Pistona livok ber bi jêr ve tê pêldan"
         },
         {
@@ -1026,7 +1026,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "The volume occupied by the gas decreases",
           "de": "Das vom Gas eingenommene Volumen nimmt ab",
           "fr": "Le volume occupé par le gaz diminue",
-          "ru": "Объем, занимаемый газом, уменьшается",
+          "ru": "Объём, занимаемый газом, уменьшается",
           "ar": "يتناقص الحجم الذي يشغله الغاز",
           "zh": "气体所占的体积减少",
           "ku": "Qebareya ku gaz digire kêm dibe"
@@ -1036,9 +1036,9 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "The number of particles per unit volume increases",
           "de": "Die Anzahl der Partikel pro Volumeneinheit nimmt zu",
           "fr": "Le nombre de particules par unité de volume augmente",
-          "ru": "Количество частиц в единице объема увеличивается",
+          "ru": "Число частиц в единице объёма увеличивается",
           "ar": "يزداد عدد الجزيئات لكل وحدة حجم",
-          "zh": "单位体积的颗粒数增加",
+          "zh": "单位体积内的微粒数增加",
           "ku": "Hejmara pirtikan di yekîneya qebareyê de zêde dibe"
         },
         {
@@ -1062,9 +1062,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Which of the following can be applied alone to increase the equilibrium vapour pressure of a liquid?",
         "de": "Welche der folgenden Maßnahmen kann allein angewendet werden, um den Gleichgewichtsdampfdruck einer Flüssigkeit zu erhöhen?",
         "fr": "Lequel des éléments suivants peut être appliqué seul pour augmenter la pression de vapeur d’équilibre d’un liquide ?",
-        "ru": "Что из перечисленного можно применить отдельно для увеличения равновесного давления паров жидкости?",
+        "ru": "Какое из перечисленных действий само по себе позволяет увеличить равновесное давление пара жидкости?",
         "ar": "أي مما يلي يمكن تطبيقه بمفرده لزيادة ضغط البخار المتوازن للسائل؟",
-        "zh": "下列哪项可以单独应用来增加液体的平衡蒸气压？",
+        "zh": "下列哪项措施单独实施即可增大液体的平衡蒸气压？",
         "ku": "Kîjan ji yên jêrîn dikare bi tena serê xwe were sepandin da ku tansiyona hevsengiya hilma şilekê zêde bike?"
       },
       "options": [
@@ -1073,9 +1073,9 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "increasing the temperature of the liquid",
           "de": "Erhöhung der Temperatur der Flüssigkeit",
           "fr": "augmenter la température du liquide",
-          "ru": "повышение температуры жидкости",
+          "ru": "Повышение температуры жидкости",
           "ar": "زيادة درجة حرارة السائل",
-          "zh": "增加液体的温度",
+          "zh": "升高液体的温度",
           "ku": "zêdekirina germahiya şilê"
         },
         {
@@ -1085,7 +1085,7 @@ export const unit04: ChemistryUnitSeedData = {
           "fr": "Augmentation de la pression atmosphérique extérieure",
           "ru": "Повышение внешнего атмосферного давления",
           "ar": "زيادة الضغط الجوي الخارجي",
-          "zh": "外部大气压增加",
+          "zh": "增大外界大气压",
           "ku": "Zêdekirina zexta atmosferê ya derve"
         },
         {
@@ -1103,7 +1103,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "Increasing the amount of liquid in the container",
           "de": "Erhöhen der Flüssigkeitsmenge im Behälter",
           "fr": "Augmenter la quantité de liquide dans le récipient",
-          "ru": "Увеличение количества жидкости в емкости",
+          "ru": "Увеличение количества жидкости в сосуде",
           "ar": "زيادة كمية السائل في الحاوية",
           "zh": "增加容器中的液体量",
           "ku": "Zêdekirina mîqdara şilê di konteynerê de"
@@ -1113,9 +1113,9 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "Adding non-volatile salt to the container",
           "de": "Nichtflüchtiges Salz in den Behälter geben",
           "fr": "Ajouter du sel non volatil au récipient",
-          "ru": "Добавление нелетучей соли в емкость",
+          "ru": "Добавление в сосуд нелетучей соли",
           "ar": "إضافة الملح غير المتطاير إلى الوعاء",
-          "zh": "向容器中添加非挥发性盐",
+          "zh": "向容器中加入难挥发的盐",
           "ku": "Zêdekirina xwêyeke ku hilm nabe li firaxê"
         }
       ],
@@ -1138,7 +1138,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Which of the following is definitely equal for pure water and pure ethyl alcohol boiling in the same environment?",
         "de": "Welche der folgenden Größen ist für reines Wasser und reinen Ethylalkohol, die in derselben Umgebung sieden, auf jeden Fall gleich?",
         "fr": "Laquelle des grandeurs suivantes est nécessairement égale pour l'eau pure et l'éthanol pur bouillant dans le même environnement ?",
-        "ru": "Какая из следующих величин обязательно одинакова для чистой воды и чистого этилового спирта, кипящих в одной и той же среде?",
+        "ru": "Какая из величин обязательно одинакова для чистой воды и чистого этилового спирта, кипящих в одних и тех же условиях?",
         "ar": "أي مما يلي متساوٍ حتمًا للماء النقي والكحول الإيثيلي النقي اللذين يغليان في الوسط نفسه؟",
         "zh": "在同一环境中沸腾的纯水和纯乙醇，下列哪项一定相等？",
         "ku": "Kîjan ji yên jêrîn ji bo ava paqij û alkola etilî ya saf ku di heman hawîrdorê de keliyane bi tevahî wekhev e?"
@@ -1149,7 +1149,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "vapour pressures",
           "de": "Dampfdrücke",
           "fr": "pressions de vapeur",
-          "ru": "давление пара",
+          "ru": "Давление пара",
           "ar": "ضغوط البخار",
           "zh": "蒸气压",
           "ku": "zextên buharê"
@@ -1159,7 +1159,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "boiling temperatures",
           "de": "Siedetemperaturen",
           "fr": "températures d'ébullition",
-          "ru": "температура кипения",
+          "ru": "Температура кипения",
           "ar": "درجات حرارة الغليان",
           "zh": "沸腾温度",
           "ku": "germên kelandinê"
@@ -1181,7 +1181,7 @@ export const unit04: ChemistryUnitSeedData = {
           "fr": "Viscosités",
           "ru": "Вязкость",
           "ar": "اللزوجة",
-          "zh": "粘度",
+          "zh": "黏度",
           "ku": "Viskozîtî"
         },
         {
@@ -1203,7 +1203,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Un liquide bout lorsque sa pression de vapeur égale la pression extérieure. Dans un même milieu la pression extérieure est la même ; les pressions de vapeur de l'eau et de l'alcool éthylique en ébullition sont donc égales à cette pression, et égales entre elles. La température d'ébullition, la chaleur de vaporisation, la viscosité et la masse volumique dépendent de la nature du liquide et diffèrent ; par exemple, sous 1 atm, l'eau bout à 100 °C et l'alcool éthylique à 78 °C.",
         "ru": "Жидкость кипит, когда давление её пара равно внешнему давлению. В одних и тех же условиях внешнее давление одинаково, поэтому давления пара кипящей воды и кипящего этилового спирта равны этому давлению, а значит, и друг другу. Температура кипения, теплота испарения, вязкость и плотность зависят от природы жидкости и различаются; например, при 1 атм вода кипит при 100 °C, а этиловый спирт — при 78 °C.",
         "ar": "يغلي السائل عندما يساوي ضغط بخاره الضغط الخارجي. وفي الوسط نفسه يكون الضغط الخارجي واحدًا، لذا فضغط بخار الماء وضغط بخار الكحول الإيثيلي أثناء الغليان يساويان هذا الضغط، فهما متساويان. أما درجة الغليان وحرارة التبخر واللزوجة والكثافة فتعتمد على نوع السائل وتختلف؛ فمثلًا عند 1 atm يغلي الماء عند 100 °C والكحول الإيثيلي عند 78 °C.",
-        "zh": "液体在蒸气压等于外界压强时沸腾。在同一环境中外界压强相同，所以沸腾的水和沸腾的乙醇的蒸气压都等于这一压强，因而彼此相等。沸点、汽化热、粘度和密度取决于液体的种类，各不相同；例如在 1 atm 下水在 100 °C 沸腾，乙醇在 78 °C 沸腾。",
+        "zh": "液体在蒸气压等于外界压强时沸腾。在同一环境中外界压强相同，所以沸腾的水和沸腾的乙醇的蒸气压都等于这一压强，因而彼此相等。沸点、汽化热、黏度和密度取决于液体的种类，各不相同；例如在 1 atm 下水在 100 °C 沸腾，乙醇在 78 °C 沸腾。",
         "ku": "Şile dema zexta buhara wê bi zexta derve re wekhev dibe dikele. Di heman hawîrdorê de zexta derve yek e, loma zextên buharê yên ava ku dikele û etîl alkola ku dikele bi vê zextê re, û ji ber vê yekê bi hev re jî wekhev in. Germahiya kelandinê, germa hilmbûnê, vîskozîtî û çirbûn bi cureyê şileyê ve girêdayî ne û cuda ne; mînak di 1 atm de av di 100 °C de, etîl alkol di 78 °C de dikele."
       }
     },
@@ -1279,7 +1279,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Humidité relative = (pression de vapeur d'eau de l'air / pression de vapeur saturante) · 100 = (18 / 24) · 100 = 75. Le rapport inversé (24 / 18) · 100 ≈ 133 contredit le fait que l'humidité relative ne peut dépasser 100. (24 − 18) / 24 · 100 = 25 indique l'écart à la saturation ; 43 et 57 viennent d'une division par la somme des pressions.",
         "ru": "Относительная влажность = (давление водяного пара в воздухе / давление насыщенного пара) · 100 = (18 / 24) · 100 = 75. Обратное отношение (24 / 18) · 100 ≈ 133 противоречит тому, что относительная влажность не может превышать 100. (24 − 18) / 24 · 100 = 25 показывает, насколько воздух далёк от насыщения; 43 и 57 получаются при делении на сумму давлений.",
         "ar": "الرطوبة النسبية = (ضغط بخار الماء في الهواء / ضغط البخار المشبع) · 100 = (18 / 24) · 100 = 75. وقلب النسبة يعطي (24 / 18) · 100 ≈ 133، وهذا يناقض أن الرطوبة النسبية لا تتجاوز 100. أما (24 − 18) / 24 · 100 = 25 فيبيّن بُعد الهواء عن التشبع، والقيمتان 43 و57 تنتجان عن القسمة على مجموع الضغطين.",
-        "zh": "相对湿度 =（空气中水蒸气压 / 饱和蒸气压）· 100 =（18 / 24）· 100 = 75。把比值颠倒会得到（24 / 18）· 100 ≈ 133，这与相对湿度不能超过 100 相矛盾。（24 − 18）/ 24 · 100 = 25 表示离饱和还差多少；43 和 57 是除以两压强之和得到的。",
+        "zh": "相对湿度 = (空气中水蒸气压 / 饱和蒸气压) · 100 = (18 / 24) · 100 = 75。把比值颠倒会得到 (24 / 18) · 100 ≈ 133，这与相对湿度不能超过 100 相矛盾。(24 − 18) / 24 · 100 = 25 表示离饱和还差多少；43 和 57 是除以两压强之和得到的。",
         "ku": "Şiliya nisbî = (zexta buhara avê ya hewayê / zexta buharê ya têr) · 100 = (18 / 24) · 100 = 75. Heke rêje berovajî were danîn (24 / 18) · 100 ≈ 133 derdikeve; ev bi rastiya ku şiliya nisbî ji 100 derbas nabe re nakok e. (24 − 18) / 24 · 100 = 25 nîşan dide ka hewa çiqas ji têrbûnê dûr e; 43 û 57 ji parvekirina li ser berhevoka zextan tên."
       }
     },
@@ -1442,7 +1442,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "A pure solid X is heated at constant pressure and a constant rate. The temperature–time data are:\n0–2 min: rises from −20 °C to 10 °C\n2–6 min: stays at 10 °C\n6–9 min: rises from 10 °C to 60 °C\n9–15 min: stays at 60 °C\nWhich of the following is incorrect?",
         "de": "Ein reiner Feststoff X wird bei konstantem Druck gleichmäßig erhitzt. Temperatur-Zeit-Daten:\n0–2 min: Anstieg von −20 °C auf 10 °C\n2–6 min: konstant bei 10 °C\n6–9 min: Anstieg von 10 °C auf 60 °C\n9–15 min: konstant bei 60 °C\nWelche Aussage ist falsch?",
         "fr": "Un solide pur X est chauffé à pression constante et à vitesse constante. Données température–temps :\n0–2 min : passe de −20 °C à 10 °C\n2–6 min : reste à 10 °C\n6–9 min : passe de 10 °C à 60 °C\n9–15 min : reste à 60 °C\nLaquelle des affirmations suivantes est incorrecte ?",
-        "ru": "Чистое твёрдое вещество X равномерно нагревают при постоянном давлении. Данные «температура – время»:\n0–2 мин: от −20 °C до 10 °C\n2–6 мин: постоянно 10 °C\n6–9 мин: от 10 °C до 60 °C\n9–15 мин: постоянно 60 °C\nКакое утверждение неверно?",
+        "ru": "Чистое твёрдое вещество X равномерно нагревают при постоянном давлении. Данные «температура — время»:\n0–2 мин: от −20 °C до 10 °C\n2–6 мин: постоянно 10 °C\n6–9 мин: от 10 °C до 60 °C\n9–15 мин: постоянно 60 °C\nКакое утверждение неверно?",
         "ar": "تُسخَّن مادة صلبة نقية X عند ضغط ثابت وبمعدل ثابت. بيانات درجة الحرارة والزمن:\n0–2 دقيقة: ترتفع من −20 °C إلى 10 °C\n2–6 دقيقة: تبقى عند 10 °C\n6–9 دقيقة: ترتفع من 10 °C إلى 60 °C\n9–15 دقيقة: تبقى عند 60 °C\nأيّ العبارات الآتية خاطئة؟",
         "zh": "在恒压下以恒定速率加热纯固体 X，温度–时间数据如下：\n0–2 min：由 −20 °C 升至 10 °C\n2–6 min：保持 10 °C\n6–9 min：由 10 °C 升至 60 °C\n9–15 min：保持 60 °C\n下列说法错误的是哪一项？",
         "ku": "Hişkeke saf X di zexta sabît de û bi leza sabît tê germkirin. Daneyên germahî–dem ev in:\n0–2. deqe: ji −20 °C derdikeve 10 °C\n2–6. deqe: li 10 °C sabît dimîne\n6–9. deqe: ji 10 °C derdikeve 60 °C\n9–15. deqe: li 60 °C sabît dimîne\nLi gorî vê, kîjan şaş e?"
@@ -1483,7 +1483,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "Between 2 and 6 min solid and liquid X are present together.",
           "de": "Zwischen 2 und 6 min liegen fester und flüssiger Stoff X nebeneinander vor.",
           "fr": "Entre 2 et 6 min, X solide et X liquide coexistent.",
-          "ru": "С 2-й по 6-ю минуту твёрдое и жидкое X существуют одновременно.",
+          "ru": "С 2-й по 6-ю минуту X находится одновременно в твёрдом и жидком состоянии.",
           "ar": "بين الدقيقتين 2 و6 توجد X الصلبة والسائلة معاً.",
           "zh": "2–6 min 时固态和液态 X 共存。",
           "ku": "Di navbera deqeyên 2–6. de X ya hişk û şile bi hev re hene."
@@ -1507,7 +1507,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Lors du chauffage, le premier palier (10 °C) correspond à la fusion et le second (60 °C) à l'ébullition ; de 2 à 6 min solide et liquide coexistent, de 6 à 9 min seul le liquide s'échauffe. L'énergie cinétique moyenne dépend de la température ; de 9 à 15 min la température est constante, elle ne varie donc pas : la chaleur sert à vaincre les attractions intermoléculaires (l'énergie potentielle augmente). L'affirmation fausse est celle qui parle d'une hausse de l'énergie cinétique.",
         "ru": "При нагревании первая площадка (10 °C) — плавление, вторая (60 °C) — кипение; с 2-й по 6-ю минуту твёрдая и жидкая фазы сосуществуют, с 6-й по 9-ю нагревается только жидкость. Средняя кинетическая энергия зависит от температуры; с 9-й по 15-ю минуту температура постоянна, значит, средняя кинетическая энергия не меняется — теплота идёт на преодоление межмолекулярного притяжения (растёт потенциальная энергия). Поэтому неверно утверждение о росте кинетической энергии.",
         "ar": "أثناء التسخين يمثل الثبات الأول لدرجة الحرارة (10 °C) الانصهار والثاني (60 °C) الغليان؛ وبين الدقيقتين 2 و6 توجد الحالتان الصلبة والسائلة معاً، وبين 6 و9 يسخن السائل فقط. ويعتمد متوسط الطاقة الحركية على درجة الحرارة، وبين 9 و15 تكون الدرجة ثابتة فلا يتغير، بل تُستهلك الحرارة في التغلب على التجاذب بين الجزيئات (تزداد الطاقة الكامنة). لذا فالعبارة الخاطئة هي التي تقول إن الطاقة الحركية تزداد.",
-        "zh": "加热过程中第一个温度不变的阶段（10 °C）是熔化，第二个（60 °C）是沸腾；2–6 min 固液共存，6–9 min 只有液体在升温。平均动能取决于温度；9–15 min 温度不变，平均动能不变，吸收的热量用于克服分子间吸引（势能增大）。所以错误的是“平均动能增大”这一说法。",
+        "zh": "加热过程中第一个温度不变的阶段(10 °C)是熔化，第二个(60 °C)是沸腾；2–6 min 固液共存，6–9 min 只有液体在升温。平均动能取决于温度；9–15 min 温度不变，平均动能不变，吸收的热量用于克服分子间吸引（势能增大）。所以错误的是“平均动能增大”这一说法。",
         "ku": "Di germkirinê de beşa yekem a ku germahî sabît dimîne (10 °C) helîn, ya duyem (60 °C) kelandin e; di deqeyên 2–6. de hişk û şile bi hev re ne, di deqeyên 6–9. de tenê şile germ dibe. Enerjiya kînetîk a navîn bi germahiyê ve girêdayî ye; di deqeyên 9–15. de germahî sabît e, loma naguhere — germahiya tê dayîn ji bo bindestkirina kişandinên navbera molekulan tê xerckirin (enerjiya potansiyel zêde dibe). Ji ber vê yekê gotina şaş ew e ku dibêje enerjiya kînetîk zêde dibe."
       }
     },
@@ -1531,7 +1531,7 @@ export const unit04: ChemistryUnitSeedData = {
           "fr": "NaCl, quartz (SiO2), glace",
           "ru": "NaCl, кварц (SiO2), лёд",
           "ar": "NaCl، الكوارتز (SiO2)، الجليد",
-          "zh": "NaCl、石英（SiO2）、冰",
+          "zh": "NaCl、石英(SiO2)、冰",
           "ku": "NaCl, kuvars (SiO2), cemed"
         },
         {
@@ -1541,7 +1541,7 @@ export const unit04: ChemistryUnitSeedData = {
           "fr": "Glace, NaCl, quartz (SiO2)",
           "ru": "Лёд, NaCl, кварц (SiO2)",
           "ar": "الجليد، NaCl، الكوارتز (SiO2)",
-          "zh": "冰、NaCl、石英（SiO2）",
+          "zh": "冰、NaCl、石英(SiO2)",
           "ku": "Cemed, NaCl, kuvars (SiO2)"
         },
         {
@@ -1551,7 +1551,7 @@ export const unit04: ChemistryUnitSeedData = {
           "fr": "Quartz (SiO2), NaCl, glace",
           "ru": "Кварц (SiO2), NaCl, лёд",
           "ar": "الكوارتز (SiO2)، NaCl، الجليد",
-          "zh": "石英（SiO2）、NaCl、冰",
+          "zh": "石英(SiO2)、NaCl、冰",
           "ku": "Kuvars (SiO2), NaCl, cemed"
         },
         {
@@ -1561,7 +1561,7 @@ export const unit04: ChemistryUnitSeedData = {
           "fr": "Quartz (SiO2), glace, NaCl",
           "ru": "Кварц (SiO2), лёд, NaCl",
           "ar": "الكوارتز (SiO2)، الجليد، NaCl",
-          "zh": "石英（SiO2）、冰、NaCl",
+          "zh": "石英(SiO2)、冰、NaCl",
           "ku": "Kuvars (SiO2), cemed, NaCl"
         },
         {
@@ -1581,7 +1581,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "X — very hard, very high melting point and non-conducting in every state — is a solid whose atoms form a covalent network: quartz. Y — hard and brittle, non-conducting as a solid but conducting when molten — is ionic: NaCl. Z — soft, low-melting and insulating — is a molecular solid: ice. Iron conducts electricity as a solid, so it cannot be X.",
         "de": "X – sehr hart, sehr hoher Schmelzpunkt, in keinem Zustand leitend – ist ein Feststoff mit kovalentem Atomnetz: Quarz. Y – hart und spröde, fest nichtleitend, geschmolzen leitend – ist ionisch: NaCl. Z – weich, niedrig schmelzend, nichtleitend – ist ein Molekülkristall: Eis. Eisen leitet im festen Zustand und kann daher nicht X sein.",
         "fr": "X — très dur, point de fusion très élevé, non conducteur dans tout état — est un solide dont les atomes forment un réseau covalent : le quartz. Y — dur et cassant, isolant à l'état solide mais conducteur fondu — est ionique : NaCl. Z — tendre, à bas point de fusion et isolant — est un solide moléculaire : la glace. Le fer conduit à l'état solide, il ne peut donc pas être X.",
-        "ru": "X — очень твёрдое, с очень высокой температурой плавления и не проводящее ток ни в каком состоянии — вещество с ковалентной атомной сеткой: кварц. Y — твёрдое и хрупкое, не проводит в твёрдом виде, но проводит в расплаве — ионное: NaCl. Z — мягкое, легкоплавкое, непроводящее — молекулярное: лёд. Железо проводит ток в твёрдом состоянии, поэтому не может быть X.",
+        "ru": "X — очень твёрдое вещество с очень высокой температурой плавления, не проводящее ток ни в каком состоянии, — вещество с атомной (ковалентной) кристаллической решёткой: кварц. Y — твёрдое и хрупкое, не проводит ток в твёрдом состоянии, но проводит в расплаве — ионное вещество: NaCl. Z — мягкое, легкоплавкое, не проводящее ток — молекулярное вещество: лёд. Железо проводит ток в твёрдом состоянии, поэтому не может быть X.",
         "ar": "X الشديدة الصلابة العالية الانصهار جداً غير الموصلة في أيّ حالة مادة صلبة ترتبط ذراتها بروابط تساهمية شبكية: الكوارتز. وY الصلبة الهشة غير الموصلة صلبةً والموصلة مصهورةً أيونية: NaCl. وZ الطرية المنخفضة الانصهار العازلة صلب جزيئي: الجليد. والحديد يوصل الكهرباء صلباً فلا يمكن أن يكون X.",
         "zh": "X 非常坚硬、熔点很高、任何状态都不导电，是原子以共价键连成网状结构的固体：石英。Y 硬而脆、固态不导电而熔融态导电，是离子晶体：NaCl。Z 质软、熔点低、不导电，是分子晶体：冰。铁在固态时能导电，所以不可能是 X。",
         "ku": "X ya pir hişk, bi xala helînê ya pir bilind û di tu rewşê de neguhêzer, hişkeke ku atomên wê bi girêdanên kovalent torekê çêdikin e: kuvars. Y ya hişk û şikestbar, di rewşa hişk de neguhêzer lê dema dihele guhêzer, îyonîk e: NaCl. Z ya nerm, bi xala helînê ya nizm û îzolator, hişkeke molekulî ye: cemed. Hesin di rewşa hişk de elektrîkê diguhezîne, loma nabe X."
@@ -1605,7 +1605,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "Glass is a metallically bonded solid",
           "de": "Glas ist ein metallisch gebundener Feststoff",
           "fr": "Le verre est un solide à liaison métallique",
-          "ru": "Стекло — твёрдое вещество с металлической связью",
+          "ru": "Металлическая связь в стекле",
           "ar": "كون الزجاج مادة صلبة ذات روابط فلزية",
           "zh": "玻璃是以金属键结合的固体",
           "ku": "Cam hişkeke bi girêdana metalî ye"
@@ -1615,7 +1615,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "The particles of glass are arranged randomly without forming an ordered lattice",
           "de": "Die Teilchen des Glases sind ungeordnet, ohne ein regelmäßiges Gitter zu bilden",
           "fr": "Les particules du verre sont disposées au hasard, sans former de réseau ordonné",
-          "ru": "Частицы стекла расположены хаотично, не образуя упорядоченной решётки",
+          "ru": "Хаотичное расположение частиц стекла без упорядоченной решётки",
           "ar": "ترتّب دقائق الزجاج عشوائياً دون تكوين شبكة منتظمة",
           "zh": "玻璃微粒杂乱排列，没有形成有序的晶格",
           "ku": "Perçikên camê bê ku torekê rêkûpêk çêkin bi awayekî tevlihev rêz bûne"
@@ -1625,7 +1625,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "The particles of glass are arranged in a regular, repeating crystal lattice",
           "de": "Die Teilchen des Glases bilden ein regelmäßiges, sich wiederholendes Kristallgitter",
           "fr": "Les particules du verre forment un réseau cristallin régulier et répétitif",
-          "ru": "Частицы стекла образуют правильную повторяющуюся кристаллическую решётку",
+          "ru": "Расположение частиц стекла в правильной повторяющейся кристаллической решётке",
           "ar": "ترتّب دقائق الزجاج في شبكة بلورية منتظمة ومتكررة",
           "zh": "玻璃微粒排列成规则、重复的晶格",
           "ku": "Perçikên camê di torê krîstalê ya rêkûpêk û dubarebûyî de rêz bûne"
@@ -1635,7 +1635,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "Glass is a molecular crystal",
           "de": "Glas ist ein Molekülkristall",
           "fr": "Le verre est un cristal moléculaire",
-          "ru": "Стекло — молекулярный кристалл",
+          "ru": "Молекулярная кристаллическая структура стекла",
           "ar": "كون الزجاج بلورة جزيئية",
           "zh": "玻璃是分子晶体",
           "ku": "Cam krîstaleke molekulî ye"
@@ -1645,7 +1645,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "The water inside the glass evaporates when heated",
           "de": "Das Wasser im Glas verdampft beim Erhitzen",
           "fr": "L'eau contenue dans le verre s'évapore quand on le chauffe",
-          "ru": "Вода внутри стекла испаряется при нагревании",
+          "ru": "Испарение воды, содержащейся в стекле, при нагревании",
           "ar": "تبخّر الماء الموجود داخل الزجاج عند التسخين",
           "zh": "玻璃中的水受热蒸发",
           "ku": "Ava di hundirê camê de dema tê germkirin dibuhire"
@@ -1657,7 +1657,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "In crystalline solids the particles form an ordered lattice, so all the interactions are overcome at the same temperature and a sharp melting point is seen. In glass the particles are arranged randomly (amorphous), so the strength of the interactions varies from place to place; they are overcome at different temperatures and glass softens over a range. Glass is neither a metallic nor a molecular crystal, and the softening is not caused by loss of water.",
         "de": "In kristallinen Feststoffen bilden die Teilchen ein geordnetes Gitter, alle Wechselwirkungen werden bei derselben Temperatur überwunden – es gibt einen scharfen Schmelzpunkt. Im Glas sind die Teilchen ungeordnet (amorph), die Wechselwirkungen sind unterschiedlich stark und werden bei verschiedenen Temperaturen überwunden; Glas erweicht daher über einen Bereich. Glas ist weder Metall- noch Molekülkristall, und das Erweichen kommt nicht von Wasserverlust.",
         "fr": "Dans un solide cristallin, les particules forment un réseau ordonné : toutes les interactions cèdent à la même température et l'on observe un point de fusion net. Dans le verre, les particules sont disposées au hasard (amorphe), la force des interactions varie d'un endroit à l'autre ; elles cèdent à des températures différentes et le verre se ramollit sur un intervalle. Le verre n'est ni un cristal métallique ni un cristal moléculaire, et le ramollissement n'est pas dû à une perte d'eau.",
-        "ru": "В кристаллических веществах частицы образуют упорядоченную решётку, и все взаимодействия преодолеваются при одной температуре — наблюдается чёткая температура плавления. В стекле частицы расположены хаотично (аморфно), сила взаимодействий различается, и они преодолеваются при разных температурах, поэтому стекло размягчается в интервале. Стекло не металлический и не молекулярный кристалл, а размягчение не связано с потерей воды.",
+        "ru": "В кристаллических веществах частицы образуют упорядоченную решётку, и все взаимодействия преодолеваются при одной температуре — наблюдается чёткая температура плавления. В стекле частицы расположены хаотично (аморфно), сила взаимодействий между ними различается, и они преодолеваются при разных температурах, поэтому стекло размягчается в интервале температур. Стекло не является ни металлическим, ни молекулярным кристаллом, а размягчение не связано с потерей воды.",
         "ar": "في المواد الصلبة البلورية تترتب الدقائق في شبكة منتظمة، فيُتغلَّب على جميع التآثرات عند الدرجة نفسها وتظهر درجة انصهار حادة. أما في الزجاج فتترتب الدقائق عشوائياً (غير متبلور)، فتختلف قوة التآثرات من موضع لآخر ويُتغلَّب عليها عند درجات مختلفة، فيلين الزجاج على مدى من الدرجات. والزجاج ليس بلورة فلزية ولا جزيئية، وليونته لا تعود إلى فقد الماء.",
         "zh": "晶体中微粒排列成有序的晶格，所有相互作用在同一温度被克服，所以有固定熔点。玻璃中微粒杂乱排列（非晶态），各处相互作用强弱不同，在不同温度下被克服，因此玻璃在一个温度范围内软化。玻璃既不是金属晶体也不是分子晶体，软化也不是失水造成的。",
         "ku": "Di hişkên krîstalî de perçik di torekê rêkûpêk de rêz dibin, loma hemû têkilî di heman germahiyê de tên bindestkirin û xala helînê ya tûj tê dîtin. Di camê de perçik bi awayekî tevlihev (amorf) rêz bûne, loma hêza têkiliyan ji cihekî bo cihekî cuda ye; ev di germahiyên cuda de tên bindestkirin û cam di navberekê de nerm dibe. Cam ne krîstala metalî ne jî molekulî ye; sedema nermbûnê ne windabûna avê ye."
@@ -1735,7 +1735,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Le couvercle retient la vapeur et la pression intérieure dépasse 1 atm. L'eau bout lorsque sa pression de vapeur égale cette pression plus élevée : son point d'ébullition dépasse 100 °C (environ 120 °C) et les aliments cuisent plus vite à cette température. Une pression plus forte n'abaisse pas le point d'ébullition ; l'eau bout quand même, mais plus chaude.",
         "ru": "Крышка скороварки удерживает пар, и давление внутри становится выше 1 атм. Вода кипит, когда давление её пара равно этому повышенному давлению, поэтому температура кипения поднимается выше 100 °C (примерно до 120 °C), и пища готовится быстрее. Повышение давления не снижает температуру кипения; вода всё равно кипит, но при более высокой температуре.",
         "ar": "يحبس غطاء قدر الضغط البخار فيرتفع الضغط الداخلي فوق 1 atm. ولأن الماء يغلي عندما يساوي ضغط بخاره هذا الضغط الأعلى، ترتفع درجة غليانه فوق 100 °C (نحو 120 °C) فيُطهى الطعام أسرع. وزيادة الضغط لا تخفض درجة الغليان؛ فالماء يغلي أيضاً لكن عند درجة أعلى.",
-        "zh": "高压锅的锅盖把蒸汽封住，锅内压强高于 1 atm。水在蒸气压等于这个较高压强时才沸腾，所以沸点升到 100 °C 以上（约 120 °C），食物在更高温度下熟得更快。压强增大不会使沸点降低；水照样沸腾，只是温度更高。",
+        "zh": "高压锅的锅盖把蒸汽封住，锅内压强高于 1 atm。水在蒸气压等于这个较高压强时才沸腾，所以沸点升到 100 °C 以上(约 120 °C)，食物在更高温度下熟得更快。压强增大不会使沸点降低；水照样沸腾，只是温度更高。",
         "ku": "Qapaxa beroşa bi zext buharê digire, loma zexta hundir ji 1 atm bilindtir dibe. Av dema zexta buhara wê bi vê zexta bilindtir re wekhev dibe dikele, loma xala kelandinê ji 100 °C (nêzîkî 120 °C) derbas dibe û xwarin di germahiya bilindtir de zûtir dipije. Zexta zêde xala kelandinê nizm nake; av dîsa dikele, lê di germahiyeke bilindtir de."
       }
     },
@@ -2039,7 +2039,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "La vitesse d'évaporation augmente avec la surface ; étendre le linge agrandit la surface d'eau en contact avec l'air (I correcte). Le vent emporte la vapeur, réduit la recondensation et accélère l'évaporation (II correcte). Par forte humidité relative, l'air est presque saturé : l'évaporation nette ralentit et le linge sèche lentement (III incorrecte). Réponse : I et II.",
         "ru": "Скорость испарения растёт с площадью поверхности; развешивание белья увеличивает поверхность воды, соприкасающуюся с воздухом (I верно). Ветер уносит пар у поверхности, уменьшает обратную конденсацию и ускоряет испарение (II верно). При высокой относительной влажности воздух близок к насыщению, суммарное испарение замедляется и бельё сохнет дольше (III неверно). Ответ: I и II.",
         "ar": "تزداد سرعة التبخر بزيادة المساحة السطحية، ونشر الملابس يكبّر سطح الماء الملامس للهواء (I صحيحة). والرياح تُبعد البخار عن السطح فتقلّل التكاثف من جديد وتسرّع التبخر (II صحيحة). أما عند ارتفاع الرطوبة النسبية فيكون الهواء قريباً من التشبع فيتباطأ التبخر الصافي وتتأخر الملابس في الجفاف (III خاطئة). الإجابة: I وII.",
-        "zh": "蒸发速率随表面积增大而增大，把衣服展开增大了与空气接触的水面（I 正确）。风把表面的水蒸气带走，减少重新凝结，加快蒸发（II 正确）。相对湿度高时空气接近饱和，净蒸发变慢，衣服干得慢（III 错误）。答案：I 和 II。",
+        "zh": "蒸发速率随表面积增大而增大，把衣服展开增大了与空气接触的水面(I 正确)。风把表面的水蒸气带走，减少重新凝结，加快蒸发(II 正确)。相对湿度高时空气接近饱和，净蒸发变慢，衣服干得慢(III 错误)。答案：I 和 II。",
         "ku": "Leza buharbûnê bi zêdebûna rûyê re zêde dibe; raxistina fireh a cilan rûyê avê yê bi hewayê re têkildar mezin dike (I rast e). Ba buhara li ser rûyê dûr dixe, hilmbûna dîsa kêm dike û buharbûnê bilez dike (II rast e). Dema şiliya nisbî bilind e hewa nêzîkî têrbûnê ye, buharbûna net hêdî dibe û cil dereng hişk dibin (III şaş e). Bersiv: I û II."
       }
     },
@@ -2081,7 +2081,7 @@ export const unit04: ChemistryUnitSeedData = {
           "en": "Ice is a covalent network crystal",
           "de": "Eis ist ein kovalenter Netzwerkkristall",
           "fr": "La glace est un cristal covalent en réseau",
-          "ru": "Лёд — ковалентный каркасный кристалл",
+          "ru": "Лёд — кристалл с атомной (ковалентной) решёткой",
           "ar": "الجليد بلورة تساهمية شبكية",
           "zh": "冰是共价网状晶体",
           "ku": "Cemed krîstaleke bi tora kovalent e"
@@ -2126,7 +2126,7 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Some water is placed in a closed container and kept at constant temperature. Once evaporation–condensation equilibrium is reached with liquid still present, which statement is correct?",
         "de": "Etwas Wasser wird in einem geschlossenen Gefäß bei konstanter Temperatur stehen gelassen. Welche Aussage ist richtig, wenn sich bei noch vorhandener Flüssigkeit das Verdunstungs-Kondensations-Gleichgewicht eingestellt hat?",
         "fr": "On place un peu d'eau dans un récipient fermé à température constante. Une fois l'équilibre évaporation–condensation atteint, avec du liquide encore présent, quelle affirmation est correcte ?",
-        "ru": "В закрытый сосуд налили немного воды и оставили при постоянной температуре. Какое утверждение верно после установления равновесия «испарение – конденсация» при наличии жидкости?",
+        "ru": "В закрытый сосуд налили немного воды и оставили при постоянной температуре. Какое утверждение верно после установления равновесия «испарение — конденсация», пока в сосуде есть жидкая вода?",
         "ar": "وُضعت كمية من الماء في وعاء مغلق وتُركت عند درجة حرارة ثابتة. عندما يتحقق اتزان التبخر–التكاثف مع بقاء سائل في الوعاء، أيّ العبارات الآتية صحيحة؟",
         "zh": "把少量水放入密闭容器中，在恒温下放置。当容器中仍有液态水且达到蒸发–凝结平衡时，下列说法正确的是哪一项？",
         "ku": "Hinek av tê xistin firaxeke girtî û di germahiya sabît de tê hiştin. Dema ku hîn şile heye û hevsengiya buharbûn–hilmbûnê pêk tê, kîjan gotin rast e?"
@@ -2204,7 +2204,7 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "Lequel des changements d'état suivants se produit en absorbant de la chaleur (de façon endothermique) ?",
         "ru": "Какой из следующих фазовых переходов происходит с поглощением теплоты (эндотермически)?",
         "ar": "أيّ تغيرات الحالة الآتية يحدث بامتصاص الحرارة (ماصاً للحرارة)؟",
-        "zh": "下列物态变化中，哪一个是吸热（吸热过程）的？",
+        "zh": "下列物态变化中，哪一个是吸热过程？",
         "ku": "Kîjan ji van guherînên halê bi wergirtina germê (endotermîk) pêk tê?"
       },
       "options": [

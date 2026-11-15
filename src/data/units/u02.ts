@@ -13,7 +13,7 @@ export const unit02: ChemistryUnitSeedData = {
     "fr": "Atome et Système Périodique",
     "ru": "Атом и периодическая система",
     "ar": "الذرة والجدول الدوري",
-    "zh": "原子与周期系",
+    "zh": "原子与元素周期表",
     "ku": "Atom û Sîstema Periyodîk"
   },
   "subtitle": {
@@ -23,7 +23,7 @@ export const unit02: ChemistryUnitSeedData = {
     "fr": "Modèles, nombres quantiques et propriétés périodiques",
     "ru": "Модели, квантовые числа и периодические свойства",
     "ar": "النماذج والأعداد الكمومية والخصائص الدورية",
-    "zh": "模型、量子数和周期性特性",
+    "zh": "原子模型、量子数与周期性质",
     "ku": "Model, Jijmarên Kuantum û Taybetmendiyên Perîyodîk"
   },
   "facts": [
@@ -64,9 +64,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "The model with fixed circular orbits belongs to Bohr.",
         "de": "Das Modell mit festen Kreisbahnen stammt von Bohr.",
         "fr": "Le modèle à orbites circulaires fixes est celui de Bohr.",
-        "ru": "Модель с фиксированными круговыми орбитами принадлежит Бору.",
+        "ru": "Модель с орбитами электронов предложил Бор, а не Резерфорд.",
         "ar": "نموذج المدارات الدائرية الثابتة يعود إلى بور.",
-        "zh": "固定圆形轨道模型属于玻尔。",
+        "zh": "轨道模型是玻尔提出的。",
         "ku": "Modela rêgehên dorhêl ên sabît ya Bohr e."
       }
     },
@@ -77,9 +77,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "In the Thomson raisin cake model, he defined the atom as electrons embedded in a positively charged sphere.",
         "de": "Im Thomson-Rosinenkuchen-Modell definierte er das Atom als Elektronen, die in einer positiv geladenen Kugel eingebettet sind.",
         "fr": "Dans le modèle du gâteau aux raisins de Thomson, il a défini l’atome comme étant des électrons intégrés dans une sphère chargée positivement.",
-        "ru": "В модели торта с изюмом Томсона он определил атом как электроны, заключенные в положительно заряженную сферу.",
+        "ru": "В модели Томсона (модели «пудинга с изюмом») атом представлен как положительно заряженный шар, в который вкраплены электроны.",
         "ar": "في نموذج كعكة الزبيب طومسون، عرّف الذرة بأنها إلكترونات مدمجة في كرة موجبة الشحنة.",
-        "zh": "在汤姆森葡萄干蛋糕模型中，他将原子定义为嵌入带正电球体中的电子。",
+        "zh": "汤姆孙在“葡萄干布丁”模型中，把原子描述为电子镶嵌在带正电的球体中。",
         "ku": "Di modela kekê raisinê ya Thomson de, wî atom wekî elektronên ku di qadek bi barkirina erênî de hatine bicîh kirin pênase kir."
       },
       "trap": {
@@ -89,7 +89,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Thomson a prouvé qu'il y a des neutrons dans le noyau.",
         "ru": "Томсон доказал, что в ядре есть нейтроны.",
         "ar": "أثبت طومسون أن هناك نيوترونات في النواة.",
-        "zh": "汤姆森证明了原子核中存在中子。",
+        "zh": "汤姆孙证明了原子核中存在中子。",
         "ku": "Thomson îspat kir ku di navokê de neutron hene."
       },
       "whyTrapIsFalse": {
@@ -110,9 +110,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "According to the Bohr atomic model, electrons are located in certain energy levels (orbits) around the nucleus.",
         "de": "Nach dem Bohrschen Atommodell befinden sich Elektronen in bestimmten Energieniveaus (Bahnen) um den Kern.",
         "fr": "Selon le modèle atomique de Bohr, les électrons sont situés à certains niveaux d'énergie (orbites) autour du noyau.",
-        "ru": "Согласно атомной модели Бора, электроны располагаются на определенных энергетических уровнях (орбитах) вокруг ядра.",
+        "ru": "Согласно модели атома Бора, электроны находятся вокруг ядра на определённых энергетических уровнях (орбитах).",
         "ar": "وفقا لنموذج بور الذري، توجد الإلكترونات في مستويات طاقة معينة (المدارات) حول النواة.",
-        "zh": "根据玻尔原子模型，电子位于原子核周围的某些能级（轨道）中。",
+        "zh": "根据玻尔原子模型，电子处在原子核周围确定的能级（轨道）上。",
         "ku": "Li gorî modela atomê ya Bohr, elektron li derdora navokê di hin astên enerjiyê (rêgeh) de cih digirin."
       },
       "trap": {
@@ -122,7 +122,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Le modèle de Bohr expliquait pleinement le spectre des atomes multiélectroniques.",
         "ru": "Модель Бора полностью объяснила спектр многоэлектронных атомов.",
         "ar": "يوضح نموذج بور طيف الذرات المتعددة الإلكترونات بشكل كامل.",
-        "zh": "玻尔模型充分解释了多电子原子的光谱。",
+        "zh": "玻尔模型完全解释了多电子原子的光谱。",
         "ku": "Modela Bohr bi tevahî spektruma atomên pir-elektronî rave kir."
       },
       "whyTrapIsFalse": {
@@ -143,9 +143,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Isotope atoms have the same number of protons, but different numbers of neutrons and mass numbers.",
         "de": "Isotopenatome haben die gleiche Anzahl an Protonen, aber unterschiedliche Neutronenzahlen und Massenzahlen.",
         "fr": "Les atomes isotopiques ont le même nombre de protons, mais des nombres de neutrons et des nombres de masse différents.",
-        "ru": "Атомы изотопов имеют одинаковое количество протонов, но разное количество нейтронов и массовые числа.",
+        "ru": "У изотопов одинаковое число протонов, но разное число нейтронов и разные массовые числа.",
         "ar": "تحتوي ذرات النظائر على نفس عدد البروتونات، لكن أعداد النيوترونات والأعداد الكتلية مختلفة.",
-        "zh": "同位素原子具有相同数量的质子，但具有不同数量的中子和质量数。",
+        "zh": "同位素原子的质子数相同，中子数和质量数不同。",
         "ku": "Di atomên îzotopan de heman hejmar proton hene, lê hejmarên neutron û girseyên cûda hene."
       },
       "trap": {
@@ -153,7 +153,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "The chemical properties of isotope atoms are completely different from each other.",
         "de": "Die chemischen Eigenschaften der Isotopenatome sind völlig unterschiedlich.",
         "fr": "Les propriétés chimiques des atomes isotopiques sont complètement différentes les unes des autres.",
-        "ru": "Химические свойства атомов изотопов совершенно отличаются друг от друга.",
+        "ru": "Химические свойства изотопов совершенно различны.",
         "ar": "تختلف الخصائص الكيميائية لذرات النظائر تمامًا عن بعضها البعض.",
         "zh": "同位素原子的化学性质彼此完全不同。",
         "ku": "Taybetmendiyên kîmyayî yên atomên îzotopan bi tevahî ji hev cuda ne."
@@ -163,7 +163,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Chemical properties are set by the numbers of protons and electrons; these are the same in isotopes, so their chemical properties are the same and only mass-dependent physical properties differ.",
         "de": "Die chemischen Eigenschaften werden durch Protonen- und Elektronenzahl bestimmt; bei Isotopen sind diese gleich, daher sind die chemischen Eigenschaften gleich und nur massenabhängige physikalische Eigenschaften verschieden.",
         "fr": "Les propriétés chimiques dépendent des nombres de protons et d'électrons ; identiques chez les isotopes, elles sont donc les mêmes, seules les propriétés physiques liées à la masse diffèrent.",
-        "ru": "Химические свойства определяются числом протонов и электронов; у изотопов они одинаковы, поэтому химические свойства совпадают, а различаются лишь физические свойства, зависящие от массы.",
+        "ru": "Химические свойства определяются числом протонов и электронов; у изотопов эти числа одинаковы, поэтому одинаковы и химические свойства, а различаются лишь физические свойства, зависящие от массы.",
         "ar": "تحدد الخواصَّ الكيميائية أعدادُ البروتونات والإلكترونات، وهي متساوية في النظائر، لذا تتشابه خواصها الكيميائية ولا تختلف إلا الخواص الفيزيائية المرتبطة بالكتلة.",
         "zh": "化学性质由质子数和电子数决定；同位素的这两个数相同，所以化学性质相同，只有与质量有关的物理性质不同。",
         "ku": "Taybetiyên kîmyewî ji hêla hejmara proton û elektronan ve tên diyarkirin; di îzotopan de ev wekhev in, loma taybetiyên kîmyewî wekhev in, tenê taybetiyên fîzîkî yên girêdayî girseyê cuda ne."
@@ -209,7 +209,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "As electrons are removed from an atom, the remaining ones are held more strongly by the nucleus, so successive ionisation energies increase: IE1 < IE2 < IE3.",
         "de": "Je mehr Elektronen einem Atom entzogen werden, desto stärker hält der Kern die übrigen; die aufeinanderfolgenden Ionisierungsenergien steigen daher: IE1 < IE2 < IE3.",
         "fr": "À mesure qu'on arrache des électrons à un atome, les électrons restants sont plus retenus par le noyau ; les énergies d'ionisation successives augmentent donc : EI1 < EI2 < EI3.",
-        "ru": "По мере отрыва электронов оставшиеся сильнее притягиваются ядром, поэтому последовательные энергии ионизации возрастают: ЭИ1 < ЭИ2 < ЭИ3.",
+        "ru": "Каждый следующий электрон оторвать труднее, так как оставшиеся электроны сильнее притягиваются ядром; поэтому последовательные энергии ионизации растут: I1 < I2 < I3.",
         "ar": "كلما نُزعت إلكترونات من الذرة انجذبت الإلكترونات المتبقية إلى النواة بقوة أكبر، لذلك تتزايد طاقات التأين المتتالية: IE1 < IE2 < IE3.",
         "zh": "原子失去电子后，剩余电子受原子核吸引更强，所以逐级电离能依次增大：IE1 < IE2 < IE3。",
         "ku": "Her ku elektron ji atomê tên qetandin, elektronên mayî ji aliyê navikê ve bi hêztir tên kişandin; loma enerjiyên îyonbûnê yên li pey hev wekî İE1 < İE2 < İE3 zêde dibin."
@@ -229,7 +229,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "After one electron is removed, the proton number stays the same while the electron number falls; the remaining electrons are held more strongly, so IE2 is always greater than IE1.",
         "de": "Nach Abgabe eines Elektrons bleibt die Protonenzahl gleich, die Elektronenzahl sinkt; die übrigen Elektronen werden stärker angezogen, daher ist IE2 stets größer als IE1.",
         "fr": "Après le départ d'un électron, le nombre de protons reste le même alors que celui des électrons diminue ; les électrons restants sont plus fortement attirés, donc EI2 est toujours supérieure à EI1.",
-        "ru": "После отрыва одного электрона число протонов остаётся прежним, а электронов становится меньше; оставшиеся электроны притягиваются сильнее, поэтому ЭИ2 всегда больше ЭИ1.",
+        "ru": "После отрыва одного электрона число протонов остаётся прежним, а электронов становится меньше; оставшиеся электроны притягиваются сильнее, поэтому I2 всегда больше I1.",
         "ar": "بعد نزع إلكترون يبقى عدد البروتونات ثابتاً ويقل عدد الإلكترونات، فتنجذب الإلكترونات المتبقية بقوة أكبر، ولذلك تكون طاقة التأين الثانية دائماً أكبر من الأولى.",
         "zh": "失去一个电子后质子数不变而电子数减少，剩余电子受到更强的吸引，所以第二电离能总是大于第一电离能。",
         "ku": "Piştî ku elektronek tê qetandin hejmara protonan wekî xwe dimîne lê hejmara elektronan kêm dibe; elektronên mayî bi hêztir tên kişandin, loma İE2 her dem ji İE1 mezintir e."
@@ -242,9 +242,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "The number of electrons and arrangements of isoelectronic particles are the same, but the number of protons is different.",
         "de": "Die Anzahl der Elektronen und die Anordnung isoelektronischer Teilchen sind gleich, die Anzahl der Protonen ist jedoch unterschiedlich.",
         "fr": "Le nombre d’électrons et la disposition des particules isoélectroniques sont les mêmes, mais le nombre de protons est différent.",
-        "ru": "Число электронов и расположение изоэлектронных частиц одинаково, но число протонов различно.",
+        "ru": "Изоэлектронные частицы имеют одинаковое число электронов и одинаковую электронную конфигурацию, но разное число протонов.",
         "ar": "عدد الإلكترونات وترتيبات الجسيمات متساوية الإلكترون هي نفسها، لكن عدد البروتونات مختلف.",
-        "zh": "等电子粒子的电子数和排列相同，但质子数不同。",
+        "zh": "等电子微粒的电子数和电子排布相同，但质子数不同。",
         "ku": "Hejmara elektronan û rêzikên pariyên îzoelektronîk yek in, lê hejmara protonan cuda ye."
       },
       "trap": {
@@ -252,9 +252,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Isoelectronic particles have exactly the same desire to undergo chemical reactions.",
         "de": "Isoelektronische Teilchen haben genau den gleichen Wunsch, chemische Reaktionen einzugehen.",
         "fr": "Les particules isoélectroniques ont exactement le même désir de subir des réactions chimiques.",
-        "ru": "Изоэлектронные частицы имеют точно такое же желание вступать в химические реакции.",
+        "ru": "Изоэлектронные частицы обладают совершенно одинаковой химической активностью.",
         "ar": "تتمتع الجسيمات المتساوية الإلكترون بنفس الرغبة تمامًا في الخضوع للتفاعلات الكيميائية.",
-        "zh": "等电子粒子具有完全相同的进行化学反应的愿望。",
+        "zh": "等电子微粒发生化学反应的倾向完全相同。",
         "ku": "Parçeyên îzoelektronîk tam heman daxwaziya reaksiyonên kîmyewî hene."
       },
       "whyTrapIsFalse": {
@@ -264,7 +264,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Les espèces isoélectroniques n'ont en commun que le nombre d'électrons ; leurs nombres de protons et leurs charges diffèrent (ex. Na+ et Ne), leur comportement chimique aussi.",
         "ru": "У изоэлектронных частиц совпадает лишь число электронов; число протонов и заряд у них разные (например, Na+ и Ne), поэтому и химическое поведение разное.",
         "ar": "الدقائق متساوية الإلكترونات تتشابه في عدد الإلكترونات فقط، أما أعداد البروتونات والشحنات فمختلفة (مثل Na+ وNe)، ولذلك يختلف سلوكها الكيميائي.",
-        "zh": "等电子微粒只是电子数相同，质子数和电荷不同（如 Na+ 和 Ne），因此化学行为也不同。",
+        "zh": "等电子微粒只是电子数相同，质子数和电荷不同(如 Na+ 和 Ne)，因此化学性质也不同。",
         "ku": "Perçikên îzoelektronîk tenê di hejmara elektronan de wekhev in; hejmara proton û barên wan cuda ne (mînak Na+ û Ne), loma tevgera wan a kîmyewî jî cuda ye."
       }
     },
@@ -277,7 +277,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Le fluor est l'élément ayant l'électronégativité la plus élevée dans le système périodique (accepté comme 4,0).",
         "ru": "Фтор — элемент с самой высокой электроотрицательностью в периодической системе (принимается за 4,0).",
         "ar": "الفلور هو العنصر ذو أعلى سالبية كهربية في النظام الدوري (مقبول بـ 4.0).",
-        "zh": "氟是元素周期表中电负性最高的元素（公认为4.0）。",
+        "zh": "氟是元素周期表中电负性最大的元素(取值为 4.0)。",
         "ku": "Florîn di pergala perîyodîk de (wekî 4.0 tê qebûlkirin) elementa ku herî zêde elektronegatîv e."
       },
       "trap": {
@@ -287,7 +287,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Le chlore est l'élément le plus électronégatif du tableau périodique.",
         "ru": "Хлор — элемент с наибольшей электроотрицательностью в периодической системе.",
         "ar": "الكلور هو العنصر الأعلى كهرسلبية في الجدول الدوري.",
-        "zh": "氯是周期表中电负性最大的元素。",
+        "zh": "氯是元素周期表中电负性最大的元素。",
         "ku": "Di sîstema periyodîk de elementa herî elektronegatîf klor e."
       },
       "whyTrapIsFalse": {
@@ -295,7 +295,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Chlorine is also a highly electronegative halogen, but it has one more shell than fluorine; the element that attracts bonding electrons most strongly is the smaller fluorine.",
         "de": "Chlor ist ebenfalls ein stark elektronegatives Halogen, hat aber eine Schale mehr als Fluor; am stärksten zieht das kleinere Fluor die Bindungselektronen an.",
         "fr": "Le chlore est lui aussi un halogène très électronégatif, mais il possède une couche de plus que le fluor ; c'est le fluor, plus petit, qui attire le plus les électrons de liaison.",
-        "ru": "Хлор тоже сильно электроотрицательный галоген, но у него на один слой больше, чем у фтора; сильнее всех притягивает электроны связи меньший по размеру фтор.",
+        "ru": "Хлор — тоже галоген с высокой электроотрицательностью, но у него на один электронный слой больше, чем у фтора; сильнее всех электроны связи притягивает фтор с его малым радиусом.",
         "ar": "الكلور هالوجين عالي الكهرسلبية أيضاً، لكنه يزيد على الفلور بغلاف واحد؛ والعنصر الأشد جذباً لإلكترونات الرابطة هو الفلور الأصغر حجماً.",
         "zh": "氯也是电负性很大的卤素，但比氟多一个电子层；吸引成键电子能力最强的是半径更小的氟。",
         "ku": "Klor jî halojeneke pir elektronegatîf e, lê ji florê qatek zêdetir e; ya ku elektronên girêdanê herî xurt dikişîne flora bi tîrêja biçûk e."
@@ -308,9 +308,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Since noble gases have a stable octet/duet structure, their electron affinity is negligibly low.",
         "de": "Da Edelgase eine stabile Oktett-/Duett-Struktur haben, ist ihre Elektronenaffinität vernachlässigbar gering.",
         "fr": "Étant donné que les gaz rares ont une structure octet/duet stable, leur affinité électronique est négligeable.",
-        "ru": "Поскольку благородные газы имеют стабильную октетную/дублетную структуру, их сродство к электрону пренебрежимо мало.",
+        "ru": "Благородные газы имеют устойчивую конфигурацию октета (у гелия — дублета), поэтому их сродство к электрону пренебрежимо мало.",
         "ar": "نظرًا لأن الغازات النبيلة لها بنية ثمانية/ثنائية مستقرة، فإن تقاربها الإلكتروني منخفض بشكل لا يذكر.",
-        "zh": "由于稀有气体具有稳定的八隅体/二隅体（双电子）结构，因此它们的电子亲和力低得可以忽略不计。",
+        "zh": "稀有气体具有稳定的 8 电子(氦为 2 电子)结构，因此其电子亲和能小到可以忽略。",
         "ku": "Ji ber ku gazên esîl xwedan avahiyek oktet/dublet a stabîl in, girêdana wan a elektron pir kêm e."
       },
       "trap": {
@@ -320,7 +320,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "L'hélium est un gaz rare possédant 8 électrons de valence.",
         "ru": "Гелий — благородный газ с 8 валентными электронами.",
         "ar": "الهيليوم هو غاز نبيل يحتوي على 8 إلكترونات تكافؤ.",
-        "zh": "氦是一种具有 8 个价电子的惰性气体。",
+        "zh": "氦是具有 8 个价电子的稀有气体。",
         "ku": "Helium gazek esîl e ku 8 elektronên valansê hene."
       },
       "whyTrapIsFalse": {
@@ -328,9 +328,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Helium has only 2 electrons in total; its single shell is full, so it is stable by the duplet rule. Eight valence electrons (octet) belong to the other noble gases.",
         "de": "Helium hat insgesamt nur 2 Elektronen; seine einzige Schale ist voll, es ist nach der Duettregel stabil. Acht Valenzelektronen (Oktett) haben die übrigen Edelgase.",
         "fr": "L'hélium ne possède que 2 électrons ; sa couche unique est pleine, il est stable selon la règle du duet. Les 8 électrons de valence (octet) concernent les autres gaz nobles.",
-        "ru": "У гелия всего 2 электрона; его единственный слой заполнен, и он устойчив по правилу дуплета. Восемь валентных электронов (октет) — у остальных благородных газов.",
+        "ru": "У гелия всего 2 электрона; его единственный электронный слой заполнен, и он устойчив по правилу дублета. Восемь валентных электронов (октет) — у остальных благородных газов.",
         "ar": "للهيليوم إلكترونان فقط، وغلافه الوحيد ممتلئ فهو مستقر وفق قاعدة الثنائية؛ أما الإلكترونات الثمانية (الثُّمانية) فهي لبقية الغازات النبيلة.",
-        "zh": "氦总共只有 2 个电子，唯一的电子层已填满，按二电子（双隅）规则稳定；8 个价电子（八隅体）属于其他稀有气体。",
+        "zh": "氦总共只有 2 个电子，唯一的电子层已填满，达到 2 电子稳定结构；8 个价电子的稳定结构属于其他稀有气体。",
         "ku": "Helyûm bi giştî tenê 2 elektronan heye; qata wê ya yekane tije ye, loma li gorî qaîdeya dubletê aram e. 8 elektronên valansê (oktet) yên gazên soy ên din in."
       }
     },
@@ -374,9 +374,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Since electrons are given away when a cation is formed, the particle radius always decreases.",
         "de": "Da bei der Bildung eines Kations Elektronen abgegeben werden, nimmt der Teilchenradius immer ab.",
         "fr": "Étant donné que des électrons sont cédés lors de la formation d’un cation, le rayon des particules diminue toujours.",
-        "ru": "Поскольку электроны отдаются при образовании катиона, радиус частицы всегда уменьшается.",
+        "ru": "При образовании катиона атом отдаёт электроны, поэтому радиус частицы всегда уменьшается.",
         "ar": "وبما أن الإلكترونات تتحرر عند تكوين الكاتيون، فإن نصف قطر الجسيم يتناقص دائمًا.",
-        "zh": "由于形成阳离子时会释放电子，因此粒子半径总是减小。",
+        "zh": "形成阳离子时失去电子，因此微粒半径总是减小。",
         "ku": "Ji ber ku dema ku katyonek çêdibe elektron têne dayîn, nîvçapa tanecîkê her gav kêm dibe."
       },
       "trap": {
@@ -407,7 +407,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Since an electron is gained when an anion forms, the attractive force per electron decreases and the radius increases.",
         "de": "Da bei der Bildung eines Anions ein Elektron aufgenommen wird, nimmt die Anziehungskraft pro Elektron ab und der Radius nimmt zu.",
         "fr": "Comme un électron est capté lors de la formation d'un anion, la force d'attraction par électron diminue et le rayon augmente.",
-        "ru": "Поскольку при образовании аниона электрон присоединяется, сила притяжения, приходящаяся на один электрон, уменьшается, а радиус увеличивается.",
+        "ru": "При образовании аниона атом принимает электроны, поэтому притяжение, приходящееся на один электрон, ослабевает и радиус увеличивается.",
         "ar": "بما أن الإلكترون يُكتسب عند تكوّن الأنيون، تقل قوة الجذب لكل إلكترون ويزداد نصف القطر.",
         "zh": "形成阴离子时获得电子，因此每个电子受到的引力减小，半径增大。",
         "ku": "Ji ber ku dema anyon çêdibe elektron tê wergirtin, hêza kêşanê ya her elektronekê kêm dibe û nîvçap zêde dibe."
@@ -417,9 +417,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "As anion forms, the number of protons in the nucleus increases.",
         "de": "Wenn sich ein Anion bildet, erhöht sich die Anzahl der Protonen im Kern.",
         "fr": "À mesure que l’anion se forme, le nombre de protons dans le noyau augmente.",
-        "ru": "По мере образования анионов число протонов в ядре увеличивается.",
+        "ru": "При образовании аниона число протонов в ядре увеличивается.",
         "ar": "ومع تشكل الأنيون، يزداد عدد البروتونات في النواة.",
-        "zh": "随着阴离子的形成，原子核中的质子数量增加。",
+        "zh": "形成阴离子时，原子核中的质子数增加。",
         "ku": "Her ku anyon çêdibe, hejmara protonan di navokê de zêde dibe."
       },
       "whyTrapIsFalse": {
@@ -440,9 +440,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Mendeleev arranged the periodic table according to atomic masses, and Moseley arranged it according to atomic numbers (number of protons).",
         "de": "Mendeleev ordnete das Periodensystem nach Atommassen und Moseley nach Atomzahlen (Anzahl der Protonen).",
         "fr": "Mendeleïev a organisé le tableau périodique selon les masses atomiques, et Moseley l'a organisé selon les numéros atomiques (nombre de protons).",
-        "ru": "Менделеев расположил таблицу Менделеева по атомным массам, а Мозли — по атомным номерам (числу протонов).",
+        "ru": "Менделеев расположил элементы в периодической таблице по атомным массам, а Мозли — по порядковым номерам (числу протонов).",
         "ar": "رتب مندليف الجدول الدوري حسب الكتل الذرية، ورتبه موزلي حسب الأعداد الذرية (عدد البروتونات).",
-        "zh": "门捷列夫按照原子质量排列元素周期表，莫斯利按照原子序数（质子数）排列。",
+        "zh": "门捷列夫按原子量排列元素周期表，莫斯莱则按原子序数（质子数）排列。",
         "ku": "Mendeleev tabloya perîyodîk li gor girseyên atomê, û Moseley jî li gor hejmarên atomê (hejmara protonan) rêz kirine."
       },
       "trap": {
@@ -450,9 +450,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Moseley arranged the periodic table according to the number of neutrons.",
         "de": "Moseley ordnete das Periodensystem nach der Anzahl der Neutronen.",
         "fr": "Moseley a organisé le tableau périodique en fonction du nombre de neutrons.",
-        "ru": "Мозли расположил таблицу Менделеева по числу нейтронов.",
+        "ru": "Мозли расположил элементы в периодической таблице по числу нейтронов.",
         "ar": "قام موزلي بترتيب الجدول الدوري حسب عدد النيوترونات.",
-        "zh": "莫斯利根据中子数排列了元素周期表。",
+        "zh": "莫斯莱按中子数排列了元素周期表。",
         "ku": "Moseley tabloya perîyodîk li gorî hejmara notronan rêz kir."
       },
       "whyTrapIsFalse": {
@@ -460,9 +460,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Using X-ray studies, Moseley ordered the elements by proton number (atomic number); the neutron number differs even between isotopes of one element, so it cannot be an ordering criterion.",
         "de": "Moseley ordnete die Elemente mit Röntgenuntersuchungen nach der Protonenzahl (Ordnungszahl); die Neutronenzahl unterscheidet sich schon bei Isotopen eines Elements und taugt nicht als Ordnungskriterium.",
         "fr": "Grâce aux rayons X, Moseley a classé les éléments selon le nombre de protons (numéro atomique) ; le nombre de neutrons varie même entre isotopes d'un même élément et ne peut servir de critère.",
-        "ru": "Мозли с помощью рентгеновских исследований упорядочил элементы по числу протонов (атомному номеру); число нейтронов различается даже у изотопов одного элемента и не может быть критерием.",
+        "ru": "Мозли на основе рентгеновских спектров расположил элементы по числу протонов (порядковому номеру); число нейтронов различается даже у изотопов одного элемента, поэтому оно не может служить критерием.",
         "ar": "رتّب موزلي العناصر بدراسات الأشعة السينية وفق عدد البروتونات (العدد الذري)؛ أما عدد النيوترونات فيختلف حتى بين نظائر العنصر الواحد فلا يصلح معياراً للترتيب.",
-        "zh": "莫塞莱通过 X 射线研究按质子数（原子序数）排列元素；同一元素的同位素中子数都不同，因此中子数不能作为排列依据。",
+        "zh": "莫斯莱通过 X 射线研究，按质子数（原子序数）排列元素；同一元素的同位素中子数都不同，因此中子数不能作为排列依据。",
         "ku": "Moseley bi lêkolînên tîrêjên X element li gorî hejmara protonan (hejmara atomê) rêz kirin; hejmara nötronan di îzotopên heman elementê de jî cuda ye, loma nabe pîvana rêzkirinê."
       }
     },
@@ -473,9 +473,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Halogens are group 7A elements and can take a valence of -1 to +7 in their compounds (except for Fluorine, F can only take -1).",
         "de": "Halogene sind Elemente der Gruppe 7A und können in ihren Verbindungen eine Wertigkeit von -1 bis +7 annehmen (mit Ausnahme von Fluor kann F nur -1 annehmen).",
         "fr": "Les halogènes sont des éléments du groupe 7A et peuvent prendre une valence de -1 à +7 dans leurs composés (sauf pour le fluor, F ne peut prendre que -1).",
-        "ru": "Галогены являются элементами группы 7А и в своих соединениях могут принимать валентность от -1 до +7 (за исключением фтора, F может принимать только -1).",
+        "ru": "Галогены — элементы группы 7A; в соединениях они проявляют степени окисления от -1 до +7 (кроме фтора: F проявляет только -1).",
         "ar": "الهالوجينات هي عناصر المجموعة 7A ويمكن أن تأخذ تكافؤًا من -1 إلى +7 في مركباتها (باستثناء الفلور، يمكن أن يأخذ F فقط -1).",
-        "zh": "卤素是第 7A 族元素，其化合物的化合价为 -1 至 +7（除氟外，F 只能为 -1）。",
+        "zh": "卤素是 7A 族元素，在化合物中的化合价可在 -1 到 +7 之间(氟除外，F 只显 -1 价)。",
         "ku": "Halojen hêmanên koma 7A ne û dikarin di pêkhateyên xwe de valentek ji -1 heta +7 bigirin (ji bilî Florînê, F tenê dikare -1 bigire)."
       },
       "trap": {
@@ -485,7 +485,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Le fluor peut atteindre l'état d'oxydation +7 dans ses composés.",
         "ru": "Фтор в своих соединениях может проявлять степень окисления +7.",
         "ar": "يمكن أن يصل الفلور في مركباته إلى حالة الأكسدة +7.",
-        "zh": "氟在其化合物中可以达到+7氧化态。",
+        "zh": "氟在化合物中可以显 +7 价。",
         "ku": "Florîn di pêkhateyên xwe de dikare bigihîje rewşa oksîdasyonê ya +7."
       },
       "whyTrapIsFalse": {
@@ -493,7 +493,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Fluorine is the most electronegative element, so it always pulls the bonding electrons towards itself; therefore it shows only -1 in compounds and never a positive value.",
         "de": "Fluor ist das elektronegativste Element und zieht die Bindungselektronen immer zu sich; daher hat es in Verbindungen nur die Wertigkeit -1, nie eine positive.",
         "fr": "Le fluor, élément le plus électronégatif, attire toujours vers lui les électrons de liaison ; il ne prend donc que la valence -1 dans ses composés, jamais une valeur positive.",
-        "ru": "Фтор — самый электроотрицательный элемент и всегда оттягивает электроны связи к себе, поэтому в соединениях проявляет только -1 и никогда положительную степень.",
+        "ru": "Фтор — самый электроотрицательный элемент и всегда оттягивает электроны связи к себе, поэтому в соединениях он проявляет только степень окисления -1 и никогда не бывает в положительной степени окисления.",
         "ar": "الفلور أعلى العناصر كهرسلبية فيجذب إلكترونات الرابطة نحوه دائماً، ولذلك لا يأخذ في مركباته إلا التكافؤ -1 ولا يأخذ قيمة موجبة.",
         "zh": "氟是电负性最大的元素，总是把成键电子拉向自己，所以在化合物中只显 -1 价，不会显正价。",
         "ku": "Flor elementa herî elektronegatîf e û her dem elektronên girêdanê ber bi xwe dikişîne; loma di pêkhateyan de tenê -1 digire, nirxa erênî nagire."
@@ -506,9 +506,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Alkali metals (1A) are the most active metals and react violently with water, releasing H2 gas.",
         "de": "Alkalimetalle (1A) sind die aktivsten Metalle und reagieren heftig mit Wasser unter Freisetzung von H2-Gas.",
         "fr": "Les métaux alcalins (1A) sont les métaux les plus actifs et réagissent violemment avec l'eau, libérant du gaz H2.",
-        "ru": "Щелочные металлы (1A) являются наиболее активными металлами и бурно реагируют с водой, выделяя газ H2.",
+        "ru": "Щелочные металлы (1A) — самые активные металлы; они бурно реагируют с водой с выделением водорода H2.",
         "ar": "الفلزات القلوية (1A) هي أكثر الفلزات نشاطا وتتفاعل بعنف مع الماء، وتطلق غاز H2.",
-        "zh": "碱金属 (1A) 是最活泼的金属，与水发生剧烈反应，释放出氢气。",
+        "zh": "碱金属(1A 族)是最活泼的金属，与水剧烈反应，放出氢气。",
         "ku": "Metalên alkalî (1A) metalên herî çalak in û bi avê re bi tundî reaksiyonê dikin û gaza H2 derdixin."
       },
       "trap": {
@@ -516,9 +516,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Alkali metals are abundant in nature as pure metals.",
         "de": "Alkalimetalle kommen in der Natur als reine Metalle reichlich vor.",
         "fr": "Les métaux alcalins sont abondants dans la nature sous forme de métaux purs.",
-        "ru": "Щелочные металлы широко распространены в природе в виде чистых металлов.",
+        "ru": "Щелочные металлы в больших количествах встречаются в природе в свободном виде, как чистые металлы.",
         "ar": "تتواجد الفلزات القلوية بكثرة في الطبيعة كمعادن نقية.",
-        "zh": "碱金属作为纯金属在自然界中含量丰富。",
+        "zh": "碱金属在自然界中以游离态（纯金属）大量存在。",
         "ku": "Metalên alkalî di xwezayê de wekî metalên pak pir in."
       },
       "whyTrapIsFalse": {
@@ -526,9 +526,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Alkali metals are so reactive that they react at once with oxygen and water in the air; in nature they occur only in compounds (e.g. NaCl), not free.",
         "de": "Alkalimetalle sind so reaktiv, dass sie sofort mit Sauerstoff und Wasser reagieren; in der Natur kommen sie nur in Verbindungen (z. B. NaCl) vor, nicht gediegen.",
         "fr": "Les métaux alcalins sont si réactifs qu'ils réagissent aussitôt avec l'oxygène et l'eau ; dans la nature on ne les trouve que sous forme de composés (ex. NaCl), jamais libres.",
-        "ru": "Щелочные металлы настолько активны, что сразу реагируют с кислородом и водой; в природе они встречаются только в виде соединений (например, NaCl), а не в свободном виде.",
+        "ru": "Щелочные металлы настолько активны, что сразу реагируют с кислородом и влагой воздуха; в природе они встречаются не в свободном виде, а только в виде соединений (например, NaCl).",
         "ar": "الفلزات القلوية نشطة جداً فتتفاعل فوراً مع أكسجين الهواء والماء، ولذلك لا توجد في الطبيعة حرة بل على شكل مركبات فقط (مثل NaCl).",
-        "zh": "碱金属非常活泼，会立即与空气中的氧气和水反应，因此在自然界中只以化合物（如 NaCl）形式存在，而不以游离态存在。",
+        "zh": "碱金属非常活泼，会立即与空气中的氧气和水反应，因此在自然界中只以化合物(如 NaCl)的形式存在，不以游离态存在。",
         "ku": "Metalên alkalî pir çalak in û di cih de bi oksîjen û ava hewayê re reaksiyonê dikin; di xwezayê de ne serbest, tenê wekî pêkhate (mînak NaCl) tên dîtin."
       }
     },
@@ -539,9 +539,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Alkaline earth metals (2A) always take a +2 valence in their compounds.",
         "de": "Erdalkalimetalle (2A) nehmen in ihren Verbindungen immer eine Wertigkeit von +2 an.",
         "fr": "Les métaux alcalino-terreux (2A) prennent toujours une valence +2 dans leurs composés.",
-        "ru": "Щелочноземельные металлы (2A) в своих соединениях всегда имеют валентность +2.",
+        "ru": "Щёлочноземельные металлы (2A) в соединениях всегда проявляют степень окисления +2.",
         "ar": "الفلزات القلوية الترابية (2A) لها دائمًا تكافؤ +2 في مركباتها.",
-        "zh": "碱土金属 (2A) 在其化合物中始终具有 +2 价。",
+        "zh": "碱土金属(2A 族)在化合物中总是显 +2 价。",
         "ku": "Metalên erda alkalîn (2A) di pêkhateyên xwe de her dem valansek +2 digirin."
       },
       "trap": {
@@ -549,9 +549,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Magnesium forms stable +1 and +2 ions in its compounds.",
         "de": "Magnesium bildet in seinen Verbindungen stabile +1- und +2-Ionen.",
         "fr": "Le magnésium forme des ions stables +1 et +2 dans ses composés.",
-        "ru": "Магний в своих соединениях образует устойчивые ионы +1 и +2.",
+        "ru": "Магний в соединениях образует устойчивые ионы с зарядами +1 и +2.",
         "ar": "يكوّن المغنيسيوم في مركباته أيونات مستقرة +1 و+2.",
-        "zh": "镁在其化合物中形成稳定的+1和+2离子。",
+        "zh": "镁在化合物中能形成稳定的 +1 价和 +2 价离子。",
         "ku": "Magnezyûm di pêkhateyên xwe de îyonên stabîl ên +1 û +2 çêdike."
       },
       "whyTrapIsFalse": {
@@ -559,7 +559,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Magnesium reaches a noble-gas arrangement by losing its 2 valence electrons; a +1 ion would not have a stable arrangement, so magnesium is +2 in its compounds.",
         "de": "Magnesium erreicht durch Abgabe seiner 2 Valenzelektronen die Edelgaskonfiguration; ein +1-Ion hätte keine stabile Anordnung, daher ist Magnesium in Verbindungen +2.",
         "fr": "Le magnésium atteint la configuration d'un gaz noble en cédant ses 2 électrons de valence ; un ion +1 n'aurait pas de configuration stable, le magnésium est donc +2 dans ses composés.",
-        "ru": "Магний достигает конфигурации благородного газа, отдав 2 валентных электрона; ион +1 не имел бы устойчивой конфигурации, поэтому в соединениях магний проявляет +2.",
+        "ru": "Магний, отдав 2 валентных электрона, приобретает конфигурацию благородного газа; ион с зарядом +1 такой устойчивой конфигурации не имеет, поэтому в соединениях магний проявляет степень окисления +2.",
         "ar": "يصل المغنيسيوم إلى ترتيب الغاز النبيل بفقد إلكتروني التكافؤ؛ والأيون +1 لا يملك ترتيباً مستقراً، لذلك يكون المغنيسيوم +2 في مركباته.",
         "zh": "镁失去 2 个价电子后达到稀有气体的电子排布；+1 价离子没有稳定的排布，所以镁在化合物中显 +2 价。",
         "ku": "Magnezyûm bi dayîna 2 elektronên valansê digihîje rêzbûna gaza soy; îyona +1 rêzbûneke aram çênake, loma magnezyûm di pêkhateyan de +2 digire."
@@ -574,7 +574,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "isotope",
         "de": "Isotop",
         "fr": "isotope",
-        "ru": "изотоп",
+        "ru": "Изотоп",
         "ar": "النظائر",
         "zh": "同位素",
         "ku": "îzotop"
@@ -584,7 +584,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "isotone",
         "de": "isoton",
         "fr": "isotone",
-        "ru": "изотон",
+        "ru": "Изотон",
         "ar": "الأيزوتونات",
         "zh": "同中子素",
         "ku": "îzoton"
@@ -594,9 +594,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "In the isotope, the number of protons is the same and the number of neutrons is different; The number of neutrons in the isotone is the same, but the number of protons is different.",
         "de": "Im Isotop ist die Anzahl der Protonen gleich und die Anzahl der Neutronen unterschiedlich; Die Anzahl der Neutronen im Isoton ist gleich, aber die Anzahl der Protonen ist unterschiedlich.",
         "fr": "Dans l'isotope, le nombre de protons est le même et le nombre de neutrons est différent ; Le nombre de neutrons dans l’isotone est le même, mais le nombre de protons est différent.",
-        "ru": "В изотопе число протонов одинаково, а число нейтронов различно; Число нейтронов в изотоне одинаковое, а количество протонов разное.",
+        "ru": "Изотоп обозначает атомы с одинаковым числом протонов и разным числом нейтронов; изотон обозначает атомы с одинаковым числом нейтронов и разным числом протонов.",
         "ar": "في النظائر، عدد البروتونات هو نفسه وعدد النيوترونات مختلف؛ عدد النيوترونات في الأيزوتون هو نفسه، لكن عدد البروتونات مختلف.",
-        "zh": "同位素中，质子数相同，中子数不同；同中子素中的中子数相同，但质子数不同。",
+        "zh": "同位素的质子数相同、中子数不同；而同中子素的中子数相同、质子数不同。",
         "ku": "Di îzotopê de hejmara protonan yek e û hejmara notronan jî cuda ye; Di îzotonê de hejmara notronan yek e, lê hejmara protonan cuda ye."
       }
     },
@@ -617,9 +617,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Electron Affinity",
         "de": "Elektronenaffinität",
         "fr": "Affinité électronique",
-        "ru": "Электронное сродство",
+        "ru": "Сродство к электрону",
         "ar": "الانجذاب الإلكتروني",
-        "zh": "电子亲和势",
+        "zh": "电子亲和能",
         "ku": "Têkiliya Elektronê"
       },
       "distinction": {
@@ -627,9 +627,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Ionization energy is the energy required to remove an electron from a gaseous atom; electron affinity is the energy change when a gaseous atom gains an electron.",
         "de": "Die Ionisierungsenergie ist die Energie, die nötig ist, um ein Elektron aus einem gasförmigen Atom zu entfernen; die Elektronenaffinität ist die Energieänderung bei der Aufnahme eines Elektrons durch ein gasförmiges Atom.",
         "fr": "L'énergie d'ionisation est l'énergie nécessaire pour arracher un électron à un atome à l'état gazeux ; l'affinité électronique est la variation d'énergie lorsqu'un atome à l'état gazeux capte un électron.",
-        "ru": "Энергия ионизации — энергия, необходимая для отрыва электрона от атома в газообразном состоянии; электронное сродство — изменение энергии при присоединении электрона к атому в газообразном состоянии.",
+        "ru": "Энергия ионизации — энергия, необходимая для отрыва электрона от атома в газообразном состоянии; сродство к электрону — изменение энергии при присоединении электрона к атому в газообразном состоянии.",
         "ar": "طاقة التأين: الطاقة اللازمة لنزع إلكترون من ذرة في الحالة الغازية؛ الانجذاب الإلكتروني: التغير في الطاقة عند اكتساب ذرة في الحالة الغازية إلكتروناً.",
-        "zh": "电离能是从气态原子中失去一个电子所需的能量；电子亲和势是气态原子得到一个电子时的能量变化。",
+        "zh": "电离能是气态原子失去一个电子所需吸收的能量；而电子亲和能是气态原子得到一个电子时的能量变化。",
         "ku": "Enerjiya îyonîzasyonê ew enerjî ye ku ji bo qetandina elektronekê ji atoma di rewşa gazê de pêwîst e; têkiliya elektronê jî guherîna enerjiyê ye dema ku atoma di rewşa gazê de elektronekê werdigire."
       }
     },
@@ -640,9 +640,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Thomson Atomic Model",
         "de": "Thomsonsches Atommodell",
         "fr": "Modèle atomique de Thomson",
-        "ru": "Модель атома Томсона",
+        "ru": "Модель Томсона",
         "ar": "نموذج طومسون الذري",
-        "zh": "汤姆森原子模型",
+        "zh": "汤姆孙原子模型",
         "ku": "Modela Atomê ya Thomson"
       },
       "conceptB": {
@@ -650,7 +650,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Rutherford Atomic Model",
         "de": "Rutherfordsches Atommodell",
         "fr": "Modèle atomique de Rutherford",
-        "ru": "Модель атома Резерфорда",
+        "ru": "Модель Резерфорда",
         "ar": "نموذج رذرفورد الذري",
         "zh": "卢瑟福原子模型",
         "ku": "Modela Atomê ya Rutherford"
@@ -660,9 +660,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "In the Thomson atomic model, positive charge is spread uniformly throughout the atom; in the Rutherford model, the positive charge and almost all of the mass are concentrated in a tiny nucleus.",
         "de": "Thomsonsches Atommodell: Die positive Ladung ist gleichmäßig im Atom verteilt; im Rutherford-Modell sind die positive Ladung und fast die gesamte Masse in einem winzigen Kern konzentriert.",
         "fr": "Modèle atomique de Thomson : la charge positive est répartie uniformément dans l'atome ; dans le modèle de Rutherford, la charge positive et presque toute la masse sont concentrées dans un minuscule noyau.",
-        "ru": "Модель атома Томсона: положительный заряд равномерно распределён по атому; в модели Резерфорда положительный заряд и почти вся масса сосредоточены в крошечном ядре.",
+        "ru": "Модель Томсона описывает положительный заряд, равномерно распределённый по всему атому; модель Резерфорда описывает маленькое ядро, в котором сосредоточены положительный заряд и почти вся масса атома.",
         "ar": "نموذج طومسون الذري: تتوزع الشحنة الموجبة بانتظام في الذرة؛ أما في نموذج رذرفورد فتتركز الشحنة الموجبة ومعظم الكتلة تقريبًا في نواة صغيرة جدًا.",
-        "zh": "汤姆森原子模型中正电荷均匀分布在整个原子中；卢瑟福模型中正电荷和几乎全部质量集中在很小的原子核里。",
+        "zh": "汤姆孙原子模型中正电荷均匀分布在整个原子中；而卢瑟福原子模型中正电荷和几乎全部质量集中在很小的原子核里。",
         "ku": "Modela Atomê ya Thomson: bara erênî bi awayekî wekhev li her derê belav bûye; di modela Rutherford de bara erênî û hema hema hemû girse di navokeke pir piçûk de kom bûne."
       }
     },
@@ -675,7 +675,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Atomes isobares",
         "ru": "Изобарные атомы",
         "ar": "ذرات الأيزوبار",
-        "zh": "同量异位素原子",
+        "zh": "同量素",
         "ku": "Atomên Îsobar"
       },
       "conceptB": {
@@ -685,7 +685,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Espèces isoélectroniques",
         "ru": "Изоэлектронные частицы",
         "ar": "الأنواع الأيزوإلكترونية",
-        "zh": "等电子物种",
+        "zh": "等电子微粒",
         "ku": "Cureyên Îzoelektronîk"
       },
       "distinction": {
@@ -693,9 +693,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "The mass numbers of the isobars are the same; The electron numbers and arrangements of isoelectronic species are the same.",
         "de": "Isobare Atome: gleiche Massenzahl; isoelektronische Spezies: gleiche Elektronenzahl und gleiche Elektronenanordnung.",
         "fr": "Atomes isobares : même nombre de masse ; espèces isoélectroniques : même nombre d'électrons et même configuration électronique.",
-        "ru": "Изобарные атомы: одинаковые массовые числа; изоэлектронные частицы: одинаковое число электронов и одинаковое их расположение.",
+        "ru": "Изобарные атомы — атомы с одинаковыми массовыми числами; изоэлектронные частицы — частицы с одинаковым числом электронов и одинаковой электронной конфигурацией.",
         "ar": "ذرات الأيزوبار: أعدادها الكتلية متساوية؛ الأنواع الأيزوإلكترونية: أعداد إلكتروناتها وترتيبها متساوية.",
-        "zh": "同量异位素的质量数相同；等电子物种的电子数和排列是相同的。",
+        "zh": "同量素的质量数相同；而等电子微粒的电子数和电子排布都相同。",
         "ku": "Hejmarên girseyî yên îsobaran yek in; Hejmar û rêzikên elektronên cureyên isoelektronîk yek in."
       }
     },
@@ -706,9 +706,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "metals",
         "de": "Metalle",
         "fr": "métaux",
-        "ru": "металлы",
+        "ru": "Металлы",
         "ar": "الفلزات",
-        "zh": "金属",
+        "zh": "金属元素",
         "ku": "Metal"
       },
       "conceptB": {
@@ -716,7 +716,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "nonmetals",
         "de": "Nichtmetalle",
         "fr": "non-métaux",
-        "ru": "неметаллы",
+        "ru": "Неметаллы",
         "ar": "اللافلزات",
         "zh": "非金属",
         "ku": "nemetal"
@@ -726,9 +726,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Metals form cations by losing electrons and conduct electricity; nonmetals usually form anions by gaining electrons in compounds and generally do not conduct in the solid state (graphite is an exception).",
         "de": "Metalle bilden durch Elektronenabgabe Kationen und leiten den Strom; Nichtmetalle bilden in Verbindungen meist durch Elektronenaufnahme Anionen und leiten im festen Zustand meist nicht (Graphit ist eine Ausnahme).",
         "fr": "Les métaux forment des cations en cédant des électrons et conduisent le courant ; les éléments non métalliques forment généralement des anions en captant des électrons et ne conduisent généralement pas à l'état solide (le graphite fait exception).",
-        "ru": "Металлы, отдавая электроны, образуют катионы и проводят ток; неметаллы в соединениях обычно принимают электроны, образуя анионы, и в твёрдом состоянии, как правило, не проводят ток (исключение — графит).",
+        "ru": "Металлы — элементы, которые отдают электроны, образуя катионы, и проводят электрический ток; неметаллы — элементы, которые в соединениях обычно принимают электроны, образуя анионы, и в твёрдом состоянии, как правило, не проводят ток (исключение — графит).",
         "ar": "تكوّن الفلزات أيونات موجبة بفقد الإلكترونات وتوصل الكهرباء؛ أما اللافلزات فتكوّن غالباً أيونات سالبة باكتساب الإلكترونات في مركباتها، ولا توصل الكهرباء عادة في الحالة الصلبة (الجرافيت استثناء).",
-        "zh": "金属失去电子形成阳离子并能导电；非金属在化合物中通常得到电子形成阴离子，固态时一般不导电（石墨例外）。",
+        "zh": "金属元素失去电子形成阳离子，其单质能导电；非金属则在化合物中通常得到电子形成阴离子，固态时一般不导电（石墨例外）。",
         "ku": "Metal bi dayîna elektronan katyon çêdikin û elektrîkê diguhezînin; nemetal di pêkhateyan de bi giştî bi wergirtina elektronan anyon çêdikin û di rewşa hişk de bi giştî elektrîkê naguhezînin (grafît awarte ye)."
       }
     },
@@ -751,7 +751,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Activité métallique",
         "ru": "Металлическая активность",
         "ar": "النشاط الفلزي",
-        "zh": "金属活泼性",
+        "zh": "金属活动性",
         "ku": "Çalakiya Metalîk"
       },
       "distinction": {
@@ -759,9 +759,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Electronegativity is the ability to attract bonding electrons and increases toward the upper right; metallic activity is the tendency to lose electrons and increases toward the lower left.",
         "de": "Die Elektronegativität ist die Fähigkeit, Bindungselektronen anzuziehen, und nimmt nach rechts oben zu; die metallische Aktivität ist die Neigung, Elektronen abzugeben, und nimmt nach links unten zu.",
         "fr": "L'électronégativité est la capacité d'attirer les électrons de liaison et augmente vers le haut à droite ; l'activité métallique est la tendance à céder des électrons et augmente vers le bas à gauche.",
-        "ru": "Электроотрицательность — способность притягивать электроны связи, она растёт вправо и вверх; металлическая активность — склонность отдавать электроны, она растёт влево и вниз.",
+        "ru": "Электроотрицательность — способность атома притягивать электроны связи, которая возрастает по таблице вправо и вверх; металлическая активность — склонность отдавать электроны, которая возрастает влево и вниз.",
         "ar": "السالبية الكهربية هي قدرة الذرة على جذب إلكترونات الرابطة وتزداد نحو اليمين والأعلى؛ أما النشاط الفلزي فهو الميل إلى فقد الإلكترونات ويزداد نحو اليسار والأسفل.",
-        "zh": "电负性是吸引成键电子的能力，向右上方增大；金属活泼性是失去电子的倾向，向左下方增大。",
+        "zh": "电负性是原子吸引成键电子的能力，在周期表中向右上方增大；而金属活动性是原子失去电子的倾向，向左下方增大。",
         "ku": "Elektronegatîfî şiyana kişandina elektronên girêdanê ye û ber bi rast-jor ve zêde dibe; çalakiya metalî meyla dayîna elektronan e û ber bi çep-jêr ve zêde dibe."
       }
     },
@@ -772,7 +772,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Cation Radius",
         "de": "Kationenradius",
         "fr": "Rayon des cations",
-        "ru": "Катионный радиус",
+        "ru": "Радиус катиона",
         "ar": "نصف قطر الكاتيون",
         "zh": "阳离子半径",
         "ku": "Nîvçapa Katyonê"
@@ -792,9 +792,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "The cation radius is smaller than the radius of the neutral atom that lost the electrons; the anion radius is larger than the radius of the neutral atom that gained the electrons.",
         "de": "Der Kationenradius ist kleiner als der Radius des neutralen Atoms, das die Elektronen abgegeben hat; der Anionenradius ist größer als der Radius des neutralen Atoms, das die Elektronen aufgenommen hat.",
         "fr": "Rayon des cations : valeur plus petite que le rayon de l'atome neutre d'origine ; rayon anionique : valeur plus grande que le rayon de l'atome neutre d'origine.",
-        "ru": "Катионный радиус меньше радиуса нейтрального атома, отдавшего электроны; радиус аниона больше радиуса нейтрального атома, принявшего электроны.",
+        "ru": "Радиус катиона меньше радиуса нейтрального атома, отдавшего электроны; радиус аниона больше радиуса нейтрального атома, принявшего электроны.",
         "ar": "نصف قطر الكاتيون أصغر من نصف قطر الذرة المتعادلة التي فقدت الإلكترونات؛ ونصف قطر الأنيون أكبر من نصف قطر الذرة المتعادلة التي اكتسبت الإلكترونات.",
-        "zh": "阳离子半径小于失去电子前的中性原子半径；阴离子半径大于得到电子前的中性原子半径。",
+        "zh": "阳离子半径小于失去电子前的中性原子半径；而阴离子半径大于得到电子前的中性原子半径。",
         "ku": "Nîvçapa katyonê ji nîvçapa atoma bêalî ya ku elektron dane piçûktir e; nîvçapa anyonê ji nîvçapa atoma bêalî ya ku elektron wergirtine mezintir e."
       }
     },
@@ -805,7 +805,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Atomic Number",
         "de": "Ordnungszahl",
         "fr": "Numéro atomique",
-        "ru": "Атомный номер",
+        "ru": "Порядковый номер",
         "ar": "العدد الذري",
         "zh": "原子序数",
         "ku": "Hejmara Atomê"
@@ -825,9 +825,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "The atomic number is the number of protons in the nucleus; the mass number is the sum of the numbers of protons and neutrons in the nucleus.",
         "de": "Die Ordnungszahl ist die Anzahl der Protonen im Kern; die Massenzahl ist die Summe aus Protonen- und Neutronenzahl im Kern.",
         "fr": "Le numéro atomique est le nombre de protons du noyau ; le nombre de masse est la somme des nombres de protons et de neutrons du noyau.",
-        "ru": "Атомный номер — число протонов в ядре; массовое число — сумма чисел протонов и нейтронов в ядре.",
+        "ru": "Порядковый номер — число протонов в ядре; массовое число — сумма чисел протонов и нейтронов в ядре.",
         "ar": "العدد الذري هو عدد البروتونات في النواة؛ والعدد الكتلي هو مجموع أعداد البروتونات والنيوترونات في النواة.",
-        "zh": "原子序数是原子核中的质子数；质量数是原子核中质子数与中子数之和。",
+        "zh": "原子序数是原子核中的质子数；而质量数是原子核中质子数与中子数之和。",
         "ku": "Hejmara atomê hejmara protonên di navokê de ye; hejmara girseyê berhevoka hejmarên proton û notronên di navokê de ye."
       }
     }
@@ -840,7 +840,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Cause-and-Effect Chain Across a Period (Left to Right)",
         "de": "Ursache-Wirkungs-Kette innerhalb einer Periode (von links nach rechts)",
         "fr": "Chaîne de cause à effet dans une période (de gauche à droite)",
-        "ru": "Причинно-следственная цепочка в периоде (слева направо)",
+        "ru": "Движение по периоду слева направо: причины и следствия",
         "ar": "سلسلة السبب والنتيجة في الدورة (من اليسار إلى اليمين)",
         "zh": "同一周期从左到右的因果链",
         "ku": "Zincîra Sedem-Encamê di Periyodê de (Ji Çepê ber bi Rastê)"
@@ -895,9 +895,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Historical Atomic Models",
         "de": "Historische Atommodelle",
         "fr": "Modèles atomiques historiques",
-        "ru": "Исторические атомные модели",
+        "ru": "Исторические модели атома",
         "ar": "النماذج الذرية التاريخية",
-        "zh": "历史原子模型",
+        "zh": "原子模型的历史演变",
         "ku": "Modelên Atomî yên Dîrokî"
       },
       "steps": [
@@ -918,7 +918,7 @@ export const unit02: ChemistryUnitSeedData = {
           "fr": "Thomson a décrit l'atome comme une sphère chargée positivement dans laquelle sont incrustés des électrons (modèle du pudding aux raisins)",
           "ru": "Томсон описал атом как положительно заряженный шар с вкраплёнными в него электронами (модель «пудинга с изюмом»)",
           "ar": "وصف طومسون الذرة بأنها كرة موجبة الشحنة تنغرس فيها الإلكترونات (نموذج كعكة الزبيب)",
-          "zh": "汤姆森把原子描述为电子镶嵌在带正电的球体中（葡萄干布丁模型）",
+          "zh": "汤姆孙把原子描述为电子镶嵌在带正电的球体中（葡萄干布丁模型）",
           "ku": "Thomson atom wekî elektronên di nav gogeke bi bara erênî de bicihbûyî pênase kir (modela keka bi mewîj)"
         },
         {
@@ -973,7 +973,7 @@ export const unit02: ChemistryUnitSeedData = {
           "fr": "Newlands classa les éléments par masse atomique croissante et montra que les propriétés se répètent tous les huit éléments (loi des octaves)",
           "ru": "Ньюлендс расположил элементы по возрастанию атомной массы и показал, что свойства повторяются у каждого восьмого элемента (закон октав)",
           "ar": "رتّب نيولاندز العناصر حسب تزايد الكتلة الذرية وبيّن أن الخواص تتكرر عند كل عنصر ثامن (قانون الثمانيات)",
-          "zh": "纽兰兹按原子量递增排列元素，指出每隔第八个元素性质重复（八音律）",
+          "zh": "纽兰兹按原子量递增排列元素，指出每到第八个元素性质就重复出现（八音律）",
           "ku": "Newlands element li gorî girseya atomê ya zêdebûyî rêz kirin û nîşan da ku taybetî di her elementa heştemîn de dubare dibin (qaîdeya oktavan)"
         },
         {
@@ -993,7 +993,7 @@ export const unit02: ChemistryUnitSeedData = {
           "fr": "Moseley classa les éléments par numéro atomique croissant, posant les bases du tableau périodique moderne",
           "ru": "Мозли упорядочил элементы по возрастанию атомного номера и заложил основу современной периодической системы",
           "ar": "رتّب موزلي العناصر حسب تزايد العدد الذري فأرسى أساس الجدول الدوري الحديث",
-          "zh": "莫塞莱按原子序数递增排列元素，奠定了现代周期表的基础",
+          "zh": "莫斯莱按原子序数递增排列元素，奠定了现代元素周期表的基础",
           "ku": "Moseley element li gorî hejmara atomê ya zêdebûyî rêz kirin û bingeha sîstema periyodîk a nûjen danî"
         }
       ]
@@ -1005,9 +1005,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Electron Excitation and Radiation",
         "de": "Elektronenanregung und Strahlung",
         "fr": "Excitation électronique et rayonnement",
-        "ru": "Электронное возбуждение и излучение",
+        "ru": "Возбуждение электрона и излучение",
         "ar": "الإثارة الإلكترونية والإشعاع",
-        "zh": "电子激发和辐射",
+        "zh": "电子的激发与发光",
         "ku": "Teşwîqbûna Elektronê û Tîrêjdan"
       },
       "steps": [
@@ -1036,7 +1036,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "Stays in an excited, unstable state for a short time",
           "de": "Bleibt kurzzeitig in einem angeregten, instabilen Zustand",
           "fr": "Reste dans un état excité et instable pendant une courte période",
-          "ru": "Кратковременно пребывает в возбужденном, нестабильном состоянии.",
+          "ru": "Недолго находится в возбуждённом, неустойчивом состоянии",
           "ar": "يبقى لفترة قصيرة في حالة مثارة غير مستقرة",
           "zh": "在不稳定的激发态短暂停留",
           "ku": "Ji bo demeke kurt di rewşa teşwîqbûyî ya ne-stabîl de dimîne"
@@ -1046,9 +1046,9 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "Returns to ground state by emitting photons",
           "de": "Kehrt durch die Emission von Photonen in den Grundzustand zurück",
           "fr": "Retourne à l'état fondamental en émettant des photons",
-          "ru": "Возвращается в основное состояние путем испускания фотонов",
+          "ru": "Возвращается в основное состояние, испуская фотон",
           "ar": "يعود إلى الحالة الأرضية عن طريق إصدار الفوتونات",
-          "zh": "通过发射光子返回基态",
+          "zh": "发射光子，回到基态",
           "ku": "Bi belavkirina fotonan vedigere rewşa bingehîn"
         }
       ]
@@ -1062,9 +1062,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "The successive ionization energies (kJ/mol) of the main group element X are: IE1: 496, IE2: 4562, IE3: 6912. Accordingly, in which group is X?",
         "de": "Die aufeinanderfolgenden Ionisierungsenergien (kJ/mol) des Hauptgruppenelements X betragen: IE1: 496, IE2: 4562, IE3: 6912. In welcher Gruppe befindet sich X demnach?",
         "fr": "Les énergies d'ionisation consécutives (kJ/mol) de l'élément principal du groupe X sont : IE1 : 496, IE2 : 4562, IE3 : 6912. Par conséquent, dans quel groupe se trouve X ?",
-        "ru": "Последовательные энергии ионизации (кДж/моль) элемента основной группы X составляют: IE1: 496, IE2: 4562, IE3: 6912. Соответственно, в какой группе находится X?",
+        "ru": "Последовательные энергии ионизации (кДж/моль) элемента X главной подгруппы: I1 = 496, I2 = 4562, I3 = 6912. В какой группе находится X?",
         "ar": "طاقات التأين المتتالية (كيلو جول/مول) لعنصر المجموعة الرئيسية X هي: IE1: 496، IE2: 4562، IE3: 6912. وبناءً على ذلك، في أي مجموعة يقع X؟",
-        "zh": "主族元素X的逐级电离能(kJ/mol)为：IE1：496，IE2：4562，IE3：6912。据此，X位于哪一族？",
+        "zh": "主族元素 X 的逐级电离能(kJ/mol)为：IE1：496，IE2：4562，IE3：6912。据此判断，X 位于哪一族？",
         "ku": "Enerjiyên îyonîzasyonê yên li pey hev (kJ/mol) yên hêmana koma sereke X ev in: IE1: 496, IE2: 4562, IE3: 6912. Li gorî vê yekê, X di kîjan komê de ye?"
       },
       "options": [
@@ -1073,7 +1073,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "1A",
           "de": "1A",
           "fr": "1A",
-          "ru": "1А",
+          "ru": "1A",
           "ar": "1 أ",
           "zh": "1A",
           "ku": "1A"
@@ -1083,7 +1083,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "2A",
           "de": "2A",
           "fr": "2A",
-          "ru": "2А",
+          "ru": "2A",
           "ar": "2 أ",
           "zh": "2A",
           "ku": "2A"
@@ -1093,7 +1093,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "3A",
           "de": "3A",
           "fr": "3A",
-          "ru": "3А",
+          "ru": "3A",
           "ar": "3 أ",
           "zh": "3A",
           "ku": "3A"
@@ -1103,7 +1103,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "4A",
           "de": "4A",
           "fr": "4A",
-          "ru": "4А",
+          "ru": "4A",
           "ar": "4 أ",
           "zh": "4A",
           "ku": "4A"
@@ -1113,7 +1113,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "8A",
           "de": "8A",
           "fr": "8A",
-          "ru": "8А",
+          "ru": "8A",
           "ar": "8 أ",
           "zh": "8A",
           "ku": "8A"
@@ -1125,9 +1125,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "From IE1 to IE2 there is a very large jump of about 9.2 times (496 → 4562), whereas from IE2 to IE3 the increase is only about 1.5 times. The large jump shows that a noble-gas configuration is reached after the first electron is removed. Therefore X has 1 valence electron and is in group 1A. If the jump came after the second electron, X would be in group 2A.",
         "de": "Von IE1 zu IE2 gibt es einen sehr großen Sprung auf etwa das 9,2-Fache (496 → 4562), von IE2 zu IE3 steigt der Wert dagegen nur auf etwa das 1,5-Fache. Der große Sprung zeigt, dass nach dem Abtrennen des ersten Elektrons die Edelgaskonfiguration erreicht ist. X hat also 1 Valenzelektron und steht in Gruppe 1A. Läge der Sprung nach dem zweiten Elektron, stünde X in Gruppe 2A.",
         "fr": "De IE1 à IE2, il y a un très grand saut, d'un facteur d'environ 9,2 (496 → 4562), alors que de IE2 à IE3 l'augmentation n'est que d'un facteur d'environ 1,5. Ce grand saut montre que la configuration de gaz noble est atteinte après le départ du premier électron. X possède donc 1 électron de valence et appartient au groupe 1A. Si le saut se produisait après le deuxième électron, X serait dans le groupe 2A.",
-        "ru": "При переходе от IE1 к IE2 наблюдается очень большой скачок — примерно в 9,2 раза (496 → 4562), тогда как от IE2 к IE3 значение возрастает лишь примерно в 1,5 раза. Большой скачок показывает, что после отрыва первого электрона достигается конфигурация благородного газа. Значит, у X 1 валентный электрон и он находится в группе 1A. Если бы скачок был после второго электрона, X находился бы в группе 2A.",
+        "ru": "При переходе от I1 к I2 наблюдается очень большой скачок — примерно в 9,2 раза (496 → 4562), тогда как от I2 к I3 энергия возрастает лишь примерно в 1,5 раза. Большой скачок показывает, что после отрыва первого электрона достигается конфигурация благородного газа. Значит, у X 1 валентный электрон и он находится в группе 1A. Если бы скачок наблюдался после второго электрона, X находился бы в группе 2A.",
         "ar": "عند الانتقال من IE1 إلى IE2 توجد قفزة كبيرة جداً بنحو 9.2 مرة (496 → 4562)، أما من IE2 إلى IE3 فالزيادة بنحو 1.5 مرة فقط. تدل القفزة الكبيرة على بلوغ ترتيب الغاز النبيل بعد نزع الإلكترون الأول. إذن للعنصر X إلكترون تكافؤ عدده 1 ويقع في المجموعة 1A. ولو كانت القفزة بعد الإلكترون الثاني لكان X في المجموعة 2A.",
-        "zh": "从 IE1 到 IE2 有约 9.2 倍的巨大突跃（496 → 4562），而从 IE2 到 IE3 只增大约 1.5 倍。巨大的突跃说明失去第一个电子后已达到稀有气体的电子排布。因此 X 有 1 个价电子，位于 1A 族。如果突跃出现在第二个电子之后，X 就位于 2A 族。",
+        "zh": "从 IE1 到 IE2 有约 9.2 倍的巨大突跃(496 → 4562)，而从 IE2 到 IE3 只增大约 1.5 倍。巨大的突跃说明失去第一个电子后已达到稀有气体的电子排布。因此 X 有 1 个价电子，位于 1A 族。如果突跃出现在第二个电子之后，X 就位于 2A 族。",
         "ku": "Di derbasbûna ji IE1 ber bi IE2 de bazdaneke pir mezin a bi qasî 9,2 qat heye (496 → 4562); ji IE2 ber bi IE3 jî zêdebûn tenê bi qasî 1,5 qat e. Bazdana mezin nîşan dide ku piştî qetandina elektrona yekem rêzbûna gaza esilzade pêk tê. Ji ber vê yekê X xwedî 1 elektrona valansê ye û di koma 1A de ye. Ger bazdan piştî elektrona duyem bûya, X dê di koma 2A de bûya."
       }
     },
@@ -1138,9 +1138,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "For elements in the same period in the periodic table, which of the following generally decreases as you move from left to right?",
         "de": "Welcher der folgenden Werte nimmt für Elemente derselben Periode im Periodensystem im Allgemeinen ab, wenn man sich von links nach rechts bewegt?",
         "fr": "Pour les éléments de la même période dans le tableau périodique, lequel des éléments suivants diminue généralement à mesure que vous vous déplacez de gauche à droite ?",
-        "ru": "Что из следующего обычно уменьшается при движении слева направо для элементов периодической таблицы Менделеева, находящихся в одном и том же периоде?",
+        "ru": "Какая из величин у элементов одного периода, как правило, уменьшается при движении слева направо?",
         "ar": "بالنسبة للعناصر الموجودة في نفس الفترة في الجدول الدوري، أي مما يلي يتناقص بشكل عام كلما انتقلت من اليسار إلى اليمين؟",
-        "zh": "对于元素周期表中同一周期的元素，下列哪项通常随着从左向右移动而减少？",
+        "zh": "在元素周期表的同一周期中，从左到右下列哪一项通常减小？",
         "ku": "Ji bo hêmanên di heman periyodê de di tabloya peryodîk de, dema ku hûn ji çepê ber bi rastê ve diçin, kîjan ji van jêrîn bi gelemperî kêm dibe?"
       },
       "options": [
@@ -1149,7 +1149,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "Atomic radius",
           "de": "Atomradius",
           "fr": "Rayon atomique",
-          "ru": "Атомный радиус",
+          "ru": "Радиус атома",
           "ar": "نصف القطر الذري",
           "zh": "原子半径",
           "ku": "Nîvçapa atomê"
@@ -1181,7 +1181,7 @@ export const unit02: ChemistryUnitSeedData = {
           "fr": "Charge nucléaire",
           "ru": "Заряд ядра",
           "ar": "الشحنة النووية",
-          "zh": "核电荷",
+          "zh": "核电荷数",
           "ku": "Bara navokê"
         },
         {
@@ -1203,7 +1203,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Dans une période, de gauche à droite, la charge nucléaire augmente alors que le nombre de couches reste le même ; les électrons sont plus fortement attirés et le rayon atomique diminue. Pour la même raison, l'énergie d'ionisation, l'électronégativité et l'activité non métallique augmentent généralement, et la charge nucléaire augmente toujours.",
         "ru": "В периоде слева направо заряд ядра растёт, а число электронных слоёв не меняется; электроны притягиваются сильнее, и радиус атома уменьшается. По той же причине энергия ионизации, электроотрицательность и неметаллическая активность, как правило, возрастают, а заряд ядра возрастает всегда.",
         "ar": "في الدورة الواحدة من اليسار إلى اليمين تزداد الشحنة النووية مع بقاء عدد الأغلفة ثابتاً؛ فتنجذب الإلكترونات بقوة أكبر ويقل نصف القطر الذري. وللسبب نفسه تزداد طاقة التأين والسالبية الكهربية والنشاط اللافلزي عموماً، أما الشحنة النووية فتزداد دائماً.",
-        "zh": "同一周期从左到右，电子层数不变而核电荷增加，电子受到更强的吸引，原子半径减小。出于同样的原因，电离能、电负性和非金属活泼性一般增大，核电荷则始终增大。",
+        "zh": "同一周期从左到右，电子层数不变而核电荷数增加，电子受到更强的吸引，原子半径减小。出于同样的原因，电离能、电负性和非金属活泼性一般增大，核电荷数则始终增大。",
         "ku": "Di heman periyodê de ji çepê ber bi rastê ve, hejmara qatan naguhere lê bara navokê zêde dibe; elektron bi hêztir tên kişandin û nîvçapa atomê kêm dibe. Ji ber heman sedemê enerjiya ionîzasyonê, elektronegatîfî û çalakiya nemetalîk bi gelemperî zêde dibin; bara navokê jî her tim zêde dibe."
       }
     },
@@ -1214,7 +1214,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "For the Fe3+ ion of iron with mass number 56 and atomic number 26, what is the sum of the number of electrons and the number of neutrons?",
         "de": "Wie groß ist für das Fe3+-Ion des Eisens (Massenzahl 56, Ordnungszahl 26) die Summe aus Elektronen- und Neutronenzahl?",
         "fr": "Pour l'ion Fe3+ du fer (nombre de masse 56, numéro atomique 26), quelle est la somme du nombre d'électrons et du nombre de neutrons ?",
-        "ru": "Чему равна сумма числа электронов и числа нейтронов в ионе Fe3+ железа с массовым числом 56 и атомным номером 26?",
+        "ru": "Чему равна сумма числа электронов и числа нейтронов в ионе Fe3+, если массовое число железа равно 56, а порядковый номер — 26?",
         "ar": "ما مجموع عدد الإلكترونات وعدد النيوترونات في الأيون Fe3+ للحديد الذي عدده الكتلي 56 وعدده الذري 26؟",
         "zh": "质量数为 56、原子序数为 26 的铁形成的 Fe3+ 离子中，电子数与中子数之和是多少？",
         "ku": "Di îyona Fe3+ ya hesinê ku hejmara girseyê 56 û hejmara atomê 26 e de, berhevoka hejmara elektronan û hejmara nötronan çend e?"
@@ -1277,7 +1277,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Protons = atomic number = 26. Neutrons = 56 − 26 = 30. Fe3+ has lost 3 electrons: electrons = 26 − 3 = 23. Sum = 23 + 30 = 53. Forgetting the charge gives 26 + 30 = 56, adding it gives 29 + 30 = 59, and using protons instead of neutrons gives 23 + 26 = 49.",
         "de": "Protonen = Ordnungszahl = 26. Neutronen = 56 − 26 = 30. Fe3+ hat 3 Elektronen abgegeben: Elektronen = 26 − 3 = 23. Summe = 23 + 30 = 53. Ohne Ladung erhält man 26 + 30 = 56, mit addierter Ladung 29 + 30 = 59, mit Protonen statt Neutronen 23 + 26 = 49.",
         "fr": "Protons = numéro atomique = 26. Neutrons = 56 − 26 = 30. Fe3+ a perdu 3 électrons : électrons = 26 − 3 = 23. Somme = 23 + 30 = 53. En oubliant la charge on obtient 26 + 30 = 56, en l'ajoutant 29 + 30 = 59, et en prenant les protons au lieu des neutrons 23 + 26 = 49.",
-        "ru": "Протонов = атомный номер = 26. Нейтронов = 56 − 26 = 30. Ион Fe3+ отдал 3 электрона: электронов = 26 − 3 = 23. Сумма = 23 + 30 = 53. Если забыть заряд, получится 26 + 30 = 56; если прибавить его — 29 + 30 = 59; если взять протоны вместо нейтронов — 23 + 26 = 49.",
+        "ru": "Число протонов = порядковый номер = 26. Число нейтронов = 56 − 26 = 30. Ион Fe3+ образовался при отдаче 3 электронов: число электронов = 26 − 3 = 23. Сумма = 23 + 30 = 53. Если забыть о заряде иона, получится 26 + 30 = 56; если прибавить заряд — 29 + 30 = 59; если взять число протонов вместо числа нейтронов — 23 + 26 = 49.",
         "ar": "عدد البروتونات = العدد الذري = 26. عدد النيوترونات = 56 − 26 = 30. الأيون Fe3+ فقد 3 إلكترونات: عدد الإلكترونات = 26 − 3 = 23. المجموع = 23 + 30 = 53. وإهمال الشحنة يعطي 26 + 30 = 56، وإضافتها يعطي 29 + 30 = 59، واستعمال البروتونات بدل النيوترونات يعطي 23 + 26 = 49.",
         "zh": "质子数 = 原子序数 = 26；中子数 = 56 − 26 = 30。Fe3+ 失去了 3 个电子：电子数 = 26 − 3 = 23。和 = 23 + 30 = 53。忘记电荷会得到 26 + 30 = 56，把电荷加上会得到 29 + 30 = 59，用质子数代替中子数会得到 23 + 26 = 49。",
         "ku": "Hejmara protonan = hejmara atomê = 26. Hejmara nötronan = 56 − 26 = 30. Îyona Fe3+ 3 elektron dane: hejmara elektronan = 26 − 3 = 23. Berhevok = 23 + 30 = 53. Heke bar ji bîr bibe 26 + 30 = 56, heke bar were zêdekirin 29 + 30 = 59, heke li şûna nötronan proton were girtin 23 + 26 = 49 derdikeve."
@@ -1290,7 +1290,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Which of the following statements about the atoms 14/6 C, 14/7 N and 12/6 C are correct? (Upper number: mass number; lower number: atomic number.)\nI. 14C and 12C are isotopes of each other.\nII. 14C and 14N are isobars of each other.\nIII. 12C and 14N are isotones of each other.",
         "de": "Welche Aussagen über die Atome 14/6 C, 14/7 N und 12/6 C sind richtig? (Obere Zahl: Massenzahl, untere Zahl: Ordnungszahl.)\nI. 14C und 12C sind Isotope.\nII. 14C und 14N sind Isobare.\nIII. 12C und 14N sind Isotone.",
         "fr": "Lesquelles des affirmations suivantes sur les atomes 14/6 C, 14/7 N et 12/6 C sont correctes ? (Nombre du haut : nombre de masse ; nombre du bas : numéro atomique.)\nI. 14C et 12C sont des isotopes.\nII. 14C et 14N sont des isobares.\nIII. 12C et 14N sont des isotones.",
-        "ru": "Какие утверждения об атомах 14/6 C, 14/7 N и 12/6 C верны? (Верхнее число — массовое число, нижнее — атомный номер.)\nI. 14C и 12C — изотопы.\nII. 14C и 14N — изобары.\nIII. 12C и 14N — изотоны.",
+        "ru": "Какие утверждения об атомах 14/6 C, 14/7 N и 12/6 C верны? (Верхнее число — массовое число, нижнее — порядковый номер.)\nI. 14C и 12C — изотопы.\nII. 14C и 14N — изобары.\nIII. 12C и 14N — изотоны.",
         "ar": "أيّ العبارات الآتية عن الذرات 14/6 C و14/7 N و12/6 C صحيحة؟ (العدد العلوي هو العدد الكتلي والسفلي هو العدد الذري.)\nI. ‏14C و12C نظيران.\nII. ‏14C و14N متساويا الكتلة (إيزوبار).\nIII. ‏12C و14N متساويا النيوترونات (إيزوتون).",
         "zh": "关于原子 14/6 C、14/7 N 和 12/6 C 的下列说法中，哪些正确？（上方数字为质量数，下方数字为原子序数。）\nI. 14C 和 12C 互为同位素。\nII. 14C 和 14N 互为同量素。\nIII. 12C 和 14N 互为同中子素。",
         "ku": "Kîjan ji van gotinên li ser atomên 14/6 C, 14/7 N û 12/6 C rast in? (Hejmara jorîn hejmara girseyê, ya jêrîn hejmara atomê ye.)\nI. 14C û 12C îzotopên hev in.\nII. 14C û 14N îzobarên hev in.\nIII. 12C û 14N îzotonên hev in."
@@ -1353,9 +1353,9 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Neutrons: 14C has 14 − 6 = 8, 12C has 12 − 6 = 6, 14N has 14 − 7 = 7. I is true: 14C and 12C have the same proton number (6) but different mass numbers. II is true: 14C and 14N have the same mass number (14) but different proton numbers. III is false: isotones need equal neutron numbers, but 12C has 6 and 14N has 7. Answer: I and II.",
         "de": "Neutronen: 14C hat 14 − 6 = 8, 12C hat 12 − 6 = 6, 14N hat 14 − 7 = 7. I ist richtig: gleiche Protonenzahl (6), verschiedene Massenzahlen. II ist richtig: gleiche Massenzahl (14), verschiedene Protonenzahlen. III ist falsch: Isotone brauchen gleiche Neutronenzahlen, 12C hat 6, 14N hat 7. Antwort: I und II.",
         "fr": "Neutrons : 14C en a 14 − 6 = 8, 12C 12 − 6 = 6, 14N 14 − 7 = 7. I est vraie : même nombre de protons (6), nombres de masse différents. II est vraie : même nombre de masse (14), nombres de protons différents. III est fausse : des isotones doivent avoir le même nombre de neutrons ; 12C en a 6 et 14N 7. Réponse : I et II.",
-        "ru": "Нейтроны: у 14C 14 − 6 = 8, у 12C 12 − 6 = 6, у 14N 14 − 7 = 7. I верно: одинаковое число протонов (6), разные массовые числа. II верно: одинаковое массовое число (14), разное число протонов. III неверно: у изотонов должно быть равное число нейтронов, а у 12C их 6, у 14N — 7. Ответ: I и II.",
+        "ru": "Число нейтронов: у 14C — 14 − 6 = 8, у 12C — 12 − 6 = 6, у 14N — 14 − 7 = 7. I верно: у 14C и 12C одинаковое число протонов (6) и разные массовые числа. II верно: у 14C и 14N одинаковое массовое число (14) и разное число протонов. III неверно: у изотонов число нейтронов должно быть одинаковым, а у 12C их 6, у 14N — 7. Ответ: I и II.",
         "ar": "عدد النيوترونات: في 14C ‏14 − 6 = 8، وفي 12C ‏12 − 6 = 6، وفي 14N ‏14 − 7 = 7. العبارة I صحيحة: لهما العدد الذري نفسه (6) وعددان كتليان مختلفان. العبارة II صحيحة: لهما العدد الكتلي نفسه (14) وعددان ذريان مختلفان. العبارة III خاطئة: يتطلب الإيزوتون تساوي عدد النيوترونات، وفي 12C ستة وفي 14N سبعة. الإجابة: I وII.",
-        "zh": "中子数：14C 为 14 − 6 = 8，12C 为 12 − 6 = 6，14N 为 14 − 7 = 7。I 正确：14C 与 12C 质子数相同（6），质量数不同。II 正确：14C 与 14N 质量数相同（14），质子数不同。III 错误：同中子素要求中子数相等，而 12C 有 6 个、14N 有 7 个中子。答案：I 和 II。",
+        "zh": "中子数：14C 为 14 − 6 = 8，12C 为 12 − 6 = 6，14N 为 14 − 7 = 7。I 正确：14C 与 12C 质子数相同(6)，质量数不同。II 正确：14C 与 14N 质量数相同(14)，质子数不同。III 错误：同中子素要求中子数相等，而 12C 有 6 个、14N 有 7 个中子。答案：I 和 II。",
         "ku": "Hejmara nötronan: 14C 14 − 6 = 8, 12C 12 − 6 = 6, 14N 14 − 7 = 7. I rast e: hejmara protonan (6) wekhev, hejmarên girseyê cuda ne. II rast e: hejmara girseyê (14) wekhev, hejmarên protonan cuda ne. III şaş e: ji bo îzotonbûnê divê hejmara nötronan wekhev be; 12C 6, 14N 7 nötron hene. Bersiv: I û II."
       }
     },
@@ -1429,7 +1429,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "I is true: electronegativity increases to the right across a period and decreases down a group; Y, at the upper right, is the most electronegative. II is false: X and Z are in the same group and Z is lower; it loses its valence electron more easily, so Z is the most reactive metal. III is true: in the same period Y (right) is smaller than X (left), and Z, with two more shells, is the largest. Answer: I and III.",
         "de": "I ist richtig: Die Elektronegativität steigt in der Periode nach rechts und sinkt in der Gruppe nach unten; Y oben rechts ist am elektronegativsten. II ist falsch: X und Z stehen in derselben Gruppe, Z weiter unten; es gibt sein Valenzelektron leichter ab und ist am aktivsten. III ist richtig: In derselben Periode ist Y (rechts) kleiner als X (links), Z mit zwei Schalen mehr ist am größten. Antwort: I und III.",
         "fr": "I est vraie : l'électronégativité augmente vers la droite dans une période et diminue vers le bas d'un groupe ; Y, en haut à droite, est le plus électronégatif. II est fausse : X et Z sont dans le même groupe et Z est plus bas ; il cède plus facilement son électron de valence, c'est donc Z le plus réactif. III est vraie : dans la même période, Y (à droite) est plus petit que X (à gauche) et Z, avec deux couches de plus, est le plus grand. Réponse : I et III.",
-        "ru": "I верно: электроотрицательность растёт слева направо в периоде и уменьшается вниз по группе; Y, находящийся справа вверху, самый электроотрицательный. II неверно: X и Z в одной группе, Z ниже; он легче отдаёт валентный электрон, поэтому самый активный металл — Z. III верно: в одном периоде Y (справа) меньше X (слева), а Z, имеющий на два слоя больше, самый крупный. Ответ: I и III.",
+        "ru": "I верно: электроотрицательность в периоде растёт слева направо и уменьшается вниз по группе; Y, расположенный справа вверху, самый электроотрицательный. II неверно: X и Z находятся в одной группе, Z — ниже; он легче отдаёт валентный электрон, поэтому наибольшая металлическая активность у Z. III верно: в одном периоде Y (справа) меньше X (слева), а у Z на два электронных слоя больше, поэтому его радиус наибольший. Ответ: I и III.",
         "ar": "العبارة I صحيحة: تزداد الكهرسلبية نحو اليمين في الدورة وتقل نزولاً في المجموعة، وY في أعلى اليمين فهو الأعلى كهرسلبية. العبارة II خاطئة: X وZ في مجموعة واحدة وZ أدنى، فيفقد إلكترون تكافئه بسهولة أكبر ويكون الأنشط فلزياً. العبارة III صحيحة: في الدورة نفسها Y (يميناً) أصغر من X (يساراً)، وZ أكبرها لأن لديه غلافين إضافيين. الإجابة: I وIII.",
         "zh": "I 正确：电负性同周期从左到右增大，同族从上到下减小，位于右上方的 Y 电负性最大。II 错误：X 和 Z 同族，Z 在下方，更容易失去价电子，所以金属活动性最强的是 Z。III 正确：同周期中右边的 Y 比左边的 X 小，Z 多两个电子层，半径最大。答案：I 和 III。",
         "ku": "I rast e: elektronegatîfî di periyodê de ber bi rastê zêde dibe, di komê de ber bi jêr kêm dibe; Y ya li jor-rastê herî elektronegatîf e. II şaş e: X û Z di heman komê de ne û Z jêrtir e; elektrona xwe ya valansê hêsantir dide, loma ya herî çalak Z ye. III rast e: di heman periyodê de Y (rast) ji X (çep) biçûktir e, Z jî bi du qatên zêde herî mezin e. Bersiv: I û III."
@@ -1507,7 +1507,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Li, F et Ne sont dans la 2e période (2-1, 2-7, 2-8) ; Na est dans la 3e période, groupe 1A (2-8-1). Dans une période, l'énergie d'ionisation augmente en général vers la droite et le gaz noble Ne a la valeur la plus élevée : Ne > F > Li. Elle diminue vers le bas d'un groupe, donc Na est sous Li. Ordre : Ne > F > Li > Na. Placer F en tête vient d'une confusion avec l'électronégativité.",
         "ru": "Li, F и Ne находятся во 2-м периоде (2-1, 2-7, 2-8), Na — в 3-м периоде, группе 1A (2-8-1). В периоде слева направо энергия ионизации в целом растёт, и наибольшая она у благородного газа Ne: Ne > F > Li. Вниз по группе она уменьшается, поэтому у Na меньше, чем у Li. Порядок: Ne > F > Li > Na. Если поставить F первым, значит перепутаны электроотрицательность и энергия ионизации.",
         "ar": "تقع Li وF وNe في الدورة الثانية (2-1، 2-7، 2-8)، وNa في الدورة الثالثة المجموعة 1A (2-8-1). في الدورة تزداد طاقة التأين عموماً نحو اليمين، وللغاز النبيل Ne أعلى قيمة: Ne > F > Li. وتقل نزولاً في المجموعة، لذا Na أقل من Li. الترتيب: Ne > F > Li > Na. ووضع F أولاً ناتج عن الخلط بين الكهرسلبية وطاقة التأين.",
-        "zh": "Li、F、Ne 位于第 2 周期（2-1、2-7、2-8），Na 位于第 3 周期 1A 族（2-8-1）。同周期从左到右电离能总体增大，稀有气体 Ne 最大：Ne > F > Li。同族从上到下电离能减小，所以 Na 小于 Li。顺序为 Ne > F > Li > Na。把 F 排在首位是把电负性与电离能混淆了。",
+        "zh": "Li、F、Ne 位于第 2 周期(2-1、2-7、2-8)，Na 位于第 3 周期 1A 族(2-8-1)。同周期从左到右电离能总体增大，稀有气体 Ne 最大：Ne > F > Li。同族从上到下电离能减小，所以 Na 小于 Li。顺序为 Ne > F > Li > Na。把 F 排在首位是把电负性与电离能混淆了。",
         "ku": "Li, F û Ne di periyoda 2. de ne (2-1, 2-7, 2-8); Na di periyoda 3. koma 1A de ye (2-8-1). Di periyodê de ber bi rastê enerjiya îyonbûnê bi giştî zêde dibe û gaza soy Ne herî bilind e: Ne > F > Li. Di komê de ber bi jêr kêm dibe, loma Na ji Li biçûktir e. Rêz: Ne > F > Li > Na. Danîna F li serî ji tevlihevkirina elektronegatîfiyê û enerjiya îyonbûnê tê."
       }
     },
@@ -1683,7 +1683,7 @@ export const unit02: ChemistryUnitSeedData = {
           "fr": "X : non-métal, Y : métal, Z : métalloïde",
           "ru": "X: неметалл, Y: металл, Z: полуметалл",
           "ar": "X: لافلز، Y: فلز، Z: شبه فلز",
-          "zh": "X：非金属，Y：金属，Z：准金属",
+          "zh": "X：非金属，Y：金属，Z：类金属",
           "ku": "X: nemetal, Y: metal, Z: nîv-metal"
         },
         {
@@ -1693,7 +1693,7 @@ export const unit02: ChemistryUnitSeedData = {
           "fr": "X : métal, Y : non-métal, Z : métalloïde",
           "ru": "X: металл, Y: неметалл, Z: полуметалл",
           "ar": "X: فلز، Y: لافلز، Z: شبه فلز",
-          "zh": "X：金属，Y：非金属，Z：准金属",
+          "zh": "X：金属，Y：非金属，Z：类金属",
           "ku": "X: metal, Y: nemetal, Z: nîv-metal"
         },
         {
@@ -1703,7 +1703,7 @@ export const unit02: ChemistryUnitSeedData = {
           "fr": "X : métal, Y : métalloïde, Z : non-métal",
           "ru": "X: металл, Y: полуметалл, Z: неметалл",
           "ar": "X: فلز، Y: شبه فلز، Z: لافلز",
-          "zh": "X：金属，Y：准金属，Z：非金属",
+          "zh": "X：金属，Y：类金属，Z：非金属",
           "ku": "X: metal, Y: nîv-metal, Z: nemetal"
         },
         {
@@ -1713,7 +1713,7 @@ export const unit02: ChemistryUnitSeedData = {
           "fr": "X : métalloïde, Y : non-métal, Z : métal",
           "ru": "X: полуметалл, Y: неметалл, Z: металл",
           "ar": "X: شبه فلز، Y: لافلز، Z: فلز",
-          "zh": "X：准金属，Y：非金属，Z：金属",
+          "zh": "X：类金属，Y：非金属，Z：金属",
           "ku": "X: nîv-metal, Y: nemetal, Z: metal"
         },
         {
@@ -1735,7 +1735,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "L'éclat, la ductilité/malléabilité et la bonne conductivité sont des propriétés métalliques : X est un métal. Le solide terne, cassant et isolant Y est un non-métal. Z, brillant mais cassant et moins conducteur que les métaux (semi-conducteur), est un métalloïde. Les gaz nobles sont gazeux dans les conditions ambiantes : Y, solide, ne peut pas en être un.",
         "ru": "Блеск, пластичность и хорошая проводимость — свойства металлов, значит X — металл. Матовый, хрупкий, непроводящий Y — неметалл. Z, блестящий, но хрупкий и проводящий хуже металлов (полупроводник), — полуметалл. Благородные газы при комнатных условиях — газы, поэтому твёрдый Y не может быть благородным газом.",
         "ar": "اللمعان وقابلية السحب والطرق وجودة التوصيل من خواص الفلزات، فـX فلز. والصلب الباهت الهش العازل Y لافلز. وZ اللامع الهش الأضعف توصيلاً من الفلزات (شبه موصل) شبه فلز. والغازات النبيلة غازية في الظروف العادية، فلا يمكن أن يكون Y الصلب غازاً نبيلاً.",
-        "zh": "有光泽、有延展性、导电导热好是金属的性质，X 是金属。无光泽、易碎、不导电的固体 Y 是非金属。有光泽但易碎、导电性比金属差（半导体）的 Z 是准金属。稀有气体在常温常压下是气体，所以固体 Y 不可能是稀有气体。",
+        "zh": "有光泽、有延展性、导电导热好是金属的性质，X 是金属。无光泽、易碎、不导电的固体 Y 是非金属。有光泽但易碎、导电性比金属差（半导体）的 Z 是类金属。稀有气体在常温常压下是气体，所以固体 Y 不可能是稀有气体。",
         "ku": "Biriqîn, bûna têl û pel û guhezîna baş taybetiyên metalan in; X metal e. Y ya hişk a mat, şikestbar û îzolator nemetal e. Z ya biriqok lê şikestbar û ji metalan kêmtir guhêzer (nîv-guhêzer) nîv-metal e. Gazên soy di şertên odeyê de gaz in, loma Y ya hişk nabe gaza soy."
       }
     },
@@ -1809,7 +1809,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "All four ions have 10 electrons (isoelectronic): O2- 8 + 2, F- 9 + 1, Na+ 11 − 1, Mg2+ 12 − 2. With equal electron numbers, the more protons, the more strongly the electrons are pulled and the smaller the radius. Proton numbers are 8 < 9 < 11 < 12, so the radii are O2- > F- > Na+ > Mg2+. Thinking the metal ions are larger confuses atomic radius with ionic radius.",
         "de": "Alle vier Ionen haben 10 Elektronen (isoelektronisch): O2- 8 + 2, F- 9 + 1, Na+ 11 − 1, Mg2+ 12 − 2. Bei gleicher Elektronenzahl werden die Elektronen mit steigender Protonenzahl stärker angezogen, der Radius sinkt. Protonenzahlen 8 < 9 < 11 < 12, also O2- > F- > Na+ > Mg2+. Metallionen für größer zu halten, verwechselt Atom- und Ionenradius.",
         "fr": "Les quatre ions ont 10 électrons (isoélectroniques) : O2- 8 + 2, F- 9 + 1, Na+ 11 − 1, Mg2+ 12 − 2. À nombre d'électrons égal, plus il y a de protons, plus les électrons sont attirés et plus le rayon est petit. Les nombres de protons sont 8 < 9 < 11 < 12, d'où O2- > F- > Na+ > Mg2+. Croire les ions métalliques plus gros confond rayon atomique et rayon ionique.",
-        "ru": "У всех четырёх ионов по 10 электронов (изоэлектронны): O2- 8 + 2, F- 9 + 1, Na+ 11 − 1, Mg2+ 12 − 2. При равном числе электронов чем больше протонов, тем сильнее притяжение и тем меньше радиус. Числа протонов 8 < 9 < 11 < 12, значит O2- > F- > Na+ > Mg2+. Считать ионы металлов более крупными — значит путать атомный и ионный радиусы.",
+        "ru": "У всех четырёх ионов по 10 электронов (это изоэлектронные частицы): у O2- 8 + 2, у F- 9 + 1, у Na+ 11 − 1, у Mg2+ 12 − 2. При одинаковом числе электронов чем больше протонов, тем сильнее притяжение и тем меньше радиус. Числа протонов 8 < 9 < 11 < 12, поэтому O2- > F- > Na+ > Mg2+. Считать ионы металлов более крупными — значит путать радиус атома и радиус иона.",
         "ar": "للأيونات الأربعة 10 إلكترونات (متساوية الإلكترونات): O2- ‏8 + 2، F- ‏9 + 1، Na+ ‏11 − 1، Mg2+ ‏12 − 2. وعند تساوي عدد الإلكترونات كلما زاد عدد البروتونات زاد الجذب وصغر نصف القطر. أعداد البروتونات 8 < 9 < 11 < 12، إذن O2- > F- > Na+ > Mg2+. واعتبار أيونات الفلزات أكبر خلطٌ بين نصف القطر الذري والأيوني.",
         "zh": "四种离子都有 10 个电子（等电子）：O2- 为 8 + 2，F- 为 9 + 1，Na+ 为 11 − 1，Mg2+ 为 12 − 2。电子数相同时，质子数越多，电子受吸引越强，半径越小。质子数 8 < 9 < 11 < 12，所以半径 O2- > F- > Na+ > Mg2+。认为金属离子更大，是把原子半径和离子半径混淆了。",
         "ku": "Her çar îyonan 10 elektron hene (îzoelektronîk): O2- 8 + 2, F- 9 + 1, Na+ 11 − 1, Mg2+ 12 − 2. Dema hejmara elektronan wekhev be, her ku proton zêde dibin elektron bi hêztir tên kişandin û tîrêj biçûk dibe. Hejmarên protonan 8 < 9 < 11 < 12 in, loma O2- > F- > Na+ > Mg2+. Mezin hesibandina îyonên metalan tevlihevkirina tîrêja atomê û îyonê ye."
@@ -1822,7 +1822,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Which of the following statements about element X with atomic number 20 is incorrect?",
         "de": "Welche Aussage über das Element X mit der Ordnungszahl 20 ist falsch?",
         "fr": "Laquelle des affirmations suivantes sur l'élément X de numéro atomique 20 est incorrecte ?",
-        "ru": "Какое утверждение об элементе X с атомным номером 20 неверно?",
+        "ru": "Какое утверждение об элементе X с порядковым номером 20 неверно?",
         "ar": "أيّ العبارات الآتية عن العنصر X الذي عدده الذري 20 خاطئة؟",
         "zh": "关于原子序数为 20 的元素 X，下列说法错误的是哪一项？",
         "ku": "Kîjan ji van gotinên li ser elementa X ya ku hejmara atomê 20 e şaş e?"
@@ -1885,7 +1885,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "The 20 electrons are arranged 2-8-8-2. With four shells X is in period 4, and with 2 electrons in the outer shell it is in group 2A: it is calcium, an alkaline earth metal. It loses its 2 valence electrons to form X2+. Being a metal, its electronegativity is lower than that of the 7A element of the same period. It has 2 valence electrons, not 8; 8 is the number in the second-to-last shell.",
         "de": "Die 20 Elektronen sind als 2-8-8-2 verteilt. Vier Schalen bedeuten 4. Periode, 2 Außenelektronen Gruppe 2A: Es ist Calcium, ein Erdalkalimetall. Durch Abgabe der 2 Valenzelektronen bildet es X2+. Als Metall ist seine Elektronegativität kleiner als die des 7A-Elements derselben Periode. Es hat 2 Valenzelektronen, nicht 8; 8 ist die Elektronenzahl der vorletzten Schale.",
         "fr": "Les 20 électrons se répartissent en 2-8-8-2. Quatre couches : 4e période ; 2 électrons externes : groupe 2A. C'est le calcium, un métal alcalino-terreux. Il cède ses 2 électrons de valence pour former X2+. Étant un métal, son électronégativité est inférieure à celle de l'élément 7A de la même période. Il a 2 électrons de valence et non 8 ; 8 est le nombre d'électrons de l'avant-dernière couche.",
-        "ru": "20 электронов распределены по слоям 2-8-8-2. Четыре слоя — 4-й период, 2 электрона на внешнем слое — группа 2A: это кальций, щёлочноземельный металл. Отдавая 2 валентных электрона, он образует X2+. Как металл, он менее электроотрицателен, чем элемент 7A того же периода. Валентных электронов 2, а не 8; 8 — число электронов на предпоследнем слое.",
+        "ru": "20 электронов распределены по слоям так: 2-8-8-2. Четыре электронных слоя — 4-й период, 2 электрона на внешнем слое — группа 2A: это кальций, щёлочноземельный металл. Отдавая 2 валентных электрона, он образует ион X2+. Как металл, он менее электроотрицателен, чем элемент группы 7A того же периода. Валентных электронов 2, а не 8; 8 — число электронов на предпоследнем слое.",
         "ar": "توزيع الإلكترونات العشرين على الأغلفة 2-8-8-2. أربعة أغلفة تعني الدورة الرابعة، وإلكترونان في الغلاف الأخير يعنيان المجموعة 2A، فهو الكالسيوم، فلز قلوي ترابي. يفقد إلكتروني التكافؤ مكوّناً X2+. ولأنه فلز فكهرسلبيته أقل من عنصر 7A في الدورة نفسها. عدد إلكترونات التكافؤ 2 لا 8؛ فالعدد 8 هو عدد إلكترونات الغلاف قبل الأخير.",
         "zh": "20 个电子的分层排布为 2-8-8-2。有四个电子层，位于第 4 周期；最外层 2 个电子，位于 2A 族，即碱土金属钙。它失去 2 个价电子形成 X2+。作为金属，其电负性小于同周期 7A 族元素。价电子数是 2 而不是 8；8 是次外层的电子数。",
         "ku": "Belavbûna 20 elektronan li qatan 2-8-8-2 ye. Ji ber çar qatan X di periyoda 4. de ye, ji ber 2 elektronên qata dawî di koma 2A de ye; ango kalsiyûm e, metaleke alkalî-axî. Bi dayîna 2 elektronên valansê îyona X2+ çêdike. Ji ber ku metal e, elektronegatîfiya wê ji ya elementa 7A ya heman periyodê biçûktir e. Hejmara elektronên valansê ne 8, 2 ye; 8 hejmara elektronên qata berî dawî ye."
@@ -1985,7 +1985,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "Its very high electronegativity",
           "de": "Seine sehr hohe Elektronegativität",
           "fr": "Sa très grande électronégativité",
-          "ru": "Его очень высокая электроотрицательность",
+          "ru": "Очень высокая электроотрицательность",
           "ar": "كهرسلبيته العالية جداً",
           "zh": "它的电负性很高",
           "ku": "Elektronegatîfiya wê ya pir bilind"
@@ -2005,7 +2005,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "It combines easily with oxygen and releases heat",
           "de": "Es verbindet sich leicht mit Sauerstoff und setzt Wärme frei",
           "fr": "Il se combine facilement avec l'oxygène en dégageant de la chaleur",
-          "ru": "Он легко соединяется с кислородом с выделением теплоты",
+          "ru": "Способность легко соединяться с кислородом с выделением теплоты",
           "ar": "يتحد بسهولة مع الأكسجين ويطلق حرارة",
           "zh": "容易与氧气化合并放出热量",
           "ku": "Bi hêsanî bi oksîjenê re dibe yek û germ derdixe"
@@ -2015,7 +2015,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "It forms metallic bonds and conducts electricity well",
           "de": "Es bildet Metallbindungen und leitet Strom gut",
           "fr": "Il forme des liaisons métalliques et conduit bien l'électricité",
-          "ru": "Образует металлическую связь и хорошо проводит ток",
+          "ru": "Способность образовывать металлическую связь и хорошо проводить ток",
           "ar": "يكوّن روابط فلزية ويوصل الكهرباء جيداً",
           "zh": "形成金属键，导电性好",
           "ku": "Girêdana metalî çêdike û elektrîkê baş diguhezîne"
@@ -2025,7 +2025,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "It dissolves very well in water",
           "de": "Es löst sich sehr gut in Wasser",
           "fr": "Il est très soluble dans l'eau",
-          "ru": "Он очень хорошо растворяется в воде",
+          "ru": "Очень высокая растворимость в воде",
           "ar": "يذوب في الماء جيداً جداً",
           "zh": "极易溶于水",
           "ku": "Di avê de pir baş dihele"
@@ -2147,7 +2147,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "Being the first to place the noble gases as a separate group",
           "de": "Die erstmalige Einordnung der Edelgase als eigene Gruppe",
           "fr": "Le placement, pour la première fois, des gaz nobles dans un groupe à part",
-          "ru": "Впервые выделенная отдельная группа благородных газов",
+          "ru": "Выделение благородных газов в отдельную группу",
           "ar": "وضع الغازات النبيلة لأول مرة مجموعةً مستقلة في الجدول",
           "zh": "首次把稀有气体作为单独一族放入表中",
           "ku": "Cara yekem danîna gazên soy wekî komeke cuda di tabloyê de"
@@ -2157,7 +2157,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "Leaving gaps for undiscovered elements and predicting their properties in advance",
           "de": "Lücken für noch unentdeckte Elemente zu lassen und deren Eigenschaften vorherzusagen",
           "fr": "Le fait de laisser des cases vides pour des éléments inconnus et d'en prédire les propriétés",
-          "ru": "Оставленные пустые места для неоткрытых элементов и предсказание их свойств",
+          "ru": "Пустые места, оставленные для неоткрытых элементов, и предсказание их свойств",
           "ar": "ترك فراغات لعناصر لم تُكتشف بعد والتنبؤ بخواصها مسبقاً",
           "zh": "为尚未发现的元素留下空位并预言其性质",
           "ku": "Ji bo elementên ku hîn nehatine keşfkirin cih vala hiştin û pêşbînîkirina taybetiyên wan"
@@ -2177,7 +2177,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "Dividing the elements into just two groups, metals and non-metals",
           "de": "Die Einteilung der Elemente in nur zwei Gruppen, Metalle und Nichtmetalle",
           "fr": "La répartition des éléments en deux groupes seulement, métaux et non-métaux",
-          "ru": "Деление элементов всего на две группы — металлы и неметаллы",
+          "ru": "Деление элементов всего на две группы: металлы и неметаллы",
           "ar": "تقسيم العناصر إلى مجموعتين فقط: فلزات ولافلزات",
           "zh": "只把元素分为金属和非金属两类",
           "ku": "Dabeşkirina elementan tenê bo du koman, metal û nemetal"
@@ -2191,7 +2191,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "En classant les éléments par masse atomique, Mendeleïev a laissé des cases vides là où les propriétés ne concordaient pas et a prédit les propriétés d'éléments inconnus comme le gallium et le germanium ; leur découverte, confirmant les prédictions, a assuré le succès du tableau. Le classement par nombre de protons est l'œuvre de Moseley ; les gaz nobles étaient inconnus en 1869 et furent ajoutés plus tard.",
         "ru": "Располагая элементы по атомной массе, Менделеев оставил пустые места там, где свойства не совпадали, и предсказал свойства ещё неизвестных элементов, например галлия и германия; когда их открыли и предсказания подтвердились, таблица получила широкое признание. Упорядочение по числу протонов — заслуга Мозли; благородные газы в 1869 году ещё не были известны и были добавлены позже.",
         "ar": "عند ترتيب مندلييف العناصر حسب الكتلة الذرية ترك فراغات حيث لم تتوافق الخواص، وتنبأ بخواص عناصر لم تكن معروفة مثل الغاليوم والجرمانيوم؛ وعندما اكتُشفت وتأكدت التنبؤات حظي الجدول بقبول واسع. أما الترتيب حسب عدد البروتونات فيعود إلى موزلي، والغازات النبيلة لم تكن معروفة عام 1869 وأضيفت لاحقاً.",
-        "zh": "门捷列夫按原子量排列元素时，在性质不吻合处留下空位，并预言了镓、锗等当时未知元素的性质；这些元素被发现、预言得到证实后，周期表获得了广泛认可。按质子数排列是莫塞莱的工作；1869 年稀有气体尚未被发现，是后来才加入的。",
+        "zh": "门捷列夫按原子量排列元素时，在性质不吻合处留下空位，并预言了镓、锗等当时未知元素的性质；这些元素被发现、预言得到证实后，周期表获得了广泛认可。按质子数排列是莫斯莱的工作；1869 年稀有气体尚未被发现，是后来才加入的。",
         "ku": "Mendeleyev dema element li gorî girseya atomê rêz dikirin, li cihên ku taybetî li hev nedihatin cih vala hiştin û taybetiyên elementên nenas ên wekî galyûm û germanyûmê pêşbînî kirin; dema ev hatin dîtin û pêşbînî rast derketin, tablo bi hêz hate qebûlkirin. Rêzkirina li gorî hejmara protonan ya Moseley ye; gazên soy di 1869an de hîn nedihatin zanîn û paşê hatin zêdekirin."
       }
     },
@@ -2213,7 +2213,7 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "Z has the largest atomic number.",
           "de": "Z hat die größte Ordnungszahl.",
           "fr": "Z a le plus grand numéro atomique.",
-          "ru": "Наибольший атомный номер у Z.",
+          "ru": "Наибольший порядковый номер у Z.",
           "ar": "أكبرها عدداً ذرياً Z.",
           "zh": "原子序数最大的是 Z。",
           "ku": "Hejmara atomê ya herî mezin a Z ye."
@@ -2265,7 +2265,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Going down a group, the number of shells and the atomic radius increase; Z, with the largest radius, is lowest and so has the largest atomic number. Down the group, ionisation energy and electronegativity decrease and metallic reactivity increases: X has the highest ionisation energy and electronegativity, Z the greatest metallic reactivity. Elements in the same group have equal numbers of valence electrons.",
         "de": "In einer Gruppe nehmen Schalenzahl und Atomradius nach unten zu; Z mit dem größten Radius steht am weitesten unten und hat die größte Ordnungszahl. Nach unten sinken Ionisierungsenergie und Elektronegativität, die metallische Aktivität steigt: X hat die höchste Ionisierungsenergie und Elektronegativität, Z die größte Aktivität. Elemente einer Gruppe haben gleich viele Valenzelektronen.",
         "fr": "En descendant un groupe, le nombre de couches et le rayon atomique augmentent ; Z, au plus grand rayon, est le plus bas et a donc le plus grand numéro atomique. Vers le bas, l'énergie d'ionisation et l'électronégativité diminuent et la réactivité métallique augmente : X a la plus grande énergie d'ionisation et électronégativité, Z la plus grande réactivité. Les éléments d'un même groupe ont le même nombre d'électrons de valence.",
-        "ru": "Вниз по группе число слоёв и радиус атома растут; Z с наибольшим радиусом расположен ниже всех и имеет наибольший атомный номер. Вниз по группе энергия ионизации и электроотрицательность уменьшаются, а металлическая активность растёт: наибольшие энергия ионизации и электроотрицательность у X, наибольшая активность у Z. У элементов одной группы одинаковое число валентных электронов.",
+        "ru": "Вниз по группе число электронных слоёв и радиус атома растут; Z с наибольшим радиусом расположен ниже всех, значит, у него наибольший порядковый номер. Вниз по группе энергия ионизации и электроотрицательность уменьшаются, а металлическая активность растёт: наибольшие энергия ионизации и электроотрицательность у X, наибольшая металлическая активность у Z. У элементов одной группы одинаковое число валентных электронов.",
         "ar": "عند النزول في المجموعة يزداد عدد الأغلفة ونصف القطر الذري، وZ صاحب أكبر نصف قطر هو الأدنى فله أكبر عدد ذري. ومع النزول تقل طاقة التأين والكهرسلبية ويزداد النشاط الفلزي: فأكبرها طاقة تأين وكهرسلبية X، وأنشطها فلزياً Z. وعناصر المجموعة الواحدة متساوية في عدد إلكترونات التكافؤ.",
         "zh": "同族从上到下电子层数和原子半径增大；半径最大的 Z 位于最下方，原子序数最大。从上到下电离能和电负性减小，金属活动性增强：电离能和电负性最大的是 X，金属活动性最强的是 Z。同族元素的价电子数相等。",
         "ku": "Di komê de ber bi jêr hejmara qatan û tîrêja atomê zêde dibin; Z ya bi tîrêja herî mezin herî jêr e, loma hejmara atomê ya herî mezin a wê ye. Ber bi jêr enerjiya îyonbûnê û elektronegatîfî kêm dibin, çalakiya metalî zêde dibe: enerjiya îyonbûnê û elektronegatîfiya herî mezin a X, çalakiya metalî ya herî mezin a Z ye. Hejmara elektronên valansê ya elementên heman komê wekhev e."
