@@ -114,7 +114,25 @@ function ensure(isClick = false): AudioContext | null {
   }
 
   unlockAudio(ctx);
+  scheduleIdleSuspend();
   return ctx;
+}
+
+/** Sound effects are short; once they have been quiet for a few seconds the context is suspended
+ *  so the audio thread stops rendering silence. ensure() resumes it on the next sound. */
+const IDLE_SUSPEND_MS = 8000; // longer than the longest effect (fanfare + applause)
+let idleTimer: ReturnType<typeof setTimeout> | null = null;
+
+function scheduleIdleSuspend(): void {
+  if (idleTimer !== null) clearTimeout(idleTimer);
+  idleTimer = setTimeout(() => {
+    idleTimer = null;
+    suspendSfx();
+  }, IDLE_SUSPEND_MS);
+}
+
+export function suspendSfx(): void {
+  if (ctx && ctx.state === 'running') void ctx.suspend().catch(() => {});
 }
 
 function tone(

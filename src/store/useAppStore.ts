@@ -146,6 +146,17 @@ export interface AppState {
 }
 
 const STORAGE_KEY = 'kimya-yks-progress-v1';
+
+/** The saved interface language, read before React starts (main.tsx loads its unit pack first). */
+export function readStoredLanguage(): LanguageCode {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    const lang = raw ? (JSON.parse(raw) as { language?: unknown }).language : undefined;
+    return typeof lang === 'string' ? (lang as LanguageCode) : 'tr';
+  } catch {
+    return 'tr';
+  }
+}
 const THEME_KEY = 'kimya-color-scheme';
 
 export function todayStamp(): string {
