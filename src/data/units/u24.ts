@@ -63,14 +63,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-f02",
       "fact": {
-        "tr": "Alkenler (olefinler, CnH2n) en az bir ikili bağ (C=C) içerir; katılma ve polimerleşme tepkimesi verir.",
-        "en": "Alkenes (olefins, CnH2n) contain at least one double bond (C=C); they undergo addition and polymerization reactions.",
-        "de": "Alkene (Olefine, CnH2n) enthalten mindestens eine Doppelbindung (C=C); Es führt zu einer Additions- und Polymerisationsreaktion.",
-        "fr": "Les alcènes (oléfines, CnH2n) contiennent au moins une double liaison (C=C) ; Il donne une réaction d'addition et de polymérisation.",
-        "ru": "Алкены (олефины, CnH2n) содержат хотя бы одну двойную связь C=C; они вступают в реакции присоединения и полимеризации.",
-        "ar": "تحتوي الألكينات (الأوليفينات، CnH2n) على رابطة ثنائية واحدة على الأقل (C=C)؛ وتدخل في تفاعلات الإضافة والبلمرة.",
-        "zh": "烯烃(CnH2n)分子中至少含有一个碳碳双键(C=C)；能发生加成反应和聚合反应。",
-        "ku": "Alken (olefîn, CnH2n) herî kêm girêdaneke ducarî (C=C) dihewînin; reaksiyonên lêzêdekirinê û polîmerîzasyonê didin."
+        "tr": "Alkenler (olefinler) en az bir C=C ikili bağı içeren hidrokarbonlardır; tek ikili bağlı açık zincirli alkenlerin genel formülü CnH2n'dir. Alkenler katılma ve polimerleşme tepkimeleri verir.",
+        "en": "Alkenes (olefins) are hydrocarbons containing at least one C=C double bond; the general formula of open-chain alkenes with a single double bond is CnH2n. Alkenes undergo addition and polymerization reactions.",
+        "de": "Alkene (Olefine) sind Kohlenwasserstoffe mit mindestens einer C=C-Doppelbindung; offenkettige Alkene mit nur einer Doppelbindung haben die allgemeine Formel CnH2n. Alkene gehen Additions- und Polymerisationsreaktionen ein.",
+        "fr": "Les alcènes (oléfines) sont des hydrocarbures contenant au moins une double liaison C=C ; les alcènes à chaîne ouverte possédant une seule double liaison ont pour formule générale CnH2n. Les alcènes donnent des réactions d'addition et de polymérisation.",
+        "ru": "Алкены (олефины) — углеводороды, содержащие хотя бы одну двойную связь C=C; общая формула ациклических алкенов с одной двойной связью — CnH2n. Алкены вступают в реакции присоединения и полимеризации.",
+        "ar": "الألكينات (الأوليفينات) هيدروكربونات تحتوي على رابطة ثنائية C=C واحدة على الأقل؛ والصيغة العامة للألكينات مفتوحة السلسلة ذات الرابطة الثنائية الواحدة هي CnH2n. وتدخل الألكينات في تفاعلات الإضافة والبلمرة.",
+        "zh": "烯烃是至少含有一个 C=C 双键的烃；只含一个双键的链状烯烃的通式为 CnH2n。烯烃能发生加成反应和聚合反应。",
+        "ku": "Alken (olefîn) ew hîdrokarbon in ku herî kêm girêdaneke ducar a C=C dihewînin; formula giştî ya alkenên zincîra vekirî yên bi yek girêdana ducar CnH2n e. Alken reaksiyonên lêzêdekirin û polîmerîzasyonê didin."
       },
       "trap": {
         "tr": "Alkenler doymuş hidrokarbonlar sınıfındadır.",
@@ -172,14 +172,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-f05",
       "fact": {
-        "tr": "Alkinler (asetilenler, CnH2n-2) en az bir üçlü bağ içerir; uç alkinler amonyaklı AgNO3 çözeltisiyle beyaz, amonyaklı CuCl çözeltisiyle kırmızı çökelek verir.",
-        "en": "Alkynes (acetylenes, CnH2n-2) contain at least one triple bond; terminal alkynes give a white precipitate with ammoniacal AgNO3 solution and a red precipitate with ammoniacal CuCl solution.",
-        "de": "Alkine (Acetylene, CnH2n-2) enthalten mindestens eine Dreifachbindung; endständige Alkine bilden mit ammoniakalischer AgNO3-Lösung einen weißen und mit ammoniakalischer CuCl-Lösung einen roten Niederschlag.",
-        "fr": "Les alcynes (acétyléniques, CnH2n-2) contiennent au moins une triple liaison ; les alcynes terminaux donnent un précipité blanc avec une solution ammoniacale d'AgNO3 et un précipité rouge avec une solution ammoniacale de CuCl.",
-        "ru": "Алкины (ряд ацетилена, CnH2n-2) содержат хотя бы одну тройную связь; концевые алкины дают белый осадок с аммиачным раствором AgNO3 и красный осадок с аммиачным раствором CuCl.",
-        "ar": "تحتوي الألكاينات (الأسيتيلينات، CnH2n-2) على رابطة ثلاثية واحدة على الأقل؛ وتعطي الألكاينات الطرفية راسبًا أبيض مع محلول AgNO3 النشادري وراسبًا أحمر مع محلول CuCl النشادري.",
-        "zh": "炔烃(CnH2n-2)至少含有一个碳碳三键；端炔与银氨溶液(氨性 AgNO3 溶液)生成白色沉淀，与氨性 CuCl 溶液生成红色沉淀。",
-        "ku": "Alkîn (asetîlen, CnH2n-2) herî kêm girêdaneke sêcarî dihewînin; alkînên dawiyê bi çareseriya AgNO3 ya amonyakî re niştekeke spî, bi çareseriya CuCl ya amonyakî re niştekeke sor didin."
+        "tr": "Alkinler en az bir C≡C üçlü bağı içeren hidrokarbonlardır (tek üçlü bağlı açık zincirli alkinlerin genel formülü CnH2n-2'dir); uç alkinler amonyaklı AgNO3 çözeltisiyle beyaz, amonyaklı CuCl çözeltisiyle kırmızı çökelek verir.",
+        "en": "Alkynes are hydrocarbons containing at least one C≡C triple bond (open-chain alkynes with a single triple bond have the general formula CnH2n-2); terminal alkynes give a white precipitate with ammoniacal AgNO3 solution and a red precipitate with ammoniacal CuCl solution.",
+        "de": "Alkine sind Kohlenwasserstoffe mit mindestens einer C≡C-Dreifachbindung (offenkettige Alkine mit nur einer Dreifachbindung haben die allgemeine Formel CnH2n-2); endständige Alkine bilden mit ammoniakalischer AgNO3-Lösung einen weißen und mit ammoniakalischer CuCl-Lösung einen roten Niederschlag.",
+        "fr": "Les alcynes sont des hydrocarbures contenant au moins une triple liaison C≡C (les alcynes à chaîne ouverte possédant une seule triple liaison ont pour formule générale CnH2n-2) ; les alcynes terminaux donnent un précipité blanc avec une solution ammoniacale d'AgNO3 et un précipité rouge avec une solution ammoniacale de CuCl.",
+        "ru": "Алкины — углеводороды, содержащие хотя бы одну тройную связь C≡C (общая формула ациклических алкинов с одной тройной связью — CnH2n-2); концевые алкины дают белый осадок с аммиачным раствором AgNO3 и красный осадок с аммиачным раствором CuCl.",
+        "ar": "الألكاينات هيدروكربونات تحتوي على رابطة ثلاثية C≡C واحدة على الأقل (والصيغة العامة للألكاينات مفتوحة السلسلة ذات الرابطة الثلاثية الواحدة هي CnH2n-2)؛ وتعطي الألكاينات الطرفية راسبًا أبيض مع محلول AgNO3 النشادري وراسبًا أحمر مع محلول CuCl النشادري.",
+        "zh": "炔烃是至少含有一个 C≡C 三键的烃（只含一个三键的链状炔烃通式为 CnH2n-2）；端炔与氨性 AgNO3 溶液生成白色沉淀，与氨性 CuCl 溶液生成红色沉淀。",
+        "ku": "Alkîn ew hîdrokarbon in ku herî kêm girêdaneke sêcar a C≡C dihewînin (formula giştî ya alkînên zincîra vekirî yên bi yek girêdana sêcar CnH2n-2 ye); alkînên dawiyê bi çareseriya AgNO3 ya amonyakî re niştekeke spî, bi çareseriya CuCl ya amonyakî re niştekeke sor didin."
       },
       "trap": {
         "tr": "İç alkinler amonyaklı AgNO3 (Tollens) çözeltisiyle çökelek verir.",
@@ -436,14 +436,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-f13",
       "fact": {
-        "tr": "Aynı karbon sayılı (en az 2 karbonlu) monoalkoller ile eterler birbirinin fonksiyonel grup izomeridir (örn. etanol C2H5OH ve dimetil eter CH3-O-CH3).",
-        "en": "Monoalcohols and ethers with the same number of carbon atoms (at least 2) are functional group isomers of each other (e.g. ethanol C2H5OH and dimethyl ether CH3-O-CH3).",
-        "de": "Monoalkohole und Ether mit gleicher Kohlenstoffzahl (mindestens 2 C-Atome) sind Funktionsisomere (z. B. Ethanol C2H5OH und Dimethylether CH3-O-CH3).",
-        "fr": "Les monoalcools et les éthers ayant le même nombre d'atomes de carbone (au moins 2) sont des isomères de fonction (par ex. l'éthanol C2H5OH et l'éther diméthylique CH3-O-CH3).",
-        "ru": "Одноатомные спирты и простые эфиры с одинаковым числом атомов углерода (не менее 2) — межклассовые изомеры (например, этанол C2H5OH и диметиловый эфир CH3-O-CH3).",
-        "ar": "الكحولات الأحادية والإيثرات التي لها العدد نفسه من ذرات الكربون (2 على الأقل) متماكبات مجموعة وظيفية (مثل الإيثانول C2H5OH وثنائي ميثيل الإيثر CH3-O-CH3).",
-        "zh": "碳原子数相同(至少 2 个碳)的一元醇和醚互为官能团异构体(例如乙醇 C2H5OH 和二甲醚 CH3-O-CH3)。",
-        "ku": "Monoalkol û eterên bi heman hejmara karbonan (herî kêm 2 karbon) îzomerên koma fonksiyonel ên hev in (mînak etanol C2H5OH û dîmetîl eter CH3-O-CH3)."
+        "tr": "Aynı karbon sayılı (en az 2 karbonlu) doymuş açık zincirli monoalkoller ile eterler birbirinin fonksiyonel grup izomeridir (örn. etanol C2H5OH ve dimetil eter CH3-O-CH3).",
+        "en": "Saturated open-chain monoalcohols and ethers with the same number of carbon atoms (at least 2) are functional group isomers of each other (e.g. ethanol C2H5OH and dimethyl ether CH3-O-CH3).",
+        "de": "Gesättigte offenkettige Monoalkohole und Ether mit gleicher Kohlenstoffzahl (mindestens 2 C-Atome) sind Funktionsisomere (z. B. Ethanol C2H5OH und Dimethylether CH3-O-CH3).",
+        "fr": "Les monoalcools et les éthers saturés à chaîne ouverte ayant le même nombre d'atomes de carbone (au moins 2) sont des isomères de fonction (par ex. l'éthanol C2H5OH et l'éther diméthylique CH3-O-CH3).",
+        "ru": "Предельные ациклические одноатомные спирты и простые эфиры с одинаковым числом атомов углерода (не менее 2) — межклассовые изомеры (например, этанол C2H5OH и диметиловый эфир CH3-O-CH3).",
+        "ar": "الكحولات الأحادية والإيثرات المشبعة مفتوحة السلسلة التي لها العدد نفسه من ذرات الكربون (2 على الأقل) متماكبات مجموعة وظيفية (مثل الإيثانول C2H5OH وثنائي ميثيل الإيثر CH3-O-CH3).",
+        "zh": "碳原子数相同（至少 2 个碳）的饱和链状一元醇和醚互为官能团异构体（例如乙醇 C2H5OH 和二甲醚 CH3-O-CH3）。",
+        "ku": "Monoalkol û eterên têr ên zincîra vekirî yên bi heman hejmara karbonan (herî kêm 2 karbon) îzomerên koma fonksiyonel ên hev in (mînak etanol C2H5OH û dîmetîl eter CH3-O-CH3)."
       },
       "trap": {
         "tr": "Etanol ve dimetil eter aynı kimyasal özelliklere sahiptir.",
@@ -469,14 +469,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-f14",
       "fact": {
-        "tr": "Aynı karbon sayılı (en az 3 karbonlu) aldehitler ile ketonlar birbirinin fonksiyonel grup izomeridir (örn. propanal ve propanon).",
-        "en": "Aldehydes and ketones with the same number of carbon atoms (at least 3) are functional group isomers of each other (e.g. propanal and propanone).",
-        "de": "Aldehyde und Ketone mit gleicher Kohlenstoffzahl (mindestens 3 C-Atome) sind Funktionsisomere (z. B. Propanal und Propanon).",
-        "fr": "Les aldéhydes et les cétones ayant le même nombre d'atomes de carbone (au moins 3) sont des isomères de fonction (par ex. le propanal et la propanone).",
-        "ru": "Альдегиды и кетоны с одинаковым числом атомов углерода (не менее 3) — межклассовые изомеры (например, пропаналь и пропанон).",
-        "ar": "الألدهيدات والكيتونات التي لها العدد نفسه من ذرات الكربون (3 على الأقل) متماكبات مجموعة وظيفية (مثل البروبانال والبروبانون).",
-        "zh": "碳原子数相同(至少 3 个碳)的醛和酮互为官能团异构体（例如丙醛和丙酮）。",
-        "ku": "Aldehîd û ketonên bi heman hejmara karbonan (herî kêm 3 karbon) îzomerên koma fonksiyonel ên hev in (mînak propanal û propanon)."
+        "tr": "Aynı karbon sayılı (en az 3 karbonlu) doymuş açık zincirli aldehitler ile ketonlar birbirinin fonksiyonel grup izomeridir (örn. propanal ve propanon).",
+        "en": "Saturated open-chain aldehydes and ketones with the same number of carbon atoms (at least 3) are functional group isomers of each other (e.g. propanal and propanone).",
+        "de": "Gesättigte offenkettige Aldehyde und Ketone mit gleicher Kohlenstoffzahl (mindestens 3 C-Atome) sind Funktionsisomere (z. B. Propanal und Propanon).",
+        "fr": "Les aldéhydes et les cétones saturés à chaîne ouverte ayant le même nombre d'atomes de carbone (au moins 3) sont des isomères de fonction (par ex. le propanal et la propanone).",
+        "ru": "Предельные ациклические альдегиды и кетоны с одинаковым числом атомов углерода (не менее 3) — межклассовые изомеры (например, пропаналь и пропанон).",
+        "ar": "الألدهيدات والكيتونات المشبعة مفتوحة السلسلة التي لها العدد نفسه من ذرات الكربون (3 على الأقل) متماكبات مجموعة وظيفية (مثل البروبانال والبروبانون).",
+        "zh": "碳原子数相同（至少 3 个碳）的饱和链状醛和酮互为官能团异构体（例如丙醛和丙酮）。",
+        "ku": "Aldehîd û ketonên têr ên zincîra vekirî yên bi heman hejmara karbonan (herî kêm 3 karbon) îzomerên koma fonksiyonel ên hev in (mînak propanal û propanon)."
       },
       "trap": {
         "tr": "Aldehit ve keton izomerliği 2 karbonlu üyeden başlar.",
@@ -502,14 +502,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-f15",
       "fact": {
-        "tr": "Aynı karbon sayılı (en az 2 karbonlu) monokarboksilik asitler ile esterler birbirinin fonksiyonel grup izomeridir (örn. asetik asit ve metil format).",
-        "en": "Monocarboxylic acids and esters with the same number of carbon atoms (at least 2) are functional group isomers of each other (e.g. acetic acid and methyl formate).",
-        "de": "Monocarbonsäuren und Ester mit gleicher Kohlenstoffzahl (mindestens 2 C-Atome) sind Funktionsisomere (z. B. Essigsäure und Methylformiat).",
-        "fr": "Les acides monocarboxyliques et les esters ayant le même nombre d'atomes de carbone (au moins 2) sont des isomères de fonction (par ex. l'acide acétique et le formiate de méthyle).",
-        "ru": "Одноосновные карбоновые кислоты и сложные эфиры с одинаковым числом атомов углерода (не менее 2) — межклассовые изомеры (например, уксусная кислота и метилформиат).",
-        "ar": "الأحماض الكربوكسيلية الأحادية والإسترات التي لها العدد نفسه من ذرات الكربون (2 على الأقل) متماكبات مجموعة وظيفية (مثل حمض الأسيتيك وفورمات الميثيل).",
-        "zh": "碳原子数相同(至少 2 个碳)的一元羧酸和酯互为官能团异构体（例如乙酸和甲酸甲酯）。",
-        "ku": "Asîdên monokarboksîlîk û esterên bi heman hejmara karbonan (herî kêm 2 karbon) îzomerên koma fonksiyonel ên hev in (mînak asîda asetîk û metîl format)."
+        "tr": "Aynı karbon sayılı (en az 2 karbonlu) doymuş açık zincirli monokarboksilik asitler ile esterler birbirinin fonksiyonel grup izomeridir (örn. asetik asit ve metil format).",
+        "en": "Saturated open-chain monocarboxylic acids and esters with the same number of carbon atoms (at least 2) are functional group isomers of each other (e.g. acetic acid and methyl formate).",
+        "de": "Gesättigte offenkettige Monocarbonsäuren und Ester mit gleicher Kohlenstoffzahl (mindestens 2 C-Atome) sind Funktionsisomere (z. B. Essigsäure und Methylformiat).",
+        "fr": "Les acides monocarboxyliques et les esters saturés à chaîne ouverte ayant le même nombre d'atomes de carbone (au moins 2) sont des isomères de fonction (par ex. l'acide acétique et le formiate de méthyle).",
+        "ru": "Предельные ациклические одноосновные карбоновые кислоты и сложные эфиры с одинаковым числом атомов углерода (не менее 2) — межклассовые изомеры (например, уксусная кислота и метилформиат).",
+        "ar": "الأحماض الكربوكسيلية الأحادية والإسترات المشبعة مفتوحة السلسلة التي لها العدد نفسه من ذرات الكربون (2 على الأقل) متماكبات مجموعة وظيفية (مثل حمض الأسيتيك وفورمات الميثيل).",
+        "zh": "碳原子数相同（至少 2 个碳）的饱和链状一元羧酸和酯互为官能团异构体（例如乙酸和甲酸甲酯）。",
+        "ku": "Asîdên monokarboksîlîk û esterên têr ên zincîra vekirî yên bi heman hejmara karbonan (herî kêm 2 karbon) îzomerên koma fonksiyonel ên hev in (mînak asîda asetîk û metîl format)."
       },
       "trap": {
         "tr": "Esterlerin en küçük üyesi 1 karbonludur.",
@@ -1058,153 +1058,333 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin01",
       "stem": {
-        "tr": "Propen (CH3-CH=CH2) gazına asidik ortamda su (H2O) katıldığında Markovnikov kuralına göre ana ürün aşağıdakilerden hangisidir?",
-        "en": "When water (H2O) is added to propene (CH3-CH=CH2) gas in an acidic environment, which of the following is the main product according to Markovnikov's rule?",
-        "de": "Wenn in einer sauren Umgebung Wasser (H2O) zu Propengas (CH3-CH=CH2) hinzugefügt wird, welches der folgenden Produkte ist gemäß der Markownikow-Regel das Hauptprodukt?",
-        "fr": "Lorsque de l'eau (H2O) est ajoutée au gaz propène (CH3-CH=CH2) dans un environnement acide, lequel des éléments suivants est le produit principal selon la règle de Markovnikov ?",
-        "ru": "Какой продукт, согласно правилу Марковникова, будет основным при присоединении воды (H2O) к газообразному пропену (CH3-CH=CH2) в кислой среде?",
-        "ar": "عند إضافة الماء (H2O) إلى غاز البروبين (CH3-CH=CH2) في وسط حمضي، ما الناتج الرئيسي وفق قاعدة ماركوفنيكوف؟",
-        "zh": "在酸催化下，丙烯(CH3-CH=CH2)与水(H2O)发生加成反应。根据马氏规则，主要产物是下列哪一项？",
-        "ku": "Dema av (H2O) di hawîrdora asîdî de li gaza propenê (CH3-CH=CH2) tê zêdekirin, li gorî qaîdeya Markovnikov hilbera sereke kîjan e?"
+        "tr": "Şekildeki grafikte düz zincirli ilk altı alkanın 1 atm'deki kaynama noktalarının moleküldeki karbon sayısıyla değişimi verilmiştir; kesikli çizgi 25 °C'yi gösterir.\nBu alkanlarla ilgili;\nI. 25 °C ve 1 atm'de C5H12 (pentan) sıvı, C4H10 (bütan) gaz hâlindedir.\nII. Karbon sayısı arttıkça moleküller arası London kuvvetleri güçlendiği için kaynama noktası yükselir.\nIII. Molekül formülü C5H12 olan dallanmış 2,2-dimetilpropanın 1 atm'deki kaynama noktası 36 °C'den yüksektir.\nyargılarından hangileri doğrudur?",
+        "en": "The graph shows how the boiling points at 1 atm of the first six straight-chain alkanes change with the number of carbon atoms in the molecule; the dashed line marks 25 °C.\nWhich of the following statements about these alkanes are correct?\nI. At 25 °C and 1 atm, C5H12 (pentane) is a liquid and C4H10 (butane) is a gas.\nII. Boiling point rises with the number of carbon atoms because the London forces between molecules become stronger.\nIII. The branched isomer 2,2-dimethylpropane, C5H12, boils above 36 °C at 1 atm.",
+        "de": "Das Diagramm zeigt, wie sich die Siedepunkte der ersten sechs unverzweigten Alkane bei 1 atm mit der Zahl der Kohlenstoffatome im Molekül ändern; die gestrichelte Linie markiert 25 °C.\nWelche der folgenden Aussagen über diese Alkane sind richtig?\nI. Bei 25 °C und 1 atm ist C5H12 (Pentan) flüssig und C4H10 (Butan) gasförmig.\nII. Der Siedepunkt steigt mit der Zahl der Kohlenstoffatome, weil die London-Kräfte zwischen den Molekülen stärker werden.\nIII. Das verzweigte Isomer 2,2-Dimethylpropan, C5H12, siedet bei 1 atm oberhalb von 36 °C.",
+        "fr": "Le graphique montre l'évolution des températures d'ébullition sous 1 atm des six premiers alcanes linéaires en fonction du nombre d'atomes de carbone de la molécule ; la ligne en pointillés indique 25 °C.\nParmi les affirmations suivantes sur ces alcanes, lesquelles sont correctes ?\nI. À 25 °C et sous 1 atm, C5H12 (pentane) est liquide et C4H10 (butane) est gazeux.\nII. La température d'ébullition augmente avec le nombre d'atomes de carbone car les forces de London entre les molécules se renforcent.\nIII. L'isomère ramifié 2,2-diméthylpropane, C5H12, bout au-dessus de 36 °C sous 1 atm.",
+        "ru": "На графике показано, как температуры кипения первых шести неразветвлённых алканов при 1 атм меняются с числом атомов углерода в молекуле; штриховая линия соответствует 25 °C.\nКакие утверждения об этих алканах верны?\nI. При 25 °C и 1 атм C5H12 (пентан) — жидкость, а C4H10 (бутан) — газ.\nII. С ростом числа атомов углерода температура кипения повышается, потому что усиливаются лондоновские силы между молекулами.\nIII. Разветвлённый изомер 2,2-диметилпропан, C5H12, кипит при 1 атм выше 36 °C.",
+        "ar": "يبيّن الرسم البياني تغيّر درجات غليان الألكانات الستة الأولى ذات السلسلة المستقيمة عند 1 atm مع عدد ذرات الكربون في الجزيء؛ ويمثل الخط المتقطع 25 °C.\nأيٌّ من العبارات الآتية عن هذه الألكانات صحيحة؟\nI. عند 25 °C و1 atm يكون C5H12 (البنتان) سائلًا وC4H10 (البيوتان) غازًا.\nII. ترتفع درجة الغليان بزيادة عدد ذرات الكربون لأن قوى لندن بين الجزيئات تزداد.\nIII. المتماكب المتفرع 2,2-ثنائي ميثيل البروبان، C5H12، يغلي عند 1 atm فوق 36 °C.",
+        "zh": "图中给出了前六种直链烷烃在 1 atm 下的沸点随分子中碳原子数的变化；虚线表示 25 °C。\n关于这些烷烃的下列说法中，哪些正确？\nI. 在 25 °C、1 atm 下，C5H12（戊烷）为液体，C4H10（丁烷）为气体。\nII. 碳原子数增加时，分子间伦敦力增强，因此沸点升高。\nIII. 支链异构体 2,2-二甲基丙烷（C5H12）在 1 atm 下的沸点高于 36 °C。",
+        "ku": "Di grafîka şiklê de guherîna xalên kelînê yên şeş alkanên pêşîn ên zincîra rast li 1 atm li gorî hejmara karbonan a di molekulê de hatiye dayîn; xeta qutqutkirî 25 °C nîşan dide.\nDerbarê van alkanan de;\nI. Li 25 °C û 1 atm, C5H12 (pentan) şile û C4H10 (bûtan) gaz e.\nII. Her ku hejmara karbonan zêde dibe, ji ber ku hêzên London ên navbera molekulan xurt dibin xala kelînê bilind dibe.\nIII. Xala kelînê ya îzomera şaxdar 2,2-dîmetîlpropan (C5H12) li 1 atm ji 36 °C bilindtir e.\nkîjan ji van gotinan rast in?"
       },
       "options": [
         {
-          "tr": "2-Propanol",
-          "en": "2-Propanol",
-          "de": "2-Propanol",
-          "fr": "2-Propanol",
-          "ru": "Пропанол-2",
-          "ar": "2-بروبانول",
-          "zh": "2-丙醇",
-          "ku": "2-Propanol"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "1-Propanol",
-          "en": "1-Propanol",
-          "de": "1-Propanol",
-          "fr": "1-Propanol",
-          "ru": "Пропанол-1",
-          "ar": "1-بروبانول",
-          "zh": "1-丙醇",
-          "ku": "1-Propanol"
+          "tr": "Yalnız III",
+          "en": "III only",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅 III",
+          "ku": "Tenê III"
         },
         {
-          "tr": "Propanal",
-          "en": "Propanal",
-          "de": "Propanal",
-          "fr": "Propanal",
-          "ru": "Пропаналь",
-          "ar": "بروبانال",
-          "zh": "丙醛",
-          "ku": "Propanal"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Propanon",
-          "en": "Propanone",
-          "de": "Propanon",
-          "fr": "Propanone",
-          "ru": "Пропанон",
-          "ar": "بروبانون",
-          "zh": "丙酮",
-          "ku": "Propanon"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         },
         {
-          "tr": "Propan",
-          "en": "Propane",
-          "de": "Propan",
-          "fr": "Propane",
-          "ru": "Пропан",
-          "ar": "بروبان",
-          "zh": "丙烷",
-          "ku": "Propan"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Markovnikov kuralına göre suyun H atomu, ikili bağ karbonlarından hidrojeni çok olan =CH2 karbonuna bağlanır; OH grubu ise ortadaki -CH= karbonuna bağlanır ve ana ürün 2-propanol (CH3-CH(OH)-CH3) olur. 1-propanol, OH'ın uç karbona bağlandığı, kurala aykırı üründür; propanal ve propanon ise alkollerin yükseltgenme ürünleridir, su katılmasıyla oluşmaz.",
-        "en": "According to Markovnikov's rule, the H atom of water bonds to the =CH2 carbon, the double-bond carbon that has more hydrogens; the OH group bonds to the middle -CH= carbon, so the main product is 2-propanol (CH3-CH(OH)-CH3). 1-Propanol would be the product with OH on the terminal carbon, contrary to the rule; propanal and propanone are oxidation products of alcohols and are not formed by adding water.",
-        "de": "Nach der Regel von Markownikow bindet das H-Atom des Wassers an das =CH2-Kohlenstoffatom, das von den beiden Doppelbindungs-C-Atomen mehr Wasserstoff trägt; die OH-Gruppe bindet an das mittlere -CH=-Kohlenstoffatom, das Hauptprodukt ist also 2-Propanol (CH3-CH(OH)-CH3). 1-Propanol wäre das Produkt mit OH am endständigen C-Atom, entgegen der Regel; Propanal und Propanon sind Oxidationsprodukte von Alkoholen und entstehen nicht durch Wasseraddition.",
-        "fr": "Selon la règle de Markovnikov, l'atome H de l'eau se fixe sur le carbone =CH2, celui des deux carbones de la double liaison qui porte le plus d'hydrogènes ; le groupe OH se fixe sur le carbone central -CH=, et le produit principal est le 2-propanol (CH3-CH(OH)-CH3). Le 1-propanol serait le produit avec OH sur le carbone terminal, contraire à la règle ; le propanal et la propanone sont des produits d'oxydation des alcools et ne se forment pas par addition d'eau.",
-        "ru": "По правилу Марковникова атом H воды присоединяется к атому углерода =CH2 — тому из атомов двойной связи, у которого больше атомов водорода; группа OH присоединяется к среднему атому -CH=, и основным продуктом становится пропанол-2 (CH3-CH(OH)-CH3). Пропанол-1 был бы продуктом с группой OH при концевом атоме углерода, вопреки правилу; пропаналь и пропанон — продукты окисления спиртов, при присоединении воды они не образуются.",
-        "ar": "وفقًا لقاعدة ماركوفنيكوف ترتبط ذرة H من الماء بذرة الكربون =CH2، وهي ذرة كربون الرابطة الثنائية التي تحمل هيدروجينًا أكثر؛ وترتبط مجموعة OH بذرة الكربون الوسطى -CH=، فيكون الناتج الرئيسي 2-بروبانول (CH3-CH(OH)-CH3). أما 1-بروبانول فهو الناتج الذي ترتبط فيه OH بالكربون الطرفي خلافًا للقاعدة؛ والبروبانال والبروبانون ناتجا أكسدة الكحولات ولا يتكوّنان بإضافة الماء.",
-        "zh": "根据马氏规则，水中的 H 原子加到双键碳中含氢较多的 =CH2 碳上，OH 加到中间的 -CH= 碳上，主要产物是 2-丙醇(CH3-CH(OH)-CH3)。1-丙醇是 OH 连在端位碳上的产物，与该规则相反；丙醛和丙酮是醇的氧化产物，不能由加水生成。",
-        "ku": "Li gorî qaîdeya Markovnikov atoma H ya avê bi karbona =CH2 ve girê dibe, ango bi wê karbona girêdana ducarî ya ku hîdrojenên wê zêdetir in; koma OH jî bi karbona navîn -CH= ve girê dibe û hilbera sereke 2-propanol (CH3-CH(OH)-CH3) e. 1-propanol hilbera ku OH bi karbona dawiyê ve girêdayî ye û li dijî qaîdeyê ye; propanal û propanon jî hilberên oksîdasyona alkolan in û bi lêzêdekirina avê çênabin."
+        "tr": "Grafikten pentanın kaynama noktası yaklaşık 36 °C, bütanınki yaklaşık −1 °C okunur. 25 °C, pentanın kaynama noktasının altında olduğundan pentan sıvı; bütanın kaynama noktasının üstünde olduğundan bütan gazdır (I doğru). Alkanlar apolardır; zincir uzadıkça elektron bulutu büyür, London kuvvetleri güçlenir ve kaynama noktası yükselir (II doğru). Aynı formüllü izomerlerde dallanma molekülü küreselleştirir, temas yüzeyini ve London kuvvetlerini azaltır; 2,2-dimetilpropanın kaynama noktası (yaklaşık 10 °C) düz zincirli pentanınkinden düşüktür (III yanlış).",
+        "en": "From the graph, pentane boils at about 36 °C and butane at about −1 °C. 25 °C is below pentane's boiling point, so pentane is a liquid, and above butane's, so butane is a gas (I correct). Alkanes are nonpolar; as the chain grows the electron cloud gets larger, London forces strengthen and the boiling point rises (II correct). Among isomers with the same formula, branching makes the molecule more compact and reduces contact area and London forces, so 2,2-dimethylpropane (about 10 °C) boils lower than straight-chain pentane (III wrong).",
+        "de": "Aus dem Diagramm liest man für Pentan einen Siedepunkt von etwa 36 °C und für Butan von etwa −1 °C ab. 25 °C liegt unter dem Siedepunkt von Pentan, also ist Pentan flüssig, und über dem von Butan, also ist Butan gasförmig (I richtig). Alkane sind unpolar; mit wachsender Kette wird die Elektronenhülle größer, die London-Kräfte werden stärker und der Siedepunkt steigt (II richtig). Bei Isomeren gleicher Formel macht die Verzweigung das Molekül kompakter und verringert Kontaktfläche und London-Kräfte; 2,2-Dimethylpropan (etwa 10 °C) siedet niedriger als unverzweigtes Pentan (III falsch).",
+        "fr": "Le graphique donne environ 36 °C pour l'ébullition du pentane et environ −1 °C pour celle du butane. 25 °C est en dessous de la température d'ébullition du pentane, qui est donc liquide, et au-dessus de celle du butane, qui est donc gazeux (I correcte). Les alcanes sont apolaires ; quand la chaîne s'allonge, le nuage électronique grossit, les forces de London se renforcent et la température d'ébullition augmente (II correcte). Pour des isomères de même formule, la ramification rend la molécule plus compacte et diminue la surface de contact et les forces de London ; le 2,2-diméthylpropane (environ 10 °C) bout plus bas que le pentane linéaire (III fausse).",
+        "ru": "По графику пентан кипит примерно при 36 °C, бутан — примерно при −1 °C. 25 °C ниже температуры кипения пентана, поэтому пентан — жидкость, и выше температуры кипения бутана, поэтому бутан — газ (I верно). Алканы неполярны; с удлинением цепи электронное облако увеличивается, лондоновские силы усиливаются и температура кипения растёт (II верно). У изомеров с одинаковой формулой разветвление делает молекулу компактнее и уменьшает площадь контакта и лондоновские силы, поэтому 2,2-диметилпропан (около 10 °C) кипит ниже, чем неразветвлённый пентан (III неверно).",
+        "ar": "يُقرأ من الرسم أن البنتان يغلي عند نحو 36 °C والبيوتان عند نحو −1 °C. ودرجة 25 °C أقل من درجة غليان البنتان فيكون سائلًا، وأعلى من درجة غليان البيوتان فيكون غازًا (I صحيحة). الألكانات غير قطبية؛ وكلما طالت السلسلة كبرت السحابة الإلكترونية وقويت قوى لندن فارتفعت درجة الغليان (II صحيحة). وفي المتماكبات ذات الصيغة نفسها يجعل التفرع الجزيء أكثر تكتلًا فيقل سطح التماس وقوى لندن؛ لذا يغلي 2,2-ثنائي ميثيل البروبان (نحو 10 °C) عند درجة أدنى من البنتان المستقيم (III خاطئة).",
+        "zh": "由图可读出戊烷沸点约 36 °C，丁烷沸点约 −1 °C。25 °C 低于戊烷的沸点，所以戊烷为液体；高于丁烷的沸点，所以丁烷为气体（I 正确）。烷烃为非极性分子；碳链增长时电子云变大，伦敦力增强，沸点升高（II 正确）。分子式相同的异构体中，支链使分子更紧凑，接触面积和伦敦力减小；2,2-二甲基丙烷沸点约 10 °C，低于直链戊烷（III 错误）。",
+        "ku": "Ji grafîkê xala kelînê ya pentanê nêzîkî 36 °C û ya bûtanê nêzîkî −1 °C tê xwendin. 25 °C di bin xala kelînê ya pentanê de ye, ji ber vê pentan şile ye; li ser ya bûtanê ye, ji ber vê bûtan gaz e (I rast e). Alkan apolar in; her ku zincîr dirêj dibe ewra elektronan mezin dibe, hêzên London xurt dibin û xala kelînê bilind dibe (II rast e). Di îzomerên bi heman formulê de şaxbûn molekulê girovertir dike, rûbera têkiliyê û hêzên London kêm dike; xala kelînê ya 2,2-dîmetîlpropanê (nêzîkî 10 °C) ji ya pentana zincîra rast nizmtir e (III şaş e)."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Karbon sayısı",
+          "en": "Number of carbon atoms",
+          "de": "Anzahl C-Atome",
+          "fr": "Nombre d'atomes de carbone",
+          "ru": "Число атомов C",
+          "ar": "عدد ذرات الكربون",
+          "zh": "碳原子数",
+          "ku": "Hejmara karbonan"
+        },
+        "yLabel": {
+          "tr": "Kaynama noktası (°C)",
+          "en": "Boiling point (°C)",
+          "de": "Siedepunkt (°C)",
+          "fr": "Température d'ébullition (°C)",
+          "ru": "Т. кип. (°C)",
+          "ar": "درجة الغليان (°C)",
+          "zh": "沸点 (°C)",
+          "ku": "Xala kelînê (°C)"
+        },
+        "xMin": 0.5,
+        "xMax": 6.5,
+        "yMin": -180,
+        "yMax": 100,
+        "xTicks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "yTicks": [
+          -150,
+          -100,
+          -50,
+          0,
+          25,
+          50
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                1,
+                -162
+              ],
+              [
+                2,
+                -89
+              ],
+              [
+                3,
+                -42
+              ],
+              [
+                4,
+                -1
+              ],
+              [
+                5,
+                36
+              ],
+              [
+                6,
+                69
+              ]
+            ]
+          },
+          {
+            "points": [
+              [
+                0.5,
+                25
+              ],
+              [
+                6.5,
+                25
+              ]
+            ],
+            "dashed": true,
+            "tone": 1
+          }
+        ],
+        "markers": [
+          {
+            "x": 4,
+            "y": -1,
+            "label": "−1"
+          },
+          {
+            "x": 5,
+            "y": 36,
+            "label": "36"
+          }
+        ]
       }
     },
     {
       "id": "u24-twin02",
       "stem": {
-        "tr": "Aşağıdaki organik bileşik sınıflarından hangisi Tollens reaktifi ile tepkimeye girerek gümüş aynası oluşturur?",
-        "en": "Which of the following classes of organic compounds reacts with Tollens' reagent to form a silver mirror?",
-        "de": "Welche der folgenden Klassen organischer Verbindungen reagiert mit Tollens' Reagens unter Bildung eines Silberspiegels?",
-        "fr": "Laquelle des classes suivantes de composés organiques réagit avec le réactif de Tollens pour former un miroir d'argent ?",
-        "ru": "Какой из следующих классов органических соединений реагирует с реактивом Толленса с образованием серебряного зеркала?",
-        "ar": "أيّ فئات المركبات العضوية الآتية تتفاعل مع كاشف تولنز مكوّنة مرآة فضية؟",
-        "zh": "下列哪一类有机化合物能与托伦试剂发生银镜反应？",
-        "ku": "Kîjan ji van çînên pêkhateyên organîk bi reaktîfa Tollens re dikeve reaksiyonê û neynika zîv çêdike?"
+        "tr": "Etiketleri karışmış dört şişede 1-propanol, propanal, propanoik asit ve propanon bulunmaktadır. Şişelerdeki saf sıvılar K, L, M ve N olarak adlandırılıp üç testle incelenmiş; sonuçlar tabloda verilmiştir.\nK, L, M ve N sırasıyla aşağıdakilerden hangisidir?",
+        "en": "Four bottles whose labels have been mixed up contain 1-propanol, propanal, propanoic acid and propanone. The pure liquids in the bottles were named K, L, M and N and examined with three tests; the results are given in the table.\nWhat are K, L, M and N, respectively?",
+        "de": "Vier Flaschen mit vertauschten Etiketten enthalten 1-Propanol, Propanal, Propansäure und Propanon. Die reinen Flüssigkeiten wurden K, L, M und N genannt und mit drei Tests untersucht; die Ergebnisse stehen in der Tabelle.\nWas sind K, L, M und N in dieser Reihenfolge?",
+        "fr": "Quatre flacons dont les étiquettes ont été mélangées contiennent du propan-1-ol, du propanal, de l'acide propanoïque et de la propanone. Les liquides purs ont été notés K, L, M et N puis soumis à trois tests ; les résultats figurent dans le tableau.\nQue sont K, L, M et N, dans l'ordre ?",
+        "ru": "В четырёх склянках с перепутанными этикетками находятся 1-пропанол, пропаналь, пропановая кислота и пропанон. Чистые жидкости обозначили K, L, M и N и исследовали тремя тестами; результаты приведены в таблице.\nЧто представляют собой K, L, M и N соответственно?",
+        "ar": "أربع زجاجات اختلطت ملصقاتها تحتوي على 1-بروبانول والبروبانال وحمض البروبانويك والبروبانون. سُمّيت السوائل النقية فيها K وL وM وN وفُحصت بثلاثة اختبارات، ويبيّن الجدول النتائج.\nما K وL وM وN على الترتيب؟",
+        "zh": "四个标签混乱的瓶子中分别装有 1-丙醇、丙醛、丙酸和丙酮。将瓶中纯液体记为 K、L、M、N，并用三种试验进行检验，结果见表。\nK、L、M、N 依次是什么？",
+        "ku": "Di çar şûşeyên ku etîketên wan tevlihev bûne de 1-propanol, propanal, asîda propanoîk û propanon hene. Şileyên paqij ên di şûşeyan de wek K, L, M û N hatin binavkirin û bi sê ceribandinan hatin lêkolîn; encam di tabloyê de hatine dayîn.\nK, L, M û N li pey hev kîjan in?"
       },
       "options": [
         {
-          "tr": "Aldehitler",
-          "en": "Aldehydes",
-          "de": "Aldehyde",
-          "fr": "Aldéhydes",
-          "ru": "Альдегиды",
-          "ar": "الألدهيدات",
-          "zh": "醛类",
-          "ku": "Aldehîd"
+          "tr": "1-Propanol, propanal, propanoik asit, propanon",
+          "en": "1-Propanol, propanal, propanoic acid, propanone",
+          "de": "1-Propanol, Propanal, Propansäure, Propanon",
+          "fr": "Propan-1-ol, propanal, acide propanoïque, propanone",
+          "ru": "1-Пропанол, пропаналь, пропановая кислота, пропанон",
+          "ar": "1-بروبانول، بروبانال، حمض البروبانويك، بروبانون",
+          "zh": "1-丙醇、丙醛、丙酸、丙酮",
+          "ku": "1-Propanol, propanal, asîda propanoîk, propanon"
         },
         {
-          "tr": "Ketonlar",
-          "en": "Ketones",
-          "de": "Ketone",
-          "fr": "Cétones",
-          "ru": "Кетоны",
-          "ar": "الكيتونات",
-          "zh": "酮类",
-          "ku": "Keton"
+          "tr": "Propanoik asit, propanal, 1-propanol, propanon",
+          "en": "Propanoic acid, propanal, 1-propanol, propanone",
+          "de": "Propansäure, Propanal, 1-Propanol, Propanon",
+          "fr": "Acide propanoïque, propanal, propan-1-ol, propanone",
+          "ru": "Пропановая кислота, пропаналь, 1-пропанол, пропанон",
+          "ar": "حمض البروبانويك، بروبانال، 1-بروبانول، بروبانون",
+          "zh": "丙酸、丙醛、1-丙醇、丙酮",
+          "ku": "Asîda propanoîk, propanal, 1-propanol, propanon"
         },
         {
-          "tr": "Eterler",
-          "en": "Ethers",
-          "de": "Ether",
-          "fr": "Éthers",
-          "ru": "Простые эфиры",
-          "ar": "الإيثرات",
-          "zh": "醚类",
-          "ku": "Eter"
+          "tr": "1-Propanol, propanon, propanoik asit, propanal",
+          "en": "1-Propanol, propanone, propanoic acid, propanal",
+          "de": "1-Propanol, Propanon, Propansäure, Propanal",
+          "fr": "Propan-1-ol, propanone, acide propanoïque, propanal",
+          "ru": "1-Пропанол, пропанон, пропановая кислота, пропаналь",
+          "ar": "1-بروبانول، بروبانون، حمض البروبانويك، بروبانال",
+          "zh": "1-丙醇、丙酮、丙酸、丙醛",
+          "ku": "1-Propanol, propanon, asîda propanoîk, propanal"
         },
         {
-          "tr": "Alkanlar",
-          "en": "Alkanes",
-          "de": "Alkane",
-          "fr": "Alcanes",
-          "ru": "Алканы",
-          "ar": "الألكانات",
-          "zh": "烷烃",
-          "ku": "Alkan"
+          "tr": "Propanal, 1-propanol, propanon, propanoik asit",
+          "en": "Propanal, 1-propanol, propanone, propanoic acid",
+          "de": "Propanal, 1-Propanol, Propanon, Propansäure",
+          "fr": "Propanal, propan-1-ol, propanone, acide propanoïque",
+          "ru": "Пропаналь, 1-пропанол, пропанон, пропановая кислота",
+          "ar": "بروبانال، 1-بروبانول، بروبانون، حمض البروبانويك",
+          "zh": "丙醛、1-丙醇、丙酮、丙酸",
+          "ku": "Propanal, 1-propanol, propanon, asîda propanoîk"
         },
         {
-          "tr": "Esterler",
-          "en": "Esters",
-          "de": "Ester",
-          "fr": "Esters",
-          "ru": "Сложные эфиры",
-          "ar": "الإسترات",
-          "zh": "酯类",
-          "ku": "Ester"
+          "tr": "Propanon, propanal, propanoik asit, 1-propanol",
+          "en": "Propanone, propanal, propanoic acid, 1-propanol",
+          "de": "Propanon, Propanal, Propansäure, 1-Propanol",
+          "fr": "Propanone, propanal, acide propanoïque, propan-1-ol",
+          "ru": "Пропанон, пропаналь, пропановая кислота, 1-пропанол",
+          "ar": "بروبانون، بروبانال، حمض البروبانويك، 1-بروبانول",
+          "zh": "丙酮、丙醛、丙酸、1-丙醇",
+          "ku": "Propanon, propanal, asîda propanoîk, 1-propanol"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Aldehitlerde karbonil karbonuna bir H atomu bağlıdır; bu sayede aldehitler kolayca karboksilik aside yükseltgenir ve Tollens reaktifindeki Ag+ iyonlarını metalik gümüşe (gümüş aynası) indirger. Ketonlarda karbonil karbonuna bağlı H atomu bulunmadığından bu tepkime gerçekleşmez; ketonlar Tollens testini vermez.",
-        "en": "In aldehydes an H atom is bonded to the carbonyl carbon; because of this, aldehydes are easily oxidized to carboxylic acids and reduce the Ag+ ions in Tollens' reagent to metallic silver (silver mirror). Ketones have no H atom on the carbonyl carbon, so this reaction does not occur; ketones do not give the Tollens test.",
-        "de": "Bei Aldehyden ist ein H-Atom an das Carbonyl-C-Atom gebunden; deshalb werden Aldehyde leicht zu Carbonsäuren oxidiert und reduzieren die Ag+-Ionen im Tollens-Reagenz zu metallischem Silber (Silberspiegel). Ketone tragen kein H-Atom am Carbonyl-C-Atom, daher läuft diese Reaktion nicht ab; Ketone zeigen die Tollens-Probe nicht.",
-        "fr": "Dans les aldéhydes, un atome H est lié au carbone du groupe carbonyle ; c'est pourquoi les aldéhydes s'oxydent facilement en acides carboxyliques et réduisent les ions Ag+ du réactif de Tollens en argent métallique (miroir d'argent). Les cétones n'ont pas d'atome H sur le carbone du carbonyle, donc cette réaction n'a pas lieu ; les cétones ne donnent pas le test de Tollens.",
-        "ru": "В альдегидах с карбонильным атомом углерода связан атом H; поэтому альдегиды легко окисляются до карбоновых кислот и восстанавливают ионы Ag+ реактива Толленса до металлического серебра (серебряное зеркало). У кетонов при карбонильном атоме углерода нет атома H, поэтому эта реакция не идёт; кетоны не дают реакции с реактивом Толленса.",
-        "ar": "في الألدهيدات ترتبط ذرة H بكربون مجموعة الكربونيل؛ ولذلك تتأكسد الألدهيدات بسهولة إلى أحماض كربوكسيلية وتختزل أيونات Ag+ في كاشف تولنز إلى فضة فلزية (مرآة فضية). أما الكيتونات فلا توجد ذرة H على كربون الكربونيل فيها، فلا يحدث هذا التفاعل؛ والكيتونات لا تعطي اختبار تولنز.",
-        "zh": "醛的羰基碳上连有一个 H 原子，因此醛很容易被氧化为羧酸，并将托伦试剂中的 Ag+ 还原为金属银（银镜）。酮的羰基碳上没有 H 原子，所以不发生这一反应；酮不发生银镜反应。",
-        "ku": "Di aldehîdan de atoma H bi karbona karbonîlê ve girêdayî ye; bi saya vê aldehîd bi hêsanî oksîde dibin û vediguherin asîda karboksîlîk û îyonên Ag+ yên di reaktîfa Tollens de redûkte dikin û dikin zîvê metalîk (neynika zîv). Di ketonan de li ser karbona karbonîlê atoma H tune ye, loma ev reaksiyon pêk nayê; keton testa Tollens nadin."
+        "tr": "NaHCO3 ile CO2 çıkaracak kadar asidik olan yalnızca karboksilik asittir: M propanoik asittir. Na metaliyle H2 çıkışı O–H bağı içeren alkol ve asitte görülür; asit M olduğuna göre Na ile H2 veren diğer sıvı K, 1-propanoldür. Tollens ayıracıyla gümüş aynası yalnızca aldehitte oluşur: L propanaldir. Hiçbir testi vermeyen N ise ketondur (propanon). Alkol ile asidi yalnızca Na testine bakarak ayırmaya çalışmak (B) ya da aldehit ile ketonu karıştırmak (C) yanlış eşleştirmelere götürür.",
+        "en": "Only a carboxylic acid is acidic enough to release CO2 with NaHCO3: M is propanoic acid. Release of H2 with sodium metal is shown by the alcohol and the acid, which contain O–H bonds; since M is the acid, the other liquid that gives H2 with Na, K, is 1-propanol. Only an aldehyde gives a silver mirror with Tollens' reagent: L is propanal. N, which gives no positive test, is the ketone (propanone). Trying to tell the alcohol and the acid apart by the Na test alone (B) or confusing the aldehyde and the ketone (C) gives wrong assignments.",
+        "de": "Nur eine Carbonsäure ist sauer genug, um mit NaHCO3 CO2 freizusetzen: M ist Propansäure. H2-Entwicklung mit Natrium zeigen Alkohol und Säure, die O–H-Bindungen besitzen; da M die Säure ist, ist die andere Flüssigkeit, die mit Na H2 liefert, K, das 1-Propanol. Einen Silberspiegel mit Tollens-Reagenz gibt nur der Aldehyd: L ist Propanal. N, das keinen Test positiv zeigt, ist das Keton (Propanon). Wer Alkohol und Säure nur mit dem Na-Test unterscheiden will (B) oder Aldehyd und Keton verwechselt (C), ordnet falsch zu.",
+        "fr": "Seul un acide carboxylique est assez acide pour dégager du CO2 avec NaHCO3 : M est l'acide propanoïque. Le dégagement de H2 avec le sodium s'observe pour l'alcool et l'acide, qui possèdent des liaisons O–H ; M étant l'acide, l'autre liquide qui donne H2 avec Na, K, est le propan-1-ol. Seul un aldéhyde donne un miroir d'argent avec le réactif de Tollens : L est le propanal. N, qui ne donne aucun test positif, est la cétone (propanone). Vouloir distinguer l'alcool de l'acide par le seul test au sodium (B) ou confondre aldéhyde et cétone (C) conduit à de mauvaises attributions.",
+        "ru": "Только карбоновая кислота достаточно кислая, чтобы выделять CO2 с NaHCO3: M — пропановая кислота. Выделение H2 с металлическим натрием дают спирт и кислота, содержащие связи O–H; так как M — кислота, вторая жидкость, дающая H2 с Na, K — это 1-пропанол. Реакцию серебряного зеркала с реактивом Толленса даёт только альдегид: L — пропаналь. N, не давшее ни одной положительной пробы, — кетон (пропанон). Попытка различить спирт и кислоту только по пробе с Na (B) или путаница альдегида и кетона (C) приводят к неверному ответу.",
+        "ar": "الحمض الكربوكسيلي وحده حمضي بما يكفي ليطلق CO2 مع NaHCO3: إذن M هو حمض البروبانويك. ويتصاعد H2 مع فلز الصوديوم في الكحول والحمض لاحتوائهما على روابط O–H؛ وبما أن M هو الحمض فإن السائل الآخر الذي يعطي H2 مع Na، وهو K، هو 1-بروبانول. والمرآة الفضية مع كاشف تولنز لا يعطيها إلا الألدهيد: L هو البروبانال. أما N الذي لم يعطِ أي اختبار موجب فهو الكيتون (البروبانون). ومحاولة التمييز بين الكحول والحمض باختبار Na وحده (B) أو الخلط بين الألدهيد والكيتون (C) يقودان إلى مطابقات خاطئة.",
+        "zh": "只有羧酸的酸性强到能与 NaHCO3 放出 CO2：M 是丙酸。与金属钠反应放出 H2 的是含 O–H 键的醇和酸；M 是酸，另一种能与 Na 放出 H2 的液体 K 就是 1-丙醇。只有醛能与托伦试剂发生银镜反应：L 是丙醛。三项试验都不呈阳性的 N 是酮（丙酮）。只凭钠试验区分醇和酸（B），或把醛和酮弄混（C），都会导致错误的对应。",
+        "ku": "Tenê asîda karboksîlîk têra xwe asîdî ye ku bi NaHCO3 re CO2 derxe: M asîda propanoîk e. Derketina H2 bi metala sodyûmê re di alkol û asîdê de ku girêdanên O–H dihewînin tê dîtin; ji ber ku M asîd e, şileya din a ku bi Na re H2 dide, K, 1-propanol e. Neynika zîv bi reaktîfa Tollens re tenê aldehîd çêdike: L propanal e. N ku tu ceribandinê nade keton e (propanon). Hewldana cudakirina alkol û asîdê tenê bi ceribandina Na (B) an tevlihevkirina aldehîd û ketonê (C) ber bi lihevanînên şaş ve dibe."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Sıvı",
+            "en": "Liquid",
+            "de": "Flüssigkeit",
+            "fr": "Liquide",
+            "ru": "Жидкость",
+            "ar": "السائل",
+            "zh": "液体",
+            "ku": "Şile"
+          },
+          {
+            "tr": "Na metali (H2 çıkışı)",
+            "en": "Sodium metal (H2 released)",
+            "de": "Natrium (H2-Entwicklung)",
+            "fr": "Sodium (dégagement de H2)",
+            "ru": "Натрий (выделение H2)",
+            "ar": "فلز Na (تصاعد H2)",
+            "zh": "金属 Na（放出 H2）",
+            "ku": "Metala Na (derketina H2)"
+          },
+          {
+            "tr": "Tollens (gümüş aynası)",
+            "en": "Tollens (silver mirror)",
+            "de": "Tollens (Silberspiegel)",
+            "fr": "Tollens (miroir d'argent)",
+            "ru": "Толленс (серебряное зеркало)",
+            "ar": "تولنز (مرآة فضية)",
+            "zh": "托伦试剂（银镜）",
+            "ku": "Tollens (neynika zîv)"
+          },
+          {
+            "tr": "NaHCO3 (CO2 çıkışı)",
+            "en": "NaHCO3 (CO2 released)",
+            "de": "NaHCO3 (CO2-Entwicklung)",
+            "fr": "NaHCO3 (dégagement de CO2)",
+            "ru": "NaHCO3 (выделение CO2)",
+            "ar": "NaHCO3 (تصاعد CO2)",
+            "zh": "NaHCO3（放出 CO2）",
+            "ku": "NaHCO3 (derketina CO2)"
+          }
+        ],
+        "rows": [
+          [
+            "K",
+            "+",
+            "−",
+            "−"
+          ],
+          [
+            "L",
+            "−",
+            "+",
+            "−"
+          ],
+          [
+            "M",
+            "+",
+            "−",
+            "+"
+          ],
+          [
+            "N",
+            "−",
+            "−",
+            "−"
+          ]
+        ],
+        "caption": {
+          "tr": "+: gözlem var, −: gözlem yok",
+          "en": "+: observed, −: not observed",
+          "de": "+: beobachtet, −: nicht beobachtet",
+          "fr": "+ : observé, − : non observé",
+          "ru": "+: наблюдается, −: не наблюдается",
+          "ar": "+: يُلاحظ، −: لا يُلاحظ",
+          "zh": "+：观察到，−：未观察到",
+          "ku": "+: tê dîtin, −: nayê dîtin"
+        }
       }
     },
     {
@@ -1286,14 +1466,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin04",
       "stem": {
-        "tr": "Bir alkinin 0,2 molü tamamen yakıldığında 35,2 g CO2 oluşuyor. Buna göre bu yanma için kaç mol O2 harcanmıştır? (C: 12, O: 16)",
+        "tr": "Bir alkinin 0,2 molü tamamen yakıldığında 35,2 g CO2 oluşuyor. Bu yanma için kaç mol O2 harcanmıştır? (C: 12, O: 16)",
         "en": "When 0.2 mol of an alkyne is burned completely, 35.2 g of CO2 is formed. How many moles of O2 are consumed in this combustion? (C: 12, O: 16)",
         "de": "Bei der vollständigen Verbrennung von 0,2 mol eines Alkins entstehen 35,2 g CO2. Wie viel mol O2 werden bei dieser Verbrennung verbraucht? (C: 12, O: 16)",
         "fr": "La combustion complète de 0,2 mol d'un alcyne produit 35,2 g de CO2. Combien de moles de O2 sont consommées lors de cette combustion ? (C : 12, O : 16)",
         "ru": "При полном сгорании 0,2 моль алкина образуется 35,2 г CO2. Сколько моль O2 израсходовано при этом сгорании? (C: 12, O: 16)",
         "ar": "عند الاحتراق التام لـ 0.2 mol من ألكاين يتكوّن 35.2 g من CO2. كم مولًا من O2 استُهلك في هذا الاحتراق؟ (C: 12، O: 16)",
         "zh": "0.2 mol 某炔烃完全燃烧生成 35.2 g CO2。此燃烧消耗了多少摩尔 O2？(C = 12，O = 16)",
-        "ku": "Dema 0,2 mol ji alkînekê bi tevahî dişewite, 35,2 g CO2 çêdibe. Li gorî vê, ji bo vê şewitînê çend mol O2 hatiye xerckirin? (C: 12, O: 16)"
+        "ku": "Dema 0,2 mol ji alkînekê bi tevahî dişewite, 35,2 g CO2 çêdibe. Ji bo vê şewitînê çend mol O2 hatiye xerckirin? (C: 12, O: 16)"
       },
       "options": [
         {
@@ -1362,14 +1542,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin05",
       "stem": {
-        "tr": "Etiketleri düşmüş X, Y ve Z kaplarında propan, propen ve propin gazları bulunmaktadır (her kapta farklı bir gaz). Gazlar bromlu sudan geçirildiğinde X ve Y suyun rengini gideriyor, Z gidermiyor; amonyaklı AgNO3 çözeltisinden geçirildiğinde ise yalnızca Y beyaz çökelek oluşturuyor. Buna göre X, Y ve Z gazları sırasıyla aşağıdakilerden hangisidir?",
-        "en": "Containers X, Y and Z, whose labels have fallen off, hold propane, propene and propyne (a different gas in each). When the gases are passed through bromine water, X and Y decolourise it and Z does not; when passed through ammoniacal AgNO3 solution, only Y forms a white precipitate. What are X, Y and Z, respectively?",
-        "de": "Die Gefäße X, Y und Z, deren Etiketten abgefallen sind, enthalten Propan, Propen und Propin (in jedem ein anderes Gas). Leitet man die Gase durch Bromwasser, entfärben X und Y es, Z nicht; leitet man sie durch ammoniakalische AgNO3-Lösung, bildet nur Y einen weißen Niederschlag. Welche Gase sind X, Y und Z (in dieser Reihenfolge)?",
-        "fr": "Les récipients X, Y et Z, dont les étiquettes sont tombées, contiennent du propane, du propène et du propyne (un gaz différent dans chacun). Lorsqu'on fait passer les gaz dans l'eau de brome, X et Y la décolorent, Z non ; dans une solution ammoniacale de AgNO3, seul Y forme un précipité blanc. Quels sont, dans l'ordre, X, Y et Z ?",
-        "ru": "В сосудах X, Y и Z с отклеившимися этикетками находятся пропан, пропен и пропин (в каждом свой газ). При пропускании газов через бромную воду X и Y её обесцвечивают, а Z — нет; при пропускании через аммиачный раствор AgNO3 белый осадок образует только Y. Какие газы находятся в X, Y и Z соответственно?",
-        "ar": "تحتوي الأوعية X وY وZ التي سقطت ملصقاتها على غازات البروبان والبروبين والبروباين (غاز مختلف في كل وعاء). عند إمرار الغازات في ماء البروم يزيل X وY لونه ولا يزيله Z؛ وعند إمرارها في محلول AgNO3 النشادري يكوّن Y وحده راسبًا أبيض. ما الغازات X وY وZ على الترتيب؟",
-        "zh": "标签脱落的容器 X、Y、Z 中分别装有丙烷、丙烯和丙炔（各不相同）。将气体通入溴水时，X 和 Y 使溴水褪色，Z 不能；通入银氨溶液(氨性 AgNO3 溶液)时，只有 Y 生成白色沉淀。X、Y、Z 依次是什么？",
-        "ku": "Di firaxên X, Y û Z de ku etîketên wan ketine, gazên propan, propen û propîn hene (di her firaxê de gazeke cuda). Dema gaz di ava bromê re têne derbaskirin, X û Y rengê wê radikin, Z ranake; dema di çareseriya AgNO3 ya amonyakî re têne derbaskirin, tenê Y niştekeke spî çêdike. Li gorî vê, X, Y û Z bi rêzê kîjan in?"
+        "tr": "Etiketleri düşmüş X, Y ve Z kaplarında propan, propen ve propin gazları bulunmaktadır (her kapta farklı bir gaz). Gazlarla yapılan iki testin sonuçları tabloda verilmiştir.\nX, Y ve Z gazları sırasıyla aşağıdakilerden hangisidir?",
+        "en": "Containers X, Y and Z, whose labels have fallen off, hold propane, propene and propyne (a different gas in each). The results of two tests carried out on the gases are given in the table.\nWhat are gases X, Y and Z, respectively?",
+        "de": "Die Gefäße X, Y und Z, deren Etiketten abgefallen sind, enthalten Propan, Propen und Propin (in jedem ein anderes Gas). Die Ergebnisse zweier Tests mit den Gasen stehen in der Tabelle.\nWelche Gase sind X, Y und Z in dieser Reihenfolge?",
+        "fr": "Les récipients X, Y et Z, dont les étiquettes sont tombées, contiennent du propane, du propène et du propyne (un gaz différent dans chacun). Les résultats de deux tests réalisés sur ces gaz figurent dans le tableau.\nQuels sont les gaz X, Y et Z, dans l'ordre ?",
+        "ru": "В сосудах X, Y и Z, у которых отклеились этикетки, находятся пропан, пропен и пропин (в каждом свой газ). Результаты двух проб с этими газами приведены в таблице.\nКакие газы находятся в X, Y и Z соответственно?",
+        "ar": "تحتوي الأوعية X وY وZ التي سقطت ملصقاتها على غازات البروبان والبروبين والبروباين (غاز مختلف في كل وعاء). ويبيّن الجدول نتائج اختبارين أُجريا على الغازات.\nما الغازات X وY وZ على الترتيب؟",
+        "zh": "标签脱落的容器 X、Y、Z 中分别装有丙烷、丙烯和丙炔（每个容器一种气体）。对这些气体进行两项试验的结果见表。\nX、Y、Z 依次是哪种气体？",
+        "ku": "Di firaxên X, Y û Z de ku etîketên wan ketine, gazên propan, propen û propîn hene (di her firaxê de gazeke cuda). Encamên du ceribandinên ku bi gazan hatine kirin di tabloyê de hatine dayîn.\nGazên X, Y û Z li pey hev kîjan in?"
       },
       "options": [
         {
@@ -1433,6 +1613,112 @@ export const unit24: ChemistryUnitSeedData = {
         "ar": "Z الذي لا يزيل لون ماء البروم هو البروبان، الهيدروكربون المشبع. أما X وY فغير مشبعين (البروبين والبروباين). الراسب الأبيض مع AgNO3 النشادري سمة الألكاينات الطرفية التي تحمل ذرة H على كربون الرابطة الثلاثية؛ والبروباين (CH≡C-CH3) ألكاين طرفي، لذا Y بروباين وX بروبين. أكثر الأخطاء شيوعًا الظن بأن الغاز ذا الرابطة الثلاثية لا يزيل لون ماء البروم.",
         "zh": "不使溴水褪色的 Z 是饱和烃丙烷。X 和 Y 是不饱和烃（丙烯和丙炔）。与银氨溶液生成白色沉淀是三键碳上带 H 的端炔的特征；丙炔(CH≡C-CH3)是端炔，所以 Y 是丙炔，X 是丙烯。最常见的错误是认为含三键的气体不能使溴水褪色。",
         "ku": "Z ku rengê ava bromê ranake propan e, ango hîdrokarbona têr. X û Y netêr in (propen û propîn). Niştekeke spî bi AgNO3 ya amonyakî re taybetmendiya alkînên dawiyê ye ku li ser karbona girêdana sêcarî H heye; propîn (CH≡C-CH3) alkîneke dawiyê ye, loma Y propîn e û X propen e. Şaşiya herî berbelav ew e ku mirov difikire gaza bi girêdana sêcarî rengê ava bromê ranake."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Gaz",
+            "en": "Gas",
+            "de": "Gas",
+            "fr": "Gaz",
+            "ru": "Газ",
+            "ar": "الغاز",
+            "zh": "气体",
+            "ku": "Gaz"
+          },
+          {
+            "tr": "Bromlu su",
+            "en": "Bromine water",
+            "de": "Bromwasser",
+            "fr": "Eau de brome",
+            "ru": "Бромная вода",
+            "ar": "ماء البروم",
+            "zh": "溴水",
+            "ku": "Ava bromê"
+          },
+          {
+            "tr": "Amonyaklı AgNO3",
+            "en": "Ammoniacal AgNO3",
+            "de": "Ammoniakalische AgNO3-Lösung",
+            "fr": "AgNO3 ammoniacal",
+            "ru": "Аммиачный AgNO3",
+            "ar": "AgNO3 النشادري",
+            "zh": "氨性 AgNO3",
+            "ku": "AgNO3 ya amonyakî"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            {
+              "tr": "Renk gider",
+              "en": "Decolorized",
+              "de": "Entfärbt",
+              "fr": "Décolorée",
+              "ru": "Обесцвечивается",
+              "ar": "يزول اللون",
+              "zh": "褪色",
+              "ku": "Reng diçe"
+            },
+            {
+              "tr": "Çökelek yok",
+              "en": "No precipitate",
+              "de": "Kein Niederschlag",
+              "fr": "Pas de précipité",
+              "ru": "Осадка нет",
+              "ar": "لا راسب",
+              "zh": "无沉淀",
+              "ku": "Niştek tune"
+            }
+          ],
+          [
+            "Y",
+            {
+              "tr": "Renk gider",
+              "en": "Decolorized",
+              "de": "Entfärbt",
+              "fr": "Décolorée",
+              "ru": "Обесцвечивается",
+              "ar": "يزول اللون",
+              "zh": "褪色",
+              "ku": "Reng diçe"
+            },
+            {
+              "tr": "Beyaz çökelek",
+              "en": "White precipitate",
+              "de": "Weißer Niederschlag",
+              "fr": "Précipité blanc",
+              "ru": "Белый осадок",
+              "ar": "راسب أبيض",
+              "zh": "白色沉淀",
+              "ku": "Niştekeke spî"
+            }
+          ],
+          [
+            "Z",
+            {
+              "tr": "Renk gitmez",
+              "en": "Not decolorized",
+              "de": "Nicht entfärbt",
+              "fr": "Non décolorée",
+              "ru": "Не обесцвечивается",
+              "ar": "لا يزول اللون",
+              "zh": "不褪色",
+              "ku": "Reng naçe"
+            },
+            {
+              "tr": "Çökelek yok",
+              "en": "No precipitate",
+              "de": "Kein Niederschlag",
+              "fr": "Pas de précipité",
+              "ru": "Осадка нет",
+              "ar": "لا راسب",
+              "zh": "无沉淀",
+              "ku": "Niştek tune"
+            }
+          ]
+        ]
       }
     },
     {
@@ -1742,77 +2028,83 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin10",
       "stem": {
-        "tr": "Asetik asit (CH3-COOH) ile etanol (CH3-CH2-OH) derişik H2SO4 katalizörlüğünde ısıtıldığında su ile birlikte oluşan organik ürünün adı aşağıdakilerden hangisidir?",
-        "en": "When acetic acid (CH3-COOH) and ethanol (CH3-CH2-OH) are heated with concentrated H2SO4 as catalyst, what is the name of the organic product formed together with water?",
-        "de": "Erhitzt man Essigsäure (CH3-COOH) und Ethanol (CH3-CH2-OH) mit konzentrierter H2SO4 als Katalysator, wie heißt das organische Produkt, das zusammen mit Wasser entsteht?",
-        "fr": "Lorsqu'on chauffe l'acide acétique (CH3-COOH) et l'éthanol (CH3-CH2-OH) en présence de H2SO4 concentré comme catalyseur, quel est le nom du produit organique formé avec l'eau ?",
-        "ru": "При нагревании уксусной кислоты (CH3-COOH) с этанолом (CH3-CH2-OH) в присутствии концентрированной H2SO4 как катализатора образуется вода и органический продукт. Как он называется?",
-        "ar": "عند تسخين حمض الأسيتيك (CH3-COOH) مع الإيثانول (CH3-CH2-OH) بوجود H2SO4 المركّز حفازًا، ما اسم الناتج العضوي الذي يتكوّن مع الماء؟",
-        "zh": "乙酸(CH3-COOH)与乙醇(CH3-CH2-OH)在浓 H2SO4 催化下加热，与水一同生成的有机产物名称是下列哪一个？",
-        "ku": "Dema asîda asetîk (CH3-COOH) û etanol (CH3-CH2-OH) bi katalîzora H2SO4 ya tîr têne germkirin, navê hilbera organîk a ku bi avê re çêdibe kîjan e?"
+        "tr": "Şekilde yapı formülü verilen ester ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+        "en": "Which of the following statements about the ester whose structural formula is shown is correct?",
+        "de": "Welche der folgenden Aussagen über den Ester mit der abgebildeten Strukturformel ist richtig?",
+        "fr": "Laquelle des affirmations suivantes sur l'ester dont la formule développée est représentée est correcte ?",
+        "ru": "Какое из следующих утверждений о сложном эфире, структурная формула которого показана на рисунке, верно?",
+        "ar": "أيّ العبارات الآتية عن الإستر المعطاة صيغته البنائية في الشكل صحيحة؟",
+        "zh": "关于图中给出结构式的酯，下列说法中哪一项正确？",
+        "ku": "Derbarê estera ku formula wê ya avahiyê di şiklê de hatiye dayîn de kîjan gotin rast e?"
       },
       "options": [
         {
-          "tr": "Metil propanoat",
-          "en": "Methyl propanoate",
-          "de": "Methylpropanoat",
-          "fr": "Propanoate de méthyle",
-          "ru": "Метилпропаноат",
-          "ar": "بروبانوات الميثيل",
-          "zh": "丙酸甲酯",
-          "ku": "Metîl propanoat"
+          "tr": "Adı metil propanoattır; asitli ortamda hidroliz edildiğinde propanoik asit ve metanol oluşur.",
+          "en": "It is methyl propanoate; acid hydrolysis gives propanoic acid and methanol.",
+          "de": "Es ist Methylpropanoat; bei saurer Hydrolyse entstehen Propansäure und Methanol.",
+          "fr": "C'est le propanoate de méthyle ; son hydrolyse acide donne de l'acide propanoïque et du méthanol.",
+          "ru": "Это метилпропаноат; при кислотном гидролизе образуются пропановая кислота и метанол.",
+          "ar": "اسمه بروبانوات الميثيل، وعند تحلّله المائي في وسط حمضي يتكوّن حمض البروبانويك والميثانول.",
+          "zh": "它是丙酸甲酯；酸性水解生成丙酸和甲醇。",
+          "ku": "Navê wê metîl propanoat e; dema di hawîrdora asîdî de tê hîdrolîzkirin asîda propanoîk û metanol çêdibin."
         },
         {
-          "tr": "Etil etanoat",
-          "en": "Ethyl ethanoate",
-          "de": "Ethylethanoat",
-          "fr": "Éthanoate d'éthyle",
-          "ru": "Этилэтаноат",
-          "ar": "إيثانوات الإيثيل",
-          "zh": "乙酸乙酯",
-          "ku": "Etîl etanoat"
+          "tr": "Adı etil etanoattır; hidroliz edildiğinde etanoik asit ve etanol oluşur.",
+          "en": "It is ethyl ethanoate; hydrolysis gives ethanoic acid and ethanol.",
+          "de": "Es ist Ethylethanoat; bei der Hydrolyse entstehen Ethansäure und Ethanol.",
+          "fr": "C'est l'éthanoate d'éthyle ; son hydrolyse donne de l'acide éthanoïque et de l'éthanol.",
+          "ru": "Это этилэтаноат; при гидролизе образуются этановая кислота и этанол.",
+          "ar": "اسمه إيثانوات الإيثيل، وعند تحلّله المائي يتكوّن حمض الإيثانويك والإيثانول.",
+          "zh": "它是乙酸乙酯；水解生成乙酸和乙醇。",
+          "ku": "Navê wê etîl etanoat e; dema tê hîdrolîzkirin asîda etanoîk û etanol çêdibin."
         },
         {
-          "tr": "Dietil eter",
-          "en": "Diethyl ether",
-          "de": "Diethylether",
-          "fr": "Éther diéthylique",
-          "ru": "Диэтиловый эфир",
-          "ar": "ثنائي إيثيل الإيثر",
-          "zh": "乙醚",
-          "ku": "Dîetîl eter"
+          "tr": "Adı propil metanoattır; hidroliz edildiğinde metanoik asit ve 1-propanol oluşur.",
+          "en": "It is propyl methanoate; hydrolysis gives methanoic acid and 1-propanol.",
+          "de": "Es ist Propylmethanoat; bei der Hydrolyse entstehen Methansäure und 1-Propanol.",
+          "fr": "C'est le méthanoate de propyle ; son hydrolyse donne de l'acide méthanoïque et du propan-1-ol.",
+          "ru": "Это пропилметаноат; при гидролизе образуются метановая кислота и 1-пропанол.",
+          "ar": "اسمه ميثانوات البروبيل، وعند تحلّله المائي يتكوّن حمض الميثانويك و1-بروبانول.",
+          "zh": "它是甲酸丙酯；水解生成甲酸和 1-丙醇。",
+          "ku": "Navê wê propîl metanoat e; dema tê hîdrolîzkirin asîda metanoîk û 1-propanol çêdibin."
         },
         {
-          "tr": "Propil metanoat",
-          "en": "Propyl methanoate",
-          "de": "Propylmethanoat",
-          "fr": "Méthanoate de propyle",
-          "ru": "Пропилметаноат",
-          "ar": "ميثانوات البروبيل",
-          "zh": "甲酸丙酯",
-          "ku": "Propîl metanoat"
+          "tr": "Adı metil propanoattır; hidroliz edildiğinde metanoik asit ve 1-propanol oluşur.",
+          "en": "It is methyl propanoate; hydrolysis gives methanoic acid and 1-propanol.",
+          "de": "Es ist Methylpropanoat; bei der Hydrolyse entstehen Methansäure und 1-Propanol.",
+          "fr": "C'est le propanoate de méthyle ; son hydrolyse donne de l'acide méthanoïque et du propan-1-ol.",
+          "ru": "Это метилпропаноат; при гидролизе образуются метановая кислота и 1-пропанол.",
+          "ar": "اسمه بروبانوات الميثيل، وعند تحلّله المائي يتكوّن حمض الميثانويك و1-بروبانول.",
+          "zh": "它是丙酸甲酯；水解生成甲酸和 1-丙醇。",
+          "ku": "Navê wê metîl propanoat e; dema tê hîdrolîzkirin asîda metanoîk û 1-propanol çêdibin."
         },
         {
-          "tr": "Bütanoik asit",
-          "en": "Butanoic acid",
-          "de": "Butansäure",
-          "fr": "Acide butanoïque",
-          "ru": "Бутановая кислота",
-          "ar": "حمض البيوتانويك",
-          "zh": "丁酸",
-          "ku": "Asîda bûtanoîk"
+          "tr": "Molekül formülü C4H8O2'dir ve bütanoik asidin zincir izomeridir.",
+          "en": "Its molecular formula is C4H8O2 and it is a chain isomer of butanoic acid.",
+          "de": "Seine Summenformel ist C4H8O2, und es ist ein Kettenisomer der Butansäure.",
+          "fr": "Sa formule brute est C4H8O2 et c'est un isomère de chaîne de l'acide butanoïque.",
+          "ru": "Его молекулярная формула C4H8O2, и он является изомером углеродного скелета бутановой кислоты.",
+          "ar": "صيغته الجزيئية C4H8O2، وهو متماكب سلسلة لحمض البيوتانويك.",
+          "zh": "它的分子式为 C4H8O2，是丁酸的碳链异构体。",
+          "ku": "Formula wê ya molekulî C4H8O2 ye û îzomera zincîrê ya asîda bûtanoîk e."
         }
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": {
-        "tr": "Bu bir esterleşme tepkimesidir: CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. Esterler, alkolden gelen alkil grubunun adı ile asidin -oat ekli adı birleştirilerek adlandırılır: alkolden etil, etanoik (asetik) asitten etanoat gelir; ürün etil etanoattır (etil asetat). Metil propanoat, propil metanoat ve bütanoik asit aynı molekül formülüne (C4H8O2) sahip izomerlerdir; asit ve alkol kısımlarını karıştırmaktan doğar. Dietil eter iki etanol molekülünden su ayrılmasıyla oluşur; asetik asit içermez.",
-        "en": "This is esterification: CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. Esters are named from the alkyl group of the alcohol plus the -oate name of the acid: ethyl from the alcohol, ethanoate from ethanoic (acetic) acid; the product is ethyl ethanoate (ethyl acetate). Methyl propanoate, propyl methanoate and butanoic acid are isomers with the same molecular formula (C4H8O2) and come from mixing up the acid and alcohol parts. Diethyl ether forms when water is removed from two ethanol molecules; it contains no acetic acid part.",
-        "de": "Es handelt sich um eine Veresterung: CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. Ester benennt man nach der Alkylgruppe des Alkohols und dem -oat-Namen der Säure: Ethyl vom Alkohol, Ethanoat von der Ethansäure (Essigsäure); das Produkt ist Ethylethanoat (Ethylacetat). Methylpropanoat, Propylmethanoat und Butansäure sind Isomere mit derselben Summenformel (C4H8O2) und entstehen durch Verwechseln von Säure- und Alkoholteil. Diethylether entsteht durch Wasserabspaltung aus zwei Ethanolmolekülen und enthält keinen Essigsäureteil.",
-        "fr": "C'est une estérification : CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. On nomme un ester avec le nom en -oate de l'acide suivi du groupe alkyle de l'alcool : éthanoate (de l'acide éthanoïque, ou acétique) et éthyle (de l'alcool) ; le produit est l'éthanoate d'éthyle (acétate d'éthyle). Le propanoate de méthyle, le méthanoate de propyle et l'acide butanoïque sont des isomères de même formule brute (C4H8O2), issus d'une confusion entre partie acide et partie alcool. L'éther diéthylique se forme par déshydratation de deux molécules d'éthanol ; il ne contient pas de partie acétique.",
-        "ru": "Это реакция этерификации: CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. Сложный эфир называют по алкильной группе спирта и названию кислоты с суффиксом -оат: этил — от спирта, этаноат — от этановой (уксусной) кислоты; продукт — этилэтаноат (этилацетат). Метилпропаноат, пропилметаноат и бутановая кислота — изомеры с той же формулой C4H8O2; они получаются, если перепутать кислотную и спиртовую части. Диэтиловый эфир образуется при отщеплении воды от двух молекул этанола и не содержит остатка уксусной кислоты.",
-        "ar": "هذا تفاعل أسترة: CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. يُسمّى الإستر باسم الحمض بالمقطع «-وات» مضافًا إلى مجموعة الألكيل القادمة من الكحول: الإيثانوات من حمض الإيثانويك (الأسيتيك) والإيثيل من الكحول؛ فالناتج إيثانوات الإيثيل (أسيتات الإيثيل). بروبانوات الميثيل وميثانوات البروبيل وحمض البيوتانويك متشكلات لها الصيغة الجزيئية نفسها (C4H8O2) وتنتج عن الخلط بين جزأي الحمض والكحول. أما ثنائي إيثيل الإيثر فيتكوّن بنزع الماء من جزيئي إيثانول ولا يحتوي على جزء الأسيتيك.",
-        "zh": "这是酯化反应：CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O。酯按“某酸某酯”命名：酸部分来自乙酸，醇部分来自乙醇，产物为乙酸乙酯。丙酸甲酯、甲酸丙酯和丁酸是分子式同为 C4H8O2 的同分异构体，源于把酸和醇两部分弄混。乙醚由两分子乙醇脱水生成，不含乙酸部分。",
-        "ku": "Ev reaksiyona esterbûnê ye: CH3-COOH + CH3-CH2-OH → CH3-COO-CH2-CH3 + H2O. Ester bi berhevkirina navê koma alkîl a ji alkolê û navê asîdê yê bi paşgira -oat têne binavkirin: etîl ji alkolê, etanoat ji asîda etanoîk (asetîk) tê; hilber etîl etanoat e (etîl asetat). Metîl propanoat, propîl metanoat û asîda bûtanoîk îzomerên bi heman formula molekulî (C4H8O2) ne û ji tevlihevkirina beşên asîd û alkolê tên. Dîetîl eter ji du molekulên etanolê bi veqetîna avê çêdibe û beşa asîda asetîk tê de tune ye."
+        "tr": "Ester grubunda (–COO–) karbonil karbonunu içeren taraf asitten, tekli bağla oksijene bağlı alkil grubu alkolden gelir. Şekilde C=O karbonu CH3–CH2– grubuna bağlıdır; bu kısım 3 karbonlu propanoik asitten gelir. Oksijene bağlı CH3 grubu metanolden gelir. Ester, alkil grubu + asit adı (-oat) ile adlandırılır: metil propanoat; hidrolizinde propanoik asit ve metanol oluşur. Etil etanoat (CH3–COO–CH2–CH3) ve propil metanoat (H–COO–CH2–CH2–CH3) aynı formüllü ama C=O grubunun yeri farklı esterlerdir. Molekül formülü C4H8O2 doğrudur, ancak ester ile karboksilik asit arasındaki ilişki zincir değil fonksiyonel grup izomerisidir.",
+        "en": "In an ester group (–COO–) the part containing the carbonyl carbon comes from the acid, and the alkyl group bonded to oxygen by a single bond comes from the alcohol. In the figure the C=O carbon is attached to a CH3–CH2– group, so this part comes from three-carbon propanoic acid. The CH3 group on the oxygen comes from methanol. Esters are named alkyl group + acid name (-oate): methyl propanoate, whose hydrolysis gives propanoic acid and methanol. Ethyl ethanoate (CH3–COO–CH2–CH3) and propyl methanoate (H–COO–CH2–CH2–CH3) have the same formula but a different position of the C=O group. The formula C4H8O2 is correct, but an ester and a carboxylic acid are functional group isomers, not chain isomers.",
+        "de": "In der Estergruppe (–COO–) stammt der Teil mit dem Carbonylkohlenstoff aus der Säure, die über eine Einfachbindung an Sauerstoff gebundene Alkylgruppe aus dem Alkohol. In der Abbildung ist der C=O-Kohlenstoff an eine CH3–CH2–-Gruppe gebunden; dieser Teil stammt aus der Propansäure mit drei C-Atomen. Die CH3-Gruppe am Sauerstoff stammt aus Methanol. Ester werden als Alkylgruppe + Säurename (-oat) benannt: Methylpropanoat; die Hydrolyse liefert Propansäure und Methanol. Ethylethanoat (CH3–COO–CH2–CH3) und Propylmethanoat (H–COO–CH2–CH2–CH3) haben dieselbe Formel, aber eine andere Lage der C=O-Gruppe. Die Formel C4H8O2 stimmt, doch Ester und Carbonsäure sind Funktions-, keine Kettenisomere.",
+        "fr": "Dans le groupe ester (–COO–), la partie contenant le carbone du carbonyle provient de l'acide et le groupe alkyle lié à l'oxygène par une liaison simple provient de l'alcool. Sur la figure, le carbone du C=O est lié à un groupe CH3–CH2– : cette partie provient de l'acide propanoïque à trois carbones. Le groupe CH3 porté par l'oxygène provient du méthanol. Un ester se nomme nom de l'acide (-oate) + de + groupe alkyle : propanoate de méthyle ; son hydrolyse donne de l'acide propanoïque et du méthanol. L'éthanoate d'éthyle (CH3–COO–CH2–CH3) et le méthanoate de propyle (H–COO–CH2–CH2–CH3) ont la même formule brute mais une position différente du groupe C=O. La formule C4H8O2 est exacte, mais ester et acide carboxylique sont des isomères de fonction et non de chaîne.",
+        "ru": "В сложноэфирной группе (–COO–) часть с карбонильным углеродом происходит от кислоты, а алкильная группа, связанная с кислородом одинарной связью, — от спирта. На рисунке углерод C=O связан с группой CH3–CH2–, значит, эта часть происходит от пропановой кислоты с тремя атомами углерода. Группа CH3 при кислороде происходит от метанола. Сложный эфир называют: алкильная группа + название кислоты (-оат) — метилпропаноат; при гидролизе образуются пропановая кислота и метанол. Этилэтаноат (CH3–COO–CH2–CH3) и пропилметаноат (H–COO–CH2–CH2–CH3) имеют ту же формулу, но другое положение группы C=O. Формула C4H8O2 верна, но сложный эфир и карбоновая кислота — межклассовые изомеры, а не изомеры углеродного скелета.",
+        "ar": "في مجموعة الإستر (–COO–) يأتي الجزء الذي يحتوي على كربون الكربونيل من الحمض، وتأتي مجموعة الألكيل المرتبطة بالأكسجين برابطة أحادية من الكحول. في الشكل يرتبط كربون C=O بمجموعة CH3–CH2–، فهذا الجزء آتٍ من حمض البروبانويك ثلاثي الكربون. ومجموعة CH3 المرتبطة بالأكسجين آتية من الميثانول. ويُسمّى الإستر باسم الحمض (-وات) ثم مجموعة الألكيل: بروبانوات الميثيل، ويعطي تحلّله المائي حمض البروبانويك والميثانول. أما إيثانوات الإيثيل (CH3–COO–CH2–CH3) وميثانوات البروبيل (H–COO–CH2–CH2–CH3) فلهما الصيغة نفسها لكن موقع C=O مختلف. والصيغة C4H8O2 صحيحة، لكن العلاقة بين الإستر والحمض الكربوكسيلي تماكب مجموعة وظيفية لا تماكب سلسلة.",
+        "zh": "酯基（–COO–）中含羰基碳的部分来自酸，以单键连在氧上的烷基来自醇。图中 C=O 碳连着 CH3–CH2– 基团，这部分来自含三个碳的丙酸；氧上的 CH3 来自甲醇。酯按“酸名 + 醇的烷基名 + 酯”命名：丙酸甲酯，水解生成丙酸和甲醇。乙酸乙酯（CH3–COO–CH2–CH3）和甲酸丙酯（H–COO–CH2–CH2–CH3）分子式相同，但 C=O 的位置不同。分子式 C4H8O2 正确，但酯与羧酸之间是官能团异构，而不是碳链异构。",
+        "ku": "Di koma esterê (–COO–) de beşa ku karbona karbonîlê dihewîne ji asîdê, koma alkîlê ya ku bi girêdana yekane bi oksîjenê ve girêdayî ye ji alkolê tê. Di şiklê de karbona C=O bi koma CH3–CH2– ve girêdayî ye; ev beş ji asîda propanoîk a bi 3 karbonan tê. Koma CH3 ya li ser oksîjenê ji metanolê tê. Ester bi koma alkîlê + navê asîdê (-oat) tê binavkirin: metîl propanoat; di hîdrolîza wê de asîda propanoîk û metanol çêdibin. Etîl etanoat (CH3–COO–CH2–CH3) û propîl metanoat (H–COO–CH2–CH2–CH3) xwedî heman formulê ne lê cihê koma C=O cuda ye. Formula C4H8O2 rast e, lê têkiliya navbera ester û asîda karboksîlîk îzomeriya koma fonksiyonel e, ne îzomeriya zincîrê."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 320,
+        "height": 140,
+        "markup": "<text x=\"36\" y=\"115\" text-anchor=\"middle\" class=\"qf-strong\">H₃C</text><path d=\"M56 110 H84\" class=\"qf-line\"/><text x=\"106\" y=\"115\" text-anchor=\"middle\" class=\"qf-strong\">CH₂</text><path d=\"M127 110 H152\" class=\"qf-line\"/><text x=\"164\" y=\"115\" text-anchor=\"middle\" class=\"qf-strong\">C</text><path d=\"M160.5 98 V66\" class=\"qf-line\"/><path d=\"M167.5 98 V66\" class=\"qf-line\"/><text x=\"164\" y=\"58\" text-anchor=\"middle\" class=\"qf-strong\">O</text><path d=\"M176 110 H202\" class=\"qf-line\"/><text x=\"214\" y=\"115\" text-anchor=\"middle\" class=\"qf-strong\">O</text><path d=\"M226 110 H252\" class=\"qf-line\"/><text x=\"274\" y=\"115\" text-anchor=\"middle\" class=\"qf-strong\">CH₃</text>"
       }
     },
     {
@@ -2122,14 +2414,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin15",
       "stem": {
-        "tr": "Molekül formülü C4H10O olan düz zincirli bir alkol (X) asitli KMnO4 ile yükseltgendiğinde molekül formülü C4H8O olan Y bileşiği oluşuyor. Y, Tollens ayıracıyla gümüş aynası oluşturmuyor. Buna göre X ve Y aşağıdakilerden hangisidir?",
+        "tr": "Molekül formülü C4H10O olan düz zincirli bir alkol (X) asitli KMnO4 ile yükseltgendiğinde molekül formülü C4H8O olan Y bileşiği oluşuyor. Y, Tollens ayıracıyla gümüş aynası oluşturmuyor. X ve Y aşağıdakilerden hangisidir?",
         "en": "When a straight-chain alcohol X with molecular formula C4H10O is oxidised with acidified KMnO4, compound Y with molecular formula C4H8O is formed. Y does not give a silver mirror with Tollens' reagent. What are X and Y?",
         "de": "Bei der Oxidation eines unverzweigten Alkohols X der Summenformel C4H10O mit angesäuertem KMnO4 entsteht die Verbindung Y der Summenformel C4H8O. Y bildet mit Tollens-Reagenz keinen Silberspiegel. Was sind X und Y?",
         "fr": "L'oxydation d'un alcool à chaîne linéaire X, de formule brute C4H10O, par KMnO4 acidifié donne le composé Y de formule brute C4H8O. Y ne donne pas de miroir d'argent avec le réactif de Tollens. Que sont X et Y ?",
         "ru": "При окислении спирта X с неразветвлённой цепью и формулой C4H10O подкисленным раствором KMnO4 образуется вещество Y с формулой C4H8O. Y не даёт реакции серебряного зеркала с реактивом Толленса. Что такое X и Y?",
         "ar": "عند أكسدة كحول ذي سلسلة مستقيمة X صيغته الجزيئية C4H10O بمحلول KMnO4 المحمّض يتكوّن المركب Y الذي صيغته الجزيئية C4H8O. لا يكوّن Y مرآة فضية مع كاشف تولنز. ما X وY؟",
         "zh": "分子式为 C4H10O 的直链醇 X 被酸性 KMnO4 氧化，生成分子式为 C4H8O 的化合物 Y。Y 不能与托伦试剂发生银镜反应。X 和 Y 分别是什么？",
-        "ku": "Dema alkoleke bi zincîra rast (X) ku formula wê ya molekulî C4H10O ye bi KMnO4 ya asîdî tê oksîdekirin, pêkhateya Y ku formula wê ya molekulî C4H8O ye çêdibe. Y bi reaktîfa Tollens re neynika zîv çênake. Li gorî vê, X û Y kîjan in?"
+        "ku": "Dema alkoleke bi zincîra rast (X) ku formula wê ya molekulî C4H10O ye bi KMnO4 ya asîdî tê oksîdekirin, pêkhateya Y ku formula wê ya molekulî C4H8O ye çêdibe. Y bi reaktîfa Tollens re neynika zîv çênake. X û Y kîjan in?"
       },
       "options": [
         {

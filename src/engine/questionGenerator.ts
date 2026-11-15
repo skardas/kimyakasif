@@ -3,10 +3,52 @@ import type {
   LanguageCode,
   ChemistryDifficulty,
   ChemistryArchetype,
+  FigureText,
+  QuestionFigure,
+  QuestionFigureSeed,
 } from '../types/chemistry';
 import type { ChemistryUnitSeedData } from '../data/units/types';
 import { polishQuestion } from './langPolish';
 import { enrichQuestionsWithDiagrams, planDiagramPlacement, type DiagramPlacement } from './diagramQuestionEnricher';
+
+/** Resolves a figure seed's texts to one language (language-neutral strings pass through). */
+export function resolveFigure(seed: QuestionFigureSeed, lang: LanguageCode): QuestionFigure {
+  const t = (x: FigureText): string => (typeof x === 'string' ? x : x[lang] || x.tr);
+  // Numeric ticks get a language-appropriate decimal separator (32,4 in tr/de/fr/ru/ku; 32.4 in en/zh/ar).
+  const dec = (n: number) => (['en', 'zh', 'ar'].includes(lang) ? String(n) : String(n).replace('.', ','));
+  const tick = (v: number | { v: number; label: FigureText }) => (typeof v === 'number' ? { v, label: dec(v) } : { v: v.v, label: t(v.label) });
+  const cap = seed.caption !== undefined ? { caption: t(seed.caption) } : {};
+  switch (seed.kind) {
+    case 'graph': {
+      const { caption: _c, ...g } = seed;
+      return {
+        ...g,
+        ...cap,
+        xLabel: t(seed.xLabel),
+        yLabel: t(seed.yLabel),
+        xTicks: seed.xTicks?.map(tick),
+        yTicks: seed.yTicks?.map(tick),
+        series: seed.series.map((sr) => ({ ...sr, label: sr.label !== undefined ? t(sr.label) : undefined })),
+        markers: seed.markers?.map((m) => ({ ...m, label: t(m.label) })),
+        xBands: seed.xBands?.map((b) => ({ ...b, label: t(b.label) })),
+      };
+    }
+    case 'table': {
+      // Purely numeric cells ("+2,87", "0,1", "2,0x10^-4") follow the language's decimal separator.
+      const pointLangs = ['en', 'zh', 'ar'].includes(lang);
+      const cell = (x: FigureText) => {
+        const v = t(x);
+        return pointLangs && /^[\s+\-−–]*\d[\d,]*(?:\s*[x×]\s*10\^?[-−–]?\d+)?\s*$/.test(v) ? v.replace(/(\d),(\d)/g, '$1.$2') : v;
+      };
+      return { kind: 'table', header: seed.header.map(t), rows: seed.rows.map((r) => r.map(cell)), ...cap };
+    }
+    case 'svg': {
+      const esc = (x: string) => x.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      const markup = seed.markup.replace(/\{\{(\w+)\}\}/g, (_m, k: string) => esc(seed.labels?.[k] !== undefined ? t(seed.labels[k]) : k));
+      return { kind: 'svg', width: seed.width, height: seed.height, markup, ...cap };
+    }
+  }
+}
 
 // Diagram placement is decided once on the Turkish bank so every language shows the figure on the same question ids.
 const TR_DIAGRAM_PLACEMENT = new WeakMap<ChemistryUnitSeedData, DiagramPlacement>();
@@ -911,210 +953,102 @@ export function rotateOptions(correctItem: string, distractors: string[], desire
   return [result[0], result[1], result[2], result[3], result[4]];
 }
 
-// Roman-numeral (I / II / III) stems in ÖSYM layout: lead-in, statements, then the question.
-function buildRomanStem(title: string, statements: [string, string, string], askTrue: boolean, lang: LanguageCode): string {
+// Stems are direct scientific questions: they never refer to the unit, the book, the curriculum
+// ("kazanım") or "according to ...". The topic is carried by the statements themselves.
+// (title parameters are kept for call-site compatibility but intentionally unused.)
+
+// Roman-numeral (I / II / III) stems in ÖSYM layout: statements, then the question.
+function buildRomanStem(_title: string, statements: [string, string, string], askTrue: boolean, lang: LanguageCode): string {
   const body = `I. ${statements[0]}\nII. ${statements[1]}\nIII. ${statements[2]}`;
   switch (lang) {
-    case 'tr': return `${title} konusuyla ilgili aşağıdaki yargılar veriliyor:\n\n${body}\n\nBuna göre, bu yargılardan hangileri ${askTrue ? 'doğrudur' : 'yanlıştır'}?`;
-    case 'en': return `The following statements are given about the topic "${title}":\n\n${body}\n\nWhich of these statements are ${askTrue ? 'correct' : 'incorrect'}?`;
-    case 'de': return `Zum Thema "${title}" werden folgende Aussagen gemacht:\n\n${body}\n\nWelche dieser Aussagen sind ${askTrue ? 'richtig' : 'falsch'}?`;
-    case 'fr': return `On donne les affirmations suivantes sur le thème « ${title} » :\n\n${body}\n\nLesquelles de ces affirmations sont ${askTrue ? 'exactes' : 'fausses'} ?`;
-    case 'ru': return `Даны утверждения по теме «${title}»:\n\n${body}\n\nКакие из них ${askTrue ? 'верны' : 'неверны'}?`;
-    case 'ar': return `وردت العبارات التالية حول موضوع "${title}":\n\n${body}\n\nأيّ من هذه العبارات ${askTrue ? 'صحيحة' : 'خاطئة'}؟`;
-    case 'zh': return `关于“${title}”，有下列说法：\n\n${body}\n\n其中${askTrue ? '正确' : '错误'}的是哪些？`;
-    case 'ku': return `Derbarê mijara "${title}" de ev gotin hatine dayîn:\n\n${body}\n\nKîjan ji van gotinan ${askTrue ? 'rast' : 'şaş'} in?`;
+    case 'tr': return `${body}\n\nYukarıdaki ifadelerden hangileri ${askTrue ? 'doğrudur' : 'yanlıştır'}?`;
+    case 'en': return `${body}\n\nWhich of the statements above are ${askTrue ? 'correct' : 'incorrect'}?`;
+    case 'de': return `${body}\n\nWelche der obigen Aussagen sind ${askTrue ? 'richtig' : 'falsch'}?`;
+    case 'fr': return `${body}\n\nLesquelles des affirmations ci-dessus sont ${askTrue ? 'exactes' : 'fausses'} ?`;
+    case 'ru': return `${body}\n\nКакие из приведённых утверждений ${askTrue ? 'верны' : 'неверны'}?`;
+    case 'ar': return `${body}\n\nأيّ العبارات السابقة ${askTrue ? 'صحيحة' : 'خاطئة'}؟`;
+    case 'zh': return `${body}\n\n以上说法中${askTrue ? '正确' : '错误'}的是哪些？`;
+    case 'ku': return `${body}\n\nKîjan ji gotinên li jor ${askTrue ? 'rast' : 'şaş'} in?`;
   }
 }
 
-function getNegativeTrapStem(title: string, lang: LanguageCode, variant = 0): string {
-  const v = variant % 6;
+function getNegativeTrapStem(_title: string, lang: LanguageCode, variant = 0): string {
+  const v = variant % 3;
   switch (lang) {
-    case 'tr': {
-      if (v === 0) return `"${title}" konusu ile ilgili olarak aşağıda verilen ifadelerden hangisi yanlıştır (doğru değildir)?`;
-      if (v === 1) return `"${title}" kazanımları dikkate alındığında aşağıdaki yargılardan hangisi bilimsel bir yanılgı içerir?`;
-      if (v === 2) return `"${title}" kapsamında ileri sürülen aşağıdaki önermelerden hangisi doğru değildir?`;
-      if (v === 3) return `"${title}" ile ilgili aşağıdaki açıklamalardan hangisi hatalıdır?`;
-      if (v === 4) return `"${title}" konusuna dair hazırlanan aşağıdaki yargılardan hangisi bilimsel gerçeklerle çelişir?`;
-      return `Aşağıdaki ifadelerden hangisi "${title}" konusundaki temel kimya ilkelerine göre hatalıdır?`;
-    }
-    case 'en': {
-      if (v === 0) return `Regarding the topic of "${title}", which of the following statements is incorrect (false)?`;
-      if (v === 1) return `Considering "${title}", which of the following assertions contains a scientific misconception?`;
-      if (v === 2) return `Which statement proposed under "${title}" is scientifically false?`;
-      if (v === 3) return `When examining the principles of "${title}", which statement is flawed?`;
-      if (v === 4) return `Which of the following assertions regarding "${title}" contradicts established scientific facts?`;
-      return `Which statement is erroneous according to the fundamental principles of "${title}"?`;
-    }
-    case 'de': {
-      if (v === 0) return `Welche der folgenden Aussagen zum Thema "${title}" ist sachlich falsch?`;
-      if (v === 1) return `Unter Berücksichtigung von "${title}": Welche Aussage enthält ein wissenschaftliches Missverständnis?`;
-      if (v === 2) return `Welche Aussage im Rahmen von "${title}" ist unzutreffend?`;
-      if (v === 3) return `Bei der Analyse von "${title}": Welche Behauptung ist fehlerhaft?`;
-      if (v === 4) return `Welche der folgenden Darstellungen zu "${title}" widerspricht gesicherten chemischen Fakten?`;
-      return `Welche Aussage steht im Widerspruch zu den grundlegenden chemischen Prinzipien von "${title}"?`;
-    }
-    case 'fr': {
-      if (v === 0) return `Concernant le sujet "${title}", laquelle des affirmations suivantes est fausse (incorrecte) ?`;
-      if (v === 1) return `Dans le cadre de "${title}", laquelle des assertions suivantes contient une erreur conceptuelle ?`;
-      if (v === 2) return `Laquelle des propositions suivantes sur "${title}" n'est pas exacte ?`;
-      if (v === 3) return `En examinant les principes de "${title}", quelle affirmation est erronée ?`;
-      if (v === 4) return `Laquelle des affirmations suivantes contredit les données scientifiques de "${title}" ?`;
-      return `Quelle proposition est incorrecte au regard des lois fondamentales de "${title}" ?`;
-    }
-    case 'ru': {
-      if (v === 0) return `Какое из утверждений по теме «${title}» неверно?`;
-      if (v === 1) return `Какое утверждение по теме «${title}» содержит научную ошибку?`;
-      if (v === 2) return `Какое из положений по теме «${title}» не соответствует действительности?`;
-      if (v === 3) return `Укажите ошибочное утверждение по теме «${title}».`;
-      if (v === 4) return `Какое из приведённых утверждений по теме «${title}» противоречит научным фактам?`;
-      return `Какое утверждение по теме «${title}» противоречит основным законам химии?`;
-    }
-    case 'ar': {
-      if (v === 0) return `فيما يتعلق بموضوع "${title}"، أيّ العبارات الآتية خاطئة؟`;
-      if (v === 1) return `في موضوع "${title}"، أيّ الأحكام الآتية يتضمن خطأً علميًا؟`;
-      if (v === 2) return `أيّ الافتراضات الآتية في سياق "${title}" غير صحيح؟`;
-      if (v === 3) return `عند دراسة مبادئ "${title}"، أيّ التفسيرات الآتية خاطئ؟`;
-      if (v === 4) return `أيّ العبارات الآتية يتعارض مع الحقائق العلمية الثابتة في "${title}"؟`;
-      return `أيّ العبارات الآتية خاطئة وفقًا للمبادئ الكيميائية الأساسية في وحدة "${title}"؟`;
-    }
-    case 'zh': {
-      if (v === 0) return `下列关于“${title}”的说法中，错误的是哪一项？`;
-      if (v === 1) return `结合“${title}”的知识判断，下列说法中存在科学性错误的是哪一项？`;
-      if (v === 2) return `下列有关“${title}”的叙述中，不正确的是哪一项？`;
-      if (v === 3) return `运用“${title}”的相关原理分析，下列结论错误的是哪一项？`;
-      if (v === 4) return `下列关于“${title}”的说法中，与化学事实不符的是哪一项？`;
-      return `依据“${title}”的基本原理，下列说法错误的是哪一项？`;
-    }
-    case 'ku': {
-      if (v === 0) return `Derbarê mijara "${title}" de, kîjan ji gotinên jêrîn şaş e?`;
-      if (v === 1) return `Dema mijara "${title}" tê nirxandin, kîjan ji gotinên jêrîn şaşiyeke zanistî dihewîne?`;
-      if (v === 2) return `Di çarçoveya mijara "${title}" de, kîjan gotin ne rast e?`;
-      if (v === 3) return `Li gorî prensîbên mijara "${title}", kîjan ji gotinên jêrîn şaş e?`;
-      if (v === 4) return `Kîjan ji gotinên jêrîn bi rastiyên zanistî yên mijara "${title}" re nakok e?`;
-      return `Li gorî prensîbên bingehîn ên kîmyayê, kîjan gotina derbarê mijara "${title}" de şaş e?`;
-    }
+    case 'tr': return ['Aşağıdaki ifadelerden hangisi yanlıştır?', 'Aşağıdaki yargılardan hangisi bilimsel olarak hatalıdır?', 'Aşağıdakilerden hangisi doğru değildir?'][v];
+    case 'en': return ['Which of the following statements is incorrect?', 'Which of the following statements is scientifically wrong?', 'Which of the following is not true?'][v];
+    case 'de': return ['Welche der folgenden Aussagen ist falsch?', 'Welche der folgenden Aussagen ist fachlich nicht korrekt?', 'Welche der folgenden Aussagen trifft nicht zu?'][v];
+    case 'fr': return ['Laquelle des affirmations suivantes est fausse ?', 'Laquelle des affirmations suivantes est scientifiquement erronée ?', 'Laquelle des propositions suivantes est inexacte ?'][v];
+    case 'ru': return ['Какое из следующих утверждений неверно?', 'Какое из следующих утверждений содержит научную ошибку?', 'Какое из следующих утверждений не соответствует действительности?'][v];
+    case 'ar': return ['أيّ العبارات الآتية خاطئة؟', 'أيّ العبارات الآتية غير صحيحة علميًا؟', 'أيّ مما يأتي ليس صحيحًا؟'][v];
+    case 'zh': return ['下列说法中，错误的是哪一项？', '下列说法中，存在科学性错误的是哪一项？', '下列叙述中，不正确的是哪一项？'][v];
+    case 'ku': return ['Kîjan ji gotinên jêrîn şaş e?', 'Kîjan ji gotinên jêrîn ji aliyê zanistî ve şaş e?', 'Kîjan ji yên jêrîn ne rast e?'][v];
   }
 }
 
-function getPositiveConceptStem(title: string, lang: LanguageCode, variant = 0): string {
-  const v = variant % 6;
+function getPositiveConceptStem(_title: string, lang: LanguageCode, variant = 0): string {
+  const v = variant % 3;
   switch (lang) {
-    case 'tr': {
-      if (v === 0) return `"${title}" ünitesindeki temel kimyasal ilkeler doğrultusunda, aşağıdaki ifadelerden hangisi kesinlikle doğrudur?`;
-      if (v === 1) return `"${title}" konusu incelendiğinde aşağıdaki yargılardan hangisinin bilimsel bir gerçek olduğu görülür?`;
-      if (v === 2) return `"${title}" kazanımları çerçevesinde verilen aşağıdaki açıklamalardan hangisi tam olarak doğrudur?`;
-      if (v === 3) return `Kimyasal yasalar doğrultusunda "${title}" ile ilgili ileri sürülen hangi ifade kesin olarak doğrudur?`;
-      if (v === 4) return `"${title}" konusunda bilimsel olarak kanıtlanmış doğru ifade aşağıdakilerden hangisidir?`;
-      return `Aşağıdaki seçeneklerden hangisi "${title}" ünitesinin temel kurallarına göre eksiksiz ve doğrudur?`;
-    }
-    case 'en': {
-      if (v === 0) return `In accordance with the fundamental chemical principles of "${title}", which of the following statements is strictly correct?`;
-      if (v === 1) return `When studying "${title}", which of the following statements represents an established scientific fact?`;
-      if (v === 2) return `Within the scope of "${title}", which explanation is completely accurate?`;
-      if (v === 3) return `According to chemical laws, which assertion regarding "${title}" is unambiguously true?`;
-      if (v === 4) return `Which of the following represents an indisputable scientific truth regarding "${title}"?`;
-      return `Which statement is entirely accurate according to the core principles of "${title}"?`;
-    }
-    case 'de': {
-      if (v === 0) return `Welche der folgenden Aussagen zu "${title}" ist nach den chemischen Grundprinzipien uneingeschränkt zutreffend?`;
-      if (v === 1) return `Welche der folgenden Feststellungen zu "${title}" entspricht einer wissenschaftlichen Tatsache?`;
-      if (v === 2) return `Welche Erklärung im Rahmen von "${title}" ist vollkommen korrekt?`;
-      if (v === 3) return `Welche Behauptung bezüglich "${title}" ist gemäß den chemischen Gesetzen zweifelsfrei richtig?`;
-      if (v === 4) return `Welche der folgenden Aussagen stellt eine gesicherte wissenschaftliche Erkenntnis zu "${title}" dar?`;
-      return `Welche Option ist im Hinblick auf "${title}" sachlich vollkommen richtig?`;
-    }
-    case 'fr': {
-      if (v === 0) return `Conformément aux principes chimiques fondamentaux de "${title}", laquelle des affirmations suivantes est rigoureusement exacte ?`;
-      if (v === 1) return `En étudiant "${title}", laquelle des propositions suivantes constitue un fait scientifique avéré ?`;
-      if (v === 2) return `Dans le cadre de "${title}", quelle explication est parfaitement correcte ?`;
-      if (v === 3) return `Selon les lois de la chimie, quelle affirmation concernant "${title}" est indubitablement vraie ?`;
-      if (v === 4) return `Laquelle des propositions suivantes exprime une vérité scientifique établie sur "${title}" ?`;
-      return `Quelle affirmation est parfaitement exacte au regard des lois de "${title}" ?`;
-    }
-    case 'ru': {
-      if (v === 0) return `Какое из утверждений по теме «${title}» верно?`;
-      if (v === 1) return `Какое из утверждений по теме «${title}» выражает установленный научный факт?`;
-      if (v === 2) return `Какое объяснение по теме «${title}» правильно?`;
-      if (v === 3) return `Какое утверждение по теме «${title}» соответствует законам химии?`;
-      if (v === 4) return `Какое из утверждений по теме «${title}» научно доказано?`;
-      return `Какое из утверждений полностью соответствует основным положениям темы «${title}»?`;
-    }
-    case 'ar': {
-      if (v === 0) return `وفقًا للمبادئ الكيميائية الأساسية في وحدة "${title}"، أيّ العبارات الآتية صحيحة؟`;
-      if (v === 1) return `عند دراسة "${title}"، أيّ الأحكام الآتية يمثل حقيقة علمية ثابتة؟`;
-      if (v === 2) return `في سياق وحدة "${title}"، أيّ التفسيرات الآتية صحيح؟`;
-      if (v === 3) return `بناءً على القوانين الكيميائية، أيّ العبارات الآتية عن "${title}" صحيحة؟`;
-      if (v === 4) return `أيّ العبارات الآتية تمثل حقيقة علمية مؤكدة في موضوع "${title}"؟`;
-      return `أيّ الخيارات الآتية صحيح وفقًا لقواعد "${title}"؟`;
-    }
-    case 'zh': {
-      if (v === 0) return `依据“${title}”的基本原理，下列说法正确的是哪一项？`;
-      if (v === 1) return `学习“${title}”时，下列判断中符合科学事实的是哪一项？`;
-      if (v === 2) return `下列有关“${title}”的叙述中，完全正确的是哪一项？`;
-      if (v === 3) return `依据化学基本规律，下列关于“${title}”的说法正确的是哪一项？`;
-      if (v === 4) return `下列关于“${title}”的说法中，正确的是哪一项？`;
-      return `下列选项中，符合“${title}”基本规律的是哪一项？`;
-    }
-    case 'ku': {
-      if (v === 0) return `Li gorî prensîbên bingehîn ên kîmyayê yên mijara "${title}", kîjan ji gotinên jêrîn bê guman rast e?`;
-      if (v === 1) return `Dema mijara "${title}" tê lêkolînkirin, kîjan ji gotinên jêrîn rastiyeke zanistî ye?`;
-      if (v === 2) return `Di çarçoveya mijara "${title}" de, kîjan şirove bi tevahî rast e?`;
-      if (v === 3) return `Li gorî zagonên kîmyayê, kîjan gotina derbarê mijara "${title}" de bê guman rast e?`;
-      if (v === 4) return `Kîjan ji vebijarkên jêrîn derbarê mijara "${title}" de rastiyeke zanistî ya îspatkirî ye?`;
-      return `Li gorî qaîdeyên bingehîn ên mijara "${title}", kîjan ji vebijarkên jêrîn bi tevahî rast e?`;
-    }
+    case 'tr': return ['Aşağıdaki ifadelerden hangisi doğrudur?', 'Aşağıdaki yargılardan hangisi bilimsel olarak doğrudur?', 'Aşağıdakilerden hangisi doğrudur?'][v];
+    case 'en': return ['Which of the following statements is correct?', 'Which of the following statements is scientifically correct?', 'Which of the following is true?'][v];
+    case 'de': return ['Welche der folgenden Aussagen ist richtig?', 'Welche der folgenden Aussagen ist fachlich korrekt?', 'Welche der folgenden Aussagen trifft zu?'][v];
+    case 'fr': return ['Laquelle des affirmations suivantes est exacte ?', 'Laquelle des affirmations suivantes est scientifiquement correcte ?', 'Laquelle des propositions suivantes est vraie ?'][v];
+    case 'ru': return ['Какое из следующих утверждений верно?', 'Какое из следующих утверждений научно верно?', 'Какое из следующих утверждений соответствует действительности?'][v];
+    case 'ar': return ['أيّ العبارات الآتية صحيحة؟', 'أيّ العبارات الآتية صحيحة علميًا؟', 'أيّ مما يأتي صحيح؟'][v];
+    case 'zh': return ['下列说法中，正确的是哪一项？', '下列说法中，符合科学事实的是哪一项？', '下列叙述中，正确的是哪一项？'][v];
+    case 'ku': return ['Kîjan ji gotinên jêrîn rast e?', 'Kîjan ji gotinên jêrîn ji aliyê zanistî ve rast e?', 'Kîjan ji yên jêrîn rast e?'][v];
   }
 }
 
-function getMatchStemA(title: string, clue: string, lang: LanguageCode): string {
+function getMatchStemA(_title: string, clue: string, lang: LanguageCode): string {
   switch (lang) {
-    case 'tr': return `"${title}" konusunda "${clue}" özelliği ile ayırt edilen kimyasal tür veya kavram aşağıdakilerden hangisidir?`;
-    case 'en': return `In "${title}", which chemical species or concept is defined by the distinguishing trait: "${clue}"?`;
-    case 'de': return `Welche chemische Spezies oder welches Konzept wird in "${title}" durch das Merkmal "${clue}" charakterisiert?`;
-    case 'fr': return `Dans "${title}", quelle espèce chimique ou notion est définie par le trait distinctif : "${clue}" ?`;
-    case 'ru': return `Какому понятию темы «${title}» соответствует описание: «${clue}»?`;
-    case 'ar': return `في موضوع "${title}"، أي نوع كيميائي أو مفهوم يتميز بالخاصية: "${clue}"؟`;
-    case 'zh': return `在“${title}”中，下列哪一项具有以下显著特征：“${clue}”？`;
-    case 'ku': return `Di mijara "${title}" de, kîjan cureya kîmyewî an têgeh bi vê taybetmendiyê ji yên din cuda dibe: "${clue}"?`;
+    case 'tr': return `"${clue}"\n\nYukarıdaki açıklamada "bu kavram" ile belirtilen aşağıdakilerden hangisidir?`;
+    case 'en': return `"${clue}"\n\nIn the description above, what does "this concept" refer to?`;
+    case 'de': return `"${clue}"\n\nWorauf bezieht sich „dieser Begriff" in der obigen Beschreibung?`;
+    case 'fr': return `« ${clue} »\n\nDans la description ci-dessus, que désigne « cette notion » ?`;
+    case 'ru': return `«${clue}»\n\nЧто обозначено словами «это понятие» в приведённом описании?`;
+    case 'ar': return `"${clue}"\n\nإلامَ تشير عبارة "هذا المفهوم" في الوصف السابق؟`;
+    case 'zh': return `“${clue}”\n\n上述描述中的“该概念”指的是下列哪一项？`;
+    case 'ku': return `"${clue}"\n\nDi şiroveya li jor de "ev têgeh" kîjan e?`;
   }
 }
 
-function getMatchStemB(title: string, conceptName: string, lang: LanguageCode): string {
+function getMatchStemB(_title: string, conceptName: string, lang: LanguageCode): string {
   switch (lang) {
-    case 'tr': return `"${title}" kapsamında incelenen "${conceptName}" ile ilgili aşağıdaki ifadelerden hangisi doğrudur?`;
-    case 'en': return `Which of the following characteristics accurately describes "${conceptName}" within "${title}"?`;
-    case 'de': return `Welche der folgenden Eigenschaften beschreibt "${conceptName}" im Rahmen von "${title}" zutreffend?`;
-    case 'fr': return `Laquelle des caractéristiques suivantes décrit correctement "${conceptName}" dans le cadre de "${title}" ?`;
-    case 'ru': return `Какое из утверждений о понятии «${conceptName}» (тема «${title}») верно?`;
-    case 'ar': return `أيّ العبارات الآتية تصف "${conceptName}" وصفًا صحيحًا في موضوع "${title}"؟`;
-    case 'zh': return `在“${title}”中，下列关于“${conceptName}”的说法正确的是哪一项？`;
-    case 'ku': return `Di çarçoveya mijara "${title}" de, kîjan ji gotinên jêrîn derbarê "${conceptName}" de rast e?`;
+    case 'tr': return `${conceptName} ile ilgili aşağıdaki ifadelerden hangisi doğrudur?`;
+    case 'en': return `Which of the following statements about ${conceptName} is correct?`;
+    case 'de': return `Welche der folgenden Aussagen über ${conceptName} ist richtig?`;
+    case 'fr': return `Laquelle des affirmations suivantes concernant ${conceptName} est exacte ?`;
+    case 'ru': return `Какое из следующих утверждений о понятии «${conceptName}» верно?`;
+    case 'ar': return `أيّ العبارات الآتية عن ${conceptName} صحيحة؟`;
+    case 'zh': return `下列关于“${conceptName}”的说法中，正确的是哪一项？`;
+    case 'ku': return `Derbarê ${conceptName} de kîjan ji gotinên jêrîn rast e?`;
   }
 }
 
-function getSequenceOrderStem(title: string, seqTitle: string, lang: LanguageCode): string {
+function getSequenceOrderStem(_title: string, seqTitle: string, lang: LanguageCode): string {
   switch (lang) {
-    case 'tr': return `"${title}" ünitesinde ele alınan "${seqTitle}" basamaklarının doğru sıralaması aşağıdakilerin hangisinde verilmiştir?`;
-    case 'en': return `In the unit "${title}", which option gives the correct order of the steps of "${seqTitle}"?`;
-    case 'de': return `Welche Option gibt die korrekte Reihenfolge der Schritte für "${seqTitle}" in "${title}" wieder?`;
-    case 'fr': return `Quelle option présente l'ordre correct des étapes de "${seqTitle}" dans "${title}" ?`;
-    case 'ru': return `Тема «${title}», последовательность «${seqTitle}». В каком варианте указан правильный порядок?`;
-    case 'ar': return `أيّ الخيارات الآتية يبيّن الترتيب الصحيح لخطوات "${seqTitle}" في وحدة "${title}"؟`;
-    case 'zh': return `在“${title}”单元中，正确表示“${seqTitle}”各步骤先后顺序的是哪一项？`;
-    case 'ku': return `Di mijara "${title}" de, rêza rast a gavên "${seqTitle}" di kîjan vebijarkê de hatiye dayîn?`;
+    case 'tr': return `${seqTitle} sürecinin basamakları aşağıda karışık olarak verilmiştir. Basamakların doğru sıralaması hangisidir?`;
+    case 'en': return `The steps of "${seqTitle}" are listed below in random order. Which option gives the correct order?`;
+    case 'de': return `Die Schritte von "${seqTitle}" sind unten ungeordnet aufgeführt. Welche Option gibt die richtige Reihenfolge an?`;
+    case 'fr': return `Les étapes de « ${seqTitle} » sont données ci-dessous dans le désordre. Quelle option donne l'ordre correct ?`;
+    case 'ru': return `Этапы процесса «${seqTitle}» перечислены ниже вразброс. В каком варианте указан правильный порядок?`;
+    case 'ar': return `خطوات "${seqTitle}" مذكورة أدناه بترتيب عشوائي. أيّ الخيارات يبيّن الترتيب الصحيح؟`;
+    case 'zh': return `下面打乱列出了“${seqTitle}”的各个步骤。正确的先后顺序是哪一项？`;
+    case 'ku': return `Gavên "${seqTitle}" li jêr bi rêzeke tevlihev hatine dayîn. Rêza rast kîjan e?`;
   }
 }
 
-function getSequenceMissingStepStem(title: string, seqTitle: string, lang: LanguageCode): string {
+function getSequenceMissingStepStem(_title: string, seqTitle: string, lang: LanguageCode): string {
   switch (lang) {
-    case 'tr': return `"${title}" kapsamında gerçekleşen "${seqTitle}" sürecinde [ ? ] ile belirtilen eksik basamak aşağıdakilerden hangisidir?`;
-    case 'en': return `In the process "${seqTitle}" under "${title}", which option represents the missing step denoted by [ ? ]?`;
-    case 'de': return `Welcher Schritt gehört an die mit [ ? ] markierte Stelle im Ablauf von "${seqTitle}" in "${title}"?`;
-    case 'fr': return `Dans le processus "${seqTitle}" de "${title}", quelle est l'étape manquante indiquée par [ ? ] ?`;
-    case 'ru': return `Тема «${title}», последовательность «${seqTitle}». Какой этап пропущен на месте [ ? ]?`;
-    case 'ar': return `في خطوات "${seqTitle}" ضمن "${title}"، ما الخطوة الناقصة المشار إليها بالرمز [ ؟ ]؟`;
-    case 'zh': return `在“${title}”中，“${seqTitle}”的各步骤里用 [ ? ] 表示的缺失步骤是哪一项？`;
-    case 'ku': return `Di mijara "${title}" de, di pêvajoya "${seqTitle}" de gava kêm a ku bi [ ? ] hatiye nîşankirin kîjan e?`;
+    case 'tr': return `${seqTitle} sürecinde [ ? ] ile gösterilen basamak aşağıdakilerden hangisidir?`;
+    case 'en': return `In "${seqTitle}", which step is shown by [ ? ]?`;
+    case 'de': return `Welcher Schritt ist im Ablauf "${seqTitle}" mit [ ? ] markiert?`;
+    case 'fr': return `Dans « ${seqTitle} », quelle étape est indiquée par [ ? ] ?`;
+    case 'ru': return `Какой этап процесса «${seqTitle}» обозначен знаком [ ? ]?`;
+    case 'ar': return `في "${seqTitle}"، ما الخطوة المشار إليها بالرمز [ ؟ ]؟`;
+    case 'zh': return `在“${seqTitle}”中，用 [ ? ] 表示的步骤是哪一项？`;
+    case 'ku': return `Di "${seqTitle}" de, gava ku bi [ ? ] hatiye nîşankirin kîjan e?`;
   }
 }
 
@@ -1839,21 +1773,24 @@ export function compileUnitQuestions(
           options,
           correctIndex,
           explanation,
+          ...(twin.figure ? { figure: resolveFigure(twin.figure, lang) } : {}),
         });
       }
     }
   }
 
-  // Enrich with animated diagram figures
+  // Enrich with animated diagram figures. The placement is planned on the polished Turkish bank
+  // (the same text the audit scripts see) and reused for every language.
+  const polished = questions.map((q) => polishQuestion(q, lang));
   let placement: DiagramPlacement | undefined;
   if (lang === 'tr') {
-    placement = planDiagramPlacement(unit, questions, 'tr');
+    placement = planDiagramPlacement(unit, polished);
     TR_DIAGRAM_PLACEMENT.set(unit, placement);
   } else {
     if (!TR_DIAGRAM_PLACEMENT.has(unit)) compileUnitQuestions(unit, 'tr');
     placement = TR_DIAGRAM_PLACEMENT.get(unit);
   }
-  return enrichQuestionsWithDiagrams(unit, questions.map((q) => polishQuestion(q, lang)), lang, placement);
+  return enrichQuestionsWithDiagrams(unit, polished, lang, placement);
 }
 
 /**

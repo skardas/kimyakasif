@@ -1,7 +1,7 @@
 /**
  * Tier 3: Cross-Feature Combinations (Pairwise Interaction Testing)
  * Validates complex interactions between distinct functional modules
- * with 16 deterministic test cases (target >= 15).
+ * with 17 deterministic test cases (target >= 15).
  */
 
 import { expect, test } from './harness/testFramework';
@@ -460,9 +460,38 @@ export async function runTier3Tests(): Promise<void> {
       const enQs = compileUnitQuestions(ALL_CHEMISTRY_UNITS[0], 'en');
       const arQs = compileUnitQuestions(ALL_CHEMISTRY_UNITS[0], 'ar');
 
-      expect(trQs[0].stem).toContain('Kimya Bilimi');
-      expect(enQs[0].stem).toContain('Chemistry as a Science');
-      expect(arQs[0].stem).toContain('علم الكيمياء');
+      // Stems are direct scientific questions in the active language and never cite the unit/book.
+      expect(trQs[0].stem).toContain('hangileri');
+      expect(enQs[0].stem).toContain('Which');
+      expect(arQs[0].stem).toContain('أيّ');
+      for (const q of trQs) {
+        expect(q.stem.includes('Kimya Bilimi') || /ünitesi|kazanım|kitab/i.test(q.stem)).toBe(false);
+      }
+    })
+  );
+
+  printTestResult(
+    await test('T3.PAIR.17', 3, 'F03-BANK x DIAGRAMS', 'Unit diagrams sit only on on-topic questions: u13 Joule/Graham stems never carry the unrelated figure, figure twins carry none', () => {
+      // The harness question contract omits the visual fields; read them through a narrow view.
+      type Visual = { stem: string; archetype: string; diagram?: { variant: number }; figure?: unknown };
+      const compileVisual = (unit: (typeof ALL_CHEMISTRY_UNITS)[number]) => compileUnitQuestions(unit, 'tr') as unknown as Visual[];
+      const u13 = ALL_CHEMISTRY_UNITS.find((u) => u.id === 'u13')!;
+      const qs = compileVisual(u13);
+
+      // u13 V1 = Graham diffusion, V2 = Dalton partial pressures / gas over water.
+      const joule = qs.filter((q) => q.stem.includes('Joule'));
+      const graham = qs.filter((q) => q.stem.includes('Graham'));
+      expect(joule.length).toBeGreaterThan(0);
+      expect(graham.length).toBeGreaterThan(0);
+      for (const q of joule) expect(q.diagram?.variant === 1).toBe(false);
+      for (const q of graham) expect(q.diagram?.variant === 2).toBe(false);
+
+      // Questions with their own authored figure (ÖSYM twins) never get a generic diagram, in any unit.
+      for (const unit of ALL_CHEMISTRY_UNITS) {
+        for (const q of compileVisual(unit)) {
+          if (q.figure !== undefined || q.archetype === 'osym-twin') expect(q.diagram).toBeUndefined();
+        }
+      }
     })
   );
 }

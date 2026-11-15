@@ -247,7 +247,7 @@ kimya/
 - `useAppStore` — learner profiles (several per device), active profile, language, theme, XP, streaks, daily activity, completed slides, game high scores, mock best scores, exam results, mistake notebook (with the last wrong pick), bookmarks, active exam state. Persisted to `localStorage` and rehydrated defensively.
 - `usePreferences(profileId)` — daily goal, text size (`--fs` CSS multiplier: 0.9 / 1 / 1.15 / 1.3), reduced motion, SFX on/off, today's answer count per profile.
 
-**Content compilation.** Unit seed data (`data/units/uXX.ts`) holds facts with matching traps, concept comparisons, ordered sequences and ÖSYM-style twin questions, all as `LocalizedText` (one string per language). `engine/questionGenerator.ts` turns these into 8 sets × 16 questions with five rotated options and explanations; `diagramQuestionEnricher.ts` adds diagram specs; `langPolish/` applies language-specific wording fixes. Compilation is deterministic, so the same question has the same id and answer key in every session.
+**Content compilation.** Unit seed data (`data/units/uXX.ts`) holds facts with matching traps, concept comparisons, ordered sequences and ÖSYM-style twin questions, all as `LocalizedText` (one string per language). `engine/questionGenerator.ts` turns these into 8 sets × 16 questions with five rotated options and explanations; `diagramQuestionEnricher.ts` adds diagram specs, attaching a unit's generic diagrams only to on-topic questions (at most 2 per figure per set, never to ÖSYM twins or questions with their own figure; placement is decided on the Turkish bank and reused in every language, audit with `scripts/auditDiagramPlacement.ts`); `langPolish/` applies language-specific wording fixes. Compilation is deterministic, so the same question has the same id and answer key in every session.
 
 **3D lab.** `threeScenesData.ts` describes each scene (title, unit, hotspots in all languages); `proceduralBuilders.ts` builds the geometry with Three.js. `Kimya3DLab.tsx` manages renderer lifecycle, WebGL context loss, DPR scaling and theme lighting; `Kimya3DFallbackCanvas.tsx` renders a 2D version with hit-testing when WebGL fails.
 
@@ -271,6 +271,7 @@ The scripts below were used to bootstrap that content from machine translations.
 | `generateStudySlides.ts` | (Guarded) Generated `data/studySlides/*` |
 | `buildMultilingualCurriculum.ts` | Built the translation caches (`scripts/curriculumTranslationsCache.json`, `src/data/i18n/curriculumTranslations.json`) |
 | `patchChemicalTranslations.ts` | (Guarded) Patched chemical terms in those caches |
+| `auditDiagramPlacement.ts` | Per-unit report of where the generic diagrams are attached (topic tier, weak attachments, visual questions) |
 | `verifyBank.ts` | Audits all units, slides, mock exams and compiled questions in 8 languages — run this after any content edit |
 
 Content conventions decided by the project owner:

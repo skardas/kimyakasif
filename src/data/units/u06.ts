@@ -1154,77 +1154,139 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin02",
       "stem": {
-        "tr": "Aşağıdaki bileşik çiftlerinden hangisi arasında Katlı Oranlar Kanunu uygulanabilir?",
-        "en": "Between which of the following pairs of compounds can the Law of Multiple Proportions be applied?",
-        "de": "Zwischen welchen der folgenden Verbindungspaare kann das Gesetz der multiplen Proportionen angewendet werden?",
-        "fr": "Entre quelles paires de composés suivantes la loi des proportions multiples peut-elle être appliquée ?",
-        "ru": "К какой паре соединений применим закон кратных отношений?",
-        "ar": "بين أيّ زوجين من المركبات الآتية يمكن تطبيق قانون النسب المتضاعفة؟",
-        "zh": "下列哪一组化合物之间可以应用倍比定律？",
-        "ku": "Zagona Rêjeyên Pirjimar di navbera kîjan ji van cotên pêkhateyan de dikare were sepandin?"
+        "tr": "X ve Y elementlerinden oluşan XY2 bileşiğinde X kütlesinin Y kütlesine bağlı değişimi grafikte verilmiştir. Bu bileşikle ilgili,\nI. Bileşikte kütlece birleşme oranı mX/mY = 7/8'dir.\nII. 14 g X ile 20 g Y tam verimle tepkimeye girdiğinde en fazla 30 g XY2 oluşur.\nIII. X'in atom kütlesinin Y'nin atom kütlesine oranı 7/8'dir.\nyargılarından hangileri doğrudur?",
+        "en": "The graph shows how the mass of X varies with the mass of Y in the compound XY2 formed by elements X and Y. Which of the following statements about this compound are correct?\nI. The mass combining ratio in the compound is mX/mY = 7/8.\nII. When 14 g of X and 20 g of Y react completely, at most 30 g of XY2 forms.\nIII. The ratio of the atomic mass of X to that of Y is 7/8.",
+        "de": "Das Diagramm zeigt, wie sich in der aus den Elementen X und Y gebildeten Verbindung XY2 die Masse von X mit der Masse von Y ändert. Welche der folgenden Aussagen über diese Verbindung sind richtig?\nI. Das Massenverhältnis in der Verbindung beträgt mX/mY = 7/8.\nII. Reagieren 14 g X und 20 g Y vollständig, entstehen höchstens 30 g XY2.\nIII. Das Verhältnis der Atommasse von X zu der von Y beträgt 7/8.",
+        "fr": "Le graphique montre la variation de la masse de X en fonction de la masse de Y dans le composé XY2 formé des éléments X et Y. Lesquelles des affirmations suivantes sur ce composé sont correctes ?\nI. Le rapport massique de combinaison dans le composé est mX/mY = 7/8.\nII. Lorsque 14 g de X et 20 g de Y réagissent complètement, il se forme au plus 30 g de XY2.\nIII. Le rapport de la masse atomique de X à celle de Y est 7/8.",
+        "ru": "На графике показана зависимость массы X от массы Y в соединении XY2, образованном элементами X и Y. Какие из следующих утверждений об этом соединении верны?\nI. Массовое соотношение элементов в соединении mX/mY = 7/8.\nII. При полном взаимодействии 14 г X и 20 г Y образуется не более 30 г XY2.\nIII. Отношение атомной массы X к атомной массе Y равно 7/8.",
+        "ar": "يبين الرسم البياني تغيّر كتلة X بدلالة كتلة Y في المركب XY2 المكوَّن من العنصرين X وY. أيّ العبارات الآتية عن هذا المركب صحيحة؟\nI. نسبة الاتحاد الكتلية في المركب mX/mY = 7/8.\nII. عند تفاعل 14 g من X مع 20 g من Y تفاعلًا تامًا يتكوّن 30 g من XY2 على الأكثر.\nIII. نسبة الكتلة الذرية لـ X إلى الكتلة الذرية لـ Y تساوي 7/8.",
+        "zh": "图中给出了由元素 X 和 Y 组成的化合物 XY2 中，X 的质量随 Y 的质量的变化。下列关于该化合物的说法中哪些正确？\nI. 化合物中的质量结合比为 mX/mY = 7/8。\nII. 14 g X 与 20 g Y 完全反应，最多生成 30 g XY2。\nIII. X 的原子质量与 Y 的原子质量之比为 7/8。",
+        "ku": "Grafîk nîşan dide ka di pêkhateya XY2 ya ku ji elementên X û Y pêk tê de girseya X bi girseya Y re çawa diguhere. Derbarê vê pêkhateyê de kîjan ji van gotinan rast in?\nI. Di pêkhateyê de rêjeya girseyî ya yekbûnê mX/mY = 7/8 e.\nII. Dema 14 g X û 20 g Y bi tevahî reaksiyonê dikin, herî zêde 30 g XY2 çêdibe.\nIII. Rêjeya girseya atomî ya X bo ya Y 7/8 e."
       },
       "options": [
         {
-          "tr": "CO ve CO2",
-          "en": "CO and CO2",
-          "de": "CO und CO2",
-          "fr": "CO et CO2",
-          "ru": "CO и CO2",
-          "ar": "CO و CO2",
-          "zh": "CO 和 CO2",
-          "ku": "CO û CO2"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "C2H4 ve C3H6",
-          "en": "C2H4 and C3H6",
-          "de": "C2H4 und C3H6",
-          "fr": "C2H4 et C3H6",
-          "ru": "C2H4 и C3H6",
-          "ar": "C2H4 و C3H6",
-          "zh": "C2H4 和 C3H6",
-          "ku": "C2H4 û C3H6"
+          "tr": "Yalnız III",
+          "en": "III only",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅 III",
+          "ku": "Tenê III"
         },
         {
-          "tr": "H2SO4 ve H2SO3",
-          "en": "H2SO4 and H2SO3",
-          "de": "H2SO4 und H2SO3",
-          "fr": "H2SO4 et H2SO3",
-          "ru": "H2SO4 и H2SO3",
-          "ar": "H2SO4 و H2SO3",
-          "zh": "H2SO4 和 H2SO3",
-          "ku": "H2SO4 û H2SO3"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "NaCl ve KBr",
-          "en": "NaCl and KBr",
-          "de": "NaCl und KBr",
-          "fr": "NaCl et KBr",
-          "ru": "NaCl и KBr",
-          "ar": "NaCl و KBr",
-          "zh": "NaCl 和 KBr",
-          "ku": "NaCl û KBr"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "NO ve CO2",
-          "en": "NO and CO2",
-          "de": "NO und CO2",
-          "fr": "NO et CO2",
-          "ru": "NO и CO2",
-          "ar": "NO و CO2",
-          "zh": "NO 和 CO2",
-          "ku": "NO û CO2"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "CO ve CO2 aynı iki elementten oluşur ve basit formülleri farklıdır; sabit C kütlesine karşılık O kütleleri oranı 1/2'dir. C2H4 ve C3H6'nın basit formülü aynıdır (CH2), H2SO4 ve H2SO3 üç element içerir, NaCl-KBr ve NO-CO2 ise farklı elementlerden oluşur.",
-        "en": "CO and CO2 are made of the same two elements and have different simple formulas; for a fixed mass of C, the ratio of the O masses is 1/2. C2H4 and C3H6 have the same simple formula (CH2), H2SO4 and H2SO3 contain three elements, and NaCl-KBr and NO-CO2 consist of different elements.",
-        "de": "CO und CO2 bestehen aus denselben zwei Elementen und haben verschiedene einfache Formeln; bei gleicher Masse an C beträgt das Verhältnis der O-Massen 1/2. C2H4 und C3H6 haben dieselbe einfache Formel (CH2), H2SO4 und H2SO3 enthalten drei Elemente, und NaCl-KBr sowie NO-CO2 bestehen aus unterschiedlichen Elementen.",
-        "fr": "CO et CO2 sont formés des deux mêmes éléments et ont des formules simples différentes ; pour une masse fixe de C, le rapport des masses de O est 1/2. C2H4 et C3H6 ont la même formule simple (CH2), H2SO4 et H2SO3 contiennent trois éléments, et NaCl-KBr ainsi que NO-CO2 sont formés d'éléments différents.",
-        "ru": "CO и CO2 состоят из одних и тех же двух элементов и имеют разные простейшие формулы; при одинаковой массе C отношение масс O равно 1/2. У C2H4 и C3H6 одинаковая простейшая формула (CH2), H2SO4 и H2SO3 содержат три элемента, а NaCl-KBr и NO-CO2 состоят из разных элементов.",
-        "ar": "يتكوّن CO وCO2 من العنصرين نفسيهما وصيغتاهما الأوليتان مختلفتان؛ وعند ثبات كتلة C تكون نسبة كتلتي O هي 1/2. أما C2H4 وC3H6 فلهما الصيغة الأولية نفسها (CH2)، وH2SO4 وH2SO3 يحتويان على ثلاثة عناصر، وNaCl-KBr وNO-CO2 يتكونان من عناصر مختلفة.",
-        "zh": "CO 和 CO2 由相同的两种元素组成且最简式不同；C 的质量固定时，O 的质量比为 1/2。C2H4 和 C3H6 的最简式相同(CH2)，H2SO4 和 H2SO3 含三种元素，NaCl 与 KBr、NO 与 CO2 由不同元素组成。",
-        "ku": "CO û CO2 ji heman du elementan pêk tên û formulên wan ên sade cuda ne; li hember girseyeke sabît a C rêjeya girseyên O 1/2 ye. Formula sade ya C2H4 û C3H6 yek e (CH2), H2SO4 û H2SO3 sê element dihewînin, NaCl-KBr û NO-CO2 jî ji elementên cuda pêk tên."
+        "tr": "Grafikteki doğru (8 g Y; 7 g X) ve (16 g Y; 14 g X) noktalarından geçer; X ve Y daima mX/mY = 7/8 oranında birleşir (I doğru). 14 g X ile birleşmek için 16 g Y gerekir; 20 g Y'nin 4 g'ı artar ve 14 + 16 = 30 g XY2 oluşur (II doğru). Formül XY2 olduğundan mX/mY = AX / (2 · AY) = 7/8 → AX/AY = 7/4'tür; kütle oranını doğrudan atom kütlesi oranı sanmak hatadır (III yanlış).",
+        "en": "The line in the graph passes through (8 g Y; 7 g X) and (16 g Y; 14 g X); X and Y always combine in the ratio mX/mY = 7/8 (I correct). 14 g of X needs 16 g of Y; 4 g of the 20 g Y is left over and 14 + 16 = 30 g of XY2 forms (II correct). Since the formula is XY2, mX/mY = AX / (2 · AY) = 7/8 → AX/AY = 7/4; taking the mass ratio directly as the atomic-mass ratio is wrong (III incorrect).",
+        "de": "Die Gerade im Diagramm verläuft durch (8 g Y; 7 g X) und (16 g Y; 14 g X); X und Y verbinden sich stets im Verhältnis mX/mY = 7/8 (I richtig). 14 g X benötigen 16 g Y; von 20 g Y bleiben 4 g übrig, und es entstehen 14 + 16 = 30 g XY2 (II richtig). Da die Formel XY2 lautet, gilt mX/mY = AX / (2 · AY) = 7/8 → AX/AY = 7/4; das Massenverhältnis direkt als Atommassenverhältnis zu nehmen, ist falsch (III falsch).",
+        "fr": "La droite du graphique passe par (8 g de Y ; 7 g de X) et (16 g de Y ; 14 g de X) ; X et Y se combinent toujours dans le rapport mX/mY = 7/8 (I correcte). 14 g de X nécessitent 16 g de Y ; sur 20 g de Y, 4 g restent en excès et il se forme 14 + 16 = 30 g de XY2 (II correcte). La formule étant XY2, mX/mY = AX / (2 · AY) = 7/8 → AX/AY = 7/4 ; prendre le rapport massique pour le rapport des masses atomiques est une erreur (III fausse).",
+        "ru": "Прямая на графике проходит через точки (8 г Y; 7 г X) и (16 г Y; 14 г X); X и Y всегда соединяются в отношении mX/mY = 7/8 (I верно). Для 14 г X нужно 16 г Y; из 20 г Y остаётся 4 г, и образуется 14 + 16 = 30 г XY2 (II верно). Так как формула XY2, mX/mY = AX / (2 · AY) = 7/8 → AX/AY = 7/4; принимать массовое отношение за отношение атомных масс неверно (III неверно).",
+        "ar": "يمر المستقيم في الرسم بالنقطتين (8 g من Y؛ 7 g من X) و(16 g من Y؛ 14 g من X)، فيتحد X وY دائمًا بالنسبة mX/mY = 7/8 (I صحيحة). يلزم 14 g من X مقدار 16 g من Y، فيتبقى 4 g من أصل 20 g من Y ويتكوّن 14 + 16 = 30 g من XY2 (II صحيحة). وبما أن الصيغة XY2 فإن mX/mY = AX / (2 · AY) = 7/8 ← AX/AY = 7/4؛ واعتبار النسبة الكتلية نسبةً للكتل الذرية مباشرة خطأ (III خاطئة).",
+        "zh": "图中直线经过 (8 g Y；7 g X) 和 (16 g Y；14 g X)，X 与 Y 总是按 mX/mY = 7/8 结合（I 正确）。14 g X 需要 16 g Y，20 g Y 中剩余 4 g，生成 14 + 16 = 30 g XY2（II 正确）。化学式为 XY2，所以 mX/mY = AX / (2 · AY) = 7/8 → AX/AY = 7/4；把质量比直接当作原子质量比是错误的（III 错误）。",
+        "ku": "Xeta di grafîkê de di xalên (8 g Y; 7 g X) û (16 g Y; 14 g X) re derbas dibe; X û Y her tim bi rêjeya mX/mY = 7/8 dibin yek (I rast e). Ji bo 14 g X 16 g Y lazim e; ji 20 g Y 4 g dimîne û 14 + 16 = 30 g XY2 çêdibe (II rast e). Ji ber ku formul XY2 ye, mX/mY = AX / (2 · AY) = 7/8 → AX/AY = 7/4; rêjeya girseyî rasterast wekî rêjeya girseya atomî girtin xelet e (III xelet e)."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Y kütlesi (g)",
+          "en": "Mass of Y (g)",
+          "de": "Masse von Y (g)",
+          "fr": "Masse de Y (g)",
+          "ru": "Масса Y (г)",
+          "ar": "كتلة Y (g)",
+          "zh": "Y 的质量 (g)",
+          "ku": "Girseya Y (g)"
+        },
+        "yLabel": {
+          "tr": "X kütlesi (g)",
+          "en": "Mass of X (g)",
+          "de": "Masse von X (g)",
+          "fr": "Masse de X (g)",
+          "ru": "Масса X (г)",
+          "ar": "كتلة X (g)",
+          "zh": "X 的质量 (g)",
+          "ku": "Girseya X (g)"
+        },
+        "xMax": 20,
+        "yMax": 18,
+        "xTicks": [
+          8,
+          16
+        ],
+        "yTicks": [
+          7,
+          14
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                18,
+                15.75
+              ]
+            ],
+            "label": "XY₂"
+          }
+        ],
+        "markers": [
+          {
+            "x": 8,
+            "y": 7,
+            "label": "",
+            "guides": true
+          },
+          {
+            "x": 16,
+            "y": 14,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
@@ -1306,14 +1368,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin04",
       "stem": {
-        "tr": "Azot ve oksijenden oluşan X ve Y bileşiklerinin bileşimi şöyledir: X bileşiğinin bir örneğinde 7 g N ile 4 g O, Y bileşiğinin bir örneğinde 21 g N ile 24 g O bulunmaktadır. Eşit kütlede azotla birleşen oksijen kütleleri karşılaştırıldığında, Y'deki oksijen kütlesinin X'teki oksijen kütlesine oranı kaçtır?",
-        "en": "The compositions of compounds X and Y, both made of nitrogen and oxygen, are: a sample of X contains 7 g N and 4 g O; a sample of Y contains 21 g N and 24 g O. Comparing the masses of oxygen combined with equal masses of nitrogen, what is the ratio of the oxygen mass in Y to that in X?",
-        "de": "Die Verbindungen X und Y bestehen aus Stickstoff und Sauerstoff: Eine Probe von X enthält 7 g N und 4 g O, eine Probe von Y enthält 21 g N und 24 g O. Vergleicht man die Sauerstoffmassen, die sich mit gleichen Stickstoffmassen verbinden, welches Verhältnis hat die Sauerstoffmasse in Y zu der in X?",
-        "fr": "Les composés X et Y sont formés d’azote et d’oxygène : un échantillon de X contient 7 g de N et 4 g de O ; un échantillon de Y contient 21 g de N et 24 g de O. En comparant les masses d’oxygène combinées à des masses égales d’azote, quel est le rapport de la masse d’oxygène dans Y à celle dans X ?",
-        "ru": "Соединения X и Y состоят из азота и кислорода: образец X содержит 7 г N и 4 г O, образец Y — 21 г N и 24 г O. Если сравнить массы кислорода, соединяющиеся с равными массами азота, каково отношение массы кислорода в Y к массе кислорода в X?",
-        "ar": "يتكوّن المركبان X وY من النيتروجين والأكسجين: تحتوي عينة من X على 7 g من N و4 g من O، وتحتوي عينة من Y على 21 g من N و24 g من O. عند مقارنة كتل الأكسجين المتحدة مع كتل متساوية من النيتروجين، ما نسبة كتلة الأكسجين في Y إلى كتلته في X؟",
-        "zh": "化合物 X 和 Y 都由氮和氧组成：X 的一份样品含 7 g N 和 4 g O，Y 的一份样品含 21 g N 和 24 g O。比较与等质量氮化合的氧的质量，Y 中氧的质量与 X 中氧的质量之比是多少？",
-        "ku": "Pêkhatina pêkhateyên X û Y ku ji azot û oksîjenê pêk tên ev e: nimûneyeke pêkhateya X 7 g N û 4 g O, nimûneyeke pêkhateya Y jî 21 g N û 24 g O dihewîne. Dema girseyên oksîjenê yên ku bi girseyên wekhev ên azotê re yek dibin tên berhevdan, rêjeya girseya oksîjenê ya di Y de li hember girseya oksîjenê ya di X de çend e?"
+        "tr": "Azot ve oksijenden oluşan X ve Y bileşiklerinin birer örneğindeki element kütleleri tabloda verilmiştir. Eşit kütlede azotla birleşen oksijen kütleleri karşılaştırıldığında, Y'deki oksijen kütlesinin X'teki oksijen kütlesine oranı kaçtır?",
+        "en": "The table gives the masses of the elements in one sample each of compounds X and Y, both made of nitrogen and oxygen. Comparing the masses of oxygen that combine with equal masses of nitrogen, what is the ratio of the oxygen mass in Y to that in X?",
+        "de": "Die Tabelle gibt die Elementmassen in je einer Probe der Verbindungen X und Y an, die beide aus Stickstoff und Sauerstoff bestehen. Vergleicht man die Sauerstoffmassen, die sich mit gleichen Stickstoffmassen verbinden: Wie groß ist das Verhältnis der Sauerstoffmasse in Y zu der in X?",
+        "fr": "Le tableau donne les masses des éléments dans un échantillon de chacun des composés X et Y, formés d'azote et d'oxygène. En comparant les masses d'oxygène combinées à une même masse d'azote, quel est le rapport de la masse d'oxygène dans Y à celle dans X ?",
+        "ru": "В таблице приведены массы элементов в образцах соединений X и Y, состоящих из азота и кислорода. Если сравнить массы кислорода, соединяющиеся с одинаковой массой азота, чему равно отношение массы кислорода в Y к массе кислорода в X?",
+        "ar": "يبين الجدول كتل العناصر في عينة من كل من المركبين X وY المكوَّنين من النيتروجين والأكسجين. عند مقارنة كتل الأكسجين المتحدة مع كتل متساوية من النيتروجين، ما نسبة كتلة الأكسجين في Y إلى كتلته في X؟",
+        "zh": "表中给出了由氮和氧组成的化合物 X、Y 各一份样品中元素的质量。比较与等质量氮结合的氧的质量，Y 中氧的质量与 X 中氧的质量之比是多少？",
+        "ku": "Di tabloyê de girseyên elementan ên di nimûneyek ji her yek ji pêkhateyên X û Y de, ku ji azot û oksîjenê pêk tên, hatine dayîn. Dema girseyên oksîjenê yên ku bi girseyên wekhev ên azotê re dibin yek tên berhevkirin, rêjeya girseya oksîjenê ya di Y de bo ya di X de çend e?"
       },
       "options": [
         {
@@ -1377,6 +1439,53 @@ export const unit06: ChemistryUnitSeedData = {
         "ar": "نساوي أولًا كتلتي النيتروجين: في X تتحد 7 g من N مع 4 g من O. وفي Y تتحد 21 g من N مع 24 g من O، أي تتحد 7 g من N مع 24/3 = 8 g من O. النسبة mO(Y)/mO(X) = 8/4 = 2 (X = N2O وY = NO). وأخذ 4/24 مباشرة دون مساواة النيتروجين يعطي 1/6، وقلب النسبة يعطي 1/2؛ وكلاهما خطأ.",
         "zh": "先使氮的质量相等：X 中 7 g N 与 4 g O 化合。Y 中 21 g N 与 24 g O 化合，则 7 g N 与 24/3 = 8 g O 化合。比值 mO(Y)/mO(X) = 8/4 = 2(X = N2O，Y = NO)。不使氮的质量相等而直接取 4/24 得 1/6，把比值颠倒得 1/2，都是错误的。",
         "ku": "Pêşî girseyên azotê tên wekhevkirin: di X de 7 g N bi 4 g O re yek dibe. Ji ber ku di Y de 21 g N bi 24 g O re yek dibe, 7 g N bi 24/3 = 8 g O re yek dibe. Rêje mO(Y)/mO(X) = 8/4 = 2 ye (X = N2O, Y = NO). Heke bêyî wekhevkirina azotê rasterast 4/24 were girtin 1/6, heke rêje berevajî were danîn 1/2 tê dîtin; her du jî şaş in."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Bileşik",
+            "en": "Compound",
+            "de": "Verbindung",
+            "fr": "Composé",
+            "ru": "Соединение",
+            "ar": "المركب",
+            "zh": "化合物",
+            "ku": "Pêkhate"
+          },
+          {
+            "tr": "N kütlesi (g)",
+            "en": "Mass of N (g)",
+            "de": "Masse N (g)",
+            "fr": "Masse de N (g)",
+            "ru": "Масса N (г)",
+            "ar": "كتلة N (g)",
+            "zh": "N 的质量 (g)",
+            "ku": "Girseya N (g)"
+          },
+          {
+            "tr": "O kütlesi (g)",
+            "en": "Mass of O (g)",
+            "de": "Masse O (g)",
+            "fr": "Masse de O (g)",
+            "ru": "Масса O (г)",
+            "ar": "كتلة O (g)",
+            "zh": "O 的质量 (g)",
+            "ku": "Girseya O (g)"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            "7",
+            "4"
+          ],
+          [
+            "Y",
+            "21",
+            "24"
+          ]
+        ]
       }
     },
     {
@@ -1534,35 +1643,45 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin07",
       "stem": {
-        "tr": "X + 2Y → Z + 2T tepkimesinde 6 g X tamamen harcanarak 11 g Z ve 9 g T oluşmaktadır. Bu tepkimede harcanan Y kütlesi kaç gramdır?",
-        "en": "In the reaction X + 2Y → Z + 2T, 6 g of X is completely consumed and 11 g of Z and 9 g of T are formed. What mass of Y, in grams, is consumed?",
-        "de": "Bei der Reaktion X + 2Y → Z + 2T werden 6 g X vollständig verbraucht und es entstehen 11 g Z und 9 g T. Wie viel Gramm Y werden verbraucht?",
-        "fr": "Dans la réaction X + 2Y → Z + 2T, 6 g de X sont entièrement consommés et il se forme 11 g de Z et 9 g de T. Quelle masse de Y, en grammes, est consommée ?",
-        "ru": "В реакции X + 2Y → Z + 2T полностью расходуется 6 г X и образуются 11 г Z и 9 г T. Какая масса Y (в граммах) израсходована?",
-        "ar": "في التفاعل X + 2Y → Z + 2T يُستهلك 6 g من X كليًا ويتكوّن 11 g من Z و9 g من T. كم غرامًا من Y استُهلك؟",
-        "zh": "在反应 X + 2Y → Z + 2T 中，6 g X 完全消耗，生成 11 g Z 和 9 g T。消耗了多少克 Y？",
-        "ku": "Di reaksiyona X + 2Y → Z + 2T de 6 g X bi tevahî tê xerckirin û 11 g Z û 9 g T çêdibin. Girseya Y ya ku di vê reaksiyonê de tê xerckirin çend gram e?"
+        "tr": "Kapalı bir kapta X ve Y maddeleri tepkimeye girerek Z ve T maddelerini oluşturuyor. Maddelerin tepkimeden önceki ve sonraki kütleleri tabloda verilmiştir. Tabloda m ile gösterilen Z kütlesi kaç gramdır?",
+        "en": "In a closed container, substances X and Y react to form substances Z and T. The table gives the masses of the substances before and after the reaction. What is the mass of Z, shown as m in the table, in grams?",
+        "de": "In einem geschlossenen Gefäß reagieren die Stoffe X und Y zu den Stoffen Z und T. Die Tabelle gibt die Massen der Stoffe vor und nach der Reaktion an. Wie viel Gramm beträgt die in der Tabelle mit m bezeichnete Masse von Z?",
+        "fr": "Dans un récipient fermé, les substances X et Y réagissent pour former les substances Z et T. Le tableau donne les masses des substances avant et après la réaction. Quelle est, en grammes, la masse de Z notée m dans le tableau ?",
+        "ru": "В закрытом сосуде вещества X и Y реагируют с образованием веществ Z и T. В таблице приведены массы веществ до и после реакции. Чему равна масса Z, обозначенная в таблице буквой m, в граммах?",
+        "ar": "في وعاء مغلق تتفاعل المادتان X وY لتكوين المادتين Z وT. يبين الجدول كتل المواد قبل التفاعل وبعده. كم غرامًا كتلة Z المشار إليها في الجدول بالرمز m؟",
+        "zh": "在密闭容器中，物质 X 与 Y 反应生成物质 Z 和 T。表中给出了反应前后各物质的质量。表中用 m 表示的 Z 的质量是多少克？",
+        "ku": "Di firaxeke girtî de madeyên X û Y reaksiyonê dikin û madeyên Z û T çêdikin. Di tabloyê de girseyên madeyan ên berî û piştî reaksiyonê hatine dayîn. Girseya Z ya ku di tabloyê de bi m hatiye nîşankirin çend gram e?"
       },
       "options": [
         {
-          "tr": "7",
-          "en": "7",
-          "de": "7",
-          "fr": "7",
-          "ru": "7",
-          "ar": "7",
-          "zh": "7",
-          "ku": "7"
+          "tr": "5",
+          "en": "5",
+          "de": "5",
+          "fr": "5",
+          "ru": "5",
+          "ar": "5",
+          "zh": "5",
+          "ku": "5"
         },
         {
-          "tr": "14",
-          "en": "14",
-          "de": "14",
-          "fr": "14",
-          "ru": "14",
-          "ar": "14",
-          "zh": "14",
-          "ku": "14"
+          "tr": "11",
+          "en": "11",
+          "de": "11",
+          "fr": "11",
+          "ru": "11",
+          "ar": "11",
+          "zh": "11",
+          "ku": "11"
+        },
+        {
+          "tr": "15",
+          "en": "15",
+          "de": "15",
+          "fr": "15",
+          "ru": "15",
+          "ar": "15",
+          "zh": "15",
+          "ku": "15"
         },
         {
           "tr": "20",
@@ -1575,36 +1694,83 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "20"
         },
         {
-          "tr": "26",
-          "en": "26",
-          "de": "26",
-          "fr": "26",
-          "ru": "26",
-          "ar": "26",
-          "zh": "26",
-          "ku": "26"
-        },
-        {
-          "tr": "28",
-          "en": "28",
-          "de": "28",
-          "fr": "28",
-          "ru": "28",
-          "ar": "28",
-          "zh": "28",
-          "ku": "28"
+          "tr": "24",
+          "en": "24",
+          "de": "24",
+          "fr": "24",
+          "ru": "24",
+          "ar": "24",
+          "zh": "24",
+          "ku": "24"
         }
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Kütlenin korunumuna göre girenlerin toplam kütlesi ürünlerinkine eşittir: 6 + mY = 11 + 9 → mY = 14 g. Katsayılar mol oranını gösterir; kütle hesabında 14 sayısını 2'ye bölmek (7) ya da 2 ile çarpmak (28) hatadır. 20, X'in kütlesini çıkarmayı unutmakla; 26 ise tüm kütleleri toplamakla bulunur.",
-        "en": "By conservation of mass, the total mass of reactants equals that of products: 6 + mY = 11 + 9 → mY = 14 g. Coefficients give the mole ratio; dividing 14 by 2 (7) or multiplying it by 2 (28) in a mass calculation is an error. 20 comes from forgetting to subtract the mass of X, and 26 from adding all the masses.",
-        "de": "Nach der Massenerhaltung ist die Gesamtmasse der Edukte gleich der der Produkte: 6 + mY = 11 + 9 → mY = 14 g. Koeffizienten geben das Stoffmengenverhältnis an; 14 durch 2 zu teilen (7) oder mit 2 zu multiplizieren (28) ist bei einer Massenrechnung falsch. 20 erhält man, wenn man vergisst, die Masse von X abzuziehen, 26 durch Addition aller Massen.",
-        "fr": "Selon la conservation de la masse, la masse totale des réactifs est égale à celle des produits : 6 + mY = 11 + 9 → mY = 14 g. Les coefficients donnent le rapport molaire ; diviser 14 par 2 (7) ou le multiplier par 2 (28) dans un calcul de masse est une erreur. 20 vient de l’oubli de soustraire la masse de X, et 26 de l’addition de toutes les masses.",
-        "ru": "По закону сохранения массы общая масса реагентов равна массе продуктов: 6 + mY = 11 + 9 → mY = 14 г. Коэффициенты показывают мольное отношение; делить 14 на 2 (7) или умножать на 2 (28) в расчёте масс — ошибка. 20 получается, если забыть вычесть массу X, 26 — если сложить все массы.",
-        "ar": "وفق قانون حفظ الكتلة تساوي الكتلة الكلية للمتفاعلات كتلة النواتج: 6 + mY = 11 + 9 → mY = 14 g. المعاملات تعطي نسبة المولات، لذا فإن قسمة 14 على 2 (7) أو ضربها في 2 (28) في حساب الكتلة خطأ. والقيمة 20 تنتج عن نسيان طرح كتلة X، و26 عن جمع كل الكتل.",
-        "zh": "根据质量守恒，反应物总质量等于生成物总质量：6 + mY = 11 + 9 → mY = 14 g。系数表示物质的量之比；在质量计算中把 14 除以 2(7)或乘以 2(28)都是错误的。20 是忘记减去 X 的质量，26 是把所有质量相加。",
-        "ku": "Li gorî parastina girseyê, girseya giştî ya reaktantan bi ya hilberan re wekhev e: 6 + mY = 11 + 9 → mY = 14 g. Hevber rêjeya molan nîşan didin; di hesabê girseyê de parvekirina 14-an li ser 2-yan (7) an lêxistina wê bi 2-yan (28) şaş e. 20 bi jibîrkirina derxistina girseya X, 26 jî bi berhevkirina hemû girseyan tê dîtin."
+        "tr": "Kapalı kapta toplam kütle korunur. Başlangıçta 10 + 14 = 24 g madde vardır; sonunda 4 g artan X, m gram Z ve 9 g T bulunur: 4 + m + 9 = 24 → m = 11 g. Aynı sonuç harcanan kütlelerden de bulunur: (10 − 4) + 14 = 20 g = Z + T → Z = 20 − 9 = 11 g. 15 g sonucu artan X'i hesaba katmamaktan, 20 g harcanan kütlelerin toplamını Z sanmaktan, 24 g ise toplam kütlenin tamamını Z'ye vermekten gelir.",
+        "en": "In a closed container the total mass is conserved. Initially there are 10 + 14 = 24 g; at the end there are 4 g of excess X, m g of Z and 9 g of T: 4 + m + 9 = 24 → m = 11 g. The same follows from the consumed masses: (10 − 4) + 14 = 20 g = Z + T → Z = 20 − 9 = 11 g. 15 g comes from ignoring the excess X, 20 g from taking the total consumed mass as Z, and 24 g from assigning the whole mass to Z.",
+        "de": "Im geschlossenen Gefäß bleibt die Gesamtmasse erhalten. Anfangs sind 10 + 14 = 24 g vorhanden; am Ende 4 g überschüssiges X, m g Z und 9 g T: 4 + m + 9 = 24 → m = 11 g. Dasselbe folgt aus den verbrauchten Massen: (10 − 4) + 14 = 20 g = Z + T → Z = 20 − 9 = 11 g. 15 g ergibt sich, wenn man das überschüssige X übersieht, 20 g, wenn man die verbrauchte Gesamtmasse für Z hält, und 24 g, wenn man Z die gesamte Masse zuschreibt.",
+        "fr": "Dans un récipient fermé, la masse totale se conserve. Au départ, il y a 10 + 14 = 24 g ; à la fin, 4 g de X en excès, m g de Z et 9 g de T : 4 + m + 9 = 24 → m = 11 g. On retrouve ce résultat avec les masses consommées : (10 − 4) + 14 = 20 g = Z + T → Z = 20 − 9 = 11 g. 15 g vient de l'oubli du X en excès, 20 g de la confusion entre la masse consommée totale et Z, et 24 g de l'attribution de toute la masse à Z.",
+        "ru": "В закрытом сосуде общая масса сохраняется. В начале было 10 + 14 = 24 г; в конце — 4 г избытка X, m г Z и 9 г T: 4 + m + 9 = 24 → m = 11 г. То же получается из израсходованных масс: (10 − 4) + 14 = 20 г = Z + T → Z = 20 − 9 = 11 г. 15 г получается, если не учесть избыток X, 20 г — если принять всю израсходованную массу за Z, а 24 г — если отнести к Z всю массу.",
+        "ar": "في الوعاء المغلق تُحفظ الكتلة الكلية. في البداية توجد 10 + 14 = 24 g، وفي النهاية يوجد 4 g من X الفائض وm غرامًا من Z و9 g من T: 4 + m + 9 = 24 ← m = 11 g. وتُستنتج النتيجة نفسها من الكتل المستهلكة: (10 − 4) + 14 = 20 g = Z + T ← Z = 20 − 9 = 11 g. الناتج 15 g يأتي من إهمال X الفائض، و20 g من اعتبار مجموع الكتل المستهلكة كتلةً لـ Z، و24 g من نسبة الكتلة كلها إلى Z.",
+        "zh": "密闭容器中总质量守恒。反应前共有 10 + 14 = 24 g；反应后有 4 g 剩余的 X、m g Z 和 9 g T：4 + m + 9 = 24 → m = 11 g。由消耗的质量也可得出：(10 − 4) + 14 = 20 g = Z + T → Z = 20 − 9 = 11 g。15 g 是忽略了剩余的 X，20 g 是把消耗的总质量当成 Z，24 g 是把全部质量都算作 Z。",
+        "ku": "Di firaxeke girtî de girseya giştî tê parastin. Di destpêkê de 10 + 14 = 24 g made heye; di dawiyê de 4 g X ya mayî, m g Z û 9 g T hene: 4 + m + 9 = 24 → m = 11 g. Heman encam ji girseyên xerckirî jî tê dîtin: (10 − 4) + 14 = 20 g = Z + T → Z = 20 − 9 = 11 g. Encama 15 g ji nehesibandina X ya mayî, 20 g ji girtina girseya xerckirî ya giştî wekî Z, 24 g jî ji dayîna hemû girseyê bo Z tê."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Madde",
+            "en": "Substance",
+            "de": "Stoff",
+            "fr": "Substance",
+            "ru": "Вещество",
+            "ar": "المادة",
+            "zh": "物质",
+            "ku": "Made"
+          },
+          {
+            "tr": "Tepkimeden önce (g)",
+            "en": "Before reaction (g)",
+            "de": "Vor der Reaktion (g)",
+            "fr": "Avant la réaction (g)",
+            "ru": "До реакции (г)",
+            "ar": "قبل التفاعل (g)",
+            "zh": "反应前 (g)",
+            "ku": "Berî reaksiyonê (g)"
+          },
+          {
+            "tr": "Tepkimeden sonra (g)",
+            "en": "After reaction (g)",
+            "de": "Nach der Reaktion (g)",
+            "fr": "Après la réaction (g)",
+            "ru": "После реакции (г)",
+            "ar": "بعد التفاعل (g)",
+            "zh": "反应后 (g)",
+            "ku": "Piştî reaksiyonê (g)"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            "10",
+            "4"
+          ],
+          [
+            "Y",
+            "14",
+            "0"
+          ],
+          [
+            "Z",
+            "0",
+            "m"
+          ],
+          [
+            "T",
+            "0",
+            "9"
+          ]
+        ]
       }
     },
     {
@@ -1686,14 +1852,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin09",
       "stem": {
-        "tr": "Bir X atomunun gerçek kütlesi 4,0x10^-23 g'dır. Buna göre 12 g X elementi kaç mol X atomu içerir? (NA = 6,0x10^23)",
+        "tr": "Bir X atomunun gerçek kütlesi 4,0x10^-23 g'dır. 12 g X elementi kaç mol X atomu içerir? (NA = 6,0x10^23)",
         "en": "The actual mass of one X atom is 4.0x10^-23 g. How many moles of X atoms are there in 12 g of element X? (NA = 6.0x10^23)",
         "de": "Die tatsächliche Masse eines X-Atoms beträgt 4,0x10^-23 g. Wie viel Mol X-Atome enthalten 12 g des Elements X? (NA = 6,0x10^23)",
         "fr": "La masse réelle d’un atome X est 4,0x10^-23 g. Combien de moles d’atomes X contiennent 12 g de l’élément X ? (NA = 6,0x10^23)",
         "ru": "Истинная масса одного атома X равна 4,0x10^-23 г. Сколько моль атомов X содержится в 12 г элемента X? (NA = 6,0x10^23)",
         "ar": "الكتلة الحقيقية لذرة X الواحدة 4.0x10^-23 g. كم مولًا من ذرات X يحتوي 12 g من العنصر X؟ (NA = 6.0x10^23)",
         "zh": "一个 X 原子的实际质量为 4.0x10^-23 g。12 g 元素 X 中含有多少摩尔 X 原子？(NA = 6.0x10^23)",
-        "ku": "Girseya rastîn a atomeke X 4,0x10^-23 g e. Li gorî vê, 12 g elementa X çend mol atomên X dihewîne? (NA = 6,0x10^23)"
+        "ku": "Girseya rastîn a atomeke X 4,0x10^-23 g e. 12 g elementa X çend mol atomên X dihewîne? (NA = 6,0x10^23)"
       },
       "options": [
         {
@@ -1762,14 +1928,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin10",
       "stem": {
-        "tr": "Bir küp şeker yaklaşık 3,42 g sakkaroz (C12H22O11) içermektedir. Buna göre bir küp şekerdeki karbon atomu sayısı yaklaşık kaçtır? (H: 1, C: 12, O: 16; NA = 6,0x10^23)",
+        "tr": "Bir küp şeker yaklaşık 3,42 g sakkaroz (C12H22O11) içermektedir. Bir küp şekerdeki karbon atomu sayısı yaklaşık kaçtır? (H: 1, C: 12, O: 16; NA = 6,0x10^23)",
         "en": "A sugar cube contains about 3.42 g of sucrose (C12H22O11). Approximately how many carbon atoms are there in one sugar cube? (H: 1, C: 12, O: 16; NA = 6.0x10^23)",
         "de": "Ein Zuckerwürfel enthält etwa 3,42 g Saccharose (C12H22O11). Wie viele Kohlenstoffatome enthält ein Zuckerwürfel ungefähr? (H: 1, C: 12, O: 16; NA = 6,0x10^23)",
         "fr": "Un morceau de sucre contient environ 3,42 g de saccharose (C12H22O11). Combien d’atomes de carbone contient environ un morceau de sucre ? (H : 1, C : 12, O : 16 ; NA = 6,0x10^23)",
         "ru": "Кусочек сахара содержит около 3,42 г сахарозы (C12H22O11). Сколько примерно атомов углерода в одном кусочке сахара? (H: 1, C: 12, O: 16; NA = 6,0x10^23)",
         "ar": "يحتوي مكعب سكر على نحو 3.42 g من السكروز (C12H22O11). كم عدد ذرات الكربون تقريبًا في مكعب سكر واحد؟ (H: 1، C: 12، O: 16؛ NA = 6.0x10^23)",
         "zh": "一块方糖约含 3.42 g 蔗糖(C12H22O11)。一块方糖中大约含有多少个碳原子？(H: 1, C: 12, O: 16；NA = 6.0x10^23)",
-        "ku": "Perçeyek şekirê kûpî nêzîkî 3,42 g sakaroz (C12H22O11) dihewîne. Li gorî vê, hejmara atomên karbonê di perçeyek şekirê kûpî de nêzîkî çend e? (H: 1, C: 12, O: 16; NA = 6,0x10^23)"
+        "ku": "Perçeyek şekirê kûpî nêzîkî 3,42 g sakaroz (C12H22O11) dihewîne. Hejmara atomên karbonê di perçeyek şekirê kûpî de nêzîkî çend e? (H: 1, C: 12, O: 16; NA = 6,0x10^23)"
       },
       "options": [
         {
@@ -1838,14 +2004,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin11",
       "stem": {
-        "tr": "Ağzı açık bir erlende bulunan HCl çözeltisine terazi üzerinde bir parça magnezyum şerit atılıyor: Mg(k) + 2HCl(suda) → MgCl2(suda) + H2(g). Tepkime süresince terazide okunan değerin azaldığı gözleniyor. Aynı deney, ağzı lastik tıpayla sıkıca kapatılmış bir erlende tekrarlandığında terazide okunan değer değişmiyor. Buna göre aşağıdaki yargılardan hangileri doğrudur?\nI. Açık erlende okunan kütlenin azalması kütlenin korunumu kanununa aykırı değildir; azalma kaptan çıkan H2 gazından kaynaklanır.\nII. Kapalı erlende her elementin atom sayısı tepkime boyunca korunur.\nIII. Kapalı erlende tepkimeye girenlerin toplam mol sayısı oluşan ürünlerin toplam mol sayısına eşittir.",
+        "tr": "Ağzı açık bir erlende bulunan HCl çözeltisine terazi üzerinde bir parça magnezyum şerit atılıyor: Mg(k) + 2HCl(suda) → MgCl2(suda) + H2(g). Tepkime süresince terazide okunan değerin azaldığı gözleniyor. Aynı deney, ağzı lastik tıpayla sıkıca kapatılmış bir erlende tekrarlandığında terazide okunan değer değişmiyor. Bu deneylerle ilgili aşağıdaki yargılardan hangileri doğrudur?\nI. Açık erlende okunan kütlenin azalması kütlenin korunumu kanununa aykırı değildir; azalma kaptan çıkan H2 gazından kaynaklanır.\nII. Kapalı erlende her elementin atom sayısı tepkime boyunca korunur.\nIII. Kapalı erlende tepkimeye girenlerin toplam mol sayısı oluşan ürünlerin toplam mol sayısına eşittir.",
         "en": "On a balance, a piece of magnesium ribbon is dropped into HCl solution in an open flask: Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g). During the reaction the balance reading decreases. When the same experiment is repeated in a flask tightly closed with a rubber stopper, the reading does not change. Which of the following statements are correct?\nI. The decrease in mass in the open flask does not violate the law of conservation of mass; it is due to H2 gas leaving the flask.\nII. In the closed flask the number of atoms of each element is conserved throughout the reaction.\nIII. In the closed flask the total number of moles of reactants equals the total number of moles of products.",
         "de": "Auf einer Waage wird ein Stück Magnesiumband in HCl-Lösung in einem offenen Erlenmeyerkolben gegeben: Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g). Während der Reaktion nimmt die Anzeige ab. Wird derselbe Versuch in einem mit Gummistopfen dicht verschlossenen Kolben wiederholt, ändert sich die Anzeige nicht. Welche der folgenden Aussagen sind richtig?\nI. Die Massenabnahme im offenen Kolben widerspricht nicht dem Massenerhaltungsgesetz; sie kommt vom entweichenden H2-Gas.\nII. Im geschlossenen Kolben bleibt die Atomzahl jedes Elements während der Reaktion erhalten.\nIII. Im geschlossenen Kolben ist die Gesamtstoffmenge der Edukte gleich der Gesamtstoffmenge der Produkte.",
         "fr": "Sur une balance, on plonge un morceau de ruban de magnésium dans une solution de HCl contenue dans un erlenmeyer ouvert : Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g). Pendant la réaction, l’indication de la balance diminue. Quand on refait l’expérience dans un erlenmeyer fermé hermétiquement par un bouchon en caoutchouc, l’indication ne change pas. Lesquelles des affirmations suivantes sont correctes ?\nI. La diminution de masse dans l’erlenmeyer ouvert ne contredit pas la loi de conservation de la masse ; elle est due au dihydrogène H2 qui s’échappe.\nII. Dans l’erlenmeyer fermé, le nombre d’atomes de chaque élément est conservé pendant la réaction.\nIII. Dans l’erlenmeyer fermé, la quantité de matière totale des réactifs est égale à celle des produits.",
         "ru": "На весах в открытую колбу с раствором HCl бросают кусочек магниевой ленты: Mg(тв) + 2HCl(р-р) → MgCl2(р-р) + H2(г). Во время реакции показание весов уменьшается. Если повторить опыт в колбе, плотно закрытой резиновой пробкой, показание не меняется. Какие из следующих утверждений верны?\nI. Уменьшение массы в открытой колбе не противоречит закону сохранения массы; оно вызвано выходом газа H2 из колбы.\nII. В закрытой колбе число атомов каждого элемента в ходе реакции сохраняется.\nIII. В закрытой колбе общее количество вещества реагентов равно общему количеству вещества продуктов.",
-        "ar": "على ميزان، تُلقى قطعة من شريط المغنيسيوم في محلول HCl داخل دورق مخروطي مفتوح: Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g). أثناء التفاعل تتناقص قراءة الميزان. وعند إعادة التجربة نفسها في دورق مغلق بإحكام بسدادة مطاطية لا تتغير القراءة. أي العبارات الآتية صحيحة؟\nI. نقص الكتلة في الدورق المفتوح لا يخالف قانون حفظ الكتلة، وسببه خروج غاز H2 من الدورق.\nII. في الدورق المغلق يبقى عدد ذرات كل عنصر محفوظًا طوال التفاعل.\nIII. في الدورق المغلق يساوي العدد الكلي لمولات المتفاعلات العدد الكلي لمولات النواتج.",
+        "ar": "على ميزان، تُلقى قطعة من شريط المغنيسيوم في محلول HCl داخل دورق مخروطي مفتوح: Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g). أثناء التفاعل تتناقص قراءة الميزان. وعند إعادة التجربة نفسها في دورق مغلق بإحكام بسدادة مطاطية لا تتغير القراءة. أيّ العبارات الآتية عن هاتين التجربتين صحيحة؟\nI. نقص الكتلة في الدورق المفتوح لا يخالف قانون حفظ الكتلة، وسببه خروج غاز H2 من الدورق.\nII. في الدورق المغلق يبقى عدد ذرات كل عنصر محفوظًا طوال التفاعل.\nIII. في الدورق المغلق يساوي العدد الكلي لمولات المتفاعلات العدد الكلي لمولات النواتج.",
         "zh": "在天平上，把一段镁条放入敞口锥形瓶中的 HCl 溶液里：Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g)。反应过程中天平示数减小。在用橡胶塞塞紧的锥形瓶中重复同一实验，示数不变。下列说法中哪些正确？\nI. 敞口瓶中质量减小并不违背质量守恒定律，是 H2 逸出造成的。\nII. 在密闭瓶中，反应过程中每种元素的原子数守恒。\nIII. 在密闭瓶中，反应物物质的量总和等于生成物物质的量总和。",
-        "ku": "Li ser terazûyê, perçeyek şerîta magnezyûmê tê avêtin nav çareseriya HCl ya di erlenmeyereke devvekirî de: Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g). Tê dîtin ku di dema reaksiyonê de nirxa ku li ser terazûyê tê xwendin kêm dibe. Dema heman ceribandin di erlenmeyereke ku devê wê bi tipeke lastîkî baş hatiye girtin de tê dubarekirin, nirxa terazûyê naguhere. Li gorî vê, kîjan ji van gotinan rast in?\nI. Kêmbûna girseya ku di erlenmeyera devvekirî de tê xwendin li dijî zagona parastina girseyê nîne; sedema kêmbûnê gaza H2 ye ku ji firaxê derdikeve.\nII. Di erlenmeyera girtî de hejmara atomên her elementê di tevahiya reaksiyonê de tê parastin.\nIII. Di erlenmeyera girtî de hejmara giştî ya molên reaktantan bi hejmara giştî ya molên hilberan re wekhev e."
+        "ku": "Li ser terazûyê, perçeyek şerîta magnezyûmê tê avêtin nav çareseriya HCl ya di erlenmeyereke devvekirî de: Mg(s) + 2HCl(aq) → MgCl2(aq) + H2(g). Tê dîtin ku di dema reaksiyonê de nirxa ku li ser terazûyê tê xwendin kêm dibe. Dema heman ceribandin di erlenmeyereke ku devê wê bi tipeke lastîkî baş hatiye girtin de tê dubarekirin, nirxa terazûyê naguhere. Derbarê van ceribandinan de kîjan ji van gotinan rast in?\nI. Kêmbûna girseya ku di erlenmeyera devvekirî de tê xwendin li dijî zagona parastina girseyê nîne; sedema kêmbûnê gaza H2 ye ku ji firaxê derdikeve.\nII. Di erlenmeyera girtî de hejmara atomên her elementê di tevahiya reaksiyonê de tê parastin.\nIII. Di erlenmeyera girtî de hejmara giştî ya molên reaktantan bi hejmara giştî ya molên hilberan re wekhev e."
       },
       "options": [
         {
@@ -1990,77 +2156,124 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin13",
       "stem": {
-        "tr": "Doğadaki klor atomlarının %75'i 35Cl, %25'i 37Cl izotopudur. İzotopların atom kütleleri kütle numaralarına eşit kabul edilirse klorun ortalama atom kütlesi kaç akb'dir?",
-        "en": "Of the chlorine atoms in nature, 75% are 35Cl and 25% are 37Cl. If the atomic masses of the isotopes are taken equal to their mass numbers, what is the average atomic mass of chlorine in amu?",
-        "de": "Von den natürlichen Chloratomen sind 75 % 35Cl und 25 % 37Cl. Wenn die Atommassen der Isotope gleich ihren Massenzahlen gesetzt werden, wie groß ist die mittlere Atommasse von Chlor in u?",
-        "fr": "Parmi les atomes de chlore naturels, 75 % sont du 35Cl et 25 % du 37Cl. Si l’on prend les masses atomiques des isotopes égales à leurs nombres de masse, quelle est la masse atomique moyenne du chlore, en u ?",
-        "ru": "Из природных атомов хлора 75 % составляет 35Cl и 25 % — 37Cl. Если принять атомные массы изотопов равными их массовым числам, какова средняя атомная масса хлора в а. е. м.?",
-        "ar": "من ذرات الكلور في الطبيعة 75% من النظير 35Cl و25% من النظير 37Cl. إذا اعتُبرت الكتل الذرية للنظائر مساوية لأعداد كتلها، فما متوسط الكتلة الذرية للكلور بوحدة amu؟",
-        "zh": "自然界的氯原子中 75% 为 35Cl，25% 为 37Cl。若把同位素的原子质量看作等于其质量数，氯的平均原子质量是多少 u？",
-        "ku": "Ji atomên klorê yên di xwezayê de %75 îzotopa 35Cl, %25 jî îzotopa 37Cl in. Heke girseyên atomî yên îzotopan bi hejmarên wan ên girseyê re wekhev werin qebûlkirin, girseya atomî ya navînî ya klorê çend akb e?"
+        "tr": "Doğada iki izotopu bulunan X elementinin izotoplarına ait bilgiler tabloda verilmiştir. X'in ortalama atom kütlesi 63,5 akb'dir. Tablodaki a değeri kaçtır?",
+        "en": "The table gives data on the two naturally occurring isotopes of element X. The average atomic mass of X is 63.5 amu. What is the value of a in the table?",
+        "de": "Die Tabelle enthält Angaben zu den beiden natürlich vorkommenden Isotopen des Elements X. Die mittlere Atommasse von X beträgt 63,5 u. Welchen Wert hat a in der Tabelle?",
+        "fr": "Le tableau donne des informations sur les deux isotopes naturels de l'élément X. La masse atomique moyenne de X est 63,5 u. Quelle est la valeur de a dans le tableau ?",
+        "ru": "В таблице приведены данные о двух природных изотопах элемента X. Средняя атомная масса X равна 63,5 а.е.м. Чему равно значение a в таблице?",
+        "ar": "يبين الجدول معلومات عن نظيري العنصر X الموجودين في الطبيعة. متوسط الكتلة الذرية لـ X يساوي 63.5 amu. ما قيمة a في الجدول؟",
+        "zh": "表中给出了元素 X 的两种天然同位素的数据。X 的平均原子质量为 63.5 u。表中 a 的值是多少？",
+        "ku": "Di tabloyê de agahiyên derbarê du îzotopên xwezayî yên elementa X de hatine dayîn. Girseya atomî ya navînî ya X 63,5 akb e. Nirxa a ya di tabloyê de çend e?"
       },
       "options": [
         {
-          "tr": "35,0",
-          "en": "35.0",
-          "de": "35,0",
-          "fr": "35,0",
-          "ru": "35,0",
-          "ar": "35.0",
-          "zh": "35.0",
-          "ku": "35,0"
+          "tr": "25",
+          "en": "25",
+          "de": "25",
+          "fr": "25",
+          "ru": "25",
+          "ar": "25",
+          "zh": "25",
+          "ku": "25"
         },
         {
-          "tr": "35,5",
-          "en": "35.5",
-          "de": "35,5",
-          "fr": "35,5",
-          "ru": "35,5",
-          "ar": "35.5",
-          "zh": "35.5",
-          "ku": "35,5"
+          "tr": "50",
+          "en": "50",
+          "de": "50",
+          "fr": "50",
+          "ru": "50",
+          "ar": "50",
+          "zh": "50",
+          "ku": "50"
         },
         {
-          "tr": "36,0",
-          "en": "36.0",
-          "de": "36,0",
-          "fr": "36,0",
-          "ru": "36,0",
-          "ar": "36.0",
-          "zh": "36.0",
-          "ku": "36,0"
+          "tr": "60",
+          "en": "60",
+          "de": "60",
+          "fr": "60",
+          "ru": "60",
+          "ar": "60",
+          "zh": "60",
+          "ku": "60"
         },
         {
-          "tr": "36,5",
-          "en": "36.5",
-          "de": "36,5",
-          "fr": "36,5",
-          "ru": "36,5",
-          "ar": "36.5",
-          "zh": "36.5",
-          "ku": "36,5"
+          "tr": "75",
+          "en": "75",
+          "de": "75",
+          "fr": "75",
+          "ru": "75",
+          "ar": "75",
+          "zh": "75",
+          "ku": "75"
         },
         {
-          "tr": "37,0",
-          "en": "37.0",
-          "de": "37,0",
-          "fr": "37,0",
-          "ru": "37,0",
-          "ar": "37.0",
-          "zh": "37.0",
-          "ku": "37,0"
+          "tr": "80",
+          "en": "80",
+          "de": "80",
+          "fr": "80",
+          "ru": "80",
+          "ar": "80",
+          "zh": "80",
+          "ku": "80"
         }
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Ortalama atom kütlesi, izotop kütlelerinin bolluk yüzdeleriyle ağırlıklı ortalamasıdır: 0,75 · 35 + 0,25 · 37 = 26,25 + 9,25 = 35,5 akb. 36,0 bolluklar dikkate alınmadan basit ortalama alınarak, 36,5 ise yüzdeler izotoplara ters eşlenerek (0,25 · 35 + 0,75 · 37) bulunur.",
-        "en": "The average atomic mass is the abundance-weighted mean of the isotope masses: 0.75 · 35 + 0.25 · 37 = 26.25 + 9.25 = 35.5 amu. 36.0 is the simple mean ignoring abundances, and 36.5 comes from swapping the percentages (0.25 · 35 + 0.75 · 37).",
-        "de": "Die mittlere Atommasse ist das nach Häufigkeit gewichtete Mittel der Isotopenmassen: 0,75 · 35 + 0,25 · 37 = 26,25 + 9,25 = 35,5 u. 36,0 ist der einfache Mittelwert ohne Häufigkeiten, 36,5 entsteht durch Vertauschen der Prozentsätze (0,25 · 35 + 0,75 · 37).",
-        "fr": "La masse atomique moyenne est la moyenne des masses des isotopes pondérée par leurs abondances : 0,75 · 35 + 0,25 · 37 = 26,25 + 9,25 = 35,5 u. 36,0 est la moyenne simple sans tenir compte des abondances, et 36,5 provient de l’inversion des pourcentages (0,25 · 35 + 0,75 · 37).",
-        "ru": "Средняя атомная масса — это среднее масс изотопов, взвешенное по их распространённости: 0,75 · 35 + 0,25 · 37 = 26,25 + 9,25 = 35,5 а. е. м. 36,0 — простое среднее без учёта распространённости, 36,5 — результат перестановки процентов (0,25 · 35 + 0,75 · 37).",
-        "ar": "متوسط الكتلة الذرية هو المتوسط الموزون لكتل النظائر حسب نسب وفرتها: 0.75 · 35 + 0.25 · 37 = 26.25 + 9.25 = 35.5 amu. والقيمة 36.0 متوسط بسيط يتجاهل الوفرة، و36.5 تنتج عن تبديل النسب المئوية (0.25 · 35 + 0.75 · 37).",
-        "zh": "平均原子质量是按丰度加权的同位素质量平均值：0.75 · 35 + 0.25 · 37 = 26.25 + 9.25 = 35.5 u。36.0 是不考虑丰度的简单平均；36.5 是把百分数对调(0.25 · 35 + 0.75 · 37)得到的。",
-        "ku": "Girseya atomî ya navînî navînka girseyên îzotopan e ku li gorî rêjeyên wan ên pirbûnê hatiye kêşan: 0,75 · 35 + 0,25 · 37 = 26,25 + 9,25 = 35,5 akb. 36,0 bi girtina navînka sade bêyî ku rêjeyên pirbûnê bên hesibandin, 36,5 jî bi berevajî danîna rêjeyên ji sedî li ser îzotopan (0,25 · 35 + 0,75 · 37) tê dîtin."
+        "tr": "Ortalama atom kütlesi, izotop kütlelerinin bolluklarla ağırlıklı ortalamasıdır: 63 · a/100 + 65 · (100 − a)/100 = 63,5 → 6500 − 2a = 6350 → a = 75. Kontrol: 0,75 · 63 + 0,25 · 65 = 47,25 + 16,25 = 63,5 akb. Ortalama hafif izotopa (63) daha yakın olduğundan onun bolluğu %50'den büyük olmalıdır; 25 sonucu yüzdeleri izotoplara ters eşlemekten, 50 ise bollukları eşit sanmaktan gelir (o durumda ortalama 64 akb olurdu).",
+        "en": "The average atomic mass is the abundance-weighted mean of the isotope masses: 63 · a/100 + 65 · (100 − a)/100 = 63.5 → 6500 − 2a = 6350 → a = 75. Check: 0.75 · 63 + 0.25 · 65 = 47.25 + 16.25 = 63.5 amu. Since the average is closer to the lighter isotope (63), its abundance must exceed 50%; 25 comes from matching the percentages to the wrong isotopes, and 50 from assuming equal abundances (which would give an average of 64 amu).",
+        "de": "Die mittlere Atommasse ist der nach Häufigkeit gewichtete Mittelwert der Isotopenmassen: 63 · a/100 + 65 · (100 − a)/100 = 63,5 → 6500 − 2a = 6350 → a = 75. Probe: 0,75 · 63 + 0,25 · 65 = 47,25 + 16,25 = 63,5 u. Da der Mittelwert näher am leichteren Isotop (63) liegt, muss dessen Häufigkeit über 50 % liegen; 25 entsteht durch Vertauschen der Prozentsätze, 50 durch die Annahme gleicher Häufigkeiten (dann wäre der Mittelwert 64 u).",
+        "fr": "La masse atomique moyenne est la moyenne des masses des isotopes pondérée par leurs abondances : 63 · a/100 + 65 · (100 − a)/100 = 63,5 → 6500 − 2a = 6350 → a = 75. Vérification : 0,75 · 63 + 0,25 · 65 = 47,25 + 16,25 = 63,5 u. La moyenne étant plus proche de l'isotope léger (63), son abondance doit dépasser 50 % ; 25 vient d'une inversion des pourcentages, et 50 de l'hypothèse d'abondances égales (la moyenne serait alors 64 u).",
+        "ru": "Средняя атомная масса — это средневзвешенное масс изотопов с учётом их распространённости: 63 · a/100 + 65 · (100 − a)/100 = 63,5 → 6500 − 2a = 6350 → a = 75. Проверка: 0,75 · 63 + 0,25 · 65 = 47,25 + 16,25 = 63,5 а.е.м. Поскольку среднее ближе к лёгкому изотопу (63), его доля должна быть больше 50 %; 25 получается, если перепутать проценты изотопов, а 50 — если считать распространённости равными (тогда среднее было бы 64 а.е.м.).",
+        "ar": "متوسط الكتلة الذرية هو المتوسط الموزون لكتل النظائر بحسب نسب وجودها: 63 · a/100 + 65 · (100 − a)/100 = 63.5 ← 6500 − 2a = 6350 ← a = 75. التحقق: 0.75 · 63 + 0.25 · 65 = 47.25 + 16.25 = 63.5 amu. وبما أن المتوسط أقرب إلى النظير الأخف (63) فلا بد أن تزيد نسبة وجوده على 50%؛ والناتج 25 يأتي من عكس النسب بين النظيرين، و50 من افتراض تساوي النسب (وعندها يكون المتوسط 64 amu).",
+        "zh": "平均原子质量是各同位素质量按丰度的加权平均：63 · a/100 + 65 · (100 − a)/100 = 63.5 → 6500 − 2a = 6350 → a = 75。验算：0.75 · 63 + 0.25 · 65 = 47.25 + 16.25 = 63.5 u。平均值更接近较轻的同位素(63)，所以它的丰度必须大于 50%；25 是把百分比对应反了，50 是误以为丰度相等（那样平均值应为 64 u）。",
+        "ku": "Girseya atomî ya navînî navîniya giranîkirî ya girseyên îzotopan e li gorî rêjeyên wan ên xwezayî: 63 · a/100 + 65 · (100 − a)/100 = 63,5 → 6500 − 2a = 6350 → a = 75. Kontrol: 0,75 · 63 + 0,25 · 65 = 47,25 + 16,25 = 63,5 akb. Ji ber ku navînî nêzîkî îzotopa siviktir (63) ye, divê rêjeya wê ji %50 mezintir be; 25 ji berevajîkirina rêjeyan, 50 jî ji texmîna rêjeyên wekhev tê (wê demê navînî 64 akb dibû)."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "İzotop",
+            "en": "Isotope",
+            "de": "Isotop",
+            "fr": "Isotope",
+            "ru": "Изотоп",
+            "ar": "النظير",
+            "zh": "同位素",
+            "ku": "Îzotop"
+          },
+          {
+            "tr": "Atom kütlesi (akb)",
+            "en": "Atomic mass (amu)",
+            "de": "Atommasse (u)",
+            "fr": "Masse atomique (u)",
+            "ru": "Атомная масса (а.е.м.)",
+            "ar": "الكتلة الذرية (amu)",
+            "zh": "原子质量 (u)",
+            "ku": "Girseya atomî (akb)"
+          },
+          {
+            "tr": "Doğada bulunma (%)",
+            "en": "Natural abundance (%)",
+            "de": "Natürliche Häufigkeit (%)",
+            "fr": "Abondance naturelle (%)",
+            "ru": "Распространённость (%)",
+            "ar": "نسبة الوجود في الطبيعة (%)",
+            "zh": "天然丰度 (%)",
+            "ku": "Rêjeya xwezayî (%)"
+          }
+        ],
+        "rows": [
+          [
+            "⁶³X",
+            "63",
+            "a"
+          ],
+          [
+            "⁶⁵X",
+            "65",
+            "100 − a"
+          ]
+        ]
       }
     },
     {

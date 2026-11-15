@@ -21,6 +21,8 @@ import type { ChemistryUnitSeedData } from '../../data/units/types';
 import type { LanguageCode, QuestionDiagramSpec } from '../../types/chemistry';
 import { ChemicalDiagram, CLOSE_MODAL_I18N } from '../diagrams/ChemicalDiagram';
 import { formatChemText, formatChemBlock } from '../common/ChemFormula';
+import { QuestionFigureView } from '../common/QuestionFigureView';
+import { resolveFigure } from '../../engine/questionGenerator';
 import { redesignStrings } from '../../i18n/redesignStrings';
 import { playCorrect, playWrong } from '../../audio/sfx';
 
@@ -434,6 +436,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                     <span>{s.nextTwinBtn(twinIdx + 1, unit.osymTwins.length)}</span>
                   </button>
                 </div>
+                {currentTwin.figure && <QuestionFigureView figure={resolveFigure(currentTwin.figure, lang)} />}
                 <p className="ky-fs-18 sl-block__strong">
                   <bdi>{formatChemText(currentTwin.stem[lang] || currentTwin.stem.tr)}</bdi>
                 </p>

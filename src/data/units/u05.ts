@@ -172,24 +172,24 @@ export const unit05: ChemistryUnitSeedData = {
         "ku": "Dîoksîda kewkurtê (SO2), trîoksîda kewkurtê (SO3) û dîoksîda nîtrojenê (NO2) gazên ku dibin sedema barana asîdî ne."
       },
       "trap": {
-        "tr": "Asit yağmurlarına atmosferdeki saf oksijen ve azot gazları neden olur.",
-        "en": "Acid rain is caused by pure oxygen and nitrogen gases in the atmosphere.",
-        "de": "Saurer Regen wird durch reine Sauerstoff- und Stickstoffgase in der Atmosphäre verursacht.",
-        "fr": "Les pluies acides sont causées par l’oxygène pur et l’azote présents dans l’atmosphère.",
-        "ru": "Кислотные дожди вызывают содержащиеся в атмосфере чистые кислород и азот.",
-        "ar": "ينتج المطر الحمضي عن غازَي الأكسجين والنيتروجين النقيين في الغلاف الجوي.",
-        "zh": "酸雨是由大气中的纯氧气和氮气引起的。",
-        "ku": "Sedema barana asîdî gazên oksîjen û nîtrojenê yên paqij ên di atmosferê de ne."
+        "tr": "Asit yağmurunun başlıca nedeni, atmosferde derişimi artan CO2'nin yağmur suyunda çözünmesidir.",
+        "en": "The main cause of acid rain is the dissolving in rainwater of CO2, whose atmospheric concentration is rising.",
+        "de": "Hauptursache des sauren Regens ist das Lösen von CO2, dessen Konzentration in der Atmosphäre steigt, im Regenwasser.",
+        "fr": "La cause principale des pluies acides est la dissolution dans l'eau de pluie du CO2, dont la concentration atmosphérique augmente.",
+        "ru": "Главная причина кислотных дождей — растворение в дождевой воде CO2, концентрация которого в атмосфере растёт.",
+        "ar": "السبب الرئيس للمطر الحمضي هو ذوبان CO2، الذي يتزايد تركيزه في الغلاف الجوي، في مياه المطر.",
+        "zh": "酸雨的主要原因是大气中浓度不断升高的 CO2 溶解在雨水中。",
+        "ku": "Sedema sereke ya barana asîdî helbûna CO2 ya ku tîrbûna wê di atmosferê de zêde dibe, di ava baranê de ye."
       },
       "whyTrapIsFalse": {
-        "tr": "O2 ve N2 suyla asit oluşturmaz. Asit yağmuruna, yanma sırasında oluşan SO2, SO3 ve azot oksitlerinin su buharıyla tepkimeye girip H2SO4 ve HNO3 oluşturması yol açar.",
-        "en": "O2 and N2 do not form acids with water. Acid rain is caused by SO2, SO3 and nitrogen oxides formed during combustion, which react with water vapour to give H2SO4 and HNO3.",
-        "de": "O2 und N2 bilden mit Wasser keine Säuren. Saurer Regen entsteht, weil bei Verbrennungen gebildetes SO2, SO3 und Stickoxide mit Wasserdampf zu H2SO4 und HNO3 reagieren.",
-        "fr": "O2 et N2 ne forment pas d'acide avec l'eau. Les pluies acides sont dues au SO2, au SO3 et aux oxydes d'azote formés lors des combustions, qui réagissent avec la vapeur d'eau pour donner H2SO4 et HNO3.",
-        "ru": "O2 и N2 не образуют кислот с водой. Кислотные дожди вызывают SO2, SO3 и оксиды азота, образующиеся при горении: с водяным паром они дают H2SO4 и HNO3.",
-        "ar": "لا يكوّن O2 وN2 أحماضًا مع الماء. ينتج المطر الحمضي عن SO2 وSO3 وأكاسيد النيتروجين المتكوّنة أثناء الاحتراق، إذ تتفاعل مع بخار الماء مكوّنة H2SO4 وHNO3.",
-        "zh": "O2 和 N2 与水不生成酸。酸雨是燃烧产生的 SO2、SO3 和氮氧化物与水蒸气反应生成 H2SO4 和 HNO3 造成的。",
-        "ku": "O2 û N2 bi avê re asîd çênakin. Sedema barana asîdî ew e ku SO2, SO3 û oksîdên nîtrojenê yên di dema şewitînê de çêdibin bi buhara avê re dikevin reaksiyonê û H2SO4 û HNO3 çêdikin."
+        "tr": "CO2'nin çözünmesi yağmurun pH değerini yalnızca yaklaşık 5,6'ya düşürür; bu, kirlenmemiş yağmurun doğal asitliğidir. pH'ı 5,6'nın altına indiren asit yağmuru, yanma sırasında oluşan SO2, SO3 ve azot oksitlerinin su buharıyla H2SO4 ve HNO3 oluşturmasından kaynaklanır.",
+        "en": "Dissolved CO2 lowers the pH of rain only to about 5.6; this is the natural acidity of unpolluted rain. Acid rain, with pH below 5.6, is caused by SO2, SO3 and nitrogen oxides from combustion, which form H2SO4 and HNO3 with water vapour.",
+        "de": "Gelöstes CO2 senkt den pH-Wert des Regens nur auf etwa 5,6; das ist die natürliche Acidität unbelasteten Regens. Saurer Regen mit pH unter 5,6 entsteht durch SO2, SO3 und Stickoxide aus Verbrennungen, die mit Wasserdampf H2SO4 und HNO3 bilden.",
+        "fr": "Le CO2 dissous n'abaisse le pH de la pluie qu'à environ 5,6 : c'est l'acidité naturelle d'une pluie non polluée. Les pluies acides, de pH inférieur à 5,6, sont dues au SO2, au SO3 et aux oxydes d'azote issus des combustions, qui forment H2SO4 et HNO3 avec la vapeur d'eau.",
+        "ru": "Растворённый CO2 снижает pH дождя лишь примерно до 5,6 — это естественная кислотность незагрязнённого дождя. Кислотные дожди с pH ниже 5,6 вызывают SO2, SO3 и оксиды азота от сжигания топлива, которые с водяным паром образуют H2SO4 и HNO3.",
+        "ar": "ذوبان CO2 يخفض pH المطر إلى نحو 5.6 فقط، وهذه هي الحموضة الطبيعية للمطر غير الملوث. أما المطر الحمضي الذي يقل pH له عن 5.6 فسببه SO2 وSO3 وأكاسيد النيتروجين الناتجة عن الاحتراق، إذ تكوّن مع بخار الماء H2SO4 وHNO3.",
+        "zh": "溶解的 CO2 只能使雨水的 pH 降到约 5.6，这是未受污染雨水的天然酸性。pH 低于 5.6 的酸雨是由燃烧产生的 SO2、SO3 和氮氧化物与水蒸气生成 H2SO4 和 HNO3 造成的。",
+        "ku": "Helbûna CO2 pH-ya baranê tenê heta nêzîkî 5,6 kêm dike; ev asîdîbûna xwezayî ya barana neqirêj e. Barana asîdî ya ku pH-ya wê ji 5,6 kêmtir e, ji SO2, SO3 û oksîtên azotê yên di şewitandinê de çêdibin û bi buhara avê re H2SO4 û HNO3 çêdikin, tê."
       }
     },
     {
@@ -238,24 +238,24 @@ export const unit05: ChemistryUnitSeedData = {
         "ku": "Metalên giran (serb Pb, cîwe Hg, kadmiyûm Cd) bi kombûna biyolojîk di zincîra xwarinê de bandora jehrî dikin."
       },
       "trap": {
-        "tr": "Cıva insan vücudunda kolayca parçalanan yararlı bir mineraldir.",
-        "en": "Mercury is a useful mineral that is easily broken down in the human body.",
-        "de": "Quecksilber ist ein nützliches Mineral, das im menschlichen Körper leicht abgebaut wird.",
-        "fr": "Le mercure est un minéral utile qui se décompose facilement dans le corps humain.",
-        "ru": "Ртуть — полезный минерал, который легко разрушается в организме человека.",
-        "ar": "الزئبق معدن مفيد يتفكك بسهولة في جسم الإنسان.",
-        "zh": "汞是一种在人体内容易分解的有益矿物质。",
-        "ku": "Cîwe mîneraleke kêrhatî ye ku di laşê mirov de bi hêsanî perçe dibe."
+        "tr": "Ağır metaller canlı vücudunda zamanla parçalanıp atıldığından besin zincirinin üst basamaklarındaki canlılarda derişimleri azalır.",
+        "en": "Because heavy metals are broken down and excreted by living organisms over time, their concentrations decrease in organisms at higher levels of the food chain.",
+        "de": "Da Schwermetalle im Körper von Lebewesen mit der Zeit abgebaut und ausgeschieden werden, nimmt ihre Konzentration in Lebewesen auf höheren Stufen der Nahrungskette ab.",
+        "fr": "Comme les métaux lourds sont dégradés et éliminés par les êtres vivants au fil du temps, leur concentration diminue chez les organismes situés aux niveaux supérieurs de la chaîne alimentaire.",
+        "ru": "Поскольку тяжёлые металлы со временем расщепляются и выводятся из организма, их концентрация у организмов верхних звеньев пищевой цепи уменьшается.",
+        "ar": "لأن المعادن الثقيلة تتفكك في أجسام الكائنات الحية وتُطرح منها مع الوقت، فإن تراكيزها تقل في الكائنات الموجودة في المستويات العليا من السلسلة الغذائية.",
+        "zh": "由于重金属会在生物体内随时间分解并排出，所以它们在食物链较高营养级生物体内的浓度会降低。",
+        "ku": "Ji ber ku metalên giran bi demê re di laşê zindiyan de tên perçekirin û tên derxistin, di zindiyên qatên jorîn ên zincîra xwarinê de tîrbûna wan kêm dibe."
       },
       "whyTrapIsFalse": {
-        "tr": "Cıva bir elementtir; vücutta parçalanamaz ve kolayca atılamaz. Dokularda birikerek özellikle sinir sistemine zarar veren zehirli bir ağır metaldir, yararlı bir mineral değildir.",
-        "en": "Mercury is an element; it cannot be broken down in the body and is not easily excreted. It is a toxic heavy metal that accumulates in tissues and damages especially the nervous system, not a useful mineral.",
-        "de": "Quecksilber ist ein Element; es kann im Körper nicht abgebaut und nur schwer ausgeschieden werden. Es ist ein giftiges Schwermetall, das sich im Gewebe anreichert und vor allem das Nervensystem schädigt, kein nützliches Mineral.",
-        "fr": "Le mercure est un élément : il ne peut pas être décomposé dans l'organisme et s'élimine difficilement. C'est un métal lourd toxique qui s'accumule dans les tissus et atteint surtout le système nerveux, pas un minéral utile.",
-        "ru": "Ртуть — химический элемент; в организме она не разлагается и плохо выводится. Это токсичный тяжёлый металл, который накапливается в тканях и поражает прежде всего нервную систему, а не полезный минерал.",
-        "ar": "الزئبق عنصر؛ لا يمكن تفكيكه في الجسم ولا يُطرح بسهولة. وهو فلز ثقيل سام يتراكم في الأنسجة ويضر بالجهاز العصبي خاصة، وليس معدنًا مفيدًا.",
-        "zh": "汞是一种元素，在体内不能被分解，也不易排出。它是一种在组织中积累、尤其损害神经系统的有毒重金属，而不是有益的矿物质。",
-        "ku": "Cîwe element e; di laş de perçe nabe û bi hêsanî ji laş dernakeve. Ew metaleke giran a jehrî ye ku di şaneyan de kom dibe û bi taybetî zirarê dide sîstema demaran; ne mîneraleke kêrhatî ye."
+        "tr": "Ağır metaller element oldukları için canlı vücudunda parçalanamaz ve kolayca atılamaz; dokularda birikir. Bu yüzden besin zincirinde üst basamaklara çıkıldıkça derişimleri azalmaz, katlanarak artar (biyolojik birikim).",
+        "en": "Since heavy metals are elements, they cannot be broken down in the body and are not easily excreted; they accumulate in tissues. Therefore their concentration does not decrease up the food chain but multiplies (biomagnification).",
+        "de": "Da Schwermetalle Elemente sind, können sie im Körper nicht abgebaut und nur schwer ausgeschieden werden; sie reichern sich im Gewebe an. Deshalb nimmt ihre Konzentration entlang der Nahrungskette nicht ab, sondern vervielfacht sich (Biomagnifikation).",
+        "fr": "Les métaux lourds étant des éléments, ils ne peuvent pas être dégradés dans l'organisme et sont difficilement éliminés ; ils s'accumulent dans les tissus. Leur concentration ne diminue donc pas le long de la chaîne alimentaire : elle se multiplie (bioamplification).",
+        "ru": "Тяжёлые металлы — химические элементы, поэтому в организме они не расщепляются и плохо выводятся, а накапливаются в тканях. Поэтому вверх по пищевой цепи их концентрация не уменьшается, а многократно возрастает (биоаккумуляция).",
+        "ar": "المعادن الثقيلة عناصر، فلا يمكن تفكيكها في الجسم ولا تُطرح بسهولة، بل تتراكم في الأنسجة. لذلك لا تقل تراكيزها كلما صعدنا في السلسلة الغذائية، بل تتضاعف (التراكم الحيوي).",
+        "zh": "重金属是元素，在生物体内无法被分解，也不易排出，会在组织中积累。因此沿食物链向上，其浓度不是降低，而是成倍增加（生物富集）。",
+        "ku": "Ji ber ku metalên giran element in, di laş de nayên perçekirin û bi hêsanî nayên derxistin; di tevnan de kom dibin. Loma her ku di zincîra xwarinê de ber bi jor ve diçe, tîrbûna wan kêm nabe, bi pirjimarî zêde dibe (komkirina biyolojîk)."
       }
     },
     {
@@ -271,24 +271,24 @@ export const unit05: ChemistryUnitSeedData = {
         "ku": "Avên hişk di germkerên avê, makîneyên cilşûştinê û boriyan de qateke kevirê kilsê (CaCO3) çêdikin û dibin sedema windabûna enerjiyê."
       },
       "trap": {
-        "tr": "Sert sular borularda kireç oluşturmaz, aksine boruları aşınmaya karşı korur.",
-        "en": "Hard water does not create scale in the pipes, on the contrary, it protects the pipes against corrosion.",
-        "de": "Hartes Wasser bildet keinen Kalk in den Rohren, sondern schützt die Rohre im Gegenteil vor Korrosion.",
-        "fr": "L’eau dure ne crée pas de tartre dans les canalisations, au contraire, elle protège les canalisations contre la corrosion.",
-        "ru": "Жёсткая вода не образует накипи в трубах, а, наоборот, защищает их от коррозии.",
-        "ar": "لا يكوّن الماء العسر رواسب كلسية في الأنابيب، بل يحميها من التآكل.",
-        "zh": "硬水不会在管道中产生水垢，相反，它可以保护管道免受腐蚀。",
-        "ku": "Avên hişk di boriyan de kils çênakin, berevajî, boriyan ji xwarinê diparêzin."
+        "tr": "Su ısıtıcısının rezistansında biriken kireç taşı ısıyı iyi ilettiği için ısıtıcının enerji tüketimini artırmaz.",
+        "en": "Limescale deposited on a kettle's heating element conducts heat well, so it does not increase the kettle's energy consumption.",
+        "de": "Der Kalkstein, der sich auf dem Heizelement eines Wasserkochers ablagert, leitet Wärme gut und erhöht daher den Energieverbrauch des Geräts nicht.",
+        "fr": "Le tartre déposé sur la résistance d'une bouilloire conduit bien la chaleur ; il n'augmente donc pas la consommation d'énergie de l'appareil.",
+        "ru": "Накипь на нагревательном элементе чайника хорошо проводит тепло, поэтому она не увеличивает расход энергии чайником.",
+        "ar": "الحجر الجيري المترسب على مقاومة الغلاية يوصل الحرارة جيدًا، لذلك لا يزيد استهلاك الغلاية للطاقة.",
+        "zh": "沉积在电热水壶加热元件上的水垢导热良好，所以不会增加水壶的能耗。",
+        "ku": "Kevirê kilsê yê ku li ser rezîstansa kelîngehê kom dibe germê baş dibe, loma xerckirina enerjiyê ya kelîngehê zêde nake."
       },
       "whyTrapIsFalse": {
-        "tr": "Isınan sert sudaki Ca(HCO3)2 bozunarak CaCO3 çöktürür. Bu kireç taşı boru ve rezistanslarda birikir; ısı iletimini azaltır, enerji kaybına ve tıkanmalara yol açar, boruları korumaz.",
-        "en": "When hard water is heated, Ca(HCO3)2 decomposes and CaCO3 precipitates. This limescale builds up in pipes and heating elements, reduces heat transfer and causes energy loss and blockages; it does not protect the pipes.",
-        "de": "Beim Erhitzen von hartem Wasser zersetzt sich Ca(HCO3)2 und CaCO3 fällt aus. Dieser Kalkstein lagert sich in Rohren und Heizstäben ab, verschlechtert die Wärmeübertragung und führt zu Energieverlust und Verstopfungen; er schützt die Rohre nicht.",
-        "fr": "Quand l'eau dure est chauffée, Ca(HCO3)2 se décompose et CaCO3 précipite. Ce tartre se dépose dans les tuyaux et les résistances, réduit le transfert de chaleur et provoque pertes d'énergie et obstructions ; il ne protège pas les tuyaux.",
-        "ru": "При нагревании жёсткой воды Ca(HCO3)2 разлагается и выпадает CaCO3. Эта накипь оседает в трубах и на нагревательных элементах, ухудшает теплопередачу, вызывает потери энергии и засоры; трубы она не защищает.",
-        "ar": "عند تسخين الماء العسر يتفكك Ca(HCO3)2 ويترسب CaCO3. تتراكم هذه الترسبات الكلسية في الأنابيب وعناصر التسخين فتقلل انتقال الحرارة وتسبب هدر الطاقة والانسداد؛ ولا تحمي الأنابيب.",
-        "zh": "硬水受热时 Ca(HCO3)2 分解，析出 CaCO3。这种水垢沉积在管道和加热元件上，降低传热，造成能量损失和堵塞，并不能保护管道。",
-        "ku": "Dema ava hişk germ dibe, Ca(HCO3)2 perçe dibe û CaCO3 dinişe. Ev kevirê kilsê di boriyan û rezîstansan de kom dibe; guhestina germê kêm dike, dibe sedema windabûna enerjiyê û girtina boriyan; boriyan naparêze."
+        "tr": "Kireç taşı (CaCO3) ısıyı metale göre çok kötü ileten, yalıtkan bir tabaka oluşturur. Rezistanstan suya ısı geçişi zorlaştığı için suyu aynı sıcaklığa getirmek daha uzun sürer ve daha çok enerji harcanır; tabaka kalınlaştıkça borular da daralır.",
+        "en": "Limescale (CaCO3) forms an insulating layer that conducts heat far worse than metal. Heat transfer from the element to the water is hindered, so heating the water takes longer and uses more energy; as the layer thickens, pipes also narrow.",
+        "de": "Kalkstein (CaCO3) bildet eine isolierende Schicht, die Wärme viel schlechter leitet als Metall. Der Wärmeübergang vom Heizelement ins Wasser wird behindert, das Erhitzen dauert länger und verbraucht mehr Energie; mit wachsender Schicht verengen sich auch die Rohre.",
+        "fr": "Le tartre (CaCO3) forme une couche isolante qui conduit la chaleur bien moins bien que le métal. Le transfert de chaleur de la résistance vers l'eau est freiné : le chauffage dure plus longtemps et consomme plus d'énergie ; en s'épaississant, la couche rétrécit aussi les tuyaux.",
+        "ru": "Накипь (CaCO3) образует теплоизолирующий слой, который проводит тепло гораздо хуже металла. Передача тепла от нагревателя к воде затрудняется, нагрев длится дольше и требует больше энергии; по мере утолщения слоя сужаются и трубы.",
+        "ar": "يكوّن الحجر الجيري (CaCO3) طبقة عازلة توصل الحرارة أسوأ بكثير من الفلز، فيصعب انتقال الحرارة من المقاومة إلى الماء، ويستغرق التسخين وقتًا أطول ويستهلك طاقة أكبر؛ ومع ازدياد سماكة الطبقة تضيق الأنابيب أيضًا.",
+        "zh": "水垢（CaCO3）会形成一层导热性远比金属差的隔热层，阻碍热量从加热元件传给水，加热时间变长、耗能增加；水垢变厚还会使管道变窄。",
+        "ku": "Kevirê kilsê (CaCO3) qateke îzolekirî çêdike ku germê ji metalê gelek xirabtir dibe. Derbasbûna germê ji rezîstansê bo avê dijwar dibe, germkirin dirêjtir dikişîne û bêtir enerjî xerc dibe; her ku qat stûr dibe, borî jî teng dibin."
       }
     },
     {
@@ -304,24 +304,24 @@ export const unit05: ChemistryUnitSeedData = {
         "ku": "Koagulasyon (meyandin) û flokulasyon (gilokirin) di paqijkirina avê de ji bo niştandina perçeyên hişk ên daliqandî tên bikaranîn."
       },
       "trap": {
-        "tr": "Koagülasyon suyun içindeki kireci kaynatarak buharlaştırma işlemidir.",
-        "en": "Coagulation is the process of evaporating the lime in the water by boiling it.",
-        "de": "Bei der Koagulation wird der Kalk im Wasser durch Kochen verdampft.",
-        "fr": "La coagulation est le processus d'évaporation du calcaire présent dans l'eau en la faisant bouillir.",
-        "ru": "Коагуляция — это выпаривание извести из воды при кипячении.",
-        "ar": "التخثير عملية تبخير الكلس الموجود في الماء بغليه.",
-        "zh": "混凝是把水中的水垢煮沸、使其蒸发的过程。",
-        "ku": "Koagulasyon kirdara buharkirina kilsa di avê de bi rêya kelandinê ye."
+        "tr": "Koagülasyonun amacı suda çözünmüş Ca2+ ve Mg2+ iyonlarını çöktürerek suyu yumuşatmaktır.",
+        "en": "The purpose of coagulation is to soften water by precipitating dissolved Ca2+ and Mg2+ ions.",
+        "de": "Ziel der Koagulation ist es, das Wasser zu enthärten, indem gelöste Ca2+- und Mg2+-Ionen ausgefällt werden.",
+        "fr": "Le but de la coagulation est d'adoucir l'eau en précipitant les ions Ca2+ et Mg2+ dissous.",
+        "ru": "Цель коагуляции — умягчить воду, осаждая растворённые ионы Ca2+ и Mg2+.",
+        "ar": "الغرض من التخثير هو تيسير الماء بترسيب أيونات Ca2+ وMg2+ الذائبة فيه.",
+        "zh": "混凝的目的是使溶解的 Ca2+ 和 Mg2+ 离子沉淀，从而软化水。",
+        "ku": "Armanca koagulasyonê ew e ku bi niştandina îyonên Ca2+ û Mg2+ yên helandî avê nerm bike."
       },
       "whyTrapIsFalse": {
-        "tr": "Koagülasyonda suya Al2(SO4)3 gibi pıhtılaştırıcılar eklenir ve askıdaki ince tanecikler topaklanıp çöktürülür. Bu işlemde ısıtma ya da buharlaştırma yoktur; kireç de buharlaşan bir madde değildir.",
-        "en": "In coagulation, coagulants such as Al2(SO4)3 are added and the fine suspended particles clump together and settle. No heating or evaporation is involved, and limescale is not something that evaporates.",
-        "de": "Bei der Koagulation werden Flockungsmittel wie Al2(SO4)3 zugesetzt, sodass feine Schwebteilchen zusammenballen und sich absetzen. Dabei wird weder erhitzt noch verdampft, und Kalk ist kein Stoff, der verdampft.",
-        "fr": "Lors de la coagulation, on ajoute des coagulants comme Al2(SO4)3 : les fines particules en suspension s'agglomèrent et décantent. Il n'y a ni chauffage ni évaporation, et le calcaire n'est pas une substance qui s'évapore.",
-        "ru": "При коагуляции в воду добавляют коагулянты, например Al2(SO4)3, и мелкие взвешенные частицы слипаются и оседают. Нагревания и испарения здесь нет, а накипь вообще не испаряется.",
-        "ar": "في التخثير تُضاف مواد مخثرة مثل Al2(SO4)3 فتتكتل الجسيمات الدقيقة العالقة وتترسب. لا يوجد في هذه العملية تسخين أو تبخير، والكلس ليس مادة تتبخر.",
-        "zh": "混凝时向水中加入 Al2(SO4)3 等混凝剂，使细小的悬浮颗粒凝聚并沉降。这一过程没有加热或蒸发，水垢也不是会蒸发的物质。",
-        "ku": "Di koagulasyonê de madeyên meyîner ên wekî Al2(SO4)3 li avê tên zêdekirin û perçeyên hûr ên daliqandî kom dibin û dinişin. Di vê kirdarê de germkirin an buharkirin tune ye; kils jî madeyeke ku buhar dibe nîne."
+        "tr": "Koagülasyonda suya Al2(SO4)3 gibi pıhtılaştırıcılar eklenir; askıdaki ince (koloidal) tanecikler topaklanıp çöker ve bulanıklık giderilir. Çözünmüş Ca2+ ve Mg2+ iyonları bu işlemle tutulmaz; sertlik iyon değiştirici reçineyle ya da Na2CO3 ile çöktürülerek giderilir.",
+        "en": "In coagulation, coagulants such as Al2(SO4)3 are added; fine suspended (colloidal) particles clump together and settle, removing turbidity. Dissolved Ca2+ and Mg2+ ions are not removed this way; hardness is removed with an ion-exchange resin or by precipitation with Na2CO3.",
+        "de": "Bei der Koagulation werden Flockungsmittel wie Al2(SO4)3 zugesetzt; feine schwebende (kolloidale) Teilchen ballen sich zusammen und setzen sich ab, die Trübung verschwindet. Gelöste Ca2+- und Mg2+-Ionen werden so nicht entfernt; die Härte wird mit Ionenaustauscherharz oder durch Fällung mit Na2CO3 beseitigt.",
+        "fr": "Lors de la coagulation, on ajoute des coagulants comme Al2(SO4)3 ; les fines particules en suspension (colloïdales) s'agglomèrent et se déposent, ce qui élimine la turbidité. Les ions Ca2+ et Mg2+ dissous ne sont pas retenus ainsi ; la dureté s'élimine par une résine échangeuse d'ions ou par précipitation avec Na2CO3.",
+        "ru": "При коагуляции в воду добавляют коагулянты, например Al2(SO4)3; мелкие взвешенные (коллоидные) частицы слипаются и оседают, и мутность устраняется. Растворённые ионы Ca2+ и Mg2+ при этом не удаляются; жёсткость устраняют ионообменной смолой или осаждением с помощью Na2CO3.",
+        "ar": "في التخثير تُضاف إلى الماء مواد مخثّرة مثل Al2(SO4)3، فتتكتل الدقائق العالقة الدقيقة (الغروية) وتترسب وتزول العكارة. أما أيونات Ca2+ وMg2+ الذائبة فلا تُزال بهذه العملية؛ وتُزال العسرة بالراتنج المبادل للأيونات أو بالترسيب باستخدام Na2CO3.",
+        "zh": "混凝时向水中加入 Al2(SO4)3 等混凝剂，细小的悬浮（胶体）颗粒聚集沉降，从而除去浑浊。溶解的 Ca2+ 和 Mg2+ 离子不会因此被除去；硬度需用离子交换树脂或加 Na2CO3 沉淀来去除。",
+        "ku": "Di koagulasyonê de koagulantên wek Al2(SO4)3 li avê tên zêdekirin; perçeyên hûr ên daliqandî (koloîdal) dicivin û dinişin, şêlûbûn ji holê radibe. Îyonên Ca2+ û Mg2+ yên helandî bi vê pêvajoyê nayên girtin; hişkî bi rezîna guherîna îyonan an jî bi niştandina bi Na2CO3 tê rakirin."
       }
     },
     {
@@ -370,14 +370,14 @@ export const unit05: ChemistryUnitSeedData = {
         "ku": "Osmoza berevajî rêbaza bidestxistina ava şirîn ji ava şor e, bi sepandina zexta bilind li ser parzûneke nîvderbasbar."
       },
       "trap": {
-        "tr": "Ters ozmoz işleminde hiçbir enerji ve basınca ihtiyaç duyulmaz.",
-        "en": "No energy or pressure is required in the reverse osmosis process.",
-        "de": "Für den Umkehrosmoseprozess ist weder Energie noch Druck erforderlich.",
-        "fr": "Aucune énergie ni pression n’est requise dans le processus d’osmose inverse.",
-        "ru": "Для обратного осмоса не требуются ни энергия, ни давление.",
-        "ar": "لا يحتاج التناضح العكسي إلى أي طاقة أو ضغط.",
-        "zh": "反渗透过程既不需要能量，也不需要加压。",
-        "ku": "Di kirdara osmoza berevajî de tu enerjî û zext ne hewce ye."
+        "tr": "Ters ozmozda su, tuzlu taraftan saf su tarafına zar boyunca kendiliğinden geçer; bu nedenle dışarıdan basınç uygulamaya gerek yoktur.",
+        "en": "In reverse osmosis, water passes spontaneously through the membrane from the salty side to the pure-water side, so no external pressure is needed.",
+        "de": "Bei der Umkehrosmose wandert Wasser von selbst durch die Membran von der salzigen Seite zur Reinwasserseite; daher muss kein äußerer Druck ausgeübt werden.",
+        "fr": "En osmose inverse, l'eau traverse spontanément la membrane du côté salé vers le côté eau pure ; il n'est donc pas nécessaire d'appliquer une pression extérieure.",
+        "ru": "При обратном осмосе вода самопроизвольно проходит через мембрану из солёной части в часть с чистой водой, поэтому внешнее давление не требуется.",
+        "ar": "في التناضح العكسي ينتقل الماء تلقائيًا عبر الغشاء من الجهة المالحة إلى جهة الماء النقي، لذلك لا حاجة إلى تطبيق ضغط خارجي.",
+        "zh": "反渗透中，水会自发地从盐水一侧透过膜流向纯水一侧，因此无需施加外部压力。",
+        "ku": "Di osmoza berevajî de av bi xwe di nav perdeyê re ji aliyê şor ber bi aliyê ava paqij ve derbas dibe; loma ne hewce ye ku ji derve zext were sepandin."
       },
       "whyTrapIsFalse": {
         "tr": "Su kendiliğinden seyreltik taraftan derişik tarafa geçer (osmoz). Bu akışı tersine çevirmek için tuzlu su tarafına osmotik basınçtan büyük bir basınç uygulamak, bunun için de pompalarla enerji harcamak gerekir.",
@@ -403,24 +403,24 @@ export const unit05: ChemistryUnitSeedData = {
         "ku": "Şewitandina bêkontrol a sotemeniyên fosîl çerxa karbonê ya gerdûnî xera dike û dibe sedema kombûna CO2 di atmosferê de."
       },
       "trap": {
-        "tr": "Fosil yakıtlar yandığında atmosfere sadece saf su buharı verir.",
-        "en": "When fossil fuels are burned, they release only pure water vapor into the atmosphere.",
-        "de": "Bei der Verbrennung fossiler Brennstoffe wird lediglich reiner Wasserdampf in die Atmosphäre abgegeben.",
-        "fr": "Lorsque les combustibles fossiles sont brûlés, ils ne rejettent que de la vapeur d’eau pure dans l’atmosphère.",
-        "ru": "При сгорании ископаемого топлива в атмосферу выделяется только чистый водяной пар.",
-        "ar": "عند احتراق الوقود الأحفوري لا يُطلق إلى الغلاف الجوي إلا بخار الماء النقي.",
-        "zh": "化石燃料燃烧时只向大气释放纯净的水蒸气。",
-        "ku": "Dema sotemeniyên fosîl dişewitin, tenê buhara ava paqij didin atmosferê."
+        "tr": "Fosil yakıtların yanmasıyla açığa çıkan CO2'nin tamamı kısa sürede bitkilerce fotosentezle geri alındığından atmosferdeki CO2 derişimi değişmez.",
+        "en": "All the CO2 released by burning fossil fuels is quickly taken back up by plants through photosynthesis, so the atmospheric CO2 concentration does not change.",
+        "de": "Das gesamte bei der Verbrennung fossiler Brennstoffe freigesetzte CO2 wird in kurzer Zeit von Pflanzen durch Photosynthese wieder aufgenommen, daher ändert sich die CO2-Konzentration der Atmosphäre nicht.",
+        "fr": "Tout le CO2 libéré par la combustion des combustibles fossiles est rapidement réabsorbé par les plantes grâce à la photosynthèse ; la concentration de CO2 dans l'atmosphère ne change donc pas.",
+        "ru": "Весь CO2, выделяющийся при сжигании ископаемого топлива, быстро поглощается растениями при фотосинтезе, поэтому концентрация CO2 в атмосфере не меняется.",
+        "ar": "كل CO2 المنطلق من حرق الوقود الأحفوري تمتصه النباتات بسرعة عبر التمثيل الضوئي، لذلك لا يتغير تركيز CO2 في الغلاف الجوي.",
+        "zh": "燃烧化石燃料释放的 CO2 会很快全部被植物通过光合作用重新吸收，因此大气中的 CO2 浓度不会改变。",
+        "ku": "Hemû CO2 ya ku bi şewitandina sotemeniyên fosîl derdikeve, di demeke kurt de ji aliyê riwekan ve bi fotosentezê tê girtin; loma tîrbûna CO2 ya atmosferê naguhere."
       },
       "whyTrapIsFalse": {
-        "tr": "Fosil yakıtlar karbon içerdiği için yanmaları CO2 (eksik yanmada CO) oluşturur. İçerdikleri kükürt ve havadaki azot nedeniyle SO2 ve azot oksitleri de açığa çıkar; ürün yalnızca su buharı değildir.",
-        "en": "Fossil fuels contain carbon, so burning them produces CO2 (CO in incomplete combustion). Because of the sulfur they contain and the nitrogen in air, SO2 and nitrogen oxides are also released; the product is not just water vapour.",
-        "de": "Fossile Brennstoffe enthalten Kohlenstoff, ihre Verbrennung liefert daher CO2 (bei unvollständiger Verbrennung CO). Wegen ihres Schwefelgehalts und des Luftstickstoffs entstehen außerdem SO2 und Stickoxide; das Produkt ist nicht nur Wasserdampf.",
-        "fr": "Les combustibles fossiles contiennent du carbone : leur combustion produit du CO2 (du CO si elle est incomplète). À cause du soufre qu'ils contiennent et de l'azote de l'air, il se forme aussi du SO2 et des oxydes d'azote ; le produit n'est pas que de la vapeur d'eau.",
-        "ru": "Ископаемое топливо содержит углерод, поэтому при его сгорании образуется CO2 (при неполном сгорании — CO). Из-за содержащейся в нём серы и азота воздуха выделяются также SO2 и оксиды азота; продукт — не только водяной пар.",
-        "ar": "تحتوي أنواع الوقود الأحفوري على الكربون، لذا ينتج عن احتراقها CO2 (وCO في الاحتراق غير الكامل). وبسبب الكبريت الذي تحتويه ونيتروجين الهواء ينطلق أيضًا SO2 وأكاسيد النيتروجين؛ فالناتج ليس بخار ماء فقط.",
-        "zh": "化石燃料含碳，燃烧时生成 CO2(不完全燃烧时生成 CO)。由于其中含硫以及空气中含氮，还会放出 SO2 和氮氧化物；产物并不只是水蒸气。",
-        "ku": "Ji ber ku sotemeniyên fosîl karbon dihewînin, şewitîna wan CO2 (di şewitîna netemam de CO) çêdike. Ji ber kewkurta tê de û nîtrojena hewayê, SO2 û oksîdên nîtrojenê jî derdikevin; hilber ne tenê buhara avê ye."
+        "tr": "Fosil yakıtlardaki karbon milyonlarca yıl önce döngüden çekilmiş karbondur; yakıldığında CO2, bitkilerin ve okyanusların soğurabildiğinden daha hızlı salınır. Bu yüzden karbon döngüsünün dengesi bozulur ve ölçümler atmosferdeki CO2 derişiminin sürekli arttığını gösterir.",
+        "en": "The carbon in fossil fuels was removed from the cycle millions of years ago; when they burn, CO2 is released faster than plants and oceans can absorb it. The carbon cycle is therefore unbalanced, and measurements show the atmospheric CO2 concentration rising steadily.",
+        "de": "Der Kohlenstoff fossiler Brennstoffe wurde dem Kreislauf vor Millionen von Jahren entzogen; beim Verbrennen wird CO2 schneller freigesetzt, als Pflanzen und Ozeane es aufnehmen können. Dadurch gerät der Kohlenstoffkreislauf aus dem Gleichgewicht, und Messungen zeigen einen stetigen Anstieg der CO2-Konzentration in der Atmosphäre.",
+        "fr": "Le carbone des combustibles fossiles a été retiré du cycle il y a des millions d'années ; leur combustion libère du CO2 plus vite que les plantes et les océans ne peuvent l'absorber. Le cycle du carbone est donc déséquilibré et les mesures montrent une hausse continue de la concentration de CO2 atmosphérique.",
+        "ru": "Углерод ископаемого топлива был выведен из круговорота миллионы лет назад; при сжигании CO2 выделяется быстрее, чем его успевают поглотить растения и океаны. Поэтому баланс круговорота углерода нарушается, и измерения показывают постоянный рост концентрации CO2 в атмосфере.",
+        "ar": "الكربون في الوقود الأحفوري خرج من الدورة منذ ملايين السنين، وعند حرقه ينطلق CO2 أسرع مما تستطيع النباتات والمحيطات امتصاصه. لذلك يختل توازن دورة الكربون، وتُظهر القياسات ارتفاعًا مستمرًا في تركيز CO2 في الغلاف الجوي.",
+        "zh": "化石燃料中的碳早在数百万年前就已脱离循环；燃烧时释放 CO2 的速度超过植物和海洋的吸收速度，因此碳循环失去平衡，测量表明大气 CO2 浓度在持续上升。",
+        "ku": "Karbona di sotemeniyên fosîl de berî bi mîlyonan salan ji çerxê derketiye; dema ew tên şewitandin, CO2 ji ya ku riwek û okyanûs dikarin bimijin zûtir derdikeve. Loma hevsengiya çerxa karbonê xera dibe û pîvan nîşan didin ku tîrbûna CO2 ya atmosferê bi berdewamî zêde dibe."
       }
     },
     {
@@ -502,24 +502,24 @@ export const unit05: ChemistryUnitSeedData = {
         "ku": "Prensîbên kîmyaya kesk armanc dikin ku pêşî li çêbûna bermayiyan ji çavkaniyê ve bigirin û madeyên xav ên nûbûyî bikar bînin."
       },
       "trap": {
-        "tr": "Yeşil kimya nükleer atıkları okyanus tabanında depolamayı savunur.",
-        "en": "Green chemistry advocates storing nuclear waste on the ocean floor.",
-        "de": "Grüne Chemie befürwortet die Lagerung von Atommüll auf dem Meeresboden.",
-        "fr": "La chimie verte prône le stockage des déchets nucléaires au fond des océans.",
-        "ru": "Зелёная химия предлагает хранить ядерные отходы на дне океана.",
-        "ar": "تدعو الكيمياء الخضراء إلى تخزين النفايات النووية في قاع المحيط.",
-        "zh": "绿色化学提倡将核废料储存在海底。",
-        "ku": "Kîmyaya kesk parastina bermayiyên nukleerî li binê okyanûsê diparêze."
+        "tr": "Yeşil kimyanın temel ilkesi, oluşan atıkları tepkimeden sonra arıtıp güvenli biçimde depolamaktır; atık oluşumunu azaltmak bu yaklaşımın hedefi değildir.",
+        "en": "The core principle of green chemistry is to treat the waste formed after the reaction and store it safely; reducing waste formation is not a goal of this approach.",
+        "de": "Grundprinzip der grünen Chemie ist es, die entstandenen Abfälle nach der Reaktion aufzubereiten und sicher zu lagern; die Abfallentstehung zu verringern, ist kein Ziel dieses Ansatzes.",
+        "fr": "Le principe de base de la chimie verte est de traiter les déchets formés après la réaction et de les stocker en sécurité ; réduire la formation de déchets n'est pas un objectif de cette approche.",
+        "ru": "Основной принцип зелёной химии — очищать образовавшиеся после реакции отходы и безопасно их хранить; сокращение образования отходов не является целью этого подхода.",
+        "ar": "المبدأ الأساسي للكيمياء الخضراء هو معالجة النفايات المتكونة بعد التفاعل وتخزينها بأمان؛ وليس تقليل تكوّن النفايات من أهداف هذا النهج.",
+        "zh": "绿色化学的核心原则是在反应后处理所生成的废物并安全储存；减少废物的产生不是该理念的目标。",
+        "ku": "Prensîba bingehîn a kîmyaya kesk ew e ku bermayiyên çêbûyî piştî reaksiyonê werin paqijkirin û bi ewlehî werin depokirin; kêmkirina çêbûna bermayiyan ne armanca vê nêzîkatiyê ye."
       },
       "whyTrapIsFalse": {
-        "tr": "Yeşil kimya, atığı oluştuktan sonra bir yere taşımayı değil, atığın oluşmasını kaynağında önlemeyi amaçlar. Atıkları okyanus tabanına bırakmak çevreyi kirleten bir uygulamadır.",
-        "en": "Green chemistry aims to prevent waste from forming at the source, not to move waste somewhere else after it has formed. Dumping waste on the ocean floor is a polluting practice.",
-        "de": "Grüne Chemie will die Entstehung von Abfall an der Quelle verhindern und nicht entstandenen Abfall woanders hinbringen. Abfälle auf dem Meeresboden abzulagern ist umweltschädlich.",
-        "fr": "La chimie verte vise à empêcher la formation des déchets à la source, et non à les déplacer une fois formés. Déposer des déchets au fond de l'océan est une pratique polluante.",
-        "ru": "Зелёная химия стремится не перемещать уже образовавшиеся отходы, а предотвращать их образование в самом источнике. Сброс отходов на дно океана загрязняет окружающую среду.",
-        "ar": "تهدف الكيمياء الخضراء إلى منع تكوّن النفايات من مصدرها، لا إلى نقلها إلى مكان آخر بعد تكوّنها. وإلقاء النفايات في قاع المحيط ممارسة ملوِّثة للبيئة.",
-        "zh": "绿色化学的目标是从源头上防止废物产生，而不是在废物产生后把它转移到别处。把废物倾倒在海底是污染环境的做法。",
-        "ku": "Armanca kîmyaya kesk ne ew e ku bermayiyan piştî çêbûnê bibe cihekî din, lê ew e ku pêşî li çêbûna wan ji çavkaniyê ve bigire. Avêtina bermayiyan li binê okyanûsê kiryareke ku jîngehê qirêj dike ye."
+        "tr": "Yeşil kimyanın ilk ve temel ilkesi atığı oluştuktan sonra arıtmak değil, oluşmasını kaynağında önlemektir. Bu amaçla tepkime yolları az atık verecek biçimde tasarlanır; zararsız çözücüler, katalizörler ve yenilenebilir hammaddeler tercih edilir.",
+        "en": "The first and fundamental principle of green chemistry is not to treat waste after it forms but to prevent it at the source. To this end, reaction routes are designed to produce little waste, and harmless solvents, catalysts and renewable raw materials are preferred.",
+        "de": "Das erste und grundlegende Prinzip der grünen Chemie ist nicht, Abfall nachträglich zu behandeln, sondern seine Entstehung an der Quelle zu vermeiden. Dazu werden Reaktionswege abfallarm gestaltet und harmlose Lösungsmittel, Katalysatoren und nachwachsende Rohstoffe bevorzugt.",
+        "fr": "Le premier principe fondamental de la chimie verte n'est pas de traiter les déchets après leur formation, mais de les éviter à la source. Pour cela, on conçoit des voies de synthèse produisant peu de déchets et l'on privilégie solvants inoffensifs, catalyseurs et matières premières renouvelables.",
+        "ru": "Первый и основной принцип зелёной химии — не очищать отходы после их образования, а предотвращать их появление в источнике. Для этого реакции проектируют так, чтобы отходов было мало, и выбирают безвредные растворители, катализаторы и возобновляемое сырьё.",
+        "ar": "المبدأ الأول والأساسي للكيمياء الخضراء ليس معالجة النفايات بعد تكوّنها، بل منع تكوّنها من المصدر. ولهذا تُصمَّم مسارات التفاعل بحيث تنتج نفايات قليلة، وتُفضَّل المذيبات غير الضارة والحفازات والمواد الخام المتجددة.",
+        "zh": "绿色化学的首要基本原则不是在废物产生后再处理，而是从源头上防止其产生。为此，要把反应路线设计成少产生废物，并优先选用无害溶剂、催化剂和可再生原料。",
+        "ku": "Prensîba yekem û bingehîn a kîmyaya kesk ne paqijkirina bermayiyê piştî çêbûnê ye, lê pêşîgirtina çêbûna wê li çavkaniyê ye. Ji bo vê, rêyên reaksiyonê wisa tên sêwirandin ku kêm bermayî çêbikin û helkerên bêzerar, katalîzor û madeyên xav ên nûbûyî tên tercîhkirin."
       }
     },
     {
@@ -826,14 +826,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-s01",
       "title": {
-        "tr": "İçme Suyu Arıtma Aşamaları",
-        "en": "Drinking Water Purification Stages",
-        "de": "Stufen der Trinkwasseraufbereitung",
-        "fr": "Étapes de purification de l’eau potable",
-        "ru": "Этапы очистки питьевой воды",
-        "ar": "مراحل تنقية مياه الشرب",
-        "zh": "饮用水的净化步骤",
-        "ku": "Qonaxên Paqijkirina Ava Vexwarinê"
+        "tr": "İçme Suyu Arıtma",
+        "en": "Drinking Water Treatment",
+        "de": "Trinkwasseraufbereitung",
+        "fr": "Traitement de l'eau potable",
+        "ru": "Очистка питьевой воды",
+        "ar": "معالجة مياه الشرب",
+        "zh": "饮用水净化",
+        "ku": "Paqijkirina Ava Vexwarinê"
       },
       "steps": [
         {
@@ -881,14 +881,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-s02",
       "title": {
-        "tr": "Asit Yağmuru Oluşum Zinciri",
-        "en": "Acid Rain Formation Chain",
-        "de": "Entstehungskette des sauren Regens",
-        "fr": "Chaîne de formation des pluies acides",
-        "ru": "Цепочка образования кислотных дождей",
-        "ar": "سلسلة تكوين المطر الحمضي",
-        "zh": "酸雨的形成过程",
-        "ku": "Zincîra Çêbûna Barana Asîdî"
+        "tr": "Asit Yağmuru Oluşumu",
+        "en": "Acid Rain Formation",
+        "de": "Entstehung von saurem Regen",
+        "fr": "Formation des pluies acides",
+        "ru": "Образование кислотных дождей",
+        "ar": "تكوّن المطر الحمضي",
+        "zh": "酸雨的形成",
+        "ku": "Çêbûna Barana Asîdî"
       },
       "steps": [
         {
@@ -936,14 +936,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-s03",
       "title": {
-        "tr": "Sera Etkisi ve Küresel Isınma",
-        "en": "Greenhouse Effect and Global Warming",
-        "de": "Treibhauseffekt und globale Erwärmung",
-        "fr": "Effet de serre et réchauffement climatique",
-        "ru": "Парниковый эффект и глобальное потепление",
-        "ar": "تأثير الاحتباس الحراري والاحترار العالمي",
-        "zh": "温室效应与全球变暖",
-        "ku": "Bandora Serayê û Germbûna Gerdûnî"
+        "tr": "Sera Etkisiyle Küresel Isınma",
+        "en": "Global Warming through the Greenhouse Effect",
+        "de": "Erderwärmung durch den Treibhauseffekt",
+        "fr": "Réchauffement climatique par effet de serre",
+        "ru": "Глобальное потепление из-за парникового эффекта",
+        "ar": "الاحترار العالمي بفعل ظاهرة الاحتباس الحراري",
+        "zh": "温室效应导致全球变暖",
+        "ku": "Germbûna Gerdûnî bi Bandora Serayê"
       },
       "steps": [
         {
@@ -1002,6 +1002,16 @@ export const unit05: ChemistryUnitSeedData = {
       },
       "steps": [
         {
+          "tr": "Reçine kolonu derişik NaCl çözeltisiyle yıkanarak Na+ iyonlarıyla yüklenir",
+          "en": "The resin column is rinsed with concentrated NaCl solution and loaded with Na+ ions",
+          "de": "Die Harzsäule wird mit konzentrierter NaCl-Lösung gespült und mit Na+-Ionen beladen",
+          "fr": "La colonne de résine est rincée avec une solution concentrée de NaCl et chargée en ions Na+",
+          "ru": "Колонку со смолой промывают концентрированным раствором NaCl и насыщают ионами Na+",
+          "ar": "يُغسل عمود الراتنج بمحلول NaCl مركّز فيُشحن بأيونات Na+",
+          "zh": "用浓 NaCl 溶液冲洗树脂柱，使其载上 Na+ 离子",
+          "ku": "Stûna rezînê bi çareseriya NaCl ya tîr tê şuştin û bi îyonên Na+ tê barkirin"
+        },
+        {
           "tr": "Sert su reçine kolonundan geçirilir",
           "en": "Hard water is passed through the resin column",
           "de": "Hartes Wasser wird durch die Harzsäule geleitet",
@@ -1012,24 +1022,14 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Ava hişk di stûna rezînê re tê derbaskirin"
         },
         {
-          "tr": "Sudaki Ca2+ ve Mg2+ iyonları reçineye bağlanır",
-          "en": "Ca2+ and Mg2+ ions in water bind to the resin",
-          "de": "Ca2+- und Mg2+-Ionen im Wasser binden an das Harz",
-          "fr": "Les ions Ca2+ et Mg2+ dans l'eau se lient à la résine",
-          "ru": "Ионы Ca2+ и Mg2+ из воды связываются со смолой",
-          "ar": "ترتبط أيونات Ca2+ وMg2+ الموجودة في الماء بالراتنج",
-          "zh": "水中的 Ca2+ 和 Mg2+ 被树脂吸附",
-          "ku": "Îyonên Ca2+ û Mg2+ yên di avê de bi rezînê ve girê dibin"
-        },
-        {
-          "tr": "Reçineden suya Na+ iyonları salınır",
-          "en": "Na+ ions are released from the resin into the water",
-          "de": "Na+-Ionen werden aus dem Harz an das Wasser abgegeben",
-          "fr": "Les ions Na+ sont libérés de la résine dans l'eau",
-          "ru": "Смола отдаёт в воду ионы Na+",
-          "ar": "تنطلق أيونات Na+ من الراتنج إلى الماء",
-          "zh": "树脂向水中释放 Na+",
-          "ku": "Ji rezînê îyonên Na+ derbasî avê dibin"
+          "tr": "Sudaki Ca2+ ve Mg2+ iyonları reçineye bağlanırken yerlerine reçinedeki Na+ iyonları suya geçer",
+          "en": "Ca2+ and Mg2+ ions in the water bind to the resin while Na+ ions from the resin pass into the water in their place",
+          "de": "Die Ca2+- und Mg2+-Ionen des Wassers binden an das Harz, während an ihrer Stelle Na+-Ionen aus dem Harz ins Wasser übergehen",
+          "fr": "Les ions Ca2+ et Mg2+ de l'eau se fixent sur la résine tandis que les ions Na+ de la résine passent dans l'eau à leur place",
+          "ru": "Ионы Ca2+ и Mg2+ из воды связываются со смолой, а вместо них ионы Na+ из смолы переходят в воду",
+          "ar": "ترتبط أيونات Ca2+ وMg2+ الموجودة في الماء بالراتنج، وتنتقل بدلًا منها أيونات Na+ من الراتنج إلى الماء",
+          "zh": "水中的 Ca2+ 和 Mg2+ 离子结合到树脂上，同时树脂上的 Na+ 离子进入水中取代它们",
+          "ku": "Îyonên Ca2+ û Mg2+ yên di avê de bi rezînê ve girê didin û li şûna wan îyonên Na+ yên rezînê derbasî avê dibin"
         },
         {
           "tr": "Kireç oluşturmayan yumuşak su elde edilir",
@@ -1048,14 +1048,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin01",
       "stem": {
-        "tr": "Aşağıdaki gazlardan hangisi atmosferde asit yağmuru oluşumuna doğrudan katkı sağlayan asidik oksitlerden biridir?",
-        "en": "Which of the following gases is one of the acidic oxides that directly contribute to the formation of acid rain in the atmosphere?",
-        "de": "Welches der folgenden Gase gehört zu den sauren Oxiden, die direkt zur Bildung von saurem Regen in der Atmosphäre beitragen?",
-        "fr": "Lequel des gaz suivants fait partie des oxydes acides qui contribuent directement à la formation de pluies acides dans l’atmosphère ?",
-        "ru": "Какой из газов относится к кислотным оксидам, непосредственно способствующим образованию кислотных дождей в атмосфере?",
-        "ar": "أيّ الغازات الآتية من الأكاسيد الحمضية التي تسهم مباشرة في تكوين المطر الحمضي في الغلاف الجوي؟",
-        "zh": "下列气体中，哪一种是直接导致酸雨形成的酸性氧化物？",
-        "ku": "Kîjan ji van gazan yek ji oksîdên asîdî ye ku rasterast beşdarî çêbûna barana asîdî ya di atmosferê de dibe?"
+        "tr": "Aşağıdaki oksitlerden hangisi suyla tepkimeye girerek asit oluşturur ve bu nedenle asit yağmuruna doğrudan katkı yapar?",
+        "en": "Which of the following oxides reacts with water to form an acid and therefore contributes directly to acid rain?",
+        "de": "Welches der folgenden Oxide bildet mit Wasser eine Säure und trägt daher direkt zum sauren Regen bei?",
+        "fr": "Lequel des oxydes suivants réagit avec l'eau pour former un acide et contribue donc directement aux pluies acides ?",
+        "ru": "Какой из следующих оксидов, реагируя с водой, образует кислоту и поэтому непосредственно способствует кислотным дождям?",
+        "ar": "أيّ الأكاسيد الآتية يتفاعل مع الماء مكوّنًا حمضًا، ولذلك يسهم مباشرة في المطر الحمضي؟",
+        "zh": "下列氧化物中，哪一种能与水反应生成酸，因而直接导致酸雨？",
+        "ku": "Kîjan ji van oksîtan bi avê re reaksiyonê dike û asîd çêdike, û ji ber vê yekê rasterast beşdarî barana asîdî dibe?"
       },
       "options": [
         {
@@ -1069,36 +1069,6 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "SO3"
         },
         {
-          "tr": "CH4",
-          "en": "CH4",
-          "de": "CH4",
-          "fr": "CH4",
-          "ru": "CH4",
-          "ar": "CH4",
-          "zh": "CH4",
-          "ku": "CH4"
-        },
-        {
-          "tr": "N2",
-          "en": "N2",
-          "de": "N2",
-          "fr": "N2",
-          "ru": "N2",
-          "ar": "N2",
-          "zh": "N2",
-          "ku": "N2"
-        },
-        {
-          "tr": "He",
-          "en": "He",
-          "de": "He",
-          "fr": "He",
-          "ru": "He",
-          "ar": "He",
-          "zh": "He",
-          "ku": "He"
-        },
-        {
           "tr": "CO",
           "en": "CO",
           "de": "CO",
@@ -1107,94 +1077,176 @@ export const unit05: ChemistryUnitSeedData = {
           "ar": "CO",
           "zh": "CO",
           "ku": "CO"
+        },
+        {
+          "tr": "N2O",
+          "en": "N2O",
+          "de": "N2O",
+          "fr": "N2O",
+          "ru": "N2O",
+          "ar": "N2O",
+          "zh": "N2O",
+          "ku": "N2O"
+        },
+        {
+          "tr": "CaO",
+          "en": "CaO",
+          "de": "CaO",
+          "fr": "CaO",
+          "ru": "CaO",
+          "ar": "CaO",
+          "zh": "CaO",
+          "ku": "CaO"
+        },
+        {
+          "tr": "Al2O3",
+          "en": "Al2O3",
+          "de": "Al2O3",
+          "fr": "Al2O3",
+          "ru": "Al2O3",
+          "ar": "Al2O3",
+          "zh": "Al2O3",
+          "ku": "Al2O3"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "SO3 asidik oksittir; atmosferdeki su buharıyla tepkimeye girerek sülfürik asit oluşturur: SO3 + H2O → H2SO4. CO da bir oksittir ancak nötr oksittir, suyla asit oluşturmaz; CH4, N2 ve He ise oksit değildir.",
-        "en": "SO3 is an acidic oxide; it reacts with water vapour in the atmosphere to form sulfuric acid: SO3 + H2O → H2SO4. CO is also an oxide, but a neutral one that does not form an acid with water; CH4, N2 and He are not oxides.",
-        "de": "SO3 ist ein saures Oxid; es reagiert mit dem Wasserdampf der Atmosphäre zu Schwefelsäure: SO3 + H2O → H2SO4. CO ist zwar auch ein Oxid, aber ein neutrales, das mit Wasser keine Säure bildet; CH4, N2 und He sind keine Oxide.",
-        "fr": "SO3 est un oxyde acide ; il réagit avec la vapeur d'eau de l'atmosphère pour former de l'acide sulfurique : SO3 + H2O → H2SO4. CO est aussi un oxyde, mais un oxyde neutre qui ne forme pas d'acide avec l'eau ; CH4, N2 et He ne sont pas des oxydes.",
-        "ru": "SO3 — кислотный оксид; он реагирует с водяным паром атмосферы с образованием серной кислоты: SO3 + H2O → H2SO4. CO тоже оксид, но несолеобразующий: с водой кислоту не образует; CH4, N2 и He оксидами не являются.",
-        "ar": "SO3 أكسيد حمضي؛ يتفاعل مع بخار الماء في الجو مكوّنًا حمض الكبريتيك: SO3 + H2O → H2SO4. أما CO فهو أكسيد أيضًا لكنه متعادل لا يكوّن حمضًا مع الماء؛ وCH4 وN2 وHe ليست أكاسيد.",
-        "zh": "SO3 是酸性氧化物，与大气中的水蒸气反应生成硫酸：SO3 + H2O → H2SO4。CO 也是氧化物，但属于中性（不成盐）氧化物，不与水生成酸；CH4、N2 和 He 不是氧化物。",
-        "ku": "SO3 oksîdeke asîdî ye; bi buhara avê ya di atmosferê de dikeve reaksiyonê û asîda sulfurîk çêdike: SO3 + H2O → H2SO4. CO jî oksîd e, lê oksîdeke notr e û bi avê re asîd çênake; CH4, N2 û He jî ne oksîd in."
+        "tr": "SO3 asidik oksittir: SO3 + H2O → H2SO4 tepkimesiyle sülfürik asit oluşturur. CO ve N2O nötr oksitlerdir, suyla asit oluşturmaz (N2O bir sera gazıdır ama asit yağmuruna yol açmaz). CaO bazik oksittir; suyla Ca(OH)2 bazını verir. Al2O3 amfoter bir oksittir ve suda çözünmez.",
+        "en": "SO3 is an acidic oxide: SO3 + H2O → H2SO4 forms sulfuric acid. CO and N2O are neutral oxides and do not form acids with water (N2O is a greenhouse gas but does not cause acid rain). CaO is a basic oxide; with water it gives the base Ca(OH)2. Al2O3 is an amphoteric oxide and is insoluble in water.",
+        "de": "SO3 ist ein saures Oxid: SO3 + H2O → H2SO4 bildet Schwefelsäure. CO und N2O sind neutrale Oxide und bilden mit Wasser keine Säure (N2O ist ein Treibhausgas, verursacht aber keinen sauren Regen). CaO ist ein basisches Oxid; mit Wasser entsteht die Base Ca(OH)2. Al2O3 ist ein amphoteres Oxid und in Wasser unlöslich.",
+        "fr": "SO3 est un oxyde acide : SO3 + H2O → H2SO4 forme l'acide sulfurique. CO et N2O sont des oxydes neutres et ne forment pas d'acide avec l'eau (N2O est un gaz à effet de serre mais ne provoque pas de pluies acides). CaO est un oxyde basique ; avec l'eau il donne la base Ca(OH)2. Al2O3 est un oxyde amphotère, insoluble dans l'eau.",
+        "ru": "SO3 — кислотный оксид: SO3 + H2O → H2SO4, образуется серная кислота. CO и N2O — несолеобразующие (нейтральные) оксиды, с водой кислоту не образуют (N2O — парниковый газ, но кислотных дождей не вызывает). CaO — основный оксид, с водой даёт основание Ca(OH)2. Al2O3 — амфотерный оксид, в воде не растворяется.",
+        "ar": "SO3 أكسيد حمضي: يكوّن حمض الكبريتيك وفق SO3 + H2O → H2SO4. أما CO وN2O فأكسيدان متعادلان لا يكوّنان حمضًا مع الماء (N2O غاز دفيء لكنه لا يسبب المطر الحمضي). وCaO أكسيد قاعدي يعطي مع الماء القاعدة Ca(OH)2. وAl2O3 أكسيد مذبذب لا يذوب في الماء.",
+        "zh": "SO3 是酸性氧化物：SO3 + H2O → H2SO4，生成硫酸。CO 和 N2O 是不成盐（中性）氧化物，与水不生成酸（N2O 是温室气体，但不会导致酸雨）。CaO 是碱性氧化物，与水生成碱 Ca(OH)2。Al2O3 是两性氧化物，不溶于水。",
+        "ku": "SO3 oksîteke asîdî ye: bi SO3 + H2O → H2SO4 asîda sulfurîk çêdike. CO û N2O oksîtên notr in, bi avê re asîd çênakin (N2O gazeke serayê ye lê nabe sedema barana asîdî). CaO oksîteke bazî ye; bi avê re baza Ca(OH)2 dide. Al2O3 oksîteke amfoter e û di avê de nahele."
       }
     },
     {
       "id": "u05-twin02",
       "stem": {
-        "tr": "Sularda sertliğe neden olan temel katyonlar aşağıdakilerin hangisinde doğru verilmiştir?",
-        "en": "Which of the following correctly lists the main cations that cause hardness in water?",
-        "de": "Welche der folgenden Aussagen führt die wichtigsten Kationen, die Wasserhärte verursachen, korrekt auf?",
-        "fr": "Lequel des énoncés suivants répertorie correctement les principaux cations qui causent la dureté de l’eau ?",
-        "ru": "В каком варианте правильно указаны основные катионы, обусловливающие жёсткость воды?",
-        "ar": "أيّ مما يلي يمثل الكاتيونات الرئيسية المسببة لعسر الماء؟",
-        "zh": "下列哪一项正确列出了导致水硬度的主要阳离子？",
-        "ku": "Katyonên sereke yên ku di avê de dibin sedema hişkiyê di kîjan vebijarkê de rast hatine dayîn?"
+        "tr": "Sert su, Na+ iyonlarıyla yüklü bir iyon değiştirici reçine kolonundan geçiriliyor. Tabloda kolona giren ve kolondan çıkan sudaki katyon derişimleri verilmiştir. Anyon derişimleri değişmediğine göre kolondan çıkan sudaki Na+ derişimi (x) kaç mmol/L'dir?",
+        "en": "Hard water is passed through an ion-exchange resin column loaded with Na+ ions. The table gives the cation concentrations in the water entering and leaving the column. Since the anion concentrations do not change, what is the Na+ concentration x (in mmol/L) of the water leaving the column?",
+        "de": "Hartes Wasser wird durch eine mit Na+-Ionen beladene Ionenaustauscher-Harzsäule geleitet. Die Tabelle zeigt die Kationenkonzentrationen im zu- und ablaufenden Wasser. Die Anionenkonzentrationen ändern sich nicht. Wie groß ist die Na+-Konzentration x (in mmol/L) im ablaufenden Wasser?",
+        "fr": "Une eau dure traverse une colonne de résine échangeuse d'ions chargée en ions Na+. Le tableau donne les concentrations des cations dans l'eau à l'entrée et à la sortie de la colonne. Les concentrations des anions ne changent pas. Quelle est la concentration x en Na+ (en mmol/L) de l'eau à la sortie ?",
+        "ru": "Жёсткую воду пропускают через колонку с ионообменной смолой, насыщенной ионами Na+. В таблице даны концентрации катионов в воде на входе в колонку и на выходе из неё. Концентрации анионов не меняются. Чему равна концентрация Na+ x (ммоль/л) в воде на выходе?",
+        "ar": "يُمرَّر ماء عسر عبر عمود راتنج مبادل للأيونات مشحون بأيونات Na+. يبين الجدول تراكيز الكاتيونات في الماء الداخل إلى العمود والخارج منه، وتراكيز الأنيونات لا تتغير. ما تركيز Na+ (x) بوحدة mmol/L في الماء الخارج من العمود؟",
+        "zh": "将硬水通过载有 Na+ 离子的离子交换树脂柱。表中给出了进柱水和出柱水中阳离子的浓度，阴离子浓度不变。出柱水中 Na+ 的浓度 x 是多少 mmol/L？",
+        "ku": "Ava hişk di stûneke rezîna guherîna îyonan a bi îyonên Na+ barkirî re tê derbaskirin. Di tabloyê de tîrbûnên katyonan ên ava ku dikeve stûnê û ya ku jê derdikeve hatine dayîn; tîrbûnên anyonan naguherin. Di ava ku ji stûnê derdikeve de tîrbûna Na+ (x) çend mmol/L e?"
       },
       "options": [
         {
-          "tr": "Ca2+ ve Mg2+",
-          "en": "Ca2+ and Mg2+",
-          "de": "Ca2+ und Mg2+",
-          "fr": "Ca2+ et Mg2+",
-          "ru": "Ca2+ и Mg2+",
-          "ar": "Ca2+ و Mg2+",
-          "zh": "Ca2+ 和 Mg2+",
-          "ku": "Ca2+ û Mg2+"
+          "tr": "2",
+          "en": "2",
+          "de": "2",
+          "fr": "2",
+          "ru": "2",
+          "ar": "2",
+          "zh": "2",
+          "ku": "2"
         },
         {
-          "tr": "Na+ ve K+",
-          "en": "Na+ and K+",
-          "de": "Na+ und K+",
-          "fr": "Na+ et K+",
-          "ru": "Na+ и K+",
-          "ar": "Na+ و K+",
-          "zh": "Na+ 和 K+",
-          "ku": "Na+ û K+"
+          "tr": "4",
+          "en": "4",
+          "de": "4",
+          "fr": "4",
+          "ru": "4",
+          "ar": "4",
+          "zh": "4",
+          "ku": "4"
         },
         {
-          "tr": "Fe3+ ve Al3+",
-          "en": "Fe3+ and Al3+",
-          "de": "Fe3+ und Al3+",
-          "fr": "Fe3+ et Al3+",
-          "ru": "Fe3+ и Al3+",
-          "ar": "Fe3+ و Al3+",
-          "zh": "Fe3+ 和 Al3+",
-          "ku": "Fe3+ û Al3+"
+          "tr": "6",
+          "en": "6",
+          "de": "6",
+          "fr": "6",
+          "ru": "6",
+          "ar": "6",
+          "zh": "6",
+          "ku": "6"
         },
         {
-          "tr": "Ag+ ve Cu2+",
-          "en": "Ag+ and Cu2+",
-          "de": "Ag+ und Cu2+",
-          "fr": "Ag+ et Cu2+",
-          "ru": "Ag+ и Cu2+",
-          "ar": "Ag+ و Cu2+",
-          "zh": "Ag+ 和 Cu2+",
-          "ku": "Ag+ û Cu2+"
+          "tr": "8",
+          "en": "8",
+          "de": "8",
+          "fr": "8",
+          "ru": "8",
+          "ar": "8",
+          "zh": "8",
+          "ku": "8"
         },
         {
-          "tr": "H+ ve NH4+",
-          "en": "H+ and NH4+",
-          "de": "H+ und NH4+",
-          "fr": "H+ et NH4+",
-          "ru": "H+ и NH4+",
-          "ar": "H+ و NH4+",
-          "zh": "H+ 和 NH4+",
-          "ku": "H+ û NH4+"
+          "tr": "10",
+          "en": "10",
+          "de": "10",
+          "fr": "10",
+          "ru": "10",
+          "ar": "10",
+          "zh": "10",
+          "ku": "10"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 4,
       "explanation": {
-        "tr": "Su sertliğine başlıca çözünmüş kalsiyum (Ca2+) ve magnezyum (Mg2+) iyonları neden olur; bu iyonlar sabunla çökelek oluşturur. Na+ ve K+ iyonları sabunla çökelek oluşturmadığından sertliğe yol açmaz.",
-        "en": "Water hardness is caused mainly by dissolved calcium (Ca2+) and magnesium (Mg2+) ions, which form a precipitate with soap. Na+ and K+ ions do not precipitate with soap, so they do not cause hardness.",
-        "de": "Die Wasserhärte wird hauptsächlich durch gelöste Calcium- (Ca2+) und Magnesiumionen (Mg2+) verursacht, die mit Seife einen Niederschlag bilden. Na+ und K+ bilden mit Seife keinen Niederschlag und verursachen daher keine Härte.",
-        "fr": "La dureté de l'eau est due principalement aux ions calcium (Ca2+) et magnésium (Mg2+) dissous, qui forment un précipité avec le savon. Les ions Na+ et K+ ne précipitent pas avec le savon et ne causent donc pas de dureté.",
-        "ru": "Жёсткость воды обусловлена главным образом растворёнными ионами кальция (Ca2+) и магния (Mg2+), которые образуют с мылом осадок. Ионы Na+ и K+ осадка с мылом не дают и поэтому жёсткости не вызывают.",
-        "ar": "يرجع عسر الماء أساسًا إلى أيونات الكالسيوم (Ca2+) والمغنيسيوم (Mg2+) الذائبة التي تكوّن راسبًا مع الصابون. أما أيونات Na+ وK+ فلا تترسب مع الصابون ولذلك لا تسبب العسر.",
-        "zh": "水的硬度主要由溶解的钙离子(Ca2+)和镁离子(Mg2+)引起，它们与肥皂生成沉淀。Na+ 和 K+ 不与肥皂生成沉淀，因此不会造成硬度。",
-        "ku": "Hişkiya avê bi giranî ji îyonên kalsiyûmê (Ca2+) û magnezyûmê (Mg2+) yên helbûyî tê; ev îyon bi sabûnê re niştek çêdikin. Îyonên Na+ û K+ bi sabûnê re niştek çênakin, loma nabin sedema hişkiyê."
+        "tr": "Tablodan kolonda tutulan iyonlar: Ca2+ 3 mmol/L ve Mg2+ 1 mmol/L. Anyonlar değişmediğinden suyun yük dengesi korunmalıdır; tutulan her 2+ yüklü iyonun yerine suya 2 Na+ geçer. Suya geçen Na+ = 2 · (3 + 1) = 8 mmol/L; çıkan sudaki Na+ = 2 + 8 = 10 mmol/L. Değişimi 1 : 1 sanmak 6, giren sudaki Na+'yı unutmak 8, Na+ derişiminin değişmediğini düşünmek 2 sonucunu verir.",
+        "en": "From the table, the column retains Ca2+ 3 mmol/L and Mg2+ 1 mmol/L. Since the anions do not change, the charge balance of the water must be kept: each retained 2+ ion is replaced by 2 Na+ ions. Na+ released = 2 · (3 + 1) = 8 mmol/L; Na+ in the outlet water = 2 + 8 = 10 mmol/L. Assuming a 1 : 1 exchange gives 6, forgetting the Na+ already in the inlet water gives 8, and thinking Na+ does not change gives 2.",
+        "de": "Laut Tabelle hält die Säule Ca2+ 3 mmol/L und Mg2+ 1 mmol/L zurück. Da sich die Anionen nicht ändern, muss die Ladungsbilanz erhalten bleiben: Jedes zurückgehaltene 2+-Ion wird durch 2 Na+ ersetzt. Abgegebenes Na+ = 2 · (3 + 1) = 8 mmol/L; Na+ im Ablauf = 2 + 8 = 10 mmol/L. Ein 1 : 1-Austausch ergibt fälschlich 6, das Vergessen des Na+ im Zulauf 8, und die Annahme, Na+ ändere sich nicht, 2.",
+        "fr": "D'après le tableau, la colonne retient Ca2+ 3 mmol/L et Mg2+ 1 mmol/L. Les anions ne changeant pas, l'électroneutralité de l'eau doit être conservée : chaque ion 2+ retenu est remplacé par 2 ions Na+. Na+ libéré = 2 · (3 + 1) = 8 mmol/L ; Na+ à la sortie = 2 + 8 = 10 mmol/L. Un échange 1 : 1 donnerait 6, oublier le Na+ déjà présent à l'entrée donnerait 8, et croire que Na+ ne change pas donnerait 2.",
+        "ru": "По таблице колонка задерживает Ca2+ 3 ммоль/л и Mg2+ 1 ммоль/л. Анионы не меняются, поэтому должна сохраняться электронейтральность воды: каждый задержанный ион 2+ заменяется двумя ионами Na+. Выделившийся Na+ = 2 · (3 + 1) = 8 ммоль/л; Na+ на выходе = 2 + 8 = 10 ммоль/л. Обмен 1 : 1 даёт 6, если забыть Na+ входной воды — 8, а если считать, что Na+ не меняется, — 2.",
+        "ar": "من الجدول يحتجز العمود Ca2+ بمقدار 3 mmol/L وMg2+ بمقدار 1 mmol/L. وبما أن الأنيونات لا تتغير يجب أن يبقى الماء متعادلًا كهربائيًا: كل أيون ثنائي الشحنة محتجز يحل محله أيونان Na+. Na+ المنطلق = 2 · (3 + 1) = 8 mmol/L، وNa+ في الماء الخارج = 2 + 8 = 10 mmol/L. افتراض تبادل 1 : 1 يعطي 6، ونسيان Na+ الموجود في الماء الداخل يعطي 8، وظن أن Na+ لا يتغير يعطي 2.",
+        "zh": "由表可知，树脂柱截留了 3 mmol/L 的 Ca2+ 和 1 mmol/L 的 Mg2+。阴离子不变，水必须保持电中性：每截留一个 2+ 离子，就有 2 个 Na+ 进入水中。释放的 Na+ = 2 · (3 + 1) = 8 mmol/L；出柱水中 Na+ = 2 + 8 = 10 mmol/L。按 1 : 1 交换会得到 6，忘记进柱水中原有的 Na+ 会得到 8，认为 Na+ 不变则得到 2。",
+        "ku": "Li gorî tabloyê stûn Ca2+ 3 mmol/L û Mg2+ 1 mmol/L digire. Ji ber ku anyon naguherin, divê hevsengiya barê avê were parastin: li şûna her îyoneke 2+ ya hatî girtin 2 Na+ derbasî avê dibin. Na+ ya derbasî avê dibe = 2 · (3 + 1) = 8 mmol/L; Na+ di ava derketinê de = 2 + 8 = 10 mmol/L. Guherîna 1 : 1 encama 6, jibîrkirina Na+ ya ava têketinê 8, û fikra ku Na+ naguhere 2 dide."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Katyon",
+            "en": "Cation",
+            "de": "Kation",
+            "fr": "Cation",
+            "ru": "Катион",
+            "ar": "الكاتيون",
+            "zh": "阳离子",
+            "ku": "Katyon"
+          },
+          {
+            "tr": "Giren su (mmol/L)",
+            "en": "Inlet water (mmol/L)",
+            "de": "Zulauf (mmol/L)",
+            "fr": "Eau d'entrée (mmol/L)",
+            "ru": "Вход (ммоль/л)",
+            "ar": "الماء الداخل (mmol/L)",
+            "zh": "进柱水 (mmol/L)",
+            "ku": "Ava têketinê (mmol/L)"
+          },
+          {
+            "tr": "Çıkan su (mmol/L)",
+            "en": "Outlet water (mmol/L)",
+            "de": "Ablauf (mmol/L)",
+            "fr": "Eau de sortie (mmol/L)",
+            "ru": "Выход (ммоль/л)",
+            "ar": "الماء الخارج (mmol/L)",
+            "zh": "出柱水 (mmol/L)",
+            "ku": "Ava derketinê (mmol/L)"
+          }
+        ],
+        "rows": [
+          [
+            "Ca2+",
+            "3",
+            "0"
+          ],
+          [
+            "Mg2+",
+            "1",
+            "0"
+          ],
+          [
+            "Na+",
+            "2",
+            "x"
+          ]
+        ]
       }
     },
     {
@@ -1504,14 +1556,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin07",
       "stem": {
-        "tr": "X, Y ve Z su örnekleriyle yapılan deneyde şu gözlemler kaydediliyor:\nX: Sabunla bol köpük oluşturuyor; kaynatılınca tortu bırakmıyor.\nY: Sabunla az köpük oluşturuyor; kaynatılınca beyaz tortu oluşuyor, süzülen su sabunla bol köpük veriyor.\nZ: Sabunla az köpük oluşturuyor; kaynatılınca tortu oluşmuyor, kaynatılıp süzülen su da sabunla az köpük veriyor.\nBuna göre aşağıdaki yargılardan hangisi doğrudur?",
-        "en": "In an experiment with water samples X, Y and Z, the following observations are recorded:\nX: Gives plenty of lather with soap; leaves no deposit on boiling.\nY: Gives little lather with soap; a white deposit forms on boiling, and the filtered water gives plenty of lather with soap.\nZ: Gives little lather with soap; no deposit forms on boiling, and the boiled and filtered water still gives little lather.\nAccording to this, which statement is correct?",
-        "de": "Bei einem Versuch mit den Wasserproben X, Y und Z werden folgende Beobachtungen notiert:\nX: Bildet mit Seife viel Schaum; beim Kochen kein Rückstand.\nY: Bildet mit Seife wenig Schaum; beim Kochen entsteht ein weißer Niederschlag, das filtrierte Wasser schäumt danach stark mit Seife.\nZ: Bildet mit Seife wenig Schaum; beim Kochen kein Niederschlag, auch das gekochte und filtrierte Wasser schäumt wenig.\nWelche Aussage ist demnach richtig?",
-        "fr": "Lors d'une expérience avec les échantillons d'eau X, Y et Z, on note :\nX : mousse abondante avec le savon ; aucun dépôt à l'ébullition.\nY : peu de mousse avec le savon ; un dépôt blanc se forme à l'ébullition et l'eau filtrée mousse ensuite abondamment.\nZ : peu de mousse avec le savon ; aucun dépôt à l'ébullition, et l'eau bouillie puis filtrée mousse toujours peu.\nQuelle affirmation est alors correcte ?",
-        "ru": "В опыте с образцами воды X, Y и Z записаны наблюдения:\nX: с мылом даёт много пены; при кипячении осадка нет.\nY: с мылом даёт мало пены; при кипячении образуется белый осадок, а отфильтрованная вода даёт с мылом много пены.\nZ: с мылом даёт мало пены; при кипячении осадка нет, и прокипячённая отфильтрованная вода по-прежнему даёт мало пены.\nКакое утверждение верно?",
-        "ar": "في تجربة على عينات الماء X وY وZ سُجلت الملاحظات الآتية:\nX: يكوّن رغوة كثيرة مع الصابون؛ ولا يترك راسبًا عند الغليان.\nY: يكوّن رغوة قليلة مع الصابون؛ ويتكوّن راسب أبيض عند الغليان، والماء المرشَّح بعدها يعطي رغوة كثيرة.\nZ: يكوّن رغوة قليلة مع الصابون؛ ولا يتكوّن راسب عند الغليان، والماء المغلي المرشَّح يبقى قليل الرغوة.\nبناءً على ذلك، أي العبارات الآتية صحيحة؟",
-        "zh": "用 X、Y、Z 三种水样做实验，记录如下：\nX：与肥皂产生大量泡沫；煮沸后无沉淀。\nY：与肥皂产生的泡沫很少；煮沸后生成白色沉淀，过滤后的水与肥皂产生大量泡沫。\nZ：与肥皂产生的泡沫很少；煮沸后无沉淀，煮沸并过滤后的水泡沫仍然很少。\n据此，下列说法正确的是哪一项？",
-        "ku": "Di ceribandinekê de bi nimûneyên avê X, Y û Z ev çavdêrî hatin tomarkirin:\nX: Bi sabûnê re pir kef dide; dema tê kelandin bermayî nahêle.\nY: Bi sabûnê re hindik kef dide; dema tê kelandin bermayiyeke spî çêdibe, ava parzûnkirî bi sabûnê re pir kef dide.\nZ: Bi sabûnê re hindik kef dide; dema tê kelandin bermayî çênabe, ava kelandî û parzûnkirî jî bi sabûnê re hindik kef dide.\nLi gorî vê, kîjan ji van gotinan rast e?"
+        "tr": "Tabloda X, Y ve Z su örnekleriyle yapılan deneyin gözlemleri verilmiştir. Bu örneklerle ilgili aşağıdaki yargılardan hangisi doğrudur?",
+        "en": "The table gives the observations of an experiment with water samples X, Y and Z. Which of the following statements about these samples is correct?",
+        "de": "Die Tabelle zeigt die Beobachtungen eines Versuchs mit den Wasserproben X, Y und Z. Welche der folgenden Aussagen über diese Proben ist richtig?",
+        "fr": "Le tableau donne les observations d'une expérience réalisée avec les échantillons d'eau X, Y et Z. Laquelle des affirmations suivantes sur ces échantillons est correcte ?",
+        "ru": "В таблице приведены наблюдения опыта с пробами воды X, Y и Z. Какое из следующих утверждений об этих пробах верно?",
+        "ar": "يبين الجدول مشاهدات تجربة أُجريت على عينات الماء X وY وZ. أيّ العبارات الآتية عن هذه العينات صحيحة؟",
+        "zh": "表中给出了用水样 X、Y、Z 进行实验的观察结果。下列关于这些水样的说法中哪一项正确？",
+        "ku": "Di tabloyê de çavdêriyên ceribandineke bi nimûneyên avê X, Y û Z hatine dayîn. Derbarê van nimûneyan de kîjan ji van gotinan rast e?"
       },
       "options": [
         {
@@ -1575,19 +1627,165 @@ export const unit05: ChemistryUnitSeedData = {
         "ar": "بما أن Y كوّن راسب CaCO3 عند الغليان ثم أعطى رغوة كثيرة، فقد أزيل عسره كليًا بالغليان؛ وهذا عسر مؤقت ناتج عن البيكربونات. X يعطي رغوة كثيرة فهو يسر. أما Z فرغوته قليلة ولا يتحسن بالغليان، فهو يحتوي على Ca2+/Mg2+ وعسره دائم ناتج عن الكبريتات/الكلوريدات ولا يزول بالغليان.",
         "zh": "Y 煮沸时生成 CaCO3 沉淀，之后与肥皂产生大量泡沫，说明其硬度已被煮沸完全除去，是碳酸氢盐引起的暂时硬度。X 泡沫多，是软水。Z 泡沫少且煮沸后无改善，说明含 Ca2+ 或 Mg2+，属于硫酸盐或氯化物引起的永久硬度，不能用煮沸除去。",
         "ku": "Ji ber ku Y bi kelandinê bermayiya CaCO3 çêdike û paşê bi sabûnê re pir kef dide, hişkiya wê bi kelandinê bi tevahî hatiye rakirin; ev hişkiya demkî ya ji bîkarbonatan e. X ji ber ku bi sabûnê re pir kef dide nerm e. Z her çend hindik kef dide jî bi kelandinê baştir nabe; ango Ca2+/Mg2+ dihewîne û hişkiya wê hişkiya daîmî ya ji sulfat/klorîdê ye, bi kelandinê nayê rakirin."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Örnek",
+            "en": "Sample",
+            "de": "Probe",
+            "fr": "Échantillon",
+            "ru": "Проба",
+            "ar": "العينة",
+            "zh": "水样",
+            "ku": "Nimûne"
+          },
+          {
+            "tr": "Sabunla köpük",
+            "en": "Lather with soap",
+            "de": "Schaum mit Seife",
+            "fr": "Mousse avec savon",
+            "ru": "Пена с мылом",
+            "ar": "الرغوة مع الصابون",
+            "zh": "加肥皂起泡",
+            "ku": "Kef bi sabûnê"
+          },
+          {
+            "tr": "Kaynatınca tortu",
+            "en": "Deposit on boiling",
+            "de": "Niederschlag beim Kochen",
+            "fr": "Dépôt à l'ébullition",
+            "ru": "Осадок при кипячении",
+            "ar": "راسب عند الغلي",
+            "zh": "煮沸时沉淀",
+            "ku": "Bermayî bi kelandinê"
+          },
+          {
+            "tr": "Kaynatılıp süzülünce sabunla köpük",
+            "en": "Lather after boiling and filtering",
+            "de": "Schaum nach Kochen und Filtrieren",
+            "fr": "Mousse après ébullition et filtration",
+            "ru": "Пена после кипячения и фильтрования",
+            "ar": "الرغوة بعد الغلي والترشيح",
+            "zh": "煮沸过滤后加肥皂起泡",
+            "ku": "Kef piştî kelandin û parzûnkirinê"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            {
+              "tr": "Bol",
+              "en": "Abundant",
+              "de": "Viel",
+              "fr": "Abondante",
+              "ru": "Обильная",
+              "ar": "كثيفة",
+              "zh": "多",
+              "ku": "Pir"
+            },
+            {
+              "tr": "Yok",
+              "en": "None",
+              "de": "Keiner",
+              "fr": "Aucun",
+              "ru": "Нет",
+              "ar": "لا يوجد",
+              "zh": "无",
+              "ku": "Tune"
+            },
+            {
+              "tr": "Bol",
+              "en": "Abundant",
+              "de": "Viel",
+              "fr": "Abondante",
+              "ru": "Обильная",
+              "ar": "كثيفة",
+              "zh": "多",
+              "ku": "Pir"
+            }
+          ],
+          [
+            "Y",
+            {
+              "tr": "Az",
+              "en": "Little",
+              "de": "Wenig",
+              "fr": "Faible",
+              "ru": "Слабая",
+              "ar": "قليلة",
+              "zh": "少",
+              "ku": "Hindik"
+            },
+            {
+              "tr": "Var (beyaz)",
+              "en": "Yes (white)",
+              "de": "Ja (weiß)",
+              "fr": "Oui (blanc)",
+              "ru": "Есть (белый)",
+              "ar": "يوجد (أبيض)",
+              "zh": "有（白色）",
+              "ku": "Heye (spî)"
+            },
+            {
+              "tr": "Bol",
+              "en": "Abundant",
+              "de": "Viel",
+              "fr": "Abondante",
+              "ru": "Обильная",
+              "ar": "كثيفة",
+              "zh": "多",
+              "ku": "Pir"
+            }
+          ],
+          [
+            "Z",
+            {
+              "tr": "Az",
+              "en": "Little",
+              "de": "Wenig",
+              "fr": "Faible",
+              "ru": "Слабая",
+              "ar": "قليلة",
+              "zh": "少",
+              "ku": "Hindik"
+            },
+            {
+              "tr": "Yok",
+              "en": "None",
+              "de": "Keiner",
+              "fr": "Aucun",
+              "ru": "Нет",
+              "ar": "لا يوجد",
+              "zh": "无",
+              "ku": "Tune"
+            },
+            {
+              "tr": "Az",
+              "en": "Little",
+              "de": "Wenig",
+              "fr": "Faible",
+              "ru": "Слабая",
+              "ar": "قليلة",
+              "zh": "少",
+              "ku": "Hindik"
+            }
+          ]
+        ]
       }
     },
     {
       "id": "u05-twin08",
       "stem": {
-        "tr": "Cıva ile kirlenmiş bir gölde ölçülen cıva derişimleri şöyledir: göl suyu 0,0001 ppm; plankton 0,01 ppm; küçük balık 0,2 ppm; büyük yırtıcı balık 1 ppm. Bu verilere göre aşağıdakilerden hangisi söylenebilir?",
-        "en": "The mercury concentrations measured in a mercury-polluted lake are: lake water 0.0001 ppm; plankton 0.01 ppm; small fish 0.2 ppm; large predatory fish 1 ppm. Which of the following can be concluded from these data?",
-        "de": "In einem mit Quecksilber belasteten See werden folgende Quecksilberkonzentrationen gemessen: Seewasser 0,0001 ppm; Plankton 0,01 ppm; kleiner Fisch 0,2 ppm; großer Raubfisch 1 ppm. Welche Aussage lässt sich aus diesen Daten ableiten?",
-        "fr": "Dans un lac pollué au mercure, on mesure les concentrations suivantes : eau du lac 0,0001 ppm ; plancton 0,01 ppm ; petit poisson 0,2 ppm ; grand poisson prédateur 1 ppm. Que peut-on conclure de ces données ?",
-        "ru": "В озере, загрязнённом ртутью, измерены концентрации ртути: вода 0,0001 ppm; планктон 0,01 ppm; мелкая рыба 0,2 ppm; крупная хищная рыба 1 ppm. Какой вывод можно сделать из этих данных?",
-        "ar": "قيست تراكيز الزئبق في بحيرة ملوثة بالزئبق فكانت: ماء البحيرة 0.0001 ppm؛ العوالق 0.01 ppm؛ سمكة صغيرة 0.2 ppm؛ سمكة مفترسة كبيرة 1 ppm. أي مما يلي يمكن استنتاجه من هذه البيانات؟",
-        "zh": "在一个受汞污染的湖中测得汞浓度如下：湖水 0.0001 ppm；浮游生物 0.01 ppm；小鱼 0.2 ppm；大型肉食性鱼 1 ppm。根据这些数据可以得出下列哪个结论？",
-        "ku": "Di golekê de ku bi cîweyê qirêj bûye, tîrbûnên cîweyê wiha hatine pîvan: ava golê 0,0001 ppm; plankton 0,01 ppm; masiyê piçûk 0,2 ppm; masiyê nêçîrvan ê mezin 1 ppm. Li gorî van daneyan kîjan ji yên jêrîn dikare were gotin?"
+        "tr": "Tabloda cıva ile kirlenmiş bir gölün suyunda ve bu gölde yaşayan canlılarda ölçülen cıva derişimleri verilmiştir. Aşağıdaki çıkarımlardan hangisi doğrudur?",
+        "en": "The table gives the mercury concentrations measured in the water of a mercury-polluted lake and in organisms living in it. Which of the following conclusions is correct?",
+        "de": "Die Tabelle zeigt die Quecksilberkonzentrationen, die im Wasser eines mit Quecksilber belasteten Sees und in den darin lebenden Organismen gemessen wurden. Welche der folgenden Schlussfolgerungen ist richtig?",
+        "fr": "Le tableau donne les concentrations en mercure mesurées dans l'eau d'un lac pollué au mercure et chez les êtres vivants qui y vivent. Laquelle des conclusions suivantes est correcte ?",
+        "ru": "В таблице приведены концентрации ртути, измеренные в воде загрязнённого ртутью озера и в обитающих в нём организмах. Какой из следующих выводов верен?",
+        "ar": "يبين الجدول تراكيز الزئبق المقيسة في ماء بحيرة ملوثة بالزئبق وفي الكائنات الحية التي تعيش فيها. أيّ الاستنتاجات الآتية صحيح؟",
+        "zh": "表中给出了在某受汞污染湖泊的湖水及湖中生物体内测得的汞浓度。下列结论中哪一项正确？",
+        "ku": "Di tabloyê de tîrbûnên cîweyê yên di ava goleke bi cîweyê qirêjbûyî û di zindiyên ku tê de dijîn de hatine pîvan, hatine dayîn. Kîjan ji van encaman rast e?"
       },
       "options": [
         {
@@ -1651,6 +1849,112 @@ export const unit05: ChemistryUnitSeedData = {
         "ar": "يزداد التركيز باستمرار في الاتجاه ماء → عوالق → سمكة صغيرة → سمكة كبيرة (0.0001 → 0.01 → 0.2 → 1 ppm). وهذا يدل على أن الفلز الثقيل لا يتحلل ولا يُطرح بل يتراكم في الكائنات (التراكم الحيوي). أقل قيمة في الماء، وقيمة العوالق 100 ضعف قيمة الماء. أما السمكة الكبيرة فقيمتها ليست 100 ضعف بل 1 / 0.0001 = 10000 ضعف.",
         "zh": "浓度沿着水 → 浮游生物 → 小鱼 → 大鱼的方向不断升高(0.0001 → 0.01 → 0.2 → 1 ppm)，说明重金属在生物体内不被分解、不易排出而积累（生物富集）。最低值在水中；浮游生物是水的 100 倍。大鱼不是水的 100 倍，而是 1 / 0.0001 = 10000 倍。",
         "ku": "Tîrbûn li ser rêza av → plankton → masiyê piçûk → masiyê mezin bi domdarî zêde dibe (0,0001 → 0,01 → 0,2 → 1 ppm). Ev nîşan dide ku metala giran di zindiyan de perçe nabe, dernakeve û kom dibe (biyokombûn). Tîrbûna herî nizm di avê de ye; nirxa di planktonê de 100 qatê ya di avê de ye. Nirxa di masiyê mezin de ne 100 qat, lê 1 / 0,0001 = 10000 qatê ya di avê de ye."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Örnek",
+            "en": "Sample",
+            "de": "Probe",
+            "fr": "Échantillon",
+            "ru": "Образец",
+            "ar": "العينة",
+            "zh": "样品",
+            "ku": "Nimûne"
+          },
+          {
+            "tr": "Cıva derişimi (ppm)",
+            "en": "Mercury concentration (ppm)",
+            "de": "Quecksilberkonzentration (ppm)",
+            "fr": "Concentration en mercure (ppm)",
+            "ru": "Концентрация ртути (ppm)",
+            "ar": "تركيز الزئبق (ppm)",
+            "zh": "汞浓度 (ppm)",
+            "ku": "Tîrbûna cîweyê (ppm)"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "tr": "Göl suyu",
+              "en": "Lake water",
+              "de": "Seewasser",
+              "fr": "Eau du lac",
+              "ru": "Вода озера",
+              "ar": "ماء البحيرة",
+              "zh": "湖水",
+              "ku": "Ava golê"
+            },
+            {
+              "tr": "0,0001",
+              "en": "0.0001",
+              "de": "0,0001",
+              "fr": "0,0001",
+              "ru": "0,0001",
+              "ar": "0.0001",
+              "zh": "0.0001",
+              "ku": "0,0001"
+            }
+          ],
+          [
+            {
+              "tr": "Plankton",
+              "en": "Plankton",
+              "de": "Plankton",
+              "fr": "Plancton",
+              "ru": "Планктон",
+              "ar": "العوالق",
+              "zh": "浮游生物",
+              "ku": "Plankton"
+            },
+            {
+              "tr": "0,01",
+              "en": "0.01",
+              "de": "0,01",
+              "fr": "0,01",
+              "ru": "0,01",
+              "ar": "0.01",
+              "zh": "0.01",
+              "ku": "0,01"
+            }
+          ],
+          [
+            {
+              "tr": "Küçük balık",
+              "en": "Small fish",
+              "de": "Kleiner Fisch",
+              "fr": "Petit poisson",
+              "ru": "Мелкая рыба",
+              "ar": "سمكة صغيرة",
+              "zh": "小鱼",
+              "ku": "Masiyê biçûk"
+            },
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            }
+          ],
+          [
+            {
+              "tr": "Büyük yırtıcı balık",
+              "en": "Large predatory fish",
+              "de": "Großer Raubfisch",
+              "fr": "Grand poisson prédateur",
+              "ru": "Крупная хищная рыба",
+              "ar": "سمكة مفترسة كبيرة",
+              "zh": "大型肉食性鱼",
+              "ku": "Masiyê nêçîrvan ê mezin"
+            },
+            "1"
+          ]
+        ]
       }
     },
     {
@@ -2036,14 +2340,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin14",
       "stem": {
-        "tr": "Bir su örneğinin toplam sertliği CaCO3 cinsinden 300 ppm olarak ölçülüyor. Su kaynatılıp çöken tortu süzüldükten sonra sertliğin 120 ppm'e düştüğü belirleniyor. Buna göre bu sudaki geçici sertlik, toplam sertliğin yüzde kaçıdır?",
-        "en": "The total hardness of a water sample is measured as 300 ppm (as CaCO3). After the water is boiled and the precipitate is filtered off, the hardness has fallen to 120 ppm. What percentage of the total hardness of this water is temporary hardness?",
-        "de": "Die Gesamthärte einer Wasserprobe beträgt 300 ppm (als CaCO3). Nach dem Kochen und Abfiltrieren des Niederschlags ist die Härte auf 120 ppm gesunken. Wie viel Prozent der Gesamthärte dieses Wassers ist temporäre Härte?",
-        "fr": "La dureté totale d'un échantillon d'eau est de 300 ppm (en CaCO3). Après ébullition et filtration du précipité, la dureté n'est plus que de 120 ppm. Quel pourcentage de la dureté totale de cette eau représente la dureté temporaire ?",
-        "ru": "Общая жёсткость пробы воды равна 300 ppm (в пересчёте на CaCO3). После кипячения и отделения осадка фильтрованием жёсткость снизилась до 120 ppm. Сколько процентов общей жёсткости этой воды составляет временная жёсткость?",
-        "ar": "قيس العسر الكلي لعينة ماء فكان 300 ppm (مقدّرًا بـ CaCO3). وبعد غلي الماء وترشيح الراسب انخفض العسر إلى 120 ppm. ما النسبة المئوية للعسر المؤقت من العسر الكلي لهذا الماء؟",
-        "zh": "某水样的总硬度为 300 ppm(以 CaCO3 计)。将水煮沸并滤去沉淀后，硬度降为 120 ppm。这种水的暂时硬度占总硬度的百分之几？",
-        "ku": "Hişkiya giştî ya nimûneyeke avê wekî CaCO3 300 ppm hatiye pîvan. Piştî ku av tê kelandin û bermayiya ku dinişe tê parzûnkirin, tê dîtin ku hişkî daketiye 120 ppm. Li gorî vê, hişkiya demkî ya vê avê ji sedî çendê hişkiya giştî ye?"
+        "tr": "Bir su örneği kaynatılırken toplam sertliğinin (CaCO3 cinsinden) zamanla değişimi grafikte verilmiştir; oluşan tortu süzülerek ayrılmaktadır. Bu sudaki geçici sertlik, toplam sertliğin yüzde kaçıdır?",
+        "en": "The graph shows how the total hardness (as CaCO3) of a water sample changes while it is boiled; the deposit formed is removed by filtration. What percentage of the total hardness of this water is temporary hardness?",
+        "de": "Das Diagramm zeigt, wie sich die Gesamthärte (als CaCO3) einer Wasserprobe beim Kochen ändert; der entstehende Niederschlag wird abfiltriert. Wie viel Prozent der Gesamthärte dieses Wassers ist temporäre Härte?",
+        "fr": "Le graphique montre l'évolution de la dureté totale (exprimée en CaCO3) d'un échantillon d'eau pendant son ébullition ; le dépôt formé est éliminé par filtration. Quel pourcentage de la dureté totale de cette eau correspond à la dureté temporaire ?",
+        "ru": "На графике показано изменение общей жёсткости (в пересчёте на CaCO3) пробы воды при кипячении; образующийся осадок отделяют фильтрованием. Какой процент общей жёсткости этой воды составляет временная жёсткость?",
+        "ar": "يبين الرسم البياني تغيّر العسر الكلي (مقدّرة بـ CaCO3) لعينة ماء أثناء غليها، ويُفصل الراسب المتكوّن بالترشيح. ما النسبة المئوية التي يمثلها العسر المؤقت من العسر الكلي لهذا الماء؟",
+        "zh": "图中给出了某水样在煮沸过程中总硬度（以 CaCO3 计）随时间的变化，生成的沉淀经过滤除去。该水的暂时硬度占总硬度的百分之几？",
+        "ku": "Grafîk nîşan dide ka hişkiya giştî (wekî CaCO3) ya nimûneyeke avê di dema kelandinê de çawa diguhere; bermayiya ku çêdibe bi parzûnkirinê tê veqetandin. Hişkiya demkî ya vê avê ji sedî çendê hişkiya giştî ye?"
       },
       "options": [
         {
@@ -2099,14 +2403,73 @@ export const unit05: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Kaynatmayla yalnızca geçici sertlik giderilir; kalan 120 ppm kalıcı sertliktir. Geçici sertlik = 300 − 120 = 180 ppm. Toplamdaki payı = 180 / 300 × 100 = %60. %40 sonucu kalan (kalıcı) sertliğin payıdır (120 / 300); %180 ise ppm değerini doğrudan yüzde gibi yazmaktan, %150 ve %250 de oranları ters kurmaktan (180 / 120, 300 / 120) gelir.",
-        "en": "Boiling removes only temporary hardness; the remaining 120 ppm is permanent hardness. Temporary hardness = 300 − 120 = 180 ppm. Its share of the total = 180 / 300 × 100 = 60%. The result 40% is the share of the remaining (permanent) hardness (120 / 300); 180% comes from writing the ppm value directly as a percentage, and 150% and 250% from setting up the ratios upside down (180 / 120, 300 / 120).",
-        "de": "Durch Kochen wird nur die temporäre Härte entfernt; die verbleibenden 120 ppm sind bleibende Härte. Temporäre Härte = 300 − 120 = 180 ppm. Anteil an der Gesamthärte = 180 / 300 × 100 = 60 %. 40 % ist der Anteil der verbleibenden (bleibenden) Härte (120 / 300); 180 % entsteht, wenn man den ppm-Wert direkt als Prozent schreibt, 150 % und 250 % durch umgekehrt gebildete Verhältnisse (180 / 120, 300 / 120).",
-        "fr": "L'ébullition n'élimine que la dureté temporaire ; les 120 ppm restants sont la dureté permanente. Dureté temporaire = 300 − 120 = 180 ppm. Part dans le total = 180 / 300 × 100 = 60 %. Le résultat 40 % est la part de la dureté restante (permanente) (120 / 300) ; 180 % vient de l'écriture directe de la valeur en ppm comme pourcentage, et 150 % et 250 % de rapports inversés (180 / 120, 300 / 120).",
-        "ru": "Кипячением устраняется только временная жёсткость; оставшиеся 120 ppm — постоянная жёсткость. Временная жёсткость = 300 − 120 = 180 ppm. Её доля = 180 / 300 × 100 = 60 %. Ответ 40 % — это доля оставшейся (постоянной) жёсткости (120 / 300); 180 % получается, если записать значение в ppm как проценты, а 150 % и 250 % — если перевернуть отношения (180 / 120, 300 / 120).",
-        "ar": "يزيل الغليان العسر المؤقت فقط؛ والـ 120 ppm المتبقية هي العسر الدائم. العسر المؤقت = 300 − 120 = 180 ppm. نسبته من الكلي = 180 / 300 × 100 = 60%. الناتج 40% هو نسبة العسر المتبقي (الدائم) (120 / 300)؛ و180% يأتي من كتابة قيمة ppm مباشرة كنسبة مئوية، و150% و250% من قلب النسبتين (180 / 120، 300 / 120).",
-        "zh": "煮沸只能除去暂时硬度，剩下的 120 ppm 是永久硬度。暂时硬度 = 300 − 120 = 180 ppm，占总硬度的 180 / 300 × 100 = 60%。40% 是剩余（永久）硬度所占的比例(120 / 300)；180% 是把 ppm 数值直接当成百分数；150% 和 250% 是把比值倒过来算(180 / 120、300 / 120)。",
-        "ku": "Bi kelandinê tenê hişkiya demkî tê rakirin; 120 ppm-ya mayî hişkiya daîmî ye. Hişkiya demkî = 300 − 120 = 180 ppm. Para wê di hişkiya giştî de = 180 / 300 × 100 = %60. Encama %40 para hişkiya mayî (daîmî) ye (120 / 300); %180 ji nivîsandina nirxa ppm rasterast wekî ji sedî tê, %150 û %250 jî ji danîna rêjeyan bi berevajî (180 / 120, 300 / 120) tên."
+        "tr": "Grafikte sertlik 300 ppm'den başlayıp 120 ppm'de sabitlenmektedir. Kaynatmayla yalnızca geçici sertlik giderilir; kalan 120 ppm kalıcı sertliktir. Geçici sertlik = 300 − 120 = 180 ppm. Toplamdaki payı = 180 / 300 × 100 = %60. %40 sonucu kalan (kalıcı) sertliğin payıdır (120 / 300); %180 ise ppm değerini doğrudan yüzde gibi yazmaktan, %150 ve %250 de oranları ters kurmaktan (180 / 120, 300 / 120) gelir.",
+        "en": "In the graph, hardness starts at 300 ppm and levels off at 120 ppm. Boiling removes only temporary hardness; the remaining 120 ppm is permanent hardness. Temporary hardness = 300 − 120 = 180 ppm. Its share of the total = 180 / 300 × 100 = 60%. The result 40% is the share of the remaining (permanent) hardness (120 / 300); 180% comes from writing the ppm value directly as a percentage, and 150% and 250% from setting up the ratios upside down (180 / 120, 300 / 120).",
+        "de": "Im Diagramm beginnt die Härte bei 300 ppm und bleibt dann bei 120 ppm konstant. Durch Kochen wird nur die temporäre Härte entfernt; die verbleibenden 120 ppm sind bleibende Härte. Temporäre Härte = 300 − 120 = 180 ppm. Anteil an der Gesamthärte = 180 / 300 × 100 = 60 %. 40 % ist der Anteil der verbleibenden (bleibenden) Härte (120 / 300); 180 % entsteht, wenn man den ppm-Wert direkt als Prozent schreibt, 150 % und 250 % durch umgekehrt gebildete Verhältnisse (180 / 120, 300 / 120).",
+        "fr": "Sur le graphique, la dureté part de 300 ppm et se stabilise à 120 ppm. L'ébullition n'élimine que la dureté temporaire ; les 120 ppm restants sont la dureté permanente. Dureté temporaire = 300 − 120 = 180 ppm. Part dans le total = 180 / 300 × 100 = 60 %. Le résultat 40 % est la part de la dureté restante (permanente) (120 / 300) ; 180 % vient de l'écriture directe de la valeur en ppm comme pourcentage, et 150 % et 250 % de rapports inversés (180 / 120, 300 / 120).",
+        "ru": "На графике жёсткость начинается с 300 ppm и выходит на постоянное значение 120 ppm. Кипячением устраняется только временная жёсткость; оставшиеся 120 ppm — постоянная жёсткость. Временная жёсткость = 300 − 120 = 180 ppm. Её доля = 180 / 300 × 100 = 60 %. Ответ 40 % — это доля оставшейся (постоянной) жёсткости (120 / 300); 180 % получается, если записать значение в ppm как проценты, а 150 % и 250 % — если перевернуть отношения (180 / 120, 300 / 120).",
+        "ar": "في الرسم البياني يبدأ العسر عند 300 ppm ثم يثبت عند 120 ppm. يزيل الغليان العسر المؤقت فقط؛ والـ 120 ppm المتبقية هي العسر الدائم. العسر المؤقت = 300 − 120 = 180 ppm. نسبته من الكلي = 180 / 300 × 100 = 60%. الناتج 40% هو نسبة العسر المتبقي (الدائم) (120 / 300)؛ و180% يأتي من كتابة قيمة ppm مباشرة كنسبة مئوية، و150% و250% من قلب النسبتين (180 / 120، 300 / 120).",
+        "zh": "图中硬度从 300 ppm 开始，最后稳定在 120 ppm。煮沸只能除去暂时硬度，剩下的 120 ppm 是永久硬度。暂时硬度 = 300 − 120 = 180 ppm，占总硬度的 180 / 300 × 100 = 60%。40% 是剩余（永久）硬度所占的比例(120 / 300)；180% 是把 ppm 数值直接当成百分数；150% 和 250% 是把比值倒过来算(180 / 120、300 / 120)。",
+        "ku": "Di grafîkê de hişkî ji 300 ppm dest pê dike û li 120 ppm sabit dibe. Bi kelandinê tenê hişkiya demkî tê rakirin; 120 ppm-ya mayî hişkiya daîmî ye. Hişkiya demkî = 300 − 120 = 180 ppm. Para wê di hişkiya giştî de = 180 / 300 × 100 = %60. Encama %40 para hişkiya mayî (daîmî) ye (120 / 300); %180 ji nivîsandina nirxa ppm rasterast wekî ji sedî tê, %150 û %250 jî ji danîna rêjeyan bi berevajî (180 / 120, 300 / 120) tên."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman",
+          "en": "Time",
+          "de": "Zeit",
+          "fr": "Temps",
+          "ru": "Время",
+          "ar": "الزمن",
+          "zh": "时间",
+          "ku": "Dem"
+        },
+        "yLabel": {
+          "tr": "Sertlik (ppm CaCO₃)",
+          "en": "Hardness (ppm CaCO₃)",
+          "de": "Härte (ppm CaCO₃)",
+          "fr": "Dureté (ppm CaCO₃)",
+          "ru": "Жёсткость (ppm CaCO₃)",
+          "ar": "العسر (ppm CaCO₃)",
+          "zh": "硬度 (ppm CaCO₃)",
+          "ku": "Hişkî (ppm CaCO₃)"
+        },
+        "xMax": 20,
+        "yMax": 350,
+        "yTicks": [
+          120,
+          300
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                300
+              ],
+              [
+                3,
+                232
+              ],
+              [
+                6,
+                172
+              ],
+              [
+                9,
+                132
+              ],
+              [
+                12,
+                120
+              ],
+              [
+                20,
+                120
+              ]
+            ]
+          }
+        ]
       }
     },
     {

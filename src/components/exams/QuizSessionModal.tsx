@@ -21,6 +21,7 @@ import type { ExamResultRecord } from '../../store/useAppStore';
 import { sfx } from '../../audio/sfx';
 import { calculateOsymNet, estimateTgPercentile, type TgPercentileResult } from '../../engine/mockExamCatalog';
 import { ChemicalDiagram } from '../diagrams/ChemicalDiagram';
+import { QuestionFigureView } from '../common/QuestionFigureView';
 import { formatChemText, formatChemBlock } from '../common/ChemFormula';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { EXAM_STRINGS } from '../../i18n/examStrings';
@@ -601,6 +602,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                     </span>
                     <span className="ky-chip ky-mono">{currentQ.unitId.toUpperCase()}</span>
                   </div>
+                  {currentQ.figure && <QuestionFigureView figure={currentQ.figure} />}
                   <h1 className={`ky-fs-20 qz-stem ${isLongStem(currentQ.stem) ? 'qz-stem--long' : ''}`}>
                     {currentQ.stem
                       .split(/\n\s*\n/)

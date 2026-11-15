@@ -324,24 +324,24 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Di tîtrasyona asîda bihêz - baza bihêz de li 25 °C pH-a xala hevtayê 7,00 e."
       },
       "trap": {
-        "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0'dır.",
-        "en": "In a strong acid strong base titration, pH is 0 at the equivalence point.",
-        "de": "Bei einer Titration mit starker Säure und starker Base beträgt der pH-Wert am Äquivalenzpunkt 0.",
-        "fr": "Dans un titrage acide fort base forte, le pH est de 0 au point d’équivalence.",
-        "ru": "При титровании сильной кислоты сильным основанием pH в точке эквивалентности равен 0.",
-        "ar": "في معايرة حمض قوي بقاعدة قوية، يكون الرقم الهيدروجيني 0 عند نقطة التكافؤ.",
-        "zh": "强酸-强碱滴定中，化学计量点的 pH 为 0。",
-        "ku": "Di tîtrasyona asîda bihêz - baza bihêz de li xala hevtayê pH 0 ye."
+        "tr": "Kuvvetli asit - kuvvetli baz titrasyonunun eşdeğerlik noktasında çözeltide hiç H+ ve OH- iyonu kalmaz.",
+        "en": "At the equivalence point of a strong acid - strong base titration, no H+ or OH- ions at all remain in the solution.",
+        "de": "Am Äquivalenzpunkt einer Titration starke Säure - starke Base sind überhaupt keine H+- und OH--Ionen mehr in der Lösung.",
+        "fr": "Au point d'équivalence d'un titrage acide fort - base forte, il ne reste plus aucun ion H+ ni OH- dans la solution.",
+        "ru": "В точке эквивалентности титрования сильной кислоты сильным основанием в растворе совсем не остаётся ионов H+ и OH-.",
+        "ar": "عند نقطة التكافؤ في معايرة حمض قوي بقاعدة قوية لا يبقى في المحلول أي أيون H+ أو OH- إطلاقًا.",
+        "zh": "强酸-强碱滴定到达化学计量点时，溶液中完全没有 H+ 和 OH- 离子。",
+        "ku": "Li xala hevtayê ya tîtrasyona asîda bihêz - baza bihêz, di çareseriyê de qet îyonên H+ û OH- namînin."
       },
       "whyTrapIsFalse": {
-        "tr": "Eşdeğerlik noktasında asit tamamen nötrleşmiştir; ortamda yalnızca hidroliz olmayan tuz (ör. NaCl) ve su kalır. Bu yüzden pH 0 değil, 25 °C'de 7'dir.",
-        "en": "At the equivalence point the acid is completely neutralized; only a non-hydrolyzing salt (e.g. NaCl) and water remain. Therefore the pH is 7 at 25 °C, not 0.",
-        "de": "Am Äquivalenzpunkt ist die Säure vollständig neutralisiert; es bleiben nur ein nicht hydrolysierendes Salz (z. B. NaCl) und Wasser. Daher ist der pH bei 25 °C 7 und nicht 0.",
-        "fr": "Au point d’équivalence, l’acide est totalement neutralisé ; il ne reste qu’un sel qui ne s’hydrolyse pas (ex. NaCl) et de l’eau. Le pH vaut donc 7 à 25 °C, et non 0.",
-        "ru": "В точке эквивалентности кислота полностью нейтрализована; остаются только негидролизующаяся соль (например, NaCl) и вода. Поэтому pH при 25 °C равен 7, а не 0.",
-        "ar": "عند نقطة التكافؤ يكون الحمض قد تعادل كليًا ولا يبقى إلا ملح لا يتحلل مائيًا (مثل NaCl) والماء، لذلك يكون pH مساويًا 7 عند 25 °C وليس 0.",
-        "zh": "化学计量点时酸已被完全中和，只剩不水解的盐(如 NaCl)和水，因此 25 °C 时 pH 为 7，而不是 0。",
-        "ku": "Li xala hevtayê asîd bi tevahî neutralîze bûye; tenê xwêyeke ku hîdroliz nabe (mînak NaCl) û av dimînin. Ji ber vê yekê li 25 °C pH ne 0, lê 7 e."
+        "tr": "Eşdeğerlik noktasında asit ve baz birbirini tam nötrleştirir, ancak su kendiliğinden iyonlaşmaya devam eder: 25 °C'de [H+] = [OH-] = 1,0x10^-7 M'dir ve pH 7'dir. Nötrleşme iyonları yok etmez, yalnızca eşitler.",
+        "en": "At the equivalence point the acid and base neutralise each other exactly, but water keeps auto-ionising: at 25 °C [H+] = [OH-] = 1.0x10^-7 M and the pH is 7. Neutralisation does not remove these ions; it only makes them equal.",
+        "de": "Am Äquivalenzpunkt neutralisieren sich Säure und Base genau, Wasser protolysiert aber weiterhin: Bei 25 °C ist [H+] = [OH-] = 1,0x10^-7 M und der pH-Wert 7. Die Neutralisation beseitigt diese Ionen nicht, sie macht sie nur gleich.",
+        "fr": "Au point d'équivalence, l'acide et la base se neutralisent exactement, mais l'eau continue de s'autoioniser : à 25 °C, [H+] = [OH-] = 1,0x10^-7 M et le pH vaut 7. La neutralisation ne supprime pas ces ions, elle les rend seulement égaux.",
+        "ru": "В точке эквивалентности кислота и основание полностью нейтрализуют друг друга, но автоионизация воды продолжается: при 25 °C [H+] = [OH-] = 1,0x10^-7 M и pH = 7. Нейтрализация не уничтожает эти ионы, а лишь уравнивает их концентрации.",
+        "ar": "عند نقطة التكافؤ يعادل الحمض والقاعدة كلٌّ منهما الآخر تمامًا، لكن الماء يستمر في التأين الذاتي: عند 25 °C يكون [H+] = [OH-] = 1.0x10^-7 M وpH = 7. التعادل لا يُزيل هذه الأيونات بل يجعل تركيزيهما متساويين فقط.",
+        "zh": "在化学计量点酸和碱恰好完全中和，但水仍在自偶电离：25 °C 时 [H+] = [OH-] = 1.0x10^-7 M，pH = 7。中和并不会消除这些离子，只是使二者浓度相等。",
+        "ku": "Li xala hevtayê asîd û baz hev bi tevahî bêalî dikin, lê av xweber îyonîze dibe: li 25 °C [H+] = [OH-] = 1,0x10^-7 M û pH 7 e. Bêalîkirin van îyonan ji holê ranake, tenê wan wekhev dike."
       }
     },
     {
@@ -610,14 +610,14 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Asîda Qels"
       },
       "distinction": {
-        "tr": "Kuvvetli asit suda tamamen (%100) iyonlaşır; iyonlaşması tek yönlü kabul edildiğinden Ka ile denge hesabı yapılmaz. Zayıf asit ise kısmen iyonlaşarak denge kurar ve kuvveti Ka değeriyle ifade edilir.",
-        "en": "A strong acid ionizes completely (100%) in water; its ionization is treated as one-way, so no equilibrium calculation with Ka is made. A weak acid ionizes only partially, establishes an equilibrium, and its strength is expressed by its Ka value.",
-        "de": "Starke Säure: ionisiert in Wasser vollständig (zu 100 %); die Ionisation gilt als einseitig, daher wird keine Gleichgewichtsrechnung mit Ka durchgeführt. Eine schwache Säure ionisiert nur teilweise, es stellt sich ein Gleichgewicht ein, und ihre Stärke wird durch den Ka-Wert angegeben.",
-        "fr": "Acide fort : s'ionise totalement (à 100 %) dans l'eau ; son ionisation est considérée comme totale et à sens unique, on ne fait donc pas de calcul d'équilibre avec Ka. Un acide faible ne s'ionise que partiellement, établit un équilibre, et sa force s'exprime par la valeur de Ka.",
-        "ru": "Сильная кислота диссоциирует в воде полностью (на 100 %); такую диссоциацию считают необратимой, и равновесный расчёт с Ka не проводят. Слабая кислота диссоциирует лишь частично с установлением равновесия, и её силу выражают значением Ka.",
-        "ar": "الحمض القوي يتأين في الماء تأينًا تامًّا (100%)، ويُعدّ تأينه في اتجاه واحد فلا تُجرى له حسابات اتزان باستخدام Ka؛ أما الأحماض الضعيفة فتتأين جزئيًا وتكوّن اتزانًا، ويُعبَّر عن قوتها بقيمة Ka.",
-        "zh": "强酸在水中完全(100%)电离，电离视为不可逆，因此不用 Ka 作平衡计算；弱酸只部分电离并建立平衡，其强弱用 Ka 值表示。",
-        "ku": "Asîda bihêz di avê de bi tevahî (ji sedî 100) îyonîze dibe; îyonîzasyona wê yekalî tê hesibandin, ji ber vê yekê bi Ka hesabê hevsengiyê nayê kirin. Asîda qels bi qismî îyonîze dibe, hevsengiyê saz dike û hêza wê bi nirxa Ka tê diyarkirin."
+        "tr": "Kuvvetli asit suda tamamen (%100) iyonlaşır ve [H+] doğrudan asidin başlangıç derişimine eşit olur; iyonlaşması tek yönlü kabul edildiğinden Ka ile denge hesabı yapılmaz. Zayıf asit ise kısmen iyonlaşarak denge kurar ve kuvveti Ka değeriyle ifade edilir.",
+        "en": "A strong acid ionizes completely (100%) in water, so [H+] simply equals the initial acid concentration; its ionization is treated as one-way, so no equilibrium calculation with Ka is made. A weak acid ionizes only partially, establishes an equilibrium, and its strength is expressed by its Ka value.",
+        "de": "Starke Säure: ionisiert in Wasser vollständig (zu 100 %), sodass [H+] gleich der Anfangskonzentration der Säure ist; die Ionisation gilt als einseitig, daher wird keine Gleichgewichtsrechnung mit Ka durchgeführt. Eine schwache Säure ionisiert nur teilweise, es stellt sich ein Gleichgewicht ein, und ihre Stärke wird durch den Ka-Wert angegeben.",
+        "fr": "Acide fort : s'ionise totalement (à 100 %) dans l'eau, de sorte que [H+] est égale à la concentration initiale de l'acide ; son ionisation est considérée comme totale et à sens unique, on ne fait donc pas de calcul d'équilibre avec Ka. Un acide faible ne s'ionise que partiellement, établit un équilibre, et sa force s'exprime par la valeur de Ka.",
+        "ru": "Сильная кислота диссоциирует в воде полностью (на 100 %), поэтому [H+] просто равна исходной концентрации кислоты; такую диссоциацию считают необратимой, и равновесный расчёт с Ka не проводят. Слабая кислота диссоциирует лишь частично с установлением равновесия, и её силу выражают значением Ka.",
+        "ar": "الحمض القوي يتأين في الماء تأينًا تامًّا (100%) فيكون [H+] مساويًا للتركيز الابتدائي للحمض، ويُعدّ تأينه في اتجاه واحد فلا تُجرى له حسابات اتزان باستخدام Ka؛ أما الأحماض الضعيفة فتتأين جزئيًا وتكوّن اتزانًا، ويُعبَّر عن قوتها بقيمة Ka.",
+        "zh": "强酸在水中完全(100%)电离，[H+] 直接等于酸的起始浓度，电离视为不可逆，因此不用 Ka 作平衡计算；弱酸只部分电离并建立平衡，其强弱用 Ka 值表示。",
+        "ku": "Asîda bihêz di avê de bi tevahî (ji sedî 100) îyonîze dibe û [H+] rasterast bi tîrbûna destpêkê ya asîdê re wekhev e; îyonîzasyona wê yekalî tê hesibandin, ji ber vê yekê bi Ka hesabê hevsengiyê nayê kirin. Asîda qels bi qismî îyonîze dibe, hevsengiyê saz dike û hêza wê bi nirxa Ka tê diyarkirin."
       }
     },
     {
@@ -841,14 +841,14 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Hîdroliza Anyonê"
       },
       "distinction": {
-        "tr": "Zayıf bazdan gelen katyon (NH4+) hidroliz olarak asidik ortam yapar; zayıf asitten gelen anyon (CH3COO-) hidrolizle bazik ortam yapar.",
-        "en": "The cation (NH4+) coming from the weak base creates an acidic environment by hydrolysis; the anion (CH3COO-) coming from the weak acid creates a basic environment by hydrolysis.",
-        "de": "Das aus der schwachen Base stammende Kation (NH4+) erzeugt durch Hydrolyse ein saures Milieu; das aus der schwachen Säure stammende Anion (CH3COO-) erzeugt durch Hydrolyse ein basisches Milieu.",
-        "fr": "Le cation (NH4+) issu de la base faible crée un milieu acide par hydrolyse ; l'anion (CH3COO-) issu de l'acide faible crée un milieu basique par hydrolyse.",
+        "tr": "Katyon hidrolizinde zayıf bazdan gelen katyon (NH4+) suyla tepkimeye girip H3O+ oluşturur ve ortam asidik olur; anyon hidrolizinde ise zayıf asitten gelen anyon (CH3COO-) suyla tepkimeye girip OH- oluşturur ve ortam bazik olur.",
+        "en": "In cation hydrolysis the cation of a weak base (NH4+) reacts with water to form H3O+, making the solution acidic; in anion hydrolysis the anion of a weak acid (CH3COO-) reacts with water to form OH-, making the solution basic.",
+        "de": "Bei der Kationenhydrolyse reagiert das Kation einer schwachen Base (NH4+) mit Wasser zu H3O+, die Lösung wird sauer; bei der Anionenhydrolyse reagiert das Anion einer schwachen Säure (CH3COO-) mit Wasser zu OH-, die Lösung wird basisch.",
+        "fr": "Dans l'hydrolyse des cations, le cation d'une base faible (NH4+) réagit avec l'eau en formant H3O+ et la solution devient acide ; dans l'hydrolyse des anions, l'anion d'un acide faible (CH3COO-) réagit avec l'eau en formant OH- et la solution devient basique.",
         "ru": "Катионный гидролиз — гидролиз катиона слабого основания (NH4+), создающий кислую среду; анионный гидролиз — гидролиз аниона слабой кислоты (CH3COO-), создающий щелочную среду.",
-        "ar": "في التحلل المائي للكاتيون يتفاعل الكاتيون (NH4+) القادم من القاعدة الضعيفة مع الماء فيكسب المحلول صفة حمضية؛ أما في التحلل المائي للأنيون فيتفاعل الأنيون (CH3COO-) القادم من الحمض الضعيف مع الماء فيكسب المحلول صفة قاعدية.",
+        "ar": "في التحلل المائي للكاتيون يتفاعل الكاتيون (NH4+) القادم من القاعدة الضعيفة مع الماء مكوّنًا H3O+ فيصبح الوسط حمضيًّا؛ أما في التحلل المائي للأنيون فيتفاعل الأنيون (CH3COO-) القادم من الحمض الضعيف مع الماء مكوّنًا OH- فيصبح الوسط قاعديًّا.",
         "zh": "阳离子水解是来自弱碱的阳离子(如 NH4+)与水反应，使溶液呈酸性；阴离子水解是来自弱酸的阴离子(如 CH3COO-)与水反应，使溶液呈碱性。",
-        "ku": "Katyona ku ji baza qels tê (NH4+) hîdroliz dibe û derdora asîdî çêdike; anyona ku ji asîda qels tê (CH3COO-) bi hîdrolizê derdora bazî çêdike."
+        "ku": "Di hîdroliza katyonê de katyona baza qels (NH4+) bi avê re reaksiyonê dike û H3O+ çêdike, derdor asîdî dibe; di hîdroliza anyonê de jî anyona asîda qels (CH3COO-) bi avê re reaksiyonê dike û OH- çêdike, derdor bazî dibe."
       }
     }
   ],
@@ -1154,77 +1154,192 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin02",
       "stem": {
-        "tr": "0,1 M 100 mL HCl çözeltisini tam nötralleştirmek için 0,2 M NaOH çözeltisinden kaç mL harcanmalıdır?",
-        "en": "How many mL of 0.2 M NaOH solution should be consumed to completely neutralize 100 mL of 0.1 M HCl solution?",
-        "de": "Wie viele ml 0,2 M NaOH-Lösung sollten verbraucht werden, um 100 ml 0,1 M HCl-Lösung vollständig zu neutralisieren?",
-        "fr": "Combien de ml de solution de NaOH 0,2 M faut-il consommer pour neutraliser complètement 100 ml de solution de HCl 0,1 M ?",
-        "ru": "Сколько миллилитров 0,2 M раствора NaOH нужно для полной нейтрализации 100 мл 0,1 M раствора HCl?",
-        "ar": "كم mL من محلول NaOH تركيزه 0.2 M يلزم لمعادلة 100 mL من محلول HCl تركيزه 0.1 M معادلة تامة؟",
-        "zh": "完全中和 100 mL 0.1 M HCl 溶液需要消耗多少 mL 0.2 M NaOH 溶液？",
-        "ku": "Ji bo ku 100 mL çareseriya 0,1 M HCl bi tevahî neutralîze bibe, divê çend mL ji çareseriya 0,2 M NaOH were xerckirin?"
+        "tr": "Şekildeki grafik, 25 °C'de 20 mL HA zayıf asit çözeltisinin 0,1 M NaOH çözeltisiyle titrasyonuna ait titrasyon eğrisidir. I. HA çözeltisinin başlangıç derişimi 0,1 M'dir. II. HA'nın asitlik sabiti Ka = 1,0x10^-5'tir. III. Eşdeğerlik noktasında çözeltinin pH değeri 7'dir. yargılarından hangileri doğrudur?",
+        "en": "The graph is the titration curve of 20 mL of a weak acid HA solution titrated with 0.1 M NaOH at 25 °C. I. The initial concentration of the HA solution is 0.1 M. II. The acid dissociation constant of HA is Ka = 1.0x10^-5. III. The pH at the equivalence point is 7. Which of these statements are correct?",
+        "de": "Das Diagramm ist die Titrationskurve von 20 mL einer Lösung der schwachen Säure HA, titriert mit 0,1 M NaOH bei 25 °C. I. Die Anfangskonzentration der HA-Lösung beträgt 0,1 M. II. Die Säurekonstante von HA ist Ka = 1,0x10^-5. III. Am Äquivalenzpunkt beträgt der pH-Wert 7. Welche Aussagen sind richtig?",
+        "fr": "Le graphique est la courbe de titrage de 20 mL d'une solution d'acide faible HA par NaOH 0,1 M à 25 °C. I. La concentration initiale de la solution de HA est 0,1 M. II. La constante d'acidité de HA est Ka = 1,0x10^-5. III. Le pH au point d'équivalence vaut 7. Lesquelles de ces affirmations sont exactes ?",
+        "ru": "На графике показана кривая титрования 20 мл раствора слабой кислоты HA раствором NaOH 0,1 M при 25 °C. I. Начальная концентрация раствора HA равна 0,1 M. II. Константа кислотности HA Ka = 1,0x10^-5. III. В точке эквивалентности pH раствора равен 7. Какие утверждения верны?",
+        "ar": "الرسم البياني هو منحنى معايرة 20 mL من محلول الحمض الضعيف HA بمحلول NaOH تركيزه 0.1 M عند 25 °C. I. التركيز الابتدائي لمحلول HA هو 0.1 M. II. ثابت تأين الحمض HA هو Ka = 1.0x10^-5. III. قيمة pH عند نقطة التكافؤ 7. أيّ هذه العبارات صحيحة؟",
+        "zh": "图为 25 °C 时用 0.1 M NaOH 溶液滴定 20 mL 弱酸 HA 溶液的滴定曲线。I. HA 溶液的起始浓度为 0.1 M。II. HA 的电离常数 Ka = 1.0x10^-5。III. 化学计量点时溶液的 pH 为 7。以上说法中哪些正确？",
+        "ku": "Grafîk kevana tîtrasyonê ya 20 mL çareseriya asîda qels HA ye ku li 25 °C bi çareseriya 0,1 M NaOH tê tîtrekirin. I. Tîrbûna destpêkê ya çareseriya HA 0,1 M e. II. Sabîta asîdiyê ya HA Ka = 1,0x10^-5 e. III. Li xala hevtayê pH-a çareseriyê 7 e. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
-          "tr": "50 mL",
-          "en": "50 mL",
-          "de": "50 ml",
-          "fr": "50 ml",
-          "ru": "50 мл",
-          "ar": "50 mL",
-          "zh": "50 mL",
-          "ku": "50 mL"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "100 mL",
-          "en": "100 mL",
-          "de": "100 ml",
-          "fr": "100 ml",
-          "ru": "100 мл",
-          "ar": "100 mL",
-          "zh": "100 mL",
-          "ku": "100 mL"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "200 mL",
-          "en": "200 mL",
-          "de": "200 ml",
-          "fr": "200 ml",
-          "ru": "200 мл",
-          "ar": "200 mL",
-          "zh": "200 mL",
-          "ku": "200 mL"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "25 mL",
-          "en": "25 mL",
-          "de": "25 ml",
-          "fr": "25 ml",
-          "ru": "25 мл",
-          "ar": "25 mL",
-          "zh": "25 mL",
-          "ku": "25 mL"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "10 mL",
-          "en": "10 mL",
-          "de": "10 ml",
-          "fr": "10 ml",
-          "ru": "10 мл",
-          "ar": "10 mL",
-          "zh": "10 mL",
-          "ku": "10 mL"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Tam nötrleşmede asitten gelen H+ ile bazdan gelen OH- mol sayıları eşittir: Ma · Va · Za = Mb · Vb · Zb. HCl ve NaOH için tesir değerliği 1'dir: 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 mL. Baz çözeltisi asit çözeltisinden iki kat derişik olduğundan gereken hacim asit hacminin yarısıdır; hacimleri eşit almak 100 mL, oranı ters kurmak 200 mL sonucunu verir.",
-        "en": "At complete neutralization the moles of H+ from the acid equal the moles of OH- from the base: Ma · Va · Za = Mb · Vb · Zb. For HCl and NaOH the equivalence factor is 1: 0.1 · 100 · 1 = 0.2 · Vb · 1 → Vb = 50 mL. Because the base solution is twice as concentrated as the acid solution, half the acid volume is needed; taking equal volumes gives 100 mL and inverting the ratio gives 200 mL.",
-        "de": "Bei vollständiger Neutralisation ist die Stoffmenge an H+ aus der Säure gleich der Stoffmenge an OH- aus der Base: Ma · Va · Za = Mb · Vb · Zb. Für HCl und NaOH ist die Wertigkeit 1: 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 ml. Da die Basenlösung doppelt so konzentriert ist wie die Säurelösung, wird das halbe Säurevolumen benötigt; gleiche Volumina ergäben 100 ml, das umgekehrte Verhältnis 200 ml.",
-        "fr": "À la neutralisation complète, la quantité de H+ apportée par l'acide est égale à la quantité de OH- apportée par la base : Ma · Va · Za = Mb · Vb · Zb. Pour HCl et NaOH, la valence est 1 : 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 ml. La solution de base étant deux fois plus concentrée que la solution d'acide, il faut la moitié du volume d'acide ; prendre des volumes égaux donne 100 ml et inverser le rapport donne 200 ml.",
-        "ru": "При полной нейтрализации количество H+ кислоты равно количеству OH- основания: Ma · Va · Za = Mb · Vb · Zb. Для HCl и NaOH Z = 1: 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 мл. Раствор основания вдвое концентрированнее раствора кислоты, поэтому нужен вдвое меньший объём; если взять объёмы равными, получится 100 мл, если перевернуть отношение — 200 мл.",
-        "ar": "عند التعادل التام يتساوى عدد مولات H+ من الحمض مع عدد مولات OH- من القاعدة: Ma · Va · Za = Mb · Vb · Zb. ولكلٍّ من HCl و NaOH يكون Z = 1: 0.1 · 100 · 1 = 0.2 · Vb · 1 → Vb = 50 mL. ولأن محلول القاعدة تركيزه ضعف تركيز محلول الحمض، يلزم نصف حجم الحمض؛ أخذ حجمين متساويين يعطي 100 mL، وعكس النسبة يعطي 200 mL.",
-        "zh": "完全中和时，酸提供的 H+ 与碱提供的 OH- 物质的量相等：Ma · Va · Za = Mb · Vb · Zb。HCl 和 NaOH 的 Z 均为 1：0.1 · 100 · 1 = 0.2 · Vb · 1 → Vb = 50 mL。碱溶液的浓度是酸溶液的两倍，所以只需酸溶液体积的一半；若取相等体积会得 100 mL，若把比例弄反会得 200 mL。",
-        "ku": "Di neutralîzasyona temam de hejmara molên H+ yên ji asîdê û hejmara molên OH- yên ji bazê wekhev in: Ma · Va · Za = Mb · Vb · Zb. Ji bo HCl û NaOH Z = 1 e: 0,1 · 100 · 1 = 0,2 · Vb · 1 → Vb = 50 mL. Ji ber ku çareseriya bazê du qat ji çareseriya asîdê tîrtir e, nîvê qebareya asîdê bes e; girtina qebareyên wekhev 100 mL, berevajîkirina rêjeyê 200 mL dide."
+        "tr": "Grafikte dik sıçrama (eşdeğerlik noktası) 20 mL NaOH'de görülür. I doğru: n(NaOH) = 0,1 · 0,020 = 2,0x10^-3 mol = n(HA); [HA] = 2,0x10^-3 / 0,020 = 0,1 M. II doğru: eşdeğerlik hacminin yarısında (10 mL) asidin yarısı A-'ya dönüşmüştür, [HA] = [A-] olduğundan [H+] = Ka; grafikte bu noktada pH = 5, yani Ka = 1,0x10^-5. Başlangıç pH'ı da bunu doğrular: [H+] = √(1,0x10^-5 · 0,1) = 10^-3 M, pH = 3. III yanlış: eşdeğerlik noktasında ortamda A- iyonu vardır ve hidroliz olarak OH- oluşturur; grafikte bu noktadaki pH yaklaşık 8,9'dur, 7 değildir.",
+        "en": "The steep jump (equivalence point) occurs at 20 mL of NaOH. I is correct: n(NaOH) = 0.1 · 0.020 = 2.0x10^-3 mol = n(HA); [HA] = 2.0x10^-3 / 0.020 = 0.1 M. II is correct: at half the equivalence volume (10 mL) half of the acid has become A-, so [HA] = [A-] and [H+] = Ka; the graph shows pH = 5 there, so Ka = 1.0x10^-5. The initial pH confirms it: [H+] = √(1.0x10^-5 · 0.1) = 10^-3 M, pH = 3. III is incorrect: at the equivalence point the solution contains A-, which hydrolyses to form OH-; the graph gives a pH of about 8.9 there, not 7.",
+        "de": "Der steile Sprung (Äquivalenzpunkt) liegt bei 20 mL NaOH. I ist richtig: n(NaOH) = 0,1 · 0,020 = 2,0x10^-3 mol = n(HA); [HA] = 2,0x10^-3 / 0,020 = 0,1 M. II ist richtig: Beim halben Äquivalenzvolumen (10 mL) ist die Hälfte der Säure in A- umgewandelt, also [HA] = [A-] und [H+] = Ka; dort zeigt das Diagramm pH = 5, also Ka = 1,0x10^-5. Der Anfangs-pH bestätigt das: [H+] = √(1,0x10^-5 · 0,1) = 10^-3 M, pH = 3. III ist falsch: Am Äquivalenzpunkt liegt A- vor, das unter Bildung von OH- hydrolysiert; das Diagramm zeigt dort etwa pH 8,9, nicht 7.",
+        "fr": "Le saut brusque (point d'équivalence) se situe à 20 mL de NaOH. I est exacte : n(NaOH) = 0,1 · 0,020 = 2,0x10^-3 mol = n(HA) ; [HA] = 2,0x10^-3 / 0,020 = 0,1 M. II est exacte : à la demi-équivalence (10 mL), la moitié de l'acide est devenue A-, donc [HA] = [A-] et [H+] = Ka ; le graphique y indique pH = 5, d'où Ka = 1,0x10^-5. Le pH initial le confirme : [H+] = √(1,0x10^-5 · 0,1) = 10^-3 M, pH = 3. III est fausse : à l'équivalence, la solution contient A-, qui s'hydrolyse en formant OH- ; le graphique y donne un pH d'environ 8,9, pas 7.",
+        "ru": "Резкий скачок (точка эквивалентности) приходится на 20 мл NaOH. I верно: n(NaOH) = 0,1 · 0,020 = 2,0x10^-3 моль = n(HA); [HA] = 2,0x10^-3 / 0,020 = 0,1 M. II верно: при половине эквивалентного объёма (10 мл) половина кислоты превратилась в A-, поэтому [HA] = [A-] и [H+] = Ka; на графике здесь pH = 5, значит Ka = 1,0x10^-5. Это подтверждает и начальный pH: [H+] = √(1,0x10^-5 · 0,1) = 10^-3 M, pH = 3. III неверно: в точке эквивалентности в растворе есть ион A-, который гидролизуется с образованием OH-; по графику pH здесь около 8,9, а не 7.",
+        "ar": "تقع القفزة الحادة (نقطة التكافؤ) عند 20 mL من NaOH. I صحيحة: n(NaOH) = 0.1 · 0.020 = 2.0x10^-3 mol = n(HA)، و[HA] = 2.0x10^-3 / 0.020 = 0.1 M. II صحيحة: عند نصف حجم التكافؤ (10 mL) يتحول نصف الحمض إلى A- فيكون [HA] = [A-] و[H+] = Ka، ويبيّن الرسم أن pH = 5 هناك، إذن Ka = 1.0x10^-5. ويؤكد ذلك pH الابتدائي: [H+] = √(1.0x10^-5 · 0.1) = 10^-3 M وpH = 3. III خاطئة: عند نقطة التكافؤ يحتوي المحلول على A- الذي يتحلل مائيًّا مكوّنًا OH-، ويعطي الرسم pH نحو 8.9 هناك لا 7.",
+        "zh": "曲线的突跃（化学计量点）出现在加入 20 mL NaOH 处。I 正确：n(NaOH) = 0.1 · 0.020 = 2.0x10^-3 mol = n(HA)；[HA] = 2.0x10^-3 / 0.020 = 0.1 M。II 正确：在半计量点（10 mL）时一半酸转化为 A-，[HA] = [A-]，故 [H+] = Ka；图中该点 pH = 5，所以 Ka = 1.0x10^-5。起始 pH 也可验证：[H+] = √(1.0x10^-5 · 0.1) = 10^-3 M，pH = 3。III 错误：化学计量点时溶液中有 A-，它水解生成 OH-；图中该点 pH 约为 8.9，而不是 7。",
+        "ku": "Bazdana tûj (xala hevtayê) li 20 mL NaOH tê dîtin. I rast e: n(NaOH) = 0,1 · 0,020 = 2,0x10^-3 mol = n(HA); [HA] = 2,0x10^-3 / 0,020 = 0,1 M. II rast e: li nîvê qebareya hevtayê (10 mL) nîvê asîdê bûye A-, ji ber vê yekê [HA] = [A-] û [H+] = Ka; li vê xalê grafîk pH = 5 nîşan dide, yanî Ka = 1,0x10^-5. pH-a destpêkê jî vê piştrast dike: [H+] = √(1,0x10^-5 · 0,1) = 10^-3 M, pH = 3. III şaş e: li xala hevtayê îyona A- heye û bi hîdrolizê OH- çêdike; li gorî grafîkê pH li vir nêzîkî 8,9 ye, ne 7 e."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Eklenen NaOH hacmi (mL)",
+          "en": "Volume of NaOH added (mL)",
+          "de": "Zugegebenes NaOH-Volumen (mL)",
+          "fr": "Volume de NaOH ajouté (mL)",
+          "ru": "Объём добавленного NaOH (мл)",
+          "ar": "حجم NaOH المضاف (mL)",
+          "zh": "加入 NaOH 的体积 (mL)",
+          "ku": "Qebareya NaOH-ya zêdekirî (mL)"
+        },
+        "yLabel": "pH",
+        "xMax": 40,
+        "yMax": 14,
+        "xTicks": [
+          10,
+          20,
+          30,
+          40
+        ],
+        "yTicks": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                4.05
+              ],
+              [
+                5,
+                4.52
+              ],
+              [
+                10,
+                5
+              ],
+              [
+                15,
+                5.48
+              ],
+              [
+                18,
+                5.95
+              ],
+              [
+                19,
+                6.28
+              ],
+              [
+                19.8,
+                7.0
+              ],
+              [
+                20,
+                8.85
+              ],
+              [
+                20.2,
+                10.7
+              ],
+              [
+                20.5,
+                11.09
+              ],
+              [
+                21,
+                11.39
+              ],
+              [
+                22,
+                11.68
+              ],
+              [
+                25,
+                12.05
+              ],
+              [
+                30,
+                12.3
+              ],
+              [
+                40,
+                12.52
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 10,
+            "y": 5,
+            "label": "",
+            "guides": true
+          },
+          {
+            "x": 20,
+            "y": 8.85,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
@@ -1306,14 +1421,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin04",
       "stem": {
-        "tr": "25 °C'de 0,01 M HA zayıf asit çözeltisinin pH değeri 4'tür. Buna göre HA'nın asitlik sabiti (Ka) ve iyonlaşma yüzdesi aşağıdakilerin hangisinde doğru verilmiştir?",
+        "tr": "25 °C'de 0,01 M HA zayıf asit çözeltisinin pH değeri 4'tür. HA'nın asitlik sabiti (Ka) ve iyonlaşma yüzdesi aşağıdakilerin hangisinde doğru verilmiştir?",
         "en": "At 25 °C, a 0.01 M solution of the weak acid HA has a pH of 4. Which of the following correctly gives the acid dissociation constant (Ka) and the percent ionization of HA?",
         "de": "Bei 25 °C hat eine 0,01 M Lösung der schwachen Säure HA den pH-Wert 4. Welche Angabe nennt die Säurekonstante (Ka) und den Protolysegrad von HA richtig?",
         "fr": "À 25 °C, une solution à 0,01 M de l’acide faible HA a un pH de 4. Quelle proposition donne correctement la constante d’acidité (Ka) et le pourcentage d’ionisation de HA ?",
         "ru": "При 25 °C pH 0,01 M раствора слабой кислоты HA равен 4. В каком варианте правильно указаны константа кислотности (Ka) и степень диссоциации HA?",
         "ar": "عند 25 °C يكون pH محلول الحمض الضعيف HA الذي تركيزه 0.01 M مساويًا 4. في أي الخيارات الآتية أُعطيت قيمة ثابت تأين الحمض (Ka) والنسبة المئوية لتأين HA إعطاءً صحيحًا؟",
         "zh": "25 °C 时，0.01 M 弱酸 HA 溶液的 pH 为 4。下列哪一项正确给出了 HA 的电离常数(Ka)和电离度？",
-        "ku": "Li 25 °C pH-a çareseriya 0,01 M a asîda qels HA 4 e. Li gorî vê yekê, sabîta asîdiyê (Ka) û rêjeya îyonîzasyona HA di kîjan vebijarkê de rast hatine dayîn?"
+        "ku": "Li 25 °C pH-a çareseriya 0,01 M a asîda qels HA 4 e. Sabîta asîdiyê (Ka) û rêjeya îyonîzasyona HA di kîjan vebijarkê de rast hatine dayîn?"
       },
       "options": [
         {
@@ -1382,14 +1497,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin05",
       "stem": {
-        "tr": "25 °C'de HX asidi için Ka = 1,0x10^-4, HY asidi için Ka = 1,0x10^-8'dir. Buna göre,\nI. Eşit derişimli çözeltilerinden HX çözeltisinin pH değeri daha küçüktür.\nII. X- iyonunun Kb değeri 1,0x10^-10'dur.\nIII. Y- iyonu, X- iyonundan daha kuvvetli bir bazdır.\nyargılarından hangileri doğrudur?",
+        "tr": "25 °C'de HX asidi için Ka = 1,0x10^-4, HY asidi için Ka = 1,0x10^-8'dir.\nI. Eşit derişimli çözeltilerinden HX çözeltisinin pH değeri daha küçüktür.\nII. X- iyonunun Kb değeri 1,0x10^-10'dur.\nIII. Y- iyonu, X- iyonundan daha kuvvetli bir bazdır.\nyargılarından hangileri doğrudur?",
         "en": "At 25 °C, Ka = 1.0x10^-4 for the acid HX and Ka = 1.0x10^-8 for the acid HY. Which of the following statements are correct?\nI. For solutions of equal concentration, the HX solution has the lower pH.\nII. The Kb of the X- ion is 1.0x10^-10.\nIII. The Y- ion is a stronger base than the X- ion.",
         "de": "Bei 25 °C gilt für die Säure HX Ka = 1,0x10^-4 und für die Säure HY Ka = 1,0x10^-8. Welche Aussagen sind richtig?\nI. Bei gleicher Konzentration hat die HX-Lösung den kleineren pH-Wert.\nII. Der Kb-Wert des X--Ions beträgt 1,0x10^-10.\nIII. Das Y--Ion ist eine stärkere Base als das X--Ion.",
         "fr": "À 25 °C, Ka = 1,0x10^-4 pour l’acide HX et Ka = 1,0x10^-8 pour l’acide HY. Lesquelles des affirmations suivantes sont exactes ?\nI. À concentrations égales, la solution de HX a le pH le plus faible.\nII. Le Kb de l’ion X- vaut 1,0x10^-10.\nIII. L’ion Y- est une base plus forte que l’ion X-.",
         "ru": "При 25 °C для кислоты HX Ka = 1,0x10^-4, для кислоты HY Ka = 1,0x10^-8. Какие из утверждений верны?\nI. При равных концентрациях раствор HX имеет меньший pH.\nII. Kb иона X- равна 1,0x10^-10.\nIII. Ион Y- — более сильное основание, чем ион X-.",
-        "ar": "عند 25 °C تكون Ka = 1.0x10^-4 للحمض HX و Ka = 1.0x10^-8 للحمض HY. أي العبارات التالية صحيحة؟\nI. عند تساوي التركيز يكون pH لمحلول HX أصغر.\nII. قيمة Kb للأيون X- تساوي 1.0x10^-10.\nIII. الأيون Y- قاعدة أقوى من الأيون X-.",
+        "ar": "عند 25 °C تكون Ka = 1.0x10^-4 للحمض HX وKa = 1.0x10^-8 للحمض HY. أي العبارات التالية صحيحة؟\nI. عند تساوي التركيز يكون pH لمحلول HX أصغر.\nII. قيمة Kb للأيون X- تساوي 1.0x10^-10.\nIII. الأيون Y- قاعدة أقوى من الأيون X-.",
         "zh": "25 °C 时，酸 HX 的 Ka = 1.0x10^-4，酸 HY 的 Ka = 1.0x10^-8。下列说法中哪些正确？\nI. 浓度相同时，HX 溶液的 pH 更小。\nII. X- 的 Kb 为 1.0x10^-10。\nIII. Y- 是比 X- 更强的碱。",
-        "ku": "Li 25 °C ji bo asîda HX Ka = 1,0x10^-4 û ji bo asîda HY Ka = 1,0x10^-8 e. Li gorî vê yekê,\nI. Di tîrbûna wekhev de pH-a çareseriya HX piçûktir e.\nII. Kb ya îyona X- 1,0x10^-10 e.\nIII. Îyona Y- ji îyona X- bazeke bihêztir e.\nkîjan ji van gotinan rast in?"
+        "ku": "Li 25 °C ji bo asîda HX Ka = 1,0x10^-4 û ji bo asîda HY Ka = 1,0x10^-8 e.\nI. Di tîrbûna wekhev de pH-a çareseriya HX piçûktir e.\nII. Kb ya îyona X- 1,0x10^-10 e.\nIII. Îyona Y- ji îyona X- bazeke bihêztir e.\nKîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1534,77 +1649,134 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin07",
       "stem": {
-        "tr": "25 °C'de derişimleri eşit (0,1 M) olan NaCl, NH4Cl ve CH3COONa sulu çözeltilerinin pH değerlerinin küçükten büyüğe doğru sıralanışı aşağıdakilerden hangisidir?",
-        "en": "At 25 °C, which of the following gives the pH values of equally concentrated (0.1 M) aqueous solutions of NaCl, NH4Cl and CH3COONa in increasing order?",
-        "de": "Welche Reihenfolge gibt die pH-Werte gleich konzentrierter (0,1 M) wässriger Lösungen von NaCl, NH4Cl und CH3COONa bei 25 °C aufsteigend an?",
-        "fr": "À 25 °C, quel classement donne par ordre croissant les pH des solutions aqueuses de même concentration (0,1 M) de NaCl, NH4Cl et CH3COONa ?",
-        "ru": "В каком ряду водные растворы NaCl, NH4Cl и CH3COONa одинаковой концентрации (0,1 M) при 25 °C расположены в порядке возрастания pH?",
-        "ar": "عند 25 °C، أي مما يلي يرتب قيم pH للمحاليل المائية المتساوية التركيز (0.1 M) من NaCl و NH4Cl و CH3COONa تصاعديًا؟",
-        "zh": "25 °C 时，浓度相同(0.1 M)的 NaCl、NH4Cl 和 CH3COONa 水溶液的 pH 由小到大的顺序是下列哪一项？",
-        "ku": "Li 25 °C rêzkirina nirxên pH-ê yên çareseriyên avî yên NaCl, NH4Cl û CH3COONa yên bi tîrbûna wekhev (0,1 M) ji piçûk ber bi mezin kîjan e?"
+        "tr": "Tabloda 25 °C'de derişimleri eşit (0,1 M) olan K, L ve M tuz çözeltilerinin ölçülen pH değerleri verilmiştir. K, L ve M çözeltilerinde çözünmüş tuzlar sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?",
+        "en": "The table gives the measured pH values of the salt solutions K, L and M, all 0.1 M, at 25 °C. Which option gives the salts dissolved in K, L and M, respectively?",
+        "de": "Die Tabelle gibt die gemessenen pH-Werte der Salzlösungen K, L und M (jeweils 0,1 M) bei 25 °C an. In welcher Antwort sind die in K, L und M gelösten Salze in dieser Reihenfolge richtig angegeben?",
+        "fr": "Le tableau donne les pH mesurés à 25 °C des solutions salines K, L et M, toutes à 0,1 M. Quelle proposition donne, dans l'ordre, les sels dissous dans K, L et M ?",
+        "ru": "В таблице приведены измеренные при 25 °C значения pH растворов солей K, L и M с одинаковой концентрацией 0,1 M. В каком варианте правильно указаны соли, растворённые соответственно в K, L и M?",
+        "ar": "يعطي الجدول قيم pH المقيسة عند 25 °C لمحاليل الأملاح K وL وM المتساوية التركيز (0.1 M). في أيّ خيار تُعطى الأملاح المذابة في K وL وM على الترتيب بشكل صحيح؟",
+        "zh": "表中给出了 25 °C 时浓度均为 0.1 M 的盐溶液 K、L、M 的实测 pH。下列哪一项依次正确给出了 K、L、M 中所溶解的盐？",
+        "ku": "Tablo nirxên pH-ê yên pîvandî yên çareseriyên xwê K, L û M (hemû 0,1 M) li 25 °C dide. Di kîjan vebijarkê de xwêyên ku di K, L û M de heliyane li gorî rêzê rast hatine dayîn?"
       },
       "options": [
         {
-          "tr": "NH4Cl < NaCl < CH3COONa",
-          "en": "NH4Cl < NaCl < CH3COONa",
-          "de": "NH4Cl < NaCl < CH3COONa",
-          "fr": "NH4Cl < NaCl < CH3COONa",
-          "ru": "NH4Cl < NaCl < CH3COONa",
-          "ar": "NH4Cl < NaCl < CH3COONa",
-          "zh": "NH4Cl < NaCl < CH3COONa",
-          "ku": "NH4Cl < NaCl < CH3COONa"
+          "tr": "CH3COONa, NH4Cl, NaCl",
+          "en": "CH3COONa, NH4Cl, NaCl",
+          "de": "CH3COONa, NH4Cl, NaCl",
+          "fr": "CH3COONa, NH4Cl, NaCl",
+          "ru": "CH3COONa, NH4Cl, NaCl",
+          "ar": "CH3COONa, NH4Cl, NaCl",
+          "zh": "CH3COONa, NH4Cl, NaCl",
+          "ku": "CH3COONa, NH4Cl, NaCl"
         },
         {
-          "tr": "CH3COONa < NaCl < NH4Cl",
-          "en": "CH3COONa < NaCl < NH4Cl",
-          "de": "CH3COONa < NaCl < NH4Cl",
-          "fr": "CH3COONa < NaCl < NH4Cl",
-          "ru": "CH3COONa < NaCl < NH4Cl",
-          "ar": "CH3COONa < NaCl < NH4Cl",
-          "zh": "CH3COONa < NaCl < NH4Cl",
-          "ku": "CH3COONa < NaCl < NH4Cl"
+          "tr": "NH4Cl, CH3COONa, NaCl",
+          "en": "NH4Cl, CH3COONa, NaCl",
+          "de": "NH4Cl, CH3COONa, NaCl",
+          "fr": "NH4Cl, CH3COONa, NaCl",
+          "ru": "NH4Cl, CH3COONa, NaCl",
+          "ar": "NH4Cl, CH3COONa, NaCl",
+          "zh": "NH4Cl, CH3COONa, NaCl",
+          "ku": "NH4Cl, CH3COONa, NaCl"
         },
         {
-          "tr": "NaCl < NH4Cl < CH3COONa",
-          "en": "NaCl < NH4Cl < CH3COONa",
-          "de": "NaCl < NH4Cl < CH3COONa",
-          "fr": "NaCl < NH4Cl < CH3COONa",
-          "ru": "NaCl < NH4Cl < CH3COONa",
-          "ar": "NaCl < NH4Cl < CH3COONa",
-          "zh": "NaCl < NH4Cl < CH3COONa",
-          "ku": "NaCl < NH4Cl < CH3COONa"
+          "tr": "NaCl, NH4Cl, CH3COONa",
+          "en": "NaCl, NH4Cl, CH3COONa",
+          "de": "NaCl, NH4Cl, CH3COONa",
+          "fr": "NaCl, NH4Cl, CH3COONa",
+          "ru": "NaCl, NH4Cl, CH3COONa",
+          "ar": "NaCl, NH4Cl, CH3COONa",
+          "zh": "NaCl, NH4Cl, CH3COONa",
+          "ku": "NaCl, NH4Cl, CH3COONa"
         },
         {
-          "tr": "NH4Cl < CH3COONa < NaCl",
-          "en": "NH4Cl < CH3COONa < NaCl",
-          "de": "NH4Cl < CH3COONa < NaCl",
-          "fr": "NH4Cl < CH3COONa < NaCl",
-          "ru": "NH4Cl < CH3COONa < NaCl",
-          "ar": "NH4Cl < CH3COONa < NaCl",
-          "zh": "NH4Cl < CH3COONa < NaCl",
-          "ku": "NH4Cl < CH3COONa < NaCl"
+          "tr": "CH3COONa, NaCl, NH4Cl",
+          "en": "CH3COONa, NaCl, NH4Cl",
+          "de": "CH3COONa, NaCl, NH4Cl",
+          "fr": "CH3COONa, NaCl, NH4Cl",
+          "ru": "CH3COONa, NaCl, NH4Cl",
+          "ar": "CH3COONa, NaCl, NH4Cl",
+          "zh": "CH3COONa, NaCl, NH4Cl",
+          "ku": "CH3COONa, NaCl, NH4Cl"
         },
         {
-          "tr": "NaCl < CH3COONa < NH4Cl",
-          "en": "NaCl < CH3COONa < NH4Cl",
-          "de": "NaCl < CH3COONa < NH4Cl",
-          "fr": "NaCl < CH3COONa < NH4Cl",
-          "ru": "NaCl < CH3COONa < NH4Cl",
-          "ar": "NaCl < CH3COONa < NH4Cl",
-          "zh": "NaCl < CH3COONa < NH4Cl",
-          "ku": "NaCl < CH3COONa < NH4Cl"
+          "tr": "KNO3, NH4Cl, NaCl",
+          "en": "KNO3, NH4Cl, NaCl",
+          "de": "KNO3, NH4Cl, NaCl",
+          "fr": "KNO3, NH4Cl, NaCl",
+          "ru": "KNO3, NH4Cl, NaCl",
+          "ar": "KNO3, NH4Cl, NaCl",
+          "zh": "KNO3, NH4Cl, NaCl",
+          "ku": "KNO3, NH4Cl, NaCl"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "NH4Cl'deki NH4+, zayıf baz NH3'ün eşlenik asididir; hidroliz olarak H3O+ oluşturur ve pH < 7 olur. NaCl kuvvetli asit ile kuvvetli bazdan türer; iyonları hidroliz olmaz, pH = 7'dir. CH3COONa'daki CH3COO-, zayıf asidin eşlenik bazıdır; hidroliz olarak OH- oluşturur ve pH > 7 olur. Bu nedenle sıralama NH4Cl < NaCl < CH3COONa'dır. Tuzların hepsini nötr sanmak ya da NH4+ ile CH3COO- iyonlarının etkisini ters çevirmek yanlış sıralamalara götürür.",
-        "en": "NH4+ in NH4Cl is the conjugate acid of the weak base NH3; it hydrolyzes to form H3O+, so pH < 7. NaCl comes from a strong acid and a strong base; its ions do not hydrolyze, so pH = 7. CH3COO- in CH3COONa is the conjugate base of a weak acid; it hydrolyzes to form OH-, so pH > 7. Hence NH4Cl < NaCl < CH3COONa. Treating all salts as neutral or swapping the effects of NH4+ and CH3COO- leads to the wrong orders.",
-        "de": "NH4+ in NH4Cl ist die korrespondierende Säure der schwachen Base NH3; es reagiert mit Wasser unter Bildung von H3O+, daher pH < 7. NaCl stammt aus starker Säure und starker Base; seine Ionen hydrolysieren nicht, pH = 7. CH3COO- in CH3COONa ist die korrespondierende Base einer schwachen Säure; es bildet mit Wasser OH-, daher pH > 7. Also NH4Cl < NaCl < CH3COONa. Wer alle Salze für neutral hält oder die Wirkung von NH4+ und CH3COO- vertauscht, kommt zu falschen Reihenfolgen.",
-        "fr": "NH4+ de NH4Cl est l’acide conjugué de la base faible NH3 ; il s’hydrolyse en formant H3O+, donc pH < 7. NaCl provient d’un acide fort et d’une base forte ; ses ions ne s’hydrolysent pas, pH = 7. CH3COO- de CH3COONa est la base conjuguée d’un acide faible ; il s’hydrolyse en formant OH-, donc pH > 7. D’où NH4Cl < NaCl < CH3COONa. Considérer tous les sels comme neutres ou inverser les effets de NH4+ et CH3COO- conduit à de mauvais classements.",
-        "ru": "Ион NH4+ в NH4Cl — сопряжённая кислота слабого основания NH3; он гидролизуется с образованием H3O+, поэтому pH < 7. NaCl образован сильной кислотой и сильным основанием; его ионы не гидролизуются, pH = 7. Ион CH3COO- в CH3COONa — сопряжённое основание слабой кислоты; он гидролизуется с образованием OH-, поэтому pH > 7. Следовательно, NH4Cl < NaCl < CH3COONa. Если считать все соли нейтральными или перепутать действие ионов NH4+ и CH3COO-, получится неверный ряд.",
-        "ar": "الأيون NH4+ في NH4Cl هو الحمض المرافق للقاعدة الضعيفة NH3؛ يتحلل مائيًا مكوّنًا H3O+ فيكون pH < 7. أما NaCl فمشتق من حمض قوي وقاعدة قوية ولا تتحلل أيوناته فيكون pH = 7. والأيون CH3COO- في CH3COONa هو القاعدة المرافقة لحمض ضعيف؛ يتحلل مائيًا مكوّنًا OH- فيكون pH > 7. لذا الترتيب NH4Cl < NaCl < CH3COONa. واعتبار كل الأملاح متعادلة أو عكس أثر NH4+ و CH3COO- يؤدي إلى ترتيب خاطئ.",
-        "zh": "NH4Cl 中的 NH4+ 是弱碱 NH3 的共轭酸，水解生成 H3O+，pH < 7。NaCl 由强酸和强碱生成，离子不水解，pH = 7。CH3COONa 中的 CH3COO- 是弱酸的共轭碱，水解生成 OH-，pH > 7。因此顺序为 NH4Cl < NaCl < CH3COONa。把所有盐都当作中性，或把 NH4+ 与 CH3COO- 的作用弄反，都会得到错误顺序。",
-        "ku": "NH4+ ya di NH4Cl de asîda konjuge ya baza qels NH3 ye; hîdroliz dibe û H3O+ çêdike, ji ber vê yekê pH < 7 e. NaCl ji asîdeke bihêz û bazeke bihêz çêdibe; îyonên wê hîdroliz nabin, pH = 7 e. CH3COO- ya di CH3COONa de baza konjuge ya asîdeke qels e; hîdroliz dibe û OH- çêdike, ji ber vê yekê pH > 7 e. Lewma rêzkirin NH4Cl < NaCl < CH3COONa ye. Hesibandina hemû xwêyan wek bêalî an berevajîkirina bandora îyonên NH4+ û CH3COO- rêzkirinên şaş dide."
+        "tr": "K'nin pH'ı 7'den büyüktür (8,9): çözünen tuzun anyonu zayıf asidin eşlenik bazı olmalıdır; CH3COO- hidroliz olarak OH- oluşturur, K = CH3COONa. L'nin pH'ı 7'den küçüktür (5,1): katyonu zayıf bazın eşlenik asidi olan NH4+ hidroliz olarak H3O+ oluşturur, L = NH4Cl. M'nin pH'ı 7'dir: iyonları hidroliz olmayan NaCl. KNO3 de nötr bir tuzdur, pH'ı 8,9 olamaz; NH4Cl ile CH3COONa'nın yerini değiştirmek hidrolizin yönünü ters çevirmek demektir.",
+        "en": "K has pH above 7 (8.9): its anion must be the conjugate base of a weak acid; CH3COO- hydrolyses to give OH-, so K = CH3COONa. L has pH below 7 (5.1): NH4+, the conjugate acid of a weak base, hydrolyses to give H3O+, so L = NH4Cl. M has pH 7: NaCl, whose ions do not hydrolyse. KNO3 is also a neutral salt and cannot have pH 8.9; swapping NH4Cl and CH3COONa reverses the direction of hydrolysis.",
+        "de": "K hat einen pH über 7 (8,9): Das Anion muss die korrespondierende Base einer schwachen Säure sein; CH3COO- hydrolysiert unter Bildung von OH-, also K = CH3COONa. L hat einen pH unter 7 (5,1): NH4+, die korrespondierende Säure einer schwachen Base, hydrolysiert unter Bildung von H3O+, also L = NH4Cl. M hat pH 7: NaCl, dessen Ionen nicht hydrolysieren. KNO3 ist ebenfalls neutral und kann keinen pH von 8,9 haben; das Vertauschen von NH4Cl und CH3COONa kehrt die Richtung der Hydrolyse um.",
+        "fr": "K a un pH supérieur à 7 (8,9) : son anion doit être la base conjuguée d'un acide faible ; CH3COO- s'hydrolyse en donnant OH-, donc K = CH3COONa. L a un pH inférieur à 7 (5,1) : NH4+, acide conjugué d'une base faible, s'hydrolyse en donnant H3O+, donc L = NH4Cl. M a un pH de 7 : NaCl, dont les ions ne s'hydrolysent pas. KNO3 est aussi un sel neutre et ne peut pas avoir un pH de 8,9 ; échanger NH4Cl et CH3COONa revient à inverser le sens de l'hydrolyse.",
+        "ru": "У K pH больше 7 (8,9): анион соли должен быть сопряжённым основанием слабой кислоты; CH3COO- гидролизуется с образованием OH-, значит, K = CH3COONa. У L pH меньше 7 (5,1): NH4+, сопряжённая кислота слабого основания, гидролизуется с образованием H3O+, значит, L = NH4Cl. У M pH = 7: это NaCl, ионы которого не гидролизуются. KNO3 тоже нейтральная соль, её pH не может быть 8,9; перестановка NH4Cl и CH3COONa означает обратное направление гидролиза.",
+        "ar": "قيمة pH للمحلول K أكبر من 7 (8.9): فأنيون الملح لا بد أن يكون القاعدة المرافقة لحمض ضعيف؛ يتحلل CH3COO- مائيًّا مكوّنًا OH-، إذن K = CH3COONa. وpH للمحلول L أقل من 7 (5.1): يتحلل NH4+، الحمض المرافق لقاعدة ضعيفة، مكوّنًا H3O+، إذن L = NH4Cl. وpH للمحلول M يساوي 7: إنه NaCl الذي لا تتحلل أيوناته. KNO3 ملح متعادل أيضًا ولا يمكن أن يكون pH له 8.9، وتبديل موضعي NH4Cl وCH3COONa يعني عكس اتجاه التحلل المائي.",
+        "zh": "K 的 pH 大于 7（8.9）：其阴离子应是弱酸的共轭碱；CH3COO- 水解生成 OH-，故 K = CH3COONa。L 的 pH 小于 7（5.1）：弱碱的共轭酸 NH4+ 水解生成 H3O+，故 L = NH4Cl。M 的 pH 为 7：是离子不水解的 NaCl。KNO3 也是中性盐，pH 不可能为 8.9；把 NH4Cl 和 CH3COONa 对调就颠倒了水解的方向。",
+        "ku": "pH-a K ji 7 mezintir e (8,9): divê anyona xwêyê baza hevgirtî ya asîdeke qels be; CH3COO- bi hîdrolizê OH- çêdike, yanî K = CH3COONa. pH-a L ji 7 kêmtir e (5,1): NH4+, asîda hevgirtî ya bazeke qels, bi hîdrolizê H3O+ çêdike, yanî L = NH4Cl. pH-a M 7 e: NaCl ku îyonên wê hîdroliz nabin. KNO3 jî xwêyeke bêalî ye û pH-a wê nikare 8,9 be; guhertina cihê NH4Cl û CH3COONa tê wateya berevajîkirina aliyê hîdrolizê."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Çözelti",
+            "en": "Solution",
+            "de": "Lösung",
+            "fr": "Solution",
+            "ru": "Раствор",
+            "ar": "المحلول",
+            "zh": "溶液",
+            "ku": "Çareserî"
+          },
+          "pH"
+        ],
+        "rows": [
+          [
+            "K",
+            {
+              "tr": "8,9",
+              "en": "8.9",
+              "de": "8,9",
+              "fr": "8,9",
+              "ru": "8,9",
+              "ar": "8.9",
+              "zh": "8.9",
+              "ku": "8,9"
+            }
+          ],
+          [
+            "L",
+            {
+              "tr": "5,1",
+              "en": "5.1",
+              "de": "5,1",
+              "fr": "5,1",
+              "ru": "5,1",
+              "ar": "5.1",
+              "zh": "5.1",
+              "ku": "5,1"
+            }
+          ],
+          [
+            "M",
+            {
+              "tr": "7,0",
+              "en": "7.0",
+              "de": "7,0",
+              "fr": "7,0",
+              "ru": "7,0",
+              "ar": "7.0",
+              "zh": "7.0",
+              "ku": "7,0"
+            }
+          ]
+        ]
       }
     },
     {
@@ -1838,14 +2010,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin11",
       "stem": {
-        "tr": "60 °C'de suyun iyonlaşma sabiti Ksu = 1,0x10^-13'tür. Buna göre 60 °C'deki saf su için,\nI. pH değeri 6,5'tir.\nII. Nötrdür.\nIII. pH + pOH = 14'tür.\nyargılarından hangileri doğrudur?",
-        "en": "At 60 °C the ion product of water is Kw = 1.0x10^-13. For pure water at 60 °C, which of the following statements are correct?\nI. Its pH is 6.5.\nII. It is neutral.\nIII. pH + pOH = 14.",
-        "de": "Bei 60 °C beträgt das Ionenprodukt des Wassers Kw = 1,0x10^-13. Welche Aussagen über reines Wasser bei 60 °C sind richtig?\nI. Sein pH-Wert ist 6,5.\nII. Es ist neutral.\nIII. pH + pOH = 14.",
-        "fr": "À 60 °C, le produit ionique de l’eau vaut Ke = 1,0x10^-13. Pour l’eau pure à 60 °C, lesquelles des affirmations suivantes sont exactes ?\nI. Son pH vaut 6,5.\nII. Elle est neutre.\nIII. pH + pOH = 14.",
-        "ru": "При 60 °C ионное произведение воды Kw = 1,0x10^-13. Какие из утверждений о чистой воде при 60 °C верны?\nI. Её pH равен 6,5.\nII. Она нейтральна.\nIII. pH + pOH = 14.",
-        "ar": "عند 60 °C يكون الحاصل الأيوني للماء Kw = 1.0x10^-13. أي العبارات التالية صحيحة للماء النقي عند 60 °C؟\nI. قيمة pH له 6.5.\nII. متعادل.\nIII. pH + pOH = 14.",
-        "zh": "60 °C 时水的离子积 Kw = 1.0x10^-13。关于 60 °C 的纯水，下列说法中哪些正确？\nI. pH 为 6.5。\nII. 呈中性。\nIII. pH + pOH = 14。",
-        "ku": "Li 60 °C sabîta îyonîzasyona avê Kw = 1,0x10^-13 e. Li gorî vê yekê, ji bo ava paqij a li 60 °C\nI. pH-a wê 6,5 e.\nII. Bêalî ye.\nIII. pH + pOH = 14 e.\nkîjan ji van gotinan rast in?"
+        "tr": "Tabloda suyun farklı sıcaklıklardaki iyonlaşma sabiti (Ksu) değerleri verilmiştir. I. 60 °C'deki saf suyun pH değeri 6,5'tir. II. 60 °C'deki saf su nötrdür. III. Suyun iyonlaşması ekzotermik bir olaydır. yargılarından hangileri doğrudur?",
+        "en": "The table gives the ion product of water (Kw) at different temperatures. I. The pH of pure water at 60 °C is 6.5. II. Pure water at 60 °C is neutral. III. The auto-ionisation of water is exothermic. Which of these statements are correct?",
+        "de": "Die Tabelle gibt das Ionenprodukt des Wassers (Kw) bei verschiedenen Temperaturen an. I. Der pH-Wert von reinem Wasser bei 60 °C beträgt 6,5. II. Reines Wasser ist bei 60 °C neutral. III. Die Autoprotolyse des Wassers ist exotherm. Welche Aussagen sind richtig?",
+        "fr": "Le tableau donne le produit ionique de l'eau (Ke) à différentes températures. I. Le pH de l'eau pure à 60 °C vaut 6,5. II. L'eau pure à 60 °C est neutre. III. L'autoprotolyse de l'eau est exothermique. Lesquelles de ces affirmations sont exactes ?",
+        "ru": "В таблице приведены значения ионного произведения воды (Kw) при разных температурах. I. pH чистой воды при 60 °C равен 6,5. II. Чистая вода при 60 °C нейтральна. III. Автоионизация воды — экзотермический процесс. Какие утверждения верны?",
+        "ar": "يعطي الجدول قيم الحاصل الأيوني للماء (Kw) عند درجات حرارة مختلفة. I. قيمة pH للماء النقي عند 60 °C هي 6.5. II. الماء النقي عند 60 °C متعادل. III. التأين الذاتي للماء عملية طاردة للحرارة. أيّ هذه العبارات صحيحة؟",
+        "zh": "表中给出了不同温度下水的离子积 (Kw)。I. 60 °C 时纯水的 pH 为 6.5。II. 60 °C 时纯水呈中性。III. 水的电离是放热过程。以上说法中哪些正确？",
+        "ku": "Tablo nirxên sabîta îyonîzasyona avê (Kw) li germahiyên cuda dide. I. pH-a ava paqij li 60 °C 6,5 e. II. Ava paqij li 60 °C bêalî ye. III. Îyonîzasyona avê bûyereke ekzotermîk e. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1901,14 +2073,80 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Saf suda [H+] = [OH-] = √(10^-13) = 10^-6,5 M olduğundan pH = pOH = 6,5'tir (I doğru). [H+] = [OH-] olduğu için su, pH'ı 7'den küçük olsa da nötrdür (II doğru). pH + pOH = -log Ksu = 13'tür; toplamın 14 olması yalnızca 25 °C için geçerlidir (III yanlış).",
-        "en": "In pure water [H+] = [OH-] = √(10^-13) = 10^-6.5 M, so pH = pOH = 6.5 (I correct). Because [H+] = [OH-], the water is neutral even though its pH is below 7 (II correct). pH + pOH = -log Kw = 13; a sum of 14 applies only at 25 °C (III incorrect).",
-        "de": "In reinem Wasser ist [H+] = [OH-] = √(10^-13) = 10^-6,5 M, also pH = pOH = 6,5 (I richtig). Da [H+] = [OH-], ist das Wasser neutral, obwohl sein pH unter 7 liegt (II richtig). pH + pOH = -log Kw = 13; die Summe 14 gilt nur bei 25 °C (III falsch).",
-        "fr": "Dans l’eau pure, [H+] = [OH-] = √(10^-13) = 10^-6,5 M, donc pH = pOH = 6,5 (I exacte). Comme [H+] = [OH-], l’eau est neutre bien que son pH soit inférieur à 7 (II exacte). pH + pOH = -log Ke = 13 ; une somme de 14 n’est valable qu’à 25 °C (III fausse).",
-        "ru": "В чистой воде [H+] = [OH-] = √(10^-13) = 10^-6,5 M, поэтому pH = pOH = 6,5 (I верно). Так как [H+] = [OH-], вода нейтральна, хотя её pH меньше 7 (II верно). pH + pOH = -log Kw = 13; сумма 14 справедлива только при 25 °C (III неверно).",
-        "ar": "في الماء النقي [H+] = [OH-] = √(10^-13) = 10^-6.5 M لذا pH = pOH = 6.5 (I صحيحة). ولأن [H+] = [OH-] فالماء متعادل رغم أن pH له أقل من 7 (II صحيحة). pH + pOH = -log Kw = 13، والمجموع 14 صحيح عند 25 °C فقط (III خاطئة).",
-        "zh": "纯水中 [H+] = [OH-] = √(10^-13) = 10^-6.5 M，所以 pH = pOH = 6.5(I 正确)。因为 [H+] = [OH-]，即使 pH 小于 7，水仍呈中性(II 正确)。pH + pOH = -log Kw = 13；和为 14 只适用于 25 °C(III 错误)。",
-        "ku": "Di ava paqij de [H+] = [OH-] = √(10^-13) = 10^-6,5 M e, ji ber vê yekê pH = pOH = 6,5 e (I rast e). Ji ber ku [H+] = [OH-] e, av bêalî ye, her çend pH-a wê ji 7 kêmtir be jî (II rast e). pH + pOH = -log Kw = 13 e; berhevoka 14 tenê li 25 °C derbasdar e (III şaş e)."
+        "tr": "Tablodan 60 °C'de Ksu = 1,0x10^-13 okunur. Saf suda [H+] = [OH-] = √(10^-13) = 10^-6,5 M olduğundan pH = 6,5'tir (I doğru). [H+] = [OH-] olduğu için su, pH'ı 7'den küçük olsa da nötrdür (II doğru). Sıcaklık arttıkça Ksu büyümektedir; ısıtma iyonlaşmayı artırdığına göre suyun iyonlaşması endotermiktir (III yanlış). Bu yüzden pH + pOH toplamı da sıcaklıkla değişir (60 °C'de 13).",
+        "en": "From the table, Kw = 1.0x10^-13 at 60 °C. In pure water [H+] = [OH-] = √(10^-13) = 10^-6.5 M, so pH = 6.5 (I correct). Because [H+] = [OH-], the water is neutral even though its pH is below 7 (II correct). Kw increases with temperature; since heating favours ionisation, the auto-ionisation of water is endothermic (III incorrect). For the same reason pH + pOH changes with temperature (13 at 60 °C).",
+        "de": "Aus der Tabelle: Kw = 1,0x10^-13 bei 60 °C. In reinem Wasser ist [H+] = [OH-] = √(10^-13) = 10^-6,5 M, also pH = 6,5 (I richtig). Da [H+] = [OH-], ist das Wasser neutral, obwohl sein pH unter 7 liegt (II richtig). Kw steigt mit der Temperatur; da Erwärmen die Protolyse begünstigt, ist die Autoprotolyse endotherm (III falsch). Deshalb ändert sich auch pH + pOH mit der Temperatur (13 bei 60 °C).",
+        "fr": "D'après le tableau, Ke = 1,0x10^-13 à 60 °C. Dans l'eau pure, [H+] = [OH-] = √(10^-13) = 10^-6,5 M, donc pH = 6,5 (I exacte). Comme [H+] = [OH-], l'eau est neutre bien que son pH soit inférieur à 7 (II exacte). Ke augmente avec la température ; le chauffage favorisant l'ionisation, l'autoprotolyse de l'eau est endothermique (III fausse). C'est aussi pourquoi pH + pOH varie avec la température (13 à 60 °C).",
+        "ru": "По таблице при 60 °C Kw = 1,0x10^-13. В чистой воде [H+] = [OH-] = √(10^-13) = 10^-6,5 M, поэтому pH = 6,5 (I верно). Так как [H+] = [OH-], вода нейтральна, хотя её pH меньше 7 (II верно). Kw растёт с температурой; раз нагревание усиливает ионизацию, автоионизация воды эндотермична (III неверно). По той же причине сумма pH + pOH зависит от температуры (13 при 60 °C).",
+        "ar": "من الجدول Kw = 1.0x10^-13 عند 60 °C. في الماء النقي [H+] = [OH-] = √(10^-13) = 10^-6.5 M لذا pH = 6.5 (I صحيحة). ولأن [H+] = [OH-] فالماء متعادل رغم أن pH له أقل من 7 (II صحيحة). تزداد Kw بارتفاع درجة الحرارة، وبما أن التسخين يزيد التأين فإن التأين الذاتي للماء ماص للحرارة (III خاطئة). ولهذا السبب أيضًا يتغير المجموع pH + pOH مع درجة الحرارة (13 عند 60 °C).",
+        "zh": "由表可知 60 °C 时 Kw = 1.0x10^-13。纯水中 [H+] = [OH-] = √(10^-13) = 10^-6.5 M，所以 pH = 6.5（I 正确）。因为 [H+] = [OH-]，即使 pH 小于 7，水仍呈中性（II 正确）。Kw 随温度升高而增大，说明升温促进电离，水的电离是吸热的（III 错误）。也正因如此，pH + pOH 随温度变化（60 °C 时为 13）。",
+        "ku": "Ji tabloyê li 60 °C Kw = 1,0x10^-13 tê xwendin. Di ava paqij de [H+] = [OH-] = √(10^-13) = 10^-6,5 M e, ji ber vê yekê pH = 6,5 e (I rast e). Ji ber ku [H+] = [OH-] e, av bêalî ye, her çend pH-a wê ji 7 kêmtir be jî (II rast e). Bi bilindbûna germahiyê Kw mezin dibe; madem germkirin îyonîzasyonê zêde dike, îyonîzasyona avê endotermîk e (III şaş e). Ji ber heman sedemê berhevoka pH + pOH jî bi germahiyê re diguhere (li 60 °C 13 e)."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Sıcaklık (°C)",
+            "en": "Temperature (°C)",
+            "de": "Temperatur (°C)",
+            "fr": "Température (°C)",
+            "ru": "Температура (°C)",
+            "ar": "درجة الحرارة (°C)",
+            "zh": "温度 (°C)",
+            "ku": "Germahî (°C)"
+          },
+          {
+            "tr": "Ksu",
+            "en": "Kw",
+            "de": "Kw",
+            "fr": "Ke",
+            "ru": "Kw",
+            "ar": "Kw",
+            "zh": "Kw",
+            "ku": "Kw"
+          }
+        ],
+        "rows": [
+          [
+            "0",
+            {
+              "tr": "1,1x10^-15",
+              "en": "1.1x10^-15",
+              "de": "1,1x10^-15",
+              "fr": "1,1x10^-15",
+              "ru": "1,1x10^-15",
+              "ar": "1.1x10^-15",
+              "zh": "1.1x10^-15",
+              "ku": "1,1x10^-15"
+            }
+          ],
+          [
+            "25",
+            {
+              "tr": "1,0x10^-14",
+              "en": "1.0x10^-14",
+              "de": "1,0x10^-14",
+              "fr": "1,0x10^-14",
+              "ru": "1,0x10^-14",
+              "ar": "1.0x10^-14",
+              "zh": "1.0x10^-14",
+              "ku": "1,0x10^-14"
+            }
+          ],
+          [
+            "60",
+            {
+              "tr": "1,0x10^-13",
+              "en": "1.0x10^-13",
+              "de": "1,0x10^-13",
+              "fr": "1,0x10^-13",
+              "ru": "1,0x10^-13",
+              "ar": "1.0x10^-13",
+              "zh": "1.0x10^-13",
+              "ku": "1,0x10^-13"
+            }
+          ]
+        ]
       }
     },
     {
@@ -2066,14 +2304,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin14",
       "stem": {
-        "tr": "25 °C'de 50 mL 0,1 M HCl çözeltisi, 0,1 M NaOH çözeltisi ile titre ediliyor. Buna göre,\nI. Titrasyon başlangıcında çözeltinin pH değeri 13'tür.\nII. 50 mL NaOH eklendiğinde eşdeğerlik noktasına ulaşılır ve pH 7 olur.\nIII. Toplam 100 mL NaOH eklendiğinde çözeltide [OH-] = 0,1 M olur.\nyargılarından hangileri doğrudur?",
-        "en": "At 25 °C, 50 mL of 0.1 M HCl solution is titrated with 0.1 M NaOH solution. Which of the following statements are correct?\nI. At the start of the titration the pH of the solution is 13.\nII. When 50 mL of NaOH has been added, the equivalence point is reached and the pH is 7.\nIII. When a total of 100 mL of NaOH has been added, [OH-] = 0.1 M in the solution.",
-        "de": "Bei 25 °C werden 50 mL 0,1 M HCl-Lösung mit 0,1 M NaOH-Lösung titriert. Welche Aussagen sind richtig?\nI. Zu Beginn der Titration beträgt der pH-Wert 13.\nII. Nach Zugabe von 50 mL NaOH ist der Äquivalenzpunkt erreicht und der pH beträgt 7.\nIII. Nach Zugabe von insgesamt 100 mL NaOH ist [OH-] = 0,1 M.",
-        "fr": "À 25 °C, 50 mL d’une solution de HCl à 0,1 M sont titrés par une solution de NaOH à 0,1 M. Lesquelles des affirmations suivantes sont exactes ?\nI. Au début du titrage, le pH de la solution vaut 13.\nII. Après ajout de 50 mL de NaOH, le point d’équivalence est atteint et le pH vaut 7.\nIII. Après ajout de 100 mL de NaOH au total, [OH-] = 0,1 M dans la solution.",
-        "ru": "При 25 °C 50 мл 0,1 M раствора HCl титруют 0,1 M раствором NaOH. Какие из утверждений верны?\nI. В начале титрования pH раствора равен 13.\nII. После добавления 50 мл NaOH достигается точка эквивалентности и pH = 7.\nIII. После добавления в сумме 100 мл NaOH в растворе [OH-] = 0,1 M.",
-        "ar": "عند 25 °C يُعاير 50 mL من محلول HCl تركيزه 0.1 M بمحلول NaOH تركيزه 0.1 M. أي العبارات التالية صحيحة؟\nI. في بداية المعايرة يكون pH للمحلول 13.\nII. عند إضافة 50 mL من NaOH تُبلَغ نقطة التكافؤ ويكون pH = 7.\nIII. عند إضافة 100 mL من NaOH إجمالًا يصبح [OH-] = 0.1 M في المحلول.",
-        "zh": "25 °C 时，用 0.1 M NaOH 溶液滴定 50 mL 0.1 M HCl 溶液。下列说法中哪些正确？\nI. 滴定开始时溶液的 pH 为 13。\nII. 加入 50 mL NaOH 时到达化学计量点，pH 为 7。\nIII. 共加入 100 mL NaOH 时，溶液中 [OH-] = 0.1 M。",
-        "ku": "Li 25 °C 50 mL çareseriya 0,1 M HCl bi çareseriya 0,1 M NaOH tê tîtrekirin. Li gorî vê yekê,\nI. Di destpêka tîtrasyonê de pH-a çareseriyê 13 e.\nII. Dema 50 mL NaOH lê tê zêdekirin xala hevtayê tê gihîştin û pH dibe 7.\nIII. Dema bi giştî 100 mL NaOH lê tê zêdekirin, di çareseriyê de [OH-] = 0,1 M dibe.\nkîjan ji van gotinan rast in?"
+        "tr": "Şekildeki grafik, 25 °C'de 50 mL HCl çözeltisinin bir NaOH çözeltisiyle titrasyonunda pH'ın eklenen NaOH hacmiyle değişimini göstermektedir. I. HCl çözeltisinin derişimi 0,1 M'dir. II. NaOH çözeltisinin derişimi 0,1 M'dir. III. Toplam 100 mL NaOH eklendiğinde çözeltide [OH-] = 0,1 M olur. yargılarından hangileri doğrudur?",
+        "en": "The graph shows how the pH changes with the volume of NaOH added when 50 mL of HCl solution is titrated with a NaOH solution at 25 °C. I. The concentration of the HCl solution is 0.1 M. II. The concentration of the NaOH solution is 0.1 M. III. After a total of 100 mL of NaOH has been added, [OH-] = 0.1 M in the solution. Which of these statements are correct?",
+        "de": "Das Diagramm zeigt die Änderung des pH-Werts mit dem zugegebenen NaOH-Volumen bei der Titration von 50 mL HCl-Lösung mit einer NaOH-Lösung bei 25 °C. I. Die Konzentration der HCl-Lösung beträgt 0,1 M. II. Die Konzentration der NaOH-Lösung beträgt 0,1 M. III. Nach Zugabe von insgesamt 100 mL NaOH ist [OH-] = 0,1 M. Welche Aussagen sind richtig?",
+        "fr": "Le graphique montre l'évolution du pH en fonction du volume de NaOH ajouté lors du titrage de 50 mL d'une solution de HCl par une solution de NaOH à 25 °C. I. La concentration de la solution de HCl est 0,1 M. II. La concentration de la solution de NaOH est 0,1 M. III. Après l'ajout de 100 mL de NaOH au total, [OH-] = 0,1 M dans la solution. Lesquelles de ces affirmations sont exactes ?",
+        "ru": "На графике показано изменение pH в зависимости от объёма добавленного NaOH при титровании 50 мл раствора HCl раствором NaOH при 25 °C. I. Концентрация раствора HCl равна 0,1 M. II. Концентрация раствора NaOH равна 0,1 M. III. После добавления в сумме 100 мл NaOH в растворе [OH-] = 0,1 M. Какие утверждения верны?",
+        "ar": "يبيّن الرسم البياني تغيّر pH مع حجم NaOH المضاف عند معايرة 50 mL من محلول HCl بمحلول NaOH عند 25 °C. I. تركيز محلول HCl هو 0.1 M. II. تركيز محلول NaOH هو 0.1 M. III. بعد إضافة 100 mL من NaOH إجمالًا يصبح [OH-] = 0.1 M في المحلول. أيّ هذه العبارات صحيحة؟",
+        "zh": "图为 25 °C 时用某 NaOH 溶液滴定 50 mL HCl 溶液时 pH 随加入 NaOH 体积的变化。I. HCl 溶液的浓度为 0.1 M。II. NaOH 溶液的浓度为 0.1 M。III. 共加入 100 mL NaOH 后，溶液中 [OH-] = 0.1 M。以上说法中哪些正确？",
+        "ku": "Grafîk nîşan dide ka di tîtrasyona 50 mL çareseriya HCl bi çareseriyeke NaOH li 25 °C de pH li gorî qebareya NaOH-ya zêdekirî çawa diguhere. I. Tîrbûna çareseriya HCl 0,1 M e. II. Tîrbûna çareseriya NaOH 0,1 M e. III. Dema bi giştî 100 mL NaOH tê zêdekirin, di çareseriyê de [OH-] = 0,1 M dibe. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -2127,16 +2365,117 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "II û III"
         }
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "I yanlış: Başlangıçta [H+] = 0,1 M olduğundan pH = 1'dir; 13 değeri pOH ile karıştırıldığında bulunur. II doğru: nHCl = 0,1 · 0,05 = 5x10^-3 mol'dür ve aynı mol NaOH 50 mL'de bulunur; kuvvetli asit-kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 7'dir. III yanlış: 100 mL NaOH'de 10^-2 mol OH- vardır, 5x10^-3 mol'ü artar. Toplam hacim 150 mL olduğundan [OH-] = 5x10^-3 / 0,15 ≈ 0,033 M'dir; hacim artışı hesaba katılmazsa 0,1 M sanılır.",
-        "en": "I is incorrect: initially [H+] = 0.1 M, so pH = 1; 13 results from confusing it with pOH. II is correct: nHCl = 0.1 · 0.05 = 5x10^-3 mol, and the same amount of NaOH is in 50 mL; in a strong acid-strong base titration the pH at the equivalence point is 7. III is incorrect: 100 mL of NaOH contains 10^-2 mol OH-, of which 5x10^-3 mol is in excess. The total volume is 150 mL, so [OH-] = 5x10^-3 / 0.15 ≈ 0.033 M; ignoring the volume increase gives the wrong 0.1 M.",
-        "de": "I ist falsch: Anfangs ist [H+] = 0,1 M, also pH = 1; 13 entsteht durch Verwechslung mit pOH. II ist richtig: nHCl = 0,1 · 0,05 = 5x10^-3 mol, dieselbe Stoffmenge NaOH ist in 50 mL enthalten; bei starker Säure-starker Base ist der pH am Äquivalenzpunkt 7. III ist falsch: 100 mL NaOH enthalten 10^-2 mol OH-, davon sind 5x10^-3 mol im Überschuss. Das Gesamtvolumen beträgt 150 mL, also [OH-] = 5x10^-3 / 0,15 ≈ 0,033 M; ohne Volumenzunahme erhält man fälschlich 0,1 M.",
-        "fr": "I est fausse : au départ [H+] = 0,1 M, donc pH = 1 ; 13 résulte d’une confusion avec le pOH. II est exacte : nHCl = 0,1 · 0,05 = 5x10^-3 mol, la même quantité de NaOH est contenue dans 50 mL ; pour un titrage acide fort-base forte, le pH à l’équivalence vaut 7. III est fausse : 100 mL de NaOH contiennent 10^-2 mol de OH-, dont 5x10^-3 mol en excès. Le volume total est de 150 mL, donc [OH-] = 5x10^-3 / 0,15 ≈ 0,033 M ; oublier l’augmentation de volume donne à tort 0,1 M.",
-        "ru": "I неверно: в начале [H+] = 0,1 M, значит, pH = 1; значение 13 получается при путанице с pOH. II верно: nHCl = 0,1 · 0,05 = 5x10^-3 моль, такое же количество NaOH содержится в 50 мл; при титровании сильной кислоты сильным основанием pH в точке эквивалентности равен 7. III неверно: в 100 мл NaOH содержится 10^-2 моль OH-, из них 5x10^-3 моль остаются в избытке. Общий объём равен 150 мл, поэтому [OH-] = 5x10^-3 / 0,15 ≈ 0,033 M; без учёта увеличения объёма ошибочно получают 0,1 M.",
-        "ar": "I خاطئة: في البداية [H+] = 0.1 M لذا pH = 1، والقيمة 13 تنتج من الخلط مع pOH. II صحيحة: nHCl = 0.1 · 0.05 = 5x10^-3 mol وتوجد الكمية نفسها من NaOH في 50 mL، وفي معايرة حمض قوي بقاعدة قوية يكون pH عند التكافؤ 7. III خاطئة: يحتوي 100 mL من NaOH على 10^-2 mol من OH- يفيض منها 5x10^-3 mol، والحجم الكلي 150 mL، لذا [OH-] = 5x10^-3 / 0.15 ≈ 0.033 M، وإهمال زيادة الحجم يعطي 0.1 M خطأً.",
-        "zh": "I 错误：开始时 [H+] = 0.1 M，pH = 1；13 是与 pOH 混淆的结果。II 正确：nHCl = 0.1 · 0.05 = 5x10^-3 mol，50 mL NaOH 中含有等量的 NaOH；强酸-强碱滴定的化学计量点 pH 为 7。III 错误：100 mL NaOH 含 10^-2 mol OH-，其中过量 5x10^-3 mol；总体积 150 mL，[OH-] = 5x10^-3 / 0.15 ≈ 0.033 M；忽略体积增大会错误地得到 0.1 M。",
-        "ku": "I şaş e: di destpêkê de [H+] = 0,1 M e, ji ber vê yekê pH = 1 e; 13 ji tevlihevkirina bi pOH re derdikeve. II rast e: nHCl = 0,1 · 0,05 = 5x10^-3 mol e û heman mîqdara NaOH di 50 mL de heye; di tîtrasyona asîda bihêz-baza bihêz de li xala hevtayê pH 7 e. III şaş e: di 100 mL NaOH de 10^-2 mol OH- heye, 5x10^-3 mol jê zêde dimîne. Qebareya giştî 150 mL e, ji ber vê yekê [OH-] = 5x10^-3 / 0,15 ≈ 0,033 M e; heke zêdebûna qebareyê neyê hesibandin bi şaşî 0,1 M tê dîtin."
+        "tr": "I doğru: grafikte başlangıç pH'ı 1'dir; HCl kuvvetli asit olduğundan [H+] = [HCl] = 0,1 M. II doğru: eşdeğerlik noktası (pH 7'deki dik sıçrama) 50 mL NaOH'dedir; n(HCl) = 0,1 · 0,050 = 5,0x10^-3 mol = n(NaOH), [NaOH] = 5,0x10^-3 / 0,050 = 0,1 M. III yanlış: 100 mL NaOH'de 1,0x10^-2 mol OH- vardır, 5,0x10^-3 mol'ü artar; toplam hacim 150 mL olduğundan [OH-] = 5,0x10^-3 / 0,150 ≈ 0,033 M'dir (grafikte pH ≈ 12,5). Hacim artışını hesaba katmamak 0,1 M sonucunu verir.",
+        "en": "I is correct: the curve starts at pH 1; HCl is a strong acid, so [H+] = [HCl] = 0.1 M. II is correct: the equivalence point (the steep jump at pH 7) is at 50 mL of NaOH; n(HCl) = 0.1 · 0.050 = 5.0x10^-3 mol = n(NaOH), so [NaOH] = 5.0x10^-3 / 0.050 = 0.1 M. III is incorrect: 100 mL of NaOH contains 1.0x10^-2 mol OH-, of which 5.0x10^-3 mol is in excess; the total volume is 150 mL, so [OH-] = 5.0x10^-3 / 0.150 ≈ 0.033 M (pH ≈ 12.5 on the graph). Ignoring the volume increase gives 0.1 M.",
+        "de": "I ist richtig: Die Kurve beginnt bei pH 1; HCl ist eine starke Säure, also [H+] = [HCl] = 0,1 M. II ist richtig: Der Äquivalenzpunkt (steiler Sprung bei pH 7) liegt bei 50 mL NaOH; n(HCl) = 0,1 · 0,050 = 5,0x10^-3 mol = n(NaOH), also [NaOH] = 5,0x10^-3 / 0,050 = 0,1 M. III ist falsch: 100 mL NaOH enthalten 1,0x10^-2 mol OH-, davon 5,0x10^-3 mol im Überschuss; bei 150 mL Gesamtvolumen ist [OH-] = 5,0x10^-3 / 0,150 ≈ 0,033 M (pH ≈ 12,5 im Diagramm). Ohne Volumenzunahme erhält man 0,1 M.",
+        "fr": "I est exacte : la courbe part de pH 1 ; HCl est un acide fort, donc [H+] = [HCl] = 0,1 M. II est exacte : le point d'équivalence (saut brusque à pH 7) est à 50 mL de NaOH ; n(HCl) = 0,1 · 0,050 = 5,0x10^-3 mol = n(NaOH), d'où [NaOH] = 5,0x10^-3 / 0,050 = 0,1 M. III est fausse : 100 mL de NaOH contiennent 1,0x10^-2 mol de OH-, dont 5,0x10^-3 mol en excès ; le volume total est de 150 mL, donc [OH-] = 5,0x10^-3 / 0,150 ≈ 0,033 M (pH ≈ 12,5 sur le graphique). Oublier l'augmentation de volume donne 0,1 M.",
+        "ru": "I верно: кривая начинается при pH 1; HCl — сильная кислота, поэтому [H+] = [HCl] = 0,1 M. II верно: точка эквивалентности (резкий скачок при pH 7) приходится на 50 мл NaOH; n(HCl) = 0,1 · 0,050 = 5,0x10^-3 моль = n(NaOH), откуда [NaOH] = 5,0x10^-3 / 0,050 = 0,1 M. III неверно: в 100 мл NaOH содержится 1,0x10^-2 моль OH-, из них 5,0x10^-3 моль в избытке; общий объём 150 мл, поэтому [OH-] = 5,0x10^-3 / 0,150 ≈ 0,033 M (на графике pH ≈ 12,5). Без учёта увеличения объёма получают 0,1 M.",
+        "ar": "I صحيحة: يبدأ المنحنى عند pH = 1، ولأن HCl حمض قوي فإن [H+] = [HCl] = 0.1 M. II صحيحة: نقطة التكافؤ (القفزة الحادة عند pH = 7) عند 50 mL من NaOH؛ n(HCl) = 0.1 · 0.050 = 5.0x10^-3 mol = n(NaOH)، إذن [NaOH] = 5.0x10^-3 / 0.050 = 0.1 M. III خاطئة: يحتوي 100 mL من NaOH على 1.0x10^-2 mol من OH- يفيض منها 5.0x10^-3 mol، والحجم الكلي 150 mL، لذا [OH-] = 5.0x10^-3 / 0.150 ≈ 0.033 M (pH ≈ 12.5 في الرسم). إهمال زيادة الحجم يعطي 0.1 M.",
+        "zh": "I 正确：曲线起点 pH = 1；HCl 是强酸，故 [H+] = [HCl] = 0.1 M。II 正确：化学计量点（pH 7 处的突跃）在 50 mL NaOH 处；n(HCl) = 0.1 · 0.050 = 5.0x10^-3 mol = n(NaOH)，所以 [NaOH] = 5.0x10^-3 / 0.050 = 0.1 M。III 错误：100 mL NaOH 含 1.0x10^-2 mol OH-，其中过量 5.0x10^-3 mol；总体积 150 mL，[OH-] = 5.0x10^-3 / 0.150 ≈ 0.033 M（图中 pH ≈ 12.5）。忽略体积增大会得到 0.1 M。",
+        "ku": "I rast e: kevan ji pH 1 dest pê dike; HCl asîdeke bihêz e, ji ber vê yekê [H+] = [HCl] = 0,1 M. II rast e: xala hevtayê (bazdana tûj li pH 7) li 50 mL NaOH e; n(HCl) = 0,1 · 0,050 = 5,0x10^-3 mol = n(NaOH), yanî [NaOH] = 5,0x10^-3 / 0,050 = 0,1 M. III şaş e: di 100 mL NaOH de 1,0x10^-2 mol OH- heye, 5,0x10^-3 mol jê zêde dimîne; qebareya giştî 150 mL e, ji ber vê yekê [OH-] = 5,0x10^-3 / 0,150 ≈ 0,033 M (li ser grafîkê pH ≈ 12,5). Heke zêdebûna qebareyê neyê hesibandin 0,1 M tê dîtin."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Eklenen NaOH hacmi (mL)",
+          "en": "Volume of NaOH added (mL)",
+          "de": "Zugegebenes NaOH-Volumen (mL)",
+          "fr": "Volume de NaOH ajouté (mL)",
+          "ru": "Объём добавленного NaOH (мл)",
+          "ar": "حجم NaOH المضاف (mL)",
+          "zh": "加入 NaOH 的体积 (mL)",
+          "ku": "Qebareya NaOH-ya zêdekirî (mL)"
+        },
+        "yLabel": "pH",
+        "xMax": 100,
+        "yMax": 14,
+        "xTicks": [
+          25,
+          50,
+          75,
+          100
+        ],
+        "yTicks": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                1
+              ],
+              [
+                10,
+                1.18
+              ],
+              [
+                25,
+                1.48
+              ],
+              [
+                40,
+                1.95
+              ],
+              [
+                45,
+                2.28
+              ],
+              [
+                49,
+                3.0
+              ],
+              [
+                49.9,
+                4.0
+              ],
+              [
+                50,
+                7
+              ],
+              [
+                50.1,
+                10.0
+              ],
+              [
+                51,
+                11.0
+              ],
+              [
+                55,
+                11.68
+              ],
+              [
+                60,
+                11.96
+              ],
+              [
+                75,
+                12.3
+              ],
+              [
+                100,
+                12.52
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 50,
+            "y": 7,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {

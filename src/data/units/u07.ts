@@ -765,14 +765,14 @@ export const unit07: ChemistryUnitSeedData = {
         "ku": "Îyonên temaşevan"
       },
       "distinction": {
-        "tr": "Çöken katıyı veya oluşan suyu gösteren denklem yalnızca tepkimeye katılan iyonlarla yazılır; seyirci iyonlar ise çözeltide değişmeden kalan iyonlardır.",
-        "en": "The net ionic equation shows the precipitate or the water that forms and contains only the ions that take part in the reaction; spectator ions are ions that remain unchanged in solution.",
-        "de": "Die Nettoionengleichung zeigt den ausgefällten Feststoff bzw. das gebildete Wasser und enthält nur die an der Reaktion beteiligten Ionen; Zuschauerionen sind Ionen, die in Lösung unverändert bleiben.",
-        "fr": "L'équation ionique nette montre le solide précipité ou l'eau formée et ne contient que les ions qui participent à la réaction ; les ions spectateurs sont des ions qui restent inchangés en solution.",
-        "ru": "Сокращённое ионное уравнение показывает выпавший осадок или образовавшуюся воду и содержит только ионы, участвующие в реакции; ионы-наблюдатели — ионы, которые остаются в растворе без изменений.",
-        "ar": "المعادلة الأيونية الصافية: معادلة تبيّن تكوّن الراسب الصلب أو الماء ولا تُكتب فيها إلا الأيونات المشاركة في التفاعل؛ أما الأيونات المتفرجة فأيونات تبقى في المحلول دون تغيير.",
-        "zh": "净离子方程式表示生成的沉淀或水，只包含参加反应的离子；旁观离子是在溶液中保持不变的离子。",
-        "ku": "Hevkêşeya îyonî ya net madeya hişk a ku dinişe an ava ku çêdibe nîşan dide û tenê îyonên ku beşdarî reaksiyonê dibin dihewîne; îyonên temaşevan ew îyon in ku di çareseriyê de bê guhertin dimînin."
+        "tr": "Net iyon denklemi, çöken katıyı veya oluşan suyu meydana getiren ve tepkimeye fiilen katılan iyonlarla yazılır; seyirci iyonlar ise çözeltide değişmeden kalan ve bu denklemde yer almayan iyonlardır.",
+        "en": "The net ionic equation is written only with the ions that actually take part in the reaction, forming the precipitate or the water; spectator ions, by contrast, remain unchanged in solution and do not appear in this equation.",
+        "de": "Die Nettoionengleichung wird nur mit den Ionen geschrieben, die tatsächlich reagieren und den Niederschlag bzw. das Wasser bilden; Zuschauerionen dagegen bleiben in Lösung unverändert und erscheinen in dieser Gleichung nicht.",
+        "fr": "L'équation ionique nette s'écrit uniquement avec les ions qui participent réellement à la réaction en formant le précipité ou l'eau ; les ions spectateurs, eux, restent inchangés en solution et n'y figurent pas.",
+        "ru": "Сокращённое ионное уравнение записывают только с теми ионами, которые действительно участвуют в реакции и образуют осадок или воду; ионы-наблюдатели же остаются в растворе без изменений и в это уравнение не входят.",
+        "ar": "المعادلة الأيونية الصافية تُكتب بالأيونات التي تشارك فعلًا في التفاعل مكوّنةً الراسب أو الماء فقط؛ أما الأيونات المتفرجة فتبقى في المحلول دون تغيير ولا تظهر في هذه المعادلة.",
+        "zh": "净离子方程式只用真正参加反应、生成沉淀或水的离子来书写；而旁观离子在溶液中保持不变，不出现在该方程式中。",
+        "ku": "Hevkêşeya îyonî ya net tenê bi wan îyonan tê nivîsandin ku bi rastî beşdarî reaksiyonê dibin û madeya niştî an avê çêdikin; îyonên temaşevan jî di çareseriyê de bê guhertin dimînin û di vê hevkêşeyê de cih nagirin."
       }
     },
     {
@@ -846,14 +846,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-s01",
       "title": {
-        "tr": "Stokiyometrik Problem Çözüm Adımları",
-        "en": "Steps for Solving a Stoichiometry Problem",
-        "de": "Schritte zur stöchiometrischen Problemlösung",
-        "fr": "Étapes de résolution d'un problème de stœchiométrie",
-        "ru": "Этапы решения стехиометрической задачи",
-        "ar": "خطوات حل مسألة في الحسابات الكيميائية",
-        "zh": "化学计量计算题的解题步骤",
-        "ku": "Gavên çareserkirina pirsgirêkeke stokiyometrîk"
+        "tr": "Stokiyometrik Problem Çözümü",
+        "en": "Solving a Stoichiometry Problem",
+        "de": "Lösen einer Stöchiometrieaufgabe",
+        "fr": "Résolution d'un problème de stœchiométrie",
+        "ru": "Решение стехиометрической задачи",
+        "ar": "حل مسألة في الحسابات الكيميائية",
+        "zh": "化学计量计算题的求解",
+        "ku": "Çareserkirina pirsgirêkeke stokiyometrîk"
       },
       "steps": [
         {
@@ -901,14 +901,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-s02",
       "title": {
-        "tr": "Tepkime Denkleştirme Adımları",
-        "en": "Steps for Balancing a Reaction",
-        "de": "Schritte zum Ausgleichen einer Reaktionsgleichung",
-        "fr": "Étapes pour équilibrer une réaction",
-        "ru": "Расстановка коэффициентов в уравнении реакции",
-        "ar": "خطوات موازنة التفاعل",
-        "zh": "配平化学方程式的步骤",
-        "ku": "Gavên hevsengkirina reaksiyonê"
+        "tr": "Tepkime Denkleştirme",
+        "en": "Balancing a Chemical Equation",
+        "de": "Ausgleichen einer Reaktionsgleichung",
+        "fr": "Équilibrage d'une équation chimique",
+        "ru": "Уравнивание химической реакции",
+        "ar": "موازنة المعادلة الكيميائية",
+        "zh": "配平化学方程式",
+        "ku": "Hevsengkirina hevkêşeya kîmyayî"
       },
       "steps": [
         {
@@ -922,24 +922,24 @@ export const unit07: ChemistryUnitSeedData = {
           "ku": "Formulên reaktantan û hilberan rast tên nivîsandin"
         },
         {
-          "tr": "En çok atom içeren bileşikten başlanır",
-          "en": "Start with the compound containing the most atoms",
-          "de": "Man beginnt mit der Verbindung, die die meisten Atome enthält",
-          "fr": "On commence par le composé qui contient le plus d'atomes",
-          "ru": "Начинают с соединения, содержащего больше всего атомов",
-          "ar": "يُبدأ بالمركب الذي يحتوي على أكبر عدد من الذرات",
-          "zh": "从含原子数最多的化合物开始",
-          "ku": "Ji pêkhateya ku herî zêde atom dihewîne dest pê dibe"
+          "tr": "Her elementin girenlerdeki ve ürünlerdeki atom sayıları sayılır",
+          "en": "The number of atoms of each element on the reactant and product sides is counted",
+          "de": "Die Anzahl der Atome jedes Elements auf der Edukt- und der Produktseite wird gezählt",
+          "fr": "On compte le nombre d'atomes de chaque élément du côté des réactifs et du côté des produits",
+          "ru": "Подсчитывают число атомов каждого элемента в левой и правой частях",
+          "ar": "يُعدّ عدد ذرات كل عنصر في جهة المتفاعلات وفي جهة النواتج",
+          "zh": "数出反应物一侧和生成物一侧每种元素的原子数",
+          "ku": "Hejmara atomên her elementê li aliyê reaktantan û li aliyê hilberan tê jimartin"
         },
         {
-          "tr": "Genellikle önce metal ve ametal atomları, en son H ve O atomları eşitlenir",
-          "en": "Usually metal and nonmetal atoms are balanced first, H and O atoms last",
-          "de": "Meist werden zuerst Metall- und Nichtmetallatome, zuletzt H- und O-Atome ausgeglichen",
-          "fr": "On équilibre généralement d'abord les atomes de métaux et de non-métaux, puis en dernier H et O",
-          "ru": "Обычно сначала уравнивают атомы металлов и неметаллов, в последнюю очередь — H и O",
-          "ar": "تُوازن عادةً ذرات الفلزات واللافلزات أولًا، وذرات H وO في النهاية",
-          "zh": "通常先配平金属和非金属原子，最后配平 H 和 O 原子",
-          "ku": "Piranî pêşî atomên metal û nemetalan, herî dawî jî atomên H û O tên wekhevkirin"
+          "tr": "Katsayılar yazılarak önce metal ve ametal atomları, en son H ve O atomları eşitlenir",
+          "en": "Coefficients are added, balancing metal and nonmetal atoms first and H and O atoms last",
+          "de": "Durch Koeffizienten werden zuerst Metall- und Nichtmetallatome, zuletzt H- und O-Atome ausgeglichen",
+          "fr": "On place des coefficients en équilibrant d'abord les atomes métalliques et non métalliques, puis en dernier H et O",
+          "ru": "Расставляют коэффициенты: сначала уравнивают атомы металлов и неметаллов, в последнюю очередь — H и O",
+          "ar": "تُكتب المعاملات فتُوازن ذرات الفلزات واللافلزات أولًا ثم ذرات H وO أخيرًا",
+          "zh": "添加化学计量数，先配平金属和非金属原子，最后配平 H 和 O 原子",
+          "ku": "Bi nivîsandina hejmarkeran pêşî atomên metal û nemetalan, herî dawî atomên H û O tên hevsengkirin"
         },
         {
           "tr": "Katsayılar en küçük tam sayılara indirgenir",
@@ -956,14 +956,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-s03",
       "title": {
-        "tr": "Çözünme-Çökelme Tepkimesi ve Net İyon Denklemi",
-        "en": "Precipitation Reaction and Net Ionic Equation",
-        "de": "Fällungsreaktion und Nettoionengleichung",
-        "fr": "Réaction de précipitation et équation ionique nette",
-        "ru": "Реакция осаждения и сокращённое ионное уравнение",
-        "ar": "تفاعل الترسيب والمعادلة الأيونية الصافية",
-        "zh": "沉淀反应与净离子方程式",
-        "ku": "Reaksiyona helbûn-niştinê û hevkêşeya îyonî ya net"
+        "tr": "Çökelme Tepkimesi ve Net İyon Denklemi Yazımı",
+        "en": "Precipitation Reaction and Writing the Net Ionic Equation",
+        "de": "Fällungsreaktion und Aufstellen der Nettoionengleichung",
+        "fr": "Réaction de précipitation et écriture de l'équation ionique nette",
+        "ru": "Реакция осаждения и составление сокращённого ионного уравнения",
+        "ar": "تفاعل الترسيب وكتابة المعادلة الأيونية الصافية",
+        "zh": "沉淀反应及净离子方程式的书写",
+        "ku": "Reaksiyona niştinê û nivîsandina hevkêşeya îyonî ya net"
       },
       "steps": [
         {
@@ -1068,153 +1068,299 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin01",
       "stem": {
-        "tr": "C3H8 + 5 O2 -> 3 CO2 + 4 H2O tepkimesine göre 0,2 mol C3H8'in tamamen yanması için normal koşullarda en az kaç litre O2 gazı gereklidir?",
-        "en": "According to the reaction C3H8 + 5 O2 -> 3 CO2 + 4 H2O, what is the minimum volume in litres of O2 gas, at standard conditions (STP), needed for the complete combustion of 0.2 mol C3H8?",
-        "de": "Wie viele Liter O2-Gas werden gemäß der Reaktion C3H8 + 5 O2 -> 3 CO2 + 4 H2O unter Normalbedingungen mindestens für die vollständige Verbrennung von 0,2 mol C3H8 benötigt?",
-        "fr": "D'après la réaction C3H8 + 5 O2 -> 3 CO2 + 4 H2O, quel volume minimal de dioxygène O2, en litres, mesuré dans les conditions normales, faut-il pour la combustion complète de 0,2 mol de C3H8 ?",
-        "ru": "Какой наименьший объём O2 (в литрах, н. у.) необходим для полного сгорания 0,2 моль C3H8 по реакции C3H8 + 5 O2 -> 3 CO2 + 4 H2O?",
-        "ar": "وفقًا للتفاعل C3H8 + 5 O2 -> 3 CO2 + 4 H2O، ما أقل حجم من غاز O2 باللتر يلزم في الظروف القياسية للاحتراق الكامل لـ 0.2 mol من C3H8؟",
-        "zh": "根据反应 C3H8 + 5 O2 -> 3 CO2 + 4 H2O，0.2 mol C3H8 完全燃烧至少需要标准状况下多少升 O2？",
-        "ku": "Li gorî reaksiyona C3H8 + 5 O2 -> 3 CO2 + 4 H2O, ji bo şewitîna tevahî ya 0,2 mol C3H8 di şertên normal (ŞN) de herî kêm çend lître gaza O2 hewce ye?"
+        "tr": "Kapalı bir kapta X ve Y gazlarından yalnızca Z gazının oluştuğu bir tepkimede madde miktarlarının zamanla değişimi grafikte verilmiştir. Tepkimenin en küçük tam sayılarla denkleştirilmiş denklemi aşağıdakilerden hangisidir?",
+        "en": "The graph shows how the amounts of substance change with time in a closed container where gases X and Y react to form only gas Z. Which of the following is the equation of the reaction balanced with the smallest whole numbers?",
+        "de": "Das Diagramm zeigt die zeitliche Änderung der Stoffmengen in einem geschlossenen Gefäß, in dem aus den Gasen X und Y nur das Gas Z entsteht. Welche der folgenden ist die mit kleinsten ganzen Zahlen ausgeglichene Reaktionsgleichung?",
+        "fr": "Le graphique montre l'évolution au cours du temps des quantités de matière dans un récipient fermé où les gaz X et Y réagissent pour ne former que le gaz Z. Laquelle des équations suivantes est l'équation de la réaction équilibrée avec les plus petits nombres entiers ?",
+        "ru": "На графике показано изменение количеств веществ со временем в закрытом сосуде, где из газов X и Y образуется только газ Z. Какое из следующих уравнений реакции уравнено наименьшими целыми коэффициентами?",
+        "ar": "يبين الرسم البياني تغيّر كميات المواد مع الزمن في وعاء مغلق يتفاعل فيه الغازان X وY ليتكوّن الغاز Z فقط. أيّ المعادلات الآتية هي معادلة التفاعل الموزونة بأصغر أعداد صحيحة؟",
+        "zh": "图中给出了在密闭容器中气体 X 和 Y 反应只生成气体 Z 时，各物质的物质的量随时间的变化。下列哪一个是以最简整数比配平的该反应方程式？",
+        "ku": "Grafîk nîşan dide ka di firaxeke girtî de, ku tê de ji gazên X û Y tenê gaza Z çêdibe, mîqdarên madeyan bi demê re çawa diguherin. Hevkêşeya reaksiyonê ya bi hejmarên tam ên herî biçûk hevsengkirî kîjan e?"
       },
       "options": [
         {
-          "tr": "2,24 L",
-          "en": "2.24 L",
-          "de": "2,24 L",
-          "fr": "2,24 L",
-          "ru": "2,24 л",
-          "ar": "2.24 L",
-          "zh": "2.24 L",
-          "ku": "2,24 L"
+          "tr": "X + 2Y -> Z",
+          "en": "X + 2Y -> Z",
+          "de": "X + 2Y -> Z",
+          "fr": "X + 2Y -> Z",
+          "ru": "X + 2Y -> Z",
+          "ar": "X + 2Y -> Z",
+          "zh": "X + 2Y -> Z",
+          "ku": "X + 2Y -> Z"
         },
         {
-          "tr": "5,6 L",
-          "en": "5.6 L",
-          "de": "5,6 L",
-          "fr": "5,6 L",
-          "ru": "5,6 л",
-          "ar": "5.6 L",
-          "zh": "5.6 L",
-          "ku": "5,6 L"
+          "tr": "3X + 4Y -> 2Z",
+          "en": "3X + 4Y -> 2Z",
+          "de": "3X + 4Y -> 2Z",
+          "fr": "3X + 4Y -> 2Z",
+          "ru": "3X + 4Y -> 2Z",
+          "ar": "3X + 4Y -> 2Z",
+          "zh": "3X + 4Y -> 2Z",
+          "ku": "3X + 4Y -> 2Z"
         },
         {
-          "tr": "11,2 L",
-          "en": "11.2 L",
-          "de": "11,2 L",
-          "fr": "11,2 L",
-          "ru": "11,2 л",
-          "ar": "11.2 L",
-          "zh": "11.2 L",
-          "ku": "11,2 L"
+          "tr": "2X + Y -> Z",
+          "en": "2X + Y -> Z",
+          "de": "2X + Y -> Z",
+          "fr": "2X + Y -> Z",
+          "ru": "2X + Y -> Z",
+          "ar": "2X + Y -> Z",
+          "zh": "2X + Y -> Z",
+          "ku": "2X + Y -> Z"
         },
         {
-          "tr": "22,4 L",
-          "en": "22.4 L",
-          "de": "22,4 L",
-          "fr": "22,4 L",
-          "ru": "22,4 л",
-          "ar": "22.4 L",
-          "zh": "22.4 L",
-          "ku": "22,4 L"
+          "tr": "X + 2Y -> 2Z",
+          "en": "X + 2Y -> 2Z",
+          "de": "X + 2Y -> 2Z",
+          "fr": "X + 2Y -> 2Z",
+          "ru": "X + 2Y -> 2Z",
+          "ar": "X + 2Y -> 2Z",
+          "zh": "X + 2Y -> 2Z",
+          "ku": "X + 2Y -> 2Z"
         },
         {
-          "tr": "44,8 L",
-          "en": "44.8 L",
-          "de": "44,8 L",
-          "fr": "44,8 L",
-          "ru": "44,8 л",
-          "ar": "44.8 L",
-          "zh": "44.8 L",
-          "ku": "44,8 L"
+          "tr": "X + Y -> Z",
+          "en": "X + Y -> Z",
+          "de": "X + Y -> Z",
+          "fr": "X + Y -> Z",
+          "ru": "X + Y -> Z",
+          "ar": "X + Y -> Z",
+          "zh": "X + Y -> Z",
+          "ku": "X + Y -> Z"
         }
       ],
-      "correctIndex": 3,
+      "correctIndex": 0,
       "explanation": {
-        "tr": "1 mol C3H8 için 5 mol O2 gerekir. 0,2 mol C3H8 için 0,2 x 5 = 1,0 mol O2 gerekir. Normal koşullarda 1 mol gaz 22,4 L hacim kaplar; gereken O2 22,4 L'dir.",
-        "en": "1 mol C3H8 needs 5 mol O2, so 0.2 mol C3H8 needs 0.2 x 5 = 1.0 mol O2. At STP 1 mol of gas occupies 22.4 L, so 22.4 L of O2 is needed.",
-        "de": "Für 1 mol C3H8 werden 5 mol O2 benötigt, für 0,2 mol C3H8 also 0,2 x 5 = 1,0 mol O2. Unter Normalbedingungen nimmt 1 mol Gas 22,4 L ein; benötigt werden 22,4 L O2.",
-        "fr": "1 mol de C3H8 nécessite 5 mol de O2 ; 0,2 mol de C3H8 nécessite donc 0,2 x 5 = 1,0 mol de O2. Dans les conditions normales, 1 mol de gaz occupe 22,4 L : il faut 22,4 L de O2.",
-        "ru": "На 1 моль C3H8 нужно 5 моль O2, значит на 0,2 моль C3H8 — 0,2 x 5 = 1,0 моль O2. При н. у. 1 моль газа занимает 22,4 л, поэтому нужно 22,4 л O2.",
-        "ar": "يلزم 5 mol من O2 لكل 1 mol من C3H8، إذن يلزم 0.2 × 5 = 1.0 mol من O2. وفي الظروف القياسية يشغل 1 mol من الغاز 22.4 L، فالمطلوب 22.4 L من O2.",
-        "zh": "1 mol C3H8 需要 5 mol O2，因此 0.2 mol C3H8 需要 0.2 x 5 = 1.0 mol O2。标准状况下 1 mol 气体体积为 22.4 L，故需 O2 22.4 L。",
-        "ku": "Ji bo 1 mol C3H8 5 mol O2 hewce ye; ji ber vê ji bo 0,2 mol C3H8 0,2 x 5 = 1,0 mol O2 hewce ye. Di şertên normal de 1 mol gaz 22,4 L qebare digire; ji ber vê 22,4 L O2 hewce ye."
+        "tr": "Katsayılar başlangıç miktarlarıyla değil, harcanan ve oluşan mol sayılarıyla orantılıdır. Grafikten: harcanan X = 0,6 − 0,2 = 0,4 mol; harcanan Y = 0,8 − 0 = 0,8 mol; oluşan Z = 0,4 mol. Oran 0,4 : 0,8 : 0,4 = 1 : 2 : 1 olduğundan denklem X + 2Y -> Z'dir. Y tamamen tükendiği için sınırlayıcıdır, 0,2 mol X artar. 3X + 4Y -> 2Z başlangıç miktarlarını (0,6 ve 0,8 mol) katsayı sanmaktan, X + 2Y -> 2Z ise Z'yi harcanan Y ile eşlemekten gelir.",
+        "en": "Coefficients are proportional to the moles consumed and formed, not to the initial amounts. From the graph: X consumed = 0.6 − 0.2 = 0.4 mol; Y consumed = 0.8 − 0 = 0.8 mol; Z formed = 0.4 mol. The ratio 0.4 : 0.8 : 0.4 = 1 : 2 : 1, so the equation is X + 2Y -> Z. Y is used up, so it is limiting; 0.2 mol X is left over. 3X + 4Y -> 2Z comes from taking the initial amounts (0.6 and 0.8 mol) as coefficients, and X + 2Y -> 2Z from matching Z to the Y consumed.",
+        "de": "Die Koeffizienten sind proportional zu den verbrauchten und gebildeten Stoffmengen, nicht zu den Anfangsmengen. Aus dem Diagramm: verbrauchtes X = 0,6 − 0,2 = 0,4 mol; verbrauchtes Y = 0,8 − 0 = 0,8 mol; gebildetes Z = 0,4 mol. Das Verhältnis 0,4 : 0,8 : 0,4 = 1 : 2 : 1 ergibt X + 2Y -> Z. Y wird vollständig verbraucht und ist limitierend; 0,2 mol X bleiben übrig. 3X + 4Y -> 2Z entsteht, wenn man die Anfangsmengen (0,6 und 0,8 mol) als Koeffizienten nimmt, X + 2Y -> 2Z, wenn man Z dem verbrauchten Y gleichsetzt.",
+        "fr": "Les coefficients sont proportionnels aux quantités consommées et formées, et non aux quantités initiales. D'après le graphique : X consommé = 0,6 − 0,2 = 0,4 mol ; Y consommé = 0,8 − 0 = 0,8 mol ; Z formé = 0,4 mol. Le rapport 0,4 : 0,8 : 0,4 = 1 : 2 : 1 donne X + 2Y -> Z. Y est entièrement consommé : c'est le réactif limitant ; il reste 0,2 mol de X. 3X + 4Y -> 2Z vient de la prise des quantités initiales (0,6 et 0,8 mol) pour des coefficients, et X + 2Y -> 2Z de l'égalisation de Z avec le Y consommé.",
+        "ru": "Коэффициенты пропорциональны израсходованным и образовавшимся количествам вещества, а не начальным количествам. По графику: израсходовано X = 0,6 − 0,2 = 0,4 моль; Y = 0,8 − 0 = 0,8 моль; образовалось Z = 0,4 моль. Отношение 0,4 : 0,8 : 0,4 = 1 : 2 : 1, поэтому уравнение X + 2Y -> Z. Y израсходован полностью и является лимитирующим; остаётся 0,2 моль X. 3X + 4Y -> 2Z получается, если принять начальные количества (0,6 и 0,8 моль) за коэффициенты, а X + 2Y -> 2Z — если приравнять Z к израсходованному Y.",
+        "ar": "المعاملات تتناسب مع المولات المستهلكة والمتكوّنة لا مع الكميات الابتدائية. من الرسم: المستهلك من X = 0.6 − 0.2 = 0.4 mol، والمستهلك من Y = 0.8 − 0 = 0.8 mol، والمتكوّن من Z = 0.4 mol. النسبة 0.4 : 0.8 : 0.4 = 1 : 2 : 1، فالمعادلة X + 2Y -> Z. وY استُهلك كليًا فهو المادة المحددة، ويتبقى 0.2 mol من X. أما 3X + 4Y -> 2Z فتأتي من اعتبار الكميات الابتدائية (0.6 و0.8 mol) معاملات، وX + 2Y -> 2Z من مساواة Z بـ Y المستهلك.",
+        "zh": "化学计量数与消耗和生成的物质的量成正比，而不是与起始量成正比。由图：消耗 X = 0.6 − 0.2 = 0.4 mol；消耗 Y = 0.8 − 0 = 0.8 mol；生成 Z = 0.4 mol。比为 0.4 : 0.8 : 0.4 = 1 : 2 : 1，所以方程式为 X + 2Y -> Z。Y 完全耗尽，是限量反应物，X 剩余 0.2 mol。3X + 4Y -> 2Z 是把起始量(0.6 和 0.8 mol)当成了化学计量数，X + 2Y -> 2Z 是把 Z 与消耗的 Y 等同起来。",
+        "ku": "Hejmarker bi mîqdarên molan ên xerckirî û çêbûyî re rêjeyî ne, ne bi mîqdarên destpêkê re. Ji grafîkê: X ya xerckirî = 0,6 − 0,2 = 0,4 mol; Y ya xerckirî = 0,8 − 0 = 0,8 mol; Z ya çêbûyî = 0,4 mol. Rêje 0,4 : 0,8 : 0,4 = 1 : 2 : 1 e, loma hevkêşe X + 2Y -> Z ye. Y bi tevahî diqede û sînordar e; 0,2 mol X dimîne. 3X + 4Y -> 2Z ji girtina mîqdarên destpêkê (0,6 û 0,8 mol) wekî hejmarker, X + 2Y -> 2Z jî ji wekhevkirina Z bi Y ya xerckirî re tê."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman",
+          "en": "Time",
+          "de": "Zeit",
+          "fr": "Temps",
+          "ru": "Время",
+          "ar": "الزمن",
+          "zh": "时间",
+          "ku": "Dem"
+        },
+        "yLabel": {
+          "tr": "Madde miktarı (mol)",
+          "en": "Amount of substance (mol)",
+          "de": "Stoffmenge (mol)",
+          "fr": "Quantité de matière (mol)",
+          "ru": "Количество вещества (моль)",
+          "ar": "كمية المادة (mol)",
+          "zh": "物质的量 (mol)",
+          "ku": "Mîqdara madeyê (mol)"
+        },
+        "xMax": 10,
+        "yMax": 1,
+        "yTicks": [
+          0.2,
+          0.4,
+          0.6,
+          0.8
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                0.6
+              ],
+              [
+                6,
+                0.2
+              ],
+              [
+                10,
+                0.2
+              ]
+            ],
+            "label": "X",
+            "tone": 0
+          },
+          {
+            "points": [
+              [
+                0,
+                0.8
+              ],
+              [
+                6,
+                0
+              ],
+              [
+                10,
+                0
+              ]
+            ],
+            "label": "Y",
+            "tone": 1
+          },
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                6,
+                0.4
+              ],
+              [
+                10,
+                0.4
+              ]
+            ],
+            "label": "Z",
+            "tone": 2,
+            "dashed": true
+          }
+        ]
       }
     },
     {
       "id": "u07-twin02",
       "stem": {
-        "tr": "AgNO3(aq) + KBr(aq) -> AgBr(k) + KNO3(aq) tepkimesi için net iyon denklemi aşağıdakilerden hangisidir?",
-        "en": "Which of the following is the net ionic equation for the reaction AgNO3(aq) + KBr(aq) -> AgBr(s) + KNO3(aq)?",
-        "de": "Welche der folgenden ist die Nettoionengleichung für die Reaktion AgNO3(aq) + KBr(aq) -> AgBr(s) + KNO3(aq)?",
-        "fr": "Laquelle des formules suivantes est l'équation ionique nette de la réaction AgNO3(aq) + KBr(aq) -> AgBr(s) + KNO3(aq) ?",
-        "ru": "Какое из приведённых уравнений является сокращённым ионным уравнением реакции AgNO3(р-р) + KBr(р-р) -> AgBr(тв) + KNO3(р-р)?",
-        "ar": "أي مما يلي يمثل المعادلة الأيونية الصافية للتفاعل AgNO3(aq) + KBr(aq) -> AgBr(s) + KNO3(aq)؟",
-        "zh": "反应 AgNO3(aq) + KBr(aq) -> AgBr(s) + KNO3(aq) 的净离子方程式是下列哪一项？",
-        "ku": "Kîjan ji yên jêrîn hevkêşeya îyonî ya net a reaksiyona AgNO3(aq) + KBr(aq) -> AgBr(s) + KNO3(aq) e?"
+        "tr": "Kapalı bir kaptaki bir miktar H2 gazının üzerine azar azar O2 gazı eklenerek 2H2 + O2 -> 2H2O tepkimesi tam verimle gerçekleştiriliyor. Oluşan su kütlesinin eklenen O2 kütlesine bağlı değişimi grafikte verilmiştir. Bu deneyle ilgili,\nI. Kaptaki H2 kütlesi 1 g'dır.\nII. Toplam 16 g O2 eklendiğinde kapta 8 g O2 artar.\nIII. Suda hidrojenin oksijene kütlece birleşme oranı mH/mO = 1/16'dır.\nyargılarından hangileri doğrudur?",
+        "en": "O2 gas is added little by little to some H2 gas in a closed container, and the reaction 2H2 + O2 -> 2H2O goes to completion. The graph shows the mass of water formed versus the mass of O2 added. Which of the following statements about this experiment are correct?\nI. The mass of H2 in the container is 1 g.\nII. When a total of 16 g of O2 has been added, 8 g of O2 is left over.\nIII. The mass combining ratio of hydrogen to oxygen in water is mH/mO = 1/16.",
+        "de": "Zu einer Menge H2-Gas in einem geschlossenen Gefäß wird nach und nach O2 gegeben; die Reaktion 2H2 + O2 -> 2H2O verläuft vollständig. Das Diagramm zeigt die gebildete Wassermasse in Abhängigkeit von der zugegebenen O2-Masse. Welche der folgenden Aussagen sind richtig?\nI. Die Masse des H2 im Gefäß beträgt 1 g.\nII. Nach Zugabe von insgesamt 16 g O2 bleiben 8 g O2 übrig.\nIII. Das Massenverhältnis von Wasserstoff zu Sauerstoff im Wasser beträgt mH/mO = 1/16.",
+        "fr": "On ajoute peu à peu du O2 à une certaine quantité de H2 dans un récipient fermé ; la réaction 2H2 + O2 -> 2H2O est totale. Le graphique donne la masse d'eau formée en fonction de la masse de O2 ajoutée. Lesquelles des affirmations suivantes sont correctes ?\nI. La masse de H2 dans le récipient est 1 g.\nII. Après l'ajout de 16 g de O2 au total, il reste 8 g de O2 en excès.\nIII. Dans l'eau, le rapport massique hydrogène/oxygène est mH/mO = 1/16.",
+        "ru": "К некоторому количеству H2 в закрытом сосуде постепенно добавляют O2; реакция 2H2 + O2 -> 2H2O идёт до конца. На графике показана зависимость массы образовавшейся воды от массы добавленного O2. Какие из следующих утверждений верны?\nI. Масса H2 в сосуде равна 1 г.\nII. После добавления в сумме 16 г O2 в избытке остаётся 8 г O2.\nIII. Массовое отношение водорода к кислороду в воде mH/mO = 1/16.",
+        "ar": "يُضاف غاز O2 تدريجيًا إلى كمية من غاز H2 في وعاء مغلق، ويجري التفاعل 2H2 + O2 -> 2H2O تفاعلًا تامًا. يبين الرسم البياني كتلة الماء المتكوّن بدلالة كتلة O2 المضافة. أيّ العبارات الآتية صحيحة؟\nI. كتلة H2 في الوعاء 1 g.\nII. عند إضافة 16 g من O2 إجمالًا يتبقى 8 g من O2.\nIII. نسبة اتحاد الهيدروجين إلى الأكسجين كتليًا في الماء mH/mO = 1/16.",
+        "zh": "向密闭容器中的一定量 H2 逐渐加入 O2，反应 2H2 + O2 -> 2H2O 完全进行。图中给出了生成水的质量随加入 O2 质量的变化。下列说法中哪些正确？\nI. 容器中 H2 的质量为 1 g。\nII. 共加入 16 g O2 时，剩余 8 g O2。\nIII. 水中氢与氧的质量结合比为 mH/mO = 1/16。",
+        "ku": "Li ser mîqdareke gaza H2 ya di firaxeke girtî de hêdî hêdî gaza O2 tê zêdekirin û reaksiyona 2H2 + O2 -> 2H2O bi tevahî pêk tê. Grafîk girseya ava çêbûyî li hember girseya O2 ya zêdekirî nîşan dide. Derbarê vê ceribandinê de kîjan ji van gotinan rast in?\nI. Girseya H2 ya di firaxê de 1 g e.\nII. Dema bi giştî 16 g O2 tê zêdekirin, 8 g O2 dimîne.\nIII. Di avê de rêjeya girseyî ya yekbûna hîdrojenê bi oksîjenê re mH/mO = 1/16 e."
       },
       "options": [
         {
-          "tr": "Ag+(aq) + Br-(aq) -> AgBr(k)",
-          "en": "Ag+(aq) + Br-(aq) -> AgBr(s)",
-          "de": "Ag+(aq) + Br-(aq) -> AgBr(s)",
-          "fr": "Ag+(aq) + Br-(aq) -> AgBr(s)",
-          "ru": "Ag+(р-р) + Br-(р-р) -> AgBr(тв)",
-          "ar": "Ag+(aq) + Br-(aq) -> AgBr(s)",
-          "zh": "Ag+(aq) + Br-(aq) -> AgBr(s)",
-          "ku": "Ag+(aq) + Br-(aq) -> AgBr(s)"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "K+(aq) + NO3-(aq) -> KNO3(aq)",
-          "en": "K+(aq) + NO3-(aq) -> KNO3(aq)",
-          "de": "K+(aq) + NO3-(aq) -> KNO3(aq)",
-          "fr": "K+(aq) + NO3-(aq) -> KNO3(aq)",
-          "ru": "K+(р-р) + NO3-(р-р) -> KNO3(р-р)",
-          "ar": "K+(aq) + NO3-(aq) -> KNO3(aq)",
-          "zh": "K+(aq) + NO3-(aq) -> KNO3(aq)",
-          "ku": "K+(aq) + NO3-(aq) -> KNO3(aq)"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "AgNO3(aq) -> Ag+(aq) + NO3-(aq)",
-          "en": "AgNO3(aq) -> Ag+(aq) + NO3-(aq)",
-          "de": "AgNO3(aq) -> Ag+(aq) + NO3-(aq)",
-          "fr": "AgNO3(aq) -> Ag+(aq) + NO3-(aq)",
-          "ru": "AgNO3(р-р) -> Ag+(р-р) + NO3-(р-р)",
-          "ar": "AgNO3(aq) -> Ag+(aq) + NO3-(aq)",
-          "zh": "AgNO3(aq) -> Ag+(aq) + NO3-(aq)",
-          "ku": "AgNO3(aq) -> Ag+(aq) + NO3-(aq)"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "K+(aq) + Br-(aq) -> KBr(k)",
-          "en": "K+(aq) + Br-(aq) -> KBr(s)",
-          "de": "K+(aq) + Br-(aq) -> KBr(s)",
-          "fr": "K+(aq) + Br-(aq) -> KBr(s)",
-          "ru": "K+(р-р) + Br-(р-р) -> KBr(тв)",
-          "ar": "K+(aq) + Br-(aq) -> KBr(s)",
-          "zh": "K+(aq) + Br-(aq) -> KBr(s)",
-          "ku": "K+(aq) + Br-(aq) -> KBr(s)"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         },
         {
-          "tr": "AgBr(k) -> Ag+(aq) + Br-(aq)",
-          "en": "AgBr(s) -> Ag+(aq) + Br-(aq)",
-          "de": "AgBr(s) -> Ag+(aq) + Br-(aq)",
-          "fr": "AgBr(s) -> Ag+(aq) + Br-(aq)",
-          "ru": "AgBr(тв) -> Ag+(р-р) + Br-(р-р)",
-          "ar": "AgBr(s) -> Ag+(aq) + Br-(aq)",
-          "zh": "AgBr(s) -> Ag+(aq) + Br-(aq)",
-          "ku": "AgBr(s) -> Ag+(aq) + Br-(aq)"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Çözünme-çökelme tepkimelerinde net iyon denklemi yalnızca çökeltiyi oluşturan iyonlarla yazılır: Ag+(aq) + Br-(aq) -> AgBr(k). K+ ve NO3- iyonları çözeltide değişmeden kalan seyirci iyonlardır; bu yüzden net iyon denkleminde yer almaz.",
-        "en": "In a dissolution-precipitation reaction the net ionic equation is written only with the ions that form the precipitate: Ag+(aq) + Br-(aq) -> AgBr(s). K+ and NO3- are spectator ions that stay unchanged in solution, so they do not appear in the net ionic equation.",
-        "de": "Bei einer Lösungs-Fällungs-Reaktion wird die Nettoionengleichung nur mit den Ionen geschrieben, die den Niederschlag bilden: Ag+(aq) + Br-(aq) -> AgBr(s). K+ und NO3- sind Zuschauerionen, die unverändert in Lösung bleiben, und erscheinen deshalb nicht in der Nettoionengleichung.",
-        "fr": "Dans une réaction de dissolution-précipitation, l'équation ionique nette s'écrit uniquement avec les ions qui forment le précipité : Ag+(aq) + Br-(aq) -> AgBr(s). K+ et NO3- sont des ions spectateurs qui restent inchangés en solution ; ils ne figurent donc pas dans l'équation ionique nette.",
-        "ru": "В реакции растворения-осаждения сокращённое ионное уравнение записывают только с ионами, образующими осадок: Ag+(р-р) + Br-(р-р) -> AgBr(тв). Ионы K+ и NO3- — ионы-наблюдатели: они остаются в растворе без изменений и поэтому в сокращённое ионное уравнение не входят.",
-        "ar": "في تفاعل الذوبان والترسيب تُكتب المعادلة الأيونية الصافية بالأيونات التي تكوّن الراسب فقط: Ag+(aq) + Br-(aq) -> AgBr(s). أما K+ وNO3- فأيونان متفرجان يبقيان في المحلول دون تغيير، ولذلك لا يظهران في المعادلة الأيونية الصافية.",
-        "zh": "在沉淀反应中，净离子方程式只用生成沉淀的离子来书写：Ag+(aq) + Br-(aq) -> AgBr(s)。K+ 和 NO3- 是留在溶液中不发生变化的旁观离子，因此不出现在净离子方程式中。",
-        "ku": "Di reaksiyonên helbûn-niştinê de hevkêşeya îyonî ya net tenê bi îyonên ku niştekê çêdikin tê nivîsandin: Ag+(aq) + Br-(aq) -> AgBr(s). K+ û NO3- îyonên temaşevan in ku di çareseriyê de bê guhertin dimînin; ji ber vê yekê di hevkêşeya îyonî ya net de cih nagirin."
+        "tr": "Grafikte su kütlesi, 8 g O2 eklenene kadar artıp 9 g'da sabitleniyor; bu noktada H2 tükenmiştir. Kütlenin korunumundan H2 = 9 − 8 = 1 g'dır (I doğru). 8 g'dan sonra eklenen O2 tepkimeye girmez; toplam 16 g eklendiğinde 16 − 8 = 8 g O2 artar (II doğru). Suda 1 g H ile 8 g O birleştiğinden mH/mO = 1/8'dir, 1/16 değildir (III yanlış).",
+        "en": "In the graph the mass of water rises until 8 g of O2 has been added and then stays at 9 g; at this point the H2 is used up. By conservation of mass, H2 = 9 − 8 = 1 g (I correct). O2 added after 8 g does not react; when 16 g has been added, 16 − 8 = 8 g of O2 is left over (II correct). In water 1 g of H combines with 8 g of O, so mH/mO = 1/8, not 1/16 (III incorrect).",
+        "de": "Im Diagramm steigt die Wassermasse bis zur Zugabe von 8 g O2 und bleibt dann bei 9 g; an diesem Punkt ist H2 verbraucht. Nach der Massenerhaltung ist H2 = 9 − 8 = 1 g (I richtig). Nach 8 g zugegebenes O2 reagiert nicht; bei insgesamt 16 g bleiben 16 − 8 = 8 g O2 übrig (II richtig). Im Wasser verbinden sich 1 g H mit 8 g O, also mH/mO = 1/8, nicht 1/16 (III falsch).",
+        "fr": "Sur le graphique, la masse d'eau augmente jusqu'à l'ajout de 8 g de O2 puis reste à 9 g : H2 est alors épuisé. Par conservation de la masse, H2 = 9 − 8 = 1 g (I correcte). Le O2 ajouté au-delà de 8 g ne réagit pas ; avec 16 g ajoutés, il reste 16 − 8 = 8 g de O2 (II correcte). Dans l'eau, 1 g de H se combine à 8 g de O : mH/mO = 1/8 et non 1/16 (III fausse).",
+        "ru": "На графике масса воды растёт до добавления 8 г O2, а затем остаётся равной 9 г: в этот момент H2 израсходован. По закону сохранения массы H2 = 9 − 8 = 1 г (I верно). O2, добавленный сверх 8 г, не реагирует; при добавлении 16 г остаётся 16 − 8 = 8 г O2 (II верно). В воде 1 г H соединяется с 8 г O, поэтому mH/mO = 1/8, а не 1/16 (III неверно).",
+        "ar": "في الرسم تزداد كتلة الماء حتى إضافة 8 g من O2 ثم تثبت عند 9 g، وعندها يكون H2 قد استُهلك. ومن حفظ الكتلة H2 = 9 − 8 = 1 g (I صحيحة). O2 المضاف بعد 8 g لا يتفاعل، فعند إضافة 16 g يتبقى 16 − 8 = 8 g من O2 (II صحيحة). وفي الماء يتحد 1 g من H مع 8 g من O، فتكون mH/mO = 1/8 لا 1/16 (III خاطئة).",
+        "zh": "图中水的质量在加入 8 g O2 之前不断增加，之后保持 9 g 不变，此时 H2 已耗尽。由质量守恒，H2 = 9 − 8 = 1 g（I 正确）。8 g 之后加入的 O2 不再反应；共加入 16 g 时剩余 16 − 8 = 8 g O2（II 正确）。水中 1 g H 与 8 g O 结合，mH/mO = 1/8，而不是 1/16（III 错误）。",
+        "ku": "Di grafîkê de girseya avê heta ku 8 g O2 tê zêdekirin zêde dibe û paşê li 9 g sabit dimîne; di vê xalê de H2 qediyaye. Ji parastina girseyê H2 = 9 − 8 = 1 g e (I rast e). O2 ya piştî 8 g tê zêdekirin reaksiyonê nake; dema bi giştî 16 g tê zêdekirin, 16 − 8 = 8 g O2 dimîne (II rast e). Di avê de 1 g H bi 8 g O re dibe yek, loma mH/mO = 1/8 e, ne 1/16 (III xelet e)."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Eklenen O₂ kütlesi (g)",
+          "en": "Mass of O₂ added (g)",
+          "de": "Zugegebene O₂-Masse (g)",
+          "fr": "Masse de O₂ ajoutée (g)",
+          "ru": "Масса добавленного O₂ (г)",
+          "ar": "كتلة O₂ المضافة (g)",
+          "zh": "加入 O₂ 的质量 (g)",
+          "ku": "Girseya O₂ ya zêdekirî (g)"
+        },
+        "yLabel": {
+          "tr": "Oluşan H₂O kütlesi (g)",
+          "en": "Mass of H₂O formed (g)",
+          "de": "Gebildete H₂O-Masse (g)",
+          "fr": "Masse d'H₂O formée (g)",
+          "ru": "Масса образовавшейся H₂O (г)",
+          "ar": "كتلة H₂O المتكوّنة (g)",
+          "zh": "生成 H₂O 的质量 (g)",
+          "ku": "Girseya H₂O ya çêbûyî (g)"
+        },
+        "xMax": 20,
+        "yMax": 12,
+        "xTicks": [
+          8,
+          16
+        ],
+        "yTicks": [
+          9
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                20,
+                9
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 8,
+            "y": 9,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
@@ -1524,25 +1670,55 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin07",
       "stem": {
-        "tr": "CaCO3(k) -> CaO(k) + CO2(g) tepkimesine göre 50 gram saf CaCO3 ısıtıldığında 22,4 gram CaO elde ediliyor. Tepkimenin yüzde verimi kaçtır? (CaCO3 = 100 g/mol, CaO = 56 g/mol)",
-        "en": "According to CaCO3(s) -> CaO(s) + CO2(g), heating 50 g of pure CaCO3 gives 22.4 g of CaO. What is the percent yield of the reaction? (CaCO3 = 100 g/mol, CaO = 56 g/mol)",
-        "de": "Gemäß CaCO3(s) -> CaO(s) + CO2(g) erhält man beim Erhitzen von 50 g reinem CaCO3 22,4 g CaO. Wie hoch ist die prozentuale Ausbeute? (CaCO3 = 100 g/mol, CaO = 56 g/mol)",
-        "fr": "D'après CaCO3(s) -> CaO(s) + CO2(g), le chauffage de 50 g de CaCO3 pur donne 22,4 g de CaO. Quel est le pourcentage de rendement de la réaction ? (CaCO3 = 100 g/mol, CaO = 56 g/mol)",
-        "ru": "По реакции CaCO3(тв) -> CaO(тв) + CO2(г) при нагревании 50 г чистого CaCO3 получено 22,4 г CaO. Каков процентный выход реакции? (CaCO3 = 100 г/моль, CaO = 56 г/моль)",
-        "ar": "وفقًا للتفاعل CaCO3(s) -> CaO(s) + CO2(g)، عند تسخين 50 g من CaCO3 النقي نحصل على 22.4 g من CaO. ما النسبة المئوية لمردود التفاعل؟ (CaCO3 = 100 g/mol، CaO = 56 g/mol)",
-        "zh": "根据 CaCO3(s) -> CaO(s) + CO2(g)，加热 50 g 纯 CaCO3 得到 22.4 g CaO。该反应的百分产率是多少？(CaCO3 = 100 g/mol，CaO = 56 g/mol)",
-        "ku": "Li gorî CaCO3(s) -> CaO(s) + CO2(g), dema 50 g CaCO3-ya paqij tê germkirin 22,4 g CaO tê bidestxistin. Berhema ji sedî ya reaksiyonê çend e? (CaCO3 = 100 g/mol, CaO = 56 g/mol)"
+        "tr": "Ağzı açık bir kapta 50 g saf CaCO3 ısıtılıyor ve CaCO3(k) -> CaO(k) + CO2(g) tepkimesi gerçekleşiyor. Isıtma süresince kaptaki katı kütlesinin zamanla değişimi grafikte verilmiştir. Oluşan CO2'nin tamamı kaptan ayrılmaktadır. Başlangıçtaki CaCO3'ün yüzde kaçı ayrışmıştır? (C: 12, O: 16, Ca: 40)",
+        "en": "50 g of pure CaCO3 is heated in an open container and the reaction CaCO3(s) -> CaO(s) + CO2(g) takes place. The graph shows how the mass of solid in the container changes with time during heating. All the CO2 formed leaves the container. What percentage of the initial CaCO3 has decomposed? (C: 12, O: 16, Ca: 40)",
+        "de": "In einem offenen Gefäß werden 50 g reines CaCO3 erhitzt; dabei läuft die Reaktion CaCO3(s) -> CaO(s) + CO2(g) ab. Das Diagramm zeigt die zeitliche Änderung der Feststoffmasse im Gefäß während des Erhitzens. Das gesamte entstehende CO2 entweicht. Wie viel Prozent des anfänglichen CaCO3 haben sich zersetzt? (C: 12, O: 16, Ca: 40)",
+        "fr": "On chauffe 50 g de CaCO3 pur dans un récipient ouvert ; la réaction CaCO3(s) -> CaO(s) + CO2(g) se produit. Le graphique montre l'évolution de la masse de solide dans le récipient au cours du chauffage. Tout le CO2 formé quitte le récipient. Quel pourcentage du CaCO3 initial s'est décomposé ? (C : 12, O : 16, Ca : 40)",
+        "ru": "В открытом сосуде нагревают 50 г чистого CaCO3; протекает реакция CaCO3(тв) -> CaO(тв) + CO2(г). На графике показано изменение массы твёрдого вещества в сосуде во время нагревания. Весь образующийся CO2 уходит из сосуда. Какой процент исходного CaCO3 разложился? (C: 12, O: 16, Ca: 40)",
+        "ar": "يُسخَّن 50 g من CaCO3 النقي في وعاء مفتوح فيحدث التفاعل CaCO3(s) -> CaO(s) + CO2(g). يبين الرسم البياني تغيّر كتلة المادة الصلبة في الوعاء مع الزمن أثناء التسخين، وكل CO2 المتكوّن يغادر الوعاء. ما النسبة المئوية لما تفكك من CaCO3 الابتدائي؟ (C: 12، O: 16، Ca: 40)",
+        "zh": "在敞口容器中加热 50 g 纯 CaCO3，发生反应 CaCO3(s) -> CaO(s) + CO2(g)。图中给出了加热过程中容器内固体质量随时间的变化，生成的 CO2 全部逸出。起始的 CaCO3 分解了百分之几？(C: 12, O: 16, Ca: 40)",
+        "ku": "Di firaxeke devvekirî de 50 g CaCO3 ya paqij tê germkirin û reaksiyona CaCO3(s) -> CaO(s) + CO2(g) pêk tê. Grafîk nîşan dide ka di dema germkirinê de girseya madeya hişk a di firaxê de bi demê re çawa diguhere. Hemû CO2 ya çêbûyî ji firaxê derdikeve. Ji sedî çendê CaCO3 ya destpêkê perçe bûye? (C: 12, O: 16, Ca: 40)"
       },
       "options": [
         {
-          "tr": "%44,8",
-          "en": "44.8%",
-          "de": "44,8 %",
-          "fr": "44,8 %",
-          "ru": "44,8 %",
-          "ar": "44.8%",
-          "zh": "44.8%",
-          "ku": "%44,8"
+          "tr": "%20",
+          "en": "20%",
+          "de": "20 %",
+          "fr": "20 %",
+          "ru": "20 %",
+          "ar": "20%",
+          "zh": "20%",
+          "ku": "%20"
+        },
+        {
+          "tr": "%35,2",
+          "en": "35.2%",
+          "de": "35,2 %",
+          "fr": "35,2 %",
+          "ru": "35,2 %",
+          "ar": "35.2%",
+          "zh": "35.2%",
+          "ku": "%35,2"
+        },
+        {
+          "tr": "%40",
+          "en": "40%",
+          "de": "40 %",
+          "fr": "40 %",
+          "ru": "40 %",
+          "ar": "40%",
+          "zh": "40%",
+          "ku": "%40"
+        },
+        {
+          "tr": "%64,8",
+          "en": "64.8%",
+          "de": "64,8 %",
+          "fr": "64,8 %",
+          "ru": "64,8 %",
+          "ar": "64.8%",
+          "zh": "64.8%",
+          "ku": "%64,8"
         },
         {
           "tr": "%80",
@@ -1553,48 +1729,89 @@ export const unit07: ChemistryUnitSeedData = {
           "ar": "80%",
           "zh": "80%",
           "ku": "%80"
-        },
-        {
-          "tr": "%89,6",
-          "en": "89.6%",
-          "de": "89,6 %",
-          "fr": "89,6 %",
-          "ru": "89,6 %",
-          "ar": "89.6%",
-          "zh": "89.6%",
-          "ku": "%89,6"
-        },
-        {
-          "tr": "%100",
-          "en": "100%",
-          "de": "100 %",
-          "fr": "100 %",
-          "ru": "100 %",
-          "ar": "100%",
-          "zh": "100%",
-          "ku": "%100"
-        },
-        {
-          "tr": "%125",
-          "en": "125%",
-          "de": "125 %",
-          "fr": "125 %",
-          "ru": "125 %",
-          "ar": "125%",
-          "zh": "125%",
-          "ku": "%125"
         }
       ],
-      "correctIndex": 1,
+      "correctIndex": 4,
       "explanation": {
-        "tr": "n(CaCO3) = 50 / 100 = 0,5 mol; mol oranı 1 : 1 olduğundan teorik olarak 0,5 mol CaO = 0,5 x 56 = 28 g oluşmalıdır. Yüzde verim = (22,4 / 28) x 100 = %80. Gerçek ürün kütlesini başlangıçtaki CaCO3 kütlesine bölen öğrenci %44,8; oranı ters kuran öğrenci %125 bulur, oysa yüzde verim %100'ü aşamaz.",
-        "en": "n(CaCO3) = 50 / 100 = 0.5 mol; with a 1 : 1 ratio the theoretical CaO is 0.5 mol = 0.5 x 56 = 28 g. Percent yield = (22.4 / 28) x 100 = 80%. Dividing the product mass by the starting CaCO3 mass gives 44.8%; inverting the ratio gives 125%, but a percent yield cannot exceed 100%.",
-        "de": "n(CaCO3) = 50 / 100 = 0,5 mol; beim Verhältnis 1 : 1 entstehen theoretisch 0,5 mol CaO = 0,5 x 56 = 28 g. Prozentuale Ausbeute = (22,4 / 28) x 100 = 80 %. Wer die Produktmasse durch die CaCO3-Masse teilt, erhält 44,8 %; wer das Verhältnis umkehrt, 125 % – eine Ausbeute kann aber 100 % nicht übersteigen.",
-        "fr": "n(CaCO3) = 50 / 100 = 0,5 mol ; le rapport étant 1 : 1, il devrait se former 0,5 mol de CaO = 0,5 x 56 = 28 g. Rendement = (22,4 / 28) x 100 = 80 %. Diviser la masse de produit par la masse initiale de CaCO3 donne 44,8 % ; inverser le rapport donne 125 %, or un rendement ne peut pas dépasser 100 %.",
-        "ru": "n(CaCO3) = 50 / 100 = 0,5 моль; при соотношении 1 : 1 теоретически образуется 0,5 моль CaO = 0,5 x 56 = 28 г. Выход = (22,4 / 28) x 100 = 80 %. Деление массы продукта на массу исходного CaCO3 даёт 44,8 %, а перевёрнутое отношение — 125 %, хотя выход не может превышать 100 %.",
-        "ar": "n(CaCO3) = 50 / 100 = 0.5 mol، وبما أن النسبة المولية 1 : 1 فالكمية النظرية من CaO هي 0.5 mol = 0.5 × 56 = 28 g. النسبة المئوية للمردود = (22.4 / 28) × 100 = 80%. ومن يقسم كتلة الناتج على كتلة CaCO3 الابتدائية يحصل على 44.8%، ومن يعكس النسبة يحصل على 125%، مع أن النسبة المئوية للمردود لا تتجاوز 100%.",
-        "zh": "n(CaCO3) = 50 / 100 = 0.5 mol；物质的量之比为 1 : 1，理论上生成 0.5 mol CaO = 0.5 x 56 = 28 g。百分产率 = (22.4 / 28) x 100 = 80%。用产物质量除以 CaCO3 初始质量得 44.8%；把比值倒过来得 125%，但百分产率不可能超过 100%。",
-        "ku": "n(CaCO3) = 50 / 100 = 0,5 mol; ji ber ku rêjeya molan 1 : 1 e, li gorî teoriyê divê 0,5 mol CaO = 0,5 x 56 = 28 g çêbibe. Berhema ji sedî = (22,4 / 28) x 100 = %80. Xwendekarê ku girseya hilberê li girseya destpêkê ya CaCO3 parve dike %44,8, yê ku rêjeyê berevajî datîne %125 dibîne; lê berhema ji sedî nikare ji %100 derbas bibe."
+        "tr": "Grafikte katı kütlesi 50 g'dan 32,4 g'a düşmektedir. Azalma, kaptan ayrılan CO2'nin kütlesidir: 50 − 32,4 = 17,6 g CO2 → 17,6 / 44 = 0,4 mol. Mol oranı 1 : 1 olduğundan 0,4 mol CaCO3 = 0,4 · 100 = 40 g ayrışmıştır; ayrışma yüzdesi = 40 / 50 · 100 = %80. Kontrol: son katı = 10 g CaCO3 + 0,4 · 56 = 22,4 g CaO = 32,4 g. %35,2 kütle kaybını doğrudan 50 g'a oranlamaktan, %64,8 son katı kütlesini oranlamaktan, %40 mol sayısını yüzde sanmaktan gelir; %20 ise ayrışmadan kalan CaCO3'ün payıdır.",
+        "en": "In the graph the mass of solid falls from 50 g to 32.4 g. The decrease is the mass of CO2 that left: 50 − 32.4 = 17.6 g CO2 → 17.6 / 44 = 0.4 mol. With a 1 : 1 mole ratio, 0.4 mol CaCO3 = 0.4 · 100 = 40 g has decomposed; percentage decomposed = 40 / 50 · 100 = 80%. Check: final solid = 10 g CaCO3 + 0.4 · 56 = 22.4 g CaO = 32.4 g. 35.2% comes from dividing the mass loss directly by 50 g, 64.8% from using the final solid mass, 40% from reading the number of moles as a percentage; 20% is the share of CaCO3 that did not decompose.",
+        "de": "Im Diagramm sinkt die Feststoffmasse von 50 g auf 32,4 g. Die Abnahme ist die Masse des entwichenen CO2: 50 − 32,4 = 17,6 g CO2 → 17,6 / 44 = 0,4 mol. Beim Stoffmengenverhältnis 1 : 1 haben sich 0,4 mol CaCO3 = 0,4 · 100 = 40 g zersetzt; Zersetzungsgrad = 40 / 50 · 100 = 80 %. Probe: Restfeststoff = 10 g CaCO3 + 0,4 · 56 = 22,4 g CaO = 32,4 g. 35,2 % entsteht, wenn man den Massenverlust direkt durch 50 g teilt, 64,8 % aus der Restmasse, 40 % aus der Stoffmenge als Prozentzahl; 20 % ist der Anteil des unzersetzten CaCO3.",
+        "fr": "Sur le graphique, la masse de solide passe de 50 g à 32,4 g. La diminution est la masse de CO2 dégagé : 50 − 32,4 = 17,6 g de CO2 → 17,6 / 44 = 0,4 mol. Le rapport molaire étant 1 : 1, 0,4 mol de CaCO3 = 0,4 · 100 = 40 g se sont décomposés ; pourcentage décomposé = 40 / 50 · 100 = 80 %. Vérification : solide final = 10 g de CaCO3 + 0,4 · 56 = 22,4 g de CaO = 32,4 g. 35,2 % vient de la division directe de la perte de masse par 50 g, 64,8 % de l'emploi de la masse finale, 40 % de la lecture du nombre de moles comme un pourcentage ; 20 % est la part de CaCO3 non décomposé.",
+        "ru": "На графике масса твёрдого вещества уменьшается с 50 г до 32,4 г. Уменьшение равно массе ушедшего CO2: 50 − 32,4 = 17,6 г CO2 → 17,6 / 44 = 0,4 моль. При мольном отношении 1 : 1 разложилось 0,4 моль CaCO3 = 0,4 · 100 = 40 г; степень разложения = 40 / 50 · 100 = 80 %. Проверка: конечный остаток = 10 г CaCO3 + 0,4 · 56 = 22,4 г CaO = 32,4 г. 35,2 % получается при делении потери массы прямо на 50 г, 64,8 % — при использовании конечной массы, 40 % — если принять число моль за проценты; 20 % — это доля неразложившегося CaCO3.",
+        "ar": "في الرسم تنخفض كتلة المادة الصلبة من 50 g إلى 32.4 g، والنقص هو كتلة CO2 المغادر: 50 − 32.4 = 17.6 g من CO2 ← 17.6 / 44 = 0.4 mol. وبما أن النسبة المولية 1 : 1 فقد تفكك 0.4 mol من CaCO3 = 0.4 · 100 = 40 g، ونسبة التفكك = 40 / 50 · 100 = 80%. التحقق: الصلب النهائي = 10 g من CaCO3 + 0.4 · 56 = 22.4 g من CaO = 32.4 g. الناتج 35.2% يأتي من قسمة نقص الكتلة على 50 g مباشرة، و64.8% من استخدام الكتلة النهائية، و40% من اعتبار عدد المولات نسبة مئوية؛ أما 20% فهي نسبة CaCO3 الذي لم يتفكك.",
+        "zh": "图中固体质量从 50 g 降到 32.4 g，减少的质量就是逸出 CO2 的质量：50 − 32.4 = 17.6 g CO2 → 17.6 / 44 = 0.4 mol。物质的量之比为 1 : 1，所以分解了 0.4 mol CaCO3 = 0.4 · 100 = 40 g，分解百分率 = 40 / 50 · 100 = 80%。验算：最终固体 = 10 g CaCO3 + 0.4 · 56 = 22.4 g CaO = 32.4 g。35.2% 是把质量减少量直接除以 50 g，64.8% 是用了最终固体质量，40% 是把物质的量当成百分数；20% 是未分解 CaCO3 所占的比例。",
+        "ku": "Di grafîkê de girseya madeya hişk ji 50 g dadikeve 32,4 g. Kêmbûn girseya CO2 ya ku ji firaxê derketiye ye: 50 − 32,4 = 17,6 g CO2 → 17,6 / 44 = 0,4 mol. Ji ber ku rêjeya molan 1 : 1 e, 0,4 mol CaCO3 = 0,4 · 100 = 40 g perçe bûye; rêjeya perçebûnê = 40 / 50 · 100 = %80. Kontrol: madeya hişk a dawî = 10 g CaCO3 + 0,4 · 56 = 22,4 g CaO = 32,4 g. %35,2 ji parvekirina kêmbûna girseyê rasterast li 50 g, %64,8 ji bikaranîna girseya dawî, %40 ji girtina hejmara molan wekî ji sedî tê; %20 para CaCO3 ya ku perçe nebûye ye."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman",
+          "en": "Time",
+          "de": "Zeit",
+          "fr": "Temps",
+          "ru": "Время",
+          "ar": "الزمن",
+          "zh": "时间",
+          "ku": "Dem"
+        },
+        "yLabel": {
+          "tr": "Katı kütlesi (g)",
+          "en": "Mass of solid (g)",
+          "de": "Feststoffmasse (g)",
+          "fr": "Masse de solide (g)",
+          "ru": "Масса твёрдого вещества (г)",
+          "ar": "كتلة المادة الصلبة (g)",
+          "zh": "固体质量 (g)",
+          "ku": "Girseya madeya hişk (g)"
+        },
+        "xMax": 10,
+        "yMax": 60,
+        "yTicks": [
+          32.4,
+          50
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                50
+              ],
+              [
+                1,
+                50
+              ],
+              [
+                3,
+                43.5
+              ],
+              [
+                5,
+                38
+              ],
+              [
+                7,
+                34.2
+              ],
+              [
+                9,
+                32.6
+              ],
+              [
+                10,
+                32.4
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 10,
+            "y": 32.4,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
@@ -2056,14 +2273,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin14",
       "stem": {
-        "tr": "CH4 ve C2H6 gazlarından oluşan 0,5 mollük bir karışım tamamen yakıldığında 0,7 mol CO2 gazı oluşuyor. Buna göre karışımdaki C2H6 kaç moldür?",
+        "tr": "CH4 ve C2H6 gazlarından oluşan 0,5 mollük bir karışım tamamen yakıldığında 0,7 mol CO2 gazı oluşuyor. Karışımdaki C2H6 kaç moldür?",
         "en": "A 0.5 mol mixture of CH4 and C2H6 gases is burned completely and 0.7 mol of CO2 forms. How many moles of C2H6 are in the mixture?",
         "de": "Ein Gemisch aus CH4 und C2H6 mit insgesamt 0,5 mol wird vollständig verbrannt, wobei 0,7 mol CO2 entstehen. Wie viel mol C2H6 enthält das Gemisch?",
         "fr": "Un mélange de 0,5 mol de CH4 et de C2H6 est entièrement brûlé et il se forme 0,7 mol de CO2. Quelle est la quantité de matière de C2H6 dans le mélange ?",
         "ru": "Смесь CH4 и C2H6 общим количеством 0,5 моль полностью сожгли, при этом образовалось 0,7 моль CO2. Сколько моль C2H6 было в смеси?",
         "ar": "خليط من غازي CH4 وC2H6 مقداره 0.5 mol احترق احتراقًا كاملًا فتكوّن 0.7 mol من CO2. كم مولًا من C2H6 في الخليط؟",
         "zh": "由 CH4 和 C2H6 组成的 0.5 mol 混合气体完全燃烧，生成 0.7 mol CO2。混合物中 C2H6 的物质的量是多少？",
-        "ku": "Tevliheviyeke 0,5 molî ya gazên CH4 û C2H6 bi tevahî tê şewitandin û 0,7 mol gaza CO2 çêdibe. Li gorî vê, di tevliheviyê de çend mol C2H6 heye?"
+        "ku": "Tevliheviyeke 0,5 molî ya gazên CH4 û C2H6 bi tevahî tê şewitandin û 0,7 mol gaza CO2 çêdibe. Di tevliheviyê de çend mol C2H6 heye?"
       },
       "options": [
         {
@@ -2208,14 +2425,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin16",
       "stem": {
-        "tr": "X + 2Y -> Z tepkimesi için dört ayrı kapta yapılan deneylerin sonuçları aşağıdadır (tepkimeler tam verimlidir):\nDeney 1: 0,2 mol X + 0,1 mol Y -> 0,05 mol Z\nDeney 2: 0,2 mol X + 0,2 mol Y -> 0,1 mol Z\nDeney 3: 0,2 mol X + 0,4 mol Y -> 0,2 mol Z\nDeney 4: 0,2 mol X + 0,6 mol Y -> 0,2 mol Z\nBuna göre;\nI. 1. ve 2. deneylerde sınırlayıcı bileşen Y'dir.\nII. 4. deneyde tepkime sonunda 0,4 mol Y artar.\nIII. 3. deneyde girenlerin ikisi de tamamen tükenir.\nyargılarından hangileri doğrudur?",
-        "en": "The results of experiments in four separate containers for the reaction X + 2Y -> Z are given below (all reactions go to completion):\nExperiment 1: 0.2 mol X + 0.1 mol Y -> 0.05 mol Z\nExperiment 2: 0.2 mol X + 0.2 mol Y -> 0.1 mol Z\nExperiment 3: 0.2 mol X + 0.4 mol Y -> 0.2 mol Z\nExperiment 4: 0.2 mol X + 0.6 mol Y -> 0.2 mol Z\nWhich of the following statements are correct?\nI. In experiments 1 and 2 the limiting reactant is Y.\nII. In experiment 4, 0.4 mol Y is left over at the end.\nIII. In experiment 3 both reactants are used up completely.",
-        "de": "Für die Reaktion X + 2Y -> Z wurden in vier Gefäßen folgende Ergebnisse erhalten (vollständiger Umsatz):\nVersuch 1: 0,2 mol X + 0,1 mol Y -> 0,05 mol Z\nVersuch 2: 0,2 mol X + 0,2 mol Y -> 0,1 mol Z\nVersuch 3: 0,2 mol X + 0,4 mol Y -> 0,2 mol Z\nVersuch 4: 0,2 mol X + 0,6 mol Y -> 0,2 mol Z\nWelche Aussagen sind richtig?\nI. In den Versuchen 1 und 2 ist Y der limitierende Reaktant.\nII. In Versuch 4 bleiben am Ende 0,4 mol Y übrig.\nIII. In Versuch 3 werden beide Edukte vollständig verbraucht.",
-        "fr": "Les résultats d'expériences réalisées dans quatre récipients pour la réaction X + 2Y -> Z sont donnés ci-dessous (réactions totales) :\nExpérience 1 : 0,2 mol X + 0,1 mol Y -> 0,05 mol Z\nExpérience 2 : 0,2 mol X + 0,2 mol Y -> 0,1 mol Z\nExpérience 3 : 0,2 mol X + 0,4 mol Y -> 0,2 mol Z\nExpérience 4 : 0,2 mol X + 0,6 mol Y -> 0,2 mol Z\nLesquelles des affirmations suivantes sont correctes ?\nI. Dans les expériences 1 et 2, le réactif limitant est Y.\nII. Dans l'expérience 4, il reste 0,4 mol de Y à la fin.\nIII. Dans l'expérience 3, les deux réactifs sont entièrement consommés.",
-        "ru": "Ниже приведены результаты опытов в четырёх сосудах для реакции X + 2Y -> Z (реакции идут до конца):\nОпыт 1: 0,2 моль X + 0,1 моль Y -> 0,05 моль Z\nОпыт 2: 0,2 моль X + 0,2 моль Y -> 0,1 моль Z\nОпыт 3: 0,2 моль X + 0,4 моль Y -> 0,2 моль Z\nОпыт 4: 0,2 моль X + 0,6 моль Y -> 0,2 моль Z\nКакие из утверждений верны?\nI. В опытах 1 и 2 лимитирующий реагент — Y.\nII. В опыте 4 в конце остаётся 0,4 моль Y.\nIII. В опыте 3 оба реагента расходуются полностью.",
-        "ar": "فيما يلي نتائج تجارب أُجريت في أربعة أوعية للتفاعل X + 2Y -> Z (التفاعلات تامة):\nالتجربة 1: 0.2 mol X + 0.1 mol Y -> 0.05 mol Z\nالتجربة 2: 0.2 mol X + 0.2 mol Y -> 0.1 mol Z\nالتجربة 3: 0.2 mol X + 0.4 mol Y -> 0.2 mol Z\nالتجربة 4: 0.2 mol X + 0.6 mol Y -> 0.2 mol Z\nأي العبارات التالية صحيحة؟\nI. في التجربتين 1 و2 تكون المادة المحددة هي Y.\nII. في التجربة 4 يتبقى 0.4 mol من Y في النهاية.\nIII. في التجربة 3 تُستهلك المادتان المتفاعلتان كليًا.",
-        "zh": "对于反应 X + 2Y -> Z，在四个容器中进行实验的结果如下（反应完全进行）：\n实验 1：0.2 mol X + 0.1 mol Y -> 0.05 mol Z\n实验 2：0.2 mol X + 0.2 mol Y -> 0.1 mol Z\n实验 3：0.2 mol X + 0.4 mol Y -> 0.2 mol Z\n实验 4：0.2 mol X + 0.6 mol Y -> 0.2 mol Z\n下列说法中哪些正确？\nI. 实验 1 和 2 中限量反应物是 Y。\nII. 实验 4 结束时剩余 0.4 mol Y。\nIII. 实验 3 中两种反应物都完全耗尽。",
-        "ku": "Ji bo reaksiyona X + 2Y -> Z encamên ceribandinên di çar firaxên cuda de li jêr in (hemû reaksiyon bi berhema %100 pêk tên):\nCeribandin 1: 0,2 mol X + 0,1 mol Y -> 0,05 mol Z\nCeribandin 2: 0,2 mol X + 0,2 mol Y -> 0,1 mol Z\nCeribandin 3: 0,2 mol X + 0,4 mol Y -> 0,2 mol Z\nCeribandin 4: 0,2 mol X + 0,6 mol Y -> 0,2 mol Z\nKîjan ji van gotinan rast in?\nI. Di ceribandinên 1 û 2 de reaktanta sînordar Y ye.\nII. Di ceribandina 4 de di dawiya reaksiyonê de 0,4 mol Y dimîne.\nIII. Di ceribandina 3 de her du reaktant jî bi tevahî diqedin."
+        "tr": "X + 2Y -> Z tepkimesi için dört ayrı kapta tam verimle yapılan deneylerin sonuçları tabloda verilmiştir. Bu deneylerle ilgili,\nI. 1. ve 2. deneylerde sınırlayıcı bileşen Y'dir.\nII. 4. deneyde tepkime sonunda 0,4 mol Y artar.\nIII. 3. deneyde girenlerin ikisi de tamamen tükenir.\nyargılarından hangileri doğrudur?",
+        "en": "The table gives the results of experiments carried out to completion in four separate containers for the reaction X + 2Y -> Z. Which of the following statements are correct?\nI. In experiments 1 and 2 the limiting reactant is Y.\nII. In experiment 4, 0.4 mol Y is left over at the end.\nIII. In experiment 3 both reactants are used up completely.",
+        "de": "Die Tabelle zeigt die Ergebnisse von Versuchen zur Reaktion X + 2Y -> Z in vier Gefäßen (vollständiger Umsatz). Welche Aussagen sind richtig?\nI. In den Versuchen 1 und 2 ist Y der limitierende Reaktant.\nII. In Versuch 4 bleiben am Ende 0,4 mol Y übrig.\nIII. In Versuch 3 werden beide Edukte vollständig verbraucht.",
+        "fr": "Le tableau donne les résultats d'expériences totales réalisées dans quatre récipients pour la réaction X + 2Y -> Z. Lesquelles des affirmations suivantes sont correctes ?\nI. Dans les expériences 1 et 2, le réactif limitant est Y.\nII. Dans l'expérience 4, il reste 0,4 mol de Y à la fin.\nIII. Dans l'expérience 3, les deux réactifs sont entièrement consommés.",
+        "ru": "В таблице приведены результаты опытов в четырёх сосудах для реакции X + 2Y -> Z (реакции идут до конца). Какие из утверждений верны?\nI. В опытах 1 и 2 лимитирующий реагент — Y.\nII. В опыте 4 в конце остаётся 0,4 моль Y.\nIII. В опыте 3 оба реагента расходуются полностью.",
+        "ar": "يبين الجدول نتائج تجارب أُجريت في أربعة أوعية للتفاعل X + 2Y -> Z (التفاعلات تامة). أي العبارات التالية صحيحة؟\nI. في التجربتين 1 و2 تكون المادة المحددة هي Y.\nII. في التجربة 4 يتبقى 0.4 mol من Y في النهاية.\nIII. في التجربة 3 تُستهلك المادتان المتفاعلتان كليًا.",
+        "zh": "表中给出了反应 X + 2Y -> Z 在四个容器中完全进行的实验结果。下列说法中哪些正确？\nI. 实验 1 和 2 中限量反应物是 Y。\nII. 实验 4 结束时剩余 0.4 mol Y。\nIII. 实验 3 中两种反应物都完全耗尽。",
+        "ku": "Di tabloyê de encamên ceribandinên ji bo reaksiyona X + 2Y -> Z di çar firaxên cuda de (bi berhema %100) hatine dayîn. Kîjan ji van gotinan rast in?\nI. Di ceribandinên 1 û 2 de reaktanta sînordar Y ye.\nII. Di ceribandina 4 de di dawiya reaksiyonê de 0,4 mol Y dimîne.\nIII. Di ceribandina 3 de her du reaktant jî bi tevahî diqedin."
       },
       "options": [
         {
@@ -2279,6 +2496,167 @@ export const unit07: ChemistryUnitSeedData = {
         "ar": "نقارن نسب المول/المعامل. في التجربة 1: ‏Y ‏0.1/2 = 0.05 < X ‏0.2، وفي التجربة 2: ‏Y ‏0.2/2 = 0.1 < 0.2؛ ففي كلتيهما Y هي المادة المحددة وتتبع كمية Z كمية Y ‏(I صحيحة). في التجربة 3 يكون 0.2 mol من X و0.4 mol من Y بنسبة 1 : 2 تمامًا فتُستهلك المادتان (III صحيحة). في التجربة 4 تكون X هي المادة المحددة؛ يستهلك 0.2 mol من X ‏0.4 mol من Y فيتبقى 0.6 - 0.4 = 0.2 mol من Y لا 0.4 mol ‏(II خاطئة).",
         "zh": "比较物质的量/系数之比。实验 1：Y 0.1/2 = 0.05 < X 0.2；实验 2：Y 0.2/2 = 0.1 < 0.2；两者中 Y 都是限量反应物，Z 的量随 Y 而变(I 正确)。实验 3 中 0.2 mol X 与 0.4 mol Y 恰好为 1 : 2，二者都耗尽(III 正确)。实验 4 中 X 是限量反应物；0.2 mol X 消耗 0.4 mol Y，剩余 0.6 - 0.4 = 0.2 mol Y，而不是 0.4 mol (II 错误)。",
         "ku": "Rêjeyên mol/hevber tên berawirdkirin. Di ceribandina 1 de Y: 0,1/2 = 0,05 < X: 0,2; di ceribandina 2 de Y: 0,2/2 = 0,1 < 0,2; di herduyan de jî Y sînordar e û mîqdara Z ya ku çêdibe li gorî Y diguhere (I rast e). Di ceribandina 3 de 0,2 mol X û 0,4 mol Y tam bi rêjeya 1 : 2 ne, herdu jî diqedin (III rast e). Di ceribandina 4 de X sînordar e; 0,2 mol X 0,4 mol Y xerc dike, 0,6 - 0,4 = 0,2 mol Y dimîne, ne 0,4 mol (II şaş e)."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Deney",
+            "en": "Experiment",
+            "de": "Versuch",
+            "fr": "Expérience",
+            "ru": "Опыт",
+            "ar": "التجربة",
+            "zh": "实验",
+            "ku": "Ceribandin"
+          },
+          "X (mol)",
+          "Y (mol)",
+          {
+            "tr": "Oluşan Z (mol)",
+            "en": "Z formed (mol)",
+            "de": "Gebildetes Z (mol)",
+            "fr": "Z formé (mol)",
+            "ru": "Образовалось Z (моль)",
+            "ar": "Z المتكوّن (mol)",
+            "zh": "生成的 Z (mol)",
+            "ku": "Z ya çêbûyî (mol)"
+          }
+        ],
+        "rows": [
+          [
+            "1",
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            {
+              "tr": "0,1",
+              "en": "0.1",
+              "de": "0,1",
+              "fr": "0,1",
+              "ru": "0,1",
+              "ar": "0.1",
+              "zh": "0.1",
+              "ku": "0,1"
+            },
+            {
+              "tr": "0,05",
+              "en": "0.05",
+              "de": "0,05",
+              "fr": "0,05",
+              "ru": "0,05",
+              "ar": "0.05",
+              "zh": "0.05",
+              "ku": "0,05"
+            }
+          ],
+          [
+            "2",
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            {
+              "tr": "0,1",
+              "en": "0.1",
+              "de": "0,1",
+              "fr": "0,1",
+              "ru": "0,1",
+              "ar": "0.1",
+              "zh": "0.1",
+              "ku": "0,1"
+            }
+          ],
+          [
+            "3",
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            {
+              "tr": "0,4",
+              "en": "0.4",
+              "de": "0,4",
+              "fr": "0,4",
+              "ru": "0,4",
+              "ar": "0.4",
+              "zh": "0.4",
+              "ku": "0,4"
+            },
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            }
+          ],
+          [
+            "4",
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            {
+              "tr": "0,6",
+              "en": "0.6",
+              "de": "0,6",
+              "fr": "0,6",
+              "ru": "0,6",
+              "ar": "0.6",
+              "zh": "0.6",
+              "ku": "0,6"
+            },
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            }
+          ]
+        ]
       }
     }
   ]

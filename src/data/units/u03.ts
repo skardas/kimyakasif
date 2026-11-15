@@ -30,14 +30,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-f01",
       "fact": {
-        "tr": "İyonik bağ, metal katyonu ile ametal anyonu arasındaki elektrostatik çekim kuvveti ile oluşur.",
-        "en": "The ionic bond is formed by the electrostatic force of attraction between the metal cation and the nonmetal anion.",
-        "de": "Die Ionenbindung entsteht durch die elektrostatische Anziehungskraft zwischen dem Metallkation und dem Nichtmetallanion.",
-        "fr": "La liaison ionique est formée par la force d’attraction électrostatique entre le cation métallique et l’anion non métallique.",
-        "ru": "Ионная связь образуется за счёт электростатического притяжения между катионом металла и анионом неметалла.",
-        "ar": "تنشأ الرابطة الأيونية عن قوة التجاذب الكهروستاتيكي بين الكاتيون الفلزي والأنيون اللافلزي.",
-        "zh": "离子键由金属阳离子与非金属阴离子之间的静电引力形成。",
-        "ku": "Girêdana îyonîk bi hêza kişandinê ya elektrostatîk a navbera katyona metal û anyona nemetal çêdibe."
+        "tr": "İyonik bağ, zıt yüklü iyonlar (ör. metal katyonu ile ametal anyonu) arasındaki elektrostatik çekim kuvvetidir.",
+        "en": "An ionic bond is the electrostatic attraction between oppositely charged ions (e.g. a metal cation and a nonmetal anion).",
+        "de": "Die Ionenbindung ist die elektrostatische Anziehung zwischen entgegengesetzt geladenen Ionen (z. B. Metallkation und Nichtmetallanion).",
+        "fr": "La liaison ionique est l'attraction électrostatique entre des ions de charges opposées (par ex. un cation métallique et un anion non métallique).",
+        "ru": "Ионная связь — это электростатическое притяжение между противоположно заряженными ионами (например, катионом металла и анионом неметалла).",
+        "ar": "الرابطة الأيونية هي التجاذب الكهروستاتيكي بين أيونات مختلفة الشحنة (مثل كاتيون فلزي وأنيون لافلزي).",
+        "zh": "离子键是带相反电荷的离子（如金属阳离子与非金属阴离子）之间的静电引力。",
+        "ku": "Girêdana îyonîk hêza kişandinê ya elektrostatîk a di navbera îyonên bi barên dijber de ye (mînak katyona metal û anyona nemetal)."
       },
       "trap": {
         "tr": "İyonik bileşikler moleküllerden oluşur; NaCl'nin en küçük birimi bir NaCl molekülüdür.",
@@ -63,14 +63,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-f02",
       "fact": {
-        "tr": "Kovalent bağ, ametal atomları arasında elektron ortaklaşması sonucu meydana gelir.",
-        "en": "Covalent bond occurs as a result of electron sharing between nonmetal atoms.",
-        "de": "Eine kovalente Bindung entsteht durch die gemeinsame Nutzung von Elektronen zwischen Nichtmetallatomen.",
-        "fr": "La liaison covalente résulte du partage d’électrons entre des atomes non métalliques.",
-        "ru": "Ковалентная связь возникает в результате образования общих электронных пар между атомами неметаллов.",
-        "ar": "تنشأ الرابطة التساهمية نتيجة تشارك الإلكترونات بين ذرات اللافلزات.",
-        "zh": "共价键是非金属原子之间通过共用电子形成的。",
-        "ku": "Girêdana kovalent di encama hevparkirina elektronan a navbera atomên nemetal de çêdibe."
+        "tr": "Kovalent bağ, atomların elektronlarını ortaklaşa kullanmasıyla oluşur ve en çok ametal atomları arasında görülür.",
+        "en": "A covalent bond forms when atoms share electrons; it is found mainly between nonmetal atoms.",
+        "de": "Eine kovalente Bindung entsteht, wenn Atome Elektronen gemeinsam nutzen; sie tritt vor allem zwischen Nichtmetallatomen auf.",
+        "fr": "Une liaison covalente se forme lorsque des atomes mettent des électrons en commun ; on la rencontre surtout entre atomes non métalliques.",
+        "ru": "Ковалентная связь образуется за счёт общих электронных пар атомов и встречается главным образом между атомами неметаллов.",
+        "ar": "تتكوّن الرابطة التساهمية عندما تتشارك الذرات في الإلكترونات، وتوجد غالبًا بين ذرات اللافلزات.",
+        "zh": "共价键是原子之间通过共用电子形成的，主要存在于非金属原子之间。",
+        "ku": "Girêdana kovalent bi hevparkirina elektronan a atoman çêdibe û bi piranî di navbera atomên nemetal de tê dîtin."
       },
       "trap": {
         "tr": "Kovalent bağ elektron alışverişiyle oluşur.",
@@ -525,14 +525,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-f16",
       "fact": {
-        "tr": "Bileşik adlandırmada kovalent bileşiklerde mono, di, tri gibi sayı ön ekleri kullanılır.",
-        "en": "In naming compounds, numerical prefixes such as mono, di, tri are used for covalent compounds.",
-        "de": "Bei der Benennung von Verbindungen werden bei kovalenten Verbindungen Zahlpräfixe wie mono, di, tri verwendet.",
-        "fr": "Dans la nomenclature, les préfixes numériques tels que mono, di, tri sont utilisés pour les composés covalents.",
-        "ru": "В названиях ковалентных соединений используют числовые приставки моно-, ди-, три- и т. д.",
-        "ar": "في تسمية المركبات التساهمية تُستخدم البادئات العددية مثل أحادي وثنائي وثلاثي.",
-        "zh": "共价化合物命名时要使用一、二、三(mono、di、tri)等数字前缀。",
-        "ku": "Di binavkirina pêkhateyên kovalent de pêşgirên hejmarî yên wekî mono, di, trî tên bikaranîn."
+        "tr": "İki ametalden oluşan kovalent bileşikler adlandırılırken atom sayıları mono, di, tri gibi sayı ön ekleriyle belirtilir.",
+        "en": "When naming covalent compounds of two nonmetals, the numbers of atoms are shown with numerical prefixes such as mono, di, tri.",
+        "de": "Bei der Benennung kovalenter Verbindungen aus zwei Nichtmetallen werden die Atomzahlen mit Zahlpräfixen wie mono, di, tri angegeben.",
+        "fr": "Pour nommer les composés covalents formés de deux non-métaux, on indique le nombre d'atomes par des préfixes numériques comme mono, di, tri.",
+        "ru": "В названиях ковалентных соединений двух неметаллов число атомов указывают числовыми приставками моно-, ди-, три- и т. д.",
+        "ar": "عند تسمية المركبات التساهمية المكوّنة من لافلزين يُشار إلى عدد الذرات بالبادئات العددية مثل أحادي وثنائي وثلاثي.",
+        "zh": "命名由两种非金属组成的共价化合物时，用一、二、三（mono、di、tri）等数字前缀表示原子个数。",
+        "ku": "Di binavkirina pêkhateyên kovalent ên ji du nemetalan pêk tên de, hejmara atoman bi pêşgirên hejmarî yên wekî mono, di, trî tê nîşandan."
       },
       "trap": {
         "tr": "İyonik bileşikler adlandırılırken ametal sayısına göre mono, di, tri gibi ön ekler kullanılır.",
@@ -613,14 +613,14 @@ export const unit03: ChemistryUnitSeedData = {
         "ku": "Dîpol-Dîpol"
       },
       "distinction": {
-        "tr": "Hidrojen bağı F, O, N atomlarına bağlı H atomunun oluşturduğu özel ve çok daha güçlü dipol etkileşimidir.",
-        "en": "Hydrogen bond is a special and much stronger dipole interaction formed by the H atom bonded to F, O, N atoms.",
-        "de": "Die Wasserstoffbindung ist eine spezielle und viel stärkere Dipolwechselwirkung, die durch die Bindung des H-Atoms an F-, O- und N-Atome entsteht.",
-        "fr": "La liaison hydrogène est une interaction dipolaire spéciale et beaucoup plus forte formée par l’atome H lié aux atomes F, O, N.",
-        "ru": "Водородная связь — особый, гораздо более сильный вид дипольного притяжения с участием атома H, связанного с F, O или N; диполь-дипольные силы действуют между любыми полярными молекулами с постоянными диполями.",
-        "ar": "الرابطة الهيدروجينية: تآثر خاص أقوى بكثير من تآثر ثنائي القطب–ثنائي القطب، تُكوّنه ذرة H مرتبطة بذرة F أو O أو N.",
-        "zh": "氢键是与 F、O、N 原子相连的 H 原子形成的一种特殊偶极作用，比一般的偶极-偶极力强得多。",
-        "ku": "Girêdana hîdrojenê têkiliyeke dîpol-dîpol a taybet û gelek xurttir e ku atoma H ya bi atomên F, O an N ve girêdayî çêdike."
+        "tr": "Hidrojen bağı, F, O veya N atomuna bağlı H atomu ile komşu moleküldeki F, O veya N atomu arasında oluşan özel ve daha güçlü bir etkileşimdir; dipol-dipol etkileşimi ise H atomu gerektirmeden kalıcı dipollü herhangi iki polar molekül arasında görülür.",
+        "en": "A hydrogen bond is a special, stronger attraction between an H atom bonded to F, O or N and an F, O or N atom of a neighbouring molecule; a dipole-dipole interaction acts between any two polar molecules with permanent dipoles and needs no such H atom.",
+        "de": "Die Wasserstoffbindung ist eine besondere, stärkere Anziehung zwischen einem an F, O oder N gebundenen H-Atom und einem F-, O- oder N-Atom eines Nachbarmoleküls; eine Dipol-Dipol-Wechselwirkung wirkt zwischen beliebigen polaren Molekülen mit permanentem Dipol und braucht kein solches H-Atom.",
+        "fr": "La liaison hydrogène est une attraction particulière, plus forte, entre un atome H lié à F, O ou N et un atome F, O ou N d'une molécule voisine ; une interaction dipôle-dipôle s'exerce entre deux molécules polaires quelconques à dipôle permanent, sans exiger un tel atome H.",
+        "ru": "Водородная связь — особое, более сильное притяжение между атомом H, связанным с F, O или N, и атомом F, O или N соседней молекулы; диполь-дипольные силы действуют между любыми полярными молекулами с постоянными диполями и не требуют такого атома H.",
+        "ar": "الرابطة الهيدروجينية تجاذب خاص وأقوى بين ذرة H مرتبطة بذرة F أو O أو N وذرة F أو O أو N في جزيء مجاور؛ أما تآثر ثنائي القطب–ثنائي القطب فيحدث بين أي جزيئين قطبيين لهما ثنائيات قطب دائمة ولا يحتاج إلى ذرة H كهذه.",
+        "zh": "氢键是与 F、O 或 N 相连的 H 原子和相邻分子中的 F、O 或 N 原子之间一种特殊且较强的作用；偶极-偶极力则存在于任意两个具有永久偶极的极性分子之间，不需要这样的 H 原子。",
+        "ku": "Girêdana hîdrojenê kişandineke taybet û xurttir e di navbera atoma H ya bi F, O an N ve girêdayî û atoma F, O an N ya molekula cîran de; têkiliya dîpol-dîpol jî di navbera her du molekulên polar ên bi dîpola daîmî de çêdibe û hewceyî atomeke H ya wiha nîne."
       }
     },
     {
@@ -826,110 +826,110 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-s01",
       "title": {
-        "tr": "Zayıf Etkileşimlerin Genel Güç Sıralaması (Benzer Büyüklükteki Tanecikler İçin, En Güçlüden En Zayıfa)",
-        "en": "General Strength Order of Weak Interactions (Particles of Similar Size, Strongest to Weakest)",
-        "de": "Allgemeine Stärkereihenfolge schwacher Wechselwirkungen (ähnlich große Teilchen, von der stärksten zur schwächsten)",
-        "fr": "Ordre général de force des interactions faibles (particules de taille semblable, de la plus forte à la plus faible)",
-        "ru": "Ряд слабых взаимодействий по силе (для частиц сходного размера, от самого сильного к самому слабому)",
-        "ar": "الترتيب العام لقوة التآثرات الضعيفة (لدقائق متقاربة الحجم، من الأقوى إلى الأضعف)",
-        "zh": "弱相互作用的一般强度顺序（大小相近的微粒，由强到弱）",
-        "ku": "Rêza Giştî ya Hêza Têkiliyên Qels (ji bo Perçeyên bi Mezinahiya Nêzîk, ji ya Herî Xurt ber bi ya Herî Qels)"
+        "tr": "NaCl'nin Suda Çözünmesi",
+        "en": "Dissolution of NaCl in Water",
+        "de": "Lösen von NaCl in Wasser",
+        "fr": "Dissolution de NaCl dans l'eau",
+        "ru": "Растворение NaCl в воде",
+        "ar": "ذوبان NaCl في الماء",
+        "zh": "NaCl 在水中的溶解",
+        "ku": "Helbûna NaCl di Avê de"
       },
       "steps": [
         {
-          "tr": "İyon-dipol etkileşimi",
-          "en": "Ion-dipole interaction",
-          "de": "Ionen-Dipol-Wechselwirkung",
-          "fr": "Interaction ion-dipôle",
-          "ru": "Ион-дипольное взаимодействие",
-          "ar": "تآثر أيون–ثنائي القطب",
-          "zh": "离子-偶极作用",
-          "ku": "Têkiliya îyon-dîpol"
+          "tr": "Su moleküllerinin kısmi negatif O uçları kristal yüzeyindeki Na+ iyonlarına, kısmi pozitif H uçları Cl- iyonlarına yönelir",
+          "en": "The partially negative O ends of water molecules turn towards Na+ ions on the crystal surface and the partially positive H ends towards Cl- ions",
+          "de": "Die partiell negativen O-Enden der Wassermoleküle richten sich auf die Na+-Ionen an der Kristalloberfläche, die partiell positiven H-Enden auf die Cl--Ionen aus",
+          "fr": "Les extrémités O partiellement négatives des molécules d'eau s'orientent vers les ions Na+ de la surface du cristal, et les extrémités H partiellement positives vers les ions Cl-",
+          "ru": "Частично отрицательные концы O молекул воды ориентируются к ионам Na+ на поверхности кристалла, а частично положительные концы H — к ионам Cl-",
+          "ar": "تتّجه أطراف O السالبة جزئيًا في جزيئات الماء نحو أيونات Na+ على سطح البلورة، وأطراف H الموجبة جزئيًا نحو أيونات Cl-",
+          "zh": "水分子带部分负电的 O 端朝向晶体表面的 Na+，带部分正电的 H 端朝向 Cl-",
+          "ku": "Serên O yên qismî neyînî yên molekulên avê ber bi îyonên Na+ yên li ser rûyê krîstalê, serên H yên qismî erênî jî ber bi îyonên Cl- ve dizivirin"
         },
         {
-          "tr": "Hidrojen bağı",
-          "en": "hydrogen bond",
-          "de": "Wasserstoffbindung",
-          "fr": "liaison hydrogène",
-          "ru": "Водородная связь",
-          "ar": "الرابطة الهيدروجينية",
-          "zh": "氢键",
-          "ku": "Girêdana hîdrojenê"
+          "tr": "İyon-dipol çekimleri iyonlar arasındaki çekimi yenerek yüzeydeki iyonları kristalden koparır",
+          "en": "Ion-dipole attractions overcome the attraction between the ions and pull the surface ions out of the crystal",
+          "de": "Ion-Dipol-Anziehungen überwinden die Anziehung zwischen den Ionen und lösen die Oberflächenionen aus dem Kristall",
+          "fr": "Les attractions ion-dipôle l'emportent sur l'attraction entre les ions et arrachent les ions de surface au cristal",
+          "ru": "Ион-дипольное притяжение преодолевает притяжение между ионами и вырывает поверхностные ионы из кристалла",
+          "ar": "تتغلّب قوى التجاذب أيون–ثنائي القطب على التجاذب بين الأيونات فتنتزع الأيونات السطحية من البلورة",
+          "zh": "离子-偶极作用克服离子间的引力，把表面的离子从晶体中拉出",
+          "ku": "Kişandinên îyon-dîpol li ser kişandina navbera îyonan zal dibin û îyonên rûyê ji krîstalê diqetînin"
         },
         {
-          "tr": "Dipol-dipol etkileşimi",
-          "en": "Dipole-dipole interaction",
-          "de": "Dipol-Dipol-Wechselwirkung",
-          "fr": "Interaction dipôle-dipôle",
-          "ru": "Диполь-дипольное взаимодействие",
-          "ar": "تآثر ثنائي القطب–ثنائي القطب",
-          "zh": "偶极-偶极作用",
-          "ku": "Têkiliya dîpol-dîpol"
+          "tr": "Kopan iyonların çevresi su molekülleriyle sarılır (hidratlaşma)",
+          "en": "The released ions become surrounded by water molecules (hydration)",
+          "de": "Die herausgelösten Ionen werden von Wassermolekülen umhüllt (Hydratation)",
+          "fr": "Les ions libérés s'entourent de molécules d'eau (hydratation)",
+          "ru": "Оторвавшиеся ионы окружаются молекулами воды (гидратация)",
+          "ar": "تُحاط الأيونات المنفصلة بجزيئات الماء (الإماهة)",
+          "zh": "脱离出来的离子被水分子包围（水合）",
+          "ku": "Dora îyonên qetiyayî bi molekulên avê tê girtin (hîdratasyon)"
         },
         {
-          "tr": "London dispersiyon kuvvetleri",
-          "en": "London dispersion forces",
-          "de": "London-Dispersionskräfte",
-          "fr": "Forces de dispersion de London",
-          "ru": "Лондоновские (дисперсионные) силы",
-          "ar": "قوى لندن (قوى التشتت)",
-          "zh": "色散力",
-          "ku": "Hêzên belavbûnê yên London"
+          "tr": "Hidratlaşmış iyonlar çözeltinin her yerine homojen olarak dağılır",
+          "en": "The hydrated ions spread uniformly throughout the solution",
+          "de": "Die hydratisierten Ionen verteilen sich gleichmäßig in der ganzen Lösung",
+          "fr": "Les ions hydratés se répartissent uniformément dans toute la solution",
+          "ru": "Гидратированные ионы равномерно распределяются по всему раствору",
+          "ar": "تنتشر الأيونات المُماهة بانتظام في جميع أنحاء المحلول",
+          "zh": "水合离子均匀地分散到整个溶液中",
+          "ku": "Îyonên hîdratbûyî bi awayekî homojen li her derê çareseriyê belav dibin"
         }
       ]
     },
     {
       "id": "u03-s02",
       "title": {
-        "tr": "İyonik Bağ Oluşum Aşamaları",
-        "en": "Ionic Bond Formation Stages",
-        "de": "Phasen der Ionenbindungsbildung",
-        "fr": "Étapes de formation de liaisons ioniques",
-        "ru": "Стадии образования ионной связи",
-        "ar": "مراحل تكوين الرابطة الأيونية",
-        "zh": "离子键的形成过程",
-        "ku": "Qonaxên Çêbûna Girêdana Îyonîk"
+        "tr": "İyonik Bağ Oluşumu",
+        "en": "Formation of an Ionic Bond",
+        "de": "Bildung einer Ionenbindung",
+        "fr": "Formation d'une liaison ionique",
+        "ru": "Образование ионной связи",
+        "ar": "تكوّن الرابطة الأيونية",
+        "zh": "离子键的形成",
+        "ku": "Çêbûna Girêdana Îyonîk"
       },
       "steps": [
         {
-          "tr": "Metal atomu değerlik elektronunu verir",
-          "en": "Metal atom donates its valence electron",
-          "de": "Das Metallatom gibt sein Valenzelektron ab",
-          "fr": "L'atome de métal donne son électron de valence",
-          "ru": "Атом металла отдаёт валентный электрон",
-          "ar": "تفقد ذرة الفلز إلكترونات تكافئها",
-          "zh": "金属原子失去价电子",
-          "ku": "Atoma metal elektrona xwe ya valansê dide"
+          "tr": "Metal atomu değerlik elektronlarını vererek katyona dönüşür",
+          "en": "The metal atom gives up its valence electrons and becomes a cation",
+          "de": "Das Metallatom gibt seine Valenzelektronen ab und wird zum Kation",
+          "fr": "L'atome métallique cède ses électrons de valence et devient un cation",
+          "ru": "Атом металла отдаёт валентные электроны и превращается в катион",
+          "ar": "تفقد ذرة الفلز إلكترونات تكافؤها فتتحوّل إلى كاتيون",
+          "zh": "金属原子失去价电子变成阳离子",
+          "ku": "Atoma metal elektronên xwe yên valansê dide û dibe katyon"
         },
         {
-          "tr": "Ametal atomu elektronu alarak oktetini tamamlar",
-          "en": "A nonmetal atom completes its octet by gaining an electron.",
-          "de": "Ein Nichtmetallatom vervollständigt sein Oktett durch die Aufnahme eines Elektrons.",
-          "fr": "Un atome non métallique complète son octet en gagnant un électron.",
-          "ru": "Атом неметалла принимает электрон и завершает октет",
-          "ar": "تُكمل ذرة اللافلز ثمانيتها باكتساب الإلكترون",
-          "zh": "非金属原子得到电子，达到 8 电子稳定结构",
-          "ku": "Atoma nemetal bi wergirtina elektronê okteta xwe temam dike"
+          "tr": "Ametal atomu verilen elektronları alarak oktetini tamamlar ve anyona dönüşür",
+          "en": "The nonmetal atom takes these electrons, completes its octet and becomes an anion",
+          "de": "Das Nichtmetallatom nimmt diese Elektronen auf, vervollständigt sein Oktett und wird zum Anion",
+          "fr": "L'atome non métallique capte ces électrons, complète son octet et devient un anion",
+          "ru": "Атом неметалла принимает эти электроны, завершает октет и превращается в анион",
+          "ar": "تكتسب ذرة اللافلز هذه الإلكترونات فتكمل ثمانيتها وتتحوّل إلى أنيون",
+          "zh": "非金属原子得到这些电子，达到八隅体而变成阴离子",
+          "ku": "Atoma nemetal van elektronan digire, okteta xwe temam dike û dibe anyon"
         },
         {
-          "tr": "Zıt yüklü katyon ve anyon oluşur",
-          "en": "Oppositely charged cation and anion are formed",
-          "de": "Es entstehen entgegengesetzt geladene Kationen und Anionen",
-          "fr": "Des cations et des anions de charges opposées se forment",
-          "ru": "Образуются противоположно заряженные катион и анион",
-          "ar": "يتكوّن كاتيون وأنيون مختلفا الشحنة",
-          "zh": "形成带相反电荷的阳离子和阴离子",
-          "ku": "Katyon û anyona bi barên dijber çêdibin"
+          "tr": "Zıt yüklü katyon ve anyonlar elektrostatik olarak birbirini çeker",
+          "en": "The oppositely charged cations and anions attract each other electrostatically",
+          "de": "Die entgegengesetzt geladenen Kationen und Anionen ziehen sich elektrostatisch an",
+          "fr": "Les cations et anions de charges opposées s'attirent électrostatiquement",
+          "ru": "Противоположно заряженные катионы и анионы электростатически притягиваются",
+          "ar": "تتجاذب الكاتيونات والأنيونات المختلفة الشحنة تجاذبًا كهروستاتيكيًا",
+          "zh": "带相反电荷的阳离子和阴离子相互静电吸引",
+          "ku": "Katyon û anyonên bi barên dijber bi awayê elektrostatîk hev dikişînin"
         },
         {
-          "tr": "Elektrostatik çekimle iyonik kristal örgü kurulur",
-          "en": "Ionic crystal lattice is established by electrostatic attraction",
-          "de": "Das Ionenkristallgitter wird durch elektrostatische Anziehung aufgebaut",
-          "fr": "Le réseau cristallin ionique est établi par attraction électrostatique",
-          "ru": "За счёт электростатического притяжения образуется ионная кристаллическая решётка",
-          "ar": "تتكوّن الشبكة البلورية الأيونية بالتجاذب الكهروستاتيكي",
-          "zh": "阴、阳离子通过静电引力形成离子晶格",
-          "ku": "Bi kişandina elektrostatîk tora krîstalî ya îyonîk ava dibe"
+          "tr": "İyonlar düzenli üç boyutlu iyonik kristal örgüde dizilir",
+          "en": "The ions arrange themselves in an ordered three-dimensional ionic crystal lattice",
+          "de": "Die Ionen ordnen sich in einem regelmäßigen dreidimensionalen Ionengitter an",
+          "fr": "Les ions s'organisent en un réseau cristallin ionique ordonné à trois dimensions",
+          "ru": "Ионы выстраиваются в упорядоченную трёхмерную ионную кристаллическую решётку",
+          "ar": "تنتظم الأيونات في شبكة بلورية أيونية ثلاثية الأبعاد منتظمة",
+          "zh": "离子排列成有序的三维离子晶格",
+          "ku": "Îyon di tora krîstala îyonîk a sêrehendî ya rêkûpêk de rêz dibin"
         }
       ]
     },
@@ -991,14 +991,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-s04",
       "title": {
-        "tr": "London Kuvveti Büyüme Basamakları",
-        "en": "London Force Growth Steps",
-        "de": "Stufen der Zunahme der London-Kräfte",
-        "fr": "Étapes du renforcement des forces de London",
-        "ru": "Усиление лондоновских сил: цепочка причин",
-        "ar": "مراحل ازدياد قوة لندن",
-        "zh": "色散力增强的过程",
-        "ku": "Qonaxên Xurtbûna Hêza London"
+        "tr": "London Kuvvetlerinin Güçlenmesi",
+        "en": "Strengthening of London Forces",
+        "de": "Verstärkung der London-Kräfte",
+        "fr": "Renforcement des forces de London",
+        "ru": "Усиление лондоновских сил",
+        "ar": "اشتداد قوى لندن",
+        "zh": "色散力（伦敦力）的增强",
+        "ku": "Xurtbûna Hêzên London"
       },
       "steps": [
         {
@@ -1048,153 +1048,268 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin01",
       "stem": {
-        "tr": "Aşağıdaki maddelerden hangisinin molekülleri arasında yoğun fazda baskın etkileşim türü hidrojen bağıdır?",
-        "en": "The dominant type of interaction between the molecules of which of the following substances in the condensed phase is hydrogen bonding?",
-        "de": "Die vorherrschende Art der Wechselwirkung zwischen den Molekülen welcher der folgenden Substanzen in der kondensierten Phase ist die Wasserstoffbrückenbindung?",
-        "fr": "Le type d'interaction dominant entre les molécules de laquelle des substances suivantes dans la phase condensée est la liaison hydrogène ?",
-        "ru": "Между молекулами какого из перечисленных веществ в конденсированном состоянии преобладает водородная связь?",
-        "ar": "أيّ المواد الآتية يكون التآثر السائد بين جزيئاتها في الطور المكثف رابطةً هيدروجينية؟",
-        "zh": "下列物质中，在凝聚态时分子间以氢键为主要相互作用的是哪一种？",
-        "ku": "Di fazên şile û hişk de têkiliya serdest a navbera molekulên kîjan ji van madeyan girêdana hîdrojenê ye?"
+        "tr": "Grafikte 4A grubu (CH4, SiH4, GeH4, SnH4) ve 6A grubu (H2O, H2S, H2Se, H2Te) elementlerinin hidrojenli bileşiklerinin 1 atm'deki kaynama noktaları, elementin bulunduğu periyoda göre verilmiştir.\nGrafikle ilgili aşağıdaki yorumlardan hangileri doğrudur?\nI. H2O'nun kaynama noktasının 6A serisindeki eğilime uymayacak kadar yüksek olması, molekülleri arasındaki hidrojen bağlarından kaynaklanır.\nII. 4A serisinde periyot numarası arttıkça kaynama noktasının yükselmesi, elektron sayısı arttıkça London kuvvetlerinin güçlenmesiyle açıklanır.\nIII. 3. periyotta H2S'nin kaynama noktasının SiH4'ünkünden yüksek olmasının nedeni, H2S molekülleri arasında hidrojen bağı bulunmasıdır.",
+        "en": "The graph shows the boiling points at 1 atm of the hydrides of group 4A (CH4, SiH4, GeH4, SnH4) and group 6A (H2O, H2S, H2Se, H2Te) elements against the period of the element.\nWhich of the following interpretations of the graph are correct?\nI. The boiling point of H2O is far above the trend of the 6A series because of hydrogen bonds between its molecules.\nII. The rise in boiling point down the 4A series is explained by London forces becoming stronger as the number of electrons increases.\nIII. In period 3, H2S boils higher than SiH4 because there are hydrogen bonds between H2S molecules.",
+        "de": "Das Diagramm zeigt die Siedepunkte bei 1 atm der Wasserstoffverbindungen der Elemente der Gruppe 4A (CH4, SiH4, GeH4, SnH4) und der Gruppe 6A (H2O, H2S, H2Se, H2Te) in Abhängigkeit von der Periode des Elements.\nWelche der folgenden Deutungen des Diagramms sind richtig?\nI. Dass der Siedepunkt von H2O weit über dem Trend der 6A-Reihe liegt, beruht auf Wasserstoffbrücken zwischen seinen Molekülen.\nII. Der Anstieg des Siedepunkts in der 4A-Reihe mit steigender Periode wird durch stärker werdende London-Kräfte bei zunehmender Elektronenzahl erklärt.\nIII. In der 3. Periode siedet H2S höher als SiH4, weil zwischen H2S-Molekülen Wasserstoffbrücken bestehen.",
+        "fr": "Le graphique donne les températures d'ébullition sous 1 atm des hydrures des éléments du groupe 4A (CH4, SiH4, GeH4, SnH4) et du groupe 6A (H2O, H2S, H2Se, H2Te) en fonction de la période de l'élément.\nLesquelles des interprétations suivantes du graphique sont exactes ?\nI. Si la température d'ébullition de H2O est bien au-dessus de la tendance de la série 6A, c'est à cause des liaisons hydrogène entre ses molécules.\nII. L'augmentation de la température d'ébullition le long de la série 4A s'explique par le renforcement des forces de London quand le nombre d'électrons augmente.\nIII. Dans la période 3, H2S bout à plus haute température que SiH4 parce qu'il existe des liaisons hydrogène entre les molécules de H2S.",
+        "ru": "На графике приведены температуры кипения при 1 атм водородных соединений элементов группы 4A (CH4, SiH4, GeH4, SnH4) и группы 6A (H2O, H2S, H2Se, H2Te) в зависимости от периода элемента.\nКакие из следующих выводов по графику верны?\nI. Температура кипения H2O намного выше, чем следует из тенденции ряда 6A, из-за водородных связей между её молекулами.\nII. Рост температуры кипения в ряду 4A с увеличением номера периода объясняется усилением лондоновских сил с ростом числа электронов.\nIII. В 3-м периоде H2S кипит при более высокой температуре, чем SiH4, потому что между молекулами H2S есть водородные связи.",
+        "ar": "يبيّن الرسم البياني درجات غليان المركبات الهيدروجينية لعناصر المجموعة 4A (CH4 وSiH4 وGeH4 وSnH4) والمجموعة 6A (H2O وH2S وH2Se وH2Te) عند 1 atm بحسب دورة العنصر.\nأيّ التفسيرات الآتية للرسم صحيحة؟\nI. ارتفاع درجة غليان H2O كثيرًا عن اتجاه سلسلة 6A سببه الروابط الهيدروجينية بين جزيئاته.\nII. يُفسَّر ارتفاع درجة الغليان في سلسلة 4A مع ازدياد رقم الدورة باشتداد قوى لندن مع ازدياد عدد الإلكترونات.\nIII. في الدورة الثالثة تكون درجة غليان H2S أعلى من SiH4 لوجود روابط هيدروجينية بين جزيئات H2S.",
+        "zh": "图中给出了 4A 族（CH4、SiH4、GeH4、SnH4）和 6A 族（H2O、H2S、H2Se、H2Te）元素的氢化物在 1 atm 下的沸点随元素所在周期的变化。\n关于该图，下列解释中正确的是哪些？\nI. H2O 的沸点远高于 6A 系列的变化趋势，是因为其分子间存在氢键。\nII. 4A 系列中沸点随周期数增大而升高，可用电子数增多使色散力（伦敦力）增强来解释。\nIII. 第 3 周期中 H2S 的沸点高于 SiH4，是因为 H2S 分子间存在氢键。",
+        "ku": "Di grafîkê de xalên kelînê yên di 1 atm de yên pêkhateyên hîdrojenê yên elementên koma 4A (CH4, SiH4, GeH4, SnH4) û koma 6A (H2O, H2S, H2Se, H2Te) li gorî periyoda elementê hatine dayîn.\nKîjan ji van şîroveyên grafîkê rast in?\nI. Bilindbûna xala kelînê ya H2O bi qasî ku li meyla rêza 6A nayê, ji girêdanên hîdrojenê yên di navbera molekulên wê de tê.\nII. Bilindbûna xala kelînê di rêza 4A de her ku hejmara periyodê zêde dibe, bi xurtbûna hêzên London ji ber zêdebûna hejmara elektronan tê ravekirin.\nIII. Di periyoda 3. de xala kelînê ya H2S ji ya SiH4 bilindtir e, ji ber ku di navbera molekulên H2S de girêdana hîdrojenê heye."
       },
       "options": [
         {
-          "tr": "H2O",
-          "en": "H2O",
-          "de": "H2O",
-          "fr": "H2O",
-          "ru": "H2O",
-          "ar": "H2O",
-          "zh": "H2O",
-          "ku": "H2O"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "CH4",
-          "en": "CH4",
-          "de": "CH4",
-          "fr": "CH4",
-          "ru": "CH4",
-          "ar": "CH4",
-          "zh": "CH4",
-          "ku": "CH4"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "HCl",
-          "en": "HCl",
-          "de": "HCl",
-          "fr": "HCl",
-          "ru": "HCl",
-          "ar": "HCl",
-          "zh": "HCl",
-          "ku": "HCl"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "CO2",
-          "en": "CO2",
-          "de": "CO2",
-          "fr": "CO2",
-          "ru": "CO2",
-          "ar": "CO2",
-          "zh": "CO2",
-          "ku": "CO2"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "H2S",
-          "en": "H2S",
-          "de": "H2S",
-          "fr": "H2S",
-          "ru": "H2S",
-          "ar": "H2S",
-          "zh": "H2S",
-          "ku": "H2S"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Hidrojen bağı için H atomunun F, O veya N atomuna bağlı olması gerekir. H2O'da H atomları elektronegatifliği yüksek O atomuna bağlıdır; bu nedenle su molekülleri arasında yoğun fazda baskın etkileşim hidrojen bağıdır. HCl ve H2S polardır ancak H atomları Cl ya da S'ye bağlı olduğundan hidrojen bağı kuramaz; bu moleküller arasında dipol-dipol etkileşimleri ve London kuvvetleri vardır. Apolar CH4 ve CO2 molekülleri arasında ise yalnızca London kuvvetleri bulunur.",
-        "en": "A hydrogen bond requires an H atom bonded to F, O or N. In H2O the H atoms are bonded to the highly electronegative O atom, so hydrogen bonding is the dominant interaction between water molecules in the condensed phases. HCl and H2S are polar, but their H atoms are bonded to Cl or S, so they cannot form hydrogen bonds; these molecules attract one another through dipole-dipole interactions and London forces. Between nonpolar CH4 and CO2 molecules there are only London forces.",
-        "de": "Für eine Wasserstoffbrückenbindung muss ein H-Atom an F, O oder N gebunden sein. In H2O sind die H-Atome an das stark elektronegative O-Atom gebunden; deshalb sind Wasserstoffbrücken in den kondensierten Phasen die vorherrschende Wechselwirkung zwischen Wassermolekülen. HCl und H2S sind polar, ihre H-Atome sind aber an Cl bzw. S gebunden und können keine Wasserstoffbrücken bilden; zwischen diesen Molekülen wirken Dipol-Dipol-Wechselwirkungen und London-Kräfte. Zwischen den unpolaren Molekülen CH4 und CO2 wirken nur London-Kräfte.",
-        "fr": "Une liaison hydrogène exige un atome H lié à F, O ou N. Dans H2O, les atomes H sont liés à l'atome O, très électronégatif ; la liaison hydrogène est donc l'interaction dominante entre les molécules d'eau en phase condensée. HCl et H2S sont polaires, mais leurs atomes H sont liés à Cl ou à S et ne peuvent pas former de liaisons hydrogène ; ces molécules s'attirent par des interactions dipôle-dipôle et des forces de London. Entre les molécules apolaires CH4 et CO2, il n'y a que des forces de London.",
-        "ru": "Для водородной связи атом H должен быть связан с F, O или N. В H2O атомы H связаны с сильно электроотрицательным атомом O, поэтому в конденсированном состоянии между молекулами воды преобладает водородная связь. HCl и H2S полярны, но их атомы H связаны с Cl или S, и водородных связей они не образуют; между этими молекулами действуют диполь-дипольные взаимодействия и лондоновские силы. Между неполярными молекулами CH4 и CO2 действуют только лондоновские силы.",
-        "ar": "يشترط لتكوّن الرابطة الهيدروجينية أن ترتبط ذرة H بذرة F أو O أو N. في H2O ترتبط ذرات H بذرة O العالية السالبية الكهربائية، لذا فالرابطة الهيدروجينية هي التآثر السائد بين جزيئات الماء في الطور المكثف. أما HCl وH2S فقطبيان لكن ذرات H فيهما مرتبطة بـ Cl أو S فلا يكوّنان روابط هيدروجينية، وتتجاذب جزيئاتهما بتآثرات ثنائي القطب-ثنائي القطب وقوى لندن. ولا توجد بين جزيئات CH4 وCO2 غير القطبية سوى قوى لندن.",
-        "zh": "形成氢键要求 H 原子与 F、O 或 N 原子相连。H2O 中 H 原子与电负性大的 O 原子相连，所以在凝聚态时水分子间占主导的作用是氢键。HCl 和 H2S 是极性分子，但 H 原子连在 Cl 或 S 上，不能形成氢键，分子间存在偶极-偶极作用和色散力。非极性的 CH4 和 CO2 分子间只有色散力。",
-        "ku": "Ji bo girêdana hîdrojenê divê atoma H bi F, O an N ve girêdayî be. Di H2O de atomên H bi atoma O ya pir elektronegatîf ve girêdayî ne; loma di fazên şile û hişk de têkiliya serdest a navbera molekulên avê girêdana hîdrojenê ye. HCl û H2S polar in, lê atomên H yên wan bi Cl an S ve girêdayî ne û nikarin girêdana hîdrojenê çêbikin; di navbera van molekulan de têkiliyên dîpol-dîpol û hêzên London hene. Di navbera molekulên nepolar ên CH4 û CO2 de tenê hêzên London hene."
+        "tr": "I doğrudur: grafikte 6A serisi 3. periyottan 5. periyoda düzenli yükselirken 2. periyottaki H2O (100 °C) bu eğilimin çok üstündedir; O–H bağları nedeniyle su molekülleri arasında hidrojen bağları vardır. II doğrudur: 4A serisi CH4'ten (−161 °C) SnH4'e (−52 °C) sürekli yükselir; bu moleküller apolardır ve elektron sayısı arttıkça London kuvvetleri güçlenir. III yanlıştır: S'ye bağlı H atomu hidrojen bağı yapmaz; H2S (−60 °C) polar olduğundan molekülleri arasında London kuvvetlerine ek olarak dipol-dipol etkileşimleri bulunur, apolar SiH4'te (−112 °C) ise yalnızca London kuvvetleri vardır. Doğru yanıt: I ve II.",
+        "en": "I is correct: on the graph the 6A series rises steadily from period 3 to period 5, while H2O in period 2 (100 °C) lies far above this trend; because of its O–H bonds water molecules form hydrogen bonds. II is correct: the 4A series rises steadily from CH4 (−161 °C) to SnH4 (−52 °C); these molecules are nonpolar and London forces grow as the number of electrons increases. III is false: H bonded to S does not form hydrogen bonds; H2S (−60 °C) is polar, so its molecules have dipole-dipole interactions in addition to London forces, while nonpolar SiH4 (−112 °C) has only London forces. Answer: I and II.",
+        "de": "I ist richtig: Im Diagramm steigt die 6A-Reihe von Periode 3 bis 5 gleichmäßig an, während H2O in Periode 2 (100 °C) weit über diesem Trend liegt; wegen der O–H-Bindungen bilden Wassermoleküle Wasserstoffbrücken. II ist richtig: Die 4A-Reihe steigt von CH4 (−161 °C) bis SnH4 (−52 °C) stetig an; diese Moleküle sind unpolar, und die London-Kräfte nehmen mit der Elektronenzahl zu. III ist falsch: An S gebundener Wasserstoff bildet keine Wasserstoffbrücken; H2S (−60 °C) ist polar, daher wirken zwischen seinen Molekülen zusätzlich zu London-Kräften Dipol-Dipol-Wechselwirkungen, im unpolaren SiH4 (−112 °C) nur London-Kräfte. Antwort: I und II.",
+        "fr": "I est exacte : sur le graphique, la série 6A monte régulièrement de la période 3 à la période 5, tandis que H2O, en période 2 (100 °C), se situe bien au-dessus de cette tendance ; grâce aux liaisons O–H, les molécules d'eau forment des liaisons hydrogène. II est exacte : la série 4A monte régulièrement de CH4 (−161 °C) à SnH4 (−52 °C) ; ces molécules sont apolaires et les forces de London croissent avec le nombre d'électrons. III est fausse : un H lié à S ne forme pas de liaison hydrogène ; H2S (−60 °C) est polaire, ses molécules présentent donc des interactions dipôle-dipôle en plus des forces de London, alors que SiH4 apolaire (−112 °C) n'a que des forces de London. Réponse : I et II.",
+        "ru": "I верно: на графике ряд 6A равномерно растёт от 3-го к 5-му периоду, а H2O во 2-м периоде (100 °C) лежит намного выше этой тенденции; из-за связей O–H между молекулами воды образуются водородные связи. II верно: ряд 4A непрерывно растёт от CH4 (−161 °C) до SnH4 (−52 °C); эти молекулы неполярны, и с ростом числа электронов лондоновские силы усиливаются. III неверно: атом H, связанный с S, водородных связей не образует; H2S (−60 °C) полярен, поэтому между его молекулами помимо лондоновских сил действуют диполь-дипольные, а в неполярном SiH4 (−112 °C) — только лондоновские. Ответ: I и II.",
+        "ar": "العبارة I صحيحة: في الرسم ترتفع سلسلة 6A بانتظام من الدورة 3 إلى الدورة 5، بينما يقع H2O في الدورة 2 (100 °C) أعلى بكثير من هذا الاتجاه؛ فبسبب روابط O–H تتكوّن روابط هيدروجينية بين جزيئات الماء. العبارة II صحيحة: ترتفع سلسلة 4A باستمرار من CH4 (−161 °C) إلى SnH4 (−52 °C)؛ وهذه الجزيئات غير قطبية وتقوى قوى لندن بازدياد عدد الإلكترونات. العبارة III خاطئة: ذرة H المرتبطة بـ S لا تكوّن روابط هيدروجينية؛ H2S (−60 °C) قطبي فتوجد بين جزيئاته تآثرات ثنائي القطب–ثنائي القطب إضافةً إلى قوى لندن، أما SiH4 غير القطبي (−112 °C) فليس فيه إلا قوى لندن. الإجابة: I و II.",
+        "zh": "I 正确：图中 6A 系列从第 3 周期到第 5 周期平稳上升，而第 2 周期的 H2O（100 °C）远高于这一趋势；由于 O–H 键，水分子之间形成氢键。II 正确：4A 系列从 CH4（−161 °C）到 SnH4（−52 °C）持续升高；这些分子是非极性的，电子数越多色散力越强。III 错误：与 S 相连的 H 不形成氢键；H2S（−60 °C）是极性分子，分子间除色散力外还有偶极-偶极力，而非极性的 SiH4（−112 °C）只有色散力。答案：I 和 II。",
+        "ku": "I rast e: di grafîkê de rêza 6A ji periyoda 3. heta 5. bi rêkûpêkî bilind dibe, lê H2O ya di periyoda 2. de (100 °C) gelek li ser vê meylê ye; ji ber girêdanên O–H di navbera molekulên avê de girêdanên hîdrojenê hene. II rast e: rêza 4A ji CH4 (−161 °C) heta SnH4 (−52 °C) bi berdewamî bilind dibe; ev molekul nepolar in û her ku hejmara elektronan zêde dibe hêzên London xurt dibin. III şaş e: H ya bi S ve girêdayî girêdana hîdrojenê çênake; H2S (−60 °C) polar e, ji ber vê di navbera molekulên wê de ji bilî hêzên London têkiliyên dîpol-dîpol jî hene, di SiH4 ya nepolar (−112 °C) de jî tenê hêzên London hene. Bersiv: I û II."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Periyot",
+          "en": "Period",
+          "de": "Periode",
+          "fr": "Période",
+          "ru": "Период",
+          "ar": "الدورة",
+          "zh": "周期",
+          "ku": "Periyod"
+        },
+        "yLabel": {
+          "tr": "Kaynama noktası (°C)",
+          "en": "Boiling point (°C)",
+          "de": "Siedepunkt (°C)",
+          "fr": "T. d'ébullition (°C)",
+          "ru": "Т. кипения (°C)",
+          "ar": "درجة الغليان (°C)",
+          "zh": "沸点 (°C)",
+          "ku": "Xala kelînê (°C)"
+        },
+        "xMin": 1.5,
+        "xMax": 5.6,
+        "yMin": -180,
+        "yMax": 125,
+        "xTicks": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "yTicks": [
+          -150,
+          -100,
+          -50,
+          0,
+          50,
+          100
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                2,
+                -161.5
+              ],
+              [
+                3,
+                -112
+              ],
+              [
+                4,
+                -88
+              ],
+              [
+                5,
+                -52
+              ]
+            ],
+            "label": "4A",
+            "tone": 0
+          },
+          {
+            "points": [
+              [
+                2,
+                100
+              ],
+              [
+                3,
+                -60
+              ],
+              [
+                4,
+                -41
+              ],
+              [
+                5,
+                -2
+              ]
+            ],
+            "label": "6A",
+            "tone": 1
+          }
+        ],
+        "markers": [
+          {
+            "x": 2,
+            "y": 100,
+            "label": "H₂O"
+          },
+          {
+            "x": 3,
+            "y": -60,
+            "label": "H₂S"
+          },
+          {
+            "x": 2,
+            "y": -161.5,
+            "label": "CH₄"
+          },
+          {
+            "x": 3,
+            "y": -112,
+            "label": "SiH₄"
+          }
+        ]
       }
     },
     {
       "id": "u03-twin02",
       "stem": {
-        "tr": "NaCl katısının suda çözünmesi sırasında su molekülleri ile Na+ iyonları arasında oluşan etkileşim türü hangisidir?",
-        "en": "What type of interaction occurs between water molecules and Na+ ions during the dissolution of NaCl solid in water?",
-        "de": "Welche Art von Wechselwirkung tritt zwischen Wassermolekülen und Na+-Ionen während der Auflösung von NaCl-Feststoff in Wasser auf?",
-        "fr": "Quel type d'interaction se produit entre les molécules d'eau et les ions Na+ lors de la dissolution du solide NaCl dans l'eau ?",
-        "ru": "Какое взаимодействие возникает между молекулами воды и ионами Na+ при растворении твёрдого NaCl в воде?",
-        "ar": "ما نوع التآثر الذي ينشأ بين جزيئات الماء وأيونات Na+ في أثناء ذوبان NaCl الصلب في الماء؟",
-        "zh": "NaCl 固体溶于水时，水分子与 Na+ 之间形成的是哪种相互作用？",
-        "ku": "Dema NaCl ya hişk di avê de dihele, di navbera molekulên avê û îyonên Na+ de kîjan cure têkilî çêdibe?"
+        "tr": "Şekilde NaCl'nin sulu çözeltisindeki bazı tanecikler ve aralarındaki a, b ve c etkileşimleri kesikli çizgilerle gösterilmiştir.\na, b ve c etkileşimlerinin türleri aşağıdakilerin hangisinde doğru verilmiştir?",
+        "en": "The figure shows some particles in an aqueous NaCl solution and the interactions a, b and c between them as dashed lines.\nIn which option are the types of interactions a, b and c given correctly?",
+        "de": "Die Abbildung zeigt einige Teilchen in einer wässrigen NaCl-Lösung und die Wechselwirkungen a, b und c zwischen ihnen als gestrichelte Linien.\nIn welcher Antwort sind die Arten der Wechselwirkungen a, b und c richtig angegeben?",
+        "fr": "La figure montre quelques particules d'une solution aqueuse de NaCl et les interactions a, b et c entre elles, représentées en pointillés.\nDans quelle proposition les types des interactions a, b et c sont-ils correctement indiqués ?",
+        "ru": "На рисунке показаны некоторые частицы водного раствора NaCl и взаимодействия a, b и c между ними (пунктир).\nВ каком варианте верно указаны виды взаимодействий a, b и c?",
+        "ar": "يبيّن الشكل بعض الجسيمات في محلول NaCl المائي، والتآثرات a وb وc بينها بخطوط متقطعة.\nفي أيّ الخيارات الآتية أُعطيت أنواع التآثرات a وb وc بشكل صحيح؟",
+        "zh": "图中画出了 NaCl 水溶液中的一些粒子，以及它们之间用虚线表示的相互作用 a、b、c。\n下列哪一项正确给出了相互作用 a、b、c 的类型？",
+        "ku": "Di şiklê de hin perçeyên di çareseriya avî ya NaCl de û têkiliyên a, b û c yên di navbera wan de bi xetên qutqutî hatine nîşandan.\nCureyên têkiliyên a, b û c di kîjan vebijarkê de rast hatine dayîn?"
       },
       "options": [
         {
-          "tr": "İyon-dipol",
-          "en": "ion-dipole",
-          "de": "Ionendipol",
-          "fr": "ion-dipôle",
-          "ru": "Ион-дипольное взаимодействие",
-          "ar": "أيون–ثنائي القطب",
-          "zh": "离子-偶极作用",
-          "ku": "Îyon-dîpol"
+          "tr": "a: iyon-dipol, b: iyon-dipol, c: hidrojen bağı",
+          "en": "a: ion-dipole, b: ion-dipole, c: hydrogen bond",
+          "de": "a: Ion-Dipol, b: Ion-Dipol, c: Wasserstoffbrücke",
+          "fr": "a : ion-dipôle, b : ion-dipôle, c : liaison hydrogène",
+          "ru": "a: ион-диполь, b: ион-диполь, c: водородная связь",
+          "ar": "a: أيون–ثنائي القطب، b: أيون–ثنائي القطب، c: رابطة هيدروجينية",
+          "zh": "a：离子-偶极，b：离子-偶极，c：氢键",
+          "ku": "a: îyon-dîpol, b: îyon-dîpol, c: girêdana hîdrojenê"
         },
         {
-          "tr": "London",
-          "en": "London",
-          "de": "London",
-          "fr": "London",
-          "ru": "Лондоновские силы",
-          "ar": "قوى لندن",
-          "zh": "色散力",
-          "ku": "London"
+          "tr": "a: iyon-dipol, b: hidrojen bağı, c: dipol-dipol",
+          "en": "a: ion-dipole, b: hydrogen bond, c: dipole-dipole",
+          "de": "a: Ion-Dipol, b: Wasserstoffbrücke, c: Dipol-Dipol",
+          "fr": "a : ion-dipôle, b : liaison hydrogène, c : dipôle-dipôle",
+          "ru": "a: ион-диполь, b: водородная связь, c: диполь-диполь",
+          "ar": "a: أيون–ثنائي القطب، b: رابطة هيدروجينية، c: ثنائي القطب–ثنائي القطب",
+          "zh": "a：离子-偶极，b：氢键，c：偶极-偶极",
+          "ku": "a: îyon-dîpol, b: girêdana hîdrojenê, c: dîpol-dîpol"
         },
         {
-          "tr": "Kovalent bağ",
-          "en": "covalent bond",
-          "de": "kovalente Bindung",
-          "fr": "liaison covalente",
-          "ru": "Ковалентная связь",
-          "ar": "الرابطة التساهمية",
-          "zh": "共价键",
-          "ku": "Girêdana kovalent"
+          "tr": "a: iyonik bağ, b: iyonik bağ, c: kovalent bağ",
+          "en": "a: ionic bond, b: ionic bond, c: covalent bond",
+          "de": "a: Ionenbindung, b: Ionenbindung, c: kovalente Bindung",
+          "fr": "a : liaison ionique, b : liaison ionique, c : liaison covalente",
+          "ru": "a: ионная связь, b: ионная связь, c: ковалентная связь",
+          "ar": "a: رابطة أيونية، b: رابطة أيونية، c: رابطة تساهمية",
+          "zh": "a：离子键，b：离子键，c：共价键",
+          "ku": "a: girêdana îyonîk, b: girêdana îyonîk, c: girêdana kovalent"
         },
         {
-          "tr": "Apolar bağ",
-          "en": "nonpolar bond",
-          "de": "unpolare Bindung",
-          "fr": "liaison non polaire",
-          "ru": "Неполярная связь",
-          "ar": "الرابطة غير القطبية",
-          "zh": "非极性键",
-          "ku": "Girêdana nepolar"
+          "tr": "a: dipol-dipol, b: iyon-dipol, c: London kuvveti",
+          "en": "a: dipole-dipole, b: ion-dipole, c: London force",
+          "de": "a: Dipol-Dipol, b: Ion-Dipol, c: London-Kraft",
+          "fr": "a : dipôle-dipôle, b : ion-dipôle, c : force de London",
+          "ru": "a: диполь-диполь, b: ион-диполь, c: лондоновская сила",
+          "ar": "a: ثنائي القطب–ثنائي القطب، b: أيون–ثنائي القطب، c: قوة لندن",
+          "zh": "a：偶极-偶极，b：离子-偶极，c：色散力",
+          "ku": "a: dîpol-dîpol, b: îyon-dîpol, c: hêza London"
         },
         {
-          "tr": "Hidrojen bağı",
-          "en": "hydrogen bond",
-          "de": "Wasserstoffbindung",
-          "fr": "liaison hydrogène",
-          "ru": "Водородная связь",
-          "ar": "الرابطة الهيدروجينية",
-          "zh": "氢键",
-          "ku": "Girêdana hîdrojenê"
+          "tr": "a: iyonik bağ, b: iyon-dipol, c: dipol-dipol",
+          "en": "a: ionic bond, b: ion-dipole, c: dipole-dipole",
+          "de": "a: Ionenbindung, b: Ion-Dipol, c: Dipol-Dipol",
+          "fr": "a : liaison ionique, b : ion-dipôle, c : dipôle-dipôle",
+          "ru": "a: ионная связь, b: ион-диполь, c: диполь-диполь",
+          "ar": "a: رابطة أيونية، b: أيون–ثنائي القطب، c: ثنائي القطب–ثنائي القطب",
+          "zh": "a：离子键，b：离子-偶极，c：偶极-偶极",
+          "ku": "a: girêdana îyonîk, b: îyon-dîpol, c: dîpol-dîpol"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Na+ bir iyon, su ise polar bir moleküldür. Na+ iyonu, su molekülünün kısmi negatif yüklü oksijen ucunu çeker; bir iyon ile polar bir molekül arasındaki bu çekim iyon-dipol etkileşimidir. Bu etkileşim hidrojen bağı değildir; çünkü çekim, H atomu ile F, O veya N arasında değil, iyonun yükü ile suyun oksijen ucu arasındadır. Elektron ortaklaşması olmadığından kovalent bağ da değildir.",
-        "en": "Na+ is an ion and water is a polar molecule. The Na+ ion attracts the partially negative oxygen end of the water molecule; this attraction between an ion and a polar molecule is an ion-dipole interaction. It is not a hydrogen bond, because the attraction is not between an H atom and F, O or N but between the charge of the ion and the oxygen end of water. No electrons are shared, so it is not a covalent bond either.",
-        "de": "Na+ ist ein Ion, Wasser ein polares Molekül. Das Na+-Ion zieht das partiell negative Sauerstoffende des Wassermoleküls an; diese Anziehung zwischen einem Ion und einem polaren Molekül ist eine Ion-Dipol-Wechselwirkung. Es ist keine Wasserstoffbrückenbindung, denn die Anziehung besteht nicht zwischen einem H-Atom und F, O oder N, sondern zwischen der Ladung des Ions und dem Sauerstoffende des Wassers. Da keine Elektronen geteilt werden, ist es auch keine kovalente Bindung.",
-        "fr": "Na+ est un ion et l'eau une molécule polaire. L'ion Na+ attire l'extrémité oxygène, partiellement négative, de la molécule d'eau ; cette attraction entre un ion et une molécule polaire est une interaction ion-dipôle. Ce n'est pas une liaison hydrogène, car l'attraction ne s'exerce pas entre un atome H et F, O ou N, mais entre la charge de l'ion et l'extrémité oxygène de l'eau. Aucun électron n'étant mis en commun, ce n'est pas non plus une liaison covalente.",
-        "ru": "Na+ — ион, а вода — полярная молекула. Ион Na+ притягивает частично отрицательный кислородный конец молекулы воды; такое притяжение между ионом и полярной молекулой — ион-дипольное взаимодействие. Это не водородная связь: притяжение возникает не между атомом H и F, O или N, а между зарядом иона и кислородным концом молекулы воды. Электроны не обобществляются, поэтому это и не ковалентная связь.",
-        "ar": "Na+ أيون والماء جزيء قطبي. يجذب أيون Na+ طرف الأكسجين ذا الشحنة السالبة الجزئية في جزيء الماء؛ وهذا التجاذب بين أيون وجزيء قطبي هو تآثر أيون–ثنائي القطب. وهو ليس رابطة هيدروجينية لأن التجاذب ليس بين ذرة H وذرة F أو O أو N بل بين شحنة الأيون وطرف الأكسجين في الماء. ولا تتشارك فيه الذرات الإلكترونات، فليس رابطة تساهمية كذلك.",
-        "zh": "Na+ 是离子，水是极性分子。Na+ 吸引水分子中带部分负电荷的氧端；离子与极性分子之间的这种吸引就是离子-偶极作用。它不是氢键，因为这种吸引不是发生在 H 原子与 F、O 或 N 之间，而是发生在离子的电荷与水的氧端之间。这里没有共用电子，所以也不是共价键。",
-        "ku": "Na+ îyon e, av jî molekuleke polar e. Îyona Na+ aliyê oksîjenê yê molekula avê, ku bara wî qismî neyînî ye, dikişîne; ev kişandina navbera îyonekê û molekuleke polar têkiliya îyon-dîpol e. Ev ne girêdana hîdrojenê ye, ji ber ku kişandin ne di navbera atoma H û F, O an N de, di navbera bara îyonê û aliyê oksîjenê yê avê de ye. Ji ber ku elektron nayên hevparkirin, ne girêdana kovalent jî ye."
+        "tr": "a, Na+ iyonu ile su molekülünün kısmi negatif yüklü O ucu arasındaki; b, Cl- iyonu ile su molekülünün kısmi pozitif yüklü H ucu arasındaki çekimdir. İkisi de bir iyon ile polar bir molekül arasında olduğundan iyon-dipol etkileşimidir. c, bir su molekülünde O'ya bağlı H atomu ile komşu su molekülünün O atomu arasındadır; bu bir hidrojen bağıdır. Çözünme sırasında iyonlar arasındaki iyonik bağlar yenilir; iyonlarla su arasında yeni iyonik ya da kovalent bağ oluşmaz.",
+        "en": "a is the attraction between the Na+ ion and the partially negative O end of a water molecule; b is the attraction between the Cl- ion and the partially positive H end of a water molecule. Both act between an ion and a polar molecule, so both are ion-dipole interactions. c acts between an H atom bonded to O in one water molecule and the O atom of a neighbouring water molecule: a hydrogen bond. During dissolution the ionic bonding between the ions is overcome; no new ionic or covalent bonds form between the ions and water.",
+        "de": "a ist die Anziehung zwischen dem Na+-Ion und dem partiell negativen O-Ende eines Wassermoleküls, b die Anziehung zwischen dem Cl--Ion und dem partiell positiven H-Ende eines Wassermoleküls. Beide wirken zwischen einem Ion und einem polaren Molekül und sind daher Ion-Dipol-Wechselwirkungen. c wirkt zwischen einem an O gebundenen H-Atom eines Wassermoleküls und dem O-Atom eines benachbarten Wassermoleküls: eine Wasserstoffbrücke. Beim Lösen wird die Ionenbindung zwischen den Ionen überwunden; zwischen Ionen und Wasser entstehen keine neuen Ionen- oder kovalenten Bindungen.",
+        "fr": "a est l'attraction entre l'ion Na+ et l'extrémité O partiellement négative d'une molécule d'eau ; b est l'attraction entre l'ion Cl- et l'extrémité H partiellement positive d'une molécule d'eau. Toutes deux s'exercent entre un ion et une molécule polaire : ce sont des interactions ion-dipôle. c s'exerce entre un atome H lié à O dans une molécule d'eau et l'atome O d'une molécule d'eau voisine : c'est une liaison hydrogène. Lors de la dissolution, la liaison ionique entre les ions est rompue ; aucune nouvelle liaison ionique ou covalente ne se forme entre les ions et l'eau.",
+        "ru": "a — притяжение между ионом Na+ и частично отрицательным концом O молекулы воды; b — притяжение между ионом Cl- и частично положительным концом H молекулы воды. Оба действуют между ионом и полярной молекулой, поэтому это ион-дипольные взаимодействия. c действует между атомом H, связанным с O в одной молекуле воды, и атомом O соседней молекулы воды — это водородная связь. При растворении ионная связь между ионами разрушается; новых ионных или ковалентных связей между ионами и водой не образуется.",
+        "ar": "a هو التجاذب بين أيون Na+ وطرف O السالب جزئيًا في جزيء الماء، وb هو التجاذب بين أيون Cl- وطرف H الموجب جزئيًا في جزيء الماء. وكلاهما بين أيون وجزيء قطبي، فهما تآثرا أيون–ثنائي القطب. أما c فبين ذرة H مرتبطة بـ O في جزيء ماء وذرة O في جزيء ماء مجاور، وهي رابطة هيدروجينية. أثناء الذوبان يُتغلَّب على الترابط الأيوني بين الأيونات، ولا تتكوّن روابط أيونية أو تساهمية جديدة بين الأيونات والماء.",
+        "zh": "a 是 Na+ 与水分子带部分负电的 O 端之间的吸引；b 是 Cl- 与水分子带部分正电的 H 端之间的吸引。两者都发生在离子与极性分子之间，属于离子-偶极作用。c 发生在一个水分子中与 O 相连的 H 原子和相邻水分子的 O 原子之间，是氢键。溶解时离子间的离子键被克服，离子与水之间并不形成新的离子键或共价键。",
+        "ku": "a kişandina di navbera îyona Na+ û serê O yê qismî neyînî yê molekula avê de ye; b kişandina di navbera îyona Cl- û serê H yê qismî erênî yê molekula avê de ye. Herdu jî di navbera îyonekê û molekuleke polar de ne, ji ber vê têkiliya îyon-dîpol in. c di navbera atoma H ya bi O ve girêdayî ya molekuleke avê û atoma O ya molekula avê ya cîran de ye; ev girêdana hîdrojenê ye. Di dema helbûnê de girêdana îyonîk a di navbera îyonan de tê bindestkirin; di navbera îyonan û avê de girêdana îyonîk an kovalent a nû çênabe."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 340,
+        "height": 192,
+        "markup": "<circle cx=\"55\" cy=\"70\" r=\"22\" class=\"qf-fill\"/><text x=\"55\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">Na⁺</text><circle cx=\"153\" cy=\"54\" r=\"9\" class=\"qf-fill\"/><text x=\"153\" y=\"58\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"153\" cy=\"86\" r=\"9\" class=\"qf-fill\"/><text x=\"153\" y=\"90\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"135\" cy=\"70\" r=\"13\" class=\"qf-fill\"/><text x=\"135\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">O</text><line x1=\"78\" y1=\"70\" x2=\"121\" y2=\"70\" class=\"qf-dash\"/><text x=\"100\" y=\"61\" text-anchor=\"middle\" class=\"qf-big\">a</text><circle cx=\"302\" cy=\"70\" r=\"26\" class=\"qf-fill\"/><text x=\"302\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">Cl⁻</text><circle cx=\"205\" cy=\"52\" r=\"9\" class=\"qf-fill\"/><text x=\"205\" y=\"56\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"218\" cy=\"70\" r=\"13\" class=\"qf-fill\"/><text x=\"218\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">O</text><circle cx=\"238\" cy=\"70\" r=\"9\" class=\"qf-fill\"/><text x=\"238\" y=\"74\" text-anchor=\"middle\" class=\"qf-small\">H</text><line x1=\"248\" y1=\"70\" x2=\"275\" y2=\"70\" class=\"qf-dash\"/><text x=\"261\" y=\"61\" text-anchor=\"middle\" class=\"qf-big\">b</text><circle cx=\"103\" cy=\"143\" r=\"9\" class=\"qf-fill\"/><text x=\"103\" y=\"147\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"115\" cy=\"160\" r=\"13\" class=\"qf-fill\"/><text x=\"115\" y=\"164\" text-anchor=\"middle\" class=\"qf-strong\">O</text><circle cx=\"135\" cy=\"160\" r=\"9\" class=\"qf-fill\"/><text x=\"135\" y=\"164\" text-anchor=\"middle\" class=\"qf-small\">H</text><line x1=\"145\" y1=\"160\" x2=\"181\" y2=\"160\" class=\"qf-dash\"/><circle cx=\"195\" cy=\"160\" r=\"13\" class=\"qf-fill\"/><text x=\"195\" y=\"164\" text-anchor=\"middle\" class=\"qf-strong\">O</text><circle cx=\"211\" cy=\"175\" r=\"9\" class=\"qf-fill\"/><text x=\"211\" y=\"179\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"211\" cy=\"145\" r=\"9\" class=\"qf-fill\"/><text x=\"211\" y=\"149\" text-anchor=\"middle\" class=\"qf-small\">H</text><text x=\"163\" y=\"151\" text-anchor=\"middle\" class=\"qf-big\">c</text>"
       }
     },
     {
@@ -1808,153 +1923,220 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin11",
       "stem": {
-        "tr": "Bazı elementlerin elektronegatiflik değerleri şöyledir: H: 2,1; C: 2,5; N: 3,0; O: 3,5; F: 4,0. Buna göre aşağıdaki kovalent bağlardan hangisinin polarlığı en azdır?",
-        "en": "The electronegativities of some elements are: H 2.1; C 2.5; N 3.0; O 3.5; F 4.0. Which of the following covalent bonds is the least polar?",
-        "de": "Die Elektronegativitäten einiger Elemente: H 2,1; C 2,5; N 3,0; O 3,5; F 4,0. Welche der folgenden kovalenten Bindungen ist am wenigsten polar?",
-        "fr": "Électronégativités de quelques éléments : H 2,1 ; C 2,5 ; N 3,0 ; O 3,5 ; F 4,0. Laquelle des liaisons covalentes suivantes est la moins polaire ?",
-        "ru": "Электроотрицательности некоторых элементов: H 2,1; C 2,5; N 3,0; O 3,5; F 4,0. Какая из следующих ковалентных связей наименее полярна?",
-        "ar": "قيم السالبية الكهربائية لبعض العناصر: H ‏2.1؛ C ‏2.5؛ N ‏3.0؛ O ‏3.5؛ F ‏4.0. أيّ الروابط التساهمية الآتية أقلها قطبية؟",
-        "zh": "部分元素的电负性为：H 2.1；C 2.5；N 3.0；O 3.5；F 4.0。下列共价键中极性最小的是哪一个？",
-        "ku": "Nirxên elektronegatîfiyê yên hin elementan ev in: H: 2,1; C: 2,5; N: 3,0; O: 3,5; F: 4,0. Li gorî vê, polarbûna kîjan ji van girêdanên kovalent herî kêm e?"
+        "tr": "Tabloda bazı elementlerin elektronegatiflik değerleri verilmiştir.\nTablodaki değerler dikkate alındığında aşağıdaki yargılardan hangileri doğrudur?\nI. C–H bağı, O–H bağından daha az polardır.\nII. N–H bağının polarlığı, C–O bağınınkinden büyüktür.\nIII. Tablodaki iki element arasında oluşabilecek bağlar içinde iyonik karakteri en büyük olan, Na ile F arasındaki bağdır.",
+        "en": "The table gives the electronegativity values of some elements.\nTaking these values into account, which of the following statements are correct?\nI. The C–H bond is less polar than the O–H bond.\nII. The N–H bond is more polar than the C–O bond.\nIII. Of all bonds that can form between two elements in the table, the bond between Na and F has the greatest ionic character.",
+        "de": "Die Tabelle gibt die Elektronegativitätswerte einiger Elemente an.\nWelche der folgenden Aussagen sind unter Berücksichtigung dieser Werte richtig?\nI. Die C–H-Bindung ist weniger polar als die O–H-Bindung.\nII. Die N–H-Bindung ist polarer als die C–O-Bindung.\nIII. Von allen Bindungen, die sich zwischen zwei Elementen der Tabelle bilden können, hat die Bindung zwischen Na und F den größten ionischen Charakter.",
+        "fr": "Le tableau donne les électronégativités de quelques éléments.\nCompte tenu de ces valeurs, lesquelles des affirmations suivantes sont exactes ?\nI. La liaison C–H est moins polaire que la liaison O–H.\nII. La liaison N–H est plus polaire que la liaison C–O.\nIII. Parmi toutes les liaisons possibles entre deux éléments du tableau, celle entre Na et F a le plus grand caractère ionique.",
+        "ru": "В таблице приведены значения электроотрицательности некоторых элементов.\nКакие из утверждений верны с учётом этих значений?\nI. Связь C–H менее полярна, чем связь O–H.\nII. Связь N–H полярнее связи C–O.\nIII. Из всех связей, которые могут образоваться между двумя элементами таблицы, наибольшую степень ионности имеет связь между Na и F.",
+        "ar": "يبيّن الجدول قيم السالبية الكهربائية لبعض العناصر.\nبالاستناد إلى هذه القيم، أيّ العبارات الآتية صحيحة؟\nI. الرابطة C–H أقل قطبية من الرابطة O–H.\nII. قطبية الرابطة N–H أكبر من قطبية الرابطة C–O.\nIII. من بين جميع الروابط الممكنة بين عنصرين من الجدول، تكون الرابطة بين Na وF هي الأكبر في الصفة الأيونية.",
+        "zh": "表中给出了一些元素的电负性数值。\n根据这些数值，下列说法中正确的是哪些？\nI. C–H 键的极性比 O–H 键小。\nII. N–H 键的极性比 C–O 键大。\nIII. 在表中任意两种元素之间可能形成的键中，Na 与 F 之间的键离子性最强。",
+        "ku": "Di tabloyê de nirxên elektronegatîfiyê yên hin elementan hatine dayîn.\nBi berçavgirtina van nirxan, kîjan ji van hukman rast in?\nI. Girêdana C–H ji girêdana O–H kêmtir polar e.\nII. Polarîteya girêdana N–H ji ya girêdana C–O mezintir e.\nIII. Di nav girêdanên ku dikarin di navbera du elementên tabloyê de çêbin de, girêdana di navbera Na û F de xwedî karaktera îyonîk a herî mezin e."
       },
       "options": [
         {
-          "tr": "O–H",
-          "en": "O–H",
-          "de": "O–H",
-          "fr": "O–H",
-          "ru": "O–H",
-          "ar": "O–H",
-          "zh": "O–H",
-          "ku": "O–H"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "F–H",
-          "en": "F–H",
-          "de": "F–H",
-          "fr": "F–H",
-          "ru": "F–H",
-          "ar": "F–H",
-          "zh": "F–H",
-          "ku": "F–H"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "N–H",
-          "en": "N–H",
-          "de": "N–H",
-          "fr": "N–H",
-          "ru": "N–H",
-          "ar": "N–H",
-          "zh": "N–H",
-          "ku": "N–H"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "C–O",
-          "en": "C–O",
-          "de": "C–O",
-          "fr": "C–O",
-          "ru": "C–O",
-          "ar": "C–O",
-          "zh": "C–O",
-          "ku": "C–O"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "C–H",
-          "en": "C–H",
-          "de": "C–H",
-          "fr": "C–H",
-          "ru": "C–H",
-          "ar": "C–H",
-          "zh": "C–H",
-          "ku": "C–H"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 4,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Bağın polarlığı, bağlı atomların elektronegatiflik farkı arttıkça artar. Farklar: O–H 3,5 − 2,1 = 1,4; F–H 4,0 − 2,1 = 1,9; N–H 3,0 − 2,1 = 0,9; C–O 3,5 − 2,5 = 1,0; C–H 2,5 − 2,1 = 0,4. En küçük fark C–H bağındadır, bu yüzden en az polar bağ C–H'dir. F–H ise en polar bağdır.",
-        "en": "Bond polarity increases with the electronegativity difference of the bonded atoms. Differences: O–H 3.5 − 2.1 = 1.4; F–H 4.0 − 2.1 = 1.9; N–H 3.0 − 2.1 = 0.9; C–O 3.5 − 2.5 = 1.0; C–H 2.5 − 2.1 = 0.4. The smallest difference is in C–H, so C–H is the least polar bond; F–H is the most polar.",
-        "de": "Die Bindungspolarität steigt mit der Elektronegativitätsdifferenz. Differenzen: O–H 3,5 − 2,1 = 1,4; F–H 4,0 − 2,1 = 1,9; N–H 3,0 − 2,1 = 0,9; C–O 3,5 − 2,5 = 1,0; C–H 2,5 − 2,1 = 0,4. Die kleinste Differenz hat C–H, sie ist am wenigsten polar; F–H ist am polarsten.",
-        "fr": "La polarité d'une liaison augmente avec la différence d'électronégativité. Différences : O–H 3,5 − 2,1 = 1,4 ; F–H 4,0 − 2,1 = 1,9 ; N–H 3,0 − 2,1 = 0,9 ; C–O 3,5 − 2,5 = 1,0 ; C–H 2,5 − 2,1 = 0,4. La plus petite différence est pour C–H, la liaison la moins polaire ; F–H est la plus polaire.",
-        "ru": "Полярность связи растёт с разностью электроотрицательностей. Разности: O–H 3,5 − 2,1 = 1,4; F–H 4,0 − 2,1 = 1,9; N–H 3,0 − 2,1 = 0,9; C–O 3,5 − 2,5 = 1,0; C–H 2,5 − 2,1 = 0,4. Наименьшая разность у C–H, поэтому эта связь наименее полярна; F–H — самая полярная.",
-        "ar": "تزداد قطبية الرابطة بازدياد فرق السالبية الكهربائية بين الذرتين. الفروق: O–H ‏3.5 − 2.1 = 1.4؛ F–H ‏4.0 − 2.1 = 1.9؛ N–H ‏3.0 − 2.1 = 0.9؛ C–O ‏3.5 − 2.5 = 1.0؛ C–H ‏2.5 − 2.1 = 0.4. أصغر فرق في C–H فهي الأقل قطبية، وF–H الأكثر قطبية.",
-        "zh": "键的极性随成键原子电负性差的增大而增大。差值：O–H 3.5 − 2.1 = 1.4；F–H 4.0 − 2.1 = 1.9；N–H 3.0 − 2.1 = 0.9；C–O 3.5 − 2.5 = 1.0；C–H 2.5 − 2.1 = 0.4。C–H 的差值最小，极性最小；F–H 极性最大。",
-        "ku": "Polarbûna girêdanê her ku cudahiya elektronegatîfiyê ya atomên girêdayî zêde dibe, zêde dibe. Cudahî: O–H 3,5 − 2,1 = 1,4; F–H 4,0 − 2,1 = 1,9; N–H 3,0 − 2,1 = 0,9; C–O 3,5 − 2,5 = 1,0; C–H 2,5 − 2,1 = 0,4. Cudahiya herî piçûk di girêdana C–H de ye, loma girêdana herî kêm polar C–H ye. F–H jî girêdana herî polar e."
+        "tr": "Bağın polarlığı ve iyonik karakteri, bağlı atomların elektronegatiflik farkı arttıkça artar. I: C–H farkı 2,5 − 2,1 = 0,4; O–H farkı 3,5 − 2,1 = 1,4; C–H daha az polardır (doğru). II: N–H farkı 3,0 − 2,1 = 0,9; C–O farkı 3,5 − 2,5 = 1,0; N–H bağı C–O bağından daha az polardır (yanlış). III: en büyük fark, elektronegatifliği en küçük Na (0,9) ile en büyük F (4,0) arasındadır: 3,1; Na–F bağının iyonik karakteri en büyüktür (doğru). Doğru yanıt: I ve III.",
+        "en": "Bond polarity and ionic character increase with the electronegativity difference of the bonded atoms. I: C–H difference 2.5 − 2.1 = 0.4, O–H difference 3.5 − 2.1 = 1.4, so C–H is less polar (correct). II: N–H difference 3.0 − 2.1 = 0.9, C–O difference 3.5 − 2.5 = 1.0, so N–H is less polar than C–O (false). III: the largest difference is between Na, the least electronegative (0.9), and F, the most electronegative (4.0): 3.1, so the Na–F bond has the greatest ionic character (correct). Answer: I and III.",
+        "de": "Polarität und ionischer Charakter einer Bindung steigen mit der Elektronegativitätsdifferenz der gebundenen Atome. I: C–H 2,5 − 2,1 = 0,4; O–H 3,5 − 2,1 = 1,4; C–H ist weniger polar (richtig). II: N–H 3,0 − 2,1 = 0,9; C–O 3,5 − 2,5 = 1,0; N–H ist weniger polar als C–O (falsch). III: Die größte Differenz besteht zwischen Na mit der kleinsten (0,9) und F mit der größten Elektronegativität (4,0): 3,1; die Na–F-Bindung hat den größten ionischen Charakter (richtig). Antwort: I und III.",
+        "fr": "La polarité et le caractère ionique d'une liaison augmentent avec la différence d'électronégativité des atomes liés. I : C–H 2,5 − 2,1 = 0,4 ; O–H 3,5 − 2,1 = 1,4 ; C–H est moins polaire (exacte). II : N–H 3,0 − 2,1 = 0,9 ; C–O 3,5 − 2,5 = 1,0 ; N–H est moins polaire que C–O (fausse). III : la plus grande différence est entre Na, le moins électronégatif (0,9), et F, le plus électronégatif (4,0) : 3,1 ; la liaison Na–F a le plus grand caractère ionique (exacte). Réponse : I et III.",
+        "ru": "Полярность и степень ионности связи растут с разностью электроотрицательностей связанных атомов. I: C–H 2,5 − 2,1 = 0,4; O–H 3,5 − 2,1 = 1,4; C–H менее полярна (верно). II: N–H 3,0 − 2,1 = 0,9; C–O 3,5 − 2,5 = 1,0; N–H менее полярна, чем C–O (неверно). III: наибольшая разность — между Na с наименьшей (0,9) и F с наибольшей (4,0) электроотрицательностью: 3,1; связь Na–F имеет наибольшую ионность (верно). Ответ: I и III.",
+        "ar": "تزداد قطبية الرابطة وصفتها الأيونية بازدياد فرق السالبية الكهربائية بين الذرتين المرتبطتين. I: فرق C–H هو 2.5 − 2.1 = 0.4، وفرق O–H هو 3.5 − 2.1 = 1.4، فـ C–H أقل قطبية (صحيحة). II: فرق N–H هو 3.0 − 2.1 = 0.9، وفرق C–O هو 3.5 − 2.5 = 1.0، فـ N–H أقل قطبية من C–O (خاطئة). III: أكبر فرق بين Na الأقل سالبيةً كهربائيةً (0.9) وF الأعلى (4.0) وهو 3.1، فالرابطة Na–F هي الأكبر في الصفة الأيونية (صحيحة). الإجابة: I و III.",
+        "zh": "键的极性和离子性随成键原子电负性差的增大而增大。I：C–H 差 2.5 − 2.1 = 0.4，O–H 差 3.5 − 2.1 = 1.4，C–H 极性较小（正确）。II：N–H 差 3.0 − 2.1 = 0.9，C–O 差 3.5 − 2.5 = 1.0，N–H 的极性比 C–O 小（错误）。III：电负性最小的 Na（0.9）与最大的 F（4.0）之差最大，为 3.1，Na–F 键离子性最强（正确）。答案：I 和 III。",
+        "ku": "Polarîte û karaktera îyonîk a girêdanê her ku ferqa elektronegatîfiyê ya atomên girêdayî zêde dibe, zêde dibin. I: ferqa C–H 2,5 − 2,1 = 0,4; ferqa O–H 3,5 − 2,1 = 1,4; C–H kêmtir polar e (rast). II: ferqa N–H 3,0 − 2,1 = 0,9; ferqa C–O 3,5 − 2,5 = 1,0; N–H ji C–O kêmtir polar e (şaş). III: ferqa herî mezin di navbera Na ya bi elektronegatîfiya herî biçûk (0,9) û F ya bi ya herî mezin (4,0) de ye: 3,1; karaktera îyonîk a girêdana Na–F herî mezin e (rast). Bersiv: I û III."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Element",
+            "en": "Element",
+            "de": "Element",
+            "fr": "Élément",
+            "ru": "Элемент",
+            "ar": "العنصر",
+            "zh": "元素",
+            "ku": "Element"
+          },
+          {
+            "tr": "Elektronegatiflik",
+            "en": "Electronegativity",
+            "de": "Elektronegativität",
+            "fr": "Électronégativité",
+            "ru": "Электроотрицательность",
+            "ar": "السالبية الكهربائية",
+            "zh": "电负性",
+            "ku": "Elektronegatîfî"
+          }
+        ],
+        "rows": [
+          [
+            "H",
+            "2,1"
+          ],
+          [
+            "C",
+            "2,5"
+          ],
+          [
+            "N",
+            "3,0"
+          ],
+          [
+            "O",
+            "3,5"
+          ],
+          [
+            "F",
+            "4,0"
+          ],
+          [
+            "Na",
+            "0,9"
+          ]
+        ]
       }
     },
     {
       "id": "u03-twin12",
       "stem": {
-        "tr": "Bakır, elektrik kablolarında yaygın olarak kullanılır. Bakırın elektriği iyi iletmesinin nedeni aşağıdakilerden hangisidir?",
-        "en": "Copper is widely used in electrical wiring. Why does copper conduct electricity well?",
-        "de": "Kupfer wird häufig für elektrische Leitungen verwendet. Warum leitet Kupfer den Strom gut?",
-        "fr": "Le cuivre est très utilisé dans les câbles électriques. Pourquoi conduit-il bien l'électricité ?",
-        "ru": "Медь широко используют для изготовления электрических проводов. Чем объясняется высокая электропроводность меди?",
-        "ar": "يُستخدم النحاس على نطاق واسع في الأسلاك الكهربائية. ما سبب جودة توصيله للكهرباء؟",
-        "zh": "铜被广泛用于电线。铜导电性好的原因是什么？",
-        "ku": "Sifir bi berfirehî di kabloyên elektrîkê de tê bikaranîn. Sedema ku sifir elektrîkê baş diguhezîne kîjan e?"
+        "tr": "Şekilde K, L ve M katılarının tanecik modelleri gösterilmiştir.\nBu katılarla ilgili aşağıdakilerden hangisi doğrudur?",
+        "en": "The figure shows particle models of the solids K, L and M.\nWhich of the following is correct about these solids?",
+        "de": "Die Abbildung zeigt Teilchenmodelle der Feststoffe K, L und M.\nWelche der folgenden Aussagen über diese Feststoffe ist richtig?",
+        "fr": "La figure montre les modèles particulaires des solides K, L et M.\nLaquelle des affirmations suivantes sur ces solides est exacte ?",
+        "ru": "На рисунке показаны модели частиц твёрдых веществ K, L и M.\nКакое утверждение об этих веществах верно?",
+        "ar": "يبيّن الشكل النماذج الجسيمية للمواد الصلبة K وL وM.\nأيّ العبارات الآتية صحيحة بشأن هذه المواد الصلبة؟",
+        "zh": "图中给出了固体 K、L、M 的粒子模型。\n关于这些固体，下列说法正确的是哪一项？",
+        "ku": "Di şiklê de modelên perçeyan ên hişkên K, L û M hatine nîşandan.\nDerbarê van hişkan de kîjan rast e?"
       },
       "options": [
         {
-          "tr": "Metalik bağdaki serbest değerlik elektronlarının metal içinde hareket edebilmesi",
-          "en": "The free valence electrons of the metallic bond can move through the metal",
-          "de": "Die freien Valenzelektronen der Metallbindung können sich im Metall bewegen",
-          "fr": "Les électrons de valence libres de la liaison métallique peuvent se déplacer dans le métal",
-          "ru": "Подвижность свободных валентных электронов металлической связи внутри металла",
-          "ar": "قدرة إلكترونات التكافؤ الحرة في الرابطة الفلزية على الحركة داخل الفلز",
-          "zh": "金属键中的自由价电子能在金属内部移动",
-          "ku": "Elektronên valansê yên azad ên girêdana metalîk dikarin di nav metalê de bilivin"
+          "tr": "K'deki tanecikler, atomlar arasında elektron ortaklaşmasıyla oluşan kovalent bağlarla bir arada tutulur.",
+          "en": "The particles in K are held together by covalent bonds formed by electron sharing between atoms.",
+          "de": "Die Teilchen in K werden durch kovalente Bindungen zusammengehalten, die durch gemeinsame Elektronenpaare entstehen.",
+          "fr": "Les particules de K sont maintenues par des liaisons covalentes formées par mise en commun d'électrons.",
+          "ru": "Частицы в K удерживаются ковалентными связями, образованными общими электронными парами.",
+          "ar": "تتماسك جسيمات K بروابط تساهمية ناتجة عن تشارك الذرات في الإلكترونات.",
+          "zh": "K 中的粒子靠原子间共用电子形成的共价键结合在一起。",
+          "ku": "Perçeyên di K de bi girêdanên kovalent ên ji hevparkirina elektronan çêbûne bi hev ve têne girtin."
         },
         {
-          "tr": "Bakır atomları arasında iyonik bağ bulunması",
-          "en": "There are ionic bonds between copper atoms",
-          "de": "Zwischen Kupferatomen bestehen Ionenbindungen",
-          "fr": "Les atomes de cuivre sont unis par des liaisons ioniques",
-          "ru": "Наличие ионных связей между атомами меди",
-          "ar": "وجود روابط أيونية بين ذرات النحاس",
-          "zh": "铜原子之间存在离子键",
-          "ku": "Di navbera atomên sifirê de girêdana îyonîk heye"
+          "tr": "L katısı hem katı hem de sıvı hâlde elektriği iletir.",
+          "en": "Solid L conducts electricity both as a solid and as a liquid.",
+          "de": "Der Feststoff L leitet den Strom sowohl im festen als auch im flüssigen Zustand.",
+          "fr": "Le solide L conduit l'électricité à l'état solide comme à l'état liquide.",
+          "ru": "Вещество L проводит ток и в твёрдом, и в жидком состоянии.",
+          "ar": "توصل المادة L الكهرباء في الحالتين الصلبة والسائلة.",
+          "zh": "L 在固态和液态时都能导电。",
+          "ku": "Hişka L hem di rewşa hişk hem jî di rewşa şile de elektrîkê diguhezîne."
         },
         {
-          "tr": "Bakırın moleküler yapılı bir katı olması",
-          "en": "Copper is a molecular solid",
-          "de": "Kupfer ist ein molekularer Feststoff",
-          "fr": "Le cuivre est un solide moléculaire",
-          "ru": "Молекулярное строение твёрдой меди",
-          "ar": "كون النحاس مادة صلبة جزيئية",
-          "zh": "铜是分子晶体",
-          "ku": "Sifir madeyeke hişk a molekulî ye"
+          "tr": "K tel ve levha hâline getirilebilir, L ise darbe ile kırılır.",
+          "en": "K can be drawn into wires and hammered into sheets, whereas L shatters when struck.",
+          "de": "K lässt sich zu Draht und Blech formen, L dagegen zerbricht bei einem Schlag.",
+          "fr": "K peut être étiré en fils et laminé en feuilles, tandis que L se brise sous un choc.",
+          "ru": "K можно вытянуть в проволоку и раскатать в лист, а L при ударе раскалывается.",
+          "ar": "يمكن سحب K أسلاكًا وطرقه صفائح، أما L فيتحطّم عند الطَّرق.",
+          "zh": "K 能拉成丝、压成片，而 L 受撞击会碎裂。",
+          "ku": "K dikare bibe têl û pel, lê L bi lêdanê dişkê."
         },
         {
-          "tr": "Bakır atomlarının elektronlarını kovalent bağlarla sıkıca tutması",
-          "en": "Copper atoms hold their electrons tightly in covalent bonds",
-          "de": "Kupferatome halten ihre Elektronen fest in kovalenten Bindungen",
-          "fr": "Les atomes de cuivre retiennent fortement leurs électrons dans des liaisons covalentes",
-          "ru": "Прочное удерживание электронов атомами меди в ковалентных связях",
-          "ar": "إمساك ذرات النحاس بإلكتروناتها بإحكام في روابط تساهمية",
-          "zh": "铜原子通过共价键把电子牢牢束缚住",
-          "ku": "Atomên sifirê elektronên xwe bi girêdanên kovalent bi xurtî digirin"
+          "tr": "M eritilirken moleküllerdeki atomlar arasındaki kovalent bağlar kırılır.",
+          "en": "When M melts, the covalent bonds between the atoms within its molecules are broken.",
+          "de": "Beim Schmelzen von M werden die kovalenten Bindungen zwischen den Atomen in den Molekülen gespalten.",
+          "fr": "Lors de la fusion de M, les liaisons covalentes entre les atomes des molécules sont rompues.",
+          "ru": "При плавлении M разрываются ковалентные связи между атомами внутри молекул.",
+          "ar": "عند صهر M تنكسر الروابط التساهمية بين الذرات داخل الجزيئات.",
+          "zh": "M 熔化时，分子内原子之间的共价键断裂。",
+          "ku": "Dema M dihele, girêdanên kovalent ên di navbera atomên nav molekulan de dişkên."
         },
         {
-          "tr": "Bakır atomları arasında hidrojen bağları bulunması",
-          "en": "There are hydrogen bonds between copper atoms",
-          "de": "Zwischen Kupferatomen bestehen Wasserstoffbrücken",
-          "fr": "Il existe des liaisons hydrogène entre les atomes de cuivre",
-          "ru": "Наличие водородных связей между атомами меди",
-          "ar": "وجود روابط هيدروجينية بين ذرات النحاس",
-          "zh": "铜原子之间存在氢键",
-          "ku": "Di navbera atomên sifirê de girêdanên hîdrojenê hene"
+          "tr": "L'deki tanecikler arasında serbestçe hareket edebilen elektronlar bulunur.",
+          "en": "L contains electrons that can move freely between its particles.",
+          "de": "In L gibt es Elektronen, die sich frei zwischen den Teilchen bewegen können.",
+          "fr": "L contient des électrons qui peuvent se déplacer librement entre ses particules.",
+          "ru": "В L есть электроны, свободно перемещающиеся между частицами.",
+          "ar": "توجد في L إلكترونات تتحرك بحرية بين جسيماتها.",
+          "zh": "L 的粒子之间有可以自由移动的电子。",
+          "ku": "Di L de elektronên ku di navbera perçeyan de bi azadî dilivin hene."
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Bakır gibi metallerde değerlik elektronları belirli bir atoma bağlı değildir; pozitif metal iyonlarının arasında \"elektron denizi\" oluşturur ve uygulanan gerilimle metal içinde kolayca hareket ederek akım taşır. Metal atomları arasında iyonik veya kovalent bağ ya da hidrojen bağı yoktur; elektronları sıkıca tutan yapılar akımı iletmez.",
-        "en": "In metals such as copper the valence electrons are not tied to any one atom; they form an \"electron sea\" among the positive metal ions and, under an applied voltage, move easily through the metal and carry current. There are no ionic, covalent or hydrogen bonds between metal atoms; structures that hold electrons tightly do not conduct.",
-        "de": "In Metallen wie Kupfer sind die Valenzelektronen an kein bestimmtes Atom gebunden; sie bilden zwischen den positiven Metallionen einen „Elektronensee“ und bewegen sich bei angelegter Spannung leicht durch das Metall. Zwischen Metallatomen gibt es keine Ionen-, Atom- oder Wasserstoffbrückenbindungen; Strukturen, die Elektronen fest halten, leiten nicht.",
-        "fr": "Dans les métaux comme le cuivre, les électrons de valence ne sont liés à aucun atome particulier ; ils forment une « mer d'électrons » entre les ions métalliques positifs et, sous une tension, se déplacent facilement dans le métal en transportant le courant. Il n'y a ni liaison ionique, ni covalente, ni hydrogène entre atomes métalliques ; les structures qui retiennent fortement les électrons ne conduisent pas.",
-        "ru": "В металлах, например в меди, валентные электроны не закреплены за отдельными атомами; они образуют «электронное море» между положительными ионами металла и под действием напряжения легко перемещаются, перенося ток. Ионных, ковалентных или водородных связей между атомами металла нет; структуры, прочно удерживающие электроны, ток не проводят.",
-        "ar": "في الفلزات كالنحاس لا ترتبط إلكترونات التكافؤ بذرة معينة، بل تكوّن «بحراً إلكترونياً» بين أيونات الفلز الموجبة، وتتحرك بسهولة داخل الفلز عند تطبيق جهد فتنقل التيار. ولا توجد روابط أيونية أو تساهمية أو هيدروجينية بين ذرات الفلز، والبنى التي تمسك الإلكترونات بإحكام لا توصل التيار.",
-        "zh": "铜等金属中的价电子不属于某个特定原子，而是在金属阳离子之间形成“电子海”，在外加电压下能在金属中自由移动而导电。金属原子之间没有离子键、共价键或氢键；把电子牢牢束缚的结构不能导电。",
-        "ku": "Di metalên wekî sifirê de elektronên valansê bi atomeke diyar ve ne girêdayî ne; di navbera îyonên metal ên erênî de \"deryaya elektronan\" çêdikin û dema voltaj tê sepandin, bi hêsanî di nav metalê de dilivin û herikînê hildigirin. Di navbera atomên metal de girêdana îyonîk, kovalent an girêdana hîdrojenê tune ye; avahiyên ku elektronan bi xurtî digirin herikînê naguhezînin."
+        "tr": "K'de pozitif metal iyonları serbest elektronların oluşturduğu elektron denizi içindedir: metalik katı. Katmanlar kaysa da elektron denizi iyonları bir arada tuttuğundan tel ve levha hâline getirilebilir. L'de katyon ve anyonlar düzenli dizilmiştir: iyonik katı. Darbe ile katmanlar kayınca aynı yüklü iyonlar karşı karşıya gelir ve itme kristali kırar; katı hâlde iyonlar yerinden ayrılamadığı için elektriği yalnızca sıvı hâlde ve sulu çözeltide iletir, serbest elektronu yoktur. M iki atomlu moleküllerden oluşan moleküler katıdır; erirken yalnızca moleküller arası zayıf etkileşimler yenilir, molekül içindeki kovalent bağlar kırılmaz. K'de kovalent bağ yoktur.",
+        "en": "In K, positive metal ions sit in a sea of free electrons: a metallic solid. Even when layers slide, the electron sea holds the ions together, so it can be drawn into wires and hammered into sheets. In L, cations and anions are arranged regularly: an ionic solid. When struck, layers slide, ions of the same charge face each other and the repulsion shatters the crystal; since its ions cannot leave their places in the solid, it conducts only when molten or in solution, and it has no free electrons. M is a molecular solid made of diatomic molecules; on melting only the weak intermolecular forces are overcome, the covalent bonds inside the molecules are not broken. There are no covalent bonds in K.",
+        "de": "In K befinden sich positive Metallionen in einem Meer freier Elektronen: ein metallischer Feststoff. Auch wenn Schichten gleiten, hält das Elektronengas die Ionen zusammen; deshalb lässt er sich zu Draht und Blech formen. In L sind Kationen und Anionen regelmäßig angeordnet: ein Ionenkristall. Bei einem Schlag verschieben sich die Schichten, gleich geladene Ionen stehen sich gegenüber und die Abstoßung zerbricht den Kristall; da die Ionen im Feststoff ortsfest sind, leitet er nur als Schmelze oder in Lösung und besitzt keine freien Elektronen. M ist ein Molekülkristall aus zweiatomigen Molekülen; beim Schmelzen werden nur die schwachen zwischenmolekularen Kräfte überwunden, die kovalenten Bindungen in den Molekülen bleiben erhalten. In K gibt es keine kovalenten Bindungen.",
+        "fr": "Dans K, des ions métalliques positifs baignent dans une mer d'électrons libres : solide métallique. Même si les couches glissent, la mer d'électrons maintient les ions ensemble ; il peut donc être étiré en fils et laminé en feuilles. Dans L, cations et anions sont disposés régulièrement : solide ionique. Sous un choc, les couches glissent, des ions de même charge se font face et la répulsion brise le cristal ; ses ions étant fixes à l'état solide, il ne conduit qu'à l'état fondu ou en solution et ne possède pas d'électrons libres. M est un solide moléculaire formé de molécules diatomiques ; à la fusion, seules les faibles interactions intermoléculaires sont vaincues, les liaisons covalentes internes aux molécules ne sont pas rompues. Il n'y a pas de liaisons covalentes dans K.",
+        "ru": "В K положительные ионы металла находятся в «море» свободных электронов — металлическое вещество. Даже при сдвиге слоёв электронный газ удерживает ионы вместе, поэтому его можно вытянуть в проволоку и раскатать в лист. В L катионы и анионы расположены упорядоченно — ионный кристалл. При ударе слои сдвигаются, одноимённые ионы оказываются друг против друга, и отталкивание раскалывает кристалл; в твёрдом виде ионы неподвижны, поэтому ток проводится только в расплаве и растворе, свободных электронов нет. M — молекулярный кристалл из двухатомных молекул; при плавлении преодолеваются лишь слабые межмолекулярные силы, ковалентные связи внутри молекул не разрываются. В K ковалентных связей нет.",
+        "ar": "في K أيونات فلزية موجبة داخل بحر من الإلكترونات الحرة: مادة صلبة فلزية. وحتى عند انزلاق الطبقات يبقي بحر الإلكترونات الأيونات متماسكة، لذا يمكن سحبها أسلاكًا وطرقها صفائح. وفي L تنتظم الكاتيونات والأنيونات بترتيب منتظم: مادة صلبة أيونية. عند الطَّرق تنزلق الطبقات فتتقابل الأيونات المتشابهة الشحنة ويحطّم التنافرُ البلورةَ؛ ولأن الأيونات ثابتة في الحالة الصلبة فهي لا توصل الكهرباء إلا مصهورة أو في المحلول، ولا توجد فيها إلكترونات حرة. أما M فمادة صلبة جزيئية من جزيئات ثنائية الذرة؛ عند انصهارها يُتغلَّب على التآثرات الضعيفة بين الجزيئات فقط ولا تنكسر الروابط التساهمية داخل الجزيئات. ولا توجد روابط تساهمية في K.",
+        "zh": "K 中金属阳离子处在自由电子形成的“电子海”中：金属晶体。即使原子层滑动，电子海仍把离子维系在一起，因此能拉成丝、压成片。L 中阳离子和阴离子规则排列：离子晶体。受撞击时层间滑动，同种电荷的离子相对，排斥力使晶体碎裂；固态时离子不能离开其位置，所以只在熔融或溶液中导电，且没有自由电子。M 是由双原子分子构成的分子晶体；熔化时只克服较弱的分子间作用力，分子内的共价键不断裂。K 中没有共价键。",
+        "ku": "Di K de îyonên metal ên erênî di nav deryaya elektronên azad de ne: hişkeke metalî. Her çend qat bişemitin jî deryaya elektronan îyonan bi hev ve digire, ji ber vê dikare bibe têl û pel. Di L de katyon û anyon bi rêkûpêkî rêz bûne: hişkeke îyonîk. Bi lêdanê qat dişemitin, îyonên bi heman barî li hemberî hev tên û hêza dûrxistinê krîstalê dişkîne; ji ber ku di rewşa hişk de îyon ji cihê xwe naqetin, tenê di rewşa helandî û di çareseriyê de elektrîkê diguhezîne û elektronên wê yên azad tune ne. M hişkeke molekulî ye ku ji molekulên duatomî pêk tê; dema dihele tenê têkiliyên lawaz ên navbera molekulan têne bindestkirin, girêdanên kovalent ên nav molekulan naşkên. Di K de girêdana kovalent tune ye."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 150,
+        "markup": "<rect x=\"8\" y=\"8\" width=\"104\" height=\"110\" class=\"qf-fill\"/><circle cx=\"30\" cy=\"33\" r=\"12\" class=\"qf-fill\"/><text x=\"30\" y=\"37\" text-anchor=\"middle\" class=\"qf-strong\">+</text><circle cx=\"30\" cy=\"63\" r=\"12\" class=\"qf-fill\"/><text x=\"30\" y=\"67\" text-anchor=\"middle\" class=\"qf-strong\">+</text><circle cx=\"30\" cy=\"93\" r=\"12\" class=\"qf-fill\"/><text x=\"30\" y=\"97\" text-anchor=\"middle\" class=\"qf-strong\">+</text><circle cx=\"60\" cy=\"33\" r=\"12\" class=\"qf-fill\"/><text x=\"60\" y=\"37\" text-anchor=\"middle\" class=\"qf-strong\">+</text><circle cx=\"60\" cy=\"63\" r=\"12\" class=\"qf-fill\"/><text x=\"60\" y=\"67\" text-anchor=\"middle\" class=\"qf-strong\">+</text><circle cx=\"60\" cy=\"93\" r=\"12\" class=\"qf-fill\"/><text x=\"60\" y=\"97\" text-anchor=\"middle\" class=\"qf-strong\">+</text><circle cx=\"90\" cy=\"33\" r=\"12\" class=\"qf-fill\"/><text x=\"90\" y=\"37\" text-anchor=\"middle\" class=\"qf-strong\">+</text><circle cx=\"90\" cy=\"63\" r=\"12\" class=\"qf-fill\"/><text x=\"90\" y=\"67\" text-anchor=\"middle\" class=\"qf-strong\">+</text><circle cx=\"90\" cy=\"93\" r=\"12\" class=\"qf-fill\"/><text x=\"90\" y=\"97\" text-anchor=\"middle\" class=\"qf-strong\">+</text><circle cx=\"45\" cy=\"48\" r=\"2.6\" class=\"qf-accent\"/><circle cx=\"75\" cy=\"48\" r=\"2.6\" class=\"qf-accent\"/><circle cx=\"45\" cy=\"78\" r=\"2.6\" class=\"qf-accent\"/><circle cx=\"75\" cy=\"78\" r=\"2.6\" class=\"qf-accent\"/><circle cx=\"30\" cy=\"14\" r=\"2.6\" class=\"qf-accent\"/><circle cx=\"90\" cy=\"112\" r=\"2.6\" class=\"qf-accent\"/><circle cx=\"15\" cy=\"63\" r=\"2.6\" class=\"qf-accent\"/><circle cx=\"105\" cy=\"48\" r=\"2.6\" class=\"qf-accent\"/><circle cx=\"60\" cy=\"112\" r=\"2.6\" class=\"qf-accent\"/><circle cx=\"60\" cy=\"14\" r=\"2.6\" class=\"qf-accent\"/><text x=\"60\" y=\"140\" text-anchor=\"middle\" class=\"qf-big\">K</text><rect x=\"128\" y=\"8\" width=\"104\" height=\"110\" class=\"qf-fill\"/><circle cx=\"144\" cy=\"27\" r=\"10\" class=\"qf-fill\"/><text x=\"144\" y=\"31\" text-anchor=\"middle\" class=\"qf-strong\">−</text><circle cx=\"144\" cy=\"51\" r=\"7\" class=\"qf-fill\"/><text x=\"144\" y=\"55\" text-anchor=\"middle\" class=\"qf-small\">+</text><circle cx=\"144\" cy=\"75\" r=\"10\" class=\"qf-fill\"/><text x=\"144\" y=\"79\" text-anchor=\"middle\" class=\"qf-strong\">−</text><circle cx=\"144\" cy=\"99\" r=\"7\" class=\"qf-fill\"/><text x=\"144\" y=\"103\" text-anchor=\"middle\" class=\"qf-small\">+</text><circle cx=\"168\" cy=\"27\" r=\"7\" class=\"qf-fill\"/><text x=\"168\" y=\"31\" text-anchor=\"middle\" class=\"qf-small\">+</text><circle cx=\"168\" cy=\"51\" r=\"10\" class=\"qf-fill\"/><text x=\"168\" y=\"55\" text-anchor=\"middle\" class=\"qf-strong\">−</text><circle cx=\"168\" cy=\"75\" r=\"7\" class=\"qf-fill\"/><text x=\"168\" y=\"79\" text-anchor=\"middle\" class=\"qf-small\">+</text><circle cx=\"168\" cy=\"99\" r=\"10\" class=\"qf-fill\"/><text x=\"168\" y=\"103\" text-anchor=\"middle\" class=\"qf-strong\">−</text><circle cx=\"192\" cy=\"27\" r=\"10\" class=\"qf-fill\"/><text x=\"192\" y=\"31\" text-anchor=\"middle\" class=\"qf-strong\">−</text><circle cx=\"192\" cy=\"51\" r=\"7\" class=\"qf-fill\"/><text x=\"192\" y=\"55\" text-anchor=\"middle\" class=\"qf-small\">+</text><circle cx=\"192\" cy=\"75\" r=\"10\" class=\"qf-fill\"/><text x=\"192\" y=\"79\" text-anchor=\"middle\" class=\"qf-strong\">−</text><circle cx=\"192\" cy=\"99\" r=\"7\" class=\"qf-fill\"/><text x=\"192\" y=\"103\" text-anchor=\"middle\" class=\"qf-small\">+</text><circle cx=\"216\" cy=\"27\" r=\"7\" class=\"qf-fill\"/><text x=\"216\" y=\"31\" text-anchor=\"middle\" class=\"qf-small\">+</text><circle cx=\"216\" cy=\"51\" r=\"10\" class=\"qf-fill\"/><text x=\"216\" y=\"55\" text-anchor=\"middle\" class=\"qf-strong\">−</text><circle cx=\"216\" cy=\"75\" r=\"7\" class=\"qf-fill\"/><text x=\"216\" y=\"79\" text-anchor=\"middle\" class=\"qf-small\">+</text><circle cx=\"216\" cy=\"99\" r=\"10\" class=\"qf-fill\"/><text x=\"216\" y=\"103\" text-anchor=\"middle\" class=\"qf-strong\">−</text><text x=\"180\" y=\"140\" text-anchor=\"middle\" class=\"qf-big\">L</text><rect x=\"248\" y=\"8\" width=\"104\" height=\"110\" class=\"qf-fill\"/><circle cx=\"266\" cy=\"30\" r=\"8\" class=\"qf-accent\"/><circle cx=\"279\" cy=\"30\" r=\"8\" class=\"qf-accent\"/><circle cx=\"310\" cy=\"26\" r=\"8\" class=\"qf-accent\"/><circle cx=\"323\" cy=\"26\" r=\"8\" class=\"qf-accent\"/><circle cx=\"278\" cy=\"64\" r=\"8\" class=\"qf-accent\"/><circle cx=\"291\" cy=\"64\" r=\"8\" class=\"qf-accent\"/><circle cx=\"318\" cy=\"72\" r=\"8\" class=\"qf-accent\"/><circle cx=\"331\" cy=\"72\" r=\"8\" class=\"qf-accent\"/><circle cx=\"268\" cy=\"98\" r=\"8\" class=\"qf-accent\"/><circle cx=\"281\" cy=\"98\" r=\"8\" class=\"qf-accent\"/><circle cx=\"310\" cy=\"104\" r=\"8\" class=\"qf-accent\"/><circle cx=\"323\" cy=\"104\" r=\"8\" class=\"qf-accent\"/><text x=\"300\" y=\"140\" text-anchor=\"middle\" class=\"qf-big\">M</text>",
+        "caption": {
+          "tr": "+: katyon, −: anyon, küçük noktalar: serbest elektronlar, birbirine değen daireler: molekül",
+          "en": "+: cation, −: anion, small dots: free electrons, touching circles: a molecule",
+          "de": "+: Kation, −: Anion, kleine Punkte: freie Elektronen, sich berührende Kreise: ein Molekül",
+          "fr": "+ : cation, − : anion, petits points : électrons libres, cercles qui se touchent : une molécule",
+          "ru": "+: катион, −: анион, мелкие точки: свободные электроны, соприкасающиеся кружки: молекула",
+          "ar": "+: كاتيون، −: أنيون، النقاط الصغيرة: إلكترونات حرة، الدوائر المتلامسة: جزيء",
+          "zh": "+：阳离子，−：阴离子，小圆点：自由电子，相互接触的圆圈：一个分子",
+          "ku": "+: katyon, −: anyon, xalên biçûk: elektronên azad, xelekên ku bi hev dikevin: molekulek"
+        }
       }
     },
     {

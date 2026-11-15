@@ -435,7 +435,11 @@ async function main() {
     assert(enriched.length === compiled.length, 'Enriched list retains exact input length');
 
     const diagramCount = enriched.filter((q) => Boolean(q.diagram)).length;
-    assert(diagramCount >= 32, `At least 32 questions diagrammed per unit (got ${diagramCount})`);
+    assert(diagramCount >= 1 && diagramCount <= 32, `Between 1 and 32 on-topic questions diagrammed per unit (got ${diagramCount})`);
+
+    // Idempotence: re-enriching the compiled bank attaches the figures to the very same question ids.
+    const ids = (qs: typeof compiled) => qs.filter((q) => q.diagram).map((q) => `${q.id}:${q.diagram!.variant}`).join(',');
+    assert(ids(enriched) === ids(compiled), 'Re-enriching compiled questions keeps the same diagram placement');
   });
 
   await runProbe('P2.6', 'Generator-KeyBalance', 'Key distribution audit across all 24 units under varied seeds', () => {

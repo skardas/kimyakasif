@@ -129,7 +129,7 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-f04",
       "fact": {
-        "tr": "Spin kuantum sayısı (ms), elektronun spininin (dönme hareketinin) yönünü gösterir ve +1/2 veya -1/2 değerini alır; spin klasik bir dönme değil, elektronun kuantum özelliğidir.",
+        "tr": "Spin kuantum sayısı (ms), elektronun spin yönünü gösterir ve +1/2 veya -1/2 değerini alır; spin klasik bir dönme değil, elektronun kuantum özelliğidir.",
         "en": "The spin quantum number (ms) shows the direction of the electron's spin and takes the value +1/2 or -1/2; spin is a quantum property of the electron, not a literal rotation.",
         "de": "Die Spinquantenzahl (ms) gibt die Richtung des Elektronenspins an und nimmt den Wert +1/2 oder -1/2 an; der Spin ist eine Quanteneigenschaft des Elektrons, keine klassische Drehung.",
         "fr": "Le nombre quantique de spin (ms) indique le sens du spin de l'électron et vaut +1/2 ou -1/2 ; le spin est une propriété quantique de l'électron, pas une rotation au sens classique.",
@@ -492,14 +492,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-f15",
       "fact": {
-        "tr": "Değerlik alt kabuğu yarı dolu veya tam dolu olan (s1, s2, p3, p6, d5, d10 ile biten) elektron dizilimleri küresel simetriktir ve ek kararlılık sağlar.",
-        "en": "Electron configurations whose outermost sublevel is half-filled or completely filled (ending in s1, s2, p3, p6, d5 or d10) are spherically symmetric and gain extra stability.",
-        "de": "Elektronenkonfigurationen, deren äußerstes Unterniveau halb- oder vollbesetzt ist (Endung s1, s2, p3, p6, d5 oder d10), sind kugelsymmetrisch und besonders stabil.",
-        "fr": "Les configurations électroniques dont la dernière sous-couche est à moitié ou entièrement remplie (se terminant par s1, s2, p3, p6, d5 ou d10) sont à symétrie sphérique et gagnent en stabilité.",
-        "ru": "Электронные конфигурации, в которых валентный подуровень заполнен наполовину или полностью (оканчиваются на s1, s2, p3, p6, d5, d10), сферически симметричны и обладают дополнительной устойчивостью.",
-        "ar": "التوزيعات الإلكترونية التي يكون مستواها الفرعي الأخير نصف ممتلئ أو ممتلئًا تمامًا (تنتهي بـ s1 أو s2 أو p3 أو p6 أو d5 أو d10) متناظرة كرويًا وتكتسب استقرارًا إضافيًا.",
-        "zh": "价层亚层半充满或全充满(以 s1、s2、p3、p6、d5 或 d10 结尾)的电子排布呈球形对称，具有额外的稳定性。",
-        "ku": "Rêzkirinên elektronan ên ku binqata wan a valansê nîvtijî an tamtijî ye (bi s1, s2, p3, p6, d5 an d10 diqedin) xwedî sîmetriya gewherî ne û aramiyeke zêde didin."
+        "tr": "Son alt kabuğu yarı dolu veya tam dolu olan (s1, s2, p3, p6, d5, d10 ile biten) elektron dizilimleri küresel simetriktir.",
+        "en": "Electron configurations whose outermost sublevel is half-filled or completely filled (ending in s1, s2, p3, p6, d5 or d10) are spherically symmetric.",
+        "de": "Elektronenkonfigurationen, deren äußerstes Unterniveau halb- oder vollbesetzt ist (Endung s1, s2, p3, p6, d5 oder d10), sind kugelsymmetrisch.",
+        "fr": "Les configurations électroniques dont la dernière sous-couche est à moitié ou entièrement remplie (se terminant par s1, s2, p3, p6, d5 ou d10) sont à symétrie sphérique.",
+        "ru": "Электронные конфигурации, в которых валентный подуровень заполнен наполовину или полностью (оканчиваются на s1, s2, p3, p6, d5, d10), сферически симметричны.",
+        "ar": "التوزيعات الإلكترونية التي يكون مستواها الفرعي الأخير نصف ممتلئ أو ممتلئًا تمامًا (تنتهي بـ s1 أو s2 أو p3 أو p6 أو d5 أو d10) متناظرة كرويًا.",
+        "zh": "价层亚层半充满或全充满(以 s1、s2、p3、p6、d5 或 d10 结尾)的电子排布呈球形对称。",
+        "ku": "Rêzkirinên elektronan ên ku binqata wan a dawî nîvtijî an tamtijî ye (bi s1, s2, p3, p6, d5 an d10 diqedin) xwedî sîmetriya gewherî ne."
       },
       "trap": {
         "tr": "p4 ile biten elektron dizilimi küresel simetriktir.",
@@ -712,14 +712,14 @@ export const unit11: ChemistryUnitSeedData = {
         "ku": "Sîmetriya gewherî"
       },
       "distinction": {
-        "tr": "Pauli bir atomda 4 kuantum sayısı da aynı iki elektron olamayacağını; küresel simetri son alt kabuğun (orbital türünün) yarı veya tam dolu olmasından gelen ek kararlılığı belirtir.",
-        "en": "Pauli: no two electrons in an atom can have all four quantum numbers the same; spherical symmetry describes the extra stability of a half-filled or completely filled last sublevel.",
+        "tr": "Pauli dışlama ilkesi, bir atomda dört kuantum sayısı da aynı olan iki elektron bulunamayacağını belirtir; küresel simetri ise son alt kabuğun yarı dolu ya da tam dolu olmasıyla ortaya çıkan simetrik elektron dağılımını ifade eder.",
+        "en": "The Pauli exclusion principle states that no two electrons in an atom can have all four quantum numbers the same; spherical symmetry describes the symmetric electron distribution that arises when the last sublevel is half-filled or completely filled.",
         "de": "Pauli: In einem Atom können keine zwei Elektronen in allen vier Quantenzahlen übereinstimmen; die Kugelsymmetrie beschreibt die besondere Stabilität eines halb- oder vollbesetzten letzten Unterniveaus.",
         "fr": "Pauli : deux électrons d'un atome ne peuvent pas avoir leurs quatre nombres quantiques identiques ; la symétrie sphérique décrit la stabilité particulière d'une dernière sous-couche à moitié ou entièrement remplie.",
         "ru": "Принцип Паули запрещает двум электронам атома иметь одинаковые значения всех четырёх квантовых чисел; сферическая симметрия означает дополнительную устойчивость, которую даёт наполовину или полностью заполненный последний подуровень.",
-        "ar": "مبدأ الاستبعاد لباولي: لا يمكن أن يتطابق إلكترونان في ذرة واحدة في أعداد الكم الأربعة جميعها؛ أما التناظر الكروي فيعبّر عن الاستقرار الإضافي الناتج عن كون المستوى الفرعي الأخير نصف ممتلئ أو ممتلئًا تمامًا.",
+        "ar": "مبدأ الاستبعاد لباولي: لا يمكن أن يوجد في ذرة واحدة إلكترونان تتطابق أعداد الكم الأربعة لهما جميعًا؛ أما التناظر الكروي فيعبّر عن التوزيع الإلكتروني المتناظر الذي ينشأ عن كون المستوى الفرعي الأخير نصف ممتلئ أو ممتلئًا تمامًا.",
         "zh": "泡利不相容原理指同一原子中不可能有两个电子的四个量子数完全相同；球形对称指最后一个亚层半充满或全充满时带来的额外稳定性。",
-        "ku": "Prensîba dûrxistinê ya Pauli dibêje ku di atomekê de her çar hejmarên kuantumê yên du elektronan nikarin wekhev bin; sîmetriya gewherî aramiya zêde nîşan dide ku ji nîvtijî an tamtijîbûna binqata dawî tê."
+        "ku": "Prensîba dûrxistinê ya Pauli dibêje ku di atomekê de du elektronên ku her çar hejmarên wan ên kuantumê wekhev in nikarin hebin; sîmetriya gewherî jî belavbûna sîmetrîk a elektronan îfade dike ku ji nîvtijî an tamtijîbûna binqata dawî çêdibe."
       }
     },
     {
@@ -1124,77 +1124,209 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin02",
       "stem": {
-        "tr": "Açısal momentum kuantum sayısı l = 2 ve manyetik kuantum sayısı ml = -1 olan bir elektron hangi orbital türünde bulunabilir?",
-        "en": "In which orbital type can an electron with angular momentum quantum number l = 2 and magnetic quantum number ml = -1 be found?",
-        "de": "In welchem Orbitaltyp befindet sich ein Elektron mit der Drehimpulsquantenzahl l = 2 und der magnetischen Quantenzahl ml = -1?",
-        "fr": "Dans quel type d'orbite peut-on trouver un électron avec un nombre quantique de moment cinétique l = 2 et un nombre quantique magnétique ml = -1 ?",
-        "ru": "На орбитали какого типа может находиться электрон с орбитальным квантовым числом l = 2 и магнитным квантовым числом ml = -1?",
-        "ar": "في أيّ نوع من المدارات يمكن أن يوجد إلكترون عدد كمه الثانوي l = 2 وعدد كمه المغناطيسي ml = -1؟",
-        "zh": "角量子数 l = 2、磁量子数 ml = -1 的电子可能处于哪种轨道？",
-        "ku": "Elektronek ku hejmara wê ya kuantumê ya momenta goşeyî l = 2 û hejmara wê ya kuantumê ya magnetîk ml = -1 e, dikare di kîjan cureya orbîtalê de be?"
+        "tr": "Şekildeki grafikte, atom numaraları ardışık olan ve hepsi A grubunda bulunan dokuz elementin birinci iyonlaşma enerjileri artan atom numarası sırasıyla verilmiştir.\nI. 2. element 2A grubundadır.\nII. 6. elementin değerlik elektron sayısı 5'tir.\nIII. 5. elementin temel hâl elektron diziliminde son alt kabuk yarı doludur.\nyargılarından hangileri doğrudur?",
+        "en": "The graph gives the first ionization energies of nine A-group elements with consecutive atomic numbers, in order of increasing atomic number. Which of the following statements are true?\nI. Element 2 is in group 2A.\nII. Element 6 has 5 valence electrons.\nIII. In the ground-state electron configuration of element 5, the last sublevel is half-filled.",
+        "de": "Das Diagramm zeigt die ersten Ionisierungsenergien von neun Hauptgruppenelementen mit aufeinanderfolgenden Ordnungszahlen, geordnet nach steigender Ordnungszahl. Welche Aussagen sind richtig?\nI. Element 2 steht in der Gruppe 2A.\nII. Element 6 hat 5 Valenzelektronen.\nIII. In der Grundzustandskonfiguration von Element 5 ist das letzte Unterniveau halb besetzt.",
+        "fr": "Le graphique donne les premières énergies d'ionisation de neuf éléments des groupes A de numéros atomiques consécutifs, rangés par numéro atomique croissant. Quelles affirmations sont vraies ?\nI. L'élément 2 appartient au groupe 2A.\nII. L'élément 6 possède 5 électrons de valence.\nIII. Dans la configuration de l'état fondamental de l'élément 5, la dernière sous-couche est à moitié remplie.",
+        "ru": "На графике приведены первые энергии ионизации девяти элементов главных (A) подгрупп с последовательными порядковыми номерами, в порядке возрастания номера. Какие утверждения верны?\nI. Элемент 2 находится в группе 2A.\nII. У элемента 6 пять валентных электронов.\nIII. В электронной конфигурации основного состояния элемента 5 последний подуровень заполнен наполовину.",
+        "ar": "يبيّن الرسم البياني طاقات التأين الأولى لتسعة عناصر من مجموعات A أعدادها الذرية متتالية، مرتبةً حسب تزايد العدد الذري. أيّ العبارات الآتية صحيحة؟\nI. العنصر 2 يقع في المجموعة 2A.\nII. عدد إلكترونات التكافؤ في العنصر 6 يساوي 5.\nIII. في التوزيع الإلكتروني للحالة الأرضية للعنصر 5 يكون المستوى الفرعي الأخير نصف ممتلئ.",
+        "zh": "图中按原子序数递增的顺序给出了九种原子序数连续的 A 族元素的第一电离能。下列说法中哪些正确？\nI. 第 2 种元素位于 2A 族。\nII. 第 6 种元素有 5 个价电子。\nIII. 第 5 种元素基态电子排布的最后一个亚层为半充满。",
+        "ku": "Di grafîka şiklê de enerjiyên îyonîzasyonê yên yekem ên neh elementên koma A yên ku hejmarên wan ên atomî li pey hev in, li gorî zêdebûna hejmara atomî hatine dayîn. Kîjan ji van gotinan rast in?\nI. Elementa 2. di koma 2A de ye.\nII. Hejmara elektronên valansê yên elementa 6. 5 e.\nIII. Di rêzkirina elektronan a rewşa bingehîn a elementa 5. de binqata dawî nîvtijî ye."
       },
       "options": [
         {
-          "tr": "d orbitali",
-          "en": "d orbital",
-          "de": "d-Orbital",
-          "fr": "orbitale d",
-          "ru": "d-орбиталь",
-          "ar": "مدار d",
-          "zh": "d轨道",
-          "ku": "Orbîtala d"
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "s orbitali",
-          "en": "s orbital",
-          "de": "s-Orbital",
-          "fr": "orbitale s",
-          "ru": "s-орбиталь",
-          "ar": "مدار s",
-          "zh": "s轨道",
-          "ku": "Orbîtala s"
+          "tr": "Yalnız III",
+          "en": "Only III",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅 III",
+          "ku": "Tenê III"
         },
         {
-          "tr": "p orbitali",
-          "en": "p orbital",
-          "de": "p-Orbital",
-          "fr": "orbitale p",
-          "ru": "p-орбиталь",
-          "ar": "مدار p",
-          "zh": "p轨道",
-          "ku": "Orbîtala p"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "f orbitali",
-          "en": "f orbital",
-          "de": "f-Orbital",
-          "fr": "orbitale f",
-          "ru": "f-орбиталь",
-          "ar": "مدار f",
-          "zh": "f轨道",
-          "ku": "Orbîtala f"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "g orbitali",
-          "en": "g orbital",
-          "de": "g-Orbital",
-          "fr": "orbitale g",
-          "ru": "g-орбиталь",
-          "ar": "مدار g",
-          "zh": "g轨道",
-          "ku": "Orbîtala g"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Orbital türünü açısal momentum kuantum sayısı belirler: l = 0 s, l = 1 p, l = 2 d, l = 3 f. l = 2 olduğundan elektron bir d orbitalindedir; d orbitallerinde ml = -2, -1, 0, +1, +2 değerlerini alabildiğinden ml = -1 mümkündür. ml = -1 değeri p orbitallerinde de görülür, ancak p için l = 1'dir.",
-        "en": "The orbital type is set by the angular momentum quantum number: l = 0 s, l = 1 p, l = 2 d, l = 3 f. Since l = 2, the electron is in a d orbital; for d orbitals ml can be -2, -1, 0, +1, +2, so ml = -1 is allowed. ml = -1 also occurs for p orbitals, but p has l = 1.",
-        "de": "Den Orbitaltyp legt die Drehimpulsquantenzahl fest: l = 0 s, l = 1 p, l = 2 d, l = 3 f. Wegen l = 2 befindet sich das Elektron in einem d-Orbital; für d-Orbitale kann ml die Werte -2, -1, 0, +1, +2 annehmen, ml = -1 ist also möglich. ml = -1 kommt auch bei p-Orbitalen vor, dort ist aber l = 1.",
-        "fr": "Le type d'orbitale est fixé par le nombre quantique de moment cinétique : l = 0 s, l = 1 p, l = 2 d, l = 3 f. Comme l = 2, l'électron est dans une orbitale d ; pour les orbitales d, ml peut valoir -2, -1, 0, +1, +2, donc ml = -1 est possible. ml = -1 existe aussi pour les orbitales p, mais alors l = 1.",
-        "ru": "Тип орбитали определяется орбитальным квантовым числом: l = 0 — s, l = 1 — p, l = 2 — d, l = 3 — f. Так как l = 2, электрон находится на d-орбитали; для d-орбиталей ml принимает значения -2, -1, 0, +1, +2, поэтому ml = -1 возможно. Значение ml = -1 встречается и у p-орбиталей, но для них l = 1.",
-        "ar": "يحدد عدد الكم الثانوي نوع المدار: l = 0 s، l = 1 p، l = 2 d، l = 3 f. بما أن l = 2 فالإلكترون في مدار d؛ وفي مدارات d يأخذ ml القيم -2، -1، 0، +1، +2، لذا فإن ml = -1 ممكن. القيمة ml = -1 تظهر أيضًا في مدارات p، لكن l = 1 فيها.",
-        "zh": "轨道类型由角量子数决定：l = 0 为 s，l = 1 为 p，l = 2 为 d，l = 3 为 f。因为 l = 2，电子处于 d 轨道；d 轨道的 ml 可取 -2、-1、0、+1、+2，所以 ml = -1 是允许的。p 轨道也可有 ml = -1，但 p 轨道的 l = 1。",
-        "ku": "Cureya orbîtalê bi hejmara kuantumê ya momenta goşeyî tê diyarkirin: l = 0 s, l = 1 p, l = 2 d, l = 3 f. Ji ber ku l = 2 ye, elektron di orbîtaleke d de ye; di orbîtalên d de ml dikare -2, -1, 0, +1, +2 be, loma ml = -1 gengaz e. ml = -1 di orbîtalên p de jî heye, lê ji bo p l = 1 ye."
+        "tr": "Grafikte 8. elementten 9. elemente geçişte iyonlaşma enerjisi en yüksek değerden en düşük değere iner; 8. element soy gaz (8A), 9. element yeni periyodun 1A elementidir. Bu durumda 1. element 1A, 2. element 2A'dır; I doğrudur. 3. elementte görülen düşüş 3A'nın tek p elektronunun kolay koparılmasından, 6. elementteki düşüş ise 6A'da p orbitalinde ilk eşleşmenin oluşmasından kaynaklanır. 6. element 6A grubundadır ve 6 değerlik elektronu vardır; II yanlıştır. 5. element 5A grubundadır (ns2 np3); p alt kabuğu yarı doludur ve bu yüzden iyonlaşma enerjisi 6. elementinkinden büyüktür; III doğrudur. Grafikteki her düşüşü yeni periyodun başlangıcı sanmak tipik bir hatadır.",
+        "en": "On the graph the ionization energy falls from its highest to its lowest value between elements 8 and 9: element 8 is a noble gas (8A) and element 9 is the 1A element of the next period. So element 1 is in 1A and element 2 in 2A; I is true. The dip at element 3 comes from the single p electron of group 3A being easy to remove, and the dip at element 6 from the first pairing in the p orbitals in group 6A. Element 6 is in group 6A and has 6 valence electrons; II is false. Element 5 is in group 5A (ns2 np3); its p sublevel is half-filled, which is why its ionization energy is higher than that of element 6; III is true. Taking every dip on the graph for the start of a new period is a typical mistake.",
+        "de": "Im Diagramm fällt die Ionisierungsenergie zwischen Element 8 und 9 vom höchsten auf den niedrigsten Wert: Element 8 ist ein Edelgas (8A), Element 9 das 1A-Element der nächsten Periode. Element 1 steht also in 1A, Element 2 in 2A; I ist richtig. Der Knick bei Element 3 entsteht, weil das einzelne p-Elektron der Gruppe 3A leicht abgegeben wird, der Knick bei Element 6 durch die erste Paarung in den p-Orbitalen in Gruppe 6A. Element 6 steht in Gruppe 6A und hat 6 Valenzelektronen; II ist falsch. Element 5 steht in Gruppe 5A (ns2 np3); sein p-Unterniveau ist halb besetzt, deshalb ist seine Ionisierungsenergie höher als die von Element 6; III ist richtig. Ein typischer Fehler ist, jeden Knick im Diagramm für den Beginn einer neuen Periode zu halten.",
+        "fr": "Sur le graphique, l'énergie d'ionisation passe de sa valeur la plus haute à la plus basse entre les éléments 8 et 9 : l'élément 8 est un gaz noble (8A) et l'élément 9 l'élément 1A de la période suivante. L'élément 1 est donc dans le groupe 1A et l'élément 2 dans le groupe 2A ; I est vraie. La baisse à l'élément 3 vient de ce que l'unique électron p du groupe 3A s'arrache facilement, celle à l'élément 6 du premier appariement dans les orbitales p du groupe 6A. L'élément 6 est dans le groupe 6A et possède 6 électrons de valence ; II est fausse. L'élément 5 est dans le groupe 5A (ns2 np3) ; sa sous-couche p est à moitié remplie, d'où une énergie d'ionisation supérieure à celle de l'élément 6 ; III est vraie. Prendre chaque baisse du graphique pour le début d'une nouvelle période est une erreur typique.",
+        "ru": "По графику энергия ионизации падает от наибольшего значения к наименьшему при переходе от элемента 8 к элементу 9: элемент 8 — благородный газ (8A), элемент 9 — элемент 1A следующего периода. Значит, элемент 1 находится в группе 1A, элемент 2 — в группе 2A; I верно. Провал у элемента 3 объясняется тем, что единственный p-электрон группы 3A легко отрывается, а провал у элемента 6 — первым спариванием электронов на p-орбиталях в группе 6A. Элемент 6 находится в группе 6A и имеет 6 валентных электронов; II неверно. Элемент 5 — группа 5A (ns2 np3); его p-подуровень заполнен наполовину, поэтому его энергия ионизации больше, чем у элемента 6; III верно. Считать каждый провал на графике началом нового периода — типичная ошибка.",
+        "ar": "في الرسم البياني تهبط طاقة التأين من أعلى قيمة إلى أدنى قيمة بين العنصرين 8 و9، فالعنصر 8 غاز نبيل (8A) والعنصر 9 هو عنصر 1A في الدورة التالية. إذن العنصر 1 في المجموعة 1A والعنصر 2 في المجموعة 2A؛ العبارة I صحيحة. ينتج الانخفاض عند العنصر 3 عن سهولة نزع إلكترون p الوحيد في المجموعة 3A، والانخفاض عند العنصر 6 عن أول ازدواج في مدارات p في المجموعة 6A. العنصر 6 في المجموعة 6A وله 6 إلكترونات تكافؤ؛ العبارة II خاطئة. العنصر 5 في المجموعة 5A (ns2 np3) ومستواه الفرعي p نصف ممتلئ، ولذلك تكون طاقة تأينه أكبر من طاقة تأين العنصر 6؛ العبارة III صحيحة. ومن الأخطاء الشائعة عدّ كل انخفاض في الرسم بداية دورة جديدة.",
+        "zh": "图中从第 8 种元素到第 9 种元素，电离能由最高值降到最低值：第 8 种是稀有气体(8A)，第 9 种是下一周期的 1A 元素。因此第 1 种元素在 1A 族，第 2 种在 2A 族；I 正确。第 3 种元素处的下降是因为 3A 族唯一的 p 电子容易失去，第 6 种元素处的下降是因为 6A 族 p 轨道中开始出现电子成对。第 6 种元素在 6A 族，有 6 个价电子；II 错误。第 5 种元素在 5A 族(ns2 np3)，p 亚层半充满，所以其电离能高于第 6 种元素；III 正确。把图中每一次下降都当成新周期的开始，是典型错误。",
+        "ku": "Di grafîkê de di navbera elementên 8. û 9. de enerjiya îyonîzasyonê ji nirxa herî bilind dadikeve nirxa herî nizm: elementa 8. gaza esîl (8A) ye, elementa 9. jî elementa 1A ya periyoda din e. Ji ber vê yekê elementa 1. di 1A de, elementa 2. di 2A de ye; I rast e. Daketina li elementa 3. ji ber ku elektrona p a tenê ya koma 3A bi hêsanî tê qetandin e; daketina li elementa 6. jî ji ber cotbûna yekem a di orbîtalên p de ya koma 6A ye. Elementa 6. di koma 6A de ye û 6 elektronên wê yên valansê hene; II şaş e. Elementa 5. di koma 5A de ye (ns2 np3); binqata wê ya p nîvtijî ye, ji ber vê yekê enerjiya wê ya îyonîzasyonê ji ya elementa 6. mezintir e; III rast e. Hesibandina her daketinekê wek destpêka periyodeke nû xeletiyeke tîpîk e."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Element sırası (artan atom numarası)",
+          "en": "Element no. (increasing atomic number)",
+          "de": "Element Nr. (steigende Ordnungszahl)",
+          "fr": "N° d'élément (Z croissant)",
+          "ru": "№ элемента (по росту Z)",
+          "ar": "رقم العنصر (تزايد العدد الذري)",
+          "zh": "元素序号（原子序数递增）",
+          "ku": "Hejmara elementê (Z zêde dibe)"
+        },
+        "yLabel": {
+          "tr": "İE₁ (kJ/mol)",
+          "en": "IE₁ (kJ/mol)",
+          "de": "IE₁ (kJ/mol)",
+          "fr": "EI₁ (kJ/mol)",
+          "ru": "ЭИ₁ (кДж/моль)",
+          "ar": "IE₁ (kJ/mol)",
+          "zh": "IE₁ (kJ/mol)",
+          "ku": "IE₁ (kJ/mol)"
+        },
+        "xMax": 9.6,
+        "xMin": 0.4,
+        "yMax": 1700,
+        "xTicks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "yTicks": [
+          400,
+          800,
+          1200,
+          1600
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                1,
+                496
+              ],
+              [
+                2,
+                738
+              ],
+              [
+                3,
+                578
+              ],
+              [
+                4,
+                786
+              ],
+              [
+                5,
+                1012
+              ],
+              [
+                6,
+                1000
+              ],
+              [
+                7,
+                1251
+              ],
+              [
+                8,
+                1521
+              ],
+              [
+                9,
+                419
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 1,
+            "y": 496,
+            "label": ""
+          },
+          {
+            "x": 2,
+            "y": 738,
+            "label": ""
+          },
+          {
+            "x": 3,
+            "y": 578,
+            "label": ""
+          },
+          {
+            "x": 4,
+            "y": 786,
+            "label": ""
+          },
+          {
+            "x": 5,
+            "y": 1012,
+            "label": ""
+          },
+          {
+            "x": 6,
+            "y": 1000,
+            "label": ""
+          },
+          {
+            "x": 7,
+            "y": 1251,
+            "label": ""
+          },
+          {
+            "x": 8,
+            "y": 1521,
+            "label": ""
+          },
+          {
+            "x": 9,
+            "y": 419,
+            "label": ""
+          }
+        ]
       }
     },
     {
@@ -1580,77 +1712,165 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin08",
       "stem": {
-        "tr": "3. periyotta bulunan X elementinin ardışık iyonlaşma enerjileri (kJ/mol) şöyledir: İE1 = 738, İE2 = 1451, İE3 = 7733, İE4 = 10540. Buna göre X ile ilgili aşağıdakilerden hangisi doğrudur?",
-        "en": "The successive ionization energies (kJ/mol) of element X, which is in period 3, are: IE1 = 738, IE2 = 1451, IE3 = 7733, IE4 = 10540. Which of the following about X is correct?",
-        "de": "Die aufeinanderfolgenden Ionisierungsenergien (kJ/mol) des Elements X aus der 3. Periode betragen: IE1 = 738, IE2 = 1451, IE3 = 7733, IE4 = 10540. Welche Aussage über X ist richtig?",
-        "fr": "Les énergies d'ionisation successives (kJ/mol) de l'élément X, situé dans la 3e période, sont : EI1 = 738, EI2 = 1451, EI3 = 7733, EI4 = 10540. Laquelle des propositions suivantes sur X est correcte ?",
-        "ru": "Последовательные энергии ионизации (кДж/моль) элемента X 3-го периода: ЭИ1 = 738, ЭИ2 = 1451, ЭИ3 = 7733, ЭИ4 = 10540. Какое утверждение об X верно?",
-        "ar": "طاقات التأين المتتالية (kJ/mol) للعنصر X الواقع في الدورة الثالثة هي: IE1 = 738، IE2 = 1451، IE3 = 7733، IE4 = 10540. أيّ مما يأتي صحيح بشأن X؟",
-        "zh": "位于第 3 周期的元素 X 的逐级电离能(kJ/mol) 为：IE1 = 738，IE2 = 1451，IE3 = 7733，IE4 = 10540。下列关于 X 的说法哪项正确？",
-        "ku": "Enerjiyên îyonîzasyonê yên li pey hev (kJ/mol) ên elementa X ya di periyoda 3. de ev in: IE1 = 738, IE2 = 1451, IE3 = 7733, IE4 = 10540. Li gorî vê, derbarê X de kîjan gotin rast e?"
+        "tr": "Tabloda 3. periyotta bulunan X, Y ve Z elementlerinin ilk dört iyonlaşma enerjisi (kJ/mol) verilmiştir.\nI. Atom numarası en büyük olan Z'dir.\nII. Y'nin bileşiklerinde oluşturduğu kararlı iyon Y2+ iyonudur.\nIII. Atom yarıçapı en büyük olan Y'dir.\nyargılarından hangileri doğrudur?",
+        "en": "The table gives the first four ionization energies (kJ/mol) of elements X, Y and Z, which are in period 3. Which of the following statements are true?\nI. Z has the largest atomic number.\nII. The stable ion that Y forms in its compounds is Y2+.\nIII. Y has the largest atomic radius.",
+        "de": "Die Tabelle nennt die ersten vier Ionisierungsenergien (kJ/mol) der Elemente X, Y und Z aus der 3. Periode. Welche Aussagen sind richtig?\nI. Z hat die größte Ordnungszahl.\nII. Das stabile Ion, das Y in seinen Verbindungen bildet, ist Y2+.\nIII. Y hat den größten Atomradius.",
+        "fr": "Le tableau donne les quatre premières énergies d'ionisation (kJ/mol) des éléments X, Y et Z de la 3e période. Quelles affirmations sont vraies ?\nI. Z a le plus grand numéro atomique.\nII. L'ion stable que forme Y dans ses composés est Y2+.\nIII. Y a le plus grand rayon atomique.",
+        "ru": "В таблице приведены первые четыре энергии ионизации (кДж/моль) элементов X, Y и Z 3-го периода. Какие утверждения верны?\nI. Наибольший порядковый номер у Z.\nII. В соединениях Y образует устойчивый ион Y2+.\nIII. Наибольший атомный радиус у Y.",
+        "ar": "يبيّن الجدول طاقات التأين الأربع الأولى (kJ/mol) للعناصر X وY وZ الواقعة في الدورة الثالثة. أيّ العبارات الآتية صحيحة؟\nI. العدد الذري الأكبر هو للعنصر Z.\nII. الأيون المستقر الذي يكوّنه Y في مركباته هو Y2+.\nIII. نصف القطر الذري الأكبر هو للعنصر Y.",
+        "zh": "表中给出了第 3 周期元素 X、Y、Z 的前四级电离能(kJ/mol)。下列说法中哪些正确？\nI. 原子序数最大的是 Z。\nII. Y 在化合物中形成的稳定离子是 Y2+。\nIII. 原子半径最大的是 Y。",
+        "ku": "Di tabloyê de çar enerjiyên îyonîzasyonê yên yekem (kJ/mol) ên elementên X, Y û Z yên di periyoda 3. de hatine dayîn. Kîjan ji van gotinan rast in?\nI. Hejmara atomî ya herî mezin a Z ye.\nII. Îyona aram a ku Y di pêkhateyên xwe de çêdike Y2+ e.\nIII. Nîvçapa atomî ya herî mezin a Y ye."
       },
       "options": [
         {
-          "tr": "1A grubunda bulunur.",
-          "en": "It is in group 1A.",
-          "de": "Es steht in Gruppe 1A.",
-          "fr": "Il appartient au groupe 1A.",
-          "ru": "Он находится в группе 1A.",
-          "ar": "يقع في المجموعة 1A.",
-          "zh": "它位于 1A 族。",
-          "ku": "Di koma 1A de ye."
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Elektron dizilimi 3p orbitaliyle biter.",
-          "en": "Its electron configuration ends in a 3p orbital.",
-          "de": "Seine Elektronenkonfiguration endet mit einem 3p-Orbital.",
-          "fr": "Sa configuration électronique se termine par une orbitale 3p.",
-          "ru": "Его электронная конфигурация оканчивается на 3p-орбиталь.",
-          "ar": "ينتهي توزيعه الإلكتروني بمدار 3p.",
-          "zh": "其电子排布以 3p 轨道结尾。",
-          "ku": "Rêzkirina wê ya elektronan bi orbîtala 3p diqede."
+          "tr": "Yalnız II",
+          "en": "Only II",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "Kararlı iyonu X3+ iyonudur.",
-          "en": "Its stable ion is X3+.",
-          "de": "Sein stabiles Ion ist X3+.",
-          "fr": "Son ion stable est X3+.",
-          "ru": "Его устойчивый ион — X3+.",
-          "ar": "أيونه المستقر هو X3+.",
-          "zh": "其稳定离子是 X3+。",
-          "ku": "Îyona wê ya aram X3+ e."
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Atom numarası 13'tür.",
-          "en": "Its atomic number is 13.",
-          "de": "Seine Ordnungszahl ist 13.",
-          "fr": "Son numéro atomique est 13.",
-          "ru": "Его порядковый номер — 13.",
-          "ar": "عدده الذري 13.",
-          "zh": "其原子序数为 13。",
-          "ku": "Hejmara wê ya atomî 13 e."
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Değerlik elektron sayısı 2, atom numarası 12'dir.",
-          "en": "It has 2 valence electrons and atomic number 12.",
-          "de": "Es hat 2 Valenzelektronen und die Ordnungszahl 12.",
-          "fr": "Il possède 2 électrons de valence et son numéro atomique est 12.",
-          "ru": "У него 2 валентных электрона, порядковый номер — 12.",
-          "ar": "لديه إلكترونا تكافؤ وعدده الذري 12.",
-          "zh": "它有 2 个价电子，原子序数为 12。",
-          "ku": "2 elektronên wê yên valansê hene û hejmara wê ya atomî 12 e."
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         }
       ],
-      "correctIndex": 4,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "İE2'den İE3'e geçişte enerji yaklaşık 5 kat artar (1451 → 7733). Bu büyük sıçrama, iki elektron koparıldıktan sonra soygaz düzenindeki iç katmana inildiğini gösterir; X'in 2 değerlik elektronu vardır. 3. periyot 2A grubu: 1s2 2s2 2p6 3s2, Z = 12 (Mg). Dizilim 3s ile biter ve kararlı iyonu X2+'dir. Atom numarası 13 (Al, 3A) olsaydı büyük sıçrama İE3 ile İE4 arasında görülürdü; 1A elementinde ise sıçrama İE1'den sonra olurdu.",
-        "en": "From IE2 to IE3 the energy rises about fivefold (1451 → 7733). This big jump shows that after two electrons are removed, an inner noble-gas shell is reached; X has 2 valence electrons. Period 3, group 2A: 1s2 2s2 2p6 3s2, Z = 12 (Mg). The configuration ends in 3s and the stable ion is X2+. If the atomic number were 13 (Al, 3A), the jump would come between IE3 and IE4; for a 1A element it would come right after IE1.",
-        "de": "Von IE2 zu IE3 steigt die Energie etwa auf das Fünffache (1451 → 7733). Dieser große Sprung zeigt, dass nach Entfernen zweier Elektronen eine innere Edelgasschale erreicht ist; X hat 2 Valenzelektronen. 3. Periode, Gruppe 2A: 1s2 2s2 2p6 3s2, Z = 12 (Mg). Die Konfiguration endet mit 3s, das stabile Ion ist X2+. Wäre die Ordnungszahl 13 (Al, 3A), läge der Sprung zwischen IE3 und IE4; bei einem 1A-Element direkt nach IE1.",
-        "fr": "De EI2 à EI3, l'énergie est multipliée par environ cinq (1451 → 7733). Ce grand saut montre qu'après le départ de deux électrons on atteint une couche interne de gaz noble ; X possède 2 électrons de valence. 3e période, groupe 2A : 1s2 2s2 2p6 3s2, Z = 12 (Mg). La configuration se termine par 3s et l'ion stable est X2+. Si le numéro atomique était 13 (Al, 3A), le saut se situerait entre EI3 et EI4 ; pour un élément 1A, juste après EI1.",
-        "ru": "При переходе от ЭИ2 к ЭИ3 энергия возрастает примерно в 5 раз (1451 → 7733). Этот резкий скачок показывает, что после отрыва двух электронов достигнут внутренний слой с конфигурацией благородного газа; у X 2 валентных электрона. 3-й период, группа 2A: 1s2 2s2 2p6 3s2, Z = 12 (Mg). Конфигурация оканчивается на 3s, устойчивый ион — X2+. Если бы порядковый номер был 13 (Al, 3A), скачок наблюдался бы между ЭИ3 и ЭИ4, а у элемента группы 1A — сразу после ЭИ1.",
-        "ar": "من IE2 إلى IE3 تزداد الطاقة نحو خمسة أضعاف (1451 → 7733). تدل هذه القفزة الكبيرة على الوصول إلى غلاف داخلي بتوزيع الغاز النبيل بعد نزع إلكترونين؛ إذن لـ X إلكترونا تكافؤ. الدورة الثالثة، المجموعة 2A: 1s2 2s2 2p6 3s2، Z = 12 (Mg). ينتهي التوزيع بـ 3s وأيونه المستقر X2+. لو كان العدد الذري 13 (Al، 3A) لظهرت القفزة بين IE3 وIE4، ولعنصر من 1A لظهرت مباشرة بعد IE1.",
-        "zh": "从 IE2 到 IE3 能量约增大 5 倍(1451 → 7733)。这一突跃说明失去两个电子后已到达稀有气体结构的内层；X 有 2 个价电子。第 3 周期 2A 族：1s2 2s2 2p6 3s2，Z = 12 (Mg)。排布以 3s 结尾，稳定离子为 X2+。若原子序数为 13 (Al，3A)，突跃应出现在 IE3 与 IE4 之间；若为 1A 元素，突跃紧接在 IE1 之后。",
-        "ku": "Ji IE2 bo IE3 enerjî nêzî pênc qatî zêde dibe (1451 → 7733). Ev bazdana mezin nîşan dide ku piştî qetandina du elektronan dor tê qata hundir a bi rêzkirina gaza esîl; 2 elektronên valansê yên X hene. Periyoda 3., koma 2A: 1s2 2s2 2p6 3s2, Z = 12 (Mg). Rêzkirin bi 3s diqede û îyona wê ya aram X2+ e. Heke hejmara atomî 13 (Al, 3A) bûya, bazdan dê di navbera IE3 û IE4 de bûya; di elementeke 1A de jî dê rasterast piştî IE1 bûya."
+        "tr": "Büyük sıçrama, değerlik elektronları bittikten sonra iç katmandan elektron koparılırken görülür. X'te sıçrama İE1'den İE2'ye (496 → 4562), Y'de İE2'den İE3'e (1451 → 7733), Z'de İE3'ten İE4'e (2745 → 11577) olur. Bu durumda X 1A (Na, Z = 11), Y 2A (Mg, Z = 12), Z 3A (Al, Z = 13) grubundadır. I doğrudur: Z'nin İE1 değeri (578) Y'ninkinden (738) küçük olsa da atom numarası en büyük olan Z'dir; 3A'nın İE1 değeri 2A'dan küçüktür. II doğrudur: Y iki değerlik elektronunu vererek Y2+ iyonu oluşturur. III yanlıştır: aynı periyotta soldan sağa atom yarıçapı küçüldüğünden en büyük yarıçap X'indir. İE1'i büyük olanın atom numarasını da büyük sanmak tipik bir hatadır.",
+        "en": "The big jump appears when, after the valence electrons are gone, an electron has to be removed from an inner shell. For X the jump is from IE1 to IE2 (496 → 4562), for Y from IE2 to IE3 (1451 → 7733), for Z from IE3 to IE4 (2745 → 11577). So X is in group 1A (Na, Z = 11), Y in 2A (Mg, Z = 12) and Z in 3A (Al, Z = 13). I is true: although Z's IE1 (578) is smaller than Y's (738), Z has the largest atomic number; the IE1 of group 3A is lower than that of 2A. II is true: Y gives up its two valence electrons to form Y2+. III is false: atomic radius decreases from left to right across a period, so X has the largest radius. Assuming that the element with the higher IE1 also has the higher atomic number is a typical mistake.",
+        "de": "Der große Sprung tritt auf, wenn nach den Valenzelektronen ein Elektron aus einer inneren Schale entfernt werden muss. Bei X liegt der Sprung zwischen IE1 und IE2 (496 → 4562), bei Y zwischen IE2 und IE3 (1451 → 7733), bei Z zwischen IE3 und IE4 (2745 → 11577). X steht also in Gruppe 1A (Na, Z = 11), Y in 2A (Mg, Z = 12) und Z in 3A (Al, Z = 13). I ist richtig: Obwohl die IE1 von Z (578) kleiner ist als die von Y (738), hat Z die größte Ordnungszahl; die IE1 der Gruppe 3A ist kleiner als die von 2A. II ist richtig: Y gibt seine zwei Valenzelektronen ab und bildet Y2+. III ist falsch: Innerhalb einer Periode nimmt der Atomradius von links nach rechts ab, den größten Radius hat X. Ein typischer Fehler ist anzunehmen, das Element mit der höheren IE1 habe auch die höhere Ordnungszahl.",
+        "fr": "Le grand saut apparaît lorsqu'après les électrons de valence il faut arracher un électron d'une couche interne. Pour X, le saut se situe entre EI1 et EI2 (496 → 4562), pour Y entre EI2 et EI3 (1451 → 7733), pour Z entre EI3 et EI4 (2745 → 11577). X est donc dans le groupe 1A (Na, Z = 11), Y dans le groupe 2A (Mg, Z = 12) et Z dans le groupe 3A (Al, Z = 13). I est vraie : bien que l'EI1 de Z (578) soit inférieure à celle de Y (738), c'est Z qui a le plus grand numéro atomique ; l'EI1 du groupe 3A est inférieure à celle du groupe 2A. II est vraie : Y cède ses deux électrons de valence et forme Y2+. III est fausse : dans une période, le rayon atomique diminue de gauche à droite, c'est donc X qui a le plus grand rayon. Supposer que l'élément de plus grande EI1 a aussi le plus grand numéro atomique est une erreur typique.",
+        "ru": "Большой скачок наблюдается, когда после валентных электронов приходится отрывать электрон внутреннего слоя. У X скачок между ЭИ1 и ЭИ2 (496 → 4562), у Y — между ЭИ2 и ЭИ3 (1451 → 7733), у Z — между ЭИ3 и ЭИ4 (2745 → 11577). Значит, X — группа 1A (Na, Z = 11), Y — 2A (Mg, Z = 12), Z — 3A (Al, Z = 13). I верно: хотя ЭИ1 у Z (578) меньше, чем у Y (738), наибольший порядковый номер у Z; ЭИ1 элементов группы 3A меньше, чем у 2A. II верно: Y отдаёт два валентных электрона и образует Y2+. III неверно: в периоде атомный радиус уменьшается слева направо, поэтому наибольший радиус у X. Считать, что у элемента с большей ЭИ1 и порядковый номер больше, — типичная ошибка.",
+        "ar": "تظهر القفزة الكبيرة عندما يلزم نزع إلكترون من غلاف داخلي بعد نفاد إلكترونات التكافؤ. في X تكون القفزة بين IE1 وIE2 (496 → 4562)، وفي Y بين IE2 وIE3 (1451 → 7733)، وفي Z بين IE3 وIE4 (2745 → 11577). إذن X في المجموعة 1A (Na، Z = 11) وY في 2A (Mg، Z = 12) وZ في 3A (Al، Z = 13). العبارة I صحيحة: مع أن IE1 للعنصر Z (578) أصغر منها للعنصر Y (738)، فإن العدد الذري الأكبر هو لـ Z، لأن IE1 لعناصر 3A أصغر منها لعناصر 2A. العبارة II صحيحة: يفقد Y إلكتروني التكافؤ فيكوّن Y2+. العبارة III خاطئة: في الدورة الواحدة يقل نصف القطر الذري من اليسار إلى اليمين، فالأكبر هو X. ومن الأخطاء الشائعة الظن أن العنصر ذا IE1 الأكبر له العدد الذري الأكبر.",
+        "zh": "当价电子失去后需从内层失去电子时，电离能出现大幅跃升。X 的跃升在 IE1 与 IE2 之间(496 → 4562)，Y 在 IE2 与 IE3 之间(1451 → 7733)，Z 在 IE3 与 IE4 之间(2745 → 11577)。所以 X 在 1A 族(Na，Z = 11)，Y 在 2A 族(Mg，Z = 12)，Z 在 3A 族(Al，Z = 13)。I 正确：虽然 Z 的 IE1(578)小于 Y 的(738)，但原子序数最大的是 Z；3A 族的 IE1 小于 2A 族。II 正确：Y 失去两个价电子形成 Y2+。III 错误：同周期从左到右原子半径减小，半径最大的是 X。认为 IE1 越大的元素原子序数也越大，是典型错误。",
+        "ku": "Bazdana mezin dema ku piştî elektronên valansê divê elektronek ji qateke hundirîn were qetandin xuya dibe. Li X bazdan di navbera IE1 û IE2 de ye (496 → 4562), li Y di navbera IE2 û IE3 de (1451 → 7733), li Z di navbera IE3 û IE4 de (2745 → 11577). Ji ber vê yekê X di koma 1A de (Na, Z = 11), Y di 2A de (Mg, Z = 12) û Z di 3A de (Al, Z = 13) ye. I rast e: her çend IE1-a Z (578) ji ya Y (738) biçûktir be jî, hejmara atomî ya herî mezin a Z ye; IE1-a koma 3A ji ya 2A biçûktir e. II rast e: Y du elektronên xwe yên valansê dide û Y2+ çêdike. III şaş e: di periyodekê de ji çepê ber bi rastê nîvçapa atomî biçûk dibe, ji ber vê yekê nîvçapa herî mezin a X ye. Hesibandina ku elementa bi IE1-a mezintir xwedî hejmara atomî ya mezintir e xeletiyeke tîpîk e."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Element",
+            "en": "Element",
+            "de": "Element",
+            "fr": "Élément",
+            "ru": "Элемент",
+            "ar": "العنصر",
+            "zh": "元素",
+            "ku": "Element"
+          },
+          {
+            "tr": "İE₁",
+            "en": "IE₁",
+            "de": "IE₁",
+            "fr": "EI₁",
+            "ru": "ЭИ₁",
+            "ar": "IE₁",
+            "zh": "IE₁",
+            "ku": "IE₁"
+          },
+          {
+            "tr": "İE₂",
+            "en": "IE₂",
+            "de": "IE₂",
+            "fr": "EI₂",
+            "ru": "ЭИ₂",
+            "ar": "IE₂",
+            "zh": "IE₂",
+            "ku": "IE₂"
+          },
+          {
+            "tr": "İE₃",
+            "en": "IE₃",
+            "de": "IE₃",
+            "fr": "EI₃",
+            "ru": "ЭИ₃",
+            "ar": "IE₃",
+            "zh": "IE₃",
+            "ku": "IE₃"
+          },
+          {
+            "tr": "İE₄",
+            "en": "IE₄",
+            "de": "IE₄",
+            "fr": "EI₄",
+            "ru": "ЭИ₄",
+            "ar": "IE₄",
+            "zh": "IE₄",
+            "ku": "IE₄"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            "496",
+            "4562",
+            "6910",
+            "9543"
+          ],
+          [
+            "Y",
+            "738",
+            "1451",
+            "7733",
+            "10543"
+          ],
+          [
+            "Z",
+            "578",
+            "1817",
+            "2745",
+            "11577"
+          ]
+        ],
+        "caption": {
+          "tr": "İyonlaşma enerjileri kJ/mol cinsindendir.",
+          "en": "Ionization energies in kJ/mol.",
+          "de": "Ionisierungsenergien in kJ/mol.",
+          "fr": "Énergies d'ionisation en kJ/mol.",
+          "ru": "Энергии ионизации в кДж/моль.",
+          "ar": "طاقات التأين بوحدة kJ/mol.",
+          "zh": "电离能单位为 kJ/mol。",
+          "ku": "Enerjiyên îyonîzasyonê bi kJ/mol in."
+        }
       }
     },
     {
@@ -1960,14 +2180,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin13",
       "stem": {
-        "tr": "Çok elektronlu atomlarda orbital enerjileri n + l kuralına göre karşılaştırılır. Buna göre 4f, 5d, 6s ve 6p orbitallerinin enerjilerinin küçükten büyüğe sıralanışı aşağıdakilerden hangisidir?",
-        "en": "In many-electron atoms, orbital energies are compared using the n + l rule. Accordingly, which of the following ranks the energies of the 4f, 5d, 6s and 6p orbitals from lowest to highest?",
+        "tr": "Çok elektronlu atomlarda orbital enerjileri n + l kuralına göre karşılaştırıldığında 4f, 5d, 6s ve 6p orbitallerinin enerjilerinin küçükten büyüğe sıralanışı aşağıdakilerden hangisidir?",
+        "en": "When orbital energies in many-electron atoms are compared using the n + l rule, which of the following ranks the energies of the 4f, 5d, 6s and 6p orbitals from lowest to highest?",
         "de": "In Mehrelektronenatomen werden Orbitalenergien mit der n + l-Regel verglichen. Welche Reihenfolge gibt danach die Energien der Orbitale 4f, 5d, 6s und 6p von der niedrigsten zur höchsten an?",
         "fr": "Dans les atomes polyélectroniques, on compare les énergies des orbitales avec la règle n + l. Lequel des classements suivants range alors les énergies des orbitales 4f, 5d, 6s et 6p de la plus basse à la plus haute ?",
         "ru": "В многоэлектронных атомах энергии орбиталей сравнивают по правилу n + l. В каком ряду орбитали 4f, 5d, 6s и 6p расположены в порядке возрастания энергии?",
-        "ar": "في الذرات متعددة الإلكترونات تُقارن طاقات المدارات وفق قاعدة n + l. وعليه، أيّ مما يأتي يرتب طاقات المدارات 4f و5d و6s و6p من الأقل إلى الأعلى؟",
-        "zh": "在多电子原子中，按 n + l 规则比较轨道能量。据此，下列哪项将 4f、5d、6s 和 6p 轨道的能量从低到高排列？",
-        "ku": "Di atomên pirelektronî de enerjiyên orbîtalan li gorî qaîdeya n + l têne berhevdan. Li gorî vê, rêza enerjiyên orbîtalên 4f, 5d, 6s û 6p ji ya herî nizm ber bi ya herî bilind kîjan e?"
+        "ar": "في الذرات متعددة الإلكترونات تُقارن طاقات المدارات وفق قاعدة n + l. أيّ مما يأتي يرتب طاقات المدارات 4f و5d و6s و6p من الأقل إلى الأعلى؟",
+        "zh": "在多电子原子中，按 n + l 规则比较轨道能量。下列哪项将 4f、5d、6s 和 6p 轨道的能量从低到高排列？",
+        "ku": "Di atomên pirelektronî de enerjiyên orbîtalan li gorî qaîdeya n + l têne berhevdan. Rêza enerjiyên orbîtalên 4f, 5d, 6s û 6p ji ya herî nizm ber bi ya herî bilind kîjan e?"
       },
       "options": [
         {
@@ -2112,121 +2332,25 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin15",
       "stem": {
-        "tr": "Aşağıda bazı atomların temel hâli için önerilen 2p orbital yerleşimleri verilmiştir (her parantez bir orbitali, ↑ ve ↓ zıt spinli elektronları gösterir). Bu yerleşimlerden hangisi Hund kuralına aykırıdır?",
-        "en": "Below are proposed arrangements of the 2p electrons for the ground state of some atoms (each bracket is one orbital; ↑ and ↓ are electrons of opposite spin). Which one violates Hund's rule?",
-        "de": "Unten sind für den Grundzustand einiger Atome vorgeschlagene Elektronenverteilungen in den 2p-Orbitalen angegeben (jede Klammer ist ein Orbital; ↑ und ↓ sind Elektronen mit entgegengesetztem Spin). Welche verstößt gegen die Hundsche Regel?",
-        "fr": "Ci-dessous figurent des répartitions proposées des électrons dans les orbitales 2p pour l'état fondamental de quelques atomes (chaque parenthèse est une orbitale ; ↑ et ↓ sont des électrons de spins opposés). Laquelle viole la règle de Hund ?",
-        "ru": "Ниже приведены предложенные варианты размещения электронов на 2p-орбиталях для основного состояния некоторых атомов (каждая скобка — орбиталь; ↑ и ↓ — электроны с противоположными спинами). Какое размещение нарушает правило Хунда?",
-        "ar": "فيما يلي توزيعات مقترحة للإلكترونات في مدارات 2p للحالة الأرضية لبعض الذرات (كل قوس يمثل مدارًا، و↑ و↓ إلكترونان متعاكسا المغزل). أيّها يخالف قاعدة هوند؟",
-        "zh": "下面给出为一些原子的基态所提出的 2p 轨道电子填充方式（每个括号代表一个轨道，↑ 和 ↓ 表示自旋相反的电子）。哪一项违背洪特规则？",
-        "ku": "Li jêr ji bo rewşa bingehîn a hin atoman bicihbûnên pêşniyarkirî yên elektronên 2p hatine dayîn (her kevanek orbîtalek e; ↑ û ↓ elektronên bi spinên berevajî ne). Kîjan ji van bicihbûnan li dijî qaîdeya Hund e?"
+        "tr": "Şekilde bazı atomlar için önerilen değerlik orbital diyagramları verilmiştir (1s orbitalleri tam doludur; ↑ ve ↓ zıt spinli elektronları gösterir). Bu diyagramlardan hangileri ilgili atomun temel hâline aittir?",
+        "en": "The figure shows proposed valence orbital diagrams for some atoms (the 1s orbitals are full; ↑ and ↓ show electrons of opposite spin). Which of these diagrams belong to the ground state of the atom concerned?",
+        "de": "Die Abbildung zeigt vorgeschlagene Orbitaldiagramme der Valenzschale einiger Atome (die 1s-Orbitale sind voll besetzt; ↑ und ↓ stehen für Elektronen mit entgegengesetztem Spin). Welche Diagramme gehören zum Grundzustand des jeweiligen Atoms?",
+        "fr": "La figure présente des diagrammes d'orbitales de valence proposés pour certains atomes (les orbitales 1s sont pleines ; ↑ et ↓ représentent des électrons de spins opposés). Lesquels de ces diagrammes correspondent à l'état fondamental de l'atome concerné ?",
+        "ru": "На рисунке приведены предложенные орбитальные диаграммы валентного слоя некоторых атомов (1s-орбитали заполнены; ↑ и ↓ — электроны с противоположными спинами). Какие из диаграмм соответствуют основному состоянию данного атома?",
+        "ar": "يبيّن الشكل مخططات مدارات التكافؤ المقترحة لبعض الذرات (مدارات 1s ممتلئة، و↑ و↓ إلكترونان متعاكسا المغزل). أيّ هذه المخططات يمثّل الحالة الأرضية للذرة المعنية؟",
+        "zh": "图中给出了为一些原子提出的价层轨道表示式（1s 轨道已充满；↑ 和 ↓ 表示自旋相反的电子）。其中哪些属于相应原子的基态？",
+        "ku": "Di şiklê de ji bo hin atoman diyagramên orbîtalên valansê yên pêşniyarkirî hatine dayîn (orbîtalên 1s tijî ne; ↑ û ↓ elektronên bi spinên berevajî nîşan didin). Kîjan ji van diyagraman ên rewşa bingehîn a atoma têkildar in?"
       },
       "options": [
         {
-          "tr": "7N: 2p (↑)(↑)(↑)",
-          "en": "7N: 2p (↑)(↑)(↑)",
-          "de": "7N: 2p (↑)(↑)(↑)",
-          "fr": "7N: 2p (↑)(↑)(↑)",
-          "ru": "7N: 2p (↑)(↑)(↑)",
-          "ar": "7N: 2p (↑)(↑)(↑)",
-          "zh": "7N: 2p (↑)(↑)(↑)",
-          "ku": "7N: 2p (↑)(↑)(↑)"
-        },
-        {
-          "tr": "8O: 2p (↑↓)(↑)(↑)",
-          "en": "8O: 2p (↑↓)(↑)(↑)",
-          "de": "8O: 2p (↑↓)(↑)(↑)",
-          "fr": "8O: 2p (↑↓)(↑)(↑)",
-          "ru": "8O: 2p (↑↓)(↑)(↑)",
-          "ar": "8O: 2p (↑↓)(↑)(↑)",
-          "zh": "8O: 2p (↑↓)(↑)(↑)",
-          "ku": "8O: 2p (↑↓)(↑)(↑)"
-        },
-        {
-          "tr": "6C: 2p (↑)(↑)( )",
-          "en": "6C: 2p (↑)(↑)( )",
-          "de": "6C: 2p (↑)(↑)( )",
-          "fr": "6C: 2p (↑)(↑)( )",
-          "ru": "6C: 2p (↑)(↑)( )",
-          "ar": "6C: 2p (↑)(↑)( )",
-          "zh": "6C: 2p (↑)(↑)( )",
-          "ku": "6C: 2p (↑)(↑)( )"
-        },
-        {
-          "tr": "7N: 2p (↑↓)(↑)( )",
-          "en": "7N: 2p (↑↓)(↑)( )",
-          "de": "7N: 2p (↑↓)(↑)( )",
-          "fr": "7N: 2p (↑↓)(↑)( )",
-          "ru": "7N: 2p (↑↓)(↑)( )",
-          "ar": "7N: 2p (↑↓)(↑)( )",
-          "zh": "7N: 2p (↑↓)(↑)( )",
-          "ku": "7N: 2p (↑↓)(↑)( )"
-        },
-        {
-          "tr": "9F: 2p (↑↓)(↑↓)(↑)",
-          "en": "9F: 2p (↑↓)(↑↓)(↑)",
-          "de": "9F: 2p (↑↓)(↑↓)(↑)",
-          "fr": "9F: 2p (↑↓)(↑↓)(↑)",
-          "ru": "9F: 2p (↑↓)(↑↓)(↑)",
-          "ar": "9F: 2p (↑↓)(↑↓)(↑)",
-          "zh": "9F: 2p (↑↓)(↑↓)(↑)",
-          "ku": "9F: 2p (↑↓)(↑↓)(↑)"
-        }
-      ],
-      "correctIndex": 3,
-      "explanation": {
-        "tr": "Hund kuralına göre eş enerjili 2p orbitallerine elektronlar önce aynı spinle birer birer yerleşir; eşleşme ancak her orbitalde bir elektron olduktan sonra başlar. N'nin üç 2p elektronu (↑)(↑)(↑) şeklinde olmalıdır; (↑↓)(↑)( ) yerleşiminde bir orbital boşken eşleşme yapılmıştır. C (2p2) yerleşimi tek tek ve paralel spinlidir; O (2p4) ve F (2p5) yerleşimlerinde eşleşme her orbitale birer elektron girdikten sonra yapıldığından kurala uygundur.",
-        "en": "By Hund's rule, electrons enter the degenerate 2p orbitals one by one with the same spin first; pairing starts only after each orbital has one electron. N's three 2p electrons must be (↑)(↑)(↑); in (↑↓)(↑)( ) pairing occurred while an orbital was still empty. The C (2p2) arrangement is single and parallel; in O (2p4) and F (2p5) pairing happens only after every orbital has one electron, so they obey the rule.",
-        "de": "Nach der Hundschen Regel besetzen Elektronen die entarteten 2p-Orbitale zuerst einzeln mit gleichem Spin; die Paarung beginnt erst, wenn jedes Orbital ein Elektron hat. Die drei 2p-Elektronen von N müssen (↑)(↑)(↑) sein; bei (↑↓)(↑)( ) wurde gepaart, obwohl ein Orbital noch leer war. Bei C (2p2) sind die Elektronen einzeln und parallel; bei O (2p4) und F (2p5) erfolgt die Paarung erst, nachdem jedes Orbital ein Elektron hat, also regelkonform.",
-        "fr": "Selon la règle de Hund, les électrons entrent d'abord un par un, avec le même spin, dans les orbitales 2p dégénérées ; l'appariement ne commence qu'après que chaque orbitale a un électron. Les trois électrons 2p de N doivent être (↑)(↑)(↑) ; dans (↑↓)(↑)( ), l'appariement a eu lieu alors qu'une orbitale était encore vide. Pour C (2p2), les électrons sont seuls et parallèles ; pour O (2p4) et F (2p5), l'appariement n'intervient qu'après que chaque orbitale a un électron : ils respectent la règle.",
-        "ru": "По правилу Хунда электроны сначала по одному, с одинаковыми спинами, занимают 2p-орбитали одинаковой энергии; спаривание начинается только после того, как на каждой орбитали окажется по одному электрону. Три 2p-электрона N должны располагаться так: (↑)(↑)(↑); в размещении (↑↓)(↑)( ) спаривание произошло, когда одна орбиталь ещё пустовала. У C (2p2) электроны одиночные и с параллельными спинами; у O (2p4) и F (2p5) спаривание происходит после того, как на каждую орбиталь попал один электрон, поэтому правило соблюдено.",
-        "ar": "وفق قاعدة هوند تدخل الإلكترونات مدارات 2p المتساوية الطاقة أولًا واحدًا واحدًا وبالمغزل نفسه، ولا يبدأ الازدواج إلا بعد أن يحوي كل مدار إلكترونًا. يجب أن تكون إلكترونات 2p الثلاثة للنيتروجين (↑)(↑)(↑)؛ أما في (↑↓)(↑)( ) فقد حدث الازدواج مع بقاء مدار فارغ. توزيع C (2p2) مفرد ومتوازٍ، وفي O (2p4) وF (2p5) يحدث الازدواج بعد أن يحوي كل مدار إلكترونًا، فهي موافقة للقاعدة.",
-        "zh": "按洪特规则，电子先以相同自旋逐个进入能量相同的 2p 轨道，每个轨道都有一个电子后才开始成对。N 的三个 2p 电子应为 (↑)(↑)(↑)；(↑↓)(↑)( ) 在仍有空轨道时就成对了。C (2p2) 的电子单独且平行；O (2p4) 和 F (2p5) 都是在每个轨道各有一个电子后才成对，符合规则。",
-        "ku": "Li gorî qaîdeya Hund elektron pêşî yek bi yek û bi heman spinê dikevin orbîtalên 2p yên xwedî heman enerjiyê; cotbûn tenê piştî ku di her orbîtalê de elektronek hebe dest pê dike. Divê sê elektronên 2p yên N wek (↑)(↑)(↑) bin; di bicihbûna (↑↓)(↑)( ) de dema orbîtalek hîn vala bû cotbûn çêbûye. Bicihbûna C (2p2) yek bi yek û bi spinên paralel e; di O (2p4) û F (2p5) de cotbûn piştî ku di her orbîtalê de elektronek bi cih bû çêdibe, loma li gorî qaîdeyê ne."
-      }
-    },
-    {
-      "id": "u11-twin16",
-      "stem": {
-        "tr": "3. periyotta bulunan X, Y ve Z atomlarının değerlik elektron dizilimleri şöyledir: X: 3s1, Y: 3s2 3p1, Z: 3s2 3p3. Buna göre; I. Birinci iyonlaşma enerjisi en büyük olan Z'dir. II. Y'nin birinci iyonlaşma enerjisi X'inkinden büyüktür. III. Atom yarıçapı en büyük olan Z'dir. yargılarından hangileri doğrudur?",
-        "en": "The valence electron configurations of atoms X, Y and Z in period 3 are: X: 3s1, Y: 3s2 3p1, Z: 3s2 3p3. Accordingly: I. Z has the highest first ionization energy. II. The first ionization energy of Y is greater than that of X. III. Z has the largest atomic radius. Which of these statements are correct?",
-        "de": "Die Valenzelektronenkonfigurationen der Atome X, Y und Z der 3. Periode lauten: X: 3s1, Y: 3s2 3p1, Z: 3s2 3p3. Demnach: I. Z hat die höchste erste Ionisierungsenergie. II. Die erste Ionisierungsenergie von Y ist größer als die von X. III. Z hat den größten Atomradius. Welche Aussagen sind richtig?",
-        "fr": "Les configurations électroniques de valence des atomes X, Y et Z de la 3e période sont : X : 3s1, Y : 3s2 3p1, Z : 3s2 3p3. Par conséquent : I. Z a la plus grande première énergie d'ionisation. II. La première énergie d'ionisation de Y est supérieure à celle de X. III. Z a le plus grand rayon atomique. Lesquelles de ces affirmations sont correctes ?",
-        "ru": "Валентные электронные конфигурации атомов X, Y и Z 3-го периода: X: 3s1, Y: 3s2 3p1, Z: 3s2 3p3. Даны утверждения: I. Наибольшая первая энергия ионизации у Z. II. Первая энергия ионизации Y больше, чем у X. III. Наибольший атомный радиус у Z. Какие из них верны?",
-        "ar": "توزيعات إلكترونات التكافؤ للذرات X وY وZ في الدورة الثالثة هي: X: 3s1، Y: 3s2 3p1، Z: 3s2 3p3. وعليه: I. أعلى طاقة تأين أولى هي لـ Z. II. طاقة التأين الأولى لـ Y أكبر من طاقة X. III. أكبر نصف قطر ذري هو لـ Z. أيّ هذه العبارات صحيحة؟",
-        "zh": "第 3 周期原子 X、Y、Z 的价电子排布为：X：3s1，Y：3s2 3p1，Z：3s2 3p3。据此：I. 第一电离能最大的是 Z。II. Y 的第一电离能大于 X。III. 原子半径最大的是 Z。以上说法中哪些正确？",
-        "ku": "Rêzkirinên elektronên valansê yên atomên X, Y û Z yên di periyoda 3. de ev in: X: 3s1, Y: 3s2 3p1, Z: 3s2 3p3. Li gorî vê: I. Enerjiya îyonîzasyonê ya yekem a herî mezin ya Z ye. II. Enerjiya îyonîzasyonê ya yekem a Y ji ya X mezintir e. III. Nîvçapa atomê ya herî mezin ya Z ye. Kîjan ji van gotinan rast in?"
-      },
-      "options": [
-        {
-          "tr": "Yalnız II",
-          "en": "II only",
-          "de": "Nur II",
-          "fr": "II seulement",
-          "ru": "Только II",
-          "ar": "II فقط",
-          "zh": "仅 II",
-          "ku": "Tenê II"
-        },
-        {
-          "tr": "I ve II",
-          "en": "I and II",
-          "de": "I und II",
-          "fr": "I et II",
-          "ru": "I и II",
-          "ar": "I و II",
-          "zh": "I 和 II",
-          "ku": "I û II"
-        },
-        {
-          "tr": "Yalnız III",
-          "en": "III only",
-          "de": "Nur III",
-          "fr": "III seulement",
-          "ru": "Только III",
-          "ar": "III فقط",
-          "zh": "仅 III",
-          "ku": "Tenê III"
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
           "tr": "I ve III",
@@ -2247,18 +2371,138 @@ export const unit11: ChemistryUnitSeedData = {
           "ar": "II و III",
           "zh": "II 和 III",
           "ku": "II û III"
+        },
+        {
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
+        },
+        {
+          "tr": "I, III ve IV",
+          "en": "I, III and IV",
+          "de": "I, III und IV",
+          "fr": "I, III et IV",
+          "ru": "I, III и IV",
+          "ar": "I و III و IV",
+          "zh": "I、III 和 IV",
+          "ku": "I, III û IV"
         }
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "X = Na (1A), Y = Al (3A), Z = P (5A). Aynı periyotta soldan sağa çekirdek yükü arttığından iyonlaşma enerjisi genel olarak artar, atom yarıçapı azalır. I doğru: Z en sağdadır ve yarı dolu 3p3 alt kabuğu ek kararlılık sağlar. II doğru: 3A'nın iyonlaşma enerjisi 2A'dan küçük olsa da 1A'dan büyüktür (Al > Na). III yanlış: yarıçapı en büyük olan periyodun başındaki X'tir.",
-        "en": "X = Na (1A), Y = Al (3A), Z = P (5A). Across a period the nuclear charge increases, so ionization energy generally rises and atomic radius decreases. I is true: Z is farthest right and its half-filled 3p3 sublevel adds stability. II is true: although 3A's ionization energy is lower than 2A's, it is higher than 1A's (Al > Na). III is false: the largest radius belongs to X at the start of the period.",
-        "de": "X = Na (1A), Y = Al (3A), Z = P (5A). Innerhalb einer Periode nimmt die Kernladung zu, daher steigt die Ionisierungsenergie im Allgemeinen und der Atomradius sinkt. I ist richtig: Z steht am weitesten rechts, und sein halbbesetztes 3p3-Unterniveau bringt zusätzliche Stabilität. II ist richtig: Die Ionisierungsenergie von 3A ist zwar kleiner als die von 2A, aber größer als die von 1A (Al > Na). III ist falsch: Den größten Radius hat X am Anfang der Periode.",
-        "fr": "X = Na (1A), Y = Al (3A), Z = P (5A). Le long d'une période, la charge nucléaire augmente : l'énergie d'ionisation croît en général et le rayon atomique diminue. I est vraie : Z est le plus à droite et sa sous-couche 3p3 à moitié remplie lui apporte de la stabilité. II est vraie : l'énergie d'ionisation de 3A est inférieure à celle de 2A mais supérieure à celle de 1A (Al > Na). III est fausse : le plus grand rayon est celui de X, en début de période.",
-        "ru": "X = Na (1A), Y = Al (3A), Z = P (5A). В периоде слева направо заряд ядра растёт, поэтому энергия ионизации в целом увеличивается, а атомный радиус уменьшается. I верно: Z стоит правее всех, а наполовину заполненный подуровень 3p3 придаёт дополнительную устойчивость. II верно: энергия ионизации у 3A хотя и меньше, чем у 2A, но больше, чем у 1A (Al > Na). III неверно: наибольший радиус у X, стоящего в начале периода.",
-        "ar": "X = Na (1A)، Y = Al (3A)، Z = P (5A). في الدورة من اليسار إلى اليمين تزداد شحنة النواة، فتزداد طاقة التأين عمومًا ويقل نصف القطر الذري. I صحيحة: تقع Z في أقصى اليمين ومستواها الفرعي 3p3 نصف الممتلئ يمنحها استقرارًا إضافيًا. II صحيحة: طاقة تأين 3A وإن كانت أقل من 2A فهي أكبر من 1A (Al > Na). III خاطئة: أكبر نصف قطر هو لـ X في بداية الدورة.",
-        "zh": "X = Na (1A)，Y = Al (3A)，Z = P (5A)。同周期从左到右核电荷增大，电离能总体增大，原子半径减小。I 正确：Z 位于最右侧，半充满的 3p3 亚层还带来额外稳定性。II 正确：3A 的电离能虽小于 2A，但大于 1A (Al > Na)。III 错误：半径最大的是位于周期开头的 X。",
-        "ku": "X = Na (1A), Y = Al (3A), Z = P (5A). Di heman periyodê de ji çepê ber bi rastê bara navokê zêde dibe, loma enerjiya îyonîzasyonê bi giştî zêde dibe û nîvçapa atomê piçûk dibe. I rast e: Z li aliyê herî rastê ye û binqata wê ya nîvtijî 3p3 aramiyeke zêde dide. II rast e: enerjiya îyonîzasyonê ya 3A her çend ji ya 2A piçûktir be jî, ji ya 1A mezintir e (Al > Na). III şaş e: nîvçapa herî mezin ya X ye ku li destpêka periyodê ye."
+        "tr": "I. C (2s2 2p2): iki 2p elektronu ayrı orbitallerde ve aynı spinlidir; temel hâldir. II. N (2s2 2p3): üç 2p elektronu ayrı orbitallere yerleşmiş ama spinleri paralel değildir; Hund kuralına göre eş enerjili orbitallerdeki tek elektronlar aynı spinli olmalıdır, bu diyagram temel hâl değildir. III. O (2s2 2p4): üç orbitale birer elektron girdikten sonra eşleşme yapılmıştır; temel hâldir. IV. B: 2s dolmadan 2p'ye elektron geçmiştir (2s1 2p2); bu uyarılmış hâldir, temel hâl 2s2 2p1'dir. Temel hâle ait olanlar I ve III'tür. Elektronların ayrı orbitallerde olmasını Hund kuralı için yeterli sanıp spin yönlerini gözden kaçırmak tipik bir hatadır.",
+        "en": "I. C (2s2 2p2): the two 2p electrons are in separate orbitals with the same spin; this is the ground state. II. N (2s2 2p3): the three 2p electrons are in separate orbitals but their spins are not parallel; by Hund's rule single electrons in degenerate orbitals must have the same spin, so this is not the ground state. III. O (2s2 2p4): pairing occurs only after each of the three orbitals has one electron; ground state. IV. B: an electron has moved to 2p before 2s is filled (2s1 2p2); this is an excited state, the ground state being 2s2 2p1. The diagrams of the ground state are I and III. Thinking that separate orbitals alone satisfy Hund's rule and overlooking the spin directions is a typical mistake.",
+        "de": "I. C (2s2 2p2): Die beiden 2p-Elektronen besetzen getrennte Orbitale mit gleichem Spin; Grundzustand. II. N (2s2 2p3): Die drei 2p-Elektronen besetzen getrennte Orbitale, ihre Spins sind aber nicht parallel; nach der Hundschen Regel müssen Einzelelektronen in energiegleichen Orbitalen den gleichen Spin haben, daher kein Grundzustand. III. O (2s2 2p4): Die Paarung erfolgt erst, nachdem jedes der drei Orbitale ein Elektron enthält; Grundzustand. IV. B: Ein Elektron ist in 2p, bevor 2s voll ist (2s1 2p2); das ist ein angeregter Zustand, der Grundzustand ist 2s2 2p1. Zum Grundzustand gehören I und III. Ein typischer Fehler ist, getrennte Orbitale schon für die Hundsche Regel ausreichend zu halten und die Spinrichtungen zu übersehen.",
+        "fr": "I. C (2s2 2p2) : les deux électrons 2p occupent des orbitales différentes avec le même spin ; état fondamental. II. N (2s2 2p3) : les trois électrons 2p occupent des orbitales différentes, mais leurs spins ne sont pas parallèles ; d'après la règle de Hund, les électrons célibataires d'orbitales de même énergie doivent avoir le même spin, ce n'est donc pas l'état fondamental. III. O (2s2 2p4) : l'appariement n'a lieu qu'après que chacune des trois orbitales a reçu un électron ; état fondamental. IV. B : un électron est passé en 2p avant que 2s soit plein (2s1 2p2) ; c'est un état excité, l'état fondamental étant 2s2 2p1. Les diagrammes de l'état fondamental sont I et III. Croire que des orbitales séparées suffisent à respecter la règle de Hund et négliger le sens des spins est une erreur typique.",
+        "ru": "I. C (2s2 2p2): два 2p-электрона находятся на разных орбиталях с одинаковыми спинами; основное состояние. II. N (2s2 2p3): три 2p-электрона на разных орбиталях, но их спины не параллельны; по правилу Хунда неспаренные электроны на орбиталях одинаковой энергии должны иметь одинаковые спины, поэтому это не основное состояние. III. O (2s2 2p4): спаривание происходит только после того, как на каждой из трёх орбиталей оказалось по электрону; основное состояние. IV. B: электрон перешёл на 2p до заполнения 2s (2s1 2p2); это возбуждённое состояние, основное — 2s2 2p1. Основному состоянию соответствуют I и III. Типичная ошибка — считать, что для правила Хунда достаточно разных орбиталей, и не обращать внимания на направление спинов.",
+        "ar": "I. C (2s2 2p2): إلكترونا 2p في مدارين مختلفين وبالمغزل نفسه؛ حالة أرضية. II. N (2s2 2p3): إلكترونات 2p الثلاثة في مدارات مختلفة لكن مغازلها غير متوازية؛ ووفق قاعدة هوند يجب أن يكون للإلكترونات المنفردة في المدارات المتساوية الطاقة المغزل نفسه، فهذا ليس حالة أرضية. III. O (2s2 2p4): لم يحدث الازدواج إلا بعد أن دخل إلكترون في كل مدار من المدارات الثلاثة؛ حالة أرضية. IV. B: انتقل إلكترون إلى 2p قبل امتلاء 2s (2s1 2p2)؛ هذه حالة مثارة، والحالة الأرضية 2s2 2p1. المخططات التي تمثل الحالة الأرضية هي I و III. ومن الأخطاء الشائعة الظن أن وجود الإلكترونات في مدارات منفصلة يكفي لتحقيق قاعدة هوند وإغفال اتجاه المغزل.",
+        "zh": "I. C(2s2 2p2)：两个 2p 电子分占不同轨道且自旋相同，是基态。II. N(2s2 2p3)：三个 2p 电子虽分占不同轨道，但自旋不平行；按洪特规则，简并轨道中的单电子自旋应相同，所以不是基态。III. O(2s2 2p4)：三个轨道各有一个电子后才开始成对，是基态。IV. B：2s 未充满电子就进入了 2p(2s1 2p2)，这是激发态，基态应为 2s2 2p1。属于基态的是 I 和 III。认为电子分占不同轨道就满足洪特规则而忽略自旋方向，是典型错误。",
+        "ku": "I. C (2s2 2p2): du elektronên 2p di orbîtalên cuda de û bi heman spinê ne; rewşa bingehîn e. II. N (2s2 2p3): sê elektronên 2p di orbîtalên cuda de ne lê spinên wan ne paralel in; li gorî qaîdeya Hund divê elektronên tenê yên di orbîtalên wekhevenerjî de xwedî heman spinê bin, ji ber vê yekê ev ne rewşa bingehîn e. III. O (2s2 2p4): cotbûn tenê piştî ku her sê orbîtal yek elektron girtin çêbûye; rewşa bingehîn e. IV. B: berî ku 2s tijî bibe elektronek derbasî 2p bûye (2s1 2p2); ev rewşa heyecanbûyî ye, rewşa bingehîn 2s2 2p1 e. Yên rewşa bingehîn I û III in. Hesibandina ku bes cudabûna orbîtalan ji bo qaîdeya Hund têr e û nedîtina arasteya spinan xeletiyeke tîpîk e."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 232,
+        "markup": "<text x=\"155\" y=\"24\" text-anchor=\"middle\" class=\"qf-strong\">2s</text><text x=\"265\" y=\"24\" text-anchor=\"middle\" class=\"qf-strong\">2p</text><text x=\"14\" y=\"57\" class=\"qf-strong\">I.</text><text x=\"58\" y=\"57\" class=\"qf-big\">₆C</text><rect x=\"135\" y=\"36\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"155\" y=\"57\" text-anchor=\"middle\" class=\"qf-big\">↑↓</text><rect x=\"205\" y=\"36\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"225\" y=\"57\" text-anchor=\"middle\" class=\"qf-big\">↑</text><rect x=\"245\" y=\"36\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"265\" y=\"57\" text-anchor=\"middle\" class=\"qf-big\">↑</text><rect x=\"285\" y=\"36\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"14\" y=\"105\" class=\"qf-strong\">II.</text><text x=\"58\" y=\"105\" class=\"qf-big\">₇N</text><rect x=\"135\" y=\"84\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"155\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">↑↓</text><rect x=\"205\" y=\"84\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"225\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">↑</text><rect x=\"245\" y=\"84\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"265\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">↓</text><rect x=\"285\" y=\"84\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"305\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">↑</text><text x=\"14\" y=\"153\" class=\"qf-strong\">III.</text><text x=\"58\" y=\"153\" class=\"qf-big\">₈O</text><rect x=\"135\" y=\"132\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"155\" y=\"153\" text-anchor=\"middle\" class=\"qf-big\">↑↓</text><rect x=\"205\" y=\"132\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"225\" y=\"153\" text-anchor=\"middle\" class=\"qf-big\">↑↓</text><rect x=\"245\" y=\"132\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"265\" y=\"153\" text-anchor=\"middle\" class=\"qf-big\">↑</text><rect x=\"285\" y=\"132\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"305\" y=\"153\" text-anchor=\"middle\" class=\"qf-big\">↑</text><text x=\"14\" y=\"201\" class=\"qf-strong\">IV.</text><text x=\"58\" y=\"201\" class=\"qf-big\">₅B</text><rect x=\"135\" y=\"180\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"155\" y=\"201\" text-anchor=\"middle\" class=\"qf-big\">↑</text><rect x=\"205\" y=\"180\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"225\" y=\"201\" text-anchor=\"middle\" class=\"qf-big\">↑</text><rect x=\"245\" y=\"180\" width=\"40\" height=\"30\" class=\"qf-fill\"/><text x=\"265\" y=\"201\" text-anchor=\"middle\" class=\"qf-big\">↑</text><rect x=\"285\" y=\"180\" width=\"40\" height=\"30\" class=\"qf-fill\"/>"
+      }
+    },
+    {
+      "id": "u11-twin16",
+      "stem": {
+        "tr": "Şekildeki periyodik sistem kesitinde X, Y, Z ve T elementlerinin yerleri gösterilmiştir.\nI. Y'nin birinci iyonlaşma enerjisi X'inkinden küçüktür.\nII. T'nin birinci iyonlaşma enerjisi Z'ninkinden büyüktür.\nIII. Z'nin temel hâl elektron diziliminde son alt kabuk yarı doludur.\nyargılarından hangileri doğrudur?",
+        "en": "The periodic-table section in the figure shows the positions of elements X, Y, Z and T. Which of the following statements are true?\nI. The first ionization energy of Y is smaller than that of X.\nII. The first ionization energy of T is greater than that of Z.\nIII. In the ground-state electron configuration of Z, the last sublevel is half-filled.",
+        "de": "Der Ausschnitt des Periodensystems in der Abbildung zeigt die Positionen der Elemente X, Y, Z und T. Welche Aussagen sind richtig?\nI. Die erste Ionisierungsenergie von Y ist kleiner als die von X.\nII. Die erste Ionisierungsenergie von T ist größer als die von Z.\nIII. In der Grundzustandskonfiguration von Z ist das letzte Unterniveau halb besetzt.",
+        "fr": "L'extrait du tableau périodique de la figure indique la position des éléments X, Y, Z et T. Quelles affirmations sont vraies ?\nI. La première énergie d'ionisation de Y est inférieure à celle de X.\nII. La première énergie d'ionisation de T est supérieure à celle de Z.\nIII. Dans la configuration de l'état fondamental de Z, la dernière sous-couche est à moitié remplie.",
+        "ru": "На фрагменте периодической системы на рисунке показано положение элементов X, Y, Z и T. Какие утверждения верны?\nI. Первая энергия ионизации Y меньше, чем у X.\nII. Первая энергия ионизации T больше, чем у Z.\nIII. В электронной конфигурации основного состояния Z последний подуровень заполнен наполовину.",
+        "ar": "يبيّن جزء الجدول الدوري في الشكل مواقع العناصر X وY وZ وT. أيّ العبارات الآتية صحيحة؟\nI. طاقة التأين الأولى للعنصر Y أصغر منها للعنصر X.\nII. طاقة التأين الأولى للعنصر T أكبر منها للعنصر Z.\nIII. في التوزيع الإلكتروني للحالة الأرضية للعنصر Z يكون المستوى الفرعي الأخير نصف ممتلئ.",
+        "zh": "图中的元素周期表片段标出了元素 X、Y、Z、T 的位置。下列说法中哪些正确？\nI. Y 的第一电离能小于 X。\nII. T 的第一电离能大于 Z。\nIII. Z 的基态电子排布中最后一个亚层为半充满。",
+        "ku": "Di beşa tabloya periyodîk a di şiklê de cihên elementên X, Y, Z û T hatine nîşandan. Kîjan ji van gotinan rast in?\nI. Enerjiya îyonîzasyonê ya yekem a Y ji ya X biçûktir e.\nII. Enerjiya îyonîzasyonê ya yekem a T ji ya Z mezintir e.\nIII. Di rêzkirina elektronan a rewşa bingehîn a Z de binqata dawî nîvtijî ye."
+      },
+      "options": [
+        {
+          "tr": "Yalnız I",
+          "en": "Only I",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
+        },
+        {
+          "tr": "Yalnız II",
+          "en": "Only II",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
+        },
+        {
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
+        },
+        {
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
+        },
+        {
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": {
+        "tr": "Şekilde X 2. periyot 2A (2s2, Be), Y 2. periyot 3A (2s2 2p1, B), Z 3. periyot 5A (3s2 3p3, P), T 3. periyot 6A (3s2 3p4, S) elementidir. I doğrudur: 2A'nın değerlik elektronları tam dolu 2s alt kabuğundadır; 3A'nın tek 2p elektronu daha kolay koparılır, bu yüzden İE1(Y) < İE1(X). II yanlıştır: Z'nin yarı dolu 3p3 alt kabuğu küresel simetrik ve kararlıdır; T'de 3p4'teki eşleşmiş elektronlar birbirini ittiği için bir elektron daha kolay kopar, İE1(T) < İE1(Z). III doğrudur: Z'nin son alt kabuğu 3p3'tür, yarı doludur. İyonlaşma enerjisinin periyotta soldan sağa hiç istisnasız arttığını sanmak tipik bir hatadır.",
+        "en": "From the figure, X is the period-2 group-2A element (2s2, Be), Y the period-2 group-3A element (2s2 2p1, B), Z the period-3 group-5A element (3s2 3p3, P) and T the period-3 group-6A element (3s2 3p4, S). I is true: the valence electrons of 2A are in the full 2s sublevel, while the single 2p electron of 3A is removed more easily, so IE1(Y) < IE1(X). II is false: Z's half-filled 3p3 sublevel is spherically symmetric and stable; in T the paired electrons of 3p4 repel each other, so one is removed more easily and IE1(T) < IE1(Z). III is true: Z's last sublevel is 3p3, which is half-filled. Thinking that ionization energy always increases across a period without exception is a typical mistake.",
+        "de": "Laut Abbildung ist X das Element der 2. Periode, Gruppe 2A (2s2, Be), Y das der 2. Periode, Gruppe 3A (2s2 2p1, B), Z das der 3. Periode, Gruppe 5A (3s2 3p3, P) und T das der 3. Periode, Gruppe 6A (3s2 3p4, S). I ist richtig: Die Valenzelektronen von 2A befinden sich im vollen 2s-Unterniveau, das einzelne 2p-Elektron von 3A wird leichter abgegeben, also IE1(Y) < IE1(X). II ist falsch: Das halb besetzte 3p3-Unterniveau von Z ist kugelsymmetrisch und stabil; bei T stoßen sich die gepaarten Elektronen in 3p4 ab, daher wird eines leichter abgegeben und IE1(T) < IE1(Z). III ist richtig: Das letzte Unterniveau von Z ist 3p3 und halb besetzt. Ein typischer Fehler ist anzunehmen, die Ionisierungsenergie nehme innerhalb einer Periode ausnahmslos zu.",
+        "fr": "D'après la figure, X est l'élément de la 2e période, groupe 2A (2s2, Be), Y celui de la 2e période, groupe 3A (2s2 2p1, B), Z celui de la 3e période, groupe 5A (3s2 3p3, P) et T celui de la 3e période, groupe 6A (3s2 3p4, S). I est vraie : les électrons de valence du groupe 2A sont dans la sous-couche 2s pleine, tandis que l'unique électron 2p du groupe 3A s'arrache plus facilement, donc EI1(Y) < EI1(X). II est fausse : la sous-couche 3p3 à moitié remplie de Z est à symétrie sphérique et stable ; dans T, les électrons appariés de 3p4 se repoussent, l'un d'eux s'arrache plus facilement et EI1(T) < EI1(Z). III est vraie : la dernière sous-couche de Z est 3p3, à moitié remplie. Croire que l'énergie d'ionisation augmente sans exception le long d'une période est une erreur typique.",
+        "ru": "По рисунку X — элемент 2-го периода группы 2A (2s2, Be), Y — 2-го периода группы 3A (2s2 2p1, B), Z — 3-го периода группы 5A (3s2 3p3, P), T — 3-го периода группы 6A (3s2 3p4, S). I верно: валентные электроны элемента 2A находятся на заполненном 2s-подуровне, а единственный 2p-электрон элемента 3A отрывается легче, поэтому ЭИ1(Y) < ЭИ1(X). II неверно: наполовину заполненный 3p3-подуровень Z сферически симметричен и устойчив; у T спаренные электроны 3p4 отталкиваются, поэтому один из них отрывается легче и ЭИ1(T) < ЭИ1(Z). III верно: последний подуровень Z — 3p3, заполненный наполовину. Считать, что энергия ионизации в периоде растёт без исключений, — типичная ошибка.",
+        "ar": "من الشكل: X عنصر الدورة الثانية في المجموعة 2A (2s2، Be)، وY عنصر الدورة الثانية في المجموعة 3A (2s2 2p1، B)، وZ عنصر الدورة الثالثة في المجموعة 5A (3s2 3p3، P)، وT عنصر الدورة الثالثة في المجموعة 6A (3s2 3p4، S). العبارة I صحيحة: إلكترونات تكافؤ 2A في المستوى الفرعي 2s الممتلئ، أما إلكترون 2p الوحيد في 3A فيُنزع بسهولة أكبر، لذا IE1(Y) < IE1(X). العبارة II خاطئة: المستوى الفرعي 3p3 نصف الممتلئ في Z متناظر كرويًا ومستقر، وفي T تتنافر الإلكترونات المزدوجة في 3p4 فيُنزع أحدها بسهولة أكبر، لذا IE1(T) < IE1(Z). العبارة III صحيحة: المستوى الفرعي الأخير في Z هو 3p3 وهو نصف ممتلئ. ومن الأخطاء الشائعة الظن أن طاقة التأين تزداد عبر الدورة دون أي استثناء.",
+        "zh": "由图可知，X 是第 2 周期 2A 族元素(2s2，Be)，Y 是第 2 周期 3A 族元素(2s2 2p1，B)，Z 是第 3 周期 5A 族元素(3s2 3p3，P)，T 是第 3 周期 6A 族元素(3s2 3p4，S)。I 正确：2A 族的价电子在全充满的 2s 亚层，而 3A 族唯一的 2p 电子更易失去，所以 IE1(Y) < IE1(X)。II 错误：Z 的 3p3 亚层半充满，呈球形对称而稳定；T 的 3p4 中成对电子相互排斥，其中一个更易失去，所以 IE1(T) < IE1(Z)。III 正确：Z 的最后一个亚层是半充满的 3p3。认为同周期电离能毫无例外地递增，是典型错误。",
+        "ku": "Li gorî şiklê X elementa periyoda 2. ya koma 2A (2s2, Be), Y ya periyoda 2. ya koma 3A (2s2 2p1, B), Z ya periyoda 3. ya koma 5A (3s2 3p3, P) û T ya periyoda 3. ya koma 6A (3s2 3p4, S) ye. I rast e: elektronên valansê yên 2A di binqata 2s a tijî de ne; elektrona 2p a tenê ya 3A hêsantir tê qetandin, ji ber vê yekê IE1(Y) < IE1(X). II şaş e: binqata 3p3 a nîvtijî ya Z xwedî sîmetriya gewherî û aram e; li T elektronên cot ên 3p4 hev dehf didin, ji ber vê yekê yek ji wan hêsantir tê qetandin û IE1(T) < IE1(Z). III rast e: binqata dawî ya Z 3p3 e û nîvtijî ye. Hesibandina ku enerjiya îyonîzasyonê di periyodê de bê îstisna zêde dibe xeletiyeke tîpîk e."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 120,
+        "markup": "<text x=\"63.0\" y=\"24\" text-anchor=\"middle\" class=\"qf-small\">1A</text><text x=\"101.0\" y=\"24\" text-anchor=\"middle\" class=\"qf-small\">2A</text><text x=\"139.0\" y=\"24\" text-anchor=\"middle\" class=\"qf-small\">3A</text><text x=\"177.0\" y=\"24\" text-anchor=\"middle\" class=\"qf-small\">4A</text><text x=\"215.0\" y=\"24\" text-anchor=\"middle\" class=\"qf-small\">5A</text><text x=\"253.0\" y=\"24\" text-anchor=\"middle\" class=\"qf-small\">6A</text><text x=\"291.0\" y=\"24\" text-anchor=\"middle\" class=\"qf-small\">7A</text><text x=\"329.0\" y=\"24\" text-anchor=\"middle\" class=\"qf-small\">8A</text><text x=\"30\" y=\"57.0\" text-anchor=\"middle\" class=\"qf-strong\">2</text><rect x=\"44\" y=\"34\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"82\" y=\"34\" width=\"38\" height=\"36\" class=\"qf-accent\"/><text x=\"101.0\" y=\"58.0\" text-anchor=\"middle\" class=\"qf-big\">X</text><rect x=\"120\" y=\"34\" width=\"38\" height=\"36\" class=\"qf-accent\"/><text x=\"139.0\" y=\"58.0\" text-anchor=\"middle\" class=\"qf-big\">Y</text><rect x=\"158\" y=\"34\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"196\" y=\"34\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"234\" y=\"34\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"272\" y=\"34\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"310\" y=\"34\" width=\"38\" height=\"36\" class=\"qf-fill\"/><text x=\"30\" y=\"93.0\" text-anchor=\"middle\" class=\"qf-strong\">3</text><rect x=\"44\" y=\"70\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"82\" y=\"70\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"120\" y=\"70\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"158\" y=\"70\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"196\" y=\"70\" width=\"38\" height=\"36\" class=\"qf-accent\"/><text x=\"215.0\" y=\"94.0\" text-anchor=\"middle\" class=\"qf-big\">Z</text><rect x=\"234\" y=\"70\" width=\"38\" height=\"36\" class=\"qf-accent\"/><text x=\"253.0\" y=\"94.0\" text-anchor=\"middle\" class=\"qf-big\">T</text><rect x=\"272\" y=\"70\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"310\" y=\"70\" width=\"38\" height=\"36\" class=\"qf-fill\"/><rect x=\"44\" y=\"34\" width=\"304\" height=\"72\" class=\"qf-line\"/><text x=\"30\" y=\"24\" text-anchor=\"middle\" class=\"qf-small\">{{per}}</text>",
+        "labels": {
+          "per": {
+            "tr": "Per.",
+            "en": "Per.",
+            "de": "Per.",
+            "fr": "Pér.",
+            "ru": "Пер.",
+            "ar": "الدورة",
+            "zh": "周期",
+            "ku": "Per."
+          }
+        }
       }
     }
   ]

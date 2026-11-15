@@ -248,14 +248,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-f07",
       "fact": {
-        "tr": "Joule-Thomson olayı: Sıkıştırılmış gerçek gazların çoğu, oda koşullarında dar bir delikten düşük basınca genleşirken moleküller arası çekimi yenmek için enerji harcar ve soğur (buzdolabı ve klimaların çalışma ilkesi).",
-        "en": "Joule-Thomson effect: at room conditions most compressed real gases, while expanding through a narrow opening to low pressure, spend energy to overcome intermolecular attraction and cool down (the working principle of refrigerators and air conditioners).",
-        "de": "Joule-Thomson-Effekt: Bei Raumbedingungen verbrauchen die meisten komprimierten realen Gase beim Entspannen durch eine enge Öffnung auf niedrigen Druck Energie, um die zwischenmolekulare Anziehung zu überwinden, und kühlen ab (Funktionsprinzip von Kühlschränken und Klimaanlagen).",
-        "fr": "Effet Joule-Thomson : dans les conditions ambiantes, la plupart des gaz réels comprimés qui se détendent à travers un orifice étroit vers une basse pression dépensent de l'énergie pour vaincre l'attraction intermoléculaire et se refroidissent (principe des réfrigérateurs et des climatiseurs).",
-        "ru": "Эффект Джоуля — Томсона: в комнатных условиях большинство сжатых реальных газов при расширении через узкое отверстие в область низкого давления затрачивают энергию на преодоление межмолекулярного притяжения и охлаждаются (на этом основана работа холодильников и кондиционеров).",
-        "ar": "ظاهرة جول-طومسون: في ظروف الغرفة تستهلك معظم الغازات الحقيقية المضغوطة، عند تمددها عبر فتحة ضيقة إلى ضغط منخفض، طاقةً للتغلب على التجاذب بين الجزيئات فتبرد (مبدأ عمل الثلاجات والمكيفات).",
-        "zh": "焦耳-汤姆孙效应：在室温条件下，大多数被压缩的真实气体经狭窄小孔向低压膨胀时，要消耗能量克服分子间引力而降温（冰箱和空调的工作原理）。",
-        "ku": "Bandora Joule-Thomson: Di şertên odeyê de piraniya gazên rastîn ên tepisandî, dema ji qulikeke teng ber bi zexta nizm berfireh dibin, ji bo derbaskirina kişandina navmolekulî enerjiyê xerc dikin û sar dibin (prensîba xebata sarinc û klîmayan)."
+        "tr": "Joule-Thomson olayı: Sıkıştırılmış gerçek gazların çoğu, oda koşullarında dar bir delikten düşük basınca genleşirken moleküller arası çekimi yenmek için enerji harcar ve soğur (gazların Linde yöntemiyle sıvılaştırılması bu soğumaya dayanır).",
+        "en": "Joule-Thomson effect: at room conditions most compressed real gases, while expanding through a narrow opening to low pressure, spend energy to overcome intermolecular attraction and cool down (the liquefaction of gases by the Linde process relies on this cooling).",
+        "de": "Joule-Thomson-Effekt: Bei Raumbedingungen verbrauchen die meisten komprimierten realen Gase beim Entspannen durch eine enge Öffnung auf niedrigen Druck Energie, um die zwischenmolekulare Anziehung zu überwinden, und kühlen ab (darauf beruht die Gasverflüssigung im Linde-Verfahren).",
+        "fr": "Effet Joule-Thomson : dans les conditions ambiantes, la plupart des gaz réels comprimés qui se détendent à travers un orifice étroit vers une basse pression dépensent de l'énergie pour vaincre l'attraction intermoléculaire et se refroidissent (la liquéfaction des gaz par le procédé Linde repose sur ce refroidissement).",
+        "ru": "Эффект Джоуля — Томсона: в комнатных условиях большинство сжатых реальных газов при расширении через узкое отверстие в область низкого давления затрачивают энергию на преодоление межмолекулярного притяжения и охлаждаются (на этом основано сжижение газов методом Линде).",
+        "ar": "ظاهرة جول-طومسون: في ظروف الغرفة تستهلك معظم الغازات الحقيقية المضغوطة، عند تمددها عبر فتحة ضيقة إلى ضغط منخفض، طاقةً للتغلب على التجاذب بين الجزيئات فتبرد (وعلى هذا التبريد تقوم إسالة الغازات بطريقة ليندي).",
+        "zh": "焦耳-汤姆孙效应：在室温条件下，大多数被压缩的真实气体经狭窄小孔向低压膨胀时，要消耗能量克服分子间引力而降温（林德法液化气体正是基于这种降温）。",
+        "ku": "Bandora Joule-Thomson: Di şertên odeyê de piraniya gazên rastîn ên tepisandî, dema ji qulikeke teng ber bi zexta nizm berfireh dibin, ji bo derbaskirina kişandina navmolekulî enerjiyê xerc dikin û sar dibin (şilekirina gazan bi rêbaza Linde li ser vê sarbûnê ye)."
       },
       "trap": {
         "tr": "Oda koşullarında sıkıştırılmış gerçek gazların çoğu dar bir delikten genleştirildiğinde ısınır.",
@@ -268,14 +268,14 @@ export const unit13: ChemistryUnitSeedData = {
         "ku": "Di şertên odeyê de piraniya gazên rastîn ên tepisandî, dema ji qulikeke teng têne berfirehkirin, germ dibin."
       },
       "whyTrapIsFalse": {
-        "tr": "Tuzak, genleşen gazın ısındığını sanıyor. Oda koşullarında çoğu gerçek gaz genleşirken moleküller arası çekimi yenmek için kendi kinetik enerjisinden harcar, tanecikler yavaşlar ve gaz soğur; buzdolabı ve klimalar bu soğumadan yararlanır.",
-        "en": "The trap assumes the expanding gas warms up. At room conditions most real gases use part of their own kinetic energy to overcome intermolecular attraction while expanding, so the particles slow down and the gas cools; refrigerators and air conditioners use this cooling.",
-        "de": "Die Falle nimmt an, dass sich das expandierende Gas erwärmt. Bei Raumbedingungen verbrauchen die meisten realen Gase beim Expandieren einen Teil ihrer kinetischen Energie, um die zwischenmolekulare Anziehung zu überwinden; die Teilchen werden langsamer und das Gas kühlt ab, was Kühlschränke und Klimaanlagen nutzen.",
-        "fr": "Le piège suppose que le gaz qui se détend s'échauffe. Dans les conditions ambiantes, la plupart des gaz réels dépensent une partie de leur énergie cinétique pour vaincre l'attraction intermoléculaire pendant la détente ; les particules ralentissent et le gaz se refroidit, ce qu'exploitent réfrigérateurs et climatiseurs.",
-        "ru": "Ловушка считает, что расширяющийся газ нагревается. В комнатных условиях большинство реальных газов при расширении тратят часть своей кинетической энергии на преодоление межмолекулярного притяжения, частицы замедляются и газ охлаждается; этим пользуются холодильники и кондиционеры.",
-        "ar": "يفترض الفخ أن الغاز المتمدد يسخن. في ظروف الغرفة تستهلك معظم الغازات الحقيقية أثناء التمدد جزءًا من طاقتها الحركية للتغلب على التجاذب بين الجزيئات، فتتباطأ الجسيمات ويبرد الغاز؛ وتستفيد الثلاجات والمكيفات من هذا التبريد.",
-        "zh": "陷阱以为膨胀的气体会升温。在室温条件下，大多数真实气体膨胀时要消耗自身部分动能来克服分子间引力，粒子变慢，气体变冷；冰箱和空调正是利用这种降温。",
-        "ku": "Xefik dihesibîne ku gaza berfirehbûyî germ dibe. Di şertên odeyê de piraniya gazên rastîn dema berfireh dibin, ji bo derbaskirina kişandina navmolekulî beşek ji enerjiya xwe ya kînetîk xerc dikin; perçe hêdî dibin û gaz sar dibe. Sarinc û klîma vê sarbûnê bi kar tînin."
+        "tr": "Tuzak, genleşen gazın ısındığını sanıyor. Oda koşullarında çoğu gerçek gaz genleşirken moleküller arası çekimi yenmek için kendi kinetik enerjisinden harcar, tanecikler yavaşlar ve gaz soğur; gazların Linde yöntemiyle sıvılaştırılmasında bu soğumadan yararlanılır.",
+        "en": "The trap assumes the expanding gas warms up. At room conditions most real gases use part of their own kinetic energy to overcome intermolecular attraction while expanding, so the particles slow down and the gas cools; the Linde process for liquefying gases uses this cooling.",
+        "de": "Die Falle nimmt an, dass sich das expandierende Gas erwärmt. Bei Raumbedingungen verbrauchen die meisten realen Gase beim Expandieren einen Teil ihrer kinetischen Energie, um die zwischenmolekulare Anziehung zu überwinden; die Teilchen werden langsamer und das Gas kühlt ab, was das Linde-Verfahren zur Gasverflüssigung nutzt.",
+        "fr": "Le piège suppose que le gaz qui se détend s'échauffe. Dans les conditions ambiantes, la plupart des gaz réels dépensent une partie de leur énergie cinétique pour vaincre l'attraction intermoléculaire pendant la détente ; les particules ralentissent et le gaz se refroidit, ce qu'exploite le procédé Linde de liquéfaction des gaz.",
+        "ru": "Ловушка считает, что расширяющийся газ нагревается. В комнатных условиях большинство реальных газов при расширении тратят часть своей кинетической энергии на преодоление межмолекулярного притяжения, частицы замедляются и газ охлаждается; этим пользуются при сжижении газов методом Линде.",
+        "ar": "يفترض الفخ أن الغاز المتمدد يسخن. في ظروف الغرفة تستهلك معظم الغازات الحقيقية أثناء التمدد جزءًا من طاقتها الحركية للتغلب على التجاذب بين الجزيئات، فتتباطأ الجسيمات ويبرد الغاز؛ وتستفيد طريقة ليندي لإسالة الغازات من هذا التبريد.",
+        "zh": "陷阱以为膨胀的气体会升温。在室温条件下，大多数真实气体膨胀时要消耗自身部分动能来克服分子间引力，粒子变慢，气体变冷；林德法液化气体正是利用这种降温。",
+        "ku": "Xefik dihesibîne ku gaza berfirehbûyî germ dibe. Di şertên odeyê de piraniya gazên rastîn dema berfireh dibin, ji bo derbaskirina kişandina navmolekulî beşek ji enerjiya xwe ya kînetîk xerc dikin; perçe hêdî dibin û gaz sar dibe. Rêbaza Linde ya şilekirina gazan vê sarbûnê bi kar tîne."
       }
     },
     {
@@ -633,14 +633,14 @@ export const unit13: ChemistryUnitSeedData = {
         "ku": "Buhar"
       },
       "distinction": {
-        "tr": "Buhar, kritik sıcaklığının altında bulunduğundan yalnızca basınç artırılarak sıvılaştırılabilir; gaz ise kritik sıcaklığının üstünde bulunduğundan yalnızca basınç artırılarak sıvılaştırılamaz.",
-        "en": "A vapor is below its critical temperature, so it can be liquefied by increasing the pressure alone; a gas is above its critical temperature, so it cannot be liquefied by increasing the pressure alone.",
-        "de": "Dampf liegt unterhalb seiner kritischen Temperatur und lässt sich daher allein durch Druckerhöhung verflüssigen; ein Gas liegt oberhalb seiner kritischen Temperatur und lässt sich daher allein durch Druckerhöhung nicht verflüssigen.",
-        "fr": "Une vapeur est en dessous de sa température critique et peut donc être liquéfiée par simple augmentation de la pression ; un gaz est au-dessus de sa température critique et ne peut donc pas être liquéfié par simple augmentation de la pression.",
-        "ru": "Пар находится ниже своей критической температуры, поэтому его можно сжижить одним лишь повышением давления; газ находится выше своей критической температуры, поэтому одним лишь повышением давления его сжижить нельзя.",
-        "ar": "البخار يكون دون درجة حرارته الحرجة، ولذلك يمكن تسييله بزيادة الضغط وحدها؛ أما الغاز فيكون فوق درجة حرارته الحرجة، ولذلك لا يمكن تسييله بزيادة الضغط وحدها.",
-        "zh": "蒸气处于其临界温度以下，因此仅靠加压就能液化；而气体处于其临界温度以上，因此仅靠加压不能液化。",
-        "ku": "Buhar di bin germahiya xwe ya krîtîk de ye, ji ber vê yekê tenê bi zêdekirina zextê dikare were şilekirin; gaz li ser germahiya xwe ya krîtîk e, ji ber vê yekê tenê bi zêdekirina zextê nayê şilekirin."
+        "tr": "Gaz, kritik sıcaklığının üstünde bulunduğundan yalnızca basınç artırılarak sıvılaştırılamaz; buhar ise kritik sıcaklığının altında bulunduğundan yalnızca basınç artırılarak sıvılaştırılabilir.",
+        "en": "A gas is above its critical temperature, so it cannot be liquefied by increasing the pressure alone; a vapor, by contrast, is below its critical temperature, so it can be liquefied by increasing the pressure alone.",
+        "de": "Ein Gas liegt oberhalb seiner kritischen Temperatur und lässt sich daher allein durch Druckerhöhung nicht verflüssigen; Dampf dagegen liegt unterhalb seiner kritischen Temperatur und lässt sich allein durch Druckerhöhung verflüssigen.",
+        "fr": "Un gaz est au-dessus de sa température critique et ne peut donc pas être liquéfié par simple augmentation de la pression ; une vapeur, elle, est en dessous de sa température critique et peut être liquéfiée par simple augmentation de la pression.",
+        "ru": "Газ находится выше своей критической температуры, поэтому одним лишь повышением давления его сжижить нельзя; пар же находится ниже своей критической температуры и сжижается одним лишь повышением давления.",
+        "ar": "الغاز يكون فوق درجة حرارته الحرجة، ولذلك لا يمكن تسييله بزيادة الضغط وحدها؛ أما البخار فيكون دون درجة حرارته الحرجة، ولذلك يمكن تسييله بزيادة الضغط وحدها.",
+        "zh": "气体处于其临界温度以上，因此仅靠加压不能液化；而蒸气处于其临界温度以下，因此仅靠加压就能液化。",
+        "ku": "Gaz li ser germahiya xwe ya krîtîk e, ji ber vê yekê tenê bi zêdekirina zextê nayê şilekirin; buhar jî di bin germahiya xwe ya krîtîk de ye, ji ber vê yekê tenê bi zêdekirina zextê dikare were şilekirin."
       }
     },
     {
@@ -846,14 +846,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-s01",
       "title": {
-        "tr": "Graham Difüzyon Karşılaştırma Adımları",
-        "en": "Graham Diffusion Comparison Steps",
-        "de": "Graham-Diffusionsvergleichsschritte",
-        "fr": "Étapes de comparaison de diffusion Graham",
-        "ru": "Порядок сравнения скоростей диффузии по закону Грэма",
-        "ar": "المقارنة بقانون جراهام للانتشار",
-        "zh": "用格雷厄姆定律比较扩散速率的步骤",
-        "ku": "Gavên Berhevdana Difûzyonê ya Graham"
+        "tr": "Graham yasasıyla gaz hızlarının karşılaştırılması",
+        "en": "Comparing gas speeds with Graham's law",
+        "de": "Vergleich von Gasgeschwindigkeiten mit dem Graham-Gesetz",
+        "fr": "Comparaison des vitesses des gaz par la loi de Graham",
+        "ru": "Сравнение скоростей газов по закону Грэма",
+        "ar": "مقارنة سرعات الغازات بقانون جراهام",
+        "zh": "用格雷厄姆定律比较气体速率",
+        "ku": "Berhevdana leza gazan bi zagona Graham"
       },
       "steps": [
         {
@@ -1011,14 +1011,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-s04",
       "title": {
-        "tr": "Joule-Thomson Soğuma Aşamaları",
-        "en": "Stages of Joule-Thomson Cooling",
-        "de": "Ablauf der Joule-Thomson-Abkühlung",
-        "fr": "Étapes du refroidissement Joule-Thomson",
-        "ru": "Этапы охлаждения газа по Джоулю — Томсону",
-        "ar": "التبريد بظاهرة جول-طومسون",
-        "zh": "焦耳-汤姆孙效应的降温过程",
-        "ku": "Qonaxên Sarbûna Joule-Thomson"
+        "tr": "Joule-Thomson soğuması",
+        "en": "Joule-Thomson cooling",
+        "de": "Joule-Thomson-Abkühlung",
+        "fr": "Refroidissement de Joule-Thomson",
+        "ru": "Охлаждение по Джоулю — Томсону",
+        "ar": "تبريد جول-طومسون",
+        "zh": "焦耳-汤姆孙冷却",
+        "ku": "Sarbûna Joule-Thomson"
       },
       "steps": [
         {
@@ -1068,90 +1068,108 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin01",
       "stem": {
-        "tr": "Aynı sıcaklıktaki CH4 (MA=16) ve SO2 (MA=64) gazları, 100 cm'lik bir cam borunun iki ucundan aynı anda bırakılıyor. Buna göre gazlar, CH4'ün bırakıldığı uçtan kaç cm uzakta karşılaşır?",
-        "en": "CH4 (MA=16) and SO2 (MA=64) gases are released at the same moment from the two ends of a 100 cm glass tube at the same temperature. How many cm from the CH4 end do they meet?",
-        "de": "CH4-Gas (MA=16) und SO2-Gas (MA=64) werden bei gleicher Temperatur gleichzeitig an den beiden Enden eines 100 cm langen Glasrohrs freigesetzt. In wie vielen cm Entfernung vom CH4-Ende treffen die Gase aufeinander?",
-        "fr": "Les gaz CH4 (MA=16) et SO2 (MA=64), à la même température, sont libérés simultanément aux deux extrémités d'un tube de verre de 100 cm. À combien de cm de l'extrémité CH4 les gaz se rencontrent-ils ?",
-        "ru": "Газы CH4 (MA=16) и SO2 (MA=64) при одинаковой температуре одновременно выпускают с двух концов стеклянной трубки длиной 100 см. На каком расстоянии (в см) от конца с CH4 газы встретятся?",
-        "ar": "عند درجة الحرارة نفسها أُطلق غازا CH4 (MA=16) وSO2 (MA=64) في اللحظة نفسها من طرفي أنبوب زجاجي طوله 100 cm. على بُعد كم cm من طرف CH4 يلتقي الغازان؟",
-        "zh": "相同温度下，从 100 cm 长玻璃管的两端同时放入 CH4(M = 16 g/mol)和 SO2(M = 64 g/mol)气体。两种气体在距 CH4 一端多少厘米处相遇？",
-        "ku": "Gazên CH4 (MA=16) û SO2 (MA=64), di heman germahiyê de, di heman demê de ji her du serên lûleyeke camê ya 100 cm tên berdan. Li gorî vê, gaz li çend cm dûrî serê CH4 digihîjin hev?"
+        "tr": "Aynı sıcaklıktaki He gazı ile X gazı, şekildeki cam borunun iki ucundaki pamuklardan aynı anda salınıyor ve gazlar ilk kez şekilde işaretlenen noktada karşılaşıyor. X gazının mol kütlesi kaç g/mol'dür? (He = 4 g/mol)",
+        "en": "He gas and gas X, at the same temperature, are released at the same moment from cotton plugs at the two ends of the glass tube shown, and the gases first meet at the marked point. What is the molar mass of X in g/mol? (He = 4 g/mol)",
+        "de": "He-Gas und das Gas X gleicher Temperatur werden gleichzeitig aus Wattebäuschen an den beiden Enden des abgebildeten Glasrohrs freigesetzt; die Gase treffen sich zuerst an der markierten Stelle. Wie groß ist die molare Masse von X in g/mol? (He = 4 g/mol)",
+        "fr": "Du gaz He et un gaz X, à la même température, sont libérés au même instant à partir de tampons de coton placés aux deux extrémités du tube de verre représenté ; les gaz se rencontrent pour la première fois au point marqué. Quelle est la masse molaire de X en g/mol ? (He = 4 g/mol)",
+        "ru": "Газ He и газ X при одинаковой температуре одновременно выпускают из ватных тампонов на двух концах изображённой стеклянной трубки; газы впервые встречаются в отмеченной точке. Какова молярная масса X (г/моль)? (He = 4 г/моль)",
+        "ar": "يُطلَق غاز He وغاز X، عند درجة الحرارة نفسها، في اللحظة نفسها من قطعتَي قطن عند طرفَي الأنبوب الزجاجي المبيَّن في الشكل، فيلتقي الغازان أول مرة عند النقطة المحدَّدة. ما الكتلة المولية للغاز X بوحدة g/mol؟ (He = 4 g/mol)",
+        "zh": "同温下，He 和气体 X 同时从图中玻璃管两端的棉团处释放，两种气体首次在图中标出的位置相遇。X 的摩尔质量是多少 g/mol？(He = 4 g/mol)",
+        "ku": "Gaza He û gaza X, di heman germahiyê de, di heman demê de ji pembûyên her du serên lûleya camê ya di şiklê de tên berdan û gaz cara yekem li xala nîşankirî digihîjin hev. Girseya molî ya gaza X çend g/mol e? (He = 4 g/mol)"
       },
       "options": [
         {
-          "tr": "66,7 cm",
-          "en": "66.7 cm",
-          "de": "66,7 cm",
-          "fr": "66,7 cm",
-          "ru": "66,7 см",
-          "ar": "66.7 cm",
-          "zh": "66.7 cm",
-          "ku": "66,7 cm"
+          "tr": "1",
+          "en": "1",
+          "de": "1",
+          "fr": "1",
+          "ru": "1",
+          "ar": "1",
+          "zh": "1",
+          "ku": "1"
         },
         {
-          "tr": "50,0 cm",
-          "en": "50.0 cm",
-          "de": "50,0 cm",
-          "fr": "50,0 cm",
-          "ru": "50,0 см",
-          "ar": "50.0 cm",
-          "zh": "50.0 cm",
-          "ku": "50,0 cm"
+          "tr": "2",
+          "en": "2",
+          "de": "2",
+          "fr": "2",
+          "ru": "2",
+          "ar": "2",
+          "zh": "2",
+          "ku": "2"
         },
         {
-          "tr": "80,0 cm",
-          "en": "80.0 cm",
-          "de": "80,0 cm",
-          "fr": "80,0 cm",
-          "ru": "80,0 см",
-          "ar": "80.0 cm",
-          "zh": "80.0 cm",
-          "ku": "80,0 cm"
+          "tr": "8",
+          "en": "8",
+          "de": "8",
+          "fr": "8",
+          "ru": "8",
+          "ar": "8",
+          "zh": "8",
+          "ku": "8"
         },
         {
-          "tr": "33,3 cm",
-          "en": "33.3 cm",
-          "de": "33,3 cm",
-          "fr": "33,3 cm",
-          "ru": "33,3 см",
-          "ar": "33.3 cm",
-          "zh": "33.3 cm",
-          "ku": "33,3 cm"
+          "tr": "16",
+          "en": "16",
+          "de": "16",
+          "fr": "16",
+          "ru": "16",
+          "ar": "16",
+          "zh": "16",
+          "ku": "16"
         },
         {
-          "tr": "25,0 cm",
-          "en": "25.0 cm",
-          "de": "25,0 cm",
-          "fr": "25,0 cm",
-          "ru": "25,0 см",
-          "ar": "25.0 cm",
-          "zh": "25.0 cm",
-          "ku": "25,0 cm"
+          "tr": "36",
+          "en": "36",
+          "de": "36",
+          "fr": "36",
+          "ru": "36",
+          "ar": "36",
+          "zh": "36",
+          "ku": "36"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Aynı sürede CH4 2x, SO2 x kadar yol alır. 3x = 100 cm → x = 33,3 cm. Gazlar, CH4'ün bırakıldığı uçtan 2x = 66,7 cm uzakta karşılaşır. Hızları eşit sanan öğrenci 50,0 cm; SO2'nin aldığı yolu (x) yazan ise 33,3 cm bulur.",
-        "en": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. While CH4 travels 2x, SO2 travels x. 3x = 100 cm → x = 33.3 cm. They meet 2x = 66.7 cm from the CH4 end. A student who assumes equal rates gets 50.0 cm; one who gives the distance travelled by SO2 (x) gets 33.3 cm.",
-        "de": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Während CH4 die Strecke 2x zurücklegt, legt SO2 x zurück. 3x = 100 cm → x = 33,3 cm. Sie treffen sich 2x = 66,7 cm vom CH4-Ende entfernt. Wer gleiche Geschwindigkeiten annimmt, erhält 50,0 cm; wer die von SO2 zurückgelegte Strecke (x) angibt, 33,3 cm.",
-        "fr": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Pendant que CH4 parcourt 2x, SO2 parcourt x. 3x = 100 cm → x = 33,3 cm. Ils se rencontrent à 2x = 66,7 cm de l'extrémité CH4. L'élève qui suppose des vitesses égales trouve 50,0 cm ; celui qui donne la distance parcourue par SO2 (x) trouve 33,3 cm.",
-        "ru": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Пока CH4 проходит 2x, SO2 проходит x. 3x = 100 см → x = 33,3 см. Газы встречаются на расстоянии 2x = 66,7 см от конца с CH4. Ученик, считающий скорости равными, получит 50,0 см; указавший путь, пройденный SO2 (x), — 33,3 см.",
-        "ar": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. بينما يقطع CH4 مسافة 2x يقطع SO2 مسافة x. 3x = 100 cm → x = 33.3 cm. يلتقي الغازان على بُعد 2x = 66.7 cm من طرف CH4. الطالب الذي يفترض تساوي السرعتين يحصل على 50.0 cm، ومن يكتب المسافة التي قطعها SO2 (x) يحصل على 33.3 cm.",
-        "zh": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1。相同时间内 CH4 走 2x，SO2 走 x。3x = 100 cm → x = 33.3 cm。两者在距 CH4 端 2x = 66.7 cm 处相遇。认为两者速率相等的学生得到 50.0 cm；写出 SO2 所走路程(x)的学生得到 33.3 cm。",
-        "ku": "v(CH4)/v(SO2) = sqrt(64/16) = 2/1. Di heman demê de CH4 rêya 2x, SO2 rêya x dibire. 3x = 100 cm → x = 33,3 cm. Gaz li 2x = 66,7 cm dûrî serê CH4 digihîjin hev. Xwendekarê ku lezan wekhev dihesibîne 50,0 cm dibîne; yê ku rêya SO2 (x) dinivîse 33,3 cm dibîne."
+        "tr": "Şekilden, aynı sürede He'nin 80 cm, X'in 40 cm yol aldığı okunur. Aynı sürede alınan yollar hızlarla orantılı olduğundan v(He)/v(X) = 80/40 = 2'dir. Graham yasasına göre v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol. Karekökü unutup MX = 4 × 2 alan öğrenci 8; X'i daha hızlı sanıp oranı ters kuran öğrenci 1 (karekökü de unutursa 2); He'nin aldığı yolu borunun toplam uzunluğuyla (120 cm) karıştırıp 120/40 = 3 oranını kullanan öğrenci 36 bulur.",
+        "en": "From the figure, in the same time He travels 80 cm and X travels 40 cm. Distances covered in the same time are proportional to the speeds, so v(He)/v(X) = 80/40 = 2. By Graham's law v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol. Forgetting the square root (MX = 4 × 2) gives 8; inverting the ratio as if X were faster gives 1 (or 2 without the square root); confusing the distance He travels with the full tube length (120 cm) and using 120/40 = 3 gives 36.",
+        "de": "Aus der Abbildung: In derselben Zeit legt He 80 cm und X 40 cm zurück. In gleicher Zeit zurückgelegte Strecken sind den Geschwindigkeiten proportional, also v(He)/v(X) = 80/40 = 2. Nach dem Graham-Gesetz gilt v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol. Wer die Wurzel vergisst (MX = 4 · 2), erhält 8; wer das Verhältnis umkehrt, als wäre X schneller, erhält 1 (ohne Wurzel 2); wer die Strecke von He mit der Gesamtlänge des Rohrs (120 cm) verwechselt und 120/40 = 3 verwendet, erhält 36.",
+        "fr": "D'après la figure, pendant la même durée He parcourt 80 cm et X 40 cm. Les distances parcourues pendant la même durée sont proportionnelles aux vitesses : v(He)/v(X) = 80/40 = 2. D'après la loi de Graham, v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol. Oublier la racine carrée (MX = 4 × 2) donne 8 ; inverser le rapport comme si X était plus rapide donne 1 (ou 2 sans la racine) ; confondre la distance parcourue par He avec la longueur totale du tube (120 cm) et utiliser 120/40 = 3 donne 36.",
+        "ru": "По рисунку за одно и то же время He проходит 80 см, а X — 40 см. Пути, пройденные за одинаковое время, пропорциональны скоростям: v(He)/v(X) = 80/40 = 2. По закону Грэма v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 г/моль. Если забыть квадратный корень (MX = 4 · 2), получится 8; если перевернуть отношение, считая X более быстрым, — 1 (без корня 2); если спутать путь He с полной длиной трубки (120 см) и взять 120/40 = 3, — 36.",
+        "ar": "يُقرأ من الشكل أن He يقطع 80 cm وأن X يقطع 40 cm في الزمن نفسه. المسافات المقطوعة في الزمن نفسه تتناسب مع السرعات، لذا v(He)/v(X) = 80/40 = 2. وبحسب قانون جراهام v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol. من ينسى الجذر التربيعي (MX = 4 × 2) يحصل على 8، ومن يعكس النسبة ظانًّا أن X أسرع يحصل على 1 (أو 2 دون الجذر)، ومن يخلط المسافة التي يقطعها He بالطول الكلي للأنبوب (120 cm) فيستخدم 120/40 = 3 يحصل على 36.",
+        "zh": "由图可知，相同时间内 He 走过 80 cm，X 走过 40 cm。相同时间内走过的路程与速率成正比，故 v(He)/v(X) = 80/40 = 2。由格雷厄姆定律 v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol。忘记开平方 (MX = 4 × 2) 得 8；把比值颠倒、误以为 X 更快得 1（不开平方得 2）；把 He 走过的路程与管的总长 (120 cm) 混淆、用 120/40 = 3 计算得 36。",
+        "ku": "Ji şiklê tê xwendin ku di heman demê de He 80 cm, X jî 40 cm rê diçe. Rêyên di heman demê de hatine birîn bi lezan re rêjeyî ne, ji ber vê v(He)/v(X) = 80/40 = 2 ye. Li gorî zagona Graham v(He)/v(X) = sqrt(MX/MHe) → 2 = sqrt(MX/4) → MX/4 = 4 → MX = 16 g/mol. Kesê ku koka çargoşe ji bîr dike (MX = 4 × 2) 8; kesê ku rêjeyê berevajî dike û X bileztir dihesibîne 1 (bê kok 2); kesê ku rêya He bi dirêjahiya giştî ya lûleyê (120 cm) re tevlihev dike û 120/40 = 3 bi kar tîne 36 dibîne."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 140,
+        "markup": "<rect x='30' y='40' width='300' height='28' rx='12' class='qf-fill'/><rect x='32' y='43' width='18' height='22' rx='4' class='qf-solid'/><rect x='310' y='43' width='18' height='22' rx='4' class='qf-solid'/><line x1='223' y1='34' x2='223' y2='74' class='qf-stroke-accent'/><circle cx='223' cy='54' r='5' class='qf-accent'/><text x='223' y='26' text-anchor='middle' class='qf-small'>{{meet}}</text><text x='41' y='90' text-anchor='middle' class='qf-strong'>He</text><text x='319' y='90' text-anchor='middle' class='qf-strong'>X</text><path d='M50,112 H310 M50,105 V119 M223,105 V119 M310,105 V119' class='qf-line'/><text x='136' y='132' text-anchor='middle'>80 cm</text><text x='266' y='132' text-anchor='middle'>40 cm</text>",
+        "labels": {
+          "meet": {
+            "tr": "İlk karşılaşma noktası",
+            "en": "First meeting point",
+            "de": "Erster Treffpunkt",
+            "fr": "Premier point de rencontre",
+            "ru": "Место первой встречи",
+            "ar": "نقطة الالتقاء الأولى",
+            "zh": "首次相遇处",
+            "ku": "Xala hevdîtina yekem"
+          }
+        }
       }
     },
     {
       "id": "u13-twin02",
       "stem": {
-        "tr": "Pistonlu bir kapta, bir miktar sıvı su ile su üstünde toplanmış He gazı bulunmaktadır. Sabit sıcaklıkta piston itilerek gaz hacmi yarıya indiriliyor ve kapta hâlâ sıvı su bulunuyor. Buna göre He gazının kısmi basıncı ve suyun buhar basıncı nasıl değişir?",
+        "tr": "Pistonlu bir kapta, bir miktar sıvı su ile su üstünde toplanmış He gazı bulunmaktadır. Sabit sıcaklıkta piston itilerek gaz hacmi yarıya indiriliyor ve kapta hâlâ sıvı su bulunuyor. He gazının kısmi basıncı ve suyun buhar basıncı nasıl değişir?",
         "en": "A container fitted with a piston holds some liquid water and He gas collected over the water. At constant temperature the piston is pushed in until the gas volume is halved, and liquid water is still present. How do the partial pressure of He and the vapor pressure of water change?",
         "de": "In einem Gefäß mit Kolben befinden sich etwas flüssiges Wasser und über dem Wasser aufgefangenes He-Gas. Bei konstanter Temperatur wird der Kolben hineingeschoben, bis das Gasvolumen halbiert ist; flüssiges Wasser ist weiterhin vorhanden. Wie ändern sich der Partialdruck von He und der Dampfdruck des Wassers?",
         "fr": "Un récipient à piston contient un peu d'eau liquide et du gaz He recueilli sur l'eau. À température constante, on enfonce le piston jusqu'à réduire de moitié le volume gazeux ; il reste de l'eau liquide. Comment varient la pression partielle de He et la pression de vapeur de l'eau ?",
         "ru": "В сосуде с поршнем находятся немного жидкой воды и газ He, собранный над водой. При постоянной температуре поршень вдвигают так, что объём газа уменьшается вдвое; жидкая вода в сосуде остаётся. Как изменятся парциальное давление He и давление пара воды?",
         "ar": "يحتوي وعاء ذو مكبس على كمية من الماء السائل وعلى غاز He مجمَّع فوق الماء. عند درجة حرارة ثابتة يُدفع المكبس حتى ينخفض حجم الغاز إلى النصف، ويبقى في الوعاء ماء سائل. كيف يتغير الضغط الجزئي لغاز He وضغط بخار الماء؟",
         "zh": "带活塞的容器中有少量液态水，水面上方是用排水法收集的 He。恒温下推动活塞使气体体积减小一半，容器中仍有液态水。He 的分压和水的蒸气压分别如何变化？",
-        "ku": "Di firaxeke pistondar de hinek ava şile û gaza He ya li ser avê berhevkirî hene. Di germahiya sabît de piston tê pêldan heta ku qebareya gazê nîvî dibe, û di firaxê de hîn ava şile heye. Li gorî vê, zexta qismî ya He û zexta buhara avê çawa diguherin?"
+        "ku": "Di firaxeke pistondar de hinek ava şile û gaza He ya li ser avê berhevkirî hene. Di germahiya sabît de piston tê pêldan heta ku qebareya gazê nîvî dibe, û di firaxê de hîn ava şile heye. Zexta qismî ya He û zexta buhara avê çawa diguherin?"
       },
       "options": [
         {
@@ -1220,14 +1238,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin03",
       "stem": {
-        "tr": "Aynı sıcaklık ve basınçta, eşit hacimdeki He gazı küçük bir delikten 10 saniyede, X gazı ise aynı delikten 40 saniyede efüzlenmektedir. Buna göre X gazının mol kütlesi kaç g/mol'dür? (He = 4 g/mol)",
+        "tr": "Aynı sıcaklık ve basınçta, eşit hacimdeki He gazı küçük bir delikten 10 saniyede, X gazı ise aynı delikten 40 saniyede efüzlenmektedir. X gazının mol kütlesi kaç g/mol'dür? (He = 4 g/mol)",
         "en": "At the same temperature and pressure, equal volumes of He gas and X gas effuse through the same small hole in 10 s and 40 s respectively. What is the molar mass of gas X in g/mol? (He = 4 g/mol)",
         "de": "Bei gleicher Temperatur und gleichem Druck effundieren gleiche Volumina He-Gas und X-Gas durch dieselbe kleine Öffnung in 10 s bzw. 40 s. Wie groß ist die molare Masse von X in g/mol? (He = 4 g/mol)",
         "fr": "À même température et même pression, des volumes égaux de gaz He et de gaz X s'effusent par le même petit orifice en 10 s et en 40 s respectivement. Quelle est la masse molaire du gaz X en g/mol ? (He = 4 g/mol)",
         "ru": "При одинаковых температуре и давлении равные объёмы газа He и газа X вытекают (эффундируют) через одно и то же маленькое отверстие за 10 с и 40 с соответственно. Чему равна молярная масса газа X (г/моль)? (He = 4 г/моль)",
         "ar": "عند درجة الحرارة والضغط نفسيهما، يتدفق حجمان متساويان من غاز He وغاز X عبر الثقب الصغير نفسه في 10 s و40 s على الترتيب. كم تبلغ الكتلة المولية للغاز X بوحدة g/mol؟ (He = 4 g/mol)",
         "zh": "在相同温度和压强下，等体积的 He 和气体 X 通过同一小孔泻流，分别需要 10 s 和 40 s。气体 X 的摩尔质量是多少 g/mol？(He = 4 g/mol)",
-        "ku": "Di heman germahî û zextê de, qebareyên wekhev ên gaza He û gaza X ji heman qulika piçûk bi rêzê di 10 s û 40 s de bi efûzyonê derdikevin. Li gorî vê, girseya molî ya gaza X çend g/mol e? (He = 4 g/mol)"
+        "ku": "Di heman germahî û zextê de, qebareyên wekhev ên gaza He û gaza X ji heman qulika piçûk bi rêzê di 10 s û 40 s de bi efûzyonê derdikevin. Girseya molî ya gaza X çend g/mol e? (He = 4 g/mol)"
       },
       "options": [
         {
@@ -1296,14 +1314,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin04",
       "stem": {
-        "tr": "Kritik sıcaklıkları X: 132 °C, Y: 31 °C, Z: −119 °C olan üç madde 25 °C'de gaz fazında bulunmaktadır. Buna göre; I. 25 °C'de X ve Y buhar, Z ise gaz olarak adlandırılır. II. Z, 25 °C'de yalnızca basınç artırılarak sıvılaştırılabilir. III. Y, 40 °C'de yalnızca basınç artırılarak sıvılaştırılabilir. yargılarından hangileri doğrudur?",
-        "en": "Three substances with critical temperatures X: 132 °C, Y: 31 °C and Z: −119 °C are in the gas phase at 25 °C. Which of the following statements are correct? I. At 25 °C, X and Y are called vapors, while Z is called a gas. II. Z can be liquefied at 25 °C by increasing the pressure alone. III. Y can be liquefied at 40 °C by increasing the pressure alone.",
-        "de": "Drei Stoffe mit den kritischen Temperaturen X: 132 °C, Y: 31 °C und Z: −119 °C liegen bei 25 °C gasförmig vor. Welche der folgenden Aussagen sind richtig? I. Bei 25 °C bezeichnet man X und Y als Dampf, Z als Gas. II. Z lässt sich bei 25 °C allein durch Druckerhöhung verflüssigen. III. Y lässt sich bei 40 °C allein durch Druckerhöhung verflüssigen.",
-        "fr": "Trois substances dont les températures critiques sont X : 132 °C, Y : 31 °C et Z : −119 °C sont en phase gazeuse à 25 °C. Lesquelles des affirmations suivantes sont correctes ? I. À 25 °C, X et Y sont appelés vapeurs et Z est appelé gaz. II. Z peut être liquéfié à 25 °C par simple augmentation de la pression. III. Y peut être liquéfié à 40 °C par simple augmentation de la pression.",
-        "ru": "Три вещества с критическими температурами X: 132 °C, Y: 31 °C и Z: −119 °C находятся при 25 °C в газовой фазе. Какие из утверждений верны? I. При 25 °C X и Y называют паром, а Z — газом. II. Z можно сжижить при 25 °C только повышением давления. III. Y можно сжижить при 40 °C только повышением давления.",
-        "ar": "ثلاث مواد درجات حرارتها الحرجة X: 132 °C وY: 31 °C وZ: −119 °C توجد في الطور الغازي عند 25 °C. أيّ العبارات الآتية صحيحة؟ I. عند 25 °C يُسمّى X وY بخارًا ويُسمّى Z غازًا. II. يمكن تسييل Z عند 25 °C بزيادة الضغط وحدها. III. يمكن تسييل Y عند 40 °C بزيادة الضغط وحدها.",
-        "zh": "临界温度分别为 X 132 °C、Y 31 °C、Z −119 °C 的三种物质在 25 °C 时均处于气相。有下列说法：I. 25 °C 时 X 和 Y 称为蒸气，Z 称为气体。II. 25 °C 时仅靠增大压强就能使 Z 液化。III. 40 °C 时仅靠增大压强就能使 Y 液化。其中正确的是哪些？",
-        "ku": "Sê madeyên ku germahiyên wan ên krîtîk X: 132 °C, Y: 31 °C û Z: −119 °C ne, di 25 °C de di qonaxa gaz de ne. Li gorî vê; I. Di 25 °C de ji X û Y re buhar, ji Z re jî gaz tê gotin. II. Z di 25 °C de tenê bi zêdekirina zextê dikare were şilekirin. III. Y di 40 °C de tenê bi zêdekirina zextê dikare were şilekirin. Kîjan ji van gotinan rast in?"
+        "tr": "Tabloda kritik sıcaklıkları ve normal kaynama noktaları verilen X, Y ve Z maddeleri 25 °C ve 1 atm'de gaz fazındadır. Bu maddelerle ilgili; I. 25 °C'de X ve Y buhar, Z ise gaz olarak adlandırılır. II. Z, 25 °C'de yalnızca basınç artırılarak sıvılaştırılabilir. III. 1 atm'de sıvı X ve sıvı Y ayrı kaplarda ısıtılırsa Y, X'ten daha düşük sıcaklıkta kaynar. yargılarından hangileri doğrudur?",
+        "en": "Substances X, Y and Z, whose critical temperatures and normal boiling points are given in the table, are in the gas phase at 25 °C and 1 atm. Which of the following statements about these substances are correct? I. At 25 °C, X and Y are called vapors, while Z is called a gas. II. Z can be liquefied at 25 °C by increasing the pressure alone. III. If liquid X and liquid Y are heated separately at 1 atm, Y boils at a lower temperature than X.",
+        "de": "Die Stoffe X, Y und Z, deren kritische Temperaturen und normale Siedepunkte in der Tabelle angegeben sind, liegen bei 25 °C und 1 atm gasförmig vor. Welche der folgenden Aussagen über diese Stoffe sind richtig? I. Bei 25 °C bezeichnet man X und Y als Dampf, Z als Gas. II. Z lässt sich bei 25 °C allein durch Druckerhöhung verflüssigen. III. Werden flüssiges X und flüssiges Y bei 1 atm getrennt erhitzt, siedet Y bei einer niedrigeren Temperatur als X.",
+        "fr": "Les substances X, Y et Z, dont les températures critiques et les températures d'ébullition normales figurent dans le tableau, sont en phase gazeuse à 25 °C et 1 atm. Lesquelles des affirmations suivantes sur ces substances sont correctes ? I. À 25 °C, X et Y sont appelés vapeurs et Z est appelé gaz. II. Z peut être liquéfié à 25 °C par simple augmentation de la pression. III. Si l'on chauffe séparément X liquide et Y liquide sous 1 atm, Y bout à une température plus basse que X.",
+        "ru": "Вещества X, Y и Z, критические температуры и нормальные температуры кипения которых приведены в таблице, при 25 °C и 1 атм находятся в газовой фазе. Какие из утверждений об этих веществах верны? I. При 25 °C X и Y называют паром, а Z — газом. II. Z можно сжижить при 25 °C только повышением давления. III. Если раздельно нагревать жидкие X и Y при 1 атм, Y закипит при более низкой температуре, чем X.",
+        "ar": "المواد X وY وZ، المعطاة درجات حرارتها الحرجة ودرجات غليانها العادية في الجدول، توجد في الطور الغازي عند 25 °C و1 atm. أيّ العبارات الآتية عن هذه المواد صحيحة؟ I. عند 25 °C يُسمّى X وY بخارًا ويُسمّى Z غازًا. II. يمكن تسييل Z عند 25 °C بزيادة الضغط وحدها. III. إذا سُخِّن X السائل وY السائل كلٌّ على حدة عند 1 atm، فإن Y يغلي عند درجة حرارة أدنى من X.",
+        "zh": "表中给出了物质 X、Y、Z 的临界温度和正常沸点，三者在 25 °C、1 atm 下均为气相。关于这些物质有下列说法：I. 25 °C 时 X 和 Y 称为蒸气，Z 称为气体。II. 25 °C 时仅靠增大压强就能使 Z 液化。III. 在 1 atm 下分别加热液态 X 和液态 Y，Y 的沸腾温度低于 X。其中正确的是哪些？",
+        "ku": "Madeyên X, Y û Z, ku germahiyên wan ên krîtîk û xalên wan ên kelînê yên normal di tabloyê de hatine dayîn, di 25 °C û 1 atm de di qonaxa gaz de ne. Derbarê van madeyan de; I. Di 25 °C de ji X û Y re buhar, ji Z re jî gaz tê gotin. II. Z di 25 °C de tenê bi zêdekirina zextê dikare were şilekirin. III. Heke X û Y yên şile di 1 atm de ji hev cuda werin germkirin, Y di germahiyeke ji X nizmtir de dikele. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
@@ -1317,14 +1335,14 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Tenê I"
         },
         {
-          "tr": "Yalnız II",
-          "en": "II only",
-          "de": "Nur II",
-          "fr": "II seulement",
-          "ru": "Только II",
-          "ar": "II فقط",
-          "zh": "仅II",
-          "ku": "Tenê II"
+          "tr": "Yalnız III",
+          "en": "III only",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅III",
+          "ku": "Tenê III"
         },
         {
           "tr": "I ve II",
@@ -1347,26 +1365,78 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "I û III"
         },
         {
-          "tr": "II ve III",
-          "en": "II and III",
-          "de": "II und III",
-          "fr": "II et III",
-          "ru": "II и III",
-          "ar": "II و III",
-          "zh": "II和III",
-          "ku": "II û III"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II和III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Bir madde kritik sıcaklığının altındaysa buhar, üstündeyse gazdır. 25 °C, X (132 °C) ve Y (31 °C) için kritik sıcaklığın altında, Z (−119 °C) için üstündedir; I doğrudur. Kritik sıcaklığının üzerindeki bir madde yalnızca basınçla sıvılaştırılamaz: Z 25 °C'de, Y de 40 °C'de (31 °C'nin üstü) kritik sıcaklığının üzerinde olduğundan II ve III yanlıştır. Doğru olan yalnızca I'dir.",
-        "en": "A substance below its critical temperature is a vapor; above it, a gas. 25 °C is below the critical temperatures of X (132 °C) and Y (31 °C) and above that of Z (−119 °C), so I is correct. A substance above its critical temperature cannot be liquefied by pressure alone: Z at 25 °C and Y at 40 °C (above 31 °C) are both above their critical temperatures, so II and III are false. Only I is correct.",
-        "de": "Unterhalb seiner kritischen Temperatur ist ein Stoff Dampf, oberhalb Gas. 25 °C liegt unter den kritischen Temperaturen von X (132 °C) und Y (31 °C) und über der von Z (−119 °C); I ist richtig. Oberhalb der kritischen Temperatur ist keine Verflüssigung allein durch Druck möglich: Z bei 25 °C und Y bei 40 °C (über 31 °C) liegen darüber, daher sind II und III falsch. Nur I ist richtig.",
-        "fr": "Une substance en dessous de sa température critique est une vapeur, au-dessus c'est un gaz. 25 °C est inférieur aux températures critiques de X (132 °C) et Y (31 °C) et supérieur à celle de Z (−119 °C) : I est vraie. Au-dessus de sa température critique, une substance ne se liquéfie pas par simple compression : Z à 25 °C et Y à 40 °C (au-dessus de 31 °C) sont dans ce cas, donc II et III sont fausses. Seule I est correcte.",
-        "ru": "Ниже своей критической температуры вещество называют паром, выше — газом. Температура 25 °C ниже критических температур X (132 °C) и Y (31 °C) и выше критической температуры Z (−119 °C), поэтому I верно. Выше критической температуры вещество нельзя сжижить одним давлением: Z при 25 °C и Y при 40 °C (выше 31 °C) находятся выше своих критических температур, поэтому II и III неверны. Верно только I.",
-        "ar": "تكون المادة بخارًا إذا كانت تحت درجة حرارتها الحرجة، وغازًا إذا كانت فوقها. 25 °C أقل من درجتي X (132 °C) وY (31 °C) الحرجتين وأعلى من درجة Z (−119 °C)، لذا I صحيحة. المادة فوق درجة حرارتها الحرجة لا تتسيّل بالضغط وحده: Z عند 25 °C وY عند 40 °C (أعلى من 31 °C) كلاهما فوق درجة الحرارة الحرجة، لذا II وIII خاطئتان. الصحيحة I فقط.",
-        "zh": "物质低于其临界温度时称为蒸气，高于临界温度时称为气体。25 °C 低于 X(132 °C)和 Y(31 °C)的临界温度，高于 Z(−119 °C)的临界温度，所以 I 正确。高于临界温度的物质仅靠加压不能液化：25 °C 的 Z 和 40 °C(高于 31 °C)的 Y 都高于各自的临界温度，所以 II 和 III 错误。只有 I 正确。",
-        "ku": "Madeyek di bin germahiya xwe ya krîtîk de buhar e, li ser wê gaz e. 25 °C ji germahiyên krîtîk ên X (132 °C) û Y (31 °C) nizmtir e û ji ya Z (−119 °C) bilindtir e; ji ber vê yekê I rast e. Madeya li ser germahiya xwe ya krîtîk tenê bi zextê nayê şilekirin: Z di 25 °C de û Y di 40 °C de (li ser 31 °C) li ser germahiya xwe ya krîtîk in, ji ber vê yekê II û III şaş in. Tenê I rast e."
+        "tr": "Bir madde kritik sıcaklığının altındaysa buhar, üstündeyse gaz olarak adlandırılır. Tablodan 25 °C'nin X (132 °C) ve Y (36 °C) için kritik sıcaklığın altında, Z (−119 °C) için üstünde olduğu görülür; I doğrudur. Z, 25 °C'de kritik sıcaklığının üzerinde olduğundan basınç ne kadar artırılırsa artırılsın sıvılaşmaz; II yanlıştır. 1 atm'de Y'nin kaynama noktası (−88 °C) X'inkinden (−33 °C) düşük olduğundan Y daha düşük sıcaklıkta kaynar; III doğrudur. Doğru yargılar I ve III'tür.",
+        "en": "A substance below its critical temperature is called a vapor; above it, a gas. The table shows that 25 °C is below the critical temperatures of X (132 °C) and Y (36 °C) and above that of Z (−119 °C), so I is correct. At 25 °C Z is above its critical temperature and cannot be liquefied however high the pressure, so II is wrong. At 1 atm the boiling point of Y (−88 °C) is lower than that of X (−33 °C), so Y boils at the lower temperature; III is correct. The correct statements are I and III.",
+        "de": "Ein Stoff unterhalb seiner kritischen Temperatur heißt Dampf, oberhalb davon Gas. Laut Tabelle liegt 25 °C unter den kritischen Temperaturen von X (132 °C) und Y (36 °C) und über der von Z (−119 °C); I ist richtig. Z liegt bei 25 °C oberhalb seiner kritischen Temperatur und lässt sich auch bei beliebig hohem Druck nicht verflüssigen; II ist falsch. Bei 1 atm ist der Siedepunkt von Y (−88 °C) niedriger als der von X (−33 °C), daher siedet Y bei der niedrigeren Temperatur; III ist richtig. Richtig sind I und III.",
+        "fr": "Une substance en dessous de sa température critique est appelée vapeur ; au-dessus, gaz. Le tableau montre que 25 °C est en dessous des températures critiques de X (132 °C) et de Y (36 °C) et au-dessus de celle de Z (−119 °C) : I est correcte. À 25 °C, Z est au-dessus de sa température critique et ne peut pas être liquéfié, quelle que soit la pression : II est fausse. Sous 1 atm, la température d'ébullition de Y (−88 °C) est inférieure à celle de X (−33 °C), donc Y bout à la température la plus basse : III est correcte. Les affirmations correctes sont I et III.",
+        "ru": "Вещество ниже своей критической температуры называют паром, выше — газом. По таблице 25 °C ниже критических температур X (132 °C) и Y (36 °C) и выше критической температуры Z (−119 °C), поэтому I верно. При 25 °C Z находится выше своей критической температуры и не сжижается ни при каком давлении, поэтому II неверно. При 1 атм температура кипения Y (−88 °C) ниже, чем у X (−33 °C), поэтому Y кипит при более низкой температуре; III верно. Верны I и III.",
+        "ar": "تُسمّى المادة بخارًا إذا كانت دون درجة حرارتها الحرجة، وغازًا إذا كانت فوقها. يبيّن الجدول أن 25 °C أدنى من درجتَي الحرارة الحرجتين لـ X (132 °C) وY (36 °C) وأعلى من درجة Z (−119 °C)، فالعبارة I صحيحة. عند 25 °C يكون Z فوق درجة حرارته الحرجة فلا يُسال مهما زاد الضغط، فالعبارة II خاطئة. عند 1 atm تكون درجة غليان Y (−88 °C) أدنى من درجة غليان X (−33 °C)، لذا يغلي Y عند درجة الحرارة الأدنى، فالعبارة III صحيحة. العبارتان الصحيحتان هما I و III.",
+        "zh": "物质低于其临界温度时称为蒸气，高于临界温度时称为气体。由表可知，25 °C 低于 X (132 °C) 和 Y (36 °C) 的临界温度，高于 Z (−119 °C) 的临界温度，I 正确。25 °C 时 Z 高于其临界温度，无论压强多大都不能液化，II 错误。1 atm 下 Y 的沸点 (−88 °C) 低于 X 的沸点 (−33 °C)，所以 Y 在较低温度下沸腾，III 正确。正确的是 I 和 III。",
+        "ku": "Madeyek di bin germahiya xwe ya krîtîk de buhar, li ser wê jî gaz tê binavkirin. Tablo nîşan dide ku 25 °C ji germahiyên krîtîk ên X (132 °C) û Y (36 °C) nizmtir, ji ya Z (−119 °C) jî bilindtir e; I rast e. Z di 25 °C de li ser germahiya xwe ya krîtîk e û zext çiqas zêde bibe jî nayê şilekirin; II şaş e. Di 1 atm de xala kelînê ya Y (−88 °C) ji ya X (−33 °C) nizmtir e, ji ber vê Y di germahiya nizmtir de dikele; III rast e. Gotinên rast I û III ne."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Madde",
+            "en": "Substance",
+            "de": "Stoff",
+            "fr": "Substance",
+            "ru": "Вещество",
+            "ar": "المادة",
+            "zh": "物质",
+            "ku": "Made"
+          },
+          {
+            "tr": "Kritik sıcaklık (°C)",
+            "en": "Critical temperature (°C)",
+            "de": "Kritische Temperatur (°C)",
+            "fr": "Température critique (°C)",
+            "ru": "Критическая температура (°C)",
+            "ar": "درجة الحرارة الحرجة (°C)",
+            "zh": "临界温度 (°C)",
+            "ku": "Germahiya krîtîk (°C)"
+          },
+          {
+            "tr": "Normal kaynama noktası (°C)",
+            "en": "Normal boiling point (°C)",
+            "de": "Normaler Siedepunkt (°C)",
+            "fr": "Température d'ébullition normale (°C)",
+            "ru": "Нормальная температура кипения (°C)",
+            "ar": "درجة الغليان العادية (°C)",
+            "zh": "正常沸点 (°C)",
+            "ku": "Xala kelînê ya normal (°C)"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            "132",
+            "−33"
+          ],
+          [
+            "Y",
+            "36",
+            "−88"
+          ],
+          [
+            "Z",
+            "−119",
+            "−186"
+          ]
+        ]
       }
     },
     {
@@ -1524,14 +1594,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin07",
       "stem": {
-        "tr": "Yeterli miktarda HCl çözeltisine atılan bir miktar Zn metalinin tamamı Zn(k) + 2HCl(suda) → ZnCl2(suda) + H2(g) tepkimesine göre harcanıyor. Oluşan H2 gazı 27 °C'de 24,6 L'lik bir kapta su üstünde toplanıyor ve kaptaki toplam basınç 1,03 atm ölçülüyor. Buna göre tepkimeye giren Zn kaç gramdır? (27 °C'de suyun buhar basıncı 0,03 atm; R = 0,082 L·atm/(mol·K); Zn = 65 g/mol)",
+        "tr": "Yeterli miktarda HCl çözeltisine atılan bir miktar Zn metalinin tamamı Zn(k) + 2HCl(suda) → ZnCl2(suda) + H2(g) tepkimesine göre harcanıyor. Oluşan H2 gazı 27 °C'de 24,6 L'lik bir kapta su üstünde toplanıyor ve kaptaki toplam basınç 1,03 atm ölçülüyor. Tepkimeye giren Zn kaç gramdır? (27 °C'de suyun buhar basıncı 0,03 atm; R = 0,082 L·atm/(mol·K); Zn = 65 g/mol)",
         "en": "A piece of Zn metal is added to excess HCl solution and is completely consumed according to Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g). The H2 gas formed is collected over water at 27 °C in a 24.6 L container, and the total pressure in the container is measured as 1.03 atm. How many grams of Zn reacted? (Vapor pressure of water at 27 °C = 0.03 atm; R = 0.082 L·atm/(mol·K); Zn = 65 g/mol)",
         "de": "Ein Stück Zn-Metall wird in überschüssige HCl-Lösung gegeben und nach Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) vollständig verbraucht. Das entstehende H2-Gas wird bei 27 °C in einem 24,6-L-Gefäß über Wasser aufgefangen; der Gesamtdruck im Gefäß beträgt 1,03 atm. Wie viel Gramm Zn haben reagiert? (Dampfdruck von Wasser bei 27 °C = 0,03 atm; R = 0,082 L·atm/(mol·K); Zn = 65 g/mol)",
         "fr": "Un morceau de zinc est ajouté à un excès de solution de HCl et est entièrement consommé selon Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g). Le H2 formé est recueilli sur l'eau à 27 °C dans un récipient de 24,6 L, où la pression totale mesurée est de 1,03 atm. Combien de grammes de Zn ont réagi ? (Pression de vapeur de l'eau à 27 °C = 0,03 atm ; R = 0,082 L·atm/(mol·K) ; Zn = 65 g/mol)",
         "ru": "Кусочек цинка внесли в избыток раствора HCl, и он полностью прореагировал по уравнению Zn(тв) + 2HCl(р-р) → ZnCl2(р-р) + H2(г). Образовавшийся H2 собрали над водой при 27 °C в сосуд объёмом 24,6 л; общее давление в сосуде 1,03 атм. Сколько граммов Zn вступило в реакцию? (Давление водяного пара при 27 °C 0,03 атм; R = 0,082 л·атм/(моль·K); Zn = 65 г/моль)",
         "ar": "أُضيفت قطعة من فلز Zn إلى كمية زائدة من محلول HCl فاستُهلكت كليًا وفق التفاعل Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g). جُمع غاز H2 الناتج فوق الماء عند 27 °C في وعاء حجمه 24.6 L، فكان الضغط الكلي في الوعاء 1.03 atm. كم غرامًا من Zn تفاعل؟ (ضغط بخار الماء عند 27 °C = 0.03 atm؛ R = 0.082 L·atm/(mol·K)؛ Zn = 65 g/mol)",
         "zh": "将一定量的 Zn 放入足量盐酸中，按 Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) 完全反应。生成的 H2 在 27 °C 下用排水法收集于 24.6 L 的容器中，测得容器内总压强为 1.03 atm。参加反应的 Zn 是多少克？(27 °C 时水的蒸气压为 0.03 atm；R = 0.082 L·atm/(mol·K)；Zn = 65 g/mol)",
-        "ku": "Perçeyek metala Zn tê avêtin nav çareseriyeke HCl a têra xwe û li gorî reaksiyona Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) bi tevahî tê xerckirin. Gaza H2 ya çêbûyî di 27 °C de di firaxeke 24,6 L de li ser avê tê berhevkirin û zexta giştî ya di firaxê de 1,03 atm tê pîvandin. Li gorî vê, çend gram Zn ketiye reaksiyonê? (Zexta buhara avê di 27 °C de 0,03 atm e; R = 0,082 L·atm/(mol·K); Zn = 65 g/mol)"
+        "ku": "Perçeyek metala Zn tê avêtin nav çareseriyeke HCl ya têra xwe û li gorî reaksiyona Zn(s) + 2HCl(aq) → ZnCl2(aq) + H2(g) bi tevahî tê xerckirin. Gaza H2 ya çêbûyî di 27 °C de di firaxeke 24,6 L de li ser avê tê berhevkirin û zexta giştî ya di firaxê de 1,03 atm tê pîvandin. Çend gram Zn ketiye reaksiyonê? (Zexta buhara avê di 27 °C de 0,03 atm e; R = 0,082 L·atm/(mol·K); Zn = 65 g/mol)"
       },
       "options": [
         {
@@ -1904,14 +1974,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin12",
       "stem": {
-        "tr": "Sabit sıcaklıkta, 2 L'lik kaptaki 3 atm basınçlı He gazı ile 3 L'lik kaptaki 2 atm basınçlı Ne gazı, aradaki musluk açılarak karıştırılıyor. Bağlantı borusunun hacmi ihmal edildiğine göre son durumda toplam basınç kaç atm olur?",
-        "en": "At constant temperature, He gas at 3 atm in a 2 L container and Ne gas at 2 atm in a 3 L container are mixed by opening the valve between them. If the volume of the connecting tube is negligible, what is the final total pressure in atm?",
-        "de": "Bei konstanter Temperatur werden He-Gas (3 atm, 2-L-Behälter) und Ne-Gas (2 atm, 3-L-Behälter) durch Öffnen des Verbindungshahns gemischt. Das Volumen des Verbindungsrohrs ist vernachlässigbar. Wie groß ist der Gesamtdruck am Ende in atm?",
-        "fr": "À température constante, du He à 3 atm dans un récipient de 2 L et du Ne à 2 atm dans un récipient de 3 L sont mélangés en ouvrant le robinet qui les relie. Le volume du tube de liaison étant négligeable, quelle est la pression totale finale en atm ?",
-        "ru": "При постоянной температуре газ He (3 атм, сосуд объёмом 2 л) и газ Ne (2 атм, сосуд объёмом 3 л) смешивают, открыв кран между сосудами. Объёмом соединительной трубки можно пренебречь. Чему равно конечное общее давление (атм)?",
-        "ar": "عند درجة حرارة ثابتة، يُمزج غاز He بضغط 3 atm في وعاء حجمه 2 L مع غاز Ne بضغط 2 atm في وعاء حجمه 3 L بفتح الصمام بينهما. إذا كان حجم أنبوب الوصل مهملًا، فكم يبلغ الضغط الكلي النهائي بوحدة atm؟",
-        "zh": "恒温下，打开连接两个容器的阀门，使2 L容器中3 atm的He与3 L容器中2 atm的Ne混合。连接管体积忽略不计，最终总压强是多少atm？",
-        "ku": "Di germahiya sabît de, gaza He ya 3 atm a di firaxeke 2 L de û gaza Ne ya 2 atm a di firaxeke 3 L de, bi vekirina valfa navbera wan, tevlihev dibin. Heke qebareya lûleya girêdanê neyê hesibandin, zexta giştî ya dawî çend atm e?"
+        "tr": "Şekildeki kaplarda sabit sıcaklıkta He ve Ne gazları bulunmaktadır. M musluğu açılıp gazlar tamamen karıştığında toplam basınç kaç atm olur? (Bağlantı borusunun hacmi ihmal edilecektir.)",
+        "en": "The containers shown hold He and Ne gases at constant temperature. When valve M is opened and the gases mix completely, what is the total pressure in atm? (The volume of the connecting tube is negligible.)",
+        "de": "Die abgebildeten Behälter enthalten bei konstanter Temperatur He- und Ne-Gas. Wie groß ist der Gesamtdruck in atm, nachdem der Hahn M geöffnet wurde und sich die Gase vollständig vermischt haben? (Das Volumen des Verbindungsrohrs ist vernachlässigbar.)",
+        "fr": "Les récipients représentés contiennent du He et du Ne à température constante. Lorsqu'on ouvre le robinet M et que les gaz se mélangent complètement, quelle est la pression totale en atm ? (Le volume du tube de liaison est négligeable.)",
+        "ru": "В изображённых сосудах при постоянной температуре находятся газы He и Ne. Каким станет общее давление (атм) после того, как кран M откроют и газы полностью перемешаются? (Объёмом соединительной трубки пренебречь.)",
+        "ar": "يحتوي الوعاءان المبيَّنان في الشكل على غازَي He وNe عند درجة حرارة ثابتة. عند فتح الصمام M واختلاط الغازين تمامًا، كم يصبح الضغط الكلي بوحدة atm؟ (يُهمَل حجم أنبوب الوصل.)",
+        "zh": "如图，两容器中分别装有 He 和 Ne，温度保持不变。打开阀门 M，待气体完全混合后，总压强是多少 atm？（连接管体积忽略不计）",
+        "ku": "Di firaxên şiklê de, di germahiya sabît de gazên He û Ne hene. Dema ku valfa M tê vekirin û gaz bi tevahî tevlihev dibin, zexta giştî çend atm dibe? (Qebareya lûleya girêdanê nayê hesibandin.)"
       },
       "options": [
         {
@@ -1967,27 +2037,33 @@ export const unit13: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Musluk açılınca her gaz 2 + 3 = 5 L'lik hacmin tamamına yayılır ve sabit sıcaklıkta P1V1 = P2V2 uygulanır: P(He) = 3 × 2/5 = 1,2 atm, P(Ne) = 2 × 3/5 = 1,2 atm. Dalton yasasına göre Ptoplam = 1,2 + 1,2 = 2,4 atm. Basınçların aritmetik ortalamasını alan öğrenci 2,5 atm, basınçları doğrudan toplayan 5,0 atm, yalnızca bir gazın kısmi basıncını yazan ise 1,2 atm bulur.",
-        "en": "When the valve opens, each gas spreads through the whole 2 + 3 = 5 L, and at constant temperature P1V1 = P2V2: P(He) = 3 × 2/5 = 1.2 atm, P(Ne) = 2 × 3/5 = 1.2 atm. By Dalton's law Ptotal = 1.2 + 1.2 = 2.4 atm. A student who averages the pressures gets 2.5 atm, one who simply adds them gets 5.0 atm, and one who gives only one gas's partial pressure gets 1.2 atm.",
-        "de": "Nach dem Öffnen verteilt sich jedes Gas auf das gesamte Volumen 2 + 3 = 5 L; bei konstanter Temperatur gilt P1V1 = P2V2: P(He) = 3 × 2/5 = 1,2 atm, P(Ne) = 2 × 3/5 = 1,2 atm. Nach Dalton ist Pgesamt = 1,2 + 1,2 = 2,4 atm. Wer die Drücke mittelt, erhält 2,5 atm; wer sie einfach addiert, 5,0 atm; wer nur den Partialdruck eines Gases angibt, 1,2 atm.",
-        "fr": "À l'ouverture du robinet, chaque gaz occupe tout le volume 2 + 3 = 5 L et, à température constante, P1V1 = P2V2 : P(He) = 3 × 2/5 = 1,2 atm, P(Ne) = 2 × 3/5 = 1,2 atm. D'après la loi de Dalton, Ptotale = 1,2 + 1,2 = 2,4 atm. L'élève qui fait la moyenne des pressions trouve 2,5 atm, celui qui les additionne directement 5,0 atm, et celui qui ne donne que la pression partielle d'un gaz 1,2 atm.",
-        "ru": "После открытия крана каждый газ занимает весь объём 2 + 3 = 5 л, и при постоянной температуре P1V1 = P2V2: P(He) = 3 × 2/5 = 1,2 атм, P(Ne) = 2 × 3/5 = 1,2 атм. По закону Дальтона Pобщ = 1,2 + 1,2 = 2,4 атм. Ученик, усреднивший давления, получит 2,5 атм; просто сложивший их — 5,0 атм; указавший парциальное давление только одного газа — 1,2 атм.",
-        "ar": "عند فتح الصمام ينتشر كل غاز في الحجم الكلي 2 + 3 = 5 L، وعند درجة حرارة ثابتة P1V1 = P2V2: P(He) = 3 × 2/5 = 1.2 atm وP(Ne) = 2 × 3/5 = 1.2 atm. وفق قانون دالتون Ptotal = 1.2 + 1.2 = 2.4 atm. الطالب الذي يأخذ متوسط الضغطين يحصل على 2.5 atm، ومن يجمعهما مباشرة يحصل على 5.0 atm، ومن يكتب الضغط الجزئي لغاز واحد فقط يحصل على 1.2 atm.",
-        "zh": "打开阀门后，每种气体都扩散到整个 2 + 3 = 5 L 的体积中，恒温下 P1V1 = P2V2：P(He) = 3 × 2/5 = 1.2 atm，P(Ne) = 2 × 3/5 = 1.2 atm。由道尔顿分压定律 P总 = 1.2 + 1.2 = 2.4 atm。把两个压强取平均的学生得到 2.5 atm，直接相加的得到 5.0 atm，只写出一种气体分压的得到 1.2 atm。",
-        "ku": "Dema valf vedibe, her gaz li tevahiya qebareya 2 + 3 = 5 L belav dibe û di germahiya sabît de P1V1 = P2V2 tê bikaranîn: P(He) = 3 × 2/5 = 1,2 atm, P(Ne) = 2 × 3/5 = 1,2 atm. Li gorî zagona Dalton Ptotal = 1,2 + 1,2 = 2,4 atm. Xwendekarê ku navîniya zextan digire 2,5 atm, yê ku zextan rasterast li hev zêde dike 5,0 atm, yê ku tenê zexta qismî ya gazekê dinivîse 1,2 atm dibîne."
+        "tr": "Şekilden He için 2 L ve 3 atm, Ne için 3 L ve 2 atm okunur. Musluk açılınca her gaz 2 + 3 = 5 L'lik hacmin tamamına yayılır ve sabit sıcaklıkta P1V1 = P2V2 uygulanır: P(He) = 3 × 2/5 = 1,2 atm, P(Ne) = 2 × 3/5 = 1,2 atm. Dalton yasasına göre Ptoplam = 1,2 + 1,2 = 2,4 atm. Basınçların aritmetik ortalamasını alan öğrenci 2,5 atm, basınçları doğrudan toplayan 5,0 atm, yalnızca bir gazın kısmi basıncını yazan ise 1,2 atm bulur.",
+        "en": "From the figure: He is at 3 atm in 2 L and Ne is at 2 atm in 3 L. When the valve opens, each gas spreads through the whole 2 + 3 = 5 L, and at constant temperature P1V1 = P2V2: P(He) = 3 × 2/5 = 1.2 atm, P(Ne) = 2 × 3/5 = 1.2 atm. By Dalton's law Ptotal = 1.2 + 1.2 = 2.4 atm. A student who averages the pressures gets 2.5 atm, one who simply adds them gets 5.0 atm, and one who gives only one gas's partial pressure gets 1.2 atm.",
+        "de": "Aus der Abbildung: He hat 3 atm in 2 L, Ne hat 2 atm in 3 L. Nach dem Öffnen verteilt sich jedes Gas auf das gesamte Volumen 2 + 3 = 5 L; bei konstanter Temperatur gilt P1V1 = P2V2: P(He) = 3 × 2/5 = 1,2 atm, P(Ne) = 2 × 3/5 = 1,2 atm. Nach Dalton ist Pgesamt = 1,2 + 1,2 = 2,4 atm. Wer die Drücke mittelt, erhält 2,5 atm; wer sie einfach addiert, 5,0 atm; wer nur den Partialdruck eines Gases angibt, 1,2 atm.",
+        "fr": "D'après la figure : He est à 3 atm dans 2 L et Ne à 2 atm dans 3 L. À l'ouverture du robinet, chaque gaz occupe tout le volume 2 + 3 = 5 L et, à température constante, P1V1 = P2V2 : P(He) = 3 × 2/5 = 1,2 atm, P(Ne) = 2 × 3/5 = 1,2 atm. D'après la loi de Dalton, Ptotale = 1,2 + 1,2 = 2,4 atm. L'élève qui fait la moyenne des pressions trouve 2,5 atm, celui qui les additionne directement 5,0 atm, et celui qui ne donne que la pression partielle d'un gaz 1,2 atm.",
+        "ru": "По рисунку: He — 3 атм в 2 л, Ne — 2 атм в 3 л. После открытия крана каждый газ занимает весь объём 2 + 3 = 5 л, и при постоянной температуре P1V1 = P2V2: P(He) = 3 × 2/5 = 1,2 атм, P(Ne) = 2 × 3/5 = 1,2 атм. По закону Дальтона Pобщ = 1,2 + 1,2 = 2,4 атм. Ученик, усреднивший давления, получит 2,5 атм; просто сложивший их — 5,0 атм; указавший парциальное давление только одного газа — 1,2 атм.",
+        "ar": "من الشكل: He بضغط 3 atm في 2 L، وNe بضغط 2 atm في 3 L. عند فتح الصمام ينتشر كل غاز في الحجم الكلي 2 + 3 = 5 L، وعند درجة حرارة ثابتة P1V1 = P2V2: P(He) = 3 × 2/5 = 1.2 atm وP(Ne) = 2 × 3/5 = 1.2 atm. وفق قانون دالتون Ptotal = 1.2 + 1.2 = 2.4 atm. الطالب الذي يأخذ متوسط الضغطين يحصل على 2.5 atm، ومن يجمعهما مباشرة يحصل على 5.0 atm، ومن يكتب الضغط الجزئي لغاز واحد فقط يحصل على 1.2 atm.",
+        "zh": "由图可知：He 为 2 L、3 atm，Ne 为 3 L、2 atm。打开阀门后，每种气体都扩散到整个 2 + 3 = 5 L 的体积中，恒温下 P1V1 = P2V2：P(He) = 3 × 2/5 = 1.2 atm，P(Ne) = 2 × 3/5 = 1.2 atm。由道尔顿分压定律 P总 = 1.2 + 1.2 = 2.4 atm。把两个压强取平均的学生得到 2.5 atm，直接相加的得到 5.0 atm，只写出一种气体分压的得到 1.2 atm。",
+        "ku": "Ji şiklê: He di 2 L de 3 atm, Ne di 3 L de 2 atm e. Dema valf vedibe, her gaz li tevahiya qebareya 2 + 3 = 5 L belav dibe û di germahiya sabît de P1V1 = P2V2 tê bikaranîn: P(He) = 3 × 2/5 = 1,2 atm, P(Ne) = 2 × 3/5 = 1,2 atm. Li gorî zagona Dalton Ptotal = 1,2 + 1,2 = 2,4 atm. Xwendekarê ku navîniya zextan digire 2,5 atm, yê ku zextan rasterast li hev zêde dike 5,0 atm, yê ku tenê zexta qismî ya gazekê dinivîse 1,2 atm dibîne."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 165,
+        "markup": "<rect x='30' y='45' width='110' height='90' rx='8' class='qf-fill'/><rect x='34' y='49' width='102' height='82' rx='6' class='qf-gas'/><rect x='220' y='30' width='120' height='120' rx='8' class='qf-fill'/><rect x='224' y='34' width='112' height='112' rx='6' class='qf-gas'/><path d='M140,84 H220 M140,96 H220' class='qf-line'/><path d='M168,80 L192,100 L192,80 L168,100 Z' class='qf-accent'/><path d='M180,90 V66 M171,66 H189' class='qf-line'/><text x='180' y='58' text-anchor='middle' class='qf-strong'>M</text><text x='85' y='80' text-anchor='middle' class='qf-big'>He</text><text x='85' y='102' text-anchor='middle'>2 L</text><text x='85' y='122' text-anchor='middle'>3 atm</text><text x='280' y='72' text-anchor='middle' class='qf-big'>Ne</text><text x='280' y='98' text-anchor='middle'>3 L</text><text x='280' y='120' text-anchor='middle'>2 atm</text>"
       }
     },
     {
       "id": "u13-twin13",
       "stem": {
-        "tr": "Mol kütleleri ve mutlak sıcaklıkları verilen gazlar: I. H2 (2 g/mol), 200 K II. CH4 (16 g/mol), 400 K III. O2 (32 g/mol), 800 K. Bu gazların difüzyon hızları arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?",
-        "en": "Gases with the given molar masses and absolute temperatures: I. H2 (2 g/mol), 200 K II. CH4 (16 g/mol), 400 K III. O2 (32 g/mol), 800 K. Which option correctly gives the relationship between their diffusion rates?",
-        "de": "Gase mit den angegebenen Molmassen und absoluten Temperaturen: I. H2 (2 g/mol), 200 K II. CH4 (16 g/mol), 400 K III. O2 (32 g/mol), 800 K. Welche Antwort gibt die Beziehung ihrer Diffusionsgeschwindigkeiten richtig an?",
-        "fr": "Gaz dont la masse molaire et la température absolue sont données : I. H2 (2 g/mol), 200 K II. CH4 (16 g/mol), 400 K III. O2 (32 g/mol), 800 K. Quelle proposition donne correctement la relation entre leurs vitesses de diffusion ?",
-        "ru": "Даны газы с молярными массами и абсолютными температурами: I. H2 (2 г/моль), 200 K II. CH4 (16 г/моль), 400 K III. O2 (32 г/моль), 800 K. В каком варианте правильно указано соотношение их скоростей диффузии?",
-        "ar": "فيما يلي الكتل المولية ودرجات الحرارة المطلقة لعدة غازات: I. H2 (2 g/mol)، 200 K II. CH4 (16 g/mol)، 400 K III. O2 (32 g/mol)، 800 K. أيّ الخيارات الآتية يعطي العلاقة الصحيحة بين سرعات انتشار هذه الغازات؟",
-        "zh": "已知下列气体的摩尔质量和热力学温度：I. H2(2 g/mol)，200 K II. CH4(16 g/mol)，400 K III. O2(32 g/mol)，800 K。它们的扩散速率关系哪一项正确？",
-        "ku": "Girseya molî û germahiya mutleq a van gazan hatine dayîn: I. H2 (2 g/mol), 200 K II. CH4 (16 g/mol), 400 K III. O2 (32 g/mol), 800 K. Têkiliya navbera lezên difûzyona wan di kîjan vebijarkê de rast hatiye dayîn?"
+        "tr": "Tabloda mol kütleleri ve mutlak sıcaklıkları verilen I, II ve III gazlarının difüzyon hızları arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?",
+        "en": "Which of the following correctly relates the diffusion rates of gases I, II and III, whose molar masses and absolute temperatures are given in the table?",
+        "de": "Welche der folgenden Beziehungen zwischen den Diffusionsgeschwindigkeiten der Gase I, II und III, deren molare Massen und absolute Temperaturen in der Tabelle stehen, ist richtig?",
+        "fr": "Laquelle des relations suivantes entre les vitesses de diffusion des gaz I, II et III, dont les masses molaires et les températures absolues sont données dans le tableau, est correcte ?",
+        "ru": "Какое из соотношений между скоростями диффузии газов I, II и III, молярные массы и абсолютные температуры которых даны в таблице, верно?",
+        "ar": "أيّ العلاقات الآتية بين سرعات انتشار الغازات I و II و III، المعطاة كتلها المولية ودرجات حرارتها المطلقة في الجدول، صحيحة؟",
+        "zh": "表中给出了气体 I、II、III 的摩尔质量和热力学温度。下列关于它们扩散速率关系的表述中，正确的是哪一项？",
+        "ku": "Têkiliya di navbera lezên difûzyonê yên gazên I, II û III de, ku girseyên wan ên molî û germahiyên wan ên mutleq di tabloyê de hatine dayîn, di kîjan vebijarkê de rast hatiye dayîn?"
       },
       "options": [
         {
@@ -2051,6 +2127,62 @@ export const unit13: ChemistryUnitSeedData = {
         "ar": "سرعة الانتشار تتناسب مع sqrt(T/M). I: sqrt(200/2) = sqrt(100) = 10؛ II: sqrt(400/16) = sqrt(25) = 5؛ III: sqrt(800/32) = sqrt(25) = 5. إذن I > II = III. الطالب الذي ينظر إلى الكتل المولية فقط ويهمل درجة الحرارة يستنتج I > II > III، ومن ينظر إلى درجة الحرارة فقط يستنتج III > II > I.",
         "zh": "扩散速率与 sqrt(T/M) 成正比。I：sqrt(200/2) = sqrt(100) = 10；II：sqrt(400/16) = sqrt(25) = 5；III：sqrt(800/32) = sqrt(25) = 5。所以 I > II = III。只看摩尔质量而忽略温度的学生会得出 I > II > III；只看温度的学生会得出 III > II > I。",
         "ku": "Leza difûzyonê bi sqrt(T/M) re rêjeyî ye. I: sqrt(200/2) = sqrt(100) = 10; II: sqrt(400/16) = sqrt(25) = 5; III: sqrt(800/32) = sqrt(25) = 5. Ji ber vê yekê I > II = III. Xwendekarê ku tenê li girseyên molî dinêre û germahiyê nahesibîne digihîje I > II > III; yê ku tenê li germahiyê dinêre digihîje III > II > I."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          "",
+          {
+            "tr": "Gaz",
+            "en": "Gas",
+            "de": "Gas",
+            "fr": "Gaz",
+            "ru": "Газ",
+            "ar": "الغاز",
+            "zh": "气体",
+            "ku": "Gaz"
+          },
+          {
+            "tr": "Mol kütlesi (g/mol)",
+            "en": "Molar mass (g/mol)",
+            "de": "Molare Masse (g/mol)",
+            "fr": "Masse molaire (g/mol)",
+            "ru": "Молярная масса (г/моль)",
+            "ar": "الكتلة المولية (g/mol)",
+            "zh": "摩尔质量 (g/mol)",
+            "ku": "Girseya molî (g/mol)"
+          },
+          {
+            "tr": "Mutlak sıcaklık (K)",
+            "en": "Absolute temperature (K)",
+            "de": "Absolute Temperatur (K)",
+            "fr": "Température absolue (K)",
+            "ru": "Абсолютная температура (K)",
+            "ar": "درجة الحرارة المطلقة (K)",
+            "zh": "热力学温度 (K)",
+            "ku": "Germahiya mutleq (K)"
+          }
+        ],
+        "rows": [
+          [
+            "I",
+            "H2",
+            "2",
+            "200"
+          ],
+          [
+            "II",
+            "CH4",
+            "16",
+            "400"
+          ],
+          [
+            "III",
+            "O2",
+            "32",
+            "800"
+          ]
+        ]
       }
     },
     {

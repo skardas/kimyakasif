@@ -294,14 +294,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-f09",
       "fact": {
-        "tr": "Çözünürlük, belirli sıcaklık ve basınçta 100 g çözücüde (genellikle su) çözünebilen en fazla madde miktarıdır.",
-        "en": "Solubility is the maximum amount of a substance that can dissolve in 100 g of solvent (usually water) at a given temperature and pressure.",
-        "de": "Löslichkeit ist die größte Stoffmenge, die sich bei gegebener Temperatur und gegebenem Druck in 100 g Lösungsmittel (meist Wasser) lösen kann.",
-        "fr": "La solubilité est la quantité maximale d'une substance pouvant se dissoudre dans 100 g de solvant (généralement l'eau) à une température et une pression données.",
-        "ru": "Растворимость — наибольшее количество вещества, которое может раствориться в 100 г растворителя (обычно воды) при данных температуре и давлении.",
-        "ar": "الذائبية هي أكبر كمية من المادة يمكن أن تذوب في 100 g من المذيب (الماء غالبًا) عند درجة حرارة وضغط معينين.",
-        "zh": "溶解度是在一定温度和压强下，100 g 溶剂（通常为水）中最多能溶解的溶质的质量。",
-        "ku": "Helbûnî mîqdara herî zêde ya madeyekê ye ku di germahî û zexteke diyar de di 100 g helker (bi giştî av) de dikare bihele."
+        "tr": "Çözünürlük, belirli sıcaklık ve basınçta belirli miktardaki çözücüde çözünebilen en fazla madde miktarıdır; katılar için genellikle 100 g sudaki gram cinsinden verilir.",
+        "en": "Solubility is the maximum amount of a substance that can dissolve in a given amount of solvent at a given temperature and pressure; for solids it is usually expressed in grams per 100 g of water.",
+        "de": "Löslichkeit ist die größte Menge eines Stoffes, die sich bei gegebener Temperatur und gegebenem Druck in einer bestimmten Menge Lösungsmittel lösen kann; bei Feststoffen wird sie meist in Gramm pro 100 g Wasser angegeben.",
+        "fr": "La solubilité est la quantité maximale d'une substance pouvant se dissoudre dans une quantité donnée de solvant à une température et une pression données ; pour les solides, on l'exprime généralement en grammes pour 100 g d'eau.",
+        "ru": "Растворимость — наибольшее количество вещества, которое может раствориться в определённом количестве растворителя при данных температуре и давлении; для твёрдых веществ её обычно выражают в граммах на 100 г воды.",
+        "ar": "الذائبية هي أكبر كمية من المادة يمكن أن تذوب في كمية معينة من المذيب عند درجة حرارة وضغط معينين؛ وتُعطى للمواد الصلبة عادةً بالغرامات لكل 100 g من الماء.",
+        "zh": "溶解度是在一定温度和压强下，一定量溶剂中最多能溶解的溶质的量；固体的溶解度通常以每 100 g 水中所能溶解的克数表示。",
+        "ku": "Helbûnî mîqdara herî zêde ya madeyekê ye ku di germahî û zexteke diyar de di mîqdareke diyar a helker de dikare bihele; ji bo madeyên hişk bi giştî bi gramên di 100 g avê de tê dayîn."
       },
       "trap": {
         "tr": "Çözünürlük, doymamış bir çözeltide çözünmüş olarak bulunan madde miktarıdır.",
@@ -811,14 +811,14 @@ export const unit15: ChemistryUnitSeedData = {
         "ku": "Çareseriya Glîkozê (i = 1)"
       },
       "distinction": {
-        "tr": "Eşit molalitede NaCl çözeltisi glikoz çözeltisine göre iki kat tanecik içerir; bu nedenle donma noktası alçalması ve kaynama noktası yükselmesi yaklaşık iki kat büyüktür.",
-        "en": "At equal molality, a NaCl solution contains twice as many particles as a glucose solution; therefore its freezing point depression and boiling point elevation are about twice as large.",
-        "de": "NaCl-Lösung: enthält bei gleicher Molalität doppelt so viele Teilchen wie eine Glucoselösung; daher sind ihre Gefrierpunktserniedrigung und Siedepunkterhöhung etwa doppelt so groß.",
-        "fr": "Solution de NaCl : à molalité égale, elle contient deux fois plus de particules qu'une solution de glucose ; son abaissement du point de congélation et son élévation du point d'ébullition sont donc environ deux fois plus grands.",
-        "ru": "Раствор NaCl (i = 2) при одинаковой моляльности содержит вдвое больше частиц, чем раствор глюкозы (i = 1), поэтому понижение температуры замерзания и повышение температуры кипения у него примерно вдвое больше.",
-        "ar": "عند تساوي المولالية يحتوي محلول NaCl على ضعف عدد الجسيمات الموجودة في محلول الجلوكوز؛ لذلك يكون كلٌّ من الانخفاض في درجة تجمده والارتفاع في درجة غليانه نحو ضعف ما في محلول الجلوكوز.",
-        "zh": "在质量摩尔浓度相同时，NaCl 溶液(i = 2)所含粒子数是葡萄糖溶液(i = 1)的两倍；因此其凝固点降低值和沸点升高值约为后者的两倍。",
-        "ku": "Di heman molalîteyê de çareseriya NaCl (i = 2) du qat ji çareseriya glîkozê (i = 1) bêtir perçe dihewîne; ji ber vê yekê daketina xala cemidînê û bilindbûna xala kelînê ya wê nêzîkî du qat mezintir in."
+        "tr": "NaCl çözeltisi, eşit molalitedeki glikoz çözeltisinin iki katı tanecik içerdiğinden donma noktası alçalması ve kaynama noktası yükselmesi yaklaşık iki kat büyüktür; glikoz çözeltisi ise glikoz iyonlaşmadığından molalitesi kadar tanecik içerir.",
+        "en": "A NaCl solution contains twice as many particles as a glucose solution of equal molality, so its freezing point depression and boiling point elevation are about twice as large; a glucose solution, by contrast, contains only as many particles as its molality, because glucose does not ionize.",
+        "de": "Eine NaCl-Lösung enthält doppelt so viele Teilchen wie eine Glucoselösung gleicher Molalität, daher sind ihre Gefrierpunktserniedrigung und Siedepunkterhöhung etwa doppelt so groß; eine Glucoselösung enthält dagegen nur so viele Teilchen, wie ihre Molalität angibt, weil Glucose nicht ionisiert.",
+        "fr": "Une solution de NaCl contient deux fois plus de particules qu'une solution de glucose de même molalité, si bien que son abaissement du point de congélation et son élévation du point d'ébullition sont environ deux fois plus grands ; une solution de glucose, elle, ne contient que le nombre de particules indiqué par sa molalité, car le glucose ne s'ionise pas.",
+        "ru": "Раствор NaCl содержит вдвое больше частиц, чем раствор глюкозы той же моляльности, поэтому понижение температуры замерзания и повышение температуры кипения у него примерно вдвое больше; раствор глюкозы же содержит столько частиц, сколько соответствует его моляльности, поскольку глюкоза не ионизируется.",
+        "ar": "يحتوي محلول NaCl على ضعف عدد الجسيمات الموجودة في محلول جلوكوز له المولالية نفسها، لذلك يكون الانخفاض في درجة تجمده والارتفاع في درجة غليانه نحو الضعف؛ أما محلول الجلوكوز فلا يحتوي إلا على عدد من الجسيمات يساوي مولاليته، لأن الجلوكوز لا يتأيّن.",
+        "zh": "NaCl 溶液所含粒子数是相同质量摩尔浓度葡萄糖溶液的两倍，因此其凝固点降低值和沸点升高值约为后者的两倍；而葡萄糖不电离，葡萄糖溶液所含粒子数只与其质量摩尔浓度相当。",
+        "ku": "Çareseriya NaCl du qat ji çareseriya glîkozê ya bi heman molalîteyê bêtir perçe dihewîne, ji ber vê yekê daketina xala cemidînê û bilindbûna xala kelînê ya wê nêzîkî du qat mezintir in; çareseriya glîkozê jî, ji ber ku glîkoz îyonîze nabe, tenê bi qasî molalîteya xwe perçe dihewîne."
       }
     }
   ],
@@ -936,25 +936,25 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-s03",
       "title": {
-        "tr": "Aşırı Doymuş Çözelti Hazırlama (Çözünürlüğü Sıcaklıkla Artan Katı)",
-        "en": "Preparing a Supersaturated Solution (Solid Whose Solubility Increases with Temperature)",
-        "de": "Herstellung einer übersättigten Lösung (Feststoff, dessen Löslichkeit mit der Temperatur zunimmt)",
-        "fr": "Préparation d'une solution sursaturée (solide dont la solubilité augmente avec la température)",
-        "ru": "Приготовление пересыщенного раствора (твёрдое вещество, растворимость которого растёт с температурой)",
-        "ar": "تحضير محلول فوق مشبع (مادة صلبة تزداد ذائبيتها بارتفاع درجة الحرارة)",
-        "zh": "过饱和溶液的制备（溶解度随温度升高而增大的固体）",
-        "ku": "Amadekirina Çareseriya Zêdetêr (Madeyeke Hişk a ku Helbûniya Wê bi Germahiyê re Zêde Dibe)"
+        "tr": "Aşırı doymuş çözelti hazırlama",
+        "en": "Preparing a supersaturated solution",
+        "de": "Herstellung einer übersättigten Lösung",
+        "fr": "Préparation d'une solution sursaturée",
+        "ru": "Приготовление пересыщенного раствора",
+        "ar": "تحضير محلول فوق مشبع",
+        "zh": "过饱和溶液的制备",
+        "ku": "Amadekirina çareseriya zêdetêr"
       },
       "steps": [
         {
-          "tr": "Yüksek sıcaklıkta, dibinde katısı bulunan doygun çözelti hazırlanır",
-          "en": "A saturated solution with undissolved solid at the bottom is prepared at a high temperature",
-          "de": "Bei hoher Temperatur wird eine gesättigte Lösung mit Bodenkörper hergestellt",
-          "fr": "On prépare à haute température une solution saturée avec du solide non dissous au fond",
-          "ru": "При высокой температуре готовят насыщенный раствор с осадком на дне",
-          "ar": "يُحضَّر عند درجة حرارة مرتفعة محلول مشبع يوجد في قاعه راسب صلب",
-          "zh": "在较高温度下配制底部留有未溶固体的饱和溶液",
-          "ku": "Di germahiya bilind de çareseriyeke têr tê amadekirin ku li binê wê madeya hişk heye"
+          "tr": "Çözünürlüğü sıcaklıkla artan bir katının yüksek sıcaklıkta, dibinde katısı bulunan doygun çözeltisi hazırlanır",
+          "en": "At a high temperature, a saturated solution of a solid whose solubility increases with temperature is prepared, with undissolved solid at the bottom",
+          "de": "Bei hoher Temperatur wird von einem Feststoff, dessen Löslichkeit mit der Temperatur zunimmt, eine gesättigte Lösung mit Bodenkörper hergestellt",
+          "fr": "À haute température, on prépare une solution saturée d'un solide dont la solubilité augmente avec la température, avec du solide non dissous au fond",
+          "ru": "При высокой температуре готовят насыщенный раствор твёрдого вещества, растворимость которого растёт с температурой, с осадком на дне",
+          "ar": "يُحضَّر عند درجة حرارة مرتفعة محلول مشبع لمادة صلبة تزداد ذائبيتها بارتفاع درجة الحرارة، ويبقى في قاعه راسب صلب",
+          "zh": "在较高温度下，配制溶解度随温度升高而增大的某固体的饱和溶液，底部留有未溶固体",
+          "ku": "Di germahiya bilind de çareseriyeke têr a madeyeke hişk a ku helbûniya wê bi germahiyê re zêde dibe tê amadekirin, bi madeya hişk li binê wê"
         },
         {
           "tr": "Sıcak çözelti süzülerek çözünmeden kalan katı ayrılır",
@@ -991,55 +991,55 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-s04",
       "title": {
-        "tr": "Çözünürlük Eğrisi Okuma",
-        "en": "Reading a Solubility Curve",
-        "de": "Ablesen einer Löslichkeitskurve",
-        "fr": "Lecture d'une courbe de solubilité",
-        "ru": "Работа с кривой растворимости",
-        "ar": "قراءة منحنى الذائبية",
-        "zh": "读取溶解度曲线",
-        "ku": "Xwendina Xêza Helbûniyê"
+        "tr": "Soğutmada kristallenen kütlenin çözünürlük eğrisinden hesaplanması",
+        "en": "Calculating the mass that crystallizes on cooling from a solubility curve",
+        "de": "Berechnung der beim Abkühlen auskristallisierenden Masse aus einer Löslichkeitskurve",
+        "fr": "Calcul, à partir d'une courbe de solubilité, de la masse qui cristallise au refroidissement",
+        "ru": "Расчёт массы вещества, кристаллизующегося при охлаждении, по кривой растворимости",
+        "ar": "حساب الكتلة المتبلورة عند التبريد من منحنى الذائبية",
+        "zh": "根据溶解度曲线计算冷却时析出晶体的质量",
+        "ku": "Hesabkirina girseya ku di sarbûnê de krîstal dibe ji kêşeya helbûniyê"
       },
       "steps": [
         {
-          "tr": "Grafikten belirli sıcaklıktaki doymuşluk değeri okunur",
-          "en": "The saturation value at a certain temperature is read from the graph.",
-          "de": "Aus der Grafik wird der Sättigungswert bei einer bestimmten Temperatur abgelesen.",
-          "fr": "La valeur de saturation à une certaine température est lue sur le graphique.",
-          "ru": "По графику определяют растворимость вещества (содержание в насыщенном растворе) при данной температуре",
-          "ar": "تُقرأ من الرسم البياني قيمة الذائبية (التشبع) عند درجة حرارة معينة",
-          "zh": "从曲线上读出指定温度下的溶解度",
-          "ku": "Ji grafîkê nirxa têrbûnê di germahiyeke diyar de tê xwendin"
+          "tr": "Grafikten başlangıç sıcaklığındaki çözünürlük (g/100 g su) okunur",
+          "en": "The solubility at the initial temperature (g/100 g water) is read from the graph",
+          "de": "Aus dem Diagramm wird die Löslichkeit bei der Anfangstemperatur (g/100 g Wasser) abgelesen",
+          "fr": "On lit sur le graphique la solubilité à la température initiale (g/100 g d'eau)",
+          "ru": "По графику определяют растворимость при начальной температуре (г/100 г воды)",
+          "ar": "تُقرأ من الرسم البياني الذائبية عند درجة الحرارة الابتدائية (g/100 g ماء)",
+          "zh": "从曲线上读出起始温度下的溶解度（g/100 g 水）",
+          "ku": "Ji grafîkê helbûniya di germahiya destpêkê de (g/100 g av) tê xwendin"
         },
         {
-          "tr": "100 gram sudaki maksimum çözünen madde belirlenir",
-          "en": "The maximum solute in 100 grams of water is determined",
-          "de": "Es wird der maximal gelöste Stoff in 100 Gramm Wasser bestimmt",
-          "fr": "Le soluté maximum dans 100 grammes d'eau est déterminé",
-          "ru": "Находят наибольшую массу вещества, которая может раствориться в 100 г воды",
-          "ar": "تُحدَّد أكبر كتلة من المادة يمكن أن تذوب في 100 g من الماء",
-          "zh": "确定 100 g 水中最多能溶解的溶质质量",
-          "ku": "Mîqdara herî zêde ya madeya ku di 100 gram avê de dihele tê diyarkirin"
+          "tr": "Bu değerle orantı kurularak doygun çözeltideki su ve çözünen kütleleri bulunur",
+          "en": "Using this value in a proportion, the masses of water and solute in the saturated solution are found",
+          "de": "Mit diesem Wert werden über eine Verhältnisgleichung die Massen von Wasser und gelöstem Stoff in der gesättigten Lösung bestimmt",
+          "fr": "Avec cette valeur, on établit une proportion pour trouver les masses d'eau et de soluté dans la solution saturée",
+          "ru": "С помощью этой величины по пропорции находят массы воды и растворённого вещества в насыщенном растворе",
+          "ar": "باستخدام هذه القيمة في تناسب تُحسب كتلتا الماء والمذاب في المحلول المشبع",
+          "zh": "利用该数值列比例，求出饱和溶液中水和溶质的质量",
+          "ku": "Bi vê nirxê rêjeyek tê danîn û girseyên av û madeya helbûyî yên di çareseriya têr de tên dîtin"
         },
         {
-          "tr": "Verilen su miktarıyla orantı kurularak kapasite bulunur",
-          "en": "Capacity is found by proportioning the amount of water given.",
-          "de": "Die Kapazität wird durch Verhältnis der gegebenen Wassermenge ermittelt.",
-          "fr": "La capacité est déterminée en proportionnant la quantité d’eau donnée.",
-          "ru": "Составляя пропорцию для данной массы воды, находят, сколько вещества может в ней раствориться",
-          "ar": "تُوجد بالتناسب أكبر كمية يمكن إذابتها في كمية الماء المعطاة",
-          "zh": "按所给水的质量列比例式，求出最多能溶解的量",
-          "ku": "Bi rêjeyekê li gorî mîqdara ava dayî, kapasîte tê dîtin"
+          "tr": "Son sıcaklıktaki çözünürlük okunarak aynı su kütlesinde çözünebilecek en fazla çözünen kütlesi hesaplanır",
+          "en": "The solubility at the final temperature is read and the maximum mass of solute that the same mass of water can hold is calculated",
+          "de": "Die Löslichkeit bei der Endtemperatur wird abgelesen und die größte Masse an gelöstem Stoff berechnet, die dieselbe Wassermasse aufnehmen kann",
+          "fr": "On lit la solubilité à la température finale et on calcule la masse maximale de soluté que la même masse d'eau peut dissoudre",
+          "ru": "Определяют растворимость при конечной температуре и рассчитывают наибольшую массу вещества, которая может раствориться в той же массе воды",
+          "ar": "تُقرأ الذائبية عند درجة الحرارة النهائية وتُحسب أكبر كتلة من المذاب يمكن أن تذوب في كتلة الماء نفسها",
+          "zh": "读出终了温度下的溶解度，计算同样质量的水最多能溶解的溶质质量",
+          "ku": "Helbûniya di germahiya dawî de tê xwendin û girseya herî zêde ya madeya helbûyî ku di heman girseya avê de dikare bihele tê hesabkirin"
         },
         {
-          "tr": "Sıcaklık değiştiğinde çöken veya gereken katı hesaplanır",
-          "en": "Calculate the solid that precipitates or is required when the temperature changes",
-          "de": "Berechnen Sie den Feststoff, der bei Temperaturänderungen ausfällt bzw. benötigt wird",
-          "fr": "Calculer le solide qui précipite ou est requis lorsque la température change",
-          "ru": "Рассчитывают массу вещества, которая выпадает в осадок или которую нужно добавить при изменении температуры",
-          "ar": "تُحسب كتلة المادة الصلبة التي تترسب أو التي يلزم إضافتها عند تغير درجة الحرارة",
-          "zh": "计算温度变化时析出的或需补加的固体质量",
-          "ku": "Dema germahî diguhere, mîqdara madeya hişk a ku dinişe an pêwîst e tê hesibandin"
+          "tr": "Başlangıçtaki çözünen kütlesinden bu değer çıkarılarak kristallenen katı kütlesi bulunur",
+          "en": "Subtracting this value from the initial mass of solute gives the mass of solid that crystallizes",
+          "de": "Zieht man diesen Wert von der anfänglichen Masse des gelösten Stoffes ab, erhält man die Masse des auskristallisierenden Feststoffs",
+          "fr": "En retranchant cette valeur de la masse initiale de soluté, on obtient la masse de solide qui cristallise",
+          "ru": "Вычитая эту величину из начальной массы растворённого вещества, находят массу выкристаллизовавшегося вещества",
+          "ar": "بطرح هذه القيمة من كتلة المذاب الابتدائية تُحسب كتلة المادة الصلبة المتبلورة",
+          "zh": "用起始溶质质量减去该数值，即得析出晶体的质量",
+          "ku": "Ev nirx ji girseya destpêkê ya madeya helbûyî tê derxistin û girseya madeya hişk a ku krîstal dibe tê dîtin"
         }
       ]
     }
@@ -1048,77 +1048,169 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin01",
       "stem": {
-        "tr": "1 kg saf suda 1 mol NaCl çözünerek hazırlanan çözeltinin 1 atm'de donmaya başlama sıcaklığı kaç °C'dir? (Su için Kd = 1,86 °C*kg/mol)",
-        "en": "What is the freezing temperature at 1 atm of the solution prepared by dissolving 1 mole of NaCl in 1 kg of pure water? (Kf for water = 1.86 °C*kg/mol)",
-        "de": "Wie hoch ist die Gefriertemperatur bei 1 atm der Lösung, die durch Auflösen von 1 Mol NaCl in 1 kg reinem Wasser hergestellt wird? (Kg für Wasser = 1,86 °C*kg/mol)",
-        "fr": "Quelle est la température de congélation à 1 atm de la solution préparée en dissolvant 1 mole de NaCl dans 1 kg d'eau pure ? (Kcong pour l'eau = 1,86 °C*kg/mol)",
-        "ru": "Раствор приготовлен растворением 1 моль NaCl в 1 кг чистой воды. При какой температуре (°C) он начинает замерзать при давлении 1 атм? (Для воды Kкр = 1,86 °C*кг/моль)",
-        "ar": "ما درجة الحرارة (°C) التي يبدأ عندها بالتجمد، تحت ضغط 1 atm، المحلولُ المحضَّر بإذابة 1 mol من NaCl في 1 kg من الماء النقي؟ (للماء Kf = 1.86 °C*kg/mol)",
-        "zh": "将 1 mol NaCl 溶于 1 kg 纯水中配成溶液，在 1 atm 下该溶液开始凝固的温度是多少 °C？(水的 Kf = 1.86 °C*kg/mol)",
-        "ku": "Çareseriyek bi helandina 1 mol NaCl di 1 kg ava paqij de tê amadekirin. Ev çareserî di 1 atm de di çend °C de dest bi cemidînê dike? (Ji bo avê Kd = 1,86 °C*kg/mol)"
+        "tr": "Tabloda üç sulu çözeltideki çözünen ve su miktarları verilmiştir. Bu çözeltilerin 1 atm'de donmaya başlama sıcaklıklarının küçükten büyüğe sıralanışı hangisidir? (İyonik bileşiklerin suda tamamen iyonlaştığı kabul edilecektir.)",
+        "en": "The table gives the amounts of solute and water in three aqueous solutions. Which shows the temperatures at which these solutions begin to freeze at 1 atm in increasing order? (Assume ionic compounds ionize completely in water.)",
+        "de": "Die Tabelle gibt die Mengen an gelöstem Stoff und Wasser in drei wässrigen Lösungen an. Welche Reihenfolge gibt die Temperaturen, bei denen diese Lösungen bei 1 atm zu gefrieren beginnen, von klein nach groß an? (Ionische Verbindungen sollen in Wasser vollständig ionisiert sein.)",
+        "fr": "Le tableau indique les quantités de soluté et d'eau de trois solutions aqueuses. Quel est l'ordre croissant des températures auxquelles ces solutions commencent à geler sous 1 atm ? (On admet que les composés ioniques s'ionisent totalement dans l'eau.)",
+        "ru": "В таблице приведены количества растворённого вещества и воды в трёх водных растворах. В каком варианте температуры начала замерзания этих растворов при 1 атм расположены в порядке возрастания? (Ионные соединения считать полностью ионизированными в воде.)",
+        "ar": "يبيّن الجدول كميات المذاب والماء في ثلاثة محاليل مائية. ما ترتيب درجات الحرارة التي تبدأ عندها هذه المحاليل بالتجمد عند 1 atm من الأصغر إلى الأكبر؟ (يُفترض أن المركبات الأيونية تتأين في الماء تأينًا تامًا.)",
+        "zh": "表中给出了三种水溶液中溶质和水的量。这些溶液在 1 atm 下开始凝固的温度由低到高的顺序是哪一项？（离子化合物在水中完全电离。）",
+        "ku": "Di tabloyê de mîqdarên madeya helbûyî û avê yên sê çareseriyên avî hatine dayîn. Rêzkirina germahiyên ku van çareseriyan di 1 atm de dest bi cemidînê dikin ji piçûk ber bi mezin kîjan e? (Tê qebûlkirin ku pêkhateyên îyonîk di avê de bi tevahî îyonîze dibin.)"
       },
       "options": [
         {
-          "tr": "-3,72 °C",
-          "en": "-3.72 °C",
-          "de": "-3,72 °C",
-          "fr": "-3,72 °C",
-          "ru": "-3,72 °C",
-          "ar": "-3.72 °C",
-          "zh": "-3.72 °C",
-          "ku": "-3,72 °C"
+          "tr": "I < III < II",
+          "en": "I < III < II",
+          "de": "I < III < II",
+          "fr": "I < III < II",
+          "ru": "I < III < II",
+          "ar": "I < III < II",
+          "zh": "I < III < II",
+          "ku": "I < III < II"
         },
         {
-          "tr": "-1,86 °C",
-          "en": "-1.86 °C",
-          "de": "-1,86 °C",
-          "fr": "-1,86 °C",
-          "ru": "-1,86 °C",
-          "ar": "-1.86 °C",
-          "zh": "-1.86 °C",
-          "ku": "-1,86 °C"
+          "tr": "III < I < II",
+          "en": "III < I < II",
+          "de": "III < I < II",
+          "fr": "III < I < II",
+          "ru": "III < I < II",
+          "ar": "III < I < II",
+          "zh": "III < I < II",
+          "ku": "III < I < II"
         },
         {
-          "tr": "0,00 °C",
-          "en": "0.00 °C",
-          "de": "0,00 °C",
-          "fr": "0,00 °C",
-          "ru": "0,00 °C",
-          "ar": "0.00 °C",
-          "zh": "0.00 °C",
-          "ku": "0,00 °C"
+          "tr": "II < I < III",
+          "en": "II < I < III",
+          "de": "II < I < III",
+          "fr": "II < I < III",
+          "ru": "II < I < III",
+          "ar": "II < I < III",
+          "zh": "II < I < III",
+          "ku": "II < I < III"
         },
         {
-          "tr": "-0,93 °C",
-          "en": "-0.93 °C",
-          "de": "-0,93 °C",
-          "fr": "-0,93 °C",
-          "ru": "-0,93 °C",
-          "ar": "-0.93 °C",
-          "zh": "-0.93 °C",
-          "ku": "-0,93 °C"
+          "tr": "II < III < I",
+          "en": "II < III < I",
+          "de": "II < III < I",
+          "fr": "II < III < I",
+          "ru": "II < III < I",
+          "ar": "II < III < I",
+          "zh": "II < III < I",
+          "ku": "II < III < I"
         },
         {
-          "tr": "-5,58 °C",
-          "en": "-5.58 °C",
-          "de": "-5,58 °C",
-          "fr": "-5,58 °C",
-          "ru": "-5,58 °C",
-          "ar": "-5.58 °C",
-          "zh": "-5.58 °C",
-          "ku": "-5,58 °C"
+          "tr": "I = III < II",
+          "en": "I = III < II",
+          "de": "I = III < II",
+          "fr": "I = III < II",
+          "ru": "I = III < II",
+          "ar": "I = III < II",
+          "zh": "I = III < II",
+          "ku": "I = III < II"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTd = Kd * m * i = 1,86 * 1 * 2 = 3,72 °C. Donma noktası = 0 - 3,72 = -3,72 °C.",
-        "en": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTf = Kf * m * i = 1.86 * 1 * 2 = 3.72 °C. Freezing point = 0 - 3.72 = -3.72 °C.",
-        "de": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTg = Kg * m * i = 1,86 * 1 * 2 = 3,72 °C. Gefrierpunkt = 0 - 3,72 = -3,72 °C.",
-        "fr": "NaCl -> Na+ + Cl- (i = 2). m = 1 mole / 1 kg = 1 m. ΔTcong = Kcong * m * i = 1,86 * 1 * 2 = 3,72 °C. Point de congélation = 0 - 3,72 = -3,72 °C.",
-        "ru": "NaCl -> Na+ + Cl- (i = 2). m = 1 моль / 1 кг = 1 моль/кг. ΔTзам = Kкр * m * i = 1,86 * 1 * 2 = 3,72 °C. Температура замерзания = 0 - 3,72 = -3,72 °C.",
-        "ar": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTf = Kf * m * i = 1.86 * 1 * 2 = 3.72 °C. درجة التجمد = 0 - 3.72 = -3.72 °C.",
-        "zh": "NaCl -> Na+ + Cl- (i = 2)。m = 1 mol / 1 kg = 1 mol/kg。ΔTf = Kf * m * i = 1.86 * 1 * 2 = 3.72 °C。凝固点 = 0 - 3.72 = -3.72 °C。",
-        "ku": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTd = Kd * m * i = 1,86 * 1 * 2 = 3,72 °C. Xala cemidînê = 0 - 3,72 = -3,72 °C."
+        "tr": "Donma noktası alçalması tanecik molalitesiyle (m · i) orantılıdır; tanecik molalitesi büyük olan çözelti daha düşük sıcaklıkta donmaya başlar. I: m = 0,2 / 0,1 = 2 m, i = 2 → 4 m tanecik. II: m = 0,1 / 0,2 = 0,5 m, i = 3 → 1,5 m. III: m = 0,6 / 0,2 = 3 m, i = 1 → 3 m. Tanecik derişimi I > III > II olduğundan donmaya başlama sıcaklıkları I < III < II'dir (Kd = 1,86 °C·kg/mol ile sırasıyla −7,44 °C, −5,58 °C ve −2,79 °C). i'yi hesaba katmayıp yalnızca molaliteye bakan III < I < II, su kütlelerini hesaba katmayıp yalnızca i değerlerine bakan II < I < III sıralamasına ulaşır; II < III < I ise doğru sıralamanın tersidir.",
+        "en": "Freezing point depression is proportional to the particle molality (m · i); the solution with the larger particle molality starts to freeze at the lower temperature. I: m = 0.2 / 0.1 = 2 m, i = 2 → 4 m particles. II: m = 0.1 / 0.2 = 0.5 m, i = 3 → 1.5 m. III: m = 0.6 / 0.2 = 3 m, i = 1 → 3 m. Since the particle concentration is I > III > II, the freezing temperatures are I < III < II (with Kd = 1.86 °C·kg/mol: −7.44 °C, −5.58 °C and −2.79 °C). Ignoring i and comparing only molalities gives III < I < II; ignoring the water masses and comparing only i values gives II < I < III; II < III < I is the reverse of the correct order.",
+        "de": "Die Gefrierpunktserniedrigung ist der Teilchenmolalität (m · i) proportional; die Lösung mit der größeren Teilchenmolalität beginnt bei der niedrigeren Temperatur zu gefrieren. I: m = 0,2 / 0,1 = 2 m, i = 2 → 4 m Teilchen. II: m = 0,1 / 0,2 = 0,5 m, i = 3 → 1,5 m. III: m = 0,6 / 0,2 = 3 m, i = 1 → 3 m. Da die Teilchenkonzentration I > III > II ist, gilt für die Gefriertemperaturen I < III < II (mit Kd = 1,86 °C·kg/mol: −7,44 °C, −5,58 °C und −2,79 °C). Wer i nicht berücksichtigt und nur die Molalitäten vergleicht, erhält III < I < II; wer die Wassermassen außer Acht lässt und nur die i-Werte vergleicht, II < I < III; II < III < I ist die Umkehrung der richtigen Reihenfolge.",
+        "fr": "L'abaissement du point de congélation est proportionnel à la molalité en particules (m · i) ; la solution dont la molalité en particules est la plus grande commence à geler à la température la plus basse. I : m = 0,2 / 0,1 = 2 m, i = 2 → 4 m de particules. II : m = 0,1 / 0,2 = 0,5 m, i = 3 → 1,5 m. III : m = 0,6 / 0,2 = 3 m, i = 1 → 3 m. La concentration en particules étant I > III > II, les températures de début de congélation sont I < III < II (avec Kd = 1,86 °C·kg/mol : −7,44 °C, −5,58 °C et −2,79 °C). Ignorer i et ne comparer que les molalités donne III < I < II ; ignorer les masses d'eau et ne comparer que les valeurs de i donne II < I < III ; II < III < I est l'inverse de l'ordre correct.",
+        "ru": "Понижение температуры замерзания пропорционально моляльности частиц (m · i); раствор с большей моляльностью частиц начинает замерзать при более низкой температуре. I: m = 0,2 / 0,1 = 2 m, i = 2 → 4 m частиц. II: m = 0,1 / 0,2 = 0,5 m, i = 3 → 1,5 m. III: m = 0,6 / 0,2 = 3 m, i = 1 → 3 m. Так как концентрация частиц I > III > II, температуры начала замерзания I < III < II (при Kd = 1,86 °C·кг/моль: −7,44 °C, −5,58 °C и −2,79 °C). Если не учитывать i и сравнивать только моляльности, получится III < I < II; если не учитывать массы воды и сравнивать только i — II < I < III; II < III < I — обратный правильному порядок.",
+        "ar": "يتناسب الانخفاض في درجة التجمد مع مولالية الجسيمات (m · i)؛ والمحلول ذو مولالية الجسيمات الأكبر يبدأ بالتجمد عند درجة حرارة أدنى. I: m = 0.2 / 0.1 = 2 m وi = 2 → 4 m جسيمات. II: m = 0.1 / 0.2 = 0.5 m وi = 3 → 1.5 m. III: m = 0.6 / 0.2 = 3 m وi = 1 → 3 m. بما أن تركيز الجسيمات I > III > II فإن درجات بدء التجمد هي I < III < II (باستخدام Kf = 1.86 °C·kg/mol: −7.44 °C و−5.58 °C و−2.79 °C). من يهمل i ويقارن المولاليات وحدها يحصل على III < I < II، ومن يهمل كتل الماء ويقارن قيم i وحدها يحصل على II < I < III، أما II < III < I فهو عكس الترتيب الصحيح.",
+        "zh": "凝固点降低值与粒子的质量摩尔浓度 (m · i) 成正比；粒子质量摩尔浓度越大，开始凝固的温度越低。I：m = 0.2 / 0.1 = 2 m，i = 2 → 粒子 4 m。II：m = 0.1 / 0.2 = 0.5 m，i = 3 → 1.5 m。III：m = 0.6 / 0.2 = 3 m，i = 1 → 3 m。粒子浓度 I > III > II，所以开始凝固的温度为 I < III < II（取 Kd = 1.86 °C·kg/mol，依次为 −7.44 °C、−5.58 °C、−2.79 °C）。不考虑 i、只比较质量摩尔浓度会得到 III < I < II；不考虑水的质量、只比较 i 会得到 II < I < III；II < III < I 则与正确顺序相反。",
+        "ku": "Daketina xala cemidînê bi molalîteya perçeyan (m · i) re rêjeyî ye; çareseriya ku molalîteya wê ya perçeyan mezintir e di germahiya nizmtir de dest bi cemidînê dike. I: m = 0,2 / 0,1 = 2 m, i = 2 → 4 m perçe. II: m = 0,1 / 0,2 = 0,5 m, i = 3 → 1,5 m. III: m = 0,6 / 0,2 = 3 m, i = 1 → 3 m. Ji ber ku tîrbûna perçeyan I > III > II ye, germahiyên destpêka cemidînê I < III < II ne (bi Kd = 1,86 °C·kg/mol bi rêzê −7,44 °C, −5,58 °C û −2,79 °C). Kesê ku i nahesibîne û tenê molalîteyan berhev dike III < I < II, kesê ku girseyên avê nahesibîne û tenê nirxên i berhev dike II < I < III dibîne; II < III < I jî berevajiya rêzkirina rast e."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Çözelti",
+            "en": "Solution",
+            "de": "Lösung",
+            "fr": "Solution",
+            "ru": "Раствор",
+            "ar": "المحلول",
+            "zh": "溶液",
+            "ku": "Çareserî"
+          },
+          {
+            "tr": "Çözünen",
+            "en": "Solute",
+            "de": "Gelöster Stoff",
+            "fr": "Soluté",
+            "ru": "Растворённое вещество",
+            "ar": "المذاب",
+            "zh": "溶质",
+            "ku": "Madeya helbûyî"
+          },
+          {
+            "tr": "Çözünen (mol)",
+            "en": "Solute (mol)",
+            "de": "Gelöster Stoff (mol)",
+            "fr": "Soluté (mol)",
+            "ru": "Растворённое вещество (моль)",
+            "ar": "المذاب (mol)",
+            "zh": "溶质 (mol)",
+            "ku": "Madeya helbûyî (mol)"
+          },
+          {
+            "tr": "Su (g)",
+            "en": "Water (g)",
+            "de": "Wasser (g)",
+            "fr": "Eau (g)",
+            "ru": "Вода (г)",
+            "ar": "الماء (g)",
+            "zh": "水 (g)",
+            "ku": "Av (g)"
+          }
+        ],
+        "rows": [
+          [
+            "I",
+            "NaCl",
+            {
+              "tr": "0,2",
+              "en": "0.2",
+              "de": "0,2",
+              "fr": "0,2",
+              "ru": "0,2",
+              "ar": "0.2",
+              "zh": "0.2",
+              "ku": "0,2"
+            },
+            "100"
+          ],
+          [
+            "II",
+            "CaCl2",
+            {
+              "tr": "0,1",
+              "en": "0.1",
+              "de": "0,1",
+              "fr": "0,1",
+              "ru": "0,1",
+              "ar": "0.1",
+              "zh": "0.1",
+              "ku": "0,1"
+            },
+            "200"
+          ],
+          [
+            "III",
+            "C6H12O6",
+            {
+              "tr": "0,6",
+              "en": "0.6",
+              "de": "0,6",
+              "fr": "0,6",
+              "ru": "0,6",
+              "ar": "0.6",
+              "zh": "0.6",
+              "ku": "0,6"
+            },
+            "200"
+          ]
+        ]
       }
     },
     {
@@ -1276,14 +1368,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin04",
       "stem": {
-        "tr": "Saf suda bir miktar NaCl çözülerek hazırlanan çözelti, aynı dış basınçta saf suyla karşılaştırılıyor. Buna göre çözelti için aşağıdaki yargılardan hangileri doğrudur? I. Kaynamaya başlama sıcaklığı daha yüksektir. II. Kaynama süresince sıcaklığı sabit kalır. III. Aynı sıcaklıktaki buhar basıncı daha düşüktür.",
+        "tr": "Saf suda bir miktar NaCl çözülerek hazırlanan çözelti, aynı dış basınçta saf suyla karşılaştırılıyor. Çözelti için aşağıdaki yargılardan hangileri doğrudur? I. Kaynamaya başlama sıcaklığı daha yüksektir. II. Kaynama süresince sıcaklığı sabit kalır. III. Aynı sıcaklıktaki buhar basıncı daha düşüktür.",
         "en": "A solution prepared by dissolving some NaCl in pure water is compared with pure water at the same external pressure. Which of the following statements about the solution are correct? I. It starts to boil at a higher temperature. II. Its temperature stays constant while it boils. III. Its vapor pressure at the same temperature is lower.",
         "de": "Eine Lösung aus etwas NaCl in reinem Wasser wird bei gleichem äußeren Druck mit reinem Wasser verglichen. Welche der folgenden Aussagen über die Lösung sind richtig? I. Sie beginnt bei höherer Temperatur zu sieden. II. Ihre Temperatur bleibt während des Siedens konstant. III. Ihr Dampfdruck ist bei gleicher Temperatur niedriger.",
         "fr": "Une solution obtenue en dissolvant un peu de NaCl dans de l'eau pure est comparée à l'eau pure sous la même pression extérieure. Lesquelles des affirmations suivantes sur la solution sont correctes ? I. Elle commence à bouillir à une température plus élevée. II. Sa température reste constante pendant l'ébullition. III. Sa pression de vapeur à la même température est plus faible.",
         "ru": "Раствор, приготовленный растворением некоторого количества NaCl в чистой воде, сравнивают с чистой водой при одинаковом внешнем давлении. Какие из утверждений о растворе верны? I. Он начинает кипеть при более высокой температуре. II. Во время кипения его температура остаётся постоянной. III. Давление его пара при той же температуре ниже.",
         "ar": "يُقارن محلول حُضّر بإذابة كمية من NaCl في الماء النقي بالماء النقي عند الضغط الخارجي نفسه. أي العبارات الآتية عن المحلول صحيحة؟ I. يبدأ بالغليان عند درجة حرارة أعلى. II. تبقى درجة حرارته ثابتة أثناء الغليان. III. ضغط بخاره عند درجة الحرارة نفسها أقل.",
         "zh": "将一定量 NaCl 溶于纯水配成溶液，在相同外压下与纯水比较。关于该溶液，有下列说法：I. 开始沸腾的温度更高。II. 沸腾过程中温度保持不变。III. 同一温度下其蒸气压更低。其中正确的是哪些？",
-        "ku": "Çareseriyeke ku bi helandina hinek NaCl di ava paqij de hatiye amadekirin, di heman zexta derve de bi ava paqij re tê berhevdan. Li gorî vê, kîjan ji van gotinan ji bo çareseriyê rast in? I. Di germahiyeke bilindtir de dest bi kelînê dike. II. Di dema kelînê de germahiya wê sabît dimîne. III. Di heman germahiyê de zexta wê ya buharê nizmtir e."
+        "ku": "Çareseriyeke ku bi helandina hinek NaCl di ava paqij de hatiye amadekirin, di heman zexta derve de bi ava paqij re tê berhevdan. Kîjan ji van gotinan ji bo çareseriyê rast in? I. Di germahiyeke bilindtir de dest bi kelînê dike. II. Di dema kelînê de germahiya wê sabît dimîne. III. Di heman germahiyê de zexta wê ya buharê nizmtir e."
       },
       "options": [
         {
@@ -1428,14 +1520,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin06",
       "stem": {
-        "tr": "0,2 mol X maddesi 500 g suda tamamen çözülüyor. Oluşan çözeltinin 1 atm'de donmaya başlama sıcaklığı -2,232 °C olarak ölçülüyor. Buna göre X aşağıdakilerden hangisi olabilir? (Su için Kd = 1,86 °C*kg/mol; iyonik bileşiklerin tamamen iyonlaştığı kabul edilecektir.)",
+        "tr": "0,2 mol X maddesi 500 g suda tamamen çözülüyor. Oluşan çözeltinin 1 atm'de donmaya başlama sıcaklığı -2,232 °C olarak ölçülüyor. X aşağıdakilerden hangisi olabilir? (Su için Kd = 1,86 °C*kg/mol; iyonik bileşiklerin tamamen iyonlaştığı kabul edilecektir.)",
         "en": "0.2 mol of substance X dissolves completely in 500 g of water. The resulting solution starts to freeze at -2.232 °C at 1 atm. Which of the following could X be? (Kf for water = 1.86 °C*kg/mol; assume ionic compounds dissociate completely.)",
         "de": "0,2 mol des Stoffes X lösen sich vollständig in 500 g Wasser. Die entstandene Lösung beginnt bei 1 atm bei -2,232 °C zu gefrieren. Welcher der folgenden Stoffe könnte X sein? (Kg für Wasser = 1,86 °C*kg/mol; vollständige Dissoziation ionischer Verbindungen wird angenommen.)",
         "fr": "0,2 mol d'une substance X se dissolvent complètement dans 500 g d'eau. La solution obtenue commence à geler à -2,232 °C sous 1 atm. Laquelle des substances suivantes peut être X ? (Kcong de l'eau = 1,86 °C*kg/mol ; on suppose les composés ioniques totalement dissociés.)",
         "ru": "0,2 моль вещества X полностью растворили в 500 г воды. Полученный раствор начинает замерзать при -2,232 °C (1 атм). Каким из перечисленных веществ может быть X? (Для воды Kкр = 1,86 °C*кг/моль; ионные соединения считать полностью диссоциированными.)",
         "ar": "أُذيب 0.2 mol من المادة X إذابة تامة في 500 g من الماء. يبدأ المحلول الناتج بالتجمد عند -2.232 °C تحت 1 atm. أيّ مما يلي يمكن أن يكون X؟ (Kf للماء = 1.86 °C*kg/mol؛ يُفترض تفكك المركبات الأيونية تفككًا كاملًا.)",
         "zh": "0.2 mol 物质 X 完全溶于 500 g 水中。所得溶液在 1 atm 下于 -2.232 °C 开始凝固。X 可能是下列哪种物质？(水的 Kf = 1.86 °C*kg/mol；假定离子化合物完全电离。)",
-        "ku": "0,2 mol ji madeya X bi tevahî di 500 g avê de dihele. Çareseriya çêbûyî di 1 atm de di -2,232 °C de dest bi cemidînê dike. Li gorî vê, X dikare kîjan ji van be? (Ji bo avê Kd = 1,86 °C*kg/mol; tê qebûlkirin ku pêkhateyên îyonîk bi tevahî îyonîze dibin.)"
+        "ku": "0,2 mol ji madeya X bi tevahî di 500 g avê de dihele. Çareseriya çêbûyî di 1 atm de di -2,232 °C de dest bi cemidînê dike. X dikare kîjan ji van be? (Ji bo avê Kd = 1,86 °C*kg/mol; tê qebûlkirin ku pêkhateyên îyonîk bi tevahî îyonîze dibin.)"
       },
       "options": [
         {
@@ -1504,14 +1596,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin07",
       "stem": {
-        "tr": "X tuzunun sudaki çözünürlüğü 20 °C'de 30 g/100 g su, 60 °C'de 80 g/100 g su'dur. 60 °C'de hazırlanan 360 g doygun X çözeltisi 20 °C'ye soğutulduğunda kaç gram X katısı kristallenir? (Suyun buharlaşmadığı kabul edilecektir.)",
-        "en": "The solubility of salt X in water is 30 g/100 g water at 20 °C and 80 g/100 g water at 60 °C. When 360 g of a saturated X solution prepared at 60 °C is cooled to 20 °C, how many grams of solid X crystallize? (Assume no water evaporates.)",
-        "de": "Die Löslichkeit des Salzes X in Wasser beträgt bei 20 °C 30 g/100 g Wasser und bei 60 °C 80 g/100 g Wasser. Wie viel Gramm festes X kristallisieren aus, wenn 360 g einer bei 60 °C hergestellten gesättigten X-Lösung auf 20 °C abgekühlt werden? (Es verdampft kein Wasser.)",
-        "fr": "La solubilité du sel X dans l'eau est de 30 g/100 g d'eau à 20 °C et de 80 g/100 g d'eau à 60 °C. Quand on refroidit à 20 °C 360 g d'une solution saturée de X préparée à 60 °C, combien de grammes de X solide cristallisent ? (On suppose qu'aucune eau ne s'évapore.)",
-        "ru": "Растворимость соли X в воде при 20 °C равна 30 г на 100 г воды, а при 60 °C — 80 г на 100 г воды. Сколько граммов твёрдого X выкристаллизуется, если 360 г раствора X, насыщенного при 60 °C, охладить до 20 °C? (Вода не испаряется.)",
-        "ar": "ذائبية الملح X في الماء 30 g/100 g ماء عند 20 °C و 80 g/100 g ماء عند 60 °C. عند تبريد 360 g من محلول X مشبع حُضّر عند 60 °C إلى 20 °C، كم غرامًا من X الصلب يتبلور؟ (يُفترض عدم تبخر الماء.)",
-        "zh": "盐 X 在水中的溶解度：20 °C 时为 30 g/100 g 水，60 °C 时为 80 g/100 g 水。将 60 °C 时配制的 360 g X 饱和溶液冷却到 20 °C，会析出多少克 X 晶体？（假定水不蒸发。）",
-        "ku": "Helbûniya xwêya X di avê de li 20 °C 30 g/100 g av û li 60 °C 80 g/100 g av e. Dema 360 g çareseriya têr a X ya ku li 60 °C hatiye amadekirin heta 20 °C tê sarkirin, çend gram X ya hişk krîstal dibe? (Tê qebûlkirin ku av nabe buhar.)"
+        "tr": "Şekilde X tuzunun sudaki çözünürlüğünün sıcaklıkla değişimi verilmiştir. 60 °C'de hazırlanan 360 g doygun X çözeltisi 20 °C'ye soğutulduğunda kaç gram X katısı kristallenir? (Suyun buharlaşmadığı kabul edilecektir.)",
+        "en": "The graph shows how the solubility of salt X in water changes with temperature. When 360 g of saturated X solution prepared at 60 °C is cooled to 20 °C, how many grams of solid X crystallize? (Assume no water evaporates.)",
+        "de": "Das Diagramm zeigt die Löslichkeit des Salzes X in Wasser in Abhängigkeit von der Temperatur. Wie viel Gramm festes X kristallisieren aus, wenn 360 g einer bei 60 °C gesättigten X-Lösung auf 20 °C abgekühlt werden? (Es verdunstet kein Wasser.)",
+        "fr": "Le graphique montre la variation de la solubilité du sel X dans l'eau en fonction de la température. Lorsqu'on refroidit à 20 °C 360 g d'une solution de X saturée à 60 °C, combien de grammes de X solide cristallisent ? (On admet qu'aucune eau ne s'évapore.)",
+        "ru": "На графике показана зависимость растворимости соли X в воде от температуры. Сколько граммов твёрдого X выкристаллизуется, если 360 г насыщенного при 60 °C раствора X охладить до 20 °C? (Вода не испаряется.)",
+        "ar": "يبيّن الرسم البياني في الشكل تغيّر ذائبية الملح X في الماء مع درجة الحرارة. عند تبريد 360 g من محلول X مشبع محضَّر عند 60 °C إلى 20 °C، كم غرامًا من X الصلب يتبلور؟ (يُفترض أن الماء لا يتبخر.)",
+        "zh": "图示为盐 X 在水中的溶解度随温度的变化。将 60 °C 时配制的 360 g X 的饱和溶液冷却到 20 °C，析出固体 X 多少克？（水不蒸发。）",
+        "ku": "Di şiklê de guherîna helbûniya xwêya X di avê de li gorî germahiyê hatiye dayîn. Dema ku 360 g çareseriya têr a X ya di 60 °C de hatiye amadekirin heta 20 °C tê sarkirin, çend gram X ya hişk krîstal dibe? (Tê qebûlkirin ku av nabe buhar.)"
       },
       "options": [
         {
@@ -1567,14 +1659,106 @@ export const unit15: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "60 °C'de 100 g su + 80 g X = 180 g doygun çözelti. 360 g çözelti bunun 2 katıdır: 200 g su ve 160 g X içerir. 20 °C'de 200 g su en fazla 2 * 30 = 60 g X çözebilir. Kristallenen X = 160 - 60 = 100 g. Yalnızca çözünürlük farkını (80 - 30 = 50 g) almak, çözeltide 100 g değil 200 g su bulunduğunu atlamaktır; 60 g ise çökeni değil çözeltide kalanı verir.",
-        "en": "At 60 °C, 100 g water + 80 g X = 180 g saturated solution. 360 g of solution is twice this: it contains 200 g water and 160 g X. At 20 °C, 200 g water can dissolve at most 2 * 30 = 60 g X. X crystallized = 160 - 60 = 100 g. Taking only the solubility difference (80 - 30 = 50 g) ignores that the solution contains 200 g of water, not 100 g; 60 g is the amount that stays dissolved, not the amount that precipitates.",
-        "de": "Bei 60 °C: 100 g Wasser + 80 g X = 180 g gesättigte Lösung. 360 g Lösung sind das Doppelte: 200 g Wasser und 160 g X. Bei 20 °C lösen 200 g Wasser höchstens 2 * 30 = 60 g X. Auskristallisiertes X = 160 - 60 = 100 g. Nur die Löslichkeitsdifferenz (80 - 30 = 50 g) zu nehmen übersieht, dass die Lösung 200 g und nicht 100 g Wasser enthält; 60 g ist die gelöst bleibende Menge, nicht die ausfallende.",
-        "fr": "À 60 °C : 100 g d'eau + 80 g de X = 180 g de solution saturée. 360 g de solution en sont le double : 200 g d'eau et 160 g de X. À 20 °C, 200 g d'eau dissolvent au maximum 2 * 30 = 60 g de X. X cristallisé = 160 - 60 = 100 g. Prendre seulement la différence de solubilité (80 - 30 = 50 g) oublie que la solution contient 200 g d'eau et non 100 g ; 60 g est la quantité restée dissoute, pas celle qui précipite.",
-        "ru": "При 60 °C: 100 г воды + 80 г X = 180 г насыщенного раствора. 360 г раствора — вдвое больше: в нём 200 г воды и 160 г X. При 20 °C 200 г воды растворяют не более 2 * 30 = 60 г X. Выкристаллизуется 160 - 60 = 100 г X. Если взять только разность растворимостей (80 - 30 = 50 г), упускается, что в растворе 200 г воды, а не 100 г; 60 г — это масса X, оставшегося в растворе, а не выпавшего.",
-        "ar": "عند 60 °C: 100 g ماء + 80 g من X = 180 g محلول مشبع. و 360 g من المحلول ضعف ذلك: 200 g ماء و 160 g من X. عند 20 °C يذيب 200 g من الماء على الأكثر 2 * 30 = 60 g من X. الكمية المتبلورة = 160 - 60 = 100 g. أخذ فرق الذائبية فقط (80 - 30 = 50 g) يهمل أن المحلول يحتوي 200 g من الماء لا 100 g؛ و 60 g هي الكمية الباقية ذائبة لا المترسبة.",
-        "zh": "60 °C 时：100 g 水 + 80 g X = 180 g 饱和溶液。360 g 溶液是它的 2 倍：含 200 g 水和 160 g X。20 °C 时 200 g 水最多溶解 2 * 30 = 60 g X。析出 X = 160 - 60 = 100 g。只取溶解度之差(80 - 30 = 50 g)忽略了溶液中有 200 g 水而不是 100 g；60 g 是仍溶解的量，而不是析出的量。",
-        "ku": "Li 60 °C: 100 g av + 80 g X = 180 g çareseriya têr. 360 g çareserî du qatê vê ye: 200 g av û 160 g X tê de hene. Li 20 °C 200 g av herî zêde 2 * 30 = 60 g X dihelîne. X ya krîstalbûyî = 160 - 60 = 100 g. Girtina tenê cudahiya helbûniyê (80 - 30 = 50 g) wê yekê ji bîr dike ku di çareseriyê de ne 100 g, lê 200 g av heye; 60 g jî ne mîqdara ku dinişe, lê ya ku di çareseriyê de dimîne ye."
+        "tr": "Grafikten X'in çözünürlüğü 20 °C'de 30 g, 60 °C'de 80 g/100 g su olarak okunur. 60 °C'de 100 g su + 80 g X = 180 g doygun çözelti. 360 g çözelti bunun 2 katıdır: 200 g su ve 160 g X içerir. 20 °C'de 200 g su en fazla 2 * 30 = 60 g X çözebilir. Kristallenen X = 160 - 60 = 100 g. Yalnızca çözünürlük farkını (80 - 30 = 50 g) almak, çözeltide 100 g değil 200 g su bulunduğunu atlamaktır; 60 g ise çökeni değil çözeltide kalanı verir.",
+        "en": "From the graph, the solubility of X is 30 g at 20 °C and 80 g at 60 °C per 100 g of water. At 60 °C, 100 g water + 80 g X = 180 g saturated solution. 360 g of solution is twice this: it contains 200 g water and 160 g X. At 20 °C, 200 g water can dissolve at most 2 * 30 = 60 g X. X crystallized = 160 - 60 = 100 g. Taking only the solubility difference (80 - 30 = 50 g) ignores that the solution contains 200 g of water, not 100 g; 60 g is the amount that stays dissolved, not the amount that precipitates.",
+        "de": "Aus dem Diagramm: Die Löslichkeit von X beträgt bei 20 °C 30 g und bei 60 °C 80 g pro 100 g Wasser. Bei 60 °C: 100 g Wasser + 80 g X = 180 g gesättigte Lösung. 360 g Lösung sind das Doppelte: 200 g Wasser und 160 g X. Bei 20 °C lösen 200 g Wasser höchstens 2 * 30 = 60 g X. Auskristallisiertes X = 160 - 60 = 100 g. Nur die Löslichkeitsdifferenz (80 - 30 = 50 g) zu nehmen übersieht, dass die Lösung 200 g und nicht 100 g Wasser enthält; 60 g ist die gelöst bleibende Menge, nicht die ausfallende.",
+        "fr": "D'après le graphique, la solubilité de X est de 30 g à 20 °C et de 80 g à 60 °C pour 100 g d'eau. À 60 °C : 100 g d'eau + 80 g de X = 180 g de solution saturée. 360 g de solution en sont le double : 200 g d'eau et 160 g de X. À 20 °C, 200 g d'eau dissolvent au maximum 2 * 30 = 60 g de X. X cristallisé = 160 - 60 = 100 g. Prendre seulement la différence de solubilité (80 - 30 = 50 g) oublie que la solution contient 200 g d'eau et non 100 g ; 60 g est la quantité restée dissoute, pas celle qui précipite.",
+        "ru": "По графику растворимость X равна 30 г при 20 °C и 80 г при 60 °C на 100 г воды. При 60 °C: 100 г воды + 80 г X = 180 г насыщенного раствора. 360 г раствора — вдвое больше: в нём 200 г воды и 160 г X. При 20 °C 200 г воды растворяют не более 2 * 30 = 60 г X. Выкристаллизуется 160 - 60 = 100 г X. Если взять только разность растворимостей (80 - 30 = 50 г), упускается, что в растворе 200 г воды, а не 100 г; 60 г — это масса X, оставшегося в растворе, а не выпавшего.",
+        "ar": "يُقرأ من الرسم أن ذائبية X هي 30 g عند 20 °C و80 g عند 60 °C لكل 100 g ماء. عند 60 °C: 100 g ماء + 80 g من X = 180 g محلول مشبع. و360 g من المحلول ضعف ذلك: 200 g ماء و160 g من X. عند 20 °C يذيب 200 g من الماء على الأكثر 2 * 30 = 60 g من X. الكمية المتبلورة = 160 - 60 = 100 g. أخذ فرق الذائبية فقط (80 - 30 = 50 g) يهمل أن المحلول يحتوي 200 g من الماء لا 100 g؛ و60 g هي الكمية الباقية ذائبة لا المترسبة.",
+        "zh": "由图可知，X 的溶解度在 20 °C 时为 30 g，在 60 °C 时为 80 g（每 100 g 水）。60 °C 时：100 g 水 + 80 g X = 180 g 饱和溶液。360 g 溶液是它的 2 倍：含 200 g 水和 160 g X。20 °C 时 200 g 水最多溶解 2 * 30 = 60 g X。析出 X = 160 - 60 = 100 g。只取溶解度之差(80 - 30 = 50 g)忽略了溶液中有 200 g 水而不是 100 g；60 g 是仍溶解的量，而不是析出的量。",
+        "ku": "Ji grafîkê tê xwendin ku helbûniya X di 20 °C de 30 g, di 60 °C de 80 g/100 g av e. Li 60 °C: 100 g av + 80 g X = 180 g çareseriya têr. 360 g çareserî du qatê vê ye: 200 g av û 160 g X tê de hene. Li 20 °C 200 g av herî zêde 2 * 30 = 60 g X dihelîne. X ya krîstalbûyî = 160 - 60 = 100 g. Girtina tenê cudahiya helbûniyê (80 - 30 = 50 g) wê yekê ji bîr dike ku di çareseriyê de ne 100 g, lê 200 g av heye; 60 g jî ne mîqdara ku dinişe, lê ya ku di çareseriyê de dimîne ye."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Sıcaklık (°C)",
+          "en": "Temperature (°C)",
+          "de": "Temperatur (°C)",
+          "fr": "Température (°C)",
+          "ru": "Температура (°C)",
+          "ar": "درجة الحرارة (°C)",
+          "zh": "温度 (°C)",
+          "ku": "Germahî (°C)"
+        },
+        "yLabel": {
+          "tr": "Çözünürlük (g/100 g su)",
+          "en": "Solubility (g/100 g water)",
+          "de": "Löslichkeit (g/100 g Wasser)",
+          "fr": "Solubilité (g/100 g d'eau)",
+          "ru": "Растворимость (г/100 г воды)",
+          "ar": "الذائبية (g/100 g ماء)",
+          "zh": "溶解度 (g/100 g 水)",
+          "ku": "Helbûnî (g/100 g av)"
+        },
+        "xMax": 90,
+        "yMax": 120,
+        "xTicks": [
+          20,
+          40,
+          60,
+          80
+        ],
+        "yTicks": [
+          30,
+          80
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                12
+              ],
+              [
+                10,
+                20
+              ],
+              [
+                20,
+                30
+              ],
+              [
+                30,
+                40.5
+              ],
+              [
+                40,
+                52
+              ],
+              [
+                50,
+                65.5
+              ],
+              [
+                60,
+                80
+              ],
+              [
+                70,
+                95.5
+              ],
+              [
+                80,
+                112
+              ]
+            ],
+            "label": "X"
+          }
+        ],
+        "markers": [
+          {
+            "x": 20,
+            "y": 30,
+            "label": "",
+            "guides": true
+          },
+          {
+            "x": 60,
+            "y": 80,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
@@ -1732,14 +1916,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin10",
       "stem": {
-        "tr": "X ve Y katılarının sudaki çözünürlükleriyle ilgili şu bilgiler veriliyor: X'in çözünürlüğü sıcaklık arttıkça artmakta, Y'nin çözünürlüğü ise sıcaklık arttıkça azalmaktadır. Buna göre, dibinde katısı bulunmayan doygun X ve doygun Y çözeltileriyle ilgili aşağıdaki yargılardan hangileri doğrudur? (Suyun buharlaşmadığı kabul edilecektir.) I. 20 °C'deki doygun X çözeltisi ısıtılırsa doymamış hâle geçer. II. Doygun Y çözeltisi ısıtılırsa kabın dibinde Y katısı ayrılır. III. 20 °C'deki doygun X çözeltisi 40 °C'ye ısıtılırsa kütlece yüzde derişimi artar.",
-        "en": "Information on the solubility of solids X and Y in water: the solubility of X increases with temperature, while that of Y decreases with temperature. Which of the following statements about saturated solutions of X and of Y that have no solid at the bottom are correct? (Assume no water evaporates.) I. A saturated X solution at 20 °C becomes unsaturated when heated. II. When a saturated Y solution is heated, solid Y separates at the bottom of the container. III. When a saturated X solution at 20 °C is heated to 40 °C, its percent by mass increases.",
-        "de": "Angaben zur Löslichkeit der Feststoffe X und Y in Wasser: Die Löslichkeit von X nimmt mit der Temperatur zu, die von Y nimmt mit der Temperatur ab. Welche der folgenden Aussagen über gesättigte X- und Y-Lösungen ohne Bodenkörper sind richtig? (Es wird angenommen, dass kein Wasser verdampft.) I. Eine bei 20 °C gesättigte X-Lösung wird beim Erwärmen ungesättigt. II. Beim Erwärmen einer gesättigten Y-Lösung scheidet sich am Gefäßboden festes Y ab. III. Erwärmt man eine bei 20 °C gesättigte X-Lösung auf 40 °C, steigt ihr Massenanteil in Prozent.",
-        "fr": "Informations sur la solubilité des solides X et Y dans l'eau : la solubilité de X augmente avec la température, celle de Y diminue avec la température. Lesquelles des affirmations suivantes, relatives à des solutions saturées de X et de Y sans solide au fond, sont correctes ? (On suppose que l'eau ne s'évapore pas.) I. Une solution de X saturée à 20 °C devient insaturée quand on la chauffe. II. Quand on chauffe une solution saturée de Y, du Y solide se dépose au fond du récipient. III. Si l'on chauffe à 40 °C une solution de X saturée à 20 °C, son pourcentage massique augmente.",
-        "ru": "Известно, что растворимость твёрдого вещества X в воде растёт с повышением температуры, а растворимость твёрдого вещества Y уменьшается. Какие из утверждений о насыщенных растворах X и Y без осадка на дне верны? (Вода не испаряется.) I. Насыщенный при 20 °C раствор X при нагревании становится ненасыщенным. II. При нагревании насыщенного раствора Y на дне сосуда выделяется твёрдый Y. III. Если насыщенный при 20 °C раствор X нагреть до 40 °C, массовая доля (%) X в нём увеличится.",
-        "ar": "تُعطى المعلومات الآتية عن ذائبية المادتين الصلبتين X وY في الماء: تزداد ذائبية X بارتفاع درجة الحرارة، بينما تقل ذائبية Y بارتفاعها. أيّ العبارات الآتية صحيحة بخصوص محلولي X وY المشبعين اللذين لا يوجد في قاعهما راسب؟ (يُفترض أن الماء لا يتبخر.) I. محلول X المشبع عند 20 °C يصبح غير مشبع عند تسخينه. II. عند تسخين محلول Y المشبع ينفصل Y الصلب في قاع الوعاء. III. إذا سُخّن محلول X المشبع عند 20 °C إلى 40 °C تزداد نسبته المئوية الكتلية.",
-        "zh": "固体 X 和 Y 在水中的溶解度情况：X 的溶解度随温度升高而增大，Y 的溶解度随温度升高而减小。关于底部没有固体的 X 饱和溶液和 Y 饱和溶液，有下列说法（假设水不蒸发）：I. 20 °C 的 X 饱和溶液加热后变为不饱和溶液。II. 加热 Y 的饱和溶液，容器底部会析出固体 Y。III. 将 20 °C 的 X 饱和溶液加热到 40 °C，其质量分数增大。其中正确的是哪些？",
-        "ku": "Li ser helbûniya madeyên hişk X û Y di avê de ev agahî tên dayîn: helbûniya X her ku germahî bilind dibe zêde dibe, ya Y jî her ku germahî bilind dibe kêm dibe. Li gorî vê, li ser çareseriyên têr ên X û Y yên ku li binê wan madeya hişk tune, kîjan ji van gotinan rast in? (Tê qebûlkirin ku av nabe buhar.) I. Ger çareseriya têr a X ya li 20 °C were germkirin, netêr dibe. II. Ger çareseriya têr a Y were germkirin, li binê firaxê Y ya hişk vediqete. III. Ger çareseriya têr a X ya li 20 °C heta 40 °C were germkirin, rêjeya wê ya ji sedî ya girseyî zêde dibe."
+        "tr": "Şekilde X ve Y katılarının sudaki çözünürlüklerinin sıcaklıkla değişimi verilmiştir. Dibinde katı bulunmayan doygun X ve Y çözeltileriyle ilgili; I. 20 °C'deki doygun X çözeltisi 40 °C'ye ısıtılırsa doymamış hâle geçer. II. 40 °C'de 200 g su ile hazırlanan doygun Y çözeltisi 20 °C'ye soğutulursa 20 g Y katısı ayrılır. III. 40 °C'de 100 g su ile hazırlanan doygun Y çözeltisi 60 °C'ye ısıtılırsa 10 g Y katısı ayrılır. yargılarından hangileri doğrudur? (Suyun buharlaşmadığı kabul edilecektir.)",
+        "en": "The graph shows how the solubilities of solids X and Y in water change with temperature. Which of the following statements about saturated X and Y solutions with no solid at the bottom are correct? I. If a saturated X solution at 20 °C is heated to 40 °C, it becomes unsaturated. II. If a saturated Y solution prepared with 200 g of water at 40 °C is cooled to 20 °C, 20 g of solid Y separates out. III. If a saturated Y solution prepared with 100 g of water at 40 °C is heated to 60 °C, 10 g of solid Y separates out. (Assume no water evaporates.)",
+        "de": "Das Diagramm zeigt die Löslichkeit der Feststoffe X und Y in Wasser in Abhängigkeit von der Temperatur. Welche Aussagen über gesättigte X- und Y-Lösungen ohne Bodenkörper sind richtig? I. Wird eine bei 20 °C gesättigte X-Lösung auf 40 °C erwärmt, wird sie ungesättigt. II. Wird eine bei 40 °C mit 200 g Wasser hergestellte gesättigte Y-Lösung auf 20 °C abgekühlt, scheiden sich 20 g festes Y ab. III. Wird eine bei 40 °C mit 100 g Wasser hergestellte gesättigte Y-Lösung auf 60 °C erwärmt, scheiden sich 10 g festes Y ab. (Es verdunstet kein Wasser.)",
+        "fr": "Le graphique montre la variation des solubilités des solides X et Y dans l'eau en fonction de la température. Lesquelles des affirmations suivantes sur des solutions saturées de X et de Y sans solide au fond sont correctes ? I. Si l'on chauffe à 40 °C une solution de X saturée à 20 °C, elle devient insaturée. II. Si l'on refroidit à 20 °C une solution de Y saturée préparée à 40 °C avec 200 g d'eau, 20 g de Y solide se déposent. III. Si l'on chauffe à 60 °C une solution de Y saturée préparée à 40 °C avec 100 g d'eau, 10 g de Y solide se déposent. (On admet qu'aucune eau ne s'évapore.)",
+        "ru": "На графике показана зависимость растворимости твёрдых веществ X и Y в воде от температуры. Какие утверждения о насыщенных растворах X и Y без осадка на дне верны? I. Если насыщенный при 20 °C раствор X нагреть до 40 °C, он станет ненасыщенным. II. Если насыщенный при 40 °C раствор Y, приготовленный на 200 г воды, охладить до 20 °C, выделится 20 г твёрдого Y. III. Если насыщенный при 40 °C раствор Y, приготовленный на 100 г воды, нагреть до 60 °C, выделится 10 г твёрдого Y. (Вода не испаряется.)",
+        "ar": "يبيّن الرسم البياني في الشكل تغيّر ذائبية المادتين الصلبتين X وY في الماء مع درجة الحرارة. أيّ العبارات الآتية عن محلولَي X وY المشبعين اللذين لا يوجد في قاعهما مادة صلبة صحيحة؟ I. إذا سُخِّن محلول X المشبع عند 20 °C إلى 40 °C يصبح غير مشبع. II. إذا بُرِّد محلول Y المشبع المحضَّر عند 40 °C بـ 200 g من الماء إلى 20 °C ينفصل 20 g من Y الصلب. III. إذا سُخِّن محلول Y المشبع المحضَّر عند 40 °C بـ 100 g من الماء إلى 60 °C ينفصل 10 g من Y الصلب. (يُفترض أن الماء لا يتبخر.)",
+        "zh": "图示为固体 X 和 Y 在水中的溶解度随温度的变化。关于底部没有固体的 X、Y 饱和溶液，有下列说法：I. 将 20 °C 时 X 的饱和溶液加热到 40 °C，溶液变为不饱和。II. 将 40 °C 时用 200 g 水配制的 Y 的饱和溶液冷却到 20 °C，析出 20 g 固体 Y。III. 将 40 °C 时用 100 g 水配制的 Y 的饱和溶液加热到 60 °C，析出 10 g 固体 Y。其中正确的是哪些？（水不蒸发。）",
+        "ku": "Di şiklê de guherîna helbûniya madeyên hişk X û Y di avê de li gorî germahiyê hatiye dayîn. Derbarê çareseriyên têr ên X û Y yên ku li binê wan madeya hişk tune; I. Ger çareseriya têr a X ya di 20 °C de heta 40 °C were germkirin, netêr dibe. II. Ger çareseriya têr a Y ya di 40 °C de bi 200 g avê hatiye amadekirin heta 20 °C were sarkirin, 20 g Y ya hişk vediqete. III. Ger çareseriya têr a Y ya di 40 °C de bi 100 g avê hatiye amadekirin heta 60 °C were germkirin, 10 g Y ya hişk vediqete. Kîjan ji van gotinan rast in? (Tê qebûlkirin ku av nabe buhar.)"
       },
       "options": [
         {
@@ -1749,28 +1933,18 @@ export const unit15: ChemistryUnitSeedData = {
           "fr": "I seulement",
           "ru": "Только I",
           "ar": "I فقط",
-          "zh": "仅 I",
+          "zh": "仅I",
           "ku": "Tenê I"
         },
         {
-          "tr": "Yalnız II",
-          "en": "II only",
-          "de": "Nur II",
-          "fr": "II seulement",
-          "ru": "Только II",
-          "ar": "II فقط",
-          "zh": "仅 II",
-          "ku": "Tenê II"
-        },
-        {
-          "tr": "I ve II",
-          "en": "I and II",
-          "de": "I und II",
-          "fr": "I et II",
-          "ru": "I и II",
-          "ar": "I و II",
-          "zh": "I 和 II",
-          "ku": "I û II"
+          "tr": "Yalnız III",
+          "en": "III only",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅III",
+          "ku": "Tenê III"
         },
         {
           "tr": "I ve III",
@@ -1779,8 +1953,18 @@ export const unit15: ChemistryUnitSeedData = {
           "fr": "I et III",
           "ru": "I и III",
           "ar": "I و III",
-          "zh": "I 和 III",
+          "zh": "I和III",
           "ku": "I û III"
+        },
+        {
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II和III",
+          "ku": "II û III"
         },
         {
           "tr": "I, II ve III",
@@ -1789,20 +1973,117 @@ export const unit15: ChemistryUnitSeedData = {
           "fr": "I, II et III",
           "ru": "I, II и III",
           "ar": "I و II و III",
-          "zh": "I、II 和 III",
+          "zh": "I、II和III",
           "ku": "I, II û III"
         }
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "I doğrudur: X'in çözünürlüğü ısıtmayla arttığından aynı miktar çözünen artık çözünürlüğün altında kalır. II doğrudur: Y'nin çözünürlüğü ısıtmayla azaldığından fazla çözünen katı olarak ayrılır. III yanlıştır: dipte katı yoksa ısıtma çözünen ya da çözücü kütlesini değiştirmez, çözelti yalnızca doymamış olur ve kütlece yüzde aynı kalır.",
-        "en": "I is correct: since the solubility of X increases on heating, the same amount of solute is now below the solubility. II is correct: since the solubility of Y decreases on heating, the excess solute separates as a solid. III is wrong: with no solid at the bottom, heating changes neither the solute nor the solvent mass; the solution merely becomes unsaturated and the percent by mass stays the same.",
-        "de": "I ist richtig: Da die Löslichkeit von X beim Erwärmen steigt, liegt dieselbe Menge gelöster Stoff nun unter der Löslichkeit. II ist richtig: Da die Löslichkeit von Y beim Erwärmen sinkt, scheidet sich der Überschuss als Feststoff ab. III ist falsch: Ohne Bodenkörper ändert das Erwärmen weder die Masse des gelösten Stoffes noch die des Lösungsmittels; die Lösung wird nur ungesättigt, der Massenanteil bleibt gleich.",
-        "fr": "I est correcte : la solubilité de X augmentant à chaud, la même quantité de soluté se trouve désormais sous la solubilité. II est correcte : la solubilité de Y diminuant à chaud, l'excès de soluté se sépare sous forme solide. III est fausse : sans solide au fond, le chauffage ne change ni la masse de soluté ni celle de solvant ; la solution devient seulement insaturée et le pourcentage massique reste le même.",
-        "ru": "I верно: растворимость X при нагревании растёт, и то же количество растворённого вещества оказывается ниже растворимости. II верно: растворимость Y при нагревании уменьшается, и избыток выделяется в виде твёрдого вещества. III неверно: без осадка нагревание не меняет ни массу растворённого вещества, ни массу растворителя; раствор лишь становится ненасыщенным, массовая доля не меняется.",
-        "ar": "I صحيحة: لأن ذائبية X تزداد بالتسخين، تصبح كمية المذاب نفسها أقل من الذائبية. II صحيحة: لأن ذائبية Y تقل بالتسخين، ينفصل المذاب الزائد على شكل صلب. III خاطئة: في غياب الراسب لا يغير التسخين كتلة المذاب ولا كتلة المذيب؛ يصبح المحلول غير مشبع فقط وتبقى النسبة المئوية الكتلية كما هي.",
-        "zh": "I 正确：X 的溶解度随加热增大，同样多的溶质已低于溶解度。II 正确：Y 的溶解度随加热减小，多余的溶质以固体析出。III 错误：底部没有固体时，加热既不改变溶质质量也不改变溶剂质量，溶液只是变为不饱和，质量分数不变。",
-        "ku": "I rast e: ji ber ku helbûniya X bi germkirinê zêde dibe, heman mîqdara madeya helbûyî êdî di bin helbûniyê de dimîne. II rast e: ji ber ku helbûniya Y bi germkirinê kêm dibe, madeya helbûyî ya zêde wek madeya hişk vediqete. III şaş e: heke li binî madeya hişk tune be, germkirin ne girseya madeya helbûyî ne jî ya helker diguherîne; çareserî tenê netêr dibe û rêjeya ji sedî ya girseyî wek xwe dimîne."
+        "tr": "I doğrudur: grafiğe göre X'in çözünürlüğü 20 °C'de 20 g, 40 °C'de 40 g/100 g sudur; ısıtılan çözeltideki çözünen miktarı yeni çözünürlüğün altında kaldığından çözelti doymamış olur. II yanlıştır: Y'nin çözünürlüğü soğudukça artar (40 °C'de 30 g, 20 °C'de 40 g/100 g su); soğutulan doygun Y çözeltisi doymamış hâle geçer, katı ayrılmaz. 20 g sonucu, 10 g'lık çözünürlük farkını 200 g su için ikiyle çarpıp değişimin yönünü ters yorumlamaktan gelir. III doğrudur: 40 °C'de 100 g suda 30 g Y çözünmüştür; 60 °C'de çözünürlük 20 g olduğundan 30 − 20 = 10 g Y katısı ayrılır. Doğru yargılar I ve III'tür.",
+        "en": "I is correct: from the graph, the solubility of X is 20 g at 20 °C and 40 g at 40 °C per 100 g of water; the dissolved amount in the heated solution is now below the new solubility, so the solution becomes unsaturated. II is wrong: the solubility of Y increases on cooling (30 g at 40 °C, 40 g at 20 °C per 100 g of water); a cooled saturated Y solution becomes unsaturated and no solid separates. The value 20 g comes from doubling the 10 g solubility difference for 200 g of water while reading the direction of change backwards. III is correct: at 40 °C, 30 g of Y is dissolved in 100 g of water; at 60 °C the solubility is 20 g, so 30 − 20 = 10 g of solid Y separates out. The correct statements are I and III.",
+        "de": "I ist richtig: Laut Diagramm beträgt die Löslichkeit von X bei 20 °C 20 g und bei 40 °C 40 g pro 100 g Wasser; die gelöste Menge liegt nach dem Erwärmen unter der neuen Löslichkeit, die Lösung wird ungesättigt. II ist falsch: Die Löslichkeit von Y nimmt beim Abkühlen zu (bei 40 °C 30 g, bei 20 °C 40 g pro 100 g Wasser); eine abgekühlte gesättigte Y-Lösung wird ungesättigt, es scheidet sich nichts ab. Der Wert 20 g entsteht, wenn man den Löslichkeitsunterschied von 10 g für 200 g Wasser verdoppelt und dabei die Richtung der Änderung umkehrt. III ist richtig: Bei 40 °C sind 30 g Y in 100 g Wasser gelöst; bei 60 °C beträgt die Löslichkeit 20 g, also scheiden sich 30 − 20 = 10 g festes Y ab. Richtig sind I und III.",
+        "fr": "I est correcte : d'après le graphique, la solubilité de X est de 20 g à 20 °C et de 40 g à 40 °C pour 100 g d'eau ; après chauffage, la quantité dissoute est inférieure à la nouvelle solubilité et la solution devient insaturée. II est fausse : la solubilité de Y augmente quand on refroidit (30 g à 40 °C, 40 g à 20 °C pour 100 g d'eau) ; une solution de Y saturée que l'on refroidit devient insaturée et rien ne se dépose. La valeur 20 g vient du doublement de l'écart de 10 g pour 200 g d'eau, avec une lecture inversée du sens de variation. III est correcte : à 40 °C, 30 g de Y sont dissous dans 100 g d'eau ; à 60 °C la solubilité est de 20 g, donc 30 − 20 = 10 g de Y solide se déposent. Les affirmations correctes sont I et III.",
+        "ru": "I верно: по графику растворимость X при 20 °C равна 20 г, при 40 °C — 40 г на 100 г воды; после нагревания растворённое количество оказывается ниже новой растворимости, раствор становится ненасыщенным. II неверно: растворимость Y при охлаждении растёт (при 40 °C 30 г, при 20 °C 40 г на 100 г воды); охлаждённый насыщенный раствор Y становится ненасыщенным, осадок не выделяется. Значение 20 г получается, если удвоить разницу растворимостей 10 г для 200 г воды и перепутать направление изменения. III верно: при 40 °C в 100 г воды растворено 30 г Y; при 60 °C растворимость 20 г, поэтому выделяется 30 − 20 = 10 г твёрдого Y. Верны I и III.",
+        "ar": "العبارة I صحيحة: يبيّن الرسم أن ذائبية X هي 20 g عند 20 °C و40 g عند 40 °C لكل 100 g ماء؛ فبعد التسخين تصبح الكمية المذابة أقل من الذائبية الجديدة ويصبح المحلول غير مشبع. العبارة II خاطئة: ذائبية Y تزداد بالتبريد (30 g عند 40 °C و40 g عند 20 °C لكل 100 g ماء)؛ فمحلول Y المشبع يصبح عند تبريده غير مشبع ولا ينفصل منه شيء. وقيمة 20 g تأتي من مضاعفة فرق الذائبية البالغ 10 g لـ 200 g ماء مع عكس اتجاه التغير. العبارة III صحيحة: عند 40 °C يذوب 30 g من Y في 100 g ماء، وعند 60 °C تكون الذائبية 20 g، فينفصل 30 − 20 = 10 g من Y الصلب. العبارتان الصحيحتان هما I و III.",
+        "zh": "I 正确：由图可知，X 的溶解度在 20 °C 时为 20 g，在 40 °C 时为 40 g（每 100 g 水）；加热后溶解的量低于新的溶解度，溶液变为不饱和。II 错误：Y 的溶解度随温度降低而增大（40 °C 时 30 g，20 °C 时 40 g，每 100 g 水）；Y 的饱和溶液冷却后变为不饱和，没有固体析出。20 g 这一结果来自把 10 g 的溶解度差按 200 g 水加倍，同时把变化方向弄反。III 正确：40 °C 时 100 g 水中溶有 30 g Y；60 °C 时溶解度为 20 g，故析出 30 − 20 = 10 g 固体 Y。正确的是 I 和 III。",
+        "ku": "I rast e: li gorî grafîkê helbûniya X di 20 °C de 20 g, di 40 °C de 40 g/100 g av e; piştî germkirinê mîqdara helandî di bin helbûniya nû de dimîne û çareserî netêr dibe. II şaş e: helbûniya Y bi sarbûnê zêde dibe (di 40 °C de 30 g, di 20 °C de 40 g/100 g av); çareseriya têr a Y ya sarkirî netêr dibe û madeya hişk venaqete. Encama 20 g ji ducarkirina cudahiya helbûniyê ya 10 g ji bo 200 g avê û berevajî xwendina rêya guherînê tê. III rast e: di 40 °C de 30 g Y di 100 g avê de helandî ye; di 60 °C de helbûnî 20 g e, ji ber vê 30 − 20 = 10 g Y ya hişk vediqete. Gotinên rast I û III ne."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Sıcaklık (°C)",
+          "en": "Temperature (°C)",
+          "de": "Temperatur (°C)",
+          "fr": "Température (°C)",
+          "ru": "Температура (°C)",
+          "ar": "درجة الحرارة (°C)",
+          "zh": "温度 (°C)",
+          "ku": "Germahî (°C)"
+        },
+        "yLabel": {
+          "tr": "Çözünürlük (g/100 g su)",
+          "en": "Solubility (g/100 g water)",
+          "de": "Löslichkeit (g/100 g Wasser)",
+          "fr": "Solubilité (g/100 g d'eau)",
+          "ru": "Растворимость (г/100 г воды)",
+          "ar": "الذائبية (g/100 g ماء)",
+          "zh": "溶解度 (g/100 g 水)",
+          "ku": "Helbûnî (g/100 g av)"
+        },
+        "xMax": 70,
+        "yMax": 80,
+        "xTicks": [
+          20,
+          40,
+          60
+        ],
+        "yTicks": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                10
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                20,
+                20
+              ],
+              [
+                30,
+                29
+              ],
+              [
+                40,
+                40
+              ],
+              [
+                50,
+                54
+              ],
+              [
+                60,
+                70
+              ]
+            ],
+            "label": "X",
+            "tone": 0
+          },
+          {
+            "points": [
+              [
+                0,
+                50
+              ],
+              [
+                20,
+                40
+              ],
+              [
+                40,
+                30
+              ],
+              [
+                60,
+                20
+              ]
+            ],
+            "label": "Y",
+            "tone": 1
+          }
+        ]
       }
     },
     {
@@ -1884,77 +2165,105 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin12",
       "stem": {
-        "tr": "KNO3 katısının sudaki çözünmesi endotermiktir. KNO3'ün sudaki çözünürlüğünü artırmak için aşağıdaki işlemlerden hangisi yapılmalıdır?",
-        "en": "The dissolution of solid KNO3 in water is endothermic. Which of the following should be done to increase the solubility of KNO3 in water?",
-        "de": "Das Lösen von festem KNO3 in Wasser ist endotherm. Was muss getan werden, um die Löslichkeit von KNO3 in Wasser zu erhöhen?",
-        "fr": "La dissolution du KNO3 solide dans l'eau est endothermique. Que faut-il faire pour augmenter la solubilité de KNO3 dans l'eau ?",
-        "ru": "Растворение твёрдого KNO3 в воде эндотермично. Что нужно сделать, чтобы увеличить растворимость KNO3 в воде?",
-        "ar": "ذوبان KNO3 الصلب في الماء ماص للحرارة. أيّ الإجراءات الآتية يجب اتخاذه لزيادة ذائبية KNO3 في الماء؟",
-        "zh": "固体 KNO3 溶于水是吸热过程。要增大 KNO3 在水中的溶解度，应采取下列哪项措施？",
-        "ku": "Helbûna KNO3 ya hişk di avê de endotermîk e. Ji bo zêdekirina helbûniya KNO3 di avê de, kîjan ji van karan divê were kirin?"
+        "tr": "Şekildeki U borusunun K ve L kolları yalnızca su moleküllerinin geçebildiği yarı geçirgen bir zarla ayrılmıştır; başlangıçta iki koldaki sıvı seviyeleri eşittir. Sabit sıcaklıkta yeterince beklendiğinde; I. Su molekülleri net olarak K kolundan L koluna geçer. II. L kolundaki sıvı seviyesi yükselir. III. Na+ ve Cl- iyonları zardan K koluna geçerek iki koldaki tanecik derişimlerini eşitler. yargılarından hangileri doğrudur?",
+        "en": "Arms K and L of the U-tube shown are separated by a semipermeable membrane that only water molecules can pass; initially the liquid levels in both arms are equal. After waiting long enough at constant temperature, which of the following statements are correct? I. There is a net flow of water molecules from arm K to arm L. II. The liquid level in arm L rises. III. Na+ and Cl- ions pass through the membrane into arm K and equalize the particle concentrations in the two arms.",
+        "de": "Die Schenkel K und L des abgebildeten U-Rohrs sind durch eine semipermeable Membran getrennt, die nur Wassermoleküle durchlässt; anfangs sind die Flüssigkeitsstände in beiden Schenkeln gleich. Welche Aussagen sind richtig, nachdem man bei konstanter Temperatur lange genug gewartet hat? I. Wassermoleküle gelangen netto vom Schenkel K in den Schenkel L. II. Der Flüssigkeitsstand im Schenkel L steigt. III. Na+- und Cl--Ionen gelangen durch die Membran in den Schenkel K und gleichen die Teilchenkonzentrationen in beiden Schenkeln aus.",
+        "fr": "Les branches K et L du tube en U représenté sont séparées par une membrane semi-perméable que seules les molécules d'eau peuvent traverser ; au départ, les niveaux de liquide sont égaux dans les deux branches. Après une attente suffisante à température constante, lesquelles des affirmations suivantes sont correctes ? I. Il y a un passage net de molécules d'eau de la branche K vers la branche L. II. Le niveau de liquide monte dans la branche L. III. Les ions Na+ et Cl- traversent la membrane vers la branche K et égalisent les concentrations en particules des deux branches.",
+        "ru": "Колена K и L изображённой U-образной трубки разделены полупроницаемой мембраной, пропускающей только молекулы воды; вначале уровни жидкости в обоих коленах одинаковы. Какие утверждения верны после достаточно долгого ожидания при постоянной температуре? I. Молекулы воды в итоге переходят из колена K в колено L. II. Уровень жидкости в колене L поднимается. III. Ионы Na+ и Cl- проходят через мембрану в колено K и выравнивают концентрации частиц в обоих коленах.",
+        "ar": "يفصل غشاء شبه منفذ لا يسمح إلا بمرور جزيئات الماء بين الذراعين K وL للأنبوب على شكل U المبيَّن في الشكل، ومستويا السائل في الذراعين متساويان في البداية. بعد الانتظار مدة كافية عند درجة حرارة ثابتة، أيّ العبارات الآتية صحيحة؟ I. تنتقل جزيئات الماء انتقالًا صافيًا من الذراع K إلى الذراع L. II. يرتفع مستوى السائل في الذراع L. III. تعبر أيونات Na+ وCl- الغشاء إلى الذراع K فتساوي تراكيز الجسيمات في الذراعين.",
+        "zh": "图中 U 形管的 K、L 两臂被只允许水分子通过的半透膜隔开，开始时两臂液面相平。恒温下放置足够长时间后，有下列说法：I. 水分子净地由 K 臂进入 L 臂。II. L 臂液面升高。III. Na+ 和 Cl- 透过半透膜进入 K 臂，使两臂的粒子浓度相等。其中正确的是哪些？",
+        "ku": "Milên K û L yên lûleya U ya di şiklê de bi perdeyeke nîv-derbasbar ku tenê molekulên avê jê derbas dibin ji hev hatine veqetandin; di destpêkê de asta şileyê di her du milan de wekhev e. Piştî ku di germahiya sabît de têra xwe tê sekinandin; I. Molekulên avê bi awayekî net ji mila K derbasî mila L dibin. II. Asta şileyê di mila L de bilind dibe. III. Îyonên Na+ û Cl- di perdeyê re derbasî mila K dibin û tîrbûnên perçeyan ên di her du milan de wekhev dikin. Kîjan ji van gotinan rast in?"
       },
       "options": [
         {
-          "tr": "Sıcaklığı artırmak",
-          "en": "Raising the temperature",
-          "de": "Die Temperatur erhöhen",
-          "fr": "Augmenter la température",
-          "ru": "Повысить температуру",
-          "ar": "رفع درجة الحرارة",
-          "zh": "升高温度",
-          "ku": "Bilindkirina germahiyê"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Katıyı toz hâline getirmek",
-          "en": "Grinding the solid into a powder",
-          "de": "Den Feststoff pulverisieren",
-          "fr": "Réduire le solide en poudre",
-          "ru": "Измельчить твёрдое вещество в порошок",
-          "ar": "طحن الصلب إلى مسحوق",
-          "zh": "把固体研成粉末",
-          "ku": "Hûrkirina madeya hişk heta ku bibe toz"
+          "tr": "Yalnız III",
+          "en": "III only",
+          "de": "Nur III",
+          "fr": "III seulement",
+          "ru": "Только III",
+          "ar": "III فقط",
+          "zh": "仅III",
+          "ku": "Tenê III"
         },
         {
-          "tr": "Çözeltiyi sürekli karıştırmak",
-          "en": "Stirring the solution continuously",
-          "de": "Die Lösung ständig rühren",
-          "fr": "Agiter la solution en permanence",
-          "ru": "Непрерывно перемешивать раствор",
-          "ar": "تحريك المحلول باستمرار",
-          "zh": "不断搅拌溶液",
-          "ku": "Bi berdewamî tevlihevkirina çareseriyê"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I和II",
+          "ku": "I û II"
         },
         {
-          "tr": "Kap üzerindeki dış basıncı artırmak",
-          "en": "Increasing the external pressure on the container",
-          "de": "Den äußeren Druck auf das Gefäß erhöhen",
-          "fr": "Augmenter la pression extérieure sur le récipient",
-          "ru": "Повысить внешнее давление над сосудом",
-          "ar": "زيادة الضغط الخارجي على الوعاء",
-          "zh": "增大容器上方的外压",
-          "ku": "Zêdekirina zexta derve ya li ser firaxê"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I和III",
+          "ku": "I û III"
         },
         {
-          "tr": "Kaba bir miktar daha su eklemek",
-          "en": "Adding some more water to the container",
-          "de": "Etwas mehr Wasser in das Gefäß geben",
-          "fr": "Ajouter un peu plus d'eau dans le récipient",
-          "ru": "Добавить в сосуд ещё немного воды",
-          "ar": "إضافة كمية أخرى من الماء إلى الوعاء",
-          "zh": "向容器中再加一些水",
-          "ku": "Zêdekirina hinek avê din li firaxê"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II和III",
+          "ku": "II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": {
-        "tr": "Endotermik çözünmede sıcaklık artışı çözünürlüğü artırır. Toz hâline getirmek ve karıştırmak çözünme hızını artırır, ancak 100 g suda çözünebilecek en fazla miktarı değiştirmez. Katıların çözünürlüğüne basıncın etkisi ihmal edilebilir. Su eklemek çözünebilen toplam kütleyi artırır; fakat çözünürlük 100 g su başına tanımlandığından değişmez.",
-        "en": "For an endothermic dissolution, raising the temperature increases the solubility. Grinding and stirring increase the rate of dissolution but do not change the maximum amount that can dissolve in 100 g of water. The effect of pressure on the solubility of solids is negligible. Adding water increases the total mass that can dissolve, but solubility is defined per 100 g of water and so does not change.",
-        "de": "Bei endothermem Lösen erhöht eine Temperaturerhöhung die Löslichkeit. Pulverisieren und Rühren erhöhen die Lösungsgeschwindigkeit, ändern aber nicht die Höchstmenge, die sich in 100 g Wasser löst. Der Druckeinfluss auf die Löslichkeit von Feststoffen ist vernachlässigbar. Mehr Wasser erhöht die insgesamt lösbare Masse, doch die Löslichkeit ist pro 100 g Wasser definiert und bleibt gleich.",
-        "fr": "Pour une dissolution endothermique, augmenter la température augmente la solubilité. Broyer et agiter accélèrent la dissolution mais ne changent pas la quantité maximale soluble dans 100 g d'eau. L'effet de la pression sur la solubilité des solides est négligeable. Ajouter de l'eau augmente la masse totale dissoute possible, mais la solubilité, définie pour 100 g d'eau, ne change pas.",
-        "ru": "При эндотермическом растворении повышение температуры увеличивает растворимость. Измельчение и перемешивание ускоряют растворение, но не меняют наибольшее количество вещества, которое может раствориться в 100 г воды. Влияние давления на растворимость твёрдых веществ пренебрежимо мало. Добавление воды увеличивает общую массу вещества, которая может раствориться, но растворимость рассчитывают на 100 г воды, поэтому она не меняется.",
-        "ar": "في الذوبان الماص للحرارة يؤدي رفع درجة الحرارة إلى زيادة الذائبية. الطحن والتحريك يزيدان سرعة الذوبان لكنهما لا يغيران أقصى كمية تذوب في 100 g من الماء. وتأثير الضغط في ذائبية المواد الصلبة مهمل. إضافة الماء تزيد الكتلة الكلية التي يمكن أن تذوب، لكن الذائبية معرّفة لكل 100 g من الماء فلا تتغير.",
-        "zh": "吸热溶解时，升高温度会增大溶解度。研磨和搅拌只能加快溶解速率，不能改变 100 g 水中最多能溶解的量。压强对固体溶解度的影响可以忽略。加水能增加可溶解的总质量，但溶解度是按每 100 g 水定义的，所以不变。",
-        "ku": "Di helbûna endotermîk de bilindkirina germahiyê helbûniyê zêde dike. Tozkirin û tevlihevkirin leza helbûnê zêde dikin, lê mîqdara herî zêde ya ku di 100 g avê de dikare bihele naguherînin. Bandora zextê li ser helbûniya madeyên hişk nayê hesibandin. Zêdekirina avê girseya giştî ya ku dikare bihele zêde dike, lê ji ber ku helbûnî ji bo her 100 g avê tê pênasekirin, naguhere."
+        "tr": "Şekle göre K kolunda 0,1 M glikoz (i = 1, tanecik derişimi 0,1 M), L kolunda 0,1 M NaCl (i = 2, tanecik derişimi 0,2 M) vardır. Ozmozda çözücü, tanecik derişimi düşük taraftan yüksek tarafa net olarak geçer: su K kolundan L koluna geçer, I doğrudur. L koluna su geçtiği için bu koldaki sıvı seviyesi yükselir, II doğrudur. Yarı geçirgen zar çözünen taneciklerini geçirmez; Na+ ve Cl- iyonları K koluna geçemez, III yanlıştır. Doğru yargılar I ve II'dir. Molar derişimler eşit olduğu için hiç net akış olmayacağını düşünmek, NaCl'nin suda iki tanecik verdiğini gözden kaçırmaktır.",
+        "en": "From the figure, arm K holds 0.1 M glucose (i = 1, particle concentration 0.1 M) and arm L holds 0.1 M NaCl (i = 2, particle concentration 0.2 M). In osmosis the solvent flows net from the side of lower particle concentration to the side of higher particle concentration: water moves from arm K to arm L, so I is correct. Because water enters arm L, its liquid level rises, so II is correct. The semipermeable membrane does not let solute particles through; Na+ and Cl- cannot move into arm K, so III is wrong. The correct statements are I and II. Expecting no net flow because the molar concentrations are equal overlooks that NaCl gives two particles in water.",
+        "de": "Laut Abbildung enthält der Schenkel K 0,1 M Glucose (i = 1, Teilchenkonzentration 0,1 M) und der Schenkel L 0,1 M NaCl (i = 2, Teilchenkonzentration 0,2 M). Bei der Osmose wandert das Lösungsmittel netto von der Seite mit niedrigerer zur Seite mit höherer Teilchenkonzentration: Wasser gelangt von K nach L, I ist richtig. Da Wasser in den Schenkel L strömt, steigt dort der Flüssigkeitsstand, II ist richtig. Die semipermeable Membran lässt keine gelösten Teilchen durch; Na+ und Cl- können nicht nach K gelangen, III ist falsch. Richtig sind I und II. Wer wegen gleicher Stoffmengenkonzentrationen keinen Nettofluss erwartet, übersieht, dass NaCl in Wasser zwei Teilchen bildet.",
+        "fr": "D'après la figure, la branche K contient du glucose à 0,1 M (i = 1, concentration en particules 0,1 M) et la branche L du NaCl à 0,1 M (i = 2, concentration en particules 0,2 M). En osmose, le solvant passe globalement du côté le moins concentré en particules vers le côté le plus concentré : l'eau va de K vers L, I est correcte. Comme l'eau entre dans la branche L, le niveau y monte, II est correcte. La membrane semi-perméable ne laisse pas passer les particules de soluté ; Na+ et Cl- ne peuvent pas aller dans K, III est fausse. Les affirmations correctes sont I et II. Ne prévoir aucun flux net parce que les concentrations molaires sont égales, c'est oublier que NaCl donne deux particules dans l'eau.",
+        "ru": "По рисунку в колене K находится 0,1 M глюкоза (i = 1, концентрация частиц 0,1 M), в колене L — 0,1 M NaCl (i = 2, концентрация частиц 0,2 M). При осмосе растворитель в итоге переходит со стороны с меньшей концентрацией частиц в сторону с большей: вода переходит из K в L, I верно. Поскольку вода поступает в колено L, уровень жидкости в нём поднимается, II верно. Полупроницаемая мембрана не пропускает частицы растворённого вещества; Na+ и Cl- не могут перейти в K, III неверно. Верны I и II. Ожидать отсутствия потока из-за равных молярных концентраций — значит упустить, что NaCl даёт в воде две частицы.",
+        "ar": "بحسب الشكل يحتوي الذراع K على جلوكوز تركيزه 0.1 M (i = 1، تركيز الجسيمات 0.1 M)، ويحتوي الذراع L على NaCl تركيزه 0.1 M (i = 2، تركيز الجسيمات 0.2 M). في الخاصية الأسموزية ينتقل المذيب انتقالًا صافيًا من الجهة الأقل تركيزًا بالجسيمات إلى الجهة الأعلى: ينتقل الماء من K إلى L، فالعبارة I صحيحة. ولأن الماء يدخل الذراع L يرتفع مستوى السائل فيه، فالعبارة II صحيحة. الغشاء شبه المنفذ لا يسمح بمرور جسيمات المذاب، فلا تنتقل أيونات Na+ وCl- إلى K، والعبارة III خاطئة. العبارتان الصحيحتان هما I و II. وتوقُّع عدم حدوث انتقال صافٍ لتساوي التراكيز المولارية إغفالٌ لكون NaCl يعطي جسيمين في الماء.",
+        "zh": "由图可知，K 臂中是 0.1 M 葡萄糖（i = 1，粒子浓度 0.1 M），L 臂中是 0.1 M NaCl（i = 2，粒子浓度 0.2 M）。渗透时溶剂净地由粒子浓度低的一侧进入粒子浓度高的一侧：水由 K 臂进入 L 臂，I 正确。水进入 L 臂，L 臂液面升高，II 正确。半透膜不允许溶质粒子通过，Na+ 和 Cl- 不能进入 K 臂，III 错误。正确的是 I 和 II。认为物质的量浓度相等就不会有净渗透，是忽略了 NaCl 在水中电离出两个粒子。",
+        "ku": "Li gorî şiklê di mila K de glîkoza 0,1 M (i = 1, tîrbûna perçeyan 0,1 M), di mila L de NaCl a 0,1 M (i = 2, tîrbûna perçeyan 0,2 M) heye. Di osmozê de helker bi awayekî net ji aliyê ku tîrbûna perçeyan lê nizm e ber bi aliyê bilind ve diçe: av ji mila K derbasî mila L dibe, I rast e. Ji ber ku av dikeve mila L, asta şileyê di vê milê de bilind dibe, II rast e. Perdeya nîv-derbasbar perçeyên madeya helbûyî derbas nake; îyonên Na+ û Cl- nikarin derbasî mila K bibin, III şaş e. Gotinên rast I û II ne. Hêviya ku ji ber wekheviya tîrbûnên molar tu herikîna net çênabe, ji bîrkirina vê yekê ye ku NaCl di avê de du perçeyan dide."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 228,
+        "markup": "<path d='M80,80 H130 V170 H230 V80 H280 V200 H80 Z' class='qf-water'/><path d='M80,30 V200 H280 V30 M130,30 V170 H230 V30' class='qf-line'/><line x1='180' y1='166' x2='180' y2='204' class='qf-dash'/><text x='105' y='22' text-anchor='middle' class='qf-big'>K</text><text x='255' y='22' text-anchor='middle' class='qf-big'>L</text><text x='40' y='104' text-anchor='middle'>{{c}}</text><text x='40' y='122' text-anchor='middle'>C₆H₁₂O₆</text><text x='320' y='104' text-anchor='middle'>{{c}}</text><text x='320' y='122' text-anchor='middle'>NaCl</text><text x='180' y='220' text-anchor='middle' class='qf-small'>{{mem}}</text>",
+        "labels": {
+          "c": {
+            "tr": "0,1 M",
+            "en": "0.1 M",
+            "de": "0,1 M",
+            "fr": "0,1 M",
+            "ru": "0,1 M",
+            "ar": "0.1 M",
+            "zh": "0.1 M",
+            "ku": "0,1 M"
+          },
+          "mem": {
+            "tr": "yarı geçirgen zar",
+            "en": "semipermeable membrane",
+            "de": "semipermeable Membran",
+            "fr": "membrane semi-perméable",
+            "ru": "полупроницаемая мембрана",
+            "ar": "غشاء شبه منفذ",
+            "zh": "半透膜",
+            "ku": "perdeya nîv-derbasbar"
+          }
+        }
       }
     },
     {

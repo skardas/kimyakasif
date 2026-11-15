@@ -63,14 +63,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-f02",
       "fact": {
-        "tr": "Süspansiyon katı-sıvı heterojen karışımdır (örn. tebeşir tozu-su, Türk kahvesi; MEB'in süspansiyon örneği olarak verdiği, bekletilince yoğurt tanecikleri dibe çöken ayran).",
-        "en": "A suspension is a solid-liquid heterogeneous mixture (e.g. chalk powder in water, Turkish coffee; ayran, given as a suspension example in the Turkish curriculum, whose yoghurt particles settle on standing).",
-        "de": "Eine Suspension ist ein heterogenes Fest-flüssig-Gemisch (z. B. Kreidepulver in Wasser, türkischer Kaffee; Ayran, im türkischen Lehrplan als Suspensionsbeispiel genannt, dessen Joghurtteilchen sich beim Stehen absetzen).",
-        "fr": "Une suspension est un mélange hétérogène solide-liquide (ex. : poudre de craie dans l'eau, café turc ; l'ayran, donné comme exemple de suspension dans le programme turc, dont les particules de yaourt se déposent au repos).",
-        "ru": "Суспензия — неоднородная смесь твёрдого вещества с жидкостью (например, мел в воде, кофе по-турецки; в турецкой школьной программе пример суспензии — айран, в котором при стоянии оседают частицы йогурта).",
-        "ar": "المعلق خليط غير متجانس من صلب وسائل (مثل مسحوق الطباشير في الماء، والقهوة التركية؛ والعيران الذي يورده المنهج التركي مثالًا للمعلق إذ تترسب دقائق اللبن فيه عند الترك).",
-        "zh": "悬浊液是固-液非均匀混合物（如粉笔灰-水、土耳其咖啡；土耳其教材还以一种酸奶饮料为例，静置后其中的酸奶颗粒会沉到底部）。",
-        "ku": "Suspansiyon tevliheviyeke heterojen a hişk-şile ye (mînak: toza tebeşîrê-av, qehweya tirkî; dew, ku bernameya MEB-ê wek mînaka suspansiyonê dide û dema tê hiştin perçeyên mastê di binî de dinişin)."
+        "tr": "Süspansiyon, katı taneciklerin bir sıvıda çözünmeden dağıldığı heterojen karışımdır (örn. tebeşir tozu-su, Türk kahvesi); bekletilince tanecikler dibe çöker.",
+        "en": "A suspension is a heterogeneous mixture in which solid particles are dispersed in a liquid without dissolving (e.g. chalk powder in water, Turkish coffee); on standing, the particles settle to the bottom.",
+        "de": "Eine Suspension ist ein heterogenes Gemisch, in dem feste Teilchen ungelöst in einer Flüssigkeit verteilt sind (z. B. Kreidepulver in Wasser, türkischer Kaffee); beim Stehenlassen setzen sich die Teilchen am Boden ab.",
+        "fr": "Une suspension est un mélange hétérogène dans lequel des particules solides sont dispersées dans un liquide sans s'y dissoudre (ex. : poudre de craie dans l'eau, café turc) ; au repos, les particules se déposent au fond.",
+        "ru": "Суспензия — неоднородная смесь, в которой твёрдые частицы распределены в жидкости, не растворяясь (например, мел в воде, кофе по-турецки); при стоянии частицы оседают на дно.",
+        "ar": "المعلّق خليط غير متجانس تنتشر فيه دقائق صلبة في سائل دون أن تذوب (مثل مسحوق الطباشير في الماء، والقهوة التركية)؛ وعند تركه تترسب الدقائق في القاع.",
+        "zh": "悬浊液是固体颗粒未溶解而分散在液体中的非均匀混合物（如粉笔灰-水、土耳其咖啡）；静置后颗粒会沉到底部。",
+        "ku": "Suspansiyon tevliheviyeke heterojen e ku tê de perçeyên hişk bêyî ku bihelin di şileyekê de belav bûne (mînak: toza tebeşîrê-av, qehweya tirkî); dema tê hiştin, perçe di binî de dinişin."
       },
       "trap": {
         "tr": "Süspansiyon tek fazlı homojen bir çözeltidir.",
@@ -613,14 +613,14 @@ export const unit08: ChemistryUnitSeedData = {
         "ku": "Çareserî"
       },
       "distinction": {
-        "tr": "Çözeltide tanecik boyutu 1 nm'den küçüktür ve karışım homojendir; kolloitte tanecik boyutu 1-1000 nm arasındadır, karışım heterojendir ve Tyndall etkisi gösterir.",
-        "en": "In a solution the particle size is below 1 nm and the mixture is homogeneous; in a colloid the particle size is between 1 and 1000 nm, and the mixture is heterogeneous and shows the Tyndall effect.",
-        "de": "In einer Lösung ist die Teilchengröße kleiner als 1 nm und das Gemisch homogen; in einem Kolloid liegt die Teilchengröße zwischen 1 und 1000 nm, das Gemisch ist heterogen und zeigt den Tyndall-Effekt.",
-        "fr": "Dans une solution, la taille des particules est inférieure à 1 nm et le mélange est homogène ; dans un colloïde, elle est comprise entre 1 et 1000 nm, le mélange est hétérogène et présente l'effet Tyndall.",
-        "ru": "Раствор — однородная смесь с частицами меньше 1 нм; коллоид — неоднородная смесь с частицами от 1 до 1000 нм, проявляющая эффект Тиндаля.",
-        "ar": "في المحلول يكون حجم الجسيمات أقل من 1 nm ويكون المخلوط متجانسًا؛ أما في الغروي فيتراوح حجم الجسيمات بين 1 و1000 nm، ويكون المخلوط غير متجانس ويُظهر ظاهرة تندال.",
-        "zh": "溶液中粒子直径小于 1 nm，混合物是均匀的；胶体中粒子直径在 1~1000 nm 之间，混合物是非均匀的，并有丁达尔效应。",
-        "ku": "Çareserî tevliheviyeke homojen e û mezinahiya perçeyên wê ji 1 nm piçûktir e; kolloîd tevliheviyeke heterojen e, mezinahiya perçeyên wê di navbera 1 û 1000 nm de ye û bandora Tyndall nîşan dide."
+        "tr": "Kolloitte tanecik boyutu yaklaşık 1-1000 nm arasındadır, karışım heterojendir ve Tyndall etkisi gösterir; çözeltide ise tanecik boyutu 1 nm'den küçüktür ve karışım homojendir.",
+        "en": "In a colloid the particle size is roughly between 1 and 1000 nm, the mixture is heterogeneous and shows the Tyndall effect; in a solution, by contrast, the particle size is below 1 nm and the mixture is homogeneous.",
+        "de": "In einem Kolloid liegt die Teilchengröße etwa zwischen 1 und 1000 nm, das Gemisch ist heterogen und zeigt den Tyndall-Effekt; in einer Lösung dagegen ist die Teilchengröße kleiner als 1 nm und das Gemisch homogen.",
+        "fr": "Dans un colloïde, la taille des particules est comprise environ entre 1 et 1000 nm, le mélange est hétérogène et présente l'effet Tyndall ; dans une solution, en revanche, elle est inférieure à 1 nm et le mélange est homogène.",
+        "ru": "В коллоиде размер частиц примерно от 1 до 1000 нм, смесь неоднородна и проявляет эффект Тиндаля; в растворе же размер частиц меньше 1 нм, и смесь однородна.",
+        "ar": "في الغروي يتراوح حجم الجسيمات تقريبًا بين 1 و1000 nm، ويكون الخليط غير متجانس ويُظهر ظاهرة تندال؛ أما في المحلول فحجم الجسيمات أقل من 1 nm والخليط متجانس.",
+        "zh": "胶体中粒子直径约在 1~1000 nm 之间，混合物是非均匀的，并有丁达尔效应；而溶液中粒子直径小于 1 nm，混合物是均匀的。",
+        "ku": "Di kolloîdê de mezinahiya perçeyan nêzîkî di navbera 1 û 1000 nm de ye, tevlihevî heterojen e û bandora Tyndall nîşan dide; di çareseriyê de jî mezinahiya perçeyan ji 1 nm piçûktir e û tevlihevî homojen e."
       }
     },
     {
@@ -826,14 +826,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-s01",
       "title": {
-        "tr": "Tuz-Kum-Su Karışımını Ayırma Adımları",
-        "en": "Steps to Separate Salt-Sand-Water Mixture",
-        "de": "Schritte zur Trennung des Salz-Sand-Wasser-Gemisches",
-        "fr": "Étapes pour séparer le mélange sel-sable-eau",
+        "tr": "Tuz-Kum-Su Karışımını Ayırma",
+        "en": "Separating a Salt-Sand-Water Mixture",
+        "de": "Trennung eines Salz-Sand-Wasser-Gemisches",
+        "fr": "Séparation d'un mélange sel-sable-eau",
         "ru": "Разделение смеси соли, песка и воды",
-        "ar": "خطوات فصل خليط الملح والرمل والماء",
-        "zh": "分离盐-沙-水混合物的步骤",
-        "ku": "Gavên veqetandina tevliheviya xwê-qûm-av"
+        "ar": "فصل خليط الملح والرمل والماء",
+        "zh": "分离盐-沙-水混合物",
+        "ku": "Veqetandina tevliheviya xwê-qûm-av"
       },
       "steps": [
         {
@@ -881,14 +881,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-s02",
       "title": {
-        "tr": "Ayrımsal Damıtma Basamakları",
-        "en": "Fractional Distillation Steps",
-        "de": "Schritte der fraktionierten Destillation",
-        "fr": "Étapes de distillation fractionnée",
-        "ru": "Этапы фракционной перегонки",
-        "ar": "خطوات التقطير التجزيئي",
-        "zh": "分馏步骤",
-        "ku": "Gavên distîlasyona perçeyî"
+        "tr": "Ayrımsal Damıtma",
+        "en": "Fractional Distillation",
+        "de": "Fraktionierte Destillation",
+        "fr": "Distillation fractionnée",
+        "ru": "Фракционная перегонка",
+        "ar": "التقطير التجزيئي",
+        "zh": "分馏",
+        "ku": "Distîlasyona perçeyî"
       },
       "steps": [
         {
@@ -1124,77 +1124,220 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin02",
       "stem": {
-        "tr": "Kaynama noktaları farklı olan aseton (56 °C) ve su (100 °C) homojen karışımını bileşenlerine ayırmak için hangi yöntem kullanılmalıdır?",
-        "en": "Which method should be used to separate the homogeneous mixture of acetone (56 °C) and water (100 °C), which have different boiling points, into its components?",
-        "de": "Mit welcher Methode trennt man das homogene Gemisch aus Aceton (56 °C) und Wasser (100 °C), die unterschiedliche Siedepunkte haben, in seine Bestandteile?",
-        "fr": "Quelle méthode faut-il utiliser pour séparer en ses constituants le mélange homogène d'acétone (56 °C) et d'eau (100 °C), qui ont des températures d'ébullition différentes ?",
-        "ru": "Каким методом следует разделить на компоненты однородную смесь ацетона (56 °C) и воды (100 °C), имеющих разные температуры кипения?",
-        "ar": "ما الطريقة التي ينبغي استخدامها لفصل الخليط المتجانس من الأسيتون (56 °C) والماء (100 °C)، المختلفين في درجة الغليان، إلى مكوناته؟",
-        "zh": "丙酮(56 °C)和水(100 °C)沸点不同，要把它们的均匀混合物分离成各组分，应采用哪种方法？",
-        "ku": "Ji bo veqetandina tevliheviya homojen a aseton (56 °C) û avê (100 °C), ku xalên wan ên kelînê cuda ne, bo beşên wê divê kîjan rêbaz were bikaranîn?"
+        "tr": "Tabloda X, Y ve Z sıvılarının bazı özellikleri verilmiştir; X ile Z de birbiriyle her oranda karışmaktadır. Bu sıvılarla hazırlanan karışımlarla ilgili,\nI. X–su karışımı ayırma hunisiyle bileşenlerine ayrılabilir.\nII. Y–su karışımı ayırma hunisinde iki tabaka oluşturur ve Y üstteki tabakada bulunur.\nIII. X–Z karışımı ayrımsal damıtmayla ayrılırken önce X toplanır.\nyargılarından hangileri doğrudur?",
+        "en": "The table gives some properties of liquids X, Y and Z; X and Z are also miscible with each other in all proportions. Which of the following statements about mixtures prepared from these liquids are correct?\nI. An X–water mixture can be separated with a separatory funnel.\nII. A Y–water mixture forms two layers in a separatory funnel, with Y in the upper layer.\nIII. When an X–Z mixture is separated by fractional distillation, X is collected first.",
+        "de": "Die Tabelle zeigt einige Eigenschaften der Flüssigkeiten X, Y und Z; X und Z sind außerdem in jedem Verhältnis miteinander mischbar. Welche der folgenden Aussagen über Gemische aus diesen Flüssigkeiten sind richtig?\nI. Ein X-Wasser-Gemisch lässt sich mit einem Scheidetrichter trennen.\nII. Ein Y-Wasser-Gemisch bildet im Scheidetrichter zwei Schichten, wobei Y die obere Schicht bildet.\nIII. Bei der fraktionierten Destillation eines X-Z-Gemisches wird zuerst X aufgefangen.",
+        "fr": "Le tableau donne quelques propriétés des liquides X, Y et Z ; X et Z sont en outre miscibles entre eux en toutes proportions. Lesquelles des affirmations suivantes sur des mélanges préparés avec ces liquides sont correctes ?\nI. Un mélange X–eau peut être séparé à l'ampoule à décanter.\nII. Un mélange Y–eau forme deux couches dans l'ampoule à décanter, Y se trouvant dans la couche supérieure.\nIII. Lors de la distillation fractionnée d'un mélange X–Z, X est recueilli en premier.",
+        "ru": "В таблице приведены некоторые свойства жидкостей X, Y и Z; кроме того, X и Z смешиваются друг с другом в любых соотношениях. Какие из следующих утверждений о смесях этих жидкостей верны?\nI. Смесь X с водой можно разделить с помощью делительной воронки.\nII. Смесь Y с водой образует в делительной воронке два слоя, причём Y находится в верхнем слое.\nIII. При фракционной перегонке смеси X и Z первым собирают X.",
+        "ar": "يبين الجدول بعض خواص السوائل X وY وZ، كما أن X وZ يمتزجان معًا بأي نسبة. أيّ العبارات الآتية عن مخاليط محضرة من هذه السوائل صحيحة؟\nI. يمكن فصل خليط X والماء بقمع الفصل.\nII. يكوّن خليط Y والماء طبقتين في قمع الفصل، ويكون Y في الطبقة العليا.\nIII. عند فصل خليط X وZ بالتقطير التجزيئي يُجمع X أولًا.",
+        "zh": "表中给出了液体 X、Y、Z 的一些性质；此外 X 与 Z 也能以任意比例互溶。下列关于用这些液体配成的混合物的说法中哪些正确？\nI. X 与水的混合物可以用分液漏斗分离。\nII. Y 与水的混合物在分液漏斗中分为两层，Y 在上层。\nIII. 用分馏法分离 X 与 Z 的混合物时，先收集到 X。",
+        "ku": "Di tabloyê de hin taybetiyên şileyên X, Y û Z hatine dayîn; X û Z jî bi her rêjeyê bi hev re tevlihev dibin. Derbarê tevliheviyên ku bi van şileyan tên amadekirin de kîjan ji van gotinan rast in?\nI. Tevliheviya X–av bi hunîka veqetandinê dikare were veqetandin.\nII. Tevliheviya Y–av di hunîka veqetandinê de du qatan çêdike û Y di qata jorîn de ye.\nIII. Dema tevliheviya X–Z bi distîlasyona perçeyî tê veqetandin, pêşî X tê berhevkirin."
       },
       "options": [
         {
-          "tr": "Ayrımsal damıtma",
-          "en": "Fractional distillation",
-          "de": "Fraktionierte Destillation",
-          "fr": "Distillation fractionnée",
-          "ru": "Фракционная перегонка",
-          "ar": "التقطير التجزيئي",
-          "zh": "分馏",
-          "ku": "Distîlasyona perçeyî"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Ayırma hunisi",
-          "en": "Separatory funnel",
-          "de": "Scheidetrichter",
-          "fr": "Ampoule à décanter",
-          "ru": "Делительная воронка",
-          "ar": "قمع الفصل",
-          "zh": "分液漏斗",
-          "ku": "Qîfa veqetandinê"
+          "tr": "Yalnız II",
+          "en": "II only",
+          "de": "Nur II",
+          "fr": "II seulement",
+          "ru": "Только II",
+          "ar": "II فقط",
+          "zh": "仅 II",
+          "ku": "Tenê II"
         },
         {
-          "tr": "Süzme",
-          "en": "Filtration",
-          "de": "Filtration",
-          "fr": "Filtration",
-          "ru": "Фильтрование",
-          "ar": "الترشيح",
-          "zh": "过滤",
-          "ku": "Parzûnkirin"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Diyaliz",
-          "en": "Dialysis",
-          "de": "Dialyse",
-          "fr": "Dialyse",
-          "ru": "Диализ",
-          "ar": "الديلزة",
-          "zh": "透析",
-          "ku": "Dialîz"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         },
         {
-          "tr": "Flotasyon",
-          "en": "Flotation",
-          "de": "Flotation",
-          "fr": "Flottation",
-          "ru": "Флотация",
-          "ar": "التعويم",
-          "zh": "浮选",
-          "ku": "Flotasyon"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": {
-        "tr": "Aseton ve su birbiri içinde çözünür (homojen), bu yüzden tabaka oluşmaz ve ayırma hunisi kullanılamaz; tanecikler çok küçük olduğundan süzme ve diyaliz de işe yaramaz. Kaynama noktası farkından yararlanılarak fraksiyon kolonlu ayrımsal damıtma uygulanır; önce aseton buharlaşıp toplanır.",
-        "en": "Acetone and water dissolve in each other (homogeneous), so no layers form and a separatory funnel cannot be used; the particles are too small for filtration or dialysis. Using the difference in boiling points, fractional distillation with a fractionating column is applied; acetone vaporises and is collected first.",
-        "de": "Aceton und Wasser lösen sich ineinander (homogen), es bilden sich keine Schichten, daher ist der Scheidetrichter ungeeignet; für Filtration oder Dialyse sind die Teilchen zu klein. Man nutzt den Siedepunktunterschied und destilliert fraktioniert mit Kolonne; Aceton verdampft zuerst und wird gesammelt.",
-        "fr": "L'acétone et l'eau sont miscibles (mélange homogène) : aucune couche ne se forme et l'ampoule à décanter est inutilisable ; les particules sont trop petites pour la filtration ou la dialyse. On exploite la différence d'ébullition par une distillation fractionnée avec colonne ; l'acétone se vaporise et est recueillie en premier.",
-        "ru": "Ацетон и вода взаимно растворимы (смесь однородна), слоёв нет, поэтому делительная воронка не подходит; для фильтрования и диализа частицы слишком малы. Используя разницу температур кипения, проводят фракционную перегонку с колонной; первым испаряется и собирается ацетон.",
-        "ar": "الأسيتون والماء يذوب أحدهما في الآخر (خليط متجانس)، فلا تتكون طبقات ولا يصلح قمع الفصل؛ والدقائق أصغر من أن تُفصل بالترشيح أو الديلزة. يُستفاد من اختلاف درجتي الغليان بالتقطير التجزيئي بعمود تجزئة، فيتبخر الأسيتون أولًا ويُجمع.",
-        "zh": "丙酮和水互溶（均匀混合物），不分层，不能用分液漏斗；粒子太小，过滤和透析也不适用。利用沸点差异，用带分馏柱的分馏法分离，丙酮先汽化并被收集。",
-        "ku": "Aseton û av di nav hev de dihelin (homojen), ji ber vê yekê qat çênabin û qîfa veqetandinê nayê bikaranîn; perçe ji bo parzûnkirin û dialîzê jî pir piçûk in. Bi sûdwergirtina ji cudahiya xalên kelînê distîlasyona perçeyî bi stûna perçekirinê tê kirin; pêşî aseton buhar dibe û tê berhevkirin."
+        "tr": "Tabloya göre X suyla her oranda karışır; X–su karışımı homojendir, tabaka oluşmaz ve ayırma hunisi kullanılamaz (I yanlış). Y suyla karışmaz ve yoğunluğu (0,66 g/mL) sudan (1,00 g/mL) küçüktür; ayırma hunisinde üst tabakayı Y oluşturur (II doğru). X ile Z homojen karışım oluşturur ve kaynama noktaları çok farklıdır (56 °C ve 197 °C); ayrımsal damıtmada kaynama noktası düşük olan X önce buharlaşıp toplanır (III doğru).",
+        "en": "According to the table, X is miscible with water in all proportions; the X–water mixture is homogeneous, forms no layers, and a separatory funnel cannot be used (I incorrect). Y is immiscible with water and less dense (0.66 g/mL) than water (1.00 g/mL), so Y forms the upper layer in the funnel (II correct). X and Z form a homogeneous mixture with very different boiling points (56 °C and 197 °C); in fractional distillation X, with the lower boiling point, vaporizes and is collected first (III correct).",
+        "de": "Laut Tabelle ist X in jedem Verhältnis mit Wasser mischbar; das X-Wasser-Gemisch ist homogen, bildet keine Schichten, und ein Scheidetrichter ist ungeeignet (I falsch). Y ist mit Wasser nicht mischbar und hat eine kleinere Dichte (0,66 g/mL) als Wasser (1,00 g/mL); im Scheidetrichter bildet Y die obere Schicht (II richtig). X und Z bilden ein homogenes Gemisch mit stark unterschiedlichen Siedepunkten (56 °C und 197 °C); bei der fraktionierten Destillation verdampft das niedriger siedende X zuerst und wird zuerst aufgefangen (III richtig).",
+        "fr": "D'après le tableau, X est miscible à l'eau en toutes proportions ; le mélange X–eau est homogène, ne forme pas de couches et l'ampoule à décanter est inutilisable (I fausse). Y n'est pas miscible à l'eau et sa masse volumique (0,66 g/mL) est inférieure à celle de l'eau (1,00 g/mL) : Y forme la couche supérieure (II correcte). X et Z forment un mélange homogène aux températures d'ébullition très différentes (56 °C et 197 °C) ; en distillation fractionnée, X, plus volatil, se vaporise et est recueilli en premier (III correcte).",
+        "ru": "По таблице X смешивается с водой в любых соотношениях; смесь X с водой однородна, слоёв не образует, и делительная воронка непригодна (I неверно). Y с водой не смешивается и легче воды (0,66 г/мл против 1,00 г/мл), поэтому в воронке Y образует верхний слой (II верно). X и Z образуют однородную смесь с сильно различающимися температурами кипения (56 °C и 197 °C); при фракционной перегонке первым испаряется и собирается X, кипящий при более низкой температуре (III верно).",
+        "ar": "وفق الجدول يمتزج X بالماء بأي نسبة، فخليط X والماء متجانس لا يكوّن طبقات ولا يصلح له قمع الفصل (I خاطئة). وY لا يمتزج بالماء وكثافته (0.66 g/mL) أقل من كثافة الماء (1.00 g/mL)، فيكوّن الطبقة العليا في القمع (II صحيحة). ويكوّن X وZ خليطًا متجانسًا درجتا غليان مكوّنيه متباعدتان جدًا (56 °C و197 °C)؛ وفي التقطير التجزيئي يتبخر X ذو درجة الغليان الأدنى ويُجمع أولًا (III صحيحة).",
+        "zh": "由表可知，X 与水以任意比例互溶，X–水混合物是均匀的，不分层，不能用分液漏斗分离（I 错误）。Y 与水不互溶，且密度(0.66 g/mL)小于水(1.00 g/mL)，在分液漏斗中 Y 在上层（II 正确）。X 与 Z 形成均匀混合物，沸点相差很大(56 °C 和 197 °C)；分馏时沸点较低的 X 先汽化并先被收集（III 正确）。",
+        "ku": "Li gorî tabloyê X bi her rêjeyê bi avê re tevlihev dibe; tevliheviya X–av homojen e, qatan çênake û hunîka veqetandinê nayê bikaranîn (I xelet e). Y bi avê re tevlihev nabe û çiriya wê (0,66 g/mL) ji ya avê (1,00 g/mL) kêmtir e; di hunîkê de qata jorîn Y ye (II rast e). X û Z tevliheviyeke homojen çêdikin û xalên kelînê yên wan gelek cuda ne (56 °C û 197 °C); di distîlasyona perçeyî de X ya ku xala kelînê ya wê nizimtir e pêşî dibe buhar û tê berhevkirin (III rast e)."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Sıvı",
+            "en": "Liquid",
+            "de": "Flüssigkeit",
+            "fr": "Liquide",
+            "ru": "Жидкость",
+            "ar": "السائل",
+            "zh": "液体",
+            "ku": "Şile"
+          },
+          {
+            "tr": "Kaynama noktası (°C)",
+            "en": "Boiling point (°C)",
+            "de": "Siedepunkt (°C)",
+            "fr": "Température d'ébullition (°C)",
+            "ru": "Температура кипения (°C)",
+            "ar": "درجة الغليان (°C)",
+            "zh": "沸点 (°C)",
+            "ku": "Xala kelînê (°C)"
+          },
+          {
+            "tr": "Yoğunluk (g/mL)",
+            "en": "Density (g/mL)",
+            "de": "Dichte (g/mL)",
+            "fr": "Masse volumique (g/mL)",
+            "ru": "Плотность (г/мл)",
+            "ar": "الكثافة (g/mL)",
+            "zh": "密度 (g/mL)",
+            "ku": "Çirî (g/mL)"
+          },
+          {
+            "tr": "Suyla karışma",
+            "en": "Mixing with water",
+            "de": "Mischbarkeit mit Wasser",
+            "fr": "Miscibilité avec l'eau",
+            "ru": "Смешиваемость с водой",
+            "ar": "الامتزاج بالماء",
+            "zh": "与水的互溶性",
+            "ku": "Tevlihevbûna bi avê re"
+          }
+        ],
+        "rows": [
+          [
+            "X",
+            "56",
+            {
+              "tr": "0,79",
+              "en": "0.79",
+              "de": "0,79",
+              "fr": "0,79",
+              "ru": "0,79",
+              "ar": "0.79",
+              "zh": "0.79",
+              "ku": "0,79"
+            },
+            {
+              "tr": "Her oranda karışır",
+              "en": "Miscible in all proportions",
+              "de": "In jedem Verhältnis mischbar",
+              "fr": "Miscible en toutes proportions",
+              "ru": "Смешивается в любых соотношениях",
+              "ar": "يمتزج بأي نسبة",
+              "zh": "以任意比例互溶",
+              "ku": "Bi her rêjeyê tevlihev dibe"
+            }
+          ],
+          [
+            "Y",
+            "69",
+            {
+              "tr": "0,66",
+              "en": "0.66",
+              "de": "0,66",
+              "fr": "0,66",
+              "ru": "0,66",
+              "ar": "0.66",
+              "zh": "0.66",
+              "ku": "0,66"
+            },
+            {
+              "tr": "Karışmaz",
+              "en": "Immiscible",
+              "de": "Nicht mischbar",
+              "fr": "Non miscible",
+              "ru": "Не смешивается",
+              "ar": "لا يمتزج",
+              "zh": "不互溶",
+              "ku": "Tevlihev nabe"
+            }
+          ],
+          [
+            "Z",
+            "197",
+            {
+              "tr": "1,11",
+              "en": "1.11",
+              "de": "1,11",
+              "fr": "1,11",
+              "ru": "1,11",
+              "ar": "1.11",
+              "zh": "1.11",
+              "ku": "1,11"
+            },
+            {
+              "tr": "Her oranda karışır",
+              "en": "Miscible in all proportions",
+              "de": "In jedem Verhältnis mischbar",
+              "fr": "Miscible en toutes proportions",
+              "ru": "Смешивается в любых соотношениях",
+              "ar": "يمتزج بأي نسبة",
+              "zh": "以任意比例互溶",
+              "ku": "Bi her rêjeyê tevlihev dibe"
+            }
+          ],
+          [
+            {
+              "tr": "Su",
+              "en": "Water",
+              "de": "Wasser",
+              "fr": "Eau",
+              "ru": "Вода",
+              "ar": "الماء",
+              "zh": "水",
+              "ku": "Av"
+            },
+            "100",
+            {
+              "tr": "1,00",
+              "en": "1.00",
+              "de": "1,00",
+              "fr": "1,00",
+              "ru": "1,00",
+              "ar": "1.00",
+              "zh": "1.00",
+              "ku": "1,00"
+            },
+            "—"
+          ]
+        ]
       }
     },
     {
@@ -1656,77 +1799,223 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin09",
       "stem": {
-        "tr": "Bir öğrenci, saydam görünen bir sıvı karışımla şu gözlemleri yapıyor:\n• Karanlık odada karışımdan lazer ışını geçirildiğinde ışığın izlediği yol görünüyor.\n• Karışım süzgeç kâğıdından süzüldüğünde kâğıt üzerinde kalıntı kalmıyor.\n• Birkaç gün bekletildiğinde dipte çökelme olmuyor.\nBu karışım aşağıdakilerden hangisi olabilir?",
-        "en": "A student makes the following observations on a liquid mixture that looks transparent:\n• When a laser beam is passed through it in a dark room, the path of the light is visible.\n• When it is filtered through filter paper, no residue remains on the paper.\n• After standing for a few days, nothing settles at the bottom.\nWhich of the following could this mixture be?",
-        "de": "Ein Schüler macht an einem durchsichtig aussehenden flüssigen Gemisch folgende Beobachtungen:\n• Schickt man im dunklen Raum einen Laserstrahl hindurch, ist der Lichtweg sichtbar.\n• Beim Filtrieren durch Filterpapier bleibt kein Rückstand auf dem Papier.\n• Nach einigen Tagen Stehen setzt sich nichts am Boden ab.\nWelches der folgenden Gemische könnte es sein?",
-        "fr": "Un élève fait les observations suivantes sur un mélange liquide d'aspect transparent :\n• Dans une pièce sombre, lorsqu'on y fait passer un faisceau laser, le trajet de la lumière est visible.\n• Filtré sur papier filtre, il ne laisse aucun résidu sur le papier.\n• Après quelques jours de repos, rien ne se dépose au fond.\nLequel des mélanges suivants peut-il être ?",
-        "ru": "Ученик проводит наблюдения над прозрачной на вид жидкой смесью:\n• Если в тёмной комнате пропустить через неё лазерный луч, виден путь света.\n• При фильтровании через фильтровальную бумагу на бумаге не остаётся осадка.\n• После нескольких дней стояния на дне ничего не оседает.\nКакой из перечисленных смесей это может быть?",
-        "ar": "يجري طالب الملاحظات الآتية على خليط سائل يبدو شفافًا:\n• عند تمرير شعاع ليزر خلاله في غرفة مظلمة يظهر مسار الضوء.\n• عند ترشيحه بورق الترشيح لا يبقى أي راسب على الورق.\n• عند تركه بضعة أيام لا يترسب شيء في القاع.\nأيّ مما يأتي يمكن أن يكون هذا الخليط؟",
-        "zh": "某学生对一种看起来透明的液体混合物进行了以下观察：\n• 在暗室中让激光束通过它时，可以看到光的路径。\n• 用滤纸过滤时，滤纸上没有残留物。\n• 静置几天后，底部没有沉淀。\n这种混合物可能是下列哪一种？",
-        "ku": "Xwendekarek li ser tevliheviyeke şile ya ku zelal xuya dike van çavdêriyan dike:\n• Dema di odeyeke tarî de tîrêja lazerê di nav tevliheviyê re tê derbaskirin, rêya ronahiyê xuya dibe.\n• Dema bi kaxeza parzûnê tê parzûnkirin, li ser kaxezê tu bermayî namîne.\n• Piştî ku çend rojan tê hiştin, di binî de tiştek nanişe.\nEv tevlihevî dikare kîjan ji van be?"
+        "tr": "K, L ve M sıvı karışımlarıyla yapılan deneylerin sonuçları tabloda verilmiştir. K, L ve M'nin karışım türleri aşağıdakilerin hangisinde doğru verilmiştir?",
+        "en": "The table gives the results of tests on the liquid mixtures K, L and M. In which option are the types of mixture K, L and M given correctly?",
+        "de": "Die Tabelle zeigt die Ergebnisse von Versuchen mit den flüssigen Gemischen K, L und M. In welcher Option sind die Gemischarten von K, L und M richtig angegeben?",
+        "fr": "Le tableau donne les résultats d'essais réalisés sur les mélanges liquides K, L et M. Dans quelle proposition les types de mélange de K, L et M sont-ils correctement indiqués ?",
+        "ru": "В таблице приведены результаты опытов с жидкими смесями K, L и M. В каком варианте правильно указаны типы смесей K, L и M?",
+        "ar": "يبين الجدول نتائج تجارب أُجريت على المخاليط السائلة K وL وM. في أيّ الخيارات أُعطيت أنواع المخاليط K وL وM بشكل صحيح؟",
+        "zh": "表中给出了对液体混合物 K、L、M 进行实验的结果。下列哪一项正确给出了 K、L、M 的混合物类型？",
+        "ku": "Di tabloyê de encamên ceribandinên bi tevliheviyên şile K, L û M hatine dayîn. Cureyên tevliheviyên K, L û M di kîjan vebijarkê de rast hatine dayîn?"
       },
       "options": [
         {
-          "tr": "Jelatinli su",
-          "en": "Gelatine in water",
-          "de": "Gelatine in Wasser",
-          "fr": "Gélatine dans l'eau",
-          "ru": "Вода с желатином",
-          "ar": "الجيلاتين في الماء",
-          "zh": "明胶水溶液",
-          "ku": "Ava bi jelatîn"
+          "tr": "K: kolloit, L: çözelti, M: süspansiyon",
+          "en": "K: colloid, L: solution, M: suspension",
+          "de": "K: Kolloid, L: Lösung, M: Suspension",
+          "fr": "K: colloïde, L: solution, M: suspension",
+          "ru": "K: коллоид, L: раствор, M: суспензия",
+          "ar": "K: غروي، L: محلول، M: معلّق",
+          "zh": "K：胶体，L：溶液，M：悬浊液",
+          "ku": "K: kolloîd, L: çareserî, M: suspansiyon"
         },
         {
-          "tr": "Şekerli su",
-          "en": "Sugar water",
-          "de": "Zuckerwasser",
-          "fr": "Eau sucrée",
-          "ru": "Вода с сахаром",
-          "ar": "الماء المحلّى بالسكر",
-          "zh": "糖水",
-          "ku": "Ava şekirî"
+          "tr": "K: çözelti, L: kolloit, M: süspansiyon",
+          "en": "K: solution, L: colloid, M: suspension",
+          "de": "K: Lösung, L: Kolloid, M: Suspension",
+          "fr": "K: solution, L: colloïde, M: suspension",
+          "ru": "K: раствор, L: коллоид, M: суспензия",
+          "ar": "K: محلول، L: غروي، M: معلّق",
+          "zh": "K：溶液，L：胶体，M：悬浊液",
+          "ku": "K: çareserî, L: kolloîd, M: suspansiyon"
         },
         {
-          "tr": "Tuzlu su",
-          "en": "Salt water",
-          "de": "Salzwasser",
-          "fr": "Eau salée",
-          "ru": "Вода с солью",
-          "ar": "الماء المالح",
-          "zh": "盐水",
-          "ku": "Ava şor"
+          "tr": "K: süspansiyon, L: çözelti, M: kolloit",
+          "en": "K: suspension, L: solution, M: colloid",
+          "de": "K: Suspension, L: Lösung, M: Kolloid",
+          "fr": "K: suspension, L: solution, M: colloïde",
+          "ru": "K: суспензия, L: раствор, M: коллоид",
+          "ar": "K: معلّق، L: محلول، M: غروي",
+          "zh": "K：悬浊液，L：溶液，M：胶体",
+          "ku": "K: suspansiyon, L: çareserî, M: kolloîd"
         },
         {
-          "tr": "Tebeşir tozu-su",
-          "en": "Chalk powder in water",
-          "de": "Kreidepulver in Wasser",
-          "fr": "Poudre de craie dans l'eau",
-          "ru": "Мел с водой",
-          "ar": "مسحوق الطباشير في الماء",
-          "zh": "粉笔灰与水",
-          "ku": "Toza tebeşîrê-av"
+          "tr": "K: kolloit, L: süspansiyon, M: çözelti",
+          "en": "K: colloid, L: suspension, M: solution",
+          "de": "K: Kolloid, L: Suspension, M: Lösung",
+          "fr": "K: colloïde, L: suspension, M: solution",
+          "ru": "K: коллоид, L: суспензия, M: раствор",
+          "ar": "K: غروي، L: معلّق، M: محلول",
+          "zh": "K：胶体，L：悬浊液，M：溶液",
+          "ku": "K: kolloîd, L: suspansiyon, M: çareserî"
         },
         {
-          "tr": "Zeytinyağı-su",
-          "en": "Olive oil and water",
-          "de": "Olivenöl und Wasser",
-          "fr": "Huile d'olive et eau",
-          "ru": "Оливковое масло с водой",
-          "ar": "زيت الزيتون والماء",
-          "zh": "橄榄油与水",
-          "ku": "Rûnê zeytûnê-av"
+          "tr": "K: çözelti, L: süspansiyon, M: kolloit",
+          "en": "K: solution, L: suspension, M: colloid",
+          "de": "K: Lösung, L: Suspension, M: Kolloid",
+          "fr": "K: solution, L: suspension, M: colloïde",
+          "ru": "K: раствор, L: суспензия, M: коллоид",
+          "ar": "K: محلول، L: معلّق، M: غروي",
+          "zh": "K：溶液，L：悬浊液，M：胶体",
+          "ku": "K: çareserî, L: suspansiyon, M: kolloîd"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Işık yolunun görünmesi (Tyndall etkisi) taneciklerin kolloit boyutunda (yaklaşık 1–1000 nm) olduğunu gösterir; kolloidal tanecikler süzgeç kâğıdından geçer ve bekletilince çökmez. Jelatinli su bir kolloittir. Şekerli su ve tuzlu su gerçek çözeltidir, ışığı saçmaz. Tebeşir tozu-su süspansiyondur, süzgeçte kalıntı bırakır ve çöker; zeytinyağı-su emülsiyondur, bekletilince iki tabakaya ayrılır.",
-        "en": "A visible light path (Tyndall effect) shows that the particles are of colloidal size (about 1–1000 nm); colloidal particles pass through filter paper and do not settle on standing. Gelatine in water is a colloid. Sugar water and salt water are true solutions and do not scatter light. Chalk in water is a suspension that leaves residue on the filter and settles; olive oil–water is an emulsion that separates into two layers on standing.",
-        "de": "Ein sichtbarer Lichtweg (Tyndall-Effekt) zeigt Teilchen kolloidaler Größe (etwa 1–1000 nm); sie passieren Filterpapier und setzen sich nicht ab. Gelatine in Wasser ist ein Kolloid. Zucker- und Salzwasser sind echte Lösungen und streuen kein Licht. Kreide in Wasser ist eine Suspension, hinterlässt Rückstand und setzt sich ab; Olivenöl-Wasser ist eine Emulsion, die sich beim Stehen in zwei Schichten trennt.",
-        "fr": "Un trajet lumineux visible (effet Tyndall) indique des particules de taille colloïdale (environ 1–1000 nm) ; elles traversent le papier filtre et ne sédimentent pas. La gélatine dans l'eau est un colloïde. L'eau sucrée et l'eau salée sont de vraies solutions et ne diffusent pas la lumière. La craie dans l'eau est une suspension qui laisse un résidu et se dépose ; l'huile d'olive–eau est une émulsion qui se sépare en deux couches au repos.",
-        "ru": "Видимый путь луча (эффект Тиндаля) говорит о частицах коллоидного размера (примерно 1–1000 нм); они проходят через фильтровальную бумагу и не оседают. Вода с желатином — коллоид. Вода с сахаром и вода с солью — истинные растворы и свет не рассеивают. Мел с водой — суспензия: оставляет осадок на фильтре и оседает; оливковое масло с водой — эмульсия, при стоянии расслаивается на два слоя.",
-        "ar": "ظهور مسار الضوء (ظاهرة تندال) يدل على أن الدقائق بحجم غروي (نحو 1–1000 nm)، والدقائق الغروية تمر عبر ورق الترشيح ولا تترسب عند الترك. والجيلاتين في الماء غروي. أما الماء المحلّى والماء المالح فمحاليل حقيقية لا تشتت الضوء. والطباشير في الماء معلق يترك راسبًا ويترسب، وزيت الزيتون والماء مستحلب ينفصل إلى طبقتين عند الترك.",
-        "zh": "能看到光路（丁达尔效应）说明粒子是胶体大小(约1–1000 nm)；胶体粒子能透过滤纸，静置也不沉降。明胶水溶液是胶体。糖水和盐水是真溶液，不散射光。粉笔灰与水是悬浊液，会在滤纸上留下残留物并沉降；橄榄油与水是乳浊液，静置后分成两层。",
-        "ku": "Xuyabûna rêya ronahiyê (bandora Tyndall) nîşan dide ku perçe bi mezinahiya kolloîdî ne (nêzîkî 1–1000 nm); perçeyên kolloîdî di kaxeza parzûnê re derbas dibin û dema tên hiştin nanişin. Ava bi jelatîn kolloîd e. Ava şekirî û ava şor çareseriyên rastîn in, ronahiyê belav nakin. Toza tebeşîrê-av suspansiyon e, li ser parzûnê bermayî dihêle û dinişe; rûnê zeytûnê-av emulsiyon e û dema tê hiştin dibe du qat."
+        "tr": "L ışığı saçmaz, süzgeç kâğıdında kalıntı bırakmaz ve bekletilince çökmez; tanecikleri 1 nm'den küçük olan gerçek çözeltidir. K'de ışık yolu görünür (Tyndall etkisi), yani tanecikler kolloit boyutundadır; ancak süzgeç kâğıdından geçer ve çökmez, bu yüzden K kolloittir. M de ışığı saçar ama süzgeçte kalıntı bırakır ve bekletilince çöker; tanecikleri iri olan katı-sıvı karışımı, yani süspansiyondur. Işık yolunun görünmesi tek başına kolloidi süspansiyondan ayırmaz; süzme ve çökme gözlemleri de gerekir.",
+        "en": "L does not scatter light, leaves no residue on filter paper and does not settle; its particles are smaller than 1 nm, so it is a true solution. In K the light path is visible (Tyndall effect), so the particles are colloid-sized; but they pass through filter paper and do not settle, so K is a colloid. M also scatters light but leaves a residue on the filter and settles on standing; it is a solid-liquid mixture with large particles, i.e. a suspension. A visible light path alone does not distinguish a colloid from a suspension; the filtration and settling observations are also needed.",
+        "de": "L streut kein Licht, hinterlässt keinen Rückstand auf dem Filterpapier und setzt sich nicht ab; seine Teilchen sind kleiner als 1 nm, es ist eine echte Lösung. Bei K ist der Lichtweg sichtbar (Tyndall-Effekt), die Teilchen haben also Kolloidgröße; sie passieren aber das Filterpapier und setzen sich nicht ab, daher ist K ein Kolloid. M streut ebenfalls Licht, hinterlässt aber einen Filterrückstand und setzt sich ab; es ist ein Fest-flüssig-Gemisch mit groben Teilchen, also eine Suspension. Ein sichtbarer Lichtweg allein unterscheidet Kolloid und Suspension nicht; dazu braucht man auch die Beobachtungen zu Filtration und Absetzen.",
+        "fr": "L ne diffuse pas la lumière, ne laisse aucun résidu sur le papier filtre et ne se dépose pas : ses particules mesurent moins de 1 nm, c'est une vraie solution. Dans K, le trajet de la lumière est visible (effet Tyndall) : les particules ont une taille colloïdale ; mais elles traversent le papier filtre et ne se déposent pas, donc K est un colloïde. M diffuse aussi la lumière mais laisse un résidu sur le filtre et se dépose au repos : c'est un mélange solide-liquide à grosses particules, une suspension. Un trajet lumineux visible ne suffit pas à distinguer colloïde et suspension ; il faut aussi les observations de filtration et de dépôt.",
+        "ru": "L не рассеивает свет, не оставляет осадка на фильтровальной бумаге и не расслаивается; его частицы меньше 1 нм — это истинный раствор. В K виден путь луча (эффект Тиндаля), значит частицы коллоидного размера; но они проходят через фильтр и не оседают, поэтому K — коллоид. M тоже рассеивает свет, но оставляет осадок на фильтре и оседает при стоянии; это смесь твёрдого вещества с жидкостью с крупными частицами, т. е. суспензия. Один лишь видимый путь луча не отличает коллоид от суспензии — нужны ещё наблюдения фильтрования и оседания.",
+        "ar": "L لا يشتت الضوء ولا يترك راسبًا على ورق الترشيح ولا يترسب عند تركه، فدقائقه أصغر من 1 nm وهو محلول حقيقي. وفي K يظهر مسار الضوء (ظاهرة تندال)، أي أن دقائقه بحجم غروي، لكنها تمر عبر ورق الترشيح ولا تترسب، فـ K غروي. أما M فيشتت الضوء أيضًا لكنه يترك راسبًا على المرشح ويترسب عند تركه، فهو خليط صلب-سائل دقائقه كبيرة، أي معلّق. ظهور مسار الضوء وحده لا يميز الغروي من المعلّق؛ بل يلزم أيضًا ملاحظة الترشيح والترسب.",
+        "zh": "L 不散射光，在滤纸上不留残渣，静置也不沉降，其粒子小于 1 nm，是真溶液。K 中可见光路（丁达尔效应），说明粒子为胶体大小；但它能透过滤纸且不沉降，所以 K 是胶体。M 也散射光，但在滤纸上留下残渣，静置后沉降，是含有较大颗粒的固-液混合物，即悬浊液。仅凭可见光路不能区分胶体和悬浊液，还需要过滤和沉降的观察结果。",
+        "ku": "L ronahiyê belav nake, li ser kaxeza parzûnê bermayî nahêle û dema tê hiştin nanişe; perçeyên wê ji 1 nm piçûktir in, ew çareseriyeke rastîn e. Di K de rêya ronahiyê xuya dibe (bandora Tyndall), yanî perçe bi mezinahiya kolloîdê ne; lê ew di kaxeza parzûnê re derbas dibin û nanişin, loma K kolloîd e. M jî ronahiyê belav dike lê li ser parzûnê bermayî dihêle û dema tê hiştin dinişe; ew tevliheviyeke hişk-şile ya bi perçeyên mezin e, yanî suspansiyon e. Tenê xuyabûna rêya ronahiyê kolloîdê ji suspansiyonê cuda nake; çavdêriyên parzûnkirin û niştinê jî lazim in."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Karışım",
+            "en": "Mixture",
+            "de": "Gemisch",
+            "fr": "Mélange",
+            "ru": "Смесь",
+            "ar": "الخليط",
+            "zh": "混合物",
+            "ku": "Tevlihevî"
+          },
+          {
+            "tr": "Lazer ışınının yolu",
+            "en": "Path of laser beam",
+            "de": "Weg des Laserstrahls",
+            "fr": "Trajet du faisceau laser",
+            "ru": "Путь лазерного луча",
+            "ar": "مسار شعاع الليزر",
+            "zh": "激光光路",
+            "ku": "Rêya tîrêja lazerê"
+          },
+          {
+            "tr": "Süzgeç kâğıdında kalıntı",
+            "en": "Residue on filter paper",
+            "de": "Rückstand auf Filterpapier",
+            "fr": "Résidu sur le papier filtre",
+            "ru": "Осадок на фильтре",
+            "ar": "راسب على ورق الترشيح",
+            "zh": "滤纸上的残渣",
+            "ku": "Bermayî li ser kaxeza parzûnê"
+          },
+          {
+            "tr": "Bekletilince çökme",
+            "en": "Settling on standing",
+            "de": "Absetzen beim Stehen",
+            "fr": "Dépôt au repos",
+            "ru": "Оседание при стоянии",
+            "ar": "الترسب عند الترك",
+            "zh": "静置后沉降",
+            "ku": "Niştin dema tê hiştin"
+          }
+        ],
+        "rows": [
+          [
+            "K",
+            {
+              "tr": "Görünür",
+              "en": "Visible",
+              "de": "Sichtbar",
+              "fr": "Visible",
+              "ru": "Виден",
+              "ar": "مرئي",
+              "zh": "可见",
+              "ku": "Xuya dibe"
+            },
+            {
+              "tr": "Yok",
+              "en": "No",
+              "de": "Nein",
+              "fr": "Non",
+              "ru": "Нет",
+              "ar": "لا يوجد",
+              "zh": "无",
+              "ku": "Tune"
+            },
+            {
+              "tr": "Yok",
+              "en": "No",
+              "de": "Nein",
+              "fr": "Non",
+              "ru": "Нет",
+              "ar": "لا يوجد",
+              "zh": "无",
+              "ku": "Tune"
+            }
+          ],
+          [
+            "L",
+            {
+              "tr": "Görünmez",
+              "en": "Not visible",
+              "de": "Nicht sichtbar",
+              "fr": "Invisible",
+              "ru": "Не виден",
+              "ar": "غير مرئي",
+              "zh": "不可见",
+              "ku": "Xuya nabe"
+            },
+            {
+              "tr": "Yok",
+              "en": "No",
+              "de": "Nein",
+              "fr": "Non",
+              "ru": "Нет",
+              "ar": "لا يوجد",
+              "zh": "无",
+              "ku": "Tune"
+            },
+            {
+              "tr": "Yok",
+              "en": "No",
+              "de": "Nein",
+              "fr": "Non",
+              "ru": "Нет",
+              "ar": "لا يوجد",
+              "zh": "无",
+              "ku": "Tune"
+            }
+          ],
+          [
+            "M",
+            {
+              "tr": "Görünür",
+              "en": "Visible",
+              "de": "Sichtbar",
+              "fr": "Visible",
+              "ru": "Виден",
+              "ar": "مرئي",
+              "zh": "可见",
+              "ku": "Xuya dibe"
+            },
+            {
+              "tr": "Var",
+              "en": "Yes",
+              "de": "Ja",
+              "fr": "Oui",
+              "ru": "Есть",
+              "ar": "يوجد",
+              "zh": "有",
+              "ku": "Heye"
+            },
+            {
+              "tr": "Var",
+              "en": "Yes",
+              "de": "Ja",
+              "fr": "Oui",
+              "ru": "Есть",
+              "ar": "يوجد",
+              "zh": "有",
+              "ku": "Heye"
+            }
+          ]
+        ]
       }
     },
     {
@@ -1808,77 +2097,183 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin11",
       "stem": {
-        "tr": "Çözünürlüğü sıcaklıkla büyük ölçüde artan KNO3 ile çözünürlüğü sıcaklıkla çok az değişen NaCl'den oluşan katı bir karışımdan saf KNO3 elde edilmek isteniyor. Karışım az miktarda sıcak suda çözülüyor, çözelti soğutuluyor ve oluşan kristaller süzülüyor.\nBu ayırmada kullanılan yöntem ve yararlanılan ayırt edici özellik aşağıdakilerden hangisinde birlikte doğru verilmiştir?",
-        "en": "Pure KNO3 is to be obtained from a solid mixture of KNO3, whose solubility increases greatly with temperature, and NaCl, whose solubility changes very little with temperature. The mixture is dissolved in a small amount of hot water, the solution is cooled and the crystals formed are filtered off.\nIn which of the following are the method used and the distinguishing property exploited both given correctly?",
-        "de": "Aus einem Feststoffgemisch aus KNO3, dessen Löslichkeit mit der Temperatur stark zunimmt, und NaCl, dessen Löslichkeit sich mit der Temperatur kaum ändert, soll reines KNO3 gewonnen werden. Das Gemisch wird in wenig heißem Wasser gelöst, die Lösung abgekühlt und die entstehenden Kristalle abfiltriert.\nIn welcher Antwort sind das Verfahren und die genutzte Stoffeigenschaft beide richtig angegeben?",
-        "fr": "On veut obtenir du KNO3 pur à partir d'un mélange solide de KNO3, dont la solubilité augmente fortement avec la température, et de NaCl, dont la solubilité varie très peu avec la température. Le mélange est dissous dans un peu d'eau chaude, la solution est refroidie et les cristaux formés sont filtrés.\nDans quelle proposition la méthode utilisée et la propriété distinctive exploitée sont-elles toutes deux correctes ?",
-        "ru": "Из твёрдой смеси KNO3, растворимость которого сильно растёт с температурой, и NaCl, растворимость которого почти не зависит от температуры, нужно получить чистый KNO3. Смесь растворяют в небольшом количестве горячей воды, раствор охлаждают, а образовавшиеся кристаллы отфильтровывают.\nВ каком ответе правильно указаны и метод, и использованное отличительное свойство?",
-        "ar": "يُراد الحصول على KNO3 نقي من خليط صلب من KNO3 الذي تزداد ذائبيته كثيرًا بارتفاع درجة الحرارة وNaCl الذي تتغير ذائبيته قليلًا جدًا بتغير درجة الحرارة. يُذاب الخليط في كمية قليلة من الماء الساخن، ثم يُبرَّد المحلول وتُرشَّح البلورات المتكونة.\nفي أيّ مما يأتي ذُكرت الطريقة المستخدمة والخاصية المميزة المستفاد منها صحيحتين معًا؟",
-        "zh": "要从KNO3（溶解度随温度升高而大幅增大）和NaCl（溶解度随温度变化很小）组成的固体混合物中得到纯KNO3。把混合物溶于少量热水，冷却溶液，再滤出析出的晶体。\n下列哪一项中所用的方法和所利用的区别性质都正确？",
-        "ku": "Tê xwestin ku ji tevliheviyeke hişk a KNO3 (helbûniya wê bi germahiyê re gelek zêde dibe) û NaCl (helbûniya wê bi germahiyê re pir hindik diguhere) KNO3-a paqij bê bidestxistin. Tevlihevî di hindik ava germ de tê helandin, çareserî tê sarkirin û krîstalên ku çêdibin tên parzûnkirin.\nDi kîjan ji van de rêbaza ku tê bikaranîn û taybetmendiya cudaker a ku jê sûd tê wergirtin herdu bi hev re rast hatine dayîn?"
+        "tr": "Grafikte KNO3 ve NaCl'nin sudaki çözünürlüklerinin sıcaklıkla değişimi verilmiştir. 60 °C'de 100 g suda 90 g KNO3 ve 20 g NaCl çözünmüş bir çözelti, su kaybı olmadan 20 °C'ye soğutuluyor (tuzların birbirinin çözünürlüğünü etkilemediği varsayılıyor). Bu işlemle ilgili,\nI. 60 g KNO3 kristallenir.\nII. NaCl çökmez, çözeltide kalır.\nIII. 60 °C'deki çözelti KNO3 bakımından doymuştur.\nyargılarından hangileri doğrudur?",
+        "en": "The graph shows how the solubilities of KNO3 and NaCl in water change with temperature. A solution of 90 g KNO3 and 20 g NaCl in 100 g of water at 60 °C is cooled to 20 °C without loss of water (assume the salts do not affect each other's solubility). Which of the following statements about this process are correct?\nI. 60 g of KNO3 crystallizes.\nII. NaCl does not precipitate; it stays in solution.\nIII. At 60 °C the solution is saturated with KNO3.",
+        "de": "Das Diagramm zeigt die Temperaturabhängigkeit der Löslichkeiten von KNO3 und NaCl in Wasser. Eine Lösung von 90 g KNO3 und 20 g NaCl in 100 g Wasser bei 60 °C wird ohne Wasserverlust auf 20 °C abgekühlt (die Salze beeinflussen ihre Löslichkeit gegenseitig nicht). Welche der folgenden Aussagen sind richtig?\nI. Es kristallisieren 60 g KNO3 aus.\nII. NaCl fällt nicht aus, sondern bleibt gelöst.\nIII. Bei 60 °C ist die Lösung an KNO3 gesättigt.",
+        "fr": "Le graphique montre la variation avec la température des solubilités de KNO3 et de NaCl dans l'eau. Une solution de 90 g de KNO3 et 20 g de NaCl dans 100 g d'eau à 60 °C est refroidie à 20 °C sans perte d'eau (on admet que les sels n'influencent pas la solubilité l'un de l'autre). Lesquelles des affirmations suivantes sont correctes ?\nI. 60 g de KNO3 cristallisent.\nII. NaCl ne précipite pas et reste en solution.\nIII. À 60 °C, la solution est saturée en KNO3.",
+        "ru": "На графике показана зависимость растворимости KNO3 и NaCl в воде от температуры. Раствор 90 г KNO3 и 20 г NaCl в 100 г воды при 60 °C охлаждают до 20 °C без потери воды (считается, что соли не влияют на растворимость друг друга). Какие из следующих утверждений верны?\nI. Выкристаллизовывается 60 г KNO3.\nII. NaCl не выпадает в осадок и остаётся в растворе.\nIII. При 60 °C раствор насыщен по KNO3.",
+        "ar": "يبين الرسم البياني تغيّر ذائبية KNO3 وNaCl في الماء مع درجة الحرارة. يُبرَّد محلول يحتوي 90 g من KNO3 و20 g من NaCl مذابة في 100 g من الماء عند 60 °C إلى 20 °C دون فقدان ماء (بافتراض أن الملحين لا يؤثر أحدهما في ذائبية الآخر). أيّ العبارات الآتية صحيحة؟\nI. يتبلور 60 g من KNO3.\nII. لا يترسب NaCl بل يبقى في المحلول.\nIII. المحلول عند 60 °C مشبع بـ KNO3.",
+        "zh": "图中给出了 KNO3 和 NaCl 在水中的溶解度随温度的变化。60 °C 时将 90 g KNO3 和 20 g NaCl 溶于 100 g 水中，在不损失水的情况下冷却到 20 °C（假设两种盐互不影响溶解度）。下列说法中哪些正确？\nI. 析出 60 g KNO3 晶体。\nII. NaCl 不析出，仍留在溶液中。\nIII. 60 °C 时该溶液对 KNO3 是饱和的。",
+        "ku": "Grafîk nîşan dide ka helbûniyên KNO3 û NaCl di avê de bi germahiyê re çawa diguherin. Çareseriyek ku tê de di 60 °C de 90 g KNO3 û 20 g NaCl di 100 g avê de helandî ne, bêyî windabûna avê heta 20 °C tê sarkirin (tê texmînkirin ku xwê bandorê li helbûniya hev nakin). Derbarê vê pêvajoyê de kîjan ji van gotinan rast in?\nI. 60 g KNO3 krîstal dibe.\nII. NaCl nanişe, di çareseriyê de dimîne.\nIII. Di 60 °C de çareserî ji aliyê KNO3 ve têr e."
       },
       "options": [
         {
-          "tr": "Ayırma hunisi – yoğunluk farkı",
-          "en": "Separatory funnel – difference in density",
-          "de": "Scheidetrichter – Dichteunterschied",
-          "fr": "Ampoule à décanter – différence de masse volumique",
-          "ru": "Делительная воронка – различие плотностей",
-          "ar": "قمع الفصل – اختلاف الكثافة",
-          "zh": "分液漏斗 – 密度差异",
-          "ku": "Qîfa veqetandinê – cudahiya çiriyê"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Ayrımsal damıtma – kaynama noktası farkı",
-          "en": "Fractional distillation – difference in boiling point",
-          "de": "Fraktionierte Destillation – Siedepunktunterschied",
-          "fr": "Distillation fractionnée – différence de température d'ébullition",
-          "ru": "Фракционная перегонка – различие температур кипения",
-          "ar": "التقطير التجزيئي – اختلاف درجة الغليان",
-          "zh": "分馏 – 沸点差异",
-          "ku": "Distîlasyona perçeyî – cudahiya xala kelînê"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Diyaliz – tanecik boyutu farkı",
-          "en": "Dialysis – difference in particle size",
-          "de": "Dialyse – Unterschied der Teilchengröße",
-          "fr": "Dialyse – différence de taille des particules",
-          "ru": "Диализ – различие размеров частиц",
-          "ar": "الديلزة – اختلاف حجم الدقائق",
-          "zh": "透析 – 粒子大小差异",
-          "ku": "Dialîz – cudahiya mezinahiya perçeyan"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Ayrımsal kristallendirme – çözünürlük farkı",
-          "en": "Fractional crystallisation – difference in solubility",
-          "de": "Fraktionierte Kristallisation – Löslichkeitsunterschied",
-          "fr": "Cristallisation fractionnée – différence de solubilité",
-          "ru": "Дробная кристаллизация – различие растворимости",
-          "ar": "التبلور التجزيئي – اختلاف الذائبية",
-          "zh": "分步结晶 – 溶解度差异",
-          "ku": "Krîstalbûna perçeyî – cudahiya helbûniyê"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         },
         {
-          "tr": "Mıknatısla ayırma – manyetik özellik farkı",
-          "en": "Magnetic separation – difference in magnetic properties",
-          "de": "Magnetscheidung – Unterschied der magnetischen Eigenschaften",
-          "fr": "Séparation magnétique – différence de propriétés magnétiques",
-          "ru": "Магнитная сепарация – различие магнитных свойств",
-          "ar": "الفصل المغناطيسي – اختلاف الخواص المغناطيسية",
-          "zh": "磁选 – 磁性差异",
-          "ku": "Veqetandina bi mexnatîsê – cudahiya taybetmendiya mexnatîsî"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "explanation": {
-        "tr": "Soğutulunca KNO3'ün çözünürlüğü çok azaldığından fazlası kristallenir; NaCl'nin çözünürlüğü pek değişmediği için çözeltide kalır. Böylece iki katı, sıcaklıkla değişen çözünürlükleri farkından yararlanılarak ayrımsal kristallendirme ile ayrılır. Karışımda sıvı-sıvı tabakalar, kaynama noktası farkıyla ayrılacak sıvılar, kolloidal tanecikler ya da manyetik madde bulunmadığından diğer yöntemler uygun değildir.",
-        "en": "On cooling, the solubility of KNO3 drops sharply, so the excess crystallises, while NaCl, whose solubility hardly changes, stays in solution. The two solids are thus separated by fractional crystallisation, exploiting their different solubility changes with temperature. There are no liquid layers, no liquids to be separated by boiling point, no colloidal particles and no magnetic substance, so the other methods do not apply.",
-        "de": "Beim Abkühlen sinkt die Löslichkeit von KNO3 stark, der Überschuss kristallisiert aus; NaCl, dessen Löslichkeit sich kaum ändert, bleibt gelöst. Die beiden Feststoffe werden also durch fraktionierte Kristallisation aufgrund ihrer unterschiedlichen Löslichkeit getrennt. Es gibt keine Flüssigkeitsschichten, keine nach Siedepunkt trennbaren Flüssigkeiten, keine Kolloidteilchen und keinen magnetischen Stoff, daher passen die anderen Verfahren nicht.",
-        "fr": "Au refroidissement, la solubilité de KNO3 chute fortement et l'excès cristallise, tandis que NaCl, dont la solubilité varie peu, reste en solution. Les deux solides sont donc séparés par cristallisation fractionnée, grâce à leur différence de solubilité en fonction de la température. Il n'y a ni couches liquides, ni liquides séparables par ébullition, ni particules colloïdales, ni substance magnétique : les autres méthodes ne conviennent pas.",
-        "ru": "При охлаждении растворимость KNO3 резко падает, и его избыток кристаллизуется, а NaCl, растворимость которого почти не меняется, остаётся в растворе. Таким образом, два твёрдых вещества разделяют дробной кристаллизацией, используя различие их растворимости. Жидких слоёв, жидкостей для разделения по температуре кипения, коллоидных частиц и магнитных веществ здесь нет, поэтому остальные методы не подходят.",
-        "ar": "عند التبريد تقل ذائبية KNO3 كثيرًا فيتبلور الفائض منه، بينما يبقى NaCl الذي لا تتغير ذائبيته تقريبًا في المحلول. وهكذا يُفصل الصلبان بالتبلور التجزيئي اعتمادًا على اختلاف ذائبيتهما مع درجة الحرارة. ولا توجد في الخليط طبقات سائلة ولا سوائل تُفصل بدرجة الغليان ولا دقائق غروية ولا مادة مغناطيسية، لذا لا تصلح الطرق الأخرى.",
-        "zh": "冷却时KNO3的溶解度大幅下降，多余部分结晶析出；NaCl的溶解度几乎不变，留在溶液中。因此利用两者溶解度随温度变化的差异，用分步结晶法分离这两种固体。混合物中没有分层的液体、没有可按沸点分离的液体、没有胶体粒子，也没有磁性物质，所以其他方法都不适用。",
-        "ku": "Dema çareserî tê sarkirin helbûniya KNO3 gelek kêm dibe û zêdeya wê krîstal dibe; NaCl, ku helbûniya wê hema naguhere, di çareseriyê de dimîne. Bi vî awayî her du madeyên hişk bi sûdwergirtina ji cudahiya guherîna helbûniya wan a bi germahiyê re, bi krîstalbûna perçeyî tên veqetandin. Di tevliheviyê de ne qatên şile, ne şileyên ku bi xala kelînê bên veqetandin, ne perçeyên kolloîdî û ne jî madeya mexnatîsî hene; ji ber vê yekê rêbazên din ne guncav in."
+        "tr": "Grafikten 100 g sudaki çözünürlük KNO3 için 60 °C'de 110 g, 20 °C'de 30 g'dır. 60 °C'de 90 g < 110 g olduğundan çözelti KNO3 bakımından doymamıştır (III yanlış). 20 °C'de en fazla 30 g KNO3 çözünebildiğinden 90 − 30 = 60 g KNO3 kristallenir (I doğru). NaCl'nin çözünürlüğü sıcaklıkla çok az değişir ve 20 °C'de yaklaşık 36 g'dır; 20 g NaCl çözünmüş hâlde kalır (II doğru). Böylece çözünürlük farkından yararlanılarak KNO3, ayrımsal kristallendirmeyle NaCl'den ayrılır.",
+        "en": "From the graph, the solubility of KNO3 per 100 g of water is 110 g at 60 °C and 30 g at 20 °C. At 60 °C, 90 g < 110 g, so the solution is unsaturated in KNO3 (III incorrect). At 20 °C at most 30 g of KNO3 can stay dissolved, so 90 − 30 = 60 g of KNO3 crystallizes (I correct). The solubility of NaCl barely changes with temperature and is about 36 g at 20 °C; the 20 g of NaCl stays dissolved (II correct). KNO3 is thus separated from NaCl by fractional crystallization, using the difference in solubility.",
+        "de": "Laut Diagramm beträgt die Löslichkeit von KNO3 je 100 g Wasser bei 60 °C 110 g und bei 20 °C 30 g. Bei 60 °C gilt 90 g < 110 g, die Lösung ist an KNO3 ungesättigt (III falsch). Bei 20 °C bleiben höchstens 30 g KNO3 gelöst, also kristallisieren 90 − 30 = 60 g aus (I richtig). Die Löslichkeit von NaCl ändert sich kaum mit der Temperatur und beträgt bei 20 °C etwa 36 g; die 20 g NaCl bleiben gelöst (II richtig). So wird KNO3 durch fraktionierte Kristallisation aufgrund der unterschiedlichen Löslichkeit von NaCl getrennt.",
+        "fr": "D'après le graphique, la solubilité de KNO3 pour 100 g d'eau vaut 110 g à 60 °C et 30 g à 20 °C. À 60 °C, 90 g < 110 g : la solution n'est pas saturée en KNO3 (III fausse). À 20 °C, au plus 30 g de KNO3 restent dissous, donc 90 − 30 = 60 g cristallisent (I correcte). La solubilité de NaCl varie très peu avec la température et vaut environ 36 g à 20 °C ; les 20 g de NaCl restent dissous (II correcte). KNO3 est ainsi séparé de NaCl par cristallisation fractionnée, grâce à la différence de solubilité.",
+        "ru": "По графику растворимость KNO3 на 100 г воды при 60 °C равна 110 г, при 20 °C — 30 г. При 60 °C 90 г < 110 г, поэтому раствор не насыщен по KNO3 (III неверно). При 20 °C в растворе может остаться не более 30 г KNO3, значит выкристаллизовывается 90 − 30 = 60 г (I верно). Растворимость NaCl почти не зависит от температуры и при 20 °C составляет около 36 г; 20 г NaCl остаются в растворе (II верно). Так KNO3 отделяют от NaCl дробной кристаллизацией, используя различие в растворимости.",
+        "ar": "من الرسم تبلغ ذائبية KNO3 في 100 g من الماء 110 g عند 60 °C و30 g عند 20 °C. عند 60 °C يكون 90 g < 110 g، فالمحلول غير مشبع بـ KNO3 (III خاطئة). وعند 20 °C لا يبقى ذائبًا أكثر من 30 g من KNO3، فيتبلور 90 − 30 = 60 g (I صحيحة). أما ذائبية NaCl فتتغير قليلًا جدًا مع الحرارة وتبلغ نحو 36 g عند 20 °C، فيبقى 20 g من NaCl ذائبًا (II صحيحة). وهكذا يُفصل KNO3 عن NaCl بالتبلور التجزيئي اعتمادًا على اختلاف الذائبية.",
+        "zh": "由图可知，每 100 g 水中 KNO3 的溶解度在 60 °C 时为 110 g，在 20 °C 时为 30 g。60 °C 时 90 g < 110 g，溶液对 KNO3 不饱和（III 错误）。20 °C 时最多只能溶解 30 g KNO3，所以析出 90 − 30 = 60 g KNO3（I 正确）。NaCl 的溶解度随温度变化很小，20 °C 时约为 36 g，20 g NaCl 仍溶解在溶液中（II 正确）。这样就利用溶解度的差异，用分步结晶法把 KNO3 与 NaCl 分开。",
+        "ku": "Ji grafîkê, helbûniya KNO3 di 100 g avê de di 60 °C de 110 g, di 20 °C de 30 g ye. Di 60 °C de 90 g < 110 g ye, loma çareserî ji aliyê KNO3 ve ne têr e (III xelet e). Di 20 °C de herî zêde 30 g KNO3 dikare helandî bimîne, loma 90 − 30 = 60 g KNO3 krîstal dibe (I rast e). Helbûniya NaCl bi germahiyê re pir hindik diguhere û di 20 °C de nêzîkî 36 g ye; 20 g NaCl helandî dimîne (II rast e). Bi vî awayî KNO3 bi krîstalbûna perçeyî, bi alîkariya cudahiya helbûniyê, ji NaCl tê veqetandin."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Sıcaklık (°C)",
+          "en": "Temperature (°C)",
+          "de": "Temperatur (°C)",
+          "fr": "Température (°C)",
+          "ru": "Температура (°C)",
+          "ar": "درجة الحرارة (°C)",
+          "zh": "温度 (°C)",
+          "ku": "Germahî (°C)"
+        },
+        "yLabel": {
+          "tr": "Çözünürlük (g / 100 g su)",
+          "en": "Solubility (g / 100 g water)",
+          "de": "Löslichkeit (g / 100 g Wasser)",
+          "fr": "Solubilité (g / 100 g d'eau)",
+          "ru": "Растворимость (г / 100 г воды)",
+          "ar": "الذائبية (g / 100 g ماء)",
+          "zh": "溶解度 (g / 100 g 水)",
+          "ku": "Helbûnî (g / 100 g av)"
+        },
+        "xMax": 80,
+        "yMax": 180,
+        "xTicks": [
+          20,
+          40,
+          60,
+          80
+        ],
+        "yTicks": [
+          30,
+          60,
+          110,
+          170
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                13
+              ],
+              [
+                20,
+                30
+              ],
+              [
+                40,
+                60
+              ],
+              [
+                60,
+                110
+              ],
+              [
+                80,
+                170
+              ]
+            ],
+            "label": "KNO₃",
+            "tone": 0
+          },
+          {
+            "points": [
+              [
+                0,
+                35.7
+              ],
+              [
+                20,
+                36
+              ],
+              [
+                40,
+                36.6
+              ],
+              [
+                60,
+                37.3
+              ],
+              [
+                80,
+                38.4
+              ]
+            ],
+            "label": "NaCl",
+            "tone": 1,
+            "dashed": true
+          }
+        ],
+        "markers": [
+          {
+            "x": 20,
+            "y": 30,
+            "label": "",
+            "guides": true
+          },
+          {
+            "x": 60,
+            "y": 110,
+            "label": "",
+            "guides": true
+          }
+        ]
       }
     },
     {
@@ -1960,77 +2355,159 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin13",
       "stem": {
-        "tr": "Kışın buzlanmayı önlemek amacıyla karayollarına tuz serpilir. Bu uygulamanın temel nedeni aşağıdakilerden hangisidir?",
-        "en": "In winter, salt is spread on roads to prevent icing. What is the main reason for this practice?",
-        "de": "Im Winter wird Salz auf Straßen gestreut, um Glatteis zu verhindern. Was ist der Hauptgrund dafür?",
-        "fr": "En hiver, on répand du sel sur les routes pour éviter le verglas. Quelle est la raison principale de cette pratique ?",
-        "ru": "Зимой дороги посыпают солью, чтобы предотвратить обледенение. Какова основная причина этого?",
-        "ar": "في الشتاء يُرش الملح على الطرق لمنع تكوّن الجليد. ما السبب الرئيس لهذا الإجراء؟",
-        "zh": "冬天人们在公路上撒盐以防止结冰。这样做的主要原因是什么？",
-        "ku": "Di zivistanê de ji bo pêşîgirtina li cemidînê xwê li ser rêyan tê reşandin. Sedema bingehîn a vê kirinê kîjan e?"
+        "tr": "Aynı dış basınçta saf su ve tuzlu su ayrı ayrı ısıtılıyor; elde edilen sıcaklık–zaman grafikleri K ve L ile gösterilmiştir. Grafiklerle ilgili,\nI. K eğrisi saf suya aittir.\nII. L'de t1–t2 aralığında sıcaklığın artması, su buharlaştıkça çözeltinin derişmesindendir.\nIII. L'de t1–t2 aralığında çözünmüş tuz kütlesi azalır.\nyargılarından hangileri doğrudur?",
+        "en": "Pure water and salt water are heated separately at the same external pressure; the temperature–time graphs obtained are labelled K and L. Which of the following statements about the graphs are correct?\nI. Curve K belongs to pure water.\nII. In L, the temperature rises between t1 and t2 because the solution becomes more concentrated as water evaporates.\nIII. In L, the mass of dissolved salt decreases between t1 and t2.",
+        "de": "Reines Wasser und Salzwasser werden beim gleichen äußeren Druck getrennt erhitzt; die erhaltenen Temperatur-Zeit-Kurven sind mit K und L bezeichnet. Welche der folgenden Aussagen sind richtig?\nI. Kurve K gehört zu reinem Wasser.\nII. Bei L steigt die Temperatur zwischen t1 und t2, weil die Lösung beim Verdampfen des Wassers konzentrierter wird.\nIII. Bei L nimmt die Masse des gelösten Salzes zwischen t1 und t2 ab.",
+        "fr": "De l'eau pure et de l'eau salée sont chauffées séparément sous la même pression extérieure ; les courbes température–temps obtenues sont notées K et L. Lesquelles des affirmations suivantes sont correctes ?\nI. La courbe K correspond à l'eau pure.\nII. Pour L, la température augmente entre t1 et t2 parce que la solution se concentre à mesure que l'eau s'évapore.\nIII. Pour L, la masse de sel dissous diminue entre t1 et t2.",
+        "ru": "Чистую воду и солёную воду нагревают по отдельности при одинаковом внешнем давлении; полученные графики зависимости температуры от времени обозначены K и L. Какие из следующих утверждений верны?\nI. Кривая K относится к чистой воде.\nII. В L температура между t1 и t2 растёт, потому что по мере испарения воды раствор становится концентрированнее.\nIII. В L масса растворённой соли между t1 и t2 уменьшается.",
+        "ar": "يُسخَّن الماء النقي والماء المالح كلٌّ على حدة تحت الضغط الخارجي نفسه، ورُمز لمنحنيي درجة الحرارة–الزمن الناتجين بـ K وL. أيّ العبارات الآتية صحيحة؟\nI. المنحنى K يعود إلى الماء النقي.\nII. في L ترتفع درجة الحرارة بين t1 وt2 لأن المحلول يزداد تركيزًا كلما تبخر الماء.\nIII. في L تقل كتلة الملح الذائب بين t1 وt2.",
+        "zh": "在相同外压下分别加热纯水和盐水，得到的温度–时间曲线分别标为 K 和 L。下列关于这两条曲线的说法中哪些正确？\nI. 曲线 K 属于纯水。\nII. L 在 t1–t2 之间温度升高，是因为水不断蒸发，溶液变浓。\nIII. L 在 t1–t2 之间溶解的盐的质量减少。",
+        "ku": "Di heman zexta derve de ava paqij û ava şor cuda cuda tên germkirin; grafîkên germahî–demê yên ku tên bidestxistin bi K û L hatine nîşankirin. Derbarê grafîkan de kîjan ji van gotinan rast in?\nI. Xêza K ya ava paqij e.\nII. Di L de di navbera t1–t2 de germahî zêde dibe, ji ber ku her ku av dibe buhar çareserî tîrtir dibe.\nIII. Di L de di navbera t1–t2 de girseya xwêya helandî kêm dibe."
       },
       "options": [
         {
-          "tr": "Tuzun buzla ısı açığa çıkaran bir kimyasal tepkime vermesi",
-          "en": "Salt undergoes a heat-releasing chemical reaction with ice",
-          "de": "Salz geht mit Eis eine wärmefreisetzende chemische Reaktion ein",
-          "fr": "Le sel subit avec la glace une réaction chimique qui dégage de la chaleur",
-          "ru": "Соль вступает со льдом в химическую реакцию с выделением тепла",
-          "ar": "يتفاعل الملح مع الجليد تفاعلًا كيميائيًا يطلق حرارة",
-          "zh": "盐与冰发生放热的化学反应",
-          "ku": "Xwê bi qeşayê re dikeve reaksiyoneke kîmyewî ya ku germê derdixe"
+          "tr": "Yalnız I",
+          "en": "I only",
+          "de": "Nur I",
+          "fr": "I seulement",
+          "ru": "Только I",
+          "ar": "I فقط",
+          "zh": "仅 I",
+          "ku": "Tenê I"
         },
         {
-          "tr": "Tuzlu suyun donmaya başlama sıcaklığının saf sudan düşük olması",
-          "en": "Salt water starts to freeze at a lower temperature than pure water",
-          "de": "Salzwasser beginnt bei niedrigerer Temperatur zu gefrieren als reines Wasser",
-          "fr": "L'eau salée commence à geler à une température plus basse que l'eau pure",
-          "ru": "Солёная вода начинает замерзать при более низкой температуре, чем чистая",
-          "ar": "يبدأ الماء المالح بالتجمد عند درجة أدنى من الماء النقي",
-          "zh": "盐水开始凝固的温度比纯水低",
-          "ku": "Ava şor di germahiyeke ji ava paqij nizmtir de dest bi cemidînê dike"
+          "tr": "I ve II",
+          "en": "I and II",
+          "de": "I und II",
+          "fr": "I et II",
+          "ru": "I и II",
+          "ar": "I و II",
+          "zh": "I 和 II",
+          "ku": "I û II"
         },
         {
-          "tr": "Tuzun suyun kaynama noktasını düşürmesi",
-          "en": "Salt lowers the boiling point of water",
-          "de": "Salz senkt den Siedepunkt des Wassers",
-          "fr": "Le sel abaisse la température d'ébullition de l'eau",
-          "ru": "Соль понижает температуру кипения воды",
-          "ar": "يخفض الملح درجة غليان الماء",
-          "zh": "盐降低水的沸点",
-          "ku": "Xwê xala kelîna avê nizm dike"
+          "tr": "I ve III",
+          "en": "I and III",
+          "de": "I und III",
+          "fr": "I et III",
+          "ru": "I и III",
+          "ar": "I و III",
+          "zh": "I 和 III",
+          "ku": "I û III"
         },
         {
-          "tr": "Tuzun buzu sıvılaşmadan doğrudan buhara dönüştürmesi",
-          "en": "Salt turns ice directly into vapour without melting",
-          "de": "Salz verwandelt Eis ohne Schmelzen direkt in Dampf",
-          "fr": "Le sel transforme la glace directement en vapeur sans fusion",
-          "ru": "Соль превращает лёд прямо в пар, минуя плавление",
-          "ar": "يحوّل الملح الجليد إلى بخار مباشرة دون أن ينصهر",
-          "zh": "盐使冰不经熔化直接变成水蒸气",
-          "ku": "Xwê qeşayê bêyî ku bihele rasterast dike buhar"
+          "tr": "II ve III",
+          "en": "II and III",
+          "de": "II und III",
+          "fr": "II et III",
+          "ru": "II и III",
+          "ar": "II و III",
+          "zh": "II 和 III",
+          "ku": "II û III"
         },
         {
-          "tr": "Tuzun buzun yoğunluğunu artırarak yol yüzeyinden uzaklaşmasını sağlaması",
-          "en": "Salt increases the density of ice so that it moves away from the road surface",
-          "de": "Salz erhöht die Dichte des Eises, sodass es sich von der Straßenoberfläche löst",
-          "fr": "Le sel augmente la masse volumique de la glace, qui quitte alors la surface de la route",
-          "ru": "Соль увеличивает плотность льда, и он уходит с поверхности дороги",
-          "ar": "يزيد الملح كثافة الجليد فيبتعد عن سطح الطريق",
-          "zh": "盐增大冰的密度，使冰离开路面",
-          "ku": "Xwê çiriya qeşayê zêde dike û wê ji rûyê rê dûr dixe"
+          "tr": "I, II ve III",
+          "en": "I, II and III",
+          "de": "I, II und III",
+          "fr": "I, II et III",
+          "ru": "I, II и III",
+          "ar": "I و II و III",
+          "zh": "I、II 和 III",
+          "ku": "I, II û III"
         }
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Tuz, buz yüzeyindeki ince su tabakasında çözünerek tuzlu su oluşturur. Çözünmüş tanecikler suyun donma noktasını düşürür; bu yüzden tuzlu su 0 °C'nin altındaki sıcaklıklarda da sıvı kalır ve buz erir. Bu bir kimyasal tepkime değil, çözeltinin fiziksel bir (koligatif) özelliğidir; ayrıca çözünen madde kaynama noktasını düşürmez, yükseltir.",
-        "en": "Salt dissolves in the thin water film on the ice and forms salt water. Dissolved particles lower the freezing point of water, so salt water stays liquid even below 0 °C and the ice melts. This is not a chemical reaction but a physical (colligative) property of the solution; moreover, a dissolved substance raises the boiling point rather than lowering it.",
-        "de": "Salz löst sich im dünnen Wasserfilm auf dem Eis und bildet Salzwasser. Gelöste Teilchen senken den Gefrierpunkt des Wassers, daher bleibt Salzwasser auch unter 0 °C flüssig und das Eis schmilzt. Das ist keine chemische Reaktion, sondern eine physikalische (kolligative) Eigenschaft der Lösung; außerdem erhöht ein gelöster Stoff den Siedepunkt, statt ihn zu senken.",
-        "fr": "Le sel se dissout dans le mince film d'eau à la surface de la glace et forme de l'eau salée. Les particules dissoutes abaissent la température de congélation de l'eau : l'eau salée reste liquide même en dessous de 0 °C et la glace fond. Ce n'est pas une réaction chimique mais une propriété physique (colligative) de la solution ; de plus, un soluté élève la température d'ébullition au lieu de l'abaisser.",
-        "ru": "Соль растворяется в тонкой плёнке воды на льду, образуя солёную воду. Растворённые частицы понижают температуру замерзания воды, поэтому солёная вода остаётся жидкой и ниже 0 °C, и лёд тает. Это не химическая реакция, а физическое (коллигативное) свойство раствора; кроме того, растворённое вещество повышает, а не понижает температуру кипения.",
-        "ar": "يذوب الملح في الطبقة الرقيقة من الماء على سطح الجليد مكوّنًا ماءً مالحًا. والدقائق المذابة تخفض درجة تجمد الماء، فيبقى الماء المالح سائلًا حتى دون 0 °C وينصهر الجليد. وهذا ليس تفاعلًا كيميائيًا بل خاصية فيزيائية (تجميعية) للمحلول؛ كما أن المذاب يرفع درجة الغليان ولا يخفضها.",
-        "zh": "盐溶解在冰面上的一层薄水中形成盐水。溶解的粒子使水的凝固点降低，所以盐水在0 °C以下仍保持液态，冰随之融化。这不是化学反应，而是溶液的物理（依数）性质；另外，溶质会使沸点升高而不是降低。",
-        "ku": "Xwê di qata zirav a avê ya li ser qeşayê de dihele û ava şor çêdike. Perçeyên helbûyî xala cemidînê ya avê nizm dikin; ji ber vê yekê ava şor di bin 0 °C de jî şile dimîne û qeşa dihele. Ev ne reaksiyoneke kîmyewî ye, taybetmendiyeke fîzîkî (kolîgatîf) ya çareseriyê ye; herwiha madeya helbûyî xala kelînê nizm nake, bilind dike."
+        "tr": "K, kaynama başladıktan sonra 100 °C'de sabit kalır; kaynama süresince sıcaklığın sabit kalması saf maddeye özgüdür, K saf sudur (I doğru). L 100 °C'nin üzerinde kaynamaya başlar ve t1–t2 aralığında sıcaklığı artar: su buharlaştıkça uçucu olmayan tuzun derişimi artar ve kaynama sıcaklığı yükselir (II doğru). Tuz uçucu olmadığından t1–t2 aralığında çözünmüş tuz kütlesi değişmez, yalnızca su azalır. t2'de çözelti doygun hâle gelir; bundan sonra tuz çökerken derişim ve sıcaklık sabit kalır (III yanlış).",
+        "en": "After boiling starts, K stays constant at 100 °C; a constant temperature during boiling is characteristic of a pure substance, so K is pure water (I correct). L starts boiling above 100 °C and its temperature rises between t1 and t2: as water evaporates the non-volatile salt becomes more concentrated and the boiling temperature rises (II correct). Because the salt is non-volatile, the mass of dissolved salt does not change between t1 and t2; only the water decreases. At t2 the solution becomes saturated; after that, salt precipitates while the concentration and temperature remain constant (III incorrect).",
+        "de": "Nach Siedebeginn bleibt K bei 100 °C konstant; eine konstante Temperatur während des Siedens ist typisch für einen Reinstoff, K ist also reines Wasser (I richtig). L beginnt oberhalb von 100 °C zu sieden, und seine Temperatur steigt zwischen t1 und t2: Beim Verdampfen des Wassers wird das nichtflüchtige Salz konzentrierter, und die Siedetemperatur steigt (II richtig). Da das Salz nicht flüchtig ist, ändert sich die Masse des gelösten Salzes zwischen t1 und t2 nicht; nur das Wasser nimmt ab. Bei t2 ist die Lösung gesättigt; danach fällt Salz aus, während Konzentration und Temperatur konstant bleiben (III falsch).",
+        "fr": "Une fois l'ébullition commencée, K reste constante à 100 °C ; une température constante pendant l'ébullition caractérise un corps pur : K est l'eau pure (I correcte). L commence à bouillir au-dessus de 100 °C et sa température augmente entre t1 et t2 : l'eau s'évaporant, le sel non volatil se concentre et la température d'ébullition s'élève (II correcte). Le sel n'étant pas volatil, la masse de sel dissous ne change pas entre t1 et t2 ; seule l'eau diminue. À t2, la solution devient saturée ; ensuite le sel précipite tandis que la concentration et la température restent constantes (III fausse).",
+        "ru": "После начала кипения K остаётся при 100 °C; постоянная температура при кипении характерна для чистого вещества, значит K — чистая вода (I верно). L начинает кипеть выше 100 °C, и между t1 и t2 её температура растёт: по мере испарения воды концентрация нелетучей соли увеличивается и температура кипения повышается (II верно). Соль нелетуча, поэтому масса растворённой соли между t1 и t2 не меняется — уменьшается только вода. В момент t2 раствор становится насыщенным; далее соль выпадает в осадок, а концентрация и температура остаются постоянными (III неверно).",
+        "ar": "بعد بدء الغليان يبقى K ثابتًا عند 100 °C، وثبات درجة الحرارة أثناء الغليان صفة المادة النقية، فـ K هو الماء النقي (I صحيحة). يبدأ L بالغليان فوق 100 °C وترتفع درجة حرارته بين t1 وt2: كلما تبخر الماء ازداد تركيز الملح غير المتطاير وارتفعت درجة الغليان (II صحيحة). وبما أن الملح غير متطاير فإن كتلة الملح الذائب لا تتغير بين t1 وt2، بل يقل الماء فقط. وعند t2 يصبح المحلول مشبعًا، وبعدها يترسب الملح بينما يبقى التركيز ودرجة الحرارة ثابتين (III خاطئة).",
+        "zh": "开始沸腾后，K 保持在 100 °C 不变；沸腾时温度恒定是纯净物的特征，所以 K 是纯水（I 正确）。L 在高于 100 °C 时开始沸腾，在 t1–t2 之间温度升高：水不断蒸发，不挥发的盐浓度增大，沸腾温度升高（II 正确）。盐不挥发，所以 t1–t2 之间溶解的盐的质量不变，减少的只是水。t2 时溶液达到饱和，此后盐析出，而浓度和温度保持不变（III 错误）。",
+        "ku": "Piştî ku kelîn dest pê dike, K li 100 °C sabit dimîne; sabitbûna germahiyê di dema kelînê de taybetiya madeya paqij e, loma K ava paqij e (I rast e). L li jor 100 °C dest bi kelînê dike û di navbera t1–t2 de germahiya wê zêde dibe: her ku av dibe buhar, tîrbûna xwêya nefirî zêde dibe û germahiya kelînê bilind dibe (II rast e). Ji ber ku xwê nafire, di navbera t1–t2 de girseya xwêya helandî naguhere; tenê av kêm dibe. Di t2 de çareserî têr dibe; piştî wê xwê dinişe û tîrbûn û germahî sabit dimînin (III xelet e)."
+      },
+      "figure": {
+        "kind": "graph",
+        "xLabel": {
+          "tr": "Zaman",
+          "en": "Time",
+          "de": "Zeit",
+          "fr": "Temps",
+          "ru": "Время",
+          "ar": "الزمن",
+          "zh": "时间",
+          "ku": "Dem"
+        },
+        "yLabel": {
+          "tr": "Sıcaklık (°C)",
+          "en": "Temperature (°C)",
+          "de": "Temperatur (°C)",
+          "fr": "Température (°C)",
+          "ru": "Температура (°C)",
+          "ar": "درجة الحرارة (°C)",
+          "zh": "温度 (°C)",
+          "ku": "Germahî (°C)"
+        },
+        "xMax": 12,
+        "yMax": 112,
+        "yMin": 80,
+        "yTicks": [
+          100
+        ],
+        "xTicks": [
+          {
+            "v": 4.4,
+            "label": "t₁"
+          },
+          {
+            "v": 8,
+            "label": "t₂"
+          }
+        ],
+        "series": [
+          {
+            "points": [
+              [
+                0,
+                84
+              ],
+              [
+                4,
+                100
+              ],
+              [
+                12,
+                100
+              ]
+            ],
+            "label": "K",
+            "tone": 0
+          },
+          {
+            "points": [
+              [
+                0,
+                82
+              ],
+              [
+                4.4,
+                102
+              ],
+              [
+                8,
+                108
+              ],
+              [
+                12,
+                108
+              ]
+            ],
+            "label": "L",
+            "tone": 1,
+            "dashed": true
+          }
+        ]
       }
     },
     {

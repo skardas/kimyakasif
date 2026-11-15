@@ -1680,9 +1680,15 @@ export function getAllUnitDiagramSpecs(unitId: string, lang: LanguageCode): [Que
 const STOP_STEMS = new Set(['olan', 'daha', 'gibi', 'için', 'veya', 'arası', 'sonra', 'değil', 'kadar', 'olarak', 'which', 'their', 'there', 'about', 'between', 'with', 'from', 'that', 'this', 'into']);
 
 /** Crude language-agnostic content stems (first 5 letters of words with >= 4 letters). */
+const SUB_SUP_DIGITS: Record<string, string> = {
+  '₀': '0', '₁': '1', '₂': '2', '₃': '3', '₄': '4', '₅': '5', '₆': '6', '₇': '7', '₈': '8', '₉': '9',
+  '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9',
+};
+
 function contentStems(text: string): Set<string> {
   const out = new Set<string>();
-  for (const w of (text || '').toLocaleLowerCase('tr').split(/[^\p{L}\p{N}]+/u)) {
+  const plain = (text || '').replace(/[₀-₉⁰¹²³⁴-⁹]/g, (d) => SUB_SUP_DIGITS[d] ?? d);
+  for (const w of plain.toLocaleLowerCase('tr').split(/[^\p{L}\p{N}]+/u)) {
     if (w.length < 4 || STOP_STEMS.has(w)) continue;
     out.add(w.slice(0, 5));
   }
@@ -1707,16 +1713,32 @@ function diagramGivesAway(q: CompiledQuestion, spec: QuestionDiagramSpec): boole
   // question whose answer is "Geçici Sertlik") gives the answer away outright.
   const key = (q.options[q.correctIndex] || '').replace(/\s*[（(][^）)]*[）)]/g, '').trim().toLocaleLowerCase('tr');
   const figureText = `${spec.title} ${spec.caption} ${Object.values(spec.labels || {}).join(' ')}`.toLocaleLowerCase('tr');
+  const figStems = contentStems(figureText);
   if (key.length >= 4 && key.length <= 40) {
     if (figureText.includes(key)) return true;
     const keyStems = contentStems(key);
-    const figStems = contentStems(figureText);
     if (keyStems.size > 0 && [...keyStems].every((k) => figStems.has(k))) return true;
+    // A keyed concept any of whose words the figure prints (e.g. "Katalizör Eklenmesi" next to a label
+    // on what a catalyst does) points at the answer too.
+    const shown = [...keyStems].filter((k) => figStems.has(k)).length;
+    if (isConceptMatch(q) && shown > 0) return true;
+    // Short symbols count too (e.g. key "XY Tipi Tuz" next to a label "XY: Kçç = s²").
+    if (isConceptMatch(q)) {
+      const figTokens = new Set(figureText.split(/[^\p{L}\p{N}]+/u));
+      const keyTokens = key.split(/[^\p{L}\p{N}]+/u).filter((t) => t.length >= 2 && !['ve', 'ile', 'ise', 'bir', 'de', 'da'].includes(t));
+      if (keyTokens.some((t) => figTokens.has(t))) return true;
+    }
   }
+  // Ordering questions are keyed by a permutation: a figure restating one step does not reveal the order.
+  if (/→/.test(q.options[q.correctIndex] || '') && q.options.every((o) => /→/.test(o))) return false;
   const cap = contentStems(spec.caption);
   if (cap.size === 0) return false;
   for (const st of questionStatements(q)) {
     const s = contentStems(st);
+    // A statement naming a formula the figure also prints, plus another of its words (e.g. "Zaç yağı
+    // HNO3 formülüne sahiptir" next to "zaç yağı (H₂SO₄) ve kezzap (HNO₃)"), is settled by the figure.
+    const sharedFig = [...s].filter((x) => figStems.has(x));
+    if (sharedFig.length >= 2 && sharedFig.some((x) => /\d/.test(x) && /\p{L}/u.test(x))) return true;
     let shared = 0;
     for (const c of cap) if (s.has(c)) shared++;
     if (shared >= 3 && shared / cap.size >= 0.4) return true;
@@ -1733,9 +1755,140 @@ function diagramRelevance(q: CompiledQuestion, spec: QuestionDiagramSpec): numbe
 }
 
 /**
+ * What each unit's figure actually SHOWS, as lowercase Turkish substring fragments
+ * ([primary figure, secondary figure]). A generic figure is attached only to a question that is
+ * about what the figure draws: its stem names the topic (tier 3) or most of the statements the
+ * student judges do (tier 2). Fragments were checked against each template's title, caption and
+ * labels and against the unit renderer in ChemicalDiagram.tsx (label-only text that the renderer
+ * does not draw is not counted as a topic).
+ */
+const FIGURE_TOPIC: Record<string, [string[], string[]]> = {
+  // u01: burette, Erlenmeyer, volumetric flask, separatory funnel · alembic distillation
+  u01: [
+    ['büret', 'erlenmayer', 'balon joje', 'ayırma hunisi', 'cam malzeme', 'laboratuvar malzeme', 'standart çözelti hazırla'],
+    ['imbik', 'cabir', 'zaç yağı', 'kezzap', 'damıtma düzene', 'basit damıtma'],
+  ],
+  // u02: Bohr levels and photon emission · periodic trends
+  u02: [
+    ['bohr', 'enerji düzey', 'foton', 'uyarıl', 'ışıma', 'temel hâl', 'temel hal', 'spektrum', 'yörünge'],
+    ['yarıçap', 'iyonlaşma enerji', 'elektronegatif', 'metalik özellik', 'metalik karakter', 'periyodik özellik', 'periyodik değişim'],
+  ],
+  // u03: ionic / covalent bond, dipole–dipole, hydrogen bond · hydrogen bonds in water and ice
+  u03: [
+    ['iyonik bağ', 'kovalent bağ', 'dipol', 'hidrojen bağ', 'elektron aktar', 'ortaklaş'],
+    ['hidrojen bağ', 'buzun', 'buz ', 'su anomali', 'suyun kaynama'],
+  ],
+  // u04: heating curve of water · vapour pressure and boiling point
+  u04: [
+    ['ısınma eğri', 'soğuma eğri', 'hâl değişim', 'hal değişim', 'erime', 'donma'],
+    ['buhar basınc', 'kaynama', 'dış basınç', 'uçucu', 'kapalı kaptaki sıvı'],
+  ],
+  // u05: water hardness and softening · greenhouse effect and acid rain
+  u05: [
+    ['sert su', 'sertlik', 'yumuşak su', 'yumuşat', 'iyon değiştir', 'kazan taşı'],
+    ['sera', 'asit yağmur', 'küresel ısınma', 'fosil yakıt'],
+  ],
+  // u06: conservation of mass and definite proportions · mole map
+  u06: [
+    ['kütlenin korunum', 'sabit oran', 'lavoisier', 'proust', 'kütlece birleşme oran'],
+    ['mol sayı', 'avogadro', '22,4', 'tanecik sayı', 'normal koşul', 'mol kavram'],
+  ],
+  // u07: limiting reactant · precipitation and net ionic equation
+  u07: [
+    ['sınırlayıcı', 'artan madde', 'verim', 'tükenen'],
+    ['çözünme-çökelme', 'çökelme', 'net iyon', 'seyirci', 'çökelek'],
+  ],
+  // u08: fractional distillation · separatory funnel
+  u08: [
+    ['ayrımsal damıtma', 'damıtma', 'soğutucu'],
+    ['ayırma hunisi', 'yoğunluk fark', 'birbiri içinde çözünmeyen', 'birbirine karışmayan'],
+  ],
+  // u09: pH scale and neutralisation · gases from metals with acids
+  u09: [
+    ['ph', 'nötralleş', 'asidik', 'bazik'],
+    ['aktif metal', 'soy metal', 'amfoter', 'h2 gazı', 'h₂ gazı', 'metal–asit', 'metal-asit', 'asitlerle ayrıl'],
+  ],
+  // u10: soap micelle · addition polymers
+  u10: [
+    ['sabun', 'misel', 'deterjan', 'hidrofil', 'hidrofob'],
+    ['polimer', 'monomer', 'polietilen', 'pvc', 'teflon'],
+  ],
+  // u11: orbital shapes and Pauli · Cr / Cu orbital diagrams, Aufbau and Hund
+  u11: [
+    ['orbitalin şekl', 'orbital şekl', 'kuantum sayı', 'pauli', 'açısal momentum'],
+    ['aufbau', 'hund', 'küresel simetri', 'yarı dolu', 'tam dolu', 'elektron dizilim', 'orbital enerji sıra'],
+  ],
+  // u12: piston, Boyle and Charles graphs · manometers
+  u12: [
+    ['boyle', 'charles', 'piston', 'ideal gaz', 'birleşik gaz'],
+    ['manometre', 'açık hava basınc', 'barometre'],
+  ],
+  // u13: Graham diffusion · Dalton partial pressures and gas over water
+  u13: [
+    ['graham', 'difüz', 'efüz', 'yayılma hız'],
+    ['kısmi basınç', 'dalton', 'su üstünde', 'suyun üstünde', 'mol kesri', 'toplam basınç', 'kuru gaz'],
+  ],
+  // u14: concentration units · ion concentrations of a dissolved salt
+  u14: [
+    ['molarite', 'molar derişim', 'derişim birim', 'balon joje', 'seyreltme'],
+    ['iyon derişim', 'tamamen iyonlaş', 'toplam iyon'],
+  ],
+  // u15: boiling/freezing shift curves · solubility curves
+  u15: [
+    ['koligatif', 'kaynama noktası', 'donma noktası', 'kaynamaya başlama', 'donmaya başlama', 'tuzlu suyun ısıtılması'],
+    ['çözünürlük', 'henry', 'doymuş'],
+  ],
+  // u16: energy profile with Eai / Eag · Hess enthalpy levels
+  u16: [
+    ['aktifleşme', 'eşik enerji', 'potansiyel enerji', 'aktifleşmiş kompleks', 'tepkimenin ilerleyiş'],
+    ['hess', 'oluşum entalpi', 'standart oluşum'],
+  ],
+  // u17: catalysed vs uncatalysed energy profile · two-step mechanism profile
+  u17: [
+    ['katalizör', 'aktifleşme enerji', 'eşik enerji'],
+    ['yavaş basamak', 'mekanizma', 'hız denklem', 'ara ürün', 'hızı belirleyen'],
+  ],
+  // u18: Le Chatelier shift after adding N₂ · reaction quotient Qc vs Kc
+  u18: [
+    ['le chatelier', 'dengeye etki', 'denge kay', 'dengeyi boz'],
+    ['qc', 'denge kesri', 'tepkime kesri'],
+  ],
+  // u19: strong acid–strong base titration curve · weak acid ionisation and buffer
+  u19: [
+    ['titrasyon', 'eşdeğerlik', 'büret'],
+    ['zayıf asit', 'tampon', 'iyonlaşma yüzde'],
+  ],
+  // u20: Ksp and precipitation · common-ion effect
+  u20: [
+    ['kçç', 'çözünürlük çarp', 'çökelme', 'iyon çarpım'],
+    ['ortak iyon'],
+  ],
+  // u21: Daniell cell · concentration cell
+  u21: [
+    ['daniell', 'galvanik', 'tuz köprü', 'elektron akış', 'pil potansiyel'],
+    ['derişim pil', 'derişim değişiminin pil'],
+  ],
+  // u22: Hoffman water electrolysis · Faraday, sacrificial anode and plating
+  u22: [
+    ['suyun elektroliz', 'hoffman'],
+    ['faraday', 'kurban', 'korozyon', 'kaplama', 'katodik koruma'],
+  ],
+  // u23: VSEPR geometries and bond angles · carbon allotropes
+  u23: [
+    ['vsepr', 'geometri', 'bağ açı', 'doğrusal', 'düzlem üçgen', 'dörtyüzlü', 'piramit', 'kırık doğru'],
+    ['elmas', 'grafit', 'grafen', 'nanotüp', 'allotrop'],
+  ],
+  // u24: functional groups · Markovnikov addition and Tollens test
+  u24: [
+    ['fonksiyonel grup', 'alkol', 'eter', 'aldehit', 'keton', 'karboksilik', 'ester'],
+    ['markovnikov', 'tollens', 'gümüş ayna'],
+  ],
+};
+
+/**
  * Topics a unit's figure does not illustrate, as lowercase Turkish stem fragments
- * ([primary figure, secondary figure]). A question whose stem names one of them is only given
- * that figure when the set has no better candidate left, so the 2 + 2 per set count never changes.
+ * ([primary figure, secondary figure]). A question whose stem names one of them never gets that
+ * figure, whatever its topic tier (a veto).
  */
 const FIGURE_OFF_TOPIC: Record<string, [string[], string[]]> = {
   // u01: four pieces of glassware · alembic distillation
@@ -1751,7 +1904,7 @@ const FIGURE_OFF_TOPIC: Record<string, [string[], string[]]> = {
   // u03: ionic / covalent bond, dipole–dipole, hydrogen bond · hydrogen bonds in water and ice
   u03: [
     ['london', 'buz'],
-    ['iyonik bağ', 'london', 'kovalent bağ', 'metalik bağ', 'lewis'],
+    ['iyonik bağ', 'london', 'metalik bağ', 'lewis'],
   ],
   // u04: heating curve of water · vapour pressure and boiling point
   u04: [
@@ -1818,67 +1971,254 @@ const FIGURE_OFF_TOPIC: Record<string, [string[], string[]]> = {
     ['bağ enerji', 'hess', 'oluşum entalpi', 'kalorimetre'],
     ['bağ enerji', 'aktifleş', 'potansiyel enerji grafiği', 'kalorimetre'],
   ],
+  // u17: catalysed vs uncatalysed profile · two-step mechanism
+  u17: [
+    ['yavaş basamak', 'mekanizma', 'ara ürün', 'tepkime derece', 'hız denklem'],
+    ['katalizörün', 'heterojen katalizör', 'inhibitör', 'enzim'],
+  ],
+  // u18: Le Chatelier shift · reaction quotient
+  u18: [
+    ['denge kesri', 'tepkime kesri', 'qc'],
+    ['le chatelier'],
+  ],
+  // u19: strong acid–strong base titration · weak acid and buffer
+  u19: [
+    ['tampon', 'zayıf asit', 'zayıf baz', 'hidroliz', 'pka'],
+    ['kuvvetli asit ile kuvvetli baz', 'kuvvetli asit-kuvvetli baz'],
+  ],
+  // u20: Ksp and precipitation · common-ion effect
+  u20: [
+    ['ortak iyon'],
+    ['108s', '4s³', 'iyon çarpım'],
+  ],
+  // u21: Daniell cell · concentration cell
+  u21: [
+    ['derişim pil', 'elektroliz', 'faraday'],
+    ['daniell', 'elektroliz', 'faraday', 'korozyon'],
+  ],
+  // u22: water electrolysis · Faraday, sacrificial anode, plating
+  u22: [
+    ['faraday', 'kurban', 'kaplama', 'korozyon', 'galvanik'],
+    ['suyun elektroliz', 'hoffman', 'galvanik'],
+  ],
+  // u23: VSEPR geometry · carbon allotropes
+  u23: [
+    ['elmas', 'grafit', 'grafen', 'nanotüp', 'allotrop'],
+    ['vsepr', 'geometri', 'bağ açı', 'piramit', 'dörtyüzlü'],
+  ],
+  // u24: functional groups · Markovnikov and Tollens
+  u24: [
+    ['markovnikov', 'tollens', 'alkin', 'alken'],
+    ['eter', 'ester', 'karboksilik', 'izomer'],
+  ],
 };
+
+const lowerTr = (s: string) => (s || '').toLocaleLowerCase('tr');
 
 function figureOffTopic(unitId: string, variantIdx: 0 | 1, q: CompiledQuestion): boolean {
   const fragments = FIGURE_OFF_TOPIC[unitId]?.[variantIdx];
   if (!fragments || fragments.length === 0) return false;
-  const stem = q.stem.toLocaleLowerCase('tr');
+  const stem = lowerTr(q.stem);
   return fragments.some((f) => stem.includes(f));
 }
 
-/** Diagram placement (question id -> variant) decided once per unit on the Turkish bank. */
-export type DiagramPlacement = Map<string, 1 | 2>;
+const STATEMENT_LINE = /^\s*(?:I|II|III|IV|V|\d+)\.\s/;
+
+/** The stem without its I./II./III. (and 1./2./3.) statement lines: the part that frames the question. */
+function stemFrame(q: CompiledQuestion): string {
+  return q.stem.split('\n').filter((l) => !STATEMENT_LINE.test(l)).join('\n');
+}
+
+/** The I./II./III. lines a roman-numeral question asks the student to judge. */
+function romanLines(q: CompiledQuestion): string[] {
+  return q.stem.split('\n').filter((l) => /^(I|II|III|IV)\.\s/.test(l)).map((l) => l.replace(/^[IV]+\.\s*/, ''));
+}
+
+function countFragments(text: string, fragments: string[]): number {
+  const t = lowerTr(text);
+  let n = 0;
+  for (const f of fragments) if (t.includes(f)) n++;
+  return n;
+}
+
+/** "Bu kavram" matching questions: the stem describes the keyed concept. */
+function isConceptMatch(q: CompiledQuestion): boolean {
+  return /["“«][^"”»]*["”»]/.test(q.stem) && /bu kavram/i.test(q.stem);
+}
+
+export type TopicTier = 0 | 2 | 3;
 
 /**
- * Chooses, in every 16-question set, 2 questions for the unit's primary diagram and 2 for the
- * secondary one (32 per unit, 16 + 16), preferring the questions whose content matches the
- * diagram's topic and never attaching a diagram whose caption gives away the answer. ÖSYM twins
- * keep their authored form (no generic figure attached).
+ * How closely a question (Turkish text) is about what the unit's figure shows:
+ *  3 — the question frame (stem without its numbered statement lines) names the figure's topic;
+ *  2 — at least 3 of the 5 options, or 2 of the 3 roman-numeral statements, are about it;
+ *  0 — otherwise, or when the only topic hit is the keyed option (the figure would point at the answer).
  */
-export function planDiagramPlacement(
-  unit: ChemistryUnitSeedData,
-  questions: CompiledQuestion[],
-  lang: LanguageCode
-): DiagramPlacement {
-  const specs = getAllUnitDiagramSpecs(unit.id, lang);
-  const placement: DiagramPlacement = new Map();
-  const bySet = new Map<number, CompiledQuestion[]>();
+export function topicTier(q: CompiledQuestion, unitId: string, variantIdx: 0 | 1): { tier: TopicTier; hits: number } {
+  const fragments = FIGURE_TOPIC[unitId]?.[variantIdx] ?? [];
+  if (fragments.length === 0) return { tier: 0, hits: 0 };
+  const optionHits = q.options.map((o) => countFragments(o, fragments) > 0);
+  const lines = romanLines(q);
+  const lineHits = lines.map((l) => countFragments(l, fragments) > 0);
+  const hits = countFragments(`${q.stem}\n${q.options.join('\n')}`, fragments);
+  const keyHit = optionHits[q.correctIndex];
+  // A concept-matching question whose keyed concept is itself the figure's topic: the figure names the answer.
+  if (isConceptMatch(q) && keyHit) return { tier: 0, hits };
+  if (countFragments(stemFrame(q), fragments) > 0) return { tier: 3, hits };
+  // The options of a concept-matching question are bare concept names (distractors), not statements.
+  if (isConceptMatch(q)) return { tier: 0, hits };
+  const optionCount = optionHits.filter(Boolean).length;
+  if (lines.length >= 3 && lineHits.filter(Boolean).length >= 2) return { tier: 2, hits };
+  if (optionCount >= 3) return { tier: 2, hits };
+  return { tier: 0, hits };
+}
+
+/** Questions that never get a generic figure: ÖSYM twins and questions carrying their own figure. */
+const keepsOwnForm = (q: CompiledQuestion) => q.archetype === 'osym-twin' || q.figure !== undefined;
+
+const legacySlot = (q: CompiledQuestion) => {
+  const qInSet = ((q.questionNumberInUnit - 1) % 16) + 1;
+  return qInSet === 1 || qInSet === 5 || qInSet === 9 || qInSet === 13 ? 1 : 0;
+};
+
+const setIndex = (q: CompiledQuestion) => Math.floor((q.questionNumberInUnit - 1) / 16);
+
+/** At most this many questions per figure variant in one 16-question set. */
+export const MAX_DIAGRAMS_PER_VARIANT_PER_SET = 2;
+
+interface PlacementCandidate {
+  q: CompiledQuestion;
+  variantIdx: 0 | 1;
+  safe: boolean;
+  offTopic: boolean;
+  legacyRel: number;
+  tier: TopicTier;
+  hits: number;
+}
+
+function evaluateCandidates(unit: ChemistryUnitSeedData, questions: CompiledQuestion[]): PlacementCandidate[] {
+  const specs = getAllUnitDiagramSpecs(unit.id, 'tr');
+  const out: PlacementCandidate[] = [];
   for (const q of questions) {
-    const s = Math.floor((q.questionNumberInUnit - 1) / 16);
-    if (!bySet.has(s)) bySet.set(s, []);
-    bySet.get(s)!.push(q);
-  }
-  const legacySlot = (q: CompiledQuestion) => {
-    const qInSet = ((q.questionNumberInUnit - 1) % 16) + 1;
-    return qInSet === 1 || qInSet === 5 || qInSet === 9 || qInSet === 13 ? 1 : 0;
-  };
-  for (const setQs of bySet.values()) {
-    const taken = new Set<string>();
+    if (keepsOwnForm(q)) continue;
     for (const variantIdx of [0, 1] as const) {
       const spec = specs[variantIdx];
-      const ranked = setQs
-        .filter((q) => q.archetype !== 'osym-twin' && !taken.has(q.id))
-        .map((q) => ({ q, safe: !diagramGivesAway(q, spec), fits: !figureOffTopic(unit.id, variantIdx, q), rel: diagramRelevance(q, spec) }))
-        .sort((a, b) =>
-          Number(b.safe) - Number(a.safe) ||
-          Number(b.fits) - Number(a.fits) ||
-          b.rel - a.rel ||
-          legacySlot(b.q) - legacySlot(a.q) ||
-          a.q.questionNumberInUnit - b.q.questionNumberInUnit);
-      for (const entry of ranked.slice(0, 2)) {
-        taken.add(entry.q.id);
-        placement.set(entry.q.id, (variantIdx + 1) as 1 | 2);
+      const { tier, hits } = topicTier(q, unit.id, variantIdx);
+      out.push({
+        q,
+        variantIdx,
+        safe: !diagramGivesAway(q, spec),
+        offTopic: figureOffTopic(unit.id, variantIdx, q),
+        legacyRel: diagramRelevance(q, spec),
+        tier,
+        hits,
+      });
+    }
+  }
+  return out;
+}
+
+const isEligible = (c: PlacementCandidate) => c.safe && !c.offTopic && c.tier >= 2;
+
+function choosePlacement(candidates: PlacementCandidate[]): DiagramPlacement {
+  const placement: DiagramPlacement = new Map();
+  const eligible = candidates.filter(isEligible);
+  const eligibleVariants = new Map<string, number>();
+  for (const c of eligible) eligibleVariants.set(c.q.id, (eligibleVariants.get(c.q.id) ?? 0) + 1);
+  const bySet = new Map<number, [PlacementCandidate[], PlacementCandidate[]]>();
+  for (const c of eligible) {
+    const s = setIndex(c.q);
+    if (!bySet.has(s)) bySet.set(s, [[], []]);
+    bySet.get(s)![c.variantIdx].push(c);
+  }
+  // Within a variant: closest to the topic first; a question only this figure fits before one both fit.
+  const rank = (a: PlacementCandidate, b: PlacementCandidate) =>
+    b.tier - a.tier ||
+    (eligibleVariants.get(a.q.id) ?? 0) - (eligibleVariants.get(b.q.id) ?? 0) ||
+    b.hits - a.hits ||
+    legacySlot(b.q) - legacySlot(a.q) ||
+    a.q.questionNumberInUnit - b.q.questionNumberInUnit;
+  for (const [, lists] of [...bySet.entries()].sort((a, b) => a[0] - b[0])) {
+    lists[0].sort(rank);
+    lists[1].sort(rank);
+    const used = [0, 0];
+    // The two figures take turns, the one with fewer fitting questions left choosing first, so a
+    // question both fit does not starve the other figure.
+    const left = (v: 0 | 1) => lists[v].filter((c) => !placement.has(c.q.id)).length;
+    for (let round = 0; round < MAX_DIAGRAMS_PER_VARIANT_PER_SET; round++) {
+      const order: (0 | 1)[] = left(1) < left(0) ? [1, 0] : [0, 1];
+      for (const v of order) {
+        if (used[v] >= MAX_DIAGRAMS_PER_VARIANT_PER_SET) continue;
+        const next = lists[v].find((c) => !placement.has(c.q.id));
+        if (!next) continue;
+        placement.set(next.q.id, (v + 1) as 1 | 2);
+        used[v]++;
       }
     }
   }
   return placement;
 }
 
+/** Diagram placement (question id -> variant) decided once per unit on the Turkish bank. */
+export type DiagramPlacement = Map<string, 1 | 2>;
+
+export interface DiagramPlacementExplanation {
+  id: string;
+  set: number;
+  archetype: CompiledQuestion['archetype'];
+  variant: 1 | 2;
+  attached: boolean;
+  safe: boolean;
+  offTopic: boolean;
+  legacyRel: number;
+  topicTier: TopicTier;
+  hits: number;
+  stem: string;
+  key: string;
+}
+
 /**
- * Enriches figure-applicable questions within a unit with interactive animated diagrams
- * (exactly 32 per 128 questions: 16 primary + 16 secondary). Pass `placement` (computed on the
- * Turkish bank) so every language attaches the figure to the same question ids.
+ * Pure audit view of the placement on a Turkish question list: one row per (non-twin, figure-free
+ * question, variant) with the signals the planner used and whether that variant was attached.
+ */
+export function explainDiagramPlacement(
+  unit: ChemistryUnitSeedData,
+  questions: CompiledQuestion[]
+): DiagramPlacementExplanation[] {
+  const candidates = evaluateCandidates(unit, questions);
+  const placement = choosePlacement(candidates);
+  return candidates.map((c) => ({
+    id: c.q.id,
+    set: setIndex(c.q) + 1,
+    archetype: c.q.archetype,
+    variant: (c.variantIdx + 1) as 1 | 2,
+    attached: placement.get(c.q.id) === c.variantIdx + 1,
+    safe: c.safe,
+    offTopic: c.offTopic,
+    legacyRel: c.legacyRel,
+    topicTier: c.tier,
+    hits: c.hits,
+    stem: stemFrame(c.q).replace(/\s+/g, ' ').trim().slice(0, 90),
+    key: c.q.options[c.q.correctIndex] ?? '',
+  }));
+}
+
+/**
+ * Chooses, in every 16-question set, up to 2 questions for the unit's primary diagram and up to 2
+ * for the secondary one. Only questions about what the figure shows (topic tier ≥ 2), not vetoed as
+ * off-topic and whose answer the figure does not give away are eligible; there is no forced fill, so
+ * a set with no fitting question gets no figure. ÖSYM twins and questions with their own figure keep
+ * their authored form. Always computed on the Turkish bank and reused for every language.
+ */
+export function planDiagramPlacement(unit: ChemistryUnitSeedData, questions: CompiledQuestion[]): DiagramPlacement {
+  return choosePlacement(evaluateCandidates(unit, questions));
+}
+
+/**
+ * Enriches the on-topic questions of a unit with the unit's animated diagrams (at most 2 + 2 per
+ * 16-question set). Pass `placement` (computed on the Turkish bank) so every language attaches the
+ * figure to the same question ids. Without it the plan is computed from `questions`, which is only
+ * meaningful for the Turkish bank, so other languages must pass the Turkish placement.
  */
 export function enrichQuestionsWithDiagrams(
   unit: ChemistryUnitSeedData,
@@ -1886,8 +2226,11 @@ export function enrichQuestionsWithDiagrams(
   lang: LanguageCode,
   placement?: DiagramPlacement
 ): CompiledQuestion[] {
+  if (!placement && lang !== 'tr') {
+    throw new Error(`enrichQuestionsWithDiagrams(${unit.id}, ${lang}): pass the Turkish placement for non-Turkish banks`);
+  }
   const [diag1, diag2] = getAllUnitDiagramSpecs(unit.id, lang);
-  const plan = placement ?? planDiagramPlacement(unit, questions, lang);
+  const plan = placement ?? planDiagramPlacement(unit, questions);
 
   return questions.map((q) => {
     const variant = plan.get(q.id);

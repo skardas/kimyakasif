@@ -310,7 +310,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
           <div className="ex-row__meta">
             <span className={`ky-chip ky-mono ${kind === 'mistake' ? 'ky-chip--bad' : 'ky-chip--gold'}`}>{q.unitId.toUpperCase()}</span>
             <span className="ky-chip ky-mono">{q.id}</span>
-            {kind === 'mistake' && q.diagram && <span className="ky-chip ky-chip--violet">{rx.visualChip}</span>}
+            {kind === 'mistake' && (q.diagram || q.figure) && <span className="ky-chip ky-chip--violet">{rx.visualChip}</span>}
           </div>
           <p className="ex-row__stem">{formatChemText(q.stem)}</p>
         </div>
