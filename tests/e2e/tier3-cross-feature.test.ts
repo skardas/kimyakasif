@@ -432,19 +432,19 @@ export async function runTier3Tests(): Promise<void> {
 
       // 1. Verify dark theme splash background token matches CSS specification (--stage-ink / --bg-canvas-dark)
       const darkBg = theme.tokens['stage-ink'] || theme.tokens['bg-canvas-dark'];
-      expect(darkBg).toBe('#0b0f19');
+      expect(darkBg).toBe('#070b14');
 
       // 2. Verify light theme canvas background token matches CSS specification (--bg-canvas-light)
       const lightBg = theme.tokens['bg-canvas-light'];
-      expect(lightBg).toBe('#f8fafc');
+      expect(lightBg).toBe('#edf1f5');
 
       // 3. Verify brand primary colors used for splash logos in dark and light modes
       const darkLogo = theme.tokens['brand-primary-dark'];
       const lightLogo = theme.tokens['accent-cyan-light'];
-      expect(darkLogo).toBe('#38bdf8');
-      expect(lightLogo).toBe('#0284c7');
+      expect(darkLogo).toBe('#2dd9c3');
+      expect(lightLogo).toBe('#0a7c70');
 
-      // 4. Verify splash contrast accessibility: splash text (#f8fafc) and logo (#38bdf8) against darkBg (#0b0f19)
+      // 4. Verify splash contrast accessibility: splash text (#f8fafc) and logo (#2dd9c3) against darkBg (#070b14)
       const textContrast = getContrastRatio('#f8fafc', darkBg);
       const logoContrast = getContrastRatio(darkLogo, darkBg);
       expect(textContrast).toBeGreaterThanOrEqual(7.0); // Exceeds WCAG AAA (7.0:1)

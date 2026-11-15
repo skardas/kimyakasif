@@ -3,13 +3,12 @@ import {
   Layers,
   RotateCw,
   Shuffle,
-  ChevronLeft,
-  ChevronRight,
+  Check,
+  X,
   CheckCircle2,
   AlertTriangle,
   Sparkles,
   BookOpen,
-  Filter,
 } from 'lucide-react';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
@@ -291,59 +290,51 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   const swipeOpacityRight = Math.min(1, Math.max(0, (dragOffset.x - 20) / 70));
   const swipeOpacityLeft = Math.min(1, Math.max(0, (-dragOffset.x - 20) / 70));
 
+  const deckProgress = activeDeck.length > 0 ? ((currentIndex + 1) / activeDeck.length) * 100 : 0;
+
   return (
-    <section className="cards-container" aria-label={t.cards.title}>
-      {/* Header and Telemetry */}
-      <div className="section-header">
-        <div>
-          <div className="flex items-center gap-2">
-            <Layers className="text-primary" size={28} aria-hidden="true" />
-            <h1 className="text-2xl font-bold tracking-tight">{t.cards.title}</h1>
-          </div>
-          <p className="subtitle-text text-sm opacity-80">{t.cards.subtitle}</p>
+    <section className="fc" aria-label={t.cards.title}>
+      {/* Header */}
+      <header className="fc-head">
+        <div className="fc-head__txt">
+          <p className="ky-eyebrow">Leitner sistemi · {allCards.length} kart</p>
+          <h1 className="fc-title">{t.cards.title}</h1>
         </div>
-        <div className="telemetry-pill">
-          <span>{t.cards.masteredCount}: {masteredCardIds.length}</span>
-        </div>
-      </div>
+        <span className="ky-chip ky-chip--ok ky-chip--lg fc-head__chip">
+          {t.cards.masteredCount}: {masteredCardIds.length}
+        </span>
+      </header>
+      <p className="fc-sub">{t.cards.subtitle}</p>
 
-      {/* Leitner 5-Box Distribution Bar */}
-      <div className="leitner-box-tracker">
-        <div className="flex items-center justify-between text-xs font-semibold mb-1 opacity-90">
-          <span>5 Kutu Leitner Dağılımı ({allCards.length} Kart)</span>
-          <span>{t.cards.masteredCount}: {distribution[5] || 0}</span>
-        </div>
-
-        <div className="leitner-progress-bar">
-          <div className="leitner-box-segment box-seg-1" style={{ flex: Math.max(1, distribution[1] || 0) }} title={`Kutu 1: ${distribution[1]} kart`} />
-          <div className="leitner-box-segment box-seg-2" style={{ flex: Math.max(1, distribution[2] || 0) }} title={`Kutu 2: ${distribution[2]} kart`} />
-          <div className="leitner-box-segment box-seg-3" style={{ flex: Math.max(1, distribution[3] || 0) }} title={`Kutu 3: ${distribution[3]} kart`} />
-          <div className="leitner-box-segment box-seg-4" style={{ flex: Math.max(1, distribution[4] || 0) }} title={`Kutu 4: ${distribution[4]} kart`} />
-          <div className="leitner-box-segment box-seg-5" style={{ flex: Math.max(1, distribution[5] || 0) }} title={`Kutu 5: ${distribution[5]} kart`} />
-        </div>
-
-        <div className="leitner-pills-row">
-          {[1, 2, 3, 4, 5].map((b) => (
+      {/* Leitner 5-box tiles (tap to filter) */}
+      <section className="fc-boxes" aria-label="Leitner kutuları">
+        {[1, 2, 3, 4, 5].map((b) => {
+          const on = selectedBox === b;
+          const count = distribution[b] || 0;
+          return (
             <button
               key={b}
               type="button"
+              aria-pressed={on}
+              title={`Kutu ${b}: ${count} kart`}
               onClick={() => {
                 setSelectedBox((prev) => (prev === b ? 'all' : b));
                 setCurrentIndex(0);
+                setIsFlipped(false);
               }}
-              className={`box-pill-btn ${selectedBox === b ? 'active' : ''}`}
+              className={`ky-well fc-box fc-box--${b}${on ? ' on' : ''}${count === 0 ? ' is-empty' : ''}`}
             >
-              <span className={`box-dot seg-${b}`} />
-              <span>Kutu {b}: {distribution[b] || 0}</span>
+              <span className="ky-mono fc-box__n">{count}</span>
+              <span className="fc-box__l">Kutu {b}</span>
             </button>
-          ))}
-        </div>
-      </div>
+          );
+        })}
+      </section>
 
-      {/* Filter and Deck Controls */}
-      <div className="cards-controls-bar">
-        <div className="flex items-center gap-2 flex-wrap flex-1">
-          <Filter size={18} className="opacity-70" />
+      {/* Unit filter + shuffle */}
+      <div className="fc-controls">
+        <label className="fc-unit">
+          <span className="ky-eyebrow">Ünite</span>
           <select
             value={selectedUnit}
             onChange={(e) => {
@@ -351,7 +342,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
               setCurrentIndex(0);
               setIsFlipped(false);
             }}
-            className="filter-select"
+            className="ky-select"
             aria-label="Ünite Filtresi"
           >
             <option value="all">{t.cards.allUnits}</option>
@@ -363,48 +354,62 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
               </option>
             ))}
           </select>
-        </div>
+        </label>
+        <button
+          type="button"
+          onClick={handleShuffle}
+          className="ky-btn ky-btn--quiet fc-shuffle"
+          title={t.cards.shuffleDeck}
+          data-sfx="none"
+        >
+          <Shuffle size={16} aria-hidden="true" />
+          <span>{t.cards.shuffleDeck}</span>
+        </button>
+      </div>
 
-        <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={handleShuffle}
-            className="btn-secondary text-xs flex items-center gap-1.5 py-1.5 px-3"
-            title={t.cards.shuffleDeck}
-          >
-            <Shuffle size={14} />
-            <span>{t.cards.shuffleDeck}</span>
-          </button>
-          <div className="text-xs font-mono opacity-80 px-2 py-1 bg-surface-elevated rounded">
-            {activeDeck.length > 0 ? `${currentIndex + 1} / ${activeDeck.length}` : '0 / 0'}
-          </div>
+      {/* Progress */}
+      <div className="fc-progress">
+        <div
+          className="ky-track"
+          role="progressbar"
+          aria-valuemin={0}
+          aria-valuemax={activeDeck.length}
+          aria-valuenow={activeDeck.length > 0 ? currentIndex + 1 : 0}
+          aria-label={t.cards.title}
+        >
+          <div className="ky-fill" style={{ inlineSize: `${deckProgress}%` }} />
         </div>
+        <span className="ky-mono fc-progress__n">
+          {activeDeck.length > 0 ? `${currentIndex + 1} / ${activeDeck.length}` : '0 / 0'}
+        </span>
       </div>
 
       {/* 3D Flip Card or Empty State */}
       {activeDeck.length === 0 ? (
-        <div className="placeholder-card flex flex-col items-center justify-center p-8 text-center rounded-xl border border-dashed border-subtle">
-          <Layers size={48} color="var(--brand-primary)" aria-hidden="true" className="mb-3 opacity-60" />
-          <h2 className="text-lg font-semibold mb-1">{t.cards.title}</h2>
-          <p className="text-sm opacity-70 mb-4">{t.cards.tapToFlip}</p>
-          <div className="telemetry-pill mb-4">
-            <span>{t.cards.masteredCount}: {masteredCardIds.length}</span>
+        <div className="ky-empty fc-empty">
+          <div className="ky-tile ky-tile--lg" aria-hidden="true">
+            <Layers size={28} />
           </div>
+          <h2 className="fc-empty__title">{t.cards.title}</h2>
+          <p className="fc-empty__txt">{t.cards.tapToFlip}</p>
+          <span className="ky-chip ky-chip--ok">
+            {t.cards.masteredCount}: {masteredCardIds.length}
+          </span>
           <button
             type="button"
             onClick={() => {
               setSelectedUnit('all');
               setSelectedBox('all');
             }}
-            className="btn-primary text-sm px-4 py-2"
+            className="ky-btn ky-btn--primary"
           >
             {t.cards.allUnits}
           </button>
         </div>
       ) : currentCard ? (
-        <div className="flashcard-viewport">
+        <div className="fc-viewport">
           <div
-            className="flashcard-3d-scene"
+            className="fc-scene"
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
@@ -413,10 +418,10 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
             onPointerUp={onPointerUp}
           >
             {/* Rubber Stamp Swipe Overlays */}
-            <div className="swipe-stamp stamp-demote" style={{ opacity: swipeOpacityLeft }}>
+            <div className="swipe-stamp stamp-demote" style={{ opacity: swipeOpacityLeft }} aria-hidden="true">
               TEKRAR ET (KUTU 1)
             </div>
-            <div className="swipe-stamp stamp-promote" style={{ opacity: swipeOpacityRight }}>
+            <div className="swipe-stamp stamp-promote" style={{ opacity: swipeOpacityRight }} aria-hidden="true">
               BİLİYORUM (+1 KUTU)
             </div>
 
@@ -440,82 +445,76 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
               }}
             >
               {/* Card Face Front */}
-              <div className="flashcard-face flashcard-face-front">
-                <div className="card-top-row flex justify-between items-center">
-                  <span className="card-badge-category">
-                    {currentCard.category === 'trap' ? (
-                      <span className="flex items-center gap-1 text-amber-500 font-semibold">
-                        <AlertTriangle size={14} /> {t.cards.osymTrapLabel}
-                      </span>
-                    ) : (
-                      <span className="flex items-center gap-1 text-cyan-500 font-semibold">
-                        <BookOpen size={14} /> {t.cards.frontBadge}
-                      </span>
-                    )}
-                  </span>
-                  <span className="card-box-badge">Kutu {currentBox}</span>
+              <div className="ky-card flashcard-face flashcard-face-front">
+                <div className="fc-face__top">
+                  {currentCard.category === 'trap' ? (
+                    <span className="ky-chip ky-chip--gold">
+                      <AlertTriangle size={14} aria-hidden="true" /> {t.cards.osymTrapLabel}
+                    </span>
+                  ) : (
+                    <span className="ky-chip ky-chip--accent">
+                      <BookOpen size={14} aria-hidden="true" /> {t.cards.frontBadge}
+                    </span>
+                  )}
+                  <span className="ky-chip fc-face__box">Kutu {currentBox}</span>
                 </div>
 
-                <div className="card-body-content my-auto py-4 text-center">
-                  <div className="text-lg md:text-xl font-medium leading-relaxed">
-                    {formatChemText(currentCard.frontPrompt)}
-                  </div>
+                <div className="fc-face__body">
+                  <div className="ky-disp fc-prompt">{formatChemText(currentCard.frontPrompt)}</div>
                 </div>
 
-                <div className="card-bottom-row flex justify-between items-center text-xs opacity-60">
-                  <span className="flex items-center gap-1">
-                    <RotateCw size={12} /> {t.cards.tapToFlip}
+                <div className="fc-face__bottom">
+                  <span className="fc-face__hint">
+                    <RotateCw size={14} aria-hidden="true" /> {t.cards.tapToFlip}
                   </span>
-                  <span className="font-mono">{currentCard.id}</span>
+                  <span className="ky-mono fc-face__id">{currentCard.id}</span>
                 </div>
               </div>
 
               {/* Card Face Back */}
-              <div className="flashcard-face flashcard-face-back">
-                <div className="card-top-row flex justify-between items-center">
-                  <span className="card-badge-category text-emerald-400 font-semibold flex items-center gap-1">
-                    <CheckCircle2 size={14} /> {t.cards.backBadge}
+              <div className="ky-card flashcard-face flashcard-face-back">
+                <div className="fc-face__top">
+                  <span className="ky-chip ky-chip--ok">
+                    <CheckCircle2 size={14} aria-hidden="true" /> {t.cards.backBadge}
                   </span>
-                  <span className="card-box-badge bg-emerald-500/20 text-emerald-400">
-                    {currentBox === 5 ? '★ Usta (Mastered)' : `Kutu ${currentBox} → ${Math.min(5, currentBox + 1)}`}
+                  <span className="ky-chip fc-face__box">
+                    {currentBox === 5 ? 'Usta (Mastered)' : `Kutu ${currentBox} → ${Math.min(5, currentBox + 1)}`}
                   </span>
                 </div>
 
-                <div className="card-body-content my-auto py-3">
-                  <div className="text-base md:text-lg font-medium leading-relaxed mb-3">
-                    {formatChemText(currentCard.backAnswer)}
-                  </div>
+                <div className="fc-face__body fc-face__body--back">
+                  <div className="fc-answer">{formatChemText(currentCard.backAnswer)}</div>
                   {currentCard.osymTip && (
-                    <div className="osym-tip-box bg-surface-elevated/80 border border-subtle rounded-lg p-3 text-xs md:text-sm">
-                      <strong className="text-amber-400 flex items-center gap-1 mb-1">
-                        <Sparkles size={13} /> {t.cards.osymTrapLabel}:
+                    <div className="fc-tip">
+                      <strong className="fc-tip__head">
+                        <Sparkles size={14} aria-hidden="true" /> {t.cards.osymTrapLabel}:
                       </strong>
                       <span>{currentCard.osymTip}</span>
                     </div>
                   )}
                 </div>
 
-                <div className="card-bottom-row flex justify-between items-center text-xs opacity-60">
-                  <span className="flex items-center gap-1">
-                    <RotateCw size={12} /> {t.cards.tapToFlip}
+                <div className="fc-face__bottom">
+                  <span className="fc-face__hint">
+                    <RotateCw size={14} aria-hidden="true" /> {t.cards.tapToFlip}
                   </span>
-                  <span>{currentCard.unitId.toUpperCase()}</span>
+                  <span className="ky-mono fc-face__id">{currentCard.unitId.toUpperCase()}</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Action Decision Buttons */}
-          <div className="flashcard-actions-bar mt-4 flex items-center justify-center gap-3">
+          {/* Rating keycaps */}
+          <div className="fc-actions">
             <button
               type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 handleRate(false);
               }}
-              className="action-btn-hard flex-1 max-w-[200px] py-3 px-4 rounded-xl font-bold flex items-center justify-center gap-2 border border-ruby/30 bg-ruby/10 hover:bg-ruby/20 text-ruby transition-all shadow-sm active:scale-95"
+              className="ky-btn ky-btn--danger fc-act"
             >
-              <ChevronLeft size={18} />
+              <X size={18} aria-hidden="true" />
               <span>{t.cards.rateHard} (Kutu 1)</span>
             </button>
 
@@ -525,10 +524,12 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
                 e.stopPropagation();
                 handleFlip();
               }}
-              className="action-btn-flip p-3 rounded-full border border-subtle bg-surface-elevated hover:bg-surface text-foreground transition-all shadow-sm active:scale-90"
+              className="ky-btn ky-btn--primary ky-btn--icon fc-flip"
               title={t.cards.tapToFlip}
+              aria-label={t.cards.tapToFlip}
+              data-sfx="none"
             >
-              <RotateCw size={18} />
+              <RotateCw size={20} aria-hidden="true" />
             </button>
 
             <button
@@ -537,16 +538,14 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
                 e.stopPropagation();
                 handleRate(true);
               }}
-              className="action-btn-easy flex-1 max-w-[200px] py-3 px-4 rounded-xl font-bold flex items-center justify-center gap-2 border border-emerald/30 bg-emerald/10 hover:bg-emerald/20 text-emerald transition-all shadow-sm active:scale-95"
+              className="ky-btn ky-btn--ok fc-act"
             >
+              <Check size={18} aria-hidden="true" />
               <span>{t.cards.rateEasy} (+15 XP)</span>
-              <ChevronRight size={18} />
             </button>
           </div>
 
-          <div className="keyboard-shortcuts-hint text-center text-xs opacity-50 mt-2 hidden sm:block">
-            <span>Klavye: [Boşluk] Kartı Çevir • [1] / [←] Zor • [2] / [→] Öğrendim • [S] Karıştır</span>
-          </div>
+          <p className="fc-kbd">Klavye: [Boşluk] Kartı Çevir • [1] / [←] Zor • [2] / [→] Öğrendim • [S] Karıştır</p>
         </div>
       ) : null}
     </section>

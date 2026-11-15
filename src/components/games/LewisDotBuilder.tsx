@@ -1,20 +1,11 @@
 import React, { useState, useMemo, useCallback, useRef, useEffect } from 'react';
-import {
-  ArrowLeft,
-  CheckCircle2,
-  AlertTriangle,
-  RotateCcw,
-  Sparkles,
-  Trophy,
-  Atom,
-  HelpCircle,
-  Plus,
-  Minus,
-} from 'lucide-react';
+import { ArrowLeft, CheckCircle2, RotateCcw, Sparkles, Trophy, HelpCircle, Plus, Minus, Award } from 'lucide-react';
+import { GameHud, GameStat } from './GameHud';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { GAMES_STRINGS } from '../../i18n/gamesStrings';
 import { ChemFormula } from '../common/ChemFormula';
-import { playCorrect, playWrong, playSuccess } from '../../audio/sfx';
+import { playCorrect, playWrong, playSuccess, playFinish } from '../../audio/sfx';
 
 export interface LewisDotBuilderProps {
   lang: LanguageCode;
@@ -184,10 +175,15 @@ export const TARGET_MOLECULES: MoleculeSpec[] = [
 ];
 
 export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
+  lang,
   highScore = 0,
   onFinish,
   onBack,
 }) => {
+  const t = UI_TRANSLATIONS[lang];
+  const g = GAMES_STRINGS[lang] ?? GAMES_STRINGS.en;
+  const [finished, setFinished] = useState(false);
+  const [feedbackN, setFeedbackN] = useState(0);
   const [moleculeIndex, setMoleculeIndex] = useState(0);
   const currentMol = TARGET_MOLECULES[moleculeIndex] || TARGET_MOLECULES[0];
 
@@ -304,11 +300,19 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
     };
   }, [currentMol, centralBonds, centralLonePairs, peripheralLonePairs]);
 
+  const handleReplay = () => {
+    if (advanceTimeoutRef.current) clearTimeout(advanceTimeoutRef.current);
+    setScore(0);
+    setFinished(false);
+    loadMolecule(0);
+  };
+
   // Check / Validate submission
   const handleValidate = () => {
     // Contract Check: E2E test T2.F06.04 checks that NH3 with 4 bonds + 1 lone pair = 10 e- is rejected
     if (validation.centralTotalElectrons > currentMol.centralAtom.targetOctet) {
       playWrong();
+      setFeedbackN((n) => n + 1);
       setFeedback({
         message: `Hata: Merkez atom (${currentMol.centralAtom.symbol}) çevresinde ${validation.centralTotalElectrons} elektron oldu! Oktet kuralı (${currentMol.centralAtom.targetOctet} e⁻) ihlal edildi.`,
         isCorrect: false,
@@ -318,6 +322,7 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
 
     if (!validation.octetSatisfied) {
       playWrong();
+      setFeedbackN((n) => n + 1);
       setFeedback({
         message: `Oktet/Dublet tamamlanmadı: Merkez atomun çevresinde ${validation.centralTotalElectrons} elektron var, hedef ${currentMol.centralAtom.targetOctet} elektron.`,
         isCorrect: false,
@@ -327,6 +332,7 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
 
     if (!validation.isMatch) {
       playWrong();
+      setFeedbackN((n) => n + 1);
       setFeedback({
         message: `Bağ ve ortaklanmamış elektron çifti sayıları molekülün doğru rezonans yapısına uymuyor.`,
         isCorrect: false,
@@ -334,8 +340,9 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
       return;
     }
 
-    // Success!
-    playSuccess();
+    // Success! (last molecule gets the bigger fanfare)
+    if (moleculeIndex < TARGET_MOLECULES.length - 1) playCorrect();
+    else playSuccess();
     const earned = 120;
     setScore((s) => s + earned);
     setFeedback({
@@ -348,70 +355,101 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
       if (moleculeIndex < TARGET_MOLECULES.length - 1) {
         loadMolecule(moleculeIndex + 1);
       } else {
+        setFinished(true);
+        playFinish();
         onFinish(score + earned);
       }
     }, 1800);
   };
 
-  return (
-    <div className="lewis-builder-container p-4 max-w-4xl mx-auto flex flex-col gap-5">
-      {/* Top Header */}
-      <div className="flex items-center justify-between">
-        <button
-          type="button"
-          onClick={onBack}
-          className="btn-secondary flex items-center gap-1.5 py-1.5 px-3 text-xs"
-        >
-          <ArrowLeft size={16} />
-          <span>Geri</span>
-        </button>
+  const total = TARGET_MOLECULES.length;
+  const solvedNow = feedback?.isCorrect === true;
 
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-1 text-sm font-semibold">
-            <Trophy size={16} className="text-amber-400" />
-            <span>En Yüksek: {Math.max(highScore, score)}</span>
-          </div>
-
-          <div className="flex items-center gap-1 text-sm font-bold text-primary">
-            <Sparkles size={16} />
-            <span>Puan: {score}</span>
+  if (finished) {
+    return (
+      <div className="gm gm--narrow lewis-builder-container">
+        <GameHud title={t.games.lewisTitle} backLabel={t.games.backToHub} onBack={onBack}>
+          <GameStat icon={<Trophy size={16} aria-hidden="true" />} label={g.best} value={Math.max(highScore, score)} tone="gold" />
+          <GameStat icon={<Sparkles size={16} aria-hidden="true" />} label={g.score} value={score} tone="accent" />
+        </GameHud>
+        <div className="ky-card gm-result">
+          <span className="ky-tile ky-tile--lg ky-tile--blue" aria-hidden="true">
+            <Award size={30} />
+          </span>
+          <h2>{g.finished}</h2>
+          <div className="gm-score ky-pop">{score}</div>
+          <span className="ky-chip ky-chip--gold">
+            <Trophy size={14} aria-hidden="true" /> {g.best}: {Math.max(highScore, score)}
+          </span>
+          <div className="gm-actions">
+            <button type="button" onClick={handleReplay} className="ky-btn ky-btn--primary" data-sfx="start">
+              <RotateCcw size={18} aria-hidden="true" />
+              <span>{g.replay}</span>
+            </button>
+            <button type="button" onClick={onBack} className="ky-btn ky-btn--quiet">
+              <ArrowLeft size={18} aria-hidden="true" className="gm-flip" />
+              <span>{g.backToGames}</span>
+            </button>
           </div>
         </div>
       </div>
+    );
+  }
 
-      {/* Main Builder Canvas */}
-      <div className="lewis-board p-6 bg-surface border border-subtle rounded-2xl shadow-lg flex flex-col gap-6">
-        <div className="flex items-center justify-between flex-wrap gap-2">
+  const stepper = (
+    label: string,
+    value: number,
+    dec: () => void,
+    inc: () => void,
+    decLabel: string,
+    incLabel: string,
+    color: string
+  ) => (
+    <div className="ky-well gm-ctrl">
+      <span>{label}</span>
+      <div className="gm-stepper">
+        <button type="button" onClick={dec} className="ky-icon-btn" aria-label={decLabel}>
+          <Minus size={16} aria-hidden="true" />
+        </button>
+        <span className="gm-coef" style={{ color }} aria-live="polite">{value}</span>
+        <button type="button" onClick={inc} className="ky-icon-btn" aria-label={incLabel}>
+          <Plus size={16} aria-hidden="true" />
+        </button>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="gm lewis-builder-container">
+      <GameHud title={t.games.lewisTitle} backLabel={t.games.backToHub} onBack={onBack}>
+        <GameStat icon={<Trophy size={16} aria-hidden="true" />} label={g.best} value={Math.max(highScore, score)} tone="gold" />
+        <GameStat icon={<Sparkles size={16} aria-hidden="true" />} label={g.score} value={score} tone="accent" />
+      </GameHud>
+
+      <div className="ky-track gm-progress" role="progressbar" aria-valuemin={0} aria-valuemax={total} aria-valuenow={moleculeIndex}>
+        <div className="ky-fill" style={{ inlineSize: `${(moleculeIndex / total) * 100}%` }} />
+      </div>
+
+      <div className="ky-card gm-board lewis-board">
+        <div className="gm-eyebrow-row">
           <div>
-            <div className="text-xs uppercase tracking-wider text-primary font-bold">
-              KADEME {currentMol.tier} • {moleculeIndex + 1} / {TARGET_MOLECULES.length}
-            </div>
-            <h2 className="text-xl font-bold flex items-center gap-2">
-              <span>{currentMol.nameTr}</span>
-              <span className="text-primary font-mono font-bold">
-                (<ChemFormula formula={currentMol.formula} />)
-              </span>
+            <span className="ky-eyebrow">
+              KADEME {currentMol.tier} &bull; {moleculeIndex + 1} / {total}
+            </span>
+            <h2 className="gm-title">
+              {currentMol.nameTr} <span className="ky-mono" style={{ color: 'var(--accent)' }}>(<ChemFormula formula={currentMol.formula} />)</span>
             </h2>
           </div>
-
-          <div className="flex items-center gap-2">
-            <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-primary/10 text-primary border border-primary/20">
-              VSEPR: {currentMol.vsepr}
-            </span>
-            <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-surface-elevated">
-              {currentMol.geometryTr}
-            </span>
+          <div className="gm-chiprow">
+            <span className="ky-chip ky-chip--accent">VSEPR: {currentMol.vsepr}</span>
+            <span className="ky-chip">{currentMol.geometryTr}</span>
           </div>
         </div>
 
-        {/* Visual Molecule Canvas representation */}
-        <div className="lewis-canvas-stage min-h-[260px] flex flex-col items-center justify-center p-6 bg-surface-elevated/40 border border-subtle rounded-2xl relative overflow-hidden">
-          <div className="relative flex items-center justify-center w-64 h-64">
-            {/* SVG Bonds Overlay */}
-            <svg
-              className="absolute inset-0 w-full h-full pointer-events-none"
-              viewBox="-128 -128 256 256"
-            >
+        <div className="ky-stage gm-lewis-stage lewis-canvas-stage">
+          <div className="ky-floor" aria-hidden="true" />
+          <div className="gm-lewis-canvas">
+            <svg viewBox="-128 -128 256 256" aria-hidden="true">
               {peripheralList.map((atom, i) => {
                 const angle = vseprAngles[i] ?? (i * 360) / peripheralList.length;
                 const rad = (angle * Math.PI) / 180;
@@ -430,7 +468,7 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
                         y1={sin * rStart + perpY}
                         x2={cos * rEnd + perpX}
                         y2={sin * rEnd + perpY}
-                        stroke="var(--brand-primary)"
+                        className="gm-bond"
                         strokeWidth="2.5"
                         strokeLinecap="round"
                       />
@@ -439,7 +477,7 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
                         y1={sin * rStart - perpY}
                         x2={cos * rEnd - perpX}
                         y2={sin * rEnd - perpY}
-                        stroke="var(--brand-primary)"
+                        className="gm-bond"
                         strokeWidth="2.5"
                         strokeLinecap="round"
                       />
@@ -455,7 +493,7 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
                         y1={sin * rStart + perpY}
                         x2={cos * rEnd + perpX}
                         y2={sin * rEnd + perpY}
-                        stroke="var(--brand-primary)"
+                        className="gm-bond"
                         strokeWidth="2"
                         strokeLinecap="round"
                       />
@@ -464,7 +502,7 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
                         y1={sin * rStart}
                         x2={cos * rEnd}
                         y2={sin * rEnd}
-                        stroke="var(--brand-primary)"
+                        className="gm-bond"
                         strokeWidth="2"
                         strokeLinecap="round"
                       />
@@ -473,7 +511,7 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
                         y1={sin * rStart - perpY}
                         x2={cos * rEnd - perpX}
                         y2={sin * rEnd - perpY}
-                        stroke="var(--brand-primary)"
+                        className="gm-bond"
                         strokeWidth="2"
                         strokeLinecap="round"
                       />
@@ -487,7 +525,7 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
                       y1={sin * rStart}
                       x2={cos * rEnd}
                       y2={sin * rEnd}
-                      stroke="var(--brand-primary)"
+                      className="gm-bond"
                       strokeWidth="2.5"
                       strokeLinecap="round"
                     />
@@ -496,182 +534,87 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
               })}
             </svg>
 
-            {/* Central Atom Circle */}
-            <div className="w-20 h-20 rounded-full border-4 border-primary bg-primary/10 flex flex-col items-center justify-center relative shadow-lg z-10">
-              <span className="text-2xl font-black text-primary">{currentMol.centralAtom.symbol}</span>
-              <span className="text-[10px] font-mono opacity-70">
+            <div className="gm-central">
+              <b>{currentMol.centralAtom.symbol}</b>
+              <small>
                 Yük: {validation.centralFormalCharge > 0 ? `+${validation.centralFormalCharge}` : validation.centralFormalCharge}
-              </span>
-
-              {/* Central Lone Pairs visual dots */}
+              </small>
               {Array.from({ length: centralLonePairs }).map((_, lpIdx) => (
                 <div
                   key={`clp-${lpIdx}`}
-                  className="absolute flex gap-1"
+                  className="gm-lp"
                   style={{
-                    top: lpIdx === 0 ? '-14px' : 'auto',
-                    bottom: lpIdx === 1 ? '-14px' : 'auto',
-                    left: lpIdx === 2 ? '-14px' : 'auto',
-                    right: lpIdx === 3 ? '-14px' : 'auto',
+                    top: lpIdx === 0 ? '-16px' : 'auto',
+                    bottom: lpIdx === 1 ? '-16px' : 'auto',
+                    left: lpIdx === 2 ? '-16px' : 'auto',
+                    right: lpIdx === 3 ? '-16px' : 'auto',
                   }}
                 >
-                  <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-sm" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-sm" />
+                  <span />
+                  <span />
                 </div>
               ))}
             </div>
 
-            {/* Peripheral Atoms dynamically positioned by VSEPR geometry */}
             {peripheralList.map((atom, i) => {
               const angle = vseprAngles[i] ?? (i * 360) / peripheralList.length;
               const rad = (angle * Math.PI) / 180;
-              const cos = Math.cos(rad);
-              const sin = Math.sin(rad);
-              const dist = 86;
-              const posX = Math.round(cos * dist);
-              const posY = Math.round(sin * dist);
-
+              const posX = Math.round(Math.cos(rad) * 86);
+              const posY = Math.round(Math.sin(rad) * 86);
               return (
                 <div
                   key={`peripheral-atom-${i}`}
-                  className="absolute w-9 h-9 rounded-full border-2 border-primary/70 bg-surface shadow-md flex items-center justify-center font-bold text-sm text-foreground z-10"
-                  style={{
-                    transform: `translate(${posX}px, ${posY}px)`,
-                  }}
+                  className="gm-peri"
+                  style={{ transform: `translate(${posX}px, ${posY}px)` }}
                   title={`${atom.symbol} (${currentMol.geometryTr})`}
                 >
-                  <span>{atom.symbol}</span>
+                  {atom.symbol}
                 </div>
               );
             })}
           </div>
 
-          {/* Real-time stats HUD */}
-          <div className="flex items-center justify-center gap-4 mt-6 text-xs flex-wrap">
-            <span className={`px-2 py-1 rounded-lg border font-semibold ${validation.octetSatisfied ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300' : 'border-ruby/40 bg-ruby/10 text-ruby'}`}>
+          <div className="gm-chiprow">
+            <span className={`ky-chip ${validation.octetSatisfied ? 'ky-chip--ok' : 'ky-chip--bad'}`}>
               Merkez Elektron: {validation.centralTotalElectrons} / {currentMol.centralAtom.targetOctet}
             </span>
-            <span className="px-2 py-1 rounded-lg border border-subtle bg-surface">
-              Bağ Elektronu: {validation.bondingElectrons}
-            </span>
-            <span className="px-2 py-1 rounded-lg border border-subtle bg-surface">
-              Ortaklanmamış e⁻: {validation.lonePairElectrons}
-            </span>
-            <span className="px-2 py-1 rounded-lg border border-subtle bg-surface">
+            <span className="ky-chip">Bağ Elektronu: {validation.bondingElectrons}</span>
+            <span className="ky-chip">Ortaklanmamış e⁻: {validation.lonePairElectrons}</span>
+            <span className="ky-chip">
               Toplam Yerleşen: {validation.placedElectrons} / {currentMol.totalValenceElectrons}
             </span>
           </div>
         </div>
 
-        {/* Stepper Controls */}
-        <div className="controls-grid grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="p-3 bg-surface-elevated rounded-xl border border-subtle flex flex-col items-center gap-2">
-            <span className="text-xs font-semibold">Merkez Bağ Sayısı</span>
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={() => setCentralBonds((b) => Math.max(1, b - 1))}
-                className="btn-secondary p-1.5"
-                aria-label="Bağ azalt"
-              >
-                <Minus size={14} />
-              </button>
-              <span className="w-6 text-center font-bold text-lg text-primary">{centralBonds}</span>
-              <button
-                type="button"
-                onClick={() => setCentralBonds((b) => Math.min(8, b + 1))}
-                className="btn-secondary p-1.5"
-                aria-label="Bağ artır"
-              >
-                <Plus size={14} />
-              </button>
-            </div>
-          </div>
-
-          <div className="p-3 bg-surface-elevated rounded-xl border border-subtle flex flex-col items-center gap-2">
-            <span className="text-xs font-semibold">Merkez Ortaklanmamış Çift (LP)</span>
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={() => setCentralLonePairs((lp) => Math.max(0, lp - 1))}
-                className="btn-secondary p-1.5"
-                aria-label="LP azalt"
-              >
-                <Minus size={14} />
-              </button>
-              <span className="w-6 text-center font-bold text-lg text-cyan-400">{centralLonePairs}</span>
-              <button
-                type="button"
-                onClick={() => setCentralLonePairs((lp) => Math.min(4, lp + 1))}
-                className="btn-secondary p-1.5"
-                aria-label="LP artır"
-              >
-                <Plus size={14} />
-              </button>
-            </div>
-          </div>
-
-          <div className="p-3 bg-surface-elevated rounded-xl border border-subtle flex flex-col items-center gap-2">
-            <span className="text-xs font-semibold">Çevre Atom Ortaklanmamış Çift</span>
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={() => setPeripheralLonePairs((p) => Math.max(0, p - 1))}
-                className="btn-secondary p-1.5"
-                aria-label="Çevre LP azalt"
-              >
-                <Minus size={14} />
-              </button>
-              <span className="w-6 text-center font-bold text-lg text-amber-400">{peripheralLonePairs}</span>
-              <button
-                type="button"
-                onClick={() => setPeripheralLonePairs((p) => Math.min(4, p + 1))}
-                className="btn-secondary p-1.5"
-                aria-label="Çevre LP artır"
-              >
-                <Plus size={14} />
-              </button>
-            </div>
-          </div>
+        <div className="gm-ctrl-grid">
+          {stepper('Merkez Bağ Sayısı', centralBonds, () => setCentralBonds((b) => Math.max(1, b - 1)), () => setCentralBonds((b) => Math.min(8, b + 1)), 'Bağ azalt', 'Bağ artır', 'var(--accent)')}
+          {stepper('Merkez Ortaklanmamış Çift (LP)', centralLonePairs, () => setCentralLonePairs((lp) => Math.max(0, lp - 1)), () => setCentralLonePairs((lp) => Math.min(4, lp + 1)), 'LP azalt', 'LP artır', 'var(--gold)')}
+          {stepper('Çevre Atom Ortaklanmamış Çift', peripheralLonePairs, () => setPeripheralLonePairs((p) => Math.max(0, p - 1)), () => setPeripheralLonePairs((p) => Math.min(4, p + 1)), 'Çevre LP azalt', 'Çevre LP artır', 'var(--violet)')}
         </div>
 
-        {/* Curriculum note */}
-        <div className="p-3 bg-primary/5 border border-primary/20 rounded-xl text-xs text-muted-foreground flex items-center gap-2">
-          <HelpCircle size={16} className="text-primary shrink-0" />
+        <div className="gm-note">
+          <HelpCircle size={18} aria-hidden="true" />
           <span>{currentMol.curriculumNote}</span>
         </div>
 
-        {/* Feedback banner */}
         {feedback && (
           <div
-            className={`p-3 rounded-xl text-sm font-medium border text-center transition-all ${
-              feedback.isCorrect
-                ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-300'
-                : 'bg-ruby/15 border-ruby/40 text-ruby'
-            }`}
+            key={feedbackN + (feedback.isCorrect ? 'ok' : 'bad')}
+            className={`gm-feedback ${feedback.isCorrect ? 'ok ky-pop' : 'bad ky-shake'}`}
+            role="status"
           >
             {feedback.message}
           </div>
         )}
 
-        {/* Submit */}
-        <div className="flex items-center justify-end gap-3">
-          <button
-            type="button"
-            onClick={() => loadMolecule(moleculeIndex)}
-            className="btn-secondary py-2.5 px-4 text-xs flex items-center gap-1.5"
-          >
-            <RotateCcw size={14} />
+        <div className="gm-actions">
+          <button type="button" onClick={() => loadMolecule(moleculeIndex)} className="ky-btn ky-btn--quiet">
+            <RotateCcw size={16} aria-hidden="true" />
             <span>Sıfırla</span>
           </button>
-
-          <button
-            type="button"
-            onClick={handleValidate}
-            className="btn-primary py-2.5 px-6 font-bold flex items-center gap-2"
-          >
-            <CheckCircle2 size={18} />
-            <span>Oktet & Lewis Doğrula</span>
+          <button type="button" onClick={handleValidate} disabled={solvedNow} className="ky-btn ky-btn--primary">
+            <CheckCircle2 size={18} aria-hidden="true" />
+            <span>Oktet &amp; Lewis Doğrula</span>
           </button>
         </div>
       </div>

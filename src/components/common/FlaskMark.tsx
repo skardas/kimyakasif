@@ -1,241 +1,81 @@
-import React, { useId, useState, useEffect } from 'react';
+import React, { useId } from 'react';
 
 export interface FlaskMarkProps {
   width?: number;
   height?: number;
+  /** "full" = lit glass flask with gold orbits (splash, hero); "mark" = simplified glyph readable at 24–40px. */
+  variant?: 'full' | 'mark';
 }
 
+const FLASK_PATH = 'M52 18h16v24l26 46a9 9 0 0 1-9 14H35a9 9 0 0 1-9-14l26-46z';
+const LIQUID_PATH = 'M41.5 66h37l12.6 22.6A6.5 6.5 0 0 1 85 98.5H35a6.5 6.5 0 0 1-6.1-9.9z';
+
 /**
- * 3D-shaded animated SVG Erlenmeyer flask with volumetric meniscus glow,
- * bubbling chemical reaction, and orbiting atomic electron rings.
+ * Kimya 3D logo — glass Erlenmeyer flask (the lab) wrapped by two gold orbits (the atom).
+ * The orbits pass behind and in front of the glass for depth; bubbles rise in the liquid
+ * (CSS animation, disabled by prefers-reduced-motion and the in-app reduce-motion setting).
  */
-export const FlaskMark: React.FC<FlaskMarkProps> = ({ width = 120, height = 120 }) => {
-  const reactId = useId();
-  const cleanId = reactId.replace(/[^a-zA-Z0-9-_]/g, '');
-  const liquidId = `flask-${cleanId}-liquid`;
-  const glassId = `flask-${cleanId}-glass`;
-  const meniscusId = `flask-${cleanId}-meniscus`;
-  const glowId = `flask-${cleanId}-glow`;
-  const orbitBackId = `flask-${cleanId}-orb-back`;
-  const orbitFrontId = `flask-${cleanId}-orb-front`;
-  const clipLiquidId = `flask-${cleanId}-clip`;
+export const FlaskMark: React.FC<FlaskMarkProps> = ({ width = 120, height = 120, variant = 'full' }) => {
+  const uid = useId().replace(/[^a-zA-Z0-9_-]/g, '');
+  const liquidId = `fm-${uid}-liquid`;
+  const glassId = `fm-${uid}-glass`;
+  const goldId = `fm-${uid}-gold`;
 
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-
-  useEffect(() => {
-    if (typeof window === 'undefined' || !window.matchMedia) return;
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setPrefersReducedMotion(mediaQuery.matches);
-
-    const listener = (event: MediaQueryListEvent) => {
-      setPrefersReducedMotion(event.matches);
-    };
-
-    if (mediaQuery.addEventListener) {
-      mediaQuery.addEventListener('change', listener);
-      return () => mediaQuery.removeEventListener('change', listener);
-    } else if (mediaQuery.addListener) {
-      mediaQuery.addListener(listener);
-      return () => mediaQuery.removeListener(listener);
-    }
-  }, []);
+  if (variant === 'mark') {
+    return (
+      <span className="flask-animated-stage" aria-hidden="true">
+        <svg viewBox="0 0 120 120" width={width} height={height} className="flask-svg">
+          <path d={FLASK_PATH} fill="rgba(45,217,195,.18)" stroke="#8CF5E7" strokeWidth="6" strokeLinejoin="round" />
+          <path d={LIQUID_PATH} fill="#2DD9C3" />
+          <ellipse cx="60" cy="70" rx="52" ry="16" transform="rotate(-26 60 70)" fill="none" stroke="#F6B73C" strokeWidth="5" />
+        </svg>
+      </span>
+    );
+  }
 
   return (
-    <div className="flask-animated-stage" aria-hidden="true">
-      <div className="flask-3d-rig">
-        <svg viewBox="0 0 120 120" width={width} height={height} className="flask-svg">
-          <defs>
-            <linearGradient id={glassId} x1="15%" y1="10%" x2="85%" y2="95%">
-              <stop offset="0%" stopColor="#bae6fd" stopOpacity="0.22" />
-              <stop offset="55%" stopColor="#0e7490" stopOpacity="0.12" />
-              <stop offset="100%" stopColor="#06b6d4" stopOpacity="0.26" />
-            </linearGradient>
+    <span className="flask-animated-stage" aria-hidden="true">
+      <svg viewBox="0 0 120 120" width={width} height={height} className="flask-svg">
+        <defs>
+          <linearGradient id={liquidId} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#5FF2DF" />
+            <stop offset="1" stopColor="#0C8073" />
+          </linearGradient>
+          <linearGradient id={glassId} x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#FFFFFF" stopOpacity=".30" />
+            <stop offset=".5" stopColor="#2DD9C3" stopOpacity=".08" />
+            <stop offset="1" stopColor="#2DD9C3" stopOpacity=".26" />
+          </linearGradient>
+          <linearGradient id={goldId} x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#FFE08A" />
+            <stop offset="1" stopColor="#F6B73C" />
+          </linearGradient>
+        </defs>
 
-            <linearGradient id={liquidId} x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#22d3ee" stopOpacity="0.92" />
-              <stop offset="48%" stopColor="#06b6d4" stopOpacity="0.95" />
-              <stop offset="100%" stopColor="#10b981" stopOpacity="0.98" />
-            </linearGradient>
+        {/* Orbits — back halves (behind the glass) */}
+        <g fill="none" stroke="#A86A08" strokeWidth="2.6" opacity=".8">
+          <path transform="rotate(-26 60 70)" d="M10 70 A50 17 0 0 1 110 70" />
+          <path transform="rotate(26 60 70)" d="M10 70 A50 17 0 0 1 110 70" />
+        </g>
 
-            <linearGradient id={meniscusId} x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#67e8f9" stopOpacity="0.72" />
-              <stop offset="50%" stopColor="#e0f2fe" stopOpacity="0.9" />
-              <stop offset="100%" stopColor="#22d3ee" stopOpacity="0.72" />
-            </linearGradient>
+        {/* Glass, liquid, meniscus, bubbles, neck lip and specular streak */}
+        <path d={FLASK_PATH} fill={`url(#${glassId})`} stroke="#8CF5E7" strokeWidth="3" strokeLinejoin="round" />
+        <path d={LIQUID_PATH} fill={`url(#${liquidId})`} />
+        <ellipse cx="60" cy="66" rx="18.5" ry="3.4" fill="#C6FFF7" />
+        <circle className="flask-bubble" cx="52" cy="82" r="3" fill="#C6FFF7" opacity=".8" />
+        <circle className="flask-bubble b2" cx="66" cy="88" r="2" fill="#C6FFF7" opacity=".7" />
+        <circle className="flask-bubble b3" cx="61" cy="76" r="1.5" fill="#C6FFF7" opacity=".7" />
+        <rect x="48.5" y="13.5" width="23" height="6.5" rx="3.2" fill="#8CF5E7" />
+        <path d="M47 58 36 79" stroke="#fff" strokeWidth="3" strokeLinecap="round" opacity=".55" />
 
-            <linearGradient id={orbitBackId} x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#b45309" stopOpacity="0.45" />
-              <stop offset="50%" stopColor="#d97706" stopOpacity="0.68" />
-              <stop offset="100%" stopColor="#b45309" stopOpacity="0.45" />
-            </linearGradient>
-
-            <linearGradient id={orbitFrontId} x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#fde047" />
-              <stop offset="50%" stopColor="#f59e0b" />
-              <stop offset="100%" stopColor="#fbbf24" />
-            </linearGradient>
-
-            <clipPath id={clipLiquidId}>
-              <path d="M 52,18 L 68,18 L 68,42 L 94,88 A 9 9 0 0 1 85,102 L 35,102 A 9 9 0 0 1 26,88 L 52,42 Z" />
-            </clipPath>
-
-            <filter id={glowId} x="-25%" y="-25%" width="150%" height="150%">
-              <feGaussianBlur stdDeviation="2.6" result="blur" />
-              <feMerge>
-                <feMergeNode in="blur" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-          </defs>
-
-          {/* Back Halves of 3D Atomic Orbital Rings (behind flask glass) */}
-          <g transform="translate(60 71)">
-            <path
-              d="M -42,0 A 42,14 0 0 1 42,0"
-              transform="rotate(-28)"
-              fill="none"
-              stroke={`url(#${orbitBackId})`}
-              strokeWidth="2.4"
-              strokeLinecap="round"
-            />
-            <path
-              d="M -42,0 A 42,14 0 0 1 42,0"
-              transform="rotate(28)"
-              fill="none"
-              stroke={`url(#${orbitBackId})`}
-              strokeWidth="2.4"
-              strokeLinecap="round"
-            />
-          </g>
-
-          {/* 3D Flask Glass Body */}
-          <path
-            d="M 52,18 L 68,18 L 68,42 L 94,88 A 9 9 0 0 1 85,102 L 35,102 A 9 9 0 0 1 26,88 L 52,42 Z"
-            fill={`url(#${glassId})`}
-            stroke="var(--brand-primary, #38bdf8)"
-            strokeWidth="3.2"
-            strokeLinejoin="round"
-            strokeLinecap="round"
-          />
-
-          {/* Volumetric Liquid + 3D Top Meniscus clipped cleanly inside glass */}
-          <g clipPath={`url(#${clipLiquidId})`}>
-            <path
-              d="M 24,71 Q 60,67 96,71 L 98,104 L 22,104 Z"
-              fill={`url(#${liquidId})`}
-              filter={`url(#${glowId})`}
-            />
-            <ellipse
-              cx="60"
-              cy="71"
-              rx="22"
-              ry="3.6"
-              fill={`url(#${meniscusId})`}
-              stroke="#e0f2fe"
-              strokeWidth="0.9"
-            />
-          </g>
-
-          {/* Left 3D Curved Glass Specular Sheen & Top Lip Capsule */}
-          <path
-            d="M 55,25 L 55,44 L 34,88 Q 33,93 36,96"
-            fill="none"
-            stroke="#ffffff"
-            strokeOpacity="0.6"
-            strokeWidth="2.1"
-            strokeLinecap="round"
-          />
-          <rect
-            x="48"
-            y="14"
-            width="24"
-            height="5.5"
-            rx="2.75"
-            fill="#164e63"
-            fillOpacity="0.88"
-            stroke="#a5f3fc"
-            strokeWidth="2.1"
-          />
-
-          {/* Effervescent Rising Bubbles */}
-          {!prefersReducedMotion ? (
-            <>
-              <circle cx="52" cy="86" r="2.6" fill="#ffffff" opacity="0.9">
-                <animate attributeName="cy" values="90;52;36" dur="1.45s" repeatCount="indefinite" />
-                <animate attributeName="opacity" values="0.95;0.65;0" dur="1.45s" repeatCount="indefinite" />
-              </circle>
-              <circle cx="67" cy="84" r="3.1" fill="#ffffff" opacity="0.82">
-                <animate attributeName="cy" values="88;56;40" dur="1.85s" begin="0.4s" repeatCount="indefinite" />
-                <animate attributeName="opacity" values="0.85;0.55;0" dur="1.85s" begin="0.4s" repeatCount="indefinite" />
-              </circle>
-              <circle cx="59" cy="91" r="2.1" fill="#ffffff" opacity="0.9">
-                <animate attributeName="cy" values="92;58;44" dur="1.25s" begin="0.8s" repeatCount="indefinite" />
-                <animate attributeName="opacity" values="0.9;0.45;0" dur="1.25s" begin="0.8s" repeatCount="indefinite" />
-              </circle>
-            </>
-          ) : (
-            <>
-              <circle cx="52" cy="78" r="2.5" fill="#ffffff" opacity="0.65" />
-              <circle cx="67" cy="72" r="3" fill="#ffffff" opacity="0.65" />
-              <circle cx="59" cy="84" r="2" fill="#ffffff" opacity="0.65" />
-            </>
-          )}
-
-          {/* Front Halves of 3D Atomic Orbital Rings + Orbiting Electron Spheres */}
-          <g transform="translate(60 71)" filter={`url(#${glowId})`}>
-            <path
-              d="M -42,0 A 42,14 0 0 0 42,0"
-              transform="rotate(-28)"
-              fill="none"
-              stroke={`url(#${orbitFrontId})`}
-              strokeWidth="2.6"
-              strokeLinecap="round"
-            />
-            <path
-              d="M -42,0 A 42,14 0 0 0 42,0"
-              transform="rotate(28)"
-              fill="none"
-              stroke={`url(#${orbitFrontId})`}
-              strokeWidth="2.6"
-              strokeLinecap="round"
-            />
-
-            {/* Central Nucleus Spark */}
-            <circle cx="0" cy="0" r="4.1" fill="#fbbf24" />
-            <circle cx="-1.3" cy="-1.3" r="1.4" fill="#ffffff" />
-
-            {/* Orbiting Electrons */}
-            {!prefersReducedMotion ? (
-              <>
-                <g transform="rotate(-28)">
-                  <circle r="3.4" fill="#fde047">
-                    <animateMotion
-                      dur="4.4s"
-                      repeatCount="indefinite"
-                      path="M -42,0 A 42,14 0 1,0 42,0 A 42,14 0 1,0 -42,0"
-                    />
-                  </circle>
-                </g>
-                <g transform="rotate(28)">
-                  <circle r="3.4" fill="#38bdf8">
-                    <animateMotion
-                      dur="5.2s"
-                      begin="-2.1s"
-                      repeatCount="indefinite"
-                      path="M 42,0 A 42,14 0 1,0 -42,0 A 42,14 0 1,0 42,0"
-                    />
-                  </circle>
-                </g>
-              </>
-            ) : (
-              <>
-                <circle cx="-35" cy="14" r="3.2" fill="#fde047" />
-                <circle cx="35" cy="14" r="3.2" fill="#38bdf8" />
-              </>
-            )}
-          </g>
-        </svg>
-      </div>
-    </div>
+        {/* Orbits — front halves (in front of the glass) with two electrons */}
+        <g fill="none" stroke={`url(#${goldId})`} strokeWidth="3.2" strokeLinecap="round">
+          <path transform="rotate(-26 60 70)" d="M10 70 A50 17 0 0 0 110 70" />
+          <path transform="rotate(26 60 70)" d="M10 70 A50 17 0 0 0 110 70" />
+        </g>
+        <circle cx="24" cy="97" r="5" fill="#FFE08A" stroke="#A86A08" strokeWidth="1" />
+        <circle cx="97" cy="96" r="5" fill="#FFE08A" stroke="#A86A08" strokeWidth="1" />
+      </svg>
+    </span>
   );
 };

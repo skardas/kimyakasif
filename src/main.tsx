@@ -4,6 +4,13 @@ import { App } from './App';
 import '@fontsource-variable/figtree';
 import '@fontsource-variable/bricolage-grotesque';
 import './styles/theme.css';
+import './styles/screens/curriculum.css';
+import './styles/screens/slides.css';
+import './styles/screens/lab.css';
+import './styles/screens/cards.css';
+import './styles/screens/games.css';
+import './styles/screens/exams.css';
+import './styles/screens/profile.css';
 
 // Register Offline PWA Service Worker
 if ('serviceWorker' in navigator && import.meta.env.PROD) {

@@ -1,18 +1,18 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import {
   Clock,
-  Star,
-  CheckCircle2,
-  XCircle,
-  HelpCircle,
+  Bookmark,
+  Check,
+  X,
   ChevronLeft,
   ChevronRight,
-  RotateCcw,
-  Award,
-  Sparkles,
-  X,
-  AlertTriangle,
   Lightbulb,
+  AlertTriangle,
+  RotateCcw,
+  ListChecks,
+  CircleCheck,
+  CircleX,
+  Minus,
 } from 'lucide-react';
 import type { CompiledQuestion, LanguageCode } from '../../types/chemistry';
 import type { ExamResultRecord } from '../../store/useAppStore';
@@ -21,6 +21,7 @@ import { calculateOsymNet, estimateTgPercentile, type TgPercentileResult } from 
 import { ChemicalDiagram } from '../diagrams/ChemicalDiagram';
 import { formatChemText } from '../common/ChemFormula';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { EXAM_STRINGS } from '../../i18n/examStrings';
 
 export interface QuizSessionModalProps {
   title: string;
@@ -39,6 +40,11 @@ export interface QuizSessionModalProps {
   onClose: () => void;
 }
 
+/**
+ * Quiz / mock-exam session. Full-screen on phones, centred sheet on tablet and desktop.
+ * Sound: practice answers play playCorrect/playWrong; mock exams answer silently by design
+ * (no per-question feedback) and play playSuccess+playApplause / playFinish at submit.
+ */
 export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
   title,
   subtitle,
@@ -56,6 +62,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
   onClose,
 }) => {
   const t = UI_TRANSLATIONS[lang];
+  const x = EXAM_STRINGS[lang] ?? EXAM_STRINGS.tr;
 
   // Current Question Pointer
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -88,24 +95,20 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
     tgPercentile?: TgPercentileResult;
   } | null>(null);
 
+  // Guards against double submission (StrictMode, timer + click race)
+  const submittedRef = useRef(false);
+  const dotsRef = useRef<HTMLDivElement>(null);
+
   const currentQ = questions[currentIndex];
   const isBookmarked = currentQ ? bookmarkedQuestionIds.includes(currentQ.id) : false;
 
-  // Timer Effect
+  // Timer Effect (pure ticking; expiry is handled in its own effect below)
   useEffect(() => {
     if (examStatus !== 'in-progress') return;
 
     const timer = setInterval(() => {
       if (isExamMode) {
-        setSecondsRemaining((prev) => {
-          if (prev <= 1) {
-            clearInterval(timer);
-            // Auto submit on time expiry
-            handleSubmitExam(true);
-            return 0;
-          }
-          return prev - 1;
-        });
+        setSecondsRemaining((prev) => Math.max(0, prev - 1));
       } else {
         setElapsedSeconds((prev) => prev + 1);
       }
@@ -116,8 +119,9 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
 
   // Handle Exam Submission
   const handleSubmitExam = useCallback(
-    (isAutoSubmit = false) => {
-      if (examStatus !== 'in-progress') return;
+    (_isAutoSubmit = false) => {
+      if (examStatus !== 'in-progress' || submittedRef.current) return;
+      submittedRef.current = true;
 
       let correct = 0;
       let wrong = 0;
@@ -198,6 +202,27 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
     ]
   );
 
+  // Auto submit on time expiry (uses the freshest answers)
+  useEffect(() => {
+    if (isExamMode && examStatus === 'in-progress' && secondsRemaining <= 0) {
+      handleSubmitExam(true);
+    }
+  }, [isExamMode, examStatus, secondsRemaining, handleSubmitExam]);
+
+  // Retry: reset local session state and start again
+  const handleRetry = useCallback(() => {
+    submittedRef.current = false; // start sound comes from the button's data-sfx="start"
+    setSelectedAnswers({});
+    setEvaluatedQuestions({});
+    setFinalResult(null);
+    setCurrentIndex(0);
+    setSecondsRemaining(totalDurationSeconds);
+    setElapsedSeconds(0);
+    setShowSubmitConfirm(false);
+    setShowExitConfirm(false);
+    setExamStatus('in-progress');
+  }, [totalDurationSeconds]);
+
   // Option selection handler
   const handleSelectOption = useCallback(
     (optionIndex: number) => {
@@ -236,27 +261,30 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
       if (showSubmitConfirm || showExitConfirm) return;
 
       const key = e.key.toUpperCase();
+      const rtl = document.documentElement.dir === 'rtl';
+      const forward = rtl ? 'ArrowLeft' : 'ArrowRight';
+      const back = rtl ? 'ArrowRight' : 'ArrowLeft';
 
       // Navigation: Arrows
-      if (e.key === 'ArrowRight') {
+      if (e.key === forward) {
         if (currentIndex < questions.length - 1) {
           setCurrentIndex((prev) => prev + 1);
         }
-      } else if (e.key === 'ArrowLeft') {
+      } else if (e.key === back) {
         if (currentIndex > 0) {
           setCurrentIndex((prev) => prev - 1);
         }
       }
       // Options A-E
-      else if (key === 'A' || key === '1') {
+      else if (examStatus !== 'submitted' && (key === 'A' || key === '1')) {
         handleSelectOption(0);
-      } else if (key === 'B' || key === '2') {
+      } else if (examStatus !== 'submitted' && (key === 'B' || key === '2')) {
         handleSelectOption(1);
-      } else if (key === 'C' || key === '3') {
+      } else if (examStatus !== 'submitted' && (key === 'C' || key === '3')) {
         handleSelectOption(2);
-      } else if (key === 'D' || key === '4') {
+      } else if (examStatus !== 'submitted' && (key === 'D' || key === '4')) {
         handleSelectOption(3);
-      } else if (key === 'E' || key === '5') {
+      } else if (examStatus !== 'submitted' && (key === 'E' || key === '5')) {
         handleSelectOption(4);
       }
       // Bookmark toggle: 'S' or 'Y' (Yıldız)
@@ -277,6 +305,12 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [currentIndex, questions.length, handleSelectOption, currentQ, onToggleBookmark, examStatus, isExamMode, onClose, showSubmitConfirm, showExitConfirm]);
 
+  // Keep the current navigator dot in view
+  useEffect(() => {
+    const el = dotsRef.current?.querySelector<HTMLElement>('[aria-selected="true"]');
+    el?.scrollIntoView({ block: 'nearest', inline: 'center' });
+  }, [currentIndex, examStatus]);
+
   // Format MM:SS
   const formatTime = (totalSeconds: number) => {
     const mins = Math.floor(Math.max(0, totalSeconds) / 60);
@@ -286,215 +320,225 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
 
   const answeredCount = Object.keys(selectedAnswers).length;
   const isTimeLow = isExamMode && secondsRemaining < 120 && examStatus === 'in-progress';
+  const isLast = currentIndex >= questions.length - 1;
 
-  return (
-    <div className="quiz-modal-backdrop" role="dialog" aria-modal="true" aria-label={title}>
-      <div className="quiz-modal-container">
-        {/* Top Header */}
-        <header className="quiz-modal-header">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', minWidth: 0 }}>
-            <button
-              type="button"
-              className="diagram-close-btn"
-              onClick={() => {
-                if (examStatus === 'in-progress' && isExamMode) {
-                  setShowExitConfirm(true);
-                } else {
-                  onClose();
-                }
-              }}
-              title="Çıkış"
-              aria-label="Kapat"
-            >
-              <X size={18} />
-            </button>
-            <div style={{ minWidth: 0 }}>
-              <h2
-                style={{
-                  margin: 0,
-                  fontSize: '1rem',
-                  fontWeight: 800,
-                  whiteSpace: 'nowrap',
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                  color: 'var(--text-primary)',
+  const requestClose = () => {
+    if (examStatus === 'in-progress' && isExamMode) {
+      setShowExitConfirm(true);
+    } else {
+      onClose();
+    }
+  };
+
+  const goNext = () => setCurrentIndex((prev) => Math.min(questions.length - 1, prev + 1));
+
+  const difficultyLabel = (d: string) => (x.difficulty as Record<string, string>)[d] ?? d.toUpperCase();
+
+  // Practice-mode result panel data
+  const practiceEvaluated = !isExamMode && !!currentQ && !!evaluatedQuestions[currentQ.id];
+  const currentPicked = currentQ ? selectedAnswers[currentQ.id] : undefined;
+  const currentCorrect = !!currentQ && currentPicked === currentQ.correctIndex;
+  const correctLetter = currentQ ? String.fromCharCode(65 + currentQ.correctIndex) : '';
+  const inReview = examStatus === 'review';
+
+  const renderSummary = () => {
+    if (!finalResult) return null;
+    const ratio = questions.length ? finalResult.correctCount / questions.length : 0;
+    const lit = Math.min(3, Math.ceil(ratio * 3));
+    const atom = (i: number, left: number, top: number, size: number) => (
+      <span
+        className="ky-atom"
+        style={{
+          left,
+          top,
+          width: size,
+          height: size,
+          ['--c' as string]: i < lit ? '#2dd9c3' : '#5b6b82',
+          ['--cd' as string]: i < lit ? '#0c8073' : '#2a3446',
+        }}
+      />
+    );
+
+    return (
+      <div className="qz-body qz-summary">
+        <section className="ky-stage qz-hero" aria-label={x.results}>
+          <div className="ky-floor" />
+          <div className="qz-hero__atoms ky-float" aria-hidden="true">
+            <span className="ky-bond" style={{ left: 46, top: 40, width: 30, transform: 'rotate(-32deg)' }} />
+            <span className="ky-bond" style={{ left: 78, top: 24, width: 30, transform: 'rotate(32deg)' }} />
+            {atom(0, 6, 36, 40)}
+            {atom(1, 47, 6, 56)}
+            {atom(2, 104, 36, 40)}
+          </div>
+          <h2 className="ky-disp">{examType === 'TG' ? 'Derece Provası Tamamlandı!' : 'Deneme Sınavı Tamamlandı!'}</h2>
+          <p>
+            {title} • {x.questionsN(questions.length)}
+          </p>
+          <div className="qz-hero__score ky-disp ky-mono">{finalResult.netScore.toFixed(2)}</div>
+          <div className="qz-hero__unit">{x.net}</div>
+        </section>
+
+        {finalResult.tgPercentile && (
+          <div className="ky-card qz-tg">
+            <div className="qz-tg__row">
+              <span className="qz-tg__tier">{finalResult.tgPercentile.tierTitle}</span>
+              <span className="ky-chip ky-chip--gold">{finalResult.tgPercentile.percentileFormatted}</span>
+            </div>
+            <p>
+              Tahmini YKS Sayısal Kimya Sıralama Bandı: <strong>{finalResult.tgPercentile.estimatedRankRange}</strong>
+            </p>
+            <em>"{finalResult.tgPercentile.feedbackMessage}"</em>
+          </div>
+        )}
+
+        <div className="qz-stats">
+          <div className="ky-well qz-stat qz-stat--ok">
+            <strong className="ky-mono">{finalResult.correctCount}</strong>
+            <span>{t.exams.correctCount}</span>
+          </div>
+          <div className="ky-well qz-stat qz-stat--bad">
+            <strong className="ky-mono">{finalResult.wrongCount}</strong>
+            <span>{t.exams.wrongCount}</span>
+          </div>
+          <div className="ky-well qz-stat qz-stat--empty">
+            <strong className="ky-mono">{finalResult.emptyCount}</strong>
+            <span>{t.exams.emptyCount}</span>
+          </div>
+          <div className="ky-well qz-stat qz-stat--time">
+            <strong className="ky-mono">{formatTime(finalResult.durationUsedSeconds)}</strong>
+            <span>{x.time}</span>
+          </div>
+        </div>
+
+        <section className="qz-review" aria-label={x.reviewList}>
+          <h3>{x.reviewList}</h3>
+          {questions.map((q, idx) => {
+            const answer = selectedAnswers[q.id];
+            const status = answer === undefined ? 'empty' : answer === q.correctIndex ? 'ok' : 'bad';
+            return (
+              <button
+                key={q.id}
+                type="button"
+                className={`ky-card qz-review__row qz-review__row--${status}`}
+                onClick={() => {
+                  setExamStatus('review');
+                  setCurrentIndex(idx);
                 }}
               >
-                {title}
-              </h2>
-              {subtitle && (
-                <p
-                  style={{
-                    margin: 0,
-                    fontSize: '0.75rem',
-                    color: 'var(--text-muted)',
-                    whiteSpace: 'nowrap',
-                    overflow: 'hidden',
-                    textOverflow: 'ellipsis',
-                  }}
-                >
-                  {subtitle}
-                </p>
-              )}
-            </div>
-          </div>
+                <span className="qz-review__n ky-mono">{idx + 1}</span>
+                <span className="qz-review__stem">{q.stem}</span>
+                <span className="qz-review__mark" aria-hidden="true">
+                  {status === 'ok' ? <CircleCheck size={20} /> : status === 'bad' ? <CircleX size={20} /> : <Minus size={20} />}
+                </span>
+              </button>
+            );
+          })}
+        </section>
 
-          {/* Timer Display */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <div
-              className={`score-timer ${isTimeLow ? 'timer-low' : ''}`}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.375rem',
-                fontSize: '0.925rem',
-                fontWeight: 700,
-                color: isTimeLow ? 'var(--accent-ruby)' : 'var(--text-primary)',
-                background: 'var(--bg-elevated)',
-                padding: '0.25rem 0.625rem',
-                borderRadius: 'var(--radius-sm)',
-                border: '1px solid var(--border-subtle)',
-              }}
+        <div className="qz-actions">
+          <button
+            type="button"
+            className="ky-btn ky-btn--quiet"
+            onClick={() => {
+              setExamStatus('review');
+              setCurrentIndex(0);
+            }}
+          >
+            <ListChecks size={18} aria-hidden="true" />
+            <span>{x.reviewQuestions}</span>
+          </button>
+          <button type="button" className="ky-btn ky-btn--quiet" data-sfx="start" onClick={handleRetry}>
+            <RotateCcw size={18} aria-hidden="true" />
+            <span>{x.retry}</span>
+          </button>
+          <button type="button" className="ky-btn ky-btn--primary" onClick={onClose}>
+            <span>{x.close}</span>
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="ky-modal-backdrop qz-backdrop" role="dialog" aria-modal="true" aria-label={title}>
+      <div className="qz">
+        {/* Top Header */}
+        <header className="qz-head">
+          <div className="qz-top">
+            <button type="button" className="ky-icon-btn" onClick={requestClose} aria-label={x.exitAria}>
+              <X size={20} aria-hidden="true" />
+            </button>
+
+            <div className="qz-titles">
+              <span className="ky-eyebrow">{subtitle || title}</span>
+              <h2>{title}</h2>
+            </div>
+
+            <span
+              className={`ky-chip ky-chip--gold ky-mono qz-timer ${isTimeLow ? 'qz-timer--low' : ''}`}
+              role="timer"
+              aria-live="off"
             >
-              <Clock size={16} />
+              <Clock size={15} aria-hidden="true" />
               <span>{isExamMode ? formatTime(secondsRemaining) : formatTime(elapsedSeconds)}</span>
-            </div>
+            </span>
 
-            {isExamMode && examStatus === 'in-progress' && (
+            {currentQ && examStatus !== 'submitted' && (
               <button
                 type="button"
-                className="btn-primary"
-                style={{ padding: '0.4rem 0.85rem', fontSize: '0.85rem' }}
-                onClick={() => setShowSubmitConfirm(true)}
+                className={`ky-icon-btn ${isBookmarked ? 'is-on' : ''}`}
+                aria-pressed={isBookmarked}
+                aria-label={isBookmarked ? x.bookmarkRemove : x.bookmarkAdd}
+                onClick={() => onToggleBookmark(currentQ.id)}
+                style={isBookmarked ? { color: 'var(--gold)' } : undefined}
               >
-                {t.exams.finishExam}
+                <Bookmark size={18} aria-hidden="true" fill={isBookmarked ? 'currentColor' : 'none'} />
               </button>
             )}
           </div>
+
+          {examStatus !== 'submitted' && (
+            <div className="qz-progress">
+              <div
+                className="ky-track"
+                role="progressbar"
+                aria-valuemin={0}
+                aria-valuemax={questions.length}
+                aria-valuenow={currentIndex + 1}
+              >
+                <div
+                  className="ky-fill"
+                  style={{ inlineSize: `${questions.length ? ((currentIndex + 1) / questions.length) * 100 : 0}%` }}
+                />
+              </div>
+              <span className="qz-count ky-mono">
+                {currentIndex + 1} / {questions.length}
+              </span>
+              {isExamMode && examStatus === 'in-progress' && (
+                <button
+                  type="button"
+                  className="ky-btn ky-btn--gold qz-finish"
+                  onClick={() => setShowSubmitConfirm(true)}
+                >
+                  {t.exams.finishExam}
+                </button>
+              )}
+              {inReview && finalResult && (
+                <button type="button" className="ky-btn ky-btn--quiet qz-finish" onClick={() => setExamStatus('submitted')}>
+                  {x.results}
+                </button>
+              )}
+            </div>
+          )}
         </header>
 
         {/* Modal Body */}
         {examStatus === 'submitted' && finalResult ? (
-          /* ============================================================= */
-          /* Celebration & Score Summary Screen                            */
-          /* ============================================================= */
-          <div className="quiz-modal-body" style={{ textAlign: 'center', padding: '2rem 1.25rem' }}>
-            <div className="score-summary-card">
-              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>
-                {finalResult.tgPercentile ? finalResult.tgPercentile.badgeIcon : finalResult.netScore >= 5 ? '🎉' : '🎯'}
-              </div>
-              <h2 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 800 }}>
-                {examType === 'TG' ? 'Derece Provası Tamamlandı!' : 'Deneme Sınavı Tamamlandı!'}
-              </h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', marginTop: '0.25rem' }}>
-                {title} • {questions.length} Soru
-              </p>
-
-              {/* Net Score Hero */}
-              <div className="score-net-hero">
-                {finalResult.netScore.toFixed(2)}{' '}
-                <span style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--text-secondary)' }}>Net</span>
-              </div>
-
-              {/* TG Percentile Card if applicable */}
-              {finalResult.tgPercentile && (
-                <div
-                  style={{
-                    background: 'rgba(245, 158, 11, 0.1)',
-                    border: '1.5px solid var(--accent-amber)',
-                    borderRadius: 'var(--radius-md)',
-                    padding: '1rem',
-                    margin: '1rem 0',
-                    textAlign: 'left',
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <span
-                      style={{
-                        fontWeight: 800,
-                        color: finalResult.tgPercentile.tierColor,
-                        fontSize: '1rem',
-                      }}
-                    >
-                      {finalResult.tgPercentile.tierTitle}
-                    </span>
-                    <span
-                      style={{
-                        background: 'var(--accent-amber)',
-                        color: '#000',
-                        fontWeight: 800,
-                        padding: '0.15rem 0.5rem',
-                        borderRadius: '4px',
-                        fontSize: '0.75rem',
-                      }}
-                    >
-                      {finalResult.tgPercentile.percentileFormatted}
-                    </span>
-                  </div>
-                  <p style={{ margin: '0.4rem 0 0', fontSize: '0.825rem', color: 'var(--text-secondary)' }}>
-                    Tahmini YKS Sayısal Kimya Sıralama Bandı: <strong>{finalResult.tgPercentile.estimatedRankRange}</strong>
-                  </p>
-                  <p style={{ margin: '0.4rem 0 0', fontSize: '0.8rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>
-                    "{finalResult.tgPercentile.feedbackMessage}"
-                  </p>
-                </div>
-              )}
-
-              {/* 4-Stat Breakdown Grid */}
-              <div className="score-stats-grid">
-                <div className="score-stat-box">
-                  <div className="score-stat-value" style={{ color: 'var(--accent-emerald)' }}>
-                    {finalResult.correctCount}
-                  </div>
-                  <div className="score-stat-label">Doğru</div>
-                </div>
-                <div className="score-stat-box">
-                  <div className="score-stat-value" style={{ color: 'var(--accent-ruby)' }}>
-                    {finalResult.wrongCount}
-                  </div>
-                  <div className="score-stat-label">Yanlış</div>
-                </div>
-                <div className="score-stat-box">
-                  <div className="score-stat-value" style={{ color: 'var(--text-muted)' }}>
-                    {finalResult.emptyCount}
-                  </div>
-                  <div className="score-stat-label">Boş</div>
-                </div>
-                <div className="score-stat-box">
-                  <div className="score-stat-value" style={{ color: 'var(--brand-primary)' }}>
-                    {formatTime(finalResult.durationUsedSeconds)}
-                  </div>
-                  <div className="score-stat-label">Süre</div>
-                </div>
-              </div>
-
-              {/* Bottom Action Buttons */}
-              <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', marginTop: '1.5rem' }}>
-                <button
-                  type="button"
-                  className="btn-secondary"
-                  style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}
-                  onClick={() => {
-                    setExamStatus('review');
-                    setCurrentIndex(0);
-                  }}
-                >
-                  <HelpCircle size={16} />
-                  <span>Soruları İncele</span>
-                </button>
-                <button type="button" className="btn-primary" onClick={onClose}>
-                  <span>Tamamla & Kapat</span>
-                </button>
-              </div>
-            </div>
-          </div>
+          renderSummary()
         ) : (
-          /* ============================================================= */
-          /* Active Question View                                          */
-          /* ============================================================= */
-          <div className="quiz-modal-body">
-            {/* Question Navigator Grid */}
-            <div className="question-nav-grid" role="tablist" aria-label="Soru Gezgini">
+          <div className="qz-body">
+            {/* Question Navigator */}
+            <div ref={dotsRef} className="qz-dots ky-scroll-x" role="tablist" aria-label={x.navigator}>
               {questions.map((q, idx) => {
                 const answer = selectedAnswers[q.id];
                 const isCurrent = idx === currentIndex;
@@ -502,19 +546,15 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
 
                 let statusClass = 'unvisited';
                 if (!isExamMode) {
-                  // Practice Mode Navigator Status
                   if (evaluatedQuestions[q.id]) {
                     statusClass = answer === q.correctIndex ? 'correct' : 'wrong';
                   }
-                } else {
-                  // Exam Mode Navigator Status
-                  if (examStatus === 'review') {
-                    if (answer === undefined) statusClass = 'unvisited';
-                    else if (answer === q.correctIndex) statusClass = 'correct';
-                    else statusClass = 'wrong';
-                  } else {
-                    if (answer !== undefined) statusClass = 'answered';
-                  }
+                } else if (examStatus === 'review') {
+                  if (answer === undefined) statusClass = 'unvisited';
+                  else if (answer === q.correctIndex) statusClass = 'correct';
+                  else statusClass = 'wrong';
+                } else if (answer !== undefined) {
+                  statusClass = 'answered';
                 }
 
                 return (
@@ -523,11 +563,9 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                     type="button"
                     role="tab"
                     aria-selected={isCurrent}
-                    className={`nav-dot ${statusClass} ${isCurrent ? 'active' : ''} ${
-                      isQBookmarked ? 'bookmarked' : ''
-                    }`}
+                    aria-label={x.questionAria(idx + 1)}
+                    className={`qz-dot ${statusClass} ${isCurrent ? 'active' : ''} ${isQBookmarked ? 'bookmarked' : ''}`}
                     onClick={() => setCurrentIndex(idx)}
-                    title={`Soru ${idx + 1}`}
                   >
                     {idx + 1}
                   </button>
@@ -535,142 +573,39 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
               })}
             </div>
 
-            {/* Current Question Stem & Metadata */}
             {currentQ && (
-              <div className="question-content-container">
-                {/* Meta Bar: Difficulty, Unit, Bookmark Star */}
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    marginBottom: '0.75rem',
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <>
+                {/* Stem card */}
+                <div className="ky-card qz-stem">
+                  <div className="qz-stem__meta">
                     <span
-                      style={{
-                        fontSize: '0.75rem',
-                        fontWeight: 700,
-                        textTransform: 'uppercase',
-                        padding: '0.2rem 0.5rem',
-                        borderRadius: '4px',
-                        background: 'var(--bg-elevated)',
-                        color: 'var(--brand-primary)',
-                        border: '1px solid var(--border-subtle)',
-                      }}
+                      className={`ky-chip ${
+                        currentQ.difficulty === 'osym' ? 'ky-chip--bad' : currentQ.difficulty === 'hard' ? 'ky-chip--gold' : ''
+                      }`}
                     >
-                      Soru {currentIndex + 1} / {questions.length}
+                      {difficultyLabel(currentQ.difficulty)}
                     </span>
-                    <span
-                      style={{
-                        fontSize: '0.75rem',
-                        fontWeight: 600,
-                        padding: '0.2rem 0.5rem',
-                        borderRadius: '4px',
-                        background: 'var(--bg-elevated)',
-                        color:
-                          currentQ.difficulty === 'osym'
-                            ? 'var(--accent-ruby)'
-                            : currentQ.difficulty === 'hard'
-                            ? 'var(--accent-amber)'
-                            : 'var(--text-secondary)',
-                      }}
-                    >
-                      {currentQ.difficulty.toUpperCase()}
-                    </span>
-                    <span
-                      style={{
-                        fontSize: '0.75rem',
-                        color: 'var(--text-muted)',
-                      }}
-                    >
-                      {currentQ.unitId.toUpperCase()}
-                    </span>
+                    <span className="ky-chip ky-mono">{currentQ.unitId.toUpperCase()}</span>
                   </div>
 
-                  <button
-                    type="button"
-                    onClick={() => onToggleBookmark(currentQ.id)}
-                    style={{
-                      background: isBookmarked ? 'rgba(245, 158, 11, 0.15)' : 'var(--bg-elevated)',
-                      border: `1px solid ${isBookmarked ? 'var(--accent-amber)' : 'var(--border-subtle)'}`,
-                      borderRadius: 'var(--radius-sm)',
-                      padding: '0.3rem 0.6rem',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '0.3rem',
-                      fontSize: '0.8rem',
-                      color: isBookmarked ? 'var(--accent-amber)' : 'var(--text-secondary)',
-                      transition: 'all 0.15s ease',
-                    }}
-                    title={isBookmarked ? 'Yıldızdan Çıkar' : 'Yıldıza Ekle'}
-                  >
-                    <Star size={14} fill={isBookmarked ? 'var(--accent-amber)' : 'none'} />
-                    <span>{isBookmarked ? 'Yıldızlı' : 'Yıldızla'}</span>
-                  </button>
+                  {currentQ.diagram && <ChemicalDiagram spec={currentQ.diagram} allowZoom={true} />}
+
+                  <div className="qz-stem__text">{formatChemText(currentQ.stem)}</div>
                 </div>
 
-                {/* Embedded Chemical Diagram if available */}
-                {currentQ.diagram && (
-                  <ChemicalDiagram spec={currentQ.diagram} allowZoom={true} />
-                )}
-
-                {/* Question Stem */}
-                <div
-                  className="question-stem"
-                  style={{
-                    fontSize: '1.025rem',
-                    lineHeight: 1.6,
-                    color: 'var(--text-primary)',
-                    fontWeight: 500,
-                    marginBottom: '1.25rem',
-                    whiteSpace: 'pre-line',
-                  }}
-                >
-                  {formatChemText(currentQ.stem)}
-                </div>
-
-                {/* Options List (A-E) */}
-                <div className="options-list" role="radiogroup" aria-label="Seçenekler">
+                {/* Options (A-E) */}
+                <div className="qz-options" role="radiogroup" aria-label={x.options}>
                   {currentQ.options.map((optText, optIdx) => {
-                    const optionLetter = String.fromCharCode(65 + optIdx); // A, B, C, D, E
-                    const userSelected = selectedAnswers[currentQ.id];
-                    const isSelected = userSelected === optIdx;
+                    const optionLetter = String.fromCharCode(65 + optIdx);
+                    const isSelected = currentPicked === optIdx;
+                    const frozen = practiceEvaluated || inReview;
 
-                    let cardClass = '';
-                    let disabled = false;
-
-                    if (!isExamMode) {
-                      // Practice mode immediate feedback
-                      const isEvaluated = evaluatedQuestions[currentQ.id];
-                      if (isEvaluated) {
-                        disabled = true;
-                        if (optIdx === currentQ.correctIndex) {
-                          cardClass = 'correct';
-                        } else if (isSelected) {
-                          cardClass = 'wrong';
-                        } else {
-                          cardClass = 'disabled';
-                        }
-                      } else if (isSelected) {
-                        cardClass = 'selected';
-                      }
-                    } else {
-                      // Exam mode: silent selection or review
-                      if (examStatus === 'review') {
-                        disabled = true;
-                        if (optIdx === currentQ.correctIndex) {
-                          cardClass = 'correct';
-                        } else if (isSelected) {
-                          cardClass = 'wrong';
-                        } else {
-                          cardClass = 'disabled';
-                        }
-                      } else {
-                        if (isSelected) cardClass = 'selected';
-                      }
+                    let stateClass = '';
+                    if (frozen) {
+                      if (optIdx === currentQ.correctIndex) stateClass = 'right';
+                      else if (isSelected) stateClass = 'wrong';
+                    } else if (isSelected) {
+                      stateClass = 'on';
                     }
 
                     return (
@@ -679,153 +614,142 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                         type="button"
                         role="radio"
                         aria-checked={isSelected}
-                        disabled={disabled}
-                        className={`option-card ${cardClass}`}
+                        disabled={frozen}
+                        className={`ky-opt ${stateClass} ${stateClass === 'wrong' && !isExamMode ? 'ky-shake' : ''}`}
                         onClick={() => handleSelectOption(optIdx)}
                       >
-                        <div className="option-key-badge">{optionLetter}</div>
-                        <div className="option-text">
-                          {formatChemText(optText)}
-                        </div>
+                        <span className="ky-key">{optionLetter}</span>
+                        <span className="qz-opt-text">{formatChemText(optText)}</span>
+                        {stateClass === 'right' && (
+                          <span className="qz-opt-mark" aria-hidden="true">
+                            <Check size={22} strokeWidth={3} />
+                          </span>
+                        )}
+                        {stateClass === 'wrong' && (
+                          <span className="qz-opt-mark" aria-hidden="true">
+                            <X size={22} strokeWidth={3} />
+                          </span>
+                        )}
                       </button>
                     );
                   })}
                 </div>
 
-                {/* Practice Mode Solution Explanation */}
-                {(!isExamMode && evaluatedQuestions[currentQ.id]) || examStatus === 'review' ? (
-                  <div
-                    className={`solution-explanation-box ${
-                      selectedAnswers[currentQ.id] === currentQ.correctIndex ? 'correct-theme' : 'wrong-theme'
-                    }`}
-                  >
-                    <div
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '0.4rem',
-                        fontSize: '0.9rem',
-                        fontWeight: 700,
-                        color:
-                          selectedAnswers[currentQ.id] === currentQ.correctIndex
-                            ? 'var(--accent-emerald)'
-                            : 'var(--accent-ruby)',
-                        marginBottom: '0.5rem',
-                      }}
-                    >
-                      {selectedAnswers[currentQ.id] === currentQ.correctIndex ? (
+                {/* Review explanation (exam mode review only; practice uses the result panel) */}
+                {inReview && (
+                  <div className={`ky-card qz-note ${currentPicked === currentQ.correctIndex ? 'qz-note--ok' : 'qz-note--bad'}`}>
+                    <div className="qz-note__title ky-disp">
+                      {currentPicked === currentQ.correctIndex ? (
                         <>
-                          <CheckCircle2 size={18} />
-                          <span>Doğru Cevap! Tebrikler.</span>
+                          <Check size={18} aria-hidden="true" />
+                          <span>{x.correctTitle}</span>
                         </>
                       ) : (
                         <>
-                          <XCircle size={18} />
-                          <span>
-                            Yanlış Cevap. Doğru Seçenek: {String.fromCharCode(65 + currentQ.correctIndex)}
-                          </span>
+                          <X size={18} aria-hidden="true" />
+                          <span>{x.wrongAnswer(correctLetter)}</span>
                         </>
                       )}
                     </div>
-                    <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
-                      {formatChemText(currentQ.explanation)}
-                    </p>
+                    <p>{formatChemText(currentQ.explanation)}</p>
+                  </div>
+                )}
 
-                    {/* ÖSYM Tips if available */}
-                    <div className="solution-osym-tip">
-                      <Lightbulb size={18} style={{ flexShrink: 0, marginTop: '2px' }} />
-                      <div>
-                        <strong>ÖSYM Dikkat Tuzağı:</strong> Soruda verilen reaksiyon denklemi, gaz kanunu veya
-                        asit-baz kuralını incelerken öncüllerdeki kesinlik ve istisna ifadelerine odaklanınız.
-                      </div>
+                {(practiceEvaluated || inReview) && (
+                  <div className="ky-well qz-tip">
+                    <Lightbulb size={18} aria-hidden="true" />
+                    <div>
+                      <strong>ÖSYM Dikkat Tuzağı:</strong> Soruda verilen reaksiyon denklemi, gaz kanunu veya asit-baz
+                      kuralını incelerken öncüllerdeki kesinlik ve istisna ifadelerine odaklanınız.
                     </div>
                   </div>
-                ) : null}
-              </div>
+                )}
+              </>
             )}
           </div>
         )}
 
-        {/* Modal Footer Controls */}
-        {examStatus !== 'submitted' && (
-          <footer className="quiz-modal-footer">
+        {/* Practice result panel: slides up from the bottom after answering */}
+        {practiceEvaluated && currentQ && examStatus !== 'submitted' && (
+          <div className="qz-dock">
+            <div role="status" className={`ky-card qz-result ${currentCorrect ? 'qz-result--ok' : 'qz-result--bad'}`}>
+              <div className="qz-result__text">
+                <p className="qz-result__title ky-disp">
+                  {currentCorrect ? x.correctTitle : `${x.wrongTitle} — ${x.wrongAnswer(correctLetter)}`}
+                </p>
+                <p>{formatChemText(currentQ.explanation)}</p>
+              </div>
+              {!isLast ? (
+                <button type="button" className="ky-btn ky-btn--primary" onClick={goNext}>
+                  <span>{t.exams.nextQuestion}</span>
+                  <ChevronRight size={18} aria-hidden="true" className="qz-flip" />
+                </button>
+              ) : (
+                <button type="button" className="ky-btn ky-btn--primary" onClick={onClose}>
+                  <span>{x.sessionDone}</span>
+                </button>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Footer Controls */}
+        {examStatus !== 'submitted' && !practiceEvaluated && (
+          <footer className="qz-foot">
             <button
               type="button"
-              className="btn-secondary"
+              className="ky-btn ky-btn--quiet"
               disabled={currentIndex === 0}
               onClick={() => setCurrentIndex((prev) => Math.max(0, prev - 1))}
-              style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}
+              aria-label={t.exams.prevQuestion}
             >
-              <ChevronLeft size={16} />
-              <span>Önceki Soru</span>
+              <ChevronLeft size={18} aria-hidden="true" className="qz-flip" />
+              <span className="qz-lbl-prev">{t.exams.prevQuestion}</span>
             </button>
 
-            <span style={{ fontSize: '0.825rem', color: 'var(--text-muted)' }}>
-              {isExamMode ? `${answeredCount} / ${questions.length} Cevaplandı` : ''}
+            <span className="qz-foot__mid ky-mono">
+              {isExamMode && examStatus === 'in-progress' ? `${answeredCount} / ${questions.length}` : ''}
             </span>
 
-            {currentIndex < questions.length - 1 ? (
-              <button
-                type="button"
-                className="btn-primary"
-                onClick={() => setCurrentIndex((prev) => Math.min(questions.length - 1, prev + 1))}
-                style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}
-              >
-                <span>Sonraki Soru</span>
-                <ChevronRight size={16} />
+            {!isLast ? (
+              <button type="button" className="ky-btn ky-btn--primary" onClick={goNext}>
+                <span>{t.exams.nextQuestion}</span>
+                <ChevronRight size={18} aria-hidden="true" className="qz-flip" />
               </button>
             ) : isExamMode && examStatus === 'in-progress' ? (
-              <button
-                type="button"
-                className="btn-primary"
-                onClick={() => setShowSubmitConfirm(true)}
-                style={{ background: 'var(--accent-emerald)', borderColor: 'var(--accent-emerald)' }}
-              >
-                <span>Sınavı Bitir</span>
+              <button type="button" className="ky-btn ky-btn--ok" onClick={() => setShowSubmitConfirm(true)}>
+                <span>{t.exams.finishExam}</span>
               </button>
             ) : (
-              <button type="button" className="btn-primary" onClick={onClose}>
-                <span>Oturumu Bitir</span>
+              <button type="button" className="ky-btn ky-btn--primary" onClick={onClose}>
+                <span>{x.sessionDone}</span>
               </button>
             )}
           </footer>
         )}
 
-        {/* Confirmation Modal: Finish Exam */}
+        {/* Confirmation: Finish Exam */}
         {showSubmitConfirm && (
-          <div
-            className="diagram-zoom-overlay"
-            style={{ zIndex: 10000 }}
-            onClick={() => setShowSubmitConfirm(false)}
-          >
+          <div className="ky-modal-backdrop qz-confirm-backdrop" onClick={() => setShowSubmitConfirm(false)}>
             <div
-              className="diagram-zoom-card"
-              style={{ maxWidth: 420, padding: '1.5rem', textAlign: 'center' }}
+              className="ky-card qz-confirm ky-pop"
+              role="alertdialog"
+              aria-modal="true"
+              aria-label="Sınavı Bitirmek İstiyor musun?"
               onClick={(e) => e.stopPropagation()}
             >
-              <AlertTriangle size={36} color="var(--accent-amber)" style={{ margin: '0 auto 0.75rem' }} />
-              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.2rem', color: 'var(--text-primary)' }}>
-                Sınavı Bitirmek İstiyor musun?
-              </h3>
-              <p style={{ margin: '0 0 1.25rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+              <AlertTriangle size={34} className="qz-confirm__icon" aria-hidden="true" />
+              <h3 className="ky-disp">Sınavı Bitirmek İstiyor musun?</h3>
+              <p>
                 {answeredCount < questions.length
                   ? `${questions.length - answeredCount} adet boş sorun var. Yanıtların puanlanıp Net skorun hesaplanacak.`
                   : 'Tüm soruları yanıtladın. Net skorun hesaplanıp kaydedilecek.'}
               </p>
-              <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center' }}>
-                <button
-                  type="button"
-                  className="btn-secondary"
-                  onClick={() => setShowSubmitConfirm(false)}
-                >
+              <div className="qz-confirm__actions">
+                <button type="button" className="ky-btn ky-btn--quiet" onClick={() => setShowSubmitConfirm(false)}>
                   Devam Et
                 </button>
-                <button
-                  type="button"
-                  className="btn-primary"
-                  onClick={() => handleSubmitExam(false)}
-                  style={{ background: 'var(--accent-emerald)', borderColor: 'var(--accent-emerald)' }}
-                >
+                <button type="button" className="ky-btn ky-btn--ok" onClick={() => handleSubmitExam(false)}>
                   Evet, Bitir
                 </button>
               </div>
@@ -833,39 +757,24 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
           </div>
         )}
 
-        {/* Confirmation Modal: Exit Early */}
+        {/* Confirmation: Exit Early */}
         {showExitConfirm && (
-          <div
-            className="diagram-zoom-overlay"
-            style={{ zIndex: 10000 }}
-            onClick={() => setShowExitConfirm(false)}
-          >
+          <div className="ky-modal-backdrop qz-confirm-backdrop" onClick={() => setShowExitConfirm(false)}>
             <div
-              className="diagram-zoom-card"
-              style={{ maxWidth: 420, padding: '1.5rem', textAlign: 'center' }}
+              className="ky-card qz-confirm ky-pop"
+              role="alertdialog"
+              aria-modal="true"
+              aria-label="Sınavdan Çıkmak İstiyor musun?"
               onClick={(e) => e.stopPropagation()}
             >
-              <AlertTriangle size={36} color="var(--accent-ruby)" style={{ margin: '0 auto 0.75rem' }} />
-              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.2rem', color: 'var(--text-primary)' }}>
-                Sınavdan Çıkmak İstiyor musun?
-              </h3>
-              <p style={{ margin: '0 0 1.25rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                Şimdi çıkarsan sınav kaydedilmeyecektir.
-              </p>
-              <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center' }}>
-                <button
-                  type="button"
-                  className="btn-secondary"
-                  onClick={() => setShowExitConfirm(false)}
-                >
+              <AlertTriangle size={34} className="qz-confirm__icon qz-confirm__icon--bad" aria-hidden="true" />
+              <h3 className="ky-disp">Sınavdan Çıkmak İstiyor musun?</h3>
+              <p>Şimdi çıkarsan sınav kaydedilmeyecektir.</p>
+              <div className="qz-confirm__actions">
+                <button type="button" className="ky-btn ky-btn--quiet" onClick={() => setShowExitConfirm(false)}>
                   Sınava Dön
                 </button>
-                <button
-                  type="button"
-                  className="btn-primary"
-                  onClick={onClose}
-                  style={{ background: 'var(--accent-ruby)', borderColor: 'var(--accent-ruby)' }}
-                >
+                <button type="button" className="ky-btn ky-btn--danger" onClick={onClose}>
                   Çık
                 </button>
               </div>

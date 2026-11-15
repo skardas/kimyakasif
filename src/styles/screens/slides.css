@@ -1,0 +1,534 @@
+/* ==========================================================================
+   Unit slide deck modal + chemical diagram chrome  (Obsidian Lab Glass)
+   ========================================================================== */
+
+/* ---- Deck dialog: full-screen sheet on phones, centred on larger screens -- */
+.sd {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  inline-size: 100vw;
+  max-inline-size: 100vw;
+  block-size: 100dvh;
+  max-block-size: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+  font-family: var(--font-sans);
+}
+
+.sd:not([open]) { display: none; }
+
+.sd::backdrop {
+  background: var(--scrim);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+@media (min-width: 720px) {
+  .sd {
+    margin: auto;
+    inline-size: min(94vw, 980px);
+    max-inline-size: 980px;
+    block-size: min(90dvh, 820px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-xl);
+    box-shadow: inset 0 1px 0 var(--hi), var(--shadow-pop);
+  }
+}
+
+.sd-box {
+  display: flex;
+  flex-direction: column;
+  block-size: 100%;
+  min-block-size: 0;
+  padding-block-start: env(safe-area-inset-top, 0px);
+}
+
+.sd-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px 10px;
+  padding-inline-start: max(16px, env(safe-area-inset-left, 0px));
+  padding-inline-end: max(16px, env(safe-area-inset-right, 0px));
+  min-inline-size: 0;
+}
+
+.sd-head-info { flex: 1 1 0; min-inline-size: 0; display: flex; flex-direction: column; gap: 2px; }
+
+.unit-slide-title,
+.sd-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.slide-counter-badge { flex: none; }
+
+.sd-markers {
+  flex: none;
+  margin-inline: 0;
+  padding-inline: 16px;
+  padding-block: 2px 6px;
+  border-block-end: 1px solid var(--line);
+}
+
+/* ---- Carousel ---------------------------------------------------------- */
+.slide-deck-track {
+  display: flex;
+  flex: 1 1 0;
+  min-block-size: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide-deck-track::-webkit-scrollbar { display: none; }
+
+:root[data-reduce-motion] .slide-deck-track { scroll-behavior: auto; }
+@media (prefers-reduced-motion: reduce) { .slide-deck-track { scroll-behavior: auto; } }
+
+.study-slide-card {
+  flex: 0 0 100%;
+  inline-size: 100%;
+  min-inline-size: 0;
+  box-sizing: border-box;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  padding: 16px;
+  padding-block-end: 24px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.study-slide-card > * { flex: none; min-inline-size: 0; }
+
+@media (min-width: 720px) {
+  .study-slide-card { padding: 20px 28px 28px; gap: 16px; }
+}
+
+.slide-card-header { display: flex; flex-direction: column; gap: 4px; }
+
+.slide-badge-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.slide-card-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+/* ---- Footer ------------------------------------------------------------ */
+.sd-foot {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 16px;
+  padding-block-end: max(12px, env(safe-area-inset-bottom, 0px));
+  border-block-start: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.sd-nav { min-block-size: 48px; padding-inline: 14px; flex: none; }
+.sd-nav:disabled { opacity: 0.4; }
+[dir="rtl"] .sd-nav svg { transform: scaleX(-1); }
+.sd-dots { flex: 0 1 auto; min-inline-size: 0; overflow: hidden; gap: 5px; }
+.sd-dots > span { inline-size: 7px; block-size: 7px; flex: none; }
+.sd-dots > span.on { inline-size: 20px; }
+
+@media (max-width: 479px) {
+  .sd-nav span { display: none; }
+  .sd-nav { padding-inline: 16px; }
+}
+
+/* ---- Slide 1/3: diagrams + big picture --------------------------------- */
+.big-picture-quote {
+  margin: 0;
+  padding: 16px 18px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: var(--text);
+  background: var(--accent-soft);
+  border-inline-start: 4px solid var(--accent);
+  border-radius: var(--radius-sm);
+}
+
+.slide-diagram-box { position: relative; border-radius: var(--radius-md); overflow: hidden; }
+.slide-diagram-box .chemical-diagram-container { margin: 0; }
+
+.diagram-expand-overlay-btn {
+  position: absolute;
+  inset-block-start: 0.6rem;
+  inset-inline-end: 0.6rem;
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--line-strong);
+  cursor: pointer;
+  min-block-size: 36px;
+}
+
+/* ---- Slide 2: subtopics ------------------------------------------------ */
+.deep-subtopics-stack { display: flex; flex-direction: column; gap: 12px; }
+
+.subtopic-card-item {
+  --sub: var(--accent);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-inline-start: 4px solid var(--sub);
+}
+
+.subtopic-card-header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
+
+.subtopic-badge {
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--text);
+  background: color-mix(in srgb, var(--sub) 22%, transparent);
+  border: 1px solid color-mix(in srgb, var(--sub) 45%, transparent);
+}
+
+.subtopic-title { margin: 0; font-size: 1.02rem; font-weight: 700; color: var(--text); flex: 1 1 160px; min-inline-size: 0; }
+.subtopic-summary { margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--text2); }
+.subtopic-keypoints { margin: 0; padding-inline-start: 1.2rem; display: flex; flex-direction: column; gap: 6px; font-size: 0.88rem; line-height: 1.5; color: var(--text); }
+.subtopic-keypoints li::marker { color: var(--sub); }
+
+/* ---- Slide 3: golden formulas ----------------------------------------- */
+.golden-formulas-stack { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); }
+
+.golden-formula-card {
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background: var(--gold-soft);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formula-header { display: flex; align-items: center; gap: 8px; }
+.formula-icon { color: var(--gold); flex: none; }
+.formula-label { font-size: 0.82rem; font-weight: 800; color: var(--text); }
+
+.formula-expression {
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--bg2);
+  border: 1px solid var(--line);
+  overflow-x: auto;
+}
+
+.formula-expression code {
+  font-family: var(--font-formula);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.formula-exam-note { margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--text2); }
+.formula-exam-note strong { color: var(--text); }
+
+/* ---- Slide 4: mnemonics ------------------------------------------------ */
+.mnemonics-cards-grid { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); }
+
+.mnemonic-card { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+
+.mnemonic-badge {
+  align-self: flex-start;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-formula);
+  font-size: 0.82rem;
+  font-weight: 800;
+  background: var(--violet-soft);
+  color: var(--violet);
+}
+
+.mnemonic-title { margin: 0; font-size: 1.02rem; font-weight: 700; color: var(--text); }
+
+.mnemonic-box { padding: 10px 12px; border-radius: var(--radius-sm); background: var(--raised); border: 1px solid var(--line); }
+.mnemonic-sublabel { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.mnemonic-expansion { margin: 4px 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--text); }
+
+.mnemonic-tip { margin: 0; display: flex; gap: 8px; align-items: flex-start; font-size: 0.85rem; line-height: 1.5; color: var(--text2); }
+.tip-icon { color: var(--gold); flex: none; margin-block-start: 2px; }
+
+/* ---- Slide 5: pathways / steppers ------------------------------------- */
+.visual-pathways-stack { display: flex; flex-direction: column; gap: 12px; }
+.sequence-pathway-card { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.pathway-title { margin: 0; font-size: 1rem; font-weight: 700; color: var(--text); }
+.stepper-track { display: flex; flex-direction: column; gap: 8px; position: relative; }
+
+.stepper-node {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  inline-size: 100%;
+  min-block-size: 48px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--raised);
+  border: 1px solid var(--line);
+  color: var(--text2);
+  text-align: start;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.stepper-node.active { background: var(--accent-soft); border-color: var(--accent); color: var(--text); }
+
+.node-num {
+  flex: none;
+  inline-size: 28px;
+  block-size: 28px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-formula);
+  font-size: 0.82rem;
+  font-weight: 800;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+.stepper-node.active .node-num { background: var(--accent); color: var(--on-accent); border-color: transparent; }
+.node-text { flex: 1 1 0; min-inline-size: 0; font-size: 0.9rem; line-height: 1.45; padding-block-start: 3px; overflow-wrap: anywhere; }
+
+/* ---- Slide 6: comparisons --------------------------------------------- */
+.visual-matrix-cards-grid { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); }
+.comparison-card { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+
+.comparison-concepts-header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+
+.concept-chip-a,
+.concept-chip-b {
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.concept-chip-a { background: var(--accent-soft); color: var(--accent); }
+.concept-chip-b { background: var(--violet-soft); color: var(--violet); }
+
+.vs-pill {
+  font-family: var(--font-formula);
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--muted);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--line);
+}
+
+.comparison-distinction { margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--text2); }
+
+/* ---- Slide 7: traps ---------------------------------------------------- */
+.trap-hunter-stack { display: flex; flex-direction: column; gap: 12px; }
+.trap-hunter-card { padding: 14px; display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+
+.trap-item-bad,
+.trap-item-good { display: flex; flex-direction: column; gap: 6px; padding: 12px; border-radius: var(--radius-sm); }
+.trap-item-bad { background: var(--bad-soft); }
+.trap-item-good { background: var(--ok-soft); }
+
+.trap-label,
+.truth-label { display: flex; align-items: center; gap: 6px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+.trap-label { color: var(--bad); }
+.truth-label { color: var(--ok); }
+.trap-label svg, .truth-label svg { flex: none; }
+
+.trap-statement,
+.truth-statement { margin: 0; font-size: 0.9rem; line-height: 1.5; color: var(--text); }
+
+@media (min-width: 720px) {
+  .trap-hunter-card { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mnemonics-cards-grid,
+  .visual-matrix-cards-grid,
+  .golden-formulas-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ---- Slide 8: active recall ------------------------------------------- */
+.active-recall-header-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; }
+.recall-instruction { margin: 0; flex: 1 1 200px; font-size: 0.9rem; line-height: 1.5; color: var(--text2); }
+
+.recall-score-pill {
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  background: var(--gold-soft);
+  color: var(--gold);
+  font-size: 0.82rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.active-recall-deck { display: flex; flex-direction: column; gap: 12px; }
+.recall-question-card { padding: 14px; display: flex; flex-direction: column; gap: 10px; transition: border-color 0.2s ease; }
+.recall-question-card.correct { border-color: var(--ok); }
+.recall-question-card.wrong { border-color: var(--bad); }
+.recall-q-num { font-family: var(--font-formula); font-size: 0.75rem; font-weight: 800; color: var(--muted); }
+.recall-q-text { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--text); }
+.recall-options-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.recall-btn { flex: 1 1 120px; min-inline-size: 0; }
+.recall-btn:disabled:not(.ky-btn--ok):not(.ky-btn--danger) { opacity: 0.55; }
+
+.recall-feedback-box { display: flex; flex-direction: column; gap: 6px; padding-block-start: 10px; border-block-start: 1px dashed var(--line); font-size: 0.85rem; line-height: 1.5; }
+.recall-feedback-box p { margin: 0; }
+.feedback-correct,
+.feedback-wrong { display: flex; align-items: center; gap: 6px; font-weight: 800; }
+.feedback-correct { color: var(--ok); }
+.feedback-wrong { color: var(--bad); }
+.truth-note { color: var(--text2); }
+.truth-note strong { color: var(--text); }
+
+/* ---- Slide 9: twin quiz + action hub ---------------------------------- */
+.slide-twin-card { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.twin-card-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.twin-badge { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold); }
+.twin-cycle-btn { cursor: pointer; min-block-size: 36px; }
+.twin-stem { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--text); overflow-wrap: anywhere; }
+.twin-options-list { display: flex; flex-direction: column; gap: 8px; }
+.twin-option-btn { min-block-size: 52px; padding-block: 8px; }
+.opt-text { flex: 1 1 0; min-inline-size: 0; font-size: 0.92rem; line-height: 1.45; overflow-wrap: anywhere; }
+.twin-explanation-box { padding: 12px 14px; border-radius: var(--radius-sm); background: var(--accent-soft); }
+.twin-explanation-text { margin: 0; font-size: 0.88rem; line-height: 1.55; color: var(--text); overflow-wrap: anywhere; }
+
+.slide-completion-box { display: flex; }
+.completion-badge-done { flex: 1; justify-content: center; }
+
+.action-hub-section { display: flex; flex-direction: column; gap: 10px; }
+.action-hub-title { margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text); }
+.action-hub-grid { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+
+.action-card-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  min-block-size: 64px;
+  text-align: start;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.08s ease, border-color 0.15s ease;
+}
+
+.action-card-btn:active { transform: translateY(2px); }
+@media (hover: hover) { .action-card-btn:hover { border-color: var(--line-strong); } }
+.action-card-btn .ky-tile { margin-block-end: 4px; }
+.action-card-text { display: flex; flex-direction: column; gap: 2px; min-inline-size: 0; flex: 1; }
+.action-title { font-size: 0.95rem; font-weight: 700; color: var(--text); }
+.action-sub { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
+
+@media (min-width: 720px) { .action-hub-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .action-card-btn { flex-direction: column; align-items: flex-start; } }
+
+/* ---- Diagram zoom dialog (inside deck) -------------------------------- */
+.sd-zoom {
+  padding: 0;
+  margin: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--bg);
+  color: var(--text);
+  inline-size: min(96vw, 960px);
+  max-block-size: 92dvh;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 var(--hi), var(--shadow-pop);
+}
+
+.sd-zoom:not([open]) { display: none; }
+.sd-zoom::backdrop { background: var(--scrim); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.sd-zoom-card { display: flex; flex-direction: column; max-block-size: 92dvh; overflow-y: auto; }
+.sd-zoom-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border-block-end: 1px solid var(--line); }
+.sd-zoom-head h3 { margin: 0; min-inline-size: 0; font-size: 1.05rem; font-weight: 800; color: var(--text); overflow-wrap: anywhere; }
+.sd-zoom-body { padding: 14px 16px; }
+.sd-zoom-body .chemical-diagram-container { margin: 0; }
+.diagram-zoom-modal-caption { margin: 0; padding: 0 16px 16px; font-size: 0.875rem; color: var(--muted); }
+
+/* ---- Chemical diagram chrome ------------------------------------------ */
+.chemical-diagram-container {
+  display: flex;
+  flex-direction: column;
+  min-inline-size: 0;
+  max-inline-size: 100%;
+  padding: 12px;
+  margin-block-end: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: inset 0 1px 0 var(--hi), var(--shadow);
+}
+
+.diagram-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-block-end: 8px; }
+.diagram-title { margin: 0; font-size: 0.95rem; font-weight: 800; color: var(--text); flex: 1 1 140px; min-inline-size: 0; }
+.diagram-zoom-toolbar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+
+.diagram-zoom-btn { color: var(--text); }
+.diagram-zoom-btn[data-role="level"] {
+  inline-size: auto;
+  min-inline-size: 56px;
+  padding-inline: 8px;
+  font-family: var(--font-formula);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.diagram-svg-wrapper {
+  inline-size: 100%;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--raised);
+  border: 1px solid var(--line);
+}
+
+.chemical-diagram-svg { inline-size: 100%; max-inline-size: 100%; block-size: auto; display: block; }
+.diagram-caption { margin: 8px 0 0; font-size: 0.8rem; line-height: 1.45; color: var(--muted); }
+
+.diagram-zoom-overlay { z-index: 9999; }
+
+.diagram-zoom-card {
+  inline-size: min(100%, 960px);
+  max-block-size: 94dvh;
+  padding-block-end: env(safe-area-inset-bottom, 0px);
+}
+
+.diagram-zoom-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; border-block-end: 1px solid var(--line); }
+.diagram-zoom-header h3 { margin: 0; min-inline-size: 0; font-size: 1.05rem; font-weight: 800; color: var(--text); overflow-wrap: anywhere; }
+.diagram-zoom-body { padding: 14px 16px; display: flex; justify-content: center; }
+.zoom-svg { max-inline-size: 100%; block-size: auto; }
+.diagram-zoom-caption { margin: 0; padding: 0 16px 16px; font-size: 0.875rem; color: var(--muted); }

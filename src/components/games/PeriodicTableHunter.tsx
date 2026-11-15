@@ -1,18 +1,9 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
-import {
-  Sparkles,
-  Timer,
-  Trophy,
-  ArrowLeft,
-  Flame,
-  HelpCircle,
-  RotateCcw,
-  Swords,
-  Crosshair,
-  Award,
-} from 'lucide-react';
+import { Sparkles, Timer, Trophy, ArrowLeft, Flame, RotateCcw, Swords, Crosshair, Award } from 'lucide-react';
+import { GameHud, GameStat } from './GameHud';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { GAMES_STRINGS } from '../../i18n/gamesStrings';
 import { playCorrect, playWrong, playSuccess, playFinish } from '../../audio/sfx';
 
 export interface PeriodicTableHunterProps {
@@ -94,6 +85,10 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
   onBack,
 }) => {
   const t = UI_TRANSLATIONS[lang];
+  const g = GAMES_STRINGS[lang] ?? GAMES_STRINGS.en;
+  const bestAtStart = useRef(highScore);
+  const [isOver, setIsOver] = useState(false);
+  const [feedbackN, setFeedbackN] = useState(0);
 
   // Game state
   const [gameMode, setGameMode] = useState<'hunt' | 'battle'>('hunt');
@@ -237,7 +232,9 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
 
   // Start game session
   const startGame = (mode: 'hunt' | 'battle') => {
+    bestAtStart.current = highScore;
     setGameMode(mode);
+    setIsOver(false);
     setIsPlaying(true);
     setTimeLeft(60);
     setScore(0);
@@ -270,6 +267,7 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
   useEffect(() => {
     if (isPlaying && timeLeft === 0) {
       setIsPlaying(false);
+      setIsOver(true);
       playFinish();
       onFinish(scoreRef.current);
     }
@@ -290,6 +288,7 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
       playWrong();
       setStreak(0);
       setScore((s) => Math.max(0, s - 25));
+      setFeedbackN((n) => n + 1);
       setFeedback({ message: `Yanlış! Seçilen: ${el.symbol}, Hedef: ${targetElement.symbol}`, isCorrect: false });
     }
   };
@@ -309,167 +308,141 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
       playWrong();
       setStreak(0);
       setScore((s) => Math.max(0, s - 30));
+      setFeedbackN((n) => n + 1);
       setFeedback({ message: `Tuzak! Doğru cevap: ${battleQuestion.correctSymbol}. ${battleQuestion.trapNote}`, isCorrect: false });
       generateBattleQuestion();
     }
   };
 
+  const modeCards = (
+    <div className="gm-modes">
+      <button type="button" onClick={() => startGame('hunt')} className="gm-mode" data-sfx="start">
+        <Crosshair size={26} style={{ color: 'var(--accent)' }} aria-hidden="true" />
+        <strong>Öğe Avı (Element Hunt)</strong>
+        <small>İpuçlarından elementi periyodik tabloda bul</small>
+      </button>
+      <button type="button" onClick={() => startGame('battle')} className="gm-mode gm-mode--gold" data-sfx="start">
+        <Swords size={26} style={{ color: 'var(--gold)' }} aria-hidden="true" />
+        <strong>Eğilimler Düellosu (Trends)</strong>
+        <small>İyonlaşma enerjisi ve YKS tuzaklarını alt et</small>
+      </button>
+    </div>
+  );
+
   return (
-    <div className="periodic-hunter-container p-4 max-w-5xl mx-auto flex flex-col gap-4">
-      {/* Top Bar */}
-      <div className="flex items-center justify-between">
-        <button
-          type="button"
-          onClick={onBack}
-          className="btn-secondary flex items-center gap-1.5 py-1.5 px-3 text-xs"
-        >
-          <ArrowLeft size={16} />
-          <span>{t.games.backToHub}</span>
-        </button>
+    <div className="gm gm--wide periodic-hunter-container">
+      <GameHud title={t.games.periodicTitle} backLabel={t.games.backToHub} onBack={onBack}>
+        <GameStat icon={<Trophy size={16} aria-hidden="true" />} label={g.best} value={Math.max(highScore, score)} tone="gold" />
+        <GameStat icon={<Sparkles size={16} aria-hidden="true" />} label={g.score} value={score} tone="accent" />
+        <GameStat
+          icon={<Timer size={16} aria-hidden="true" />}
+          label="Timer"
+          value={`${timeLeft}s`}
+          tone={timeLeft <= 10 && isPlaying ? 'bad' : undefined}
+        />
+      </GameHud>
 
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-1 text-sm font-semibold">
-            <Trophy size={16} className="text-amber-400" />
-            <span>Rekor: {Math.max(highScore, score)}</span>
-          </div>
-
-          <div className="flex items-center gap-1 text-sm font-bold text-primary">
-            <Sparkles size={16} />
-            <span>Puan: {score}</span>
-          </div>
-
-          <div className={`flex items-center gap-1 text-sm font-mono px-3 py-1 rounded-full ${timeLeft <= 10 ? 'bg-ruby/20 text-ruby animate-pulse' : 'bg-surface-elevated'}`}>
-            <Timer size={16} />
-            <span>{timeLeft}s</span>
-          </div>
+      {!isPlaying && !isOver ? (
+        <div className="ky-stage gm-intro">
+          <div className="ky-floor" aria-hidden="true" />
+          <span className="ky-tile ky-tile--lg" aria-hidden="true">
+            <Crosshair size={30} />
+          </span>
+          <h2>{t.games.periodicTitle}</h2>
+          <p>{t.games.periodicDesc}</p>
+          {modeCards}
         </div>
-      </div>
-
-      {/* Mode Switcher / Banner if not playing */}
-      {!isPlaying ? (
-        <div className="game-intro-card p-6 bg-surface border border-subtle rounded-2xl text-center flex flex-col items-center gap-4">
-          <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
-            <Crosshair size={36} />
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold mb-1">{t.games.periodicTitle}</h2>
-            <p className="subtitle-text text-sm max-w-md mx-auto">{t.games.periodicDesc}</p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-md mt-2">
-            <button
-              type="button"
-              onClick={() => startGame('hunt')}
-              className="p-4 rounded-xl border border-primary/40 bg-primary/10 hover:bg-primary/20 flex flex-col items-center gap-2 transition-all"
-            >
-              <Crosshair size={24} className="text-primary" />
-              <div className="font-bold">Öğe Avı (Element Hunt)</div>
-              <div className="text-xs opacity-75">İpuçlarından elementi periyodik tabloda bul</div>
+      ) : !isPlaying && isOver ? (
+        <div className="ky-card gm-result">
+          <span className="ky-tile ky-tile--lg ky-tile--gold" aria-hidden="true">
+            <Award size={30} />
+          </span>
+          <h2>{g.finished}</h2>
+          <div className="gm-score ky-pop">{score}</div>
+          <span className="ky-chip ky-chip--gold">
+            <Trophy size={14} aria-hidden="true" />
+            {score > 0 && score > bestAtStart.current ? g.newBest : `${g.best}: ${Math.max(highScore, score)}`}
+          </span>
+          <div className="gm-actions">
+            <button type="button" onClick={() => startGame(gameMode)} className="ky-btn ky-btn--primary" data-sfx="start">
+              <RotateCcw size={18} aria-hidden="true" />
+              <span>{g.replay}</span>
             </button>
-
-            <button
-              type="button"
-              onClick={() => startGame('battle')}
-              className="p-4 rounded-xl border border-amber-500/40 bg-amber-500/10 hover:bg-amber-500/20 flex flex-col items-center gap-2 transition-all"
-            >
-              <Swords size={24} className="text-amber-400" />
-              <div className="font-bold">Eğilimler Düellosu (Trends)</div>
-              <div className="text-xs opacity-75">İyonlaşma enerjisi ve YKS tuzaklarını alt et</div>
+            <button type="button" onClick={onBack} className="ky-btn ky-btn--quiet">
+              <ArrowLeft size={18} aria-hidden="true" className="gm-flip" />
+              <span>{g.backToGames}</span>
             </button>
           </div>
         </div>
       ) : (
         <>
-          {/* Active HUD Clue Box */}
-          <div className="game-hud p-4 bg-surface border border-primary/30 rounded-xl flex flex-col md:flex-row items-center justify-between gap-3 shadow-md">
-            <div className="flex items-center gap-3">
-              <div className={`p-2 rounded-lg ${gameMode === 'hunt' ? 'bg-primary/20 text-primary' : 'bg-amber-500/20 text-amber-400'}`}>
-                {gameMode === 'hunt' ? <Crosshair size={22} /> : <Swords size={22} />}
-              </div>
-              <div>
-                <div className="text-xs uppercase tracking-wider font-semibold opacity-70">
-                  {gameMode === 'hunt' ? 'GÖREV: ELEMENTİ BUL' : 'DÜELLO: DOĞRU TERCİHİ YAP'}
-                </div>
-                <div className="text-base font-bold text-foreground">
-                  {gameMode === 'hunt' ? clueText : battleQuestion?.prompt}
-                </div>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2">
-              {streak >= 3 && (
-                <div className="streak-badge flex items-center gap-1 bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/40 text-amber-400 px-3 py-1 rounded-full text-xs font-bold animate-bounce">
-                  <Flame size={14} />
-                  <span>{streak}x Seri ({multiplier}x Katlayıcı)</span>
-                </div>
-              )}
-            </div>
+          <div className="ky-track gm-progress" role="progressbar" aria-valuemin={0} aria-valuemax={60} aria-valuenow={timeLeft}>
+            <div className={`ky-fill ${timeLeft <= 10 ? 'ky-fill--bad' : ''}`} style={{ inlineSize: `${(timeLeft / 60) * 100}%` }} />
           </div>
 
-          {/* Feedback banner */}
+          <div className="ky-card gm-clue">
+            <span className={`ky-tile ky-tile--sm ${gameMode === 'hunt' ? '' : 'ky-tile--gold'}`} aria-hidden="true">
+              {gameMode === 'hunt' ? <Crosshair size={20} /> : <Swords size={20} />}
+            </span>
+            <div className="gm-clue-body">
+              <span className="ky-eyebrow">{gameMode === 'hunt' ? 'GÖREV: ELEMENTİ BUL' : 'DÜELLO: DOĞRU TERCİHİ YAP'}</span>
+              <p>{gameMode === 'hunt' ? clueText : battleQuestion?.prompt}</p>
+            </div>
+            {streak >= 3 && (
+              <span className="gm-streak" key={streak}>
+                <Flame size={14} aria-hidden="true" />
+                <span>{streak}x &middot; {multiplier}x</span>
+              </span>
+            )}
+          </div>
+
           {feedback && (
-            <div className={`p-2.5 rounded-lg text-xs font-medium border text-center transition-all ${feedback.isCorrect ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-300' : 'bg-ruby/15 border-ruby/40 text-ruby'}`}>
+            <div
+              key={feedbackN + (feedback.isCorrect ? 'ok' : 'bad')}
+              className={`gm-feedback ${feedback.isCorrect ? 'ok' : 'bad ky-shake'}`}
+              role="status"
+            >
               {feedback.message}
             </div>
           )}
 
-          {/* Gameplay Content */}
           {gameMode === 'hunt' ? (
-            <div className="periodic-table-grid-wrapper overflow-x-auto p-2 bg-surface-elevated/50 border border-subtle rounded-xl">
-              <div className="periodic-grid min-w-[700px] grid grid-cols-18 gap-1.5">
-                {ELEMENTS_DB.map((el) => {
-                  const isTarget = targetElement.symbol === el.symbol;
-                  return (
+            <>
+              <div className="gm-pt-wrap" tabIndex={0} role="group" aria-label={t.games.periodicTitle}>
+                <div className="gm-pt-grid">
+                  {ELEMENTS_DB.map((el) => (
                     <button
                       key={el.z}
                       type="button"
                       onClick={() => handleElementClick(el)}
-                      className={`element-tile flex flex-col items-center justify-center p-1.5 rounded-md border text-center transition-all active:scale-95 ${
-                        el.category === 'noble'
-                          ? 'border-purple-500/40 bg-purple-500/10 text-purple-300'
-                          : el.category === 'halogen'
-                          ? 'border-cyan-500/40 bg-cyan-500/10 text-cyan-300'
-                          : el.category === 'alkali'
-                          ? 'border-rose-500/40 bg-rose-500/10 text-rose-300'
-                          : el.category === 'alkaline'
-                          ? 'border-amber-500/40 bg-amber-500/10 text-amber-300'
-                          : el.category === 'metalloid'
-                          ? 'border-teal-500/40 bg-teal-500/10 text-teal-300'
-                          : el.category === 'nonmetal'
-                          ? 'border-blue-500/40 bg-blue-500/10 text-blue-300'
-                          : 'border-subtle bg-surface hover:border-primary text-foreground'
-                      }`}
-                      style={{
-                        gridColumn: el.groupNum,
-                        gridRow: el.period,
-                      }}
+                      className="gm-el"
+                      data-cat={el.category}
+                      style={{ gridColumn: el.groupNum, gridRow: el.period }}
                       title={`${el.z}. ${el.nameTr} (${el.symbol})\nPeriyot ${el.period}, Grup ${el.group}`}
+                      aria-label={`${el.symbol} ${lang === 'en' ? el.nameEn : el.nameTr}`}
                     >
-                      <span className="text-[9px] opacity-60 leading-none">{el.z}</span>
-                      <span className="text-sm font-bold leading-tight">{el.symbol}</span>
+                      <small>{el.z}</small>
+                      <b>{el.symbol}</b>
                     </button>
-                  );
-                })}
+                  ))}
+                </div>
               </div>
-            </div>
+              <p className="gm-pt-hint">{g.scrollHint}</p>
+            </>
           ) : battleQuestion ? (
-            /* Battle Mode Duel Cards */
-            <div className="battle-arena grid grid-cols-1 sm:grid-cols-2 gap-4 my-auto p-4">
+            <div className="gm-duel">
               {[battleQuestion.elemA, battleQuestion.elemB].map((elem) => (
-                <button
-                  key={elem.z}
-                  type="button"
-                  onClick={() => handleBattleAnswer(elem.symbol)}
-                  className="battle-card p-6 rounded-2xl border-2 border-subtle hover:border-primary bg-surface hover:bg-surface-elevated flex flex-col items-center justify-center gap-3 transition-all hover:scale-102 active:scale-95 shadow-md"
-                >
-                  <div className="w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center text-2xl font-black text-primary bg-primary/10">
+                <button key={elem.z} type="button" onClick={() => handleBattleAnswer(elem.symbol)} className="gm-duel-card">
+                  <span className="ky-tile ky-tile--lg ky-tile--blue" aria-hidden="true">
                     {elem.symbol}
-                  </div>
-                  <div className="text-lg font-bold">{lang === 'en' ? elem.nameEn : elem.nameTr}</div>
-                  <div className="text-xs opacity-75 flex gap-2">
-                    <span className="px-2 py-0.5 rounded bg-surface-elevated">Z = {elem.z}</span>
-                    <span className="px-2 py-0.5 rounded bg-surface-elevated">{elem.period}. Periyot, {elem.group}</span>
-                  </div>
+                  </span>
+                  <strong>{lang === 'en' ? elem.nameEn : elem.nameTr}</strong>
+                  <span className="gm-chiprow">
+                    <span className="ky-chip">Z = {elem.z}</span>
+                    <span className="ky-chip">
+                      {elem.period}. P, {elem.group}
+                    </span>
+                  </span>
                 </button>
               ))}
             </div>

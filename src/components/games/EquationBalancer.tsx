@@ -1,20 +1,11 @@
 import React, { useState, useMemo, useCallback, useRef, useEffect } from 'react';
-import {
-  ArrowLeft,
-  CheckCircle2,
-  AlertTriangle,
-  Lightbulb,
-  Plus,
-  Minus,
-  RotateCcw,
-  Sparkles,
-  Trophy,
-  Scale,
-} from 'lucide-react';
+import { ArrowLeft, CheckCircle2, AlertTriangle, Lightbulb, Plus, Minus, RotateCcw, Sparkles, Trophy, Scale, Award } from 'lucide-react';
+import { GameHud, GameStat } from './GameHud';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { GAMES_STRINGS } from '../../i18n/gamesStrings';
 import { ChemFormula } from '../common/ChemFormula';
-import { playCorrect, playWrong, playSuccess } from '../../audio/sfx';
+import { playCorrect, playWrong, playSuccess, playFinish } from '../../audio/sfx';
 
 export interface EquationBalancerProps {
   lang: LanguageCode;
@@ -343,10 +334,15 @@ export function parseFormula(formula: string): Record<string, number> {
 }
 
 export const EquationBalancer: React.FC<EquationBalancerProps> = ({
+  lang,
   highScore = 0,
   onFinish,
   onBack,
 }) => {
+  const t = UI_TRANSLATIONS[lang];
+  const g = GAMES_STRINGS[lang] ?? GAMES_STRINGS.en;
+  const [finished, setFinished] = useState(false);
+  const [feedbackN, setFeedbackN] = useState(0);
   const [equationIndex, setEquationIndex] = useState(0);
   const currentEq = AUTHENTIC_EQUATIONS[equationIndex] || AUTHENTIC_EQUATIONS[0];
 
@@ -448,10 +444,19 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
     });
   };
 
+  const handleReplay = () => {
+    if (advanceTimeoutRef.current) clearTimeout(advanceTimeoutRef.current);
+    setScore(0);
+    setSolvedCount(0);
+    setFinished(false);
+    loadEquation(0);
+  };
+
   // Submit / Verify Action
   const handleCheck = () => {
     if (!atomLedger.isPositive) {
       playWrong();
+      setFeedbackN((n) => n + 1);
       setFeedback({
         message: 'Katsayılar pozitif tam sayı olmalıdır.',
         isCorrect: false,
@@ -461,6 +466,7 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
 
     if (!atomLedger.allBalanced) {
       playWrong();
+      setFeedbackN((n) => n + 1);
       setFeedback({
         message: 'Tepkime henüz denkleştirilmedi. Atom Ledger tablosundaki farkları eşitleyin.',
         isCorrect: false,
@@ -470,6 +476,7 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
 
     if (!atomLedger.isMinimal) {
       playWrong();
+      setFeedbackN((n) => n + 1);
       setFeedback({
         message: `Tepkime denkleştirildi ancak en küçük tamsayılarla değil (EBOB = ${atomLedger.commonDivisor}). Katsayıları sadeleştirin.`,
         isCorrect: false,
@@ -477,8 +484,9 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
       return;
     }
 
-    // Success!
-    playSuccess();
+    // Success! (last equation gets the bigger fanfare)
+    if (equationIndex < AUTHENTIC_EQUATIONS.length - 1) playCorrect();
+    else playSuccess();
     const earned = 150;
     setScore((s) => s + earned);
     setSolvedCount((c) => c + 1);
@@ -493,195 +501,172 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
       if (equationIndex < AUTHENTIC_EQUATIONS.length - 1) {
         loadEquation(equationIndex + 1);
       } else {
+        setFinished(true);
+        playFinish();
         onFinish(score + earned);
       }
     }, 1800);
   };
 
-  return (
-    <div className="equation-balancer-container p-4 max-w-4xl mx-auto flex flex-col gap-5">
-      {/* Top Header */}
-      <div className="flex items-center justify-between">
-        <button
-          type="button"
-          onClick={onBack}
-          className="btn-secondary flex items-center gap-1.5 py-1.5 px-3 text-xs"
-        >
-          <ArrowLeft size={16} />
-          <span>Geri</span>
-        </button>
+  const total = AUTHENTIC_EQUATIONS.length;
+  const solvedNow = feedback?.isCorrect === true;
 
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-1 text-sm font-semibold">
-            <Trophy size={16} className="text-amber-400" />
-            <span>En Yüksek: {Math.max(highScore, score)}</span>
+  if (finished) {
+    return (
+      <div className="gm gm--narrow equation-balancer-container">
+        <GameHud title={t.games.balancerTitle} backLabel={t.games.backToHub} onBack={onBack}>
+          <GameStat icon={<Trophy size={16} aria-hidden="true" />} label={g.best} value={Math.max(highScore, score)} tone="gold" />
+          <GameStat icon={<Sparkles size={16} aria-hidden="true" />} label={g.score} value={score} tone="accent" />
+        </GameHud>
+        <div className="ky-card gm-result">
+          <span className="ky-tile ky-tile--lg ky-tile--gold" aria-hidden="true">
+            <Award size={30} />
+          </span>
+          <h2>{g.finished}</h2>
+          <div className="gm-score ky-pop">{score}</div>
+          <span className="ky-chip ky-chip--gold">
+            <Trophy size={14} aria-hidden="true" /> {g.best}: {Math.max(highScore, score)}
+          </span>
+          <div className="gm-result-meta">
+            {g.solved}: {solvedCount} / {total}
           </div>
-
-          <div className="flex items-center gap-1 text-sm font-bold text-primary">
-            <Sparkles size={16} />
-            <span>Puan: {score}</span>
+          <div className="gm-actions">
+            <button type="button" onClick={handleReplay} className="ky-btn ky-btn--primary" data-sfx="start">
+              <RotateCcw size={18} aria-hidden="true" />
+              <span>{g.replay}</span>
+            </button>
+            <button type="button" onClick={onBack} className="ky-btn ky-btn--quiet">
+              <ArrowLeft size={18} aria-hidden="true" className="gm-flip" />
+              <span>{g.backToGames}</span>
+            </button>
           </div>
         </div>
       </div>
+    );
+  }
 
-      {/* Reaction Card */}
-      <div className="reaction-board p-6 bg-surface border border-subtle rounded-2xl shadow-lg flex flex-col gap-6">
-        <div className="flex items-center justify-between">
+  const renderStepper = (
+    kind: 'r' | 'p',
+    idx: number,
+    formula: string,
+    coef: number,
+    adjust: (i: number, d: number) => void
+  ) => (
+    <div className={`gm-stepper${kind === 'p' ? ' gm-stepper--prod' : ''}`}>
+      <button type="button" onClick={() => adjust(idx, -1)} className="ky-icon-btn" aria-label="Azalt">
+        <Minus size={16} aria-hidden="true" />
+      </button>
+      <span className="gm-coef" aria-live="polite">{coef}</span>
+      <button type="button" onClick={() => adjust(idx, 1)} className="ky-icon-btn" aria-label="Artır">
+        <Plus size={16} aria-hidden="true" />
+      </button>
+      <span className="gm-formula">
+        <ChemFormula formula={formula} />
+      </span>
+    </div>
+  );
+
+  return (
+    <div className="gm equation-balancer-container">
+      <GameHud title={t.games.balancerTitle} backLabel={t.games.backToHub} onBack={onBack}>
+        <GameStat icon={<Trophy size={16} aria-hidden="true" />} label={g.best} value={Math.max(highScore, score)} tone="gold" />
+        <GameStat icon={<Sparkles size={16} aria-hidden="true" />} label={g.score} value={score} tone="accent" />
+      </GameHud>
+
+      <div className="ky-track gm-progress" role="progressbar" aria-valuemin={0} aria-valuemax={total} aria-valuenow={solvedCount}>
+        <div className="ky-fill ky-fill--gold" style={{ inlineSize: `${(solvedCount / total) * 100}%` }} />
+      </div>
+
+      <div className="ky-card gm-board reaction-board">
+        <div className="gm-eyebrow-row">
           <div>
-            <div className="text-xs uppercase tracking-wider text-primary font-bold">
-              {currentEq.category.toUpperCase()} • {equationIndex + 1} / {AUTHENTIC_EQUATIONS.length}
-            </div>
-            <h2 className="text-xl font-bold">{currentEq.nameTr}</h2>
+            <span className="ky-eyebrow">
+              {currentEq.category.toUpperCase()} &bull; {equationIndex + 1} / {total}
+            </span>
+            <h2 className="gm-title">{currentEq.nameTr}</h2>
           </div>
-
           <button
             type="button"
             onClick={() => setShowHint((h) => !h)}
-            className="btn-secondary text-xs flex items-center gap-1.5 py-1.5 px-3 text-amber-400 border-amber-500/30"
+            className={`ky-chip ky-chip--lg${showHint ? ' on' : ''}`}
+            aria-pressed={showHint}
           >
-            <Lightbulb size={16} />
+            <Lightbulb size={16} aria-hidden="true" />
             <span>MİNHO İpucu</span>
           </button>
         </div>
 
-        {/* MINHO Hint Drawer */}
         {showHint && (
-          <div className="minho-hint-box p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl text-xs md:text-sm flex flex-col gap-1.5">
-            <strong className="text-amber-400 flex items-center gap-1.5">
-              <Lightbulb size={16} /> MİNHO Sıralama Rehberi (Metal - İyon - Hidrojen - Oksijen):
-            </strong>
-            {currentEq.minhoHints.metal && <div>• <strong>M (Metal):</strong> {currentEq.minhoHints.metal}</div>}
-            {currentEq.minhoHints.ametal && <div>• <strong>İ/A (İyon/Ametal):</strong> {currentEq.minhoHints.ametal}</div>}
-            {currentEq.minhoHints.hidrojen && <div>• <strong>H (Hidrojen):</strong> {currentEq.minhoHints.hidrojen}</div>}
-            {currentEq.minhoHints.oksijen && <div>• <strong>O (Oksijen):</strong> {currentEq.minhoHints.oksijen}</div>}
+          <div className="gm-note gm-note--gold">
+            <Lightbulb size={18} aria-hidden="true" />
+            <div className="gm-note-list">
+              <strong>MİNHO Sıralama Rehberi (Metal - İyon - Hidrojen - Oksijen)</strong>
+              {currentEq.minhoHints.metal && <div><strong>M (Metal):</strong> {currentEq.minhoHints.metal}</div>}
+              {currentEq.minhoHints.ametal && <div><strong>İ/A (İyon/Ametal):</strong> {currentEq.minhoHints.ametal}</div>}
+              {currentEq.minhoHints.hidrojen && <div><strong>H (Hidrojen):</strong> {currentEq.minhoHints.hidrojen}</div>}
+              {currentEq.minhoHints.oksijen && <div><strong>O (Oksijen):</strong> {currentEq.minhoHints.oksijen}</div>}
+            </div>
           </div>
         )}
 
-        {/* Interactive Equation Stepper Visual */}
-        <div className="equation-stepper-stage flex items-center justify-center flex-wrap gap-2 md:gap-3 py-4 text-base md:text-xl font-mono" dir="ltr">
-          {/* Reactants */}
-          {currentEq.reactants.map((r, idx) => (
-            <React.Fragment key={`r-${idx}`}>
-              {idx > 0 && <span className="font-bold text-muted-foreground px-1">+</span>}
-              <div className="reactant-stepper flex items-center gap-1 bg-surface-elevated p-1.5 rounded-xl border border-subtle">
-                <button
-                  type="button"
-                  onClick={() => adjustReactant(idx, -1)}
-                  className="p-1 rounded-lg hover:bg-surface text-muted-foreground hover:text-foreground"
-                  aria-label="Azalt"
-                >
-                  <Minus size={14} />
-                </button>
-                <span className="w-6 text-center font-bold text-primary">{reactantsCoefs[idx]}</span>
-                <button
-                  type="button"
-                  onClick={() => adjustReactant(idx, 1)}
-                  className="p-1 rounded-lg hover:bg-surface text-muted-foreground hover:text-foreground"
-                  aria-label="Artır"
-                >
-                  <Plus size={14} />
-                </button>
-                <span className="ml-1 font-sans font-bold">
-                  <ChemFormula formula={r.formula} />
-                </span>
-              </div>
-            </React.Fragment>
-          ))}
-
-          {/* Reaction Arrow */}
-          <span className="text-xl md:text-2xl font-bold text-primary px-2">→</span>
-
-          {/* Products */}
-          {currentEq.products.map((p, idx) => (
-            <React.Fragment key={`p-${idx}`}>
-              {idx > 0 && <span className="font-bold text-muted-foreground px-1">+</span>}
-              <div className="product-stepper flex items-center gap-1 bg-surface-elevated p-1.5 rounded-xl border border-subtle">
-                <button
-                  type="button"
-                  onClick={() => adjustProduct(idx, -1)}
-                  className="p-1 rounded-lg hover:bg-surface text-muted-foreground hover:text-foreground"
-                  aria-label="Azalt"
-                >
-                  <Minus size={14} />
-                </button>
-                <span className="w-6 text-center font-bold text-cyan-400">{productsCoefs[idx]}</span>
-                <button
-                  type="button"
-                  onClick={() => adjustProduct(idx, 1)}
-                  className="p-1 rounded-lg hover:bg-surface text-muted-foreground hover:text-foreground"
-                  aria-label="Artır"
-                >
-                  <Plus size={14} />
-                </button>
-                <span className="ml-1 font-sans font-bold">
-                  <ChemFormula formula={p.formula} />
-                </span>
-              </div>
-            </React.Fragment>
-          ))}
+        <div className="ky-stage" dir="ltr">
+          <div className="ky-floor" aria-hidden="true" />
+          <div className="gm-eq equation-stepper-stage">
+            {currentEq.reactants.map((r, idx) => (
+              <React.Fragment key={`r-${idx}`}>
+                {idx > 0 && <span className="gm-eq-plus">+</span>}
+                {renderStepper('r', idx, r.formula, reactantsCoefs[idx], adjustReactant)}
+              </React.Fragment>
+            ))}
+            <span className="gm-eq-arrow" aria-hidden="true">&rarr;</span>
+            {currentEq.products.map((p, idx) => (
+              <React.Fragment key={`p-${idx}`}>
+                {idx > 0 && <span className="gm-eq-plus">+</span>}
+                {renderStepper('p', idx, p.formula, productsCoefs[idx], adjustProduct)}
+              </React.Fragment>
+            ))}
+          </div>
         </div>
 
-        {/* Real-Time Atom Ledger Table */}
-        <div className="atom-ledger-box p-4 bg-surface-elevated/70 rounded-xl border border-subtle">
-          <div className="flex items-center gap-2 mb-3">
-            <Scale size={18} className="text-primary" />
-            <span className="text-sm font-bold">Canlı Atom Sayım Tablosu (Atom Ledger)</span>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+        <div className="ky-well" style={{ padding: 14 }}>
+          <h3 className="gm-sect-title">
+            <Scale size={18} aria-hidden="true" />
+            <span>Canlı Atom Sayım Tablosu (Atom Ledger)</span>
+          </h3>
+          <div className="gm-ledger">
             {Object.entries(atomLedger.ledger).map(([element, counts]) => (
-              <div
-                key={element}
-                className={`p-2.5 rounded-lg border text-xs flex items-center justify-between transition-all ${
-                  counts.balanced
-                    ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300'
-                    : 'border-ruby/40 bg-ruby/10 text-ruby'
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  <strong className="text-sm font-mono">{element}</strong>
+              <div key={element} className={`gm-ledger-row ${counts.balanced ? 'ok' : 'bad'}`}>
+                <div>
+                  <strong>{element}</strong>
                   <span>Giren: {counts.in} | Ürün: {counts.out}</span>
                 </div>
                 {counts.balanced ? (
-                  <CheckCircle2 size={16} className="text-emerald-400" />
+                  <CheckCircle2 size={18} aria-label="OK" />
                 ) : (
-                  <AlertTriangle size={16} className="text-ruby" />
+                  <AlertTriangle size={18} aria-label="!" />
                 )}
               </div>
             ))}
           </div>
         </div>
 
-        {/* Feedback message */}
         {feedback && (
           <div
-            className={`p-3 rounded-xl text-sm font-medium border text-center transition-all ${
-              feedback.isCorrect
-                ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-300'
-                : 'bg-ruby/15 border-ruby/40 text-ruby'
-            }`}
+            key={feedbackN + (feedback.isCorrect ? 'ok' : 'bad')}
+            className={`gm-feedback ${feedback.isCorrect ? 'ok ky-pop' : 'bad ky-shake'}`}
+            role="status"
           >
             {feedback.message}
           </div>
         )}
 
-        {/* Action button */}
-        <div className="flex items-center justify-end gap-3">
-          <button
-            type="button"
-            onClick={() => loadEquation(equationIndex)}
-            className="btn-secondary py-2.5 px-4 text-xs flex items-center gap-1.5"
-          >
-            <RotateCcw size={14} />
+        <div className="gm-actions">
+          <button type="button" onClick={() => loadEquation(equationIndex)} className="ky-btn ky-btn--quiet">
+            <RotateCcw size={16} aria-hidden="true" />
             <span>Sıfırla</span>
           </button>
-
-          <button
-            type="button"
-            onClick={handleCheck}
-            className="btn-primary py-2.5 px-6 font-bold flex items-center gap-2"
-          >
-            <CheckCircle2 size={18} />
+          <button type="button" onClick={handleCheck} disabled={solvedNow} className="ky-btn ky-btn--primary">
+            <CheckCircle2 size={18} aria-hidden="true" />
             <span>Tepkimeyi Doğrula</span>
           </button>
         </div>

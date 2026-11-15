@@ -1,21 +1,11 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import {
-  ArrowLeft,
-  Sparkles,
-  Trophy,
-  Flame,
-  Zap,
-  BookOpen,
-  RotateCcw,
-  CheckCircle2,
-  AlertTriangle,
-  Beaker,
-  Thermometer,
-} from 'lucide-react';
+import { Sparkles, Trophy, Flame, Zap, BookOpen, RotateCcw, CheckCircle2, AlertTriangle, Beaker, Thermometer, X } from 'lucide-react';
+import { GameHud, GameStat } from './GameHud';
 import type { LanguageCode } from '../../types/chemistry';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { GAMES_STRINGS } from '../../i18n/gamesStrings';
 import { ChemFormula } from '../common/ChemFormula';
-import { playFizz, playBubble, playCorrect, playWrong, playSuccess } from '../../audio/sfx';
+import { playBubble, playStart, playCorrect, playWrong } from '../../audio/sfx';
 
 export interface CompoundSynthesisGameProps {
   lang: LanguageCode;
@@ -175,10 +165,13 @@ export const AVAILABLE_CATALYSTS = [
 ];
 
 export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
+  lang,
   highScore = 0,
   onFinish,
   onBack,
 }) => {
+  const t = UI_TRANSLATIONS[lang];
+  const g = GAMES_STRINGS[lang] ?? GAMES_STRINGS.en;
   const [selectedReactants, setSelectedReactants] = useState<string[]>([]);
   const [selectedCatalyst, setSelectedCatalyst] = useState<string>('none');
   const [temperatureC, setTemperatureC] = useState<number>(25); // 25 to 450 C
@@ -257,7 +250,7 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
     if (selectedReactants.length === 0) return;
 
     setIsBrewing(true);
-    playBubble();
+    playStart();
 
     if (brewTimeoutRef.current) clearTimeout(brewTimeoutRef.current);
     brewTimeoutRef.current = setTimeout(() => {
@@ -291,7 +284,6 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
       });
 
       if (matched) {
-        playFizz();
         playCorrect();
         saveDiscovery(matched.id);
         const earned = matched.xpReward;
@@ -318,59 +310,38 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
     }, 1200);
   };
 
+  const total = CANONICAL_RECIPES.length;
+  const tempPct = ((temperatureC - 25) / (450 - 25)) * 100;
+
   return (
-    <div className="synthesis-game-container p-4 max-w-4xl mx-auto flex flex-col gap-5">
-      {/* Top Bar */}
-      <div className="flex items-center justify-between">
-        <button
-          type="button"
-          onClick={onBack}
-          className="btn-secondary flex items-center gap-1.5 py-1.5 px-3 text-xs"
-        >
-          <ArrowLeft size={16} />
-          <span>Geri</span>
-        </button>
+    <div className="gm synthesis-game-container">
+      <GameHud title={t.games.synthesisTitle} backLabel={t.games.backToHub} onBack={onBack}>
+        <GameStat icon={<Trophy size={16} aria-hidden="true" />} label={g.best} value={Math.max(highScore, score)} tone="gold" />
+        <GameStat icon={<Sparkles size={16} aria-hidden="true" />} label={g.score} value={score} tone="accent" />
+        <GameStat icon={<BookOpen size={16} aria-hidden="true" />} label="Sentez Kitabı" value={`${discoveredRecipeIds.length}/${total}`} />
+      </GameHud>
 
-        <div className="flex items-center gap-4">
-          <button
-            type="button"
-            onClick={() => setShowDiscoveryBook(true)}
-            className="btn-secondary text-xs flex items-center gap-1.5 py-1.5 px-3 text-primary border-primary/30"
-          >
-            <BookOpen size={16} />
-            <span>Sentez Kitabı ({discoveredRecipeIds.length}/{CANONICAL_RECIPES.length})</span>
-          </button>
-
-          <div className="flex items-center gap-1 text-sm font-semibold">
-            <Trophy size={16} className="text-amber-400" />
-            <span>En Yüksek: {Math.max(highScore, score)}</span>
-          </div>
-
-          <div className="flex items-center gap-1 text-sm font-bold text-primary">
-            <Sparkles size={16} />
-            <span>Puan: {score}</span>
-          </div>
-        </div>
+      <div className="ky-track gm-progress" role="progressbar" aria-valuemin={0} aria-valuemax={total} aria-valuenow={discoveredRecipeIds.length}>
+        <div className="ky-fill ky-fill--violet" style={{ inlineSize: `${(discoveredRecipeIds.length / total) * 100}%` }} />
       </div>
 
-      {/* Synthesis Workbench */}
-      <div className="workbench-card p-6 bg-surface border border-subtle rounded-2xl shadow-lg flex flex-col gap-6">
-        <div>
-          <h2 className="text-xl font-bold flex items-center gap-2">
-            <Beaker className="text-primary" />
-            <span>Bileşik Sentez Laboratuvarı</span>
-          </h2>
-          <p className="subtitle-text text-xs opacity-75">
-            Reaktifleri, katalizörü ve reaksiyon koşullarını ayarlayıp sentezi başlatın.
-          </p>
+      <div className="ky-card gm-board workbench-card">
+        <div className="gm-eyebrow-row">
+          <div>
+            <h2 className="gm-title" style={{ marginTop: 0 }}>Bileşik Sentez Laboratuvarı</h2>
+            <p className="gm-sub" style={{ marginTop: 4 }}>
+              Reaktifleri, katalizörü ve reaksiyon koşullarını ayarlayıp sentezi başlatın.
+            </p>
+          </div>
+          <button type="button" onClick={() => setShowDiscoveryBook(true)} className="ky-chip ky-chip--lg ky-chip--violet">
+            <BookOpen size={16} aria-hidden="true" />
+            <span>Sentez Kitabı ({discoveredRecipeIds.length}/{total})</span>
+          </button>
         </div>
 
-        {/* 1. Reactants Shelf */}
-        <div className="reactants-shelf flex flex-col gap-2">
-          <label className="text-xs font-semibold opacity-80">
-            Reaktif Rafı (En fazla 2 bileşik seçin):
-          </label>
-          <div className="flex flex-wrap gap-2">
+        <div className="reactants-shelf" style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          <span className="gm-label" id="gm-react-label">Reaktif Rafı (En fazla 2 bileşik seçin)</span>
+          <div className="gm-shelf" role="group" aria-labelledby="gm-react-label">
             {AVAILABLE_REACTANTS.map((r) => {
               const isSelected = selectedReactants.includes(r);
               return (
@@ -378,11 +349,8 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
                   key={r}
                   type="button"
                   onClick={() => toggleReactant(r)}
-                  className={`px-3 py-1.5 rounded-lg border text-xs font-mono font-bold transition-all ${
-                    isSelected
-                      ? 'border-primary bg-primary text-primary-foreground shadow-sm scale-105'
-                      : 'border-subtle bg-surface-elevated hover:border-primary/50 text-foreground'
-                  }`}
+                  className={`ky-chip${isSelected ? ' on' : ''}`}
+                  aria-pressed={isSelected}
                 >
                   <ChemFormula formula={r} />
                 </button>
@@ -391,15 +359,14 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
           </div>
         </div>
 
-        {/* 2. Reaction Conditions */}
-        <div className="conditions-grid grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 bg-surface-elevated/40 border border-subtle rounded-xl">
-          {/* Catalyst Selector */}
-          <div className="flex flex-col gap-1.5">
-            <label className="text-xs font-semibold opacity-75">Katalizör:</label>
+        <div className="ky-well gm-cond conditions-grid">
+          <div>
+            <label className="gm-label" htmlFor="gm-catalyst">Katalizör</label>
             <select
+              id="gm-catalyst"
               value={selectedCatalyst}
               onChange={(e) => setSelectedCatalyst(e.target.value)}
-              className="filter-select text-xs"
+              className="ky-select"
             >
               {AVAILABLE_CATALYSTS.map((cat) => (
                 <option key={cat.id} value={cat.id}>
@@ -409,87 +376,74 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
             </select>
           </div>
 
-          {/* Temperature Slider */}
-          <div className="flex flex-col gap-1.5">
-            <div className="flex items-center justify-between text-xs font-semibold opacity-75">
-              <span className="flex items-center gap-1">
-                <Thermometer size={14} className="text-amber-500" />
-                <span>Sıcaklık:</span>
-              </span>
-              <span className="font-mono font-bold">{temperatureC} °C</span>
+          <div>
+            <div className="gm-field-row">
+              <label htmlFor="gm-temp">
+                <Thermometer size={14} aria-hidden="true" style={{ color: 'var(--gold)' }} />
+                Sıcaklık
+              </label>
+              <span className="ky-mono">{temperatureC} °C</span>
             </div>
             <input
+              id="gm-temp"
               type="range"
               min={25}
               max={450}
               step={25}
               value={temperatureC}
               onChange={(e) => setTemperatureC(parseInt(e.target.value, 10))}
-              className="w-full accent-primary"
+              className="ky-range"
+              style={{ ['--pct' as string]: `${tempPct}%` }}
             />
           </div>
 
-          {/* Environmental Toggles (UV, Pressure) */}
-          <div className="flex items-center gap-2 pt-4">
-            <button
-              type="button"
-              onClick={() => setUseUv((u) => !u)}
-              className={`flex-1 py-1.5 px-2 rounded-lg border text-xs font-semibold flex items-center justify-center gap-1 transition-all ${
-                useUv ? 'border-purple-500 bg-purple-500/20 text-purple-300' : 'border-subtle bg-surface'
-              }`}
-            >
-              <Zap size={14} />
-              <span>UV Işık (hν)</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setUsePressure((p) => !p)}
-              className={`flex-1 py-1.5 px-2 rounded-lg border text-xs font-semibold flex items-center justify-center gap-1 transition-all ${
-                usePressure ? 'border-cyan-500 bg-cyan-500/20 text-cyan-300' : 'border-subtle bg-surface'
-              }`}
-            >
-              <Flame size={14} />
-              <span>200 atm Basınç</span>
-            </button>
+          <div>
+            <span className="gm-label">Ortam</span>
+            <div className="gm-toggles">
+              <button type="button" onClick={() => setUseUv((u) => !u)} className={`ky-chip ky-chip--lg${useUv ? ' on' : ''}`} aria-pressed={useUv}>
+                <Zap size={14} aria-hidden="true" />
+                <span>UV Işık (hν)</span>
+              </button>
+              <button type="button" onClick={() => setUsePressure((p) => !p)} className={`ky-chip ky-chip--lg${usePressure ? ' on' : ''}`} aria-pressed={usePressure}>
+                <Flame size={14} aria-hidden="true" />
+                <span>200 atm Basınç</span>
+              </button>
+            </div>
           </div>
         </div>
 
-        {/* Reaction Beaker & Execution */}
-        <div className="reaction-stage flex flex-col items-center justify-center p-6 bg-surface-elevated/70 border border-subtle rounded-2xl relative min-h-[160px]">
+        <div className="ky-stage gm-beaker reaction-stage" aria-live="polite">
+          <div className="ky-floor" aria-hidden="true" />
           {isBrewing ? (
-            <div className="flex flex-col items-center gap-3">
-              <div className="w-12 h-12 rounded-full border-4 border-primary border-t-transparent animate-spin" />
-              <div className="text-sm font-bold text-primary animate-pulse">
-                Tepkime efervesan köpürüyor...
-              </div>
-            </div>
+            <>
+              <div className="gm-spinner" aria-hidden="true" />
+              <h3>Tepkime efervesan köpürüyor...</h3>
+              <span className="gm-bubbles" aria-hidden="true"><i /><i /><i /></span>
+            </>
           ) : lastResult ? (
-            <div className="flex flex-col items-center gap-2 text-center">
-              <div
-                className={`p-2 rounded-full ${
-                  lastResult.success ? 'bg-emerald-500/20 text-emerald-400' : 'bg-ruby/20 text-ruby'
-                }`}
-              >
-                {lastResult.success ? <CheckCircle2 size={32} /> : <AlertTriangle size={32} />}
-              </div>
-              <div className="text-lg font-bold">{lastResult.productName}</div>
+            <div key={lastResult.productName + discoveredRecipeIds.length + score} className={`gm-beaker-res ${lastResult.success ? 'ky-pop' : 'ky-shake'}`}>
+              <span className={`ky-tile ky-tile--lg ${lastResult.success ? 'ky-tile--ok' : 'ky-tile--rose'}`} aria-hidden="true">
+                {lastResult.success ? <CheckCircle2 size={30} /> : <AlertTriangle size={30} />}
+              </span>
+              <h3>{lastResult.productName}</h3>
               {lastResult.success && (
-                <div className="text-xs font-semibold text-emerald-400">
-                  Verim: %{lastResult.yieldPercent} • +{lastResult.xpAwarded} XP
-                </div>
+                <span className="gm-ok-pill">
+                  Verim: %{lastResult.yieldPercent} &bull; +{lastResult.xpAwarded} XP
+                </span>
               )}
-              <p className="text-xs opacity-75 max-w-md">{lastResult.description}</p>
+              <p>{lastResult.description}</p>
             </div>
           ) : (
-            <div className="text-xs opacity-60 text-center">
-              Reaktifleri seçip &ldquo;Tepkimeyi Başlat (Brew)&rdquo; düğmesine basın.
-            </div>
+            <>
+              <span className="ky-tile ky-tile--lg ky-tile--violet" aria-hidden="true">
+                <Beaker size={28} />
+              </span>
+              <p>Reaktifleri seçip &ldquo;Tepkimeyi Başlat&rdquo; düğmesine basın.</p>
+            </>
           )}
         </div>
 
-        {/* Action button */}
-        <div className="flex items-center justify-end gap-3">
+        <div className="gm-actions">
           <button
             type="button"
             onClick={() => {
@@ -500,78 +454,69 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
               setUsePressure(false);
               setLastResult(null);
             }}
-            className="btn-secondary py-2.5 px-4 text-xs flex items-center gap-1.5"
+            className="ky-btn ky-btn--quiet"
           >
-            <RotateCcw size={14} />
+            <RotateCcw size={16} aria-hidden="true" />
             <span>Tezgahı Temizle</span>
           </button>
-
           <button
             type="button"
             onClick={handleBrew}
             disabled={selectedReactants.length === 0 || isBrewing}
-            className="btn-primary py-2.5 px-6 font-bold flex items-center gap-2"
+            className="ky-btn ky-btn--violet"
           >
-            <Beaker size={18} />
-            <span>Tepkimeyi Başlat (Brew)</span>
+            <Beaker size={18} aria-hidden="true" />
+            <span>Tepkimeyi Başlat</span>
           </button>
         </div>
       </div>
 
-      {/* Synthesis Discovery Book Modal */}
       {showDiscoveryBook && (
-        <div className="modal-backdrop fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4">
-          <div className="modal-content bg-surface border border-subtle rounded-2xl max-w-2xl w-full p-6 flex flex-col gap-4 max-h-[85vh] overflow-y-auto shadow-2xl">
-            <div className="flex items-center justify-between">
-              <h3 className="text-lg font-bold flex items-center gap-2">
-                <BookOpen className="text-primary" />
-                <span>Sentez Keşif Kitabı ({discoveredRecipeIds.length}/{CANONICAL_RECIPES.length})</span>
+        <div className="ky-modal-backdrop" onClick={() => setShowDiscoveryBook(false)}>
+          <div
+            className="ky-sheet gm-sheet"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Sentez Keşif Kitabı"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="gm-sheet-head">
+              <h3>
+                <BookOpen size={20} aria-hidden="true" style={{ color: 'var(--violet)' }} />
+                <span>Sentez Keşif Kitabı ({discoveredRecipeIds.length}/{total})</span>
               </h3>
-              <button
-                type="button"
-                onClick={() => setShowDiscoveryBook(false)}
-                className="btn-secondary text-xs py-1 px-3"
-              >
-                Kapat
+              <button type="button" onClick={() => setShowDiscoveryBook(false)} className="ky-icon-btn" aria-label={g.close}>
+                <X size={18} aria-hidden="true" />
               </button>
             </div>
 
-            <div className="recipes-list flex flex-col gap-3">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }} className="recipes-list">
               {CANONICAL_RECIPES.map((recipe) => {
                 const isUnlocked = discoveredRecipeIds.includes(recipe.id);
                 return (
-                  <div
-                    key={recipe.id}
-                    className={`p-3.5 rounded-xl border flex flex-col gap-1 transition-all ${
-                      isUnlocked
-                        ? 'border-emerald-500/40 bg-emerald-500/10'
-                        : 'border-subtle bg-surface-elevated/40 opacity-50'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-sm">
-                        {isUnlocked ? recipe.nameTr : '??? Gizli Sentez'}
-                      </span>
-                      <span className="text-xs font-semibold px-2 py-0.5 rounded bg-surface">
-                        {recipe.category.toUpperCase()}
-                      </span>
+                  <div key={recipe.id} className={`gm-recipe ${isUnlocked ? 'on' : 'locked'}`}>
+                    <div className="head">
+                      <span>{isUnlocked ? recipe.nameTr : '??? Gizli Sentez'}</span>
+                      <span className="ky-chip">{recipe.category.toUpperCase()}</span>
                     </div>
                     {isUnlocked ? (
                       <>
-                        <div className="text-xs font-mono text-primary font-bold">
+                        <div className="ky-mono">
                           {recipe.productFormula} (Verim: %{recipe.yieldPercent})
                         </div>
-                        <p className="text-xs opacity-75">{recipe.descriptionTr}</p>
+                        <p>{recipe.descriptionTr}</p>
                       </>
                     ) : (
-                      <div className="text-xs opacity-50">
-                        Bu bileşiği sentezlemek için laboratuvarda reaktifleri deneyin.
-                      </div>
+                      <p>Bu bileşiği sentezlemek için laboratuvarda reaktifleri deneyin.</p>
                     )}
                   </div>
                 );
               })}
             </div>
+
+            <button type="button" onClick={() => setShowDiscoveryBook(false)} className="ky-btn ky-btn--quiet ky-btn--block">
+              {g.close}
+            </button>
           </div>
         </div>
       )}

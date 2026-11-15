@@ -486,115 +486,37 @@ export const Kimya3DFallbackCanvas: React.FC<Kimya3DFallbackCanvasProps> = ({
   };
 
   return (
-    <div
-      ref={containerRef}
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        background: isDark ? '#0b0f19' : '#f8fafc',
-        borderRadius: '12px',
-        overflow: 'hidden',
-      }}
-    >
+    <div ref={containerRef} className="lab-fb">
       {/* Notice Pill */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 16,
-          left: 16,
-          zIndex: 10,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 8,
-          padding: '6px 14px',
-          borderRadius: '9999px',
-          background: isDark ? 'rgba(30, 41, 59, 0.85)' : 'rgba(255, 255, 255, 0.9)',
-          backdropFilter: 'blur(8px)',
-          border: '1px solid var(--border-color, rgba(148, 163, 184, 0.3))',
-          fontSize: '0.8rem',
-          fontWeight: 600,
-          color: 'var(--brand-primary, #0284c7)',
-        }}
-      >
-        <ShieldAlert size={16} color="#f59e0b" />
+      <div className="lab-fb__notice ky-chip ky-chip--gold">
+        <ShieldAlert size={16} aria-hidden="true" />
         <bdi dir="ltr">
           <span>WebGL 2D Güvenli Mod • Model: {scene.title[lang] || scene.title.tr}</span>
         </bdi>
       </div>
 
       {/* 2D Zoom & Fit HUD Controls */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 16,
-          right: 16,
-          zIndex: 15,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 6,
-          padding: '4px 10px',
-          borderRadius: '9999px',
-          background: isDark ? 'rgba(30, 41, 59, 0.9)' : 'rgba(255, 255, 255, 0.92)',
-          backdropFilter: 'blur(8px)',
-          border: '1px solid var(--border-color, rgba(148, 163, 184, 0.3))',
-          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-        }}
-      >
+      <div className="lab-fb__hud">
         <button
           type="button"
           onClick={handleZoomIn}
           title={zoomI18n.zoomIn}
           aria-label={zoomI18n.zoomIn}
-          style={{
-            padding: '5px',
-            borderRadius: '50%',
-            border: 'none',
-            background: 'transparent',
-            color: isDark ? '#f8fafc' : '#0f172a',
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
+          className="ky-icon-btn lab-hud-btn"
         >
-          <ZoomIn size={16} />
+          <ZoomIn size={18} aria-hidden="true" />
         </button>
 
-        <span
-          style={{
-            fontSize: '0.74rem',
-            fontWeight: 700,
-            minWidth: '36px',
-            textAlign: 'center',
-            color: 'var(--brand-primary, #0284c7)',
-          }}
-        >
-          {Math.round(zoomLevel * 100)}%
-        </span>
+        <span className="ky-mono lab-fb__zoom">{Math.round(zoomLevel * 100)}%</span>
 
         <button
           type="button"
           onClick={handleZoomOut}
           title={zoomI18n.zoomOut}
           aria-label={zoomI18n.zoomOut}
-          style={{
-            padding: '5px',
-            borderRadius: '50%',
-            border: 'none',
-            background: 'transparent',
-            color: isDark ? '#f8fafc' : '#0f172a',
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
+          className="ky-icon-btn lab-hud-btn"
         >
-          <ZoomOut size={16} />
+          <ZoomOut size={18} aria-hidden="true" />
         </button>
 
         <button
@@ -602,27 +524,15 @@ export const Kimya3DFallbackCanvas: React.FC<Kimya3DFallbackCanvasProps> = ({
           onClick={handleFitScreen}
           title={zoomI18n.fitScreen}
           aria-label={zoomI18n.fitScreen}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: 4,
-            padding: '3px 8px',
-            borderRadius: '6px',
-            border: '1px solid var(--brand-primary, #0284c7)',
-            background: isDark ? 'rgba(56, 189, 248, 0.15)' : 'rgba(2, 132, 199, 0.1)',
-            color: isDark ? '#f8fafc' : '#0f172a',
-            fontSize: '0.72rem',
-            fontWeight: 700,
-            cursor: 'pointer',
-          }}
+          className="ky-icon-btn lab-hud-btn"
         >
-          <Maximize2 size={13} />
-          <span>{zoomI18n.fitScreen}</span>
+          <Maximize2 size={18} aria-hidden="true" />
         </button>
       </div>
 
       <canvas
         ref={canvasRef}
+        className={`lab-fb__canvas${zoomLevel > 1.0 ? ' is-zoomed' : ''}`}
         onWheel={handleWheel}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
@@ -630,60 +540,23 @@ export const Kimya3DFallbackCanvas: React.FC<Kimya3DFallbackCanvasProps> = ({
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
-        style={{
-          width: '100%',
-          height: '100%',
-          maxHeight: '600px',
-          cursor: zoomLevel > 1.0 ? 'grab' : 'pointer',
-          touchAction: 'none',
-        }}
         aria-label={`2D Görselleştirici: ${scene.title[lang] || scene.title.tr}`}
       />
 
       {/* Interactive Legend / Hotspot Buttons below */}
-      <div
-        style={{
-          position: 'absolute',
-          bottom: 16,
-          left: 16,
-          right: 16,
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: 8,
-          justifyContent: 'center',
-          pointerEvents: 'auto',
-        }}
-      >
+      <div className="lab-fb__legend">
         {scene.hotspots.map((hs) => {
           const isSelected = selectedHotspotId === hs.id;
           return (
             <button
               key={hs.id}
+              type="button"
               onClick={() => onSelectHotspot(hs)}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 6,
-                padding: '6px 12px',
-                borderRadius: '8px',
-                border: isSelected ? '2px solid var(--brand-primary, #38bdf8)' : '1px solid rgba(148, 163, 184, 0.3)',
-                background: isSelected ? (isDark ? '#1e293b' : '#e0f2fe') : (isDark ? '#111827' : '#ffffff'),
-                color: isDark ? '#f8fafc' : '#0f172a',
-                fontSize: '0.8rem',
-                fontWeight: 600,
-                cursor: 'pointer',
-                transition: 'all 0.15s ease',
-              }}
+              className={`ky-chip lab-fb__pin${isSelected ? ' on' : ''}`}
+              aria-pressed={isSelected}
+              style={{ '--pin': hs.color } as React.CSSProperties}
             >
-              <span
-                style={{
-                  display: 'inline-block',
-                  width: 8,
-                  height: 8,
-                  borderRadius: '50%',
-                  backgroundColor: hs.color,
-                }}
-              />
+              <span className="lab-dot" aria-hidden="true" />
               <bdi dir="ltr">
                 <span>{mode === 'quiz' ? `Nokta ${hs.pinNumber}` : (hs.title[lang] || hs.title.tr)}</span>
               </bdi>

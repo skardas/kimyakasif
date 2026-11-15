@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Maximize2, X, ZoomIn, ZoomOut } from 'lucide-react';
 import type { QuestionDiagramSpec, LanguageCode } from '../../types/chemistry';
 import { ZOOM_FIT_I18N } from '../three/Kimya3DLab';
 
@@ -142,53 +143,48 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
     <div className={`chemical-diagram-container ${className}`}>
       <div
         className="diagram-header"
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-          gap: 8,
-        }}
       >
         <h4 className="diagram-title">{spec.title}</h4>
         {allowZoom && (
-          <div className="diagram-zoom-toolbar" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+          <div className="diagram-zoom-toolbar">
             <button
               type="button"
-              className="diagram-zoom-btn"
+              className="ky-icon-btn diagram-zoom-btn"
+              data-glyph="+"
               onClick={handleZoomIn}
               aria-label={zoomI18n.zoomIn}
               title={zoomI18n.zoomIn}
             >
-              +
+              <ZoomIn size={18} aria-hidden="true" />
             </button>
             <button
               type="button"
-              className="diagram-zoom-btn"
+              className="ky-icon-btn diagram-zoom-btn"
               onClick={handleResetZoom}
               aria-label={zoomI18n.fitScreen}
               title={zoomI18n.fitScreen}
-              style={{ fontSize: '0.74rem', minWidth: '42px', fontWeight: 700 }}
+              data-role="level"
             >
               {Math.round(zoomLevel * 100)}%
             </button>
             <button
               type="button"
-              className="diagram-zoom-btn"
+              className="ky-icon-btn diagram-zoom-btn"
               onClick={handleZoomOut}
               aria-label={zoomI18n.zoomOut}
               title={zoomI18n.zoomOut}
             >
-              -
+              <ZoomOut size={18} aria-hidden="true" />
             </button>
             <button
               type="button"
-              className="diagram-zoom-btn"
+              className="ky-icon-btn diagram-zoom-btn"
               onClick={() => setIsZoomed(true)}
               aria-label={fsLabel}
               title={fsLabel}
+              data-glyph="🔍"
             >
-              🔍
+              <Maximize2 size={18} aria-hidden="true" />
             </button>
           </div>
         )}
@@ -234,55 +230,54 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
 
       {/* Zoom Modal Dialog */}
       {isZoomed && (
-        <div className="diagram-zoom-overlay" onClick={() => setIsZoomed(false)}>
-          <div className="diagram-zoom-card" onClick={(e) => e.stopPropagation()}>
-            <div
-              className="diagram-zoom-header"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                gap: 10,
-              }}
-            >
+        <div className="ky-modal-backdrop diagram-zoom-overlay" onClick={() => setIsZoomed(false)}>
+          <div
+            className="ky-sheet diagram-zoom-card"
+            role="dialog"
+            aria-modal="true"
+            aria-label={spec.title}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="diagram-zoom-header">
               <h3>{spec.title}</h3>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <div className="diagram-zoom-toolbar">
                 <button
                   type="button"
-                  className="diagram-zoom-btn"
-                  onClick={handleZoomIn}
+                  className="ky-icon-btn diagram-zoom-btn"
+                  data-glyph="+"
+              onClick={handleZoomIn}
                   aria-label={zoomI18n.zoomIn}
                   title={zoomI18n.zoomIn}
                 >
-                  +
+                  <ZoomIn size={18} aria-hidden="true" />
                 </button>
                 <button
                   type="button"
-                  className="diagram-zoom-btn"
+                  className="ky-icon-btn diagram-zoom-btn"
                   onClick={handleResetZoom}
                   aria-label={zoomI18n.fitScreen}
                   title={zoomI18n.fitScreen}
-                  style={{ fontSize: '0.74rem', minWidth: '42px', fontWeight: 700 }}
+                  data-role="level"
                 >
                   {Math.round(zoomLevel * 100)}%
                 </button>
                 <button
                   type="button"
-                  className="diagram-zoom-btn"
+                  className="ky-icon-btn diagram-zoom-btn"
                   onClick={handleZoomOut}
                   aria-label={zoomI18n.zoomOut}
                   title={zoomI18n.zoomOut}
                 >
-                  -
+                  <ZoomOut size={18} aria-hidden="true" />
                 </button>
                 <button
                   type="button"
-                  className="diagram-close-btn"
+                  className="ky-icon-btn diagram-close-btn"
                   onClick={() => setIsZoomed(false)}
                   aria-label={CLOSE_MODAL_I18N[lang] || CLOSE_MODAL_I18N.tr}
                   title={CLOSE_MODAL_I18N[lang] || CLOSE_MODAL_I18N.tr}
                 >
-                  ✕
+                  <X size={20} aria-hidden="true" />
                 </button>
               </div>
             </div>

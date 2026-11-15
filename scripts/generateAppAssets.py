@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generates 3D-shaded Chemistry Lab app icons and splash screens for:
+Generates the "Obsidian Lab Glass" Kimya 3D app icons (glass flask + gold orbits) and splash screens for:
 - Web / PWA (public/icon-192.png, public/icon-512.png, public/apple-touch-icon.png)
 - iOS Assets.xcassets (AppIcon-512@2x.png 1024x1024 RGB, Splash 2732x2732 RGB)
 - Android mipmap-* icons (legacy, round, adaptive foreground) & 11 drawable splash PNGs
@@ -9,7 +9,7 @@ Generates 3D-shaded Chemistry Lab app icons and splash screens for:
 import math
 import os
 from pathlib import Path
-from PIL import Image, ImageChops, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -23,274 +23,178 @@ def lerp_color(c1, c2, t: float):
     return tuple(int(lerp(c1[i], c2[i], t)) for i in range(len(c1)))
 
 
-def draw_radial_glow(canvas: Image.Image, cx: int, cy: int, radius: int, color_rgba) -> None:
-    size = canvas.size
-    overlay = Image.new("RGBA", size, (0, 0, 0, 0))
-    d = ImageDraw.Draw(overlay)
-    r, g, b, max_a = color_rgba
-    steps = 28
-    for i in range(steps, 0, -1):
-        frac = i / steps
-        rad = radius * frac
-        alpha = int(max_a * ((1.0 - frac) ** 1.85))
-        if alpha <= 0:
-            continue
-        d.ellipse([cx - rad, cy - rad, cx + rad, cy + rad], fill=(r, g, b, alpha))
-    overlay = overlay.filter(ImageFilter.GaussianBlur(radius=max(2, radius * 0.08)))
-    canvas.alpha_composite(overlay)
-
-
 def draw_3d_background(width: int, height: int) -> Image.Image:
-    """Renders a deep midnight lab gradient with subtle 3D depth lighting."""
-    # Render small gradient and upscale smoothly with BICUBIC for speed + banding-free smoothness
+    """Obsidian Lab Glass icon ground: radial #1B3158 -> #0A1322 -> #05080F lit from upper centre."""
     gw, gh = 256, 256
-    grad = Image.new("RGBA", (gw, gh), (11, 15, 25, 255))
+    grad = Image.new("RGBA", (gw, gh), (10, 19, 34, 255))
     px = grad.load()
-    top = (8, 12, 24)
-    mid = (11, 15, 25)
-    bot = (15, 23, 42)
+    c0, c1, c2 = (27, 49, 88), (10, 19, 34), (5, 8, 15)
     for y in range(gh):
-        v = y / max(1, gh - 1)
-        base = lerp_color(top, mid, v * 2.0) if v < 0.5 else lerp_color(mid, bot, (v - 0.5) * 2.0)
+        v = y / (gh - 1)
         for x in range(gw):
-            u = x / max(1, gw - 1)
-            # Subtle diagonal studio highlight
-            dx = u - 0.48
-            dy = v - 0.42
-            dist = math.hypot(dx, dy)
-            boost = max(0.0, 1.0 - dist * 1.45)
-            r = min(255, int(base[0] + boost * 10))
-            g = min(255, int(base[1] + boost * 22))
-            b = min(255, int(base[2] + boost * 36))
-            px[x, y] = (r, g, b, 255)
+            u = x / (gw - 1)
+            d = math.hypot((u - 0.48) / 0.9, (v - 0.38) / 0.9)
+            col = lerp_color(c0, c1, d / 0.58) if d < 0.58 else lerp_color(c1, c2, (d - 0.58) / 0.42)
+            px[x, y] = (*col, 255)
+    return grad.resize((width, height), Image.Resampling.BICUBIC)
 
-    img = grad.resize((width, height), Image.Resampling.BICUBIC)
-    cx, cy = width // 2, height // 2
-    min_dim = min(width, height)
-    draw_radial_glow(img, int(cx * 0.96), int(cy * 0.94), int(min_dim * 0.46), (6, 182, 212, 85))
-    draw_radial_glow(img, int(cx * 1.06), int(cy * 1.08), int(min_dim * 0.36), (16, 185, 129, 55))
-    draw_radial_glow(img, int(cx * 0.85), int(cy * 0.72), int(min_dim * 0.28), (56, 189, 248, 45))
-    return img
+
+def _arc_points(x1, y1, rx, ry, phi_deg, large, sweep, x2, y2, steps=24):
+    """SVG elliptical arc (endpoint form) -> list of points, excluding the start point."""
+    phi = math.radians(phi_deg)
+    cp, sp = math.cos(phi), math.sin(phi)
+    dx, dy = (x1 - x2) / 2, (y1 - y2) / 2
+    x1p, y1p = cp * dx + sp * dy, -sp * dx + cp * dy
+    lam = (x1p ** 2) / (rx ** 2) + (y1p ** 2) / (ry ** 2)
+    if lam > 1:
+        rx, ry = rx * math.sqrt(lam), ry * math.sqrt(lam)
+    num = rx ** 2 * ry ** 2 - rx ** 2 * y1p ** 2 - ry ** 2 * x1p ** 2
+    den = rx ** 2 * y1p ** 2 + ry ** 2 * x1p ** 2
+    co = math.sqrt(max(0.0, num / den)) if den else 0.0
+    if large == sweep:
+        co = -co
+    cxp, cyp = co * rx * y1p / ry, -co * ry * x1p / rx
+    cx = cp * cxp - sp * cyp + (x1 + x2) / 2
+    cy = sp * cxp + cp * cyp + (y1 + y2) / 2
+
+    def ang(ux, uy, vx, vy):
+        a = math.atan2(ux * vy - uy * vx, ux * vx + uy * vy)
+        return a
+
+    t1 = ang(1, 0, (x1p - cxp) / rx, (y1p - cyp) / ry)
+    dt = ang((x1p - cxp) / rx, (y1p - cyp) / ry, (-x1p - cxp) / rx, (-y1p - cyp) / ry)
+    if not sweep and dt > 0:
+        dt -= 2 * math.pi
+    elif sweep and dt < 0:
+        dt += 2 * math.pi
+    pts = []
+    for i in range(1, steps + 1):
+        t = t1 + dt * i / steps
+        x, y = rx * math.cos(t), ry * math.sin(t)
+        pts.append((cp * x - sp * y + cx, sp * x + cp * y + cy))
+    return pts
+
+
+# Logo geometry in the 0..120 viewBox (matches public/icon.svg and FlaskMark.tsx)
+def _flask_outline():
+    pts = [(52, 18), (68, 18), (68, 42), (94, 88)]
+    pts += _arc_points(94, 88, 9, 9, 0, 0, 1, 85, 102)
+    pts += [(35, 102)]
+    pts += _arc_points(35, 102, 9, 9, 0, 0, 1, 26, 88)
+    pts += [(52, 42)]
+    return pts
+
+
+def _liquid_outline():
+    pts = [(41.5, 66), (78.5, 66), (91.1, 88.6)]
+    pts += _arc_points(91.1, 88.6, 6.5, 6.5, 0, 0, 1, 85, 98.5)
+    pts += [(35, 98.5)]
+    pts += _arc_points(35, 98.5, 6.5, 6.5, 0, 0, 1, 28.9, 88.6)
+    return pts
+
+
+def _orbit_half(angle_deg: float, front: bool, steps: int = 64):
+    """Half of the rx50/ry17 orbit centred at (60,70), rotated like SVG rotate(angle 60 70).
+    front=True -> lower half (passes in front of the glass)."""
+    a = math.radians(angle_deg)
+    ca, sa = math.cos(a), math.sin(a)
+    pts = []
+    t0, t1 = (0.0, math.pi) if front else (math.pi, 2 * math.pi)
+    for i in range(steps + 1):
+        t = t0 + (t1 - t0) * i / steps
+        x, y = 50 * math.cos(t), 17 * math.sin(t)
+        pts.append((60 + x * ca - y * sa, 70 + x * sa + y * ca))
+    return pts
+
+
+def _gradient_fill(size: int, mask: Image.Image, stops, direction: str) -> Image.Image:
+    """RGBA image of a linear gradient (list of (offset, (r,g,b,a))) clipped by mask (L)."""
+    g = Image.new("RGBA", (256, 256))
+    gp = g.load()
+    for y in range(256):
+        for x in range(256):
+            t = y / 255 if direction == "v" else (x + y) / 510
+            for i in range(len(stops) - 1):
+                o0, c0 = stops[i]
+                o1, c1 = stops[i + 1]
+                if t <= o1 or i == len(stops) - 2:
+                    k = 0 if o1 == o0 else max(0.0, min(1.0, (t - o0) / (o1 - o0)))
+                    gp[x, y] = lerp_color(c0, c1, k)
+                    break
+    g = g.resize((size, size), Image.Resampling.BICUBIC)
+    out = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    out.paste(g, (0, 0), mask)
+    return out
 
 
 def build_flask_emblem(size: int, padding_ratio: float = 0.0) -> Image.Image:
-    """
-    Renders a crisp transparent RGBA 3D Erlenmeyer flask + golden orbital rings emblem
-    with 3D glass curvature, volumetric meniscus, bubbles, and specular highlights.
-    `padding_ratio` centers the emblem inside adaptive safe zones (e.g. 0.18 for Android foreground).
-    """
-    canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    scale = 1.0 - 2.0 * padding_ratio
-    s = size * scale
-    ox = size * padding_ratio
-    oy = size * padding_ratio
+    """Glass Erlenmeyer + two gold orbits (Logo artboard), transparent background, drop shadow."""
+    ss = 2  # supersample
+    S_ = size * ss
+    inner = S_ * (1 - 2 * padding_ratio)
+    k = inner / 100.0  # content spans ~x 10..110 / y 13..103 of the viewBox
+    ox = S_ * padding_ratio - 10 * k
+    oy = S_ * padding_ratio - 8 * k
 
-    def P(nx: float, ny: float):
-        return (ox + nx * s, oy + ny * s)
+    def P(pt):
+        return (ox + pt[0] * k, oy + pt[1] * k)
 
-    def S(val: float) -> float:
-        return val * s
+    def W(v):
+        return max(1, int(round(v * k)))
 
-    cx, cy_orb = P(0.50, 0.56)
+    art = Image.new("RGBA", (S_, S_), (0, 0, 0, 0))
+    d = ImageDraw.Draw(art)
 
-    # 1. Soft back cyan volumetric aura around flask
-    draw_radial_glow(canvas, int(P(0.50, 0.57)[0]), int(P(0.50, 0.57)[1]), int(S(0.38)), (6, 182, 212, 72))
-    draw_radial_glow(canvas, int(P(0.50, 0.62)[0]), int(P(0.50, 0.62)[1]), int(S(0.28)), (16, 185, 129, 58))
+    # Back halves of the orbits
+    for ang in (-26, 26):
+        d.line([P(p) for p in _orbit_half(ang, front=False)], fill=(168, 106, 8, 204), width=W(2.6), joint="curve")
 
-    # Helper to draw 3D orbital ellipse arc segments (back half vs front half for depth occlusion)
-    def draw_orbital_ring(layer: Image.Image, angle_deg: float, half: str):
-        d = ImageDraw.Draw(layer)
-        rx = S(0.315)
-        ry = S(0.112)
-        rad = math.radians(angle_deg)
-        cos_a, sin_a = math.cos(rad), math.sin(rad)
+    flask = [P(p) for p in _flask_outline()]
+    liquid = [P(p) for p in _liquid_outline()]
+    m = Image.new("L", (S_, S_), 0)
+    ImageDraw.Draw(m).polygon(flask, fill=255)
+    art.alpha_composite(_gradient_fill(S_, m, [(0, (255, 255, 255, 77)), (0.5, (45, 217, 195, 20)), (1, (45, 217, 195, 66))], "d"))
+    m = Image.new("L", (S_, S_), 0)
+    ImageDraw.Draw(m).polygon(liquid, fill=255)
+    art.alpha_composite(_gradient_fill(S_, m, [(0, (95, 242, 223, 255)), (1, (12, 128, 115, 255))], "v"))
 
-        # Sample points around ellipse parameter theta
-        # y_local < 0 is the "back" half behind the flask, y_local >= 0 is "front" in front of flask
-        theta_start = math.pi if half == "back" else 0.0
-        theta_end = 2.0 * math.pi if half == "back" else math.pi
-        steps = 90
-        pts = []
-        for i in range(steps + 1):
-            t = lerp(theta_start, theta_end, i / steps)
-            lx = rx * math.cos(t)
-            ly = ry * math.sin(t)
-            wx = cx + lx * cos_a - ly * sin_a
-            wy = cy_orb + lx * sin_a + ly * cos_a
-            pts.append((wx, wy))
+    d = ImageDraw.Draw(art)
+    d.line(flask + [flask[0], flask[1]], fill=(140, 245, 231, 255), width=W(3), joint="curve")
+    cx, cy = P((60, 66))
+    d.ellipse([cx - 18.5 * k, cy - 3.4 * k, cx + 18.5 * k, cy + 3.4 * k], fill=(198, 255, 247, 255))
+    for (bx, by, r, a) in ((52, 82, 3, 204), (66, 88, 2, 178), (61, 76, 1.5, 178)):
+        x, y = P((bx, by))
+        d.ellipse([x - r * k, y - r * k, x + r * k, y + r * k], fill=(198, 255, 247, a))
+    x0, y0 = P((48.5, 13.5))
+    x1, y1 = P((71.5, 20))
+    d.rounded_rectangle([x0, y0, x1, y1], radius=3.2 * k, fill=(140, 245, 231, 255))
+    spec = Image.new("RGBA", (S_, S_), (0, 0, 0, 0))
+    ImageDraw.Draw(spec).line([P((47, 58)), P((36, 79))], fill=(255, 255, 255, 140), width=W(3), joint="curve")
+    art.alpha_composite(spec)
 
-        if half == "back":
-            d.line(pts, fill=(217, 119, 6, 125), width=max(2, int(S(0.017))), joint="curve")
-            d.line(pts, fill=(251, 191, 36, 165), width=max(1, int(S(0.008))), joint="curve")
-        else:
-            # Soft amber outer glow + crisp golden ring + thin specular edge
-            glow = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-            gd = ImageDraw.Draw(glow)
-            gd.line(pts, fill=(245, 158, 11, 120), width=max(3, int(S(0.032))), joint="curve")
-            glow = glow.filter(ImageFilter.GaussianBlur(radius=max(1.5, S(0.012))))
-            layer.alpha_composite(glow)
+    # Front halves of the orbits (gold) with a light highlight
+    d = ImageDraw.Draw(art)
+    for ang in (-26, 26):
+        pts = [P(p) for p in _orbit_half(ang, front=True)]
+        d.line(pts, fill=(250, 199, 88, 255), width=W(3.2), joint="curve")
+        hi = pts[: len(pts) // 2]
+        d.line(hi, fill=(255, 224, 138, 150), width=W(1.2), joint="curve")
+        for end in (pts[0], pts[-1]):
+            r = 1.6 * k
+            d.ellipse([end[0] - r, end[1] - r, end[0] + r, end[1] + r], fill=(255, 224, 138, 255))
+    for (ex, ey) in ((24, 97), (97, 96)):
+        x, y = P((ex, ey))
+        d.ellipse([x - 5 * k, y - 5 * k, x + 5 * k, y + 5 * k], fill=(255, 224, 138, 255), outline=(168, 106, 8, 255), width=W(1))
 
-            d.line(pts, fill=(245, 158, 11, 240), width=max(2, int(S(0.019))), joint="curve")
-            d.line(pts, fill=(253, 224, 71, 240), width=max(1, int(S(0.007))), joint="curve")
-
-    # Draw back orbital halves BEHIND the flask
-    back_orbits = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    draw_orbital_ring(back_orbits, -28, "back")
-    draw_orbital_ring(back_orbits, 28, "back")
-    canvas.alpha_composite(back_orbits)
-
-    # 2. Flask 3D Glass Silhouette
-    # Coordinates (normalized): neck from x=0.415..0.585, y=0.19..0.38, shoulder flared to rounded flat base at y=0.805
-    flask_poly = [
-        P(0.415, 0.195),
-        P(0.585, 0.195),
-        P(0.585, 0.228),
-        P(0.562, 0.242),
-        P(0.562, 0.375),
-        P(0.752, 0.708),
-        P(0.772, 0.748),
-        P(0.766, 0.782),
-        P(0.742, 0.804),
-        P(0.700, 0.814),
-        P(0.300, 0.814),
-        P(0.258, 0.804),
-        P(0.234, 0.782),
-        P(0.228, 0.748),
-        P(0.248, 0.708),
-        P(0.438, 0.375),
-        P(0.438, 0.242),
-        P(0.415, 0.228),
-    ]
-
-    flask_mask = Image.new("L", (size, size), 0)
-    md = ImageDraw.Draw(flask_mask)
-    md.polygon(flask_poly, fill=255)
-
-    # Interior volumetric glass depth fill
-    glass_layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    gd = ImageDraw.Draw(glass_layer)
-    # Base glass tint
-    gd.polygon(flask_poly, fill=(14, 116, 144, 52))
-    # Left ambient glass wall highlight band
-    gd.polygon([P(0.448, 0.24), P(0.478, 0.24), P(0.475, 0.38), P(0.320, 0.79), P(0.255, 0.79), P(0.445, 0.37)], fill=(186, 230, 253, 38))
-    # Clip to mask
-    r, g, b, a = glass_layer.split()
-    a = ImageChops.darker(a, flask_mask)
-    glass_layer = Image.merge("RGBA", (r, g, b, a))
-    canvas.alpha_composite(glass_layer)
-
-    # 3. 3D Volumetric Glowing Liquid inside lower flask (y = 0.56 to 0.81)
-    liq_layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    ld = ImageDraw.Draw(liq_layer)
-    # Multi-stop vertical gradient bands clipped later by flask_mask
-    y_top = int(P(0.5, 0.548)[1])
-    y_bot = int(P(0.5, 0.82)[1])
-    c_top = (34, 211, 238, 225)     # Cyan 400
-    c_mid = (6, 182, 212, 240)      # Cyan 500
-    c_bot = (16, 185, 129, 250)     # Emerald 500
-    span = max(1, y_bot - y_top)
-    for row in range(y_top, y_bot + 1):
-        t = (row - y_top) / span
-        col = lerp_color(c_top, c_mid, t * 2.0) if t < 0.45 else lerp_color(c_mid, c_bot, (t - 0.45) / 0.55)
-        ld.line([(0, row), (size, row)], fill=col)
-
-    # Slight inner darkening near flask edges for 3D cylindrical volume
-    # Subtract slightly shrunken liquid mask or paint top meniscus ellipse
-    liq_mask = Image.new("L", (size, size), 0)
-    lmd = ImageDraw.Draw(liq_mask)
-    lmd.polygon(
-        [
-            P(0.20, 0.562),
-            P(0.80, 0.562),
-            P(0.82, 0.83),
-            P(0.18, 0.83),
-        ],
-        fill=255,
-    )
-    # Meniscus top ellipse at y=0.562 across the cone width at that height (~0.335 to ~0.665)
-    lmd.ellipse([P(0.322, 0.541), P(0.678, 0.583)], fill=255)
-    combined_liq_mask = ImageChops.darker(liq_mask, flask_mask)
-
-    r, g, b, a = liq_layer.split()
-    a = ImageChops.darker(a, combined_liq_mask)
-    liq_layer = Image.merge("RGBA", (r, g, b, a))
-    canvas.alpha_composite(liq_layer)
-
-    # Top meniscus bright 3D surface highlight ellipse
-    meniscus_layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    mnd = ImageDraw.Draw(meniscus_layer)
-    mnd.ellipse([P(0.325, 0.543), P(0.675, 0.581)], fill=(165, 243, 252, 195), outline=(224, 242, 254, 235), width=max(1, int(S(0.005))))
-    r, g, b, a = meniscus_layer.split()
-    a = ImageChops.darker(a, flask_mask)
-    meniscus_layer = Image.merge("RGBA", (r, g, b, a))
-    canvas.alpha_composite(meniscus_layer)
-
-    # 4. Effervescent 3D Bubbles (with white specular glints)
-    bubbles = [
-        (0.43, 0.72, 0.024, 235),
-        (0.55, 0.67, 0.030, 225),
-        (0.49, 0.61, 0.019, 240),
-        (0.59, 0.74, 0.016, 215),
-        (0.46, 0.49, 0.015, 220),
-        (0.53, 0.42, 0.013, 210),
-        (0.495, 0.33, 0.011, 200),
-    ]
-    bub_layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    bd = ImageDraw.Draw(bub_layer)
-    for bx, by, br, ba in bubbles:
-        px_b, py_b = P(bx, by)
-        rad = S(br)
-        # Bubble sphere rim + translucent interior
-        bd.ellipse([px_b - rad, py_b - rad, px_b + rad, py_b + rad], fill=(224, 242, 254, int(ba * 0.45)), outline=(255, 255, 255, ba), width=max(1, int(S(0.004))))
-        # Specular catchlight
-        sr = max(1.0, rad * 0.34)
-        bd.ellipse([px_b - rad * 0.45 - sr * 0.5, py_b - rad * 0.45 - sr * 0.5, px_b - rad * 0.45 + sr, py_b - rad * 0.45 + sr], fill=(255, 255, 255, 245))
-    canvas.alpha_composite(bub_layer)
-
-    # 5. Flask 3D Glass Rim & Specular Highlights
-    rim_glow = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    rgd = ImageDraw.Draw(rim_glow)
-    rgd.polygon(flask_poly, outline=(34, 211, 238, 175), width=max(3, int(S(0.034))))
-    rim_glow = rim_glow.filter(ImageFilter.GaussianBlur(radius=max(1.5, S(0.014))))
-    canvas.alpha_composite(rim_glow)
-
-    glass_stroke = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    gsd = ImageDraw.Draw(glass_stroke)
-    gsd.polygon(flask_poly, outline=(103, 232, 249, 250), width=max(2, int(S(0.020))))
-    # Left 3D curved specular glass shine
-    gsd.line([P(0.458, 0.255), P(0.458, 0.382), P(0.285, 0.725), P(0.280, 0.768)], fill=(255, 255, 255, 175), width=max(2, int(S(0.013))), joint="curve")
-    # Flask top 3D rim capsule
-    gsd.rounded_rectangle([P(0.398, 0.178), P(0.602, 0.214)], radius=max(2, int(S(0.018))), fill=(22, 78, 99, 180), outline=(165, 243, 252, 255), width=max(2, int(S(0.015))))
-    # Small top glass highlight
-    gsd.line([P(0.422, 0.190), P(0.510, 0.190)], fill=(255, 255, 255, 210), width=max(1, int(S(0.006))))
-    canvas.alpha_composite(glass_stroke)
-
-    # 6. Front Orbital Rings & 3D Electron Spheres
-    front_orbits = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    draw_orbital_ring(front_orbits, -28, "front")
-    draw_orbital_ring(front_orbits, 28, "front")
-    canvas.alpha_composite(front_orbits)
-
-    # 3D Electron spheres orbiting on the front / sides + center nucleus spark
-    electrons = [
-        (0.50, 0.56, 0.032, (251, 191, 36)),   # Central glowing amber nucleus
-        (0.228, 0.455, 0.024, (253, 224, 71)), # Left orbital electron
-        (0.772, 0.455, 0.024, (56, 189, 248)), # Right cyan orbital electron
-        (0.625, 0.658, 0.022, (251, 191, 36)), # Front lower-right electron
-    ]
-    el_layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    ed = ImageDraw.Draw(el_layer)
-    for ex, ey, er, col in electrons:
-        px_e, py_e = P(ex, ey)
-        rad = S(er)
-        draw_radial_glow(el_layer, int(px_e), int(py_e), int(rad * 2.5), (col[0], col[1], col[2], 130))
-        ed.ellipse([px_e - rad, py_e - rad, px_e + rad, py_e + rad], fill=(col[0], col[1], col[2], 255))
-        # White specular dot on electron sphere
-        sr = rad * 0.36
-        ed.ellipse([px_e - rad * 0.38 - sr * 0.5, py_e - rad * 0.38 - sr * 0.5, px_e - rad * 0.38 + sr, py_e - rad * 0.38 + sr], fill=(255, 255, 255, 245))
-    canvas.alpha_composite(el_layer)
-
-    return canvas
+    # Soft drop shadow underneath (filter: drop-shadow(0 10 10 rgba(0,0,0,.55)))
+    alpha = art.split()[3]
+    shadow = Image.new("RGBA", (S_, S_), (0, 0, 0, 0))
+    shadow.putalpha(alpha.point(lambda v: int(v * 0.55)))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(radius=5 * k))
+    out = Image.new("RGBA", (S_, S_), (0, 0, 0, 0))
+    out.alpha_composite(shadow, dest=(0, int(6 * k)))
+    out.alpha_composite(art)
+    return out.resize((size, size), Image.Resampling.LANCZOS)
 
 
 def build_square_icon(master_emblem: Image.Image, size: int, circle_mask: bool = False) -> Image.Image:
@@ -325,8 +229,8 @@ def build_splash(master_emblem: Image.Image, width: int, height: int) -> Image.I
 
 def main():
     print("Rendering 2048x2048 3D emblem master...")
-    master_full = build_flask_emblem(2048, padding_ratio=0.04)
-    master_adaptive = build_flask_emblem(1024, padding_ratio=0.20)
+    master_full = build_flask_emblem(2048, padding_ratio=0.11)
+    master_adaptive = build_flask_emblem(1024, padding_ratio=0.22)
 
     # 1. Web / PWA PNG icons
     print("Generating Web/PWA icons...")
