@@ -725,3 +725,30 @@ export function chemPlainText(raw: string): string {
     .map((seg) => (seg.type === 'text' ? seg.text : seg.tokens.map((t) => ('gap' in t ? t.gap : t.parts.map((p) => p.s).join(''))).join('')))
     .join('');
 }
+
+// ---------------------------------------------------------------------------
+// Additive helpers for mathTypeset.ts (equation typesetting). They expose the existing
+// parsers without changing tokenizeChemText / renderChemDebug / chemPlainText.
+// ---------------------------------------------------------------------------
+
+/** True for a real element symbol (H … Pu). */
+export function isElementSymbol(sym: string): boolean {
+  return ELEMENTS.has(sym);
+}
+
+/**
+ * Reads one chemical species at s[i]: a formula / ion / isotope ("H2SO4", "Fe3+", "SO4^2-", "2H2O(s)"),
+ * a generic alkane ("CnH2n+2") or an electron ("2e-").
+ * Indexed variables, powers, comparisons and electron configurations are NOT read here (the
+ * equation typesetter handles variables and powers itself). The caller checks the left boundary.
+ */
+export function chemTokenAt(s: string, i: number): ChemToken | null {
+  const ch = s[i];
+  if (!ch) return null;
+  let tok: ChemToken | null = null;
+  if (ch === 'C' && s[i + 1] === 'n') tok = parseGenericAlkaneAt(s, i);
+  if (!tok && /\d/.test(ch) && s[i + 1 + (/\d/.test(s[i + 1] ?? '') ? 1 : 0)] === 'e') tok = parseElectronAt(s, i);
+  if (!tok && ch === 'e') tok = parseElectronAt(s, i);
+  if (!tok && /[\dA-Z([]/.test(ch)) tok = parseFormulaAt(s, i);
+  return tok && tok.end > i ? tok : null;
+}

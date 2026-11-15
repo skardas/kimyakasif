@@ -623,7 +623,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                         onClick={() => handleSelectOption(optIdx)}
                       >
                         <span className="ky-key">{optionLetter}</span>
-                        <span className="ky-fs-16 qz-opt-text">{formatChemText(optText)}</span>
+                        <span className="ky-fs-16 qz-opt-text">{formatChemText(optText, { display: 'auto' })}</span>
                         {stateClass === 'right' && (
                           <span className="qz-opt-mark" aria-hidden="true">
                             <Check size={20} strokeWidth={3} />

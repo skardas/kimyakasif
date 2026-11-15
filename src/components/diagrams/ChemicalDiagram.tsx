@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useContext } from 'react';
+import React, { useState, useRef, useLayoutEffect, useContext } from 'react';
 import { Maximize2, X, ZoomIn, ZoomOut } from 'lucide-react';
 import type { QuestionDiagramSpec, LanguageCode } from '../../types/chemistry';
 import { ZOOM_FIT_I18N } from '../three/Kimya3DLab';
@@ -89,10 +89,20 @@ function glyphUnits(text: string): number {
 
 function splitTwo(text: string): [string, string] | null {
   const mid = text.length / 2;
-  let best = -1;
+  let best = -1; // nearest space to the middle that is not inside brackets (keeps "(d = 0,92 g/mL)" whole)
+  let any = -1;
+  let depth = 0;
   for (let i = 0; i < text.length; i++) {
-    if (text[i] === ' ' && (best < 0 || Math.abs(i - mid) < Math.abs(best - mid))) best = i;
+    const ch = text[i];
+    if (ch === '(' || ch === '[' || ch === '（') depth++;
+    else if (ch === ')' || ch === ']' || ch === '）') depth = Math.max(0, depth - 1);
+    if (ch !== ' ') continue;
+    if (any < 0 || Math.abs(i - mid) < Math.abs(any - mid)) any = i;
+    if (depth === 0 && (best < 0 || Math.abs(i - mid) < Math.abs(best - mid))) best = i;
   }
+  // A bracket-free break that leaves one very short line is worse than breaking inside the brackets.
+  if (best > 0 && Math.min(best, text.length - best) < text.length * 0.22 && any > 0) best = any;
+  if (best <= 0) best = any;
   if (best <= 0) return null;
   return [text.slice(0, best), text.slice(best + 1)];
 }
@@ -156,7 +166,9 @@ function bidiText(text: string, lang: LanguageCode): { text: string; rtl: boolea
     if (!core) return run;
     return `${lead}${LRI}${core}${PDI}${trail}`;
   });
-  return { text: out, rtl: true };
+  // The leading right-to-left mark fixes the paragraph direction even when the label starts with
+  // a formula.
+  return { text: `\u200F${out}`, rtl: true };
 }
 
 const flipAnchor = (a: 'start' | 'middle' | 'end'): 'start' | 'middle' | 'end' => (a === 'start' ? 'end' : a === 'end' ? 'start' : 'middle');
@@ -164,7 +176,7 @@ const flipAnchor = (a: 'start' | 'middle' | 'end'): 'start' | 'middle' | 'end' =
 /** SVG text attributes for one label: right-to-left paragraph with a mirrored anchor for Arabic. */
 function textDir(rtl: boolean, anchor: 'start' | 'middle' | 'end') {
   return rtl
-    ? ({ textAnchor: flipAnchor(anchor), direction: 'rtl', style: { unicodeBidi: 'plaintext' as const } } as const)
+    ? ({ textAnchor: flipAnchor(anchor), direction: 'rtl', style: { unicodeBidi: 'embed' as const } } as const)
     : ({ textAnchor: anchor } as const);
 }
 
@@ -179,6 +191,8 @@ interface FitLabelProps {
   weight?: number | string;
   /** Allow wrapping onto a second line. */
   wrap?: boolean;
+  /** Wrapping on narrow (phone) stages, where a second line would collide; defaults to `wrap`. */
+  narrowWrap?: boolean;
   /** Where y sits when wrapped: first baseline (top), last baseline (bottom) or centred. */
   valign?: 'top' | 'middle' | 'bottom';
   minSize?: number;
@@ -194,32 +208,30 @@ const FitLabel: React.FC<FitLabelProps> = ({
   fill,
   weight,
   wrap = true,
+  narrowWrap,
   valign = 'middle',
   minSize = 8,
   children,
 }) => {
   const ctx = useContext(FigureContext);
-  const raw = React.Children.toArray(children).join('');
-  if (!raw.trim()) return null;
-  const phone = ctx.min > size; // narrow stage: this label has to grow to stay legible
-  if (phone) size = r1(ctx.min);
-  const floor = phone ? size : minSize;
+  const raw = React.Children.toArray(children).join('').replace(/\s+/g, ' ').trim();
+  if (!raw) return null;
+  // Narrow stage: nothing may be drawn smaller than ctx.min (about 11 CSS px on screen).
+  const narrow = ctx.min > 0;
+  if (narrow) {
+    if (ctx.min > size) size = r1(ctx.min);
+    if (narrowWrap !== undefined) wrap = narrowWrap;
+  }
+  const floor = narrow ? Math.min(size, r1(ctx.min)) : minSize;
+  const slack = narrow ? 1.1 : 1; // a slightly condensed line is better than a legend entry
   const bd = (t: string) => bidiText(t, ctx.lang);
   const whole = bd(raw);
   const dir = textDir(whole.rtl, anchor);
   const common = { x, fill, fontWeight: weight, ...dir } as const;
-  const one = glyphUnits(raw) * size;
-  const slack = phone ? 1.1 : 1; // a slightly condensed line is better than a legend entry
-  if (one <= w) {
+  const unitsOne = glyphUnits(raw);
+  if (unitsOne * size <= w) {
     return (
       <text {...common} y={y} fontSize={size}>
-        {whole.text}
-      </text>
-    );
-  }
-  if (phone && one <= w * slack) {
-    return (
-      <text {...common} y={y} fontSize={size} textLength={w} lengthAdjust="spacingAndGlyphs">
         {whole.text}
       </text>
     );
@@ -227,7 +239,7 @@ const FitLabel: React.FC<FitLabelProps> = ({
   const parts = wrap ? splitTwo(raw) : null;
   if (parts) {
     const units = Math.max(glyphUnits(parts[0]), glyphUnits(parts[1]));
-    if (!phone || units * floor <= w * slack) {
+    if (!narrow || units * floor <= w * slack) {
       const fs = Math.max(floor, Math.min(size, w / units));
       const lh = Math.round(fs * 1.18 * 10) / 10;
       const y0 = valign === 'top' ? y : valign === 'bottom' ? y - lh : Math.round((y - lh / 2) * 10) / 10;
@@ -244,9 +256,18 @@ const FitLabel: React.FC<FitLabelProps> = ({
       );
     }
   }
-  if (phone && ctx.legend) {
+  if (narrow && unitsOne * floor <= w * slack) {
+    const fs = Math.max(floor, Math.min(size, w / unitsOne));
+    return (
+      <text {...common} y={y} fontSize={Math.round(fs * 10) / 10} {...(unitsOne * fs > w ? { textLength: w, lengthAdjust: 'spacingAndGlyphs' } : {})}>
+        {whole.text}
+      </text>
+    );
+  }
+  if (narrow && ctx.legend) {
     // Does not fit at a legible size: numbered badge here, full text in the legend below.
-    const key = `${x}|${y}|${raw}`;
+    // The same wording twice in one figure (e.g. both axes of a pair of graphs) shares a number.
+    const key = `${fill}|${raw}`;
     let entry = ctx.legend.find((e) => e.key === key);
     if (!entry) {
       entry = { key, n: ctx.legend.length + 1, text: raw, color: fill };
@@ -264,8 +285,8 @@ const FitLabel: React.FC<FitLabelProps> = ({
       </g>
     );
   }
-  const fs = Math.max(floor, (size * w) / one);
-  const squeeze = glyphUnits(raw) * fs > w;
+  const fs = Math.max(floor, w / unitsOne);
+  const squeeze = unitsOne * fs > w;
   return (
     <text
       {...common}
@@ -427,7 +448,7 @@ const Mark: React.FC<{ x: number; y: number; size?: number; anchor?: 'start' | '
   children,
 }) => {
   const ctx = useContext(FigureContext);
-  const raw = React.Children.toArray(children).join('');
+  const raw = React.Children.toArray(children).join('').replace(/\s+/g, ' ');
   const b = bidiText(raw, ctx.lang);
   const fs = ctx.min > size ? r1(ctx.min) : size;
   // Keep the visual centre of a grown mark where the smaller one sat.
@@ -493,17 +514,20 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
   // 540) would be smaller than 11 CSS px, so the figure context raises the minimum font size.
   const svgRef = useRef<SVGSVGElement>(null);
   const [stageWidth, setStageWidth] = useState(0);
-  useEffect(() => {
+  useLayoutEffect(() => {
     const el = svgRef.current;
-    if (!el || typeof ResizeObserver === 'undefined') return;
-    const ro = new ResizeObserver((entries) => {
-      const wpx = Math.round(entries[0].contentRect.width);
-      setStageWidth((prev) => (Math.abs(prev - wpx) >= 2 ? wpx : prev));
-    });
+    if (!el) return;
+    const apply = (wpx: number) => setStageWidth((prev) => (wpx > 0 && Math.abs(prev - wpx) >= 2 ? Math.round(wpx) : prev));
+    // Measure before the first paint so the labels never flash at the small size.
+    apply(el.clientWidth || el.getBoundingClientRect().width);
+    if (typeof ResizeObserver === 'undefined') return;
+    const ro = new ResizeObserver((entries) => apply(entries[0].contentRect.width));
     ro.observe(el);
     return () => ro.disconnect();
   }, []);
-  const minUnits = stageWidth > 0 && stageWidth < 536 ? Math.min(22, (MIN_LABEL_PX * 540) / stageWidth) : 0;
+  // Capped at the size that is 11 px on a 334 px wide drawing (360 px phones): beyond that the
+  // labels would no longer fit the drawings, so narrower screens get slightly smaller text.
+  const minUnits = stageWidth > 0 && stageWidth < 536 ? Math.min(17.8, (MIN_LABEL_PX * 540) / stageWidth) : 0;
   const legend: LegendEntry[] = [];
   const inlineCtx: FigureCtx = { lang, min: minUnits, legend };
   const zoomCtx: FigureCtx = { lang, min: 0, legend: null };
@@ -675,22 +699,6 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
           borderRadius: '12px',
         }}
       >
-        {compact && allowZoom && (
-          <button
-            type="button"
-            className="diagram-expand-btn"
-            onClick={(e) => {
-              e.stopPropagation();
-              setIsZoomed(true);
-            }}
-            aria-label={fsLabel}
-            title={fsLabel}
-          >
-            <span className="diagram-expand-btn__face" aria-hidden="true">
-              <Maximize2 size={16} />
-            </span>
-          </button>
-        )}
         <div className="ky-floor" aria-hidden="true" />
         <svg
           ref={svgRef}
@@ -715,6 +723,23 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
         </svg>
         <FigureLegend entries={legend} lang={lang} />
       </div>
+
+      {compact && allowZoom && (
+        <button
+          type="button"
+          className="diagram-expand-btn"
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsZoomed(true);
+          }}
+          aria-label={fsLabel}
+          title={fsLabel}
+        >
+          <span className="diagram-expand-btn__face" aria-hidden="true">
+            <Maximize2 size={16} />
+          </span>
+        </button>
+      )}
 
       {spec.caption && !compact && <p className="diagram-caption">{spec.caption}</p>}
 
@@ -1232,7 +1257,7 @@ function renderPotentialEnergyCurve(spec: QuestionDiagramSpec, lang: LanguageCod
         {L('pe_ak', 'ak')}
       </FitLabel>
 
-      <FitLabel x={270} y={284} w={510} size={14} weight={600} valign="bottom" fill={K.text}>
+      <FitLabel x={270} y={284} w={510} size={14} weight={600} valign="bottom" narrowWrap={false} fill={K.text}>
         {lbl.k_inc || lbl.dh || L('pe_summary', 'cat')}
       </FitLabel>
     </g>
@@ -1336,7 +1361,7 @@ function renderMechanismProfile(spec: QuestionDiagramSpec, lang: LanguageCode) {
         {L('pe_products', 'products')}
       </FitLabel>
 
-      <FitLabel x={270} y={284} w={510} size={14} weight={600} valign="bottom" fill={K.text}>
+      <FitLabel x={270} y={284} w={510} size={14} weight={600} valign="bottom" narrowWrap={false} fill={K.text}>
         {lbl.rate_eq || ''}
       </FitLabel>
     </g>
@@ -1372,7 +1397,7 @@ function renderTitrationBurette(spec: QuestionDiagramSpec, lang: LanguageCode) {
       <rect x="116" y="160" width="10" height="15" fill={K.amber} />
       <line x1="105" y1="167" x2="137" y2="167" stroke={K.amber} strokeWidth="3" />
       {lbl.burette && (
-        <FitLabel x={142} y={70} w={92} size={13} anchor="start" weight="bold" fill={K.cyan}>
+        <FitLabel x={142} y={70} w={76} size={13} anchor="start" weight="bold" fill={K.cyan}>
           {lbl.burette}
         </FitLabel>
       )}
@@ -1382,13 +1407,13 @@ function renderTitrationBurette(spec: QuestionDiagramSpec, lang: LanguageCode) {
 
       {/* Erlenmeyer flask with the solution being titrated */}
       <path d="M 112 195 L 90 245 A 8 8 0 0 0 98 255 L 144 255 A 8 8 0 0 0 152 245 L 130 195 Z" fill="rgba(255,107,122,0.16)" stroke={K.text} strokeWidth="2" />
-      <FitLabel x={160} y={230} w={78} size={13} anchor="start" weight="bold" fill={K.ruby}>
+      <FitLabel x={160} y={230} w={72} size={13} anchor="start" weight="bold" fill={K.ruby}>
         {L('tit_solution', 'solution', 'flask')}
       </FitLabel>
 
       {/* Right: pH against added volume */}
       <Axes x0={250} y0={240} x1={494} y1={36} />
-      <FitLabel x={492} y={258} w={112} size={13} anchor="end" wrap={false} fill={K.mut}>
+      <FitLabel x={492} y={258} w={104} size={13} anchor="end" wrap={false} fill={K.mut}>
         {L('tit_base_vol', 'base_vol', 'volume')}
       </FitLabel>
       <Mark x={258} y={34} anchor="start" fill={K.mut} weight={500}>pH</Mark>
@@ -1588,7 +1613,7 @@ function renderElectrolysisHoffman(spec: QuestionDiagramSpec, lang: LanguageCode
         {lbl.anode_o2 || '2H₂O → O₂ + 4H⁺ + 4e⁻'}
       </FitLabel>
 
-      <FitLabel x={270} y={276} w={516} size={14} weight="bold" wrap={false} fill={K.text}>
+      <FitLabel x={270} y={271} w={516} size={14} weight="bold" wrap={false} fill={K.text}>
         {w.ratio}
       </FitLabel>
       <FitLabel x={270} y={294} w={516} size={12} wrap={false} fill={K.sec}>
@@ -1653,7 +1678,7 @@ function renderPlatingAndSacrificial(spec: QuestionDiagramSpec, lang: LanguageCo
       <path d="M 363 150 L 363 66 L 488 66 L 488 140" fill="none" stroke={K.text} strokeWidth="2.5" />
       <Arrow x1={458} y1={54} x2={394} y2={54} color={K.cyan} />
       <Mark x={426} y={48} size={12} fill={K.cyan} weight="bold">e⁻</Mark>
-      <Mark x={488} y={212} size={11} fill={K.sec}>Mg → Mg²⁺ + 2e⁻</Mark>
+      <Mark x={534} y={212} size={11} anchor="end" fill={K.sec}>Mg → Mg²⁺ + 2e⁻</Mark>
       <FitLabel x={405} y={238} w={250} size={13} weight="bold" wrap={false} fill={K.green}>
         {lbl.fe_pipe || ''}
       </FitLabel>
@@ -1684,7 +1709,7 @@ function renderVseprGeometry(spec: QuestionDiagramSpec, lang: LanguageCode) {
         <circle cx="60" cy="40" r="14" fill="url(#dg-lit-gold)" filter="url(#dg-shadow)" />
         <circle cx="20" cy="40" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
         <circle cx="100" cy="40" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
-        <text x="60" y="44" textAnchor="middle" fill="#0b1220" fontSize="11.5" fontWeight="bold">Be</text>
+        <Mark x={60} y={44} size={11.5} fill="#0b1220" weight="bold">Be</Mark>
         <FitLabel x={60} y={73} w={132} size={12.5} valign="top" fill="var(--text-secondary, #94a3b8)">
           {lbl.ax2 || 'AX₂ (180°)'}
         </FitLabel>
@@ -1701,7 +1726,7 @@ function renderVseprGeometry(spec: QuestionDiagramSpec, lang: LanguageCode) {
         <circle cx="60" cy="15" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
         <circle cx="25" cy="65" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
         <circle cx="95" cy="65" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
-        <text x="60" y="49" textAnchor="middle" fill="#0b1220" fontSize="11.5" fontWeight="bold">B</text>
+        <Mark x={60} y={49} size={11.5} fill="#0b1220" weight="bold">B</Mark>
         <FitLabel x={60} y={93} w={132} size={12.5} valign="top" fill="var(--text-secondary, #94a3b8)">
           {lbl.ax3 || 'AX₃ (120°)'}
         </FitLabel>
@@ -1720,7 +1745,7 @@ function renderVseprGeometry(spec: QuestionDiagramSpec, lang: LanguageCode) {
         <circle cx="30" cy="70" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
         <circle cx="75" cy="72" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
         <circle cx="95" cy="55" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
-        <text x="60" y="49" textAnchor="middle" fill="var(--brand-on-primary, #ffffff)" fontSize="11.5" fontWeight="bold">C</text>
+        <Mark x={60} y={49} size={11.5} fill="var(--brand-on-primary, #ffffff)" weight="bold">C</Mark>
         <FitLabel x={60} y={93} w={132} size={12.5} valign="top" fill="var(--text-secondary, #94a3b8)">
           {lbl.ax4 || 'AX₄ (109.5°)'}
         </FitLabel>
@@ -1739,7 +1764,7 @@ function renderVseprGeometry(spec: QuestionDiagramSpec, lang: LanguageCode) {
         <circle cx="60" cy="45" r="14" fill="url(#dg-lit-ruby)" filter="url(#dg-shadow)" />
         <circle cx="30" cy="70" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
         <circle cx="90" cy="70" r="10" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
-        <text x="60" y="49" textAnchor="middle" fill="var(--brand-on-primary, #ffffff)" fontSize="11.5" fontWeight="bold">O</text>
+        <Mark x={60} y={49} size={11.5} fill="var(--brand-on-primary, #ffffff)" weight="bold">O</Mark>
         <FitLabel x={60} y={93} w={176} size={12.5} valign="top" fill="var(--text-secondary, #94a3b8)">
           {lbl.ax2e2 || 'AX₂E₂ (104.5°)'}
         </FitLabel>
@@ -1757,7 +1782,7 @@ function renderVseprGeometry(spec: QuestionDiagramSpec, lang: LanguageCode) {
         <circle cx="25" cy="70" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
         <circle cx="60" cy="75" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
         <circle cx="95" cy="70" r="9" fill="url(#dg-lit-white)" filter="url(#dg-shadow)" />
-        <text x="60" y="49" textAnchor="middle" fill="#ffffff" fontSize="11.5" fontWeight="bold">N</text>
+        <Mark x={60} y={49} size={11.5} fill="#ffffff" weight="bold">N</Mark>
         <FitLabel x={60} y={93} w={176} size={12.5} valign="top" fill="var(--text-secondary, #94a3b8)">
           {lbl.ax3e || (lbl.ax2e2 ? w.ax3e : 'AX₃E (107°)')}
         </FitLabel>
@@ -1765,7 +1790,7 @@ function renderVseprGeometry(spec: QuestionDiagramSpec, lang: LanguageCode) {
       </g>
 
       {/* Bottom Summary */}
-      <FitLabel x={270} y={290} w={516} size={13} weight={600} wrap={false} fill="var(--text-primary, #ffffff)">
+      <FitLabel x={270} y={294} w={516} size={13} weight={600} wrap={false} fill="var(--text-primary, #ffffff)">
         {L('vsepr_summary', 'summary', 'vsepr')}
       </FitLabel>
     </g>
@@ -1790,7 +1815,7 @@ function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec, lang: LanguageC
       <FitLabel x={78} y={32} w={150} size={13} anchor="start" wrap={false} fill={K.mut}>
         {L('le_conc', 'conc')}
       </FitLabel>
-      <Mark x={488} y={32} anchor="end" fill={K.sec} weight={600}>N₂ + 3H₂ ⇌ 2NH₃</Mark>
+      <Mark x={488} y={24} anchor="end" fill={K.sec} weight={600}>N₂ + 3H₂ ⇌ 2NH₃</Mark>
 
       {/* t1: disturbance, t2: new equilibrium */}
       <line x1="220" y1="240" x2="220" y2="44" stroke={K.sec} strokeWidth="1" strokeDasharray="3 4" opacity="0.8" />
@@ -2028,7 +2053,7 @@ function renderSolubilityCurves(spec: QuestionDiagramSpec, lang: LanguageCode) {
       </FitLabel>
       {/* Gas: solubility falls with temperature */}
       <path d="M 70 92 C 150 170, 300 212, 470 224" fill="none" stroke={K.ruby} strokeWidth="3.5" strokeDasharray="7 3" />
-      <FitLabel x={104} y={84} w={190} size={13} anchor="start" weight="bold" wrap={false} fill={K.ruby}>
+      <FitLabel x={104} y={76} w={190} size={13} anchor="start" weight="bold" wrap={false} fill={K.ruby}>
         {lbl.exo || ''}
       </FitLabel>
 
@@ -2296,15 +2321,11 @@ const Chain: React.FC<{ x: number; y: number; atoms: string[]; oxo?: number; hot
         <g>
           <line x1={x + oxo * step - 3.5} y1={y - 18} x2={x + oxo * step - 3.5} y2={y - 32} stroke={color} strokeWidth="2.2" />
           <line x1={x + oxo * step + 3.5} y1={y - 18} x2={x + oxo * step + 3.5} y2={y - 32} stroke={color} strokeWidth="2.2" />
-          <text x={x + oxo * step} y={y - 35} textAnchor="middle" fontSize="17" fontWeight="bold" fill={color}>
-            O
-          </text>
+          <Mark x={x + oxo * step} y={y - 35} size={17} fill={color} weight="bold">O</Mark>
         </g>
       )}
       {atoms.map((sym, i) => (
-        <text key={`a${i}`} x={x + i * step} y={y} textAnchor="middle" fontSize="17" fontWeight="bold" fill={hot.includes(i) ? color : K.text}>
-          {sym}
-        </text>
+        <Mark key={`a${i}`} x={x + i * step} y={y} size={17} fill={hot.includes(i) ? color : K.text} weight="bold">{sym}</Mark>
       ))}
     </g>
   );
@@ -2739,7 +2760,7 @@ function renderVapourPressure(spec: QuestionDiagramSpec, lang: LanguageCode) {
   };
   const liquids: [string, number, number, string, string][] = [
     ['(C₂H₅)₂O', 34.6, 3127, K.ruby, '34.6'],
-    ['C₂H₅OH', 78.4, 5088, K.green, '78.4'],
+    ['C₂H₅OH', 78.4, 5088, '#c9a2ff', '78.4'],
     ['H₂O', 100, 4895, K.cyan, '100'],
   ];
   return (
@@ -3367,7 +3388,7 @@ function renderGasLaws(spec: QuestionDiagramSpec, _lang: LanguageCode) {
     return `${r1(196 + v * 132)} ${r1(190 - (0.17 / v) * 128)}`;
   });
   const under = (x: number, text: string, color: string) => (
-    <FitLabel x={x} y={214} w={170} size={13} weight="bold" valign="top" fill={color}>
+    <FitLabel x={x} y={234} w={164} size={13} weight="bold" valign="top" fill={color}>
       {text}
     </FitLabel>
   );
@@ -3387,7 +3408,7 @@ function renderGasLaws(spec: QuestionDiagramSpec, _lang: LanguageCode) {
       ].map(([px, py], i) => (
         <circle key={i} cx={px} cy={py} r="4.5" fill="url(#dg-lit-teal)" filter="url(#dg-shadow)" className={`anim-bounce-${(i % 3) + 1}`} />
       ))}
-      {under(84, lbl.piston || '', K.amber)}
+      {under(88, lbl.piston || '', K.amber)}
 
       {/* Boyle: P against V at constant T and n */}
       <Axes x0={196} y0={190} x1={346} y1={50} />
@@ -3405,7 +3426,7 @@ function renderGasLaws(spec: QuestionDiagramSpec, _lang: LanguageCode) {
       <line x1="422" y1="158.4" x2="516" y2="76" stroke={K.ruby} strokeWidth="3.2" />
       {under(452, lbl.charles || '', K.ruby)}
 
-      <FitLabel x={270} y={282} w={516} size={13} weight="bold" wrap={false} fill={K.text}>
+      <FitLabel x={270} y={290} w={516} size={13} weight="bold" wrap={false} fill={K.text}>
         {lbl.rconst || ''}
       </FitLabel>
     </g>

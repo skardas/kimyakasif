@@ -649,7 +649,7 @@ export async function runTier2Tests(): Promise<void> {
           lang: 'tr',
         })
       );
-      expect(leChatelierMarkup).toContain('Le Chatelier: N2 eklenince denge ürünlere kayar; Kc sabittir!');
+      expect(leChatelierMarkup).toContain('Le Chatelier: N₂ eklenince denge ürünlere kayar; Kc değişmez.');
 
       // 4. Verify VSEPR geometry centers (AX2 at 135, AX4 at 405) across all 8 languages
       const testLanguages: LanguageCode[] = ['tr', 'en', 'de', 'fr', 'ru', 'ar', 'zh', 'ku'];

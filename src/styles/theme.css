@@ -348,6 +348,83 @@ button:disabled,
   inset-block-start: -0.42em;
 }
 
+/* Typeset equations (KaTeX output produced by mathTypeset.ts; fonts are bundled, no CDN).
+   - An equation is a left-to-right isolate, also inside Arabic text.
+   - It takes the colour of the surrounding text (KaTeX draws with currentColor) in both themes and
+     follows the text-size setting because every size below is in em.
+   - 1.1em: KaTeX's own 1.21em is tuned for Times; Figtree has a larger x-height (0.50 vs 0.43), so
+     1.1em keeps lowercase letters and digits level with the surrounding words.
+   - Inline equations wrap after relation / binary operators (KaTeX splits them into nowrap boxes).
+     A box that could be wider than a phone line (.chem-math--wide) and display-style equations
+     (.chem-math--display) scroll inside themselves instead of widening the page; an inline run
+     whose unbreakable piece is longer still is not typeset at all (see mathTypeset.ts). */
+.chem-math {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  white-space: normal;
+}
+
+.chem-math .katex {
+  font-size: 1.1em;
+  line-height: 1.2;
+  color: inherit;
+}
+
+/* Word labels inside an equation (ürünler, toplam, продукты, النواتج, 生成物): KaTeX's math fonts
+   have no ç ş ğ / Cyrillic / Arabic / CJK glyphs, so labels use one serif text face per word. */
+.chem-math .katex .hangul_fallback {
+  font-family: var(--font-math-label, 'Times New Roman', Times, 'Noto Serif', 'Droid Serif', serif);
+  font-style: normal;
+}
+
+.chem-math--display {
+  display: inline-block;
+  max-inline-size: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: middle;
+  padding-block: 0.12em;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Inline equation with a long unbreakable piece: the equation still wraps between its boxes, and a
+   box wider than the line scrolls inside itself. --kd is the box's depth below the baseline (set by
+   mathTypeset.ts from KaTeX's strut); it puts the scroll box back on the text baseline. */
+.chem-math--wide:not(.chem-math--display) .katex-base {
+  max-inline-size: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: var(--kd, 0em);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.chem-math--display::-webkit-scrollbar,
+.chem-math--wide .katex-base::-webkit-scrollbar {
+  display: none;
+}
+
+/* Long display equations shrink before they have to scroll. */
+.chem-math--display.chem-math--wide .katex {
+  font-size: 0.92em;
+}
+
+/* Stand-alone formula field with several formulas ("A = Z + N | …"): one formula per line. */
+.chem-eq-line {
+  display: block;
+}
+
+.chem-eq-line + .chem-eq-line {
+  margin-block-start: 0.45em;
+}
+
 /* Multi-step explanations / worked solutions: one block per statement or step. */
 .chem-block__p {
   display: block;

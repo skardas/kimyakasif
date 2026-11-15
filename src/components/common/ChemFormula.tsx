@@ -1,5 +1,6 @@
 import React from 'react';
 import { tokenizeChemText, type ChemPart } from './chemNotation';
+import { typesetMath, isWholeEquation } from './mathTypeset';
 
 export { tokenizeChemText, renderChemDebug, chemPlainText } from './chemNotation';
 
@@ -53,21 +54,18 @@ function renderParts(parts: ChemPart[], keyPrefix: string): React.ReactNode[] {
 }
 
 /**
- * Formats bank text for display: chemical formulas get real subscripts/superscripts
+ * Chemical notation only (no equation typesetting): formulas get real subscripts/superscripts
  * (H<sub>2</sub>SO<sub>4</sub>, Fe<sup>3+</sup>, 10<sup>−3</sup>, 1s<sup>2</sup>, sp<sup>3</sup>),
- * ASCII arrows become → / ⇌, and every formula or equation is wrapped in a
- * <bdi dir="ltr"> isolate so it keeps its left-to-right order inside Arabic text.
- * The stored text is never changed; only the rendering. See chemNotation.ts for the rules.
+ * ASCII arrows become → / ⇌, and every formula or reaction is wrapped in a <bdi dir="ltr"> isolate
+ * so it keeps its left-to-right order inside Arabic text. See chemNotation.ts for the rules.
  */
-export function formatChemText(rawText: string): React.ReactNode {
-  if (!rawText) {
-    return rawText;
-  }
+function renderChemNotation(rawText: string, keyPrefix = ''): React.ReactNode {
   const segments = tokenizeChemText(rawText);
   if (segments.length === 1 && segments[0].type === 'text') {
     return segments[0].text;
   }
-  return segments.map((seg, si) => {
+  return segments.map((seg, idx) => {
+    const si = `${keyPrefix}${idx}`;
     if (seg.type === 'text') {
       return <React.Fragment key={si}>{seg.text}</React.Fragment>;
     }
@@ -95,6 +93,71 @@ export function formatChemText(rawText: string): React.ReactNode {
       </bdi>
     );
   });
+}
+
+export interface FormatChemOptions {
+  /**
+   * true   — the string is a stand-alone formula field: parts separated by " | " are stacked on
+   *          separate lines and equations use display style (stacked fractions).
+   * 'auto' — display style only when the whole string is one equation (an option such as
+   *          "r = k[A]^2" or "1,0x10^-4 M"); otherwise inline.
+   * false  — inline (default): equations inside running text.
+   */
+  display?: boolean | 'auto';
+}
+
+/** One line of text: equation runs typeset with KaTeX, the rest with chemical notation. */
+function renderMixed(text: string, display: boolean, keyPrefix = ''): React.ReactNode {
+  const segments = typesetMath(text, { display });
+  if (!segments.some((seg) => seg.type === 'math')) return renderChemNotation(text, keyPrefix);
+  return segments.map((seg, i) => {
+    const key = `${keyPrefix}m${i}`;
+    if (seg.type === 'text') {
+      return <React.Fragment key={key}>{renderChemNotation(seg.text, `${key}-`)}</React.Fragment>;
+    }
+    // KaTeX output only (labels are HTML-escaped by mathTypeset); the original notation stays
+    // available to assistive technology through aria-label.
+    return (
+      <bdi
+        key={key}
+        dir="ltr"
+        role="math"
+        aria-label={seg.raw}
+        className={`chem-math${display ? ' chem-math--display' : ''}${seg.wide ? ' chem-math--wide' : ''}`}
+        dangerouslySetInnerHTML={{ __html: seg.html }}
+      />
+    );
+  });
+}
+
+/**
+ * Formats bank text for display.
+ *  - Equation runs ("Ka = [H+]^2 / Ca", "sqrt(64/16) = 2", "1,0x10^-10") are converted to LaTeX and
+ *    rendered with KaTeX (see mathTypeset.ts). Anything the converter is not sure about keeps the
+ *    chemical-notation rendering below, so no text is ever lost.
+ *  - Chemical formulas get real subscripts/superscripts, ASCII arrows become → / ⇌, and every
+ *    formula or equation is a <bdi dir="ltr"> isolate (left-to-right inside Arabic text).
+ * The stored text is never changed; only the rendering.
+ */
+export function formatChemText(rawText: string, options: FormatChemOptions = {}): React.ReactNode {
+  if (!rawText) {
+    return rawText;
+  }
+  if (options.display === true) {
+    const parts = rawText.split(/\s+\|\s+/).filter((p) => p.trim());
+    if (parts.length > 1) {
+      return parts.map((part, i) => (
+        <span key={i} className="chem-eq-line">
+          {renderMixed(part.trim(), true, `l${i}-`)}
+        </span>
+      ));
+    }
+    return renderMixed(rawText, true);
+  }
+  if (options.display === 'auto' && isWholeEquation(rawText)) {
+    return renderMixed(rawText.trim(), true);
+  }
+  return renderMixed(rawText, false);
 }
 
 /**

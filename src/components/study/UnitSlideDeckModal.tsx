@@ -275,7 +275,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                 <div key={gf.id} className="ky-card sl-formula">
                   <p className="ky-fs-12 sl-formula__label">{formatChemText(gf.label[lang] || gf.label.tr)}</p>
                   <p className="ky-fs-24 sl-formula__eq">
-                    <bdi dir="ltr">{formatChemText(gf.expression[lang] || gf.expression.tr)}</bdi>
+                    <bdi dir="ltr">{formatChemText(gf.expression[lang] || gf.expression.tr, { display: true })}</bdi>
                   </p>
                   <p className="ky-fs-16 sl-formula__note">{formatChemText(gf.examNote[lang] || gf.examNote.tr)}</p>
                 </div>

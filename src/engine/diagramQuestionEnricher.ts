@@ -415,14 +415,14 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ku: 'Hesabên molê: n = m/MA = N/NA = V/22,4 L di mercên asayî de.',
       },
       labels: {
-        tr: { mol: 'Mol sayısı (n)', na: 'Tanecik: N = n · Nₐ', vmol: 'Gaz hacmi (NK: 0 °C, 1 atm): V = n · 22,4 L  ·  Nₐ = 6,02 × 10²³', ma: 'Kütle: m = n · MA' },
-        en: { mol: 'Amount in moles (n)', na: 'Particles: N = n · Nₐ', vmol: 'Gas volume (0 °C, 1 atm): V = n · 22.4 L  ·  Nₐ = 6.02 × 10²³', ma: 'Mass: m = n · M' },
-        de: { mol: 'Stoffmenge (n)', na: 'Teilchen: N = n · Nₐ', vmol: 'Gasvolumen (0 °C, 1 atm): V = n · 22,4 L  ·  Nₐ = 6,02 × 10²³', ma: 'Masse: m = n · M' },
-        fr: { mol: 'Quantité de matière (n)', na: 'Entités : N = n · Nₐ', vmol: 'Volume de gaz (0 °C, 1 atm) : V = n · 22,4 L  ·  Nₐ = 6,02 × 10²³', ma: 'Masse : m = n · M' },
-        ru: { mol: 'Количество вещества (n)', na: 'Частицы: N = n · Nₐ', vmol: 'Объём газа (0 °C, 1 атм): V = n · 22,4 л  ·  Nₐ = 6,02 × 10²³', ma: 'Масса: m = n · M' },
-        ar: { mol: 'عدد المولات (n)', na: 'الجسيمات: N = n · Nₐ', vmol: 'حجم الغاز (0 °C, 1 atm): V = n · 22.4 L  ·  Nₐ = 6.02 × 10²³', ma: 'الكتلة: m = n · M' },
-        zh: { mol: '物质的量 (n)', na: '粒子数：N = n · Nₐ', vmol: '气体体积（0 °C, 1 atm）：V = n · 22.4 L  ·  Nₐ = 6.02 × 10²³', ma: '质量：m = n · M' },
-        ku: { mol: 'Hejmara molan (n)', na: 'Tanecik: N = n · Nₐ', vmol: 'Qebareya gazê (0 °C, 1 atm): V = n · 22,4 L  ·  Nₐ = 6,02 × 10²³', ma: 'Girse: m = n · MA' },
+        tr: { mol: '1 mol = 6,02 × 10²³ tanecik (Nₐ)', na: 'Tanecik: N = n · Nₐ', vmol: 'Gaz hacmi (NK: 0 °C, 1 atm): V = n · 22,4 L', ma: 'Kütle: m = n · MA' },
+        en: { mol: '1 mol = 6.02 × 10²³ particles (Nₐ)', na: 'Particles: N = n · Nₐ', vmol: 'Gas volume (0 °C, 1 atm): V = n · 22.4 L', ma: 'Mass: m = n · M' },
+        de: { mol: '1 mol = 6,02 × 10²³ Teilchen (Nₐ)', na: 'Teilchen: N = n · Nₐ', vmol: 'Gasvolumen (0 °C, 1 atm): V = n · 22,4 L', ma: 'Masse: m = n · M' },
+        fr: { mol: '1 mol = 6,02 × 10²³ entités (Nₐ)', na: 'Entités : N = n · Nₐ', vmol: 'Volume de gaz (0 °C, 1 atm) : V = n · 22,4 L', ma: 'Masse : m = n · M' },
+        ru: { mol: '1 моль = 6,02 × 10²³ частиц (Nₐ)', na: 'Частицы: N = n · Nₐ', vmol: 'Объём газа (0 °C, 1 атм): V = n · 22,4 л', ma: 'Масса: m = n · M' },
+        ar: { mol: '1 mol = 6.02 × 10²³ جسيم (Nₐ)', na: 'الجسيمات: N = n · Nₐ', vmol: 'حجم الغاز (0 °C, 1 atm): V = n · 22.4 L', ma: 'الكتلة: m = n · M' },
+        zh: { mol: '1 mol = 6.02 × 10²³ 个粒子 (Nₐ)', na: '粒子数：N = n · Nₐ', vmol: '气体体积（0 °C, 1 atm）：V = n · 22.4 L', ma: '质量：m = n · M' },
+        ku: { mol: '1 mol = 6,02 × 10²³ tanecik (Nₐ)', na: 'Tanecik: N = n · Nₐ', vmol: 'Qebareya gazê (0 °C, 1 atm): V = n · 22,4 L', ma: 'Girse: m = n · MA' },
       },
     },
   ],
@@ -790,14 +790,14 @@ const UNIT_DIAGRAM_TEMPLATES: Record<string, [DiagramTemplate, DiagramTemplate]>
         ku: 'Yekbûna zagonên Boyle, Charles û Avogadro di hevkêşeya P · V = n · R · T de.',
       },
       labels: {
-        tr: { boyle: 'Boyle: P · V sabit (T, n sabit)', charles: 'Charles: V / T sabit (P, n sabit)', piston: 'Sürtünmesiz piston: Pgaz = Pdış', rconst: 'P · V = n · R · T     R = 0,082 L·atm/(mol·K)' },
-        en: { boyle: 'Boyle: P · V constant (T, n fixed)', charles: 'Charles: V / T constant (P, n fixed)', piston: 'Frictionless piston: Pgas = Pext', rconst: 'P · V = n · R · T     R = 0.082 L·atm/(mol·K)' },
-        de: { boyle: 'Boyle: P · V konstant (T, n fest)', charles: 'Charles: V / T konstant (P, n fest)', piston: 'Reibungsfreier Kolben: PGas = Paußen', rconst: 'P · V = n · R · T     R = 0,082 L·atm/(mol·K)' },
-        fr: { boyle: 'Boyle : P · V constant (T, n fixés)', charles: 'Charles : V / T constant (P, n fixés)', piston: 'Piston sans frottement : Pgaz = Pext', rconst: 'P · V = n · R · T     R = 0,082 L·atm/(mol·K)' },
-        ru: { boyle: 'Бойль: P · V постоянно (T, n пост.)', charles: 'Шарль: V / T постоянно (P, n пост.)', piston: 'Поршень без трения: Pгаза = Pвнеш', rconst: 'P · V = n · R · T     R = 0,082 л·атм/(моль·K)' },
-        ar: { boyle: 'بويل: P · V ثابت (T, n ثابتان)', charles: 'شارل: V / T ثابت (P, n ثابتان)', piston: 'مكبس عديم الاحتكاك: Pgas = Pext', rconst: 'P · V = n · R · T     R = 0.082 L·atm/(mol·K)' },
-        zh: { boyle: '波义耳：P · V 恒定（T、n 不变）', charles: '查理：V / T 恒定（P、n 不变）', piston: '无摩擦活塞：P气 = P外', rconst: 'P · V = n · R · T     R = 0.082 L·atm/(mol·K)' },
-        ku: { boyle: 'Boyle: P · V sabît (T, n sabît)', charles: 'Charles: V / T sabît (P, n sabît)', piston: 'Pistona bê xişandin: Pgaz = Pderve', rconst: 'P · V = n · R · T     R = 0,082 L·atm/(mol·K)' },
+        tr: { boyle: 'Boyle: P · V sabit (T, n sabit)', charles: 'Charles: V / T sabit (P, n sabit)', piston: 'Sürtünmesiz piston: Pgaz = Pdış', rconst: 'P · V = n · R · T;  R = 0,082 L·atm/(mol·K)' },
+        en: { boyle: 'Boyle: P · V constant (T, n fixed)', charles: 'Charles: V / T constant (P, n fixed)', piston: 'Frictionless piston: Pgas = Pext', rconst: 'P · V = n · R · T;  R = 0.082 L·atm/(mol·K)' },
+        de: { boyle: 'Boyle: P · V konstant (T, n fest)', charles: 'Charles: V / T konstant (P, n fest)', piston: 'Reibungsfreier Kolben: PGas = Paußen', rconst: 'P · V = n · R · T;  R = 0,082 L·atm/(mol·K)' },
+        fr: { boyle: 'Boyle : P · V constant (T, n fixés)', charles: 'Charles : V / T constant (P, n fixés)', piston: 'Piston sans frottement : Pgaz = Pext', rconst: 'P · V = n · R · T;  R = 0,082 L·atm/(mol·K)' },
+        ru: { boyle: 'Бойль: P · V постоянно (T, n пост.)', charles: 'Шарль: V / T постоянно (P, n пост.)', piston: 'Поршень без трения: Pгаза = Pвнеш', rconst: 'P · V = n · R · T;  R = 0,082 л·атм/(моль·K)' },
+        ar: { boyle: 'بويل: P · V ثابت (T, n ثابتان)', charles: 'شارل: V / T ثابت (P, n ثابتان)', piston: 'مكبس عديم الاحتكاك: Pgas = Pext', rconst: 'P · V = n · R · T;  R = 0.082 L·atm/(mol·K)' },
+        zh: { boyle: '波义耳：P · V 恒定（T、n 不变）', charles: '查理：V / T 恒定（P、n 不变）', piston: '无摩擦活塞：P气 = P外', rconst: 'P · V = n · R · T;  R = 0.082 L·atm/(mol·K)' },
+        ku: { boyle: 'Boyle: P · V sabît (T, n sabît)', charles: 'Charles: V / T sabît (P, n sabît)', piston: 'Pistona bê xişandin: Pgaz = Pderve', rconst: 'P · V = n · R · T;  R = 0,082 L·atm/(mol·K)' },
       },
     },
     {
@@ -1738,6 +1738,76 @@ function diagramRelevance(q: CompiledQuestion, spec: QuestionDiagramSpec): numbe
  * that figure when the set has no better candidate left, so the 2 + 2 per set count never changes.
  */
 const FIGURE_OFF_TOPIC: Record<string, [string[], string[]]> = {
+  // u01: four pieces of glassware · alembic distillation
+  u01: [
+    ['damıtma', 'süzme', 'simya', 'zaç', 'kezzap', 'biyokimya', 'imbik'],
+    ['süzme', 'ayırma hunisi', 'balon joje', 'büret', 'biyokimya', 'piktogram'],
+  ],
+  // u02: Bohr levels and photon emission · periodic trends
+  u02: [
+    ['periyot', 'iyonlaşma', 'elektronegat', 'yarıçap', 'metalik', 'izotop', 'izoton', 'kütle numarası', 'elektron ilgisi'],
+    ['izotop', 'izoton', 'kütle numarası', 'rutherford', 'thomson', 'atom model', 'ışıma', 'uyarıl'],
+  ],
+  // u03: ionic / covalent bond, dipole–dipole, hydrogen bond · hydrogen bonds in water and ice
+  u03: [
+    ['london', 'buz'],
+    ['iyonik bağ', 'london', 'kovalent bağ', 'metalik bağ', 'lewis'],
+  ],
+  // u04: heating curve of water · vapour pressure and boiling point
+  u04: [
+    ['kristal', 'amorf', 'moleküler katı', 'viskozite', 'akıcılık', 'bağıl nem', 'buhar basıncı', 'plazma'],
+    ['kristal', 'amorf', 'moleküler katı', 'bağıl nem', 'plazma', 'ısınma ve hal değişimi'],
+  ],
+  // u05: water hardness and softening · greenhouse effect and acid rain
+  u05: [
+    ['sera', 'asit yağmur', 'ozon', 'yeşil kimya', 'fosil', 'karbon döngü'],
+    ['sert su', 'sertlik', 'yumuşak su', 'koagülasyon', 'iyon değiştir', 'kireç'],
+  ],
+  // u06: conservation of mass and definite proportions · mole map
+  u06: [
+    ['mol kütlesi', 'avogadro', '22,4', 'basit formül', 'molekül formülü', 'bağıl atom', 'gerçek atom'],
+    ['katlı oran', 'sabit oran', 'kütlenin korunumu', 'basit formül', 'molekül formülü'],
+  ],
+  // u07: limiting reactant · precipitation and net ionic equation
+  u07: [
+    ['çözünme-çökelme', 'net iyon', 'seyirci', 'denkleştirme', 'analiz', 'saflık', 'asit-baz'],
+    ['artan madde', 'sınırlayıcı', 'verim', 'yanma', 'denkleştirme', 'saflık', 'paslanma'],
+  ],
+  // u08: fractional distillation · separatory funnel
+  u08: [
+    ['ayırma hunisi', 'kristallendirme', 'diyaliz', 'ppm', 'yüzde derişim', 'flotasyon', 'yüzdürme', 'süspansiyon', 'emülsiyon'],
+    ['damıtma', 'ppm', 'flotasyon', 'yüzdürme', 'diyaliz', 'doygun', 'süspansiyon', 'özütleme', 'duman'],
+  ],
+  // u09: pH scale and neutralisation · gases from metals with acids
+  u09: [
+    ['bakır', 'altın', 'metal', 'oksit'],
+    ['titrasyon', 'çamaşır', 'kireç taşı', 'soda', 'oksijensiz asit', 'indikatör', 'fenolftalein', 'ph değer'],
+  ],
+  // u10: soap micelle · addition polymers
+  u10: [
+    ['polimer', 'pet ambalaj', 'teflon', 'kozmetik', 'pastörizasyon', 'kevlar'],
+    ['sabun', 'deterjan', 'misel', 'kozmetik', 'pastörizasyon'],
+  ],
+  // u11: orbital shapes and Pauli · Cr / Cu orbital diagrams, Aufbau and Hund
+  u11: [
+    ['izoelektronik', 'küresel simetri', 'iyonlaşma', 'aufbau', 'bohr atom'],
+    ['iyonlaşma', 'izoelektronik', 'açısal momentum', 'manyetik kuantum'],
+  ],
+  // u12: piston, Boyle and Charles graphs · manometers
+  u12: [
+    ['manometre', 'kinetik', 'dairesel'],
+    ['boyle', 'charles', 'gay-lussac', 'avogadro', 'ideal gaz denklemi', 'yoğunlu', 'heterojen gaz', 'birleşik gaz'],
+  ],
+  // u13: Graham diffusion · Dalton partial pressures and gas over water
+  u13: [
+    ['joule', 'soğutucu', 'kısmi basınç', 'kinetik enerji', 'ideale', 'su üstünde'],
+    ['difüz', 'efüzyon', 'graham', 'yayılma'],
+  ],
+  // u14: concentration units · ion concentrations of a dissolved salt
+  u14: [
+    ['iyonlaş', 'elektrolit', 'ortak iyon'],
+    ['mol kesri', 'hacimce yüzde', 'molalite'],
+  ],
   // u15: boiling/freezing shift curves · solubility curves
   u15: [
     ['çözünürlük eğrisi', 'henry', 'aşırı doymuş', 'ozmo'],

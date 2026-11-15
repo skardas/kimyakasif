@@ -128,6 +128,11 @@
 }
 
 .sl-formula__eq bdi { display: inline; }
+/* Typeset formulas in the card: the card's 24px face is too large for stacked fractions on a
+   320px screen, so equations are set a little smaller; prose parts keep the card's text face. */
+.sl-formula__eq .chem-math .katex { font-size: 0.95em; }
+.sl-formula__eq .chem-math--wide .katex { font-size: 0.8em; }
+.sl-formula__eq .chem-eq-line + .chem-eq-line { margin-block-start: 0.5em; }
 .sl-formula__note { margin: 0; color: var(--text2); line-height: 1.45; }
 
 /* Exam trap as its own block */
@@ -405,9 +410,9 @@
 
 /* Phones: give the drawing the whole card width so its labels stay readable inline. */
 @media (max-width: 599px) {
-  .sl-diagram { padding: 6px; }
-  .sl-diagram .diagram-header { padding: 4px 6px 0; }
-  .sl-diagram .diagram-caption { padding: 0 6px 6px; }
+  .sl-diagram { padding: 4px; margin-inline: -14px; }
+  .sl-diagram .diagram-header { padding: 6px 8px 0; }
+  .sl-diagram .diagram-caption { padding: 0 8px 8px; }
   .diagram-svg-wrapper { border-radius: 14px; }
 }
 
@@ -428,13 +433,16 @@
 /* Compact stage (quiz): no title/zoom row; one small expand control on the stage corner.
    The button is a 44px hit area around a smaller glass face so it stays unobtrusive. */
 .chemical-diagram-container.is-compact .diagram-svg-wrapper { cursor: zoom-in; }
+/* The control sits on the lower corner of the card, just below the stage, so it never covers a
+   label of the drawing (tapping the stage opens the same view). */
+.chemical-diagram-container.is-compact { position: relative; }
 .diagram-expand-btn {
-  position: absolute;
-  inset-block-start: 2px;
-  inset-inline-end: 2px;
+  position: relative;
+  align-self: flex-end;
+  margin-block: 2px 0;
   z-index: 2;
   inline-size: 44px;
-  block-size: 44px;
+  block-size: 36px;
   display: grid;
   place-items: center;
   padding: 0;

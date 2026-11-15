@@ -254,6 +254,12 @@ export function buildFractionalDistillation(isDark: boolean): ProceduralSceneObj
   (condenser.material as THREE.MeshStandardMaterial).opacity = 0.45;
   group.add(condenser);
 
+  // Cooling water: in at the lower end (from below), out at the upper end (to the top)
+  const waterColor = isDark ? 0x7dd3fc : 0x0ea5e9;
+  const waterIn = makeBondCylinder(new THREE.Vector3(1.55, -0.15, 0), new THREE.Vector3(1.55, -0.85, 0), 0.07, waterColor, isDark);
+  const waterOut = makeBondCylinder(new THREE.Vector3(0.45, 0.45, 0), new THREE.Vector3(0.45, 1.15, 0), 0.07, waterColor, isDark);
+  group.add(waterIn, waterOut);
+
   // Receiving Flask
   const recvFlask = makeAtomMesh(0.55, isDark ? 0x10b981 : 0x059669, isDark);
   recvFlask.position.set(2.2, -1.2, 0);
@@ -288,8 +294,10 @@ export function buildFractionalDistillation(isDark: boolean): ProceduralSceneObj
     setExplode: (factor) => {
       factor = clampExplodeFactor(factor);
       column.position.y = -0.4 + factor * 0.8;
-      thermometer.position.y = factor * 1.0;
-      condenser.position.x = factor * 1.2;
+      thermometer.position.y = 1.25 + factor * 1.0; // 1.25 = its resting height (midpoint of 0.7…1.8)
+      condenser.position.x = 1.0 + factor * 1.2;
+      waterIn.position.x = 1.55 + factor * 1.2;
+      waterOut.position.x = 0.45 + factor * 1.2;
       recvFlask.position.x = 2.2 + factor * 1.0;
     },
     dispose: () => disposeSceneObject(group),
@@ -346,7 +354,8 @@ export function buildRutherfordScattering(isDark: boolean): ProceduralSceneObjec
   for (let i = 0; i < 20; i++) {
     const mesh = new THREE.Mesh(alphaGeo, alphaMat);
     const deflected = i === 0 || i === 7;
-    const angle = deflected ? (Math.random() > 0.5 ? 2.2 : -2.2) : (Math.random() - 0.5) * 0.15;
+    // Two of twenty are shown scattered through a large angle (> 90°, back towards the source)
+    const angle = deflected ? (i === 0 ? 2.2 : -2.2) : (Math.random() - 0.5) * 0.15;
     alphas.push({ mesh, progress: Math.random(), deflected, angle });
     group.add(mesh);
   }
@@ -364,11 +373,7 @@ export function buildRutherfordScattering(isDark: boolean): ProceduralSceneObjec
         } else {
           // Deflection past foil
           const distPast = x;
-          a.mesh.position.set(
-            x * Math.cos(a.angle * 0.5),
-            distPast * Math.sin(a.angle),
-            distPast * Math.sin(a.angle * 0.8)
-          );
+          a.mesh.position.set(distPast * Math.cos(a.angle), distPast * Math.sin(a.angle), a.deflected ? 0 : distPast * Math.sin(a.angle * 0.8));
         }
       });
     },
@@ -408,23 +413,27 @@ export function buildBohrHydrogenEmission(isDark: boolean): ProceduralSceneObjec
 
   // Orbital electron
   const electron = makeAtomMesh(0.08, 0x38bdf8, isDark, 0x38bdf8);
+  electron.position.set(orbitRadii[1], 0, 0); // still picture: on n = 2, just after the jump
   group.add(electron);
 
-  // Emitted photon packet
-  const photon = makeAtomMesh(0.06, 0xa855f7, isDark, 0xc084fc);
+  // Emitted photon packet (486 nm: blue-green)
+  const photon = makeAtomMesh(0.06, 0x22d3ee, isDark, 0x22d3ee);
+  photon.position.set(1.6, 1.2, 0);
   group.add(photon);
 
   return {
     group,
     animate: (time, liveSim) => {
       if (!liveSim) return;
-      const period = (time * 1.5) % (Math.PI * 2);
-      // Electron orbiting
-      const currentRadius = 1.4 + Math.sin(time * 2) * 0.6;
+      // 4 s cycle: two seconds on the n = 4 orbit, then the jump to n = 2 (orbits are discrete:
+      // the electron is never in between) and the emitted photon travelling outwards.
+      const phase = (time % 4) / 4;
+      const onUpper = phase < 0.5;
+      const currentRadius = onUpper ? orbitRadii[3] : orbitRadii[1];
       electron.position.set(Math.cos(time * 3) * currentRadius, 0, Math.sin(time * 3) * currentRadius);
 
-      // Emitted photon radiating outward
-      const photonDist = ((time * 2.5) % 3.0) + 0.5;
+      photon.visible = !onUpper;
+      const photonDist = 1.4 + (phase - 0.5) * 2 * 2.6;
       photon.position.set(photonDist * 0.8, photonDist * 0.6, 0);
       photon.scale.setScalar(1 + Math.sin(time * 10) * 0.3);
     },
@@ -555,6 +564,27 @@ export function buildWaterBent(isDark: boolean): ProceduralSceneObject {
   lone2.rotation.x = -0.5;
   group.add(lone2);
 
+  // Hydrogen bond: H (δ+) of this molecule to the O (δ−) of a neighbouring molecule, in line with
+  // the O–H bond; the neighbour is drawn smaller and paler.
+  const hbDir = h1Pos.clone().sub(oxygen.position).normalize();
+  const nbO = h1Pos.clone().addScaledVector(hbDir, 1.5);
+  const neighbour = new THREE.Group();
+  const nbOxygen = makeAtomMesh(0.4, 0xfca5a5, isDark, 0x7f1d1d);
+  nbOxygen.position.copy(nbO);
+  neighbour.add(nbOxygen);
+  [1, -1].forEach((sgn) => {
+    const dirH = hbDir.clone().applyAxisAngle(new THREE.Vector3(0, 0, 1), sgn * angleHalf);
+    const hPos = nbO.clone().addScaledVector(dirH, 1.1);
+    const nbH = makeAtomMesh(0.24, 0xe2e8f0, isDark);
+    nbH.position.copy(hPos);
+    neighbour.add(nbH, makeBondCylinder(nbO, hPos, 0.06, 0x94a3b8, isDark));
+  });
+  const dashGeo = new THREE.BufferGeometry().setFromPoints([h1Pos.clone().addScaledVector(hbDir, 0.32), nbO.clone().addScaledVector(hbDir, -0.4)]);
+  const hBond = new THREE.Line(dashGeo, new THREE.LineDashedMaterial({ color: 0xfacc15, dashSize: 0.12, gapSize: 0.08 }));
+  hBond.computeLineDistances();
+  neighbour.add(hBond);
+  group.add(neighbour);
+
   return {
     group,
     animate: (time, liveSim) => {
@@ -572,6 +602,7 @@ export function buildWaterBent(isDark: boolean): ProceduralSceneObject {
       h2.position.copy(h2Pos).addScaledVector(h2Pos.clone().normalize(), factor * 1.5);
       lone1.position.y = 1.1 + factor * 1.2;
       lone2.position.y = 1.1 + factor * 1.2;
+      neighbour.position.copy(hbDir).multiplyScalar(factor * 1.5);
     },
     dispose: () => disposeSceneObject(group),
   };
@@ -613,12 +644,27 @@ export function buildLiquidVaporEquilibrium(isDark: boolean): ProceduralSceneObj
     });
   }
 
-  // Manometer connected to side
-  const manoTube = makeGlassCylinder(0.12, 0.12, 1.8);
-  manoTube.position.set(1.9, 0, 0);
-  group.add(manoTube);
-  const mercury = makeBondCylinder(new THREE.Vector3(1.9, -0.8, 0), new THREE.Vector3(1.9, -0.2, 0), 0.1, 0x94a3b8, isDark);
-  group.add(mercury);
+  // Closed-end U-tube manometer on the side: the inner arm is open to the vapour, the outer arm
+  // is sealed with a vacuum above the mercury, so the level difference h is the vapour pressure.
+  const mano = new THREE.Group();
+  const armIn = makeGlassCylinder(0.11, 0.11, 1.9);
+  armIn.position.set(1.85, -0.05, 0);
+  const armOut = makeGlassCylinder(0.11, 0.11, 1.9);
+  armOut.position.set(2.35, -0.05, 0);
+  const bend = makeGlassCylinder(0.11, 0.11, 0.72);
+  bend.rotation.z = Math.PI / 2;
+  bend.position.set(2.1, -1.0, 0);
+  const link = makeGlassCylinder(0.08, 0.08, 0.5);
+  link.rotation.z = Math.PI / 2;
+  link.position.set(1.62, 0.85, 0);
+  const cap = makeAtomMesh(0.12, 0xe2e8f0, isDark);
+  cap.position.set(2.35, 0.9, 0);
+  const mercuryColor = 0xf1f5f9;
+  const hgIn = makeBondCylinder(new THREE.Vector3(1.85, -1.0, 0), new THREE.Vector3(1.85, -0.55, 0), 0.09, mercuryColor, isDark);
+  const hgOut = makeBondCylinder(new THREE.Vector3(2.35, -1.0, 0), new THREE.Vector3(2.35, 0.35, 0), 0.09, mercuryColor, isDark);
+  const hgBend = makeBondCylinder(new THREE.Vector3(1.85, -1.0, 0), new THREE.Vector3(2.35, -1.0, 0), 0.09, mercuryColor, isDark);
+  mano.add(armIn, armOut, bend, link, cap, hgIn, hgOut, hgBend);
+  group.add(mano);
 
   return {
     group,
@@ -634,7 +680,7 @@ export function buildLiquidVaporEquilibrium(isDark: boolean): ProceduralSceneObj
     setExplode: (factor) => {
       factor = clampExplodeFactor(factor);
       chamber.position.y = factor * 1.2;
-      manoTube.position.x = 1.9 + factor * 1.0;
+      mano.position.x = factor * 1.0;
     },
     dispose: () => disposeSceneObject(group),
   };
@@ -702,6 +748,15 @@ export function buildAvogadroChamber(isDark: boolean): ProceduralSceneObject {
     new THREE.Color(isDark ? 0x38bdf8 : 0x0284c7)
   );
   group.add(boxHelper);
+
+  // Pressure gauge on the lid (reads 1 atm)
+  const gaugeStem = makeBondCylinder(new THREE.Vector3(0, 1.6, 0), new THREE.Vector3(0, 1.85, 0), 0.06, 0x94a3b8, isDark);
+  const gaugeGeo = new THREE.CylinderGeometry(0.3, 0.3, 0.1, 24);
+  const gauge = new THREE.Mesh(gaugeGeo, new THREE.MeshStandardMaterial({ color: 0xe2e8f0, metalness: 0.3, roughness: 0.4 }));
+  gauge.rotation.x = Math.PI / 2;
+  gauge.position.set(0, 2.1, 0);
+  const needle = makeBondCylinder(new THREE.Vector3(0, 2.1, 0.06), new THREE.Vector3(0.14, 2.28, 0.06), 0.02, 0xef4444, isDark);
+  group.add(gaugeStem, gauge, needle);
 
   // Representative gas particles (diatomic molecules N2/O2)
   const particles: { p1: THREE.Mesh; p2: THREE.Mesh; vel: THREE.Vector3 }[] = [];
@@ -812,14 +867,14 @@ export function buildSeparatoryFunnel(isDark: boolean): ProceduralSceneObject {
   group.add(cone);
 
   // Upper Organic Layer (yellow)
-  const orgGeo = new THREE.CylinderGeometry(1.0, 0.7, 0.8, 24);
+  const orgGeo = new THREE.CylinderGeometry(1.0, 0.57, 0.8, 24);
   const orgMat = new THREE.MeshStandardMaterial({ color: 0xfacc15, transparent: true, opacity: 0.65 });
   const orgLayer = new THREE.Mesh(orgGeo, orgMat);
   orgLayer.position.set(0, 0.6, 0);
   group.add(orgLayer);
 
   // Lower Aqueous Layer (blue)
-  const aqGeo = new THREE.CylinderGeometry(0.7, 0.3, 0.8, 24);
+  const aqGeo = new THREE.CylinderGeometry(0.57, 0.14, 0.8, 24);
   const aqMat = new THREE.MeshStandardMaterial({ color: 0x0284c7, transparent: true, opacity: 0.7 });
   const aqLayer = new THREE.Mesh(aqGeo, aqMat);
   aqLayer.position.set(0, -0.2, 0);
@@ -828,6 +883,13 @@ export function buildSeparatoryFunnel(isDark: boolean): ProceduralSceneObject {
   // Stopcock (musluk) at bottom
   const stopcock = makeBondCylinder(new THREE.Vector3(-0.4, -1.2, 0), new THREE.Vector3(0.4, -1.2, 0), 0.08, 0xef4444, isDark);
   group.add(stopcock);
+
+  // Stem through the stopcock and the stopper that closes the top
+  const stem = makeGlassCylinder(0.09, 0.09, 1.0);
+  stem.position.set(0, -1.4, 0);
+  group.add(stem);
+  const stopper = makeBondCylinder(new THREE.Vector3(0, 1.3, 0), new THREE.Vector3(0, 1.55, 0), 0.5, 0xf59e0b, isDark);
+  group.add(stopper);
 
   return {
     group,
@@ -856,10 +918,12 @@ export function buildAmmoniaPyramidal(isDark: boolean): ProceduralSceneObject {
   group.add(nitrogen);
 
   // 3 Hydrogens at 107.3 degrees
+  // N–H = 2.147, hydrogens on a circle of radius 1.997 that lies 0.789 below N:
+  // cos(H–N–H) = (0.789² − 1.997²/2) / 2.147² = −0.297, i.e. 107.3°
   const hCoords: THREE.Vector3[] = [
-    new THREE.Vector3(0, -0.65, 1.9),
-    new THREE.Vector3(1.645, -0.65, -0.95),
-    new THREE.Vector3(-1.645, -0.65, -0.95),
+    new THREE.Vector3(0, -0.439, 1.997),
+    new THREE.Vector3(1.729, -0.439, -0.998),
+    new THREE.Vector3(-1.729, -0.439, -0.998),
   ];
 
   const hMeshes: THREE.Mesh[] = [];
@@ -928,7 +992,7 @@ export function buildSoapMicelle(isDark: boolean): ProceduralSceneObject {
       Math.cos(phi)
     );
 
-    const innerPos = dir.clone().multiplyScalar(0.85);
+    const innerPos = dir.clone().multiplyScalar(0.5);
     const outerPos = dir.clone().multiplyScalar(2.1);
 
     const tail = makeBondCylinder(innerPos, outerPos, 0.04, 0x64748b, isDark);
@@ -1071,7 +1135,7 @@ export function buildGasPistonCylinder(isDark: boolean): ProceduralSceneObject {
     setExplode: (factor) => {
       factor = clampExplodeFactor(factor);
       piston.position.y = 0.8 + factor * 1.2;
-      rod.position.y = factor * 1.2;
+      rod.position.y = 1.6 + factor * 1.2; // 1.6 = resting midpoint of the rod (0.8…2.4)
     },
     dispose: () => disposeSceneObject(group),
   };
@@ -1161,8 +1225,10 @@ export function buildJouleThomsonApparatus(isDark: boolean): ProceduralSceneObje
     animate: (_time, liveSim) => {
       if (!liveSim) return;
       particles.forEach((p) => {
-        p.position.x += 0.015;
+        // Same flow on both sides: the expanded gas is less dense, so it moves faster
+        p.position.x += p.position.x < 0 ? 0.008 : 0.02;
         if (p.position.x > 1.7) p.position.x = -1.7;
+        (p.material as THREE.MeshBasicMaterial).color.setHex(p.position.x < 0 ? 0xef4444 : 0x38bdf8);
       });
     },
     setExplode: (factor) => {
@@ -1195,25 +1261,32 @@ export function buildIonDipoleHydration(isDark: boolean): ProceduralSceneObject 
     new THREE.Vector3(0, 0, -1),
   ];
 
-  dirs.forEach((d) => {
-    const oPos = na.position.clone().addScaledVector(d, r);
+  const addWater = (ion: THREE.Vector3, d: THREE.Vector3, dist: number, oxygenInward: boolean) => {
+    const side = new THREE.Vector3().crossVectors(d, Math.abs(d.y) < 0.9 ? new THREE.Vector3(0, 1, 0) : new THREE.Vector3(1, 0, 0)).normalize();
+    const oPos = ion.clone().addScaledVector(d, dist);
     const o = makeAtomMesh(0.24, 0xef4444, isDark);
     o.position.copy(oPos);
     group.add(o);
-  });
+    // O–H = 0.36; with O inward both H point away from the ion, otherwise one H points at it
+    const hPositions = oxygenInward
+      ? [oPos.clone().addScaledVector(d, 0.22).addScaledVector(side, 0.285), oPos.clone().addScaledVector(d, 0.22).addScaledVector(side, -0.285)]
+      : [oPos.clone().addScaledVector(d, -0.36), oPos.clone().addScaledVector(d, 0.09).addScaledVector(side, 0.35)];
+    hPositions.forEach((hPos) => {
+      const h = makeAtomMesh(0.13, 0xf1f5f9, isDark);
+      h.position.copy(hPos);
+      group.add(h);
+    });
+  };
+
+  dirs.forEach((d) => addWater(na.position, d, r, true));
 
   // Central Cl- Anion (green, large)
   const cl = makeAtomMesh(0.62, 0x22c55e, isDark, 0x15803d);
   cl.position.set(1.8, 0, 0);
   group.add(cl);
 
-  // 6 Orienting H2O molecules around Cl- (H inward, O outward)
-  dirs.forEach((d) => {
-    const oPos = cl.position.clone().addScaledVector(d, r + 0.3);
-    const o = makeAtomMesh(0.24, 0xef4444, isDark);
-    o.position.copy(oPos);
-    group.add(o);
-  });
+  // 6 H2O molecules around Cl- (one H of each pointing inward, O outward)
+  dirs.forEach((d) => addWater(cl.position, d, r + 0.3, false));
 
   return {
     group,
@@ -1236,20 +1309,30 @@ export function buildIonDipoleHydration(isDark: boolean): ProceduralSceneObject 
 export function buildVolumetricFlask(isDark: boolean): ProceduralSceneObject {
   const group = new THREE.Group();
 
-  // Glass volumetric flask base sphere + narrow neck
-  const body = makeGlassCylinder(0.3, 1.2, 2.0);
-  body.position.set(0, -0.6, 0);
+  // Glass volumetric flask: round bulb + long narrow neck
+  const bodyGeo = new THREE.SphereGeometry(1.15, 32, 24);
+  bodyGeo.scale(1, 0.85, 1);
+  const body = new THREE.Mesh(
+    bodyGeo,
+    new THREE.MeshStandardMaterial({ color: 0x93c5fd, transparent: true, opacity: 0.22, roughness: 0.1, side: THREE.DoubleSide, depthWrite: false })
+  );
+  body.position.set(0, -0.9, 0);
   group.add(body);
 
-  const neck = makeGlassCylinder(0.3, 0.3, 1.8);
-  neck.position.set(0, 1.0, 0);
+  const neck = makeGlassCylinder(0.3, 0.3, 2.0);
+  neck.position.set(0, 0.95, 0);
   group.add(neck);
 
-  // Solution fill (colored copper sulfate blue)
-  const solGeo = new THREE.CylinderGeometry(0.28, 1.15, 1.8, 24);
+  // Solution (copper sulfate blue) filled up to the calibration mark at y = 0.8
+  const sol = new THREE.Group();
   const solMat = new THREE.MeshStandardMaterial({ color: 0x0284c7, transparent: true, opacity: 0.65 });
-  const sol = new THREE.Mesh(solGeo, solMat);
-  sol.position.set(0, -0.7, 0);
+  const bulbFillGeo = new THREE.SphereGeometry(1.08, 32, 24);
+  bulbFillGeo.scale(1, 0.85, 1);
+  const bulbFill = new THREE.Mesh(bulbFillGeo, solMat);
+  bulbFill.position.set(0, -0.9, 0);
+  const neckFill = new THREE.Mesh(new THREE.CylinderGeometry(0.26, 0.26, 0.85, 24), solMat);
+  neckFill.position.set(0, 0.375, 0);
+  sol.add(bulbFill, neckFill);
   group.add(sol);
 
   // Meniscus ring line
@@ -1264,11 +1347,11 @@ export function buildVolumetricFlask(isDark: boolean): ProceduralSceneObject {
     group,
     animate: (time, liveSim) => {
       if (!liveSim) return;
-      sol.scale.y = 1 + Math.sin(time * 3) * 0.02;
+      neckFill.scale.y = 1 + Math.sin(time * 3) * 0.01;
     },
     setExplode: (factor) => {
       factor = clampExplodeFactor(factor);
-      neck.position.y = 1.0 + factor * 1.0;
+      neck.position.y = 0.95 + factor * 1.0;
     },
     dispose: () => disposeSceneObject(group),
   };
