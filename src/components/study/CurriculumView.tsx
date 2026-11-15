@@ -23,10 +23,10 @@ export const UNIT_ACTION_PILLS: Record<LanguageCode, UnitActionPillLabels> = {
   en: { slide: 'Slide', quiz: 'Test', lab3d: '3D', cards: 'Card' },
   de: { slide: 'Folie', quiz: 'Test', lab3d: '3D', cards: 'Karte' },
   fr: { slide: 'Diapo', quiz: 'Test', lab3d: '3D', cards: 'Carte' },
-  ru: { slide: 'Слайд', quiz: 'Тест', lab3d: '3D', cards: 'Карта' },
+  ru: { slide: 'Слайды', quiz: 'Тест', lab3d: '3D', cards: 'Карточки' },
   ar: { slide: 'شريحة', quiz: 'اختبار', lab3d: '3D', cards: 'بطاقة' },
-  zh: { slide: '幻灯片', quiz: '测试', lab3d: '3D', cards: '闪卡' },
-  ku: { slide: 'Slayt', quiz: 'Test', lab3d: '3D', cards: 'Qert' },
+  zh: { slide: '幻灯片', quiz: '测验', lab3d: '3D', cards: '闪卡' },
+  ku: { slide: 'Slayt', quiz: 'Test', lab3d: '3D', cards: 'Kart' },
 };
 
 export interface CurriculumViewProps {

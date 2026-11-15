@@ -138,7 +138,7 @@ export const MUSIC_TRACKS: MusicTrack[] = [
       'Katalysator',
       'Catalyseur',
       'Катализатор',
-      'تركيز المحفز',
+      'العامل الحفاز',
       '催化剂',
       'Katalîzor'
     ),

@@ -43,28 +43,28 @@ const TIER_BADGES: Record<MockExamDifficultyTier, LocalizedText> = {
     'Standard Examen',
     'Стандарт экзамена',
     'المستوى القياسي',
-    '标准大纲分布',
-    'Standarda Ezmûnê'
+    '标准综合',
+    'Tevliheviya Standard'
   ),
   ileri: L(
     'İleri & Şekilli',
     'Advanced & Visual',
     'Fortgeschritten & Grafik',
     'Avancé & Schémas',
-    'Продвинутый и схемы',
+    'Сложные и со схемами',
     'متقدم ومصوّر',
-    '进阶与图表解析',
-    'Pêşketî & bi Şema'
+    '进阶与图表',
+    'Pêşketî & Dîtbarî'
   ),
   'osym-prova': L(
     'TG Derece Provası',
     'Top-Rank Rehearsal',
     'Spitzenrang-Probe',
     'Simulation Élite',
-    'Генеральная проба',
+    'Рейтинговая репетиция',
     'بروفة التفوق العام',
     '全国高分冲刺模考',
-    'Provaya Dereceyê'
+    'Provaya Pileyên Jorîn'
   ),
 };
 
@@ -73,10 +73,10 @@ const VISUAL_BADGE: LocalizedText = L(
   '100% Visual & Diagrams',
   '100 % Diagramme & Grafiken',
   '100 % Schémas & Graphiques',
-  '100% Схемы и графики',
+  '100 % схемы и графики',
   '100% رسوم ومخططات',
-  '100% 图表与解剖题',
-  '%100 bi Şema & Grafîk'
+  '100% 图表题',
+  '%100 Wêne & Grafîk'
 );
 
 function resolveBranchTier(n: number): {
@@ -97,10 +97,10 @@ function buildTytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         'Core concept mastery: Chemistry as science, atomic structure, bonds, states of matter and mixtures.',
         'Grundlagen & Konzepte: Chemie als Wissenschaft, Atomstruktur, Bindungen, Aggregatzustände und Gemische.',
         'Maîtrise des concepts : Chimie science, atome, liaisons chimiques, états de la matière et mélanges.',
-        'Базовые понятия: Химия как наука, строение атома, связи, агрегатные состояния и смеси.',
+        'Основные понятия: химия как наука, строение атома, периодическая система, прочные и слабые связи, агрегатные состояния и смеси.',
         'ترسيخ المفاهيم الأساسية: علم الكيمياء، الذرة، الروابط الكيميائية، حالات المادة والمخاليط.',
-        '基础与核心概念巩固：化学科学导论、原子周期律、化学键、物态变化与混合物分离。',
-        'Zanista kîmyayê, atom, bendên kîmyewî, rewşên madeyê û têkelyan.'
+        '基础与概念巩固：化学科学、原子与元素周期表、化学键与分子间作用力、物质的状态与混合物。',
+        'Bingeh & têgeh: Zanista kîmyayê, atom, tabloya periyodîk, girêdanên bihêz/qels, rewşên madeyê û tevlihevî.'
       );
     case 'standart':
       return L(
@@ -108,10 +108,10 @@ function buildTytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         'Standard ÖSYM exam balance: 7 curated questions spanning Grade 9 & 10 TYT chemistry.',
         'Standardmäßige ÖSYM-Prüfungsverteilung: 7 kuratierte Fragen für die Klassen 9 und 10.',
         "Équilibre officiel de l'examen : 7 questions types couvrant la chimie de 9e et 10e années.",
-        'Стандартный баланс экзамена: 7 выверенных заданий по химии 9–10 классов.',
+        'Полный баланс экзаменационной программы: 7 оригинальных заданий по химии 9–10 классов (TYT).',
         'توزيع قياسي وفق معايير الاختبار: 7 أسئلة متوازنة في كيمياء الصفين التاسع والعاشر.',
-        '标准大纲权重分布：7 道严选全真模拟题，覆盖高一高二基础化学全部核心考点。',
-        '7 pirsên orîjînal ji bo pola 9 û 10 a kîmyaya TYT.'
+        '按考试大纲比例命题：7 道原创题，全面复习 9、10 年级 TYT 化学。',
+        'Hevsengiya tevahî ya mufredata ÖSYM-ê: provaya giştî ya kîmyaya TYT a pola 9 û 10 bi 7 pirsên orîjînal.'
       );
     case 'ileri':
       return L(
@@ -119,10 +119,10 @@ function buildTytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         '100% Visual & diagrams: Laboratory apparatus, Bohr orbits, phase diagrams and piston cylinders.',
         '100 % Visuell & Grafiken: Laboraufbauten, Bohr-Orbitale, Phasendiagramme und Kolbenbehälter.',
         '100 % Schémas et graphiques : Verrerie de labo, modèle de Bohr, diagrammes de phase et pistons.',
-        '100% Схемы и графики: Лабораторная посуда, орбиты Бора, фазовые диаграммы и поршневые сосуды.',
+        '100 % схемы и графики: лабораторные установки, орбиты Бора, фазовые диаграммы и сосуды с поршнем.',
         '100% أسئلة مصوّرة ومخططات: أجهزة المختبر، مدارات بور، منحنيات الأطوار والأسطوانات المزودة بمكبس.',
-        '100% 图表与实验装置：化学实验仪器、玻尔原子轨道、相变曲线与活塞汽缸模型。',
-        '100% bi Şema û Grafîk: Amûrên laboratûwarê, gerîneyên Bohr, grafîkên fazê û piston.'
+        '100% 图表题：实验装置、玻尔轨道、物态变化图像与带活塞的容器。',
+        '%100 wêne & grafîk: Amûrên laboratuwarê, xulgehên Bohr, grafîkên rewşê û firaxên bi piston.'
       );
     case 'osym-prova':
       return L(
@@ -130,10 +130,10 @@ function buildTytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         'National Rank Simulation: Tricky traps, molecular polarity, mole stoichiometry and acid-base metal reactions.',
         'Nationale Rang-Simulation: Prüfungsfallen, Molekülpolarität, Molrechnungen und Säure-Base-Metalle.',
         "Simulation Concours National : Pièges d'examen, polarité, stœchiométrie et réactions acides-métaux.",
-        'Генеральная репетиция национального уровня: Ловушки, полярность молекул, расчеты молей и реакции кислот.',
-        'محاكاة اختبار التفوق الوطني: أسئلة الفخاخ، قطبية الجزيئات، حسابات المولات وتفاعلات الأحماض مع المعادن.',
-        '全国排位模拟大考：全真陷阱命题、分子极性辨析、摩尔计算与金属酸碱反应深度综合。',
-        'Provaya Dereceyê ya Giştî ya Tirkiyeyê: Xefikên azmûnê, molekul û bertekên asîd-metal.'
+        'Рейтинговая репетиция всей страны: задания-ловушки, полярность молекул, расчёты количества вещества и кислотно-основные ловушки.',
+        'محاكاة اختبار التفوق الوطني: أسئلة الفخاخ، قطبية الجزيئات، حسابات المولات وتفاعلات الأحماض مع الفلزات.',
+        '全国排名模拟：易错陷阱、分子极性、物质的量计算与酸碱陷阱。',
+        'Provaya Pileyên Jorîn li seranserê Tirkiyeyê: Xefikên azmûnê, polarîteya molekulan, hesabên molê û xefikên asîd-baz.'
       );
   }
 }
@@ -146,10 +146,10 @@ function buildAytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         'Core concept mastery: Quantum orbitals, ideal gas law, molarity, enthalpy and equilibrium expressions.',
         'Grundlagen & Konzepte: Quantenorbitale, ideales Gasgesetz, Molarität, Enthalpie und Gleichgewichtskonstante.',
         "Maîtrise des concepts : Orbitales quantiques, gaz parfaits, molarité, enthalpie et constante d'équilibre.",
-        'Базовые понятия: Квантовые орбитали, закон идеального газа, молярность, энтальпия и константа равновесия.',
-        'ترسيخ المفاهيم الأساسية: المدارات الكمومية، قانون الغاز المثالي، المولارية، الإنثالبيا وثابت الاتزان.',
-        '基础与核心概念巩固：量子轨道理论、理想气体定律、摩尔浓度、反应热焓与平衡常数表达。',
-        'Orbîtalên kuantumê, zagona gaza îdeal, molarîte, entalpî û hevsengî.'
+        'Основные понятия: квантовые орбитали, уравнение состояния идеального газа, молярная концентрация, энтальпия и выражение константы равновесия.',
+        'ترسيخ المفاهيم الأساسية: المدارات الكمومية، قانون الغاز المثالي، المولارية، المحتوى الحراري وثابت الاتزان.',
+        '基础与概念巩固：量子轨道、理想气体定律、物质的量浓度、焓与平衡常数表达式。',
+        'Bingeh & têgeh: Orbîtalên kuantumê, zagona gaza îdeal, molarîte, entalpî û hevkêşeya hevsengiyê.'
       );
     case 'standart':
       return L(
@@ -157,10 +157,10 @@ function buildAytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         'Standard ÖSYM exam balance: 13 curated questions spanning Grade 11 & 12 AYT chemistry comprehensive test.',
         'Standardmäßige ÖSYM-Prüfungsverteilung: 13 kuratierte Fragen für die Klassen 11 und 12 im Fach Chemie.',
         "Équilibre officiel de l'examen : 13 questions types couvrant toute la chimie AYT de 11e et 12e années.",
-        'Стандартный баланс экзамена: 13 заданий полного охвата химии 11–12 классов экзамена AYT.',
+        'Полный баланс экзаменационной программы: 13 оригинальных заданий по всей химии 11–12 классов (AYT).',
         'توزيع قياسي وفق معايير الاختبار: 13 سؤالاً متكاملاً تغطي منهج الكيمياء للصفين الحادي عشر والثاني عشر.',
-        '标准大纲权重分布：13 道全真模拟试题，覆盖高二高三高考进阶化学全部重点领域。',
-        '13 pirsên orîjînal ji bo pola 11 û 12 a kîmyaya AYT.'
+        '按考试大纲比例命题：13 道原创题，全面考查 11、12 年级 AYT 化学。',
+        'Hevsengiya tevahî ya mufredata ÖSYM-ê: provaya berfireh a kîmyaya AYT a pola 11 û 12 bi 13 pirsên orîjînal.'
       );
     case 'ileri':
       return L(
@@ -168,10 +168,10 @@ function buildAytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         '100% Visual & diagrams: Potential energy curves, Maxwell-Boltzmann, titration burettes, Daniell cells and Hoffman voltameter.',
         '100 % Visuell & Grafiken: Potenzialenergiekurven, Maxwell-Boltzmann, Titrationsbürette, Daniell-Element und Hofmann-Zelle.',
         '100 % Schémas et graphiques : Énergie potentielle, Maxwell-Boltzmann, burette de titrage, pile Daniell et cellule de Hoffman.',
-        '100% Схемы и графики: Кривые потенциальной энергии, Максвелл-Больцман, титрование, элемент Даниэля и вольтаметр Гофмана.',
+        '100 % схемы и графики: кривые потенциальной энергии, распределение Максвелла — Больцмана, бюретка для титрования, элемент Даниэля — Якоби и аппарат Гофмана.',
         '100% أسئلة مصوّرة ومخططات: منحنيات طاقة الوضع، ماكسويل-بولتزمان، سحاحة المعايرة، خلية دانيال وفولتامتر هوفمان.',
-        '100% 图表与微观机理：反应势能曲线、麦克斯韦分布、滴定管装置、丹尼尔原电池与霍夫曼电解器。',
-        '100% bi Şema û Grafîk: Grafîkên enerjiya potansiyel, tîtrasyon, pîla Daniell û elektrolîza Hoffman.'
+        '100% 图表题：势能曲线、麦克斯韦-玻尔兹曼分布、滴定管、丹尼尔电池与霍夫曼电解器。',
+        '%100 wêne & grafîk: Xêzên enerjiya potansiyel, Maxwell-Boltzmann, bureta tîtrasyonê, pîla Daniell û voltametreya Hoffman.'
       );
     case 'osym-prova':
       return L(
@@ -179,10 +179,10 @@ function buildAytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
         'National Rank Simulation: cell voltage and concentration cells, Ksp common ion, Le Chatelier shifts, VSEPR and Markovnikov mechanisms.',
         'Nationale Rang-Simulation: Zellspannung und Konzentrationszellen, Ksp-Gemeinsamer-Ion-Effekt, Le Chatelier, VSEPR und Markovnikov.',
         "Simulation Concours National : tension de pile et piles de concentration, effet d'ion commun Ksp, Le Chatelier, VSEPR et Markovnikov.",
-        'Генеральная репетиция национального уровня: напряжение элемента и концентрационные элементы, одноименный ион Ksp, Ле Шателье, VSEPR и Марковников.',
-        'محاكاة اختبار التفوق الوطني: جهد الخلية وخلايا التركيز، الأيون المشترك Ksp، مبدأ لوشاتيليه، أشكال VSEPR وقاعدة ماركوفنيكوف.',
-        '全国排位模拟大考：电池电压与浓差电池、同离子沉淀溶解平衡、勒夏特列移动、VSEPR杂化与马氏加成全真压轴。',
-        'Provaya Dereceyê ya Giştî ya Tirkiyeyê: Voltaja pîlê û pîlên xestiyê, bandora îyona hevpar di Kçç de û Markovnikov.'
+        'Рейтинговая репетиция всей страны: ЭДС и концентрационные элементы, Ksp и одноимённый ион, смещение равновесия по Ле Шателье, VSEPR и правило Марковникова.',
+        'محاكاة اختبار التفوق الوطني: جهد الخلية وخلايا التركيز، الأيون المشترك Ksp، مبدأ لوشاتلييه، أشكال VSEPR وقاعدة ماركوفنيكوف.',
+        '全国排名模拟：电池电压与浓差电池、Ksp 与同离子效应、勒夏特列原理、VSEPR 与马氏规则。',
+        'Provaya Pileyên Jorîn li seranserê Tirkiyeyê: Voltaja pîlê û pîlên tîrbûnê, îyona hevpar û Ksp, guherînên Le Chatelier, VSEPR û mekanîzmayên Markovnikov.'
       );
   }
 }
@@ -212,10 +212,10 @@ const TYT_SPECS: MockExamSeedSpec[] = Array.from({ length: 40 }, (_, i) => {
       `TYT Chemistry Branch Mock #${n}`,
       `TYT Chemie Fachprobe #${n}`,
       `Examen Blanc TYT Chimie #${n}`,
-      `Пробный экзамен TYT Химия №${n}`,
+      `Пробный тест TYT по химии № ${n}`,
       `اختبار TYT التجريبي في الكيمياء #${n}`,
       `TYT 化学专项模考 #${n}`,
-      `Denemeya Branşê ya Kîmyaya TYT #${n}`
+      `Azmûna Ceribandinê ya Kîmyaya TYT #${n}`
     ),
     subtitle: buildTytSubtitle(tier),
   };
@@ -246,10 +246,10 @@ const AYT_SPECS: MockExamSeedSpec[] = Array.from({ length: 40 }, (_, i) => {
       `AYT Chemistry Branch Mock #${n}`,
       `AYT Chemie Fachprobe #${n}`,
       `Examen Blanc AYT Chimie #${n}`,
-      `Пробный экзамен AYT Химия №${n}`,
+      `Пробный тест AYT по химии № ${n}`,
       `اختبار AYT التجريبي في الكيمياء #${n}`,
       `AYT 化学专项模考 #${n}`,
-      `Denemeya Branşê ya Kîmyaya AYT #${n}`
+      `Azmûna Ceribandinê ya Kîmyaya AYT #${n}`
     ),
     subtitle: buildAytSubtitle(tier),
   };
@@ -540,9 +540,9 @@ export const TG_PROVA_SPEC: MockExamSeedSpec = {
     'Nationwide YKS Chemistry Elite Trial Exam',
     'Bundesweite YKS Chemie Spitzenrang-Probe',
     'Examen Blanc National YKS Chimie Élite',
-    'Всероссийская проба YKS Химия Высший ранг',
+    'Общенациональная рейтинговая репетиция YKS по химии',
     'بروفة التفوق العامة لامتحان YKS كيمياء',
-    '全境 YKS 化学全国高分模拟统考',
+    '全国 YKS 化学排名模拟考',
     'Provaya Giştî ya Tirkiyeyê ya Kîmyayê ya Dereceyê'
   ),
   subtitle: L(
@@ -550,9 +550,9 @@ export const TG_PROVA_SPEC: MockExamSeedSpec = {
     '20 Questions (7 TYT + 13 AYT) • 30 Minutes • Realistic YKS Difficulty & Rank Percentile Estimation',
     '20 Fragen (7 TYT + 13 AYT) • 30 Minuten • Reale Prüfungsschwere & Perzentil-Schätzung',
     '20 Questions (7 TYT + 13 AYT) • 30 Minutes • Difficulté Réelle & Estimation de Rang',
-    '20 Вопросов (7 TYT + 13 AYT) • 30 Минут • Реальная сложность и расчет процентиля',
+    '20 вопросов (7 TYT + 13 AYT) • 30 минут • реальная сложность YKS и оценка процентиля',
     '20 سؤالاً (7 TYT + 13 AYT) • 30 دقيقة • صعوبة حقيقية وحساب النسبة المئوية',
-    '20 题（7 题 TYT + 13 题 AYT）• 30 分钟 • 真实大考难度与全国位次估算',
+    '20 题(7 题 TYT + 13 题 AYT) • 30 分钟 • 真实 YKS 难度与百分位排名估算',
     '20 Pirs (7 TYT + 13 AYT) • 30 Xulek • Zehmetiya Rastîn & Texmîna Rêzê'
   ),
   customBadge: L(
@@ -560,7 +560,7 @@ export const TG_PROVA_SPEC: MockExamSeedSpec = {
     '🏆 Elite National Trial',
     '🏆 Spitzenrang-Probe',
     '🏆 Élite Nationale',
-    '🏆 Высший ранг',
+    '🏆 Рейтинговая репетиция',
     '🏆 بروفة التفوق',
     '🏆 全国精英冲刺',
     '🏆 Provaya Dereceyê'

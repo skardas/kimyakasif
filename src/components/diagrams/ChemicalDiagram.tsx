@@ -12,7 +12,7 @@ const FULLSCREEN_I18N: Record<LanguageCode, string> = {
   ru: 'Развернуть на весь экран',
   ar: 'ملء الشاشة',
   zh: '全屏放大',
-  ku: 'Tam ekran mezin bike',
+  ku: 'Ekrana tije',
 };
 
 export const CLOSE_MODAL_I18N: Record<LanguageCode, string> = {
@@ -23,7 +23,7 @@ export const CLOSE_MODAL_I18N: Record<LanguageCode, string> = {
   ru: 'Закрыть',
   ar: 'إغلاق',
   zh: '关闭',
-  ku: 'Bigre',
+  ku: 'Bigire',
 };
 
 // ---------------------------------------------------------------------------
@@ -411,24 +411,24 @@ const FIGURE_WORDS: Record<LanguageCode, Record<FigureWord, string>> = {
   },
   ar: {
     pure: 'ماء نقي', soln: 'محلول', heat: 'تسخين', cool: 'تبريد', tC: 'درجة الحرارة (°C)', time: 'الزمن',
-    solub: 'الذائبية (g/100 g ماء)', unsat: 'غير مشبع', supersat: 'فوق مشبع', enth: 'الإنتالبي (kJ)', buf: 'منطقة المحلول المنظم',
+    solub: 'الذائبية (g/100 g ماء)', unsat: 'غير مشبع', supersat: 'فوق مشبع', enth: 'المحتوى الحراري (kJ)', buf: 'منطقة المحلول المنظم',
     cat: 'المهبط', an: 'المصعد', znDown: 'تقل كتلة Zn', cuUp: 'تزداد كتلة Cu',
     allo: 'تتكون الأربعة من ذرات الكربون فقط', nacl: 'محلول NaCl', soil: 'التربة',
     ax3e: 'AX₃E هرم ثلاثي 107°', ratio: 'نسبة الحجوم H₂ : O₂ = 2 : 1', dissolve: 'ذوبان', precip: 'ترسيب',
   },
   zh: {
-    pure: '纯水', soln: '溶液', heat: '加热', cool: '冷却', tC: '温度 (°C)', time: '时间',
-    solub: '溶解度 (g/100 g 水)', unsat: '不饱和', supersat: '过饱和', enth: '焓 (kJ)', buf: '缓冲区',
+    pure: '纯水', soln: '溶液', heat: '加热', cool: '冷却', tC: '温度(°C)', time: '时间',
+    solub: '溶解度(g/100 g 水)', unsat: '不饱和', supersat: '过饱和', enth: '焓(kJ)', buf: '缓冲区',
     cat: '阴极', an: '阳极', znDown: 'Zn 质量减小', cuUp: 'Cu 质量增大',
     allo: '四者都只由碳原子构成', nacl: 'NaCl 溶液', soil: '土壤',
     ax3e: 'AX₃E 三角锥形 107°', ratio: '体积比 H₂ : O₂ = 2 : 1', dissolve: '溶解', precip: '沉淀',
   },
   ku: {
-    pure: 'Ava saf', soln: 'Çareserî', heat: 'Germkirin', cool: 'Sarkirin', tC: 'Germahî (°C)', time: 'Dem',
-    solub: 'Helbûnî (g/100 g av)', unsat: 'netêr', supersat: 'zêde têr', enth: 'Entalpî (kJ)', buf: 'Herêma tampon',
-    cat: 'Katot', an: 'Anot', znDown: 'Girseya Zn kêm dibe', cuUp: 'Girseya Cu zêde dibe',
+    pure: 'Ava paqij', soln: 'Çareserî', heat: 'Germkirin', cool: 'Sarkirin', tC: 'Germahî (°C)', time: 'Dem',
+    solub: 'Helbûnî (g/100 g av)', unsat: 'netêr', supersat: 'zêdetêr', enth: 'Entalpî (kJ)', buf: 'Herêma tampon',
+    cat: 'Katod', an: 'Anod', znDown: 'Girseya Zn kêm dibe', cuUp: 'Girseya Cu zêde dibe',
     allo: 'Her çar tenê ji atomên karbonê pêk tên', nacl: 'Çareseriya NaCl', soil: 'Ax',
-    ax3e: 'AX₃E pîramîda sêgoşeyî 107°', ratio: 'Rêjeya qebareyan H₂ : O₂ = 2 : 1', dissolve: 'helîn', precip: 'nişîn',
+    ax3e: 'AX₃E pîramîda sêgoşe 107°', ratio: 'Rêjeya qebareyan H₂ : O₂ = 2 : 1', dissolve: 'helbûn', precip: 'niştin',
   },
 };
 
@@ -3704,10 +3704,10 @@ const FIGURE_WORDS_14: Record<LanguageCode, Record<FigureWord14, string>> = {
   en: { waterIn: 'Cold water in', waterOut: 'Water out', before: 'Before', after: 'After', litmusRed: 'Litmus: red', litmusBlue: 'Litmus: blue', vacuum: 'Vacuum', closedEq: 'Closed end: Pgas = h' },
   de: { waterIn: 'Kühlwasser ein', waterOut: 'Wasser aus', before: 'Vorher', after: 'Nachher', litmusRed: 'Lackmus: rot', litmusBlue: 'Lackmus: blau', vacuum: 'Vakuum', closedEq: 'Geschlossen: PGas = h' },
   fr: { waterIn: "Entrée d'eau froide", waterOut: "Sortie d'eau", before: 'Avant', after: 'Après', litmusRed: 'Tournesol : rouge', litmusBlue: 'Tournesol : bleu', vacuum: 'Vide', closedEq: 'Tube fermé : Pgaz = h' },
-  ru: { waterIn: 'Вход холодной воды', waterOut: 'Выход воды', before: 'До', after: 'После', litmusRed: 'Лакмус: красный', litmusBlue: 'Лакмус: синий', vacuum: 'Вакуум', closedEq: 'Закрытый: Pгаза = h' },
+  ru: { waterIn: 'Вход холодной воды', waterOut: 'Выход воды', before: 'До', after: 'После', litmusRed: 'Лакмус: красный', litmusBlue: 'Лакмус: синий', vacuum: 'Вакуум', closedEq: 'Закрытый конец: Pгаза = h' },
   ar: { waterIn: 'دخول الماء البارد', waterOut: 'خروج الماء', before: 'قبل', after: 'بعد', litmusRed: 'عباد الشمس: أحمر', litmusBlue: 'عباد الشمس: أزرق', vacuum: 'فراغ', closedEq: 'طرف مغلق: Pgas = h' },
-  zh: { waterIn: '冷水进口', waterOut: '出水口', before: '反应前', after: '反应后', litmusRed: '石蕊：红色', litmusBlue: '石蕊：蓝色', vacuum: '真空', closedEq: '闭口：P气 = h' },
-  ku: { waterIn: 'Ketina ava sar', waterOut: 'Derketina avê', before: 'Berê', after: 'Piştî', litmusRed: 'Turnusol: sor', litmusBlue: 'Turnusol: şîn', vacuum: 'Valahî', closedEq: 'Serê girtî: Pgaz = h' },
+  zh: { waterIn: '冷水进口', waterOut: '出水口', before: '反应前', after: '反应后', litmusRed: '石蕊：红色', litmusBlue: '石蕊：蓝色', vacuum: '真空', closedEq: '封闭端：P气 = h' },
+  ku: { waterIn: 'Ketina ava sar', waterOut: 'Derketina avê', before: 'Berê', after: 'Paşê', litmusRed: 'Turnusol: sor', litmusBlue: 'Turnusol: şîn', vacuum: 'Valahî', closedEq: 'Serê girtî: Pgaz = h' },
 };
 
 const figureWords14 = (lang: LanguageCode) => FIGURE_WORDS_14[lang] ?? FIGURE_WORDS_14.tr;

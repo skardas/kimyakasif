@@ -5,6 +5,7 @@ import type {
   ChemistryArchetype,
 } from '../types/chemistry';
 import type { ChemistryUnitSeedData } from '../data/units/types';
+import { polishQuestion } from './langPolish';
 import { enrichQuestionsWithDiagrams, planDiagramPlacement, type DiagramPlacement } from './diagramQuestionEnricher';
 
 // Diagram placement is decided once on the Turkish bank so every language shows the figure on the same question ids.
@@ -73,9 +74,9 @@ const ROMAN_COMBINATIONS: Record<
     all: 'I, II и III',
   },
   ar: {
-    only1: 'فقط I',
-    only2: 'فقط II',
-    only3: 'فقط III',
+    only1: 'I فقط',
+    only2: 'II فقط',
+    only3: 'III فقط',
     oneTwo: 'I و II',
     oneThree: 'I و III',
     twoThree: 'II و III',
@@ -224,38 +225,38 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     missingStep: (opt, title, full) => `L'étape manquante est « ${bare(opt)} ». Déroulement correct de « ${title} » : ${full}.`,
   },
   ru: {
-    romanTrue: (combo) => `Следовательно, вариант, содержащий именно верные утверждения, — «${combo}».`,
-    romanFalse: (combo) => `Следовательно, вариант, содержащий именно неверные утверждения, — «${combo}».`,
-    romanValid: (n, fact, tip) => `${n}. Верно: ${bare(fact)}.${tip ? ` (Подсказка: ${bare(tip)}.)` : ''}`,
-    romanInvalid: (n, fact, why) => `${n}. Неверно: ${why ? `${bare(why)}. ` : ''}Правильно: ${bare(fact)}.`,
-    negativeTrapWhy: (opt, why, fact) => `Неверное утверждение — «${bare(opt)}». ${bare(why)}. Правильно: ${bare(fact)}. Все остальные утверждения верны.`,
-    negativeTrapDefault: (opt, fact) => `Неверное утверждение — «${bare(opt)}». Правильно: ${bare(fact)}. Все остальные утверждения верны.`,
-    positiveConceptTip: (opt, tip) => `Верное утверждение — «${bare(opt)}». Экзаменационная подсказка: ${bare(tip)}.`,
+    romanTrue: (combo) => `Следовательно, верны именно утверждения варианта «${combo}».`,
+    romanFalse: (combo) => `Следовательно, неверны именно утверждения варианта «${combo}».`,
+    romanValid: (n, fact, tip) => `${n}. Верно. ${bare(fact)}.${tip ? ` (Подсказка: ${bare(tip)}.)` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. Неверно. ${why ? `${bare(why)}. ` : ''}Верная формулировка: «${bare(fact)}».`,
+    negativeTrapWhy: (opt, why, fact) => `Неверное утверждение — «${bare(opt)}». ${bare(why)}. Верная формулировка: «${bare(fact)}». Остальные утверждения верны.`,
+    negativeTrapDefault: (opt, fact) => `Неверное утверждение — «${bare(opt)}». Верная формулировка: «${bare(fact)}». Остальные утверждения верны.`,
+    positiveConceptTip: (opt, tip) => `Верное утверждение — «${bare(opt)}». Совет к экзамену: ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `Верное утверждение — «${bare(opt)}».`,
-    otherOptionsIntro: 'Остальные варианты неверны; правильные формулировки:',
+    otherOptionsIntro: 'Остальные варианты неверны; верные формулировки:',
     otherOptionsWhyIntro: 'Остальные варианты неверны:',
-    optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. Правильно: ` : ''}${bare(fact)}.`,
-    structureMatch: (opt, a, b, dist) => `Правильный ответ — «${bare(opt)}». Ключевое различие между «${a}» и «${b}»: ${bare(dist)}.`,
-    structureTrait: (b, a, dist) => `Верное утверждение о «${b}» — то, которое описывает различие между «${a}» и «${b}»: ${bare(dist)}.`,
+    optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. Верно так: ` : ''}«${bare(fact)}».`,
+    structureMatch: (opt, a, b, dist) => `Правильный ответ — «${bare(opt)}». Различие между понятиями «${a}» и «${b}»: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `Верное утверждение о понятии «${b}» — то, которое описывает его отличие от понятия «${a}»: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
-      ? `Правильная последовательность — «${opt}». Правильный порядок этапов процесса «${title}»: ${full}.`
-      : `Правильная последовательность — «${opt}».`,
-    missingStep: (opt, title, full) => `Пропущенный этап — «${bare(opt)}». Правильный порядок этапов процесса «${title}»: ${full}.`,
+      ? `Правильный порядок — «${opt}». Полная последовательность («${title}»): ${full}.`
+      : `Правильный порядок — «${opt}».`,
+    missingStep: (opt, title, full) => `Пропущенный этап — «${bare(opt)}». Полная последовательность («${title}»): ${full}.`,
   },
   ar: {
-    romanTrue: (combo) => `وعليه فإن الخيار الذي يضم العبارات الصحيحة تماماً هو "${combo}".`,
-    romanFalse: (combo) => `وعليه فإن الخيار الذي يضم العبارات الخاطئة تماماً هو "${combo}".`,
-    romanValid: (n, fact, tip) => `${n}. صحيح: ${bare(fact)}.${tip ? ` (ملاحظة: ${bare(tip)}.)` : ''}`,
-    romanInvalid: (n, fact, why) => `${n}. خاطئ: ${why ? `${bare(why)}. ` : ''}الصواب: ${bare(fact)}.`,
+    romanTrue: (combo) => `وعليه فالخيار الذي يضم العبارات الصحيحة كلها ولا يضم غيرها هو "${combo}".`,
+    romanFalse: (combo) => `وعليه فالخيار الذي يضم العبارات الخاطئة كلها ولا يضم غيرها هو "${combo}".`,
+    romanValid: (n, fact, tip) => `${n}. صحيحة: ${bare(fact)}.${tip ? ` (ملاحظة: ${bare(tip)}.)` : ''}`,
+    romanInvalid: (n, fact, why) => `${n}. خاطئة: ${why ? `${bare(why)}. ` : ''}الصواب: ${bare(fact)}.`,
     negativeTrapWhy: (opt, why, fact) => `العبارة غير الصحيحة هي "${bare(opt)}". ${bare(why)}. الصواب: ${bare(fact)}. جميع العبارات الأخرى صحيحة.`,
     negativeTrapDefault: (opt, fact) => `العبارة غير الصحيحة هي "${bare(opt)}". الصواب: ${bare(fact)}. جميع العبارات الأخرى صحيحة.`,
-    positiveConceptTip: (opt, tip) => `العبارة الصحيحة هي "${bare(opt)}". نصيحة امتحانية: ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `العبارة الصحيحة هي "${bare(opt)}". تنبيه للامتحان: ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `العبارة الصحيحة هي "${bare(opt)}".`,
     otherOptionsIntro: 'الخيارات الأخرى خاطئة، والصواب فيها:',
     otherOptionsWhyIntro: 'الخيارات الأخرى خاطئة:',
     optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. الصواب: ` : ''}${bare(fact)}.`,
-    structureMatch: (opt, a, b, dist) => `الإجابة الصحيحة هي "${bare(opt)}". الفرق الجوهري بين ${a} و ${b}: ${bare(dist)}.`,
-    structureTrait: (b, a, dist) => `العبارة الصحيحة حول "${b}" هي التي تبيّن الفرق بين ${a} و ${b}: ${bare(dist)}.`,
+    structureMatch: (opt, a, b, dist) => `الإجابة الصحيحة هي "${bare(opt)}". الفرق الجوهري بين ${a} و${b}: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `العبارة الصحيحة حول "${b}" هي التي تبيّن الفرق بين ${a} و${b}: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
       ? `الترتيب الصحيح هو "${opt}". التسلسل الصحيح لخطوات "${title}": ${full}.`
       : `الترتيب الصحيح هو "${opt}".`,
@@ -264,7 +265,7 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
   zh: {
     romanTrue: (combo) => `因此，恰好包含全部正确说法的选项是“${combo}”。`,
     romanFalse: (combo) => `因此，恰好包含全部错误说法的选项是“${combo}”。`,
-    romanValid: (n, fact, tip) => `${n}. 正确：${bare(fact)}。${tip ? `（解题要点：${bare(tip)}。）` : ''}`,
+    romanValid: (n, fact, tip) => `${n}. 正确：${bare(fact)}。${tip ? `解题要点：${bare(tip)}。` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. 错误：${why ? `${bare(why)}。` : ''}正确说法：${bare(fact)}。`,
     negativeTrapWhy: (opt, why, fact) => `不正确的说法是“${bare(opt)}”。${bare(why)}。正确说法：${bare(fact)}。其余选项均正确。`,
     negativeTrapDefault: (opt, fact) => `不正确的说法是“${bare(opt)}”。正确说法：${bare(fact)}。其余选项均正确。`,
@@ -274,30 +275,30 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     otherOptionsWhyIntro: '其余选项均错误：',
     optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}。正确说法：` : ''}${bare(fact)}。`,
     structureMatch: (opt, a, b, dist) => `正确答案是“${bare(opt)}”。“${a}”与“${b}”的核心区别：${bare(dist)}。`,
-    structureTrait: (b, a, dist) => `关于“${b}”的正确说法是阐明“${a}”与“${b}”区别的那一项：${bare(dist)}。`,
+    structureTrait: (b, a, dist) => `关于“${b}”，正确的说法是指出“${a}”与“${b}”区别的那一项：${bare(dist)}。`,
     reactionOrder: (opt, title, full) => full
       ? `正确顺序是“${opt}”。“${title}”的正确步骤顺序：${full}。`
       : `正确顺序是“${opt}”。`,
     missingStep: (opt, title, full) => `缺失的步骤是“${bare(opt)}”。“${title}”的正确步骤顺序：${full}。`,
   },
   ku: {
-    romanTrue: (combo) => `Ji ber vê yekê vebijarka ku tam gotinên rast dihewîne "${combo}" e.`,
-    romanFalse: (combo) => `Ji ber vê yekê vebijarka ku tam gotinên şaş dihewîne "${combo}" e.`,
+    romanTrue: (combo) => `Ji ber vê yekê vebijarka ku tenê gotinên rast dihewîne "${combo}" e.`,
+    romanFalse: (combo) => `Ji ber vê yekê vebijarka ku tenê gotinên şaş dihewîne "${combo}" e.`,
     romanValid: (n, fact, tip) => `${n}. Rast e: ${bare(fact)}.${tip ? ` (Nîşe: ${bare(tip)}.)` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. Şaş e: ${why ? `${bare(why)}. ` : ''}Ya rast: ${bare(fact)}.`,
     negativeTrapWhy: (opt, why, fact) => `Gotina şaş "${bare(opt)}" e. ${bare(why)}. Ya rast: ${bare(fact)}. Hemû gotinên din rast in.`,
     negativeTrapDefault: (opt, fact) => `Gotina şaş "${bare(opt)}" e. Ya rast: ${bare(fact)}. Hemû gotinên din rast in.`,
-    positiveConceptTip: (opt, tip) => `Gotina rast "${bare(opt)}" e. Serişteya ezmûnê: ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `Gotina rast "${bare(opt)}" e. Serişteya azmûnê: ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `Gotina rast "${bare(opt)}" e.`,
     otherOptionsIntro: 'Vebijarkên din şaş in; rastiyên wan ev in:',
     otherOptionsWhyIntro: 'Vebijarkên din şaş in:',
     optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. Ya rast: ` : ''}${bare(fact)}.`,
-    structureMatch: (opt, a, b, dist) => `Bersiva rast "${bare(opt)}" e. Ciyawaziya sereke di navbera ${a} û ${b} de: ${bare(dist)}.`,
-    structureTrait: (b, a, dist) => `Gotina rast li ser "${b}" ew e ku ciyawaziya navbera ${a} û ${b} dide: ${bare(dist)}.`,
+    structureMatch: (opt, a, b, dist) => `Bersiva rast "${bare(opt)}" e. Cudahiya sereke ya di navbera "${a}" û "${b}" de: ${bare(dist)}.`,
+    structureTrait: (b, a, dist) => `Gotina rast a derbarê "${b}" de ew e ku cudahiya "${a}" û "${b}" diyar dike: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
-      ? `Rêzkirina rast "${opt}" e. Rêza rast a qonaxên "${title}": ${full}.`
-      : `Rêzkirina rast "${opt}" e.`,
-    missingStep: (opt, title, full) => `Qonaxa kêm "${bare(opt)}" e. Rêza rast a qonaxên "${title}": ${full}.`,
+      ? `Rêza rast "${opt}" e. Rêza rast a gavên "${title}": ${full}.`
+      : `Rêza rast "${opt}" e.`,
+    missingStep: (opt, title, full) => `Gava kêm "${bare(opt)}" e. Rêza rast a gavên "${title}": ${full}.`,
   },
 };
 
@@ -367,7 +368,7 @@ export const GENERIC_CATEGORY_DESCRIPTORS: Record<LanguageCode, string[]> = {
   fr: ['Loi', 'Principe', 'Allotrope', 'Réaction', 'Règle', 'Modèle', 'Hypothèse', 'Solution', 'Pile', 'Atomes', 'Liaison', 'Solide', 'Solides', 'Rejoindre', 'Effet', 'Hybridation', 'Numéro', 'Nombre', 'Constante'],
   ru: ['Закон', 'Принцип', 'Аллотроп', 'Реакция', 'Правило', 'Модель', 'Гипотеза', 'Раствор', 'Элемент', 'Атомы', 'Связь', 'Твердое вещество', 'Твердые вещества', 'Присоединение', 'Эффект', 'Гибридизация', 'Число', 'Константа'],
   ar: ['قانون', 'مبدأ', 'متآصل', 'تآصل', 'تفاعل', 'قاعدة', 'نموذج', 'فرضية', 'محلول', 'خلية', 'ذرات', 'رابطة', 'صلب', 'المواد الصلبة', 'مواد صلبة', 'الانضمام', 'تأثير', 'تهجين', 'رقم', 'عدد', 'ثابت'],
-  zh: ['定律', '原理', '原则', '同素异形体', '反应', '规则', '模型', '假说', '溶液', '电池', '原子', '键', '固体', '效应', '杂交', '常数', '数'],
+  zh: ['定律', '原理', '原则', '同素异形体', '反应', '规则', '模型', '假说', '溶液', '电池', '原子', '键', '固体', '效应', '杂化', '常数', '数'],
   ku: ['Qanûna', 'Qanûn', 'Zagona', 'Zagon', 'Prensîba', 'Prensîb', 'Allotropa', 'Allotrop', 'Allotrope', 'Reaksiyona', 'Reaksiyon', 'Rêzika', 'Rêzik', 'Modela', 'Model', 'Hîpoteza', 'Çareseriya', 'Pîla', 'Pîl', 'Atomên', 'Benda', 'Hişk', 'Bandora', 'Bandor', 'hîbrîdîzasyon', 'Hîbrîdîzasyon', 'Tevlî', 'Hejmara', 'Hejmar', 'Girêdana', 'Girêdan', 'Asîda', 'Asîd'],
 };
 
@@ -907,9 +908,9 @@ function buildRomanStem(title: string, statements: [string, string, string], ask
     case 'en': return `The following statements are given about the topic "${title}":\n\n${body}\n\nWhich of these statements are ${askTrue ? 'correct' : 'incorrect'}?`;
     case 'de': return `Zum Thema "${title}" werden folgende Aussagen gemacht:\n\n${body}\n\nWelche dieser Aussagen sind ${askTrue ? 'richtig' : 'falsch'}?`;
     case 'fr': return `On donne les affirmations suivantes sur le thème « ${title} » :\n\n${body}\n\nLesquelles de ces affirmations sont ${askTrue ? 'exactes' : 'fausses'} ?`;
-    case 'ru': return `По теме «${title}» даны следующие утверждения:\n\n${body}\n\nКакие из этих утверждений ${askTrue ? 'верны' : 'неверны'}?`;
+    case 'ru': return `Даны утверждения по теме «${title}»:\n\n${body}\n\nКакие из них ${askTrue ? 'верны' : 'неверны'}?`;
     case 'ar': return `وردت العبارات التالية حول موضوع "${title}":\n\n${body}\n\nأيّ من هذه العبارات ${askTrue ? 'صحيحة' : 'خاطئة'}؟`;
-    case 'zh': return `关于“${title}”，给出下列说法：\n\n${body}\n\n上述说法中，${askTrue ? '正确' : '错误'}的是哪些？`;
+    case 'zh': return `关于“${title}”，有下列说法：\n\n${body}\n\n其中${askTrue ? '正确' : '错误'}的是哪些？`;
     case 'ku': return `Derbarê mijara "${title}" de ev gotin hatine dayîn:\n\n${body}\n\nKîjan ji van gotinan ${askTrue ? 'rast' : 'şaş'} in?`;
   }
 }
@@ -950,36 +951,36 @@ function getNegativeTrapStem(title: string, lang: LanguageCode, variant = 0): st
       return `Quelle proposition est incorrecte au regard des lois fondamentales de "${title}" ?`;
     }
     case 'ru': {
-      if (v === 0) return `Какое из следующих утверждений относительно темы «${title}» является неверным (ложным)?`;
-      if (v === 1) return `С учетом темы «${title}», какое суждение содержит научную ошибку?`;
+      if (v === 0) return `Какое из утверждений по теме «${title}» неверно?`;
+      if (v === 1) return `Какое утверждение по теме «${title}» содержит научную ошибку?`;
       if (v === 2) return `Какое из положений по теме «${title}» не соответствует действительности?`;
-      if (v === 3) return `При анализе темы «${title}», какое из утверждений является ошибочным?`;
-      if (v === 4) return `Какое из приведенных высказываний по теме «${title}» противоречит научным фактам?`;
-      return `Какое утверждение ошибочно с точки зрения основных законов химии в теме «${title}»?`;
+      if (v === 3) return `Укажите ошибочное утверждение по теме «${title}».`;
+      if (v === 4) return `Какое из приведённых утверждений по теме «${title}» противоречит научным фактам?`;
+      return `Какое утверждение по теме «${title}» противоречит основным законам химии?`;
     }
     case 'ar': {
-      if (v === 0) return `فيما يتعلق بموضوع "${title}"، أي من العبارات التالية غير صحيحة (خاطئة)؟`;
-      if (v === 1) return `بالنظر إلى "${title}"، أي من الأحكام التالية يتضمن مغالطة علمية؟`;
-      if (v === 2) return `أي افتراض مقدم في سياق "${title}" يعتبر غير صحيح؟`;
-      if (v === 3) return `عند دراسة مبادئ "${title}"، أي تفسير يعتبر خاطئاً؟`;
-      if (v === 4) return `أي من العبارات التالية يتعارض مع الحقائق العلمية المثبتة في "${title}"؟`;
-      return `أي عبارة تعتبر خاطئة وفقاً للمبادئ الكيميائية الأساسية لوحدة "${title}"؟`;
+      if (v === 0) return `فيما يتعلق بموضوع "${title}"، أيّ العبارات الآتية خاطئة؟`;
+      if (v === 1) return `في موضوع "${title}"، أيّ الأحكام الآتية يتضمن خطأً علميًا؟`;
+      if (v === 2) return `أيّ الافتراضات الآتية في سياق "${title}" غير صحيح؟`;
+      if (v === 3) return `عند دراسة مبادئ "${title}"، أيّ التفسيرات الآتية خاطئ؟`;
+      if (v === 4) return `أيّ العبارات الآتية يتعارض مع الحقائق العلمية الثابتة في "${title}"؟`;
+      return `أيّ العبارات الآتية خاطئة وفقًا للمبادئ الكيميائية الأساسية في وحدة "${title}"؟`;
     }
     case 'zh': {
-      if (v === 0) return `关于“${title}”的化学内容，下列叙述中哪一项是错误的（不符合化学事实）？`;
-      if (v === 1) return `结合“${title}”核心考点，下列判断中哪一项包含科学认知误区？`;
-      if (v === 2) return `在“${title}”范畴内，下列关于物质性质的陈述哪一项不正确？`;
-      if (v === 3) return `分析“${title}”相关化学机理，下列结论中存在错误的是哪一项？`;
-      if (v === 4) return `下列关于“${title}”的命题中，与客观化学事实相违背的是？`;
-      return `依照“${title}”的基本化学原理，下列哪一说法属于错误陈述？`;
+      if (v === 0) return `下列关于“${title}”的说法中，错误的是哪一项？`;
+      if (v === 1) return `结合“${title}”的知识判断，下列说法中存在科学性错误的是哪一项？`;
+      if (v === 2) return `下列有关“${title}”的叙述中，不正确的是哪一项？`;
+      if (v === 3) return `运用“${title}”的相关原理分析，下列结论错误的是哪一项？`;
+      if (v === 4) return `下列关于“${title}”的说法中，与化学事实不符的是哪一项？`;
+      return `依据“${title}”的基本原理，下列说法错误的是哪一项？`;
     }
     case 'ku': {
-      if (v === 0) return `Derbarê mijara "${title}" de, kîjan ji van gotinên jêrîn şaş e (ne rast e)?`;
-      if (v === 1) return `Gava mijara "${title}" bê nirxandin, kîjan ji van darazên jêrîn şaşiyek zanistî dihewîne?`;
-      if (v === 2) return `Di çarçoveya "${title}" de, kîjan îdîa ne rast e?`;
-      if (v === 3) return `Dema prensîbên "${title}" tên lêkolîn, kîjan gotin şaş e?`;
-      if (v === 4) return `Kîjan ji gotinên jêrîn bi rastiyên zanistî yên "${title}" re nakok e?`;
-      return `Li gorî prensîbên bingehîn ên kîmyayê di "${title}" de, kîjan daraz çewt e?`;
+      if (v === 0) return `Derbarê mijara "${title}" de, kîjan ji gotinên jêrîn şaş e?`;
+      if (v === 1) return `Dema mijara "${title}" tê nirxandin, kîjan ji gotinên jêrîn şaşiyeke zanistî dihewîne?`;
+      if (v === 2) return `Di çarçoveya mijara "${title}" de, kîjan gotin ne rast e?`;
+      if (v === 3) return `Li gorî prensîbên mijara "${title}", kîjan ji gotinên jêrîn şaş e?`;
+      if (v === 4) return `Kîjan ji gotinên jêrîn bi rastiyên zanistî yên mijara "${title}" re nakok e?`;
+      return `Li gorî prensîbên bingehîn ên kîmyayê, kîjan gotina derbarê mijara "${title}" de şaş e?`;
     }
   }
 }
@@ -1020,36 +1021,36 @@ function getPositiveConceptStem(title: string, lang: LanguageCode, variant = 0):
       return `Quelle affirmation est parfaitement exacte au regard des lois de "${title}" ?`;
     }
     case 'ru': {
-      if (v === 0) return `В соответствии с фундаментальными принципами темы «${title}», какое из следующих утверждений абсолютно верно?`;
-      if (v === 1) return `При изучении темы «${title}», какое из суждений представляет собой установленный научный факт?`;
-      if (v === 2) return `В рамках темы «${title}», какое объяснение является безупречно правильным?`;
-      if (v === 3) return `Какое утверждение о теме «${title}» является несомненно истинным?`;
-      if (v === 4) return `Какое из следующих положений темы «${title}» научно доказано и абсолютно точно?`;
-      return `Какое из суждений полностью соответствует базовым химическим принципам темы «${title}»?`;
+      if (v === 0) return `Какое из утверждений по теме «${title}» верно?`;
+      if (v === 1) return `Какое из утверждений по теме «${title}» выражает установленный научный факт?`;
+      if (v === 2) return `Какое объяснение по теме «${title}» правильно?`;
+      if (v === 3) return `Какое утверждение по теме «${title}» соответствует законам химии?`;
+      if (v === 4) return `Какое из утверждений по теме «${title}» научно доказано?`;
+      return `Какое из утверждений полностью соответствует основным положениям темы «${title}»?`;
     }
     case 'ar': {
-      if (v === 0) return `وفقاً للمبادئ الكيميائية الأساسية لوحدة "${title}"، أي من العبارات التالية صحيحة تماماً؟`;
-      if (v === 1) return `عند دراسة "${title}"، أي من الأحكام التالية يمثل حقيقة علمية مثبتة؟`;
-      if (v === 2) return `في سياق وحدة "${title}"، أي من التفسيرات التالية دقيق تماماً؟`;
-      if (v === 3) return `بناءً على القوانين الكيميائية، أي عبارة متعلقة بـ "${title}" صحيحة بلا شك؟`;
-      if (v === 4) return `أي من العبارات التالية يمثل حقيقة علمية مؤكدة حول موضوع "${title}"؟`;
-      return `أي من الخيارات التالية دقيق وصحيح تماماً وفقاً لقواعد "${title}"؟`;
+      if (v === 0) return `وفقًا للمبادئ الكيميائية الأساسية في وحدة "${title}"، أيّ العبارات الآتية صحيحة؟`;
+      if (v === 1) return `عند دراسة "${title}"، أيّ الأحكام الآتية يمثل حقيقة علمية ثابتة؟`;
+      if (v === 2) return `في سياق وحدة "${title}"، أيّ التفسيرات الآتية صحيح؟`;
+      if (v === 3) return `بناءً على القوانين الكيميائية، أيّ العبارات الآتية عن "${title}" صحيحة؟`;
+      if (v === 4) return `أيّ العبارات الآتية تمثل حقيقة علمية مؤكدة في موضوع "${title}"؟`;
+      return `أيّ الخيارات الآتية صحيح وفقًا لقواعد "${title}"؟`;
     }
     case 'zh': {
-      if (v === 0) return `根据“${title}”单元的核心化学规律与基本原理，下列叙述中哪一项是完全正确的？`;
-      if (v === 1) return `在探究“${title}”的过程中，下列哪项判断属于被科学实验证实的客观事实？`;
-      if (v === 2) return `在“${title}”考点要求内，下列哪项阐述完全准确无误？`;
-      if (v === 3) return `遵循化学基本规律，关于“${title}”的下列说法中确凿无误的是？`;
-      if (v === 4) return `关于“${title}”的下列判断中，属于被充分证实的科学真理的是？`;
-      return `下列哪个选项完全符合“${title}”单元的基础化学公理与规律？`;
+      if (v === 0) return `依据“${title}”的基本原理，下列说法正确的是哪一项？`;
+      if (v === 1) return `学习“${title}”时，下列判断中符合科学事实的是哪一项？`;
+      if (v === 2) return `下列有关“${title}”的叙述中，完全正确的是哪一项？`;
+      if (v === 3) return `依据化学基本规律，下列关于“${title}”的说法正确的是哪一项？`;
+      if (v === 4) return `下列关于“${title}”的说法中，正确的是哪一项？`;
+      return `下列选项中，符合“${title}”基本规律的是哪一项？`;
     }
     case 'ku': {
-      if (v === 0) return `Li gorî prensîbên bingehîn ên kîmyayê di beşa "${title}" de, kîjan ji van gotinan bê guman rast e?`;
-      if (v === 1) return `Dema ku beşa "${title}" tê lêkolîn, kîjan ji van gotinên jêrîn rastiyek zanistî ye?`;
-      if (v === 2) return `Di çarçoveya zanistiya "${title}" de, kîjan şîrove bi temamî rast e?`;
-      if (v === 3) return `Li gorî zagonên kîmyewî, kîjan îfadeya li ser "${title}" bê şik rast e?`;
-      if (v === 4) return `Kîjan ji vebijarkên jêrîn rastiyeke zanistî ya piştrastkirî li ser "${title}" nîşan dide?`;
-      return `Kîjan îfade li gorî prensîbên bingehîn ên "${title}" bi tevahî bê kêmasî û rast e?`;
+      if (v === 0) return `Li gorî prensîbên bingehîn ên kîmyayê yên mijara "${title}", kîjan ji gotinên jêrîn bê guman rast e?`;
+      if (v === 1) return `Dema mijara "${title}" tê lêkolînkirin, kîjan ji gotinên jêrîn rastiyeke zanistî ye?`;
+      if (v === 2) return `Di çarçoveya mijara "${title}" de, kîjan şirove bi tevahî rast e?`;
+      if (v === 3) return `Li gorî zagonên kîmyayê, kîjan gotina derbarê mijara "${title}" de bê guman rast e?`;
+      if (v === 4) return `Kîjan ji vebijarkên jêrîn derbarê mijara "${title}" de rastiyeke zanistî ya îspatkirî ye?`;
+      return `Li gorî qaîdeyên bingehîn ên mijara "${title}", kîjan ji vebijarkên jêrîn bi tevahî rast e?`;
     }
   }
 }
@@ -1060,10 +1061,10 @@ function getMatchStemA(title: string, clue: string, lang: LanguageCode): string 
     case 'en': return `In "${title}", which chemical species or concept is defined by the distinguishing trait: "${clue}"?`;
     case 'de': return `Welche chemische Spezies oder welches Konzept wird in "${title}" durch das Merkmal "${clue}" charakterisiert?`;
     case 'fr': return `Dans "${title}", quelle espèce chimique ou notion est définie par le trait distinctif : "${clue}" ?`;
-    case 'ru': return `Какое химическое вещество или понятие в теме «${title}» характеризуется признаком: «${clue}»?`;
+    case 'ru': return `Какому понятию темы «${title}» соответствует описание: «${clue}»?`;
     case 'ar': return `في موضوع "${title}"، أي نوع كيميائي أو مفهوم يتميز بالخاصية: "${clue}"؟`;
-    case 'zh': return `在“${title}”体系中，以下哪种化学微粒或概念具有显著特征：“${clue}”？`;
-    case 'ku': return `Di mijara "${title}" de, kîjan cûreyê kîmyewî an têgeh bi taybetmendiya "${clue}" tê veqetandin?`;
+    case 'zh': return `在“${title}”中，下列哪一项具有以下显著特征：“${clue}”？`;
+    case 'ku': return `Di mijara "${title}" de, kîjan cureya kîmyewî an têgeh bi vê taybetmendiyê ji yên din cuda dibe: "${clue}"?`;
   }
 }
 
@@ -1073,10 +1074,10 @@ function getMatchStemB(title: string, conceptName: string, lang: LanguageCode): 
     case 'en': return `Which of the following characteristics accurately describes "${conceptName}" within "${title}"?`;
     case 'de': return `Welche der folgenden Eigenschaften beschreibt "${conceptName}" im Rahmen von "${title}" zutreffend?`;
     case 'fr': return `Laquelle des caractéristiques suivantes décrit correctement "${conceptName}" dans le cadre de "${title}" ?`;
-    case 'ru': return `Какая из следующих характеристик верно описывает «${conceptName}» в контексте «${title}»?`;
-    case 'ar': return `أي من الخصائص التالية تصف بدقة "${conceptName}" ضمن دراسة "${title}"؟`;
-    case 'zh': return `在“${title}”研究范畴内，下列关于“${conceptName}”的属性特征描述正确的是？`;
-    case 'ku': return `Derbarê "${conceptName}" ya ku di çarçoveya "${title}" de tê lêkolînkirin de kîjan taybetmendî rast e?`;
+    case 'ru': return `Какое из утверждений о понятии «${conceptName}» (тема «${title}») верно?`;
+    case 'ar': return `أيّ العبارات الآتية تصف "${conceptName}" وصفًا صحيحًا في موضوع "${title}"؟`;
+    case 'zh': return `在“${title}”中，下列关于“${conceptName}”的说法正确的是哪一项？`;
+    case 'ku': return `Di çarçoveya mijara "${title}" de, kîjan ji gotinên jêrîn derbarê "${conceptName}" de rast e?`;
   }
 }
 
@@ -1086,10 +1087,10 @@ function getSequenceOrderStem(title: string, seqTitle: string, lang: LanguageCod
     case 'en': return `In the unit "${title}", which option gives the correct order of the steps of "${seqTitle}"?`;
     case 'de': return `Welche Option gibt die korrekte Reihenfolge der Schritte für "${seqTitle}" in "${title}" wieder?`;
     case 'fr': return `Quelle option présente l'ordre correct des étapes de "${seqTitle}" dans "${title}" ?`;
-    case 'ru': return `В каком из вариантов указана правильная последовательность этапов процесса «${seqTitle}» в теме «${title}»?`;
-    case 'ar': return `أي الخيارات يعبر عن الترتيب الصحيح لخطوات "${seqTitle}" في وحدة "${title}"؟`;
-    case 'zh': return `在“${title}”单元中，下列哪个选项正确给出了“${seqTitle}”各步骤的先后顺序？`;
-    case 'ku': return `Rêza rast a qonaxên "${seqTitle}" di beşa "${title}" de di kîjan vebijarkê de hatiye dayîn?`;
+    case 'ru': return `Тема «${title}», последовательность «${seqTitle}». В каком варианте указан правильный порядок?`;
+    case 'ar': return `أيّ الخيارات الآتية يبيّن الترتيب الصحيح لخطوات "${seqTitle}" في وحدة "${title}"؟`;
+    case 'zh': return `在“${title}”单元中，正确表示“${seqTitle}”各步骤先后顺序的是哪一项？`;
+    case 'ku': return `Di mijara "${title}" de, rêza rast a gavên "${seqTitle}" di kîjan vebijarkê de hatiye dayîn?`;
   }
 }
 
@@ -1099,10 +1100,10 @@ function getSequenceMissingStepStem(title: string, seqTitle: string, lang: Langu
     case 'en': return `In the process "${seqTitle}" under "${title}", which option represents the missing step denoted by [ ? ]?`;
     case 'de': return `Welcher Schritt gehört an die mit [ ? ] markierte Stelle im Ablauf von "${seqTitle}" in "${title}"?`;
     case 'fr': return `Dans le processus "${seqTitle}" de "${title}", quelle est l'étape manquante indiquée par [ ? ] ?`;
-    case 'ru': return `Какой этап соответствует пропуску [ ? ] в схеме процесса «${seqTitle}» темы «${title}»?`;
-    case 'ar': return `في سياق مسار "${seqTitle}" ضمن "${title}"، ما هي الخطوة المفقودة المشار إليها بالرمز [ ؟ ]؟`;
-    case 'zh': return `在“${title}”的“${seqTitle}”反应历程体系中，用 [ ? ] 标识出的缺失阶段步骤应当是？`;
-    case 'ku': return `Di pêvajoya "${seqTitle}" ya di nav "${title}" de, qonaxa kêm a ku bi [ ? ] hatiye nîşankirin kîjan e?`;
+    case 'ru': return `Тема «${title}», последовательность «${seqTitle}». Какой этап пропущен на месте [ ? ]?`;
+    case 'ar': return `في خطوات "${seqTitle}" ضمن "${title}"، ما الخطوة الناقصة المشار إليها بالرمز [ ؟ ]؟`;
+    case 'zh': return `在“${title}”中，“${seqTitle}”的各步骤里用 [ ? ] 表示的缺失步骤是哪一项？`;
+    case 'ku': return `Di mijara "${title}" de, di pêvajoya "${seqTitle}" de gava kêm a ku bi [ ? ] hatiye nîşankirin kîjan e?`;
   }
 }
 
@@ -1841,7 +1842,7 @@ export function compileUnitQuestions(
     if (!TR_DIAGRAM_PLACEMENT.has(unit)) compileUnitQuestions(unit, 'tr');
     placement = TR_DIAGRAM_PLACEMENT.get(unit);
   }
-  return enrichQuestionsWithDiagrams(unit, questions, lang, placement);
+  return enrichQuestionsWithDiagrams(unit, questions.map((q) => polishQuestion(q, lang)), lang, placement);
 }
 
 /**

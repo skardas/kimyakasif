@@ -1018,7 +1018,7 @@ export async function runTier1Tests(): Promise<void> {
       const ru = UI_TRANSLATIONS.ru;
       expect(ru.appName).toBe('Химия 3D');
       expect(ru.nav.curriculum).toBe('Темы');
-      expect(ru.nav.lab3d).toBe('3D Лаб');
+      expect(ru.nav.lab3d).toBe('3D-лаб');
       expect(SHELL_STRINGS.ru.next).toBe('Далее');
       expect(SHELL_STRINGS.ru.settings).toBe('Настройки');
     })
@@ -1224,7 +1224,7 @@ export async function runTier1Tests(): Promise<void> {
             q.stem.includes('quelle espèce chimique ou notion est définie') ||
             q.stem.includes('Какое химическое вещество или понятие') ||
             q.stem.includes('أي نوع كيميائي أو مفهوم يتميز بالخاصية') ||
-            q.stem.includes('以下哪种化学微粒或概念具有显著特征') ||
+            q.stem.includes('下列哪一项具有以下显著特征') ||
             q.stem.includes('kîjan cûreyê kîmyewî an têgeh bi taybetmendiya')
           );
           if (isTypeA) {
@@ -1321,7 +1321,7 @@ export async function runTier1Tests(): Promise<void> {
             q.stem.includes('quelle espèce chimique ou notion est définie') ||
             q.stem.includes('Какое химическое вещество или понятие') ||
             q.stem.includes('أي نوع كيميائي أو مفهوم يتميز بالخاصية') ||
-            q.stem.includes('以下哪种化学微粒或概念具有显著特征') ||
+            q.stem.includes('下列哪一项具有以下显著特征') ||
             q.stem.includes('kîjan cûreyê kîmyewî an têgeh bi taybetmendiya');
           if (isTypeA) {
             const correctOpt = q.options[q.correctIndex].trim();

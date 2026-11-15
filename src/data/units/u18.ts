@@ -21,10 +21,10 @@ export const unit18: ChemistryUnitSeedData = {
     "en": "Kc, Kp, Le Chatelier Principle & Shifts",
     "de": "Le Chatelier-Prinzip, Kc- und Kp-Beziehungen",
     "fr": "Principe de Le Chatelier, relations Kc et Kp",
-    "ru": "Принцип Ле Шателье, отношения Kc и Kp",
-    "ar": "مبدأ لو شاتيليه، علاقات Kc وKp",
-    "zh": "Le Chatelier 原理、Kc 和 Kp 关系",
-    "ku": "Prensîba Le Chatelier, Têkiliyên Kc û Kp"
+    "ru": "Принцип Ле Шателье, константы Kc и Kp и связь между ними",
+    "ar": "مبدأ لوشاتلييه وعلاقتا Kc وKp",
+    "zh": "勒夏特列原理、Kc 与 Kp 的关系",
+    "ku": "Prensîba Le Chatelier, Hevkêşeyên Kc û Kp"
   },
   "facts": [
     {
@@ -34,20 +34,20 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Chemical equilibrium is dynamic; it is established when the forward reaction rate is equal to the reverse reaction rate (ri = rg).",
         "de": "Das chemische Gleichgewicht ist dynamisch; es stellt sich ein, wenn die Geschwindigkeit der Hinreaktion gleich der Geschwindigkeit der Rückreaktion ist (ri = rg).",
         "fr": "L'équilibre chimique est dynamique ; il est établi lorsque la vitesse de réaction directe est égale à la vitesse de réaction inverse (ri = rg).",
-        "ru": "Химическое равновесие динамично; Он устанавливается, когда скорость прямой реакции равна скорости обратной реакции (ri = rg).",
-        "ar": "التوازن الكيميائي ديناميكي. يتم تأسيسه عندما يكون معدل التفاعل الأمامي مساوياً لمعدل التفاعل العكسي (ri = rg).",
-        "zh": "化学平衡是动态的；当正向反应速率等于逆向反应速率（ri = rg）时成立。",
-        "ku": "Hevsengiya kîmyewî dînamîk e; dema ku leza reaksiyona pêşve bi leza reaksiyona paşve re wekhev be, tê sazkirin (ri = rg)."
+        "ru": "Химическое равновесие динамическое: оно устанавливается, когда скорость прямой реакции становится равной скорости обратной (rпр = rобр).",
+        "ar": "الاتزان الكيميائي ديناميكي؛ ويتحقق عندما تتساوى سرعة التفاعل الأمامي وسرعة التفاعل العكسي (ri = rg).",
+        "zh": "化学平衡是动态平衡；当正反应速率等于逆反应速率(ri = rg)时达到平衡。",
+        "ku": "Hevsengiya kîmyewî dînamîk e; dema leza reaksiyona pêşve wekhevî leza reaksiyona paşve dibe, saz dibe (ri = rg)."
       },
       "trap": {
         "tr": "Denge kurulduğunda tüm kimyasal tepkimeler ve tanecik hareketleri tamamen durur.",
         "en": "When equilibrium is established, all chemical reactions and particle movements stop completely.",
         "de": "Wenn das Gleichgewicht hergestellt ist, kommen alle chemischen Reaktionen und Partikelbewegungen vollständig zum Stillstand.",
         "fr": "Lorsque l’équilibre est établi, toutes les réactions chimiques et mouvements de particules s’arrêtent complètement.",
-        "ru": "Когда устанавливается равновесие, все химические реакции и движения частиц полностью прекращаются.",
-        "ar": "عند حدوث التوازن، تتوقف جميع التفاعلات الكيميائية وحركات الجسيمات تمامًا.",
-        "zh": "当建立平衡时，所有化学反应和粒子运动完全停止。",
-        "ku": "Dema ku hevsengî çêbibe, hemî reaksiyonên kîmyewî û tevgerên parçikan bi tevahî disekinin."
+        "ru": "При установлении равновесия все химические реакции и движение частиц полностью прекращаются.",
+        "ar": "عند بلوغ الاتزان تتوقف جميع التفاعلات الكيميائية وحركة الجسيمات تمامًا.",
+        "zh": "达到平衡时，所有化学反应和粒子运动都完全停止。",
+        "ku": "Dema hevsengî saz dibe, hemû reaksiyonên kîmyewî û tevgerên perçeyan bi tevahî radiwestin."
       },
       "whyTrapIsFalse": {
         "tr": "Denge statik değil dinamiktir: ileri ve geri tepkimeler eşit hızla sürer. Derişimler değişmediği için tepkime yalnızca durmuş gibi görünür.",
@@ -57,7 +57,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Равновесие динамическое, а не статическое: прямая и обратная реакции продолжаются с равными скоростями. Реакция лишь кажется остановившейся, потому что концентрации больше не меняются.",
         "ar": "الاتزان ديناميكي وليس ساكنًا: يستمر التفاعلان الأمامي والعكسي بالسرعة نفسها. يبدو التفاعل متوقفًا فقط لأن التراكيز لم تعد تتغير.",
         "zh": "平衡是动态的而不是静止的：正、逆反应以相等的速率继续进行。只是因为浓度不再变化，反应看起来像停止了。",
-        "ku": "Hevsengî dînamîk e, ne statîk: reaksiyonên pêşve û paşve bi lezek wekhev berdewam dikin. Ji ber ku tîrbûn êdî naguherin, reaksiyon tenê wekî ku rawestiyabe xuya dike."
+        "ku": "Hevsengî ne statîk, dînamîk e: reaksiyonên pêşve û paşve bi lezeke wekhev berdewam dikin. Ji ber ku tîrbûn naguherin, reaksiyon tenê wekî ku rawestiyabe xuya dike."
       }
     },
     {
@@ -67,30 +67,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "At equilibrium, reactant and product concentrations are constant; However, the concentrations do not have to be equal.",
         "de": "Im Gleichgewicht sind die Reaktanten- und Produktkonzentrationen konstant; Allerdings müssen die Konzentrationen nicht gleich sein.",
         "fr": "À l'équilibre, les concentrations de réactifs et de produits sont constantes ; Cependant, les concentrations ne doivent pas nécessairement être égales.",
-        "ru": "В равновесии концентрации реагентов и продуктов постоянны; Однако концентрации не обязательно должны быть равными.",
-        "ar": "في حالة التوازن، تكون تركيزات المواد المتفاعلة والنواتج ثابتة؛ ومع ذلك، لا يجب أن تكون التركيزات متساوية.",
-        "zh": "平衡时，反应物和产物浓度恒定；然而，浓度不必相等。",
-        "ku": "Di hevsengiyê de tîrbûnên reaktant û hilberan sabît in; lê ne mecbûr e ku ev tîrbûn bi hev re wekhev bin."
+        "ru": "В состоянии равновесия концентрации реагентов и продуктов постоянны, но они не обязательно равны между собой.",
+        "ar": "عند الاتزان تكون تراكيز المواد المتفاعلة والنواتج ثابتة، لكن ليس بالضرورة أن تكون متساوية.",
+        "zh": "平衡时，反应物和生成物的浓度保持不变，但各浓度不一定相等。",
+        "ku": "Di hevsengiyê de tîrbûnên reaktant û hilberan sabît in; lê ne mecbûr e ku ev tîrbûn wekhevî hev bin."
       },
       "trap": {
         "tr": "Dengeye ulaşan bir sistemde girenlerin ve ürünlerin derişimleri daima eşittir.",
         "en": "In a system that reaches equilibrium, the concentrations of reactants and products are always equal.",
         "de": "In einem System, das ein Gleichgewicht erreicht, sind die Konzentrationen von Reaktanten und Produkten immer gleich.",
         "fr": "Dans un système qui atteint l’équilibre, les concentrations de réactifs et de produits sont toujours égales.",
-        "ru": "В системе, достигшей равновесия, концентрации реагирующих веществ и продуктов всегда равны.",
-        "ar": "في النظام الذي يصل إلى التوازن، تكون تركيزات المواد المتفاعلة والنواتج متساوية دائمًا.",
-        "zh": "在达到平衡的系统中，反应物和产物的浓度始终相等。",
-        "ku": "Di pergaleke ku gihîştiye hevsengiyê de tîrbûnên reaktant û hilberan her tim wekhev in."
+        "ru": "В системе, достигшей равновесия, концентрации реагентов и продуктов всегда равны.",
+        "ar": "في النظام الذي بلغ حالة الاتزان تكون تراكيز المواد المتفاعلة والنواتج متساوية دائمًا.",
+        "zh": "在达到平衡的体系中，反应物和生成物的浓度总是相等。",
+        "ku": "Di sîstemeke ku gihîştiye hevsengiyê de tîrbûnên reaktant û hilberan her tim wekhev in."
       },
       "whyTrapIsFalse": {
         "tr": "Dengede sabit olan derişimlerdir, eşit olmaları gerekmez. Derişimlerin oranını Kc belirler ve Kc 1'den çok farklı olabilir.",
         "en": "At equilibrium the concentrations are constant, not necessarily equal. Their ratio is fixed by Kc, which can be far from 1.",
         "de": "Im Gleichgewicht sind die Konzentrationen konstant, nicht notwendigerweise gleich. Ihr Verhältnis wird durch Kc festgelegt, das weit von 1 entfernt sein kann.",
         "fr": "À l’équilibre, les concentrations sont constantes, pas forcément égales. Leur rapport est fixé par Kc, qui peut être très différent de 1.",
-        "ru": "В равновесии концентрации постоянны, но не обязательно равны. Их соотношение задаётся Kc, которая может сильно отличаться от 1.",
+        "ru": "В равновесии концентрации постоянны, но не обязательно равны. Их соотношение определяется константой Kc, которая может сильно отличаться от 1.",
         "ar": "عند الاتزان تكون التراكيز ثابتة وليست بالضرورة متساوية. تحدد Kc النسبة بينها، وقد تختلف Kc كثيرًا عن 1.",
         "zh": "平衡时各浓度保持不变，但不一定相等。它们之间的比值由 Kc 决定，而 Kc 可能远离 1。",
-        "ku": "Di hevsengiyê de tîrbûn sabît in, ne mecbûr in wekhev bin. Rêjeya wan bi Kc tê diyarkirin û Kc dikare ji 1ê pir cuda be."
+        "ku": "Di hevsengiyê de tîrbûn sabît in, ne mecbûr e wekhev bin. Rêjeya tîrbûnan bi Kc tê diyarkirin û Kc dikare ji 1-ê pir cuda be."
       }
     },
     {
@@ -100,20 +100,20 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "For a given reaction equation, the equilibrium constant Kc changes only with temperature; concentration, pressure, volume or a catalyst do NOT change Kc.",
         "de": "Für eine gegebene Reaktionsgleichung ändert sich die Gleichgewichtskonstante Kc nur mit der Temperatur; Konzentration, Druck, Volumen oder Katalysator ändern Kc NICHT.",
         "fr": "Pour une équation de réaction donnée, la constante d’équilibre Kc ne varie qu’avec la température ; la concentration, la pression, le volume ou un catalyseur ne modifient PAS Kc.",
-        "ru": "Для данного уравнения реакции константа равновесия Kc зависит только от температуры; концентрация, давление, объём или катализатор НЕ изменяют Kc.",
+        "ru": "Для данного уравнения реакции константа равновесия Kc зависит только от температуры; концентрация, давление, объём и катализатор на Kc НЕ влияют.",
         "ar": "لمعادلة تفاعل معينة يتغير ثابت الاتزان Kc بتغير درجة الحرارة فقط؛ التركيز والضغط والحجم والعامل الحفاز لا تغيّر Kc.",
         "zh": "对于给定的反应方程式，平衡常数 Kc 只随温度变化；浓度、压强、体积或催化剂都不改变 Kc。",
-        "ku": "Ji bo hevkêşeyeke reaksiyonê ya diyar, sabîta hevsengiyê Kc tenê bi germahiyê diguhere; tîrbûn, zext, qebare an katalîzator Kc NAGUHERÎNIN."
+        "ku": "Ji bo hevkêşeyeke reaksiyonê ya diyar, sabîta hevsengiyê Kc tenê bi germahiyê diguhere; tîrbûn, zext, qebare an katalîzor Kc naguherînin."
       },
       "trap": {
         "tr": "Katalizör eklendiğinde sistemin denge sabiti Kc büyür.",
         "en": "When a catalyst is added, the equilibrium constant Kc of the system increases.",
         "de": "Wenn ein Katalysator hinzugefügt wird, erhöht sich die Gleichgewichtskonstante Kc des Systems.",
         "fr": "Lorsqu'un catalyseur est ajouté, la constante d'équilibre Kc du système augmente.",
-        "ru": "При добавлении катализатора константа равновесия Kc системы увеличивается.",
-        "ar": "عند إضافة محفز، يزداد ثابت التوازن Kc للنظام.",
-        "zh": "当添加催化剂时，体系的平衡常数Kc增加。",
-        "ku": "Dema ku katalîzator tê zêdekirin, sabîta hevsengiyê Kc ya pergalê mezin dibe."
+        "ru": "При добавлении катализатора константа равновесия Kc увеличивается.",
+        "ar": "عند إضافة عامل حفاز يزداد ثابت الاتزان Kc للنظام.",
+        "zh": "加入催化剂后，体系的平衡常数 Kc 增大。",
+        "ku": "Dema katalîzor tê lêzêdekirin, sabîta hevsengiyê Kc ya sîstemê mezin dibe."
       },
       "whyTrapIsFalse": {
         "tr": "Katalizör ileri ve geri tepkimeyi aynı oranda hızlandırır; bu yüzden denge konumu ve Kc değişmez, yalnızca dengeye daha çabuk ulaşılır.",
@@ -121,19 +121,19 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Ein Katalysator beschleunigt Hin- und Rückreaktion um denselben Faktor; daher bleiben Gleichgewichtslage und Kc gleich, das Gleichgewicht wird nur schneller erreicht.",
         "fr": "Un catalyseur accélère les réactions directe et inverse dans le même rapport ; la position d’équilibre et Kc restent donc inchangées, l’équilibre est seulement atteint plus vite.",
         "ru": "Катализатор ускоряет прямую и обратную реакции в одинаковое число раз, поэтому положение равновесия и Kc не меняются; равновесие лишь достигается быстрее.",
-        "ar": "يسرّع العامل الحفاز التفاعلين الأمامي والعكسي بالنسبة نفسها، لذلك لا يتغير موضع الاتزان ولا Kc؛ يتم الوصول إلى الاتزان أسرع فقط.",
+        "ar": "يسرّع العامل الحفاز التفاعلين الأمامي والعكسي بالنسبة نفسها، لذلك لا يتغير موضع الاتزان ولا Kc؛ وإنما يُبلغ الاتزان في زمن أقصر فقط.",
         "zh": "催化剂使正、逆反应速率增大相同的倍数，因此平衡位置和 Kc 都不变，只是更快达到平衡。",
-        "ku": "Katalîzator reaksiyonên pêşve û paşve bi heman rêjeyê bilez dike; ji ber vê yekê cihê hevsengiyê û Kc naguherin, tenê zûtir digihîje hevsengiyê."
+        "ku": "Katalîzor reaksiyonên pêşve û paşve bi heman rêjeyê bileztir dike; ji ber vê yekê cihê hevsengiyê û Kc naguherin, tenê sîstem zûtir digihîje hevsengiyê."
       },
       "osymTip": {
         "tr": "ÖSYM kuralı: Aynı tepkime denklemi için Kc'yi değiştiren TEK faktör sıcaklıktır!",
         "en": "ÖSYM rule: for the same reaction equation, temperature is the ONLY factor that changes Kc!",
         "de": "ÖSYM-Regel: Für dieselbe Reaktionsgleichung ist die Temperatur der EINZIGE Faktor, der Kc ändert!",
         "fr": "Règle ÖSYM : pour une même équation de réaction, la température est le SEUL facteur qui modifie Kc !",
-        "ru": "Правило ÖSYM: для одного и того же уравнения реакции ЕДИНСТВЕННЫЙ фактор, изменяющий Kc, — температура!",
-        "ar": "قاعدة ÖSYM: لمعادلة التفاعل نفسها، درجة الحرارة هي العامل الوحيد الذي يغيّر Kc!",
-        "zh": "ÖSYM 规则：对同一反应方程式，唯一能改变 Kc 的因素是温度！",
-        "ku": "Qaîdeya ÖSYM: ji bo heman hevkêşeya reaksiyonê, TENÊ faktora ku Kc diguherîne germahî ye!"
+        "ru": "Запомните: для одного и того же уравнения реакции Kc изменяет ТОЛЬКО температура!",
+        "ar": "قاعدة مهمة في الامتحان: لمعادلة التفاعل نفسها، درجة الحرارة هي العامل الوحيد الذي يغيّر Kc!",
+        "zh": "考试要点：对同一反应方程式，唯一能改变 Kc 的因素是温度！",
+        "ku": "Qaîdeya ÖSYM-ê: ji bo heman hevkêşeya reaksiyonê, tenê faktora ku Kc diguherîne germahî ye!"
       }
     },
     {
@@ -143,30 +143,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The relationship between Kp and Kc is: Kp = Kc * (R*T)^Δn (Δn: sum of product coefficients in the gas phase - sum of reactant coefficients).",
         "de": "Die Beziehung zwischen Kp und Kc ist: Kp = Kc * (R*T)^Δn (Δn: Summe der Produktkoeffizienten in der Gasphase – Summe der Reaktantenkoeffizienten).",
         "fr": "La relation entre Kp et Kc est : Kp = Kc * (R*T)^Δn (Δn : somme des coefficients des produits en phase gazeuse - somme des coefficients des réactifs).",
-        "ru": "Связь между Kp и Kc следующая: Kp = Kc * (R*T)^Δn (Δn: сумма коэффициентов продуктов в газовой фазе - сумма коэффициентов реагентов).",
-        "ar": "العلاقة بين Kp وKc هي: Kp = Kc * (R*T)^Δn (Δn: مجموع معاملات الناتج في الطور الغازي - مجموع معاملات المواد المتفاعلة).",
-        "zh": "Kp与Kc的关系为：Kp = Kc * (R*T)^Δn（Δn：气态产物系数之和 - 气态反应物系数之和）。",
-        "ku": "Têkiliya di navbera Kp û Kc de ev e: Kp = Kc * (R*T)^Δn (Δn: berhevoka hevberên hilberan ên di qonaxa gazê de - berhevoka hevberên reaktant)."
+        "ru": "Kp и Kc связаны соотношением Kp = Kc * (R*T)^Δn, где Δn — сумма коэффициентов газообразных продуктов минус сумма коэффициентов газообразных реагентов.",
+        "ar": "العلاقة بين Kp وKc هي: Kp = Kc * (R*T)^Δn (Δn: مجموع معاملات النواتج الغازية - مجموع معاملات المتفاعلات الغازية).",
+        "zh": "Kp 与 Kc 的关系为：Kp = Kc * (R*T)^Δn，其中 Δn = 气态生成物化学计量数之和 - 气态反应物化学计量数之和。",
+        "ku": "Têkiliya di navbera Kp û Kc de ev e: Kp = Kc * (R*T)^Δn (Δn: koma hevberên hilberên di fazê gaz de - koma hevberên reaktantên di fazê gaz de)."
       },
       "trap": {
         "tr": "Δn hesaplanırken katı ve sıvı fazdaki maddelerin katsayıları da dahil edilir.",
         "en": "When calculating Δn, the coefficients of substances in the solid and liquid phases are also included.",
         "de": "Bei der Berechnung von Δn werden auch die Koeffizienten der Stoffe in der festen und flüssigen Phase einbezogen.",
         "fr": "Lors du calcul de Δn, les coefficients des substances en phases solide et liquide sont également inclus.",
-        "ru": "При расчете Δn учитываются также коэффициенты веществ в твердой и жидкой фазах.",
+        "ru": "При расчёте Δn учитывают также коэффициенты твёрдых и жидких веществ.",
         "ar": "عند حساب Δn، تُحتسب أيضًا معاملات المواد في الطورين الصلب والسائل.",
-        "zh": "计算Δn时，还包括固相和液相物质的系数。",
-        "ku": "Dema ku Δn tê hesabkirin, hevberên maddeyên di qonaxên hişk û şil de jî tên hesibandin."
+        "zh": "计算 Δn 时，也要计入固态和液态物质的化学计量数。",
+        "ku": "Dema Δn tê hesibandin, hevberên madeyên di fazê hişk û şile de jî tên hesibandin."
       },
       "whyTrapIsFalse": {
         "tr": "Kp yalnızca gazların kısmi basınçlarıyla yazılır. Saf katı ve sıvıların derişimi sabit kabul edildiği için Δn'ye yalnızca gazların katsayıları girer.",
         "en": "Kp is written only with the partial pressures of gases. Since the concentrations of pure solids and liquids are taken as constant, only gas coefficients enter Δn.",
         "de": "Kp wird nur mit den Partialdrücken der Gase aufgestellt. Da die Konzentrationen reiner Feststoffe und Flüssigkeiten als konstant gelten, gehen nur die Koeffizienten der Gase in Δn ein.",
         "fr": "Kp ne s’écrit qu’avec les pressions partielles des gaz. Les concentrations des solides et liquides purs étant considérées comme constantes, seuls les coefficients des gaz entrent dans Δn.",
-        "ru": "Kp записывается только через парциальные давления газов. Поскольку концентрации чистых твёрдых веществ и жидкостей считаются постоянными, в Δn входят только коэффициенты газов.",
+        "ru": "Kp выражают только через парциальные давления газов. Концентрации чистых твёрдых веществ и жидкостей считаются постоянными, поэтому в Δn входят только коэффициенты газов.",
         "ar": "تُكتب Kp بالضغوط الجزئية للغازات فقط. وبما أن تراكيز المواد الصلبة والسائلة النقية تعد ثابتة، تدخل معاملات الغازات وحدها في Δn.",
         "zh": "Kp 只用气体的分压表示。纯固体和纯液体的浓度视为常数，所以只有气体的化学计量数计入 Δn。",
-        "ku": "Kp tenê bi zextên qismî yên gazan tê nivîsandin. Ji ber ku tîrbûna hişk û şilên saf sabît tê hesibandin, tenê hevberên gazan dikevin Δn."
+        "ku": "Kp tenê bi zextên parçeyî yên gazan tê nivîsandin. Ji ber ku tîrbûna madeyên hişk û şile yên paqij sabît tê qebûlkirin, tenê hevberên gazan dikevin nav Δn."
       }
     },
     {
@@ -176,30 +176,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "If Δn = 0 in the gas phase (moles of gaseous products = moles of gaseous reactants), Kp = Kc.",
         "de": "Wenn Δn = 0 in der Gasphase (Mole gasförmiger Produkte = Mole gasförmiger Edukte), ist Kp = Kc.",
         "fr": "Si Δn = 0 dans la phase gazeuse (moles de produits gazeux = moles de réactifs gazeux), Kp = Kc.",
-        "ru": "Если Δn = 0 в газовой фазе (число молей газообразных продуктов = числу молей газообразных реагентов), то Kp = Kc.",
-        "ar": "إذا كانت Δn = 0 في الطور الغازي (مولات النواتج الغازية = مولات المتفاعلات الغازية)، Kp = Kc.",
-        "zh": "如果气相中Δn = 0（气态生成物的物质的量 = 气态反应物的物质的量），则Kp = Kc。",
-        "ku": "Ger Δn = 0 di qonaxa gazê de (molên hilberên gazî = molên reaktantên gazî), Kp = Kc."
+        "ru": "Если для газов Δn = 0 (число молей газообразных продуктов равно числу молей газообразных реагентов), то Kp = Kc.",
+        "ar": "إذا كان Δn = 0 في الطور الغازي (مولات النواتج الغازية = مولات المتفاعلات الغازية) فإن Kp = Kc.",
+        "zh": "若气态物质的 Δn = 0（气态生成物与气态反应物的化学计量数之和相等），则 Kp = Kc。",
+        "ku": "Heke di fazê gaz de Δn = 0 be (molên gazî yên hilberan = molên gazî yên reaktantan), Kp = Kc e."
       },
       "trap": {
         "tr": "Δn = 0 olduğunda Kp sıfıra eşit olur.",
         "en": "When Δn = 0, Kp equals zero.",
         "de": "Wenn Δn = 0, ist Kp gleich Null.",
         "fr": "Lorsque Δn = 0, Kp est égal à zéro.",
-        "ru": "Когда Δn = 0, Kp равен нулю.",
-        "ar": "عندما Δn = 0، Kp يساوي صفر.",
+        "ru": "При Δn = 0 константа Kp равна нулю.",
+        "ar": "عندما يكون Δn = 0 تساوي Kp صفرًا.",
         "zh": "当 Δn = 0 时，Kp 为零。",
-        "ku": "Dema Δn = 0, Kp dibe sifir."
+        "ku": "Dema Δn = 0 be, Kp dibe sifir."
       },
       "whyTrapIsFalse": {
         "tr": "Δn = 0 iken (RT)^0 = 1 olur, yani Kp = Kc'dir. Bir sayının sıfırıncı kuvveti 0 değil 1'dir.",
         "en": "When Δn = 0, (RT)^0 = 1, so Kp = Kc. Any number to the power zero equals 1, not 0.",
         "de": "Bei Δn = 0 ist (RT)^0 = 1, also Kp = Kc. Jede Zahl hoch null ergibt 1, nicht 0.",
         "fr": "Pour Δn = 0, (RT)^0 = 1, donc Kp = Kc. Tout nombre à la puissance zéro vaut 1, et non 0.",
-        "ru": "При Δn = 0 (RT)^0 = 1, то есть Kp = Kc. Любое число в нулевой степени равно 1, а не 0.",
+        "ru": "При Δn = 0 (RT)^0 = 1, т. е. Kp = Kc. Любое число в нулевой степени равно 1, а не 0.",
         "ar": "عندما Δn = 0 يكون (RT)^0 = 1، أي Kp = Kc. أي عدد مرفوع للقوة صفر يساوي 1 وليس 0.",
         "zh": "Δn = 0 时 (RT)^0 = 1，即 Kp = Kc。任何数的零次方都等于 1，而不是 0。",
-        "ku": "Dema Δn = 0 be, (RT)^0 = 1 e, yanî Kp = Kc. Hêza sifirê ya her hejmarê 1 e, ne 0."
+        "ku": "Dema Δn = 0 be, (RT)^0 = 1 e, ango Kp = Kc e. Hêza sifir a her hejmarekê ne 0, 1 e."
       }
     },
     {
@@ -209,30 +209,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Le Chatelier's Principle: When an external effect is applied to a system in equilibrium, the system shifts in the direction that will reduce this effect.",
         "de": "Das Prinzip von Le Chatelier: Wenn ein externer Effekt auf ein System im Gleichgewicht ausgeübt wird, verschiebt sich das System in die Richtung, die diesen Effekt verringert.",
         "fr": "Principe de Le Chatelier : Lorsqu'un effet externe est appliqué à un système en équilibre, le système se déplace dans la direction qui réduira cet effet.",
-        "ru": "Принцип Ле Шателье: когда к системе, находящейся в равновесии, применяется внешний эффект, система смещается в направлении, которое уменьшит этот эффект.",
-        "ar": "مبدأ لوشاتيليه: عند تطبيق تأثير خارجي على نظام في حالة توازن، فإن النظام يتحرك في الاتجاه الذي يقلل من هذا التأثير.",
-        "zh": "勒夏特列原理：当外部效应施加到平衡状态的系统时，系统会向减少该效应的方向移动。",
-        "ku": "Prensîba Le Chatelier: Dema ku bandorek derveyî li ser pergalek di nav hevsengiyê de were sepandin, pergal ber bi wê rêyê ve diçe ku dê vê bandorê kêm bike."
+        "ru": "Принцип Ле Шателье: если на систему, находящуюся в равновесии, оказать внешнее воздействие, равновесие смещается в сторону, ослабляющую это воздействие.",
+        "ar": "مبدأ لوشاتلييه: إذا أثّر عامل خارجي في نظام في حالة اتزان، ينزاح النظام في الاتجاه الذي يقلل أثر هذا العامل.",
+        "zh": "勒夏特列原理：改变影响平衡的一个条件，平衡就向能够减弱这种改变的方向移动。",
+        "ku": "Prensîba Le Chatelier: Dema bandoreke derveyî li sîstemeke di hevsengiyê de tê kirin, sîstem ber bi wî aliyî ve diçe ku vê bandorê kêm bike."
       },
       "trap": {
         "tr": "Dengedeki sisteme madde eklenirse sistem o maddenin derişimini daha da artıracak yöne kayar.",
         "en": "If a substance is added to the system in equilibrium, the system will shift in a direction that will further increase the concentration of that substance.",
         "de": "Wenn dem System im Gleichgewicht ein Stoff hinzugefügt wird, verschiebt sich das System in eine Richtung, die die Konzentration dieses Stoffes weiter erhöht.",
         "fr": "Si une substance est ajoutée au système en équilibre, le système se déplacera dans une direction qui augmentera encore la concentration de cette substance.",
-        "ru": "Если вещество добавляется в систему в равновесии, система сместится в направлении, которое еще больше увеличит концентрацию этого вещества.",
-        "ar": "إذا تمت إضافة مادة إلى النظام في حالة توازن، فإن النظام سوف يتحول في اتجاه يؤدي إلى زيادة تركيز تلك المادة.",
-        "zh": "如果将一种物质添加到处于平衡状态的系统中，系统将向进一步增加该物质浓度的方向移动。",
-        "ku": "Ger maddeyek li pergala di hevsengiyê de were zêdekirin, pergal ber bi aliyê ku tîrbûna wê maddeyê hîn zêdetir dike ve diçe."
+        "ru": "Если в равновесную систему добавить вещество, равновесие сместится в ту сторону, где концентрация этого вещества возрастёт ещё больше.",
+        "ar": "إذا أُضيفت مادة إلى نظام في حالة اتزان، ينزاح النظام في الاتجاه الذي يزيد تركيز تلك المادة أكثر.",
+        "zh": "向平衡体系中加入某种物质，平衡会向使该物质浓度进一步增大的方向移动。",
+        "ku": "Heke made li sîstemeke di hevsengiyê de were lêzêdekirin, sîstem ber bi wî aliyî ve diçe ku tîrbûna wê madeyê hîn zêdetir dike."
       },
       "whyTrapIsFalse": {
         "tr": "Le Chatelier'e göre sistem etkiyi azaltır: eklenen maddenin derişimini düşürmek için o maddeyi harcayan yöne kayar.",
         "en": "According to Le Chatelier the system counteracts the change: it shifts in the direction that consumes the added substance to lower its concentration.",
         "de": "Nach Le Chatelier wirkt das System der Störung entgegen: Es verschiebt sich in die Richtung, die den zugesetzten Stoff verbraucht und so dessen Konzentration senkt.",
         "fr": "Selon Le Chatelier, le système s’oppose à la perturbation : il se déplace dans le sens qui consomme la substance ajoutée afin d’en diminuer la concentration.",
-        "ru": "По Ле Шателье система противодействует воздействию: она смещается в сторону расходования добавленного вещества, чтобы уменьшить его концентрацию.",
+        "ru": "По принципу Ле Шателье система ослабляет воздействие: равновесие смещается в сторону расходования добавленного вещества, чтобы уменьшить его концентрацию.",
         "ar": "وفق مبدأ لوشاتلييه يعاكس النظام المؤثر: ينزاح في الاتجاه الذي يستهلك المادة المضافة ليخفض تركيزها.",
         "zh": "根据勒夏特列原理，体系会削弱外界影响：平衡向消耗所加物质的方向移动，以降低其浓度。",
-        "ku": "Li gorî Le Chatelier pergal bandorê kêm dike: ber bi aliyê ku maddeya zêdekirî dixwe ve diçe da ku tîrbûna wê kêm bike."
+        "ku": "Li gorî Le Chatelier sîstem bandorê kêm dike: ji bo kêmkirina tîrbûna madeya lêzêdekirî, ber bi wî aliyî ve diçe ku wê madeyê xerc dike."
       }
     },
     {
@@ -242,10 +242,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "In endothermic reactions (ΔH > 0), if the temperature is increased, the equilibrium shifts in favor of the products and Kc increases.",
         "de": "Bei endothermen Reaktionen (ΔH > 0) verschiebt sich das Gleichgewicht zugunsten der Produkte und Kc steigt, wenn die Temperatur erhöht wird.",
         "fr": "Dans les réactions endothermiques (ΔH > 0), si la température augmente, l'équilibre se déplace en faveur des produits et Kc augmente.",
-        "ru": "В эндотермических реакциях (ΔH > 0) при повышении температуры равновесие смещается в пользу продуктов и увеличивается Kc.",
-        "ar": "في التفاعلات الماصة للحرارة (ΔH > 0)، إذا زادت درجة الحرارة، يتحول التوازن لصالح النواتج وتزداد Kc.",
-        "zh": "在吸热反应 (ΔH > 0) 中，如果温度升高，平衡会向有利于产物的方向移动，并且 Kc 增加。",
-        "ku": "Di reaksiyonên endotermîk de (ΔH > 0), ger germahî zêde bibe, hevsengî di berjewendiya hilberan de diguhere û Kc zêde dibe."
+        "ru": "В эндотермических реакциях (ΔH > 0) при повышении температуры равновесие смещается в сторону продуктов, и Kc увеличивается.",
+        "ar": "في التفاعلات الماصة للحرارة (ΔH > 0) يؤدي رفع درجة الحرارة إلى انزياح الاتزان لصالح النواتج وزيادة Kc.",
+        "zh": "对于吸热反应(ΔH > 0)，升高温度，平衡向生成物方向移动，Kc 增大。",
+        "ku": "Di reaksiyonên endotermîk de (ΔH > 0), heke germahî were bilindkirin, hevsengî ber bi aliyê hilberan ve diçe û Kc zêde dibe."
       },
       "trap": {
         "tr": "Endotermik tepkimede sıcaklık artışı denge sabitini küçültür.",
@@ -253,19 +253,19 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Bei einer endothermen Reaktion verringert sich bei steigender Temperatur die Gleichgewichtskonstante.",
         "fr": "Dans une réaction endothermique, l’augmentation de la température diminue la constante d’équilibre.",
         "ru": "В эндотермической реакции повышение температуры уменьшает константу равновесия.",
-        "ar": "في التفاعل الماص للحرارة، تؤدي زيادة درجة الحرارة إلى تقليل ثابت التوازن.",
-        "zh": "在吸热反应中，升高温度会降低平衡常数。",
-        "ku": "Di reaksiyona endotermîk de bilindbûna germahiyê sabîta hevsengiyê kêm dike."
+        "ar": "في التفاعل الماص للحرارة، تؤدي زيادة درجة الحرارة إلى تقليل ثابت الاتزان.",
+        "zh": "对于吸热反应，升高温度会使平衡常数减小。",
+        "ku": "Di reaksiyona endotermîk de bilindbûna germahiyê sabîta hevsengiyê piçûk dike."
       },
       "whyTrapIsFalse": {
         "tr": "Endotermik tepkimede ısı girenler tarafında düşünülür; sıcaklık artınca denge ürünlere kayar, ürün derişimleri artar ve Kc büyür.",
         "en": "In an endothermic reaction heat acts like a reactant; raising the temperature shifts the equilibrium to the products, product concentrations rise and Kc increases.",
         "de": "Bei einer endothermen Reaktion wirkt Wärme wie ein Edukt; eine Temperaturerhöhung verschiebt das Gleichgewicht zu den Produkten, deren Konzentrationen steigen und Kc wird größer.",
         "fr": "Dans une réaction endothermique, la chaleur joue le rôle d’un réactif ; une hausse de température déplace l’équilibre vers les produits, leurs concentrations augmentent et Kc croît.",
-        "ru": "В эндотермической реакции теплота выступает как реагент; при нагревании равновесие смещается к продуктам, их концентрации растут и Kc увеличивается.",
+        "ru": "В эндотермической реакции теплоту записывают в левой части, как реагент; при нагревании равновесие смещается к продуктам, их концентрации растут, и Kc увеличивается.",
         "ar": "في التفاعل الماص للحرارة تُعامل الحرارة كمادة متفاعلة؛ برفع درجة الحرارة ينزاح الاتزان نحو النواتج فتزداد تراكيزها وتكبر Kc.",
         "zh": "吸热反应中热量相当于反应物；升高温度，平衡向生成物方向移动，生成物浓度增大，Kc 变大。",
-        "ku": "Di reaksiyona endotermîk de germ wekî reaktantekê tê hesibandin; dema germahî bilind dibe hevsengî ber bi hilberan ve diçe, tîrbûna hilberan zêde dibe û Kc mezin dibe."
+        "ku": "Di reaksiyona endotermîk de germ li aliyê reaktantan tê hesibandin; dema germahî bilind dibe hevsengî ber bi hilberan ve diçe, tîrbûna hilberan zêde dibe û Kc mezin dibe."
       }
     },
     {
@@ -275,30 +275,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "In exothermic reactions (ΔH < 0), if the temperature is increased, the equilibrium shifts in favor of the reactants and Kc decreases.",
         "de": "Bei exothermen Reaktionen (ΔH < 0) verschiebt sich das Gleichgewicht zugunsten der Reaktanten und Kc sinkt, wenn die Temperatur erhöht wird.",
         "fr": "Dans les réactions exothermiques (ΔH < 0), si la température augmente, l'équilibre se déplace en faveur des réactifs et Kc diminue.",
-        "ru": "В экзотермических реакциях (ΔH < 0) при повышении температуры равновесие смещается в пользу реагентов и Kc уменьшается.",
-        "ar": "في التفاعلات الطاردة للحرارة (ΔH < 0)، إذا زادت درجة الحرارة، يتحول التوازن لصالح المواد المتفاعلة وتنخفض Kc.",
-        "zh": "在放热反应 (ΔH < 0) 中，如果温度升高，平衡就会向有利于反应物的方向移动，并且 Kc 会降低。",
-        "ku": "Di reaksiyonên exotermîk de (ΔH < 0), ger germahî zêde bibe, hevsengî di berjewendiya reaktantan de diguhere û Kc kêm dibe."
+        "ru": "В экзотермических реакциях (ΔH < 0) при повышении температуры равновесие смещается в сторону реагентов, и Kc уменьшается.",
+        "ar": "في التفاعلات الطاردة للحرارة (ΔH < 0) يؤدي رفع درجة الحرارة إلى انزياح الاتزان لصالح المواد المتفاعلة ونقصان Kc.",
+        "zh": "对于放热反应(ΔH < 0)，升高温度，平衡向反应物方向移动，Kc 减小。",
+        "ku": "Di reaksiyonên ekzotermîk de (ΔH < 0), heke germahî were bilindkirin, hevsengî ber bi aliyê reaktantan ve diçe û Kc kêm dibe."
       },
       "trap": {
         "tr": "Ekzotermik bir denge tepkimesinde sıcaklık artırılırsa denge ürünler yönüne kayar.",
         "en": "In an exothermic equilibrium reaction, raising the temperature shifts the equilibrium toward the products.",
         "de": "Bei einer exothermen Gleichgewichtsreaktion verschiebt eine Temperaturerhöhung das Gleichgewicht zu den Produkten.",
         "fr": "Dans une réaction d'équilibre exothermique, une élévation de température déplace l'équilibre vers les produits.",
-        "ru": "В экзотермической равновесной реакции повышение температуры смещает равновесие в сторону продуктов.",
+        "ru": "В экзотермической обратимой реакции повышение температуры смещает равновесие в сторону продуктов.",
         "ar": "في تفاعل اتزان طارد للحرارة، يؤدي رفع درجة الحرارة إلى إزاحة الاتزان نحو النواتج.",
         "zh": "在放热的平衡反应中，升高温度使平衡向生成物方向移动。",
-        "ku": "Di reaksiyoneke hevsengiyê ya ekzotermîk de, bilindkirina germahiyê hevsengiyê ber bi hilberan ve dilivîne."
+        "ku": "Di reaksiyoneke hevsengiyê ya ekzotermîk de, heke germahî were bilindkirin, hevsengî ber bi aliyê hilberan ve diçe."
       },
       "whyTrapIsFalse": {
         "tr": "Ekzotermik tepkimede ısı ürün tarafındadır; sıcaklık artışı dengeyi girenlere kaydırır, bu yüzden ürün miktarı ve Kc azalır.",
         "en": "In an exothermic reaction heat is on the product side; raising the temperature shifts the equilibrium to the reactants, so the amount of product and Kc decrease.",
         "de": "Bei einer exothermen Reaktion steht die Wärme auf der Produktseite; eine Temperaturerhöhung verschiebt das Gleichgewicht zu den Edukten, daher nehmen Produktmenge und Kc ab.",
         "fr": "Dans une réaction exothermique, la chaleur est du côté des produits ; une hausse de température déplace l’équilibre vers les réactifs, donc la quantité de produit et Kc diminuent.",
-        "ru": "В экзотермической реакции теплота находится на стороне продуктов; нагревание смещает равновесие к реагентам, поэтому количество продукта и Kc уменьшаются.",
+        "ru": "В экзотермической реакции теплота записывается в правой части, среди продуктов; нагревание смещает равновесие к реагентам, поэтому количество продукта и Kc уменьшаются.",
         "ar": "في التفاعل الطارد للحرارة تكون الحرارة في جهة النواتج؛ رفع درجة الحرارة يزيح الاتزان نحو المتفاعلات، فتقل كمية الناتج وتصغر Kc.",
         "zh": "放热反应中热量在生成物一侧；升高温度使平衡向反应物方向移动，所以生成物的量和 Kc 都减小。",
-        "ku": "Di reaksiyona ekzotermîk de germ li aliyê hilberan e; bilindbûna germahiyê hevsengiyê ber bi reaktantan ve dibe, ji ber vê yekê mîqdara hilberê û Kc kêm dibin."
+        "ku": "Di reaksiyona ekzotermîk de germ li aliyê hilberan e; bilindbûna germahiyê hevsengiyê ber bi reaktantan ve dibe, ji ber vê yekê mîqdara hilberan û Kc kêm dibin."
       }
     },
     {
@@ -311,7 +311,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Катализатор увеличивает скорости прямой и обратной реакций в одинаковое число раз; он не нарушает равновесие, а лишь сокращает время его достижения.",
         "ar": "يزيد العامل الحفاز سرعتي التفاعلين الأمامي والعكسي بالنسبة نفسها؛ لا يخل بالاتزان، بل يقصّر فقط زمن الوصول إليه.",
         "zh": "催化剂使正、逆反应速率增大相同的倍数；它不破坏平衡，只缩短达到平衡所需的时间。",
-        "ku": "Katalîzator lezên reaksiyonên pêşve û paşve bi heman rêjeyê zêde dike; hevsengiyê xera nake, tenê dema gihîştina hevsengiyê kurt dike."
+        "ku": "Katalîzor leza reaksiyonên pêşve û paşve bi heman rêjeyê zêde dike; hevsengiyê xera nake, tenê dema gihîştina hevsengiyê kurt dike."
       },
       "trap": {
         "tr": "Katalizör, dengede oluşan ürün miktarını (denge verimini) artırır.",
@@ -321,7 +321,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Катализатор увеличивает количество продукта в состоянии равновесия (равновесный выход).",
         "ar": "يزيد العامل الحفاز كمية الناتج الموجودة عند الاتزان (مردود الاتزان).",
         "zh": "催化剂能增加平衡时生成物的量（提高平衡产率）。",
-        "ku": "Katalîzator mîqdara hilberê ya di hevsengiyê de (berhema hevsengiyê) zêde dike."
+        "ku": "Katalîzor mîqdara hilbera ku di hevsengiyê de çêdibe (berhema hevsengiyê) zêde dike."
       },
       "whyTrapIsFalse": {
         "tr": "Katalizör denge konumunu değiştirmez. Ürüne daha kısa sürede ulaşılmasını sağlar, ancak dengede oluşan ürün miktarı (denge verimi) aynı kalır.",
@@ -331,7 +331,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Катализатор не изменяет положение равновесия. Продукт образуется быстрее, но его количество в равновесии (равновесный выход) остаётся прежним.",
         "ar": "لا يغيّر العامل الحفاز موضع الاتزان. فهو يجعل الناتج يتكوّن في وقت أقصر، لكن كمية الناتج عند الاتزان (مردود الاتزان) تبقى كما هي.",
         "zh": "催化剂不改变平衡位置。它使生成物更快生成，但平衡时生成物的量（平衡产率）保持不变。",
-        "ku": "Katalîzator cihê hevsengiyê naguherîne. Ew dihêle hilber zûtir çêbibe, lê mîqdara hilberê di hevsengiyê de (berhema hevsengiyê) wekî xwe dimîne."
+        "ku": "Katalîzor cihê hevsengiyê naguherîne. Ew dike ku hilber di demeke kurttir de bê bidestxistin, lê mîqdara hilbera ku di hevsengiyê de çêdibe (berhema hevsengiyê) wekî xwe dimîne."
       }
     },
     {
@@ -341,30 +341,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "In an equilibrium whose two sides have different numbers of gas moles, decreasing the volume (increasing the pressure) shifts the system toward the side with fewer gas moles.",
         "de": "In einem Gleichgewicht mit unterschiedlicher Anzahl von Gasmolen auf beiden Seiten verschiebt eine Volumenverkleinerung (Druckerhöhung) das System zur Seite mit weniger Gasmolen.",
         "fr": "Dans un équilibre dont les deux membres ont des nombres de moles de gaz différents, une diminution du volume (hausse de pression) déplace le système vers le côté qui compte le moins de moles de gaz.",
-        "ru": "В равновесии с разным числом молей газа в левой и правой частях уменьшение объёма (повышение давления) смещает систему в сторону меньшего числа молей газа.",
+        "ru": "Если число молей газов в левой и правой частях уравнения различно, то при уменьшении объёма (повышении давления) равновесие смещается в сторону меньшего числа молей газа.",
         "ar": "في اتزان يختلف فيه عدد مولات الغاز بين الطرفين، يؤدي تصغير الحجم (زيادة الضغط) إلى انزياح النظام نحو الجهة الأقل في مولات الغاز.",
         "zh": "对于两边气体分子数不同的平衡，减小体积（增大压强）时，平衡向气体分子数较少的一侧移动。",
-        "ku": "Di hevsengiyeke ku hejmara molên gazê yên her du aliyan cuda ye, ger qebare were kêmkirin (zext were zêdekirin) pergal ber bi aliyê ku molên gazê kêmtir in ve diçe."
+        "ku": "Di hevsengiyeke ku hejmara molên gazê li her du aliyan cuda ye, heke qebare were kêmkirin (zext were zêdekirin), sîstem ber bi aliyê ku hejmara molên gazê kêmtir e ve diçe."
       },
       "trap": {
         "tr": "Hacim küçültüldüğünde sistem gaz mol sayısının çok olduğu yöne kayar.",
         "en": "When the volume is reduced, the system shifts to the direction where the number of gas moles is higher.",
         "de": "Wenn das Volumen verringert wird, verschiebt sich das System in die Richtung, in der die Anzahl der Gasmole höher ist.",
         "fr": "Lorsque le volume diminue, le système se déplace vers la direction où le nombre de moles de gaz est plus élevé.",
-        "ru": "При уменьшении объема система смещается в ту сторону, где количество молей газа больше.",
-        "ar": "عندما ينخفض الحجم، ينتقل النظام إلى الاتجاه الذي يكون فيه عدد مولات الغاز أعلى.",
-        "zh": "当体积减小时，系统向气体摩尔数较高的方向移动。",
-        "ku": "Dema qebare tê kêmkirin, pergal ber bi aliyê ku molên gazê zêdetir in ve diçe."
+        "ru": "При уменьшении объёма равновесие смещается в сторону большего числа молей газа.",
+        "ar": "عند تصغير الحجم ينزاح النظام نحو الجهة التي يكون فيها عدد مولات الغاز أكبر.",
+        "zh": "减小体积时，平衡向气体分子数多的方向移动。",
+        "ku": "Dema qebare tê kêmkirin, sîstem ber bi aliyê ku hejmara molên gazê zêdetir e ve diçe."
       },
       "whyTrapIsFalse": {
         "tr": "Hacim küçülünce toplam basınç artar; sistem bu artışı azaltmak için toplam gaz mol sayısını düşüren, yani gaz molü az olan tarafa kayar.",
         "en": "When the volume decreases the total pressure rises; to reduce this rise the system shifts toward the side that lowers the total number of gas moles, i.e. the side with fewer gas moles.",
         "de": "Bei Volumenverkleinerung steigt der Gesamtdruck; um diesen Anstieg zu verringern, verschiebt sich das System zu der Seite, die die Gesamtzahl der Gasmole senkt, also zur Seite mit weniger Gasmolen.",
         "fr": "Quand le volume diminue, la pression totale augmente ; pour réduire cette hausse, le système se déplace vers le côté qui diminue le nombre total de moles de gaz, c’est-à-dire celui qui en compte le moins.",
-        "ru": "При уменьшении объёма общее давление растёт; чтобы ослабить этот рост, система смещается в сторону уменьшения общего числа молей газа, то есть туда, где молей газа меньше.",
+        "ru": "При уменьшении объёма общее давление растёт; чтобы ослабить этот рост, равновесие смещается в сторону уменьшения общего числа молей газа, т. е. туда, где молей газа меньше.",
         "ar": "عند تصغير الحجم يزداد الضغط الكلي؛ وليقلل النظام هذه الزيادة ينزاح نحو الجهة التي تخفض العدد الكلي لمولات الغاز، أي الجهة الأقل في مولات الغاز.",
         "zh": "体积减小时总压增大；为削弱这一增大，体系向使气体总物质的量减少的方向，即气体分子数较少的一侧移动。",
-        "ku": "Dema qebare kêm dibe zexta giştî zêde dibe; ji bo kêmkirina vê zêdebûnê pergal ber bi aliyê ku hejmara giştî ya molên gazê kêm dike, yanî aliyê ku molên gazê kêmtir in, ve diçe."
+        "ku": "Dema qebare kêm dibe zexta giştî zêde dibe; ji bo kêmkirina vê zêdebûnê sîstem ber bi aliyê ku hejmara giştî ya molên gazê kêm dike, ango ber bi aliyê ku molên gazê kêmtir in, ve diçe."
       }
     },
     {
@@ -374,30 +374,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "If the reaction quotient Qc = Kc, the system is at equilibrium; if Qc < Kc, it shifts toward the products; if Qc > Kc, it shifts toward the reactants.",
         "de": "Ist der Reaktionsquotient Qc = Kc, befindet sich das System im Gleichgewicht; ist Qc < Kc, verschiebt es sich zu den Produkten; ist Qc > Kc, verschiebt es sich zu den Edukten.",
         "fr": "Si le quotient de réaction Qc = Kc, le système est à l'équilibre ; si Qc < Kc, il évolue vers les produits ; si Qc > Kc, il évolue vers les réactifs.",
-        "ru": "Если коэффициент реакции Qc = Kc, система находится в равновесии; если Qc < Kc, она смещается в сторону продуктов; если Qc > Kc — в сторону реагентов.",
+        "ru": "Если коэффициент реакции Qc равен Kc, система находится в равновесии; если Qc < Kc, реакция идёт в сторону продуктов; если Qc > Kc — в сторону реагентов.",
         "ar": "إذا كان حاصل التفاعل Qc = Kc فالنظام في حالة اتزان؛ وإذا كان Qc < Kc يتجه نحو النواتج؛ وإذا كان Qc > Kc يتجه نحو المتفاعلات.",
-        "zh": "若反应商Qc = Kc，体系处于平衡；若Qc < Kc，平衡向产物方向移动；若Qc > Kc，向反应物方向移动。",
-        "ku": "Ger kesra hevsengiyê Qc = Kc be, pergal di hevsengiyê de ye; ger Qc < Kc be, ber bi hilberan ve diçe; ger Qc > Kc be, ber bi reaktantan ve diçe."
+        "zh": "若浓度商 Qc = Kc，体系处于平衡状态；若 Qc < Kc，反应向正反应方向进行；若 Qc > Kc，反应向逆反应方向进行。",
+        "ku": "Heke kerta hevsengiyê Qc = Kc be, sîstem di hevsengiyê de ye; heke Qc < Kc be, ber bi hilberan ve diçe; heke Qc > Kc be, ber bi reaktantan ve diçe."
       },
       "trap": {
         "tr": "Qc > Kc olduğunda sistem dengededir.",
         "en": "When Qc > Kc, the system is in equilibrium.",
         "de": "Wenn Qc > Kc, befindet sich das System im Gleichgewicht.",
         "fr": "Lorsque Qc > Kc, le système est en équilibre.",
-        "ru": "Когда Qc > Kc, система находится в равновесии.",
-        "ar": "عندما تكون Qc > Kc، يكون النظام في حالة توازن.",
-        "zh": "当Qc>Kc时，系统处于平衡状态。",
-        "ku": "Dema ku Qc > Kc, sîstem di hevsengiyê de ye."
+        "ru": "Если Qc > Kc, система находится в равновесии.",
+        "ar": "عندما يكون Qc > Kc يكون النظام في حالة اتزان.",
+        "zh": "当 Qc > Kc 时，体系处于平衡状态。",
+        "ku": "Dema Qc > Kc be, sîstem di hevsengiyê de ye."
       },
       "whyTrapIsFalse": {
         "tr": "Qc > Kc ise ürün derişimleri denge değerlerinden fazladır; sistem dengede değildir ve Qc = Kc olana kadar girenler yönüne ilerler.",
         "en": "If Qc > Kc, the product concentrations exceed their equilibrium values; the system is not at equilibrium and proceeds toward the reactants until Qc = Kc.",
         "de": "Ist Qc > Kc, liegen die Produktkonzentrationen über ihren Gleichgewichtswerten; das System ist nicht im Gleichgewicht und reagiert in Richtung der Edukte, bis Qc = Kc gilt.",
         "fr": "Si Qc > Kc, les concentrations des produits dépassent leurs valeurs d’équilibre ; le système n’est pas à l’équilibre et évolue vers les réactifs jusqu’à ce que Qc = Kc.",
-        "ru": "Если Qc > Kc, концентрации продуктов выше равновесных; система не находится в равновесии и смещается к реагентам, пока не станет Qc = Kc.",
+        "ru": "Если Qc > Kc, концентрации продуктов выше равновесных; система не находится в равновесии, и реакция идёт в сторону реагентов, пока не станет Qc = Kc.",
         "ar": "إذا كان Qc > Kc فإن تراكيز النواتج أكبر من قيمها عند الاتزان؛ النظام ليس في حالة اتزان ويتقدم نحو المتفاعلات حتى يصبح Qc = Kc.",
         "zh": "若 Qc > Kc，生成物浓度高于平衡值；体系未达平衡，反应向逆反应方向进行，直到 Qc = Kc。",
-        "ku": "Ger Qc > Kc be, tîrbûna hilberan ji nirxên hevsengiyê zêdetir e; pergal ne di hevsengiyê de ye û ber bi reaktantan ve diçe heta ku Qc = Kc bibe."
+        "ku": "Heke Qc > Kc be, tîrbûnên hilberan ji nirxên hevsengiyê zêdetir in; sîstem ne di hevsengiyê de ye û heta ku Qc = Kc bibe ber bi aliyê reaktantan ve diçe."
       }
     },
     {
@@ -407,30 +407,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Only gases and substances dissolved in water (aq) are written in the equilibrium expression; pure solids and liquids are not written.",
         "de": "In den Gleichgewichtsausdruck werden nur Gase und in Wasser gelöste Stoffe (aq) aufgenommen; reine Feststoffe und Flüssigkeiten werden nicht geschrieben.",
         "fr": "Seuls les gaz et les substances dissoutes dans l'eau (aq) figurent dans l'expression d'équilibre ; les solides et liquides purs n'y sont pas écrits.",
-        "ru": "В выражение константы равновесия записываются только газы и вещества, растворённые в воде (водн.); чистые твёрдые вещества и жидкости не записываются.",
+        "ru": "В выражение константы равновесия входят только газы и растворённые в воде вещества (р-р); чистые твёрдые вещества и жидкости в него не записывают.",
         "ar": "لا يُكتب في تعبير الاتزان إلا الغازات والمواد المذابة في الماء (aq)؛ أما المواد الصلبة والسوائل النقية فلا تُكتب.",
-        "zh": "平衡表达式中只写气体和溶于水的物质（aq）；纯固体和纯液体不写入。",
-        "ku": "Di têkiliya hevsengiyê de tenê gaz û maddeyên di avê de helandî (aq) tên nivîsandin; hişk û şilên saf nayên nivîsandin."
+        "zh": "平衡常数表达式中只写入气体和水溶液中溶质(aq)的浓度；纯固体和纯液体不写入。",
+        "ku": "Di hevkêşeya hevsengiyê de tenê gaz û madeyên di avê de helbûyî (aq) tên nivîsandin; madeyên hişk û şile yên paqij nayên nivîsandin."
       },
       "trap": {
         "tr": "Saf katıların derişimleri denge kesrinde paydada yer alır.",
         "en": "The concentrations of pure solids appear in the denominator of the equilibrium expression.",
         "de": "Die Konzentrationen reiner Feststoffe stehen im Nenner des Gleichgewichtsausdrucks.",
         "fr": "Les concentrations des solides purs figurent au dénominateur de l'expression d'équilibre.",
-        "ru": "Концентрации чистых твёрдых веществ входят в знаменатель выражения константы равновесия.",
+        "ru": "Концентрации чистых твёрдых веществ записывают в знаменатель выражения константы равновесия.",
         "ar": "تظهر تراكيز المواد الصلبة النقية في مقام تعبير الاتزان.",
-        "zh": "纯固体的浓度出现在平衡表达式的分母中。",
-        "ku": "Tîrbûna hişkên saf di kesra hevsengiyê de li jêrê (di parvekerê de) cih digire."
+        "zh": "纯固体的浓度写在浓度商表达式的分母中。",
+        "ku": "Tîrbûnên madeyên hişk ên paqij di kerta hevsengiyê de li beşa jêrîn cih digirin."
       },
       "whyTrapIsFalse": {
         "tr": "Saf katı ve sıvıların derişimi miktarlarından bağımsız ve sabittir; bu yüzden denge ifadesinin ne pay ne de payda kısmına yazılır, sabit değerleri Kc'nin içinde kalır.",
         "en": "The concentration of a pure solid or liquid is constant and independent of its amount; so it is written neither in the numerator nor in the denominator of the expression — its constant value is absorbed into Kc.",
         "de": "Die Konzentration eines reinen Feststoffs oder einer reinen Flüssigkeit ist konstant und mengenunabhängig; sie steht daher weder im Zähler noch im Nenner, ihr konstanter Wert steckt in Kc.",
         "fr": "La concentration d’un solide ou d’un liquide pur est constante et indépendante de sa quantité ; elle n’apparaît donc ni au numérateur ni au dénominateur, sa valeur constante est incluse dans Kc.",
-        "ru": "Концентрация чистого твёрдого вещества или жидкости постоянна и не зависит от его количества; поэтому она не записывается ни в числитель, ни в знаменатель — её постоянное значение входит в Kc.",
+        "ru": "Концентрация чистого твёрдого вещества или жидкости постоянна и не зависит от его количества; поэтому её не записывают ни в числитель, ни в знаменатель — это постоянное значение уже входит в Kc.",
         "ar": "تركيز المادة الصلبة أو السائلة النقية ثابت ولا يعتمد على كميتها؛ لذلك لا يُكتب في البسط ولا في المقام، وتُدمج قيمته الثابتة في Kc.",
         "zh": "纯固体和纯液体的浓度是常数，与其用量无关，因此既不写在分子中也不写在分母中，其常数值已并入 Kc。",
-        "ku": "Tîrbûna hişk an şileke saf sabît e û bi mîqdara wê ve girêdayî nîne; ji ber vê yekê ne di jorê (parvekirî) û ne jî di jêrê (parveker) de tê nivîsandin, nirxa wê ya sabît dikeve nav Kc."
+        "ku": "Tîrbûna madeyên hişk û şile yên paqij bi mîqdara wan ve ne girêdayî ye û sabît e; ji ber vê yekê ne li beşa jorîn ne jî li beşa jêrîn a hevkêşeya hevsengiyê tê nivîsandin, nirxa wê ya sabît di nav Kc de dimîne."
       }
     },
     {
@@ -440,30 +440,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "If the reaction is reversed, the new equilibrium constant is Kc_new = 1 / Kc.",
         "de": "Wird die Reaktion umgekehrt geschrieben, ist die neue Gleichgewichtskonstante Kc_new = 1 / Kc.",
         "fr": "Si la réaction est inversée, la nouvelle constante d'équilibre est Kc_new = 1 / Kc.",
-        "ru": "Если реакцию записать в обратном направлении, новая константа равновесия Kc_new = 1/Kc.",
-        "ar": "إذا تم عكس التفاعل، فإن ثابت التوازن الجديد هو Kc_new = 1 / Kc.",
-        "zh": "如果反应逆转，则新的平衡常数为 Kc_new = 1 / Kc。",
-        "ku": "Ger reaksiyon berevajî were nivîsandin, sabîta hevsengiyê ya nû Kc_new = 1 / Kc ye."
+        "ru": "Если записать реакцию в обратном направлении, новая константа равновесия равна 1/Kc.",
+        "ar": "إذا عُكس التفاعل يصبح ثابت الاتزان الجديد Kc_new = 1 / Kc.",
+        "zh": "若将反应逆向书写，新的平衡常数为原平衡常数的倒数，即 1 / Kc。",
+        "ku": "Heke reaksiyon berevajî were nivîsandin, sabîta hevsengiyê ya nû Kc_nû = 1 / Kc dibe."
       },
       "trap": {
         "tr": "Tepkime ters çevrildiğinde Kc'nin işareti eksi olur.",
         "en": "When the reaction is reversed, the sign of Kc becomes negative.",
         "de": "Wenn die Reaktion umgekehrt wird, wird das Vorzeichen von Kc negativ.",
         "fr": "Lorsque la réaction s’inverse, le signe de Kc devient négatif.",
-        "ru": "При обратном ходе реакции знак Kc становится отрицательным.",
-        "ar": "وعندما يتم عكس التفاعل تصبح إشارة Kc سالبة.",
-        "zh": "当反应逆转时，Kc 的符号变为负值。",
-        "ku": "Dema reaksiyon berevajî tê nivîsandin, nîşana Kc neyînî dibe."
+        "ru": "Если записать реакцию в обратном направлении, константа Kc становится отрицательной.",
+        "ar": "عند عكس التفاعل تصبح إشارة Kc سالبة.",
+        "zh": "将反应逆向书写时，Kc 变为负值。",
+        "ku": "Dema reaksiyon berevajî tê nivîsandin, nîşana Kc dibe kêmasî (neyînî)."
       },
       "whyTrapIsFalse": {
         "tr": "Tepkime ters çevrilince denge ifadesinde pay ile payda yer değiştirir, bu yüzden Kc'nin tersi (1/Kc) alınır. Denge sabiti her zaman pozitiftir, eksi işaret almaz.",
         "en": "Reversing a reaction swaps the numerator and denominator of the expression, so the reciprocal 1/Kc is taken. An equilibrium constant is always positive; it never becomes negative.",
         "de": "Beim Umkehren der Reaktion tauschen Zähler und Nenner die Plätze, deshalb nimmt man den Kehrwert 1/Kc. Eine Gleichgewichtskonstante ist immer positiv und wird nie negativ.",
         "fr": "Inverser la réaction échange le numérateur et le dénominateur, on prend donc l’inverse 1/Kc. Une constante d’équilibre est toujours positive ; elle ne devient jamais négative.",
-        "ru": "При обращении реакции числитель и знаменатель меняются местами, поэтому берут обратную величину 1/Kc. Константа равновесия всегда положительна и не становится отрицательной.",
+        "ru": "При записи реакции в обратном направлении числитель и знаменатель меняются местами, поэтому берут обратную величину 1/Kc. Константа равновесия всегда положительна и не бывает отрицательной.",
         "ar": "عند عكس التفاعل يتبادل البسط والمقام موقعيهما، لذلك يؤخذ المقلوب 1/Kc. ثابت الاتزان موجب دائمًا ولا يصبح سالبًا.",
         "zh": "反应逆写时平衡表达式的分子与分母互换，所以取倒数 1/Kc。平衡常数总是正值，不会变成负数。",
-        "ku": "Dema reaksiyon berevajî tê nivîsandin, jor û jêrê îfadeyê cihê xwe diguherin, ji ber vê yekê berevajiya wê 1/Kc tê girtin. Sabîta hevsengiyê her tim erênî ye, qet neyînî nabe."
+        "ku": "Dema reaksiyon berevajî tê nivîsandin, di hevkêşeya hevsengiyê de beşa jorîn û beşa jêrîn cihê xwe diguherin, ji ber vê yekê berevajiya Kc (1/Kc) tê girtin. Sabîta hevsengiyê her tim erênî ye, nîşana kêmasiyê nagire."
       }
     },
     {
@@ -473,30 +473,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "If the reaction is multiplied by the coefficient n, the new equilibrium constant becomes Kc_new = (Kc)^n.",
         "de": "Wenn die Reaktion mit dem Koeffizienten n multipliziert wird, wird die neue Gleichgewichtskonstante zu Kc_new = (Kc)^n.",
         "fr": "Si la réaction est multipliée par le coefficient n, la nouvelle constante d'équilibre devient Kc_new = (Kc)^n.",
-        "ru": "Если реакция умножается на коэффициент n, новая константа равновесия становится Kc_new = (Kc)^n.",
-        "ar": "إذا تم ضرب التفاعل في المعامل n، يصبح ثابت التوازن الجديد Kc_new = (Kc)^n.",
-        "zh": "如果反应乘以系数n，则新的平衡常数变为Kc_new = (Kc)^n。",
-        "ku": "Ger reaksiyon bi hejmara n were carkirin, sabîta hevsengiyê ya nû dibe Kc_new = (Kc)^n."
+        "ru": "Если все коэффициенты уравнения умножить на n, новая константа равновесия равна (Kc)^n.",
+        "ar": "إذا ضُرب التفاعل في المعامل n يصبح ثابت الاتزان الجديد Kc_new = (Kc)^n.",
+        "zh": "若将反应式的化学计量数都乘以 n，新的平衡常数为 (Kc)^n。",
+        "ku": "Heke reaksiyon bi hevberê n were pirkirin, sabîta hevsengiyê ya nû Kc_nû = (Kc)^n dibe."
       },
       "trap": {
         "tr": "Tepkime 2 ile çarpılırsa Kc de 2 ile çarpılır.",
         "en": "If the reaction is multiplied by 2, Kc is also multiplied by 2.",
         "de": "Wenn die Reaktion mit 2 multipliziert wird, wird auch Kc mit 2 multipliziert.",
         "fr": "Si la réaction est multipliée par 2, Kc est également multiplié par 2.",
-        "ru": "Если реакцию умножить на 2, Kc также умножится на 2.",
-        "ar": "إذا تم ضرب التفاعل بـ 2، يتم ضرب Kc أيضًا بـ 2.",
-        "zh": "如果反应乘以 2，则 Kc 也乘以 2。",
-        "ku": "Ger reaksiyon bi 2 were carkirin, Kc jî bi 2 tê carkirin."
+        "ru": "Если коэффициенты уравнения умножить на 2, Kc тоже умножится на 2.",
+        "ar": "إذا ضُرب التفاعل في 2 تُضرب Kc أيضًا في 2.",
+        "zh": "若将反应式乘以 2，Kc 也乘以 2。",
+        "ku": "Heke reaksiyon bi 2 were pirkirin, Kc jî bi 2 tê pirkirin."
       },
       "whyTrapIsFalse": {
         "tr": "Katsayılar denge ifadesinde üs olarak yer alır; katsayıları 2 katına çıkarmak her derişimin karesini almak demektir. Bu yüzden Kc 2 ile çarpılmaz, karesi alınır.",
         "en": "Coefficients appear as exponents in the equilibrium expression; doubling them squares every concentration term. So Kc is not multiplied by 2 — it is squared.",
         "de": "Koeffizienten erscheinen als Exponenten im Gleichgewichtsausdruck; ihre Verdopplung quadriert jeden Konzentrationsterm. Daher wird Kc nicht mit 2 multipliziert, sondern quadriert.",
         "fr": "Les coefficients apparaissent comme exposants dans l’expression d’équilibre ; les doubler élève chaque concentration au carré. Kc n’est donc pas multipliée par 2, elle est élevée au carré.",
-        "ru": "Коэффициенты входят в выражение константы как показатели степени; их удвоение возводит каждую концентрацию в квадрат. Поэтому Kc не умножается на 2, а возводится в квадрат.",
+        "ru": "Коэффициенты входят в выражение константы как показатели степени; их удвоение означает возведение каждой концентрации в квадрат. Поэтому Kc не умножается на 2, а возводится в квадрат.",
         "ar": "تظهر المعاملات كأسس في تعبير الاتزان؛ ومضاعفتها تعني تربيع كل حد تركيز. لذلك لا تُضرب Kc في 2 بل تُربَّع.",
         "zh": "化学计量数在平衡表达式中作为指数出现；计量数加倍就是把每个浓度项平方，所以 Kc 不是乘以 2，而是平方。",
-        "ku": "Hevber di îfadeya hevsengiyê de wekî hêz (eksponent) cih digirin; ducarkirina wan tê wateya çargoşekirina her tîrbûnê. Ji ber vê yekê Kc bi 2 nayê carkirin, çargoşe dibe."
+        "ku": "Hevber di hevkêşeya hevsengiyê de wekî hêz cih digirin; du qat kirina hevberan tê wateya duhêzkirina her tîrbûnê. Ji ber vê yekê Kc bi 2 nayê pirkirin, duhêza wê tê girtin."
       }
     },
     {
@@ -506,30 +506,30 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "If the reactions are summed, the equilibrium constants are multiplied together (Kc_net = Kc1 * Kc2).",
         "de": "Wenn die Reaktionen summiert werden, werden die Gleichgewichtskonstanten miteinander multipliziert (Kc_net = Kc1 * Kc2).",
         "fr": "Si les réactions sont additionnées, les constantes d'équilibre sont multipliées entre elles (Kc_net = Kc1 * Kc2).",
-        "ru": "Если реакции суммируются, константы равновесия перемножаются (Kc_net = Kc1 * Kc2).",
-        "ar": "إذا تم جمع التفاعلات، يتم ضرب ثوابت التوازن معًا (Kc_net = Kc1 * Kc2).",
-        "zh": "如果将反应相加，则平衡常数相乘 (Kc_net = Kc1 * Kc2)。",
-        "ku": "Ger reaksiyon bên berhevkirin, sabîtên hevsengiyê bi hev re tên carkirin (Kc_net = Kc1 * Kc2)."
+        "ru": "При сложении уравнений реакций их константы равновесия перемножаются (Kc = Kc1 * Kc2).",
+        "ar": "عند جمع التفاعلات تُضرب ثوابت اتزانها بعضها في بعض (Kc_net = Kc1 * Kc2).",
+        "zh": "若将几个反应相加，总反应的平衡常数等于各反应平衡常数之积(Kc总 = Kc1 * Kc2)。",
+        "ku": "Heke reaksiyon werin berhevkirin, sabîtên hevsengiyê bi hev re tên pirkirin (Kc_net = Kc1 * Kc2)."
       },
       "trap": {
         "tr": "Tepkimeler toplandığında denge sabitleri de birbiriyle toplanır.",
         "en": "When reactions are added together, the equilibrium constants are also added together.",
         "de": "Bei der Addition von Reaktionen addieren sich auch die Gleichgewichtskonstanten.",
         "fr": "Lorsque les réactions sont additionnées, les constantes d’équilibre sont également additionnées.",
-        "ru": "При сложении реакций константы равновесия также складываются.",
-        "ar": "عند إضافة التفاعلات معًا، يتم أيضًا إضافة ثوابت التوازن معًا.",
-        "zh": "当反应加在一起时，平衡常数也加在一起。",
-        "ku": "Dema ku reaksîyon li hev tên zêdekirin, sabitên hevsengiyê jî li hev tên zêdekirin."
+        "ru": "При сложении уравнений реакций их константы равновесия тоже складываются.",
+        "ar": "عند جمع التفاعلات تُجمع ثوابت اتزانها أيضًا.",
+        "zh": "将反应相加时，平衡常数也相加。",
+        "ku": "Dema reaksiyon tên berhevkirin, sabîtên hevsengiyê jî bi hev re tên berhevkirin."
       },
       "whyTrapIsFalse": {
         "tr": "Tepkimeler toplanınca net denge ifadesi, tek tek denge ifadelerinin çarpımına eşit olur. Bu yüzden denge sabitleri toplanmaz, çarpılır.",
         "en": "When reactions are added, the overall equilibrium expression equals the product of the individual expressions. Therefore the constants are multiplied, not added.",
         "de": "Werden Reaktionen addiert, ist der Gesamtausdruck gleich dem Produkt der Einzelausdrücke. Deshalb werden die Konstanten multipliziert, nicht addiert.",
         "fr": "Quand on additionne des réactions, l’expression d’équilibre globale est égale au produit des expressions individuelles. Les constantes se multiplient donc, elles ne s’additionnent pas.",
-        "ru": "При сложении реакций итоговое выражение константы равно произведению отдельных выражений. Поэтому константы перемножаются, а не складываются.",
+        "ru": "При сложении уравнений выражение константы суммарной реакции равно произведению выражений констант отдельных реакций. Поэтому константы не складываются, а перемножаются.",
         "ar": "عند جمع التفاعلات يكون تعبير الاتزان الكلي مساويًا لحاصل ضرب التعابير المنفردة. لذلك تُضرب الثوابت ولا تُجمع.",
         "zh": "反应相加时，总反应的平衡表达式等于各分步表达式的乘积，因此平衡常数相乘而不是相加。",
-        "ku": "Dema reaksiyon tên berhevkirin, îfadeya hevsengiyê ya giştî bi hevdana îfadeyên yek bi yek re wekhev e. Ji ber vê yekê sabît tên carkirin, ne berhevkirin."
+        "ku": "Dema reaksiyon tên berhevkirin, hevkêşeya hevsengiyê ya net wekhevî hasila hevkêşeyên hevsengiyê yên yek bi yek e. Ji ber vê yekê sabîtên hevsengiyê nayên berhevkirin, tên pirkirin."
       }
     },
     {
@@ -539,10 +539,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The minimum energy tendency is towards the side where there is heat, the maximum disorder tendency is towards the side where the number of moles of gas is high.",
         "de": "Die minimale Energietendenz geht zu der Seite, wo Wärme vorhanden ist, die maximale Unordnungstendenz geht zu der Seite, wo die Anzahl der Gasmole hoch ist.",
         "fr": "La tendance minimale de l'énergie est vers le côté où il y a de la chaleur, la tendance maximale du désordre est vers le côté où le nombre de moles de gaz est élevé.",
-        "ru": "Минимальная тенденция энергии наблюдается в сторону тепла, максимальная тенденция беспорядка — в сторону, где количество молей газа велико.",
-        "ar": "الحد الأدنى لميل الطاقة يكون نحو الجانب الذي توجد فيه الحرارة، والحد الأقصى لميل الاضطراب يكون نحو الجانب الذي يكون فيه عدد مولات الغاز مرتفعًا.",
-        "zh": "最低能量趋势指向写有热量的一侧，最大无序趋势指向气体摩尔数较多的一侧。",
-        "ku": "Meyla enerjiya herî kêm ber bi aliyê ku germ lê hatiye nivîsandin e; meyla bêrêziya herî zêde ber bi aliyê ku hejmara molên gazê lê zêde ye."
+        "ru": "Стремление к минимуму энергии направлено в ту сторону, где записана теплота, а стремление к максимуму неупорядоченности — в сторону большего числа молей газа.",
+        "ar": "الميل إلى أدنى طاقة يكون نحو الجهة التي تُكتب فيها الحرارة، والميل إلى أقصى عشوائية يكون نحو الجهة التي يكون فيها عدد مولات الغاز أكبر.",
+        "zh": "趋向最低能量的倾向指向热量所在的一侧，趋向最大混乱度的倾向指向气体物质的量较多的一侧。",
+        "ku": "Meyla enerjiya kêmtirîn ber bi aliyê ku germ lê ye ve ye; meyla bêrêziya herî zêde ber bi aliyê ku hejmara molên gazê lê zêdetir e ve ye."
       },
       "trap": {
         "tr": "Denge tepkimelerinde minimum enerji eğilimi ile maksimum düzensizlik eğilimi aynı yönü destekler.",
@@ -552,17 +552,17 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "В равновесных реакциях стремление к минимуму энергии и стремление к максимуму неупорядоченности благоприятствуют одному и тому же направлению.",
         "ar": "في تفاعلات الاتزان يكون الميل نحو أقل طاقة والميل نحو أقصى عشوائية في الاتجاه نفسه.",
         "zh": "在平衡反应中，趋向最低能量与趋向最大混乱度这两种倾向指向同一方向。",
-        "ku": "Di reaksiyonên hevsengiyê de meyla enerjiya herî kêm û meyla bêrêziya herî zêde heman alî piştgirî dikin."
+        "ku": "Di reaksiyonên hevsengiyê de meyla enerjiya kêmtirîn û meyla bêrêziya herî zêde piştgiriya heman aliyî dikin."
       },
       "whyTrapIsFalse": {
         "tr": "Denge, minimum enerji ve maksimum düzensizlik eğilimleri zıt yönlerde olduğunda bu iki eğilimin dengelenmesiyle kurulur. İki eğilim aynı yöndeyse olay tamamlanır, denge kurulmaz.",
         "en": "Equilibrium arises when the tendencies toward minimum energy and maximum disorder point in opposite directions and balance each other. If both point the same way, the process goes to completion and no equilibrium forms.",
         "de": "Ein Gleichgewicht entsteht, wenn das Streben nach minimaler Energie und nach maximaler Unordnung entgegengesetzt wirken und sich ausgleichen. Wirken beide in dieselbe Richtung, läuft der Vorgang vollständig ab.",
         "fr": "L’équilibre s’établit lorsque les tendances à l’énergie minimale et au désordre maximal sont opposées et se compensent. Si elles vont dans le même sens, la transformation est totale et aucun équilibre ne s’établit.",
-        "ru": "Равновесие устанавливается, когда стремления к минимуму энергии и к максимуму неупорядоченности направлены противоположно и уравновешивают друг друга. Если они направлены одинаково, процесс идёт до конца.",
+        "ru": "Равновесие устанавливается, когда стремление к минимуму энергии и стремление к максимуму неупорядоченности направлены противоположно и уравновешивают друг друга. Если они направлены в одну сторону, процесс идёт до конца и равновесие не устанавливается.",
         "ar": "يتكون الاتزان عندما يكون الميل نحو أقل طاقة والميل نحو أقصى عشوائية في اتجاهين متعاكسين ويتوازنان. إذا كانا في الاتجاه نفسه يكتمل التفاعل ولا يتكون اتزان.",
         "zh": "当趋向最低能量与趋向最大混乱度这两种倾向方向相反并相互抵消时才建立平衡；若两者方向相同，过程进行到底，不建立平衡。",
-        "ku": "Hevsengî çêdibe dema ku meyla enerjiya herî kêm û meyla bêrêziya herî zêde berevajî hev bin û hevûdu hevseng bikin. Ger her du jî li heman alî bin, bûyer temam dibe û hevsengî çênabe."
+        "ku": "Hevsengî dema ku meyla enerjiya kêmtirîn û meyla bêrêziya herî zêde li aliyên dijber in, bi hevsengbûna van her du meylan saz dibe. Heke her du meyl li heman aliyî bin, bûyer temam dibe û hevsengî saz nabe."
       }
     }
   ],
@@ -594,10 +594,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Kp is the equilibrium constant written with the equilibrium partial pressures of the gases, whereas Kc is written with molar concentrations. Multiplying Kc by (RT)^Δn gives Kp.",
         "de": "Kp ist die Gleichgewichtskonstante, die mit den Gleichgewichts-Partialdrücken der Gase formuliert wird, während Kc mit den Stoffmengenkonzentrationen formuliert wird. Multipliziert man Kc mit (RT)^Δn, erhält man Kp.",
         "fr": "Kp est la constante d'équilibre écrite avec les pressions partielles des gaz à l'équilibre, tandis que Kc s'écrit avec les concentrations molaires. En multipliant Kc par (RT)^Δn, on obtient Kp.",
-        "ru": "Kp — константа равновесия, записанная через равновесные парциальные давления газов, а Kc записывается через молярные концентрации. Умножив Kc на (RT)^Δn, получают Kp.",
+        "ru": "Kp — константа равновесия, выраженная через равновесные парциальные давления газов; Kc выражается через молярные концентрации. Умножив Kc на (RT)^Δn, получают Kp.",
         "ar": "Kp هو ثابت الاتزان المكتوب بدلالة الضغوط الجزئية للغازات عند الاتزان، أما Kc فيُكتب بدلالة التراكيز المولارية. وبضرب Kc في (RT)^Δn نحصل على Kp.",
-        "zh": "Kp是用各气体的平衡分压表示的平衡常数，而Kc用物质的量浓度表示。Kc乘以(RT)^Δn即得Kp。",
-        "ku": "Kp sabîta hevsengiyê ye ku bi zextên qismî yên gazan ên di hevsengiyê de tê nivîsandin, lê Kc bi tîrbûnên molar tê nivîsandin. Dema Kc bi (RT)^Δn tê carandin Kp tê dîtin."
+        "zh": "Kp是用各气体的平衡分压表示的平衡常数；而Kc用物质的量浓度表示。Kc乘以(RT)^Δn即得Kp。",
+        "ku": "Kp ew sabîta hevsengiyê ye ku bi zextên parçeyî yên gazan ên di hevsengiyê de tê nivîsandin; Kc jî bi tîrbûnên molar tê nivîsandin. Heke Kc bi (RT)^Δn were pirkirin, Kp tê dîtin."
       }
     },
     {
@@ -627,10 +627,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "A temperature change both shifts the equilibrium and changes the value of Kc; a pressure change may shift the equilibrium according to the numbers of gas moles, but it does not change Kc.",
         "de": "Eine Temperaturänderung verschiebt das Gleichgewicht und verändert zugleich den Wert von Kc; eine Druckänderung kann das Gleichgewicht je nach Gasmolzahlen verschieben, verändert Kc aber nicht.",
         "fr": "Une variation de température déplace l'équilibre et modifie aussi la valeur de Kc ; une variation de pression peut déplacer l'équilibre selon les nombres de moles de gaz, mais ne modifie pas Kc.",
-        "ru": "Изменение температуры и смещает равновесие, и меняет значение Kc; изменение давления может сместить равновесие в зависимости от числа молей газов, но Kc не меняет.",
+        "ru": "Изменение температуры смещает равновесие и меняет значение Kc; изменение давления может сместить равновесие (в зависимости от числа молей газов), но Kc не меняет.",
         "ar": "تغيّر درجة الحرارة يزيح الاتزان ويغيّر قيمة Kc أيضًا؛ أما تغيّر الضغط فقد يزيح الاتزان تبعًا لعدد مولات الغازات لكنه لا يغيّر Kc.",
-        "zh": "温度变化既使平衡移动，又改变Kc的数值；压强变化可能按气体物质的量使平衡移动，但不改变Kc。",
-        "ku": "Guherîna germahiyê hem hevsengiyê dilivîne hem jî nirxa Kc diguherîne; guherîna zextê dikare li gorî hejmara molên gazê hevsengiyê bilivîne, lê Kc naguherîne."
+        "zh": "温度变化既使平衡移动，又改变 Kc 的数值；而压强变化可能根据气体物质的量使平衡移动，但不改变 Kc。",
+        "ku": "Guherîna germahiyê hem hevsengiyê dikişîne hem jî nirxa Kc diguherîne; guherîna zextê dikare li gorî hejmara molên gazê hevsengiyê bikişîne, lê Kc naguherîne."
       }
     },
     {
@@ -652,7 +652,7 @@ export const unit18: ChemistryUnitSeedData = {
         "fr": "Valeur de la constante d’équilibre (Kc)",
         "ru": "Величина константы равновесия (Kc)",
         "ar": "مقدار ثابت الاتزان (Kc)",
-        "zh": "平衡常数 (Kc) 的大小",
+        "zh": "平衡常数(Kc)的大小",
         "ku": "Mezinahiya Sabîta Hevsengiyê (Kc)"
       },
       "distinction": {
@@ -660,10 +660,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The reaction rate depends on activation energy, temperature and catalyst and determines how quickly equilibrium is reached; the magnitude of Kc only shows whether products or reactants dominate at equilibrium.",
         "de": "Die Reaktionsgeschwindigkeit hängt von Aktivierungsenergie, Temperatur und Katalysator ab und bestimmt, wie schnell das Gleichgewicht erreicht wird; die Größe von Kc zeigt dagegen nur, ob im Gleichgewicht die Produkte oder die Edukte überwiegen.",
         "fr": "La vitesse de réaction dépend de l'énergie d'activation, de la température et du catalyseur et détermine en combien de temps l'équilibre est atteint ; la valeur de Kc indique seulement si les produits ou les réactifs prédominent à l'équilibre.",
-        "ru": "Скорость реакции зависит от энергии активации, температуры и катализатора и определяет, как быстро достигается равновесие; величина Kc показывает лишь, преобладают ли в равновесии продукты или реагенты.",
-        "ar": "سرعة التفاعل تعتمد على طاقة التنشيط ودرجة الحرارة والعامل الحفاز وتحدّد زمن الوصول إلى الاتزان؛ أما مقدار Kc فيدل فقط على ما إذا كانت النواتج أم المتفاعلات هي السائدة عند الاتزان.",
-        "zh": "反应速率取决于活化能、温度和催化剂，决定多快达到平衡；Kc的大小只说明平衡时是生成物还是反应物占优势。",
-        "ku": "Leza reaksiyonê bi enerjiya aktîvbûnê, germahî û katalîzatorê ve girêdayî ye û diyar dike ka hevsengî çiqas zû tê bidestxistin; mezinahiya Kc tenê nîşan dide ka di hevsengiyê de hilber an reaktant serdest in."
+        "ru": "Скорость реакции зависит от энергии активации, температуры и катализатора и определяет, как быстро достигается равновесие; величина константы равновесия (Kc) показывает лишь, что преобладает в равновесии — продукты или реагенты.",
+        "ar": "سرعة التفاعل مقدار يعتمد على طاقة التنشيط ودرجة الحرارة والعامل الحفاز، ويحدّد زمن الوصول إلى الاتزان؛ أما مقدار ثابت الاتزان (Kc) فيدل فقط على ما إذا كانت النواتج أم المتفاعلات هي السائدة عند الاتزان.",
+        "zh": "反应速率取决于活化能、温度和催化剂，决定多快达到平衡；而平衡常数(Kc)的大小只说明平衡时是生成物还是反应物占优势。",
+        "ku": "Leza reaksiyonê bi enerjiya aktîvasyonê, germahî û katalîzorê ve girêdayî ye û diyar dike ka sîstem di çiqas demê de digihîje hevsengiyê; mezinahiya sabîta hevsengiyê (Kc) tenê nîşan dide ka di hevsengiyê de hilber an reaktant serdest in."
       }
     },
     {
@@ -675,8 +675,8 @@ export const unit18: ChemistryUnitSeedData = {
         "fr": "Quotient de réaction (Qc)",
         "ru": "Коэффициент реакции (Qc)",
         "ar": "حاصل التفاعل (Qc)",
-        "zh": "反应商 (Qc)",
-        "ku": "Kesra Hevsengiyê (Qc)"
+        "zh": "浓度商(Qc)",
+        "ku": "Kerta Hevsengiyê (Qc)"
       },
       "conceptB": {
         "tr": "Denge Sabiti (Kc)",
@@ -684,8 +684,8 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Gleichgewichtskonstante (Kc)",
         "fr": "Constante d'équilibre (Kc)",
         "ru": "Константа равновесия (Kc)",
-        "ar": "ثابت التوازن (Kc)",
-        "zh": "平衡常数 (Kc)",
+        "ar": "ثابت الاتزان (Kc)",
+        "zh": "平衡常数(Kc)",
         "ku": "Sabîta Hevsengiyê (Kc)"
       },
       "distinction": {
@@ -693,10 +693,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Qc is calculated from the equilibrium expression using the concentrations at any moment; if it equals Kc the system is at equilibrium, if it is smaller than Kc the reaction proceeds toward the products, and if larger, toward the reactants.",
         "de": "Qc wird mit den Konzentrationen zu einem beliebigen Zeitpunkt aus dem Gleichgewichtsausdruck berechnet; ist es gleich Kc, befindet sich das System im Gleichgewicht, ist es kleiner als Kc, läuft die Reaktion in Richtung der Produkte, ist es größer, in Richtung der Edukte.",
         "fr": "Qc se calcule à partir de l'expression de la constante d'équilibre avec les concentrations à un instant quelconque ; s'il est égal à Kc le système est à l'équilibre, s'il est inférieur à Kc la réaction évolue vers les produits, et s'il est supérieur, vers les réactifs.",
-        "ru": "Qc вычисляют по выражению константы равновесия, подставляя концентрации в произвольный момент; если оно равно Kc, система находится в равновесии, если меньше Kc — реакция идёт в сторону продуктов, если больше — в сторону реагентов.",
-        "ar": "تُحسب Qc من تعبير ثابت الاتزان باستخدام التراكيز في أي لحظة؛ فإذا ساوت Kc كان النظام في حالة اتزان، وإذا كانت أصغر من Kc سار التفاعل نحو النواتج، وإذا كانت أكبر سار نحو المتفاعلات.",
-        "zh": "Qc是把任意时刻的浓度代入平衡常数表达式算出的值；等于Kc时体系处于平衡，小于Kc时反应向生成物方向进行，大于Kc时向反应物方向进行。",
-        "ku": "Qc bi tîrbûnên di her kêliyê de ji îfadeya sabîta hevsengiyê tê hesibandin; ger bi Kc re wekhev be pergal di hevsengiyê de ye, ger ji Kc biçûktir be reaksiyon ber bi hilberan ve, ger mezintir be ber bi reaktantan ve diçe."
+        "ru": "Коэффициент реакции (Qc) вычисляют по выражению константы равновесия, подставляя концентрации в произвольный момент времени; если эта величина равна Kc, система находится в равновесии, если меньше Kc — реакция идёт в сторону продуктов, если больше — в сторону реагентов.",
+        "ar": "حاصل التفاعل (Qc) يُحسب من تعبير الاتزان باستخدام التراكيز في أي لحظة؛ فإذا ساوى ثابت الاتزان (Kc) كان النظام في حالة اتزان، وإذا كان أصغر منه سار التفاعل نحو النواتج، وإذا كان أكبر منه سار نحو المتفاعلات.",
+        "zh": "浓度商(Qc)是把任意时刻的各浓度代入表达式算出的值；而平衡常数(Kc)是反应达到限度时各浓度代入表达式算出的值。前者等于后者时反应已达限度，小于后者时反应向正反应方向进行，大于后者时向逆反应方向进行。",
+        "ku": "Kerta hevsengiyê bi tîrbûnên her kêliyekê ji hevkêşeya hevsengiyê tê hesibandin; heke wekhevî Kc be sîstem di hevsengiyê de ye, heke ji Kc piçûktir be reaksiyon ber bi hilberan ve, heke mezintir be ber bi reaktantan ve diçe."
       }
     },
     {
@@ -707,7 +707,7 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Homogenes Gleichgewicht",
         "fr": "Équilibre homogène",
         "ru": "Гомогенное равновесие",
-        "ar": "التوازن المتجانس",
+        "ar": "الاتزان المتجانس",
         "zh": "均相平衡",
         "ku": "Hevsengiya Homojen"
       },
@@ -717,7 +717,7 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Heterogenes Gleichgewicht",
         "fr": "Équilibre hétérogène",
         "ru": "Гетерогенное равновесие",
-        "ar": "التوازن غير المتجانس",
+        "ar": "الاتزان غير المتجانس",
         "zh": "非均相平衡",
         "ku": "Hevsengiya Heterojen"
       },
@@ -726,10 +726,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "In a homogeneous equilibrium all reactants and products are in the same phase; in a heterogeneous equilibrium the substances are in at least two different phases (e.g. solid and gas).",
         "de": "Homogenes Gleichgewicht: Alle Edukte und Produkte liegen in derselben Phase vor; heterogenes Gleichgewicht: Die Stoffe liegen in mindestens zwei verschiedenen Phasen vor (z. B. fest und gasförmig).",
         "fr": "Équilibre homogène : tous les réactifs et produits sont dans la même phase ; équilibre hétérogène : les substances se trouvent dans au moins deux phases différentes (p. ex. solide et gaz).",
-        "ru": "Гомогенное равновесие: все реагенты и продукты находятся в одной фазе; гетерогенное равновесие: вещества находятся как минимум в двух разных фазах (например, твёрдой и газовой).",
-        "ar": "في التوازن المتجانس تكون جميع المتفاعلات والنواتج في الطور نفسه؛ أما في التوازن غير المتجانس فتوجد المواد في طورين مختلفين على الأقل (مثل الصلب والغاز).",
+        "ru": "Гомогенное равновесие — равновесие, в котором все реагенты и продукты находятся в одной фазе; гетерогенное равновесие — равновесие с участием веществ как минимум двух разных фаз (например, твёрдой и газовой).",
+        "ar": "في الاتزان المتجانس تكون جميع المتفاعلات والنواتج في الطور نفسه؛ أما في الاتزان غير المتجانس فتوجد المواد في طورين مختلفين على الأقل (مثل الصلب والغاز).",
         "zh": "均相平衡中所有反应物和生成物处于同一相；非均相平衡中各物质至少处于两个不同的相（如固相和气相）。",
-        "ku": "Di hevsengiya homojen de hemû reaktant û hilber di heman qonaxê de ne; di hevsengiya heterojen de madde herî kêm di du qonaxên cuda de ne (mînak hişk û gaz)."
+        "ku": "Di hevsengiya homojen de hemû reaktant û hilber di heman fazê de ne; di hevsengiya heterojen de made herî kêm di du fazên cuda de ne (mînak hişk û gaz)."
       }
     },
     {
@@ -742,7 +742,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Добавление катализатора",
         "ar": "إضافة عامل حفاز",
         "zh": "加入催化剂",
-        "ku": "Zêdekirina Katalîzatorê"
+        "ku": "Lêzêdekirina Katalîzorê"
       },
       "conceptB": {
         "tr": "Girenlerden Birinin Eklenmesi",
@@ -752,7 +752,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Добавление одного из реагентов",
         "ar": "إضافة إحدى المواد المتفاعلة",
         "zh": "加入一种反应物",
-        "ku": "Zêdekirina Yek ji Reaktantan"
+        "ku": "Lêzêdekirina Reaktantekê"
       },
       "distinction": {
         "tr": "Katalizör eklenmesi dengeyi kaydırmaz ve madde miktarlarını değiştirmez, yalnızca dengeye ulaşma süresini kısaltır; girenlerden birinin eklenmesi ise Qc'yi Kc'den küçük yapar ve dengeyi ürünler yönüne kaydırır. Sıcaklık sabitse ikisinde de Kc değişmez.",
@@ -760,9 +760,9 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Die Zugabe eines Katalysators verschiebt das Gleichgewicht nicht und ändert die Stoffmengen nicht, sie verkürzt nur die Einstellzeit; die Zugabe eines Edukts macht Qc kleiner als Kc und verschiebt das Gleichgewicht zu den Produkten. Bei konstanter Temperatur bleibt Kc in beiden Fällen gleich.",
         "fr": "L’ajout d’un catalyseur ne déplace pas l’équilibre et ne modifie pas les quantités de matière, il raccourcit seulement le temps nécessaire pour l’atteindre ; l’ajout d’un des réactifs rend Qc inférieur à Kc et déplace l’équilibre vers les produits. À température constante, Kc reste la même dans les deux cas.",
         "ru": "Добавление катализатора не смещает равновесие и не меняет количества веществ, а лишь сокращает время его достижения; добавление одного из реагентов делает Qc меньше Kc и смещает равновесие к продуктам. При постоянной температуре Kc в обоих случаях не меняется.",
-        "ar": "إضافة عامل حفاز لا تزيح الاتزان ولا تغيّر كميات المواد، بل تقصّر فقط زمن الوصول إليه؛ أما إضافة إحدى المواد المتفاعلة فتجعل Qc أصغر من Kc وتزيح الاتزان نحو النواتج. وعند ثبات درجة الحرارة لا تتغير Kc في الحالتين.",
-        "zh": "加入催化剂不使平衡移动，也不改变各物质的量，只缩短达到平衡的时间；加入一种反应物使Qc小于Kc，平衡向生成物方向移动。温度不变时，两种情况下Kc都不变。",
-        "ku": "Zêdekirina katalîzatorê hevsengiyê nalivîne û mîqdara maddeyan naguherîne, tenê dema gihîştina hevsengiyê kurt dike; zêdekirina yek ji reaktantan Qc ji Kc biçûktir dike û hevsengiyê ber bi hilberan ve dilivîne. Ger germahî sabît be, di her duyan de jî Kc naguhere."
+        "ar": "في حالة إضافة عامل حفاز لا ينزاح الاتزان ولا تتغير كميات المواد، بل يقصر زمن الوصول إليه فقط؛ أما في حالة إضافة إحدى المواد المتفاعلة فيصبح Qc أصغر من Kc وينزاح الاتزان نحو النواتج. وعند ثبات درجة الحرارة لا تتغير Kc في الحالتين.",
+        "zh": "加入催化剂不使平衡移动，也不改变各物质的量，只缩短达到平衡的时间；而加入一种反应物使 Qc 小于 Kc，平衡向生成物方向移动。温度不变时，两种情况下 Kc 都不变。",
+        "ku": "Lêzêdekirina katalîzorê hevsengiyê nakişîne û mîqdara madeyan naguherîne, tenê dema gihîştina hevsengiyê kurt dike; lêzêdekirina reaktantekê Qc ji Kc piçûktir dike û hevsengiyê ber bi hilberan ve dikişîne. Heke germahî sabît be, di her duyan de jî Kc naguhere."
       }
     },
     {
@@ -785,7 +785,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "Добавление благородного газа при постоянном объёме",
         "ar": "إضافة غاز نبيل عند ثبوت الحجم",
         "zh": "恒容下加入稀有气体",
-        "ku": "Zêdekirina Gaza Asîl di Qebareya Sabît de"
+        "ku": "Lêzêdekirina Gaza Esîl di Qebareya Sabît de"
       },
       "distinction": {
         "tr": "Hacmin küçültülmesi tüm gazların derişimini artırır ve dengeyi gaz mol sayısı az olan tarafa kaydırır; sabit hacimde soy gaz eklenmesi ise tepkimedeki gazların kısmi basınçlarını ve dengeyi değiştirmez.",
@@ -793,9 +793,9 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Eine Volumenverkleinerung erhöht die Konzentrationen aller Gase und verschiebt das Gleichgewicht zur Seite mit weniger Gasmolen; die Zugabe eines Edelgases bei konstantem Volumen ändert weder die Partialdrücke der reagierenden Gase noch das Gleichgewicht.",
         "fr": "La diminution du volume augmente les concentrations de tous les gaz et déplace l'équilibre vers le côté comportant le moins de moles de gaz ; l'ajout d'un gaz noble à volume constant ne modifie ni les pressions partielles des gaz réagissants ni l'équilibre.",
         "ru": "Уменьшение объёма повышает концентрации всех газов и смещает равновесие в сторону меньшего числа молей газа; добавление благородного газа при постоянном объёме не изменяет ни парциальные давления реагирующих газов, ни равновесие.",
-        "ar": "تصغير الحجم يزيد تراكيز جميع الغازات ويزيح الاتزان نحو الجانب الأقل في عدد مولات الغاز؛ أما إضافة غاز نبيل عند ثبوت الحجم فلا تغيّر الضغوط الجزئية للغازات المتفاعلة ولا الاتزان.",
-        "zh": "减小体积使所有气体的浓度增大，平衡向气体物质的量较少的一侧移动；恒容下加入稀有气体不改变参加反应的气体的分压，也不使平衡移动。",
-        "ku": "Kêmkirina qebareyê tîrbûna hemû gazan zêde dike û hevsengiyê ber bi aliyê ku molên gazê kêmtir in ve dilivîne; zêdekirina gaza asîl di qebareya sabît de zextên qismî yên gazên reaksiyonê û hevsengiyê naguherîne."
+        "ar": "تصغير الحجم يزيد تراكيز جميع الغازات ويزيح الاتزان نحو الجانب الأقل في عدد مولات الغاز؛ أما عند إضافة غاز نبيل عند ثبوت الحجم فلا تتغير الضغوط الجزئية للغازات المتفاعلة ولا الاتزان.",
+        "zh": "减小体积使所有气体的浓度增大，平衡向气体物质的量较少的一侧移动；而恒容下加入稀有气体不改变参加反应的气体的分压，也不使平衡移动。",
+        "ku": "Kêmkirina qebareyê tîrbûna hemû gazan zêde dike û hevsengiyê ber bi aliyê ku hejmara molên gazê kêmtir e ve dikişîne; lêzêdekirina gaza esîl di qebareya sabît de zextên parçeyî yên gazên reaksiyonê û hevsengiyê naguherîne."
       }
     },
     {
@@ -806,7 +806,7 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Dynamisches Gleichgewicht",
         "fr": "Équilibre dynamique",
         "ru": "Динамическое равновесие",
-        "ar": "التوازن الديناميكي",
+        "ar": "الاتزان الديناميكي",
         "zh": "动态平衡",
         "ku": "Hevsengiya Dînamîk"
       },
@@ -816,7 +816,7 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Statisches Gleichgewicht",
         "fr": "Équilibre statique",
         "ru": "Статическое равновесие",
-        "ar": "التوازن الساكن",
+        "ar": "الاتزان الساكن",
         "zh": "静态平衡",
         "ku": "Hevsengiya Statîk"
       },
@@ -825,10 +825,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "In a dynamic equilibrium the forward and reverse reactions continue at equal rates, so the concentrations stay constant (chemical equilibrium is of this kind); in a static equilibrium the process has stopped completely.",
         "de": "Dynamisches Gleichgewicht: Hin- und Rückreaktion laufen mit gleicher Geschwindigkeit weiter, daher bleiben die Konzentrationen konstant (so ist das chemische Gleichgewicht); statisches Gleichgewicht: Der Vorgang ist vollständig zum Stillstand gekommen.",
         "fr": "Équilibre dynamique : les réactions directe et inverse se poursuivent à la même vitesse, de sorte que les concentrations restent constantes (c'est le cas de l'équilibre chimique) ; équilibre statique : le phénomène s'est complètement arrêté.",
-        "ru": "Динамическое равновесие: прямая и обратная реакции продолжаются с одинаковой скоростью, поэтому концентрации остаются постоянными (таково химическое равновесие); статическое равновесие: процесс полностью прекратился.",
-        "ar": "في التوازن الديناميكي يستمر التفاعلان الأمامي والعكسي بالسرعة نفسها فتبقى التراكيز ثابتة (وهكذا هو الاتزان الكيميائي)؛ أما في التوازن الساكن فيتوقف الحدث تمامًا.",
-        "zh": "动态平衡中正、逆反应以相同速率持续进行，因此浓度保持不变（化学平衡属于这种）；静态平衡中过程完全停止。",
-        "ku": "Di hevsengiya dînamîk de reaksiyonên pêş û paş bi leza wekhev berdewam dikin, ji ber vê yekê tîrbûn sabît dimînin (hevsengiya kîmyewî wiha ye); di hevsengiya statîk de bûyer bi tevahî rawestiyaye."
+        "ru": "Динамическое равновесие — состояние, в котором прямая и обратная реакции идут с одинаковой скоростью, поэтому концентрации остаются постоянными (именно таково химическое равновесие); статическое равновесие — состояние, в котором процесс полностью прекратился.",
+        "ar": "في الاتزان الديناميكي يستمر التفاعلان الأمامي والعكسي بالسرعة نفسها فتبقى التراكيز ثابتة (وهكذا هو الاتزان الكيميائي)؛ أما في الاتزان الساكن فتكون العملية قد توقفت تمامًا.",
+        "zh": "动态平衡中正、逆反应以相同速率持续进行，因此浓度保持不变（化学平衡属于这种）；而静态平衡中过程完全停止。",
+        "ku": "Di hevsengiya dînamîk de reaksiyonên pêşve û paşve bi lezeke wekhev berdewam dikin, ji ber vê yekê tîrbûn sabît dimînin (hevsengiya kîmyewî wisa ye); di hevsengiya statîk de bûyer bi tevahî rawestiyaye."
       }
     }
   ],
@@ -840,9 +840,9 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Le Chatelier Effect Analysis Steps",
         "de": "Schritte zur Le Chatelier-Effektanalyse",
         "fr": "Étapes d’analyse de l’effet Le Chatelier",
-        "ru": "Этапы анализа эффекта Ле Шателье",
-        "ar": "خطوات تحليل تأثير لو شاتيليه",
-        "zh": "勒夏特列效应分析步骤",
+        "ru": "Анализ смещения равновесия по принципу Ле Шателье",
+        "ar": "تحليل تأثير مبدأ لوشاتلييه",
+        "zh": "用勒夏特列原理分析平衡移动的步骤",
         "ku": "Gavên Analîza Bandora Le Chatelier"
       },
       "steps": [
@@ -851,10 +851,10 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "Determine the external impact made (temperature, concentration, volume)",
           "de": "Bestimmen Sie die äußere Einwirkung (Temperatur, Konzentration, Volumen)",
           "fr": "Déterminer l'impact externe effectué (température, concentration, volume)",
-          "ru": "Определить произведенное внешнее воздействие (температура, концентрация, объем)",
-          "ar": "تحديد التأثير الخارجي المحدث (درجة الحرارة، التركيز، الحجم)",
-          "zh": "确定所造成的外部影响（温度、浓度、体积）",
-          "ku": "Bandora derve diyar bike (germahî, tîrbûn, qebare)"
+          "ru": "Определите внешнее воздействие (температура, концентрация, объём)",
+          "ar": "حدّد المؤثر الخارجي (درجة الحرارة، التركيز، الحجم)",
+          "zh": "确定所施加的外界影响（温度、浓度、体积）",
+          "ku": "Bandora derveyî ya hatiye kirin diyar bike (germahî, tîrbûn, qebare)"
         },
         {
           "tr": "Sistemin bu etkiyi azaltmak için ne yapması gerektiğini bul (ör. eklenen maddeyi harcamak)",
@@ -864,7 +864,7 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "Выясните, что должна сделать система, чтобы ослабить это воздействие (например, израсходовать добавленное вещество)",
           "ar": "حدّد ما يجب أن يفعله النظام لتقليل أثر هذا التغيير (مثل استهلاك المادة المضافة)",
           "zh": "找出体系为削弱该影响必须做什么（如消耗加入的物质）",
-          "ku": "Bibîne ka pergal ji bo kêmkirina vê bandorê divê çi bike (mînak maddeya zêdekirî xerc bike)"
+          "ku": "Bibîne ka sîstem ji bo kêmkirina vê bandorê divê çi bike (mînak xerckirina madeya lêzêdekirî)"
         },
         {
           "tr": "Buna göre tepkimenin kayacağı yönü belirle (ürünler veya girenler)",
@@ -884,7 +884,7 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "В конце проверьте, изменилась ли Kc (она меняется только при изменении температуры)",
           "ar": "أخيرًا تحقّق مما إذا كانت Kc قد تغيّرت (لا تتغيّر إلا بتغيّر درجة الحرارة)",
           "zh": "最后检查Kc是否改变（只有温度改变时才改变）",
-          "ku": "Di dawiyê de kontrol bike ka Kc guheriye an na (tenê bi guherîna germahiyê diguhere)"
+          "ku": "Di dawiyê de kontrol bike ka Kc guheriye an na (tenê heke germahî biguhere diguhere)"
         }
       ]
     },
@@ -895,9 +895,9 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Equilibrium Constant (Kc) Calculation",
         "de": "Berechnung der Gleichgewichtskonstante (Kc).",
         "fr": "Calcul de la constante d'équilibre (Kc)",
-        "ru": "Расчет константы равновесия (Kc)",
-        "ar": "حساب ثابت التوازن (Kc).",
-        "zh": "平衡常数 (Kc) 计算",
+        "ru": "Расчёт константы равновесия (Kc)",
+        "ar": "حساب ثابت الاتزان (Kc)",
+        "zh": "平衡常数(Kc)的计算",
         "ku": "Hesabkirina Sabîta Hevsengiyê (Kc)"
       },
       "steps": [
@@ -906,9 +906,9 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "Initial mole numbers and container volume are written.",
           "de": "Anfängliche Molzahlen und Behältervolumen werden angegeben.",
           "fr": "Les nombres de moles initiaux et le volume du récipient sont écrits",
-          "ru": "Записываются начальные числа молей и объем контейнера.",
+          "ru": "Записывают начальные количества веществ (моль) и объём сосуда",
           "ar": "تُكتب أعداد المولات الابتدائية وحجم الوعاء",
-          "zh": "写下初始摩尔数和容器体积。",
+          "zh": "写出起始物质的量和容器体积",
           "ku": "Hejmarên molan ên destpêkê û qebareya firaxê tên nivîsandin"
         },
         {
@@ -916,9 +916,9 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "The change row is filled in according to the reaction coefficients",
           "de": "Die Änderungszeile wird gemäß den Reaktionskoeffizienten ausgefüllt",
           "fr": "La ligne de variation est remplie selon les coefficients de la réaction",
-          "ru": "Строка изменения заполняется в соответствии с коэффициентами реакции",
+          "ru": "Заполняют строку изменений в соответствии с коэффициентами реакции",
           "ar": "يُملأ سطر التغيّر وفق معاملات التفاعل",
-          "zh": "根据反应系数填写变化量一行",
+          "zh": "根据化学计量数填写变化量一行",
           "ku": "Rêza guherînê li gorî hevberên reaksiyonê tê dagirtin"
         },
         {
@@ -926,20 +926,20 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "Concentrations are found by dividing the number of moles at equilibrium by the volume.",
           "de": "Konzentrationen werden ermittelt, indem die Anzahl der Mol im Gleichgewicht durch das Volumen dividiert wird.",
           "fr": "Les concentrations sont obtenues en divisant le nombre de moles à l'équilibre par le volume.",
-          "ru": "Концентрации находятся путем деления количества молей, находящихся в равновесии, на объем.",
+          "ru": "Делят равновесные количества веществ на объём и находят концентрации",
           "ar": "تُحسب التراكيز بقسمة أعداد المولات عند الاتزان على الحجم",
-          "zh": "浓度是通过平衡时的摩尔数除以体积得出的。",
-          "ku": "Tîrbûn bi parvekirina hejmarên molan ên di hevsengiyê de li ser qebareyê tên dîtin"
+          "zh": "用平衡时的物质的量除以体积，求出各物质的浓度",
+          "ku": "Hejmarên molan ên di hevsengiyê de li ser qebareyê tên dabeşkirin û tîrbûn tên dîtin"
         },
         {
           "tr": "Kc = [Ürünler] / [Girenler] bağıntısında yerine konur",
           "en": "They are substituted into Kc = [Products] / [Reactants]",
           "de": "Sie werden in Kc = [Produkte] / [Edukte] eingesetzt",
           "fr": "On les remplace dans Kc = [Produits] / [Réactifs]",
-          "ru": "Их подставляют в выражение Kc = [Продукты] / [Реагенты]",
+          "ru": "Подставляют их в выражение Kc = [Продукты] / [Реагенты]",
           "ar": "تُعوَّض في العلاقة Kc = [النواتج] / [المتفاعلات]",
-          "zh": "代入Kc = [产物] / [反应物]",
-          "ku": "Di têkiliya Kc = [Hilber] / [Reaktant] de tên bicihkirin"
+          "zh": "代入 Kc = [生成物] / [反应物]",
+          "ku": "Tîrbûn di hevkêşeya Kc = [Hilber] / [Reaktant] de tên bicihkirin"
         }
       ]
     },
@@ -950,8 +950,8 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Le Chatelier Temperature Effect",
         "de": "Le Chatelier Temperatureffekt",
         "fr": "Effet de la température selon Le Chatelier",
-        "ru": "Температурный эффект Ле Шателье",
-        "ar": "تأثير درجة الحرارة لو شاتيليه",
+        "ru": "Влияние температуры на равновесие (принцип Ле Шателье)",
+        "ar": "تأثير درجة الحرارة وفق مبدأ لوشاتلييه",
         "zh": "勒夏特列原理：温度的影响",
         "ku": "Bandora Germahiyê li gorî Le Chatelier"
       },
@@ -961,19 +961,19 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "Determine whether the reaction is endothermic or exothermic",
           "de": "Bestimmen Sie, ob die Reaktion endotherm oder exotherm ist",
           "fr": "Déterminer si la réaction est endothermique ou exothermique",
-          "ru": "Определите, является ли реакция эндотермической или экзотермической.",
-          "ar": "تحديد ما إذا كان التفاعل ماصًا للحرارة أم طاردًا للحرارة",
+          "ru": "Определяют, является ли реакция эндотермической или экзотермической",
+          "ar": "يُحدَّد ما إذا كان التفاعل ماصًا للحرارة أم طاردًا لها",
           "zh": "确定反应是吸热反应还是放热反应",
-          "ku": "Diyar bikin ka reaksîyon endotermîk e an exotermîk e"
+          "ku": "Tê diyarkirin ka reaksiyon endotermîk e an ekzotermîk e"
         },
         {
           "tr": "Isı, ekzotermik tepkimede ürünler, endotermik tepkimede girenler tarafına yazılır",
           "en": "Heat is written on the product side for an exothermic reaction and on the reactant side for an endothermic reaction",
           "de": "Wärme wird bei einer exothermen Reaktion auf der Produktseite, bei einer endothermen Reaktion auf der Eduktseite geschrieben",
           "fr": "La chaleur est écrite du côté des produits pour une réaction exothermique et du côté des réactifs pour une réaction endothermique",
-          "ru": "Теплоту записывают в сторону продуктов для экзотермической реакции и в сторону реагентов для эндотермической",
+          "ru": "Теплоту записывают в правой части (среди продуктов) для экзотермической реакции и в левой части (среди реагентов) — для эндотермической",
           "ar": "تُكتب الحرارة في جهة النواتج في التفاعل الطارد للحرارة، وفي جهة المتفاعلات في التفاعل الماص للحرارة",
-          "zh": "放热反应把热量写在产物一侧，吸热反应把热量写在反应物一侧",
+          "zh": "放热反应把热量写在生成物一侧，吸热反应把热量写在反应物一侧",
           "ku": "Germ di reaksiyona ekzotermîk de li aliyê hilberan, di ya endotermîk de li aliyê reaktantan tê nivîsandin"
         },
         {
@@ -981,10 +981,10 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "When the temperature is raised, the equilibrium shifts in the direction that consumes heat (the endothermic direction)",
           "de": "Bei Temperaturerhöhung verschiebt sich das Gleichgewicht in die wärmeverbrauchende (endotherme) Richtung",
           "fr": "Quand la température augmente, l'équilibre se déplace dans le sens qui consomme de la chaleur (sens endothermique)",
-          "ru": "При повышении температуры равновесие смещается в сторону поглощения теплоты (эндотермическое направление)",
-          "ar": "عند رفع درجة الحرارة يتجه الاتزان في الاتجاه الذي يستهلك الحرارة (الاتجاه الماص للحرارة)",
+          "ru": "При повышении температуры равновесие смещается в сторону поглощения теплоты (в эндотермическом направлении)",
+          "ar": "عند رفع درجة الحرارة ينزاح الاتزان في الاتجاه الذي يستهلك الحرارة (الاتجاه الماص للحرارة)",
           "zh": "升高温度时，平衡向吸收热量的方向（吸热方向）移动",
-          "ku": "Dema ku germahî tê bilindkirin, hevsengî ber bi aliyê ku germ lê tê xerckirin (endotermîk) ve diçe"
+          "ku": "Dema germahî tê bilindkirin, hevsengî ber bi aliyê ku germ lê tê xerckirin (aliyê endotermîk) ve diçe"
         },
         {
           "tr": "Denge ürünlere kaydıysa Kc artar, girenlere kaydıysa Kc azalır",
@@ -992,8 +992,8 @@ export const unit18: ChemistryUnitSeedData = {
           "de": "Verschiebt sich das Gleichgewicht zu den Produkten, steigt Kc; verschiebt es sich zu den Edukten, sinkt Kc",
           "fr": "Si l'équilibre se déplace vers les produits, Kc augmente ; s'il se déplace vers les réactifs, Kc diminue",
           "ru": "Если равновесие сместилось к продуктам, Kc увеличивается; если к реагентам — Kc уменьшается",
-          "ar": "إذا اتجه الاتزان نحو النواتج تزداد Kc، وإذا اتجه نحو المتفاعلات تقل Kc",
-          "zh": "若平衡向产物方向移动，Kc增大；若向反应物方向移动，Kc减小",
+          "ar": "إذا انزاح الاتزان نحو النواتج تزداد Kc، وإذا انزاح نحو المتفاعلات تقل Kc",
+          "zh": "若平衡向生成物方向移动，Kc增大；若向反应物方向移动，Kc减小",
           "ku": "Ger hevsengî ber bi hilberan ve çûbe Kc zêde dibe; ger ber bi reaktantan ve çûbe Kc kêm dibe"
         }
       ]
@@ -1005,10 +1005,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Volume Change and Pressure Effect",
         "de": "Volumenänderung und Druckeffekt",
         "fr": "Changement de volume et effet de pression",
-        "ru": "Изменение объема и эффект давления",
-        "ar": "تغيير الحجم وتأثير الضغط",
-        "zh": "体积变化和压力影响",
-        "ku": "Guhertina Qebareyê û Bandora Zextê"
+        "ru": "Изменение объёма и влияние давления",
+        "ar": "تغيّر الحجم وتأثير الضغط",
+        "zh": "体积变化与压强的影响",
+        "ku": "Guherîna Qebareyê û Bandora Zextê"
       },
       "steps": [
         {
@@ -1016,9 +1016,9 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "At constant temperature, the volume of the container is reduced",
           "de": "Bei konstanter Temperatur verringert sich das Volumen des Behälters",
           "fr": "A température constante, le volume du récipient est réduit",
-          "ru": "При постоянной температуре объем контейнера уменьшается.",
-          "ar": "عند درجة حرارة ثابتة، يقل حجم الحاوية",
-          "zh": "在一定温度下，容器的体积减小",
+          "ru": "При постоянной температуре уменьшают объём сосуда",
+          "ar": "يُصغَّر حجم الوعاء عند درجة حرارة ثابتة",
+          "zh": "恒温下减小容器的体积",
           "ku": "Di germahiya sabît de qebareya firaxê tê kêmkirin"
         },
         {
@@ -1026,20 +1026,20 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "Partial pressures and concentrations of all gases increase suddenly",
           "de": "Partialdrücke und Konzentrationen aller Gase steigen schlagartig an",
           "fr": "Les pressions partielles et les concentrations de tous les gaz augmentent soudainement",
-          "ru": "Парциальные давления и концентрации всех газов внезапно возрастают.",
-          "ar": "تزداد الضغوط الجزئية والتركيزات لجميع الغازات فجأة",
-          "zh": "所有气体的分压和浓度突然增加",
-          "ku": "Zextên qismî û tîrbûnên hemû gazan ji nişka ve zêde dibin"
+          "ru": "Парциальные давления и концентрации всех газов скачком возрастают",
+          "ar": "تزداد الضغوط الجزئية والتراكيز لجميع الغازات فجأة",
+          "zh": "所有气体的分压和浓度突然增大",
+          "ku": "Zextên parçeyî û tîrbûnên hemû gazan ji nişka ve zêde dibin"
         },
         {
           "tr": "Sistem gaz mol sayısının az olduğu tarafa kayar",
           "en": "The system shifts to the side with fewer moles of gas.",
           "de": "Das System verschiebt sich auf die Seite mit weniger Gasmolen.",
           "fr": "Le système se déplace du côté avec moins de moles de gaz.",
-          "ru": "Система смещается в сторону с меньшим количеством молей газа.",
-          "ar": "ينتقل النظام إلى الجانب الذي يحتوي على عدد أقل من مولات الغاز.",
-          "zh": "系统转移到气体摩尔数较少的一侧。",
-          "ku": "Pergal ber bi aliyê ku molên gazê kêmtir in ve diçe"
+          "ru": "Равновесие смещается в сторону меньшего числа молей газа",
+          "ar": "ينزاح النظام نحو الجهة التي يكون فيها عدد مولات الغاز أقل",
+          "zh": "平衡向气体分子数较少的一侧移动",
+          "ku": "Sîstem ber bi aliyê ku hejmara molên gazê kêmtir e ve diçe"
         },
         {
           "tr": "Yeni dengede toplam gaz basıncı ilk dengedekinden yüksektir, ancak hacmin küçültüldüğü andaki basınçtan düşüktür",
@@ -1062,10 +1062,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The reaction N2(g) + 3 H2(g) ⇌ 2 NH3(g), ΔH = -92 kJ, is at equilibrium. Which of the following occurs if the temperature is increased?",
         "de": "Die Reaktion N2(g) + 3 H2(g) ⇌ 2 NH3(g), ΔH = -92 kJ, befindet sich im Gleichgewicht. Was geschieht, wenn die Temperatur erhöht wird?",
         "fr": "La réaction N2(g) + 3 H2(g) ⇌ 2 NH3(g), ΔH = -92 kJ, est à l'équilibre. Que se produit-il si l'on augmente la température ?",
-        "ru": "Реакция N2(g) + 3 H2(g) ⇌ 2 NH3(g), ΔH = -92 кДж, находится в равновесии. Что из перечисленного произойдёт при повышении температуры?",
+        "ru": "Реакция N2(г) + 3 H2(г) ⇌ 2 NH3(г), ΔH = -92 кДж, находится в равновесии. Что произойдёт при повышении температуры?",
         "ar": "التفاعل N2(g) + 3 H2(g) ⇌ 2 NH3(g)، ΔH = -92 kJ في حالة اتزان. أي مما يلي يحدث إذا رُفعت درجة الحرارة؟",
         "zh": "反应 N2(g) + 3 H2(g) ⇌ 2 NH3(g)，ΔH = -92 kJ 处于平衡状态。若升高温度，会发生下列哪种情况？",
-        "ku": "Reaksiyona N2(g) + 3 H2(g) ⇌ 2 NH3(g), ΔH = -92 kJ di hevsengiyê de ye. Ger germahî were bilindkirin, kîjan ji van pêk tê?"
+        "ku": "Reaksiyona N2(g) + 3 H2(g) ⇌ 2 NH3(g)  ΔH = -92 kJ di hevsengiyê de ye. Heke germahî were bilindkirin, kîjan ji van pêk tê?"
       },
       "options": [
         {
@@ -1073,19 +1073,19 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "The equilibrium constant (Kc) becomes smaller",
           "de": "Die Gleichgewichtskonstante (Kc) wird kleiner",
           "fr": "La constante d'équilibre (Kc) devient plus petite",
-          "ru": "Константа равновесия (Kc) становится меньше",
-          "ar": "يصبح ثابت التوازن (Kc) أصغر",
-          "zh": "平衡常数（Kc）变小",
-          "ku": "Sabîta hevsengiyê (Kc) biçûktir dibe"
+          "ru": "Константа равновесия (Kc) уменьшится",
+          "ar": "يصغر ثابت الاتزان (Kc)",
+          "zh": "平衡常数(Kc)变小",
+          "ku": "Sabîta hevsengiyê (Kc) piçûk dibe"
         },
         {
           "tr": "NH3 gazı derişimi artar",
           "en": "NH3 gas concentration increases",
           "de": "Die NH3-Gaskonzentration steigt",
           "fr": "La concentration de gaz NH3 augmente",
-          "ru": "Концентрация газа NH3 увеличивается",
+          "ru": "Концентрация NH3 увеличится",
           "ar": "يزداد تركيز غاز NH3",
-          "zh": "NH3气体浓度增加",
+          "zh": "NH3 的浓度增大",
           "ku": "Tîrbûna gaza NH3 zêde dibe"
         },
         {
@@ -1093,30 +1093,30 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "Equilibrium shifts towards products",
           "de": "Das Gleichgewicht verschiebt sich in Richtung Produkte",
           "fr": "L’équilibre se déplace vers les produits",
-          "ru": "Равновесие смещается в сторону продуктов",
-          "ar": "يتحول التوازن نحو النواتج",
-          "zh": "均衡转向产品",
-          "ku": "Hevsengî ber bi hilberan ve diçe"
+          "ru": "Равновесие сместится в сторону продуктов",
+          "ar": "ينزاح الاتزان نحو النواتج",
+          "zh": "平衡向正反应方向移动",
+          "ku": "Hevsengî ber bi aliyê hilberan ve diçe"
         },
         {
           "tr": "Toplam gaz mol sayısı azalır",
           "en": "The total number of moles of gas decreases",
           "de": "Die Gesamtzahl der Gasmole nimmt ab",
           "fr": "Le nombre total de moles de gaz diminue",
-          "ru": "Общее количество молей газа уменьшается",
+          "ru": "Общее число молей газов уменьшится",
           "ar": "يقل العدد الإجمالي لمولات الغاز",
-          "zh": "气体总摩尔数减少",
-          "ku": "Bi tevahî hejmara molên gazê kêm dibe"
+          "zh": "气体的总物质的量减小",
+          "ku": "Hejmara giştî ya molên gazê kêm dibe"
         },
         {
           "tr": "İleri tepkime hızı azalır",
           "en": "The forward reaction rate decreases",
           "de": "Die Geschwindigkeit der Hinreaktion nimmt ab",
           "fr": "La vitesse de la réaction directe diminue",
-          "ru": "Скорость прямой реакции снижается",
-          "ar": "ينخفض معدل التفاعل الأمامي",
-          "zh": "正向反应速率降低",
-          "ku": "Leza reaksiyona pêş kêm dibe"
+          "ru": "Скорость прямой реакции уменьшится",
+          "ar": "تقل سرعة التفاعل الأمامي",
+          "zh": "正反应速率减小",
+          "ku": "Leza reaksiyona pêşve kêm dibe"
         }
       ],
       "correctIndex": 0,
@@ -1125,10 +1125,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The reaction is exothermic (ΔH < 0); when the temperature is raised the equilibrium shifts toward the reactants, the direction that absorbs heat. The NH3 concentration therefore decreases, the total number of gas moles increases and Kc becomes smaller. Heating also speeds up the forward reaction; the reverse reaction is simply accelerated more.",
         "de": "Die Reaktion ist exotherm (ΔH < 0); bei Temperaturerhöhung verschiebt sich das Gleichgewicht in Richtung der Edukte, also in die Wärme verbrauchende Richtung. Daher sinkt die NH3-Konzentration, die Gesamtzahl der Gasmole steigt und Kc wird kleiner. Die Erwärmung beschleunigt auch die Hinreaktion; die Rückreaktion wird lediglich stärker beschleunigt.",
         "fr": "La réaction est exothermique (ΔH < 0) ; quand la température augmente, l'équilibre se déplace vers les réactifs, dans le sens qui absorbe la chaleur. La concentration de NH3 diminue donc, le nombre total de moles de gaz augmente et Kc devient plus petite. Le chauffage accélère aussi la réaction directe ; la réaction inverse est simplement davantage accélérée.",
-        "ru": "Реакция экзотермическая (ΔH < 0); при повышении температуры равновесие смещается в сторону реагентов, то есть в направлении поглощения теплоты. Поэтому концентрация NH3 уменьшается, общее число молей газов растёт, а Kc становится меньше. Нагревание ускоряет и прямую реакцию; обратная просто ускоряется сильнее.",
+        "ru": "Реакция экзотермическая (ΔH < 0); при повышении температуры равновесие смещается в сторону реагентов, т. е. в направлении поглощения теплоты. Поэтому концентрация NH3 уменьшается, общее число молей газов растёт, а Kc становится меньше. Нагревание ускоряет и прямую реакцию, просто обратная ускоряется сильнее.",
         "ar": "التفاعل طارد للحرارة (ΔH < 0)؛ وعند رفع درجة الحرارة ينزاح الاتزان نحو المتفاعلات، أي في الاتجاه الماص للحرارة. لذلك يقل تركيز NH3 ويزداد العدد الكلي لمولات الغاز ويصغر Kc. والتسخين يسرّع التفاعل الأمامي أيضًا؛ لكن التفاعل العكسي يتسارع بدرجة أكبر.",
-        "zh": "该反应放热（ΔH < 0）；升高温度时平衡向吸热的反应物方向移动。因此NH3浓度减小，气体总物质的量增大，Kc变小。升温也使正反应加快，只是逆反应加快得更多。",
-        "ku": "Reaksiyon ekzotermîk e (ΔH < 0); dema germahî tê bilindkirin hevsengî ber bi reaktantan ve, ango ber bi aliyê ku germê dikişîne ve diçe. Ji ber vê yekê tîrbûna NH3 kêm dibe, hejmara giştî ya molên gazê zêde dibe û Kc biçûktir dibe. Germkirin reaksiyona pêş jî bilez dike; tenê reaksiyona paş bêtir bilez dibe."
+        "zh": "该反应放热(ΔH < 0)；升高温度时平衡向吸热的反应物方向移动。因此NH3浓度减小，气体总物质的量增大，Kc变小。升温也使正反应加快，只是逆反应加快得更多。",
+        "ku": "Reaksiyon ekzotermîk e (ΔH < 0); dema germahî tê bilindkirin, hevsengî ber bi aliyê reaktantan ve diçe ku germ lê tê xerckirin. Ji ber vê yekê tîrbûna NH3 kêm dibe, hejmara giştî ya molên gazê zêde dibe û Kc piçûk dibe. Bilindbûna germahiyê reaksiyona pêşve jî bileztir dike; tenê reaksiyona paşve bêtir bilez dibe."
       }
     },
     {
@@ -1138,10 +1138,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Which of the following is the relationship between Kp and Kc for the reaction C(s) + CO2(g) ⇌ 2 CO(g)?",
         "de": "Welche der folgenden Beziehungen besteht zwischen Kp und Kc für die Reaktion C(s) + CO2(g) ⇌ 2 CO(g)?",
         "fr": "Quelle est la relation entre Kp et Kc pour la réaction C(s) + CO2(g) ⇌ 2 CO(g) ?",
-        "ru": "Что из перечисленного является взаимосвязью между Kp и Kc для реакции C(s) + CO2(g) ⇌ 2 CO(g)?",
+        "ru": "Какое соотношение связывает Kp и Kc для реакции C(тв) + CO2(г) ⇌ 2 CO(г)?",
         "ar": "أي مما يلي يمثل العلاقة بين Kp وKc للتفاعل C(s) + CO2(g) ⇌ 2 CO(g)؟",
-        "zh": "对于 C(s) + CO2(g) ⇌ 2 CO(g) 反应，Kp 和 Kc 之间存在以下哪项关系？",
-        "ku": "Têkiliya Kp û Kc ji bo reaksiyona C(s) + CO2(g) ⇌ 2 CO(g) ji kîjan ji van jêrîn e?"
+        "zh": "对于反应 C(s) + CO2(g) ⇌ 2 CO(g)，Kp 与 Kc 的关系是下列哪一项？",
+        "ku": "Ji bo reaksiyona C(s) + CO2(g) ⇌ 2 CO(g), têkiliya di navbera Kp û Kc de kîjan e?"
       },
       "options": [
         {
@@ -1201,10 +1201,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Δn = n(gaseous products) - n(gaseous reactants) = 2 - 1 = 1 (C is a solid and is not counted). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Counting C as a gas would give Δn = 0 and Kp = Kc, which is wrong.",
         "de": "Δn = n(gasförmige Produkte) - n(gasförmige Edukte) = 2 - 1 = 1 (C ist ein Feststoff und wird nicht mitgezählt). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Zählt man C als Gas mit, erhält man Δn = 0 und Kp = Kc; das ist falsch.",
         "fr": "Δn = n(produits gazeux) - n(réactifs gazeux) = 2 - 1 = 1 (C est un solide et n'est pas compté). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Si l'on comptait C comme un gaz, on obtiendrait Δn = 0 et Kp = Kc, ce qui est faux.",
-        "ru": "Δn = n(газообразные продукты) - n(газообразные реагенты) = 2 - 1 = 1 (C — твёрдое вещество и не учитывается). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Если посчитать C как газ, получится Δn = 0 и Kp = Kc, что неверно.",
+        "ru": "Δn = n(газообразных продуктов) - n(газообразных реагентов) = 2 - 1 = 1 (C — твёрдое вещество и не учитывается). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Если считать C газом, получится Δn = 0 и Kp = Kc, что неверно.",
         "ar": "Δn = n(النواتج الغازية) - n(المتفاعلات الغازية) = 2 - 1 = 1 (C مادة صلبة ولا تُحتسب). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). ولو عُدّ C غازًا لكان Δn = 0 وKp = Kc، وهذا خطأ.",
-        "zh": "Δn = n(气态生成物) - n(气态反应物) = 2 - 1 = 1（C为固体，不计入）。Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT)。若把C当作气体计入，会得到Δn = 0、Kp = Kc，这是错误的。",
-        "ku": "Δn = n(hilberên gazî) - n(reaktantên gazî) = 2 - 1 = 1 (C hişk e û nayê hesibandin). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Ger C wek gaz were hesibandin Δn = 0 û Kp = Kc derdikeve; ev şaş e."
+        "zh": "Δn = n(气态生成物) - n(气态反应物) = 2 - 1 = 1(C为固体，不计入)。Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT)。若把C当作气体计入，会得到Δn = 0、Kp = Kc，这是错误的。",
+        "ku": "Δn = n(hilberên gaz) - n(reaktantên gaz) = 2 - 1 = 1 e (C hişk e, nayê hesibandin). Kp = Kc * (RT)^Δn = Kc * (RT)^1 = Kc * (RT). Heke C jî wekî gaz were hesibandin, Δn = 0 û Kp = Kc tê dîtin; ev şaş e."
       }
     },
     {
@@ -1214,10 +1214,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "In a closed 2-litre rigid container, 1 mol of H2 gas and 1 mol of I2 gas react at a certain temperature according to H2(g) + I2(g) ⇌ 2HI(g). At equilibrium the container holds 1.2 mol of HI. What is the equilibrium constant in terms of concentrations (Kc) at this temperature?",
         "de": "In einem geschlossenen, starren 2-Liter-Gefäß reagieren bei einer bestimmten Temperatur 1 mol H2-Gas und 1 mol I2-Gas gemäß H2(g) + I2(g) ⇌ 2HI(g). Im Gleichgewicht enthält das Gefäß 1,2 mol HI. Wie groß ist die Gleichgewichtskonstante bezüglich der Konzentrationen (Kc) bei dieser Temperatur?",
         "fr": "Dans un récipient fermé et rigide de 2 litres, 1 mol de H2 gazeux et 1 mol de I2 gazeux réagissent à une certaine température selon H2(g) + I2(g) ⇌ 2HI(g). À l’équilibre, le récipient contient 1,2 mol de HI. Quelle est la constante d’équilibre en concentrations (Kc) à cette température ?",
-        "ru": "В закрытом жёстком сосуде объёмом 2 л 1 моль газа H2 и 1 моль газа I2 реагируют при определённой температуре по уравнению H2(g) + I2(g) ⇌ 2HI(g). В равновесии в сосуде находится 1,2 моль HI. Чему равна константа равновесия, выраженная через концентрации (Kc), при этой температуре?",
-        "ar": "في وعاء مغلق ثابت الحجم سعته 2 لتر، يتفاعل 1 mol من غاز H2 مع 1 mol من غاز I2 عند درجة حرارة معينة وفق H2(g) + I2(g) ⇌ 2HI(g). عند الاتزان يحتوي الوعاء على 1.2 mol من HI. ما قيمة ثابت الاتزان بدلالة التراكيز (Kc) عند هذه الدرجة؟",
+        "ru": "В закрытом сосуде постоянного объёма 2 л 1 моль H2 и 1 моль I2 (газы) реагируют при определённой температуре по уравнению H2(г) + I2(г) ⇌ 2HI(г). В состоянии равновесия в сосуде находится 1,2 моль HI. Чему равна константа равновесия Kc (через концентрации) при этой температуре?",
+        "ar": "في وعاء مغلق ثابت الحجم سعته 2 L، يتفاعل 1 mol من غاز H2 مع 1 mol من غاز I2 عند درجة حرارة معينة وفق H2(g) + I2(g) ⇌ 2HI(g). عند الاتزان يحتوي الوعاء على 1.2 mol من HI. ما قيمة ثابت الاتزان بدلالة التراكيز (Kc) عند هذه الدرجة؟",
         "zh": "在容积为 2 L 的密闭刚性容器中，1 mol H2 气体与 1 mol I2 气体在一定温度下按 H2(g) + I2(g) ⇌ 2HI(g) 反应。达到平衡时容器中有 1.2 mol HI。该温度下以浓度表示的平衡常数 Kc 是多少？",
-        "ku": "Di firaxeke girtî ya 2 lîtreyî ya bi qebareya sabît de, 1 mol gaza H2 û 1 mol gaza I2 di germahiyeke diyar de li gorî H2(g) + I2(g) ⇌ 2HI(g) reaksiyon dikin. Dema hevsengî tê bidestxistin di firaxê de 1,2 mol HI heye. Li vê germahiyê sabîta hevsengiyê ya bi tîrbûnan (Kc) çend e?"
+        "ku": "Di firaxeke girtî ya 2 lîtreyî ya bi qebareya sabît de, 1 mol gaza H2 û 1 mol gaza I2 di germahiyeke diyar de li gorî hevkêşeya H2(g) + I2(g) ⇌ 2HI(g) dikevin reaksiyonê. Dema sîstem digihîje hevsengiyê, di firaxê de 1,2 mol HI heye. Li gorî vê, di vê germahiyê de sabîta hevsengiyê ya bi tîrbûnan (Kc) çend e?"
       },
       "options": [
         {
@@ -1277,10 +1277,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Forming 2 mol HI uses 1 mol H2 and 1 mol I2, so 1.2 mol HI used 0.6 mol H2 and 0.6 mol I2. At equilibrium H2 = I2 = 0.4 mol. Concentrations: [H2] = [I2] = 0.4/2 = 0.2 M, [HI] = 1.2/2 = 0.6 M. Kc = [HI]^2 / ([H2][I2]) = 0.36 / 0.04 = 9. Ignoring the exponent of HI gives 0.6/0.04 = 15, and using the coefficient as a multiplier gives 30 — both are errors.",
         "de": "Für 2 mol HI werden 1 mol H2 und 1 mol I2 verbraucht; für 1,2 mol HI also 0,6 mol H2 und 0,6 mol I2. Im Gleichgewicht: H2 = I2 = 0,4 mol. Konzentrationen: [H2] = [I2] = 0,4/2 = 0,2 M, [HI] = 1,2/2 = 0,6 M. Kc = [HI]^2 / ([H2][I2]) = 0,36 / 0,04 = 9. Ohne den Exponenten von HI erhält man 0,6/0,04 = 15, mit dem Koeffizienten als Faktor 30 – beides falsch.",
         "fr": "Pour former 2 mol de HI, il faut 1 mol de H2 et 1 mol de I2 ; pour 1,2 mol de HI, 0,6 mol de H2 et 0,6 mol de I2 ont réagi. À l’équilibre : H2 = I2 = 0,4 mol. Concentrations : [H2] = [I2] = 0,4/2 = 0,2 M, [HI] = 1,2/2 = 0,6 M. Kc = [HI]^2 / ([H2][I2]) = 0,36 / 0,04 = 9. Sans l’exposant de HI on obtient 0,6/0,04 = 15, et en multipliant par le coefficient on obtient 30 : deux erreurs.",
-        "ru": "На образование 2 моль HI расходуется 1 моль H2 и 1 моль I2; значит, на 1,2 моль HI израсходовано 0,6 моль H2 и 0,6 моль I2. В равновесии H2 = I2 = 0,4 моль. Концентрации: [H2] = [I2] = 0,4/2 = 0,2 M, [HI] = 1,2/2 = 0,6 M. Kc = [HI]^2 / ([H2][I2]) = 0,36 / 0,04 = 9. Если не возвести [HI] в степень, получится 0,6/0,04 = 15, а если умножить на коэффициент — 30; оба результата ошибочны.",
+        "ru": "На образование 2 моль HI расходуется 1 моль H2 и 1 моль I2; значит, на 1,2 моль HI израсходовано 0,6 моль H2 и 0,6 моль I2. В равновесии n(H2) = n(I2) = 0,4 моль. Концентрации: [H2] = [I2] = 0,4/2 = 0,2 M, [HI] = 1,2/2 = 0,6 M. Kc = [HI]^2 / ([H2][I2]) = 0,36 / 0,04 = 9. Если не возвести [HI] в квадрат, получится 0,6/0,04 = 15, а если умножить на коэффициент вместо возведения в степень — 30; оба результата ошибочны.",
         "ar": "لتكوين 2 mol من HI يُستهلك 1 mol من H2 و1 mol من I2؛ إذن لتكوين 1.2 mol من HI استُهلك 0.6 mol من H2 و0.6 mol من I2. عند الاتزان: H2 = I2 = 0.4 mol. التراكيز: [H2] = [I2] = 0.4/2 = 0.2 M، و[HI] = 1.2/2 = 0.6 M. Kc = [HI]^2 / ([H2][I2]) = 0.36 / 0.04 = 9. إهمال أس HI يعطي 0.6/0.04 = 15، واستخدام المعامل كمضاعف يعطي 30، وكلاهما خطأ.",
         "zh": "生成 2 mol HI 消耗 1 mol H2 和 1 mol I2，所以生成 1.2 mol HI 消耗了 0.6 mol H2 和 0.6 mol I2。平衡时 H2 = I2 = 0.4 mol。浓度：[H2] = [I2] = 0.4/2 = 0.2 M，[HI] = 1.2/2 = 0.6 M。Kc = [HI]^2 / ([H2][I2]) = 0.36 / 0.04 = 9。忽略 HI 的指数会得到 0.6/0.04 = 15，把计量数当作乘数会得到 30，都是错误的。",
-        "ku": "Ji bo çêbûna 2 mol HI, 1 mol H2 û 1 mol I2 tên xerckirin; ji bo 1,2 mol HI jî 0,6 mol H2 û 0,6 mol I2 hatine xerckirin. Di hevsengiyê de H2 = I2 = 0,4 mol. Tîrbûn: [H2] = [I2] = 0,4/2 = 0,2 M, [HI] = 1,2/2 = 0,6 M. Kc = [HI]^2 / ([H2][I2]) = 0,36 / 0,04 = 9. Ger hêza HI neyê girtin 0,6/0,04 = 15, ger hevber wekî carker were bikaranîn 30 tê dîtin; her du jî şaş in."
+        "ku": "Dema 2 mol HI çêdibe, 1 mol H2 û 1 mol I2 tên xerckirin; ji bo 1,2 mol HI, 0,6 mol H2 û 0,6 mol I2 hatine xerckirin. Di hevsengiyê de H2 = I2 = 0,4 mol. Tîrbûn: [H2] = [I2] = 0,4/2 = 0,2 M, [HI] = 1,2/2 = 0,6 M. Kc = [HI]^2 / ([H2][I2]) = 0,36 / 0,04 = 9. Heke hevberê HI wekî hêz neyê girtin 0,6/0,04 = 15, heke li şûna hêzê wekî pirker were bikaranîn 30 tê dîtin; ev encam şaş in."
       }
     },
     {
@@ -1290,10 +1290,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "At a certain temperature the equilibrium constant in terms of concentrations for 2SO3(g) ⇌ 2SO2(g) + O2(g) is Kc = 0.1. At the same temperature, 2 mol SO3, 2 mol SO2 and 1 mol O2 gases are placed in a rigid 2-litre container. Which of the following is correct about this system?",
         "de": "Bei einer bestimmten Temperatur beträgt die Gleichgewichtskonstante bezüglich der Konzentrationen für 2SO3(g) ⇌ 2SO2(g) + O2(g) Kc = 0,1. Bei derselben Temperatur werden 2 mol SO3, 2 mol SO2 und 1 mol O2 in ein starres 2-Liter-Gefäß gegeben. Welche der folgenden Aussagen über dieses System ist richtig?",
         "fr": "À une certaine température, la constante d’équilibre en concentrations de 2SO3(g) ⇌ 2SO2(g) + O2(g) vaut Kc = 0,1. À la même température, on introduit 2 mol de SO3, 2 mol de SO2 et 1 mol de O2 gazeux dans un récipient rigide de 2 litres. Laquelle des affirmations suivantes sur ce système est correcte ?",
-        "ru": "При определённой температуре константа равновесия, выраженная через концентрации, для реакции 2SO3(g) ⇌ 2SO2(g) + O2(g) равна Kc = 0,1. При той же температуре в жёсткий сосуд объёмом 2 л помещают 2 моль SO3, 2 моль SO2 и 1 моль O2. Какое из следующих утверждений об этой системе верно?",
-        "ar": "عند درجة حرارة معينة يكون ثابت الاتزان بدلالة التراكيز للتفاعل 2SO3(g) ⇌ 2SO2(g) + O2(g) هو Kc = 0.1. عند الدرجة نفسها وُضع 2 mol من SO3 و2 mol من SO2 و1 mol من O2 في وعاء ثابت الحجم سعته 2 لتر. أي العبارات التالية صحيحة بشأن هذا النظام؟",
+        "ru": "При определённой температуре константа равновесия (через концентрации) реакции 2SO3(г) ⇌ 2SO2(г) + O2(г) равна Kc = 0,1. При той же температуре в сосуд постоянного объёма 2 л помещают 2 моль SO3, 2 моль SO2 и 1 моль O2. Какое из утверждений об этой системе верно?",
+        "ar": "عند درجة حرارة معينة يكون ثابت الاتزان بدلالة التراكيز للتفاعل 2SO3(g) ⇌ 2SO2(g) + O2(g) هو Kc = 0.1. عند الدرجة نفسها وُضع 2 mol من SO3 و2 mol من SO2 و1 mol من O2 في وعاء ثابت الحجم سعته 2 L. أي العبارات التالية صحيحة بشأن هذا النظام؟",
         "zh": "某温度下反应 2SO3(g) ⇌ 2SO2(g) + O2(g) 以浓度表示的平衡常数 Kc = 0.1。在同一温度下，向 2 L 刚性容器中加入 2 mol SO3、2 mol SO2 和 1 mol O2。下列关于该体系的说法哪一项正确？",
-        "ku": "Di germahiyeke diyar de sabîta hevsengiyê ya bi tîrbûnan ji bo 2SO3(g) ⇌ 2SO2(g) + O2(g) Kc = 0,1 e. Di heman germahiyê de 2 mol SO3, 2 mol SO2 û 1 mol O2 dikevin firaxeke 2 lîtreyî ya bi qebareya sabît. Der barê vê pergalê de kîjan ji yên jêrîn rast e?"
+        "ku": "Di germahiyeke diyar de sabîta hevsengiyê ya bi tîrbûnan a reaksiyona 2SO3(g) ⇌ 2SO2(g) + O2(g) Kc = 0,1 e. Di heman germahiyê de 2 mol SO3, 2 mol SO2 û 1 mol O2 dikevin firaxeke 2 lîtreyî ya bi qebareya sabît. Li gorî vê, derbarê vê sîstemê de kîjan ji van rast e?"
       },
       "options": [
         {
@@ -1301,50 +1301,50 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "Qc = 0.1, so the system is at equilibrium.",
           "de": "Qc = 0,1; das System ist im Gleichgewicht.",
           "fr": "Qc = 0,1 ; le système est à l’équilibre.",
-          "ru": "Qc = 0,1, система находится в равновесии.",
+          "ru": "Qc = 0,1; система находится в равновесии.",
           "ar": "Qc = 0.1، والنظام في حالة اتزان.",
           "zh": "Qc = 0.1，体系处于平衡状态。",
-          "ku": "Qc = 0,1 e û pergal di hevsengiyê de ye."
+          "ku": "Qc = 0,1 e û sîstem di hevsengiyê de ye."
         },
         {
           "tr": "Qc = 2 olup tepkime ürünler yönüne ilerler.",
           "en": "Qc = 2, so the reaction proceeds toward the products.",
           "de": "Qc = 2; die Reaktion verläuft in Richtung der Produkte.",
           "fr": "Qc = 2 ; la réaction évolue vers les produits.",
-          "ru": "Qc = 2, реакция идёт в сторону продуктов.",
+          "ru": "Qc = 2; реакция идёт в сторону продуктов.",
           "ar": "Qc = 2، ويتقدم التفاعل نحو النواتج.",
           "zh": "Qc = 2，反应向正反应方向进行。",
-          "ku": "Qc = 2 e û reaksiyon ber bi hilberan ve diçe."
+          "ku": "Qc = 2 e û reaksiyon ber bi aliyê hilberan ve diçe."
         },
         {
           "tr": "Qc = 0,5 olup tepkime ürünler yönüne ilerler.",
           "en": "Qc = 0.5, so the reaction proceeds toward the products.",
           "de": "Qc = 0,5; die Reaktion verläuft in Richtung der Produkte.",
           "fr": "Qc = 0,5 ; la réaction évolue vers les produits.",
-          "ru": "Qc = 0,5, реакция идёт в сторону продуктов.",
+          "ru": "Qc = 0,5; реакция идёт в сторону продуктов.",
           "ar": "Qc = 0.5، ويتقدم التفاعل نحو النواتج.",
           "zh": "Qc = 0.5，反应向正反应方向进行。",
-          "ku": "Qc = 0,5 e û reaksiyon ber bi hilberan ve diçe."
+          "ku": "Qc = 0,5 e û reaksiyon ber bi aliyê hilberan ve diçe."
         },
         {
           "tr": "Qc = 0,5 olup dengeye ulaşılırken Kc değeri büyür.",
           "en": "Qc = 0.5, and Kc increases as equilibrium is approached.",
           "de": "Qc = 0,5; auf dem Weg zum Gleichgewicht wird Kc größer.",
           "fr": "Qc = 0,5 ; Kc augmente pendant que l’équilibre s’établit.",
-          "ru": "Qc = 0,5, по мере установления равновесия Kc увеличивается.",
+          "ru": "Qc = 0,5; по мере установления равновесия Kc увеличивается.",
           "ar": "Qc = 0.5، وتزداد قيمة Kc أثناء الوصول إلى الاتزان.",
           "zh": "Qc = 0.5，趋向平衡的过程中 Kc 增大。",
-          "ku": "Qc = 0,5 e û dema ber bi hevsengiyê ve diçe nirxa Kc mezin dibe."
+          "ku": "Qc = 0,5 e û heta gihîştina hevsengiyê nirxa Kc mezin dibe."
         },
         {
           "tr": "Qc = 0,5 olup dengeye ulaşılırken SO3 derişimi artar.",
           "en": "Qc = 0.5, and the SO3 concentration increases as equilibrium is approached.",
           "de": "Qc = 0,5; auf dem Weg zum Gleichgewicht steigt die SO3-Konzentration.",
           "fr": "Qc = 0,5 ; la concentration de SO3 augmente pendant que l’équilibre s’établit.",
-          "ru": "Qc = 0,5, по мере установления равновесия концентрация SO3 растёт.",
+          "ru": "Qc = 0,5; по мере установления равновесия концентрация SO3 растёт.",
           "ar": "Qc = 0.5، ويزداد تركيز SO3 أثناء الوصول إلى الاتزان.",
           "zh": "Qc = 0.5，趋向平衡的过程中 SO3 浓度增大。",
-          "ku": "Qc = 0,5 e û dema ber bi hevsengiyê ve diçe tîrbûna SO3 zêde dibe."
+          "ku": "Qc = 0,5 e û heta gihîştina hevsengiyê tîrbûna SO3 zêde dibe."
         }
       ],
       "correctIndex": 4,
@@ -1353,10 +1353,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Concentrations: [SO3] = 2/2 = 1 M, [SO2] = 2/2 = 1 M, [O2] = 1/2 = 0.5 M. Qc = [SO2]^2[O2] / [SO3]^2 = (1 · 0.5) / 1 = 0.5. Since Qc (0.5) > Kc (0.1), there are too many products; the reaction proceeds in the reverse direction, SO2 and O2 are consumed and the SO3 concentration increases. Kc depends only on temperature and does not change while equilibrium is approached. Writing Qc upside down gives 2 and leads to the wrong direction.",
         "de": "Konzentrationen: [SO3] = 2/2 = 1 M, [SO2] = 2/2 = 1 M, [O2] = 1/2 = 0,5 M. Qc = [SO2]^2[O2] / [SO3]^2 = (1 · 0,5) / 1 = 0,5. Da Qc (0,5) > Kc (0,1), liegen zu viele Produkte vor; die Reaktion läuft rückwärts, SO2 und O2 werden verbraucht und die SO3-Konzentration steigt. Kc hängt nur von der Temperatur ab und ändert sich dabei nicht. Ein umgekehrt aufgestellter Qc ergibt 2 und führt zur falschen Richtung.",
         "fr": "Concentrations : [SO3] = 2/2 = 1 M, [SO2] = 2/2 = 1 M, [O2] = 1/2 = 0,5 M. Qc = [SO2]^2[O2] / [SO3]^2 = (1 · 0,5) / 1 = 0,5. Comme Qc (0,5) > Kc (0,1), il y a trop de produits ; la réaction évolue dans le sens inverse, SO2 et O2 sont consommés et la concentration de SO3 augmente. Kc ne dépend que de la température et ne varie pas pendant ce temps. Un Qc écrit à l’envers donne 2 et conduit au mauvais sens.",
-        "ru": "Концентрации: [SO3] = 2/2 = 1 M, [SO2] = 2/2 = 1 M, [O2] = 1/2 = 0,5 M. Qc = [SO2]^2[O2] / [SO3]^2 = (1 · 0,5) / 1 = 0,5. Так как Qc (0,5) > Kc (0,1), продуктов слишком много; реакция идёт в обратном направлении, SO2 и O2 расходуются, концентрация SO3 растёт. Kc зависит только от температуры и при этом не меняется. Перевёрнутое выражение Qc даёт 2 и приводит к неверному направлению.",
-        "ar": "التراكيز: [SO3] = 2/2 = 1 M، [SO2] = 2/2 = 1 M، [O2] = 1/2 = 0.5 M. Qc = [SO2]^2[O2] / [SO3]^2 = (1 · 0.5) / 1 = 0.5. بما أن Qc (0.5) > Kc (0.1) فالنواتج أكثر من اللازم؛ يسير التفاعل في الاتجاه العكسي، فيُستهلك SO2 وO2 ويزداد تركيز SO3. تعتمد Kc على درجة الحرارة فقط ولا تتغير أثناء ذلك. كتابة Qc مقلوبًا تعطي 2 وتؤدي إلى اتجاه خاطئ.",
+        "ru": "Концентрации: [SO3] = 2/2 = 1 M, [SO2] = 2/2 = 1 M, [O2] = 1/2 = 0,5 M. Qc = [SO2]^2[O2] / [SO3]^2 = (1 · 0,5) / 1 = 0,5. Так как Qc (0,5) > Kc (0,1), продуктов больше, чем в равновесии; реакция идёт в обратном направлении (к реагентам), SO2 и O2 расходуются, концентрация SO3 растёт. Kc зависит только от температуры и при установлении равновесия не меняется. Перевёрнутое выражение Qc даёт 2 и неверное направление.",
+        "ar": "التراكيز: [SO3] = 2/2 = 1 M، [SO2] = 2/2 = 1 M، [O2] = 1/2 = 0.5 M. Qc = [SO2]^2[O2] / [SO3]^2 = (1 · 0.5) / 1 = 0.5. بما أن Qc (0.5) > Kc (0.1) فتراكيز النواتج أكبر من قيمها عند الاتزان؛ يسير التفاعل في الاتجاه العكسي (نحو المتفاعلات)، فيُستهلك SO2 وO2 ويزداد تركيز SO3. تعتمد Kc على درجة الحرارة فقط ولا تتغير أثناء الوصول إلى الاتزان. كتابة Qc مقلوبًا تعطي 2 وتؤدي إلى اتجاه خاطئ.",
         "zh": "浓度：[SO3] = 2/2 = 1 M，[SO2] = 2/2 = 1 M，[O2] = 1/2 = 0.5 M。Qc = [SO2]^2[O2] / [SO3]^2 = (1 · 0.5) / 1 = 0.5。由于 Qc (0.5) > Kc (0.1)，生成物过多，反应向逆反应方向进行，SO2 和 O2 被消耗，SO3 浓度增大。Kc 只与温度有关，在此过程中不变。若把 Qc 写反会得到 2，从而判断错方向。",
-        "ku": "Tîrbûn: [SO3] = 2/2 = 1 M, [SO2] = 2/2 = 1 M, [O2] = 1/2 = 0,5 M. Qc = [SO2]^2[O2] / [SO3]^2 = (1 · 0,5) / 1 = 0,5. Ji ber ku Qc (0,5) > Kc (0,1) e, hilber zêde ne; reaksiyon ber bi reaktantan (paşve) ve diçe, SO2 û O2 tên xerckirin û tîrbûna SO3 zêde dibe. Kc tenê bi germahiyê ve girêdayî ye û di vê navberê de naguhere. Ger Qc berevajî were nivîsandin 2 tê dîtin û arasteya şaş tê diyarkirin."
+        "ku": "Tîrbûn: [SO3] = 2/2 = 1 M, [SO2] = 2/2 = 1 M, [O2] = 1/2 = 0,5 M. Qc = [SO2]^2[O2] / [SO3]^2 = (1 · 0,5) / 1 = 0,5. Ji ber ku Qc (0,5) > Kc (0,1) e, tîrbûnên hilberan zêde ne; reaksiyon ber bi aliyê reaktantan (paşve) ve diçe, SO2 û O2 tên xerckirin û tîrbûna SO3 zêde dibe. Kc tenê bi germahiyê ve girêdayî ye û heta gihîştina hevsengiyê naguhere. Heke Qc berevajî were nivîsandin 2 tê dîtin û alî şaş tê diyarkirin."
       }
     },
     {
@@ -1366,10 +1366,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "1 mol each of CO and H2O gases are placed in a rigid 1-litre container, and at a certain temperature the equilibrium CO(g) + H2O(g) ⇌ CO2(g) + H2(g) is established. Given Kc = 9 at this temperature, what is the equilibrium concentration of CO2 in mol/L?",
         "de": "Je 1 mol CO- und H2O-Gas werden in ein starres 1-Liter-Gefäß gegeben; bei einer bestimmten Temperatur stellt sich das Gleichgewicht CO(g) + H2O(g) ⇌ CO2(g) + H2(g) ein. Bei Kc = 9: Wie groß ist die Gleichgewichtskonzentration von CO2 in mol/L?",
         "fr": "On introduit 1 mol de CO et 1 mol de H2O gazeux dans un récipient rigide de 1 litre ; à une certaine température s’établit l’équilibre CO(g) + H2O(g) ⇌ CO2(g) + H2(g). Sachant que Kc = 9 à cette température, quelle est la concentration de CO2 à l’équilibre en mol/L ?",
-        "ru": "В жёсткий сосуд объёмом 1 л поместили по 1 моль газов CO и H2O; при определённой температуре установилось равновесие CO(g) + H2O(g) ⇌ CO2(g) + H2(g). При этой температуре Kc = 9. Чему равна равновесная концентрация CO2 в моль/л?",
-        "ar": "وُضع 1 mol من كل من غازي CO وH2O في وعاء ثابت الحجم سعته 1 لتر، وعند درجة حرارة معينة تكوّن الاتزان CO(g) + H2O(g) ⇌ CO2(g) + H2(g). إذا كانت Kc = 9 عند هذه الدرجة، فما تركيز CO2 عند الاتزان بوحدة mol/L؟",
+        "ru": "В сосуд постоянного объёма 1 л поместили по 1 моль газообразных CO и H2O; при определённой температуре установилось равновесие CO(г) + H2O(г) ⇌ CO2(г) + H2(г). При этой температуре Kc = 9. Чему равна равновесная концентрация CO2, моль/л?",
+        "ar": "وُضع 1 mol من كل من غازي CO وH2O في وعاء ثابت الحجم سعته 1 L، وعند درجة حرارة معينة تكوّن الاتزان CO(g) + H2O(g) ⇌ CO2(g) + H2(g). إذا كانت Kc = 9 عند هذه الدرجة، فما تركيز CO2 عند الاتزان بوحدة mol/L؟",
         "zh": "向 1 L 刚性容器中各加入 1 mol CO 和 H2O 气体，在一定温度下建立平衡 CO(g) + H2O(g) ⇌ CO2(g) + H2(g)。该温度下 Kc = 9，平衡时 CO2 的浓度是多少 mol/L？",
-        "ku": "Ji her yekê 1 mol gazên CO û H2O dikevin firaxeke 1 lîtreyî ya bi qebareya sabît û di germahiyeke diyar de hevsengiya CO(g) + H2O(g) ⇌ CO2(g) + H2(g) çêdibe. Li vê germahiyê Kc = 9 be, di hevsengiyê de tîrbûna CO2 çend mol/L e?"
+        "ku": "Di germahiyeke diyar de, ji her yekê ji gazên CO û H2O 1 mol dikevin firaxeke 1 lîtreyî ya bi qebareya sabît û hevsengiya CO(g) + H2O(g) ⇌ CO2(g) + H2(g) saz dibe. Heke di vê germahiyê de Kc = 9 be, di hevsengiyê de tîrbûna gaza CO2 çend mol/L e?"
       },
       "options": [
         {
@@ -1430,9 +1430,9 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Im Gleichgewicht gilt [CO2] = [H2] = x und [CO] = [H2O] = 1 - x. Kc = x^2 / (1 - x)^2 = 9; Wurzelziehen auf beiden Seiten ergibt x / (1 - x) = 3 → x = 3 - 3x → 4x = 3 → x = 0,75 M. Ohne Wurzel (x / (1 - x) = 9) erhält man 0,90; 0,25 ist die im Gleichgewicht verbleibende CO-Konzentration.",
         "fr": "À l’équilibre [CO2] = [H2] = x et [CO] = [H2O] = 1 - x. Kc = x^2 / (1 - x)^2 = 9 ; en prenant la racine carrée des deux membres : x / (1 - x) = 3 → x = 3 - 3x → 4x = 3 → x = 0,75 M. Sans racine carrée (x / (1 - x) = 9), on trouve 0,90 ; 0,25 est la concentration de CO restante à l’équilibre.",
         "ru": "В равновесии [CO2] = [H2] = x и [CO] = [H2O] = 1 - x. Kc = x^2 / (1 - x)^2 = 9; извлекая квадратный корень из обеих частей, получаем x / (1 - x) = 3 → x = 3 - 3x → 4x = 3 → x = 0,75 M. Без извлечения корня (x / (1 - x) = 9) получается 0,90; 0,25 — это концентрация оставшегося CO.",
-        "ar": "عند الاتزان [CO2] = [H2] = x و[CO] = [H2O] = 1 - x. Kc = x^2 / (1 - x)^2 = 9؛ وبأخذ الجذر التربيعي للطرفين: x / (1 - x) = 3 ← x = 3 - 3x ← 4x = 3 ← x = 0.75 M. بدون الجذر (x / (1 - x) = 9) نحصل على 0.90؛ أما 0.25 فهو تركيز CO المتبقي عند الاتزان.",
+        "ar": "عند الاتزان [CO2] = [H2] = x و[CO] = [H2O] = 1 - x. Kc = x^2 / (1 - x)^2 = 9؛ وبأخذ الجذر التربيعي للطرفين: x / (1 - x) = 3 → x = 3 - 3x → 4x = 3 → x = 0.75 M. بدون الجذر (x / (1 - x) = 9) نحصل على 0.90؛ أما 0.25 فهو تركيز CO المتبقي عند الاتزان.",
         "zh": "平衡时 [CO2] = [H2] = x，[CO] = [H2O] = 1 - x。Kc = x^2 / (1 - x)^2 = 9；两边开平方得 x / (1 - x) = 3 → x = 3 - 3x → 4x = 3 → x = 0.75 M。若不开方写成 x / (1 - x) = 9 会得到 0.90；0.25 是平衡时剩余 CO 的浓度。",
-        "ku": "Di hevsengiyê de [CO2] = [H2] = x û [CO] = [H2O] = 1 - x. Kc = x^2 / (1 - x)^2 = 9; ger koka çargoşe ya her du aliyan were girtin x / (1 - x) = 3 → x = 3 - 3x → 4x = 3 → x = 0,75 M. Bêyî kokê (x / (1 - x) = 9) 0,90 tê dîtin; 0,25 jî tîrbûna CO ye ku di hevsengiyê de dimîne."
+        "ku": "Di hevsengiyê de [CO2] = [H2] = x û [CO] = [H2O] = 1 - x e. Kc = x^2 / (1 - x)^2 = 9; heke koka duyem a her du aliyan were girtin x / (1 - x) = 3 → x = 3 - 3x → 4x = 3 → x = 0,75 M. Heke bêyî girtina kokê x / (1 - x) = 9 were nivîsandin 0,90 tê dîtin; 0,25 jî tîrbûna CO ya ku di hevsengiyê de dimîne ye."
       }
     },
     {
@@ -1442,10 +1442,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The equilibrium constant in terms of concentrations for PCl5(g) ⇌ PCl3(g) + Cl2(g) at 227 °C is Kc = 0.05. What is the equilibrium constant in terms of partial pressures, Kp, at the same temperature? (R = 0.082 L·atm/(mol·K))",
         "de": "Die Gleichgewichtskonstante bezüglich der Konzentrationen für PCl5(g) ⇌ PCl3(g) + Cl2(g) beträgt bei 227 °C Kc = 0,05. Wie groß ist die Gleichgewichtskonstante bezüglich der Partialdrücke, Kp, bei derselben Temperatur? (R = 0,082 L·atm/(mol·K))",
         "fr": "La constante d’équilibre en concentrations de PCl5(g) ⇌ PCl3(g) + Cl2(g) à 227 °C vaut Kc = 0,05. Quelle est la constante d’équilibre en pressions partielles, Kp, à la même température ? (R = 0,082 L·atm/(mol·K))",
-        "ru": "Константа равновесия реакции PCl5(g) ⇌ PCl3(g) + Cl2(g), выраженная через концентрации, при 227 °C равна Kc = 0,05. Чему равна константа равновесия, выраженная через парциальные давления, Kp, при той же температуре? (R = 0,082 л·атм/(моль·К))",
+        "ru": "Константа равновесия (через концентрации) реакции PCl5(г) ⇌ PCl3(г) + Cl2(г) при 227 °C равна Kc = 0,05. Чему равна константа равновесия Kp (через парциальные давления) при той же температуре? (R = 0,082 л·атм/(моль·K))",
         "ar": "ثابت الاتزان بدلالة التراكيز للتفاعل PCl5(g) ⇌ PCl3(g) + Cl2(g) عند 227 °C هو Kc = 0.05. ما قيمة ثابت الاتزان بدلالة الضغوط الجزئية Kp عند الدرجة نفسها؟ (R = 0.082 L·atm/(mol·K))",
         "zh": "反应 PCl5(g) ⇌ PCl3(g) + Cl2(g) 在 227 °C 时以浓度表示的平衡常数 Kc = 0.05。同温度下以分压表示的平衡常数 Kp 是多少？(R = 0.082 L·atm/(mol·K))",
-        "ku": "Sabîta hevsengiyê ya bi tîrbûnan ji bo PCl5(g) ⇌ PCl3(g) + Cl2(g) li 227 °C Kc = 0,05 e. Li heman germahiyê sabîta hevsengiyê ya bi zextên qismî, Kp, çend e? (R = 0,082 L·atm/(mol·K))"
+        "ku": "Sabîta hevsengiyê ya bi tîrbûnan a reaksiyona PCl5(g) ⇌ PCl3(g) + Cl2(g) li 227 °C Kc = 0,05 e. Li gorî vê, di heman germahiyê de sabîta hevsengiyê ya bi zextên parçeyî (Kp) çend e? (R = 0,082 L·atm/(mol·K))"
       },
       "options": [
         {
@@ -1505,10 +1505,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Δn = (1 + 1) - 1 = 1. T = 227 + 273 = 500 K, RT = 0.082 · 500 = 41. Kp = Kc · (RT)^Δn = 0.05 · 41 = 2.05. Using 227 without converting to kelvin gives 0.93; dividing Kc by RT gives 1.22·10^-3; taking Δn = 2 gives 84.05.",
         "de": "Δn = (1 + 1) - 1 = 1. T = 227 + 273 = 500 K, RT = 0,082 · 500 = 41. Kp = Kc · (RT)^Δn = 0,05 · 41 = 2,05. Wird 227 ohne Umrechnung in Kelvin eingesetzt, erhält man 0,93; teilt man Kc durch RT, 1,22·10^-3; mit Δn = 2 erhält man 84,05.",
         "fr": "Δn = (1 + 1) - 1 = 1. T = 227 + 273 = 500 K, RT = 0,082 · 500 = 41. Kp = Kc · (RT)^Δn = 0,05 · 41 = 2,05. En utilisant 227 sans conversion en kelvins on obtient 0,93 ; en divisant Kc par RT, 1,22·10^-3 ; avec Δn = 2, 84,05.",
-        "ru": "Δn = (1 + 1) - 1 = 1. T = 227 + 273 = 500 К, RT = 0,082 · 500 = 41. Kp = Kc · (RT)^Δn = 0,05 · 41 = 2,05. Если подставить 227 без перевода в кельвины, получится 0,93; если разделить Kc на RT — 1,22·10^-3; если принять Δn = 2 — 84,05.",
+        "ru": "Δn = (1 + 1) - 1 = 1. T = 227 + 273 = 500 K, RT = 0,082 · 500 = 41. Kp = Kc · (RT)^Δn = 0,05 · 41 = 2,05. Если подставить 227 без перевода в кельвины, получится 0,93; если разделить Kc на RT — 1,22·10^-3; если принять Δn = 2 — 84,05.",
         "ar": "Δn = (1 + 1) - 1 = 1. T = 227 + 273 = 500 K، RT = 0.082 · 500 = 41. Kp = Kc · (RT)^Δn = 0.05 · 41 = 2.05. استخدام 227 دون التحويل إلى الكلفن يعطي 0.93؛ وقسمة Kc على RT تعطي 1.22·10^-3؛ واعتبار Δn = 2 يعطي 84.05.",
         "zh": "Δn = (1 + 1) - 1 = 1。T = 227 + 273 = 500 K，RT = 0.082 · 500 = 41。Kp = Kc · (RT)^Δn = 0.05 · 41 = 2.05。不换算成开尔文直接用 227 会得到 0.93；用 Kc 除以 RT 会得到 1.22·10^-3；误取 Δn = 2 会得到 84.05。",
-        "ku": "Δn = (1 + 1) - 1 = 1. T = 227 + 273 = 500 K, RT = 0,082 · 500 = 41. Kp = Kc · (RT)^Δn = 0,05 · 41 = 2,05. Ger germahî neyê veguhertin Kelvin û 227 were bikaranîn 0,93; ger Kc li RT were parvekirin 1,22·10^-3; ger Δn = 2 were hesibandin 84,05 tê dîtin."
+        "ku": "Δn = (1 + 1) - 1 = 1. T = 227 + 273 = 500 K, RT = 0,082 · 500 = 41. Kp = Kc · (RT)^Δn = 0,05 · 41 = 2,05. Heke germahî neyê veguhertin bo Kelvin û 227 were girtin 0,93; heke Kc li ser RT were dabeşkirin 1,22·10^-3; heke Δn = 2 were hesibandin 84,05 tê dîtin."
       }
     },
     {
@@ -1518,10 +1518,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "At the same temperature, the equilibrium constant of X2(g) + Y2(g) ⇌ 2XY(g) is Kc1 = 4·10^-2 and that of 2XY(g) + Y2(g) ⇌ 2XY2(g) is Kc2 = 2.5·10^-1. What is the equilibrium constant of XY2(g) ⇌ 1/2 X2(g) + Y2(g) at the same temperature?",
         "de": "Bei derselben Temperatur beträgt die Gleichgewichtskonstante von X2(g) + Y2(g) ⇌ 2XY(g) Kc1 = 4·10^-2 und die von 2XY(g) + Y2(g) ⇌ 2XY2(g) Kc2 = 2,5·10^-1. Wie groß ist die Gleichgewichtskonstante von XY2(g) ⇌ 1/2 X2(g) + Y2(g) bei derselben Temperatur?",
         "fr": "À la même température, la constante d’équilibre de X2(g) + Y2(g) ⇌ 2XY(g) vaut Kc1 = 4·10^-2 et celle de 2XY(g) + Y2(g) ⇌ 2XY2(g) vaut Kc2 = 2,5·10^-1. Quelle est la constante d’équilibre de XY2(g) ⇌ 1/2 X2(g) + Y2(g) à la même température ?",
-        "ru": "При одной и той же температуре константа равновесия реакции X2(g) + Y2(g) ⇌ 2XY(g) равна Kc1 = 4·10^-2, а реакции 2XY(g) + Y2(g) ⇌ 2XY2(g) — Kc2 = 2,5·10^-1. Чему равна константа равновесия реакции XY2(g) ⇌ 1/2 X2(g) + Y2(g) при той же температуре?",
+        "ru": "При одной и той же температуре константа равновесия реакции X2(г) + Y2(г) ⇌ 2XY(г) равна Kc1 = 4·10^-2, а реакции 2XY(г) + Y2(г) ⇌ 2XY2(г) — Kc2 = 2,5·10^-1. Чему равна константа равновесия реакции XY2(г) ⇌ 1/2 X2(г) + Y2(г) при той же температуре?",
         "ar": "عند درجة الحرارة نفسها، ثابت اتزان التفاعل X2(g) + Y2(g) ⇌ 2XY(g) هو Kc1 = 4·10^-2، وثابت اتزان التفاعل 2XY(g) + Y2(g) ⇌ 2XY2(g) هو Kc2 = 2.5·10^-1. ما ثابت اتزان التفاعل XY2(g) ⇌ 1/2 X2(g) + Y2(g) عند الدرجة نفسها؟",
         "zh": "同一温度下，反应 X2(g) + Y2(g) ⇌ 2XY(g) 的平衡常数 Kc1 = 4·10^-2，反应 2XY(g) + Y2(g) ⇌ 2XY2(g) 的平衡常数 Kc2 = 2.5·10^-1。同温度下反应 XY2(g) ⇌ 1/2 X2(g) + Y2(g) 的平衡常数是多少？",
-        "ku": "Di heman germahiyê de sabîta hevsengiyê ya X2(g) + Y2(g) ⇌ 2XY(g) Kc1 = 4·10^-2 û ya 2XY(g) + Y2(g) ⇌ 2XY2(g) Kc2 = 2,5·10^-1 e. Li heman germahiyê sabîta hevsengiyê ya XY2(g) ⇌ 1/2 X2(g) + Y2(g) çend e?"
+        "ku": "Di heman germahiyê de sabîta hevsengiyê ya reaksiyona X2(g) + Y2(g) ⇌ 2XY(g) Kc1 = 4·10^-2 û ya reaksiyona 2XY(g) + Y2(g) ⇌ 2XY2(g) Kc2 = 2,5·10^-1 e. Li gorî vê, di heman germahiyê de sabîta hevsengiyê ya reaksiyona XY2(g) ⇌ 1/2 X2(g) + Y2(g) çend e?"
       },
       "options": [
         {
@@ -1581,10 +1581,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Adding the two reactions gives X2(g) + 2Y2(g) ⇌ 2XY2(g) with K = Kc1 · Kc2 = 4·10^-2 · 2.5·10^-1 = 10^-2. The required reaction is this one reversed and multiplied by 1/2: reversing gives K = 1/10^-2 = 100, multiplying by 1/2 gives K = 100^(1/2) = 10. Reversing but forgetting the factor 1/2 gives 100; taking only the square root without reversing gives 10^-1.",
         "de": "Die Addition beider Reaktionen ergibt X2(g) + 2Y2(g) ⇌ 2XY2(g) mit K = Kc1 · Kc2 = 4·10^-2 · 2,5·10^-1 = 10^-2. Die gesuchte Reaktion ist diese, umgekehrt und mit 1/2 multipliziert: Umkehren ergibt K = 1/10^-2 = 100, Multiplikation mit 1/2 ergibt K = 100^(1/2) = 10. Wer nur umkehrt und den Faktor 1/2 vergisst, erhält 100; wer nur die Wurzel zieht, ohne umzukehren, erhält 10^-1.",
         "fr": "L’addition des deux réactions donne X2(g) + 2Y2(g) ⇌ 2XY2(g) avec K = Kc1 · Kc2 = 4·10^-2 · 2,5·10^-1 = 10^-2. La réaction demandée est celle-ci inversée puis multipliée par 1/2 : l’inversion donne K = 1/10^-2 = 100, la multiplication par 1/2 donne K = 100^(1/2) = 10. Inverser en oubliant le facteur 1/2 donne 100 ; prendre seulement la racine sans inverser donne 10^-1.",
-        "ru": "Сложение двух реакций даёт X2(g) + 2Y2(g) ⇌ 2XY2(g) с K = Kc1 · Kc2 = 4·10^-2 · 2,5·10^-1 = 10^-2. Искомая реакция — это она же, записанная в обратную сторону и умноженная на 1/2: обращение даёт K = 1/10^-2 = 100, умножение на 1/2 даёт K = 100^(1/2) = 10. Если обратить, но забыть множитель 1/2, получится 100; если только извлечь корень без обращения — 10^-1.",
+        "ru": "Сложение двух реакций даёт X2(г) + 2Y2(г) ⇌ 2XY2(г) с K = Kc1 · Kc2 = 4·10^-2 · 2,5·10^-1 = 10^-2. Искомая реакция — это та же реакция, записанная в обратном направлении и умноженная на 1/2: обращение даёт K = 1/10^-2 = 100, умножение на 1/2 даёт K = 100^(1/2) = 10. Если обратить реакцию, но забыть множитель 1/2, получится 100; если только извлечь корень, не обращая реакцию, — 10^-1.",
         "ar": "بجمع التفاعلين نحصل على X2(g) + 2Y2(g) ⇌ 2XY2(g) و K = Kc1 · Kc2 = 4·10^-2 · 2.5·10^-1 = 10^-2. التفاعل المطلوب هو هذا التفاعل معكوسًا ومضروبًا في 1/2: العكس يعطي K = 1/10^-2 = 100، والضرب في 1/2 يعطي K = 100^(1/2) = 10. من يعكس وينسى المعامل 1/2 يحصل على 100، ومن يأخذ الجذر فقط دون عكس يحصل على 10^-1.",
         "zh": "两式相加得 X2(g) + 2Y2(g) ⇌ 2XY2(g)，K = Kc1 · Kc2 = 4·10^-2 · 2.5·10^-1 = 10^-2。所求反应是该反应逆写后再乘以 1/2：逆写得 K = 1/10^-2 = 100，乘以 1/2 得 K = 100^(1/2) = 10。只逆写而忘记 1/2 会得到 100；只开方而不逆写会得到 10^-1。",
-        "ku": "Ger her du reaksiyon werin berhevkirin X2(g) + 2Y2(g) ⇌ 2XY2(g) tê bidestxistin û K = Kc1 · Kc2 = 4·10^-2 · 2,5·10^-1 = 10^-2 e. Reaksiyona tê xwestin ev e, berevajîkirî û bi 1/2 hatî carkirin: berevajîkirin K = 1/10^-2 = 100 dide, carkirina bi 1/2 jî K = 100^(1/2) = 10 dide. Yê ku tenê berevajî dike û 1/2 ji bîr dike 100, yê ku bêyî berevajîkirinê tenê kokê digire 10^-1 dibîne."
+        "ku": "Heke her du reaksiyon werin berhevkirin, X2(g) + 2Y2(g) ⇌ 2XY2(g) tê bidestxistin û K = Kc1 · Kc2 = 4·10^-2 · 2,5·10^-1 = 10^-2 e. Reaksiyona tê xwestin rewşa berevajîkirî û bi 1/2 pirkirî ya vê reaksiyonê ye: piştî berevajîkirinê K = 1/10^-2 = 100, piştî pirkirina bi 1/2 K = 100^(1/2) = 10. Kesê ku tenê berevajî dike û hevberê 1/2 ji bîr dike 100, kesê ku berevajîkirinê ji bîr dike û tenê koka duyem digire 10^-1 dibîne."
       }
     },
     {
@@ -1594,10 +1594,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The reaction 2SO2(g) + O2(g) ⇌ 2SO3(g)  ΔH < 0 is at equilibrium in a closed container. Which of the following changes, each applied separately — I. adding O2 gas at constant temperature and volume, II. raising the temperature at constant volume, III. reducing the container volume at constant temperature — increase the number of moles of SO3?",
         "de": "Die Reaktion 2SO2(g) + O2(g) ⇌ 2SO3(g)  ΔH < 0 befindet sich in einem geschlossenen Gefäß im Gleichgewicht. Welche der folgenden, jeweils einzeln durchgeführten Maßnahmen – I. Zugabe von O2 bei konstanter Temperatur und konstantem Volumen, II. Temperaturerhöhung bei konstantem Volumen, III. Verkleinerung des Gefäßvolumens bei konstanter Temperatur – erhöhen die Stoffmenge von SO3?",
         "fr": "La réaction 2SO2(g) + O2(g) ⇌ 2SO3(g)  ΔH < 0 est à l’équilibre dans un récipient fermé. Parmi les opérations suivantes, appliquées séparément — I. ajouter du O2 à température et volume constants, II. augmenter la température à volume constant, III. diminuer le volume du récipient à température constante — lesquelles augmentent le nombre de moles de SO3 ?",
-        "ru": "Реакция 2SO2(g) + O2(g) ⇌ 2SO3(g)  ΔH < 0 находится в равновесии в закрытом сосуде. Какие из следующих воздействий, применённых по отдельности, — I. добавление O2 при постоянных температуре и объёме, II. повышение температуры при постоянном объёме, III. уменьшение объёма сосуда при постоянной температуре — увеличивают число молей SO3?",
-        "ar": "التفاعل 2SO2(g) + O2(g) ⇌ 2SO3(g)  ΔH < 0 في حالة اتزان داخل وعاء مغلق. أي من العمليات التالية، كل منها على حدة — I. إضافة غاز O2 عند ثبات درجة الحرارة والحجم، II. رفع درجة الحرارة عند ثبات الحجم، III. تصغير حجم الوعاء عند ثبات درجة الحرارة — تزيد عدد مولات SO3؟",
+        "ru": "Реакция 2SO2(г) + O2(г) ⇌ 2SO3(г), ΔH < 0, находится в равновесии в закрытом сосуде. Какие из воздействий, применённых по отдельности, увеличивают количество (моль) SO3? I. Добавление O2 при постоянных температуре и объёме. II. Повышение температуры при постоянном объёме. III. Уменьшение объёма сосуда при постоянной температуре.",
+        "ar": "التفاعل 2SO2(g) + O2(g) ⇌ 2SO3(g)  ΔH < 0 في حالة اتزان داخل وعاء مغلق. أيّ العمليات الآتية، إذا طُبّقت كلٌّ منها على حدة، تزيد عدد مولات غاز SO3؟ I. إضافة غاز O2 عند ثبات درجة الحرارة والحجم II. رفع درجة الحرارة عند ثبات الحجم III. تصغير حجم الوعاء عند ثبات درجة الحرارة",
         "zh": "反应 2SO2(g) + O2(g) ⇌ 2SO3(g)  ΔH < 0 在密闭容器中处于平衡。分别进行下列操作：I. 恒温恒容下加入 O2 气体，II. 恒容下升高温度，III. 恒温下减小容器体积。其中哪些能使 SO3 的物质的量增加？",
-        "ku": "Reaksiyona 2SO2(g) + O2(g) ⇌ 2SO3(g)  ΔH < 0 di firaxeke girtî de di hevsengiyê de ye. Ji van guhertinên ku cuda cuda tên kirin — I. di germahî û qebareya sabît de zêdekirina gaza O2, II. di qebareya sabît de bilindkirina germahiyê, III. di germahiya sabît de kêmkirina qebareya firaxê — kîjan hejmara molên SO3 zêde dikin?"
+        "ku": "Reaksiyona 2SO2(g) + O2(g) ⇌ 2SO3(g)  ΔH < 0 di firaxeke girtî de di hevsengiyê de ye. Ji van karên ku yek bi yek li vê hevsengiyê tên kirin, I. di germahî û qebareya sabît de lêzêdekirina gaza O2 li firaxê, II. di qebareya sabît de bilindkirina germahiyê, III. di germahiya sabît de kêmkirina qebareya firaxê, kîjan hejmara molên gaza SO3 zêde dikin?"
       },
       "options": [
         {
@@ -1657,10 +1657,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "I: To consume the added O2 the equilibrium shifts toward the products, so SO3 increases. II: The reaction is exothermic, so raising the temperature shifts the equilibrium toward the reactants and SO3 decreases. III: When the volume decreases the equilibrium shifts to the side with fewer gas moles (3 mol of gas → 2 mol, the products), so SO3 increases. Therefore I and III are correct; thinking that heating also increases SO3 is the typical mistake for an exothermic reaction.",
         "de": "I: Um das zugesetzte O2 zu verbrauchen, verschiebt sich das Gleichgewicht zu den Produkten; SO3 nimmt zu. II: Die Reaktion ist exotherm, daher verschiebt eine Temperaturerhöhung das Gleichgewicht zu den Edukten; SO3 nimmt ab. III: Bei Volumenverkleinerung verschiebt sich das Gleichgewicht zur Seite mit weniger Gasmolen (3 mol Gas → 2 mol, Produkte); SO3 nimmt zu. Daher sind I und III richtig; zu glauben, dass auch Erwärmen SO3 erhöht, ist der typische Fehler bei exothermen Reaktionen.",
         "fr": "I : Pour consommer le O2 ajouté, l’équilibre se déplace vers les produits ; SO3 augmente. II : La réaction est exothermique, donc une hausse de température déplace l’équilibre vers les réactifs ; SO3 diminue. III : Quand le volume diminue, l’équilibre se déplace vers le côté qui compte le moins de moles de gaz (3 mol de gaz → 2 mol, les produits) ; SO3 augmente. I et III sont donc corrects ; croire que le chauffage augmente aussi SO3 est l’erreur typique pour une réaction exothermique.",
-        "ru": "I: Чтобы израсходовать добавленный O2, равновесие смещается к продуктам; SO3 увеличивается. II: Реакция экзотермическая, поэтому нагревание смещает равновесие к реагентам; SO3 уменьшается. III: При уменьшении объёма равновесие смещается в сторону меньшего числа молей газа (3 моль газа → 2 моль, продукты); SO3 увеличивается. Следовательно, верны I и III; считать, что нагревание тоже увеличивает SO3, — типичная ошибка для экзотермической реакции.",
+        "ru": "I: чтобы израсходовать добавленный O2, равновесие смещается к продуктам; SO3 становится больше. II: реакция экзотермическая, поэтому нагревание смещает равновесие к реагентам; SO3 становится меньше. III: при уменьшении объёма равновесие смещается в сторону меньшего числа молей газа (3 моль газа → 2 моль, продукты); SO3 становится больше. Следовательно, верны I и III; считать, что нагревание тоже увеличивает количество SO3, — типичная ошибка для экзотермической реакции.",
         "ar": "I: لاستهلاك O2 المضاف ينزاح الاتزان نحو النواتج فيزداد SO3. II: التفاعل طارد للحرارة، لذا يزيح رفع درجة الحرارة الاتزان نحو المتفاعلات فيقل SO3. III: عند تصغير الحجم ينزاح الاتزان نحو الجهة الأقل في مولات الغاز (من 3 mol غاز إلى 2 mol، أي النواتج) فيزداد SO3. إذن I وIII صحيحتان؛ والاعتقاد بأن التسخين يزيد SO3 أيضًا خطأ شائع في التفاعل الطارد للحرارة.",
-        "zh": "I：为消耗加入的 O2，平衡向正反应方向移动，SO3 增加。II：该反应放热，升高温度使平衡向逆反应方向移动，SO3 减少。III：体积减小时平衡向气体分子数少的一侧（3 mol 气体 → 2 mol，生成物）移动，SO3 增加。所以 I 和 III 正确；认为升温也能增加 SO3 是放热反应中的典型错误。",
-        "ku": "I: Ji bo xerckirina O2 ya zêdekirî hevsengî ber bi hilberan ve diçe, SO3 zêde dibe. II: Reaksiyon ekzotermîk e, ji ber vê yekê bilindbûna germahiyê hevsengiyê ber bi reaktantan ve dibe, SO3 kêm dibe. III: Dema qebare kêm dibe hevsengî ber bi aliyê ku molên gazê kêmtir in (ji 3 mol gazê ber bi 2 mol, hilber) ve diçe, SO3 zêde dibe. Ji ber vê yekê I û III rast in; fikra ku germkirin jî SO3 zêde dike di reaksiyona ekzotermîk de şaşiyeke asayî ye."
+        "zh": "I：为消耗加入的 O2，平衡向正反应方向移动，SO3 增加。II：该反应放热，升高温度使平衡向逆反应方向移动，SO3 减少。III：体积减小时平衡向气体分子数少的一侧(3 mol 气体 → 2 mol，生成物)移动，SO3 增加。所以 I 和 III 正确；认为升温也能增加 SO3 是放热反应中的典型错误。",
+        "ku": "I: Ji bo xerckirina O2 ya lêzêdekirî hevsengî ber bi hilberan ve diçe, SO3 zêde dibe. II: Ji ber ku reaksiyon ekzotermîk e, bilindbûna germahiyê hevsengiyê ber bi reaktantan ve dikişîne, SO3 kêm dibe. III: Dema qebare kêm dibe, hevsengî ber bi aliyê ku hejmara molên gazê kêmtir e (ji 3 mol gazê bo 2 mol gazê, aliyê hilberan) ve diçe, SO3 zêde dibe. Ji ber vê yekê I û III rast in; fikra ku bilindbûna germahiyê jî SO3 zêde dike di reaksiyona ekzotermîk de şaşiyeke tîpîk e."
       }
     },
     {
@@ -1670,10 +1670,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The reaction CaCO3(s) ⇌ CaO(s) + CO2(g) is at equilibrium in a closed container at a certain temperature. Which of the following statements about this equilibrium are correct? I. The equilibrium constant in terms of concentrations is Kc = [CO2]. II. The relation Kp = Kc · RT holds. III. If some CaCO3(s) is added at constant temperature, the partial pressure of CO2 increases.",
         "de": "Die Reaktion CaCO3(s) ⇌ CaO(s) + CO2(g) befindet sich bei einer bestimmten Temperatur in einem geschlossenen Gefäß im Gleichgewicht. Welche der folgenden Aussagen über dieses Gleichgewicht sind richtig? I. Die Gleichgewichtskonstante bezüglich der Konzentrationen lautet Kc = [CO2]. II. Es gilt Kp = Kc · RT. III. Wird bei konstanter Temperatur etwas CaCO3(s) zugegeben, steigt der Partialdruck von CO2.",
         "fr": "La réaction CaCO3(s) ⇌ CaO(s) + CO2(g) est à l’équilibre dans un récipient fermé à une certaine température. Parmi les affirmations suivantes sur cet équilibre, lesquelles sont correctes ? I. La constante d’équilibre en concentrations s’écrit Kc = [CO2]. II. La relation Kp = Kc · RT est valable. III. Si l’on ajoute un peu de CaCO3(s) à température constante, la pression partielle de CO2 augmente.",
-        "ru": "Реакция CaCO3(s) ⇌ CaO(s) + CO2(g) находится в равновесии в закрытом сосуде при определённой температуре. Какие из следующих утверждений об этом равновесии верны? I. Константа равновесия, выраженная через концентрации, имеет вид Kc = [CO2]. II. Выполняется соотношение Kp = Kc · RT. III. Если при постоянной температуре добавить немного CaCO3(s), парциальное давление CO2 увеличится.",
+        "ru": "Реакция CaCO3(тв) ⇌ CaO(тв) + CO2(г) находится в равновесии в закрытом сосуде при определённой температуре. Какие из утверждений об этом равновесии верны? I. Константа равновесия через концентрации имеет вид Kc = [CO2]. II. Выполняется соотношение Kp = Kc · RT. III. Если при постоянной температуре добавить в сосуд немного CaCO3(тв), парциальное давление CO2 увеличится.",
         "ar": "التفاعل CaCO3(s) ⇌ CaO(s) + CO2(g) في حالة اتزان داخل وعاء مغلق عند درجة حرارة معينة. أي العبارات التالية حول هذا الاتزان صحيحة؟ I. ثابت الاتزان بدلالة التراكيز هو Kc = [CO2]. II. العلاقة Kp = Kc · RT صحيحة. III. إذا أضيفت كمية من CaCO3(s) عند ثبات درجة الحرارة يزداد الضغط الجزئي لغاز CO2.",
-        "zh": "反应 CaCO3(s) ⇌ CaO(s) + CO2(g) 在一定温度下于密闭容器中处于平衡。关于该平衡的下列说法中哪些正确？I. 以浓度表示的平衡常数为 Kc = [CO2]。II. Kp = Kc · RT 成立。III. 恒温下加入少量 CaCO3(s)，CO2 的分压增大。",
-        "ku": "Reaksiyona CaCO3(s) ⇌ CaO(s) + CO2(g) di germahiyeke diyar de di firaxeke girtî de di hevsengiyê de ye. Ji van gotinên der barê vê hevsengiyê de kîjan rast in? I. Sabîta hevsengiyê ya bi tîrbûnan Kc = [CO2] e. II. Têkiliya Kp = Kc · RT derbasdar e. III. Ger di germahiya sabît de hinek CaCO3(s) were zêdekirin, zexta qismî ya CO2 zêde dibe."
+        "zh": "反应 CaCO3(s) ⇌ CaO(s) + CO2(g) 在一定温度下于密闭容器中处于平衡。关于该平衡有下列说法：I. 以浓度表示的平衡常数为 Kc = [CO2]。II. Kp = Kc · RT 成立。III. 恒温下加入少量 CaCO3(s)，CO2 的分压增大。其中正确的是哪些？",
+        "ku": "Reaksiyona CaCO3(s) ⇌ CaO(s) + CO2(g) di germahiyeke diyar de di firaxeke girtî de di hevsengiyê de ye. Derbarê vê hevsengiyê de, kîjan ji van gotinan rast in? I. Sabîta hevsengiyê ya bi tîrbûnan Kc = [CO2] e. II. Têkiliya Kp = Kc · RT derbasdar e. III. Heke di germahiya sabît de hinek CaCO3(s) li firaxê were zêdekirin, zexta parçeyî ya gaza CO2 zêde dibe."
       },
       "options": [
         {
@@ -1733,10 +1733,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "I is correct: pure solids are not written in the equilibrium expression, so Kc = [CO2]. II is correct: in the gas phase Δn = 1 - 0 = 1, so Kp = Kc · (RT)^1. III is wrong: the concentration of a pure solid is constant; adding CaCO3(s) does not shift the equilibrium, and as long as the temperature is constant the partial pressure of CO2 stays equal to Kp.",
         "de": "I ist richtig: Reine Feststoffe erscheinen nicht im Gleichgewichtsausdruck, also Kc = [CO2]. II ist richtig: In der Gasphase ist Δn = 1 - 0 = 1, also Kp = Kc · (RT)^1. III ist falsch: Die Konzentration eines reinen Feststoffs ist konstant; die Zugabe von CaCO3(s) verschiebt das Gleichgewicht nicht, und bei konstanter Temperatur bleibt der CO2-Partialdruck gleich Kp.",
         "fr": "I est correcte : les solides purs n’apparaissent pas dans l’expression d’équilibre, donc Kc = [CO2]. II est correcte : en phase gazeuse Δn = 1 - 0 = 1, donc Kp = Kc · (RT)^1. III est fausse : la concentration d’un solide pur est constante ; ajouter du CaCO3(s) ne déplace pas l’équilibre et, tant que la température est constante, la pression partielle de CO2 reste égale à Kp.",
-        "ru": "I верно: чистые твёрдые вещества не входят в выражение константы, поэтому Kc = [CO2]. II верно: в газовой фазе Δn = 1 - 0 = 1, поэтому Kp = Kc · (RT)^1. III неверно: концентрация чистого твёрдого вещества постоянна; добавление CaCO3(s) не смещает равновесие, и при постоянной температуре парциальное давление CO2 остаётся равным Kp.",
+        "ru": "I верно: чистые твёрдые вещества не входят в выражение константы, поэтому Kc = [CO2]. II верно: для газов Δn = 1 - 0 = 1, поэтому Kp = Kc · (RT)^1. III неверно: концентрация чистого твёрдого вещества постоянна; добавление CaCO3(тв) не смещает равновесие, и при постоянной температуре парциальное давление CO2 остаётся равным Kp.",
         "ar": "I صحيحة: لا تُكتب المواد الصلبة النقية في تعبير الاتزان، لذلك Kc = [CO2]. II صحيحة: في الطور الغازي Δn = 1 - 0 = 1، لذلك Kp = Kc · (RT)^1. III خاطئة: تركيز المادة الصلبة النقية ثابت؛ إضافة CaCO3(s) لا تزيح الاتزان، وما دامت درجة الحرارة ثابتة يبقى الضغط الجزئي لـ CO2 مساويًا لـ Kp.",
         "zh": "I 正确：纯固体不写入平衡表达式，所以 Kc = [CO2]。II 正确：气相中 Δn = 1 - 0 = 1，所以 Kp = Kc · (RT)^1。III 错误：纯固体的浓度是常数，加入 CaCO3(s) 不会使平衡移动；只要温度不变，CO2 的分压就始终等于 Kp。",
-        "ku": "I rast e: hişkên saf di îfadeya hevsengiyê de nayên nivîsandin, ji ber vê yekê Kc = [CO2]. II rast e: di qonaxa gazê de Δn = 1 - 0 = 1 e, ji ber vê yekê Kp = Kc · (RT)^1. III şaş e: tîrbûna hişkê saf sabît e; zêdekirina CaCO3(s) hevsengiyê nalivîne û heta ku germahî sabît be zexta qismî ya CO2 bi Kp re wekhev dimîne."
+        "ku": "I rast e: madeyên hişk ên paqij di hevkêşeya hevsengiyê de nayên nivîsandin, ji ber vê yekê Kc = [CO2] e. II rast e: ji ber ku di fazê gaz de Δn = 1 - 0 = 1 e, Kp = Kc · (RT)^1. III şaş e: tîrbûna madeya hişk a paqij sabît e; lêzêdekirina CaCO3(s) hevsengiyê nakişîne û heta ku germahî sabît be zexta parçeyî ya CO2 wekhevî nirxa Kp dimîne."
       }
     },
     {
@@ -1746,10 +1746,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "For a gas-phase reaction, the equilibrium constant in terms of concentrations is 50 at 300 K and 2 at 500 K. Which of the following statements about this reaction are correct? I. The reaction is exothermic. II. When the temperature is raised, the rate of the forward reaction decreases. III. The activation energy of the forward reaction is greater than that of the reverse reaction.",
         "de": "Für eine Gasphasenreaktion beträgt die Gleichgewichtskonstante bezüglich der Konzentrationen bei 300 K 50 und bei 500 K 2. Welche der folgenden Aussagen über diese Reaktion sind richtig? I. Die Reaktion ist exotherm. II. Bei Temperaturerhöhung nimmt die Geschwindigkeit der Hinreaktion ab. III. Die Aktivierungsenergie der Hinreaktion ist größer als die der Rückreaktion.",
         "fr": "Pour une réaction en phase gazeuse, la constante d’équilibre en concentrations vaut 50 à 300 K et 2 à 500 K. Parmi les affirmations suivantes sur cette réaction, lesquelles sont correctes ? I. La réaction est exothermique. II. Quand la température augmente, la vitesse de la réaction directe diminue. III. L’énergie d’activation de la réaction directe est supérieure à celle de la réaction inverse.",
-        "ru": "Для газофазной реакции константа равновесия, выраженная через концентрации, равна 50 при 300 К и 2 при 500 К. Какие из следующих утверждений об этой реакции верны? I. Реакция экзотермическая. II. При повышении температуры скорость прямой реакции уменьшается. III. Энергия активации прямой реакции больше, чем обратной.",
+        "ru": "Константа равновесия (через концентрации) газофазной реакции равна 50 при 300 K и 2 при 500 K. Какие из утверждений об этой реакции верны? I. Реакция экзотермическая. II. При повышении температуры скорость прямой реакции уменьшается. III. Энергия активации прямой реакции больше, чем обратной.",
         "ar": "لتفاعل يجري في الطور الغازي، ثابت الاتزان بدلالة التراكيز يساوي 50 عند 300 K و2 عند 500 K. أي العبارات التالية حول هذا التفاعل صحيحة؟ I. التفاعل طارد للحرارة. II. عند رفع درجة الحرارة تقل سرعة التفاعل الأمامي. III. طاقة تنشيط التفاعل الأمامي أكبر من طاقة تنشيط التفاعل العكسي.",
-        "zh": "某气相反应以浓度表示的平衡常数在 300 K 时为 50，在 500 K 时为 2。关于该反应的下列说法中哪些正确？I. 该反应是放热反应。II. 升高温度时正反应速率减小。III. 正反应的活化能大于逆反应的活化能。",
-        "ku": "Ji bo reaksiyoneke di qonaxa gazê de, sabîta hevsengiyê ya bi tîrbûnan li 300 K 50 û li 500 K 2 ye. Ji van gotinên der barê vê reaksiyonê de kîjan rast in? I. Reaksiyon ekzotermîk e. II. Dema germahî bilind dibe leza reaksiyona pêşve kêm dibe. III. Enerjiya aktîvbûnê ya reaksiyona pêşve ji ya reaksiyona paşve mezintir e."
+        "zh": "某气相反应以浓度表示的平衡常数在 300 K 时为 50，在 500 K 时为 2。关于该反应有下列说法：I. 该反应是放热反应。II. 升高温度时正反应速率减小。III. 正反应的活化能大于逆反应的活化能。其中正确的是哪些？",
+        "ku": "Sabîta hevsengiyê ya bi tîrbûnan a reaksiyoneke di fazê gaz de li 300 K 50 û li 500 K 2 ye. Li gorî vê, derbarê vê reaksiyonê de kîjan ji van gotinan rast in? I. Reaksiyon ekzotermîk e. II. Dema germahî tê bilindkirin, leza reaksiyona pêşve kêm dibe. III. Enerjiya aktîvasyonê ya reaksiyona pêşve ji ya reaksiyona paşve mezintir e."
       },
       "options": [
         {
@@ -1809,10 +1809,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "I is correct: Kc decreases as the temperature rises, so the equilibrium shifts toward the reactants — a feature of an exothermic reaction. II is wrong: raising the temperature speeds up both the forward and the reverse reaction; the reverse reaction speeds up more, so the equilibrium shifts to the reactants. III is wrong: for an exothermic reaction ΔH = Ea(forward) - Ea(reverse) < 0, so the reverse activation energy is the larger one.",
         "de": "I ist richtig: Kc nimmt mit steigender Temperatur ab, das Gleichgewicht verschiebt sich also zu den Edukten – typisch für eine exotherme Reaktion. II ist falsch: Eine Temperaturerhöhung beschleunigt Hin- und Rückreaktion; die Rückreaktion wird stärker beschleunigt, daher verschiebt sich das Gleichgewicht zu den Edukten. III ist falsch: Bei einer exothermen Reaktion ist ΔH = Ea(hin) - Ea(rück) < 0, also ist die Aktivierungsenergie der Rückreaktion größer.",
         "fr": "I est correcte : Kc diminue quand la température augmente, l’équilibre se déplace donc vers les réactifs — caractéristique d’une réaction exothermique. II est fausse : une hausse de température accélère les deux réactions, directe et inverse ; la réaction inverse est davantage accélérée, d’où le déplacement vers les réactifs. III est fausse : pour une réaction exothermique ΔH = Ea(directe) - Ea(inverse) < 0, donc l’énergie d’activation inverse est la plus grande.",
-        "ru": "I верно: с ростом температуры Kc уменьшается, значит, равновесие смещается к реагентам — признак экзотермической реакции. II неверно: нагревание ускоряет и прямую, и обратную реакции; обратная ускоряется сильнее, поэтому равновесие смещается к реагентам. III неверно: для экзотермической реакции ΔH = Ea(прям.) - Ea(обр.) < 0, поэтому энергия активации обратной реакции больше.",
+        "ru": "I верно: с ростом температуры Kc уменьшается, значит, равновесие смещается к реагентам — признак экзотермической реакции. II неверно: нагревание ускоряет и прямую, и обратную реакции; обратная ускоряется сильнее, поэтому равновесие смещается к реагентам. III неверно: для экзотермической реакции ΔH = Ea(пр) - Ea(обр) < 0, поэтому энергия активации обратной реакции больше.",
         "ar": "I صحيحة: تقل Kc مع ارتفاع درجة الحرارة، أي أن الاتزان ينزاح نحو المتفاعلات، وهذه سمة التفاعل الطارد للحرارة. II خاطئة: رفع درجة الحرارة يسرّع التفاعلين الأمامي والعكسي معًا؛ لكن العكسي يتسارع أكثر فينزاح الاتزان نحو المتفاعلات. III خاطئة: في التفاعل الطارد للحرارة ΔH = Ea(الأمامي) - Ea(العكسي) < 0، لذا طاقة تنشيط التفاعل العكسي هي الأكبر.",
         "zh": "I 正确：温度升高 Kc 减小，说明平衡向逆反应方向移动，这是放热反应的特征。II 错误：升高温度使正、逆反应速率都增大，只是逆反应增大得更多，所以平衡逆向移动。III 错误：放热反应 ΔH = Ea(正) - Ea(逆) < 0，所以逆反应的活化能更大。",
-        "ku": "I rast e: dema germahî bilind dibe Kc kêm dibe, yanî hevsengî ber bi reaktantan ve diçe; ev taybetiya reaksiyona ekzotermîk e. II şaş e: bilindbûna germahiyê her du reaksiyonên pêşve û paşve jî bilez dike; reaksiyona paşve bêtir bilez dibe, ji ber vê yekê hevsengî ber bi reaktantan ve diçe. III şaş e: di reaksiyona ekzotermîk de ΔH = Ea(pêşve) - Ea(paşve) < 0 e, ji ber vê yekê enerjiya aktîvbûnê ya reaksiyona paşve mezintir e."
+        "ku": "I rast e: ji ber ku bi bilindbûna germahiyê Kc piçûk dibe, hevsengî ber bi reaktantan ve diçe; ev taybetmendiya reaksiyona ekzotermîk e. II şaş e: bilindbûna germahiyê hem reaksiyona pêşve hem jî ya paşve bileztir dike; ji ber ku reaksiyona paşve bêtir bilez dibe, hevsengî ber bi reaktantan ve diçe. III şaş e: di reaksiyona ekzotermîk de ΔH = Ea(pêşve) - Ea(paşve) < 0 e, ji ber vê yekê enerjiya aktîvasyonê ya reaksiyona paşve mezintir e."
       }
     },
     {
@@ -1822,10 +1822,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The reaction X(g) + Y(g) ⇌ Z(g) is at equilibrium in a rigid container. Some X gas is added at constant temperature. When the new equilibrium is established, how have the concentrations of X, Y and Z changed compared with the first equilibrium?",
         "de": "Die Reaktion X(g) + Y(g) ⇌ Z(g) befindet sich in einem starren Gefäß im Gleichgewicht. Bei konstanter Temperatur wird etwas X-Gas zugegeben. Wie haben sich die Konzentrationen von X, Y und Z im neuen Gleichgewicht gegenüber dem ersten Gleichgewicht verändert?",
         "fr": "La réaction X(g) + Y(g) ⇌ Z(g) est à l’équilibre dans un récipient rigide. On ajoute un peu de gaz X à température constante. Une fois le nouvel équilibre établi, comment les concentrations de X, Y et Z ont-elles varié par rapport au premier équilibre ?",
-        "ru": "Реакция X(g) + Y(g) ⇌ Z(g) находится в равновесии в жёстком сосуде. При постоянной температуре в сосуд добавляют немного газа X. Как изменились концентрации X, Y и Z в новом равновесии по сравнению с первым?",
+        "ru": "Реакция X(г) + Y(г) ⇌ Z(г) находится в равновесии в сосуде постоянного объёма. При постоянной температуре в сосуд добавляют немного газа X. Как изменятся концентрации X, Y и Z в новом равновесии по сравнению с первоначальным?",
         "ar": "التفاعل X(g) + Y(g) ⇌ Z(g) في حالة اتزان داخل وعاء ثابت الحجم. أضيفت كمية من غاز X عند ثبات درجة الحرارة. عند تكوّن الاتزان الجديد، كيف تغيرت تراكيز X وY وZ مقارنة بالاتزان الأول؟",
         "zh": "反应 X(g) + Y(g) ⇌ Z(g) 在刚性容器中处于平衡。恒温下向容器中加入一些 X 气体。建立新平衡后，X、Y、Z 的浓度与原平衡相比如何变化？",
-        "ku": "Reaksiyona X(g) + Y(g) ⇌ Z(g) di firaxeke bi qebareya sabît de di hevsengiyê de ye. Di germahiya sabît de hinek gaza X tê zêdekirin. Dema hevsengiya nû çêdibe, tîrbûnên X, Y û Z li gorî hevsengiya yekem çawa guherîne?"
+        "ku": "Reaksiyona X(g) + Y(g) ⇌ Z(g) di firaxeke bi qebareya sabît de di hevsengiyê de ye. Di germahiya sabît de hinek gaza X li firaxê tê zêdekirin. Dema hevsengiya nû saz dibe, tîrbûnên gazên X, Y û Z li gorî nirxên hevsengiya yekem çawa guherîne?"
       },
       "options": [
         {
@@ -1833,7 +1833,7 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "[X] increases, [Y] decreases, [Z] increases",
           "de": "[X] steigt, [Y] sinkt, [Z] steigt",
           "fr": "[X] augmente, [Y] diminue, [Z] augmente",
-          "ru": "[X] растёт, [Y] уменьшается, [Z] растёт",
+          "ru": "[X] увеличится, [Y] уменьшится, [Z] увеличится",
           "ar": "[X] يزداد، [Y] يقل، [Z] يزداد",
           "zh": "[X] 增大，[Y] 减小，[Z] 增大",
           "ku": "[X] zêde dibe, [Y] kêm dibe, [Z] zêde dibe"
@@ -1843,7 +1843,7 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "[X] decreases, [Y] decreases, [Z] increases",
           "de": "[X] sinkt, [Y] sinkt, [Z] steigt",
           "fr": "[X] diminue, [Y] diminue, [Z] augmente",
-          "ru": "[X] уменьшается, [Y] уменьшается, [Z] растёт",
+          "ru": "[X] уменьшится, [Y] уменьшится, [Z] увеличится",
           "ar": "[X] يقل، [Y] يقل، [Z] يزداد",
           "zh": "[X] 减小，[Y] 减小，[Z] 增大",
           "ku": "[X] kêm dibe, [Y] kêm dibe, [Z] zêde dibe"
@@ -1853,7 +1853,7 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "[X] increases, [Y] increases, [Z] increases",
           "de": "[X] steigt, [Y] steigt, [Z] steigt",
           "fr": "[X] augmente, [Y] augmente, [Z] augmente",
-          "ru": "[X] растёт, [Y] растёт, [Z] растёт",
+          "ru": "[X] увеличится, [Y] увеличится, [Z] увеличится",
           "ar": "[X] يزداد، [Y] يزداد، [Z] يزداد",
           "zh": "[X] 增大，[Y] 增大，[Z] 增大",
           "ku": "[X] zêde dibe, [Y] zêde dibe, [Z] zêde dibe"
@@ -1863,7 +1863,7 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "[X] unchanged, [Y] decreases, [Z] increases",
           "de": "[X] unverändert, [Y] sinkt, [Z] steigt",
           "fr": "[X] inchangée, [Y] diminue, [Z] augmente",
-          "ru": "[X] не меняется, [Y] уменьшается, [Z] растёт",
+          "ru": "[X] не изменится, [Y] уменьшится, [Z] увеличится",
           "ar": "[X] لا يتغير، [Y] يقل، [Z] يزداد",
           "zh": "[X] 不变，[Y] 减小，[Z] 增大",
           "ku": "[X] naguhere, [Y] kêm dibe, [Z] zêde dibe"
@@ -1873,7 +1873,7 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "[X] increases, [Y] decreases, [Z] unchanged",
           "de": "[X] steigt, [Y] sinkt, [Z] unverändert",
           "fr": "[X] augmente, [Y] diminue, [Z] inchangée",
-          "ru": "[X] растёт, [Y] уменьшается, [Z] не меняется",
+          "ru": "[X] увеличится, [Y] уменьшится, [Z] не изменится",
           "ar": "[X] يزداد، [Y] يقل، [Z] لا يتغير",
           "zh": "[X] 增大，[Y] 减小，[Z] 不变",
           "ku": "[X] zêde dibe, [Y] kêm dibe, [Z] naguhere"
@@ -1885,10 +1885,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Part of the added X reacts with Y and is consumed; the equilibrium shifts toward the products, Y decreases and Z increases. The Le Chatelier response only partly offsets the change, so at the new equilibrium [X] is still higher than at the first one — thinking X decreased or stayed the same is a mistake. Since the temperature is constant, Kc = [Z]/([X][Y]) does not change; the decrease in Y while X and Z rise keeps it constant.",
         "de": "Ein Teil des zugesetzten X reagiert mit Y und wird verbraucht; das Gleichgewicht verschiebt sich zu den Produkten, Y nimmt ab und Z zu. Die Le-Chatelier-Reaktion gleicht die Störung nur teilweise aus; daher ist [X] im neuen Gleichgewicht immer noch höher als im ersten – die Annahme, X sei gesunken oder unverändert, ist falsch. Bei konstanter Temperatur bleibt Kc = [Z]/([X][Y]) gleich; die Abnahme von Y bei steigendem X und Z sorgt dafür.",
         "fr": "Une partie du X ajouté réagit avec Y et est consommée ; l’équilibre se déplace vers les produits, Y diminue et Z augmente. La réponse de Le Chatelier ne compense la perturbation que partiellement ; au nouvel équilibre [X] reste donc plus élevée qu’au premier — penser que X a diminué ou n’a pas varié est une erreur. La température étant constante, Kc = [Z]/([X][Y]) ne change pas ; la baisse de Y pendant que X et Z augmentent le garantit.",
-        "ru": "Часть добавленного X реагирует с Y и расходуется; равновесие смещается к продуктам, Y уменьшается, Z растёт. Смещение по Ле Шателье компенсирует воздействие лишь частично, поэтому в новом равновесии [X] всё же выше, чем в первом; считать, что X уменьшилась или не изменилась, — ошибка. Так как температура постоянна, Kc = [Z]/([X][Y]) не меняется; это обеспечивается уменьшением Y при росте X и Z.",
+        "ru": "Часть добавленного X реагирует с Y и расходуется; равновесие смещается к продуктам, [Y] уменьшается, [Z] растёт. Смещение по принципу Ле Шателье компенсирует воздействие лишь частично, поэтому в новом равновесии [X] всё же выше, чем в первоначальном; считать, что концентрация X уменьшилась или не изменилась, — ошибка. Так как температура постоянна, Kc = [Z]/([X][Y]) не меняется; это обеспечивается уменьшением [Y] при росте [X] и [Z].",
         "ar": "يتفاعل جزء من X المضاف مع Y ويُستهلك؛ فينزاح الاتزان نحو النواتج، ويقل Y ويزداد Z. استجابة لوشاتلييه تعاكس التغيير جزئيًا فقط؛ لذا يبقى [X] في الاتزان الجديد أكبر منه في الأول، والاعتقاد بأن X قل أو لم يتغير خطأ. وبما أن درجة الحرارة ثابتة فإن Kc = [Z]/([X][Y]) لا تتغير؛ ونقصان Y مع زيادة X وZ يحقق ذلك.",
         "zh": "加入的 X 有一部分与 Y 反应被消耗，平衡向正反应方向移动，Y 减小，Z 增大。勒夏特列原理只能部分抵消这种变化，所以新平衡时 [X] 仍高于原平衡；认为 X 减小或不变是错误的。温度不变，Kc = [Z]/([X][Y]) 不变，X 和 Z 增大而 Y 减小正好保持其不变。",
-        "ku": "Beşek ji X ya zêdekirî bi Y re reaksiyon dike û tê xerckirin; hevsengî ber bi hilberan ve diçe, Y kêm dibe û Z zêde dibe. Bersiva Le Chatelier guhertinê tenê qismî kêm dike; ji ber vê yekê di hevsengiya nû de [X] dîsa jî ji ya yekem zêdetir e, fikra ku X kêm bûye an neguheriye şaş e. Ji ber ku germahî sabît e Kc = [Z]/([X][Y]) naguhere; kêmbûna Y dema X û Z zêde dibin vê yekê pêk tîne."
+        "ku": "Beşek ji X ya lêzêdekirî bi Y re dikeve reaksiyonê û tê xerckirin; hevsengî ber bi hilberan ve diçe, Y kêm dibe û Z zêde dibe. Bandora Le Chatelier guherînê tenê beşek jê radike; ji ber vê yekê di hevsengiya nû de tîrbûna X dîsa jî ji ya hevsengiya yekem zêdetir e, û fikra ku X kêm bûye an neguheriye şaş e. Ji ber ku germahî sabît e, Kc = [Z]/([X][Y]) naguhere; kêmbûna Y dema X û Z zêde dibin vê yekê misoger dike."
       }
     },
     {
@@ -1898,10 +1898,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Only N2O4 gas is placed in a closed rigid container, giving an initial pressure of 1 atm. At constant temperature the equilibrium N2O4(g) ⇌ 2NO2(g) is established and the total pressure becomes 1.8 atm. What is the equilibrium constant in terms of partial pressures, Kp, at this temperature?",
         "de": "In ein geschlossenes, starres Gefäß wird nur N2O4-Gas gegeben; der Anfangsdruck beträgt 1 atm. Bei konstanter Temperatur stellt sich das Gleichgewicht N2O4(g) ⇌ 2NO2(g) ein und der Gesamtdruck beträgt 1,8 atm. Wie groß ist die Gleichgewichtskonstante bezüglich der Partialdrücke, Kp, bei dieser Temperatur?",
         "fr": "On introduit uniquement du N2O4 gazeux dans un récipient fermé et rigide ; la pression initiale est de 1 atm. À température constante, l’équilibre N2O4(g) ⇌ 2NO2(g) s’établit et la pression totale devient 1,8 atm. Quelle est la constante d’équilibre en pressions partielles, Kp, à cette température ?",
-        "ru": "В закрытый жёсткий сосуд помещают только газ N2O4; начальное давление 1 атм. При постоянной температуре устанавливается равновесие N2O4(g) ⇌ 2NO2(g), и общее давление становится 1,8 атм. Чему равна константа равновесия, выраженная через парциальные давления, Kp, при этой температуре?",
+        "ru": "В закрытый сосуд постоянного объёма помещают только газ N2O4; начальное давление равно 1 атм. При постоянной температуре устанавливается равновесие N2O4(г) ⇌ 2NO2(г), и общее давление становится 1,8 атм. Чему равна константа равновесия Kp (через парциальные давления) при этой температуре?",
         "ar": "وُضع غاز N2O4 وحده في وعاء مغلق ثابت الحجم فكان الضغط الابتدائي 1 atm. عند ثبات درجة الحرارة تكوّن الاتزان N2O4(g) ⇌ 2NO2(g) وأصبح الضغط الكلي 1.8 atm. ما قيمة ثابت الاتزان بدلالة الضغوط الجزئية Kp عند هذه الدرجة؟",
         "zh": "向密闭刚性容器中只加入 N2O4 气体，初始压强为 1 atm。恒温下建立平衡 N2O4(g) ⇌ 2NO2(g)，总压变为 1.8 atm。该温度下以分压表示的平衡常数 Kp 是多少？",
-        "ku": "Tenê gaza N2O4 dikeve firaxeke girtî ya bi qebareya sabît û zexta destpêkê 1 atm e. Di germahiya sabît de hevsengiya N2O4(g) ⇌ 2NO2(g) çêdibe û zexta giştî dibe 1,8 atm. Li vê germahiyê sabîta hevsengiyê ya bi zextên qismî, Kp, çend e?"
+        "ku": "Tenê gaza N2O4 dikeve firaxeke girtî ya bi qebareya sabît û zexta destpêkê ya firaxê 1 atm e. Di germahiya sabît de dema hevsengiya N2O4(g) ⇌ 2NO2(g) saz dibe, zexta giştî ya firaxê dibe 1,8 atm. Li gorî vê, di vê germahiyê de sabîta hevsengiyê ya bi zextên parçeyî (Kp) çend e?"
       },
       "options": [
         {
@@ -1961,10 +1961,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "If the N2O4 pressure falls by x atm, the NO2 pressure rises by 2x atm. Total pressure: (1 - x) + 2x = 1 + x = 1.8 → x = 0.8. At equilibrium P(N2O4) = 0.2 atm and P(NO2) = 1.6 atm. Kp = P(NO2)^2 / P(N2O4) = 2.56 / 0.2 = 12.8. Forgetting the exponent gives 1.6/0.2 = 8; taking the NO2 pressure as x instead of 2x gives 0.8^2/0.2 = 3.2.",
         "de": "Sinkt der N2O4-Druck um x atm, steigt der NO2-Druck um 2x atm. Gesamtdruck: (1 - x) + 2x = 1 + x = 1,8 → x = 0,8. Im Gleichgewicht: P(N2O4) = 0,2 atm, P(NO2) = 1,6 atm. Kp = P(NO2)^2 / P(N2O4) = 2,56 / 0,2 = 12,8. Ohne Exponent erhält man 1,6/0,2 = 8; setzt man den NO2-Druck als x statt 2x an, erhält man 0,8^2/0,2 = 3,2.",
         "fr": "Si la pression de N2O4 diminue de x atm, celle de NO2 augmente de 2x atm. Pression totale : (1 - x) + 2x = 1 + x = 1,8 → x = 0,8. À l’équilibre P(N2O4) = 0,2 atm et P(NO2) = 1,6 atm. Kp = P(NO2)^2 / P(N2O4) = 2,56 / 0,2 = 12,8. Sans l’exposant on obtient 1,6/0,2 = 8 ; en prenant x au lieu de 2x pour NO2, on obtient 0,8^2/0,2 = 3,2.",
-        "ru": "Если давление N2O4 уменьшается на x атм, давление NO2 увеличивается на 2x атм. Общее давление: (1 - x) + 2x = 1 + x = 1,8 → x = 0,8. В равновесии P(N2O4) = 0,2 атм, P(NO2) = 1,6 атм. Kp = P(NO2)^2 / P(N2O4) = 2,56 / 0,2 = 12,8. Без показателя степени получается 1,6/0,2 = 8; если взять для NO2 x вместо 2x — 0,8^2/0,2 = 3,2.",
-        "ar": "إذا نقص ضغط N2O4 بمقدار x atm يزداد ضغط NO2 بمقدار 2x atm. الضغط الكلي: (1 - x) + 2x = 1 + x = 1.8 ← x = 0.8. عند الاتزان P(N2O4) = 0.2 atm وP(NO2) = 1.6 atm. Kp = P(NO2)^2 / P(N2O4) = 2.56 / 0.2 = 12.8. إهمال الأس يعطي 1.6/0.2 = 8؛ واعتبار ضغط NO2 مساويًا x بدل 2x يعطي 0.8^2/0.2 = 3.2.",
+        "ru": "Если давление N2O4 уменьшается на x атм, давление NO2 увеличивается на 2x атм. Общее давление: (1 - x) + 2x = 1 + x = 1,8 → x = 0,8. В равновесии P(N2O4) = 0,2 атм, P(NO2) = 1,6 атм. Kp = P(NO2)^2 / P(N2O4) = 2,56 / 0,2 = 12,8. Если забыть показатель степени, получится 1,6/0,2 = 8; если взять давление NO2 равным x вместо 2x — 0,8^2/0,2 = 3,2.",
+        "ar": "إذا نقص ضغط N2O4 بمقدار x atm يزداد ضغط NO2 بمقدار 2x atm. الضغط الكلي: (1 - x) + 2x = 1 + x = 1.8 → x = 0.8. عند الاتزان P(N2O4) = 0.2 atm وP(NO2) = 1.6 atm. Kp = P(NO2)^2 / P(N2O4) = 2.56 / 0.2 = 12.8. إهمال الأس يعطي 1.6/0.2 = 8؛ واعتبار ضغط NO2 مساويًا x بدل 2x يعطي 0.8^2/0.2 = 3.2.",
         "zh": "若 N2O4 的分压减小 x atm，则 NO2 的分压增大 2x atm。总压：(1 - x) + 2x = 1 + x = 1.8 → x = 0.8。平衡时 P(N2O4) = 0.2 atm，P(NO2) = 1.6 atm。Kp = P(NO2)^2 / P(N2O4) = 2.56 / 0.2 = 12.8。忘记指数得 1.6/0.2 = 8；把 NO2 的分压当作 x 而不是 2x 得 0.8^2/0.2 = 3.2。",
-        "ku": "Ger zexta N2O4 x atm kêm bibe, zexta NO2 2x atm zêde dibe. Zexta giştî: (1 - x) + 2x = 1 + x = 1,8 → x = 0,8. Di hevsengiyê de P(N2O4) = 0,2 atm û P(NO2) = 1,6 atm. Kp = P(NO2)^2 / P(N2O4) = 2,56 / 0,2 = 12,8. Ger hêz were jibîrkirin 1,6/0,2 = 8; ger zexta NO2 li şûna 2x wekî x were girtin 0,8^2/0,2 = 3,2 tê dîtin."
+        "ku": "Heke zexta N2O4 x atm kêm bibe, zexta NO2 2x atm zêde dibe. Zexta giştî: (1 - x) + 2x = 1 + x = 1,8 → x = 0,8. Di hevsengiyê de P(N2O4) = 0,2 atm, P(NO2) = 1,6 atm. Kp = P(NO2)^2 / P(N2O4) = 2,56 / 0,2 = 12,8. Heke hêz were jibîrkirin 1,6/0,2 = 8; heke zexta NO2 li şûna 2x wekî x were girtin 0,8^2/0,2 = 3,2 tê dîtin."
       }
     },
     {
@@ -1974,10 +1974,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Which of the following is the expression for the equilibrium constant in terms of concentrations (Kc) of the reaction 3Fe(s) + 4H2O(g) ⇌ Fe3O4(s) + 4H2(g)?",
         "de": "Welcher der folgenden Ausdrücke ist die Gleichgewichtskonstante bezüglich der Konzentrationen (Kc) der Reaktion 3Fe(s) + 4H2O(g) ⇌ Fe3O4(s) + 4H2(g)?",
         "fr": "Laquelle des expressions suivantes est la constante d’équilibre en concentrations (Kc) de la réaction 3Fe(s) + 4H2O(g) ⇌ Fe3O4(s) + 4H2(g) ?",
-        "ru": "Какое из следующих выражений является константой равновесия, выраженной через концентрации (Kc), для реакции 3Fe(s) + 4H2O(g) ⇌ Fe3O4(s) + 4H2(g)?",
+        "ru": "Какое выражение соответствует константе равновесия Kc (через концентрации) для реакции 3Fe(тв) + 4H2O(г) ⇌ Fe3O4(тв) + 4H2(г)?",
         "ar": "أي مما يلي هو تعبير ثابت الاتزان بدلالة التراكيز (Kc) للتفاعل 3Fe(s) + 4H2O(g) ⇌ Fe3O4(s) + 4H2(g)؟",
         "zh": "反应 3Fe(s) + 4H2O(g) ⇌ Fe3O4(s) + 4H2(g) 以浓度表示的平衡常数 (Kc) 表达式是下列哪一项？",
-        "ku": "Îfadeya sabîta hevsengiyê ya bi tîrbûnan (Kc) ji bo reaksiyona 3Fe(s) + 4H2O(g) ⇌ Fe3O4(s) + 4H2(g) kîjan ji yên jêrîn e?"
+        "ku": "Hevkêşeya sabîta hevsengiyê ya bi tîrbûnan (Kc) ji bo reaksiyona 3Fe(s) + 4H2O(g) ⇌ Fe3O4(s) + 4H2(g) kîjan e?"
       },
       "options": [
         {
@@ -2037,10 +2037,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Fe and Fe3O4 are pure solids, so their concentrations are constant and are not written in the expression. Gas concentrations are raised to their coefficients, products in the numerator and reactants in the denominator: Kc = [H2]^4 / [H2O]^4. The expression containing the solids breaks the rule for heterogeneous equilibria; [H2O]^4 / [H2]^4 is the constant of the reverse reaction; [H2] / [H2O], which ignores the exponents, gives a different numerical value.",
         "de": "Fe und Fe3O4 sind reine Feststoffe; ihre Konzentrationen sind konstant und erscheinen nicht im Ausdruck. Die Gaskonzentrationen werden mit ihren Koeffizienten potenziert, Produkte im Zähler, Edukte im Nenner: Kc = [H2]^4 / [H2O]^4. Der Ausdruck mit den Feststoffen verstößt gegen die Regel für heterogene Gleichgewichte; [H2O]^4 / [H2]^4 ist die Konstante der Rückreaktion; [H2] / [H2O] ohne Exponenten liefert einen anderen Zahlenwert.",
         "fr": "Fe et Fe3O4 sont des solides purs : leurs concentrations sont constantes et n’apparaissent pas dans l’expression. Les concentrations des gaz sont élevées à la puissance de leurs coefficients, produits au numérateur et réactifs au dénominateur : Kc = [H2]^4 / [H2O]^4. L’expression contenant les solides viole la règle des équilibres hétérogènes ; [H2O]^4 / [H2]^4 est la constante de la réaction inverse ; [H2] / [H2O], sans exposants, donne une autre valeur numérique.",
-        "ru": "Fe и Fe3O4 — чистые твёрдые вещества, их концентрации постоянны и в выражение не входят. Концентрации газов возводятся в степени, равные коэффициентам, продукты — в числителе, реагенты — в знаменателе: Kc = [H2]^4 / [H2O]^4. Выражение с твёрдыми веществами нарушает правило для гетерогенных равновесий; [H2O]^4 / [H2]^4 — константа обратной реакции; [H2] / [H2O] без показателей степени даёт другое численное значение.",
+        "ru": "Fe и Fe3O4 — чистые твёрдые вещества, их концентрации постоянны и в выражение константы не входят. Концентрации газов возводят в степени, равные коэффициентам; продукты записывают в числитель, реагенты — в знаменатель: Kc = [H2]^4 / [H2O]^4. Выражение с твёрдыми веществами нарушает правило для гетерогенных равновесий; [H2O]^4 / [H2]^4 — константа обратной реакции; [H2] / [H2O] без показателей степени даёт другое численное значение.",
         "ar": "Fe وFe3O4 مادتان صلبتان نقيتان، فتركيزهما ثابت ولا يُكتبان في التعبير. تُرفع تراكيز الغازات لأسس تساوي معاملاتها، النواتج في البسط والمتفاعلات في المقام: Kc = [H2]^4 / [H2O]^4. التعبير الذي يحتوي المواد الصلبة يخالف قاعدة الاتزان غير المتجانس؛ و[H2O]^4 / [H2]^4 هو ثابت التفاعل العكسي؛ أما [H2] / [H2O] الذي يهمل الأسس فيعطي قيمة عددية مختلفة.",
         "zh": "Fe 和 Fe3O4 是纯固体，浓度为常数，不写入表达式。气体浓度以化学计量数为指数，生成物在分子、反应物在分母：Kc = [H2]^4 / [H2O]^4。包含固体的表达式违反了多相平衡的规则；[H2O]^4 / [H2]^4 是逆反应的平衡常数；忽略指数的 [H2] / [H2O] 数值不同。",
-        "ku": "Fe û Fe3O4 hişkên saf in, ji ber vê yekê tîrbûna wan sabît e û di îfadeyê de nayên nivîsandin. Tîrbûnên gazan bi hêza hevberên xwe tên nivîsandin; hilber li jor, reaktant li jêr: Kc = [H2]^4 / [H2O]^4. Îfadeya ku hişkan dihewîne li dijî qaîdeya hevsengiya heterojen e; [H2O]^4 / [H2]^4 sabîta reaksiyona berevajî ye; [H2] / [H2O] ku hêzan nagire jî nirxeke cuda dide."
+        "ku": "Ji ber ku Fe û Fe3O4 madeyên hişk ên paqij in, tîrbûna wan sabît e û di hevkêşeya hevsengiyê de nayên nivîsandin. Tîrbûnên gazan bi hevberên xwe yên wekî hêz tên nivîsandin; hilber li beşa jorîn, reaktant li beşa jêrîn: Kc = [H2]^4 / [H2O]^4. Hevkêşeya ku madeyên hişk jî dihewîne li dijî qaîdeya hevsengiya heterojen e; [H2O]^4 / [H2]^4 sabîta reaksiyona berevajî ye; [H2] / [H2O], ku hevberan nake hêz, nirxeke din a hejmarî dide."
       }
     },
     {
@@ -2053,7 +2053,7 @@ export const unit18: ChemistryUnitSeedData = {
         "ru": "В каком из следующих процессов и стремление к минимуму энергии, и стремление к максимуму неупорядоченности направлены в сторону продуктов?",
         "ar": "في أي من العمليات التالية يكون كل من الميل نحو أقل طاقة والميل نحو أقصى عشوائية في اتجاه النواتج؟",
         "zh": "下列哪一过程中，趋向最低能量和趋向最大混乱度这两种倾向都有利于生成物？",
-        "ku": "Di kîjan ji van bûyeran de hem meyla enerjiya herî kêm hem jî meyla bêrêziya herî zêde ber bi hilberan ve ye?"
+        "ku": "Di kîjan ji van bûyeran de hem meyla enerjiya kêmtirîn hem jî meyla bêrêziya herî zêde ber bi aliyê hilberan ve ye?"
       },
       "options": [
         {
@@ -2061,7 +2061,7 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "N2(g) + 3H2(g) → 2NH3(g)  ΔH < 0",
           "de": "N2(g) + 3H2(g) → 2NH3(g)  ΔH < 0",
           "fr": "N2(g) + 3H2(g) → 2NH3(g)  ΔH < 0",
-          "ru": "N2(g) + 3H2(g) → 2NH3(g)  ΔH < 0",
+          "ru": "N2(г) + 3H2(г) → 2NH3(г)  ΔH < 0",
           "ar": "N2(g) + 3H2(g) → 2NH3(g)  ΔH < 0",
           "zh": "N2(g) + 3H2(g) → 2NH3(g)  ΔH < 0",
           "ku": "N2(g) + 3H2(g) → 2NH3(g)  ΔH < 0"
@@ -2071,7 +2071,7 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "2KClO3(s) → 2KCl(s) + 3O2(g)  ΔH < 0",
           "de": "2KClO3(s) → 2KCl(s) + 3O2(g)  ΔH < 0",
           "fr": "2KClO3(s) → 2KCl(s) + 3O2(g)  ΔH < 0",
-          "ru": "2KClO3(s) → 2KCl(s) + 3O2(g)  ΔH < 0",
+          "ru": "2KClO3(тв) → 2KCl(тв) + 3O2(г)  ΔH < 0",
           "ar": "2KClO3(s) → 2KCl(s) + 3O2(g)  ΔH < 0",
           "zh": "2KClO3(s) → 2KCl(s) + 3O2(g)  ΔH < 0",
           "ku": "2KClO3(s) → 2KCl(s) + 3O2(g)  ΔH < 0"
@@ -2081,7 +2081,7 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "CaCO3(s) → CaO(s) + CO2(g)  ΔH > 0",
           "de": "CaCO3(s) → CaO(s) + CO2(g)  ΔH > 0",
           "fr": "CaCO3(s) → CaO(s) + CO2(g)  ΔH > 0",
-          "ru": "CaCO3(s) → CaO(s) + CO2(g)  ΔH > 0",
+          "ru": "CaCO3(тв) → CaO(тв) + CO2(г)  ΔH > 0",
           "ar": "CaCO3(s) → CaO(s) + CO2(g)  ΔH > 0",
           "zh": "CaCO3(s) → CaO(s) + CO2(g)  ΔH > 0",
           "ku": "CaCO3(s) → CaO(s) + CO2(g)  ΔH > 0"
@@ -2091,7 +2091,7 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "H2O(l) → H2O(g)  ΔH > 0",
           "de": "H2O(l) → H2O(g)  ΔH > 0",
           "fr": "H2O(l) → H2O(g)  ΔH > 0",
-          "ru": "H2O(l) → H2O(g)  ΔH > 0",
+          "ru": "H2O(ж.) → H2O(г)  ΔH > 0",
           "ar": "H2O(l) → H2O(g)  ΔH > 0",
           "zh": "H2O(l) → H2O(g)  ΔH > 0",
           "ku": "H2O(l) → H2O(g)  ΔH > 0"
@@ -2101,7 +2101,7 @@ export const unit18: ChemistryUnitSeedData = {
           "en": "2NO2(g) → N2O4(g)  ΔH < 0",
           "de": "2NO2(g) → N2O4(g)  ΔH < 0",
           "fr": "2NO2(g) → N2O4(g)  ΔH < 0",
-          "ru": "2NO2(g) → N2O4(g)  ΔH < 0",
+          "ru": "2NO2(г) → N2O4(г)  ΔH < 0",
           "ar": "2NO2(g) → N2O4(g)  ΔH < 0",
           "zh": "2NO2(g) → N2O4(g)  ΔH < 0",
           "ku": "2NO2(g) → N2O4(g)  ΔH < 0"
@@ -2113,10 +2113,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The minimum-energy tendency favours the products in exothermic processes and the reactants in endothermic ones. The maximum-disorder tendency favours the side where the number of gas moles increases (solid/liquid → gas). In the decomposition of KClO3, ΔH < 0, so the energy tendency favours the products, and 3 mol of gas form from a solid, so disorder also favours the products; since both point the same way the process goes to completion. In forming NH3 and N2O4, energy favours the products but disorder favours the reactants; in the decomposition of CaCO3 and the evaporation of water, disorder favours the products but energy favours the reactants.",
         "de": "Das Streben nach minimaler Energie begünstigt bei exothermen Vorgängen die Produkte, bei endothermen die Edukte. Das Streben nach maximaler Unordnung begünstigt die Seite mit mehr Gasmolen (fest/flüssig → gasförmig). Bei der Zersetzung von KClO3 ist ΔH < 0, die Energie begünstigt also die Produkte, und aus einem Feststoff entstehen 3 mol Gas, also begünstigt auch die Unordnung die Produkte; da beide in dieselbe Richtung wirken, läuft der Vorgang vollständig ab. Bei der Bildung von NH3 und N2O4 begünstigt die Energie die Produkte, die Unordnung aber die Edukte; bei der Zersetzung von CaCO3 und beim Verdampfen von Wasser begünstigt die Unordnung die Produkte, die Energie aber die Edukte.",
         "fr": "La tendance à l’énergie minimale favorise les produits dans les transformations exothermiques et les réactifs dans les endothermiques. La tendance au désordre maximal favorise le côté où le nombre de moles de gaz augmente (solide/liquide → gaz). Dans la décomposition de KClO3, ΔH < 0, donc l’énergie favorise les produits, et 3 mol de gaz se forment à partir d’un solide, donc le désordre favorise aussi les produits ; les deux tendances allant dans le même sens, la transformation est totale. Pour la formation de NH3 et de N2O4, l’énergie favorise les produits mais le désordre les réactifs ; pour la décomposition de CaCO3 et la vaporisation de l’eau, le désordre favorise les produits mais l’énergie les réactifs.",
-        "ru": "Стремление к минимуму энергии в экзотермических процессах направлено к продуктам, в эндотермических — к реагентам. Стремление к максимуму неупорядоченности направлено туда, где число молей газа растёт (твёрдое/жидкое → газ). При разложении KClO3 ΔH < 0, значит, энергия благоприятствует продуктам, а из твёрдого вещества образуется 3 моль газа, значит, и неупорядоченность благоприятствует продуктам; оба стремления совпадают, поэтому процесс идёт до конца. При образовании NH3 и N2O4 энергия благоприятствует продуктам, а неупорядоченность — реагентам; при разложении CaCO3 и испарении воды неупорядоченность благоприятствует продуктам, а энергия — реагентам.",
+        "ru": "Стремление к минимуму энергии в экзотермических процессах направлено к продуктам, в эндотермических — к реагентам. Стремление к максимуму неупорядоченности направлено в сторону увеличения числа молей газа (переход твёрдое/жидкое → газ). При разложении KClO3 ΔH < 0, значит, энергия благоприятствует продуктам; из твёрдого вещества образуется 3 моль газа, значит, и неупорядоченность благоприятствует продуктам; оба стремления совпадают, поэтому процесс идёт до конца. При образовании NH3 и N2O4 энергия благоприятствует продуктам, а неупорядоченность — реагентам; при разложении CaCO3 и испарении воды неупорядоченность благоприятствует продуктам, а энергия — реагентам.",
         "ar": "الميل نحو أقل طاقة يكون نحو النواتج في العمليات الطاردة للحرارة ونحو المتفاعلات في الماصة لها. والميل نحو أقصى عشوائية يكون نحو الجهة التي يزداد فيها عدد مولات الغاز (من صلب/سائل إلى غاز). في تفكك KClO3 يكون ΔH < 0 فالطاقة تفضّل النواتج، ويتكوّن 3 mol من الغاز من مادة صلبة فالعشوائية تفضّل النواتج أيضًا؛ ولأن الميلين في الاتجاه نفسه يكتمل التفاعل. في تكوين NH3 وN2O4 تفضّل الطاقة النواتج بينما تفضّل العشوائية المتفاعلات؛ وفي تفكك CaCO3 وتبخر الماء تفضّل العشوائية النواتج بينما تفضّل الطاقة المتفاعلات.",
-        "zh": "放热过程中最低能量倾向有利于生成物，吸热过程中则有利于反应物。最大混乱度倾向有利于气体物质的量增加（固/液 → 气）的一侧。KClO3 分解 ΔH < 0，能量倾向有利于生成物；由固体生成 3 mol 气体，混乱度倾向也有利于生成物；两者方向相同，过程进行到底。生成 NH3 和 N2O4 时能量有利于生成物而混乱度有利于反应物；CaCO3 分解和水的汽化时混乱度有利于生成物而能量有利于反应物。",
-        "ku": "Meyla enerjiya herî kêm di bûyerên ekzotermîk de ber bi hilberan, di yên endotermîk de ber bi reaktantan ve ye. Meyla bêrêziya herî zêde ber bi aliyê ku hejmara molên gazê zêde dibe (ji hişk/şil ber bi gazê) ve ye. Di hilweşîna KClO3 de ΔH < 0 e, ji ber vê yekê meyla enerjiyê ber bi hilberan e; ji hişkekê 3 mol gaz çêdibe, ji ber vê yekê meyla bêrêziyê jî ber bi hilberan e; ji ber ku her du meyl li heman alî ne, bûyer temam dibe. Di çêbûna NH3 û N2O4 de enerjî ber bi hilberan, bêrêzî ber bi reaktantan e; di hilweşîna CaCO3 û helmbûna avê de bêrêzî ber bi hilberan, enerjî ber bi reaktantan e."
+        "zh": "放热过程中最低能量倾向有利于生成物，吸热过程中则有利于反应物。最大混乱度倾向有利于气体物质的量增加(固/液 → 气)的一侧。KClO3 分解 ΔH < 0，能量倾向有利于生成物；由固体生成 3 mol 气体，混乱度倾向也有利于生成物；两者方向相同，过程进行到底。生成 NH3 和 N2O4 时能量有利于生成物而混乱度有利于反应物；CaCO3 分解和水的汽化时混乱度有利于生成物而能量有利于反应物。",
+        "ku": "Meyla enerjiya kêmtirîn di bûyerên ekzotermîk de ber bi hilberan, di bûyerên endotermîk de ber bi reaktantan ve ye. Meyla bêrêziya herî zêde ber bi aliyê ku hejmara molên gazê zêde dibe (ji hişk/şile bo gazê) ve ye. Di perçebûna KClO3 de, ji ber ku ΔH < 0 e meyla enerjiyê, û ji ber ku ji madeya hişk 3 mol gaz çêdibe meyla bêrêziyê jî ber bi hilberan ve ye; ji ber ku her du meyl li heman aliyî ne, bûyer temam dibe. Di çêbûna NH3 û N2O4 de enerjî ber bi hilberan, bêrêzî ber bi reaktantan ve ye; di perçebûna CaCO3 û buharbûna avê de jî bêrêzî ber bi hilberan, enerjî ber bi reaktantan ve ye."
       }
     },
     {
@@ -2126,10 +2126,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The reaction PCl5(g) ⇌ PCl3(g) + Cl2(g) is at equilibrium at a certain temperature. Which of the following statements about changes made at constant temperature are correct? I. If He gas is added to a rigid container, the equilibrium position does not change. II. If He gas is added at constant pressure to a container with a freely moving piston, the equilibrium shifts toward the products. III. If the container volume is halved, the number of moles of PCl5 at the new equilibrium is greater than at the first equilibrium.",
         "de": "Die Reaktion PCl5(g) ⇌ PCl3(g) + Cl2(g) befindet sich bei einer bestimmten Temperatur im Gleichgewicht. Welche der folgenden Aussagen über Änderungen bei konstanter Temperatur sind richtig? I. Wird einem starren Gefäß He-Gas zugesetzt, ändert sich die Gleichgewichtslage nicht. II. Wird einem Gefäß mit frei beweglichem Kolben bei konstantem Druck He-Gas zugesetzt, verschiebt sich das Gleichgewicht zu den Produkten. III. Wird das Gefäßvolumen halbiert, ist die Stoffmenge von PCl5 im neuen Gleichgewicht größer als im ersten.",
         "fr": "La réaction PCl5(g) ⇌ PCl3(g) + Cl2(g) est à l’équilibre à une certaine température. Parmi les affirmations suivantes sur des modifications faites à température constante, lesquelles sont correctes ? I. Si l’on ajoute de l’hélium dans un récipient rigide, la position d’équilibre ne change pas. II. Si l’on ajoute de l’hélium à pression constante dans un récipient muni d’un piston mobile, l’équilibre se déplace vers les produits. III. Si le volume du récipient est réduit de moitié, le nombre de moles de PCl5 au nouvel équilibre est supérieur à celui du premier équilibre.",
-        "ru": "Реакция PCl5(g) ⇌ PCl3(g) + Cl2(g) находится в равновесии при определённой температуре. Какие из следующих утверждений об изменениях при постоянной температуре верны? I. Если в жёсткий сосуд добавить газ He, положение равновесия не изменится. II. Если в сосуд со свободно движущимся поршнем при постоянном давлении добавить газ He, равновесие сместится к продуктам. III. Если объём сосуда уменьшить вдвое, число молей PCl5 в новом равновесии будет больше, чем в первом.",
+        "ru": "Реакция PCl5(г) ⇌ PCl3(г) + Cl2(г) находится в равновесии при определённой температуре. Какие из утверждений об изменениях при постоянной температуре верны? I. Если в сосуд постоянного объёма добавить газ He, положение равновесия не изменится. II. Если в сосуд с подвижным поршнем при постоянном давлении добавить газ He, равновесие сместится к продуктам. III. Если объём сосуда уменьшить вдвое, количество PCl5 (моль) в новом равновесии будет больше, чем в первоначальном.",
         "ar": "التفاعل PCl5(g) ⇌ PCl3(g) + Cl2(g) في حالة اتزان عند درجة حرارة معينة. أي العبارات التالية حول تغييرات تجري عند ثبات درجة الحرارة صحيحة؟ I. إذا أضيف غاز He إلى وعاء ثابت الحجم لا يتغير موضع الاتزان. II. إذا أضيف غاز He عند ضغط ثابت إلى وعاء بمكبس حر الحركة ينزاح الاتزان نحو النواتج. III. إذا خُفّض حجم الوعاء إلى النصف يكون عدد مولات PCl5 في الاتزان الجديد أكبر منه في الاتزان الأول.",
-        "zh": "反应 PCl5(g) ⇌ PCl3(g) + Cl2(g) 在一定温度下处于平衡。关于恒温下进行的变化，下列说法中哪些正确？I. 向刚性容器中加入 He 气体，平衡位置不变。II. 在恒压下向带有自由活塞的容器中加入 He 气体，平衡向正反应方向移动。III. 将容器体积减半，新平衡时 PCl5 的物质的量大于原平衡。",
-        "ku": "Reaksiyona PCl5(g) ⇌ PCl3(g) + Cl2(g) di germahiyeke diyar de di hevsengiyê de ye. Ji van gotinên der barê guhertinên di germahiya sabît de kîjan rast in? I. Ger gaza He li firaxeke bi qebareya sabît were zêdekirin, cihê hevsengiyê naguhere. II. Ger di zexta sabît de gaza He li firaxeke bi pistoneke azad were zêdekirin, hevsengî ber bi hilberan ve diçe. III. Ger qebareya firaxê nîv bibe, di hevsengiya nû de hejmara molên PCl5 ji ya hevsengiya yekem zêdetir e."
+        "zh": "反应 PCl5(g) ⇌ PCl3(g) + Cl2(g) 在一定温度下处于平衡。关于恒温下进行的变化，有下列说法：I. 向刚性容器中加入 He 气体，平衡位置不变。II. 在恒压下向带有自由活塞的容器中加入 He 气体，平衡向正反应方向移动。III. 将容器体积减半，新平衡时 PCl5 的物质的量大于原平衡。其中正确的是哪些？",
+        "ku": "Reaksiyona PCl5(g) ⇌ PCl3(g) + Cl2(g) di germahiyeke diyar de di hevsengiyê de ye. Derbarê guherînên ku di germahiya sabît de tên kirin, kîjan ji van gotinan rast in? I. Heke gaza He li firaxeke bi qebareya sabît were zêdekirin, cihê hevsengiyê naguhere. II. Heke di zexta sabît de gaza He li firaxeke bi pistoneke azad were zêdekirin, hevsengî ber bi hilberan ve diçe. III. Heke qebareya firaxê nîv bibe, di hevsengiya nû de hejmara molên PCl5 ji ya hevsengiya yekem zêdetir dibe."
       },
       "options": [
         {
@@ -2189,10 +2189,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "I is correct: adding He at constant volume raises the total pressure, but the concentrations and partial pressures of the reacting gases do not change, so Qc = Kc remains. II is correct: adding He at constant pressure increases the volume and lowers the partial pressures of the reacting gases; the system shifts toward the side with more gas moles (1 mol of gas → 2 mol, the products). III is correct: when the volume decreases the equilibrium shifts toward PCl5, the side with fewer gas moles, so the number of moles of PCl5 increases.",
         "de": "I ist richtig: Bei konstantem Volumen erhöht He den Gesamtdruck, aber Konzentrationen und Partialdrücke der reagierenden Gase bleiben gleich; Qc = Kc bleibt bestehen. II ist richtig: Bei konstantem Druck vergrößert He das Volumen, die Partialdrücke der reagierenden Gase sinken; das System verschiebt sich zur Seite mit mehr Gasmolen (1 mol Gas → 2 mol, Produkte). III ist richtig: Bei Volumenverkleinerung verschiebt sich das Gleichgewicht zu PCl5, der Seite mit weniger Gasmolen; die Stoffmenge von PCl5 nimmt zu.",
         "fr": "I est correcte : à volume constant, l’hélium augmente la pression totale, mais les concentrations et les pressions partielles des gaz réactionnels restent les mêmes ; Qc = Kc. II est correcte : à pression constante, l’hélium augmente le volume et abaisse les pressions partielles des gaz réactionnels ; le système se déplace vers le côté qui compte le plus de moles de gaz (1 mol de gaz → 2 mol, les produits). III est correcte : quand le volume diminue, l’équilibre se déplace vers PCl5, côté le plus pauvre en moles de gaz, et le nombre de moles de PCl5 augmente.",
-        "ru": "I верно: при постоянном объёме He повышает общее давление, но концентрации и парциальные давления реагирующих газов не меняются; Qc = Kc сохраняется. II верно: при постоянном давлении He увеличивает объём, парциальные давления реагирующих газов падают; система смещается в сторону большего числа молей газа (1 моль газа → 2 моль, продукты). III верно: при уменьшении объёма равновесие смещается к PCl5 — стороне с меньшим числом молей газа, и число молей PCl5 растёт.",
+        "ru": "I верно: при постоянном объёме добавление He повышает общее давление, но концентрации и парциальные давления реагирующих газов не меняются; Qc остаётся равным Kc. II верно: при постоянном давлении добавление He увеличивает объём, парциальные давления реагирующих газов падают; равновесие смещается в сторону большего числа молей газа (1 моль газа → 2 моль, продукты). III верно: при уменьшении объёма равновесие смещается к PCl5 — в сторону меньшего числа молей газа, и количество PCl5 растёт.",
         "ar": "I صحيحة: عند ثبات الحجم يرفع He الضغط الكلي، لكن تراكيز الغازات المتفاعلة وضغوطها الجزئية لا تتغير؛ فيبقى Qc = Kc. II صحيحة: عند ثبات الضغط يزيد He الحجم فتنخفض الضغوط الجزئية للغازات المتفاعلة؛ فينزاح النظام نحو الجهة الأكثر مولات غاز (من 1 mol غاز إلى 2 mol، أي النواتج). III صحيحة: عند تصغير الحجم ينزاح الاتزان نحو PCl5، الجهة الأقل مولات غاز، فيزداد عدد مولات PCl5.",
-        "zh": "I 正确：恒容加入 He，总压增大，但参与反应的气体浓度和分压不变，Qc = Kc 仍成立。II 正确：恒压加入 He，体积增大，参与反应的气体分压降低，体系向气体分子数多的一侧（1 mol 气体 → 2 mol，生成物）移动。III 正确：体积减小时平衡向气体分子数少的 PCl5 一侧移动，PCl5 的物质的量增加。",
-        "ku": "I rast e: di qebareya sabît de He zexta giştî zêde dike, lê tîrbûn û zextên qismî yên gazên reaksiyonê naguherin; Qc = Kc dimîne. II rast e: di zexta sabît de He qebareyê mezin dike, zextên qismî yên gazên reaksiyonê kêm dibin; pergal ber bi aliyê ku molên gazê zêdetir in (ji 1 mol gazê ber bi 2 mol, hilber) ve diçe. III rast e: dema qebare kêm dibe hevsengî ber bi PCl5, aliyê ku molên gazê kêmtir in, ve diçe û hejmara molên PCl5 zêde dibe."
+        "zh": "I 正确：恒容加入 He，总压增大，但参与反应的气体浓度和分压不变，Qc = Kc 仍成立。II 正确：恒压加入 He，体积增大，参与反应的气体分压降低，体系向气体分子数多的一侧(1 mol 气体 → 2 mol，生成物)移动。III 正确：体积减小时平衡向气体分子数少的 PCl5 一侧移动，PCl5 的物质的量增加。",
+        "ku": "I rast e: di qebareya sabît de dema He tê zêdekirin zexta giştî zêde dibe, lê tîrbûn û zextên parçeyî yên gazên reaksiyonê naguherin; Qc = Kc dimîne. II rast e: di zexta sabît de dema He tê zêdekirin qebare mezin dibe û zextên parçeyî yên gazên reaksiyonê kêm dibin; sîstem ber bi aliyê ku hejmara molên gazê zêdetir e (ji 1 mol gazê bo 2 mol gazê, aliyê hilberan) ve diçe. III rast e: dema qebare kêm dibe, hevsengî ber bi aliyê PCl5 ku molên gazê lê kêmtir in ve diçe û hejmara molên PCl5 zêde dibe."
       }
     },
     {
@@ -2202,10 +2202,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "The reaction H2(g) + I2(g) ⇌ 2HI(g) is at equilibrium in a closed container. At constant temperature a very small amount of I2 gas whose iodine atoms are radioactively labelled is added. After some time, in which molecules are the radioactive iodine atoms found?",
         "de": "Die Reaktion H2(g) + I2(g) ⇌ 2HI(g) befindet sich in einem geschlossenen Gefäß im Gleichgewicht. Bei konstanter Temperatur wird eine sehr kleine Menge I2-Gas zugegeben, dessen Iodatome radioaktiv markiert sind. In welchen Molekülen findet man die radioaktiven Iodatome nach einiger Zeit?",
         "fr": "La réaction H2(g) + I2(g) ⇌ 2HI(g) est à l’équilibre dans un récipient fermé. À température constante, on ajoute une très petite quantité de I2 gazeux dont les atomes d’iode sont marqués radioactivement. Au bout d’un certain temps, dans quelles molécules trouve-t-on les atomes d’iode radioactifs ?",
-        "ru": "Реакция H2(g) + I2(g) ⇌ 2HI(g) находится в равновесии в закрытом сосуде. При постоянной температуре добавляют очень небольшое количество газа I2, атомы иода которого помечены радиоактивной меткой. В каких молекулах через некоторое время обнаруживаются радиоактивные атомы иода?",
+        "ru": "Реакция H2(г) + I2(г) ⇌ 2HI(г) находится в равновесии в закрытом сосуде. При постоянной температуре в сосуд добавляют очень небольшое количество газообразного I2, атомы йода в котором помечены радиоактивной меткой. В каких молекулах через некоторое время будут обнаружены радиоактивные атомы йода?",
         "ar": "التفاعل H2(g) + I2(g) ⇌ 2HI(g) في حالة اتزان داخل وعاء مغلق. عند ثبات درجة الحرارة أضيفت كمية صغيرة جدًا من غاز I2 ذرات اليود فيه موسومة إشعاعيًا. بعد مدة، في أي الجزيئات توجد ذرات اليود المشعة؟",
         "zh": "反应 H2(g) + I2(g) ⇌ 2HI(g) 在密闭容器中处于平衡。恒温下加入极少量碘原子被放射性标记的 I2 气体。一段时间后，放射性碘原子存在于哪些分子中？",
-        "ku": "Reaksiyona H2(g) + I2(g) ⇌ 2HI(g) di firaxeke girtî de di hevsengiyê de ye. Di germahiya sabît de mîqdareke pir hindik ji gaza I2 ku atomên wê yên îyodê bi awayê radyoaktîf hatine nîşankirin tê zêdekirin. Piştî demekê atomên îyodê yên radyoaktîf di kîjan molekulan de ne?"
+        "ku": "Reaksiyona H2(g) + I2(g) ⇌ 2HI(g) di firaxeke girtî de di hevsengiyê de ye. Di germahiya sabît de mîqdareke pir hindik ji gaza I2 ya ku atomên wê yên îyodê bi radyoaktîfî hatine nîşankirin li firaxê tê zêdekirin. Piştî demekê atomên îyodê yên radyoaktîf di kîjan molekulan de ne?"
       },
       "options": [
         {
@@ -2236,17 +2236,17 @@ export const unit18: ChemistryUnitSeedData = {
           "ru": "Только в молекулах HI, так как весь добавленный I2 вступает в реакцию",
           "ar": "في جزيئات HI فقط، لأن كل I2 المضاف يتفاعل",
           "zh": "只在 HI 分子中，因为加入的 I2 全部反应",
-          "ku": "Tenê di molekulên HI de, ji ber ku hemû I2 ya zêdekirî reaksiyon dike"
+          "ku": "Tenê di molekulên HI de, ji ber ku hemû I2 ya lêzêdekirî dikeve reaksiyonê"
         },
         {
           "tr": "Yalnız I2 moleküllerinde; HI'ye ancak sıcaklık artırılırsa geçer",
           "en": "Only in I2 molecules; it passes into HI only if the temperature is raised",
           "de": "Nur in I2-Molekülen; in HI gelangt es nur bei Temperaturerhöhung",
           "fr": "Uniquement dans les molécules de I2 ; il ne passe dans HI que si l’on chauffe",
-          "ru": "Только в молекулах I2; в HI он переходит лишь при повышении температуры",
+          "ru": "Только в молекулах I2; в HI метка переходит лишь при повышении температуры",
           "ar": "في جزيئات I2 فقط؛ ولا ينتقل إلى HI إلا إذا رُفعت درجة الحرارة",
           "zh": "只在 I2 分子中；只有升高温度才会进入 HI",
-          "ku": "Tenê di molekulên I2 de; tenê ger germahî bilind bibe derbasî HI dibe"
+          "ku": "Tenê di molekulên I2 de; tenê heke germahî were bilindkirin derbasî HI dibe"
         },
         {
           "tr": "H2, I2 ve HI moleküllerinin üçünde de",
@@ -2265,10 +2265,10 @@ export const unit18: ChemistryUnitSeedData = {
         "en": "Equilibrium is dynamic; the forward and reverse reactions continue at equal rates. The labelled I2 reacts with H2 to form labelled HI, and part of that HI turns back into I2 through the reverse reaction, so labelled atoms end up in both I2 and HI. Thinking the reactions have stopped comes from wrongly picturing equilibrium as static. An H2 molecule contains no iodine, so labelled atoms cannot be in H2; and because the reaction does not go to completion, not all of the added I2 is used up.",
         "de": "Das Gleichgewicht ist dynamisch; Hin- und Rückreaktion laufen mit gleicher Geschwindigkeit ständig weiter. Markiertes I2 reagiert mit H2 zu markiertem HI, und ein Teil dieses HI zerfällt über die Rückreaktion wieder zu I2; daher findet man markierte Atome sowohl in I2 als auch in HI. Die Vorstellung, die Reaktionen stünden still, beruht auf einem falschen, statischen Gleichgewichtsbild. H2 enthält kein Iod, also können dort keine markierten Atome sein; da die Reaktion nicht vollständig abläuft, wird auch nicht das gesamte zugesetzte I2 verbraucht.",
         "fr": "L’équilibre est dynamique ; les réactions directe et inverse se poursuivent en permanence à la même vitesse. Le I2 marqué réagit avec H2 pour former du HI marqué, et une partie de ce HI redonne du I2 par la réaction inverse ; on trouve donc des atomes marqués à la fois dans I2 et dans HI. Penser que les réactions sont arrêtées revient à voir l’équilibre comme statique, ce qui est faux. La molécule H2 ne contient pas d’iode, elle ne peut donc pas porter d’atomes marqués ; et comme la réaction n’est pas totale, tout le I2 ajouté n’est pas consommé.",
-        "ru": "Равновесие динамическое: прямая и обратная реакции непрерывно идут с равными скоростями. Меченый I2 реагирует с H2, образуя меченый HI, а часть этого HI по обратной реакции снова превращается в I2; поэтому меченые атомы оказываются и в I2, и в HI. Мнение, что реакции прекратились, возникает из ошибочного представления о статическом равновесии. Молекула H2 не содержит иода, поэтому меченых атомов в ней быть не может; а так как реакция не идёт до конца, весь добавленный I2 не расходуется.",
+        "ru": "Равновесие динамическое: прямая и обратная реакции непрерывно идут с равными скоростями. Меченый I2 реагирует с H2, образуя меченый HI, а часть этого HI по обратной реакции снова превращается в I2; поэтому меченые атомы оказываются и в I2, и в HI. Мнение, что реакции прекратились, возникает из ошибочного представления о равновесии как статическом. Молекула H2 не содержит йода, поэтому меченых атомов в ней быть не может; а так как реакция не идёт до конца, добавленный I2 расходуется не полностью.",
         "ar": "الاتزان ديناميكي؛ يستمر التفاعلان الأمامي والعكسي بالسرعة نفسها باستمرار. يتفاعل I2 الموسوم مع H2 فيتكوّن HI موسوم، ويتحول جزء من هذا HI مرة أخرى إلى I2 بالتفاعل العكسي؛ لذلك توجد الذرات الموسومة في I2 وHI معًا. الاعتقاد بأن التفاعلات توقفت ناتج عن تصور خاطئ للاتزان على أنه ساكن. جزيء H2 لا يحتوي على يود، فلا يمكن أن توجد فيه ذرات موسومة؛ ولأن التفاعل لا يكتمل فلا يُستهلك كل I2 المضاف.",
         "zh": "平衡是动态的，正、逆反应始终以相等速率进行。被标记的 I2 与 H2 反应生成被标记的 HI，其中一部分 HI 又通过逆反应变回 I2，因此 I2 和 HI 中都有标记原子。认为反应已停止是把平衡误认为静态平衡。H2 分子中不含碘，所以不可能有标记原子；由于反应不能进行到底，加入的 I2 也不会全部消耗。",
-        "ku": "Hevsengî dînamîk e; reaksiyonên pêşve û paşve bi lezek wekhev bê navber berdewam dikin. I2 ya nîşankirî bi H2 re reaksiyon dike û HI ya nîşankirî çêdike, beşek ji vê HI jî bi reaksiyona paşve dîsa dibe I2; ji ber vê yekê atomên nîşankirî hem di I2 de hem jî di HI de hene. Fikra ku reaksiyon rawestiyane ji wêneyê şaş ê hevsengiya statîk tê. Molekula H2 îyodê nahewîne, ji ber vê yekê atomên nîşankirî nikarin tê de bin; û ji ber ku reaksiyon temam nabe, hemû I2 ya zêdekirî nayê xerckirin."
+        "ku": "Hevsengî dînamîk e; reaksiyonên pêşve û paşve bi lezeke wekhev bê navber berdewam dikin. I2 ya nîşankirî ji aliyekî ve bi H2 re dikeve reaksiyonê û HI ya nîşankirî çêdike, beşek ji HI ya çêbûyî jî bi reaksiyona paşve dîsa vediguhere I2; ji ber vê yekê atomên nîşankirî hem di I2 de hem jî di HI de hene. Fikra ku reaksiyon rawestiyane şaşiyek e ku ji hesibandina hevsengiyê wekî statîk tê. Ji ber ku molekula H2 îyodê nahewîne, atoma nîşankirî nikare di H2 de be; û ji ber ku reaksiyon temam nabe, hemû I2 ya lêzêdekirî jî nayê xerckirin."
       }
     }
   ]
