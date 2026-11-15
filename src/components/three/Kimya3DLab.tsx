@@ -39,6 +39,7 @@ import {
 } from '../../data/threeScenesData';
 import { ProceduralSceneObject } from './proceduralBuilders';
 import { Kimya3DFallbackCanvas } from './Kimya3DFallbackCanvas';
+import { formatChemText } from '../common/ChemFormula';
 import { playCorrect, playWrong, playSuccess, playFinish } from '../../audio/sfx';
 
 export interface Kimya3DLabProps {
@@ -820,7 +821,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                   </span>
                   <span className="lab-tile__body">
                     <span className="ky-fs-16 lab-tile__title">
-                      <bdi>{sc.title[lang] || sc.title.tr}</bdi>
+                      <bdi>{formatChemText(sc.title[lang] || sc.title.tr)}</bdi>
                     </span>
                     <span className="lab-tile__meta">
                       <span className={`ky-chip ${sc.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'}`}>{sc.badge}</span>
@@ -919,13 +920,13 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
               {catLabel(currentScene.category)} · {currentScene.unitId.toUpperCase()}
             </span>
             <h2 className="ky-fs-24 lab-info__title">
-              <bdi>{sceneTitle}</bdi>{' '}
+              <bdi>{formatChemText(sceneTitle)}</bdi>{' '}
               <span className={`ky-chip ${currentScene.badge === 'TYT' ? 'ky-chip--accent' : 'ky-chip--violet'} lab-info__badge`}>
                 {currentScene.badge}
               </span>
             </h2>
             <p className="ky-fs-14 lab-info__sub">
-              <bdi>{sceneSub}</bdi>
+              <bdi>{formatChemText(sceneSub)}</bdi>
             </p>
           </div>
 
@@ -943,7 +944,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
               </span>
               <p className="ky-fs-16 lab-quiz__prompt">
                 <strong className="lab-quiz__target">
-                  <bdi>{targetHotspot?.title[lang] || targetHotspot?.title.tr}</bdi>
+                  <bdi>{formatChemText(targetHotspot?.title[lang] || targetHotspot?.title.tr || '')}</bdi>
                 </strong>
               </p>
               {quizState.feedback === 'correct' && (
@@ -968,13 +969,13 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                 </span>
                 <div className="lab-spot__body">
                   <p className="ky-fs-16 lab-spot__title">
-                    <bdi>{selectedHotspot.title[lang] || selectedHotspot.title.tr}</bdi>
+                    <bdi>{formatChemText(selectedHotspot.title[lang] || selectedHotspot.title.tr)}</bdi>
                   </p>
                   <p className="ky-fs-14 lab-spot__desc">
-                    <bdi>{selectedHotspot.description[lang] || selectedHotspot.description.tr}</bdi>
+                    <bdi>{formatChemText(selectedHotspot.description[lang] || selectedHotspot.description.tr)}</bdi>
                   </p>
                   <p className="ky-fs-14 lab-spot__fact">
-                    <strong>{r.inExam}</strong> <bdi>{selectedHotspot.examFact[lang] || selectedHotspot.examFact.tr}</bdi>
+                    <strong>{r.inExam}</strong> <bdi>{formatChemText(selectedHotspot.examFact[lang] || selectedHotspot.examFact.tr)}</bdi>
                   </p>
                   <button type="button" className="ky-btn-text lab-spot__focus" onClick={() => handleFocusHotspot(selectedHotspot)}>
                     <Focus size={16} aria-hidden="true" />

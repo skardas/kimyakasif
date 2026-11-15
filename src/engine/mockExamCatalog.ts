@@ -175,14 +175,14 @@ function buildAytSubtitle(tier: MockExamDifficultyTier): LocalizedText {
       );
     case 'osym-prova':
       return L(
-        'Türkiye Geneli Derece Provası: Nernst denklemi, Kçç ortak iyon, Le Chatelier şokları, VSEPR ve Markovnikov mekanizmaları.',
-        'National Rank Simulation: Nernst equation, Ksp common ion, Le Chatelier shifts, VSEPR and Markovnikov mechanisms.',
-        'Nationale Rang-Simulation: Nernst-Gleichung, Ksp-Gemeinsamer-Ion-Effekt, Le Chatelier, VSEPR und Markovnikov.',
-        "Simulation Concours National : Équation de Nernst, effet d'ion commun Ksp, Le Chatelier, VSEPR et Markovnikov.",
-        'Генеральная репетиция национального уровня: Уравнение Нернста, одноименный ион Ksp, Ле Шателье, VSEPR и Марковников.',
-        'محاكاة اختبار التفوق الوطني: معادلة نيرنست، الأيون المشترك Ksp، مبدأ لوشاتيليه، أشكال VSEPR وقاعدة ماركوفنيكوف.',
-        '全国排位模拟大考：能斯特方程计算、同离子沉淀溶解平衡、勒夏特列移动、VSEPR杂化与马氏加成全真压轴。',
-        'Provaya Dereceyê ya Giştî ya Tirkiyeyê: Hevkêşeya Nernst, bandora îyona hevpar di Kçç de û Markovnikov.'
+        'Türkiye Geneli Derece Provası: Pil gerilimi ve derişim pilleri, Kçç ortak iyon, Le Chatelier şokları, VSEPR ve Markovnikov mekanizmaları.',
+        'National Rank Simulation: cell voltage and concentration cells, Ksp common ion, Le Chatelier shifts, VSEPR and Markovnikov mechanisms.',
+        'Nationale Rang-Simulation: Zellspannung und Konzentrationszellen, Ksp-Gemeinsamer-Ion-Effekt, Le Chatelier, VSEPR und Markovnikov.',
+        "Simulation Concours National : tension de pile et piles de concentration, effet d'ion commun Ksp, Le Chatelier, VSEPR et Markovnikov.",
+        'Генеральная репетиция национального уровня: напряжение элемента и концентрационные элементы, одноименный ион Ksp, Ле Шателье, VSEPR и Марковников.',
+        'محاكاة اختبار التفوق الوطني: جهد الخلية وخلايا التركيز، الأيون المشترك Ksp، مبدأ لوشاتيليه، أشكال VSEPR وقاعدة ماركوفنيكوف.',
+        '全国排位模拟大考：电池电压与浓差电池、同离子沉淀溶解平衡、勒夏特列移动、VSEPR杂化与马氏加成全真压轴。',
+        'Provaya Dereceyê ya Giştî ya Tirkiyeyê: Voltaja pîlê û pîlên xestiyê, bandora îyona hevpar di Kçç de û Markovnikov.'
       );
   }
 }
@@ -378,7 +378,7 @@ const CLAIMED_UNITS: Record<'TYT_BRANCH' | 'AYT_BRANCH', Record<MockExamDifficul
     temel: ['u11', 'u12', 'u14', 'u16', 'u18'], // orbitaller, ideal gaz, molarite, entalpi, denge
     standart: [],
     ileri: ['u13', 'u17', 'u19', 'u21', 'u22'], // Maxwell-Boltzmann/potansiyel enerji, titrasyon, Daniell, Hoffman
-    'osym-prova': ['u18', 'u20', 'u21', 'u23', 'u24'], // Le Chatelier, Kçç, Nernst, VSEPR, Markovnikov
+    'osym-prova': ['u18', 'u20', 'u21', 'u23', 'u24'], // Le Chatelier, Kçç, pil gerilimi, VSEPR, Markovnikov
   },
 };
 

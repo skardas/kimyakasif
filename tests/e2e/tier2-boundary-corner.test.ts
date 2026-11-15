@@ -262,11 +262,22 @@ export async function runTier2Tests(): Promise<void> {
   printTestResult(
     await test('T2.F03.05', 2, 'F03-BANK', 'Roman numeral option bounds: includes statements I, II, III and standard combinations', () => {
       const u01Qs = compileUnitQuestions(ALL_CHEMISTRY_UNITS[0], 'tr');
-      const romanQ = u01Qs.find((q) => q.archetype === 'roman-numeral');
-      expect(romanQ).toBeDefined();
-      expect(romanQ!.statements).toHaveLength(3);
-      expect(romanQ!.options[0]).toContain('Yalnız I');
-      expect(romanQ!.options[4]).toContain('I, II ve III');
+      const romanQs = u01Qs.filter((q) => q.archetype === 'roman-numeral');
+      expect(romanQs.length).toBe(32);
+      // The production bank prints the three statements as "I. … / II. … / III. …" lines in the stem
+      // and offers 5 of the 7 standard combinations in canonical ÖSYM order.
+      const canonical = ['Yalnız I', 'Yalnız II', 'Yalnız III', 'I ve II', 'I ve III', 'II ve III', 'I, II ve III'];
+      romanQs.forEach((romanQ) => {
+        const statements = romanQ.stem.split('\n').filter((line) => /^(I|II|III)\.\s/.test(line));
+        expect(statements).toHaveLength(3);
+        const ranks = romanQ.options.map((o) => canonical.indexOf(o));
+        ranks.forEach((r, i) => {
+          expect(r).toBeGreaterThanOrEqual(0);
+          if (i > 0) expect(r).toBeGreaterThan(ranks[i - 1]);
+        });
+      });
+      expect(romanQs.some((q) => q.options[0] === 'Yalnız I')).toBe(true);
+      expect(romanQs.some((q) => q.options[4] === 'I, II ve III')).toBe(true);
     })
   );
 
@@ -638,7 +649,7 @@ export async function runTier2Tests(): Promise<void> {
           lang: 'tr',
         })
       );
-      expect(leChatelierMarkup).toContain('Le Chatelier: N2 eklenince denge ürünlere kayar; Kc sabittir!');
+      expect(leChatelierMarkup).toContain('Le Chatelier: N₂ eklenince denge ürünlere kayar; Kc değişmez.');
 
       // 4. Verify VSEPR geometry centers (AX2 at 135, AX4 at 405) across all 8 languages
       const testLanguages: LanguageCode[] = ['tr', 'en', 'de', 'fr', 'ru', 'ar', 'zh', 'ku'];

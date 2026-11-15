@@ -404,13 +404,13 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
                       <span className="ky-chip ky-mono">{currentCard.unitId.toUpperCase()}</span>
                     </span>
                     <span className="fc-face__body">
-                      <span className="ky-fs-20 fc-answer">{formatChemText(currentCard.backAnswer)}</span>
+                      <span className="ky-fs-20 fc-answer">{formatChemText(currentCard.backAnswer, { display: 'auto' })}</span>
                       {currentCard.osymTip && (
                         <span className="ky-fs-14 fc-tip">
                           <strong>
                             <Sparkles size={14} aria-hidden="true" /> {t.cards.osymTrapLabel}:
                           </strong>{' '}
-                          {currentCard.osymTip}
+                          {formatChemText(currentCard.osymTip)}
                         </span>
                       )}
                     </span>

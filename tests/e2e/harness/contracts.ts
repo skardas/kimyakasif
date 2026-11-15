@@ -115,12 +115,16 @@ import {
   type CompoundOxidationSpec,
 } from './chemistryValidator';
 
+// The tests run against the real, hand-audited bank (src/data/units) and the production engine.
+// curriculumAdapter.ts only contributes the `loc` helper and the seed types now; its embedded unit
+// texts are the original pre-audit copy and are kept solely as historical generator input.
+import { ALL_CHEMISTRY_UNITS as REAL_UNITS } from '../../../src/data/units';
 import {
-  ALL_CHEMISTRY_UNITS,
-  compileAllQuestions,
-  compileUnitQuestions,
-  compileAllFlashcards,
-  loadCurriculum,
+  compileUnitQuestions as realCompileUnitQuestions,
+  compileAllQuestions as realCompileAllQuestions,
+} from '../../../src/engine/questionGenerator';
+import { compileAllFlashcards as realCompileAllFlashcards } from '../../../src/engine/flashcardGenerator';
+import {
   loc,
   type LocalizedText,
   type FactTrapPair,
@@ -131,6 +135,17 @@ import {
   type CompiledQuestion,
   type CompiledFlashcard,
 } from './curriculumAdapter';
+
+const ALL_CHEMISTRY_UNITS = REAL_UNITS as unknown as ChemistryUnitSeedData[];
+const compileUnitQuestions = (unit: ChemistryUnitSeedData, lang: LanguageCode = 'tr'): CompiledQuestion[] =>
+  realCompileUnitQuestions(unit as never, lang) as unknown as CompiledQuestion[];
+const compileAllQuestions = (units: ChemistryUnitSeedData[] = ALL_CHEMISTRY_UNITS, lang: LanguageCode = 'tr'): CompiledQuestion[] =>
+  realCompileAllQuestions(units as never, lang) as unknown as CompiledQuestion[];
+const compileAllFlashcards = (units: ChemistryUnitSeedData[] = ALL_CHEMISTRY_UNITS, lang: LanguageCode = 'tr'): CompiledFlashcard[] =>
+  realCompileAllFlashcards(units as never, lang) as unknown as CompiledFlashcard[];
+async function loadCurriculum() {
+  return { isLiveCodebase: true, units: ALL_CHEMISTRY_UNITS, compileUnitQuestions, compileAllQuestions, compileAllFlashcards };
+}
 
 // Re-export all fundamental helpers and data
 export {

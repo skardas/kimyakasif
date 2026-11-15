@@ -120,14 +120,22 @@
 
 .sl-formula__eq {
   margin: 0;
-  font-family: var(--font-formula);
-  font-weight: 700;
+  /* Parts of a formula line that are not typeset by KaTeX (word labels such as "İyonlaşma % =")
+     use the same serif as the labels inside the typeset maths, so one line reads as one formula. */
+  font-family: var(--font-math-label, 'Times New Roman', Times, 'Noto Serif', 'Droid Serif', serif);
+  font-weight: 400;
+  font-size: 1.3125rem;
   color: var(--accent);
-  line-height: 1.3;
+  line-height: 1.35;
   overflow-wrap: anywhere;
 }
 
 .sl-formula__eq bdi { display: inline; }
+/* Typeset formulas in the card: the card's 24px face is too large for stacked fractions on a
+   320px screen, so equations are set a little smaller; prose parts keep the card's text face. */
+.sl-formula__eq .chem-math .katex { font-size: 0.95em; }
+.sl-formula__eq .chem-math--wide .katex { font-size: 0.8em; }
+.sl-formula__eq .chem-eq-line + .chem-eq-line { margin-block-start: 0.5em; }
 .sl-formula__note { margin: 0; color: var(--text2); line-height: 1.45; }
 
 /* Exam trap as its own block */
@@ -146,6 +154,8 @@
 .sl-trap__title { color: var(--bad); }
 .sl-truth__title { color: var(--ok); margin-block-start: 8px !important; }
 .sl-trap__text, .sl-truth__text { line-height: 1.5; color: var(--text); }
+/* Why the trap is false (whyTrapIsFalse), between the trap and the correct statement. */
+.sl-trap__why { margin: 0; line-height: 1.5; color: var(--muted); font-style: italic; overflow-wrap: anywhere; }
 
 .sl-tip {
   margin: 0;
@@ -372,6 +382,43 @@
 .chemical-diagram-svg { position: relative; inline-size: 100%; max-inline-size: 100%; block-size: auto; display: block; }
 .diagram-caption { margin: 8px 0 0; font-size: 0.8rem; line-height: 1.45; color: var(--muted); }
 
+/* Narrow stages: labels that cannot be drawn at a legible size inside the figure are numbered
+   there and spelled out here, on the same dark stage (so the label colours stay the same). */
+.diagram-legend {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 4px 12px 12px;
+  display: grid;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  color: #f2f6fb;
+  cursor: default;
+}
+.diagram-legend li { display: flex; align-items: baseline; gap: 8px; min-inline-size: 0; }
+.diagram-legend__n {
+  flex: none;
+  inline-size: 1.6em;
+  block-size: 1.6em;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #0b1220;
+}
+.diagram-legend__t { min-inline-size: 0; overflow-wrap: anywhere; }
+
+/* Phones: give the drawing the whole card width so its labels stay readable inline. */
+@media (max-width: 599px) {
+  .sl-diagram { padding: 4px; margin-inline: -14px; }
+  .sl-diagram .diagram-header { padding: 6px 8px 0; }
+  .sl-diagram .diagram-caption { padding: 0 8px 8px; }
+  .diagram-svg-wrapper { border-radius: 14px; }
+}
+
 .diagram-zoom-overlay { z-index: 9999; }
 
 .diagram-zoom-card {
@@ -389,13 +436,16 @@
 /* Compact stage (quiz): no title/zoom row; one small expand control on the stage corner.
    The button is a 44px hit area around a smaller glass face so it stays unobtrusive. */
 .chemical-diagram-container.is-compact .diagram-svg-wrapper { cursor: zoom-in; }
+/* The control sits on the lower corner of the card, just below the stage, so it never covers a
+   label of the drawing (tapping the stage opens the same view). */
+.chemical-diagram-container.is-compact { position: relative; }
 .diagram-expand-btn {
-  position: absolute;
-  inset-block-start: 2px;
-  inset-inline-end: 2px;
+  position: relative;
+  align-self: flex-end;
+  margin-block: 2px 0;
   z-index: 2;
   inline-size: 44px;
-  block-size: 44px;
+  block-size: 36px;
   display: grid;
   place-items: center;
   padding: 0;

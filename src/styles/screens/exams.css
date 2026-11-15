@@ -25,7 +25,9 @@
 
 .ex-tabs { inline-size: 100%; }
 
-.ex-tabs > button { flex: 1 1 0; min-inline-size: 0; min-block-size: 44px; padding-inline: 8px; white-space: normal; line-height: 1.15; overflow-wrap: anywhere; }
+.ex-tabs > button { flex: 1 1 0; min-inline-size: 0; min-block-size: 44px; padding-inline: 8px; white-space: normal; line-height: 1.15; overflow-wrap: break-word; hyphens: auto; }
+/* Largest text size: labels wrap between words instead of splitting one ("اختبارا|ت", "Ünit|e"). */
+@media (max-width: 420px) { .ex-tabs > button { padding-inline: 4px; font-size: min(1em, calc(14px * var(--fs, 1))); } }
 
 .ex-wells {
   display: grid;
@@ -221,9 +223,12 @@
 
 .qz-diagram .chemical-diagram-container { margin: 0; }
 .qz-diagram svg { max-inline-size: 100%; block-size: auto; }
-/* Quiz artboard: the figure is a short stage above the stem (132px on the 390 phone);
-   the full drawing opens from the corner expand control. */
-.qz-diagram .is-compact .chemical-diagram-svg { max-block-size: clamp(112px, 17dvh, 140px); }
+/* Quiz artboard: on phones the figure uses the full width of the question so its labels are
+   readable without opening it (the corner control still opens the zoomable view); on wider
+   screens it is a bounded stage beside or above the stem. */
+@media (min-width: 600px) {
+  .qz-diagram .is-compact .chemical-diagram-svg { max-block-size: 320px; }
+}
 @media (min-width: 900px) {
   .qz-diagram .is-compact .chemical-diagram-svg { max-block-size: 300px; }
 }

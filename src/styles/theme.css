@@ -308,26 +308,139 @@ button:disabled,
   color: var(--text);
 }
 
-/* Chemical formula isolation & notation */
+/* Chemical formula isolation & notation.
+   Formulas are LTR isolates (Arabic keeps H2SO4 / reactions in left-to-right order). A single
+   formula never breaks inside (H₂SO₄ stays on one line); a whole equation (.chem-eq) may wrap
+   between its terms so it cannot overflow a 375px screen at the largest text size. */
+/* Formulas inside sentences use the surrounding text face (a monospace face looked like code in
+   ÖSYM-style prose and broke the rhythm of bold stems); dedicated formula panels such as
+   .sl-formula__eq still set --font-formula themselves. */
 .chem-formula, bdi[dir="ltr"] {
-  font-family: var(--font-formula);
-  font-variant-numeric: tabular-nums lining-nums;
-  letter-spacing: 0.02em;
-  display: inline-block;
+  font-family: inherit;
+  font-variant-numeric: lining-nums;
   direction: ltr !important;
   unicode-bidi: isolate;
 }
 
-.chem-formula sub {
-  font-size: 0.72em;
-  line-height: 0;
-  vertical-align: -0.28em;
+.chem-formula:not(.chem-eq),
+.chem-eq .chem-f {
+  white-space: nowrap;
 }
 
+.chem-eq {
+  white-space: normal;
+}
+
+/* sub/sup keep the line box steady (line-height 0) and scale with the text-size setting (em). */
+.chem-formula sub,
 .chem-formula sup {
   font-size: 0.72em;
   line-height: 0;
-  vertical-align: 0.38em;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.chem-formula sub {
+  inset-block-start: 0.28em;
+}
+
+.chem-formula sup {
+  inset-block-start: -0.42em;
+}
+
+/* Typeset equations (KaTeX output produced by mathTypeset.ts; fonts are bundled, no CDN).
+   - An equation is a left-to-right isolate, also inside Arabic text.
+   - It takes the colour of the surrounding text (KaTeX draws with currentColor) in both themes and
+     follows the text-size setting because every size below is in em.
+   - 1.1em: KaTeX's own 1.21em is tuned for Times; Figtree has a larger x-height (0.50 vs 0.43), so
+     1.1em keeps lowercase letters and digits level with the surrounding words.
+   - Inline equations wrap after relation / binary operators (KaTeX splits them into nowrap boxes).
+     A box that could be wider than a phone line (.chem-math--wide) and display-style equations
+     (.chem-math--display) scroll inside themselves instead of widening the page; an inline run
+     whose unbreakable piece is longer still is not typeset at all (see mathTypeset.ts). */
+.chem-math {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  white-space: normal;
+}
+
+/* In right-to-left text a left-to-right equation that wraps is split with its first half at the
+   end of one line and the rest at the start of the next, which reads out of order. Keep a short
+   run in one piece there; it moves to the next line as a whole. */
+[dir="rtl"] .chem-math:not(.chem-math--wide):not(.chem-math--display) {
+  display: inline-block;
+  max-inline-size: 100%;
+  white-space: nowrap;
+}
+
+.chem-math .katex {
+  font-size: 1.1em;
+  line-height: 1.2;
+  color: inherit;
+}
+
+/* Word labels inside an equation (ürünler, toplam, продукты, النواتج, 生成物): KaTeX's math fonts
+   have no ç ş ğ / Cyrillic / Arabic / CJK glyphs, so labels use one serif text face per word. */
+.chem-math .katex .hangul_fallback {
+  font-family: var(--font-math-label, 'Times New Roman', Times, 'Noto Serif', 'Droid Serif', serif);
+  font-style: normal;
+}
+
+.chem-math--display {
+  display: inline-block;
+  max-inline-size: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: middle;
+  padding-block: 0.12em;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Inline equation with a long unbreakable piece: the equation still wraps between its boxes, and a
+   box wider than the line scrolls inside itself. --kd is the box's depth below the baseline (set by
+   mathTypeset.ts from KaTeX's strut); it puts the scroll box back on the text baseline. */
+.chem-math--wide:not(.chem-math--display) .katex-base {
+  max-inline-size: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: var(--kd, 0em);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.chem-math--display::-webkit-scrollbar,
+.chem-math--wide .katex-base::-webkit-scrollbar {
+  display: none;
+}
+
+/* Long display equations shrink before they have to scroll. */
+.chem-math--display.chem-math--wide .katex {
+  font-size: 0.92em;
+}
+
+/* Stand-alone formula field with several formulas ("A = Z + N | …"): one formula per line. */
+.chem-eq-line {
+  display: block;
+}
+
+.chem-eq-line + .chem-eq-line {
+  margin-block-start: 0.45em;
+}
+
+/* Multi-step explanations / worked solutions: one block per statement or step. */
+.chem-block__p {
+  display: block;
+}
+
+.chem-block__p + .chem-block__p {
+  margin-block-start: 0.4em;
 }
 
 .confetti-layer {

@@ -128,6 +128,10 @@ export interface ExplanationTemplates {
   positiveConceptDefault: (correctOption: string) => string;
   /** Intro for the list that corrects every wrong option, e.g. "Diğer seçeneklerin doğrusu:". */
   otherOptionsIntro: string;
+  /** Intro used instead when at least one wrong option comes with its reason (whyTrapIsFalse). */
+  otherOptionsWhyIntro: string;
+  /** One corrected wrong option: "B) <neden>. Doğrusu: <fact>." (reason optional). */
+  optionCorrection: (letter: string, fact: string, whyFalse?: string) => string;
   structureMatch: (correctOption: string, conceptA: string, conceptB: string, distinction: string) => string;
   structureTrait: (conceptB: string, conceptA: string, distinction: string) => string;
   reactionOrder: (correctOption: string, seqTitle: string, fullProgression?: string) => string;
@@ -135,18 +139,26 @@ export interface ExplanationTemplates {
 }
 
 const bare = (s: string) => stripTerminalPunctuation(s);
+// Seed tips often start with their own label ("ÖSYM tuzağı: ..."); drop it so the template's
+// "ÖSYM notu:" is not followed by a second label.
+const bareTip = (s: string) => {
+  const t = bare(s).replace(/^ÖSYM\s+(?:tuzağı|kuralı|notu|ipucu|uyarısı)\s*:\s*/iu, '');
+  return t.charAt(0).toLocaleUpperCase('tr') + t.slice(1);
+};
 
 export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> = {
   tr: {
     romanTrue: (combo) => `Buna göre doğru olan yargıları içeren seçenek "${combo}" seçeneğidir.`,
     romanFalse: (combo) => `Buna göre yanlış olan yargıları içeren seçenek "${combo}" seçeneğidir.`,
-    romanValid: (n, fact, tip) => `${n}. Doğrudur: ${bare(fact)}.${tip ? ` (ÖSYM notu: ${bare(tip)}.)` : ''}`,
+    romanValid: (n, fact, tip) => `${n}. Doğrudur: ${bare(fact)}.${tip ? ` (ÖSYM notu: ${bareTip(tip)}.)` : ''}`,
     romanInvalid: (n, fact, why) => `${n}. Yanlıştır: ${why ? `${bare(why)}. ` : ''}Doğrusu: ${bare(fact)}.`,
     negativeTrapWhy: (opt, why, fact) => `Yanlış olan ifade "${bare(opt)}" ifadesidir. ${bare(why)}. Doğrusu: ${bare(fact)}. Diğer seçeneklerdeki ifadelerin tamamı doğrudur.`,
     negativeTrapDefault: (opt, fact) => `Yanlış olan ifade "${bare(opt)}" ifadesidir. Doğrusu: ${bare(fact)}. Diğer seçeneklerdeki ifadelerin tamamı doğrudur.`,
-    positiveConceptTip: (opt, tip) => `Doğru olan ifade "${bare(opt)}" ifadesidir. ÖSYM notu: ${bare(tip)}.`,
+    positiveConceptTip: (opt, tip) => `Doğru olan ifade "${bare(opt)}" ifadesidir. ÖSYM notu: ${bareTip(tip)}.`,
     positiveConceptDefault: (opt) => `Doğru olan ifade "${bare(opt)}" ifadesidir.`,
     otherOptionsIntro: 'Diğer seçeneklerdeki ifadeler yanlıştır; doğruları şöyledir:',
+    otherOptionsWhyIntro: 'Diğer seçeneklerdeki ifadeler yanlıştır:',
+    optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. Doğrusu: ` : ''}${bare(fact)}.`,
     structureMatch: (opt, a, b, dist) => `Doğru cevap "${bare(opt)}" seçeneğidir. ${a} ile ${b} arasındaki temel ayrım: ${bare(dist)}.`,
     structureTrait: (b, a, dist) => `"${b}" ile ilgili doğru ifade, ${a} ile ${b} arasındaki temel ayrımı veren ifadedir: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
@@ -164,6 +176,8 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `The correct statement is "${bare(opt)}". Exam note: ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `The correct statement is "${bare(opt)}".`,
     otherOptionsIntro: 'The other options are incorrect; the correct versions are:',
+    otherOptionsWhyIntro: 'The other options are incorrect:',
+    optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. Correct version: ` : ''}${bare(fact)}.`,
     structureMatch: (opt, a, b, dist) => `The correct answer is "${bare(opt)}". Key distinction between ${a} and ${b}: ${bare(dist)}.`,
     structureTrait: (b, a, dist) => `The correct statement about "${b}" is the one giving the key distinction between ${a} and ${b}: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
@@ -181,6 +195,8 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `Die zutreffende Aussage ist "${bare(opt)}". Prüfungshinweis: ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `Die zutreffende Aussage ist "${bare(opt)}".`,
     otherOptionsIntro: 'Die übrigen Antworten sind falsch; richtig wäre:',
+    otherOptionsWhyIntro: 'Die übrigen Antworten sind falsch:',
+    optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. Richtig ist: ` : ''}${bare(fact)}.`,
     structureMatch: (opt, a, b, dist) => `Die richtige Antwort ist "${bare(opt)}". Grundlegende Unterscheidung zwischen ${a} und ${b}: ${bare(dist)}.`,
     structureTrait: (b, a, dist) => `Zutreffend für "${b}" ist die Aussage, die den Unterschied zwischen ${a} und ${b} beschreibt: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
@@ -198,6 +214,8 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `L'affirmation exacte est « ${bare(opt)} ». Conseil d'examen : ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `L'affirmation exacte est « ${bare(opt)} ».`,
     otherOptionsIntro: 'Les autres propositions sont fausses ; les versions exactes sont :',
+    otherOptionsWhyIntro: 'Les autres propositions sont fausses :',
+    optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. Version exacte : ` : ''}${bare(fact)}.`,
     structureMatch: (opt, a, b, dist) => `La bonne réponse est « ${bare(opt)} ». Distinction fondamentale entre ${a} et ${b} : ${bare(dist)}.`,
     structureTrait: (b, a, dist) => `L'affirmation exacte sur « ${b} » est celle qui donne la distinction entre ${a} et ${b} : ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
@@ -215,6 +233,8 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `Верное утверждение — «${bare(opt)}». Экзаменационная подсказка: ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `Верное утверждение — «${bare(opt)}».`,
     otherOptionsIntro: 'Остальные варианты неверны; правильные формулировки:',
+    otherOptionsWhyIntro: 'Остальные варианты неверны:',
+    optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. Правильно: ` : ''}${bare(fact)}.`,
     structureMatch: (opt, a, b, dist) => `Правильный ответ — «${bare(opt)}». Ключевое различие между «${a}» и «${b}»: ${bare(dist)}.`,
     structureTrait: (b, a, dist) => `Верное утверждение о «${b}» — то, которое описывает различие между «${a}» и «${b}»: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
@@ -232,6 +252,8 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `العبارة الصحيحة هي "${bare(opt)}". نصيحة امتحانية: ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `العبارة الصحيحة هي "${bare(opt)}".`,
     otherOptionsIntro: 'الخيارات الأخرى خاطئة، والصواب فيها:',
+    otherOptionsWhyIntro: 'الخيارات الأخرى خاطئة:',
+    optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. الصواب: ` : ''}${bare(fact)}.`,
     structureMatch: (opt, a, b, dist) => `الإجابة الصحيحة هي "${bare(opt)}". الفرق الجوهري بين ${a} و ${b}: ${bare(dist)}.`,
     structureTrait: (b, a, dist) => `العبارة الصحيحة حول "${b}" هي التي تبيّن الفرق بين ${a} و ${b}: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
@@ -249,6 +271,8 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `正确的说法是“${bare(opt)}”。解题要点：${bare(tip)}。`,
     positiveConceptDefault: (opt) => `正确的说法是“${bare(opt)}”。`,
     otherOptionsIntro: '其余选项均错误，正确说法分别为：',
+    otherOptionsWhyIntro: '其余选项均错误：',
+    optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}。正确说法：` : ''}${bare(fact)}。`,
     structureMatch: (opt, a, b, dist) => `正确答案是“${bare(opt)}”。“${a}”与“${b}”的核心区别：${bare(dist)}。`,
     structureTrait: (b, a, dist) => `关于“${b}”的正确说法是阐明“${a}”与“${b}”区别的那一项：${bare(dist)}。`,
     reactionOrder: (opt, title, full) => full
@@ -266,6 +290,8 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `Gotina rast "${bare(opt)}" e. Serişteya ezmûnê: ${bare(tip)}.`,
     positiveConceptDefault: (opt) => `Gotina rast "${bare(opt)}" e.`,
     otherOptionsIntro: 'Vebijarkên din şaş in; rastiyên wan ev in:',
+    otherOptionsWhyIntro: 'Vebijarkên din şaş in:',
+    optionCorrection: (l, fact, why) => `${l}) ${why ? `${bare(why)}. Ya rast: ` : ''}${bare(fact)}.`,
     structureMatch: (opt, a, b, dist) => `Bersiva rast "${bare(opt)}" e. Ciyawaziya sereke di navbera ${a} û ${b} de: ${bare(dist)}.`,
     structureTrait: (b, a, dist) => `Gotina rast li ser "${b}" ew e ku ciyawaziya navbera ${a} û ${b} dide: ${bare(dist)}.`,
     reactionOrder: (opt, title, full) => full
@@ -687,8 +713,10 @@ export function sanitizeEntityClue(clueText: string, entityName: string, lang: L
         const cjkPattern = chars.join('\\s*');
         const cjkLookbehind = /^[a-zA-Z0-9]/.test(cand.trim()) ? '(?<=^|[^a-zA-Z0-9])' : '';
         const cjkLookahead = /[a-zA-Z0-9]$/.test(cand.trim()) ? '(?![a-zA-Z0-9])' : '';
-        const regex = new RegExp(`${cjkLookbehind}${cjkPattern}${cjkLookahead}`, 'gu');
-        cleaned = cleaned.replace(regex, replacement);
+        // "非极性分子" (nonpolar molecule) contains "极性分子" (polar molecule): masking it would give the
+        // garbled "非该概念", so a negated mention of the contrast partner becomes "另一类" (the other type).
+        const regex = new RegExp(`${cjkLookbehind}(非)?${cjkPattern}${cjkLookahead}`, 'gu');
+        cleaned = cleaned.replace(regex, (_m: string, neg?: string) => (neg ? '另一类' : replacement));
       } else {
         const isArabic = lang === 'ar' || /[\u0600-\u06FF]/.test(cand);
         // Arabic suffixes: feminine sound plural (-at), masculine sound plural (-in/-un), relative adjective nisba (-iyya, -i, -iyyatiha, -iyyatihi), ta marbuta (-a), dual (-an/-ayn)
@@ -711,7 +739,10 @@ export function sanitizeEntityClue(clueText: string, entityName: string, lang: L
           });
           candidatePattern = arabicWords.join('[-\\s]+');
         } else {
-          const words = cand.trim().split(/[-\s]+/).map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+          // The /iu flags do not fold Turkish İ/i and I/ı, so "Net İyon Denklemi" would not match
+          // "Net iyon denklemi" in the clue; spell the pairs out as character classes.
+          const foldTr = (w: string) => (lang === 'tr' ? w.replace(/[iİ]/g, '[iİ]').replace(/[ıI]/g, '[ıI]') : w);
+          const words = cand.trim().split(/[-\s]+/).map((w) => foldTr(w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
           candidatePattern = (lang === 'ku' && words.length >= 2)
             ? words.join('(?:ê|a|ya|yê|ên|an)?[-\\s]+')
             : words.join('[-\\s]+');
@@ -721,10 +752,46 @@ export function sanitizeEntityClue(clueText: string, entityName: string, lang: L
         const lookahead = (lang === 'zh') ? '(?![a-zA-Z0-9])' : '(?![\\p{L}\\p{N}])';
         const arabicPrefix = '';
         const regex = new RegExp(`${lookbehind}${arabicPrefix}${candidatePattern}${suffixPattern}${lookahead}`, 'giu');
-        cleaned = cleaned.replace(regex, (m: string) => (lang === 'tr' ? inflectTurkishPlaceholder(replacement, m, cand) : replacement));
+        cleaned = cleaned.replace(regex, (m: string) => {
+          if (lang === 'tr') return inflectTurkishPlaceholder(replacement, m, cand);
+          // English plural mention ("Alkynes contain ...") keeps verb agreement: "these concepts contain".
+          if (lang === 'en' && /s$/i.test(m) && !/s$/i.test(cand.trim())) return 'these concepts';
+          return replacement;
+        });
       }
     }
   cleaned = cleaned.trim();
+  if (lang === 'en') {
+    // "In the cis isomer ..." -> "In this concept ...", not "In the this concept".
+    cleaned = cleaned.replace(/\b(?:the|a|an)\s+(this concept|these concepts)\b/gi, '$1');
+  }
+  if (lang === 'de') {
+    // "Beim cis-Isomer ..." -> "Bei diesem Begriff ...", not "Beim dieser Begriff"; "Ein Alkan ..." -> "Dieser Begriff ...".
+    const dePrep: Record<string, string> = { beim: 'bei', im: 'in', am: 'an', vom: 'von', zum: 'zu', zur: 'zu' };
+    cleaned = cleaned.replace(
+      /(^|[^\p{L}])(beim|im|am|vom|zum|zur|bei|in|an|von|zu|mit|aus|nach)(?:\s+(?:der|dem|den|die|das|einer|einem|einen|eine|ein))?\s+dieser Begriff(?![\p{L}])/giu,
+      (_m: string, pre: string, prep: string) => {
+        const base = dePrep[prep.toLowerCase()] || prep.toLowerCase();
+        const cased = /^\p{Lu}/u.test(prep) ? base.charAt(0).toUpperCase() + base.slice(1) : base;
+        return `${pre}${cased} diesem Begriff`;
+      },
+    );
+    cleaned = cleaned.replace(/(^|[^\p{L}])(?:der|die|das|den|dem|des|einer|einem|einen|eine|ein)\s+dieser Begriff(?![\p{L}])/giu, '$1dieser Begriff');
+  }
+  if (lang === 'fr') {
+    // "L'alcane ..." -> "Cette notion ...", not "L'cette notion"; "Dans une molécule polaire" -> "Dans cette notion".
+    cleaned = cleaned.replace(/(^|[^\p{L}])du\s+cette notion(?![\p{L}])/giu, '$1de cette notion');
+    cleaned = cleaned.replace(/(^|[^\p{L}])au\s+cette notion(?![\p{L}])/giu, '$1à cette notion');
+    cleaned = cleaned.replace(/(^|[^\p{L}])(?:l['’]\s*|(?:le|la|les|un|une|des)\s+)cette notion(?![\p{L}])/giu, '$1cette notion');
+  }
+  if (lang === 'ru') {
+    // Prepositional case after в / на / при / о: "В этом понятии ...", not "В это понятие ...".
+    cleaned = cleaned.replace(/(^|[^\p{L}])(в|во|на|при|о)\s+это понятие(?![\p{L}])/giu, (_m: string, pre: string, prep: string) => `${pre}${prep} этом понятии`);
+  }
+  if (lang === 'ku') {
+    // Kurmanji oblique case after a preposition: "di vê têgehê de", not "di ev têgeh de".
+    cleaned = cleaned.replace(/(^|[^\p{L}])(di|li|ji|bi|ji bo)\s+ev têgeh(?![\p{L}])/giu, '$1$2 vê têgehê');
+  }
   // Collapse runs created when several words of one name were masked ("bu kavram bu kavram ...").
   const escRep = replacement.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   cleaned = cleaned.replace(new RegExp(`(${escRep})(?:[\\s-]+${escRep})+`, 'giu'), '$1');
@@ -734,7 +801,7 @@ export function sanitizeEntityClue(clueText: string, entityName: string, lang: L
       (_m: string, rep: string, suf: string) => inflectTurkishPlaceholder(rep, `${rep}${suf}`, rep));
   }
   // Sentence-initial placeholder must be capitalised ("Bu kavram ...", "This concept ...").
-  if (cleaned.startsWith(replacement)) {
+  if (cleaned.startsWith(replacement) || cleaned.startsWith('these concepts') || /^(dieser|cette|это)\s/u.test(cleaned)) {
     cleaned = cleaned.charAt(0).toLocaleUpperCase(lang) + cleaned.slice(1);
   }
   return normalizeProseOption(cleaned, lang);
@@ -1165,14 +1232,73 @@ function partitionFactsForSet(
  * options must keep their authored order (Roman-numeral combos, ascending numeric answers,
  * "hepsi/hiçbiri" style options, or an explanation that names option letters).
  */
+/**
+ * Reads a numeric answer option ("2,5 atm", "-0,76 V", "1/6", "6,0x10^21", "1,22·10^-3", "10^-5 M").
+ * Returns null for anything that is not a single number with an optional short unit.
+ */
+export function parseNumericOption(option: string): number | null {
+  const o = (option || '').trim().replace(/[−–]/g, '-').replace(/\s+/g, ' ');
+  const m = /^([+-]?)(?:(\d+(?:[.,]\d+)?)(?:\s?\/\s?(\d+(?:[.,]\d+)?))?)?(?:\s?(?:[x×·*]\s?)?10\s?\^\s?\(?([+-]?\d+)\)?)?(?:\s?%|\s?[%°]?[A-Za-zÇĞİÖŞÜçğıöşüμΩ][A-Za-zÇĞİÖŞÜçğıöşüμΩ0-9³²/·.]{0,9}(?:\s?\/\s?[A-Za-z]{1,4})?)?$/.exec(o);
+  if (!m || (m[2] === undefined && m[4] === undefined)) return null;
+  const num = (t: string) => parseFloat(t.replace(',', '.'));
+  let v = m[2] !== undefined ? num(m[2]) : 1;
+  if (m[3] !== undefined) v /= num(m[3]);
+  if (m[4] !== undefined) v *= Math.pow(10, parseInt(m[4], 10));
+  if (m[1] === '-') v = -v;
+  return Number.isFinite(v) ? v : null;
+}
+
+/** Roman-numeral combination options ("Yalnız I", "I ve II", "I, II ve III") in any language. */
+const ROMAN_COMBO_OPTION = /^(?:Yalnız|Only|Nur|Seulement|Только|فقط|仅|Tenê)\s*I{1,3}\b|^I{1,3}\s*(?:,|ve|and|und|et|и|و|和|、|û)\s*I/;
+
 function twinIsRotatable(twin: ChemistryUnitSeedData['osymTwins'][number]): boolean {
   const opts = twin.options.map((o) => (o.tr || '').trim());
-  if (opts.some((o) => /^(Yalnız\s+I|I\s*(ve|,)\s*I|II\s*(ve|,)\s*I|I,\s*II)/.test(o))) return false;
-  if (opts.some((o) => /^(hepsi|hiçbiri|tümü|i̇kisi de)\b/i.test(o))) return false;
-  const nums = opts.map((o) => parseFloat(o.replace(',', '.')));
-  if (nums.every((n) => !Number.isNaN(n)) && nums.every((n, i) => i === 0 || n >= nums[i - 1])) return false;
-  if (/\b[A-E]\)|\b[A-E]\s+seçene|seçene(ği|k)\s+[A-E]\b|\b[A-E]\s+şıkkı/.test(twin.explanation.tr || '')) return false;
+  // "Yalnız I / I ve II / I, II ve III" combinations keep the canonical ÖSYM order.
+  if (opts.some((o) => ROMAN_COMBO_OPTION.test(o))) return false;
+  if (opts.some((o) => /^(hepsi|hiçbiri|tümü|i̇kisi de|ikisi de)\b/i.test(o))) return false;
+  // Numeric answers stay in their authored order when that order is ascending (ÖSYM convention) or
+  // descending; scientific notation and fractions are compared by value ("6,0x10^21" < "7,2x10^22").
+  const nums = opts.map(parseNumericOption);
+  if (nums.every((n): n is number => n !== null)) {
+    const asc = nums.every((n, i) => i === 0 || n >= nums[i - 1]);
+    const desc = nums.every((n, i) => i === 0 || n <= nums[i - 1]);
+    if (asc || desc) return false;
+  }
+  // Worked solutions that name an option letter would point at the wrong option after rotation.
+  const letterRef = /\b[A-E]\)|\([A-E]\)|\b[A-E]\s+seçene|seçene(ği|k)\s+[A-E]\b|\b[A-E]\s+şıkkı|\b(?:cevap|yanıt)\s*:?\s*[A-E]\b|\b[A-E]['’](?:dir|dır|dur|dür|tir|tır|tur|tür)\b|\b(?:option|answer|choice)\s+[A-E]\b/i;
+  if (letterRef.test(twin.explanation.tr || '') || letterRef.test(twin.explanation.en || '')) return false;
   return true;
+}
+
+/** Normalised Turkish seed text used to recognise fact/trap sentences reused inside a twin. */
+function seedKey(text: string): string {
+  return stripTerminalPunctuation(text || '')
+    .toLocaleLowerCase('tr')
+    .replace(/[“”„"'’‘]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
+ * Fact items a twin reproduces verbatim, in its options and (for I/II/III twins) in the numbered
+ * statements of its stem. Free-form twins simply return no hits. `optionIndex` is -1 for a stem line.
+ */
+function twinSeedHits(
+  twin: ChemistryUnitSeedData['osymTwins'][number],
+  index: Map<string, { idx: number; kind: 'fact' | 'trap' }>
+): Array<{ idx: number; kind: 'fact' | 'trap'; optionIndex: number }> {
+  const hits: Array<{ idx: number; kind: 'fact' | 'trap'; optionIndex: number }> = [];
+  twin.options.forEach((o, oi) => {
+    const hit = index.get(seedKey(o.tr));
+    if (hit) hits.push({ ...hit, optionIndex: oi });
+  });
+  for (const line of (twin.stem.tr || '').split('\n')) {
+    const m = /^\s*(?:I{1,3}|IV|V)[.)]\s+(.+)$/.exec(line);
+    if (!m) continue;
+    const hit = index.get(seedKey(m[1]));
+    if (hit) hits.push({ ...hit, optionIndex: -1 });
+  }
+  return hits;
 }
 
 /**
@@ -1208,40 +1334,54 @@ export function compileUnitQuestions(
     recentKeys.push(k);
   }
 
-  /** Corrections for wrong (trap) options, listed by letter, for explanations. */
-  function trapCorrections(options: string[], correctIndex: number, trapToFact: Map<string, string>): string {
+  /**
+   * Corrections for wrong (trap) options, listed by letter, for explanations. When the seed has a
+   * whyTrapIsFalse for that trap, the reason is given before the correct fact
+   * ("B) <neden>. Doğrusu: <fact>."); otherwise only the correct fact is listed.
+   */
+  function trapCorrections(options: string[], correctIndex: number, trapToFact: Map<string, { fact: string; why?: string }>): string {
     const parts: string[] = [];
+    let anyWhy = false;
     options.forEach((opt, i) => {
       if (i === correctIndex) return;
-      const fact = trapToFact.get(opt);
-      if (fact) parts.push(`${'ABCDE'[i]}) ${asSentence(fact, lang)}`);
+      const hit = trapToFact.get(opt);
+      if (!hit) return;
+      if (hit.why) anyWhy = true;
+      parts.push(hit.why ? explTemplates.optionCorrection('ABCDE'[i], hit.fact, hit.why) : `${'ABCDE'[i]}) ${asSentence(hit.fact, lang)}`);
     });
-    return parts.length > 0 ? ` ${explTemplates.otherOptionsIntro} ${parts.join(' ')}` : '';
+    if (parts.length === 0) return '';
+    return ` ${anyWhy ? explTemplates.otherOptionsWhyIntro : explTemplates.otherOptionsIntro} ${parts.join(' ')}`;
   }
 
   const factText = (i: number) => L(unit.facts[i].fact);
   const trapText = (i: number) => L(unit.facts[i].trap);
-  const trapToFact = new Map<string, string>();
-  for (const f of unit.facts) trapToFact.set(normalizeProseOption(L(f.trap), lang), L(f.fact));
+  // whyTrapIsFalse is only used in the language it was written in: falling back to the Turkish
+  // reason inside e.g. a German explanation would mix languages, so a missing translation drops it.
+  const whyText = (f: ChemistryUnitSeedData['facts'][number]): string | undefined => {
+    const w = f.whyTrapIsFalse?.[lang];
+    return w && stripTerminalPunctuation(w).length > 3 ? w : undefined;
+  };
+  const trapToFact = new Map<string, { fact: string; why?: string }>();
+  for (const f of unit.facts) trapToFact.set(normalizeProseOption(L(f.trap), lang), { fact: L(f.fact), why: whyText(f) });
 
   const factIndexByTrText = new Map<string, { idx: number; kind: 'fact' | 'trap' }>();
   unit.facts.forEach((f, idx) => {
-    factIndexByTrText.set(stripTerminalPunctuation(f.fact.tr).toLocaleLowerCase('tr'), { idx, kind: 'fact' });
-    factIndexByTrText.set(stripTerminalPunctuation(f.trap.tr).toLocaleLowerCase('tr'), { idx, kind: 'trap' });
+    factIndexByTrText.set(seedKey(f.fact.tr), { idx, kind: 'fact' });
+    factIndexByTrText.set(seedKey(f.trap.tr), { idx, kind: 'trap' });
   });
+  const twinHits = unit.osymTwins.map((twin) => twinSeedHits(twin, factIndexByTrText));
 
-  // Many twins reproduce fact/trap texts verbatim. Pair twins that share fact items (so the two
-  // twins of a set touch as few items as possible), never pairing a twin with one that shows the
-  // partner's key item, then deal the pairs out set by set.
-  const twinItems = unit.osymTwins.map((twin) => {
+  // Some twins reproduce fact/trap texts verbatim (as options or as I/II/III statements). Pair twins
+  // that share fact items (so the two twins of a set touch as few items as possible), never pairing
+  // a twin with one that shows the partner's key item, then deal the pairs out set by set. Free-form
+  // twins have no hits and are simply paired in authored order.
+  const twinItems = unit.osymTwins.map((twin, ti) => {
     const all = new Set<number>();
     let keyItem = -1;
-    twin.options.forEach((o, oi) => {
-      const hit = factIndexByTrText.get(stripTerminalPunctuation(o.tr).toLocaleLowerCase('tr'));
-      if (!hit) return;
+    for (const hit of twinHits[ti]) {
       all.add(hit.idx);
-      if (oi === twin.correctIndex) keyItem = hit.idx;
-    });
+      if (hit.optionIndex === twin.correctIndex) keyItem = hit.idx;
+    }
     return { all, keyItem };
   });
   const twinOrder: number[] = [];
@@ -1284,13 +1424,12 @@ export function compileUnitQuestions(
     const twinKeyItems = new Set<number>();
     const twinTrapItems = new Set<number>();
     for (let t = 0; t < 2; t++) {
-      const twin = twinAt(twinCounter + t);
-      twin.options.forEach((o, oi) => {
-        const hit = factIndexByTrText.get(stripTerminalPunctuation(o.tr).toLocaleLowerCase('tr'));
-        if (!hit) return;
-        if (oi === twin.correctIndex || hit.kind === 'fact') twinKeyItems.add(hit.idx);
+      const slot = (twinCounter + t) % twinOrder.length;
+      const twin = unit.osymTwins[twinOrder[slot]];
+      for (const hit of twinHits[twinOrder[slot]]) {
+        if (hit.optionIndex === twin.correctIndex || hit.kind === 'fact') twinKeyItems.add(hit.idx);
         else twinTrapItems.add(hit.idx);
-      });
+      }
     }
     for (const idx of twinKeyItems) twinTrapItems.delete(idx);
     const part = partitionFactsForSet(fCount, setNum, twinKeyItems, twinTrapItems);
@@ -1366,7 +1505,7 @@ export function compileUnitQuestions(
               numeral: numerals[k],
               isValid: false,
               fact: factText(idx),
-              whyTrap: unit.facts[idx].whyTrapIsFalse ? L(unit.facts[idx].whyTrapIsFalse!) : undefined,
+              whyTrap: whyText(unit.facts[idx]),
             })) as [PropositionDetail, PropositionDetail, PropositionDetail],
           lang
         );
@@ -1404,7 +1543,7 @@ export function compileUnitQuestions(
         const stemVariant = (setNum - 1) * 3 + j;
         const stem = getNegativeTrapStem(unitTitle, lang, stemVariant);
 
-        const whyFalse = targetPair.whyTrapIsFalse ? L(targetPair.whyTrapIsFalse) : undefined;
+        const whyFalse = whyText(targetPair);
         const correctFact = L(targetPair.fact);
         const explanation = whyFalse
           ? explTemplates.negativeTrapWhy(correctOption, whyFalse, correctFact)

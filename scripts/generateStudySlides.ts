@@ -11,6 +11,13 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { refuseUnlessForced } from './auditedSourceGuard';
+
+// GUARD: src/data/studySlides is hand-audited now; this generator only runs with --force-overwrite-audited.
+// (Checked only when this file is the entry point, so buildMultilingualCurriculum can still import RAW_GUIDES.)
+if (process.argv[1] && process.argv[1].endsWith('generateStudySlides.ts')) {
+  refuseUnlessForced('generateStudySlides.ts', ['src/data/studySlides/*.ts']);
+}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

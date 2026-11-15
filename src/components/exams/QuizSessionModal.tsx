@@ -20,7 +20,7 @@ import type { ExamResultRecord } from '../../store/useAppStore';
 import { sfx } from '../../audio/sfx';
 import { calculateOsymNet, estimateTgPercentile, type TgPercentileResult } from '../../engine/mockExamCatalog';
 import { ChemicalDiagram } from '../diagrams/ChemicalDiagram';
-import { formatChemText } from '../common/ChemFormula';
+import { formatChemText, formatChemBlock } from '../common/ChemFormula';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { EXAM_STRINGS } from '../../i18n/examStrings';
 import { redesignStrings, redesignExtra } from '../../i18n/redesignStrings';
@@ -623,7 +623,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                         onClick={() => handleSelectOption(optIdx)}
                       >
                         <span className="ky-key">{optionLetter}</span>
-                        <span className="ky-fs-16 qz-opt-text">{formatChemText(optText)}</span>
+                        <span className="ky-fs-16 qz-opt-text">{formatChemText(optText, { display: 'auto' })}</span>
                         {stateClass === 'right' && (
                           <span className="qz-opt-mark" aria-hidden="true">
                             <Check size={20} strokeWidth={3} />
@@ -659,7 +659,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                         </>
                       )}
                     </p>
-                    <p className="ky-fs-14 qz-solution__text">{formatChemText(currentQ.explanation)}</p>
+                    <div className="ky-fs-14 qz-solution__text">{formatChemBlock(currentQ.explanation)}</div>
                   </section>
                 )}
               </div>

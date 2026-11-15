@@ -8,6 +8,13 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { ALL_CHEMISTRY_UNITS as RAW_UNITS } from '../tests/e2e/harness/curriculumAdapter';
+import { refuseUnlessForced } from './auditedSourceGuard';
+
+// GUARD: src/data/units is hand-audited now; this generator only runs with --force-overwrite-audited.
+// (Checked only when this file is the entry point, so buildMultilingualCurriculum can still import its tables.)
+if (process.argv[1] && process.argv[1].endsWith('generateCurriculumUnits.ts')) {
+  refuseUnlessForced('generateCurriculumUnits.ts', ['src/data/units/u01.ts … u24.ts', 'src/data/units/index.ts']);
+}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

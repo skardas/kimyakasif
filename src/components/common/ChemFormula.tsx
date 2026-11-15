@@ -1,4 +1,8 @@
 import React from 'react';
+import { tokenizeChemText, type ChemPart } from './chemNotation';
+import { typesetMath, isWholeEquation } from './mathTypeset';
+
+export { tokenizeChemText, renderChemDebug, chemPlainText } from './chemNotation';
 
 export interface ChemFormulaProps {
   formula: string;
@@ -27,51 +31,182 @@ const P_PAREN_FORMULA =
 const P_STANDARD =
   '\\b(?:[A-Z][a-z]?\\d+(?:[A-Z][a-z]?\\d*)*(?:\\^[\\d\\+-]+|[²³⁺⁻]+|\\d*[⁺⁻\\+-])?|[A-Z][a-z]?(?:[A-Z][a-z]?\\d*)+(?:\\^[\\d\\+-]+|[²³⁺⁻]+|\\d*[⁺⁻\\+-])?|[A-Z][a-z]?(?:\\^[\\d\\+-]+|[²³⁺⁻]+|\\d*[⁺⁻\\+-]))(?:\\([a-z]+\\))?';
 
+/**
+ * Legacy detection regex, kept as an export for older callers/tests. Rendering now goes through
+ * tokenizeChemText (chemNotation.ts), which validates element symbols before formatting.
+ */
 export const CHEM_FORMULA_REGEX = new RegExp(
   `(${P_TAG})|(${P_REACTION})|(${P_COMPLEX})|(${P_PAREN_FORMULA})|(${P_STANDARD})`,
   'g'
 );
 
+/** Renders the parts of one formatted token (plain text, <sub>, <sup>). */
+function renderParts(parts: ChemPart[], keyPrefix: string): React.ReactNode[] {
+  return parts.map((p, i) =>
+    p.k === 'sub' ? (
+      <sub key={`${keyPrefix}-${i}`}>{p.s}</sub>
+    ) : p.k === 'sup' ? (
+      <sup key={`${keyPrefix}-${i}`}>{p.s}</sup>
+    ) : (
+      <React.Fragment key={`${keyPrefix}-${i}`}>{p.s}</React.Fragment>
+    )
+  );
+}
+
 /**
- * Automatically detects chemical formula tags like {{chem:H2SO4}} or standard
- * reaction patterns and chemical formulas, wrapping them in <bdi dir="ltr">.
+ * Chemical notation only (no equation typesetting): formulas get real subscripts/superscripts
+ * (H<sub>2</sub>SO<sub>4</sub>, Fe<sup>3+</sup>, 10<sup>−3</sup>, 1s<sup>2</sup>, sp<sup>3</sup>),
+ * ASCII arrows become → / ⇌, and every formula or reaction is wrapped in a <bdi dir="ltr"> isolate
+ * so it keeps its left-to-right order inside Arabic text. See chemNotation.ts for the rules.
  */
-export function formatChemText(rawText: string): React.ReactNode {
+function renderChemNotation(rawText: string, keyPrefix = ''): React.ReactNode {
+  const segments = tokenizeChemText(rawText);
+  if (segments.length === 1 && segments[0].type === 'text') {
+    return segments[0].text;
+  }
+  return segments.map((seg, idx) => {
+    const si = `${keyPrefix}${idx}`;
+    if (seg.type === 'text') {
+      return <React.Fragment key={si}>{seg.text}</React.Fragment>;
+    }
+    const tokens = seg.tokens.filter((t) => 'parts' in t);
+    if (tokens.length === 1 && seg.tokens.length === 1) {
+      return (
+        <bdi key={si} dir="ltr" className="chem-formula">
+          {renderParts((seg.tokens[0] as { parts: ChemPart[] }).parts, `${si}`)}
+        </bdi>
+      );
+    }
+    // A reaction / ion pair / electron configuration: one isolate for the whole equation (so it
+    // reads left to right in RTL), but it may wrap between terms; each formula stays unbroken.
+    return (
+      <bdi key={si} dir="ltr" className="chem-formula chem-eq">
+        {seg.tokens.map((t, ti) =>
+          'gap' in t ? (
+            <React.Fragment key={`${si}-g${ti}`}>{t.gap}</React.Fragment>
+          ) : (
+            <span key={`${si}-t${ti}`} className="chem-f">
+              {renderParts(t.parts, `${si}-${ti}`)}
+            </span>
+          )
+        )}
+      </bdi>
+    );
+  });
+}
+
+export interface FormatChemOptions {
+  /**
+   * true   — the string is a stand-alone formula field: parts separated by " | " are stacked on
+   *          separate lines and equations use display style (stacked fractions).
+   * 'auto' — display style only when the whole string is one equation (an option such as
+   *          "r = k[A]^2" or "1,0x10^-4 M"); otherwise inline.
+   * false  — inline (default): equations inside running text.
+   */
+  display?: boolean | 'auto';
+}
+
+/** One line of text: equation runs typeset with KaTeX, the rest with chemical notation. */
+function renderMixed(text: string, display: boolean, keyPrefix = ''): React.ReactNode {
+  const segments = typesetMath(text, { display });
+  if (!segments.some((seg) => seg.type === 'math')) return renderChemNotation(text, keyPrefix);
+  return segments.map((seg, i) => {
+    const key = `${keyPrefix}m${i}`;
+    if (seg.type === 'text') {
+      return <React.Fragment key={key}>{renderChemNotation(seg.text, `${key}-`)}</React.Fragment>;
+    }
+    // KaTeX output only (labels are HTML-escaped by mathTypeset); the original notation stays
+    // available to assistive technology through aria-label.
+    return (
+      <bdi
+        key={key}
+        dir="ltr"
+        role="math"
+        aria-label={seg.raw}
+        className={`chem-math${display ? ' chem-math--display' : ''}${seg.wide ? ' chem-math--wide' : ''}`}
+        dangerouslySetInnerHTML={{ __html: seg.html }}
+      />
+    );
+  });
+}
+
+/**
+ * Formats bank text for display.
+ *  - Equation runs ("Ka = [H+]^2 / Ca", "sqrt(64/16) = 2", "1,0x10^-10") are converted to LaTeX and
+ *    rendered with KaTeX (see mathTypeset.ts). Anything the converter is not sure about keeps the
+ *    chemical-notation rendering below, so no text is ever lost.
+ *  - Chemical formulas get real subscripts/superscripts, ASCII arrows become → / ⇌, and every
+ *    formula or equation is a <bdi dir="ltr"> isolate (left-to-right inside Arabic text).
+ * The stored text is never changed; only the rendering.
+ */
+export function formatChemText(rawText: string, options: FormatChemOptions = {}): React.ReactNode {
   if (!rawText) {
     return rawText;
   }
-
-  const regex = new RegExp(CHEM_FORMULA_REGEX.source, 'g');
-  const nodes: React.ReactNode[] = [];
-  let lastIndex = 0;
-  let match: RegExpExecArray | null;
-  let key = 0;
-
-  while ((match = regex.exec(rawText)) !== null) {
-    const token = match[0];
-    // Roman numerals (I., II., III.) and exam acronyms are prose, not formulas.
-    if (/^(?:[IVX]+|TYT|AYT|YKS)$/.test(token)) {
-      continue;
+  if (options.display === true) {
+    const parts = rawText.split(/\s+\|\s+/).filter((p) => p.trim());
+    if (parts.length > 1) {
+      return parts.map((part, i) => (
+        <span key={i} className="chem-eq-line">
+          {renderMixed(part.trim(), true, `l${i}-`)}
+        </span>
+      ));
     }
-    if (match.index > lastIndex) {
-      nodes.push(rawText.slice(lastIndex, match.index));
+    return renderMixed(rawText, true);
+  }
+  if (options.display === 'auto' && isWholeEquation(rawText)) {
+    return renderMixed(rawText.trim(), true);
+  }
+  return renderMixed(rawText, false);
+}
+
+/**
+ * Splits a long explanation / worked solution into readable blocks:
+ *  - explicit line breaks in the text,
+ *  - I. / II. / III. statement evaluations ("I. Doğrudur: … II. Yanlıştır: …"),
+ *  - the "Diğer seçenekler…" list of corrected options (A) … B) …),
+ *  - numbered steps ("1) …", "Adım 1: …", "Step 2: …").
+ * Returns plain strings; the caller renders each with formatChemText.
+ */
+export function splitExplanationBlocks(text: string): string[] {
+  if (!text) return [];
+  const out: string[] = [];
+  for (const para of text.split(/\n+/)) {
+    const p = para.trim();
+    if (!p) continue;
+    let marked = p;
+    if (/^I\.\s/.test(p)) {
+      // statement evaluations: "I. Doğrudur: … II. Yanlıştır: … III. …  Buna göre …"
+      marked = marked
+        .replace(/([.。:：)）])\s*(?=(?:II|III|IV|V)\.\s)/gu, '$1\u2028')
+        .replace(/([.。)）])\s*(?=(?:Buna göre|Therefore|Die Antwort|La réponse|Следовательно|وعليه|因此|Ji ber vê))/gu, '$1\u2028');
     }
-    if (token.startsWith('{{chem:') && token.endsWith('}}')) {
-      const formula = token.slice(7, -2);
-      nodes.push(<ChemFormula key={key++} formula={formula} />);
-    } else {
-      nodes.push(<ChemFormula key={key++} formula={token} />);
+    if (/[:：]\s*1\.\s.+?\s→\s2\.\s/su.test(marked)) {
+      // sequence progressions: "…doğru sırası: 1. … → 2. … → 3. …" — one step per line
+      marked = marked
+        .replace(/([:：])\s*(?=1\.\s)/u, '$1 ')
+        .replace(/\s→\s(?=\d{1,2}\.\s)/gu, ' → ');
     }
-    lastIndex = regex.lastIndex;
+    const pieces = marked
+      // corrected options list: "…: A) … B) …"
+      .replace(/([.。:：])\s+(?=[A-E]\)\s)/gu, '$1\u2028')
+      // numbered steps
+      .replace(/([.。:：;])\s+(?=(?:\d{1,2}\)|(?:Adım|Step|Schritt|Étape|Шаг|الخطوة|步骤|Gav)\s?\d{1,2}\s?[:.)]))/gu, '$1\u2028')
+      .split('\u2028')
+      .map((x) => x.trim())
+      .filter(Boolean);
+    out.push(...pieces);
   }
+  return out;
+}
 
-  if (lastIndex === 0) {
-    return rawText;
-  }
-
-  if (lastIndex < rawText.length) {
-    nodes.push(rawText.slice(lastIndex));
-  }
-
-  return nodes;
+/** Renders an explanation as separate lines/paragraphs, each with chemical notation. */
+export function formatChemBlock(text: string, className = 'chem-block__p'): React.ReactNode {
+  const blocks = splitExplanationBlocks(text);
+  if (blocks.length <= 1) return formatChemText(text);
+  return blocks.map((b, i) => (
+    <span key={i} className={className}>
+      {formatChemText(b)}
+    </span>
+  ));
 }
