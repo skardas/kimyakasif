@@ -26,6 +26,9 @@ import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { EXAM_STRINGS } from '../../i18n/examStrings';
 import { redesignStrings, redesignExtra } from '../../i18n/redesignStrings';
 
+/** Options with no Arabic letters ("50.0 cm", "CH4") keep their own left-to-right order in RTL. */
+const HAS_RTL_SCRIPT = /\p{Script=Arabic}/u;
+
 /** Stems with statements (line breaks) or more than ~2 phone lines use the smaller reading size. */
 const isLongStem = (stem: string) => stem.length > 110 || /\n/.test(stem.trim());
 
@@ -369,6 +372,9 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
   const kindLabel = (() => {
     if (examType === 'UNIT') return `${r.unitTest} · ${subtitle || title}`;
     if (inReview) return `${x.reviewQuestions} · ${title}`;
+    // Mistake / starred subtitles only repeat the title with a count ("Starred questions · 1 starred
+    // questions"), and the count is already in "Question 1 / n" below.
+    if (examType === 'MISTAKE' || examType === 'BOOKMARK') return title;
     return subtitle ? `${title} · ${subtitle}` : title;
   })();
 
@@ -631,7 +637,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                         onClick={() => handleSelectOption(optIdx)}
                       >
                         <span className="ky-key">{optionLetter}</span>
-                        <span className="ky-fs-16 qz-opt-text">{formatChemText(optText, { display: 'auto' })}</span>
+                        <span className="ky-fs-16 qz-opt-text" dir={HAS_RTL_SCRIPT.test(optText) ? undefined : 'auto'}>{formatChemText(optText, { display: 'auto' })}</span>
                         {stateClass === 'right' && (
                           <span className="qz-opt-mark" aria-hidden="true">
                             <Check size={20} strokeWidth={3} />

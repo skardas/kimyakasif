@@ -108,8 +108,21 @@ export interface FormatChemOptions {
 
 /** One line of text: equation runs typeset with KaTeX, the rest with chemical notation. */
 function renderMixed(text: string, display: boolean, keyPrefix = ''): React.ReactNode {
-  const segments = typesetMath(text, { display });
+  const segments = typesetMath(text, { display }).map((seg) => ({ ...seg }));
   if (!segments.some((seg) => seg.type === 'math')) return renderChemNotation(text, keyPrefix);
+  // "CH4 (MA = 16)": a math run wrapped in parentheses takes them into its LTR isolate, so in
+  // Arabic the brackets are not mirrored to the far end of the line or left behind at a wrap.
+  const wrapped = new Set<number>();
+  segments.forEach((seg, i) => {
+    const before = segments[i - 1];
+    const after = segments[i + 1];
+    if (seg.type !== 'math' || before?.type !== 'text' || after?.type !== 'text') return;
+    if (/\($/.test(before.text) && /^\)/.test(after.text)) {
+      before.text = before.text.slice(0, -1);
+      after.text = after.text.slice(1);
+      wrapped.add(i);
+    }
+  });
   return segments.map((seg, i) => {
     const key = `${keyPrefix}m${i}`;
     if (seg.type === 'text') {
@@ -124,7 +137,7 @@ function renderMixed(text: string, display: boolean, keyPrefix = ''): React.Reac
         role="math"
         aria-label={seg.raw}
         className={`chem-math${display ? ' chem-math--display' : ''}${seg.wide ? ' chem-math--wide' : ''}`}
-        dangerouslySetInnerHTML={{ __html: seg.html }}
+        dangerouslySetInnerHTML={{ __html: wrapped.has(i) ? `(${seg.html})` : seg.html }}
       />
     );
   });

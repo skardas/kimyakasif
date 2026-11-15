@@ -74,8 +74,9 @@ const STATE_SYMBOLS = /^\((?:k|s|g|l|aq|suda|sıvı|katı|gaz|buhar|steam|solid|
 const NOBLE_CORE = /^\[(?:He|Ne|Ar|Kr|Xe|Rn)\]/;
 
 const MINUS = '−';
-// CJK ideographs count as a boundary: Chinese text attaches formulas directly ("矾油是H2SO4的")
-const isLetterOrDigit = (ch: string | undefined): boolean => !!ch && /[\p{L}\p{N}_]/u.test(ch) && !/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(ch);
+// CJK ideographs count as a boundary: Chinese text attaches formulas directly ("矾油是H2SO4的").
+// Arabic letters too: the prefixes و / ب / ل are written joined to the next word ("وSO2").
+const isLetterOrDigit = (ch: string | undefined): boolean => !!ch && /[\p{L}\p{N}_]/u.test(ch) && !/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Arabic}]/u.test(ch);
 const isLetter = (ch: string | undefined): boolean => !!ch && /\p{L}/u.test(ch);
 const signChar = (c: string) => (c === '-' || c === '−' ? MINUS : c);
 

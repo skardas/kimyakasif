@@ -193,3 +193,6 @@
 @media (min-width: 900px) {
   .fc-stage { block-size: calc(100dvh - 140px); max-block-size: 680px; min-block-size: 360px; }
 }
+@media (min-width: 900px) and (orientation: portrait) {
+  .fc-stage { block-size: 56dvh; max-block-size: 780px; }
+}
