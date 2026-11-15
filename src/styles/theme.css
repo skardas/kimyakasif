@@ -370,6 +370,15 @@ button:disabled,
   white-space: normal;
 }
 
+/* In right-to-left text a left-to-right equation that wraps is split with its first half at the
+   end of one line and the rest at the start of the next, which reads out of order. Keep a short
+   run in one piece there; it moves to the next line as a whole. */
+[dir="rtl"] .chem-math:not(.chem-math--wide):not(.chem-math--display) {
+  display: inline-block;
+  max-inline-size: 100%;
+  white-space: nowrap;
+}
+
 .chem-math .katex {
   font-size: 1.1em;
   line-height: 1.2;

@@ -546,7 +546,8 @@ function parseWordOperand(c: Ctx, i: number): R | null {
     return { end: i + am[1].length, tex: `\\mathrm{${am[1]}}`, w: am[1].length, feat: 0, kind: 'chem' };
   }
 
-  const ed = /^([A-Z][a-z]?)\s?=\s?[\d+\-−A-Z]/.exec(s.slice(i, i + 6));
+  // (a tight "O=O" / "C=O" is a double bond, not an equation)
+  const ed = /^([A-Z][a-z]?)(?: [=<>] [\d+\-−A-Z]|[=<>][\d+\-−])/.exec(s.slice(i, i + 7));
   // C / N / S … are element data only next to another "element = value" pair ("C = 2,4/12; H = 0,4/1")
   const sibling = (): boolean => {
     for (const m of s.slice(Math.max(0, i - 48), i + 64).matchAll(/(?:^|[\s(,;:])([A-Z][a-z]|H|O)\s?=\s?[\d+\-−]/g)) {
@@ -554,7 +555,7 @@ function parseWordOperand(c: Ctx, i: number): R | null {
     }
     return false;
   };
-  if (ed && isElementSymbol(ed[1]) && !EXACT[ed[1]] && !c.reaction && (ed[1].length === 2 || ed[1] === 'O' || ed[1] === 'H' || (/[CNSPFIK]/.test(ed[1]) && /^[A-Z]\s?=\s?\d/.test(ed[0]) && sibling()))) {
+  if (ed && isElementSymbol(ed[1]) && !EXACT[ed[1]] && !c.reaction && (ed[1].length === 2 || ed[1] === 'O' || ed[1] === 'H' || (/[CNSPFIK]/.test(ed[1]) && /^[A-Z] ?= ?\d/.test(ed[0]) && sibling()))) {
     return { end: i + ed[1].length, tex: `\\mathrm{${ed[1]}}`, w: ed[1].length, feat: 0, kind: 'sym' };
   }
   const raw = lexWord(s, i);
@@ -627,7 +628,7 @@ function parseWordOperand(c: Ctx, i: number): R | null {
     const lowerHead = /[a-z]/.test(s[i]);
     let subTex: string | null = null;
     let end = 0;
-    if (st && (lowerHead || /^(?:[A-Z][a-z]?\d*)+$/.test(st.raw))) {
+    if (st && !/[()[\]]/.test(st.raw) && (lowerHead || /^(?:[A-Z][a-z]?\d*)+$/.test(st.raw))) {
       const ct = chemTex(c, st);
       if (ct) {
         subTex = ct.tex;
@@ -639,8 +640,10 @@ function parseWordOperand(c: Ctx, i: number): R | null {
     }
     if (subTex !== null) return { end, tex: `${s[i]}_{${subTex}}`, w: end - i, feat: 0, kind: 'sym' };
   }
-  // bare element symbols only where a species is expected (inside brackets)
+  // bare element symbols only where a species is expected: inside brackets, or as a later member of
+  // a comparison chain ("H2O > CH4 > NaCl > He")
   if (tok && c.depth > 0) return chemR(c, tok);
+  if (tok && c.sawRel && /^[A-Z][a-z]$/.test(tok.raw) && isElementSymbol(tok.raw)) return chemR(c, tok);
   return null;
 }
 
@@ -830,6 +833,12 @@ function parseNumber(c: Ctx, i: number): R | null {
     tex += '\\%';
     j++;
     w++;
+    numeric = false;
+  } else if (isSp(s[j]) && s[j + 1] === '%' && !isWordCh(s[j + 2]) && !/^ ?[·*×=]/.test(s.slice(j + 2, j + 4))) {
+    // French / German spacing: "36 %"
+    tex += '\\,\\%';
+    j += 2;
+    w += 1.5;
     numeric = false;
   }
   const r: R = { end: j, tex, w, feat: 0, kind: 'num', numeric, digitEnd: numeric };
@@ -1410,7 +1419,7 @@ function canStart(s: string, i: number): boolean {
   if (prev === undefined) return true;
   if (isWordCh(prev)) return false;
   if (prev === "'" || prev === '’' || prev === '^' || prev === '°' || prev === '{' || prev === '\\' || prev === '@' || prev === '#' || prev === '?' || prev === '&') return false;
-  if ((prev === '-' || prev === '−' || prev === '–' || prev === '/' || prev === '.' || prev === ',' || prev === ':') && isWordCh(s[i - 2])) return false;
+  if ((prev === '-' || prev === '−' || prev === '–' || prev === '/' || prev === '.' || prev === ',' || prev === ':' || prev === '=' || prev === '≡') && isWordCh(s[i - 2])) return false;
   if (ch === '+' || ch === '-' || ch === '−') {
     if (!(isDigit(s[i + 1]) || isLetterCh(s[i + 1]) || s[i + 1] === '(')) return false;
     if (prev === '+' || prev === '-' || prev === ')' || prev === ']') return false;
@@ -1433,6 +1442,7 @@ function worthy(s: string, i: number, r: RunResult): boolean {
   if (/(?:[·*×/^]|[\d)\]] x)[ \u00A0]?$/.test(beforeRun)) return false;
   if (/[\p{L}\p{N})\]] [+\-−–] $/u.test(beforeRun)) return false;
   if (/[\d)\]] : $/.test(beforeRun)) return false; // the second half of a ratio
+  if (/^[A-Z]/.test(raw) && /[+→⇌] \d{1,2} $/.test(beforeRun)) return false; // "2 H–H + 1 O=O = …": a term of a sum
   if (/^\(\d+\)\s?=/.test(raw)) return false;
   // "CO3 2-" whose spaced charge the species parser could not attach (CJK text follows)
   if (/^ [1-4][+\-−]/.test(s.slice(r.end, r.end + 3))) return false;

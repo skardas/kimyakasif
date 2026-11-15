@@ -120,10 +120,13 @@
 
 .sl-formula__eq {
   margin: 0;
-  font-family: var(--font-formula);
-  font-weight: 700;
+  /* Parts of a formula line that are not typeset by KaTeX (word labels such as "İyonlaşma % =")
+     use the same serif as the labels inside the typeset maths, so one line reads as one formula. */
+  font-family: var(--font-math-label, 'Times New Roman', Times, 'Noto Serif', 'Droid Serif', serif);
+  font-weight: 400;
+  font-size: 1.3125rem;
   color: var(--accent);
-  line-height: 1.3;
+  line-height: 1.35;
   overflow-wrap: anywhere;
 }
 
