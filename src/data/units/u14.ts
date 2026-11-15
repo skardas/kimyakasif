@@ -76,7 +76,7 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-f03",
       "fact": {
-        "tr": "Mol kesri (X), bir bileşenin mol sayısının toplam mol sayısına oranıdır (XA = nA / ntoplam); toplamı 1 dir.",
+        "tr": "Mol kesri (X), bir bileşenin mol sayısının toplam mol sayısına oranıdır (XA = nA / ntoplam); toplamı 1'dir.",
         "en": "Mole fraction (X) is the ratio of the number of moles of a component to the total number of moles (XA = nA / ntotal); total is 1.",
         "de": "Der Molenbruch (X) ist das Verhältnis der Molzahl einer Komponente zur Gesamtmolzahl (XA = nA / ntotal); Insgesamt ist 1.",
         "fr": "La fraction molaire (X) est le rapport du nombre de moles d'un composant au nombre total de moles (XA = nA/ntotal) ; le total est de 1.",
@@ -86,7 +86,7 @@ export const unit14: ChemistryUnitSeedData = {
         "ku": "Parçeya molê (X) rêjeya jimara molên hêmanekê bi tevahî hejmara molan re ye (XA = nA / ntotal); giştî 1 e."
       },
       "trap": {
-        "tr": "Mol kesri 1 den büyük değerler alabilir.",
+        "tr": "Mol kesri 1'den büyük değerler alabilir.",
         "en": "The mole fraction can take values ​​greater than 1.",
         "de": "Der Stoffmengenanteil kann Werte größer als 1 annehmen.",
         "fr": "La fraction molaire peut prendre des valeurs supérieures à 1.",
@@ -122,7 +122,7 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-f05",
       "fact": {
-        "tr": "Çözeltilerin karıştırılması formülü: M1V1 + M2V2 + ... = M_son * V_toplam dır.",
+        "tr": "Çözeltilerin karıştırılması formülü: M1V1 + M2V2 + ... = M_son * V_toplam'dır.",
         "en": "The formula for mixing solutions is: M1V1 + M2V2 + ... = M_last * V_total.",
         "de": "Die Formel zum Mischen von Lösungen lautet: M1V1 + M2V2 + ... = M_last * V_total.",
         "fr": "La formule de mélange des solutions est la suivante : M1V1 + M2V2 + ... = M_last * V_total.",
@@ -155,7 +155,7 @@ export const unit14: ChemistryUnitSeedData = {
         "ku": "Dema ku hişkek îyonî di nav avê de tê hilweşandin, kombûna îyonê ya di nav çareseriyê de hilbera molarîteya xwê û rêjeya îyonî ye."
       },
       "trap": {
-        "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M dır.",
+        "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M'dır.",
         "en": "The chloride ion concentration in 0.1 M AlCl3 solution is 0.1 M.",
         "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
         "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
@@ -165,7 +165,7 @@ export const unit14: ChemistryUnitSeedData = {
         "ku": "Di çareseriya 0,1 M AlCl3 de rêjeya îyona klorîdê 0,1 M e."
       },
       "osymTip": {
-        "tr": "0.1 M AlCl3 de [Cl-] = 3 * 0.1 = 0.3 M dır!",
+        "tr": "0.1 M AlCl3'te [Cl-] = 3 * 0.1 = 0.3 M'dır!",
         "en": "In 0.1 M AlCl3, [Cl-] = 3 * 0.1 = 0.3 M!",
         "de": "In 0,1 M AlCl3 ist [Cl-] = 3 * 0,1 = 0,3 M!",
         "fr": "Dans 0,1 M AlCl3, [Cl-] = 3 * 0,1 = 0,3 M !",
@@ -178,7 +178,7 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-f07",
       "fact": {
-        "tr": "Çözeltiye saf su eklendiğinde (seyreltme) çözünenin mol sayısı değişmez; formül M1V1 = M2V2 dir.",
+        "tr": "Çözeltiye saf su eklendiğinde (seyreltme) çözünenin mol sayısı değişmez; formül M1V1 = M2V2'dir.",
         "en": "When pure water is added to the solution (dilution), the number of moles of solute does not change; The formula is M1V1 = M2V2.",
         "de": "Wenn der Lösung reines Wasser zugesetzt wird (Verdünnung), ändert sich die Molzahl des gelösten Stoffes nicht; Die Formel lautet M1V1 = M2V2.",
         "fr": "Lorsque de l’eau pure est ajoutée à la solution (dilution), le nombre de moles de soluté ne change pas ; La formule est M1V1 = M2V2.",
@@ -385,7 +385,7 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-f16",
       "fact": {
-        "tr": "Hacimce yüzde derişim = (Çözünen Sıvı Hacmi / Çözelti Toplam Hacmi) x 100 dür (örn. 80° kolonya).",
+        "tr": "Hacimce yüzde derişim = (Çözünen Sıvı Hacmi / Çözelti Toplam Hacmi) x 100'dür (örn. 80° kolonya).",
         "en": "Percent concentration by volume = (Volume of Dissolved Liquid / Total Volume of Solution) x 100 (e.g. 80° cologne).",
         "de": "Prozentuale Konzentration nach Volumen = (Volumen der gelösten Flüssigkeit / Gesamtvolumen der Lösung) x 100 (z. B. 80° Cologne).",
         "fr": "Pourcentage de concentration en volume = (Volume de liquide dissous / Volume total de solution) x 100 (par exemple eau de Cologne à 80°).",
@@ -974,7 +974,7 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin02",
       "stem": {
-        "tr": "Özkütlesi 1.2 g/mL olan kütlece %36.5 lik derişik HCl çözeltisinin molar derişimi kaçtır? (HCl: 36.5)",
+        "tr": "Özkütlesi 1.2 g/mL olan kütlece %36.5'lik derişik HCl çözeltisinin molar derişimi kaçtır? (HCl: 36.5)",
         "en": "What is the molar concentration of a 36.5% concentrated HCl solution by mass with a density of 1.2 g/mL? (HCl: 36.5)",
         "de": "Wie hoch ist die molare Konzentration einer 36,5 %igen konzentrierten HCl-Lösung mit einer Dichte von 1,2 g/ml? (HCl: 36,5)",
         "fr": "Quelle est la concentration molaire d'une solution de HCl concentrée à 36,5 % en masse avec une densité de 1,2 g/mL ? (HCl : 36,5)",
@@ -1050,18 +1050,18 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Sıvı Çözeltiler ve Derişim Birimleri konusunu işlerken Molarite (M) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Liquid Solutions & Concentrations, which statement regarding Molarity (M) represents the correct answer?",
-        "de": "Welche Aussage zu Molarität (M) stellt im Kontext von Flüssige Lösungen & Konzentrationen die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Solutions Liquides & Concentrations, quelle proposition sur Molarité (M) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Жидкие растворы и концентрации», какой ответ относительно «Молярность (М)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"المحاليل السائلة والتركيز\" مخبرياً، أي إجابة بخصوص \"المولارية (م)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“溶液与浓度单位”实验探究与教学分析中，针对“摩尔浓度 (M)”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan bersiv derbarê \"Molarity (M)\" de rast e?"
+        "tr": "Kimya dersinde Sıvı Çözeltiler ve Derişim Birimleri ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Liquid Solutions & Concentrations, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Flüssige Lösungen & Konzentrationen: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Solutions Liquides & Concentrations, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Жидкие растворы и концентрации», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"المحاليل السائلة والتركيز\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“溶液与浓度单位”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
-          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M dır.",
+          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M'dır.",
           "en": "The chloride ion concentration in 0.1 M AlCl3 solution is 0.1 M.",
           "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
           "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
@@ -1081,7 +1081,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Tevlihevkirina îyonên hevpar bi tevlihevkirinê bandor nabe."
         },
         {
-          "tr": "Mol kesri (X), bir bileşenin mol sayısının toplam mol sayısına oranıdır (XA = nA / ntoplam); toplamı 1 dir.",
+          "tr": "Mol kesri (X), bir bileşenin mol sayısının toplam mol sayısına oranıdır (XA = nA / ntoplam); toplamı 1'dir.",
           "en": "Mole fraction (X) is the ratio of the number of moles of a component to the total number of moles (XA = nA / ntotal); total is 1.",
           "de": "Der Molenbruch (X) ist das Verhältnis der Molzahl einer Komponente zur Gesamtmolzahl (XA = nA / ntotal); Insgesamt ist 1.",
           "fr": "La fraction molaire (X) est le rapport du nombre de moles d'un composant au nombre total de moles (XA = nA/ntotal) ; le total est de 1.",
@@ -1113,7 +1113,7 @@ export const unit14: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Mol kesri (X), bir bileşenin mol sayısının toplam mol sayısına oranıdır (XA = nA / ntoplam); toplamı 1 dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Mol kesri (X), bir bileşenin mol sayısının toplam mol sayısına oranıdır (XA = nA / ntoplam); toplamı 1'dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Mole fraction (X) is the ratio of the number of moles of a component to the total number of moles (XA = nA / ntotal); total is 1.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Der Molenbruch (X) ist das Verhältnis der Molzahl einer Komponente zur Gesamtmolzahl (XA = nA / ntotal); Insgesamt ist 1.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La fraction molaire (X) est le rapport du nombre de moles d'un composant au nombre total de moles (XA = nA/ntotal) ; le total est de 1.\". Notion fondamentale du programme officiel de chimie.",
@@ -1126,14 +1126,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin04",
       "stem": {
-        "tr": "Kimya dersinde Sıvı Çözeltiler ve Derişim Birimleri ünitesi incelenirken Mol Kesri (X) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Liquid Solutions & Concentrations, which of the following propositions concerning Mole Fraction (X) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Flüssige Lösungen & Konzentrationen: Welche Behauptung bezüglich Molenanteil (X) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Solutions Liquides & Concentrations, laquelle des affirmations suivantes concernant Fraction taupe (X) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Жидкие растворы и концентрации», какое из следующих суждений о «Мольная доля (X)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"المحاليل السائلة والتركيز\"، أي من الأحكام التالية المتعلقة بـ \"الكسر المولي (X)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“溶液与浓度单位”核心规律时，下列关于“摩尔分数 (X)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" tê kirin, kîjan daraza li ser \"Parçeya Mole (X)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Sıvı Çözeltiler ve Derişim Birimleri konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Liquid Solutions & Concentrations?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Flüssige Lösungen & Konzentrationen zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Solutions Liquides & Concentrations ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Жидкие растворы и концентрации»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"المحاليل السائلة والتركيز\"؟",
+        "zh": "根据“溶液与浓度单位”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de rast e?"
       },
       "options": [
         {
@@ -1202,14 +1202,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Sıvı Çözeltiler ve Derişim Birimleri konusundaki temel kimyasal kurallar çerçevesinde Derişik Çözelti kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Concentrated Solution within the fundamental principles of Liquid Solutions & Concentrations?",
-        "de": "Welche Aussage beschreibt das Konzept Konzentrierte Lösung im Rahmen von Flüssige Lösungen & Konzentrationen am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Solution concentrée selon les lois de Solutions Liquides & Concentrations?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Концентрированное решение» в рамках темы «Жидкие растворы и концентрации»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"محلول مركز\" ضمن قواعد \"المحاليل السائلة والتركيز\"؟",
-        "zh": "根据“溶液与浓度单位”的基本化学原理，下列哪项阐述能最准确地界定“浓缩液”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Çareseriya konsantrekirî\" di çarçoveya prensîbên \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Sıvı Çözeltiler ve Derişim Birimleri sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Liquid Solutions & Concentrations, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Flüssige Lösungen & Konzentrationen: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Solutions Liquides & Concentrations, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Жидкие растворы и концентрации», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المحاليل السائلة والتركيز\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“溶液与浓度单位”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1253,7 +1253,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Molarity hejmara molên maddeya çareserkirî ye di 1 kîloya helwêstê de."
         },
         {
-          "tr": "Çözeltilerin karıştırılması formülü: M1V1 + M2V2 + ... = M_son * V_toplam dır.",
+          "tr": "Çözeltilerin karıştırılması formülü: M1V1 + M2V2 + ... = M_son * V_toplam'dır.",
           "en": "The formula for mixing solutions is: M1V1 + M2V2 + ... = M_last * V_total.",
           "de": "Die Formel zum Mischen von Lösungen lautet: M1V1 + M2V2 + ... = M_last * V_total.",
           "fr": "La formule de mélange des solutions est la suivante : M1V1 + M2V2 + ... = M_last * V_total.",
@@ -1265,7 +1265,7 @@ export const unit14: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Çözeltilerin karıştırılması formülü: M1V1 + M2V2 + ... = M_son * V_toplam dır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Çözeltilerin karıştırılması formülü: M1V1 + M2V2 + ... = M_son * V_toplam'dır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"The formula for mixing solutions is: M1V1 + M2V2 + ... = M_last * V_total.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Die Formel zum Mischen von Lösungen lautet: M1V1 + M2V2 + ... = M_last * V_total.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La formule de mélange des solutions est la suivante : M1V1 + M2V2 + ... = M_last * V_total.\". Notion fondamentale du programme officiel de chimie.",
@@ -1278,14 +1278,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Sıvı Çözeltiler ve Derişim Birimleri sorularında karşılaşılan Homojen Çözelti konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Liquid Solutions & Concentrations, which assertion regarding Homogeneous Solution is correct?",
-        "de": "Welche Feststellung bezüglich Homogene Lösung ist nach den chemischen Gesetzmäßigkeiten von Flüssige Lösungen & Konzentrationen richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Solutions Liquides & Concentrations, quelle affirmation concernant Solution homogène est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Жидкие растворы и концентрации», какое положение относительно «Гомогенное решение» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المحاليل السائلة والتركيز\"، أي حكم متعلق بـ \"حل متجانس\" يعتبر صحيحاً؟",
-        "zh": "在高考“溶液与浓度单位”经典考题中，下列有关“均质溶液”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan daraza li ser \"Çareseriya homojen\" rast e?"
+        "tr": "Aşağıda Sıvı Çözeltiler ve Derişim Birimleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Liquid Solutions & Concentrations, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Flüssige Lösungen & Konzentrationen: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Solutions Liquides & Concentrations, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Жидкие растворы и концентрации», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المحاليل السائلة والتركيز\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“溶液与浓度单位”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1341,7 +1341,7 @@ export const unit14: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"İyonik katı suda çözündüğünde çözeltideki iyon derişimi tuzun molaritesi ile iyon katsayısının çarpımıdır.\" ifadesidir. 0.1 M AlCl3 de [Cl-] = 3 * 0.1 = 0.3 M dır!",
+        "tr": "Doğru cevap \"İyonik katı suda çözündüğünde çözeltideki iyon derişimi tuzun molaritesi ile iyon katsayısının çarpımıdır.\" ifadesidir. 0.1 M AlCl3'te [Cl-] = 3 * 0.1 = 0.3 M'dır!",
         "en": "The correct statement is: \"When an ionic solid is dissolved in water, the ion concentration in the solution is the product of the molarity of the salt and the ionic coefficient.\". In 0.1 M AlCl3, [Cl-] = 3 * 0.1 = 0.3 M!",
         "de": "Die zutreffende Aussage lautet: \"Wenn ein ionischer Feststoff in Wasser gelöst wird, ist die Ionenkonzentration in der Lösung das Produkt aus der Molarität des Salzes und dem Ionenkoeffizienten.\". In 0,1 M AlCl3 ist [Cl-] = 3 * 0,1 = 0,3 M!",
         "fr": "L'affirmation exacte est: \"Lorsqu'un solide ionique est dissous dans l'eau, la concentration en ions dans la solution est le produit de la molarité du sel et du coefficient ionique.\". Dans 0,1 M AlCl3, [Cl-] = 3 * 0,1 = 0,3 M !",
@@ -1354,14 +1354,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin07",
       "stem": {
-        "tr": "Aşağıda Sıvı Çözeltiler ve Derişim Birimleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre ppm (Milyonda Bir) ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Liquid Solutions & Concentrations, which statement about ppm (One Per Million) is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Flüssige Lösungen & Konzentrationen: Welche Aussage über ppm (Eins pro Million) ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Solutions Liquides & Concentrations, quelle affirmation relative à ppm (un par million) est exacte?",
-        "ru": "На основе фундаментальных положений темы «Жидкие растворы и концентрации», какое суждение о «ppm (один на миллион)» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المحاليل السائلة والتركيز\"، أي عبارة حول \"جزء في المليون (واحد لكل مليون)\" صحيحة؟",
-        "zh": "基于“溶液与浓度单位”的基础化学知识体系，下列关于“ppm（百万分之一）”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\", kîjan gotin derbarê \"ppm (Ji Mîlyonek Yek)\" de rast e?"
+        "tr": "Sıvı Çözeltiler ve Derişim Birimleri konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Liquid Solutions & Concentrations, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Flüssige Lösungen & Konzentrationen: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Solutions Liquides & Concentrations, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Жидкие растворы и концентрации», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"المحاليل السائلة والتركيز\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“溶液与浓度单位”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1375,7 +1375,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Her ku germahî zêde dibe ji ber berbelavbûna qebareyê molalîte kêm dibe."
         },
         {
-          "tr": "Çözeltiye saf su eklendiğinde (seyreltme) çözünenin mol sayısı değişmez; formül M1V1 = M2V2 dir.",
+          "tr": "Çözeltiye saf su eklendiğinde (seyreltme) çözünenin mol sayısı değişmez; formül M1V1 = M2V2'dir.",
           "en": "When pure water is added to the solution (dilution), the number of moles of solute does not change; The formula is M1V1 = M2V2.",
           "de": "Wenn der Lösung reines Wasser zugesetzt wird (Verdünnung), ändert sich die Molzahl des gelösten Stoffes nicht; Die Formel lautet M1V1 = M2V2.",
           "fr": "Lorsque de l’eau pure est ajoutée à la solution (dilution), le nombre de moles de soluté ne change pas ; La formule est M1V1 = M2V2.",
@@ -1405,7 +1405,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Ji sedî ji hêla volume tenê di çareseriyên hişk-avî de tê bikaranîn."
         },
         {
-          "tr": "Mol kesri 1 den büyük değerler alabilir.",
+          "tr": "Mol kesri 1'den büyük değerler alabilir.",
           "en": "The mole fraction can take values ​​greater than 1.",
           "de": "Der Stoffmengenanteil kann Werte größer als 1 annehmen.",
           "fr": "La fraction molaire peut prendre des valeurs supérieures à 1.",
@@ -1417,7 +1417,7 @@ export const unit14: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"Çözeltiye saf su eklendiğinde (seyreltme) çözünenin mol sayısı değişmez; formül M1V1 = M2V2 dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Çözeltiye saf su eklendiğinde (seyreltme) çözünenin mol sayısı değişmez; formül M1V1 = M2V2'dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"When pure water is added to the solution (dilution), the number of moles of solute does not change; The formula is M1V1 = M2V2.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Wenn der Lösung reines Wasser zugesetzt wird (Verdünnung), ändert sich die Molzahl des gelösten Stoffes nicht; Die Formel lautet M1V1 = M2V2.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Lorsque de l’eau pure est ajoutée à la solution (dilution), le nombre de moles de soluté ne change pas ; La formule est M1V1 = M2V2.\". Notion fondamentale du programme officiel de chimie.",
@@ -1430,14 +1430,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin08",
       "stem": {
-        "tr": "Sıvı Çözeltiler ve Derişim Birimleri konusu kapsamında İyon Derişimi ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Liquid Solutions & Concentrations, which of the following findings regarding Ion Concentration is scientifically verified?",
-        "de": "Im Rahmen der Einheit Flüssige Lösungen & Konzentrationen: Welcher der folgenden Befunde zu Ionenkonzentration ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Solutions Liquides & Concentrations, laquelle des constatations suivantes concernant Concentration ionique est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Жидкие растворы и концентрации», какой из следующих выводов относительно «Концентрация ионов» научно подтверждён?",
-        "ar": "في سياق موضوع \"المحاليل السائلة والتركيز\"، أي من النتائج التالية المتعلقة بـ \"تركيز الأيونات\" مثبتة علمياً؟",
-        "zh": "在“溶液与浓度单位”主题范畴内，下列关于“离子浓度”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan ji van encamên li ser \"Ion Concentration\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Sıvı Çözeltiler ve Derişim Birimleri ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Liquid Solutions & Concentrations, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Flüssige Lösungen & Konzentrationen: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Solutions Liquides & Concentrations, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Жидкие растворы и концентрации», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المحاليل السائلة والتركيز\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“溶液与浓度单位”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1506,14 +1506,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Sıvı Çözeltiler ve Derişim Birimleri ünitesinde ele alınan Molarite hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Liquid Solutions & Concentrations, which statement about Molarity is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Flüssige Lösungen & Konzentrationen: Welche Aussage über Molarität ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Solutions Liquides & Concentrations, quelle affirmation relative à Molarité est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Жидкие растворы и концентрации», какое утверждение о «Молярность» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المحاليل السائلة والتركيز\"، أي عبارة حول \"المولارية\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“溶液与浓度单位”单元中关于“物质的量浓度 (Molarite)”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\", kîjan gotin li ser \"Molarîte\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Sıvı Çözeltiler ve Derişim Birimleri konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Liquid Solutions & Concentrations, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Flüssige Lösungen & Konzentrationen die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Solutions Liquides & Concentrations, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Жидкие растворы и концентрации», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"المحاليل السائلة والتركيز\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“溶液与浓度单位”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1582,14 +1582,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Sıvı Çözeltiler ve Derişim Birimleri konusunu işlerken Elektrolit Çözelti üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Liquid Solutions & Concentrations, which statement regarding Electrolyte Solution represents the correct answer?",
-        "de": "Welche Aussage zu Elektrolytlösung stellt im Kontext von Flüssige Lösungen & Konzentrationen die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Solutions Liquides & Concentrations, quelle proposition sur Solution électrolytique constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Жидкие растворы и концентрации», какой ответ относительно «Электролитный раствор» является правильным?",
-        "ar": "أثناء دراسة موضوع \"المحاليل السائلة والتركيز\" مخبرياً، أي إجابة بخصوص \"محلول بالكهرباء\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“溶液与浓度单位”实验探究与教学分析中，针对“电解液”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan bersiv derbarê \"Çareseriya Elektrolîtê\" de rast e?"
+        "tr": "Kimya dersinde Sıvı Çözeltiler ve Derişim Birimleri ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Liquid Solutions & Concentrations, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Flüssige Lösungen & Konzentrationen: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Solutions Liquides & Concentrations, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Жидкие растворы и концентрации», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"المحاليل السائلة والتركيز\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“溶液与浓度单位”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1613,7 +1613,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Ji sedî ji hêla volume tenê di çareseriyên hişk-avî de tê bikaranîn."
         },
         {
-          "tr": "Mol kesri 1 den büyük değerler alabilir.",
+          "tr": "Mol kesri 1'den büyük değerler alabilir.",
           "en": "The mole fraction can take values ​​greater than 1.",
           "de": "Der Stoffmengenanteil kann Werte größer als 1 annehmen.",
           "fr": "La fraction molaire peut prendre des valeurs supérieures à 1.",
@@ -1623,7 +1623,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Parçeya molê dikare ji 1-ê mezintir nirxan bigire."
         },
         {
-          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M dır.",
+          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M'dır.",
           "en": "The chloride ion concentration in 0.1 M AlCl3 solution is 0.1 M.",
           "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
           "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
@@ -1658,14 +1658,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin11",
       "stem": {
-        "tr": "Kimya dersinde Sıvı Çözeltiler ve Derişim Birimleri ünitesi incelenirken Molarite (M) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Liquid Solutions & Concentrations, which of the following propositions concerning Molarity (M) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Flüssige Lösungen & Konzentrationen: Welche Behauptung bezüglich Molarität (M) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Solutions Liquides & Concentrations, laquelle des affirmations suivantes concernant Molarité (M) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Жидкие растворы и концентрации», какое из следующих суждений о «Молярность (М)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"المحاليل السائلة والتركيز\"، أي من الأحكام التالية المتعلقة بـ \"المولارية (م)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“溶液与浓度单位”核心规律时，下列关于“摩尔浓度 (M)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" tê kirin, kîjan daraza li ser \"Molarity (M)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Sıvı Çözeltiler ve Derişim Birimleri konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Liquid Solutions & Concentrations?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Flüssige Lösungen & Konzentrationen zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Solutions Liquides & Concentrations ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Жидкие растворы и концентрации»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"المحاليل السائلة والتركيز\"؟",
+        "zh": "根据“溶液与浓度单位”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de rast e?"
       },
       "options": [
         {
@@ -1734,14 +1734,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Sıvı Çözeltiler ve Derişim Birimleri konusundaki temel kimyasal kurallar çerçevesinde Mol Kesri (X) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Mole Fraction (X) within the fundamental principles of Liquid Solutions & Concentrations?",
-        "de": "Welche Aussage beschreibt das Konzept Molenanteil (X) im Rahmen von Flüssige Lösungen & Konzentrationen am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Fraction taupe (X) selon les lois de Solutions Liquides & Concentrations?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Мольная доля (X)» в рамках темы «Жидкие растворы и концентрации»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"الكسر المولي (X)\" ضمن قواعد \"المحاليل السائلة والتركيز\"؟",
-        "zh": "根据“溶液与浓度单位”的基本化学原理，下列哪项阐述能最准确地界定“摩尔分数 (X)”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Parçeya Mole (X)\" di çarçoveya prensîbên \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Sıvı Çözeltiler ve Derişim Birimleri sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Liquid Solutions & Concentrations, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Flüssige Lösungen & Konzentrationen: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Solutions Liquides & Concentrations, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Жидкие растворы и концентрации», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المحاليل السائلة والتركيز\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“溶液与浓度单位”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1810,14 +1810,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Sıvı Çözeltiler ve Derişim Birimleri sorularında karşılaşılan Derişik Çözelti konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Liquid Solutions & Concentrations, which assertion regarding Concentrated Solution is correct?",
-        "de": "Welche Feststellung bezüglich Konzentrierte Lösung ist nach den chemischen Gesetzmäßigkeiten von Flüssige Lösungen & Konzentrationen richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Solutions Liquides & Concentrations, quelle affirmation concernant Solution concentrée est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Жидкие растворы и концентрации», какое положение относительно «Концентрированное решение» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المحاليل السائلة والتركيز\"، أي حكم متعلق بـ \"محلول مركز\" يعتبر صحيحاً؟",
-        "zh": "在高考“溶液与浓度单位”经典考题中，下列有关“浓缩液”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan daraza li ser \"Çareseriya konsantrekirî\" rast e?"
+        "tr": "Aşağıda Sıvı Çözeltiler ve Derişim Birimleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Liquid Solutions & Concentrations, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Flüssige Lösungen & Konzentrationen: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Solutions Liquides & Concentrations, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Жидкие растворы и концентрации», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المحاليل السائلة والتركيز\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“溶液与浓度单位”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1831,7 +1831,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Ji sedî ji hêla volume tenê di çareseriyên hişk-avî de tê bikaranîn."
         },
         {
-          "tr": "Mol kesri 1 den büyük değerler alabilir.",
+          "tr": "Mol kesri 1'den büyük değerler alabilir.",
           "en": "The mole fraction can take values ​​greater than 1.",
           "de": "Der Stoffmengenanteil kann Werte größer als 1 annehmen.",
           "fr": "La fraction molaire peut prendre des valeurs supérieures à 1.",
@@ -1851,7 +1851,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Alkolên molekulî (glîkoz C6H12O6, alkola etîl C2H5OH) elektrîkê nagirin (elektrolît ne)."
         },
         {
-          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M dır.",
+          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M'dır.",
           "en": "The chloride ion concentration in 0.1 M AlCl3 solution is 0.1 M.",
           "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
           "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
@@ -1886,14 +1886,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin14",
       "stem": {
-        "tr": "Aşağıda Sıvı Çözeltiler ve Derişim Birimleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Homojen Çözelti ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Liquid Solutions & Concentrations, which statement about Homogeneous Solution is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Flüssige Lösungen & Konzentrationen: Welche Aussage über Homogene Lösung ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Solutions Liquides & Concentrations, quelle affirmation relative à Solution homogène est exacte?",
-        "ru": "На основе фундаментальных положений темы «Жидкие растворы и концентрации», какое суждение о «Гомогенное решение» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المحاليل السائلة والتركيز\"، أي عبارة حول \"حل متجانس\" صحيحة؟",
-        "zh": "基于“溶液与浓度单位”的基础化学知识体系，下列关于“均质溶液”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\", kîjan gotin derbarê \"Çareseriya homojen\" de rast e?"
+        "tr": "Sıvı Çözeltiler ve Derişim Birimleri konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Liquid Solutions & Concentrations, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Flüssige Lösungen & Konzentrationen: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Solutions Liquides & Concentrations, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Жидкие растворы и концентрации», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"المحاليل السائلة والتركيز\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“溶液与浓度单位”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1962,14 +1962,14 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin15",
       "stem": {
-        "tr": "Sıvı Çözeltiler ve Derişim Birimleri konusu kapsamında ppm (Milyonda Bir) ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Liquid Solutions & Concentrations, which of the following findings regarding ppm (One Per Million) is scientifically verified?",
-        "de": "Im Rahmen der Einheit Flüssige Lösungen & Konzentrationen: Welcher der folgenden Befunde zu ppm (Eins pro Million) ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Solutions Liquides & Concentrations, laquelle des constatations suivantes concernant ppm (un par million) est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Жидкие растворы и концентрации», какой из следующих выводов относительно «ppm (один на миллион)» научно подтверждён?",
-        "ar": "في سياق موضوع \"المحاليل السائلة والتركيز\"، أي من النتائج التالية المتعلقة بـ \"جزء في المليون (واحد لكل مليون)\" مثبتة علمياً؟",
-        "zh": "在“溶液与浓度单位”主题范畴内，下列关于“ppm（百万分之一）”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan ji van encamên li ser \"ppm (Ji Mîlyonek Yek)\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Sıvı Çözeltiler ve Derişim Birimleri ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Liquid Solutions & Concentrations, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Flüssige Lösungen & Konzentrationen: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Solutions Liquides & Concentrations, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Жидкие растворы и концентрации», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المحاليل السائلة والتركيز\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“溶液与浓度单位”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2038,18 +2038,18 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Sıvı Çözeltiler ve Derişim Birimleri ünitesinde ele alınan İyon Derişimi hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Liquid Solutions & Concentrations, which statement about Ion Concentration is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Flüssige Lösungen & Konzentrationen: Welche Aussage über Ionenkonzentration ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Solutions Liquides & Concentrations, quelle affirmation relative à Concentration ionique est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Жидкие растворы и концентрации», какое утверждение о «Концентрация ионов» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المحاليل السائلة والتركيز\"، أي عبارة حول \"تركيز الأيونات\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“溶液与浓度单位”单元中关于“离子浓度”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\", kîjan gotin li ser \"Ion Concentration\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Sıvı Çözeltiler ve Derişim Birimleri konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Liquid Solutions & Concentrations, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Flüssige Lösungen & Konzentrationen die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Solutions Liquides & Concentrations, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Жидкие растворы и концентрации», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"المحاليل السائلة والتركيز\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“溶液与浓度单位”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Şilavên Çareseriyê û Yekeyên Hêrbûnê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
-          "tr": "Hacimce yüzde derişim = (Çözünen Sıvı Hacmi / Çözelti Toplam Hacmi) x 100 dür (örn. 80° kolonya).",
+          "tr": "Hacimce yüzde derişim = (Çözünen Sıvı Hacmi / Çözelti Toplam Hacmi) x 100'dür (örn. 80° kolonya).",
           "en": "Percent concentration by volume = (Volume of Dissolved Liquid / Total Volume of Solution) x 100 (e.g. 80° cologne).",
           "de": "Prozentuale Konzentration nach Volumen = (Volumen der gelösten Flüssigkeit / Gesamtvolumen der Lösung) x 100 (z. B. 80° Cologne).",
           "fr": "Pourcentage de concentration en volume = (Volume de liquide dissous / Volume total de solution) x 100 (par exemple eau de Cologne à 80°).",
@@ -2059,7 +2059,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Ji sedî berhevdana ji hêla cildê = (Hejmara Hêviya Hilweşiyayî / Tevahiya Hêjmara Çareseriyê) x 100 (mînak 80° Koln)."
         },
         {
-          "tr": "Mol kesri 1 den büyük değerler alabilir.",
+          "tr": "Mol kesri 1'den büyük değerler alabilir.",
           "en": "The mole fraction can take values ​​greater than 1.",
           "de": "Der Stoffmengenanteil kann Werte größer als 1 annehmen.",
           "fr": "La fraction molaire peut prendre des valeurs supérieures à 1.",
@@ -2069,7 +2069,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Parçeya molê dikare ji 1-ê mezintir nirxan bigire."
         },
         {
-          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M dır.",
+          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M'dır.",
           "en": "The chloride ion concentration in 0.1 M AlCl3 solution is 0.1 M.",
           "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
           "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
@@ -2101,7 +2101,7 @@ export const unit14: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Hacimce yüzde derişim = (Çözünen Sıvı Hacmi / Çözelti Toplam Hacmi) x 100 dür (örn. 80° kolonya).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Hacimce yüzde derişim = (Çözünen Sıvı Hacmi / Çözelti Toplam Hacmi) x 100'dür (örn. 80° kolonya).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Percent concentration by volume = (Volume of Dissolved Liquid / Total Volume of Solution) x 100 (e.g. 80° cologne).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Prozentuale Konzentration nach Volumen = (Volumen der gelösten Flüssigkeit / Gesamtvolumen der Lösung) x 100 (z. B. 80° Cologne).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Pourcentage de concentration en volume = (Volume de liquide dissous / Volume total de solution) x 100 (par exemple eau de Cologne à 80°).\". Notion fondamentale du programme officiel de chimie.",

@@ -117,19 +117,21 @@ export interface ExplanationTemplates {
   positiveConceptTip: (correctOption: string, tip: string) => string;
   positiveConceptDefault: (correctOption: string) => string;
   structureMatch: (correctOption: string, conceptA: string, conceptB: string, distinction: string) => string;
-  reactionOrder: (correctOption: string, seqTitle: string) => string;
+  reactionOrder: (correctOption: string, seqTitle: string, fullProgression?: string) => string;
 }
 
 export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> = {
   tr: {
     romanTrue: (combo) => `Doğru cevap ${combo} seçeneğidir. Öncüller incelendiğinde bilimsel gerçeklerle tam uyumlu olanlar doğrulanmıştır.`,
     romanFalse: (combo) => `Doğru cevap ${combo} seçeneğidir. Belirtilen öncüller kimyasal kavram yanılgıları ve hatalı yargılar içermektedir.`,
-    negativeTrapWhy: (opt, why, fact) => `Yanlış olan ifade "${opt}" dir. Bilimsel açıklama: ${why}. Doğrusu: ${fact}`,
-    negativeTrapDefault: (opt, fact) => `Yanlış olan ifade "${opt}" dir. Bu bir ÖSYM kavram tuzağıdır. Bilimsel doğrusu: ${fact}`,
+    negativeTrapWhy: (opt, why, fact) => `Yanlış olan ifade "${opt}" ifadesidir. Bilimsel açıklama: ${why}. Doğrusu: ${fact}`,
+    negativeTrapDefault: (opt, fact) => `Yanlış olan ifade "${opt}" ifadesidir. Bu bir ÖSYM kavram tuzağıdır. Bilimsel doğrusu: ${fact}`,
     positiveConceptTip: (opt, tip) => `Kesinlikle doğru olan ifade "${opt}" seçeneğidir. ÖSYM İpucu: ${tip}`,
     positiveConceptDefault: (opt) => `Kesinlikle doğru olan ifade "${opt}" seçeneğidir. Diğer seçenekler yaygın sınav yanılgılarını içermektedir.`,
-    structureMatch: (opt, a, b, dist) => `Doğru eşleştirme "${opt}" dir. ${a} ve ${b} arasındaki temel kimyasal ayrım: ${dist}`,
-    reactionOrder: (opt, title) => `Doğru sıralama veya basamak: "${opt}" dir. "${title}" sürecinin tüm aşamaları MEB müfredatında belirtilen deneysel ve kimyasal sıraya göre gerçekleşir.`,
+    structureMatch: (opt, a, b, dist) => `Doğru eşleştirme "${opt}" seçeneğidir. ${a} ve ${b} arasındaki temel kimyasal ayrım: ${dist}`,
+    reactionOrder: (opt, title, fullProgression) => fullProgression
+      ? `Doğru sıralama veya basamak "${opt}" seçeneğidir. "${title}" sürecinin tam basamakları: ${fullProgression}`
+      : `Doğru sıralama veya basamak "${opt}" seçeneğidir. "${title}" sürecinin tüm aşamaları MEB müfredatında belirtilen deneysel ve kimyasal sıraya göre gerçekleşir.`,
   },
   en: {
     romanTrue: (combo) => `The correct answer is ${combo}. An analysis of the propositions confirms those fully aligned with established scientific facts.`,
@@ -139,7 +141,9 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `The strictly correct statement is "${opt}". Exam Tip: ${tip}`,
     positiveConceptDefault: (opt) => `The strictly correct statement is "${opt}". The other options represent common misconceptions.`,
     structureMatch: (opt, a, b, dist) => `The correct match is "${opt}". Key distinction between ${a} and ${b}: ${dist}`,
-    reactionOrder: (opt, title) => `The correct sequence or step is "${opt}". All stages of "${title}" follow the curriculum-defined experimental and chemical order.`,
+    reactionOrder: (opt, title, fullProgression) => fullProgression
+      ? `The correct sequence or step is "${opt}". Full steps of "${title}": ${fullProgression}`
+      : `The correct sequence or step is "${opt}". All stages of "${title}" follow the curriculum-defined experimental and chemical order.`,
   },
   de: {
     romanTrue: (combo) => `Die richtige Antwort ist ${combo}. Die Überprüfung der Aussagen bestätigt die Übereinstimmung mit gesicherten wissenschaftlichen Fakten.`,
@@ -149,17 +153,21 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `Die eindeutig zutreffende Aussage ist "${opt}". Prüfungshinweis: ${tip}`,
     positiveConceptDefault: (opt) => `Die eindeutig zutreffende Aussage ist "${opt}". Die übrigen Antwortmöglichkeiten enthalten verbreitete Fehlannahmen.`,
     structureMatch: (opt, a, b, dist) => `Die richtige Zuordnung ist "${opt}". Grundlegende Unterscheidung zwischen ${a} und ${b}: ${dist}`,
-    reactionOrder: (opt, title) => `Die richtige Reihenfolge bzw. der korrekte Schritt lautet: "${opt}". Der Ablauf von "${title}" folgt der experimentellen chemischen Logik.`,
+    reactionOrder: (opt, title, fullProgression) => fullProgression
+      ? `Die richtige Reihenfolge bzw. der korrekte Schritt lautet: "${opt}". Vollständiger Ablauf von "${title}": ${fullProgression}`
+      : `Die richtige Reihenfolge bzw. der korrekte Schritt lautet: "${opt}". Der Ablauf von "${title}" folgt der experimentellen chemischen Logik.`,
   },
   fr: {
     romanTrue: (combo) => `La bonne réponse est ${combo}. L'analyse des propositions confirme celles qui sont en parfait accord avec les faits scientifiques.`,
     romanFalse: (combo) => `La bonne réponse est ${combo}. Les propositions indiquées comportent des erreurs conceptuelles en chimie.`,
-    negativeTrapWhy: (opt, why, fact) => `L'affirmation incorrecte est "${opt}". Explication scientifique: ${why}. Fait exact: ${fact}`,
-    negativeTrapDefault: (opt, fact) => `L'affirmation incorrecte est "${opt}". C'est un piège classique d'examen. Fait scientifique: ${fact}`,
-    positiveConceptTip: (opt, tip) => `L'affirmation rigoureusement exacte est "${opt}". Conseil d'examen: ${tip}`,
+    negativeTrapWhy: (opt, why, fact) => `L'affirmation incorrecte est "${opt}". Explication scientifique : ${why}. Fait exact : ${fact}`,
+    negativeTrapDefault: (opt, fact) => `L'affirmation incorrecte est "${opt}". C'est un piège classique d'examen. Fait scientifique : ${fact}`,
+    positiveConceptTip: (opt, tip) => `L'affirmation rigoureusement exacte est "${opt}". Conseil d'examen : ${tip}`,
     positiveConceptDefault: (opt) => `L'affirmation rigoureusement exacte est "${opt}". Les autres options comportent des erreurs fréquentes.`,
-    structureMatch: (opt, a, b, dist) => `L'association correcte est "${opt}". Distinction fondamentale entre ${a} et ${b}: ${dist}`,
-    reactionOrder: (opt, title) => `L'ordre ou l'étape correcte est: "${opt}". Toutes les étapes du processus "${title}" suivent la chronologie expérimentale requise.`,
+    structureMatch: (opt, a, b, dist) => `L'association correcte est "${opt}". Distinction fondamentale entre ${a} et ${b} : ${dist}`,
+    reactionOrder: (opt, title, fullProgression) => fullProgression
+      ? `L'ordre ou l'étape correcte est : "${opt}". Toutes les étapes du processus "${title}" : ${fullProgression}`
+      : `L'ordre ou l'étape correcte est : "${opt}". Toutes les étapes du processus "${title}" suivent la chronologie expérimentale requise.`,
   },
   ru: {
     romanTrue: (combo) => `Правильный ответ — вариант ${combo}. Анализ утверждений подтверждает их полное соответствие установленным научным фактам.`,
@@ -169,7 +177,9 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `Абсолютно верным утверждением является «${opt}». Экзаменационная подсказка: ${tip}`,
     positiveConceptDefault: (opt) => `Абсолютно верным утверждением является «${opt}». Остальные варианты содержат распространенные ошибки.`,
     structureMatch: (opt, a, b, dist) => `Правильное соответствие — «${opt}». Ключевое различие между «${a}» и «${b}»: ${dist}`,
-    reactionOrder: (opt, title) => `Правильная последовательность или этап: «${opt}». Все стадии процесса «${title}» соответствуют экспериментальному химическому порядку.`,
+    reactionOrder: (opt, title, fullProgression) => fullProgression
+      ? `Правильная последовательность или этап: «${opt}». Полная последовательность процесса «${title}»: ${fullProgression}`
+      : `Правильная последовательность или этап: «${opt}». Все стадии процесса «${title}» соответствуют экспериментальному химическому порядку.`,
   },
   ar: {
     romanTrue: (combo) => `الإجابة الصحيحة هي الخيار ${combo}. يؤكد تحليل العبارات توافقها التام مع الحقائق العلمية المثبتة.`,
@@ -179,7 +189,9 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `العبارة الصحيحة تماماً هي "${opt}". نصيحة امتحانية: ${tip}`,
     positiveConceptDefault: (opt) => `العبارة الصحيحة تماماً هي "${opt}". تحتوي بقية الخيارات على مغالطات شائعة.`,
     structureMatch: (opt, a, b, dist) => `المطابقة الصحيحة هي "${opt}". الفرق الكيميائي الجوهري بين ${a} و ${b}: ${dist}`,
-    reactionOrder: (opt, title) => `الترتيب أو الخطوة الصحيحة هي: "${opt}". جميع مراحل مسار "${title}" تتبع الترتيب الكيميائي والتجريبي المعتمد.`,
+    reactionOrder: (opt, title, fullProgression) => fullProgression
+      ? `الترتيب أو الخطوة الصحيحة هي: "${opt}". المسار الكامل لخطوات "${title}": ${fullProgression}`
+      : `الترتيب أو الخطوة الصحيحة هي: "${opt}". جميع مراحل مسار "${title}" تتبع الترتيب الكيميائي والتجريبي المعتمد.`,
   },
   zh: {
     romanTrue: (combo) => `正确答案是 ${combo} 选项。对各命题进行辨析，确认其完全符合化学客观事实。`,
@@ -189,26 +201,45 @@ export const EXPLANATION_TEMPLATES: Record<LanguageCode, ExplanationTemplates> =
     positiveConceptTip: (opt, tip) => `完全正确无误的表述是“${opt}”选项。高考解题锦囊：${tip}`,
     positiveConceptDefault: (opt) => `完全正确无误的表述是“${opt}”选项。其余选项均包含典型学科认知偏差。`,
     structureMatch: (opt, a, b, dist) => `正确对应项为“${opt}”。“${a}”与“${b}”之间的核心本质区别为：${dist}`,
-    reactionOrder: (opt, title) => `正确顺序或对应步骤是：“${opt}”。“${title}”过程的全部阶段严格符合考纲规定的实验与反应历程顺序。`,
+    reactionOrder: (opt, title, fullProgression) => fullProgression
+      ? `正确顺序或对应步骤是：“${opt}”。“${title}”过程的完整步骤历程为：${fullProgression}`
+      : `正确顺序或对应步骤是：“${opt}”。“${title}”过程的全部阶段严格符合考纲规定的实验与反应历程顺序。`,
   },
   ku: {
     romanTrue: (combo) => `Bersiva rast vebijarka ${combo} ye. Dema ku pêşniyar tên lêkolîn, yên ku bi rastiyên zanistî re li hev dikin hatine piştrast kirin.`,
     romanFalse: (combo) => `Bersiva rast vebijarka ${combo} ye. Pêşniyarên diyarkirî têgihîştinên şaş ên kîmyewî û darazên çewt dihewînin.`,
     negativeTrapWhy: (opt, why, fact) => `Gotina şaş "${opt}" e. Şîroveya zanistî: ${why}. Ya rast: ${fact}`,
     negativeTrapDefault: (opt, fact) => `Gotina şaş "${opt}" e. Ev xefikek ezmûnê ya berbelav e. Rastiya zanistî: ${fact}`,
-    positiveConceptTip: (opt, tip) => `Gotin a ku bi temamî rast e vebijarka "${opt}" e. Serişteya Ezmûnê: ${tip}`,
-    positiveConceptDefault: (opt) => `Gotin a ku bi temamî rast e vebijarka "${opt}" e. Vebijarkên din şaşiyên berbelav dihewînin.`,
+    positiveConceptTip: (opt, tip) => `Gotina ku bi temamî rast e vebijarka "${opt}" e. Serişteya Ezmûnê: ${tip}`,
+    positiveConceptDefault: (opt) => `Gotina ku bi temamî rast e vebijarka "${opt}" e. Vebijarkên din şaşiyên berbelav dihewînin.`,
     structureMatch: (opt, a, b, dist) => `Hevberdana rast "${opt}" e. Ciyawaziya sereke ya kîmyewî di navbera ${a} û ${b} de: ${dist}`,
-    reactionOrder: (opt, title) => `Rêzkirina an qonaxa rast: "${opt}" e. Hemû qonaxên pêvajoya "${title}" li gorî rêza ezmûnî û kîmyewî pêk tên.`,
+    reactionOrder: (opt, title, fullProgression) => fullProgression
+      ? `Rêzkirina an qonaxa rast: "${opt}" e. Hemû qonaxên pêvajoya "${title}": ${fullProgression}`
+      : `Rêzkirina an qonaxa rast: "${opt}" e. Hemû qonaxên pêvajoya "${title}" li gorî rêza ezmûnî û kîmyewî pêk tên.`,
   },
 };
 
 /**
+ * Normalizes entity and formula options by trimming whitespace and removing terminal dots.
+ * Bare chemical species, formulas, and single nominal concepts should not have terminal periods.
+ */
+export function normalizeEntityOption(text: string): string {
+  return text.trim().replace(/[.。]$/, '');
+}
+
+/**
  * Ensures uniform sentence-ending punctuation across all 5 options of a prose question.
+ * Guards against appending terminal periods to bare chemical formulas or symbols.
  */
 export function normalizeProseOption(text: string, lang: LanguageCode): string {
   const trimmed = text.trim();
   if (!trimmed) return trimmed;
+
+  // Guard: do not append terminal dot to bare chemical formulas or symbols (e.g. CH4, H2O, Kc, Kp, etc.)
+  if (/^[A-Z][a-zA-Z0-9()[\]+\-^/·_]*$/.test(trimmed)) {
+    return trimmed.replace(/[.。]$/, '');
+  }
+
   if (lang === 'zh') {
     const withoutBang = trimmed.replace(/[！!]$/, '。');
     return /[。？！]$/.test(withoutBang) ? withoutBang : `${withoutBang}。`;
@@ -218,25 +249,462 @@ export function normalizeProseOption(text: string, lang: LanguageCode): string {
 }
 
 /**
+ * Generates a canonical comparison key for an option by removing parentheses,
+ * isolated symbols/acronyms, spaces, hyphens and punctuation.
+ * Used to prevent near-duplicate distractors (e.g. "Denge Kesri (Qc)" and "Denge Kesri Qc").
+ */
+export function canonicalOptionKey(opt: string): string {
+  return (opt || '')
+    .toLowerCase()
+    .replace(/[（\(][^）\)]*[）\)]/g, '')
+    .replace(/\b(qc|kp|kc|ka|kb|ksp|kçç|ksu|ph|poh|xy)\b/gi, '')
+    .replace(/[^a-zA-Z0-9\u00C0-\u024F\u0400-\u04FF\u0600-\u06FF\u4e00-\u9fa5]/g, '')
+    .trim();
+}
+
+export const GENERIC_CATEGORY_DESCRIPTORS: Record<LanguageCode, string[]> = {
+  tr: ['Yasası', 'Yasa', 'İlkesi', 'İlke', 'Allotropu', 'Allotrop', 'Olayı', 'Olay', 'Etkisi', 'Etki', 'Tepkimesi', 'Tepkime', 'Katılması', 'Katılma', 'Modeli', 'Kuralı', 'Hipotezi', 'Çözeltisi', 'Pili', 'Atomlar', 'Bağı', 'Bağ', 'Katısı', 'Katıları', 'Hibritleşmesi', 'Hibritleşme', 'Sayısı', 'Sayı'],
+  en: ['Law', 'Principle', 'Allotrope', 'Reaction', 'Rule', 'Model', 'Hypothesis', 'Solution', 'Cell', 'Atoms', 'Bond', 'Solid', 'Solids', 'Addition', 'Joining', 'Effect', 'Hybridization', 'Number', 'Constant'],
+  de: ['Gesetz', 'Prinzip', 'Allotrop', 'Reaktion', 'Regel', 'Modell', 'Hypothese', 'Lösung', 'Zelle', 'Atome', 'Bindung', 'Feststoff', 'Feststoffe', 'Effekt', 'Hybridisierung', 'Beitritt', 'Zahl', 'Konstante'],
+  fr: ['Loi', 'Principe', 'Allotrope', 'Réaction', 'Règle', 'Modèle', 'Hypothèse', 'Solution', 'Pile', 'Atomes', 'Liaison', 'Solide', 'Solides', 'Rejoindre', 'Effet', 'Hybridation', 'Numéro', 'Nombre', 'Constante'],
+  ru: ['Закон', 'Принцип', 'Аллотроп', 'Реакция', 'Правило', 'Модель', 'Гипотеза', 'Раствор', 'Элемент', 'Атомы', 'Связь', 'Твердое вещество', 'Твердые вещества', 'Присоединение', 'Эффект', 'Гибридизация', 'Число', 'Константа'],
+  ar: ['قانون', 'مبدأ', 'متآصل', 'تآصل', 'تفاعل', 'قاعدة', 'نموذج', 'فرضية', 'محلول', 'خلية', 'ذرات', 'رابطة', 'صلب', 'المواد الصلبة', 'مواد صلبة', 'الانضمام', 'تأثير', 'تهجين', 'رقم', 'عدد', 'ثابت'],
+  zh: ['定律', '原理', '原则', '同素异形体', '反应', '规则', '模型', '假说', '溶液', '电池', '原子', '键', '固体', '效应', '杂交', '常数', '数'],
+  ku: ['Qanûna', 'Qanûn', 'Zagona', 'Zagon', 'Prensîba', 'Prensîb', 'Allotropa', 'Allotrop', 'Allotrope', 'Reaksiyona', 'Reaksiyon', 'Rêzika', 'Rêzik', 'Modela', 'Model', 'Hîpoteza', 'Çareseriya', 'Pîla', 'Pîl', 'Atomên', 'Benda', 'Hişk', 'Bandora', 'Bandor', 'hîbrîdîzasyon', 'Hîbrîdîzasyon', 'Tevlî', 'Hejmara', 'Hejmar', 'Girêdana', 'Girêdan', 'Asîda', 'Asîd'],
+};
+
+const GENERIC_SPECIES_WORDS = new Set([
+  'kimyasal', 'tür', 'türü',
+  'chemical', 'species',
+  'chemische', 'spezies',
+  'chimique', 'espèce',
+  'химическая', 'частица',
+  'كيميائي', 'النوع', 'نوع', 'إلى', 'الى',
+  '化学', '微粒',
+  'kîmyewî', 'cûreyê',
+]);
+
+function isValidHeadword(term: string, isCJK: boolean, minLen: number): boolean {
+  if (!term || term.length < minLen) return false;
+  if (GENERIC_SPECIES_WORDS.has(term.toLowerCase())) return false;
+  if (isCJK) {
+    return /[\u4e00-\u9fa5]/.test(term);
+  }
+  return /[a-zA-Z\u00C0-\u024F\u0400-\u04FF\u0600-\u06FF]/.test(term);
+}
+
+/**
+ * Extracts headwords, base concept names, symbols, and morphological variants of an entity name
+ * to sanitize question clues and verify question bank purity across all 8 languages.
+ */
+export function extractEntityCandidates(entityName: string, lang: LanguageCode): Set<string> {
+  const rawCandidates = new Set<string>();
+  const trimmedName = entityName?.trim();
+  if (!trimmedName || trimmedName.length < 1) return rawCandidates;
+
+  rawCandidates.add(trimmedName);
+
+  // Strip parentheses to extract base concept name: e.g. "Zaç Yağı (H2SO4)" -> "Zaç Yağı" or Chinese "温室气体（CO2、CH4）" -> "温室气体"
+  const withoutParens = trimmedName.replace(/\s*[（\(][^）\)]*[）\)]/g, '').trim();
+  if (withoutParens.length >= 1) {
+    rawCandidates.add(withoutParens);
+  }
+  // And extract inside parens if it's an alternate name: e.g. "Alkan (Parafin)" -> "Parafin"
+  const insideMatch = trimmedName.match(/[（\(]([^）\)]+)[）\)]/);
+  if (insideMatch && insideMatch[1].trim().length >= 1) {
+    rawCandidates.add(insideMatch[1].trim());
+  }
+
+  // Extract chemical symbols / acronyms: Qc, Kp, Kc, Ka, Kb, Ksp, Kçç, Ksu, pH, pOH, XY, XY2, sp3, sp2, sp
+  const symbolMatches = trimmedName.match(/\b(Qc|Kp|Kc|Ka|Kb|Ksp|Kçç|Ksu|pH|pOH|XY|XY2|sp3|sp2|sp)\b/gi);
+  if (symbolMatches) {
+    for (const s of symbolMatches) {
+      rawCandidates.add(s);
+    }
+  }
+
+  const isCJKLang = lang === 'zh' || /[\u4e00-\u9fa5]/.test(trimmedName);
+  const minHeadwordLen = isCJKLang ? 2 : 3;
+
+  // Arabic broken plurals & descriptive adjective stripping (e.g. "رابطة قوية داخل الجزيئات"):
+  if (lang === 'ar' || /[\u0600-\u06FF]/.test(trimmedName)) {
+    for (const c of Array.from(rawCandidates)) {
+      if (c.includes('رابطة')) {
+        rawCandidates.add(c.replace(/رابطة/g, 'روابط'));
+        rawCandidates.add(c.replace(/رابطة/g, 'الروابط'));
+      }
+      if (c.includes('الرابطة')) {
+        rawCandidates.add(c.replace(/الرابطة/g, 'الروابط'));
+      }
+      if (/\s*(?:قوية|ضعيفة|قوي|ضعيف)\s*/.test(c)) {
+        const withoutAdj = c.replace(/\s*(?:قوية|ضعيفة|قوي|ضعيف)\s*/g, ' ').replace(/\s+/g, ' ').trim();
+        if (isValidHeadword(withoutAdj, isCJKLang, minHeadwordLen)) {
+          rawCandidates.add(withoutAdj);
+          if (withoutAdj.includes('رابطة')) {
+            rawCandidates.add(withoutAdj.replace(/رابطة/g, 'روابط'));
+            rawCandidates.add(withoutAdj.replace(/رابطة/g, 'الروابط'));
+          }
+          const corePhrase = withoutAdj.replace(/^(?:ال)?(?:رابطة|روابط)\s*/, '').trim();
+          if (isValidHeadword(corePhrase, isCJKLang, minHeadwordLen)) {
+            rawCandidates.add(corePhrase);
+          }
+        }
+      }
+    }
+  }
+
+  // German weak adjective inflections (-er -> -e, -en): e.g. "Primärer Alkohol" -> "Primäre Alkohol", "primäre Alkohol", "primäre"
+  if (lang === 'de' || /[a-zäöüß]+er\s+[a-zäöüß]+/i.test(trimmedName)) {
+    for (const c of Array.from(rawCandidates)) {
+      if (/\b[a-zA-ZäöüßÄÖÜ]+er\b/i.test(c)) {
+        const weakE = c.replace(/\b([a-zA-ZäöüßÄÖÜ]+)er\b/gi, '$1e');
+        if (isValidHeadword(weakE, isCJKLang, minHeadwordLen)) {
+          rawCandidates.add(weakE);
+        }
+        const weakEn = c.replace(/\b([a-zA-ZäöüßÄÖÜ]+)er\b/gi, '$1en');
+        if (isValidHeadword(weakEn, isCJKLang, minHeadwordLen)) {
+          rawCandidates.add(weakEn);
+        }
+        const adjWords = c.match(/\b([a-zA-ZäöüßÄÖÜ]+)er\b/gi);
+        if (adjWords) {
+          for (const w of adjWords) {
+            const baseAdj = w.slice(0, -2);
+            if (isValidHeadword(baseAdj, isCJKLang, minHeadwordLen)) {
+              rawCandidates.add(baseAdj);
+              rawCandidates.add(`${baseAdj}e`);
+              rawCandidates.add(`${baseAdj}en`);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Chinese transliteration variants & chemical synonyms (e.g. 阿伏伽德罗 <-> 阿伏加德罗, 金刚石 <-> 钻石, 马氏 <-> 马尔可夫尼科夫)
+  if (isCJKLang) {
+    for (const c of Array.from(rawCandidates)) {
+      if (c.includes('阿伏伽德罗')) {
+        rawCandidates.add(c.replace(/阿伏伽德罗/g, '阿伏加德罗'));
+      }
+      if (c.includes('阿伏加德罗')) {
+        rawCandidates.add(c.replace(/阿伏加德罗/g, '阿伏伽德罗'));
+      }
+      if (c.includes('金刚石')) {
+        rawCandidates.add(c.replace(/金刚石/g, '钻石'));
+      }
+      if (c.includes('钻石')) {
+        rawCandidates.add(c.replace(/钻石/g, '金刚石'));
+      }
+      if (c.includes('马氏')) {
+        rawCandidates.add(c.replace(/马氏/g, '马尔可夫尼科夫'));
+      }
+      if (c.includes('马尔可夫尼科夫')) {
+        rawCandidates.add(c.replace(/马尔可夫尼科夫/g, '马氏'));
+      }
+    }
+  }
+
+  // Extract multi-word headword candidates across all 8 languages
+  const descs = GENERIC_CATEGORY_DESCRIPTORS[lang] || GENERIC_CATEGORY_DESCRIPTORS.tr;
+  const sortedDescs = [...descs].sort((a, b) => b.length - a.length);
+
+  for (const cand of Array.from(rawCandidates)) {
+    if (!cand || cand.length < minHeadwordLen) continue;
+
+    // English "X's Law of Y" pattern: e.g. "Graham's Law of Diffusion" -> "Graham", "Graham's"
+    const lawOfMatch = cand.match(/^(.+?)(?:['’]s)?\s+Law\s+of\s+.+$/i);
+    if (lawOfMatch) {
+      const baseScientist = lawOfMatch[1].replace(/['’]s?$/, '').trim();
+      if (isValidHeadword(baseScientist, isCJKLang, minHeadwordLen)) {
+        rawCandidates.add(baseScientist);
+        rawCandidates.add(`${baseScientist}'s`);
+      }
+    }
+
+    for (const desc of sortedDescs) {
+      if (cand.toLowerCase() === desc.toLowerCase()) continue;
+
+      // Trailing descriptor: e.g. "Boyle Yasası", "Graham Difüzyon Yasası", "Aufbauprinzip", "Verbrennungsreaktion", "Boyles Gesetz", "马氏加成规则"
+      const trailingRegex = isCJKLang
+        ? new RegExp(`(${desc})$`, 'iu')
+        : (lang === 'de')
+          ? new RegExp(`(?:[-\\s]+|s?)(${desc})$`, 'iu')
+          : new RegExp(`[-\\s]+(${desc})$`, 'iu');
+      if (trailingRegex.test(cand)) {
+        const prefix = cand.replace(trailingRegex, '').trim();
+        if (isValidHeadword(prefix, isCJKLang, minHeadwordLen) && prefix.toLowerCase() !== desc.toLowerCase()) {
+          rawCandidates.add(prefix);
+          // Strip genitive apostrophe-s or German/English bare -s (e.g. "Boyles" -> "Boyle", "Gay-Lussacs" -> "Gay-Lussac")
+          const bareGenitive = prefix.replace(/(?:['’]s?|s)$/, '').trim();
+          if (isValidHeadword(bareGenitive, isCJKLang, minHeadwordLen) && bareGenitive !== prefix) {
+            rawCandidates.add(bareGenitive);
+          }
+          // Russian adjective stem: e.g. "Изобарные" -> "Изобар"
+          if (lang === 'ru' || /[\u0400-\u04FF]/.test(prefix)) {
+            const ruAdjStem = prefix.replace(/(?:ные|ный|ная|ное|ных|ным|ными|ном|нем|ний|няя|нее|ние)$/i, '').trim();
+            if (isValidHeadword(ruAdjStem, isCJKLang, minHeadwordLen) && ruAdjStem !== prefix) {
+              rawCandidates.add(ruAdjStem);
+            }
+          }
+          if (isCJKLang) {
+            const zhSecondary = prefix.replace(/(?:扩散|消去|加成|不相容|分压)$/, '').trim();
+            if (isValidHeadword(zhSecondary, isCJKLang, minHeadwordLen) && zhSecondary !== prefix) {
+              rawCandidates.add(zhSecondary);
+            }
+          } else {
+            const words = prefix.split(/[-\s]+/).map((w) => w.replace(/(?:['’]s?|s)$/, '').trim()).filter((w) => isValidHeadword(w, isCJKLang, minHeadwordLen));
+            for (const w of words) {
+              if (w !== prefix) {
+                rawCandidates.add(w);
+              }
+            }
+          }
+        }
+        break;
+      }
+
+      // Leading descriptor: e.g. "Loi de Boyle", "Principe d'exclusion de Pauli", "قانون بويل", "Qanûna Boyle", "Закон Бойля", "Присоединение к Марковникову", "الانضمام إلى ماركوفنيكوف", "Beitritt zu Markownikow"
+      const leadingRegex = isCJKLang
+        ? new RegExp(`^(${desc})`, 'iu')
+        : new RegExp(`^(${desc})(?:[-\\s]+(?:(?:de|du|des|ya|yê|ên|ji|к|إلى|الى|zu)\\s+|d['’]|لـ|ل)?\\s*)`, 'iu');
+      if (leadingRegex.test(cand)) {
+        let suffix = cand.replace(leadingRegex, '').trim();
+        // Kurdish: strip trailing "dibe" (e.g. "Tevlî Markovnikov dibe" -> "Markovnikov")
+        if (lang === 'ku') {
+          suffix = suffix.replace(/\s+dibe$/i, '').trim();
+        }
+        if (isValidHeadword(suffix, isCJKLang, minHeadwordLen) && suffix.toLowerCase() !== desc.toLowerCase()) {
+          rawCandidates.add(suffix);
+          // Russian case endings stripping (genitive -а/-я, dative -у/-ю):
+          if (lang === 'ru' || /[\u0400-\u04FF]/.test(suffix)) {
+            const ruBase = suffix.replace(/[аяую]$/i, '').trim();
+            if (isValidHeadword(ruBase, isCJKLang, minHeadwordLen) && ruBase !== suffix) {
+              rawCandidates.add(ruBase);
+            }
+            if (suffix.endsWith('я')) {
+              const ruE = suffix.replace(/я$/i, 'е').trim();
+              if (isValidHeadword(ruE, isCJKLang, minHeadwordLen)) {
+                rawCandidates.add(ruE);
+              }
+            }
+          }
+          // Kurdish ezafe/case suffix: e.g. "şewitandinê" -> "şewitandin"
+          if (lang === 'ku') {
+            const kuBase = suffix.replace(/[êea]$/i, '').trim();
+            if (isValidHeadword(kuBase, isCJKLang, minHeadwordLen) && kuBase !== suffix) {
+              rawCandidates.add(kuBase);
+            }
+          }
+          if (lang === 'ar' || /[\u0600-\u06FF]/.test(suffix)) {
+            const noAl = suffix.replace(/^ال/, '').trim();
+            if (isValidHeadword(noAl, isCJKLang, minHeadwordLen)) rawCandidates.add(noAl);
+            const arWords = noAl.split(/\s+/).map((w) => w.replace(/^ال/, '').trim()).filter((w) => isValidHeadword(w, isCJKLang, minHeadwordLen));
+            if (arWords.length > 0) {
+              for (const w of arWords) {
+                rawCandidates.add(w);
+              }
+            }
+          } else if (!isCJKLang) {
+            const words = suffix.split(/\s+/).map((w) => w.replace(/^(?:(?:de|du|des|ya|yê|ên|ji|к|إلى|الى|zu)\s+|d['’])/i, '').trim()).filter((w) => isValidHeadword(w, isCJKLang, minHeadwordLen));
+            if (words.length > 0) {
+              for (const w of words) {
+                rawCandidates.add(w);
+              }
+            }
+          }
+        }
+        break;
+      }
+    }
+  }
+
+  // Expand candidate variants (hyphens, spaces, CJK type patterns):
+  const candidates = new Set<string>();
+  for (const c of rawCandidates) {
+    if (!c || c.trim().length === 0) continue;
+    const t = c.trim();
+    candidates.add(t);
+
+    // Hyphen & whitespace variants:
+    if (t.includes('-')) {
+      candidates.add(t.replace(/-/g, ' '));
+      candidates.add(t.replace(/-/g, ''));
+    }
+    if (/\s/.test(t)) {
+      candidates.add(t.replace(/\s+/g, '-'));
+      candidates.add(t.replace(/\s+/g, ''));
+    }
+    // Chinese type pattern: e.g. "XY型盐" -> "XY盐", "XY 盐"
+    if (t.includes('型')) {
+      const withoutType = t.replace(/型/g, '').trim();
+      if (withoutType.length >= 1) candidates.add(withoutType);
+    }
+    // Arabic type pattern: e.g. "ملح من النوع XY" -> "ملح XY"
+    if (t.includes('من النوع')) {
+      const withoutType = t.replace(/من النوع\s*/g, '').trim();
+      if (withoutType.length >= 1) candidates.add(withoutType);
+    }
+    // Inverted word order for lettered concepts (especially French): e.g. "s orbitale" -> "orbitale s", "l'orbitale s"
+    const letterMatch = t.match(/^([a-z0-9])\s+(.+)$/i);
+    if (letterMatch) {
+      const inverted = `${letterMatch[2]} ${letterMatch[1]}`;
+      candidates.add(inverted);
+      candidates.add(`l'${inverted}`);
+      candidates.add(`d'${inverted}`);
+    }
+    // Arabic definite article variants: if starts with "ال" and longer than 2 chars
+    if (lang === 'ar' || /[\u0600-\u06FF]/.test(t)) {
+      if (t.startsWith('ال') && t.length > 2) {
+        candidates.add(t.slice(2));
+      }
+    }
+  }
+
+  return candidates;
+}
+
+/**
  * Sanitizes entity clues to prevent answer leakage in matching questions.
+ * Handles single-character entities (e.g. Chinese CJK: 醛, 酮, 醇, 酸, 酯, 苯 >= 1 char),
+ * Turkish/Kurdish agglutinative/inflectional suffixes (e.g. -ler, -lar, -nin, -ta, -den, etc.),
+ * English inflections (e.g. -ing, -s, -es, -ed),
+ * German inflections (-n, -en, -ung, -er) and compound nouns (-schicht, -bindung, etc.),
+ * and Chinese spacing variants (e.g. "s 轨道" <-> "s轨道", "西格玛 键" <-> "西格玛键", "XY 盐" <-> "XY型盐").
  */
 export function sanitizeEntityClue(clueText: string, entityName: string, lang: LanguageCode): string {
   let cleaned = clueText;
-  if (entityName && entityName.length >= 3) {
-    const escaped = entityName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(escaped, 'gi');
-    const replacement = ENTITY_SPECIES_REPLACEMENT[lang] || ENTITY_SPECIES_REPLACEMENT.tr;
-    cleaned = cleaned.replace(regex, replacement);
-  }
+  const candidates = extractEntityCandidates(entityName, lang);
+  if (candidates.size === 0) return normalizeProseOption(cleaned.trim(), lang);
+
+  const replacement = ENTITY_SPECIES_REPLACEMENT[lang] || ENTITY_SPECIES_REPLACEMENT.tr;
+
+  // Sort by length descending so longer compound phrases match before shorter constituents
+  const sortedCandidates = Array.from(candidates).sort((a, b) => b.length - a.length);
+
+    for (const cand of sortedCandidates) {
+      if (!cand || cand.length === 0) continue;
+      const isCJK = /[\u4e00-\u9fa5]/.test(cand);
+
+      if (isCJK) {
+        // Strip existing whitespace then allow optional whitespace between characters:
+        // Handles "s 轨道" <-> "s轨道", "西格玛 键" <-> "西格玛键", "XY 盐" <-> "XY盐"
+        const chars = Array.from(cand.trim().replace(/\s+/g, '')).map((ch) => ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+        const cjkPattern = chars.join('\\s*');
+        const cjkLookbehind = /^[a-zA-Z0-9]/.test(cand.trim()) ? '(?<=^|[^a-zA-Z0-9])' : '';
+        const cjkLookahead = /[a-zA-Z0-9]$/.test(cand.trim()) ? '(?![a-zA-Z0-9])' : '';
+        const regex = new RegExp(`${cjkLookbehind}${cjkPattern}${cjkLookahead}`, 'gu');
+        cleaned = cleaned.replace(regex, replacement);
+      } else {
+        const isArabic = lang === 'ar' || /[\u0600-\u06FF]/.test(cand);
+        // Arabic suffixes: feminine sound plural (-at), masculine sound plural (-in/-un), relative adjective nisba (-iyya, -i, -iyyatiha, -iyyatihi), ta marbuta (-a), dual (-an/-ayn)
+        const arabicInflectionalSuffix = '(?:ات|ية|ة|ي|ين|ان|ون|يتها|يته)?';
+        // German compound word stems (e.g. Graphenschicht, Sigma-Bindung)
+        const compoundSuffix = '(?:schicht|schichten|bindung|bindungen|atom|atome|atomen|gitter|gittern|molekül|moleküle|molekülen|ion|ionen|kraft|kräfte|kräften|gas|gase|gasen|flüssigkeit|flüssigkeiten|reaktion|reaktionen|teilchen|energie|energien|konstante|konstanten)?';
+        // Russian Cyrillic case declension endings (e.g. Эрленмайер -> Эрленмайеру, изотоп -> изотопе)
+        const cyrillicCaseSuffix = '(?:а|я|у|ю|е|ом|ем|ой|ей|ы|и|ов|ев|ах|ях|ам|ям|ами|ями)?';
+        // Inflectional affixes: Turkish (-ler, -nin, -den, etc.), Kurdish (-an, -ên, -ê, -yê, -yên), English (-ing, -s, -es, -ed), German (-n, -en, -ung, -er, -em, -es, -e)
+        const latinInflectionalSuffix = '(?:(?:ler|lar|an|ên|ing|ed|ung|er|em)?(?:in|ın|un|ün|nin|nın|nun|nün|nde|nda|nden|ndan|ne|na|ni|nı|nu|nü|te|ta|de|da|ten|tan|den|dan|ye|ya|yê|yên|e|a|i|ı|u|ü|ê|î|le|la|s|es|en|n)?(?:dir|dır|dür|dur|tir|tır|tür|tur)?)';
+        const inflectionalSuffix = `(?:${latinInflectionalSuffix}|${cyrillicCaseSuffix}|${arabicInflectionalSuffix})`;
+        const suffixPattern = `(?:${compoundSuffix}${inflectionalSuffix})`;
+
+        let candidatePattern: string;
+        if (isArabic) {
+          const arabicWords = cand.trim().split(/[-\s]+/).map((w) => {
+            const stripped = (w.startsWith('ال') && w.length > 2) ? w.slice(2) : w;
+            const escaped = stripped.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            return `(?:ال)?${escaped}(?:${arabicInflectionalSuffix})?`;
+          });
+          candidatePattern = arabicWords.join('[-\\s]+');
+        } else {
+          const words = cand.trim().split(/[-\s]+/).map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+          candidatePattern = (lang === 'ku' && words.length >= 2)
+            ? words.join('(?:ê|a|ya|yê|ên|an)?[-\\s]+')
+            : words.join('[-\\s]+');
+        }
+
+        const lookbehind = (lang === 'zh') ? '(?<=^|[^a-zA-Z0-9])' : '(?<=^|[^\\p{L}\\p{N}])';
+        const lookahead = (lang === 'zh') ? '(?![a-zA-Z0-9])' : '(?![\\p{L}\\p{N}])';
+        const arabicPrefix = '';
+        const regex = new RegExp(`${lookbehind}${arabicPrefix}${candidatePattern}${suffixPattern}${lookahead}`, 'giu');
+        cleaned = cleaned.replace(regex, replacement);
+      }
+    }
   return normalizeProseOption(cleaned.trim(), lang);
 }
 
 /**
+ * Sanitizes unit titles in question stems to prevent answer leakage when the title contains the target concept.
+ */
+export function sanitizeUnitTitleForStem(unitTitle: string, conceptName: string, lang: LanguageCode): string {
+  let title = unitTitle;
+  const cleanConcept = (conceptName || '').trim().toLowerCase().replace(/\s*[（\(][^）\)]*[）\)]/g, '');
+  if (!cleanConcept || !title.toLowerCase().includes(cleanConcept)) return title;
+
+  // 1. Try taking the broad topic before ':' or '：'
+  const colonMatch = title.match(/^([^:：]+)[:：]/);
+  if (colonMatch) {
+    const broad = colonMatch[1].trim();
+    if (!broad.toLowerCase().includes(cleanConcept)) return broad;
+  }
+
+  // 2. Try splitting by conjunctions (&, ve, und, et, и, و, 与, û, etc.)
+  const conjParts = title.split(/(?:^|\s+)(?:&|ve|und|et|и|و|û)(?:\s+|$)|与|[,:：]/i);
+  for (const part of conjParts) {
+    const cleanPart = part.replace(/^[:：]\s*/, '').trim();
+    if (cleanPart.length >= 2 && !cleanPart.toLowerCase().includes(cleanConcept)) {
+      return cleanPart;
+    }
+  }
+
+  // 3. Fallback domain term
+  const DOMAIN_FALLBACK: Record<LanguageCode, string> = {
+    tr: 'Kimya',
+    en: 'Chemistry',
+    de: 'Chemie',
+    fr: 'Chimie',
+    ru: 'Химия',
+    ar: 'الكيمياء',
+    zh: '化学',
+    ku: 'Kîmya',
+  };
+  return DOMAIN_FALLBACK[lang] || 'Chemistry';
+}
+
+/**
  * Places the correct target item at desiredIndex (0..4) and fills remaining slots with distinct distractors.
+ * Deduplicates distractors using canonicalOptionKey to ensure near-duplicate options
+ * (e.g. "Denge Kesri (Qc)" and "Denge Kesri Qc") never appear together.
  * Throws an explicit error if distinct distractors are fewer than 4 to prevent placeholder leaks.
  */
 export function rotateOptions(correctItem: string, distractors: string[], desiredIndex: number): [string, string, string, string, string] {
-  const distinctDistractors = Array.from(new Set(distractors.filter((d) => d !== correctItem)));
+  const correctKey = canonicalOptionKey(correctItem);
+  const seenKeys = new Set<string>();
+  if (correctKey.length > 0) {
+    seenKeys.add(correctKey);
+  }
+  const distinctDistractors: string[] = [];
+  for (const d of distractors) {
+    if (d === correctItem) continue;
+    const dKey = canonicalOptionKey(d);
+    if (dKey.length > 0) {
+      if (seenKeys.has(dKey)) continue;
+      seenKeys.add(dKey);
+    } else {
+      if (distinctDistractors.includes(d)) continue;
+    }
+    distinctDistractors.push(d);
+  }
+
+  // If near-duplicate filtering reduced count below 4, fallback to distinct raw string distractors
+  if (distinctDistractors.length < 4) {
+    for (const d of distractors) {
+      if (d !== correctItem && !distinctDistractors.includes(d)) {
+        distinctDistractors.push(d);
+        if (distinctDistractors.length >= 4) break;
+      }
+    }
+  }
+
   if (distinctDistractors.length < 4) {
     throw new Error(
       `CRITICAL: Insufficient distinct distractors (got ${distinctDistractors.length}, expected at least 4) for target: "${correctItem}"`
@@ -262,7 +730,7 @@ function getRomanTrueStem(title: string, lang: LanguageCode): string {
     case 'tr': return `"${title}" konusu kapsamında yukarıda verilen kimyasal öncüllerden hangileri bilimsel olarak doğrudur?`;
     case 'en': return `In the context of "${title}", which of the propositions given above are scientifically correct?`;
     case 'de': return `Welche der oben genannten Aussagen zu "${title}" sind wissenschaftlich zutreffend?`;
-    case 'fr': return `Dans le cadre de "${title}", lesquelles des propositions ci-dessus sont scientifiquement exactes?`;
+    case 'fr': return `Dans le cadre de "${title}", lesquelles des propositions ci-dessus sont scientifiquement exactes ?`;
     case 'ru': return `В контексте темы «${title}», какие из вышеприведённых химических утверждений верны?`;
     case 'ar': return `في سياق موضوع "${title}"، أي من العبارات الكيميائية الواردة أعلاه صحيحة علمياً؟`;
     case 'zh': return `在“${title}”主题背景下，上述给出的化学命题中哪些在科学上是正确的？`;
@@ -275,7 +743,7 @@ function getRomanFalseStem(title: string, lang: LanguageCode): string {
     case 'tr': return `"${title}" ünitesi dikkate alındığında, yukarıdaki yargılardan hangileri kavram yanılgısı içerir (yanlıştır)?`;
     case 'en': return `Considering the unit "${title}", which of the propositions above contain misconceptions (are incorrect)?`;
     case 'de': return `Welche der obigen Aussagen zur Einheit "${title}" enthalten Fehlvorstellungen (sind falsch)?`;
-    case 'fr': return `En considérant l unité "${title}", lesquelles des affirmations ci-dessus contiennent des erreurs (sont fausses)?`;
+    case 'fr': return `En considérant l'unité "${title}", lesquelles des affirmations ci-dessus contiennent des erreurs (sont fausses) ?`;
     case 'ru': return `Учитывая материал раздела «${title}», какие из вышеперечисленных суждений содержат ошибки (неверны)?`;
     case 'ar': return `بالنظر إلى وحدة "${title}"، أي من الأحكام الواردة أعلاه تتضمن مغالطات مفهومية (غير صحيحة)؟`;
     case 'zh': return `结合“${title}”单元核心概念，上述判断中哪些包含概念误区（属于错误命题）？`;
@@ -311,12 +779,12 @@ function getNegativeTrapStem(title: string, lang: LanguageCode, variant = 0): st
       return `Welche Aussage steht im Widerspruch zu den grundlegenden chemischen Prinzipien von "${title}"?`;
     }
     case 'fr': {
-      if (v === 0) return `Concernant le sujet "${title}", laquelle des affirmations suivantes est fausse (incorrecte)?`;
-      if (v === 1) return `Dans le cadre de "${title}", laquelle des assertions suivantes contient une erreur conceptuelle?`;
-      if (v === 2) return `Laquelle des propositions suivantes sur "${title}" n est pas exacte?`;
-      if (v === 3) return `En examinant les principes de "${title}", quelle affirmation est erronée?`;
-      if (v === 4) return `Laquelle des affirmations suivantes contredit les données scientifiques de "${title}"?`;
-      return `Quelle proposition est incorrecte au regard des lois fondamentales de "${title}"?`;
+      if (v === 0) return `Concernant le sujet "${title}", laquelle des affirmations suivantes est fausse (incorrecte) ?`;
+      if (v === 1) return `Dans le cadre de "${title}", laquelle des assertions suivantes contient une erreur conceptuelle ?`;
+      if (v === 2) return `Laquelle des propositions suivantes sur "${title}" n'est pas exacte ?`;
+      if (v === 3) return `En examinant les principes de "${title}", quelle affirmation est erronée ?`;
+      if (v === 4) return `Laquelle des affirmations suivantes contredit les données scientifiques de "${title}" ?`;
+      return `Quelle proposition est incorrecte au regard des lois fondamentales de "${title}" ?`;
     }
     case 'ru': {
       if (v === 0) return `Какое из следующих утверждений относительно темы «${title}» является неверным (ложным)?`;
@@ -329,7 +797,7 @@ function getNegativeTrapStem(title: string, lang: LanguageCode, variant = 0): st
     case 'ar': {
       if (v === 0) return `فيما يتعلق بموضوع "${title}"، أي من العبارات التالية غير صحيحة (خاطئة)؟`;
       if (v === 1) return `بالنظر إلى "${title}"، أي من الأحكام التالية يتضمن مغالطة علمية؟`;
-      if (v === 2) return `أي افتراض مقدم في سياق "${title}" يعتبر غير صحيح؟`;
+      if (v === 2) return `أي افتراض مقدم في سياq "${title}" يعتبر غير صحيح؟`;
       if (v === 3) return `عند دراسة مبادئ "${title}"، أي تفسير يعتبر خاطئاً؟`;
       if (v === 4) return `أي من العبارات التالية يتعارض مع الحقائق العلمية المثبتة في "${title}"؟`;
       return `أي عبارة تعتبر خاطئة وفقاً للمبادئ الكيميائية الأساسية لوحدة "${title}"؟`;
@@ -381,12 +849,12 @@ function getPositiveConceptStem(title: string, lang: LanguageCode, variant = 0):
       return `Welche Option ist im Hinblick auf "${title}" sachlich vollkommen richtig?`;
     }
     case 'fr': {
-      if (v === 0) return `Conformément aux principes chimiques fondamentaux de "${title}", laquelle des affirmations suivantes est strictly exact?`;
-      if (v === 1) return `En étudiant "${title}", laquelle des propositions suivantes constitue un fait scientifique avéré?`;
-      if (v === 2) return `Dans le cadre de "${title}", quelle explication est parfaitement correcte?`;
-      if (v === 3) return `Selon les lois de la chimie, quelle affirmation concernant "${title}" est indubitablement vraie?`;
-      if (v === 4) return `Laquelle des propositions suivantes exprime une vérité scientifique établie sur "${title}"?`;
-      return `Quelle affirmation est parfaitement exacte au regard des lois de "${title}"?`;
+      if (v === 0) return `Conformément aux principes chimiques fondamentaux de "${title}", laquelle des affirmations suivantes est rigoureusement exacte ?`;
+      if (v === 1) return `En étudiant "${title}", laquelle des propositions suivantes constitue un fait scientifique avéré ?`;
+      if (v === 2) return `Dans le cadre de "${title}", quelle explication est parfaitement correcte ?`;
+      if (v === 3) return `Selon les lois de la chimie, quelle affirmation concernant "${title}" est indubitablement vraie ?`;
+      if (v === 4) return `Laquelle des propositions suivantes exprime une vérité scientifique établie sur "${title}" ?`;
+      return `Quelle affirmation est parfaitement exacte au regard des lois de "${title}" ?`;
     }
     case 'ru': {
       if (v === 0) return `В соответствии с фундаментальными принципами темы «${title}», какое из следующих утверждений абсолютно верно?`;
@@ -428,7 +896,7 @@ function getMatchStemA(title: string, clue: string, lang: LanguageCode): string 
     case 'tr': return `"${title}" konusunda "${clue}" özelliği ile ayırt edilen kimyasal tür veya kavram aşağıdakilerden hangisidir?`;
     case 'en': return `In "${title}", which chemical species or concept is defined by the distinguishing trait: "${clue}"?`;
     case 'de': return `Welche chemische Spezies oder welches Konzept wird in "${title}" durch das Merkmal "${clue}" charakterisiert?`;
-    case 'fr': return `Dans "${title}", quelle espèce chimique ou notion est définie par le trait distinctif: "${clue}"?`;
+    case 'fr': return `Dans "${title}", quelle espèce chimique ou notion est définie par le trait distinctif : "${clue}" ?`;
     case 'ru': return `Какое химическое вещество или понятие в теме «${title}» характеризуется признаком: «${clue}»?`;
     case 'ar': return `في موضوع "${title}"، أي نوع كيميائي أو مفهوم يتميز بالخاصية: "${clue}"؟`;
     case 'zh': return `在“${title}”体系中，以下哪种化学微粒或概念具有显著特征：“${clue}”？`;
@@ -441,7 +909,7 @@ function getMatchStemB(title: string, conceptName: string, lang: LanguageCode): 
     case 'tr': return `"${title}" kapsamında incelenen "${conceptName}" ile ilgili aşağıdaki niteliklerden hangisi doğrudur?`;
     case 'en': return `Which of the following characteristics accurately describes "${conceptName}" within "${title}"?`;
     case 'de': return `Welche der folgenden Eigenschaften beschreibt "${conceptName}" im Rahmen von "${title}" zutreffend?`;
-    case 'fr': return `Laquelle des caractéristiques suivantes décrit correctement "${conceptName}" dans le cadre de "${title}"?`;
+    case 'fr': return `Laquelle des caractéristiques suivantes décrit correctement "${conceptName}" dans le cadre de "${title}" ?`;
     case 'ru': return `Какая из следующих характеристик верно описывает «${conceptName}» в контексте «${title}»?`;
     case 'ar': return `أي من الخصائص التالية تصف بدقة "${conceptName}" ضمن دراسة "${title}"؟`;
     case 'zh': return `在“${title}”研究范畴内，下列关于“${conceptName}”的属性特征描述正确的是？`;
@@ -454,7 +922,7 @@ function getSequenceOrderStem(title: string, seqTitle: string, lang: LanguageCod
     case 'tr': return `"${title}" ünitesinde ele alınan "${seqTitle}" basamaklarının mantıksal ve kronolojik sırası aşağıdakilerden hangisinde doğru verilmiştir?`;
     case 'en': return `In the unit "${title}", which option gives the correct logical and chronological order of the steps for "${seqTitle}"?`;
     case 'de': return `Welche Option gibt die korrekte Reihenfolge der Schritte für "${seqTitle}" in "${title}" wieder?`;
-    case 'fr': return `Quelle option présente l ordre logique et chronologique correct des étapes pour "${seqTitle}" dans "${title}"?`;
+    case 'fr': return `Quelle option présente l'ordre logique et chronologique correct des étapes pour "${seqTitle}" dans "${title}" ?`;
     case 'ru': return `В каком из вариантов указана правильная последовательность этапов процесса «${seqTitle}» в теме «${title}»?`;
     case 'ar': return `أي الخيارات يعبر عن الترتيب المنطقي والزمني الصحيح لخطوات "${seqTitle}" في وحدة "${title}"؟`;
     case 'zh': return `在“${title}”单元中，下列哪个选项正确给出了“${seqTitle}”各阶段步骤的逻辑发生顺序？`;
@@ -467,12 +935,72 @@ function getSequenceMissingStepStem(title: string, seqTitle: string, lang: Langu
     case 'tr': return `"${title}" kapsamında gerçekleşen "${seqTitle}" sürecinde [ ? ] ile belirtilen eksik basamak aşağıdakilerden hangisidir?`;
     case 'en': return `In the process "${seqTitle}" under "${title}", which option represents the missing step denoted by [ ? ]?`;
     case 'de': return `Welcher Schritt gehört an die mit [ ? ] markierte Stelle im Ablauf von "${seqTitle}" in "${title}"?`;
-    case 'fr': return `Dans le processus "${seqTitle}" de "${title}", quelle est l étape manquante indiquée par [ ? ]?`;
+    case 'fr': return `Dans le processus "${seqTitle}" de "${title}", quelle est l'étape manquante indiquée par [ ? ] ?`;
     case 'ru': return `Какой этап соответствует пропуску [ ? ] в схеме процесса «${seqTitle}» темы «${title}»?`;
     case 'ar': return `في سياق مسار "${seqTitle}" ضمن "${title}"، ما هي الخطوة المفقودة المشار إليها بالرمز [ ؟ ]؟`;
     case 'zh': return `在“${title}”的“${seqTitle}”反应历程体系中，用 [ ? ] 标识出的缺失阶段步骤应当是？`;
     case 'ku': return `Di pêvajoya "${seqTitle}" ya di nav "${title}" de, qonaxa kêm a ku bi [ ? ] hatiye nîşankirin kîjan e?`;
   }
+}
+
+interface PropositionDetail {
+  numeral: 'I' | 'II' | 'III';
+  isValid: boolean;
+  fact: string;
+  whyTrap?: string;
+  tip?: string;
+}
+
+function getRomanSynthesis(combo: string, askTrue: boolean, lang: LanguageCode): string {
+  const t = EXPLANATION_TEMPLATES[lang] || EXPLANATION_TEMPLATES.tr;
+  return askTrue ? t.romanTrue(combo) : t.romanFalse(combo);
+}
+
+function buildRomanEvaluationExplanation(
+  combo: string,
+  askTrue: boolean,
+  props: [PropositionDetail, PropositionDetail, PropositionDetail],
+  lang: LanguageCode
+): string {
+  const evalParts = props.map((p) => {
+    switch (lang) {
+      case 'tr':
+        return p.isValid
+          ? `${p.numeral}. Doğrudur: ${p.fact}${p.tip ? ` (ÖSYM Notu: ${p.tip})` : ''}.`
+          : `${p.numeral}. Yanlıştır: ${p.whyTrap ? `${p.whyTrap} ` : ''}(Doğrusu: ${p.fact}).`;
+      case 'en':
+        return p.isValid
+          ? `${p.numeral}. Correct: ${p.fact}${p.tip ? ` (Exam Note: ${p.tip})` : ''}.`
+          : `${p.numeral}. Incorrect: ${p.whyTrap ? `${p.whyTrap} ` : ''}(Scientific fact: ${p.fact}).`;
+      case 'de':
+        return p.isValid
+          ? `${p.numeral}. Richtig: ${p.fact}${p.tip ? ` (Prüfungshinweis: ${p.tip})` : ''}.`
+          : `${p.numeral}. Falsch: ${p.whyTrap ? `${p.whyTrap} ` : ''}(Wissenschaftlich korrekt: ${p.fact}).`;
+      case 'fr':
+        return p.isValid
+          ? `${p.numeral}. Exact : ${p.fact}${p.tip ? ` (Conseil : ${p.tip})` : ''}.`
+          : `${p.numeral}. Faux : ${p.whyTrap ? `${p.whyTrap} ` : ''}(Fait exact : ${p.fact}).`;
+      case 'ru':
+        return p.isValid
+          ? `${p.numeral}. Верно: ${p.fact}${p.tip ? ` (Подсказка: ${p.tip})` : ''}.`
+          : `${p.numeral}. Неверно: ${p.whyTrap ? `${p.whyTrap} ` : ''}(Правильное положение: ${p.fact}).`;
+      case 'ar':
+        return p.isValid
+          ? `${p.numeral}. صحيح: ${p.fact}${p.tip ? ` (ملاحظة: ${p.tip})` : ''}.`
+          : `${p.numeral}. خاطئ: ${p.whyTrap ? `${p.whyTrap} ` : ''}(الصواب العلمي: ${p.fact}).`;
+      case 'zh':
+        return p.isValid
+          ? `${p.numeral}. 正确：${p.fact}${p.tip ? `（解题要点：${p.tip}）` : ''}。`
+          : `${p.numeral}. 错误：${p.whyTrap ? `${p.whyTrap} ` : ''}（客观事实：${p.fact}）。`;
+      case 'ku':
+        return p.isValid
+          ? `${p.numeral}. Rast e: ${p.fact}${p.tip ? ` (Nîşe: ${p.tip})` : ''}.`
+          : `${p.numeral}. Şaş e: ${p.whyTrap ? `${p.whyTrap} ` : ''}(Ya rast: ${p.fact}).`;
+    }
+  });
+
+  const synthesis = getRomanSynthesis(combo, askTrue, lang);
+  return `${evalParts.join(' ')} ${synthesis}`;
 }
 
 /**
@@ -620,9 +1148,34 @@ export function compileUnitQuestions(
         const correctIndex = rConfig.ansIdx;
         keyCounts[correctIndex]++;
 
-        const explanation = rConfig.askTrue
-          ? explTemplates.romanTrue(rConfig.correctCombo)
-          : explTemplates.romanFalse(rConfig.correctCombo);
+        const explanation = buildRomanEvaluationExplanation(
+          rConfig.correctCombo,
+          rConfig.askTrue,
+          [
+            {
+              numeral: 'I',
+              isValid: rConfig.t1,
+              fact: f1.fact[lang] || f1.fact.tr,
+              whyTrap: f1.whyTrapIsFalse?.[lang] || f1.whyTrapIsFalse?.tr,
+              tip: f1.osymTip?.[lang] || f1.osymTip?.tr,
+            },
+            {
+              numeral: 'II',
+              isValid: rConfig.t2,
+              fact: f2.fact[lang] || f2.fact.tr,
+              whyTrap: f2.whyTrapIsFalse?.[lang] || f2.whyTrapIsFalse?.tr,
+              tip: f2.osymTip?.[lang] || f2.osymTip?.tr,
+            },
+            {
+              numeral: 'III',
+              isValid: rConfig.t3,
+              fact: f3.fact[lang] || f3.fact.tr,
+              whyTrap: f3.whyTrapIsFalse?.[lang] || f3.whyTrapIsFalse?.tr,
+              tip: f3.osymTip?.[lang] || f3.osymTip?.tr,
+            },
+          ],
+          lang
+        );
 
         questions.push({
           id: qId,
@@ -722,10 +1275,12 @@ export function compileUnitQuestions(
         // --- 4. Structure-Property Match (2 per set = 16 per unit) ---
         const archetype: ChemistryArchetype = 'structure-property-match';
         const cCount = unit.comparisons.length;
-        const cIdx = matchCounter++ % cCount;
+        const isTypeA = (qInSet === 11);
+        const cIdx = isTypeA
+          ? ((setNum - 1) % cCount)
+          : ((setNum - 1 + Math.floor(cCount / 2)) % cCount);
         const comp = unit.comparisons[cIdx];
 
-        const isTypeA = (qInSet % 2 === 1);
         let correctOption = '';
         const distractors: string[] = [];
         let stem = '';
@@ -735,18 +1290,21 @@ export function compileUnitQuestions(
           const rawClue = comp.distinction[lang] || comp.distinction.tr;
           const conceptAName = comp.conceptA[lang] || comp.conceptA.tr;
           const sanitizedClue = sanitizeEntityClue(rawClue, conceptAName, lang);
-          stem = getMatchStemA(unitTitle, sanitizedClue, lang);
-          correctOption = normalizeProseOption(conceptAName, lang);
+          const matchTitle = sanitizeUnitTitleForStem(unitTitle, conceptAName, lang);
+          stem = getMatchStemA(matchTitle, sanitizedClue, lang);
+          correctOption = normalizeEntityOption(conceptAName);
 
-          // Collect all unique concept names across unit comparisons, excluding correctOption
+          // Collect all unique concept names across unit comparisons, excluding correctOption and near-duplicates
           const allUnitConcepts: string[] = [];
-          const seenConcepts = new Set<string>();
+          const seenKeys = new Set<string>();
+          seenKeys.add(canonicalOptionKey(correctOption));
           for (let i = 0; i < cCount; i++) {
             const c = unit.comparisons[(cIdx + 1 + i) % cCount];
             for (const item of [c.conceptB, c.conceptA]) {
-              const name = normalizeProseOption(item[lang] || item.tr, lang);
-              if (name !== correctOption && !seenConcepts.has(name)) {
-                seenConcepts.add(name);
+              const name = normalizeEntityOption(item[lang] || item.tr);
+              const key = canonicalOptionKey(name);
+              if (key.length > 0 && !seenKeys.has(key)) {
+                seenKeys.add(key);
                 allUnitConcepts.push(name);
               }
             }
@@ -899,7 +1457,10 @@ export function compileUnitQuestions(
         const desiredIndex = pickBestKey(qNum, s);
         keyCounts[desiredIndex]++;
         const options = rotateOptions(correctOption, distractors, desiredIndex);
-        const explanation = explTemplates.reactionOrder(correctOption, seqTitle);
+        const fullProgression = seq.steps
+          .map((st, i) => `${i + 1}. ${st[lang] || st.tr}`)
+          .join(' → ');
+        const explanation = explTemplates.reactionOrder(correctOption, seqTitle, fullProgression);
 
         questions.push({
           id: qId,

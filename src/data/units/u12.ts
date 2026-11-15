@@ -30,7 +30,7 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-f01",
       "fact": {
-        "tr": "İdeal Gaz Denklemi: PV = nRT dir (P*V = n*R*T). (P: atm, V: litre, n: mol, T: Kelvin, R: 0.0821 veya 22.4/273).",
+        "tr": "İdeal Gaz Denklemi: PV = nRT'dir (P*V = n*R*T). (P: atm, V: litre, n: mol, T: Kelvin, R: 0.0821 veya 22.4/273).",
         "en": "Ideal Gas Equation: PV = nRT (P*V = n*R*T). (P: atm, V: liter, n: mole, T: Kelvin, R: 0.0821 or 22.4/273).",
         "de": "Ideale Gasgleichung: PV = nRT (P*V = n*R*T). (P: atm, V: Liter, n: Mol, T: Kelvin, R: 0,0821 oder 22,4/273).",
         "fr": "Équation des gaz parfaits : PV = nRT (P*V = n*R*T). (P : atm, V : litre, n : mole, T : Kelvin, R : 0,0821 ou 22,4/273).",
@@ -63,7 +63,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ku": "Germahiya Kelvin bi formula T(K) = t(°C) + 273.15 tê dîtin; Germahiya mutleq nikare bikeve bin sifirê."
       },
       "trap": {
-        "tr": "Sıcaklık 10 °C den 20 °C ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
+        "tr": "Sıcaklık 10 °C'den 20 °C'ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
         "en": "When the temperature increases from 10 °C to 20 °C, the absolute temperature of the gas doubles.",
         "de": "Bei einem Temperaturanstieg von 10 °C auf 20 °C verdoppelt sich die absolute Temperatur des Gases.",
         "fr": "Lorsque la température passe de 10 °C à 20 °C, la température absolue du gaz double.",
@@ -109,7 +109,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ku": "Zagona Charles: Di zexta domdar û hejmara molan de, volt û germahiya mutleq rasterast lihevhatî ne (V1/T1 = V2/T2)."
       },
       "trap": {
-        "tr": "Gazın sıcaklığı 20 °C den 40 °C ye çıktığında hacmi tam 2 katına çıkar.",
+        "tr": "Gazın sıcaklığı 20 °C'den 40 °C'ye çıktığında hacmi tam 2 katına çıkar.",
         "en": "When the temperature of the gas increases from 20 °C to 40 °C, its volume doubles.",
         "de": "Steigt die Temperatur des Gases von 20 °C auf 40 °C, verdoppelt sich sein Volumen.",
         "fr": "Lorsque la température du gaz passe de 20 °C à 40 °C, son volume double.",
@@ -168,7 +168,7 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-f07",
       "fact": {
-        "tr": "Yoğunluk formülü: P * MA = d * R * T dir (Pirinç Mandalinayı daha Rahat Tartar).",
+        "tr": "Yoğunluk formülü: P * MA = d * R * T'dir (Pirinç Mandalinayı daha Rahat Tartar).",
         "en": "Density formula: P * MA = d * R * T (Rice Weighs Tangerine More Easily).",
         "de": "Dichteformel: P * MA = d * R * T (Reis wiegt Mandarinen leichter).",
         "fr": "Formule de densité : P * MA = d * R * T (le riz pèse plus facilement la mandarine).",
@@ -191,7 +191,7 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-f08",
       "fact": {
-        "tr": "Birleşik gaz denklemi: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2) dir.",
+        "tr": "Birleşik gaz denklemi: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2)'dir.",
         "en": "The combined gas equation is: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
         "de": "Die kombinierte Gasgleichung lautet: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
         "fr": "L'équation des gaz combinés est la suivante : (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
@@ -385,7 +385,7 @@ export const unit12: ChemistryUnitSeedData = {
         "ku": "Ger germahiya di konteynirek volga sabît a ku heman gazê tê de di Kelvin de duqat bibe, zext du qat dibe."
       },
       "trap": {
-        "tr": "Sıcaklık 25 °C den 50 °C ye çıkarsa basınç iki katına çıkar.",
+        "tr": "Sıcaklık 25 °C'den 50 °C'ye çıkarsa basınç iki katına çıkar.",
         "en": "If the temperature increases from 25 °C to 50 °C, the pressure doubles.",
         "de": "Steigt die Temperatur von 25 °C auf 50 °C, verdoppelt sich der Druck.",
         "fr": "Si la température passe de 25 °C à 50 °C, la pression double.",
@@ -425,7 +425,7 @@ export const unit12: ChemistryUnitSeedData = {
         "de": "Boyle P-V-Umkehrverhältnis; Erklärt die direkte Proportion von Charles V-T(K).",
         "fr": "Rapport inverse PV de Boyle ; Explique la proportion directe Charles V-T(K).",
         "ru": "Обратное соотношение Бойля P-V; Объясняет прямую зависимость Чарльза V-T(K).",
-        "ar": "Boyle PV نسبة عكسية؛ يفسر نسبة تشارلز V-T(K) المباشرة.",
+        "ar": "بويل PV نسبة عكسية؛ يفسر نسبة تشارلز V-T(K) المباشرة.",
         "zh": "波义耳 P-V 反比；解释 Charles V-T(K) 正比例。",
         "ku": "Rêjeya berevajî ya Boyle P-V; Rêjeya rasterast Charles V-T(K) rave dike."
       }
@@ -486,13 +486,13 @@ export const unit12: ChemistryUnitSeedData = {
         "ku": "Qanûna Avogadro"
       },
       "distinction": {
-        "tr": "Gay-Lussac sabit hacimde P ile T nin doğru orantısını; Avogadro sabit P ve T de V ile mol sayısının doğru orantısını açıklar.",
+        "tr": "Gay-Lussac sabit hacimde P ile T'nin doğru orantısını; Avogadro sabit P ve T'de V ile mol sayısının doğru orantısını açıklar.",
         "en": "Gay-Lussac finds the direct proportion of P and T at constant volume; Avogadro explains the direct proportionality of the number of moles to V and the constant P and T.",
         "de": "Gay-Lussac findet das direkte Verhältnis von P und T bei konstantem Volumen; Avogadro erklärt die direkte Proportionalität der Molzahl zu V und den Konstanten P und T.",
         "fr": "Gay-Lussac trouve la proportion directe de P et T à volume constant ; Avogadro explique la proportionnalité directe du nombre de taupes à V et aux constantes P et T.",
         "ru": "Гей-Люссак находит прямую зависимость Р и Т при постоянном объеме; Авогадро объясняет прямую пропорциональность числа родинок V и константам Р и Т.",
         "ar": "يجد جاي لوساك النسبة المباشرة لـ P وT عند حجم ثابت؛ يشرح أفوجادرو التناسب المباشر لعدد الشامات مع V والثابت P وT.",
-        "zh": "Gay-Lussac 发现恒体积下 P 和 T 的正比例；阿伏加德罗解释了摩尔数与 V 以及常数 P 和 T 的正比关系。",
+        "zh": "盖-吕萨克 发现恒体积下 P 和 T 的正比例；阿伏加德罗解释了摩尔数与 V 以及常数 P 和 T 的正比关系。",
         "ku": "Gay-Lussac rêjeya rasterast ya P û T di qebareya domdar de dibîne; Avogadro hevsengiya rasterast a hejmara molan bi V û P û T-ya domdar rave dike."
       }
     },
@@ -618,47 +618,47 @@ export const unit12: ChemistryUnitSeedData = {
         "ku": "Derxistina Gazê"
       },
       "distinction": {
-        "tr": "Difüzyon bir gazın başka bir gaz içinde kendiliğinden yayılmasıdır; efüzyon gazın küçük bir delikten boşluğa kaçmasıdır.",
-        "en": "Diffusion is the spontaneous diffusion of one gas within another gas; Effusion is the escape of gas into space through a small hole.",
-        "de": "Diffusion ist die spontane Diffusion eines Gases innerhalb eines anderen Gases; Unter Effusion versteht man das Entweichen von Gas durch ein kleines Loch in den Weltraum.",
-        "fr": "La diffusion est la diffusion spontanée d’un gaz dans un autre gaz ; L'épanchement est la fuite de gaz dans l'espace par un petit trou.",
-        "ru": "Диффузия — это самопроизвольная диффузия одного газа внутри другого газа; Эффузия – это выход газа в космос через небольшое отверстие.",
-        "ar": "الانتشار هو الانتشار التلقائي لغاز ما داخل غاز آخر؛ الانصباب هو خروج الغاز إلى الفضاء من خلال ثقب صغير.",
-        "zh": "扩散是一种气体在另一种气体中的自发扩散；逸出是指气体通过小孔逃逸到太空中。",
-        "ku": "Difûzyon belavbûna spontan a gazekê di nav gazeke din de ye; Effuzyon reviya gazê ye ku bi kunek piçûk ve diçe fezayê."
+        "tr": "Gaz difüzyonu bir gazın başka bir gaz içinde kendiliğinden yayılmasıdır; efüzyon gazın küçük bir delikten boşluğa kaçmasıdır.",
+        "en": "Gas diffusion is the spontaneous spreading of one gas within another gas; Effusion is the escape of gas into space through a small hole.",
+        "de": "Gasdiffusion ist die spontane Ausbreitung eines Gases innerhalb eines anderen Gases; Unter Effusion versteht man das Entweichen von Gas durch ein kleines Loch in den Weltraum.",
+        "fr": "La diffusion de gaz est la propagation spontanée d’un gaz dans un autre gaz ; L'épanchement est la fuite de gaz dans l'espace par un petit trou.",
+        "ru": "Газовая диффузия — это самопроизвольное распространение одного газа внутри другого газа; Эффузия – это выход газа в космос через небольшое отверстие.",
+        "ar": "انتشار الغاز هو التوسع التلقائي لغاز ما داخل غاز آخر؛ الانصباب هو خروج الغاز إلى الفضاء من خلال ثقب صغير.",
+        "zh": "气体扩散是一种气体在另一种气体中的自发混合；逸出是指气体通过小孔逃逸到太空中。",
+        "ku": "Belavbûna gazê belavbûna spontan a gazekê di nav gazeke din de ye; Effuzyon reviya gazê ye ku bi kunek piçûk ve diçe fezayê."
       }
     },
     {
       "id": "u12-c08",
       "conceptA": {
-        "tr": "Buhar",
-        "en": "Vapor",
-        "de": "Dampf",
-        "fr": "Vapeur",
-        "ru": "Пар",
-        "ar": "البخار",
-        "zh": "蒸气",
-        "ku": "Buhar"
+        "tr": "Boyle Yasası",
+        "en": "Boyle's Law",
+        "de": "Boyles Gesetz",
+        "fr": "Loi de Boyle",
+        "ru": "Закон Бойля",
+        "ar": "قانون بويل",
+        "zh": "波义耳定律",
+        "ku": "Qanûna Boyle"
       },
       "conceptB": {
-        "tr": "Gaz",
-        "en": "Gas",
-        "de": "Gas",
-        "fr": "Gaz",
-        "ru": "Газ",
-        "ar": "الغاز",
-        "zh": "气体",
-        "ku": "Gaz"
+        "tr": "Charles Yasası",
+        "en": "Charles Law",
+        "de": "Charles Law",
+        "fr": "Charles Loi",
+        "ru": "Чарльз Лоу",
+        "ar": "قانون تشارلز",
+        "zh": "查尔斯·劳",
+        "ku": "Charles Law"
       },
       "distinction": {
-        "tr": "Buhar kritik sıcaklığın altındaki gaz fazı olup basınçla sıvılaştırılabilir; gaz ise kritik sıcaklığın üstünde olup yalnızca basınçla sıvılaştırılamaz.",
-        "en": "Vapor is below its critical temperature and can be liquefied by pressure alone; gas is above its critical temperature and cannot be liquefied by pressure alone.",
-        "de": "Dampf befindet sich unterhalb der kritischen Temperatur und verflüssigt sich durch Druck; Gas liegt oberhalb und lässt sich durch Druck allein nicht verflüssigen.",
-        "fr": "La vapeur est en dessous de sa température critique et liquéfiable par pression ; le gaz est au-dessus et ne peut être liquéfié par pression seule.",
-        "ru": "Пар находится ниже критической температуры и может быть сконденсирован давлением; газ выше критической температуры сжать в жидкость давлением нельзя.",
-        "ar": "البخار يوجد تحت درجة الحرارة الحرجة ويمكن تسييله بالضغط فقط؛ الغاز يوجد فوق درجة الحرارة الحرجة ولا يمكن تسييله بالضغط بمفرده.",
-        "zh": "蒸气处于临界温度以下，仅通过加压即可液化；气体处于临界温度以上，仅靠加压无法使其液化。",
-        "ku": "Buhar di bin germahiya krîtîk de ye û bi zextê dibe şilek; gaz li ser germahiya krîtîk e û tenê bi zextê nabe şilek."
+        "tr": "Boyle P-V ters orantısını; Charles V-T(K) doğru orantısını açıklar.",
+        "en": "Boyle P-V inverse ratio; Explains Charles V-T(K) direct proportion.",
+        "de": "Boyle P-V-Umkehrverhältnis; Erklärt die direkte Proportion von Charles V-T(K).",
+        "fr": "Rapport inverse PV de Boyle ; Explique la proportion directe Charles V-T(K).",
+        "ru": "Обратное соотношение Бойля P-V; Объясняет прямую зависимость Чарльза V-T(K).",
+        "ar": "بويل PV نسبة عكسية؛ يفسر نسبة تشارلز V-T(K) المباشرة.",
+        "zh": "波义耳 P-V 反比；解释 Charles V-T(K) 正比例。",
+        "ku": "Rêjeya berevajî ya Boyle P-V; Rêjeya rasterast Charles V-T(K) rave dike."
       }
     }
   ],
@@ -677,7 +677,7 @@ export const unit12: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Verilen sıcaklığı Kelvin e dönüştür (t + 273)",
+          "tr": "Verilen sıcaklığı Kelvin'e dönüştür (t + 273)",
           "en": "Convert given temperature to Kelvin (t + 273)",
           "de": "Konvertieren Sie die angegebene Temperatur in Kelvin (t + 273).",
           "fr": "Convertir la température donnée en Kelvin (t + 273)",
@@ -732,7 +732,7 @@ export const unit12: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Boyle yasasından P ile V nin ters orantısı alınır",
+          "tr": "Boyle yasasından P ile V'nin ters orantısı alınır",
           "en": "From Boyle's law, the inverse proportion of P and V is taken",
           "de": "Aus dem Boyle-Gesetz wird das umgekehrte Verhältnis von P und V abgeleitet",
           "fr": "De la loi de Boyle, on prend la proportion inverse de P et V",
@@ -742,7 +742,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Ji qanûna Boyle, rêjeya berevajî ya P û V tê girtin"
         },
         {
-          "tr": "Charles yasasından V ile T nin doğru orantısı eklenir",
+          "tr": "Charles yasasından V ile T'nin doğru orantısı eklenir",
           "en": "From Charles' law, the direct proportion of V and T is added",
           "de": "Aus dem Gesetz von Charles wird das direkte Verhältnis von V und T addiert",
           "fr": "De la loi de Charles, la proportion directe de V et T s'ajoute",
@@ -752,7 +752,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Ji qanûna Charles, rêjeya rasterast ya V û T tê zêdekirin"
         },
         {
-          "tr": "Avogadro yasasından V ile n nin doğru orantısı birleştirilir",
+          "tr": "Avogadro yasasından V ile n'nin doğru orantısı birleştirilir",
           "en": "From Avogadro's law, the direct proportion of V and n is combined",
           "de": "Aus dem Gesetz von Avogadro ergibt sich der direkte Anteil von V und n",
           "fr": "D'après la loi d'Avogadro, la proportion directe de V et n est combinée",
@@ -888,7 +888,7 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin01",
       "stem": {
-        "tr": "0 °C de 4.48 litrelik sabit hacimli kapta 0.5 mol He gazının uyguladığı basınç kaç atmosferdir?",
+        "tr": "0 °C'de 4.48 litrelik sabit hacimli kapta 0.5 mol He gazının uyguladığı basınç kaç atmosferdir?",
         "en": "What is the pressure exerted by 0.5 mol He gas in a 4.48 liter fixed volume container at 0 °C?",
         "de": "Welchen Druck übt 0,5 mol He-Gas in einem 4,48-Liter-Behälter mit festem Volumen bei 0 °C aus?",
         "fr": "Quelle est la pression exercée par 0,5 mole de gaz He dans un récipient de 4,48 litres à volume fixe à 0 °C ?",
@@ -964,7 +964,7 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin02",
       "stem": {
-        "tr": "Sürtünmesiz ideal pistonlu bir kapta 27 °C de 2 litre hacim kaplayan bir miktar gazın sıcaklığı 327 °C ye çıkarılırsa hacmi kaç litre olur?",
+        "tr": "Sürtünmesiz ideal pistonlu bir kapta 27 °C'de 2 litre hacim kaplayan bir miktar gazın sıcaklığı 327 °C'ye çıkarılırsa hacmi kaç litre olur?",
         "en": "If the temperature of a gas occupying a volume of 2 liters at 27 °C in a frictionless ideal piston container is increased to 327 °C, how many liters will its volume be?",
         "de": "Wenn die Temperatur eines Gases, das in einem reibungsfreien idealen Kolbenbehälter ein Volumen von 2 Litern bei 27 °C einnimmt, auf 327 °C erhöht wird, wie viele Liter wird sein Volumen betragen?",
         "fr": "Si la température d'un gaz occupant un volume de 2 litres à 27 °C dans un récipient à piston idéal sans friction est augmentée à 327 °C, de combien de litres son volume sera-t-il ?",
@@ -1040,14 +1040,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Gazlar: Yasalar ve İdeal Gaz konusunu işlerken Gay-Lussac Yasası üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Gases: Laws & Ideal Gas, which statement regarding Gay-Lussac's Law represents the correct answer?",
-        "de": "Welche Aussage zu Gay-Lussacs Gesetz stellt im Kontext von Gase: Gesetze & Ideales Gas die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Gaz: Lois & Gaz Idéal, quelle proposition sur Loi de Gay-Lussac constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Газы: законы и идеальный газ», какой ответ относительно «Закон Гей-Люссака» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الغازات: القوانين والغاز المثالي\" مخبرياً، أي إجابة بخصوص \"قانون جاي لوساك\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“气体：定律与理想气体”实验探究与教学分析中，针对“盖-吕萨克定律”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Gaz: Zagon û Gaza Îdeal\" de, kîjan bersiv derbarê \"Qanûna Gay-Lussac\" de rast e?"
+        "tr": "Kimya dersinde Gazlar: Yasalar ve İdeal Gaz ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Gases: Laws & Ideal Gas, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Gase: Gesetze & Ideales Gas: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Gaz: Lois & Gaz Idéal, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Газы: законы и идеальный газ», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الغازات: القوانين والغاز المثالي\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“气体：定律与理想气体”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Gaz: Zagon û Gaza Îdeal\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1116,14 +1116,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin04",
       "stem": {
-        "tr": "Kimya dersinde Gazlar: Yasalar ve İdeal Gaz ünitesi incelenirken Sabit Hacimli Kap ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Gases: Laws & Ideal Gas, which of the following propositions concerning Fixed Volume Container is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Gase: Gesetze & Ideales Gas: Welche Behauptung bezüglich Container mit festem Volumen entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Gaz: Lois & Gaz Idéal, laquelle des affirmations suivantes concernant Conteneur à volume fixe est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Газы: законы и идеальный газ», какое из следующих суждений о «Контейнер фиксированного объема» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الغازات: القوانين والغاز المثالي\"، أي من الأحكام التالية المتعلقة بـ \"حاوية ذات حجم ثابت\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“气体：定律与理想气体”核心规律时，下列关于“固定容积容器”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Gaz: Zagon û Gaza Îdeal\" tê kirin, kîjan daraza li ser \"Konteynirê Voluma Sabît\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Gazlar: Yasalar ve İdeal Gaz konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Gases: Laws & Ideal Gas?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Gase: Gesetze & Ideales Gas zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Gaz: Lois & Gaz Idéal ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Газы: законы и идеальный газ»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الغازات: القوانين والغاز المثالي\"؟",
+        "zh": "根据“气体：定律与理想气体”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Gaz: Zagon û Gaza Îdeal\" de rast e?"
       },
       "options": [
         {
@@ -1167,7 +1167,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Zagona Charles: Di zexta domdar û hejmara molan de, volt û germahiya mutleq rasterast lihevhatî ne (V1/T1 = V2/T2)."
         },
         {
-          "tr": "Sıcaklık 25 °C den 50 °C ye çıkarsa basınç iki katına çıkar.",
+          "tr": "Sıcaklık 25 °C'den 50 °C'ye çıkarsa basınç iki katına çıkar.",
           "en": "If the temperature increases from 25 °C to 50 °C, the pressure doubles.",
           "de": "Steigt die Temperatur von 25 °C auf 50 °C, verdoppelt sich der Druck.",
           "fr": "Si la température passe de 25 °C à 50 °C, la pression double.",
@@ -1192,14 +1192,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Gazlar: Yasalar ve İdeal Gaz konusundaki temel kimyasal kurallar çerçevesinde Gaz Yoğunluğu (d = PM/RT) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Gas Density (d = PM/RT) within the fundamental principles of Gases: Laws & Ideal Gas?",
-        "de": "Welche Aussage beschreibt das Konzept Gasdichte (d = PM/RT) im Rahmen von Gase: Gesetze & Ideales Gas am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Densité du gaz (d = PM/RT) selon les lois de Gaz: Lois & Gaz Idéal?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Плотность газа (d = PM/RT)» в рамках темы «Газы: законы и идеальный газ»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"كثافة الغاز (د = PM/RT)\" ضمن قواعد \"الغازات: القوانين والغاز المثالي\"؟",
-        "zh": "根据“气体：定律与理想气体”的基本化学原理，下列哪项阐述能最准确地界定“气体密度 (d = PM/RT)”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Tîrêjiya gazê (d = PM/RT)\" di çarçoveya prensîbên \"Gaz: Zagon û Gaza Îdeal\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Gazlar: Yasalar ve İdeal Gaz sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Gases: Laws & Ideal Gas, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Gase: Gesetze & Ideales Gas: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Gaz: Lois & Gaz Idéal, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Газы: законы и идеальный газ», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الغازات: القوانين والغاز المثالي\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“气体：定律与理想气体”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Gaz: Zagon û Gaza Îdeal\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1268,14 +1268,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Gazlar: Yasalar ve İdeal Gaz sorularında karşılaşılan Kısmi Basınç konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Gases: Laws & Ideal Gas, which assertion regarding Partial Pressure is correct?",
-        "de": "Welche Feststellung bezüglich Partialdruck ist nach den chemischen Gesetzmäßigkeiten von Gase: Gesetze & Ideales Gas richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Gaz: Lois & Gaz Idéal, quelle affirmation concernant Pression partielle est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Газы: законы и идеальный газ», какое положение относительно «Парциальное давление» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الغازات: القوانين والغاز المثالي\"، أي حكم متعلق بـ \"الضغط الجزئي\" يعتبر صحيحاً؟",
-        "zh": "在高考“气体：定律与理想气体”经典考题中，下列有关“分压”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Gaz: Zagon û Gaza Îdeal\" de, kîjan daraza li ser \"Zexta qismî\" rast e?"
+        "tr": "Aşağıda Gazlar: Yasalar ve İdeal Gaz ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Gases: Laws & Ideal Gas, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Gase: Gesetze & Ideales Gas: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Gaz: Lois & Gaz Idéal, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Газы: законы и идеальный газ», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الغازات: القوانين والغاز المثالي\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“气体：定律与理想气体”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Gaz: Zagon û Gaza Îdeal\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1319,7 +1319,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Dema ku gaz li keştiya veguhestinê tê zêdekirin, zexta hundur zû zêde dibe."
         },
         {
-          "tr": "Sıcaklık 10 °C den 20 °C ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
+          "tr": "Sıcaklık 10 °C'den 20 °C'ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
           "en": "When the temperature increases from 10 °C to 20 °C, the absolute temperature of the gas doubles.",
           "de": "Bei einem Temperaturanstieg von 10 °C auf 20 °C verdoppelt sich die absolute Temperatur des Gases.",
           "fr": "Lorsque la température passe de 10 °C à 20 °C, la température absolue du gaz double.",
@@ -1344,14 +1344,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin07",
       "stem": {
-        "tr": "Aşağıda Gazlar: Yasalar ve İdeal Gaz ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Gaz Difüzyonu ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Gases: Laws & Ideal Gas, which statement about Gas Diffusion is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Gase: Gesetze & Ideales Gas: Welche Aussage über Gasdiffusion ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Gaz: Lois & Gaz Idéal, quelle affirmation relative à Diffusion de gaz est exacte?",
-        "ru": "На основе фундаментальных положений темы «Газы: законы и идеальный газ», какое суждение о «Газовая диффузия» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الغازات: القوانين والغاز المثالي\"، أي عبارة حول \"انتشار الغاز\" صحيحة؟",
-        "zh": "基于“气体：定律与理想气体”的基础化学知识体系，下列关于“气体扩散”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Gaz: Zagon û Gaza Îdeal\", kîjan gotin derbarê \"Belavbûna Gazê\" de rast e?"
+        "tr": "Gazlar: Yasalar ve İdeal Gaz konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Gases: Laws & Ideal Gas, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Gase: Gesetze & Ideales Gas: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Gaz: Lois & Gaz Idéal, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Газы: законы и идеальный газ», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الغازات: القوانين والغاز المثالي\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“气体：定律与理想气体”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Gaz: Zagon û Gaza Îdeal\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1365,7 +1365,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Molekulên gazê tenê di dorhêlên dorhêl de digerin."
         },
         {
-          "tr": "Yoğunluk formülü: P * MA = d * R * T dir (Pirinç Mandalinayı daha Rahat Tartar).",
+          "tr": "Yoğunluk formülü: P * MA = d * R * T'dir (Pirinç Mandalinayı daha Rahat Tartar).",
           "en": "Density formula: P * MA = d * R * T (Rice Weighs Tangerine More Easily).",
           "de": "Dichteformel: P * MA = d * R * T (Reis wiegt Mandarinen leichter).",
           "fr": "Formule de densité : P * MA = d * R * T (le riz pèse plus facilement la mandarine).",
@@ -1385,7 +1385,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Têkelên gazê yên heterojen hene ku di nav hev de nayên çareserkirin."
         },
         {
-          "tr": "Sıcaklık 25 °C den 50 °C ye çıkarsa basınç iki katına çıkar.",
+          "tr": "Sıcaklık 25 °C'den 50 °C'ye çıkarsa basınç iki katına çıkar.",
           "en": "If the temperature increases from 25 °C to 50 °C, the pressure doubles.",
           "de": "Steigt die Temperatur von 25 °C auf 50 °C, verdoppelt sich der Druck.",
           "fr": "Si la température passe de 25 °C à 50 °C, la pression double.",
@@ -1407,7 +1407,7 @@ export const unit12: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"Yoğunluk formülü: P * MA = d * R * T dir (Pirinç Mandalinayı daha Rahat Tartar).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Yoğunluk formülü: P * MA = d * R * T'dir (Pirinç Mandalinayı daha Rahat Tartar).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Density formula: P * MA = d * R * T (Rice Weighs Tangerine More Easily).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Dichteformel: P * MA = d * R * T (Reis wiegt Mandarinen leichter).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Formule de densité : P * MA = d * R * T (le riz pèse plus facilement la mandarine).\". Notion fondamentale du programme officiel de chimie.",
@@ -1420,14 +1420,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin08",
       "stem": {
-        "tr": "Gazlar: Yasalar ve İdeal Gaz konusu kapsamında Buhar ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Gases: Laws & Ideal Gas, which of the following findings regarding Vapor is scientifically verified?",
-        "de": "Im Rahmen der Einheit Gase: Gesetze & Ideales Gas: Welcher der folgenden Befunde zu Dampf ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Gaz: Lois & Gaz Idéal, laquelle des constatations suivantes concernant Vapeur est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Газы: законы и идеальный газ», какой из следующих выводов относительно «Пар» научно подтверждён?",
-        "ar": "في سياق موضوع \"الغازات: القوانين والغاز المثالي\"، أي من النتائج التالية المتعلقة بـ \"البخار\" مثبتة علمياً؟",
-        "zh": "在“气体：定律与理想气体”主题范畴内，下列关于“蒸气”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Gaz: Zagon û Gaza Îdeal\" de, kîjan ji van encamên li ser \"Buhar\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Gazlar: Yasalar ve İdeal Gaz ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Gases: Laws & Ideal Gas, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Gase: Gesetze & Ideales Gas: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Gaz: Lois & Gaz Idéal, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Газы: законы и идеальный газ», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الغازات: القوانين والغاز المثالي\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“气体：定律与理想气体”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Gaz: Zagon û Gaza Îdeal\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1451,7 +1451,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Manometre amûrek e ku nemahiya hewayê dipîve."
         },
         {
-          "tr": "Birleşik gaz denklemi: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2) dir.",
+          "tr": "Birleşik gaz denklemi: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2)'dir.",
           "en": "The combined gas equation is: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
           "de": "Die kombinierte Gasgleichung lautet: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
           "fr": "L'équation des gaz combinés est la suivante : (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).",
@@ -1471,7 +1471,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Di hevkêşeya gazê ya îdeal de, germahî bi Celsius (°C) tê bikaranîn."
         },
         {
-          "tr": "Gazın sıcaklığı 20 °C den 40 °C ye çıktığında hacmi tam 2 katına çıkar.",
+          "tr": "Gazın sıcaklığı 20 °C'den 40 °C'ye çıktığında hacmi tam 2 katına çıkar.",
           "en": "When the temperature of the gas increases from 20 °C to 40 °C, its volume doubles.",
           "de": "Steigt die Temperatur des Gases von 20 °C auf 40 °C, verdoppelt sich sein Volumen.",
           "fr": "Lorsque la température du gaz passe de 20 °C à 40 °C, son volume double.",
@@ -1483,7 +1483,7 @@ export const unit12: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Birleşik gaz denklemi: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2) dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Birleşik gaz denklemi: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2)'dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"The combined gas equation is: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Die kombinierte Gasgleichung lautet: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"L'équation des gaz combinés est la suivante : (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2).\". Notion fondamentale du programme officiel de chimie.",
@@ -1496,14 +1496,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Gazlar: Yasalar ve İdeal Gaz ünitesinde ele alınan Boyle Yasası hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Gases: Laws & Ideal Gas, which statement about Boyle's Law is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Gase: Gesetze & Ideales Gas: Welche Aussage über Boyles Gesetz ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Gaz: Lois & Gaz Idéal, quelle affirmation relative à Loi de Boyle est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Газы: законы и идеальный газ», какое утверждение о «Закон Бойля» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الغازات: القوانين والغاز المثالي\"، أي عبارة حول \"قانون بويل\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“气体：定律与理想气体”单元中关于“波义耳定律”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Gaz: Zagon û Gaza Îdeal\", kîjan gotin li ser \"Qanûna Boyle\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Gazlar: Yasalar ve İdeal Gaz konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Gases: Laws & Ideal Gas, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Gase: Gesetze & Ideales Gas die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Gaz: Lois & Gaz Idéal, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Газы: законы и идеальный газ», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الغازات: القوانين والغاز المثالي\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“气体：定律与理想气体”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Gaz: Zagon û Gaza Îdeal\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1527,7 +1527,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Dema ku gaz li keştiya veguhestinê tê zêdekirin, zexta hundur zû zêde dibe."
         },
         {
-          "tr": "Sıcaklık 10 °C den 20 °C ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
+          "tr": "Sıcaklık 10 °C'den 20 °C'ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
           "en": "When the temperature increases from 10 °C to 20 °C, the absolute temperature of the gas doubles.",
           "de": "Bei einem Temperaturanstieg von 10 °C auf 20 °C verdoppelt sich die absolute Temperatur des Gases.",
           "fr": "Lorsque la température passe de 10 °C à 20 °C, la température absolue du gaz double.",
@@ -1572,14 +1572,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Gazlar: Yasalar ve İdeal Gaz konusunu işlerken Pistonlu Kap üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Gases: Laws & Ideal Gas, which statement regarding Piston Vessel represents the correct answer?",
-        "de": "Welche Aussage zu Kolbengefäß stellt im Kontext von Gase: Gesetze & Ideales Gas die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Gaz: Lois & Gaz Idéal, quelle proposition sur Navire à pistons constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Газы: законы и идеальный газ», какой ответ относительно «Поршневой сосуд» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الغازات: القوانين والغاز المثالي\" مخبرياً، أي إجابة بخصوص \"سفينة المكبس\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“气体：定律与理想气体”实验探究与教学分析中，针对“活塞容器”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Gaz: Zagon û Gaza Îdeal\" de, kîjan bersiv derbarê \"Keştiya Piston\" de rast e?"
+        "tr": "Kimya dersinde Gazlar: Yasalar ve İdeal Gaz ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Gases: Laws & Ideal Gas, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Gase: Gesetze & Ideales Gas: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Gaz: Lois & Gaz Idéal, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Газы: законы и идеальный газ», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الغازات: القوانين والغاز المثالي\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“气体：定律与理想气体”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Gaz: Zagon û Gaza Îdeal\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1593,7 +1593,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Têkelên gazê yên heterojen hene ku di nav hev de nayên çareserkirin."
         },
         {
-          "tr": "Sıcaklık 25 °C den 50 °C ye çıkarsa basınç iki katına çıkar.",
+          "tr": "Sıcaklık 25 °C'den 50 °C'ye çıkarsa basınç iki katına çıkar.",
           "en": "If the temperature increases from 25 °C to 50 °C, the pressure doubles.",
           "de": "Steigt die Temperatur von 25 °C auf 50 °C, verdoppelt sich der Druck.",
           "fr": "Si la température passe de 25 °C à 50 °C, la pression double.",
@@ -1648,14 +1648,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin11",
       "stem": {
-        "tr": "Kimya dersinde Gazlar: Yasalar ve İdeal Gaz ünitesi incelenirken Gay-Lussac Yasası ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Gases: Laws & Ideal Gas, which of the following propositions concerning Gay-Lussac's Law is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Gase: Gesetze & Ideales Gas: Welche Behauptung bezüglich Gay-Lussacs Gesetz entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Gaz: Lois & Gaz Idéal, laquelle des affirmations suivantes concernant Loi de Gay-Lussac est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Газы: законы и идеальный газ», какое из следующих суждений о «Закон Гей-Люссака» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الغازات: القوانين والغاز المثالي\"، أي من الأحكام التالية المتعلقة بـ \"قانون جاي لوساك\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“气体：定律与理想气体”核心规律时，下列关于“盖-吕萨克定律”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Gaz: Zagon û Gaza Îdeal\" tê kirin, kîjan daraza li ser \"Qanûna Gay-Lussac\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Gazlar: Yasalar ve İdeal Gaz konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Gases: Laws & Ideal Gas?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Gase: Gesetze & Ideales Gas zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Gaz: Lois & Gaz Idéal ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Газы: законы и идеальный газ»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الغازات: القوانين والغاز المثالي\"؟",
+        "zh": "根据“气体：定律与理想气体”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Gaz: Zagon û Gaza Îdeal\" de rast e?"
       },
       "options": [
         {
@@ -1689,7 +1689,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Di hevkêşeya gazê ya îdeal de, germahî bi Celsius (°C) tê bikaranîn."
         },
         {
-          "tr": "Gazın sıcaklığı 20 °C den 40 °C ye çıktığında hacmi tam 2 katına çıkar.",
+          "tr": "Gazın sıcaklığı 20 °C'den 40 °C'ye çıktığında hacmi tam 2 katına çıkar.",
           "en": "When the temperature of the gas increases from 20 °C to 40 °C, its volume doubles.",
           "de": "Steigt die Temperatur des Gases von 20 °C auf 40 °C, verdoppelt sich sein Volumen.",
           "fr": "Lorsque la température du gaz passe de 20 °C à 40 °C, son volume double.",
@@ -1724,14 +1724,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Gazlar: Yasalar ve İdeal Gaz konusundaki temel kimyasal kurallar çerçevesinde Sabit Hacimli Kap kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Fixed Volume Container within the fundamental principles of Gases: Laws & Ideal Gas?",
-        "de": "Welche Aussage beschreibt das Konzept Container mit festem Volumen im Rahmen von Gase: Gesetze & Ideales Gas am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Conteneur à volume fixe selon les lois de Gaz: Lois & Gaz Idéal?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Контейнер фиксированного объема» в рамках темы «Газы: законы и идеальный газ»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"حاوية ذات حجم ثابت\" ضمن قواعد \"الغازات: القوانين والغاز المثالي\"؟",
-        "zh": "根据“气体：定律与理想气体”的基本化学原理，下列哪项阐述能最准确地界定“固定容积容器”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Konteynirê Voluma Sabît\" di çarçoveya prensîbên \"Gaz: Zagon û Gaza Îdeal\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Gazlar: Yasalar ve İdeal Gaz sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Gases: Laws & Ideal Gas, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Gase: Gesetze & Ideales Gas: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Gaz: Lois & Gaz Idéal, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Газы: законы и идеальный газ», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الغازات: القوانين والغاز المثالي\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“气体：定律与理想气体”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Gaz: Zagon û Gaza Îdeal\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1755,7 +1755,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Gaz bi tevahî qebareya konteynera ku tê de ne tijî dikin û zextek wekhev li her xalê dikin."
         },
         {
-          "tr": "Sıcaklık 10 °C den 20 °C ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
+          "tr": "Sıcaklık 10 °C'den 20 °C'ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
           "en": "When the temperature increases from 10 °C to 20 °C, the absolute temperature of the gas doubles.",
           "de": "Bei einem Temperaturanstieg von 10 °C auf 20 °C verdoppelt sich die absolute Temperatur des Gases.",
           "fr": "Lorsque la température passe de 10 °C à 20 °C, la température absolue du gaz double.",
@@ -1800,18 +1800,18 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Gazlar: Yasalar ve İdeal Gaz sorularında karşılaşılan Gaz Yoğunluğu (d = PM/RT) konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Gases: Laws & Ideal Gas, which assertion regarding Gas Density (d = PM/RT) is correct?",
-        "de": "Welche Feststellung bezüglich Gasdichte (d = PM/RT) ist nach den chemischen Gesetzmäßigkeiten von Gase: Gesetze & Ideales Gas richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Gaz: Lois & Gaz Idéal, quelle affirmation concernant Densité du gaz (d = PM/RT) est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Газы: законы и идеальный газ», какое положение относительно «Плотность газа (d = PM/RT)» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الغازات: القوانين والغاز المثالي\"، أي حكم متعلق بـ \"كثافة الغاز (د = PM/RT)\" يعتبر صحيحاً؟",
-        "zh": "在高考“气体：定律与理想气体”经典考题中，下列有关“气体密度 (d = PM/RT)”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Gaz: Zagon û Gaza Îdeal\" de, kîjan daraza li ser \"Tîrêjiya gazê (d = PM/RT)\" rast e?"
+        "tr": "Aşağıda Gazlar: Yasalar ve İdeal Gaz ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Gases: Laws & Ideal Gas, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Gase: Gesetze & Ideales Gas: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Gaz: Lois & Gaz Idéal, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Газы: законы и идеальный газ», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الغازات: القوانين والغاز المثالي\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“气体：定律与理想气体”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Gaz: Zagon û Gaza Îdeal\", kîjan gotin rast e?"
       },
       "options": [
         {
-          "tr": "Sıcaklık 25 °C den 50 °C ye çıkarsa basınç iki katına çıkar.",
+          "tr": "Sıcaklık 25 °C'den 50 °C'ye çıkarsa basınç iki katına çıkar.",
           "en": "If the temperature increases from 25 °C to 50 °C, the pressure doubles.",
           "de": "Steigt die Temperatur von 25 °C auf 50 °C, verdoppelt sich der Druck.",
           "fr": "Si la température passe de 25 °C à 50 °C, la pression double.",
@@ -1876,14 +1876,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin14",
       "stem": {
-        "tr": "Aşağıda Gazlar: Yasalar ve İdeal Gaz ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Kısmi Basınç ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Gases: Laws & Ideal Gas, which statement about Partial Pressure is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Gase: Gesetze & Ideales Gas: Welche Aussage über Partialdruck ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Gaz: Lois & Gaz Idéal, quelle affirmation relative à Pression partielle est exacte?",
-        "ru": "На основе фундаментальных положений темы «Газы: законы и идеальный газ», какое суждение о «Парциальное давление» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الغازات: القوانين والغاز المثالي\"، أي عبارة حول \"الضغط الجزئي\" صحيحة؟",
-        "zh": "基于“气体：定律与理想气体”的基础化学知识体系，下列关于“分压”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Gaz: Zagon û Gaza Îdeal\", kîjan gotin derbarê \"Zexta qismî\" de rast e?"
+        "tr": "Gazlar: Yasalar ve İdeal Gaz konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Gases: Laws & Ideal Gas, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Gase: Gesetze & Ideales Gas: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Gaz: Lois & Gaz Idéal, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Газы: законы и идеальный газ», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الغازات: القوانين والغاز المثالي\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“气体：定律与理想气体”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Gaz: Zagon û Gaza Îdeal\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1897,7 +1897,7 @@ export const unit12: ChemistryUnitSeedData = {
           "ku": "Di hevkêşeya gazê ya îdeal de, germahî bi Celsius (°C) tê bikaranîn."
         },
         {
-          "tr": "Gazın sıcaklığı 20 °C den 40 °C ye çıktığında hacmi tam 2 katına çıkar.",
+          "tr": "Gazın sıcaklığı 20 °C'den 40 °C'ye çıktığında hacmi tam 2 katına çıkar.",
           "en": "When the temperature of the gas increases from 20 °C to 40 °C, its volume doubles.",
           "de": "Steigt die Temperatur des Gases von 20 °C auf 40 °C, verdoppelt sich sein Volumen.",
           "fr": "Lorsque la température du gaz passe de 20 °C à 40 °C, son volume double.",
@@ -1952,18 +1952,18 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin15",
       "stem": {
-        "tr": "Gazlar: Yasalar ve İdeal Gaz konusu kapsamında Gaz Difüzyonu ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Gases: Laws & Ideal Gas, which of the following findings regarding Gas Diffusion is scientifically verified?",
-        "de": "Im Rahmen der Einheit Gase: Gesetze & Ideales Gas: Welcher der folgenden Befunde zu Gasdiffusion ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Gaz: Lois & Gaz Idéal, laquelle des constatations suivantes concernant Diffusion de gaz est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Газы: законы и идеальный газ», какой из следующих выводов относительно «Газовая диффузия» научно подтверждён?",
-        "ar": "في سياق موضوع \"الغازات: القوانين والغاز المثالي\"، أي من النتائج التالية المتعلقة بـ \"انتشار الغاز\" مثبتة علمياً؟",
-        "zh": "在“气体：定律与理想气体”主题范畴内，下列关于“气体扩散”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Gaz: Zagon û Gaza Îdeal\" de, kîjan ji van encamên li ser \"Belavbûna Gazê\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Gazlar: Yasalar ve İdeal Gaz ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Gases: Laws & Ideal Gas, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Gase: Gesetze & Ideales Gas: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Gaz: Lois & Gaz Idéal, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Газы: законы и идеальный газ», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الغازات: القوانين والغاز المثالي\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“气体：定律与理想气体”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Gaz: Zagon û Gaza Îdeal\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
-          "tr": "Sıcaklık 10 °C den 20 °C ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
+          "tr": "Sıcaklık 10 °C'den 20 °C'ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.",
           "en": "When the temperature increases from 10 °C to 20 °C, the absolute temperature of the gas doubles.",
           "de": "Bei einem Temperaturanstieg von 10 °C auf 20 °C verdoppelt sich die absolute Temperatur des Gases.",
           "fr": "Lorsque la température passe de 10 °C à 20 °C, la température absolue du gaz double.",
@@ -2028,14 +2028,14 @@ export const unit12: ChemistryUnitSeedData = {
     {
       "id": "u12-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Gazlar: Yasalar ve İdeal Gaz ünitesinde ele alınan Buhar hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Gases: Laws & Ideal Gas, which statement about Vapor is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Gase: Gesetze & Ideales Gas: Welche Aussage über Dampf ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Gaz: Lois & Gaz Idéal, quelle affirmation relative à Vapeur est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Газы: законы и идеальный газ», какое утверждение о «Пар» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الغازات: القوانين والغاز المثالي\"، أي عبارة حول \"البخار\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“气体：定律与理想气体”单元中关于“蒸气”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Gaz: Zagon û Gaza Îdeal\", kîjan gotin li ser \"Buhar\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Gazlar: Yasalar ve İdeal Gaz konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Gases: Laws & Ideal Gas, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Gase: Gesetze & Ideales Gas die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Gaz: Lois & Gaz Idéal, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Газы: законы и идеальный газ», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الغازات: القوانين والغاز المثالي\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“气体：定律与理想气体”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Gaz: Zagon û Gaza Îdeal\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

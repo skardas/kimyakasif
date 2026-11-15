@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useRef, useEffect } from 'react';
 import {
   ArrowLeft,
   CheckCircle2,
@@ -198,6 +198,66 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
 
   const [score, setScore] = useState(0);
   const [feedback, setFeedback] = useState<{ message: string; isCorrect: boolean } | null>(null);
+  const advanceTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Clear timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (advanceTimeoutRef.current) {
+        clearTimeout(advanceTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  // Compute peripheral atom roster with expected bond order
+  const peripheralList = useMemo(() => {
+    const list: { symbol: string; bondOrder: number; targetOctet: number }[] = [];
+    currentMol.peripheralAtoms.forEach((p) => {
+      let bondOrder = 1;
+      if (currentMol.id === 'mol-co2') {
+        bondOrder = 2; // C=O
+      } else if (currentMol.id === 'mol-hcn') {
+        bondOrder = p.symbol === 'N' ? 3 : 1; // C≡N, C-H
+      }
+      for (let i = 0; i < p.count; i++) {
+        list.push({
+          symbol: p.symbol,
+          bondOrder,
+          targetOctet: p.targetOctet,
+        });
+      }
+    });
+    return list;
+  }, [currentMol]);
+
+  // VSEPR geometry angles around central atom (degrees)
+  const vseprAngles = useMemo(() => {
+    switch (currentMol.vsepr) {
+      case 'AX2':
+        // Linear 180°: left (180°), right (0°)
+        return [180, 0];
+      case 'AX2E2':
+        // Bent 104.5°: bottom-left (142°), bottom-right (38°)
+        return [142, 38];
+      case 'AX3':
+        // Trigonal planar 120°: top (270°), bottom-left (150°), bottom-right (30°)
+        return [270, 150, 30];
+      case 'AX3E1':
+        // Trigonal pyramidal ~107°: bottom-left (150°), bottom (90°), bottom-right (30°)
+        return [150, 90, 30];
+      case 'AX4':
+        // Tetrahedral: top (270°), right (0°), bottom (90°), left (180°)
+        return [270, 0, 90, 180];
+      case 'AX5':
+        // Trigonal bipyramidal: axial top (270°), axial bottom (90°), equatorial (0°, 140°, 220°)
+        return [270, 90, 0, 140, 220];
+      case 'AX6':
+        // Octahedral: top (270°), bottom (90°), right (0°), left (180°), diagonals (35°, 215°)
+        return [270, 90, 0, 180, 35, 215];
+      default:
+        return peripheralList.map((_, i) => (i * 360) / (peripheralList.length || 1));
+    }
+  }, [currentMol.vsepr, peripheralList]);
 
   // Reset controls on molecule switch
   const loadMolecule = useCallback((idx: number) => {
@@ -283,7 +343,8 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
       isCorrect: true,
     });
 
-    setTimeout(() => {
+    if (advanceTimeoutRef.current) clearTimeout(advanceTimeoutRef.current);
+    advanceTimeoutRef.current = setTimeout(() => {
       if (moleculeIndex < TARGET_MOLECULES.length - 1) {
         loadMolecule(moleculeIndex + 1);
       } else {
@@ -344,10 +405,99 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
         </div>
 
         {/* Visual Molecule Canvas representation */}
-        <div className="lewis-canvas-stage min-h-[240px] flex flex-col items-center justify-center p-6 bg-surface-elevated/40 border border-subtle rounded-2xl relative">
-          <div className="relative flex items-center justify-center">
+        <div className="lewis-canvas-stage min-h-[260px] flex flex-col items-center justify-center p-6 bg-surface-elevated/40 border border-subtle rounded-2xl relative overflow-hidden">
+          <div className="relative flex items-center justify-center w-64 h-64">
+            {/* SVG Bonds Overlay */}
+            <svg
+              className="absolute inset-0 w-full h-full pointer-events-none"
+              viewBox="-128 -128 256 256"
+            >
+              {peripheralList.map((atom, i) => {
+                const angle = vseprAngles[i] ?? (i * 360) / peripheralList.length;
+                const rad = (angle * Math.PI) / 180;
+                const cos = Math.cos(rad);
+                const sin = Math.sin(rad);
+                const rStart = 38;
+                const rEnd = 68;
+
+                if (atom.bondOrder === 2) {
+                  const perpX = -sin * 3;
+                  const perpY = cos * 3;
+                  return (
+                    <g key={`bond-${i}`}>
+                      <line
+                        x1={cos * rStart + perpX}
+                        y1={sin * rStart + perpY}
+                        x2={cos * rEnd + perpX}
+                        y2={sin * rEnd + perpY}
+                        stroke="var(--brand-primary)"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                      />
+                      <line
+                        x1={cos * rStart - perpX}
+                        y1={sin * rStart - perpY}
+                        x2={cos * rEnd - perpX}
+                        y2={sin * rEnd - perpY}
+                        stroke="var(--brand-primary)"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                      />
+                    </g>
+                  );
+                } else if (atom.bondOrder === 3) {
+                  const perpX = -sin * 4;
+                  const perpY = cos * 4;
+                  return (
+                    <g key={`bond-${i}`}>
+                      <line
+                        x1={cos * rStart + perpX}
+                        y1={sin * rStart + perpY}
+                        x2={cos * rEnd + perpX}
+                        y2={sin * rEnd + perpY}
+                        stroke="var(--brand-primary)"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                      <line
+                        x1={cos * rStart}
+                        y1={sin * rStart}
+                        x2={cos * rEnd}
+                        y2={sin * rEnd}
+                        stroke="var(--brand-primary)"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                      <line
+                        x1={cos * rStart - perpX}
+                        y1={sin * rStart - perpY}
+                        x2={cos * rEnd - perpX}
+                        y2={sin * rEnd - perpY}
+                        stroke="var(--brand-primary)"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                    </g>
+                  );
+                } else {
+                  return (
+                    <line
+                      key={`bond-${i}`}
+                      x1={cos * rStart}
+                      y1={sin * rStart}
+                      x2={cos * rEnd}
+                      y2={sin * rEnd}
+                      stroke="var(--brand-primary)"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                    />
+                  );
+                }
+              })}
+            </svg>
+
             {/* Central Atom Circle */}
-            <div className="w-20 h-20 rounded-full border-4 border-primary bg-primary/10 flex flex-col items-center justify-center relative shadow-lg">
+            <div className="w-20 h-20 rounded-full border-4 border-primary bg-primary/10 flex flex-col items-center justify-center relative shadow-lg z-10">
               <span className="text-2xl font-black text-primary">{currentMol.centralAtom.symbol}</span>
               <span className="text-[10px] font-mono opacity-70">
                 Yük: {validation.centralFormalCharge > 0 ? `+${validation.centralFormalCharge}` : validation.centralFormalCharge}
@@ -371,11 +521,29 @@ export const LewisDotBuilder: React.FC<LewisDotBuilderProps> = ({
               ))}
             </div>
 
-            {/* Peripheral bond representations */}
-            <div className="absolute flex items-center gap-12 pointer-events-none">
-              <span className="w-8 h-1 bg-primary/60 rounded" />
-              <span className="w-8 h-1 bg-primary/60 rounded" />
-            </div>
+            {/* Peripheral Atoms dynamically positioned by VSEPR geometry */}
+            {peripheralList.map((atom, i) => {
+              const angle = vseprAngles[i] ?? (i * 360) / peripheralList.length;
+              const rad = (angle * Math.PI) / 180;
+              const cos = Math.cos(rad);
+              const sin = Math.sin(rad);
+              const dist = 86;
+              const posX = Math.round(cos * dist);
+              const posY = Math.round(sin * dist);
+
+              return (
+                <div
+                  key={`peripheral-atom-${i}`}
+                  className="absolute w-9 h-9 rounded-full border-2 border-primary/70 bg-surface shadow-md flex items-center justify-center font-bold text-sm text-foreground z-10"
+                  style={{
+                    transform: `translate(${posX}px, ${posY}px)`,
+                  }}
+                  title={`${atom.symbol} (${currentMol.geometryTr})`}
+                >
+                  <span>{atom.symbol}</span>
+                </div>
+              );
+            })}
           </div>
 
           {/* Real-time stats HUD */}

@@ -40,6 +40,10 @@ import { generateBlitzQuestions } from '../src/components/games/ChemBlitzGame';
 import {
   setSfxEnabled,
   setSfxVolume,
+  isSfxEnabled,
+  getSfxVolume,
+  getAudioContext,
+  unlockAudio,
   playCorrect,
   playWrong,
   playBubble,
@@ -191,7 +195,8 @@ async function main() {
     assert(h3.result.current.streakDays >= 1, 'streakDays recovered when NaN stored');
     h3.unmount();
 
-    const today = new Date().toISOString().slice(0, 10);
+    const d = new Date();
+    const today = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
     localStorage.setItem('kimya-yks-progress-v1', JSON.stringify({ streakDays: 14500, lastActiveDate: today }));
     const h4 = await renderStoreHook(useAppStore);
     assert(h4.result.current.streakDays === 14500, 'Legitimate high streak retained on same day');
@@ -377,6 +382,47 @@ async function main() {
 
     const clue3 = sanitizeEntityClue('Polimerizasyon n*CH2=CH2 basamağıdır', 'n*', 'tr');
     assert(clue3.length > 0, 'Wildcard asterisk sanitized safely');
+
+    // Chinese fullwidth parentheses and Kurdish compound ezafe sanitization
+    const clue4 = sanitizeEntityClue('温室气体捕获红外线', '温室气体（CO2、CH4）', 'zh');
+    assert(!clue4.includes('温室气体'), 'Chinese fullwidth parentheses base concept sanitized');
+
+    const clue5 = sanitizeEntityClue('Di pîlê kîmyewî de metalên cuda hene', 'Pîl Kîmyewî', 'ku');
+    assert(!clue5.includes('pîlê kîmyewî'), 'Kurdish compound ezafe sanitized');
+
+    // English -ing suffix sanitization
+    const clue6 = sanitizeEntityClue('Metallic bonding is the strong bond between electrons', 'Metallic Bond', 'en');
+    assert(!clue6.toLowerCase().includes('metallic bond'), 'English -ing suffix sanitized');
+
+    // German compound noun and hyphen variants
+    const clue7 = sanitizeEntityClue('Nanotube ist eine zylindrische Form einer Graphenschicht.', 'Graphen', 'de');
+    assert(!clue7.includes('Graphen'), 'German compound noun Graphenschicht sanitized');
+
+    const clue8 = sanitizeEntityClue('s-Orbital ist sphärisch symmetrisch', 's Orbital', 'de');
+    assert(!clue8.includes('s-Orbital') && !clue8.includes('s Orbital'), 'German hyphen variant s-Orbital sanitized');
+
+    // Chinese spacing variants
+    const clue9 = sanitizeEntityClue('s 轨道是球对称的', 's轨道', 'zh');
+    assert(!clue9.includes('s 轨道') && !clue9.includes('s轨道'), 'Chinese spacing variant s 轨道 sanitized');
+
+    const clue10 = sanitizeEntityClue('西格玛键完好无损', '西格玛 (σ) 键', 'zh');
+    assert(!clue10.includes('西格玛键') && !clue10.includes('西格玛 键'), 'Chinese spacing variant 西格玛键 sanitized');
+
+    // Arabic punctuation boundary (\u060C comma)
+    const clue11 = sanitizeEntityClue('في النظائر، عدد البروتونات هو نفسه', 'النظائر', 'ar');
+    assert(!clue11.includes('النظائر'), 'Arabic comma punctuation boundary \\p{L}\\p{N} sanitized');
+
+    // Arabic definite article prefix (الـ)
+    const clue12 = sanitizeEntityClue('تتكون الرابطة في العنصر بين الذرات', 'عنصر', 'ar');
+    assert(!clue12.includes('العنصر') && !clue12.includes('عنصر'), 'Arabic definite article prefix (الـ) sanitized');
+
+    // Russian Cyrillic noun declension endings
+    const clue13 = sanitizeEntityClue('В конической колбе Эрленмайеру для титрования', 'Эрленмайер', 'ru');
+    assert(!clue13.includes('Эрленмайеру'), 'Russian dative case ending (-у) sanitized');
+
+    // French word order inversion & elision
+    const clue14 = sanitizeEntityClue("L'orbitale s est à symétrie sphérique", 's orbitale', 'fr');
+    assert(!clue14.includes('orbitale s') && !clue14.includes("L'orbitale"), "French inverted word order and elision (L'orbitale s) sanitized");
   });
 
   await runProbe('P2.5', 'Generator-DiagramEnricher', 'enrichQuestionsWithDiagrams stability on arbitrary question lists', () => {
@@ -605,6 +651,7 @@ async function main() {
 
   await runProbe('P5.1', 'Audio-MuteSuppression', 'AudioContext unlock and mute suppression (zero nodes when muted)', () => {
     setSfxEnabled(false);
+    assert(isSfxEnabled() === false, 'SFX engine is disabled');
     playCorrect();
     playWrong();
     playBubble();
@@ -613,21 +660,39 @@ async function main() {
     playSuccess();
     playFinish();
     playApplause(0.1);
-    assert(true, 'All SFX calls safely suppressed when disabled without throwing');
+    assert(isSfxEnabled() === false, 'SFX state remains disabled throughout audio triggers without throwing');
     setSfxEnabled(true);
+    assert(isSfxEnabled() === true, 'SFX engine successfully re-enabled');
   });
 
   await runProbe('P5.2', 'Audio-VolumeClamping', 'Master volume bounds clamping (values < 0 clamped to 0, > 1 clamped to 1)', () => {
     setSfxVolume(-10);
+    assert(getSfxVolume() === 0.0, `Negative volume -10 clamped to 0.0 (got ${getSfxVolume()})`);
+    assert(getSfxVolume() >= 0.0 && getSfxVolume() <= 1.0, 'Volume strictly bounded between 0.0 and 1.0');
+
     setSfxVolume(50);
+    assert(getSfxVolume() === 1.0, `Overflow volume 50 clamped to 1.0 (got ${getSfxVolume()})`);
+    assert(getSfxVolume() >= 0.0 && getSfxVolume() <= 1.0, 'Volume strictly bounded between 0.0 and 1.0');
+
     setSfxVolume(0.5);
+    assert(getSfxVolume() === 0.5, `Midpoint volume 0.5 set accurately`);
+    assert(getSfxVolume() >= 0.0 && getSfxVolume() <= 1.0, 'Volume strictly bounded between 0.0 and 1.0');
+
     setSfxVolume(1.0);
+    assert(getSfxVolume() === 1.0, `Boundary volume 1.0 set accurately`);
+    assert(getSfxVolume() >= 0.0 && getSfxVolume() <= 1.0, 'Volume strictly bounded between 0.0 and 1.0');
+
     setSfxVolume(0.0);
-    assert(true, 'Volume changes handled safely across extreme bounds');
+    assert(getSfxVolume() === 0.0, `Boundary volume 0.0 set accurately`);
+    assert(getSfxVolume() >= 0.0 && getSfxVolume() <= 1.0, 'Volume strictly bounded between 0.0 and 1.0');
+
+    setSfxVolume(0.8);
+    assert(getSfxVolume() === 0.8, 'Master volume reset to nominal 0.8');
   });
 
   await runProbe('P5.3', 'Audio-RapidFireStress', 'Rapid-fire trigger stress (100 simultaneous calls to all SFX generators)', () => {
     setSfxEnabled(true);
+    assert(isSfxEnabled() === true, 'SFX enabled prior to rapid-fire triggers');
     for (let i = 0; i < 100; i++) {
       playCorrect();
       playWrong();
@@ -638,7 +703,11 @@ async function main() {
       playFinish();
       playApplause(0.05);
     }
-    assert(true, '100 rapid-fire triggers executed without memory/call-stack overflow');
+    assert(isSfxEnabled() === true, 'SFX state remains valid (true) after 100 rapid-fire triggers');
+    const audioCtx = getAudioContext();
+    if (audioCtx) {
+      assert(audioCtx.state === 'running' || audioCtx.state === 'suspended', `AudioContext state is valid (${audioCtx.state})`);
+    }
   });
 
   await runProbe('P5.4', 'Audio-MusicCatalog', 'Music engine mood and track catalog completeness (non-empty attributes)', () => {
@@ -658,13 +727,39 @@ async function main() {
   await runProbe('P5.5', 'Audio-ContextRecovery', 'Closed / suspended AudioContext recovery resilience', () => {
     const dummyCtx = new MockAudioContext();
     dummyCtx.state = 'closed';
+    unlockAudio(dummyCtx as unknown as AudioContext);
+    const dummyState: string = dummyCtx.state;
+    assert(dummyState === 'running' || dummyState === 'closed', 'unlockAudio safely handles closed mock AudioContext');
+
+    const suspendedCtx = new MockAudioContext();
+    suspendedCtx.state = 'suspended';
+    unlockAudio(suspendedCtx as unknown as AudioContext);
+    const suspendedState: string = suspendedCtx.state;
+    assert(suspendedState === 'running', 'unlockAudio resumes suspended AudioContext to running state');
+
     setSfxEnabled(true);
     playCorrect();
     playWrong();
-    assert(true, 'SFX engine handles closed AudioContext without throwing InvalidStateError');
+    const activeCtx = getAudioContext();
+    if (activeCtx) {
+      unlockAudio(activeCtx);
+      assert(activeCtx.state !== 'closed', 'Active AudioContext remains open and operational');
+    }
   });
 
   await runProbe('P5.6', 'Audio-ConfettiBounds', 'Confetti particle engine zero-dimension and rapid reset bounds', async () => {
+    // Verify MockCanvasRenderingContext2D scale functionality
+    const canvas = document.createElement('canvas') as unknown as { getContext: (type: string) => any };
+    const ctx = canvas.getContext('2d');
+    assert(typeof ctx.scale === 'function', 'MockCanvasRenderingContext2D.prototype.scale is present');
+    ctx.scale(2, 3);
+    assert(ctx.scaleX === 2 && ctx.scaleY === 3, `Mock canvas scaleX and scaleY updated (got ${ctx.scaleX}, ${ctx.scaleY})`);
+    ctx.save();
+    ctx.scale(2, 2);
+    assert(ctx.scaleX === 4 && ctx.scaleY === 6, 'Mock canvas scale compounds correctly under save()');
+    ctx.restore();
+    assert(ctx.scaleX === 2 && ctx.scaleY === 3, 'Mock canvas scale restores correctly after restore()');
+
     const { result, unmount } = await renderStoreHook(() => {
       return React.createElement(Confetti, { burstKey: 1 });
     });

@@ -50,7 +50,7 @@ export const unit02: ChemistryUnitSeedData = {
         "ku": "Rutherford bi matematîkî îsbat kir ku elektron di dorhêlên dorhêl ên sabît de dizivirin."
       },
       "osymTip": {
-        "tr": "Yörünge modeli Bohr a aittir.",
+        "tr": "Yörünge modeli Bohr'a aittir.",
         "en": "The orbital model belongs to Bohr.",
         "de": "Das Orbitalmodell gehört zu Bohr.",
         "fr": "Le modèle orbital appartient à Bohr.",
@@ -247,7 +247,7 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-f10",
       "fact": {
-        "tr": "Bir periyotta iyonlaşma enerjisi sıralamasında 2A ve 5A küresel simetriden dolayı 3A ve 6A dan büyüktür.",
+        "tr": "Bir periyotta iyonlaşma enerjisi sıralamasında 2A ve 5A küresel simetriden dolayı 3A ve 6A'dan büyüktür.",
         "en": "In the order of ionization energy in a period, 2A and 5A are greater than 3A and 6A due to spherical symmetry.",
         "de": "In der Reihenfolge der Ionisierungsenergie in einer Periode sind 2A und 5A aufgrund der Kugelsymmetrie größer als 3A und 6A.",
         "fr": "Dans l'ordre de l'énergie d'ionisation sur une période, 2A et 5A sont supérieurs à 3A et 6A en raison de la symétrie sphérique.",
@@ -549,7 +549,7 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "металлы",
         "ar": "المعادن",
         "zh": "金属",
-        "ku": "metals"
+        "ku": "Metal"
       },
       "conceptB": {
         "tr": "Ametaller",
@@ -641,34 +641,34 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-c08",
       "conceptA": {
-        "tr": "Periyot",
-        "en": "Period",
-        "de": "Periode",
-        "fr": "Période",
-        "ru": "Период",
-        "ar": "الدورة",
-        "zh": "周期",
-        "ku": "Periyod"
+        "tr": "İzotop",
+        "en": "isotope",
+        "de": "Isotop",
+        "fr": "isotope",
+        "ru": "изотоп",
+        "ar": "النظائر",
+        "zh": "同位素",
+        "ku": "îzotop"
       },
       "conceptB": {
-        "tr": "Grup",
-        "en": "Group",
-        "de": "Gruppe",
-        "fr": "Groupe",
-        "ru": "Группа",
-        "ar": "المجموعة",
-        "zh": "族",
-        "ku": "Kom"
+        "tr": "İzoton",
+        "en": "isotone",
+        "de": "isoton",
+        "fr": "isotone",
+        "ru": "изотон",
+        "ar": "isotone",
+        "zh": "等酮",
+        "ku": "îzoton"
       },
       "distinction": {
-        "tr": "Periyot periyodik tablodaki yatay sıralardır ve katman sayısını verir; grup ise benzer kimyasal özellik gösteren dikey sütunlardır.",
-        "en": "A period is a horizontal row in the periodic table indicating the number of electron shells; a group is a vertical column of elements sharing similar chemical properties.",
-        "de": "Eine Periode ist eine horizontale Zeile im Periodensystem, die die Schalenanzahl angibt; eine Gruppe ist eine vertikale Spalte mit ähnlichen chemischen Eigenschaften.",
-        "fr": "Une période est une rangée horizontale du tableau périodique indiquant le nombre de couches électroniques ; un groupe est une colonne verticale d'éléments ayant des propriétés similaires.",
-        "ru": "Период — это горизонтальный ряд в периодической таблице, показывающий число электронных слоев; группа — это вертикальный столбец элементов со схожими свойствами.",
-        "ar": "الدورة هي صف أفقي في الجدول الدوري يشير إلى عدد المستويات الإلكترونية؛ المجموعة هي عمود رأسي لعناصر ذات خصائص متشابهة.",
-        "zh": "周期是周期表中的横行，表示电子层数；族是周期表中的纵列，表示具有相似化学性质的元素。",
-        "ku": "Periyod rêzên asoyî yên di tabloya periyodîk de ne û hejmara çînên elektronan nîşan didin; kom jî stûnên stûnî ne ku xwedî taybetmendiyên kîmyewî yên wekhev in."
+        "tr": "İzotopta proton sayıları aynı nötron farklı; izotonda nötron sayıları aynı proton farklıdır.",
+        "en": "In the isotope, the number of protons is the same and the number of neutrons is different; The number of neutrons in the isotone is the same, but the number of protons is different.",
+        "de": "Im Isotop ist die Anzahl der Protonen gleich und die Anzahl der Neutronen unterschiedlich; Die Anzahl der Neutronen im Isoton ist gleich, aber die Anzahl der Protonen ist unterschiedlich.",
+        "fr": "Dans l'isotope, le nombre de protons est le même et le nombre de neutrons est différent ; Le nombre de neutrons dans l’isotone est le même, mais le nombre de protons est différent.",
+        "ru": "В изотопе число протонов одинаково, а число нейтронов различно; Число нейтронов в изотоне одинаковое, а количество протонов разное.",
+        "ar": "في النظائر، عدد البروتونات هو نفسه وعدد النيوترونات مختلف؛ عدد النيوترونات في الأيزوتون هو نفسه، لكن عدد البروتونات مختلف.",
+        "zh": "同位素中，质子数相同，中子数不同；等位素中的中子数相同，但质子数不同。",
+        "ku": "Di îzotopê de hejmara protonan yek e û hejmara notronan jî cuda ye; Di îzotonê de hejmara notronan yek e, lê hejmara protonan cuda ye."
       }
     }
   ],
@@ -807,7 +807,7 @@ export const unit02: ChemistryUnitSeedData = {
           "ku": "1A Lithium nirxa IE1 ya herî kêm heye"
         },
         {
-          "tr": "2A Berilyum küresel simetriyle 3A yı geçer",
+          "tr": "2A Berilyum küresel simetriyle 3A'yı geçer",
           "en": "2A Beryllium exceeds 3A with spherical symmetry",
           "de": "2A Beryllium übersteigt 3A mit sphärischer Symmetrie",
           "fr": "Le béryllium 2A dépasse 3A avec une symétrie sphérique",
@@ -817,7 +817,7 @@ export const unit02: ChemistryUnitSeedData = {
           "ku": "2A Beryllium bi simetrîya gewherî ji 3A derbas dibe"
         },
         {
-          "tr": "5A Azot küresel simetriyle 6A yı geçer",
+          "tr": "5A Azot küresel simetriyle 6A'yı geçer",
           "en": "5A Nitrogen exceeds 6A with spherical symmetry",
           "de": "5A Stickstoff übersteigt 6A bei sphärischer Symmetrie",
           "fr": "L'azote 5A dépasse 6A avec une symétrie sphérique",
@@ -898,7 +898,7 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin01",
       "stem": {
-        "tr": "Baş grup elementi olan X in ardışık iyonlaşma enerjileri (kJ/mol): İE1: 496, İE2: 4562, İE3: 6912 dir. Buna göre X hangi gruptadır?",
+        "tr": "Baş grup elementi olan X'in ardışık iyonlaşma enerjileri (kJ/mol): İE1: 496, İE2: 4562, İE3: 6912'dir. Buna göre X hangi gruptadır?",
         "en": "The consecutive ionization energies (kJ/mol) of the main group element X are: İE1: 496, İE2: 4562, İE3: 6912. Accordingly, in which group is X?",
         "de": "Die aufeinanderfolgenden Ionisierungsenergien (kJ/mol) des Hauptgruppenelements",
         "fr": "Les énergies d'ionisation consécutives (kJ/mol) de l'élément principal du groupe X sont : İE1 : 496, İE2 : 4562, İE3 : 6912. Par conséquent, dans quel groupe se trouve X ?",
@@ -961,7 +961,7 @@ export const unit02: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "İE1 den İE2 ye geçişte yaklaşık 9.2 kat sıçrama vardır (496 -> 4562). Bu durum 1 değerlik elektronu olduğunu ve 1A grubunda bulunduğunu gösterir.",
+        "tr": "İE1'den İE2'ye geçişte yaklaşık 9.2 kat sıçrama vardır (496 -> 4562). Bu durum 1 değerlik elektronu olduğunu ve 1A grubunda bulunduğunu gösterir.",
         "en": "There is approximately a 9.2-fold jump in the transition from İE1 to İE2 (496 -> 4562). This indicates that it has 1 valence electron and is in group 1A.",
         "de": "Beim Übergang von İE1 zu İE2 (496 -> 4562) gibt es einen etwa 9,2-fachen Sprung. Dies zeigt an, dass es 1 Valenzelektron hat und zur Gruppe 1A gehört.",
         "fr": "Il y a un saut d'environ 9,2 fois dans la transition de İE1 à İE2 (496 -> 4562). Cela indique qu’il possède 1 électron de valence et qu’il appartient au groupe 1A.",
@@ -1050,14 +1050,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Atom ve Periyodik Sistem konusunu işlerken İzotop Atomlar üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Atom & Periodic System, which statement regarding Isotope Atoms represents the correct answer?",
-        "de": "Welche Aussage zu Isotopenatome stellt im Kontext von Atom und Periodensystem die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Atome et Système Périodique, quelle proposition sur Atomes isotopiques constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Атом и периодическая система», какой ответ относительно «Изотопные атомы» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الذرة والجدول الدوري\" مخبرياً، أي إجابة بخصوص \"ذرات النظائر\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“原子与周期系”实验探究与教学分析中，针对“同位素原子”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Atom û Sîstema Periyodîk\" de, kîjan bersiv derbarê \"Atomên Îzotop\" de rast e?"
+        "tr": "Kimya dersinde Atom ve Periyodik Sistem ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Atom & Periodic System, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Atom und Periodensystem: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Atome et Système Périodique, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Атом и периодическая система», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الذرة والجدول الدوري\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“原子与周期系”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Atom û Sîstema Periyodîk\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1126,14 +1126,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin04",
       "stem": {
-        "tr": "Kimya dersinde Atom ve Periyodik Sistem ünitesi incelenirken İzobar Atomlar ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Atom & Periodic System, which of the following propositions concerning Isobar Atoms is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Atom und Periodensystem: Welche Behauptung bezüglich Isobare Atome entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Atome et Système Périodique, laquelle des affirmations suivantes concernant Atomes isobares est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Атом и периодическая система», какое из следующих суждений о «Изобарные атомы» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الذرة والجدول الدوري\"، أي من الأحكام التالية المتعلقة بـ \"ذرات الأيزوبار\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“原子与周期系”核心规律时，下列关于“等压原子”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Atom û Sîstema Periyodîk\" tê kirin, kîjan daraza li ser \"Atomên Îsobar\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Atom ve Periyodik Sistem konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Atom & Periodic System?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Atom und Periodensystem zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Atome et Système Périodique ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Атом и периодическая система»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الذرة والجدول الدوري\"؟",
+        "zh": "根据“原子与周期系”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Atom û Sîstema Periyodîk\" de rast e?"
       },
       "options": [
         {
@@ -1202,14 +1202,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Atom ve Periyodik Sistem konusundaki temel kimyasal kurallar çerçevesinde Metaller kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes metals within the fundamental principles of Atom & Periodic System?",
-        "de": "Welche Aussage beschreibt das Konzept Metalle im Rahmen von Atom und Periodensystem am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement métaux selon les lois de Atome et Système Périodique?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «металлы» в рамках темы «Атом и периодическая система»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"المعادن\" ضمن قواعد \"الذرة والجدول الدوري\"؟",
-        "zh": "根据“原子与周期系”的基本化学原理，下列哪项阐述能最准确地界定“金属”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"metals\" di çarçoveya prensîbên \"Atom û Sîstema Periyodîk\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Atom ve Periyodik Sistem sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Atom & Periodic System, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Atom und Periodensystem: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Atome et Système Périodique, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Атом и периодическая система», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الذرة والجدول الدوري\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“原子与周期系”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Atom û Sîstema Periyodîk\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1278,14 +1278,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Atom ve Periyodik Sistem sorularında karşılaşılan Elektronegatiflik konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Atom & Periodic System, which assertion regarding Electronegativity is correct?",
-        "de": "Welche Feststellung bezüglich Elektronegativität ist nach den chemischen Gesetzmäßigkeiten von Atom und Periodensystem richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Atome et Système Périodique, quelle affirmation concernant Électronégativité est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Атом и периодическая система», какое положение относительно «Электроотрицательность» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الذرة والجدول الدوري\"، أي حكم متعلق بـ \"السالبية الكهربية\" يعتبر صحيحاً؟",
-        "zh": "在高考“原子与周期系”经典考题中，下列有关“电负性”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Atom û Sîstema Periyodîk\" de, kîjan daraza li ser \"Electronegativity\" rast e?"
+        "tr": "Aşağıda Atom ve Periyodik Sistem ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Atom & Periodic System, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Atom und Periodensystem: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Atome et Système Périodique, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Атом и периодическая система», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الذرة والجدول الدوري\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“原子与周期系”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Atom û Sîstema Periyodîk\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1354,14 +1354,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin07",
       "stem": {
-        "tr": "Aşağıda Atom ve Periyodik Sistem ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Katyon Yarıçapı ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Atom & Periodic System, which statement about Cation Radius is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Atom und Periodensystem: Welche Aussage über Kationenradius ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Atome et Système Périodique, quelle affirmation relative à Rayon des cations est exacte?",
-        "ru": "На основе фундаментальных положений темы «Атом и периодическая система», какое суждение о «Катионный радиус» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الذرة والجدول الدوري\"، أي عبارة حول \"نصف قطر الكاتيون\" صحيحة؟",
-        "zh": "基于“原子与周期系”的基础化学知识体系，下列关于“阳离子半径”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Atom û Sîstema Periyodîk\", kîjan gotin derbarê \"Radyoya Cation\" de rast e?"
+        "tr": "Atom ve Periyodik Sistem konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Atom & Periodic System, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Atom und Periodensystem: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Atome et Système Périodique, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Атом и периодическая система», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الذرة والجدول الدوري\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“原子与周期系”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Atom û Sîstema Periyodîk\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1430,14 +1430,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin08",
       "stem": {
-        "tr": "Atom ve Periyodik Sistem konusu kapsamında Periyot ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Atom & Periodic System, which of the following findings regarding Period is scientifically verified?",
-        "de": "Im Rahmen der Einheit Atom und Periodensystem: Welcher der folgenden Befunde zu Periode ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Atome et Système Périodique, laquelle des constatations suivantes concernant Période est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Атом и периодическая система», какой из следующих выводов относительно «Период» научно подтверждён?",
-        "ar": "في سياق موضوع \"الذرة والجدول الدوري\"، أي من النتائج التالية المتعلقة بـ \"الدورة\" مثبتة علمياً؟",
-        "zh": "在“原子与周期系”主题范畴内，下列关于“周期”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Atom û Sîstema Periyodîk\" de, kîjan ji van encamên li ser \"Periyod\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Atom ve Periyodik Sistem ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Atom & Periodic System, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Atom und Periodensystem: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Atome et Système Périodique, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Атом и периодическая система», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الذرة والجدول الدوري\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“原子与周期系”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Atom û Sîstema Periyodîk\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1506,14 +1506,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Atom ve Periyodik Sistem ünitesinde ele alınan İzotop hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Atom & Periodic System, which statement about isotope is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Atom und Periodensystem: Welche Aussage über Isotop ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Atome et Système Périodique, quelle affirmation relative à isotope est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Атом и периодическая система», какое утверждение о «изотоп» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الذرة والجدول الدوري\"، أي عبارة حول \"النظائر\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“原子与周期系”单元中关于“同位素”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Atom û Sîstema Periyodîk\", kîjan gotin li ser \"îzotop\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Atom ve Periyodik Sistem konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Atom & Periodic System, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Atom und Periodensystem die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Atome et Système Périodique, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Атом и периодическая система», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الذرة والجدول الدوري\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“原子与周期系”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Atom û Sîstema Periyodîk\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1582,14 +1582,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Atom ve Periyodik Sistem konusunu işlerken İyonlaşma Enerjisi üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Atom & Periodic System, which statement regarding Ionization Energy represents the correct answer?",
-        "de": "Welche Aussage zu Ionisierungsenergie stellt im Kontext von Atom und Periodensystem die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Atome et Système Périodique, quelle proposition sur Énergie d'ionisation constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Атом и периодическая система», какой ответ относительно «Энергия ионизации» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الذرة والجدول الدوري\" مخبرياً، أي إجابة بخصوص \"طاقة التأين\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“原子与周期系”实验探究与教学分析中，针对“电离能”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Atom û Sîstema Periyodîk\" de, kîjan bersiv derbarê \"Ionization Energy\" de rast e?"
+        "tr": "Kimya dersinde Atom ve Periyodik Sistem ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Atom & Periodic System, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Atom und Periodensystem: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Atome et Système Périodique, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Атом и периодическая система», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الذرة والجدول الدوري\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“原子与周期系”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Atom û Sîstema Periyodîk\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1633,7 +1633,7 @@ export const unit02: ChemistryUnitSeedData = {
           "ku": "Enerjiya îyonîzasyona duyemîn her dem ji enerjiya ionîzasyona yekem piçûktir e."
         },
         {
-          "tr": "Bir periyotta iyonlaşma enerjisi sıralamasında 2A ve 5A küresel simetriden dolayı 3A ve 6A dan büyüktür.",
+          "tr": "Bir periyotta iyonlaşma enerjisi sıralamasında 2A ve 5A küresel simetriden dolayı 3A ve 6A'dan büyüktür.",
           "en": "In the order of ionization energy in a period, 2A and 5A are greater than 3A and 6A due to spherical symmetry.",
           "de": "In der Reihenfolge der Ionisierungsenergie in einer Periode sind 2A und 5A aufgrund der Kugelsymmetrie größer als 3A und 6A.",
           "fr": "Dans l'ordre de l'énergie d'ionisation sur une période, 2A et 5A sont supérieurs à 3A et 6A en raison de la symétrie sphérique.",
@@ -1645,7 +1645,7 @@ export const unit02: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Bir periyotta iyonlaşma enerjisi sıralamasında 2A ve 5A küresel simetriden dolayı 3A ve 6A dan büyüktür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Bir periyotta iyonlaşma enerjisi sıralamasında 2A ve 5A küresel simetriden dolayı 3A ve 6A'dan büyüktür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"In the order of ionization energy in a period, 2A and 5A are greater than 3A and 6A due to spherical symmetry.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"In der Reihenfolge der Ionisierungsenergie in einer Periode sind 2A und 5A aufgrund der Kugelsymmetrie größer als 3A und 6A.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Dans l'ordre de l'énergie d'ionisation sur une période, 2A et 5A sont supérieurs à 3A et 6A en raison de la symétrie sphérique.\". Notion fondamentale du programme officiel de chimie.",
@@ -1658,14 +1658,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin11",
       "stem": {
-        "tr": "Kimya dersinde Atom ve Periyodik Sistem ünitesi incelenirken İzotop Atomlar ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Atom & Periodic System, which of the following propositions concerning Isotope Atoms is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Atom und Periodensystem: Welche Behauptung bezüglich Isotopenatome entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Atome et Système Périodique, laquelle des affirmations suivantes concernant Atomes isotopiques est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Атом и периодическая система», какое из следующих суждений о «Изотопные атомы» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الذرة والجدول الدوري\"، أي من الأحكام التالية المتعلقة بـ \"ذرات النظائر\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“原子与周期系”核心规律时，下列关于“同位素原子”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Atom û Sîstema Periyodîk\" tê kirin, kîjan daraza li ser \"Atomên Îzotop\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Atom ve Periyodik Sistem konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Atom & Periodic System?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Atom und Periodensystem zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Atome et Système Périodique ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Атом и периодическая система»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الذرة والجدول الدوري\"؟",
+        "zh": "根据“原子与周期系”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Atom û Sîstema Periyodîk\" de rast e?"
       },
       "options": [
         {
@@ -1734,14 +1734,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Atom ve Periyodik Sistem konusundaki temel kimyasal kurallar çerçevesinde İzobar Atomlar kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Isobar Atoms within the fundamental principles of Atom & Periodic System?",
-        "de": "Welche Aussage beschreibt das Konzept Isobare Atome im Rahmen von Atom und Periodensystem am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Atomes isobares selon les lois de Atome et Système Périodique?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Изобарные атомы» в рамках темы «Атом и периодическая система»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"ذرات الأيزوبار\" ضمن قواعد \"الذرة والجدول الدوري\"؟",
-        "zh": "根据“原子与周期系”的基本化学原理，下列哪项阐述能最准确地界定“等压原子”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Atomên Îsobar\" di çarçoveya prensîbên \"Atom û Sîstema Periyodîk\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Atom ve Periyodik Sistem sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Atom & Periodic System, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Atom und Periodensystem: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Atome et Système Périodique, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Атом и периодическая система», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الذرة والجدول الدوري\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“原子与周期系”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Atom û Sîstema Periyodîk\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1810,14 +1810,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Atom ve Periyodik Sistem sorularında karşılaşılan Metaller konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Atom & Periodic System, which assertion regarding metals is correct?",
-        "de": "Welche Feststellung bezüglich Metalle ist nach den chemischen Gesetzmäßigkeiten von Atom und Periodensystem richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Atome et Système Périodique, quelle affirmation concernant métaux est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Атом и периодическая система», какое положение относительно «металлы» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الذرة والجدول الدوري\"، أي حكم متعلق بـ \"المعادن\" يعتبر صحيحاً؟",
-        "zh": "在高考“原子与周期系”经典考题中，下列有关“金属”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Atom û Sîstema Periyodîk\" de, kîjan daraza li ser \"metals\" rast e?"
+        "tr": "Aşağıda Atom ve Periyodik Sistem ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Atom & Periodic System, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Atom und Periodensystem: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Atome et Système Périodique, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Атом и периодическая система», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الذرة والجدول الدوري\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“原子与周期系”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Atom û Sîstema Periyodîk\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1886,14 +1886,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin14",
       "stem": {
-        "tr": "Aşağıda Atom ve Periyodik Sistem ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Elektronegatiflik ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Atom & Periodic System, which statement about Electronegativity is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Atom und Periodensystem: Welche Aussage über Elektronegativität ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Atome et Système Périodique, quelle affirmation relative à Électronégativité est exacte?",
-        "ru": "На основе фундаментальных положений темы «Атом и периодическая система», какое суждение о «Электроотрицательность» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الذرة والجدول الدوري\"، أي عبارة حول \"السالبية الكهربية\" صحيحة؟",
-        "zh": "基于“原子与周期系”的基础化学知识体系，下列关于“电负性”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Atom û Sîstema Periyodîk\", kîjan gotin derbarê \"Electronegativity\" de rast e?"
+        "tr": "Atom ve Periyodik Sistem konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Atom & Periodic System, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Atom und Periodensystem: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Atome et Système Périodique, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Атом и периодическая система», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الذرة والجدول الدوري\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“原子与周期系”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Atom û Sîstema Periyodîk\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1962,14 +1962,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin15",
       "stem": {
-        "tr": "Atom ve Periyodik Sistem konusu kapsamında Katyon Yarıçapı ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Atom & Periodic System, which of the following findings regarding Cation Radius is scientifically verified?",
-        "de": "Im Rahmen der Einheit Atom und Periodensystem: Welcher der folgenden Befunde zu Kationenradius ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Atome et Système Périodique, laquelle des constatations suivantes concernant Rayon des cations est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Атом и периодическая система», какой из следующих выводов относительно «Катионный радиус» научно подтверждён?",
-        "ar": "في سياق موضوع \"الذرة والجدول الدوري\"، أي من النتائج التالية المتعلقة بـ \"نصف قطر الكاتيون\" مثبتة علمياً؟",
-        "zh": "在“原子与周期系”主题范畴内，下列关于“阳离子半径”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Atom û Sîstema Periyodîk\" de, kîjan ji van encamên li ser \"Radyoya Cation\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Atom ve Periyodik Sistem ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Atom & Periodic System, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Atom und Periodensystem: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Atome et Système Périodique, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Атом и периодическая система», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الذرة والجدول الدوري\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“原子与周期系”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Atom û Sîstema Periyodîk\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2038,14 +2038,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Atom ve Periyodik Sistem ünitesinde ele alınan Periyot hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Atom & Periodic System, which statement about Period is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Atom und Periodensystem: Welche Aussage über Periode ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Atome et Système Périodique, quelle affirmation relative à Période est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Атом и периодическая система», какое утверждение о «Период» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الذرة والجدول الدوري\"، أي عبارة حول \"الدورة\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“原子与周期系”单元中关于“周期”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Atom û Sîstema Periyodîk\", kîjan gotin li ser \"Periyod\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Atom ve Periyodik Sistem konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Atom & Periodic System, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Atom und Periodensystem die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Atome et Système Périodique, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Атом и периодическая система», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الذرة والجدول الدوري\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“原子与周期系”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Atom û Sîstema Periyodîk\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

@@ -25,6 +25,7 @@ import { UI_TRANSLATIONS } from '../../i18n/translations';
 import type { ChemistryUnitSeedData } from '../../data/units/types';
 import type { LanguageCode, QuestionDiagramSpec } from '../../types/chemistry';
 import { ChemicalDiagram } from '../diagrams/ChemicalDiagram';
+import { formatChemText } from '../common/ChemFormula';
 
 export interface UnitSlideDeckModalProps {
   unit: ChemistryUnitSeedData | null;
@@ -377,7 +378,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                       <span className="formula-label">{gf.label[lang] || gf.label.tr}</span>
                     </div>
                     <div className="formula-expression">
-                      <code>{gf.expression[lang] || gf.expression.tr}</code>
+                      <bdi dir="ltr"><code>{formatChemText(gf.expression[lang] || gf.expression.tr)}</code></bdi>
                     </div>
                     <p className="formula-exam-note">
                       <strong>{s.examNoteLabel}:</strong> {gf.examNote[lang] || gf.examNote.tr}
@@ -574,7 +575,9 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                   </button>
                 </div>
 
-                <p className="twin-stem">{currentTwin.stem[lang] || currentTwin.stem.tr}</p>
+                <p className="twin-stem">
+                  <bdi dir="ltr">{formatChemText(currentTwin.stem[lang] || currentTwin.stem.tr)}</bdi>
+                </p>
 
                 <div className="twin-options-list">
                   {currentTwin.options.map((opt, oIdx) => {
@@ -594,7 +597,9 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                         onClick={() => setSelectedTwinOpt(oIdx)}
                       >
                         <span className="opt-letter">{String.fromCharCode(65 + oIdx)}</span>
-                        <span className="opt-text">{opt[lang] || opt.tr}</span>
+                        <span className="opt-text">
+                          <bdi dir="ltr">{formatChemText(opt[lang] || opt.tr)}</bdi>
+                        </span>
                       </button>
                     );
                   })}
@@ -603,7 +608,8 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
                 {selectedTwinOpt !== null && (
                   <div className="twin-explanation-box">
                     <p className="twin-explanation-text">
-                      <strong>Çözüm:</strong> {currentTwin.explanation[lang] || currentTwin.explanation.tr}
+                      <strong>Çözüm:</strong>{' '}
+                      <bdi dir="ltr">{formatChemText(currentTwin.explanation[lang] || currentTwin.explanation.tr)}</bdi>
                     </p>
                   </div>
                 )}

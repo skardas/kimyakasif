@@ -76,7 +76,7 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-f03",
       "fact": {
-        "tr": "25 °C de pH < 7 asidik, pH = 7 nötr, pH > 7 baziktir.",
+        "tr": "25 °C'de pH < 7 asidik, pH = 7 nötr, pH > 7 baziktir.",
         "en": "At 25 °C, pH < 7 is acidic, pH = 7 is neutral, pH > 7 is basic.",
         "de": "Bei 25 °C ist pH < 7 sauer, pH = 7 ist neutral, pH > 7 ist basisch.",
         "fr": "À 25 °C, un pH < 7 est acide, un pH = 7 est neutre, un pH > 7 est basique.",
@@ -86,7 +86,7 @@ export const unit09: ChemistryUnitSeedData = {
         "ku": "Di 25 °C de, pH <7 asîd e, pH = 7 bêalî ye, pH > 7 bingehîn e."
       },
       "trap": {
-        "tr": "25 °C de pH değeri 8 olan bir çözelti asidiktir.",
+        "tr": "25 °C'de pH değeri 8 olan bir çözelti asidiktir.",
         "en": "A solution with a pH of 8 at 25 °C is acidic.",
         "de": "Eine Lösung mit einem pH-Wert von 8 bei 25 °C ist sauer.",
         "fr": "Une solution avec un pH de 8 à 25 °C est acide.",
@@ -258,13 +258,13 @@ export const unit09: ChemistryUnitSeedData = {
       },
       "trap": {
         "tr": "Çamaşır suyu ve tuz ruhu karıştırıldığında temizleme gücü iki katına çıkar.",
-        "en": "When bleach and salt spirit are mixed, the cleaning power is doubled.",
-        "de": "Wenn Bleichmittel und Salzbenzin gemischt werden, verdoppelt sich die Reinigungskraft.",
-        "fr": "Lorsque l’eau de Javel et l’alcool salin sont mélangés, le pouvoir nettoyant est doublé.",
-        "ru": "При смешивании отбеливателя и солевого спирта эффективность очистки увеличивается вдвое.",
+        "en": "When bleach and spirit of salt (hydrochloric acid) are mixed, the cleaning power doubles.",
+        "de": "Wenn Bleichmittel und Salzsäure gemischt werden, verdoppelt sich die Reinigungskraft.",
+        "fr": "Lorsque l'eau de Javel et l'esprit de sel sont mélangés, le pouvoir nettoyant double.",
+        "ru": "При смешивании отбеливателя и соляной кислоты чистящая способность удваивается.",
         "ar": "عندما يتم خلط المبيض وروح الملح، تتضاعف قوة التنظيف.",
-        "zh": "当漂白剂和盐精混合时，清洁力加倍。",
-        "ku": "Dema ku giyana spî û xwê tevlihev dibin, hêza paqijkirinê ducar dibe."
+        "zh": "当漂白水与盐酸混合时，清洁力加倍。",
+        "ku": "Dema ku ava çilşoyê û ruhê xwê bên tevlihevkirin, hêza paqijkirinê du qat zêde dibe."
       }
     },
     {
@@ -595,7 +595,7 @@ export const unit09: ChemistryUnitSeedData = {
         "ku": "hîdrolîz"
       },
       "distinction": {
-        "tr": "Nötralleşme H+ ile OH- ın su oluşturmasıdır; hidroliz zayıftan gelen iyonun su ile tepkimeye girerek ortamın pH ını değiştirmesidir.",
+        "tr": "Nötralleşme H+ ile OH-'ın su oluşturmasıdır; hidroliz zayıftan gelen iyonun su ile tepkimeye girerek ortamın pH'ını değiştirmesidir.",
         "en": "Neutralization is the formation of water between H+ and OH-; Hydrolysis is when the ion coming from the weak reacts with water and changes the pH of the environment.",
         "de": "Unter Neutralisation versteht man die Bildung von Wasser zwischen H+ und OH-; Bei der Hydrolyse reagiert das von der Schwachstelle kommende Ion mit Wasser und verändert den pH-Wert der Umgebung.",
         "fr": "La neutralisation est la formation d'eau entre H+ et OH- ; L'hydrolyse se produit lorsque l'ion provenant du faible réagit avec l'eau et modifie le pH de l'environnement.",
@@ -608,67 +608,67 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-c07",
       "conceptA": {
-        "tr": "Tam Soy Metal",
-        "en": "Noble Metal",
-        "de": "Edelmetall",
-        "fr": "Métal noble",
-        "ru": "Благородный металл",
-        "ar": "فلز نبيل",
-        "zh": "贵金属",
-        "ku": "Metala Esîl"
+        "tr": "Aktif Metal",
+        "en": "Active Metal",
+        "de": "Aktives Metall",
+        "fr": "Métal actif",
+        "ru": "Активный металл",
+        "ar": "المعدن النشط",
+        "zh": "活性金属",
+        "ku": "Active Metal"
       },
       "conceptB": {
         "tr": "Yarı Soy Metal",
-        "en": "Semi-Noble Metal",
-        "de": "Halbedelmetall",
+        "en": "Semi Noble Metal",
+        "de": "Halbedles Metall",
         "fr": "Métal semi-noble",
         "ru": "Полублагородный металл",
-        "ar": "فلز شبه نبيل",
+        "ar": "شبه المعدن النبيل",
         "zh": "半贵金属",
-        "ku": "Metala Nîv-Esîl"
+        "ku": "Semi Noble Metal"
       },
       "distinction": {
-        "tr": "Tam soy metaller (Pt, Au) kral suyu hariç hiçbir asitle tepkime vermez; yarı soy metaller (Cu, Ag, Hg) oksijenli kuvvetli asitlerle tepkimeye girer.",
-        "en": "Noble metals (Pt, Au) resist all single acids except aqua regia; semi-noble metals (Cu, Ag, Hg) react with strong oxidizing acids like HNO3 and H2SO4.",
-        "de": "Edelmetalle (Pt, Au) reagieren nur mit Königswasser; Halbedelmetalle (Cu, Ag, Hg) reagieren mit oxidierenden Säuren wie HNO3 und H2SO4.",
-        "fr": "Les métaux nobles (Pt, Au) ne réagissent qu'avec l'eau régale ; les métaux semi-nobles (Cu, Ag, Hg) réagissent avec les acides oxydants forts.",
-        "ru": "Благородные металлы (Pt, Au) растворяются только в царской водке; полублагородные металлы (Cu, Ag, Hg) реагируют с кислотами-окислителями.",
-        "ar": "الفلزات النبيلة (Pt, Au) لا تتفاعل إلا مع الماء الملكي؛ الفلزات شبه النبيلة (Cu, Ag, Hg) تتفاعل مع الأحماض المؤكسدة القوية.",
-        "zh": "贵金属（铂、金）除王水外不与任何单一酸反应；半贵金属（铜、银、汞）可与强氧化性酸反应。",
-        "ku": "Metalên esîl (Pt, Au) ji xeynî ava padîşah bi tu asîdê re reaksiyonê nadin; metalên nîv-esîl (Cu, Ag, Hg) bi asîdên bihêz ên oksîjenî re dikevin reaksiyonê."
+        "tr": "Aktif metal asitle H2 gazı verir; yarı soy metal (Cu, Ag, Hg) oksijensiz asitle tepkime vermez, oksijenli asitle NO/NO2/SO2 verir.",
+        "en": "The active metal gives H2 gas with acid; Semi-noble metal (Cu, Ag, Hg) does not react with oxygen-free acid, but gives NO/NO2/SO2 with oxygenated acid.",
+        "de": "Das aktive Metall gibt mit Säure H2-Gas ab; Halbedelmetalle (Cu, Ag, Hg) reagieren nicht mit sauerstofffreier Säure, sondern ergeben mit sauerstoffhaltiger Säure NO/NO2/SO2.",
+        "fr": "Le métal actif donne du gaz H2 avec l'acide ; Le métal semi-noble (Cu, Ag, Hg) ne réagit pas avec l'acide sans oxygène, mais donne du NO/NO2/SO2 avec l'acide oxygéné.",
+        "ru": "Активный металл дает с кислотой газ H2; Полублагородные металлы (Cu, Ag, Hg) не реагируют с бескислородной кислотой, но дают NO/NO2/SO2 с кислородсодержащей кислотой.",
+        "ar": "يعطي المعدن النشط غاز H2 مع الحمض؛ لا يتفاعل المعدن شبه النبيل (Cu، Ag، Hg) مع الحمض الخالي من الأكسجين، ولكنه يعطي NO/NO2/SO2 مع الحمض المؤكسج.",
+        "zh": "活性金属与酸作用放出H2气体；半贵金属（Cu、Ag、Hg）不与无氧酸反应，但与含氧酸反应生成NO/NO2/SO2。",
+        "ku": "Metala çalak gaza H2 bi asîdê dide; Metala nîv-esîl (Cu, Ag, Hg) bi asîda bêoksîjen re reaksiyonê nake, lê bi asîda oksîjenkirî re NO/NO2/SO2 dide."
       }
     },
     {
       "id": "u09-c08",
       "conceptA": {
-        "tr": "pH Değeri",
-        "en": "pH Value",
-        "de": "pH-Wert",
-        "fr": "Valeur du pH",
-        "ru": "Значение pH",
-        "ar": "قيمة الرقم الهيدروجيني (pH)",
-        "zh": "pH值",
-        "ku": "Nirxê pH"
+        "tr": "Aktif Metal",
+        "en": "Active Metal",
+        "de": "Aktives Metall",
+        "fr": "Métal actif",
+        "ru": "Активный металл",
+        "ar": "المعدن النشط",
+        "zh": "活性金属",
+        "ku": "Active Metal"
       },
       "conceptB": {
-        "tr": "pOH Değeri",
-        "en": "pOH Value",
-        "de": "pOH-Wert",
-        "fr": "Valeur du pOH",
-        "ru": "Значение pOH",
-        "ar": "قيمة pOH",
-        "zh": "pOH值",
-        "ku": "Nirxê pOH"
+        "tr": "Yarı Soy Metal",
+        "en": "Semi Noble Metal",
+        "de": "Halbedles Metall",
+        "fr": "Métal semi-noble",
+        "ru": "Полублагородный металл",
+        "ar": "شبه المعدن النبيل",
+        "zh": "半贵金属",
+        "ku": "Semi Noble Metal"
       },
       "distinction": {
-        "tr": "pH hidrojen iyonu derişiminin eksi logaritmasıdır (pH < 7 asidik); pOH hidroksit derişiminin eksi logaritmasıdır ve 25 °C de toplamları 14 tür.",
-        "en": "pH is the negative logarithm of H+ concentration (pH < 7 is acidic); pOH measures OH- concentration, and their sum equals 14 at 25 °C.",
-        "de": "Der pH-Wert ist der negative Logarithmus der H+-Konzentration (pH < 7 sauer); der pOH-Wert misst OH-, und ihre Summe ist 14 bei 25 °C.",
-        "fr": "Le pH est le logarithme négatif de la concentration en ions H+ ; le pOH mesure les ions OH-, et leur somme est égale à 14 à 25 °C.",
-        "ru": "pH — отрицательный логарифм концентрации ионов H+ (pH < 7 кислая среда); pOH отражает концентрацию ионов OH-, а их сумма равна 14 при 25 °C.",
-        "ar": "الرقم الهيدروجيني pH هو سالب لوغاريتم تركيز أيونات الهيدروجين؛ pOH يقيس تركيز أيونات الهيدروكسيد، ومجموعهما يساوي 14 عند 25 درجة مئوية.",
-        "zh": "pH是氢离子浓度的负对数（pH < 7为酸性）；pOH反映氢氧根离子浓度，25 °C时二者之和恒等于14。",
-        "ku": "pH logarîtmaya neyînî ya koma îyonên H+ ye (pH < 7 asîdî ye); pOH koma îyonên OH- dipîve, û koma wan li 25 °C dibe 14."
+        "tr": "Aktif metal asitle H2 gazı verir; yarı soy metal (Cu, Ag, Hg) oksijensiz asitle tepkime vermez, oksijenli asitle NO/NO2/SO2 verir.",
+        "en": "The active metal gives H2 gas with acid; Semi-noble metal (Cu, Ag, Hg) does not react with oxygen-free acid, but gives NO/NO2/SO2 with oxygenated acid.",
+        "de": "Das aktive Metall gibt mit Säure H2-Gas ab; Halbedelmetalle (Cu, Ag, Hg) reagieren nicht mit sauerstofffreier Säure, sondern ergeben mit sauerstoffhaltiger Säure NO/NO2/SO2.",
+        "fr": "Le métal actif donne du gaz H2 avec l'acide ; Le métal semi-noble (Cu, Ag, Hg) ne réagit pas avec l'acide sans oxygène, mais donne du NO/NO2/SO2 avec l'acide oxygéné.",
+        "ru": "Активный металл дает с кислотой газ H2; Полублагородные металлы (Cu, Ag, Hg) не реагируют с бескислородной кислотой, но дают NO/NO2/SO2 с кислородсодержащей кислотой.",
+        "ar": "يعطي المعدن النشط غاز H2 مع الحمض؛ لا يتفاعل المعدن شبه النبيل (Cu، Ag، Hg) مع الحمض الخالي من الأكسجين، ولكنه يعطي NO/NO2/SO2 مع الحمض المؤكسج.",
+        "zh": "活性金属与酸作用放出H2气体；半贵金属（Cu、Ag、Hg）不与无氧酸反应，但与含氧酸反应生成NO/NO2/SO2。",
+        "ku": "Metala çalak gaza H2 bi asîdê dide; Metala nîv-esîl (Cu, Ag, Hg) bi asîda bêoksîjen re reaksiyonê nake, lê bi asîda oksîjenkirî re NO/NO2/SO2 dide."
       }
     }
   ],
@@ -852,7 +852,7 @@ export const unit09: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Saf suyun pH değeri 7 dir",
+          "tr": "Saf suyun pH değeri 7'dir",
           "en": "The pH value of pure water is 7",
           "de": "Der pH-Wert von reinem Wasser beträgt 7",
           "fr": "La valeur du pH de l'eau pure est de 7",
@@ -1050,14 +1050,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Asitler, Bazlar ve Tuzlar konusunu işlerken Kuvvetli Asit üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Acids, Bases & Salts, which statement regarding Strong Acid represents the correct answer?",
-        "de": "Welche Aussage zu Starke Säure stellt im Kontext von Säuren, Basen & Salze die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Acides, Bases & Sels, quelle proposition sur Acide Fort constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Кислоты, основания и соли», какой ответ относительно «Сильная кислота» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الأحماض والقواعد والأملاح\" مخبرياً، أي إجابة بخصوص \"حمض قوي\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“酸、碱和盐”实验探究与教学分析中，针对“强酸”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Asîd, Baz û Xwê\" de, kîjan bersiv derbarê \"Asîda xurt\" de rast e?"
+        "tr": "Kimya dersinde Asitler, Bazlar ve Tuzlar ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Acids, Bases & Salts, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Säuren, Basen & Salze: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Acides, Bases & Sels, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Кислоты, основания и соли», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الأحماض والقواعد والأملاح\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“酸、碱和盐”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Asîd, Baz û Xwê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1081,7 +1081,7 @@ export const unit09: ChemistryUnitSeedData = {
           "ku": "Dema ku asîd li ser kevirê kilsinî tê rijandin, gaza O2 derdikeve."
         },
         {
-          "tr": "25 °C de pH < 7 asidik, pH = 7 nötr, pH > 7 baziktir.",
+          "tr": "25 °C'de pH < 7 asidik, pH = 7 nötr, pH > 7 baziktir.",
           "en": "At 25 °C, pH < 7 is acidic, pH = 7 is neutral, pH > 7 is basic.",
           "de": "Bei 25 °C ist pH < 7 sauer, pH = 7 ist neutral, pH > 7 ist basisch.",
           "fr": "À 25 °C, un pH < 7 est acide, un pH = 7 est neutre, un pH > 7 est basique.",
@@ -1113,7 +1113,7 @@ export const unit09: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"25 °C de pH < 7 asidik, pH = 7 nötr, pH > 7 baziktir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"25 °C'de pH < 7 asidik, pH = 7 nötr, pH > 7 baziktir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"At 25 °C, pH < 7 is acidic, pH = 7 is neutral, pH > 7 is basic.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Bei 25 °C ist pH < 7 sauer, pH = 7 ist neutral, pH > 7 ist basisch.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"À 25 °C, un pH < 7 est acide, un pH = 7 est neutre, un pH > 7 est basique.\". Notion fondamentale du programme officiel de chimie.",
@@ -1126,14 +1126,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin04",
       "stem": {
-        "tr": "Kimya dersinde Asitler, Bazlar ve Tuzlar ünitesi incelenirken Asidik Tuz ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Acids, Bases & Salts, which of the following propositions concerning Acidic Salt is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Säuren, Basen & Salze: Welche Behauptung bezüglich Saures Salz entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Acides, Bases & Sels, laquelle des affirmations suivantes concernant Sel acide est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Кислоты, основания и соли», какое из следующих суждений о «Кислотная соль» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الأحماض والقواعد والأملاح\"، أي من الأحكام التالية المتعلقة بـ \"ملح حمضي\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“酸、碱和盐”核心规律时，下列关于“酸性盐”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Asîd, Baz û Xwê\" tê kirin, kîjan daraza li ser \"Xwêya Asîdî\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Asitler, Bazlar ve Tuzlar konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Acids, Bases & Salts?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Säuren, Basen & Salze zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Acides, Bases & Sels ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Кислоты, основания и соли»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الأحماض والقواعد والأملاح\"؟",
+        "zh": "根据“酸、碱和盐”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Asîd, Baz û Xwê\" de rast e?"
       },
       "options": [
         {
@@ -1148,13 +1148,13 @@ export const unit09: ChemistryUnitSeedData = {
         },
         {
           "tr": "Çamaşır suyu ve tuz ruhu karıştırıldığında temizleme gücü iki katına çıkar.",
-          "en": "When bleach and salt spirit are mixed, the cleaning power is doubled.",
-          "de": "Wenn Bleichmittel und Salzbenzin gemischt werden, verdoppelt sich die Reinigungskraft.",
-          "fr": "Lorsque l’eau de Javel et l’alcool salin sont mélangés, le pouvoir nettoyant est doublé.",
-          "ru": "При смешивании отбеливателя и солевого спирта эффективность очистки увеличивается вдвое.",
+          "en": "When bleach and spirit of salt (hydrochloric acid) are mixed, the cleaning power doubles.",
+          "de": "Wenn Bleichmittel und Salzsäure gemischt werden, verdoppelt sich die Reinigungskraft.",
+          "fr": "Lorsque l'eau de Javel et l'esprit de sel sont mélangés, le pouvoir nettoyant double.",
+          "ru": "При смешивании отбеливателя и соляной кислоты чистящая способность удваивается.",
           "ar": "عندما يتم خلط المبيض وروح الملح، تتضاعف قوة التنظيف.",
-          "zh": "当漂白剂和盐精混合时，清洁力加倍。",
-          "ku": "Dema ku giyana spî û xwê tevlihev dibin, hêza paqijkirinê ducar dibe."
+          "zh": "当漂白水与盐酸混合时，清洁力加倍。",
+          "ku": "Dema ku ava çilşoyê û ruhê xwê bên tevlihevkirin, hêza paqijkirinê du qat zêde dibe."
         },
         {
           "tr": "CH3COONa tuzu asidiktir.",
@@ -1202,14 +1202,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Asitler, Bazlar ve Tuzlar konusundaki temel kimyasal kurallar çerçevesinde Turnusol İndikatörü kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Litmus Indicator within the fundamental principles of Acids, Bases & Salts?",
-        "de": "Welche Aussage beschreibt das Konzept Lackmus-Indikator im Rahmen von Säuren, Basen & Salze am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Indicateur décisif selon les lois de Acides, Bases & Sels?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Лакмусовый индикатор» в рамках темы «Кислоты, основания и соли»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"مؤشر عباد الشمس\" ضمن قواعد \"الأحماض والقواعد والأملاح\"؟",
-        "zh": "根据“酸、碱和盐”的基本化学原理，下列哪项阐述能最准确地界定“石蕊指示剂”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Ltmus Indicator\" di çarçoveya prensîbên \"Asîd, Baz û Xwê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Asitler, Bazlar ve Tuzlar sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Acids, Bases & Salts, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Säuren, Basen & Salze: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Acides, Bases & Sels, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Кислоты, основания и соли», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الأحماض والقواعد والأملاح\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“酸、碱和盐”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Asîd, Baz û Xwê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1278,14 +1278,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Asitler, Bazlar ve Tuzlar sorularında karşılaşılan Nötralleşme konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Acids, Bases & Salts, which assertion regarding neutralization is correct?",
-        "de": "Welche Feststellung bezüglich Neutralisierung ist nach den chemischen Gesetzmäßigkeiten von Säuren, Basen & Salze richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Acides, Bases & Sels, quelle affirmation concernant neutralisation est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Кислоты, основания и соли», какое положение относительно «нейтрализация» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الأحماض والقواعد والأملاح\"، أي حكم متعلق بـ \"تحييد\" يعتبر صحيحاً؟",
-        "zh": "在高考“酸、碱和盐”经典考题中，下列有关“中和”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Asîd, Baz û Xwê\" de, kîjan daraza li ser \"bêbandorkirin\" rast e?"
+        "tr": "Aşağıda Asitler, Bazlar ve Tuzlar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Acids, Bases & Salts, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Säuren, Basen & Salze: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Acides, Bases & Sels, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Кислоты, основания и соли», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الأحماض والقواعد والأملاح\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“酸、碱和盐”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Asîd, Baz û Xwê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1354,25 +1354,25 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin07",
       "stem": {
-        "tr": "Aşağıda Asitler, Bazlar ve Tuzlar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Tam Soy Metal ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Acids, Bases & Salts, which statement about Noble Metal is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Säuren, Basen & Salze: Welche Aussage über Edelmetall ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Acides, Bases & Sels, quelle affirmation relative à Métal noble est exacte?",
-        "ru": "На основе фундаментальных положений темы «Кислоты, основания и соли», какое суждение о «Благородный металл» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الأحماض والقواعد والأملاح\"، أي عبارة حول \"فلز نبيل\" صحيحة؟",
-        "zh": "基于“酸、碱和盐”的基础化学知识体系，下列关于“贵金属”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Asîd, Baz û Xwê\", kîjan gotin derbarê \"Metala Esîl\" de rast e?"
+        "tr": "Asitler, Bazlar ve Tuzlar konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Acids, Bases & Salts, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Säuren, Basen & Salze: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Acides, Bases & Sels, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Кислоты, основания и соли», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الأحماض والقواعد والأملاح\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“酸、碱和盐”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Asîd, Baz û Xwê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
           "tr": "Çamaşır suyu ve tuz ruhu karıştırıldığında temizleme gücü iki katına çıkar.",
-          "en": "When bleach and salt spirit are mixed, the cleaning power is doubled.",
-          "de": "Wenn Bleichmittel und Salzbenzin gemischt werden, verdoppelt sich die Reinigungskraft.",
-          "fr": "Lorsque l’eau de Javel et l’alcool salin sont mélangés, le pouvoir nettoyant est doublé.",
-          "ru": "При смешивании отбеливателя и солевого спирта эффективность очистки увеличивается вдвое.",
+          "en": "When bleach and spirit of salt (hydrochloric acid) are mixed, the cleaning power doubles.",
+          "de": "Wenn Bleichmittel und Salzsäure gemischt werden, verdoppelt sich die Reinigungskraft.",
+          "fr": "Lorsque l'eau de Javel et l'esprit de sel sont mélangés, le pouvoir nettoyant double.",
+          "ru": "При смешивании отбеливателя и соляной кислоты чистящая способность удваивается.",
           "ar": "عندما يتم خلط المبيض وروح الملح، تتضاعف قوة التنظيف.",
-          "zh": "当漂白剂和盐精混合时，清洁力加倍。",
-          "ku": "Dema ku giyana spî û xwê tevlihev dibin, hêza paqijkirinê ducar dibe."
+          "zh": "当漂白水与盐酸混合时，清洁力加倍。",
+          "ku": "Dema ku ava çilşoyê û ruhê xwê bên tevlihevkirin, hêza paqijkirinê du qat zêde dibe."
         },
         {
           "tr": "Tam soy metaller (Au, Pt) hiçbir tekil asitle tepkime vermez; yalnızca kral suyuyla (3 HCl + 1 HNO3) çözünür.",
@@ -1405,7 +1405,7 @@ export const unit09: ChemistryUnitSeedData = {
           "ku": "Soda şîrîn pêkhateyek NaOH e."
         },
         {
-          "tr": "25 °C de pH değeri 8 olan bir çözelti asidiktir.",
+          "tr": "25 °C'de pH değeri 8 olan bir çözelti asidiktir.",
           "en": "A solution with a pH of 8 at 25 °C is acidic.",
           "de": "Eine Lösung mit einem pH-Wert von 8 bei 25 °C ist sauer.",
           "fr": "Une solution avec un pH de 8 à 25 °C est acide.",
@@ -1430,14 +1430,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin08",
       "stem": {
-        "tr": "Asitler, Bazlar ve Tuzlar konusu kapsamında pH Değeri ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Acids, Bases & Salts, which of the following findings regarding pH Value is scientifically verified?",
-        "de": "Im Rahmen der Einheit Säuren, Basen & Salze: Welcher der folgenden Befunde zu pH-Wert ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Acides, Bases & Sels, laquelle des constatations suivantes concernant Valeur du pH est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Кислоты, основания и соли», какой из следующих выводов относительно «Значение pH» научно подтверждён?",
-        "ar": "في سياق موضوع \"الأحماض والقواعد والأملاح\"، أي من النتائج التالية المتعلقة بـ \"قيمة الرقم الهيدروجيني (pH)\" مثبتة علمياً؟",
-        "zh": "在“酸、碱和盐”主题范畴内，下列关于“pH值”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Asîd, Baz û Xwê\" de, kîjan ji van encamên li ser \"Nirxê pH\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Asitler, Bazlar ve Tuzlar ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Acids, Bases & Salts, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Säuren, Basen & Salze: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Acides, Bases & Sels, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Кислоты, основания и соли», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الأحماض والقواعد والأملاح\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“酸、碱和盐”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Asîd, Baz û Xwê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1506,14 +1506,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Asitler, Bazlar ve Tuzlar ünitesinde ele alınan Aktif Metal hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Acids, Bases & Salts, which statement about Active Metal is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Säuren, Basen & Salze: Welche Aussage über Aktives Metall ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Acides, Bases & Sels, quelle affirmation relative à Métal actif est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Кислоты, основания и соли», какое утверждение о «Активный металл» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الأحماض والقواعد والأملاح\"، أي عبارة حول \"المعدن النشط\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“酸、碱和盐”单元中关于“活性金属”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Asîd, Baz û Xwê\", kîjan gotin li ser \"Active Metal\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Asitler, Bazlar ve Tuzlar konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Acids, Bases & Salts, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Säuren, Basen & Salze die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Acides, Bases & Sels, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Кислоты, основания и соли», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الأحماض والقواعد والأملاح\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“酸、碱和盐”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Asîd, Baz û Xwê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1582,14 +1582,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Asitler, Bazlar ve Tuzlar konusunu işlerken Amfoter Metal üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Acids, Bases & Salts, which statement regarding Amphoter Metal represents the correct answer?",
-        "de": "Welche Aussage zu Amphoteres Metall stellt im Kontext von Säuren, Basen & Salze die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Acides, Bases & Sels, quelle proposition sur Amphoter Métal constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Кислоты, основания и соли», какой ответ относительно «Амфотер Металл» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الأحماض والقواعد والأملاح\" مخبرياً، أي إجابة بخصوص \"امفوتر معدن\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“酸、碱和盐”实验探究与教学分析中，针对“两性金属”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Asîd, Baz û Xwê\" de, kîjan bersiv derbarê \"Amphoter Metal\" de rast e?"
+        "tr": "Kimya dersinde Asitler, Bazlar ve Tuzlar ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Acids, Bases & Salts, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Säuren, Basen & Salze: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Acides, Bases & Sels, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Кислоты, основания и соли», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الأحماض والقواعد والأملاح\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“酸、碱和盐”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Asîd, Baz û Xwê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1613,7 +1613,7 @@ export const unit09: ChemistryUnitSeedData = {
           "ku": "Soda şîrîn pêkhateyek NaOH e."
         },
         {
-          "tr": "25 °C de pH değeri 8 olan bir çözelti asidiktir.",
+          "tr": "25 °C'de pH değeri 8 olan bir çözelti asidiktir.",
           "en": "A solution with a pH of 8 at 25 °C is acidic.",
           "de": "Eine Lösung mit einem pH-Wert von 8 bei 25 °C ist sauer.",
           "fr": "Une solution avec un pH de 8 à 25 °C est acide.",
@@ -1658,14 +1658,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin11",
       "stem": {
-        "tr": "Kimya dersinde Asitler, Bazlar ve Tuzlar ünitesi incelenirken Kuvvetli Asit ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Acids, Bases & Salts, which of the following propositions concerning Strong Acid is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Säuren, Basen & Salze: Welche Behauptung bezüglich Starke Säure entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Acides, Bases & Sels, laquelle des affirmations suivantes concernant Acide Fort est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Кислоты, основания и соли», какое из следующих суждений о «Сильная кислота» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الأحماض والقواعد والأملاح\"، أي من الأحكام التالية المتعلقة بـ \"حمض قوي\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“酸、碱和盐”核心规律时，下列关于“强酸”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Asîd, Baz û Xwê\" tê kirin, kîjan daraza li ser \"Asîda xurt\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Asitler, Bazlar ve Tuzlar konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Acids, Bases & Salts?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Säuren, Basen & Salze zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Acides, Bases & Sels ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Кислоты, основания и соли»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الأحماض والقواعد والأملاح\"؟",
+        "zh": "根据“酸、碱和盐”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Asîd, Baz û Xwê\" de rast e?"
       },
       "options": [
         {
@@ -1734,14 +1734,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Asitler, Bazlar ve Tuzlar konusundaki temel kimyasal kurallar çerçevesinde Asidik Tuz kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Acidic Salt within the fundamental principles of Acids, Bases & Salts?",
-        "de": "Welche Aussage beschreibt das Konzept Saures Salz im Rahmen von Säuren, Basen & Salze am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Sel acide selon les lois de Acides, Bases & Sels?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Кислотная соль» в рамках темы «Кислоты, основания и соли»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"ملح حمضي\" ضمن قواعد \"الأحماض والقواعد والأملاح\"؟",
-        "zh": "根据“酸、碱和盐”的基本化学原理，下列哪项阐述能最准确地界定“酸性盐”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Xwêya Asîdî\" di çarçoveya prensîbên \"Asîd, Baz û Xwê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Asitler, Bazlar ve Tuzlar sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Acids, Bases & Salts, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Säuren, Basen & Salze: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Acides, Bases & Sels, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Кислоты, основания и соли», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الأحماض والقواعد والأملاح\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“酸、碱和盐”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Asîd, Baz û Xwê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1810,14 +1810,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Asitler, Bazlar ve Tuzlar sorularında karşılaşılan Turnusol İndikatörü konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Acids, Bases & Salts, which assertion regarding Litmus Indicator is correct?",
-        "de": "Welche Feststellung bezüglich Lackmus-Indikator ist nach den chemischen Gesetzmäßigkeiten von Säuren, Basen & Salze richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Acides, Bases & Sels, quelle affirmation concernant Indicateur décisif est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Кислоты, основания и соли», какое положение относительно «Лакмусовый индикатор» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الأحماض والقواعد والأملاح\"، أي حكم متعلق بـ \"مؤشر عباد الشمس\" يعتبر صحيحاً؟",
-        "zh": "在高考“酸、碱和盐”经典考题中，下列有关“石蕊指示剂”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Asîd, Baz û Xwê\" de, kîjan daraza li ser \"Ltmus Indicator\" rast e?"
+        "tr": "Aşağıda Asitler, Bazlar ve Tuzlar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Acids, Bases & Salts, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Säuren, Basen & Salze: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Acides, Bases & Sels, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Кислоты, основания и соли», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الأحماض والقواعد والأملاح\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“酸、碱和盐”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Asîd, Baz û Xwê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1831,7 +1831,7 @@ export const unit09: ChemistryUnitSeedData = {
           "ku": "Soda şîrîn pêkhateyek NaOH e."
         },
         {
-          "tr": "25 °C de pH değeri 8 olan bir çözelti asidiktir.",
+          "tr": "25 °C'de pH değeri 8 olan bir çözelti asidiktir.",
           "en": "A solution with a pH of 8 at 25 °C is acidic.",
           "de": "Eine Lösung mit einem pH-Wert von 8 bei 25 °C ist sauer.",
           "fr": "Une solution avec un pH de 8 à 25 °C est acide.",
@@ -1886,14 +1886,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin14",
       "stem": {
-        "tr": "Aşağıda Asitler, Bazlar ve Tuzlar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Nötralleşme ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Acids, Bases & Salts, which statement about neutralization is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Säuren, Basen & Salze: Welche Aussage über Neutralisierung ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Acides, Bases & Sels, quelle affirmation relative à neutralisation est exacte?",
-        "ru": "На основе фундаментальных положений темы «Кислоты, основания и соли», какое суждение о «нейтрализация» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الأحماض والقواعد والأملاح\"، أي عبارة حول \"تحييد\" صحيحة؟",
-        "zh": "基于“酸、碱和盐”的基础化学知识体系，下列关于“中和”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Asîd, Baz û Xwê\", kîjan gotin derbarê \"bêbandorkirin\" de rast e?"
+        "tr": "Asitler, Bazlar ve Tuzlar konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Acids, Bases & Salts, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Säuren, Basen & Salze: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Acides, Bases & Sels, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Кислоты, основания и соли», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الأحماض والقواعد والأملاح\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“酸、碱和盐”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Asîd, Baz û Xwê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1938,13 +1938,13 @@ export const unit09: ChemistryUnitSeedData = {
         },
         {
           "tr": "Çamaşır suyu ve tuz ruhu karıştırıldığında temizleme gücü iki katına çıkar.",
-          "en": "When bleach and salt spirit are mixed, the cleaning power is doubled.",
-          "de": "Wenn Bleichmittel und Salzbenzin gemischt werden, verdoppelt sich die Reinigungskraft.",
-          "fr": "Lorsque l’eau de Javel et l’alcool salin sont mélangés, le pouvoir nettoyant est doublé.",
-          "ru": "При смешивании отбеливателя и солевого спирта эффективность очистки увеличивается вдвое.",
+          "en": "When bleach and spirit of salt (hydrochloric acid) are mixed, the cleaning power doubles.",
+          "de": "Wenn Bleichmittel und Salzsäure gemischt werden, verdoppelt sich die Reinigungskraft.",
+          "fr": "Lorsque l'eau de Javel et l'esprit de sel sont mélangés, le pouvoir nettoyant double.",
+          "ru": "При смешивании отбеливателя и соляной кислоты чистящая способность удваивается.",
           "ar": "عندما يتم خلط المبيض وروح الملح، تتضاعف قوة التنظيف.",
-          "zh": "当漂白剂和盐精混合时，清洁力加倍。",
-          "ku": "Dema ku giyana spî û xwê tevlihev dibin, hêza paqijkirinê ducar dibe."
+          "zh": "当漂白水与盐酸混合时，清洁力加倍。",
+          "ku": "Dema ku ava çilşoyê û ruhê xwê bên tevlihevkirin, hêza paqijkirinê du qat zêde dibe."
         }
       ],
       "correctIndex": 3,
@@ -1962,14 +1962,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin15",
       "stem": {
-        "tr": "Asitler, Bazlar ve Tuzlar konusu kapsamında Tam Soy Metal ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Acids, Bases & Salts, which of the following findings regarding Noble Metal is scientifically verified?",
-        "de": "Im Rahmen der Einheit Säuren, Basen & Salze: Welcher der folgenden Befunde zu Edelmetall ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Acides, Bases & Sels, laquelle des constatations suivantes concernant Métal noble est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Кислоты, основания и соли», какой из следующих выводов относительно «Благородный металл» научно подтверждён?",
-        "ar": "في سياق موضوع \"الأحماض والقواعد والأملاح\"، أي من النتائج التالية المتعلقة بـ \"فلز نبيل\" مثبتة علمياً؟",
-        "zh": "在“酸、碱和盐”主题范畴内，下列关于“贵金属”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Asîd, Baz û Xwê\" de, kîjan ji van encamên li ser \"Metala Esîl\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Asitler, Bazlar ve Tuzlar ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Acids, Bases & Salts, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Säuren, Basen & Salze: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Acides, Bases & Sels, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Кислоты, основания и соли», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الأحماض والقواعد والأملاح\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“酸、碱和盐”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Asîd, Baz û Xwê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2038,14 +2038,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Asitler, Bazlar ve Tuzlar ünitesinde ele alınan pH Değeri hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Acids, Bases & Salts, which statement about pH Value is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Säuren, Basen & Salze: Welche Aussage über pH-Wert ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Acides, Bases & Sels, quelle affirmation relative à Valeur du pH est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Кислоты, основания и соли», какое утверждение о «Значение pH» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الأحماض والقواعد والأملاح\"، أي عبارة حول \"قيمة الرقم الهيدروجيني (pH)\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“酸、碱和盐”单元中关于“pH值”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Asîd, Baz û Xwê\", kîjan gotin li ser \"Nirxê pH\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Asitler, Bazlar ve Tuzlar konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Acids, Bases & Salts, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Säuren, Basen & Salze die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Acides, Bases & Sels, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Кислоты, основания и соли», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الأحماض والقواعد والأملاح\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“酸、碱和盐”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Asîd, Baz û Xwê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -2059,7 +2059,7 @@ export const unit09: ChemistryUnitSeedData = {
           "ku": "Soda şuştinê NaHCO3 (bikarbonat sodyûm), soda şuştinê Na2CO3 (karbonat sodyûm) e."
         },
         {
-          "tr": "25 °C de pH değeri 8 olan bir çözelti asidiktir.",
+          "tr": "25 °C'de pH değeri 8 olan bir çözelti asidiktir.",
           "en": "A solution with a pH of 8 at 25 °C is acidic.",
           "de": "Eine Lösung mit einem pH-Wert von 8 bei 25 °C ist sauer.",
           "fr": "Une solution avec un pH de 8 à 25 °C est acide.",

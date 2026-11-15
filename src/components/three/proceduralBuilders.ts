@@ -1098,11 +1098,11 @@ export function buildGrahamDiffusionTube(isDark: boolean): ProceduralSceneObject
   hclPlug.position.set(2.1, 0, 0);
   group.add(hclPlug);
 
-  // White NH4Cl ring formed at x ≈ +0.7 (closer to heavier HCl)
+  // White NH4Cl ring formed at x ≈ +0.40 (closer to heavier HCl, Graham's law: v(NH3)/v(HCl) = sqrt(36.5/17) ≈ 1.465)
   const ringGeo = new THREE.TorusGeometry(0.36, 0.08, 16, 32);
   const ringMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.9, emissive: 0x475569 });
   const ring = new THREE.Mesh(ringGeo, ringMat);
-  ring.position.set(0.7, 0, 0);
+  ring.position.set(0.40, 0, 0);
   ring.rotation.y = Math.PI / 2;
   group.add(ring);
 
@@ -1709,9 +1709,138 @@ export function buildDaniellGalvanicCell(isDark: boolean): ProceduralSceneObject
 // 27. Zinc Concentration Cell (u21-zinc-concentration-cell)
 // ----------------------------------------------------------------------------
 export function buildConcentrationCell(isDark: boolean): ProceduralSceneObject {
-  // Similar to Daniell cell but both electrodes are Zinc with different solution molarity
-  const cell = buildDaniellGalvanicCell(isDark);
-  return cell;
+  const group = new THREE.Group();
+
+  // Left Beaker: Dilute ZnSO4 (0.01 M) Half-Cell (Anode)
+  const leftBeaker = makeGlassCylinder(1.0, 1.0, 2.2);
+  leftBeaker.position.set(-1.6, -0.4, 0);
+  group.add(leftBeaker);
+
+  const leftSol = makeBondCylinder(new THREE.Vector3(-1.6, -1.4, 0), new THREE.Vector3(-1.6, 0.3, 0), 0.95, 0xf1f5f9, isDark);
+  (leftSol.material as THREE.MeshStandardMaterial).transparent = true;
+  (leftSol.material as THREE.MeshStandardMaterial).opacity = 0.35;
+  group.add(leftSol);
+
+  // Dilute Zn2+ ions (low density: 3 ions)
+  const ionGeo = new THREE.SphereGeometry(0.08, 8, 8);
+  const ionMat = new THREE.MeshBasicMaterial({ color: 0x38bdf8 });
+  const leftIons: THREE.Mesh[] = [];
+  const leftIonPositions = [
+    [-1.8, -0.5, 0.2],
+    [-1.4, -0.8, -0.2],
+    [-1.6, -0.2, 0.1],
+  ];
+  leftIonPositions.forEach(([x, y, z]) => {
+    const ion = new THREE.Mesh(ionGeo, ionMat);
+    ion.position.set(x, y, z);
+    group.add(ion);
+    leftIons.push(ion);
+  });
+
+  // Left Zn Anode Plate (slate grey zinc metal)
+  const zn1Geo = new THREE.BoxGeometry(0.25, 2.2, 0.7);
+  const zn1Mat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, metalness: 0.9, roughness: 0.2 });
+  const zn1 = new THREE.Mesh(zn1Geo, zn1Mat);
+  zn1.position.set(-1.6, 0.2, 0);
+  group.add(zn1);
+
+  // Right Beaker: Concentrated ZnSO4 (1.0 M) Half-Cell (Cathode)
+  const rightBeaker = makeGlassCylinder(1.0, 1.0, 2.2);
+  rightBeaker.position.set(1.6, -0.4, 0);
+  group.add(rightBeaker);
+
+  const rightSol = makeBondCylinder(new THREE.Vector3(1.6, -1.4, 0), new THREE.Vector3(1.6, 0.3, 0), 0.95, 0xf1f5f9, isDark);
+  (rightSol.material as THREE.MeshStandardMaterial).transparent = true;
+  (rightSol.material as THREE.MeshStandardMaterial).opacity = 0.35;
+  group.add(rightSol);
+
+  // Concentrated Zn2+ ions (high density: 15 ions)
+  const rightIons: THREE.Mesh[] = [];
+  for (let i = 0; i < 15; i++) {
+    const angle = (i / 15) * Math.PI * 2;
+    const r = 0.35 + (i % 3) * 0.15;
+    const y = -1.1 + (i / 15) * 1.2;
+    const ion = new THREE.Mesh(ionGeo, ionMat);
+    ion.position.set(1.6 + Math.cos(angle) * r, y, Math.sin(angle) * r);
+    group.add(ion);
+    rightIons.push(ion);
+  }
+
+  // Right Zn Cathode Plate (slate grey zinc metal)
+  const zn2Geo = new THREE.BoxGeometry(0.25, 2.2, 0.7);
+  const zn2Mat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, metalness: 0.9, roughness: 0.2 });
+  const zn2 = new THREE.Mesh(zn2Geo, zn2Mat);
+  zn2.position.set(1.6, 0.2, 0);
+  group.add(zn2);
+
+  // Salt Bridge: Inverted U-tube
+  const bridgeCurve = new THREE.CatmullRomCurve3([
+    new THREE.Vector3(-1.2, 0.0, 0),
+    new THREE.Vector3(-1.2, 1.2, 0),
+    new THREE.Vector3(0, 1.5, 0),
+    new THREE.Vector3(1.2, 1.2, 0),
+    new THREE.Vector3(1.2, 0.0, 0),
+  ]);
+  const bridgeGeo = new THREE.TubeGeometry(bridgeCurve, 32, 0.18, 16, false);
+  const bridgeMat = new THREE.MeshPhysicalMaterial({ color: 0xf1f5f9, transparent: true, opacity: 0.5, roughness: 0.1 });
+  const bridge = new THREE.Mesh(bridgeGeo, bridgeMat);
+  group.add(bridge);
+
+  // External wire with Voltmeter
+  const wireCurve = new THREE.CatmullRomCurve3([
+    new THREE.Vector3(-1.6, 1.3, 0),
+    new THREE.Vector3(-0.8, 2.2, 0),
+    new THREE.Vector3(0, 2.4, 0),
+    new THREE.Vector3(0.8, 2.2, 0),
+    new THREE.Vector3(1.6, 1.3, 0),
+  ]);
+  const wireGeo = new THREE.TubeGeometry(wireCurve, 32, 0.04, 8, false);
+  const wireMat = new THREE.MeshStandardMaterial({ color: 0xfacc15, metalness: 0.8 });
+  const wire = new THREE.Mesh(wireGeo, wireMat);
+  group.add(wire);
+
+  // Voltmeter box at top
+  const vmGeo = new THREE.BoxGeometry(0.6, 0.4, 0.3);
+  const vmMat = new THREE.MeshStandardMaterial({ color: 0x1e293b, metalness: 0.6 });
+  const vm = new THREE.Mesh(vmGeo, vmMat);
+  vm.position.set(0, 2.4, 0);
+  group.add(vm);
+
+  // Flowing electron particles
+  const eGeo = new THREE.SphereGeometry(0.06, 8, 8);
+  const eMat = new THREE.MeshBasicMaterial({ color: 0x38bdf8 });
+  const electrons: THREE.Mesh[] = [];
+  for (let i = 0; i < 8; i++) {
+    const e = new THREE.Mesh(eGeo, eMat);
+    group.add(e);
+    electrons.push(e);
+  }
+
+  return {
+    group,
+    animate: (time, liveSim) => {
+      if (!liveSim) return;
+      electrons.forEach((e, idx) => {
+        const u = ((time * 0.4 + idx / 8) % 1.0);
+        const p = wireCurve.getPoint(u);
+        e.position.copy(p);
+      });
+      leftIons.forEach((ion, idx) => {
+        ion.position.y += Math.sin(time * 2 + idx) * 0.002;
+      });
+      rightIons.forEach((ion, idx) => {
+        ion.position.y += Math.sin(time * 2 + idx) * 0.002;
+      });
+    },
+    setExplode: (factor) => {
+      factor = clampExplodeFactor(factor);
+      leftBeaker.position.x = -1.6 - factor * 1.2;
+      rightBeaker.position.x = 1.6 + factor * 1.2;
+      bridge.position.y = factor * 1.0;
+      vm.position.y = 2.4 + factor * 0.8;
+    },
+    dispose: () => disposeSceneObject(group),
+  };
 }
 
 // ----------------------------------------------------------------------------
@@ -1856,42 +1985,116 @@ export function buildHybridOrbitals(isDark: boolean): ProceduralSceneObject {
 export function buildVseprExpandedOctets(isDark: boolean): ProceduralSceneObject {
   const group = new THREE.Group();
 
-  // Octahedral SF6 (AX6) model
-  const central = makeAtomMesh(0.55, 0xf59e0b, isDark, 0xd97706);
-  group.add(central);
+  // ---------------------------------------------------------
+  // 1. BF3 (Trigonal Planar, AX3, 120°) at X = -2.2
+  // ---------------------------------------------------------
+  const bf3Group = new THREE.Group();
+  bf3Group.position.set(-2.2, 0, 0);
 
-  const dist = 1.9;
-  const ligands: THREE.Vector3[] = [
-    new THREE.Vector3(dist, 0, 0),
-    new THREE.Vector3(-dist, 0, 0),
-    new THREE.Vector3(0, dist, 0),
-    new THREE.Vector3(0, -dist, 0),
-    new THREE.Vector3(0, 0, dist),
-    new THREE.Vector3(0, 0, -dist),
+  // Central Boron atom (B, pink/salmon 0xf43f5e)
+  const boron = makeAtomMesh(0.42, 0xf43f5e, isDark);
+  bf3Group.add(boron);
+
+  const bfDist = 1.15;
+  const bfLigands: THREE.Vector3[] = [
+    new THREE.Vector3(0, bfDist, 0),
+    new THREE.Vector3(-bfDist * Math.cos(Math.PI / 6), -bfDist * Math.sin(Math.PI / 6), 0),
+    new THREE.Vector3(bfDist * Math.cos(Math.PI / 6), -bfDist * Math.sin(Math.PI / 6), 0),
   ];
-
-  const ligMeshes: THREE.Mesh[] = [];
-  ligands.forEach((pos) => {
-    const lig = makeAtomMesh(0.35, 0x10b981, isDark);
-    lig.position.copy(pos);
-    group.add(lig);
-    ligMeshes.push(lig);
-
-    const b = makeBondCylinder(new THREE.Vector3(0, 0, 0), pos, 0.07, 0x94a3b8, isDark);
-    group.add(b);
+  const bf3Meshes: THREE.Mesh[] = [];
+  bfLigands.forEach((pos) => {
+    const fAtom = makeAtomMesh(0.28, 0x10b981, isDark);
+    fAtom.position.copy(pos);
+    bf3Group.add(fAtom);
+    bf3Meshes.push(fAtom);
+    const b = makeBondCylinder(new THREE.Vector3(0, 0, 0), pos, 0.06, 0x94a3b8, isDark);
+    bf3Group.add(b);
   });
+  group.add(bf3Group);
+
+  // ---------------------------------------------------------
+  // 2. PCl5 (Trigonal Bipyramidal, AX5, 90°/120°) at X = 0.0
+  // ---------------------------------------------------------
+  const pcl5Group = new THREE.Group();
+  pcl5Group.position.set(0.0, 0, 0);
+
+  // Central Phosphorus atom (P, orange 0xf97316)
+  const phos = makeAtomMesh(0.46, 0xf97316, isDark);
+  pcl5Group.add(phos);
+
+  const eqDist = 1.25;
+  const axDist = 1.35;
+  // 3 equatorial Cl at 120 deg in XZ plane
+  // 2 axial Cl along Y axis
+  const pclLigands: THREE.Vector3[] = [
+    new THREE.Vector3(eqDist, 0, 0),
+    new THREE.Vector3(-eqDist * 0.5, 0, eqDist * 0.866),
+    new THREE.Vector3(-eqDist * 0.5, 0, -eqDist * 0.866),
+    new THREE.Vector3(0, axDist, 0),
+    new THREE.Vector3(0, -axDist, 0),
+  ];
+  const pcl5Meshes: THREE.Mesh[] = [];
+  pclLigands.forEach((pos) => {
+    const clAtom = makeAtomMesh(0.32, 0x22c55e, isDark);
+    clAtom.position.copy(pos);
+    pcl5Group.add(clAtom);
+    pcl5Meshes.push(clAtom);
+    const b = makeBondCylinder(new THREE.Vector3(0, 0, 0), pos, 0.06, 0x94a3b8, isDark);
+    pcl5Group.add(b);
+  });
+  group.add(pcl5Group);
+
+  // ---------------------------------------------------------
+  // 3. SF6 (Octahedral, AX6, 90°) at X = +2.2
+  // ---------------------------------------------------------
+  const sf6Group = new THREE.Group();
+  sf6Group.position.set(2.2, 0, 0);
+
+  // Central Sulfur atom (S, yellow 0xeab308)
+  const sulfur = makeAtomMesh(0.48, 0xeab308, isDark);
+  sf6Group.add(sulfur);
+
+  const sfDist = 1.2;
+  const sfLigands: THREE.Vector3[] = [
+    new THREE.Vector3(sfDist, 0, 0),
+    new THREE.Vector3(-sfDist, 0, 0),
+    new THREE.Vector3(0, sfDist, 0),
+    new THREE.Vector3(0, -sfDist, 0),
+    new THREE.Vector3(0, 0, sfDist),
+    new THREE.Vector3(0, 0, -sfDist),
+  ];
+  const sf6Meshes: THREE.Mesh[] = [];
+  sfLigands.forEach((pos) => {
+    const fAtom = makeAtomMesh(0.28, 0x10b981, isDark);
+    fAtom.position.copy(pos);
+    sf6Group.add(fAtom);
+    sf6Meshes.push(fAtom);
+    const b = makeBondCylinder(new THREE.Vector3(0, 0, 0), pos, 0.06, 0x94a3b8, isDark);
+    sf6Group.add(b);
+  });
+  group.add(sf6Group);
 
   return {
     group,
     animate: (time, liveSim) => {
       if (!liveSim) return;
-      group.rotation.x = time * 0.15;
-      group.rotation.y = time * 0.2;
+      bf3Group.rotation.y = time * 0.2;
+      pcl5Group.rotation.y = time * 0.25;
+      sf6Group.rotation.y = time * 0.2;
+      sf6Group.rotation.x = time * 0.15;
     },
     setExplode: (factor) => {
       factor = clampExplodeFactor(factor);
-      ligands.forEach((p, idx) => {
-        ligMeshes[idx].position.copy(p).multiplyScalar(1 + factor * 1.4);
+      bf3Group.position.x = -2.2 - factor * 1.0;
+      sf6Group.position.x = 2.2 + factor * 1.0;
+      bfLigands.forEach((p, idx) => {
+        bf3Meshes[idx].position.copy(p).multiplyScalar(1 + factor * 0.8);
+      });
+      pclLigands.forEach((p, idx) => {
+        pcl5Meshes[idx].position.copy(p).multiplyScalar(1 + factor * 0.8);
+      });
+      sfLigands.forEach((p, idx) => {
+        sf6Meshes[idx].position.copy(p).multiplyScalar(1 + factor * 0.8);
       });
     },
     dispose: () => disposeSceneObject(group),
@@ -1984,40 +2187,119 @@ export function buildBenzeneAromaticRing(isDark: boolean): ProceduralSceneObject
 export function buildComparativeHydrocarbons(isDark: boolean): ProceduralSceneObject {
   const group = new THREE.Group();
 
-  // Ethane (C2H6 - Single bond) at X = -2.4
+  // ---------------------------------------------------------
+  // 1. Ethane (C2H6 - Single bond, tetrahedral sp3) at X = -2.4
+  // ---------------------------------------------------------
   const ethane = new THREE.Group();
   ethane.position.set(-2.4, 0, 0);
-  const c1 = makeAtomMesh(0.38, 0x334155, isDark);
+  const c1 = makeAtomMesh(0.36, 0x334155, isDark);
   c1.position.set(-0.6, 0, 0);
-  const c2 = makeAtomMesh(0.38, 0x334155, isDark);
+  const c2 = makeAtomMesh(0.36, 0x334155, isDark);
   c2.position.set(0.6, 0, 0);
   const bSingle = makeBondCylinder(c1.position, c2.position, 0.08, 0x94a3b8, isDark);
   ethane.add(c1, c2, bSingle);
+
+  // 6 Hydrogen atoms (white spheres 0xffffff, radius 0.20) in staggered tetrahedral geometry (109.5 deg)
+  const hDist = 0.65;
+  const hAng = Math.PI * (109.47 / 180);
+  const dx = hDist * Math.cos(Math.PI - hAng);
+  const dr = hDist * Math.sin(Math.PI - hAng);
+
+  // 3 hydrogens on c1 (-0.6, 0, 0) pointing towards -X:
+  const c1HPos = [
+    new THREE.Vector3(-0.6 - dx, dr, 0),
+    new THREE.Vector3(-0.6 - dx, -dr * 0.5, dr * 0.866),
+    new THREE.Vector3(-0.6 - dx, -dr * 0.5, -dr * 0.866),
+  ];
+  c1HPos.forEach((pos) => {
+    const h = makeAtomMesh(0.20, 0xffffff, isDark);
+    h.position.copy(pos);
+    const b = makeBondCylinder(c1.position, pos, 0.04, 0x94a3b8, isDark);
+    ethane.add(h, b);
+  });
+
+  // 3 hydrogens on c2 (0.6, 0, 0) pointing towards +X, staggered (rotated by 60 deg):
+  const c2HPos = [
+    new THREE.Vector3(0.6 + dx, -dr, 0),
+    new THREE.Vector3(0.6 + dx, dr * 0.5, dr * 0.866),
+    new THREE.Vector3(0.6 + dx, dr * 0.5, -dr * 0.866),
+  ];
+  c2HPos.forEach((pos) => {
+    const h = makeAtomMesh(0.20, 0xffffff, isDark);
+    h.position.copy(pos);
+    const b = makeBondCylinder(c2.position, pos, 0.04, 0x94a3b8, isDark);
+    ethane.add(h, b);
+  });
   group.add(ethane);
 
-  // Ethene (C2H4 - Double bond) at X = 0
+  // ---------------------------------------------------------
+  // 2. Ethene (C2H4 - Double bond, trigonal planar sp2) at X = 0.0
+  // ---------------------------------------------------------
   const ethene = new THREE.Group();
   ethene.position.set(0, 0, 0);
-  const c3 = makeAtomMesh(0.38, 0x334155, isDark);
+  const c3 = makeAtomMesh(0.36, 0x334155, isDark);
   c3.position.set(-0.55, 0, 0);
-  const c4 = makeAtomMesh(0.38, 0x334155, isDark);
+  const c4 = makeAtomMesh(0.36, 0x334155, isDark);
   c4.position.set(0.55, 0, 0);
   const bDouble1 = makeBondCylinder(new THREE.Vector3(-0.55, 0.08, 0), new THREE.Vector3(0.55, 0.08, 0), 0.05, 0x94a3b8, isDark);
   const bDouble2 = makeBondCylinder(new THREE.Vector3(-0.55, -0.08, 0), new THREE.Vector3(0.55, -0.08, 0), 0.05, 0x94a3b8, isDark);
   ethene.add(c3, c4, bDouble1, bDouble2);
+
+  // 4 coplanar hydrogens in sp2 geometry (120 deg) in XY plane
+  const ethHDist = 0.62;
+  const ethDx = ethHDist * Math.cos(Math.PI / 3);
+  const ethDy = ethHDist * Math.sin(Math.PI / 3);
+
+  const c3HPos = [
+    new THREE.Vector3(-0.55 - ethDx, ethDy, 0),
+    new THREE.Vector3(-0.55 - ethDx, -ethDy, 0),
+  ];
+  c3HPos.forEach((pos) => {
+    const h = makeAtomMesh(0.20, 0xffffff, isDark);
+    h.position.copy(pos);
+    const b = makeBondCylinder(c3.position, pos, 0.04, 0x94a3b8, isDark);
+    ethene.add(h, b);
+  });
+
+  const c4HPos = [
+    new THREE.Vector3(0.55 + ethDx, ethDy, 0),
+    new THREE.Vector3(0.55 + ethDx, -ethDy, 0),
+  ];
+  c4HPos.forEach((pos) => {
+    const h = makeAtomMesh(0.20, 0xffffff, isDark);
+    h.position.copy(pos);
+    const b = makeBondCylinder(c4.position, pos, 0.04, 0x94a3b8, isDark);
+    ethene.add(h, b);
+  });
   group.add(ethene);
 
-  // Ethyne (C2H2 - Triple bond) at X = +2.4
+  // ---------------------------------------------------------
+  // 3. Ethyne (C2H2 - Triple bond, linear sp) at X = +2.4
+  // ---------------------------------------------------------
   const ethyne = new THREE.Group();
   ethyne.position.set(2.4, 0, 0);
-  const c5 = makeAtomMesh(0.38, 0x334155, isDark);
+  const c5 = makeAtomMesh(0.36, 0x334155, isDark);
   c5.position.set(-0.5, 0, 0);
-  const c6 = makeAtomMesh(0.38, 0x334155, isDark);
+  const c6 = makeAtomMesh(0.36, 0x334155, isDark);
   c6.position.set(0.5, 0, 0);
   const bTriple1 = makeBondCylinder(new THREE.Vector3(-0.5, 0.1, 0), new THREE.Vector3(0.5, 0.1, 0), 0.04, 0x94a3b8, isDark);
   const bTriple2 = makeBondCylinder(new THREE.Vector3(-0.5, 0, 0), new THREE.Vector3(0.5, 0, 0), 0.04, 0x94a3b8, isDark);
   const bTriple3 = makeBondCylinder(new THREE.Vector3(-0.5, -0.1, 0), new THREE.Vector3(0.5, -0.1, 0), 0.04, 0x94a3b8, isDark);
   ethyne.add(c5, c6, bTriple1, bTriple2, bTriple3);
+
+  // 2 collinear hydrogens in linear sp geometry (180 deg) along X axis
+  const ethyneHDist = 0.65;
+  const hEthyne1Pos = new THREE.Vector3(-0.5 - ethyneHDist, 0, 0);
+  const hEthyne1 = makeAtomMesh(0.20, 0xffffff, isDark);
+  hEthyne1.position.copy(hEthyne1Pos);
+  const bH1 = makeBondCylinder(c5.position, hEthyne1Pos, 0.04, 0x94a3b8, isDark);
+
+  const hEthyne2Pos = new THREE.Vector3(0.5 + ethyneHDist, 0, 0);
+  const hEthyne2 = makeAtomMesh(0.20, 0xffffff, isDark);
+  hEthyne2.position.copy(hEthyne2Pos);
+  const bH2 = makeBondCylinder(c6.position, hEthyne2Pos, 0.04, 0x94a3b8, isDark);
+
+  ethyne.add(hEthyne1, bH1, hEthyne2, bH2);
   group.add(ethyne);
 
   return {

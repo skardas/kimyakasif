@@ -120,23 +120,24 @@ export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
     const stepMl = (flowRate * intervalMs) / 1000;
 
     const timer = setInterval(() => {
-      setVolumeDispensed((prev) => {
-        const next = Math.min(50.0, prev + stepMl);
-        if (next >= 50.0) {
-          setFlowRate(0);
-        }
-        return next;
-      });
+      setVolumeDispensed((prev) => Math.min(50.0, prev + stepMl));
     }, intervalMs);
 
     return () => clearInterval(timer);
   }, [flowRate, hasFinished]);
 
+  // Stop continuous flow when reaching maximum capacity
+  useEffect(() => {
+    if (volumeDispensed >= 50.0 && flowRate > 0) {
+      setFlowRate(0);
+    }
+  }, [volumeDispensed, flowRate]);
+
   // Update history points for SVG chart
   useEffect(() => {
     setHistoryPoints((prev) => {
       const last = prev[prev.length - 1];
-      if (!last || Math.abs(last.v - curveData.clampedVol) >= 0.5 || curveData.clampedVol === 50.0) {
+      if (!last || Math.abs(last.v - curveData.clampedVol) >= 0.5 || (curveData.clampedVol === 50.0 && last.v !== 50.0)) {
         return [...prev, { v: curveData.clampedVol, ph: curveData.ph }];
       }
       return prev;
@@ -152,10 +153,8 @@ export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
 
   // Toggle magnetic stirrer
   const toggleStirrer = () => {
-    setStirrerOn((s) => {
-      if (!s) playBubble();
-      return !s;
-    });
+    if (!stirrerOn) playBubble();
+    setStirrerOn((s) => !s);
   };
 
   // Check endpoint / stop titration
@@ -321,13 +320,39 @@ export const TitrationSimulator: React.FC<TitrationSimulatorProps> = ({
               <span>Eşdeğerlik: 25.00 mL (pH 7.00)</span>
             </div>
 
-            <svg viewBox="0 0 200 100" className="w-full h-28 bg-surface rounded-md border border-subtle">
+            <svg viewBox="0 0 205 102" className="w-full h-28 bg-surface rounded-md border border-subtle">
               {/* Axes and grid */}
-              <line x1="20" y1="90" x2="190" y2="90" stroke="currentColor" strokeOpacity="0.2" />
+              <line x1="20" y1="90" x2="195" y2="90" stroke="currentColor" strokeOpacity="0.2" />
               <line x1="20" y1="10" x2="20" y2="90" stroke="currentColor" strokeOpacity="0.2" />
               {/* Equivalence guide line at V=25 mL (x = 20 + 25*(170/50) = 105) */}
               <line x1="105" y1="10" x2="105" y2="90" stroke="#a855f7" strokeDasharray="3 3" strokeOpacity="0.6" />
-              <line x1="20" y1="47" x2="190" y2="47" stroke="#a855f7" strokeDasharray="3 3" strokeOpacity="0.3" />
+              <line x1="20" y1="50" x2="195" y2="50" stroke="#a855f7" strokeDasharray="3 3" strokeOpacity="0.3" />
+
+              {/* Y axis numerical scale labels (0, 7, 14 pH) */}
+              {[0, 7, 14].map((ph) => {
+                const y = 90 - (ph / 14.0) * 80;
+                return (
+                  <g key={`y-tick-${ph}`}>
+                    <line x1="17" y1={y} x2="20" y2={y} stroke="currentColor" strokeOpacity="0.4" />
+                    <text x="15" y={y + 1.8} fontSize="4.8" fill="currentColor" fillOpacity="0.75" textAnchor="end" fontFamily="monospace">
+                      {ph}
+                    </text>
+                  </g>
+                );
+              })}
+
+              {/* X axis numerical scale labels (0, 10, 20, 25, 30, 40, 50 mL) */}
+              {[0, 10, 20, 25, 30, 40, 50].map((v) => {
+                const x = 20 + (v / 50.0) * 170;
+                return (
+                  <g key={`x-tick-${v}`}>
+                    <line x1={x} y1="90" x2={x} y2="93" stroke="currentColor" strokeOpacity="0.4" />
+                    <text x={x} y="98" fontSize="4.8" fill="currentColor" fillOpacity="0.75" textAnchor="middle" fontFamily="monospace">
+                      {v}
+                    </text>
+                  </g>
+                );
+              })}
 
               {/* S-curve path */}
               <path

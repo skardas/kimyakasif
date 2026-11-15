@@ -36,6 +36,8 @@ import {
   playApplause as realPlayApplause,
   setSfxEnabled as realSetSfxEnabled,
   setSfxVolume as realSetSfxVolume,
+  isSfxEnabled as realIsSfxEnabled,
+  getSfxVolume as realGetSfxVolume,
   unlockAudio as realUnlockAudio,
 } from '../../../src/audio/sfx';
 
@@ -78,6 +80,9 @@ import {
   type ExamResultRecord,
   type ActiveExamState,
 } from '../../../src/store/useAppStore';
+
+// 3D Master Catalog
+import { PRIMARY_32_SCENES } from '../../../src/data/threeScenesData';
 
 // ---------------------------------------------------------------------------
 // 2. Direct Imports from Harness Helpers
@@ -140,6 +145,8 @@ export {
   realPlayApplause as playApplause,
   realSetSfxEnabled as setSfxEnabled,
   realSetSfxVolume as setSfxVolume,
+  realIsSfxEnabled as isSfxEnabled,
+  realGetSfxVolume as getSfxVolume,
   realUnlockAudio as unlockAudio,
   musicEngine,
   MUSIC_TRACKS,
@@ -258,6 +265,10 @@ export interface Hotspot3D {
   pinNumber: number;
   position: [number, number, number];
   color: string;
+  badgeLabel?: string;
+  title?: LocalizedText;
+  description?: LocalizedText;
+  examFact?: LocalizedText;
   name: LocalizedText;
   role: LocalizedText;
   quickHint: LocalizedText;
@@ -269,8 +280,12 @@ export interface ChemicalSceneSpec {
   unitId: string;
   badge: 'TYT' | 'AYT';
   title: LocalizedText;
+  subtitle?: LocalizedText;
   description: LocalizedText;
+  category?: string;
   geometryType: string;
+  cameraPosition?: [number, number, number];
+  target?: [number, number, number];
   cameraConstraints?: OrbitCameraConstraints;
   explodeConstraints?: ExplodeViewConstraints;
   latticeSpec?: CrystalLatticeSpec;
@@ -278,10 +293,26 @@ export interface ChemicalSceneSpec {
     animate: (time: number) => void;
     dispose: () => void;
   };
+  build?: (isDark: boolean) => any;
   hotspots: Hotspot3D[];
+  aliases?: string[];
 }
 
-export const THREE_SCENES_DATA: ChemicalSceneSpec[] = [
+// Export the authentic 32-scene master catalog from production
+export { PRIMARY_32_SCENES };
+
+// Export all 99 authentic hotspots across the 32 scenes
+export const ALL_HOTSPOTS_32: Hotspot3D[] = PRIMARY_32_SCENES.flatMap((s) => s.hotspots);
+
+// Contract assertion: verify exactly 32 scenes and 99 hotspots exist in the authentic catalog
+if (PRIMARY_32_SCENES.length !== 32) {
+  throw new Error(`Expected PRIMARY_32_SCENES.length === 32, got ${PRIMARY_32_SCENES.length}`);
+}
+if (ALL_HOTSPOTS_32.length !== 99) {
+  throw new Error(`Expected 99 hotspots across PRIMARY_32_SCENES, got ${ALL_HOTSPOTS_32.length}`);
+}
+
+const LEGACY_THREE_SCENES_DATA: ChemicalSceneSpec[] = [
   {
     id: 'scene-vsepr-linear',
     unitId: 'u23',
@@ -627,6 +658,13 @@ export const THREE_SCENES_DATA: ChemicalSceneSpec[] = [
       },
     ],
   },
+];
+
+// Bridge THREE_SCENES_DATA: includes all 32 authentic scenes from PRIMARY_32_SCENES
+// and the legacy 8-scene definitions to maintain 100% backward compatibility with existing tests
+export const THREE_SCENES_DATA: ChemicalSceneSpec[] = [
+  ...PRIMARY_32_SCENES,
+  ...LEGACY_THREE_SCENES_DATA,
 ];
 
 // ---------------------------------------------------------------------------

@@ -230,7 +230,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
           className={`exam-category-tab ${activeTab === 'tyt' ? 'active' : ''}`}
           onClick={() => setActiveTab('tyt')}
         >
-          {t.exams.modeTytTrial} (40)
+          1. Aşama TYT (40)
         </button>
 
         <button
@@ -240,7 +240,7 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
           className={`exam-category-tab ${activeTab === 'ayt' ? 'active' : ''}`}
           onClick={() => setActiveTab('ayt')}
         >
-          {t.exams.modeAytTrial} (40)
+          2. Aşama AYT (40)
         </button>
 
         <button
@@ -306,8 +306,8 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                7 Soru • 10 Dakika • Gerçek TYT Müfredat Dağılımı
+              <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
+                1. Aşama TYT Kimya (40 Deneme • 7 Soru • 10 Dakika)
               </span>
             </div>
 
@@ -436,8 +436,8 @@ export const ExamCenter: React.FC<ExamCenterProps> = ({
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                13 Soru • 20 Dakika • 11 ve 12. Sınıf AYT Müfredat Dağılımı
+              <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
+                2. Aşama AYT Kimya (40 Deneme • 13 Soru • 20 Dakika)
               </span>
             </div>
 

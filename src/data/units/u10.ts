@@ -631,34 +631,34 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-c08",
       "conceptA": {
-        "tr": "Monomer",
-        "en": "Monomer",
-        "de": "Monomer",
-        "fr": "Monomère",
-        "ru": "Мономер",
-        "ar": "مونومر",
-        "zh": "单体",
-        "ku": "Monomer"
+        "tr": "Sabun",
+        "en": "soap",
+        "de": "Seife",
+        "fr": "savon",
+        "ru": "мыло",
+        "ar": "صابون",
+        "zh": "肥皂",
+        "ku": "sabûn"
       },
       "conceptB": {
-        "tr": "Polimer",
-        "en": "Polymer",
-        "de": "Polymer",
-        "fr": "Polymère",
-        "ru": "Полимер",
-        "ar": "بوليمر",
-        "zh": "聚合物",
-        "ku": "Polîmer"
+        "tr": "Deterjan",
+        "en": "detergent",
+        "de": "Waschmittel",
+        "fr": "détergent",
+        "ru": "моющее средство",
+        "ar": "المنظفات",
+        "zh": "洗涤剂",
+        "ku": "detergent"
       },
       "distinction": {
-        "tr": "Monomer polimeri oluşturan küçük ve reaktif yapı taşıdır; polimer binlerce monomerin kovalent bağlarla bağlanarak oluşturduğu makromoleküldür.",
-        "en": "A monomer is a small reactive building block; a polymer is a macromolecule formed by linking thousands of monomers through covalent bonds.",
-        "de": "Ein Monomer ist ein kleiner reaktiver Baustein; ein Polymer ist ein Riesenmolekül aus Tausenden kovalent verknüpften Monomeren.",
-        "fr": "Un monomère est une petite unité de base réactive ; un polymère est une macromolécule résultant de la liaison covalente de milliers d'unités.",
-        "ru": "Мономер — малое реакционноспособное структурное звено; полимер — макромолекула, состоящая из тысяч ковалентно связанных звеньев.",
-        "ar": "المونومر هو وحدة بناء جزيئية صغيرة نشطة؛ البوليمر هو جزيء ضخم يتكون من ارتباط آلاف المونومرات بروابط تساهمية.",
-        "zh": "单体是构成聚合物的活性小分子基元；聚合物是由数千个单体通过共价键连接形成的高分子化合物。",
-        "ku": "Monomer yekîneya piçûk a avakirina polîmeran e; polîmer jî makromolekuleke mezin e ku ji hezaran monomeran bi girêdanên kovalans pêk tê."
+        "tr": "Sabun bitkisel/hayvansal yağdan üretilir doğada parçalanır; deterjan petrol türevidir sert sularda da temizler ama çevre kirliliği yapar.",
+        "en": "Soap is produced from vegetable/animal oil and breaks down in nature; Detergent is a petroleum derivative and cleans it in hard water, but it pollutes the environment.",
+        "de": "Seife wird aus pflanzlichem/tierischem Öl hergestellt und wird in der Natur abgebaut; Waschmittel ist ein Erdölderivat und reinigt zwar hartes Wasser, belastet jedoch die Umwelt.",
+        "fr": "Le savon est produit à partir d’huile végétale/animale et se décompose dans la nature ; Le détergent est un dérivé du pétrole et le nettoie avec de l'eau dure, mais il pollue l'environnement.",
+        "ru": "Мыло производится из растительного/животного масла и разлагается в природе; Моющее средство является производным нефти и очищает его в жесткой воде, но загрязняет окружающую среду.",
+        "ar": "يتم إنتاج الصابون من الزيوت النباتية/الحيوانية ويتحلل في الطبيعة؛ المنظفات عبارة عن مشتقات بترولية ويتم تنظيفها بالماء العسر، ولكنها تلوث البيئة.",
+        "zh": "肥皂由植物/动物油制成，在自然状态下会分解；洗涤剂是石油衍生物，用硬水清洗，但会污染环境。",
+        "ku": "Sabûn ji rûnê nebatî/heywanî çêdibe û di xwezayê de perçe dibe; Deterjan berhemeke petrolê ye û di ava hişk de paqij dike, lê jîngehê qirêj dike."
       }
     }
   ],
@@ -1040,14 +1040,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya Her Yerde konusunu işlerken Beyaz Sabun (Sert Sabun) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Chemistry Everywhere, which statement regarding White Soap (Hard Soap) represents the correct answer?",
-        "de": "Welche Aussage zu Weiße Seife (harte Seife) stellt im Kontext von Chemie Überall die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Chimie Partout, quelle proposition sur Savon Blanc (Savon Dur) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Химия повсюду», какой ответ относительно «Белое мыло (твердое мыло)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الكيمياء في كل مكان\" مخبرياً، أي إجابة بخصوص \"الصابون الأبيض (الصابون الصلب)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学无处不在”实验探究与教学分析中，针对“白皂（硬皂）”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Kîmya Li Her Derê\" de, kîjan bersiv derbarê \"Sabûna Spî (Sabûna Zehmet)\" de rast e?"
+        "tr": "Kimya dersinde Kimya Her Yerde ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Chemistry Everywhere, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Chemie Überall: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Chimie Partout, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Химия повсюду», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الكيمياء في كل مكان\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学无处不在”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Kîmya Li Her Derê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1116,14 +1116,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin04",
       "stem": {
-        "tr": "Kimya dersinde Kimya Her Yerde ünitesi incelenirken Hidrofil Uç ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Chemistry Everywhere, which of the following propositions concerning Hydrophilic Tip is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Chemie Überall: Welche Behauptung bezüglich Hydrophile Spitze entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Chimie Partout, laquelle des affirmations suivantes concernant Pointe hydrophile est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Химия повсюду», какое из следующих суждений о «Гидрофильный наконечник» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الكيمياء في كل مكان\"، أي من الأحكام التالية المتعلقة بـ \"نصيحة ماء\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学无处不在”核心规律时，下列关于“亲水尖端”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Kîmya Li Her Derê\" tê kirin, kîjan daraza li ser \"Tîpa hîdrofîlî\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimya Her Yerde konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Chemistry Everywhere?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Chemie Überall zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Chimie Partout ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Химия повсюду»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الكيمياء في كل مكان\"؟",
+        "zh": "根据“化学无处不在”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Kîmya Li Her Derê\" de rast e?"
       },
       "options": [
         {
@@ -1192,14 +1192,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimya Her Yerde konusundaki temel kimyasal kurallar çerçevesinde Doğal Polimer kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Natural Polymer within the fundamental principles of Chemistry Everywhere?",
-        "de": "Welche Aussage beschreibt das Konzept Natürliches Polymer im Rahmen von Chemie Überall am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Polymère naturel selon les lois de Chimie Partout?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Натуральный полимер» в рамках темы «Химия повсюду»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"البوليمر الطبيعي\" ضمن قواعد \"الكيمياء في كل مكان\"؟",
-        "zh": "根据“化学无处不在”的基本化学原理，下列哪项阐述能最准确地界定“天然高分子”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Polymer xwezayî\" di çarçoveya prensîbên \"Kîmya Li Her Derê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimya Her Yerde sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Chemistry Everywhere, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Chemie Überall: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Chimie Partout, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Химия повсюду», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الكيمياء في كل مكان\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学无处不在”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Kîmya Li Her Derê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1268,14 +1268,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimya Her Yerde sorularında karşılaşılan Termoplastik konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Chemistry Everywhere, which assertion regarding thermoplastic is correct?",
-        "de": "Welche Feststellung bezüglich Thermoplast ist nach den chemischen Gesetzmäßigkeiten von Chemie Überall richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Chimie Partout, quelle affirmation concernant thermoplastique est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Химия повсюду», какое положение относительно «термопластик» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الكيمياء في كل مكان\"، أي حكم متعلق بـ \"لدن بالحرارة\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学无处不在”经典考题中，下列有关“热塑性塑料”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Kîmya Li Her Derê\" de, kîjan daraza li ser \"termoplastîk\" rast e?"
+        "tr": "Aşağıda Kimya Her Yerde ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Chemistry Everywhere, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Chemie Überall: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Chimie Partout, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Химия повсюду», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الكيمياء في كل مكان\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学无处不在”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Kîmya Li Her Derê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1344,14 +1344,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin07",
       "stem": {
-        "tr": "Aşağıda Kimya Her Yerde ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Çamaşır Suyu (NaClO) ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Chemistry Everywhere, which statement about Bleach (NaClO) is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Chemie Überall: Welche Aussage über Bleichmittel (NaClO) ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Chimie Partout, quelle affirmation relative à Eau de Javel (NaClO) est exacte?",
-        "ru": "На основе фундаментальных положений темы «Химия повсюду», какое суждение о «Отбеливатель (NaClO)» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الكيمياء في كل مكان\"، أي عبارة حول \"التبييض (NaClO)\" صحيحة؟",
-        "zh": "基于“化学无处不在”的基础化学知识体系，下列关于“漂白剂（次氯酸钠）”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Kîmya Li Her Derê\", kîjan gotin derbarê \"Bleach (NaClO)\" de rast e?"
+        "tr": "Kimya Her Yerde konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Chemistry Everywhere, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Chemie Überall: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Chimie Partout, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Химия повсюду», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الكيمياء في كل مكان\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学无处不在”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Kîmya Li Her Derê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1420,14 +1420,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin08",
       "stem": {
-        "tr": "Kimya Her Yerde konusu kapsamında Monomer ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Chemistry Everywhere, which of the following findings regarding Monomer is scientifically verified?",
-        "de": "Im Rahmen der Einheit Chemie Überall: Welcher der folgenden Befunde zu Monomer ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Chimie Partout, laquelle des constatations suivantes concernant Monomère est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Химия повсюду», какой из следующих выводов относительно «Мономер» научно подтверждён?",
-        "ar": "في سياق موضوع \"الكيمياء في كل مكان\"، أي من النتائج التالية المتعلقة بـ \"مونومر\" مثبتة علمياً؟",
-        "zh": "在“化学无处不在”主题范畴内，下列关于“单体”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Kîmya Li Her Derê\" de, kîjan ji van encamên li ser \"Monomer\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimya Her Yerde ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Chemistry Everywhere, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Chemie Überall: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Chimie Partout, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Химия повсюду», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الكيمياء في كل مكان\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学无处不在”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Kîmya Li Her Derê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1496,14 +1496,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimya Her Yerde ünitesinde ele alınan Sabun hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Chemistry Everywhere, which statement about soap is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Chemie Überall: Welche Aussage über Seife ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Chimie Partout, quelle affirmation relative à savon est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Химия повсюду», какое утверждение о «мыло» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الكيمياء في كل مكان\"، أي عبارة حول \"صابون\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学无处不在”单元中关于“肥皂”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Kîmya Li Her Derê\", kîjan gotin li ser \"sabûn\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya Her Yerde konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Chemistry Everywhere, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Chemie Überall die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Chimie Partout, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Химия повсюду», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الكيمياء في كل مكان\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学无处不在”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Kîmya Li Her Derê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1572,14 +1572,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya Her Yerde konusunu işlerken Beyaz Sabun üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Chemistry Everywhere, which statement regarding White Soap represents the correct answer?",
-        "de": "Welche Aussage zu Weiße Seife stellt im Kontext von Chemie Überall die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Chimie Partout, quelle proposition sur Savon Blanc constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Химия повсюду», какой ответ относительно «Белое мыло» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الكيمياء في كل مكان\" مخبرياً، أي إجابة بخصوص \"الصابون الأبيض\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学无处不在”实验探究与教学分析中，针对“白皂”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Kîmya Li Her Derê\" de, kîjan bersiv derbarê \"Sabûna Spî\" de rast e?"
+        "tr": "Kimya dersinde Kimya Her Yerde ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Chemistry Everywhere, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Chemie Überall: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Chimie Partout, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Химия повсюду», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الكيمياء في كل مكان\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学无处不在”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Kîmya Li Her Derê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1648,14 +1648,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin11",
       "stem": {
-        "tr": "Kimya dersinde Kimya Her Yerde ünitesi incelenirken Beyaz Sabun (Sert Sabun) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Chemistry Everywhere, which of the following propositions concerning White Soap (Hard Soap) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Chemie Überall: Welche Behauptung bezüglich Weiße Seife (harte Seife) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Chimie Partout, laquelle des affirmations suivantes concernant Savon Blanc (Savon Dur) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Химия повсюду», какое из следующих суждений о «Белое мыло (твердое мыло)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الكيمياء في كل مكان\"، أي من الأحكام التالية المتعلقة بـ \"الصابون الأبيض (الصابون الصلب)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学无处不在”核心规律时，下列关于“白皂（硬皂）”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Kîmya Li Her Derê\" tê kirin, kîjan daraza li ser \"Sabûna Spî (Sabûna Zehmet)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimya Her Yerde konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Chemistry Everywhere?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Chemie Überall zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Chimie Partout ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Химия повсюду»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الكيمياء في كل مكان\"؟",
+        "zh": "根据“化学无处不在”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Kîmya Li Her Derê\" de rast e?"
       },
       "options": [
         {
@@ -1724,14 +1724,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimya Her Yerde konusundaki temel kimyasal kurallar çerçevesinde Hidrofil Uç kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Hydrophilic Tip within the fundamental principles of Chemistry Everywhere?",
-        "de": "Welche Aussage beschreibt das Konzept Hydrophile Spitze im Rahmen von Chemie Überall am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Pointe hydrophile selon les lois de Chimie Partout?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Гидрофильный наконечник» в рамках темы «Химия повсюду»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"نصيحة ماء\" ضمن قواعد \"الكيمياء في كل مكان\"؟",
-        "zh": "根据“化学无处不在”的基本化学原理，下列哪项阐述能最准确地界定“亲水尖端”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Tîpa hîdrofîlî\" di çarçoveya prensîbên \"Kîmya Li Her Derê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimya Her Yerde sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Chemistry Everywhere, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Chemie Überall: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Chimie Partout, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Химия повсюду», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الكيمياء في كل مكان\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学无处不在”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Kîmya Li Her Derê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1800,14 +1800,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimya Her Yerde sorularında karşılaşılan Doğal Polimer konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Chemistry Everywhere, which assertion regarding Natural Polymer is correct?",
-        "de": "Welche Feststellung bezüglich Natürliches Polymer ist nach den chemischen Gesetzmäßigkeiten von Chemie Überall richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Chimie Partout, quelle affirmation concernant Polymère naturel est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Химия повсюду», какое положение относительно «Натуральный полимер» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الكيمياء في كل مكان\"، أي حكم متعلق بـ \"البوليمر الطبيعي\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学无处不在”经典考题中，下列有关“天然高分子”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Kîmya Li Her Derê\" de, kîjan daraza li ser \"Polymer xwezayî\" rast e?"
+        "tr": "Aşağıda Kimya Her Yerde ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Chemistry Everywhere, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Chemie Überall: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Chimie Partout, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Химия повсюду», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الكيمياء في كل مكان\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学无处不在”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Kîmya Li Her Derê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1876,14 +1876,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin14",
       "stem": {
-        "tr": "Aşağıda Kimya Her Yerde ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Termoplastik ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Chemistry Everywhere, which statement about thermoplastic is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Chemie Überall: Welche Aussage über Thermoplast ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Chimie Partout, quelle affirmation relative à thermoplastique est exacte?",
-        "ru": "На основе фундаментальных положений темы «Химия повсюду», какое суждение о «термопластик» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الكيمياء في كل مكان\"، أي عبارة حول \"لدن بالحرارة\" صحيحة؟",
-        "zh": "基于“化学无处不在”的基础化学知识体系，下列关于“热塑性塑料”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Kîmya Li Her Derê\", kîjan gotin derbarê \"termoplastîk\" de rast e?"
+        "tr": "Kimya Her Yerde konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Chemistry Everywhere, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Chemie Überall: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Chimie Partout, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Химия повсюду», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الكيمياء في كل مكان\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学无处不在”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Kîmya Li Her Derê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1952,14 +1952,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin15",
       "stem": {
-        "tr": "Kimya Her Yerde konusu kapsamında Çamaşır Suyu (NaClO) ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Chemistry Everywhere, which of the following findings regarding Bleach (NaClO) is scientifically verified?",
-        "de": "Im Rahmen der Einheit Chemie Überall: Welcher der folgenden Befunde zu Bleichmittel (NaClO) ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Chimie Partout, laquelle des constatations suivantes concernant Eau de Javel (NaClO) est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Химия повсюду», какой из следующих выводов относительно «Отбеливатель (NaClO)» научно подтверждён?",
-        "ar": "في سياق موضوع \"الكيمياء في كل مكان\"، أي من النتائج التالية المتعلقة بـ \"التبييض (NaClO)\" مثبتة علمياً؟",
-        "zh": "在“化学无处不在”主题范畴内，下列关于“漂白剂（次氯酸钠）”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Kîmya Li Her Derê\" de, kîjan ji van encamên li ser \"Bleach (NaClO)\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimya Her Yerde ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Chemistry Everywhere, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Chemie Überall: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Chimie Partout, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Химия повсюду», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الكيمياء في كل مكان\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学无处不在”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Kîmya Li Her Derê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2028,14 +2028,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimya Her Yerde ünitesinde ele alınan Monomer hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Chemistry Everywhere, which statement about Monomer is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Chemie Überall: Welche Aussage über Monomer ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Chimie Partout, quelle affirmation relative à Monomère est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Химия повсюду», какое утверждение о «Мономер» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الكيمياء في كل مكان\"، أي عبارة حول \"مونومر\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学无处不在”单元中关于“单体”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Kîmya Li Her Derê\", kîjan gotin li ser \"Monomer\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya Her Yerde konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Chemistry Everywhere, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Chemie Überall die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Chimie Partout, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Химия повсюду», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الكيمياء في كل مكان\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学无处不在”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Kîmya Li Her Derê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

@@ -263,11 +263,25 @@ export class MockCanvasRenderingContext2D {
   globalAlpha = 1.0;
   operations: string[] = [];
 
+  scaleX = 1;
+  scaleY = 1;
+  private stateStack: Array<{
+    scaleX: number;
+    scaleY: number;
+    fillStyle: string;
+    strokeStyle: string;
+    lineWidth: number;
+    globalAlpha: number;
+  }> = [];
+
   clearRect(x: number, y: number, w: number, h: number): void {
     this.operations.push(`clearRect(${x},${y},${w},${h})`);
   }
   fillRect(x: number, y: number, w: number, h: number): void {
     this.operations.push(`fillRect(${x},${y},${w},${h})`);
+  }
+  strokeRect(x: number, y: number, w: number, h: number): void {
+    this.operations.push(`strokeRect(${x},${y},${w},${h})`);
   }
   beginPath(): void {
     this.operations.push('beginPath()');
@@ -282,16 +296,66 @@ export class MockCanvasRenderingContext2D {
     this.operations.push('stroke()');
   }
   save(): void {
+    this.stateStack.push({
+      scaleX: this.scaleX,
+      scaleY: this.scaleY,
+      fillStyle: this.fillStyle,
+      strokeStyle: this.strokeStyle,
+      lineWidth: this.lineWidth,
+      globalAlpha: this.globalAlpha,
+    });
     this.operations.push('save()');
   }
   restore(): void {
+    const prev = this.stateStack.pop();
+    if (prev) {
+      this.scaleX = prev.scaleX;
+      this.scaleY = prev.scaleY;
+      this.fillStyle = prev.fillStyle;
+      this.strokeStyle = prev.strokeStyle;
+      this.lineWidth = prev.lineWidth;
+      this.globalAlpha = prev.globalAlpha;
+    }
     this.operations.push('restore()');
   }
   translate(x: number, y: number): void {
     this.operations.push(`translate(${x},${y})`);
   }
+  scale(x: number, y: number): void {
+    this.scaleX *= x;
+    this.scaleY *= y;
+    this.operations.push(`scale(${x},${y})`);
+  }
   rotate(angle: number): void {
     this.operations.push(`rotate(${angle})`);
+  }
+  moveTo(x: number, y: number): void {
+    this.operations.push(`moveTo(${x},${y})`);
+  }
+  lineTo(x: number, y: number): void {
+    this.operations.push(`lineTo(${x},${y})`);
+  }
+  closePath(): void {
+    this.operations.push('closePath()');
+  }
+  fillText(text: string, x: number, y: number): void {
+    this.operations.push(`fillText(${text},${x},${y})`);
+  }
+  strokeText(text: string, x: number, y: number): void {
+    this.operations.push(`strokeText(${text},${x},${y})`);
+  }
+  measureText(text: string) {
+    return { width: text.length * 7 };
+  }
+  createRadialGradient(_x0: number, _y0: number, _r0: number, _x1: number, _y1: number, _r1: number) {
+    return {
+      addColorStop: (_offset: number, _color: string) => {},
+    };
+  }
+  createLinearGradient(_x0: number, _y0: number, _x1: number, _y1: number) {
+    return {
+      addColorStop: (_offset: number, _color: string) => {},
+    };
   }
 }
 
@@ -568,7 +632,9 @@ export async function renderStoreHook<T>(useHook: () => T): Promise<{
       await act(fn);
     },
     unmount: () => {
-      root.unmount();
+      void act(() => {
+        root.unmount();
+      });
     },
   };
 }

@@ -21,17 +21,26 @@ import {
   Layers,
   Flame,
   Award,
+  Bell,
+  BellOff,
+  UserPlus,
+  Trash2,
+  Edit2,
+  Target,
+  Check,
 } from 'lucide-react';
 import type { CompiledQuestion, LanguageCode } from '../../types/chemistry';
-import type { AppState } from '../../store/useAppStore';
+import type { AppState, LearnerProfile } from '../../store/useAppStore';
 import type { DailyGoal } from '../../store/usePreferences';
 import { LANGUAGES, UI_TRANSLATIONS } from '../../i18n/translations';
 import { MUSIC_TRACKS } from '../../audio/musicEngine';
 import { ALL_CHEMISTRY_UNITS } from '../../data/units';
 import { compileUnitQuestions } from '../../engine/questionGenerator';
 import { QuizSessionModal } from '../exams/QuizSessionModal';
+import { StudyStatsDashboard } from '../dashboard/StudyStatsDashboard';
+import { notificationManager } from '../../utils/notificationManager';
 
-export type ProfileTab = 'analytics' | 'mistakes' | 'bookmarks' | 'settings';
+export type ProfileTab = 'dashboard' | 'analytics' | 'mistakes' | 'bookmarks' | 'profiles' | 'settings';
 
 export interface ProfileViewProps {
   lang: LanguageCode;
@@ -59,6 +68,8 @@ interface GamificationBadge {
   isUnlocked: boolean;
 }
 
+const AVATAR_OPTIONS = ['👨‍🎓', '👩‍🎓', '🔬', '⚛️', '🧪', '🏆', '🚀', '🎯'];
+
 export const ProfileView: React.FC<ProfileViewProps> = ({
   lang,
   store,
@@ -77,13 +88,23 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
   onRelaunchOnboarding,
 }) => {
   const t = UI_TRANSLATIONS[lang];
+  const activeProfile = store.activeProfile;
 
   // Active segmented tab
-  const [activeTab, setActiveTab] = useState<ProfileTab>('analytics');
+  const [activeTab, setActiveTab] = useState<ProfileTab>('dashboard');
 
   // Hata Defteri Filter: 'ALL' | 'TYT' | 'AYT' | unitId
   const [mistakeExamFilter, setMistakeExamFilter] = useState<'ALL' | 'TYT' | 'AYT'>('ALL');
   const [mistakeUnitFilter, setMistakeUnitFilter] = useState<string>('ALL');
+
+  // Profile Manager Modal / Form State
+  const [showNewProfileModal, setShowNewProfileModal] = useState(false);
+  const [newProfileName, setNewProfileName] = useState('');
+  const [newProfileAvatar, setNewProfileAvatar] = useState('👨‍🎓');
+  const [newProfileTrack, setNewProfileTrack] = useState<'TYT_FIRST' | 'TYT_ONLY' | 'AYT_FOCUS'>('TYT_FIRST');
+
+  // Notification Test Feedback
+  const [notificationFeedback, setNotificationFeedback] = useState<string | null>(null);
 
   // Active Quiz Modal Session (for retrying mistakes or bookmarks)
   const [activeQuizSession, setActiveQuizSession] = useState<{
@@ -198,98 +219,88 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
         isUnlocked: hasHighExamNet || store.xp >= 1000,
       },
     ];
-  }, [totalSolved, store.xp, store.streakDays, store.mistakeQuestionIds.length, store.examResults]);
+  }, [totalSolved, store.xp, store.mistakeQuestionIds.length, store.examResults, store.streakDays]);
 
-  // 24 Units Progress Calculation
-  const unitProgressList = useMemo(() => {
-    return ALL_CHEMISTRY_UNITS.map((u) => {
-      // Questions solved in this unit: IDs matching `u.id-q...`
-      const prefix = `${u.id}-`;
-      const solvedInUnit = Object.keys(store.solvedQuestionIds).filter((id) => id.startsWith(prefix)).length;
-      return {
-        unit: u,
-        solvedCount: solvedInUnit,
-        percent: Math.min(100, Math.round((solvedInUnit / 128) * 100)),
-      };
-    });
-  }, [store.solvedQuestionIds]);
+  // Handle Create Profile
+  const handleCreateProfile = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newProfileName.trim()) return;
+    const newId = store.createProfile(newProfileName.trim(), newProfileAvatar, newProfileTrack);
+    setShowNewProfileModal(false);
+    setNewProfileName('');
+    setActiveTab('dashboard');
+  };
+
+  // Handle Notifications Toggle
+  const handleToggleNotifications = async (enabled: boolean) => {
+    store.updateProfile(activeProfile.id, { notificationsEnabled: enabled });
+    if (enabled) {
+      const granted = await notificationManager.requestPermission();
+      if (granted) {
+        await notificationManager.scheduleDailyReminder(
+          activeProfile.reminderTime || '20:00',
+          'Kimya YKS Günlük Çalışma Hatırlatması',
+          `Merhaba ${activeProfile.name}! Günlük hedefini tamamlamak için 15 dakika ayır.`,
+          true
+        );
+        setNotificationFeedback('✅ Bildirimler aktif edildi ve günlük hatırlatma planlandı.');
+      } else {
+        setNotificationFeedback('⚠️ Tarayıcı bildirim izni verilmedi.');
+      }
+    } else {
+      await notificationManager.cancelAllReminders();
+      setNotificationFeedback('🔕 Bildirimler tamamen kapatıldı.');
+    }
+    setTimeout(() => setNotificationFeedback(null), 4000);
+  };
+
+  // Handle Reminder Time Change
+  const handleChangeReminderTime = (time: string) => {
+    store.updateProfile(activeProfile.id, { reminderTime: time });
+    if (activeProfile.notificationsEnabled) {
+      notificationManager.scheduleDailyReminder(
+        time,
+        'Kimya YKS Günlük Çalışma Hatırlatması',
+        `Merhaba ${activeProfile.name}! Günlük hedefini tamamlamak için 15 dakika ayır.`,
+        true
+      );
+    }
+  };
 
   return (
-    <section className="profile-view-container" aria-label={t.profile.title}>
-      {/* Top Hero User Profile Bar */}
-      <div
-        style={{
-          background: 'linear-gradient(135deg, var(--bg-surface), var(--bg-elevated))',
-          border: '1px solid var(--border-subtle)',
-          borderRadius: 'var(--radius-lg)',
-          padding: '1.25rem 1.5rem',
-          marginBottom: '1.25rem',
-          boxShadow: 'var(--shadow-card)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-          gap: '1rem',
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <div
-            style={{
-              width: 52,
-              height: 52,
-              borderRadius: '50%',
-              background: 'linear-gradient(135deg, var(--brand-primary), var(--accent-cyan))',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#fff',
-              fontSize: '1.5rem',
-              fontWeight: 800,
-              boxShadow: 'var(--shadow-glow-cyan)',
-            }}
-          >
-            {store.level}
+    <section className="profile-container" aria-label={t.nav.profile}>
+      {/* Profile Header Card */}
+      <div className="profile-hero-card">
+        <div className="profile-hero-main-row">
+          <div className="profile-avatar-badge">
+            <span className="profile-avatar-icon">{activeProfile.avatar || '👨‍🎓'}</span>
           </div>
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <h1 style={{ margin: 0, fontSize: '1.3rem', fontWeight: 800 }}>
+
+          <div className="profile-titles-col">
+            <div className="profile-name-tag-row">
+              <h1 className="profile-user-name">{activeProfile.name}</h1>
+              <span className="profile-level-pill">
                 {t.stats.level} {store.level}
-              </h1>
-              <span
-                style={{
-                  fontSize: '0.75rem',
-                  fontWeight: 700,
-                  padding: '0.15rem 0.5rem',
-                  borderRadius: 'var(--radius-full)',
-                  background: 'rgba(245, 158, 11, 0.15)',
-                  color: 'var(--accent-amber)',
-                  border: '1px solid rgba(245, 158, 11, 0.3)',
-                }}
-              >
+              </span>
+              <span className="profile-streak-pill">
                 🔥 {store.streakDays} Gün Seri
               </span>
             </div>
-            <p style={{ margin: '0.2rem 0 0', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+            <p className="profile-telemetry-sub">
               <strong>{store.xp} XP</strong> • {totalSolved} Soru Çözüldü • %{accuracyPercent} Doğruluk Oranı
             </p>
           </div>
-        </div>
 
-        {/* Global Accuracy Gauge */}
-        <div
-          style={{
-            background: 'var(--bg-surface)',
-            padding: '0.625rem 1.125rem',
-            borderRadius: 'var(--radius-md)',
-            border: '1px solid var(--border-subtle)',
-            textAlign: 'center',
-          }}
-        >
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase' }}>
-            Genel Başarı
-          </div>
-          <div style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--brand-primary)' }}>
-            %{accuracyPercent}
+          <div className="profile-hero-actions">
+            <button
+              type="button"
+              className="quick-profile-switch-btn"
+              onClick={() => setActiveTab('profiles')}
+              title="Profil Değiştir veya Yönet"
+            >
+              <User size={15} />
+              <span>Profil Değiştir ({store.profiles.length})</span>
+            </button>
           </div>
         </div>
       </div>
@@ -299,12 +310,23 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
         <button
           type="button"
           role="tab"
+          aria-selected={activeTab === 'dashboard'}
+          className={`profile-seg-btn ${activeTab === 'dashboard' ? 'active' : ''}`}
+          onClick={() => setActiveTab('dashboard')}
+        >
+          <Sparkles size={17} />
+          <span>AI Koç & Dashboard</span>
+        </button>
+
+        <button
+          type="button"
+          role="tab"
           aria-selected={activeTab === 'analytics'}
           className={`profile-seg-btn ${activeTab === 'analytics' ? 'active' : ''}`}
           onClick={() => setActiveTab('analytics')}
         >
           <BarChart3 size={17} />
-          <span>Performans & İstatistikler</span>
+          <span>Ünite Analitiği</span>
         </button>
 
         <button
@@ -332,14 +354,40 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
         <button
           type="button"
           role="tab"
+          aria-selected={activeTab === 'profiles'}
+          className={`profile-seg-btn ${activeTab === 'profiles' ? 'active' : ''}`}
+          onClick={() => setActiveTab('profiles')}
+        >
+          <User size={17} />
+          <span>Profiller ({store.profiles.length})</span>
+        </button>
+
+        <button
+          type="button"
+          role="tab"
           aria-selected={activeTab === 'settings'}
           className={`profile-seg-btn ${activeTab === 'settings' ? 'active' : ''}`}
           onClick={() => setActiveTab('settings')}
         >
           <Settings size={17} />
-          <span>{t.nav.profile} & Ayarlar</span>
+          <span>Ayarlar</span>
         </button>
       </nav>
+
+      {/* ================================================================= */}
+      {/* TAB 0: AI KOÇ & SVG GRAFİK DASHBOARD                               */}
+      {/* ================================================================= */}
+      {activeTab === 'dashboard' && (
+        <StudyStatsDashboard
+          profile={activeProfile}
+          lang={lang}
+          onNavigateTab={(tab, meta) => {
+            if (tab === 'exams' && meta?.mode === 'mistakes') {
+              setActiveTab('mistakes');
+            }
+          }}
+        />
+      )}
 
       {/* ================================================================= */}
       {/* TAB 1: PERFORMANS ANALİTİĞİ & 24 ÜNİTE İLERLEMESİ                 */}
@@ -370,249 +418,129 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
             </div>
 
             <div style={{ background: 'var(--bg-surface)', border: '1px solid var(--border-subtle)', borderRadius: 'var(--radius-md)', padding: '1rem', textAlign: 'center' }}>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>DENEME SINAVI</div>
-              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--accent-amber)', marginTop: '0.25rem' }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>TAMAMLANAN DENEME</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--accent-cyan)', marginTop: '0.25rem' }}>
                 {store.examResults.length}
               </div>
             </div>
           </div>
 
-          {/* Net Score History & Trend */}
-          <div
-            style={{
-              background: 'var(--bg-surface)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              padding: '1.25rem',
-            }}
-          >
-            <h3 style={{ margin: '0 0 1rem', fontSize: '1.05rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <TrendingUp size={20} color="var(--brand-primary)" />
-              <span>Son Deneme Netleri ve İlerleme Geçmişi</span>
-            </h3>
-
-            {store.examResults.length === 0 ? (
-              <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.875rem' }}>
-                Henüz tamamlanmış bir deneme sınavı bulunmuyor. TYT veya AYT branş denemesi çözerek net trendini buradan takip edebilirsin.
-              </p>
-            ) : (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.625rem' }}>
-                {store.examResults.slice(0, 8).map((res) => (
-                  <div
-                    key={res.id}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      padding: '0.625rem 0.875rem',
-                      background: 'var(--bg-elevated)',
-                      borderRadius: 'var(--radius-sm)',
-                      fontSize: '0.85rem',
-                    }}
-                  >
-                    <div>
-                      <div style={{ fontWeight: 700, color: 'var(--text-primary)' }}>
-                        {res.modeTitle}
-                      </div>
-                      <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                        {res.dateIso.slice(0, 10)} • {res.correct} Doğru, {res.wrong} Yanlış, {res.empty} Boş
-                      </div>
-                    </div>
-                    <div style={{ textAlign: 'right' }}>
-                      <span
-                        style={{
-                          fontSize: '1.15rem',
-                          fontWeight: 900,
-                          color: res.netScore >= 5 ? 'var(--accent-emerald)' : 'var(--text-primary)',
-                        }}
-                      >
-                        {res.netScore.toFixed(2)} Net
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* 8 Gamification Badges Grid */}
-          <div
-            style={{
-              background: 'var(--bg-surface)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              padding: '1.25rem',
-            }}
-          >
-            <h3 style={{ margin: '0 0 1rem', fontSize: '1.05rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Award size={20} color="var(--accent-amber)" />
-              <span>Kazanılan Başarı Rozetleri (8)</span>
-            </h3>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '0.75rem' }}>
+          {/* Gamification Badges (8 Badges) */}
+          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+              <Award size={20} color="var(--brand-primary)" />
+              <h3 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800 }}>
+                Kazanılan Başarı Rozetleri (8 Başarı)
+              </h3>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem' }}>
               {badges.map((b) => (
                 <div
                   key={b.id}
                   style={{
-                    background: b.isUnlocked ? 'var(--bg-elevated)' : 'var(--bg-subtle)',
-                    border: `1px solid ${b.isUnlocked ? 'var(--accent-amber)' : 'var(--border-subtle)'}`,
+                    background: b.isUnlocked ? 'var(--bg-surface)' : 'var(--bg-elevated)',
+                    border: `1.5px solid ${b.isUnlocked ? 'var(--brand-primary)' : 'var(--border-subtle)'}`,
                     borderRadius: 'var(--radius-md)',
-                    padding: '0.875rem',
-                    opacity: b.isUnlocked ? 1 : 0.6,
+                    padding: '0.85rem',
                     display: 'flex',
-                    alignItems: 'flex-start',
+                    alignItems: 'center',
                     gap: '0.75rem',
+                    opacity: b.isUnlocked ? 1 : 0.5,
                   }}
                 >
-                  <div style={{ fontSize: '1.75rem', flexShrink: 0 }}>
-                    {b.isUnlocked ? b.icon : '🔒'}
-                  </div>
+                  <div style={{ fontSize: '1.75rem' }}>{b.icon}</div>
                   <div>
-                    <div style={{ fontWeight: 800, fontSize: '0.9rem', color: b.isUnlocked ? 'var(--text-primary)' : 'var(--text-muted)' }}>
+                    <strong style={{ display: 'block', fontSize: '0.9rem', color: 'var(--text-primary)' }}>
                       {b.title}
-                    </div>
-                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.2rem', lineHeight: 1.3 }}>
+                    </strong>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: 1.3 }}>
                       {b.description}
-                    </div>
+                    </span>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* 24 Unit Progress Bars */}
-          <div
-            style={{
-              background: 'var(--bg-surface)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              padding: '1.25rem',
-            }}
-          >
-            <h3 style={{ margin: '0 0 1rem', fontSize: '1.05rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <BookOpen size={20} color="var(--accent-cyan)" />
-              <span>24 Ünite Müfredat Çözüm İlerlemesi (3.072 Soru)</span>
-            </h3>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.875rem' }}>
-              {unitProgressList.map(({ unit, solvedCount, percent }) => (
-                <div
-                  key={unit.id}
-                  style={{
-                    background: 'var(--bg-elevated)',
-                    border: '1px solid var(--border-subtle)',
-                    borderRadius: 'var(--radius-sm)',
-                    padding: '0.75rem',
-                  }}
-                >
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.825rem' }}>
-                    <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>
-                      {unit.id.toUpperCase()} • {unit.title[lang] || unit.title.tr}
+          {/* 24 Units Progress Breakdown */}
+          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+              <BookOpen size={20} color="var(--brand-primary)" />
+              <h3 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800 }}>
+                24 Ünite Ustalık Dağılımı
+              </h3>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.625rem' }}>
+              {ALL_CHEMISTRY_UNITS.map((u) => {
+                let solved = 0;
+                for (let q = 1; q <= 128; q++) {
+                  const qId = `${u.id}-q${String(q).padStart(3, '0')}`;
+                  if (store.solvedQuestionIds[qId]) solved++;
+                }
+                const pct = Math.min(100, Math.round((solved / 128) * 100));
+                return (
+                  <div key={u.id} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                    <span style={{ fontSize: '0.75rem', fontWeight: 800, width: '42px', color: 'var(--text-muted)' }}>
+                      {u.id.toUpperCase()}
                     </span>
-                    <span style={{ fontWeight: 800, color: percent === 100 ? 'var(--accent-emerald)' : 'var(--brand-primary)' }}>
-                      {solvedCount} / 128 (%{percent})
+                    <span style={{ fontSize: '0.85rem', flex: 1, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                      {u.title[lang] || u.title.tr}
+                    </span>
+                    <div style={{ width: '120px', height: '8px', background: 'var(--bg-elevated)', borderRadius: '4px', overflow: 'hidden' }}>
+                      <div
+                        style={{
+                          height: '100%',
+                          width: `${pct}%`,
+                          background: u.exam === 'TYT' ? 'var(--brand-primary)' : 'var(--brand-secondary)',
+                          borderRadius: '4px',
+                        }}
+                      />
+                    </div>
+                    <span style={{ fontSize: '0.8rem', fontWeight: 700, width: '38px', textAlign: 'end' }}>
+                      %{pct}
                     </span>
                   </div>
-                  <div className="unit-progress-bar">
-                    <div
-                      className="unit-progress-fill"
-                      style={{
-                        width: `${percent}%`,
-                        background: percent === 100 ? 'var(--accent-emerald)' : undefined,
-                      }}
-                    />
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
       )}
 
       {/* ================================================================= */}
-      {/* TAB 2: HATA DEFTERİ (MISTAKE NOTEBOOK)                            */}
+      {/* TAB 2: HATA DEFTERİ (WRONG QUESTIONS NOTEBOOK)                     */}
       {/* ================================================================= */}
       {activeTab === 'mistakes' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-          {/* Header & Filter Bar */}
-          <div
-            style={{
-              background: 'var(--bg-surface)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              padding: '1.25rem',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              flexWrap: 'wrap',
-              gap: '1rem',
-            }}
-          >
-            <div>
-              <h2 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <RotateCcw size={22} color="var(--accent-ruby)" />
-                <span>Hata Defteri Mastery</span>
-              </h2>
-              <p style={{ margin: '0.25rem 0 0', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                Yanlış çözdüğün {store.mistakeQuestionIds.length} soru. Doğru yanıtladığında otomatik olarak listeden düşer!
-              </p>
-            </div>
-
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+              Yanlış çözdüğün <strong>{store.mistakeQuestionIds.length}</strong> soru listeleniyor.
+            </p>
             {filteredMistakes.length > 0 && (
               <button
                 type="button"
                 className="btn-primary"
                 onClick={() => {
                   setActiveQuizSession({
-                    title: 'Hata Defteri • Filtrelenen Sorular',
-                    subtitle: `${filteredMistakes.length} Soru • Pekiştirme Oturumu`,
+                    title: 'Hata Defteri Tekrar Sınavı',
+                    subtitle: `${filteredMistakes.length} Yanlış Soru`,
                     examType: 'MISTAKE',
                     questions: filteredMistakes,
                   });
                 }}
-                style={{ background: 'var(--accent-ruby)', borderColor: 'var(--accent-ruby)', gap: '0.4rem' }}
               >
-                <Play size={16} fill="currentColor" />
-                <span>Filtrelenenleri Çöz ({filteredMistakes.length})</span>
+                <Play size={16} />
+                <span>Tüm Hataları Tekrar Çöz ({filteredMistakes.length})</span>
               </button>
             )}
           </div>
 
-          {/* Filters Row */}
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
-            <button
-              type="button"
-              className={mistakeExamFilter === 'ALL' ? 'primary-btn' : 'secondary-btn'}
-              onClick={() => setMistakeExamFilter('ALL')}
-              style={{ fontSize: '0.85rem', padding: '0.35rem 0.75rem' }}
-            >
-              Tüm Sorular
-            </button>
-            <button
-              type="button"
-              className={mistakeExamFilter === 'TYT' ? 'primary-btn' : 'secondary-btn'}
-              onClick={() => setMistakeExamFilter('TYT')}
-              style={{ fontSize: '0.85rem', padding: '0.35rem 0.75rem' }}
-            >
-              TYT Hataları
-            </button>
-            <button
-              type="button"
-              className={mistakeExamFilter === 'AYT' ? 'primary-btn' : 'secondary-btn'}
-              onClick={() => setMistakeExamFilter('AYT')}
-              style={{ fontSize: '0.85rem', padding: '0.35rem 0.75rem' }}
-            >
-              AYT Hataları
-            </button>
-          </div>
-
-          {/* Questions List */}
           {filteredMistakes.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '3.5rem 1rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-md)' }}>
-              <CheckCircle2 size={48} color="var(--accent-emerald)" style={{ margin: '0 auto 0.75rem' }} />
-              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.2rem' }}>Seçili Kriterde Hata Bulunmuyor!</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-                Harika! Yanlış yaptığın hiçbir soru kalmadı.
+            <div className="placeholder-card" style={{ padding: '2.5rem', textAlign: 'center' }}>
+              <CheckCircle2 size={42} color="var(--accent-emerald)" style={{ margin: '0 auto 0.75rem' }} />
+              <h3>Harika! Hata Defterin Tertemiz</h3>
+              <p style={{ color: 'var(--text-muted)' }}>
+                Yanlış yaptığın hiçbir soru bulunmuyor veya tüm hatalarını çözerek ustalaştın.
               </p>
             </div>
           ) : (
@@ -637,22 +565,17 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
                         style={{
                           fontSize: '0.75rem',
                           fontWeight: 700,
-                          background: 'rgba(244, 63, 94, 0.15)',
-                          color: 'var(--accent-ruby)',
+                          background: q.exam === 'TYT' ? 'rgba(29, 78, 216, 0.15)' : 'rgba(13, 148, 136, 0.15)',
+                          color: q.exam === 'TYT' ? 'var(--brand-primary)' : 'var(--brand-secondary)',
                           padding: '0.15rem 0.45rem',
                           borderRadius: '4px',
                         }}
                       >
-                        {q.unitId.toUpperCase()}
+                        {q.exam} • {q.unitId.toUpperCase()}
                       </span>
                       <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
                         {q.id}
                       </span>
-                      {q.diagram && (
-                        <span style={{ fontSize: '0.75rem', color: 'var(--accent-cyan)' }}>
-                          • Şekilli
-                        </span>
-                      )}
                     </div>
                     <p
                       style={{
@@ -674,13 +597,13 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
                     className="btn-secondary"
                     onClick={() => {
                       setActiveQuizSession({
-                        title: `${q.unitId.toUpperCase()} • Tekrar Çöz`,
-                        subtitle: 'Hata Defteri Mastery',
+                        title: `${q.unitId.toUpperCase()} • Hata Tekrarı`,
+                        subtitle: 'ÖSYM İkiz Soru Çözümü',
                         examType: 'MISTAKE',
                         questions: [q],
                       });
                     }}
-                    style={{ flexShrink: 0, padding: '0.45rem 0.85rem', fontSize: '0.85rem' }}
+                    style={{ padding: '0.45rem 0.85rem', fontSize: '0.85rem' }}
                   >
                     Tekrar Çöz
                   </button>
@@ -692,59 +615,39 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
       )}
 
       {/* ================================================================= */}
-      {/* TAB 3: YILDIZLI SORULAR (BOOKMARKED QUESTIONS)                    */}
+      {/* TAB 3: YILDIZLI SORULAR (BOOKMARKS)                                */}
       {/* ================================================================= */}
       {activeTab === 'bookmarks' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-          <div
-            style={{
-              background: 'var(--bg-surface)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              padding: '1.25rem',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              flexWrap: 'wrap',
-              gap: '1rem',
-            }}
-          >
-            <div>
-              <h2 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Star size={22} color="var(--accent-amber)" fill="var(--accent-amber)" />
-                <span>Yıldızlı Sorular Koleksiyonu</span>
-              </h2>
-              <p style={{ margin: '0.25rem 0 0', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                {starredQuestions.length} soru favorilerine eklendi.
-              </p>
-            </div>
-
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+              Yıldızladığın <strong>{store.bookmarkedQuestionIds.length}</strong> soru listeleniyor.
+            </p>
             {starredQuestions.length > 0 && (
               <button
                 type="button"
                 className="btn-primary"
                 onClick={() => {
                   setActiveQuizSession({
-                    title: 'Yıldızlı Sorular • Özel Pratik',
-                    subtitle: `${starredQuestions.length} Favori Soru`,
+                    title: 'Yıldızlı Sorular Tekrar Sınavı',
+                    subtitle: `${starredQuestions.length} Soru`,
                     examType: 'BOOKMARK',
                     questions: starredQuestions,
                   });
                 }}
-                style={{ background: 'var(--accent-amber)', color: '#000', borderColor: 'var(--accent-amber)', gap: '0.4rem' }}
               >
-                <Play size={16} fill="currentColor" />
-                <span>Yıldızlı Soruları Çöz ({starredQuestions.length})</span>
+                <Play size={16} />
+                <span>Tüm Yıldızlıları Çöz ({starredQuestions.length})</span>
               </button>
             )}
           </div>
 
           {starredQuestions.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '3.5rem 1rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-md)' }}>
-              <Star size={48} color="var(--accent-amber)" style={{ margin: '0 auto 0.75rem' }} />
-              <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.2rem' }}>Henüz Yıldızlı Soru Yok</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-                Test çözerken sağ üstteki yıldız ikonuna tıklayarak beğendiğin soruları buraya kaydedebilirsin.
+            <div className="placeholder-card" style={{ padding: '2.5rem', textAlign: 'center' }}>
+              <Star size={42} color="var(--accent-amber)" style={{ margin: '0 auto 0.75rem' }} />
+              <h3>Henüz Yıldızlı Soru Eklenmedi</h3>
+              <p style={{ color: 'var(--text-muted)' }}>
+                Soru bankasında veya denemelerde beğendiğin soruların yıldız ikonuna tıklayarak buraya kaydedebilirsin.
               </p>
             </div>
           ) : (
@@ -829,10 +732,388 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
       )}
 
       {/* ================================================================= */}
-      {/* TAB 4: AYARLAR & TERCİHLER                                        */}
+      {/* TAB 4: PROFİL YÖNETİMİ (MULTI-PROFILE MANAGER)                    */}
+      {/* ================================================================= */}
+      {activeTab === 'profiles' && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem' }}>
+            <div>
+              <h3 style={{ margin: 0, fontSize: '1.15rem', fontWeight: 800 }}>
+                Öğrenci Profilleri ({store.profiles.length})
+              </h3>
+              <p style={{ margin: '0.2rem 0 0', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+                Farklı öğrenciler veya farklı hedefler için izole çalışma istatistikleri ve hedefler oluşturun.
+              </p>
+            </div>
+            <button
+              type="button"
+              className="btn-primary"
+              onClick={() => setShowNewProfileModal(true)}
+            >
+              <UserPlus size={16} />
+              <span>Yeni Profil Ekle</span>
+            </button>
+          </div>
+
+          {/* New Profile Form Modal */}
+          {showNewProfileModal && (
+            <div className="placeholder-card" style={{ padding: '1.25rem', border: '2px solid var(--brand-primary)', background: 'var(--bg-surface)' }}>
+              <h4 style={{ margin: '0 0 0.8rem', fontSize: '1.05rem', fontWeight: 800 }}>Yeni Öğrenci Profili Oluştur</h4>
+              <form onSubmit={handleCreateProfile} style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.3rem' }}>
+                    Öğrenci Adı / Takma Ad
+                  </label>
+                  <input
+                    type="text"
+                    value={newProfileName}
+                    onChange={(e) => setNewProfileName(e.target.value)}
+                    placeholder="Örn: Ayşe YKS 2027"
+                    required
+                    style={{
+                      width: '100%',
+                      padding: '0.6rem 0.8rem',
+                      borderRadius: '8px',
+                      background: 'var(--bg-elevated)',
+                      color: 'var(--text-primary)',
+                      border: '1px solid var(--border-subtle)',
+                      boxSizing: 'border-box',
+                    }}
+                  />
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.3rem' }}>
+                    Avatar Seçimi
+                  </label>
+                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                    {AVATAR_OPTIONS.map((av) => (
+                      <button
+                        key={av}
+                        type="button"
+                        onClick={() => setNewProfileAvatar(av)}
+                        style={{
+                          fontSize: '1.5rem',
+                          padding: '0.4rem 0.6rem',
+                          borderRadius: '8px',
+                          background: newProfileAvatar === av ? 'var(--brand-primary)' : 'var(--bg-elevated)',
+                          border: `2px solid ${newProfileAvatar === av ? 'var(--brand-primary)' : 'var(--border-subtle)'}`,
+                          cursor: 'pointer',
+                        }}
+                      >
+                        {av}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.3rem' }}>
+                    YKS Sınav İlerleme Tercihi
+                  </label>
+                  <select
+                    value={newProfileTrack}
+                    onChange={(e) => setNewProfileTrack(e.target.value as any)}
+                    style={{
+                      width: '100%',
+                      padding: '0.6rem 0.8rem',
+                      borderRadius: '8px',
+                      background: 'var(--bg-elevated)',
+                      color: 'var(--text-primary)',
+                      border: '1px solid var(--border-subtle)',
+                    }}
+                  >
+                    <option value="TYT_FIRST">1. TYT Kimya (u01–u10) Sonra AYT (Önerilen)</option>
+                    <option value="TYT_ONLY">Sadece TYT Kimya Odaklı</option>
+                    <option value="AYT_FOCUS">AYT Kimya Ağırlıklı (11-12. Sınıf)</option>
+                  </select>
+                </div>
+
+                <div style={{ display: 'flex', gap: '0.6rem', justifyContent: 'flex-end', marginTop: '0.5rem' }}>
+                  <button
+                    type="button"
+                    className="btn-secondary"
+                    onClick={() => setShowNewProfileModal(false)}
+                  >
+                    İptal
+                  </button>
+                  <button type="submit" className="btn-primary">
+                    Profili Kaydet
+                  </button>
+                </div>
+              </form>
+            </div>
+          )}
+
+          {/* Profiles Grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
+            {store.profiles.map((p) => {
+              const isActive = p.id === activeProfile.id;
+              const solvedCount = p.solvedQuestionIds.length;
+              return (
+                <div
+                  key={p.id}
+                  style={{
+                    background: 'var(--bg-surface)',
+                    border: `2px solid ${isActive ? 'var(--brand-primary)' : 'var(--border-subtle)'}`,
+                    borderRadius: 'var(--radius-md)',
+                    padding: '1.25rem',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '0.75rem',
+                    position: 'relative',
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                      <span style={{ fontSize: '2rem' }}>{p.avatar || '👨‍🎓'}</span>
+                      <div>
+                        <strong style={{ fontSize: '1.05rem', color: 'var(--text-primary)' }}>{p.name}</strong>
+                        <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                          {p.targetTrack === 'TYT_ONLY'
+                            ? 'Sadece TYT'
+                            : p.targetTrack === 'AYT_FOCUS'
+                            ? 'AYT Odaklı'
+                            : 'TYT → AYT Sıralı'}
+                        </span>
+                      </div>
+                    </div>
+                    {isActive ? (
+                      <span
+                        style={{
+                          fontSize: '0.75rem',
+                          fontWeight: 800,
+                          padding: '0.2rem 0.5rem',
+                          borderRadius: 'var(--radius-full)',
+                          background: 'rgba(16, 185, 129, 0.15)',
+                          color: 'var(--accent-emerald)',
+                          border: '1px solid rgba(16, 185, 129, 0.3)',
+                        }}
+                      >
+                        Aktif
+                      </span>
+                    ) : (
+                      <button
+                        type="button"
+                        className="btn-secondary"
+                        onClick={() => store.switchProfile(p.id)}
+                        style={{ padding: '0.35rem 0.75rem', fontSize: '0.8rem' }}
+                      >
+                        Aktif Yap
+                      </button>
+                    )}
+                  </div>
+
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.5rem', background: 'var(--bg-elevated)', padding: '0.5rem', borderRadius: '8px', textAlign: 'center' }}>
+                    <div>
+                      <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>XP</span>
+                      <strong style={{ display: 'block', fontSize: '0.9rem', color: 'var(--brand-primary)' }}>
+                        {p.stats.xp}
+                      </strong>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Seri</span>
+                      <strong style={{ display: 'block', fontSize: '0.9rem', color: 'var(--accent-amber)' }}>
+                        {p.stats.streakDays}g
+                      </strong>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Çözülen</span>
+                      <strong style={{ display: 'block', fontSize: '0.9rem', color: 'var(--accent-emerald)' }}>
+                        {solvedCount}
+                      </strong>
+                    </div>
+                  </div>
+
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                    Hedef: {p.dailyQuestionGoal} soru/gün • {p.dailyStudyMinutesGoal} dk/gün
+                  </div>
+
+                  {!isActive && store.profiles.length > 1 && (
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'auto' }}>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (window.confirm(`${p.name} profilini silmek istediğinize emin misiniz?`)) {
+                            store.deleteProfile(p.id);
+                          }
+                        }}
+                        style={{
+                          background: 'none',
+                          border: 'none',
+                          cursor: 'pointer',
+                          color: 'var(--accent-ruby)',
+                          fontSize: '0.8rem',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '0.3rem',
+                        }}
+                      >
+                        <Trash2 size={14} />
+                        <span>Profili Sil</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* ================================================================= */}
+      {/* TAB 5: AYARLAR & TERCİHLER                                        */}
       {/* ================================================================= */}
       {activeTab === 'settings' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+          {/* Daily Goals Configuration (Questions & Study Minutes) */}
+          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.8rem' }}>
+              <Target size={20} color="var(--brand-primary)" />
+              <strong style={{ fontSize: '1.05rem' }}>Günlük Çalışma Hedefleri ({activeProfile.name})</strong>
+            </div>
+
+            {/* Daily Questions Goal Presets */}
+            <div style={{ marginBottom: '1rem' }}>
+              <span style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.4rem' }}>
+                Günlük Soru Çözme Hedefi
+              </span>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                {[15, 30, 50, 100].map((goalVal) => (
+                  <button
+                    key={goalVal}
+                    type="button"
+                    className={activeProfile.dailyQuestionGoal === goalVal ? 'primary-btn' : 'secondary-btn'}
+                    onClick={() => {
+                      store.updateProfile(activeProfile.id, { dailyQuestionGoal: goalVal });
+                      onSetDailyGoal(goalVal as any);
+                    }}
+                  >
+                    {goalVal} Soru
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Daily Study Minutes Goal Presets */}
+            <div>
+              <span style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.4rem' }}>
+                Günlük Çalışma Süresi Hedefi (Dakika)
+              </span>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                {[15, 30, 45, 60].map((minVal) => (
+                  <button
+                    key={minVal}
+                    type="button"
+                    className={activeProfile.dailyStudyMinutesGoal === minVal ? 'primary-btn' : 'secondary-btn'}
+                    onClick={() => store.updateProfile(activeProfile.id, { dailyStudyMinutesGoal: minVal })}
+                  >
+                    {minVal} Dakika
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Toggleable Mobile/Web Notifications */}
+          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.8rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                {activeProfile.notificationsEnabled ? (
+                  <Bell size={20} color="var(--brand-primary)" />
+                ) : (
+                  <BellOff size={20} color="var(--text-muted)" />
+                )}
+                <strong style={{ fontSize: '1.05rem' }}>Mobil & Web Bildirimleri</strong>
+              </div>
+
+              <input
+                type="checkbox"
+                checked={activeProfile.notificationsEnabled}
+                onChange={(e) => handleToggleNotifications(e.target.checked)}
+                style={{ width: '18px', height: '18px', cursor: 'pointer' }}
+              />
+            </div>
+
+            <p style={{ margin: '0 0 0.8rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+              Hedef tutturulmadığında veya aralıklı tekrar zamanı geldiğinde AI Koç size hatırlatma bildirimi gönderir.
+            </p>
+
+            {activeProfile.notificationsEnabled && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <span style={{ fontSize: '0.85rem', fontWeight: 700 }}>Günlük Hatırlatma Saati:</span>
+                <select
+                  value={activeProfile.reminderTime || '20:00'}
+                  onChange={(e) => handleChangeReminderTime(e.target.value)}
+                  style={{
+                    padding: '0.4rem 0.6rem',
+                    borderRadius: '8px',
+                    background: 'var(--bg-elevated)',
+                    color: 'var(--text-primary)',
+                    border: '1px solid var(--border-subtle)',
+                  }}
+                >
+                  <option value="18:00">18:00</option>
+                  <option value="19:00">19:00</option>
+                  <option value="20:00">20:00</option>
+                  <option value="21:00">21:00</option>
+                  <option value="22:00">22:00</option>
+                </select>
+
+                <button
+                  type="button"
+                  className="secondary-btn"
+                  onClick={async () => {
+                    const ok = await notificationManager.sendImmediateNotification(
+                      'Kimya YKS AI Koç',
+                      'Harika gidiyorsun! Bildirim sistemi başarıyla çalışıyor.',
+                      true
+                    );
+                    setNotificationFeedback(ok ? '✅ Test bildirimi gönderildi.' : '⚠️ Bildirim izni veya desteği bulunamadı.');
+                    setTimeout(() => setNotificationFeedback(null), 3000);
+                  }}
+                  style={{ fontSize: '0.8rem', padding: '0.35rem 0.7rem' }}
+                >
+                  Test Bildirimi Gönder
+                </button>
+              </div>
+            )}
+
+            {notificationFeedback && (
+              <div style={{ marginTop: '0.6rem', fontSize: '0.85rem', color: 'var(--accent-emerald)', fontWeight: 700 }}>
+                {notificationFeedback}
+              </div>
+            )}
+          </div>
+
+          {/* Target Track Preference */}
+          <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
+            <strong style={{ fontSize: '1.05rem', marginBottom: '0.8rem' }}>YKS Sınav İlerleme Tercihi</strong>
+            <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
+              <button
+                type="button"
+                className={activeProfile.targetTrack === 'TYT_FIRST' ? 'primary-btn' : 'secondary-btn'}
+                onClick={() => store.updateProfile(activeProfile.id, { targetTrack: 'TYT_FIRST' })}
+              >
+                1. TYT → 2. AYT Sıralı (Varsayılan)
+              </button>
+              <button
+                type="button"
+                className={activeProfile.targetTrack === 'TYT_ONLY' ? 'primary-btn' : 'secondary-btn'}
+                onClick={() => store.updateProfile(activeProfile.id, { targetTrack: 'TYT_ONLY' })}
+              >
+                Sadece TYT Kimya (10 Ünite)
+              </button>
+              <button
+                type="button"
+                className={activeProfile.targetTrack === 'AYT_FOCUS' ? 'primary-btn' : 'secondary-btn'}
+                onClick={() => store.updateProfile(activeProfile.id, { targetTrack: 'AYT_FOCUS' })}
+              >
+                AYT Odaklı (14 Ünite)
+              </button>
+            </div>
+          </div>
+
           {/* Theme Settings */}
           <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.8rem' }}>
@@ -945,21 +1226,8 @@ export const ProfileView: React.FC<ProfileViewProps> = ({
             </div>
           </div>
 
-          {/* Daily Goal & Motion Accessibility */}
+          {/* Motion Accessibility */}
           <div className="placeholder-card" style={{ padding: '1.25rem', textAlign: 'start', alignItems: 'stretch' }}>
-            <strong style={{ fontSize: '1.05rem', marginBottom: '0.8rem' }}>Hedef & Erişilebilirlik</strong>
-            <div style={{ display: 'flex', gap: '0.6rem', marginBottom: '0.8rem' }}>
-              {([10, 20, 40] as DailyGoal[]).map((g) => (
-                <button
-                  key={g}
-                  type="button"
-                  className={dailyGoal === g ? 'primary-btn' : 'secondary-btn'}
-                  onClick={() => onSetDailyGoal(g)}
-                >
-                  {g} Soru/gün
-                </button>
-              ))}
-            </div>
             <label style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer' }}>
               <span>Hareketi Azalt (Reduce Motion)</span>
               <input

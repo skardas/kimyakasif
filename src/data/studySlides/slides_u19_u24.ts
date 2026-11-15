@@ -295,8 +295,8 @@ export const STUDY_SLIDES_U19_U24: Record<string, UnitDeepStudyGuide> = {
       },
       {
         id: 'u22-frule-3',
-        label: L("Elektrik Yükü ve Mol Elektron", "Electric Charge and Moles of Electrons", "Elektrische Ladung und Elektronenmoleküle", "Charge électrique et taupes d'électrons", "Электрический заряд и моли электронов", "الشحنة الكهربائية ومولات الإلكترونات", "电荷和电子摩尔数", "Barê Elektrîkê û Molên Elektronan"),
-        expression: L("Q = I · t  |  n_e = Q / 96500", "Q = I · t |  n_e = Q / 96500", "Q = I · t |  n_e = Q / 96500", "Q = je · t |  n_e = Q/96500", "Q знак равно я · т |  n_e = Q/96500", "س = أنا · ر |  ن_ه = س / 96500", "Q=I·t|  n_e = Q / 96500", "Q = I · t |  n_e = Q / 96500"),
+        label: L("Elektrik Yükü ve Mol Elektron", "Electric Charge and Moles of Electrons", "Elektrische Ladung und Elektronenmoleküle", "Charge électrique et moles d'électrons", "Электрический заряд и моли электронов", "الشحنة الكهربائية ومولات الإلكترونات", "电荷和电子摩尔数", "Barê Elektrîkê û Molên Elektronan"),
+        expression: L("Q = I · t  |  n_e = Q / 96500", "Q = I · t |  n_e = Q / 96500", "Q = I · t |  n_e = Q / 96500", "Q = I · t |  n_e = Q / 96500", "Q = I · t |  n_e = Q / 96500", "Q = I · t |  n_e = Q / 96500", "Q = I · t |  n_e = Q / 96500", "Q = I · t |  n_e = Q / 96500"),
         examNote: L("Devreden 1 F yük geçtiğinde katotta 1 eşdeğer gram madde toplanır.", "When a 1 F load passes through the circuit, 1 equivalent gram of matter is collected at the cathode.", "Wenn eine 1-F-Last durch den Stromkreis fließt, wird 1 Äquivalentgramm Materie an der Kathode gesammelt.", "Lorsqu'une charge de 1 F traverse le circuit, 1 gramme équivalent de matière est collecté à la cathode.", "Когда через цепь проходит нагрузка 1 Ф, на катоде собирается 1 эквивалентный грамм вещества.", "عندما يمر حمل مقداره 1 F عبر الدائرة، يتم جمع جرام واحد مكافئ من المادة عند الكاثود.", "当 1 F 负载通过电路时，阴极处会收集 1 当量克物质。", "Dema ku barek 1 F di çerxê re derbas dibe, 1 gram maddeya wekhev li katodê tê berhev kirin.")
       }
     ],

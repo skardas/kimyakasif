@@ -22,9 +22,40 @@ if (fs.existsSync(CACHE_PATH)) {
   translationsCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 }
 
+function normalizeForLookup(s: string): string {
+  return (s || '')
+    .toLowerCase()
+    .replace(/['’]/g, ' ')
+    .replace(/\b([0-9a-z]+)\s*(?:d|t)(?:e|a|ir|ır|ur|ür|den|dan|ten|tan)\b/gi, '$1 ')
+    .replace(/[^a-z0-9ğüşıöç]/gi, '')
+    .trim();
+}
+
+const normalizedCacheMap = new Map<string, Record<string, string>>();
+for (const [k, v] of Object.entries(translationsCache)) {
+  const n = normalizeForLookup(k);
+  if (n && !normalizedCacheMap.has(n)) {
+    normalizedCacheMap.set(n, v);
+  }
+}
+
+function findCached(key: string): Record<string, string> | undefined {
+  if (!key) return undefined;
+  if (translationsCache[key]) return translationsCache[key];
+  const trimmed = key.trim();
+  if (translationsCache[trimmed]) return translationsCache[trimmed];
+  const withSpace = trimmed.replace(/'/g, ' ');
+  if (translationsCache[withSpace]) return translationsCache[withSpace];
+  const withoutApos = trimmed.replace(/'/g, '');
+  if (translationsCache[withoutApos]) return translationsCache[withoutApos];
+  const norm = normalizeForLookup(trimmed);
+  if (normalizedCacheMap.has(norm)) return normalizedCacheMap.get(norm);
+  return undefined;
+}
+
 export function getLoc(tr: string): Record<Lang, string> {
   const clean = (tr || '').trim();
-  const cached = translationsCache[clean] || translationsCache[tr];
+  const cached = findCached(clean);
   return {
     tr: clean,
     en: cached?.en || clean,
@@ -39,7 +70,7 @@ export function getLoc(tr: string): Record<Lang, string> {
 
 export function locAll(textObj: any): Record<Lang, string> {
   const tr = (textObj?.tr || '').trim();
-  const cached = translationsCache[tr] || translationsCache[textObj?.tr];
+  const cached = findCached(tr) || findCached(textObj?.tr);
   const result: Record<string, string> = {} as any;
   for (const l of LANGUAGES) {
     if (l === 'tr') {
@@ -60,7 +91,7 @@ export const UNIT_EXTRA_SEQUENCES: Record<string, Array<{ title: string; steps: 
   ],
   u02: [
     { title: 'Tarihsel Atom Modelleri', steps: ['Dalton içi dolu bölünemez küre modeli', 'Thomson pozitif yük içinde gömülü elektron modeli', 'Rutherford çekirdekli atom modeli', 'Bohr yörüngeli kuantum modeli'] },
-    { title: '2. Periyot İyonlaşma Enerjisi Artışı', steps: ['1A Lityum en düşük IE1 değerindedir', '2A Berilyum küresel simetriyle 3A yı geçer', '5A Azot küresel simetriyle 6A yı geçer', '8A Neon maksimum kararlılıkla en yüksektir'] },
+    { title: '2. Periyot İyonlaşma Enerjisi Artışı', steps: ['1A Lityum en düşük IE1 değerindedir', '2A Berilyum küresel simetriyle 3A\'yı geçer', '5A Azot küresel simetriyle 6A\'yı geçer', '8A Neon maksimum kararlılıkla en yüksektir'] },
     { title: 'Elektron Uyarılması ve Işıma', steps: ['Temel haldeki elektron enerji soğurur', 'Daha yüksek enerjili yörüngeye fırlar', 'Uyarılmış kararsız halde kısa süre kalır', 'Foton yayarak temel hale geri döner'] },
   ],
   u03: [
@@ -69,17 +100,17 @@ export const UNIT_EXTRA_SEQUENCES: Record<string, Array<{ title: string; steps: 
     { title: 'London Kuvveti Büyüme Basamakları', steps: ['Moleküldeki toplam elektron sayısı artar', 'Elektron bulutunun polarlaşabilirliği artar', 'Anlık geçici dipoller güçlenir', 'Molekülün kaynama noktası yükselir'] },
   ],
   u04: [
-    { title: 'Saf Suyun Isınma ve Hal Değişimi', steps: ['0 °C deki buz eriyerek suya dönüşür', 'Sıvı su 100 °C ye kadar ısınır', '100 °C de sabit sıcaklıkta kaynar', 'Su buharının sıcaklığı yükselmeye devam eder'] },
+    { title: 'Saf Suyun Isınma ve Hal Değişimi', steps: ['0 °C\'deki buz eriyerek suya dönüşür', 'Sıvı su 100 °C\'ye kadar ısınır', '100 °C\'de sabit sıcaklıkta kaynar', 'Su buharının sıcaklığı yükselmeye devam eder'] },
     { title: 'Sıvı Isındıkça Fiziksel Değişimler', steps: ['Moleküllerin ortalama kinetik enerjisi artar', 'Moleküller arası çekim zayıflar', 'Sıvının akmaya karşı direnci (viskozite) azalır', 'Denge buhar basıncı hızla yükselir'] },
     { title: 'Pistonlu Kapta Sıkışma', steps: ['Hareketli piston aşağı doğru itilir', 'Gazın kapladığı hacim daralır', 'Birim hacme düşen tanecik sayısı artar', 'Çeperlere yapılan çarpma sayısı ve basınç artar'] },
   ],
   u05: [
-    { title: 'Asit Yağmuru Oluşum Zinciri', steps: ['Fosil yakıtların yanmasıyla SO2 ve NO2 salınır', 'Gazlar atmosferdeki su buharıyla karşılaşır', 'Sülfürik asit ve nitrik asit oluşur', 'pH değeri 5 in altında asit yağmuru yağar'] },
+    { title: 'Asit Yağmuru Oluşum Zinciri', steps: ['Fosil yakıtların yanmasıyla SO2 ve NO2 salınır', 'Gazlar atmosferdeki su buharıyla karşılaşır', 'Sülfürik asit ve nitrik asit oluşur', 'pH değeri 5\'in altında asit yağmuru yağar'] },
     { title: 'Sera Etkisi ve Küresel Isınma', steps: ['Güneşten gelen kısa dalgalı ışınlar yeryüzüne ulaşır', 'Yeryüzü ısınarak uzun dalgalı kızılötesi ışın yayar', 'CO2 ve CH4 gazları bu ışınları soğurur', 'Atmosferin ortalama sıcaklığı kademeli artar'] },
     { title: 'İyon Değiştirici ile Su Yumuşatma', steps: ['Sert su reçine kolonundan geçirilir', 'Sudaki Ca2+ ve Mg2+ iyonları reçineye bağlanır', 'Reçineden suya Na+ iyonları salınır', 'Kireç oluşturmayan yumuşak su elde edilir'] },
   ],
   u06: [
-    { title: 'Mol Hesaplama Algoritması', steps: ['Verilen maddenin kütlesi belirlenir', 'Periyodik tablodan mol kütlesi hesaplanır', 'n = m / MA formülüyle mol sayısı bulunur', 'NK da hacim için mol 22.4 ile çarpılır'] },
+    { title: 'Mol Hesaplama Algoritması', steps: ['Verilen maddenin kütlesi belirlenir', 'Periyodik tablodan mol kütlesi hesaplanır', 'n = m / MA formülüyle mol sayısı bulunur', 'NK\'da hacim için mol 22.4 ile çarpılır'] },
     { title: 'Sabit Oranlar Kanunu Uygulaması', steps: ['Bileşiği oluşturan elementlerin kütleleri ölçülür', 'Kütlece birleşme oranı mX / mY belirlenir', 'Verilen reaktif miktarları orana göre kontrol edilir', 'Oluşan bileşik kütlesi kütlenin korunumundan bulunur'] },
     { title: 'Katlı Oranlar Denetimi', steps: ['Aynı iki elementten oluşan iki farklı bileşik yazılır', 'Elementlerden birinin kütlesi eşitlenir', 'Diğer elementin değişen kütleleri oranlanır', 'Basit tam sayılı katlı oran doğrulanır'] },
   ],
@@ -96,7 +127,7 @@ export const UNIT_EXTRA_SEQUENCES: Record<string, Array<{ title: string; steps: 
   u09: [
     { title: 'Asit-Baz Titrasyon Basamakları', steps: ['Erlenmayere asit ve indikatör konur', 'Bürete standart baz çözeltisi doldurulur', 'Büret musluğu açılarak damla damla eklenir', 'İndikatör renk değiştirdiği anda eşdeğerlik noktası kaydedilir'] },
     { title: 'Metallerin Asitle Tepkime Sırası', steps: ['Aktif metal asitle tepkimeye girer ve H2 gazı çıkar', 'Amfoter metal hem asit hem kuvvetli bazla H2 gazı çıkarır', 'Yarı soy metaller sadece HNO3 ve H2SO4 ile gaz çıkarır', 'Soy metaller (Pt, Au) kral suyu hariç hiçbir asitle tepkime vermez'] },
-    { title: 'pH Değerinin Değişimi', steps: ['Saf suyun pH değeri 7 dir', 'Asit eklendikçe H+ derişimi artar ve pH düşer', 'Baz eklendikçe OH- derişimi artar ve pH yükselir', 'Derişik asit ile derişik baz nötralleşerek tuz ve su verir'] },
+    { title: 'pH Değerinin Değişimi', steps: ['Saf suyun pH değeri 7\'dir', 'Asit eklendikçe H+ derişimi artar ve pH düşer', 'Baz eklendikçe OH- derişimi artar ve pH yükselir', 'Derişik asit ile derişik baz nötralleşerek tuz ve su verir'] },
   ],
   u10: [
     { title: 'Sabun Üretim Reaksiyonu', steps: ['Bitkisel veya hayvansal yağ ısıtılır', 'Derişik sodyum hidroksit (NaOH) eklenir', 'Saponifikasyon (sabunlaşma) tepkimesi gerçekleşir', 'Tuz eklenerek sabun kalıbı çöktürülür ve gliserin ayrılır'] },
@@ -104,17 +135,17 @@ export const UNIT_EXTRA_SEQUENCES: Record<string, Array<{ title: string; steps: 
     { title: 'Kirin Sabun Tarafından Temizlenmesi', steps: ['Sabunun apolar hidrofob kuyruğu apolar kire tutunur', 'Sabunun polar hidrofil başı suya yönelir', 'Kir molekülleri misel yapısı içine hapsedilir', 'Su akıntısıyla miseller yüzeyden uzaklaştırılır'] },
   ],
   u11: [
-    { title: 'Aufbau Orbital Doldurma Sırası', steps: ['1s orbitali en düşük enerjiyle dolar', '2s ve 2p orbitalleri sırayla doldurulur', '3s ve 3p orbitallerinden sonra 4s orbitali dolar', '4s ten sonra 3d orbitallerine elektron yerleşir'] },
-    { title: 'Kuantum Sayılarının Belirlenmesi', steps: ['Elektronun bulunduğu katmandan baş kuantum n belirlenir', 'Orbital türünden açısal momentum kuantum l bulunur', 'l ye bağlı olarak ml değerleri -l den +l ye sıralanır', 'Elektronun kendi ekseni etrafında dönüşünden ms belirlenir'] },
-    { title: 'Küresel Simetri Kararlılığı (Cr ve Cu)', steps: ['Sc den itibaren 3d orbitalleri doldurulur', 'Cr atomunda 4s2 3d4 yerine 4s1 3d5 dizilimi oluşur', '3d orbitalleri yarı dolu hale gelerek küresel simetri kazanır', 'Cu atomunda 4s1 3d10 dizilimiyle tam dolu küresel simetri kurulur'] },
+    { title: 'Aufbau Orbital Doldurma Sırası', steps: ['1s orbitali en düşük enerjiyle dolar', '2s ve 2p orbitalleri sırayla doldurulur', '3s ve 3p orbitallerinden sonra 4s orbitali dolar', '4s\'ten sonra 3d orbitallerine elektron yerleşir'] },
+    { title: 'Kuantum Sayılarının Belirlenmesi', steps: ['Elektronun bulunduğu katmandan baş kuantum n belirlenir', 'Orbital türünden açısal momentum kuantum l bulunur', 'l\'ye bağlı olarak ml değerleri -l\'den +l\'ye sıralanır', 'Elektronun kendi ekseni etrafında dönüşünden ms belirlenir'] },
+    { title: 'Küresel Simetri Kararlılığı (Cr ve Cu)', steps: ['Sc\'den itibaren 3d orbitalleri doldurulur', 'Cr atomunda 4s2 3d4 yerine 4s1 3d5 dizilimi oluşur', '3d orbitalleri yarı dolu hale gelerek küresel simetri kazanır', 'Cu atomunda 4s1 3d10 dizilimiyle tam dolu küresel simetri kurulur'] },
   ],
   u12: [
-    { title: 'İdeal Gaz Yasası Türetimi', steps: ['Boyle yasasından P ile V nin ters orantısı alınır', 'Charles yasasından V ile T nin doğru orantısı eklenir', 'Avogadro yasasından V ile n nin doğru orantısı birleştirilir', 'R gaz sabiti ile PV = nRT ana denklemi kurulur'] },
+    { title: 'İdeal Gaz Yasası Türetimi', steps: ['Boyle yasasından P ile V\'nin ters orantısı alınır', 'Charles yasasından V ile T\'nin doğru orantısı eklenir', 'Avogadro yasasından V ile n\'nin doğru orantısı birleştirilir', 'R gaz sabiti ile PV = nRT ana denklemi kurulur'] },
     { title: 'Bileşik Gaz Denklemi Uygulaması', steps: ['Birinci durumdaki P1, V1, T1 değerleri yazılır', 'Değişen koşullardaki P2, V2, T2 parametreleri belirlenir', 'P1.V1 / T1 = P2.V2 / T2 eşitliği kurulur', 'Bilinmeyen hacim veya basınç değeri çekilir'] },
     { title: 'Manometre ile Basınç Ölçümü', steps: ['U borusuna belirli yoğunlukta cıva doldurulur', 'Bir kol kapalı gaza, diğer kol atmosfere açılır', 'Cıva seviyeleri arasındaki yükseklik farkı h ölçülür', 'Açık hava basıncıyla toplanarak gaz basıncı hesaplanır'] },
   ],
   u13: [
-    { title: 'Graham Difüzyon Deneyi', steps: ['Cam borunun iki ucuna pamuk yerleştirilir', 'Bir uca HCl, diğer uca NH3 damlatılır', 'Gazlar boru içinde birbirine doğru yayılır', 'Hafif olan NH3 gazı daha hızlı yayılarak HCl ye yakın halka oluşturur'] },
+    { title: 'Graham Difüzyon Deneyi', steps: ['Cam borunun iki ucuna pamuk yerleştirilir', 'Bir uca HCl, diğer uca NH3 damlatılır', 'Gazlar boru içinde birbirine doğru yayılır', 'Hafif olan NH3 gazı daha hızlı yayılarak HCl\'ye yakın halka oluşturur'] },
     { title: 'Su Üstünde Gaz Toplama', steps: ['Ters çevrilmiş dereceli silindire su doldurulur', 'Tepkimede oluşan gaz su üstünde biriktirilir', 'Kaptaki toplam basınç Ptoplam ölçülür', 'Suyun o sıcaklıktaki buhar basıncı çıkarılarak kuru gaz basıncı bulunur'] },
     { title: 'Joule-Thomson Soğuma Aşamaları', steps: ['Gerçek gaz yüksek basınç altında sıkıştırılır', 'Gaz küçük bir delikten aniden düşük basınca genleştirilir', 'Moleküller arası çekimi yenmek için öz ısı enerjisi harcanır', 'Gazın sıcaklığı aniden düşerek soğur'] },
   ],
@@ -125,7 +156,7 @@ export const UNIT_EXTRA_SEQUENCES: Record<string, Array<{ title: string; steps: 
   ],
   u15: [
     { title: 'Kaynama Noktası Yükselmesi (Ebülyoskopi)', steps: ['Çözünen maddenin mol sayısı hesaplanır', 'Çözücünün kilogram cinsinden kütlesi bulunur', 'Molalite m = n / kg eşitliğiyle belirlenir', 'Delta Tk = Kk . m . i formülüyle kaynama artışı hesaplanır'] },
-    { title: 'Donma Noktası Alçalması (Kriyoskopi)', steps: ['İyonik tuzun sudaki iyon sayısı i belirlenir', 'Çözeltinin molal derişimi hesaplanır', 'Delta Td = Kd . m . i formülü uygulanır', '0 °C den çıkarılarak yeni donma sıcaklığı bulunur'] },
+    { title: 'Donma Noktası Alçalması (Kriyoskopi)', steps: ['İyonik tuzun sudaki iyon sayısı i belirlenir', 'Çözeltinin molal derişimi hesaplanır', 'Delta Td = Kd . m . i formülü uygulanır', '0 °C\'den çıkarılarak yeni donma sıcaklığı bulunur'] },
     { title: 'Çözünürlük Eğrisi Okuma', steps: ['Grafikten belirli sıcaklıktaki doymuşluk değeri okunur', '100 gram sudaki maksimum çözünen madde belirlenir', 'Verilen su miktarıyla orantı kurularak kapasite bulunur', 'Sıcaklık değiştiğinde çöken veya gereken katı hesaplanır'] },
   ],
   u16: [
@@ -134,7 +165,7 @@ export const UNIT_EXTRA_SEQUENCES: Record<string, Array<{ title: string; steps: 
     { title: 'Potansiyel Enerji Grafiği Analizi', steps: ['Girenlerin potansiyel enerjisi grafikten okunur', 'Tepe noktasındaki aktifleşmiş kompleks enerjisi belirlenir', 'Eai = Eaktifleşmiş - Egirenler ile ileri aktifleşme enerjisi bulunur', 'Delta H = Eai - Eag eşitliğiyle tepkime ısısı doğrulanır'] },
   ],
   u17: [
-    { title: 'Reaksiyon Hızına Sıcaklık ve Basınç Etkisi', steps: ['Sıcaklık artırıldığında taneciklerin ortalama kinetik enerjisi artar', 'Eşik enerjisini aşan etkin çarpışma sayısı artar', 'Hız sabiti k nın değeri büyür ve tepkime hızlanır', 'Gaz tepkimesinde basınç artışı birim hacimdeki tanecik sayısını artırarak hızı artırır'] },
+    { title: 'Reaksiyon Hızına Sıcaklık ve Basınç Etkisi', steps: ['Sıcaklık artırıldığında taneciklerin ortalama kinetik enerjisi artar', 'Eşik enerjisini aşan etkin çarpışma sayısı artar', 'Hız sabiti k\'nın değeri büyür ve tepkime hızlanır', 'Gaz tepkimesinde basınç artışı birim hacimdeki tanecik sayısını artırarak hızı artırır'] },
     { title: 'Mekanizmalı Tepkimede Basamak Analizi', steps: ['Tepkimenin yavaş ve hızlı basamakları incelenir', 'Hız bağıntısı yavaş basamağın girenlerine göre yazılır', 'Katalizör ve ara ürün molekülleri tespit edilir', 'Basamaklar toplanarak net tepkime denklemi yazılır'] },
     { title: 'Katalizörün Tepkimeye Etkisi', steps: ['Katalizör tepkime mekanizmasını değiştirir', 'Yeni bir yoldan daha düşük aktifleşme enerjisi (Ea) sağlar', 'Eşik enerjisini aşan tanecik sayısı artar', 'Tepkime hızlanır ancak entalpi Delta H değişmez'] },
   ],
@@ -145,11 +176,11 @@ export const UNIT_EXTRA_SEQUENCES: Record<string, Array<{ title: string; steps: 
   ],
   u19: [
     { title: 'Zayıf Asit İyonlaşma Dengesi', steps: ['Zayıf asidin başlangıç derişimi Ca yazılır', 'HA ayrışarak H+ ve A- iyonlarına parçalanır', '[H+] = karekök(Ka . Ca) formülü uygulanır', 'pH = -log[H+] eşitliğinden çözeltinin pH değeri bulunur'] },
-    { title: 'Tampon Çözelti Mekanizması', steps: ['Zayıf asit ile onun eşlenik tuzu karıştırılır', 'Ortama az miktar kuvvetli asit eklendiğinde eşlenik baz H+ yı tutar', 'Ortama az miktar baz eklendiğinde zayıf asit OH- ı nötralleştirir', 'Çözeltinin pH değeri neredeyse sabit kalır'] },
-    { title: 'Kuvvetli Asit-Baz Titrasyonu', steps: ['Büretteki baz erlendeki asit üzerine damlatılır', 'Asidin mol sayısı bazın mol sayısına eşitlenir', 'Eşdeğerlik noktasında pH tam olarak 7.00 olur', 'Baz eklenmeye devam edilirse pH 7 nin üstüne çıkar'] },
+    { title: 'Tampon Çözelti Mekanizması', steps: ['Zayıf asit ile onun eşlenik tuzu karıştırılır', 'Ortama az miktar kuvvetli asit eklendiğinde eşlenik baz H+\'yı tutar', 'Ortama az miktar baz eklendiğinde zayıf asit OH-\'ı nötralleştirir', 'Çözeltinin pH değeri neredeyse sabit kalır'] },
+    { title: 'Kuvvetli Asit-Baz Titrasyonu', steps: ['Büretteki baz erlendeki asit üzerine damlatılır', 'Asidin mol sayısı bazın mol sayısına eşitlenir', 'Eşdeğerlik noktasında pH tam olarak 7.00 olur', 'Baz eklenmeye devam edilirse pH 7\'nin üstüne çıkar'] },
   ],
   u20: [
-    { title: 'Kçç den Çözünürlük Hesabı', steps: ['Az çözünen tuzun iyonlaşma denklemi yazılır', 'Katyon ve anyon derişimleri s cinsinden ifade edilir', 'Kçç bağıntısı kurularak s nin kuvvetine eşitlenir', 'Karekök veya küpkök alınarak molar çözünürlük s bulunur'] },
+    { title: 'Kçç\'den Çözünürlük Hesabı', steps: ['Az çözünen tuzun iyonlaşma denklemi yazılır', 'Katyon ve anyon derişimleri s cinsinden ifade edilir', 'Kçç bağıntısı kurularak s\'nin kuvvetine eşitlenir', 'Karekök veya küpkök alınarak molar çözünürlük s bulunur'] },
     { title: 'Ortak İyon Etkisi Hesabı', steps: ['İyi çözünen tuzdan gelen ortak iyon derişimi belirlenir', 'Az çözünen tuzun saf sudaki çözünürlük dengesi yazılır', 'Ortak iyon derişimi denge bağıntısında yerine konur', 'Le Chatelier gereği çözünürlüğün azaldığı gösterilir'] },
     { title: 'Çökme Olup Olmayacağını Belirleme', steps: ['Karışan çözeltilerden gelen iyonların derişimleri hesaplanır', 'O anki iyon derişimleri çarpımı Qi bulunur', 'Qi değeri tuzun Kçç sabiti ile karşılaştırılır', 'Qi > Kçç ise çözelti aşırı doygundur ve çökme gerçekleşir'] },
   ],
@@ -166,7 +197,7 @@ export const UNIT_EXTRA_SEQUENCES: Record<string, Array<{ title: string; steps: 
   u23: [
     { title: 'Hibritleşme Türünün Belirlenmesi', steps: ['Merkez atomun Lewis nokta yapısı çizilir', 'Merkez atomun yaptığı sigma bağları sayılır', 'Merkez atomun ortaklanmamış elektron çiftleri eklenir', 'Toplam doğrultu sayısı: 2 ise sp, 3 ise sp2, 4 ise sp3 hibritleşmesidir'] },
     { title: 'VSEPR Geometrisi Türetimi', steps: ['Merkez atom A, bağlı atomlar X ve ortaklanmamış çift E belirlenir', 'AX2 formülü 180° doğrusal geometri verir', 'AX3 formülü 120° düzlem üçgen geometri oluşturur', 'AX4 formülü 109.5° düzgün dörtyüzlü (tetrahedral) geometri kurar'] },
-    { title: 'Sigma ve Pi Bağı Sayımı', steps: ['Moleküldeki tüm tekli bağlar 1 er sigma bağı olarak sayılır', 'İkili bağlarda 1 sigma ve 1 pi bağı bulunur', 'Üçlü bağlarda 1 sigma ve 2 pi bağı yer alır', 'Toplam sigma ve pi bağ sayıları belirlenir'] },
+    { title: 'Sigma ve Pi Bağı Sayımı', steps: ['Moleküldeki tüm tekli bağlar 1\'er sigma bağı olarak sayılır', 'İkili bağlarda 1 sigma ve 1 pi bağı bulunur', 'Üçlü bağlarda 1 sigma ve 2 pi bağı yer alır', 'Toplam sigma ve pi bağ sayıları belirlenir'] },
   ],
   u24: [
     { title: 'IUPAC Alkan Adlandırma', steps: ['En uzun kesintisiz karbon zinciri ana zincir olarak seçilir', 'Dallanmaya en yakın uçtan başlanarak karbonlar numaralandırılır', 'Bağlı alkil gruplarının adları ve karbon numaraları yazılır', 'Ana zincirdeki karbon sayısına karşılık gelen alkan adı sona eklenir'] },
@@ -196,7 +227,7 @@ export const UNIT_EXTRA_COMPARISONS: Record<string, Array<{ a: string; b: string
   u03: [
     { a: 'İyonik Bağ', b: 'Kovalent Bağ', d: 'İyonik bağ zıt yüklü iyonlar arasındaki elektrostatik çekimdir; kovalent bağ ametal atomlarının elektron ortaklaşmasıyla oluşur.' },
     { a: 'Polar Kovalent Bağ', b: 'Apolar Kovalent Bağ', d: 'Polar kovalent bağ farklı ametaller arasında kutuplu bağdır; apolar kovalent bağ aynı ametaller arasında kutupsuz bağdır.' },
-    { a: 'Hidrojen Bağı', b: 'Dipol-Dipol Etkileşimi', d: 'Hidrojen bağı F, O, N ye bağlı H atomunun oluşturduğu en güçlü zayıf etkileşimdir; dipol-dipol genel polar moleküller arasındadır.' },
+    { a: 'Hidrojen Bağı', b: 'Dipol-Dipol Etkileşimi', d: 'Hidrojen bağı F, O, N\'ye bağlı H atomunun oluşturduğu en güçlü zayıf etkileşimdir; dipol-dipol genel polar moleküller arasındadır.' },
     { a: 'Metalik Bağ', b: 'London Kuvveti', d: 'Metalik bağ elektron denizi ile pozitif iyonlar arasındaki güçlü bağdır; London kuvveti anlık dipollerle oluşan en zayıf etkileşimdir.' },
     { a: 'Molekül İçi Güçlü Bağ', b: 'Moleküller Arası Zayıf Bağ', d: 'Molekül içi bağlar kimyasal özellik ve reaktiviteyi belirler; moleküller arası zayıf bağlar kaynama noktası gibi fiziksel halleri belirler.' },
     { a: 'Ağ Örgülü Kovalent Katı', b: 'Moleküler Katı', d: 'Elmas ve kuars gibi ağ örgülü katılar dev kovalent ağa sahiptir ve çok serttir; buz ve kuru buz moleküler katı olup zayıf bağlarla tutunur.' },
@@ -221,8 +252,8 @@ export const UNIT_EXTRA_COMPARISONS: Record<string, Array<{ a: string; b: string
     { a: 'Kütlenin Korunumu (Lavoisier)', b: 'Sabit Oranlar (Proust)', d: 'Kütlenin korunumu giren kütlesi ile ürün kütlesinin eşitliğini; sabit oranlar bileşikteki elementlerin sabit kütlece oranını ifade eder.' },
     { a: 'Sabit Oranlar (Proust)', b: 'Katlı Oranlar (Dalton)', d: 'Sabit oran tek bir bileşikteki element oranını; katlı oran ise aynı iki elementten oluşan farklı bileşikler arasındaki oranı belirtir.' },
     { a: 'Avogadro Sayısı (NA)', b: 'Mol Kütlesi (MA)', d: 'Avogadro sayısı 1 moldeki tanecik sayısıdır (6.02x10^23); mol kütlesi 1 mol taneciğin gram cinsinden kütlesidir.' },
-    { a: 'Normal Koşullar (NK)', b: 'Oda Koşulları (Standart Şartlar)', d: 'NK 0 °C ve 1 atm olup 1 mol gaz 22.4 L dir; Oda koşulları 25 °C ve 1 atm olup 1 mol gaz 24.5 L dir.' },
-    { a: 'Bağıl Atom Kütlesi', b: 'Gerçek Atom Kütlesi', d: 'Bağıl atom kütlesi Karbon-12 ye göre birimsiz orandır; gerçek atom kütlesi 1 tek atomun gram cinsinden kütlesidir (MA / NA).' },
+    { a: 'Normal Koşullar (NK)', b: 'Oda Koşulları (Standart Şartlar)', d: 'NK 0 °C ve 1 atm olup 1 mol gaz 22.4 L\'dir; Oda koşulları 25 °C ve 1 atm olup 1 mol gaz 24.5 L\'dir.' },
+    { a: 'Bağıl Atom Kütlesi', b: 'Gerçek Atom Kütlesi', d: 'Bağıl atom kütlesi Karbon-12\'ye göre birimsiz orandır; gerçek atom kütlesi 1 tek atomun gram cinsinden kütlesidir (MA / NA).' },
     { a: 'Atom-Gram', b: 'Molekül-Gram', d: 'Atom-gram 1 mol atom anlamına gelir; molekül-gram 1 mol kovalent molekül anlamına gelir.' },
   ],
   u07: [
@@ -247,7 +278,7 @@ export const UNIT_EXTRA_COMPARISONS: Record<string, Array<{ a: string; b: string
     { a: 'Amfoter Metal', b: 'Soy Metal', d: 'Amfoter metaller (Zn, Al) hem asitle hem bazla H2 çıkarır; soy metaller (Pt, Au) kral suyu hariç hiçbir asitle tepkime vermez.' },
     { a: 'Asidik Tuz', b: 'Bazik Tuz', d: 'Kuvvetli asit ile zayıf bazın tuzu asidiktir (NH4Cl); kuvvetli baz ile zayıf asidin tuzu baziktir (CH3COONa).' },
     { a: 'Turnusol İndikatörü', b: 'Fenolftalein İndikatörü', d: 'Turnusol asitte kırmızı bazda mavidir; fenolftalein asitte renksiz bazda pembedir.' },
-    { a: 'Nötralleşme', b: 'Hidroliz', d: 'Nötralleşme H+ ile OH- ın su oluşturmasıdır; hidroliz zayıftan gelen iyonun su ile tepkimeye girerek ortamın pH ını değiştirmesidir.' },
+    { a: 'Nötralleşme', b: 'Hidroliz', d: 'Nötralleşme H+ ile OH-\'ın su oluşturmasıdır; hidroliz zayıftan gelen iyonun su ile tepkimeye girerek ortamın pH\'ını değiştirmesidir.' },
   ],
   u10: [
     { a: 'Beyaz Sabun (Sert Sabun)', b: 'Arap Sabunu (Yumuşak Sabun)', d: 'Beyaz sabun sodyum tuzu olup serttir (C17H35COONa); arap sabunu potasyum tuzu olup yumuşaktır (C17H35COOK).' },
@@ -267,7 +298,7 @@ export const UNIT_EXTRA_COMPARISONS: Record<string, Array<{ a: string; b: string
   ],
   u12: [
     { a: 'Boyle Yasası', b: 'Charles Yasası', d: 'Boyle yasasında sıcaklık sabitken P ile V ters orantılıdır; Charles yasasında basınç sabitken V ile T doğru orantılıdır.' },
-    { a: 'Gay-Lussac Yasası', b: 'Avogadro Yasası', d: 'Gay-Lussac sabit hacimde P ile T nin doğru orantısını; Avogadro sabit P ve T de V ile mol sayısının doğru orantısını açıklar.' },
+    { a: 'Gay-Lussac Yasası', b: 'Avogadro Yasası', d: 'Gay-Lussac sabit hacimde P ile T\'nin doğru orantısını; Avogadro sabit P ve T\'de V ile mol sayısının doğru orantısını açıklar.' },
     { a: 'Sabit Hacimli Kap', b: 'Hareketli Pistonlu Kap', d: 'Sabit hacimli kapta V sabittir, sıcaklık arttıkça P artar; pistonlu kapta dış basınç iç basınca eşit olup P sabittir, V artar.' },
     { a: 'Gaz Yoğunluğu (d = PM/RT)', b: 'Mol Kütlesi (M)', d: 'Gaz yoğunluğu basınca ve sıcaklığa bağlıdır; mol kütlesi ise gazın kimlik özelliği olup sıcaklıkla değişmez.' },
     { a: 'Kısmi Basınç', b: 'Toplam Basınç', d: 'Kısmi basınç karışımdaki tek bir gazın tek başına uyguladığı basınçtır; toplam basınç tüm kısmi basınçların toplamıdır.' },
@@ -279,7 +310,7 @@ export const UNIT_EXTRA_COMPARISONS: Record<string, Array<{ a: string; b: string
     { a: 'Joule-Thomson Olayı', b: 'Kritik Sıcaklık', d: 'Joule-Thomson aniden genleşen gerçek gazın soğumasıdır; kritik sıcaklık üstünde gaz hiçbir basınç altında sıvılaştırılamaz.' },
     { a: 'Doygun Su Buharı Basıncı', b: 'Kuru Gaz Basıncı', d: 'Su buharı basıncı sadece sıcaklığa bağlıdır ve hacimle değişmez; kuru gaz basıncı kap hacmi değiştikçe Boyle yasasına uyar.' },
     { a: 'Kinetik Enerji', b: 'Yayılma Hızı', d: 'Ortalama kinetik enerji yalnızca mutlak sıcaklığa bağlıdır; yayılma hızı ise hem sıcaklığa hem de mol kütlesine bağlıdır.' },
-    { a: 'İdeallikten Sapma Faktörü (Z = PV/nRT)', b: 'Kritik Basınç', d: 'İdeal gazda Z = 1 dir; gerçek gazlarda Z 1 den sapar ve kritik basınçta sıvı-buhar faz sınırı kaybolur.' },
+    { a: 'İdeallikten Sapma Faktörü (Z = PV/nRT)', b: 'Kritik Basınç', d: 'İdeal gazda Z = 1\'dir; gerçek gazlarda Z 1\'den sapar ve kritik basınçta sıvı-buhar faz sınırı kaybolur.' },
   ],
   u14: [
     { a: 'Molarite (M)', b: 'Molalite (m)', d: 'Molarite 1 litre çözeltideki çözünen mol sayısıdır (n/V); molalite 1 kilogram çözücüdeki çözünen mol sayısıdır (n/kg).' },
@@ -299,7 +330,7 @@ export const UNIT_EXTRA_COMPARISONS: Record<string, Array<{ a: string; b: string
   ],
   u16: [
     { a: 'Standart Oluşum Entalpisi (Delta Hf°)', b: 'Tepkime Entalpisi (Delta H°)', d: 'Oluşum entalpisi 1 mol bileşiğin standart haldeki kararlı elementlerinden oluşma ısısıdır; tepkime entalpisi girenlerle ürünler arası ısı farkıdır.' },
-    { a: 'İleri Aktifleşme Enerjisi (Eai)', b: 'Geri Aktifleşme Enerjisi (Eag)', d: 'Eai girenlerin aktifleşmiş komplekse ulaşma bariyeridir; Eag ürünlerin geri dönme bariyeridir; Delta H = Eai - Eag dir.' },
+    { a: 'İleri Aktifleşme Enerjisi (Eai)', b: 'Geri Aktifleşme Enerjisi (Eag)', d: 'Eai girenlerin aktifleşmiş komplekse ulaşma bariyeridir; Eag ürünlerin geri dönme bariyeridir; Delta H = Eai - Eag\'dir.' },
     { a: 'Ekzotermik Tepkime (Delta H < 0)', b: 'Endotermik Tepkime (Delta H > 0)', d: 'Ekzotermik tepkimede ürünler girenlerden daha kararlıdır ve ısı açığa çıkar; endotermik tepkimede dışarıdan ısı alınır.' },
     { a: 'Bağ Kırılması', b: 'Bağ Oluşumu', d: 'Kimyasal bağ kırılması daima endotermiktir (ısı alır); kimyasal bağ oluşumu daima ekzotermiktir (ısı verir).' },
     { a: 'Hess Yasası', b: 'Termodinamik 1. Yasa', d: 'Hess yasası tepkime entalpisinin izlenen yoldan bağımsız olduğunu belirtir; 1. yasa enerjinin yoktan var, vardan yok edilemeyeceğini ifade eder.' },
@@ -317,15 +348,15 @@ export const UNIT_EXTRA_COMPARISONS: Record<string, Array<{ a: string; b: string
     { a: 'Derişimler Cinsinden Denge (Kc)', b: 'Kısmi Basınçlar Cinsinden Denge (Kp)', d: 'Kc molar derişimlerle gaz ve sulu çözeltileri içerir; Kp = Kc(RT)^Delta n formülüyle yalnızca gaz fazını içerir.' },
     { a: 'Denge Kesri (Qc)', b: 'Denge Sabiti (Kc)', d: 'Qc herhangi bir andaki derişimler oranıdır; Qc = Kc olduğunda sistem dengededir, Qc < Kc ise sistem ürünlere kayar.' },
     { a: 'Homojen Denge', b: 'Heterojen Denge', d: 'Homojen dengede tüm reaktif ve ürünler aynı fiziksel fazdadır; heterojen dengede katı, sıvı veya gaz farklı fazlar bulunur.' },
-    { a: 'Sıcaklığın Kc ye Etkisi', b: 'Katalizörün Dengeye Etkisi', d: 'Kc nin sayısal değerini yalnızca ve yalnızca sıcaklık değiştirir; katalizör denge sabiti Kc yi asla değiştirmez, dengeye ulaşma süresini kısaltır.' },
+    { a: 'Sıcaklığın Kc\'ye Etkisi', b: 'Katalizörün Dengeye Etkisi', d: 'Kc\'nin sayısal değerini yalnızca ve yalnızca sıcaklık değiştirir; katalizör denge sabiti Kc\'yi asla değiştirmez, dengeye ulaşma süresini kısaltır.' },
     { a: 'Hacim Küçülmesi Etkisi', b: 'Soy Gaz Ekleme Etkisi', d: 'Pistonla hacim küçültülünce sistem gaz molü az olan tarafa kayar; sabit hacimde soy gaz eklenmesi kısmi basınçları ve dengeyi değiştirmez.' },
     { a: 'Dinamik Denge', b: 'Statik Denge', d: 'Kimyasal denge dinamiktir, ileri ve geri tepkime eşit hızda sürekli devam eder; statik dengede ise olay tamamen durmuştur.' },
   ],
   u19: [
     { a: 'Kuvvetli Asit (HCl)', b: 'Zayıf Asit (HF)', d: 'HCl suda %100 iyonlaşarak pH = -log Ca olur; HF suda az iyonlaşır ve [H+] = karekök(Ka.Ca) dengesi kurar.' },
-    { a: 'Asit Ayrışma Sabiti (Ka)', b: 'Baz Ayrışma Sabiti (Kb)', d: 'Ka asidin kuvvetini ve iyonlaşma dengesini belirtir; eşlenik asit-baz çiftinde Ka . Kb = Ksu = 10^-14 tür.' },
-    { a: 'Tampon Çözelti', b: 'Nötr Çözelti', d: 'Tampon çözelti zayıf asit ile eşlenik tuzunu içerip pH değişimine direnir; nötr çözeltide pH = 7 dir fakat asit eklenince hızla düşer.' },
-    { a: 'Eşdeğerlik Noktası (Dönüm Noktası)', b: 'Nötrleşme Noktası (pH = 7)', d: 'Eşdeğerlik noktasında H+ mol sayısı OH- mole eşittir; zayıf asit kuvvetli baz titrasyonunda eşdeğerlik pH ı 7 den büyüktür.' },
+    { a: 'Asit Ayrışma Sabiti (Ka)', b: 'Baz Ayrışma Sabiti (Kb)', d: 'Ka asidin kuvvetini ve iyonlaşma dengesini belirtir; eşlenik asit-baz çiftinde Ka . Kb = Ksu = 10^-14\'tür.' },
+    { a: 'Tampon Çözelti', b: 'Nötr Çözelti', d: 'Tampon çözelti zayıf asit ile eşlenik tuzunu içerip pH değişimine direnir; nötr çözeltide pH = 7\'dir fakat asit eklenince hızla düşer.' },
+    { a: 'Eşdeğerlik Noktası (Dönüm Noktası)', b: 'Nötrleşme Noktası (pH = 7)', d: 'Eşdeğerlik noktasında H+ mol sayısı OH- mole eşittir; zayıf asit kuvvetli baz titrasyonunda eşdeğerlik pH\'ı 7\'den büyüktür.' },
     { a: 'Konjuge (Eşlenik) Asit', b: 'Konjuge (Eşlenik) Baz', d: 'Aralarında 1 proton (H+) farkı olan çiftlerdir; proton veren konjuge asit, proton alan konjuge bazdır.' },
     { a: 'Katyon Hidrolizi', b: 'Anyon Hidrolizi', d: 'Zayıf bazdan gelen katyon (NH4+) hidroliz olarak asidik ortam yapar; zayıf asitten gelen anyon (CH3COO-) hidrolizle bazik ortam yapar.' },
   ],
@@ -333,9 +364,9 @@ export const UNIT_EXTRA_COMPARISONS: Record<string, Array<{ a: string; b: string
     { a: 'Çözünürlük Çarpımı (Kçç)', b: 'Molar Çözünürlük (s)', d: 'Kçç denge sabitidir ve sadece sıcaklıkla değişir; s ise 1 litrede çözünen maksimum mol sayısı olup ortak iyonla azalır.' },
     { a: 'İyon Çarpımı (Qi)', b: 'Çözünürlük Çarpımı (Kçç)', d: 'Qi o andaki iyon derişimleri çarpımıdır; Qi > Kçç ise çözelti aşırı doygundur ve çökme başlar.' },
     { a: 'Ortak İyon Etkisi', b: 'Yabancı İyon Etkisi', d: 'Ortak iyon çözünürlüğü le Chatelier gereği belirgin şekilde azaltır; yabancı iyon tuz etkisiyle çözünürlüğü az miktarda artırabilir.' },
-    { a: 'Doygun Çözelti Dengesi', b: 'Aşırı Doygun Çözelti', d: 'Doygun çözeltide katı ile iyonlar dengededir ve Qi = Kçç dir; aşırı doygunda Qi > Kçç olup sistem kararsızdır.' },
-    { a: 'pH nın Çözünürlüğe Etkisi', b: 'Sıcaklığın Çözünürlüğe Etkisi', d: 'Bazik tuzların çözünürlüğü asit eklendikçe artar; sıcaklık artışı endotermik tuzların çözünürlüğünü ve Kçç sini artırır.' },
-    { a: 'XY Tipi Tuz', b: 'XY2 Tipi Tuz', d: 'XY tuzunda Kçç = s^2 dir; XY2 tuzunda Kçç = 4s^3 bağıntısı geçerlidir.' },
+    { a: 'Doygun Çözelti Dengesi', b: 'Aşırı Doygun Çözelti', d: 'Doygun çözeltide katı ile iyonlar dengededir ve Qi = Kçç\'dir; aşırı doygunda Qi > Kçç olup sistem kararsızdır.' },
+    { a: 'pH\'nın Çözünürlüğe Etkisi', b: 'Sıcaklığın Çözünürlüğe Etkisi', d: 'Bazik tuzların çözünürlüğü asit eklendikçe artar; sıcaklık artışı endotermik tuzların çözünürlüğünü ve Kçç\'sini artırır.' },
+    { a: 'XY Tipi Tuz', b: 'XY2 Tipi Tuz', d: 'XY tuzunda Kçç = s^2\'dir; XY2 tuzunda Kçç = 4s^3 bağıntısı geçerlidir.' },
   ],
   u21: [
     { a: 'Anot Yarı Hücresi', b: 'Katot Yarı Hücresi', d: 'Anotta yükseltgenme olur, elektrot aşınır, elektronlar dış devreye verilir; katotta indirgenme olur ve kütle artar.' },
@@ -348,7 +379,7 @@ export const UNIT_EXTRA_COMPARISONS: Record<string, Array<{ a: string; b: string
   u22: [
     { a: 'Erimiş Tuz Elektrolizi', b: 'Sulu Çözelti Elektrolizi', d: 'Erimiş tuzda sadece katyon ve anyon yarışır; sulu çözeltide suyun H+ ve OH- iyonları da elektrot yarışına katılır.' },
     { a: 'Katot Gazı (H2)', b: 'Anot Gazı (O2 veya Cl2)', d: 'Katotta indirgenmeyle H2 gazı toplanır; anotta yükseltgenmeyle O2 veya halojen gazı açığa çıkar.' },
-    { a: 'Faraday Sabiti (96500 C)', b: 'Elektrik Yükü (Q = I.t)', d: '1 mol elektronun yükü 96500 Coulomb dur; devreden geçen yük akım şiddeti ile sürenin çarpımıdır.' },
+    { a: 'Faraday Sabiti (96500 C)', b: 'Elektrik Yükü (Q = I.t)', d: '1 mol elektronun yükü 96500 Coulomb\'dur; devreden geçen yük akım şiddeti ile sürenin çarpımıdır.' },
     { a: 'Kurban Elektrot', b: 'Kaplama Metali', d: 'Kurban elektrot korunacak metalden daha aktiftir ve kendini feda eder; kaplama metalinde istenen metal katotta elektrokaplanır.' },
     { a: 'Korozyon', b: 'Paslanma', d: 'Korozyon tüm metallerin çevreyle kimyasal aşınmasıdır; paslanma demirin oksijen ve nemle Fe2O3.nH2O oluşturmasıdır.' },
     { a: 'Elektrostatik Kaplama', b: 'Galvanizleme', d: 'Elektrostatik kaplama toz boya yapışmasıdır; galvanizleme demirin erimiş çinko (Zn) ile kaplanarak korozyondan korunmasıdır.' },
@@ -358,16 +389,16 @@ export const UNIT_EXTRA_COMPARISONS: Record<string, Array<{ a: string; b: string
     { a: 'Grafen', b: 'Karbon Nanotüp', d: 'Grafen tek atom kalınlığında iki boyutlu bal peteği tabakadır; nanotüp grafen tabakasının silindir şeklinde sarılmış halidir.' },
     { a: 'Sigma (sigma) Bağı', b: 'Pi (pi) Bağı', d: 'Sigma bağı orbitallerin uç uca örtüşmesiyle oluşan ilk ve en güçlü bağdır; pi bağı p orbitallerinin yan yana örtüşmesiyle oluşur.' },
     { a: 'sp3 Hibritleşmesi', b: 'sp2 Hibritleşmesi', d: 'sp3 4 doğrultulu tetrahedral geometride görülür (109.5°); sp2 3 doğrultulu düzlem üçgen geometride görülür (120°).' },
-    { a: 'Düzgün Dörtyüzlü (AX4)', b: 'Üçgen Piramit (AX3E)', d: 'AX4 te ortaklanmamış çift yoktur ve bağ açısı 109.5° dir (CH4); AX3E de 1 serbest çift bağları iterek 107.3° yapar (NH3).' },
+    { a: 'Düzgün Dörtyüzlü (AX4)', b: 'Üçgen Piramit (AX3E)', d: 'AX4\'te ortaklanmamış çift yoktur ve bağ açısı 109.5°\'dir (CH4); AX3E\'de 1 serbest çift bağları iterek 107.3° yapar (NH3).' },
     { a: 'Doğrusal Geometri (AX2)', b: 'Kırık Doğru (AX2E2)', d: 'AX2 sp hibritleşmesiyle 180° doğrusal yapıdadır (CO2); AX2E2 2 serbest çift etkisiyle 104.5° kırık doğru geometridedir (H2O).' },
   ],
   u24: [
     { a: 'Alkan (Parafin)', b: 'Alken (Olefin)', d: 'Alkanlar sadece tekli sigma bağı içeren doymuş hidrokarbonlardır (CnH2n+2); alkenler en az bir ikili pi bağı içerir (CnH2n).' },
     { a: 'Alken', b: 'Alkin (Asetilenler)', d: 'Alkenler ikili bağ içerir ve katılma tepkimesi verir; alkinler üçlü bağ içerir (CnH2n-2) ve uç alkinler Tollens ile çökelek verir.' },
     { a: 'Primer Alkol', b: 'Sekonder Alkol', d: 'Primer alkol OH ın bağlı olduğu C da 1 R grubu içerir ve karboksilik aside kadar yükseltgenir; sekonder alkol sadece ketona yükseltgenir.' },
-    { a: 'Aldehit', b: 'Keton', d: 'Aldehit karbonil grubuna en az bir H bağlıdır ve Tollens/Fehling i indirger; keton karbonile iki alkil bağlıdır ve Tollens e etki etmez.' },
+    { a: 'Aldehit', b: 'Keton', d: 'Aldehit karbonil grubuna en az bir H bağlıdır ve Tollens/Fehling\'i indirger; keton karbonile iki alkil bağlıdır ve Tollens\'e etki etmez.' },
     { a: 'Karboksilik Asit', b: 'Ester', d: 'Karboksilik asit -COOH grubu içerir ve hidrojen bağı yapar; ester asit ve alkolün kondenzasyonuyla oluşan kokulu bileşiktir (-COOR).' },
-    { a: 'Markovnikov Katılması', b: 'Zaitsev Ayrılması', d: 'Markovnikov katılan H nin çok hidrojeni olan karbona gitmesidir; Zaitsev ayrılmada eliminasyon az hidrojeni olan karbondan gerçekleşir.' },
+    { a: 'Markovnikov Katılması', b: 'Zaitsev Ayrılması', d: 'Markovnikov katılan H\'nin çok hidrojeni olan karbona gitmesidir; Zaitsev ayrılmada eliminasyon az hidrojeni olan karbondan gerçekleşir.' },
   ],
 };
 
@@ -514,78 +545,78 @@ async function generateUnits() {
       });
     }
 
-    const TWIN_STEM_TEMPLATES: Record<Lang, Array<(uTitle: string, term: string) => string>> = {
+    const TWIN_STEM_TEMPLATES: Record<Lang, Array<(uTitle: string) => string>> = {
       tr: [
-        (uTitle, term) => `${uTitle} konusu kapsamında ${term} ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?`,
-        (uTitle, term) => `ÖSYM sınav standartlarında ${uTitle} ünitesinde ele alınan ${term} hakkında verilen ifadelerden hangisi kesinlikle doğrudur?`,
-        (uTitle, term) => `Bir kimya öğretmeninin laboratuvarda ${uTitle} konusunu işlerken ${term} üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?`,
-        (uTitle, term) => `Kimya dersinde ${uTitle} ünitesi incelenirken ${term} ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?`,
-        (uTitle, term) => `Aşağıdakilerden hangisi ${uTitle} konusundaki temel kimyasal kurallar çerçevesinde ${term} kavramını en doğru açıklayan ifadedir?`,
-        (uTitle, term) => `Üniversiteye giriş sınavı ${uTitle} sorularında karşılaşılan ${term} konusunda doğru olan yargı hangisidir?`,
-        (uTitle, term) => `Aşağıda ${uTitle} ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre ${term} ile ilgili hangisi doğrudur?`,
+        (uTitle) => `ÖSYM sınav standartlarında ${uTitle} ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?`,
+        (uTitle) => `Bir kimya öğretmeninin laboratuvarda ${uTitle} konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?`,
+        (uTitle) => `Kimya dersinde ${uTitle} ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?`,
+        (uTitle) => `Aşağıdakilerden hangisi ${uTitle} konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?`,
+        (uTitle) => `Üniversiteye giriş sınavı ${uTitle} sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?`,
+        (uTitle) => `Aşağıda ${uTitle} ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?`,
+        (uTitle) => `${uTitle} konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?`,
       ],
       en: [
-        (uTitle, term) => `In the context of ${uTitle}, which of the following findings regarding ${term} is scientifically verified?`,
-        (uTitle, term) => `According to exam standards in the unit ${uTitle}, which statement about ${term} is strictly correct?`,
-        (uTitle, term) => `During a laboratory inquiry on ${uTitle}, which statement regarding ${term} represents the correct answer?`,
-        (uTitle, term) => `When analyzing the unit ${uTitle}, which of the following propositions concerning ${term} is a verified scientific fact?`,
-        (uTitle, term) => `Which of the following most accurately describes ${term} within the fundamental principles of ${uTitle}?`,
-        (uTitle, term) => `In standard university entrance exams covering ${uTitle}, which assertion regarding ${term} is correct?`,
-        (uTitle, term) => `Based on the fundamental principles of ${uTitle}, which statement about ${term} is scientifically accurate?`,
+        (uTitle) => `According to exam standards in the unit ${uTitle}, which of the following statements is strictly correct?`,
+        (uTitle) => `During an inquiry on ${uTitle}, which statement represents the scientifically correct answer?`,
+        (uTitle) => `When analyzing the unit ${uTitle}, which of the following propositions is a verified scientific fact?`,
+        (uTitle) => `Which of the following statements is accurate within the fundamental principles of ${uTitle}?`,
+        (uTitle) => `In standard university entrance exams covering ${uTitle}, which assertion is scientifically correct?`,
+        (uTitle) => `Based on the fundamental principles of ${uTitle}, which statement is scientifically verified?`,
+        (uTitle) => `In the context of ${uTitle}, which of the following findings is an established scientific fact?`,
       ],
       de: [
-        (uTitle, term) => `Im Rahmen der Einheit ${uTitle}: Welcher der folgenden Befunde zu ${term} ist wissenschaftlich bestätigt?`,
-        (uTitle, term) => `Nach Prüfungsstandards der Einheit ${uTitle}: Welche Aussage über ${term} ist uneingeschränkt zutreffend?`,
-        (uTitle, term) => `Welche Aussage zu ${term} stellt im Kontext von ${uTitle} die wissenschaftlich korrekte Antwort dar?`,
-        (uTitle, term) => `Bei der Untersuchung von ${uTitle}: Welche Behauptung bezüglich ${term} entspricht einer wissenschaftlichen Tatsache?`,
-        (uTitle, term) => `Welche Aussage beschreibt das Konzept ${term} im Rahmen von ${uTitle} am präzisesten?`,
-        (uTitle, term) => `Welche Feststellung bezüglich ${term} ist nach den chemischen Gesetzmäßigkeiten von ${uTitle} richtig?`,
-        (uTitle, term) => `Auf der Grundlage der Einheit ${uTitle}: Welche Aussage über ${term} ist zutreffend?`,
+        (uTitle) => `Nach Prüfungsstandards der Einheit ${uTitle}: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?`,
+        (uTitle) => `Welche Aussage stellt im Kontext von ${uTitle} die wissenschaftlich korrekte Antwort dar?`,
+        (uTitle) => `Bei der Untersuchung von ${uTitle}: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?`,
+        (uTitle) => `Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von ${uTitle} zutreffend?`,
+        (uTitle) => `In Hochschulaufnahmeprüfungen zur Einheit ${uTitle}: Welche Feststellung ist richtig?`,
+        (uTitle) => `Auf der Grundlage der Einheit ${uTitle}: Welche der folgenden Aussagen ist wissenschaftlich exakt?`,
+        (uTitle) => `Im Rahmen der Einheit ${uTitle}: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?`,
       ],
       fr: [
-        (uTitle, term) => `Dans le cadre de l unité ${uTitle}, laquelle des constatations suivantes concernant ${term} est scientifiquement vérifiée?`,
-        (uTitle, term) => `Selon les normes d examen de ${uTitle}, quelle affirmation relative à ${term} est rigoureusement exacte?`,
-        (uTitle, term) => `Lors de l étude expérimentale de ${uTitle}, quelle proposition sur ${term} constitue la réponse exacte?`,
-        (uTitle, term) => `En analysant l unité ${uTitle}, laquelle des affirmations suivantes concernant ${term} est un fait scientifique avéré?`,
-        (uTitle, term) => `Laquelle des propositions suivantes décrit le plus fidèlement ${term} selon les lois de ${uTitle}?`,
-        (uTitle, term) => `Dans les épreuves universitaires portant sur ${uTitle}, quelle affirmation concernant ${term} est correcte?`,
-        (uTitle, term) => `Sur la base des notions fondamentales de ${uTitle}, quelle affirmation relative à ${term} est exacte?`,
+        (uTitle) => `Selon les normes d'examen de l'unité ${uTitle}, quelle affirmation est rigoureusement exacte ?`,
+        (uTitle) => `Lors de l'étude de l'unité ${uTitle}, quelle proposition constitue la réponse scientifiquement exacte ?`,
+        (uTitle) => `En analysant l'unité ${uTitle}, laquelle des affirmations suivantes est un fait scientifique avéré ?`,
+        (uTitle) => `Laquelle des propositions suivantes est scientifiquement exacte selon les lois de ${uTitle} ?`,
+        (uTitle) => `Dans les épreuves universitaires portant sur ${uTitle}, quelle affirmation est correcte ?`,
+        (uTitle) => `Sur la base des notions fondamentales de ${uTitle}, quelle affirmation est exacte ?`,
+        (uTitle) => `Dans le cadre de l'unité ${uTitle}, laquelle des constatations suivantes est scientifiquement vérifiée ?`,
       ],
       ru: [
-        (uTitle, term) => `В контексте темы «${uTitle}», какой из следующих выводов относительно «${term}» научно подтверждён?`,
-        (uTitle, term) => `В соответствии с экзаменационными стандартами раздела «${uTitle}», какое утверждение о «${term}» абсолютно верно?`,
-        (uTitle, term) => `В ходе лабораторного изучения темы «${uTitle}», какой ответ относительно «${term}» является правильным?`,
-        (uTitle, term) => `При рассмотрении темы «${uTitle}», какое из следующих суждений о «${term}» выражает доказанный научный факт?`,
-        (uTitle, term) => `Какое из утверждений наиболее точно описывает понятие «${term}» в рамках темы «${uTitle}»?`,
-        (uTitle, term) => `В экзаменационных заданиях по теме «${uTitle}», какое положение относительно «${term}» является верным?`,
-        (uTitle, term) => `На основе фундаментальных положений темы «${uTitle}», какое суждение о «${term}» верно?`,
+        (uTitle) => `В соответствии с экзаменационными стандартами раздела «${uTitle}», какое утверждение абсолютно верно?`,
+        (uTitle) => `В ходе изучения темы «${uTitle}», какой ответ является научно правильным?`,
+        (uTitle) => `При рассмотрении темы «${uTitle}», какое из следующих суждений выражает доказанный научный факт?`,
+        (uTitle) => `Какое из утверждений является верным в рамках фундаментальных законов темы «${uTitle}»?`,
+        (uTitle) => `В экзаменационных заданиях по теме «${uTitle}», какое положение является научным фактом?`,
+        (uTitle) => `На основе фундаментальных положений темы «${uTitle}», какое суждение истинно?`,
+        (uTitle) => `В контексте темы «${uTitle}», какой из следующих выводов научно подтверждён?`,
       ],
       ar: [
-        (uTitle, term) => `في سياق موضوع "${uTitle}"، أي من النتائج التالية المتعلقة بـ "${term}" مثبتة علمياً؟`,
-        (uTitle, term) => `وفقاً للمعايير الامتحانية لوحدة "${uTitle}"، أي عبارة حول "${term}" صحيحة تماماً؟`,
-        (uTitle, term) => `أثناء دراسة موضوع "${uTitle}" مخبرياً، أي إجابة بخصوص "${term}" تمثل الإجابة الصحيحة؟`,
-        (uTitle, term) => `عند دراسة وحدة "${uTitle}"، أي من الأحكام التالية المتعلقة بـ "${term}" تعتبر حقيقة علمية؟`,
-        (uTitle, term) => `أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم "${term}" ضمن قواعد "${uTitle}"؟`,
-        (uTitle, term) => `في أسئلة امتحانات القبول الجامعي لوحدة "${uTitle}"، أي حكم متعلق بـ "${term}" يعتبر صحيحاً؟`,
-        (uTitle, term) => `بناءً على المبادئ الكيميائية لوحدة "${uTitle}"، أي عبارة حول "${term}" صحيحة؟`,
+        (uTitle) => `وفقاً للمعايير الامتحانية لوحدة "${uTitle}"، أي عبارة من العبارات التالية صحيحة تماماً؟`,
+        (uTitle) => `أثناء دراسة موضوع "${uTitle}"، أي إجابة علمية تمثل الإجابة الصحيحة؟`,
+        (uTitle) => `عند دراسة وحدة "${uTitle}"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟`,
+        (uTitle) => `أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة "${uTitle}"؟`,
+        (uTitle) => `في أسئلة امتحانات القبول الجامعي لوحدة "${uTitle}"، أي حكم يعتبر صحيحاً؟`,
+        (uTitle) => `بناءً على المبادئ الكيميائية لوحدة "${uTitle}"، أي عبارة علمية صحيحة؟`,
+        (uTitle) => `في سياق وحدة "${uTitle}"، أي من النتائج التالية مثبتة علمياً؟`,
       ],
       zh: [
-        (uTitle, term) => `在“${uTitle}”主题范畴内，下列关于“${term}”的研究结论中哪一项已获得科学证实？`,
-        (uTitle, term) => `依照高考考纲标准，在“${uTitle}”单元中关于“${term}”的表述哪一项完全正确？`,
-        (uTitle, term) => `在“${uTitle}”实验探究与教学分析中，针对“${term}”所提问题的正确答案是？`,
-        (uTitle, term) => `在系统辨析“${uTitle}”核心规律时，下列关于“${term}”的命题哪项属于客观科学事实？`,
-        (uTitle, term) => `根据“${uTitle}”的基本化学原理，下列哪项阐述能最准确地界定“${term}”这一核心概念？`,
-        (uTitle, term) => `在高考“${uTitle}”经典考题中，下列有关“${term}”的论断哪一个是正确的？`,
-        (uTitle, term) => `基于“${uTitle}”的基础化学知识体系，下列关于“${term}”的判断完全正确的是？`,
+        (uTitle) => `依照高考考纲标准，在“${uTitle}”单元中关于化学核心规律的表述哪一项完全正确？`,
+        (uTitle) => `在“${uTitle}”教学探究中，针对相关化学知识所提问题的正确答案是？`,
+        (uTitle) => `在系统辨析“${uTitle}”核心规律时，下列关于该主题的命题哪项属于客观科学事实？`,
+        (uTitle) => `根据“${uTitle}”的基本化学原理，下列哪项阐述完全符合客观事实？`,
+        (uTitle) => `在高考“${uTitle}”经典考题中，下列有关化学规律的论断哪一个是正确的？`,
+        (uTitle) => `基于“${uTitle}”的基础化学知识体系，下列关于该单元的判断完全正确的是？`,
+        (uTitle) => `在“${uTitle}”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？`,
       ],
       ku: [
-        (uTitle, term) => `Di çarçoveya mijara "${uTitle}" de, kîjan ji van encamên li ser "${term}" ji aliyê zanistî ve hatiye piştrastkirin?`,
-        (uTitle, term) => `Li gorî pîvanên ezmûnê yên beşa "${uTitle}", kîjan gotin li ser "${term}" bê guman rast e?`,
-        (uTitle, term) => `Di lêkolîna ezmûnî ya li ser "${uTitle}" de, kîjan bersiv derbarê "${term}" de rast e?`,
-        (uTitle, term) => `Dema nirxandina beşa "${uTitle}" tê kirin, kîjan daraza li ser "${term}" rastiyeke zanistî ye?`,
-        (uTitle, term) => `Kîjan ji van vebijarkan têgeha "${term}" di çarçoveya prensîbên "${uTitle}" de herî rast rave dike?`,
-        (uTitle, term) => `Di pirsên ezmûna zanîngehê yên li ser "${uTitle}" de, kîjan daraza li ser "${term}" rast e?`,
-        (uTitle, term) => `Li gorî zanyariyên bingehîn ên beşa "${uTitle}", kîjan gotin derbarê "${term}" de rast e?`,
+        (uTitle) => `Li gorî pîvanên ezmûnê yên beşa "${uTitle}", kîjan gotin li ser vê beşê bê guman rast e?`,
+        (uTitle) => `Di lêkolîna li ser beşa "${uTitle}" de, kîjan bersiv ji aliyê zanistî ve rast e?`,
+        (uTitle) => `Dema nirxandina beşa "${uTitle}" tê kirin, kîjan daraz rastiyeke zanistî ye?`,
+        (uTitle) => `Kîjan ji van vebijarkan di çarçoveya prensîbên beşa "${uTitle}" de rast e?`,
+        (uTitle) => `Di pirsên ezmûna zanîngehê yên li ser "${uTitle}" de, kîjan daraz rast e?`,
+        (uTitle) => `Li gorî zanyariyên bingehîn ên beşa "${uTitle}", kîjan gotin rast e?`,
+        (uTitle) => `Di çarçoveya mijara "${uTitle}" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?`,
       ],
     };
 
@@ -594,17 +625,12 @@ async function generateUnits() {
       const factPair = facts[tIdx];
       const targetFact = factPair.fact;
 
-      // Clean concept term from comparison conceptA or fact
-      const compItem = comparisons[tIdx % comparisons.length];
-      const conceptTerm = compItem ? compItem.conceptA : getLoc(targetFact.tr.slice(0, 20));
-
       const localizedTitle = locAll(raw.title);
       const stem: Record<Lang, string> = {} as any;
       for (const l of LANGUAGES) {
         const uTitle = localizedTitle[l] || localizedTitle.tr;
-        const term = conceptTerm[l] || conceptTerm.tr;
         const stemGen = TWIN_STEM_TEMPLATES[l][tIdx % TWIN_STEM_TEMPLATES[l].length];
-        stem[l] = stemGen(uTitle, term);
+        stem[l] = stemGen(uTitle);
       }
 
       const desiredCorrectIndex = (tIdx % 5) as 0 | 1 | 2 | 3 | 4;

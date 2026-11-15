@@ -30,6 +30,8 @@ async function main(): Promise<void> {
   printTierHeader(1, 'Feature Coverage (Category-Partition Equivalence)');
   const tier1 = await import('../tests/e2e/tier1-feature-coverage.test');
   await tier1.runTier1Tests();
+  const m6 = await import('../tests/e2e/milestone6-ai-coach-profiles.test');
+  await m6.runMilestone6Tests();
 
   // 3. Tier 2: Boundary & Corner Cases (Boundary Value Analysis)
   printTierHeader(2, 'Boundary & Corner Cases (Boundary Value Analysis)');

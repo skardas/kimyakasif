@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useRef, useEffect } from 'react';
 import {
   ArrowLeft,
   CheckCircle2,
@@ -361,6 +361,16 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
   const [solvedCount, setSolvedCount] = useState(0);
   const [showHint, setShowHint] = useState(false);
   const [feedback, setFeedback] = useState<{ message: string; isCorrect: boolean } | null>(null);
+  const advanceTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Clear timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (advanceTimeoutRef.current) {
+        clearTimeout(advanceTimeoutRef.current);
+      }
+    };
+  }, []);
 
   // Reset coefficients on equation switch
   const loadEquation = useCallback((idx: number) => {
@@ -478,7 +488,8 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
     });
 
     // Advance to next after slight pause
-    setTimeout(() => {
+    if (advanceTimeoutRef.current) clearTimeout(advanceTimeoutRef.current);
+    advanceTimeoutRef.current = setTimeout(() => {
       if (equationIndex < AUTHENTIC_EQUATIONS.length - 1) {
         loadEquation(equationIndex + 1);
       } else {
@@ -547,7 +558,7 @@ export const EquationBalancer: React.FC<EquationBalancerProps> = ({
         )}
 
         {/* Interactive Equation Stepper Visual */}
-        <div className="equation-stepper-stage flex items-center justify-center flex-wrap gap-2 md:gap-3 py-4 text-base md:text-xl font-mono">
+        <div className="equation-stepper-stage flex items-center justify-center flex-wrap gap-2 md:gap-3 py-4 text-base md:text-xl font-mono" dir="ltr">
           {/* Reactants */}
           {currentEq.reactants.map((r, idx) => (
             <React.Fragment key={`r-${idx}`}>

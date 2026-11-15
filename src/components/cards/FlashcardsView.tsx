@@ -17,7 +17,6 @@ import { ALL_CHEMISTRY_UNITS } from '../../data/units';
 import { compileAllFlashcards, type CompiledFlashcard } from '../../engine/flashcardGenerator';
 import { LeitnerBoxEngine } from '../../engine/leitnerEngine';
 import { formatChemText } from '../common/ChemFormula';
-import { Confetti } from '../common/Confetti';
 import {
   playDrop,
   playCorrect,
@@ -53,13 +52,15 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [shuffledCards, setShuffledCards] = useState<CompiledFlashcard[]>(allCards);
-  const [celebrationKey, setCelebrationKey] = useState(0);
 
   // Swipe drag state
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
   const isScrolling = useRef(false);
+  const touchHandledFlipRef = useRef(false);
+  const pointerStartRef = useRef<{ x: number; y: number; time: number; pointerId: number } | null>(null);
+  const pointerSwipedRef = useRef(false);
 
   // Sync initialUnitId if changed from parent
   useEffect(() => {
@@ -137,7 +138,6 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
       if (result.newBox === 5) {
         playSuccess();
         playApplause();
-        setCelebrationKey((k) => k + 1);
       } else {
         playCorrect();
       }
@@ -194,6 +194,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
         handleRate(false); // Left swipe -> Needs Review / Demote
       }
     } else if (!isScrolling.current && Math.abs(dx) < 10 && dt < 250) {
+      touchHandledFlipRef.current = true;
       handleFlip();
     } else {
       setDragOffset({ x: 0, y: 0 });
@@ -202,6 +203,59 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     setIsDragging(false);
     touchStartRef.current = null;
     isScrolling.current = false;
+  };
+
+  // Pointer handlers for desktop mouse / pen drag
+  const onPointerDown = (e: React.PointerEvent) => {
+    if (e.pointerType === 'touch') return;
+    try {
+      (e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId);
+    } catch {
+      // ignore
+    }
+    pointerStartRef.current = {
+      x: e.clientX,
+      y: e.clientY,
+      time: Date.now(),
+      pointerId: e.pointerId,
+    };
+    pointerSwipedRef.current = false;
+    setIsDragging(true);
+  };
+
+  const onPointerMove = (e: React.PointerEvent) => {
+    if (e.pointerType === 'touch' || !pointerStartRef.current) return;
+    const dx = e.clientX - pointerStartRef.current.x;
+    const dy = e.clientY - pointerStartRef.current.y;
+    if (Math.abs(dx) > 5) {
+      pointerSwipedRef.current = true;
+    }
+    setDragOffset({ x: dx, y: dy });
+  };
+
+  const onPointerUp = (e: React.PointerEvent) => {
+    if (e.pointerType === 'touch' || !pointerStartRef.current) return;
+    try {
+      (e.currentTarget as HTMLElement).releasePointerCapture?.(e.pointerId);
+    } catch {
+      // ignore
+    }
+    const dx = dragOffset.x;
+    const dt = Date.now() - pointerStartRef.current.time;
+    const velocity = Math.abs(dx) / (dt || 1);
+
+    if (Math.abs(dx) > 80 || (Math.abs(dx) > 35 && velocity > 0.45)) {
+      if (dx > 0) {
+        handleRate(true);
+      } else {
+        handleRate(false);
+      }
+    } else {
+      setDragOffset({ x: 0, y: 0 });
+    }
+
+    setIsDragging(false);
+    pointerStartRef.current = null;
   };
 
   // Keyboard navigation
@@ -239,8 +293,6 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   return (
     <section className="cards-container" aria-label={t.cards.title}>
-      <Confetti burstKey={celebrationKey} />
-
       {/* Header and Telemetry */}
       <div className="section-header">
         <div>
@@ -356,6 +408,9 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
+            onPointerDown={onPointerDown}
+            onPointerMove={onPointerMove}
+            onPointerUp={onPointerUp}
           >
             {/* Rubber Stamp Swipe Overlays */}
             <div className="swipe-stamp stamp-demote" style={{ opacity: swipeOpacityLeft }}>
@@ -368,9 +423,19 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
             {/* 3D Rotatable Card Container */}
             <div
               className={`flashcard-3d-card ${isFlipped ? 'flipped' : ''}`}
-              onClick={handleFlip}
+              onClick={() => {
+                if (touchHandledFlipRef.current) {
+                  touchHandledFlipRef.current = false;
+                  return;
+                }
+                if (pointerSwipedRef.current) {
+                  pointerSwipedRef.current = false;
+                  return;
+                }
+                handleFlip();
+              }}
               style={{
-                transform: `${isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'} translate3d(${dragOffset.x}px, ${dragOffset.y * 0.3}px, 0) rotate(${dragOffset.x * 0.05}deg)`,
+                transform: `translate3d(${dragOffset.x}px, ${dragOffset.y * 0.3}px, 0) rotate(${dragOffset.x * 0.05}deg) ${isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'}`,
                 transition: isDragging ? 'none' : 'transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
               }}
             >

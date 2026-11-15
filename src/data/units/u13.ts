@@ -86,7 +86,7 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-f03",
       "fact": {
-        "tr": "Dalton Kısmi Basınçlar Yasası: Karışımdaki bir gazın kısmi basıncı Pi = Xi * Ptoplam dır (Xi = ni / ntoplam).",
+        "tr": "Dalton Kısmi Basınçlar Yasası: Karışımdaki bir gazın kısmi basıncı Pi = Xi * Ptoplam'dır (Xi = ni / ntoplam).",
         "en": "Dalton's Law of Partial Pressures: The partial pressure of a gas in a mixture is Pi = Xi * Ptotal (Xi = ni / ntotal).",
         "de": "Daltons Partialdruckgesetz: Der Partialdruck eines Gases in einer Mischung ist Pi = Xi * Ptotal (Xi = ni / ntotal).",
         "fr": "Loi de Dalton sur les pressions partielles : La pression partielle d'un gaz dans un mélange est Pi = Xi * Ptotal (Xi = ni / ntotal).",
@@ -336,7 +336,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ku": "Gaza CH4 (MA=16) sqrt(64/16) = 2 qat ji gaza SO2 (MA=64) zûtir belav dike."
       },
       "trap": {
-        "tr": "CH4 gazı SO2 den 4 kat daha hızlı hareket eder.",
+        "tr": "CH4 gazı SO2'den 4 kat daha hızlı hareket eder.",
         "en": "CH4 gas moves 4 times faster than SO2.",
         "de": "CH4-Gas bewegt sich viermal schneller als SO2.",
         "fr": "Le gaz CH4 se déplace 4 fois plus vite que le SO2.",
@@ -372,7 +372,7 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-f15",
       "fact": {
-        "tr": "Sıkıştırılabilirlik faktörü Z = PV / nRT dir; ideal gazda Z = 1 dir.",
+        "tr": "Sıkıştırılabilirlik faktörü Z = PV / nRT'dir; ideal gazda Z = 1'dir.",
         "en": "The compressibility factor is Z = PV / nRT; In an ideal gas, Z = 1.",
         "de": "Der Kompressibilitätsfaktor beträgt Z = PV / nRT; In einem idealen Gas ist Z = 1.",
         "fr": "Le facteur de compressibilité est Z = PV/nRT ; Dans un gaz parfait, Z = 1.",
@@ -382,7 +382,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ku": "Faktora tevlihevbûnê Z = PV / nRT ye; Di gazek îdeal de, Z = 1."
       },
       "trap": {
-        "tr": "Gerçek gazların hepsinde Z değeri daima 1 e eşittir.",
+        "tr": "Gerçek gazların hepsinde Z değeri daima 1'e eşittir.",
         "en": "In all real gases, the Z value is always equal to 1.",
         "de": "In allen realen Gasen ist der Z-Wert immer gleich 1.",
         "fr": "Dans tous les gaz réels, la valeur Z est toujours égale à 1.",
@@ -671,7 +671,7 @@ export const unit13: ChemistryUnitSeedData = {
         "ku": "Zexta Krîtîk"
       },
       "distinction": {
-        "tr": "İdeal gazda Z = 1 dir; gerçek gazlarda Z 1 den sapar ve kritik basınçta sıvı-buhar faz sınırı kaybolur.",
+        "tr": "İdeal gazda Z = 1'dir; gerçek gazlarda Z 1'den sapar ve kritik basınçta sıvı-buhar faz sınırı kaybolur.",
         "en": "In an ideal gas, Z = 1; In real gases, Z deviates from 1 and the liquid-vapor phase boundary disappears at the critical pressure.",
         "de": "In einem idealen Gas ist Z = 1; In realen Gasen weicht Z von 1 ab und die Flüssigkeits-Dampf-Phasengrenze verschwindet beim kritischen Druck.",
         "fr": "Dans un gaz parfait, Z = 1 ; Dans les gaz réels, Z s'écarte de 1 et la limite de phase liquide-vapeur disparaît à la pression critique.",
@@ -782,7 +782,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Gazên di boriyê de ber bi hev belav dibin"
         },
         {
-          "tr": "Hafif olan NH3 gazı daha hızlı yayılarak HCl ye yakın halka oluşturur",
+          "tr": "Hafif olan NH3 gazı daha hızlı yayılarak HCl'ye yakın halka oluşturur",
           "en": "The lighter NH3 gas spreads faster and forms a ring close to HCl.",
           "de": "Das leichtere NH3-Gas breitet sich schneller aus und bildet einen Ring in der Nähe von HCl.",
           "fr": "Le gaz NH3, plus léger, se propage plus rapidement et forme un anneau proche du HCl.",
@@ -1060,14 +1060,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Gazlar: Kinetik Teori ve Gerçek Gazlar konusunu işlerken Graham Difüzyon Yasası üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Gases: Kinetic Theory & Real Gases, which statement regarding Graham's Law of Diffusion represents the correct answer?",
-        "de": "Welche Aussage zu Grahams Diffusionsgesetz stellt im Kontext von Kinetische Gastheorie die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Théorie Cinétique des Gaz, quelle proposition sur Loi de diffusion de Graham constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Кинетическая теория газов», какой ответ относительно «Закон диффузии Грэма» является правильным?",
-        "ar": "أثناء دراسة موضوع \"النظرية الحركية للغازات\" مخبرياً، أي إجابة بخصوص \"قانون غراهام للانتشار\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“气体动理论”实验探究与教学分析中，针对“格雷厄姆扩散定律”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Teoriya Kînetîk a Gazan\" de, kîjan bersiv derbarê \"Qanûna Belavbûnê ya Graham\" de rast e?"
+        "tr": "Kimya dersinde Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Gases: Kinetic Theory & Real Gases, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Kinetische Gastheorie: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Théorie Cinétique des Gaz, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Кинетическая теория газов», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"النظرية الحركية للغازات\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“气体动理论”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Teoriya Kînetîk a Gazan\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1091,7 +1091,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Têgehên buhar û gazê bi zanistî tam yek in."
         },
         {
-          "tr": "Dalton Kısmi Basınçlar Yasası: Karışımdaki bir gazın kısmi basıncı Pi = Xi * Ptoplam dır (Xi = ni / ntoplam).",
+          "tr": "Dalton Kısmi Basınçlar Yasası: Karışımdaki bir gazın kısmi basıncı Pi = Xi * Ptoplam'dır (Xi = ni / ntoplam).",
           "en": "Dalton's Law of Partial Pressures: The partial pressure of a gas in a mixture is Pi = Xi * Ptotal (Xi = ni / ntotal).",
           "de": "Daltons Partialdruckgesetz: Der Partialdruck eines Gases in einer Mischung ist Pi = Xi * Ptotal (Xi = ni / ntotal).",
           "fr": "Loi de Dalton sur les pressions partielles : La pression partielle d'un gaz dans un mélange est Pi = Xi * Ptotal (Xi = ni / ntotal).",
@@ -1111,7 +1111,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Divê xala kelandinê ya sarincokê ji germahiya odeyê pir bilindtir be."
         },
         {
-          "tr": "Gerçek gazların hepsinde Z değeri daima 1 e eşittir.",
+          "tr": "Gerçek gazların hepsinde Z değeri daima 1'e eşittir.",
           "en": "In all real gases, the Z value is always equal to 1.",
           "de": "In allen realen Gasen ist der Z-Wert immer gleich 1.",
           "fr": "Dans tous les gaz réels, la valeur Z est toujours égale à 1.",
@@ -1123,7 +1123,7 @@ export const unit13: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Dalton Kısmi Basınçlar Yasası: Karışımdaki bir gazın kısmi basıncı Pi = Xi * Ptoplam dır (Xi = ni / ntoplam).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Dalton Kısmi Basınçlar Yasası: Karışımdaki bir gazın kısmi basıncı Pi = Xi * Ptoplam'dır (Xi = ni / ntoplam).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Dalton's Law of Partial Pressures: The partial pressure of a gas in a mixture is Pi = Xi * Ptotal (Xi = ni / ntotal).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Daltons Partialdruckgesetz: Der Partialdruck eines Gases in einer Mischung ist Pi = Xi * Ptotal (Xi = ni / ntotal).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Loi de Dalton sur les pressions partielles : La pression partielle d'un gaz dans un mélange est Pi = Xi * Ptotal (Xi = ni / ntotal).\". Notion fondamentale du programme officiel de chimie.",
@@ -1136,14 +1136,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin04",
       "stem": {
-        "tr": "Kimya dersinde Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesi incelenirken Gerçek Gaz ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Gases: Kinetic Theory & Real Gases, which of the following propositions concerning Real Gas is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Kinetische Gastheorie: Welche Behauptung bezüglich Echtes Gas entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Théorie Cinétique des Gaz, laquelle des affirmations suivantes concernant Gaz réel est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Кинетическая теория газов», какое из следующих суждений о «Реальный газ» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"النظرية الحركية للغازات\"، أي من الأحكام التالية المتعلقة بـ \"الغاز الحقيقي\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“气体动理论”核心规律时，下列关于“真实气体”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Teoriya Kînetîk a Gazan\" tê kirin, kîjan daraza li ser \"Gaza Rastî\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Gazlar: Kinetik Teori ve Gerçek Gazlar konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Gases: Kinetic Theory & Real Gases?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Kinetische Gastheorie zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Théorie Cinétique des Gaz ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Кинетическая теория газов»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"النظرية الحركية للغازات\"؟",
+        "zh": "根据“气体动理论”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Teoriya Kînetîk a Gazan\" de rast e?"
       },
       "options": [
         {
@@ -1167,7 +1167,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Zexta buhara avê ji tansiyona gaza ku li jora avê hatiye berhevkirin nayê kêmkirin."
         },
         {
-          "tr": "CH4 gazı SO2 den 4 kat daha hızlı hareket eder.",
+          "tr": "CH4 gazı SO2'den 4 kat daha hızlı hareket eder.",
           "en": "CH4 gas moves 4 times faster than SO2.",
           "de": "CH4-Gas bewegt sich viermal schneller als SO2.",
           "fr": "Le gaz CH4 se déplace 4 fois plus vite que le SO2.",
@@ -1212,14 +1212,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Gazlar: Kinetik Teori ve Gerçek Gazlar konusundaki temel kimyasal kurallar çerçevesinde Joule-Thomson Olayı kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Joule-Thomson Effect within the fundamental principles of Gases: Kinetic Theory & Real Gases?",
-        "de": "Welche Aussage beschreibt das Konzept Joule-Thomson-Effekt im Rahmen von Kinetische Gastheorie am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Effet Joule-Thomson selon les lois de Théorie Cinétique des Gaz?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Эффект Джоуля-Томсона» в рамках темы «Кинетическая теория газов»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"تأثير جول طومسون\" ضمن قواعد \"النظرية الحركية للغازات\"؟",
-        "zh": "根据“气体动理论”的基本化学原理，下列哪项阐述能最准确地界定“焦耳-汤姆逊效应”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Bandora Joule-Thomson\" di çarçoveya prensîbên \"Teoriya Kînetîk a Gazan\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Gazlar: Kinetik Teori ve Gerçek Gazlar sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Gases: Kinetic Theory & Real Gases, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Kinetische Gastheorie: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Théorie Cinétique des Gaz, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Кинетическая теория газов», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"النظرية الحركية للغازات\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“气体动理论”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Teoriya Kînetîk a Gazan\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1288,14 +1288,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Gazlar: Kinetik Teori ve Gerçek Gazlar sorularında karşılaşılan Doygun Su Buharı Basıncı konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Gases: Kinetic Theory & Real Gases, which assertion regarding Saturated Water Vapor Pressure is correct?",
-        "de": "Welche Feststellung bezüglich Gesättigter Wasserdampfdruck ist nach den chemischen Gesetzmäßigkeiten von Kinetische Gastheorie richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Théorie Cinétique des Gaz, quelle affirmation concernant Pression de vapeur d'eau saturée est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Кинетическая теория газов», какое положение относительно «Давление насыщенного водяного пара» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"النظرية الحركية للغازات\"، أي حكم متعلق بـ \"ضغط بخار الماء المشبع\" يعتبر صحيحاً؟",
-        "zh": "在高考“气体动理论”经典考题中，下列有关“饱和水蒸气压”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Teoriya Kînetîk a Gazan\" de, kîjan daraza li ser \"Zexta Vaporê ya Têrkirî\" rast e?"
+        "tr": "Aşağıda Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Gases: Kinetic Theory & Real Gases, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Kinetische Gastheorie: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Théorie Cinétique des Gaz, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Кинетическая теория газов», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"النظرية الحركية للغازات\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“气体动理论”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Teoriya Kînetîk a Gazan\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1329,7 +1329,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Divê xala kelandinê ya sarincokê ji germahiya odeyê pir bilindtir be."
         },
         {
-          "tr": "Gerçek gazların hepsinde Z değeri daima 1 e eşittir.",
+          "tr": "Gerçek gazların hepsinde Z değeri daima 1'e eşittir.",
           "en": "In all real gases, the Z value is always equal to 1.",
           "de": "In allen realen Gasen ist der Z-Wert immer gleich 1.",
           "fr": "Dans tous les gaz réels, la valeur Z est toujours égale à 1.",
@@ -1364,14 +1364,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin07",
       "stem": {
-        "tr": "Aşağıda Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Kinetik Enerji ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Gases: Kinetic Theory & Real Gases, which statement about Kinetic Energy is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Kinetische Gastheorie: Welche Aussage über Kinetische Energie ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Théorie Cinétique des Gaz, quelle affirmation relative à Énergie cinétique est exacte?",
-        "ru": "На основе фундаментальных положений темы «Кинетическая теория газов», какое суждение о «Кинетическая энергия» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"النظرية الحركية للغازات\"، أي عبارة حول \"الطاقة الحركية\" صحيحة؟",
-        "zh": "基于“气体动理论”的基础化学知识体系，下列关于“动能”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Teoriya Kînetîk a Gazan\", kîjan gotin derbarê \"Enerjiya Kînetîk\" de rast e?"
+        "tr": "Gazlar: Kinetik Teori ve Gerçek Gazlar konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Gases: Kinetic Theory & Real Gases, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Kinetische Gastheorie: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Théorie Cinétique des Gaz, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Кинетическая теория газов», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"النظرية الحركية للغازات\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“气体动理论”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Teoriya Kînetîk a Gazan\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1395,7 +1395,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Bandora Joule-Thomson: Ew sarbûna gaza berbelavkirî ye ku bi vexwarina enerjiya xweya hundurîn (sax û klîma) ve ye."
         },
         {
-          "tr": "CH4 gazı SO2 den 4 kat daha hızlı hareket eder.",
+          "tr": "CH4 gazı SO2'den 4 kat daha hızlı hareket eder.",
           "en": "CH4 gas moves 4 times faster than SO2.",
           "de": "CH4-Gas bewegt sich viermal schneller als SO2.",
           "fr": "Le gaz CH4 se déplace 4 fois plus vite que le SO2.",
@@ -1440,14 +1440,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin08",
       "stem": {
-        "tr": "Gazlar: Kinetik Teori ve Gerçek Gazlar konusu kapsamında İdeallikten Sapma Faktörü (Z = PV/nRT) ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Gases: Kinetic Theory & Real Gases, which of the following findings regarding Deviation from ideality factor (Z = PV/nRT) is scientifically verified?",
-        "de": "Im Rahmen der Einheit Kinetische Gastheorie: Welcher der folgenden Befunde zu Abweichung vom Idealitätsfaktor (Z = PV/nRT) ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Théorie Cinétique des Gaz, laquelle des constatations suivantes concernant Écart par rapport au facteur d'idéalité (Z = PV/nRT) est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Кинетическая теория газов», какой из следующих выводов относительно «Отклонение от коэффициента идеальности (Z = PV/nRT)» научно подтверждён?",
-        "ar": "في سياق موضوع \"النظرية الحركية للغازات\"، أي من النتائج التالية المتعلقة بـ \"الانحراف عن عامل المثالية (Z = PV/nRT)\" مثبتة علمياً؟",
-        "zh": "在“气体动理论”主题范畴内，下列关于“与理想因子的偏差 (Z = PV/nRT)”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Teoriya Kînetîk a Gazan\" de, kîjan ji van encamên li ser \"Dûrketina ji faktora îdealîteyê (Z = PV/nRT)\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Gases: Kinetic Theory & Real Gases, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Kinetische Gastheorie: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Théorie Cinétique des Gaz, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Кинетическая теория газов», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"النظرية الحركية للغازات\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“气体动理论”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Teoriya Kînetîk a Gazan\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1516,14 +1516,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesinde ele alınan İdeal Gaz hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Gases: Kinetic Theory & Real Gases, which statement about Ideal Gas is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Kinetische Gastheorie: Welche Aussage über Ideales Gas ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Théorie Cinétique des Gaz, quelle affirmation relative à Gaz parfait est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Кинетическая теория газов», какое утверждение о «Идеальный газ» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"النظرية الحركية للغازات\"، أي عبارة حول \"الغاز المثالي\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“气体动理论”单元中关于“理想气体”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Teoriya Kînetîk a Gazan\", kîjan gotin li ser \"Gaza Îdeal\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Gazlar: Kinetik Teori ve Gerçek Gazlar konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Gases: Kinetic Theory & Real Gases, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Kinetische Gastheorie die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Théorie Cinétique des Gaz, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Кинетическая теория газов», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"النظرية الحركية للغازات\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“气体动理论”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Teoriya Kînetîk a Gazan\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1537,7 +1537,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Divê xala kelandinê ya sarincokê ji germahiya odeyê pir bilindtir be."
         },
         {
-          "tr": "Gerçek gazların hepsinde Z değeri daima 1 e eşittir.",
+          "tr": "Gerçek gazların hepsinde Z değeri daima 1'e eşittir.",
           "en": "In all real gases, the Z value is always equal to 1.",
           "de": "In allen realen Gasen ist der Z-Wert immer gleich 1.",
           "fr": "Dans tous les gaz réels, la valeur Z est toujours égale à 1.",
@@ -1592,18 +1592,18 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Gazlar: Kinetik Teori ve Gerçek Gazlar konusunu işlerken Gaz üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Gases: Kinetic Theory & Real Gases, which statement regarding gas represents the correct answer?",
-        "de": "Welche Aussage zu Gas stellt im Kontext von Kinetische Gastheorie die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Théorie Cinétique des Gaz, quelle proposition sur gaz constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Кинетическая теория газов», какой ответ относительно «газ» является правильным?",
-        "ar": "أثناء دراسة موضوع \"النظرية الحركية للغازات\" مخبرياً، أي إجابة بخصوص \"غاز\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“气体动理论”实验探究与教学分析中，针对“气体”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Teoriya Kînetîk a Gazan\" de, kîjan bersiv derbarê \"gaz\" de rast e?"
+        "tr": "Kimya dersinde Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Gases: Kinetic Theory & Real Gases, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Kinetische Gastheorie: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Théorie Cinétique des Gaz, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Кинетическая теория газов», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"النظرية الحركية للغازات\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“气体动理论”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Teoriya Kînetîk a Gazan\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
-          "tr": "CH4 gazı SO2 den 4 kat daha hızlı hareket eder.",
+          "tr": "CH4 gazı SO2'den 4 kat daha hızlı hareket eder.",
           "en": "CH4 gas moves 4 times faster than SO2.",
           "de": "CH4-Gas bewegt sich viermal schneller als SO2.",
           "fr": "Le gaz CH4 se déplace 4 fois plus vite que le SO2.",
@@ -1668,14 +1668,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin11",
       "stem": {
-        "tr": "Kimya dersinde Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesi incelenirken Graham Difüzyon Yasası ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Gases: Kinetic Theory & Real Gases, which of the following propositions concerning Graham's Law of Diffusion is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Kinetische Gastheorie: Welche Behauptung bezüglich Grahams Diffusionsgesetz entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Théorie Cinétique des Gaz, laquelle des affirmations suivantes concernant Loi de diffusion de Graham est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Кинетическая теория газов», какое из следующих суждений о «Закон диффузии Грэма» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"النظرية الحركية للغازات\"، أي من الأحكام التالية المتعلقة بـ \"قانون غراهام للانتشار\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“气体动理论”核心规律时，下列关于“格雷厄姆扩散定律”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Teoriya Kînetîk a Gazan\" tê kirin, kîjan daraza li ser \"Qanûna Belavbûnê ya Graham\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Gazlar: Kinetik Teori ve Gerçek Gazlar konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Gases: Kinetic Theory & Real Gases?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Kinetische Gastheorie zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Théorie Cinétique des Gaz ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Кинетическая теория газов»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"النظرية الحركية للغازات\"؟",
+        "zh": "根据“气体动理论”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Teoriya Kînetîk a Gazan\" de rast e?"
       },
       "options": [
         {
@@ -1744,18 +1744,18 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Gazlar: Kinetik Teori ve Gerçek Gazlar konusundaki temel kimyasal kurallar çerçevesinde Gerçek Gaz kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Real Gas within the fundamental principles of Gases: Kinetic Theory & Real Gases?",
-        "de": "Welche Aussage beschreibt das Konzept Echtes Gas im Rahmen von Kinetische Gastheorie am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Gaz réel selon les lois de Théorie Cinétique des Gaz?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Реальный газ» в рамках темы «Кинетическая теория газов»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"الغاز الحقيقي\" ضمن قواعد \"النظرية الحركية للغازات\"؟",
-        "zh": "根据“气体动理论”的基本化学原理，下列哪项阐述能最准确地界定“真实气体”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Gaza Rastî\" di çarçoveya prensîbên \"Teoriya Kînetîk a Gazan\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Gazlar: Kinetik Teori ve Gerçek Gazlar sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Gases: Kinetic Theory & Real Gases, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Kinetische Gastheorie: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Théorie Cinétique des Gaz, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Кинетическая теория газов», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"النظرية الحركية للغازات\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“气体动理论”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Teoriya Kînetîk a Gazan\" de, kîjan daraz rast e?"
       },
       "options": [
         {
-          "tr": "Gerçek gazların hepsinde Z değeri daima 1 e eşittir.",
+          "tr": "Gerçek gazların hepsinde Z değeri daima 1'e eşittir.",
           "en": "In all real gases, the Z value is always equal to 1.",
           "de": "In allen realen Gasen ist der Z-Wert immer gleich 1.",
           "fr": "Dans tous les gaz réels, la valeur Z est toujours égale à 1.",
@@ -1820,14 +1820,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Gazlar: Kinetik Teori ve Gerçek Gazlar sorularında karşılaşılan Joule-Thomson Olayı konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Gases: Kinetic Theory & Real Gases, which assertion regarding Joule-Thomson Effect is correct?",
-        "de": "Welche Feststellung bezüglich Joule-Thomson-Effekt ist nach den chemischen Gesetzmäßigkeiten von Kinetische Gastheorie richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Théorie Cinétique des Gaz, quelle affirmation concernant Effet Joule-Thomson est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Кинетическая теория газов», какое положение относительно «Эффект Джоуля-Томсона» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"النظرية الحركية للغازات\"، أي حكم متعلق بـ \"تأثير جول طومسون\" يعتبر صحيحاً؟",
-        "zh": "在高考“气体动理论”经典考题中，下列有关“焦耳-汤姆逊效应”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Teoriya Kînetîk a Gazan\" de, kîjan daraza li ser \"Bandora Joule-Thomson\" rast e?"
+        "tr": "Aşağıda Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Gases: Kinetic Theory & Real Gases, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Kinetische Gastheorie: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Théorie Cinétique des Gaz, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Кинетическая теория газов», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"النظرية الحركية للغازات\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“气体动理论”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Teoriya Kînetîk a Gazan\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1896,14 +1896,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin14",
       "stem": {
-        "tr": "Aşağıda Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Doygun Su Buharı Basıncı ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Gases: Kinetic Theory & Real Gases, which statement about Saturated Water Vapor Pressure is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Kinetische Gastheorie: Welche Aussage über Gesättigter Wasserdampfdruck ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Théorie Cinétique des Gaz, quelle affirmation relative à Pression de vapeur d'eau saturée est exacte?",
-        "ru": "На основе фундаментальных положений темы «Кинетическая теория газов», какое суждение о «Давление насыщенного водяного пара» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"النظرية الحركية للغازات\"، أي عبارة حول \"ضغط بخار الماء المشبع\" صحيحة؟",
-        "zh": "基于“气体动理论”的基础化学知识体系，下列关于“饱和水蒸气压”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Teoriya Kînetîk a Gazan\", kîjan gotin derbarê \"Zexta Vaporê ya Têrkirî\" de rast e?"
+        "tr": "Gazlar: Kinetik Teori ve Gerçek Gazlar konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Gases: Kinetic Theory & Real Gases, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Kinetische Gastheorie: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Théorie Cinétique des Gaz, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Кинетическая теория газов», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"النظرية الحركية للغازات\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“气体动理论”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Teoriya Kînetîk a Gazan\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1972,14 +1972,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin15",
       "stem": {
-        "tr": "Gazlar: Kinetik Teori ve Gerçek Gazlar konusu kapsamında Kinetik Enerji ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Gases: Kinetic Theory & Real Gases, which of the following findings regarding Kinetic Energy is scientifically verified?",
-        "de": "Im Rahmen der Einheit Kinetische Gastheorie: Welcher der folgenden Befunde zu Kinetische Energie ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Théorie Cinétique des Gaz, laquelle des constatations suivantes concernant Énergie cinétique est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Кинетическая теория газов», какой из следующих выводов относительно «Кинетическая энергия» научно подтверждён?",
-        "ar": "في سياق موضوع \"النظرية الحركية للغازات\"، أي من النتائج التالية المتعلقة بـ \"الطاقة الحركية\" مثبتة علمياً؟",
-        "zh": "在“气体动理论”主题范畴内，下列关于“动能”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Teoriya Kînetîk a Gazan\" de, kîjan ji van encamên li ser \"Enerjiya Kînetîk\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Gases: Kinetic Theory & Real Gases, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Kinetische Gastheorie: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Théorie Cinétique des Gaz, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Кинетическая теория газов», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"النظرية الحركية للغازات\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“气体动理论”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Teoriya Kînetîk a Gazan\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2023,7 +2023,7 @@ export const unit13: ChemistryUnitSeedData = {
           "ku": "Dema ku piston bi jor ve tê kişandin û hêjmar zêde dibe, zexta buharê ya avê nîvî dibe."
         },
         {
-          "tr": "Sıkıştırılabilirlik faktörü Z = PV / nRT dir; ideal gazda Z = 1 dir.",
+          "tr": "Sıkıştırılabilirlik faktörü Z = PV / nRT'dir; ideal gazda Z = 1'dir.",
           "en": "The compressibility factor is Z = PV / nRT; In an ideal gas, Z = 1.",
           "de": "Der Kompressibilitätsfaktor beträgt Z = PV / nRT; In einem idealen Gas ist Z = 1.",
           "fr": "Le facteur de compressibilité est Z = PV/nRT ; Dans un gaz parfait, Z = 1.",
@@ -2035,7 +2035,7 @@ export const unit13: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Sıkıştırılabilirlik faktörü Z = PV / nRT dir; ideal gazda Z = 1 dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Sıkıştırılabilirlik faktörü Z = PV / nRT'dir; ideal gazda Z = 1'dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"The compressibility factor is Z = PV / nRT; In an ideal gas, Z = 1.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Der Kompressibilitätsfaktor beträgt Z = PV / nRT; In einem idealen Gas ist Z = 1.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Le facteur de compressibilité est Z = PV/nRT ; Dans un gaz parfait, Z = 1.\". Notion fondamentale du programme officiel de chimie.",
@@ -2048,14 +2048,14 @@ export const unit13: ChemistryUnitSeedData = {
     {
       "id": "u13-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Gazlar: Kinetik Teori ve Gerçek Gazlar ünitesinde ele alınan İdeallikten Sapma Faktörü (Z = PV/nRT) hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Gases: Kinetic Theory & Real Gases, which statement about Deviation from ideality factor (Z = PV/nRT) is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Kinetische Gastheorie: Welche Aussage über Abweichung vom Idealitätsfaktor (Z = PV/nRT) ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Théorie Cinétique des Gaz, quelle affirmation relative à Écart par rapport au facteur d'idéalité (Z = PV/nRT) est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Кинетическая теория газов», какое утверждение о «Отклонение от коэффициента идеальности (Z = PV/nRT)» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"النظرية الحركية للغازات\"، أي عبارة حول \"الانحراف عن عامل المثالية (Z = PV/nRT)\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“气体动理论”单元中关于“与理想因子的偏差 (Z = PV/nRT)”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Teoriya Kînetîk a Gazan\", kîjan gotin li ser \"Dûrketina ji faktora îdealîteyê (Z = PV/nRT)\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Gazlar: Kinetik Teori ve Gerçek Gazlar konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Gases: Kinetic Theory & Real Gases, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Kinetische Gastheorie die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Théorie Cinétique des Gaz, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Кинетическая теория газов», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"النظرية الحركية للغازات\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“气体动理论”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Teoriya Kînetîk a Gazan\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

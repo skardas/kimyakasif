@@ -81,13 +81,13 @@
   },
   "Simyadan Kimyaya ve Güvenlik": {
     "tr": "Simyadan Kimyaya ve Güvenlik",
-    "en": "From Alchemy to Chemistry and Security",
-    "ru": "От алхимии к химии и безопасности",
-    "ku": "Ji Alkîmiyê bigire heya Kîmya û Ewlekariyê",
-    "fr": "De l'alchimie à la chimie et à la sécurité",
-    "ar": "من الكيمياء إلى الكيمياء والأمن",
-    "zh": "从炼金术到化学和安全",
-    "de": "Von der Alchemie zu Chemie und Sicherheit"
+    "en": "From Alchemy to Chemistry & Safety",
+    "de": "Von der Alchemie zur Chemie und Laborsicherheit",
+    "fr": "De l'alchimie à la chimie et sécurité au laboratoire",
+    "ru": "От алхимии к химии и лабораторной безопасности",
+    "ar": "من الخيمياء إلى الكيمياء والسلامة المختبرية",
+    "zh": "从炼金术到化学与实验室安全",
+    "ku": "Ji Simyayê ber bi Kîmyayê û Ewlehiya Laboratûwarê"
   },
   "Lavoisier, Kütlenin Korunumu Kanunu ile modern kimyanın kurucusu kabul edilir.": {
     "tr": "Lavoisier, Kütlenin Korunumu Kanunu ile modern kimyanın kurucusu kabul edilir.",
@@ -101,13 +101,13 @@
   },
   "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.": {
     "tr": "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.",
-    "en": "Alchemists proved the conservation of mass by using the scale precisely.",
-    "ru": "Алхимики доказали сохранение массы, точно используя шкалу.",
-    "ku": "Alkîmîstan parastina girseyê bi karanîna pîvanê rast îspat kirin.",
-    "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément l'échelle.",
-    "ar": "أثبت الكيميائيون حفظ الكتلة باستخدام المقياس الدقيق.",
-    "zh": "炼金术士通过精确地使用尺度证明了质量守恒。",
-    "de": "Alchemisten bewiesen die Massenerhaltung durch die genaue Verwendung der Skala."
+    "en": "Alchemists proved the conservation of mass by using the analytical balance precisely.",
+    "de": "Alchemisten bewiesen die Massenerhaltung durch die präzise Verwendung der Analysenwaage.",
+    "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément la balance analytique.",
+    "ru": "Алхимики доказали сохранение массы, точно используя аналитические весы.",
+    "ar": "أثبت الخيميائيون حفظ الكتلة باستخدام الميزان التحليلي الدقيق.",
+    "zh": "炼金术士通过精确使用精密天平证明了质量守恒。",
+    "ku": "Alkîmîstan parastina girseyê bi karanîna terezûya hesas îspat kirin."
   },
   "Simya teorik temellere ve sistematik deneylere dayanmaz.": {
     "tr": "Simya teorik temellere ve sistematik deneylere dayanmaz.",
@@ -121,63 +121,63 @@
   },
   "Zaç yağı H2SO4 (sülfürik asit), Tuz ruhu HCl (hidroklorik asit) geleneksel adıdır.": {
     "tr": "Zaç yağı H2SO4 (sülfürik asit), Tuz ruhu HCl (hidroklorik asit) geleneksel adıdır.",
-    "en": "Zac oil is H2SO4 (sulfuric acid), the traditional name of salt spirit is HCl (hydrochloric acid).",
-    "ru": "Зак-масло – H2SO4 (серная кислота), традиционное название соляного спирта – HCl (соляная кислота).",
-    "ku": "Rûnê Zac H2SO4 (asîda sulfurîk) e, navê kevneşopî ya ruhê xwê HCl (asîda hîdrochloric) e.",
-    "fr": "L'huile de Zac est H2SO4 (acide sulfurique), le nom traditionnel de l'esprit de sel est HCl (acide chlorhydrique).",
-    "ar": "زيت الزاك هو H2SO4 (حمض الكبريتيك)، والاسم التقليدي لروح الملح هو حمض الهيدروكلوريك (حمض الهيدروكلوريك).",
-    "zh": "扎克油是H2SO4（硫酸），盐精的传统名称是HCl（盐酸）。",
-    "de": "Zac-Öl ist H2SO4 (Schwefelsäure), der traditionelle Name von Salzbenzin ist HCl (Salzsäure)."
+    "en": "Oil of vitriol is H2SO4 (sulfuric acid); spirit of salt (muriatic acid) is the traditional name for HCl (hydrochloric acid).",
+    "de": "Vitriolöl ist H2SO4 (Schwefelsäure), der traditionelle Name von Salzsäure (Salzgeist) ist HCl (Salzsäure).",
+    "fr": "L'huile de vitriol est H2SO4 (acide sulfurique) ; l'esprit de sel est le nom traditionnel de HCl (acide chlorhydrique).",
+    "ru": "Купоросное масло — это H2SO4 (серная кислота), а соляной спирт — традиционное название HCl (соляной кислоты).",
+    "ar": "زيت الزاج هو H2SO4 (حمض الكبريتيك)، والاسم التقليدي لروح الملح هو HCl (حمض الهيدروكلوريك).",
+    "zh": "矾油是H2SO4（硫酸）的传统名称，盐精是HCl（盐酸）的传统名称。",
+    "ku": "Rûnê zaçê H2SO4 (asîda sulfurîk) e, navê kevneşopî yê ruhê xwê HCl (asîda hîdroclorîk) e."
   },
   "Zaç yağı HNO3 formülüne sahiptir.": {
     "tr": "Zaç yağı HNO3 formülüne sahiptir.",
-    "en": "Zac oil has the formula HNO3.",
-    "ru": "Масло Зака ​​имеет формулу HNO3.",
-    "ku": "Rûnê Zac bi formula HNO3 heye.",
-    "fr": "L'huile Zac a la formule HNO3.",
-    "ar": "يحتوي زيت زاك على الصيغة HNO3.",
-    "zh": "Zac 油的化学式为 HNO3。",
-    "de": "Zac-Öl hat die Formel HNO3."
+    "en": "Oil of vitriol has the chemical formula HNO3.",
+    "de": "Vitriolöl besitzt die chemische Formel HNO3.",
+    "fr": "L'huile de vitriol a pour formule chimique HNO3.",
+    "ru": "Купоросное масло имеет формулу HNO3.",
+    "ar": "زيت الزاج له الصيغة الكيميائية HNO3.",
+    "zh": "矾油的化学式为 HNO3。",
+    "ku": "Rûnê zaçê xwedî formula HNO3 ye."
   },
   "HNO3 kezzaptır, zaç yağı H2SO4 tür.": {
-    "tr": "HNO3 kezzaptır, zaç yağı H2SO4 tür.",
-    "en": "HNO3 is vitriol, vitriol is H2SO4.",
-    "ru": "HNO3 – это купорос, купорос – это H2SO4.",
-    "ku": "HNO3 vîtriol e, vîtriol H2SO4 e.",
-    "fr": "HNO3 est du vitriol, le vitriol est H2SO4.",
-    "ar": "HNO3 هو الزاج، الزاج هو H2SO4.",
-    "zh": "HNO3 是硫酸，硫酸是 H2SO4。",
-    "de": "HNO3 ist Vitriol, Vitriol ist H2SO4."
+    "tr": "HNO3 kezzaptır, zaç yağı H2SO4'tür.",
+    "en": "HNO3 is aqua fortis (nitric acid), whereas oil of vitriol is H2SO4 (sulfuric acid).",
+    "de": "HNO3 ist Scheidewasser (Salpetersäure), während Vitriolöl H2SO4 (Schwefelsäure) ist.",
+    "fr": "HNO3 est l'eau-forte (acide nitrique), tandis que l'huile de vitriol est H2SO4 (acide sulfurique).",
+    "ru": "HNO3 — это крепкая водка (азотная кислота), тогда как купоросное масло — это H2SO4 (серная кислота).",
+    "ar": "HNO3 هو ماء الفضة (حمض النيتريك)، بينما زيت الزاج هو H2SO4 (حمض الكبريتيك).",
+    "zh": "HNO3是浓硝酸（硝镪水），而矾油才是H2SO4（硫酸）。",
+    "ku": "HNO3 kezzap (asîda nîtrîk) e, lê rûnê zaçê H2SO4 (asîda sulfurîk) e."
   },
   "Cabir bin Hayyan damıtma imbiğini (alembic) geliştirerek nitrik asit ve kral suyunu elde etmiştir.": {
     "tr": "Cabir bin Hayyan damıtma imbiğini (alembic) geliştirerek nitrik asit ve kral suyunu elde etmiştir.",
-    "en": "Cabir bin Hayyan developed the alembic and obtained nitric acid and aqua regia.",
-    "ru": "Кабир бин Хайян разработал перегонный куб и получил азотную кислоту и царскую водку.",
-    "ku": "Cabir bin Hayyan alembic pêşxist û asîda nîtrîk û aqua regia wergirt.",
-    "fr": "Cabir bin Hayyan a développé l'alambic et obtenu de l'acide nitrique et de l'eau régale.",
-    "ar": "قام كابير بن حيان بتطوير الإنبيك وحصل على حمض النيتريك والماء الملكي.",
-    "zh": "Cabir bin Hayyan 开发了蒸馏器并获得了硝酸和王水。",
-    "de": "Cabir bin Hayyan entwickelte den Destillierkolben und gewann Salpetersäure und Königswasser."
+    "en": "Jabir ibn Hayyan developed the alembic and synthesized nitric acid and aqua regia.",
+    "de": "Dschābir ibn Hayyān entwickelte den Alambic (Destillierkolben) und stellte Salpetersäure sowie Königswasser her.",
+    "fr": "Jabir ibn Hayyan a perfectionné l'alambic et obtenu l'acide nitrique et l'eau régale.",
+    "ru": "Джабир ибн Хайян усовершенствовал перегонный куб (аламбик) и получил азотную кислоту и царскую водку.",
+    "ar": "قام جابر بن حيان بتطوير الإنبيق وحصل على حمض النيتريك والماء الملكي.",
+    "zh": "贾比尔·伊本·哈扬改进了蒸馏器（alembic）并制得了硝酸和王水。",
+    "ku": "Cabir bin Heyyan alambîk pêş xist û asîda nîtrîk û ava şahî bi dest xist."
   },
   "Kral suyunu Aristo dört element kuramıyla açıklamıştır.": {
     "tr": "Kral suyunu Aristo dört element kuramıyla açıklamıştır.",
-    "en": "Aristotle explained royal water with the theory of four elements.",
-    "ru": "Аристотель объяснял царскую воду теорией четырех элементов.",
-    "ku": "Arîstoteles ava şahî bi teoriya çar hêmanan rave kir.",
-    "fr": "Aristote a expliqué l'eau royale avec la théorie des quatre éléments.",
-    "ar": "وقد فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
-    "zh": "亚里士多德用四元素理论解释了王水。",
-    "de": "Aristoteles erklärte das königliche Wasser mit der Theorie der vier Elemente."
+    "en": "Aristotle explained aqua regia using the four elements theory.",
+    "de": "Aristoteles erklärte Königswasser mit der Vier-Elemente-Lehre.",
+    "fr": "Aristote a expliqué l'eau régale par la théorie des quatre éléments.",
+    "ru": "Аристотель объяснил царскую водку теорией четырех элементов.",
+    "ar": "فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
+    "zh": "亚里士多德用四元素学说解释了王水。",
+    "ku": "Arîsto ava şahî bi teoriya çar hêmanan rave kir."
   },
   "Ebu Bekir er-Razi kostik soda ve karınca asidini (formik asit) ilk kez elde etmiştir.": {
     "tr": "Ebu Bekir er-Razi kostik soda ve karınca asidini (formik asit) ilk kez elde etmiştir.",
-    "en": "Abu Bakr al-Razi obtained caustic soda and ant acid (formic acid) for the first time.",
-    "ru": "Абу Бакр ар-Рази впервые получил каустическую соду и муравьиную кислоту (муравьиную кислоту).",
-    "ku": "Ebûbekir el-Razî cara ewil soda caustic û asîda antîkê (asîda formîk) bi dest xist.",
-    "fr": "Abu Bakr al-Razi a obtenu pour la première fois de la soude caustique et de l'acide de fourmi (acide formique).",
-    "ar": "حصل أبو بكر الرازي على الصودا الكاوية وحمض النمل (حمض الفورميك) لأول مرة.",
-    "zh": "阿布·巴克尔·拉齐首次获得烧碱和蚁酸（甲酸）。",
-    "de": "Abu Bakr al-Razi erhielt erstmals Natronlauge und Ameisensäure (Ameisensäure)."
+    "en": "Abu Bakr al-Razi synthesized caustic soda and formic acid (methanoic acid) for the first time.",
+    "de": "Abu Bakr ar-Razi stellte erstmals Ätznatron und Ameisensäure (Methansäure) her.",
+    "fr": "Abu Bakr al-Razi a obtenu pour la première fois la soude caustique et l'acide formique (acide méthanoïque).",
+    "ru": "Абу Бакр ар-Рази впервые получил едкий натр и муравьиную кислоту (метановую кислоту).",
+    "ar": "حصل أبو بكر الرازي على الصودا الكاوية وحمض الفورميك (حمض النمليك) لأول مرة.",
+    "zh": "阿布·伯克尔·拉齐首次制得了烧碱和甲酸（蚁酸）。",
+    "ku": "Ebû Bekir el-Razî bo cara yekem soda kaustîk û asîda formîk bi dest xist."
   },
   "Formik asit Robert Boyle tarafından element olarak tanımlanmıştır.": {
     "tr": "Formik asit Robert Boyle tarafından element olarak tanımlanmıştır.",
@@ -691,33 +691,33 @@
   },
   "Zaç yağı: H2SO4": {
     "tr": "Zaç yağı: H2SO4",
-    "en": "Zac oil: H2SO4",
-    "ru": "Зак масло: H2SO4",
-    "ku": "Rûnê Zac: H2SO4",
-    "ar": "زيت زاك: H2SO4",
-    "zh": "扎克油：H2SO4",
-    "fr": "Huile Zac : H2SO4",
-    "de": "Zac-Öl: H2SO4"
+    "en": "Oil of vitriol: H2SO4",
+    "de": "Vitriolöl: H2SO4",
+    "fr": "Huile de vitriol : H2SO4",
+    "ru": "Купоросное масло: H2SO4",
+    "ar": "زيت الزاج: H2SO4",
+    "zh": "矾油: H2SO4",
+    "ku": "Rûnê zaçê: H2SO4"
   },
   "Kezzap: HNO3": {
     "tr": "Kezzap: HNO3",
-    "en": "Kezzap: HNO3",
-    "ru": "Кеззап: HNO3",
-    "ku": "Kezzap: HNO3",
-    "ar": "كيزاب: HNO3",
-    "zh": "凯扎普：HNO3",
-    "fr": "Kezzap : HNO3",
-    "de": "Kezzap: HNO3"
+    "en": "Aqua fortis: HNO3",
+    "de": "Scheidewasser: HNO3",
+    "fr": "Eau-forte : HNO3",
+    "ru": "Крепкая водка: HNO3",
+    "ar": "ماء الفضة: HNO3",
+    "zh": "硝镪水: HNO3",
+    "ku": "Kezzap: HNO3"
   },
   "Tuz ruhu: HCl": {
     "tr": "Tuz ruhu: HCl",
-    "en": "Salt spirit: HCl",
-    "ru": "Спиртовая соль: HCl",
-    "ku": "Ruhê xwê: HCl",
-    "ar": "روح الملح: حمض الهيدروكلوريك",
-    "zh": "盐精：HCl",
-    "fr": "Essence de sel : HCl",
-    "de": "Salzbenzin: HCl"
+    "en": "Spirit of salt: HCl",
+    "de": "Salzsäure (Salzgeist): HCl",
+    "fr": "Esprit de sel : HCl",
+    "ru": "Соляной спирт: HCl",
+    "ar": "روح الملح: HCl",
+    "zh": "盐精: HCl",
+    "ku": "Ruhê xwê: HCl"
   },
   "Kireç taşı: CaCO3": {
     "tr": "Kireç taşı: CaCO3",
@@ -1963,10 +1963,10 @@
     "tr": "ÖSYM tuzağı: Buhar basıncı dış basınca bağlı değildir!",
     "en": "ÖSYM trap: Vapor pressure does not depend on external pressure!",
     "ku": "Xefika ÖSYM: Zexta vaporê bi zexta derve ve namîne!",
-    "ru": "Сифон ÖSYM: Давление пара не зависит от внешнего давления!",
+    "ru": "Ловушка на экзамене: Давление пара не зависит от внешнего давления!",
     "ar": "مصيدة ÖSYM: ضغط البخار لا يعتمد على الضغط الخارجي!",
     "fr": "Piège ÖSYM : La pression de vapeur ne dépend pas de la pression extérieure !",
-    "zh": "ÖSYM 疏水阀：蒸气压不依赖于外部压力！",
+    "zh": "高考避坑指南：蒸气压不依赖于外部压力！",
     "de": "ÖSYM-Falle: Dampfdruck ist nicht vom Außendruck abhängig!"
   },
   "Kaynama olayı sıvının iç buhar basıncının dış atmosfer basıncına eşit olduğu anda gerçekleşir.": {
@@ -3504,7 +3504,7 @@
     "en": "1 akb",
     "ku": "1 akb",
     "ru": "1 акб",
-    "ar": "1 أك",
+    "ar": "1 أكب",
     "zh": "1 AKB",
     "fr": "1 clé USB",
     "de": "1 Akb"
@@ -5131,13 +5131,13 @@
   },
   "Çamaşır suyu ve tuz ruhu karıştırıldığında temizleme gücü iki katına çıkar.": {
     "tr": "Çamaşır suyu ve tuz ruhu karıştırıldığında temizleme gücü iki katına çıkar.",
-    "en": "When bleach and salt spirit are mixed, the cleaning power is doubled.",
-    "ku": "Dema ku giyana spî û xwê tevlihev dibin, hêza paqijkirinê ducar dibe.",
-    "ru": "При смешивании отбеливателя и солевого спирта эффективность очистки увеличивается вдвое.",
+    "en": "When bleach and spirit of salt (hydrochloric acid) are mixed, the cleaning power doubles.",
+    "de": "Wenn Bleichmittel und Salzsäure gemischt werden, verdoppelt sich die Reinigungskraft.",
+    "fr": "Lorsque l'eau de Javel et l'esprit de sel sont mélangés, le pouvoir nettoyant double.",
+    "ru": "При смешивании отбеливателя и соляной кислоты чистящая способность удваивается.",
     "ar": "عندما يتم خلط المبيض وروح الملح، تتضاعف قوة التنظيف.",
-    "de": "Wenn Bleichmittel und Salzbenzin gemischt werden, verdoppelt sich die Reinigungskraft.",
-    "zh": "当漂白剂和盐精混合时，清洁力加倍。",
-    "fr": "Lorsque l’eau de Javel et l’alcool salin sont mélangés, le pouvoir nettoyant est doublé."
+    "zh": "当漂白水与盐酸混合时，清洁力加倍。",
+    "ku": "Dema ku ava çilşoyê û ruhê xwê bên tevlihevkirin, hêza paqijkirinê du qat zêde dibe."
   },
   "Kuvvetli asit ve kuvvetli baz nötralleşmesinde oluşan tuz nötrdür (örn. NaCl).": {
     "tr": "Kuvvetli asit ve kuvvetli baz nötralleşmesinde oluşan tuz nötrdür (örn. NaCl).",
@@ -6463,8 +6463,8 @@
     "tr": "s Orbitali",
     "en": "s orbital",
     "ku": "s orbital",
-    "ru": "орбитальный",
-    "ar": "المداري",
+    "ru": "s-орбиталь",
+    "ar": "المدار s",
     "fr": "s orbitale",
     "zh": "s轨道",
     "de": "s Orbital"
@@ -6474,7 +6474,7 @@
     "en": "p orbital",
     "ku": "p orbital",
     "ru": "p-орбиталь",
-    "ar": "ف المداري",
+    "ar": "المدار p",
     "fr": "p orbitale",
     "zh": "p轨道",
     "de": "p-Orbital"
@@ -10594,7 +10594,7 @@
     "en": "Equilibrium Fraction Qc",
     "ku": "Parçeya Hevsengî Qc",
     "ru": "Равновесная фракция Qc",
-    "ar": "جزء التوازن مراقبة الجودة",
+    "ar": "حاصل التفاعل (Qc)",
     "zh": "平衡分数 Qc",
     "fr": "Fraction d'équilibre Qc",
     "de": "Gleichgewichtsfraktion Qc"
@@ -17961,33 +17961,33 @@
   },
   "Zaç Yağı (H2SO4)": {
     "tr": "Zaç Yağı (H2SO4)",
-    "en": "Zac Oil (H2SO4)",
-    "ru": "Зак Масло (H2SO4)",
-    "ku": "Rûnê Zac (H2SO4)",
-    "ar": "زيت زاك (H2SO4)",
-    "fr": "Huile Zac (H2SO4)",
-    "de": "Zac-Öl (H2SO4)",
-    "zh": "扎克油 (H2SO4)"
+    "en": "Oil of Vitriol (H2SO4)",
+    "de": "Vitriolöl (H2SO4)",
+    "fr": "Huile de vitriol (H2SO4)",
+    "ru": "Купоросное масло (H2SO4)",
+    "ar": "زيت الزاج (H2SO4)",
+    "zh": "矾油 (H2SO4)",
+    "ku": "Rûnê zaçê (H2SO4)"
   },
   "Kezzap (HNO3)": {
     "tr": "Kezzap (HNO3)",
-    "en": "Kezzap (HNO3)",
-    "ru": "Кеззап (HNO3)",
-    "ku": "Kezzap (HNO3)",
-    "ar": "كيزاب (HNO3)",
-    "fr": "Kezzap (HNO3)",
-    "de": "Kezzap (HNO3)",
-    "zh": "凯扎普 (HNO3)"
+    "en": "Aqua fortis (HNO3)",
+    "de": "Scheidewasser (HNO3)",
+    "fr": "Eau-forte (HNO3)",
+    "ru": "Крепкая водка (HNO3)",
+    "ar": "ماء الفضة (HNO3)",
+    "zh": "硝镪水 (HNO3)",
+    "ku": "Kezzap (HNO3)"
   },
   "Zaç yağı sülfürik asit olup akü asidi olarak bilinir; kezzap ise nitrik asit olup gübre ve patlayıcı üretiminde kullanılır.": {
     "tr": "Zaç yağı sülfürik asit olup akü asidi olarak bilinir; kezzap ise nitrik asit olup gübre ve patlayıcı üretiminde kullanılır.",
-    "en": "Zac oil is sulfuric acid and is known as battery acid; Vinegar is nitric acid and is used in the production of fertilizer and explosives.",
-    "ru": "Зак-масло представляет собой серную кислоту и известно как аккумуляторная кислота; Уксус представляет собой азотную кислоту и используется в производстве удобрений и взрывчатых веществ.",
-    "ku": "Rûnê Zac asîda sulfurîk e û wekî asîda pîlê tê zanîn; Sîrke asîda nîtrîk e û di hilberîna gubre û teqemeniyan de tê bikaranîn.",
-    "ar": "زيت الزاك هو حمض الكبريتيك ويعرف بحمض البطارية؛ الخل هو حمض النيتريك ويستخدم في إنتاج الأسمدة والمتفجرات.",
-    "fr": "L'huile Zac est de l'acide sulfurique et est connue sous le nom d'acide de batterie ; Le vinaigre est de l'acide nitrique et est utilisé dans la production d'engrais et d'explosifs.",
-    "de": "Zac-Öl ist Schwefelsäure und wird als Batteriesäure bezeichnet; Essig ist Salpetersäure und wird zur Herstellung von Düngemitteln und Sprengstoffen verwendet.",
-    "zh": "Zac油是硫酸，被称为电池酸；醋是硝酸，用于生产化肥和炸药。"
+    "en": "Oil of vitriol is sulfuric acid and is known as battery acid; aqua fortis (kezzap) is nitric acid and is used in fertilizer and explosives production.",
+    "de": "Vitriolöl ist Schwefelsäure (Batteriesäure); Scheidewasser (Kezzap) ist Salpetersäure und dient der Düngemittel- und Sprengstoffherstellung.",
+    "fr": "L'huile de vitriol est de l'acide sulfurique (acide de batterie) ; l'eau-forte (kezzap) est de l'acide nitrique utilisé pour les engrais et explosifs.",
+    "ru": "Купоросное масло — это серная кислота (аккумуляторная кислота); азотная кислота (крепкая водка) используется в производстве удобрений и взрывчатых веществ.",
+    "ar": "زيت الزاج هو حمض الكبريتيك ويعرف بماء البطارية؛ أما ماء الفضة (النيتريك) فيستخدم في صناعة الأسمدة والمتفجرات.",
+    "zh": "矾油是硫酸（蓄电池酸）；硝镪水（硝酸）则用于生产化肥和炸药。",
+    "ku": "Rûnê zaçê asîda sulfurîk e û wekî asîda pîlê tê zanîn; kezzap asîda nîtrîk e û di hilberîna gubre û teqemeniyan de tê bikaranîn."
   },
   "Fiziksel Değişim": {
     "tr": "Fiziksel Değişim",
@@ -18051,13 +18051,13 @@
   },
   "Simyacı Cabir bin Hayyan": {
     "tr": "Simyacı Cabir bin Hayyan",
-    "en": "Alchemist Cabir bin Hayyan",
-    "ru": "Алхимик Кабир бин Хайян",
-    "ku": "Alchemist Cabir bin Hayyan",
-    "ar": "الخيميائي كابير بن حيان",
-    "fr": "L'alchimiste Cabir bin Hayyan",
-    "de": "Alchemist Cabir bin Hayyan",
-    "zh": "炼金术士卡比尔·本·海扬"
+    "en": "Alchemist Jabir ibn Hayyan",
+    "de": "Alchemist Dschābir ibn Hayyān",
+    "fr": "L'alchimiste Jabir ibn Hayyan",
+    "ru": "Алхимик Джабир ибн Хайян",
+    "ar": "الخيميائي جابر بن حيان",
+    "zh": "炼金术士贾比尔·伊本·哈扬",
+    "ku": "Alkemîst Cabir bin Hayyan"
   },
   "Kimyacı Lavoisier": {
     "tr": "Kimyacı Lavoisier",
@@ -18071,13 +18071,13 @@
   },
   "Cabir bin Hayyan damıtma imbiğini geliştiren antik simyacıdır; Lavoisier kütlenin korunumunu ölçerek modern kimyayı başlatan bilim insanıdır.": {
     "tr": "Cabir bin Hayyan damıtma imbiğini geliştiren antik simyacıdır; Lavoisier kütlenin korunumunu ölçerek modern kimyayı başlatan bilim insanıdır.",
-    "en": "Cabir bin Hayyan is the ancient alchemist who developed the distillation still; Lavoisier is the scientist who started modern chemistry by measuring the conservation of mass.",
-    "ru": "Кабир бин Хайян — древний алхимик, разработавший дистилляционный аппарат; Лавуазье — учёный, положивший начало современной химии с измерения закона сохранения массы.",
-    "ku": "Cabir bin Hayyan alkîmîstê kevnar e ku hîn jî distilasyon pêşxistiye; Lavoisier zanyarê ku bi pîvana parastina girseyê dest bi kîmya nûjen kiriye.",
-    "ar": "كابير بن حيان هو الخيميائي القديم الذي طور التقطير. لافوازييه هو العالم الذي بدأ الكيمياء الحديثة بقياس حفظ الكتلة.",
-    "fr": "Cabir bin Hayyan est l'ancien alchimiste qui a développé l'alambic à distiller ; Lavoisier est le scientifique qui a lancé la chimie moderne en mesurant la conservation de la masse.",
-    "de": "Cabir bin Hayyan ist der alte Alchemist, der die Destillieranlage entwickelte; Lavoisier ist der Wissenschaftler, der die moderne Chemie mit der Messung der Massenerhaltung begründete.",
-    "zh": "卡比尔·本·哈扬 (Cabir bin Hayyan) 是古代炼金术士，发明了蒸馏器；拉瓦锡是通过测量质量守恒开创现代化学的科学家。"
+    "en": "Jabir ibn Hayyan is the ancient alchemist who developed the distillation alembic; Lavoisier is the scientist who founded modern chemistry by measuring the conservation of mass.",
+    "de": "Dschābir ibn Hayyān ist der alte Alchemist, der den Destillierkolben entwickelte; Lavoisier begründete die moderne Chemie mit der Massenerhaltung.",
+    "fr": "Jabir ibn Hayyan est l'alchimiste antique qui a développé l'alambic de distillation ; Lavoisier a fondé la chimie moderne en mesurant la conservation de la masse.",
+    "ru": "Джабир ибн Хайян — древний алхимик, создавший перегонный куб (аламбик); Лавуазье основал современную химию, измерив сохранение массы.",
+    "ar": "جابر بن حيان هو الخيميائي القديم الذي طور الإنبيق؛ لافوازييه هو العالم الذي أسس الكيمياء الحديثة بقياس حفظ الكتلة.",
+    "zh": "贾比尔·伊本·哈扬是发明蒸馏器（蒸馏瓶）的古代炼金术士；拉瓦锡通过测量质量守恒开创了现代化学。",
+    "ku": "Cabir bin Hayyan alkîmîstê kevnar e ku alembîka distilasyonê pêş xist; Lavoisier zanyarê ku bi pîvandina parastina girseyê kîmyaya nûjen da destpêkirin."
   },
   "Homojen Karışım (Çözelti)": {
     "tr": "Homojen Karışım (Çözelti)",
@@ -18173,7 +18173,7 @@
     "tr": "Metaller",
     "en": "metals",
     "ru": "металлы",
-    "ku": "metals",
+    "ku": "Metal",
     "ar": "المعادن",
     "fr": "métaux",
     "de": "Metalle",
@@ -21727,7 +21727,7 @@
     "ar": "الانضمام إلى ماركوفنيكوف",
     "de": "Beitritt zu Markownikow",
     "fr": "Rejoindre Markovnikov",
-    "zh": "加入马尔科夫尼科夫"
+    "zh": "马氏加成规则"
   },
   "Zaitsev Ayrılması": {
     "tr": "Zaitsev Ayrılması",
@@ -21737,7 +21737,7 @@
     "ar": "مفرزة زايتسيف",
     "de": "Zaitsev-Abteilung",
     "fr": "Détachement de Zaïtsev",
-    "zh": "扎伊采夫支队"
+    "zh": "扎伊采夫消去规则"
   },
   "Markovnikov katılan H nin çok hidrojeni olan karbona gitmesidir; Zaitsev ayrılmada eliminasyon az hidrojeni olan karbondan gerçekleşir.": {
     "tr": "Markovnikov katılan H nin çok hidrojeni olan karbona gitmesidir; Zaitsev ayrılmada eliminasyon az hidrojeni olan karbondan gerçekleşir.",
@@ -21791,13 +21791,13 @@
   },
   "Cabir bin Hayyan imbiği geliştirmiş, zaç yağı ve kezzabı elde etmiştir.": {
     "tr": "Cabir bin Hayyan imbiği geliştirmiş, zaç yağı ve kezzabı elde etmiştir.",
-    "en": "Cabir bin Hayyan developed the alembic and obtained vitriol oil and vitriol.",
-    "ku": "Cabir bin Hayyan alembic pêş xist û rûn û vîtriol bi dest xist.",
-    "ru": "Кабир бин Хайян разработал перегонный куб и получил купоросное масло и купорос.",
-    "ar": "قام كابير بن حيان بتطوير الإنبيك وحصل على زيت الزاج والزاج.",
-    "de": "Cabir bin Hayyan entwickelte den Destillierkolben und gewann Vitriolöl und Vitriol.",
-    "fr": "Cabir bin Hayyan a développé l'alambic et a obtenu de l'huile de vitriol et du vitriol.",
-    "zh": "Cabir bin Hayyan 开发了蒸馏器并获得了浓硫酸和硫酸。"
+    "en": "Jabir ibn Hayyan developed the alembic and synthesized oil of vitriol and aqua fortis.",
+    "de": "Dschābir ibn Hayyān entwickelte den Destillierkolben und stellte Vitriolöl und Scheidewasser her.",
+    "fr": "Jabir ibn Hayyan a développé l'alambic et a obtenu de l'huile de vitriol et de l'eau-forte.",
+    "ru": "Джабир ибн Хайян разработал перегонный куб (аламбик) и получил купоросное масло и азотную кислоту (крепкую водку).",
+    "ar": "قام جابر بن حيان بتطوير الإنبيق وحصل على زيت الزاج والماء القاطع.",
+    "zh": "贾比尔·伊本·哈扬开发了蒸馏器，并制得了矾油（硫酸）和硝酸。",
+    "ku": "Cabir bin Hayyan alembîk pêş xist û rûnê zaçê û kezzab bi dest xist."
   },
   "Robert Boyle elementi kendinden daha basit maddelere ayrılamayan saf madde olarak tanımlamıştır.": {
     "tr": "Robert Boyle elementi kendinden daha basit maddelere ayrılamayan saf madde olarak tanımlamıştır.",
@@ -21920,14 +21920,14 @@
     "zh": "滴定管滴定体积精确；容量瓶配制标准溶液。"
   },
   "Zaç yağı H2SO4, Kezzap HNO3, Tuz ruhu HCl, Kireç taşı CaCO3 tür.": {
-    "tr": "Zaç yağı H2SO4, Kezzap HNO3, Tuz ruhu HCl, Kireç taşı CaCO3 tür.",
-    "en": "Zac oil is H2SO4, Kezzap is HNO3, Salt spirit is HCl, Limestone is CaCO3.",
-    "ku": "Rûnê Zac H2SO4, Kezzap HNO3, Ruhê xwê HCl, Kevir CaCO3 ye.",
-    "ru": "Масло Зака ​​— это H2SO4, Кеззап — HNO3, Спирт — HCl, Известняк — CaCO3.",
-    "ar": "زيت الزاك هو H2SO4، الكيزاب هو HNO3، روح الملح هي HCl، الحجر الجيري هو CaCO3.",
-    "de": "Zac-Öl ist H2SO4, Kezzap ist HNO3, Salzbenzin ist HCl, Kalkstein ist CaCO3.",
-    "fr": "L'huile Zac est H2SO4, le Kezzap est HNO3, l'alcool de sel est HCl, le calcaire est CaCO3.",
-    "zh": "Zac 油是 H2SO4，Kezzap 是 HNO3，盐精是 HCl，石灰石是 CaCO3。"
+    "tr": "Zaç yağı H2SO4, Kezzap HNO3, Tuz ruhu HCl, Kireç taşı CaCO3'tür.",
+    "en": "Oil of vitriol is H2SO4, Aqua fortis is HNO3, Spirit of salt is HCl, Limestone is CaCO3.",
+    "de": "Vitriolöl ist H2SO4, Scheidewasser ist HNO3, Salzsäure ist HCl, Kalkstein ist CaCO3.",
+    "fr": "L'huile de vitriol est H2SO4, l'eau-forte est HNO3, l'esprit de sel est HCl, la pierre à chaux est CaCO3.",
+    "ru": "Купоросное масло — это H2SO4, крепкая водка — HNO3, соляная кислота — HCl, известняк — CaCO3.",
+    "ar": "زيت الزاج هو H2SO4، والماء القاطع (النيتريك) هو HNO3، وروح الملح هو HCl، والحجر الجيري هو CaCO3.",
+    "zh": "矾油是 H2SO4，王水/硝酸是 HNO3，盐酸是 HCl，石灰石是 CaCO3。",
+    "ku": "Rûnê zaçê H2SO4, kezzab HNO3, ruhê xwê HCl, kevirê kilsê CaCO3 ye."
   },
   "Sudkostik NaOH, Potaskostik KOH, Sönmüş kireç Ca(OH)2 geleneksel adlarıdır.": {
     "tr": "Sudkostik NaOH, Potaskostik KOH, Sönmüş kireç Ca(OH)2 geleneksel adlarıdır.",
@@ -27994,7 +27994,7 @@
     "en": "Qc < Kc (To Products/Scrolls Right) |  Qc > Kc (To Entrants/Slides Left)",
     "ru": "Qc < Kc (к продуктам/прокрутка вправо) |  Qc > Kc (участникам/слайдам слева)",
     "ku": "Qc < Kc (Ji Hilberan re/Rast Digere) |  Qc > Kc (Ji Kesan re/Slaytên Çep)",
-    "ar": "مراقبة الجودة <Kc (إلى المنتجات/التمرير إلى اليمين) |  مراقبة الجودة > Kc (للمشاركين/الشرائح اليسرى)",
+    "ar": "Qc < Kc (إلى النواتج/الاتجاه نحو اليمين) |  Qc > Kc (إلى المتفاعلات/الاتجاه نحو اليسار)",
     "de": "Qc < Kc (Zu Produkten/Scrollt nach rechts) |  Qc > Kc (An Teilnehmer/Folien nach links)",
     "fr": "Qc < Kc (Vers produits/Défilement à droite) |  Qc > Kc (Vers les participants/Diapositives à gauche)",
     "zh": "Qc < Kc（到产品/向右滚动）|  Qc > Kc（至参赛者/向左幻灯片）"
@@ -30448,5 +30448,115 @@
     "ar": "إيثر",
     "zh": "醚",
     "ku": "Eter"
+  },
+  "Zaç yağı": {
+    "tr": "Zaç yağı",
+    "en": "Oil of vitriol",
+    "de": "Vitriolöl",
+    "fr": "Huile de vitriol",
+    "ru": "Купоросное масло",
+    "ar": "زيت الزاج",
+    "zh": "矾油（硫酸）",
+    "ku": "Rûnê zaçê (vîtriol)"
+  },
+  "Zaç Yağı": {
+    "tr": "Zaç Yağı",
+    "en": "Oil of Vitriol",
+    "de": "Vitriolöl",
+    "fr": "Huile de vitriol",
+    "ru": "Купоросное масло",
+    "ar": "زيت الزاج",
+    "zh": "矾油（硫酸）",
+    "ku": "Rûnê zaçê (vîtriol)"
+  },
+  "Kezzap": {
+    "tr": "Kezzap",
+    "en": "Aqua fortis",
+    "de": "Scheidewasser",
+    "fr": "Eau-forte",
+    "ru": "Крепкая водка (азотная кислота)",
+    "ar": "ماء الفضة (حمض النيتريك)",
+    "zh": "硝镪水（硝酸）",
+    "ku": "Kezzap (asîda nîtrîk)"
+  },
+  "Tuz ruhu": {
+    "tr": "Tuz ruhu",
+    "en": "Spirit of salt (muriatic acid)",
+    "de": "Salzsäure (Salzgeist)",
+    "fr": "Esprit de sel (acide chlorhydrique)",
+    "ru": "Соляной спирт (соляная кислота)",
+    "ar": "روح الملح (حمض الهيدروكلوريك)",
+    "zh": "盐精（盐酸）",
+    "ku": "Ruhê xwê (asîda hîdroclorîk)"
+  },
+  "Tuz Ruhu": {
+    "tr": "Tuz Ruhu",
+    "en": "Spirit of Salt",
+    "de": "Salzsäure (Salzgeist)",
+    "fr": "Esprit de sel",
+    "ru": "Соляной спирт",
+    "ar": "روح الملح",
+    "zh": "盐精（盐酸）",
+    "ku": "Ruhê xwê"
+  },
+  "Kral suyu": {
+    "tr": "Kral suyu",
+    "en": "Aqua regia",
+    "de": "Königswasser",
+    "fr": "Eau régale",
+    "ru": "Царская водка",
+    "ar": "الماء الملكي",
+    "zh": "王水",
+    "ku": "Ava şahî (aqua regia)"
+  },
+  "Kral Suyu": {
+    "tr": "Kral Suyu",
+    "en": "Aqua Regia",
+    "de": "Königswasser",
+    "fr": "Eau régale",
+    "ru": "Царская водка",
+    "ar": "الماء الملكي",
+    "zh": "王水",
+    "ku": "Ava şahî (aqua regia)"
+  },
+  "Karınca asidi (formik asit)": {
+    "tr": "Karınca asidi (formik asit)",
+    "en": "Formic acid (methanoic acid)",
+    "de": "Ameisensäure (Methansäure)",
+    "fr": "Acide formique (acide méthanoïque)",
+    "ru": "Муравьиная кислота (метановая кислота)",
+    "ar": "حمض الفورميك (حمض النمليك)",
+    "zh": "甲酸（蚁酸）",
+    "ku": "Asîda formîk (asîda mêrûyê)"
+  },
+  "Cabir bin Hayyan": {
+    "tr": "Cabir bin Hayyan",
+    "en": "Jabir ibn Hayyan",
+    "de": "Dschābir ibn Hayyān",
+    "fr": "Jabir ibn Hayyan",
+    "ru": "Джабир ибн Хайян",
+    "ar": "جابر بن حيان",
+    "zh": "贾比尔·伊本·哈扬",
+    "ku": "Cabir bin Heyyan"
+  },
+  "HNO3 kezzaptır, zaç yağı H2SO4'tür.": {
+    "tr": "HNO3 kezzaptır, zaç yağı H2SO4'tür.",
+    "en": "HNO3 is aqua fortis (nitric acid), whereas oil of vitriol is H2SO4 (sulfuric acid).",
+    "de": "HNO3 ist Scheidewasser (Salpetersäure), während Vitriolöl H2SO4 (Schwefelsäure) ist.",
+    "fr": "HNO3 est l'eau-forte (acide nitrique), tandis que l'huile de vitriol est H2SO4 (acide sulfurique).",
+    "ru": "HNO3 — это крепкая водка (азотная кислота), тогда как купоросное масло — это H2SO4 (серная кислота).",
+    "ar": "HNO3 هو ماء الفضة (حمض النيتريك)، بينما زيت الزاج هو H2SO4 (حمض الكبريتيك).",
+    "zh": "HNO3是浓硝酸（硝镪水），而矾油才是H2SO4（硫酸）。",
+    "ku": "HNO3 kezzap (asîda nîtrîk) e, lê rûnê zaçê H2SO4 (asîda sulfurîk) e."
+  },
+  "Çamaşır suyu ile tuz ruhu karıştırılırsa temizlik gücü iki katına çıkar.": {
+    "tr": "Çamaşır suyu ile tuz ruhu karıştırılırsa temizlik gücü iki katına çıkar.",
+    "en": "If bleach and spirit of salt (hydrochloric acid) are mixed, cleaning power doubles.",
+    "de": "Wenn Bleichmittel und Salzsäure gemischt werden, verdoppelt sich die Reinigungskraft.",
+    "fr": "Si l'on mélange de l'eau de Javel et de l'esprit de sel, le pouvoir nettoyant double.",
+    "ru": "При смешивании отбеливателя и соляной кислоты чистящая способность удваивается.",
+    "ar": "إذا تم خلط المبيض مع روح الملح (الهيدروكلوريك)، تتضاعف قوة التنظيف.",
+    "zh": "如果将漂白水与盐酸混合，清洁效果会加倍。",
+    "ku": "Ger ava çilşoyê û ruhê xwê bên tevlihevkirin, hêza paqijkirinê du qat zêde dibe."
   }
 }

@@ -113,12 +113,6 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
-          clearInterval(timer);
-          setIsPlaying(false);
-          setIsGameOver(true);
-          playFinish();
-          playApplause();
-          onFinish(scoreRef.current);
           return 0;
         }
         return prev - 1;
@@ -126,7 +120,18 @@ export const ChemBlitzGame: React.FC<ChemBlitzGameProps> = ({
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [isPlaying, onFinish]);
+  }, [isPlaying]);
+
+  // Handle game over when timer expires
+  useEffect(() => {
+    if (isPlaying && timeLeft === 0) {
+      setIsPlaying(false);
+      setIsGameOver(true);
+      playFinish();
+      playApplause();
+      onFinish(scoreRef.current);
+    }
+  }, [isPlaying, timeLeft, onFinish]);
 
   // Answer handler
   const handleAnswer = useCallback(

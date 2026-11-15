@@ -53,7 +53,7 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-f02",
       "fact": {
-        "tr": "Kaynama noktası yükselmesi: ΔTk = Kk * m * i dir (Kk: kaynama noktası sabiti, m: molalite, i: van t Hoff faktörü).",
+        "tr": "Kaynama noktası yükselmesi: ΔTk = Kk * m * i'dir (Kk: kaynama noktası sabiti, m: molalite, i: van t Hoff faktörü).",
         "en": "Boiling point elevation: ΔTk = Kk * m * i (Kk: boiling point constant, m: molality, i: van t Hoff factor).",
         "de": "Siedepunkterhöhung: ΔTk = Kk * m * i (Kk: Siedepunktkonstante, m: Molalität, i: van t Hoff-Faktor).",
         "fr": "Élévation du point d'ébullition : ΔTk = Kk * m * i (Kk : constante du point d'ébullition, m : molalité, i : facteur van t Hoff).",
@@ -76,7 +76,7 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-f03",
       "fact": {
-        "tr": "Donma noktası alçalması: ΔTd = Kd * m * i dir (su için Kd = 1.86 °C*kg/mol).",
+        "tr": "Donma noktası alçalması: ΔTd = Kd * m * i'dir (su için Kd = 1.86 °C*kg/mol).",
         "en": "Freezing point depression: ΔTd = Kd * m * i (Kd = 1.86 °C*kg/mol for water).",
         "de": "Gefrierpunktserniedrigung: ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol für Wasser).",
         "fr": "Abaissement du point de congélation : ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol pour l'eau).",
@@ -99,7 +99,7 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-f04",
       "fact": {
-        "tr": "van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1 dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).",
+        "tr": "van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1'dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).",
         "en": "van t Hoff factor (i): In molecular substances (sugar, alcohol) i = 1; is the number of ions in ionic salts (i = 2 for NaCl, i = 3 for CaCl2).",
         "de": "Van-t-Hoff-Faktor (i): In molekularen Substanzen (Zucker, Alkohol) i = 1; ist die Anzahl der Ionen in ionischen Salzen (i = 2 für NaCl, i = 3 für CaCl2).",
         "fr": "Facteur de van t Hoff (i) : Dans les substances moléculaires (sucre, alcool) i = 1 ; est le nombre d'ions dans les sels ioniques (i = 2 pour NaCl, i = 3 pour CaCl2).",
@@ -122,7 +122,7 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-f05",
       "fact": {
-        "tr": "Buhar basıncı alçalması (Raoult Yasası): Çözeltinin buhar basıncı Pçözelti = Pçözücü° * Xçözücü dür.",
+        "tr": "Buhar basıncı alçalması (Raoult Yasası): Çözeltinin buhar basıncı Pçözelti = Pçözücü° * Xçözücü'dür.",
         "en": "Vapor pressure decrease (Raoult's Law): The vapor pressure of the solution is Psolution = Psolvent° * Xsolvent.",
         "de": "Dampfdruckabnahme (Raoultsches Gesetz): Der Dampfdruck der Lösung beträgt PLösung = PLösungsmittel° * XLösungsmittel.",
         "fr": "Diminution de la pression de vapeur (Loi de Raoult) : La pression de vapeur de la solution est Psolution = Psolvant° * Xsolvant.",
@@ -201,7 +201,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ku": "Di radyatorên otomobîlan de danîna antîfrezê (etilen glycol) pêşî li cemiandinê digire û xala kelandinê zêde dike."
       },
       "trap": {
-        "tr": "Antifriz suyun donma noktasını 0 °C nin üzerine çıkarır.",
+        "tr": "Antifriz suyun donma noktasını 0 °C'nin üzerine çıkarır.",
         "en": "Antifreeze raises the freezing point of water above 0 °C.",
         "de": "Frostschutzmittel erhöhen den Gefrierpunkt von Wasser über 0 °C.",
         "fr": "L'antigel élève le point de congélation de l'eau au-dessus de 0 °C.",
@@ -385,7 +385,7 @@ export const unit15: ChemistryUnitSeedData = {
         "ku": "Dema ku kapika sodayê tê vekirin, gaza CO2 ji çareseriyê di şiklê bilbilan de derdikeve ku zext dakeve."
       },
       "trap": {
-        "tr": "Kapak açıldığında CO2 nin çözünürlüğü artar.",
+        "tr": "Kapak açıldığında CO2'nin çözünürlüğü artar.",
         "en": "When the lid is opened, the solubility of CO2 increases.",
         "de": "Beim Öffnen des Deckels erhöht sich die Löslichkeit von CO2.",
         "fr": "Lorsque le couvercle est ouvert, la solubilité du CO2 augmente.",
@@ -631,34 +631,34 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-c08",
       "conceptA": {
-        "tr": "Molarite",
-        "en": "Molarity",
-        "de": "Molarität",
-        "fr": "Molarité",
-        "ru": "Молярность",
-        "ar": "المولارية",
-        "zh": "物质的量浓度",
-        "ku": "Molarîte"
+        "tr": "Kaynama Noktası Yükselmesi",
+        "en": "Boiling Point Elevation",
+        "de": "Siedepunkterhöhung",
+        "fr": "Élévation du point d'ébullition",
+        "ru": "Повышение температуры кипения",
+        "ar": "ارتفاع نقطة الغليان",
+        "zh": "沸点升高",
+        "ku": "Bilindbûna xala kelandinê"
       },
       "conceptB": {
-        "tr": "Molalite",
-        "en": "Molality",
-        "de": "Molalität",
-        "fr": "Molalité",
-        "ru": "Моляльность",
-        "ar": "المولالية",
-        "zh": "质量摩尔浓度",
-        "ku": "Molalîte"
+        "tr": "Donma Noktası Alçalması",
+        "en": "Freezing Point Depression",
+        "de": "Gefrierpunktserniedrigung",
+        "fr": "Dépression du point de congélation",
+        "ru": "Депрессия точки замерзания",
+        "ar": "اكتئاب نقطة التجمد",
+        "zh": "冰点降低",
+        "ku": "Xala cemidandinê depresyonê"
       },
       "distinction": {
-        "tr": "Molarite 1 litre çözeltide çözünen maddenin mol sayısıdır (M = n/V); molalite ise 1 kg çözücüde çözünen maddenin mol sayısıdır (m = n/m_çözücü).",
-        "en": "Molarity is the moles of solute per liter of solution (M = n/V); molality is the moles of solute per kilogram of solvent (m = n/kg).",
-        "de": "Molarität ist die Stoffmenge gelösten Stoffes pro Liter Lösung (M = n/V); Molalität bezieht sich auf 1 kg Lösungsmittel (m = n/kg).",
-        "fr": "La molarité est le nombre de moles de soluté par litre de solution (M = n/V) ; la molalité est le nombre de moles par kilogramme de solvant.",
-        "ru": "Молярность — количество моль растворенного вещества в 1 л раствора (M = n/V); моляльность — число моль на 1 кг растворителя.",
-        "ar": "المولارية هي عدد مولات المذاب في لتر واحد من المحلول (M = n/V)؛ المولالية هي عدد مولات المذاب في كيلوغرام واحد من المذيب.",
-        "zh": "物质的量浓度（摩尔浓度）指每升溶液中所含溶质的物质的量 (M = n/V)；质量摩尔浓度指每千克溶剂中溶解的溶质的物质的量。",
-        "ku": "Molarîte hejmara molên di lîtreyek çareseriyê de ye (M = n/V); molalîte jî hejmara molên di kîlogramek helawerê de ye."
+        "tr": "Çözünen tanecik derişimi arttıkça kaynama noktası yükselir, donma noktası alçalır.",
+        "en": "As the solute particle concentration increases, the boiling point increases and the freezing point decreases.",
+        "de": "Mit zunehmender Konzentration gelöster Teilchen steigt der Siedepunkt und der Gefrierpunkt sinkt.",
+        "fr": "À mesure que la concentration de particules de soluté augmente, le point d’ébullition augmente et le point de congélation diminue.",
+        "ru": "По мере увеличения концентрации растворенных частиц температура кипения увеличивается, а точка замерзания снижается.",
+        "ar": "ومع زيادة تركيز الجسيمات المذابة، تزداد درجة الغليان وتقل نقطة التجمد.",
+        "zh": "随着溶质颗粒浓度的增加，沸点升高，凝固点降低。",
+        "ku": "Her ku tansiyona pariyên solare zêde dibe, xala kelandinê zêde dibe û xala cemidandinê kêm dibe."
       }
     }
   ],
@@ -687,7 +687,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Molên madeyê hesab bikin"
         },
         {
-          "tr": "Çözücünün kütlesini kg a çevir",
+          "tr": "Çözücünün kütlesini kg'a çevir",
           "en": "Convert the mass of the solvent into kg",
           "de": "Rechnen Sie die Masse des Lösungsmittels in kg um",
           "fr": "Convertir la masse du solvant en kg",
@@ -707,7 +707,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Moalîteyê bibînin (m = n / kg)"
         },
         {
-          "tr": "ΔTd = Kd * m * i ile düşüşü hesaplayıp 0 °C den çıkar",
+          "tr": "ΔTd = Kd * m * i ile düşüşü hesaplayıp 0 °C'den çıkar",
           "en": "Calculate the drop with ΔTd = Kd * m * i and subtract from 0 °C",
           "de": "Berechnen Sie den Abfall mit ΔTd = Kd * m * i und subtrahieren Sie ihn von 0 °C",
           "fr": "Calculez la chute avec ΔTd = Kd * m * i et soustrayez de 0 °C",
@@ -817,7 +817,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Delta Td = Kd. m. Formula i tê sepandin"
         },
         {
-          "tr": "0 °C den çıkarılarak yeni donma sıcaklığı bulunur",
+          "tr": "0 °C'den çıkarılarak yeni donma sıcaklığı bulunur",
           "en": "New freezing temperature is found by subtracting from 0 °C",
           "de": "Die neue Gefriertemperatur wird durch Subtraktion von 0 °C ermittelt",
           "fr": "La nouvelle température de congélation est trouvée en soustrayant de 0 °C",
@@ -888,7 +888,7 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin01",
       "stem": {
-        "tr": "1 kg saf suda 1 mol NaCl çözünerek hazırlanan çözeltinin 1 atm de donmaya başlama sıcaklığı kaç °C dir? (Su için Kd = 1.86 °C*kg/mol)",
+        "tr": "1 kg saf suda 1 mol NaCl çözünerek hazırlanan çözeltinin 1 atm'de donmaya başlama sıcaklığı kaç °C'dir? (Su için Kd = 1.86 °C*kg/mol)",
         "en": "What is the freezing temperature at 1 atm of the solution prepared by dissolving 1 mole of NaCl in 1 kg of pure water? (Kd for water = 1.86 °C*kg/mol)",
         "de": "Wie hoch ist die Gefriertemperatur bei 1 atm der Lösung, die durch Auflösen von 1 Mol NaCl in 1 kg reinem Wasser hergestellt wird? (Kd für Wasser = 1,86 °C*kg/mol)",
         "fr": "Quelle est la température de congélation à 1 atm de la solution préparée en dissolvant 1 mole de NaCl dans 1 kg d'eau pure ? (Kd pour l'eau = 1,86 °C*kg/mol)",
@@ -964,7 +964,7 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin02",
       "stem": {
-        "tr": "Aşağıdaki 1 er molal sulu çözeltilerden hangisinin 1 atm dış basınçta kaynamaya başlama sıcaklığı en yüksektir?",
+        "tr": "Aşağıdaki 1'er molal sulu çözeltilerden hangisinin 1 atm dış basınçta kaynamaya başlama sıcaklığı en yüksektir?",
         "en": "Which of the following 1 molal aqueous solutions has the highest boiling temperature at 1 atm external pressure?",
         "de": "Welche der folgenden 1 molalen wässrigen Lösungen hat die höchste Siedetemperatur bei 1 atm Außendruck?",
         "fr": "Laquelle des solutions aqueuses 1 molales suivantes a la température d'ébullition la plus élevée à une pression externe de 1 atm ?",
@@ -1040,14 +1040,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Koligatif Özellikler ve Çözünürlük konusunu işlerken Kaynama Noktası Yükselmesi (Delta Tk) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Colligative Properties & Solubility, which statement regarding Boiling Point Elevation (Delta Tk) represents the correct answer?",
-        "de": "Welche Aussage zu Siedepunkterhöhung (Delta Tk) stellt im Kontext von Kolligative Eigenschaften & Löslichkeit die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Propriétés Colligatives & Solubilité, quelle proposition sur Élévation du point d'ébullition (Delta Tk) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Коллигативные свойства и растворимость», какой ответ относительно «Повышение температуры кипения (дельта Tk)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الخواص التجميعية والذوبانية\" مخبرياً، أي إجابة بخصوص \"ارتفاع نقطة الغليان (دلتا تك)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“依数性与溶解度”实验探究与教学分析中，针对“沸点高度 (Delta Tk)”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan bersiv derbarê \"Bilindbûna xala kelandinê (Delta Tk)\" de rast e?"
+        "tr": "Kimya dersinde Koligatif Özellikler ve Çözünürlük ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Colligative Properties & Solubility, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Kolligative Eigenschaften & Löslichkeit: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Propriétés Colligatives & Solubilité, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Коллигативные свойства и растворимость», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الخواص التجميعية والذوبانية\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“依数性与溶解度”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Taybetmendiyên Kolîgatîf û Çareserî\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1071,7 +1071,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Çareserbûn gram e ku di 1 lîtreya haletê de tê helandin."
         },
         {
-          "tr": "Donma noktası alçalması: ΔTd = Kd * m * i dir (su için Kd = 1.86 °C*kg/mol).",
+          "tr": "Donma noktası alçalması: ΔTd = Kd * m * i'dir (su için Kd = 1.86 °C*kg/mol).",
           "en": "Freezing point depression: ΔTd = Kd * m * i (Kd = 1.86 °C*kg/mol for water).",
           "de": "Gefrierpunktserniedrigung: ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol für Wasser).",
           "fr": "Abaissement du point de congélation : ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol pour l'eau).",
@@ -1103,7 +1103,7 @@ export const unit15: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Donma noktası alçalması: ΔTd = Kd * m * i dir (su için Kd = 1.86 °C*kg/mol).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Donma noktası alçalması: ΔTd = Kd * m * i'dir (su için Kd = 1.86 °C*kg/mol).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Freezing point depression: ΔTd = Kd * m * i (Kd = 1.86 °C*kg/mol for water).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Gefrierpunktserniedrigung: ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol für Wasser).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Abaissement du point de congélation : ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol pour l'eau).\". Notion fondamentale du programme officiel de chimie.",
@@ -1116,14 +1116,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin04",
       "stem": {
-        "tr": "Kimya dersinde Koligatif Özellikler ve Çözünürlük ünitesi incelenirken Van t Hoff Faktörü (i) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Colligative Properties & Solubility, which of the following propositions concerning Van t Hoff Factor (i) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Kolligative Eigenschaften & Löslichkeit: Welche Behauptung bezüglich Van-t-Hoff-Faktor (i) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Propriétés Colligatives & Solubilité, laquelle des affirmations suivantes concernant Facteur de Van t Hoff (i) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Коллигативные свойства и растворимость», какое из следующих суждений о «Фактор Ван-т-Гоффа (i)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الخواص التجميعية والذوبانية\"، أي من الأحكام التالية المتعلقة بـ \"عامل فان تي هوف (i)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“依数性与溶解度”核心规律时，下列关于“范特霍夫因子 (i)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Taybetmendiyên Kolîgatîf û Çareserî\" tê kirin, kîjan daraza li ser \"Faktora Van t Hoff (i)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Koligatif Özellikler ve Çözünürlük konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Colligative Properties & Solubility?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Kolligative Eigenschaften & Löslichkeit zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Propriétés Colligatives & Solubilité ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Коллигативные свойства и растворимость»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الخواص التجميعية والذوبانية\"؟",
+        "zh": "根据“依数性与溶解度”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Taybetmendiyên Kolîgatîf û Çareserî\" de rast e?"
       },
       "options": [
         {
@@ -1157,7 +1157,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Xwê di çareyek bi îyonên hevpar de zêdetir tê çareserkirin."
         },
         {
-          "tr": "van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1 dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).",
+          "tr": "van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1'dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).",
           "en": "van t Hoff factor (i): In molecular substances (sugar, alcohol) i = 1; is the number of ions in ionic salts (i = 2 for NaCl, i = 3 for CaCl2).",
           "de": "Van-t-Hoff-Faktor (i): In molekularen Substanzen (Zucker, Alkohol) i = 1; ist die Anzahl der Ionen in ionischen Salzen (i = 2 für NaCl, i = 3 für CaCl2).",
           "fr": "Facteur de van t Hoff (i) : Dans les substances moléculaires (sucre, alcool) i = 1 ; est le nombre d'ions dans les sels ioniques (i = 2 pour NaCl, i = 3 pour CaCl2).",
@@ -1167,7 +1167,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "van t Faktora Hoff (i): Di madeyên molekular de (şekir, alkol) i = 1; hejmara îyonên di xwêyên îyonî de ye (ji bo NaCl i = 2, ji bo CaCl2 i = 3)."
         },
         {
-          "tr": "Kapak açıldığında CO2 nin çözünürlüğü artar.",
+          "tr": "Kapak açıldığında CO2'nin çözünürlüğü artar.",
           "en": "When the lid is opened, the solubility of CO2 increases.",
           "de": "Beim Öffnen des Deckels erhöht sich die Löslichkeit von CO2.",
           "fr": "Lorsque le couvercle est ouvert, la solubilité du CO2 augmente.",
@@ -1179,7 +1179,7 @@ export const unit15: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1 dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1'dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"van t Hoff factor (i): In molecular substances (sugar, alcohol) i = 1; is the number of ions in ionic salts (i = 2 for NaCl, i = 3 for CaCl2).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Van-t-Hoff-Faktor (i): In molekularen Substanzen (Zucker, Alkohol) i = 1; ist die Anzahl der Ionen in ionischen Salzen (i = 2 für NaCl, i = 3 für CaCl2).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Facteur de van t Hoff (i) : Dans les substances moléculaires (sucre, alcool) i = 1 ; est le nombre d'ions dans les sels ioniques (i = 2 pour NaCl, i = 3 pour CaCl2).\". Notion fondamentale du programme officiel de chimie.",
@@ -1192,18 +1192,18 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Koligatif Özellikler ve Çözünürlük konusundaki temel kimyasal kurallar çerçevesinde Raoult Yasası kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Raoult's Law within the fundamental principles of Colligative Properties & Solubility?",
-        "de": "Welche Aussage beschreibt das Konzept Raoults Gesetz im Rahmen von Kolligative Eigenschaften & Löslichkeit am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement La loi de Raoult selon les lois de Propriétés Colligatives & Solubilité?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Закон Рауля» в рамках темы «Коллигативные свойства и растворимость»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"قانون راؤول\" ضمن قواعد \"الخواص التجميعية والذوبانية\"؟",
-        "zh": "根据“依数性与溶解度”的基本化学原理，下列哪项阐述能最准确地界定“拉乌尔定律”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Qanûna Raoult\" di çarçoveya prensîbên \"Taybetmendiyên Kolîgatîf û Çareserî\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Koligatif Özellikler ve Çözünürlük sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Colligative Properties & Solubility, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Kolligative Eigenschaften & Löslichkeit: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Propriétés Colligatives & Solubilité, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Коллигативные свойства и растворимость», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الخواص التجميعية والذوبانية\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“依数性与溶解度”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan daraz rast e?"
       },
       "options": [
         {
-          "tr": "Antifriz suyun donma noktasını 0 °C nin üzerine çıkarır.",
+          "tr": "Antifriz suyun donma noktasını 0 °C'nin üzerine çıkarır.",
           "en": "Antifreeze raises the freezing point of water above 0 °C.",
           "de": "Frostschutzmittel erhöhen den Gefrierpunkt von Wasser über 0 °C.",
           "fr": "L'antigel élève le point de congélation de l'eau au-dessus de 0 °C.",
@@ -1243,7 +1243,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Taybetmendiyên kolektîf bi geometriya molekulê ya solê ve girêdayî ye."
         },
         {
-          "tr": "Buhar basıncı alçalması (Raoult Yasası): Çözeltinin buhar basıncı Pçözelti = Pçözücü° * Xçözücü dür.",
+          "tr": "Buhar basıncı alçalması (Raoult Yasası): Çözeltinin buhar basıncı Pçözelti = Pçözücü° * Xçözücü'dür.",
           "en": "Vapor pressure decrease (Raoult's Law): The vapor pressure of the solution is Psolution = Psolvent° * Xsolvent.",
           "de": "Dampfdruckabnahme (Raoultsches Gesetz): Der Dampfdruck der Lösung beträgt PLösung = PLösungsmittel° * XLösungsmittel.",
           "fr": "Diminution de la pression de vapeur (Loi de Raoult) : La pression de vapeur de la solution est Psolution = Psolvant° * Xsolvant.",
@@ -1255,7 +1255,7 @@ export const unit15: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Buhar basıncı alçalması (Raoult Yasası): Çözeltinin buhar basıncı Pçözelti = Pçözücü° * Xçözücü dür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Buhar basıncı alçalması (Raoult Yasası): Çözeltinin buhar basıncı Pçözelti = Pçözücü° * Xçözücü'dür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Vapor pressure decrease (Raoult's Law): The vapor pressure of the solution is Psolution = Psolvent° * Xsolvent.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Dampfdruckabnahme (Raoultsches Gesetz): Der Dampfdruck der Lösung beträgt PLösung = PLösungsmittel° * XLösungsmittel.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Diminution de la pression de vapeur (Loi de Raoult) : La pression de vapeur de la solution est Psolution = Psolvant° * Xsolvant.\". Notion fondamentale du programme officiel de chimie.",
@@ -1268,14 +1268,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Koligatif Özellikler ve Çözünürlük sorularında karşılaşılan Ozmotik Basınç konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Colligative Properties & Solubility, which assertion regarding Osmotic Pressure is correct?",
-        "de": "Welche Feststellung bezüglich Osmotischer Druck ist nach den chemischen Gesetzmäßigkeiten von Kolligative Eigenschaften & Löslichkeit richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Propriétés Colligatives & Solubilité, quelle affirmation concernant Pression osmotique est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Коллигативные свойства и растворимость», какое положение относительно «Осмотическое давление» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الخواص التجميعية والذوبانية\"، أي حكم متعلق بـ \"الضغط الأسموزي\" يعتبر صحيحاً؟",
-        "zh": "在高考“依数性与溶解度”经典考题中，下列有关“渗透压”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan daraza li ser \"Zexta Osmotîk\" rast e?"
+        "tr": "Aşağıda Koligatif Özellikler ve Çözünürlük ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Colligative Properties & Solubility, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Kolligative Eigenschaften & Löslichkeit: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Propriétés Colligatives & Solubilité, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Коллигативные свойства и растворимость», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الخواص التجميعية والذوبانية\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“依数性与溶解度”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Taybetmendiyên Kolîgatîf û Çareserî\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1344,14 +1344,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin07",
       "stem": {
-        "tr": "Aşağıda Koligatif Özellikler ve Çözünürlük ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Doymamış Çözelti ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Colligative Properties & Solubility, which statement about Unsaturated Solution is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Kolligative Eigenschaften & Löslichkeit: Welche Aussage über Ungesättigte Lösung ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Propriétés Colligatives & Solubilité, quelle affirmation relative à Solution insaturée est exacte?",
-        "ru": "На основе фундаментальных положений темы «Коллигативные свойства и растворимость», какое суждение о «Ненасыщенный раствор» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الخواص التجميعية والذوبانية\"، أي عبارة حول \"محلول غير مشبع\" صحيحة؟",
-        "zh": "基于“依数性与溶解度”的基础化学知识体系，下列关于“不饱和溶液”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Taybetmendiyên Kolîgatîf û Çareserî\", kîjan gotin derbarê \"Çareseriya bêtêr\" de rast e?"
+        "tr": "Koligatif Özellikler ve Çözünürlük konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Colligative Properties & Solubility, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Kolligative Eigenschaften & Löslichkeit: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Propriétés Colligatives & Solubilité, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Коллигативные свойства и растворимость», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الخواص التجميعية والذوبانية\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“依数性与溶解度”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1385,7 +1385,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Xwê di çareyek bi îyonên hevpar de zêdetir tê çareserkirin."
         },
         {
-          "tr": "Kapak açıldığında CO2 nin çözünürlüğü artar.",
+          "tr": "Kapak açıldığında CO2'nin çözünürlüğü artar.",
           "en": "When the lid is opened, the solubility of CO2 increases.",
           "de": "Beim Öffnen des Deckels erhöht sich die Löslichkeit von CO2.",
           "fr": "Lorsque le couvercle est ouvert, la solubilité du CO2 augmente.",
@@ -1420,14 +1420,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin08",
       "stem": {
-        "tr": "Koligatif Özellikler ve Çözünürlük konusu kapsamında Molarite ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Colligative Properties & Solubility, which of the following findings regarding Molarity is scientifically verified?",
-        "de": "Im Rahmen der Einheit Kolligative Eigenschaften & Löslichkeit: Welcher der folgenden Befunde zu Molarität ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Propriétés Colligatives & Solubilité, laquelle des constatations suivantes concernant Molarité est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Коллигативные свойства и растворимость», какой из следующих выводов относительно «Молярность» научно подтверждён?",
-        "ar": "في سياق موضوع \"الخواص التجميعية والذوبانية\"، أي من النتائج التالية المتعلقة بـ \"المولارية\" مثبتة علمياً؟",
-        "zh": "在“依数性与溶解度”主题范畴内，下列关于“物质的量浓度”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan ji van encamên li ser \"Molarîte\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Koligatif Özellikler ve Çözünürlük ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Colligative Properties & Solubility, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Kolligative Eigenschaften & Löslichkeit: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Propriétés Colligatives & Solubilité, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Коллигативные свойства и растворимость», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الخواص التجميعية والذوبانية\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“依数性与溶解度”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Taybetmendiyên Kolîgatîf û Çareserî\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1496,14 +1496,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Koligatif Özellikler ve Çözünürlük ünitesinde ele alınan Kaynama Noktası Yükselmesi hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Colligative Properties & Solubility, which statement about Boiling Point Elevation is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Kolligative Eigenschaften & Löslichkeit: Welche Aussage über Siedepunkterhöhung ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Propriétés Colligatives & Solubilité, quelle affirmation relative à Élévation du point d'ébullition est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Коллигативные свойства и растворимость», какое утверждение о «Повышение температуры кипения» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الخواص التجميعية والذوبانية\"، أي عبارة حول \"ارتفاع نقطة الغليان\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“依数性与溶解度”单元中关于“沸点升高”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Taybetmendiyên Kolîgatîf û Çareserî\", kîjan gotin li ser \"Bilindbûna xala kelandinê\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Koligatif Özellikler ve Çözünürlük konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Colligative Properties & Solubility, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Kolligative Eigenschaften & Löslichkeit die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Propriétés Colligatives & Solubilité, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Коллигативные свойства и растворимость», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الخواص التجميعية والذوبانية\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“依数性与溶解度”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1572,14 +1572,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Koligatif Özellikler ve Çözünürlük konusunu işlerken Endotermik Çözünme üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Colligative Properties & Solubility, which statement regarding Endothermic Dissolution represents the correct answer?",
-        "de": "Welche Aussage zu Endotherme Auflösung stellt im Kontext von Kolligative Eigenschaften & Löslichkeit die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Propriétés Colligatives & Solubilité, quelle proposition sur Dissolution endothermique constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Коллигативные свойства и растворимость», какой ответ относительно «Эндотермическое растворение» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الخواص التجميعية والذوبانية\" مخبرياً، أي إجابة بخصوص \"الذوبان الماص للحرارة\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“依数性与溶解度”实验探究与教学分析中，针对“吸热溶解”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan bersiv derbarê \"Hilweşîna endotermîk\" de rast e?"
+        "tr": "Kimya dersinde Koligatif Özellikler ve Çözünürlük ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Colligative Properties & Solubility, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Kolligative Eigenschaften & Löslichkeit: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Propriétés Colligatives & Solubilité, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Коллигативные свойства и растворимость», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الخواص التجميعية والذوبانية\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“依数性与溶解度”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Taybetmendiyên Kolîgatîf û Çareserî\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1593,7 +1593,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Xwê di çareyek bi îyonên hevpar de zêdetir tê çareserkirin."
         },
         {
-          "tr": "Kapak açıldığında CO2 nin çözünürlüğü artar.",
+          "tr": "Kapak açıldığında CO2'nin çözünürlüğü artar.",
           "en": "When the lid is opened, the solubility of CO2 increases.",
           "de": "Beim Öffnen des Deckels erhöht sich die Löslichkeit von CO2.",
           "fr": "Lorsque le couvercle est ouvert, la solubilité du CO2 augmente.",
@@ -1648,14 +1648,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin11",
       "stem": {
-        "tr": "Kimya dersinde Koligatif Özellikler ve Çözünürlük ünitesi incelenirken Kaynama Noktası Yükselmesi (Delta Tk) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Colligative Properties & Solubility, which of the following propositions concerning Boiling Point Elevation (Delta Tk) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Kolligative Eigenschaften & Löslichkeit: Welche Behauptung bezüglich Siedepunkterhöhung (Delta Tk) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Propriétés Colligatives & Solubilité, laquelle des affirmations suivantes concernant Élévation du point d'ébullition (Delta Tk) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Коллигативные свойства и растворимость», какое из следующих суждений о «Повышение температуры кипения (дельта Tk)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الخواص التجميعية والذوبانية\"، أي من الأحكام التالية المتعلقة بـ \"ارتفاع نقطة الغليان (دلتا تك)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“依数性与溶解度”核心规律时，下列关于“沸点高度 (Delta Tk)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Taybetmendiyên Kolîgatîf û Çareserî\" tê kirin, kîjan daraza li ser \"Bilindbûna xala kelandinê (Delta Tk)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Koligatif Özellikler ve Çözünürlük konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Colligative Properties & Solubility?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Kolligative Eigenschaften & Löslichkeit zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Propriétés Colligatives & Solubilité ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Коллигативные свойства и растворимость»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الخواص التجميعية والذوبانية\"؟",
+        "zh": "根据“依数性与溶解度”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Taybetmendiyên Kolîgatîf û Çareserî\" de rast e?"
       },
       "options": [
         {
@@ -1724,14 +1724,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Koligatif Özellikler ve Çözünürlük konusundaki temel kimyasal kurallar çerçevesinde Van t Hoff Faktörü (i) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Van t Hoff Factor (i) within the fundamental principles of Colligative Properties & Solubility?",
-        "de": "Welche Aussage beschreibt das Konzept Van-t-Hoff-Faktor (i) im Rahmen von Kolligative Eigenschaften & Löslichkeit am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Facteur de Van t Hoff (i) selon les lois de Propriétés Colligatives & Solubilité?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Фактор Ван-т-Гоффа (i)» в рамках темы «Коллигативные свойства и растворимость»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"عامل فان تي هوف (i)\" ضمن قواعد \"الخواص التجميعية والذوبانية\"؟",
-        "zh": "根据“依数性与溶解度”的基本化学原理，下列哪项阐述能最准确地界定“范特霍夫因子 (i)”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Faktora Van t Hoff (i)\" di çarçoveya prensîbên \"Taybetmendiyên Kolîgatîf û Çareserî\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Koligatif Özellikler ve Çözünürlük sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Colligative Properties & Solubility, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Kolligative Eigenschaften & Löslichkeit: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Propriétés Colligatives & Solubilité, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Коллигативные свойства и растворимость», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الخواص التجميعية والذوبانية\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“依数性与溶解度”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1775,7 +1775,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Dema ku ziravek nehêle tê zêdekirin, zexta buharê ya çareseriyê zêde dibe."
         },
         {
-          "tr": "Antifriz suyun donma noktasını 0 °C nin üzerine çıkarır.",
+          "tr": "Antifriz suyun donma noktasını 0 °C'nin üzerine çıkarır.",
           "en": "Antifreeze raises the freezing point of water above 0 °C.",
           "de": "Frostschutzmittel erhöhen den Gefrierpunkt von Wasser über 0 °C.",
           "fr": "L'antigel élève le point de congélation de l'eau au-dessus de 0 °C.",
@@ -1800,18 +1800,18 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Koligatif Özellikler ve Çözünürlük sorularında karşılaşılan Raoult Yasası konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Colligative Properties & Solubility, which assertion regarding Raoult's Law is correct?",
-        "de": "Welche Feststellung bezüglich Raoults Gesetz ist nach den chemischen Gesetzmäßigkeiten von Kolligative Eigenschaften & Löslichkeit richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Propriétés Colligatives & Solubilité, quelle affirmation concernant La loi de Raoult est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Коллигативные свойства и растворимость», какое положение относительно «Закон Рауля» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الخواص التجميعية والذوبانية\"، أي حكم متعلق بـ \"قانون راؤول\" يعتبر صحيحاً؟",
-        "zh": "在高考“依数性与溶解度”经典考题中，下列有关“拉乌尔定律”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan daraza li ser \"Qanûna Raoult\" rast e?"
+        "tr": "Aşağıda Koligatif Özellikler ve Çözünürlük ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Colligative Properties & Solubility, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Kolligative Eigenschaften & Löslichkeit: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Propriétés Colligatives & Solubilité, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Коллигативные свойства и растворимость», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الخواص التجميعية والذوبانية\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“依数性与溶解度”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Taybetmendiyên Kolîgatîf û Çareserî\", kîjan gotin rast e?"
       },
       "options": [
         {
-          "tr": "Kapak açıldığında CO2 nin çözünürlüğü artar.",
+          "tr": "Kapak açıldığında CO2'nin çözünürlüğü artar.",
           "en": "When the lid is opened, the solubility of CO2 increases.",
           "de": "Beim Öffnen des Deckels erhöht sich die Löslichkeit von CO2.",
           "fr": "Lorsque le couvercle est ouvert, la solubilité du CO2 augmente.",
@@ -1876,14 +1876,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin14",
       "stem": {
-        "tr": "Aşağıda Koligatif Özellikler ve Çözünürlük ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Ozmotik Basınç ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Colligative Properties & Solubility, which statement about Osmotic Pressure is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Kolligative Eigenschaften & Löslichkeit: Welche Aussage über Osmotischer Druck ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Propriétés Colligatives & Solubilité, quelle affirmation relative à Pression osmotique est exacte?",
-        "ru": "На основе фундаментальных положений темы «Коллигативные свойства и растворимость», какое суждение о «Осмотическое давление» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الخواص التجميعية والذوبانية\"، أي عبارة حول \"الضغط الأسموزي\" صحيحة؟",
-        "zh": "基于“依数性与溶解度”的基础化学知识体系，下列关于“渗透压”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Taybetmendiyên Kolîgatîf û Çareserî\", kîjan gotin derbarê \"Zexta Osmotîk\" de rast e?"
+        "tr": "Koligatif Özellikler ve Çözünürlük konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Colligative Properties & Solubility, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Kolligative Eigenschaften & Löslichkeit: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Propriétés Colligatives & Solubilité, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Коллигативные свойства и растворимость», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الخواص التجميعية والذوبانية\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“依数性与溶解度”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1952,14 +1952,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin15",
       "stem": {
-        "tr": "Koligatif Özellikler ve Çözünürlük konusu kapsamında Doymamış Çözelti ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Colligative Properties & Solubility, which of the following findings regarding Unsaturated Solution is scientifically verified?",
-        "de": "Im Rahmen der Einheit Kolligative Eigenschaften & Löslichkeit: Welcher der folgenden Befunde zu Ungesättigte Lösung ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Propriétés Colligatives & Solubilité, laquelle des constatations suivantes concernant Solution insaturée est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Коллигативные свойства и растворимость», какой из следующих выводов относительно «Ненасыщенный раствор» научно подтверждён?",
-        "ar": "في سياق موضوع \"الخواص التجميعية والذوبانية\"، أي من النتائج التالية المتعلقة بـ \"محلول غير مشبع\" مثبتة علمياً؟",
-        "zh": "在“依数性与溶解度”主题范畴内，下列关于“不饱和溶液”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan ji van encamên li ser \"Çareseriya bêtêr\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Koligatif Özellikler ve Çözünürlük ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Colligative Properties & Solubility, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Kolligative Eigenschaften & Löslichkeit: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Propriétés Colligatives & Solubilité, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Коллигативные свойства и растворимость», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الخواص التجميعية والذوبانية\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“依数性与溶解度”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Taybetmendiyên Kolîgatîf û Çareserî\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1983,7 +1983,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Dema ku ziravek nehêle tê zêdekirin, zexta buharê ya çareseriyê zêde dibe."
         },
         {
-          "tr": "Antifriz suyun donma noktasını 0 °C nin üzerine çıkarır.",
+          "tr": "Antifriz suyun donma noktasını 0 °C'nin üzerine çıkarır.",
           "en": "Antifreeze raises the freezing point of water above 0 °C.",
           "de": "Frostschutzmittel erhöhen den Gefrierpunkt von Wasser über 0 °C.",
           "fr": "L'antigel élève le point de congélation de l'eau au-dessus de 0 °C.",
@@ -2028,14 +2028,14 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Koligatif Özellikler ve Çözünürlük ünitesinde ele alınan Molarite hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Colligative Properties & Solubility, which statement about Molarity is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Kolligative Eigenschaften & Löslichkeit: Welche Aussage über Molarität ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Propriétés Colligatives & Solubilité, quelle affirmation relative à Molarité est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Коллигативные свойства и растворимость», какое утверждение о «Молярность» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الخواص التجميعية والذوبانية\"، أي عبارة حول \"المولارية\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“依数性与溶解度”单元中关于“物质的量浓度”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Taybetmendiyên Kolîgatîf û Çareserî\", kîjan gotin li ser \"Molarîte\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Koligatif Özellikler ve Çözünürlük konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Colligative Properties & Solubility, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Kolligative Eigenschaften & Löslichkeit die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Propriétés Colligatives & Solubilité, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Коллигативные свойства и растворимость», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الخواص التجميعية والذوبانية\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“依数性与溶解度”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Taybetmendiyên Kolîgatîf û Çareserî\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

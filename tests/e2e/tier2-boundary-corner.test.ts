@@ -7,7 +7,12 @@
 import fs from 'fs';
 import path from 'path';
 import React from 'react';
-import type { LanguageCode } from '../../src/types/chemistry';
+import * as THREE from 'three';
+import type { LanguageCode, QuestionDiagramSpec } from '../../src/types/chemistry';
+import { PRIMARY_32_SCENES } from '../../src/data/threeScenesData';
+import { calculateFitDistance, ZOOM_FIT_I18N } from '../../src/components/three/Kimya3DLab';
+import { ChemicalDiagram, CLOSE_MODAL_I18N } from '../../src/components/diagrams/ChemicalDiagram';
+import { Kimya3DFallbackCanvas } from '../../src/components/three/Kimya3DFallbackCanvas';
 import { expect, test } from './harness/testFramework';
 import { printTestResult } from './harness/reporter';
 import {
@@ -388,6 +393,301 @@ export async function runTier2Tests(): Promise<void> {
         if (built.dispose) {
           expect(() => built.dispose!()).not.toThrow();
         }
+      });
+    })
+  );
+
+  printTestResult(
+    await test('T2.F04.06', 2, 'F04-3D', '3D scenes bounding box & responsive camera fit-to-screen calculation for mobile portrait (390x844) & desktop (1280x800) across all 32 scenes', () => {
+      expect(PRIMARY_32_SCENES).toHaveLength(32);
+
+      // Verify for both Mobile Portrait (iPhone 390x844) and Desktop (1280x800)
+      const viewports = [
+        { name: 'Mobile Portrait', width: 390, height: 844, aspect: 390 / 844 },
+        { name: 'Desktop Widescreen', width: 1280, height: 800, aspect: 1280 / 800 },
+      ];
+
+      PRIMARY_32_SCENES.forEach((scene) => {
+        // Build scene in both dark and light configurations
+        const procDark = scene.build(true);
+        expect(procDark).toBeDefined();
+        expect(procDark.group).toBeDefined();
+
+        const box = new THREE.Box3().setFromObject(procDark.group);
+        // Expand bounding box with all scene hotspots
+        expect(scene.hotspots.length).toBeGreaterThanOrEqual(1);
+        scene.hotspots.forEach((hs) => {
+          box.expandByPoint(new THREE.Vector3(hs.position[0], hs.position[1], hs.position[2]));
+        });
+
+        expect(box.isEmpty()).toBe(false);
+
+        const size = box.getSize(new THREE.Vector3());
+        expect(size.x).toBeGreaterThan(0);
+        expect(size.y).toBeGreaterThan(0);
+
+        const corners = [
+          new THREE.Vector3(box.min.x, box.min.y, box.min.z),
+          new THREE.Vector3(box.min.x, box.min.y, box.max.z),
+          new THREE.Vector3(box.min.x, box.max.y, box.min.z),
+          new THREE.Vector3(box.min.x, box.max.y, box.max.z),
+          new THREE.Vector3(box.max.x, box.min.y, box.min.z),
+          new THREE.Vector3(box.max.x, box.min.y, box.max.z),
+          new THREE.Vector3(box.max.x, box.max.y, box.min.z),
+          new THREE.Vector3(box.max.x, box.max.y, box.max.z),
+        ];
+
+        viewports.forEach((vp) => {
+          const camera = new THREE.PerspectiveCamera(45, vp.aspect, 0.1, 100);
+          const fit = calculateFitDistance(box, camera, 1.25);
+
+          expect(fit.requiredDistance).toBeGreaterThan(0);
+          expect(Number.isFinite(fit.requiredDistance)).toBe(true);
+
+          // Must fit within the expanded maxDistance (<= 40.0)
+          expect(fit.requiredDistance).toBeLessThanOrEqual(40.0);
+
+          // On portrait mobile (aspect < 1), distH = size.x / (2 * tan(hFov/2)) should accommodate horizontal extent without clipping
+          if (vp.aspect < 1) {
+            const vFov = (camera.fov * Math.PI) / 180;
+            const hFov = 2 * Math.atan(Math.tan(vFov / 2) * vp.aspect);
+            const distH = (size.x / 2) / Math.tan(hFov / 2);
+            expect(fit.requiredDistance).toBeGreaterThanOrEqual(distH * 1.25);
+          }
+
+          // Orient camera towards center along scene sightline and assert all 8 corners & hotspots project inside [-1.0, 1.0] NDC
+          const defaultCam = scene.cameraPosition || [0, 1.5, 6];
+          const defaultTarget = scene.target || [0, 0, 0];
+          let dir = new THREE.Vector3().subVectors(
+            new THREE.Vector3(...defaultCam),
+            new THREE.Vector3(...defaultTarget)
+          );
+          if (dir.lengthSq() < 0.001) {
+            dir.set(0, 0.5, 1);
+          }
+          dir.normalize();
+
+          camera.position.copy(fit.center).addScaledVector(dir, fit.requiredDistance);
+          camera.lookAt(fit.center);
+          camera.updateMatrixWorld();
+          camera.updateProjectionMatrix();
+
+          // All 8 bounding box corners must project strictly inside [-1.0, 1.0] NDC
+          corners.forEach((corner) => {
+            const ndc = corner.clone().project(camera);
+            expect(ndc.x).toBeGreaterThanOrEqual(-1.0);
+            expect(ndc.x).toBeLessThanOrEqual(1.0);
+            expect(ndc.y).toBeGreaterThanOrEqual(-1.0);
+            expect(ndc.y).toBeLessThanOrEqual(1.0);
+          });
+
+          // All scene hotspots must project strictly inside [-1.0, 1.0] NDC
+          scene.hotspots.forEach((hs) => {
+            const hsVec = new THREE.Vector3(hs.position[0], hs.position[1], hs.position[2]).project(camera);
+            expect(hsVec.x).toBeGreaterThanOrEqual(-1.0);
+            expect(hsVec.x).toBeLessThanOrEqual(1.0);
+            expect(hsVec.y).toBeGreaterThanOrEqual(-1.0);
+            expect(hsVec.y).toBeLessThanOrEqual(1.0);
+          });
+        });
+
+        // Cleanup WebGL object
+        if (procDark.dispose) {
+          procDark.dispose();
+        }
+      });
+    })
+  );
+
+  printTestResult(
+    await test('T2.F04.07', 2, 'F04-3D', '3D & 2D interactive zoom HUD controls, scale clamping, and 8-language localization in Kimya3DLab & Kimya3DFallbackCanvas', () => {
+      // 1. Verify ZOOM_FIT_I18N covers all 8 supported languages
+      const languages: LanguageCode[] = ['tr', 'en', 'de', 'fr', 'ru', 'ar', 'zh', 'ku'];
+      languages.forEach((lang) => {
+        const i18n = ZOOM_FIT_I18N[lang];
+        expect(i18n).toBeDefined();
+        expect(i18n.zoomIn.length).toBeGreaterThanOrEqual(2);
+        expect(i18n.zoomOut.length).toBeGreaterThanOrEqual(2);
+        expect(i18n.fitScreen.length).toBeGreaterThanOrEqual(4);
+        expect(i18n.reset.length).toBeGreaterThanOrEqual(2);
+      });
+
+      // 2. Test 3D camera zoom calculation physics along view vector
+      const camera = new THREE.PerspectiveCamera(45, 1.6, 0.1, 100);
+      const target = new THREE.Vector3(0, 0, 0);
+      camera.position.set(0, 0, 10);
+      const minDist = 1.5;
+      const maxDist = 40.0;
+
+      // Zoom In step calculation: moves towards target within minDist
+      const currentDist = camera.position.distanceTo(target);
+      const zoomInStep = Math.max(currentDist * 0.2, 0.4);
+      const newZoomInDist = Math.max(minDist, currentDist - zoomInStep);
+      expect(newZoomInDist).toBeLessThan(currentDist);
+      expect(newZoomInDist).toBeGreaterThanOrEqual(minDist);
+
+      // Zoom Out step calculation: moves away from target within maxDist
+      const zoomOutStep = Math.max(currentDist * 0.25, 0.4);
+      const newZoomOutDist = Math.min(maxDist, currentDist + zoomOutStep);
+      expect(newZoomOutDist).toBeGreaterThan(currentDist);
+      expect(newZoomOutDist).toBeLessThanOrEqual(maxDist);
+
+      // 3. Render Kimya3DFallbackCanvas with real scene and verify fallback visualizer HUD elements
+      const sampleScene = PRIMARY_32_SCENES[0];
+      const fallbackMarkup = renderToStaticMarkup(
+        React.createElement(Kimya3DFallbackCanvas, {
+          scene: sampleScene,
+          lang: 'tr',
+          selectedHotspotId: null,
+          onSelectHotspot: () => {},
+          isDark: true,
+          mode: 'explore',
+        })
+      );
+
+      expect(fallbackMarkup).toContain('WebGL 2D Güvenli Mod');
+      expect(fallbackMarkup).toContain(ZOOM_FIT_I18N.tr.fitScreen);
+      expect(fallbackMarkup).toContain(ZOOM_FIT_I18N.tr.zoomIn);
+      expect(fallbackMarkup).toContain(ZOOM_FIT_I18N.tr.zoomOut);
+      expect(fallbackMarkup).toContain('100%'); // default zoomLevel
+    })
+  );
+
+  printTestResult(
+    await test('T2.F04.08', 2, 'F04-3D', '2D Chemical Diagrams fit-to-screen boundary clearance and interactive zoom/pan controls across all 11 archetypes in 8 languages', () => {
+      // 1. Audit all 11 SVG diagram archetypes
+      const archetypes: QuestionDiagramSpec['archetype'][] = [
+        'bohr-orbital-atom',
+        'periodic-table-trends',
+        'gas-piston-manometer',
+        'phase-heating-curve',
+        'potential-energy-reaction',
+        'titration-burette-curve',
+        'galvanic-daniell-cell',
+        'electrolysis-hoffman-cell',
+        'vsepr-molecular-geometry',
+        'equilibrium-le-chatelier',
+        'lab-glassware-setup',
+      ];
+
+      archetypes.forEach((arch) => {
+        const spec: QuestionDiagramSpec = {
+          archetype: arch,
+          title: `Diagram ${arch}`,
+          caption: `Caption for ${arch}`,
+          labels: {
+            temp_axis: 'Sıcaklık (T °C)',
+            heat_axis: 'Isı (Q / Zaman)',
+            coord: 'Tepkime Koordinatı',
+            pe: 'PE (kJ)',
+          },
+        };
+
+        const markup = renderToStaticMarkup(
+          React.createElement(ChemicalDiagram, {
+            spec,
+            allowZoom: true,
+            lang: 'tr',
+          })
+        );
+
+        // Verify viewBox strictly defined as 0 0 540 300
+        expect(markup).toContain('viewBox="0 0 540 300"');
+        expect(markup).toContain('chemical-diagram-svg');
+
+        // Verify interactive zoom toolbar buttons exist
+        expect(markup).toContain('diagram-zoom-toolbar');
+        expect(markup).toContain('+');
+        expect(markup).toContain('-');
+        expect(markup).toContain('100%');
+        expect(markup).toContain('🔍');
+
+        // Verify bounds: every coordinate inside SVG stays strictly within [0, 540] and [0, 300]
+        const coordRegex = /\b(cx|cy|x|y|x1|y1|x2|y2)="(-?\d+(?:\.\d+)?)"/g;
+        let match: RegExpExecArray | null;
+        while ((match = coordRegex.exec(markup)) !== null) {
+          const attr = match[1];
+          const val = parseFloat(match[2]);
+          if (attr === 'x' || attr === 'cx' || attr === 'x1' || attr === 'x2') {
+            expect(val).toBeGreaterThanOrEqual(0);
+            expect(val).toBeLessThanOrEqual(540);
+          } else {
+            expect(val).toBeGreaterThanOrEqual(0);
+            expect(val).toBeLessThanOrEqual(300);
+          }
+        }
+      });
+
+      // 2. Verify phase-heating-curve Tk (100°C) tick label does not clip at left border (adjusted to x=60 start)
+      const phaseHeatingMarkup = renderToStaticMarkup(
+        React.createElement(ChemicalDiagram, {
+          spec: { archetype: 'phase-heating-curve', title: 'Phase', caption: 'Phase', labels: {} },
+          allowZoom: true,
+          lang: 'tr',
+        })
+      );
+      expect(phaseHeatingMarkup.includes('x="55"') && phaseHeatingMarkup.includes('Tk (100°C)')).toBe(false);
+      expect(phaseHeatingMarkup).toContain('x="60"');
+      expect(phaseHeatingMarkup).toContain('Tk (100°C)');
+
+      // 3. Verify Le Chatelier bottom summary fits comfortably within [10, 530]
+      const leChatelierMarkup = renderToStaticMarkup(
+        React.createElement(ChemicalDiagram, {
+          spec: { archetype: 'equilibrium-le-chatelier', title: 'Le Chatelier', caption: 'Le Chatelier', labels: {} },
+          allowZoom: true,
+          lang: 'tr',
+        })
+      );
+      expect(leChatelierMarkup).toContain('Le Chatelier: N2 eklenince denge ürünlere kayar; Kc sabittir!');
+
+      // 4. Verify VSEPR geometry centers (AX2 at 135, AX4 at 405) across all 8 languages
+      const testLanguages: LanguageCode[] = ['tr', 'en', 'de', 'fr', 'ru', 'ar', 'zh', 'ku'];
+      testLanguages.forEach((lng) => {
+        const vseprMarkup = renderToStaticMarkup(
+          React.createElement(ChemicalDiagram, {
+            spec: { archetype: 'vsepr-molecular-geometry', title: 'VSEPR', caption: 'VSEPR', labels: {} },
+            allowZoom: true,
+            lang: lng,
+          })
+        );
+        expect(vseprMarkup).toContain('translate(75, 50)');
+        expect(vseprMarkup).toContain('translate(345, 40)');
+      });
+
+      // 5. Verify multilingual rendering of zoom toolbar and modal close button across 8 languages
+      testLanguages.forEach((lng) => {
+        expect(CLOSE_MODAL_I18N[lng]).toBeDefined();
+        expect(CLOSE_MODAL_I18N[lng].length).toBeGreaterThanOrEqual(2);
+
+        const spec: QuestionDiagramSpec = {
+          archetype: 'bohr-orbital-atom',
+          title: 'Test Bohr',
+          caption: 'Test Caption',
+          labels: {},
+        };
+        const inlineMarkup = renderToStaticMarkup(
+          React.createElement(ChemicalDiagram, {
+            spec,
+            allowZoom: true,
+            lang: lng,
+          })
+        );
+        const normInline = inlineMarkup.replace(/&#x27;/g, "'").replace(/&apos;/g, "'");
+        expect(normInline).toContain(ZOOM_FIT_I18N[lng].zoomIn);
+        expect(normInline).toContain(ZOOM_FIT_I18N[lng].zoomOut);
+        expect(normInline).toContain(ZOOM_FIT_I18N[lng].fitScreen);
+
+        // Verify modal close button in zoomed modal dialog
+        const modalMarkup = renderToStaticMarkup(
+          React.createElement(ChemicalDiagram, {
+            spec,
+            allowZoom: true,
+            lang: lng,
+            initialZoomed: true,
+          })
+        );
+        expect(modalMarkup).toContain('diagram-close-btn');
+        expect(modalMarkup).toContain(CLOSE_MODAL_I18N[lng]);
       });
     })
   );

@@ -237,7 +237,7 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-f10",
       "fact": {
-        "tr": "Suyun kaynama noktasının H2S den belirgin yüksek olması molekülleri arasındaki hidrojen bağları nedeniyledir.",
+        "tr": "Suyun kaynama noktasının H2S'den belirgin yüksek olması molekülleri arasındaki hidrojen bağları nedeniyledir.",
         "en": "The boiling point of water is significantly higher than H2S due to the hydrogen bonds between its molecules.",
         "de": "Der Siedepunkt von Wasser liegt aufgrund der Wasserstoffbrückenbindungen zwischen seinen Molekülen deutlich höher als der von H2S.",
         "fr": "Le point d’ébullition de l’eau est nettement plus élevé que celui du H2S en raison des liaisons hydrogène entre ses molécules.",
@@ -247,7 +247,7 @@ export const unit03: ChemistryUnitSeedData = {
         "ku": "Ji ber girêdanên hîdrojenê yên di navbera molekulên wê de, xala kelandinê ya avê ji H2S pirtir e."
       },
       "trap": {
-        "tr": "Suyun yüksek kaynama noktası molekül kütlesinin H2S den büyük olmasındandır.",
+        "tr": "Suyun yüksek kaynama noktası molekül kütlesinin H2S'den büyük olmasındandır.",
         "en": "The high boiling point of water is due to its molecular mass being greater than H2S.",
         "de": "Der hohe Siedepunkt von Wasser ist darauf zurückzuführen, dass seine Molekülmasse größer als die von H2S ist.",
         "fr": "Le point d’ébullition élevé de l’eau est dû à sa masse moléculaire supérieure à celle du H2S.",
@@ -598,67 +598,67 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-c07",
       "conceptA": {
-        "tr": "İyon-Dipol Etkileşimi",
-        "en": "Ion-Dipole Interaction",
-        "de": "Ion-Dipol-Wechselwirkung",
-        "fr": "Interaction Ion-Dipôle",
-        "ru": "Ион-дипольное взаимодействие",
-        "ar": "تفاعل أيون-ثنائي القطب",
-        "zh": "离子-偶极作用",
-        "ku": "Têkiliya Îyon-Dîpol"
+        "tr": "İyonik Bağ",
+        "en": "Ionic Bond",
+        "de": "Ionenbindung",
+        "fr": "Liaison ionique",
+        "ru": "Ионная связь",
+        "ar": "الرابطة الأيونية",
+        "zh": "离子键",
+        "ku": "Ionic Bond"
       },
       "conceptB": {
-        "tr": "Dipol-İndüklenmiş Dipol Etkileşimi",
-        "en": "Dipole-Induced Dipole Interaction",
-        "de": "Dipol-Induzierter Dipol-Wechselwirkung",
-        "fr": "Interaction Dipôle-Dipôle Induit",
-        "ru": "Диполь-индуцированное дипольное взаимодействие",
-        "ar": "تفاعل ثنائي القطب-ثنائي القطب المستحث",
-        "zh": "偶极-诱导偶极作用",
-        "ku": "Têkiliya Dîpol-Dîpola Hêrsbûyî"
+        "tr": "Kovalent Bağ",
+        "en": "Covalent Bond",
+        "de": "Kovalente Bindung",
+        "fr": "Liaison covalente",
+        "ru": "Ковалентная связь",
+        "ar": "الرابطة التساهمية",
+        "zh": "共价键",
+        "ku": "Covalent Bond"
       },
       "distinction": {
-        "tr": "İyon-dipol etkileşimi tuzların suda çözünmesinde görülen güçlü bir etkileşimdir; dipol-indüklenmiş dipol ise polar ve apolar türler arasındaki zayıf etkileşimdir.",
-        "en": "Ion-dipole interaction is a strong attraction observed during salt dissolution in water; dipole-induced dipole is a weak attraction between polar and nonpolar species.",
-        "de": "Ion-Dipol-Wechselwirkung ist eine starke Anziehung beim Lösen von Salzen in Wasser; Dipol-induzierter Dipol ist eine schwache Wechselwirkung zwischen polaren und unpolaren Spezies.",
-        "fr": "L'interaction ion-dipôle est une forte attraction lors de la dissolution de sels dans l'eau ; dipôle-dipôle induit est une interaction faible entre espèces polaires et apolaires.",
-        "ru": "Ион-дипольное взаимодействие — это сильное притяжение при растворении солей в воде; диполь-индуцированный диполь — слабое притяжение между полярными и неполярными частицами.",
-        "ar": "تفاعل أيون-ثنائي القطب هو تجاذب قوي يحدث عند ذوبان الأملاح في الماء؛ ثنائي القطب-ثنائي القطب المستحث هو تفاعل ضعيف بين الجزيئات القطبية وغير القطبية.",
-        "zh": "离子-偶极作用是盐类溶于水时的强相互作用；偶极-诱导偶极作用是极性分子与非极性分子之间的弱相互作用。",
-        "ku": "Têkiliya îyon-dîpol balkêşiyek bihêz e dema ku xwelî di avê de dihele; dîpol-dîpola hêrsbûyî têkiliyek lawaz e di navbera cûreyên polar û apolar de."
+        "tr": "İyonik bağ elektron alışverişiyle kristal örgü oluşturur; kovalent bağ elektron ortaklaşmasıyla oluşur.",
+        "en": "Ionic bond forms a crystal lattice through electron exchange; Covalent bonds are formed by sharing electrons.",
+        "de": "Eine Ionenbindung bildet durch Elektronenaustausch ein Kristallgitter; Kovalente Bindungen entstehen durch die gemeinsame Nutzung von Elektronen.",
+        "fr": "La liaison ionique forme un réseau cristallin par échange d'électrons ; Les liaisons covalentes se forment en partageant des électrons.",
+        "ru": "Ионная связь образует кристаллическую решетку посредством электронного обмена; Ковалентные связи образуются за счет общих электронов.",
+        "ar": "تشكل الرابطة الأيونية شبكة بلورية من خلال تبادل الإلكترون؛ تتشكل الروابط التساهمية من خلال مشاركة الإلكترونات.",
+        "zh": "离子键通过电子交换形成晶格；共价键是通过共享电子形成的。",
+        "ku": "Girêdana îyonî bi rêya pevguherîna elektronê şebeke krîstal çêdike; Girêdanên kovalent bi parvekirina elektronan çêdibin."
       }
     },
     {
       "id": "u03-c08",
       "conceptA": {
-        "tr": "Sigma Bağı",
-        "en": "Sigma Bond",
-        "de": "Sigma-Bindung",
-        "fr": "Liaison Sigma",
-        "ru": "Сигма-связь",
-        "ar": "رابطة سيجما",
-        "zh": "σ键 (Sigma)",
-        "ku": "Girêdana Sîgma"
+        "tr": "İyonik Bağ",
+        "en": "Ionic Bond",
+        "de": "Ionenbindung",
+        "fr": "Liaison ionique",
+        "ru": "Ионная связь",
+        "ar": "الرابطة الأيونية",
+        "zh": "离子键",
+        "ku": "Ionic Bond"
       },
       "conceptB": {
-        "tr": "Pi Bağı",
-        "en": "Pi Bond",
-        "de": "Pi-Bindung",
-        "fr": "Liaison Pi",
-        "ru": "Пи-связь",
-        "ar": "رابطة باي",
-        "zh": "π键 (Pi)",
-        "ku": "Girêdana Pî"
+        "tr": "Kovalent Bağ",
+        "en": "Covalent Bond",
+        "de": "Kovalente Bindung",
+        "fr": "Liaison covalente",
+        "ru": "Ковалентная связь",
+        "ar": "الرابطة التساهمية",
+        "zh": "共价键",
+        "ku": "Covalent Bond"
       },
       "distinction": {
-        "tr": "Sigma bağı orbitallerin uç uca örtüşmesiyle kurulan ilk ve en sağlam bağdır; pi bağı orbitallerin yan yana örtüşmesiyle kurulan ikili ve üçlü bağ bileşenidir.",
-        "en": "A sigma bond is the strongest primary bond formed by head-on orbital overlap; a pi bond is formed by parallel lateral orbital overlap in multiple bonds.",
-        "de": "Eine Sigma-Bindung ist die stärkste Primärbindung durch frontale Überlappung; eine Pi-Bindung entsteht durch seitliche Überlappung bei Mehrfachbindungen.",
-        "fr": "Une liaison sigma est la liaison primaire la plus forte formée par recouvrement axial ; une liaison pi est formée par recouvrement latéral dans les liaisons multiples.",
-        "ru": "Сигма-связь — прочная первичная связь при осевом перекрывании орбиталей; пи-связь образуется при боковом перекрывании в кратных связях.",
-        "ar": "رابطة سيجما هي الرابطة الأساسية الأقوى الناتجة عن التداخل الرأسي للمدارات؛ رابطة باي تتشكل بالتداخل الجانبي في الروابط المتعددة.",
-        "zh": "σ键是通过轨道“头碰头”轴向重叠形成的最牢固主键；π键是通过轨道“肩并肩”侧面重叠形成的重键成分。",
-        "ku": "Girêdana sîgma girêdana herî bihêz e ku bi ser-bi-ser lihevkirina orbîtalan çêdibe; girêdana pî bi lihevkirina rex-bi-rex di girêdanên pirjimar de çêdibe."
+        "tr": "İyonik bağ elektron alışverişiyle kristal örgü oluşturur; kovalent bağ elektron ortaklaşmasıyla oluşur.",
+        "en": "Ionic bond forms a crystal lattice through electron exchange; Covalent bonds are formed by sharing electrons.",
+        "de": "Eine Ionenbindung bildet durch Elektronenaustausch ein Kristallgitter; Kovalente Bindungen entstehen durch die gemeinsame Nutzung von Elektronen.",
+        "fr": "La liaison ionique forme un réseau cristallin par échange d'électrons ; Les liaisons covalentes se forment en partageant des électrons.",
+        "ru": "Ионная связь образует кристаллическую решетку посредством электронного обмена; Ковалентные связи образуются за счет общих электронов.",
+        "ar": "تشكل الرابطة الأيونية شبكة بلورية من خلال تبادل الإلكترون؛ تتشكل الروابط التساهمية من خلال مشاركة الإلكترونات.",
+        "zh": "离子键通过电子交换形成晶格；共价键是通过共享电子形成的。",
+        "ku": "Girêdana îyonî bi rêya pevguherîna elektronê şebeke krîstal çêdike; Girêdanên kovalent bi parvekirina elektronan çêdibin."
       }
     }
   ],
@@ -1040,14 +1040,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Türler Arası Etkileşimler konusunu işlerken Polar Kovalent Bağ üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Intermolecular Interactions, which statement regarding Polar Covalent Bond represents the correct answer?",
-        "de": "Welche Aussage zu Polare kovalente Bindung stellt im Kontext von Zwischenmolekulare Kräfte die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Interactions Intermoléculaires, quelle proposition sur Liaison covalente polaire constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Взаимодействия между частицами», какой ответ относительно «Полярная ковалентная связь» является правильным?",
-        "ar": "أثناء دراسة موضوع \"التفاعلات بين الجسيمات\" مخبرياً، أي إجابة بخصوص \"الرابطة التساهمية القطبية\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“微粒间相互作用”实验探究与教学分析中，针对“极性共价键”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan bersiv derbarê \"Bond Covalent Polar\" de rast e?"
+        "tr": "Kimya dersinde Kimyasal Türler Arası Etkileşimler ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Intermolecular Interactions, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Zwischenmolekulare Kräfte: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Interactions Intermoléculaires, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Взаимодействия между частицами», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"التفاعلات بين الجسيمات\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“微粒间相互作用”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1116,14 +1116,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin04",
       "stem": {
-        "tr": "Kimya dersinde Kimyasal Türler Arası Etkileşimler ünitesi incelenirken Metalik Bağ ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Intermolecular Interactions, which of the following propositions concerning Metallic Bond is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Zwischenmolekulare Kräfte: Welche Behauptung bezüglich Metallische Bindung entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Interactions Intermoléculaires, laquelle des affirmations suivantes concernant Liaison métallique est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Взаимодействия между частицами», какое из следующих суждений о «Металлическая Бонд» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"التفاعلات بين الجسيمات\"، أي من الأحكام التالية المتعلقة بـ \"السندات المعدنية\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“微粒间相互作用”核心规律时，下列关于“金属结合剂”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\" tê kirin, kîjan daraza li ser \"Metallic Bond\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyasal Türler Arası Etkileşimler konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Intermolecular Interactions?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Zwischenmolekulare Kräfte zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Interactions Intermoléculaires ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Взаимодействия между частицами»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"التفاعلات بين الجسيمات\"؟",
+        "zh": "根据“微粒间相互作用”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\" de rast e?"
       },
       "options": [
         {
@@ -1137,7 +1137,7 @@ export const unit03: ChemistryUnitSeedData = {
           "ku": "Girêdanên metalîk bi parvekirina elektronan di navbera nemetalan de têne damezrandin."
         },
         {
-          "tr": "Suyun yüksek kaynama noktası molekül kütlesinin H2S den büyük olmasındandır.",
+          "tr": "Suyun yüksek kaynama noktası molekül kütlesinin H2S'den büyük olmasındandır.",
           "en": "The high boiling point of water is due to its molecular mass being greater than H2S.",
           "de": "Der hohe Siedepunkt von Wasser ist darauf zurückzuführen, dass seine Molekülmasse größer als die von H2S ist.",
           "fr": "Le point d’ébullition élevé de l’eau est dû à sa masse moléculaire supérieure à celle du H2S.",
@@ -1192,14 +1192,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyasal Türler Arası Etkileşimler konusundaki temel kimyasal kurallar çerçevesinde Molekül İçi Güçlü Bağ kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Strong Intramolecular Bond within the fundamental principles of Intermolecular Interactions?",
-        "de": "Welche Aussage beschreibt das Konzept Starke intramolekulare Bindung im Rahmen von Zwischenmolekulare Kräfte am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Forte liaison intramoléculaire selon les lois de Interactions Intermoléculaires?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Сильная внутримолекулярная связь» в рамках темы «Взаимодействия между частицами»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"رابطة قوية داخل الجزيئات\" ضمن قواعد \"التفاعلات بين الجسيمات\"؟",
-        "zh": "根据“微粒间相互作用”的基本化学原理，下列哪项阐述能最准确地界定“强分子内键”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Têkiliya Intramolekular a Hêz\" di çarçoveya prensîbên \"Têkiliyên Navbera Cûreyên Kîmyewî\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyasal Türler Arası Etkileşimler sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Intermolecular Interactions, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Zwischenmolekulare Kräfte: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Interactions Intermoléculaires, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Взаимодействия между частицами», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التفاعلات بين الجسيمات\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“微粒间相互作用”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1268,14 +1268,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyasal Türler Arası Etkileşimler sorularında karşılaşılan Ağ Örgülü Kovalent Katı konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Intermolecular Interactions, which assertion regarding Networked Covalent Solid is correct?",
-        "de": "Welche Feststellung bezüglich Vernetzter kovalenter Feststoff ist nach den chemischen Gesetzmäßigkeiten von Zwischenmolekulare Kräfte richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Interactions Intermoléculaires, quelle affirmation concernant Solide covalent en réseau est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Взаимодействия между частицами», какое положение относительно «Сетевое ковалентное твердое тело» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التفاعلات بين الجسيمات\"، أي حكم متعلق بـ \"شبكة تساهمية صلبة\" يعتبر صحيحاً؟",
-        "zh": "在高考“微粒间相互作用”经典考题中，下列有关“网络化共价固体”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan daraza li ser \"Tora Covalent Solid\" rast e?"
+        "tr": "Aşağıda Kimyasal Türler Arası Etkileşimler ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Intermolecular Interactions, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Zwischenmolekulare Kräfte: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Interactions Intermoléculaires, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Взаимодействия между частицами», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التفاعلات بين الجسيمات\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“微粒间相互作用”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1344,18 +1344,18 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin07",
       "stem": {
-        "tr": "Aşağıda Kimyasal Türler Arası Etkileşimler ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre İyon-Dipol Etkileşimi ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Intermolecular Interactions, which statement about Ion-Dipole Interaction is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Zwischenmolekulare Kräfte: Welche Aussage über Ion-Dipol-Wechselwirkung ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Interactions Intermoléculaires, quelle affirmation relative à Interaction Ion-Dipôle est exacte?",
-        "ru": "На основе фундаментальных положений темы «Взаимодействия между частицами», какое суждение о «Ион-дипольное взаимодействие» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التفاعلات بين الجسيمات\"، أي عبارة حول \"تفاعل أيون-ثنائي القطب\" صحيحة؟",
-        "zh": "基于“微粒间相互作用”的基础化学知识体系，下列关于“离子-偶极作用”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\", kîjan gotin derbarê \"Têkiliya Îyon-Dîpol\" de rast e?"
+        "tr": "Kimyasal Türler Arası Etkileşimler konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Intermolecular Interactions, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Zwischenmolekulare Kräfte: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Interactions Intermoléculaires, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Взаимодействия между частицами», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"التفاعلات بين الجسيمات\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“微粒间相互作用”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
-          "tr": "Suyun yüksek kaynama noktası molekül kütlesinin H2S den büyük olmasındandır.",
+          "tr": "Suyun yüksek kaynama noktası molekül kütlesinin H2S'den büyük olmasındandır.",
           "en": "The high boiling point of water is due to its molecular mass being greater than H2S.",
           "de": "Der hohe Siedepunkt von Wasser ist darauf zurückzuführen, dass seine Molekülmasse größer als die von H2S ist.",
           "fr": "Le point d’ébullition élevé de l’eau est dû à sa masse moléculaire supérieure à celle du H2S.",
@@ -1420,14 +1420,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin08",
       "stem": {
-        "tr": "Kimyasal Türler Arası Etkileşimler konusu kapsamında Sigma Bağı ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Intermolecular Interactions, which of the following findings regarding Sigma Bond is scientifically verified?",
-        "de": "Im Rahmen der Einheit Zwischenmolekulare Kräfte: Welcher der folgenden Befunde zu Sigma-Bindung ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Interactions Intermoléculaires, laquelle des constatations suivantes concernant Liaison Sigma est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Взаимодействия между частицами», какой из следующих выводов относительно «Сигма-связь» научно подтверждён?",
-        "ar": "في سياق موضوع \"التفاعلات بين الجسيمات\"، أي من النتائج التالية المتعلقة بـ \"رابطة سيجما\" مثبتة علمياً؟",
-        "zh": "在“微粒间相互作用”主题范畴内，下列关于“σ键 (Sigma)”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan ji van encamên li ser \"Girêdana Sîgma\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyasal Türler Arası Etkileşimler ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Intermolecular Interactions, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Zwischenmolekulare Kräfte: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Interactions Intermoléculaires, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Взаимодействия между частицами», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التفاعلات بين الجسيمات\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“微粒间相互作用”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1496,14 +1496,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyasal Türler Arası Etkileşimler ünitesinde ele alınan İyonik Bağ hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Intermolecular Interactions, which statement about Ionic Bond is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Zwischenmolekulare Kräfte: Welche Aussage über Ionenbindung ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Interactions Intermoléculaires, quelle affirmation relative à Liaison ionique est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Взаимодействия между частицами», какое утверждение о «Ионная связь» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التفاعلات بين الجسيمات\"، أي عبارة حول \"الرابطة الأيونية\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“微粒间相互作用”单元中关于“离子键”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\", kîjan gotin li ser \"Ionic Bond\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Türler Arası Etkileşimler konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Intermolecular Interactions, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Zwischenmolekulare Kräfte die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Interactions Intermoléculaires, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Взаимодействия между частицами», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"التفاعلات بين الجسيمات\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“微粒间相互作用”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1572,14 +1572,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Türler Arası Etkileşimler konusunu işlerken Hidrojen Bağı üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Intermolecular Interactions, which statement regarding Hydrogen Bond represents the correct answer?",
-        "de": "Welche Aussage zu Wasserstoffbindung stellt im Kontext von Zwischenmolekulare Kräfte die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Interactions Intermoléculaires, quelle proposition sur Liaison hydrogène constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Взаимодействия между частицами», какой ответ относительно «Водородная связь» является правильным?",
-        "ar": "أثناء دراسة موضوع \"التفاعلات بين الجسيمات\" مخبرياً، أي إجابة بخصوص \"رابطة الهيدروجين\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“微粒间相互作用”实验探究与教学分析中，针对“氢键”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan bersiv derbarê \"Girêdana hîdrojenê\" de rast e?"
+        "tr": "Kimya dersinde Kimyasal Türler Arası Etkileşimler ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Intermolecular Interactions, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Zwischenmolekulare Kräfte: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Interactions Intermoléculaires, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Взаимодействия между частицами», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"التفاعلات بين الجسيمات\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“微粒间相互作用”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1623,7 +1623,7 @@ export const unit03: ChemistryUnitSeedData = {
           "ku": "Xwêya sifrê (NaCl) di forma xweya krîstal a zexm de tîra elektrîkê bi rengek bêkêmasî derbas dike."
         },
         {
-          "tr": "Suyun kaynama noktasının H2S den belirgin yüksek olması molekülleri arasındaki hidrojen bağları nedeniyledir.",
+          "tr": "Suyun kaynama noktasının H2S'den belirgin yüksek olması molekülleri arasındaki hidrojen bağları nedeniyledir.",
           "en": "The boiling point of water is significantly higher than H2S due to the hydrogen bonds between its molecules.",
           "de": "Der Siedepunkt von Wasser liegt aufgrund der Wasserstoffbrückenbindungen zwischen seinen Molekülen deutlich höher als der von H2S.",
           "fr": "Le point d’ébullition de l’eau est nettement plus élevé que celui du H2S en raison des liaisons hydrogène entre ses molécules.",
@@ -1635,7 +1635,7 @@ export const unit03: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Suyun kaynama noktasının H2S den belirgin yüksek olması molekülleri arasındaki hidrojen bağları nedeniyledir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Suyun kaynama noktasının H2S'den belirgin yüksek olması molekülleri arasındaki hidrojen bağları nedeniyledir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"The boiling point of water is significantly higher than H2S due to the hydrogen bonds between its molecules.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Der Siedepunkt von Wasser liegt aufgrund der Wasserstoffbrückenbindungen zwischen seinen Molekülen deutlich höher als der von H2S.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Le point d’ébullition de l’eau est nettement plus élevé que celui du H2S en raison des liaisons hydrogène entre ses molécules.\". Notion fondamentale du programme officiel de chimie.",
@@ -1648,14 +1648,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin11",
       "stem": {
-        "tr": "Kimya dersinde Kimyasal Türler Arası Etkileşimler ünitesi incelenirken Polar Kovalent Bağ ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Intermolecular Interactions, which of the following propositions concerning Polar Covalent Bond is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Zwischenmolekulare Kräfte: Welche Behauptung bezüglich Polare kovalente Bindung entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Interactions Intermoléculaires, laquelle des affirmations suivantes concernant Liaison covalente polaire est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Взаимодействия между частицами», какое из следующих суждений о «Полярная ковалентная связь» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"التفاعلات بين الجسيمات\"، أي من الأحكام التالية المتعلقة بـ \"الرابطة التساهمية القطبية\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“微粒间相互作用”核心规律时，下列关于“极性共价键”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\" tê kirin, kîjan daraza li ser \"Bond Covalent Polar\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyasal Türler Arası Etkileşimler konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Intermolecular Interactions?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Zwischenmolekulare Kräfte zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Interactions Intermoléculaires ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Взаимодействия между частицами»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"التفاعلات بين الجسيمات\"؟",
+        "zh": "根据“微粒间相互作用”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\" de rast e?"
       },
       "options": [
         {
@@ -1724,14 +1724,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyasal Türler Arası Etkileşimler konusundaki temel kimyasal kurallar çerçevesinde Metalik Bağ kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Metallic Bond within the fundamental principles of Intermolecular Interactions?",
-        "de": "Welche Aussage beschreibt das Konzept Metallische Bindung im Rahmen von Zwischenmolekulare Kräfte am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Liaison métallique selon les lois de Interactions Intermoléculaires?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Металлическая Бонд» в рамках темы «Взаимодействия между частицами»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"السندات المعدنية\" ضمن قواعد \"التفاعلات بين الجسيمات\"؟",
-        "zh": "根据“微粒间相互作用”的基本化学原理，下列哪项阐述能最准确地界定“金属结合剂”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Metallic Bond\" di çarçoveya prensîbên \"Têkiliyên Navbera Cûreyên Kîmyewî\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyasal Türler Arası Etkileşimler sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Intermolecular Interactions, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Zwischenmolekulare Kräfte: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Interactions Intermoléculaires, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Взаимодействия между частицами», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التفاعلات بين الجسيمات\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“微粒间相互作用”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1800,14 +1800,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyasal Türler Arası Etkileşimler sorularında karşılaşılan Molekül İçi Güçlü Bağ konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Intermolecular Interactions, which assertion regarding Strong Intramolecular Bond is correct?",
-        "de": "Welche Feststellung bezüglich Starke intramolekulare Bindung ist nach den chemischen Gesetzmäßigkeiten von Zwischenmolekulare Kräfte richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Interactions Intermoléculaires, quelle affirmation concernant Forte liaison intramoléculaire est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Взаимодействия между частицами», какое положение относительно «Сильная внутримолекулярная связь» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التفاعلات بين الجسيمات\"، أي حكم متعلق بـ \"رابطة قوية داخل الجزيئات\" يعتبر صحيحاً؟",
-        "zh": "在高考“微粒间相互作用”经典考题中，下列有关“强分子内键”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan daraza li ser \"Têkiliya Intramolekular a Hêz\" rast e?"
+        "tr": "Aşağıda Kimyasal Türler Arası Etkileşimler ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Intermolecular Interactions, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Zwischenmolekulare Kräfte: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Interactions Intermoléculaires, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Взаимодействия между частицами», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التفاعلات بين الجسيمات\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“微粒间相互作用”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1876,14 +1876,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin14",
       "stem": {
-        "tr": "Aşağıda Kimyasal Türler Arası Etkileşimler ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Ağ Örgülü Kovalent Katı ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Intermolecular Interactions, which statement about Networked Covalent Solid is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Zwischenmolekulare Kräfte: Welche Aussage über Vernetzter kovalenter Feststoff ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Interactions Intermoléculaires, quelle affirmation relative à Solide covalent en réseau est exacte?",
-        "ru": "На основе фундаментальных положений темы «Взаимодействия между частицами», какое суждение о «Сетевое ковалентное твердое тело» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التفاعلات بين الجسيمات\"، أي عبارة حول \"شبكة تساهمية صلبة\" صحيحة؟",
-        "zh": "基于“微粒间相互作用”的基础化学知识体系，下列关于“网络化共价固体”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\", kîjan gotin derbarê \"Tora Covalent Solid\" de rast e?"
+        "tr": "Kimyasal Türler Arası Etkileşimler konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Intermolecular Interactions, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Zwischenmolekulare Kräfte: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Interactions Intermoléculaires, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Взаимодействия между частицами», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"التفاعلات بين الجسيمات\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“微粒间相互作用”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1927,7 +1927,7 @@ export const unit03: ChemistryUnitSeedData = {
           "ku": "Girêdanên kovalentî yên intramolekular danûstendinên xurt in û têkiliyên van der Waals-ê yên navmolekular qels in."
         },
         {
-          "tr": "Suyun yüksek kaynama noktası molekül kütlesinin H2S den büyük olmasındandır.",
+          "tr": "Suyun yüksek kaynama noktası molekül kütlesinin H2S'den büyük olmasındandır.",
           "en": "The high boiling point of water is due to its molecular mass being greater than H2S.",
           "de": "Der hohe Siedepunkt von Wasser ist darauf zurückzuführen, dass seine Molekülmasse größer als die von H2S ist.",
           "fr": "Le point d’ébullition élevé de l’eau est dû à sa masse moléculaire supérieure à celle du H2S.",
@@ -1952,14 +1952,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin15",
       "stem": {
-        "tr": "Kimyasal Türler Arası Etkileşimler konusu kapsamında İyon-Dipol Etkileşimi ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Intermolecular Interactions, which of the following findings regarding Ion-Dipole Interaction is scientifically verified?",
-        "de": "Im Rahmen der Einheit Zwischenmolekulare Kräfte: Welcher der folgenden Befunde zu Ion-Dipol-Wechselwirkung ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Interactions Intermoléculaires, laquelle des constatations suivantes concernant Interaction Ion-Dipôle est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Взаимодействия между частицами», какой из следующих выводов относительно «Ион-дипольное взаимодействие» научно подтверждён?",
-        "ar": "في سياق موضوع \"التفاعلات بين الجسيمات\"، أي من النتائج التالية المتعلقة بـ \"تفاعل أيون-ثنائي القطب\" مثبتة علمياً؟",
-        "zh": "在“微粒间相互作用”主题范畴内，下列关于“离子-偶极作用”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan ji van encamên li ser \"Têkiliya Îyon-Dîpol\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyasal Türler Arası Etkileşimler ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Intermolecular Interactions, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Zwischenmolekulare Kräfte: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Interactions Intermoléculaires, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Взаимодействия между частицами», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التفاعلات بين الجسيمات\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“微粒间相互作用”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2028,14 +2028,14 @@ export const unit03: ChemistryUnitSeedData = {
     {
       "id": "u03-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyasal Türler Arası Etkileşimler ünitesinde ele alınan Sigma Bağı hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Intermolecular Interactions, which statement about Sigma Bond is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Zwischenmolekulare Kräfte: Welche Aussage über Sigma-Bindung ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Interactions Intermoléculaires, quelle affirmation relative à Liaison Sigma est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Взаимодействия между частицами», какое утверждение о «Сигма-связь» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التفاعلات بين الجسيمات\"، أي عبارة حول \"رابطة سيجما\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“微粒间相互作用”单元中关于“σ键 (Sigma)”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\", kîjan gotin li ser \"Girêdana Sîgma\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Türler Arası Etkileşimler konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Intermolecular Interactions, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Zwischenmolekulare Kräfte die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Interactions Intermoléculaires, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Взаимодействия между частицами», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"التفاعلات بين الجسيمات\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“微粒间相互作用”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Têkiliyên Navbera Cûreyên Kîmyewî\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

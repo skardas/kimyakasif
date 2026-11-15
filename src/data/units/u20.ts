@@ -413,9 +413,9 @@ export const unit20: ChemistryUnitSeedData = {
         "tr": "Qi < Kçç",
         "en": "Qi < Ksp",
         "de": "Qi < Ksp",
-        "fr": "Qi <Ksp",
-        "ru": "Ци <Ксп",
-        "ar": "تشى <كسب",
+        "fr": "Qi < Ksp",
+        "ru": "Ци < Ксп",
+        "ar": "Qi < Ksp",
         "zh": "Qi < Ksp",
         "ku": "Qi < Ksp"
       },
@@ -425,7 +425,7 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Qi > Kçch",
         "fr": "Qi > Kçch",
         "ru": "Ци > Кчч",
-        "ar": "تشي> كتش",
+        "ar": "Qi > Ksp",
         "zh": "齐 > 克奇",
         "ku": "Qi > Kçch"
       },
@@ -435,7 +435,7 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Qi < Ksp ungesättigte Lösung kein Niederschlag; Qi > Kçç bedeutet, dass eine übersättigte Lösung ausfällt.",
         "fr": "Qi < Ksp solution insaturée pas de précipitation ; Qi > Kçç signifie qu’il y a précipitation de solution sursaturée.",
         "ru": "Qi < Ksp ненасыщенный раствор без выпадения осадка; Qi > Kçç означает выпадение пересыщенного раствора.",
-        "ar": "Qi <Ksp محلول غير مشبع بدون هطول؛ Qi > Kçç يعني وجود ترسيب محلول مفرط التشبع.",
+        "ar": "Qi < Ksp محلول غير مشبع بدون هطول؛ Qi > Kçç يعني وجود ترسيب محلول مفرط التشبع.",
         "zh": "Qi < Ksp 不饱和溶液无沉淀； Qi > Kçç 表示有过饱和溶液沉淀。",
         "ku": "Qi < Ksp çareseriya ne têrbûyî bê barîn; Qi > Kçç tê wê wateyê ku barîna çareseriya pir têrbûyî heye."
       }
@@ -595,7 +595,7 @@ export const unit20: ChemistryUnitSeedData = {
         "ku": "Çareseriya Supersaturated"
       },
       "distinction": {
-        "tr": "Doygun çözeltide katı ile iyonlar dengededir ve Qi = Kçç dir; aşırı doygunda Qi > Kçç olup sistem kararsızdır.",
+        "tr": "Doygun çözeltide katı ile iyonlar dengededir ve Qi = Kçç'dir; aşırı doygunda Qi > Kçç olup sistem kararsızdır.",
         "en": "In saturated solution, the solid and ions are in balance and Qi = Kçç; In oversaturation, Qi > Kçç and the system is unstable.",
         "de": "In gesättigter Lösung sind Feststoff und Ionen im Gleichgewicht und Qi = Kçç; Bei Übersättigung ist Qi > Kçç und das System ist instabil.",
         "fr": "En solution saturée, le solide et les ions sont en équilibre et Qi = Kçç ; En sursaturation, Qi > Kçç et le système est instable.",
@@ -608,7 +608,7 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-c07",
       "conceptA": {
-        "tr": "pH nın Çözünürlüğe Etkisi",
+        "tr": "pH'nın Çözünürlüğe Etkisi",
         "en": "Effect of pH on Solubility",
         "de": "Einfluss des pH-Werts auf die Löslichkeit",
         "fr": "Effet du pH sur la solubilité",
@@ -628,7 +628,7 @@ export const unit20: ChemistryUnitSeedData = {
         "ku": "Bandora Germahiya li ser Çareseriyê"
       },
       "distinction": {
-        "tr": "Bazik tuzların çözünürlüğü asit eklendikçe artar; sıcaklık artışı endotermik tuzların çözünürlüğünü ve Kçç sini artırır.",
+        "tr": "Bazik tuzların çözünürlüğü asit eklendikçe artar; sıcaklık artışı endotermik tuzların çözünürlüğünü ve Kçç'sini artırır.",
         "en": "The solubility of basic salts increases as acid is added; Increasing temperature increases the solubility and Ksp of endothermic salts.",
         "de": "Die Löslichkeit basischer Salze nimmt mit der Säurezugabe zu; Mit zunehmender Temperatur erhöhen sich die Löslichkeit und der Ksp endothermer Salze.",
         "fr": "La solubilité des sels basiques augmente à mesure que l’acide est ajouté ; L'augmentation de la température augmente la solubilité et la Ksp des sels endothermiques.",
@@ -661,7 +661,7 @@ export const unit20: ChemistryUnitSeedData = {
         "ku": "XY2 Tîpa Xwê"
       },
       "distinction": {
-        "tr": "XY tuzunda Kçç = s^2 dir; XY2 tuzunda Kçç = 4s^3 bağıntısı geçerlidir.",
+        "tr": "XY tuzunda Kçç = s^2'dir; XY2 tuzunda Kçç = 4s^3 bağıntısı geçerlidir.",
         "en": "In the XY salt, Ksp = s^2; In the XY2 salt, the relation Kçç = 4s^3 is valid.",
         "de": "Im XY-Salz ist Ksp = s^2; Im XY2-Salz gilt die Beziehung Kçç = 4s^3.",
         "fr": "Dans le sel XY, Ksp = s^2 ; Dans le sel XY2, la relation Kçç = 4s^3 est valide.",
@@ -731,7 +731,7 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-s02",
       "title": {
-        "tr": "Kçç den Çözünürlük Hesabı",
+        "tr": "Kçç'den Çözünürlük Hesabı",
         "en": "Solubility Calculation from Kçç",
         "de": "Löslichkeitsberechnung aus Kçç",
         "fr": "Calcul de solubilité à partir de Kçç",
@@ -762,7 +762,7 @@ export const unit20: ChemistryUnitSeedData = {
           "ku": "Girêdanên kation û anion di s de têne diyar kirin"
         },
         {
-          "tr": "Kçç bağıntısı kurularak s nin kuvvetine eşitlenir",
+          "tr": "Kçç bağıntısı kurularak s'nin kuvvetine eşitlenir",
           "en": "It is equalized to the power of s by establishing the Kçç relation",
           "de": "Es wird durch die Festlegung der Kçç-Relation mit der Potenz s gleichgesetzt",
           "fr": "Il est égalisé à la puissance de s en établissant la relation Kçç",
@@ -1050,14 +1050,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Çözünürlük Dengesi (Kçç) konusunu işlerken Çözünürlük Çarpımı (Kçç) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Solubility Product (Ksp), which statement regarding Resolution Product (Ksp) represents the correct answer?",
-        "de": "Welche Aussage zu Auflösungsprodukt (Ksp) stellt im Kontext von Löslichkeitsprodukt die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Produit de Solubilité, quelle proposition sur Produit de résolution (Ksp) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Произведение растворимости», какой ответ относительно «Продукт разрешения (Ksp)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"حاصل الإذابة\" مخبرياً، أي إجابة بخصوص \"منتج الدقة (Ksp)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“溶度积”实验探究与教学分析中，针对“分辨率产品 (Ksp)”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Hevsengiya Çareserbûnê\" de, kîjan bersiv derbarê \"Hilbera Çareseriyê (Ksp)\" de rast e?"
+        "tr": "Kimya dersinde Çözünürlük Dengesi (Kçç) ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Solubility Product (Ksp), which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Löslichkeitsprodukt: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Produit de Solubilité, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Произведение растворимости», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"حاصل الإذابة\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“溶度积”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Hevsengiya Çareserbûnê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1126,14 +1126,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin04",
       "stem": {
-        "tr": "Kimya dersinde Çözünürlük Dengesi (Kçç) ünitesi incelenirken İyon Çarpımı (Qi) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Solubility Product (Ksp), which of the following propositions concerning Ion Multiplication (Qi) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Löslichkeitsprodukt: Welche Behauptung bezüglich Ionenvervielfachung (Qi) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Produit de Solubilité, laquelle des affirmations suivantes concernant Multiplication des ions (Qi) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Произведение растворимости», какое из следующих суждений о «Умножение ионов (Ци)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"حاصل الإذابة\"، أي من الأحكام التالية المتعلقة بـ \"الضرب الأيوني (تشي)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“溶度积”核心规律时，下列关于“离子倍增 (Qi)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Hevsengiya Çareserbûnê\" tê kirin, kîjan daraza li ser \"Pirbûna îyonan (Qi)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Çözünürlük Dengesi (Kçç) konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Solubility Product (Ksp)?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Löslichkeitsprodukt zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Produit de Solubilité ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Произведение растворимости»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"حاصل الإذابة\"؟",
+        "zh": "根据“溶度积”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Hevsengiya Çareserbûnê\" de rast e?"
       },
       "options": [
         {
@@ -1202,14 +1202,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Çözünürlük Dengesi (Kçç) konusundaki temel kimyasal kurallar çerçevesinde Ortak İyon Etkisi kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Common Ion Effect within the fundamental principles of Solubility Product (Ksp)?",
-        "de": "Welche Aussage beschreibt das Konzept Gemeinsamer Ioneneffekt im Rahmen von Löslichkeitsprodukt am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Effet ionique commun selon les lois de Produit de Solubilité?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Общий ионный эффект» в рамках темы «Произведение растворимости»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"تأثير الأيونات المشتركة\" ضمن قواعد \"حاصل الإذابة\"؟",
-        "zh": "根据“溶度积”的基本化学原理，下列哪项阐述能最准确地界定“共同离子效应”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Bandora Ionê ya Hevbeş\" di çarçoveya prensîbên \"Hevsengiya Çareserbûnê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Çözünürlük Dengesi (Kçç) sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Solubility Product (Ksp), which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Löslichkeitsprodukt: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Produit de Solubilité, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Произведение растворимости», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"حاصل الإذابة\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“溶度积”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Çareserbûnê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1278,14 +1278,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Çözünürlük Dengesi (Kçç) sorularında karşılaşılan Doygun Çözelti Dengesi konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Solubility Product (Ksp), which assertion regarding Saturated Solution Equilibrium is correct?",
-        "de": "Welche Feststellung bezüglich Gleichgewicht der gesättigten Lösung ist nach den chemischen Gesetzmäßigkeiten von Löslichkeitsprodukt richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Produit de Solubilité, quelle affirmation concernant Équilibre des solutions saturées est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Произведение растворимости», какое положение относительно «Равновесие в насыщенном растворе» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"حاصل الإذابة\"، أي حكم متعلق بـ \"توازن الحل المشبع\" يعتبر صحيحاً؟",
-        "zh": "在高考“溶度积”经典考题中，下列有关“饱和溶液平衡”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Çareserbûnê\" de, kîjan daraza li ser \"Hevsengiya Çareseriya Têrbûyî\" rast e?"
+        "tr": "Aşağıda Çözünürlük Dengesi (Kçç) ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Solubility Product (Ksp), which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Löslichkeitsprodukt: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Produit de Solubilité, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Произведение растворимости», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"حاصل الإذابة\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“溶度积”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Çareserbûnê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1354,14 +1354,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin07",
       "stem": {
-        "tr": "Aşağıda Çözünürlük Dengesi (Kçç) ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre pH nın Çözünürlüğe Etkisi ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Solubility Product (Ksp), which statement about Effect of pH on Solubility is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Löslichkeitsprodukt: Welche Aussage über Einfluss des pH-Werts auf die Löslichkeit ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Produit de Solubilité, quelle affirmation relative à Effet du pH sur la solubilité est exacte?",
-        "ru": "На основе фундаментальных положений темы «Произведение растворимости», какое суждение о «Влияние pH на растворимость» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"حاصل الإذابة\"، أي عبارة حول \"تأثير الرقم الهيدروجيني على الذوبان\" صحيحة؟",
-        "zh": "基于“溶度积”的基础化学知识体系，下列关于“pH 对溶解度的影响”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Çareserbûnê\", kîjan gotin derbarê \"Bandora pH li ser Çareseriyê\" de rast e?"
+        "tr": "Çözünürlük Dengesi (Kçç) konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Solubility Product (Ksp), which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Löslichkeitsprodukt: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Produit de Solubilité, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Произведение растворимости», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"حاصل الإذابة\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“溶度积”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Hevsengiya Çareserbûnê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1430,14 +1430,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin08",
       "stem": {
-        "tr": "Çözünürlük Dengesi (Kçç) konusu kapsamında XY Tipi Tuz ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Solubility Product (Ksp), which of the following findings regarding XY Type Salt is scientifically verified?",
-        "de": "Im Rahmen der Einheit Löslichkeitsprodukt: Welcher der folgenden Befunde zu Salz vom Typ XY ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Produit de Solubilité, laquelle des constatations suivantes concernant Sel de type XY est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Произведение растворимости», какой из следующих выводов относительно «Соль типа XY» научно подтверждён?",
-        "ar": "في سياق موضوع \"حاصل الإذابة\"، أي من النتائج التالية المتعلقة بـ \"ملح من النوع XY\" مثبتة علمياً؟",
-        "zh": "在“溶度积”主题范畴内，下列关于“XY型盐”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Hevsengiya Çareserbûnê\" de, kîjan ji van encamên li ser \"XY Tîpa Xwê\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Çözünürlük Dengesi (Kçç) ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Solubility Product (Ksp), which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Löslichkeitsprodukt: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Produit de Solubilité, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Произведение растворимости», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"حاصل الإذابة\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“溶度积”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Çareserbûnê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1506,14 +1506,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Çözünürlük Dengesi (Kçç) ünitesinde ele alınan Qi < Kçç hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Solubility Product (Ksp), which statement about Qi < Ksp is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Löslichkeitsprodukt: Welche Aussage über Qi < Ksp ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Produit de Solubilité, quelle affirmation relative à Qi <Ksp est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Произведение растворимости», какое утверждение о «Ци <Ксп» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"حاصل الإذابة\"، أي عبارة حول \"تشى <كسب\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“溶度积”单元中关于“Qi < Ksp”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Çareserbûnê\", kîjan gotin li ser \"Qi < Ksp\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Çözünürlük Dengesi (Kçç) konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Solubility Product (Ksp), which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Löslichkeitsprodukt die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Produit de Solubilité, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Произведение растворимости», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"حاصل الإذابة\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“溶度积”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Hevsengiya Çareserbûnê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1582,14 +1582,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Çözünürlük Dengesi (Kçç) konusunu işlerken Saf Sudaki Çözünürlük üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Solubility Product (Ksp), which statement regarding Solubility in Pure Water represents the correct answer?",
-        "de": "Welche Aussage zu Löslichkeit in reinem Wasser stellt im Kontext von Löslichkeitsprodukt die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Produit de Solubilité, quelle proposition sur Solubilité dans l'eau pure constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Произведение растворимости», какой ответ относительно «Растворимость в чистой воде» является правильным?",
-        "ar": "أثناء دراسة موضوع \"حاصل الإذابة\" مخبرياً، أي إجابة بخصوص \"الذوبان في الماء النقي\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“溶度积”实验探究与教学分析中，针对“在纯水中的溶解度”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Hevsengiya Çareserbûnê\" de, kîjan bersiv derbarê \"Çareseriya di ava paqij\" de rast e?"
+        "tr": "Kimya dersinde Çözünürlük Dengesi (Kçç) ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Solubility Product (Ksp), which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Löslichkeitsprodukt: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Produit de Solubilité, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Произведение растворимости», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"حاصل الإذابة\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“溶度积”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Hevsengiya Çareserbûnê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1658,14 +1658,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin11",
       "stem": {
-        "tr": "Kimya dersinde Çözünürlük Dengesi (Kçç) ünitesi incelenirken Çözünürlük Çarpımı (Kçç) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Solubility Product (Ksp), which of the following propositions concerning Resolution Product (Ksp) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Löslichkeitsprodukt: Welche Behauptung bezüglich Auflösungsprodukt (Ksp) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Produit de Solubilité, laquelle des affirmations suivantes concernant Produit de résolution (Ksp) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Произведение растворимости», какое из следующих суждений о «Продукт разрешения (Ksp)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"حاصل الإذابة\"، أي من الأحكام التالية المتعلقة بـ \"منتج الدقة (Ksp)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“溶度积”核心规律时，下列关于“分辨率产品 (Ksp)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Hevsengiya Çareserbûnê\" tê kirin, kîjan daraza li ser \"Hilbera Çareseriyê (Ksp)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Çözünürlük Dengesi (Kçç) konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Solubility Product (Ksp)?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Löslichkeitsprodukt zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Produit de Solubilité ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Произведение растворимости»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"حاصل الإذابة\"؟",
+        "zh": "根据“溶度积”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Hevsengiya Çareserbûnê\" de rast e?"
       },
       "options": [
         {
@@ -1734,14 +1734,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Çözünürlük Dengesi (Kçç) konusundaki temel kimyasal kurallar çerçevesinde İyon Çarpımı (Qi) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Ion Multiplication (Qi) within the fundamental principles of Solubility Product (Ksp)?",
-        "de": "Welche Aussage beschreibt das Konzept Ionenvervielfachung (Qi) im Rahmen von Löslichkeitsprodukt am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Multiplication des ions (Qi) selon les lois de Produit de Solubilité?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Умножение ионов (Ци)» в рамках темы «Произведение растворимости»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"الضرب الأيوني (تشي)\" ضمن قواعد \"حاصل الإذابة\"؟",
-        "zh": "根据“溶度积”的基本化学原理，下列哪项阐述能最准确地界定“离子倍增 (Qi)”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Pirbûna îyonan (Qi)\" di çarçoveya prensîbên \"Hevsengiya Çareserbûnê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Çözünürlük Dengesi (Kçç) sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Solubility Product (Ksp), which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Löslichkeitsprodukt: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Produit de Solubilité, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Произведение растворимости», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"حاصل الإذابة\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“溶度积”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Çareserbûnê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1810,14 +1810,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Çözünürlük Dengesi (Kçç) sorularında karşılaşılan Ortak İyon Etkisi konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Solubility Product (Ksp), which assertion regarding Common Ion Effect is correct?",
-        "de": "Welche Feststellung bezüglich Gemeinsamer Ioneneffekt ist nach den chemischen Gesetzmäßigkeiten von Löslichkeitsprodukt richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Produit de Solubilité, quelle affirmation concernant Effet ionique commun est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Произведение растворимости», какое положение относительно «Общий ионный эффект» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"حاصل الإذابة\"، أي حكم متعلق بـ \"تأثير الأيونات المشتركة\" يعتبر صحيحاً؟",
-        "zh": "在高考“溶度积”经典考题中，下列有关“共同离子效应”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Çareserbûnê\" de, kîjan daraza li ser \"Bandora Ionê ya Hevbeş\" rast e?"
+        "tr": "Aşağıda Çözünürlük Dengesi (Kçç) ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Solubility Product (Ksp), which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Löslichkeitsprodukt: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Produit de Solubilité, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Произведение растворимости», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"حاصل الإذابة\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“溶度积”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Çareserbûnê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1886,14 +1886,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin14",
       "stem": {
-        "tr": "Aşağıda Çözünürlük Dengesi (Kçç) ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Doygun Çözelti Dengesi ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Solubility Product (Ksp), which statement about Saturated Solution Equilibrium is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Löslichkeitsprodukt: Welche Aussage über Gleichgewicht der gesättigten Lösung ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Produit de Solubilité, quelle affirmation relative à Équilibre des solutions saturées est exacte?",
-        "ru": "На основе фундаментальных положений темы «Произведение растворимости», какое суждение о «Равновесие в насыщенном растворе» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"حاصل الإذابة\"، أي عبارة حول \"توازن الحل المشبع\" صحيحة؟",
-        "zh": "基于“溶度积”的基础化学知识体系，下列关于“饱和溶液平衡”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Çareserbûnê\", kîjan gotin derbarê \"Hevsengiya Çareseriya Têrbûyî\" de rast e?"
+        "tr": "Çözünürlük Dengesi (Kçç) konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Solubility Product (Ksp), which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Löslichkeitsprodukt: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Produit de Solubilité, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Произведение растворимости», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"حاصل الإذابة\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“溶度积”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Hevsengiya Çareserbûnê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1962,14 +1962,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin15",
       "stem": {
-        "tr": "Çözünürlük Dengesi (Kçç) konusu kapsamında pH nın Çözünürlüğe Etkisi ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Solubility Product (Ksp), which of the following findings regarding Effect of pH on Solubility is scientifically verified?",
-        "de": "Im Rahmen der Einheit Löslichkeitsprodukt: Welcher der folgenden Befunde zu Einfluss des pH-Werts auf die Löslichkeit ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Produit de Solubilité, laquelle des constatations suivantes concernant Effet du pH sur la solubilité est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Произведение растворимости», какой из следующих выводов относительно «Влияние pH на растворимость» научно подтверждён?",
-        "ar": "في سياق موضوع \"حاصل الإذابة\"، أي من النتائج التالية المتعلقة بـ \"تأثير الرقم الهيدروجيني على الذوبان\" مثبتة علمياً؟",
-        "zh": "在“溶度积”主题范畴内，下列关于“pH 对溶解度的影响”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Hevsengiya Çareserbûnê\" de, kîjan ji van encamên li ser \"Bandora pH li ser Çareseriyê\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Çözünürlük Dengesi (Kçç) ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Solubility Product (Ksp), which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Löslichkeitsprodukt: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Produit de Solubilité, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Произведение растворимости», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"حاصل الإذابة\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“溶度积”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Çareserbûnê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2038,14 +2038,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Çözünürlük Dengesi (Kçç) ünitesinde ele alınan XY Tipi Tuz hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Solubility Product (Ksp), which statement about XY Type Salt is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Löslichkeitsprodukt: Welche Aussage über Salz vom Typ XY ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Produit de Solubilité, quelle affirmation relative à Sel de type XY est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Произведение растворимости», какое утверждение о «Соль типа XY» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"حاصل الإذابة\"، أي عبارة حول \"ملح من النوع XY\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“溶度积”单元中关于“XY型盐”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Çareserbûnê\", kîjan gotin li ser \"XY Tîpa Xwê\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Çözünürlük Dengesi (Kçç) konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Solubility Product (Ksp), which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Löslichkeitsprodukt die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Produit de Solubilité, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Произведение растворимости», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"حاصل الإذابة\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“溶度积”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Hevsengiya Çareserbûnê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

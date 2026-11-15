@@ -30,7 +30,7 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f01",
       "fact": {
-        "tr": "Wöhler, 1828 de anorganik bir madde olan potasyum siyanattan laboratuvarda üre sentezleyerek vitalizm (yaşam gücü) teorisini çürütmüştür.",
+        "tr": "Wöhler, 1828'de anorganik bir madde olan potasyum siyanattan laboratuvarda üre sentezleyerek vitalizm (yaşam gücü) teorisini çürütmüştür.",
         "en": "In 1828, Wöhler refuted the theory of vitalism by synthesizing urea in the laboratory from potassium cyanate, an inorganic substance.",
         "de": "Im Jahr 1828 widerlegte Wöhler die Theorie des Vitalismus, indem er im Labor Harnstoff aus Kaliumcyanat, einer anorganischen Substanz, synthetisierte.",
         "fr": "En 1828, Wöhler réfute la théorie du vitalisme en synthétisant de l'urée en laboratoire à partir du cyanate de potassium, une substance inorganique.",
@@ -237,7 +237,7 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f10",
       "fact": {
-        "tr": "VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180° dir (örn. BeH2, CO2, C2H2).",
+        "tr": "VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180°'dir (örn. BeH2, CO2, C2H2).",
         "en": "VSEPR AX2: Molecular geometry is LINEAR, bond angle is 180° (e.g. BeH2, CO2, C2H2).",
         "de": "VSEPR AX2: Die Molekülgeometrie ist LINEAR, der Bindungswinkel beträgt 180° (z. B. BeH2, CO2, C2H2).",
         "fr": "VSEPR AX2 : La géométrie moléculaire est LINÉAIRE, l'angle de liaison est de 180° (par exemple BeH2, CO2, C2H2).",
@@ -260,7 +260,7 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f11",
       "fact": {
-        "tr": "VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120° dir (örn. BH3, BF3, SO3).",
+        "tr": "VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120°'dir (örn. BH3, BF3, SO3).",
         "en": "VSEPR AX3: Molecular geometry is PLANE TRIANGLE, bond angle is 120° (e.g. BH3, BF3, SO3).",
         "de": "VSEPR AX3: Die Molekülgeometrie ist ein ebenes Dreieck, der Bindungswinkel beträgt 120° (z. B. BH3, BF3, SO3).",
         "fr": "VSEPR AX3 : La géométrie moléculaire est un TRIANGLE PLAN, l'angle de liaison est de 120° (par exemple BH3, BF3, SO3).",
@@ -283,7 +283,7 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f12",
       "fact": {
-        "tr": "VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5° dir (örn. CH4, CCl4).",
+        "tr": "VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5°'dir (örn. CH4, CCl4).",
         "en": "VSEPR AX4: Molecular geometry is REGULAR TETATHEDRAL, bond angle is 109.5° (e.g. CH4, CCl4).",
         "de": "VSEPR AX4: Die Molekülgeometrie ist REGELMÄßIG TETATHEDRAL, der Bindungswinkel beträgt 109,5° (z. B. CH4, CCl4).",
         "fr": "VSEPR AX4 : La géométrie moléculaire est RÉGULIÈRE TÉTATHÉDRALE, l'angle de liaison est de 109,5° (par exemple CH4, CCl4).",
@@ -293,7 +293,7 @@ export const unit23: ChemistryUnitSeedData = {
         "ku": "VSEPR AX4: Geometrîya molekular TETATEDRA REQULAR e, goşeya girêdanê 109,5° ye (mînak CH4, CCl4)."
       },
       "trap": {
-        "tr": "CH4 molekülünde bağ açısı 90° dir.",
+        "tr": "CH4 molekülünde bağ açısı 90°'dir.",
         "en": "The bond angle in the CH4 molecule is 90°.",
         "de": "Der Bindungswinkel im CH4-Molekül beträgt 90°.",
         "fr": "L'angle de liaison dans la molécule CH4 est de 90°.",
@@ -306,7 +306,7 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f13",
       "fact": {
-        "tr": "VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3° dir (örn. NH3); molekül polardır.",
+        "tr": "VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3°'dir (örn. NH3); molekül polardır.",
         "en": "VSEPR AX3E: Molecular geometry TRIANGULAR PYRAMID, bond angle is 107.3° (e.g. NH3); The molecule is polar.",
         "de": "VSEPR AX3E: Molekülgeometrie DREIECKIGE PYRAMIDE, Bindungswinkel beträgt 107,3° (z. B. NH3); Das Molekül ist polar.",
         "fr": "VSEPR AX3E : PYRAMIDE TRIANGULAIRE à géométrie moléculaire, l'angle de liaison est de 107,3° (par exemple NH3) ; La molécule est polaire.",
@@ -329,7 +329,7 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-f14",
       "fact": {
-        "tr": "VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5° dir (örn. H2O); molekül polardır.",
+        "tr": "VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5°'dir (örn. H2O); molekül polardır.",
         "en": "VSEPR AX2E2: Molecular geometry BROKEN CORRECT (angular), bond angle is 104.5° (e.g. H2O); The molecule is polar.",
         "de": "VSEPR AX2E2: Molekülgeometrie korrekt gebrochen (eckig), Bindungswinkel beträgt 104,5° (z. B. H2O); Das Molekül ist polar.",
         "fr": "VSEPR AX2E2 : Géométrie moléculaire CASSÉE CORRECT (angulaire), l'angle de liaison est de 104,5° (par exemple H2O) ; La molécule est polaire.",
@@ -406,7 +406,7 @@ export const unit23: ChemistryUnitSeedData = {
         "fr": "diamant",
         "ru": "алмаз",
         "ar": "الماس",
-        "zh": "钻石",
+        "zh": "金刚石",
         "ku": "elmas"
       },
       "conceptB": {
@@ -423,7 +423,7 @@ export const unit23: ChemistryUnitSeedData = {
         "tr": "Elmas sp3 hibritleşmeli elektriği iletmez serttir; grafit sp2 hibritleşmeli tabakalı elektriği iletir yumuşaktır.",
         "en": "Diamond is sp3 hybridized and does not conduct electricity; it is hard; Graphite sp2 hybridized layer conducts electricity and is soft.",
         "de": "Diamant ist sp3-hybridisiert und leitet keinen Strom; es ist schwer; Die hybridisierte Graphit-SP2-Schicht leitet Elektrizität und ist weich.",
-        "fr": "Diamond est hybridé sp3 et ne conduit pas l’électricité ; c'est dur; La couche hybridée en graphite sp2 conduit l'électricité et est douce.",
+        "fr": "Le diamant est hybridé sp3 et ne conduit pas l’électricité ; c'est dur; La couche hybridée en graphite sp2 conduit l'électricité et est douce.",
         "ru": "Алмаз представляет собой гибрид sp3 и не проводит электричество; это тяжело; Гибридный слой графита sp2 проводит электричество и является мягким.",
         "ar": "الماس عبارة عن sp3 مهجن ولا يوصل الكهرباء؛ إنه صعب؛ طبقة الجرافيت sp2 المهجنة توصل الكهرباء وهي ناعمة.",
         "zh": "金刚石是sp3杂化，不导电；这很难；石墨sp2杂化层导电且柔软。",
@@ -437,10 +437,10 @@ export const unit23: ChemistryUnitSeedData = {
         "en": "Sigma (σ) Bond",
         "de": "Sigma (σ) Bindung",
         "fr": "Liaison Sigma (σ)",
-        "ru": "Сигма (σ) Бонд",
-        "ar": "سيجما (σ) بوند",
+        "ru": "Сигма (σ) связь",
+        "ar": "رابطة سيجما (σ)",
         "zh": "西格玛 (σ) 键",
-        "ku": "Sigma (σ) Bond"
+        "ku": "Girêdana Sigma (σ)"
       },
       "conceptB": {
         "tr": "Pi (π) Bağı",
@@ -473,7 +473,7 @@ export const unit23: ChemistryUnitSeedData = {
         "ru": "Алмазный аллотроп",
         "ar": "تآصل الماس",
         "zh": "金刚石同素异形体",
-        "ku": "Diamond Allotrope"
+        "ku": "Elmas Allotrop"
       },
       "conceptB": {
         "tr": "Grafit Allotropu",
@@ -488,12 +488,12 @@ export const unit23: ChemistryUnitSeedData = {
       "distinction": {
         "tr": "Elmas sp3 hibritleşmesi yapar, 3 boyutlu dev ağ örgülüdür ve elektriği iletmez; grafit sp2 yapar, tabakalıdır ve elektriği iletir.",
         "en": "Diamond performs sp3 hybridization, has a 3D giant network and does not conduct electricity; Graphite makes sp2, is layered and conducts electricity.",
-        "de": "Diamond führt eine SP3-Hybridisierung durch, verfügt über ein 3D-Riesennetzwerk und leitet keinen Strom. Graphit bildet sp2, ist geschichtet und leitet Elektrizität.",
-        "fr": "Diamond réalise l'hybridation sp3, dispose d'un réseau géant 3D et ne conduit pas l'électricité ; Le graphite produit du sp2, est stratifié et conduit l'électricité.",
-        "ru": "Diamond выполняет гибридизацию sp3, имеет гигантскую 3D-сеть и не проводит электричество; Графит образует sp2, имеет слоистую структуру и проводит электричество.",
-        "ar": "يقوم Diamond بإجراء تهجين sp3، ولديه شبكة عملاقة ثلاثية الأبعاد ولا يوصل الكهرباء؛ يصنع الجرافيت sp2، وهو عبارة عن طبقات ويوصل الكهرباء.",
-        "zh": "钻石进行sp3杂化，具有3D巨型网络且不导电；石墨形成sp2，呈层状并导电。",
-        "ku": "Diamond hîbrîdîzasyona sp3 pêk tîne, xwedan torgilokek mezin a 3D ye û elektrîkê nake; Grafît sp2 çêdike, qat dibe û elektrîkê dimeşîne."
+        "de": "Diamant führt eine SP3-Hybridisierung durch, verfügt über ein 3D-Riesennetzwerk und leitet keinen Strom. Graphit bildet sp2, ist geschichtet und leitet Elektrizität.",
+        "fr": "Le diamant réalise l'hybridation sp3, dispose d'un réseau géant 3D et ne conduit pas l'électricité ; Le graphite produit du sp2, est stratifié et conduit l'électricité.",
+        "ru": "Алмаз выполняет гибридизацию sp3, имеет гигантскую 3D-сеть и не проводит электричество; Графит образует sp2, имеет слоистую структуру и проводит электричество.",
+        "ar": "يقوم الماس بإجراء تهجين sp3، ولديه شبكة عملاقة ثلاثية الأبعاد ولا يوصل الكهرباء؛ يصنع الجرافيت sp2، وهو عبارة عن طبقات ويوصل الكهرباء.",
+        "zh": "金刚石进行sp3杂化，具有3D巨型网络且不导电；石墨形成sp2，呈层状并导电。",
+        "ku": "Elmas hîbrîdîzasyona sp3 pêk tîne, xwedan torgilokek mezin a 3D ye û elektrîkê nake; Grafît sp2 çêdike, qat dibe û elektrîkê dimeşîne."
       }
     },
     {
@@ -506,7 +506,7 @@ export const unit23: ChemistryUnitSeedData = {
         "ru": "графен",
         "ar": "الجرافين",
         "zh": "石墨烯",
-        "ku": "graphene"
+        "ku": "Grafen"
       },
       "conceptB": {
         "tr": "Karbon Nanotüp",
@@ -538,7 +538,7 @@ export const unit23: ChemistryUnitSeedData = {
         "fr": "Lien Sigma (sigma)",
         "ru": "Сигма (сигма) Бонд",
         "ar": "سيجما (سيجما) بوند",
-        "zh": "西格玛 (Sigma) 债券",
+        "zh": "西格玛 (Sigma) 键",
         "ku": "Sigma (sigma) Bond"
       },
       "conceptB": {
@@ -618,7 +618,7 @@ export const unit23: ChemistryUnitSeedData = {
         "ku": "Pîramîda Sêgoşeyî (AX3E)"
       },
       "distinction": {
-        "tr": "AX4 te ortaklanmamış çift yoktur ve bağ açısı 109.5° dir (CH4); AX3E de 1 serbest çift bağları iterek 107.3° yapar (NH3).",
+        "tr": "AX4'te ortaklanmamış çift yoktur ve bağ açısı 109.5°'dir (CH4); AX3E'de 1 serbest çift bağları iterek 107.3° yapar (NH3).",
         "en": "There are no unshared pairs in AX4 and the bond angle is 109.5° (CH4); AX3E also pushes 1 free double bond to make 107.3° (NH3).",
         "de": "Es gibt keine ungeteilten Paare in AX4 und der Bindungswinkel beträgt 109,5° (CH4); AX3E drückt außerdem eine freie Doppelbindung, um 107,3° (NH3) zu ergeben.",
         "fr": "Il n'y a pas de paires non partagées dans AX4 et l'angle de liaison est de 109,5° (CH4) ; AX3E pousse également 1 double liaison libre pour faire 107,3° (NH3).",
@@ -842,7 +842,7 @@ export const unit23: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Moleküldeki tüm tekli bağlar 1 er sigma bağı olarak sayılır",
+          "tr": "Moleküldeki tüm tekli bağlar 1'er sigma bağı olarak sayılır",
           "en": "All single bonds in the molecule are counted as 1 sigma bond.",
           "de": "Alle Einfachbindungen im Molekül werden als 1-Sigma-Bindung gezählt.",
           "fr": "Toutes les liaisons simples de la molécule sont comptées comme 1 liaison sigma.",
@@ -1040,14 +1040,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Karbon Kimyasına Giriş konusunu işlerken Elmas Allotropu üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Introduction to Carbon Chemistry, which statement regarding Diamond Allotrope represents the correct answer?",
-        "de": "Welche Aussage zu Diamant-Allotrop stellt im Kontext von Einführung in die Kohlenstoffchemie die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Introduction à la Chimie du Carbone, quelle proposition sur Allotrope de diamant constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Введение в химию углерода», какой ответ относительно «Алмазный аллотроп» является правильным?",
-        "ar": "أثناء دراسة موضوع \"مقدمة في كيمياء الكربون\" مخبرياً، أي إجابة بخصوص \"تآصل الماس\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“碳化学导论”实验探究与教学分析中，针对“金刚石同素异形体”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Destpêka Kîmyaya Karbonê\" de, kîjan bersiv derbarê \"Diamond Allotrope\" de rast e?"
+        "tr": "Kimya dersinde Karbon Kimyasına Giriş ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Introduction to Carbon Chemistry, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Einführung in die Kohlenstoffchemie: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Introduction à la Chimie du Carbone, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Введение в химию углерода», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"مقدمة في كيمياء الكربون\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“碳化学导论”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Destpêka Kîmyaya Karbonê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1081,7 +1081,7 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Elmas maddeya xwezayî ya herî dijwar e ku bi hîbrîdîzasyona sp3 ya atomên karbonê, torgilokek tetrahedral ya birêkûpêk e û elektrîkê nagire."
         },
         {
-          "tr": "CH4 molekülünde bağ açısı 90° dir.",
+          "tr": "CH4 molekülünde bağ açısı 90°'dir.",
           "en": "The bond angle in the CH4 molecule is 90°.",
           "de": "Der Bindungswinkel im CH4-Molekül beträgt 90°.",
           "fr": "L'angle de liaison dans la molécule CH4 est de 90°.",
@@ -1116,14 +1116,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin04",
       "stem": {
-        "tr": "Kimya dersinde Karbon Kimyasına Giriş ünitesi incelenirken Grafen ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Introduction to Carbon Chemistry, which of the following propositions concerning graphene is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Einführung in die Kohlenstoffchemie: Welche Behauptung bezüglich Graphen entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Introduction à la Chimie du Carbone, laquelle des affirmations suivantes concernant graphène est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Введение в химию углерода», какое из следующих суждений о «графен» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"مقدمة في كيمياء الكربون\"، أي من الأحكام التالية المتعلقة بـ \"الجرافين\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“碳化学导论”核心规律时，下列关于“石墨烯”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Destpêka Kîmyaya Karbonê\" tê kirin, kîjan daraza li ser \"graphene\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Karbon Kimyasına Giriş konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Introduction to Carbon Chemistry?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Einführung in die Kohlenstoffchemie zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Introduction à la Chimie du Carbone ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Введение в химию углерода»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"مقدمة في كيمياء الكربون\"؟",
+        "zh": "根据“碳化学导论”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Destpêka Kîmyaya Karbonê\" de rast e?"
       },
       "options": [
         {
@@ -1192,14 +1192,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Karbon Kimyasına Giriş konusundaki temel kimyasal kurallar çerçevesinde Sigma (sigma) Bağı kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Sigma (sigma) Bond within the fundamental principles of Introduction to Carbon Chemistry?",
-        "de": "Welche Aussage beschreibt das Konzept Sigma (Sigma) Bindung im Rahmen von Einführung in die Kohlenstoffchemie am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Lien Sigma (sigma) selon les lois de Introduction à la Chimie du Carbone?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Сигма (сигма) Бонд» в рамках темы «Введение в химию углерода»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"سيجما (سيجما) بوند\" ضمن قواعد \"مقدمة في كيمياء الكربون\"؟",
-        "zh": "根据“碳化学导论”的基本化学原理，下列哪项阐述能最准确地界定“西格玛 (Sigma) 债券”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Sigma (sigma) Bond\" di çarçoveya prensîbên \"Destpêka Kîmyaya Karbonê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Karbon Kimyasına Giriş sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Introduction to Carbon Chemistry, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Einführung in die Kohlenstoffchemie: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Introduction à la Chimie du Carbone, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Введение в химию углерода», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"مقدمة في كيمياء الكربون\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“碳化学导论”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Destpêka Kîmyaya Karbonê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1268,14 +1268,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Karbon Kimyasına Giriş sorularında karşılaşılan sp3 Hibritleşmesi konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Introduction to Carbon Chemistry, which assertion regarding sp3 Hybridization is correct?",
-        "de": "Welche Feststellung bezüglich sp3-Hybridisierung ist nach den chemischen Gesetzmäßigkeiten von Einführung in die Kohlenstoffchemie richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Introduction à la Chimie du Carbone, quelle affirmation concernant Hybridation sp3 est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Введение в химию углерода», какое положение относительно «sp3 Гибридизация» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"مقدمة في كيمياء الكربون\"، أي حكم متعلق بـ \"تهجين sp3\" يعتبر صحيحاً؟",
-        "zh": "在高考“碳化学导论”经典考题中，下列有关“sp3杂交”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Destpêka Kîmyaya Karbonê\" de, kîjan daraza li ser \"sp3 Hybridization\" rast e?"
+        "tr": "Aşağıda Karbon Kimyasına Giriş ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Introduction to Carbon Chemistry, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Einführung in die Kohlenstoffchemie: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Introduction à la Chimie du Carbone, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Введение в химию углерода», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"مقدمة في كيمياء الكربون\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“碳化学导论”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Destpêka Kîmyaya Karbonê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1299,7 +1299,7 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Atoma karbonê ya di molekula CH4 de bi hîbrîdîzasyona sp derbas bûye."
         },
         {
-          "tr": "CH4 molekülünde bağ açısı 90° dir.",
+          "tr": "CH4 molekülünde bağ açısı 90°'dir.",
           "en": "The bond angle in the CH4 molecule is 90°.",
           "de": "Der Bindungswinkel im CH4-Molekül beträgt 90°.",
           "fr": "L'angle de liaison dans la molécule CH4 est de 90°.",
@@ -1344,14 +1344,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin07",
       "stem": {
-        "tr": "Aşağıda Karbon Kimyasına Giriş ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Düzgün Dörtyüzlü (AX4) ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Introduction to Carbon Chemistry, which statement about Regular Tetrahedron (AX4) is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Einführung in die Kohlenstoffchemie: Welche Aussage über Regelmäßiges Tetraeder (AX4) ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Introduction à la Chimie du Carbone, quelle affirmation relative à Tétraèdre régulier (AX4) est exacte?",
-        "ru": "На основе фундаментальных положений темы «Введение в химию углерода», какое суждение о «Правильный тетраэдр (AX4)» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"مقدمة في كيمياء الكربون\"، أي عبارة حول \"رباعي الاسطح العادي (AX4)\" صحيحة؟",
-        "zh": "基于“碳化学导论”的基础化学知识体系，下列关于“正四面体 (AX4)”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Destpêka Kîmyaya Karbonê\", kîjan gotin derbarê \"Tetrahedron bi rêkûpêk (AX4)\" de rast e?"
+        "tr": "Karbon Kimyasına Giriş konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Introduction to Carbon Chemistry, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Einführung in die Kohlenstoffchemie: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Introduction à la Chimie du Carbone, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Введение в химию углерода», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"مقدمة في كيمياء الكربون\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“碳化学导论”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Destpêka Kîmyaya Karbonê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1420,14 +1420,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin08",
       "stem": {
-        "tr": "Karbon Kimyasına Giriş konusu kapsamında Doğrusal Geometri (AX2) ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Introduction to Carbon Chemistry, which of the following findings regarding Linear Geometry (AX2) is scientifically verified?",
-        "de": "Im Rahmen der Einheit Einführung in die Kohlenstoffchemie: Welcher der folgenden Befunde zu Lineare Geometrie (AX2) ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Introduction à la Chimie du Carbone, laquelle des constatations suivantes concernant Géométrie linéaire (AX2) est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Введение в химию углерода», какой из следующих выводов относительно «Линейная геометрия (AX2)» научно подтверждён?",
-        "ar": "في سياق موضوع \"مقدمة في كيمياء الكربون\"، أي من النتائج التالية المتعلقة بـ \"الهندسة الخطية (AX2)\" مثبتة علمياً؟",
-        "zh": "在“碳化学导论”主题范畴内，下列关于“线性几何 (AX2)”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Destpêka Kîmyaya Karbonê\" de, kîjan ji van encamên li ser \"Geometrîya Rêzik (AX2)\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Karbon Kimyasına Giriş ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Introduction to Carbon Chemistry, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Einführung in die Kohlenstoffchemie: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Introduction à la Chimie du Carbone, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Введение в химию углерода», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"مقدمة في كيمياء الكربون\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“碳化学导论”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Destpêka Kîmyaya Karbonê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1496,18 +1496,18 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Karbon Kimyasına Giriş ünitesinde ele alınan Elmas hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Introduction to Carbon Chemistry, which statement about diamond is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Einführung in die Kohlenstoffchemie: Welche Aussage über Diamant ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Introduction à la Chimie du Carbone, quelle affirmation relative à diamant est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Введение в химию углерода», какое утверждение о «алмаз» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"مقدمة في كيمياء الكربون\"، أي عبارة حول \"الماس\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“碳化学导论”单元中关于“钻石”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Destpêka Kîmyaya Karbonê\", kîjan gotin li ser \"elmas\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Karbon Kimyasına Giriş konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Introduction to Carbon Chemistry, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Einführung in die Kohlenstoffchemie die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Introduction à la Chimie du Carbone, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Введение в химию углерода», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"مقدمة في كيمياء الكربون\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“碳化学导论”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Destpêka Kîmyaya Karbonê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
-          "tr": "CH4 molekülünde bağ açısı 90° dir.",
+          "tr": "CH4 molekülünde bağ açısı 90°'dir.",
           "en": "The bond angle in the CH4 molecule is 90°.",
           "de": "Der Bindungswinkel im CH4-Molekül beträgt 90°.",
           "fr": "L'angle de liaison dans la molécule CH4 est de 90°.",
@@ -1572,14 +1572,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Karbon Kimyasına Giriş konusunu işlerken Sigma (σ) Bağı üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Introduction to Carbon Chemistry, which statement regarding Sigma (σ) Bond represents the correct answer?",
-        "de": "Welche Aussage zu Sigma (σ) Bindung stellt im Kontext von Einführung in die Kohlenstoffchemie die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Introduction à la Chimie du Carbone, quelle proposition sur Liaison Sigma (σ) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Введение в химию углерода», какой ответ относительно «Сигма (σ) Бонд» является правильным?",
-        "ar": "أثناء دراسة موضوع \"مقدمة في كيمياء الكربون\" مخبرياً، أي إجابة بخصوص \"سيجما (σ) بوند\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“碳化学导论”实验探究与教学分析中，针对“西格玛 (σ) 键”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Destpêka Kîmyaya Karbonê\" de, kîjan bersiv derbarê \"Sigma (σ) Bond\" de rast e?"
+        "tr": "Kimya dersinde Karbon Kimyasına Giriş ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Introduction to Carbon Chemistry, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Einführung in die Kohlenstoffchemie: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Introduction à la Chimie du Carbone, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Введение в химию углерода», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"مقدمة في كيمياء الكربون\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“碳化学导论”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Destpêka Kîmyaya Karbonê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1623,7 +1623,7 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Fulleren di mîneralên di xwezayê de bi şeklê krîstal pir tê dîtin."
         },
         {
-          "tr": "VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180° dir (örn. BeH2, CO2, C2H2).",
+          "tr": "VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180°'dir (örn. BeH2, CO2, C2H2).",
           "en": "VSEPR AX2: Molecular geometry is LINEAR, bond angle is 180° (e.g. BeH2, CO2, C2H2).",
           "de": "VSEPR AX2: Die Molekülgeometrie ist LINEAR, der Bindungswinkel beträgt 180° (z. B. BeH2, CO2, C2H2).",
           "fr": "VSEPR AX2 : La géométrie moléculaire est LINÉAIRE, l'angle de liaison est de 180° (par exemple BeH2, CO2, C2H2).",
@@ -1635,7 +1635,7 @@ export const unit23: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180° dir (örn. BeH2, CO2, C2H2).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180°'dir (örn. BeH2, CO2, C2H2).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"VSEPR AX2: Molecular geometry is LINEAR, bond angle is 180° (e.g. BeH2, CO2, C2H2).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"VSEPR AX2: Die Molekülgeometrie ist LINEAR, der Bindungswinkel beträgt 180° (z. B. BeH2, CO2, C2H2).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"VSEPR AX2 : La géométrie moléculaire est LINÉAIRE, l'angle de liaison est de 180° (par exemple BeH2, CO2, C2H2).\". Notion fondamentale du programme officiel de chimie.",
@@ -1648,18 +1648,18 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin11",
       "stem": {
-        "tr": "Kimya dersinde Karbon Kimyasına Giriş ünitesi incelenirken Elmas Allotropu ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Introduction to Carbon Chemistry, which of the following propositions concerning Diamond Allotrope is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Einführung in die Kohlenstoffchemie: Welche Behauptung bezüglich Diamant-Allotrop entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Introduction à la Chimie du Carbone, laquelle des affirmations suivantes concernant Allotrope de diamant est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Введение в химию углерода», какое из следующих суждений о «Алмазный аллотроп» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"مقدمة في كيمياء الكربون\"، أي من الأحكام التالية المتعلقة بـ \"تآصل الماس\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“碳化学导论”核心规律时，下列关于“金刚石同素异形体”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Destpêka Kîmyaya Karbonê\" tê kirin, kîjan daraza li ser \"Diamond Allotrope\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Karbon Kimyasına Giriş konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Introduction to Carbon Chemistry?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Einführung in die Kohlenstoffchemie zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Introduction à la Chimie du Carbone ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Введение в химию углерода»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"مقدمة في كيمياء الكربون\"؟",
+        "zh": "根据“碳化学导论”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Destpêka Kîmyaya Karbonê\" de rast e?"
       },
       "options": [
         {
-          "tr": "VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120° dir (örn. BH3, BF3, SO3).",
+          "tr": "VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120°'dir (örn. BH3, BF3, SO3).",
           "en": "VSEPR AX3: Molecular geometry is PLANE TRIANGLE, bond angle is 120° (e.g. BH3, BF3, SO3).",
           "de": "VSEPR AX3: Die Molekülgeometrie ist ein ebenes Dreieck, der Bindungswinkel beträgt 120° (z. B. BH3, BF3, SO3).",
           "fr": "VSEPR AX3 : La géométrie moléculaire est un TRIANGLE PLAN, l'angle de liaison est de 120° (par exemple BH3, BF3, SO3).",
@@ -1711,7 +1711,7 @@ export const unit23: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120° dir (örn. BH3, BF3, SO3).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120°'dir (örn. BH3, BF3, SO3).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"VSEPR AX3: Molecular geometry is PLANE TRIANGLE, bond angle is 120° (e.g. BH3, BF3, SO3).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"VSEPR AX3: Die Molekülgeometrie ist ein ebenes Dreieck, der Bindungswinkel beträgt 120° (z. B. BH3, BF3, SO3).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"VSEPR AX3 : La géométrie moléculaire est un TRIANGLE PLAN, l'angle de liaison est de 120° (par exemple BH3, BF3, SO3).\". Notion fondamentale du programme officiel de chimie.",
@@ -1724,14 +1724,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Karbon Kimyasına Giriş konusundaki temel kimyasal kurallar çerçevesinde Grafen kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes graphene within the fundamental principles of Introduction to Carbon Chemistry?",
-        "de": "Welche Aussage beschreibt das Konzept Graphen im Rahmen von Einführung in die Kohlenstoffchemie am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement graphène selon les lois de Introduction à la Chimie du Carbone?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «графен» в рамках темы «Введение в химию углерода»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"الجرافين\" ضمن قواعد \"مقدمة في كيمياء الكربون\"؟",
-        "zh": "根据“碳化学导论”的基本化学原理，下列哪项阐述能最准确地界定“石墨烯”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"graphene\" di çarçoveya prensîbên \"Destpêka Kîmyaya Karbonê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Karbon Kimyasına Giriş sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Introduction to Carbon Chemistry, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Einführung in die Kohlenstoffchemie: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Introduction à la Chimie du Carbone, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Введение в химию углерода», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"مقدمة في كيمياء الكربون\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“碳化学导论”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Destpêka Kîmyaya Karbonê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1745,7 +1745,7 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Hejmara pêkhateyên înorganîk ji pêkhateyên organîk gelek zêdetir e."
         },
         {
-          "tr": "VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5° dir (örn. CH4, CCl4).",
+          "tr": "VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5°'dir (örn. CH4, CCl4).",
           "en": "VSEPR AX4: Molecular geometry is REGULAR TETATHEDRAL, bond angle is 109.5° (e.g. CH4, CCl4).",
           "de": "VSEPR AX4: Die Molekülgeometrie ist REGELMÄßIG TETATHEDRAL, der Bindungswinkel beträgt 109,5° (z. B. CH4, CCl4).",
           "fr": "VSEPR AX4 : La géométrie moléculaire est RÉGULIÈRE TÉTATHÉDRALE, l'angle de liaison est de 109,5° (par exemple CH4, CCl4).",
@@ -1787,7 +1787,7 @@ export const unit23: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5° dir (örn. CH4, CCl4).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5°'dir (örn. CH4, CCl4).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"VSEPR AX4: Molecular geometry is REGULAR TETATHEDRAL, bond angle is 109.5° (e.g. CH4, CCl4).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"VSEPR AX4: Die Molekülgeometrie ist REGELMÄßIG TETATHEDRAL, der Bindungswinkel beträgt 109,5° (z. B. CH4, CCl4).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"VSEPR AX4 : La géométrie moléculaire est RÉGULIÈRE TÉTATHÉDRALE, l'angle de liaison est de 109,5° (par exemple CH4, CCl4).\". Notion fondamentale du programme officiel de chimie.",
@@ -1800,14 +1800,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Karbon Kimyasına Giriş sorularında karşılaşılan Sigma (sigma) Bağı konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Introduction to Carbon Chemistry, which assertion regarding Sigma (sigma) Bond is correct?",
-        "de": "Welche Feststellung bezüglich Sigma (Sigma) Bindung ist nach den chemischen Gesetzmäßigkeiten von Einführung in die Kohlenstoffchemie richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Introduction à la Chimie du Carbone, quelle affirmation concernant Lien Sigma (sigma) est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Введение в химию углерода», какое положение относительно «Сигма (сигма) Бонд» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"مقدمة في كيمياء الكربون\"، أي حكم متعلق بـ \"سيجما (سيجما) بوند\" يعتبر صحيحاً؟",
-        "zh": "在高考“碳化学导论”经典考题中，下列有关“西格玛 (Sigma) 债券”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Destpêka Kîmyaya Karbonê\" de, kîjan daraza li ser \"Sigma (sigma) Bond\" rast e?"
+        "tr": "Aşağıda Karbon Kimyasına Giriş ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Introduction to Carbon Chemistry, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Einführung in die Kohlenstoffchemie: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Introduction à la Chimie du Carbone, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Введение в химию углерода», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"مقدمة في كيمياء الكربون\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“碳化学导论”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Destpêka Kîmyaya Karbonê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1831,7 +1831,7 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Elmas elektrîkê pir baş derbas dike û wek grafît nerm e."
         },
         {
-          "tr": "VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3° dir (örn. NH3); molekül polardır.",
+          "tr": "VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3°'dir (örn. NH3); molekül polardır.",
           "en": "VSEPR AX3E: Molecular geometry TRIANGULAR PYRAMID, bond angle is 107.3° (e.g. NH3); The molecule is polar.",
           "de": "VSEPR AX3E: Molekülgeometrie DREIECKIGE PYRAMIDE, Bindungswinkel beträgt 107,3° (z. B. NH3); Das Molekül ist polar.",
           "fr": "VSEPR AX3E : PYRAMIDE TRIANGULAIRE à géométrie moléculaire, l'angle de liaison est de 107,3° (par exemple NH3) ; La molécule est polaire.",
@@ -1863,7 +1863,7 @@ export const unit23: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3° dir (örn. NH3); molekül polardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3°'dir (örn. NH3); molekül polardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"VSEPR AX3E: Molecular geometry TRIANGULAR PYRAMID, bond angle is 107.3° (e.g. NH3); The molecule is polar.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"VSEPR AX3E: Molekülgeometrie DREIECKIGE PYRAMIDE, Bindungswinkel beträgt 107,3° (z. B. NH3); Das Molekül ist polar.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"VSEPR AX3E : PYRAMIDE TRIANGULAIRE à géométrie moléculaire, l'angle de liaison est de 107,3° (par exemple NH3) ; La molécule est polaire.\". Notion fondamentale du programme officiel de chimie.",
@@ -1876,14 +1876,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin14",
       "stem": {
-        "tr": "Aşağıda Karbon Kimyasına Giriş ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre sp3 Hibritleşmesi ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Introduction to Carbon Chemistry, which statement about sp3 Hybridization is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Einführung in die Kohlenstoffchemie: Welche Aussage über sp3-Hybridisierung ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Introduction à la Chimie du Carbone, quelle affirmation relative à Hybridation sp3 est exacte?",
-        "ru": "На основе фундаментальных положений темы «Введение в химию углерода», какое суждение о «sp3 Гибридизация» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"مقدمة في كيمياء الكربون\"، أي عبارة حول \"تهجين sp3\" صحيحة؟",
-        "zh": "基于“碳化学导论”的基础化学知识体系，下列关于“sp3杂交”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Destpêka Kîmyaya Karbonê\", kîjan gotin derbarê \"sp3 Hybridization\" de rast e?"
+        "tr": "Karbon Kimyasına Giriş konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Introduction to Carbon Chemistry, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Einführung in die Kohlenstoffchemie: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Introduction à la Chimie du Carbone, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Введение в химию углерода», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"مقدمة في كيمياء الكربون\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“碳化学导论”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Destpêka Kîmyaya Karbonê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1917,7 +1917,7 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Pêşîn, girêdanek pi di navbera du atoman de tê saz kirin."
         },
         {
-          "tr": "VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5° dir (örn. H2O); molekül polardır.",
+          "tr": "VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5°'dir (örn. H2O); molekül polardır.",
           "en": "VSEPR AX2E2: Molecular geometry BROKEN CORRECT (angular), bond angle is 104.5° (e.g. H2O); The molecule is polar.",
           "de": "VSEPR AX2E2: Molekülgeometrie korrekt gebrochen (eckig), Bindungswinkel beträgt 104,5° (z. B. H2O); Das Molekül ist polar.",
           "fr": "VSEPR AX2E2 : Géométrie moléculaire CASSÉE CORRECT (angulaire), l'angle de liaison est de 104,5° (par exemple H2O) ; La molécule est polaire.",
@@ -1939,7 +1939,7 @@ export const unit23: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5° dir (örn. H2O); molekül polardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5°'dir (örn. H2O); molekül polardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"VSEPR AX2E2: Molecular geometry BROKEN CORRECT (angular), bond angle is 104.5° (e.g. H2O); The molecule is polar.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"VSEPR AX2E2: Molekülgeometrie korrekt gebrochen (eckig), Bindungswinkel beträgt 104,5° (z. B. H2O); Das Molekül ist polar.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"VSEPR AX2E2 : Géométrie moléculaire CASSÉE CORRECT (angulaire), l'angle de liaison est de 104,5° (par exemple H2O) ; La molécule est polaire.\". Notion fondamentale du programme officiel de chimie.",
@@ -1952,14 +1952,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin15",
       "stem": {
-        "tr": "Karbon Kimyasına Giriş konusu kapsamında Düzgün Dörtyüzlü (AX4) ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Introduction to Carbon Chemistry, which of the following findings regarding Regular Tetrahedron (AX4) is scientifically verified?",
-        "de": "Im Rahmen der Einheit Einführung in die Kohlenstoffchemie: Welcher der folgenden Befunde zu Regelmäßiges Tetraeder (AX4) ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Introduction à la Chimie du Carbone, laquelle des constatations suivantes concernant Tétraèdre régulier (AX4) est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Введение в химию углерода», какой из следующих выводов относительно «Правильный тетраэдр (AX4)» научно подтверждён?",
-        "ar": "في سياق موضوع \"مقدمة في كيمياء الكربون\"، أي من النتائج التالية المتعلقة بـ \"رباعي الاسطح العادي (AX4)\" مثبتة علمياً؟",
-        "zh": "在“碳化学导论”主题范畴内，下列关于“正四面体 (AX4)”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Destpêka Kîmyaya Karbonê\" de, kîjan ji van encamên li ser \"Tetrahedron bi rêkûpêk (AX4)\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Karbon Kimyasına Giriş ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Introduction to Carbon Chemistry, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Einführung in die Kohlenstoffchemie: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Introduction à la Chimie du Carbone, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Введение в химию углерода», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"مقدمة في كيمياء الكربون\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“碳化学导论”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Destpêka Kîmyaya Karbonê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2028,14 +2028,14 @@ export const unit23: ChemistryUnitSeedData = {
     {
       "id": "u23-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Karbon Kimyasına Giriş ünitesinde ele alınan Doğrusal Geometri (AX2) hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Introduction to Carbon Chemistry, which statement about Linear Geometry (AX2) is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Einführung in die Kohlenstoffchemie: Welche Aussage über Lineare Geometrie (AX2) ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Introduction à la Chimie du Carbone, quelle affirmation relative à Géométrie linéaire (AX2) est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Введение в химию углерода», какое утверждение о «Линейная геометрия (AX2)» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"مقدمة في كيمياء الكربون\"، أي عبارة حول \"الهندسة الخطية (AX2)\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“碳化学导论”单元中关于“线性几何 (AX2)”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Destpêka Kîmyaya Karbonê\", kîjan gotin li ser \"Geometrîya Rêzik (AX2)\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Karbon Kimyasına Giriş konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Introduction to Carbon Chemistry, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Einführung in die Kohlenstoffchemie die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Introduction à la Chimie du Carbone, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Введение в химию углерода», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"مقدمة في كيمياء الكربون\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“碳化学导论”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Destpêka Kîmyaya Karbonê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -2079,7 +2079,7 @@ export const unit23: ChemistryUnitSeedData = {
           "ku": "Atoma karbonê ya di molekula CH4 de bi hîbrîdîzasyona sp derbas bûye."
         },
         {
-          "tr": "CH4 molekülünde bağ açısı 90° dir.",
+          "tr": "CH4 molekülünde bağ açısı 90°'dir.",
           "en": "The bond angle in the CH4 molecule is 90°.",
           "de": "Der Bindungswinkel im CH4-Molekül beträgt 90°.",
           "fr": "L'angle de liaison dans la molécule CH4 est de 90°.",

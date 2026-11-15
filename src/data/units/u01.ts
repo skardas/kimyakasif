@@ -19,12 +19,12 @@ export const unit01: ChemistryUnitSeedData = {
   "subtitle": {
     "tr": "Simyadan Kimyaya ve Güvenlik",
     "en": "From Alchemy to Chemistry & Safety",
-    "de": "Von der Alchemie zu Chemie und Sicherheit",
-    "fr": "De l'alchimie à la chimie et à la sécurité",
-    "ru": "От алхимии к химии и безопасности",
-    "ar": "من الكيمياء إلى الكيمياء والأمن",
-    "zh": "从炼金术到化学和安全",
-    "ku": "Ji Alkîmiyê bigire heya Kîmya û Ewlekariyê"
+    "de": "Von der Alchemie zur Chemie und Laborsicherheit",
+    "fr": "De l'alchimie à la chimie et sécurité au laboratoire",
+    "ru": "От алхимии к химии и лабораторной безопасности",
+    "ar": "من الخيمياء إلى الكيمياء والسلامة المختبرية",
+    "zh": "从炼金术到化学与实验室安全",
+    "ku": "Ji Simyayê ber bi Kîmyayê û Ewlehiya Laboratûwarê"
   },
   "facts": [
     {
@@ -41,13 +41,13 @@ export const unit01: ChemistryUnitSeedData = {
       },
       "trap": {
         "tr": "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.",
-        "en": "Alchemists proved the conservation of mass by using the scale precisely.",
-        "de": "Alchemisten bewiesen die Massenerhaltung durch die genaue Verwendung der Skala.",
-        "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément l'échelle.",
-        "ru": "Алхимики доказали сохранение массы, точно используя шкалу.",
-        "ar": "أثبت الكيميائيون حفظ الكتلة باستخدام المقياس الدقيق.",
-        "zh": "炼金术士通过精确地使用尺度证明了质量守恒。",
-        "ku": "Alkîmîstan parastina girseyê bi karanîna pîvanê rast îspat kirin."
+        "en": "Alchemists proved the conservation of mass by using the analytical balance precisely.",
+        "de": "Alchemisten bewiesen die Massenerhaltung durch die präzise Verwendung der Analysenwaage.",
+        "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément la balance analytique.",
+        "ru": "Алхимики доказали сохранение массы, точно используя аналитические весы.",
+        "ar": "أثبت الخيميائيون حفظ الكتلة باستخدام الميزان التحليلي الدقيق.",
+        "zh": "炼金术士通过精确使用精密天平证明了质量守恒。",
+        "ku": "Alkîmîstan parastina girseyê bi karanîna terezûya hesas îspat kirin."
       },
       "osymTip": {
         "tr": "Simya teorik temellere ve sistematik deneylere dayanmaz.",
@@ -64,69 +64,69 @@ export const unit01: ChemistryUnitSeedData = {
       "id": "u01-f02",
       "fact": {
         "tr": "Zaç yağı H2SO4 (sülfürik asit), Tuz ruhu HCl (hidroklorik asit) geleneksel adıdır.",
-        "en": "Zac oil is H2SO4 (sulfuric acid), the traditional name of salt spirit is HCl (hydrochloric acid).",
-        "de": "Zac-Öl ist H2SO4 (Schwefelsäure), der traditionelle Name von Salzbenzin ist HCl (Salzsäure).",
-        "fr": "L'huile de Zac est H2SO4 (acide sulfurique), le nom traditionnel de l'esprit de sel est HCl (acide chlorhydrique).",
-        "ru": "Зак-масло – H2SO4 (серная кислота), традиционное название соляного спирта – HCl (соляная кислота).",
-        "ar": "زيت الزاك هو H2SO4 (حمض الكبريتيك)، والاسم التقليدي لروح الملح هو حمض الهيدروكلوريك (حمض الهيدروكلوريك).",
-        "zh": "扎克油是H2SO4（硫酸），盐精的传统名称是HCl（盐酸）。",
-        "ku": "Rûnê Zac H2SO4 (asîda sulfurîk) e, navê kevneşopî ya ruhê xwê HCl (asîda hîdrochloric) e."
+        "en": "Oil of vitriol is H2SO4 (sulfuric acid); spirit of salt (muriatic acid) is the traditional name for HCl (hydrochloric acid).",
+        "de": "Vitriolöl ist H2SO4 (Schwefelsäure), der traditionelle Name von Salzsäure (Salzgeist) ist HCl (Salzsäure).",
+        "fr": "L'huile de vitriol est H2SO4 (acide sulfurique) ; l'esprit de sel est le nom traditionnel de HCl (acide chlorhydrique).",
+        "ru": "Купоросное масло — это H2SO4 (серная кислота), а соляной спирт — традиционное название HCl (соляной кислоты).",
+        "ar": "زيت الزاج هو H2SO4 (حمض الكبريتيك)، والاسم التقليدي لروح الملح هو HCl (حمض الهيدروكلوريك).",
+        "zh": "矾油是H2SO4（硫酸）的传统名称，盐精是HCl（盐酸）的传统名称。",
+        "ku": "Rûnê zaçê H2SO4 (asîda sulfurîk) e, navê kevneşopî yê ruhê xwê HCl (asîda hîdroclorîk) e."
       },
       "trap": {
         "tr": "Zaç yağı HNO3 formülüne sahiptir.",
-        "en": "Zac oil has the formula HNO3.",
-        "de": "Zac-Öl hat die Formel HNO3.",
-        "fr": "L'huile Zac a la formule HNO3.",
-        "ru": "Масло Зака ​​имеет формулу HNO3.",
-        "ar": "يحتوي زيت زاك على الصيغة HNO3.",
-        "zh": "Zac 油的化学式为 HNO3。",
-        "ku": "Rûnê Zac bi formula HNO3 heye."
+        "en": "Oil of vitriol has the chemical formula HNO3.",
+        "de": "Vitriolöl besitzt die chemische Formel HNO3.",
+        "fr": "L'huile de vitriol a pour formule chimique HNO3.",
+        "ru": "Купоросное масло имеет формулу HNO3.",
+        "ar": "زيت الزاج له الصيغة الكيميائية HNO3.",
+        "zh": "矾油的化学式为 HNO3。",
+        "ku": "Rûnê zaçê xwedî formula HNO3 ye."
       },
       "osymTip": {
-        "tr": "HNO3 kezzaptır, zaç yağı H2SO4 tür.",
-        "en": "HNO3 is vitriol, vitriol is H2SO4.",
-        "de": "HNO3 ist Vitriol, Vitriol ist H2SO4.",
-        "fr": "HNO3 est du vitriol, le vitriol est H2SO4.",
-        "ru": "HNO3 – это купорос, купорос – это H2SO4.",
-        "ar": "HNO3 هو الزاج، الزاج هو H2SO4.",
-        "zh": "HNO3 是硫酸，硫酸是 H2SO4。",
-        "ku": "HNO3 vîtriol e, vîtriol H2SO4 e."
+        "tr": "HNO3 kezzaptır, zaç yağı H2SO4'tür.",
+        "en": "HNO3 is aqua fortis (nitric acid), whereas oil of vitriol is H2SO4 (sulfuric acid).",
+        "de": "HNO3 ist Scheidewasser (Salpetersäure), während Vitriolöl H2SO4 (Schwefelsäure) ist.",
+        "fr": "HNO3 est l'eau-forte (acide nitrique), tandis que l'huile de vitriol est H2SO4 (acide sulfurique).",
+        "ru": "HNO3 — это крепкая водка (азотная кислота), тогда как купоросное масло — это H2SO4 (серная кислота).",
+        "ar": "HNO3 هو ماء الفضة (حمض النيتريك)، بينما زيت الزاج هو H2SO4 (حمض الكبريتيك).",
+        "zh": "HNO3是浓硝酸（硝镪水），而矾油才是H2SO4（硫酸）。",
+        "ku": "HNO3 kezzap (asîda nîtrîk) e, lê rûnê zaçê H2SO4 (asîda sulfurîk) e."
       }
     },
     {
       "id": "u01-f03",
       "fact": {
         "tr": "Cabir bin Hayyan damıtma imbiğini (alembic) geliştirerek nitrik asit ve kral suyunu elde etmiştir.",
-        "en": "Cabir bin Hayyan developed the alembic and obtained nitric acid and aqua regia.",
-        "de": "Cabir bin Hayyan entwickelte den Destillierkolben und gewann Salpetersäure und Königswasser.",
-        "fr": "Cabir bin Hayyan a développé l'alambic et obtenu de l'acide nitrique et de l'eau régale.",
-        "ru": "Кабир бин Хайян разработал перегонный куб и получил азотную кислоту и царскую водку.",
-        "ar": "قام كابير بن حيان بتطوير الإنبيك وحصل على حمض النيتريك والماء الملكي.",
-        "zh": "Cabir bin Hayyan 开发了蒸馏器并获得了硝酸和王水。",
-        "ku": "Cabir bin Hayyan alembic pêşxist û asîda nîtrîk û aqua regia wergirt."
+        "en": "Jabir ibn Hayyan developed the alembic and synthesized nitric acid and aqua regia.",
+        "de": "Dschābir ibn Hayyān entwickelte den Alambic (Destillierkolben) und stellte Salpetersäure sowie Königswasser her.",
+        "fr": "Jabir ibn Hayyan a perfectionné l'alambic et obtenu l'acide nitrique et l'eau régale.",
+        "ru": "Джабир ибн Хайян усовершенствовал перегонный куб (аламбик) и получил азотную кислоту и царскую водку.",
+        "ar": "قام جابر بن حيان بتطوير الإنبيق وحصل على حمض النيتريك والماء الملكي.",
+        "zh": "贾比尔·伊本·哈扬改进了蒸馏器（alembic）并制得了硝酸和王水。",
+        "ku": "Cabir bin Heyyan alambîk pêş xist û asîda nîtrîk û ava şahî bi dest xist."
       },
       "trap": {
         "tr": "Kral suyunu Aristo dört element kuramıyla açıklamıştır.",
-        "en": "Aristotle explained royal water with the theory of four elements.",
-        "de": "Aristoteles erklärte das königliche Wasser mit der Theorie der vier Elemente.",
-        "fr": "Aristote a expliqué l'eau royale avec la théorie des quatre éléments.",
-        "ru": "Аристотель объяснял царскую воду теорией четырех элементов.",
-        "ar": "وقد فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
-        "zh": "亚里士多德用四元素理论解释了王水。",
-        "ku": "Arîstoteles ava şahî bi teoriya çar hêmanan rave kir."
+        "en": "Aristotle explained aqua regia using the four elements theory.",
+        "de": "Aristoteles erklärte Königswasser mit der Vier-Elemente-Lehre.",
+        "fr": "Aristote a expliqué l'eau régale par la théorie des quatre éléments.",
+        "ru": "Аристотель объяснил царскую водку теорией четырех элементов.",
+        "ar": "فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
+        "zh": "亚里士多德用四元素学说解释了王水。",
+        "ku": "Arîsto ava şahî bi teoriya çar hêmanan rave kir."
       }
     },
     {
       "id": "u01-f04",
       "fact": {
         "tr": "Ebu Bekir er-Razi kostik soda ve karınca asidini (formik asit) ilk kez elde etmiştir.",
-        "en": "Abu Bakr al-Razi obtained caustic soda and ant acid (formic acid) for the first time.",
-        "de": "Abu Bakr al-Razi erhielt erstmals Natronlauge und Ameisensäure (Ameisensäure).",
-        "fr": "Abu Bakr al-Razi a obtenu pour la première fois de la soude caustique et de l'acide de fourmi (acide formique).",
-        "ru": "Абу Бакр ар-Рази впервые получил каустическую соду и муравьиную кислоту (муравьиную кислоту).",
-        "ar": "حصل أبو بكر الرازي على الصودا الكاوية وحمض النمل (حمض الفورميك) لأول مرة.",
-        "zh": "阿布·巴克尔·拉齐首次获得烧碱和蚁酸（甲酸）。",
-        "ku": "Ebûbekir el-Razî cara ewil soda caustic û asîda antîkê (asîda formîk) bi dest xist."
+        "en": "Abu Bakr al-Razi synthesized caustic soda and formic acid (methanoic acid) for the first time.",
+        "de": "Abu Bakr ar-Razi stellte erstmals Ätznatron und Ameisensäure (Methansäure) her.",
+        "fr": "Abu Bakr al-Razi a obtenu pour la première fois la soude caustique et l'acide formique (acide méthanoïque).",
+        "ru": "Абу Бакр ар-Рази впервые получил едкий натр и муравьиную кислоту (метановую кислоту).",
+        "ar": "حصل أبو بكر الرازي على الصودا الكاوية وحمض الفورميك (حمض النمليك) لأول مرة.",
+        "zh": "阿布·伯克尔·拉齐首次制得了烧碱和甲酸（蚁酸）。",
+        "ku": "Ebû Bekir el-Razî bo cara yekem soda kaustîk û asîda formîk bi dest xist."
       },
       "trap": {
         "tr": "Formik asit Robert Boyle tarafından element olarak tanımlanmıştır.",
@@ -553,9 +553,9 @@ export const unit01: ChemistryUnitSeedData = {
       "id": "u01-c05",
       "conceptA": {
         "tr": "Erlenmayer",
-        "en": "Erlenmeyer flask",
+        "en": "Erlenmayer",
         "de": "Erlenmayer",
-        "fr": "Erlenmeyer",
+        "fr": "Erlenmayer",
         "ru": "Эрленмайер",
         "ar": "إرلينماير",
         "zh": "埃伦梅尔",
@@ -586,33 +586,33 @@ export const unit01: ChemistryUnitSeedData = {
       "id": "u01-c06",
       "conceptA": {
         "tr": "Zaç Yağı (H2SO4)",
-        "en": "Zac Oil (H2SO4)",
-        "de": "Zac-Öl (H2SO4)",
-        "fr": "Huile Zac (H2SO4)",
-        "ru": "Зак Масло (H2SO4)",
-        "ar": "زيت زاك (H2SO4)",
-        "zh": "扎克油 (H2SO4)",
-        "ku": "Rûnê Zac (H2SO4)"
+        "en": "Oil of Vitriol (H2SO4)",
+        "de": "Vitriolöl (H2SO4)",
+        "fr": "Huile de vitriol (H2SO4)",
+        "ru": "Купоросное масло (H2SO4)",
+        "ar": "زيت الزاج (H2SO4)",
+        "zh": "矾油 (H2SO4)",
+        "ku": "Rûnê zaçê (H2SO4)"
       },
       "conceptB": {
         "tr": "Kezzap (HNO3)",
-        "en": "Nitric acid (HNO3)",
-        "de": "Salpetersäure (HNO3)",
-        "fr": "Acide nitrique (HNO3)",
-        "ru": "Азотная кислота (HNO3)",
-        "ar": "حمض النيتريك (HNO3)",
-        "zh": "硝酸 (HNO3)",
-        "ku": "Asîda nîtrîk (HNO3)"
+        "en": "Aqua fortis (HNO3)",
+        "de": "Scheidewasser (HNO3)",
+        "fr": "Eau-forte (HNO3)",
+        "ru": "Крепкая водка (HNO3)",
+        "ar": "ماء الفضة (HNO3)",
+        "zh": "硝镪水 (HNO3)",
+        "ku": "Kezzap (HNO3)"
       },
       "distinction": {
         "tr": "Zaç yağı sülfürik asit olup akü asidi olarak bilinir; kezzap ise nitrik asit olup gübre ve patlayıcı üretiminde kullanılır.",
-        "en": "Zac oil is sulfuric acid and is known as battery acid; Nitric acid is used in the production of fertilizer and explosives.",
-        "de": "Zac-Öl ist Schwefelsäure und wird als Batteriesäure bezeichnet; Salpetersäure wird zur Herstellung von Düngemitteln und Sprengstoffen verwendet.",
-        "fr": "L'huile Zac est de l'acide sulfurique et est connue sous le nom d'acide de batterie ; L'acide nitrique est utilisé dans la production d'engrais et d'explosifs.",
-        "ru": "Зак-масло представляет собой серную кислоту и известно как аккумуляторная кислота; Азотная кислота используется в производстве удобрений и взрывчатых веществ.",
-        "ar": "زيت الزاك هو حمض الكبريتيك ويعرف بحمض البطارية؛ حمض النيتريك يستخدم في إنتاج الأسمدة والمتفجرات.",
-        "zh": "Zac油是硫酸，被称为电池酸；硝酸用于生产化肥和炸药。",
-        "ku": "Rûnê Zac asîda sulfurîk e û wekî asîda pîlê tê zanîn; Asîda nîtrîk di hilberîna gubre û teqemeniyan de tê bikaranîn."
+        "en": "Oil of vitriol is sulfuric acid and is known as battery acid; aqua fortis (kezzap) is nitric acid and is used in fertilizer and explosives production.",
+        "de": "Vitriolöl ist Schwefelsäure (Batteriesäure); Scheidewasser (Kezzap) ist Salpetersäure und dient der Düngemittel- und Sprengstoffherstellung.",
+        "fr": "L'huile de vitriol est de l'acide sulfurique (acide de batterie) ; l'eau-forte (kezzap) est de l'acide nitrique utilisé pour les engrais et explosifs.",
+        "ru": "Купоросное масло — это серная кислота (аккумуляторная кислота); азотная кислота (крепкая водка) используется в производстве удобрений и взрывчатых веществ.",
+        "ar": "زيت الزاج هو حمض الكبريتيك ويعرف بماء البطارية؛ أما ماء الفضة (النيتريك) فيستخدم في صناعة الأسمدة والمتفجرات.",
+        "zh": "矾油是硫酸（蓄电池酸）；硝镪水（硝酸）则用于生产化肥和炸药。",
+        "ku": "Rûnê zaçê asîda sulfurîk e û wekî asîda pîlê tê zanîn; kezzap asîda nîtrîk e û di hilberîna gubre û teqemeniyan de tê bikaranîn."
       }
     },
     {
@@ -996,32 +996,32 @@ export const unit01: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Zaç yağı: H2SO4",
-          "en": "Zac oil: H2SO4",
-          "de": "Zac-Öl: H2SO4",
-          "fr": "Huile Zac : H2SO4",
-          "ru": "Зак масло: H2SO4",
-          "ar": "زيت زاك: H2SO4",
-          "zh": "扎克油：H2SO4",
-          "ku": "Rûnê Zac: H2SO4"
+          "en": "Oil of vitriol: H2SO4",
+          "de": "Vitriolöl: H2SO4",
+          "fr": "Huile de vitriol : H2SO4",
+          "ru": "Купоросное масло: H2SO4",
+          "ar": "زيت الزاج: H2SO4",
+          "zh": "矾油: H2SO4",
+          "ku": "Rûnê zaçê: H2SO4"
         },
         {
           "tr": "Kezzap: HNO3",
-          "en": "Kezzap: HNO3",
-          "de": "Kezzap: HNO3",
-          "fr": "Kezzap : HNO3",
-          "ru": "Кеззап: HNO3",
-          "ar": "كيزاب: HNO3",
-          "zh": "凯扎普：HNO3",
+          "en": "Aqua fortis: HNO3",
+          "de": "Scheidewasser: HNO3",
+          "fr": "Eau-forte : HNO3",
+          "ru": "Крепкая водка: HNO3",
+          "ar": "ماء الفضة: HNO3",
+          "zh": "硝镪水: HNO3",
           "ku": "Kezzap: HNO3"
         },
         {
           "tr": "Tuz ruhu: HCl",
-          "en": "Salt spirit: HCl",
-          "de": "Salzbenzin: HCl",
-          "fr": "Essence de sel : HCl",
-          "ru": "Спиртовая соль: HCl",
-          "ar": "روح الملح: حمض الهيدروكلوريك",
-          "zh": "盐精：HCl",
+          "en": "Spirit of salt: HCl",
+          "de": "Salzsäure (Salzgeist): HCl",
+          "fr": "Esprit de sel : HCl",
+          "ru": "Соляной спирт: HCl",
+          "ar": "روح الملح: HCl",
+          "zh": "盐精: HCl",
           "ku": "Ruhê xwê: HCl"
         },
         {
@@ -1047,7 +1047,7 @@ export const unit01: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Sönmüş kireç Ca(OH)2 dir. CaO ise sönmemiş kireçtir.",
+        "tr": "Sönmüş kireç Ca(OH)2'dir. CaO ise sönmemiş kireçtir.",
         "en": "Slaked lime is Ca(OH)2. CaO is quicklime.",
         "de": "Gelöschter Kalk ist Ca(OH)2. CaO ist Branntkalk.",
         "fr": "La chaux éteinte est Ca(OH)2. CaO est de la chaux vive.",
@@ -1060,14 +1060,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya Bilimi konusunu işlerken Nitel Analiz üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Chemistry as a Science, which statement regarding Qualitative Analysis represents the correct answer?",
-        "de": "Welche Aussage zu Qualitative Analyse stellt im Kontext von Chemiewissenschaft die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Science Chimique, quelle proposition sur Analyse qualitative constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Химия как наука», какой ответ относительно «Качественный анализ» является правильным?",
-        "ar": "أثناء دراسة موضوع \"علم الكيمياء\" مخبرياً، أي إجابة بخصوص \"التحليل النوعي\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学科学”实验探究与教学分析中，针对“定性分析”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Zanista Kîmyayê\" de, kîjan bersiv derbarê \"Analysis Qualitative\" de rast e?"
+        "tr": "Kimya dersinde Kimya Bilimi ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Chemistry as a Science, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Chemiewissenschaft: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Science Chimique, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Химия как наука», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"علم الكيمياء\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学科学”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Zanista Kîmyayê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1092,13 +1092,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Cabir bin Hayyan damıtma imbiğini (alembic) geliştirerek nitrik asit ve kral suyunu elde etmiştir.",
-          "en": "Cabir bin Hayyan developed the alembic and obtained nitric acid and aqua regia.",
-          "de": "Cabir bin Hayyan entwickelte den Destillierkolben und gewann Salpetersäure und Königswasser.",
-          "fr": "Cabir bin Hayyan a développé l'alambic et obtenu de l'acide nitrique et de l'eau régale.",
-          "ru": "Кабир бин Хайян разработал перегонный куб и получил азотную кислоту и царскую водку.",
-          "ar": "قام كابير بن حيان بتطوير الإنبيك وحصل على حمض النيتريك والماء الملكي.",
-          "zh": "Cabir bin Hayyan 开发了蒸馏器并获得了硝酸和王水。",
-          "ku": "Cabir bin Hayyan alembic pêşxist û asîda nîtrîk û aqua regia wergirt."
+          "en": "Jabir ibn Hayyan developed the alembic and synthesized nitric acid and aqua regia.",
+          "de": "Dschābir ibn Hayyān entwickelte den Alambic (Destillierkolben) und stellte Salpetersäure sowie Königswasser her.",
+          "fr": "Jabir ibn Hayyan a perfectionné l'alambic et obtenu l'acide nitrique et l'eau régale.",
+          "ru": "Джабир ибн Хайян усовершенствовал перегонный куб (аламбик) и получил азотную кислоту и царскую водку.",
+          "ar": "قام جابر بن حيان بتطوير الإنبيق وحصل على حمض النيتريك والماء الملكي.",
+          "zh": "贾比尔·伊本·哈扬改进了蒸馏器（alembic）并制得了硝酸和王水。",
+          "ku": "Cabir bin Heyyan alambîk pêş xist û asîda nîtrîk û ava şahî bi dest xist."
         },
         {
           "tr": "Ünlem piktogramı patlayıcı maddeleri temsil eder.",
@@ -1124,26 +1124,26 @@ export const unit01: ChemistryUnitSeedData = {
       "correctIndex": 2,
       "explanation": {
         "tr": "Doğru cevap \"Cabir bin Hayyan damıtma imbiğini (alembic) geliştirerek nitrik asit ve kral suyunu elde etmiştir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Cabir bin Hayyan developed the alembic and obtained nitric acid and aqua regia.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Cabir bin Hayyan entwickelte den Destillierkolben und gewann Salpetersäure und Königswasser.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Cabir bin Hayyan a développé l'alambic et obtenu de l'acide nitrique et de l'eau régale.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Кабир бин Хайян разработал перегонный куб и получил азотную кислоту и царскую водку.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"قام كابير بن حيان بتطوير الإنبيك وحصل على حمض النيتريك والماء الملكي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“Cabir bin Hayyan 开发了蒸馏器并获得了硝酸和王水。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Cabir bin Hayyan alembic pêşxist û asîda nîtrîk û aqua regia wergirt.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Jabir ibn Hayyan developed the alembic and synthesized nitric acid and aqua regia.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Dschābir ibn Hayyān entwickelte den Alambic (Destillierkolben) und stellte Salpetersäure sowie Königswasser her.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Jabir ibn Hayyan a perfectionné l'alambic et obtenu l'acide nitrique et l'eau régale.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Джабир ибн Хайян усовершенствовал перегонный куб (аламбик) и получил азотную кислоту и царскую водку.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"قام جابر بن حيان بتطوير الإنبيق وحصل على حمض النيتريك والماء الملكي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“贾比尔·伊本·哈扬改进了蒸馏器（alembic）并制得了硝酸和王水。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Cabir bin Heyyan alambîk pêş xist û asîda nîtrîk û ava şahî bi dest xist.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
       "id": "u01-twin04",
       "stem": {
-        "tr": "Kimya dersinde Kimya Bilimi ünitesi incelenirken Büret ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Chemistry as a Science, which of the following propositions concerning burette is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Chemiewissenschaft: Welche Behauptung bezüglich Bürette entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Science Chimique, laquelle des affirmations suivantes concernant burette est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Химия как наука», какое из следующих суждений о «бюретка» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"علم الكيمياء\"، أي من الأحكام التالية المتعلقة بـ \"السحاحة\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学科学”核心规律时，下列关于“滴定管”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Zanista Kîmyayê\" tê kirin, kîjan daraza li ser \"burette\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimya Bilimi konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Chemistry as a Science?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Chemiewissenschaft zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Science Chimique ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Химия как наука»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"علم الكيمياء\"؟",
+        "zh": "根据“化学科学”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Zanista Kîmyayê\" de rast e?"
       },
       "options": [
         {
@@ -1178,13 +1178,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Ebu Bekir er-Razi kostik soda ve karınca asidini (formik asit) ilk kez elde etmiştir.",
-          "en": "Abu Bakr al-Razi obtained caustic soda and ant acid (formic acid) for the first time.",
-          "de": "Abu Bakr al-Razi erhielt erstmals Natronlauge und Ameisensäure (Ameisensäure).",
-          "fr": "Abu Bakr al-Razi a obtenu pour la première fois de la soude caustique et de l'acide de fourmi (acide formique).",
-          "ru": "Абу Бакр ар-Рази впервые получил каустическую соду и муравьиную кислоту (муравьиную кислоту).",
-          "ar": "حصل أبو بكر الرازي على الصودا الكاوية وحمض النمل (حمض الفورميك) لأول مرة.",
-          "zh": "阿布·巴克尔·拉齐首次获得烧碱和蚁酸（甲酸）。",
-          "ku": "Ebûbekir el-Razî cara ewil soda caustic û asîda antîkê (asîda formîk) bi dest xist."
+          "en": "Abu Bakr al-Razi synthesized caustic soda and formic acid (methanoic acid) for the first time.",
+          "de": "Abu Bakr ar-Razi stellte erstmals Ätznatron und Ameisensäure (Methansäure) her.",
+          "fr": "Abu Bakr al-Razi a obtenu pour la première fois la soude caustique et l'acide formique (acide méthanoïque).",
+          "ru": "Абу Бакр ар-Рази впервые получил едкий натр и муравьиную кислоту (метановую кислоту).",
+          "ar": "حصل أبو بكر الرازي على الصودا الكاوية وحمض الفورميك (حمض النمليك) لأول مرة.",
+          "zh": "阿布·伯克尔·拉齐首次制得了烧碱和甲酸（蚁酸）。",
+          "ku": "Ebû Bekir el-Razî bo cara yekem soda kaustîk û asîda formîk bi dest xist."
         },
         {
           "tr": "Organik çözücülerin saflığı koklanarak tayin edilebilir.",
@@ -1200,26 +1200,26 @@ export const unit01: ChemistryUnitSeedData = {
       "correctIndex": 3,
       "explanation": {
         "tr": "Doğru cevap \"Ebu Bekir er-Razi kostik soda ve karınca asidini (formik asit) ilk kez elde etmiştir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Abu Bakr al-Razi obtained caustic soda and ant acid (formic acid) for the first time.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Abu Bakr al-Razi erhielt erstmals Natronlauge und Ameisensäure (Ameisensäure).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Abu Bakr al-Razi a obtenu pour la première fois de la soude caustique et de l'acide de fourmi (acide formique).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Абу Бакр ар-Рази впервые получил каустическую соду и муравьиную кислоту (муравьиную кислоту).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"حصل أبو بكر الرازي على الصودا الكاوية وحمض النمل (حمض الفورميك) لأول مرة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“阿布·巴克尔·拉齐首次获得烧碱和蚁酸（甲酸）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ebûbekir el-Razî cara ewil soda caustic û asîda antîkê (asîda formîk) bi dest xist.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Abu Bakr al-Razi synthesized caustic soda and formic acid (methanoic acid) for the first time.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Abu Bakr ar-Razi stellte erstmals Ätznatron und Ameisensäure (Methansäure) her.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Abu Bakr al-Razi a obtenu pour la première fois la soude caustique et l'acide formique (acide méthanoïque).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Абу Бакр ар-Рази впервые получил едкий натр и муравьиную кислоту (метановую кислоту).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"حصل أبو بكر الرازي على الصودا الكاوية وحمض الفورميك (حمض النمليك) لأول مرة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“阿布·伯克尔·拉齐首次制得了烧碱和甲酸（蚁酸）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Ebû Bekir el-Razî bo cara yekem soda kaustîk û asîda formîk bi dest xist.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
       "id": "u01-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimya Bilimi konusundaki temel kimyasal kurallar çerçevesinde Erlenmayer kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Erlenmayer within the fundamental principles of Chemistry as a Science?",
-        "de": "Welche Aussage beschreibt das Konzept Erlenmayer im Rahmen von Chemiewissenschaft am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Erlenmayer selon les lois de Science Chimique?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Эрленмайер» в рамках темы «Химия как наука»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"إرلينماير\" ضمن قواعد \"علم الكيمياء\"؟",
-        "zh": "根据“化学科学”的基本化学原理，下列哪项阐述能最准确地界定“埃伦梅尔”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Erlenmayer\" di çarçoveya prensîbên \"Zanista Kîmyayê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimya Bilimi sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Chemistry as a Science, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Chemiewissenschaft: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Science Chimique, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Химия как наука», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"علم الكيمياء\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学科学”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Zanista Kîmyayê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1254,13 +1254,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.",
-          "en": "Alchemists proved the conservation of mass by using the scale precisely.",
-          "de": "Alchemisten bewiesen die Massenerhaltung durch die genaue Verwendung der Skala.",
-          "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément l'échelle.",
-          "ru": "Алхимики доказали сохранение массы, точно используя шкалу.",
-          "ar": "أثبت الكيميائيون حفظ الكتلة باستخدام المقياس الدقيق.",
-          "zh": "炼金术士通过精确地使用尺度证明了质量守恒。",
-          "ku": "Alkîmîstan parastina girseyê bi karanîna pîvanê rast îspat kirin."
+          "en": "Alchemists proved the conservation of mass by using the analytical balance precisely.",
+          "de": "Alchemisten bewiesen die Massenerhaltung durch die präzise Verwendung der Analysenwaage.",
+          "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément la balance analytique.",
+          "ru": "Алхимики доказали сохранение массы, точно используя аналитические весы.",
+          "ar": "أثبت الخيميائيون حفظ الكتلة باستخدام الميزان التحليلي الدقيق.",
+          "zh": "炼金术士通过精确使用精密天平证明了质量守恒。",
+          "ku": "Alkîmîstan parastina girseyê bi karanîna terezûya hesas îspat kirin."
         },
         {
           "tr": "Büret, titrasyon deneylerinde hassas sıvı hacmi ölçümü ve kontrollü damlatma için kullanılır.",
@@ -1288,14 +1288,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimya Bilimi sorularında karşılaşılan Zaç Yağı (H2SO4) konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Chemistry as a Science, which assertion regarding Zac Oil (H2SO4) is correct?",
-        "de": "Welche Feststellung bezüglich Zac-Öl (H2SO4) ist nach den chemischen Gesetzmäßigkeiten von Chemiewissenschaft richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Science Chimique, quelle affirmation concernant Huile Zac (H2SO4) est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Химия как наука», какое положение относительно «Зак Масло (H2SO4)» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"علم الكيمياء\"، أي حكم متعلق بـ \"زيت زاك (H2SO4)\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学科学”经典考题中，下列有关“扎克油 (H2SO4)”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Zanista Kîmyayê\" de, kîjan daraza li ser \"Rûnê Zac (H2SO4)\" rast e?"
+        "tr": "Aşağıda Kimya Bilimi ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Chemistry as a Science, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Chemiewissenschaft: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Science Chimique, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Химия как наука», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"علم الكيمياء\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学科学”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Zanista Kîmyayê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1340,13 +1340,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Zaç yağı HNO3 formülüne sahiptir.",
-          "en": "Zac oil has the formula HNO3.",
-          "de": "Zac-Öl hat die Formel HNO3.",
-          "fr": "L'huile Zac a la formule HNO3.",
-          "ru": "Масло Зака ​​имеет формулу HNO3.",
-          "ar": "يحتوي زيت زاك على الصيغة HNO3.",
-          "zh": "Zac 油的化学式为 HNO3。",
-          "ku": "Rûnê Zac bi formula HNO3 heye."
+          "en": "Oil of vitriol has the chemical formula HNO3.",
+          "de": "Vitriolöl besitzt die chemische Formel HNO3.",
+          "fr": "L'huile de vitriol a pour formule chimique HNO3.",
+          "ru": "Купоросное масло имеет формулу HNO3.",
+          "ar": "زيت الزاج له الصيغة الكيميائية HNO3.",
+          "zh": "矾油的化学式为 HNO3。",
+          "ku": "Rûnê zaçê xwedî formula HNO3 ye."
         }
       ],
       "correctIndex": 0,
@@ -1364,14 +1364,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin07",
       "stem": {
-        "tr": "Aşağıda Kimya Bilimi ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Fiziksel Değişim ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Chemistry as a Science, which statement about Physical Change is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Chemiewissenschaft: Welche Aussage über Körperliche Veränderung ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Science Chimique, quelle affirmation relative à Changement physique est exacte?",
-        "ru": "На основе фундаментальных положений темы «Химия как наука», какое суждение о «Физические изменения» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"علم الكيمياء\"، أي عبارة حول \"التغيير الجسدي\" صحيحة؟",
-        "zh": "基于“化学科学”的基础化学知识体系，下列关于“物理变化”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Zanista Kîmyayê\", kîjan gotin derbarê \"Guhertina Fîzîkî\" de rast e?"
+        "tr": "Kimya Bilimi konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Chemistry as a Science, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Chemiewissenschaft: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Science Chimique, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Химия как наука», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"علم الكيمياء\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学科学”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Zanista Kîmyayê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1416,13 +1416,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Kral suyunu Aristo dört element kuramıyla açıklamıştır.",
-          "en": "Aristotle explained royal water with the theory of four elements.",
-          "de": "Aristoteles erklärte das königliche Wasser mit der Theorie der vier Elemente.",
-          "fr": "Aristote a expliqué l'eau royale avec la théorie des quatre éléments.",
-          "ru": "Аристотель объяснял царскую воду теорией четырех элементов.",
-          "ar": "وقد فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
-          "zh": "亚里士多德用四元素理论解释了王水。",
-          "ku": "Arîstoteles ava şahî bi teoriya çar hêmanan rave kir."
+          "en": "Aristotle explained aqua regia using the four elements theory.",
+          "de": "Aristoteles erklärte Königswasser mit der Vier-Elemente-Lehre.",
+          "fr": "Aristote a expliqué l'eau régale par la théorie des quatre éléments.",
+          "ru": "Аристотель объяснил царскую водку теорией четырех элементов.",
+          "ar": "فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
+          "zh": "亚里士多德用四元素学说解释了王水。",
+          "ku": "Arîsto ava şahî bi teoriya çar hêmanan rave kir."
         }
       ],
       "correctIndex": 1,
@@ -1440,14 +1440,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin08",
       "stem": {
-        "tr": "Kimya Bilimi konusu kapsamında Toksik Madde ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Chemistry as a Science, which of the following findings regarding Toxic Substance is scientifically verified?",
-        "de": "Im Rahmen der Einheit Chemiewissenschaft: Welcher der folgenden Befunde zu Giftiger Stoff ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Science Chimique, laquelle des constatations suivantes concernant Substance toxique est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Химия как наука», какой из следующих выводов относительно «Токсическое вещество» научно подтверждён?",
-        "ar": "في سياق موضوع \"علم الكيمياء\"، أي من النتائج التالية المتعلقة بـ \"مادة سامة\" مثبتة علمياً؟",
-        "zh": "在“化学科学”主题范畴内，下列关于“有毒物质”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Zanista Kîmyayê\" de, kîjan ji van encamên li ser \"Madeya Toksîk\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimya Bilimi ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Chemistry as a Science, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Chemiewissenschaft: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Science Chimique, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Химия как наука», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"علم الكيمياء\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学科学”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Zanista Kîmyayê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1482,13 +1482,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.",
-          "en": "Alchemists proved the conservation of mass by using the scale precisely.",
-          "de": "Alchemisten bewiesen die Massenerhaltung durch die genaue Verwendung der Skala.",
-          "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément l'échelle.",
-          "ru": "Алхимики доказали сохранение массы, точно используя шкалу.",
-          "ar": "أثبت الكيميائيون حفظ الكتلة باستخدام المقياس الدقيق.",
-          "zh": "炼金术士通过精确地使用尺度证明了质量守恒。",
-          "ku": "Alkîmîstan parastina girseyê bi karanîna pîvanê rast îspat kirin."
+          "en": "Alchemists proved the conservation of mass by using the analytical balance precisely.",
+          "de": "Alchemisten bewiesen die Massenerhaltung durch die präzise Verwendung der Analysenwaage.",
+          "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément la balance analytique.",
+          "ru": "Алхимики доказали сохранение массы, точно используя аналитические весы.",
+          "ar": "أثبت الخيميائيون حفظ الكتلة باستخدام الميزان التحليلي الدقيق.",
+          "zh": "炼金术士通过精确使用精密天平证明了质量守恒。",
+          "ku": "Alkîmîstan parastina girseyê bi karanîna terezûya hesas îspat kirin."
         },
         {
           "tr": "Formik asit Robert Boyle tarafından element olarak tanımlanmıştır.",
@@ -1516,14 +1516,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimya Bilimi ünitesinde ele alınan Simya hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Chemistry as a Science, which statement about Alchemy is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Chemiewissenschaft: Welche Aussage über Alchemie ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Science Chimique, quelle affirmation relative à Alchimie est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Химия как наука», какое утверждение о «Алхимия» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"علم الكيمياء\"، أي عبارة حول \"الخيمياء\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学科学”单元中关于“炼金术”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Zanista Kîmyayê\", kîjan gotin li ser \"Simya\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya Bilimi konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Chemistry as a Science, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Chemiewissenschaft die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Science Chimique, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Химия как наука», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"علم الكيمياء\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学科学”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Zanista Kîmyayê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1548,13 +1548,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Zaç yağı HNO3 formülüne sahiptir.",
-          "en": "Zac oil has the formula HNO3.",
-          "de": "Zac-Öl hat die Formel HNO3.",
-          "fr": "L'huile Zac a la formule HNO3.",
-          "ru": "Масло Зака ​​имеет формулу HNO3.",
-          "ar": "يحتوي زيت زاك على الصيغة HNO3.",
-          "zh": "Zac 油的化学式为 HNO3。",
-          "ku": "Rûnê Zac bi formula HNO3 heye."
+          "en": "Oil of vitriol has the chemical formula HNO3.",
+          "de": "Vitriolöl besitzt die chemische Formel HNO3.",
+          "fr": "L'huile de vitriol a pour formule chimique HNO3.",
+          "ru": "Купоросное масло имеет формулу HNO3.",
+          "ar": "زيت الزاج له الصيغة الكيميائية HNO3.",
+          "zh": "矾油的化学式为 HNO3。",
+          "ku": "Rûnê zaçê xwedî formula HNO3 ye."
         },
         {
           "tr": "Fizikokimya, kimyasal sistemlerde sıcaklık, basınç, iş ve enerji dönüşümlerini inceler.",
@@ -1592,14 +1592,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya Bilimi konusunu işlerken Element üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Chemistry as a Science, which statement regarding element represents the correct answer?",
-        "de": "Welche Aussage zu Element stellt im Kontext von Chemiewissenschaft die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Science Chimique, quelle proposition sur élément constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Химия как наука», какой ответ относительно «элемент» является правильным?",
-        "ar": "أثناء دراسة موضوع \"علم الكيمياء\" مخبرياً، أي إجابة بخصوص \"عنصر\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学科学”实验探究与教学分析中，针对“元素”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Zanista Kîmyayê\" de, kîjan bersiv derbarê \"element\" de rast e?"
+        "tr": "Kimya dersinde Kimya Bilimi ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Chemistry as a Science, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Chemiewissenschaft: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Science Chimique, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Химия как наука», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"علم الكيمياء\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学科学”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Zanista Kîmyayê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1624,13 +1624,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Kral suyunu Aristo dört element kuramıyla açıklamıştır.",
-          "en": "Aristotle explained royal water with the theory of four elements.",
-          "de": "Aristoteles erklärte das königliche Wasser mit der Theorie der vier Elemente.",
-          "fr": "Aristote a expliqué l'eau royale avec la théorie des quatre éléments.",
-          "ru": "Аристотель объяснял царскую воду теорией четырех элементов.",
-          "ar": "وقد فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
-          "zh": "亚里士多德用四元素理论解释了王水。",
-          "ku": "Arîstoteles ava şahî bi teoriya çar hêmanan rave kir."
+          "en": "Aristotle explained aqua regia using the four elements theory.",
+          "de": "Aristoteles erklärte Königswasser mit der Vier-Elemente-Lehre.",
+          "fr": "Aristote a expliqué l'eau régale par la théorie des quatre éléments.",
+          "ru": "Аристотель объяснил царскую водку теорией четырех элементов.",
+          "ar": "فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
+          "zh": "亚里士多德用四元素学说解释了王水。",
+          "ku": "Arîsto ava şahî bi teoriya çar hêmanan rave kir."
         },
         {
           "tr": "Erlenmayer gaz hacmi ölçümünde büretin yerini tutar.",
@@ -1668,14 +1668,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin11",
       "stem": {
-        "tr": "Kimya dersinde Kimya Bilimi ünitesi incelenirken Nitel Analiz ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Chemistry as a Science, which of the following propositions concerning Qualitative Analysis is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Chemiewissenschaft: Welche Behauptung bezüglich Qualitative Analyse entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Science Chimique, laquelle des affirmations suivantes concernant Analyse qualitative est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Химия как наука», какое из следующих суждений о «Качественный анализ» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"علم الكيمياء\"، أي من الأحكام التالية المتعلقة بـ \"التحليل النوعي\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学科学”核心规律时，下列关于“定性分析”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Zanista Kîmyayê\" tê kirin, kîjan daraza li ser \"Analysis Qualitative\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimya Bilimi konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Chemistry as a Science?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Chemiewissenschaft zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Science Chimique ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Химия как наука»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"علم الكيمياء\"؟",
+        "zh": "根据“化学科学”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Zanista Kîmyayê\" de rast e?"
       },
       "options": [
         {
@@ -1700,13 +1700,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.",
-          "en": "Alchemists proved the conservation of mass by using the scale precisely.",
-          "de": "Alchemisten bewiesen die Massenerhaltung durch die genaue Verwendung der Skala.",
-          "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément l'échelle.",
-          "ru": "Алхимики доказали сохранение массы, точно используя шкалу.",
-          "ar": "أثبت الكيميائيون حفظ الكتلة باستخدام المقياس الدقيق.",
-          "zh": "炼金术士通过精确地使用尺度证明了质量守恒。",
-          "ku": "Alkîmîstan parastina girseyê bi karanîna pîvanê rast îspat kirin."
+          "en": "Alchemists proved the conservation of mass by using the analytical balance precisely.",
+          "de": "Alchemisten bewiesen die Massenerhaltung durch die präzise Verwendung der Analysenwaage.",
+          "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément la balance analytique.",
+          "ru": "Алхимики доказали сохранение массы, точно используя аналитические весы.",
+          "ar": "أثبت الخيميائيون حفظ الكتلة باستخدام الميزان التحليلي الدقيق.",
+          "zh": "炼金术士通过精确使用精密天平证明了质量守恒。",
+          "ku": "Alkîmîstan parastina girseyê bi karanîna terezûya hesas îspat kirin."
         },
         {
           "tr": "Formik asit Robert Boyle tarafından element olarak tanımlanmıştır.",
@@ -1744,14 +1744,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimya Bilimi konusundaki temel kimyasal kurallar çerçevesinde Büret kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes burette within the fundamental principles of Chemistry as a Science?",
-        "de": "Welche Aussage beschreibt das Konzept Bürette im Rahmen von Chemiewissenschaft am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement burette selon les lois de Science Chimique?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «бюретка» в рамках темы «Химия как наука»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"السحاحة\" ضمن قواعد \"علم الكيمياء\"؟",
-        "zh": "根据“化学科学”的基本化学原理，下列哪项阐述能最准确地界定“滴定管”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"burette\" di çarçoveya prensîbên \"Zanista Kîmyayê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimya Bilimi sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Chemistry as a Science, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Chemiewissenschaft: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Science Chimique, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Химия как наука», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"علم الكيمياء\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学科学”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Zanista Kîmyayê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1776,13 +1776,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Zaç yağı HNO3 formülüne sahiptir.",
-          "en": "Zac oil has the formula HNO3.",
-          "de": "Zac-Öl hat die Formel HNO3.",
-          "fr": "L'huile Zac a la formule HNO3.",
-          "ru": "Масло Зака ​​имеет формулу HNO3.",
-          "ar": "يحتوي زيت زاك على الصيغة HNO3.",
-          "zh": "Zac 油的化学式为 HNO3。",
-          "ku": "Rûnê Zac bi formula HNO3 heye."
+          "en": "Oil of vitriol has the chemical formula HNO3.",
+          "de": "Vitriolöl besitzt die chemische Formel HNO3.",
+          "fr": "L'huile de vitriol a pour formule chimique HNO3.",
+          "ru": "Купоросное масло имеет формулу HNO3.",
+          "ar": "زيت الزاج له الصيغة الكيميائية HNO3.",
+          "zh": "矾油的化学式为 HNO3。",
+          "ku": "Rûnê zaçê xwedî formula HNO3 ye."
         },
         {
           "tr": "Büret sadece yüksek sıcaklıkta sıvı kaynatmak için kullanılır.",
@@ -1820,14 +1820,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimya Bilimi sorularında karşılaşılan Erlenmayer konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Chemistry as a Science, which assertion regarding Erlenmayer is correct?",
-        "de": "Welche Feststellung bezüglich Erlenmayer ist nach den chemischen Gesetzmäßigkeiten von Chemiewissenschaft richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Science Chimique, quelle affirmation concernant Erlenmayer est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Химия как наука», какое положение относительно «Эрленмайер» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"علم الكيمياء\"، أي حكم متعلق بـ \"إرلينماير\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学科学”经典考题中，下列有关“埃伦梅尔”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Zanista Kîmyayê\" de, kîjan daraza li ser \"Erlenmayer\" rast e?"
+        "tr": "Aşağıda Kimya Bilimi ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Chemistry as a Science, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Chemiewissenschaft: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Science Chimique, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Химия как наука», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"علم الكيمياء\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学科学”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Zanista Kîmyayê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1842,13 +1842,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Kral suyunu Aristo dört element kuramıyla açıklamıştır.",
-          "en": "Aristotle explained royal water with the theory of four elements.",
-          "de": "Aristoteles erklärte das königliche Wasser mit der Theorie der vier Elemente.",
-          "fr": "Aristote a expliqué l'eau royale avec la théorie des quatre éléments.",
-          "ru": "Аристотель объяснял царскую воду теорией четырех элементов.",
-          "ar": "وقد فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
-          "zh": "亚里士多德用四元素理论解释了王水。",
-          "ku": "Arîstoteles ava şahî bi teoriya çar hêmanan rave kir."
+          "en": "Aristotle explained aqua regia using the four elements theory.",
+          "de": "Aristoteles erklärte Königswasser mit der Vier-Elemente-Lehre.",
+          "fr": "Aristote a expliqué l'eau régale par la théorie des quatre éléments.",
+          "ru": "Аристотель объяснил царскую водку теорией четырех элементов.",
+          "ar": "فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
+          "zh": "亚里士多德用四元素学说解释了王水。",
+          "ku": "Arîsto ava şahî bi teoriya çar hêmanan rave kir."
         },
         {
           "tr": "Çevreye zararlı maddeler kurumuş ağaç ve ölü balık sembolü ile gösterilir.",
@@ -1896,25 +1896,25 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin14",
       "stem": {
-        "tr": "Aşağıda Kimya Bilimi ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Zaç Yağı (H2SO4) ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Chemistry as a Science, which statement about Zac Oil (H2SO4) is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Chemiewissenschaft: Welche Aussage über Zac-Öl (H2SO4) ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Science Chimique, quelle affirmation relative à Huile Zac (H2SO4) est exacte?",
-        "ru": "На основе фундаментальных положений темы «Химия как наука», какое суждение о «Зак Масло (H2SO4)» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"علم الكيمياء\"، أي عبارة حول \"زيت زاك (H2SO4)\" صحيحة؟",
-        "zh": "基于“化学科学”的基础化学知识体系，下列关于“扎克油 (H2SO4)”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Zanista Kîmyayê\", kîjan gotin derbarê \"Rûnê Zac (H2SO4)\" de rast e?"
+        "tr": "Kimya Bilimi konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Chemistry as a Science, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Chemiewissenschaft: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Science Chimique, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Химия как наука», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"علم الكيمياء\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学科学”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Zanista Kîmyayê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
           "tr": "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.",
-          "en": "Alchemists proved the conservation of mass by using the scale precisely.",
-          "de": "Alchemisten bewiesen die Massenerhaltung durch die genaue Verwendung der Skala.",
-          "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément l'échelle.",
-          "ru": "Алхимики доказали сохранение массы, точно используя шкалу.",
-          "ar": "أثبت الكيميائيون حفظ الكتلة باستخدام المقياس الدقيق.",
-          "zh": "炼金术士通过精确地使用尺度证明了质量守恒。",
-          "ku": "Alkîmîstan parastina girseyê bi karanîna pîvanê rast îspat kirin."
+          "en": "Alchemists proved the conservation of mass by using the analytical balance precisely.",
+          "de": "Alchemisten bewiesen die Massenerhaltung durch die präzise Verwendung der Analysenwaage.",
+          "fr": "Les alchimistes ont prouvé la conservation de la masse en utilisant précisément la balance analytique.",
+          "ru": "Алхимики доказали сохранение массы, точно используя аналитические весы.",
+          "ar": "أثبت الخيميائيون حفظ الكتلة باستخدام الميزان التحليلي الدقيق.",
+          "zh": "炼金术士通过精确使用精密天平证明了质量守恒。",
+          "ku": "Alkîmîstan parastina girseyê bi karanîna terezûya hesas îspat kirin."
         },
         {
           "tr": "Formik asit Robert Boyle tarafından element olarak tanımlanmıştır.",
@@ -1972,25 +1972,25 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin15",
       "stem": {
-        "tr": "Kimya Bilimi konusu kapsamında Fiziksel Değişim ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Chemistry as a Science, which of the following findings regarding Physical Change is scientifically verified?",
-        "de": "Im Rahmen der Einheit Chemiewissenschaft: Welcher der folgenden Befunde zu Körperliche Veränderung ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Science Chimique, laquelle des constatations suivantes concernant Changement physique est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Химия как наука», какой из следующих выводов относительно «Физические изменения» научно подтверждён?",
-        "ar": "في سياق موضوع \"علم الكيمياء\"، أي من النتائج التالية المتعلقة بـ \"التغيير الجسدي\" مثبتة علمياً؟",
-        "zh": "在“化学科学”主题范畴内，下列关于“物理变化”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Zanista Kîmyayê\" de, kîjan ji van encamên li ser \"Guhertina Fîzîkî\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimya Bilimi ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Chemistry as a Science, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Chemiewissenschaft: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Science Chimique, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Химия как наука», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"علم الكيمياء\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学科学”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Zanista Kîmyayê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
           "tr": "Zaç yağı HNO3 formülüne sahiptir.",
-          "en": "Zac oil has the formula HNO3.",
-          "de": "Zac-Öl hat die Formel HNO3.",
-          "fr": "L'huile Zac a la formule HNO3.",
-          "ru": "Масло Зака ​​имеет формулу HNO3.",
-          "ar": "يحتوي زيت زاك على الصيغة HNO3.",
-          "zh": "Zac 油的化学式为 HNO3。",
-          "ku": "Rûnê Zac bi formula HNO3 heye."
+          "en": "Oil of vitriol has the chemical formula HNO3.",
+          "de": "Vitriolöl besitzt die chemische Formel HNO3.",
+          "fr": "L'huile de vitriol a pour formule chimique HNO3.",
+          "ru": "Купоросное масло имеет формулу HNO3.",
+          "ar": "زيت الزاج له الصيغة الكيميائية HNO3.",
+          "zh": "矾油的化学式为 HNO3。",
+          "ku": "Rûnê zaçê xwedî formula HNO3 ye."
         },
         {
           "tr": "Büret sadece yüksek sıcaklıkta sıvı kaynatmak için kullanılır.",
@@ -2048,14 +2048,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimya Bilimi ünitesinde ele alınan Toksik Madde hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Chemistry as a Science, which statement about Toxic Substance is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Chemiewissenschaft: Welche Aussage über Giftiger Stoff ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Science Chimique, quelle affirmation relative à Substance toxique est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Химия как наука», какое утверждение о «Токсическое вещество» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"علم الكيمياء\"، أي عبارة حول \"مادة سامة\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学科学”单元中关于“有毒物质”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Zanista Kîmyayê\", kîjan gotin li ser \"Madeya Toksîk\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya Bilimi konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Chemistry as a Science, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Chemiewissenschaft die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Science Chimique, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Химия как наука», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"علم الكيمياء\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学科学”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Zanista Kîmyayê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -2070,13 +2070,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Kral suyunu Aristo dört element kuramıyla açıklamıştır.",
-          "en": "Aristotle explained royal water with the theory of four elements.",
-          "de": "Aristoteles erklärte das königliche Wasser mit der Theorie der vier Elemente.",
-          "fr": "Aristote a expliqué l'eau royale avec la théorie des quatre éléments.",
-          "ru": "Аристотель объяснял царскую воду теорией четырех элементов.",
-          "ar": "وقد فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
-          "zh": "亚里士多德用四元素理论解释了王水。",
-          "ku": "Arîstoteles ava şahî bi teoriya çar hêmanan rave kir."
+          "en": "Aristotle explained aqua regia using the four elements theory.",
+          "de": "Aristoteles erklärte Königswasser mit der Vier-Elemente-Lehre.",
+          "fr": "Aristote a expliqué l'eau régale par la théorie des quatre éléments.",
+          "ru": "Аристотель объяснил царскую водку теорией четырех элементов.",
+          "ar": "فسر أرسطو الماء الملكي بنظرية العناصر الأربعة.",
+          "zh": "亚里士多德用四元素学说解释了王水。",
+          "ku": "Arîsto ava şahî bi teoriya çar hêmanan rave kir."
         },
         {
           "tr": "Erlenmayer gaz hacmi ölçümünde büretin yerini tutar.",

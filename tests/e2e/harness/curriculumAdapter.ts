@@ -5,6 +5,7 @@
  */
 
 import type { LanguageCode } from '../../../src/types/chemistry';
+import { compileAllFlashcards as engineCompileAllFlashcards } from '../../../src/engine/flashcardGenerator';
 
 export interface LocalizedText {
   tr: string;
@@ -138,7 +139,7 @@ const UNIT_DEFS: UnitMetadata[] = [
     keywords: ['simya', 'Cabir bin Hayyan', 'Lavoisier', 'Zaç yağı', 'Tuz ruhu', 'Kezzap', 'beherglas', 'büret', 'güvenlik piktogramı'],
     factsList: [
       { f: 'Lavoisier, Kütlenin Korunumu Kanunu ile modern kimyanın kurucusu kabul edilir.', t: 'Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.', tip: 'Simya teorik temellere ve sistematik deneylere dayanmaz.' },
-      { f: 'Zaç yağı H2SO4 (sülfürik asit), Tuz ruhu HCl (hidroklorik asit) geleneksel adıdır.', t: 'Zaç yağı HNO3 formülüne sahiptir.', tip: 'HNO3 kezzaptır, zaç yağı H2SO4 tür.' },
+      { f: 'Zaç yağı H2SO4 (sülfürik asit), Tuz ruhu HCl (hidroklorik asit) geleneksel adıdır.', t: 'Zaç yağı HNO3 formülüne sahiptir.', tip: 'HNO3 kezzaptır, zaç yağı H2SO4\'tür.' },
       { f: 'Cabir bin Hayyan damıtma imbiğini (alembic) geliştirerek nitrik asit ve kral suyunu elde etmiştir.', t: 'Kral suyunu Aristo dört element kuramıyla açıklamıştır.' },
       { f: 'Ebu Bekir er-Razi kostik soda ve karınca asidini (formik asit) ilk kez elde etmiştir.', t: 'Formik asit Robert Boyle tarafından element olarak tanımlanmıştır.' },
       { f: 'Büret, titrasyon deneylerinde hassas sıvı hacmi ölçümü ve kontrollü damlatma için kullanılır.', t: 'Büret sadece yüksek sıcaklıkta sıvı kaynatmak için kullanılır.' },
@@ -174,7 +175,7 @@ const UNIT_DEFS: UnitMetadata[] = [
         stem: 'Aşağıda geleneksel adı verilen bileşiklerden hangisinin kimyasal formülü yanlıştır?',
         opts: ['Zaç yağı: H2SO4', 'Kezzap: HNO3', 'Tuz ruhu: HCl', 'Kireç taşı: CaCO3', 'Sönmüş kireç: CaO'],
         ans: 4,
-        exp: 'Sönmüş kireç Ca(OH)2 dir. CaO ise sönmemiş kireçtir.'
+        exp: 'Sönmüş kireç Ca(OH)2\'dir. CaO ise sönmemiş kireçtir.'
       }
     ]
   },
@@ -187,7 +188,7 @@ const UNIT_DEFS: UnitMetadata[] = [
     subtitle: loc('Modeller, Kuantum Sayıları ve Periyodik Özellikler', 'Models, Quantum Numbers & Trends'),
     keywords: ['atom', 'periyot', 'iyonlaşma enerjisi', 'elektronegatiflik', 'elektron ilgisi', 'izotop', 'Rutherford', 'Bohr'],
     factsList: [
-      { f: 'Rutherford altın levha deneyiyle çekirdekli atom modelini ve atomun büyük kısmının boşluk olduğunu keşfetmiştir.', t: 'Rutherford elektronların sabit dairesel yörüngelerde döndüğünü matematiksel kanıtlamıştır.', tip: 'Yörünge modeli Bohr a aittir.' },
+      { f: 'Rutherford altın levha deneyiyle çekirdekli atom modelini ve atomun büyük kısmının boşluk olduğunu keşfetmiştir.', t: 'Rutherford elektronların sabit dairesel yörüngelerde döndüğünü matematiksel kanıtlamıştır.', tip: 'Yörünge modeli Bohr\'a aittir.' },
       { f: 'Thomson üzümlü kek modelinde atomu pozitif yüklü küre içine gömülü elektronlar olarak tanımlamıştır.', t: 'Thomson çekirdekte nötron bulunduğunu ispatlamıştır.' },
       { f: 'Bohr atom modeline göre elektronlar çekirdek çevresinde belirli enerji düzeylerinde (yörüngelerde) bulunur.', t: 'Bohr modeli çok elektronlu atomların spektrumunu tam olarak açıklamıştır.' },
       { f: 'İzotop atomların proton sayıları aynı, nötron sayıları ve kütle numaraları farklıdır.', t: 'İzotop atomların kimyasal özellikleri birbirinden tamamen farklıdır.' },
@@ -196,7 +197,7 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'İzoelektronik taneciklerin elektron sayıları ve dizilimleri aynı, proton sayıları farklıdır.', t: 'İzoelektronik taneciklerin kimyasal tepkimeye girme istekleri tamamen aynıdır.' },
       { f: 'Flor periyodik sistemin elektronegatifliği en yüksek elementidir (4.0 kabul edilir).', t: 'Fransiyum elektronegatifliği en yüksek ametaldir.' },
       { f: 'Soy gazlar kararlı oktet/dublet yapısına sahip olduklarından elektron ilgisi ihmal edilecek kadar düşüktür.', t: 'Helyum 8 değerlik elektronuna sahip bir asal gazdır.' },
-      { f: 'Bir periyotta iyonlaşma enerjisi sıralamasında 2A ve 5A küresel simetriden dolayı 3A ve 6A dan büyüktür.', t: 'Aynı periyotta 3A grubunun iyonlaşma enerjisi daima 2A grubundan büyüktür.' },
+      { f: 'Bir periyotta iyonlaşma enerjisi sıralamasında 2A ve 5A küresel simetriden dolayı 3A ve 6A\'dan büyüktür.', t: 'Aynı periyotta 3A grubunun iyonlaşma enerjisi daima 2A grubundan büyüktür.' },
       { f: 'Katyon oluşurken elektron verildiği için tanecik yarıçapı daima küçülür.', t: 'Katyon oluştuğunda çekirdeğin çekim gücü artar.' },
       { f: 'Anyon oluşurken elektron alındığı için elektron başına düşen çekim kuvveti azalır, yarıçap büyür.', t: 'Anyon oluşurken çekirdekteki proton sayısı artar.' },
       { f: 'Mendeleyev periyodik tabloyu atom kütlelerine göre, Moseley ise atom numaralarına (proton sayısına) göre düzenlemiştir.', t: 'Moseley periyodik cetveli nötron sayılarına göre dizmiştir.' },
@@ -213,10 +214,10 @@ const UNIT_DEFS: UnitMetadata[] = [
     ],
     twinsList: [
       {
-        stem: 'Baş grup elementi olan X in ardışık iyonlaşma enerjileri (kJ/mol): İE1: 496, İE2: 4562, İE3: 6912 dir. Buna göre X hangi gruptadır?',
+        stem: 'Baş grup elementi olan X\'in ardışık iyonlaşma enerjileri (kJ/mol): İE1: 496, İE2: 4562, İE3: 6912\'dir. Buna göre X hangi gruptadır?',
         opts: ['1A', '2A', '3A', '4A', '8A'],
         ans: 0,
-        exp: 'İE1 den İE2 ye geçişte yaklaşık 9.2 kat sıçrama vardır (496 -> 4562). Bu durum 1 değerlik elektronu olduğunu ve 1A grubunda bulunduğunu gösterir.'
+        exp: 'İE1\'den İE2\'ye geçişte yaklaşık 9.2 kat sıçrama vardır (496 -> 4562). Bu durum 1 değerlik elektronu olduğunu ve 1A grubunda bulunduğunu gösterir.'
       },
       {
         stem: 'Periyodik sistemde aynı periyotta yer alan elementler için soldan sağa doğru gidildikçe aşağıdakilerden hangisi genellikle azalır?',
@@ -244,7 +245,7 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Metalik bağ, serbest değerlik elektronlarının oluşturduğu elektron denizi ile pozitif metal iyonları arasındadır.', t: 'Metalik bağ ametaller arasında ortaklaşan elektronlarla kurulur.' },
       { f: 'Kovalent bağda elektronegatiflik farkı arttıkça bağın polar karakteri ve iyonik karakteri artar.', t: 'Elektronegatiflikleri eşit iki atom arasındaki bağ polardır.' },
       { f: 'Apolar kovalent bağ aynı cins iki ametal atomu arasında (örn. O2, N2, H2) oluşur.', t: 'HCl molekülündeki bağ apolar kovalent bağdır.' },
-      { f: 'Suyun kaynama noktasının H2S den belirgin yüksek olması molekülleri arasındaki hidrojen bağları nedeniyledir.', t: 'Suyun yüksek kaynama noktası molekül kütlesinin H2S den büyük olmasındandır.' },
+      { f: 'Suyun kaynama noktasının H2S\'den belirgin yüksek olması molekülleri arasındaki hidrojen bağları nedeniyledir.', t: 'Suyun yüksek kaynama noktası molekül kütlesinin H2S\'den büyük olmasındandır.' },
       { f: 'Lewis nokta gösteriminde değerlik elektronları element sembolü çevresine noktalarla yerleştirilir.', t: 'Lewis sembolünde çekirdekteki nötronlar sembolün etrafına çizilir.' },
       { f: 'Dipol-dipol etkileşimi kalıcı dipollere sahip polar moleküller arasında gerçekleşir.', t: 'Dipol-dipol etkileşimi soy gaz atomları arasında görülen temel kuvvettir.' },
       { f: 'Bağ kırılması endotermik (enerji alan), bağ oluşumu ekzotermik (enerji veren) süreçtir.', t: 'Kimyasal bağ kırılırken çevreye daima yüksek miktarda ısı yayılır.' },
@@ -334,7 +335,7 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Sert sular Ca2+ ve Mg2+ iyonları derişimi yüksek olan sulardır; sabun sarfiyatını artırır ve tortu bırakır.', t: 'Sert sularda deterjan köpürmez ve temizleme özelliğini tamamen yitirir.' },
       { f: 'Geçici sertlik Ca(HCO3)2 ve Mg(HCO3)2 den kaynaklanır ve suyu kaynatarak giderilebilir.', t: 'Kalıcı sertlik suyu basitçe kaynatarak tamamen yok edilir.' },
       { f: 'Kalıcı sertlik sülfat (SO4^2-) ve klorür (Cl-) tuzlarından kaynaklanır ve iyon değiştirici reçinelerle giderilir.', t: 'Kalıcı sertliğe neden olan tuzlar kireç taşı CaCO3 çöktürmez.' },
-      { f: 'CO2, CH4, N2O ve su buharı (H2O) temel bir sera gazı olarak atmosferde kızılötesi ışınları tutar; bu sera gazları küresel ısınmaya yol açar.', t: 'O2 ve N2 gazları dünyadaki sera etkisinin %90 ından sorumludur.' },
+      { f: 'CO2, CH4, N2O ve su buharı (H2O) temel bir sera gazı olarak atmosferde kızılötesi ışınları tutar; bu sera gazları küresel ısınmaya yol açar.', t: 'O2 ve N2 gazları dünyadaki sera etkisinin %90\'ından sorumludur.' },
       { f: 'Kükürt dioksit (SO2), kükürt trioksit (SO3) ve azot oksitler (NO2) asit yağmurlarına yol açan gazlardır.', t: 'Asit yağmurlarına atmosferdeki saf oksijen ve azot gazları neden olur.' },
       { f: 'Kloroflorokarbonlar (CFC gazları) stratosferdeki ozon (O3) tabakasının incelmesine neden olur.', t: 'CFC gazları ozon tabakasını onararak ultraviyole ışınları tamamen engeller.' },
       { f: 'Ağır metaller (kurşun Pb, cıva Hg, kadmiyum Cd) biyolojik birikimle besin zincirinde zehir etkisi yapar.', t: 'Cıva insan vücudunda kolayca parçalanan yararlı bir mineraldir.' },
@@ -343,7 +344,7 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Klorlama, içme sularındaki patojen mikroorganizmaları yok etmek amacıyla uygulanan dezenfeksiyon işlemidir.', t: 'Klorlama suyun içindeki kurşun ve cıvayı çöktürmek için yapılır.' },
       { f: 'Ters ozmoz (reverse osmosis), yarı geçirgen zardan yüksek basınç uygulayarak tuzlu sudan tatlı su elde etme yöntemidir.', t: 'Ters ozmoz işleminde hiçbir enerji ve basınca ihtiyaç duyulmaz.' },
       { f: 'Fosil yakıtların kontrolsüz yakılması küresel karbon döngüsünü bozarak atmosferde CO2 birikimine yol açar.', t: 'Fosil yakıtlar yandığında atmosfere sadece saf su buharı verir.' },
-      { f: 'pH değeri 5.6 nın altında olan yağışlar asit yağmuru olarak kabul edilir.', t: 'Doğal saf yağmur suyunun pH değeri tam 7.0 dir.' },
+      { f: 'pH değeri 5.6\'nın altında olan yağışlar asit yağmuru olarak kabul edilir.', t: 'Doğal saf yağmur suyunun pH değeri tam 7.0\'dir.' },
       { f: 'Toprak ve su kirliliğine neden olan piller kesinlikle çöpe atılmamalı, atık pil kutularında toplanmalıdır.', t: 'Kullanılmış piller yakılarak güvenle yok edilebilir.' },
       { f: 'Yeşil kimya ilkeleri, atık oluşumunu kaynağında önlemeyi ve yenilenebilir hammadde kullanımını hedefler.', t: 'Yeşil kimya nükleer atıkları okyanus tabanında depolamayı savunur.' },
       { f: 'Hafif sular (yumuşak sular) içimi rahat, lezzetli ve tesisat dostu sulardır.', t: 'Yumuşak sular bol miktarda kireç tortusu bırakır.' },
@@ -384,16 +385,16 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Katlı Oranlar Kanunu (Dalton): İki element birden fazla bileşik oluşturuyorsa elementlerden birinin sabit miktarına karşılık diğerinin değişen miktarları arasında tam sayılı katlı oran vardır.', t: 'Farklı 3 element içeren bileşikler arasında katlı oran aranabilir.' },
       { f: 'Basit formülleri aynı olan bileşikler arasında (örn. C2H4 ve C3H6; her ikisi CH2) katlı oran 1 olacağından katlı oran aranmaz.', t: 'C2H4 ve C4H8 arasında katlı oranlar kanunu geçerlidir.' },
       { f: '1 mol tanecik 6.02x10^23 tane tanecik (Avogadro sayısı, NA) içerir.', t: '1 mol H2 gazı 6.02x10^23 tane atom içerir.', tip: '1 mol H2 molekülü 2 mol H atomu içerir!' },
-      { f: 'Normal koşullarda (0 °C ve 1 atm) 1 mol ideal gaz 22.4 litre hacim kaplar.', t: 'Oda koşullarında (25 °C, 1 atm) 1 mol gaz 22.4 L hacim kaplar.', tip: 'Oda koşullarında 24.5 L dir.' },
-      { f: 'Mol sayısı formülü: n = m / MA (kütle / mol kütlesi) veya n = N / NA dır.', t: 'Mol sayısı kütle ile mol kütlesinin çarpımına eşittir.' },
-      { f: 'Mol kütlesi (MA), 1 mol maddenin gram cinsinden kütlesidir (akb cinsinden molekül ağırlığının gram karşılığıdır).', t: '1 tane CO2 molekülü 44 gramdır.', tip: '1 tane CO2 44 akb dir; 1 mol CO2 44 gramdır.' },
+      { f: 'Normal koşullarda (0 °C ve 1 atm) 1 mol ideal gaz 22.4 litre hacim kaplar.', t: 'Oda koşullarında (25 °C, 1 atm) 1 mol gaz 22.4 L hacim kaplar.', tip: 'Oda koşullarında 24.5 L\'dir.' },
+      { f: 'Mol sayısı formülü: n = m / MA (kütle / mol kütlesi) veya n = N / NA\'dır.', t: 'Mol sayısı kütle ile mol kütlesinin çarpımına eşittir.' },
+      { f: 'Mol kütlesi (MA), 1 mol maddenin gram cinsinden kütlesidir (akb cinsinden molekül ağırlığının gram karşılığıdır).', t: '1 tane CO2 molekülü 44 gramdır.', tip: '1 tane CO2 44 akb\'dir; 1 mol CO2 44 gramdır.' },
       { f: 'Avogadro Hipotezi: Aynı sıcaklık ve basınç altında eşit hacimdeki tüm ideal gazlar eşit sayıda molekül içerir.', t: 'Eşit hacimdeki gazların kütleleri de daima birbirine eşittir.' },
-      { f: 'Bağıl atom kütlesi karbon-12 (12C) izotopunun kütlesinin 1/12 si temel alınarak hesaplanmıştır.', t: 'Bağıl atom kütlesi hidrojen atomunun ağırlığına tam eşittir.' },
+      { f: 'Bağıl atom kütlesi karbon-12 (12C) izotopunun kütlesinin 1/12\'si temel alınarak hesaplanmıştır.', t: 'Bağıl atom kütlesi hidrojen atomunun ağırlığına tam eşittir.' },
       { f: 'Katlı oran aranmayan durumlar: Farklı tür element içerenler (CO ve NO), 3 tür element içerenler (H2SO4 ve H2SO3), basit formülü aynı olanlar.', t: 'FeO ve Fe2O3 arasında katlı oran yoktur.' },
       { f: '1 atom-gram = 1 mol atom, 1 molekül-gram = 1 mol molekül, 1 formül-gram = 1 mol iyonik bileşik demektir.', t: '1 molekül-gram H2O ifadesi 1 tane su molekülünü belirtir.' },
       { f: 'Gerçek atom kütlesi: Bir tek atomun gram cinsinden kütlesidir ve MA / NA formülüyle bulunur.', t: 'Gerçek atom kütlesi atomun mol ağırlığına eşittir.' },
-      { f: '0.5 mol CH4 gazı NK da 11.2 litre hacim kaplar ve 2.5 mol atom içerir (0.5 mol C + 2.0 mol H).', t: '0.5 mol CH4 gazı NK da 22.4 L hacim kaplar.' },
-      { f: 'Katı ve sıvı maddeler için NK da 22.4 L hacim kuralı GEÇERLİ DEĞİLDİR; sadece gazlar içindir.', t: '0 °C de 1 mol sıvı su 22.4 litre hacim kaplar.' },
+      { f: '0.5 mol CH4 gazı NK\'da 11.2 litre hacim kaplar ve 2.5 mol atom içerir (0.5 mol C + 2.0 mol H).', t: '0.5 mol CH4 gazı NK\'da 22.4 L hacim kaplar.' },
+      { f: 'Katı ve sıvı maddeler için NK\'da 22.4 L hacim kuralı GEÇERLİ DEĞİLDİR; sadece gazlar içindir.', t: '0 °C\'de 1 mol sıvı su 22.4 litre hacim kaplar.' },
       { f: 'Tepkimeye giren maddeler arasındaki stokiyometrik oran katsayılar ile belirlenir.', t: 'Kimyasal tepkimeye giren maddelerin kütleleri katsayılarıyla doğru orantılı olmak zorundadır.' },
     ],
     comparisonsList: [
@@ -414,7 +415,7 @@ const UNIT_DEFS: UnitMetadata[] = [
         stem: 'Aşağıdaki bileşik çiftlerinden hangisi arasında Katlı Oranlar Kanunu uygulanabilir?',
         opts: ['CO ve CO2', 'CH4 ve C2H4', 'H2SO4 ve H2SO3', 'NaCl ve KBr', 'C2H6 ve C3H8'],
         ans: 0,
-        exp: 'CO ve CO2 aynı iki elementten oluşur, basit formülleri farklıdır ve 2 element içerir. Sabit C miktarına karşılık O lar arasındaki katlı oran 1/2 dir.'
+        exp: 'CO ve CO2 aynı iki elementten oluşur, basit formülleri farklıdır ve 2 element içerir. Sabit C miktarına karşılık O\'lar arasındaki katlı oran 1/2\'dir.'
       }
     ]
   },
@@ -435,12 +436,12 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Çözünme-çökelme tepkimesinde net iyon denklemi katı çökeltiyi oluşturan iyonlara göre yazılır.', t: 'Net iyon denklemi çözeltide kalan seyirci iyonlara göre yazılır.' },
       { f: 'Sınırlayıcı bileşen, tepkimede ilk tükenen ve oluşan ürün miktarını belirleyen reaktiftir.', t: 'Sınırlayıcı bileşen kütlesi en az olan maddedir.' },
       { f: 'Yüzde verim = (Gerçek Verim / Teorik Verim) x 100 formülü ile hesaplanır.', t: 'Gerçek verim teorik verimden daima daha büyüktür.' },
-      { f: 'Hidrokarbonlar (CxHy) tam yandıklarında yalnızca CO2 ve H2O oluşturur.', t: 'Hidrokarbonlar yandığında CO2 nin yanında H2 gazı açığa çıkar.' },
+      { f: 'Hidrokarbonlar (CxHy) tam yandıklarında yalnızca CO2 ve H2O oluşturur.', t: 'Hidrokarbonlar yandığında CO2\'nin yanında H2 gazı açığa çıkar.' },
       { f: 'Tepkimede kütle, atom sayısı ve türü, toplam proton, nötron ve elektron sayısı daima korunur.', t: 'Tüm kimyasal tepkimelerde molekül sayısı ve gaz hacmi mutlaka korunur.' },
       { f: 'Artan madde hesabı için tepkimeye girenlerin mol sayıları katsayılarına bölünerek sınırlayıcı madde bulunur.', t: 'Hangi maddeden daha çok mol varsa o madde önce biter.' },
-      { f: 'Saflık yüzdesi = (Saf Madde Kütlesi / Numune Kütlesi) x 100 dür.', t: 'Saflık oranı hesaplanırken numunenin saf olmayan kısmı tepkimeye girer kabul edilir.' },
+      { f: 'Saflık yüzdesi = (Saf Madde Kütlesi / Numune Kütlesi) x 100\'dür.', t: 'Saflık oranı hesaplanırken numunenin saf olmayan kısmı tepkimeye girer kabul edilir.' },
       { f: 'Demirin paslanması (4Fe + 3O2 -> 2Fe2O3) alevsiz yavaş yanmaya örnektir.', t: 'Demirin paslanması fiziksel bir çözünme olayıdır.' },
-      { f: 'AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde seyirci iyonlar Na+ ve NO3- dır.', t: 'Yukarıdaki tepkimede Ag+ ve Cl- seyirci iyonlardır.' },
+      { f: 'AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde seyirci iyonlar Na+ ve NO3-\'dır.', t: 'Yukarıdaki tepkimede Ag+ ve Cl- seyirci iyonlardır.' },
       { f: 'Eşit mol sayıda girenlerin tepkimesinde katsayısı büyük olan reaktif sınırlayıcı bileşendir.', t: 'Eşit mol alındığında katsayısı küçük olan reaktif önce tükenir.' },
       { f: 'Gaz tepkimelerinde aynı sıcaklık ve basınçta hacim oranları mol oranlarına eşittir (Gay-Lussac).', t: 'Gaz tepkimelerinde girenlerin hacim toplamı ürünlerin hacim toplamına daima eşittir.' },
     ],
@@ -453,10 +454,10 @@ const UNIT_DEFS: UnitMetadata[] = [
     ],
     twinsList: [
       {
-        stem: 'C3H8 + 5 O2 -> 3 CO2 + 4 H2O tepkimesine göre 0.2 mol C3H8 in tamamen yanması için normal koşullarda en az kaç litre O2 gazı gereklidir?',
+        stem: 'C3H8 + 5 O2 -> 3 CO2 + 4 H2O tepkimesine göre 0.2 mol C3H8\'in tamamen yanması için normal koşullarda en az kaç litre O2 gazı gereklidir?',
         opts: ['22.4 L', '11.2 L', '5.6 L', '44.8 L', '2.24 L'],
         ans: 0,
-        exp: '1 mol C3H8 için 5 mol O2 gerekir. 0.2 mol C3H8 için 0.2 * 5 = 1.0 mol O2 gerekir. 1 mol gaz NK da 22.4 L dir.'
+        exp: '1 mol C3H8 için 5 mol O2 gerekir. 0.2 mol C3H8 için 0.2 * 5 = 1.0 mol O2 gerekir. 1 mol gaz NK\'da 22.4 L\'dir.'
       },
       {
         stem: 'AgNO3(aq) + KBr(aq) -> AgBr(k) + KNO3(aq) tepkimesi için net iyon denklemi aşağıdakilerden hangisidir?',
@@ -480,28 +481,28 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Emülsiyon birbiri içinde çözünmeyen sıvı-sıvı heterojen karışımdır (örn. zeytinyağı-su, mayonez).', t: 'Zeytinyağı-su karışımı ayrımsal damıtma ile ayrılır.' },
       { f: 'Aerosol bir gaz içinde katı veya sıvının dağılmasıyla oluşur (örn. sis, duman, sprey).', t: 'Duman katının sıvıda dağıldığı süspansiyondur.' },
       { f: 'Tyndall etkisi: Kolloit çözeltilerden geçen ışık demeti saçılır ve ışığın yolu görünür.', t: 'Gerçek homojen çözeltilerde ışık demeti kuvvetle saçılır ve görünür.' },
-      { f: 'Kütlece yüzde derişim = (Çözünen Kütlesi / Çözelti Kütlesi) x 100 dür.', t: 'Kütlece yüzde derişim çözünen kütlesinin çözücü kütlesine bölünmesiyle bulunur.' },
-      { f: 'ppm (milyonda bir kısım) = (Çözünen Kütlesi / Çözelti Kütlesi) x 10^6 dır.', t: 'ppm hesaplanırken çarpan 100 dür.' },
+      { f: 'Kütlece yüzde derişim = (Çözünen Kütlesi / Çözelti Kütlesi) x 100\'dür.', t: 'Kütlece yüzde derişim çözünen kütlesinin çözücü kütlesine bölünmesiyle bulunur.' },
+      { f: 'ppm (milyonda bir kısım) = (Çözünen Kütlesi / Çözelti Kütlesi) x 10^6\'dır.', t: 'ppm hesaplanırken çarpan 100\'dür.' },
       { f: 'Ayrımsal damıtma, kaynama noktaları farklı olan homojen sıvı-sıvı karışımları ayırmada kullanılır (örn. petrol, alkol-su).', t: 'Ayrımsal damıtma yoğunluk farkına dayalı bir ayırma tekniğidir.' },
       { f: 'Ayırma hunisi, özkütleleri farklı birbiri içinde çözünmeyen sıvı-sıvı heterojen karışımları ayırır (örn. zeytinyağı-su).', t: 'Ayırma hunisi kaynama noktaları farklı homojen karışımları ayırır.' },
       { f: 'Flotasyon (yüzdürme), yoğunluğu sıvıdan küçük olan katı taneciklerin yüzeye çıkarılarak toplanmasıdır (madencilikte sülfürlü cevherler).', t: 'Flotasyon mıknatıs yardımıyla demir ayırma işlemidir.' },
       { f: 'Ekstraksiyon (özütleme), karışımdaki bir bileşenin uygun bir çözücü yardımıyla çekilip ayrılmasıdır (çay demleme, şeker pancarından şeker).', t: 'Özütleme tanecik boyutu farkına dayalı eleme yöntemidir.' },
       { f: 'Diyaliz, kolloidal boyutlu taneciklerin yarı geçirgen zardan geçirilerek temizlenmesidir (böbrek hastalarında kan temizliği).', t: 'Diyaliz santrifüj ile çöktürme işlemidir.' },
-      { f: 'Çözeltiye su eklenirse (seyreltme) derişim azalır; formül C1m1 = C2m2 dir.', t: 'Su eklendiğinde çözünen madde kütlesi de artar.' },
+      { f: 'Çözeltiye su eklenirse (seyreltme) derişim azalır; formül C1m1 = C2m2\'dir.', t: 'Su eklendiğinde çözünen madde kütlesi de artar.' },
       { f: '"Benzer benzeri çözer" kuralı: Polar maddeler polar çözücülerde, apolar maddeler apolar çözücülerde iyi çözünür.', t: 'Apolar yağ lekesi polar suyla kolayca çözünür.' },
       { f: 'Tuzlu suyun kaynamaya başlama sıcaklığı saf sudan yüksektir ve kaynama süresince doymamışken sıcaklık artmaya devam eder.', t: 'Tuzlu su kaynarken sıcaklığı baştan itibaren sabit kalır.' },
       { f: 'Doygun çözeltiye aynı sıcaklıkta bir miktar daha çözünen eklenirse çözünmeden dipte çöker ve derişim değişmez.', t: 'Doygun çözeltiye tuz eklenirse çözelti daha derişik hale gelir.' },
     ],
     comparisonsList: [
       { a: 'Basit Damıtma', b: 'Ayrımsal Damıtma', d: 'Basit damıtma katı-sıvı çözeltilerde sıvıyı buharlaştırıp yoğuşturur; ayrımsal damıtma kaynama noktaları yakın sıvı-sıvı homojen karışımları ayırır.' },
-      { a: 'Kolloit', b: 'Çözelti', d: 'Çözeltide tanecik boyutu 1 nm den küçük homojendir; kolloitte 1-1000 nm arası heterojendir ve Tyndall etkisi gösterir.' },
+      { a: 'Kolloit', b: 'Çözelti', d: 'Çözeltide tanecik boyutu 1 nm\'den küçük homojendir; kolloitte 1-1000 nm arası heterojendir ve Tyndall etkisi gösterir.' },
     ],
     sequencesList: [
       { title: 'Tuz-Kum-Su Karışımını Ayırma Adımları', steps: ['Karışıma su eklenip tuz çözünür', 'Süzme yapılarak kum ayrılır', 'Süzüntü basit damıtmaya alınır', 'Su buharlaştırılıp tuz kristalleri elde edilir'] }
     ],
     twinsList: [
       {
-        stem: 'Kütlece %20 lik 200 gram tuzlu su çözeltisine 50 gram saf su eklendiğinde yeni çözelti kütlece yüzde kaçlık olur?',
+        stem: 'Kütlece %20\'lik 200 gram tuzlu su çözeltisine 50 gram saf su eklendiğinde yeni çözelti kütlece yüzde kaçlık olur?',
         opts: ['%16', '%10', '%15', '%25', '%12'],
         ans: 0,
         exp: 'Çözünen tuz = 200 * 0.20 = 40 gram. Yeni toplam kütle = 200 + 50 = 250 gram. Yeni yüzde = (40 / 250) * 100 = %16.'
@@ -525,7 +526,7 @@ const UNIT_DEFS: UnitMetadata[] = [
     factsList: [
       { f: 'Asitler sulu çözeltilerine H+ (H3O+) iyonu verir, tatları ekşidir ve mavi turnusolu kırmızıya çevirir.', t: 'Asitler ele kayganlık hissi verir ve turnusolu maviye boyar.' },
       { f: 'Bazlar sulu çözeltilerine OH- iyonu verir, tatları acıdır ve kırmızı turnusolu maviye çevirir.', t: 'Bazlar sulu çözeltilerinde elektrik akımını iletmez.' },
-      { f: '25 °C de pH < 7 asidik, pH = 7 nötr, pH > 7 baziktir.', t: '25 °C de pH değeri 8 olan bir çözelti asidiktir.' },
+      { f: '25 °C\'de pH < 7 asidik, pH = 7 nötr, pH > 7 baziktir.', t: '25 °C\'de pH değeri 8 olan bir çözelti asidiktir.' },
       { f: 'Aktif metaller (Na, K, Mg, Fe vb.) asitlerle tepkimeye girdiğinde H2 gazı açığa çıkarır.', t: 'Aktif metaller asitlerle SO2 zehirli gazı oluşturur.' },
       { f: 'Yarı soy metaller (Cu, Ag, Hg) oksijensiz asitlerle (HCl, HBr vb.) TEPKİME VERMEZ.', t: 'Bakır metali HCl çözeltisine atıldığında bolca H2 gazı çıkarır.', tip: 'ÖSYM klasiği: Cu + HCl -> TEPKİME YOK!' },
       { f: 'Yarı soy metaller sadece derişik HNO3 (NO2 gazı), seyreltik HNO3 (NO gazı) ve sıcak derişik H2SO4 (SO2 gazı) ile tepkime verir.', t: 'Bakır HNO3 ile tepkime verdiğinde H2 gazı üretir.' },
@@ -636,10 +637,10 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: '24Cr ([Ar] 4s1 3d5) ve 29Cu ([Ar] 4s1 3d10) elektron dizilimleri küresel simetri kararlılığı nedeniyle özel durumlardır.', t: '24Cr elementi elektron diziliminde [Ar] 4s2 3d4 şeklinde biter.' },
       { f: 'Geçiş metalleri (d bloğu) katyon oluştururken elektronu önce en dış katmandaki s orbitalinden verir (örn. Fe: 4s2 3d6 -> Fe2+: 3d6).', t: 'Fe atomu iyonlaşırken elektron önce 3d orbitalinden kopar.' },
       { f: 'Aynı periyotta iyonlaşma enerjisi "3 aşağı 5 yukarı" kuralına göre sıralanır: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.', t: 'Aynı periyotta 3A grubunun iyonlaşma enerjisi 2A grubundan büyüktür.' },
-      { f: 's orbitalleri küresel simetriktir ve her enerji düzeyinde 1 tane (en çok 2 elektron) bulunur.', t: 's orbitalleri sadece n = 2 den itibaren başlar.' },
-      { f: 'p orbitalleri n = 2 den başlar, halter şeklindedir ve 3 tanedir (px, py, pz, en çok 6 elektron).', t: '1. temel enerji düzeyinde 3 adet p orbitali bulunur.' },
-      { f: 'd orbitalleri n = 3 ten başlar, 5 tanedir ve en çok 10 elektron alır.', t: 'd orbitalleri 4. temel enerji düzeyinden itibaren başlar.' },
-      { f: 'f orbitalleri n = 4 ten başlar, 7 tanedir ve en çok 14 elektron alır.', t: 'f orbitallerinde en çok 10 elektron bulunabilir.' },
+      { f: 's orbitalleri küresel simetriktir ve her enerji düzeyinde 1 tane (en çok 2 elektron) bulunur.', t: 's orbitalleri sadece n = 2\'den itibaren başlar.' },
+      { f: 'p orbitalleri n = 2\'den başlar, halter şeklindedir ve 3 tanedir (px, py, pz, en çok 6 elektron).', t: '1. temel enerji düzeyinde 3 adet p orbitali bulunur.' },
+      { f: 'd orbitalleri n = 3\'ten başlar, 5 tanedir ve en çok 10 elektron alır.', t: 'd orbitalleri 4. temel enerji düzeyinden itibaren başlar.' },
+      { f: 'f orbitalleri n = 4\'ten başlar, 7 tanedir ve en çok 14 elektron alır.', t: 'f orbitallerinde en çok 10 elektron bulunabilir.' },
       { f: 'Son orbitali tam dolu veya yarı dolu olan atomlar küresel simetri özelliği gösterir ve daha kararlıdır.', t: 'p4 ile biten elektron dizilimi küresel simetriktir.' },
       { f: 'İzoelektronik taneciklerde proton sayısı büyük olanın elektron başına düşen çekim kuvveti daha büyüktür ve yarıçapı küçüktür.', t: 'İzoelektronik katyon ve anyonların yarıçapları birbirine tam eşittir.' },
     ],
@@ -655,7 +656,7 @@ const UNIT_DEFS: UnitMetadata[] = [
         stem: 'Temel haldeki 24Cr atomunun elektron diziliminde yarı dolu orbital sayısı kaçtır?',
         opts: ['6', '4', '5', '1', '2'],
         ans: 0,
-        exp: '24Cr elektron dizilimi [Ar] 4s1 3d5 tir. 4s de 1 tane, 3d de 5 tane olmak üzere toplam 6 adet yarı dolu orbital içerir.'
+        exp: '24Cr elektron dizilimi [Ar] 4s1 3d5\'tir. 4s\'te 1 tane, 3d\'de 5 tane olmak üzere toplam 6 adet yarı dolu orbital içerir.'
       },
       {
         stem: 'Açısal momentum kuantum sayısı l = 2 ve manyetik kuantum sayısı ml = -1 olan bir elektron hangi orbital türünde bulunabilir?',
@@ -674,14 +675,14 @@ const UNIT_DEFS: UnitMetadata[] = [
     subtitle: loc('Boyle, Charles, Gay-Lussac ve İdeal Gaz Denklemi', 'PV=nRT, PM=dRT & Manometers'),
     keywords: ['PV', 'RT', 'Boyle', 'Charles', 'Gay-Lussac', 'Avogadro', 'ideal gaz'],
     factsList: [
-      { f: 'İdeal Gaz Denklemi: PV = nRT dir (P*V = n*R*T). (P: atm, V: litre, n: mol, T: Kelvin, R: 0.0821 veya 22.4/273).', t: 'İdeal gaz denkleminde sıcaklık Celsius (°C) olarak kullanılır.' },
-      { f: 'Kelvin sıcaklığı T(K) = t(°C) + 273.15 formülüyle bulunur; mutlak sıcaklık sıfırın altına inemez.', t: 'Sıcaklık 10 °C den 20 °C ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.' },
+      { f: 'İdeal Gaz Denklemi: PV = nRT\'dir (P*V = n*R*T). (P: atm, V: litre, n: mol, T: Kelvin, R: 0.0821 veya 22.4/273).', t: 'İdeal gaz denkleminde sıcaklık Celsius (°C) olarak kullanılır.' },
+      { f: 'Kelvin sıcaklığı T(K) = t(°C) + 273.15 formülüyle bulunur; mutlak sıcaklık sıfırın altına inemez.', t: 'Sıcaklık 10 °C\'den 20 °C\'ye çıktığında gazın mutlak sıcaklığı iki katına çıkmış olur.' },
       { f: 'Boyle Yasası: Sabit sıcaklık ve mol sayısında basınç ile hacim ters orantılıdır (P1V1 = P2V2).', t: 'Sabit sıcaklıkta gazın hacmi sıkıştırılarak yarıya indirilirse basıncı da yarıya iner.' },
-      { f: 'Charles Yasası: Sabit basınç ve mol sayısında hacim ile mutlak sıcaklık doğru orantılıdır (V1/T1 = V2/T2).', t: 'Gazın sıcaklığı 20 °C den 40 °C ye çıktığında hacmi tam 2 katına çıkar.' },
+      { f: 'Charles Yasası: Sabit basınç ve mol sayısında hacim ile mutlak sıcaklık doğru orantılıdır (V1/T1 = V2/T2).', t: 'Gazın sıcaklığı 20 °C\'den 40 °C\'ye çıktığında hacmi tam 2 katına çıkar.' },
       { f: 'Gay-Lussac Yasası: Sabit hacim ve mol sayısında basınç ile mutlak sıcaklık doğru orantılıdır (P1/T1 = P2/T2).', t: 'Sabit hacimli kapta gaz ısıtılırsa basıncı azalır.' },
       { f: 'Avogadro Yasası: Sabit sıcaklık ve basınçta hacim ile mol sayısı doğru orantılıdır (V1/n1 = V2/n2).', t: 'Farklı gazların eşit hacimleri daima eşit kütleye sahiptir.' },
-      { f: 'Yoğunluk formülü: P * MA = d * R * T dir (Pirinç Mandalinayı daha Rahat Tartar).', t: 'Gaz yoğunluğu sıcaklık arttıkça artar.' },
-      { f: 'Birleşik gaz denklemi: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2) dir.', t: 'Birleşik gaz denkleminde gazın türü formülü değiştirir.' },
+      { f: 'Yoğunluk formülü: P * MA = d * R * T\'dir (Pirinç Mandalinayı daha Rahat Tartar).', t: 'Gaz yoğunluğu sıcaklık arttıkça artar.' },
+      { f: 'Birleşik gaz denklemi: (P1*V1) / (n1*T1) = (P2*V2) / (n2*T2)\'dir.', t: 'Birleşik gaz denkleminde gazın türü formülü değiştirir.' },
       { f: 'Sabit basınçlı sistemler sürtünmesiz pistonlu kaplar ve esnek balonlardır (iç basınç dış basınca eşittir).', t: 'Çelik kapalı kaplarda gazın basıncı daima atmosfer basıncına eşittir.' },
       { f: 'Gaz molekülleri her yöne doğrusal, rastgele ve hızlı hareket eder (Brown hareketi).', t: 'Gaz molekülleri sadece dairesel yörüngelerde hareket eder.' },
       { f: 'Gaz tanecikleri arasındaki esnek çarpışmalarda toplam kinetik enerji ve momentum korunur.', t: 'Gaz tanecikleri çarptıkça kinetik enerjileri zamanla sıfıra düşer.' },
@@ -689,24 +690,24 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Gazlar birbiriyle her oranda homojen karışım oluşturur.', t: 'Birbiri içinde çözünmeyen heterojen gaz karışımları vardır.' },
       { f: 'Manometreler kapalı veya açık uçlu kaplardaki gaz basıncını cıva yüksekliğiyle ölçer.', t: 'Manometre havanın nemini ölçen alettir.' },
       { f: 'Sürtünmesiz ideal pistonlu kaba aynı sıcaklıkta gaz eklenirse gazın basıncı değişmez, hacmi artar.', t: 'Pistonlu kaba gaz eklendiğinde iç basınç hızla artar.' },
-      { f: 'Aynı gazın bulunduğu sabit hacimli kapta sıcaklık Kelvin cinsinden iki katına çıkarsa basınç iki katına çıkar.', t: 'Sıcaklık 25 °C den 50 °C ye çıkarsa basınç iki katına çıkar.' },
+      { f: 'Aynı gazın bulunduğu sabit hacimli kapta sıcaklık Kelvin cinsinden iki katına çıkarsa basınç iki katına çıkar.', t: 'Sıcaklık 25 °C\'den 50 °C\'ye çıkarsa basınç iki katına çıkar.' },
     ],
     comparisonsList: [
       { a: 'Boyle Yasası', b: 'Charles Yasası', d: 'Boyle P-V ters orantısını; Charles V-T(K) doğru orantısını açıklar.' },
       { a: 'Pistonlu Kap', b: 'Sabit Hacimli Kap', d: 'Pistonlu kapta basınç sabit hacim değişken; çelik kapta hacim sabit basınç değişkendir.' },
     ],
     sequencesList: [
-      { title: 'İdeal Gaz Problemi Çözüm Adımları', steps: ['Verilen sıcaklığı Kelvin e dönüştür (t + 273)', 'Basıncı atm, hacmi litreye çevir', 'PV = nRT formülünü yaz', 'Sabitleri sadeleştirip orantıyı kur'] }
+      { title: 'İdeal Gaz Problemi Çözüm Adımları', steps: ['Verilen sıcaklığı Kelvin\'e dönüştür (t + 273)', 'Basıncı atm, hacmi litreye çevir', 'PV = nRT formülünü yaz', 'Sabitleri sadeleştirip orantıyı kur'] }
     ],
     twinsList: [
       {
-        stem: '0 °C de 4.48 litrelik sabit hacimli kapta 0.5 mol He gazının uyguladığı basınç kaç atmosferdir?',
+        stem: '0 °C\'de 4.48 litrelik sabit hacimli kapta 0.5 mol He gazının uyguladığı basınç kaç atmosferdir?',
         opts: ['2.5 atm', '1.0 atm', '5.0 atm', '0.5 atm', '2.24 atm'],
         ans: 0,
         exp: 'P * V = n * R * T -> P * 4.48 = 0.5 * (22.4 / 273) * 273 -> P * 4.48 = 11.2 -> P = 11.2 / 4.48 = 2.5 atm.'
       },
       {
-        stem: 'Sürtünmesiz ideal pistonlu bir kapta 27 °C de 2 litre hacim kaplayan bir miktar gazın sıcaklığı 327 °C ye çıkarılırsa hacmi kaç litre olur?',
+        stem: 'Sürtünmesiz ideal pistonlu bir kapta 27 °C\'de 2 litre hacim kaplayan bir miktar gazın sıcaklığı 327 °C\'ye çıkarılırsa hacmi kaç litre olur?',
         opts: ['4 L', '24 L', '1 L', '8 L', '6 L'],
         ans: 0,
         exp: 'T1 = 27 + 273 = 300 K; T2 = 327 + 273 = 600 K. Sıcaklık 2 katına çıktığından hacim V2 = 2 * 2 = 4 litre olur.'
@@ -724,7 +725,7 @@ const UNIT_DEFS: UnitMetadata[] = [
     factsList: [
       { f: 'Graham Difüzyon Yasası: Gazların difüzyon hızı mol kütlesinin kareköküyle ters orantılıdır (v1/v2 = sqrt(M2/M1)).', t: 'Mol kütlesi büyük olan gazlar daha hızlı difüzlenir.' },
       { f: 'Gazların difüzyon hızı mutlak sıcaklığın kareköküyle doğru orantılıdır (v1/v2 = sqrt((T1*M2)/(T2*M1))).', t: 'Sıcaklık 4 katına çıkarsa difüzyon hızı 4 katına çıkar.', tip: 'Karekök ilişkisi vardır; hız 2 katına çıkar!' },
-      { f: 'Dalton Kısmi Basınçlar Yasası: Karışımdaki bir gazın kısmi basıncı Pi = Xi * Ptoplam dır (Xi = ni / ntoplam).', t: 'Kısmi basınç mol kesrinden bağımsızdır.' },
+      { f: 'Dalton Kısmi Basınçlar Yasası: Karışımdaki bir gazın kısmi basıncı Pi = Xi * Ptoplam\'dır (Xi = ni / ntoplam).', t: 'Kısmi basınç mol kesrinden bağımsızdır.' },
       { f: 'Gazların ortalama kinetik enerjisi (Ek = 3/2 kT) YALNIZCA mutlak sıcaklığa bağlıdır; gazın türünden bağımsızdır.', t: 'Aynı sıcaklıktaki CO2 gazının kinetik enerjisi H2 gazınınkinden büyüktür.', tip: 'Aynı sıcaklıktaki tüm gazların ortalama kinetik enerjisi eşittir!' },
       { f: 'Yüksek sıcaklık, düşük basınç ve küçük mol kütlesi (zayıf çekim) gazları idealliğe yaklaştırır.', t: 'Yüksek basınç ve düşük sıcaklıkta gazlar ideale en yakındır.' },
       { f: 'Gerçek gaz molekülleri arasında çekim kuvveti vardır ve öz hacimleri sıfır değildir.', t: 'İdeal gazların molekülleri arasında güçlü elektrostatik çekim vardır.' },
@@ -734,9 +735,9 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Su üstünde toplanan gazlarda toplam basınç Ptop = Pgaz + Psu_buharı formülüyle hesaplanır.', t: 'Su üstünde toplanan gazın basıncından suyun buhar basıncı çıkarılmaz.' },
       { f: 'Suyun buhar basıncı kabın hacmi değiştirildiğinde sıcaklık sabit kaldığı sürece DEĞİŞMEZ.', t: 'Piston yukarı çekilip hacim artırıldığında suyun buhar basıncı yarıya iner.' },
       { f: 'Soğutucu akışkanlar: Kritik sıcaklığı yüksek, kaynama noktası düşük, zehirsiz ve çevre dostu olmalıdır.', t: 'Soğutucu akışkanın kaynama noktası oda sıcaklığından çok yüksek olmalıdır.' },
-      { f: 'CH4 (MA=16) gazı SO2 (MA=64) gazından sqrt(64/16) = 2 kat daha hızlı difüzlenir.', t: 'CH4 gazı SO2 den 4 kat daha hızlı hareket eder.' },
+      { f: 'CH4 (MA=16) gazı SO2 (MA=64) gazından sqrt(64/16) = 2 kat daha hızlı difüzlenir.', t: 'CH4 gazı SO2\'den 4 kat daha hızlı hareket eder.' },
       { f: 'Effüzyon, gaz moleküllerinin küçük bir delikten vakumlu boşluğa kaçması olayıdır.', t: 'Effüzyon iki gazın birbiri içinde karışmasıdır.' },
-      { f: 'Sıkıştırılabilirlik faktörü Z = PV / nRT dir; ideal gazda Z = 1 dir.', t: 'Gerçek gazların hepsinde Z değeri daima 1 e eşittir.' },
+      { f: 'Sıkıştırılabilirlik faktörü Z = PV / nRT\'dir; ideal gazda Z = 1\'dir.', t: 'Gerçek gazların hepsinde Z değeri daima 1\'e eşittir.' },
       { f: 'Gaz taneciklerinin öz hacmi yüksek basınç altında ihmal edilemez büyüklüğe ulaşır.', t: 'Yüksek basınç altında gaz taneciklerinin hacmi tamamen yok olur.' },
     ],
     comparisonsList: [
@@ -772,11 +773,11 @@ const UNIT_DEFS: UnitMetadata[] = [
     factsList: [
       { f: 'Molarite (M), 1 litre çözeltide çözünmüş maddenin mol sayısıdır (M = n / V_çözelti(L)).', t: 'Molarite 1 kilogram çözücüdeki çözünen mol sayısıdır.' },
       { f: 'Molalite (m), 1 kilogram (1000 g) çözücüde çözünmüş maddenin mol sayısıdır (m = n / kg_çözücü).', t: 'Molalite çözeltinin toplam hacmine bölünerek bulunur.' },
-      { f: 'Mol kesri (X), bir bileşenin mol sayısının toplam mol sayısına oranıdır (XA = nA / ntoplam); toplamı 1 dir.', t: 'Mol kesri 1 den büyük değerler alabilir.' },
+      { f: 'Mol kesri (X), bir bileşenin mol sayısının toplam mol sayısına oranıdır (XA = nA / ntoplam); toplamı 1\'dir.', t: 'Mol kesri 1\'den büyük değerler alabilir.' },
       { f: 'Özkütle ve kütlece yüzde bilindiğinde molarite: M = (%C * d * 10) / MA formülüyle hesaplanır.', t: 'Molarite hesaplanırken çözelti özkütlesi kütlece yüzdeye bölünür.' },
-      { f: 'Çözeltilerin karıştırılması formülü: M1V1 + M2V2 + ... = M_son * V_toplam dır.', t: 'Çözeltiler karıştırıldığında hacimler asla toplanamaz.' },
-      { f: 'İyonik katı suda çözündüğünde çözeltideki iyon derişimi tuzun molaritesi ile iyon katsayısının çarpımıdır.', t: '0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M dır.', tip: '0.1 M AlCl3 de [Cl-] = 3 * 0.1 = 0.3 M dır!' },
-      { f: 'Çözeltiye saf su eklendiğinde (seyreltme) çözünenin mol sayısı değişmez; formül M1V1 = M2V2 dir.', t: 'Su eklendiğinde çözünenin mol sayısı yarıya iner.' },
+      { f: 'Çözeltilerin karıştırılması formülü: M1V1 + M2V2 + ... = M_son * V_toplam\'dır.', t: 'Çözeltiler karıştırıldığında hacimler asla toplanamaz.' },
+      { f: 'İyonik katı suda çözündüğünde çözeltideki iyon derişimi tuzun molaritesi ile iyon katsayısının çarpımıdır.', t: '0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M\'dır.', tip: '0.1 M AlCl3\'te [Cl-] = 3 * 0.1 = 0.3 M\'dır!' },
+      { f: 'Çözeltiye saf su eklendiğinde (seyreltme) çözünenin mol sayısı değişmez; formül M1V1 = M2V2\'dir.', t: 'Su eklendiğinde çözünenin mol sayısı yarıya iner.' },
       { f: 'Çözeltiden çökme olmadan su buharlaştırılırsa (deriştirme) molarite artar.', t: 'Su buharlaştırıldığında çözünen madde kütlesi azalır.' },
       { f: 'Farklı çözeltiler karıştırıldığında ortak iyonların toplam molü toplam hacme bölünerek yeni derişim bulunur.', t: 'Ortak iyonların derişimi karıştırmadan etkilenmez.' },
       { f: 'Sıcaklık arttıkça sıvı çözeltilerin hacmi genleştiğinden molarite bir miktar azalır; molalite ise sıcaklıkla değişmez.', t: 'Molalite sıcaklık arttıkça hacim genleşmesinden dolayı azalır.' },
@@ -785,7 +786,7 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Moleküler çözünen maddeler (glikoz C6H12O6, etil alkol C2H5OH) elektrik akımını iletmez (elektrolit değildir).', t: 'Şeker suda iyonlaşarak H+ ve OH- iyonlarına ayrışır.' },
       { f: '0.2 M 500 mL NaCl çözeltisinde çözünmüş NaCl mol sayısı n = M * V = 0.2 * 0.5 = 0.1 moldür.', t: '0.2 M 500 mL çözeltide 1 mol tuz çözünmüştür.' },
       { f: 'Çözelti derişimi arttıkça birim hacimdeki çözünen tanecik sayısı artar.', t: 'Derişik çözelti daima doygun çözelti demektir.' },
-      { f: 'Hacimce yüzde derişim = (Çözünen Sıvı Hacmi / Çözelti Toplam Hacmi) x 100 dür (örn. 80° kolonya).', t: 'Hacimce yüzde sadece katı-sıvı çözeltilerde kullanılır.' },
+      { f: 'Hacimce yüzde derişim = (Çözünen Sıvı Hacmi / Çözelti Toplam Hacmi) x 100\'dür (örn. 80° kolonya).', t: 'Hacimce yüzde sadece katı-sıvı çözeltilerde kullanılır.' },
     ],
     comparisonsList: [
       { a: 'Molarite', b: 'Molalite', d: 'Molarite mol/Litre çözeltidir (sıcaklıkla değişir); molalite mol/kg çözücüdür (sıcaklıktan bağımsızdır).' },
@@ -802,7 +803,7 @@ const UNIT_DEFS: UnitMetadata[] = [
         exp: 'n(NO3-) = (2 * 0.4 * 0.2) + (1 * 0.2 * 0.3) = 0.16 + 0.06 = 0.22 mol. V_toplam = 0.2 + 0.3 = 0.5 L. [NO3-] = 0.22 / 0.5 = 0.44 M.'
       },
       {
-        stem: 'Özkütlesi 1.2 g/mL olan kütlece %36.5 lik derişik HCl çözeltisinin molar derişimi kaçtır? (HCl: 36.5)',
+        stem: 'Özkütlesi 1.2 g/mL olan kütlece %36.5\'lik derişik HCl çözeltisinin molar derişimi kaçtır? (HCl: 36.5)',
         opts: ['12.0 M', '6.0 M', '1.2 M', '10.0 M', '3.65 M'],
         ans: 0,
         exp: 'M = (%C * d * 10) / MA -> M = (36.5 * 1.2 * 10) / 36.5 = 12.0 M.'
@@ -819,13 +820,13 @@ const UNIT_DEFS: UnitMetadata[] = [
     keywords: ['koligatif', 'Raoult', 'kaynama noktası yükselmesi', 'donma noktası alçalması', 'ozmotik basınç', 'van t Hoff'],
     factsList: [
       { f: 'Koligatif özellikler çözünen maddenin kimyasal cinsine değil, çözeltideki toplam tanecik derişimine bağlıdır.', t: 'Koligatif özellikler çözünen maddenin molekül geometrisine bağlıdır.' },
-      { f: 'Kaynama noktası yükselmesi: ΔTk = Kk * m * i dir (Kk: kaynama noktası sabiti, m: molalite, i: van t Hoff faktörü).', t: 'Kaynama noktası yükselmesi çözünenin mol kütlesiyle doğru orantılıdır.' },
-      { f: 'Donma noktası alçalması: ΔTd = Kd * m * i dir (su için Kd = 1.86 °C*kg/mol).', t: 'Uçucu olmayan katı çözündüğünde suyun donma noktası yükselir.' },
-      { f: 'van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1 dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).', t: 'Glikoz suda çözündüğünde i = 2 kabul edilir.' },
-      { f: 'Buhar basıncı alçalması (Raoult Yasası): Çözeltinin buhar basıncı Pçözelti = Pçözücü° * Xçözücü dür.', t: 'Uçucu olmayan katı eklendiğinde çözeltinin buhar basıncı artar.' },
+      { f: 'Kaynama noktası yükselmesi: ΔTk = Kk * m * i\'dir (Kk: kaynama noktası sabiti, m: molalite, i: van t Hoff faktörü).', t: 'Kaynama noktası yükselmesi çözünenin mol kütlesiyle doğru orantılıdır.' },
+      { f: 'Donma noktası alçalması: ΔTd = Kd * m * i\'dir (su için Kd = 1.86 °C*kg/mol).', t: 'Uçucu olmayan katı çözündüğünde suyun donma noktası yükselir.' },
+      { f: 'van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1\'dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).', t: 'Glikoz suda çözündüğünde i = 2 kabul edilir.' },
+      { f: 'Buhar basıncı alçalması (Raoult Yasası): Çözeltinin buhar basıncı Pçözelti = Pçözücü° * Xçözücü\'dür.', t: 'Uçucu olmayan katı eklendiğinde çözeltinin buhar basıncı artar.' },
       { f: 'Ozmotik basınç, yarı geçirgen zardan saf çözücünün derişik çözeltiye geçişini durdurmak için gereken basınçtır.', t: 'Ozmozda çözünen katı tanecikler zardan kolayca geçer.' },
       { f: 'Kışın yollara tuz atılması suyun donma noktasını alçaltarak buzlanmayı önleme uygulamasıdır.', t: 'Yollara tuz atılması tuzun kimyasal reaksiyonla ısı açığa çıkarması içindir.' },
-      { f: 'Otomobil radyatörlerine antifriz (etilen glikol) konması hem donmayı önler hem de kaynama noktasını yükseltir.', t: 'Antifriz suyun donma noktasını 0 °C nin üzerine çıkarır.' },
+      { f: 'Otomobil radyatörlerine antifriz (etilen glikol) konması hem donmayı önler hem de kaynama noktasını yükseltir.', t: 'Antifriz suyun donma noktasını 0 °C\'nin üzerine çıkarır.' },
       { f: 'Çözünürlük, 100 gram çözücüde belirli sıcaklık ve basınçta çözünebilen maksimum madde miktarıdır.', t: 'Çözünürlük 1 litre çözeltide çözünen katı gramıdır.' },
       { f: 'Katıların sudaki çözünürlüğü genellikle endotermiktir (sıcaklık arttıkça artar); gazların çözünürlüğü daima ekzotermiktir.', t: 'Gazların sudaki çözünürlüğü sıcaklık arttıkça hızla artar.' },
       { f: 'Gazların sudaki çözünürlüğü basınç arttıkça artar (Henry Yasası; gazlı içeceklerin soğuk ve kapalı tutulması).', t: 'Basınç arttıkça gazların çözünürlüğü azalır.' },
@@ -833,24 +834,24 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Ortak iyon etkisi çözünürlüğü daima azaltır (Le Chatelier prensibi).', t: 'Ortak iyon bulunan çözeltide tuz daha çok çözünür.' },
       { f: 'Çözeltideki toplam iyon derişimi ne kadar büyükse donma noktası o kadar düşük, kaynama noktası o kadar yüksektir.', t: 'Eşit derişimli NaCl ve AlCl3 çözeltilerinin kaynama noktaları aynıdır.' },
       { f: 'Doygunluk: Çözebileceği kadar çözünen içeren çözelti doygundur; aşırı doygun çözeltiler kararsızdır ve aşı kristaliyle çöker.', t: 'Aşırı doygun çözelti sonsuza kadar kararlı kalan dengeli sistemdir.' },
-      { f: 'Gazoz kapağı açıldığında basınç düştüğü için CO2 gazı kabarcıklar halinde çözeltiden ayrılır.', t: 'Kapak açıldığında CO2 nin çözünürlüğü artar.' },
+      { f: 'Gazoz kapağı açıldığında basınç düştüğü için CO2 gazı kabarcıklar halinde çözeltiden ayrılır.', t: 'Kapak açıldığında CO2\'nin çözünürlüğü artar.' },
     ],
     comparisonsList: [
       { a: 'Kaynama Noktası Yükselmesi', b: 'Donma Noktası Alçalması', d: 'Çözünen tanecik derişimi arttıkça kaynama noktası yükselir, donma noktası alçalır.' },
       { a: 'Endotermik Çözünme', b: 'Ekzotermik Çözünme', d: 'Endotermikte sıcaklık arttıkça çözünürlük artar; ekzotermikte sıcaklık arttıkça çözünürlük azalır.' },
     ],
     sequencesList: [
-      { title: 'Donma Noktası Alçalması Hesap Adımları', steps: ['Maddenin molünü hesapla', 'Çözücünün kütlesini kg a çevir', 'Molaliteyi bul (m = n / kg)', 'ΔTd = Kd * m * i ile düşüşü hesaplayıp 0 °C den çıkar'] }
+      { title: 'Donma Noktası Alçalması Hesap Adımları', steps: ['Maddenin molünü hesapla', 'Çözücünün kütlesini kg\'a çevir', 'Molaliteyi bul (m = n / kg)', 'ΔTd = Kd * m * i ile düşüşü hesaplayıp 0 °C\'den çıkar'] }
     ],
     twinsList: [
       {
-        stem: '1 kg saf suda 1 mol NaCl çözünerek hazırlanan çözeltinin 1 atm de donmaya başlama sıcaklığı kaç °C dir? (Su için Kd = 1.86 °C*kg/mol)',
+        stem: '1 kg saf suda 1 mol NaCl çözünerek hazırlanan çözeltinin 1 atm\'de donmaya başlama sıcaklığı kaç °C\'dir? (Su için Kd = 1.86 °C*kg/mol)',
         opts: ['-3.72 °C', '-1.86 °C', '0.00 °C', '-0.93 °C', '-5.58 °C'],
         ans: 0,
         exp: 'NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTd = Kd * m * i = 1.86 * 1 * 2 = 3.72 °C. Donma noktası = 0 - 3.72 = -3.72 °C.'
       },
       {
-        stem: 'Aşağıdaki 1 er molal sulu çözeltilerden hangisinin 1 atm dış basınçta kaynamaya başlama sıcaklığı en yüksektir?',
+        stem: 'Aşağıdaki 1\'er molal sulu çözeltilerden hangisinin 1 atm dış basınçta kaynamaya başlama sıcaklığı en yüksektir?',
         opts: ['AlCl3', 'CaCl2', 'NaCl', 'Glikoz (C6H12O6)', 'KNO3'],
         ans: 0,
         exp: 'AlCl3 için i = 4 (1 Al3+ + 3 Cl-). Toplam tanecik derişimi en yüksek (4 m) olduğundan kaynama noktası yükselmesi en büyüktür.'
@@ -981,7 +982,7 @@ const UNIT_DEFS: UnitMetadata[] = [
     ],
     comparisonsList: [
       { a: 'Kc', b: 'Kp', d: 'Kc derişimler cinsinden denge sabiti, Kp kısmi basınçlar cinsinden denge sabitidir; Kp = Kc(RT)^Δn dir.' },
-      { a: 'Denge Kesri Qc', b: 'Denge Sabiti Kc', d: 'Qc herhangi bir andaki derişim oranıdır; Kc sistem dengedeyken aldığı sabit değerdir.' },
+      { a: 'Dengeye Sıcaklığın Etkisi', b: 'Dengeye Basıncın Etkisi', d: 'Dengeye sıcaklığın etkisi denge sabiti Kc nin sayısal değerini değiştirir; dengeye basıncın etkisi ise gaz mol sayısına göre denge yönünü kaydırır ancak Kc nin değerini değiştirmez.' },
     ],
     sequencesList: [
       { title: 'Le Chatelier Etkisi Analiz Adımları', steps: ['Yapılan dış etkiyi belirle (sıcaklık, derişim, hacim)', 'Sistemin etkiyi azaltıcı yönünü bul', 'Tepkimenin kaydığı yönü belirle (ürünler veya girenler)', 'Kc nin değişip değişmediğini kontrol et (sadece T ile)'] }
@@ -1016,33 +1017,33 @@ const UNIT_DEFS: UnitMetadata[] = [
     subtitle: loc('pH, pOH, Ka, Kb, Tampon ve Titrasyon Eğrileri', 'Weak Acids, Buffer Solutions & Equivalence'),
     keywords: ['pH', 'pOH', 'Ka', 'Kb', 'tampon', 'titrasyon', 'eşdeğerlik'],
     factsList: [
-      { f: '25 °C de suyun otoiyonizasyon sabiti Ksu = [H+] * [OH-] = 1.0x10^-14 tür; pH + pOH = 14 tür.', t: 'Her sıcaklıkta pH + pOH toplamı mutlaka 14 tür.', tip: 'Ksu sıcaklık arttıkça büyür (endotermiktir), bu yüzden sıcaklıkla pH+pOH değişir!' },
+      { f: '25 °C\'de suyun otoiyonizasyon sabiti Ksu = [H+] * [OH-] = 1.0x10^-14\'tür; pH + pOH = 14\'tür.', t: 'Her sıcaklıkta pH + pOH toplamı mutlaka 14\'tür.', tip: 'Ksu sıcaklık arttıkça büyür (endotermiktir), bu yüzden sıcaklıkla pH+pOH değişir!' },
       { f: 'Kuvvetli asit ve bazlar suda %100 iyonlaşırken, zayıf asit ve bazlar kısmen iyonlaşarak denge kurar (Ka, Kb).', t: 'Zayıf asitler suda hiç iyonlaşmaz.' },
-      { f: 'Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca) dır (Ca: asidin başlangıç molaritesi).', t: 'Zayıf asidin H+ derişimi başlangıç derişimine eşittir.' },
+      { f: 'Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca)\'dır (Ca: asidin başlangıç molaritesi).', t: 'Zayıf asidin H+ derişimi başlangıç derişimine eşittir.' },
       { f: 'Brønsted-Lowry tanımına göre H+ veren asit, H+ alan bazdır; aralarında 1 H+ fark olan çiftlere konjuge (eşlenik) asit-baz denir.', t: 'Eşlenik asit-baz çiftleri arasında 2 elektron farkı bulunur.' },
-      { f: 'Bir eşlenik asit-baz çiftinde Ka * Kb = Ksu = 10^-14 tür (25 °C de).', t: 'Ka değeri büyük olan asidin eşlenik bazının Kb değeri de çok büyüktür.' },
+      { f: 'Bir eşlenik asit-baz çiftinde Ka * Kb = Ksu = 10^-14\'tür (25 °C\'de).', t: 'Ka değeri büyük olan asidin eşlenik bazının Kb değeri de çok büyüktür.' },
       { f: 'Tampon çözelti, zayıf asit ile onun konjuge tuzunu (veya zayıf baz ile konjuge tuzunu) içeren ve pH değişimine direnen sistemdir.', t: 'Tampon çözelti kuvvetli asit ile kuvvetli baz karışımından oluşur.' },
       { f: 'İnsan kanı (pH ≈ 7.4) H2CO3 / HCO3- karbonik asit-bikarbonat tampon sistemiyle dengelenir.', t: 'Kan tampon sistemi hidroklorik asit ile dengelenir.' },
-      { f: 'Titrasyonda eşdeğerlik noktası (dönüm noktası): Asitten gelen H+ mol sayısının bazdan gelen OH- mol sayısına eşit olduğu andır (nH+ = nOH-).', t: 'Eşdeğerlik noktasında çözeltinin pH ı daima 7.00 olmak zorundadır.', tip: 'Zayıf asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH > 7 dir!' },
-      { f: 'Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00 dir.', t: 'Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0 dır.' },
+      { f: 'Titrasyonda eşdeğerlik noktası (dönüm noktası): Asitten gelen H+ mol sayısının bazdan gelen OH- mol sayısına eşit olduğu andır (nH+ = nOH-).', t: 'Eşdeğerlik noktasında çözeltinin pH\'ı daima 7.00 olmak zorundadır.', tip: 'Zayıf asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH > 7\'dir!' },
+      { f: 'Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00\'dir.', t: 'Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0\'dır.' },
       { f: 'Tuz hidrolizi: Zayıf asitten gelen anyon veya zayıf bazdan gelen katyonun suyla tepkimeye girmesidir.', t: 'Nötr tuzların iyonları suda şiddetle hidroliz olur.' },
-      { f: 'Asitlik sabiti Ka büyüdükçe asidin kuvveti ve iyonlaşma yüzdesi artar.', t: 'Ka sı küçük olan asit daha kuvvetlidir.' },
+      { f: 'Asitlik sabiti Ka büyüdükçe asidin kuvveti ve iyonlaşma yüzdesi artar.', t: 'Ka\'sı küçük olan asit daha kuvvetlidir.' },
       { f: 'Zayıf bir asit çözeltisine saf su eklenip seyreltilirse iyonlaşma yüzdesi artar; ancak H+ derişimi azalır (pH artar).', t: 'Zayıf asit seyreltildiğinde H+ derişimi artar.' },
-      { f: 'Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb dir (Z: tesir/etki değerliği).', t: 'Titrasyonda tesir değerliği dikkate alınmaz.' },
+      { f: 'Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb\'dir (Z: tesir/etki değerliği).', t: 'Titrasyonda tesir değerliği dikkate alınmaz.' },
       { f: 'HCl, HNO3, H2SO4 kuvvetli asit; HF, HCN, CH3COOH (sirke asidi) zayıf asitlerdir.', t: 'HF camı erittiği için en kuvvetli asittir.', tip: 'HF zayıf asittir; camı eritmesi kimyasal özel afinitesindendir!' },
       { f: 'NaOH, KOH kuvvetli baz; NH3 (amonyak) zayıf bazdır.', t: 'NH3 kuvvetli bir bazdır.' },
-      { f: 'İndikatörler ortamın pH ına bağlı olarak renk değiştiren zayıf organik asit veya bazlardır.', t: 'İndikatörler titrasyon tepkimesini hızlandıran katalizörlerdir.' },
+      { f: 'İndikatörler ortamın pH\'ına bağlı olarak renk değiştiren zayıf organik asit veya bazlardır.', t: 'İndikatörler titrasyon tepkimesini hızlandıran katalizörlerdir.' },
     ],
     comparisonsList: [
-      { a: 'Kuvvetli Asit', b: 'Zayıf Asit', d: 'Kuvvetli asit suda %100 iyonlaşır (Ka sı yoktur); zayıf asit kısmen iyonlaşır denge kurar (Ka vardır).' },
-      { a: 'Eşdeğerlik Noktası', b: 'Nötr Nokta', d: 'Eşdeğerlik nH+ = nOH- olduğu andır; nötr nokta pH = 7 olduğu andır. Zayıf asit-kuvvetli bazda eşdeğerlikte pH > 7 dir.' },
+      { a: 'Kuvvetli Asit', b: 'Zayıf Asit', d: 'Kuvvetli asit suda %100 iyonlaşır (Ka\'sı yoktur); zayıf asit kısmen iyonlaşır denge kurar (Ka vardır).' },
+      { a: 'Eşdeğerlik Noktası', b: 'Nötr Nokta', d: 'Eşdeğerlik nH+ = nOH- olduğu andır; nötr nokta pH = 7 olduğu andır. Zayıf asit-kuvvetli bazda eşdeğerlikte pH > 7\'dir.' },
     ],
     sequencesList: [
       { title: 'Zayıf Asit pH Hesaplama Adımları', steps: ['İyonlaşma denge denklemini yaz: HA ⇌ H+ + A-', '[H+] = sqrt(Ka * Ca) bağıntısını uygula', '[H+] değerini hesapla', 'pH = -log[H+] formülünü çöz'] }
     ],
     twinsList: [
       {
-        stem: '0.1 M lık sulu sirke asidi (CH3COOH) çözeltisinin pH değeri kaçtır? (CH3COOH için Ka = 1.0x10^-5)',
+        stem: '0.1 M\'lık sulu sirke asidi (CH3COOH) çözeltisinin pH değeri kaçtır? (CH3COOH için Ka = 1.0x10^-5)',
         opts: ['3', '1', '5', '7', '2'],
         ans: 0,
         exp: '[H+] = sqrt(Ka * Ca) = sqrt(10^-5 * 10^-1) = sqrt(10^-6) = 10^-3 M. pH = -log[H+] = -log(10^-3) = 3.'
@@ -1168,8 +1169,8 @@ const UNIT_DEFS: UnitMetadata[] = [
     factsList: [
       { f: 'Elektroliz, istemsiz (E°pil < 0) bir redoks tepkimesinin dışarıdan elektrik enerjisi verilerek zorla gerçekleştirilmesidir.', t: 'Elektroliz kendiliğinden elektrik üreten bir galvanik sistemdir.' },
       { f: 'Faraday 1. Kanunu: Elektrotlarda toplanan madde miktarı devreden geçen elektrik yükü miktarı (Q = I * t) ile doğru orantılıdır.', t: 'Elektrotta toplanan madde devreden geçen akımla ters orantılıdır.' },
-      { f: '1 Faraday = 1 mol elektron yükü = 96500 Coulomb dur.', t: '1 Faraday elektrik yükü 1 Coulomb a eşittir.' },
-      { f: 'Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z) dir (z: tesir değerliği / alınan-verilen elektron sayısı).', t: 'Toplanan madde kütlesi maddenin mol kütlesine bölünerek bulunur.' },
+      { f: '1 Faraday = 1 mol elektron yükü = 96500 Coulomb\'dur.', t: '1 Faraday elektrik yükü 1 Coulomb\'a eşittir.' },
+      { f: 'Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z)\'dir (z: tesir değerliği / alınan-verilen elektron sayısı).', t: 'Toplanan madde kütlesi maddenin mol kütlesine bölünerek bulunur.' },
       { f: 'Faraday 2. Kanunu: Seri bağlı elektroliz kaplarından geçen elektrik yükü eşittir ve toplanan maddelerin eşdeğer gram sayıları eşittir.', t: 'Seri bağlı kaplarda toplanan maddelerin kütleleri daima birbirine eşittir.' },
       { f: 'Suyun elektrolizinde (Hoffman voltametresi): Katotta 2 hacim H2 gazı toplanırken, anotta 1 hacim O2 gazı toplanır (2 H2O -> 2 H2 + O2).', t: 'Suyun elektrolizinde anotta katottan 2 kat daha fazla gaz toplanır.' },
       { f: 'Erimiş tuzların elektrolizinde katotta katyon indirgenerek metal açığa çıkar; anotta anyon yükseltgenerek ametal gazı açığa çıkar.', t: 'Erimiş NaCl elektrolizinde anotta sodyum metali toplanır.' },
@@ -1180,7 +1181,7 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Elektrolitik kaplamacılıkta (galvanoplasti): Kaplanacak eşya KATOTA bağlanır; kaplama metali ANOTA bağlanır.', t: 'Kaplanacak eşya anota bağlanmalıdır.' },
       { f: 'Saf su elektriği çok az ilettiğinden suyun elektrolizinde iletkenliği artırmak için ortama birkaç damla H2SO4 eklenir.', t: 'Suyun elektrolizi için saf suya şeker eklenir.' },
       { f: 'Erimiş CaCl2 tuzundan 2 Faraday akım geçerse katotta 1 mol Ca metali toplanır (Ca2+ + 2e- -> Ca).', t: '2 Faraday akım geçtiğinde 2 mol Ca metali toplanır.' },
-      { f: 'Downs hücresi erimiş NaCl den metalik sodyum üretimi için kullanılan endüstriyel elektroliz hücresidir.', t: 'Downs hücresi pil üretmek için kullanılır.' },
+      { f: 'Downs hücresi erimiş NaCl\'den metalik sodyum üretimi için kullanılan endüstriyel elektroliz hücresidir.', t: 'Downs hücresi pil üretmek için kullanılır.' },
       { f: 'Demir bir boruyu korozyondan korumak için magnezyum bloğu bağlanması aktiflik farkına dayalı kurban elektrot uygulamasıdır.', t: 'Kurban elektrot demirin üzerine altın kaplama yapmaktır.' },
     ],
     comparisonsList: [
@@ -1214,7 +1215,7 @@ const UNIT_DEFS: UnitMetadata[] = [
     subtitle: loc('Allotroplar, Hibritleşme, Sigma/Pi ve VSEPR', 'Hybridization, VSEPR Geometries & Graphene'),
     keywords: ['sp3', 'sp2', 'sp', 'VSEPR', 'hibritleşme', 'sigma', 'pi', 'allotrop', 'grafen'],
     factsList: [
-      { f: 'Wöhler, 1828 de anorganik bir madde olan potasyum siyanattan laboratuvarda üre sentezleyerek vitalizm (yaşam gücü) teorisini çürütmüştür.', t: 'Wöhler ilk kez canlı dokudan petrol sentezlemiştir.' },
+      { f: 'Wöhler, 1828\'de anorganik bir madde olan potasyum siyanattan laboratuvarda üre sentezleyerek vitalizm (yaşam gücü) teorisini çürütmüştür.', t: 'Wöhler ilk kez canlı dokudan petrol sentezlemiştir.' },
       { f: 'Karbon atomu temel halde 4 kovalent bağ yapar ve hibritleşerek bağ enerjilerini eşitler.', t: 'Karbon atomu bileşiklerinde en fazla 2 kovalent bağ yapabilir.' },
       { f: 'Elmas, karbon atomlarının sp3 hibritleşmesi yaptığı, düzgün dörtyüzlü ağ örgülü, elektriği iletmeyen en sert doğal maddedir.', t: 'Elmas elektriği çok iyi iletir ve grafit kadar yumuşaktır.' },
       { f: 'Grafit, karbon atomlarının sp2 hibritleşmesi yaptığı altıgen tabakalı yapıdır; serbest pi elektronları sayesinde elektriği iletir.', t: 'Grafit elektriği kesinlikle iletmez.' },
@@ -1223,11 +1224,11 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'İki atom arasında oluşan İLK bağ daima sigma (σ) bağıdır; sonradan oluşan ikinci ve üçüncü bağlar pi (π) bağıdır.', t: 'İki atom arasında önce pi bağı kurulur.' },
       { f: 'Sigma bağı orbitallerin uç uca örtüşmesiyle, pi bağı paralel (yan yana) örtüşmesiyle oluşur; sigma bağı pi bağından daha sağlamdır.', t: 'Pi bağları sigma bağlarından çok daha güçlüdür.' },
       { f: 'Karbon atomu tüm bağlarını tekli yapmışsa sp3, bir çift bağ yapmışsa sp2, bir üçlü bağ (veya iki çift bağ) yapmışsa sp hibritleşmesi yapmıştır.', t: 'CH4 molekülünde karbon atomu sp hibritleşmesi yapmıştır.' },
-      { f: 'VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180° dir (örn. BeH2, CO2, C2H2).', t: 'CO2 molekülü kırık doğru geometrisindedir.' },
-      { f: 'VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120° dir (örn. BH3, BF3, SO3).', t: 'BF3 molekülü düzgün dörtyüzlüdür.' },
-      { f: 'VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5° dir (örn. CH4, CCl4).', t: 'CH4 molekülünde bağ açısı 90° dir.' },
-      { f: 'VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3° dir (örn. NH3); molekül polardır.', t: 'NH3 molekülü apolar ve düzlem üçgendir.' },
-      { f: 'VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5° dir (örn. H2O); molekül polardır.', t: 'H2O molekülü doğrusal geometride apolardır.' },
+      { f: 'VSEPR AX2: Molekül geometrisi DOĞRUSAL, bağ açısı 180°\'dir (örn. BeH2, CO2, C2H2).', t: 'CO2 molekülü kırık doğru geometrisindedir.' },
+      { f: 'VSEPR AX3: Molekül geometrisi DÜZLEM ÜÇGEN, bağ açısı 120°\'dir (örn. BH3, BF3, SO3).', t: 'BF3 molekülü düzgün dörtyüzlüdür.' },
+      { f: 'VSEPR AX4: Molekül geometrisi DÜZGÜN DÖRTYÜZLÜ, bağ açısı 109.5°\'dir (örn. CH4, CCl4).', t: 'CH4 molekülünde bağ açısı 90°\'dir.' },
+      { f: 'VSEPR AX3E: Molekül geometrisi ÜÇGEN PİRAMİT, bağ açısı 107.3°\'dir (örn. NH3); molekül polardır.', t: 'NH3 molekülü apolar ve düzlem üçgendir.' },
+      { f: 'VSEPR AX2E2: Molekül geometrisi KIRIK DOĞRU (açısal), bağ açısı 104.5°\'dir (örn. H2O); molekül polardır.', t: 'H2O molekülü doğrusal geometride apolardır.' },
       { f: 'Organik bileşiklerin ana kaynağı genellikle canlılar ve fosil yakıtlardır; anorganik bileşikler minerallerdir.', t: 'Anorganik bileşiklerin sayısı organik bileşiklerden çok daha fazladır.' },
       { f: 'Organik bileşikler genellikle yanıcıdır, erime noktaları düşüktür ve tepkimeleri yavaştır.', t: 'Organik bileşikler erime noktası binlerce derece olan iyonik kristallerdir.' },
     ],
@@ -1280,11 +1281,11 @@ const UNIT_DEFS: UnitMetadata[] = [
       { f: 'Alkenlerde ikili bağ karbonlarına bağlı gruplar aynı tarafta ise cis-, zıt tarafta ise trans- geometrik izomeri adını alır.', t: 'Aynı karbon atomuna iki özdeş grup bağlı olsa bile cis-trans izomeri görülür.' },
     ],
     comparisonsList: [
-      { a: 'Aldehit', b: 'Keton', d: 'Aldehit karbonilin ucundadır (Tollens ile gümüş aynası verir); keton karbonilin ortasındadır (Tollens e etki etmez).' },
+      { a: 'Aldehit', b: 'Keton', d: 'Aldehit karbonilin ucundadır (Tollens ile gümüş aynası verir); keton karbonilin ortasındadır (Tollens\'e etki etmez).' },
       { a: 'Alkan', b: 'Alken', d: 'Alkan doymuştur katılma vermez; alken doymamıştır bromlu suyun rengini giderir ve polimerleşir.' },
     ],
     sequencesList: [
-      { title: 'Markovnikov Katılma Mekanizması', steps: ['Alkendeki pi bağını kır', 'Reaktifin H+ katyonunu hidrojeni çok olan C ye bağla', 'Kararlı karbokatyonu oluştur', 'Reaktifin anyonunu (Br-, OH-) diğer C ye bağla'] }
+      { title: 'Markovnikov Katılma Mekanizması', steps: ['Alkendeki pi bağını kır', 'Reaktifin H+ katyonunu hidrojeni çok olan C\'ye bağla', 'Kararlı karbokatyonu oluştur', 'Reaktifin anyonunu (Br-, OH-) diğer C\'ye bağla'] }
     ],
     twinsList: [
       {
@@ -1584,33 +1585,7 @@ export function compileAllFlashcards(
   units: ChemistryUnitSeedData[] = ALL_CHEMISTRY_UNITS,
   lang: LanguageCode = 'tr'
 ): CompiledFlashcard[] {
-  const cards: CompiledFlashcard[] = [];
-
-  // Compile 18 flashcards per unit for the first 22 units = 396 flashcards
-  const targetUnits = units.slice(0, 22);
-
-  targetUnits.forEach((u) => {
-    const meta = UNIT_DEFS.find((d) => d.id === u.id);
-    if (!meta) return;
-
-    for (let i = 0; i < 18; i++) {
-      const fact = meta.factsList[i % meta.factsList.length];
-      const cardId = `${u.id}-card-${String(i + 1).padStart(2, '0')}`;
-      cards.push({
-        id: cardId,
-        unitId: u.id,
-        front: `${u.title[lang]} — Soru: ${fact.t}`,
-        frontPrompt: `${u.title[lang]} — Soru: ${fact.t}`,
-        back: `Doğru Bilgi: ${fact.f}`,
-        backAnswer: `Doğru Bilgi: ${fact.f}`,
-        category: i % 2 === 0 ? 'fact' : 'trap',
-        osymTip: fact.tip || 'ÖSYM sınavlarında bu kavrama özellikle dikkat edilmelidir.',
-        box: 1,
-      });
-    }
-  });
-
-  return cards;
+  return engineCompileAllFlashcards(units, lang);
 }
 
 // ---------------------------------------------------------------------------

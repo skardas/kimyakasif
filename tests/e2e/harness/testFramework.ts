@@ -334,6 +334,7 @@ export function getGlobalSummary(): GlobalSummary {
     'F11-AUDIO': 'Web Audio & Confetti',
     'F12-OFFLINE': '100% Offline Capability',
     'F13-I18N': '8-Language Localization',
+    'F14-M6': 'AI Coach, Profiles & Stages',
   };
 
   const featureMatrix: FeatureMatrixItem[] = Object.keys(featureNames).map((code) => {

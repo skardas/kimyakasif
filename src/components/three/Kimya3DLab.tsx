@@ -25,6 +25,8 @@ import {
   CheckCircle2,
   XCircle,
   FileCheck2,
+  ZoomIn,
+  ZoomOut,
 } from 'lucide-react';
 
 import type { LanguageCode } from '../../types/chemistry';
@@ -62,6 +64,85 @@ export interface QuizState {
   earnedXp: number;
 }
 
+export const ZOOM_FIT_I18N: Record<
+  LanguageCode,
+  { zoomIn: string; zoomOut: string; fitScreen: string; reset: string }
+> = {
+  tr: {
+    zoomIn: 'Yakınlaştır',
+    zoomOut: 'Uzaklaştır',
+    fitScreen: 'Ekrana Sığdır',
+    reset: 'Sıfırla',
+  },
+  en: {
+    zoomIn: 'Zoom In',
+    zoomOut: 'Zoom Out',
+    fitScreen: 'Fit to Screen',
+    reset: 'Reset',
+  },
+  de: {
+    zoomIn: 'Vergrößern',
+    zoomOut: 'Verkleinern',
+    fitScreen: 'An Bildschirm anpassen',
+    reset: 'Zurücksetzen',
+  },
+  fr: {
+    zoomIn: 'Zoom avant',
+    zoomOut: 'Zoom arrière',
+    fitScreen: "Ajuster à l'écran",
+    reset: 'Réinitialiser',
+  },
+  ru: {
+    zoomIn: 'Приблизить',
+    zoomOut: 'Отдалить',
+    fitScreen: 'По размеру экрана',
+    reset: 'Сброс',
+  },
+  ar: {
+    zoomIn: 'تكبير',
+    zoomOut: 'تصغير',
+    fitScreen: 'ملائمة للشاشة',
+    reset: 'إعادة ضبط',
+  },
+  zh: {
+    zoomIn: '放大',
+    zoomOut: '缩小',
+    fitScreen: '适应屏幕',
+    reset: '重置',
+  },
+  ku: {
+    zoomIn: 'Nêzîk bike',
+    zoomOut: 'Dûr bixe',
+    fitScreen: 'Li ser ekranê bicîh bike',
+    reset: 'Reset',
+  },
+};
+
+/**
+ * Calculates camera distance required to fit a 3D bounding box and its hotspots
+ * into the view frustum on both portrait mobile (aspect < 1) and desktop viewports.
+ */
+export function calculateFitDistance(
+  box: THREE.Box3,
+  camera: THREE.PerspectiveCamera,
+  safetyFactor: number = 1.25
+): { requiredDistance: number; center: THREE.Vector3; size: THREE.Vector3 } {
+  const size = box.getSize(new THREE.Vector3());
+  const center = box.getCenter(new THREE.Vector3());
+  const sphere = box.getBoundingSphere(new THREE.Sphere());
+  const radius = Math.max(sphere.radius, size.x / 2, size.y / 2, 0.5);
+
+  const vFov = (camera.fov * Math.PI) / 180;
+  const aspect = camera.aspect || 1.0;
+  const hFov = 2 * Math.atan(Math.tan(vFov / 2) * aspect);
+
+  const distV = radius / Math.tan(vFov / 2);
+  const distH = radius / Math.tan(hFov / 2);
+  const requiredDistance = Math.max(distV, distH) * safetyFactor;
+
+  return { requiredDistance, center, size };
+}
+
 export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
   lang,
   initialSceneId = 'water-vsepr',
@@ -86,10 +167,31 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [categoryFilter, setCategoryFilter] = useState<string>('all');
   const [webglSupported, setWebglSupported] = useState<boolean>(true);
-  const [hotspotScreenCoords, setHotspotScreenCoords] = useState<
-    Record<string, { x: number; y: number; visible: boolean }>
-  >({});
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+
+  // Hotspot DOM badge refs (avoids 60-120 FPS React re-renders)
+  const badgeRefs = useRef<Record<string, HTMLButtonElement | null>>({});
+
+  // Active control state refs for animation loop (prevents WebGL renderer recreation)
+  const isLiveSimRef = useRef<boolean>(isLiveSim);
+  useEffect(() => {
+    isLiveSimRef.current = isLiveSim;
+  }, [isLiveSim]);
+
+  const isAutoRotateRef = useRef<boolean>(isAutoRotate);
+  useEffect(() => {
+    isAutoRotateRef.current = isAutoRotate;
+  }, [isAutoRotate]);
+
+  const currentSceneRef = useRef<ChemicalSceneSpec>(currentScene);
+  useEffect(() => {
+    currentSceneRef.current = currentScene;
+  }, [currentScene]);
+
+  // Light refs for neutral daylight CPK lighting updates
+  const ambientLightRef = useRef<THREE.AmbientLight | null>(null);
+  const keyLightRef = useRef<THREE.DirectionalLight | null>(null);
+  const fillLightRef = useRef<THREE.DirectionalLight | null>(null);
 
   // Quiz State
   const [quizState, setQuizState] = useState<QuizState>({
@@ -175,6 +277,73 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
     const nextIndex = (currentIndex + 1) % PRIMARY_32_SCENES.length;
     handleSelectScene(PRIMARY_32_SCENES[nextIndex]);
   };
+
+  const fitToScreenRef = useRef<() => void>(() => {});
+
+  // Fit to Screen & Auto-Framing using both vertical & horizontal FOV (mobile & desktop)
+  const handleFitToScreen = useCallback(() => {
+    const camera = cameraRef.current;
+    const controls = controlsRef.current;
+    const procObj = proceduralObjectRef.current;
+    if (!camera || !controls || !procObj) return;
+
+    const box = new THREE.Box3().setFromObject(procObj.group);
+    currentScene.hotspots.forEach((hs) => {
+      box.expandByPoint(new THREE.Vector3(hs.position[0], hs.position[1], hs.position[2]));
+    });
+
+    const { requiredDistance, center } = calculateFitDistance(box, camera, 1.25);
+
+    let dir = new THREE.Vector3().subVectors(camera.position, controls.target);
+    if (dir.lengthSq() < 0.001) {
+      const defaultCam = currentScene.cameraPosition || [0, 1.5, 6];
+      const defaultTarget = currentScene.target || [0, 0, 0];
+      dir.subVectors(new THREE.Vector3(...defaultCam), new THREE.Vector3(...defaultTarget));
+      if (dir.lengthSq() < 0.001) {
+        dir.set(0, 0.5, 1);
+      }
+    }
+    dir.normalize();
+
+    camera.position.copy(center).addScaledVector(dir, requiredDistance);
+    controls.target.copy(center);
+    controls.maxDistance = Math.max(40.0, requiredDistance * 2.5);
+    controls.update();
+  }, [currentScene]);
+
+  useEffect(() => {
+    fitToScreenRef.current = handleFitToScreen;
+  }, [handleFitToScreen]);
+
+  // Zoom In: dollys camera forward along camera-target vector
+  const handleZoomIn = useCallback(() => {
+    const camera = cameraRef.current;
+    const controls = controlsRef.current;
+    if (!camera || !controls) return;
+    const offset = new THREE.Vector3().subVectors(camera.position, controls.target);
+    const dist = offset.length();
+    const minDist = controls.minDistance || 1.0;
+    const step = Math.max(dist * 0.2, 0.4);
+    const nextDist = Math.max(minDist, dist - step);
+    offset.setLength(nextDist);
+    camera.position.copy(controls.target).add(offset);
+    controls.update();
+  }, []);
+
+  // Zoom Out: dollys camera backward along camera-target vector within maxDistance
+  const handleZoomOut = useCallback(() => {
+    const camera = cameraRef.current;
+    const controls = controlsRef.current;
+    if (!camera || !controls) return;
+    const offset = new THREE.Vector3().subVectors(camera.position, controls.target);
+    const dist = offset.length();
+    const maxDist = controls.maxDistance || 40.0;
+    const step = Math.max(dist * 0.25, 0.4);
+    const nextDist = Math.min(maxDist, dist + step);
+    offset.setLength(nextDist);
+    camera.position.copy(controls.target).add(offset);
+    controls.update();
+  }, []);
 
   // Reset Camera
   const handleResetCamera = useCallback(() => {
@@ -262,12 +431,14 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
     }
   };
 
-  // Three.js Mount and Lifecycle Effect
+  // --------------------------------------------------------------------------
+  // Three.js Mount and Lifecycle Effect (Runs once on mount / WebGL init)
+  // --------------------------------------------------------------------------
   useEffect(() => {
     const mount = canvasMountRef.current;
     if (!mount) return;
 
-    // Check WebGL context support
+    // Check WebGL context support and cleanly release the test context
     try {
       const testCanvas = document.createElement('canvas');
       const gl = testCanvas.getContext('webgl') || testCanvas.getContext('experimental-webgl');
@@ -275,6 +446,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
         setWebglSupported(false);
         return;
       }
+      (gl as WebGLRenderingContext).getExtension('WEBGL_lose_context')?.loseContext();
     } catch {
       setWebglSupported(false);
       return;
@@ -291,6 +463,20 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
     renderer.toneMappingExposure = 1.1;
     mount.appendChild(renderer.domElement);
     rendererRef.current = renderer;
+
+    // WebGL Context Lost and Restored Event Listeners
+    const handleContextLost = (e: Event) => {
+      e.preventDefault();
+      if (animFrameIdRef.current) {
+        cancelAnimationFrame(animFrameIdRef.current);
+      }
+      setWebglSupported(false);
+    };
+    const handleContextRestored = () => {
+      setWebglSupported(true);
+    };
+    renderer.domElement.addEventListener('webglcontextlost', handleContextLost, false);
+    renderer.domElement.addEventListener('webglcontextrestored', handleContextRestored, false);
 
     // Scene & Camera
     const scene = new THREE.Scene();
@@ -309,41 +495,37 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
     controls.minDistance = currentScene.cameraConstraints?.minDistance || 1.5;
-    controls.maxDistance = currentScene.cameraConstraints?.maxDistance || 25.0;
+    controls.maxDistance = Math.max(40.0, currentScene.cameraConstraints?.maxDistance || 25.0);
     const targetPos = currentScene.target || [0, 0, 0];
     controls.target.set(...targetPos);
     controlsRef.current = controls;
 
-    // Lighting
+    // Neutral Daylight Lighting (preserves CPK colors in both themes)
     const ambientLight = new THREE.AmbientLight(
-      resolvedDark ? 0x1e293b : 0xf8fafc,
+      resolvedDark ? 0x334155 : 0xf8fafc,
       resolvedDark ? 0.9 : 1.2
     );
     scene.add(ambientLight);
+    ambientLightRef.current = ambientLight;
 
-    const keyLight = new THREE.DirectionalLight(
-      resolvedDark ? 0x38bdf8 : 0x0284c7,
-      resolvedDark ? 1.4 : 1.2
-    );
+    const keyLight = new THREE.DirectionalLight(0xffffff, resolvedDark ? 1.4 : 1.2);
     keyLight.position.set(5, 8, 5);
     scene.add(keyLight);
+    keyLightRef.current = keyLight;
 
-    const fillLight = new THREE.DirectionalLight(
-      resolvedDark ? 0xa855f7 : 0x94a3b8,
-      resolvedDark ? 0.8 : 0.6
-    );
+    const fillLight = new THREE.DirectionalLight(0xf8fafc, resolvedDark ? 0.8 : 0.6);
     fillLight.position.set(-5, -4, -5);
     scene.add(fillLight);
+    fillLightRef.current = fillLight;
 
-    // Build procedural 3D model
+    // Build initial procedural 3D model
     const procObj = currentScene.build(resolvedDark);
     proceduralObjectRef.current = procObj;
     scene.add(procObj.group);
-
-    // Apply current explode factor
     if (procObj.setExplode) {
       procObj.setExplode(explodeFactor);
     }
+    fitToScreenRef.current?.();
 
     // Animation Loop
     let clock = new THREE.Clock();
@@ -355,76 +537,156 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
       const elapsedTime = clock.getElapsedTime();
 
       // Procedural object animation
-      if (procObj.animate) {
-        procObj.animate(elapsedTime, isLiveSim);
+      if (proceduralObjectRef.current?.animate) {
+        proceduralObjectRef.current.animate(elapsedTime, isLiveSimRef.current);
       }
 
       // Auto rotation
-      if (isAutoRotate) {
-        procObj.group.rotation.y += 0.005;
+      if (isAutoRotateRef.current && proceduralObjectRef.current?.group) {
+        proceduralObjectRef.current.group.rotation.y += 0.005;
       }
 
       controls.update();
       renderer.render(scene, camera);
 
-      // Project hotspots to 2D screen coordinates
-      const coords: Record<string, { x: number; y: number; visible: boolean }> = {};
+      // Direct DOM Badge Positioning (zero React re-renders at 60-120 FPS)
       const containerW = mount.clientWidth;
       const containerH = mount.clientHeight;
+      if (containerW > 0 && containerH > 0) {
+        const activeHotspots = currentSceneRef.current?.hotspots || [];
+        activeHotspots.forEach((hs) => {
+          const el = badgeRefs.current[hs.id];
+          if (!el) return;
 
-      currentScene.hotspots.forEach((hs) => {
-        tempVec.set(...hs.position);
-        tempVec.project(camera);
+          tempVec.set(hs.position[0], hs.position[1], hs.position[2]);
+          tempVec.project(camera);
 
-        const isBehind = tempVec.z > 1.0;
-        const screenX = (tempVec.x * 0.5 + 0.5) * containerW;
-        const screenY = (-tempVec.y * 0.5 + 0.5) * containerH;
+          const isBehind = tempVec.z < -1.0 || tempVec.z > 1.0;
+          if (isBehind) {
+            el.style.display = 'none';
+          } else {
+            const screenX = (tempVec.x * 0.5 + 0.5) * containerW;
+            const screenY = (-tempVec.y * 0.5 + 0.5) * containerH;
 
-        coords[hs.id] = {
-          x: screenX,
-          y: screenY,
-          visible: !isBehind && screenX >= 0 && screenX <= containerW && screenY >= 0 && screenY <= containerH,
-        };
-      });
+            // Viewport padding clamping (safe bounds: 24px inset so badges never clip)
+            const pad = 24;
+            const clampedX = Math.max(pad, Math.min(containerW - pad, screenX));
+            const clampedY = Math.max(pad, Math.min(containerH - pad, screenY));
 
-      setHotspotScreenCoords(coords);
+            el.style.display = 'flex';
+            el.style.transform = `translate3d(${clampedX}px, ${clampedY}px, 0) translate(-50%, -50%)`;
+          }
+        });
+      }
     };
 
     animate();
 
-    // Resize Handler
-    const handleResize = () => {
-      if (!mount || !renderer || !camera) return;
-      const w = mount.clientWidth;
-      const h = mount.clientHeight;
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-      renderer.setSize(w, h);
-    };
+    // Container ResizeObserver for robust layout & sidebar transitions
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const { width: w, height: h } = entry.contentRect;
+        if (w > 0 && h > 0) {
+          camera.aspect = w / h;
+          camera.updateProjectionMatrix();
+          renderer.setSize(w, h);
+          fitToScreenRef.current?.();
+        }
+      }
+    });
+    resizeObserver.observe(mount);
 
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup
+    // Cleanup on unmount
     return () => {
-      window.removeEventListener('resize', handleResize);
+      resizeObserver.disconnect();
+      renderer.domElement.removeEventListener('webglcontextlost', handleContextLost);
+      renderer.domElement.removeEventListener('webglcontextrestored', handleContextRestored);
       if (animFrameIdRef.current) {
         cancelAnimationFrame(animFrameIdRef.current);
       }
       controls.dispose();
-      if (procObj.dispose) {
-        procObj.dispose();
+      if (proceduralObjectRef.current?.dispose) {
+        proceduralObjectRef.current.dispose();
+        proceduralObjectRef.current = null;
       }
+      scene.clear();
       renderer.dispose();
+      renderer.forceContextLoss();
       if (renderer.domElement && mount.contains(renderer.domElement)) {
         mount.removeChild(renderer.domElement);
       }
     };
-  }, [currentScene, resolvedDark, isLiveSim, isAutoRotate]);
+  }, [webglSupported]);
+
+  // --------------------------------------------------------------------------
+  // Scene Replacement & Theme Update Effect (Zero-Churn WebGL Context)
+  // --------------------------------------------------------------------------
+  useEffect(() => {
+    const scene = sceneRef.current;
+    const camera = cameraRef.current;
+    const controls = controlsRef.current;
+    if (!scene || !camera || !controls) return;
+
+    // 1. Remove & dispose previous procedural object
+    if (proceduralObjectRef.current) {
+      scene.remove(proceduralObjectRef.current.group);
+      proceduralObjectRef.current.dispose?.();
+      proceduralObjectRef.current = null;
+    }
+
+    // 2. Build new procedural object
+    const procObj = currentScene.build(resolvedDark);
+    proceduralObjectRef.current = procObj;
+    scene.add(procObj.group);
+
+    // Apply explode factor
+    if (procObj.setExplode) {
+      procObj.setExplode(explodeFactor);
+    }
+
+    // 3. Update neutral lights for dark/light mode
+    if (ambientLightRef.current) {
+      ambientLightRef.current.color.setHex(resolvedDark ? 0x334155 : 0xf8fafc);
+      ambientLightRef.current.intensity = resolvedDark ? 0.9 : 1.2;
+    }
+    if (keyLightRef.current) {
+      keyLightRef.current.color.setHex(0xffffff);
+      keyLightRef.current.intensity = resolvedDark ? 1.4 : 1.2;
+    }
+    if (fillLightRef.current) {
+      fillLightRef.current.color.setHex(0xf8fafc);
+      fillLightRef.current.intensity = resolvedDark ? 0.8 : 0.6;
+    }
+
+    // 4. Reset camera and controls to currentScene constraints
+    const fov = currentScene.cameraConstraints?.fov || 45;
+    const near = currentScene.cameraConstraints?.near || 0.1;
+    const far = currentScene.cameraConstraints?.far || 100.0;
+    camera.fov = fov;
+    camera.near = near;
+    camera.far = far;
+    const camPos = currentScene.cameraPosition || [0, 1.5, 6];
+    camera.position.set(...camPos);
+    camera.updateProjectionMatrix();
+
+    controls.minDistance = currentScene.cameraConstraints?.minDistance || 1.5;
+    controls.maxDistance = Math.max(40.0, currentScene.cameraConstraints?.maxDistance || 25.0);
+    const targetPos = currentScene.target || [0, 0, 0];
+    controls.target.set(...targetPos);
+    controls.update();
+
+    // 5. Auto-frame bounding box to fit viewport responsively
+    handleFitToScreen();
+
+    // Clear badge refs
+    badgeRefs.current = {};
+  }, [currentScene, resolvedDark, handleFitToScreen]);
 
   // Explode view factor effect
   useEffect(() => {
     if (proceduralObjectRef.current?.setExplode) {
       proceduralObjectRef.current.setExplode(explodeFactor);
+      fitToScreenRef.current?.();
     }
   }, [explodeFactor]);
 
@@ -543,7 +805,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
             </span>
             <div>
               <div style={{ fontSize: '0.88rem', fontWeight: 700, lineHeight: 1.2 }}>
-                {currentScene.title[lang] || currentScene.title.tr}
+                <bdi dir="ltr">{currentScene.title[lang] || currentScene.title.tr}</bdi>
               </div>
               <div style={{ fontSize: '0.75rem', opacity: 0.7 }}>
                 {currentScene.unitId.toUpperCase()} • {currentScene.category}
@@ -651,7 +913,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
             <div style={{ fontSize: '0.92rem', fontWeight: 600 }}>
               Hedef:{' '}
               <span style={{ color: '#10b981', fontWeight: 800 }}>
-                [{targetHotspot?.title[lang] || targetHotspot?.title.tr}]
+                <bdi dir="ltr">[{targetHotspot?.title[lang] || targetHotspot?.title.tr}]</bdi>
               </span>{' '}
               noktasını 3D model üzerinde bulun ve tıklayın!
             </div>
@@ -724,7 +986,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
           />
         )}
 
-        {/* Screen-Projected Hotspot Badges Overlay */}
+        {/* Screen-Projected Hotspot Badges Overlay (Direct DOM Ref positioning) */}
         {webglSupported && (
           <div
             style={{
@@ -735,22 +997,23 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
             }}
           >
             {currentScene.hotspots.map((hs) => {
-              const coord = hotspotScreenCoords[hs.id];
-              if (!coord || !coord.visible) return null;
               const isSelected = selectedHotspot?.id === hs.id;
 
               return (
                 <button
                   key={hs.id}
+                  ref={(el) => {
+                    badgeRefs.current[hs.id] = el;
+                  }}
                   onClick={(e) => handleHotspotClick(hs, e)}
                   style={{
                     position: 'absolute',
-                    left: `${coord.x}px`,
-                    top: `${coord.y}px`,
-                    transform: 'translate(-50%, -50%)',
+                    left: 0,
+                    top: 0,
+                    transform: 'translate3d(-9999px, -9999px, 0)',
+                    display: 'none',
                     pointerEvents: 'auto',
                     cursor: 'pointer',
-                    display: 'flex',
                     alignItems: 'center',
                     gap: 6,
                     padding: mode === 'quiz' ? '6px' : '4px 8px',
@@ -770,7 +1033,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                       : '0 2px 8px rgba(0, 0, 0, 0.25)',
                     fontSize: '0.78rem',
                     fontWeight: 700,
-                    transition: 'transform 0.15s ease, background 0.15s ease',
+                    transition: 'background 0.15s ease',
                   }}
                   aria-label={mode === 'quiz' ? `İğne ${hs.pinNumber}` : hs.title[lang] || hs.title.tr}
                 >
@@ -782,9 +1045,11 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                       backgroundColor: hs.color || '#38bdf8',
                     }}
                   />
-                  <span>
-                    {mode === 'quiz' ? hs.pinNumber : (hs.badgeLabel || hs.title[lang] || hs.title.tr)}
-                  </span>
+                  <bdi dir="ltr">
+                    <span>
+                      {mode === 'quiz' ? hs.pinNumber : (hs.badgeLabel || hs.title[lang] || hs.title.tr)}
+                    </span>
+                  </bdi>
                 </button>
               );
             })}
@@ -802,7 +1067,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
             transform: 'translateX(-50%)',
             display: 'flex',
             alignItems: 'center',
-            gap: 12,
+            gap: 10,
             padding: '8px 16px',
             borderRadius: '9999px',
             background: resolvedDark ? 'rgba(17, 24, 39, 0.92)' : 'rgba(255, 255, 255, 0.92)',
@@ -810,8 +1075,74 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
             border: '1px solid var(--border-color, rgba(148, 163, 184, 0.25))',
             boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)',
             zIndex: 15,
+            maxWidth: '92vw',
+            overflowX: 'auto',
           }}
         >
+          {/* Explicit Zoom In (+) */}
+          <button
+            onClick={handleZoomIn}
+            title={ZOOM_FIT_I18N[lang]?.zoomIn || ZOOM_FIT_I18N.tr.zoomIn}
+            aria-label={ZOOM_FIT_I18N[lang]?.zoomIn || ZOOM_FIT_I18N.tr.zoomIn}
+            style={{
+              padding: '6px',
+              borderRadius: '50%',
+              border: 'none',
+              background: 'transparent',
+              color: 'inherit',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <ZoomIn size={18} />
+          </button>
+
+          {/* Explicit Zoom Out (-) */}
+          <button
+            onClick={handleZoomOut}
+            title={ZOOM_FIT_I18N[lang]?.zoomOut || ZOOM_FIT_I18N.tr.zoomOut}
+            aria-label={ZOOM_FIT_I18N[lang]?.zoomOut || ZOOM_FIT_I18N.tr.zoomOut}
+            style={{
+              padding: '6px',
+              borderRadius: '50%',
+              border: 'none',
+              background: 'transparent',
+              color: 'inherit',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <ZoomOut size={18} />
+          </button>
+
+          {/* Fit to Screen (Ekrana Sığdır) */}
+          <button
+            onClick={handleFitToScreen}
+            title={ZOOM_FIT_I18N[lang]?.fitScreen || ZOOM_FIT_I18N.tr.fitScreen}
+            aria-label={ZOOM_FIT_I18N[lang]?.fitScreen || ZOOM_FIT_I18N.tr.fitScreen}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 5,
+              padding: '5px 12px',
+              borderRadius: '9999px',
+              border: '1px solid var(--brand-primary, #0284c7)',
+              background: resolvedDark ? 'rgba(56, 189, 248, 0.15)' : 'rgba(2, 132, 199, 0.1)',
+              color: 'inherit',
+              fontSize: '0.75rem',
+              fontWeight: 700,
+              cursor: 'pointer',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            <Maximize2 size={14} />
+            <span>{ZOOM_FIT_I18N[lang]?.fitScreen || ZOOM_FIT_I18N.tr.fitScreen}</span>
+          </button>
+
           {/* Reset Camera */}
           <button
             onClick={handleResetCamera}
@@ -825,6 +1156,8 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
               color: 'inherit',
               cursor: 'pointer',
               display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
             <Focus size={18} />
@@ -1065,7 +1398,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
               Kör İğne Sınavı Tamamlandı!
             </h2>
             <p style={{ opacity: 0.8, fontSize: '0.92rem', marginBottom: 18 }}>
-              {currentScene.title[lang] || currentScene.title.tr} modelindeki tüm kritik uzamsal noktaları
+              <bdi dir="ltr">{currentScene.title[lang] || currentScene.title.tr}</bdi> modelindeki tüm kritik uzamsal noktaları
               başarıyla incelediniz.
             </p>
 
@@ -1346,7 +1679,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                     </div>
 
                     <div style={{ fontSize: '0.88rem', fontWeight: 700, lineHeight: 1.25 }}>
-                      {s.title[lang] || s.title.tr}
+                      <bdi dir="ltr">{s.title[lang] || s.title.tr}</bdi>
                     </div>
 
                     <div
@@ -1360,7 +1693,7 @@ export const Kimya3DLab: React.FC<Kimya3DLabProps> = ({
                         lineHeight: 1.3,
                       }}
                     >
-                      {s.subtitle[lang] || s.subtitle.tr}
+                      <bdi dir="ltr">{s.subtitle[lang] || s.subtitle.tr}</bdi>
                     </div>
                   </button>
                 );

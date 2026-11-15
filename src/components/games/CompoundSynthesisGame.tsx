@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import {
   ArrowLeft,
   Sparkles,
@@ -197,6 +197,16 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
   const [showDiscoveryBook, setShowDiscoveryBook] = useState<boolean>(false);
   const [discoveredRecipeIds, setDiscoveredRecipeIds] = useState<string[]>([]);
   const [score, setScore] = useState<number>(0);
+  const brewTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Clear pending timers on unmount
+  useEffect(() => {
+    return () => {
+      if (brewTimeoutRef.current) {
+        clearTimeout(brewTimeoutRef.current);
+      }
+    };
+  }, []);
 
   // Load discovered recipes from localStorage
   useEffect(() => {
@@ -249,7 +259,8 @@ export const CompoundSynthesisGame: React.FC<CompoundSynthesisGameProps> = ({
     setIsBrewing(true);
     playBubble();
 
-    setTimeout(() => {
+    if (brewTimeoutRef.current) clearTimeout(brewTimeoutRef.current);
+    brewTimeoutRef.current = setTimeout(() => {
       setIsBrewing(false);
 
       // Check matches against canonical recipes

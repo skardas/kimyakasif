@@ -76,7 +76,7 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-f03",
       "fact": {
-        "tr": "1 Faraday = 1 mol elektron yükü = 96500 Coulomb dur.",
+        "tr": "1 Faraday = 1 mol elektron yükü = 96500 Coulomb'dur.",
         "en": "1 Faraday = 1 mole of electron charge = 96500 Coulombs.",
         "de": "1 Faraday = 1 Mol Elektronenladung = 96500 Coulomb.",
         "fr": "1 Faraday = 1 mole de charge électronique = 96 500 Coulombs.",
@@ -86,7 +86,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ku": "1 Faraday = 1 mol barkirina elektronê = 96500 Kulomb."
       },
       "trap": {
-        "tr": "1 Faraday elektrik yükü 1 Coulomb a eşittir.",
+        "tr": "1 Faraday elektrik yükü 1 Coulomb'a eşittir.",
         "en": "1 Faraday electric charge is equal to 1 Coulomb.",
         "de": "1 Faradaysche elektrische Ladung entspricht 1 Coulomb.",
         "fr": "1 charge électrique Faraday équivaut à 1 Coulomb.",
@@ -99,7 +99,7 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-f04",
       "fact": {
-        "tr": "Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z) dir (z: tesir değerliği / alınan-verilen elektron sayısı).",
+        "tr": "Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z)'dir (z: tesir değerliği / alınan-verilen elektron sayısı).",
         "en": "The formula for the mass of matter collected at the electrodes is: m = (Q * MA) / (96500 * z) (z: potency / number of electrons given and received).",
         "de": "Die Formel für die an den Elektroden gesammelte Materiemasse lautet: m = (Q * MA) / (96500 * z) (z: Potenz / Anzahl der abgegebenen und empfangenen Elektronen).",
         "fr": "La formule de la masse de matière collectée au niveau des électrodes est : m = (Q * MA) / (96500 * z) (z : puissance / nombre d'électrons donnés et reçus).",
@@ -352,7 +352,7 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-f15",
       "fact": {
-        "tr": "Downs hücresi erimiş NaCl den metalik sodyum üretimi için kullanılan endüstriyel elektroliz hücresidir.",
+        "tr": "Downs hücresi erimiş NaCl'den metalik sodyum üretimi için kullanılan endüstriyel elektroliz hücresidir.",
         "en": "Downs cell is an industrial electrolysis cell used for the production of metallic sodium from molten NaCl.",
         "de": "Die Downs-Zelle ist eine industrielle Elektrolysezelle zur Herstellung von metallischem Natrium aus geschmolzenem NaCl.",
         "fr": "La cellule Downs est une cellule d'électrolyse industrielle utilisée pour la production de sodium métallique à partir de NaCl fondu.",
@@ -552,7 +552,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ku": "Barkirina Elektrîkê (Q = I.t)"
       },
       "distinction": {
-        "tr": "1 mol elektronun yükü 96500 Coulomb dur; devreden geçen yük akım şiddeti ile sürenin çarpımıdır.",
+        "tr": "1 mol elektronun yükü 96500 Coulomb'dur; devreden geçen yük akım şiddeti ile sürenin çarpımıdır.",
         "en": "The charge of 1 mole of electrons is 96500 Coulombs; It is the product of the load current passing through the circuit and the duration.",
         "de": "Die Ladung von 1 Mol Elektronen beträgt 96500 Coulomb; Sie ist das Produkt aus dem durch den Stromkreis fließenden Laststrom und der Dauer.",
         "fr": "La charge d'une mole d'électrons est de 96 500 Coulombs ; C'est le produit du courant de charge traversant le circuit et de la durée.",
@@ -1040,14 +1040,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya ve Elektrik: Elektroliz ve Korozyon konusunu işlerken Erimiş Tuz Elektrolizi üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Electrochemistry: Electrolysis & Corrosion, which statement regarding Molten Salt Electrolysis represents the correct answer?",
-        "de": "Welche Aussage zu Elektrolyse von geschmolzenem Salz stellt im Kontext von Elektrolyse & Korrosion die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Électrolyse & Corrosion, quelle proposition sur Électrolyse au sel fondu constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Электролиз и коррозия», какой ответ относительно «Электролиз расплавленной соли» является правильным?",
-        "ar": "أثناء دراسة موضوع \"التحليل الكهربائي والتآكل\" مخبرياً، أي إجابة بخصوص \"التحليل الكهربائي للملح المنصهر\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“电解与腐蚀”实验探究与教学分析中，针对“熔盐电解”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Elektrolîz û Korozyon\" de, kîjan bersiv derbarê \"Elektrolîza xwêya helandî\" de rast e?"
+        "tr": "Kimya dersinde Kimya ve Elektrik: Elektroliz ve Korozyon ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Electrochemistry: Electrolysis & Corrosion, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Elektrolyse & Korrosion: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Électrolyse & Corrosion, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Электролиз и коррозия», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"التحليل الكهربائي والتآكل\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“电解与腐蚀”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Elektrolîz û Korozyon\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1071,7 +1071,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "Anyona xwedan potansiyela oksîdasyonê ya herî piçûk li anodê pêşî derdikeve holê."
         },
         {
-          "tr": "1 Faraday = 1 mol elektron yükü = 96500 Coulomb dur.",
+          "tr": "1 Faraday = 1 mol elektron yükü = 96500 Coulomb'dur.",
           "en": "1 Faraday = 1 mole of electron charge = 96500 Coulombs.",
           "de": "1 Faraday = 1 Mol Elektronenladung = 96500 Coulomb.",
           "fr": "1 Faraday = 1 mole de charge électronique = 96 500 Coulombs.",
@@ -1103,7 +1103,7 @@ export const unit22: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"1 Faraday = 1 mol elektron yükü = 96500 Coulomb dur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"1 Faraday = 1 mol elektron yükü = 96500 Coulomb'dur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"1 Faraday = 1 mole of electron charge = 96500 Coulombs.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"1 Faraday = 1 Mol Elektronenladung = 96500 Coulomb.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"1 Faraday = 1 mole de charge électronique = 96 500 Coulombs.\". Notion fondamentale du programme officiel de chimie.",
@@ -1116,14 +1116,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin04",
       "stem": {
-        "tr": "Kimya dersinde Kimya ve Elektrik: Elektroliz ve Korozyon ünitesi incelenirken Katot Gazı (H2) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Electrochemistry: Electrolysis & Corrosion, which of the following propositions concerning Cathode Gas (H2) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Elektrolyse & Korrosion: Welche Behauptung bezüglich Kathodengas (H2) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Électrolyse & Corrosion, laquelle des affirmations suivantes concernant Gaz cathodique (H2) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Электролиз и коррозия», какое из следующих суждений о «Катодный газ (H2)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"التحليل الكهربائي والتآكل\"، أي من الأحكام التالية المتعلقة بـ \"غاز الكاثود (H2)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“电解与腐蚀”核心规律时，下列关于“阴极气体 (H2)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Elektrolîz û Korozyon\" tê kirin, kîjan daraza li ser \"Gaza Katodê (H2)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimya ve Elektrik: Elektroliz ve Korozyon konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Electrochemistry: Electrolysis & Corrosion?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Elektrolyse & Korrosion zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Électrolyse & Corrosion ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Электролиз и коррозия»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"التحليل الكهربائي والتآكل\"؟",
+        "zh": "根据“电解与腐蚀”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Elektrolîz û Korozyon\" de rast e?"
       },
       "options": [
         {
@@ -1157,7 +1157,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "Ji bo elektrolîza avê, şekir li ava paqij tê zêdekirin."
         },
         {
-          "tr": "Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z) dir (z: tesir değerliği / alınan-verilen elektron sayısı).",
+          "tr": "Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z)'dir (z: tesir değerliği / alınan-verilen elektron sayısı).",
           "en": "The formula for the mass of matter collected at the electrodes is: m = (Q * MA) / (96500 * z) (z: potency / number of electrons given and received).",
           "de": "Die Formel für die an den Elektroden gesammelte Materiemasse lautet: m = (Q * MA) / (96500 * z) (z: Potenz / Anzahl der abgegebenen und empfangenen Elektronen).",
           "fr": "La formule de la masse de matière collectée au niveau des électrodes est : m = (Q * MA) / (96500 * z) (z : puissance / nombre d'électrons donnés et reçus).",
@@ -1179,7 +1179,7 @@ export const unit22: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z) dir (z: tesir değerliği / alınan-verilen elektron sayısı).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z)'dir (z: tesir değerliği / alınan-verilen elektron sayısı).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"The formula for the mass of matter collected at the electrodes is: m = (Q * MA) / (96500 * z) (z: potency / number of electrons given and received).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Die Formel für die an den Elektroden gesammelte Materiemasse lautet: m = (Q * MA) / (96500 * z) (z: Potenz / Anzahl der abgegebenen und empfangenen Elektronen).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La formule de la masse de matière collectée au niveau des électrodes est : m = (Q * MA) / (96500 * z) (z : puissance / nombre d'électrons donnés et reçus).\". Notion fondamentale du programme officiel de chimie.",
@@ -1192,14 +1192,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimya ve Elektrik: Elektroliz ve Korozyon konusundaki temel kimyasal kurallar çerçevesinde Faraday Sabiti (96500 C) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Faraday Constant (96500 C) within the fundamental principles of Electrochemistry: Electrolysis & Corrosion?",
-        "de": "Welche Aussage beschreibt das Konzept Faraday-Konstante (96500 °C) im Rahmen von Elektrolyse & Korrosion am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Constante de Faraday (96 500 °C) selon les lois de Électrolyse & Corrosion?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Константа Фарадея (96500 C)» в рамках темы «Электролиз и коррозия»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"ثابت فاراداي (96500 درجة مئوية)\" ضمن قواعد \"التحليل الكهربائي والتآكل\"؟",
-        "zh": "根据“电解与腐蚀”的基本化学原理，下列哪项阐述能最准确地界定“法拉第常数 (96500 C)”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Faraday Constant (96500 C)\" di çarçoveya prensîbên \"Elektrolîz û Korozyon\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimya ve Elektrik: Elektroliz ve Korozyon sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Electrochemistry: Electrolysis & Corrosion, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Elektrolyse & Korrosion: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Électrolyse & Corrosion, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Электролиз и коррозия», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التحليل الكهربائي والتآكل\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“电解与腐蚀”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Elektrolîz û Korozyon\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1268,14 +1268,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimya ve Elektrik: Elektroliz ve Korozyon sorularında karşılaşılan Kurban Elektrot konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Electrochemistry: Electrolysis & Corrosion, which assertion regarding Sacrificial Electrode is correct?",
-        "de": "Welche Feststellung bezüglich Opferelektrode ist nach den chemischen Gesetzmäßigkeiten von Elektrolyse & Korrosion richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Électrolyse & Corrosion, quelle affirmation concernant Électrode sacrificielle est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Электролиз и коррозия», какое положение относительно «Жертвенный электрод» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التحليل الكهربائي والتآكل\"، أي حكم متعلق بـ \"القطب الذبيحة\" يعتبر صحيحاً؟",
-        "zh": "在高考“电解与腐蚀”经典考题中，下列有关“牺牲电极”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Elektrolîz û Korozyon\" de, kîjan daraza li ser \"Elektroda Qurbanê\" rast e?"
+        "tr": "Aşağıda Kimya ve Elektrik: Elektroliz ve Korozyon ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Electrochemistry: Electrolysis & Corrosion, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Elektrolyse & Korrosion: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Électrolyse & Corrosion, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Электролиз и коррозия», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التحليل الكهربائي والتآكل\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“电解与腐蚀”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Elektrolîz û Korozyon\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1344,14 +1344,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin07",
       "stem": {
-        "tr": "Aşağıda Kimya ve Elektrik: Elektroliz ve Korozyon ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Korozyon ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Electrochemistry: Electrolysis & Corrosion, which statement about corrosion is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Elektrolyse & Korrosion: Welche Aussage über Korrosion ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Électrolyse & Corrosion, quelle affirmation relative à corrosion est exacte?",
-        "ru": "На основе фундаментальных положений темы «Электролиз и коррозия», какое суждение о «коррозия» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التحليل الكهربائي والتآكل\"، أي عبارة حول \"التآكل\" صحيحة؟",
-        "zh": "基于“电解与腐蚀”的基础化学知识体系，下列关于“腐蚀”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Elektrolîz û Korozyon\", kîjan gotin derbarê \"korozyon\" de rast e?"
+        "tr": "Kimya ve Elektrik: Elektroliz ve Korozyon konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Electrochemistry: Electrolysis & Corrosion, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Elektrolyse & Korrosion: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Électrolyse & Corrosion, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Электролиз и коррозия», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"التحليل الكهربائي والتآكل\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“电解与腐蚀”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Elektrolîz û Korozyon\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1395,7 +1395,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "Elektroda qurbanê zêr li ser hesin dike."
         },
         {
-          "tr": "1 Faraday elektrik yükü 1 Coulomb a eşittir.",
+          "tr": "1 Faraday elektrik yükü 1 Coulomb'a eşittir.",
           "en": "1 Faraday electric charge is equal to 1 Coulomb.",
           "de": "1 Faradaysche elektrische Ladung entspricht 1 Coulomb.",
           "fr": "1 charge électrique Faraday équivaut à 1 Coulomb.",
@@ -1420,14 +1420,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin08",
       "stem": {
-        "tr": "Kimya ve Elektrik: Elektroliz ve Korozyon konusu kapsamında Elektrostatik Kaplama ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Electrochemistry: Electrolysis & Corrosion, which of the following findings regarding Electrostatic Coating is scientifically verified?",
-        "de": "Im Rahmen der Einheit Elektrolyse & Korrosion: Welcher der folgenden Befunde zu Elektrostatische Beschichtung ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Électrolyse & Corrosion, laquelle des constatations suivantes concernant Revêtement électrostatique est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Электролиз и коррозия», какой из следующих выводов относительно «Электростатическое покрытие» научно подтверждён?",
-        "ar": "في سياق موضوع \"التحليل الكهربائي والتآكل\"، أي من النتائج التالية المتعلقة بـ \"طلاء كهرباء\" مثبتة علمياً؟",
-        "zh": "在“电解与腐蚀”主题范畴内，下列关于“静电涂层”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Elektrolîz û Korozyon\" de, kîjan ji van encamên li ser \"Coating Electrostatic\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimya ve Elektrik: Elektroliz ve Korozyon ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Electrochemistry: Electrolysis & Corrosion, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Elektrolyse & Korrosion: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Électrolyse & Corrosion, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Электролиз и коррозия», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التحليل الكهربائي والتآكل\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“电解与腐蚀”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Elektrolîz û Korozyon\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1496,14 +1496,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimya ve Elektrik: Elektroliz ve Korozyon ünitesinde ele alınan Galvanik Hücre (Pil) hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Electrochemistry: Electrolysis & Corrosion, which statement about Galvanic Cell (Battery) is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Elektrolyse & Korrosion: Welche Aussage über Galvanische Zelle (Batterie) ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Électrolyse & Corrosion, quelle affirmation relative à Cellule galvanique (batterie) est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Электролиз и коррозия», какое утверждение о «Гальванический элемент (батарея)» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التحليل الكهربائي والتآكل\"، أي عبارة حول \"خلية كلفانية (بطارية)\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“电解与腐蚀”单元中关于“原电池（电池）”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Elektrolîz û Korozyon\", kîjan gotin li ser \"Hucreya Galvanîk (Pîl)\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya ve Elektrik: Elektroliz ve Korozyon konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Electrochemistry: Electrolysis & Corrosion, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Elektrolyse & Korrosion die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Électrolyse & Corrosion, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Электролиз и коррозия», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"التحليل الكهربائي والتآكل\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“电解与腐蚀”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Elektrolîz û Korozyon\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1572,14 +1572,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya ve Elektrik: Elektroliz ve Korozyon konusunu işlerken Katotta H2 Çıkışı üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Electrochemistry: Electrolysis & Corrosion, which statement regarding H2 Output at Cathode represents the correct answer?",
-        "de": "Welche Aussage zu H2-Ausstoß an der Kathode stellt im Kontext von Elektrolyse & Korrosion die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Électrolyse & Corrosion, quelle proposition sur Sortie H2 à la cathode constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Электролиз и коррозия», какой ответ относительно «Выход H2 на катоде» является правильным?",
-        "ar": "أثناء دراسة موضوع \"التحليل الكهربائي والتآكل\" مخبرياً، أي إجابة بخصوص \"خرج H2 عند الكاثود\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“电解与腐蚀”实验探究与教学分析中，针对“阴极 H2 输出”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Elektrolîz û Korozyon\" de, kîjan bersiv derbarê \"Hilberîna H2 li Katodê\" de rast e?"
+        "tr": "Kimya dersinde Kimya ve Elektrik: Elektroliz ve Korozyon ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Electrochemistry: Electrolysis & Corrosion, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Elektrolyse & Korrosion: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Électrolyse & Corrosion, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Электролиз и коррозия», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"التحليل الكهربائي والتآكل\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“电解与腐蚀”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Elektrolîz û Korozyon\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1603,7 +1603,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "Elektroda qurbanê zêr li ser hesin dike."
         },
         {
-          "tr": "1 Faraday elektrik yükü 1 Coulomb a eşittir.",
+          "tr": "1 Faraday elektrik yükü 1 Coulomb'a eşittir.",
           "en": "1 Faraday electric charge is equal to 1 Coulomb.",
           "de": "1 Faradaysche elektrische Ladung entspricht 1 Coulomb.",
           "fr": "1 charge électrique Faraday équivaut à 1 Coulomb.",
@@ -1648,14 +1648,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin11",
       "stem": {
-        "tr": "Kimya dersinde Kimya ve Elektrik: Elektroliz ve Korozyon ünitesi incelenirken Erimiş Tuz Elektrolizi ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Electrochemistry: Electrolysis & Corrosion, which of the following propositions concerning Molten Salt Electrolysis is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Elektrolyse & Korrosion: Welche Behauptung bezüglich Elektrolyse von geschmolzenem Salz entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Électrolyse & Corrosion, laquelle des affirmations suivantes concernant Électrolyse au sel fondu est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Электролиз и коррозия», какое из следующих суждений о «Электролиз расплавленной соли» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"التحليل الكهربائي والتآكل\"، أي من الأحكام التالية المتعلقة بـ \"التحليل الكهربائي للملح المنصهر\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“电解与腐蚀”核心规律时，下列关于“熔盐电解”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Elektrolîz û Korozyon\" tê kirin, kîjan daraza li ser \"Elektrolîza xwêya helandî\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimya ve Elektrik: Elektroliz ve Korozyon konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Electrochemistry: Electrolysis & Corrosion?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Elektrolyse & Korrosion zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Électrolyse & Corrosion ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Электролиз и коррозия»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"التحليل الكهربائي والتآكل\"؟",
+        "zh": "根据“电解与腐蚀”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Elektrolîz û Korozyon\" de rast e?"
       },
       "options": [
         {
@@ -1724,14 +1724,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimya ve Elektrik: Elektroliz ve Korozyon konusundaki temel kimyasal kurallar çerçevesinde Katot Gazı (H2) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Cathode Gas (H2) within the fundamental principles of Electrochemistry: Electrolysis & Corrosion?",
-        "de": "Welche Aussage beschreibt das Konzept Kathodengas (H2) im Rahmen von Elektrolyse & Korrosion am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Gaz cathodique (H2) selon les lois de Électrolyse & Corrosion?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Катодный газ (H2)» в рамках темы «Электролиз и коррозия»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"غاز الكاثود (H2)\" ضمن قواعد \"التحليل الكهربائي والتآكل\"؟",
-        "zh": "根据“电解与腐蚀”的基本化学原理，下列哪项阐述能最准确地界定“阴极气体 (H2)”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Gaza Katodê (H2)\" di çarçoveya prensîbên \"Elektrolîz û Korozyon\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimya ve Elektrik: Elektroliz ve Korozyon sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Electrochemistry: Electrolysis & Corrosion, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Elektrolyse & Korrosion: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Électrolyse & Corrosion, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Электролиз и коррозия», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التحليل الكهربائي والتآكل\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“电解与腐蚀”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Elektrolîz û Korozyon\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1800,14 +1800,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimya ve Elektrik: Elektroliz ve Korozyon sorularında karşılaşılan Faraday Sabiti (96500 C) konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Electrochemistry: Electrolysis & Corrosion, which assertion regarding Faraday Constant (96500 C) is correct?",
-        "de": "Welche Feststellung bezüglich Faraday-Konstante (96500 °C) ist nach den chemischen Gesetzmäßigkeiten von Elektrolyse & Korrosion richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Électrolyse & Corrosion, quelle affirmation concernant Constante de Faraday (96 500 °C) est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Электролиз и коррозия», какое положение относительно «Константа Фарадея (96500 C)» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التحليل الكهربائي والتآكل\"، أي حكم متعلق بـ \"ثابت فاراداي (96500 درجة مئوية)\" يعتبر صحيحاً؟",
-        "zh": "在高考“电解与腐蚀”经典考题中，下列有关“法拉第常数 (96500 C)”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Elektrolîz û Korozyon\" de, kîjan daraza li ser \"Faraday Constant (96500 C)\" rast e?"
+        "tr": "Aşağıda Kimya ve Elektrik: Elektroliz ve Korozyon ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Electrochemistry: Electrolysis & Corrosion, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Elektrolyse & Korrosion: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Électrolyse & Corrosion, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Электролиз и коррозия», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التحليل الكهربائي والتآكل\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“电解与腐蚀”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Elektrolîz û Korozyon\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1821,7 +1821,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "Elektroda qurbanê zêr li ser hesin dike."
         },
         {
-          "tr": "1 Faraday elektrik yükü 1 Coulomb a eşittir.",
+          "tr": "1 Faraday elektrik yükü 1 Coulomb'a eşittir.",
           "en": "1 Faraday electric charge is equal to 1 Coulomb.",
           "de": "1 Faradaysche elektrische Ladung entspricht 1 Coulomb.",
           "fr": "1 charge électrique Faraday équivaut à 1 Coulomb.",
@@ -1876,14 +1876,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin14",
       "stem": {
-        "tr": "Aşağıda Kimya ve Elektrik: Elektroliz ve Korozyon ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Kurban Elektrot ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Electrochemistry: Electrolysis & Corrosion, which statement about Sacrificial Electrode is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Elektrolyse & Korrosion: Welche Aussage über Opferelektrode ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Électrolyse & Corrosion, quelle affirmation relative à Électrode sacrificielle est exacte?",
-        "ru": "На основе фундаментальных положений темы «Электролиз и коррозия», какое суждение о «Жертвенный электрод» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التحليل الكهربائي والتآكل\"، أي عبارة حول \"القطب الذبيحة\" صحيحة؟",
-        "zh": "基于“电解与腐蚀”的基础化学知识体系，下列关于“牺牲电极”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Elektrolîz û Korozyon\", kîjan gotin derbarê \"Elektroda Qurbanê\" de rast e?"
+        "tr": "Kimya ve Elektrik: Elektroliz ve Korozyon konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Electrochemistry: Electrolysis & Corrosion, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Elektrolyse & Korrosion: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Électrolyse & Corrosion, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Электролиз и коррозия», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"التحليل الكهربائي والتآكل\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“电解与腐蚀”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Elektrolîz û Korozyon\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1952,14 +1952,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin15",
       "stem": {
-        "tr": "Kimya ve Elektrik: Elektroliz ve Korozyon konusu kapsamında Korozyon ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Electrochemistry: Electrolysis & Corrosion, which of the following findings regarding corrosion is scientifically verified?",
-        "de": "Im Rahmen der Einheit Elektrolyse & Korrosion: Welcher der folgenden Befunde zu Korrosion ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Électrolyse & Corrosion, laquelle des constatations suivantes concernant corrosion est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Электролиз и коррозия», какой из следующих выводов относительно «коррозия» научно подтверждён?",
-        "ar": "في سياق موضوع \"التحليل الكهربائي والتآكل\"، أي من النتائج التالية المتعلقة بـ \"التآكل\" مثبتة علمياً؟",
-        "zh": "在“电解与腐蚀”主题范畴内，下列关于“腐蚀”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Elektrolîz û Korozyon\" de, kîjan ji van encamên li ser \"korozyon\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimya ve Elektrik: Elektroliz ve Korozyon ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Electrochemistry: Electrolysis & Corrosion, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Elektrolyse & Korrosion: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Électrolyse & Corrosion, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Электролиз и коррозия», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التحليل الكهربائي والتآكل\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“电解与腐蚀”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Elektrolîz û Korozyon\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2003,7 +2003,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "Pêdivî ye ku ji metalê ku were parastin metalek pasîftir wekî elektrodê qurban were hilbijartin."
         },
         {
-          "tr": "Downs hücresi erimiş NaCl den metalik sodyum üretimi için kullanılan endüstriyel elektroliz hücresidir.",
+          "tr": "Downs hücresi erimiş NaCl'den metalik sodyum üretimi için kullanılan endüstriyel elektroliz hücresidir.",
           "en": "Downs cell is an industrial electrolysis cell used for the production of metallic sodium from molten NaCl.",
           "de": "Die Downs-Zelle ist eine industrielle Elektrolysezelle zur Herstellung von metallischem Natrium aus geschmolzenem NaCl.",
           "fr": "La cellule Downs est une cellule d'électrolyse industrielle utilisée pour la production de sodium métallique à partir de NaCl fondu.",
@@ -2015,7 +2015,7 @@ export const unit22: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Downs hücresi erimiş NaCl den metalik sodyum üretimi için kullanılan endüstriyel elektroliz hücresidir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Downs hücresi erimiş NaCl'den metalik sodyum üretimi için kullanılan endüstriyel elektroliz hücresidir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Downs cell is an industrial electrolysis cell used for the production of metallic sodium from molten NaCl.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Die Downs-Zelle ist eine industrielle Elektrolysezelle zur Herstellung von metallischem Natrium aus geschmolzenem NaCl.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La cellule Downs est une cellule d'électrolyse industrielle utilisée pour la production de sodium métallique à partir de NaCl fondu.\". Notion fondamentale du programme officiel de chimie.",
@@ -2028,14 +2028,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimya ve Elektrik: Elektroliz ve Korozyon ünitesinde ele alınan Elektrostatik Kaplama hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Electrochemistry: Electrolysis & Corrosion, which statement about Electrostatic Coating is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Elektrolyse & Korrosion: Welche Aussage über Elektrostatische Beschichtung ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Électrolyse & Corrosion, quelle affirmation relative à Revêtement électrostatique est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Электролиз и коррозия», какое утверждение о «Электростатическое покрытие» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التحليل الكهربائي والتآكل\"، أي عبارة حول \"طلاء كهرباء\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“电解与腐蚀”单元中关于“静电涂层”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Elektrolîz û Korozyon\", kîjan gotin li ser \"Coating Electrostatic\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya ve Elektrik: Elektroliz ve Korozyon konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Electrochemistry: Electrolysis & Corrosion, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Elektrolyse & Korrosion die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Électrolyse & Corrosion, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Электролиз и коррозия», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"التحليل الكهربائي والتآكل\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“电解与腐蚀”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Elektrolîz û Korozyon\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -2049,7 +2049,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "Girêdana bloka magnesiumê ji bo parastina boriyek hesin ji korozyonê serîlêdanek elektrodê ya qurbanî ye ku li ser bingeha cûdahiya çalakiyê ye."
         },
         {
-          "tr": "1 Faraday elektrik yükü 1 Coulomb a eşittir.",
+          "tr": "1 Faraday elektrik yükü 1 Coulomb'a eşittir.",
           "en": "1 Faraday electric charge is equal to 1 Coulomb.",
           "de": "1 Faradaysche elektrische Ladung entspricht 1 Coulomb.",
           "fr": "1 charge électrique Faraday équivaut à 1 Coulomb.",

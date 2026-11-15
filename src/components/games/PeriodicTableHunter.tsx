@@ -257,10 +257,6 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
-          clearInterval(timer);
-          setIsPlaying(false);
-          playFinish();
-          onFinish(scoreRef.current);
           return 0;
         }
         return prev - 1;
@@ -268,7 +264,16 @@ export const PeriodicTableHunter: React.FC<PeriodicTableHunterProps> = ({
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [isPlaying, onFinish]);
+  }, [isPlaying]);
+
+  // Handle game finish when timer expires
+  useEffect(() => {
+    if (isPlaying && timeLeft === 0) {
+      setIsPlaying(false);
+      playFinish();
+      onFinish(scoreRef.current);
+    }
+  }, [isPlaying, timeLeft, onFinish]);
 
   // Handle Element Click in Hunt Mode
   const handleElementClick = (el: ElementInfo) => {

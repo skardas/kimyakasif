@@ -3,6 +3,8 @@
  * Covers F01 through F13 with 69 deterministic test cases (target >= 65).
  */
 
+import * as fs from 'node:fs';
+import * as path from 'node:path';
 import { expect, test } from './harness/testFramework';
 import { printTestResult } from './harness/reporter';
 import {
@@ -12,6 +14,8 @@ import {
   compileAllFlashcards,
   LeitnerBoxEngine,
   THREE_SCENES_DATA,
+  PRIMARY_32_SCENES,
+  ALL_HOTSPOTS_32,
   ELEMENTS_SAMPLE,
   validatePropaneCombustion,
   validateLewisMolecule,
@@ -44,6 +48,15 @@ import {
   MUSIC_MOODS,
   MUSIC_TRACKS,
 } from './harness/contracts';
+import { ALL_MOCK_EXAM_SPECS } from '../../src/engine/mockExamCatalog';
+import { ALL_CHEMISTRY_UNITS as PROD_CHEMISTRY_UNITS } from '../../src/data/units';
+import {
+  compileAllQuestions as prodCompileAllQuestions,
+  compileUnitQuestions as prodCompileUnitQuestions,
+  GENERIC_CATEGORY_DESCRIPTORS,
+  extractEntityCandidates,
+} from '../../src/engine/questionGenerator';
+import { compileAllFlashcards as prodCompileAllFlashcards } from '../../src/engine/flashcardGenerator';
 
 export async function runTier1Tests(): Promise<void> {
   // =========================================================================
@@ -226,6 +239,8 @@ export async function runTier1Tests(): Promise<void> {
   printTestResult(
     await test('T1.F04.01', 1, 'F04-3D', 'THREE_SCENES_DATA contains procedural 3D chemistry scenes', () => {
       expect(THREE_SCENES_DATA.length).toBeGreaterThanOrEqual(6);
+      expect(PRIMARY_32_SCENES.length).toBe(32);
+      expect(ALL_HOTSPOTS_32.length).toBe(99);
       const ids = THREE_SCENES_DATA.map((s) => s.id);
       expect(ids).toContain('scene-vsepr-linear');
       expect(ids).toContain('scene-vsepr-tetrahedral');
@@ -724,6 +739,84 @@ export async function runTier1Tests(): Promise<void> {
     })
   );
 
+  printTestResult(
+    await test('T1.F10.06', 1, 'F10-SPLASH', 'iOS, Android, and PWA 3D icons/splashes have valid PNG headers/dimensions and 3D CSS keyframes exist', () => {
+      const root = process.cwd();
+      const readPngDims = (rel: string): [number, number] => {
+        const buf = fs.readFileSync(path.join(root, rel));
+        // Validate PNG magic signature 89 50 4E 47 0D 0A 1A 0A
+        expect(buf.subarray(0, 8).toString('hex')).toBe('89504e470d0a1a0a');
+        return [buf.readUInt32BE(16), buf.readUInt32BE(20)];
+      };
+
+      // 1. Web / PWA PNG icons & SVG
+      expect(readPngDims('public/icon-192.png')).toEqual([192, 192]);
+      expect(readPngDims('public/icon-512.png')).toEqual([512, 512]);
+      expect(readPngDims('public/apple-touch-icon.png')).toEqual([180, 180]);
+      const iconSvg = fs.readFileSync(path.join(root, 'public/icon.svg'), 'utf8');
+      expect(iconSvg).toContain('linearGradient');
+      expect(iconSvg).toContain('orbitGoldFront');
+
+      // 2. iOS AppIcon (1024x1024) & Splash (2732x2732)
+      expect(readPngDims('ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png')).toEqual([1024, 1024]);
+      for (const sName of ['splash-2732x2732.png', 'splash-2732x2732-1.png', 'splash-2732x2732-2.png']) {
+        expect(readPngDims(`ios/App/App/Assets.xcassets/Splash.imageset/${sName}`)).toEqual([2732, 2732]);
+      }
+
+      // 3. Android Mipmap icons (5 densities x 3 PNGs) & 11 Splash assets
+      const densities: Array<[string, number, number]> = [
+        ['mipmap-mdpi', 48, 108],
+        ['mipmap-hdpi', 72, 162],
+        ['mipmap-xhdpi', 96, 216],
+        ['mipmap-xxhdpi', 144, 324],
+        ['mipmap-xxxhdpi', 192, 432],
+      ];
+      for (const [folder, icPx, fgPx] of densities) {
+        expect(readPngDims(`android/app/src/main/res/${folder}/ic_launcher.png`)).toEqual([icPx, icPx]);
+        expect(readPngDims(`android/app/src/main/res/${folder}/ic_launcher_round.png`)).toEqual([icPx, icPx]);
+        expect(readPngDims(`android/app/src/main/res/${folder}/ic_launcher_foreground.png`)).toEqual([fgPx, fgPx]);
+      }
+      const icBg = fs.readFileSync(path.join(root, 'android/app/src/main/res/values/ic_launcher_background.xml'), 'utf8');
+      expect(icBg).toContain('#0B0F19');
+
+      const androidSplashes: Array<[string, number, number]> = [
+        ['drawable/splash.png', 480, 320],
+        ['drawable-port-mdpi/splash.png', 320, 480],
+        ['drawable-port-hdpi/splash.png', 480, 800],
+        ['drawable-port-xhdpi/splash.png', 720, 1280],
+        ['drawable-port-xxhdpi/splash.png', 960, 1600],
+        ['drawable-port-xxxhdpi/splash.png', 1280, 1920],
+        ['drawable-land-mdpi/splash.png', 480, 320],
+        ['drawable-land-hdpi/splash.png', 800, 480],
+        ['drawable-land-xhdpi/splash.png', 1280, 720],
+        ['drawable-land-xxhdpi/splash.png', 1600, 960],
+        ['drawable-land-xxxhdpi/splash.png', 1920, 1280],
+      ];
+      for (const [rel, w, h] of androidSplashes) {
+        expect(readPngDims(`android/app/src/main/res/${rel}`)).toEqual([w, h]);
+      }
+
+      // 4. Animated 3D Splash & Onboarding CSS & Components
+      const css = fs.readFileSync(path.join(root, 'src/styles/theme.css'), 'utf8');
+      for (const rule of [
+        '.splash-3d-stage',
+        '.splash-3d-orbit-ring',
+        '@keyframes orbitSpin3DA',
+        '@keyframes orbitSpin3DB',
+        '@keyframes float3DCard',
+        '@keyframes onboarding3DEnter',
+        '.onboarding-hero.compact',
+      ]) {
+        expect(css).toContain(rule);
+      }
+
+      const onboardingSrc = fs.readFileSync(path.join(root, 'src/components/onboarding/Onboarding.tsx'), 'utf8');
+      expect(onboardingSrc).toContain('hero-3d-stage');
+      expect(onboardingSrc).toContain('onboarding-3d-enter');
+      expect(onboardingSrc).toContain('onboarding-3d-chip');
+    })
+  );
+
   // =========================================================================
   // F11-AUDIO: Web Audio Synthesis & Confetti Celebration
   // =========================================================================
@@ -959,6 +1052,390 @@ export async function runTier1Tests(): Promise<void> {
       expect(ku.nav.lab3d).toBe('Lab 3D');
       expect(SHELL_STRINGS.ku.settings).toBe('Mîheng');
       expect(/[çêîşûÇÊÎŞÛ]/.test(ku.appName + ' ' + SHELL_STRINGS.ku.ob1Body)).toBe(true);
+    })
+  );
+
+  printTestResult(
+    await test('T1.F13.09', 1, 'F13-I18N', 'assertNoEnglishTokensInForeignStems: 0 leaked English tokens in foreign question stems', () => {
+      const leakedEnglishTokens = [
+        'strictly exact?',
+        'which chemical species',
+        'which of the following',
+        'which statement is',
+        'chronological order',
+        'is defined by the distinguishing trait',
+      ];
+      for (const lang of ['de', 'fr', 'ru', 'ar', 'zh', 'ku'] as const) {
+        const qs = prodCompileAllQuestions(PROD_CHEMISTRY_UNITS, lang);
+        for (const q of qs) {
+          for (const leak of leakedEnglishTokens) {
+            expect(q.stem.toLowerCase().includes(leak.toLowerCase())).toBe(false);
+          }
+        }
+      }
+    })
+  );
+
+  printTestResult(
+    await test('T1.F13.10', 1, 'F13-I18N', 'assertNoDroppedFrenchApostrophes: 0 dropped apostrophes in French catalog and questions', () => {
+      const frenchElisionRegex = /\b(l|d|n|qu)\s+(unité|examen|étape|ordre|état|atome|équilibre|acide|eau|énergie|ion|élément|espèce|information|option|action|observation|exemple)/i;
+      for (const spec of ALL_MOCK_EXAM_SPECS) {
+        const match = spec.subtitle.fr.match(frenchElisionRegex);
+        expect(match).toBeNull();
+      }
+      const frQuestions = prodCompileAllQuestions(PROD_CHEMISTRY_UNITS, 'fr');
+      for (const q of frQuestions) {
+        const match = q.stem.match(frenchElisionRegex);
+        expect(match).toBeNull();
+      }
+    })
+  );
+
+  printTestResult(
+    await test('T1.F13.11', 1, 'F13-I18N', 'assertNoKnownMtArtifacts: 0 machine translation artifacts across facts, traps, tips', () => {
+      const knownMtArtifacts = [
+        'zac oil',
+        'zac-öl',
+        'salzbenzin',
+        'hno3 is vitriol',
+        'كابير',
+      ];
+      for (const u of PROD_CHEMISTRY_UNITS) {
+        for (const f of u.facts) {
+          const fields = [
+            f.fact.en, f.fact.de, f.fact.fr, f.fact.ru, f.fact.ar, f.fact.zh, f.fact.ku,
+            f.trap.en, f.trap.de, f.trap.fr, f.trap.ru, f.trap.ar, f.trap.zh, f.trap.ku,
+            f.osymTip?.en, f.osymTip?.de, f.osymTip?.fr, f.osymTip?.ru, f.osymTip?.ar, f.osymTip?.zh, f.osymTip?.ku,
+          ];
+          for (const text of fields) {
+            if (!text) continue;
+            const lower = text.toLowerCase();
+            for (const artifact of knownMtArtifacts) {
+              expect(lower.includes(artifact)).toBe(false);
+            }
+          }
+        }
+      }
+    })
+  );
+
+  printTestResult(
+    await test('T1.F13.12', 1, 'F13-I18N', 'assertRichRomanNumeralExplanations: All Roman numeral explanations provide I., II., III. breakdowns', () => {
+      for (const langMeta of LANGUAGES) {
+        const lang = langMeta.code as any;
+        const langQs = prodCompileAllQuestions(PROD_CHEMISTRY_UNITS, lang);
+        const romanQs = langQs.filter((q) => q.archetype === 'roman-numeral');
+        expect(romanQs.length).toBeGreaterThan(0);
+        for (const q of romanQs) {
+          expect(q.explanation.includes('I.') && q.explanation.includes('II.') && q.explanation.includes('III.')).toBe(true);
+        }
+      }
+    })
+  );
+
+  printTestResult(
+    await test('T1.F13.13', 1, 'F13-I18N', 'assertFlashcardMultilingualPurity: 0 leaked Turkish prompt/label strings in foreign flashcards', () => {
+      const turkishHardcodedTokens = [
+        'Soru:',
+        'Doğru Bilgi:',
+        'Doğru Açıklama:',
+        'Karşılaştırma:',
+        'Ayırıcı Özellik:',
+        'ÖSYM iki benzer kavramın',
+      ];
+      for (const lang of ['en', 'de', 'fr', 'ru', 'ar', 'zh', 'ku'] as const) {
+        const cards = prodCompileAllFlashcards(PROD_CHEMISTRY_UNITS, lang);
+        expect(cards.length).toBeGreaterThan(0);
+        for (const c of cards) {
+          for (const token of turkishHardcodedTokens) {
+            expect(c.front.includes(token)).toBe(false);
+            expect(c.back.includes(token)).toBe(false);
+          }
+        }
+      }
+    })
+  );
+
+  printTestResult(
+    await test('T1.F13.14', 1, 'F13-I18N', 'assertNoCjkSingleCharClueLeaks: 0 single-character CJK leaks in Chinese matching questions', () => {
+      const zhQuestions = prodCompileAllQuestions(PROD_CHEMISTRY_UNITS, 'zh');
+      let leakCount = 0;
+      for (const q of zhQuestions) {
+        if (q.stem.includes('显著特征：“')) {
+          const match = q.stem.match(/显著特征：“([^”]+)”/);
+          if (match) {
+            const clue = match[1];
+            const correctOpt = q.options[q.correctIndex].trim();
+            const baseOpt = correctOpt.replace(/\s*[（\(][^）\)]*[）\)]/g, '').trim();
+            const candidatesToCheck: string[] = [];
+            if (/^[\u4e00-\u9fa5]$/.test(correctOpt)) {
+              candidatesToCheck.push(correctOpt);
+            }
+            if (baseOpt.length >= 1) {
+              candidatesToCheck.push(baseOpt);
+            }
+            const insideMatch = correctOpt.match(/[（\(]([^）\)]+)[）\)]/);
+            if (insideMatch && insideMatch[1].trim().length >= 1) {
+              candidatesToCheck.push(insideMatch[1].trim());
+            }
+            for (const cand of candidatesToCheck) {
+              if (/[\u4e00-\u9fa5]/.test(cand) && clue.includes(cand)) {
+                leakCount++;
+              }
+            }
+          }
+        }
+      }
+      expect(leakCount).toBe(0);
+    })
+  );
+
+  const VERIFY_GENERIC_SPECIES_WORDS = new Set([
+    'kimyasal', 'tür', 'türü',
+    'chemical', 'species',
+    'chemische', 'spezies',
+    'chimique', 'espèce',
+    'химическая', 'частица',
+    'كيميائي', 'النوع', 'نوع',
+    '化学', '微粒',
+    'kîmyewî', 'cûreyê',
+  ]);
+
+  function verifyIsValidHeadword(term: string, isCJK: boolean, minLen: number): boolean {
+    if (!term || term.length < minLen) return false;
+    if (VERIFY_GENERIC_SPECIES_WORDS.has(term.toLowerCase())) return false;
+    if (isCJK) {
+      return /[\u4e00-\u9fa5]/.test(term);
+    }
+    return /[a-zA-Z\u00C0-\u024F\u0400-\u04FF\u0600-\u06FF]/.test(term);
+  }
+
+  printTestResult(
+    await test('T1.F13.15', 1, 'F13-I18N', 'assertNoInflectedEntityClueLeaks: 0 inflected entity clue leaks across all 8 languages in matching stems', () => {
+      const langs = ['tr', 'en', 'de', 'fr', 'ru', 'ar', 'zh', 'ku'] as const;
+      let leakCount = 0;
+      for (const lang of langs) {
+        const langQs = prodCompileAllQuestions(PROD_CHEMISTRY_UNITS, lang);
+        for (const q of langQs) {
+          const isTypeA = q.archetype === 'structure-property-match' && (
+            q.stem.includes('ayırt edilen kimyasal tür veya kavram') ||
+            q.stem.includes('which chemical species or concept is defined by the distinguishing trait') ||
+            (q.stem.includes('wird in') && q.stem.includes('durch das Merkmal')) ||
+            q.stem.includes('quelle espèce chimique ou notion est définie') ||
+            q.stem.includes('Какое химическое вещество или понятие') ||
+            q.stem.includes('أي نوع كيميائي أو مفهوم يتميز بالخاصية') ||
+            q.stem.includes('以下哪种化学微粒或概念具有显著特征') ||
+            q.stem.includes('kîjan cûreyê kîmyewî an têgeh bi taybetmendiya')
+          );
+          if (isTypeA) {
+            const correctOpt = q.options[q.correctIndex].trim();
+            const baseOpt = correctOpt.replace(/\s*[（\(][^）\)]*[）\)]/g, '').trim();
+            const quoteMatch = q.stem.match(/["“«]([^"”»]+)["”»]/g);
+            if (quoteMatch && quoteMatch.length >= 2) {
+              const clue = quoteMatch[quoteMatch.length - 1].replace(/^["“«]|["”»]$/g, '').trim();
+
+              const candidates = extractEntityCandidates(correctOpt, lang);
+              if (baseOpt.length >= (lang === 'zh' ? 2 : 3)) candidates.add(baseOpt);
+              const insideMatch = correctOpt.match(/[（\(]([^）\)]+)[）\)]/);
+              if (insideMatch && insideMatch[1].trim().length >= 2) candidates.add(insideMatch[1].trim());
+              const acronyms = correctOpt.match(/\b(Qc|Kp|Kc|Ka|Kb|Ksp|Kçç|Ksu|pH|pOH|XY|XY2|sp3|sp2|sp)\b/gi);
+              if (acronyms) {
+                for (const ac of acronyms) candidates.add(ac);
+              }
+              if (baseOpt.includes('من النوع')) {
+                const withoutType = baseOpt.replace(/من النوع\s*/g, '').trim();
+                if (withoutType.length >= 2) candidates.add(withoutType);
+              }
+              const letterMatch = baseOpt.match(/^([a-z0-9])\s+(.+)$/i);
+              if (letterMatch) {
+                candidates.add(`${letterMatch[2]} ${letterMatch[1]}`);
+              }
+
+              for (const cand of candidates) {
+                if (lang === 'zh') {
+                  const candClean = cand.replace(/\s+/g, '').replace(/型/g, '');
+                  const isLatinOnly = /^[a-zA-Z0-9]+$/.test(candClean);
+                  if (isLatinOnly) {
+                    const regex = new RegExp(`(?<=^|[^a-zA-Z0-9])${candClean}(?![a-zA-Z0-9])`, 'iu');
+                    if (regex.test(clue)) {
+                      leakCount++;
+                    }
+                  } else {
+                    const clueClean = clue.replace(/\s+/g, '');
+                    if (candClean.length >= 2 && clueClean.includes(candClean)) {
+                      leakCount++;
+                    }
+                  }
+                } else {
+                  const isArabic = lang === 'ar' || /[\u0600-\u06FF]/.test(cand);
+                  const arabicInflectionalSuffix = '(?:ات|ية|ة|ي|ين|ان|ون|يتها|يته)?';
+                  const compoundSuffix = '(?:schicht|schichten|bindung|bindungen|atom|atome|atomen|gitter|gittern|molekül|moleküle|molekülen|ion|ionen|kraft|kräfte|kräften|gas|gase|gasen|flüssigkeit|flüssigkeiten|reaktion|reaktionen|teilchen|energie|energien|konstante|konstanten)?';
+                  const cyrillicCaseSuffix = '(?:а|я|у|ю|е|ом|ем|ой|ей|ы|и|ов|ев|ах|ях|ам|ям|ами|ями)?';
+                  const latinInflectionalSuffix = '(?:(?:ler|lar|an|ên|ing|ed|ung|er|em)?(?:in|ın|un|ün|nin|nın|nun|nün|nde|nda|nden|ndan|ne|na|ni|nı|nu|nü|te|ta|de|da|ten|tan|den|dan|ye|ya|e|a|i|ı|u|ü|ê|î|le|la|s|es|en|n)?(?:dir|dır|dür|dur|tir|tır|tür|tur)?)';
+                  const inflectionalSuffix = `(?:${latinInflectionalSuffix}|${cyrillicCaseSuffix}|${arabicInflectionalSuffix})`;
+                  const suffixPattern = `(?:${compoundSuffix}${inflectionalSuffix})`;
+
+                  let candidatePattern: string;
+                  if (isArabic) {
+                    const arabicWords = cand.trim().split(/[-\s]+/).map((w) => {
+                      const stripped = (w.startsWith('ال') && w.length > 2) ? w.slice(2) : w;
+                      const escaped = stripped.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                      return `(?:ال)?${escaped}(?:${arabicInflectionalSuffix})?`;
+                    });
+                    candidatePattern = arabicWords.join('[-\\s]+');
+                  } else {
+                    const words = cand.trim().split(/[-\s]+/).map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+                    candidatePattern = (lang === 'ku' && words.length >= 2)
+                      ? words.join('(?:ê|a|ya|yê|ên|an)?[-\\s]+')
+                      : words.join('[-\\s]+');
+                  }
+
+                  const lookbehind = '(?<=^|[^\\p{L}\\p{N}])';
+                  const lookahead = '(?![\\p{L}\\p{N}])';
+                  const arabicPrefix = '';
+                  const leakRegex = new RegExp(`${lookbehind}${arabicPrefix}${candidatePattern}${suffixPattern}${lookahead}`, 'iu');
+
+                  if (leakRegex.test(clue)) {
+                    leakCount++;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      expect(leakCount).toBe(0);
+    })
+  );
+
+  printTestResult(
+    await test('T1.F13.16', 1, 'F13-I18N', 'assertNoUnitTitleAnswerLeaks: 0 unit title leaks of correct answers in Type A stems', () => {
+      const langs = ['tr', 'en', 'de', 'fr', 'ru', 'ar', 'zh', 'ku'] as const;
+      let leakCount = 0;
+      for (const lang of langs) {
+        const langQs = prodCompileAllQuestions(PROD_CHEMISTRY_UNITS, lang);
+        for (const q of langQs) {
+          const isTypeA = q.stem.includes('ayırt edilen kimyasal tür veya kavram') ||
+            q.stem.includes('which chemical species or concept is defined by the distinguishing trait') ||
+            (q.stem.includes('wird in') && q.stem.includes('durch das Merkmal')) ||
+            q.stem.includes('quelle espèce chimique ou notion est définie') ||
+            q.stem.includes('Какое химическое вещество или понятие') ||
+            q.stem.includes('أي نوع كيميائي أو مفهوم يتميز بالخاصية') ||
+            q.stem.includes('以下哪种化学微粒或概念具有显著特征') ||
+            q.stem.includes('kîjan cûreyê kîmyewî an têgeh bi taybetmendiya');
+          if (isTypeA) {
+            const correctOpt = q.options[q.correctIndex].trim();
+            const cleanConcept = correctOpt.toLowerCase().replace(/\s*[（\(][^）\)]*[）\)]/g, '').trim();
+            if (cleanConcept.length >= (lang === 'zh' ? 1 : 3)) {
+              const titleMatch = q.stem.match(/["“«]([^"”»]+)["”»]/);
+              if (titleMatch) {
+                const titleText = titleMatch[1].toLowerCase();
+                if (titleText.includes(cleanConcept)) {
+                  leakCount++;
+                }
+              }
+            }
+          }
+        }
+      }
+      expect(leakCount).toBe(0);
+    })
+  );
+
+  printTestResult(
+    await test('T1.F13.18', 1, 'F13-I18N', 'assertRegressionQuestionSanitization: u24-q043, u24-q059, u24-q091, u03-q027, u06-q027, u02-q075 zero clue leaks', () => {
+      const u24 = PROD_CHEMISTRY_UNITS.find(u => u.id === 'u24');
+      expect(u24).toBeDefined();
+      const u24Ar = prodCompileUnitQuestions(u24!, 'ar');
+      const q043 = u24Ar.find(q => q.id === 'u24-q043');
+      expect(q043).toBeDefined();
+      const quote043 = q043!.stem.match(/["“«]([^"”»]+)["”»]/g);
+      const clue043 = quote043 ? quote043[quote043.length - 1].replace(/^["“«]|["”»]$/g, '').trim() : '';
+      expect(clue043.includes('الألكانات')).toBe(false);
+      expect(clue043.includes('ألكان')).toBe(false);
+
+      const q059 = u24Ar.find(q => q.id === 'u24-q059');
+      expect(q059).toBeDefined();
+      const quote059 = q059!.stem.match(/["“«]([^"”»]+)["”»]/g);
+      const clue059 = quote059 ? quote059[quote059.length - 1].replace(/^["“«]|["”»]$/g, '').trim() : '';
+      expect(clue059.includes('الألكينات')).toBe(false);
+      expect(clue059.includes('ألكين')).toBe(false);
+
+      const q091 = u24Ar.find(q => q.id === 'u24-q091');
+      expect(q091).toBeDefined();
+      const quote091 = q091!.stem.match(/["“«]([^"”»]+)["”»]/g);
+      const clue091 = quote091 ? quote091[quote091.length - 1].replace(/^["“«]|["”»]$/g, '').trim() : '';
+      expect(clue091.includes('الحمض الكربوكسيلي')).toBe(false);
+      expect(clue091.includes('حمض الكربوكسيل')).toBe(false);
+
+      const u03 = PROD_CHEMISTRY_UNITS.find(u => u.id === 'u03');
+      expect(u03).toBeDefined();
+      const u03Ar = prodCompileUnitQuestions(u03!, 'ar');
+      const q027 = u03Ar.find(q => q.id === 'u03-q027');
+      expect(q027).toBeDefined();
+      const quote027 = q027!.stem.match(/["“«]([^"”»]+)["”»]/g);
+      const clue027 = quote027 ? quote027[quote027.length - 1].replace(/^["“«]|["”»]$/g, '').trim() : '';
+      expect(clue027.includes('الرابطة الهيدروجينية')).toBe(false);
+      expect(clue027.includes('رابطة الهيدروجين')).toBe(false);
+
+      const u06 = PROD_CHEMISTRY_UNITS.find(u => u.id === 'u06');
+      expect(u06).toBeDefined();
+      const u06Ar = prodCompileUnitQuestions(u06!, 'ar');
+      const q06_27 = u06Ar.find(q => q.id === 'u06-q027');
+      expect(q06_27).toBeDefined();
+      expect(q06_27!.options[q06_27!.correctIndex]).toBe('1 أكب');
+      const quote06_27 = q06_27!.stem.match(/["“«]([^"”»]+)["”»]/g);
+      const clue06_27 = quote06_27 ? quote06_27[quote06_27.length - 1].replace(/^["“«]|["”»]$/g, '').trim() : '';
+      expect(clue06_27.includes('1 أكب')).toBe(false);
+
+      const u02 = PROD_CHEMISTRY_UNITS.find(u => u.id === 'u02');
+      expect(u02).toBeDefined();
+      const u02Ku = prodCompileUnitQuestions(u02!, 'ku');
+      const q02_75 = u02Ku.find(q => q.id === 'u02-q075');
+      expect(q02_75).toBeDefined();
+      expect(q02_75!.options[q02_75!.correctIndex]).toBe('Metal');
+      const quote02_75 = q02_75!.stem.match(/["“«]([^"”»]+)["”»]/g);
+      const clue02_75 = quote02_75 ? quote02_75[quote02_75.length - 1].replace(/^["“«]|["”»]$/g, '').trim() : '';
+      expect(clue02_75.startsWith('Metal ')).toBe(false);
+      expect(clue02_75.includes(' metals ')).toBe(false);
+    })
+  );
+
+  printTestResult(
+    await test('T1.F13.17', 1, 'F13-I18N', 'assertNoSpecificMtArtifacts: 0 instances of comical/military MT artifacts across units', () => {
+      const specificMtArtifacts = [
+        'Сифон ÖSYM',
+        'ÖSYM 疏水阀',
+        '扎伊采夫支队',
+        '加入马尔科夫尼科夫',
+        'مراقبة الجودة',
+      ];
+      let artifactCount = 0;
+      for (const u of PROD_CHEMISTRY_UNITS) {
+        const uJson = JSON.stringify(u);
+        for (const art of specificMtArtifacts) {
+          if (uJson.includes(art)) {
+            artifactCount++;
+          }
+        }
+      }
+      expect(artifactCount).toBe(0);
+    })
+  );
+
+  printTestResult(
+    await test('T1.F13.18', 1, 'F13-I18N', 'assertNoOsymLeaksInForeignFlashcards: 0 untranslated ÖSYM acronym leaks in foreign flashcards', () => {
+      const foreignLangs = ['en', 'de', 'fr', 'ru', 'ar', 'zh', 'ku'] as const;
+      let leakCount = 0;
+      for (const lang of foreignLangs) {
+        const cards = prodCompileAllFlashcards(PROD_CHEMISTRY_UNITS, lang);
+        for (const c of cards) {
+          if (/ÖSYM/i.test(c.osymTip) || /ÖSYM/i.test(c.front) || /ÖSYM/i.test(c.back)) {
+            leakCount++;
+          }
+        }
+      }
+      expect(leakCount).toBe(0);
     })
   );
 }

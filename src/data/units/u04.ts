@@ -54,9 +54,9 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "ÖSYM trap: Vapor pressure does not depend on external pressure!",
         "de": "ÖSYM-Falle: Dampfdruck ist nicht vom Außendruck abhängig!",
         "fr": "Piège ÖSYM : La pression de vapeur ne dépend pas de la pression extérieure !",
-        "ru": "Сифон ÖSYM: Давление пара не зависит от внешнего давления!",
+        "ru": "Ловушка на экзамене: Давление пара не зависит от внешнего давления!",
         "ar": "مصيدة ÖSYM: ضغط البخار لا يعتمد على الضغط الخارجي!",
-        "zh": "ÖSYM 疏水阀：蒸气压不依赖于外部压力！",
+        "zh": "高考避坑指南：蒸气压不依赖于外部压力！",
         "ku": "Xefika ÖSYM: Zexta vaporê bi zexta derve ve namîne!"
       }
     },
@@ -641,34 +641,34 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-c08",
       "conceptA": {
-        "tr": "Süblimleşme",
-        "en": "Sublimation",
-        "de": "Sublimation",
-        "fr": "Sublimation",
-        "ru": "Сублимация",
-        "ar": "التسامي",
-        "zh": "升华",
-        "ku": "Sublîmasyon"
+        "tr": "Buharlaşma",
+        "en": "evaporation",
+        "de": "Verdunstung",
+        "fr": "évaporation",
+        "ru": "испарение",
+        "ar": "التبخر",
+        "zh": "蒸发",
+        "ku": "evaporation"
       },
       "conceptB": {
-        "tr": "Kırağılaşma",
-        "en": "Deposition",
-        "de": "Resublimation",
-        "fr": "Condensation solide",
-        "ru": "Десублимация",
-        "ar": "الترسيب",
-        "zh": "凝华",
-        "ku": "Qirawbûn"
+        "tr": "Kaynama",
+        "en": "boiling",
+        "de": "kochend",
+        "fr": "bouillante",
+        "ru": "кипение",
+        "ar": "الغليان",
+        "zh": "沸腾",
+        "ku": "kelandin"
       },
       "distinction": {
-        "tr": "Süblimleşme katının sıvılaşmadan doğrudan gaza geçmesidir; kırağılaşma ise gaz taneciklerinin doğrudan katıya dönüşmesidir.",
-        "en": "Sublimation is the direct transition from solid to gas without melting; deposition is the direct transition from gas to solid without condensing.",
-        "de": "Sublimation ist der direkte Übergang vom festen in den gasförmigen Zustand; Resublimation ist der direkte Übergang vom Gas zum Feststoff.",
-        "fr": "La sublimation est le passage direct de l'état solide à l'état gazeux ; la condensation solide est le passage direct du gaz au solide.",
-        "ru": "Сублимация — прямой переход твердого тела в газ минуя жидкость; десублимация — переход газа сразу в твердое состояние.",
-        "ar": "التسامي هو التحول المباشر للمادة من الحالة الصلبة إلى الغازية دون المرور بالسيولة؛ الترسيب هو تحول الغاز مباشرة إلى صلب.",
-        "zh": "升华是物质不经液态直接从固态转变为气态的过程；凝华是气体不经液态直接转变为固态的过程。",
-        "ku": "Sublîmasyon derbasbûna rasterast ji rewşa hişk bo gaza bê helandin e; qirawbûn derbasbûna rasterast ji gazê ber bi hişkê ve ye."
+        "tr": "Buharlaşma her sıcaklıkta ve sadece yüzeyde; kaynama belirli sıcaklıkta ve sıvının her yerinde gerçekleşir.",
+        "en": "Evaporation occurs at all temperatures and only on the surface; Boiling occurs at a certain temperature and everywhere in the liquid.",
+        "de": "Die Verdunstung erfolgt bei allen Temperaturen und nur an der Oberfläche; Das Sieden findet bei einer bestimmten Temperatur und überall in der Flüssigkeit statt.",
+        "fr": "L'évaporation se produit à toutes les températures et uniquement en surface ; L'ébullition se produit à une certaine température et partout dans le liquide.",
+        "ru": "Испарение происходит при всех температурах и только на поверхности; Кипение происходит при определенной температуре и повсеместно в жидкости.",
+        "ar": "يحدث التبخر في جميع درجات الحرارة وعلى السطح فقط؛ يحدث الغليان عند درجة حرارة معينة وفي كل مكان في السائل.",
+        "zh": "蒸发在所有温度下都会发生，并且仅发生在表面；沸腾发生在一定温度下，并且发生在液体的各处。",
+        "ku": "Evaporation di her germahiyê de û tenê li ser rûyê çêdibe; Kelandin di germahiyek diyar de û li her derê şilê çêdibe."
       }
     }
   ],
@@ -742,7 +742,7 @@ export const unit04: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "0 °C deki buz eriyerek suya dönüşür",
+          "tr": "0 °C'deki buz eriyerek suya dönüşür",
           "en": "Ice at 0 °C melts and turns into water",
           "de": "Eis schmilzt bei 0 °C und verwandelt sich in Wasser",
           "fr": "La glace à 0 °C fond et se transforme en eau",
@@ -752,7 +752,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ku": "Qeşa di 0 °C de dihele û dibe av"
         },
         {
-          "tr": "Sıvı su 100 °C ye kadar ısınır",
+          "tr": "Sıvı su 100 °C'ye kadar ısınır",
           "en": "Liquid water heats up to 100 °C",
           "de": "Flüssiges Wasser erhitzt sich auf bis zu 100 °C",
           "fr": "L'eau liquide chauffe jusqu'à 100 °C",
@@ -762,7 +762,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ku": "Ava şil heta 100 °C germ dibe"
         },
         {
-          "tr": "100 °C de sabit sıcaklıkta kaynar",
+          "tr": "100 °C'de sabit sıcaklıkta kaynar",
           "en": "Boils at a constant temperature of 100 °C",
           "de": "Siedet bei einer konstanten Temperatur von 100 °C",
           "fr": "Bouillonne à une température constante de 100 °C",
@@ -1050,14 +1050,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Maddenin Halleri konusunu işlerken Viskozite üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on States of Matter, which statement regarding viscosity represents the correct answer?",
-        "de": "Welche Aussage zu Viskosität stellt im Kontext von Aggregatzustände die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de États de la Matière, quelle proposition sur viscosité constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Агрегатные состояния вещества», какой ответ относительно «вязкость» является правильным?",
-        "ar": "أثناء دراسة موضوع \"حالات المادة\" مخبرياً، أي إجابة بخصوص \"اللزوجة\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“物态”实验探究与教学分析中，针对“粘度”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Rewşên Madeyê\" de, kîjan bersiv derbarê \"vîskozîtî\" de rast e?"
+        "tr": "Kimya dersinde Maddenin Halleri ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit States of Matter, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Aggregatzustände: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité États de la Matière, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Агрегатные состояния вещества», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"حالات المادة\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“物态”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Rewşên Madeyê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1126,14 +1126,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin04",
       "stem": {
-        "tr": "Kimya dersinde Maddenin Halleri ünitesi incelenirken Buhar Basıncı ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit States of Matter, which of the following propositions concerning Steam Pressure is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Aggregatzustände: Welche Behauptung bezüglich Dampfdruck entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité États de la Matière, laquelle des affirmations suivantes concernant Pression de vapeur est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Агрегатные состояния вещества», какое из следующих суждений о «Давление пара» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"حالات المادة\"، أي من الأحكام التالية المتعلقة بـ \"ضغط البخار\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“物态”核心规律时，下列关于“蒸汽压力”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Rewşên Madeyê\" tê kirin, kîjan daraza li ser \"Zexta Steam\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Maddenin Halleri konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of States of Matter?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Aggregatzustände zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de États de la Matière ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Агрегатные состояния вещества»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"حالات المادة\"؟",
+        "zh": "根据“物态”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Rewşên Madeyê\" de rast e?"
       },
       "options": [
         {
@@ -1202,14 +1202,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Maddenin Halleri konusundaki temel kimyasal kurallar çerçevesinde Kaynama kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes boiling within the fundamental principles of States of Matter?",
-        "de": "Welche Aussage beschreibt das Konzept kochend im Rahmen von Aggregatzustände am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement bouillante selon les lois de États de la Matière?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «кипение» в рамках темы «Агрегатные состояния вещества»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"الغليان\" ضمن قواعد \"حالات المادة\"؟",
-        "zh": "根据“物态”的基本化学原理，下列哪项阐述能最准确地界定“沸腾”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"kelandin\" di çarçoveya prensîbên \"Rewşên Madeyê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Maddenin Halleri sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering States of Matter, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Aggregatzustände: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur États de la Matière, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Агрегатные состояния вещества», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"حالات المادة\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“物态”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Rewşên Madeyê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1278,14 +1278,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Maddenin Halleri sorularında karşılaşılan Gerçek Gaz konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering States of Matter, which assertion regarding Real Gas is correct?",
-        "de": "Welche Feststellung bezüglich Echtes Gas ist nach den chemischen Gesetzmäßigkeiten von Aggregatzustände richtig?",
-        "fr": "Dans les épreuves universitaires portant sur États de la Matière, quelle affirmation concernant Gaz réel est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Агрегатные состояния вещества», какое положение относительно «Реальный газ» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"حالات المادة\"، أي حكم متعلق بـ \"الغاز الحقيقي\" يعتبر صحيحاً؟",
-        "zh": "在高考“物态”经典考题中，下列有关“真实气体”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Rewşên Madeyê\" de, kîjan daraza li ser \"Gaza Rastî\" rast e?"
+        "tr": "Aşağıda Maddenin Halleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of States of Matter, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Aggregatzustände: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de États de la Matière, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Агрегатные состояния вещества», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"حالات المادة\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“物态”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Rewşên Madeyê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1354,14 +1354,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin07",
       "stem": {
-        "tr": "Aşağıda Maddenin Halleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Gaz ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of States of Matter, which statement about gas is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Aggregatzustände: Welche Aussage über Gas ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de États de la Matière, quelle affirmation relative à gaz est exacte?",
-        "ru": "На основе фундаментальных положений темы «Агрегатные состояния вещества», какое суждение о «газ» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"حالات المادة\"، أي عبارة حول \"غاز\" صحيحة؟",
-        "zh": "基于“物态”的基础化学知识体系，下列关于“气体”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Rewşên Madeyê\", kîjan gotin derbarê \"gaz\" de rast e?"
+        "tr": "Maddenin Halleri konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of States of Matter, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Aggregatzustände: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité États de la Matière, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Агрегатные состояния вещества», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"حالات المادة\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“物态”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Rewşên Madeyê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1430,14 +1430,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin08",
       "stem": {
-        "tr": "Maddenin Halleri konusu kapsamında Süblimleşme ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of States of Matter, which of the following findings regarding Sublimation is scientifically verified?",
-        "de": "Im Rahmen der Einheit Aggregatzustände: Welcher der folgenden Befunde zu Sublimation ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité États de la Matière, laquelle des constatations suivantes concernant Sublimation est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Агрегатные состояния вещества», какой из следующих выводов относительно «Сублимация» научно подтверждён?",
-        "ar": "في سياق موضوع \"حالات المادة\"، أي من النتائج التالية المتعلقة بـ \"التسامي\" مثبتة علمياً؟",
-        "zh": "在“物态”主题范畴内，下列关于“升华”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Rewşên Madeyê\" de, kîjan ji van encamên li ser \"Sublîmasyon\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Maddenin Halleri ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit States of Matter, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Aggregatzustände: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité États de la Matière, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Агрегатные состояния вещества», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"حالات المادة\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“物态”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Rewşên Madeyê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1506,14 +1506,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Maddenin Halleri ünitesinde ele alınan Buharlaşma hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit States of Matter, which statement about evaporation is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Aggregatzustände: Welche Aussage über Verdunstung ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de États de la Matière, quelle affirmation relative à évaporation est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Агрегатные состояния вещества», какое утверждение о «испарение» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"حالات المادة\"، أي عبارة حول \"التبخر\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“物态”单元中关于“蒸发”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Rewşên Madeyê\", kîjan gotin li ser \"evaporation\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Maddenin Halleri konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on States of Matter, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Aggregatzustände die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité États de la Matière, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Агрегатные состояния вещества», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"حالات المادة\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“物态”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Rewşên Madeyê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1582,14 +1582,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Maddenin Halleri konusunu işlerken Amorf Katı üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on States of Matter, which statement regarding Amorphous Solid represents the correct answer?",
-        "de": "Welche Aussage zu Amorpher Feststoff stellt im Kontext von Aggregatzustände die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de États de la Matière, quelle proposition sur Solide amorphe constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Агрегатные состояния вещества», какой ответ относительно «Аморфное твердое вещество» является правильным?",
-        "ar": "أثناء دراسة موضوع \"حالات المادة\" مخبرياً، أي إجابة بخصوص \"صلبة غير متبلورة\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“物态”实验探究与教学分析中，针对“非晶固体”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Rewşên Madeyê\" de, kîjan bersiv derbarê \"Amorphous Solid\" de rast e?"
+        "tr": "Kimya dersinde Maddenin Halleri ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit States of Matter, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Aggregatzustände: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité États de la Matière, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Агрегатные состояния вещества», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"حالات المادة\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“物态”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Rewşên Madeyê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1658,14 +1658,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin11",
       "stem": {
-        "tr": "Kimya dersinde Maddenin Halleri ünitesi incelenirken Viskozite ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit States of Matter, which of the following propositions concerning viscosity is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Aggregatzustände: Welche Behauptung bezüglich Viskosität entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité États de la Matière, laquelle des affirmations suivantes concernant viscosité est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Агрегатные состояния вещества», какое из следующих суждений о «вязкость» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"حالات المادة\"، أي من الأحكام التالية المتعلقة بـ \"اللزوجة\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“物态”核心规律时，下列关于“粘度”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Rewşên Madeyê\" tê kirin, kîjan daraza li ser \"vîskozîtî\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Maddenin Halleri konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of States of Matter?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Aggregatzustände zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de États de la Matière ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Агрегатные состояния вещества»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"حالات المادة\"؟",
+        "zh": "根据“物态”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Rewşên Madeyê\" de rast e?"
       },
       "options": [
         {
@@ -1734,14 +1734,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Maddenin Halleri konusundaki temel kimyasal kurallar çerçevesinde Buhar Basıncı kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Steam Pressure within the fundamental principles of States of Matter?",
-        "de": "Welche Aussage beschreibt das Konzept Dampfdruck im Rahmen von Aggregatzustände am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Pression de vapeur selon les lois de États de la Matière?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Давление пара» в рамках темы «Агрегатные состояния вещества»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"ضغط البخار\" ضمن قواعد \"حالات المادة\"؟",
-        "zh": "根据“物态”的基本化学原理，下列哪项阐述能最准确地界定“蒸汽压力”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Zexta Steam\" di çarçoveya prensîbên \"Rewşên Madeyê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Maddenin Halleri sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering States of Matter, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Aggregatzustände: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur États de la Matière, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Агрегатные состояния вещества», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"حالات المادة\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“物态”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Rewşên Madeyê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1810,14 +1810,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Maddenin Halleri sorularında karşılaşılan Kaynama konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering States of Matter, which assertion regarding boiling is correct?",
-        "de": "Welche Feststellung bezüglich kochend ist nach den chemischen Gesetzmäßigkeiten von Aggregatzustände richtig?",
-        "fr": "Dans les épreuves universitaires portant sur États de la Matière, quelle affirmation concernant bouillante est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Агрегатные состояния вещества», какое положение относительно «кипение» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"حالات المادة\"، أي حكم متعلق بـ \"الغليان\" يعتبر صحيحاً؟",
-        "zh": "在高考“物态”经典考题中，下列有关“沸腾”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Rewşên Madeyê\" de, kîjan daraza li ser \"kelandin\" rast e?"
+        "tr": "Aşağıda Maddenin Halleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of States of Matter, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Aggregatzustände: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de États de la Matière, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Агрегатные состояния вещества», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"حالات المادة\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“物态”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Rewşên Madeyê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1886,14 +1886,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin14",
       "stem": {
-        "tr": "Aşağıda Maddenin Halleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Gerçek Gaz ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of States of Matter, which statement about Real Gas is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Aggregatzustände: Welche Aussage über Echtes Gas ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de États de la Matière, quelle affirmation relative à Gaz réel est exacte?",
-        "ru": "На основе фундаментальных положений темы «Агрегатные состояния вещества», какое суждение о «Реальный газ» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"حالات المادة\"، أي عبارة حول \"الغاز الحقيقي\" صحيحة؟",
-        "zh": "基于“物态”的基础化学知识体系，下列关于“真实气体”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Rewşên Madeyê\", kîjan gotin derbarê \"Gaza Rastî\" de rast e?"
+        "tr": "Maddenin Halleri konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of States of Matter, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Aggregatzustände: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité États de la Matière, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Агрегатные состояния вещества», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"حالات المادة\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“物态”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Rewşên Madeyê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1962,14 +1962,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin15",
       "stem": {
-        "tr": "Maddenin Halleri konusu kapsamında Gaz ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of States of Matter, which of the following findings regarding gas is scientifically verified?",
-        "de": "Im Rahmen der Einheit Aggregatzustände: Welcher der folgenden Befunde zu Gas ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité États de la Matière, laquelle des constatations suivantes concernant gaz est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Агрегатные состояния вещества», какой из следующих выводов относительно «газ» научно подтверждён?",
-        "ar": "في سياق موضوع \"حالات المادة\"، أي من النتائج التالية المتعلقة بـ \"غاز\" مثبتة علمياً؟",
-        "zh": "在“物态”主题范畴内，下列关于“气体”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Rewşên Madeyê\" de, kîjan ji van encamên li ser \"gaz\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Maddenin Halleri ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit States of Matter, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Aggregatzustände: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité États de la Matière, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Агрегатные состояния вещества», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"حالات المادة\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“物态”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Rewşên Madeyê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2038,14 +2038,14 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Maddenin Halleri ünitesinde ele alınan Süblimleşme hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit States of Matter, which statement about Sublimation is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Aggregatzustände: Welche Aussage über Sublimation ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de États de la Matière, quelle affirmation relative à Sublimation est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Агрегатные состояния вещества», какое утверждение о «Сублимация» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"حالات المادة\"، أي عبارة حول \"التسامي\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“物态”单元中关于“升华”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Rewşên Madeyê\", kîjan gotin li ser \"Sublîmasyon\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Maddenin Halleri konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on States of Matter, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Aggregatzustände die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité États de la Matière, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Агрегатные состояния вещества», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"حالات المادة\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“物态”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Rewşên Madeyê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

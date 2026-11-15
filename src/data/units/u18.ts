@@ -443,34 +443,34 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-c02",
       "conceptA": {
-        "tr": "Denge Kesri Qc",
-        "en": "Equilibrium Fraction Qc",
-        "de": "Gleichgewichtsfraktion Qc",
-        "fr": "Fraction d'équilibre Qc",
-        "ru": "Равновесная фракция Qc",
-        "ar": "جزء التوازن مراقبة الجودة",
-        "zh": "平衡分数 Qc",
-        "ku": "Parçeya Hevsengî Qc"
+        "tr": "Dengeye Sıcaklığın Etkisi",
+        "en": "Effect of Temperature on Equilibrium",
+        "de": "Einfluss der Temperatur auf das Gleichgewicht",
+        "fr": "Effet de la température sur l'équilibre",
+        "ru": "Влияние температуры на равновесие",
+        "ar": "تأثير درجة الحرارة على التوازن",
+        "zh": "温度对平衡的影响",
+        "ku": "Bandora Germahiyê li ser Hevsengiyê"
       },
       "conceptB": {
-        "tr": "Denge Sabiti Kc",
-        "en": "Equilibrium Constant Kc",
-        "de": "Gleichgewichtskonstante Kc",
-        "fr": "Constante d’équilibre Kc",
-        "ru": "Константа равновесия Kc",
-        "ar": "ثابت التوازن Kc",
-        "zh": "平衡常数 Kc",
-        "ku": "Berdewamiya Hevsengiyê Kc"
+        "tr": "Dengeye Basıncın Etkisi",
+        "en": "Effect of Pressure on Equilibrium",
+        "de": "Einfluss des Drucks auf das Gleichgewicht",
+        "fr": "Effet de la pression sur l'équilibre",
+        "ru": "Влияние давления на равновесие",
+        "ar": "تأثير الضغط على التوازن",
+        "zh": "压力对平衡的影响",
+        "ku": "Bandora Zextê li ser Hevsengiyê"
       },
       "distinction": {
-        "tr": "Qc herhangi bir andaki derişim oranıdır; Kc sistem dengedeyken aldığı sabit değerdir.",
-        "en": "Qc is the concentration rate at any given moment; Kc is the constant value that the system takes when it is in equilibrium.",
-        "de": "Qc ist die Konzentrationsrate zu einem bestimmten Zeitpunkt; Kc ist der konstante Wert, den das System annimmt, wenn es sich im Gleichgewicht befindet.",
-        "fr": "Qc est le taux de concentration à un instant donné ; Kc est la valeur constante que prend le système lorsqu'il est en équilibre.",
-        "ru": "Qc — скорость концентрации в любой данный момент; Кс — постоянное значение, которое принимает система, когда она находится в равновесии.",
-        "ar": "Qc هو معدل التركيز في أي لحظة؛ Kc هي القيمة الثابتة التي يأخذها النظام عندما يكون في حالة توازن.",
-        "zh": "Qc 是任意给定时刻的浓度率； Kc是系统处于平衡状态时所取的常数值。",
-        "ku": "Qc rêjeya konsantasyonê ya di her kêliyê de ye; Kc nirxa domdar e ku pergal dema ku di hevsengiyê de ye digire."
+        "tr": "Dengeye sıcaklığın etkisi denge sabiti Kc'nin sayısal değerini değiştirir; dengeye basıncın etkisi ise gaz mol sayısına göre denge yönünü kaydırır ancak Kc'nin değerini değiştirmez.",
+        "en": "The effect of temperature on equilibrium changes the numerical value of the equilibrium constant Kc; the effect of pressure on equilibrium shifts the equilibrium direction according to gas moles but does not change the value of Kc.",
+        "de": "Der Einfluss der Temperatur auf das Gleichgewicht verändert den numerischen Wert der Gleichgewichtskonstante Kc; der Einfluss des Drucks verschiebt die Gleichgewichtslage entsprechend den Gasmolen, verändert jedoch nicht den Wert von Kc.",
+        "fr": "L'effet de la température sur l'équilibre modifie la valeur numérique de la constante d'équilibre Kc ; l'effet de la pression déplace l'équilibre selon le nombre de moles de gaz mais ne modifie pas la valeur de Kc.",
+        "ru": "Влияние температуры на равновесие изменяет численное значение константы равновесия Kc; влияние давления смещает положение равновесия в зависимости от числа молей газа, но не изменяет значение Kc.",
+        "ar": "تأثير درجة الحرارة على التوازن يغير القيمة العددية لثابت التوازن Kc؛ بينما تأثير الضغط يزيح اتجاه التوازن وفقاً لعدد مولات الغاز ولكنه لا يغير قيمة Kc.",
+        "zh": "温度对平衡的影响会改变平衡常数 Kc 的数值；而压力对平衡的影响根据气体摩尔数移动平衡方向，但不会改变 Kc 的数值。",
+        "ku": "Bandora germahiyê ya li ser hevsengiyê nirxa hejmarî ya sabita hevsengiyê Kc diguherîne; bandora zextê li gorî hejmara molên gazê arasteya hevsengiyê diguherîne lê nirxa Kc naguherîne."
       }
     },
     {
@@ -514,7 +514,7 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Gleichgewichtsanteil (Qc)",
         "fr": "Fraction d'équilibre (Qc)",
         "ru": "Равновесная фракция (Qc)",
-        "ar": "جزء التوازن (Qc)",
+        "ar": "حاصل التفاعل (Qc)",
         "zh": "平衡分数 (Qc)",
         "ku": "Parçeya Hevsengiyê (Qc)"
       },
@@ -534,7 +534,7 @@ export const unit18: ChemistryUnitSeedData = {
         "de": "Qc ist das Verhältnis der Konzentrationen zu einem bestimmten Zeitpunkt; Wenn Qc = Kc, befindet sich das System im Gleichgewicht, wenn Qc < Kc, verschiebt sich das System zu Produkten.",
         "fr": "Qc est le rapport des concentrations à un instant donné ; Lorsque Qc = Kc le système est en équilibre, si Qc < Kc le système passe aux produits.",
         "ru": "Qc — отношение концентраций в любой данный момент; При Qc = Kc система находится в равновесии, если Qc < Kc, система переходит к продуктам.",
-        "ar": "Qc هي نسبة التركيزات في أي لحظة معينة؛ عندما تكون Qc = Kc يكون النظام في حالة توازن، وإذا كانت Qc <Kc يتحول النظام إلى المنتجات.",
+        "ar": "حاصل التفاعل (Qc) هو نسبة التراكيز في أي لحظة معينة؛ عندما تكون Qc = Kc يكون النظام في حالة توازن، وإذا كانت Qc < Kc يتجه التوازن نحو النواتج.",
         "zh": "Qc 是任意给定时刻的浓度比；当 Qc = Kc 时，系统处于平衡状态；如果 Qc < Kc，则系统转向产品。",
         "ku": "Qc rêjeya konsantreyan di her kêliyê de ye; Dema Qc = Kc pergal di hevsengiyê de be, ger Qc < Kc pergal ber bi hilberan ve diçe."
       }
@@ -575,7 +575,7 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-c06",
       "conceptA": {
-        "tr": "Sıcaklığın Kc ye Etkisi",
+        "tr": "Sıcaklığın Kc'ye Etkisi",
         "en": "Effect of Temperature on Kc",
         "de": "Einfluss der Temperatur auf Kc",
         "fr": "Effet de la température sur Kc",
@@ -595,14 +595,14 @@ export const unit18: ChemistryUnitSeedData = {
         "ku": "Bandora Katalîzatorê li ser Hevsengiyê"
       },
       "distinction": {
-        "tr": "Kc nin sayısal değerini yalnızca ve yalnızca sıcaklık değiştirir; katalizör denge sabiti Kc yi asla değiştirmez, dengeye ulaşma süresini kısaltır.",
-        "en": "Only temperature changes the numerical value of Kc; The catalyst never changes the equilibrium constant Kc, shortening the time to reach equilibrium.",
-        "de": "Nur die Temperatur ändert den numerischen Wert von Kc; Der Katalysator verändert die Gleichgewichtskonstante Kc nie, wodurch die Zeit bis zum Erreichen des Gleichgewichts verkürzt wird.",
-        "fr": "Seule la température modifie la valeur numérique de Kc ; Le catalyseur ne modifie jamais la constante d’équilibre Kc, ce qui réduit le temps nécessaire pour atteindre l’équilibre.",
-        "ru": "Только температура меняет числовое значение Кс; Катализатор никогда не меняет константу равновесия Kc, сокращая время достижения равновесия.",
-        "ar": "فقط درجة الحرارة تغير القيمة العددية لـ Kc؛ لا يغير المحفز أبدًا ثابت التوازن Kc، مما يؤدي إلى تقصير الوقت اللازم للوصول إلى التوازن.",
-        "zh": "只有温度改变Kc的数值；催化剂不会改变平衡常数Kc，从而缩短了达到平衡的时间。",
-        "ku": "Tenê germahî nirxa hejmarî ya Kc diguherîne; Katalîzator qet domdariya hevsengiyê Kc naguherîne, dema gihîştina hevsengiyê kurt dike."
+        "tr": "Denge sabitinin (Kc) sayısal değerini yalnızca ve yalnızca bu etki değiştirir; katalizör ise denge sabiti Kc'yi asla değiştirmez, yalnızca dengeye ulaşma süresini kısaltır.",
+        "en": "Only this effect changes the numerical value of the equilibrium constant (Kc); a catalyst never changes the equilibrium constant Kc, only shortening the time to reach equilibrium.",
+        "de": "Nur dieser Einfluss verändert den numerischen Wert der Gleichgewichtskonstante (Kc); ein Katalysator verändert die Gleichgewichtskonstante Kc nie, sondern verkürzt nur die Zeit bis zum Erreichen des Gleichgewichts.",
+        "fr": "Seul cet effet modifie la valeur numérique de la constante d'équilibre (Kc) ; un catalyseur ne modifie jamais la constante d'équilibre Kc, réduisant seulement le temps nécessaire pour atteindre l'équilibre.",
+        "ru": "Только это влияние изменяет численное значение константы равновесия (Kc); катализатор никогда не изменяет константу равновесия Kc, лишь сокращая время достижения равновесия.",
+        "ar": "هذا التأثير فقط هو الذي يغير القيمة العددية لثابت التوازن (Kc)؛ بينما المحفز لا يغير أبداً ثابت التوازن Kc بل يقلل فقط زمن الوصول إلى التوازن.",
+        "zh": "只有该影响才会改变平衡常数 (Kc) 的数值；而催化剂绝不改变平衡常数 Kc，仅缩短达到平衡所需的时间。",
+        "ku": "Tenê ev bandor nirxa hejmarî ya sabita hevsengiyê (Kc) diguherîne; katalîzator qet sabita hevsengiyê Kc naguherîne, tenê dema gihîştina hevsengiyê kurt dike."
       }
     },
     {
@@ -1050,14 +1050,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Denge konusunu işlerken Derişimler Cinsinden Denge (Kc) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Chemical Equilibrium, which statement regarding Equilibrium in Terms of Concentrations (Kc) represents the correct answer?",
-        "de": "Welche Aussage zu Gleichgewicht in Bezug auf Konzentrationen (Kc) stellt im Kontext von Chemisches Gleichgewicht die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Équilibre Chimique, quelle proposition sur Équilibre en termes de concentrations (Kc) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Химическое равновесие», какой ответ относительно «Равновесие по концентрациям (Kc)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الاتزان الكيميائي\" مخبرياً، أي إجابة بخصوص \"التوازن من حيث التركيزات (Kc)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学平衡”实验探究与教学分析中，针对“浓度平衡 (Kc)”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Hevsengiya Kîmyewî\" de, kîjan bersiv derbarê \"Hevsengiya di warê konsantrebûnê de (Kc)\" de rast e?"
+        "tr": "Kimya dersinde Kimyasal Denge ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Chemical Equilibrium, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Chemisches Gleichgewicht: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Équilibre Chimique, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Химическое равновесие», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الاتزان الكيميائي\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学平衡”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Hevsengiya Kîmyewî\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1126,14 +1126,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin04",
       "stem": {
-        "tr": "Kimya dersinde Kimyasal Denge ünitesi incelenirken Denge Kesri (Qc) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Chemical Equilibrium, which of the following propositions concerning Equilibrium Fraction (Qc) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Chemisches Gleichgewicht: Welche Behauptung bezüglich Gleichgewichtsanteil (Qc) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Équilibre Chimique, laquelle des affirmations suivantes concernant Fraction d'équilibre (Qc) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Химическое равновесие», какое из следующих суждений о «Равновесная фракция (Qc)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الاتزان الكيميائي\"، أي من الأحكام التالية المتعلقة بـ \"جزء التوازن (Qc)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学平衡”核心规律时，下列关于“平衡分数 (Qc)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Hevsengiya Kîmyewî\" tê kirin, kîjan daraza li ser \"Parçeya Hevsengiyê (Qc)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyasal Denge konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Chemical Equilibrium?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Chemisches Gleichgewicht zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Équilibre Chimique ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Химическое равновесие»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الاتزان الكيميائي\"؟",
+        "zh": "根据“化学平衡”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Hevsengiya Kîmyewî\" de rast e?"
       },
       "options": [
         {
@@ -1202,14 +1202,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyasal Denge konusundaki temel kimyasal kurallar çerçevesinde Homojen Denge kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Homogeneous Balance within the fundamental principles of Chemical Equilibrium?",
-        "de": "Welche Aussage beschreibt das Konzept Homogenes Gleichgewicht im Rahmen von Chemisches Gleichgewicht am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Equilibre homogène selon les lois de Équilibre Chimique?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Гомогенный баланс» в рамках темы «Химическое равновесие»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"توازن متجانس\" ضمن قواعد \"الاتزان الكيميائي\"؟",
-        "zh": "根据“化学平衡”的基本化学原理，下列哪项阐述能最准确地界定“均匀平衡”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Balansa homojen\" di çarçoveya prensîbên \"Hevsengiya Kîmyewî\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyasal Denge sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Chemical Equilibrium, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Chemisches Gleichgewicht: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Équilibre Chimique, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Химическое равновесие», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الاتزان الكيميائي\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学平衡”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Kîmyewî\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1278,14 +1278,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyasal Denge sorularında karşılaşılan Sıcaklığın Kc ye Etkisi konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Chemical Equilibrium, which assertion regarding Effect of Temperature on Kc is correct?",
-        "de": "Welche Feststellung bezüglich Einfluss der Temperatur auf Kc ist nach den chemischen Gesetzmäßigkeiten von Chemisches Gleichgewicht richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Équilibre Chimique, quelle affirmation concernant Effet de la température sur Kc est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Химическое равновесие», какое положение относительно «Влияние температуры на Kc» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الاتزان الكيميائي\"، أي حكم متعلق بـ \"تأثير درجة الحرارة على Kc\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学平衡”经典考题中，下列有关“温度对 Kc 的影响”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Kîmyewî\" de, kîjan daraza li ser \"Bandora Germahiya li ser Kc\" rast e?"
+        "tr": "Aşağıda Kimyasal Denge ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Chemical Equilibrium, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Chemisches Gleichgewicht: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Équilibre Chimique, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Химическое равновесие», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الاتزان الكيميائي\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学平衡”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Kîmyewî\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1354,14 +1354,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin07",
       "stem": {
-        "tr": "Aşağıda Kimyasal Denge ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Hacim Küçülmesi Etkisi ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Chemical Equilibrium, which statement about Volume Shrinkage Effect is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Chemisches Gleichgewicht: Welche Aussage über Volumenschrumpfungseffekt ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Équilibre Chimique, quelle affirmation relative à Effet de réduction du volume est exacte?",
-        "ru": "На основе фундаментальных положений темы «Химическое равновесие», какое суждение о «Эффект уменьшения объема» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الاتزان الكيميائي\"، أي عبارة حول \"تأثير انكماش الحجم\" صحيحة؟",
-        "zh": "基于“化学平衡”的基础化学知识体系，下列关于“体积收缩效应”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Kîmyewî\", kîjan gotin derbarê \"Bandora Kêmbûna Volume\" de rast e?"
+        "tr": "Kimyasal Denge konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Chemical Equilibrium, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Chemisches Gleichgewicht: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Équilibre Chimique, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Химическое равновесие», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الاتزان الكيميائي\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学平衡”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Hevsengiya Kîmyewî\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1430,14 +1430,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin08",
       "stem": {
-        "tr": "Kimyasal Denge konusu kapsamında Dinamik Denge ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Chemical Equilibrium, which of the following findings regarding Dynamic Balance is scientifically verified?",
-        "de": "Im Rahmen der Einheit Chemisches Gleichgewicht: Welcher der folgenden Befunde zu Dynamisches Gleichgewicht ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Équilibre Chimique, laquelle des constatations suivantes concernant Equilibre dynamique est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Химическое равновесие», какой из следующих выводов относительно «Динамический баланс» научно подтверждён?",
-        "ar": "في سياق موضوع \"الاتزان الكيميائي\"، أي من النتائج التالية المتعلقة بـ \"التوازن الديناميكي\" مثبتة علمياً؟",
-        "zh": "在“化学平衡”主题范畴内，下列关于“动态平衡”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Hevsengiya Kîmyewî\" de, kîjan ji van encamên li ser \"Balansa dînamîk\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyasal Denge ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Chemical Equilibrium, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Chemisches Gleichgewicht: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Équilibre Chimique, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Химическое равновесие», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الاتزان الكيميائي\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学平衡”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Kîmyewî\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1506,14 +1506,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyasal Denge ünitesinde ele alınan Kc hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Chemical Equilibrium, which statement about Kc is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Chemisches Gleichgewicht: Welche Aussage über Kc ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Équilibre Chimique, quelle affirmation relative à Kc est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Химическое равновесие», какое утверждение о «Kc» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الاتزان الكيميائي\"، أي عبارة حول \"Kc\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学平衡”单元中关于“Kc”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Kîmyewî\", kîjan gotin li ser \"Kc\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Denge konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Chemical Equilibrium, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Chemisches Gleichgewicht die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Équilibre Chimique, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Химическое равновесие», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الاتزان الكيميائي\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学平衡”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Hevsengiya Kîmyewî\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1582,14 +1582,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Denge konusunu işlerken Denge Kesri Qc üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Chemical Equilibrium, which statement regarding Equilibrium Fraction Qc represents the correct answer?",
-        "de": "Welche Aussage zu Gleichgewichtsfraktion Qc stellt im Kontext von Chemisches Gleichgewicht die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Équilibre Chimique, quelle proposition sur Fraction d'équilibre Qc constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Химическое равновесие», какой ответ относительно «Равновесная фракция Qc» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الاتزان الكيميائي\" مخبرياً، أي إجابة بخصوص \"جزء التوازن مراقبة الجودة\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学平衡”实验探究与教学分析中，针对“平衡分数 Qc”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Hevsengiya Kîmyewî\" de, kîjan bersiv derbarê \"Parçeya Hevsengî Qc\" de rast e?"
+        "tr": "Kimya dersinde Kimyasal Denge ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Chemical Equilibrium, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Chemisches Gleichgewicht: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Équilibre Chimique, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Химическое равновесие», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الاتزان الكيميائي\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学平衡”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Hevsengiya Kîmyewî\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1658,14 +1658,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin11",
       "stem": {
-        "tr": "Kimya dersinde Kimyasal Denge ünitesi incelenirken Derişimler Cinsinden Denge (Kc) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Chemical Equilibrium, which of the following propositions concerning Equilibrium in Terms of Concentrations (Kc) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Chemisches Gleichgewicht: Welche Behauptung bezüglich Gleichgewicht in Bezug auf Konzentrationen (Kc) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Équilibre Chimique, laquelle des affirmations suivantes concernant Équilibre en termes de concentrations (Kc) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Химическое равновесие», какое из следующих суждений о «Равновесие по концентрациям (Kc)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الاتزان الكيميائي\"، أي من الأحكام التالية المتعلقة بـ \"التوازن من حيث التركيزات (Kc)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学平衡”核心规律时，下列关于“浓度平衡 (Kc)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Hevsengiya Kîmyewî\" tê kirin, kîjan daraza li ser \"Hevsengiya di warê konsantrebûnê de (Kc)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyasal Denge konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Chemical Equilibrium?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Chemisches Gleichgewicht zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Équilibre Chimique ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Химическое равновесие»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الاتزان الكيميائي\"؟",
+        "zh": "根据“化学平衡”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Hevsengiya Kîmyewî\" de rast e?"
       },
       "options": [
         {
@@ -1734,14 +1734,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyasal Denge konusundaki temel kimyasal kurallar çerçevesinde Denge Kesri (Qc) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Equilibrium Fraction (Qc) within the fundamental principles of Chemical Equilibrium?",
-        "de": "Welche Aussage beschreibt das Konzept Gleichgewichtsanteil (Qc) im Rahmen von Chemisches Gleichgewicht am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Fraction d'équilibre (Qc) selon les lois de Équilibre Chimique?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Равновесная фракция (Qc)» в рамках темы «Химическое равновесие»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"جزء التوازن (Qc)\" ضمن قواعد \"الاتزان الكيميائي\"؟",
-        "zh": "根据“化学平衡”的基本化学原理，下列哪项阐述能最准确地界定“平衡分数 (Qc)”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Parçeya Hevsengiyê (Qc)\" di çarçoveya prensîbên \"Hevsengiya Kîmyewî\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyasal Denge sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Chemical Equilibrium, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Chemisches Gleichgewicht: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Équilibre Chimique, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Химическое равновесие», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الاتزان الكيميائي\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学平衡”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Kîmyewî\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1810,14 +1810,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyasal Denge sorularında karşılaşılan Homojen Denge konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Chemical Equilibrium, which assertion regarding Homogeneous Balance is correct?",
-        "de": "Welche Feststellung bezüglich Homogenes Gleichgewicht ist nach den chemischen Gesetzmäßigkeiten von Chemisches Gleichgewicht richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Équilibre Chimique, quelle affirmation concernant Equilibre homogène est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Химическое равновесие», какое положение относительно «Гомогенный баланс» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الاتزان الكيميائي\"، أي حكم متعلق بـ \"توازن متجانس\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学平衡”经典考题中，下列有关“均匀平衡”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Kîmyewî\" de, kîjan daraza li ser \"Balansa homojen\" rast e?"
+        "tr": "Aşağıda Kimyasal Denge ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Chemical Equilibrium, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Chemisches Gleichgewicht: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Équilibre Chimique, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Химическое равновесие», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الاتزان الكيميائي\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学平衡”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Kîmyewî\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1886,14 +1886,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin14",
       "stem": {
-        "tr": "Aşağıda Kimyasal Denge ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Sıcaklığın Kc ye Etkisi ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Chemical Equilibrium, which statement about Effect of Temperature on Kc is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Chemisches Gleichgewicht: Welche Aussage über Einfluss der Temperatur auf Kc ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Équilibre Chimique, quelle affirmation relative à Effet de la température sur Kc est exacte?",
-        "ru": "На основе фундаментальных положений темы «Химическое равновесие», какое суждение о «Влияние температуры на Kc» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الاتزان الكيميائي\"، أي عبارة حول \"تأثير درجة الحرارة على Kc\" صحيحة؟",
-        "zh": "基于“化学平衡”的基础化学知识体系，下列关于“温度对 Kc 的影响”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Kîmyewî\", kîjan gotin derbarê \"Bandora Germahiya li ser Kc\" de rast e?"
+        "tr": "Kimyasal Denge konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Chemical Equilibrium, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Chemisches Gleichgewicht: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Équilibre Chimique, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Химическое равновесие», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الاتزان الكيميائي\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学平衡”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Hevsengiya Kîmyewî\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1962,14 +1962,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin15",
       "stem": {
-        "tr": "Kimyasal Denge konusu kapsamında Hacim Küçülmesi Etkisi ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Chemical Equilibrium, which of the following findings regarding Volume Shrinkage Effect is scientifically verified?",
-        "de": "Im Rahmen der Einheit Chemisches Gleichgewicht: Welcher der folgenden Befunde zu Volumenschrumpfungseffekt ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Équilibre Chimique, laquelle des constatations suivantes concernant Effet de réduction du volume est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Химическое равновесие», какой из следующих выводов относительно «Эффект уменьшения объема» научно подтверждён?",
-        "ar": "في سياق موضوع \"الاتزان الكيميائي\"، أي من النتائج التالية المتعلقة بـ \"تأثير انكماش الحجم\" مثبتة علمياً؟",
-        "zh": "在“化学平衡”主题范畴内，下列关于“体积收缩效应”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Hevsengiya Kîmyewî\" de, kîjan ji van encamên li ser \"Bandora Kêmbûna Volume\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyasal Denge ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Chemical Equilibrium, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Chemisches Gleichgewicht: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Équilibre Chimique, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Химическое равновесие», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الاتزان الكيميائي\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学平衡”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Kîmyewî\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2038,14 +2038,14 @@ export const unit18: ChemistryUnitSeedData = {
     {
       "id": "u18-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyasal Denge ünitesinde ele alınan Dinamik Denge hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Chemical Equilibrium, which statement about Dynamic Balance is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Chemisches Gleichgewicht: Welche Aussage über Dynamisches Gleichgewicht ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Équilibre Chimique, quelle affirmation relative à Equilibre dynamique est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Химическое равновесие», какое утверждение о «Динамический баланс» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الاتزان الكيميائي\"، أي عبارة حول \"التوازن الديناميكي\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学平衡”单元中关于“动态平衡”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Kîmyewî\", kîjan gotin li ser \"Balansa dînamîk\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Denge konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Chemical Equilibrium, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Chemisches Gleichgewicht die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Équilibre Chimique, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Химическое равновесие», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الاتزان الكيميائي\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学平衡”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Hevsengiya Kîmyewî\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

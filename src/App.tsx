@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import {
   BookOpen,
   Box,
@@ -11,6 +11,10 @@ import {
   Moon,
   WifiOff,
   Download,
+  Check,
+  AlertCircle,
+  X,
+  ChevronDown,
 } from 'lucide-react';
 import { UI_TRANSLATIONS } from './i18n/translations';
 import { useBackgroundMusic } from './audio/useBackgroundMusic';
@@ -49,6 +53,9 @@ export const App: React.FC = () => {
   const [targetExamUnitId, setTargetExamUnitId] = useState<string | null>(null);
   const [celebrationKey, setCelebrationKey] = useState<number>(0);
 
+  const [showProfileSwitcher, setShowProfileSwitcher] = useState<boolean>(false);
+  const [warningDismissed, setWarningDismissed] = useState<boolean>(false);
+
   const [isOffline, setIsOffline] = useState<boolean>(
     typeof navigator !== 'undefined' ? !navigator.onLine : false
   );
@@ -77,6 +84,16 @@ export const App: React.FC = () => {
   });
   const [installPrompt, setInstallPrompt] = useState<BeforeInstallPromptEvent | null>(null);
 
+  // Active study time tracking: 1 minute interval
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      if (typeof document !== 'undefined' && !document.hidden) {
+        store.recordStudyMinutes(1);
+      }
+    }, 60000);
+    return () => window.clearInterval(timer);
+  }, [store]);
+
   useEffect(() => {
     const id = window.setTimeout(() => setShowSplash(false), 1500);
     return () => window.clearTimeout(id);
@@ -99,6 +116,14 @@ export const App: React.FC = () => {
       window.removeEventListener('beforeinstallprompt', onBeforeInstall);
     };
   }, []);
+
+  // Goal-miss detection
+  const todayRecord = store.activeProfile.dailyHistory[store.activeProfile.dailyHistory.length - 1];
+  const questionsToday = todayRecord?.questionsSolved ?? 0;
+  const studyMinToday = todayRecord?.studyMinutes ?? 0;
+  const qGoal = store.activeProfile.dailyQuestionGoal || 30;
+  const minGoal = store.activeProfile.dailyStudyMinutesGoal || 30;
+  const isGoalMissed = questionsToday < qGoal || studyMinToday < minGoal;
 
   const navItems: { id: NavTab; label: string; icon: React.ComponentType<{ size?: number; 'aria-hidden'?: boolean }> }[] = [
     { id: 'curriculum', label: t.nav.curriculum, icon: BookOpen },
@@ -134,9 +159,25 @@ export const App: React.FC = () => {
 
       {showSplash && (
         <div className="app-splash" role="status" aria-label={t.appName}>
-          <FlaskMark width={140} height={140} />
+          <div className="splash-3d-stage" aria-hidden="true">
+            <div className="splash-3d-orbit-ring ring-a" />
+            <div className="splash-3d-orbit-ring ring-b" />
+            <div className="splash-3d-orbit-ring ring-c" />
+            <div className="splash-3d-core">
+              <FlaskMark width={144} height={144} />
+            </div>
+          </div>
           <strong className="splash-word">{t.appName}</strong>
           <span className="splash-subtitle">TYT & AYT Kimya Laboratuvarı</span>
+          <div className="splash-3d-pills" aria-hidden="true">
+            <span className="splash-pill">1. TYT</span>
+            <span className="splash-pill">2. AYT</span>
+            <span className="splash-pill">3D Lab</span>
+            <span className="splash-pill">AI Koç</span>
+          </div>
+          <div className="splash-3d-progress" aria-hidden="true">
+            <div className="splash-3d-progress-fill" />
+          </div>
         </div>
       )}
 
@@ -149,6 +190,27 @@ export const App: React.FC = () => {
           <div>
             <strong>{t.appName}</strong>
             <span>TYT & AYT Kimya</span>
+          </div>
+        </div>
+
+        {/* Sidebar Active Profile Widget */}
+        <div
+          className="sidebar-profile-widget"
+          onClick={() => setActiveTab('profile')}
+          role="button"
+          tabIndex={0}
+          title="Profili Görüntüle"
+        >
+          <div className="sidebar-profile-avatar">{store.activeProfile.avatar || '👨‍🎓'}</div>
+          <div className="sidebar-profile-details">
+            <strong className="sidebar-profile-name">{store.activeProfile.name}</strong>
+            <span className="sidebar-profile-track">
+              {store.activeProfile.targetTrack === 'TYT_ONLY'
+                ? 'TYT Odaklı'
+                : store.activeProfile.targetTrack === 'AYT_FOCUS'
+                ? 'AYT Odaklı'
+                : '1. TYT → 2. AYT'}
+            </span>
           </div>
         </div>
 
@@ -182,7 +244,7 @@ export const App: React.FC = () => {
         </div>
       </aside>
 
-      {/* Glassmorphic Top Telemetry Bar */}
+      {/* Glassmorphic Top Telemetry Bar with Profile Switcher */}
       <header className="app-topbar">
         <div className="brand-mobile-cluster">
           <div className="brand-logo-mark" aria-hidden="true">
@@ -229,21 +291,103 @@ export const App: React.FC = () => {
             {store.theme === 'dark' ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
           </button>
 
-          <button
-            type="button"
-            className={`topbar-profile-btn ${activeTab === 'profile' ? 'active' : ''}`}
-            aria-label={t.nav.profile}
-            aria-current={activeTab === 'profile' ? 'page' : undefined}
-            onClick={() => setActiveTab('profile')}
-          >
-            <User size={18} aria-hidden="true" />
-            <span>Lv.{store.level}</span>
-          </button>
+          {/* Quick Profile Switcher Dropdown */}
+          <div className="topbar-profile-container">
+            <button
+              type="button"
+              className={`topbar-profile-btn ${activeTab === 'profile' ? 'active' : ''}`}
+              aria-label={t.nav.profile}
+              onClick={() => setShowProfileSwitcher((prev) => !prev)}
+            >
+              <span className="topbar-avatar-emoji">{store.activeProfile.avatar || '👨‍🎓'}</span>
+              <span className="topbar-name-text">{store.activeProfile.name}</span>
+              <span className="topbar-level-tag">Lv.{store.level}</span>
+              <ChevronDown size={14} className="topbar-caret" />
+            </button>
+
+            {showProfileSwitcher && (
+              <div className="topbar-profile-dropdown" role="menu">
+                <div className="dropdown-header">
+                  <strong>Öğrenci Profilleri ({store.profiles.length})</strong>
+                </div>
+                <div className="dropdown-profile-list">
+                  {store.profiles.map((p) => {
+                    const isCur = p.id === store.activeProfileId;
+                    return (
+                      <button
+                        key={p.id}
+                        type="button"
+                        className={`dropdown-profile-item ${isCur ? 'active' : ''}`}
+                        onClick={() => {
+                          store.switchProfile(p.id);
+                          setShowProfileSwitcher(false);
+                        }}
+                      >
+                        <span className="dropdown-item-avatar">{p.avatar || '👨‍🎓'}</span>
+                        <div className="dropdown-item-meta">
+                          <strong className="dropdown-item-name">{p.name}</strong>
+                          <span className="dropdown-item-sub">
+                            {p.stats.xp} XP • {p.targetTrack === 'TYT_ONLY' ? 'TYT' : p.targetTrack === 'AYT_FOCUS' ? 'AYT' : 'TYT→AYT'}
+                          </span>
+                        </div>
+                        {isCur && <Check size={14} className="dropdown-check-icon" />}
+                      </button>
+                    );
+                  })}
+                </div>
+                <div className="dropdown-footer">
+                  <button
+                    type="button"
+                    className="dropdown-manage-link"
+                    onClick={() => {
+                      setShowProfileSwitcher(false);
+                      setActiveTab('profile');
+                    }}
+                  >
+                    Profil Ekle & Yönet →
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </header>
 
       {/* Main Responsive Stage */}
       <main className="app-main-stage">
+        {/* Dismissible AI Coach Goal-Miss Warning Banner */}
+        {isGoalMissed && !warningDismissed && (
+          <div className="goal-miss-top-banner" role="status">
+            <div className="banner-content-cluster">
+              <span className="banner-robot-icon">🤖</span>
+              <div className="banner-text-block">
+                <strong>AI Koç Hedef Hatırlatması ({store.activeProfile.name}):</strong>
+                <span>
+                  Bugünkü hedefine henüz ulaşmadın: {questionsToday}/{qGoal} Soru • {studyMinToday}/{minGoal} Dakika.
+                  Günlük hedefini tutturmak için 1 test çöz veya flashcard tekrarı yap!
+                </span>
+              </div>
+            </div>
+            <div className="banner-btns-cluster">
+              <button
+                type="button"
+                className="banner-solve-btn"
+                onClick={() => setActiveTab('exams')}
+              >
+                Hemen Soru Çöz
+              </button>
+              <button
+                type="button"
+                className="banner-close-btn"
+                onClick={() => setWarningDismissed(true)}
+                title="Uyarıyı Kapat"
+              >
+                <X size={16} />
+              </button>
+            </div>
+          </div>
+        )}
+
         {activeTab === 'curriculum' && (
           <CurriculumView
             key={examPref}
@@ -253,6 +397,7 @@ export const App: React.FC = () => {
             lang={lang}
             solvedQuestions={store.solvedQuestionIds}
             completedSlideUnits={store.completedSlideUnits}
+            targetTrack={store.activeProfile.targetTrack}
             onMarkUnitSlidesCompleted={store.markUnitSlidesCompleted}
             onOpenUnitQuiz={(uId) => {
               setTargetExamUnitId(uId);

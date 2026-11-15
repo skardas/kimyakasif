@@ -1,18 +1,88 @@
-import React, { useState } from 'react';
-import type { QuestionDiagramSpec } from '../../types/chemistry';
+import React, { useState, useRef } from 'react';
+import type { QuestionDiagramSpec, LanguageCode } from '../../types/chemistry';
+import { ZOOM_FIT_I18N } from '../three/Kimya3DLab';
 
-interface ChemicalDiagramProps {
+const FULLSCREEN_I18N: Record<LanguageCode, string> = {
+  tr: 'Tam Ekran Büyüt',
+  en: 'Fullscreen Expand',
+  de: 'Vollbild vergrößern',
+  fr: 'Agrandir en plein écran',
+  ru: 'Развернуть на весь экран',
+  ar: 'ملء الشاشة',
+  zh: '全屏放大',
+  ku: 'Tam ekran mezin bike',
+};
+
+export const CLOSE_MODAL_I18N: Record<LanguageCode, string> = {
+  tr: 'Kapat',
+  en: 'Close',
+  de: 'Schließen',
+  fr: 'Fermer',
+  ru: 'Закрыть',
+  ar: 'إغلاق',
+  zh: '关闭',
+  ku: 'Bigre',
+};
+
+export interface ChemicalDiagramProps {
   spec: QuestionDiagramSpec;
   className?: string;
   allowZoom?: boolean;
+  lang?: LanguageCode;
+  initialZoomed?: boolean;
 }
 
 export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
   spec,
   className = '',
   allowZoom = true,
+  lang = 'tr',
+  initialZoomed = false,
 }) => {
-  const [isZoomed, setIsZoomed] = useState(false);
+  const [isZoomed, setIsZoomed] = useState(initialZoomed);
+  const [zoomLevel, setZoomLevel] = useState<number>(1.0);
+  const [panOffset, setPanOffset] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  const isDraggingRef = useRef(false);
+  const dragStartRef = useRef({ x: 0, y: 0 });
+
+  const zoomI18n = ZOOM_FIT_I18N[lang] || ZOOM_FIT_I18N.tr;
+  const fsLabel = FULLSCREEN_I18N[lang] || FULLSCREEN_I18N.tr;
+
+  const handleZoomIn = () => {
+    setZoomLevel((z) => Math.min(2.5, Number((z + 0.25).toFixed(2))));
+  };
+
+  const handleZoomOut = () => {
+    setZoomLevel((z) => {
+      const next = Math.max(1.0, Number((z - 0.25).toFixed(2)));
+      if (next === 1.0) setPanOffset({ x: 0, y: 0 });
+      return next;
+    });
+  };
+
+  const handleResetZoom = () => {
+    setZoomLevel(1.0);
+    setPanOffset({ x: 0, y: 0 });
+  };
+
+  const handlePointerDown = (e: React.PointerEvent) => {
+    if (zoomLevel <= 1.0) return;
+    isDraggingRef.current = true;
+    dragStartRef.current = { x: e.clientX - panOffset.x, y: e.clientY - panOffset.y };
+  };
+
+  const handlePointerMove = (e: React.PointerEvent) => {
+    if (!isDraggingRef.current || zoomLevel <= 1.0) return;
+    const maxPanX = 270 * (zoomLevel - 1);
+    const maxPanY = 150 * (zoomLevel - 1);
+    const newX = Math.max(-maxPanX, Math.min(maxPanX, e.clientX - dragStartRef.current.x));
+    const newY = Math.max(-maxPanY, Math.min(maxPanY, e.clientY - dragStartRef.current.y));
+    setPanOffset({ x: newX, y: newY });
+  };
+
+  const handlePointerUp = () => {
+    isDraggingRef.current = false;
+  };
 
   const renderContent = () => {
     switch (spec.archetype) {
@@ -70,28 +140,89 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
 
   return (
     <div className={`chemical-diagram-container ${className}`}>
-      <div className="diagram-header">
+      <div
+        className="diagram-header"
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: 8,
+        }}
+      >
         <h4 className="diagram-title">{spec.title}</h4>
         {allowZoom && (
-          <button
-            type="button"
-            className="diagram-zoom-btn"
-            onClick={() => setIsZoomed(true)}
-            aria-label="Şekli Büyüt"
-            title="Şekli Büyüt"
-          >
-            🔍
-          </button>
+          <div className="diagram-zoom-toolbar" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <button
+              type="button"
+              className="diagram-zoom-btn"
+              onClick={handleZoomIn}
+              aria-label={zoomI18n.zoomIn}
+              title={zoomI18n.zoomIn}
+            >
+              +
+            </button>
+            <button
+              type="button"
+              className="diagram-zoom-btn"
+              onClick={handleResetZoom}
+              aria-label={zoomI18n.fitScreen}
+              title={zoomI18n.fitScreen}
+              style={{ fontSize: '0.74rem', minWidth: '42px', fontWeight: 700 }}
+            >
+              {Math.round(zoomLevel * 100)}%
+            </button>
+            <button
+              type="button"
+              className="diagram-zoom-btn"
+              onClick={handleZoomOut}
+              aria-label={zoomI18n.zoomOut}
+              title={zoomI18n.zoomOut}
+            >
+              -
+            </button>
+            <button
+              type="button"
+              className="diagram-zoom-btn"
+              onClick={() => setIsZoomed(true)}
+              aria-label={fsLabel}
+              title={fsLabel}
+            >
+              🔍
+            </button>
+          </div>
         )}
       </div>
 
-      <div className="diagram-svg-wrapper">
+      <div
+        className="diagram-svg-wrapper"
+        dir="ltr"
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerUp}
+        style={{
+          overflow: 'hidden',
+          position: 'relative',
+          cursor: zoomLevel > 1.0 ? (isDraggingRef.current ? 'grabbing' : 'grab') : 'default',
+          touchAction: zoomLevel > 1.0 ? 'none' : 'auto',
+          borderRadius: '12px',
+        }}
+      >
         <svg
           viewBox="0 0 540 300"
           className="chemical-diagram-svg"
           preserveAspectRatio="xMidYMid meet"
           role="img"
           aria-label={spec.title}
+          style={{
+            transform: `scale(${zoomLevel}) translate(${panOffset.x / zoomLevel}px, ${panOffset.y / zoomLevel}px)`,
+            transformOrigin: 'center center',
+            transition: isDraggingRef.current ? 'none' : 'transform 0.15s ease-out',
+            display: 'block',
+            width: '100%',
+            height: 'auto',
+          }}
         >
           <style>{DIAGRAM_KEYFRAMES}</style>
           <rect width="540" height="300" rx="12" fill="var(--bg-surface-elevated, #161e2e)" />
@@ -105,22 +236,79 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
       {isZoomed && (
         <div className="diagram-zoom-overlay" onClick={() => setIsZoomed(false)}>
           <div className="diagram-zoom-card" onClick={(e) => e.stopPropagation()}>
-            <div className="diagram-zoom-header">
+            <div
+              className="diagram-zoom-header"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: 10,
+              }}
+            >
               <h3>{spec.title}</h3>
-              <button
-                type="button"
-                className="diagram-close-btn"
-                onClick={() => setIsZoomed(false)}
-                aria-label="Kapat"
-              >
-                ✕
-              </button>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <button
+                  type="button"
+                  className="diagram-zoom-btn"
+                  onClick={handleZoomIn}
+                  aria-label={zoomI18n.zoomIn}
+                  title={zoomI18n.zoomIn}
+                >
+                  +
+                </button>
+                <button
+                  type="button"
+                  className="diagram-zoom-btn"
+                  onClick={handleResetZoom}
+                  aria-label={zoomI18n.fitScreen}
+                  title={zoomI18n.fitScreen}
+                  style={{ fontSize: '0.74rem', minWidth: '42px', fontWeight: 700 }}
+                >
+                  {Math.round(zoomLevel * 100)}%
+                </button>
+                <button
+                  type="button"
+                  className="diagram-zoom-btn"
+                  onClick={handleZoomOut}
+                  aria-label={zoomI18n.zoomOut}
+                  title={zoomI18n.zoomOut}
+                >
+                  -
+                </button>
+                <button
+                  type="button"
+                  className="diagram-close-btn"
+                  onClick={() => setIsZoomed(false)}
+                  aria-label={CLOSE_MODAL_I18N[lang] || CLOSE_MODAL_I18N.tr}
+                  title={CLOSE_MODAL_I18N[lang] || CLOSE_MODAL_I18N.tr}
+                >
+                  ✕
+                </button>
+              </div>
             </div>
-            <div className="diagram-zoom-body">
+            <div
+              className="diagram-zoom-body"
+              dir="ltr"
+              onPointerDown={handlePointerDown}
+              onPointerMove={handlePointerMove}
+              onPointerUp={handlePointerUp}
+              onPointerCancel={handlePointerUp}
+              style={{
+                overflow: 'hidden',
+                position: 'relative',
+                cursor: zoomLevel > 1.0 ? (isDraggingRef.current ? 'grabbing' : 'grab') : 'default',
+                touchAction: zoomLevel > 1.0 ? 'none' : 'auto',
+              }}
+            >
               <svg
                 viewBox="0 0 540 300"
                 className="chemical-diagram-svg zoom-svg"
                 preserveAspectRatio="xMidYMid meet"
+                style={{
+                  transform: `scale(${zoomLevel}) translate(${panOffset.x / zoomLevel}px, ${panOffset.y / zoomLevel}px)`,
+                  transformOrigin: 'center center',
+                  transition: isDraggingRef.current ? 'none' : 'transform 0.15s ease-out',
+                }}
               >
                 <style>{DIAGRAM_KEYFRAMES}</style>
                 <rect width="540" height="300" rx="12" fill="var(--bg-surface-elevated, #161e2e)" />
@@ -149,7 +337,7 @@ function renderBohrOrbitalAtom(spec: QuestionDiagramSpec) {
 
       {/* Nucleus (+Ze) with Pulse */}
       <circle cx="270" cy="140" r="18" fill="var(--accent-ruby, #f43f5e)" className="anim-pulse" />
-      <text x="270" y="145" textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="bold">
+      <text x="270" y="145" textAnchor="middle" fill="var(--brand-on-primary, #ffffff)" fontSize="11" fontWeight="bold">
         +Ze
       </text>
 
@@ -209,14 +397,18 @@ function renderPeriodicTrends(spec: QuestionDiagramSpec) {
 
       {/* Block Text */}
       <text x="90" y="140" textAnchor="middle" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">1A</text>
-      <text x="240" y="175" textAnchor="middle" fill="var(--text-muted, #64748b)" fontSize="12">Geçiş Metalleri (d)</text>
-      <text x="385" y="150" textAnchor="middle" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">Ametaller</text>
+      <text x="240" y="175" textAnchor="middle" fill="var(--text-muted, #64748b)" fontSize="12">
+        {lbl.transition || lbl.d_block || 'Geçiş Metalleri (d)'}
+      </text>
+      <text x="385" y="150" textAnchor="middle" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">
+        {lbl.nonmetals || lbl.nonmetal || 'Ametaller'}
+      </text>
       <text x="455" y="140" textAnchor="middle" fill="var(--accent-emerald, #10b981)" fontSize="11" fontWeight="bold">8A</text>
 
       {/* Trend Arrow 1: Ionization Energy & Electronegativity (Bottom-Left to Top-Right) */}
       <line x1="100" y1="240" x2="440" y2="40" stroke="var(--accent-ruby, #f43f5e)" strokeWidth="3" className="anim-pulse" />
       <polygon points="440,35 448,45 435,48" fill="var(--accent-ruby, #f43f5e)" />
-      <text x="320" y="32" fill="var(--accent-ruby, #f43f5e)" fontSize="12" fontWeight="bold">
+      <text x="270" y="28" textAnchor="middle" fill="var(--accent-ruby, #f43f5e)" fontSize="12" fontWeight="bold">
         {lbl.ie || '↗ İyonlaşma Enerjisi & Elektronegatiflik Artar'}
       </text>
 
@@ -278,13 +470,15 @@ function renderGasPistonManometer(spec: QuestionDiagramSpec) {
       <line x1="365" y1="140" x2="385" y2="140" stroke="var(--accent-amber, #f59e0b)" strokeWidth="1.5" />
       <line x1="365" y1="190" x2="385" y2="190" stroke="var(--accent-amber, #f59e0b)" strokeWidth="1.5" />
       <line x1="375" y1="140" x2="375" y2="190" stroke="var(--accent-amber, #f59e0b)" strokeWidth="1.5" strokeDasharray="2 2" />
-      <text x="392" y="170" fill="var(--accent-amber, #f59e0b)" fontSize="12" fontWeight="bold">h (Hg)</text>
+      <text x="392" y="170" fill="var(--accent-amber, #f59e0b)" fontSize="12" fontWeight="bold">
+        {lbl.hdiff || 'h (Hg)'}
+      </text>
 
       {/* Labels */}
       <text x="140" y="250" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="12">
         {lbl.piston || 'Pistonlu Gaz Kabı (Pgaz = P0)'}
       </text>
-      <text x="380" y="250" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="12">
+      <text x="410" y="270" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="12">
         {lbl.eq || 'Pgaz = P0 + h'}
       </text>
     </g>
@@ -301,8 +495,12 @@ function renderPhaseHeatingCurve(spec: QuestionDiagramSpec) {
       {/* Cartesian Axes */}
       <line x1="70" y1="240" x2="490" y2="240" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <line x1="70" y1="240" x2="70" y2="40" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
-      <text x="490" y="260" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">Isı (Q / Zaman)</text>
-      <text x="65" y="35" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">Sıcaklık (T °C)</text>
+      <text x="490" y="260" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">
+        {lbl.heat_axis || lbl.heat || 'Isı (Q / Zaman)'}
+      </text>
+      <text x="75" y="32" textAnchor="start" fill="var(--text-muted, #64748b)" fontSize="11">
+        {lbl.temp_axis || lbl.temp || 'Sıcaklık (T °C)'}
+      </text>
 
       {/* 5-Stage Stepped Heating Curve */}
       <path
@@ -314,24 +512,38 @@ function renderPhaseHeatingCurve(spec: QuestionDiagramSpec) {
 
       {/* Temperature Reference Dashed Lines */}
       <line x1="70" y1="180" x2="210" y2="180" stroke="var(--border-subtle, #334155)" strokeDasharray="3 3" />
-      <text x="55" y="184" textAnchor="end" fill="var(--text-secondary, #94a3b8)" fontSize="11">Te (0°C)</text>
+      <text x="60" y="184" textAnchor="start" fill="var(--text-secondary, #94a3b8)" fontSize="11">
+        {lbl.melt_point || lbl.te || 'Te (0°C)'}
+      </text>
 
       <line x1="70" y1="100" x2="390" y2="100" stroke="var(--border-subtle, #334155)" strokeDasharray="3 3" />
-      <text x="55" y="104" textAnchor="end" fill="var(--text-secondary, #94a3b8)" fontSize="11">Tk (100°C)</text>
+      <text x="60" y="104" textAnchor="start" fill="var(--text-secondary, #94a3b8)" fontSize="11">
+        {lbl.boil_point || lbl.tk || 'Tk (100°C)'}
+      </text>
 
       {/* Animated Tracer Dot moving along the curve */}
       <circle cx="210" cy="180" r="6" fill="var(--accent-ruby, #f43f5e)" className="anim-pulse" />
 
       {/* Phase Labels */}
-      <text x="105" y="215" fill="var(--text-secondary, #94a3b8)" fontSize="11" fontWeight="bold">I: Katı</text>
-      <text x="175" y="170" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">II: Erime</text>
-      <text x="255" y="145" fill="var(--text-secondary, #94a3b8)" fontSize="11" fontWeight="bold">III: Sıvı</text>
-      <text x="345" y="90" fill="var(--accent-ruby, #f43f5e)" fontSize="11" fontWeight="bold">IV: Kaynama</text>
-      <text x="430" y="65" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">V: Gaz</text>
+      <text x="105" y="215" fill="var(--text-secondary, #94a3b8)" fontSize="11" fontWeight="bold">
+        I: {lbl.solid || 'Katı'}
+      </text>
+      <text x="175" y="170" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">
+        II: {lbl.melt || 'Erime'}
+      </text>
+      <text x="255" y="145" fill="var(--text-secondary, #94a3b8)" fontSize="11" fontWeight="bold">
+        III: {lbl.liquid || 'Sıvı'}
+      </text>
+      <text x="345" y="90" fill="var(--accent-ruby, #f43f5e)" fontSize="11" fontWeight="bold">
+        IV: {lbl.boil || 'Kaynama'}
+      </text>
+      <text x="430" y="65" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">
+        V: {lbl.gas || 'Gaz'}
+      </text>
 
       {/* Bottom Summary Pill */}
       <text x="270" y="275" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="12" fontWeight="600">
-        {lbl.melt || 'Hal Değişimi: T Sabit, Potansiyel Enerji Artar, Kinetik Sabit'}
+        {lbl.summary || lbl.heat_summary || 'Hal Değişimi: T Sabit, Potansiyel Enerji Artar, Kinetik Sabit'}
       </text>
     </g>
   );
@@ -347,8 +559,12 @@ function renderPotentialEnergyCurve(spec: QuestionDiagramSpec) {
       {/* Cartesian Axes */}
       <line x1="70" y1="240" x2="490" y2="240" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <line x1="70" y1="240" x2="70" y2="40" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
-      <text x="490" y="260" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">Tepkime Koordinatı</text>
-      <text x="65" y="35" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">PE (kJ)</text>
+      <text x="490" y="260" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">
+        {lbl.coord || lbl.rxn_coord || 'Tepkime Koordinatı'}
+      </text>
+      <text x="75" y="32" textAnchor="start" fill="var(--text-muted, #64748b)" fontSize="11">
+        {lbl.pe || 'PE (kJ)'}
+      </text>
 
       {/* Uncatalyzed High Barrier Curve (Solid) */}
       <path
@@ -369,25 +585,31 @@ function renderPotentialEnergyCurve(spec: QuestionDiagramSpec) {
 
       {/* Reactant & Product Levels */}
       <line x1="60" y1="170" x2="110" y2="170" stroke="var(--border-subtle, #334155)" strokeDasharray="2 2" />
-      <text x="115" y="165" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">Girenler (Hgiren)</text>
+      <text x="115" y="165" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">
+        {lbl.reactants || lbl.girenler || 'Girenler (Hgiren)'}
+      </text>
 
       <line x1="420" y1="210" x2="480" y2="210" stroke="var(--border-subtle, #334155)" strokeDasharray="2 2" />
-      <text x="420" y="228" fill="var(--accent-emerald, #10b981)" fontSize="11" fontWeight="bold">Ürünler (Hürün)</text>
+      <text x="420" y="228" fill="var(--accent-emerald, #10b981)" fontSize="11" fontWeight="bold">
+        {lbl.products || lbl.urunler || 'Ürünler (Hürün)'}
+      </text>
 
       {/* Enthalpy Difference ΔH */}
       <line x1="480" y1="170" x2="480" y2="210" stroke="var(--accent-amber, #f59e0b)" strokeWidth="2.5" />
       <polygon points="477,210 480,217 483,210" fill="var(--accent-amber, #f59e0b)" />
-      <text x="495" y="195" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">ΔH &lt; 0</text>
+      <text x="480" y="195" textAnchor="end" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">
+        {lbl.dh_symbol || 'ΔH < 0'}
+      </text>
 
       {/* Peak Activated Complex marker */}
       <circle cx="270" cy="60" r="5" fill="var(--accent-ruby, #f43f5e)" className="anim-pulse" />
       <text x="270" y="45" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="11" fontWeight="bold">
-        [AK]‡
+        {lbl.ak || '[AK]‡'}
       </text>
 
       {/* Bottom Summary */}
       <text x="270" y="275" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="12" fontWeight="600">
-        {lbl.cat || 'Katalizör Aktifleşme Enerjisini (Ea) Düşürür, ΔH Değişmez!'}
+        {lbl.cat || lbl.dh || 'Katalizör Aktifleşme Enerjisini (Ea) Düşürür, ΔH Değişmez!'}
       </text>
     </g>
   );
@@ -416,13 +638,17 @@ function renderTitrationBurette(spec: QuestionDiagramSpec) {
 
       {/* Erlenmeyer Flask at Bottom */}
       <path d="M 112 195 L 90 245 A 8 8 0 0 0 98 255 L 144 255 A 8 8 0 0 0 152 245 L 130 195 Z" fill="rgba(6,182,212,0.15)" stroke="var(--text-primary, #ffffff)" strokeWidth="2" />
-      <text x="121" y="242" textAnchor="middle" fill="var(--accent-cyan, #06b6d4)" fontSize="9" fontWeight="bold">Çözelti</text>
+      <text x="121" y="242" textAnchor="middle" fill="var(--accent-cyan, #06b6d4)" fontSize="9" fontWeight="bold">
+        {lbl.solution || lbl.flask || 'Çözelti'}
+      </text>
 
       {/* Right: Sigmoidal pH Titration Curve */}
       <line x1="230" y1="240" x2="480" y2="240" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <line x1="230" y1="240" x2="230" y2="40" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
-      <text x="480" y="260" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">Eklenen Baz (mL)</text>
-      <text x="225" y="35" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">pH</text>
+      <text x="480" y="260" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">
+        {lbl.base_vol || lbl.volume || 'Eklenen Baz (mL)'}
+      </text>
+      <text x="235" y="32" textAnchor="start" fill="var(--text-muted, #64748b)" fontSize="11">pH</text>
 
       {/* S-Curve Path */}
       <path
@@ -457,15 +683,23 @@ function renderDaniellCell(spec: QuestionDiagramSpec) {
     <g>
       {/* Left Beaker: Anode Half-Cell (ZnSO4) */}
       <rect x="70" y="130" width="130" height="110" rx="6" fill="rgba(6,182,212,0.12)" stroke="var(--border-subtle, #334155)" strokeWidth="2" />
-      <rect x="110" y="90" width="22" height="110" fill="#94a3b8" stroke="#475569" strokeWidth="2" />
-      <text x="121" y="80" textAnchor="middle" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">Zn Anot</text>
-      <text x="135" y="220" textAnchor="middle" fill="var(--text-muted, #64748b)" fontSize="10">1 M ZnSO4(aq)</text>
+      <rect x="110" y="90" width="22" height="110" fill="var(--border-strong, #94a3b8)" stroke="var(--border-subtle, #475569)" strokeWidth="2" />
+      <text x="121" y="80" textAnchor="middle" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">
+        {lbl.anode_label || lbl.anode || 'Zn Anot'}
+      </text>
+      <text x="135" y="220" textAnchor="middle" fill="var(--text-muted, #64748b)" fontSize="10">
+        {lbl.anode_sol || '1 M ZnSO4(aq)'}
+      </text>
 
       {/* Right Beaker: Cathode Half-Cell (CuSO4) */}
       <rect x="340" y="130" width="130" height="110" rx="6" fill="rgba(244,63,94,0.12)" stroke="var(--border-subtle, #334155)" strokeWidth="2" />
-      <rect x="408" y="90" width="22" height="110" fill="#f97316" stroke="#c2410c" strokeWidth="2" />
-      <text x="419" y="80" textAnchor="middle" fill="var(--accent-ruby, #f43f5e)" fontSize="11" fontWeight="bold">Cu Katot</text>
-      <text x="405" y="220" textAnchor="middle" fill="var(--text-muted, #64748b)" fontSize="10">1 M CuSO4(aq)</text>
+      <rect x="408" y="90" width="22" height="110" fill="var(--accent-amber, #f97316)" stroke="var(--accent-ruby, #c2410c)" strokeWidth="2" />
+      <text x="419" y="80" textAnchor="middle" fill="var(--accent-ruby, #f43f5e)" fontSize="11" fontWeight="bold">
+        {lbl.cathode_label || lbl.cathode || 'Cu Katot'}
+      </text>
+      <text x="405" y="220" textAnchor="middle" fill="var(--text-muted, #64748b)" fontSize="10">
+        {lbl.cathode_sol || '1 M CuSO4(aq)'}
+      </text>
 
       {/* Central U-Shaped Salt Bridge */}
       <path
@@ -475,8 +709,16 @@ function renderDaniellCell(spec: QuestionDiagramSpec) {
         strokeWidth="16"
         strokeLinecap="round"
       />
-      <text x="270" y="74" textAnchor="middle" fill="#ffffff" fontSize="10" fontWeight="bold">
-        Tuz Köprüsü (KNO3)
+      <text
+        x="270"
+        y="84"
+        dominantBaseline="middle"
+        textAnchor="middle"
+        fill="var(--brand-on-primary, #ffffff)"
+        fontSize="10"
+        fontWeight="bold"
+      >
+        {lbl.bridge || 'Tuz Köprüsü (KNO3)'}
       </text>
 
       {/* External Wire Circuit with Voltmeter */}
@@ -488,14 +730,14 @@ function renderDaniellCell(spec: QuestionDiagramSpec) {
       <path d="M 300 40 L 419 40 L 419 90" fill="none" stroke="var(--text-primary, #ffffff)" strokeWidth="2.5" />
 
       {/* Animated Stream of Electrons (Anode to Cathode) */}
-      <circle cx="160" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-1" />
-      <circle cx="200" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-2" />
-      <circle cx="340" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-1" />
-      <circle cx="380" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-2" />
+      <circle cx="125" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-1" />
+      <circle cx="125" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-2" />
+      <circle cx="305" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-3" />
+      <circle cx="305" cy="40" r="4" fill="var(--accent-cyan, #06b6d4)" className="anim-flow-4" />
 
       {/* Bottom Summary */}
       <text x="270" y="275" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="12" fontWeight="600">
-        {lbl.anode || 'Elektron Akışı: Dış devrede ANOT (Zn) -> KATOT (Cu)'}
+        {lbl.anode_note || lbl.anode || 'Elektron Akışı: Dış devrede ANOT (Zn) -> KATOT (Cu)'}
       </text>
     </g>
   );
@@ -520,35 +762,35 @@ function renderElectrolysisHoffman(spec: QuestionDiagramSpec) {
       <rect x="130" y="195" width="280" height="25" fill="rgba(6,182,212,0.15)" stroke="var(--text-primary, #ffffff)" strokeWidth="2" />
 
       {/* Electrodes at Bottom */}
-      <rect x="142" y="180" width="12" height="35" fill="#475569" />
-      <rect x="387" y="180" width="12" height="35" fill="#475569" />
+      <rect x="142" y="180" width="12" height="35" fill="var(--border-subtle, #475569)" />
+      <rect x="387" y="180" width="12" height="35" fill="var(--border-subtle, #475569)" />
 
       {/* Gas Volumes Collected at Top: H2 is 2 Volumes, O2 is 1 Volume */}
       <rect x="132" y="42" width="31" height="70" fill="var(--accent-cyan-subtle, rgba(6,182,212,0.4))" />
       <rect x="377" y="42" width="31" height="35" fill="var(--accent-ruby-subtle, rgba(244,63,94,0.4))" />
 
-      {/* Rising Bubbles (Animated) */}
-      <circle cx="148" cy="150" r="3" fill="#ffffff" className="anim-rise-1" />
-      <circle cx="145" cy="130" r="3.5" fill="#ffffff" className="anim-rise-2" />
-      <circle cx="150" cy="115" r="4" fill="#ffffff" className="anim-rise-3" />
+      {/* Rising Bubbles (Animated with Light Mode Contrast Stroke) */}
+      <circle cx="148" cy="150" r="3" fill="var(--accent-cyan, #06b6d4)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-1" />
+      <circle cx="145" cy="130" r="3.5" fill="var(--accent-cyan, #06b6d4)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-2" />
+      <circle cx="150" cy="115" r="4" fill="var(--accent-cyan, #06b6d4)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-3" />
 
-      <circle cx="392" cy="140" r="3" fill="#ffffff" className="anim-rise-2" />
-      <circle cx="390" cy="100" r="3.5" fill="#ffffff" className="anim-rise-1" />
+      <circle cx="392" cy="140" r="3" fill="var(--accent-cyan, #06b6d4)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-2" />
+      <circle cx="390" cy="100" r="3.5" fill="var(--accent-cyan, #06b6d4)" stroke="var(--bg-canvas, #ffffff)" strokeWidth="1" className="anim-rise-1" />
 
       {/* Labels */}
       <text x="147" y="32" textAnchor="middle" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">
-        Katot: 2V (H2)
+        {lbl.cathode || lbl.Katot || 'Katot: 2V (H2)'}
       </text>
       <text x="392" y="32" textAnchor="middle" fill="var(--accent-ruby, #f43f5e)" fontSize="11" fontWeight="bold">
-        Anot: 1V (O2)
+        {lbl.anode || lbl.Anot || 'Anot: 1V (O2)'}
       </text>
 
       {/* Bottom Summary */}
       <text x="270" y="260" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">
-        2 H2O(s) → 2 H2(g) [Katot, -] + O2(g) [Anot, +]
+        {lbl.reaction || '2 H2O(s) → 2 H2(g) [Katot, -] + O2(g) [Anot, +]'}
       </text>
       <text x="270" y="280" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="12" fontWeight="600">
-        {lbl.cathode_h2 || 'Katotta Toplanan H2 Gazı Hacmi, Anottaki O2 Gazının 2 Katıdır!'}
+        {lbl.cathode_h2 || lbl.faraday || 'Katotta Toplanan H2 Gazı Hacmi, Anottaki O2 Gazının 2 Katıdır!'}
       </text>
     </g>
   );
@@ -562,13 +804,15 @@ function renderVseprGeometry(spec: QuestionDiagramSpec) {
   return (
     <g>
       {/* Center 1: Linear AX2 (180°) */}
-      <g transform="translate(60, 50)">
+      <g transform="translate(75, 50)">
         <line x1="20" y1="40" x2="100" y2="40" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
         <circle cx="60" cy="40" r="14" fill="var(--accent-amber, #f59e0b)" />
         <circle cx="20" cy="40" r="10" fill="var(--accent-cyan, #06b6d4)" />
         <circle cx="100" cy="40" r="10" fill="var(--accent-cyan, #06b6d4)" />
-        <text x="60" y="44" textAnchor="middle" fill="#000" fontSize="10" fontWeight="bold">Be</text>
-        <text x="60" y="75" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">AX2 (180°)</text>
+        <text x="60" y="44" textAnchor="middle" fill="var(--text-primary, #000000)" fontSize="10" fontWeight="bold">Be</text>
+        <text x="60" y="75" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="10">
+          {lbl.ax2 || 'AX2 (180°)'}
+        </text>
       </g>
 
       {/* Center 2: Trigonal Planar AX3 (120°) */}
@@ -580,35 +824,44 @@ function renderVseprGeometry(spec: QuestionDiagramSpec) {
         <circle cx="60" cy="15" r="10" fill="var(--accent-cyan, #06b6d4)" />
         <circle cx="25" cy="65" r="10" fill="var(--accent-cyan, #06b6d4)" />
         <circle cx="95" cy="65" r="10" fill="var(--accent-cyan, #06b6d4)" />
-        <text x="60" y="49" textAnchor="middle" fill="#000" fontSize="10" fontWeight="bold">B</text>
-        <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">AX3 (120°)</text>
+        <text x="60" y="49" textAnchor="middle" fill="var(--text-primary, #000000)" fontSize="10" fontWeight="bold">B</text>
+        <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="10">
+          {lbl.ax3 || 'AX3 (120°)'}
+        </text>
       </g>
 
       {/* Center 3: Tetrahedral AX4 (109.5°) */}
-      <g transform="translate(370, 40)">
+      <g transform="translate(345, 40)">
         <line x1="60" y1="45" x2="60" y2="12" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
         <line x1="60" y1="45" x2="30" y2="70" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
         <line x1="60" y1="45" x2="75" y2="72" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
         <line x1="60" y1="45" x2="95" y2="55" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
-        <circle cx="60" cy="45" r="14" fill="#64748b" />
+        <circle cx="60" cy="45" r="14" fill="var(--border-strong, #64748b)" />
         <circle cx="60" cy="12" r="9" fill="var(--accent-cyan, #06b6d4)" />
         <circle cx="30" cy="70" r="9" fill="var(--accent-cyan, #06b6d4)" />
         <circle cx="75" cy="72" r="9" fill="var(--accent-cyan, #06b6d4)" />
         <circle cx="95" cy="55" r="9" fill="var(--accent-cyan, #06b6d4)" />
-        <text x="60" y="49" textAnchor="middle" fill="#ffffff" fontSize="10" fontWeight="bold">C</text>
-        <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">AX4 (109.5°)</text>
+        <text x="60" y="49" textAnchor="middle" fill="var(--brand-on-primary, #ffffff)" fontSize="10" fontWeight="bold">C</text>
+        <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="10">
+          {lbl.ax4 || 'AX4 (109.5°)'}
+        </text>
       </g>
 
-      {/* Center 4: Bent / Angular AX2E2 (104.5° - H2O) */}
+      {/* Center 4: Bent / Angular AX2E2 (104.5° - H2O with Two Non-Bonding Lone Pairs) */}
       <g transform="translate(130, 160)">
-        <ellipse cx="60" cy="30" rx="14" ry="7" fill="none" stroke="var(--accent-amber, #f59e0b)" strokeDasharray="2 2" className="anim-pulse" />
+        {/* Pair 1 at -25° */}
+        <ellipse cx="48" cy="24" rx="10" ry="5" transform="rotate(-25 48 24)" fill="none" stroke="var(--accent-amber, #f59e0b)" strokeDasharray="2 2" className="anim-pulse" />
+        {/* Pair 2 at +25° */}
+        <ellipse cx="72" cy="24" rx="10" ry="5" transform="rotate(25 72 24)" fill="none" stroke="var(--accent-amber, #f59e0b)" strokeDasharray="2 2" className="anim-pulse" />
         <line x1="60" y1="45" x2="30" y2="70" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
         <line x1="60" y1="45" x2="90" y2="70" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
         <circle cx="60" cy="45" r="14" fill="var(--accent-ruby, #f43f5e)" />
         <circle cx="30" cy="70" r="10" fill="var(--accent-cyan, #06b6d4)" />
         <circle cx="90" cy="70" r="10" fill="var(--accent-cyan, #06b6d4)" />
-        <text x="60" y="49" textAnchor="middle" fill="#ffffff" fontSize="10" fontWeight="bold">O</text>
-        <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">AX2E2 (104.5°)</text>
+        <text x="60" y="49" textAnchor="middle" fill="var(--brand-on-primary, #ffffff)" fontSize="10" fontWeight="bold">O</text>
+        <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="10">
+          {lbl.ax2e2 || 'AX2E2 (104.5°)'}
+        </text>
       </g>
 
       {/* Center 5: Trigonal Pyramidal AX3E (107.3° - NH3) */}
@@ -618,16 +871,18 @@ function renderVseprGeometry(spec: QuestionDiagramSpec) {
         <line x1="60" y1="45" x2="60" y2="75" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
         <line x1="60" y1="45" x2="95" y2="70" stroke="var(--text-primary, #ffffff)" strokeWidth="3" />
         <circle cx="60" cy="45" r="14" fill="var(--accent-cyan, #06b6d4)" />
-        <circle cx="25" cy="70" r="9" fill="#94a3b8" />
-        <circle cx="60" cy="75" r="9" fill="#94a3b8" />
-        <circle cx="95" cy="70" r="9" fill="#94a3b8" />
-        <text x="60" y="49" textAnchor="middle" fill="#000" fontSize="10" fontWeight="bold">N</text>
-        <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">AX3E (107.3°)</text>
+        <circle cx="25" cy="70" r="9" fill="var(--accent-cyan, #06b6d4)" />
+        <circle cx="60" cy="75" r="9" fill="var(--accent-cyan, #06b6d4)" />
+        <circle cx="95" cy="70" r="9" fill="var(--accent-cyan, #06b6d4)" />
+        <text x="60" y="49" textAnchor="middle" fill="var(--text-primary, #000000)" fontSize="10" fontWeight="bold">N</text>
+        <text x="60" y="95" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="10">
+          {lbl.ax3e || 'AX3E (107.3°)'}
+        </text>
       </g>
 
       {/* Bottom Summary */}
-      <text x="270" y="280" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="12" fontWeight="600">
-        {lbl.ax4 || 'VSEPR: Ortaklanmamış Elektron Çifti Bağ Açısını Daraltır!'}
+      <text x="270" y="280" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="11" fontWeight="600">
+        {lbl.summary || lbl.vsepr || 'VSEPR: Ortaklanmamış Elektron Çifti Bağ Açısını Daraltır!'}
       </text>
     </g>
   );
@@ -643,15 +898,23 @@ function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec) {
       {/* Cartesian Axes */}
       <line x1="70" y1="240" x2="490" y2="240" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <line x1="70" y1="240" x2="70" y2="40" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
-      <text x="490" y="260" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">Zaman (t)</text>
-      <text x="65" y="35" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">Derişim (M)</text>
+      <text x="490" y="260" textAnchor="end" fill="var(--text-muted, #64748b)" fontSize="11">
+        {lbl.time || 'Zaman (t)'}
+      </text>
+      <text x="75" y="32" textAnchor="start" fill="var(--text-muted, #64748b)" fontSize="11">
+        {lbl.conc || 'Derişim (M)'}
+      </text>
 
       {/* Time Markers t1 (Perturbation) and t2 (Re-equilibrium) */}
       <line x1="220" y1="240" x2="220" y2="50" stroke="var(--border-subtle, #334155)" strokeDasharray="3 3" />
-      <text x="220" y="255" textAnchor="middle" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">t1 (Etki)</text>
+      <text x="220" y="255" textAnchor="middle" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">
+        {lbl.t1 || 't1 (Etki)'}
+      </text>
 
       <line x1="380" y1="240" x2="380" y2="50" stroke="var(--border-subtle, #334155)" strokeDasharray="3 3" />
-      <text x="380" y="255" textAnchor="middle" fill="var(--accent-emerald, #10b981)" fontSize="11" fontWeight="bold">t2 (Yeni Denge)</text>
+      <text x="380" y="255" textAnchor="middle" fill="var(--accent-emerald, #10b981)" fontSize="11" fontWeight="bold">
+        {lbl.t2 || 't2 (Yeni Denge)'}
+      </text>
 
       {/* Reactant 1 Curve: Sharp spike at t1 then gradual consumption */}
       <path
@@ -660,7 +923,9 @@ function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec) {
         stroke="var(--accent-cyan, #06b6d4)"
         strokeWidth="3"
       />
-      <text x="120" y="112" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">[N2] (Eklenen)</text>
+      <text x="120" y="112" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">
+        {lbl.spike || '[N2] (Eklenen)'}
+      </text>
 
       {/* Reactant 2 Curve: Gradual consumption after t1 */}
       <path
@@ -669,7 +934,9 @@ function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec) {
         stroke="var(--accent-ruby, #f43f5e)"
         strokeWidth="3"
       />
-      <text x="120" y="152" fill="var(--accent-ruby, #f43f5e)" fontSize="11" fontWeight="bold">[H2] (Harcanan)</text>
+      <text x="120" y="152" fill="var(--accent-ruby, #f43f5e)" fontSize="11" fontWeight="bold">
+        {lbl.shift || '[H2] (Harcanan)'}
+      </text>
 
       {/* Product Curve: Gradual increase after t1 */}
       <path
@@ -678,11 +945,13 @@ function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec) {
         stroke="var(--accent-emerald, #10b981)"
         strokeWidth="3"
       />
-      <text x="120" y="195" fill="var(--accent-emerald, #10b981)" fontSize="11" fontWeight="bold">[NH3] (Oluşan)</text>
+      <text x="120" y="195" fill="var(--accent-emerald, #10b981)" fontSize="11" fontWeight="bold">
+        {lbl.product || '[NH3] (Oluşan)'}
+      </text>
 
       {/* Bottom Summary */}
-      <text x="270" y="278" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="12" fontWeight="600">
-        {lbl.shift || 'Le Chatelier: N2 eklenince denge sağa kayar; Kc YALNIZ SICAKLIKLA değişir!'}
+      <text x="270" y="278" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="10.5" fontWeight="600">
+        {lbl.summary || lbl.shift || 'Le Chatelier: N2 eklenince denge ürünlere kayar; Kc sabittir!'}
       </text>
     </g>
   );
@@ -707,9 +976,15 @@ function renderLabGlassware(spec: QuestionDiagramSpec) {
         <path d="M 35 100 L 85 100 L 65 140 L 55 140 Z" fill="rgba(6,182,212,0.3)" />
         <path d="M 45 60 L 75 60 L 85 100 L 35 100 Z" fill="rgba(245,158,11,0.3)" />
         <rect x="52" y="150" width="16" height="8" fill="var(--accent-ruby, #f43f5e)" />
-        <text x="60" y="85" textAnchor="middle" fill="var(--accent-amber, #f59e0b)" fontSize="9" fontWeight="bold">Yağ (Üst)</text>
-        <text x="60" y="125" textAnchor="middle" fill="var(--accent-cyan, #06b6d4)" fontSize="9" fontWeight="bold">Su (Alt)</text>
-        <text x="60" y="195" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">Ayırma Hunisi</text>
+        <text x="60" y="85" textAnchor="middle" fill="var(--accent-amber, #f59e0b)" fontSize="9" fontWeight="bold">
+          {lbl.oil || lbl.top || 'Yağ (Üst)'}
+        </text>
+        <text x="60" y="125" textAnchor="middle" fill="var(--accent-cyan, #06b6d4)" fontSize="9" fontWeight="bold">
+          {lbl.water || lbl.bottom || 'Su (Alt)'}
+        </text>
+        <text x="60" y="195" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">
+          {lbl.funnel || lbl.item4 || 'Ayırma Hunisi'}
+        </text>
       </g>
 
       {/* Beaker & Volumetric Flask */}
@@ -719,7 +994,9 @@ function renderLabGlassware(spec: QuestionDiagramSpec) {
         <line x1="30" y1="100" x2="45" y2="100" stroke="var(--text-secondary, #94a3b8)" />
         <line x1="30" y1="120" x2="50" y2="120" stroke="var(--text-secondary, #94a3b8)" />
         <line x1="30" y1="140" x2="45" y2="140" stroke="var(--text-secondary, #94a3b8)" />
-        <text x="65" y="180" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">Beherglas</text>
+        <text x="65" y="180" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">
+          {lbl.beaker || lbl.item2 || 'Beherglas'}
+        </text>
 
         {/* Volumetric Flask (Balon Joje) */}
         <path
@@ -729,12 +1006,14 @@ function renderLabGlassware(spec: QuestionDiagramSpec) {
           strokeWidth="2"
         />
         <line x1="138" y1="75" x2="152" y2="75" stroke="var(--accent-ruby, #f43f5e)" strokeWidth="1.5" />
-        <text x="145" y="180" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">Balon Joje</text>
+        <text x="145" y="180" textAnchor="middle" fill="var(--text-secondary, #94a3b8)" fontSize="11">
+          {lbl.flask || lbl.item3 || 'Balon Joje'}
+        </text>
       </g>
 
       {/* Bottom Summary */}
       <text x="270" y="270" textAnchor="middle" fill="var(--text-primary, #ffffff)" fontSize="12" fontWeight="600">
-        {lbl.item1 || 'Hassas Çözelti Hazırlama ve Yoğunluk Farkıyla Ayırma'}
+        {lbl.item1 || lbl.summary || 'Hassas Çözelti Hazırlama ve Yoğunluk Farkıyla Ayırma'}
       </text>
     </g>
   );
@@ -781,10 +1060,11 @@ const DIAGRAM_KEYFRAMES = `
     80% { transform: translateY(25px); opacity: 0.8; }
     100% { transform: translateY(35px); opacity: 0; }
   }
-  @keyframes flowX {
-    0% { transform: translateX(0); opacity: 0.2; }
-    50% { opacity: 1; }
-    100% { transform: translateX(30px); opacity: 0.2; }
+  @keyframes flowContinuous {
+    0% { transform: translateX(0px); opacity: 0; }
+    10% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { transform: translateX(110px); opacity: 0; }
   }
   @keyframes bubbleRise {
     0% { transform: translateY(0) scale(0.8); opacity: 0.3; }
@@ -802,8 +1082,10 @@ const DIAGRAM_KEYFRAMES = `
   .anim-bounce-3 { animation: bounce3 2.1s ease-in-out infinite; }
   .anim-drip-1 { animation: dripDrop 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
   .anim-drip-2 { animation: dripDrop 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite 0.8s; }
-  .anim-flow-1 { animation: flowX 1.2s linear infinite; }
-  .anim-flow-2 { animation: flowX 1.2s linear infinite 0.6s; }
+  .anim-flow-1 { animation: flowContinuous 2s linear infinite; }
+  .anim-flow-2 { animation: flowContinuous 2s linear infinite 1s; }
+  .anim-flow-3 { animation: flowContinuous 2s linear infinite; }
+  .anim-flow-4 { animation: flowContinuous 2s linear infinite 1s; }
   .anim-rise-1 { animation: bubbleRise 2s ease-in infinite; }
   .anim-rise-2 { animation: bubbleRise 2s ease-in infinite 0.7s; }
   .anim-rise-3 { animation: bubbleRise 2s ease-in infinite 1.4s; }

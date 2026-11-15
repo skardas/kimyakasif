@@ -417,7 +417,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "альдегид",
         "ar": "ألدهيد",
         "zh": "醛",
-        "ku": "aldehyde"
+        "ku": "Aldehîd"
       },
       "conceptB": {
         "tr": "Keton",
@@ -430,7 +430,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ku": "Ketone"
       },
       "distinction": {
-        "tr": "Aldehit karbonilin ucundadır (Tollens ile gümüş aynası verir); keton karbonilin ortasındadır (Tollens e etki etmez).",
+        "tr": "Aldehit karbonilin ucundadır (Tollens ile gümüş aynası verir); keton karbonilin ortasındadır (Tollens'e etki etmez).",
         "en": "The aldehyde is at the end of the carbonyl (giving silver mirror with Tollens); The ketone is in the middle of the carbonyl (does not affect Tollens).",
         "de": "Der Aldehyd befindet sich am Ende des Carbonyls (ergibt mit Tollens einen silbernen Spiegel); Das Keton befindet sich in der Mitte des Carbonyls (beeinflusst Tollens nicht).",
         "fr": "L'aldéhyde est à l'extrémité du carbonyle (donnant un miroir argenté avec Tollens) ; La cétone est au milieu du carbonyle (n'affecte pas Tollens).",
@@ -450,7 +450,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "алкан",
         "ar": "ألكان",
         "zh": "烷烃",
-        "ku": "alkane"
+        "ku": "Alkan"
       },
       "conceptB": {
         "tr": "Alken",
@@ -516,7 +516,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Алкен",
         "ar": "ألكين",
         "zh": "烯烃",
-        "ku": "Alkene"
+        "ku": "Alken"
       },
       "conceptB": {
         "tr": "Alkin (Asetilenler)",
@@ -582,7 +582,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Карбоновая кислота",
         "ar": "حمض الكربوكسيل",
         "zh": "羧酸",
-        "ku": "Carboxylic Acid"
+        "ku": "Asîda Karboksîlîk"
       },
       "conceptB": {
         "tr": "Ester",
@@ -614,7 +614,7 @@ export const unit24: ChemistryUnitSeedData = {
         "fr": "Rejoindre Markovnikov",
         "ru": "Присоединение к Марковникову",
         "ar": "الانضمام إلى ماركوفنيكوف",
-        "zh": "加入马尔科夫尼科夫",
+        "zh": "马氏加成规则",
         "ku": "Tevlî Markovnikov dibe"
       },
       "conceptB": {
@@ -624,51 +624,51 @@ export const unit24: ChemistryUnitSeedData = {
         "fr": "Détachement de Zaïtsev",
         "ru": "Зайцевский отряд",
         "ar": "مفرزة زايتسيف",
-        "zh": "扎伊采夫支队",
+        "zh": "扎伊采夫消去规则",
         "ku": "Detachment Zaitsev"
       },
       "distinction": {
-        "tr": "Markovnikov katılan H nin çok hidrojeni olan karbona gitmesidir; Zaitsev ayrılmada eliminasyon az hidrojeni olan karbondan gerçekleşir.",
+        "tr": "Markovnikov katılan H'nin çok hidrojeni olan karbona gitmesidir; Zaitsev ayrılmada eliminasyon az hidrojeni olan karbondan gerçekleşir.",
         "en": "The Markovnikov addition is that the H goes to the carbon that has a lot of hydrogen; In Zaitsev separation, elimination occurs from carbon with less hydrogen.",
         "de": "Der Markownikow-Zusatz besteht darin, dass das H an den Kohlenstoff geht, der viel Wasserstoff enthält; Bei der Zaitsev-Trennung erfolgt die Eliminierung von Kohlenstoff mit weniger Wasserstoff.",
         "fr": "L'ajout de Markovnikov est que le H va au carbone qui contient beaucoup d'hydrogène ; Dans la séparation Zaitsev, l'élimination se produit du carbone avec moins d'hydrogène.",
         "ru": "Дополнение Марковникова состоит в том, что H переходит к углероду, в котором много водорода; При разделении Зайцева отщепление происходит от углерода с меньшим количеством водорода.",
         "ar": "إضافة ماركوفنيكوف هي أن H يذهب إلى الكربون الذي يحتوي على الكثير من الهيدروجين؛ في فصل زايتسيف، يحدث التخلص من الكربون مع كمية أقل من الهيدروجين.",
-        "zh": "马尔可夫尼科夫加法是，H 进入含有大量氢的碳；在扎伊采夫分离中，消除是从碳和较少的氢中发生的。",
+        "zh": "马氏加成是，H 进入含有大量氢的碳；在扎伊采夫分离中，消除是从碳和较少的氢中发生的。",
         "ku": "Zêdekirina Markovnikov ew e ku H diçe karbona ku pir hîdrojen lê heye; Di veqetandina Zaitsev de, jêbirin ji karbonê bi hîdrojenê kêmtir pêk tê."
       }
     },
     {
       "id": "u24-c08",
       "conceptA": {
-        "tr": "Aromatik Bileşikler",
-        "en": "Aromatic Compounds",
-        "de": "Aromatische Verbindungen",
-        "fr": "Composés aromatiques",
-        "ru": "Ароматические соединения",
-        "ar": "المركبات العطرية (الأروماتية)",
-        "zh": "芳香族化合物",
-        "ku": "Pêkhateyên Aromathîk"
+        "tr": "Aldehit",
+        "en": "aldehyde",
+        "de": "Aldehyd",
+        "fr": "aldéhyde",
+        "ru": "альдегид",
+        "ar": "ألدهيد",
+        "zh": "醛",
+        "ku": "Aldehîd"
       },
       "conceptB": {
-        "tr": "Alifatik Bileşikler",
-        "en": "Aliphatic Compounds",
-        "de": "Aliphatische Verbindungen",
-        "fr": "Composés aliphatiques",
-        "ru": "Алифатические соединения",
-        "ar": "المركبات الأليفاتية",
-        "zh": "脂肪族化合物",
-        "ku": "Pêkhateyên Alîfatîk"
+        "tr": "Keton",
+        "en": "Ketone",
+        "de": "Keton",
+        "fr": "Cétone",
+        "ru": "Кетон",
+        "ar": "كيتون",
+        "zh": "酮",
+        "ku": "Ketone"
       },
       "distinction": {
-        "tr": "Aromatik bileşikler benzen halkası içeren kararlı rezonans yapılardır; alifatik bileşikler benzen halkası içermeyen açık zincirli veya halkalı hidrokarbonlardır.",
-        "en": "Aromatic compounds contain resonance-stabilized benzene rings; aliphatic compounds are open-chain or cyclic hydrocarbons lacking benzene rings.",
-        "de": "Aromatische Verbindungen enthalten resonanzstabilisierte Benzolringe; aliphatische Verbindungen sind offenkettige oder ringförmige Kohlenwasserstoffe ohne Benzolring.",
-        "fr": "Les composés aromatiques contiennent des cycles benzéniques stabilisés par résonance ; les composés aliphatiques n'ont pas de cycle benzénique.",
-        "ru": "Ароматические соединения содержат устойчивые бензольные кольца; алифатические соединения представляют собой цепочечные или циклические структуры без бензола.",
-        "ar": "المركبات العطرية تحتوي على حلقات بنزين مستقرة بالرنين؛ المركبات الأليفاتية هي هيدروكربونات ذات سلاسل مفتوحة أو حلقية غير بنزينية.",
-        "zh": "芳香族化合物含有具有共振稳定结构的苯环；脂肪族化合物是不含苯环的开链或非芳香环状烃类及其衍生物。",
-        "ku": "Pêkhateyên aromatîk zengilên benzenê yên bi rezonansê xurtkirî dihewînin; pêkhateyên alîfatîk hîdrokarbonên zincîreke vekirî yan jî bêyî benzenê ne."
+        "tr": "Aldehit karbonilin ucundadır (Tollens ile gümüş aynası verir); keton karbonilin ortasındadır (Tollens'e etki etmez).",
+        "en": "The aldehyde is at the end of the carbonyl (giving silver mirror with Tollens); The ketone is in the middle of the carbonyl (does not affect Tollens).",
+        "de": "Der Aldehyd befindet sich am Ende des Carbonyls (ergibt mit Tollens einen silbernen Spiegel); Das Keton befindet sich in der Mitte des Carbonyls (beeinflusst Tollens nicht).",
+        "fr": "L'aldéhyde est à l'extrémité du carbonyle (donnant un miroir argenté avec Tollens) ; La cétone est au milieu du carbonyle (n'affecte pas Tollens).",
+        "ru": "Альдегид находится на конце карбонила (давая серебряное зеркало с Толленсом); Кетон находится в середине карбонила (не влияет на Толленса).",
+        "ar": "الألدهيد موجود في نهاية الكربونيل (يعطي مرآة فضية مع تولنز)؛ يوجد الكيتون في منتصف الكربونيل (لا يؤثر على تولنس).",
+        "zh": "醛位于羰基末端（托伦斯给出银镜）；酮位于羰基中间（不影响托伦斯）。",
+        "ku": "Aldehîd li dawiya karbonîlê ye (neynika zîv bi Tollens dide); Keton di nîvê karbonylê de ye (bandorê li Tollens nake)."
       }
     }
   ],
@@ -697,7 +697,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Di alkenê de girêdana pi bişkînin"
         },
         {
-          "tr": "Reaktifin H+ katyonunu hidrojeni çok olan C ye bağla",
+          "tr": "Reaktifin H+ katyonunu hidrojeni çok olan C'ye bağla",
           "en": "Connect the H+ cation of the reagent to the C that has more hydrogen.",
           "de": "Verbinden Sie das H+-Kation des Reagenzes mit dem C, das mehr Wasserstoff enthält.",
           "fr": "Connectez le cation H+ du réactif au C qui contient plus d’hydrogène.",
@@ -717,7 +717,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Carbocation stabîl ava bikin"
         },
         {
-          "tr": "Reaktifin anyonunu (Br-, OH-) diğer C ye bağla",
+          "tr": "Reaktifin anyonunu (Br-, OH-) diğer C'ye bağla",
           "en": "Connect the anion of the reagent (Br-, OH-) to the other C",
           "de": "Verbinden Sie das Anion des Reagenzes (Br-, OH-) mit dem anderen C",
           "fr": "Connectez l'anion du réactif (Br-, OH-) à l'autre C",
@@ -1050,14 +1050,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusunu işlerken Alkan (Parafin) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Organic Compounds: Hydrocarbons, which statement regarding Alkane (Paraffin) represents the correct answer?",
-        "de": "Welche Aussage zu Alkan (Paraffin) stellt im Kontext von Organische Verbindungen & Kohlenwasserstoffe die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Composés Organiques & Hydrocarbures, quelle proposition sur Alcane (Paraffine) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Органические соединения и функциональные группы», какой ответ относительно «Алкан (парафин)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"المركبات العضوية والهيدروكربونات\" مخبرياً، أي إجابة بخصوص \"ألكان (بارافين)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“有机化合物与官能团”实验探究与教学分析中，针对“烷烃（石蜡）”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan bersiv derbarê \"Alkan (Parafîn)\" de rast e?"
+        "tr": "Kimya dersinde Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Organic Compounds: Hydrocarbons, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Organische Verbindungen & Kohlenwasserstoffe: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Composés Organiques & Hydrocarbures, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Органические соединения и функциональные группы», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"المركبات العضوية والهيدروكربونات\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“有机化合物与官能团”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Madeyên Organîk û Komên Fonksiyonel\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1126,14 +1126,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin04",
       "stem": {
-        "tr": "Kimya dersinde Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesi incelenirken Alken ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Organic Compounds: Hydrocarbons, which of the following propositions concerning Alkene is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Organische Verbindungen & Kohlenwasserstoffe: Welche Behauptung bezüglich Alken entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Composés Organiques & Hydrocarbures, laquelle des affirmations suivantes concernant Alcène est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Органические соединения и функциональные группы», какое из следующих суждений о «Алкен» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"المركبات العضوية والهيدروكربونات\"، أي من الأحكام التالية المتعلقة بـ \"ألكين\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“有机化合物与官能团”核心规律时，下列关于“烯烃”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Madeyên Organîk û Komên Fonksiyonel\" tê kirin, kîjan daraza li ser \"Alkene\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Organic Compounds: Hydrocarbons?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Organische Verbindungen & Kohlenwasserstoffe zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Composés Organiques & Hydrocarbures ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Органические соединения и функциональные группы»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"المركبات العضوية والهيدروكربونات\"؟",
+        "zh": "根据“有机化合物与官能团”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Madeyên Organîk û Komên Fonksiyonel\" de rast e?"
       },
       "options": [
         {
@@ -1202,14 +1202,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusundaki temel kimyasal kurallar çerçevesinde Primer Alkol kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Primary Alcohol within the fundamental principles of Organic Compounds: Hydrocarbons?",
-        "de": "Welche Aussage beschreibt das Konzept Primärer Alkohol im Rahmen von Organische Verbindungen & Kohlenwasserstoffe am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Alcool primaire selon les lois de Composés Organiques & Hydrocarbures?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Первичный спирт» в рамках темы «Органические соединения и функциональные группы»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"الكحول الأولي\" ضمن قواعد \"المركبات العضوية والهيدروكربونات\"؟",
-        "zh": "根据“有机化合物与官能团”的基本化学原理，下列哪项阐述能最准确地界定“伯醇”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Alkola seretayî\" di çarçoveya prensîbên \"Madeyên Organîk û Komên Fonksiyonel\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Organic Compounds: Hydrocarbons, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Organische Verbindungen & Kohlenwasserstoffe: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Composés Organiques & Hydrocarbures, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Органические соединения и функциональные группы», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المركبات العضوية والهيدروكربونات\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“有机化合物与官能团”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1278,14 +1278,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar sorularında karşılaşılan Karboksilik Asit konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Organic Compounds: Hydrocarbons, which assertion regarding Carboxylic Acid is correct?",
-        "de": "Welche Feststellung bezüglich Carbonsäure ist nach den chemischen Gesetzmäßigkeiten von Organische Verbindungen & Kohlenwasserstoffe richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Composés Organiques & Hydrocarbures, quelle affirmation concernant Acide carboxylique est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Органические соединения и функциональные группы», какое положение относительно «Карбоновая кислота» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المركبات العضوية والهيدروكربونات\"، أي حكم متعلق بـ \"حمض الكربوكسيل\" يعتبر صحيحاً؟",
-        "zh": "在高考“有机化合物与官能团”经典考题中，下列有关“羧酸”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan daraza li ser \"Carboxylic Acid\" rast e?"
+        "tr": "Aşağıda Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Organic Compounds: Hydrocarbons, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Composés Organiques & Hydrocarbures, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Органические соединения и функциональные группы», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المركبات العضوية والهيدروكربونات\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“有机化合物与官能团”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Madeyên Organîk û Komên Fonksiyonel\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1354,14 +1354,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin07",
       "stem": {
-        "tr": "Aşağıda Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Markovnikov Katılması ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Organic Compounds: Hydrocarbons, which statement about Joining Markovnikov is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welche Aussage über Beitritt zu Markownikow ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Composés Organiques & Hydrocarbures, quelle affirmation relative à Rejoindre Markovnikov est exacte?",
-        "ru": "На основе фундаментальных положений темы «Органические соединения и функциональные группы», какое суждение о «Присоединение к Марковникову» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المركبات العضوية والهيدروكربونات\"، أي عبارة حول \"الانضمام إلى ماركوفنيكوف\" صحيحة؟",
-        "zh": "基于“有机化合物与官能团”的基础化学知识体系，下列关于“加入马尔科夫尼科夫”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Madeyên Organîk û Komên Fonksiyonel\", kîjan gotin derbarê \"Tevlî Markovnikov dibe\" de rast e?"
+        "tr": "Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Organic Compounds: Hydrocarbons, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Composés Organiques & Hydrocarbures, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Органические соединения и функциональные группы», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"المركبات العضوية والهيدروكربونات\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“有机化合物与官能团”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1430,14 +1430,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin08",
       "stem": {
-        "tr": "Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusu kapsamında Aromatik Bileşikler ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Organic Compounds: Hydrocarbons, which of the following findings regarding Aromatic Compounds is scientifically verified?",
-        "de": "Im Rahmen der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welcher der folgenden Befunde zu Aromatische Verbindungen ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Composés Organiques & Hydrocarbures, laquelle des constatations suivantes concernant Composés aromatiques est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Органические соединения и функциональные группы», какой из следующих выводов относительно «Ароматические соединения» научно подтверждён?",
-        "ar": "في سياق موضوع \"المركبات العضوية والهيدروكربونات\"، أي من النتائج التالية المتعلقة بـ \"المركبات العطرية (الأروماتية)\" مثبتة علمياً؟",
-        "zh": "在“有机化合物与官能团”主题范畴内，下列关于“芳香族化合物”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan ji van encamên li ser \"Pêkhateyên Aromathîk\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Organic Compounds: Hydrocarbons, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Composés Organiques & Hydrocarbures, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Органические соединения и функциональные группы», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المركبات العضوية والهيدروكربونات\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“有机化合物与官能团”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Madeyên Organîk û Komên Fonksiyonel\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1506,14 +1506,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesinde ele alınan Aldehit hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Organic Compounds: Hydrocarbons, which statement about aldehyde is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welche Aussage über Aldehyd ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Composés Organiques & Hydrocarbures, quelle affirmation relative à aldéhyde est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Органические соединения и функциональные группы», какое утверждение о «альдегид» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المركبات العضوية والهيدروكربونات\"، أي عبارة حول \"ألدهيد\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“有机化合物与官能团”单元中关于“醛”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Madeyên Organîk û Komên Fonksiyonel\", kîjan gotin li ser \"aldehyde\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Organic Compounds: Hydrocarbons, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Organische Verbindungen & Kohlenwasserstoffe die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Composés Organiques & Hydrocarbures, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Органические соединения и функциональные группы», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"المركبات العضوية والهيدروكربونات\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“有机化合物与官能团”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1582,14 +1582,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusunu işlerken Alkan üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Organic Compounds: Hydrocarbons, which statement regarding alkane represents the correct answer?",
-        "de": "Welche Aussage zu Alkan stellt im Kontext von Organische Verbindungen & Kohlenwasserstoffe die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Composés Organiques & Hydrocarbures, quelle proposition sur alcane constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Органические соединения и функциональные группы», какой ответ относительно «алкан» является правильным?",
-        "ar": "أثناء دراسة موضوع \"المركبات العضوية والهيدروكربونات\" مخبرياً، أي إجابة بخصوص \"ألكان\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“有机化合物与官能团”实验探究与教学分析中，针对“烷烃”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan bersiv derbarê \"alkane\" de rast e?"
+        "tr": "Kimya dersinde Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Organic Compounds: Hydrocarbons, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Organische Verbindungen & Kohlenwasserstoffe: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Composés Organiques & Hydrocarbures, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Органические соединения и функциональные группы», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"المركبات العضوية والهيدروكربونات\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“有机化合物与官能团”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Madeyên Organîk û Komên Fonksiyonel\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1658,14 +1658,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin11",
       "stem": {
-        "tr": "Kimya dersinde Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesi incelenirken Alkan (Parafin) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Organic Compounds: Hydrocarbons, which of the following propositions concerning Alkane (Paraffin) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Organische Verbindungen & Kohlenwasserstoffe: Welche Behauptung bezüglich Alkan (Paraffin) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Composés Organiques & Hydrocarbures, laquelle des affirmations suivantes concernant Alcane (Paraffine) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Органические соединения и функциональные группы», какое из следующих суждений о «Алкан (парафин)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"المركبات العضوية والهيدروكربونات\"، أي من الأحكام التالية المتعلقة بـ \"ألكان (بارافين)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“有机化合物与官能团”核心规律时，下列关于“烷烃（石蜡）”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Madeyên Organîk û Komên Fonksiyonel\" tê kirin, kîjan daraza li ser \"Alkan (Parafîn)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Organic Compounds: Hydrocarbons?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Organische Verbindungen & Kohlenwasserstoffe zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Composés Organiques & Hydrocarbures ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Органические соединения и функциональные группы»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"المركبات العضوية والهيدروكربونات\"؟",
+        "zh": "根据“有机化合物与官能团”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Madeyên Organîk û Komên Fonksiyonel\" de rast e?"
       },
       "options": [
         {
@@ -1734,14 +1734,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusundaki temel kimyasal kurallar çerçevesinde Alken kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Alkene within the fundamental principles of Organic Compounds: Hydrocarbons?",
-        "de": "Welche Aussage beschreibt das Konzept Alken im Rahmen von Organische Verbindungen & Kohlenwasserstoffe am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Alcène selon les lois de Composés Organiques & Hydrocarbures?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Алкен» в рамках темы «Органические соединения и функциональные группы»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"ألكين\" ضمن قواعد \"المركبات العضوية والهيدروكربونات\"؟",
-        "zh": "根据“有机化合物与官能团”的基本化学原理，下列哪项阐述能最准确地界定“烯烃”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Alkene\" di çarçoveya prensîbên \"Madeyên Organîk û Komên Fonksiyonel\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Organic Compounds: Hydrocarbons, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Organische Verbindungen & Kohlenwasserstoffe: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Composés Organiques & Hydrocarbures, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Органические соединения и функциональные группы», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المركبات العضوية والهيدروكربونات\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“有机化合物与官能团”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1810,14 +1810,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar sorularında karşılaşılan Primer Alkol konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Organic Compounds: Hydrocarbons, which assertion regarding Primary Alcohol is correct?",
-        "de": "Welche Feststellung bezüglich Primärer Alkohol ist nach den chemischen Gesetzmäßigkeiten von Organische Verbindungen & Kohlenwasserstoffe richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Composés Organiques & Hydrocarbures, quelle affirmation concernant Alcool primaire est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Органические соединения и функциональные группы», какое положение относительно «Первичный спирт» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المركبات العضوية والهيدروكربونات\"، أي حكم متعلق بـ \"الكحول الأولي\" يعتبر صحيحاً؟",
-        "zh": "在高考“有机化合物与官能团”经典考题中，下列有关“伯醇”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan daraza li ser \"Alkola seretayî\" rast e?"
+        "tr": "Aşağıda Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Organic Compounds: Hydrocarbons, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Composés Organiques & Hydrocarbures, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Органические соединения и функциональные группы», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المركبات العضوية والهيدروكربونات\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“有机化合物与官能团”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Madeyên Organîk û Komên Fonksiyonel\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1886,14 +1886,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin14",
       "stem": {
-        "tr": "Aşağıda Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Karboksilik Asit ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Organic Compounds: Hydrocarbons, which statement about Carboxylic Acid is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welche Aussage über Carbonsäure ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Composés Organiques & Hydrocarbures, quelle affirmation relative à Acide carboxylique est exacte?",
-        "ru": "На основе фундаментальных положений темы «Органические соединения и функциональные группы», какое суждение о «Карбоновая кислота» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المركبات العضوية والهيدروكربونات\"، أي عبارة حول \"حمض الكربوكسيل\" صحيحة؟",
-        "zh": "基于“有机化合物与官能团”的基础化学知识体系，下列关于“羧酸”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Madeyên Organîk û Komên Fonksiyonel\", kîjan gotin derbarê \"Carboxylic Acid\" de rast e?"
+        "tr": "Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Organic Compounds: Hydrocarbons, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Composés Organiques & Hydrocarbures, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Органические соединения и функциональные группы», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"المركبات العضوية والهيدروكربونات\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“有机化合物与官能团”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1962,14 +1962,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin15",
       "stem": {
-        "tr": "Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusu kapsamında Markovnikov Katılması ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Organic Compounds: Hydrocarbons, which of the following findings regarding Joining Markovnikov is scientifically verified?",
-        "de": "Im Rahmen der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welcher der folgenden Befunde zu Beitritt zu Markownikow ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Composés Organiques & Hydrocarbures, laquelle des constatations suivantes concernant Rejoindre Markovnikov est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Органические соединения и функциональные группы», какой из следующих выводов относительно «Присоединение к Марковникову» научно подтверждён?",
-        "ar": "في سياق موضوع \"المركبات العضوية والهيدروكربونات\"، أي من النتائج التالية المتعلقة بـ \"الانضمام إلى ماركوفنيكوف\" مثبتة علمياً؟",
-        "zh": "在“有机化合物与官能团”主题范畴内，下列关于“加入马尔科夫尼科夫”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan ji van encamên li ser \"Tevlî Markovnikov dibe\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Organic Compounds: Hydrocarbons, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Composés Organiques & Hydrocarbures, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Органические соединения и функциональные группы», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المركبات العضوية والهيدروكربونات\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“有机化合物与官能团”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Madeyên Organîk û Komên Fonksiyonel\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2038,14 +2038,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar ünitesinde ele alınan Aromatik Bileşikler hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Organic Compounds: Hydrocarbons, which statement about Aromatic Compounds is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Organische Verbindungen & Kohlenwasserstoffe: Welche Aussage über Aromatische Verbindungen ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Composés Organiques & Hydrocarbures, quelle affirmation relative à Composés aromatiques est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Органические соединения и функциональные группы», какое утверждение о «Ароматические соединения» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المركبات العضوية والهيدروكربونات\"، أي عبارة حول \"المركبات العطرية (الأروماتية)\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“有机化合物与官能团”单元中关于“芳香族化合物”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Madeyên Organîk û Komên Fonksiyonel\", kîjan gotin li ser \"Pêkhateyên Aromathîk\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Organik Bileşikler: Hidrokarbonlar ve Fonksiyonel Gruplar konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Organic Compounds: Hydrocarbons, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Organische Verbindungen & Kohlenwasserstoffe die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Composés Organiques & Hydrocarbures, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Органические соединения и функциональные группы», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"المركبات العضوية والهيدروكربونات\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“有机化合物与官能团”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Madeyên Organîk û Komên Fonksiyonel\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

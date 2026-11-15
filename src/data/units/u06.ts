@@ -175,7 +175,7 @@ export const unit06: ChemistryUnitSeedData = {
         "ku": "Di şert û mercên jûreyê de (25 °C, 1 atm), 1 mol gaz qebareya 22,4 L digire."
       },
       "osymTip": {
-        "tr": "Oda koşullarında 24.5 L dir.",
+        "tr": "Oda koşullarında 24.5 L'dir.",
         "en": "It is 24.5 L under room conditions.",
         "de": "Unter Raumbedingungen beträgt es 24,5 L.",
         "fr": "Il fait 24,5 L dans des conditions ambiantes.",
@@ -188,7 +188,7 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-f07",
       "fact": {
-        "tr": "Mol sayısı formülü: n = m / MA (kütle / mol kütlesi) veya n = N / NA dır.",
+        "tr": "Mol sayısı formülü: n = m / MA (kütle / mol kütlesi) veya n = N / NA'dır.",
         "en": "The formula for the number of moles is: n = m / MA (mass / molar mass) or n = N / NA.",
         "de": "Die Formel für die Molzahl lautet: n = m / MA (Masse / Molmasse) oder n = N / NA.",
         "fr": "La formule du nombre de moles est : n = m/MA (masse/masse molaire) ou n = N/NA.",
@@ -231,7 +231,7 @@ export const unit06: ChemistryUnitSeedData = {
         "ku": "1 molekulek CO2 44 gram giran e."
       },
       "osymTip": {
-        "tr": "1 tane CO2 44 akb dir; 1 mol CO2 44 gramdır.",
+        "tr": "1 tane CO2 44 akb'dir; 1 mol CO2 44 gramdır.",
         "en": "1 grain of CO2 is 44 akb; 1 mole of CO2 is 44 grams.",
         "de": "1 Korn CO2 ist 44 akb; 1 Mol CO2 sind 44 Gramm.",
         "fr": "1 grain de CO2 équivaut à 44 akb ; 1 mole de CO2 équivaut à 44 grammes.",
@@ -267,7 +267,7 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-f10",
       "fact": {
-        "tr": "Bağıl atom kütlesi karbon-12 (12C) izotopunun kütlesinin 1/12 si temel alınarak hesaplanmıştır.",
+        "tr": "Bağıl atom kütlesi karbon-12 (12C) izotopunun kütlesinin 1/12'si temel alınarak hesaplanmıştır.",
         "en": "Relative atomic mass was calculated based on 1/12 of the mass of the carbon-12 (12C) isotope.",
         "de": "Die relative Atommasse wurde auf der Grundlage von 1/12 der Masse des Kohlenstoff-12-Isotops (12C) berechnet.",
         "fr": "La masse atomique relative a été calculée sur la base de 1/12 de la masse de l’isotope du carbone 12 (12C).",
@@ -359,7 +359,7 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-f14",
       "fact": {
-        "tr": "0.5 mol CH4 gazı NK da 11.2 litre hacim kaplar ve 2.5 mol atom içerir (0.5 mol C + 2.0 mol H).",
+        "tr": "0.5 mol CH4 gazı NK'da 11.2 litre hacim kaplar ve 2.5 mol atom içerir (0.5 mol C + 2.0 mol H).",
         "en": "0.5 mol CH4 gas occupies 11.2 liters of volume in NK and contains 2.5 mol atoms (0.5 mol C + 2.0 mol H).",
         "de": "0,5 Mol CH4-Gas nimmt in NK 11,2 Liter Volumen ein und enthält 2,5 Mol-Atome (0,5 Mol C + 2,0 Mol H).",
         "fr": "0,5 mole de gaz CH4 occupe 11,2 litres de volume dans NK et contient 2,5 moles d'atomes (0,5 mole de C + 2,0 moles de H).",
@@ -369,7 +369,7 @@ export const unit06: ChemistryUnitSeedData = {
         "ku": "0,5 mol gaza CH4 li NK 11,2 lître qebar digire û 2,5 mol atoman (0,5 mol C + 2,0 mol H) dihewîne."
       },
       "trap": {
-        "tr": "0.5 mol CH4 gazı NK da 22.4 L hacim kaplar.",
+        "tr": "0.5 mol CH4 gazı NK'da 22.4 L hacim kaplar.",
         "en": "0.5 mol CH4 gas occupies 22.4 L volume in NK.",
         "de": "0,5 mol CH4-Gas nehmen in NK ein Volumen von 22,4 l ein.",
         "fr": "0,5 mole de gaz CH4 occupe un volume de 22,4 L dans NK.",
@@ -382,7 +382,7 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-f15",
       "fact": {
-        "tr": "Katı ve sıvı maddeler için NK da 22.4 L hacim kuralı GEÇERLİ DEĞİLDİR; sadece gazlar içindir.",
+        "tr": "Katı ve sıvı maddeler için NK'da 22.4 L hacim kuralı GEÇERLİ DEĞİLDİR; sadece gazlar içindir.",
         "en": "For solid and liquid substances, the 22.4 L volume rule in NC does NOT apply; For gases only.",
         "de": "Für feste und flüssige Stoffe gilt die 22,4-L-Volumenregel in NC NICHT; Nur für Gase.",
         "fr": "Pour les substances solides et liquides, la règle du volume de 22,4 L en NC ne s'applique PAS ; Pour les gaz uniquement.",
@@ -392,7 +392,7 @@ export const unit06: ChemistryUnitSeedData = {
         "ku": "Ji bo maddeyên hişk û şil, qaîdeya qebareya 22,4 L di NC-ê de NA derbas dibe; Tenê ji bo gazan."
       },
       "trap": {
-        "tr": "0 °C de 1 mol sıvı su 22.4 litre hacim kaplar.",
+        "tr": "0 °C'de 1 mol sıvı su 22.4 litre hacim kaplar.",
         "en": "At 0 °C, 1 mole of liquid water occupies 22.4 liters of volume.",
         "de": "Bei 0 °C nimmt 1 Mol flüssiges Wasser 22,4 Liter Volumen ein.",
         "fr": "À 0 °C, 1 mole d’eau liquide occupe 22,4 litres de volume.",
@@ -468,7 +468,7 @@ export const unit06: ChemistryUnitSeedData = {
         "de": "1 Akb",
         "fr": "1 clé USB",
         "ru": "1 акб",
-        "ar": "1 أك",
+        "ar": "1 أكب",
         "zh": "1 AKB",
         "ku": "1 akb"
       },
@@ -615,7 +615,7 @@ export const unit06: ChemistryUnitSeedData = {
         "ku": "Mercên Odeyê (Şertên Standard)"
       },
       "distinction": {
-        "tr": "NK 0 °C ve 1 atm olup 1 mol gaz 22.4 L dir; Oda koşulları 25 °C ve 1 atm olup 1 mol gaz 24.5 L dir.",
+        "tr": "NK 0 °C ve 1 atm olup 1 mol gaz 22.4 L'dir; Oda koşulları 25 °C ve 1 atm olup 1 mol gaz 24.5 L'dir.",
         "en": "NK is 0 °C and 1 atm and 1 mole of gas is 22.4 L; Room conditions are 25 °C and 1 atm, and 1 mole of gas is 24.5 L.",
         "de": "NK ist 0 °C und 1 atm und 1 Mol Gas ist 22,4 L; Die Raumbedingungen betragen 25 °C und 1 atm, und 1 Mol Gas entspricht 24,5 l.",
         "fr": "NK vaut 0 °C et 1 atm et 1 mole de gaz valent 22,4 L ; Les conditions ambiantes sont de 25 °C et 1 atm, et 1 mole de gaz équivaut à 24,5 L.",
@@ -648,7 +648,7 @@ export const unit06: ChemistryUnitSeedData = {
         "ku": "Komkujiya Atomî ya Rastî"
       },
       "distinction": {
-        "tr": "Bağıl atom kütlesi Karbon-12 ye göre birimsiz orandır; gerçek atom kütlesi 1 tek atomun gram cinsinden kütlesidir (MA / NA).",
+        "tr": "Bağıl atom kütlesi Karbon-12'ye göre birimsiz orandır; gerçek atom kütlesi 1 tek atomun gram cinsinden kütlesidir (MA / NA).",
         "en": "Relative atomic mass is the unitless ratio relative to Carbon-12; The true atomic mass is the mass in grams of 1 single atom (MA/NA).",
         "de": "Die relative Atommasse ist das einheitenlose Verhältnis relativ zu Kohlenstoff-12; Die wahre Atommasse ist die Masse eines einzelnen Atoms (MA/NA) in Gramm.",
         "fr": "La masse atomique relative est le rapport sans unité par rapport au carbone 12 ; La véritable masse atomique est la masse en grammes d’un seul atome (MA/NA).",
@@ -792,7 +792,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Hejmara molan bi formula n = m / MA tê dîtin"
         },
         {
-          "tr": "NK da hacim için mol 22.4 ile çarpılır",
+          "tr": "NK'da hacim için mol 22.4 ile çarpılır",
           "en": "In NK, moles are multiplied by 22.4 for volume.",
           "de": "In NK werden Mol für das Volumen mit 22,4 multipliziert.",
           "fr": "En NK, les taupes sont multipliées par 22,4 pour le volume.",
@@ -1057,7 +1057,7 @@ export const unit06: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "CO ve CO2 aynı iki elementten oluşur, basit formülleri farklıdır ve 2 element içerir. Sabit C miktarına karşılık O lar arasındaki katlı oran 1/2 dir.",
+        "tr": "CO ve CO2 aynı iki elementten oluşur, basit formülleri farklıdır ve 2 element içerir. Sabit C miktarına karşılık O'lar arasındaki katlı oran 1/2'dir.",
         "en": "CO and CO2 consist of the same two elements, their simple formulas are different and they contain 2 elements. The multiple ratio between Os in response to a fixed amount of C is 1/2.",
         "de": "CO und CO2 bestehen aus den gleichen zwei Elementen, ihre einfachen Formeln sind unterschiedlich und sie enthalten 2 Elemente. Das Mehrfachverhältnis zwischen Os als Reaktion auf eine feste Menge an C beträgt 1/2.",
         "fr": "Le CO et le CO2 sont constitués des deux mêmes éléments, leurs formules simples sont différentes et ils contiennent 2 éléments. Le rapport multiple entre Os en réponse à une quantité fixe de C est de 1/2.",
@@ -1070,14 +1070,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyanın Temel Kanunları ve Mol Kavramı konusunu işlerken Kütlenin Korunumu (Lavoisier) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Basic Chemical Laws & The Mole, which statement regarding Conservation of Mass (Lavoisier) represents the correct answer?",
-        "de": "Welche Aussage zu Erhaltung der Masse (Lavoisier) stellt im Kontext von Chemische Grundgesetze & Mol die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Lois Fondamentales & Mole, quelle proposition sur Conservation de la messe (Lavoisier) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Основные законы химии и моль», какой ответ относительно «Сохранение массы (Лавуазье)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"قوانين الكيمياء الأساسية والمول\" مخبرياً، أي إجابة بخصوص \"حفظ الكتلة (لافوازييه)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学基本定律与摩尔”实验探究与教学分析中，针对“质量守恒（拉瓦锡）”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan bersiv derbarê \"Parastina Komkujiyê (Lavoisier)\" de rast e?"
+        "tr": "Kimya dersinde Kimyanın Temel Kanunları ve Mol Kavramı ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Basic Chemical Laws & The Mole, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Chemische Grundgesetze & Mol: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Lois Fondamentales & Mole, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Основные законы химии и моль», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"قوانين الكيمياء الأساسية والمول\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学基本定律与摩尔”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1121,7 +1121,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Gotina 1 molekul-gram H2O 1 molekula avê nîşan dide."
         },
         {
-          "tr": "0 °C de 1 mol sıvı su 22.4 litre hacim kaplar.",
+          "tr": "0 °C'de 1 mol sıvı su 22.4 litre hacim kaplar.",
           "en": "At 0 °C, 1 mole of liquid water occupies 22.4 liters of volume.",
           "de": "Bei 0 °C nimmt 1 Mol flüssiges Wasser 22,4 Liter Volumen ein.",
           "fr": "À 0 °C, 1 mole d’eau liquide occupe 22,4 litres de volume.",
@@ -1146,14 +1146,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin04",
       "stem": {
-        "tr": "Kimya dersinde Kimyanın Temel Kanunları ve Mol Kavramı ünitesi incelenirken Sabit Oranlar (Proust) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Basic Chemical Laws & The Mole, which of the following propositions concerning Fixed Proportions (Proust) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Chemische Grundgesetze & Mol: Welche Behauptung bezüglich Feste Proportionen (Proust) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Lois Fondamentales & Mole, laquelle des affirmations suivantes concernant Proportions fixes (Proust) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Основные законы химии и моль», какое из следующих суждений о «Фиксированные пропорции (Пруст)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"قوانين الكيمياء الأساسية والمول\"، أي من الأحكام التالية المتعلقة بـ \"النسب الثابتة (بروست)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学基本定律与摩尔”核心规律时，下列关于“固定比例（普鲁斯特）”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\" tê kirin, kîjan daraza li ser \"Rêjeyên sabît (Proust)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyanın Temel Kanunları ve Mol Kavramı konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Basic Chemical Laws & The Mole?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Chemische Grundgesetze & Mol zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Lois Fondamentales & Mole ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Основные законы химии и моль»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"قوانين الكيمياء الأساسية والمول\"؟",
+        "zh": "根据“化学基本定律与摩尔”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\" de rast e?"
       },
       "options": [
         {
@@ -1222,14 +1222,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyanın Temel Kanunları ve Mol Kavramı konusundaki temel kimyasal kurallar çerçevesinde Avogadro Sayısı (NA) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Avogadro's Number (NA) within the fundamental principles of Basic Chemical Laws & The Mole?",
-        "de": "Welche Aussage beschreibt das Konzept Avogadros Zahl (NA) im Rahmen von Chemische Grundgesetze & Mol am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Numéro d'Avogadro (NA) selon les lois de Lois Fondamentales & Mole?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Число Авогадро (NA)» в рамках темы «Основные законы химии и моль»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"رقم أفوجادرو (نسبة غير معلومة)\" ضمن قواعد \"قوانين الكيمياء الأساسية والمول\"؟",
-        "zh": "根据“化学基本定律与摩尔”的基本化学原理，下列哪项阐述能最准确地界定“阿伏伽德罗常数 (NA)”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Hejmara Avogadro (NA)\" di çarçoveya prensîbên \"Zagonên Bingehîn ên Kîmyayê û Mol\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyanın Temel Kanunları ve Mol Kavramı sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Basic Chemical Laws & The Mole, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Chemische Grundgesetze & Mol: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Lois Fondamentales & Mole, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Основные законы химии и моль», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学基本定律与摩尔”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1253,7 +1253,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Di navbera FeO û Fe2O3 de rêjeyek pirjimar tune."
         },
         {
-          "tr": "0.5 mol CH4 gazı NK da 22.4 L hacim kaplar.",
+          "tr": "0.5 mol CH4 gazı NK'da 22.4 L hacim kaplar.",
           "en": "0.5 mol CH4 gas occupies 22.4 L volume in NK.",
           "de": "0,5 mol CH4-Gas nehmen in NK ein Volumen von 22,4 l ein.",
           "fr": "0,5 mole de gaz CH4 occupe un volume de 22,4 L dans NK.",
@@ -1298,14 +1298,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyanın Temel Kanunları ve Mol Kavramı sorularında karşılaşılan Normal Koşullar (NK) konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Basic Chemical Laws & The Mole, which assertion regarding Normal Conditions (NC) is correct?",
-        "de": "Welche Feststellung bezüglich Normale Bedingungen (NC) ist nach den chemischen Gesetzmäßigkeiten von Chemische Grundgesetze & Mol richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Lois Fondamentales & Mole, quelle affirmation concernant Conditions normales (NC) est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Основные законы химии и моль», какое положение относительно «Нормальные условия (NC)» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي حكم متعلق بـ \"الظروف العادية (NC)\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学基本定律与摩尔”经典考题中，下列有关“正常条件 (NC)”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan daraza li ser \"Şertên Normal (NC)\" rast e?"
+        "tr": "Aşağıda Kimyanın Temel Kanunları ve Mol Kavramı ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Basic Chemical Laws & The Mole, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Chemische Grundgesetze & Mol: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Lois Fondamentales & Mole, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Основные законы химии и моль», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学基本定律与摩尔”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1339,7 +1339,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Gotina 1 molekul-gram H2O 1 molekula avê nîşan dide."
         },
         {
-          "tr": "0 °C de 1 mol sıvı su 22.4 litre hacim kaplar.",
+          "tr": "0 °C'de 1 mol sıvı su 22.4 litre hacim kaplar.",
           "en": "At 0 °C, 1 mole of liquid water occupies 22.4 liters of volume.",
           "de": "Bei 0 °C nimmt 1 Mol flüssiges Wasser 22,4 Liter Volumen ein.",
           "fr": "À 0 °C, 1 mole d’eau liquide occupe 22,4 litres de volume.",
@@ -1361,7 +1361,7 @@ export const unit06: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Normal koşullarda (0 °C ve 1 atm) 1 mol ideal gaz 22.4 litre hacim kaplar.\" ifadesidir. Oda koşullarında 24.5 L dir.",
+        "tr": "Doğru cevap \"Normal koşullarda (0 °C ve 1 atm) 1 mol ideal gaz 22.4 litre hacim kaplar.\" ifadesidir. Oda koşullarında 24.5 L'dir.",
         "en": "The correct statement is: \"Under normal conditions (0 °C and 1 atm), 1 mole of ideal gas occupies 22.4 liters of volume.\". It is 24.5 L under room conditions.",
         "de": "Die zutreffende Aussage lautet: \"Unter normalen Bedingungen (0 °C und 1 atm) nimmt 1 Mol ideales Gas 22,4 Liter Volumen ein.\". Unter Raumbedingungen beträgt es 24,5 L.",
         "fr": "L'affirmation exacte est: \"Dans des conditions normales (0 °C et 1 atm), 1 mole de gaz parfait occupe 22,4 litres de volume.\". Il fait 24,5 L dans des conditions ambiantes.",
@@ -1374,14 +1374,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin07",
       "stem": {
-        "tr": "Aşağıda Kimyanın Temel Kanunları ve Mol Kavramı ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Bağıl Atom Kütlesi ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Basic Chemical Laws & The Mole, which statement about Relative Atomic Mass is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Chemische Grundgesetze & Mol: Welche Aussage über Relative Atommasse ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Lois Fondamentales & Mole, quelle affirmation relative à Masse atomique relative est exacte?",
-        "ru": "На основе фундаментальных положений темы «Основные законы химии и моль», какое суждение о «Относительная атомная масса» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي عبارة حول \"الكتلة الذرية النسبية\" صحيحة؟",
-        "zh": "基于“化学基本定律与摩尔”的基础化学知识体系，下列关于“相对原子质量”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\", kîjan gotin derbarê \"Girseya Atomî ya nisbî\" de rast e?"
+        "tr": "Kimyanın Temel Kanunları ve Mol Kavramı konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Basic Chemical Laws & The Mole, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Chemische Grundgesetze & Mol: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Lois Fondamentales & Mole, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Основные законы химии и моль», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"قوانين الكيمياء الأساسية والمول\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学基本定律与摩尔”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1395,7 +1395,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Girseya atomê ya nisbî tam bi giraniya atoma hîdrojenê ye."
         },
         {
-          "tr": "Mol sayısı formülü: n = m / MA (kütle / mol kütlesi) veya n = N / NA dır.",
+          "tr": "Mol sayısı formülü: n = m / MA (kütle / mol kütlesi) veya n = N / NA'dır.",
           "en": "The formula for the number of moles is: n = m / MA (mass / molar mass) or n = N / NA.",
           "de": "Die Formel für die Molzahl lautet: n = m / MA (Masse / Molmasse) oder n = N / NA.",
           "fr": "La formule du nombre de moles est : n = m/MA (masse/masse molaire) ou n = N/NA.",
@@ -1437,7 +1437,7 @@ export const unit06: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"Mol sayısı formülü: n = m / MA (kütle / mol kütlesi) veya n = N / NA dır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Mol sayısı formülü: n = m / MA (kütle / mol kütlesi) veya n = N / NA'dır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"The formula for the number of moles is: n = m / MA (mass / molar mass) or n = N / NA.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Die Formel für die Molzahl lautet: n = m / MA (Masse / Molmasse) oder n = N / NA.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La formule du nombre de moles est : n = m/MA (masse/masse molaire) ou n = N/NA.\". Notion fondamentale du programme officiel de chimie.",
@@ -1450,14 +1450,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin08",
       "stem": {
-        "tr": "Kimyanın Temel Kanunları ve Mol Kavramı konusu kapsamında Atom-Gram ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Basic Chemical Laws & The Mole, which of the following findings regarding Atom-Gram is scientifically verified?",
-        "de": "Im Rahmen der Einheit Chemische Grundgesetze & Mol: Welcher der folgenden Befunde zu Atom-Gramm ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Lois Fondamentales & Mole, laquelle des constatations suivantes concernant Atome-gramme est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Основные законы химии и моль», какой из следующих выводов относительно «Атом-грамм» научно подтверждён?",
-        "ar": "في سياق موضوع \"قوانين الكيمياء الأساسية والمول\"، أي من النتائج التالية المتعلقة بـ \"ذرة جرام\" مثبتة علمياً؟",
-        "zh": "在“化学基本定律与摩尔”主题范畴内，下列关于“原子图谱”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan ji van encamên li ser \"Atom-Gram\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyanın Temel Kanunları ve Mol Kavramı ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Basic Chemical Laws & The Mole, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Chemische Grundgesetze & Mol: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Lois Fondamentales & Mole, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Основные законы химии и моль», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学基本定律与摩尔”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1471,7 +1471,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Di navbera FeO û Fe2O3 de rêjeyek pirjimar tune."
         },
         {
-          "tr": "0.5 mol CH4 gazı NK da 22.4 L hacim kaplar.",
+          "tr": "0.5 mol CH4 gazı NK'da 22.4 L hacim kaplar.",
           "en": "0.5 mol CH4 gas occupies 22.4 L volume in NK.",
           "de": "0,5 mol CH4-Gas nehmen in NK ein Volumen von 22,4 l ein.",
           "fr": "0,5 mole de gaz CH4 occupe un volume de 22,4 L dans NK.",
@@ -1513,7 +1513,7 @@ export const unit06: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Mol kütlesi (MA), 1 mol maddenin gram cinsinden kütlesidir (akb cinsinden molekül ağırlığının gram karşılığıdır).\" ifadesidir. 1 tane CO2 44 akb dir; 1 mol CO2 44 gramdır.",
+        "tr": "Doğru cevap \"Mol kütlesi (MA), 1 mol maddenin gram cinsinden kütlesidir (akb cinsinden molekül ağırlığının gram karşılığıdır).\" ifadesidir. 1 tane CO2 44 akb'dir; 1 mol CO2 44 gramdır.",
         "en": "The correct statement is: \"Molar mass (MA) is the mass in grams of 1 mole of substance (gram equivalent to the molecular weight in amu).\". 1 grain of CO2 is 44 akb; 1 mole of CO2 is 44 grams.",
         "de": "Die zutreffende Aussage lautet: \"Die Molmasse (MA) ist die Masse in Gramm von 1 Mol einer Substanz (Gramm entspricht dem Molekulargewicht in amu).\". 1 Korn CO2 ist 44 akb; 1 Mol CO2 sind 44 Gramm.",
         "fr": "L'affirmation exacte est: \"La masse molaire (MA) est la masse en grammes de 1 mole de substance (gramme équivalent au poids moléculaire en amu).\". 1 grain de CO2 équivaut à 44 akb ; 1 mole de CO2 équivaut à 44 grammes.",
@@ -1526,14 +1526,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyanın Temel Kanunları ve Mol Kavramı ünitesinde ele alınan Sabit Oranlar hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Basic Chemical Laws & The Mole, which statement about Fixed Odds is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Chemische Grundgesetze & Mol: Welche Aussage über Feste Quoten ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Lois Fondamentales & Mole, quelle affirmation relative à Cotes fixes est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Основные законы химии и моль», какое утверждение о «Фиксированные коэффициенты» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي عبارة حول \"احتمالات ثابتة\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学基本定律与摩尔”单元中关于“固定赔率”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\", kîjan gotin li ser \"Odds Fixed\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyanın Temel Kanunları ve Mol Kavramı konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Basic Chemical Laws & The Mole, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Chemische Grundgesetze & Mol die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Lois Fondamentales & Mole, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Основные законы химии и моль», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"قوانين الكيمياء الأساسية والمول\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学基本定律与摩尔”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1547,7 +1547,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Gotina 1 molekul-gram H2O 1 molekula avê nîşan dide."
         },
         {
-          "tr": "0 °C de 1 mol sıvı su 22.4 litre hacim kaplar.",
+          "tr": "0 °C'de 1 mol sıvı su 22.4 litre hacim kaplar.",
           "en": "At 0 °C, 1 mole of liquid water occupies 22.4 liters of volume.",
           "de": "Bei 0 °C nimmt 1 Mol flüssiges Wasser 22,4 Liter Volumen ein.",
           "fr": "À 0 °C, 1 mole d’eau liquide occupe 22,4 litres de volume.",
@@ -1602,14 +1602,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyanın Temel Kanunları ve Mol Kavramı konusunu işlerken 1 akb üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Basic Chemical Laws & The Mole, which statement regarding 1 akb represents the correct answer?",
-        "de": "Welche Aussage zu 1 Akb stellt im Kontext von Chemische Grundgesetze & Mol die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Lois Fondamentales & Mole, quelle proposition sur 1 clé USB constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Основные законы химии и моль», какой ответ относительно «1 акб» является правильным?",
-        "ar": "أثناء دراسة موضوع \"قوانين الكيمياء الأساسية والمول\" مخبرياً، أي إجابة بخصوص \"1 أك\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学基本定律与摩尔”实验探究与教学分析中，针对“1 AKB”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan bersiv derbarê \"1 akb\" de rast e?"
+        "tr": "Kimya dersinde Kimyanın Temel Kanunları ve Mol Kavramı ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Basic Chemical Laws & The Mole, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Chemische Grundgesetze & Mol: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Lois Fondamentales & Mole, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Основные законы химии и моль», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"قوانين الكيمياء الأساسية والمول\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学基本定律与摩尔”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1653,7 +1653,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Di şert û mercên jûreyê de (25 °C, 1 atm), 1 mol gaz qebareya 22,4 L digire."
         },
         {
-          "tr": "Bağıl atom kütlesi karbon-12 (12C) izotopunun kütlesinin 1/12 si temel alınarak hesaplanmıştır.",
+          "tr": "Bağıl atom kütlesi karbon-12 (12C) izotopunun kütlesinin 1/12'si temel alınarak hesaplanmıştır.",
           "en": "Relative atomic mass was calculated based on 1/12 of the mass of the carbon-12 (12C) isotope.",
           "de": "Die relative Atommasse wurde auf der Grundlage von 1/12 der Masse des Kohlenstoff-12-Isotops (12C) berechnet.",
           "fr": "La masse atomique relative a été calculée sur la base de 1/12 de la masse de l’isotope du carbone 12 (12C).",
@@ -1665,7 +1665,7 @@ export const unit06: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Bağıl atom kütlesi karbon-12 (12C) izotopunun kütlesinin 1/12 si temel alınarak hesaplanmıştır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Bağıl atom kütlesi karbon-12 (12C) izotopunun kütlesinin 1/12'si temel alınarak hesaplanmıştır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Relative atomic mass was calculated based on 1/12 of the mass of the carbon-12 (12C) isotope.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Die relative Atommasse wurde auf der Grundlage von 1/12 der Masse des Kohlenstoff-12-Isotops (12C) berechnet.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La masse atomique relative a été calculée sur la base de 1/12 de la masse de l’isotope du carbone 12 (12C).\". Notion fondamentale du programme officiel de chimie.",
@@ -1678,14 +1678,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin11",
       "stem": {
-        "tr": "Kimya dersinde Kimyanın Temel Kanunları ve Mol Kavramı ünitesi incelenirken Kütlenin Korunumu (Lavoisier) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Basic Chemical Laws & The Mole, which of the following propositions concerning Conservation of Mass (Lavoisier) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Chemische Grundgesetze & Mol: Welche Behauptung bezüglich Erhaltung der Masse (Lavoisier) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Lois Fondamentales & Mole, laquelle des affirmations suivantes concernant Conservation de la messe (Lavoisier) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Основные законы химии и моль», какое из следующих суждений о «Сохранение массы (Лавуазье)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"قوانين الكيمياء الأساسية والمول\"، أي من الأحكام التالية المتعلقة بـ \"حفظ الكتلة (لافوازييه)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学基本定律与摩尔”核心规律时，下列关于“质量守恒（拉瓦锡）”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\" tê kirin, kîjan daraza li ser \"Parastina Komkujiyê (Lavoisier)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyanın Temel Kanunları ve Mol Kavramı konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Basic Chemical Laws & The Mole?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Chemische Grundgesetze & Mol zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Lois Fondamentales & Mole ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Основные законы химии и моль»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"قوانين الكيمياء الأساسية والمول\"؟",
+        "zh": "根据“化学基本定律与摩尔”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\" de rast e?"
       },
       "options": [
         {
@@ -1699,7 +1699,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Rewşên ku gelek rêjeyên hewce ne hewce ne: Yên ku celebên hêmanên cihêreng (CO û NO) hene, yên ku 3 celeb hêman hene (H2SO4 û H2SO3), yên ku heman formula hêsan hene."
         },
         {
-          "tr": "0.5 mol CH4 gazı NK da 22.4 L hacim kaplar.",
+          "tr": "0.5 mol CH4 gazı NK'da 22.4 L hacim kaplar.",
           "en": "0.5 mol CH4 gas occupies 22.4 L volume in NK.",
           "de": "0,5 mol CH4-Gas nehmen in NK ein Volumen von 22,4 l ein.",
           "fr": "0,5 mole de gaz CH4 occupe un volume de 22,4 L dans NK.",
@@ -1754,18 +1754,18 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyanın Temel Kanunları ve Mol Kavramı konusundaki temel kimyasal kurallar çerçevesinde Sabit Oranlar (Proust) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Fixed Proportions (Proust) within the fundamental principles of Basic Chemical Laws & The Mole?",
-        "de": "Welche Aussage beschreibt das Konzept Feste Proportionen (Proust) im Rahmen von Chemische Grundgesetze & Mol am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Proportions fixes (Proust) selon les lois de Lois Fondamentales & Mole?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Фиксированные пропорции (Пруст)» в рамках темы «Основные законы химии и моль»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"النسب الثابتة (بروست)\" ضمن قواعد \"قوانين الكيمياء الأساسية والمول\"؟",
-        "zh": "根据“化学基本定律与摩尔”的基本化学原理，下列哪项阐述能最准确地界定“固定比例（普鲁斯特）”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Rêjeyên sabît (Proust)\" di çarçoveya prensîbên \"Zagonên Bingehîn ên Kîmyayê û Mol\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyanın Temel Kanunları ve Mol Kavramı sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Basic Chemical Laws & The Mole, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Chemische Grundgesetze & Mol: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Lois Fondamentales & Mole, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Основные законы химии и моль», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学基本定律与摩尔”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan daraz rast e?"
       },
       "options": [
         {
-          "tr": "0 °C de 1 mol sıvı su 22.4 litre hacim kaplar.",
+          "tr": "0 °C'de 1 mol sıvı su 22.4 litre hacim kaplar.",
           "en": "At 0 °C, 1 mole of liquid water occupies 22.4 liters of volume.",
           "de": "Bei 0 °C nimmt 1 Mol flüssiges Wasser 22,4 Liter Volumen ein.",
           "fr": "À 0 °C, 1 mole d’eau liquide occupe 22,4 litres de volume.",
@@ -1830,14 +1830,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyanın Temel Kanunları ve Mol Kavramı sorularında karşılaşılan Avogadro Sayısı (NA) konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Basic Chemical Laws & The Mole, which assertion regarding Avogadro's Number (NA) is correct?",
-        "de": "Welche Feststellung bezüglich Avogadros Zahl (NA) ist nach den chemischen Gesetzmäßigkeiten von Chemische Grundgesetze & Mol richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Lois Fondamentales & Mole, quelle affirmation concernant Numéro d'Avogadro (NA) est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Основные законы химии и моль», какое положение относительно «Число Авогадро (NA)» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي حكم متعلق بـ \"رقم أفوجادرو (نسبة غير معلومة)\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学基本定律与摩尔”经典考题中，下列有关“阿伏伽德罗常数 (NA)”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan daraza li ser \"Hejmara Avogadro (NA)\" rast e?"
+        "tr": "Aşağıda Kimyanın Temel Kanunları ve Mol Kavramı ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Basic Chemical Laws & The Mole, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Chemische Grundgesetze & Mol: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Lois Fondamentales & Mole, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Основные законы химии и моль», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学基本定律与摩尔”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1906,14 +1906,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin14",
       "stem": {
-        "tr": "Aşağıda Kimyanın Temel Kanunları ve Mol Kavramı ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Normal Koşullar (NK) ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Basic Chemical Laws & The Mole, which statement about Normal Conditions (NC) is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Chemische Grundgesetze & Mol: Welche Aussage über Normale Bedingungen (NC) ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Lois Fondamentales & Mole, quelle affirmation relative à Conditions normales (NC) est exacte?",
-        "ru": "На основе фундаментальных положений темы «Основные законы химии и моль», какое суждение о «Нормальные условия (NC)» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي عبارة حول \"الظروف العادية (NC)\" صحيحة؟",
-        "zh": "基于“化学基本定律与摩尔”的基础化学知识体系，下列关于“正常条件 (NC)”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\", kîjan gotin derbarê \"Şertên Normal (NC)\" de rast e?"
+        "tr": "Kimyanın Temel Kanunları ve Mol Kavramı konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Basic Chemical Laws & The Mole, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Chemische Grundgesetze & Mol: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Lois Fondamentales & Mole, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Основные законы химии и моль», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"قوانين الكيمياء الأساسية والمول\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学基本定律与摩尔”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1947,7 +1947,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Hejmara molan bi girseya ku bi girseya molarê ve zêde dibe ye."
         },
         {
-          "tr": "0.5 mol CH4 gazı NK da 11.2 litre hacim kaplar ve 2.5 mol atom içerir (0.5 mol C + 2.0 mol H).",
+          "tr": "0.5 mol CH4 gazı NK'da 11.2 litre hacim kaplar ve 2.5 mol atom içerir (0.5 mol C + 2.0 mol H).",
           "en": "0.5 mol CH4 gas occupies 11.2 liters of volume in NK and contains 2.5 mol atoms (0.5 mol C + 2.0 mol H).",
           "de": "0,5 Mol CH4-Gas nimmt in NK 11,2 Liter Volumen ein und enthält 2,5 Mol-Atome (0,5 Mol C + 2,0 Mol H).",
           "fr": "0,5 mole de gaz CH4 occupe 11,2 litres de volume dans NK et contient 2,5 moles d'atomes (0,5 mole de C + 2,0 moles de H).",
@@ -1969,7 +1969,7 @@ export const unit06: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"0.5 mol CH4 gazı NK da 11.2 litre hacim kaplar ve 2.5 mol atom içerir (0.5 mol C + 2.0 mol H).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"0.5 mol CH4 gazı NK'da 11.2 litre hacim kaplar ve 2.5 mol atom içerir (0.5 mol C + 2.0 mol H).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"0.5 mol CH4 gas occupies 11.2 liters of volume in NK and contains 2.5 mol atoms (0.5 mol C + 2.0 mol H).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"0,5 Mol CH4-Gas nimmt in NK 11,2 Liter Volumen ein und enthält 2,5 Mol-Atome (0,5 Mol C + 2,0 Mol H).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"0,5 mole de gaz CH4 occupe 11,2 litres de volume dans NK et contient 2,5 moles d'atomes (0,5 mole de C + 2,0 moles de H).\". Notion fondamentale du programme officiel de chimie.",
@@ -1982,14 +1982,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin15",
       "stem": {
-        "tr": "Kimyanın Temel Kanunları ve Mol Kavramı konusu kapsamında Bağıl Atom Kütlesi ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Basic Chemical Laws & The Mole, which of the following findings regarding Relative Atomic Mass is scientifically verified?",
-        "de": "Im Rahmen der Einheit Chemische Grundgesetze & Mol: Welcher der folgenden Befunde zu Relative Atommasse ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Lois Fondamentales & Mole, laquelle des constatations suivantes concernant Masse atomique relative est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Основные законы химии и моль», какой из следующих выводов относительно «Относительная атомная масса» научно подтверждён?",
-        "ar": "في سياق موضوع \"قوانين الكيمياء الأساسية والمول\"، أي من النتائج التالية المتعلقة بـ \"الكتلة الذرية النسبية\" مثبتة علمياً؟",
-        "zh": "在“化学基本定律与摩尔”主题范畴内，下列关于“相对原子质量”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan ji van encamên li ser \"Girseya Atomî ya nisbî\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyanın Temel Kanunları ve Mol Kavramı ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Basic Chemical Laws & The Mole, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Chemische Grundgesetze & Mol: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Lois Fondamentales & Mole, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Основные законы химии и моль», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学基本定律与摩尔”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2033,7 +2033,7 @@ export const unit06: ChemistryUnitSeedData = {
           "ku": "Di navbera FeO û Fe2O3 de rêjeyek pirjimar tune."
         },
         {
-          "tr": "Katı ve sıvı maddeler için NK da 22.4 L hacim kuralı GEÇERLİ DEĞİLDİR; sadece gazlar içindir.",
+          "tr": "Katı ve sıvı maddeler için NK'da 22.4 L hacim kuralı GEÇERLİ DEĞİLDİR; sadece gazlar içindir.",
           "en": "For solid and liquid substances, the 22.4 L volume rule in NC does NOT apply; For gases only.",
           "de": "Für feste und flüssige Stoffe gilt die 22,4-L-Volumenregel in NC NICHT; Nur für Gase.",
           "fr": "Pour les substances solides et liquides, la règle du volume de 22,4 L en NC ne s'applique PAS ; Pour les gaz uniquement.",
@@ -2045,7 +2045,7 @@ export const unit06: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Katı ve sıvı maddeler için NK da 22.4 L hacim kuralı GEÇERLİ DEĞİLDİR; sadece gazlar içindir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Katı ve sıvı maddeler için NK'da 22.4 L hacim kuralı GEÇERLİ DEĞİLDİR; sadece gazlar içindir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"For solid and liquid substances, the 22.4 L volume rule in NC does NOT apply; For gases only.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Für feste und flüssige Stoffe gilt die 22,4-L-Volumenregel in NC NICHT; Nur für Gase.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Pour les substances solides et liquides, la règle du volume de 22,4 L en NC ne s'applique PAS ; Pour les gaz uniquement.\". Notion fondamentale du programme officiel de chimie.",
@@ -2058,14 +2058,14 @@ export const unit06: ChemistryUnitSeedData = {
     {
       "id": "u06-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyanın Temel Kanunları ve Mol Kavramı ünitesinde ele alınan Atom-Gram hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Basic Chemical Laws & The Mole, which statement about Atom-Gram is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Chemische Grundgesetze & Mol: Welche Aussage über Atom-Gramm ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Lois Fondamentales & Mole, quelle affirmation relative à Atome-gramme est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Основные законы химии и моль», какое утверждение о «Атом-грамм» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"قوانين الكيمياء الأساسية والمول\"، أي عبارة حول \"ذرة جرام\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学基本定律与摩尔”单元中关于“原子图谱”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\", kîjan gotin li ser \"Atom-Gram\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyanın Temel Kanunları ve Mol Kavramı konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Basic Chemical Laws & The Mole, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Chemische Grundgesetze & Mol die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Lois Fondamentales & Mole, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Основные законы химии и моль», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"قوانين الكيمياء الأساسية والمول\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学基本定律与摩尔”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Zagonên Bingehîn ên Kîmyayê û Mol\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

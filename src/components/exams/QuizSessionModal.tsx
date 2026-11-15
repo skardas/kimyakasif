@@ -19,6 +19,7 @@ import type { ExamResultRecord } from '../../store/useAppStore';
 import { sfx } from '../../audio/sfx';
 import { calculateOsymNet, estimateTgPercentile, type TgPercentileResult } from '../../engine/mockExamCatalog';
 import { ChemicalDiagram } from '../diagrams/ChemicalDiagram';
+import { formatChemText } from '../common/ChemFormula';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
 
 export interface QuizSessionModalProps {
@@ -628,7 +629,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                     whiteSpace: 'pre-line',
                   }}
                 >
-                  {currentQ.stem}
+                  {formatChemText(currentQ.stem)}
                 </div>
 
                 {/* Options List (A-E) */}
@@ -683,7 +684,9 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                         onClick={() => handleSelectOption(optIdx)}
                       >
                         <div className="option-key-badge">{optionLetter}</div>
-                        <div className="option-text">{optText}</div>
+                        <div className="option-text">
+                          {formatChemText(optText)}
+                        </div>
                       </button>
                     );
                   })}
@@ -725,7 +728,7 @@ export const QuizSessionModal: React.FC<QuizSessionModalProps> = ({
                       )}
                     </div>
                     <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
-                      {currentQ.explanation}
+                      {formatChemText(currentQ.explanation)}
                     </p>
 
                     {/* ÖSYM Tips if available */}

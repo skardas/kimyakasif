@@ -116,7 +116,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u01-hs3',
         pinNumber: 3,
-        position: [1.4, 0.7, 0.0],
+        position: [1.0, 0.15, 0.0],
         color: '#38bdf8',
         badgeLabel: "Soğutucu",
         title: { tr: "Liebig Geri Soğutucusu", en: "Liebig Condenser", de: "Liebigkühler", fr: "Réfrigérant de Liebig", ru: "Холодильник Либиха", ar: "مكثف ليبيغ", zh: "李比希冷凝管", ku: "Sarisoxera Liebig" },
@@ -294,7 +294,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
         title: { tr: "Sodyum Katyonu (Na⁺)", en: "Sodium Cation (Na⁺)", de: "Natrium-Kation (Na⁺)", fr: "Cation sodium (Na⁺)", ru: "Катион натрия (Na⁺)", ar: "كاتيون الصوديوم (Na⁺)", zh: "钠阳离子（Na⁺）", ku: "Katyona Sodyûmê (Na⁺)" },
         description: { tr: "Mor küre (102 pm). Nötr Na atomu (186 pm) bir elektron verdiğinde katyon çapı belirgin şekilde küçülür; çünkü proton/elektron oranı (11/10) artar ve çekirdeğin elektron başına çekim gücü yükselir.", en: "Purple sphere (102 pm). When a neutral Na atom loses its 3s valence electron, its ionic radius shrinks dramatically due to increased effective nuclear charge (Z_eff) per remaining electron.", de: "Lila Kugel (102 pm). Durch die Abgabe des Valenzelektrons sinkt der Radius drastisch, da die effektive Kernladung pro Elektron steigt.", fr: "Sphère violette (102 pm). La perte d'un électron réduit considérablement le rayon par augmentation de la charge nucléaire effective par électron.", ru: "Фиолетовая сфера (102 пм). При отдаче валентного электрона радиус катиона резко уменьшается из-за увеличения эффективного заряда ядра на электрон.", ar: "كرة بنفسجية (102 بيكومتر). عند فقد إلكترون التكافؤ يتقلص نصف قطر الكاتيون بشكل كبير لزيادة جذب النواة الفعال للإلكترونات المتبقية.", zh: "紫色球体（离子半径102 pm）。中性钠原子失去其最外层电子形成阳离子后，有效核电荷增大，剩余电子云受到更强吸引，半径急剧缩小。", ku: "Goka binefşî (102 pm). Dema atoma Na elektronê xwe dide, tîroja wê ya îyonî pir piçûk dibe ji ber ku kişandina dendikê zêde dibe." },
         examFact: { tr: "YKS Kazanım Tuzağı: İzoelektronik taneciklerde (₁₁Na⁺, ₁₂Mg²⁺, ₉F⁻, ₈O²⁻) proton sayısı arttıkça iyon yarıçapı KÜÇÜLÜR. Dolayısıyla yarıçap sıralaması: O²⁻ > F⁻ > Na⁺ > Mg²⁺ şeklindedir (2018-AYT Çıkmış Soru).", en: "Official AYT Trap: In isoelectronic ions (₁₁Na⁺, ₁₂Mg²⁺, ₉F⁻, ₈O²⁻), ionic radius DECREASES as atomic number increases: O²⁻ > F⁻ > Na⁺ > Mg²⁺ (2018 AYT Question).", de: "AYT-Prüfungsfalle: Bei isoelektronischen Ionen nimmt der Radius mit steigender Protonenzahl AB: O²⁻ > F⁻ > Na⁺ > Mg²⁺.", fr: "Piège AYT: Pour des espèces isoélectroniques, le rayon diminue lorsque le numéro atomique Z augmente : O²⁻ > F⁻ > Na⁺ > Mg²⁺.", ru: "Ловушка экзамена AYT: В изоэлектронных ионах радиус УМЕНЬШАЕТСЯ с ростом заряда ядра: O²⁻ > F⁻ > Na⁺ > Mg²⁺ (вопрос AYT 2018).", ar: "فخ وزاري متكرر: في الأيونات متساوية الإلكترونات، يصغر نصف القطر كلما زاد عدد البروتونات: O²⁻ > F⁻ > Na⁺ > Mg²⁺.", zh: "AYT经典真题考点：在等电子微粒中（均为10个电子），质子数越多，核引力越强，离子半径越小：O²⁻ > F⁻ > Na⁺ > Mg²⁺。", ku: "Xefika Ezmûnê: Di îyonên hejmara elektronên wan wekhev de, her ku hejmara protonan zêde dibe tîroja îyonî PIÇÛK DIBE." },
-        name: { tr: "Sodyum Katyonu (Na⁺)", en: "Sodium Cation (Na⁺)", de: "Natrium-Kation (Na⁺)", fr: "Cation sodium (Na⁺)", ru: "Катион натрия (Na⁺)", ar: "كاتيون الصوديوم (Na⁺)", zh: "钠阳离子（Na⁺）", ku: "Katyona Sodyûmê (Na⁺)" },
+        name: { tr: "Sodyum Katyonu (Na+ / Na⁺)", en: "Sodium Cation (Na⁺)", de: "Natrium-Kation (Na⁺)", fr: "Cation sodium (Na⁺)", ru: "Катион натрия (Na⁺)", ar: "كاتيون الصوديوم (Na⁺)", zh: "钠阳离子（Na⁺）", ku: "Katyona Sodyûmê (Na⁺)" },
         role: { tr: "Sodyum Katyonu (Na⁺)", en: "Sodium Cation (Na⁺)", de: "Natrium-Kation (Na⁺)", fr: "Cation sodium (Na⁺)", ru: "Катион натрия (Na⁺)", ar: "كاتيون الصوديوم (Na⁺)", zh: "钠阳离子（Na⁺）", ku: "Katyona Sodyûmê (Na⁺)" },
         quickHint: { tr: "Sodyum Katyonu (Na⁺)", en: "Sodium Cation (Na⁺)", de: "Natrium-Kation (Na⁺)", fr: "Cation sodium (Na⁺)", ru: "Катион натрия (Na⁺)", ar: "كاتيون الصوديوم (Na⁺)", zh: "钠阳离子（Na⁺）", ku: "Katyona Sodyûmê (Na⁺)" },
         osymExamFact: { tr: "YKS Kazanım Tuzağı: İzoelektronik taneciklerde (₁₁Na⁺, ₁₂Mg²⁺, ₉F⁻, ₈O²⁻) proton sayısı arttıkça iyon yarıçapı KÜÇÜLÜR. Dolayısıyla yarıçap sıralaması: O²⁻ > F⁻ > Na⁺ > Mg²⁺ şeklindedir (2018-AYT Çıkmış Soru).", en: "Official AYT Trap: In isoelectronic ions (₁₁Na⁺, ₁₂Mg²⁺, ₉F⁻, ₈O²⁻), ionic radius DECREASES as atomic number increases: O²⁻ > F⁻ > Na⁺ > Mg²⁺ (2018 AYT Question).", de: "AYT-Prüfungsfalle: Bei isoelektronischen Ionen nimmt der Radius mit steigender Protonenzahl AB: O²⁻ > F⁻ > Na⁺ > Mg²⁺.", fr: "Piège AYT: Pour des espèces isoélectroniques, le rayon diminue lorsque le numéro atomique Z augmente : O²⁻ > F⁻ > Na⁺ > Mg²⁺.", ru: "Ловушка экзамена AYT: В изоэлектронных ионах радиус УМЕНЬШАЕТСЯ с ростом заряда ядра: O²⁻ > F⁻ > Na⁺ > Mg²⁺ (вопрос AYT 2018).", ar: "فخ وزاري متكرر: في الأيونات متساوية الإلكترونات، يصغر نصف القطر كلما زاد عدد البروتونات: O²⁻ > F⁻ > Na⁺ > Mg²⁺.", zh: "AYT经典真题考点：在等电子微粒中（均为10个电子），质子数越多，核引力越强，离子半径越小：O²⁻ > F⁻ > Na⁺ > Mg²⁺。", ku: "Xefika Ezmûnê: Di îyonên hejmara elektronên wan wekhev de, her ku hejmara protonan zêde dibe tîroja îyonî PIÇÛK DIBE." },
@@ -308,7 +308,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
         title: { tr: "Klor Anyonu (Cl⁻)", en: "Chloride Anion (Cl⁻)", de: "Chlorid-Anion (Cl⁻)", fr: "Anion chlorure (Cl⁻)", ru: "Хлорид-анион (Cl⁻)", ar: "أنيون الكلوريد (Cl⁻)", zh: "氯阴离子（Cl⁻）", ku: "Anyona Klorê (Cl⁻)" },
         description: { tr: "Yeşil küre (181 pm). Klor atomu (99 pm) bir elektron alıp sekizli oktetini tamamladığında, elektron başına düşen çekirdek çekim kuvveti azalır ve elektron-elektron itmesi nedeniyle iyon hacmi neredeyse iki katına çıkar.", en: "Green sphere (181 pm). Gaining an electron completes the chloride octet; increased electron-electron repulsion and lower nuclear pull per electron expand the ionic radius to nearly double that of the neutral atom.", de: "Grüne Kugel (181 pm). Die Aufnahme eines Elektrons führt durch Elektron-Elektron-Abstoßung zu einer Verdopplung des Atomradius.", fr: "Sphère verte (181 pm). Le gain d'un électron et la répulsion électronique mutuelle dilatent le nuage électronique à presque le double du rayon atomique.", ru: "Зеленая сфера (181 пм). Приобретение электрона приводит к взаимному отталкиванию электронной оболочки, удваивая радиус по сравнению с нейтральным атомом.", ar: "كرة خضراء (181 بيكومتر). يؤدي اكتساب إلكترون وتنافر الإلكترونات في المدار الخارجي إلى تضاعف حجم الأنيون مقارنة بالذرة المتعادلة.", zh: "绿色球体（离子半径181 pm）。氯原子获得一个电子达到八隅体稳定结构后，电子间静电斥力增强，使阴离子外壳膨胀至中性原子半径的近两倍。", ku: "Goka kesk (181 pm). Dema atoma klorê elektronekê digire, ji ber dehfdana elektronan qebareya îyonê hema hema du qat zêde dibe." },
         examFact: { tr: "ÖSYM Prensibi: İyonik kristallerde 'molekül' kavramı YOKTUR! NaCl formülü bir molekülü değil, sonsuz örgüdeki en küçük stokiyometrik tam sayı oranını (Birim Hücre) ifade eder.", en: "Vital YKS Rule: Ionic crystals NEVER contain molecules! The formula NaCl denotes the simplest empirical stoichiometric ratio of the crystal lattice (Formula Unit), not an isolated molecule.", de: "Wichtige Prüfungsregel: In Ionenkristallen gibt es KEINE Moleküle! Die Formel NaCl beschreibt nur das stöchiometrische Verhältnis in der Formeleinheit.", fr: "Règle cruciale: Il n'y a AUCUNE molécule dans un cristal ionique ! La formule NaCl ne représente qu'une unité formulaire stœchiométrique minimale.", ru: "Фундаментальное правило: В ионных кристаллах НЕТ молекул! Формула NaCl обозначает не отдельную молекулу, а формульную единицу бесконечной решетки.", ar: "قاعدة امتحانية حتمية: لا يوجد مفهوم 'جزيء' في البلورات الأيونية مطلقاً! الصيغة NaCl تمثل أصغر نسبة عددية صحيحة في الشبكة (وحدة صيغة).", zh: "极重要应试定则：离子晶体中绝不存在单个的“独立分子”！化学式NaCl仅代表晶体无限三维骨架中阴阳离子的最简整数比（化学式单元）。", ku: "Rêzika Bingehîn: Di krîstalên îyonî de têgeha 'molekul' TÛNE YE! Formula NaCl tenê rêjeya herî piçûk a di şaneya yekîn de nîşan dide." },
-        name: { tr: "Klor Anyonu (Cl⁻)", en: "Chloride Anion (Cl⁻)", de: "Chlorid-Anion (Cl⁻)", fr: "Anion chlorure (Cl⁻)", ru: "Хлорид-анион (Cl⁻)", ar: "أنيون الكلوريد (Cl⁻)", zh: "氯阴离子（Cl⁻）", ku: "Anyona Klorê (Cl⁻)" },
+        name: { tr: "Klor Anyonu (Cl- / Cl⁻)", en: "Chloride Anion (Cl⁻)", de: "Chlorid-Anion (Cl⁻)", fr: "Anion chlorure (Cl⁻)", ru: "Хлорид-анион (Cl⁻)", ar: "أنيون الكلوريد (Cl⁻)", zh: "氯阴离子（Cl⁻）", ku: "Anyona Klorê (Cl⁻)" },
         role: { tr: "Klor Anyonu (Cl⁻)", en: "Chloride Anion (Cl⁻)", de: "Chlorid-Anion (Cl⁻)", fr: "Anion chlorure (Cl⁻)", ru: "Хлорид-анион (Cl⁻)", ar: "أنيون الكلوريد (Cl⁻)", zh: "氯阴离子（Cl⁻）", ku: "Anyona Klorê (Cl⁻)" },
         quickHint: { tr: "Klor Anyonu (Cl⁻)", en: "Chloride Anion (Cl⁻)", de: "Chlorid-Anion (Cl⁻)", fr: "Anion chlorure (Cl⁻)", ru: "Хлорид-анион (Cl⁻)", ar: "أنيون الكلوريد (Cl⁻)", zh: "氯阴离子（Cl⁻）", ku: "Anyona Klorê (Cl⁻)" },
         osymExamFact: { tr: "ÖSYM Prensibi: İyonik kristallerde 'molekül' kavramı YOKTUR! NaCl formülü bir molekülü değil, sonsuz örgüdeki en küçük stokiyometrik tam sayı oranını (Birim Hücre) ifade eder.", en: "Vital YKS Rule: Ionic crystals NEVER contain molecules! The formula NaCl denotes the simplest empirical stoichiometric ratio of the crystal lattice (Formula Unit), not an isolated molecule.", de: "Wichtige Prüfungsregel: In Ionenkristallen gibt es KEINE Moleküle! Die Formel NaCl beschreibt nur das stöchiometrische Verhältnis in der Formeleinheit.", fr: "Règle cruciale: Il n'y a AUCUNE molécule dans un cristal ionique ! La formule NaCl ne représente qu'une unité formulaire stœchiométrique minimale.", ru: "Фундаментальное правило: В ионных кристаллах НЕТ молекул! Формула NaCl обозначает не отдельную молекулу, а формульную единицу бесконечной решетки.", ar: "قاعدة امتحانية حتمية: لا يوجد مفهوم 'جزيء' في البلورات الأيونية مطلقاً! الصيغة NaCl تمثل أصغر نسبة عددية صحيحة في الشبكة (وحدة صيغة).", zh: "极重要应试定则：离子晶体中绝不存在单个的“独立分子”！化学式NaCl仅代表晶体无限三维骨架中阴阳离子的最简整数比（化学式单元）。", ku: "Rêzika Bingehîn: Di krîstalên îyonî de têgeha 'molekul' TÛNE YE! Formula NaCl tenê rêjeya herî piçûk a di şaneya yekîn de nîşan dide." },
@@ -874,7 +874,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u11-hs2',
         pinNumber: 2,
-        position: [0.0, 0.7, 0.0],
+        position: [1.8, 0.85, 0.0],
         color: '#38bdf8',
         badgeLabel: "p_z Lobu",
         title: { tr: "Dambıl p_z Orbitali ve Dalga Fazı (+ / -)", en: "Dumbbell p_z Orbital & Wave Function Phase (+ / -)", de: "Hantelförmiges p_z-Orbital und Wellenphasen", fr: "Orbitale p_z en sablier et phases d'onde (+ / -)", ru: "Гантелеобразная p_z-орбиталь и фазы волновой функции", ar: "مدار p_z المغزلي وأطوار الدالة الموجية", zh: "哑铃形2p_z原子轨道与正负波函数相位", ku: "Orbîtala p_z ya Mîna Heltê û Qonaxên Pêlê" },
@@ -888,7 +888,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u11-hs3',
         pinNumber: 3,
-        position: [0.0, 0.0, 0.0],
+        position: [1.8, 0.0, 0.0],
         color: '#38bdf8',
         badgeLabel: "Düğüm Düzlemi",
         title: { tr: "Düğüm Düzlemi (Nodal Plane, ψ² = 0)", en: "Angular Nodal Plane (ψ² = 0 Probability Density)", de: "Knotenebene (Aufenthaltswahrscheinlichkeit = 0)", fr: "Plan nodal angulaire (ψ² = 0)", ru: "Узловая плоскость (плотность вероятности ψ² = 0)", ar: "مستوى العقدة (احتمالية تواجد الإلكترون = 0)", zh: "角向对称节面（电子几率密度严格为零）", ku: "Rûbera Nodal (ψ² = 0)" },
@@ -1556,7 +1556,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u19-hs2',
         pinNumber: 2,
-        position: [0.0, -0.6, 0.0],
+        position: [0.0, -1.8, 0.0],
         color: '#38bdf8',
         badgeLabel: "Erlenmayer",
         title: { tr: "Erlenmayer, Titre Edilen Asit ve İndikatör", en: "Erlenmeyer Flask, Analyte Acid & Indicator", de: "Erlenmeyerkolben mit Analyten und Indikator", fr: "Erlenmeyer, acide à doser et indicateur", ru: "Колба Эрленмейера с аналитом и индикатором", ar: "دورق إرلنماير، الحمض المراد معايرته والمشعر", zh: "锥形瓶、待测未知浓度酸液与酚酞指示剂", ku: "Bûlona Erlenmeyer, Asîd û Nîşander" },
@@ -1570,7 +1570,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u19-hs3',
         pinNumber: 3,
-        position: [0.0, -0.2, 0.0],
+        position: [0.0, -2.1, 0.0],
         color: '#38bdf8',
         badgeLabel: "pH = 7.00",
         title: { tr: "Eşdeğerlik Noktası ve Fenolftalein Renk Dönüşümü", en: "Equivalence Point (pH 7.00) & Phenolphthalein Flash", de: "Äquivalenzpunkt (pH 7,00) und Farbumschlag", fr: "Point d'équivalence (pH 7,00) et virage de couleur", ru: "Точка эквивалентности (pH 7.00) и изменение окраски", ar: "نقطة التكافؤ (pH = 7.00) ونقطة تحول لون المشعر", zh: "化学计量等当点（pH = 7.00）与酚酞微滴粉红突变", ku: "Xala Wekheviyê (pH = 7.00) û Guherîna Rengê" },
@@ -1866,7 +1866,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u23-hs1',
         pinNumber: 1,
-        position: [-1.6, 0.0, 0.0],
+        position: [-2.2, 0.0, 0.0],
         color: '#38bdf8',
         badgeLabel: "sp (180°)",
         title: { tr: "sp Hibritleşmesi ve Doğrusal Geometri (180°)", en: "sp Hybridization & Linear Geometry (180°)", de: "sp-Hybridisierung und lineare Geometrie (180°)", fr: "Hybridation sp et géométrie linéaire (180°)", ru: "sp-гибридизация и линейная геометрия (180°)", ar: "تهجين sp والهندسة الخطية (180°)", zh: "sp线性杂化轨道（180°夹角，50% s成分）", ku: "Hîbrîdbûna sp û Geometriya Rast (180°)" },
@@ -1894,7 +1894,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u23-hs3',
         pinNumber: 3,
-        position: [1.6, 0.0, 0.0],
+        position: [2.2, 0.0, 0.0],
         color: '#38bdf8',
         badgeLabel: "sp³ (109.5°)",
         title: { tr: "sp³ Hibritleşmesi ve Düzgün Dörtyüzlü (109.5°)", en: "sp³ Hybridization & Regular Tetrahedron (109.5°)", de: "sp³-Hybridisierung und Tetraeder (109,5°)", fr: "Hybridation sp³ et tétraèdre régulier (109,5°)", ru: "sp³-гибридизация и правильный тетраэдр (109.5°)", ar: "تهجين sp³ ورباعي الأوجه المنتظم (109.5°)", zh: "sp³空间正四面体杂化轨道（109.5°对称立体构型）", ku: "Hîbrîdbûna sp³ û Çarçikê Rast (109.5°)" },
@@ -1928,7 +1928,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u23-hs4',
         pinNumber: 1,
-        position: [-2.0, 0.0, 0.0],
+        position: [-2.2, 0.0, 0.0],
         color: '#38bdf8',
         badgeLabel: "BF₃ (AX₃ 120°)",
         title: { tr: "Bor Trifluorür (BF₃, Düzlem Üçgen, 120°)", en: "Boron Trifluoride (BF₃, Trigonal Planar, AX₃, 120°)", de: "Bortrifluorid (BF₃, Trigonal-planar, 120°)", fr: "Trifluorure de bore (BF₃, Plan trigonal, 120°)", ru: "Трифторид бора (BF₃, плоский треугольник, 120°)", ar: "ثلاثي فلوريد البورون (BF₃، مثلث مستوٍ، 120°)", zh: "三氟化硼（BF₃，AX₃平面正三角形，120°，缺电子八隅体）", ku: "Bor Trîfluorur (BF₃, Deşta Sêgoşeyî, 120°)" },
@@ -1956,7 +1956,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u23-hs6',
         pinNumber: 3,
-        position: [2.0, 0.0, 0.0],
+        position: [2.2, 0.0, 0.0],
         color: '#38bdf8',
         badgeLabel: "SF₆ (AX₆ 90°)",
         title: { tr: "Kükürt Hekzafluorür (SF₆, Düzgün Sekizyüzlü, AX₆, 90°)", en: "Sulfur Hexafluoride (SF₆, Octahedral, AX₆, 90°)", de: "Schwefelhexafluorid (SF₆, Oktaedrisch, AX₆, 90°)", fr: "Hexafluorure de soufre (SF₆, Octaédrique, AX₆, 90°)", ru: "Гексафторид серы (SF₆, октаэдрическая геометрия, 90°)", ar: "سداسي فلوريد الكبريت (SF₆، ثماني السطوح المنتظم، AX₆، 90°)", zh: "六氟化硫（SF₆，AX₆正八面体，90°严格正交，12电子超价稳定体系）", ku: "Kukurt Hekzafluorur (SF₆, Heştrû, AX₆, 90°)" },
@@ -2052,7 +2052,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u24-hs4',
         pinNumber: 1,
-        position: [-2.2, 0.0, 0.0],
+        position: [-2.4, 0.0, 0.0],
         color: '#38bdf8',
         badgeLabel: "Etan (C₂H₆)",
         title: { tr: "Etan (C₂H₆, Doymuş Alkan, sp³)", en: "Ethane (C₂H₆, Saturated Alkane, sp³)", de: "Ethan (C₂H₆, Gesättigtes Alkan, sp³)", fr: "Éthane (C₂H₆, Alcane saturé, sp³)", ru: "Этан (C₂H₆, предельный алкан, sp³)", ar: "الإيثان (C₂H₆، ألكان مشبع، sp³)", zh: "乙烷（C₂H₆，饱和烷烃，sp³杂化，σ键自由旋转）", ku: "Etan (C₂H₆, Alkanê Têr, sp³)" },
@@ -2080,7 +2080,7 @@ export const PRIMARY_32_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u24-hs6',
         pinNumber: 3,
-        position: [2.2, 0.0, 0.0],
+        position: [2.4, 0.0, 0.0],
         color: '#38bdf8',
         badgeLabel: "Etin (C₂H₂)",
         title: { tr: "Etin / Asetilen (C₂H₂, Alkin, sp, Üçlü Bağ)", en: "Ethyne / Acetylene (C₂H₂, Alkyne, sp, Triple Bond)", de: "Ethin / Acetylen (C₂H₂, Alkin, sp, Dreifachbindung)", fr: "Éthyne / Acétylène (C₂H₂, Alcyne, sp, triple liaison)", ru: "Этин / Ацетилен (C₂H₂, алкин, sp, тройная связь)", ar: "الإيثاين / الأسيتيلين (C₂H₂، ألكاين، sp، رابطة ثلاثية)", zh: "乙炔（C₂H₂，端基炔烃，sp杂化，120 pm三键极度紧凑与酸性氢）", ku: "Etîn / Asetîlen (C₂H₂, Alkîn, sp, Girêdana Sêyane)" },
@@ -2123,7 +2123,7 @@ export const LEGACY_CONTRACT_SCENES: ChemicalSceneSpec[] = [
         title: { tr: "Sodyum Katyonu (Na⁺)", en: "Sodium Cation (Na⁺)", de: "Natrium-Kation (Na⁺)", fr: "Cation sodium (Na⁺)", ru: "Катион натрия (Na⁺)", ar: "كاتيون الصوديوم (Na⁺)", zh: "钠阳离子（Na⁺）", ku: "Katyona Sodyûmê (Na⁺)" },
         description: { tr: "Mor küre (102 pm). Nötr Na atomu (186 pm) bir elektron verdiğinde katyon çapı belirgin şekilde küçülür; çünkü proton/elektron oranı (11/10) artar ve çekirdeğin elektron başına çekim gücü yükselir.", en: "Purple sphere (102 pm). When a neutral Na atom loses its 3s valence electron, its ionic radius shrinks dramatically due to increased effective nuclear charge (Z_eff) per remaining electron.", de: "Lila Kugel (102 pm). Durch die Abgabe des Valenzelektrons sinkt der Radius drastisch, da die effektive Kernladung pro Elektron steigt.", fr: "Sphère violette (102 pm). La perte d'un électron réduit considérablement le rayon par augmentation de la charge nucléaire effective par électron.", ru: "Фиолетовая сфера (102 пм). При отдаче валентного электрона радиус катиона резко уменьшается из-за увеличения эффективного заряда ядра на электрон.", ar: "كرة بنفسجية (102 بيكومتر). عند فقد إلكترون التكافؤ يتقلص نصف قطر الكاتيون بشكل كبير لزيادة جذب النواة الفعال للإلكترونات المتبقية.", zh: "紫色球体（离子半径102 pm）。中性钠原子失去其最外层电子形成阳离子后，有效核电荷增大，剩余电子云受到更强吸引，半径急剧缩小。", ku: "Goka binefşî (102 pm). Dema atoma Na elektronê xwe dide, tîroja wê ya îyonî pir piçûk dibe ji ber ku kişandina dendikê zêde dibe." },
         examFact: { tr: "YKS Kazanım Tuzağı: İzoelektronik taneciklerde (₁₁Na⁺, ₁₂Mg²⁺, ₉F⁻, ₈O²⁻) proton sayısı arttıkça iyon yarıçapı KÜÇÜLÜR. Dolayısıyla yarıçap sıralaması: O²⁻ > F⁻ > Na⁺ > Mg²⁺ şeklindedir (2018-AYT Çıkmış Soru).", en: "Official AYT Trap: In isoelectronic ions (₁₁Na⁺, ₁₂Mg²⁺, ₉F⁻, ₈O²⁻), ionic radius DECREASES as atomic number increases: O²⁻ > F⁻ > Na⁺ > Mg²⁺ (2018 AYT Question).", de: "AYT-Prüfungsfalle: Bei isoelektronischen Ionen nimmt der Radius mit steigender Protonenzahl AB: O²⁻ > F⁻ > Na⁺ > Mg²⁺.", fr: "Piège AYT: Pour des espèces isoélectroniques, le rayon diminue lorsque le numéro atomique Z augmente : O²⁻ > F⁻ > Na⁺ > Mg²⁺.", ru: "Ловушка экзамена AYT: В изоэлектронных ионах радиус УМЕНЬШАЕТСЯ с ростом заряда ядра: O²⁻ > F⁻ > Na⁺ > Mg²⁺ (вопрос AYT 2018).", ar: "فخ وزاري متكرر: في الأيونات متساوية الإلكترونات، يصغر نصف القطر كلما زاد عدد البروتونات: O²⁻ > F⁻ > Na⁺ > Mg²⁺.", zh: "AYT经典真题考点：在等电子微粒中（均为10个电子），质子数越多，核引力越强，离子半径越小：O²⁻ > F⁻ > Na⁺ > Mg²⁺。", ku: "Xefika Ezmûnê: Di îyonên hejmara elektronên wan wekhev de, her ku hejmara protonan zêde dibe tîroja îyonî PIÇÛK DIBE." },
-        name: { tr: "Sodyum Katyonu (Na⁺)", en: "Sodium Cation (Na⁺)", de: "Natrium-Kation (Na⁺)", fr: "Cation sodium (Na⁺)", ru: "Катион натрия (Na⁺)", ar: "كاتيون الصوديوم (Na⁺)", zh: "钠阳离子（Na⁺）", ku: "Katyona Sodyûmê (Na⁺)" },
+        name: { tr: "Sodyum Katyonu (Na+ / Na⁺)", en: "Sodium Cation (Na⁺)", de: "Natrium-Kation (Na⁺)", fr: "Cation sodium (Na⁺)", ru: "Катион натрия (Na⁺)", ar: "كاتيون الصوديوم (Na⁺)", zh: "钠阳离子（Na⁺）", ku: "Katyona Sodyûmê (Na⁺)" },
         role: { tr: "Sodyum Katyonu (Na⁺)", en: "Sodium Cation (Na⁺)", de: "Natrium-Kation (Na⁺)", fr: "Cation sodium (Na⁺)", ru: "Катион натрия (Na⁺)", ar: "كاتيون الصوديوم (Na⁺)", zh: "钠阳离子（Na⁺）", ku: "Katyona Sodyûmê (Na⁺)" },
         quickHint: { tr: "Sodyum Katyonu (Na⁺)", en: "Sodium Cation (Na⁺)", de: "Natrium-Kation (Na⁺)", fr: "Cation sodium (Na⁺)", ru: "Катион натрия (Na⁺)", ar: "كاتيون الصوديوم (Na⁺)", zh: "钠阳离子（Na⁺）", ku: "Katyona Sodyûmê (Na⁺)" },
         osymExamFact: { tr: "YKS Kazanım Tuzağı: İzoelektronik taneciklerde (₁₁Na⁺, ₁₂Mg²⁺, ₉F⁻, ₈O²⁻) proton sayısı arttıkça iyon yarıçapı KÜÇÜLÜR. Dolayısıyla yarıçap sıralaması: O²⁻ > F⁻ > Na⁺ > Mg²⁺ şeklindedir (2018-AYT Çıkmış Soru).", en: "Official AYT Trap: In isoelectronic ions (₁₁Na⁺, ₁₂Mg²⁺, ₉F⁻, ₈O²⁻), ionic radius DECREASES as atomic number increases: O²⁻ > F⁻ > Na⁺ > Mg²⁺ (2018 AYT Question).", de: "AYT-Prüfungsfalle: Bei isoelektronischen Ionen nimmt der Radius mit steigender Protonenzahl AB: O²⁻ > F⁻ > Na⁺ > Mg²⁺.", fr: "Piège AYT: Pour des espèces isoélectroniques, le rayon diminue lorsque le numéro atomique Z augmente : O²⁻ > F⁻ > Na⁺ > Mg²⁺.", ru: "Ловушка экзамена AYT: В изоэлектронных ионах радиус УМЕНЬШАЕТСЯ с ростом заряда ядра: O²⁻ > F⁻ > Na⁺ > Mg²⁺ (вопрос AYT 2018).", ar: "فخ وزاري متكرر: في الأيونات متساوية الإلكترونات، يصغر نصف القطر كلما زاد عدد البروتونات: O²⁻ > F⁻ > Na⁺ > Mg²⁺.", zh: "AYT经典真题考点：在等电子微粒中（均为10个电子），质子数越多，核引力越强，离子半径越小：O²⁻ > F⁻ > Na⁺ > Mg²⁺。", ku: "Xefika Ezmûnê: Di îyonên hejmara elektronên wan wekhev de, her ku hejmara protonan zêde dibe tîroja îyonî PIÇÛK DIBE." },
@@ -2137,7 +2137,7 @@ export const LEGACY_CONTRACT_SCENES: ChemicalSceneSpec[] = [
         title: { tr: "Klor Anyonu (Cl⁻)", en: "Chloride Anion (Cl⁻)", de: "Chlorid-Anion (Cl⁻)", fr: "Anion chlorure (Cl⁻)", ru: "Хлорид-анион (Cl⁻)", ar: "أنيون الكلوريد (Cl⁻)", zh: "氯阴离子（Cl⁻）", ku: "Anyona Klorê (Cl⁻)" },
         description: { tr: "Yeşil küre (181 pm). Klor atomu (99 pm) bir elektron alıp sekizli oktetini tamamladığında, elektron başına düşen çekirdek çekim kuvveti azalır ve elektron-elektron itmesi nedeniyle iyon hacmi neredeyse iki katına çıkar.", en: "Green sphere (181 pm). Gaining an electron completes the chloride octet; increased electron-electron repulsion and lower nuclear pull per electron expand the ionic radius to nearly double that of the neutral atom.", de: "Grüne Kugel (181 pm). Die Aufnahme eines Elektrons führt durch Elektron-Elektron-Abstoßung zu einer Verdopplung des Atomradius.", fr: "Sphère verte (181 pm). Le gain d'un électron et la répulsion électronique mutuelle dilatent le nuage électronique à presque le double du rayon atomique.", ru: "Зеленая сфера (181 пм). Приобретение электрона приводит к взаимному отталкиванию электронной оболочки, удваивая радиус по сравнению с нейтральным атомом.", ar: "كرة خضراء (181 بيكومتر). يؤدي اكتساب إلكترون وتنافر الإلكترونات في المدار الخارجي إلى تضاعف حجم الأنيون مقارنة بالذرة المتعادلة.", zh: "绿色球体（离子半径181 pm）。氯原子获得一个电子达到八隅体稳定结构后，电子间静电斥力增强，使阴离子外壳膨胀至中性原子半径的近两倍。", ku: "Goka kesk (181 pm). Dema atoma klorê elektronekê digire, ji ber dehfdana elektronan qebareya îyonê hema hema du qat zêde dibe." },
         examFact: { tr: "ÖSYM Prensibi: İyonik kristallerde 'molekül' kavramı YOKTUR! NaCl formülü bir molekülü değil, sonsuz örgüdeki en küçük stokiyometrik tam sayı oranını (Birim Hücre) ifade eder.", en: "Vital YKS Rule: Ionic crystals NEVER contain molecules! The formula NaCl denotes the simplest empirical stoichiometric ratio of the crystal lattice (Formula Unit), not an isolated molecule.", de: "Wichtige Prüfungsregel: In Ionenkristallen gibt es KEINE Moleküle! Die Formel NaCl beschreibt nur das stöchiometrische Verhältnis in der Formeleinheit.", fr: "Règle cruciale: Il n'y a AUCUNE molécule dans un cristal ionique ! La formule NaCl ne représente qu'une unité formulaire stœchiométrique minimale.", ru: "Фундаментальное правило: В ионных кристаллах НЕТ молекул! Формула NaCl обозначает не отдельную молекулу, а формульную единицу бесконечной решетки.", ar: "قاعدة امتحانية حتمية: لا يوجد مفهوم 'جزيء' في البلورات الأيونية مطلقاً! الصيغة NaCl تمثل أصغر نسبة عددية صحيحة في الشبكة (وحدة صيغة).", zh: "极重要应试定则：离子晶体中绝不存在单个的“独立分子”！化学式NaCl仅代表晶体无限三维骨架中阴阳离子的最简整数比（化学式单元）。", ku: "Rêzika Bingehîn: Di krîstalên îyonî de têgeha 'molekul' TÛNE YE! Formula NaCl tenê rêjeya herî piçûk a di şaneya yekîn de nîşan dide." },
-        name: { tr: "Klor Anyonu (Cl⁻)", en: "Chloride Anion (Cl⁻)", de: "Chlorid-Anion (Cl⁻)", fr: "Anion chlorure (Cl⁻)", ru: "Хлорид-анион (Cl⁻)", ar: "أنيون الكلوريد (Cl⁻)", zh: "氯阴离子（Cl⁻）", ku: "Anyona Klorê (Cl⁻)" },
+        name: { tr: "Klor Anyonu (Cl- / Cl⁻)", en: "Chloride Anion (Cl⁻)", de: "Chlorid-Anion (Cl⁻)", fr: "Anion chlorure (Cl⁻)", ru: "Хлорид-анион (Cl⁻)", ar: "أنيون الكلوريد (Cl⁻)", zh: "氯阴离子（Cl⁻）", ku: "Anyona Klorê (Cl⁻)" },
         role: { tr: "Klor Anyonu (Cl⁻)", en: "Chloride Anion (Cl⁻)", de: "Chlorid-Anion (Cl⁻)", fr: "Anion chlorure (Cl⁻)", ru: "Хлорид-анион (Cl⁻)", ar: "أنيون الكلوريد (Cl⁻)", zh: "氯阴离子（Cl⁻）", ku: "Anyona Klorê (Cl⁻)" },
         quickHint: { tr: "Klor Anyonu (Cl⁻)", en: "Chloride Anion (Cl⁻)", de: "Chlorid-Anion (Cl⁻)", fr: "Anion chlorure (Cl⁻)", ru: "Хлорид-анион (Cl⁻)", ar: "أنيون الكلوريد (Cl⁻)", zh: "氯阴离子（Cl⁻）", ku: "Anyona Klorê (Cl⁻)" },
         osymExamFact: { tr: "ÖSYM Prensibi: İyonik kristallerde 'molekül' kavramı YOKTUR! NaCl formülü bir molekülü değil, sonsuz örgüdeki en küçük stokiyometrik tam sayı oranını (Birim Hücre) ifade eder.", en: "Vital YKS Rule: Ionic crystals NEVER contain molecules! The formula NaCl denotes the simplest empirical stoichiometric ratio of the crystal lattice (Formula Unit), not an isolated molecule.", de: "Wichtige Prüfungsregel: In Ionenkristallen gibt es KEINE Moleküle! Die Formel NaCl beschreibt nur das stöchiometrische Verhältnis in der Formeleinheit.", fr: "Règle cruciale: Il n'y a AUCUNE molécule dans un cristal ionique ! La formule NaCl ne représente qu'une unité formulaire stœchiométrique minimale.", ru: "Фундаментальное правило: В ионных кристаллах НЕТ молекул! Формула NaCl обозначает не отдельную молекулу, а формульную единицу бесконечной решетки.", ar: "قاعدة امتحانية حتمية: لا يوجد مفهوم 'جزيء' في البلورات الأيونية مطلقاً! الصيغة NaCl تمثل أصغر نسبة عددية صحيحة في الشبكة (وحدة صيغة).", zh: "极重要应试定则：离子晶体中绝不存在单个的“独立分子”！化学式NaCl仅代表晶体无限三维骨架中阴阳离子的最简整数比（化学式单元）。", ku: "Rêzika Bingehîn: Di krîstalên îyonî de têgeha 'molekul' TÛNE YE! Formula NaCl tenê rêjeya herî piçûk a di şaneya yekîn de nîşan dide." },
@@ -2517,7 +2517,7 @@ export const LEGACY_CONTRACT_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u23-hs4',
         pinNumber: 1,
-        position: [-2.0, 0.0, 0.0],
+        position: [-2.2, 0.0, 0.0],
         color: '#38bdf8',
         badgeLabel: "BF₃ (AX₃ 120°)",
         title: { tr: "Bor Trifluorür (BF₃, Düzlem Üçgen, 120°)", en: "Boron Trifluoride (BF₃, Trigonal Planar, AX₃, 120°)", de: "Bortrifluorid (BF₃, Trigonal-planar, 120°)", fr: "Trifluorure de bore (BF₃, Plan trigonal, 120°)", ru: "Трифторид бора (BF₃, плоский треугольник, 120°)", ar: "ثلاثي فلوريد البورون (BF₃، مثلث مستوٍ، 120°)", zh: "三氟化硼（BF₃，AX₃平面正三角形，120°，缺电子八隅体）", ku: "Bor Trîfluorur (BF₃, Deşta Sêgoşeyî, 120°)" },
@@ -2545,7 +2545,7 @@ export const LEGACY_CONTRACT_SCENES: ChemicalSceneSpec[] = [
       {
         id: 'u23-hs6',
         pinNumber: 3,
-        position: [2.0, 0.0, 0.0],
+        position: [2.2, 0.0, 0.0],
         color: '#38bdf8',
         badgeLabel: "SF₆ (AX₆ 90°)",
         title: { tr: "Kükürt Hekzafluorür (SF₆, Düzgün Sekizyüzlü, AX₆, 90°)", en: "Sulfur Hexafluoride (SF₆, Octahedral, AX₆, 90°)", de: "Schwefelhexafluorid (SF₆, Oktaedrisch, AX₆, 90°)", fr: "Hexafluorure de soufre (SF₆, Octaédrique, AX₆, 90°)", ru: "Гексафторид серы (SF₆, октаэдрическая геометрия, 90°)", ar: "سداسي فلوريد الكبريت (SF₆، ثماني السطوح المنتظم، AX₆، 90°)", zh: "六氟化硫（SF₆，AX₆正八面体，90°严格正交，12电子超价稳定体系）", ku: "Kukurt Hekzafluorur (SF₆, Heştrû, AX₆, 90°)" },

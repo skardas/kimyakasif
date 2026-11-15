@@ -1040,14 +1040,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya ve Elektrik: Redoks ve Galvanik Piller konusunu işlerken Anot Yarı Hücresi üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Electrochemistry: Redox & Galvanic, which statement regarding Anode Half Cell represents the correct answer?",
-        "de": "Welche Aussage zu Anodenhalbzelle stellt im Kontext von Elektrochemie: Redox & Galvanische Zellen die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Électrochimie: Redox & Piles Galvaniques, quelle proposition sur Demi-cellule d'anode constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Электрохимия: ОВР и гальванические элементы», какой ответ относительно «Анодная полуячейка» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\" مخبرياً، أي إجابة بخصوص \"الأنود نصف الخلية\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“电化学：氧化还原与原电池”实验探究与教学分析中，针对“阳极半电池”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan bersiv derbarê \"Anode Half Cell\" de rast e?"
+        "tr": "Kimya dersinde Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Electrochemistry: Redox & Galvanic, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Elektrochemie: Redox & Galvanische Zellen: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Électrochimie: Redox & Piles Galvaniques, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Электрохимия: ОВР и гальванические элементы», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“电化学：氧化还原与原电池”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1116,14 +1116,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin04",
       "stem": {
-        "tr": "Kimya dersinde Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesi incelenirken Galvanik Hücre (Pil) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Electrochemistry: Redox & Galvanic, which of the following propositions concerning Galvanic Cell (Battery) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Elektrochemie: Redox & Galvanische Zellen: Welche Behauptung bezüglich Galvanische Zelle (Batterie) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Électrochimie: Redox & Piles Galvaniques, laquelle des affirmations suivantes concernant Cellule galvanique (batterie) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Электрохимия: ОВР и гальванические элементы», какое из следующих суждений о «Гальванический элемент (батарея)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي من الأحكام التالية المتعلقة بـ \"خلية كلفانية (بطارية)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“电化学：氧化还原与原电池”核心规律时，下列关于“原电池（电池）”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" tê kirin, kîjan daraza li ser \"Hucreya Galvanîk (Pîl)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimya ve Elektrik: Redoks ve Galvanik Piller konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Electrochemistry: Redox & Galvanic?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Elektrochemie: Redox & Galvanische Zellen zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Électrochimie: Redox & Piles Galvaniques ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Электрохимия: ОВР и гальванические элементы»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"؟",
+        "zh": "根据“电化学：氧化还原与原电池”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de rast e?"
       },
       "options": [
         {
@@ -1192,14 +1192,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimya ve Elektrik: Redoks ve Galvanik Piller konusundaki temel kimyasal kurallar çerçevesinde Standart Pil Potansiyeli (E°pil) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Standard Battery Potential (E°battery) within the fundamental principles of Electrochemistry: Redox & Galvanic?",
-        "de": "Welche Aussage beschreibt das Konzept Standardbatteriepotential (E°Batterie) im Rahmen von Elektrochemie: Redox & Galvanische Zellen am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Potentiel de batterie standard (batterie E°) selon les lois de Électrochimie: Redox & Piles Galvaniques?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Стандартный потенциал батареи (батарея E°)» в рамках темы «Электрохимия: ОВР и гальванические элементы»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"إمكانات البطارية القياسية (البطارية E°)\" ضمن قواعد \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"؟",
-        "zh": "根据“电化学：氧化还原与原电池”的基本化学原理，下列哪项阐述能最准确地界定“标准电池电位（E°电池）”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Potansiyela Pîlê Standard (E°batê)\" di çarçoveya prensîbên \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimya ve Elektrik: Redoks ve Galvanik Piller sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Electrochemistry: Redox & Galvanic, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Elektrochemie: Redox & Galvanische Zellen: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Électrochimie: Redox & Piles Galvaniques, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Электрохимия: ОВР и гальванические элементы», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“电化学：氧化还原与原电池”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1268,14 +1268,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimya ve Elektrik: Redoks ve Galvanik Piller sorularında karşılaşılan Derişim Pili konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Electrochemistry: Redox & Galvanic, which assertion regarding Concentration Battery is correct?",
-        "de": "Welche Feststellung bezüglich Konzentrationsbatterie ist nach den chemischen Gesetzmäßigkeiten von Elektrochemie: Redox & Galvanische Zellen richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Électrochimie: Redox & Piles Galvaniques, quelle affirmation concernant Batterie de concentration est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Электрохимия: ОВР и гальванические элементы», какое положение относительно «Концентрационная батарея» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي حكم متعلق بـ \"بطارية التركيز\" يعتبر صحيحاً؟",
-        "zh": "在高考“电化学：氧化还原与原电池”经典考题中，下列有关“浓缩电池”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan daraza li ser \"Battery Concentration\" rast e?"
+        "tr": "Aşağıda Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Electrochemistry: Redox & Galvanic, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Elektrochemie: Redox & Galvanische Zellen: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Électrochimie: Redox & Piles Galvaniques, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Электрохимия: ОВР и гальванические элементы», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“电化学：氧化还原与原电池”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1344,14 +1344,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin07",
       "stem": {
-        "tr": "Aşağıda Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Tuz Köprüsündeki Anyonlar ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Electrochemistry: Redox & Galvanic, which statement about Anions in the Salt Bridge is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Elektrochemie: Redox & Galvanische Zellen: Welche Aussage über Anionen in der Salzbrücke ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Électrochimie: Redox & Piles Galvaniques, quelle affirmation relative à Anions dans le pont de sel est exacte?",
-        "ru": "На основе фундаментальных положений темы «Электрохимия: ОВР и гальванические элементы», какое суждение о «Анионы в соляном мостике» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي عبارة حول \"الأنيونات في جسر الملح\" صحيحة؟",
-        "zh": "基于“电化学：氧化还原与原电池”的基础化学知识体系，下列关于“盐桥中的负离子”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\", kîjan gotin derbarê \"Anyon li Pira Xwê\" de rast e?"
+        "tr": "Kimya ve Elektrik: Redoks ve Galvanik Piller konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Electrochemistry: Redox & Galvanic, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Elektrochemie: Redox & Galvanische Zellen: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Électrochimie: Redox & Piles Galvaniques, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Электрохимия: ОВР и гальванические элементы», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“电化学：氧化还原与原电池”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1420,14 +1420,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin08",
       "stem": {
-        "tr": "Kimya ve Elektrik: Redoks ve Galvanik Piller konusu kapsamında Yükseltgen Madde ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Electrochemistry: Redox & Galvanic, which of the following findings regarding Oxidizing Substance is scientifically verified?",
-        "de": "Im Rahmen der Einheit Elektrochemie: Redox & Galvanische Zellen: Welcher der folgenden Befunde zu Oxidierende Substanz ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Électrochimie: Redox & Piles Galvaniques, laquelle des constatations suivantes concernant Substance comburante est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Электрохимия: ОВР и гальванические элементы», какой из следующих выводов относительно «Окисляющее вещество» научно подтверждён?",
-        "ar": "في سياق موضوع \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي من النتائج التالية المتعلقة بـ \"مادة مؤكسدة\" مثبتة علمياً؟",
-        "zh": "在“电化学：氧化还原与原电池”主题范畴内，下列关于“氧化性物质”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan ji van encamên li ser \"Madeya oksîdan\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Electrochemistry: Redox & Galvanic, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Elektrochemie: Redox & Galvanische Zellen: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Électrochimie: Redox & Piles Galvaniques, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Электрохимия: ОВР и гальванические элементы», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“电化学：氧化还原与原电池”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1496,14 +1496,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesinde ele alınan Anot hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Electrochemistry: Redox & Galvanic, which statement about anode is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Elektrochemie: Redox & Galvanische Zellen: Welche Aussage über Anode ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Électrochimie: Redox & Piles Galvaniques, quelle affirmation relative à anode est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Электрохимия: ОВР и гальванические элементы», какое утверждение о «анод» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي عبارة حول \"الأنود\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“电化学：氧化还原与原电池”单元中关于“阳极”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\", kîjan gotin li ser \"anode\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya ve Elektrik: Redoks ve Galvanik Piller konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Electrochemistry: Redox & Galvanic, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Elektrochemie: Redox & Galvanische Zellen die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Électrochimie: Redox & Piles Galvaniques, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Электрохимия: ОВР и гальванические элементы», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“电化学：氧化还原与原电池”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1572,14 +1572,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya ve Elektrik: Redoks ve Galvanik Piller konusunu işlerken Kimyasal Pil üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Electrochemistry: Redox & Galvanic, which statement regarding Chemical Battery represents the correct answer?",
-        "de": "Welche Aussage zu Chemische Batterie stellt im Kontext von Elektrochemie: Redox & Galvanische Zellen die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Électrochimie: Redox & Piles Galvaniques, quelle proposition sur Batterie chimique constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Электрохимия: ОВР и гальванические элементы», какой ответ относительно «Химическая батарея» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\" مخبرياً، أي إجابة بخصوص \"البطارية الكيميائية\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“电化学：氧化还原与原电池”实验探究与教学分析中，针对“化学电池”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan bersiv derbarê \"Pîl Kîmyewî\" de rast e?"
+        "tr": "Kimya dersinde Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Electrochemistry: Redox & Galvanic, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Elektrochemie: Redox & Galvanische Zellen: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Électrochimie: Redox & Piles Galvaniques, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Электрохимия: ОВР и гальванические элементы», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“电化学：氧化还原与原电池”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1648,14 +1648,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin11",
       "stem": {
-        "tr": "Kimya dersinde Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesi incelenirken Anot Yarı Hücresi ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Electrochemistry: Redox & Galvanic, which of the following propositions concerning Anode Half Cell is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Elektrochemie: Redox & Galvanische Zellen: Welche Behauptung bezüglich Anodenhalbzelle entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Électrochimie: Redox & Piles Galvaniques, laquelle des affirmations suivantes concernant Demi-cellule d'anode est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Электрохимия: ОВР и гальванические элементы», какое из следующих суждений о «Анодная полуячейка» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي من الأحكام التالية المتعلقة بـ \"الأنود نصف الخلية\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“电化学：氧化还原与原电池”核心规律时，下列关于“阳极半电池”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" tê kirin, kîjan daraza li ser \"Anode Half Cell\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimya ve Elektrik: Redoks ve Galvanik Piller konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Electrochemistry: Redox & Galvanic?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Elektrochemie: Redox & Galvanische Zellen zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Électrochimie: Redox & Piles Galvaniques ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Электрохимия: ОВР и гальванические элементы»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"؟",
+        "zh": "根据“电化学：氧化还原与原电池”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de rast e?"
       },
       "options": [
         {
@@ -1724,14 +1724,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimya ve Elektrik: Redoks ve Galvanik Piller konusundaki temel kimyasal kurallar çerçevesinde Galvanik Hücre (Pil) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Galvanic Cell (Battery) within the fundamental principles of Electrochemistry: Redox & Galvanic?",
-        "de": "Welche Aussage beschreibt das Konzept Galvanische Zelle (Batterie) im Rahmen von Elektrochemie: Redox & Galvanische Zellen am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Cellule galvanique (batterie) selon les lois de Électrochimie: Redox & Piles Galvaniques?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Гальванический элемент (батарея)» в рамках темы «Электрохимия: ОВР и гальванические элементы»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"خلية كلفانية (بطارية)\" ضمن قواعد \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"؟",
-        "zh": "根据“电化学：氧化还原与原电池”的基本化学原理，下列哪项阐述能最准确地界定“原电池（电池）”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Hucreya Galvanîk (Pîl)\" di çarçoveya prensîbên \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimya ve Elektrik: Redoks ve Galvanik Piller sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Electrochemistry: Redox & Galvanic, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Elektrochemie: Redox & Galvanische Zellen: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Électrochimie: Redox & Piles Galvaniques, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Электрохимия: ОВР и гальванические элементы», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“电化学：氧化还原与原电池”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1800,14 +1800,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimya ve Elektrik: Redoks ve Galvanik Piller sorularında karşılaşılan Standart Pil Potansiyeli (E°pil) konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Electrochemistry: Redox & Galvanic, which assertion regarding Standard Battery Potential (E°battery) is correct?",
-        "de": "Welche Feststellung bezüglich Standardbatteriepotential (E°Batterie) ist nach den chemischen Gesetzmäßigkeiten von Elektrochemie: Redox & Galvanische Zellen richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Électrochimie: Redox & Piles Galvaniques, quelle affirmation concernant Potentiel de batterie standard (batterie E°) est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Электрохимия: ОВР и гальванические элементы», какое положение относительно «Стандартный потенциал батареи (батарея E°)» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي حكم متعلق بـ \"إمكانات البطارية القياسية (البطارية E°)\" يعتبر صحيحاً؟",
-        "zh": "在高考“电化学：氧化还原与原电池”经典考题中，下列有关“标准电池电位（E°电池）”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan daraza li ser \"Potansiyela Pîlê Standard (E°batê)\" rast e?"
+        "tr": "Aşağıda Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Electrochemistry: Redox & Galvanic, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Elektrochemie: Redox & Galvanische Zellen: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Électrochimie: Redox & Piles Galvaniques, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Электрохимия: ОВР и гальванические элементы», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“电化学：氧化还原与原电池”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1876,14 +1876,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin14",
       "stem": {
-        "tr": "Aşağıda Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Derişim Pili ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Electrochemistry: Redox & Galvanic, which statement about Concentration Battery is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Elektrochemie: Redox & Galvanische Zellen: Welche Aussage über Konzentrationsbatterie ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Électrochimie: Redox & Piles Galvaniques, quelle affirmation relative à Batterie de concentration est exacte?",
-        "ru": "На основе фундаментальных положений темы «Электрохимия: ОВР и гальванические элементы», какое суждение о «Концентрационная батарея» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي عبارة حول \"بطارية التركيز\" صحيحة؟",
-        "zh": "基于“电化学：氧化还原与原电池”的基础化学知识体系，下列关于“浓缩电池”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\", kîjan gotin derbarê \"Battery Concentration\" de rast e?"
+        "tr": "Kimya ve Elektrik: Redoks ve Galvanik Piller konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Electrochemistry: Redox & Galvanic, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Elektrochemie: Redox & Galvanische Zellen: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Électrochimie: Redox & Piles Galvaniques, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Электрохимия: ОВР и гальванические элементы», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“电化学：氧化还原与原电池”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1952,14 +1952,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin15",
       "stem": {
-        "tr": "Kimya ve Elektrik: Redoks ve Galvanik Piller konusu kapsamında Tuz Köprüsündeki Anyonlar ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Electrochemistry: Redox & Galvanic, which of the following findings regarding Anions in the Salt Bridge is scientifically verified?",
-        "de": "Im Rahmen der Einheit Elektrochemie: Redox & Galvanische Zellen: Welcher der folgenden Befunde zu Anionen in der Salzbrücke ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Électrochimie: Redox & Piles Galvaniques, laquelle des constatations suivantes concernant Anions dans le pont de sel est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Электрохимия: ОВР и гальванические элементы», какой из следующих выводов относительно «Анионы в соляном мостике» научно подтверждён?",
-        "ar": "في سياق موضوع \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي من النتائج التالية المتعلقة بـ \"الأنيونات في جسر الملح\" مثبتة علمياً؟",
-        "zh": "在“电化学：氧化还原与原电池”主题范畴内，下列关于“盐桥中的负离子”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan ji van encamên li ser \"Anyon li Pira Xwê\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Electrochemistry: Redox & Galvanic, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Elektrochemie: Redox & Galvanische Zellen: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Électrochimie: Redox & Piles Galvaniques, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Электрохимия: ОВР и гальванические элементы», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“电化学：氧化还原与原电池”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2028,14 +2028,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimya ve Elektrik: Redoks ve Galvanik Piller ünitesinde ele alınan Yükseltgen Madde hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Electrochemistry: Redox & Galvanic, which statement about Oxidizing Substance is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Elektrochemie: Redox & Galvanische Zellen: Welche Aussage über Oxidierende Substanz ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Électrochimie: Redox & Piles Galvaniques, quelle affirmation relative à Substance comburante est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Электрохимия: ОВР и гальванические элементы», какое утверждение о «Окисляющее вещество» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي عبارة حول \"مادة مؤكسدة\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“电化学：氧化还原与原电池”单元中关于“氧化性物质”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\", kîjan gotin li ser \"Madeya oksîdan\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimya ve Elektrik: Redoks ve Galvanik Piller konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Electrochemistry: Redox & Galvanic, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Elektrochemie: Redox & Galvanische Zellen die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Électrochimie: Redox & Piles Galvaniques, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Электрохимия: ОВР и гальванические элементы», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الكيمياء الكهربية: الأكسدة والاختزال والخلايا الجلفانية\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“电化学：氧化还原与原电池”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Kîmya û Elektrîk: Redoks û Pîlên Galvanîk\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

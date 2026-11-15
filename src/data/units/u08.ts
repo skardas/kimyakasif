@@ -145,7 +145,7 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-f06",
       "fact": {
-        "tr": "Kütlece yüzde derişim = (Çözünen Kütlesi / Çözelti Kütlesi) x 100 dür.",
+        "tr": "Kütlece yüzde derişim = (Çözünen Kütlesi / Çözelti Kütlesi) x 100'dür.",
         "en": "Percent concentration by mass = (Solute Mass / Solution Mass) x 100.",
         "de": "Prozentuale Konzentration nach Masse = (Masse gelöster Stoffe / Masse der Lösung) x 100.",
         "fr": "Pourcentage de concentration en masse = (Masse du soluté / Masse de la solution) x 100.",
@@ -168,7 +168,7 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-f07",
       "fact": {
-        "tr": "ppm (milyonda bir kısım) = (Çözünen Kütlesi / Çözelti Kütlesi) x 10^6 dır.",
+        "tr": "ppm (milyonda bir kısım) = (Çözünen Kütlesi / Çözelti Kütlesi) x 10^6'dır.",
         "en": "ppm (parts per million) = (Solute Mass / Solution Mass) x 10^6.",
         "de": "ppm (parts per million) = (Gelöste Masse / Lösungsmasse) x 10^6.",
         "fr": "ppm (parties par million) = (Masse de soluté / Masse de solution) x 10^6.",
@@ -178,7 +178,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ku": "ppm (parçe di mîlyonekê de) = (Girdeya Solute / Solution Mass) x 10^6."
       },
       "trap": {
-        "tr": "ppm hesaplanırken çarpan 100 dür.",
+        "tr": "ppm hesaplanırken çarpan 100'dür.",
         "en": "When calculating ppm, the multiplier is 100.",
         "de": "Bei der Berechnung von ppm beträgt der Multiplikator 100.",
         "fr": "Lors du calcul du ppm, le multiplicateur est de 100.",
@@ -306,7 +306,7 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-f13",
       "fact": {
-        "tr": "Çözeltiye su eklenirse (seyreltme) derişim azalır; formül C1m1 = C2m2 dir.",
+        "tr": "Çözeltiye su eklenirse (seyreltme) derişim azalır; formül C1m1 = C2m2'dir.",
         "en": "If water is added to the solution (dilution), the concentration decreases; The formula is C1m1 = C2m2.",
         "de": "Wird der Lösung Wasser zugesetzt (Verdünnung), sinkt die Konzentration; Die Formel lautet C1m1 = C2m2.",
         "fr": "Si de l'eau est ajoutée à la solution (dilution), la concentration diminue ; La formule est C1m1 = C2m2.",
@@ -453,7 +453,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ku": "Çareserî"
       },
       "distinction": {
-        "tr": "Çözeltide tanecik boyutu 1 nm den küçük homojendir; kolloitte 1-1000 nm arası heterojendir ve Tyndall etkisi gösterir.",
+        "tr": "Çözeltide tanecik boyutu 1 nm'den küçük homojendir; kolloitte 1-1000 nm arası heterojendir ve Tyndall etkisi gösterir.",
         "en": "In solution, the particle size is homogeneous, less than 1 nm; It is heterogeneous between 1 and 1000 nm in the colloid and shows the Tyndall effect.",
         "de": "In Lösung ist die Partikelgröße homogen und beträgt weniger als 1 nm; Es ist im Kolloid zwischen 1 und 1000 nm heterogen und zeigt den Tyndall-Effekt.",
         "fr": "En solution, la taille des particules est homogène, inférieure à 1 nm ; Il est hétérogène entre 1 et 1000 nm dans le colloïde et montre l'effet Tyndall.",
@@ -631,34 +631,34 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-c08",
       "conceptA": {
-        "tr": "Özütleme (Ekstraksiyon)",
-        "en": "Extraction",
-        "de": "Extraktion",
-        "fr": "Extraction",
-        "ru": "Экстракция",
-        "ar": "الاستخلاص",
-        "zh": "萃取",
-        "ku": "Ekstraksiyon"
+        "tr": "Basit Damıtma",
+        "en": "Simple Distillation",
+        "de": "Einfache Destillation",
+        "fr": "Distillation simple",
+        "ru": "Простая дистилляция",
+        "ar": "التقطير البسيط",
+        "zh": "简单蒸馏",
+        "ku": "Simple Distillation"
       },
       "conceptB": {
-        "tr": "Ayrımsal Kristallendirme",
-        "en": "Fractional Crystallization",
-        "de": "Fraktionierte Kristallisation",
-        "fr": "Cristallisation fractionnée",
-        "ru": "Фракционная кристаллизация",
-        "ar": "البلورة التجزيئية",
-        "zh": "重结晶 (分步结晶)",
-        "ku": "Krîstalîzasyona Beşî"
+        "tr": "Ayrımsal Damıtma",
+        "en": "Fractional Distillation",
+        "de": "Fraktionierte Destillation",
+        "fr": "Distillation fractionnée",
+        "ru": "Фракционная перегонка",
+        "ar": "التقطير التجزيئي",
+        "zh": "分馏",
+        "ku": "Distillation Fractional"
       },
       "distinction": {
-        "tr": "Özütleme çözünürlük farkı yardımıyla bileşenin bir çözücüye çekilmesidir; ayrımsal kristallendirme sıcaklıkla çözünürlük değişimleri farklı iki katıyı ayırır.",
-        "en": "Extraction selectively draws a solute into a chosen solvent based on solubility; fractional crystallization separates solids by temperature solubility differences.",
-        "de": "Extraktion trennt Stoffe anhand unterschiedlicher Löslichkeiten in Lösungsmitteln; fraktionierte Kristallisation trennt Feststoffe durch Temperaturunterschiede.",
-        "fr": "L'extraction isole un soluté dans un solvant choisi selon sa solubilité ; la cristallisation fractionnée sépare des solides selon la température.",
-        "ru": "Экстракция извлекает растворенное вещество подходящим растворителем; фракционная кристаллизация разделяет твердые вещества по изменению растворимости от температуры.",
-        "ar": "الاستخلاص يسحب المذاب إلى مذيب مناسب اعتماداً على الذائبية؛ البلورة التجزيئية تفصل المواد الصلبة بالاعتماد على اختلاف ذائبيتها مع درجات الحرارة.",
-        "zh": "萃取是利用溶质在互不相溶的溶剂中溶解度差异实现分离；分步结晶则是利用不同固体溶解度随温度变化的差异进行分离。",
-        "ku": "Ekstraksiyon bi alîkariya ferqa helandinê maddeyê dikişîne nav helawerê; krîstalîzasyona beşî du madeyên hişk bi guherîna germahiyê ji hev cuda dike."
+        "tr": "Basit damıtma katı-sıvı çözeltilerde sıvıyı buharlaştırıp yoğuşturur; ayrımsal damıtma kaynama noktaları yakın sıvı-sıvı homojen karışımları ayırır.",
+        "en": "Simple distillation evaporates and condenses the liquid in solid-liquid solutions; Fractional distillation separates liquid-liquid homogeneous mixtures with close boiling points.",
+        "de": "Durch einfache Destillation wird die Flüssigkeit in Fest-Flüssig-Lösungen verdampft und kondensiert; Die fraktionierte Destillation trennt flüssig-flüssig homogene Gemische mit nahe beieinander liegenden Siedepunkten.",
+        "fr": "Une simple distillation évapore et condense le liquide en solutions solide-liquide ; La distillation fractionnée sépare des mélanges homogènes liquide-liquide avec des points d'ébullition proches.",
+        "ru": "Простая перегонка испаряет и конденсирует жидкость в твердожидкие растворы; Фракционная перегонка разделяет жидкость-жидкость однородных смесей с близкими температурами кипения.",
+        "ar": "التقطير البسيط يتبخر ويكثف السائل في المحاليل الصلبة والسائلة؛ يفصل التقطير التجزيئي المخاليط المتجانسة من سائل إلى سائل ذات نقاط غليان متقاربة.",
+        "zh": "简单蒸馏将固液溶液中的液体蒸发并冷凝；分馏可分离沸点接近的液-液均匀混合物。",
+        "ku": "Distilasyona hêsan şilê di çareseriyên zirav-avî de diherikîne û dişewitîne; Distîlasyona fraksîyonel hevokên homojen ên şil-avî yên bi xalên kelandinê yên nêzîk ji hev vediqetîne."
       }
     }
   ],
@@ -888,7 +888,7 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin01",
       "stem": {
-        "tr": "Kütlece %20 lik 200 gram tuzlu su çözeltisine 50 gram saf su eklendiğinde yeni çözelti kütlece yüzde kaçlık olur?",
+        "tr": "Kütlece %20'lik 200 gram tuzlu su çözeltisine 50 gram saf su eklendiğinde yeni çözelti kütlece yüzde kaçlık olur?",
         "en": "When 50 grams of pure water is added to 200 grams of 20% salt water solution by mass, what percentage by mass will the new solution be?",
         "de": "Wenn 50 Gramm reines Wasser zu 200 Gramm einer 20-prozentigen Salzwasserlösung hinzugefügt werden, wie viel Prozent der Masse beträgt die neue Lösung?",
         "fr": "Lorsque 50 grammes d’eau pure sont ajoutés à 200 grammes de solution d’eau salée à 20 % en masse, quel sera le pourcentage en masse de la nouvelle solution ?",
@@ -1040,14 +1040,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Karışımlar ve Ayırma Teknikleri konusunu işlerken Süspansiyon üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Mixtures & Separation Techniques, which statement regarding suspension represents the correct answer?",
-        "de": "Welche Aussage zu Aussetzung stellt im Kontext von Mischungen & Trennverfahren die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Mélanges & Techniques de Séparation, quelle proposition sur suspension constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Смеси и методы разделения», какой ответ относительно «подвеска» является правильным?",
-        "ar": "أثناء دراسة موضوع \"المخاليط وطرق الفصل\" مخبرياً، أي إجابة بخصوص \"تعليق\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“混合物与分离技术”实验探究与教学分析中，针对“悬浮”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Têkelî û Rêbazên Veqetandinê\" de, kîjan bersiv derbarê \"suspension\" de rast e?"
+        "tr": "Kimya dersinde Karışımlar ve Ayırma Teknikleri ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Mixtures & Separation Techniques, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Mischungen & Trennverfahren: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Mélanges & Techniques de Séparation, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Смеси и методы разделения», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"المخاليط وطرق الفصل\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“混合物与分离技术”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Têkelî û Rêbazên Veqetandinê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1116,18 +1116,18 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin04",
       "stem": {
-        "tr": "Kimya dersinde Karışımlar ve Ayırma Teknikleri ünitesi incelenirken Ayrımsal Damıtma ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Mixtures & Separation Techniques, which of the following propositions concerning Fractional Distillation is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Mischungen & Trennverfahren: Welche Behauptung bezüglich Fraktionierte Destillation entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Mélanges & Techniques de Séparation, laquelle des affirmations suivantes concernant Distillation fractionnée est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Смеси и методы разделения», какое из следующих суждений о «Фракционная перегонка» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"المخاليط وطرق الفصل\"، أي من الأحكام التالية المتعلقة بـ \"التقطير التجزيئي\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“混合物与分离技术”核心规律时，下列关于“分馏”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Têkelî û Rêbazên Veqetandinê\" tê kirin, kîjan daraza li ser \"Distillation Fractional\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Karışımlar ve Ayırma Teknikleri konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Mixtures & Separation Techniques?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Mischungen & Trennverfahren zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Mélanges & Techniques de Séparation ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Смеси и методы разделения»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"المخاليط وطرق الفصل\"؟",
+        "zh": "根据“混合物与分离技术”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Têkelî û Rêbazên Veqetandinê\" de rast e?"
       },
       "options": [
         {
-          "tr": "ppm hesaplanırken çarpan 100 dür.",
+          "tr": "ppm hesaplanırken çarpan 100'dür.",
           "en": "When calculating ppm, the multiplier is 100.",
           "de": "Bei der Berechnung von ppm beträgt der Multiplikator 100.",
           "fr": "Lors du calcul du ppm, le multiplicateur est de 100.",
@@ -1192,14 +1192,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Karışımlar ve Ayırma Teknikleri konusundaki temel kimyasal kurallar çerçevesinde Ayırma Hunisi ile Ayırma kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Separation with Separatory Funnel within the fundamental principles of Mixtures & Separation Techniques?",
-        "de": "Welche Aussage beschreibt das Konzept Trennung mit Scheidetrichter im Rahmen von Mischungen & Trennverfahren am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Séparation avec entonnoir séparateur selon les lois de Mélanges & Techniques de Séparation?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Разделение с помощью делительной воронки» в рамках темы «Смеси и методы разделения»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"الفصل مع قمع الفصل\" ضمن قواعد \"المخاليط وطرق الفصل\"؟",
-        "zh": "根据“混合物与分离技术”的基本化学原理，下列哪项阐述能最准确地界定“用分液漏斗分离”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Veqetandin bi Funnel Separatory\" di çarçoveya prensîbên \"Têkelî û Rêbazên Veqetandinê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Karışımlar ve Ayırma Teknikleri sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Mixtures & Separation Techniques, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Mischungen & Trennverfahren: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Mélanges & Techniques de Séparation, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Смеси и методы разделения», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المخاليط وطرق الفصل\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“混合物与分离技术”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Têkelî û Rêbazên Veqetandinê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1268,18 +1268,18 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Karışımlar ve Ayırma Teknikleri sorularında karşılaşılan Kütlece Yüzde Derişim konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Mixtures & Separation Techniques, which assertion regarding Percent Concentration by Mass is correct?",
-        "de": "Welche Feststellung bezüglich Prozentuale Massenkonzentration ist nach den chemischen Gesetzmäßigkeiten von Mischungen & Trennverfahren richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Mélanges & Techniques de Séparation, quelle affirmation concernant Pourcentage de concentration en masse est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Смеси и методы разделения», какое положение относительно «Процентная концентрация по массе» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المخاليط وطرق الفصل\"، أي حكم متعلق بـ \"تركيز النسبة المئوية بالكتلة\" يعتبر صحيحاً؟",
-        "zh": "在高考“混合物与分离技术”经典考题中，下列有关“质量百分比浓度”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Têkelî û Rêbazên Veqetandinê\" de, kîjan daraza li ser \"Ji sedî Kombûna bi Mass\" rast e?"
+        "tr": "Aşağıda Karışımlar ve Ayırma Teknikleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Mixtures & Separation Techniques, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Mischungen & Trennverfahren: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Mélanges & Techniques de Séparation, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Смеси и методы разделения», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المخاليط وطرق الفصل\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“混合物与分离技术”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Têkelî û Rêbazên Veqetandinê\", kîjan gotin rast e?"
       },
       "options": [
         {
-          "tr": "Kütlece yüzde derişim = (Çözünen Kütlesi / Çözelti Kütlesi) x 100 dür.",
+          "tr": "Kütlece yüzde derişim = (Çözünen Kütlesi / Çözelti Kütlesi) x 100'dür.",
           "en": "Percent concentration by mass = (Solute Mass / Solution Mass) x 100.",
           "de": "Prozentuale Konzentration nach Masse = (Masse gelöster Stoffe / Masse der Lösung) x 100.",
           "fr": "Pourcentage de concentration en masse = (Masse du soluté / Masse de la solution) x 100.",
@@ -1331,7 +1331,7 @@ export const unit08: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Kütlece yüzde derişim = (Çözünen Kütlesi / Çözelti Kütlesi) x 100 dür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Kütlece yüzde derişim = (Çözünen Kütlesi / Çözelti Kütlesi) x 100'dür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Percent concentration by mass = (Solute Mass / Solution Mass) x 100.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Prozentuale Konzentration nach Masse = (Masse gelöster Stoffe / Masse der Lösung) x 100.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Pourcentage de concentration en masse = (Masse du soluté / Masse de la solution) x 100.\". Notion fondamentale du programme officiel de chimie.",
@@ -1344,14 +1344,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin07",
       "stem": {
-        "tr": "Aşağıda Karışımlar ve Ayırma Teknikleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Doymuş Çözelti ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Mixtures & Separation Techniques, which statement about Saturated Solution is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Mischungen & Trennverfahren: Welche Aussage über Gesättigte Lösung ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Mélanges & Techniques de Séparation, quelle affirmation relative à Solution saturée est exacte?",
-        "ru": "На основе фундаментальных положений темы «Смеси и методы разделения», какое суждение о «Насыщенный раствор» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المخاليط وطرق الفصل\"، أي عبارة حول \"محلول مشبع\" صحيحة؟",
-        "zh": "基于“混合物与分离技术”的基础化学知识体系，下列关于“饱和溶液”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Têkelî û Rêbazên Veqetandinê\", kîjan gotin derbarê \"Çareseriya Têrbûyî\" de rast e?"
+        "tr": "Karışımlar ve Ayırma Teknikleri konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Mixtures & Separation Techniques, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Mischungen & Trennverfahren: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Mélanges & Techniques de Séparation, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Смеси и методы разделения», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"المخاليط وطرق الفصل\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“混合物与分离技术”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Têkelî û Rêbazên Veqetandinê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1365,7 +1365,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ku": "Flotasyon pêvajoya veqetandina hesin bi alîkariya magnetekê ye."
         },
         {
-          "tr": "ppm (milyonda bir kısım) = (Çözünen Kütlesi / Çözelti Kütlesi) x 10^6 dır.",
+          "tr": "ppm (milyonda bir kısım) = (Çözünen Kütlesi / Çözelti Kütlesi) x 10^6'dır.",
           "en": "ppm (parts per million) = (Solute Mass / Solution Mass) x 10^6.",
           "de": "ppm (parts per million) = (Gelöste Masse / Lösungsmasse) x 10^6.",
           "fr": "ppm (parties par million) = (Masse de soluté / Masse de solution) x 10^6.",
@@ -1407,7 +1407,7 @@ export const unit08: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"ppm (milyonda bir kısım) = (Çözünen Kütlesi / Çözelti Kütlesi) x 10^6 dır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"ppm (milyonda bir kısım) = (Çözünen Kütlesi / Çözelti Kütlesi) x 10^6'dır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"ppm (parts per million) = (Solute Mass / Solution Mass) x 10^6.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"ppm (parts per million) = (Gelöste Masse / Lösungsmasse) x 10^6.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"ppm (parties par million) = (Masse de soluté / Masse de solution) x 10^6.\". Notion fondamentale du programme officiel de chimie.",
@@ -1420,14 +1420,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin08",
       "stem": {
-        "tr": "Karışımlar ve Ayırma Teknikleri konusu kapsamında Özütleme (Ekstraksiyon) ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Mixtures & Separation Techniques, which of the following findings regarding Extraction is scientifically verified?",
-        "de": "Im Rahmen der Einheit Mischungen & Trennverfahren: Welcher der folgenden Befunde zu Extraktion ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Mélanges & Techniques de Séparation, laquelle des constatations suivantes concernant Extraction est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Смеси и методы разделения», какой из следующих выводов относительно «Экстракция» научно подтверждён?",
-        "ar": "في سياق موضوع \"المخاليط وطرق الفصل\"، أي من النتائج التالية المتعلقة بـ \"الاستخلاص\" مثبتة علمياً؟",
-        "zh": "在“混合物与分离技术”主题范畴内，下列关于“萃取”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Têkelî û Rêbazên Veqetandinê\" de, kîjan ji van encamên li ser \"Ekstraksiyon\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Karışımlar ve Ayırma Teknikleri ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Mixtures & Separation Techniques, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Mischungen & Trennverfahren: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Mélanges & Techniques de Séparation, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Смеси и методы разделения», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المخاليط وطرق الفصل\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“混合物与分离技术”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Têkelî û Rêbazên Veqetandinê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1496,14 +1496,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Karışımlar ve Ayırma Teknikleri ünitesinde ele alınan Basit Damıtma hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Mixtures & Separation Techniques, which statement about Simple Distillation is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Mischungen & Trennverfahren: Welche Aussage über Einfache Destillation ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Mélanges & Techniques de Séparation, quelle affirmation relative à Distillation simple est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Смеси и методы разделения», какое утверждение о «Простая дистилляция» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المخاليط وطرق الفصل\"، أي عبارة حول \"التقطير البسيط\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“混合物与分离技术”单元中关于“简单蒸馏”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Têkelî û Rêbazên Veqetandinê\", kîjan gotin li ser \"Simple Distillation\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Karışımlar ve Ayırma Teknikleri konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Mixtures & Separation Techniques, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Mischungen & Trennverfahren die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Mélanges & Techniques de Séparation, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Смеси и методы разделения», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"المخاليط وطرق الفصل\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“混合物与分离技术”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Têkelî û Rêbazên Veqetandinê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1572,14 +1572,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Karışımlar ve Ayırma Teknikleri konusunu işlerken Kolloit üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Mixtures & Separation Techniques, which statement regarding colloid represents the correct answer?",
-        "de": "Welche Aussage zu Kolloid stellt im Kontext von Mischungen & Trennverfahren die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Mélanges & Techniques de Séparation, quelle proposition sur colloïde constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Смеси и методы разделения», какой ответ относительно «коллоидный» является правильным?",
-        "ar": "أثناء دراسة موضوع \"المخاليط وطرق الفصل\" مخبرياً، أي إجابة بخصوص \"الغروانية\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“混合物与分离技术”实验探究与教学分析中，针对“胶体”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Têkelî û Rêbazên Veqetandinê\" de, kîjan bersiv derbarê \"koloid\" de rast e?"
+        "tr": "Kimya dersinde Karışımlar ve Ayırma Teknikleri ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Mixtures & Separation Techniques, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Mischungen & Trennverfahren: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Mélanges & Techniques de Séparation, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Смеси и методы разделения», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"المخاليط وطرق الفصل\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“混合物与分离技术”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Têkelî û Rêbazên Veqetandinê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1648,14 +1648,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin11",
       "stem": {
-        "tr": "Kimya dersinde Karışımlar ve Ayırma Teknikleri ünitesi incelenirken Süspansiyon ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Mixtures & Separation Techniques, which of the following propositions concerning suspension is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Mischungen & Trennverfahren: Welche Behauptung bezüglich Aussetzung entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Mélanges & Techniques de Séparation, laquelle des affirmations suivantes concernant suspension est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Смеси и методы разделения», какое из следующих суждений о «подвеска» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"المخاليط وطرق الفصل\"، أي من الأحكام التالية المتعلقة بـ \"تعليق\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“混合物与分离技术”核心规律时，下列关于“悬浮”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Têkelî û Rêbazên Veqetandinê\" tê kirin, kîjan daraza li ser \"suspension\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Karışımlar ve Ayırma Teknikleri konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Mixtures & Separation Techniques?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Mischungen & Trennverfahren zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Mélanges & Techniques de Séparation ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Смеси и методы разделения»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"المخاليط وطرق الفصل\"؟",
+        "zh": "根据“混合物与分离技术”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Têkelî û Rêbazên Veqetandinê\" de rast e?"
       },
       "options": [
         {
@@ -1699,7 +1699,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ku": "Dûman suspensionek e ku tê de maddeya hişk di şilekê de belav dibe."
         },
         {
-          "tr": "ppm hesaplanırken çarpan 100 dür.",
+          "tr": "ppm hesaplanırken çarpan 100'dür.",
           "en": "When calculating ppm, the multiplier is 100.",
           "de": "Bei der Berechnung von ppm beträgt der Multiplikator 100.",
           "fr": "Lors du calcul du ppm, le multiplicateur est de 100.",
@@ -1724,14 +1724,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Karışımlar ve Ayırma Teknikleri konusundaki temel kimyasal kurallar çerçevesinde Ayrımsal Damıtma kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Fractional Distillation within the fundamental principles of Mixtures & Separation Techniques?",
-        "de": "Welche Aussage beschreibt das Konzept Fraktionierte Destillation im Rahmen von Mischungen & Trennverfahren am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Distillation fractionnée selon les lois de Mélanges & Techniques de Séparation?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Фракционная перегонка» в рамках темы «Смеси и методы разделения»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"التقطير التجزيئي\" ضمن قواعد \"المخاليط وطرق الفصل\"؟",
-        "zh": "根据“混合物与分离技术”的基本化学原理，下列哪项阐述能最准确地界定“分馏”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Distillation Fractional\" di çarçoveya prensîbên \"Têkelî û Rêbazên Veqetandinê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Karışımlar ve Ayırma Teknikleri sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Mixtures & Separation Techniques, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Mischungen & Trennverfahren: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Mélanges & Techniques de Séparation, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Смеси и методы разделения», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المخاليط وطرق الفصل\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“混合物与分离技术”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Têkelî û Rêbazên Veqetandinê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1800,14 +1800,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Karışımlar ve Ayırma Teknikleri sorularında karşılaşılan Ayırma Hunisi ile Ayırma konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Mixtures & Separation Techniques, which assertion regarding Separation with Separatory Funnel is correct?",
-        "de": "Welche Feststellung bezüglich Trennung mit Scheidetrichter ist nach den chemischen Gesetzmäßigkeiten von Mischungen & Trennverfahren richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Mélanges & Techniques de Séparation, quelle affirmation concernant Séparation avec entonnoir séparateur est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Смеси и методы разделения», какое положение относительно «Разделение с помощью делительной воронки» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"المخاليط وطرق الفصل\"، أي حكم متعلق بـ \"الفصل مع قمع الفصل\" يعتبر صحيحاً؟",
-        "zh": "在高考“混合物与分离技术”经典考题中，下列有关“用分液漏斗分离”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Têkelî û Rêbazên Veqetandinê\" de, kîjan daraza li ser \"Veqetandin bi Funnel Separatory\" rast e?"
+        "tr": "Aşağıda Karışımlar ve Ayırma Teknikleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Mixtures & Separation Techniques, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Mischungen & Trennverfahren: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Mélanges & Techniques de Séparation, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Смеси и методы разделения», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المخاليط وطرق الفصل\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“混合物与分离技术”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Têkelî û Rêbazên Veqetandinê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1831,7 +1831,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ku": "Tevliheviya rûnê zeytûn-avê bi distîlasyona fraksîyonî tê veqetandin."
         },
         {
-          "tr": "Çözeltiye su eklenirse (seyreltme) derişim azalır; formül C1m1 = C2m2 dir.",
+          "tr": "Çözeltiye su eklenirse (seyreltme) derişim azalır; formül C1m1 = C2m2'dir.",
           "en": "If water is added to the solution (dilution), the concentration decreases; The formula is C1m1 = C2m2.",
           "de": "Wird der Lösung Wasser zugesetzt (Verdünnung), sinkt die Konzentration; Die Formel lautet C1m1 = C2m2.",
           "fr": "Si de l'eau est ajoutée à la solution (dilution), la concentration diminue ; La formule est C1m1 = C2m2.",
@@ -1863,7 +1863,7 @@ export const unit08: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Çözeltiye su eklenirse (seyreltme) derişim azalır; formül C1m1 = C2m2 dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Çözeltiye su eklenirse (seyreltme) derişim azalır; formül C1m1 = C2m2'dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"If water is added to the solution (dilution), the concentration decreases; The formula is C1m1 = C2m2.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Wird der Lösung Wasser zugesetzt (Verdünnung), sinkt die Konzentration; Die Formel lautet C1m1 = C2m2.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Si de l'eau est ajoutée à la solution (dilution), la concentration diminue ; La formule est C1m1 = C2m2.\". Notion fondamentale du programme officiel de chimie.",
@@ -1876,14 +1876,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin14",
       "stem": {
-        "tr": "Aşağıda Karışımlar ve Ayırma Teknikleri ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Kütlece Yüzde Derişim ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Mixtures & Separation Techniques, which statement about Percent Concentration by Mass is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Mischungen & Trennverfahren: Welche Aussage über Prozentuale Massenkonzentration ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Mélanges & Techniques de Séparation, quelle affirmation relative à Pourcentage de concentration en masse est exacte?",
-        "ru": "На основе фундаментальных положений темы «Смеси и методы разделения», какое суждение о «Процентная концентрация по массе» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"المخاليط وطرق الفصل\"، أي عبارة حول \"تركيز النسبة المئوية بالكتلة\" صحيحة؟",
-        "zh": "基于“混合物与分离技术”的基础化学知识体系，下列关于“质量百分比浓度”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Têkelî û Rêbazên Veqetandinê\", kîjan gotin derbarê \"Ji sedî Kombûna bi Mass\" de rast e?"
+        "tr": "Karışımlar ve Ayırma Teknikleri konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Mixtures & Separation Techniques, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Mischungen & Trennverfahren: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Mélanges & Techniques de Séparation, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Смеси и методы разделения», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"المخاليط وطرق الفصل\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“混合物与分离技术”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Têkelî û Rêbazên Veqetandinê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1907,7 +1907,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ku": "Dûman suspensionek e ku tê de maddeya hişk di şilekê de belav dibe."
         },
         {
-          "tr": "ppm hesaplanırken çarpan 100 dür.",
+          "tr": "ppm hesaplanırken çarpan 100'dür.",
           "en": "When calculating ppm, the multiplier is 100.",
           "de": "Bei der Berechnung von ppm beträgt der Multiplikator 100.",
           "fr": "Lors du calcul du ppm, le multiplicateur est de 100.",
@@ -1952,14 +1952,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin15",
       "stem": {
-        "tr": "Karışımlar ve Ayırma Teknikleri konusu kapsamında Doymuş Çözelti ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Mixtures & Separation Techniques, which of the following findings regarding Saturated Solution is scientifically verified?",
-        "de": "Im Rahmen der Einheit Mischungen & Trennverfahren: Welcher der folgenden Befunde zu Gesättigte Lösung ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Mélanges & Techniques de Séparation, laquelle des constatations suivantes concernant Solution saturée est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Смеси и методы разделения», какой из следующих выводов относительно «Насыщенный раствор» научно подтверждён?",
-        "ar": "في سياق موضوع \"المخاليط وطرق الفصل\"، أي من النتائج التالية المتعلقة بـ \"محلول مشبع\" مثبتة علمياً؟",
-        "zh": "在“混合物与分离技术”主题范畴内，下列关于“饱和溶液”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Têkelî û Rêbazên Veqetandinê\" de, kîjan ji van encamên li ser \"Çareseriya Têrbûyî\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Karışımlar ve Ayırma Teknikleri ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Mixtures & Separation Techniques, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Mischungen & Trennverfahren: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Mélanges & Techniques de Séparation, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Смеси и методы разделения», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المخاليط وطرق الفصل\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“混合物与分离技术”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Têkelî û Rêbazên Veqetandinê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2028,14 +2028,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Karışımlar ve Ayırma Teknikleri ünitesinde ele alınan Özütleme (Ekstraksiyon) hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Mixtures & Separation Techniques, which statement about Extraction is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Mischungen & Trennverfahren: Welche Aussage über Extraktion ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Mélanges & Techniques de Séparation, quelle affirmation relative à Extraction est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Смеси и методы разделения», какое утверждение о «Экстракция» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"المخاليط وطرق الفصل\"، أي عبارة حول \"الاستخلاص\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“混合物与分离技术”单元中关于“萃取”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Têkelî û Rêbazên Veqetandinê\", kîjan gotin li ser \"Ekstraksiyon\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Karışımlar ve Ayırma Teknikleri konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Mixtures & Separation Techniques, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Mischungen & Trennverfahren die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Mélanges & Techniques de Séparation, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Смеси и методы разделения», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"المخاليط وطرق الفصل\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“混合物与分离技术”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Têkelî û Rêbazên Veqetandinê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

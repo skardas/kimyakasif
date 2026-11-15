@@ -30,7 +30,7 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-f01",
       "fact": {
-        "tr": "25 °C de suyun otoiyonizasyon sabiti Ksu = [H+] * [OH-] = 1.0x10^-14 tür; pH + pOH = 14 tür.",
+        "tr": "25 °C'de suyun otoiyonizasyon sabiti Ksu = [H+] * [OH-] = 1.0x10^-14'tür; pH + pOH = 14'tür.",
         "en": "The autoionization constant of water at 25 °C is Ksu = [H+] * [OH-] = 1.0x10^-14; pH + pOH = 14.",
         "de": "Die Autoionisierungskonstante von Wasser bei 25 °C beträgt Ksu = [H+] * [OH-] = 1,0x10^-14; pH + pOH = 14.",
         "fr": "La constante d'autoionisation de l'eau à 25 °C est Ksu = [H+] * [OH-] = 1,0x10^-14 ; pH + pOH = 14.",
@@ -40,7 +40,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Hêmana otoyonîzasyona avê di 25 °C de Ksu = [H+] * [OH-] = 1,0x10^-14 e; pH + pOH = 14."
       },
       "trap": {
-        "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14 tür.",
+        "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14'tür.",
         "en": "The sum of pH + pOH at every temperature is definitely 14.",
         "de": "Die Summe aus pH + pOH beträgt bei jeder Temperatur definitiv 14.",
         "fr": "La somme pH + pOH à chaque température est définitivement de 14.",
@@ -86,7 +86,7 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-f03",
       "fact": {
-        "tr": "Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca) dır (Ca: asidin başlangıç molaritesi).",
+        "tr": "Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca)'dır (Ca: asidin başlangıç molaritesi).",
         "en": "For weak monoproteic acid, [H+] = sqrt(Ka * Ca) (Ca: initial molarity of the acid).",
         "de": "Für schwache Monoproteinsäure ist [H+] = sqrt(Ka * Ca) (Ca: anfängliche Molarität der Säure).",
         "fr": "Pour l'acide monoprotéique faible, [H+] = sqrt(Ka * Ca) (Ca : molarité initiale de l'acide).",
@@ -132,7 +132,7 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-f05",
       "fact": {
-        "tr": "Bir eşlenik asit-baz çiftinde Ka * Kb = Ksu = 10^-14 tür (25 °C de).",
+        "tr": "Bir eşlenik asit-baz çiftinde Ka * Kb = Ksu = 10^-14'tür (25 °C'de).",
         "en": "In a conjugate acid-base pair, Ka * Kb = Ksu = 10^-14 (at 25 °C).",
         "de": "In einem konjugierten Säure-Base-Paar beträgt Ka * Kb = Ksu = 10^-14 (bei 25 °C).",
         "fr": "Dans une paire acide-base conjuguée, Ka * Kb = Ksu = 10^-14 (à 25 °C).",
@@ -211,7 +211,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Di titrasyonê de xala hevdengiyê (xala zivirînê): Dema ku hejmara molên H+ yên ji asîdê tên bi hejmara molên OH- yên ji bazê tên (nH+ = nOH-) ye."
       },
       "trap": {
-        "tr": "Eşdeğerlik noktasında çözeltinin pH ı daima 7.00 olmak zorundadır.",
+        "tr": "Eşdeğerlik noktasında çözeltinin pH'ı daima 7.00 olmak zorundadır.",
         "en": "At the equivalence point, the pH of the solution must always be 7.00.",
         "de": "Am Äquivalenzpunkt muss der pH-Wert der Lösung immer 7,00 betragen.",
         "fr": "Au point d'équivalence, le pH de la solution doit toujours être de 7,00.",
@@ -221,7 +221,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Di xala hevdengiyê de, pH ya çareseriyê divê her gav 7.00 be."
       },
       "osymTip": {
-        "tr": "Zayıf asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH > 7 dir!",
+        "tr": "Zayıf asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH > 7'dir!",
         "en": "In weak acid - strong base titration, the pH at the equivalence point is > 7!",
         "de": "Bei der Titration schwache Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt > 7!",
         "fr": "Dans le titrage acide faible - base forte, le pH au point d'équivalence est > 7 !",
@@ -234,7 +234,7 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-f09",
       "fact": {
-        "tr": "Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00 dir.",
+        "tr": "Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00'dir.",
         "en": "In the strong acid - strong base titration, the pH at the equivalence point is exactly 7.00.",
         "de": "Bei der Titration starke Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt genau 7,00.",
         "fr": "Dans le titrage acide fort - base forte, le pH au point d’équivalence est exactement de 7,00.",
@@ -244,7 +244,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Di tîtrasyona asîd-bazek xurt de, pH li xala hevsengiyê tam 7.00 e."
       },
       "trap": {
-        "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0 dır.",
+        "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0'dır.",
         "en": "In a strong acid strong base titration, pH is 0 at the equivalence point.",
         "de": "Bei einer Titration mit starker Säure und starker Base beträgt der pH-Wert am Äquivalenzpunkt 0.",
         "fr": "Dans un titrage acide fort base forte, le pH est de 0 au point d’équivalence.",
@@ -290,7 +290,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Her ku tîrêjiya asîdê ya Ka zêde dibe, hêza asîdê û rêjeya îyonîzasyonê zêde dibe."
       },
       "trap": {
-        "tr": "Ka sı küçük olan asit daha kuvvetlidir.",
+        "tr": "Ka'sı küçük olan asit daha kuvvetlidir.",
         "en": "The acid with smaller muscles is stronger.",
         "de": "Bei kleineren Muskeln ist die Säure stärker.",
         "fr": "L'acide avec des muscles plus petits est plus fort.",
@@ -326,7 +326,7 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-f13",
       "fact": {
-        "tr": "Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb dir (Z: tesir/etki değerliği).",
+        "tr": "Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb'dir (Z: tesir/etki değerliği).",
         "en": "At the point of equivalence, the formula is: Ma * Va * Za = Mb * Vb * Zb (Z: potency).",
         "de": "Am Äquivalenzpunkt lautet die Formel: Ma * Va * Za = Mb * Vb * Zb (Z: Potenz).",
         "fr": "Au point d'équivalence, la formule est : Ma * Va * Za = Mb * Vb * Zb (Z : puissance).",
@@ -405,7 +405,7 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-f16",
       "fact": {
-        "tr": "İndikatörler ortamın pH ına bağlı olarak renk değiştiren zayıf organik asit veya bazlardır.",
+        "tr": "İndikatörler ortamın pH'ına bağlı olarak renk değiştiren zayıf organik asit veya bazlardır.",
         "en": "Indicators are weak organic acids or bases that change color depending on the pH of the environment.",
         "de": "Indikatoren sind schwache organische Säuren oder Basen, die je nach pH-Wert der Umgebung ihre Farbe ändern.",
         "fr": "Les indicateurs sont des acides ou des bases organiques faibles qui changent de couleur en fonction du pH de l'environnement.",
@@ -450,7 +450,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Asîda qels"
       },
       "distinction": {
-        "tr": "Kuvvetli asit suda %100 iyonlaşır (Ka sı yoktur); zayıf asit kısmen iyonlaşır denge kurar (Ka vardır).",
+        "tr": "Kuvvetli asit suda %100 iyonlaşır (Ka'sı yoktur); zayıf asit kısmen iyonlaşır denge kurar (Ka vardır).",
         "en": "Strong acid ionizes 100% in water (has no Ka); The weak acid partially ionizes and establishes equilibrium (Ka is present).",
         "de": "Starke Säure ionisiert in Wasser zu 100 % (hat kein Ka); Die schwache Säure ionisiert teilweise und stellt ein Gleichgewicht her (Ka ist vorhanden).",
         "fr": "L'acide fort s'ionise à 100 % dans l'eau (n'a pas de Ka) ; L'acide faible s'ionise partiellement et établit l'équilibre (Ka est présent).",
@@ -483,7 +483,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Xalê Bêalî"
       },
       "distinction": {
-        "tr": "Eşdeğerlik nH+ = nOH- olduğu andır; nötr nokta pH = 7 olduğu andır. Zayıf asit-kuvvetli bazda eşdeğerlikte pH > 7 dir.",
+        "tr": "Eşdeğerlik nH+ = nOH- olduğu andır; nötr nokta pH = 7 olduğu andır. Zayıf asit-kuvvetli bazda eşdeğerlikte pH > 7'dir.",
         "en": "Equivalence is when nH+ = nOH-; The neutral point is when pH = 7. pH > 7 in weak acid-strong base equivalence.",
         "de": "Äquivalenz liegt vor, wenn nH+ = nOH-; Der Neutralpunkt liegt bei pH = 7. pH > 7 im schwachen Säure-starken Basen-Äquivalent.",
         "fr": "L'équivalence est lorsque nH+ = nOH- ; Le point neutre est lorsque pH = 7. pH > 7 en équivalence acide faible-base forte.",
@@ -549,7 +549,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Berdewamiya Veqetandina Bingehê (Kb)"
       },
       "distinction": {
-        "tr": "Ka asidin kuvvetini ve iyonlaşma dengesini belirtir; eşlenik asit-baz çiftinde Ka . Kb = Ksu = 10^-14 tür.",
+        "tr": "Ka asidin kuvvetini ve iyonlaşma dengesini belirtir; eşlenik asit-baz çiftinde Ka . Kb = Ksu = 10^-14'tür.",
         "en": "Ka indicates the strength and ionization balance of the acid; Ka in the conjugate acid-base pair. Kb = Ksu = 10^-14.",
         "de": "Ka gibt die Stärke und das Ionisierungsgleichgewicht der Säure an; Ka im konjugierten Säure-Base-Paar. Kb = Ksu = 10^-14.",
         "fr": "Ka indique la force et l'équilibre d'ionisation de l'acide ; Ka dans la paire acide-base conjuguée. Ko = Ksu = 10^-14.",
@@ -582,7 +582,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Çareseriya Bêalî"
       },
       "distinction": {
-        "tr": "Tampon çözelti zayıf asit ile eşlenik tuzunu içerip pH değişimine direnir; nötr çözeltide pH = 7 dir fakat asit eklenince hızla düşer.",
+        "tr": "Tampon çözelti zayıf asit ile eşlenik tuzunu içerip pH değişimine direnir; nötr çözeltide pH = 7'dir fakat asit eklenince hızla düşer.",
         "en": "Buffer solution contains the weak acid and its conjugate salt and resists pH change; In neutral solution, pH = 7, but it drops rapidly when acid is added.",
         "de": "Pufferlösung enthält die schwache Säure und ihr Konjugatsalz und widersteht pH-Änderungen; In neutraler Lösung beträgt der pH-Wert 7, fällt jedoch bei Zugabe von Säure schnell ab.",
         "fr": "La solution tampon contient l'acide faible et son sel conjugué et résiste aux changements de pH ; En solution neutre, pH = 7, mais il chute rapidement lorsqu'on ajoute de l'acide.",
@@ -615,7 +615,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ku": "Xala bêalîbûnê (pH = 7)"
       },
       "distinction": {
-        "tr": "Eşdeğerlik noktasında H+ mol sayısı OH- mole eşittir; zayıf asit kuvvetli baz titrasyonunda eşdeğerlik pH ı 7 den büyüktür.",
+        "tr": "Eşdeğerlik noktasında H+ mol sayısı OH- mole eşittir; zayıf asit kuvvetli baz titrasyonunda eşdeğerlik pH'ı 7'den büyüktür.",
         "en": "At the equivalence point, the number of moles of H+ equals the moles of OH-; In weak acid strong base titration, the equivalence pH is greater than 7.",
         "de": "Am Äquivalenzpunkt entspricht die Anzahl der Mol H+ der Molzahl OH-; Bei der Titration mit schwacher Säure und starker Base liegt der Äquivalenz-pH-Wert über 7.",
         "fr": "Au point d'équivalence, le nombre de moles de H+ est égal aux moles de OH- ; En titrage acide faible base forte, le pH d’équivalence est supérieur à 7.",
@@ -827,7 +827,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Asîdek qels bi xwêya wê ya hevgirtî re tevlihev bikin"
         },
         {
-          "tr": "Ortama az miktar kuvvetli asit eklendiğinde eşlenik baz H+ yı tutar",
+          "tr": "Ortama az miktar kuvvetli asit eklendiğinde eşlenik baz H+'yı tutar",
           "en": "When a small amount of strong acid is added to the medium, the conjugate base retains H+",
           "de": "Wenn dem Medium eine kleine Menge starker Säure zugesetzt wird, behält die konjugierte Base H+",
           "fr": "Lorsqu'une petite quantité d'acide fort est ajoutée au milieu, la base conjuguée retient H+",
@@ -837,7 +837,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Dema ku mîqdarek piçûk a asîdek bihêz li navgînê were zêdekirin, bingeha hevgirtî H+ digire"
         },
         {
-          "tr": "Ortama az miktar baz eklendiğinde zayıf asit OH- ı nötralleştirir",
+          "tr": "Ortama az miktar baz eklendiğinde zayıf asit OH-'ı nötralleştirir",
           "en": "When a small amount of base is added to the medium, it neutralizes the weak acid OH-",
           "de": "Wenn dem Medium eine kleine Menge Base zugesetzt wird, neutralisiert diese die schwache Säure OH-",
           "fr": "Lorsqu'une petite quantité de base est ajoutée au milieu, elle neutralise l'acide faible OH-",
@@ -902,7 +902,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Di xala hevdengiyê de pH tam 7.00 e"
         },
         {
-          "tr": "Baz eklenmeye devam edilirse pH 7 nin üstüne çıkar",
+          "tr": "Baz eklenmeye devam edilirse pH 7'nin üstüne çıkar",
           "en": "If base is continued to be added, pH rises above 7.",
           "de": "Bei fortgesetzter Basenzugabe steigt der pH-Wert auf über 7.",
           "fr": "Si l’on continue à ajouter de la base, le pH s’élève au-dessus de 7.",
@@ -918,7 +918,7 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin01",
       "stem": {
-        "tr": "0.1 M lık sulu sirke asidi (CH3COOH) çözeltisinin pH değeri kaçtır? (CH3COOH için Ka = 1.0x10^-5)",
+        "tr": "0.1 M'lık sulu sirke asidi (CH3COOH) çözeltisinin pH değeri kaçtır? (CH3COOH için Ka = 1.0x10^-5)",
         "en": "What is the pH value of 0.1 M aqueous vinegar acid (CH3COOH) solution? (Ka for CH3COOH = 1.0x10^-5)",
         "de": "Wie hoch ist der pH-Wert einer 0,1 M wässrigen Essigsäurelösung (CH3COOH)? (Ka für CH3COOH = 1,0x10^-5)",
         "fr": "Quelle est la valeur du pH d’une solution aqueuse d’acide vinaigre (CH3COOH) 0,1 M ? (Ka pour CH3COOH = 1,0x10^-5)",
@@ -1070,14 +1070,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Asit-Baz Dengesi ve Titrasyon konusunu işlerken Kuvvetli Asit (HCl) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Acid-Base Equilibrium & Titration, which statement regarding Strong Acid (HCl) represents the correct answer?",
-        "de": "Welche Aussage zu Starke Säure (HCl) stellt im Kontext von Säure-Base-Gleichgewicht & Titration die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Équilibre Acide-Base & Titrage, quelle proposition sur Acide fort (HCl) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Кислотно-основное равновесие и титрование», какой ответ относительно «Сильная кислота (HCl)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الاتزان الحمضي القاعدي والمعايرة\" مخبرياً، أي إجابة بخصوص \"حمض قوي (حمض الهيدروكلوريك)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“酸碱平衡与滴定”实验探究与教学分析中，针对“强酸（HCl）”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan bersiv derbarê \"Asîda Xurt (HCl)\" de rast e?"
+        "tr": "Kimya dersinde Asit-Baz Dengesi ve Titrasyon ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Acid-Base Equilibrium & Titration, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Säure-Base-Gleichgewicht & Titration: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Équilibre Acide-Base & Titrage, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Кислотно-основное равновесие и титрование», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“酸碱平衡与滴定”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1091,7 +1091,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Çareseriya tampon ji tevliheviya asîda xurt û bazê xurt pêk tê."
         },
         {
-          "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0 dır.",
+          "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0'dır.",
           "en": "In a strong acid strong base titration, pH is 0 at the equivalence point.",
           "de": "Bei einer Titration mit starker Säure und starker Base beträgt der pH-Wert am Äquivalenzpunkt 0.",
           "fr": "Dans un titrage acide fort base forte, le pH est de 0 au point d’équivalence.",
@@ -1101,7 +1101,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Di titrasyonek bingehîn a bihêz a asîdê de, pH di xala hevkêşiyê de 0 ye."
         },
         {
-          "tr": "Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca) dır (Ca: asidin başlangıç molaritesi).",
+          "tr": "Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca)'dır (Ca: asidin başlangıç molaritesi).",
           "en": "For weak monoproteic acid, [H+] = sqrt(Ka * Ca) (Ca: initial molarity of the acid).",
           "de": "Für schwache Monoproteinsäure ist [H+] = sqrt(Ka * Ca) (Ca: anfängliche Molarität der Säure).",
           "fr": "Pour l'acide monoprotéique faible, [H+] = sqrt(Ka * Ca) (Ca : molarité initiale de l'acide).",
@@ -1133,7 +1133,7 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca) dır (Ca: asidin başlangıç molaritesi).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca)'dır (Ca: asidin başlangıç molaritesi).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"For weak monoproteic acid, [H+] = sqrt(Ka * Ca) (Ca: initial molarity of the acid).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Für schwache Monoproteinsäure ist [H+] = sqrt(Ka * Ca) (Ca: anfängliche Molarität der Säure).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Pour l'acide monoprotéique faible, [H+] = sqrt(Ka * Ca) (Ca : molarité initiale de l'acide).\". Notion fondamentale du programme officiel de chimie.",
@@ -1146,14 +1146,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin04",
       "stem": {
-        "tr": "Kimya dersinde Asit-Baz Dengesi ve Titrasyon ünitesi incelenirken Asit Ayrışma Sabiti (Ka) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Acid-Base Equilibrium & Titration, which of the following propositions concerning Acid Dissociation Constant (Ka) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Säure-Base-Gleichgewicht & Titration: Welche Behauptung bezüglich Säuredissoziationskonstante (Ka) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Équilibre Acide-Base & Titrage, laquelle des affirmations suivantes concernant Constante de dissociation acide (Ka) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Кислотно-основное равновесие и титрование», какое из следующих суждений о «Константа диссоциации кислоты (Ка)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي من الأحكام التالية المتعلقة بـ \"ثابت تفكك الحمض (Ka)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“酸碱平衡与滴定”核心规律时，下列关于“酸解离常数 (Ka)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\" tê kirin, kîjan daraza li ser \"Berdewamiya Veqetîna Asîdê (Ka)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Asit-Baz Dengesi ve Titrasyon konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Acid-Base Equilibrium & Titration?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Säure-Base-Gleichgewicht & Titration zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Équilibre Acide-Base & Titrage ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Кислотно-основное равновесие и титрование»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"؟",
+        "zh": "根据“酸碱平衡与滴定”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\" de rast e?"
       },
       "options": [
         {
@@ -1222,18 +1222,18 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Asit-Baz Dengesi ve Titrasyon konusundaki temel kimyasal kurallar çerçevesinde Tampon Çözelti kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Buffer Solution within the fundamental principles of Acid-Base Equilibrium & Titration?",
-        "de": "Welche Aussage beschreibt das Konzept Pufferlösung im Rahmen von Säure-Base-Gleichgewicht & Titration am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Solution tampon selon les lois de Équilibre Acide-Base & Titrage?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Буферный раствор» в рамках темы «Кислотно-основное равновесие и титрование»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"الحل العازلة\" ضمن قواعد \"الاتزان الحمضي القاعدي والمعايرة\"؟",
-        "zh": "根据“酸碱平衡与滴定”的基本化学原理，下列哪项阐述能最准确地界定“缓冲液”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Çareseriya tampon\" di çarçoveya prensîbên \"Hevsengiya Asîd-Baz û Tîtrakirin\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Asit-Baz Dengesi ve Titrasyon sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Acid-Base Equilibrium & Titration, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Säure-Base-Gleichgewicht & Titration: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Équilibre Acide-Base & Titrage, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Кислотно-основное равновесие и титрование», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“酸碱平衡与滴定”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan daraz rast e?"
       },
       "options": [
         {
-          "tr": "Eşdeğerlik noktasında çözeltinin pH ı daima 7.00 olmak zorundadır.",
+          "tr": "Eşdeğerlik noktasında çözeltinin pH'ı daima 7.00 olmak zorundadır.",
           "en": "At the equivalence point, the pH of the solution must always be 7.00.",
           "de": "Am Äquivalenzpunkt muss der pH-Wert der Lösung immer 7,00 betragen.",
           "fr": "Au point d'équivalence, le pH de la solution doit toujours être de 7,00.",
@@ -1243,7 +1243,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Di xala hevdengiyê de, pH ya çareseriyê divê her gav 7.00 be."
         },
         {
-          "tr": "Ka sı küçük olan asit daha kuvvetlidir.",
+          "tr": "Ka'sı küçük olan asit daha kuvvetlidir.",
           "en": "The acid with smaller muscles is stronger.",
           "de": "Bei kleineren Muskeln ist die Säure stärker.",
           "fr": "L'acide avec des muscles plus petits est plus fort.",
@@ -1263,7 +1263,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "HF asîda herî xurt e ji ber ku camê dihelîne."
         },
         {
-          "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14 tür.",
+          "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14'tür.",
           "en": "The sum of pH + pOH at every temperature is definitely 14.",
           "de": "Die Summe aus pH + pOH beträgt bei jeder Temperatur definitiv 14.",
           "fr": "La somme pH + pOH à chaque température est définitivement de 14.",
@@ -1273,7 +1273,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Di her germahiyê de hejmara pH + pOH bê guman 14 e."
         },
         {
-          "tr": "Bir eşlenik asit-baz çiftinde Ka * Kb = Ksu = 10^-14 tür (25 °C de).",
+          "tr": "Bir eşlenik asit-baz çiftinde Ka * Kb = Ksu = 10^-14'tür (25 °C'de).",
           "en": "In a conjugate acid-base pair, Ka * Kb = Ksu = 10^-14 (at 25 °C).",
           "de": "In einem konjugierten Säure-Base-Paar beträgt Ka * Kb = Ksu = 10^-14 (bei 25 °C).",
           "fr": "Dans une paire acide-base conjuguée, Ka * Kb = Ksu = 10^-14 (à 25 °C).",
@@ -1285,7 +1285,7 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Bir eşlenik asit-baz çiftinde Ka * Kb = Ksu = 10^-14 tür (25 °C de).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Bir eşlenik asit-baz çiftinde Ka * Kb = Ksu = 10^-14'tür (25 °C'de).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"In a conjugate acid-base pair, Ka * Kb = Ksu = 10^-14 (at 25 °C).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"In einem konjugierten Säure-Base-Paar beträgt Ka * Kb = Ksu = 10^-14 (bei 25 °C).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Dans une paire acide-base conjuguée, Ka * Kb = Ksu = 10^-14 (à 25 °C).\". Notion fondamentale du programme officiel de chimie.",
@@ -1298,14 +1298,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Asit-Baz Dengesi ve Titrasyon sorularında karşılaşılan Eşdeğerlik Noktası (Dönüm Noktası) konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Acid-Base Equilibrium & Titration, which assertion regarding Equivalence Point (Turning Point) is correct?",
-        "de": "Welche Feststellung bezüglich Äquivalenzpunkt (Wendepunkt) ist nach den chemischen Gesetzmäßigkeiten von Säure-Base-Gleichgewicht & Titration richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Équilibre Acide-Base & Titrage, quelle affirmation concernant Point d’équivalence (point tournant) est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Кислотно-основное равновесие и титрование», какое положение относительно «Точка эквивалентности (поворотный момент)» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي حكم متعلق بـ \"نقطة التكافؤ (نقطة التحول)\" يعتبر صحيحاً؟",
-        "zh": "在高考“酸碱平衡与滴定”经典考题中，下列有关“当量点（转折点）”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan daraza li ser \"Xala Wekheviyê (Xala Zivirandinê)\" rast e?"
+        "tr": "Aşağıda Asit-Baz Dengesi ve Titrasyon ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Acid-Base Equilibrium & Titration, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Säure-Base-Gleichgewicht & Titration: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Équilibre Acide-Base & Titrage, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Кислотно-основное равновесие и титрование», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“酸碱平衡与滴定”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1319,7 +1319,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Çareseriya tampon pergalek e ku asîdek qels û xwêya wê ya hevgirtî (an jî bingehek qels û xwêya wê ya hevgirtî) dihewîne û li hember guherîna pH-ê radiweste."
         },
         {
-          "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0 dır.",
+          "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0'dır.",
           "en": "In a strong acid strong base titration, pH is 0 at the equivalence point.",
           "de": "Bei einer Titration mit starker Säure und starker Base beträgt der pH-Wert am Äquivalenzpunkt 0.",
           "fr": "Dans un titrage acide fort base forte, le pH est de 0 au point d’équivalence.",
@@ -1374,14 +1374,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin07",
       "stem": {
-        "tr": "Aşağıda Asit-Baz Dengesi ve Titrasyon ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Konjuge (Eşlenik) Asit ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Acid-Base Equilibrium & Titration, which statement about Conjugated Acid is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Säure-Base-Gleichgewicht & Titration: Welche Aussage über Konjugierte Säure ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Équilibre Acide-Base & Titrage, quelle affirmation relative à Acide Conjugué est exacte?",
-        "ru": "На основе фундаментальных положений темы «Кислотно-основное равновесие и титрование», какое суждение о «Конъюгированная кислота» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي عبارة حول \"حمض مترافق\" صحيحة؟",
-        "zh": "基于“酸碱平衡与滴定”的基础化学知识体系，下列关于“共轭酸”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\", kîjan gotin derbarê \"Asîda hevgirtî\" de rast e?"
+        "tr": "Asit-Baz Dengesi ve Titrasyon konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Acid-Base Equilibrium & Titration, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Säure-Base-Gleichgewicht & Titration: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Équilibre Acide-Base & Titrage, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Кислотно-основное равновесие и титрование», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“酸碱平衡与滴定”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1450,18 +1450,18 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin08",
       "stem": {
-        "tr": "Asit-Baz Dengesi ve Titrasyon konusu kapsamında Katyon Hidrolizi ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Acid-Base Equilibrium & Titration, which of the following findings regarding Cation Hydrolysis is scientifically verified?",
-        "de": "Im Rahmen der Einheit Säure-Base-Gleichgewicht & Titration: Welcher der folgenden Befunde zu Kationenhydrolyse ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Équilibre Acide-Base & Titrage, laquelle des constatations suivantes concernant Hydrolyse des cations est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Кислотно-основное равновесие и титрование», какой из следующих выводов относительно «Катионный гидролиз» научно подтверждён?",
-        "ar": "في سياق موضوع \"الاتزان الحمضي القاعدي والمعايرة\"، أي من النتائج التالية المتعلقة بـ \"التحلل الكاتيوني\" مثبتة علمياً؟",
-        "zh": "在“酸碱平衡与滴定”主题范畴内，下列关于“阳离子水解”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan ji van encamên li ser \"Hîdrolîza Cation\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Asit-Baz Dengesi ve Titrasyon ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Acid-Base Equilibrium & Titration, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Säure-Base-Gleichgewicht & Titration: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Équilibre Acide-Base & Titrage, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Кислотно-основное равновесие и титрование», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“酸碱平衡与滴定”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
-          "tr": "Ka sı küçük olan asit daha kuvvetlidir.",
+          "tr": "Ka'sı küçük olan asit daha kuvvetlidir.",
           "en": "The acid with smaller muscles is stronger.",
           "de": "Bei kleineren Muskeln ist die Säure stärker.",
           "fr": "L'acide avec des muscles plus petits est plus fort.",
@@ -1491,7 +1491,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Di titrasyonê de xala hevdengiyê (xala zivirînê): Dema ku hejmara molên H+ yên ji asîdê tên bi hejmara molên OH- yên ji bazê tên (nH+ = nOH-) ye."
         },
         {
-          "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14 tür.",
+          "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14'tür.",
           "en": "The sum of pH + pOH at every temperature is definitely 14.",
           "de": "Die Summe aus pH + pOH beträgt bei jeder Temperatur definitiv 14.",
           "fr": "La somme pH + pOH à chaque température est définitivement de 14.",
@@ -1513,7 +1513,7 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Titrasyonda eşdeğerlik noktası (dönüm noktası): Asitten gelen H+ mol sayısının bazdan gelen OH- mol sayısına eşit olduğu andır (nH+ = nOH-).\" ifadesidir. Zayıf asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH > 7 dir!",
+        "tr": "Doğru cevap \"Titrasyonda eşdeğerlik noktası (dönüm noktası): Asitten gelen H+ mol sayısının bazdan gelen OH- mol sayısına eşit olduğu andır (nH+ = nOH-).\" ifadesidir. Zayıf asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH > 7'dir!",
         "en": "The correct statement is: \"Equivalence point (turning point) in titration: It is the moment when the number of moles of H+ coming from the acid is equal to the number of moles of OH- coming from the base (nH+ = nOH-).\". In weak acid - strong base titration, the pH at the equivalence point is > 7!",
         "de": "Die zutreffende Aussage lautet: \"Äquivalenzpunkt (Wendepunkt) bei der Titration: Dies ist der Moment, in dem die Anzahl der Mol H+ aus der Säure gleich der Anzahl Mol OH- aus der Base ist (nH+ = nOH-).\". Bei der Titration schwache Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt > 7!",
         "fr": "L'affirmation exacte est: \"Point d'équivalence (tournant) en titrage : C'est le moment où le nombre de moles de H+ provenant de l'acide est égal au nombre de moles de OH- provenant de la base (nH+ = nOH-).\". Dans le titrage acide faible - base forte, le pH au point d'équivalence est > 7 !",
@@ -1526,14 +1526,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Asit-Baz Dengesi ve Titrasyon ünitesinde ele alınan Kuvvetli Asit hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Acid-Base Equilibrium & Titration, which statement about Strong Acid is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Säure-Base-Gleichgewicht & Titration: Welche Aussage über Starke Säure ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Équilibre Acide-Base & Titrage, quelle affirmation relative à Acide Fort est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Кислотно-основное равновесие и титрование», какое утверждение о «Сильная кислота» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي عبارة حول \"حمض قوي\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“酸碱平衡与滴定”单元中关于“强酸”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\", kîjan gotin li ser \"Asîda xurt\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Asit-Baz Dengesi ve Titrasyon konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Acid-Base Equilibrium & Titration, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Säure-Base-Gleichgewicht & Titration die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Équilibre Acide-Base & Titrage, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Кислотно-основное равновесие и титрование», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الاتزان الحمضي القاعدي والمعايرة\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“酸碱平衡与滴定”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1567,7 +1567,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Asîdên qels di avê de qet îyonîze nabin."
         },
         {
-          "tr": "Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00 dir.",
+          "tr": "Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00'dir.",
           "en": "In the strong acid - strong base titration, the pH at the equivalence point is exactly 7.00.",
           "de": "Bei der Titration starke Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt genau 7,00.",
           "fr": "Dans le titrage acide fort - base forte, le pH au point d’équivalence est exactement de 7,00.",
@@ -1589,7 +1589,7 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00 dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00'dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"In the strong acid - strong base titration, the pH at the equivalence point is exactly 7.00.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Bei der Titration starke Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt genau 7,00.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Dans le titrage acide fort - base forte, le pH au point d’équivalence est exactement de 7,00.\". Notion fondamentale du programme officiel de chimie.",
@@ -1602,14 +1602,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Asit-Baz Dengesi ve Titrasyon konusunu işlerken Eşdeğerlik Noktası üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Acid-Base Equilibrium & Titration, which statement regarding Equivalence Point represents the correct answer?",
-        "de": "Welche Aussage zu Äquivalenzpunkt stellt im Kontext von Säure-Base-Gleichgewicht & Titration die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Équilibre Acide-Base & Titrage, quelle proposition sur Point d'équivalence constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Кислотно-основное равновесие и титрование», какой ответ относительно «Точка эквивалентности» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الاتزان الحمضي القاعدي والمعايرة\" مخبرياً، أي إجابة بخصوص \"نقطة التكافؤ\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“酸碱平衡与滴定”实验探究与教学分析中，针对“当量点”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan bersiv derbarê \"Xala Wekheviyê\" de rast e?"
+        "tr": "Kimya dersinde Asit-Baz Dengesi ve Titrasyon ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Acid-Base Equilibrium & Titration, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Säure-Base-Gleichgewicht & Titration: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Équilibre Acide-Base & Titrage, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Кислотно-основное равновесие и титрование», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“酸碱平衡与滴定”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1678,14 +1678,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin11",
       "stem": {
-        "tr": "Kimya dersinde Asit-Baz Dengesi ve Titrasyon ünitesi incelenirken Kuvvetli Asit (HCl) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Acid-Base Equilibrium & Titration, which of the following propositions concerning Strong Acid (HCl) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Säure-Base-Gleichgewicht & Titration: Welche Behauptung bezüglich Starke Säure (HCl) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Équilibre Acide-Base & Titrage, laquelle des affirmations suivantes concernant Acide fort (HCl) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Кислотно-основное равновесие и титрование», какое из следующих суждений о «Сильная кислота (HCl)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي من الأحكام التالية المتعلقة بـ \"حمض قوي (حمض الهيدروكلوريك)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“酸碱平衡与滴定”核心规律时，下列关于“强酸（HCl）”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\" tê kirin, kîjan daraza li ser \"Asîda Xurt (HCl)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Asit-Baz Dengesi ve Titrasyon konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Acid-Base Equilibrium & Titration?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Säure-Base-Gleichgewicht & Titration zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Équilibre Acide-Base & Titrage ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Кислотно-основное равновесие и титрование»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"؟",
+        "zh": "根据“酸碱平衡与滴定”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\" de rast e?"
       },
       "options": [
         {
@@ -1709,7 +1709,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "HF asîda herî xurt e ji ber ku camê dihelîne."
         },
         {
-          "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14 tür.",
+          "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14'tür.",
           "en": "The sum of pH + pOH at every temperature is definitely 14.",
           "de": "Die Summe aus pH + pOH beträgt bei jeder Temperatur definitiv 14.",
           "fr": "La somme pH + pOH à chaque température est définitivement de 14.",
@@ -1754,14 +1754,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Asit-Baz Dengesi ve Titrasyon konusundaki temel kimyasal kurallar çerçevesinde Asit Ayrışma Sabiti (Ka) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Acid Dissociation Constant (Ka) within the fundamental principles of Acid-Base Equilibrium & Titration?",
-        "de": "Welche Aussage beschreibt das Konzept Säuredissoziationskonstante (Ka) im Rahmen von Säure-Base-Gleichgewicht & Titration am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Constante de dissociation acide (Ka) selon les lois de Équilibre Acide-Base & Titrage?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Константа диссоциации кислоты (Ка)» в рамках темы «Кислотно-основное равновесие и титрование»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"ثابت تفكك الحمض (Ka)\" ضمن قواعد \"الاتزان الحمضي القاعدي والمعايرة\"؟",
-        "zh": "根据“酸碱平衡与滴定”的基本化学原理，下列哪项阐述能最准确地界定“酸解离常数 (Ka)”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Berdewamiya Veqetîna Asîdê (Ka)\" di çarçoveya prensîbên \"Hevsengiya Asîd-Baz û Tîtrakirin\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Asit-Baz Dengesi ve Titrasyon sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Acid-Base Equilibrium & Titration, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Säure-Base-Gleichgewicht & Titration: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Équilibre Acide-Base & Titrage, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Кислотно-основное равновесие и титрование», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“酸碱平衡与滴定”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1805,7 +1805,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Nirxa Kb ya bingeha hevgirtî ya asîda bi nirxa Ka ya bilind jî pir zêde ye."
         },
         {
-          "tr": "Eşdeğerlik noktasında çözeltinin pH ı daima 7.00 olmak zorundadır.",
+          "tr": "Eşdeğerlik noktasında çözeltinin pH'ı daima 7.00 olmak zorundadır.",
           "en": "At the equivalence point, the pH of the solution must always be 7.00.",
           "de": "Am Äquivalenzpunkt muss der pH-Wert der Lösung immer 7,00 betragen.",
           "fr": "Au point d'équivalence, le pH de la solution doit toujours être de 7,00.",
@@ -1830,14 +1830,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Asit-Baz Dengesi ve Titrasyon sorularında karşılaşılan Tampon Çözelti konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Acid-Base Equilibrium & Titration, which assertion regarding Buffer Solution is correct?",
-        "de": "Welche Feststellung bezüglich Pufferlösung ist nach den chemischen Gesetzmäßigkeiten von Säure-Base-Gleichgewicht & Titration richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Équilibre Acide-Base & Titrage, quelle affirmation concernant Solution tampon est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Кислотно-основное равновесие и титрование», какое положение относительно «Буферный раствор» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي حكم متعلق بـ \"الحل العازلة\" يعتبر صحيحاً؟",
-        "zh": "在高考“酸碱平衡与滴定”经典考题中，下列有关“缓冲液”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan daraza li ser \"Çareseriya tampon\" rast e?"
+        "tr": "Aşağıda Asit-Baz Dengesi ve Titrasyon ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Acid-Base Equilibrium & Titration, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Säure-Base-Gleichgewicht & Titration: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Équilibre Acide-Base & Titrage, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Кислотно-основное равновесие и титрование», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“酸碱平衡与滴定”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1861,7 +1861,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Pîvana H+ ya asîda qels bi kêşeya destpêkê re ye."
         },
         {
-          "tr": "Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb dir (Z: tesir/etki değerliği).",
+          "tr": "Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb'dir (Z: tesir/etki değerliği).",
           "en": "At the point of equivalence, the formula is: Ma * Va * Za = Mb * Vb * Zb (Z: potency).",
           "de": "Am Äquivalenzpunkt lautet die Formel: Ma * Va * Za = Mb * Vb * Zb (Z: Potenz).",
           "fr": "Au point d'équivalence, la formule est : Ma * Va * Za = Mb * Vb * Zb (Z : puissance).",
@@ -1881,7 +1881,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Çareseriya tampon ji tevliheviya asîda xurt û bazê xurt pêk tê."
         },
         {
-          "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0 dır.",
+          "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0'dır.",
           "en": "In a strong acid strong base titration, pH is 0 at the equivalence point.",
           "de": "Bei einer Titration mit starker Säure und starker Base beträgt der pH-Wert am Äquivalenzpunkt 0.",
           "fr": "Dans un titrage acide fort base forte, le pH est de 0 au point d’équivalence.",
@@ -1893,7 +1893,7 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb dir (Z: tesir/etki değerliği).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb'dir (Z: tesir/etki değerliği).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"At the point of equivalence, the formula is: Ma * Va * Za = Mb * Vb * Zb (Z: potency).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Am Äquivalenzpunkt lautet die Formel: Ma * Va * Za = Mb * Vb * Zb (Z: Potenz).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Au point d'équivalence, la formule est : Ma * Va * Za = Mb * Vb * Zb (Z : puissance).\". Notion fondamentale du programme officiel de chimie.",
@@ -1906,18 +1906,18 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin14",
       "stem": {
-        "tr": "Aşağıda Asit-Baz Dengesi ve Titrasyon ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Eşdeğerlik Noktası (Dönüm Noktası) ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Acid-Base Equilibrium & Titration, which statement about Equivalence Point (Turning Point) is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Säure-Base-Gleichgewicht & Titration: Welche Aussage über Äquivalenzpunkt (Wendepunkt) ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Équilibre Acide-Base & Titrage, quelle affirmation relative à Point d’équivalence (point tournant) est exacte?",
-        "ru": "На основе фундаментальных положений темы «Кислотно-основное равновесие и титрование», какое суждение о «Точка эквивалентности (поворотный момент)» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي عبارة حول \"نقطة التكافؤ (نقطة التحول)\" صحيحة؟",
-        "zh": "基于“酸碱平衡与滴定”的基础化学知识体系，下列关于“当量点（转折点）”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\", kîjan gotin derbarê \"Xala Wekheviyê (Xala Zivirandinê)\" de rast e?"
+        "tr": "Asit-Baz Dengesi ve Titrasyon konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Acid-Base Equilibrium & Titration, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Säure-Base-Gleichgewicht & Titration: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Équilibre Acide-Base & Titrage, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Кислотно-основное равновесие и титрование», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“酸碱平衡与滴定”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
-          "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14 tür.",
+          "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14'tür.",
           "en": "The sum of pH + pOH at every temperature is definitely 14.",
           "de": "Die Summe aus pH + pOH beträgt bei jeder Temperatur definitiv 14.",
           "fr": "La somme pH + pOH à chaque température est définitivement de 14.",
@@ -1982,14 +1982,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin15",
       "stem": {
-        "tr": "Asit-Baz Dengesi ve Titrasyon konusu kapsamında Konjuge (Eşlenik) Asit ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Acid-Base Equilibrium & Titration, which of the following findings regarding Conjugated Acid is scientifically verified?",
-        "de": "Im Rahmen der Einheit Säure-Base-Gleichgewicht & Titration: Welcher der folgenden Befunde zu Konjugierte Säure ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Équilibre Acide-Base & Titrage, laquelle des constatations suivantes concernant Acide Conjugué est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Кислотно-основное равновесие и титрование», какой из следующих выводов относительно «Конъюгированная кислота» научно подтверждён?",
-        "ar": "في سياق موضوع \"الاتزان الحمضي القاعدي والمعايرة\"، أي من النتائج التالية المتعلقة بـ \"حمض مترافق\" مثبتة علمياً؟",
-        "zh": "在“酸碱平衡与滴定”主题范畴内，下列关于“共轭酸”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan ji van encamên li ser \"Asîda hevgirtî\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Asit-Baz Dengesi ve Titrasyon ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Acid-Base Equilibrium & Titration, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Säure-Base-Gleichgewicht & Titration: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Équilibre Acide-Base & Titrage, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Кислотно-основное равновесие и титрование», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“酸碱平衡与滴定”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2013,7 +2013,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Nirxa Kb ya bingeha hevgirtî ya asîda bi nirxa Ka ya bilind jî pir zêde ye."
         },
         {
-          "tr": "Eşdeğerlik noktasında çözeltinin pH ı daima 7.00 olmak zorundadır.",
+          "tr": "Eşdeğerlik noktasında çözeltinin pH'ı daima 7.00 olmak zorundadır.",
           "en": "At the equivalence point, the pH of the solution must always be 7.00.",
           "de": "Am Äquivalenzpunkt muss der pH-Wert der Lösung immer 7,00 betragen.",
           "fr": "Au point d'équivalence, le pH de la solution doit toujours être de 7,00.",
@@ -2023,7 +2023,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Di xala hevdengiyê de, pH ya çareseriyê divê her gav 7.00 be."
         },
         {
-          "tr": "Ka sı küçük olan asit daha kuvvetlidir.",
+          "tr": "Ka'sı küçük olan asit daha kuvvetlidir.",
           "en": "The acid with smaller muscles is stronger.",
           "de": "Bei kleineren Muskeln ist die Säure stärker.",
           "fr": "L'acide avec des muscles plus petits est plus fort.",
@@ -2058,18 +2058,18 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Asit-Baz Dengesi ve Titrasyon ünitesinde ele alınan Katyon Hidrolizi hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Acid-Base Equilibrium & Titration, which statement about Cation Hydrolysis is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Säure-Base-Gleichgewicht & Titration: Welche Aussage über Kationenhydrolyse ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Équilibre Acide-Base & Titrage, quelle affirmation relative à Hydrolyse des cations est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Кислотно-основное равновесие и титрование», какое утверждение о «Катионный гидролиз» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الاتزان الحمضي القاعدي والمعايرة\"، أي عبارة حول \"التحلل الكاتيوني\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“酸碱平衡与滴定”单元中关于“阳离子水解”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\", kîjan gotin li ser \"Hîdrolîza Cation\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Asit-Baz Dengesi ve Titrasyon konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Acid-Base Equilibrium & Titration, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Säure-Base-Gleichgewicht & Titration die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Équilibre Acide-Base & Titrage, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Кислотно-основное равновесие и титрование», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الاتزان الحمضي القاعدي والمعايرة\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“酸碱平衡与滴定”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Hevsengiya Asîd-Baz û Tîtrakirin\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
-          "tr": "İndikatörler ortamın pH ına bağlı olarak renk değiştiren zayıf organik asit veya bazlardır.",
+          "tr": "İndikatörler ortamın pH'ına bağlı olarak renk değiştiren zayıf organik asit veya bazlardır.",
           "en": "Indicators are weak organic acids or bases that change color depending on the pH of the environment.",
           "de": "Indikatoren sind schwache organische Säuren oder Basen, die je nach pH-Wert der Umgebung ihre Farbe ändern.",
           "fr": "Les indicateurs sont des acides ou des bases organiques faibles qui changent de couleur en fonction du pH de l'environnement.",
@@ -2099,7 +2099,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Çareseriya tampon ji tevliheviya asîda xurt û bazê xurt pêk tê."
         },
         {
-          "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0 dır.",
+          "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0'dır.",
           "en": "In a strong acid strong base titration, pH is 0 at the equivalence point.",
           "de": "Bei einer Titration mit starker Säure und starker Base beträgt der pH-Wert am Äquivalenzpunkt 0.",
           "fr": "Dans un titrage acide fort base forte, le pH est de 0 au point d’équivalence.",
@@ -2121,7 +2121,7 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"İndikatörler ortamın pH ına bağlı olarak renk değiştiren zayıf organik asit veya bazlardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"İndikatörler ortamın pH'ına bağlı olarak renk değiştiren zayıf organik asit veya bazlardır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Indicators are weak organic acids or bases that change color depending on the pH of the environment.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Indikatoren sind schwache organische Säuren oder Basen, die je nach pH-Wert der Umgebung ihre Farbe ändern.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Les indicateurs sont des acides ou des bases organiques faibles qui changent de couleur en fonction du pH de l'environnement.\". Notion fondamentale du programme officiel de chimie.",

@@ -15,6 +15,18 @@ export function setSfxEnabled(on: boolean): void {
   enabled = on;
 }
 
+export function isSfxEnabled(): boolean {
+  return enabled;
+}
+
+export function getSfxVolume(): number {
+  return masterVolume;
+}
+
+export function getAudioContext(): AudioContext | null {
+  return ctx;
+}
+
 export function setSfxVolume(vol: number): void {
   masterVolume = Math.max(0, Math.min(1, vol));
   if (bus && ctx) {
@@ -413,4 +425,7 @@ export const sfx = {
   },
   setEnabled: setSfxEnabled,
   setVolume: setSfxVolume,
+  isEnabled: isSfxEnabled,
+  getVolume: getSfxVolume,
+  getContext: getAudioContext,
 };

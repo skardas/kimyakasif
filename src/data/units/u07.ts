@@ -244,7 +244,7 @@ export const unit07: ChemistryUnitSeedData = {
         "ku": "Hîdrokarbon (CxHy) dema bi tevahî dişewitin tenê CO2 û H2O derdixin."
       },
       "trap": {
-        "tr": "Hidrokarbonlar yandığında CO2 nin yanında H2 gazı açığa çıkar.",
+        "tr": "Hidrokarbonlar yandığında CO2'nin yanında H2 gazı açığa çıkar.",
         "en": "When hydrocarbons burn, H2 gas is released along with CO2.",
         "de": "Bei der Verbrennung von Kohlenwasserstoffen wird neben CO2 auch H2-Gas freigesetzt.",
         "fr": "Lorsque les hydrocarbures brûlent, du gaz H2 est libéré avec du CO2.",
@@ -303,7 +303,7 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-f12",
       "fact": {
-        "tr": "Saflık yüzdesi = (Saf Madde Kütlesi / Numune Kütlesi) x 100 dür.",
+        "tr": "Saflık yüzdesi = (Saf Madde Kütlesi / Numune Kütlesi) x 100'dür.",
         "en": "Purity percentage = (Pure Substance Mass / Sample Mass) x 100.",
         "de": "Reinheitsprozentsatz = (Reinstoffmasse / Probenmasse) x 100.",
         "fr": "Pourcentage de pureté = (Masse de substance pure / Masse d'échantillon) x 100.",
@@ -349,7 +349,7 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-f14",
       "fact": {
-        "tr": "AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde seyirci iyonlar Na+ ve NO3- dır.",
+        "tr": "AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde seyirci iyonlar Na+ ve NO3-'dır.",
         "en": "In the reaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), the spectator ions are Na+ and NO3-.",
         "de": "Bei der Reaktion AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) sind die Zuschauerionen Na+ und NO3-.",
         "fr": "Dans la réaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), les ions spectateurs sont Na+ et NO3-.",
@@ -651,34 +651,34 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-c08",
       "conceptA": {
-        "tr": "Homojen Tepkime",
-        "en": "Homogeneous Reaction",
-        "de": "Homogene Reaktion",
-        "fr": "Réaction homogène",
-        "ru": "Гомогенная реакция",
-        "ar": "تفاعل متجانس",
-        "zh": "均相反应",
-        "ku": "Reaksiyona Hêmojen"
+        "tr": "Sentez",
+        "en": "synthesis",
+        "de": "Synthese",
+        "fr": "synthèse",
+        "ru": "синтез",
+        "ar": "التوليف",
+        "zh": "合成",
+        "ku": "sentez"
       },
       "conceptB": {
-        "tr": "Heterojen Tepkime",
-        "en": "Heterogeneous Reaction",
-        "de": "Heterogene Reaktion",
-        "fr": "Réaction hétérogène",
-        "ru": "Гетерогенная реакция",
-        "ar": "تفاعل غير متجانس",
-        "zh": "非均相反应",
-        "ku": "Reaksiyona Heterojen"
+        "tr": "Analiz",
+        "en": "Analysis",
+        "de": "Analyse",
+        "fr": "Analyse",
+        "ru": "Анализ",
+        "ar": "التحليل",
+        "zh": "分析",
+        "ku": "Analysis"
       },
       "distinction": {
-        "tr": "Homojen tepkimelerde reaktif ve ürünlerin tümü aynı fiziksel fazdadır; heterojen tepkimelerde maddeler en az iki farklı fiziksel fazda bulunur.",
-        "en": "In homogeneous reactions, all reactants and products are in the same phase; in heterogeneous reactions, species exist in at least two different phases.",
-        "de": "In homogenen Reaktionen liegen alle Edukte und Produkte in derselben Phase vor; in heterogenen Reaktionen in mindestens zwei verschiedenen Phasen.",
-        "fr": "Dans les réactions homogènes, réactifs et produits sont dans la même phase ; dans les réactions hétérogènes, ils existent en plusieurs phases.",
-        "ru": "В гомогенных реакциях все реагенты и продукты находятся в одной фазе; в гетерогенных реакциях участвуют вещества в разных фазах.",
-        "ar": "في التفاعلات المتجانسة، تكون جميع المواد المتفاعلة والناتجة في نفس الطور؛ في التفاعلات غير المتجانسة، توجد في أطوار مختلفة.",
-        "zh": "均相反应中所有反应物和产物都处于同一物理相；非均相反应中各物质存在于至少两个不同的物理相中。",
-        "ku": "Di reaksiyonên hêmojen de hemî madeyên dikevin û derdikevin di heman qonaxê de ne; di yên heterojen de herî kêm di du qonaxan de ne."
+        "tr": "Sentez maddelerin birleşerek tek ürün vermesi; analiz tek bileşiğin parçalanarak ayrışmasıdır.",
+        "en": "Synthetic substances combine to produce a single product; analysis is the disintegration of a single compound.",
+        "de": "Synthetische Stoffe verbinden sich zu einem einzigen Produkt; Analyse ist der Zerfall einer einzelnen Verbindung.",
+        "fr": "Les substances synthétiques se combinent pour produire un seul produit ; l’analyse est la désintégration d’un seul composé.",
+        "ru": "Синтетические вещества объединяются для производства единого продукта; Анализ представляет собой распад одного соединения.",
+        "ar": "تجتمع المواد الاصطناعية لتنتج منتجاً واحداً؛ التحليل هو تفكك مركب واحد.",
+        "zh": "合成物质结合起来生产单一产品；分析是单个化合物的分解。",
+        "ku": "Materyalên sentetîk bi hev re hilberek yekane çêdikin; analîz perçebûna yek pêkhatî ye."
       }
     }
   ],
@@ -908,7 +908,7 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin01",
       "stem": {
-        "tr": "C3H8 + 5 O2 -> 3 CO2 + 4 H2O tepkimesine göre 0.2 mol C3H8 in tamamen yanması için normal koşullarda en az kaç litre O2 gazı gereklidir?",
+        "tr": "C3H8 + 5 O2 -> 3 CO2 + 4 H2O tepkimesine göre 0.2 mol C3H8'in tamamen yanması için normal koşullarda en az kaç litre O2 gazı gereklidir?",
         "en": "According to the reaction C3H8 + 5 O2 -> 3 CO2 + 4 H2O, how many liters of O2 gas are required under normal conditions for the complete combustion of 0.2 mol C3H8?",
         "de": "Wie viele Liter O2-Gas werden gemäß der Reaktion C3H8 + 5 O2 -> 3 CO2 + 4 H2O unter Normalbedingungen für die vollständige Verbrennung von 0,2 mol C3H8 benötigt?",
         "fr": "D'après la réaction C3H8 + 5 O2 -> 3 CO2 + 4 H2O, combien de litres de gaz O2 sont nécessaires dans des conditions normales pour la combustion complète de 0,2 mole de C3H8 ?",
@@ -971,7 +971,7 @@ export const unit07: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "1 mol C3H8 için 5 mol O2 gerekir. 0.2 mol C3H8 için 0.2 * 5 = 1.0 mol O2 gerekir. 1 mol gaz NK da 22.4 L dir.",
+        "tr": "1 mol C3H8 için 5 mol O2 gerekir. 0.2 mol C3H8 için 0.2 * 5 = 1.0 mol O2 gerekir. 1 mol gaz NK'da 22.4 L'dir.",
         "en": "5 moles of O2 are required for 1 mole of C3H8. 0.2 mol C3H8 requires 0.2 * 5 = 1.0 mol O2. 1 mole of gas in NC is 22.4 L.",
         "de": "Für 1 Mol C3H8 werden 5 Mol O2 benötigt. 0,2 mol C3H8 erfordern 0,2 * 5 = 1,0 mol O2. 1 Mol Gas in NC entspricht 22,4 l.",
         "fr": "Il faut 5 moles d’O2 pour 1 mole de C3H8. 0,2 mole de C3H8 nécessite 0,2 * 5 = 1,0 mole d'O2. 1 mole de gaz en NC équivaut à 22,4 L.",
@@ -1060,14 +1060,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimeler ve Hesaplamalar konusunu işlerken Sentez (Oluşum) Tepkimesi üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Chemical Reactions & Stoichiometry, which statement regarding Synthesis Reaction represents the correct answer?",
-        "de": "Welche Aussage zu Synthesereaktion stellt im Kontext von Chemische Reaktionen & Stöchiometrie die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Réactions Chimiques & Calculs, quelle proposition sur Réaction de synthèse constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Химические реакции и стехиометрия», какой ответ относительно «Реакция синтеза» является правильным?",
-        "ar": "أثناء دراسة موضوع \"التفاعلات الكيميائية والحسابات\" مخبرياً، أي إجابة بخصوص \"رد فعل التوليف\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学反应与计算”实验探究与教学分析中，针对“合成反应”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan bersiv derbarê \"Reaksiyona Sentezê\" de rast e?"
+        "tr": "Kimya dersinde Kimyasal Tepkimeler ve Hesaplamalar ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Chemical Reactions & Stoichiometry, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Chemische Reaktionen & Stöchiometrie: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Réactions Chimiques & Calculs, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Химические реакции и стехиометрия», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"التفاعلات الكيميائية والحسابات\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学反应与计算”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Reaksiyonên Kîmyewî û Hesab\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1081,7 +1081,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ku": "Li gorî îyonên temaşeker ên ku di çareseriyê de mane hevkêşeya îyonên tevniv tê nivîsandin."
         },
         {
-          "tr": "Hidrokarbonlar yandığında CO2 nin yanında H2 gazı açığa çıkar.",
+          "tr": "Hidrokarbonlar yandığında CO2'nin yanında H2 gazı açığa çıkar.",
           "en": "When hydrocarbons burn, H2 gas is released along with CO2.",
           "de": "Bei der Verbrennung von Kohlenwasserstoffen wird neben CO2 auch H2-Gas freigesetzt.",
           "fr": "Lorsque les hydrocarbures brûlent, du gaz H2 est libéré avec du CO2.",
@@ -1136,14 +1136,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin04",
       "stem": {
-        "tr": "Kimya dersinde Kimyasal Tepkimeler ve Hesaplamalar ünitesi incelenirken Ekzotermik Tepkime ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Chemical Reactions & Stoichiometry, which of the following propositions concerning Exothermic Reaction is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Chemische Reaktionen & Stöchiometrie: Welche Behauptung bezüglich Exotherme Reaktion entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Réactions Chimiques & Calculs, laquelle des affirmations suivantes concernant Réaction exothermique est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Химические реакции и стехиометрия», какое из следующих суждений о «Экзотермическая реакция» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"التفاعلات الكيميائية والحسابات\"، أي من الأحكام التالية المتعلقة بـ \"رد فعل طارد للحرارة\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学反应与计算”核心规律时，下列关于“放热反应”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Reaksiyonên Kîmyewî û Hesab\" tê kirin, kîjan daraza li ser \"Reaksiyona Exotermîk\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimeler ve Hesaplamalar konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Chemical Reactions & Stoichiometry?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Chemische Reaktionen & Stöchiometrie zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Réactions Chimiques & Calculs ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Химические реакции и стехиометрия»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"التفاعلات الكيميائية والحسابات\"؟",
+        "zh": "根据“化学反应与计算”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Reaksiyonên Kîmyewî û Hesab\" de rast e?"
       },
       "options": [
         {
@@ -1212,14 +1212,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimeler ve Hesaplamalar konusundaki temel kimyasal kurallar çerçevesinde Sınırlayıcı Bileşen kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Limiting Component within the fundamental principles of Chemical Reactions & Stoichiometry?",
-        "de": "Welche Aussage beschreibt das Konzept Begrenzende Komponente im Rahmen von Chemische Reaktionen & Stöchiometrie am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Composant limitant selon les lois de Réactions Chimiques & Calculs?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Ограничивающий компонент» в рамках темы «Химические реакции и стехиометрия»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"مكون الحد\" ضمن قواعد \"التفاعلات الكيميائية والحسابات\"؟",
-        "zh": "根据“化学反应与计算”的基本化学原理，下列哪项阐述能最准确地界定“限制元件”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Parvekirina Sînorkirin\" di çarçoveya prensîbên \"Reaksiyonên Kîmyewî û Hesab\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimeler ve Hesaplamalar sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Chemical Reactions & Stoichiometry, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Chemische Reaktionen & Stöchiometrie: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Réactions Chimiques & Calculs, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Химические реакции и стехиометрия», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التفاعلات الكيميائية والحسابات\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学反应与计算”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1288,14 +1288,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimeler ve Hesaplamalar sorularında karşılaşılan Net İyon Denklemi konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Chemical Reactions & Stoichiometry, which assertion regarding Net Ion Equation is correct?",
-        "de": "Welche Feststellung bezüglich Nettoionengleichung ist nach den chemischen Gesetzmäßigkeiten von Chemische Reaktionen & Stöchiometrie richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Réactions Chimiques & Calculs, quelle affirmation concernant Équation des ions nets est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Химические реакции и стехиометрия», какое положение относительно «Чистое ионное уравнение» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التفاعلات الكيميائية والحسابات\"، أي حكم متعلق بـ \"معادلة صافي الأيونات\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学反应与计算”经典考题中，下列有关“净离子方程”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan daraza li ser \"Wekheviya Net Ion\" rast e?"
+        "tr": "Aşağıda Kimyasal Tepkimeler ve Hesaplamalar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Chemical Reactions & Stoichiometry, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Chemische Reaktionen & Stöchiometrie: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Réactions Chimiques & Calculs, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Химические реакции и стехиометрия», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التفاعلات الكيميائية والحسابات\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学反应与计算”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Reaksiyonên Kîmyewî û Hesab\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1309,7 +1309,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ku": "Di reaksiyona belavbûn-barînê de hevkêşeya îyonê ya tevn li gorî îyonên ku barîna hişk pêk tînin tê nivîsandin."
         },
         {
-          "tr": "Hidrokarbonlar yandığında CO2 nin yanında H2 gazı açığa çıkar.",
+          "tr": "Hidrokarbonlar yandığında CO2'nin yanında H2 gazı açığa çıkar.",
           "en": "When hydrocarbons burn, H2 gas is released along with CO2.",
           "de": "Bei der Verbrennung von Kohlenwasserstoffen wird neben CO2 auch H2-Gas freigesetzt.",
           "fr": "Lorsque les hydrocarbures brûlent, du gaz H2 est libéré avec du CO2.",
@@ -1364,14 +1364,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin07",
       "stem": {
-        "tr": "Aşağıda Kimyasal Tepkimeler ve Hesaplamalar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Yanma Tepkimesi ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Chemical Reactions & Stoichiometry, which statement about Combustion Reaction is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Chemische Reaktionen & Stöchiometrie: Welche Aussage über Verbrennungsreaktion ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Réactions Chimiques & Calculs, quelle affirmation relative à Réaction de combustion est exacte?",
-        "ru": "На основе фундаментальных положений темы «Химические реакции и стехиометрия», какое суждение о «Реакция горения» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التفاعلات الكيميائية والحسابات\"، أي عبارة حول \"رد فعل الاحتراق\" صحيحة؟",
-        "zh": "基于“化学反应与计算”的基础化学知识体系，下列关于“燃烧反应”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Reaksiyonên Kîmyewî û Hesab\", kîjan gotin derbarê \"Reaksiyona şewitandinê\" de rast e?"
+        "tr": "Kimyasal Tepkimeler ve Hesaplamalar konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Chemical Reactions & Stoichiometry, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Chemische Reaktionen & Stöchiometrie: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Réactions Chimiques & Calculs, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Химические реакции и стехиометрия», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"التفاعلات الكيميائية والحسابات\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学反应与计算”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1440,14 +1440,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin08",
       "stem": {
-        "tr": "Kimyasal Tepkimeler ve Hesaplamalar konusu kapsamında Homojen Tepkime ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Chemical Reactions & Stoichiometry, which of the following findings regarding Homogeneous Reaction is scientifically verified?",
-        "de": "Im Rahmen der Einheit Chemische Reaktionen & Stöchiometrie: Welcher der folgenden Befunde zu Homogene Reaktion ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Réactions Chimiques & Calculs, laquelle des constatations suivantes concernant Réaction homogène est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Химические реакции и стехиометрия», какой из следующих выводов относительно «Гомогенная реакция» научно подтверждён?",
-        "ar": "في سياق موضوع \"التفاعلات الكيميائية والحسابات\"، أي من النتائج التالية المتعلقة بـ \"تفاعل متجانس\" مثبتة علمياً؟",
-        "zh": "在“化学反应与计算”主题范畴内，下列关于“均相反应”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan ji van encamên li ser \"Reaksiyona Hêmojen\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimeler ve Hesaplamalar ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Chemical Reactions & Stoichiometry, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Chemische Reaktionen & Stöchiometrie: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Réactions Chimiques & Calculs, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Химические реакции и стехиометрия», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التفاعلات الكيميائية والحسابات\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学反应与计算”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Reaksiyonên Kîmyewî û Hesab\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1516,14 +1516,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimeler ve Hesaplamalar ünitesinde ele alınan Sentez hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Chemical Reactions & Stoichiometry, which statement about synthesis is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Chemische Reaktionen & Stöchiometrie: Welche Aussage über Synthese ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Réactions Chimiques & Calculs, quelle affirmation relative à synthèse est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Химические реакции и стехиометрия», какое утверждение о «синтез» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التفاعلات الكيميائية والحسابات\"، أي عبارة حول \"التوليف\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学反应与计算”单元中关于“合成”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Reaksiyonên Kîmyewî û Hesab\", kîjan gotin li ser \"sentez\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimeler ve Hesaplamalar konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Chemical Reactions & Stoichiometry, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Chemische Reaktionen & Stöchiometrie die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Réactions Chimiques & Calculs, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Химические реакции и стехиометрия», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"التفاعلات الكيميائية والحسابات\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学反应与计算”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1592,14 +1592,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimeler ve Hesaplamalar konusunu işlerken Gerçek Verim üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Chemical Reactions & Stoichiometry, which statement regarding Actual Yield represents the correct answer?",
-        "de": "Welche Aussage zu Tatsächlicher Ertrag stellt im Kontext von Chemische Reaktionen & Stöchiometrie die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Réactions Chimiques & Calculs, quelle proposition sur Rendement réel constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Химические реакции и стехиометрия», какой ответ относительно «Фактическая доходность» является правильным?",
-        "ar": "أثناء دراسة موضوع \"التفاعلات الكيميائية والحسابات\" مخبرياً، أي إجابة بخصوص \"العائد الفعلي\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学反应与计算”实验探究与教学分析中，针对“实际产量”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan bersiv derbarê \"Hilberîna Rastî\" de rast e?"
+        "tr": "Kimya dersinde Kimyasal Tepkimeler ve Hesaplamalar ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Chemical Reactions & Stoichiometry, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Chemische Reaktionen & Stöchiometrie: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Réactions Chimiques & Calculs, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Химические реакции и стехиометрия», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"التفاعلات الكيميائية والحسابات\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学反应与计算”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Reaksiyonên Kîmyewî û Hesab\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1668,14 +1668,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin11",
       "stem": {
-        "tr": "Kimya dersinde Kimyasal Tepkimeler ve Hesaplamalar ünitesi incelenirken Sentez (Oluşum) Tepkimesi ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Chemical Reactions & Stoichiometry, which of the following propositions concerning Synthesis Reaction is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Chemische Reaktionen & Stöchiometrie: Welche Behauptung bezüglich Synthesereaktion entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Réactions Chimiques & Calculs, laquelle des affirmations suivantes concernant Réaction de synthèse est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Химические реакции и стехиометрия», какое из следующих суждений о «Реакция синтеза» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"التفاعلات الكيميائية والحسابات\"، أي من الأحكام التالية المتعلقة بـ \"رد فعل التوليف\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学反应与计算”核心规律时，下列关于“合成反应”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Reaksiyonên Kîmyewî û Hesab\" tê kirin, kîjan daraza li ser \"Reaksiyona Sentezê\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimeler ve Hesaplamalar konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Chemical Reactions & Stoichiometry?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Chemische Reaktionen & Stöchiometrie zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Réactions Chimiques & Calculs ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Химические реакции и стехиометрия»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"التفاعلات الكيميائية والحسابات\"؟",
+        "zh": "根据“化学反应与计算”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Reaksiyonên Kîmyewî û Hesab\" de rast e?"
       },
       "options": [
         {
@@ -1744,14 +1744,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimeler ve Hesaplamalar konusundaki temel kimyasal kurallar çerçevesinde Ekzotermik Tepkime kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Exothermic Reaction within the fundamental principles of Chemical Reactions & Stoichiometry?",
-        "de": "Welche Aussage beschreibt das Konzept Exotherme Reaktion im Rahmen von Chemische Reaktionen & Stöchiometrie am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Réaction exothermique selon les lois de Réactions Chimiques & Calculs?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Экзотермическая реакция» в рамках темы «Химические реакции и стехиометрия»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"رد فعل طارد للحرارة\" ضمن قواعد \"التفاعلات الكيميائية والحسابات\"؟",
-        "zh": "根据“化学反应与计算”的基本化学原理，下列哪项阐述能最准确地界定“放热反应”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Reaksiyona Exotermîk\" di çarçoveya prensîbên \"Reaksiyonên Kîmyewî û Hesab\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimeler ve Hesaplamalar sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Chemical Reactions & Stoichiometry, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Chemische Reaktionen & Stöchiometrie: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Réactions Chimiques & Calculs, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Химические реакции и стехиометрия», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التفاعلات الكيميائية والحسابات\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学反应与计算”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1765,7 +1765,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ku": "Dema ku molên wekhev têne girtin, pêşî reagenta bi rêjeya piçûktir tê vexwarin."
         },
         {
-          "tr": "Saflık yüzdesi = (Saf Madde Kütlesi / Numune Kütlesi) x 100 dür.",
+          "tr": "Saflık yüzdesi = (Saf Madde Kütlesi / Numune Kütlesi) x 100'dür.",
           "en": "Purity percentage = (Pure Substance Mass / Sample Mass) x 100.",
           "de": "Reinheitsprozentsatz = (Reinstoffmasse / Probenmasse) x 100.",
           "fr": "Pourcentage de pureté = (Masse de substance pure / Masse d'échantillon) x 100.",
@@ -1807,7 +1807,7 @@ export const unit07: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"Saflık yüzdesi = (Saf Madde Kütlesi / Numune Kütlesi) x 100 dür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Saflık yüzdesi = (Saf Madde Kütlesi / Numune Kütlesi) x 100'dür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Purity percentage = (Pure Substance Mass / Sample Mass) x 100.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Reinheitsprozentsatz = (Reinstoffmasse / Probenmasse) x 100.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Pourcentage de pureté = (Masse de substance pure / Masse d'échantillon) x 100.\". Notion fondamentale du programme officiel de chimie.",
@@ -1820,14 +1820,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimeler ve Hesaplamalar sorularında karşılaşılan Sınırlayıcı Bileşen konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Chemical Reactions & Stoichiometry, which assertion regarding Limiting Component is correct?",
-        "de": "Welche Feststellung bezüglich Begrenzende Komponente ist nach den chemischen Gesetzmäßigkeiten von Chemische Reaktionen & Stöchiometrie richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Réactions Chimiques & Calculs, quelle affirmation concernant Composant limitant est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Химические реакции и стехиометрия», какое положение относительно «Ограничивающий компонент» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"التفاعلات الكيميائية والحسابات\"، أي حكم متعلق بـ \"مكون الحد\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学反应与计算”经典考题中，下列有关“限制元件”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan daraza li ser \"Parvekirina Sînorkirin\" rast e?"
+        "tr": "Aşağıda Kimyasal Tepkimeler ve Hesaplamalar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Chemical Reactions & Stoichiometry, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Chemische Reaktionen & Stöchiometrie: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Réactions Chimiques & Calculs, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Химические реакции и стехиометрия», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التفاعلات الكيميائية والحسابات\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学反应与计算”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Reaksiyonên Kîmyewî û Hesab\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1871,7 +1871,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ku": "Li gorî îyonên temaşeker ên ku di çareseriyê de mane hevkêşeya îyonên tevniv tê nivîsandin."
         },
         {
-          "tr": "Hidrokarbonlar yandığında CO2 nin yanında H2 gazı açığa çıkar.",
+          "tr": "Hidrokarbonlar yandığında CO2'nin yanında H2 gazı açığa çıkar.",
           "en": "When hydrocarbons burn, H2 gas is released along with CO2.",
           "de": "Bei der Verbrennung von Kohlenwasserstoffen wird neben CO2 auch H2-Gas freigesetzt.",
           "fr": "Lorsque les hydrocarbures brûlent, du gaz H2 est libéré avec du CO2.",
@@ -1896,14 +1896,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin14",
       "stem": {
-        "tr": "Aşağıda Kimyasal Tepkimeler ve Hesaplamalar ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Net İyon Denklemi ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Chemical Reactions & Stoichiometry, which statement about Net Ion Equation is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Chemische Reaktionen & Stöchiometrie: Welche Aussage über Nettoionengleichung ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Réactions Chimiques & Calculs, quelle affirmation relative à Équation des ions nets est exacte?",
-        "ru": "На основе фундаментальных положений темы «Химические реакции и стехиометрия», какое суждение о «Чистое ионное уравнение» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"التفاعلات الكيميائية والحسابات\"، أي عبارة حول \"معادلة صافي الأيونات\" صحيحة؟",
-        "zh": "基于“化学反应与计算”的基础化学知识体系，下列关于“净离子方程”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Reaksiyonên Kîmyewî û Hesab\", kîjan gotin derbarê \"Wekheviya Net Ion\" de rast e?"
+        "tr": "Kimyasal Tepkimeler ve Hesaplamalar konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Chemical Reactions & Stoichiometry, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Chemische Reaktionen & Stöchiometrie: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Réactions Chimiques & Calculs, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Химические реакции и стехиометрия», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"التفاعلات الكيميائية والحسابات\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学反应与计算”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1937,7 +1937,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ku": "Hêmana sînordar maddeya bi girseya herî kêm e."
         },
         {
-          "tr": "AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde seyirci iyonlar Na+ ve NO3- dır.",
+          "tr": "AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde seyirci iyonlar Na+ ve NO3-'dır.",
           "en": "In the reaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), the spectator ions are Na+ and NO3-.",
           "de": "Bei der Reaktion AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) sind die Zuschauerionen Na+ und NO3-.",
           "fr": "Dans la réaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), les ions spectateurs sont Na+ et NO3-.",
@@ -1959,7 +1959,7 @@ export const unit07: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde seyirci iyonlar Na+ ve NO3- dır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde seyirci iyonlar Na+ ve NO3-'dır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"In the reaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), the spectator ions are Na+ and NO3-.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Bei der Reaktion AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) sind die Zuschauerionen Na+ und NO3-.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Dans la réaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), les ions spectateurs sont Na+ et NO3-.\". Notion fondamentale du programme officiel de chimie.",
@@ -1972,14 +1972,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin15",
       "stem": {
-        "tr": "Kimyasal Tepkimeler ve Hesaplamalar konusu kapsamında Yanma Tepkimesi ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Chemical Reactions & Stoichiometry, which of the following findings regarding Combustion Reaction is scientifically verified?",
-        "de": "Im Rahmen der Einheit Chemische Reaktionen & Stöchiometrie: Welcher der folgenden Befunde zu Verbrennungsreaktion ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Réactions Chimiques & Calculs, laquelle des constatations suivantes concernant Réaction de combustion est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Химические реакции и стехиометрия», какой из следующих выводов относительно «Реакция горения» научно подтверждён?",
-        "ar": "في سياق موضوع \"التفاعلات الكيميائية والحسابات\"، أي من النتائج التالية المتعلقة بـ \"رد فعل الاحتراق\" مثبتة علمياً؟",
-        "zh": "在“化学反应与计算”主题范畴内，下列关于“燃烧反应”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan ji van encamên li ser \"Reaksiyona şewitandinê\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimeler ve Hesaplamalar ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Chemical Reactions & Stoichiometry, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Chemische Reaktionen & Stöchiometrie: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Réactions Chimiques & Calculs, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Химические реакции и стехиометрия», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التفاعلات الكيميائية والحسابات\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学反应与计算”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Reaksiyonên Kîmyewî û Hesab\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2048,14 +2048,14 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimeler ve Hesaplamalar ünitesinde ele alınan Homojen Tepkime hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Chemical Reactions & Stoichiometry, which statement about Homogeneous Reaction is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Chemische Reaktionen & Stöchiometrie: Welche Aussage über Homogene Reaktion ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Réactions Chimiques & Calculs, quelle affirmation relative à Réaction homogène est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Химические реакции и стехиометрия», какое утверждение о «Гомогенная реакция» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"التفاعلات الكيميائية والحسابات\"، أي عبارة حول \"تفاعل متجانس\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学反应与计算”单元中关于“均相反应”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Reaksiyonên Kîmyewî û Hesab\", kîjan gotin li ser \"Reaksiyona Hêmojen\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimeler ve Hesaplamalar konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Chemical Reactions & Stoichiometry, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Chemische Reaktionen & Stöchiometrie die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Réactions Chimiques & Calculs, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Химические реакции и стехиометрия», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"التفاعلات الكيميائية والحسابات\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学反应与计算”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Reaksiyonên Kîmyewî û Hesab\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -2089,7 +2089,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ku": "Li gorî îyonên temaşeker ên ku di çareseriyê de mane hevkêşeya îyonên tevniv tê nivîsandin."
         },
         {
-          "tr": "Hidrokarbonlar yandığında CO2 nin yanında H2 gazı açığa çıkar.",
+          "tr": "Hidrokarbonlar yandığında CO2'nin yanında H2 gazı açığa çıkar.",
           "en": "When hydrocarbons burn, H2 gas is released along with CO2.",
           "de": "Bei der Verbrennung von Kohlenwasserstoffen wird neben CO2 auch H2-Gas freigesetzt.",
           "fr": "Lorsque les hydrocarbures brûlent, du gaz H2 est libéré avec du CO2.",

@@ -651,34 +651,34 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-c08",
       "conceptA": {
-        "tr": "Aktifleşme Enerjisi",
-        "en": "Activation Energy",
-        "de": "Aktivierungsenergie",
-        "fr": "Énergie d'activation",
-        "ru": "Энергия активации",
-        "ar": "طاقة التنشيط",
-        "zh": "活化能",
-        "ku": "Enerjiya Çalakkirinê"
+        "tr": "Katalizör",
+        "en": "catalyst",
+        "de": "Katalysator",
+        "fr": "catalyseur",
+        "ru": "катализатор",
+        "ar": "محفز",
+        "zh": "催化剂",
+        "ku": "katalîzator"
       },
       "conceptB": {
-        "tr": "Tepkime Entalpisi",
-        "en": "Reaction Enthalpy",
-        "de": "Reaktionsenthalpie",
-        "fr": "Enthalpie de réaction",
-        "ru": "Энтальпия реакции",
-        "ar": "إنثالبي التفاعل",
-        "zh": "反应焓",
-        "ku": "Entalpiya Reaksiyonê"
+        "tr": "Sıcaklık",
+        "en": "temperature",
+        "de": "Temperatur",
+        "fr": "température",
+        "ru": "температура",
+        "ar": "درجة الحرارة",
+        "zh": "温度",
+        "ku": "germahîya"
       },
       "distinction": {
-        "tr": "Aktifleşme enerjisi tepkimenin başlaması için gereken minimum eşik enerjisidir; tepkime entalpisi ise ürünler ile girenler arasındaki toplam enerji farkıdır.",
-        "en": "Activation energy is the minimum threshold energy required to initiate a reaction; reaction enthalpy is the net heat exchanged between products and reactants.",
-        "de": "Aktivierungsenergie ist die Mindestenergie zum Starten der Reaktion; Reaktionsenthalpie ist die Enthalpiedifferenz zwischen Produkten und Edukten.",
-        "fr": "L'énergie d'activation est l'énergie seuil minimale pour initier la réaction ; l'enthalpie de réaction est la différence d'énergie entre produits et réactifs.",
-        "ru": "Энергия активации — минимальный энергетический барьер для протекания реакции; энтальпия реакции — разность энергий между продуктами и реагентами.",
-        "ar": "طاقة التنشيط هي الحد الأدنى من الطاقة اللازمة لبدء التفاعل الكيميائي؛ إنثالبي التفاعل هو الفرق في المحتوى الحراري بين النواتج والمتفاعلات.",
-        "zh": "活化能是化学反应启动所需的最低阈值能量障碍；反应焓是产物与反应物之间的总能量差（反应热）。",
-        "ku": "Enerjiya çalakkirinê bendava herî kêm a enerjiyê ye ji bo destpêkirina reaksiyonê; entalpiya reaksiyonê cudahiya enerjiyê di navbera hilber û madeyan de ye."
+        "tr": "Katalizör Ea yı düşürerek k yı artırır; sıcaklık Ea yı değiştirmeden aşan tanecik sayısını ve k yı artırır.",
+        "en": "The catalyst increases k by decreasing Ea; Temperature increases the number of particles and k exceeding Ea without changing it.",
+        "de": "Der Katalysator erhöht k durch Verringerung von Ea; Die Temperatur erhöht die Anzahl der Teilchen und k über Ea hinaus, ohne sie zu verändern.",
+        "fr": "Le catalyseur augmente k en diminuant Ea ; La température augmente le nombre de particules et k dépasse Ea sans le modifier.",
+        "ru": "Катализатор увеличивает k за счет уменьшения Ea; Температура увеличивает число частиц и k, превышающее Ea, не изменяя его.",
+        "ar": "يزيد المحفز k عن طريق تقليل Ea؛ تزيد درجة الحرارة من عدد الجزيئات و k تتجاوز Ea دون تغييرها.",
+        "zh": "催化剂通过降低Ea来增加k；温度会增加粒子数量，并且 k 会超过 Ea，而不会改变它。",
+        "ku": "Katalîzator k bi kêmkirina Ea zêde dike; Germahî bêyî ku biguhere, hejmara pirtikan û k ji Ea zêdetir dike."
       }
     }
   ],
@@ -772,7 +772,7 @@ export const unit17: ChemistryUnitSeedData = {
           "ku": "Hejmara pevçûnên bandor ên ku ji enerjiyê derbas dibe zêde dibe"
         },
         {
-          "tr": "Hız sabiti k nın değeri büyür ve tepkime hızlanır",
+          "tr": "Hız sabiti k'nın değeri büyür ve tepkime hızlanır",
           "en": "The value of the rate constant k increases and the reaction accelerates.",
           "de": "Der Wert der Geschwindigkeitskonstante k steigt und die Reaktion beschleunigt sich.",
           "fr": "La valeur de la constante de vitesse k augmente et la réaction s'accélère.",
@@ -1060,14 +1060,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimelerde Hız konusunu işlerken Tepkime Hızı (r) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Reaction Rates, which statement regarding Reaction Rate (r) represents the correct answer?",
-        "de": "Welche Aussage zu Reaktionsgeschwindigkeit (r) stellt im Kontext von Reaktionsgeschwindigkeit die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Vitesse de Réaction, quelle proposition sur Taux de réaction (r) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Скорость химических реакций», какой ответ относительно «Скорость реакции (r)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"سرعة التفاعلات الكيميائية\" مخبرياً، أي إجابة بخصوص \"معدل التفاعل (ص)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学反应速率”实验探究与教学分析中，针对“反应速率 (r)”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Leza Reaksiyonên Kîmyewî\" de, kîjan bersiv derbarê \"Rêjeya Reaksiyonê (r)\" de rast e?"
+        "tr": "Kimya dersinde Kimyasal Tepkimelerde Hız ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Reaction Rates, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Reaktionsgeschwindigkeit: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Vitesse de Réaction, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Скорость химических реакций», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"سرعة التفاعلات الكيميائية\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学反应速率”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Leza Reaksiyonên Kîmyewî\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1136,14 +1136,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin04",
       "stem": {
-        "tr": "Kimya dersinde Kimyasal Tepkimelerde Hız ünitesi incelenirken Ortalama Hız ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Reaction Rates, which of the following propositions concerning Average Speed is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Reaktionsgeschwindigkeit: Welche Behauptung bezüglich Durchschnittsgeschwindigkeit entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Vitesse de Réaction, laquelle des affirmations suivantes concernant Vitesse moyenne est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Скорость химических реакций», какое из следующих суждений о «Средняя скорость» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"سرعة التفاعلات الكيميائية\"، أي من الأحكام التالية المتعلقة بـ \"متوسط السرعة\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学反应速率”核心规律时，下列关于“平均速度”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Leza Reaksiyonên Kîmyewî\" tê kirin, kîjan daraza li ser \"Average Speed\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimelerde Hız konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Reaction Rates?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Reaktionsgeschwindigkeit zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Vitesse de Réaction ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Скорость химических реакций»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"سرعة التفاعلات الكيميائية\"؟",
+        "zh": "根据“化学反应速率”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Leza Reaksiyonên Kîmyewî\" de rast e?"
       },
       "options": [
         {
@@ -1212,14 +1212,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimelerde Hız konusundaki temel kimyasal kurallar çerçevesinde Homojen Katalizör kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Homogeneous Catalyst within the fundamental principles of Reaction Rates?",
-        "de": "Welche Aussage beschreibt das Konzept Homogener Katalysator im Rahmen von Reaktionsgeschwindigkeit am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Catalyseur homogène selon les lois de Vitesse de Réaction?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Гомогенный катализатор» в рамках темы «Скорость химических реакций»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"محفز متجانس\" ضمن قواعد \"سرعة التفاعلات الكيميائية\"؟",
-        "zh": "根据“化学反应速率”的基本化学原理，下列哪项阐述能最准确地界定“均相催化剂”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Homogeneous Catalyst\" di çarçoveya prensîbên \"Leza Reaksiyonên Kîmyewî\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimelerde Hız sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Reaction Rates, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Reaktionsgeschwindigkeit: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Vitesse de Réaction, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Скорость химических реакций», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"سرعة التفاعلات الكيميائية\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学反应速率”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Leza Reaksiyonên Kîmyewî\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1288,14 +1288,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimelerde Hız sorularında karşılaşılan Etkin Çarpışma konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Reaction Rates, which assertion regarding Active Collision is correct?",
-        "de": "Welche Feststellung bezüglich Aktive Kollision ist nach den chemischen Gesetzmäßigkeiten von Reaktionsgeschwindigkeit richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Vitesse de Réaction, quelle affirmation concernant Collision active est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Скорость химических реакций», какое положение относительно «Активное столкновение» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"سرعة التفاعلات الكيميائية\"، أي حكم متعلق بـ \"الاصطدام النشط\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学反应速率”经典考题中，下列有关“主动碰撞”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Leza Reaksiyonên Kîmyewî\" de, kîjan daraza li ser \"Active Collision\" rast e?"
+        "tr": "Aşağıda Kimyasal Tepkimelerde Hız ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Reaction Rates, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Reaktionsgeschwindigkeit: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Vitesse de Réaction, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Скорость химических реакций», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"سرعة التفاعلات الكيميائية\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学反应速率”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Leza Reaksiyonên Kîmyewî\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1364,14 +1364,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin07",
       "stem": {
-        "tr": "Aşağıda Kimyasal Tepkimelerde Hız ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Tepkime Derecesi (Mertebesi) ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Reaction Rates, which statement about Degree of Reactivity is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Reaktionsgeschwindigkeit: Welche Aussage über Grad der Reaktivität ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Vitesse de Réaction, quelle affirmation relative à Degré de réactivité est exacte?",
-        "ru": "На основе фундаментальных положений темы «Скорость химических реакций», какое суждение о «Степень реактивности» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"سرعة التفاعلات الكيميائية\"، أي عبارة حول \"درجة التفاعل\" صحيحة؟",
-        "zh": "基于“化学反应速率”的基础化学知识体系，下列关于“反应度”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Leza Reaksiyonên Kîmyewî\", kîjan gotin derbarê \"Dereceya Reaksiyonê\" de rast e?"
+        "tr": "Kimyasal Tepkimelerde Hız konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Reaction Rates, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Reaktionsgeschwindigkeit: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Vitesse de Réaction, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Скорость химических реакций», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"سرعة التفاعلات الكيميائية\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学反应速率”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Leza Reaksiyonên Kîmyewî\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1440,14 +1440,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin08",
       "stem": {
-        "tr": "Kimyasal Tepkimelerde Hız konusu kapsamında Aktifleşme Enerjisi ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Reaction Rates, which of the following findings regarding Activation Energy is scientifically verified?",
-        "de": "Im Rahmen der Einheit Reaktionsgeschwindigkeit: Welcher der folgenden Befunde zu Aktivierungsenergie ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Vitesse de Réaction, laquelle des constatations suivantes concernant Énergie d'activation est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Скорость химических реакций», какой из следующих выводов относительно «Энергия активации» научно подтверждён?",
-        "ar": "في سياق موضوع \"سرعة التفاعلات الكيميائية\"، أي من النتائج التالية المتعلقة بـ \"طاقة التنشيط\" مثبتة علمياً؟",
-        "zh": "在“化学反应速率”主题范畴内，下列关于“活化能”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Leza Reaksiyonên Kîmyewî\" de, kîjan ji van encamên li ser \"Enerjiya Çalakkirinê\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimelerde Hız ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Reaction Rates, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Reaktionsgeschwindigkeit: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Vitesse de Réaction, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Скорость химических реакций», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"سرعة التفاعلات الكيميائية\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学反应速率”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Leza Reaksiyonên Kîmyewî\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1516,14 +1516,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimelerde Hız ünitesinde ele alınan Katalizör hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Reaction Rates, which statement about catalyst is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Reaktionsgeschwindigkeit: Welche Aussage über Katalysator ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Vitesse de Réaction, quelle affirmation relative à catalyseur est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Скорость химических реакций», какое утверждение о «катализатор» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"سرعة التفاعلات الكيميائية\"، أي عبارة حول \"محفز\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学反应速率”单元中关于“催化剂”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Leza Reaksiyonên Kîmyewî\", kîjan gotin li ser \"katalîzator\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimelerde Hız konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Reaction Rates, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Reaktionsgeschwindigkeit die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Vitesse de Réaction, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Скорость химических реакций», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"سرعة التفاعلات الكيميائية\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学反应速率”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Leza Reaksiyonên Kîmyewî\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1592,14 +1592,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimelerde Hız konusunu işlerken Ara Ürün üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Reaction Rates, which statement regarding Intermediate Product represents the correct answer?",
-        "de": "Welche Aussage zu Zwischenprodukt stellt im Kontext von Reaktionsgeschwindigkeit die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Vitesse de Réaction, quelle proposition sur Produit intermédiaire constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Скорость химических реакций», какой ответ относительно «Промежуточный продукт» является правильным?",
-        "ar": "أثناء دراسة موضوع \"سرعة التفاعلات الكيميائية\" مخبرياً، أي إجابة بخصوص \"المنتج الوسيط\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学反应速率”实验探究与教学分析中，针对“中间产品”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Leza Reaksiyonên Kîmyewî\" de, kîjan bersiv derbarê \"Hilbera Navîn\" de rast e?"
+        "tr": "Kimya dersinde Kimyasal Tepkimelerde Hız ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Reaction Rates, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Reaktionsgeschwindigkeit: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Vitesse de Réaction, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Скорость химических реакций», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"سرعة التفاعلات الكيميائية\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学反应速率”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Leza Reaksiyonên Kîmyewî\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1668,14 +1668,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin11",
       "stem": {
-        "tr": "Kimya dersinde Kimyasal Tepkimelerde Hız ünitesi incelenirken Tepkime Hızı (r) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Reaction Rates, which of the following propositions concerning Reaction Rate (r) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Reaktionsgeschwindigkeit: Welche Behauptung bezüglich Reaktionsgeschwindigkeit (r) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Vitesse de Réaction, laquelle des affirmations suivantes concernant Taux de réaction (r) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Скорость химических реакций», какое из следующих суждений о «Скорость реакции (r)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"سرعة التفاعلات الكيميائية\"، أي من الأحكام التالية المتعلقة بـ \"معدل التفاعل (ص)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学反应速率”核心规律时，下列关于“反应速率 (r)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Leza Reaksiyonên Kîmyewî\" tê kirin, kîjan daraza li ser \"Rêjeya Reaksiyonê (r)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimelerde Hız konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Reaction Rates?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Reaktionsgeschwindigkeit zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Vitesse de Réaction ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Скорость химических реакций»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"سرعة التفاعلات الكيميائية\"؟",
+        "zh": "根据“化学反应速率”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Leza Reaksiyonên Kîmyewî\" de rast e?"
       },
       "options": [
         {
@@ -1744,14 +1744,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimelerde Hız konusundaki temel kimyasal kurallar çerçevesinde Ortalama Hız kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Average Speed within the fundamental principles of Reaction Rates?",
-        "de": "Welche Aussage beschreibt das Konzept Durchschnittsgeschwindigkeit im Rahmen von Reaktionsgeschwindigkeit am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Vitesse moyenne selon les lois de Vitesse de Réaction?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Средняя скорость» в рамках темы «Скорость химических реакций»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"متوسط السرعة\" ضمن قواعد \"سرعة التفاعلات الكيميائية\"؟",
-        "zh": "根据“化学反应速率”的基本化学原理，下列哪项阐述能最准确地界定“平均速度”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Average Speed\" di çarçoveya prensîbên \"Leza Reaksiyonên Kîmyewî\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimelerde Hız sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Reaction Rates, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Reaktionsgeschwindigkeit: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Vitesse de Réaction, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Скорость химических реакций», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"سرعة التفاعلات الكيميائية\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学反应速率”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Leza Reaksiyonên Kîmyewî\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1820,14 +1820,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimelerde Hız sorularında karşılaşılan Homojen Katalizör konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Reaction Rates, which assertion regarding Homogeneous Catalyst is correct?",
-        "de": "Welche Feststellung bezüglich Homogener Katalysator ist nach den chemischen Gesetzmäßigkeiten von Reaktionsgeschwindigkeit richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Vitesse de Réaction, quelle affirmation concernant Catalyseur homogène est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Скорость химических реакций», какое положение относительно «Гомогенный катализатор» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"سرعة التفاعلات الكيميائية\"، أي حكم متعلق بـ \"محفز متجانس\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学反应速率”经典考题中，下列有关“均相催化剂”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Leza Reaksiyonên Kîmyewî\" de, kîjan daraza li ser \"Homogeneous Catalyst\" rast e?"
+        "tr": "Aşağıda Kimyasal Tepkimelerde Hız ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Reaction Rates, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Reaktionsgeschwindigkeit: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Vitesse de Réaction, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Скорость химических реакций», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"سرعة التفاعلات الكيميائية\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学反应速率”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Leza Reaksiyonên Kîmyewî\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1896,14 +1896,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin14",
       "stem": {
-        "tr": "Aşağıda Kimyasal Tepkimelerde Hız ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Etkin Çarpışma ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Reaction Rates, which statement about Active Collision is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Reaktionsgeschwindigkeit: Welche Aussage über Aktive Kollision ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Vitesse de Réaction, quelle affirmation relative à Collision active est exacte?",
-        "ru": "На основе фундаментальных положений темы «Скорость химических реакций», какое суждение о «Активное столкновение» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"سرعة التفاعلات الكيميائية\"، أي عبارة حول \"الاصطدام النشط\" صحيحة؟",
-        "zh": "基于“化学反应速率”的基础化学知识体系，下列关于“主动碰撞”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Leza Reaksiyonên Kîmyewî\", kîjan gotin derbarê \"Active Collision\" de rast e?"
+        "tr": "Kimyasal Tepkimelerde Hız konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Reaction Rates, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Reaktionsgeschwindigkeit: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Vitesse de Réaction, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Скорость химических реакций», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"سرعة التفاعلات الكيميائية\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学反应速率”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Leza Reaksiyonên Kîmyewî\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1972,14 +1972,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin15",
       "stem": {
-        "tr": "Kimyasal Tepkimelerde Hız konusu kapsamında Tepkime Derecesi (Mertebesi) ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Reaction Rates, which of the following findings regarding Degree of Reactivity is scientifically verified?",
-        "de": "Im Rahmen der Einheit Reaktionsgeschwindigkeit: Welcher der folgenden Befunde zu Grad der Reaktivität ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Vitesse de Réaction, laquelle des constatations suivantes concernant Degré de réactivité est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Скорость химических реакций», какой из следующих выводов относительно «Степень реактивности» научно подтверждён?",
-        "ar": "في سياق موضوع \"سرعة التفاعلات الكيميائية\"، أي من النتائج التالية المتعلقة بـ \"درجة التفاعل\" مثبتة علمياً؟",
-        "zh": "在“化学反应速率”主题范畴内，下列关于“反应度”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Leza Reaksiyonên Kîmyewî\" de, kîjan ji van encamên li ser \"Dereceya Reaksiyonê\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimelerde Hız ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Reaction Rates, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Reaktionsgeschwindigkeit: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Vitesse de Réaction, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Скорость химических реакций», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"سرعة التفاعلات الكيميائية\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学反应速率”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Leza Reaksiyonên Kîmyewî\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2048,14 +2048,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimelerde Hız ünitesinde ele alınan Aktifleşme Enerjisi hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Reaction Rates, which statement about Activation Energy is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Reaktionsgeschwindigkeit: Welche Aussage über Aktivierungsenergie ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Vitesse de Réaction, quelle affirmation relative à Énergie d'activation est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Скорость химических реакций», какое утверждение о «Энергия активации» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"سرعة التفاعلات الكيميائية\"، أي عبارة حول \"طاقة التنشيط\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学反应速率”单元中关于“活化能”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Leza Reaksiyonên Kîmyewî\", kîjan gotin li ser \"Enerjiya Çalakkirinê\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimelerde Hız konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Reaction Rates, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Reaktionsgeschwindigkeit die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Vitesse de Réaction, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Скорость химических реакций», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"سرعة التفاعلات الكيميائية\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学反应速率”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Leza Reaksiyonên Kîmyewî\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

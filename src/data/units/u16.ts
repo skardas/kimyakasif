@@ -519,7 +519,7 @@ export const unit16: ChemistryUnitSeedData = {
         "ku": "Enerjiya Çalakkirina Paşê (Eag)"
       },
       "distinction": {
-        "tr": "Eai girenlerin aktifleşmiş komplekse ulaşma bariyeridir; Eag ürünlerin geri dönme bariyeridir; Delta H = Eai - Eag dir.",
+        "tr": "Eai girenlerin aktifleşmiş komplekse ulaşma bariyeridir; Eag ürünlerin geri dönme bariyeridir; Delta H = Eai - Eag'dir.",
         "en": "Eai is the barrier for entrants to reach the activated complex; Eag is the return barrier of products; Delta H = Eai - Eag.",
         "de": "Eai ist die Barriere für Teilnehmer, den aktivierten Komplex zu erreichen. Eag ist die Rücklaufsperre von Produkten; Delta H = Eai - Eag.",
         "fr": "Eai est la barrière permettant aux entrants d'atteindre le complexe activé ; Eag est la barrière de retour des produits ; Delta H = Eai - Eag.",
@@ -1040,14 +1040,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimelerde Enerji konusunu işlerken Standart Oluşum Entalpisi (Delta Hf°) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Energy in Chemical Reactions, which statement regarding Standard Enthalpy of Formation (Delta Hf°) represents the correct answer?",
-        "de": "Welche Aussage zu Standardbildungsenthalpie (Delta Hf°) stellt im Kontext von Energie bei Reaktionen die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Énergie des Réactions, quelle proposition sur Enthalpie Standard de Formation (Delta Hf°) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Энергия в химических реакциях», какой ответ относительно «Стандартная энтальпия образования (Delta Hf°)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الطاقة في التفاعلات الكيميائية\" مخبرياً، أي إجابة بخصوص \"المحتوى الحراري القياسي للتكوين (Delta Hf°)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学反应中的能量”实验探究与教学分析中，针对“标准生成焓 (Delta Hf°)”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan bersiv derbarê \"Entalpiya Standard a Çêbûnê (Delta Hf°)\" de rast e?"
+        "tr": "Kimya dersinde Kimyasal Tepkimelerde Enerji ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Energy in Chemical Reactions, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Energie bei Reaktionen: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Énergie des Réactions, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Энергия в химических реакциях», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الطاقة في التفاعلات الكيميائية\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学反应中的能量”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Enerjî Di Reaksiyonên Kîmyewî de\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1116,14 +1116,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin04",
       "stem": {
-        "tr": "Kimya dersinde Kimyasal Tepkimelerde Enerji ünitesi incelenirken İleri Aktifleşme Enerjisi (Eai) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Energy in Chemical Reactions, which of the following propositions concerning Forward Activation Energy (Eai) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Energie bei Reaktionen: Welche Behauptung bezüglich Vorwärtsaktivierungsenergie (Eai) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Énergie des Réactions, laquelle des affirmations suivantes concernant Énergie d'activation avant (Eai) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Энергия в химических реакциях», какое из следующих суждений о «Энергия прямой активации (Eai)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الطاقة في التفاعلات الكيميائية\"، أي من الأحكام التالية المتعلقة بـ \"طاقة التنشيط الأمامية (Eai)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学反应中的能量”核心规律时，下列关于“正向活化能 (Eai)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Enerjî Di Reaksiyonên Kîmyewî de\" tê kirin, kîjan daraza li ser \"Enerjiya Çalakkirina Pêşî (Eai)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimelerde Enerji konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Energy in Chemical Reactions?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Energie bei Reaktionen zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Énergie des Réactions ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Энергия в химических реакциях»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الطاقة في التفاعلات الكيميائية\"؟",
+        "zh": "根据“化学反应中的能量”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Enerjî Di Reaksiyonên Kîmyewî de\" de rast e?"
       },
       "options": [
         {
@@ -1192,14 +1192,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimelerde Enerji konusundaki temel kimyasal kurallar çerçevesinde Ekzotermik Tepkime (Delta H < 0) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Exothermic Reaction (Delta H < 0) within the fundamental principles of Energy in Chemical Reactions?",
-        "de": "Welche Aussage beschreibt das Konzept Exotherme Reaktion (Delta H < 0) im Rahmen von Energie bei Reaktionen am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Réaction exothermique (Delta H < 0) selon les lois de Énergie des Réactions?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Экзотермическая реакция (Дельта H < 0)» в рамках темы «Энергия в химических реакциях»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"التفاعل الطارد للحرارة (دلتا H <0)\" ضمن قواعد \"الطاقة في التفاعلات الكيميائية\"؟",
-        "zh": "根据“化学反应中的能量”的基本化学原理，下列哪项阐述能最准确地界定“放热反应（Delta H < 0）”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Reaksiyona Exotermîk (Delta H <0)\" di çarçoveya prensîbên \"Enerjî Di Reaksiyonên Kîmyewî de\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimelerde Enerji sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Energy in Chemical Reactions, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Energie bei Reaktionen: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Énergie des Réactions, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Энергия в химических реакциях», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学反应中的能量”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1268,14 +1268,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimelerde Enerji sorularında karşılaşılan Bağ Kırılması konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Energy in Chemical Reactions, which assertion regarding Ligament Break is correct?",
-        "de": "Welche Feststellung bezüglich Bänderriss ist nach den chemischen Gesetzmäßigkeiten von Energie bei Reaktionen richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Énergie des Réactions, quelle affirmation concernant Rupture ligamentaire est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Энергия в химических реакциях», какое положение относительно «Разрыв связок» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي حكم متعلق بـ \"كسر الرباط\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学反应中的能量”经典考题中，下列有关“韧带断裂”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan daraza li ser \"Ligament Break\" rast e?"
+        "tr": "Aşağıda Kimyasal Tepkimelerde Enerji ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Energy in Chemical Reactions, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Energie bei Reaktionen: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Énergie des Réactions, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Энергия в химических реакциях», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学反应中的能量”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Enerjî Di Reaksiyonên Kîmyewî de\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1344,14 +1344,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin07",
       "stem": {
-        "tr": "Aşağıda Kimyasal Tepkimelerde Enerji ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Hess Yasası ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Energy in Chemical Reactions, which statement about Hess's Law is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Energie bei Reaktionen: Welche Aussage über Hess'sches Gesetz ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Énergie des Réactions, quelle affirmation relative à La loi de Hess est exacte?",
-        "ru": "На основе фундаментальных положений темы «Энергия в химических реакциях», какое суждение о «Закон Гесса» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي عبارة حول \"قانون هيس\" صحيحة؟",
-        "zh": "基于“化学反应中的能量”的基础化学知识体系，下列关于“赫斯定律”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Enerjî Di Reaksiyonên Kîmyewî de\", kîjan gotin derbarê \"Qanûna Hesen\" de rast e?"
+        "tr": "Kimyasal Tepkimelerde Enerji konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Energy in Chemical Reactions, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Energie bei Reaktionen: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Énergie des Réactions, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Энергия в химических реакциях», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الطاقة في التفاعلات الكيميائية\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学反应中的能量”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1420,14 +1420,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin08",
       "stem": {
-        "tr": "Kimyasal Tepkimelerde Enerji konusu kapsamında Aktifleşmiş Kompleks ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Energy in Chemical Reactions, which of the following findings regarding Activated Complex is scientifically verified?",
-        "de": "Im Rahmen der Einheit Energie bei Reaktionen: Welcher der folgenden Befunde zu Aktivierter Komplex ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Énergie des Réactions, laquelle des constatations suivantes concernant Complexe activé est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Энергия в химических реакциях», какой из следующих выводов относительно «Активированный комплекс» научно подтверждён?",
-        "ar": "في سياق موضوع \"الطاقة في التفاعلات الكيميائية\"، أي من النتائج التالية المتعلقة بـ \"مجمع المنشط\" مثبتة علمياً؟",
-        "zh": "在“化学反应中的能量”主题范畴内，下列关于“活性复合物”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan ji van encamên li ser \"Kompleksa aktîfkirî\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimelerde Enerji ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Energy in Chemical Reactions, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Energie bei Reaktionen: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Énergie des Réactions, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Энергия в химических реакциях», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学反应中的能量”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Enerjî Di Reaksiyonên Kîmyewî de\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1496,14 +1496,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimelerde Enerji ünitesinde ele alınan Ekzotermik (ΔH < 0) hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Energy in Chemical Reactions, which statement about Exothermic (ΔH < 0) is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Energie bei Reaktionen: Welche Aussage über Exotherm (ΔH < 0) ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Énergie des Réactions, quelle affirmation relative à Exothermique (ΔH < 0) est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Энергия в химических реакциях», какое утверждение о «Экзотермический (ΔH < 0)» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي عبارة حول \"طاردة للحرارة (ΔH <0)\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学反应中的能量”单元中关于“放热（ΔH < 0）”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Enerjî Di Reaksiyonên Kîmyewî de\", kîjan gotin li ser \"Exotermîk (ΔH < 0)\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimelerde Enerji konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Energy in Chemical Reactions, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Energie bei Reaktionen die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Énergie des Réactions, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Энергия в химических реакциях», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الطاقة في التفاعلات الكيميائية\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学反应中的能量”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1572,14 +1572,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimelerde Enerji konusunu işlerken Oluşum Entalpisi üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Energy in Chemical Reactions, which statement regarding Enthalpy of Formation represents the correct answer?",
-        "de": "Welche Aussage zu Bildungsenthalpie stellt im Kontext von Energie bei Reaktionen die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Énergie des Réactions, quelle proposition sur Enthalpie de formation constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Энергия в химических реакциях», какой ответ относительно «Энтальпия образования» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الطاقة في التفاعلات الكيميائية\" مخبرياً، أي إجابة بخصوص \"المحتوى الحراري للتكوين\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“化学反应中的能量”实验探究与教学分析中，针对“生成焓”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan bersiv derbarê \"Enthalpiya Çêbûnê\" de rast e?"
+        "tr": "Kimya dersinde Kimyasal Tepkimelerde Enerji ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Energy in Chemical Reactions, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Energie bei Reaktionen: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Énergie des Réactions, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Энергия в химических реакциях», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الطاقة في التفاعلات الكيميائية\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“化学反应中的能量”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Enerjî Di Reaksiyonên Kîmyewî de\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1648,14 +1648,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin11",
       "stem": {
-        "tr": "Kimya dersinde Kimyasal Tepkimelerde Enerji ünitesi incelenirken Standart Oluşum Entalpisi (Delta Hf°) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Energy in Chemical Reactions, which of the following propositions concerning Standard Enthalpy of Formation (Delta Hf°) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Energie bei Reaktionen: Welche Behauptung bezüglich Standardbildungsenthalpie (Delta Hf°) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Énergie des Réactions, laquelle des affirmations suivantes concernant Enthalpie Standard de Formation (Delta Hf°) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Энергия в химических реакциях», какое из следующих суждений о «Стандартная энтальпия образования (Delta Hf°)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الطاقة في التفاعلات الكيميائية\"، أي من الأحكام التالية المتعلقة بـ \"المحتوى الحراري القياسي للتكوين (Delta Hf°)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“化学反应中的能量”核心规律时，下列关于“标准生成焓 (Delta Hf°)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Enerjî Di Reaksiyonên Kîmyewî de\" tê kirin, kîjan daraza li ser \"Entalpiya Standard a Çêbûnê (Delta Hf°)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimelerde Enerji konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Energy in Chemical Reactions?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Energie bei Reaktionen zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Énergie des Réactions ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Энергия в химических реакциях»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الطاقة في التفاعلات الكيميائية\"؟",
+        "zh": "根据“化学反应中的能量”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Enerjî Di Reaksiyonên Kîmyewî de\" de rast e?"
       },
       "options": [
         {
@@ -1724,14 +1724,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Kimyasal Tepkimelerde Enerji konusundaki temel kimyasal kurallar çerçevesinde İleri Aktifleşme Enerjisi (Eai) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Forward Activation Energy (Eai) within the fundamental principles of Energy in Chemical Reactions?",
-        "de": "Welche Aussage beschreibt das Konzept Vorwärtsaktivierungsenergie (Eai) im Rahmen von Energie bei Reaktionen am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Énergie d'activation avant (Eai) selon les lois de Énergie des Réactions?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Энергия прямой активации (Eai)» в рамках темы «Энергия в химических реакциях»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"طاقة التنشيط الأمامية (Eai)\" ضمن قواعد \"الطاقة في التفاعلات الكيميائية\"؟",
-        "zh": "根据“化学反应中的能量”的基本化学原理，下列哪项阐述能最准确地界定“正向活化能 (Eai)”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Enerjiya Çalakkirina Pêşî (Eai)\" di çarçoveya prensîbên \"Enerjî Di Reaksiyonên Kîmyewî de\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimelerde Enerji sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Energy in Chemical Reactions, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Energie bei Reaktionen: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Énergie des Réactions, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Энергия в химических реакциях», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“化学反应中的能量”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1800,14 +1800,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Kimyasal Tepkimelerde Enerji sorularında karşılaşılan Ekzotermik Tepkime (Delta H < 0) konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Energy in Chemical Reactions, which assertion regarding Exothermic Reaction (Delta H < 0) is correct?",
-        "de": "Welche Feststellung bezüglich Exotherme Reaktion (Delta H < 0) ist nach den chemischen Gesetzmäßigkeiten von Energie bei Reaktionen richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Énergie des Réactions, quelle affirmation concernant Réaction exothermique (Delta H < 0) est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Энергия в химических реакциях», какое положение относительно «Экзотермическая реакция (Дельта H < 0)» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي حكم متعلق بـ \"التفاعل الطارد للحرارة (دلتا H <0)\" يعتبر صحيحاً؟",
-        "zh": "在高考“化学反应中的能量”经典考题中，下列有关“放热反应（Delta H < 0）”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan daraza li ser \"Reaksiyona Exotermîk (Delta H <0)\" rast e?"
+        "tr": "Aşağıda Kimyasal Tepkimelerde Enerji ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Energy in Chemical Reactions, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Energie bei Reaktionen: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Énergie des Réactions, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Энергия в химических реакциях», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“化学反应中的能量”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Enerjî Di Reaksiyonên Kîmyewî de\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1876,14 +1876,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin14",
       "stem": {
-        "tr": "Aşağıda Kimyasal Tepkimelerde Enerji ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Bağ Kırılması ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Energy in Chemical Reactions, which statement about Ligament Break is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Energie bei Reaktionen: Welche Aussage über Bänderriss ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Énergie des Réactions, quelle affirmation relative à Rupture ligamentaire est exacte?",
-        "ru": "На основе фундаментальных положений темы «Энергия в химических реакциях», какое суждение о «Разрыв связок» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي عبارة حول \"كسر الرباط\" صحيحة؟",
-        "zh": "基于“化学反应中的能量”的基础化学知识体系，下列关于“韧带断裂”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Enerjî Di Reaksiyonên Kîmyewî de\", kîjan gotin derbarê \"Ligament Break\" de rast e?"
+        "tr": "Kimyasal Tepkimelerde Enerji konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Energy in Chemical Reactions, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Energie bei Reaktionen: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Énergie des Réactions, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Энергия в химических реакциях», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الطاقة في التفاعلات الكيميائية\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“化学反应中的能量”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1952,14 +1952,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin15",
       "stem": {
-        "tr": "Kimyasal Tepkimelerde Enerji konusu kapsamında Hess Yasası ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Energy in Chemical Reactions, which of the following findings regarding Hess's Law is scientifically verified?",
-        "de": "Im Rahmen der Einheit Energie bei Reaktionen: Welcher der folgenden Befunde zu Hess'sches Gesetz ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Énergie des Réactions, laquelle des constatations suivantes concernant La loi de Hess est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Энергия в химических реакциях», какой из следующих выводов относительно «Закон Гесса» научно подтверждён?",
-        "ar": "في سياق موضوع \"الطاقة في التفاعلات الكيميائية\"، أي من النتائج التالية المتعلقة بـ \"قانون هيس\" مثبتة علمياً؟",
-        "zh": "在“化学反应中的能量”主题范畴内，下列关于“赫斯定律”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan ji van encamên li ser \"Qanûna Hesen\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimelerde Enerji ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Energy in Chemical Reactions, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Energie bei Reaktionen: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Énergie des Réactions, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Энергия в химических реакциях», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“化学反应中的能量”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Enerjî Di Reaksiyonên Kîmyewî de\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2028,14 +2028,14 @@ export const unit16: ChemistryUnitSeedData = {
     {
       "id": "u16-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Kimyasal Tepkimelerde Enerji ünitesinde ele alınan Aktifleşmiş Kompleks hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Energy in Chemical Reactions, which statement about Activated Complex is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Energie bei Reaktionen: Welche Aussage über Aktivierter Komplex ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Énergie des Réactions, quelle affirmation relative à Complexe activé est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Энергия в химических реакциях», какое утверждение о «Активированный комплекс» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الطاقة في التفاعلات الكيميائية\"، أي عبارة حول \"مجمع المنشط\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“化学反应中的能量”单元中关于“活性复合物”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Enerjî Di Reaksiyonên Kîmyewî de\", kîjan gotin li ser \"Kompleksa aktîfkirî\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Kimyasal Tepkimelerde Enerji konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Energy in Chemical Reactions, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Energie bei Reaktionen die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Énergie des Réactions, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Энергия в химических реакциях», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الطاقة في التفاعلات الكيميائية\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“化学反应中的能量”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Enerjî Di Reaksiyonên Kîmyewî de\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

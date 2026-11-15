@@ -109,7 +109,7 @@ export const unit05: ChemistryUnitSeedData = {
         "ku": "CO2, CH4, N2O û buhara avê (H2O) tîrêjên infrasor di atmosferê de wekî gaza serayê ya sereke digire; Ev gazên serayê dibin sedema germbûna global."
       },
       "trap": {
-        "tr": "O2 ve N2 gazları dünyadaki sera etkisinin %90 ından sorumludur.",
+        "tr": "O2 ve N2 gazları dünyadaki sera etkisinin %90'ından sorumludur.",
         "en": "O2 and N2 gases are responsible for 90% of the world's greenhouse effect.",
         "de": "O2- und N2-Gase sind für 90 % des weltweiten Treibhauseffekts verantwortlich.",
         "fr": "Les gaz O2 et N2 sont responsables de 90 % de l’effet de serre mondial.",
@@ -306,7 +306,7 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-f13",
       "fact": {
-        "tr": "pH değeri 5.6 nın altında olan yağışlar asit yağmuru olarak kabul edilir.",
+        "tr": "pH değeri 5.6'nın altında olan yağışlar asit yağmuru olarak kabul edilir.",
         "en": "Precipitation with a pH value below 5.6 is considered acid rain.",
         "de": "Als saurer Regen gilt Niederschlag mit einem pH-Wert unter 5,6.",
         "fr": "Les précipitations dont le pH est inférieur à 5,6 sont considérées comme des pluies acides.",
@@ -316,7 +316,7 @@ export const unit05: ChemistryUnitSeedData = {
         "ku": "Barîna bi nirxa pH di bin 5,6 de wekî barana asîd tê hesibandin."
       },
       "trap": {
-        "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0 dir.",
+        "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0'dir.",
         "en": "The pH value of natural pure rainwater is exactly 7.0.",
         "de": "Der pH-Wert von natürlichem, reinem Regenwasser beträgt genau 7,0.",
         "fr": "Le pH de l’eau de pluie pure et naturelle est exactement de 7,0.",
@@ -631,34 +631,34 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-c08",
       "conceptA": {
-        "tr": "Yenilenebilir Enerji",
-        "en": "Renewable Energy",
-        "de": "Erneuerbare Energie",
-        "fr": "Énergie renouvelable",
-        "ru": "Возобновляемая энергия",
-        "ar": "الطاقة المتجددة",
-        "zh": "可再生能源",
-        "ku": "Enerjiya Nûjenbar"
+        "tr": "Geçici Sertlik",
+        "en": "Temporary Hardness",
+        "de": "Vorübergehende Härte",
+        "fr": "Dureté temporaire",
+        "ru": "Временная твердость",
+        "ar": "صلابة مؤقتة",
+        "zh": "临时硬度",
+        "ku": "Zehmetiya Demkî"
       },
       "conceptB": {
-        "tr": "Fosil Yakıtlar",
-        "en": "Fossil Fuels",
-        "de": "Fossile Brennstoffe",
-        "fr": "Combustibles fossiles",
-        "ru": "Ископаемое топливо",
-        "ar": "الوقود الأحفوري",
-        "zh": "化石燃料",
-        "ku": "Sotemeniyên Fosîl"
+        "tr": "Kalıcı Sertlik",
+        "en": "Permanent Hardness",
+        "de": "Dauerhafte Härte",
+        "fr": "Dureté permanente",
+        "ru": "Постоянная твердость",
+        "ar": "صلابة دائمة",
+        "zh": "永久硬度",
+        "ku": "Serhişkiya Daîmî"
       },
       "distinction": {
-        "tr": "Yenilenebilir enerji doğal olarak yenilenen ve çevre kirliliği yapmayan temiz enerjidir; fosil yakıtlar sınırlı olup sera gazı salarak küresel ısınmaya yol açar.",
-        "en": "Renewable energy comes from natural replenishable sources with low emissions; fossil fuels are finite and release greenhouse gases causing global warming.",
-        "de": "Erneuerbare Energie stammt aus natürlichen Quellen mit geringen Emissionen; fossile Brennstoffe sind endlich und treiben den Treibhauseffekt an.",
-        "fr": "L'énergie renouvelable provient de sources naturelles inépuisables ; les combustibles fossiles sont limités et émettent des gaz à effet de serre.",
-        "ru": "Возобновляемая энергия вырабатывается из неисчерпаемых источников; ископаемое топливо конечно и вызывает парниковый эффект.",
-        "ar": "الطاقة المتجددة مستمدة من مصادر طبيعية تتجدد باستمرار؛ الوقود الأحفوري محدود ويسبب انبعاثات غازات الاحتباس الحراري.",
-        "zh": "可再生能源来自自然补充的清洁能源；化石燃料储量有限且燃烧排放温室气体加剧气候变暖。",
-        "ku": "Enerjiya nûjenbar ji çavkaniyên xwezayî yên bêdawî tê; sotemeniyên fosîl sînordar in û gazên serayê berdidin hewayê."
+        "tr": "Geçici sertlik bikarbonat tuzlarından kaynaklanır ve kaynatılarak giderilir; kalıcı sertlik sülfat/klorür tuzlarından kaynaklanır reçineyle giderilir.",
+        "en": "Temporary hardness is caused by bicarbonate salts and is removed by boiling; Permanent hardness is caused by sulfate/chloride salts and is removed by the resin.",
+        "de": "Vorübergehende Härte entsteht durch Bikarbonatsalze und wird durch Kochen beseitigt; Dauerhafte Härte entsteht durch Sulfat-/Chloridsalze und wird durch das Harz abgebaut.",
+        "fr": "La dureté temporaire est causée par les sels de bicarbonate et est éliminée par ébullition ; La dureté permanente est causée par les sels de sulfate/chlorure et est éliminée par la résine.",
+        "ru": "Временная жесткость вызвана бикарбонатными солями и удаляется кипячением; Постоянная жесткость вызвана сульфатными/хлоридными солями и удаляется смолой.",
+        "ar": "تنتج الصلابة المؤقتة عن أملاح البيكربونات وتتم إزالتها بالغليان؛ تنتج الصلابة الدائمة عن أملاح الكبريتات/الكلوريد ويتم إزالتها بواسطة الراتنج.",
+        "zh": "暂时硬度是由碳酸氢盐引起的，可通过煮沸去除；永久硬度是由硫酸盐/氯化物盐引起的，并被树脂去除。",
+        "ku": "Serhişkiya demkî ji ber xwêyên bîkarbonat çêdibe û bi kelandinê tê derxistin; Zehmetiya daîmî ji ber xwêyên sulfate/klorîdê çêdibe û ji hêla resinê ve tê derxistin."
       }
     }
   ],
@@ -762,7 +762,7 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Asîdê sulfurîk û asîda nîtrîk çêdibin"
         },
         {
-          "tr": "pH değeri 5 in altında asit yağmuru yağar",
+          "tr": "pH değeri 5'in altında asit yağmuru yağar",
           "en": "Acid rain occurs when the pH value is below 5.",
           "de": "Saurer Regen tritt auf, wenn der pH-Wert unter 5 liegt.",
           "fr": "Les pluies acides se produisent lorsque la valeur du pH est inférieure à 5.",
@@ -1040,14 +1040,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Doğa ve Kimya konusunu işlerken Sert Su üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Nature & Chemistry, which statement regarding Hard Water represents the correct answer?",
-        "de": "Welche Aussage zu Hartes Wasser stellt im Kontext von Natur und Chemie die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Nature et Chimie, quelle proposition sur Eau Dure constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Природа и химия», какой ответ относительно «Жесткая вода» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الطبيعة والكيمياء\" مخبرياً، أي إجابة بخصوص \"الماء العسر\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“自然与化学”实验探究与教学分析中，针对“硬水”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Xwezayî û Kîmya\" de, kîjan bersiv derbarê \"Hard Water\" de rast e?"
+        "tr": "Kimya dersinde Doğa ve Kimya ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Nature & Chemistry, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Natur und Chemie: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Nature et Chimie, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Природа и химия», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الطبيعة والكيمياء\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“自然与化学”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Xwezayî û Kîmya\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1116,14 +1116,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin04",
       "stem": {
-        "tr": "Kimya dersinde Doğa ve Kimya ünitesi incelenirken Sera Gazı (CO2, CH4) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Nature & Chemistry, which of the following propositions concerning Greenhouse Gas (CO2, CH4) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Natur und Chemie: Welche Behauptung bezüglich Treibhausgas (CO2, CH4) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Nature et Chimie, laquelle des affirmations suivantes concernant Gaz à effet de serre (CO2, CH4) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Природа и химия», какое из следующих суждений о «Парниковый газ (CO2, CH4)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الطبيعة والكيمياء\"، أي من الأحكام التالية المتعلقة بـ \"الغازات الدفيئة (CO2، CH4)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“自然与化学”核心规律时，下列关于“温室气体（CO2、CH4）”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Xwezayî û Kîmya\" tê kirin, kîjan daraza li ser \"Gaza serayê (CO2, CH4)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Doğa ve Kimya konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Nature & Chemistry?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Natur und Chemie zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Nature et Chimie ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Природа и химия»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الطبيعة والكيمياء\"؟",
+        "zh": "根据“自然与化学”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Xwezayî û Kîmya\" de rast e?"
       },
       "options": [
         {
@@ -1147,7 +1147,7 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Klorkirin ji bo rijandina pîvaz û merkur di avê de tê kirin."
         },
         {
-          "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0 dir.",
+          "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0'dir.",
           "en": "The pH value of natural pure rainwater is exactly 7.0.",
           "de": "Der pH-Wert von natürlichem, reinem Regenwasser beträgt genau 7,0.",
           "fr": "Le pH de l’eau de pluie pure et naturelle est exactement de 7,0.",
@@ -1192,14 +1192,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Doğa ve Kimya konusundaki temel kimyasal kurallar çerçevesinde Asidik Oksit (SO3, NO2) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Acidic Oxide (SO3, NO2) within the fundamental principles of Nature & Chemistry?",
-        "de": "Welche Aussage beschreibt das Konzept Saures Oxid (SO3, NO2) im Rahmen von Natur und Chemie am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Oxyde acide (SO3, NO2) selon les lois de Nature et Chimie?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Кислый оксид (SO3, NO2)» в рамках темы «Природа и химия»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"أكسيد حمضي (SO3، NO2)\" ضمن قواعد \"الطبيعة والكيمياء\"؟",
-        "zh": "根据“自然与化学”的基本化学原理，下列哪项阐述能最准确地界定“酸性氧化物（SO3、NO2）”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Oksîdê Asîdî (SO3, NO2)\" di çarçoveya prensîbên \"Xwezayî û Kîmya\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Doğa ve Kimya sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Nature & Chemistry, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Natur und Chemie: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Nature et Chimie, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Природа и химия», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الطبيعة والكيمياء\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“自然与化学”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Xwezayî û Kîmya\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1268,14 +1268,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Doğa ve Kimya sorularında karşılaşılan Biyolojik Birikim konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Nature & Chemistry, which assertion regarding Bioaccumulation is correct?",
-        "de": "Welche Feststellung bezüglich Bioakkumulation ist nach den chemischen Gesetzmäßigkeiten von Natur und Chemie richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Nature et Chimie, quelle affirmation concernant Bioaccumulation est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Природа и химия», какое положение относительно «Биоаккумуляция» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الطبيعة والكيمياء\"، أي حكم متعلق بـ \"التراكم الحيوي\" يعتبر صحيحاً؟",
-        "zh": "在高考“自然与化学”经典考题中，下列有关“生物累积性”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Xwezayî û Kîmya\" de, kîjan daraza li ser \"Biyokombûn\" rast e?"
+        "tr": "Aşağıda Doğa ve Kimya ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Nature & Chemistry, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Natur und Chemie: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Nature et Chimie, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Природа и химия», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الطبيعة والكيمياء\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“自然与化学”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Xwezayî û Kîmya\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1344,14 +1344,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin07",
       "stem": {
-        "tr": "Aşağıda Doğa ve Kimya ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Toprak Kirliliği ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Nature & Chemistry, which statement about Soil Pollution is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Natur und Chemie: Welche Aussage über Bodenverschmutzung ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Nature et Chimie, quelle affirmation relative à Pollution des sols est exacte?",
-        "ru": "На основе фундаментальных положений темы «Природа и химия», какое суждение о «Загрязнение почвы» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الطبيعة والكيمياء\"، أي عبارة حول \"تلوث التربة\" صحيحة؟",
-        "zh": "基于“自然与化学”的基础化学知识体系，下列关于“土壤污染”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Xwezayî û Kîmya\", kîjan gotin derbarê \"Qirêjiya axê\" de rast e?"
+        "tr": "Doğa ve Kimya konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Nature & Chemistry, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Natur und Chemie: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Nature et Chimie, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Природа и химия», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الطبيعة والكيمياء\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“自然与化学”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Xwezayî û Kîmya\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1375,7 +1375,7 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Metalên giran (serpîb Pb, merkur Hg, kadmium Cd) bi biyolojîkî bandorek jehrîn li ser zincîra xwarinê dikin."
         },
         {
-          "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0 dir.",
+          "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0'dir.",
           "en": "The pH value of natural pure rainwater is exactly 7.0.",
           "de": "Der pH-Wert von natürlichem, reinem Regenwasser beträgt genau 7,0.",
           "fr": "Le pH de l’eau de pluie pure et naturelle est exactement de 7,0.",
@@ -1420,14 +1420,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin08",
       "stem": {
-        "tr": "Doğa ve Kimya konusu kapsamında Yenilenebilir Enerji ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Nature & Chemistry, which of the following findings regarding Renewable Energy is scientifically verified?",
-        "de": "Im Rahmen der Einheit Natur und Chemie: Welcher der folgenden Befunde zu Erneuerbare Energie ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Nature et Chimie, laquelle des constatations suivantes concernant Énergie renouvelable est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Природа и химия», какой из следующих выводов относительно «Возобновляемая энергия» научно подтверждён?",
-        "ar": "في سياق موضوع \"الطبيعة والكيمياء\"، أي من النتائج التالية المتعلقة بـ \"الطاقة المتجددة\" مثبتة علمياً؟",
-        "zh": "在“自然与化学”主题范畴内，下列关于“可再生能源”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Xwezayî û Kîmya\" de, kîjan ji van encamên li ser \"Enerjiya Nûjenbar\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Doğa ve Kimya ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Nature & Chemistry, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Natur und Chemie: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Nature et Chimie, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Природа и химия», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الطبيعة والكيمياء\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“自然与化学”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Xwezayî û Kîmya\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1471,7 +1471,7 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Di ava hişk de, detergent kef nake û taybetmendiyên xwe yên paqijkirinê bi tevahî winda dike."
         },
         {
-          "tr": "O2 ve N2 gazları dünyadaki sera etkisinin %90 ından sorumludur.",
+          "tr": "O2 ve N2 gazları dünyadaki sera etkisinin %90'ından sorumludur.",
           "en": "O2 and N2 gases are responsible for 90% of the world's greenhouse effect.",
           "de": "O2- und N2-Gase sind für 90 % des weltweiten Treibhauseffekts verantwortlich.",
           "fr": "Les gaz O2 et N2 sont responsables de 90 % de l’effet de serre mondial.",
@@ -1496,14 +1496,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Doğa ve Kimya ünitesinde ele alınan Geçici Sertlik hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Nature & Chemistry, which statement about Temporary Hardness is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Natur und Chemie: Welche Aussage über Vorübergehende Härte ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Nature et Chimie, quelle affirmation relative à Dureté temporaire est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Природа и химия», какое утверждение о «Временная твердость» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الطبيعة والكيمياء\"، أي عبارة حول \"صلابة مؤقتة\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“自然与化学”单元中关于“临时硬度”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Xwezayî û Kîmya\", kîjan gotin li ser \"Zehmetiya Demkî\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Doğa ve Kimya konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Nature & Chemistry, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Natur und Chemie die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Nature et Chimie, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Природа и химия», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الطبيعة والكيمياء\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“自然与化学”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Xwezayî û Kîmya\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1572,18 +1572,18 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Doğa ve Kimya konusunu işlerken Sera Etkisi üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Nature & Chemistry, which statement regarding Greenhouse Effect represents the correct answer?",
-        "de": "Welche Aussage zu Treibhauseffekt stellt im Kontext von Natur und Chemie die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Nature et Chimie, quelle proposition sur Effet de serre constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Природа и химия», какой ответ относительно «Парниковый эффект» является правильным?",
-        "ar": "أثناء دراسة موضوع \"الطبيعة والكيمياء\" مخبرياً، أي إجابة بخصوص \"تأثير الاحتباس الحراري\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“自然与化学”实验探究与教学分析中，针对“温室效应”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Xwezayî û Kîmya\" de, kîjan bersiv derbarê \"Bandora serayê\" de rast e?"
+        "tr": "Kimya dersinde Doğa ve Kimya ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Nature & Chemistry, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Natur und Chemie: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Nature et Chimie, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Природа и химия», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"الطبيعة والكيمياء\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“自然与化学”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Xwezayî û Kîmya\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
-          "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0 dir.",
+          "tr": "Doğal saf yağmur suyunun pH değeri tam 7.0'dir.",
           "en": "The pH value of natural pure rainwater is exactly 7.0.",
           "de": "Der pH-Wert von natürlichem, reinem Regenwasser beträgt genau 7,0.",
           "fr": "Le pH de l’eau de pluie pure et naturelle est exactement de 7,0.",
@@ -1648,14 +1648,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin11",
       "stem": {
-        "tr": "Kimya dersinde Doğa ve Kimya ünitesi incelenirken Sert Su ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Nature & Chemistry, which of the following propositions concerning Hard Water is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Natur und Chemie: Welche Behauptung bezüglich Hartes Wasser entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Nature et Chimie, laquelle des affirmations suivantes concernant Eau Dure est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Природа и химия», какое из следующих суждений о «Жесткая вода» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"الطبيعة والكيمياء\"، أي من الأحكام التالية المتعلقة بـ \"الماء العسر\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“自然与化学”核心规律时，下列关于“硬水”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Xwezayî û Kîmya\" tê kirin, kîjan daraza li ser \"Hard Water\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Doğa ve Kimya konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Nature & Chemistry?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Natur und Chemie zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Nature et Chimie ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Природа и химия»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"الطبيعة والكيمياء\"؟",
+        "zh": "根据“自然与化学”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Xwezayî û Kîmya\" de rast e?"
       },
       "options": [
         {
@@ -1689,7 +1689,7 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Di ava hişk de, detergent kef nake û taybetmendiyên xwe yên paqijkirinê bi tevahî winda dike."
         },
         {
-          "tr": "O2 ve N2 gazları dünyadaki sera etkisinin %90 ından sorumludur.",
+          "tr": "O2 ve N2 gazları dünyadaki sera etkisinin %90'ından sorumludur.",
           "en": "O2 and N2 gases are responsible for 90% of the world's greenhouse effect.",
           "de": "O2- und N2-Gase sind für 90 % des weltweiten Treibhauseffekts verantwortlich.",
           "fr": "Les gaz O2 et N2 sont responsables de 90 % de l’effet de serre mondial.",
@@ -1724,14 +1724,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Doğa ve Kimya konusundaki temel kimyasal kurallar çerçevesinde Sera Gazı (CO2, CH4) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Greenhouse Gas (CO2, CH4) within the fundamental principles of Nature & Chemistry?",
-        "de": "Welche Aussage beschreibt das Konzept Treibhausgas (CO2, CH4) im Rahmen von Natur und Chemie am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Gaz à effet de serre (CO2, CH4) selon les lois de Nature et Chimie?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Парниковый газ (CO2, CH4)» в рамках темы «Природа и химия»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"الغازات الدفيئة (CO2، CH4)\" ضمن قواعد \"الطبيعة والكيمياء\"؟",
-        "zh": "根据“自然与化学”的基本化学原理，下列哪项阐述能最准确地界定“温室气体（CO2、CH4）”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Gaza serayê (CO2, CH4)\" di çarçoveya prensîbên \"Xwezayî û Kîmya\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Doğa ve Kimya sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Nature & Chemistry, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Natur und Chemie: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Nature et Chimie, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Природа и химия», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الطبيعة والكيمياء\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“自然与化学”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Xwezayî û Kîmya\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1800,14 +1800,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Doğa ve Kimya sorularında karşılaşılan Asidik Oksit (SO3, NO2) konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Nature & Chemistry, which assertion regarding Acidic Oxide (SO3, NO2) is correct?",
-        "de": "Welche Feststellung bezüglich Saures Oxid (SO3, NO2) ist nach den chemischen Gesetzmäßigkeiten von Natur und Chemie richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Nature et Chimie, quelle affirmation concernant Oxyde acide (SO3, NO2) est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Природа и химия», какое положение относительно «Кислый оксид (SO3, NO2)» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"الطبيعة والكيمياء\"، أي حكم متعلق بـ \"أكسيد حمضي (SO3، NO2)\" يعتبر صحيحاً؟",
-        "zh": "在高考“自然与化学”经典考题中，下列有关“酸性氧化物（SO3、NO2）”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Xwezayî û Kîmya\" de, kîjan daraza li ser \"Oksîdê Asîdî (SO3, NO2)\" rast e?"
+        "tr": "Aşağıda Doğa ve Kimya ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Nature & Chemistry, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Natur und Chemie: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Nature et Chimie, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Природа и химия», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الطبيعة والكيمياء\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“自然与化学”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Xwezayî û Kîmya\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1831,7 +1831,7 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Xwêyên ku dibin sedema serhişkiya daîmî, kevirê kilsin CaCO3 dernaxin."
         },
         {
-          "tr": "pH değeri 5.6 nın altında olan yağışlar asit yağmuru olarak kabul edilir.",
+          "tr": "pH değeri 5.6'nın altında olan yağışlar asit yağmuru olarak kabul edilir.",
           "en": "Precipitation with a pH value below 5.6 is considered acid rain.",
           "de": "Als saurer Regen gilt Niederschlag mit einem pH-Wert unter 5,6.",
           "fr": "Les précipitations dont le pH est inférieur à 5,6 sont considérées comme des pluies acides.",
@@ -1863,7 +1863,7 @@ export const unit05: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"pH değeri 5.6 nın altında olan yağışlar asit yağmuru olarak kabul edilir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"pH değeri 5.6'nın altında olan yağışlar asit yağmuru olarak kabul edilir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Precipitation with a pH value below 5.6 is considered acid rain.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Als saurer Regen gilt Niederschlag mit einem pH-Wert unter 5,6.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Les précipitations dont le pH est inférieur à 5,6 sont considérées comme des pluies acides.\". Notion fondamentale du programme officiel de chimie.",
@@ -1876,14 +1876,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin14",
       "stem": {
-        "tr": "Aşağıda Doğa ve Kimya ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Biyolojik Birikim ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Nature & Chemistry, which statement about Bioaccumulation is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Natur und Chemie: Welche Aussage über Bioakkumulation ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Nature et Chimie, quelle affirmation relative à Bioaccumulation est exacte?",
-        "ru": "На основе фундаментальных положений темы «Природа и химия», какое суждение о «Биоаккумуляция» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"الطبيعة والكيمياء\"، أي عبارة حول \"التراكم الحيوي\" صحيحة؟",
-        "zh": "基于“自然与化学”的基础化学知识体系，下列关于“生物累积性”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Xwezayî û Kîmya\", kîjan gotin derbarê \"Biyokombûn\" de rast e?"
+        "tr": "Doğa ve Kimya konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Nature & Chemistry, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Natur und Chemie: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Nature et Chimie, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Природа и химия», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"الطبيعة والكيمياء\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“自然与化学”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Xwezayî û Kîmya\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1897,7 +1897,7 @@ export const unit05: ChemistryUnitSeedData = {
           "ku": "Di ava hişk de, detergent kef nake û taybetmendiyên xwe yên paqijkirinê bi tevahî winda dike."
         },
         {
-          "tr": "O2 ve N2 gazları dünyadaki sera etkisinin %90 ından sorumludur.",
+          "tr": "O2 ve N2 gazları dünyadaki sera etkisinin %90'ından sorumludur.",
           "en": "O2 and N2 gases are responsible for 90% of the world's greenhouse effect.",
           "de": "O2- und N2-Gase sind für 90 % des weltweiten Treibhauseffekts verantwortlich.",
           "fr": "Les gaz O2 et N2 sont responsables de 90 % de l’effet de serre mondial.",
@@ -1952,14 +1952,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin15",
       "stem": {
-        "tr": "Doğa ve Kimya konusu kapsamında Toprak Kirliliği ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Nature & Chemistry, which of the following findings regarding Soil Pollution is scientifically verified?",
-        "de": "Im Rahmen der Einheit Natur und Chemie: Welcher der folgenden Befunde zu Bodenverschmutzung ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Nature et Chimie, laquelle des constatations suivantes concernant Pollution des sols est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Природа и химия», какой из следующих выводов относительно «Загрязнение почвы» научно подтверждён?",
-        "ar": "في سياق موضوع \"الطبيعة والكيمياء\"، أي من النتائج التالية المتعلقة بـ \"تلوث التربة\" مثبتة علمياً؟",
-        "zh": "在“自然与化学”主题范畴内，下列关于“土壤污染”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Xwezayî û Kîmya\" de, kîjan ji van encamên li ser \"Qirêjiya axê\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Doğa ve Kimya ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Nature & Chemistry, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Natur und Chemie: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Nature et Chimie, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Природа и химия», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الطبيعة والكيمياء\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“自然与化学”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Xwezayî û Kîmya\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -2028,14 +2028,14 @@ export const unit05: ChemistryUnitSeedData = {
     {
       "id": "u05-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Doğa ve Kimya ünitesinde ele alınan Yenilenebilir Enerji hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Nature & Chemistry, which statement about Renewable Energy is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Natur und Chemie: Welche Aussage über Erneuerbare Energie ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Nature et Chimie, quelle affirmation relative à Énergie renouvelable est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Природа и химия», какое утверждение о «Возобновляемая энергия» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"الطبيعة والكيمياء\"، أي عبارة حول \"الطاقة المتجددة\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“自然与化学”单元中关于“可再生能源”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Xwezayî û Kîmya\", kîjan gotin li ser \"Enerjiya Nûjenbar\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Doğa ve Kimya konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Nature & Chemistry, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Natur und Chemie die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Nature et Chimie, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Природа и химия», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"الطبيعة والكيمياء\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“自然与化学”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Xwezayî û Kîmya\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {

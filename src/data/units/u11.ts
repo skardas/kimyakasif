@@ -270,7 +270,7 @@ export const unit11: ChemistryUnitSeedData = {
         "ku": "Orbîtalên s bi sferîk sîmetrîk in û di her asta enerjiyê de 1 elektron (herî zêde 2 elektron) heye."
       },
       "trap": {
-        "tr": "s orbitalleri sadece n = 2 den itibaren başlar.",
+        "tr": "s orbitalleri sadece n = 2'den itibaren başlar.",
         "en": "s orbitals start only from n = 2.",
         "de": "s-Orbitale beginnen erst ab n = 2.",
         "fr": "Les orbitales s commencent uniquement à partir de n = 2.",
@@ -283,7 +283,7 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-f12",
       "fact": {
-        "tr": "p orbitalleri n = 2 den başlar, halter şeklindedir ve 3 tanedir (px, py, pz, en çok 6 elektron).",
+        "tr": "p orbitalleri n = 2'den başlar, halter şeklindedir ve 3 tanedir (px, py, pz, en çok 6 elektron).",
         "en": "p orbitals start from n = 2, are dumbbell-shaped and consist of 3 (px, py, pz, maximum 6 electrons).",
         "de": "p-Orbitale beginnen bei n = 2, sind hantelförmig und bestehen aus 3 (px, py, pz, maximal 6 Elektronen).",
         "fr": "Les orbitales p partent de n = 2, sont en forme d'haltère et se composent de 3 (px, py, pz, maximum 6 électrons).",
@@ -306,7 +306,7 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-f13",
       "fact": {
-        "tr": "d orbitalleri n = 3 ten başlar, 5 tanedir ve en çok 10 elektron alır.",
+        "tr": "d orbitalleri n = 3'ten başlar, 5 tanedir ve en çok 10 elektron alır.",
         "en": "d orbitals start from n = 3, there are 5 and can take up to 10 electrons.",
         "de": "d-Orbitale beginnen bei n = 3, es gibt 5 und können bis zu 10 Elektronen aufnehmen.",
         "fr": "Les orbitales d partent de n = 3, il y en a 5 et peuvent prendre jusqu'à 10 électrons.",
@@ -329,7 +329,7 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-f14",
       "fact": {
-        "tr": "f orbitalleri n = 4 ten başlar, 7 tanedir ve en çok 14 elektron alır.",
+        "tr": "f orbitalleri n = 4'ten başlar, 7 tanedir ve en çok 14 elektron alır.",
         "en": "f orbitals start from n = 4, there are 7 in number and can take up to 14 electrons.",
         "de": "f-Orbitale beginnen bei n = 4, es gibt 7 an der Zahl und können bis zu 14 Elektronen aufnehmen.",
         "fr": "Les orbitales f partent de n = 4, elles sont au nombre de 7 et peuvent prendre jusqu'à 14 électrons.",
@@ -426,7 +426,7 @@ export const unit11: ChemistryUnitSeedData = {
         "fr": "Aufbau stipule que les électrons s'installent dans des orbitales de basse énergie, tandis que Hund stipule que les électrons entrent d'abord dans des orbitales d'énergie égale, un par un, avec un spin parallèle.",
         "ru": "Ауфбау утверждает, что электроны располагаются на низкоэнергетических орбиталях, в то время как Хунд утверждает, что электроны сначала один за другим выходят на орбитали с одинаковой энергией и с параллельным спином.",
         "ar": "يحكم أوفباو أن الإلكترونات تستقر في مدارات منخفضة الطاقة، بينما يحكم هوند أن الإلكترونات تدخل أولاً إلى مدارات ذات طاقة متساوية، واحدة تلو الأخرى، بدوران متوازي.",
-        "zh": "奥夫鲍（Aufbau）规则电子在低能轨道上定居，而洪德（Hund）规则电子首先进入具有相等能量的轨道，一个接一个，并具有平行自旋。",
+        "zh": "奥夫鲍规则电子在低能轨道上定居，而洪德（Hund）规则电子首先进入具有相等能量的轨道，一个接一个，并具有平行自旋。",
         "ku": "Aufbau qaîde dike ku elektron di orbîtalên kêm-enerjiyê de bi cih dibin, dema ku Hund biryar dide ku elektron yekem car bi enerjiya wekhev, yek bi yek, bi spinek paralel dikevin orbîtalan."
       }
     },
@@ -437,8 +437,8 @@ export const unit11: ChemistryUnitSeedData = {
         "en": "s orbital",
         "de": "s Orbital",
         "fr": "s orbitale",
-        "ru": "орбитальный",
-        "ar": "المداري",
+        "ru": "s-орбиталь",
+        "ar": "المدار s",
         "zh": "s轨道",
         "ku": "s orbital"
       },
@@ -448,7 +448,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "p-Orbital",
         "fr": "p orbitale",
         "ru": "p-орбиталь",
-        "ar": "ف المداري",
+        "ar": "المدار p",
         "zh": "p轨道",
         "ku": "p orbital"
       },
@@ -598,67 +598,67 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-c07",
       "conceptA": {
-        "tr": "d Orbitali",
-        "en": "d Orbital",
-        "de": "d-Orbital",
-        "fr": "Orbitale d",
-        "ru": "d-Орбиталь",
-        "ar": "مدار d",
-        "zh": "d轨道",
-        "ku": "Orbîtala d"
+        "tr": "Aufbau İlkesi",
+        "en": "Aufbau Principle",
+        "de": "Aufbauprinzip",
+        "fr": "Principe d'Aufbau",
+        "ru": "Принцип Ауфбау",
+        "ar": "مبدأ أوفباو",
+        "zh": "奥夫鲍原则",
+        "ku": "Prensîba Aufbau"
       },
       "conceptB": {
-        "tr": "f Orbitali",
-        "en": "f Orbital",
-        "de": "f-Orbital",
-        "fr": "Orbitale f",
-        "ru": "f-Орбиталь",
-        "ar": "مدار f",
-        "zh": "f轨道",
-        "ku": "Orbîtala f"
+        "tr": "Hund Kuralı",
+        "en": "Hund's Rule",
+        "de": "Hunds Regel",
+        "fr": "La règle de Hund",
+        "ru": "Правило Хунда",
+        "ar": "قاعدة هوند",
+        "zh": "洪特法则",
+        "ku": "Qanûna Hund"
       },
       "distinction": {
-        "tr": "d orbitalleri l = 2 olup 5 alt orbitalden oluşur ve en fazla 10 elektron taşır; f orbitalleri l = 3 olup 7 orbitalden oluşur ve 14 elektron alır.",
-        "en": "d orbitals have quantum number l = 2, comprising 5 sub-orbitals holding up to 10 electrons; f orbitals have l = 3 with 7 sub-orbitals holding 14 electrons.",
-        "de": "d-Orbitale haben l = 2 mit 5 Unterorbitalen und maximal 10 Elektronen; f-Orbitale haben l = 3 mit 7 Unterorbitalen und 14 Elektronen.",
-        "fr": "Les orbitales d ont l = 2, possèdent 5 sous-niveaux et accueillent 10 électrons ; les orbitales f ont l = 3, 7 sous-niveaux et 14 électrons.",
-        "ru": "d-Орбитали имеют l = 2, состоят из 5 орбиталей и вмещают до 10 электронов; f-орбитали имеют l = 3, состоят из 7 орбиталей и вмещают 14 электронов.",
-        "ar": "مدارات d تمتلك العدد الكمومي l = 2 وتتكون من 5 مدارات فرعية تسع 10 إلكترونات؛ مدارات f تمتلك l = 3 وتتكون من 7 مدارات تسع 14 إلكتروناً.",
-        "zh": "d轨道的角量子数l = 2，由5个空间取向轨道组成，最多容纳10个电子；f轨道的l = 3，由7个轨道组成，最多容纳14个电子。",
-        "ku": "Orbîtalên d xwedî hejmara l = 2 ne, ji 5 bin-orbîtalan pêk tên û herî zêde 10 elektronan digirin; orbîtalên f xwedî l = 3 ne û 14 elektronan digirin."
+        "tr": "Aufbau elektronların düşük enerjili orbitale yerleşmesini, Hund eş enerjili orbitallere önce tek tek paralel spinle girmesini kurala bağlar.",
+        "en": "Aufbau rules that electrons settle in low-energy orbitals, while Hund rules that electrons first enter orbitals with equal energy, one by one, with parallel spin.",
+        "de": "Aufbau geht davon aus, dass sich Elektronen in Orbitalen mit niedriger Energie niederlassen, während Hund davon ausgeht, dass Elektronen zunächst nacheinander in Orbitale mit gleicher Energie und parallelem Spin eintreten.",
+        "fr": "Aufbau stipule que les électrons s'installent dans des orbitales de basse énergie, tandis que Hund stipule que les électrons entrent d'abord dans des orbitales d'énergie égale, un par un, avec un spin parallèle.",
+        "ru": "Ауфбау утверждает, что электроны располагаются на низкоэнергетических орбиталях, в то время как Хунд утверждает, что электроны сначала один за другим выходят на орбитали с одинаковой энергией и с параллельным спином.",
+        "ar": "يحكم أوفباو أن الإلكترونات تستقر في مدارات منخفضة الطاقة، بينما يحكم هوند أن الإلكترونات تدخل أولاً إلى مدارات ذات طاقة متساوية، واحدة تلو الأخرى، بدوران متوازي.",
+        "zh": "奥夫鲍规则电子在低能轨道上定居，而洪德（Hund）规则电子首先进入具有相等能量的轨道，一个接一个，并具有平行自旋。",
+        "ku": "Aufbau qaîde dike ku elektron di orbîtalên kêm-enerjiyê de bi cih dibin, dema ku Hund biryar dide ku elektron yekem car bi enerjiya wekhev, yek bi yek, bi spinek paralel dikevin orbîtalan."
       }
     },
     {
       "id": "u11-c08",
       "conceptA": {
-        "tr": "Yörünge (Bohr)",
-        "en": "Orbit (Bohr)",
-        "de": "Umlaufbahn (Bohr)",
-        "fr": "Orbite (Bohr)",
-        "ru": "Орбита (Бора)",
-        "ar": "المدار (بور)",
-        "zh": "玻尔轨道",
-        "ku": "Rêgeh (Bohr)"
+        "tr": "Aufbau İlkesi",
+        "en": "Aufbau Principle",
+        "de": "Aufbauprinzip",
+        "fr": "Principe d'Aufbau",
+        "ru": "Принцип Ауфбау",
+        "ar": "مبدأ أوفباو",
+        "zh": "奥夫鲍原则",
+        "ku": "Prensîba Aufbau"
       },
       "conceptB": {
-        "tr": "Orbital (Modern Teori)",
-        "en": "Orbital (Modern Theory)",
-        "de": "Orbital (Moderne Theorie)",
-        "fr": "Orbitale (Théorie moderne)",
-        "ru": "Орбиталь (Современная теория)",
-        "ar": "المدار الذري (النظرية الحديثة)",
-        "zh": "现代原子轨道",
-        "ku": "Orbîtal (Teoriya Nûjen)"
+        "tr": "Hund Kuralı",
+        "en": "Hund's Rule",
+        "de": "Hunds Regel",
+        "fr": "La règle de Hund",
+        "ru": "Правило Хунда",
+        "ar": "قاعدة هوند",
+        "zh": "洪特法则",
+        "ku": "Qanûna Hund"
       },
       "distinction": {
-        "tr": "Bohr yörüngesi elektronun dairesel düzlemsel sabit yoludur; modern orbital ise elektronun bulunma olasılığının en yüksek olduğu üç boyutlu hacimsel bölgedir.",
-        "en": "A Bohr orbit is a fixed circular 2D electron path; a quantum orbital is a 3D probability cloud where finding an electron is most likely.",
-        "de": "Eine Bohr-Umlaufbahn ist eine feste zweidimensionale Bahn; ein Orbital ist ein dreidimensionaler Raum mit höchster Aufenthaltswahrscheinlichkeit.",
-        "fr": "L'orbite de Bohr est une trajectoire circulaire plane fixe ; l'orbitale quantique est une région tridimensionnelle de probabilité de présence maximale.",
-        "ru": "Орбита Бора — это фиксированная плоская круговая траектория; орбиталь — трехмерная область пространства с максимальной вероятностью нахождения электрона.",
-        "ar": "مدار بور هو مسار دائري ثنائي الأبعاد ثابت؛ المدار الكمي الحديث هو سحابة ثلاثية الأبعاد تمثل أعلى احتمال لوجود الإلكترون.",
-        "zh": "玻尔轨道是电子运行的固定平面圆周轨迹；现代量子轨道则是电子出现几率最大的三维空间几率云区域。",
-        "ku": "Rêgeha Bohr rêyeke xelekî ya du-alî ye; orbîtala nûjen jî qada sê-alî ye ku îhtîmala dîtina elektronê herî zêde ye."
+        "tr": "Aufbau elektronların düşük enerjili orbitale yerleşmesini, Hund eş enerjili orbitallere önce tek tek paralel spinle girmesini kurala bağlar.",
+        "en": "Aufbau rules that electrons settle in low-energy orbitals, while Hund rules that electrons first enter orbitals with equal energy, one by one, with parallel spin.",
+        "de": "Aufbau geht davon aus, dass sich Elektronen in Orbitalen mit niedriger Energie niederlassen, während Hund davon ausgeht, dass Elektronen zunächst nacheinander in Orbitale mit gleicher Energie und parallelem Spin eintreten.",
+        "fr": "Aufbau stipule que les électrons s'installent dans des orbitales de basse énergie, tandis que Hund stipule que les électrons entrent d'abord dans des orbitales d'énergie égale, un par un, avec un spin parallèle.",
+        "ru": "Ауфбау утверждает, что электроны располагаются на низкоэнергетических орбиталях, в то время как Хунд утверждает, что электроны сначала один за другим выходят на орбитали с одинаковой энергией и с параллельным спином.",
+        "ar": "يحكم أوفباو أن الإلكترونات تستقر في مدارات منخفضة الطاقة، بينما يحكم هوند أن الإلكترونات تدخل أولاً إلى مدارات ذات طاقة متساوية، واحدة تلو الأخرى، بدوران متوازي.",
+        "zh": "奥夫鲍规则电子在低能轨道上定居，而洪德（Hund）规则电子首先进入具有相等能量的轨道，一个接一个，并具有平行自旋。",
+        "ku": "Aufbau qaîde dike ku elektron di orbîtalên kêm-enerjiyê de bi cih dibin, dema ku Hund biryar dide ku elektron yekem car bi enerjiya wekhev, yek bi yek, bi spinek paralel dikevin orbîtalan."
       }
     }
   ],
@@ -762,7 +762,7 @@ export const unit11: ChemistryUnitSeedData = {
           "ku": "Piştî orbitalên 3s û 3p, orbîtala 4s tije dibe."
         },
         {
-          "tr": "4s ten sonra 3d orbitallerine elektron yerleşir",
+          "tr": "4s'ten sonra 3d orbitallerine elektron yerleşir",
           "en": "After 4s, electrons are placed in 3d orbitals.",
           "de": "Nach 4 Sekunden werden die Elektronen in 3D-Orbitalen platziert.",
           "fr": "Après 4 secondes, les électrons sont placés sur des orbitales 3D.",
@@ -807,7 +807,7 @@ export const unit11: ChemistryUnitSeedData = {
           "ku": "Hêza goşeyî kuantuma l ya cureya orbîtal tê dîtin"
         },
         {
-          "tr": "l ye bağlı olarak ml değerleri -l den +l ye sıralanır",
+          "tr": "l'ye bağlı olarak ml değerleri -l'den +l'ye sıralanır",
           "en": "Depending on l, ml values are sorted from -l to +l.",
           "de": "Abhängig von l werden ml-Werte von -l bis +l sortiert.",
           "fr": "En fonction de l, les valeurs ml sont triées de -l à +l.",
@@ -842,7 +842,7 @@ export const unit11: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Sc den itibaren 3d orbitalleri doldurulur",
+          "tr": "Sc'den itibaren 3d orbitalleri doldurulur",
           "en": "3d orbitals are filled starting from Sc",
           "de": "3D-Orbitale werden ab Sc gefüllt",
           "fr": "Les orbitales 3D sont remplies à partir de Sc",
@@ -951,7 +951,7 @@ export const unit11: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "24Cr elektron dizilimi [Ar] 4s1 3d5 tir. 4s de 1 tane, 3d de 5 tane olmak üzere toplam 6 adet yarı dolu orbital içerir.",
+        "tr": "24Cr elektron dizilimi [Ar] 4s1 3d5'tir. 4s'te 1 tane, 3d'de 5 tane olmak üzere toplam 6 adet yarı dolu orbital içerir.",
         "en": "The electron configuration of 24Cr is [Ar] 4s1 3d5. It contains a total of 6 half-filled orbitals, 1 in 4s and 5 in 3d.",
         "de": "Die Elektronenkonfiguration von 24Cr ist [Ar] 4s1 3d5. Es enthält insgesamt 6 halbgefüllte Orbitale, 1 in 4s und 5 in 3d.",
         "fr": "La configuration électronique du 24Cr est [Ar] 4s1 3d5. Il contient un total de 6 orbitales à moitié remplies, 1 en 4s et 5 en 3D.",
@@ -1040,14 +1040,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin03",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Modern Atom Teorisi konusunu işlerken Baş Kuantum Sayısı (n) üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Modern Atomic Theory, which statement regarding Lead Quantum Number (n) represents the correct answer?",
-        "de": "Welche Aussage zu Leitquantenzahl (n) stellt im Kontext von Moderne Atomtheorie die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Théorie Atomique Moderne, quelle proposition sur Nombre quantique de plomb (n) constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Современная теория атома», какой ответ относительно «Квантовое число свинца (n)» является правильным?",
-        "ar": "أثناء دراسة موضوع \"النظرية الذرية الحديثة\" مخبرياً، أي إجابة بخصوص \"رقم الكم الرصاصي (ن)\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“现代原子论”实验探究与教学分析中，针对“铅量子数 (n)”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Teoriya Modêrn a Atomê\" de, kîjan bersiv derbarê \"Hejmara Kuantuma Pêşîn (n)\" de rast e?"
+        "tr": "Kimya dersinde Modern Atom Teorisi ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Modern Atomic Theory, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Moderne Atomtheorie: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Théorie Atomique Moderne, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Современная теория атома», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"النظرية الذرية الحديثة\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“现代原子论”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Teoriya Modêrn a Atomê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1116,14 +1116,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin04",
       "stem": {
-        "tr": "Kimya dersinde Modern Atom Teorisi ünitesi incelenirken Manyetik Kuantum (ml) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Modern Atomic Theory, which of the following propositions concerning Magnetic Quantum (ml) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Moderne Atomtheorie: Welche Behauptung bezüglich Magnetisches Quantum (ml) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Théorie Atomique Moderne, laquelle des affirmations suivantes concernant Quantique magnétique (ml) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Современная теория атома», какое из следующих суждений о «Магнитный Квант (мл)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"النظرية الذرية الحديثة\"، أي من الأحكام التالية المتعلقة بـ \"الكم المغناطيسي (مل)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“现代原子论”核心规律时，下列关于“磁量子（ml）”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Teoriya Modêrn a Atomê\" tê kirin, kîjan daraza li ser \"Quantuma Magnetîk (ml)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Modern Atom Teorisi konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Modern Atomic Theory?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Moderne Atomtheorie zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Théorie Atomique Moderne ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Современная теория атома»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"النظرية الذرية الحديثة\"؟",
+        "zh": "根据“现代原子论”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Teoriya Modêrn a Atomê\" de rast e?"
       },
       "options": [
         {
@@ -1192,14 +1192,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin05",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Modern Atom Teorisi konusundaki temel kimyasal kurallar çerçevesinde Pauli Dışlama İlkesi kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Pauli Exclusion Principle within the fundamental principles of Modern Atomic Theory?",
-        "de": "Welche Aussage beschreibt das Konzept Pauli-Ausschlussprinzip im Rahmen von Moderne Atomtheorie am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Principe d'exclusion de Pauli selon les lois de Théorie Atomique Moderne?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Принцип исключения Паули» в рамках темы «Современная теория атома»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"مبدأ استبعاد باولي\" ضمن قواعد \"النظرية الذرية الحديثة\"؟",
-        "zh": "根据“现代原子论”的基本化学原理，下列哪项阐述能最准确地界定“泡利不相容原理”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Prensîba Derxistina Pauli\" di çarçoveya prensîbên \"Teoriya Modêrn a Atomê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Modern Atom Teorisi sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Modern Atomic Theory, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Moderne Atomtheorie: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Théorie Atomique Moderne, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Современная теория атома», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"النظرية الذرية الحديثة\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“现代原子论”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Teoriya Modêrn a Atomê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1213,7 +1213,7 @@ export const unit11: ChemistryUnitSeedData = {
           "ku": "Elementa 24Cr di veavakirina elektronê de wekî [Ar] 4s2 3d4 bi dawî dibe."
         },
         {
-          "tr": "s orbitalleri sadece n = 2 den itibaren başlar.",
+          "tr": "s orbitalleri sadece n = 2'den itibaren başlar.",
           "en": "s orbitals start only from n = 2.",
           "de": "s-Orbitale beginnen erst ab n = 2.",
           "fr": "Les orbitales s commencent uniquement à partir de n = 2.",
@@ -1268,14 +1268,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin06",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Modern Atom Teorisi sorularında karşılaşılan Temel Hal konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Modern Atomic Theory, which assertion regarding Ground State is correct?",
-        "de": "Welche Feststellung bezüglich Grundzustand ist nach den chemischen Gesetzmäßigkeiten von Moderne Atomtheorie richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Théorie Atomique Moderne, quelle affirmation concernant État fondamental est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Современная теория атома», какое положение относительно «Основное состояние» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"النظرية الذرية الحديثة\"، أي حكم متعلق بـ \"الحالة الأرضية\" يعتبر صحيحاً؟",
-        "zh": "在高考“现代原子论”经典考题中，下列有关“Ground State”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Teoriya Modêrn a Atomê\" de, kîjan daraza li ser \"Dewleta erdê\" rast e?"
+        "tr": "Aşağıda Modern Atom Teorisi ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Modern Atomic Theory, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Moderne Atomtheorie: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Théorie Atomique Moderne, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Современная теория атома», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"النظرية الذرية الحديثة\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“现代原子论”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Teoriya Modêrn a Atomê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1344,14 +1344,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin07",
       "stem": {
-        "tr": "Aşağıda Modern Atom Teorisi ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre d Orbitali ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Modern Atomic Theory, which statement about d Orbital is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Moderne Atomtheorie: Welche Aussage über d-Orbital ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Théorie Atomique Moderne, quelle affirmation relative à Orbitale d est exacte?",
-        "ru": "На основе фундаментальных положений темы «Современная теория атома», какое суждение о «d-Орбиталь» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"النظرية الذرية الحديثة\"، أي عبارة حول \"مدار d\" صحيحة؟",
-        "zh": "基于“现代原子论”的基础化学知识体系，下列关于“d轨道”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Teoriya Modêrn a Atomê\", kîjan gotin derbarê \"Orbîtala d\" de rast e?"
+        "tr": "Modern Atom Teorisi konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Modern Atomic Theory, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Moderne Atomtheorie: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Théorie Atomique Moderne, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Современная теория атома», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"النظرية الذرية الحديثة\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“现代原子论”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Teoriya Modêrn a Atomê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1420,18 +1420,18 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin08",
       "stem": {
-        "tr": "Modern Atom Teorisi konusu kapsamında Yörünge (Bohr) ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Modern Atomic Theory, which of the following findings regarding Orbit (Bohr) is scientifically verified?",
-        "de": "Im Rahmen der Einheit Moderne Atomtheorie: Welcher der folgenden Befunde zu Umlaufbahn (Bohr) ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Théorie Atomique Moderne, laquelle des constatations suivantes concernant Orbite (Bohr) est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Современная теория атома», какой из следующих выводов относительно «Орбита (Бора)» научно подтверждён?",
-        "ar": "في سياق موضوع \"النظرية الذرية الحديثة\"، أي من النتائج التالية المتعلقة بـ \"المدار (بور)\" مثبتة علمياً؟",
-        "zh": "在“现代原子论”主题范畴内，下列关于“玻尔轨道”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Teoriya Modêrn a Atomê\" de, kîjan ji van encamên li ser \"Rêgeh (Bohr)\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Modern Atom Teorisi ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Modern Atomic Theory, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Moderne Atomtheorie: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Théorie Atomique Moderne, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Современная теория атома», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"النظرية الذرية الحديثة\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“现代原子论”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Teoriya Modêrn a Atomê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
-          "tr": "s orbitalleri sadece n = 2 den itibaren başlar.",
+          "tr": "s orbitalleri sadece n = 2'den itibaren başlar.",
           "en": "s orbitals start only from n = 2.",
           "de": "s-Orbitale beginnen erst ab n = 2.",
           "fr": "Les orbitales s commencent uniquement à partir de n = 2.",
@@ -1496,14 +1496,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin09",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Modern Atom Teorisi ünitesinde ele alınan Aufbau İlkesi hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Modern Atomic Theory, which statement about Aufbau Principle is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Moderne Atomtheorie: Welche Aussage über Aufbauprinzip ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Théorie Atomique Moderne, quelle affirmation relative à Principe d'Aufbau est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Современная теория атома», какое утверждение о «Принцип Ауфбау» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"النظرية الذرية الحديثة\"، أي عبارة حول \"مبدأ أوفباو\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“现代原子论”单元中关于“奥夫鲍原则”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Teoriya Modêrn a Atomê\", kîjan gotin li ser \"Prensîba Aufbau\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Modern Atom Teorisi konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Modern Atomic Theory, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Moderne Atomtheorie die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Théorie Atomique Moderne, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Современная теория атома», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"النظرية الذرية الحديثة\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“现代原子论”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Teoriya Modêrn a Atomê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
@@ -1572,14 +1572,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin10",
       "stem": {
-        "tr": "Bir kimya öğretmeninin laboratuvarda Modern Atom Teorisi konusunu işlerken s Orbitali üzerine sorduğu sorunun doğru cevabı aşağıdakilerden hangisidir?",
-        "en": "During a laboratory inquiry on Modern Atomic Theory, which statement regarding s orbital represents the correct answer?",
-        "de": "Welche Aussage zu s Orbital stellt im Kontext von Moderne Atomtheorie die wissenschaftlich korrekte Antwort dar?",
-        "fr": "Lors de l étude expérimentale de Théorie Atomique Moderne, quelle proposition sur s orbitale constitue la réponse exacte?",
-        "ru": "В ходе лабораторного изучения темы «Современная теория атома», какой ответ относительно «орбитальный» является правильным?",
-        "ar": "أثناء دراسة موضوع \"النظرية الذرية الحديثة\" مخبرياً، أي إجابة بخصوص \"المداري\" تمثل الإجابة الصحيحة؟",
-        "zh": "在“现代原子论”实验探究与教学分析中，针对“s轨道”所提问题的正确答案是？",
-        "ku": "Di lêkolîna ezmûnî ya li ser \"Teoriya Modêrn a Atomê\" de, kîjan bersiv derbarê \"s orbital\" de rast e?"
+        "tr": "Kimya dersinde Modern Atom Teorisi ünitesi incelenirken ileri sürülen aşağıdaki yargılardan hangisi bilimsel bir gerçektir?",
+        "en": "When analyzing the unit Modern Atomic Theory, which of the following propositions is a verified scientific fact?",
+        "de": "Bei der Untersuchung von Moderne Atomtheorie: Welche Behauptung entspricht einer wissenschaftlichen Tatsache?",
+        "fr": "En analysant l'unité Théorie Atomique Moderne, laquelle des affirmations suivantes est un fait scientifique avéré ?",
+        "ru": "При рассмотрении темы «Современная теория атома», какое из следующих суждений выражает доказанный научный факт?",
+        "ar": "عند دراسة وحدة \"النظرية الذرية الحديثة\"، أي من الأحكام التالية تعتبر حقيقة علمية مثبتة؟",
+        "zh": "在系统辨析“现代原子论”核心规律时，下列关于该主题的命题哪项属于客观科学事实？",
+        "ku": "Dema nirxandina beşa \"Teoriya Modêrn a Atomê\" tê kirin, kîjan daraz rastiyeke zanistî ye?"
       },
       "options": [
         {
@@ -1648,14 +1648,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin11",
       "stem": {
-        "tr": "Kimya dersinde Modern Atom Teorisi ünitesi incelenirken Baş Kuantum Sayısı (n) ile ilgili ileri sürülen aşağıdaki yargılardan hangisi bilimsel gerçektir?",
-        "en": "When analyzing the unit Modern Atomic Theory, which of the following propositions concerning Lead Quantum Number (n) is a verified scientific fact?",
-        "de": "Bei der Untersuchung von Moderne Atomtheorie: Welche Behauptung bezüglich Leitquantenzahl (n) entspricht einer wissenschaftlichen Tatsache?",
-        "fr": "En analysant l unité Théorie Atomique Moderne, laquelle des affirmations suivantes concernant Nombre quantique de plomb (n) est un fait scientifique avéré?",
-        "ru": "При рассмотрении темы «Современная теория атома», какое из следующих суждений о «Квантовое число свинца (n)» выражает доказанный научный факт?",
-        "ar": "عند دراسة وحدة \"النظرية الذرية الحديثة\"، أي من الأحكام التالية المتعلقة بـ \"رقم الكم الرصاصي (ن)\" تعتبر حقيقة علمية؟",
-        "zh": "在系统辨析“现代原子论”核心规律时，下列关于“铅量子数 (n)”的命题哪项属于客观科学事实？",
-        "ku": "Dema nirxandina beşa \"Teoriya Modêrn a Atomê\" tê kirin, kîjan daraza li ser \"Hejmara Kuantuma Pêşîn (n)\" rastiyeke zanistî ye?"
+        "tr": "Aşağıdakilerden hangisi Modern Atom Teorisi konusundaki temel kimyasal kurallar çerçevesinde doğru olan ifadedir?",
+        "en": "Which of the following statements is accurate within the fundamental principles of Modern Atomic Theory?",
+        "de": "Welche Aussage ist im Rahmen der chemischen Gesetzmäßigkeiten von Moderne Atomtheorie zutreffend?",
+        "fr": "Laquelle des propositions suivantes est scientifiquement exacte selon les lois de Théorie Atomique Moderne ?",
+        "ru": "Какое из утверждений является верным в рамках фундаментальных законов темы «Современная теория атома»?",
+        "ar": "أي مما يلي يعتبر حكماً صحيحاً ضمن القواعد الكيميائية الأساسية لوحدة \"النظرية الذرية الحديثة\"؟",
+        "zh": "根据“现代原子论”的基本化学原理，下列哪项阐述完全符合客观事实？",
+        "ku": "Kîjan ji van vebijarkan di çarçoveya prensîbên beşa \"Teoriya Modêrn a Atomê\" de rast e?"
       },
       "options": [
         {
@@ -1724,14 +1724,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin12",
       "stem": {
-        "tr": "Aşağıdakilerden hangisi Modern Atom Teorisi konusundaki temel kimyasal kurallar çerçevesinde Manyetik Kuantum (ml) kavramını en doğru açıklayan ifadedir?",
-        "en": "Which of the following most accurately describes Magnetic Quantum (ml) within the fundamental principles of Modern Atomic Theory?",
-        "de": "Welche Aussage beschreibt das Konzept Magnetisches Quantum (ml) im Rahmen von Moderne Atomtheorie am präzisesten?",
-        "fr": "Laquelle des propositions suivantes décrit le plus fidèlement Quantique magnétique (ml) selon les lois de Théorie Atomique Moderne?",
-        "ru": "Какое из утверждений наиболее точно описывает понятие «Магнитный Квант (мл)» в рамках темы «Современная теория атома»?",
-        "ar": "أي مما يلي يعبر بأعلى درجات الدقة عن مفهوم \"الكم المغناطيسي (مل)\" ضمن قواعد \"النظرية الذرية الحديثة\"؟",
-        "zh": "根据“现代原子论”的基本化学原理，下列哪项阐述能最准确地界定“磁量子（ml）”这一核心概念？",
-        "ku": "Kîjan ji van vebijarkan têgeha \"Quantuma Magnetîk (ml)\" di çarçoveya prensîbên \"Teoriya Modêrn a Atomê\" de herî rast rave dike?"
+        "tr": "Üniversiteye giriş sınavı Modern Atom Teorisi sorularında karşılaşılan konulardan hangisi doğru bir yargıdır?",
+        "en": "In standard university entrance exams covering Modern Atomic Theory, which assertion is scientifically correct?",
+        "de": "In Hochschulaufnahmeprüfungen zur Einheit Moderne Atomtheorie: Welche Feststellung ist richtig?",
+        "fr": "Dans les épreuves universitaires portant sur Théorie Atomique Moderne, quelle affirmation est correcte ?",
+        "ru": "В экзаменационных заданиях по теме «Современная теория атома», какое положение является научным фактом?",
+        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"النظرية الذرية الحديثة\"، أي حكم يعتبر صحيحاً؟",
+        "zh": "在高考“现代原子论”经典考题中，下列有关化学规律的论断哪一个是正确的？",
+        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Teoriya Modêrn a Atomê\" de, kîjan daraz rast e?"
       },
       "options": [
         {
@@ -1745,7 +1745,7 @@ export const unit11: ChemistryUnitSeedData = {
           "ku": "Veavakirina elektronê ku bi p4-ê diqede, bi rengek simetrîk e."
         },
         {
-          "tr": "p orbitalleri n = 2 den başlar, halter şeklindedir ve 3 tanedir (px, py, pz, en çok 6 elektron).",
+          "tr": "p orbitalleri n = 2'den başlar, halter şeklindedir ve 3 tanedir (px, py, pz, en çok 6 elektron).",
           "en": "p orbitals start from n = 2, are dumbbell-shaped and consist of 3 (px, py, pz, maximum 6 electrons).",
           "de": "p-Orbitale beginnen bei n = 2, sind hantelförmig und bestehen aus 3 (px, py, pz, maximal 6 Elektronen).",
           "fr": "Les orbitales p partent de n = 2, sont en forme d'haltère et se composent de 3 (px, py, pz, maximum 6 électrons).",
@@ -1787,7 +1787,7 @@ export const unit11: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"p orbitalleri n = 2 den başlar, halter şeklindedir ve 3 tanedir (px, py, pz, en çok 6 elektron).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"p orbitalleri n = 2'den başlar, halter şeklindedir ve 3 tanedir (px, py, pz, en çok 6 elektron).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"p orbitals start from n = 2, are dumbbell-shaped and consist of 3 (px, py, pz, maximum 6 electrons).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"p-Orbitale beginnen bei n = 2, sind hantelförmig und bestehen aus 3 (px, py, pz, maximal 6 Elektronen).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Les orbitales p partent de n = 2, sont en forme d'haltère et se composent de 3 (px, py, pz, maximum 6 électrons).\". Notion fondamentale du programme officiel de chimie.",
@@ -1800,14 +1800,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin13",
       "stem": {
-        "tr": "Üniversiteye giriş sınavı Modern Atom Teorisi sorularında karşılaşılan Pauli Dışlama İlkesi konusunda doğru olan yargı hangisidir?",
-        "en": "In standard university entrance exams covering Modern Atomic Theory, which assertion regarding Pauli Exclusion Principle is correct?",
-        "de": "Welche Feststellung bezüglich Pauli-Ausschlussprinzip ist nach den chemischen Gesetzmäßigkeiten von Moderne Atomtheorie richtig?",
-        "fr": "Dans les épreuves universitaires portant sur Théorie Atomique Moderne, quelle affirmation concernant Principe d'exclusion de Pauli est correcte?",
-        "ru": "В экзаменационных заданиях по теме «Современная теория атома», какое положение относительно «Принцип исключения Паули» является верным?",
-        "ar": "في أسئلة امتحانات القبول الجامعي لوحدة \"النظرية الذرية الحديثة\"، أي حكم متعلق بـ \"مبدأ استبعاد باولي\" يعتبر صحيحاً؟",
-        "zh": "在高考“现代原子论”经典考题中，下列有关“泡利不相容原理”的论断哪一个是正确的？",
-        "ku": "Di pirsên ezmûna zanîngehê yên li ser \"Teoriya Modêrn a Atomê\" de, kîjan daraza li ser \"Prensîba Derxistina Pauli\" rast e?"
+        "tr": "Aşağıda Modern Atom Teorisi ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre verilen yargılardan hangisi doğrudur?",
+        "en": "Based on the fundamental principles of Modern Atomic Theory, which statement is scientifically verified?",
+        "de": "Auf der Grundlage der Einheit Moderne Atomtheorie: Welche der folgenden Aussagen ist wissenschaftlich exakt?",
+        "fr": "Sur la base des notions fondamentales de Théorie Atomique Moderne, quelle affirmation est exacte ?",
+        "ru": "На основе фундаментальных положений темы «Современная теория атома», какое суждение истинно?",
+        "ar": "بناءً على المبادئ الكيميائية لوحدة \"النظرية الذرية الحديثة\"، أي عبارة علمية صحيحة؟",
+        "zh": "基于“现代原子论”的基础化学知识体系，下列关于该单元的判断完全正确的是？",
+        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Teoriya Modêrn a Atomê\", kîjan gotin rast e?"
       },
       "options": [
         {
@@ -1831,7 +1831,7 @@ export const unit11: ChemistryUnitSeedData = {
           "ku": "Ji bo d orbitals ml tenê nirxan -1, 0, +1 digire."
         },
         {
-          "tr": "d orbitalleri n = 3 ten başlar, 5 tanedir ve en çok 10 elektron alır.",
+          "tr": "d orbitalleri n = 3'ten başlar, 5 tanedir ve en çok 10 elektron alır.",
           "en": "d orbitals start from n = 3, there are 5 and can take up to 10 electrons.",
           "de": "d-Orbitale beginnen bei n = 3, es gibt 5 und können bis zu 10 Elektronen aufnehmen.",
           "fr": "Les orbitales d partent de n = 3, il y en a 5 et peuvent prendre jusqu'à 10 électrons.",
@@ -1863,7 +1863,7 @@ export const unit11: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"d orbitalleri n = 3 ten başlar, 5 tanedir ve en çok 10 elektron alır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"d orbitalleri n = 3'ten başlar, 5 tanedir ve en çok 10 elektron alır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"d orbitals start from n = 3, there are 5 and can take up to 10 electrons.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"d-Orbitale beginnen bei n = 3, es gibt 5 und können bis zu 10 Elektronen aufnehmen.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Les orbitales d partent de n = 3, il y en a 5 et peuvent prendre jusqu'à 10 électrons.\". Notion fondamentale du programme officiel de chimie.",
@@ -1876,14 +1876,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin14",
       "stem": {
-        "tr": "Aşağıda Modern Atom Teorisi ünitesi ile ilgili temel bilgiler verilmiştir. Buna göre Temel Hal ile ilgili hangisi doğrudur?",
-        "en": "Based on the fundamental principles of Modern Atomic Theory, which statement about Ground State is scientifically accurate?",
-        "de": "Auf der Grundlage der Einheit Moderne Atomtheorie: Welche Aussage über Grundzustand ist zutreffend?",
-        "fr": "Sur la base des notions fondamentales de Théorie Atomique Moderne, quelle affirmation relative à État fondamental est exacte?",
-        "ru": "На основе фундаментальных положений темы «Современная теория атома», какое суждение о «Основное состояние» верно?",
-        "ar": "بناءً على المبادئ الكيميائية لوحدة \"النظرية الذرية الحديثة\"، أي عبارة حول \"الحالة الأرضية\" صحيحة؟",
-        "zh": "基于“现代原子论”的基础化学知识体系，下列关于“Ground State”的判断完全正确的是？",
-        "ku": "Li gorî zanyariyên bingehîn ên beşa \"Teoriya Modêrn a Atomê\", kîjan gotin derbarê \"Dewleta erdê\" de rast e?"
+        "tr": "Modern Atom Teorisi konusu kapsamında yapılan bilimsel çalışmalarda aşağıdaki bulgulardan hangisi doğrulanmıştır?",
+        "en": "In the context of Modern Atomic Theory, which of the following findings is an established scientific fact?",
+        "de": "Im Rahmen der Einheit Moderne Atomtheorie: Welcher der folgenden Befunde ist wissenschaftlich bestätigt?",
+        "fr": "Dans le cadre de l'unité Théorie Atomique Moderne, laquelle des constatations suivantes est scientifiquement vérifiée ?",
+        "ru": "В контексте темы «Современная теория атома», какой из следующих выводов научно подтверждён?",
+        "ar": "في سياق وحدة \"النظرية الذرية الحديثة\"، أي من النتائج التالية مثبتة علمياً؟",
+        "zh": "在“现代原子论”主题范畴内，下列关于该学科知识的研究结论中哪一项已获得科学证实？",
+        "ku": "Di çarçoveya mijara \"Teoriya Modêrn a Atomê\" de, kîjan ji van encaman ji aliyê zanistî ve hatiye piştrastkirin?"
       },
       "options": [
         {
@@ -1917,7 +1917,7 @@ export const unit11: ChemistryUnitSeedData = {
           "ku": "Elektron yekem car dikevin orbitalên enerjiyê yên wekhev bi cotek bi spin berevajî."
         },
         {
-          "tr": "f orbitalleri n = 4 ten başlar, 7 tanedir ve en çok 14 elektron alır.",
+          "tr": "f orbitalleri n = 4'ten başlar, 7 tanedir ve en çok 14 elektron alır.",
           "en": "f orbitals start from n = 4, there are 7 in number and can take up to 14 electrons.",
           "de": "f-Orbitale beginnen bei n = 4, es gibt 7 an der Zahl und können bis zu 14 Elektronen aufnehmen.",
           "fr": "Les orbitales f partent de n = 4, elles sont au nombre de 7 et peuvent prendre jusqu'à 14 électrons.",
@@ -1939,7 +1939,7 @@ export const unit11: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"f orbitalleri n = 4 ten başlar, 7 tanedir ve en çok 14 elektron alır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"f orbitalleri n = 4'ten başlar, 7 tanedir ve en çok 14 elektron alır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"f orbitals start from n = 4, there are 7 in number and can take up to 14 electrons.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"f-Orbitale beginnen bei n = 4, es gibt 7 an der Zahl und können bis zu 14 Elektronen aufnehmen.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Les orbitales f partent de n = 4, elles sont au nombre de 7 et peuvent prendre jusqu'à 14 électrons.\". Notion fondamentale du programme officiel de chimie.",
@@ -1952,14 +1952,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin15",
       "stem": {
-        "tr": "Modern Atom Teorisi konusu kapsamında d Orbitali ile ilgili yapılan çalışmalarda aşağıdaki bulgulardan hangisi bilimsel olarak doğrulanmıştır?",
-        "en": "In the context of Modern Atomic Theory, which of the following findings regarding d Orbital is scientifically verified?",
-        "de": "Im Rahmen der Einheit Moderne Atomtheorie: Welcher der folgenden Befunde zu d-Orbital ist wissenschaftlich bestätigt?",
-        "fr": "Dans le cadre de l unité Théorie Atomique Moderne, laquelle des constatations suivantes concernant Orbitale d est scientifiquement vérifiée?",
-        "ru": "В контексте темы «Современная теория атома», какой из следующих выводов относительно «d-Орбиталь» научно подтверждён?",
-        "ar": "في سياق موضوع \"النظرية الذرية الحديثة\"، أي من النتائج التالية المتعلقة بـ \"مدار d\" مثبتة علمياً؟",
-        "zh": "在“现代原子论”主题范畴内，下列关于“d轨道”的研究结论中哪一项已获得科学证实？",
-        "ku": "Di çarçoveya mijara \"Teoriya Modêrn a Atomê\" de, kîjan ji van encamên li ser \"Orbîtala d\" ji aliyê zanistî ve hatiye piştrastkirin?"
+        "tr": "ÖSYM sınav standartlarında Modern Atom Teorisi ünitesi ile ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+        "en": "According to exam standards in the unit Modern Atomic Theory, which of the following statements is strictly correct?",
+        "de": "Nach Prüfungsstandards der Einheit Moderne Atomtheorie: Welche der folgenden Aussagen ist uneingeschränkt zutreffend?",
+        "fr": "Selon les normes d'examen de l'unité Théorie Atomique Moderne, quelle affirmation est rigoureusement exacte ?",
+        "ru": "В соответствии с экзаменационными стандартами раздела «Современная теория атома», какое утверждение абсолютно верно?",
+        "ar": "وفقاً للمعايير الامتحانية لوحدة \"النظرية الذرية الحديثة\"، أي عبارة من العبارات التالية صحيحة تماماً؟",
+        "zh": "依照高考考纲标准，在“现代原子论”单元中关于化学核心规律的表述哪一项完全正确？",
+        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Teoriya Modêrn a Atomê\", kîjan gotin li ser vê beşê bê guman rast e?"
       },
       "options": [
         {
@@ -1993,7 +1993,7 @@ export const unit11: ChemistryUnitSeedData = {
           "ku": "Elementa 24Cr di veavakirina elektronê de wekî [Ar] 4s2 3d4 bi dawî dibe."
         },
         {
-          "tr": "s orbitalleri sadece n = 2 den itibaren başlar.",
+          "tr": "s orbitalleri sadece n = 2'den itibaren başlar.",
           "en": "s orbitals start only from n = 2.",
           "de": "s-Orbitale beginnen erst ab n = 2.",
           "fr": "Les orbitales s commencent uniquement à partir de n = 2.",
@@ -2028,14 +2028,14 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-twin16",
       "stem": {
-        "tr": "ÖSYM sınav standartlarında Modern Atom Teorisi ünitesinde ele alınan Yörünge (Bohr) hakkında verilen ifadelerden hangisi kesinlikle doğrudur?",
-        "en": "According to exam standards in the unit Modern Atomic Theory, which statement about Orbit (Bohr) is strictly correct?",
-        "de": "Nach Prüfungsstandards der Einheit Moderne Atomtheorie: Welche Aussage über Umlaufbahn (Bohr) ist uneingeschränkt zutreffend?",
-        "fr": "Selon les normes d examen de Théorie Atomique Moderne, quelle affirmation relative à Orbite (Bohr) est rigoureusement exacte?",
-        "ru": "В соответствии с экзаменационными стандартами раздела «Современная теория атома», какое утверждение о «Орбита (Бора)» абсолютно верно?",
-        "ar": "وفقاً للمعايير الامتحانية لوحدة \"النظرية الذرية الحديثة\"، أي عبارة حول \"المدار (بور)\" صحيحة تماماً؟",
-        "zh": "依照高考考纲标准，在“现代原子论”单元中关于“玻尔轨道”的表述哪一项完全正确？",
-        "ku": "Li gorî pîvanên ezmûnê yên beşa \"Teoriya Modêrn a Atomê\", kîjan gotin li ser \"Rêgeh (Bohr)\" bê guman rast e?"
+        "tr": "Bir kimya öğretmeninin laboratuvarda Modern Atom Teorisi konusunu işlerken sorduğu sorunun bilimsel olarak doğru cevabı aşağıdakilerden hangisidir?",
+        "en": "During an inquiry on Modern Atomic Theory, which statement represents the scientifically correct answer?",
+        "de": "Welche Aussage stellt im Kontext von Moderne Atomtheorie die wissenschaftlich korrekte Antwort dar?",
+        "fr": "Lors de l'étude de l'unité Théorie Atomique Moderne, quelle proposition constitue la réponse scientifiquement exacte ?",
+        "ru": "В ходе изучения темы «Современная теория атома», какой ответ является научно правильным?",
+        "ar": "أثناء دراسة موضوع \"النظرية الذرية الحديثة\"، أي إجابة علمية تمثل الإجابة الصحيحة؟",
+        "zh": "在“现代原子论”教学探究中，针对相关化学知识所提问题的正确答案是？",
+        "ku": "Di lêkolîna li ser beşa \"Teoriya Modêrn a Atomê\" de, kîjan bersiv ji aliyê zanistî ve rast e?"
       },
       "options": [
         {
