@@ -53,7 +53,7 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-f02",
       "fact": {
-        "tr": "Kaynama noktası yükselmesi: ΔTk = Kk * m * i'dir (Kk: kaynama noktası sabiti, m: molalite, i: van t Hoff faktörü).",
+        "tr": "Kaynama noktası yükselmesi: ΔTk = Kk * m * i'dir (Kk: kaynama noktası sabiti, m: molalite, i: van 't Hoff faktörü).",
         "en": "Boiling point elevation: ΔTk = Kk * m * i (Kk: boiling point constant, m: molality, i: van t Hoff factor).",
         "de": "Siedepunkterhöhung: ΔTk = Kk * m * i (Kk: Siedepunktkonstante, m: Molalität, i: van t Hoff-Faktor).",
         "fr": "Élévation du point d'ébullition : ΔTk = Kk * m * i (Kk : constante du point d'ébullition, m : molalité, i : facteur van t Hoff).",
@@ -76,7 +76,7 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-f03",
       "fact": {
-        "tr": "Donma noktası alçalması: ΔTd = Kd * m * i'dir (su için Kd = 1.86 °C*kg/mol).",
+        "tr": "Donma noktası alçalması: ΔTd = Kd * m * i'dir (su için Kd = 1,86 °C*kg/mol).",
         "en": "Freezing point depression: ΔTd = Kd * m * i (Kd = 1.86 °C*kg/mol for water).",
         "de": "Gefrierpunktserniedrigung: ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol für Wasser).",
         "fr": "Abaissement du point de congélation : ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol pour l'eau).",
@@ -99,7 +99,7 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-f04",
       "fact": {
-        "tr": "van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1'dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).",
+        "tr": "van 't Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1'dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).",
         "en": "van t Hoff factor (i): In molecular substances (sugar, alcohol) i = 1; is the number of ions in ionic salts (i = 2 for NaCl, i = 3 for CaCl2).",
         "de": "Van-t-Hoff-Faktor (i): In molekularen Substanzen (Zucker, Alkohol) i = 1; ist die Anzahl der Ionen in ionischen Salzen (i = 2 für NaCl, i = 3 für CaCl2).",
         "fr": "Facteur de van t Hoff (i) : Dans les substances moléculaires (sucre, alcool) i = 1 ; est le nombre d'ions dans les sels ioniques (i = 2 pour NaCl, i = 3 pour CaCl2).",
@@ -224,27 +224,27 @@ export const unit15: ChemistryUnitSeedData = {
         "ku": "Çareserî ew maddeya herî zêde ye ku dikare di 100 gram halvekê de di germahî û zextek diyar de bihele."
       },
       "trap": {
-        "tr": "Çözünürlük 1 litre çözeltide çözünen katı gramıdır.",
-        "en": "Solubility is the gram of solid dissolved in 1 liter of solution.",
-        "de": "Die Löslichkeit ist das Gramm Feststoff, gelöst in 1 Liter Lösung.",
-        "fr": "La solubilité est le gramme de solide dissous dans 1 litre de solution.",
-        "ru": "Растворимость – это грамм твердого вещества, растворенного в 1 л раствора.",
-        "ar": "الذوبان هو جرام المادة الصلبة المذابة في 1 لتر من المحلول.",
-        "zh": "溶解度是溶解在 1 升溶液中的固体克数。",
-        "ku": "Çareserbûn gram e ku di 1 lîtreya haletê de tê helandin."
+        "tr": "Çözünürlük, doymamış bir çözeltide çözünmüş olarak bulunan madde miktarıdır.",
+        "en": "Solubility is the amount of substance dissolved in an unsaturated solution.",
+        "de": "Löslichkeit ist die Stoffmenge, die in einer ungesättigten Lösung gelöst vorliegt.",
+        "fr": "La solubilité est la quantité de substance dissoute dans une solution insaturée.",
+        "ru": "Растворимость — это количество вещества, растворённого в ненасыщенном растворе.",
+        "ar": "الذوبانية هي كمية المادة المذابة في محلول غير مشبع.",
+        "zh": "溶解度是指不饱和溶液中已溶解的溶质的量。",
+        "ku": "Helbûnî (çareserbûn) mîqdara maddeya ku di çareseriyeke ne-têr de helbûyî ye."
       }
     },
     {
       "id": "u15-f10",
       "fact": {
-        "tr": "Katıların sudaki çözünürlüğü genellikle endotermiktir (sıcaklık arttıkça artar); gazların çözünürlüğü daima ekzotermiktir.",
-        "en": "The solubility of solids in water is generally endothermic (increases with increasing temperature); The solubility of gases is always exothermic.",
-        "de": "Die Löslichkeit von Feststoffen in Wasser ist im Allgemeinen endotherm (steigt mit steigender Temperatur); Die Löslichkeit von Gasen ist immer exotherm.",
-        "fr": "La solubilité des solides dans l'eau est généralement endothermique (augmente avec l'augmentation de la température) ; La solubilité des gaz est toujours exothermique.",
-        "ru": "Растворимость твердых веществ в воде обычно эндотермична (увеличивается с повышением температуры); Растворимость газов всегда экзотермична.",
-        "ar": "تكون قابلية ذوبان المواد الصلبة في الماء عمومًا ماصة للحرارة (تزداد مع زيادة درجة الحرارة)؛ إن ذوبان الغازات دائمًا ما يكون طاردًا للحرارة.",
-        "zh": "固体在水中的溶解度通常是吸热的（随着温度的升高而增加）；气体的溶解度总是放热的。",
-        "ku": "Çareserbûna maddeyên hişk di avê de bi gelemperî endotermîk e (bi zêdebûna germahiyê re zêde dibe); Çareserbûna gazan her dem germ e."
+        "tr": "Katıların sudaki çözünmesi genellikle endotermiktir (çözünürlük sıcaklıkla artar); gazların sudaki çözünmesi ise ekzotermiktir (çözünürlük sıcaklıkla azalır).",
+        "en": "The dissolution of solids in water is usually endothermic (solubility increases with temperature); the dissolution of gases in water is exothermic (solubility decreases with temperature).",
+        "de": "Das Lösen von Feststoffen in Wasser ist meist endotherm (die Löslichkeit steigt mit der Temperatur); das Lösen von Gasen in Wasser ist exotherm (die Löslichkeit sinkt mit der Temperatur).",
+        "fr": "La dissolution des solides dans l'eau est généralement endothermique (la solubilité augmente avec la température) ; la dissolution des gaz dans l'eau est exothermique (la solubilité diminue avec la température).",
+        "ru": "Растворение твёрдых веществ в воде обычно эндотермично (растворимость растёт с температурой); растворение газов в воде экзотермично (с ростом температуры растворимость уменьшается).",
+        "ar": "ذوبان المواد الصلبة في الماء ماصّ للحرارة غالبًا (تزداد الذوبانية بارتفاع درجة الحرارة)؛ أما ذوبان الغازات في الماء فطارد للحرارة (تقل الذوبانية بارتفاع درجة الحرارة).",
+        "zh": "固体在水中的溶解通常是吸热的（溶解度随温度升高而增大）；气体在水中的溶解是放热的（溶解度随温度升高而减小）。",
+        "ku": "Helbûna hişkan di avê de bi gelemperî endotermîk e (helbûnî bi germahiyê re zêde dibe); helbûna gazan di avê de ekzotermîk e (helbûnî bi germahiyê re kêm dibe)."
       },
       "trap": {
         "tr": "Gazların sudaki çözünürlüğü sıcaklık arttıkça hızla artar.",
@@ -306,37 +306,37 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-f13",
       "fact": {
-        "tr": "Ortak iyon etkisi çözünürlüğü daima azaltır (Le Chatelier prensibi).",
-        "en": "The common ion effect always reduces the solubility (Le Chatelier's principle).",
-        "de": "Der gemeinsame Ioneneffekt verringert immer die Löslichkeit (Prinzip von Le Chatelier).",
-        "fr": "L'effet des ions communs réduit toujours la solubilité (principe de Le Chatelier).",
-        "ru": "Эффект общего иона всегда снижает растворимость (принцип Ле Шателье).",
-        "ar": "إن تأثير الأيون المشترك يقلل دائمًا من قابلية الذوبان (مبدأ لو شاتيليه).",
-        "zh": "共离子效应总是会降低溶解度（勒夏特列原理）。",
-        "ku": "Bandora îyona hevpar her gav çareserbûnê kêm dike (prensîba Le Chatelier)."
+        "tr": "Ortak iyon içeren bir çözeltide az çözünen bir tuzun çözünürlüğü saf sudakinden daha azdır (Le Chatelier ilkesi).",
+        "en": "A slightly soluble salt is less soluble in a solution containing a common ion than in pure water (Le Chatelier's principle).",
+        "de": "Ein schwer lösliches Salz ist in einer Lösung mit einem gleichen Ion weniger löslich als in reinem Wasser (Prinzip von Le Chatelier).",
+        "fr": "Un sel peu soluble est moins soluble dans une solution contenant un ion commun que dans l'eau pure (principe de Le Chatelier).",
+        "ru": "Малорастворимая соль растворяется в растворе, содержащем одноимённый ион, хуже, чем в чистой воде (принцип Ле Шателье).",
+        "ar": "تكون ذوبانية الملح شحيح الذوبان في محلول يحتوي على أيون مشترك أقل منها في الماء النقي (مبدأ لوشاتلييه).",
+        "zh": "难溶盐在含有同离子的溶液中的溶解度比在纯水中小（勒夏特列原理）。",
+        "ku": "Xwêyeke kêm-helbar di çareseriyeke ku îyona hevpar tê de heye de ji ava paqij kêmtir dihele (prensîba Le Chatelier)."
       },
       "trap": {
         "tr": "Ortak iyon bulunan çözeltide tuz daha çok çözünür.",
-        "en": "Salt is more soluble in a solution with common ions.",
-        "de": "Salz ist in einer Lösung mit gewöhnlichen Ionen besser löslich.",
-        "fr": "Le sel est plus soluble dans une solution contenant des ions communs.",
-        "ru": "Соль лучше растворяется в растворе с общими ионами.",
-        "ar": "يكون الملح أكثر قابلية للذوبان في المحلول الذي يحتوي على الأيونات الشائعة.",
-        "zh": "盐在具有普通离子的溶液中更易溶解。",
-        "ku": "Xwê di çareyek bi îyonên hevpar de zêdetir tê çareserkirin."
+        "en": "A salt dissolves more in a solution containing a common ion.",
+        "de": "In einer Lösung mit einem gleichen Ion löst sich ein Salz besser.",
+        "fr": "Un sel est plus soluble dans une solution contenant un ion commun.",
+        "ru": "В растворе, содержащем одноимённый ион, соль растворяется лучше.",
+        "ar": "يذوب الملح بدرجة أكبر في محلول يحتوي على أيون مشترك.",
+        "zh": "盐在含有同离子的溶液中溶解得更多。",
+        "ku": "Xwê di çareseriyeke ku îyona hevpar tê de heye de bêtir dihele."
       }
     },
     {
       "id": "u15-f14",
       "fact": {
-        "tr": "Çözeltideki toplam iyon derişimi ne kadar büyükse donma noktası o kadar düşük, kaynama noktası o kadar yüksektir.",
-        "en": "The greater the total ion concentration in the solution, the lower the freezing point and the higher the boiling point.",
-        "de": "Je höher die Gesamtionenkonzentration in der Lösung ist, desto niedriger ist der Gefrierpunkt und desto höher ist der Siedepunkt.",
-        "fr": "Plus la concentration totale d’ions dans la solution est élevée, plus le point de congélation est bas et plus le point d’ébullition est élevé.",
-        "ru": "Чем больше общая концентрация ионов в растворе, тем ниже температура замерзания и выше температура кипения.",
-        "ar": "كلما زاد تركيز الأيونات الكلي في المحلول، انخفضت نقطة التجمد وارتفعت نقطة الغليان.",
-        "zh": "溶液中总离子浓度越大，凝固点越低，沸点越高。",
-        "ku": "Çi qas îyona giştî ya di çareseriyê de mezintir be, ew qas nuqteya cemidandinê kêmtir û xala kelandinê jî bilindtir dibe."
+        "tr": "Çözeltideki toplam çözünen tanecik derişimi ne kadar büyükse donma noktası o kadar düşük, kaynama noktası o kadar yüksektir.",
+        "en": "The greater the total concentration of dissolved particles in a solution, the lower its freezing point and the higher its boiling point.",
+        "de": "Je größer die Gesamtkonzentration gelöster Teilchen in der Lösung ist, desto niedriger ist der Gefrierpunkt und desto höher der Siedepunkt.",
+        "fr": "Plus la concentration totale en particules dissoutes est élevée, plus le point de congélation est bas et plus le point d'ébullition est élevé.",
+        "ru": "Чем больше общая концентрация растворённых частиц в растворе, тем ниже температура замерзания и выше температура кипения.",
+        "ar": "كلما زاد التركيز الكلي للجسيمات المذابة في المحلول، انخفضت درجة التجمد وارتفعت درجة الغليان.",
+        "zh": "溶液中溶质粒子的总浓度越大，凝固点越低，沸点越高。",
+        "ku": "Çiqas konsantrasyona giştî ya perçeyên helbûyî di çareseriyê de mezintir be, xala cemidînê ewqas nizmtir û xala kelînê ewqas bilindtir e."
       },
       "trap": {
         "tr": "Eşit derişimli NaCl ve AlCl3 çözeltilerinin kaynama noktaları aynıdır.",
@@ -378,7 +378,7 @@ export const unit15: ChemistryUnitSeedData = {
         "tr": "Gazoz kapağı açıldığında basınç düştüğü için CO2 gazı kabarcıklar halinde çözeltiden ayrılır.",
         "en": "When the soda cap is opened, CO2 gas leaves the solution in the form of bubbles as the pressure drops.",
         "de": "Wenn der Soda-Verschluss geöffnet wird, verlässt CO2-Gas die Lösung in Form von Blasen, da der Druck sinkt.",
-        "fr": "Lorsque le bouchon de soude est ouvert, le gaz CO2 quitte la solution sous forme de bulles à mesure que la pression chute.",
+        "fr": "Lorsqu'on ouvre une bouteille de soda, la pression diminue et le CO2 quitte la solution sous forme de bulles.",
         "ru": "Когда крышка газировки открыта, газ CO2 выходит из раствора в виде пузырьков при падении давления.",
         "ar": "عند فتح غطاء الصودا، يترك غاز ثاني أكسيد الكربون المحلول على شكل فقاعات مع انخفاض الضغط.",
         "zh": "当汽水盖打开时，随着压力下降，CO2 气体以气泡的形式离开溶液。",
@@ -466,40 +466,40 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-c03",
       "conceptA": {
-        "tr": "Kaynama Noktası Yükselmesi (Delta Tk)",
-        "en": "Boiling Point Elevation (Delta Tk)",
-        "de": "Siedepunkterhöhung (Delta Tk)",
-        "fr": "Élévation du point d'ébullition (Delta Tk)",
-        "ru": "Повышение температуры кипения (дельта Tk)",
-        "ar": "ارتفاع نقطة الغليان (دلتا تك)",
-        "zh": "沸点高度 (Delta Tk)",
-        "ku": "Bilindbûna xala kelandinê (Delta Tk)"
+        "tr": "Ozmoz",
+        "en": "Osmosis",
+        "de": "Osmose",
+        "fr": "Osmose",
+        "ru": "Осмос",
+        "ar": "الأسموزية (التناضح)",
+        "zh": "渗透",
+        "ku": "Osmoz"
       },
       "conceptB": {
-        "tr": "Donma Noktası Alçalması (Delta Td)",
-        "en": "Freezing Point Depression (Delta Td)",
-        "de": "Gefrierpunktserniedrigung (Delta Td)",
-        "fr": "Dépression du point de congélation (Delta Td)",
-        "ru": "Понижение точки замерзания (Delta Td)",
-        "ar": "انخفاض نقطة التجمد (Delta Td)",
-        "zh": "冰点降低（Delta Td）",
-        "ku": "Depresyona Xala cemidandinê (Delta Td)"
+        "tr": "Buhar Basıncı Alçalması",
+        "en": "Vapor Pressure Lowering",
+        "de": "Dampfdruckerniedrigung",
+        "fr": "Abaissement de la pression de vapeur",
+        "ru": "Понижение давления пара",
+        "ar": "انخفاض ضغط البخار",
+        "zh": "蒸气压下降",
+        "ku": "Kêmbûna zexta buharê"
       },
       "distinction": {
-        "tr": "Uçucu olmayan çözünen kaynama noktasını yükseltir (Tk artar); aynı çözünen donma noktasını alçaltır (Td düşer).",
-        "en": "Non-volatile solute increases boiling point (Tk increases); the same solute lowers its freezing point (Td decreases).",
-        "de": "Nichtflüchtiger gelöster Stoff erhöht den Siedepunkt (Tk steigt); Derselbe gelöste Stoff senkt seinen Gefrierpunkt (Td nimmt ab).",
-        "fr": "Le soluté non volatil augmente le point d'ébullition (Tk augmente) ; le même soluté abaisse son point de congélation (Td diminue).",
-        "ru": "Нелетучее растворенное вещество повышает температуру кипения (увеличивается Tk); то же самое растворенное вещество понижает температуру замерзания (Td уменьшается).",
-        "ar": "المذاب غير المتطاير يزيد من درجة الغليان (يزيد Tk)؛ نفس المذاب يخفض نقطة التجمد (ينخفض ​​Td).",
-        "zh": "不挥发性溶质增加沸点（Tk增加）；相同的溶质会降低其凝固点（Td 降低）。",
-        "ku": "Çareseriya ne-volatile xala kelînê zêde dike (Tk zêde dibe); Heman sol xala cemidandinê dadixe (Td kêm dibe)."
+        "tr": "Ozmozda çözücü molekülleri yarı geçirgen zardan seyreltik çözeltiden derişik çözeltiye geçer; buhar basıncı alçalmasında ise uçucu olmayan çözünen, çözeltinin buhar basıncını aynı sıcaklıktaki saf çözücününkinden düşük yapar.",
+        "en": "In osmosis, solvent molecules pass through a semipermeable membrane from the dilute solution into the concentrated solution; in vapor pressure lowering, a non-volatile solute makes the vapor pressure of the solution lower than that of the pure solvent at the same temperature.",
+        "de": "Bei der Osmose wandern Lösungsmittelmoleküle durch eine semipermeable Membran von der verdünnten in die konzentrierte Lösung; bei der Dampfdruckerniedrigung bewirkt ein nichtflüchtiger gelöster Stoff, dass der Dampfdruck der Lösung niedriger ist als der des reinen Lösungsmittels bei gleicher Temperatur.",
+        "fr": "Lors de l'osmose, les molécules de solvant traversent une membrane semi-perméable de la solution diluée vers la solution concentrée ; lors de l'abaissement de la pression de vapeur, un soluté non volatil rend la pression de vapeur de la solution inférieure à celle du solvant pur à la même température.",
+        "ru": "При осмосе молекулы растворителя проходят через полупроницаемую мембрану из разбавленного раствора в концентрированный; при понижении давления пара нелетучее растворённое вещество делает давление пара раствора ниже, чем у чистого растворителя при той же температуре.",
+        "ar": "في الأسموزية تنتقل جزيئات المذيب عبر غشاء شبه منفذ من المحلول المخفف إلى المحلول المركز؛ أما في انخفاض ضغط البخار فيجعل المذاب غير المتطاير ضغط بخار المحلول أقل من ضغط بخار المذيب النقي عند درجة الحرارة نفسها.",
+        "zh": "渗透时溶剂分子透过半透膜从稀溶液进入浓溶液；蒸气压下降是指不挥发性溶质使溶液的蒸气压低于同温度下纯溶剂的蒸气压。",
+        "ku": "Di osmozê de molekulên helker di parzûna nîv-derbasbar re ji çareseriya sivik ber bi çareseriya tîr ve derbas dibin; di kêmbûna zexta buharê de maddeya helbûyî ya ne-firok zexta buharê ya çareseriyê ji ya helkerê paqij di heman germahiyê de nizmtir dike."
       }
     },
     {
       "id": "u15-c04",
       "conceptA": {
-        "tr": "Van t Hoff Faktörü (i)",
+        "tr": "Van 't Hoff Faktörü (i)",
         "en": "Van t Hoff Factor (i)",
         "de": "Van-t-Hoff-Faktor (i)",
         "fr": "Facteur de Van t Hoff (i)",
@@ -515,18 +515,18 @@ export const unit15: ChemistryUnitSeedData = {
         "fr": "Concentration molale (m)",
         "ru": "Моляльная концентрация (м)",
         "ar": "التركيز المولي (م)",
-        "zh": "摩尔浓度 (m)",
+        "zh": "质量摩尔浓度 (m)",
         "ku": "Kombûna Molal (m)"
       },
       "distinction": {
-        "tr": "Van t Hoff faktörü çözeltideki tanecik sayısıdır (glukoz=1, NaCl=2); molal derişim çözücü kütlesine oranlanan moldür.",
-        "en": "Van t Hoff factor is the number of particles in the solution (glucose=1, NaCl=2); molal concentration is the moles divided by the mass of solvent.",
-        "de": "Der Van-t-Hoff-Faktor ist die Anzahl der Partikel in der Lösung (Glukose=1, NaCl=2); Die Molkonzentration ist die Molzahl dividiert durch die Masse des Lösungsmittels.",
-        "fr": "Le facteur Van t Hoff est le nombre de particules dans la solution (glucose=1, NaCl=2) ; la concentration molaire correspond au nombre de moles divisées par la masse de solvant.",
-        "ru": "Фактор Ван-т-Гоффа – количество частиц в растворе (глюкоза=1, NaCl=2); молярная концентрация равна молям, разделенным на массу растворителя.",
-        "ar": "عامل فان تي هوف هو عدد الجزيئات في المحلول (الجلوكوز = 1، كلوريد الصوديوم = 2)؛ التركيز المولي هو عدد الشامات مقسومًا على كتلة المذيب.",
-        "zh": "Van t Hoff 因子是溶液中颗粒的数量（葡萄糖=1，NaCl=2）；摩尔浓度是摩尔数除以溶剂的质量。",
-        "ku": "Faktora Van t Hoff hejmara keriyên di haletê de ye (glukoz=1, NaCl=2); kombûna molal ew mol e ku bi girseya helikê ve tê dabeş kirin."
+        "tr": "Van 't Hoff faktörü, 1 mol çözünenin çözündüğünde oluşturduğu tanecik mol sayısıdır (glikoz = 1, NaCl = 2); molal derişim ise 1 kg çözücüde çözünen maddenin mol sayısıdır.",
+        "en": "The van 't Hoff factor is the number of moles of particles formed when 1 mol of solute dissolves (glucose = 1, NaCl = 2); molal concentration is the number of moles of solute per 1 kg of solvent.",
+        "de": "Der Van-'t-Hoff-Faktor ist die Stoffmenge an Teilchen, die beim Lösen von 1 mol gelöstem Stoff entsteht (Glucose = 1, NaCl = 2); die Molalität ist die Stoffmenge des gelösten Stoffes pro 1 kg Lösungsmittel.",
+        "fr": "Le facteur de van 't Hoff est le nombre de moles de particules formées quand 1 mol de soluté se dissout (glucose = 1, NaCl = 2) ; la concentration molale est le nombre de moles de soluté pour 1 kg de solvant.",
+        "ru": "Фактор Вант-Гоффа — число молей частиц, образующихся при растворении 1 моль вещества (глюкоза = 1, NaCl = 2); моляльная концентрация — число молей растворённого вещества в 1 кг растворителя.",
+        "ar": "عامل فانت هوف هو عدد مولات الجسيمات الناتجة عند ذوبان 1 مول من المذاب (الجلوكوز = 1، NaCl = 2)؛ أما التركيز المولالي فهو عدد مولات المذاب في 1 كجم من المذيب.",
+        "zh": "范特霍夫因子是 1 mol 溶质溶解后形成的粒子的物质的量（葡萄糖 = 1，NaCl = 2）；质量摩尔浓度是每 1 kg 溶剂中所含溶质的物质的量。",
+        "ku": "Faktora van 't Hoff hejmara molên perçeyan e ku dema 1 mol maddeya helbûyî dihele çêdibin (glukoz = 1, NaCl = 2); konsantrasyona molal hejmara molên maddeya helbûyî ye di 1 kg helkerê de."
       }
     },
     {
@@ -552,14 +552,14 @@ export const unit15: ChemistryUnitSeedData = {
         "ku": "Qanûna Henry"
       },
       "distinction": {
-        "tr": "Raoult yasası çözeltinin buhar basıncının çözücü mol kesriyle çarpımını; Henry yasası gazın sudaki çözünürlüğünün kısmi basınçla oranını açıklar.",
-        "en": "Raoult's law is the product of the vapor pressure of the solution by the mole fraction of the solvent; Henry's law describes the ratio of the solubility of a gas in water to the partial pressure.",
-        "de": "Das Gesetz von Raoult ist das Produkt aus dem Dampfdruck der Lösung und dem Molenbruch des Lösungsmittels. Das Henrysche Gesetz beschreibt das Verhältnis der Löslichkeit eines Gases in Wasser zum Partialdruck.",
-        "fr": "La loi de Raoult est le produit de la pression de vapeur de la solution par la fraction molaire du solvant ; La loi de Henry décrit le rapport entre la solubilité d'un gaz dans l'eau et sa pression partielle.",
-        "ru": "Закон Рауля представляет собой произведение давления паров раствора на мольную долю растворителя; Закон Генри описывает отношение растворимости газа в воде к парциальному давлению.",
-        "ar": "قانون راؤول هو نتاج ضغط بخار المحلول بواسطة الكسر المولي للمذيب؛ يصف قانون هنري نسبة ذوبان الغاز في الماء إلى الضغط الجزئي.",
-        "zh": "拉乌尔定律是溶液的蒸气压与溶剂的摩尔分数的乘积；亨利定律描述了气体在水中的溶解度与分压的比率。",
-        "ku": "Zagona Raoult berhema tansiyona buharê ya çareyê ye ku ji aliyê pariya molê ya helikê ve; Zagona Henry rêjeya çareserbûna gazê ya di avê de bi zexta qismî re diyar dike."
+        "tr": "Raoult yasası, çözeltinin buhar basıncının saf çözücünün buhar basıncı ile çözücünün mol kesrinin çarpımına eşit olduğunu; Henry yasası ise bir gazın sıvıdaki çözünürlüğünün o gazın kısmi basıncıyla doğru orantılı olduğunu açıklar.",
+        "en": "Raoult's law states that the vapor pressure of a solution equals the vapor pressure of the pure solvent times the mole fraction of the solvent; Henry's law states that the solubility of a gas in a liquid is directly proportional to its partial pressure.",
+        "de": "Das Raoultsche Gesetz besagt, dass der Dampfdruck der Lösung gleich dem Dampfdruck des reinen Lösungsmittels mal dessen Stoffmengenanteil ist; das Henry-Gesetz besagt, dass die Löslichkeit eines Gases in einer Flüssigkeit proportional zu seinem Partialdruck ist.",
+        "fr": "La loi de Raoult indique que la pression de vapeur de la solution est égale à la pression de vapeur du solvant pur multipliée par la fraction molaire du solvant ; la loi de Henry indique que la solubilité d'un gaz dans un liquide est proportionnelle à sa pression partielle.",
+        "ru": "Закон Рауля: давление пара раствора равно давлению пара чистого растворителя, умноженному на мольную долю растворителя; закон Генри: растворимость газа в жидкости прямо пропорциональна его парциальному давлению.",
+        "ar": "ينص قانون راؤول على أن ضغط بخار المحلول يساوي ضغط بخار المذيب النقي مضروبًا في الكسر المولي للمذيب؛ وينص قانون هنري على أن ذوبانية الغاز في السائل تتناسب طرديًا مع ضغطه الجزئي.",
+        "zh": "拉乌尔定律：溶液的蒸气压等于纯溶剂的蒸气压乘以溶剂的摩尔分数；亨利定律：气体在液体中的溶解度与该气体的分压成正比。",
+        "ku": "Zagona Raoult dibêje ku zexta buharê ya çareseriyê bi lêkdana zexta buharê ya helkerê paqij û pişka molî ya helker re wekhev e; zagona Henry dibêje ku helbûnîya gazekê di şilekê de rasterast bi zexta wê ya parçeyî re têkildar e."
       }
     },
     {
@@ -585,14 +585,14 @@ export const unit15: ChemistryUnitSeedData = {
         "ku": "Reverse Osmosis"
       },
       "distinction": {
-        "tr": "Ozmotik basınç suyun yarı geçirgen zardan derişik tarafa geçme isteğidir; ters ozmoz basınç uygulayarak tuzlu sudan saf su elde etmektir.",
-        "en": "Osmotic pressure is the desire of water to move from the semi-permeable membrane to the concentrated side; Reverse osmosis is to obtain pure water from salt water by applying pressure.",
-        "de": "Osmotischer Druck ist der Wunsch des Wassers, sich von der semipermeablen Membran zur konzentrierten Seite zu bewegen; Bei der Umkehrosmose wird aus Salzwasser durch Druckanwendung reines Wasser gewonnen.",
-        "fr": "La pression osmotique est le désir de l'eau de passer de la membrane semi-perméable au côté concentré ; L'osmose inverse consiste à obtenir de l'eau pure à partir d'eau salée en appliquant une pression.",
-        "ru": "Осмотическое давление — стремление воды перейти из полупроницаемой мембраны в концентрированную сторону; Обратный осмос предназначен для получения чистой воды из соленой воды под давлением.",
-        "ar": "الضغط الاسموزي هو رغبة الماء في الانتقال من الغشاء شبه المنفذ إلى الجانب المركز؛ التناضح العكسي هو الحصول على الماء النقي من الماء المالح عن طريق الضغط.",
-        "zh": "渗透压是水从半透膜移动到浓缩侧的愿望；反渗透是通过施加压力从盐水中获得纯净水。",
-        "ku": "Zexta osmotîk xwesteka avê ye ku ji parzûna nîv-permeable ber bi aliyê konsantrekirî ve biçe; Osmoza berevajî ew e ku bi pêkanîna zextê ji ava şor ava paqij were bidestxistin."
+        "tr": "Ozmotik basınç, çözücünün yarı geçirgen zardan derişik çözeltiye geçişini (ozmozu) durdurmak için uygulanması gereken basınçtır; ters ozmoz ise ozmotik basınçtan büyük basınç uygulanarak tuzlu sudan saf su elde edilmesidir.",
+        "en": "Osmotic pressure is the pressure that must be applied to stop the passage of solvent through a semipermeable membrane into the concentrated solution (osmosis); reverse osmosis obtains pure water from salt water by applying a pressure greater than the osmotic pressure.",
+        "de": "Der osmotische Druck ist der Druck, der aufgebracht werden muss, um den Übertritt des Lösungsmittels durch eine semipermeable Membran in die konzentrierte Lösung (Osmose) zu stoppen; bei der Umkehrosmose wird mit einem Druck, der größer als der osmotische Druck ist, aus Salzwasser reines Wasser gewonnen.",
+        "fr": "La pression osmotique est la pression qu'il faut appliquer pour arrêter le passage du solvant à travers une membrane semi-perméable vers la solution concentrée (osmose) ; l'osmose inverse permet d'obtenir de l'eau pure à partir d'eau salée en appliquant une pression supérieure à la pression osmotique.",
+        "ru": "Осмотическое давление — давление, которое нужно приложить, чтобы остановить переход растворителя через полупроницаемую мембрану в концентрированный раствор (осмос); обратный осмос — получение чистой воды из солёной при давлении, превышающем осмотическое.",
+        "ar": "الضغط الأسموزي هو الضغط اللازم تطبيقه لإيقاف انتقال المذيب عبر غشاء شبه منفذ إلى المحلول المركز (الأسموزية)؛ أما الأسموزية العكسية فهي الحصول على ماء نقي من الماء المالح بتطبيق ضغط أكبر من الضغط الأسموزي.",
+        "zh": "渗透压是为阻止溶剂透过半透膜进入浓溶液（渗透）而必须施加的压强；反渗透是施加大于渗透压的压强，从盐水中获得纯水。",
+        "ku": "Zexta osmotîk ew zext e ku divê were sepandin da ku derbasbûna helker di parzûna nîv-derbasbar re ber bi çareseriya tîr (osmoz) were rawestandin; osmoza berevajî bi sepandina zexteke ji zexta osmotîk mezintir, ji ava şor bidestxistina ava paqij e."
       }
     },
     {
@@ -631,34 +631,34 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-c08",
       "conceptA": {
-        "tr": "Kaynama Noktası Yükselmesi",
-        "en": "Boiling Point Elevation",
-        "de": "Siedepunkterhöhung",
-        "fr": "Élévation du point d'ébullition",
-        "ru": "Повышение температуры кипения",
-        "ar": "ارتفاع نقطة الغليان",
-        "zh": "沸点升高",
-        "ku": "Bilindbûna xala kelandinê"
+        "tr": "NaCl Çözeltisi (i = 2)",
+        "en": "NaCl Solution (i = 2)",
+        "de": "NaCl-Lösung (i = 2)",
+        "fr": "Solution de NaCl (i = 2)",
+        "ru": "Раствор NaCl (i = 2)",
+        "ar": "محلول NaCl (i = 2)",
+        "zh": "NaCl 溶液 (i = 2)",
+        "ku": "Çareseriya NaCl (i = 2)"
       },
       "conceptB": {
-        "tr": "Donma Noktası Alçalması",
-        "en": "Freezing Point Depression",
-        "de": "Gefrierpunktserniedrigung",
-        "fr": "Dépression du point de congélation",
-        "ru": "Депрессия точки замерзания",
-        "ar": "اكتئاب نقطة التجمد",
-        "zh": "冰点降低",
-        "ku": "Xala cemidandinê depresyonê"
+        "tr": "Glikoz Çözeltisi (i = 1)",
+        "en": "Glucose Solution (i = 1)",
+        "de": "Glucoselösung (i = 1)",
+        "fr": "Solution de glucose (i = 1)",
+        "ru": "Раствор глюкозы (i = 1)",
+        "ar": "محلول الجلوكوز (i = 1)",
+        "zh": "葡萄糖溶液 (i = 1)",
+        "ku": "Çareseriya glukozê (i = 1)"
       },
       "distinction": {
-        "tr": "Çözünen tanecik derişimi arttıkça kaynama noktası yükselir, donma noktası alçalır.",
-        "en": "As the solute particle concentration increases, the boiling point increases and the freezing point decreases.",
-        "de": "Mit zunehmender Konzentration gelöster Teilchen steigt der Siedepunkt und der Gefrierpunkt sinkt.",
-        "fr": "À mesure que la concentration de particules de soluté augmente, le point d’ébullition augmente et le point de congélation diminue.",
-        "ru": "По мере увеличения концентрации растворенных частиц температура кипения увеличивается, а точка замерзания снижается.",
-        "ar": "ومع زيادة تركيز الجسيمات المذابة، تزداد درجة الغليان وتقل نقطة التجمد.",
-        "zh": "随着溶质颗粒浓度的增加，沸点升高，凝固点降低。",
-        "ku": "Her ku tansiyona pariyên solare zêde dibe, xala kelandinê zêde dibe û xala cemidandinê kêm dibe."
+        "tr": "Eşit molalitede NaCl çözeltisi glikoz çözeltisine göre iki kat tanecik içerir; bu nedenle donma noktası alçalması ve kaynama noktası yükselmesi yaklaşık iki kat büyüktür.",
+        "en": "At equal molality, a NaCl solution contains twice as many particles as a glucose solution; therefore its freezing point depression and boiling point elevation are about twice as large.",
+        "de": "Bei gleicher Molalität enthält eine NaCl-Lösung doppelt so viele Teilchen wie eine Glucoselösung; daher sind ihre Gefrierpunktserniedrigung und Siedepunkterhöhung etwa doppelt so groß.",
+        "fr": "À molalité égale, une solution de NaCl contient deux fois plus de particules qu'une solution de glucose ; son abaissement du point de congélation et son élévation du point d'ébullition sont donc environ deux fois plus grands.",
+        "ru": "При одинаковой моляльности раствор NaCl содержит вдвое больше частиц, чем раствор глюкозы; поэтому понижение температуры замерзания и повышение температуры кипения у него примерно вдвое больше.",
+        "ar": "عند تساوي المولالية يحتوي محلول NaCl على ضعف عدد الجسيمات الموجودة في محلول الجلوكوز؛ لذلك يكون الانخفاض في درجة تجمده والارتفاع في درجة غليانه ضعف ذلك تقريبًا.",
+        "zh": "在质量摩尔浓度相同时，NaCl 溶液所含粒子数是葡萄糖溶液的两倍；因此其凝固点降低和沸点升高约为葡萄糖溶液的两倍。",
+        "ku": "Di heman molalîteyê de çareseriya NaCl du qat ji çareseriya glukozê perçe dihewîne; ji ber vê kêmbûna xala cemidînê û bilindbûna xala kelînê ya wê nêzîkî du qat mezintir e."
       }
     }
   ],
@@ -763,13 +763,13 @@ export const unit15: ChemistryUnitSeedData = {
         },
         {
           "tr": "Delta Tk = Kk . m . i formülüyle kaynama artışı hesaplanır",
-          "en": "Delta Tk = Kk . m. The boiling increase is calculated with the formula i",
-          "de": "Delta Tk = Kk . M. Der Siedeanstieg wird mit der Formel i berechnet",
-          "fr": "Delta Tk = Kk. m. L'augmentation de l'ébullition est calculée avec la formule i",
-          "ru": "Дельта Тк = Кк. м. Повышение кипения рассчитывается по формуле i",
-          "ar": "دلتا تك = ك. م. يتم حساب الزيادة في الغليان بالصيغة i",
-          "zh": "Delta Tk = Kk 。米。沸腾增量的计算公式为 i",
-          "ku": "Delta Tk = Kk. m. Zêdebûna kelandinê bi formula i tê hesibandin"
+          "en": "The boiling point elevation is calculated with ΔTk = Kk · m · i",
+          "de": "Die Siedepunkterhöhung wird mit ΔTk = Kk · m · i berechnet",
+          "fr": "L'élévation du point d'ébullition est calculée par ΔTk = Kk · m · i",
+          "ru": "Повышение температуры кипения рассчитывают по формуле ΔTk = Kk · m · i",
+          "ar": "يُحسب الارتفاع في درجة الغليان بالعلاقة ΔTk = Kk · m · i",
+          "zh": "用 ΔTk = Kk · m · i 计算沸点升高值",
+          "ku": "Bilindbûna xala kelînê bi formula ΔTk = Kk · m · i tê hesibandin"
         }
       ]
     },
@@ -799,22 +799,22 @@ export const unit15: ChemistryUnitSeedData = {
         {
           "tr": "Çözeltinin molal derişimi hesaplanır",
           "en": "The molal concentration of the solution is calculated",
-          "de": "Die molare Konzentration der Lösung wird berechnet",
-          "fr": "La concentration molaire de la solution est calculée",
+          "de": "Die Molalität (molale Konzentration) der Lösung wird berechnet",
+          "fr": "La concentration molale de la solution est calculée",
           "ru": "Моляльная концентрация раствора рассчитывается",
-          "ar": "يتم حساب التركيز المولي للمحلول",
-          "zh": "计算溶液的摩尔浓度",
+          "ar": "يُحسب التركيز المولالي للمحلول",
+          "zh": "计算溶液的质量摩尔浓度",
           "ku": "Pîvana molal ya çareseriyê tê hesab kirin"
         },
         {
           "tr": "Delta Td = Kd . m . i formülü uygulanır",
-          "en": "Delta Td = Kd . m. Formula i is applied",
-          "de": "Delta Td = Kd . M. Formel i wird angewendet",
-          "fr": "Delta Td = Kd . m. La formule i est appliquée",
-          "ru": "Дельта Td = Kd. м. Формула i применяется",
-          "ar": "دلتا Td = دينار كويتي. م. يتم تطبيق الصيغة i",
-          "zh": "ΔTd = Kd。米。应用公式 i",
-          "ku": "Delta Td = Kd. m. Formula i tê sepandin"
+          "en": "ΔTd = Kd · m · i is applied",
+          "de": "ΔTd = Kd · m · i wird angewendet",
+          "fr": "On applique ΔTd = Kd · m · i",
+          "ru": "Применяют формулу ΔTd = Kd · m · i",
+          "ar": "تُطبَّق العلاقة ΔTd = Kd · m · i",
+          "zh": "应用公式 ΔTd = Kd · m · i",
+          "ku": "Formula ΔTd = Kd · m · i tê sepandin"
         },
         {
           "tr": "0 °C'den çıkarılarak yeni donma sıcaklığı bulunur",
@@ -832,13 +832,13 @@ export const unit15: ChemistryUnitSeedData = {
       "id": "u15-s04",
       "title": {
         "tr": "Çözünürlük Eğrisi Okuma",
-        "en": "Reading Resolution Curve",
-        "de": "Leseauflösungskurve",
-        "fr": "Courbe de résolution de lecture",
-        "ru": "Кривая разрешения чтения",
-        "ar": "منحنى دقة القراءة",
-        "zh": "读数分辨率曲线",
-        "ku": "Xwendina Resolution Curve"
+        "en": "Reading a Solubility Curve",
+        "de": "Ablesen einer Löslichkeitskurve",
+        "fr": "Lecture d'une courbe de solubilité",
+        "ru": "Чтение кривой растворимости",
+        "ar": "قراءة منحنى الذوبانية",
+        "zh": "读取溶解度曲线",
+        "ku": "Xwendina xêza helbûnîyê"
       },
       "steps": [
         {
@@ -888,7 +888,7 @@ export const unit15: ChemistryUnitSeedData = {
     {
       "id": "u15-twin01",
       "stem": {
-        "tr": "1 kg saf suda 1 mol NaCl çözünerek hazırlanan çözeltinin 1 atm'de donmaya başlama sıcaklığı kaç °C'dir? (Su için Kd = 1.86 °C*kg/mol)",
+        "tr": "1 kg saf suda 1 mol NaCl çözünerek hazırlanan çözeltinin 1 atm'de donmaya başlama sıcaklığı kaç °C'dir? (Su için Kd = 1,86 °C*kg/mol)",
         "en": "What is the freezing temperature at 1 atm of the solution prepared by dissolving 1 mole of NaCl in 1 kg of pure water? (Kd for water = 1.86 °C*kg/mol)",
         "de": "Wie hoch ist die Gefriertemperatur bei 1 atm der Lösung, die durch Auflösen von 1 Mol NaCl in 1 kg reinem Wasser hergestellt wird? (Kd für Wasser = 1,86 °C*kg/mol)",
         "fr": "Quelle est la température de congélation à 1 atm de la solution préparée en dissolvant 1 mole de NaCl dans 1 kg d'eau pure ? (Kd pour l'eau = 1,86 °C*kg/mol)",
@@ -899,7 +899,7 @@ export const unit15: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "-3.72 °C",
+          "tr": "-3,72 °C",
           "en": "-3.72 °C",
           "de": "-3,72 °C",
           "fr": "-3,72 °C",
@@ -909,7 +909,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "-3,72 °C"
         },
         {
-          "tr": "-1.86 °C",
+          "tr": "-1,86 °C",
           "en": "-1.86 °C",
           "de": "-1,86 °C",
           "fr": "-1,86 °C",
@@ -919,7 +919,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "-1,86 °C"
         },
         {
-          "tr": "0.00 °C",
+          "tr": "0,00 °C",
           "en": "0.00 °C",
           "de": "0,00 °C",
           "fr": "0,00 °C",
@@ -929,7 +929,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "0,00 °C"
         },
         {
-          "tr": "-0.93 °C",
+          "tr": "-0,93 °C",
           "en": "-0.93 °C",
           "de": "-0,93 °C",
           "fr": "-0,93 °C",
@@ -939,7 +939,7 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "-0,93 °C"
         },
         {
-          "tr": "-5.58 °C",
+          "tr": "-5,58 °C",
           "en": "-5.58 °C",
           "de": "-5,58 °C",
           "fr": "-5,58 °C",
@@ -951,7 +951,7 @@ export const unit15: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTd = Kd * m * i = 1.86 * 1 * 2 = 3.72 °C. Donma noktası = 0 - 3.72 = -3.72 °C.",
+        "tr": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTd = Kd * m * i = 1,86 * 1 * 2 = 3,72 °C. Donma noktası = 0 - 3,72 = -3,72 °C.",
         "en": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTd = Kd * m * i = 1.86 * 1 * 2 = 3.72 °C. Freezing point = 0 - 3.72 = -3.72 °C.",
         "de": "NaCl -> Na+ + Cl- (i = 2). m = 1 mol / 1 kg = 1 m. ΔTd = Kd * m * i = 1,86 * 1 * 2 = 3,72 °C. Gefrierpunkt = 0 - 3,72 = -3,72 °C.",
         "fr": "NaCl -> Na+ + Cl- (i = 2). m = 1 mole / 1 kg = 1 m. ΔTd = Kd * m * i = 1,86 * 1 * 2 = 3,72 °C. Point de congélation = 0 - 3,72 = -3,72 °C.",
@@ -970,7 +970,7 @@ export const unit15: ChemistryUnitSeedData = {
         "fr": "Laquelle des solutions aqueuses 1 molales suivantes a la température d'ébullition la plus élevée à une pression externe de 1 atm ?",
         "ru": "Какой из следующих 1 моляльных водных растворов имеет самую высокую температуру кипения при внешнем давлении 1 атм?",
         "ar": "أي المحاليل المائية 1 مولال التالية له أعلى درجة حرارة غليان عند ضغط خارجي 1 atm؟",
-        "zh": "以下哪种 1 摩尔水溶液在 1 atm 外压下具有最高的沸点温度？",
+        "zh": "下列 1 m（质量摩尔浓度）水溶液中，哪一种在 1 atm 外压下开始沸腾的温度最高？",
         "ku": "Kîjan ji 1 çareserîyên avî yên molal ên jêrîn di 1 atm zexta derve de xwedî germahiya herî kelandinê ye?"
       },
       "options": [
@@ -1061,17 +1061,17 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Parçeyên hişk ên ku di osmosê de têne hilweşandin bi hêsanî di parzûnê re derbas dibin."
         },
         {
-          "tr": "Çözünürlük 1 litre çözeltide çözünen katı gramıdır.",
-          "en": "Solubility is the gram of solid dissolved in 1 liter of solution.",
-          "de": "Die Löslichkeit ist das Gramm Feststoff, gelöst in 1 Liter Lösung.",
-          "fr": "La solubilité est le gramme de solide dissous dans 1 litre de solution.",
-          "ru": "Растворимость – это грамм твердого вещества, растворенного в 1 л раствора.",
-          "ar": "الذوبان هو جرام المادة الصلبة المذابة في 1 لتر من المحلول.",
-          "zh": "溶解度是溶解在 1 升溶液中的固体克数。",
-          "ku": "Çareserbûn gram e ku di 1 lîtreya haletê de tê helandin."
+          "tr": "Çözünürlük, doymamış bir çözeltide çözünmüş olarak bulunan madde miktarıdır.",
+          "en": "Solubility is the amount of substance dissolved in an unsaturated solution.",
+          "de": "Löslichkeit ist die Stoffmenge, die in einer ungesättigten Lösung gelöst vorliegt.",
+          "fr": "La solubilité est la quantité de substance dissoute dans une solution insaturée.",
+          "ru": "Растворимость — это количество вещества, растворённого в ненасыщенном растворе.",
+          "ar": "الذوبانية هي كمية المادة المذابة في محلول غير مشبع.",
+          "zh": "溶解度是指不饱和溶液中已溶解的溶质的量。",
+          "ku": "Helbûnî (çareserbûn) mîqdara maddeya ku di çareseriyeke ne-têr de helbûyî ye."
         },
         {
-          "tr": "Donma noktası alçalması: ΔTd = Kd * m * i'dir (su için Kd = 1.86 °C*kg/mol).",
+          "tr": "Donma noktası alçalması: ΔTd = Kd * m * i'dir (su için Kd = 1,86 °C*kg/mol).",
           "en": "Freezing point depression: ΔTd = Kd * m * i (Kd = 1.86 °C*kg/mol for water).",
           "de": "Gefrierpunktserniedrigung: ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol für Wasser).",
           "fr": "Abaissement du point de congélation : ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol pour l'eau).",
@@ -1103,7 +1103,7 @@ export const unit15: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Donma noktası alçalması: ΔTd = Kd * m * i'dir (su için Kd = 1.86 °C*kg/mol).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Donma noktası alçalması: ΔTd = Kd * m * i'dir (su için Kd = 1,86 °C*kg/mol).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Freezing point depression: ΔTd = Kd * m * i (Kd = 1.86 °C*kg/mol for water).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Gefrierpunktserniedrigung: ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol für Wasser).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Abaissement du point de congélation : ΔTd = Kd * m * i (Kd = 1,86 °C*kg/mol pour l'eau).\". Notion fondamentale du programme officiel de chimie.",
@@ -1148,16 +1148,16 @@ export const unit15: ChemistryUnitSeedData = {
         },
         {
           "tr": "Ortak iyon bulunan çözeltide tuz daha çok çözünür.",
-          "en": "Salt is more soluble in a solution with common ions.",
-          "de": "Salz ist in einer Lösung mit gewöhnlichen Ionen besser löslich.",
-          "fr": "Le sel est plus soluble dans une solution contenant des ions communs.",
-          "ru": "Соль лучше растворяется в растворе с общими ионами.",
-          "ar": "يكون الملح أكثر قابلية للذوبان في المحلول الذي يحتوي على الأيونات الشائعة.",
-          "zh": "盐在具有普通离子的溶液中更易溶解。",
-          "ku": "Xwê di çareyek bi îyonên hevpar de zêdetir tê çareserkirin."
+          "en": "A salt dissolves more in a solution containing a common ion.",
+          "de": "In einer Lösung mit einem gleichen Ion löst sich ein Salz besser.",
+          "fr": "Un sel est plus soluble dans une solution contenant un ion commun.",
+          "ru": "В растворе, содержащем одноимённый ион, соль растворяется лучше.",
+          "ar": "يذوب الملح بدرجة أكبر في محلول يحتوي على أيون مشترك.",
+          "zh": "盐在含有同离子的溶液中溶解得更多。",
+          "ku": "Xwê di çareseriyeke ku îyona hevpar tê de heye de bêtir dihele."
         },
         {
-          "tr": "van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1'dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).",
+          "tr": "van 't Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1'dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).",
           "en": "van t Hoff factor (i): In molecular substances (sugar, alcohol) i = 1; is the number of ions in ionic salts (i = 2 for NaCl, i = 3 for CaCl2).",
           "de": "Van-t-Hoff-Faktor (i): In molekularen Substanzen (Zucker, Alkohol) i = 1; ist die Anzahl der Ionen in ionischen Salzen (i = 2 für NaCl, i = 3 für CaCl2).",
           "fr": "Facteur de van t Hoff (i) : Dans les substances moléculaires (sucre, alcool) i = 1 ; est le nombre d'ions dans les sels ioniques (i = 2 pour NaCl, i = 3 pour CaCl2).",
@@ -1179,7 +1179,7 @@ export const unit15: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"van t Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1'dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"van 't Hoff faktörü (i): Moleküler maddelerde (şeker, alkol) i = 1'dir; iyonik tuzlarda iyon sayısıdır (NaCl için i = 2, CaCl2 için i = 3).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"van t Hoff factor (i): In molecular substances (sugar, alcohol) i = 1; is the number of ions in ionic salts (i = 2 for NaCl, i = 3 for CaCl2).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Van-t-Hoff-Faktor (i): In molekularen Substanzen (Zucker, Alkohol) i = 1; ist die Anzahl der Ionen in ionischen Salzen (i = 2 für NaCl, i = 3 für CaCl2).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Facteur de van t Hoff (i) : Dans les substances moléculaires (sucre, alcool) i = 1 ; est le nombre d'ions dans les sels ioniques (i = 2 pour NaCl, i = 3 pour CaCl2).\". Notion fondamentale du programme officiel de chimie.",
@@ -1289,14 +1289,14 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Zexta osmotîk zexta pêdivî ye ku ji bo rawestandina veguheztina rûnê safî ber bi çareseriya konsantrekirî ve di nav perdeya nîv-permeable de ye."
         },
         {
-          "tr": "Çözünürlük 1 litre çözeltide çözünen katı gramıdır.",
-          "en": "Solubility is the gram of solid dissolved in 1 liter of solution.",
-          "de": "Die Löslichkeit ist das Gramm Feststoff, gelöst in 1 Liter Lösung.",
-          "fr": "La solubilité est le gramme de solide dissous dans 1 litre de solution.",
-          "ru": "Растворимость – это грамм твердого вещества, растворенного в 1 л раствора.",
-          "ar": "الذوبان هو جرام المادة الصلبة المذابة في 1 لتر من المحلول.",
-          "zh": "溶解度是溶解在 1 升溶液中的固体克数。",
-          "ku": "Çareserbûn gram e ku di 1 lîtreya haletê de tê helandin."
+          "tr": "Çözünürlük, doymamış bir çözeltide çözünmüş olarak bulunan madde miktarıdır.",
+          "en": "Solubility is the amount of substance dissolved in an unsaturated solution.",
+          "de": "Löslichkeit ist die Stoffmenge, die in einer ungesättigten Lösung gelöst vorliegt.",
+          "fr": "La solubilité est la quantité de substance dissoute dans une solution insaturée.",
+          "ru": "Растворимость — это количество вещества, растворённого в ненасыщенном растворе.",
+          "ar": "الذوبانية هي كمية المادة المذابة في محلول غير مشبع.",
+          "zh": "溶解度是指不饱和溶液中已溶解的溶质的量。",
+          "ku": "Helbûnî (çareserbûn) mîqdara maddeya ku di çareseriyeke ne-têr de helbûyî ye."
         },
         {
           "tr": "Tuzun sudaki çözünürlüğü yüksek basınçta iki katına çıkar.",
@@ -1376,13 +1376,13 @@ export const unit15: ChemistryUnitSeedData = {
         },
         {
           "tr": "Ortak iyon bulunan çözeltide tuz daha çok çözünür.",
-          "en": "Salt is more soluble in a solution with common ions.",
-          "de": "Salz ist in einer Lösung mit gewöhnlichen Ionen besser löslich.",
-          "fr": "Le sel est plus soluble dans une solution contenant des ions communs.",
-          "ru": "Соль лучше растворяется в растворе с общими ионами.",
-          "ar": "يكون الملح أكثر قابلية للذوبان في المحلول الذي يحتوي على الأيونات الشائعة.",
-          "zh": "盐在具有普通离子的溶液中更易溶解。",
-          "ku": "Xwê di çareyek bi îyonên hevpar de zêdetir tê çareserkirin."
+          "en": "A salt dissolves more in a solution containing a common ion.",
+          "de": "In einer Lösung mit einem gleichen Ion löst sich ein Salz besser.",
+          "fr": "Un sel est plus soluble dans une solution contenant un ion commun.",
+          "ru": "В растворе, содержащем одноимённый ион, соль растворяется лучше.",
+          "ar": "يذوب الملح بدرجة أكبر في محلول يحتوي على أيون مشترك.",
+          "zh": "盐在含有同离子的溶液中溶解得更多。",
+          "ku": "Xwê di çareseriyeke ku îyona hevpar tê de heye de bêtir dihele."
         },
         {
           "tr": "Kapak açıldığında CO2'nin çözünürlüğü artar.",
@@ -1584,13 +1584,13 @@ export const unit15: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Ortak iyon bulunan çözeltide tuz daha çok çözünür.",
-          "en": "Salt is more soluble in a solution with common ions.",
-          "de": "Salz ist in einer Lösung mit gewöhnlichen Ionen besser löslich.",
-          "fr": "Le sel est plus soluble dans une solution contenant des ions communs.",
-          "ru": "Соль лучше растворяется в растворе с общими ионами.",
-          "ar": "يكون الملح أكثر قابلية للذوبان في المحلول الذي يحتوي على الأيونات الشائعة.",
-          "zh": "盐在具有普通离子的溶液中更易溶解。",
-          "ku": "Xwê di çareyek bi îyonên hevpar de zêdetir tê çareserkirin."
+          "en": "A salt dissolves more in a solution containing a common ion.",
+          "de": "In einer Lösung mit einem gleichen Ion löst sich ein Salz besser.",
+          "fr": "Un sel est plus soluble dans une solution contenant un ion commun.",
+          "ru": "В растворе, содержащем одноимённый ион, соль растворяется лучше.",
+          "ar": "يذوب الملح بدرجة أكبر في محلول يحتوي على أيون مشترك.",
+          "zh": "盐在含有同离子的溶液中溶解得更多。",
+          "ku": "Xwê di çareseriyeke ku îyona hevpar tê de heye de bêtir dihele."
         },
         {
           "tr": "Kapak açıldığında CO2'nin çözünürlüğü artar.",
@@ -1623,26 +1623,26 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Parçeyên hişk ên ku di osmosê de têne hilweşandin bi hêsanî di parzûnê re derbas dibin."
         },
         {
-          "tr": "Katıların sudaki çözünürlüğü genellikle endotermiktir (sıcaklık arttıkça artar); gazların çözünürlüğü daima ekzotermiktir.",
-          "en": "The solubility of solids in water is generally endothermic (increases with increasing temperature); The solubility of gases is always exothermic.",
-          "de": "Die Löslichkeit von Feststoffen in Wasser ist im Allgemeinen endotherm (steigt mit steigender Temperatur); Die Löslichkeit von Gasen ist immer exotherm.",
-          "fr": "La solubilité des solides dans l'eau est généralement endothermique (augmente avec l'augmentation de la température) ; La solubilité des gaz est toujours exothermique.",
-          "ru": "Растворимость твердых веществ в воде обычно эндотермична (увеличивается с повышением температуры); Растворимость газов всегда экзотермична.",
-          "ar": "تكون قابلية ذوبان المواد الصلبة في الماء عمومًا ماصة للحرارة (تزداد مع زيادة درجة الحرارة)؛ إن ذوبان الغازات دائمًا ما يكون طاردًا للحرارة.",
-          "zh": "固体在水中的溶解度通常是吸热的（随着温度的升高而增加）；气体的溶解度总是放热的。",
-          "ku": "Çareserbûna maddeyên hişk di avê de bi gelemperî endotermîk e (bi zêdebûna germahiyê re zêde dibe); Çareserbûna gazan her dem germ e."
+          "tr": "Katıların sudaki çözünmesi genellikle endotermiktir (çözünürlük sıcaklıkla artar); gazların sudaki çözünmesi ise ekzotermiktir (çözünürlük sıcaklıkla azalır).",
+          "en": "The dissolution of solids in water is usually endothermic (solubility increases with temperature); the dissolution of gases in water is exothermic (solubility decreases with temperature).",
+          "de": "Das Lösen von Feststoffen in Wasser ist meist endotherm (die Löslichkeit steigt mit der Temperatur); das Lösen von Gasen in Wasser ist exotherm (die Löslichkeit sinkt mit der Temperatur).",
+          "fr": "La dissolution des solides dans l'eau est généralement endothermique (la solubilité augmente avec la température) ; la dissolution des gaz dans l'eau est exothermique (la solubilité diminue avec la température).",
+          "ru": "Растворение твёрдых веществ в воде обычно эндотермично (растворимость растёт с температурой); растворение газов в воде экзотермично (с ростом температуры растворимость уменьшается).",
+          "ar": "ذوبان المواد الصلبة في الماء ماصّ للحرارة غالبًا (تزداد الذوبانية بارتفاع درجة الحرارة)؛ أما ذوبان الغازات في الماء فطارد للحرارة (تقل الذوبانية بارتفاع درجة الحرارة).",
+          "zh": "固体在水中的溶解通常是吸热的（溶解度随温度升高而增大）；气体在水中的溶解是放热的（溶解度随温度升高而减小）。",
+          "ku": "Helbûna hişkan di avê de bi gelemperî endotermîk e (helbûnî bi germahiyê re zêde dibe); helbûna gazan di avê de ekzotermîk e (helbûnî bi germahiyê re kêm dibe)."
         }
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Katıların sudaki çözünürlüğü genellikle endotermiktir (sıcaklık arttıkça artar); gazların çözünürlüğü daima ekzotermiktir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The solubility of solids in water is generally endothermic (increases with increasing temperature); The solubility of gases is always exothermic.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die Löslichkeit von Feststoffen in Wasser ist im Allgemeinen endotherm (steigt mit steigender Temperatur); Die Löslichkeit von Gasen ist immer exotherm.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La solubilité des solides dans l'eau est généralement endothermique (augmente avec l'augmentation de la température) ; La solubilité des gaz est toujours exothermique.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Растворимость твердых веществ в воде обычно эндотермична (увеличивается с повышением температуры); Растворимость газов всегда экзотермична.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تكون قابلية ذوبان المواد الصلبة في الماء عمومًا ماصة للحرارة (تزداد مع زيادة درجة الحرارة)؛ إن ذوبان الغازات دائمًا ما يكون طاردًا للحرارة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“固体在水中的溶解度通常是吸热的（随着温度的升高而增加）；气体的溶解度总是放热的。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Çareserbûna maddeyên hişk di avê de bi gelemperî endotermîk e (bi zêdebûna germahiyê re zêde dibe); Çareserbûna gazan her dem germ e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Katıların sudaki çözünmesi genellikle endotermiktir (çözünürlük sıcaklıkla artar); gazların sudaki çözünmesi ise ekzotermiktir (çözünürlük sıcaklıkla azalır).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"The dissolution of solids in water is usually endothermic (solubility increases with temperature); the dissolution of gases in water is exothermic (solubility decreases with temperature).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Das Lösen von Feststoffen in Wasser ist meist endotherm (die Löslichkeit steigt mit der Temperatur); das Lösen von Gasen in Wasser ist exotherm (die Löslichkeit sinkt mit der Temperatur).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"La dissolution des solides dans l'eau est généralement endothermique (la solubilité augmente avec la température) ; la dissolution des gaz dans l'eau est exothermique (la solubilité diminue avec la température).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Растворение твёрдых веществ в воде обычно эндотермично (растворимость растёт с температурой); растворение газов в воде экзотермично (с ростом температуры растворимость уменьшается).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"ذوبان المواد الصلبة في الماء ماصّ للحرارة غالبًا (تزداد الذوبانية بارتفاع درجة الحرارة)؛ أما ذوبان الغازات في الماء فطارد للحرارة (تقل الذوبانية بارتفاع درجة الحرارة).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“固体在水中的溶解通常是吸热的（溶解度随温度升高而增大）；气体在水中的溶解是放热的（溶解度随温度升高而减小）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Helbûna hişkan di avê de bi gelemperî endotermîk e (helbûnî bi germahiyê re zêde dibe); helbûna gazan di avê de ekzotermîk e (helbûnî bi germahiyê re kêm dibe).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1831,14 +1831,14 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Dema ku tîrêjek nehilber dihele, xala cemidandinê ya avê bilind dibe."
         },
         {
-          "tr": "Ortak iyon etkisi çözünürlüğü daima azaltır (Le Chatelier prensibi).",
-          "en": "The common ion effect always reduces the solubility (Le Chatelier's principle).",
-          "de": "Der gemeinsame Ioneneffekt verringert immer die Löslichkeit (Prinzip von Le Chatelier).",
-          "fr": "L'effet des ions communs réduit toujours la solubilité (principe de Le Chatelier).",
-          "ru": "Эффект общего иона всегда снижает растворимость (принцип Ле Шателье).",
-          "ar": "إن تأثير الأيون المشترك يقلل دائمًا من قابلية الذوبان (مبدأ لو شاتيليه).",
-          "zh": "共离子效应总是会降低溶解度（勒夏特列原理）。",
-          "ku": "Bandora îyona hevpar her gav çareserbûnê kêm dike (prensîba Le Chatelier)."
+          "tr": "Ortak iyon içeren bir çözeltide az çözünen bir tuzun çözünürlüğü saf sudakinden daha azdır (Le Chatelier ilkesi).",
+          "en": "A slightly soluble salt is less soluble in a solution containing a common ion than in pure water (Le Chatelier's principle).",
+          "de": "Ein schwer lösliches Salz ist in einer Lösung mit einem gleichen Ion weniger löslich als in reinem Wasser (Prinzip von Le Chatelier).",
+          "fr": "Un sel peu soluble est moins soluble dans une solution contenant un ion commun que dans l'eau pure (principe de Le Chatelier).",
+          "ru": "Малорастворимая соль растворяется в растворе, содержащем одноимённый ион, хуже, чем в чистой воде (принцип Ле Шателье).",
+          "ar": "تكون ذوبانية الملح شحيح الذوبان في محلول يحتوي على أيون مشترك أقل منها في الماء النقي (مبدأ لوشاتلييه).",
+          "zh": "难溶盐在含有同离子的溶液中的溶解度比在纯水中小（勒夏特列原理）。",
+          "ku": "Xwêyeke kêm-helbar di çareseriyeke ku îyona hevpar tê de heye de ji ava paqij kêmtir dihele (prensîba Le Chatelier)."
         },
         {
           "tr": "Ozmozda çözünen katı tanecikler zardan kolayca geçer.",
@@ -1851,26 +1851,26 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Parçeyên hişk ên ku di osmosê de têne hilweşandin bi hêsanî di parzûnê re derbas dibin."
         },
         {
-          "tr": "Çözünürlük 1 litre çözeltide çözünen katı gramıdır.",
-          "en": "Solubility is the gram of solid dissolved in 1 liter of solution.",
-          "de": "Die Löslichkeit ist das Gramm Feststoff, gelöst in 1 Liter Lösung.",
-          "fr": "La solubilité est le gramme de solide dissous dans 1 litre de solution.",
-          "ru": "Растворимость – это грамм твердого вещества, растворенного в 1 л раствора.",
-          "ar": "الذوبان هو جرام المادة الصلبة المذابة في 1 لتر من المحلول.",
-          "zh": "溶解度是溶解在 1 升溶液中的固体克数。",
-          "ku": "Çareserbûn gram e ku di 1 lîtreya haletê de tê helandin."
+          "tr": "Çözünürlük, doymamış bir çözeltide çözünmüş olarak bulunan madde miktarıdır.",
+          "en": "Solubility is the amount of substance dissolved in an unsaturated solution.",
+          "de": "Löslichkeit ist die Stoffmenge, die in einer ungesättigten Lösung gelöst vorliegt.",
+          "fr": "La solubilité est la quantité de substance dissoute dans une solution insaturée.",
+          "ru": "Растворимость — это количество вещества, растворённого в ненасыщенном растворе.",
+          "ar": "الذوبانية هي كمية المادة المذابة في محلول غير مشبع.",
+          "zh": "溶解度是指不饱和溶液中已溶解的溶质的量。",
+          "ku": "Helbûnî (çareserbûn) mîqdara maddeya ku di çareseriyeke ne-têr de helbûyî ye."
         }
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Ortak iyon etkisi çözünürlüğü daima azaltır (Le Chatelier prensibi).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The common ion effect always reduces the solubility (Le Chatelier's principle).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Der gemeinsame Ioneneffekt verringert immer die Löslichkeit (Prinzip von Le Chatelier).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"L'effet des ions communs réduit toujours la solubilité (principe de Le Chatelier).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Эффект общего иона всегда снижает растворимость (принцип Ле Шателье).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"إن تأثير الأيون المشترك يقلل دائمًا من قابلية الذوبان (مبدأ لو شاتيليه).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“共离子效应总是会降低溶解度（勒夏特列原理）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Bandora îyona hevpar her gav çareserbûnê kêm dike (prensîba Le Chatelier).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Ortak iyon içeren bir çözeltide az çözünen bir tuzun çözünürlüğü saf sudakinden daha azdır (Le Chatelier ilkesi).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"A slightly soluble salt is less soluble in a solution containing a common ion than in pure water (Le Chatelier's principle).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Ein schwer lösliches Salz ist in einer Lösung mit einem gleichen Ion weniger löslich als in reinem Wasser (Prinzip von Le Chatelier).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Un sel peu soluble est moins soluble dans une solution contenant un ion commun que dans l'eau pure (principe de Le Chatelier).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Малорастворимая соль растворяется в растворе, содержащем одноимённый ион, хуже, чем в чистой воде (принцип Ле Шателье).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تكون ذوبانية الملح شحيح الذوبان في محلول يحتوي على أيون مشترك أقل منها في الماء النقي (مبدأ لوشاتلييه).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“难溶盐在含有同离子的溶液中的溶解度比在纯水中小（勒夏特列原理）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Xwêyeke kêm-helbar di çareseriyeke ku îyona hevpar tê de heye de ji ava paqij kêmtir dihele (prensîba Le Chatelier).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1917,14 +1917,14 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Avêtina xwê li ser rêyan dibe sedem ku xwê bi reaksiyonek kîmyayî germê berde."
         },
         {
-          "tr": "Çözeltideki toplam iyon derişimi ne kadar büyükse donma noktası o kadar düşük, kaynama noktası o kadar yüksektir.",
-          "en": "The greater the total ion concentration in the solution, the lower the freezing point and the higher the boiling point.",
-          "de": "Je höher die Gesamtionenkonzentration in der Lösung ist, desto niedriger ist der Gefrierpunkt und desto höher ist der Siedepunkt.",
-          "fr": "Plus la concentration totale d’ions dans la solution est élevée, plus le point de congélation est bas et plus le point d’ébullition est élevé.",
-          "ru": "Чем больше общая концентрация ионов в растворе, тем ниже температура замерзания и выше температура кипения.",
-          "ar": "كلما زاد تركيز الأيونات الكلي في المحلول، انخفضت نقطة التجمد وارتفعت نقطة الغليان.",
-          "zh": "溶液中总离子浓度越大，凝固点越低，沸点越高。",
-          "ku": "Çi qas îyona giştî ya di çareseriyê de mezintir be, ew qas nuqteya cemidandinê kêmtir û xala kelandinê jî bilindtir dibe."
+          "tr": "Çözeltideki toplam çözünen tanecik derişimi ne kadar büyükse donma noktası o kadar düşük, kaynama noktası o kadar yüksektir.",
+          "en": "The greater the total concentration of dissolved particles in a solution, the lower its freezing point and the higher its boiling point.",
+          "de": "Je größer die Gesamtkonzentration gelöster Teilchen in der Lösung ist, desto niedriger ist der Gefrierpunkt und desto höher der Siedepunkt.",
+          "fr": "Plus la concentration totale en particules dissoutes est élevée, plus le point de congélation est bas et plus le point d'ébullition est élevé.",
+          "ru": "Чем больше общая концентрация растворённых частиц в растворе, тем ниже температура замерзания и выше температура кипения.",
+          "ar": "كلما زاد التركيز الكلي للجسيمات المذابة في المحلول، انخفضت درجة التجمد وارتفعت درجة الغليان.",
+          "zh": "溶液中溶质粒子的总浓度越大，凝固点越低，沸点越高。",
+          "ku": "Çiqas konsantrasyona giştî ya perçeyên helbûyî di çareseriyê de mezintir be, xala cemidînê ewqas nizmtir û xala kelînê ewqas bilindtir e."
         },
         {
           "tr": "Gazların sudaki çözünürlüğü sıcaklık arttıkça hızla artar.",
@@ -1939,14 +1939,14 @@ export const unit15: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Çözeltideki toplam iyon derişimi ne kadar büyükse donma noktası o kadar düşük, kaynama noktası o kadar yüksektir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The greater the total ion concentration in the solution, the lower the freezing point and the higher the boiling point.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Je höher die Gesamtionenkonzentration in der Lösung ist, desto niedriger ist der Gefrierpunkt und desto höher ist der Siedepunkt.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Plus la concentration totale d’ions dans la solution est élevée, plus le point de congélation est bas et plus le point d’ébullition est élevé.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Чем больше общая концентрация ионов в растворе, тем ниже температура замерзания и выше температура кипения.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"كلما زاد تركيز الأيونات الكلي في المحلول، انخفضت نقطة التجمد وارتفعت نقطة الغليان.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“溶液中总离子浓度越大，凝固点越低，沸点越高。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Çi qas îyona giştî ya di çareseriyê de mezintir be, ew qas nuqteya cemidandinê kêmtir û xala kelandinê jî bilindtir dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Çözeltideki toplam çözünen tanecik derişimi ne kadar büyükse donma noktası o kadar düşük, kaynama noktası o kadar yüksektir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"The greater the total concentration of dissolved particles in a solution, the lower its freezing point and the higher its boiling point.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Je größer die Gesamtkonzentration gelöster Teilchen in der Lösung ist, desto niedriger ist der Gefrierpunkt und desto höher der Siedepunkt.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Plus la concentration totale en particules dissoutes est élevée, plus le point de congélation est bas et plus le point d'ébullition est élevé.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Чем больше общая концентрация растворённых частиц в растворе, тем ниже температура замерзания и выше температура кипения.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"كلما زاد التركيز الكلي للجسيمات المذابة في المحلول، انخفضت درجة التجمد وارتفعت درجة الغليان.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“溶液中溶质粒子的总浓度越大，凝固点越低，沸点越高。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Çiqas konsantrasyona giştî ya perçeyên helbûyî di çareseriyê de mezintir be, xala cemidînê ewqas nizmtir û xala kelînê ewqas bilindtir e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2042,7 +2042,7 @@ export const unit15: ChemistryUnitSeedData = {
           "tr": "Gazoz kapağı açıldığında basınç düştüğü için CO2 gazı kabarcıklar halinde çözeltiden ayrılır.",
           "en": "When the soda cap is opened, CO2 gas leaves the solution in the form of bubbles as the pressure drops.",
           "de": "Wenn der Soda-Verschluss geöffnet wird, verlässt CO2-Gas die Lösung in Form von Blasen, da der Druck sinkt.",
-          "fr": "Lorsque le bouchon de soude est ouvert, le gaz CO2 quitte la solution sous forme de bulles à mesure que la pression chute.",
+          "fr": "Lorsqu'on ouvre une bouteille de soda, la pression diminue et le CO2 quitte la solution sous forme de bulles.",
           "ru": "Когда крышка газировки открыта, газ CO2 выходит из раствора в виде пузырьков при падении давления.",
           "ar": "عند فتح غطاء الصودا، يترك غاز ثاني أكسيد الكربون المحلول على شكل فقاعات مع انخفاض الضغط.",
           "zh": "当汽水盖打开时，随着压力下降，CO2 气体以气泡的形式离开溶液。",
@@ -2069,14 +2069,14 @@ export const unit15: ChemistryUnitSeedData = {
           "ku": "Parçeyên hişk ên ku di osmosê de têne hilweşandin bi hêsanî di parzûnê re derbas dibin."
         },
         {
-          "tr": "Çözünürlük 1 litre çözeltide çözünen katı gramıdır.",
-          "en": "Solubility is the gram of solid dissolved in 1 liter of solution.",
-          "de": "Die Löslichkeit ist das Gramm Feststoff, gelöst in 1 Liter Lösung.",
-          "fr": "La solubilité est le gramme de solide dissous dans 1 litre de solution.",
-          "ru": "Растворимость – это грамм твердого вещества, растворенного в 1 л раствора.",
-          "ar": "الذوبان هو جرام المادة الصلبة المذابة في 1 لتر من المحلول.",
-          "zh": "溶解度是溶解在 1 升溶液中的固体克数。",
-          "ku": "Çareserbûn gram e ku di 1 lîtreya haletê de tê helandin."
+          "tr": "Çözünürlük, doymamış bir çözeltide çözünmüş olarak bulunan madde miktarıdır.",
+          "en": "Solubility is the amount of substance dissolved in an unsaturated solution.",
+          "de": "Löslichkeit ist die Stoffmenge, die in einer ungesättigten Lösung gelöst vorliegt.",
+          "fr": "La solubilité est la quantité de substance dissoute dans une solution insaturée.",
+          "ru": "Растворимость — это количество вещества, растворённого в ненасыщенном растворе.",
+          "ar": "الذوبانية هي كمية المادة المذابة في محلول غير مشبع.",
+          "zh": "溶解度是指不饱和溶液中已溶解的溶质的量。",
+          "ku": "Helbûnî (çareserbûn) mîqdara maddeya ku di çareseriyeke ne-têr de helbûyî ye."
         },
         {
           "tr": "Tuzun sudaki çözünürlüğü yüksek basınçta iki katına çıkar.",
@@ -2094,7 +2094,7 @@ export const unit15: ChemistryUnitSeedData = {
         "tr": "Doğru cevap \"Gazoz kapağı açıldığında basınç düştüğü için CO2 gazı kabarcıklar halinde çözeltiden ayrılır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"When the soda cap is opened, CO2 gas leaves the solution in the form of bubbles as the pressure drops.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Wenn der Soda-Verschluss geöffnet wird, verlässt CO2-Gas die Lösung in Form von Blasen, da der Druck sinkt.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Lorsque le bouchon de soude est ouvert, le gaz CO2 quitte la solution sous forme de bulles à mesure que la pression chute.\". Notion fondamentale du programme officiel de chimie.",
+        "fr": "L'affirmation exacte est: \"Lorsqu'on ouvre une bouteille de soda, la pression diminue et le CO2 quitte la solution sous forme de bulles.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Когда крышка газировки открыта, газ CO2 выходит из раствора в виде пузырьков при падении давления.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"عند فتح غطاء الصودا، يترك غاز ثاني أكسيد الكربون المحلول على شكل فقاعات مع انخفاض الضغط.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“当汽水盖打开时，随着压力下降，CO2 气体以气泡的形式离开溶液。”。属于化学学科必考的核心客观真理。",

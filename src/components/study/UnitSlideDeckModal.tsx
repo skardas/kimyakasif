@@ -176,7 +176,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
 
   const diagramCard = (spec: QuestionDiagramSpec) => (
     <div className="ky-card sl-diagram">
-      <ChemicalDiagram spec={spec} allowZoom={false} />
+      <ChemicalDiagram spec={spec} allowZoom={false} lang={lang} />
       <button type="button" className="ky-chip sl-zoom-btn" onClick={() => setZoomedDiagram(spec)} aria-label={s.zoomDiagram}>
         <Maximize2 size={14} aria-hidden="true" />
         <span>{s.zoomDiagram}</span>
@@ -579,7 +579,7 @@ export const UnitSlideDeckModal: React.FC<UnitSlideDeckModalProps> = ({
               </button>
             </div>
             <div className="sd-zoom-body">
-              <ChemicalDiagram spec={zoomedDiagram} allowZoom={false} />
+              <ChemicalDiagram spec={zoomedDiagram} allowZoom={false} lang={lang} />
             </div>
             {zoomedDiagram.caption && <p className="diagram-zoom-modal-caption">{zoomedDiagram.caption}</p>}
           </div>

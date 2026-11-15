@@ -113,10 +113,10 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "Glass, plastic, butter and rubber are amorphous solids that do not have a specific melting point.",
         "de": "Glas, Kunststoff, Butter und Gummi sind amorphe Feststoffe, die keinen bestimmten Schmelzpunkt haben.",
         "fr": "Le verre, le plastique, le beurre et le caoutchouc sont des solides amorphes qui n'ont pas de point de fusion spécifique.",
-        "ru": "Стекло, пластик, масло и резина представляют собой аморфные твердые вещества, не имеющие определенной температуры плавления.",
+        "ru": "Стекло, пластик, сливочное масло и резина представляют собой аморфные твердые вещества, не имеющие определенной температуры плавления.",
         "ar": "الزجاج والبلاستيك والزبدة والمطاط هي مواد صلبة غير متبلورة ليس لها نقطة انصهار محددة.",
         "zh": "玻璃、塑料、黄油和橡胶是无定形固体，没有特定的熔点。",
-        "ku": "Cam, plastîk, rûn û gomûk madeyên amorf in ku xwedî xala helînê ya taybetî nînin."
+        "ku": "Cam, plastîk, nivîşk û gomûk madeyên amorf in ku xwedî xala helînê ya taybetî nînin."
       },
       "trap": {
         "tr": "Cam iyonik kristal yapıda olup keskin bir erime noktasına sahiptir.",
@@ -126,7 +126,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Стекло имеет ионно-кристаллическую структуру и резкую температуру плавления.",
         "ar": "يحتوي الزجاج على بنية بلورية أيونية ونقطة انصهار حادة.",
         "zh": "玻璃具有离子晶体结构和明确的熔点。",
-        "ku": "Glass xwedan avahiyek krîstal a yonîkî û xalek helînê ya tûj e."
+        "ku": "Cam xwedan avahiyek krîstal a yonîkî û xalek helînê ya tûj e."
       }
     },
     {
@@ -139,7 +139,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Алмаз и кварц (SiO2) являются примерами кристаллических твердых тел с ковалентной сеткой.",
         "ar": "يعتبر الماس والكوارتز (SiO2) من الأمثلة على المواد الصلبة البلورية الشبكية التساهمية.",
         "zh": "金刚石和石英 (SiO2) 是共价网络结晶固体的例子。",
-        "ku": "Almas û quartz (SiO2) mînakên tîrêjên krîstal ên bi tora kovalentî ne."
+        "ku": "Almas û quartz (SiO2) mînakên madeyên hişk ên krîstal ên bi tora kovalentî ne."
       },
       "trap": {
         "tr": "Kuvars van der Waals bağlarıyla tutunan moleküler bir katıdır.",
@@ -193,9 +193,9 @@ export const unit04: ChemistryUnitSeedData = {
         "de": "NaCl gehört zur Klasse der molekularen Feststoffe.",
         "fr": "NaCl appartient à la classe des solides moléculaires.",
         "ru": "NaCl относится к классу молекулярных твердых веществ.",
-        "ar": "NaCl موجود في الطبقة الصلبة الجزيئية.",
+        "ar": "ينتمي NaCl إلى فئة المواد الصلبة الجزيئية.",
         "zh": "氯化钠属于分子固体类。",
-        "ku": "NaCl di çîna molekulê ya hişk de ye."
+        "ku": "NaCl di çîna madeyên hişk ên molekulî de ye."
       }
     },
     {
@@ -218,7 +218,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Поскольку твердое железо представляет собой ковалентный кристалл, оно не проводит электричество.",
         "ar": "وبما أن الحديد الصلب عبارة عن بلورة تساهمية، فإنه لا يوصل الكهرباء.",
         "zh": "由于铁固体是共价晶体，因此它不导电。",
-        "ku": "Ji ber ku hesin hişk krîstalek kovalent e, elektrîkê nagire."
+        "ku": "Ji ber ku hesinê hişk krîstaleke kovalent e, elektrîkê naguhezîne."
       }
     },
     {
@@ -264,7 +264,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Поскольку в скороварке снижается внешнее давление, пища готовится быстрее.",
         "ar": "نظرًا لانخفاض الضغط الخارجي في قدر الضغط، يتم طهي الطعام بشكل أسرع.",
         "zh": "由于高压锅内的外部压力降低，食物煮得更快。",
-        "ku": "Ji ber ku fişara derve di tenûrê de kêm dibe, xwarin zûtir çêdibe."
+        "ku": "Ji ber ku zexta derve di beroşa zextê de kêm dibe, xwarin zûtir çêdibe."
       }
     },
     {
@@ -298,9 +298,9 @@ export const unit04: ChemistryUnitSeedData = {
         "de": "Der Plasmazustand ist ein elektrisch leitender Zustand, in dem neutrale Atome, Ionen, freie Elektronen und Photonen nebeneinander existieren.",
         "fr": "L’état plasma est un état électriquement conducteur dans lequel coexistent des atomes neutres, des ions, des électrons libres et des photons.",
         "ru": "Состояние плазмы — это электропроводящее состояние, в котором сосуществуют нейтральные атомы, ионы, свободные электроны и фотоны.",
-        "ar": "حالة البلازما هي حالة موصلة للكهرباء تتعايش فيها الذرات والأيونات والإلكترونات الحرة والفوتونات المحايدة.",
+        "ar": "حالة البلازما حالة موصلة للكهرباء تتعايش فيها الذرات المتعادلة والأيونات والإلكترونات الحرة والفوتونات.",
         "zh": "等离子体状态是中性原子、离子、自由电子和光子共存的导电状态。",
-        "ku": "Rewşa plazmayê rewşek elektrîkê ye ku tê de atomên bêalî, îyon, elektronên azad û foton bi hev re dijîn."
+        "ku": "Rewşa plazmayê rewşeke ku elektrîkê diguhezîne ye û tê de atomên bêalî, îyon, elektronên azad û foton bi hev re hene."
       },
       "trap": {
         "tr": "Plazma hali elektriği iletmez ve manyetik alandan etkilenmez.",
@@ -310,7 +310,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Состояние плазмы не проводит электричество и не подвержено влиянию магнитного поля.",
         "ar": "حالة البلازما لا توصل الكهرباء ولا تتأثر بالمجال المغناطيسي.",
         "zh": "等离子体状态不导电，也不受磁场影响。",
-        "ku": "Rewşa plazmayê elektrîkê nake û ji qada magnetîsî bandor nake."
+        "ku": "Rewşa plazmayê elektrîkê naguhezîne û ji qada magnetîsî bandor nabe."
       }
     },
     {
@@ -323,17 +323,17 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Жидкости с сильными межмолекулярными силами имеют высокую вязкость и низкое давление пара.",
         "ar": "السوائل ذات القوى الجزيئية القوية لها لزوجة عالية وضغط بخار منخفض.",
         "zh": "分子间力强的液体具有高粘度和低蒸气压。",
-        "ku": "Şîrkên bi hêzên navmolekularî yên xurt xwedî vîskozîtîya bilind û tansiyona vaporê ya kêm in."
+        "ku": "Şilekên bi hêzên navmolekularî yên xurt xwedî vîskozîtîya bilind û tansiyona vaporê ya kêm in."
       },
       "trap": {
-        "tr": "Çekim kuvveti yüksek olan sıvılar çok hızlı buharlaşır ve yüksek buhar basıncına sahiptir.",
-        "en": "Liquids with high gravitational force evaporate very quickly and have high vapor pressure.",
-        "de": "Flüssigkeiten mit hoher Schwerkraft verdampfen sehr schnell und haben einen hohen Dampfdruck.",
-        "fr": "Les liquides ayant une force gravitationnelle élevée s’évaporent très rapidement et ont une pression de vapeur élevée.",
-        "ru": "Жидкости с высокой силой гравитации очень быстро испаряются и имеют высокое давление пара.",
-        "ar": "تتبخر السوائل ذات قوة الجاذبية العالية بسرعة كبيرة ولها ضغط بخار مرتفع.",
-        "zh": "具有高重力的液体蒸发得非常快并且具有高蒸气压。",
-        "ku": "Şîrkên bi hêza gravîtasyonê ya bilind pir zû diherikin û xwedî tansiyona buharê ya bilind in."
+        "tr": "Moleküller arası çekim kuvveti güçlü olan sıvılar çok hızlı buharlaşır ve yüksek buhar basıncına sahiptir.",
+        "en": "Liquids with strong intermolecular forces evaporate very quickly and have high vapor pressure.",
+        "de": "Flüssigkeiten mit starken zwischenmolekularen Kräften verdampfen sehr schnell und haben einen hohen Dampfdruck.",
+        "fr": "Les liquides à fortes forces intermoléculaires s'évaporent très rapidement et ont une pression de vapeur élevée.",
+        "ru": "Жидкости с сильным межмолекулярным притяжением очень быстро испаряются и имеют высокое давление пара.",
+        "ar": "السوائل ذات قوى التجاذب القوية بين الجزيئات تتبخر بسرعة كبيرة ولها ضغط بخار مرتفع.",
+        "zh": "分子间作用力强的液体蒸发得非常快，蒸气压高。",
+        "ku": "Şilekên ku hêzên kêşanê yên navmolekulî yên xurt hene pir zû hilm dibin û zexta wan a buharê bilind e."
       }
     },
     {
@@ -379,7 +379,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Равновесное давление пара воды в широком сосуде больше, чем в узком.",
         "ar": "يكون ضغط بخار الماء المتوازن في الوعاء الواسع أكبر منه في الوعاء الضيق.",
         "zh": "宽容器中水的平衡蒸气压大于窄容器中水的平衡蒸气压。",
-        "ku": "Pestoya hevsengiya buharê ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
+        "ku": "Zexta buharê ya hevseng ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
       }
     },
     {
@@ -392,7 +392,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "В ветреную погоду скорость испарения увеличивается за счет удаления молекул пара с поверхности.",
         "ar": "وفي الطقس العاصف، يزداد معدل التبخر بسبب إزالة جزيئات البخار الموجودة على السطح.",
         "zh": "在大风天气中，由于表面的蒸气分子被去除，蒸发率会增加。",
-        "ku": "Di hewaya bayê de, ji ber ku molekulên buharê yên li ser rûyê erdê têne rakirin, rêjeya evaporasyonê zêde dibe."
+        "ku": "Di hewaya bayê de, ji ber ku molekulên buharê yên li ser rûyê şilekê têne rakirin, rêjeya evaporasyonê zêde dibe."
       },
       "trap": {
         "tr": "Rüzgarlı havada çamaşırların kuruma süresi uzar.",
@@ -417,13 +417,13 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "испарение",
         "ar": "التبخر",
         "zh": "蒸发",
-        "ku": "evaporation"
+        "ku": "Hilmbûn"
       },
       "conceptB": {
         "tr": "Kaynama",
         "en": "boiling",
-        "de": "kochend",
-        "fr": "bouillante",
+        "de": "Sieden",
+        "fr": "Ébullition",
         "ru": "кипение",
         "ar": "الغليان",
         "zh": "沸腾",
@@ -437,7 +437,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Испарение происходит при всех температурах и только на поверхности; Кипение происходит при определенной температуре и повсеместно в жидкости.",
         "ar": "يحدث التبخر في جميع درجات الحرارة وعلى السطح فقط؛ يحدث الغليان عند درجة حرارة معينة وفي كل مكان في السائل.",
         "zh": "蒸发在所有温度下都会发生，并且仅发生在表面；沸腾发生在一定温度下，并且发生在液体的各处。",
-        "ku": "Evaporation di her germahiyê de û tenê li ser rûyê çêdibe; Kelandin di germahiyek diyar de û li her derê şilê çêdibe."
+        "ku": "Hilmbûn di her germahiyê de û tenê li ser rûyê çêdibe; Kelandin di germahiyek diyar de û li her derê şilê çêdibe."
       }
     },
     {
@@ -448,29 +448,29 @@ export const unit04: ChemistryUnitSeedData = {
         "de": "Amorpher Feststoff",
         "fr": "Solide amorphe",
         "ru": "Аморфное твердое вещество",
-        "ar": "صلبة غير متبلورة",
-        "zh": "非晶固体",
-        "ku": "Amorphous Solid"
+        "ar": "صلب غير متبلور",
+        "zh": "非晶态固体",
+        "ku": "Madeya Hişk a Amorf"
       },
       "conceptB": {
         "tr": "Kristal Katı",
-        "en": "Crystal Solid",
-        "de": "Kristallfest",
-        "fr": "Cristal solide",
-        "ru": "Кристалл Твердый",
-        "ar": "كريستال صلب",
-        "zh": "水晶固体",
-        "ku": "Crystal Solid"
+        "en": "Crystalline Solid",
+        "de": "Kristalliner Feststoff",
+        "fr": "Solide cristallin",
+        "ru": "Кристаллическое твёрдое вещество",
+        "ar": "صلب بلوري",
+        "zh": "晶体",
+        "ku": "Madeya Hişk a Krîstal"
       },
       "distinction": {
-        "tr": "Amorf katıların belirli erime noktası yoktur ve camsı geçiş gösterir; kristal katıların düzenli istiflenmesi ve keskin erime noktası vardır.",
-        "en": "Amorphous solids do not have a specific melting point and show a glass transition; crystalline solids have orderly stacking and sharp melting point.",
-        "de": "Amorphe Feststoffe haben keinen bestimmten Schmelzpunkt und zeigen einen Glasübergang; Kristalline Feststoffe haben eine geordnete Stapelung und einen scharfen Schmelzpunkt.",
-        "fr": "Les solides amorphes n'ont pas de point de fusion spécifique et présentent une transition vitreuse ; les solides cristallins ont un empilement ordonné et un point de fusion précis.",
-        "ru": "Аморфные твердые вещества не имеют определенной температуры плавления и подвергаются стеклованию; Кристаллические твердые вещества имеют упорядоченную укладку и острую температуру плавления.",
-        "ar": "المواد الصلبة غير المتبلورة ليس لها نقطة انصهار محددة وتظهر تزججًا؛ تتميز المواد الصلبة البلورية بتكديس منظم ونقطة انصهار حادة.",
-        "zh": "无定形固体没有特定的熔点并表现出玻璃化转变；结晶固体具有有序的堆积和明确的熔点。",
-        "ku": "Zeviyên amorf xwedan xalek helînê ya taybetî nînin û veguheztinek cam nîşan didin; solidên krîstal xwedan lihevhatina rêkûpêk û xala helînê ya tûj e."
+        "tr": "Amorf katıların belirli bir erime noktası yoktur, ısıtıldıkça yumuşayarak bir sıcaklık aralığında erir; kristal katıların tanecikleri düzenli istiflenmiştir ve keskin bir erime noktası vardır.",
+        "en": "Amorphous solids have no definite melting point and soften gradually over a temperature range when heated; crystalline solids have regularly stacked particles and a sharp melting point.",
+        "de": "Amorphe Feststoffe haben keinen bestimmten Schmelzpunkt und erweichen beim Erhitzen allmählich über einen Temperaturbereich; kristalline Feststoffe haben regelmäßig angeordnete Teilchen und einen scharfen Schmelzpunkt.",
+        "fr": "Les solides amorphes n'ont pas de point de fusion défini et se ramollissent progressivement sur un intervalle de température ; les solides cristallins ont des particules empilées de façon ordonnée et un point de fusion net.",
+        "ru": "Аморфные твёрдые вещества не имеют определённой температуры плавления и при нагревании постепенно размягчаются в интервале температур; у кристаллических веществ частицы упакованы упорядоченно и температура плавления чёткая.",
+        "ar": "المواد الصلبة غير المتبلورة ليس لها درجة انصهار محددة وتلين تدريجيًا عند التسخين ضمن مدى من درجات الحرارة؛ أما المواد الصلبة البلورية فدقائقها مرتبة بانتظام ولها درجة انصهار حادة.",
+        "zh": "非晶态固体没有固定熔点，受热时在一定温度范围内逐渐软化；晶体中粒子排列有序，具有明确的熔点。",
+        "ku": "Madeyên hişk ên amorf xwedî xala helînê ya diyar nînin û dema germ dibin di navberek germahiyê de hêdî hêdî nerm dibin; di madeyên hişk ên krîstal de tenoşk bi rêk û pêk rêz bûne û xala wan a helînê tûj e."
       }
     },
     {
@@ -487,18 +487,18 @@ export const unit04: ChemistryUnitSeedData = {
       },
       "conceptB": {
         "tr": "Akıcılık",
-        "en": "fluency",
-        "de": "Geläufigkeit",
-        "fr": "maîtrise",
-        "ru": "беглость",
-        "ar": "الطلاقة",
-        "zh": "流畅度",
-        "ku": "fluency"
+        "en": "Fluidity",
+        "de": "Fließfähigkeit",
+        "fr": "Fluidité",
+        "ru": "Текучесть",
+        "ar": "السيولة",
+        "zh": "流动性",
+        "ku": "Herikbarî"
       },
       "distinction": {
         "tr": "Viskozite sıvının akmaya karşı gösterdiği iç dirençtir; akıcılık ise viskozitenin tam tersi olup akabilme kolaylığıdır.",
         "en": "Viscosity is the internal resistance of a liquid to flow; Flowability is the opposite of viscosity and is the ease of flow.",
-        "de": "Viskosität ist der innere Widerstand einer Flüssigkeit gegenüber dem Fließen; Fließfähigkeit ist das Gegenteil von Viskosität und bezeichnet die Fließfähigkeit.",
+        "de": "Viskosität ist der innere Widerstand einer Flüssigkeit gegenüber dem Fließen; Fließfähigkeit ist das Gegenteil von Viskosität und bezeichnet die Leichtigkeit des Fließens.",
         "fr": "La viscosité est la résistance interne d'un liquide à s'écouler ; La fluidité est l'opposé de la viscosité et correspond à la facilité d'écoulement.",
         "ru": "Вязкость — это внутреннее сопротивление жидкости течению; Текучесть является противоположностью вязкости и означает легкость текучести.",
         "ar": "اللزوجة هي المقاومة الداخلية للسائل للتدفق. قابلية التدفق هي عكس اللزوجة وهي سهولة التدفق.",
@@ -510,13 +510,13 @@ export const unit04: ChemistryUnitSeedData = {
       "id": "u04-c04",
       "conceptA": {
         "tr": "Buhar Basıncı",
-        "en": "Steam Pressure",
+        "en": "Vapor Pressure",
         "de": "Dampfdruck",
         "fr": "Pression de vapeur",
         "ru": "Давление пара",
         "ar": "ضغط البخار",
-        "zh": "蒸汽压力",
-        "ku": "Zexta Steam"
+        "zh": "蒸气压",
+        "ku": "Zexta Buharê"
       },
       "conceptB": {
         "tr": "Dış Basınç",
@@ -542,34 +542,34 @@ export const unit04: ChemistryUnitSeedData = {
     {
       "id": "u04-c05",
       "conceptA": {
-        "tr": "Kaynama",
-        "en": "boiling",
-        "de": "kochend",
-        "fr": "bouillante",
-        "ru": "кипение",
-        "ar": "الغليان",
-        "zh": "沸腾",
-        "ku": "kelandin"
+        "tr": "Moleküler Kristal",
+        "en": "Molecular Crystal",
+        "de": "Molekülkristall",
+        "fr": "Cristal moléculaire",
+        "ru": "Молекулярный кристалл",
+        "ar": "البلورة الجزيئية",
+        "zh": "分子晶体",
+        "ku": "Krîstala Molekulî"
       },
       "conceptB": {
-        "tr": "Buharlaşma",
-        "en": "evaporation",
-        "de": "Verdunstung",
-        "fr": "évaporation",
-        "ru": "испарение",
-        "ar": "التبخر",
-        "zh": "蒸发",
-        "ku": "evaporation"
+        "tr": "Kovalent Ağ Örgülü Kristal",
+        "en": "Covalent Network Crystal",
+        "de": "Kovalenter Netzwerkkristall",
+        "fr": "Cristal covalent (réseau covalent)",
+        "ru": "Ковалентный (атомный) кристалл",
+        "ar": "البلورة التساهمية الشبكية",
+        "zh": "共价网络晶体（原子晶体）",
+        "ku": "Krîstala Tora Kovalent"
       },
       "distinction": {
-        "tr": "Buharlaşma her sıcaklıkta ve sadece yüzeyde gerçekleşir; kaynama iç buhar basıncının dış basınca eşitlendiği anda sıvının her yerinde olur.",
-        "en": "Evaporation occurs at all temperatures and only at the surface; Boiling occurs everywhere in the liquid when the internal vapor pressure equals the external pressure.",
-        "de": "Die Verdunstung erfolgt bei allen Temperaturen und nur an der Oberfläche; Sieden findet überall in der Flüssigkeit statt, wenn der innere Dampfdruck dem äußeren Druck entspricht.",
-        "fr": "L'évaporation se produit à toutes les températures et uniquement en surface ; L'ébullition se produit partout dans le liquide lorsque la pression de vapeur interne est égale à la pression externe.",
-        "ru": "Испарение происходит при всех температурах и только на поверхности; Кипение происходит повсюду в жидкости, когда внутреннее давление пара равно внешнему давлению.",
-        "ar": "يحدث التبخر عند جميع درجات الحرارة وعلى السطح فقط؛ يحدث الغليان في كل مكان في السائل عندما يكون ضغط البخار الداخلي مساوياً للضغط الخارجي.",
-        "zh": "蒸发发生在所有温度下且仅发生在表面；当内部蒸气压等于外部压力时，液体中各处都会发生沸腾。",
-        "ku": "Evaporasyon di her germahiyê de û tenê li rûerdê pêk tê; Kelandin li her derê şilê çêdibe dema ku zexta buhara hundurîn bi zexta derve re bibe hev."
+        "tr": "Moleküler kristallerde (buz, kuru buz) moleküller zayıf etkileşimlerle bir arada tutunur ve erime noktaları düşüktür; kovalent ağ örgülü kristallerde (elmas, kuvars) atomlar kovalent bağlarla bağlıdır ve erime noktaları çok yüksektir.",
+        "en": "In molecular crystals (ice, dry ice) molecules are held together by weak interactions and melting points are low; in covalent network crystals (diamond, quartz) atoms are joined by covalent bonds and melting points are very high.",
+        "de": "In Molekülkristallen (Eis, Trockeneis) werden die Moleküle durch schwache Wechselwirkungen zusammengehalten, die Schmelzpunkte sind niedrig; in kovalenten Netzwerkkristallen (Diamant, Quarz) sind die Atome durch kovalente Bindungen verknüpft, die Schmelzpunkte sind sehr hoch.",
+        "fr": "Dans les cristaux moléculaires (glace, neige carbonique), les molécules sont liées par des interactions faibles et les points de fusion sont bas ; dans les cristaux covalents (diamant, quartz), les atomes sont unis par des liaisons covalentes et les points de fusion sont très élevés.",
+        "ru": "В молекулярных кристаллах (лёд, сухой лёд) молекулы удерживаются слабыми взаимодействиями, температуры плавления низкие; в ковалентных кристаллах (алмаз, кварц) атомы связаны ковалентными связями, температуры плавления очень высокие.",
+        "ar": "في البلورات الجزيئية (الجليد، الثلج الجاف) ترتبط الجزيئات بتفاعلات ضعيفة ودرجات انصهارها منخفضة؛ أما في البلورات التساهمية الشبكية (الماس، الكوارتز) فترتبط الذرات بروابط تساهمية ودرجات انصهارها مرتفعة جدًا.",
+        "zh": "分子晶体（冰、干冰）中分子靠弱相互作用结合，熔点低；共价网络晶体（金刚石、石英）中原子以共价键相连，熔点很高。",
+        "ku": "Di krîstalên molekulî de (qeşa, qeşaya hişk) molekul bi têkiliyên qels bi hev ve têne girtin û xala helînê nizm e; di krîstalên tora kovalent de (elmas, kuarts) atom bi girêdanên kovalent bi hev ve girêdayî ne û xala helînê pir bilind e."
       }
     },
     {
@@ -577,7 +577,7 @@ export const unit04: ChemistryUnitSeedData = {
       "conceptA": {
         "tr": "Gerçek Gaz",
         "en": "Real Gas",
-        "de": "Echtes Gas",
+        "de": "Reales Gas",
         "fr": "Gaz réel",
         "ru": "Реальный газ",
         "ar": "الغاز الحقيقي",
@@ -596,13 +596,13 @@ export const unit04: ChemistryUnitSeedData = {
       },
       "distinction": {
         "tr": "İdeal gazda tanecik hacmi ve moleküller arası çekim sıfır kabul edilir; gerçek gazlarda moleküller arası çekim ve öz hacim vardır.",
-        "en": "In an ideal gas, particle volume and intermolecular attraction are assumed to be zero; In real gases, there is intermolecular attraction and specific volume.",
-        "de": "In einem idealen Gas wird davon ausgegangen, dass das Partikelvolumen und die intermolekulare Anziehung Null sind; In realen Gasen gibt es eine intermolekulare Anziehung und ein spezifisches Volumen.",
-        "fr": "Dans un gaz parfait, le volume des particules et l'attraction intermoléculaire sont supposés nuls ; Dans les gaz réels, il existe une attraction intermoléculaire et un volume spécifique.",
-        "ru": "В идеальном газе объем частицы и межмолекулярное притяжение считаются равными нулю; В реальных газах существует межмолекулярное притяжение и удельный объем.",
-        "ar": "في الغاز المثالي، يُفترض أن يكون حجم الجسيمات والجذب بين الجزيئات صفرًا؛ في الغازات الحقيقية، هناك جاذبية بين الجزيئات وحجم محدد.",
-        "zh": "在理想气体中，粒子体积和分子间吸引力假定为零；在实际气体中，存在分子间吸引力和比体积。",
-        "ku": "Di gazek îdeal de, qebareya pirtik û kêşeya navmolekularî wekî sifir tê hesibandin; Di gazên rastîn de, balkêşiya navmolekular û qebarek taybetî heye."
+        "en": "In an ideal gas, particle volume and intermolecular attraction are assumed to be zero; In real gases, there is intermolecular attraction and the particles have their own volume.",
+        "de": "In einem idealen Gas wird davon ausgegangen, dass das Partikelvolumen und die intermolekulare Anziehung Null sind; In realen Gasen gibt es eine intermolekulare Anziehung und ein Eigenvolumen der Teilchen.",
+        "fr": "Dans un gaz parfait, le volume des particules et l'attraction intermoléculaire sont supposés nuls ; Dans les gaz réels, il existe une attraction intermoléculaire et un volume propre des particules.",
+        "ru": "В идеальном газе объем частицы и межмолекулярное притяжение считаются равными нулю; В реальных газах существует межмолекулярное притяжение и собственный объём частиц.",
+        "ar": "في الغاز المثالي، يُفترض أن يكون حجم الجسيمات والجذب بين الجزيئات صفرًا؛ في الغازات الحقيقية، هناك جاذبية بين الجزيئات وللجسيمات حجم ذاتي.",
+        "zh": "在理想气体中，粒子体积和分子间吸引力假定为零；在实际气体中，存在分子间吸引力和分子本身的体积。",
+        "ku": "Di gazek îdeal de, qebareya pirtik û kêşeya navmolekularî wekî sifir tê hesibandin; Di gazên rastîn de, balkêşiya navmolekular û qebareya xwe ya taybet a pirtikan heye."
       }
     },
     {
@@ -624,51 +624,51 @@ export const unit04: ChemistryUnitSeedData = {
         "fr": "plasma",
         "ru": "плазма",
         "ar": "البلازما",
-        "zh": "等离子",
+        "zh": "等离子体",
         "ku": "plasma"
       },
       "distinction": {
         "tr": "Gaz nötr atom veya moleküllerden oluşur; plazma ise iyonlar, serbest elektronlar ve nötr taneciklerin bir arada bulunduğu iletken akışkandır.",
         "en": "Gas consists of neutral atoms or molecules; Plasma is a conductive fluid in which ions, free electrons and neutral particles coexist.",
-        "de": "Gas besteht aus neutralen Atomen oder Molekülen; Plasma ist eine leitfähige Flüssigkeit, in der Ionen, freie Elektronen und neutrale Teilchen nebeneinander existieren.",
+        "de": "Gas besteht aus neutralen Atomen oder Molekülen; Plasma ist ein elektrisch leitfähiges Fluid, in der Ionen, freie Elektronen und neutrale Teilchen nebeneinander existieren.",
         "fr": "Le gaz est constitué d’atomes ou de molécules neutres ; Le plasma est un fluide conducteur dans lequel coexistent des ions, des électrons libres et des particules neutres.",
-        "ru": "Газ состоит из нейтральных атомов или молекул; Плазма – это проводящая жидкость, в которой сосуществуют ионы, свободные электроны и нейтральные частицы.",
-        "ar": "يتكون الغاز من ذرات أو جزيئات محايدة؛ البلازما هي سائل موصل تتعايش فيه الأيونات والإلكترونات الحرة والجسيمات المحايدة.",
+        "ru": "Газ состоит из нейтральных атомов или молекул; Плазма – это проводящая ионизированная среда, в которой сосуществуют ионы, свободные электроны и нейтральные частицы.",
+        "ar": "يتكون الغاز من ذرات أو جزيئات محايدة؛ البلازما هي مائع موصل تتعايش فيه الأيونات والإلكترونات الحرة والجسيمات المحايدة.",
         "zh": "气体由中性原子或分子组成；等离子体是离子、自由电子和中性粒子共存的导电流体。",
-        "ku": "Gaz ji atom an jî molekulên bêalî pêk tê; Plazma şilekek gîhaq e ku tê de îyon, elektronên azad û pariyên bêalî bi hev re dijîn."
+        "ku": "Gaz ji atom an jî molekulên bêalî pêk tê; Plazma herikbarek ku elektrîkê diguhezîne e ku tê de îyon, elektronên azad û pariyên bêalî bi hev re dijîn."
       }
     },
     {
       "id": "u04-c08",
       "conceptA": {
-        "tr": "Buharlaşma",
-        "en": "evaporation",
-        "de": "Verdunstung",
-        "fr": "évaporation",
-        "ru": "испарение",
-        "ar": "التبخر",
-        "zh": "蒸发",
-        "ku": "evaporation"
+        "tr": "İyonik Kristal",
+        "en": "Ionic Crystal",
+        "de": "Ionenkristall",
+        "fr": "Cristal ionique",
+        "ru": "Ионный кристалл",
+        "ar": "البلورة الأيونية",
+        "zh": "离子晶体",
+        "ku": "Krîstala Îyonî"
       },
       "conceptB": {
-        "tr": "Kaynama",
-        "en": "boiling",
-        "de": "kochend",
-        "fr": "bouillante",
-        "ru": "кипение",
-        "ar": "الغليان",
-        "zh": "沸腾",
-        "ku": "kelandin"
+        "tr": "Metalik Kristal",
+        "en": "Metallic Crystal",
+        "de": "Metallkristall",
+        "fr": "Cristal métallique",
+        "ru": "Металлический кристалл",
+        "ar": "البلورة الفلزية",
+        "zh": "金属晶体",
+        "ku": "Krîstala Metalî"
       },
       "distinction": {
-        "tr": "Buharlaşma her sıcaklıkta ve sadece yüzeyde; kaynama belirli sıcaklıkta ve sıvının her yerinde gerçekleşir.",
-        "en": "Evaporation occurs at all temperatures and only on the surface; Boiling occurs at a certain temperature and everywhere in the liquid.",
-        "de": "Die Verdunstung erfolgt bei allen Temperaturen und nur an der Oberfläche; Das Sieden findet bei einer bestimmten Temperatur und überall in der Flüssigkeit statt.",
-        "fr": "L'évaporation se produit à toutes les températures et uniquement en surface ; L'ébullition se produit à une certaine température et partout dans le liquide.",
-        "ru": "Испарение происходит при всех температурах и только на поверхности; Кипение происходит при определенной температуре и повсеместно в жидкости.",
-        "ar": "يحدث التبخر في جميع درجات الحرارة وعلى السطح فقط؛ يحدث الغليان عند درجة حرارة معينة وفي كل مكان في السائل.",
-        "zh": "蒸发在所有温度下都会发生，并且仅发生在表面；沸腾发生在一定温度下，并且发生在液体的各处。",
-        "ku": "Evaporation di her germahiyê de û tenê li ser rûyê çêdibe; Kelandin di germahiyek diyar de û li her derê şilê çêdibe."
+        "tr": "İyonik kristallerde katyon ve anyonlar iyonik bağla bağlıdır ve katı halde elektriği iletmez; metalik kristallerde pozitif metal iyonları elektron denizi ile bağlıdır ve katı halde elektriği iletir.",
+        "en": "In ionic crystals, cations and anions are held by ionic bonds and do not conduct electricity in the solid state; in metallic crystals, positive metal ions are held by an electron sea and conduct electricity in the solid state.",
+        "de": "In Ionenkristallen sind Kationen und Anionen durch Ionenbindungen verbunden und leiten im festen Zustand keinen Strom; in Metallkristallen sind positive Metallionen durch einen Elektronensee verbunden und leiten im festen Zustand Strom.",
+        "fr": "Dans les cristaux ioniques, cations et anions sont unis par des liaisons ioniques et ne conduisent pas l'électricité à l'état solide ; dans les cristaux métalliques, les ions métalliques positifs sont liés par une mer d'électrons et conduisent l'électricité à l'état solide.",
+        "ru": "В ионных кристаллах катионы и анионы связаны ионной связью и в твёрдом состоянии не проводят ток; в металлических кристаллах положительные ионы металла связаны электронным морем и проводят ток в твёрдом состоянии.",
+        "ar": "في البلورات الأيونية ترتبط الكاتيونات والأنيونات بروابط أيونية ولا توصل الكهرباء في الحالة الصلبة؛ أما في البلورات الفلزية فترتبط أيونات الفلز الموجبة ببحر الإلكترونات وتوصل الكهرباء في الحالة الصلبة.",
+        "zh": "离子晶体中阴阳离子以离子键结合，固态时不导电；金属晶体中金属阳离子由电子海结合，固态时导电。",
+        "ku": "Di krîstalên îyonî de katyon û anyon bi girêdana îyonî bi hev ve girêdayî ne û di rewşa hişk de elektrîkê naguhezînin; di krîstalên metalî de îyonên metal ên erênî bi deryaya elektronan ve girêdayî ne û di rewşa hişk de elektrîkê diguhezînin."
       }
     }
   ],
@@ -678,12 +678,12 @@ export const unit04: ChemistryUnitSeedData = {
       "title": {
         "tr": "Sıcaklık Arttıkça Değişimler",
         "en": "Changes as Temperature Increases",
-        "de": "Ändert sich mit steigender Temperatur",
+        "de": "Veränderungen bei steigender Temperatur",
         "fr": "Changements à mesure que la température augmente",
         "ru": "Изменения по мере повышения температуры",
         "ar": "التغييرات مع زيادة درجة الحرارة",
         "zh": "随着温度升高而变化",
-        "ku": "Her ku Germahiya Zêde dibe Diguhere"
+        "ku": "Guhertinên Dema Germahî Zêde Dibe"
       },
       "steps": [
         {
@@ -697,14 +697,14 @@ export const unit04: ChemistryUnitSeedData = {
           "ku": "Enerjiya kînetîk zêde dibe"
         },
         {
-          "tr": "Viskozite azalır",
-          "en": "Viscosity decreases",
-          "de": "Die Viskosität nimmt ab",
-          "fr": "La viscosité diminue",
-          "ru": "Вязкость снижается",
-          "ar": "اللزوجة تنخفض",
-          "zh": "粘度降低",
-          "ku": "Vîskozîtî kêm dibe"
+          "tr": "Yüzeyden kopabilecek enerjiye sahip molekül sayısı artar",
+          "en": "The number of molecules with enough energy to escape from the surface increases",
+          "de": "Die Zahl der Moleküle mit genügend Energie, um die Oberfläche zu verlassen, nimmt zu",
+          "fr": "Le nombre de molécules ayant assez d'énergie pour quitter la surface augmente",
+          "ru": "Растёт число молекул с энергией, достаточной для отрыва от поверхности",
+          "ar": "يزداد عدد الجزيئات التي تملك طاقة كافية للإفلات من السطح",
+          "zh": "具有足够能量脱离液面的分子数增加",
+          "ku": "Hejmara molekulên ku têra xwe enerjiya wan heye ku ji rûyê şilekê biqetin zêde dibe"
         },
         {
           "tr": "Buharlaşma hızı artar",
@@ -717,14 +717,14 @@ export const unit04: ChemistryUnitSeedData = {
           "ku": "Rêjeya evaporasyonê zêde dibe"
         },
         {
-          "tr": "Denge buhar basıncı artar",
-          "en": "Equilibrium vapor pressure increases",
-          "de": "Der Gleichgewichtsdampfdruck steigt",
-          "fr": "La pression de vapeur à l’équilibre augmente",
-          "ru": "Равновесное давление пара увеличивается",
-          "ar": "يزداد ضغط البخار المتوازن",
-          "zh": "平衡蒸气压增加",
-          "ku": "Zexta vaporê ya hevsengiyê zêde dibe"
+          "tr": "Kapalı kapta daha yüksek bir denge buhar basıncına ulaşılır",
+          "en": "A higher equilibrium vapor pressure is reached in a closed container",
+          "de": "Im geschlossenen Gefäß stellt sich ein höherer Gleichgewichtsdampfdruck ein",
+          "fr": "Une pression de vapeur d'équilibre plus élevée est atteinte en récipient fermé",
+          "ru": "В закрытом сосуде устанавливается более высокое равновесное давление пара",
+          "ar": "يُبلَغ ضغط بخار توازني أعلى في الوعاء المغلق",
+          "zh": "在密闭容器中达到更高的平衡蒸气压",
+          "ku": "Di firaxa girtî de zexta buharê ya hevseng a bilindtir pêk tê"
         }
       ]
     },
@@ -736,9 +736,9 @@ export const unit04: ChemistryUnitSeedData = {
         "de": "Erwärmung und Zustandsänderung von reinem Wasser",
         "fr": "Chauffage et changement d'état de l'eau pure",
         "ru": "Нагревание и изменение состояния чистой воды",
-        "ar": "التدفئة وتغيير حالة المياه النقية",
+        "ar": "تسخين الماء النقي وتغير حالته",
         "zh": "纯水的加热和状态变化",
-        "ku": "Germkirin û Guhertina Dewletê ya Ava Paqij"
+        "ku": "Germbûn û Guherîna Halê ya Ava Paqij"
       },
       "steps": [
         {
@@ -787,13 +787,13 @@ export const unit04: ChemistryUnitSeedData = {
       "id": "u04-s03",
       "title": {
         "tr": "Sıvı Isındıkça Fiziksel Değişimler",
-        "en": "Physical Changes as the Liquid Heates",
+        "en": "Physical Changes as the Liquid Heats",
         "de": "Physikalische Veränderungen beim Erhitzen der Flüssigkeit",
         "fr": "Changements physiques à mesure que le liquide chauffe",
         "ru": "Физические изменения при нагревании жидкости",
         "ar": "التغيرات الفيزيائية مع تسخين السائل",
         "zh": "液体加热时的物理变化",
-        "ku": "Guhertinên Fîzîkî yên wekî Avê Germ dibe"
+        "ku": "Guhertinên Fîzîkî Dema Şile Germ Dibe"
       },
       "steps": [
         {
@@ -807,14 +807,14 @@ export const unit04: ChemistryUnitSeedData = {
           "ku": "Enerjiya kînetîk a navîn a molekulan zêde dibe"
         },
         {
-          "tr": "Moleküller arası çekim zayıflar",
-          "en": "Intermolecular attraction weakens",
-          "de": "Die intermolekulare Anziehung lässt nach",
-          "fr": "L’attraction intermoléculaire s’affaiblit",
-          "ru": "Межмолекулярное притяжение ослабевает.",
-          "ar": "يضعف الجذب بين الجزيئات",
-          "zh": "分子间吸引力减弱",
-          "ku": "Balkêşiya navmolekular qels dibe"
+          "tr": "Moleküller arası çekim daha kolay yenilir",
+          "en": "Intermolecular attractions are overcome more easily",
+          "de": "Die zwischenmolekularen Anziehungskräfte werden leichter überwunden",
+          "fr": "Les attractions intermoléculaires sont plus facilement vaincues",
+          "ru": "Межмолекулярное притяжение преодолевается легче",
+          "ar": "يُتغلَّب على قوى التجاذب بين الجزيئات بسهولة أكبر",
+          "zh": "分子间引力更容易被克服",
+          "ku": "Kêşana navmolekulî hêsantir tê derbaskirin"
         },
         {
           "tr": "Sıvının akmaya karşı direnci (viskozite) azalır",
@@ -827,14 +827,14 @@ export const unit04: ChemistryUnitSeedData = {
           "ku": "Berxwedana şilekê ya li hember herikînê (vîskozîtî) kêm dibe"
         },
         {
-          "tr": "Denge buhar basıncı hızla yükselir",
-          "en": "Equilibrium vapor pressure rises rapidly",
-          "de": "Der Gleichgewichtsdampfdruck steigt schnell an",
-          "fr": "La pression de vapeur à l’équilibre augmente rapidement",
-          "ru": "Равновесное давление пара быстро возрастает.",
-          "ar": "يرتفع ضغط البخار المتوازن بسرعة",
-          "zh": "平衡蒸气压迅速上升",
-          "ku": "Zexta buharê ya hevsengî bi lez bilind dibe"
+          "tr": "Sıvı daha kolay akar (akıcılığı artar)",
+          "en": "The liquid flows more easily (its fluidity increases)",
+          "de": "Die Flüssigkeit fließt leichter (ihre Fließfähigkeit nimmt zu)",
+          "fr": "Le liquide s'écoule plus facilement (sa fluidité augmente)",
+          "ru": "Жидкость течёт легче (её текучесть возрастает)",
+          "ar": "يتدفق السائل بسهولة أكبر (تزداد سيولته)",
+          "zh": "液体更容易流动（流动性增大）",
+          "ku": "Şile hêsantir diherike (herikbariya wê zêde dibe)"
         }
       ]
     },
@@ -842,13 +842,13 @@ export const unit04: ChemistryUnitSeedData = {
       "id": "u04-s04",
       "title": {
         "tr": "Pistonlu Kapta Sıkışma",
-        "en": "Piston Cup Jam",
-        "de": "Kolbenbecherstau",
-        "fr": "Bourrage de la coupelle de piston",
-        "ru": "Кубок Поршня Джем",
-        "ar": "مربى كأس المكبس",
-        "zh": "活塞杯果酱",
-        "ku": "Piston Cup Jam"
+        "en": "Compression in a Piston Container",
+        "de": "Kompression in einem Kolbengefäß",
+        "fr": "Compression dans un récipient à piston",
+        "ru": "Сжатие газа в сосуде с поршнем",
+        "ar": "انضغاط الغاز في وعاء ذي مكبس",
+        "zh": "活塞容器中的气体压缩",
+        "ku": "Pêçandina Gazê di Firaxa bi Piston de"
       },
       "steps": [
         {
@@ -859,7 +859,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Движущийся поршень опускается вниз",
           "ar": "يتم دفع المكبس المتحرك إلى الأسفل",
           "zh": "移动活塞被向下推",
-          "ku": "Pistona ku diherike tê xwarê"
+          "ku": "Pistona livok ber bi jêr ve tê pêldan"
         },
         {
           "tr": "Gazın kapladığı hacim daralır",
@@ -869,7 +869,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Объем, занимаемый газом, уменьшается",
           "ar": "يتناقص الحجم الذي يشغله الغاز",
           "zh": "气体所占的体积减少",
-          "ku": "Hêjmara ku ji gazê tê girtin kêm dibe"
+          "ku": "Qebareya ku gaz digire kêm dibe"
         },
         {
           "tr": "Birim hacme düşen tanecik sayısı artar",
@@ -879,17 +879,17 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Количество частиц в единице объема увеличивается",
           "ar": "يزداد عدد الجزيئات لكل وحدة حجم",
           "zh": "单位体积的颗粒数增加",
-          "ku": "Hejmara keriyên di yekîneya volmê de zêde dibe"
+          "ku": "Hejmara pirtikan di yekîneya qebareyê de zêde dibe"
         },
         {
           "tr": "Çeperlere yapılan çarpma sayısı ve basınç artar",
-          "en": "The number of impacts and pressure on the walls increases",
-          "de": "Die Anzahl der Stöße und der Druck auf die Wände nehmen zu",
-          "fr": "Le nombre d'impacts et la pression sur les murs augmentent",
-          "ru": "Увеличивается количество ударов и давления на стены.",
-          "ar": "يزداد عدد الصدمات والضغط على الجدران",
-          "zh": "墙壁上的冲击次数和压力增加",
-          "ku": "Hejmara bandor û zextên li ser dîwaran zêde dibe"
+          "en": "The number of collisions with the container walls and the pressure increase",
+          "de": "Die Zahl der Stöße auf die Gefäßwände und der Druck nehmen zu",
+          "fr": "Le nombre de chocs sur les parois et la pression augmentent",
+          "ru": "Число ударов о стенки сосуда и давление увеличиваются",
+          "ar": "يزداد عدد التصادمات مع جدران الوعاء ويزداد الضغط",
+          "zh": "分子撞击器壁的次数和压强增大",
+          "ku": "Hejmara lêdanên li dîwarên firaxê û zext zêde dibin"
         }
       ]
     }
@@ -956,7 +956,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Добавление нелетучей соли в емкость",
           "ar": "إضافة الملح غير المتطاير إلى الوعاء",
           "zh": "向容器中添加非挥发性盐",
-          "ku": "Zêdekirina xwêya nexwestî li konteynerê"
+          "ku": "Zêdekirina xwêyeke ku hilm nabe li firaxê"
         }
       ],
       "correctIndex": 0,
@@ -975,12 +975,12 @@ export const unit04: ChemistryUnitSeedData = {
       "id": "u04-twin02",
       "stem": {
         "tr": "Aynı ortamda kaynamakta olan saf su ve saf etil alkol için aşağıdakilerden hangisi kesinlikle eşittir?",
-        "en": "Which of the following is absolutely equivalent for pure water and pure ethyl alcohol boiling in the same environment?",
-        "de": "Welche der folgenden Aussagen ist für reines Wasser und reinen Ethylalkohol, die in derselben Umgebung sieden, absolut gleichwertig?",
-        "fr": "Lequel des énoncés suivants est absolument équivalent pour l’eau pure et l’alcool éthylique pur bouillant dans le même environnement ?",
-        "ru": "Что из перечисленного абсолютно эквивалентно кипению чистой воды и чистого этилового спирта в одной и той же среде?",
-        "ar": "أي مما يلي يكافئ تمامًا غليان الماء النقي والكحول الإيثيلي النقي في نفس البيئة؟",
-        "zh": "纯水和纯乙醇在同一环境下沸腾，下列哪项是绝对等效的？",
+        "en": "Which of the following is definitely equal for pure water and pure ethyl alcohol boiling in the same environment?",
+        "de": "Welche der folgenden Größen ist für reines Wasser und reinen Ethylalkohol, die in derselben Umgebung sieden, auf jeden Fall gleich?",
+        "fr": "Laquelle des grandeurs suivantes est nécessairement égale pour l'eau pure et l'éthanol pur bouillant dans le même environnement ?",
+        "ru": "Какая из следующих величин обязательно одинакова для чистой воды и чистого этилового спирта, кипящих в одной и той же среде?",
+        "ar": "أي مما يلي متساوٍ حتمًا للماء النقي والكحول الإيثيلي النقي اللذين يغليان في الوسط نفسه؟",
+        "zh": "在同一环境中沸腾的纯水和纯乙醇，下列哪项一定相等？",
         "ku": "Kîjan ji yên jêrîn ji bo ava paqij û alkola etilî ya saf ku di heman hawîrdorê de keliyane bi tevahî wekhev e?"
       },
       "options": [
@@ -1032,7 +1032,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Плотность",
           "ar": "الكثافة",
           "zh": "密度",
-          "ku": "Density"
+          "ku": "Tîrbûn"
         }
       ],
       "correctIndex": 0,
@@ -1098,7 +1098,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Состояние плазмы не проводит электричество и не подвержено влиянию магнитного поля.",
           "ar": "حالة البلازما لا توصل الكهرباء ولا تتأثر بالمجال المغناطيسي.",
           "zh": "等离子体状态不导电，也不受磁场影响。",
-          "ku": "Rewşa plazmayê elektrîkê nake û ji qada magnetîsî bandor nake."
+          "ku": "Rewşa plazmayê elektrîkê naguhezîne û ji qada magnetîsî bandor nabe."
         },
         {
           "tr": "Geniş kapta bulunan suyun denge buhar basıncı dar kaptakinden büyüktür.",
@@ -1108,7 +1108,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Равновесное давление пара воды в широком сосуде больше, чем в узком.",
           "ar": "يكون ضغط بخار الماء المتوازن في الوعاء الواسع أكبر منه في الوعاء الضيق.",
           "zh": "宽容器中水的平衡蒸气压大于窄容器中水的平衡蒸气压。",
-          "ku": "Pestoya hevsengiya buharê ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
+          "ku": "Zexta buharê ya hevseng ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
         }
       ],
       "correctIndex": 2,
@@ -1142,9 +1142,9 @@ export const unit04: ChemistryUnitSeedData = {
           "de": "NaCl gehört zur Klasse der molekularen Feststoffe.",
           "fr": "NaCl appartient à la classe des solides moléculaires.",
           "ru": "NaCl относится к классу молекулярных твердых веществ.",
-          "ar": "NaCl موجود في الطبقة الصلبة الجزيئية.",
+          "ar": "ينتمي NaCl إلى فئة المواد الصلبة الجزيئية.",
           "zh": "氯化钠属于分子固体类。",
-          "ku": "NaCl di çîna molekulê ya hişk de ye."
+          "ku": "NaCl di çîna madeyên hişk ên molekulî de ye."
         },
         {
           "tr": "Düdüklü tencerede dış basınç düştüğü için yemekler daha hızlı pişer.",
@@ -1154,27 +1154,27 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Поскольку в скороварке снижается внешнее давление, пища готовится быстрее.",
           "ar": "نظرًا لانخفاض الضغط الخارجي في قدر الضغط، يتم طهي الطعام بشكل أسرع.",
           "zh": "由于高压锅内的外部压力降低，食物煮得更快。",
-          "ku": "Ji ber ku fişara derve di tenûrê de kêm dibe, xwarin zûtir çêdibe."
+          "ku": "Ji ber ku zexta derve di beroşa zextê de kêm dibe, xwarin zûtir çêdibe."
         },
         {
-          "tr": "Çekim kuvveti yüksek olan sıvılar çok hızlı buharlaşır ve yüksek buhar basıncına sahiptir.",
-          "en": "Liquids with high gravitational force evaporate very quickly and have high vapor pressure.",
-          "de": "Flüssigkeiten mit hoher Schwerkraft verdampfen sehr schnell und haben einen hohen Dampfdruck.",
-          "fr": "Les liquides ayant une force gravitationnelle élevée s’évaporent très rapidement et ont une pression de vapeur élevée.",
-          "ru": "Жидкости с высокой силой гравитации очень быстро испаряются и имеют высокое давление пара.",
-          "ar": "تتبخر السوائل ذات قوة الجاذبية العالية بسرعة كبيرة ولها ضغط بخار مرتفع.",
-          "zh": "具有高重力的液体蒸发得非常快并且具有高蒸气压。",
-          "ku": "Şîrkên bi hêza gravîtasyonê ya bilind pir zû diherikin û xwedî tansiyona buharê ya bilind in."
+          "tr": "Moleküller arası çekim kuvveti güçlü olan sıvılar çok hızlı buharlaşır ve yüksek buhar basıncına sahiptir.",
+          "en": "Liquids with strong intermolecular forces evaporate very quickly and have high vapor pressure.",
+          "de": "Flüssigkeiten mit starken zwischenmolekularen Kräften verdampfen sehr schnell und haben einen hohen Dampfdruck.",
+          "fr": "Les liquides à fortes forces intermoléculaires s'évaporent très rapidement et ont une pression de vapeur élevée.",
+          "ru": "Жидкости с сильным межмолекулярным притяжением очень быстро испаряются и имеют высокое давление пара.",
+          "ar": "السوائل ذات قوى التجاذب القوية بين الجزيئات تتبخر بسرعة كبيرة ولها ضغط بخار مرتفع.",
+          "zh": "分子间作用力强的液体蒸发得非常快，蒸气压高。",
+          "ku": "Şilekên ku hêzên kêşanê yên navmolekulî yên xurt hene pir zû hilm dibin û zexta wan a buharê bilind e."
         },
         {
           "tr": "Cam, plastik, tereyağı ve lastik belirli bir erime noktası olmayan amorf katılardır.",
           "en": "Glass, plastic, butter and rubber are amorphous solids that do not have a specific melting point.",
           "de": "Glas, Kunststoff, Butter und Gummi sind amorphe Feststoffe, die keinen bestimmten Schmelzpunkt haben.",
           "fr": "Le verre, le plastique, le beurre et le caoutchouc sont des solides amorphes qui n'ont pas de point de fusion spécifique.",
-          "ru": "Стекло, пластик, масло и резина представляют собой аморфные твердые вещества, не имеющие определенной температуры плавления.",
+          "ru": "Стекло, пластик, сливочное масло и резина представляют собой аморфные твердые вещества, не имеющие определенной температуры плавления.",
           "ar": "الزجاج والبلاستيك والزبدة والمطاط هي مواد صلبة غير متبلورة ليس لها نقطة انصهار محددة.",
           "zh": "玻璃、塑料、黄油和橡胶是无定形固体，没有特定的熔点。",
-          "ku": "Cam, plastîk, rûn û gomûk madeyên amorf in ku xwedî xala helînê ya taybetî nînin."
+          "ku": "Cam, plastîk, nivîşk û gomûk madeyên amorf in ku xwedî xala helînê ya taybetî nînin."
         },
         {
           "tr": "Rüzgarlı havada çamaşırların kuruma süresi uzar.",
@@ -1193,10 +1193,10 @@ export const unit04: ChemistryUnitSeedData = {
         "en": "The correct statement is: \"Glass, plastic, butter and rubber are amorphous solids that do not have a specific melting point.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Glas, Kunststoff, Butter und Gummi sind amorphe Feststoffe, die keinen bestimmten Schmelzpunkt haben.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Le verre, le plastique, le beurre et le caoutchouc sont des solides amorphes qui n'ont pas de point de fusion spécifique.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Стекло, пластик, масло и резина представляют собой аморфные твердые вещества, не имеющие определенной температуры плавления.». Фундаментальный химический факт официальной программы.",
+        "ru": "Правильное утверждение: «Стекло, пластик, сливочное масло и резина представляют собой аморфные твердые вещества, не имеющие определенной температуры плавления.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"الزجاج والبلاستيك والزبدة والمطاط هي مواد صلبة غير متبلورة ليس لها نقطة انصهار محددة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“玻璃、塑料、黄油和橡胶是无定形固体，没有特定的熔点。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Cam, plastîk, rûn û gomûk madeyên amorf in ku xwedî xala helînê ya taybetî nînin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Cam, plastîk, nivîşk û gomûk madeyên amorf in ku xwedî xala helînê ya taybetî nînin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1220,7 +1220,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Поскольку твердое железо представляет собой ковалентный кристалл, оно не проводит электричество.",
           "ar": "وبما أن الحديد الصلب عبارة عن بلورة تساهمية، فإنه لا يوصل الكهرباء.",
           "zh": "由于铁固体是共价晶体，因此它不导电。",
-          "ku": "Ji ber ku hesin hişk krîstalek kovalent e, elektrîkê nagire."
+          "ku": "Ji ber ku hesinê hişk krîstaleke kovalent e, elektrîkê naguhezîne."
         },
         {
           "tr": "Bağıl nem %100 olduğunda hava neme tamamen doymamıştır.",
@@ -1260,7 +1260,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Алмаз и кварц (SiO2) являются примерами кристаллических твердых тел с ковалентной сеткой.",
           "ar": "يعتبر الماس والكوارتز (SiO2) من الأمثلة على المواد الصلبة البلورية الشبكية التساهمية.",
           "zh": "金刚石和石英 (SiO2) 是共价网络结晶固体的例子。",
-          "ku": "Almas û quartz (SiO2) mînakên tîrêjên krîstal ên bi tora kovalentî ne."
+          "ku": "Almas û quartz (SiO2) mînakên madeyên hişk ên krîstal ên bi tora kovalentî ne."
         }
       ],
       "correctIndex": 4,
@@ -1272,7 +1272,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Алмаз и кварц (SiO2) являются примерами кристаллических твердых тел с ковалентной сеткой.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"يعتبر الماس والكوارتز (SiO2) من الأمثلة على المواد الصلبة البلورية الشبكية التساهمية.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“金刚石和石英 (SiO2) 是共价网络结晶固体的例子。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Almas û quartz (SiO2) mînakên tîrêjên krîstal ên bi tora kovalentî ne.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Almas û quartz (SiO2) mînakên madeyên hişk ên krîstal ên bi tora kovalentî ne.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1316,7 +1316,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Состояние плазмы не проводит электричество и не подвержено влиянию магнитного поля.",
           "ar": "حالة البلازما لا توصل الكهرباء ولا تتأثر بالمجال المغناطيسي.",
           "zh": "等离子体状态不导电，也不受磁场影响。",
-          "ku": "Rewşa plazmayê elektrîkê nake û ji qada magnetîsî bandor nake."
+          "ku": "Rewşa plazmayê elektrîkê naguhezîne û ji qada magnetîsî bandor nabe."
         },
         {
           "tr": "Geniş kapta bulunan suyun denge buhar basıncı dar kaptakinden büyüktür.",
@@ -1326,7 +1326,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Равновесное давление пара воды в широком сосуде больше, чем в узком.",
           "ar": "يكون ضغط بخار الماء المتوازن في الوعاء الواسع أكبر منه في الوعاء الضيق.",
           "zh": "宽容器中水的平衡蒸气压大于窄容器中水的平衡蒸气压。",
-          "ku": "Pestoya hevsengiya buharê ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
+          "ku": "Zexta buharê ya hevseng ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
         },
         {
           "tr": "Kaynama sadece sıvının yüzeyinde gerçekleşen bir buharlaşmadır.",
@@ -1372,7 +1372,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Поскольку в скороварке снижается внешнее давление, пища готовится быстрее.",
           "ar": "نظرًا لانخفاض الضغط الخارجي في قدر الضغط، يتم طهي الطعام بشكل أسرع.",
           "zh": "由于高压锅内的外部压力降低，食物煮得更快。",
-          "ku": "Ji ber ku fişara derve di tenûrê de kêm dibe, xwarin zûtir çêdibe."
+          "ku": "Ji ber ku zexta derve di beroşa zextê de kêm dibe, xwarin zûtir çêdibe."
         },
         {
           "tr": "Yemek tuzu (NaCl) ve kireç taşı (CaCO3) iyonik kristal katılara örnektir.",
@@ -1385,14 +1385,14 @@ export const unit04: ChemistryUnitSeedData = {
           "ku": "Xwêya sifrê (NaCl) û kevirê kilsin (CaCO3) mînakên hişk ên krîstal ên îyonî ne."
         },
         {
-          "tr": "Çekim kuvveti yüksek olan sıvılar çok hızlı buharlaşır ve yüksek buhar basıncına sahiptir.",
-          "en": "Liquids with high gravitational force evaporate very quickly and have high vapor pressure.",
-          "de": "Flüssigkeiten mit hoher Schwerkraft verdampfen sehr schnell und haben einen hohen Dampfdruck.",
-          "fr": "Les liquides ayant une force gravitationnelle élevée s’évaporent très rapidement et ont une pression de vapeur élevée.",
-          "ru": "Жидкости с высокой силой гравитации очень быстро испаряются и имеют высокое давление пара.",
-          "ar": "تتبخر السوائل ذات قوة الجاذبية العالية بسرعة كبيرة ولها ضغط بخار مرتفع.",
-          "zh": "具有高重力的液体蒸发得非常快并且具有高蒸气压。",
-          "ku": "Şîrkên bi hêza gravîtasyonê ya bilind pir zû diherikin û xwedî tansiyona buharê ya bilind in."
+          "tr": "Moleküller arası çekim kuvveti güçlü olan sıvılar çok hızlı buharlaşır ve yüksek buhar basıncına sahiptir.",
+          "en": "Liquids with strong intermolecular forces evaporate very quickly and have high vapor pressure.",
+          "de": "Flüssigkeiten mit starken zwischenmolekularen Kräften verdampfen sehr schnell und haben einen hohen Dampfdruck.",
+          "fr": "Les liquides à fortes forces intermoléculaires s'évaporent très rapidement et ont une pression de vapeur élevée.",
+          "ru": "Жидкости с сильным межмолекулярным притяжением очень быстро испаряются и имеют высокое давление пара.",
+          "ar": "السوائل ذات قوى التجاذب القوية بين الجزيئات تتبخر بسرعة كبيرة ولها ضغط بخار مرتفع.",
+          "zh": "分子间作用力强的液体蒸发得非常快，蒸气压高。",
+          "ku": "Şilekên ku hêzên kêşanê yên navmolekulî yên xurt hene pir zû hilm dibin û zexta wan a buharê bilind e."
         },
         {
           "tr": "Rüzgarlı havada çamaşırların kuruma süresi uzar.",
@@ -1488,7 +1488,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Стекло имеет ионно-кристаллическую структуру и резкую температуру плавления.",
           "ar": "يحتوي الزجاج على بنية بلورية أيونية ونقطة انصهار حادة.",
           "zh": "玻璃具有离子晶体结构和明确的熔点。",
-          "ku": "Glass xwedan avahiyek krîstal a yonîkî û xalek helînê ya tûj e."
+          "ku": "Cam xwedan avahiyek krîstal a yonîkî û xalek helînê ya tûj e."
         }
       ],
       "correctIndex": 2,
@@ -1524,7 +1524,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Состояние плазмы не проводит электричество и не подвержено влиянию магнитного поля.",
           "ar": "حالة البلازما لا توصل الكهرباء ولا تتأثر بالمجال المغناطيسي.",
           "zh": "等离子体状态不导电，也不受磁场影响。",
-          "ku": "Rewşa plazmayê elektrîkê nake û ji qada magnetîsî bandor nake."
+          "ku": "Rewşa plazmayê elektrîkê naguhezîne û ji qada magnetîsî bandor nabe."
         },
         {
           "tr": "Geniş kapta bulunan suyun denge buhar basıncı dar kaptakinden büyüktür.",
@@ -1534,7 +1534,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Равновесное давление пара воды в широком сосуде больше, чем в узком.",
           "ar": "يكون ضغط بخار الماء المتوازن في الوعاء الواسع أكبر منه في الوعاء الضيق.",
           "zh": "宽容器中水的平衡蒸气压大于窄容器中水的平衡蒸气压。",
-          "ku": "Pestoya hevsengiya buharê ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
+          "ku": "Zexta buharê ya hevseng ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
         },
         {
           "tr": "Kaynama sadece sıvının yüzeyinde gerçekleşen bir buharlaşmadır.",
@@ -1593,14 +1593,14 @@ export const unit04: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Çekim kuvveti yüksek olan sıvılar çok hızlı buharlaşır ve yüksek buhar basıncına sahiptir.",
-          "en": "Liquids with high gravitational force evaporate very quickly and have high vapor pressure.",
-          "de": "Flüssigkeiten mit hoher Schwerkraft verdampfen sehr schnell und haben einen hohen Dampfdruck.",
-          "fr": "Les liquides ayant une force gravitationnelle élevée s’évaporent très rapidement et ont une pression de vapeur élevée.",
-          "ru": "Жидкости с высокой силой гравитации очень быстро испаряются и имеют высокое давление пара.",
-          "ar": "تتبخر السوائل ذات قوة الجاذبية العالية بسرعة كبيرة ولها ضغط بخار مرتفع.",
-          "zh": "具有高重力的液体蒸发得非常快并且具有高蒸气压。",
-          "ku": "Şîrkên bi hêza gravîtasyonê ya bilind pir zû diherikin û xwedî tansiyona buharê ya bilind in."
+          "tr": "Moleküller arası çekim kuvveti güçlü olan sıvılar çok hızlı buharlaşır ve yüksek buhar basıncına sahiptir.",
+          "en": "Liquids with strong intermolecular forces evaporate very quickly and have high vapor pressure.",
+          "de": "Flüssigkeiten mit starken zwischenmolekularen Kräften verdampfen sehr schnell und haben einen hohen Dampfdruck.",
+          "fr": "Les liquides à fortes forces intermoléculaires s'évaporent très rapidement et ont une pression de vapeur élevée.",
+          "ru": "Жидкости с сильным межмолекулярным притяжением очень быстро испаряются и имеют высокое давление пара.",
+          "ar": "السوائل ذات قوى التجاذب القوية بين الجزيئات تتبخر بسرعة كبيرة ولها ضغط بخار مرتفع.",
+          "zh": "分子间作用力强的液体蒸发得非常快，蒸气压高。",
+          "ku": "Şilekên ku hêzên kêşanê yên navmolekulî yên xurt hene pir zû hilm dibin û zexta wan a buharê bilind e."
         },
         {
           "tr": "Rüzgarlı havada çamaşırların kuruma süresi uzar.",
@@ -1706,7 +1706,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Стекло имеет ионно-кристаллическую структуру и резкую температуру плавления.",
           "ar": "يحتوي الزجاج على بنية بلورية أيونية ونقطة انصهار حادة.",
           "zh": "玻璃具有离子晶体结构和明确的熔点。",
-          "ku": "Glass xwedan avahiyek krîstal a yonîkî û xalek helînê ya tûj e."
+          "ku": "Cam xwedan avahiyek krîstal a yonîkî û xalek helînê ya tûj e."
         },
         {
           "tr": "NaCl moleküler katı sınıfında yer alır.",
@@ -1714,9 +1714,9 @@ export const unit04: ChemistryUnitSeedData = {
           "de": "NaCl gehört zur Klasse der molekularen Feststoffe.",
           "fr": "NaCl appartient à la classe des solides moléculaires.",
           "ru": "NaCl относится к классу молекулярных твердых веществ.",
-          "ar": "NaCl موجود في الطبقة الصلبة الجزيئية.",
+          "ar": "ينتمي NaCl إلى فئة المواد الصلبة الجزيئية.",
           "zh": "氯化钠属于分子固体类。",
-          "ku": "NaCl di çîna molekulê ya hişk de ye."
+          "ku": "NaCl di çîna madeyên hişk ên molekulî de ye."
         }
       ],
       "correctIndex": 0,
@@ -1752,7 +1752,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Равновесное давление пара воды в широком сосуде больше, чем в узком.",
           "ar": "يكون ضغط بخار الماء المتوازن في الوعاء الواسع أكبر منه في الوعاء الضيق.",
           "zh": "宽容器中水的平衡蒸气压大于窄容器中水的平衡蒸气压。",
-          "ku": "Pestoya hevsengiya buharê ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
+          "ku": "Zexta buharê ya hevseng ya avê di konteynera fireh de ji ya di konteynera teng de mezintir e."
         },
         {
           "tr": "Plazma hali nötr atomlar, iyonlar, serbest elektronlar ve fotonların bir arada bulunduğu elektriği ileten durumdur.",
@@ -1760,9 +1760,9 @@ export const unit04: ChemistryUnitSeedData = {
           "de": "Der Plasmazustand ist ein elektrisch leitender Zustand, in dem neutrale Atome, Ionen, freie Elektronen und Photonen nebeneinander existieren.",
           "fr": "L’état plasma est un état électriquement conducteur dans lequel coexistent des atomes neutres, des ions, des électrons libres et des photons.",
           "ru": "Состояние плазмы — это электропроводящее состояние, в котором сосуществуют нейтральные атомы, ионы, свободные электроны и фотоны.",
-          "ar": "حالة البلازما هي حالة موصلة للكهرباء تتعايش فيها الذرات والأيونات والإلكترونات الحرة والفوتونات المحايدة.",
+          "ar": "حالة البلازما حالة موصلة للكهرباء تتعايش فيها الذرات المتعادلة والأيونات والإلكترونات الحرة والفوتونات.",
           "zh": "等离子体状态是中性原子、离子、自由电子和光子共存的导电状态。",
-          "ku": "Rewşa plazmayê rewşek elektrîkê ye ku tê de atomên bêalî, îyon, elektronên azad û foton bi hev re dijîn."
+          "ku": "Rewşa plazmayê rewşeke ku elektrîkê diguhezîne ye û tê de atomên bêalî, îyon, elektronên azad û foton bi hev re hene."
         },
         {
           "tr": "Kaynama sadece sıvının yüzeyinde gerçekleşen bir buharlaşmadır.",
@@ -1792,7 +1792,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Поскольку твердое железо представляет собой ковалентный кристалл, оно не проводит электричество.",
           "ar": "وبما أن الحديد الصلب عبارة عن بلورة تساهمية، فإنه لا يوصل الكهرباء.",
           "zh": "由于铁固体是共价晶体，因此它不导电。",
-          "ku": "Ji ber ku hesin hişk krîstalek kovalent e, elektrîkê nagire."
+          "ku": "Ji ber ku hesinê hişk krîstaleke kovalent e, elektrîkê naguhezîne."
         }
       ],
       "correctIndex": 1,
@@ -1802,9 +1802,9 @@ export const unit04: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Der Plasmazustand ist ein elektrisch leitender Zustand, in dem neutrale Atome, Ionen, freie Elektronen und Photonen nebeneinander existieren.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"L’état plasma est un état électriquement conducteur dans lequel coexistent des atomes neutres, des ions, des électrons libres et des photons.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Состояние плазмы — это электропроводящее состояние, в котором сосуществуют нейтральные атомы, ионы, свободные электроны и фотоны.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"حالة البلازما هي حالة موصلة للكهرباء تتعايش فيها الذرات والأيونات والإلكترونات الحرة والفوتونات المحايدة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"حالة البلازما حالة موصلة للكهرباء تتعايش فيها الذرات المتعادلة والأيونات والإلكترونات الحرة والفوتونات.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“等离子体状态是中性原子、离子、自由电子和光子共存的导电状态。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Rewşa plazmayê rewşek elektrîkê ye ku tê de atomên bêalî, îyon, elektronên azad û foton bi hev re dijîn.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Rewşa plazmayê rewşeke ku elektrîkê diguhezîne ye û tê de atomên bêalî, îyon, elektronên azad û foton bi hev re hene.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1848,7 +1848,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Жидкости с сильными межмолекулярными силами имеют высокую вязкость и низкое давление пара.",
           "ar": "السوائل ذات القوى الجزيئية القوية لها لزوجة عالية وضغط بخار منخفض.",
           "zh": "分子间力强的液体具有高粘度和低蒸气压。",
-          "ku": "Şîrkên bi hêzên navmolekularî yên xurt xwedî vîskozîtîya bilind û tansiyona vaporê ya kêm in."
+          "ku": "Şilekên bi hêzên navmolekularî yên xurt xwedî vîskozîtîya bilind û tansiyona vaporê ya kêm in."
         },
         {
           "tr": "Kuru buz kovalent ağ örgülü çok sert bir kristaldir.",
@@ -1880,7 +1880,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Жидкости с сильными межмолекулярными силами имеют высокую вязкость и низкое давление пара.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"السوائل ذات القوى الجزيئية القوية لها لزوجة عالية وضغط بخار منخفض.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“分子间力强的液体具有高粘度和低蒸气压。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Şîrkên bi hêzên navmolekularî yên xurt xwedî vîskozîtîya bilind û tansiyona vaporê ya kêm in.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Şilekên bi hêzên navmolekularî yên xurt xwedî vîskozîtîya bilind û tansiyona vaporê ya kêm in.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1914,7 +1914,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Стекло имеет ионно-кристаллическую структуру и резкую температуру плавления.",
           "ar": "يحتوي الزجاج على بنية بلورية أيونية ونقطة انصهار حادة.",
           "zh": "玻璃具有离子晶体结构和明确的熔点。",
-          "ku": "Glass xwedan avahiyek krîstal a yonîkî û xalek helînê ya tûj e."
+          "ku": "Cam xwedan avahiyek krîstal a yonîkî û xalek helînê ya tûj e."
         },
         {
           "tr": "NaCl moleküler katı sınıfında yer alır.",
@@ -1922,9 +1922,9 @@ export const unit04: ChemistryUnitSeedData = {
           "de": "NaCl gehört zur Klasse der molekularen Feststoffe.",
           "fr": "NaCl appartient à la classe des solides moléculaires.",
           "ru": "NaCl относится к классу молекулярных твердых веществ.",
-          "ar": "NaCl موجود في الطبقة الصلبة الجزيئية.",
+          "ar": "ينتمي NaCl إلى فئة المواد الصلبة الجزيئية.",
           "zh": "氯化钠属于分子固体类。",
-          "ku": "NaCl di çîna molekulê ya hişk de ye."
+          "ku": "NaCl di çîna madeyên hişk ên molekulî de ye."
         },
         {
           "tr": "Aynı ortamda kaynamakta olan tüm saf sıvıların denge buhar basınçları birbirine eşittir (dış basınca eşittir).",
@@ -1944,7 +1944,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Поскольку в скороварке снижается внешнее давление, пища готовится быстрее.",
           "ar": "نظرًا لانخفاض الضغط الخارجي في قدر الضغط، يتم طهي الطعام بشكل أسرع.",
           "zh": "由于高压锅内的外部压力降低，食物煮得更快。",
-          "ku": "Ji ber ku fişara derve di tenûrê de kêm dibe, xwarin zûtir çêdibe."
+          "ku": "Ji ber ku zexta derve di beroşa zextê de kêm dibe, xwarin zûtir çêdibe."
         }
       ],
       "correctIndex": 3,
@@ -2000,7 +2000,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Поскольку твердое железо представляет собой ковалентный кристалл, оно не проводит электричество.",
           "ar": "وبما أن الحديد الصلب عبارة عن بلورة تساهمية، فإنه لا يوصل الكهرباء.",
           "zh": "由于铁固体是共价晶体，因此它不导电。",
-          "ku": "Ji ber ku hesin hişk krîstalek kovalent e, elektrîkê nagire."
+          "ku": "Ji ber ku hesinê hişk krîstaleke kovalent e, elektrîkê naguhezîne."
         },
         {
           "tr": "Bağıl nem %100 olduğunda hava neme tamamen doymamıştır.",
@@ -2056,7 +2056,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "В ветреную погоду скорость испарения увеличивается за счет удаления молекул пара с поверхности.",
           "ar": "وفي الطقس العاصف، يزداد معدل التبخر بسبب إزالة جزيئات البخار الموجودة على السطح.",
           "zh": "在大风天气中，由于表面的蒸气分子被去除，蒸发率会增加。",
-          "ku": "Di hewaya bayê de, ji ber ku molekulên buharê yên li ser rûyê erdê têne rakirin, rêjeya evaporasyonê zêde dibe."
+          "ku": "Di hewaya bayê de, ji ber ku molekulên buharê yên li ser rûyê şilekê têne rakirin, rêjeya evaporasyonê zêde dibe."
         },
         {
           "tr": "Sıcaklık arttıkça bal ve gliserinin viskozitesi artar.",
@@ -2096,7 +2096,7 @@ export const unit04: ChemistryUnitSeedData = {
           "ru": "Состояние плазмы не проводит электричество и не подвержено влиянию магнитного поля.",
           "ar": "حالة البلازما لا توصل الكهرباء ولا تتأثر بالمجال المغناطيسي.",
           "zh": "等离子体状态不导电，也不受磁场影响。",
-          "ku": "Rewşa plazmayê elektrîkê nake û ji qada magnetîsî bandor nake."
+          "ku": "Rewşa plazmayê elektrîkê naguhezîne û ji qada magnetîsî bandor nabe."
         }
       ],
       "correctIndex": 0,
@@ -2108,7 +2108,7 @@ export const unit04: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «В ветреную погоду скорость испарения увеличивается за счет удаления молекул пара с поверхности.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"وفي الطقس العاصف، يزداد معدل التبخر بسبب إزالة جزيئات البخار الموجودة على السطح.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“在大风天气中，由于表面的蒸气分子被去除，蒸发率会增加。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di hewaya bayê de, ji ber ku molekulên buharê yên li ser rûyê erdê têne rakirin, rêjeya evaporasyonê zêde dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Di hewaya bayê de, ji ber ku molekulên buharê yên li ser rûyê şilekê têne rakirin, rêjeya evaporasyonê zêde dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }
   ]

@@ -42,7 +42,11 @@
 .st-select-row {
   position: relative;
   cursor: pointer;
+  /* label · value · chevron stay on one line; the value truncates instead */
+  flex-wrap: nowrap;
 }
+
+.st-select-row .ky-row__lbl { flex: 1 1 auto; }
 
 .st-select-overlay {
   position: absolute;
@@ -81,8 +85,8 @@
 .st-vol-lbl { flex: 0 1 auto; }
 
 .st-vol {
-  flex: 1 1 120px;
-  min-inline-size: 100px;
+  flex: 1 1 96px;
+  min-inline-size: 80px;
 }
 
 .st-vol-val { flex: none; min-inline-size: 3.2em; text-align: end; }

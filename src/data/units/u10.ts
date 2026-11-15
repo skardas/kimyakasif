@@ -30,14 +30,14 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-f01",
       "fact": {
-        "tr": "Beyaz sert sabun C17H35COONa (sodyum stearat), arap sabunu yumuşak sabun C17H35COOK (potasyum stearat) tır.",
-        "en": "White hard soap is C17H35COONa (sodium stearate), soft soap is C17H35COOK (potassium stearate).",
-        "de": "Weiße Hartseife ist C17H35COONa (Natriumstearat), weiche Seife ist C17H35COOK (Kaliumstearat).",
-        "fr": "Le savon dur blanc est le C17H35COONa (stéarate de sodium), le savon mou est le C17H35COOK (stéarate de potassium).",
-        "ru": "Белое твердое мыло — C17H35COONa (стеарат натрия), мягкое мыло — C17H35COOK (стеарат калия).",
-        "ar": "الصابون الأبيض الصلب هو C17H35COONa (إستيرات الصوديوم)، والصابون الناعم هو C17H35COOK (إستيرات البوتاسيوم).",
-        "zh": "白硬皂是C17H35COONa（硬脂酸钠），软皂是C17H35COOK（硬脂酸钾）。",
-        "ku": "Sabûna hişk a spî C17H35COONa (stearate sodyûm), sabûna nerm C17H35COOK (stearat potasyûm) e."
+        "tr": "Sert (beyaz) sabunlar yağ asitlerinin sodyum tuzlarıdır (örn. C17H35COONa, sodyum stearat); yumuşak sabunlar (arap sabunu) ise potasyum tuzlarıdır (örn. C17H35COOK, potasyum stearat).",
+        "en": "Hard (white) soaps are sodium salts of fatty acids (e.g. C17H35COONa, sodium stearate); soft soaps are potassium salts (e.g. C17H35COOK, potassium stearate).",
+        "de": "Harte (weiße) Seifen sind Natriumsalze von Fettsäuren (z. B. C17H35COONa, Natriumstearat); weiche Seifen (Schmierseifen) sind Kaliumsalze (z. B. C17H35COOK, Kaliumstearat).",
+        "fr": "Les savons durs (blancs) sont des sels de sodium d'acides gras (ex. C17H35COONa, stéarate de sodium) ; les savons mous sont des sels de potassium (ex. C17H35COOK, stéarate de potassium).",
+        "ru": "Твёрдое (белое) мыло — натриевые соли жирных кислот (напр., C17H35COONa, стеарат натрия); мягкое (жидкое) мыло — калиевые соли (напр., C17H35COOK, стеарат калия).",
+        "ar": "الصابون الصلب (الأبيض) هو أملاح الصوديوم للأحماض الدهنية (مثل C17H35COONa، ستيارات الصوديوم)؛ أما الصابون الطري فهو أملاح البوتاسيوم (مثل C17H35COOK، ستيارات البوتاسيوم).",
+        "zh": "硬（白）肥皂是脂肪酸的钠盐（如C17H35COONa，硬脂酸钠）；软皂是脂肪酸的钾盐（如C17H35COOK，硬脂酸钾）。",
+        "ku": "Sabûnên hişk (spî) xwêyên sodyûmê yên asîdên rûn in (mînak C17H35COONa, stearata sodyûmê); sabûnên nerm (sabûna erebî) xwêyên potasyûmê ne (mînak C17H35COOK, stearata potasyûmê)."
       },
       "trap": {
         "tr": "Arap sabununda potasyum yerine kalsiyum iyonu bulunur.",
@@ -93,7 +93,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Моющее средство выпадает в осадок в жесткой воде и теряет свои чистящие свойства.",
         "ar": "يترسب المنظف في الماء العسر ويفقد خصائصه التنظيفية.",
         "zh": "洗涤剂在硬水中沉淀并失去其清洁性能。",
-        "ku": "Detergent di ava hişk de diherike û taybetmendiyên xwe yên paqijkirinê winda dike."
+        "ku": "Deterjan di ava hişk de tortî çêdike û taybetmendiya xwe ya paqijkirinê winda dike."
       }
     },
     {
@@ -155,14 +155,14 @@ export const unit10: ChemistryUnitSeedData = {
         "ku": "Ew di hilberîna çente û lûleyên polîetîlen (PE), û di profîlên derî û pencereyê de polyvinyl chloride (PVC) de tê bikar anîn."
       },
       "trap": {
-        "tr": "Teflon (PTFE) su borusu kaplamasında esnek ambalaj olarak kullanılır.",
-        "en": "Teflon (PTFE) is used as flexible packaging in water pipe lining.",
-        "de": "Teflon (PTFE) wird als flexible Verpackung bei der Auskleidung von Wasserleitungen verwendet.",
-        "fr": "Le téflon (PTFE) est utilisé comme emballage flexible dans le revêtement des conduites d'eau.",
-        "ru": "Тефлон (ПТФЭ) используется в качестве гибкой упаковки при облицовке водопроводных труб.",
-        "ar": "يتم استخدام تفلون (PTFE) كتغليف مرن في بطانة أنابيب المياه.",
-        "zh": "聚四氟乙烯 (PTFE) 用作水管内衬的软包装。",
-        "ku": "Teflon (PTFE) wekî pakêtek maqûl di nav lûleya avê de tê bikar anîn."
+        "tr": "Market poşetleri en çok Teflon (PTFE) polimerinden üretilir.",
+        "en": "Shopping bags are mostly made of the polymer Teflon (PTFE).",
+        "de": "Einkaufstüten werden überwiegend aus dem Polymer Teflon (PTFE) hergestellt.",
+        "fr": "Les sacs de caisse sont principalement fabriqués en Téflon (PTFE).",
+        "ru": "Пластиковые пакеты в основном изготавливают из тефлона (ПТФЭ).",
+        "ar": "تُصنع أكياس التسوق البلاستيكية في الغالب من بوليمر التفلون (PTFE).",
+        "zh": "购物塑料袋主要由聚四氟乙烯（特氟龙，PTFE）制成。",
+        "ku": "Kîsikên bazarê bi piranî ji polîmera Teflon (PTFE) têne çêkirin."
       }
     },
     {
@@ -290,7 +290,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Формы выпуска: таблетки, драже, сироп, ампулы (инъекции), мазь и капли.",
         "ar": "أشكال الدواء: أقراص، دراج، شراب، أمبولة (حقن)، مرهم وقطرات.",
         "zh": "药物剂型：片剂、糖衣丸、糖浆、安瓿（注射剂）、软膏和滴剂。",
-        "ku": "Formên narkotîkê: Tablet, dragee, syrup, ampule (derzî), melhem û dilop."
+        "ku": "Formên dermanan: Tablet, dragee, syrup, ampule (derzî), melhem û dilop."
       },
       "trap": {
         "tr": "Bütün ilaçlar yalnızca ağız yoluyla hap olarak tüketilir.",
@@ -375,7 +375,7 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-f16",
       "fact": {
-        "tr": "Pastörizasyon gıdadaki patojen bakterileri öldürmek için 60-75 °C de kısa süreli ısıtma işlemidir.",
+        "tr": "Pastörizasyon gıdadaki patojen bakterileri öldürmek için 60-75 °C'de kısa süreli ısıtma işlemidir.",
         "en": "Pasteurization is a short-term heating process at 60-75 °C to kill pathogenic bacteria in food.",
         "de": "Bei der Pasteurisierung handelt es sich um einen kurzzeitigen Erhitzungsprozess bei 60–75 °C, um krankheitserregende Bakterien in Lebensmitteln abzutöten.",
         "fr": "La pasteurisation est un processus de chauffage à court terme entre 60 et 75 °C destiné à tuer les bactéries pathogènes présentes dans les aliments.",
@@ -466,34 +466,34 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-c03",
       "conceptA": {
-        "tr": "Beyaz Sabun (Sert Sabun)",
-        "en": "White Soap (Hard Soap)",
-        "de": "Weiße Seife (harte Seife)",
-        "fr": "Savon Blanc (Savon Dur)",
-        "ru": "Белое мыло (твердое мыло)",
-        "ar": "الصابون الأبيض (الصابون الصلب)",
-        "zh": "白皂（硬皂）",
-        "ku": "Sabûna Spî (Sabûna Zehmet)"
+        "tr": "Sızma Zeytinyağı",
+        "en": "Extra Virgin Olive Oil",
+        "de": "Natives Olivenöl extra",
+        "fr": "Huile d'olive vierge extra",
+        "ru": "Оливковое масло Extra Virgin",
+        "ar": "زيت الزيتون البكر الممتاز",
+        "zh": "特级初榨橄榄油",
+        "ku": "Rûnê zeytûnê yê sizma"
       },
       "conceptB": {
-        "tr": "Arap Sabunu (Yumuşak Sabun)",
-        "en": "Arab Soap (Soft Soap)",
-        "de": "Arabische Seife (Schmeichseife)",
-        "fr": "Savon Arabe (Savon Doux)",
-        "ru": "Арабское мыло (Мягкое мыло)",
-        "ar": "الصابون العربي (الصابون الناعم)",
-        "zh": "阿拉伯肥皂（软皂）",
-        "ku": "Sabûna Erebî (Sabûna nerm)"
+        "tr": "Riviera Zeytinyağı",
+        "en": "Riviera Olive Oil",
+        "de": "Riviera-Olivenöl",
+        "fr": "Huile d'olive Riviera",
+        "ru": "Оливковое масло Riviera",
+        "ar": "زيت الزيتون ريفييرا",
+        "zh": "里维埃拉橄榄油",
+        "ku": "Rûnê zeytûnê yê Riviera"
       },
       "distinction": {
-        "tr": "Beyaz sabun sodyum tuzu olup serttir (C17H35COONa); arap sabunu potasyum tuzu olup yumuşaktır (C17H35COOK).",
-        "en": "White soap is a sodium salt and is hard (C17H35COONa); Arab soap is a potassium salt and is soft (C17H35COOK).",
-        "de": "Weiße Seife ist ein Natriumsalz und hart (C17H35COONa); Arabische Seife ist ein Kaliumsalz und weich (C17H35COOK).",
-        "fr": "Le savon blanc est un sel de sodium et est dur (C17H35COONa) ; Le savon arabe est un sel de potassium et est doux (C17H35COOK).",
-        "ru": "Белое мыло представляет собой натриевую соль и твердое (C17H35COONa); Арабское мыло представляет собой калийную соль и является мягким (C17H35COOK).",
-        "ar": "الصابون الأبيض عبارة عن ملح صوديوم وهو صلب (C17H35COONa)؛ الصابون العربي عبارة عن ملح بوتاسيوم وهو ناعم (C17H35COOK).",
-        "zh": "白皂是钠盐，很硬（C17H35COONa）；阿拉伯皂是一种钾盐，质地柔软 (C17H35COOK)。",
-        "ku": "Sabûna spî xwêya sodyûmê ye û hişk e (C17H35COONa); Sabûna erebî xwêya potasyûmê ye û nerm e (C17H35COOK)."
+        "tr": "Sızma zeytinyağı zeytinden yalnızca mekanik yolla elde edilen, asitliği en düşük natürel yağdır; riviera zeytinyağı rafine zeytinyağı ile natürel zeytinyağının karışımıdır.",
+        "en": "Extra virgin olive oil is a natural oil obtained from olives only by mechanical means and has the lowest acidity; Riviera olive oil is a blend of refined olive oil and virgin olive oil.",
+        "de": "Natives Olivenöl extra wird nur mechanisch aus Oliven gewonnen und hat den geringsten Säuregehalt; Riviera-Olivenöl ist eine Mischung aus raffiniertem und nativem Olivenöl.",
+        "fr": "L'huile d'olive vierge extra est obtenue uniquement par des procédés mécaniques et a l'acidité la plus faible ; l'huile d'olive Riviera est un mélange d'huile d'olive raffinée et d'huile d'olive vierge.",
+        "ru": "Масло Extra Virgin получают из оливок только механическим путём, его кислотность самая низкая; масло Riviera — смесь рафинированного и натурального оливкового масла.",
+        "ar": "يُستخلص زيت الزيتون البكر الممتاز من الزيتون بطرق ميكانيكية فقط وهو الأقل حموضة؛ أما زيت ريفييرا فهو خليط من زيت الزيتون المكرر وزيت الزيتون البكر.",
+        "zh": "特级初榨橄榄油仅通过机械方法从橄榄中获得，酸度最低；里维埃拉橄榄油是精炼橄榄油与初榨橄榄油的混合物。",
+        "ku": "Rûnê zeytûnê yê sizma tenê bi rêya mekanîkî ji zeytûnê tê wergirtin û asîdiya wî herî kêm e; rûnê Riviera tevliheviya rûnê zeytûnê yê rafînekirî û rûnê zeytûnê yê xwezayî ye."
       }
     },
     {
@@ -504,7 +504,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Hydrophile Spitze",
         "fr": "Pointe hydrophile",
         "ru": "Гидрофильный наконечник",
-        "ar": "نصيحة ماء",
+        "ar": "الطرف المحب للماء",
         "zh": "亲水尖端",
         "ku": "Tîpa hîdrofîlî"
       },
@@ -514,7 +514,7 @@ export const unit10: ChemistryUnitSeedData = {
         "de": "Hydrophobe Spitze",
         "fr": "Pointe hydrophobe",
         "ru": "Гидрофобный наконечник",
-        "ar": "نصيحة مسعور",
+        "ar": "الطرف الكاره للماء",
         "zh": "疏水尖端",
         "ku": "Tîpa hîdrofobîk"
       },
@@ -600,65 +600,65 @@ export const unit10: ChemistryUnitSeedData = {
       "conceptA": {
         "tr": "Çamaşır Suyu (NaClO)",
         "en": "Bleach (NaClO)",
-        "de": "Bleichmittel (NaClO)",
+        "de": "Bleichlauge (NaClO)",
         "fr": "Eau de Javel (NaClO)",
         "ru": "Отбеливатель (NaClO)",
-        "ar": "التبييض (NaClO)",
-        "zh": "漂白剂（次氯酸钠）",
-        "ku": "Bleach (NaClO)"
+        "ar": "ماء الجافيل (NaClO)",
+        "zh": "漂白水 (NaClO)",
+        "ku": "Ava çilşoyê (NaClO)"
       },
       "conceptB": {
         "tr": "Kireç Kaymağı [Ca(ClO)2]",
-        "en": "Lime Cream [Ca(ClO)2]",
-        "de": "Limettencreme [Ca(ClO)2]",
-        "fr": "Crème de citron vert [Ca(ClO)2]",
-        "ru": "Лаймовый крем [Ca(ClO)2]",
-        "ar": "كريم الليمون [Ca(ClO)2]",
-        "zh": "石灰霜 [Ca(ClO)2]",
-        "ku": "Kîrema Lime [Ca(ClO)2]"
+        "en": "Bleaching Powder [Ca(ClO)2]",
+        "de": "Chlorkalk [Ca(ClO)2]",
+        "fr": "Chlorure de chaux [Ca(ClO)2]",
+        "ru": "Хлорная известь [Ca(ClO)2]",
+        "ar": "مسحوق التبييض [Ca(ClO)2]",
+        "zh": "漂白粉 [Ca(ClO)2]",
+        "ku": "Toza spîkirinê [Ca(ClO)2]"
       },
       "distinction": {
         "tr": "Çamaşır suyu sodyum hipoklorit sulu çözeltisidir; kireç kaymağı kalsiyum hipoklorit içeren katı dezenfektandır.",
-        "en": "Bleach is an aqueous solution of sodium hypochlorite; Lime cream is a solid disinfectant containing calcium hypochlorite.",
-        "de": "Bleichmittel ist eine wässrige Lösung von Natriumhypochlorit; Limettencreme ist ein festes Desinfektionsmittel, das Calciumhypochlorit enthält.",
-        "fr": "L'eau de Javel est une solution aqueuse d'hypochlorite de sodium ; La crème au citron vert est un désinfectant solide contenant de l'hypochlorite de calcium.",
-        "ru": "Отбеливатель представляет собой водный раствор гипохлорита натрия; Лаймовый крем – твердое дезинфицирующее средство, содержащее гипохлорит кальция.",
-        "ar": "المبيض هو محلول مائي من هيبوكلوريت الصوديوم. كريم الليمون هو مطهر صلب يحتوي على هيبوكلوريت الكالسيوم.",
-        "zh": "漂白剂是次氯酸钠的水溶液；石灰膏是一种含有次氯酸钙的固体消毒剂。",
-        "ku": "Bleach çareseriyek avî ya hîpochlorite sodyûmê ye; Lime cream dezenfektantek hişk e ku tê de hîpoklorît kalsiyûm heye."
+        "en": "Bleach is an aqueous solution of sodium hypochlorite; bleaching powder is a solid disinfectant containing calcium hypochlorite.",
+        "de": "Bleichlauge ist eine wässrige Natriumhypochloritlösung; Chlorkalk ist ein festes Desinfektionsmittel, das Calciumhypochlorit enthält.",
+        "fr": "L'eau de Javel est une solution aqueuse d'hypochlorite de sodium ; le chlorure de chaux est un désinfectant solide contenant de l'hypochlorite de calcium.",
+        "ru": "Отбеливатель — водный раствор гипохлорита натрия; хлорная известь — твёрдое дезинфицирующее средство, содержащее гипохлорит кальция.",
+        "ar": "ماء الجافيل محلول مائي لهيبوكلوريت الصوديوم؛ أما مسحوق التبييض فهو مطهر صلب يحتوي على هيبوكلوريت الكالسيوم.",
+        "zh": "漂白水是次氯酸钠的水溶液；漂白粉是含有次氯酸钙的固体消毒剂。",
+        "ku": "Ava çilşoyê çareseriya avî ya hîpoklorîta sodyûmê ye; toza spîkirinê dezenfektaneke hişk e ku hîpoklorîta kalsiyûmê dihewîne."
       }
     },
     {
       "id": "u10-c08",
       "conceptA": {
-        "tr": "Sabun",
-        "en": "soap",
-        "de": "Seife",
-        "fr": "savon",
-        "ru": "мыло",
-        "ar": "صابون",
-        "zh": "肥皂",
-        "ku": "sabûn"
+        "tr": "Tuz Ruhu (HCl)",
+        "en": "Spirit of Salt (HCl)",
+        "de": "Salzsäure (HCl)",
+        "fr": "Esprit de sel (HCl)",
+        "ru": "Соляная кислота (HCl)",
+        "ar": "روح الملح (HCl)",
+        "zh": "盐酸洁厕剂 (HCl)",
+        "ku": "Ruhê xwê (HCl)"
       },
       "conceptB": {
-        "tr": "Deterjan",
-        "en": "detergent",
-        "de": "Waschmittel",
-        "fr": "détergent",
-        "ru": "моющее средство",
-        "ar": "المنظفات",
-        "zh": "洗涤剂",
-        "ku": "detergent"
+        "tr": "Lavabo Açıcı (NaOH/KOH)",
+        "en": "Drain Opener (NaOH/KOH)",
+        "de": "Abflussreiniger (NaOH/KOH)",
+        "fr": "Déboucheur (NaOH/KOH)",
+        "ru": "Средство для прочистки труб (NaOH/KOH)",
+        "ar": "مسلّك المجاري (NaOH/KOH)",
+        "zh": "管道疏通剂 (NaOH/KOH)",
+        "ku": "Vekerê lavaboyê (NaOH/KOH)"
       },
       "distinction": {
-        "tr": "Sabun bitkisel/hayvansal yağdan üretilir doğada parçalanır; deterjan petrol türevidir sert sularda da temizler ama çevre kirliliği yapar.",
-        "en": "Soap is produced from vegetable/animal oil and breaks down in nature; Detergent is a petroleum derivative and cleans it in hard water, but it pollutes the environment.",
-        "de": "Seife wird aus pflanzlichem/tierischem Öl hergestellt und wird in der Natur abgebaut; Waschmittel ist ein Erdölderivat und reinigt zwar hartes Wasser, belastet jedoch die Umwelt.",
-        "fr": "Le savon est produit à partir d’huile végétale/animale et se décompose dans la nature ; Le détergent est un dérivé du pétrole et le nettoie avec de l'eau dure, mais il pollue l'environnement.",
-        "ru": "Мыло производится из растительного/животного масла и разлагается в природе; Моющее средство является производным нефти и очищает его в жесткой воде, но загрязняет окружающую среду.",
-        "ar": "يتم إنتاج الصابون من الزيوت النباتية/الحيوانية ويتحلل في الطبيعة؛ المنظفات عبارة عن مشتقات بترولية ويتم تنظيفها بالماء العسر، ولكنها تلوث البيئة.",
-        "zh": "肥皂由植物/动物油制成，在自然状态下会分解；洗涤剂是石油衍生物，用硬水清洗，但会污染环境。",
-        "ku": "Sabûn ji rûnê nebatî/heywanî çêdibe û di xwezayê de perçe dibe; Deterjan berhemeke petrolê ye û di ava hişk de paqij dike, lê jîngehê qirêj dike."
+        "tr": "Tuz ruhu seyreltik HCl çözeltisidir ve kireç (CaCO3) lekelerini çözer; lavabo açıcılar NaOH veya KOH gibi kuvvetli bazlar içerir ve yağ ile saç tıkanıklıklarını giderir.",
+        "en": "Spirit of salt is a dilute HCl solution that dissolves limescale (CaCO3); drain openers contain strong bases such as NaOH or KOH and clear grease and hair clogs.",
+        "de": "Salzsäure ist eine verdünnte HCl-Lösung und löst Kalkablagerungen (CaCO3); Abflussreiniger enthalten starke Basen wie NaOH oder KOH und lösen Fett- und Haarverstopfungen.",
+        "fr": "L'esprit de sel est une solution diluée de HCl qui dissout le calcaire (CaCO3) ; les déboucheurs contiennent des bases fortes comme NaOH ou KOH et éliminent les bouchons de graisse et de cheveux.",
+        "ru": "Бытовая соляная кислота — разбавленный раствор HCl, растворяющий известковый налёт (CaCO3); средства для прочистки труб содержат сильные основания (NaOH, KOH) и устраняют засоры из жира и волос.",
+        "ar": "روح الملح محلول مخفف من HCl يذيب الترسبات الكلسية (CaCO3)؛ أما مسلّكات المجاري فتحتوي على قواعد قوية مثل NaOH أو KOH وتزيل انسدادات الدهون والشعر.",
+        "zh": "盐酸洁厕剂是稀HCl溶液，可溶解水垢（CaCO3）；管道疏通剂含有NaOH或KOH等强碱，可清除油脂和毛发堵塞。",
+        "ku": "Ruhê xwê çareseriya sivik a HCl e û lekeyên kilsê (CaCO3) dihelîne; vekerên lavaboyê bazên xurt ên wekî NaOH an KOH dihewînin û girtinên rûn û por vedikin."
       }
     }
   ],
@@ -677,44 +677,44 @@ export const unit10: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Su ve sabun kire temas eder",
-          "en": "Water and soap come into contact with dirt",
-          "de": "Wasser und Seife kommen mit Schmutz in Kontakt",
-          "fr": "L'eau et le savon entrent en contact avec la saleté",
-          "ru": "Вода и мыло контактируют с грязью",
-          "ar": "يتلامس الماء والصابون مع الأوساخ",
-          "zh": "水和肥皂接触污垢",
-          "ku": "Av û sabûn bi axê re dikevin têkiliyê"
+          "tr": "Sabun suda çözünerek anyon ve katyonlarına ayrışır",
+          "en": "Soap dissolves in water and dissociates into anions and cations",
+          "de": "Seife löst sich in Wasser und dissoziiert in Anionen und Kationen",
+          "fr": "Le savon se dissout dans l'eau et se dissocie en anions et cations",
+          "ru": "Мыло растворяется в воде и диссоциирует на анионы и катионы",
+          "ar": "يذوب الصابون في الماء ويتفكك إلى أنيونات وكاتيونات",
+          "zh": "肥皂溶于水并电离成阴离子和阳离子",
+          "ku": "Sabûn di avê de dihele û dibe anyon û katyon"
         },
         {
-          "tr": "Apolar hidrofob kuyruklar apolar kire tutunur",
-          "en": "Nonpolar hydrophobic tails cling to nonpolar dirt",
-          "de": "Unpolare hydrophobe Schwänze haften an unpolarem Schmutz",
-          "fr": "Les queues hydrophobes apolaires s'accrochent à la saleté non polaire",
-          "ru": "Неполярные гидрофобные хвосты цепляются за неполярную грязь.",
-          "ar": "ذيول غير قطبية كارهة للماء تتشبث بالأوساخ غير القطبية",
-          "zh": "非极性疏水尾部粘附在非极性污垢上",
-          "ku": "Dûvên hîdrofobîk ên nepolar bi qirêjiya nepolar ve girêdayî ne"
+          "tr": "Sabun anyonlarının apolar kuyrukları apolar kire tutunur",
+          "en": "The nonpolar tails of the soap anions attach to the nonpolar dirt",
+          "de": "Die unpolaren Schwänze der Seifenanionen haften am unpolaren Schmutz",
+          "fr": "Les queues apolaires des anions du savon s'accrochent à la saleté apolaire",
+          "ru": "Неполярные хвосты анионов мыла прикрепляются к неполярной грязи",
+          "ar": "تلتصق الذيول غير القطبية لأنيونات الصابون بالأوساخ غير القطبية",
+          "zh": "肥皂阴离子的非极性尾部附着在非极性污垢上",
+          "ku": "Dûvikên ne-polar ên anyonên sabûnê bi qirêjiya ne-polar ve dizeliqin"
         },
         {
-          "tr": "Polar hidrofil başlar su molekülleriyle hidrojen bağı kurar",
-          "en": "Polar hydrophile begins to form hydrogen bonds with water molecules",
-          "de": "Polare Hydrophile beginnen, Wasserstoffbrückenbindungen mit Wassermolekülen zu bilden",
-          "fr": "L'hydrophile polaire commence à former des liaisons hydrogène avec les molécules d'eau",
-          "ru": "Полярный гидрофил начинает образовывать водородные связи с молекулами воды.",
-          "ar": "يبدأ محب الماء القطبي في تكوين روابط هيدروجينية مع جزيئات الماء",
-          "zh": "极性亲水剂开始与水分子形成氢键",
-          "ku": "Hîdrofîla polar bi molekulên avê re dest bi çêkirina bendên hîdrojenê dike"
+          "tr": "Kir taneciği, polar başları dışa (suya) dönük bir misel ile sarılır",
+          "en": "The dirt particle is enclosed in a micelle whose polar heads face outward toward the water",
+          "de": "Das Schmutzteilchen wird von einer Mizelle umschlossen, deren polare Köpfe nach außen zum Wasser zeigen",
+          "fr": "La particule de saleté est enfermée dans une micelle dont les têtes polaires sont tournées vers l'eau",
+          "ru": "Частица грязи заключается в мицеллу, полярные головки которой обращены наружу, к воде",
+          "ar": "تُحاط جسيمة الأوساخ بمذيلة تتجه رؤوسها القطبية إلى الخارج نحو الماء",
+          "zh": "污垢颗粒被包裹在胶束中，胶束的极性头部朝外指向水",
+          "ku": "Perçeya qirêjê di nav miselekê de tê pêçan ku serên wê yên polar ber bi derve (avê) ne"
         },
         {
-          "tr": "Çalkalama ile kir misel halinde yüzeyden sökülüp suya geçer",
-          "en": "By shaking, the dirt is removed from the surface as micelles and passes into the water.",
-          "de": "Durch Schütteln wird der Schmutz in Form von Mizellen von der Oberfläche gelöst und gelangt ins Wasser.",
-          "fr": "En secouant, la saleté est éliminée de la surface sous forme de micelles et passe dans l'eau.",
-          "ru": "При встряхивании грязь удаляется с поверхности в виде мицелл и переходит в воду.",
-          "ar": "عن طريق الرج، تتم إزالة الأوساخ من السطح على شكل مذيلات وتمر إلى الماء.",
-          "zh": "通过摇动，污垢以胶束形式从表面去除并进入水中。",
-          "ku": "Bi hejandinê re ax wek misel ji ser rûyê erdê tê derxistin û derbasî avê dibe."
+          "tr": "Çalkalama ile miseller yüzeyden sökülür ve suyla uzaklaştırılır",
+          "en": "With agitation, the micelles are lifted from the surface and carried away by water",
+          "de": "Durch Bewegen werden die Mizellen von der Oberfläche gelöst und mit dem Wasser fortgespült",
+          "fr": "Par agitation, les micelles se détachent de la surface et sont entraînées par l'eau",
+          "ru": "При встряхивании мицеллы отрываются от поверхности и уносятся водой",
+          "ar": "بالتحريك تنفصل المذيلات عن السطح ويحملها الماء بعيدًا",
+          "zh": "经搅动，胶束从表面脱离并被水带走",
+          "ku": "Bi hejandinê misel ji ser rûyê tiştî vediqetin û bi avê re diçin"
         }
       ]
     },
@@ -769,7 +769,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "При добавлении соли кусок мыла осаждается и глицерин отделяется.",
           "ar": "بإضافة الملح، يتم ترسيب قطعة الصابون وفصل الجلسرين.",
           "zh": "通过添加盐，皂条沉淀并分离出甘油。",
-          "ku": "Bi zêdekirina xwê, qalika sabûnê diherike û glycerin ji hev vediqete."
+          "ku": "Bi zêdekirina xwê, sabûn tê niştandin û glîserîn ji hev vediqete."
         }
       ]
     },
@@ -831,55 +831,55 @@ export const unit10: ChemistryUnitSeedData = {
     {
       "id": "u10-s04",
       "title": {
-        "tr": "Kirin Sabun Tarafından Temizlenmesi",
-        "en": "Cleaning Dirt with Soap",
-        "de": "Schmutz mit Seife reinigen",
-        "fr": "Nettoyer la saleté avec du savon",
-        "ru": "Очистка грязи мылом",
-        "ar": "تنظيف الأوساخ بالصابون",
-        "zh": "用肥皂清洁污垢",
-        "ku": "Paqijkirina Dirtê bi Sabûnê"
+        "tr": "PET Ambalajların Geri Dönüşüm Basamakları",
+        "en": "Recycling Steps for PET Packaging",
+        "de": "Recyclingschritte für PET-Verpackungen",
+        "fr": "Étapes du recyclage des emballages PET",
+        "ru": "Этапы переработки ПЭТ-упаковки",
+        "ar": "مراحل إعادة تدوير عبوات PET",
+        "zh": "PET包装的回收步骤",
+        "ku": "Gavên vezîvirandina ambalajên PET"
       },
       "steps": [
         {
-          "tr": "Sabunun apolar hidrofob kuyruğu apolar kire tutunur",
-          "en": "The non-polar hydrophobic tail of soap clings to non-polar dirt",
-          "de": "Der unpolare hydrophobe Schwanz der Seife haftet an unpolarem Schmutz",
-          "fr": "La queue hydrophobe non polaire du savon adhère à la saleté non polaire",
-          "ru": "Неполярный гидрофобный хвостик мыла прилипает к неполярной грязи.",
-          "ar": "يتمسك ذيل الصابون غير القطبي الكاره للماء بالأوساخ غير القطبية",
-          "zh": "肥皂的非极性疏水尾部粘附在非极性污垢上",
-          "ku": "Dûvê hîdrofobîk a ne-polar a sabûnê bi axê ne-polar ve girêdide"
+          "tr": "Kullanılmış PET ambalajlar toplanır",
+          "en": "Used PET packaging is collected",
+          "de": "Gebrauchte PET-Verpackungen werden gesammelt",
+          "fr": "Les emballages PET usagés sont collectés",
+          "ru": "Использованную ПЭТ-упаковку собирают",
+          "ar": "تُجمع عبوات PET المستعملة",
+          "zh": "收集用过的PET包装",
+          "ku": "Ambalajên PET ên bikaranîbûyî têne berhevkirin"
         },
         {
-          "tr": "Sabunun polar hidrofil başı suya yönelir",
-          "en": "The polar hydrophilic head of the soap is directed towards water",
-          "de": "Der polare hydrophile Kopf der Seife ist zum Wasser gerichtet",
-          "fr": "La tête polaire hydrophile du savon est dirigée vers l'eau",
-          "ru": "Полярная гидрофильная головка мыла направлена к воде.",
-          "ar": "يتم توجيه رأس الصابون القطبي المحب للماء نحو الماء",
-          "zh": "肥皂的极性亲水头指向水",
-          "ku": "Serê hîdrofîlî yê polar a sabûnê ber bi avê ve tê rêkirin"
+          "tr": "Ambalajlar geri dönüşüm kodlarına göre türlerine ayrıştırılır",
+          "en": "The packaging is sorted by type according to recycling codes",
+          "de": "Die Verpackungen werden nach Recyclingcodes sortiert",
+          "fr": "Les emballages sont triés par type selon leur code de recyclage",
+          "ru": "Упаковку сортируют по типам согласно кодам переработки",
+          "ar": "تُفرز العبوات حسب نوعها وفق رموز إعادة التدوير",
+          "zh": "按回收标识对包装进行分类",
+          "ku": "Ambalaj li gorî kodên vezîvirandinê li gorî cureyê xwe têne veqetandin"
         },
         {
-          "tr": "Kir molekülleri misel yapısı içine hapsedilir",
-          "en": "Dirt molecules are trapped within the micelle structure",
-          "de": "Schmutzmoleküle werden in der Mizellenstruktur eingeschlossen",
-          "fr": "Les molécules de saleté sont piégées dans la structure micellaire",
-          "ru": "Молекулы грязи задерживаются в структуре мицелл.",
-          "ar": "يتم احتجاز جزيئات الأوساخ داخل بنية المذيلة",
-          "zh": "污垢分子被困在胶束结构内",
-          "ku": "Molekulên qirêj di nav avahiya micelle de têne girtin"
+          "tr": "Ayrılan PET'ler yıkanır ve küçük pullar hâlinde kırılır",
+          "en": "The separated PET is washed and shredded into small flakes",
+          "de": "Das aussortierte PET wird gewaschen und zu kleinen Flakes zerkleinert",
+          "fr": "Le PET trié est lavé et broyé en petites paillettes",
+          "ru": "Отсортированный ПЭТ моют и измельчают в мелкие хлопья",
+          "ar": "يُغسل PET المفصول ويُفرم إلى رقائق صغيرة",
+          "zh": "分离出的PET经清洗后粉碎成小薄片",
+          "ku": "PET-ên veqetandî têne şuştin û dibin perçeyên piçûk"
         },
         {
-          "tr": "Su akıntısıyla miseller yüzeyden uzaklaştırılır",
-          "en": "The micelles are removed from the surface by the water stream.",
-          "de": "Die Mizellen werden durch den Wasserstrahl von der Oberfläche entfernt.",
-          "fr": "Les micelles sont éliminées de la surface par le courant d'eau.",
-          "ru": "Мицеллы удаляются с поверхности потоком воды.",
-          "ar": "تتم إزالة المذيلات من السطح عن طريق تيار الماء.",
-          "zh": "水流将胶束从表面去除。",
-          "ku": "Micelles bi herikîna avê ji ser rûyê erdê têne derxistin."
+          "tr": "Pullar eritilerek granül hâline getirilir ve yeni ürünlerin üretiminde kullanılır",
+          "en": "The flakes are melted into granules and used to make new products",
+          "de": "Die Flakes werden zu Granulat geschmolzen und zur Herstellung neuer Produkte verwendet",
+          "fr": "Les paillettes sont fondues en granulés et servent à fabriquer de nouveaux produits",
+          "ru": "Хлопья расплавляют в гранулы, из которых производят новые изделия",
+          "ar": "تُصهر الرقائق إلى حبيبات تُستخدم في تصنيع منتجات جديدة",
+          "zh": "薄片熔融制成颗粒，用于生产新产品",
+          "ku": "Perçe têne helandin û dibin granûl û di çêkirina berhemên nû de têne bikaranîn"
         }
       ]
     }
@@ -1051,14 +1051,14 @@ export const unit10: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Teflon (PTFE) su borusu kaplamasında esnek ambalaj olarak kullanılır.",
-          "en": "Teflon (PTFE) is used as flexible packaging in water pipe lining.",
-          "de": "Teflon (PTFE) wird als flexible Verpackung bei der Auskleidung von Wasserleitungen verwendet.",
-          "fr": "Le téflon (PTFE) est utilisé comme emballage flexible dans le revêtement des conduites d'eau.",
-          "ru": "Тефлон (ПТФЭ) используется в качестве гибкой упаковки при облицовке водопроводных труб.",
-          "ar": "يتم استخدام تفلون (PTFE) كتغليف مرن في بطانة أنابيب المياه.",
-          "zh": "聚四氟乙烯 (PTFE) 用作水管内衬的软包装。",
-          "ku": "Teflon (PTFE) wekî pakêtek maqûl di nav lûleya avê de tê bikar anîn."
+          "tr": "Market poşetleri en çok Teflon (PTFE) polimerinden üretilir.",
+          "en": "Shopping bags are mostly made of the polymer Teflon (PTFE).",
+          "de": "Einkaufstüten werden überwiegend aus dem Polymer Teflon (PTFE) hergestellt.",
+          "fr": "Les sacs de caisse sont principalement fabriqués en Téflon (PTFE).",
+          "ru": "Пластиковые пакеты в основном изготавливают из тефлона (ПТФЭ).",
+          "ar": "تُصنع أكياس التسوق البلاستيكية في الغالب من بوليمر التفلون (PTFE).",
+          "zh": "购物塑料袋主要由聚四氟乙烯（特氟龙，PTFE）制成。",
+          "ku": "Kîsikên bazarê bi piranî ji polîmera Teflon (PTFE) têne çêkirin."
         },
         {
           "tr": "Kauçuk sert kırılgan kristal bir maddedir.",
@@ -1402,7 +1402,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Моющее средство выпадает в осадок в жесткой воде и теряет свои чистящие свойства.",
           "ar": "يترسب المنظف في الماء العسر ويفقد خصائصه التنظيفية.",
           "zh": "洗涤剂在硬水中沉淀并失去其清洁性能。",
-          "ku": "Detergent di ava hişk de diherike û taybetmendiyên xwe yên paqijkirinê winda dike."
+          "ku": "Deterjan di ava hişk de tortî çêdike û taybetmendiya xwe ya paqijkirinê winda dike."
         }
       ],
       "correctIndex": 1,
@@ -1610,17 +1610,17 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Моющее средство выпадает в осадок в жесткой воде и теряет свои чистящие свойства.",
           "ar": "يترسب المنظف في الماء العسر ويفقد خصائصه التنظيفية.",
           "zh": "洗涤剂在硬水中沉淀并失去其清洁性能。",
-          "ku": "Detergent di ava hişk de diherike û taybetmendiyên xwe yên paqijkirinê winda dike."
+          "ku": "Deterjan di ava hişk de tortî çêdike û taybetmendiya xwe ya paqijkirinê winda dike."
         },
         {
-          "tr": "Teflon (PTFE) su borusu kaplamasında esnek ambalaj olarak kullanılır.",
-          "en": "Teflon (PTFE) is used as flexible packaging in water pipe lining.",
-          "de": "Teflon (PTFE) wird als flexible Verpackung bei der Auskleidung von Wasserleitungen verwendet.",
-          "fr": "Le téflon (PTFE) est utilisé comme emballage flexible dans le revêtement des conduites d'eau.",
-          "ru": "Тефлон (ПТФЭ) используется в качестве гибкой упаковки при облицовке водопроводных труб.",
-          "ar": "يتم استخدام تفلون (PTFE) كتغليف مرن في بطانة أنابيب المياه.",
-          "zh": "聚四氟乙烯 (PTFE) 用作水管内衬的软包装。",
-          "ku": "Teflon (PTFE) wekî pakêtek maqûl di nav lûleya avê de tê bikar anîn."
+          "tr": "Market poşetleri en çok Teflon (PTFE) polimerinden üretilir.",
+          "en": "Shopping bags are mostly made of the polymer Teflon (PTFE).",
+          "de": "Einkaufstüten werden überwiegend aus dem Polymer Teflon (PTFE) hergestellt.",
+          "fr": "Les sacs de caisse sont principalement fabriqués en Téflon (PTFE).",
+          "ru": "Пластиковые пакеты в основном изготавливают из тефлона (ПТФЭ).",
+          "ar": "تُصنع أكياس التسوق البلاستيكية في الغالب من بوليمر التفلون (PTFE).",
+          "zh": "购物塑料袋主要由聚四氟乙烯（特氟龙，PTFE）制成。",
+          "ku": "Kîsikên bazarê bi piranî ji polîmera Teflon (PTFE) têne çêkirin."
         },
         {
           "tr": "PET (Polietilen tereftalat) su şişeleri ve meşrubat kaplarında kullanılan geri dönüştürülebilir polimerdir.",
@@ -1752,7 +1752,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Формы выпуска: таблетки, драже, сироп, ампулы (инъекции), мазь и капли.",
           "ar": "أشكال الدواء: أقراص، دراج، شراب، أمبولة (حقن)، مرهم وقطرات.",
           "zh": "药物剂型：片剂、糖衣丸、糖浆、安瓿（注射剂）、软膏和滴剂。",
-          "ku": "Formên narkotîkê: Tablet, dragee, syrup, ampule (derzî), melhem û dilop."
+          "ku": "Formên dermanan: Tablet, dragee, syrup, ampule (derzî), melhem û dilop."
         },
         {
           "tr": "Sabunun polar baş kısmı apolar kire tutunur.",
@@ -1794,7 +1794,7 @@ export const unit10: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Формы выпуска: таблетки, драже, сироп, ампулы (инъекции), мазь и капли.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"أشكال الدواء: أقراص، دراج، شراب، أمبولة (حقن)، مرهم وقطرات.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“药物剂型：片剂、糖衣丸、糖浆、安瓿（注射剂）、软膏和滴剂。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Formên narkotîkê: Tablet, dragee, syrup, ampule (derzî), melhem û dilop.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Formên dermanan: Tablet, dragee, syrup, ampule (derzî), melhem û dilop.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1828,7 +1828,7 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Моющее средство выпадает в осадок в жесткой воде и теряет свои чистящие свойства.",
           "ar": "يترسب المنظف في الماء العسر ويفقد خصائصه التنظيفية.",
           "zh": "洗涤剂在硬水中沉淀并失去其清洁性能。",
-          "ku": "Detergent di ava hişk de diherike û taybetmendiyên xwe yên paqijkirinê winda dike."
+          "ku": "Deterjan di ava hişk de tortî çêdike û taybetmendiya xwe ya paqijkirinê winda dike."
         },
         {
           "tr": "Kozmetik ürünlerdeki paraben ve ftalatlar koruyucu ve yumuşatıcı olarak eklense de alerjen ve toksik etkileri vardır.",
@@ -1841,14 +1841,14 @@ export const unit10: ChemistryUnitSeedData = {
           "ku": "Her çend paraben û phthalates wekî parastin û nermker li hilberên kozmetîkî têne zêdekirin jî, ew xwedî bandorên alerjîk û jehrîn in."
         },
         {
-          "tr": "Teflon (PTFE) su borusu kaplamasında esnek ambalaj olarak kullanılır.",
-          "en": "Teflon (PTFE) is used as flexible packaging in water pipe lining.",
-          "de": "Teflon (PTFE) wird als flexible Verpackung bei der Auskleidung von Wasserleitungen verwendet.",
-          "fr": "Le téflon (PTFE) est utilisé comme emballage flexible dans le revêtement des conduites d'eau.",
-          "ru": "Тефлон (ПТФЭ) используется в качестве гибкой упаковки при облицовке водопроводных труб.",
-          "ar": "يتم استخدام تفلون (PTFE) كتغليف مرن في بطانة أنابيب المياه.",
-          "zh": "聚四氟乙烯 (PTFE) 用作水管内衬的软包装。",
-          "ku": "Teflon (PTFE) wekî pakêtek maqûl di nav lûleya avê de tê bikar anîn."
+          "tr": "Market poşetleri en çok Teflon (PTFE) polimerinden üretilir.",
+          "en": "Shopping bags are mostly made of the polymer Teflon (PTFE).",
+          "de": "Einkaufstüten werden überwiegend aus dem Polymer Teflon (PTFE) hergestellt.",
+          "fr": "Les sacs de caisse sont principalement fabriqués en Téflon (PTFE).",
+          "ru": "Пластиковые пакеты в основном изготавливают из тефлона (ПТФЭ).",
+          "ar": "تُصنع أكياس التسوق البلاستيكية في الغالب من بوليمر التفلون (PTFE).",
+          "zh": "购物塑料袋主要由聚四氟乙烯（特氟龙，PTFE）制成。",
+          "ku": "Kîsikên bazarê bi piranî ji polîmera Teflon (PTFE) têne çêkirin."
         },
         {
           "tr": "Kauçuk sert kırılgan kristal bir maddedir.",
@@ -2039,7 +2039,7 @@ export const unit10: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Pastörizasyon gıdadaki patojen bakterileri öldürmek için 60-75 °C de kısa süreli ısıtma işlemidir.",
+          "tr": "Pastörizasyon gıdadaki patojen bakterileri öldürmek için 60-75 °C'de kısa süreli ısıtma işlemidir.",
           "en": "Pasteurization is a short-term heating process at 60-75 °C to kill pathogenic bacteria in food.",
           "de": "Bei der Pasteurisierung handelt es sich um einen kurzzeitigen Erhitzungsprozess bei 60–75 °C, um krankheitserregende Bakterien in Lebensmitteln abzutöten.",
           "fr": "La pasteurisation est un processus de chauffage à court terme entre 60 et 75 °C destiné à tuer les bactéries pathogènes présentes dans les aliments.",
@@ -2056,17 +2056,17 @@ export const unit10: ChemistryUnitSeedData = {
           "ru": "Моющее средство выпадает в осадок в жесткой воде и теряет свои чистящие свойства.",
           "ar": "يترسب المنظف في الماء العسر ويفقد خصائصه التنظيفية.",
           "zh": "洗涤剂在硬水中沉淀并失去其清洁性能。",
-          "ku": "Detergent di ava hişk de diherike û taybetmendiyên xwe yên paqijkirinê winda dike."
+          "ku": "Deterjan di ava hişk de tortî çêdike û taybetmendiya xwe ya paqijkirinê winda dike."
         },
         {
-          "tr": "Teflon (PTFE) su borusu kaplamasında esnek ambalaj olarak kullanılır.",
-          "en": "Teflon (PTFE) is used as flexible packaging in water pipe lining.",
-          "de": "Teflon (PTFE) wird als flexible Verpackung bei der Auskleidung von Wasserleitungen verwendet.",
-          "fr": "Le téflon (PTFE) est utilisé comme emballage flexible dans le revêtement des conduites d'eau.",
-          "ru": "Тефлон (ПТФЭ) используется в качестве гибкой упаковки при облицовке водопроводных труб.",
-          "ar": "يتم استخدام تفلون (PTFE) كتغليف مرن في بطانة أنابيب المياه.",
-          "zh": "聚四氟乙烯 (PTFE) 用作水管内衬的软包装。",
-          "ku": "Teflon (PTFE) wekî pakêtek maqûl di nav lûleya avê de tê bikar anîn."
+          "tr": "Market poşetleri en çok Teflon (PTFE) polimerinden üretilir.",
+          "en": "Shopping bags are mostly made of the polymer Teflon (PTFE).",
+          "de": "Einkaufstüten werden überwiegend aus dem Polymer Teflon (PTFE) hergestellt.",
+          "fr": "Les sacs de caisse sont principalement fabriqués en Téflon (PTFE).",
+          "ru": "Пластиковые пакеты в основном изготавливают из тефлона (ПТФЭ).",
+          "ar": "تُصنع أكياس التسوق البلاستيكية في الغالب من بوليمر التفلون (PTFE).",
+          "zh": "购物塑料袋主要由聚四氟乙烯（特氟龙，PTFE）制成。",
+          "ku": "Kîsikên bazarê bi piranî ji polîmera Teflon (PTFE) têne çêkirin."
         },
         {
           "tr": "Kauçuk sert kırılgan kristal bir maddedir.",
@@ -2091,7 +2091,7 @@ export const unit10: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Pastörizasyon gıdadaki patojen bakterileri öldürmek için 60-75 °C de kısa süreli ısıtma işlemidir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Pastörizasyon gıdadaki patojen bakterileri öldürmek için 60-75 °C'de kısa süreli ısıtma işlemidir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Pasteurization is a short-term heating process at 60-75 °C to kill pathogenic bacteria in food.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Bei der Pasteurisierung handelt es sich um einen kurzzeitigen Erhitzungsprozess bei 60–75 °C, um krankheitserregende Bakterien in Lebensmitteln abzutöten.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La pasteurisation est un processus de chauffage à court terme entre 60 et 75 °C destiné à tuer les bactéries pathogènes présentes dans les aliments.\". Notion fondamentale du programme officiel de chimie.",

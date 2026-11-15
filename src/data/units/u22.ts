@@ -31,13 +31,13 @@ export const unit22: ChemistryUnitSeedData = {
       "id": "u22-f01",
       "fact": {
         "tr": "Elektroliz, istemsiz (E°pil < 0) bir redoks tepkimesinin dışarıdan elektrik enerjisi verilerek zorla gerçekleştirilmesidir.",
-        "en": "Electrolysis is the forced execution of an involuntary (E°pil < 0) redox reaction by applying external electrical energy.",
-        "de": "Elektrolyse ist die erzwungene Durchführung einer unwillkürlichen (E°pil < 0) Redoxreaktion durch Zufuhr externer elektrischer Energie.",
-        "fr": "L'électrolyse est l'exécution forcée d'une réaction redox involontaire (E°pil < 0) par application d'énergie électrique externe.",
-        "ru": "Электролиз — это принудительное выполнение непроизвольной (E°pil < 0) окислительно-восстановительной реакции за счет приложения внешней электрической энергии.",
-        "ar": "التحليل الكهربائي هو التنفيذ القسري لتفاعل الأكسدة والاختزال اللاإرادي (E°pil <0) عن طريق تطبيق الطاقة الكهربائية الخارجية.",
-        "zh": "电解是通过施加外部电能强制执行非自愿（E°pil < 0）氧化还原反应。",
-        "ku": "Elektrolîz bi sepandina enerjiya elektrîkê ya derve bi zorê pêkanîna reaksiyonek redoksê ya neçar (E°pil <0) ye."
+        "en": "Electrolysis is driving a non-spontaneous (E°cell < 0) redox reaction by supplying electrical energy from an external source.",
+        "de": "Elektrolyse ist die erzwungene Durchführung einer nicht freiwilligen (E°Zelle < 0) Redoxreaktion durch Zufuhr elektrischer Energie von außen.",
+        "fr": "L'électrolyse consiste à forcer une réaction redox non spontanée (E°pile < 0) en fournissant de l'énergie électrique depuis l'extérieur.",
+        "ru": "Электролиз — это принудительное осуществление несамопроизвольной (E°эл < 0) окислительно-восстановительной реакции за счёт подводимой извне электрической энергии.",
+        "ar": "التحليل الكهربائي هو إجبار تفاعل أكسدة واختزال غير تلقائي (E°خلية < 0) على الحدوث بتزويده بطاقة كهربائية من مصدر خارجي.",
+        "zh": "电解是通过外加电能迫使非自发（E°电池 < 0）的氧化还原反应发生的过程。",
+        "ku": "Elektrolîz, bi dayîna enerjiya elektrîkê ji derve, bi zorê pêkanîna reaksiyoneke redoksê ya ne-xweber (E°pîl < 0) ye."
       },
       "trap": {
         "tr": "Elektroliz kendiliğinden elektrik üreten bir galvanik sistemdir.",
@@ -46,7 +46,7 @@ export const unit22: ChemistryUnitSeedData = {
         "fr": "L'électrolyse est un système galvanique qui produit spontanément de l'électricité.",
         "ru": "Электролиз – это гальваническая система, которая самопроизвольно производит электричество.",
         "ar": "التحليل الكهربائي هو نظام كلفاني ينتج الكهرباء تلقائيًا.",
-        "zh": "电解是一种自发发电的电流系统。",
+        "zh": "电解是一种能自发产生电能的原电池体系。",
         "ku": "Elektrolîz pergalek galvanîk e ku bi xweber elektrîkê hildiberîne."
       }
     },
@@ -100,13 +100,13 @@ export const unit22: ChemistryUnitSeedData = {
       "id": "u22-f04",
       "fact": {
         "tr": "Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z)'dir (z: tesir değerliği / alınan-verilen elektron sayısı).",
-        "en": "The formula for the mass of matter collected at the electrodes is: m = (Q * MA) / (96500 * z) (z: potency / number of electrons given and received).",
-        "de": "Die Formel für die an den Elektroden gesammelte Materiemasse lautet: m = (Q * MA) / (96500 * z) (z: Potenz / Anzahl der abgegebenen und empfangenen Elektronen).",
-        "fr": "La formule de la masse de matière collectée au niveau des électrodes est : m = (Q * MA) / (96500 * z) (z : puissance / nombre d'électrons donnés et reçus).",
-        "ru": "Формула массы вещества, собранного на электродах, такова: m = (Q * MA) / (96500 * z) (z: мощность / количество отданных и полученных электронов).",
-        "ar": "صيغة كتلة المادة المجمعة عند الأقطاب الكهربائية هي: m = (Q * MA) / (96500 * z) (z: الفاعلية / عدد الإلكترونات المقدمة والمستقبلة).",
-        "zh": "电极处收集的物质质量的公式为：m = (Q * MA) / (96500 * z) （z：效能/发出和接收的电子数量）。",
-        "ku": "Formula girseya maddeya ku li elektrodê kom dibe ev e: m = (Q * MA) / (96500 * z) (z: hêz / hejmara elektronên ku hatine dayîn û wergirtin)."
+        "en": "The formula for the mass deposited at an electrode is m = (Q * MA) / (96500 * z) (z: valence factor, i.e. the number of electrons gained or lost).",
+        "de": "Die an einer Elektrode abgeschiedene Masse beträgt m = (Q * MA) / (96500 * z) (z: Wertigkeit, d. h. Zahl der aufgenommenen bzw. abgegebenen Elektronen).",
+        "fr": "La masse déposée à une électrode est m = (Q * MA) / (96500 * z) (z : valence, c'est-à-dire le nombre d'électrons captés ou cédés).",
+        "ru": "Масса вещества, выделившегося на электроде: m = (Q * MA) / (96500 * z) (z — валентность, т. е. число принятых или отданных электронов).",
+        "ar": "كتلة المادة المترسبة عند القطب: m = (Q * MA) / (96500 * z) (z: التكافؤ، أي عدد الإلكترونات المكتسبة أو المفقودة).",
+        "zh": "电极上析出物质的质量公式为 m = (Q * MA) / (96500 * z)（z：化合价，即得失电子数）。",
+        "ku": "Formula girseya maddeya ku li elektrodê kom dibe: m = (Q * MA) / (96500 * z) (z: valans, ango hejmara elektronên hatine wergirtin an dayîn)."
       },
       "trap": {
         "tr": "Toplanan madde kütlesi maddenin mol kütlesine bölünerek bulunur.",
@@ -145,14 +145,14 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-f06",
       "fact": {
-        "tr": "Suyun elektrolizinde (Hoffman voltametresi): Katotta 2 hacim H2 gazı toplanırken, anotta 1 hacim O2 gazı toplanır (2 H2O -> 2 H2 + O2).",
-        "en": "In the electrolysis of water (Hoffman voltammeter): While 2 volumes of H2 gas are collected at the cathode, 1 volume of O2 gas is collected at the anode (2 H2O -> 2 H2 + O2).",
-        "de": "Bei der Elektrolyse von Wasser (Hoffman-Voltammeter): Während an der Kathode 2 Volumina H2-Gas gesammelt werden, wird an der Anode 1 Volumen O2-Gas gesammelt (2 H2O -> 2 H2 + O2).",
-        "fr": "Dans l'électrolyse de l'eau (voltampèremètre Hoffman) : Alors que 2 volumes de gaz H2 sont collectés à la cathode, 1 volume de gaz O2 est collecté à l'anode (2 H2O -> 2 H2 + O2).",
-        "ru": "При электролизе воды (вольтамперметр Хоффмана): на катоде собирается 2 объема газообразного H2, на аноде собирается 1 объем газообразного O2 (2 H2O -> 2 H2 + O2).",
-        "ar": "في التحليل الكهربائي للماء (فولتاميتر هوفمان): بينما يتم جمع حجمين من غاز H2 عند الكاثود، يتم جمع حجم واحد من غاز O2 عند الأنود (2 H2O -> 2 H2 + O2).",
-        "zh": "在水电解中（霍夫曼伏安计）：在阴极收集 2 体积的 H2 气体，在阳极收集 1 体积的 O2 气体 (2 H2O -> 2 H2 + O2)。",
-        "ku": "Di elektrolîza avê de (voltametra Hoffman): Dema ku li katodê 2 cild gaza H2, li anodê 1 cild gaza O2 tê berhevkirin (2 H2O -> 2 H2 + O2)."
+        "tr": "Suyun elektrolizinde (Hoffman voltametresi): Katotta 2 hacim H2 gazı toplanırken, anotta 1 hacim O2 gazı toplanır (2 H2O → 2 H2 + O2).",
+        "en": "In the electrolysis of water (Hoffman voltammeter): While 2 volumes of H2 gas are collected at the cathode, 1 volume of O2 gas is collected at the anode (2 H2O → 2 H2 + O2).",
+        "de": "Bei der Elektrolyse von Wasser (Hoffman-Voltammeter): Während an der Kathode 2 Volumina H2-Gas gesammelt werden, wird an der Anode 1 Volumen O2-Gas gesammelt (2 H2O → 2 H2 + O2).",
+        "fr": "Dans l'électrolyse de l'eau (voltampèremètre Hoffman) : Alors que 2 volumes de gaz H2 sont collectés à la cathode, 1 volume de gaz O2 est collecté à l'anode (2 H2O → 2 H2 + O2).",
+        "ru": "При электролизе воды (вольтамперметр Хоффмана): на катоде собирается 2 объема газообразного H2, на аноде собирается 1 объем газообразного O2 (2 H2O → 2 H2 + O2).",
+        "ar": "في التحليل الكهربائي للماء (فولتاميتر هوفمان): بينما يتم جمع حجمين من غاز H2 عند الكاثود، يتم جمع حجم واحد من غاز O2 عند الأنود (2 H2O → 2 H2 + O2).",
+        "zh": "在水电解中（霍夫曼伏安计）：在阴极收集 2 体积的 H2 气体，在阳极收集 1 体积的 O2 气体 (2 H2O → 2 H2 + O2)。",
+        "ku": "Di elektrolîza avê de (voltametra Hoffman): Dema ku li katodê 2 cild gaza H2, li anodê 1 cild gaza O2 tê berhevkirin (2 H2O → 2 H2 + O2)."
       },
       "trap": {
         "tr": "Suyun elektrolizinde anotta katottan 2 kat daha fazla gaz toplanır.",
@@ -173,7 +173,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Bei der Elektrolyse geschmolzener Salze wird das Kation an der Kathode reduziert und das Metall freigesetzt; An der Anode wird das Anion oxidiert und nichtmetallisches Gas freigesetzt.",
         "fr": "Lors de l'électrolyse des sels fondus, le cation est réduit à la cathode et le métal est libéré ; À l'anode, l'anion est oxydé et un gaz non métallique est libéré.",
         "ru": "При электролизе расплавленных солей катион восстанавливается на катоде и выделяется металл; На аноде анион окисляется и выделяется неметаллический газ.",
-        "ar": "في التحليل الكهربائي للأملاح المنصهرة، يتم تقليل الكاتيون عند الكاثود ويتم تحرير المعدن؛ عند الأنود، يتأكسد الأنيون ويتم إطلاق الغاز غير المعدني.",
+        "ar": "في التحليل الكهربائي للأملاح المنصهرة يُختزل الكاتيون عند الكاثود فيتحرر الفلز؛ ويتأكسد الأنيون عند الأنود فيتحرر غاز لافلزي.",
         "zh": "熔盐电解时，阳离子在阴极被还原，释放出金属；在阳极，阴离子被氧化并释放出非金属气体。",
         "ku": "Di elektrolîza xwêyên şilandî de, kation li katodê kêm dibe û metal tê berdan; Li anodê, anyon oksîde dibe û gaza nemetal derdikeve."
       },
@@ -196,7 +196,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Bei der Elektrolyse wässriger Lösungen wird zuerst das Kation mit dem größten Reduktionspotential (das passivste Kation) an der Kathode reduziert.",
         "fr": "Dans l'électrolyse en solution aqueuse, le cation ayant le potentiel de réduction le plus élevé (le cation le plus passif) à la cathode est réduit en premier.",
         "ru": "При электролизе водного раствора катион с наибольшим восстановительным потенциалом (самый пассивный катион) на катоде восстанавливается первым.",
-        "ar": "في التحليل الكهربائي للمحلول المائي، يتم اختزال الكاتيون ذو احتمالية الاختزال الأكبر (الكاتيون الأكثر سلبية) عند الكاثود أولاً.",
+        "ar": "في التحليل الكهربائي للمحاليل المائية يُختزل أولًا عند الكاثود الكاتيون ذو جهد الاختزال الأكبر (الكاتيون الأقل نشاطًا).",
         "zh": "在水溶液电解中，阴极处还原电势最大的阳离子（最惰性的阳离子）首先被还原。",
         "ku": "Di elektrolîza çareseriya avî de, kationa ku potansiyela kêmkirina herî mezin (kationa herî pasîf) li katodê pêşî kêm dibe."
       },
@@ -219,7 +219,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Bei der Elektrolyse wässriger Lösungen wird zuerst das Anion mit dem höchsten Oxidationspotential (das aktivste Anion) an der Anode oxidiert.",
         "fr": "Dans l'électrolyse en solution aqueuse, l'anion ayant le potentiel d'oxydation le plus élevé (l'anion le plus actif) à l'anode est oxydé en premier.",
         "ru": "При электролизе водного раствора анион с самым высоким окислительным потенциалом (наиболее активный анион) на аноде окисляется первым.",
-        "ar": "في التحليل الكهربائي للمحلول المائي، يتم أكسدة الأنيون الذي يتمتع بأعلى قدرة أكسدة (الأنيون الأكثر نشاطًا) عند الأنود أولاً.",
+        "ar": "في التحليل الكهربائي للمحاليل المائية يتأكسد أولًا عند الأنود الأنيون ذو جهد التأكسد الأكبر (الأنيون الأكثر نشاطًا).",
         "zh": "在水溶液电解中，阳极处氧化电位最高的阴离子（最活泼的阴离子）首先被氧化。",
         "ku": "Di elektrolîza çareseriya avî de, anyona ku potansiyela oksîdasyonê ya herî zêde (anyona herî çalak) li anodê ye pêşî tê oksîd kirin."
       },
@@ -229,7 +229,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Das Anion mit dem kleinsten Oxidationspotential an der Anode entsteht zuerst.",
         "fr": "L’anion ayant le plus petit potentiel d’oxydation à l’anode émerge en premier.",
         "ru": "Первым на аноде выходит анион с наименьшим окислительным потенциалом.",
-        "ar": "يظهر الأنيون ذو احتمالية الأكسدة الأصغر عند الأنود أولاً.",
+        "ar": "يتأكسد أولًا عند الأنود الأنيون ذو جهد التأكسد الأصغر.",
         "zh": "阳极氧化电位最小的阴离子首先出现。",
         "ku": "Anyona xwedan potansiyela oksîdasyonê ya herî piçûk li anodê pêşî derdikeve holê."
       }
@@ -275,7 +275,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Als Opferelektrode sollte ein passiveres Metall als das zu schützende Metall gewählt werden.",
         "fr": "Un métal plus passif que le métal à protéger doit être choisi comme électrode sacrificielle.",
         "ru": "В качестве жертвующего электрода следует выбрать более пассивный металл, чем защищаемый металл.",
-        "ar": "يجب اختيار معدن أكثر سلبية من المعدن المراد حمايته ليكون القطب الكهربائي المضحي.",
+        "ar": "يجب اختيار فلز أقل نشاطًا من الفلز المراد حمايته ليكون القطب المضحّي.",
         "zh": "应选择比被保护金属更惰性的金属作为牺牲电极。",
         "ku": "Pêdivî ye ku ji metalê ku were parastin metalek pasîftir wekî elektrodê qurban were hilbijartin."
       }
@@ -286,11 +286,11 @@ export const unit22: ChemistryUnitSeedData = {
         "tr": "Elektrolitik kaplamacılıkta (galvanoplasti): Kaplanacak eşya KATOTA bağlanır; kaplama metali ANOTA bağlanır.",
         "en": "In electrolytic plating (galvanoplasty): The item to be coated is connected to the CATHOD; The coating metal is connected to the ANODE.",
         "de": "Bei der elektrolytischen Beschichtung (Galvanoplastie): Der zu beschichtende Gegenstand wird mit der KATHODE verbunden; Das Beschichtungsmetall ist mit der ANODE verbunden.",
-        "fr": "En placage électrolytique (galvanoplastie) : La pièce à revêtir est reliée à la CATHOD ; Le métal de revêtement est connecté à l'ANODE.",
+        "fr": "En galvanoplastie (dépôt électrolytique) : l'objet à revêtir est relié à la CATHODE ; le métal de revêtement est relié à l'ANODE.",
         "ru": "При гальванопластике (гальванопластике): Изделие, на которое будет нанесено покрытие, подключается к КАТОДУ; Металл покрытия соединен с АНОДОМ.",
-        "ar": "في الطلاء الكهربائي (رأب الجلفانوبلاستي): يتم توصيل العنصر المراد طلاءه بـ CATHOD؛ يتم توصيل معدن الطلاء بالأنود.",
+        "ar": "في الطلاء الكهربائي (الجلفنة الكهربائية): يوصل الجسم المراد طلاؤه بالكاثود، ويوصل فلز الطلاء بالأنود.",
         "zh": "在电解电镀（电镀成形术）中：将要涂覆的物品连接到阴极；涂层金属连接到阳极。",
-        "ku": "Di plating elektrolîtîk de (galvanoplasty): Tiştê ku tê pêçan bi CATHOD ve girêdayî ye; Metalê pêçanê bi ANODE ve girêdayî ye."
+        "ku": "Di pêçana elektrolîtîk de (galvanoplastî): tiştê ku dê were pêçandin bi KATODÊ ve, metala pêçanê jî bi ANODÊ ve tê girêdan."
       },
       "trap": {
         "tr": "Kaplanacak eşya anota bağlanmalıdır.",
@@ -313,7 +313,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ru": "Поскольку чистая вода проводит электричество очень мало, в среду для увеличения проводимости при электролизе воды добавляют несколько капель H2SO4.",
         "ar": "نظرًا لأن الماء النقي يوصل الكهرباء بشكل قليل جدًا، تتم إضافة بضع قطرات من H2SO4 إلى الوسط لزيادة التوصيلية في التحليل الكهربائي للماء.",
         "zh": "由于纯水的导电性很小，因此在介质中添加几滴H2SO4以增加水电解时的电导率。",
-        "ku": "Ji ber ku ava paqij elektrîkê pir hindik derbas dike, çend dilopên H2SO4 li navgînê têne zêdekirin da ku guheztina di elektrolîza avê de zêde bikin."
+        "ku": "Ji ber ku ava paqij elektrîkê pir hindik diguhezîne, di elektrolîza avê de ji bo zêdekirina guhêzbariyê çend dilop H2SO4 lê tê zêdekirin."
       },
       "trap": {
         "tr": "Suyun elektrolizi için saf suya şeker eklenir.",
@@ -329,24 +329,24 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-f14",
       "fact": {
-        "tr": "Erimiş CaCl2 tuzundan 2 Faraday akım geçerse katotta 1 mol Ca metali toplanır (Ca2+ + 2e- -> Ca).",
-        "en": "If a current of 2 Faradays passes through the molten CaCl2 salt, 1 mole of Ca metal is collected at the cathode (Ca2+ + 2e- -> Ca).",
-        "de": "Wenn ein Strom von 2 Faradays durch das geschmolzene CaCl2-Salz fließt, wird 1 Mol Ca-Metall an der Kathode gesammelt (Ca2+ + 2e- -> Ca).",
-        "fr": "Si un courant de 2 Faraday traverse le sel CaCl2 fondu, 1 mole de métal Ca est collectée à la cathode (Ca2+ + 2e- -> Ca).",
-        "ru": "Если через расплавленную соль CaCl2 пройти ток силой 2 Фарадея, то на катоде соберется 1 моль металлического Са (Са2+ + 2е- -> Са).",
-        "ar": "إذا مر تيار مقداره 2 فاراداي عبر ملح CaCl المنصهر، فسيتم جمع 1 مول من معدن Ca عند الكاثود (Ca2+ + 2e- -> Ca).",
-        "zh": "如果 2 法拉第的电流通过熔融的 CaCl2 盐，则在阴极处收集 1 摩尔的 Ca 金属 (Ca2+ + 2e- -> Ca)。",
-        "ku": "Ger herikîna 2 Faraday di xwêya CaCl2 ya şilandî re derbas bibe, 1 mol metal Ca li katodê tê berhev kirin (Ca2+ + 2e- -> Ca)."
+        "tr": "Erimiş CaCl2 tuzundan 2 Faraday akım geçerse katotta 1 mol Ca metali toplanır (Ca2+ + 2e- → Ca).",
+        "en": "If a current of 2 Faradays passes through the molten CaCl2 salt, 1 mole of Ca metal is collected at the cathode (Ca2+ + 2e- → Ca).",
+        "de": "Wenn ein Strom von 2 Faradays durch das geschmolzene CaCl2-Salz fließt, wird 1 Mol Ca-Metall an der Kathode gesammelt (Ca2+ + 2e- → Ca).",
+        "fr": "Si un courant de 2 Faraday traverse le sel CaCl2 fondu, 1 mole de métal Ca est collectée à la cathode (Ca2+ + 2e- → Ca).",
+        "ru": "Если через расплав CaCl2 пропустить 2 фарадея электричества, на катоде выделится 1 моль металлического Ca (Ca2+ + 2e- → Ca).",
+        "ar": "إذا مرت كمية كهرباء مقدارها 2 فاراداي في مصهور CaCl2 يترسب 1 مول من فلز Ca عند الكاثود (Ca2+ + 2e- → Ca).",
+        "zh": "如果 2 法拉第的电流通过熔融的 CaCl2 盐，则在阴极处收集 1 摩尔的 Ca 金属 (Ca2+ + 2e- → Ca)。",
+        "ku": "Ger herikîna 2 Faraday di xwêya CaCl2 ya şilandî re derbas bibe, 1 mol metal Ca li katodê tê berhev kirin (Ca2+ + 2e- → Ca)."
       },
       "trap": {
         "tr": "2 Faraday akım geçtiğinde 2 mol Ca metali toplanır.",
         "en": "When 2 Faraday current passes, 2 moles of Ca metal are collected.",
         "de": "Wenn ein Strom von 2 Faraday fließt, werden 2 Mol Ca-Metall gesammelt.",
-        "fr": "Lorsque 2 courants de Faraday passent, 2 moles de métal Ca sont collectées.",
-        "ru": "При прохождении тока силой 2 Фарадея собирается 2 моля металлического Са.",
-        "ar": "عند مرور 2 تيار فاراداي، يتم جمع 2 مول من فلز الكالسيوم.",
+        "fr": "Lorsque 2 faradays traversent la cellule, 2 moles de calcium métallique sont recueillies.",
+        "ru": "При прохождении 2 фарадеев электричества выделяется 2 моль металлического Ca.",
+        "ar": "عند مرور 2 فاراداي يترسب 2 مول من فلز Ca.",
         "zh": "当通过 2 法拉第电流时，会收集 2 摩尔的 Ca 金属。",
-        "ku": "Dema ku 2 niha Faraday derbas dibe, 2 mol metal Ca tê berhev kirin."
+        "ku": "Dema 2 Faraday bar derbas dibe, 2 mol metala Ca kom dibe."
       }
     },
     {
@@ -376,12 +376,12 @@ export const unit22: ChemistryUnitSeedData = {
       "id": "u22-f16",
       "fact": {
         "tr": "Demir bir boruyu korozyondan korumak için magnezyum bloğu bağlanması aktiflik farkına dayalı kurban elektrot uygulamasıdır.",
-        "en": "Bonding a magnesium block to protect an iron pipe from corrosion is a sacrificial electrode application based on activity difference.",
-        "de": "Das Verkleben eines Magnesiumblocks zum Schutz eines Eisenrohrs vor Korrosion ist eine Opferelektrodenanwendung, die auf Aktivitätsunterschieden basiert.",
-        "fr": "Le collage d'un bloc de magnésium pour protéger un tuyau en fer de la corrosion est une application d'électrode sacrificielle basée sur la différence d'activité.",
-        "ru": "Приклеивание магниевого блока для защиты железной трубы от коррозии — это применение жертвенного электрода, основанное на разнице активности.",
+        "en": "Connecting a magnesium block to an iron pipe to protect it from corrosion is a sacrificial-electrode application based on the difference in activity.",
+        "de": "Das leitende Verbinden eines Magnesiumblocks mit einem Eisenrohr zum Korrosionsschutz ist eine Anwendung der Opferelektrode, die auf dem Aktivitätsunterschied beruht.",
+        "fr": "Relier électriquement un bloc de magnésium à un tuyau en fer pour le protéger de la corrosion est une application de l'électrode sacrificielle fondée sur la différence d'activité.",
+        "ru": "Подключение магниевого блока к железной трубе для защиты от коррозии — это применение жертвенного электрода, основанное на разнице активности металлов.",
         "ar": "إن ربط كتلة من المغنيسيوم لحماية أنبوب حديدي من التآكل هو تطبيق قطب كهربائي مضحٍ يعتمد على اختلاف النشاط.",
-        "zh": "粘合镁块以保护铁管免受腐蚀是一种基于活性差异的牺牲电极应用。",
+        "zh": "将镁块用导线与铁管相连以防止铁管腐蚀，是基于金属活动性差异的牺牲电极应用。",
         "ku": "Girêdana bloka magnesiumê ji bo parastina boriyek hesin ji korozyonê serîlêdanek elektrodê ya qurbanî ye ku li ser bingeha cûdahiya çalakiyê ye."
       },
       "trap": {
@@ -421,13 +421,13 @@ export const unit22: ChemistryUnitSeedData = {
       },
       "distinction": {
         "tr": "Pil kimyasal enerjiyi elektrik enerjisine çevirir (istemli); elektroliz elektrikle istemsiz tepkimeyi yürütür.",
-        "en": "The battery converts chemical energy into electrical energy (voluntary); Electrolysis drives an involuntary reaction with electricity.",
-        "de": "Die Batterie wandelt chemische Energie in elektrische Energie um (freiwillig); Die Elektrolyse löst eine unwillkürliche Reaktion mit Elektrizität aus.",
-        "fr": "La batterie convertit l'énergie chimique en énergie électrique (volontaire) ; L'électrolyse provoque une réaction involontaire avec l'électricité.",
-        "ru": "Батарея преобразует химическую энергию в электрическую (произвольно); Электролиз вызывает непроизвольную реакцию с электричеством.",
-        "ar": "تقوم البطارية بتحويل الطاقة الكيميائية إلى طاقة كهربائية (طوعية)؛ يؤدي التحليل الكهربائي إلى تفاعل لا إرادي مع الكهرباء.",
-        "zh": "电池将化学能转化为电能（自愿）；电解会与电发生非自愿反应。",
-        "ku": "Pîl enerjiya kîmyewî vediguherîne enerjiya elektrîkê (bi dilxwazî); Elektrolîz bi elektrîkê re reaksiyonek bê dildar dimeşîne."
+        "en": "A galvanic cell converts chemical energy into electrical energy (spontaneous); electrolysis uses electricity to drive a non-spontaneous reaction.",
+        "de": "Eine galvanische Zelle wandelt chemische in elektrische Energie um (freiwillig); die Elektrolyse erzwingt mit Strom eine nicht freiwillige Reaktion.",
+        "fr": "Une pile convertit l'énergie chimique en énergie électrique (spontané) ; l'électrolyse utilise l'électricité pour réaliser une réaction non spontanée.",
+        "ru": "Гальванический элемент превращает химическую энергию в электрическую (самопроизвольно); электролиз с помощью тока осуществляет несамопроизвольную реакцию.",
+        "ar": "تحوّل الخلية الجلفانية الطاقة الكيميائية إلى طاقة كهربائية (تلقائي)؛ ويستخدم التحليل الكهربائي الكهرباء لإحداث تفاعل غير تلقائي.",
+        "zh": "原电池将化学能转化为电能（自发）；电解利用电能驱动非自发反应。",
+        "ku": "Pîl enerjiya kîmyewî vediguherîne enerjiya elektrîkê (xweber); elektrolîz bi elektrîkê reaksiyoneke ne-xweber dimeşîne."
       }
     },
     {
@@ -453,14 +453,14 @@ export const unit22: ChemistryUnitSeedData = {
         "ku": "Derketina O2 li Anode"
       },
       "distinction": {
-        "tr": "Suyun elektrolizinde katottaki H2 hacmi anottaki O2 hacminin tam iki katıdır.",
-        "en": "In the electrolysis of water, the volume of H2 at the cathode is exactly twice the volume of O2 at the anode.",
-        "de": "Bei der Elektrolyse von Wasser ist das H2-Volumen an der Kathode genau doppelt so groß wie das O2-Volumen an der Anode.",
-        "fr": "Dans l’électrolyse de l’eau, le volume de H2 à la cathode est exactement le double du volume d’O2 à l’anode.",
-        "ru": "При электролизе воды объем H2 на катоде ровно в два раза превышает объем O2 на аноде.",
-        "ar": "في التحليل الكهربائي للماء، يكون حجم H2 عند الكاثود هو بالضبط ضعف حجم O2 عند الأنود.",
-        "zh": "在水的电解中，阴极处H2的体积恰好是阳极处O2体积的两倍。",
-        "ku": "Di elektrolîza avê de, qebareya H2 ya li katodê tam du caran ji qebareya O2 ya li anodê ye."
+        "tr": "Katotta H2 çıkışı suyun indirgenmesiyle olur ve hacmi anottaki O2 hacminin iki katıdır; anotta O2 çıkışı suyun yükseltgenmesiyle olur.",
+        "en": "H2 output at the cathode results from the reduction of water and its volume is twice that of the O2 at the anode; O2 output at the anode results from the oxidation of water.",
+        "de": "Die H2-Bildung an der Kathode entsteht durch Reduktion von Wasser, ihr Volumen ist doppelt so groß wie das des O2 an der Anode; die O2-Bildung an der Anode entsteht durch Oxidation von Wasser.",
+        "fr": "La production de H2 à la cathode provient de la réduction de l'eau et son volume est le double de celui de O2 à l'anode ; la production de O2 à l'anode provient de l'oxydation de l'eau.",
+        "ru": "Выделение H2 на катоде происходит при восстановлении воды, и его объём вдвое больше объёма O2 на аноде; выделение O2 на аноде происходит при окислении воды.",
+        "ar": "ينتج تصاعد H2 عند الكاثود عن اختزال الماء وحجمه ضعف حجم O2 عند الأنود؛ وينتج تصاعد O2 عند الأنود عن أكسدة الماء.",
+        "zh": "阴极析出 H2 是水被还原的结果，其体积是阳极 O2 体积的两倍；阳极析出 O2 是水被氧化的结果。",
+        "ku": "Derketina H2 li katodê ji kêmbûna avê çêdibe û qebareya wê du qatê ya O2 ya li anodê ye; derketina O2 li anodê ji oksîdbûna avê çêdibe."
       }
     },
     {
@@ -499,34 +499,34 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-c04",
       "conceptA": {
-        "tr": "Katot Gazı (H2)",
-        "en": "Cathode Gas (H2)",
-        "de": "Kathodengas (H2)",
-        "fr": "Gaz cathodique (H2)",
-        "ru": "Катодный газ (H2)",
-        "ar": "غاز الكاثود (H2)",
-        "zh": "阴极气体 (H2)",
-        "ku": "Gaza Katodê (H2)"
+        "tr": "Aktif Anot (örn. Cu)",
+        "en": "Active Anode (e.g., Cu)",
+        "de": "Aktive Anode (z. B. Cu)",
+        "fr": "Anode active (par ex. Cu)",
+        "ru": "Активный анод (например, Cu)",
+        "ar": "أنود نشط (مثل Cu)",
+        "zh": "活性阳极（如 Cu）",
+        "ku": "Anoda Aktîf (mînak Cu)"
       },
       "conceptB": {
-        "tr": "Anot Gazı (O2 veya Cl2)",
-        "en": "Anode Gas (O2 or Cl2)",
-        "de": "Anodengas (O2 oder Cl2)",
-        "fr": "Gaz anodique (O2 ou Cl2)",
-        "ru": "Анодный газ (O2 или Cl2)",
-        "ar": "غاز الأنود (O2 أو Cl2)",
-        "zh": "阳极气体（O2 或 Cl2）",
-        "ku": "Gaza anodê (O2 an Cl2)"
+        "tr": "İnert Elektrot (Pt, grafit)",
+        "en": "Inert Electrode (Pt, graphite)",
+        "de": "Inerte Elektrode (Pt, Graphit)",
+        "fr": "Électrode inerte (Pt, graphite)",
+        "ru": "Инертный электрод (Pt, графит)",
+        "ar": "قطب خامل (Pt، الجرافيت)",
+        "zh": "惰性电极（Pt、石墨）",
+        "ku": "Elektroda Bêbandor (Pt, grafît)"
       },
       "distinction": {
-        "tr": "Katotta indirgenmeyle H2 gazı toplanır; anotta yükseltgenmeyle O2 veya halojen gazı açığa çıkar.",
-        "en": "H2 gas is collected by reduction at the cathode; O2 or halogen gas is released through oxidation at the anode.",
-        "de": "H2-Gas wird durch Reduktion an der Kathode gesammelt; Durch Oxidation an der Anode wird O2 bzw. Halogengas freigesetzt.",
-        "fr": "Le gaz H2 est collecté par réduction à la cathode ; L'O2 ou gaz halogène est libéré par oxydation à l'anode.",
-        "ru": "Газ H2 собирается восстановлением на катоде; Газ O2 или галоген выделяется в результате окисления на аноде.",
-        "ar": "يتم جمع غاز H2 عن طريق الاختزال عند الكاثود؛ يتم إطلاق غاز O2 أو الهالوجين من خلال الأكسدة عند الأنود.",
-        "zh": "在阴极通过还原收集H2气体； O2 或卤素气体通过阳极氧化释放。",
-        "ku": "Gaza H2 bi kêmkirina li katodê tê berhev kirin; O2 an gaza halojen bi oksîdasyona li anodê derdikeve."
+        "tr": "Aktif anot elektrolizde kendisi yükseltgenerek çözeltiye geçer (örn. bakır arıtımında Cu anot); inert elektrot tepkimeye girmez, yalnızca elektron alışverişine yüzey sağlar.",
+        "en": "An active anode is itself oxidized and dissolves during electrolysis (e.g., the Cu anode in copper refining); an inert electrode does not react and only provides a surface for electron transfer.",
+        "de": "Eine aktive Anode wird bei der Elektrolyse selbst oxidiert und geht in Lösung (z. B. die Cu-Anode bei der Kupferraffination); eine inerte Elektrode reagiert nicht und bietet nur die Oberfläche für den Elektronenaustausch.",
+        "fr": "Une anode active s'oxyde elle-même et se dissout pendant l'électrolyse (par ex. l'anode de Cu lors du raffinage du cuivre) ; une électrode inerte ne réagit pas et fournit seulement une surface pour l'échange d'électrons.",
+        "ru": "Активный анод при электролизе сам окисляется и переходит в раствор (например, медный анод при рафинировании меди); инертный электрод не вступает в реакцию и лишь служит поверхностью для обмена электронами.",
+        "ar": "الأنود النشط يتأكسد هو نفسه ويذوب أثناء التحليل الكهربائي (مثل أنود النحاس في تنقية النحاس)؛ أما القطب الخامل فلا يتفاعل ويوفر سطحًا لانتقال الإلكترونات فقط.",
+        "zh": "活性阳极在电解中自身被氧化而溶解（如精炼铜时的粗铜阳极）；惰性电极不参与反应，只提供电子转移的表面。",
+        "ku": "Anoda aktîf di elektrolîzê de bi xwe oksîd dibe û derbasî çareseriyê dibe (mînak anoda Cu di paqijkirina sifir de); elektroda bêbandor beşdarî reaksiyonê nabe, tenê ji bo guhertina elektronan rûyekê peyda dike."
       }
     },
     {
@@ -534,12 +534,12 @@ export const unit22: ChemistryUnitSeedData = {
       "conceptA": {
         "tr": "Faraday Sabiti (96500 C)",
         "en": "Faraday Constant (96500 C)",
-        "de": "Faraday-Konstante (96500 °C)",
-        "fr": "Constante de Faraday (96 500 °C)",
-        "ru": "Константа Фарадея (96500 C)",
-        "ar": "ثابت فاراداي (96500 درجة مئوية)",
+        "de": "Faraday-Konstante (96500 C)",
+        "fr": "Constante de Faraday (96500 C)",
+        "ru": "Постоянная Фарадея (96500 Кл)",
+        "ar": "ثابت فاراداي (96500 C)",
         "zh": "法拉第常数 (96500 C)",
-        "ku": "Faraday Constant (96500 C)"
+        "ku": "Sabîta Faraday (96500 C)"
       },
       "conceptB": {
         "tr": "Elektrik Yükü (Q = I.t)",
@@ -553,13 +553,13 @@ export const unit22: ChemistryUnitSeedData = {
       },
       "distinction": {
         "tr": "1 mol elektronun yükü 96500 Coulomb'dur; devreden geçen yük akım şiddeti ile sürenin çarpımıdır.",
-        "en": "The charge of 1 mole of electrons is 96500 Coulombs; It is the product of the load current passing through the circuit and the duration.",
-        "de": "Die Ladung von 1 Mol Elektronen beträgt 96500 Coulomb; Sie ist das Produkt aus dem durch den Stromkreis fließenden Laststrom und der Dauer.",
-        "fr": "La charge d'une mole d'électrons est de 96 500 Coulombs ; C'est le produit du courant de charge traversant le circuit et de la durée.",
-        "ru": "Заряд 1 моля электронов равен 96500 Кулонов; Это произведение тока нагрузки, проходящего через цепь, и продолжительности.",
-        "ar": "شحنة 1 مول من الإلكترونات هي 96500 كولوم؛ إنه نتاج تيار الحمل الذي يمر عبر الدائرة والمدة.",
-        "zh": "1摩尔电子的电荷为96500库仑；它是通过电路的负载电流与持续时间的乘积。",
-        "ku": "Barê 1 mol elektronan 96500 Kulon e; Ew hilbera barkirina barkirinê ya ku di nav çerxê de derbas dibe û dirêjahiya wê ye."
+        "en": "The charge of 1 mol of electrons is 96500 coulombs; the charge passing through the circuit is the product of current and time.",
+        "de": "Die Ladung von 1 mol Elektronen beträgt 96500 Coulomb; die durch den Stromkreis geflossene Ladung ist das Produkt aus Stromstärke und Zeit.",
+        "fr": "La charge d'une mole d'électrons vaut 96500 coulombs ; la charge qui traverse le circuit est le produit de l'intensité par la durée.",
+        "ru": "Заряд 1 моль электронов равен 96500 Кл; заряд, прошедший через цепь, равен произведению силы тока на время.",
+        "ar": "شحنة 1 مول من الإلكترونات تساوي 96500 كولوم؛ والشحنة المارة في الدائرة تساوي حاصل ضرب شدة التيار في الزمن.",
+        "zh": "1 mol 电子所带电量为 96500 库仑；通过电路的电量等于电流强度与时间的乘积。",
+        "ku": "Barê 1 mol elektronan 96500 Coulomb e; barê ku di çerxê re derbas dibe hilberîna xurtiya herikînê û demê ye."
       }
     },
     {
@@ -570,19 +570,19 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Opferelektrode",
         "fr": "Électrode sacrificielle",
         "ru": "Жертвенный электрод",
-        "ar": "القطب الذبيحة",
+        "ar": "القطب المضحّي",
         "zh": "牺牲电极",
         "ku": "Elektroda Qurbanê"
       },
       "conceptB": {
         "tr": "Kaplama Metali",
         "en": "Plating Metal",
-        "de": "Metall plattieren",
-        "fr": "Placage de métal",
-        "ru": "Покрытие Металла",
-        "ar": "طلاء المعادن",
-        "zh": "电镀金属",
-        "ku": "Plating Metal"
+        "de": "Überzugsmetall",
+        "fr": "Métal de revêtement",
+        "ru": "Металл покрытия",
+        "ar": "فلز الطلاء",
+        "zh": "镀层金属",
+        "ku": "Metala Pêçanê"
       },
       "distinction": {
         "tr": "Kurban elektrot korunacak metalden daha aktiftir ve kendini feda eder; kaplama metalinde istenen metal katotta elektrokaplanır.",
@@ -592,7 +592,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ru": "Жертвенный электрод более активен, чем защищаемый металл, и жертвует собой; Желаемый металл в металле покрытия наносится гальваническим способом на катоде.",
         "ar": "القطب المضحي أكثر نشاطا من المعدن المراد حمايته ويضحي بنفسه؛ يتم طلاء المعدن المرغوب في طلاء المعدن بالكهرباء عند الكاثود.",
         "zh": "牺牲电极比被保护金属活性更高，牺牲自身；涂层金属中所需的金属在阴极电镀。",
-        "ku": "Elektroda qurbanê ji metala ku tê parastin çalaktir e û xwe feda dike; Metala xwestinê ya di metala pêçanê de li katodê tê elektroplated kirin."
+        "ku": "Elektroda qurbanê ji metala ku tê parastin çalaktir e û xwe feda dike; di pêçana metalî de metala xwestî li katodê bi elektrolîzê tê pêçandin."
       }
     },
     {
@@ -609,23 +609,23 @@ export const unit22: ChemistryUnitSeedData = {
       },
       "conceptB": {
         "tr": "Paslanma",
-        "en": "rusting",
-        "de": "rostet",
-        "fr": "rouiller",
-        "ru": "ржавеет",
+        "en": "Rusting",
+        "de": "Rosten",
+        "fr": "Rouille",
+        "ru": "Ржавление",
         "ar": "الصدأ",
         "zh": "生锈",
-        "ku": "rusting"
+        "ku": "Zengarbûn"
       },
       "distinction": {
-        "tr": "Korozyon tüm metallerin çevreyle kimyasal aşınmasıdır; paslanma demirin oksijen ve nemle Fe2O3.nH2O oluşturmasıdır.",
-        "en": "Corrosion is the chemical corrosion of all metals by the environment; Rusting is the formation of Fe2O3.nH2O by iron with oxygen and moisture.",
-        "de": "Korrosion ist die chemische Korrosion aller Metalle durch die Umwelt; Unter Rosten versteht man die Bildung von Fe2O3.nH2O durch Eisen mit Sauerstoff und Feuchtigkeit.",
-        "fr": "La corrosion est la corrosion chimique de tous les métaux par l'environnement ; La rouille est la formation de Fe2O3.nH2O par le fer avec l'oxygène et l'humidité.",
-        "ru": "Коррозия – это химическая коррозия всех металлов под действием окружающей среды; Ржавление – это образование Fe2O3.nH2O железом с кислородом и влагой.",
-        "ar": "التآكل هو التآكل الكيميائي لجميع المعادن بفعل البيئة؛ الصدأ هو تكوين Fe2O3.nH2O بواسطة الحديد مع الأكسجين والرطوبة.",
-        "zh": "腐蚀是所有金属受到环境的化学腐蚀；生锈是铁与氧气和水分作用生成Fe2O3.nH2O。",
-        "ku": "Korozyon korozyona kîmyayî ya hemû metalan ji aliyê jîngehê ve ye; Xilasbûn çêbûna Fe2O3.nH2O bi hesinê bi oksîjen û nemê ye."
+        "tr": "Korozyon herhangi bir metalin çevresiyle tepkimeye girerek aşınmasını anlatan genel kavramdır; paslanma demirin oksijen ve nemle Fe2O3.nH2O oluşturmasıdır.",
+        "en": "Corrosion is the general term for the wearing away of any metal by reaction with its environment; rusting is the formation of Fe2O3.nH2O from iron with oxygen and moisture.",
+        "de": "Korrosion ist der Oberbegriff für die Zerstörung eines beliebigen Metalls durch Reaktion mit seiner Umgebung; Rosten ist die Bildung von Fe2O3.nH2O aus Eisen mit Sauerstoff und Feuchtigkeit.",
+        "fr": "La corrosion est le terme général désignant la dégradation d'un métal par réaction avec son environnement ; la rouille est la formation de Fe2O3.nH2O à partir du fer, du dioxygène et de l'humidité.",
+        "ru": "Коррозия — общее понятие для разрушения любого металла при взаимодействии с окружающей средой; ржавление — образование Fe2O3.nH2O из железа под действием кислорода и влаги.",
+        "ar": "التآكل مصطلح عام يصف تلف أي فلز بتفاعله مع محيطه؛ أما الصدأ فهو تكوّن Fe2O3.nH2O من الحديد بوجود الأكسجين والرطوبة.",
+        "zh": "腐蚀是指任何金属与环境发生反应而损耗的总称；生锈是铁与氧气和水分作用生成 Fe2O3.nH2O 的过程。",
+        "ku": "Korozyon têgeheke giştî ye ku xirabûna her metalekê bi reaksiyona bi derdorê re vedibêje; zengarbûn çêbûna Fe2O3.nH2O ji hesin bi oksîjen û şilbûnê ye."
       }
     },
     {
@@ -636,29 +636,29 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Elektrostatische Beschichtung",
         "fr": "Revêtement électrostatique",
         "ru": "Электростатическое покрытие",
-        "ar": "طلاء كهرباء",
+        "ar": "الطلاء الكهروستاتيكي",
         "zh": "静电涂层",
-        "ku": "Coating Electrostatic"
+        "ku": "Pêçana Elektrostatîk"
       },
       "conceptB": {
         "tr": "Galvanizleme",
         "en": "Galvanizing",
-        "de": "Verzinken",
+        "de": "Feuerverzinken",
         "fr": "Galvanisation",
-        "ru": "Гальванизация",
+        "ru": "Горячее цинкование",
         "ar": "الجلفنة",
-        "zh": "镀锌",
+        "zh": "热镀锌",
         "ku": "Galvanîzekirin"
       },
       "distinction": {
         "tr": "Elektrostatik kaplama toz boya yapışmasıdır; galvanizleme demirin erimiş çinko (Zn) ile kaplanarak korozyondan korunmasıdır.",
         "en": "Electrostatic coating is powder coating adhesion; Galvanization is the protection of iron from corrosion by coating it with molten zinc (Zn).",
-        "de": "Bei der elektrostatischen Beschichtung handelt es sich um eine Haftung der Pulverbeschichtung; Beim Galvanisieren wird Eisen vor Korrosion geschützt, indem es mit geschmolzenem Zink (Zn) beschichtet wird.",
+        "de": "Elektrostatische Beschichtung ist das Anhaften von Pulverlack; beim Feuerverzinken wird Eisen durch Überziehen mit geschmolzenem Zink (Zn) vor Korrosion geschützt.",
         "fr": "Le revêtement électrostatique est une adhérence de revêtement en poudre ; La galvanisation est la protection du fer contre la corrosion en le recouvrant de zinc fondu (Zn).",
-        "ru": "Электростатическое покрытие представляет собой адгезию порошкового покрытия; Гальванизация – это защита железа от коррозии путем покрытия его расплавленным цинком (Zn).",
+        "ru": "Электростатическое покрытие — это нанесение порошковой краски; горячее цинкование — защита железа от коррозии покрытием расплавленным цинком (Zn).",
         "ar": "الطلاء الكهروستاتيكي هو التصاق مسحوق الطلاء. الجلفنة هي حماية الحديد من التآكل عن طريق طلاءه بالزنك المنصهر (Zn).",
-        "zh": "静电涂装是粉末涂料的附着力；镀锌是通过在铁上涂上熔融锌 (Zn) 来保护铁免受腐蚀。",
-        "ku": "Kişandina elektrostatîk adhesiona pêlava toz e; Galvanîzasyon parastina hesin ji korozyonê ye bi pêçandina wê bi zincê şilkirî (Zn)."
+        "zh": "静电涂装是使粉末涂料附着；热镀锌是在铁表面镀上熔融锌（Zn）以防止腐蚀。",
+        "ku": "Pêçana elektrostatîk zeliqandina boyaxa tozî ye; galvanîzekirin parastina hesin ji korozyonê ye bi pêçandina wê bi zinka helandî (Zn)."
       }
     }
   ],
@@ -673,7 +673,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ru": "Этапы расчета массы электролиза",
         "ar": "خطوات حساب كتلة التحليل الكهربائي",
         "zh": "电解质量计算步骤",
-        "ku": "Gavên Hesabkirina Komkujiya Elektrolîzê"
+        "ku": "Gavên Hesabkirina Girseyê di Elektrolîzê de"
       },
       "steps": [
         {
@@ -684,27 +684,27 @@ export const unit22: ChemistryUnitSeedData = {
           "ru": "Рассчитайте общий заряд (Кулон) при Q = I * t",
           "ar": "احسب الشحنة الكلية (كولوم) باستخدام Q = I * t",
           "zh": "计算总电荷（库仑），Q = I * t",
-          "ku": "Bi Q = I * t"
+          "ku": "Bi Q = I * t barê giştî (Coulomb) hesab bike"
         },
         {
           "tr": "Mol elektronu bul: n_e = Q / 96500",
-          "en": "Find mole electron: n_e = Q / 96500",
-          "de": "Finden Sie das Molekularelektron: n_e = Q / 96500",
-          "fr": "Trouver l'électron taupe : n_e = Q / 96500",
+          "en": "Find the moles of electrons: n_e = Q / 96500",
+          "de": "Stoffmenge der Elektronen bestimmen: n_e = Q / 96500",
+          "fr": "Calculer la quantité d'électrons (en mol) : n_e = Q / 96500",
           "ru": "Найдите моль электрона: n_e = Q/96500",
-          "ar": "أوجد الإلكترون المول: n_e = Q / 96500",
-          "zh": "求摩尔电子：n_e = Q / 96500",
-          "ku": "Elektrona molê bibînin: n_e = Q / 96500"
+          "ar": "احسب عدد مولات الإلكترونات: n_e = Q / 96500",
+          "zh": "求电子的物质的量：n_e = Q / 96500",
+          "ku": "Hejmara molên elektronan bibîne: n_e = Q / 96500"
         },
         {
           "tr": "Elektrot yarı tepkimesini yazıp elektron katsayısıyla oranla",
-          "en": "Write the electrode half-reaction and compare it with the electron coefficient.",
-          "de": "Schreiben Sie die Halbreaktion der Elektrode auf und vergleichen Sie sie mit dem Elektronenkoeffizienten.",
-          "fr": "Écrivez la demi-réaction de l’électrode et comparez-la avec le coefficient électronique.",
-          "ru": "Запишите электродную полуреакцию и сравните ее с электронным коэффициентом.",
-          "ar": "اكتب نصف تفاعل القطب وقارنه بمعامل الإلكترون.",
-          "zh": "写出电极半反应并与电子系数进行比较。",
-          "ku": "Nîv-reaksiyona elektrodê binivîsin û bi rêjeya elektronê bidin ber hev."
+          "en": "Write the electrode half-reaction and relate moles of substance to moles of electrons using the electron coefficient",
+          "de": "Elektrodenhalbreaktion aufstellen und über den Elektronenkoeffizienten die Stoffmenge des Produkts berechnen",
+          "fr": "Écrire la demi-réaction à l'électrode et relier la quantité de produit à celle des électrons grâce au coefficient des électrons",
+          "ru": "Записать полуреакцию на электроде и по коэффициенту при электронах найти количество вещества продукта",
+          "ar": "اكتب نصف تفاعل القطب واربط مولات المادة بمولات الإلكترونات باستخدام معامل الإلكترونات",
+          "zh": "写出电极半反应，利用电子的化学计量数换算出产物的物质的量",
+          "ku": "Nîv-reaksiyona elektrodê binivîse û bi katsayiya elektronan molên maddeyê ji molên elektronan bibîne"
         },
         {
           "tr": "m = n * MA ile toplanan katı kütlesini bul",
@@ -721,55 +721,55 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-s02",
       "title": {
-        "tr": "Faraday Elektroliz Hesabı",
-        "en": "Faraday Electrolysis Calculation",
-        "de": "Berechnung der Faraday-Elektrolyse",
-        "fr": "Calcul de l'électrolyse de Faraday",
-        "ru": "Расчет электролиза Фарадея",
-        "ar": "حساب فاراداي للتحليل الكهربائي",
-        "zh": "法拉第电解计算",
-        "ku": "Hesabkirina Electrolysis Faraday"
+        "tr": "Bakırın Elektrolizle Saflaştırılması (Rafinasyon)",
+        "en": "Electrolytic Refining of Copper",
+        "de": "Elektrolytische Raffination von Kupfer",
+        "fr": "Raffinage électrolytique du cuivre",
+        "ru": "Электролитическое рафинирование меди",
+        "ar": "تنقية النحاس بالتحليل الكهربائي",
+        "zh": "电解精炼铜",
+        "ku": "Paqijkirina Sifir bi Elektrolîzê"
       },
       "steps": [
         {
-          "tr": "Devreden geçen akım şiddeti I ve süre t saniye olarak alınır",
-          "en": "The current intensity passing through the circuit is taken as I and the time t is taken as seconds.",
-          "de": "Die durch den Stromkreis fließende Stromstärke wird als I und die Zeit t als Sekunden angenommen.",
-          "fr": "L'intensité du courant traversant le circuit est prise en I et le temps t en secondes.",
-          "ru": "Сила тока, проходящего через цепь, принимается за I, а время t – за секунды.",
-          "ar": "يتم أخذ شدة التيار المار عبر الدائرة بالقيمة I والزمن t بالثواني.",
-          "zh": "通过电路的电流强度记为I，时间t记为秒。",
-          "ku": "Hêza niha ya ku di çerxê re derbas dibe wekî I û dema t wekî saniye tê girtin."
+          "tr": "Saf olmayan (ham) bakır anoda, ince saf bakır levha katoda bağlanır",
+          "en": "Impure (crude) copper is connected as the anode and a thin sheet of pure copper as the cathode",
+          "de": "Unreines Rohkupfer wird als Anode, ein dünnes Reinkupferblech als Kathode geschaltet",
+          "fr": "Le cuivre impur (brut) est relié comme anode et une fine plaque de cuivre pur comme cathode",
+          "ru": "Неочищенную (черновую) медь подключают как анод, а тонкую пластину чистой меди — как катод",
+          "ar": "يوصل النحاس غير النقي (الخام) بوصفه أنودًا وصفيحة رقيقة من النحاس النقي بوصفها كاثودًا",
+          "zh": "粗铜作阳极，薄纯铜片作阴极",
+          "ku": "Sifirê ne-paqij (xav) wek anod, pelekî zirav ê sifirê paqij jî wek katod tê girêdan"
         },
         {
-          "tr": "Q = I . t formülüyle toplam yük Coulomb olarak bulunur",
-          "en": "Q = I . The total charge is found in Coulombs with the formula t",
-          "de": "Q = I . Die Gesamtladung wird in Coulomb mit der Formel t ermittelt",
-          "fr": "Q = Je. La charge totale se trouve en Coulombs avec la formule t",
-          "ru": "Q = Я. Полный заряд находится в кулонах по формуле t",
-          "ar": "س = أنا . تم العثور على الشحنة الإجمالية بالكولوم بالصيغة t",
-          "zh": "Q = I 。总电荷以库仑为单位，公式为 t",
-          "ku": "Q = ez. Tevahiya barkirinê di Coulombs de bi formula t tê dîtin"
+          "tr": "Elektrotlar CuSO4 çözeltisine daldırılır ve doğru akım uygulanır",
+          "en": "The electrodes are dipped into CuSO4 solution and direct current is applied",
+          "de": "Die Elektroden werden in CuSO4-Lösung getaucht und Gleichstrom angelegt",
+          "fr": "Les électrodes sont plongées dans une solution de CuSO4 et un courant continu est appliqué",
+          "ru": "Электроды погружают в раствор CuSO4 и пропускают постоянный ток",
+          "ar": "يُغمس القطبان في محلول CuSO4 ويُمرر تيار مستمر",
+          "zh": "将电极插入 CuSO4 溶液中并通入直流电",
+          "ku": "Elektrod di çareseriya CuSO4 de têne danîn û herikîna rasterast tê dayîn"
         },
         {
-          "tr": "Q / 96500 eşitliğinden devreden geçen elektron mol sayısı bulunur",
-          "en": "The number of moles of electrons passing through the circuit is found from the equation Q / 96500",
-          "de": "Die Anzahl der Mol Elektronen, die den Stromkreis durchlaufen, ergibt sich aus der Gleichung Q / 96500",
-          "fr": "Le nombre de moles d'électrons traversant le circuit est obtenu à partir de l'équation Q/96500",
-          "ru": "Число молей электронов, проходящих через цепь, находится из уравнения Q/96500",
-          "ar": "يمكن العثور على عدد مولات الإلكترونات المارة عبر الدائرة من المعادلة Q / 96500",
-          "zh": "通过电路的电子摩尔数可通过方程 Q / 96500 求得",
-          "ku": "Hejmara molên elektronên ku di çerxê re derbas dibin ji hevkêşana Q / 96500 tê dîtin."
+          "tr": "Anottaki bakır yükseltgenerek Cu2+ iyonları halinde çözeltiye geçer",
+          "en": "Copper at the anode is oxidized and passes into solution as Cu2+ ions",
+          "de": "Das Kupfer der Anode wird oxidiert und geht als Cu2+-Ionen in Lösung",
+          "fr": "Le cuivre de l'anode s'oxyde et passe en solution sous forme d'ions Cu2+",
+          "ru": "Медь анода окисляется и переходит в раствор в виде ионов Cu2+",
+          "ar": "يتأكسد نحاس الأنود وينتقل إلى المحلول على شكل أيونات Cu2+",
+          "zh": "阳极的铜被氧化，以 Cu2+ 离子形式进入溶液",
+          "ku": "Sifirê li anodê oksîd dibe û wek îyonên Cu2+ derbasî çareseriyê dibe"
         },
         {
-          "tr": "Katot tepkimesi katsayısıyla çarpılarak toplanan metal kütlesi hesaplanır",
-          "en": "The mass of collected metal is calculated by multiplying it by the cathode reaction coefficient",
-          "de": "Die Masse des gesammelten Metalls wird durch Multiplikation mit dem Kathodenreaktionskoeffizienten berechnet",
-          "fr": "La masse de métal collecté est calculée en la multipliant par le coefficient de réaction cathodique",
-          "ru": "Массу собранного металла рассчитывают путем умножения ее на коэффициент катодной реакции.",
-          "ar": "يتم حساب كتلة المعدن المجمع بضربها في معامل تفاعل الكاثود",
-          "zh": "收集到的金属的质量通过乘以阴极反应系数来计算",
-          "ku": "Girseya metala berhevkirî bi zêdekirina wê bi rêjeya reaksiyona katodê tê hesibandin"
+          "tr": "Cu2+ iyonları katotta indirgenerek saf bakır olarak birikir; Ag ve Au gibi pasif safsızlıklar anot çamurunda toplanır",
+          "en": "Cu2+ ions are reduced at the cathode and deposit as pure copper; less active impurities such as Ag and Au collect in the anode mud",
+          "de": "Cu2+-Ionen werden an der Kathode reduziert und scheiden sich als Reinkupfer ab; edlere Verunreinigungen wie Ag und Au sammeln sich im Anodenschlamm",
+          "fr": "Les ions Cu2+ sont réduits à la cathode et s'y déposent en cuivre pur ; les impuretés moins actives comme Ag et Au se rassemblent dans les boues anodiques",
+          "ru": "Ионы Cu2+ восстанавливаются на катоде и осаждаются в виде чистой меди; менее активные примеси (Ag, Au) собираются в анодном шламе",
+          "ar": "تُختزل أيونات Cu2+ عند الكاثود وتترسب نحاسًا نقيًا، وتتجمع الشوائب الأقل نشاطًا مثل Ag و Au في طين الأنود",
+          "zh": "Cu2+ 离子在阴极被还原并沉积为纯铜；Ag、Au 等不活泼杂质沉积在阳极泥中",
+          "ku": "Îyonên Cu2+ li katodê kêm dibin û wek sifirê paqij kom dibin; nepaqijiyên pasîf ên wek Ag û Au di heriya anodê de kom dibin"
         }
       ]
     },
@@ -787,44 +787,44 @@ export const unit22: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Seyreltik sülfürik asit içeren su voltametresine akım verilir",
-          "en": "Current is supplied to a water voltammeter containing dilute sulfuric acid.",
-          "de": "Strom wird einem Wasservoltammeter zugeführt, das verdünnte Schwefelsäure enthält.",
-          "fr": "Le courant est fourni à un voltammètre à eau contenant de l'acide sulfurique dilué.",
-          "ru": "Ток подается на водяной вольтамперметр, содержащий разбавленную серную кислоту.",
-          "ar": "يتم توفير التيار إلى مقياس الفولتميتر المائي الذي يحتوي على حمض الكبريتيك المخفف.",
-          "zh": "电流供给含有稀硫酸的水伏安计。",
-          "ku": "Herik ji voltametreya avê ya ku asîda sulfurîk a zirav tê de tê peyda kirin."
+          "tr": "Saf suya iletkenliği artırmak için birkaç damla seyreltik H2SO4 eklenir",
+          "en": "A few drops of dilute H2SO4 are added to pure water to increase its conductivity",
+          "de": "Reinem Wasser werden zur Erhöhung der Leitfähigkeit einige Tropfen verdünnte H2SO4 zugesetzt",
+          "fr": "On ajoute quelques gouttes de H2SO4 dilué à l'eau pure pour augmenter sa conductivité",
+          "ru": "К чистой воде для повышения электропроводности добавляют несколько капель разбавленной H2SO4",
+          "ar": "تُضاف بضع قطرات من H2SO4 المخفف إلى الماء النقي لزيادة توصيله الكهربائي",
+          "zh": "向纯水中加入几滴稀 H2SO4 以增强导电性",
+          "ku": "Ji bo zêdekirina guhêzbariyê çend dilop H2SO4 ya sist li ava paqij tê zêdekirin"
         },
         {
-          "tr": "Anotta su yükseltgenerek oksijen gazı (O2) açığa çıkar",
-          "en": "Water is oxidized at the anode and oxygen gas (O2) is released.",
-          "de": "An der Anode wird Wasser oxidiert und Sauerstoffgas (O2) freigesetzt.",
-          "fr": "L'eau est oxydée à l'anode et de l'oxygène gazeux (O2) est libéré.",
-          "ru": "Вода окисляется на аноде и выделяется газообразный кислород (O2).",
-          "ar": "يتأكسد الماء عند الأنود وينطلق غاز الأكسجين (O2).",
-          "zh": "水在阳极被氧化并释放出氧气 (O2)。",
-          "ku": "Av li anodê oksîjen dibe û gaza oksîjenê (O2) derdikeve."
+          "tr": "Çözelti voltametreye doldurulur ve elektrotlar doğru akım kaynağına bağlanır",
+          "en": "The solution is filled into the voltameter and the electrodes are connected to a DC source",
+          "de": "Die Lösung wird in den Voltameter gefüllt und die Elektroden werden an eine Gleichstromquelle angeschlossen",
+          "fr": "La solution est versée dans le voltamètre et les électrodes sont reliées à un générateur de courant continu",
+          "ru": "Раствор заливают в вольтаметр, а электроды подключают к источнику постоянного тока",
+          "ar": "يُملأ الفولتامتر بالمحلول ويوصل القطبان بمصدر تيار مستمر",
+          "zh": "将溶液注入霍夫曼电解器，并将电极连接到直流电源",
+          "ku": "Çareserî tê kirin nav voltametreyê û elektrod bi çavkaniya herikîna rasterast ve têne girêdan"
         },
         {
-          "tr": "Katotta su indirgenerek hidrojen gazı (H2) toplanır",
-          "en": "Water is reduced at the cathode and hydrogen gas (H2) is collected.",
-          "de": "An der Kathode wird Wasser reduziert und Wasserstoffgas (H2) gesammelt.",
-          "fr": "L'eau est réduite à la cathode et l'hydrogène gazeux (H2) est collecté.",
-          "ru": "Вода восстанавливается на катоде и собирается газообразный водород (H2).",
-          "ar": "يتم تقليل الماء عند الكاثود ويتم جمع غاز الهيدروجين (H2).",
-          "zh": "水在阴极被还原并收集氢气 (H2)。",
-          "ku": "Li katodê av kêm dibe û gaza hîdrojenê (H2) tê berhevkirin."
+          "tr": "Katotta su indirgenerek H2, anotta su yükseltgenerek O2 gazı oluşur",
+          "en": "Water is reduced to H2 at the cathode and oxidized to O2 at the anode",
+          "de": "An der Kathode wird Wasser zu H2 reduziert, an der Anode zu O2 oxidiert",
+          "fr": "L'eau est réduite en H2 à la cathode et oxydée en O2 à l'anode",
+          "ru": "На катоде вода восстанавливается до H2, на аноде окисляется до O2",
+          "ar": "يُختزل الماء إلى H2 عند الكاثود ويتأكسد إلى O2 عند الأنود",
+          "zh": "水在阴极被还原生成 H2，在阳极被氧化生成 O2",
+          "ku": "Li katodê av kêm dibe û H2, li anodê av oksîd dibe û O2 çêdibe"
         },
         {
-          "tr": "Katotta toplanan H2 hacmi anottaki O2 hacminin tam iki katı olur",
-          "en": "The volume of H2 collected at the cathode is exactly twice the volume of O2 at the anode.",
-          "de": "Das an der Kathode gesammelte H2-Volumen ist genau doppelt so groß wie das O2-Volumen an der Anode.",
-          "fr": "Le volume de H2 collecté à la cathode est exactement le double du volume d’O2 à l’anode.",
-          "ru": "Объем H2, собранный на катоде, ровно в два раза превышает объем O2 на аноде.",
-          "ar": "حجم H2 المتجمع عند الكاثود هو بالضبط ضعف حجم O2 عند الأنود.",
-          "zh": "阴极收集的 H2 体积恰好是阳极收集的 O2 体积的两倍。",
-          "ku": "Hêjeya H2 ya ku li katodê tê berhev kirin tam du caran ji qebareya O2 ya li anodê ye."
+          "tr": "Toplanan gaz hacimleri ölçülür: katottaki H2 hacmi anottaki O2 hacminin iki katıdır",
+          "en": "The collected gas volumes are measured: the volume of H2 at the cathode is twice the volume of O2 at the anode",
+          "de": "Die gesammelten Gasvolumina werden gemessen: Das H2-Volumen an der Kathode ist doppelt so groß wie das O2-Volumen an der Anode",
+          "fr": "On mesure les volumes de gaz recueillis : le volume de H2 à la cathode est le double du volume de O2 à l'anode",
+          "ru": "Измеряют объёмы собранных газов: объём H2 на катоде вдвое больше объёма O2 на аноде",
+          "ar": "تُقاس حجوم الغازات المتجمعة: حجم H2 عند الكاثود ضعف حجم O2 عند الأنود",
+          "zh": "测量收集到的气体体积：阴极 H2 的体积是阳极 O2 体积的两倍",
+          "ku": "Qebareyên gazên komkirî têne pîvan: qebareya H2 ya li katodê du qatê qebareya O2 ya li anodê ye"
         }
       ]
     },
@@ -888,18 +888,18 @@ export const unit22: ChemistryUnitSeedData = {
     {
       "id": "u22-twin01",
       "stem": {
-        "tr": "Erimiş MgCl2 tuzu 9.65 amperlik akımla 1000 saniye elektroliz edildiğinde katotta kaç gram Mg toplanır? (Mg: 24, 1 F = 96500 C)",
-        "en": "When the molten MgCl2 salt is electrolyzed with a current of 9.65 amperes for 1000 seconds, how many grams of Mg are collected at the cathode? (Mg: 24.1 F = 96500 C)",
-        "de": "Wenn das geschmolzene MgCl2-Salz 1000 Sekunden lang mit einem Strom von 9,65 Ampere elektrolysiert wird, wie viele Gramm Mg werden an der Kathode gesammelt? (Mg: 24,1 F = 96500 C)",
-        "fr": "Lorsque le sel fondu de MgCl2 est électrolysé avec un courant de 9,65 ampères pendant 1 000 secondes, combien de grammes de Mg sont collectés à la cathode ? (Mg : 24,1 F = 96 500 C)",
-        "ru": "Сколько граммов Mg собирается на катоде при электролизе расплавленной соли MgCl2 током 9,65 ампер в течение 1000 секунд? (Мг: 24,1 Ф = 96500 С)",
-        "ar": "عندما يتم التحليل الكهربي لملح MgCl2 المنصهر بتيار مقداره 9.65 أمبير لمدة 1000 ثانية، ما عدد جرامات Mg التي تم تجميعها عند الكاثود؟ (ملغ: 24.1 فهرنهايت = 96500 درجة مئوية)",
-        "zh": "当熔融的MgCl2盐用9.65安培的电流电解1000秒时，在阴极收集到多少克Mg？ （镁：24.1°F = 96500°C）",
-        "ku": "Dema xwêya MgCl2 ya şilandî bi herikîna 9,65 amperî 1000 çirkeyan elektrolîz dibe, çend gram Mg li katodê tê berhevkirin? (Mg: 24,1 F = 96500 C)"
+        "tr": "Erimiş MgCl2 tuzu 9,65 amperlik akımla 1000 saniye elektroliz edildiğinde katotta kaç gram Mg toplanır? (Mg = 24 g/mol; 1 F = 96500 C)",
+        "en": "When molten MgCl2 is electrolyzed with a current of 9.65 A for 1000 seconds, how many grams of Mg are deposited at the cathode? (Mg = 24 g/mol; 1 F = 96500 C)",
+        "de": "Geschmolzenes MgCl2 wird 1000 Sekunden lang mit einem Strom von 9,65 A elektrolysiert. Wie viel Gramm Mg scheiden sich an der Kathode ab? (Mg = 24 g/mol; 1 F = 96500 C)",
+        "fr": "Du MgCl2 fondu est électrolysé pendant 1000 secondes avec un courant de 9,65 A. Quelle masse de Mg (en grammes) se dépose à la cathode ? (Mg = 24 g/mol ; 1 F = 96500 C)",
+        "ru": "Расплав MgCl2 подвергают электролизу током 9,65 А в течение 1000 секунд. Сколько граммов Mg выделится на катоде? (Mg = 24 г/моль; 1 F = 96500 Кл)",
+        "ar": "عند التحليل الكهربائي لمصهور MgCl2 بتيار شدته 9.65 A لمدة 1000 ثانية، كم غرامًا من Mg يترسب عند الكاثود؟ (Mg = 24 g/mol؛ 1 F = 96500 C)",
+        "zh": "用 9.65 A 的电流电解熔融 MgCl2 1000 秒，阴极上析出多少克 Mg？（Mg = 24 g/mol；1 F = 96500 C）",
+        "ku": "Dema MgCl2 ya helandî 1000 çirkeyan bi herikîna 9,65 A tê elektrolîzkirin, li katodê çend gram Mg kom dibe? (Mg = 24 g/mol; 1 F = 96500 C)"
       },
       "options": [
         {
-          "tr": "1.2 g",
+          "tr": "1,2 g",
           "en": "1.2g",
           "de": "1,2g",
           "fr": "1,2g",
@@ -909,7 +909,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "1.2 g"
         },
         {
-          "tr": "2.4 g",
+          "tr": "2,4 g",
           "en": "2.4g",
           "de": "2,4g",
           "fr": "2,4 g",
@@ -919,7 +919,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "2.4 g"
         },
         {
-          "tr": "0.6 g",
+          "tr": "0,6 g",
           "en": "0.6g",
           "de": "0,6g",
           "fr": "0,6g",
@@ -929,7 +929,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "0.6 g"
         },
         {
-          "tr": "4.8 g",
+          "tr": "4,8 g",
           "en": "4.8g",
           "de": "4,8g",
           "fr": "4,8g",
@@ -939,7 +939,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "4.8 g"
         },
         {
-          "tr": "12.0 g",
+          "tr": "12,0 g",
           "en": "12.0g",
           "de": "12,0g",
           "fr": "12,0g",
@@ -951,14 +951,14 @@ export const unit22: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Q = I * t = 9.65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0.1 mol elektron. Mg2+ + 2e- -> Mg -> n(Mg) = 0.1 / 2 = 0.05 mol. m = 0.05 * 24 = 1.2 gram.",
-        "en": "Q = I * t = 9.65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0.1 mol of electrons. Mg2+ + 2e- -> Mg -> n(Mg) = 0.1 / 2 = 0.05 mol. m = 0.05 * 24 = 1.2 grams.",
-        "de": "Q = I * t = 9,65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0,1 Mol Elektronen. Mg2+ + 2e- -> Mg -> n(Mg) = 0,1 / 2 = 0,05 mol. m = 0,05 * 24 = 1,2 Gramm.",
-        "fr": "Q = I * t = 9,65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0,1 mole d'électrons. Mg2+ + 2e- -> Mg -> n(Mg) = 0,1 / 2 = 0,05 mol. m = 0,05 * 24 = 1,2 grammes.",
-        "ru": "Q = I * t = 9,65 * 1000 = 9650 Кл. n_e = 9650/96500 = 0,1 моль электронов. Mg2+ + 2e- -> Mg -> n(Mg) = 0,1/2 = 0,05 моль. м = 0,05*24 = 1,2 грамма.",
-        "ar": "Q = I * t = 9.65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0.1 مول من الإلكترونات. Mg2+ + 2e- -> Mg -> n(Mg) = 0.1 / 2 = 0.05 مول. م = 0.05 * 24 = 1.2 جرام.",
-        "zh": "Q = I * t = 9.65 * 1000 = 9650 C。n_e = 9650 / 96500 = 0.1 mol 电子。 Mg2+ + 2e- -> Mg -> n(Mg) = 0.1 / 2 = 0.05 摩尔。 m = 0.05 * 24 = 1.2 克。",
-        "ku": "Q = I * t = 9,65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0,1 mol elektronan. Mg2+ + 2e- -> Mg -> n(Mg) = 0,1 / 2 = 0,05 mol. m = 0,05 * 24 = 1,2 gram."
+        "tr": "Q = I * t = 9,65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0,1 mol elektron. Mg2+ + 2e- → Mg → n(Mg) = 0,1 / 2 = 0,05 mol. m = 0,05 * 24 = 1,2 gram.",
+        "en": "Q = I * t = 9.65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0.1 mol of electrons. Mg2+ + 2e- → Mg → n(Mg) = 0.1 / 2 = 0.05 mol. m = 0.05 * 24 = 1.2 grams.",
+        "de": "Q = I * t = 9,65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0,1 Mol Elektronen. Mg2+ + 2e- → Mg → n(Mg) = 0,1 / 2 = 0,05 mol. m = 0,05 * 24 = 1,2 Gramm.",
+        "fr": "Q = I * t = 9,65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0,1 mole d'électrons. Mg2+ + 2e- → Mg → n(Mg) = 0,1 / 2 = 0,05 mol. m = 0,05 * 24 = 1,2 grammes.",
+        "ru": "Q = I * t = 9,65 * 1000 = 9650 Кл. n_e = 9650/96500 = 0,1 моль электронов. Mg2+ + 2e- → Mg → n(Mg) = 0,1/2 = 0,05 моль. м = 0,05*24 = 1,2 грамма.",
+        "ar": "Q = I * t = 9.65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0.1 مول من الإلكترونات. Mg2+ + 2e- → Mg → n(Mg) = 0.1 / 2 = 0.05 مول. م = 0.05 * 24 = 1.2 جرام.",
+        "zh": "Q = I * t = 9.65 * 1000 = 9650 C。n_e = 9650 / 96500 = 0.1 mol 电子。 Mg2+ + 2e- → Mg → n(Mg) = 0.1 / 2 = 0.05 摩尔。 m = 0.05 * 24 = 1.2 克。",
+        "ku": "Q = I * t = 9,65 * 1000 = 9650 C. n_e = 9650 / 96500 = 0,1 mol elektronan. Mg2+ + 2e- → Mg → n(Mg) = 0,1 / 2 = 0,05 mol. m = 0,05 * 24 = 1,2 gram."
       }
     },
     {
@@ -995,7 +995,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "15 cm3"
         },
         {
-          "tr": "7.5 cm3",
+          "tr": "7,5 cm3",
           "en": "7.5 cm3",
           "de": "7,5 cm3",
           "fr": "7,5 cm3",
@@ -1027,14 +1027,14 @@ export const unit22: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "2 H2O -> 2 H2 + O2 tepkimesine göre katottaki H2 gazı hacmi anottaki O2 gazı hacminin iki katıdır: 2 * 15 = 30 cm3.",
-        "en": "According to the reaction 2 H2O -> 2 H2 + O2, the volume of H2 gas at the cathode is twice the volume of O2 gas at the anode: 2 * 15 = 30 cm3.",
-        "de": "Gemäß der Reaktion 2 H2O -> 2 H2 + O2 ist das Volumen des H2-Gases an der Kathode doppelt so groß wie das Volumen des O2-Gases an der Anode: 2 * 15 = 30 cm3.",
-        "fr": "D'après la réaction 2 H2O -> 2 H2 + O2, le volume de gaz H2 à la cathode est le double du volume de gaz O2 à l'anode : 2 * 15 = 30 cm3.",
-        "ru": "По реакции 2 H2O -> 2 H2 + O2 объем газа H2 на катоде в два раза превышает объем газа O2 на аноде: 2*15 = 30 см3.",
-        "ar": "وفقا للتفاعل 2 H2O -> 2 H2 + O2، فإن حجم غاز H2 عند الكاثود هو ضعف حجم غاز O2 عند الأنود: 2 * 15 = 30 سم 3.",
-        "zh": "根据反应2 H2O -> 2 H2 + O2，阴极处的H2气体体积是阳极处的O2气体体积的两倍：2 * 15 = 30 cm3。",
-        "ku": "Li gor reaksiyona 2 H2O -> 2 H2 + O2 qebareya gaza H2 ya li katodê du qat ji qebareya gaza O2 ya li anodê ye: 2 * 15 = 30 cm3."
+        "tr": "2 H2O → 2 H2 + O2 tepkimesine göre katottaki H2 gazı hacmi anottaki O2 gazı hacminin iki katıdır: 2 * 15 = 30 cm3.",
+        "en": "According to the reaction 2 H2O → 2 H2 + O2, the volume of H2 gas at the cathode is twice the volume of O2 gas at the anode: 2 * 15 = 30 cm3.",
+        "de": "Gemäß der Reaktion 2 H2O → 2 H2 + O2 ist das Volumen des H2-Gases an der Kathode doppelt so groß wie das Volumen des O2-Gases an der Anode: 2 * 15 = 30 cm3.",
+        "fr": "D'après la réaction 2 H2O → 2 H2 + O2, le volume de gaz H2 à la cathode est le double du volume de gaz O2 à l'anode : 2 * 15 = 30 cm3.",
+        "ru": "По реакции 2 H2O → 2 H2 + O2 объем газа H2 на катоде в два раза превышает объем газа O2 на аноде: 2*15 = 30 см3.",
+        "ar": "وفقا للتفاعل 2 H2O → 2 H2 + O2، فإن حجم غاز H2 عند الكاثود هو ضعف حجم غاز O2 عند الأنود: 2 * 15 = 30 سم 3.",
+        "zh": "根据反应2 H2O → 2 H2 + O2，阴极处的H2气体体积是阳极处的O2气体体积的两倍：2 * 15 = 30 cm3。",
+        "ku": "Li gor reaksiyona 2 H2O → 2 H2 + O2 qebareya gaza H2 ya li katodê du qat ji qebareya gaza O2 ya li anodê ye: 2 * 15 = 30 cm3."
       }
     },
     {
@@ -1066,7 +1066,7 @@ export const unit22: ChemistryUnitSeedData = {
           "de": "Das Anion mit dem kleinsten Oxidationspotential an der Anode entsteht zuerst.",
           "fr": "L’anion ayant le plus petit potentiel d’oxydation à l’anode émerge en premier.",
           "ru": "Первым на аноде выходит анион с наименьшим окислительным потенциалом.",
-          "ar": "يظهر الأنيون ذو احتمالية الأكسدة الأصغر عند الأنود أولاً.",
+          "ar": "يتأكسد أولًا عند الأنود الأنيون ذو جهد التأكسد الأصغر.",
           "zh": "阳极氧化电位最小的阴离子首先出现。",
           "ku": "Anyona xwedan potansiyela oksîdasyonê ya herî piçûk li anodê pêşî derdikeve holê."
         },
@@ -1158,13 +1158,13 @@ export const unit22: ChemistryUnitSeedData = {
         },
         {
           "tr": "Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z)'dir (z: tesir değerliği / alınan-verilen elektron sayısı).",
-          "en": "The formula for the mass of matter collected at the electrodes is: m = (Q * MA) / (96500 * z) (z: potency / number of electrons given and received).",
-          "de": "Die Formel für die an den Elektroden gesammelte Materiemasse lautet: m = (Q * MA) / (96500 * z) (z: Potenz / Anzahl der abgegebenen und empfangenen Elektronen).",
-          "fr": "La formule de la masse de matière collectée au niveau des électrodes est : m = (Q * MA) / (96500 * z) (z : puissance / nombre d'électrons donnés et reçus).",
-          "ru": "Формула массы вещества, собранного на электродах, такова: m = (Q * MA) / (96500 * z) (z: мощность / количество отданных и полученных электронов).",
-          "ar": "صيغة كتلة المادة المجمعة عند الأقطاب الكهربائية هي: m = (Q * MA) / (96500 * z) (z: الفاعلية / عدد الإلكترونات المقدمة والمستقبلة).",
-          "zh": "电极处收集的物质质量的公式为：m = (Q * MA) / (96500 * z) （z：效能/发出和接收的电子数量）。",
-          "ku": "Formula girseya maddeya ku li elektrodê kom dibe ev e: m = (Q * MA) / (96500 * z) (z: hêz / hejmara elektronên ku hatine dayîn û wergirtin)."
+          "en": "The formula for the mass deposited at an electrode is m = (Q * MA) / (96500 * z) (z: valence factor, i.e. the number of electrons gained or lost).",
+          "de": "Die an einer Elektrode abgeschiedene Masse beträgt m = (Q * MA) / (96500 * z) (z: Wertigkeit, d. h. Zahl der aufgenommenen bzw. abgegebenen Elektronen).",
+          "fr": "La masse déposée à une électrode est m = (Q * MA) / (96500 * z) (z : valence, c'est-à-dire le nombre d'électrons captés ou cédés).",
+          "ru": "Масса вещества, выделившегося на электроде: m = (Q * MA) / (96500 * z) (z — валентность, т. е. число принятых или отданных электронов).",
+          "ar": "كتلة المادة المترسبة عند القطب: m = (Q * MA) / (96500 * z) (z: التكافؤ، أي عدد الإلكترونات المكتسبة أو المفقودة).",
+          "zh": "电极上析出物质的质量公式为 m = (Q * MA) / (96500 * z)（z：化合价，即得失电子数）。",
+          "ku": "Formula girseya maddeya ku li elektrodê kom dibe: m = (Q * MA) / (96500 * z) (z: valans, ango hejmara elektronên hatine wergirtin an dayîn)."
         },
         {
           "tr": "Kurban elektrot demirin üzerine altın kaplama yapmaktır.",
@@ -1180,13 +1180,13 @@ export const unit22: ChemistryUnitSeedData = {
       "correctIndex": 3,
       "explanation": {
         "tr": "Doğru cevap \"Elektrotlarda toplanan madde kütlesi formülü: m = (Q * MA) / (96500 * z)'dir (z: tesir değerliği / alınan-verilen elektron sayısı).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The formula for the mass of matter collected at the electrodes is: m = (Q * MA) / (96500 * z) (z: potency / number of electrons given and received).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die Formel für die an den Elektroden gesammelte Materiemasse lautet: m = (Q * MA) / (96500 * z) (z: Potenz / Anzahl der abgegebenen und empfangenen Elektronen).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La formule de la masse de matière collectée au niveau des électrodes est : m = (Q * MA) / (96500 * z) (z : puissance / nombre d'électrons donnés et reçus).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Формула массы вещества, собранного на электродах, такова: m = (Q * MA) / (96500 * z) (z: мощность / количество отданных и полученных электронов).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"صيغة كتلة المادة المجمعة عند الأقطاب الكهربائية هي: m = (Q * MA) / (96500 * z) (z: الفاعلية / عدد الإلكترونات المقدمة والمستقبلة).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“电极处收集的物质质量的公式为：m = (Q * MA) / (96500 * z) （z：效能/发出和接收的电子数量）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Formula girseya maddeya ku li elektrodê kom dibe ev e: m = (Q * MA) / (96500 * z) (z: hêz / hejmara elektronên ku hatine dayîn û wergirtin).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"The formula for the mass deposited at an electrode is m = (Q * MA) / (96500 * z) (z: valence factor, i.e. the number of electrons gained or lost).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Die an einer Elektrode abgeschiedene Masse beträgt m = (Q * MA) / (96500 * z) (z: Wertigkeit, d. h. Zahl der aufgenommenen bzw. abgegebenen Elektronen).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"La masse déposée à une électrode est m = (Q * MA) / (96500 * z) (z : valence, c'est-à-dire le nombre d'électrons captés ou cédés).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Масса вещества, выделившегося на электроде: m = (Q * MA) / (96500 * z) (z — валентность, т. е. число принятых или отданных электронов).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"كتلة المادة المترسبة عند القطب: m = (Q * MA) / (96500 * z) (z: التكافؤ، أي عدد الإلكترونات المكتسبة أو المفقودة).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“电极上析出物质的质量公式为 m = (Q * MA) / (96500 * z)（z：化合价，即得失电子数）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Formula girseya maddeya ku li elektrodê kom dibe: m = (Q * MA) / (96500 * z) (z: valans, ango hejmara elektronên hatine wergirtin an dayîn).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1218,7 +1218,7 @@ export const unit22: ChemistryUnitSeedData = {
           "de": "Als Opferelektrode sollte ein passiveres Metall als das zu schützende Metall gewählt werden.",
           "fr": "Un métal plus passif que le métal à protéger doit être choisi comme électrode sacrificielle.",
           "ru": "В качестве жертвующего электрода следует выбрать более пассивный металл, чем защищаемый металл.",
-          "ar": "يجب اختيار معدن أكثر سلبية من المعدن المراد حمايته ليكون القطب الكهربائي المضحي.",
+          "ar": "يجب اختيار فلز أقل نشاطًا من الفلز المراد حمايته ليكون القطب المضحّي.",
           "zh": "应选择比被保护金属更惰性的金属作为牺牲电极。",
           "ku": "Pêdivî ye ku ji metalê ku were parastin metalek pasîftir wekî elektrodê qurban were hilbijartin."
         },
@@ -1226,11 +1226,11 @@ export const unit22: ChemistryUnitSeedData = {
           "tr": "2 Faraday akım geçtiğinde 2 mol Ca metali toplanır.",
           "en": "When 2 Faraday current passes, 2 moles of Ca metal are collected.",
           "de": "Wenn ein Strom von 2 Faraday fließt, werden 2 Mol Ca-Metall gesammelt.",
-          "fr": "Lorsque 2 courants de Faraday passent, 2 moles de métal Ca sont collectées.",
-          "ru": "При прохождении тока силой 2 Фарадея собирается 2 моля металлического Са.",
-          "ar": "عند مرور 2 تيار فاراداي، يتم جمع 2 مول من فلز الكالسيوم.",
+          "fr": "Lorsque 2 faradays traversent la cellule, 2 moles de calcium métallique sont recueillies.",
+          "ru": "При прохождении 2 фарадеев электричества выделяется 2 моль металлического Ca.",
+          "ar": "عند مرور 2 فاراداي يترسب 2 مول من فلز Ca.",
           "zh": "当通过 2 法拉第电流时，会收集 2 摩尔的 Ca 金属。",
-          "ku": "Dema ku 2 niha Faraday derbas dibe, 2 mol metal Ca tê berhev kirin."
+          "ku": "Dema 2 Faraday bar derbas dibe, 2 mol metala Ca kom dibe."
         },
         {
           "tr": "Elektroliz kendiliğinden elektrik üreten bir galvanik sistemdir.",
@@ -1239,7 +1239,7 @@ export const unit22: ChemistryUnitSeedData = {
           "fr": "L'électrolyse est un système galvanique qui produit spontanément de l'électricité.",
           "ru": "Электролиз – это гальваническая система, которая самопроизвольно производит электричество.",
           "ar": "التحليل الكهربائي هو نظام كلفاني ينتج الكهرباء تلقائيًا.",
-          "zh": "电解是一种自发发电的电流系统。",
+          "zh": "电解是一种能自发产生电能的原电池体系。",
           "ku": "Elektrolîz pergalek galvanîk e ku bi xweber elektrîkê hildiberîne."
         },
         {
@@ -1279,14 +1279,14 @@ export const unit22: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Suyun elektrolizinde (Hoffman voltametresi): Katotta 2 hacim H2 gazı toplanırken, anotta 1 hacim O2 gazı toplanır (2 H2O -> 2 H2 + O2).",
-          "en": "In the electrolysis of water (Hoffman voltammeter): While 2 volumes of H2 gas are collected at the cathode, 1 volume of O2 gas is collected at the anode (2 H2O -> 2 H2 + O2).",
-          "de": "Bei der Elektrolyse von Wasser (Hoffman-Voltammeter): Während an der Kathode 2 Volumina H2-Gas gesammelt werden, wird an der Anode 1 Volumen O2-Gas gesammelt (2 H2O -> 2 H2 + O2).",
-          "fr": "Dans l'électrolyse de l'eau (voltampèremètre Hoffman) : Alors que 2 volumes de gaz H2 sont collectés à la cathode, 1 volume de gaz O2 est collecté à l'anode (2 H2O -> 2 H2 + O2).",
-          "ru": "При электролизе воды (вольтамперметр Хоффмана): на катоде собирается 2 объема газообразного H2, на аноде собирается 1 объем газообразного O2 (2 H2O -> 2 H2 + O2).",
-          "ar": "في التحليل الكهربائي للماء (فولتاميتر هوفمان): بينما يتم جمع حجمين من غاز H2 عند الكاثود، يتم جمع حجم واحد من غاز O2 عند الأنود (2 H2O -> 2 H2 + O2).",
-          "zh": "在水电解中（霍夫曼伏安计）：在阴极收集 2 体积的 H2 气体，在阳极收集 1 体积的 O2 气体 (2 H2O -> 2 H2 + O2)。",
-          "ku": "Di elektrolîza avê de (voltametra Hoffman): Dema ku li katodê 2 cild gaza H2, li anodê 1 cild gaza O2 tê berhevkirin (2 H2O -> 2 H2 + O2)."
+          "tr": "Suyun elektrolizinde (Hoffman voltametresi): Katotta 2 hacim H2 gazı toplanırken, anotta 1 hacim O2 gazı toplanır (2 H2O → 2 H2 + O2).",
+          "en": "In the electrolysis of water (Hoffman voltammeter): While 2 volumes of H2 gas are collected at the cathode, 1 volume of O2 gas is collected at the anode (2 H2O → 2 H2 + O2).",
+          "de": "Bei der Elektrolyse von Wasser (Hoffman-Voltammeter): Während an der Kathode 2 Volumina H2-Gas gesammelt werden, wird an der Anode 1 Volumen O2-Gas gesammelt (2 H2O → 2 H2 + O2).",
+          "fr": "Dans l'électrolyse de l'eau (voltampèremètre Hoffman) : Alors que 2 volumes de gaz H2 sont collectés à la cathode, 1 volume de gaz O2 est collecté à l'anode (2 H2O → 2 H2 + O2).",
+          "ru": "При электролизе воды (вольтамперметр Хоффмана): на катоде собирается 2 объема газообразного H2, на аноде собирается 1 объем газообразного O2 (2 H2O → 2 H2 + O2).",
+          "ar": "في التحليل الكهربائي للماء (فولتاميتر هوفمان): بينما يتم جمع حجمين من غاز H2 عند الكاثود، يتم جمع حجم واحد من غاز O2 عند الأنود (2 H2O → 2 H2 + O2).",
+          "zh": "在水电解中（霍夫曼伏安计）：在阴极收集 2 体积的 H2 气体，在阳极收集 1 体积的 O2 气体 (2 H2O → 2 H2 + O2)。",
+          "ku": "Di elektrolîza avê de (voltametra Hoffman): Dema ku li katodê 2 cild gaza H2, li anodê 1 cild gaza O2 tê berhevkirin (2 H2O → 2 H2 + O2)."
         },
         {
           "tr": "Anotta yükseltgenme potansiyeli en küçük olan anyon önce çıkar.",
@@ -1294,7 +1294,7 @@ export const unit22: ChemistryUnitSeedData = {
           "de": "Das Anion mit dem kleinsten Oxidationspotential an der Anode entsteht zuerst.",
           "fr": "L’anion ayant le plus petit potentiel d’oxydation à l’anode émerge en premier.",
           "ru": "Первым на аноде выходит анион с наименьшим окислительным потенциалом.",
-          "ar": "يظهر الأنيون ذو احتمالية الأكسدة الأصغر عند الأنود أولاً.",
+          "ar": "يتأكسد أولًا عند الأنود الأنيون ذو جهد التأكسد الأصغر.",
           "zh": "阳极氧化电位最小的阴离子首先出现。",
           "ku": "Anyona xwedan potansiyela oksîdasyonê ya herî piçûk li anodê pêşî derdikeve holê."
         },
@@ -1331,14 +1331,14 @@ export const unit22: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Suyun elektrolizinde (Hoffman voltametresi): Katotta 2 hacim H2 gazı toplanırken, anotta 1 hacim O2 gazı toplanır (2 H2O -> 2 H2 + O2).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"In the electrolysis of water (Hoffman voltammeter): While 2 volumes of H2 gas are collected at the cathode, 1 volume of O2 gas is collected at the anode (2 H2O -> 2 H2 + O2).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Bei der Elektrolyse von Wasser (Hoffman-Voltammeter): Während an der Kathode 2 Volumina H2-Gas gesammelt werden, wird an der Anode 1 Volumen O2-Gas gesammelt (2 H2O -> 2 H2 + O2).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Dans l'électrolyse de l'eau (voltampèremètre Hoffman) : Alors que 2 volumes de gaz H2 sont collectés à la cathode, 1 volume de gaz O2 est collecté à l'anode (2 H2O -> 2 H2 + O2).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «При электролизе воды (вольтамперметр Хоффмана): на катоде собирается 2 объема газообразного H2, на аноде собирается 1 объем газообразного O2 (2 H2O -> 2 H2 + O2).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في التحليل الكهربائي للماء (فولتاميتر هوفمان): بينما يتم جمع حجمين من غاز H2 عند الكاثود، يتم جمع حجم واحد من غاز O2 عند الأنود (2 H2O -> 2 H2 + O2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“在水电解中（霍夫曼伏安计）：在阴极收集 2 体积的 H2 气体，在阳极收集 1 体积的 O2 气体 (2 H2O -> 2 H2 + O2)。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di elektrolîza avê de (voltametra Hoffman): Dema ku li katodê 2 cild gaza H2, li anodê 1 cild gaza O2 tê berhevkirin (2 H2O -> 2 H2 + O2).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Suyun elektrolizinde (Hoffman voltametresi): Katotta 2 hacim H2 gazı toplanırken, anotta 1 hacim O2 gazı toplanır (2 H2O → 2 H2 + O2).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"In the electrolysis of water (Hoffman voltammeter): While 2 volumes of H2 gas are collected at the cathode, 1 volume of O2 gas is collected at the anode (2 H2O → 2 H2 + O2).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Bei der Elektrolyse von Wasser (Hoffman-Voltammeter): Während an der Kathode 2 Volumina H2-Gas gesammelt werden, wird an der Anode 1 Volumen O2-Gas gesammelt (2 H2O → 2 H2 + O2).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Dans l'électrolyse de l'eau (voltampèremètre Hoffman) : Alors que 2 volumes de gaz H2 sont collectés à la cathode, 1 volume de gaz O2 est collecté à l'anode (2 H2O → 2 H2 + O2).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «При электролизе воды (вольтамперметр Хоффмана): на катоде собирается 2 объема газообразного H2, на аноде собирается 1 объем газообразного O2 (2 H2O → 2 H2 + O2).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"في التحليل الكهربائي للماء (فولتاميتر هوفمان): بينما يتم جمع حجمين من غاز H2 عند الكاثود، يتم جمع حجم واحد من غاز O2 عند الأنود (2 H2O → 2 H2 + O2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“在水电解中（霍夫曼伏安计）：在阴极收集 2 体积的 H2 气体，在阳极收集 1 体积的 O2 气体 (2 H2O → 2 H2 + O2)。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di elektrolîza avê de (voltametra Hoffman): Dema ku li katodê 2 cild gaza H2, li anodê 1 cild gaza O2 tê berhevkirin (2 H2O → 2 H2 + O2).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1370,7 +1370,7 @@ export const unit22: ChemistryUnitSeedData = {
           "de": "Bei der Elektrolyse geschmolzener Salze wird das Kation an der Kathode reduziert und das Metall freigesetzt; An der Anode wird das Anion oxidiert und nichtmetallisches Gas freigesetzt.",
           "fr": "Lors de l'électrolyse des sels fondus, le cation est réduit à la cathode et le métal est libéré ; À l'anode, l'anion est oxydé et un gaz non métallique est libéré.",
           "ru": "При электролизе расплавленных солей катион восстанавливается на катоде и выделяется металл; На аноде анион окисляется и выделяется неметаллический газ.",
-          "ar": "في التحليل الكهربائي للأملاح المنصهرة، يتم تقليل الكاتيون عند الكاثود ويتم تحرير المعدن؛ عند الأنود، يتأكسد الأنيون ويتم إطلاق الغاز غير المعدني.",
+          "ar": "في التحليل الكهربائي للأملاح المنصهرة يُختزل الكاتيون عند الكاثود فيتحرر الفلز؛ ويتأكسد الأنيون عند الأنود فيتحرر غاز لافلزي.",
           "zh": "熔盐电解时，阳离子在阴极被还原，释放出金属；在阳极，阴离子被氧化并释放出非金属气体。",
           "ku": "Di elektrolîza xwêyên şilandî de, kation li katodê kêm dibe û metal tê berdan; Li anodê, anyon oksîde dibe û gaza nemetal derdikeve."
         },
@@ -1412,7 +1412,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Bei der Elektrolyse geschmolzener Salze wird das Kation an der Kathode reduziert und das Metall freigesetzt; An der Anode wird das Anion oxidiert und nichtmetallisches Gas freigesetzt.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Lors de l'électrolyse des sels fondus, le cation est réduit à la cathode et le métal est libéré ; À l'anode, l'anion est oxydé et un gaz non métallique est libéré.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «При электролизе расплавленных солей катион восстанавливается на катоде и выделяется металл; На аноде анион окисляется и выделяется неметаллический газ.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في التحليل الكهربائي للأملاح المنصهرة، يتم تقليل الكاتيون عند الكاثود ويتم تحرير المعدن؛ عند الأنود، يتأكسد الأنيون ويتم إطلاق الغاز غير المعدني.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"في التحليل الكهربائي للأملاح المنصهرة يُختزل الكاتيون عند الكاثود فيتحرر الفلز؛ ويتأكسد الأنيون عند الأنود فيتحرر غاز لافلزي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“熔盐电解时，阳离子在阴极被还原，释放出金属；在阳极，阴离子被氧化并释放出非金属气体。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Di elektrolîza xwêyên şilandî de, kation li katodê kêm dibe û metal tê berdan; Li anodê, anyon oksîde dibe û gaza nemetal derdikeve.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
@@ -1436,7 +1436,7 @@ export const unit22: ChemistryUnitSeedData = {
           "de": "Als Opferelektrode sollte ein passiveres Metall als das zu schützende Metall gewählt werden.",
           "fr": "Un métal plus passif que le métal à protéger doit être choisi comme électrode sacrificielle.",
           "ru": "В качестве жертвующего электрода следует выбрать более пассивный металл, чем защищаемый металл.",
-          "ar": "يجب اختيار معدن أكثر سلبية من المعدن المراد حمايته ليكون القطب الكهربائي المضحي.",
+          "ar": "يجب اختيار فلز أقل نشاطًا من الفلز المراد حمايته ليكون القطب المضحّي.",
           "zh": "应选择比被保护金属更惰性的金属作为牺牲电极。",
           "ku": "Pêdivî ye ku ji metalê ku were parastin metalek pasîftir wekî elektrodê qurban were hilbijartin."
         },
@@ -1444,11 +1444,11 @@ export const unit22: ChemistryUnitSeedData = {
           "tr": "2 Faraday akım geçtiğinde 2 mol Ca metali toplanır.",
           "en": "When 2 Faraday current passes, 2 moles of Ca metal are collected.",
           "de": "Wenn ein Strom von 2 Faraday fließt, werden 2 Mol Ca-Metall gesammelt.",
-          "fr": "Lorsque 2 courants de Faraday passent, 2 moles de métal Ca sont collectées.",
-          "ru": "При прохождении тока силой 2 Фарадея собирается 2 моля металлического Са.",
-          "ar": "عند مرور 2 تيار فاراداي، يتم جمع 2 مول من فلز الكالسيوم.",
+          "fr": "Lorsque 2 faradays traversent la cellule, 2 moles de calcium métallique sont recueillies.",
+          "ru": "При прохождении 2 фарадеев электричества выделяется 2 моль металлического Ca.",
+          "ar": "عند مرور 2 فاراداي يترسب 2 مول من فلز Ca.",
           "zh": "当通过 2 法拉第电流时，会收集 2 摩尔的 Ca 金属。",
-          "ku": "Dema ku 2 niha Faraday derbas dibe, 2 mol metal Ca tê berhev kirin."
+          "ku": "Dema 2 Faraday bar derbas dibe, 2 mol metala Ca kom dibe."
         },
         {
           "tr": "Sulu çözelti elektrolizinde katotta indirgenme potansiyeli en büyük olan (en pasif katyon) öncelikle indirgenir.",
@@ -1456,7 +1456,7 @@ export const unit22: ChemistryUnitSeedData = {
           "de": "Bei der Elektrolyse wässriger Lösungen wird zuerst das Kation mit dem größten Reduktionspotential (das passivste Kation) an der Kathode reduziert.",
           "fr": "Dans l'électrolyse en solution aqueuse, le cation ayant le potentiel de réduction le plus élevé (le cation le plus passif) à la cathode est réduit en premier.",
           "ru": "При электролизе водного раствора катион с наибольшим восстановительным потенциалом (самый пассивный катион) на катоде восстанавливается первым.",
-          "ar": "في التحليل الكهربائي للمحلول المائي، يتم اختزال الكاتيون ذو احتمالية الاختزال الأكبر (الكاتيون الأكثر سلبية) عند الكاثود أولاً.",
+          "ar": "في التحليل الكهربائي للمحاليل المائية يُختزل أولًا عند الكاثود الكاتيون ذو جهد الاختزال الأكبر (الكاتيون الأقل نشاطًا).",
           "zh": "在水溶液电解中，阴极处还原电势最大的阳离子（最惰性的阳离子）首先被还原。",
           "ku": "Di elektrolîza çareseriya avî de, kationa ku potansiyela kêmkirina herî mezin (kationa herî pasîf) li katodê pêşî kêm dibe."
         },
@@ -1467,7 +1467,7 @@ export const unit22: ChemistryUnitSeedData = {
           "fr": "L'électrolyse est un système galvanique qui produit spontanément de l'électricité.",
           "ru": "Электролиз – это гальваническая система, которая самопроизвольно производит электричество.",
           "ar": "التحليل الكهربائي هو نظام كلفاني ينتج الكهرباء تلقائيًا.",
-          "zh": "电解是一种自发发电的电流系统。",
+          "zh": "电解是一种能自发产生电能的原电池体系。",
           "ku": "Elektrolîz pergalek galvanîk e ku bi xweber elektrîkê hildiberîne."
         },
         {
@@ -1488,7 +1488,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Bei der Elektrolyse wässriger Lösungen wird zuerst das Kation mit dem größten Reduktionspotential (das passivste Kation) an der Kathode reduziert.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Dans l'électrolyse en solution aqueuse, le cation ayant le potentiel de réduction le plus élevé (le cation le plus passif) à la cathode est réduit en premier.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «При электролизе водного раствора катион с наибольшим восстановительным потенциалом (самый пассивный катион) на катоде восстанавливается первым.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في التحليل الكهربائي للمحلول المائي، يتم اختزال الكاتيون ذو احتمالية الاختزال الأكبر (الكاتيون الأكثر سلبية) عند الكاثود أولاً.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"في التحليل الكهربائي للمحاليل المائية يُختزل أولًا عند الكاثود الكاتيون ذو جهد الاختزال الأكبر (الكاتيون الأقل نشاطًا).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“在水溶液电解中，阴极处还原电势最大的阳离子（最惰性的阳离子）首先被还原。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Di elektrolîza çareseriya avî de, kationa ku potansiyela kêmkirina herî mezin (kationa herî pasîf) li katodê pêşî kêm dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
@@ -1542,7 +1542,7 @@ export const unit22: ChemistryUnitSeedData = {
           "de": "Bei der Elektrolyse wässriger Lösungen wird zuerst das Anion mit dem höchsten Oxidationspotential (das aktivste Anion) an der Anode oxidiert.",
           "fr": "Dans l'électrolyse en solution aqueuse, l'anion ayant le potentiel d'oxydation le plus élevé (l'anion le plus actif) à l'anode est oxydé en premier.",
           "ru": "При электролизе водного раствора анион с самым высоким окислительным потенциалом (наиболее активный анион) на аноде окисляется первым.",
-          "ar": "في التحليل الكهربائي للمحلول المائي، يتم أكسدة الأنيون الذي يتمتع بأعلى قدرة أكسدة (الأنيون الأكثر نشاطًا) عند الأنود أولاً.",
+          "ar": "في التحليل الكهربائي للمحاليل المائية يتأكسد أولًا عند الأنود الأنيون ذو جهد التأكسد الأكبر (الأنيون الأكثر نشاطًا).",
           "zh": "在水溶液电解中，阳极处氧化电位最高的阴离子（最活泼的阴离子）首先被氧化。",
           "ku": "Di elektrolîza çareseriya avî de, anyona ku potansiyela oksîdasyonê ya herî zêde (anyona herî çalak) li anodê ye pêşî tê oksîd kirin."
         },
@@ -1564,7 +1564,7 @@ export const unit22: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Bei der Elektrolyse wässriger Lösungen wird zuerst das Anion mit dem höchsten Oxidationspotential (das aktivste Anion) an der Anode oxidiert.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Dans l'électrolyse en solution aqueuse, l'anion ayant le potentiel d'oxydation le plus élevé (l'anion le plus actif) à l'anode est oxydé en premier.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «При электролизе водного раствора анион с самым высоким окислительным потенциалом (наиболее активный анион) на аноде окисляется первым.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في التحليل الكهربائي للمحلول المائي، يتم أكسدة الأنيون الذي يتمتع بأعلى قدرة أكسدة (الأنيون الأكثر نشاطًا) عند الأنود أولاً.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"في التحليل الكهربائي للمحاليل المائية يتأكسد أولًا عند الأنود الأنيون ذو جهد التأكسد الأكبر (الأنيون الأكثر نشاطًا).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“在水溶液电解中，阳极处氧化电位最高的阴离子（最活泼的阴离子）首先被氧化。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Di elektrolîza çareseriya avî de, anyona ku potansiyela oksîdasyonê ya herî zêde (anyona herî çalak) li anodê ye pêşî tê oksîd kirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
@@ -1672,11 +1672,11 @@ export const unit22: ChemistryUnitSeedData = {
           "tr": "2 Faraday akım geçtiğinde 2 mol Ca metali toplanır.",
           "en": "When 2 Faraday current passes, 2 moles of Ca metal are collected.",
           "de": "Wenn ein Strom von 2 Faraday fließt, werden 2 Mol Ca-Metall gesammelt.",
-          "fr": "Lorsque 2 courants de Faraday passent, 2 moles de métal Ca sont collectées.",
-          "ru": "При прохождении тока силой 2 Фарадея собирается 2 моля металлического Са.",
-          "ar": "عند مرور 2 تيار فاراداي، يتم جمع 2 مول من فلز الكالسيوم.",
+          "fr": "Lorsque 2 faradays traversent la cellule, 2 moles de calcium métallique sont recueillies.",
+          "ru": "При прохождении 2 фарадеев электричества выделяется 2 моль металлического Ca.",
+          "ar": "عند مرور 2 فاراداي يترسب 2 مول من فلز Ca.",
           "zh": "当通过 2 法拉第电流时，会收集 2 摩尔的 Ca 金属。",
-          "ku": "Dema ku 2 niha Faraday derbas dibe, 2 mol metal Ca tê berhev kirin."
+          "ku": "Dema 2 Faraday bar derbas dibe, 2 mol metala Ca kom dibe."
         },
         {
           "tr": "Elektroliz kendiliğinden elektrik üreten bir galvanik sistemdir.",
@@ -1685,7 +1685,7 @@ export const unit22: ChemistryUnitSeedData = {
           "fr": "L'électrolyse est un système galvanique qui produit spontanément de l'électricité.",
           "ru": "Электролиз – это гальваническая система, которая самопроизвольно производит электричество.",
           "ar": "التحليل الكهربائي هو نظام كلفاني ينتج الكهرباء تلقائيًا.",
-          "zh": "电解是一种自发发电的电流系统。",
+          "zh": "电解是一种能自发产生电能的原电池体系。",
           "ku": "Elektrolîz pergalek galvanîk e ku bi xweber elektrîkê hildiberîne."
         },
         {
@@ -1748,11 +1748,11 @@ export const unit22: ChemistryUnitSeedData = {
           "tr": "Elektrolitik kaplamacılıkta (galvanoplasti): Kaplanacak eşya KATOTA bağlanır; kaplama metali ANOTA bağlanır.",
           "en": "In electrolytic plating (galvanoplasty): The item to be coated is connected to the CATHOD; The coating metal is connected to the ANODE.",
           "de": "Bei der elektrolytischen Beschichtung (Galvanoplastie): Der zu beschichtende Gegenstand wird mit der KATHODE verbunden; Das Beschichtungsmetall ist mit der ANODE verbunden.",
-          "fr": "En placage électrolytique (galvanoplastie) : La pièce à revêtir est reliée à la CATHOD ; Le métal de revêtement est connecté à l'ANODE.",
+          "fr": "En galvanoplastie (dépôt électrolytique) : l'objet à revêtir est relié à la CATHODE ; le métal de revêtement est relié à l'ANODE.",
           "ru": "При гальванопластике (гальванопластике): Изделие, на которое будет нанесено покрытие, подключается к КАТОДУ; Металл покрытия соединен с АНОДОМ.",
-          "ar": "في الطلاء الكهربائي (رأب الجلفانوبلاستي): يتم توصيل العنصر المراد طلاءه بـ CATHOD؛ يتم توصيل معدن الطلاء بالأنود.",
+          "ar": "في الطلاء الكهربائي (الجلفنة الكهربائية): يوصل الجسم المراد طلاؤه بالكاثود، ويوصل فلز الطلاء بالأنود.",
           "zh": "在电解电镀（电镀成形术）中：将要涂覆的物品连接到阴极；涂层金属连接到阳极。",
-          "ku": "Di plating elektrolîtîk de (galvanoplasty): Tiştê ku tê pêçan bi CATHOD ve girêdayî ye; Metalê pêçanê bi ANODE ve girêdayî ye."
+          "ku": "Di pêçana elektrolîtîk de (galvanoplastî): tiştê ku dê were pêçandin bi KATODÊ ve, metala pêçanê jî bi ANODÊ ve tê girêdan."
         },
         {
           "tr": "Elektrotta toplanan madde devreden geçen akımla ters orantılıdır.",
@@ -1790,11 +1790,11 @@ export const unit22: ChemistryUnitSeedData = {
         "tr": "Doğru cevap \"Elektrolitik kaplamacılıkta (galvanoplasti): Kaplanacak eşya KATOTA bağlanır; kaplama metali ANOTA bağlanır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"In electrolytic plating (galvanoplasty): The item to be coated is connected to the CATHOD; The coating metal is connected to the ANODE.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Bei der elektrolytischen Beschichtung (Galvanoplastie): Der zu beschichtende Gegenstand wird mit der KATHODE verbunden; Das Beschichtungsmetall ist mit der ANODE verbunden.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"En placage électrolytique (galvanoplastie) : La pièce à revêtir est reliée à la CATHOD ; Le métal de revêtement est connecté à l'ANODE.\". Notion fondamentale du programme officiel de chimie.",
+        "fr": "L'affirmation exacte est: \"En galvanoplastie (dépôt électrolytique) : l'objet à revêtir est relié à la CATHODE ; le métal de revêtement est relié à l'ANODE.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «При гальванопластике (гальванопластике): Изделие, на которое будет нанесено покрытие, подключается к КАТОДУ; Металл покрытия соединен с АНОДОМ.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في الطلاء الكهربائي (رأب الجلفانوبلاستي): يتم توصيل العنصر المراد طلاءه بـ CATHOD؛ يتم توصيل معدن الطلاء بالأنود.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"في الطلاء الكهربائي (الجلفنة الكهربائية): يوصل الجسم المراد طلاؤه بالكاثود، ويوصل فلز الطلاء بالأنود.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“在电解电镀（电镀成形术）中：将要涂覆的物品连接到阴极；涂层金属连接到阳极。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di plating elektrolîtîk de (galvanoplasty): Tiştê ku tê pêçan bi CATHOD ve girêdayî ye; Metalê pêçanê bi ANODE ve girêdayî ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Di pêçana elektrolîtîk de (galvanoplastî): tiştê ku dê were pêçandin bi KATODÊ ve, metala pêçanê jî bi ANODÊ ve tê girêdan.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1838,7 +1838,7 @@ export const unit22: ChemistryUnitSeedData = {
           "ru": "Поскольку чистая вода проводит электричество очень мало, в среду для увеличения проводимости при электролизе воды добавляют несколько капель H2SO4.",
           "ar": "نظرًا لأن الماء النقي يوصل الكهرباء بشكل قليل جدًا، تتم إضافة بضع قطرات من H2SO4 إلى الوسط لزيادة التوصيلية في التحليل الكهربائي للماء.",
           "zh": "由于纯水的导电性很小，因此在介质中添加几滴H2SO4以增加水电解时的电导率。",
-          "ku": "Ji ber ku ava paqij elektrîkê pir hindik derbas dike, çend dilopên H2SO4 li navgînê têne zêdekirin da ku guheztina di elektrolîza avê de zêde bikin."
+          "ku": "Ji ber ku ava paqij elektrîkê pir hindik diguhezîne, di elektrolîza avê de ji bo zêdekirina guhêzbariyê çend dilop H2SO4 lê tê zêdekirin."
         },
         {
           "tr": "Suyun elektrolizinde anotta katottan 2 kat daha fazla gaz toplanır.",
@@ -1856,7 +1856,7 @@ export const unit22: ChemistryUnitSeedData = {
           "de": "Das Anion mit dem kleinsten Oxidationspotential an der Anode entsteht zuerst.",
           "fr": "L’anion ayant le plus petit potentiel d’oxydation à l’anode émerge en premier.",
           "ru": "Первым на аноде выходит анион с наименьшим окислительным потенциалом.",
-          "ar": "يظهر الأنيون ذو احتمالية الأكسدة الأصغر عند الأنود أولاً.",
+          "ar": "يتأكسد أولًا عند الأنود الأنيون ذو جهد التأكسد الأصغر.",
           "zh": "阳极氧化电位最小的阴离子首先出现。",
           "ku": "Anyona xwedan potansiyela oksîdasyonê ya herî piçûk li anodê pêşî derdikeve holê."
         }
@@ -1870,7 +1870,7 @@ export const unit22: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Поскольку чистая вода проводит электричество очень мало, в среду для увеличения проводимости при электролизе воды добавляют несколько капель H2SO4.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"نظرًا لأن الماء النقي يوصل الكهرباء بشكل قليل جدًا، تتم إضافة بضع قطرات من H2SO4 إلى الوسط لزيادة التوصيلية في التحليل الكهربائي للماء.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“由于纯水的导电性很小，因此在介质中添加几滴H2SO4以增加水电解时的电导率。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ji ber ku ava paqij elektrîkê pir hindik derbas dike, çend dilopên H2SO4 li navgînê têne zêdekirin da ku guheztina di elektrolîza avê de zêde bikin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Ji ber ku ava paqij elektrîkê pir hindik diguhezîne, di elektrolîza avê de ji bo zêdekirina guhêzbariyê çend dilop H2SO4 lê tê zêdekirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1893,7 +1893,7 @@ export const unit22: ChemistryUnitSeedData = {
           "fr": "L'électrolyse est un système galvanique qui produit spontanément de l'électricité.",
           "ru": "Электролиз – это гальваническая система, которая самопроизвольно производит электричество.",
           "ar": "التحليل الكهربائي هو نظام كلفاني ينتج الكهرباء تلقائيًا.",
-          "zh": "电解是一种自发发电的电流系统。",
+          "zh": "电解是一种能自发产生电能的原电池体系。",
           "ku": "Elektrolîz pergalek galvanîk e ku bi xweber elektrîkê hildiberîne."
         },
         {
@@ -1917,14 +1917,14 @@ export const unit22: ChemistryUnitSeedData = {
           "ku": "Di elektrolîza NaCl ya şilandî de, metala sodyûm li anodê tê berhev kirin."
         },
         {
-          "tr": "Erimiş CaCl2 tuzundan 2 Faraday akım geçerse katotta 1 mol Ca metali toplanır (Ca2+ + 2e- -> Ca).",
-          "en": "If a current of 2 Faradays passes through the molten CaCl2 salt, 1 mole of Ca metal is collected at the cathode (Ca2+ + 2e- -> Ca).",
-          "de": "Wenn ein Strom von 2 Faradays durch das geschmolzene CaCl2-Salz fließt, wird 1 Mol Ca-Metall an der Kathode gesammelt (Ca2+ + 2e- -> Ca).",
-          "fr": "Si un courant de 2 Faraday traverse le sel CaCl2 fondu, 1 mole de métal Ca est collectée à la cathode (Ca2+ + 2e- -> Ca).",
-          "ru": "Если через расплавленную соль CaCl2 пройти ток силой 2 Фарадея, то на катоде соберется 1 моль металлического Са (Са2+ + 2е- -> Са).",
-          "ar": "إذا مر تيار مقداره 2 فاراداي عبر ملح CaCl المنصهر، فسيتم جمع 1 مول من معدن Ca عند الكاثود (Ca2+ + 2e- -> Ca).",
-          "zh": "如果 2 法拉第的电流通过熔融的 CaCl2 盐，则在阴极处收集 1 摩尔的 Ca 金属 (Ca2+ + 2e- -> Ca)。",
-          "ku": "Ger herikîna 2 Faraday di xwêya CaCl2 ya şilandî re derbas bibe, 1 mol metal Ca li katodê tê berhev kirin (Ca2+ + 2e- -> Ca)."
+          "tr": "Erimiş CaCl2 tuzundan 2 Faraday akım geçerse katotta 1 mol Ca metali toplanır (Ca2+ + 2e- → Ca).",
+          "en": "If a current of 2 Faradays passes through the molten CaCl2 salt, 1 mole of Ca metal is collected at the cathode (Ca2+ + 2e- → Ca).",
+          "de": "Wenn ein Strom von 2 Faradays durch das geschmolzene CaCl2-Salz fließt, wird 1 Mol Ca-Metall an der Kathode gesammelt (Ca2+ + 2e- → Ca).",
+          "fr": "Si un courant de 2 Faraday traverse le sel CaCl2 fondu, 1 mole de métal Ca est collectée à la cathode (Ca2+ + 2e- → Ca).",
+          "ru": "Если через расплав CaCl2 пропустить 2 фарадея электричества, на катоде выделится 1 моль металлического Ca (Ca2+ + 2e- → Ca).",
+          "ar": "إذا مرت كمية كهرباء مقدارها 2 فاراداي في مصهور CaCl2 يترسب 1 مول من فلز Ca عند الكاثود (Ca2+ + 2e- → Ca).",
+          "zh": "如果 2 法拉第的电流通过熔融的 CaCl2 盐，则在阴极处收集 1 摩尔的 Ca 金属 (Ca2+ + 2e- → Ca)。",
+          "ku": "Ger herikîna 2 Faraday di xwêya CaCl2 ya şilandî re derbas bibe, 1 mol metal Ca li katodê tê berhev kirin (Ca2+ + 2e- → Ca)."
         },
         {
           "tr": "Korozyon metallerin fiziksel olarak parlatılması işlemidir.",
@@ -1939,14 +1939,14 @@ export const unit22: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Erimiş CaCl2 tuzundan 2 Faraday akım geçerse katotta 1 mol Ca metali toplanır (Ca2+ + 2e- -> Ca).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"If a current of 2 Faradays passes through the molten CaCl2 salt, 1 mole of Ca metal is collected at the cathode (Ca2+ + 2e- -> Ca).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Wenn ein Strom von 2 Faradays durch das geschmolzene CaCl2-Salz fließt, wird 1 Mol Ca-Metall an der Kathode gesammelt (Ca2+ + 2e- -> Ca).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Si un courant de 2 Faraday traverse le sel CaCl2 fondu, 1 mole de métal Ca est collectée à la cathode (Ca2+ + 2e- -> Ca).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Если через расплавленную соль CaCl2 пройти ток силой 2 Фарадея, то на катоде соберется 1 моль металлического Са (Са2+ + 2е- -> Са).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"إذا مر تيار مقداره 2 فاراداي عبر ملح CaCl المنصهر، فسيتم جمع 1 مول من معدن Ca عند الكاثود (Ca2+ + 2e- -> Ca).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“如果 2 法拉第的电流通过熔融的 CaCl2 盐，则在阴极处收集 1 摩尔的 Ca 金属 (Ca2+ + 2e- -> Ca)。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger herikîna 2 Faraday di xwêya CaCl2 ya şilandî re derbas bibe, 1 mol metal Ca li katodê tê berhev kirin (Ca2+ + 2e- -> Ca).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Erimiş CaCl2 tuzundan 2 Faraday akım geçerse katotta 1 mol Ca metali toplanır (Ca2+ + 2e- → Ca).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"If a current of 2 Faradays passes through the molten CaCl2 salt, 1 mole of Ca metal is collected at the cathode (Ca2+ + 2e- → Ca).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Wenn ein Strom von 2 Faradays durch das geschmolzene CaCl2-Salz fließt, wird 1 Mol Ca-Metall an der Kathode gesammelt (Ca2+ + 2e- → Ca).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Si un courant de 2 Faraday traverse le sel CaCl2 fondu, 1 mole de métal Ca est collectée à la cathode (Ca2+ + 2e- → Ca).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Если через расплав CaCl2 пропустить 2 фарадея электричества, на катоде выделится 1 моль металлического Ca (Ca2+ + 2e- → Ca).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"إذا مرت كمية كهرباء مقدارها 2 فاراداي في مصهور CaCl2 يترسب 1 مول من فلز Ca عند الكاثود (Ca2+ + 2e- → Ca).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“如果 2 法拉第的电流通过熔融的 CaCl2 盐，则在阴极处收集 1 摩尔的 Ca 金属 (Ca2+ + 2e- → Ca)。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Ger herikîna 2 Faraday di xwêya CaCl2 ya şilandî re derbas bibe, 1 mol metal Ca li katodê tê berhev kirin (Ca2+ + 2e- → Ca).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1998,7 +1998,7 @@ export const unit22: ChemistryUnitSeedData = {
           "de": "Als Opferelektrode sollte ein passiveres Metall als das zu schützende Metall gewählt werden.",
           "fr": "Un métal plus passif que le métal à protéger doit être choisi comme électrode sacrificielle.",
           "ru": "В качестве жертвующего электрода следует выбрать более пассивный металл, чем защищаемый металл.",
-          "ar": "يجب اختيار معدن أكثر سلبية من المعدن المراد حمايته ليكون القطب الكهربائي المضحي.",
+          "ar": "يجب اختيار فلز أقل نشاطًا من الفلز المراد حمايته ليكون القطب المضحّي.",
           "zh": "应选择比被保护金属更惰性的金属作为牺牲电极。",
           "ku": "Pêdivî ye ku ji metalê ku were parastin metalek pasîftir wekî elektrodê qurban were hilbijartin."
         },
@@ -2040,12 +2040,12 @@ export const unit22: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Demir bir boruyu korozyondan korumak için magnezyum bloğu bağlanması aktiflik farkına dayalı kurban elektrot uygulamasıdır.",
-          "en": "Bonding a magnesium block to protect an iron pipe from corrosion is a sacrificial electrode application based on activity difference.",
-          "de": "Das Verkleben eines Magnesiumblocks zum Schutz eines Eisenrohrs vor Korrosion ist eine Opferelektrodenanwendung, die auf Aktivitätsunterschieden basiert.",
-          "fr": "Le collage d'un bloc de magnésium pour protéger un tuyau en fer de la corrosion est une application d'électrode sacrificielle basée sur la différence d'activité.",
-          "ru": "Приклеивание магниевого блока для защиты железной трубы от коррозии — это применение жертвенного электрода, основанное на разнице активности.",
+          "en": "Connecting a magnesium block to an iron pipe to protect it from corrosion is a sacrificial-electrode application based on the difference in activity.",
+          "de": "Das leitende Verbinden eines Magnesiumblocks mit einem Eisenrohr zum Korrosionsschutz ist eine Anwendung der Opferelektrode, die auf dem Aktivitätsunterschied beruht.",
+          "fr": "Relier électriquement un bloc de magnésium à un tuyau en fer pour le protéger de la corrosion est une application de l'électrode sacrificielle fondée sur la différence d'activité.",
+          "ru": "Подключение магниевого блока к железной трубе для защиты от коррозии — это применение жертвенного электрода, основанное на разнице активности металлов.",
           "ar": "إن ربط كتلة من المغنيسيوم لحماية أنبوب حديدي من التآكل هو تطبيق قطب كهربائي مضحٍ يعتمد على اختلاف النشاط.",
-          "zh": "粘合镁块以保护铁管免受腐蚀是一种基于活性差异的牺牲电极应用。",
+          "zh": "将镁块用导线与铁管相连以防止铁管腐蚀，是基于金属活动性差异的牺牲电极应用。",
           "ku": "Girêdana bloka magnesiumê ji bo parastina boriyek hesin ji korozyonê serîlêdanek elektrodê ya qurbanî ye ku li ser bingeha cûdahiya çalakiyê ye."
         },
         {
@@ -2074,7 +2074,7 @@ export const unit22: ChemistryUnitSeedData = {
           "de": "Das Anion mit dem kleinsten Oxidationspotential an der Anode entsteht zuerst.",
           "fr": "L’anion ayant le plus petit potentiel d’oxydation à l’anode émerge en premier.",
           "ru": "Первым на аноде выходит анион с наименьшим окислительным потенциалом.",
-          "ar": "يظهر الأنيون ذو احتمالية الأكسدة الأصغر عند الأنود أولاً.",
+          "ar": "يتأكسد أولًا عند الأنود الأنيون ذو جهد التأكسد الأصغر.",
           "zh": "阳极氧化电位最小的阴离子首先出现。",
           "ku": "Anyona xwedan potansiyela oksîdasyonê ya herî piçûk li anodê pêşî derdikeve holê."
         },
@@ -2092,12 +2092,12 @@ export const unit22: ChemistryUnitSeedData = {
       "correctIndex": 0,
       "explanation": {
         "tr": "Doğru cevap \"Demir bir boruyu korozyondan korumak için magnezyum bloğu bağlanması aktiflik farkına dayalı kurban elektrot uygulamasıdır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Bonding a magnesium block to protect an iron pipe from corrosion is a sacrificial electrode application based on activity difference.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Das Verkleben eines Magnesiumblocks zum Schutz eines Eisenrohrs vor Korrosion ist eine Opferelektrodenanwendung, die auf Aktivitätsunterschieden basiert.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Le collage d'un bloc de magnésium pour protéger un tuyau en fer de la corrosion est une application d'électrode sacrificielle basée sur la différence d'activité.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Приклеивание магниевого блока для защиты железной трубы от коррозии — это применение жертвенного электрода, основанное на разнице активности.». Фундаментальный химический факт официальной программы.",
+        "en": "The correct statement is: \"Connecting a magnesium block to an iron pipe to protect it from corrosion is a sacrificial-electrode application based on the difference in activity.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Das leitende Verbinden eines Magnesiumblocks mit einem Eisenrohr zum Korrosionsschutz ist eine Anwendung der Opferelektrode, die auf dem Aktivitätsunterschied beruht.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Relier électriquement un bloc de magnésium à un tuyau en fer pour le protéger de la corrosion est une application de l'électrode sacrificielle fondée sur la différence d'activité.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Подключение магниевого блока к железной трубе для защиты от коррозии — это применение жертвенного электрода, основанное на разнице активности металлов.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"إن ربط كتلة من المغنيسيوم لحماية أنبوب حديدي من التآكل هو تطبيق قطب كهربائي مضحٍ يعتمد على اختلاف النشاط.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“粘合镁块以保护铁管免受腐蚀是一种基于活性差异的牺牲电极应用。”。属于化学学科必考的核心客观真理。",
+        "zh": "正确表述为：“将镁块用导线与铁管相连以防止铁管腐蚀，是基于金属活动性差异的牺牲电极应用。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Girêdana bloka magnesiumê ji bo parastina boriyek hesin ji korozyonê serîlêdanek elektrodê ya qurbanî ye ku li ser bingeha cûdahiya çalakiyê ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }

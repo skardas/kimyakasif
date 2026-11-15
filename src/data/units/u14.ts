@@ -23,7 +23,7 @@ export const unit14: ChemistryUnitSeedData = {
     "fr": "Molarité, molalité, fraction taupe et dilution",
     "ru": "Молярность, моляльность, мольная доля и разбавление",
     "ar": "المولارية، المولالية، الكسر المولي والتخفيف",
-    "zh": "摩尔浓度、摩尔浓度、摩尔分数和稀释度",
+    "zh": "物质的量浓度、质量摩尔浓度、摩尔分数和稀释",
     "ku": "Molarity, Molality, Mole Fraction and Dilution"
   },
   "facts": [
@@ -59,7 +59,7 @@ export const unit14: ChemistryUnitSeedData = {
         "fr": "La molalité (m) est le nombre de moles de soluté dissoutes dans 1 kilogramme (1 000 g) de solvant (m = n / kg_solvant).",
         "ru": "Моляльность (m) — это количество молей растворенного вещества, растворенного в 1 килограмме (1000 г) растворителя (m = n/кг_растворителя).",
         "ar": "المولالية (م) هي عدد مولات المذاب المذابة في 1 كيلوجرام (1000 جم) من المذيب (م = ن / كجم_المذيب).",
-        "zh": "摩尔浓度 (m) 是溶解在 1 千克（1000 克）溶剂中的溶质的摩尔数（m = n / kg_溶剂）。",
+        "zh": "质量摩尔浓度 (m) 是溶解在 1 千克（1000 克）溶剂中的溶质的物质的量（m = n / kg_溶剂）。",
         "ku": "Molalîte (m) hejmara molên maddeya ku di 1 kîlo (1000 g) helwêstê de tê helandin e (m = n / kg_solvent)."
       },
       "trap": {
@@ -69,7 +69,7 @@ export const unit14: ChemistryUnitSeedData = {
         "fr": "La molalité se trouve en divisant par le volume total de la solution.",
         "ru": "Моляльность находится путем деления на общий объем раствора.",
         "ar": "يتم العثور على المولالية عن طريق القسمة على الحجم الكلي للحل.",
-        "zh": "通过除以溶液的总体积即可得出摩尔浓度。",
+        "zh": "质量摩尔浓度是用溶质的物质的量除以溶液的总体积求得的。",
         "ku": "Molality bi dabeşkirina bi qebareya tevahî ya çareseriyê ve tê dîtin."
       }
     },
@@ -155,7 +155,7 @@ export const unit14: ChemistryUnitSeedData = {
         "ku": "Dema ku hişkek îyonî di nav avê de tê hilweşandin, kombûna îyonê ya di nav çareseriyê de hilbera molarîteya xwê û rêjeya îyonî ye."
       },
       "trap": {
-        "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M'dır.",
+        "tr": "0,1 M AlCl3 çözeltisinde klor iyonu derişimi 0,1 M'dır.",
         "en": "The chloride ion concentration in 0.1 M AlCl3 solution is 0.1 M.",
         "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
         "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
@@ -165,7 +165,7 @@ export const unit14: ChemistryUnitSeedData = {
         "ku": "Di çareseriya 0,1 M AlCl3 de rêjeya îyona klorîdê 0,1 M e."
       },
       "osymTip": {
-        "tr": "0.1 M AlCl3'te [Cl-] = 3 * 0.1 = 0.3 M'dır!",
+        "tr": "0,1 M AlCl3'te [Cl-] = 3 * 0,1 = 0,3 M'dır!",
         "en": "In 0.1 M AlCl3, [Cl-] = 3 * 0.1 = 0.3 M!",
         "de": "In 0,1 M AlCl3 ist [Cl-] = 3 * 0,1 = 0,3 M!",
         "fr": "Dans 0,1 M AlCl3, [Cl-] = 3 * 0,1 = 0,3 M !",
@@ -238,9 +238,9 @@ export const unit14: ChemistryUnitSeedData = {
         "en": "The concentration of common ions is not affected by mixing.",
         "de": "Die Konzentration gemeinsamer Ionen wird durch das Mischen nicht beeinflusst.",
         "fr": "La concentration des ions communs n'est pas affectée par le mélange.",
-        "ru": "Смешивание не влияет на концентрацию обычных ионов.",
-        "ar": "لا يتأثر تركيز الأيونات الشائعة بالخلط.",
-        "zh": "普通离子的浓度不受混合的影响。",
+        "ru": "Смешивание не влияет на концентрацию общих ионов.",
+        "ar": "لا يتأثر تركيز الأيونات المشتركة بالخلط.",
+        "zh": "共同离子的浓度不受混合的影响。",
         "ku": "Tevlihevkirina îyonên hevpar bi tevlihevkirinê bandor nabe."
       }
     },
@@ -263,7 +263,7 @@ export const unit14: ChemistryUnitSeedData = {
         "fr": "La molalité diminue à mesure que la température augmente en raison de l'expansion du volume.",
         "ru": "Моляльность уменьшается с увеличением температуры из-за объемного расширения.",
         "ar": "تتناقص المولالية مع زيادة درجة الحرارة بسبب توسع الحجم.",
-        "zh": "由于体积膨胀，摩尔浓度随着温度升高而降低。",
+        "zh": "由于体积膨胀，质量摩尔浓度随温度升高而降低。",
         "ku": "Her ku germahî zêde dibe ji ber berbelavbûna qebareyê molalîte kêm dibe."
       }
     },
@@ -339,7 +339,7 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-f14",
       "fact": {
-        "tr": "0.2 M 500 mL NaCl çözeltisinde çözünmüş NaCl mol sayısı n = M * V = 0.2 * 0.5 = 0.1 moldür.",
+        "tr": "0,2 M 500 mL NaCl çözeltisinde çözünmüş NaCl mol sayısı n = M * V = 0,2 * 0,5 = 0,1 moldür.",
         "en": "The number of moles of NaCl dissolved in 0.2 M 500 mL NaCl solution is n = M * V = 0.2 * 0.5 = 0.1 mol.",
         "de": "Die Anzahl der Mol NaCl, gelöst in 0,2 M 500 ml NaCl-Lösung, beträgt n = M * V = 0,2 * 0,5 = 0,1 Mol.",
         "fr": "Le nombre de moles de NaCl dissoutes dans une solution de NaCl 0,2 M dans 500 ml est n = M * V = 0,2 * 0,5 = 0,1 mol.",
@@ -349,7 +349,7 @@ export const unit14: ChemistryUnitSeedData = {
         "ku": "Hejmara molên NaCl yên ku di 0,2 M 500 mL çareseriya NaCl de têne hilweşandin n = M * V = 0,2 * 0,5 = 0,1 mol e."
       },
       "trap": {
-        "tr": "0.2 M 500 mL çözeltide 1 mol tuz çözünmüştür.",
+        "tr": "0,2 M 500 mL çözeltide 1 mol tuz çözünmüştür.",
         "en": "1 mole of salt was dissolved in 500 mL of 0.2 M solution.",
         "de": "1 Mol Salz wurde in 500 ml einer 0,2 M Lösung gelöst.",
         "fr": "1 mole de sel a été dissoute dans 500 ml de solution 0,2 M.",
@@ -436,7 +436,7 @@ export const unit14: ChemistryUnitSeedData = {
         "fr": "La molarité est en mol/litre de solution (varie en fonction de la température) ; La molalité est mol/kg de solvant (indépendante de la température).",
         "ru": "Молярность — моль/литр раствора (меняется в зависимости от температуры); моляльность — моль/кг растворителя (независимо от температуры).",
         "ar": "المولارية هي مول/لتر من المحلول (تختلف باختلاف درجة الحرارة)؛ المولالية هي مول/كجم من المذيب (مستقل عن درجة الحرارة).",
-        "zh": "摩尔浓度是摩尔/升溶液（随温度变化）；摩尔浓度是摩尔/千克溶剂（与温度无关）。",
+        "zh": "物质的量浓度是每升溶液中溶质的物质的量（随温度变化）；质量摩尔浓度是每千克溶剂中溶质的物质的量（与温度无关）。",
         "ku": "Molarity mol/Litera çareseriyê ye (li gor germahiyê diguhere); molalîtî mol/kg helwêst e (ji germahiyê serbixwe ye)."
       }
     },
@@ -463,47 +463,47 @@ export const unit14: ChemistryUnitSeedData = {
         "ku": "Çareseriya Ne-Elektrolîte"
       },
       "distinction": {
-        "tr": "Elektrolit çözeltiler iyon hareketiyle elektriği iletir; elektrolit olmayanlar moleküler çözünür iletmez.",
-        "en": "Electrolyte solutions conduct electricity through ion movement; non-electrolytes do not conduct molecular soluble.",
-        "de": "Elektrolytlösungen leiten Elektrizität durch Ionenbewegung; Nichtelektrolyte leiten keine molekularlöslichen Stoffe.",
-        "fr": "Les solutions électrolytiques conduisent l'électricité grâce au mouvement des ions ; les non-électrolytes ne conduisent pas les molécules solubles.",
-        "ru": "Растворы электролитов проводят электричество посредством движения ионов; неэлектролиты не проводят молекулярные растворы.",
-        "ar": "تقوم محاليل الإلكتروليت بتوصيل الكهرباء من خلال حركة الأيونات؛ غير الإلكتروليتات لا تقوم بالذوبان الجزيئي.",
-        "zh": "电解质溶液通过离子运动导电；非电解质不传导分子溶解。",
-        "ku": "Çareseriyên elektrolîtê bi tevgera îyonê elektrîkê derbas dikin; ne-elektrolîtên molekulî yên çareserkirî nagirin."
+        "tr": "Elektrolit çözeltiler iyonların hareketiyle elektriği iletir; elektrolit olmayan çözeltilerde çözünen moleküller hâlinde bulunduğundan elektrik iletilmez.",
+        "en": "Electrolyte solutions conduct electricity through the movement of ions; in non-electrolyte solutions the solute is present as molecules, so they do not conduct.",
+        "de": "Elektrolytlösungen leiten den Strom durch die Bewegung von Ionen; in Nichtelektrolytlösungen liegt der gelöste Stoff als Moleküle vor, daher leiten sie nicht.",
+        "fr": "Les solutions électrolytiques conduisent l'électricité grâce au déplacement des ions ; dans les solutions non électrolytiques, le soluté est sous forme de molécules, elles ne conduisent donc pas.",
+        "ru": "Растворы электролитов проводят ток за счёт движения ионов; в растворах неэлектролитов растворённое вещество находится в виде молекул, поэтому они не проводят ток.",
+        "ar": "تنقل محاليل الإلكتروليتات الكهرباء بحركة الأيونات؛ أما في محاليل غير الإلكتروليتات فيوجد المذاب على شكل جزيئات، لذلك لا تنقل الكهرباء.",
+        "zh": "电解质溶液依靠离子的移动导电；非电解质溶液中溶质以分子形式存在，因此不导电。",
+        "ku": "Çareseriyên elektrolît bi tevgera îyonan elektrîkê diguhezînin; di çareseriyên ne-elektrolît de maddeya helbûyî wekî molekul heye, ji ber vê elektrîkê naguhezînin."
       }
     },
     {
       "id": "u14-c03",
       "conceptA": {
-        "tr": "Molarite (M)",
-        "en": "Molarity (M)",
-        "de": "Molarität (M)",
-        "fr": "Molarité (M)",
-        "ru": "Молярность (М)",
-        "ar": "المولارية (م)",
-        "zh": "摩尔浓度 (M)",
-        "ku": "Molarity (M)"
+        "tr": "Seyreltme",
+        "en": "Dilution",
+        "de": "Verdünnen",
+        "fr": "Dilution",
+        "ru": "Разбавление",
+        "ar": "التخفيف",
+        "zh": "稀释",
+        "ku": "Sivikkirin (dîlûsyon)"
       },
       "conceptB": {
-        "tr": "Molalite (m)",
-        "en": "Molality (m)",
-        "de": "Molalität (m)",
-        "fr": "Molalité (m)",
-        "ru": "Моляльность (м)",
-        "ar": "المولالية (م)",
-        "zh": "质量摩尔浓度 (m)",
-        "ku": "Molality (m)"
+        "tr": "Deriştirme",
+        "en": "Concentrating",
+        "de": "Aufkonzentrieren",
+        "fr": "Concentration par évaporation",
+        "ru": "Концентрирование",
+        "ar": "زيادة التركيز",
+        "zh": "浓缩",
+        "ku": "Tîrkirin (konsantrekirin)"
       },
       "distinction": {
-        "tr": "Molarite 1 litre çözeltideki çözünen mol sayısıdır (n/V); molalite 1 kilogram çözücüdeki çözünen mol sayısıdır (n/kg).",
-        "en": "Molarity is the number of moles of solute in 1 liter of solution (n/V); Molality is the number of moles of solute in 1 kilogram of solvent (n/kg).",
-        "de": "Die Molarität ist die Anzahl der Mol gelöster Substanz in 1 Liter Lösung (n/V); Die Molalität ist die Anzahl der Mol gelöster Substanz in 1 Kilogramm Lösungsmittel (n/kg).",
-        "fr": "La molarité est le nombre de moles de soluté dans 1 litre de solution (n/V) ; La molalité est le nombre de moles de soluté dans 1 kilogramme de solvant (n/kg).",
-        "ru": "Молярность — количество молей растворенного вещества в 1 литре раствора (n/V); Моляльность – это количество молей растворенного вещества в 1 килограмме растворителя (н/кг).",
-        "ar": "المولارية هي عدد مولات المذاب في 1 لتر من المحلول (n/V)؛ المولالية هي عدد مولات المذاب في 1 كيلوجرام من المذيب (ن/كجم).",
-        "zh": "摩尔浓度是1升溶液中溶质的摩尔数(n/V)；摩尔浓度是 1 千克溶剂中溶质的摩尔数 (n/kg)。",
-        "ku": "Molarity di 1 lître çareserî de (n/V) de hejmara molên maddeya çareserkirî ye; Molality hejmara molên maddeya çareserkirî ye di 1 kîloya helwêstê de (n/kg)."
+        "tr": "Seyreltmede çözeltiye çözücü eklenir, çözünenin mol sayısı değişmez ve derişim azalır; deriştirmede çökme olmadan çözücü buharlaştırılır ya da çözünen eklenir ve derişim artar.",
+        "en": "In dilution, solvent is added, the moles of solute stay the same and the concentration decreases; in concentrating, solvent is evaporated without precipitation or more solute is added, and the concentration increases.",
+        "de": "Beim Verdünnen wird Lösungsmittel zugegeben, die Stoffmenge des gelösten Stoffes bleibt gleich und die Konzentration sinkt; beim Aufkonzentrieren wird ohne Ausfällung Lösungsmittel verdampft oder gelöster Stoff zugegeben, und die Konzentration steigt.",
+        "fr": "Lors d'une dilution, on ajoute du solvant : la quantité de soluté reste la même et la concentration diminue ; lors d'une concentration, on évapore du solvant sans précipitation ou on ajoute du soluté, et la concentration augmente.",
+        "ru": "При разбавлении к раствору добавляют растворитель, количество молей растворённого вещества не меняется, а концентрация уменьшается; при концентрировании растворитель выпаривают без выпадения осадка или добавляют растворённое вещество, и концентрация увеличивается.",
+        "ar": "في التخفيف يُضاف المذيب إلى المحلول فيبقى عدد مولات المذاب ثابتًا ويقل التركيز؛ وفي زيادة التركيز يُبخَّر المذيب دون ترسيب أو يُضاف مذاب فيزداد التركيز.",
+        "zh": "稀释时向溶液中加入溶剂，溶质的物质的量不变，浓度减小；浓缩时在不析出固体的情况下蒸发溶剂或加入溶质，浓度增大。",
+        "ku": "Di sivikkirinê de helker li çareseriyê tê zêdekirin, hejmara molên maddeya helbûyî naguhere û konsantrasyon kêm dibe; di tîrkirinê de bêyî niştinê helker tê hilmijandin an maddeya helbûyî tê zêdekirin û konsantrasyon zêde dibe."
       }
     },
     {
@@ -512,7 +512,7 @@ export const unit14: ChemistryUnitSeedData = {
         "tr": "Mol Kesri (X)",
         "en": "Mole Fraction (X)",
         "de": "Molenanteil (X)",
-        "fr": "Fraction taupe (X)",
+        "fr": "Fraction molaire (X)",
         "ru": "Мольная доля (X)",
         "ar": "الكسر المولي (X)",
         "zh": "摩尔分数 (X)",
@@ -546,20 +546,20 @@ export const unit14: ChemistryUnitSeedData = {
         "en": "Concentrated Solution",
         "de": "Konzentrierte Lösung",
         "fr": "Solution concentrée",
-        "ru": "Концентрированное решение",
+        "ru": "Концентрированный раствор",
         "ar": "محلول مركز",
-        "zh": "浓缩液",
+        "zh": "浓溶液",
         "ku": "Çareseriya konsantrekirî"
       },
       "conceptB": {
         "tr": "Seyreltik Çözelti",
         "en": "Dilute Solution",
-        "de": "Lösung verdünnen",
+        "de": "Verdünnte Lösung",
         "fr": "Solution diluée",
         "ru": "Разбавленный раствор",
-        "ar": "الحل المخفف",
+        "ar": "المحلول المخفف",
         "zh": "稀溶液",
-        "ku": "Çareseriya Dilute"
+        "ku": "Çareseriya sivik"
       },
       "distinction": {
         "tr": "Derişik çözeltide birim hacimdeki çözünen miktarı fazladır; seyreltik çözeltide birim hacimdeki çözünen miktarı azdır.",
@@ -579,8 +579,8 @@ export const unit14: ChemistryUnitSeedData = {
         "en": "Homogeneous Solution",
         "de": "Homogene Lösung",
         "fr": "Solution homogène",
-        "ru": "Гомогенное решение",
-        "ar": "حل متجانس",
+        "ru": "Гомогенный раствор",
+        "ar": "محلول متجانس",
         "zh": "均质溶液",
         "ku": "Çareseriya homojen"
       },
@@ -661,7 +661,7 @@ export const unit14: ChemistryUnitSeedData = {
         "ku": "Molarity Compound"
       },
       "distinction": {
-        "tr": "Tuzun molaritesi formüldeki iyon katsayısıyla çarpılarak her bir iyonun derişimi bulunur (ör. 0.1 M AlCl3 -> 0.3 M Cl-).",
+        "tr": "Tuzun molaritesi formüldeki iyon katsayısıyla çarpılarak her bir iyonun derişimi bulunur (ör. 0,1 M AlCl3 -> 0,3 M Cl-).",
         "en": "The molarity of the salt is multiplied by the ionic coefficient in the formula to find the concentration of each ion (e.g. 0.1 M AlCl3 -> 0.3 M Cl-).",
         "de": "Die Molarität des Salzes wird mit dem Ionenkoeffizienten in der Formel multipliziert, um die Konzentration jedes Ions zu ermitteln (z. B. 0,1 M AlCl3 -> 0,3 M Cl-).",
         "fr": "La molarité du sel est multipliée par le coefficient ionique dans la formule pour trouver la concentration de chaque ion (par exemple 0,1 M AlCl3 -> 0,3 M Cl-).",
@@ -773,13 +773,13 @@ export const unit14: ChemistryUnitSeedData = {
         },
         {
           "tr": "Çizgiye kadar saf su eklenip menisküs ayarlanır",
-          "en": "Pure water is added up to the line and the meniscus is adjusted.",
-          "de": "In die Leitung wird reines Wasser eingefüllt und der Meniskus justiert.",
-          "fr": "De l'eau pure est ajoutée jusqu'à la ligne et le ménisque est ajusté.",
-          "ru": "В линию добавляется чистая вода и регулируется мениск.",
-          "ar": "تتم إضافة الماء النقي إلى الخط ويتم تعديل الغضروف المفصلي.",
-          "zh": "将纯水添加到管线中并调整弯液面。",
-          "ku": "Ava paqij heya rêzê tê zêdekirin û meniscus tê sererast kirin."
+          "en": "Pure water is added up to the calibration mark and the meniscus is adjusted",
+          "de": "Reines Wasser wird bis zur Eichmarke aufgefüllt und der Meniskus eingestellt",
+          "fr": "On complète avec de l'eau pure jusqu'au trait de jauge en ajustant le ménisque",
+          "ru": "Добавляют чистую воду до метки и выравнивают мениск",
+          "ar": "يُضاف الماء النقي حتى علامة المعايرة ويُضبط سطح السائل المقعر (الهلال)",
+          "zh": "加纯水至刻度线并调整弯月面",
+          "ku": "Ava paqij heta xeta nîşankirî tê zêdekirin û menîsk tê eyarkirin"
         }
       ]
     },
@@ -845,9 +845,9 @@ export const unit14: ChemistryUnitSeedData = {
         "en": "Mixing Two Solutions",
         "de": "Mischen zweier Lösungen",
         "fr": "Mélanger deux solutions",
-        "ru": "Смешивание двух решений",
+        "ru": "Смешивание двух растворов",
         "ar": "خلط حلين",
-        "zh": "混合两种解决方案",
+        "zh": "两种溶液的混合",
         "ku": "Têkelkirina Du Çareyan"
       },
       "steps": [
@@ -898,7 +898,7 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin01",
       "stem": {
-        "tr": "0.4 M 200 mL Ca(NO3)2 çözeltisi ile 0.2 M 300 mL NaNO3 çözeltisi karıştırıldığında son çözeltideki NO3- iyonu derişimi kaç molar olur?",
+        "tr": "0,4 M 200 mL Ca(NO3)2 çözeltisi ile 0,2 M 300 mL NaNO3 çözeltisi karıştırıldığında son çözeltideki NO3- iyonu derişimi kaç molar olur?",
         "en": "When 0.4 M 200 mL Ca(NO3)2 solution and 0.2 M 300 mL NaNO3 solution are mixed, what is the molar concentration of NO3- ion in the final solution?",
         "de": "Wie hoch ist die molare Konzentration der NO3-Ionen in der Endlösung, wenn 0,4 M 200 ml Ca(NO3)2-Lösung und 0,2 M 300 ml NaNO3-Lösung gemischt werden?",
         "fr": "Lorsque 0,4 M 200 mL de solution de Ca(NO3)2 et 0,2 M 300 mL de solution de NaNO3 sont mélangés, quelle est la concentration molaire de l’ion NO3- dans la solution finale ?",
@@ -909,59 +909,59 @@ export const unit14: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "0.44 M",
-          "en": "0.44M",
-          "de": "0,44 Mio",
-          "fr": "0,44M",
+          "tr": "0,44 M",
+          "en": "0.44 M",
+          "de": "0,44 M",
+          "fr": "0,44 M",
           "ru": "0,44 М",
           "ar": "0.44 م",
-          "zh": "0.44M",
-          "ku": "0.44M"
+          "zh": "0.44 M",
+          "ku": "0,44 M"
         },
         {
-          "tr": "0.30 M",
-          "en": "0.30M",
-          "de": "0,30 Mio",
-          "fr": "0,30M",
+          "tr": "0,30 M",
+          "en": "0.30 M",
+          "de": "0,30 M",
+          "fr": "0,30 M",
           "ru": "0,30 М",
           "ar": "0.30 م",
-          "zh": "0.30M",
-          "ku": "0.30M"
+          "zh": "0.30 M",
+          "ku": "0,30 M"
         },
         {
-          "tr": "0.20 M",
-          "en": "0.20M",
-          "de": "0,20 Mio",
-          "fr": "0,20M",
+          "tr": "0,20 M",
+          "en": "0.20 M",
+          "de": "0,20 M",
+          "fr": "0,20 M",
           "ru": "0,20 М",
           "ar": "0.20 م",
-          "zh": "0.20M",
-          "ku": "0.20M"
+          "zh": "0.20 M",
+          "ku": "0,20 M"
         },
         {
-          "tr": "0.60 M",
-          "en": "0.60M",
-          "de": "0,60 Mio",
-          "fr": "0,60M",
-          "ru": "0,60М",
+          "tr": "0,60 M",
+          "en": "0.60 M",
+          "de": "0,60 M",
+          "fr": "0,60 M",
+          "ru": "0,60 М",
           "ar": "0.60 م",
-          "zh": "0.60M",
-          "ku": "0.60M"
+          "zh": "0.60 M",
+          "ku": "0,60 M"
         },
         {
-          "tr": "0.50 M",
-          "en": "0.50M",
-          "de": "0,50 Mio",
-          "fr": "0,50M",
+          "tr": "0,50 M",
+          "en": "0.50 M",
+          "de": "0,50 M",
+          "fr": "0,50 M",
           "ru": "0,50 М",
           "ar": "0.50 م",
-          "zh": "0.50M",
-          "ku": "0.50M"
+          "zh": "0.50 M",
+          "ku": "0,50 M"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "n(NO3-) = (2 * 0.4 * 0.2) + (1 * 0.2 * 0.3) = 0.16 + 0.06 = 0.22 mol. V_toplam = 0.2 + 0.3 = 0.5 L. [NO3-] = 0.22 / 0.5 = 0.44 M.",
+        "tr": "n(NO3-) = (2 * 0,4 * 0,2) + (1 * 0,2 * 0,3) = 0,16 + 0,06 = 0,22 mol. V_toplam = 0,2 + 0,3 = 0,5 L. [NO3-] = 0,22 / 0,5 = 0,44 M.",
         "en": "n(NO3-) = (2 * 0.4 * 0.2) + (1 * 0.2 * 0.3) = 0.16 + 0.06 = 0.22 mol. V_total = 0.2 + 0.3 = 0.5 L. [NO3-] = 0.22 / 0.5 = 0.44 M.",
         "de": "n(NO3-) = (2 * 0,4 * 0,2) + (1 * 0,2 * 0,3) = 0,16 + 0,06 = 0,22 mol. V_total = 0,2 + 0,3 = 0,5 L. [NO3-] = 0,22 / 0,5 = 0,44 M.",
         "fr": "n(NO3-) = (2 * 0,4 * 0,2) + (1 * 0,2 * 0,3) = 0,16 + 0,06 = 0,22 mol. V_total = 0,2 + 0,3 = 0,5 L. [NO3-] = 0,22 / 0,5 = 0,44 M.",
@@ -974,7 +974,7 @@ export const unit14: ChemistryUnitSeedData = {
     {
       "id": "u14-twin02",
       "stem": {
-        "tr": "Özkütlesi 1.2 g/mL olan kütlece %36.5'lik derişik HCl çözeltisinin molar derişimi kaçtır? (HCl: 36.5)",
+        "tr": "Özkütlesi 1,2 g/mL olan kütlece %36,5'lik derişik HCl çözeltisinin molar derişimi kaçtır? (HCl: 36,5)",
         "en": "What is the molar concentration of a 36.5% concentrated HCl solution by mass with a density of 1.2 g/mL? (HCl: 36.5)",
         "de": "Wie hoch ist die molare Konzentration einer 36,5 %igen konzentrierten HCl-Lösung mit einer Dichte von 1,2 g/ml? (HCl: 36,5)",
         "fr": "Quelle est la concentration molaire d'une solution de HCl concentrée à 36,5 % en masse avec une densité de 1,2 g/mL ? (HCl : 36,5)",
@@ -985,59 +985,59 @@ export const unit14: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "12.0 M",
-          "en": "12.0M",
-          "de": "12,0 Mio",
-          "fr": "12,0 millions",
-          "ru": "12,0М",
+          "tr": "12,0 M",
+          "en": "12.0 M",
+          "de": "12,0 M",
+          "fr": "12,0 M",
+          "ru": "12,0 М",
           "ar": "12.0 م",
-          "zh": "12.0M",
-          "ku": "12.0M"
+          "zh": "12.0 M",
+          "ku": "12,0 M"
         },
         {
-          "tr": "6.0 M",
-          "en": "6.0M",
-          "de": "6,0 Mio",
-          "fr": "6,0 millions",
-          "ru": "6.0М",
+          "tr": "6,0 M",
+          "en": "6.0 M",
+          "de": "6,0 M",
+          "fr": "6,0 M",
+          "ru": "6,0 М",
           "ar": "6.0 م",
-          "zh": "6.0M",
-          "ku": "6.0M"
+          "zh": "6.0 M",
+          "ku": "6,0 M"
         },
         {
-          "tr": "1.2 M",
-          "en": "1.2M",
-          "de": "1,2 Mio",
+          "tr": "1,2 M",
+          "en": "1.2 M",
+          "de": "1,2 M",
           "fr": "1,2 M",
-          "ru": "1,2 млн.",
+          "ru": "1,2 М",
           "ar": "1.2 م",
-          "zh": "1.2M",
-          "ku": "1.2M"
+          "zh": "1.2 M",
+          "ku": "1,2 M"
         },
         {
-          "tr": "10.0 M",
-          "en": "10.0M",
-          "de": "10,0 Mio",
-          "fr": "10,0 millions",
-          "ru": "10,0М",
+          "tr": "10,0 M",
+          "en": "10.0 M",
+          "de": "10,0 M",
+          "fr": "10,0 M",
+          "ru": "10,0 М",
           "ar": "10.0 م",
-          "zh": "10.0M",
-          "ku": "10.0M"
+          "zh": "10.0 M",
+          "ku": "10,0 M"
         },
         {
-          "tr": "3.65 M",
-          "en": "3.65M",
-          "de": "3,65 Mio",
-          "fr": "3,65M",
-          "ru": "3,65 млн.",
+          "tr": "3,65 M",
+          "en": "3.65 M",
+          "de": "3,65 M",
+          "fr": "3,65 M",
+          "ru": "3,65 М",
           "ar": "3.65 م",
-          "zh": "3.65M",
-          "ku": "3.65M"
+          "zh": "3.65 M",
+          "ku": "3,65 M"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "M = (%C * d * 10) / MA -> M = (36.5 * 1.2 * 10) / 36.5 = 12.0 M.",
+        "tr": "M = (%C * d * 10) / MA -> M = (36,5 * 1,2 * 10) / 36,5 = 12,0 M.",
         "en": "M = (%C * d * 10) / MA -> M = (36.5 * 1.2 * 10) / 36.5 = 12.0 M.",
         "de": "M = (%C * d * 10) / MA -> M = (36,5 * 1,2 * 10) / 36,5 = 12,0 M.",
         "fr": "M = (%C * d * 10) / MA -> M = (36,5 * 1,2 * 10) / 36,5 = 12,0 M.",
@@ -1061,7 +1061,7 @@ export const unit14: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M'dır.",
+          "tr": "0,1 M AlCl3 çözeltisinde klor iyonu derişimi 0,1 M'dır.",
           "en": "The chloride ion concentration in 0.1 M AlCl3 solution is 0.1 M.",
           "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
           "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
@@ -1075,9 +1075,9 @@ export const unit14: ChemistryUnitSeedData = {
           "en": "The concentration of common ions is not affected by mixing.",
           "de": "Die Konzentration gemeinsamer Ionen wird durch das Mischen nicht beeinflusst.",
           "fr": "La concentration des ions communs n'est pas affectée par le mélange.",
-          "ru": "Смешивание не влияет на концентрацию обычных ионов.",
-          "ar": "لا يتأثر تركيز الأيونات الشائعة بالخلط.",
-          "zh": "普通离子的浓度不受混合的影响。",
+          "ru": "Смешивание не влияет на концентрацию общих ионов.",
+          "ar": "لا يتأثر تركيز الأيونات المشتركة بالخلط.",
+          "zh": "共同离子的浓度不受混合的影响。",
           "ku": "Tevlihevkirina îyonên hevpar bi tevlihevkirinê bandor nabe."
         },
         {
@@ -1153,7 +1153,7 @@ export const unit14: ChemistryUnitSeedData = {
           "fr": "La molalité diminue à mesure que la température augmente en raison de l'expansion du volume.",
           "ru": "Моляльность уменьшается с увеличением температуры из-за объемного расширения.",
           "ar": "تتناقص المولالية مع زيادة درجة الحرارة بسبب توسع الحجم.",
-          "zh": "由于体积膨胀，摩尔浓度随着温度升高而降低。",
+          "zh": "由于体积膨胀，质量摩尔浓度随温度升高而降低。",
           "ku": "Her ku germahî zêde dibe ji ber berbelavbûna qebareyê molalîte kêm dibe."
         },
         {
@@ -1233,7 +1233,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Ger av li çaraleke têrnebûyî were zêdekirin, ew têr dibe."
         },
         {
-          "tr": "0.2 M 500 mL çözeltide 1 mol tuz çözünmüştür.",
+          "tr": "0,2 M 500 mL çözeltide 1 mol tuz çözünmüştür.",
           "en": "1 mole of salt was dissolved in 500 mL of 0.2 M solution.",
           "de": "1 Mol Salz wurde in 500 ml einer 0,2 M Lösung gelöst.",
           "fr": "1 mole de sel a été dissoute dans 500 ml de solution 0,2 M.",
@@ -1303,9 +1303,9 @@ export const unit14: ChemistryUnitSeedData = {
           "en": "The concentration of common ions is not affected by mixing.",
           "de": "Die Konzentration gemeinsamer Ionen wird durch das Mischen nicht beeinflusst.",
           "fr": "La concentration des ions communs n'est pas affectée par le mélange.",
-          "ru": "Смешивание не влияет на концентрацию обычных ионов.",
-          "ar": "لا يتأثر تركيز الأيونات الشائعة بالخلط.",
-          "zh": "普通离子的浓度不受混合的影响。",
+          "ru": "Смешивание не влияет на концентрацию общих ионов.",
+          "ar": "لا يتأثر تركيز الأيونات المشتركة بالخلط.",
+          "zh": "共同离子的浓度不受混合的影响。",
           "ku": "Tevlihevkirina îyonên hevpar bi tevlihevkirinê bandor nabe."
         },
         {
@@ -1335,13 +1335,13 @@ export const unit14: ChemistryUnitSeedData = {
           "fr": "La molalité se trouve en divisant par le volume total de la solution.",
           "ru": "Моляльность находится путем деления на общий объем раствора.",
           "ar": "يتم العثور على المولالية عن طريق القسمة على الحجم الكلي للحل.",
-          "zh": "通过除以溶液的总体积即可得出摩尔浓度。",
+          "zh": "质量摩尔浓度是用溶质的物质的量除以溶液的总体积求得的。",
           "ku": "Molality bi dabeşkirina bi qebareya tevahî ya çareseriyê ve tê dîtin."
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"İyonik katı suda çözündüğünde çözeltideki iyon derişimi tuzun molaritesi ile iyon katsayısının çarpımıdır.\" ifadesidir. 0.1 M AlCl3'te [Cl-] = 3 * 0.1 = 0.3 M'dır!",
+        "tr": "Doğru cevap \"İyonik katı suda çözündüğünde çözeltideki iyon derişimi tuzun molaritesi ile iyon katsayısının çarpımıdır.\" ifadesidir. 0,1 M AlCl3'te [Cl-] = 3 * 0,1 = 0,3 M'dır!",
         "en": "The correct statement is: \"When an ionic solid is dissolved in water, the ion concentration in the solution is the product of the molarity of the salt and the ionic coefficient.\". In 0.1 M AlCl3, [Cl-] = 3 * 0.1 = 0.3 M!",
         "de": "Die zutreffende Aussage lautet: \"Wenn ein ionischer Feststoff in Wasser gelöst wird, ist die Ionenkonzentration in der Lösung das Produkt aus der Molarität des Salzes und dem Ionenkoeffizienten.\". In 0,1 M AlCl3 ist [Cl-] = 3 * 0,1 = 0,3 M!",
         "fr": "L'affirmation exacte est: \"Lorsqu'un solide ionique est dissous dans l'eau, la concentration en ions dans la solution est le produit de la molarité du sel et du coefficient ionique.\". Dans 0,1 M AlCl3, [Cl-] = 3 * 0,1 = 0,3 M !",
@@ -1371,7 +1371,7 @@ export const unit14: ChemistryUnitSeedData = {
           "fr": "La molalité diminue à mesure que la température augmente en raison de l'expansion du volume.",
           "ru": "Моляльность уменьшается с увеличением температуры из-за объемного расширения.",
           "ar": "تتناقص المولالية مع زيادة درجة الحرارة بسبب توسع الحجم.",
-          "zh": "由于体积膨胀，摩尔浓度随着温度升高而降低。",
+          "zh": "由于体积膨胀，质量摩尔浓度随温度升高而降低。",
           "ku": "Her ku germahî zêde dibe ji ber berbelavbûna qebareyê molalîte kêm dibe."
         },
         {
@@ -1451,7 +1451,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Ger av li çaraleke têrnebûyî were zêdekirin, ew têr dibe."
         },
         {
-          "tr": "0.2 M 500 mL çözeltide 1 mol tuz çözünmüştür.",
+          "tr": "0,2 M 500 mL çözeltide 1 mol tuz çözünmüştür.",
           "en": "1 mole of salt was dissolved in 500 mL of 0.2 M solution.",
           "de": "1 Mol Salz wurde in 500 ml einer 0,2 M Lösung gelöst.",
           "fr": "1 mole de sel a été dissoute dans 500 ml de solution 0,2 M.",
@@ -1543,7 +1543,7 @@ export const unit14: ChemistryUnitSeedData = {
           "fr": "La molalité se trouve en divisant par le volume total de la solution.",
           "ru": "Моляльность находится путем деления на общий объем раствора.",
           "ar": "يتم العثور على المولالية عن طريق القسمة على الحجم الكلي للحل.",
-          "zh": "通过除以溶液的总体积即可得出摩尔浓度。",
+          "zh": "质量摩尔浓度是用溶质的物质的量除以溶液的总体积求得的。",
           "ku": "Molality bi dabeşkirina bi qebareya tevahî ya çareseriyê ve tê dîtin."
         },
         {
@@ -1623,7 +1623,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Parçeya molê dikare ji 1-ê mezintir nirxan bigire."
         },
         {
-          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M'dır.",
+          "tr": "0,1 M AlCl3 çözeltisinde klor iyonu derişimi 0,1 M'dır.",
           "en": "The chloride ion concentration in 0.1 M AlCl3 solution is 0.1 M.",
           "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
           "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
@@ -1679,7 +1679,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Ji bo ku çareseriyek ne têrkirî têr bibe, pêdivî ye ku meriv soletê lê zêde bike, avê bikelînin, an jî sar bike (eger endotermîk)."
         },
         {
-          "tr": "0.2 M 500 mL çözeltide 1 mol tuz çözünmüştür.",
+          "tr": "0,2 M 500 mL çözeltide 1 mol tuz çözünmüştür.",
           "en": "1 mole of salt was dissolved in 500 mL of 0.2 M solution.",
           "de": "1 Mol Salz wurde in 500 ml einer 0,2 M Lösung gelöst.",
           "fr": "1 mole de sel a été dissoute dans 500 ml de solution 0,2 M.",
@@ -1771,7 +1771,7 @@ export const unit14: ChemistryUnitSeedData = {
           "fr": "La molalité se trouve en divisant par le volume total de la solution.",
           "ru": "Моляльность находится путем деления на общий объем раствора.",
           "ar": "يتم العثور على المولالية عن طريق القسمة على الحجم الكلي للحل.",
-          "zh": "通过除以溶液的总体积即可得出摩尔浓度。",
+          "zh": "质量摩尔浓度是用溶质的物质的量除以溶液的总体积求得的。",
           "ku": "Molality bi dabeşkirina bi qebareya tevahî ya çareseriyê ve tê dîtin."
         },
         {
@@ -1851,7 +1851,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Alkolên molekulî (glîkoz C6H12O6, alkola etîl C2H5OH) elektrîkê nagirin (elektrolît ne)."
         },
         {
-          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M'dır.",
+          "tr": "0,1 M AlCl3 çözeltisinde klor iyonu derişimi 0,1 M'dır.",
           "en": "The chloride ion concentration in 0.1 M AlCl3 solution is 0.1 M.",
           "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
           "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
@@ -1865,9 +1865,9 @@ export const unit14: ChemistryUnitSeedData = {
           "en": "The concentration of common ions is not affected by mixing.",
           "de": "Die Konzentration gemeinsamer Ionen wird durch das Mischen nicht beeinflusst.",
           "fr": "La concentration des ions communs n'est pas affectée par le mélange.",
-          "ru": "Смешивание не влияет на концентрацию обычных ионов.",
-          "ar": "لا يتأثر تركيز الأيونات الشائعة بالخلط.",
-          "zh": "普通离子的浓度不受混合的影响。",
+          "ru": "Смешивание не влияет на концентрацию общих ионов.",
+          "ar": "لا يتأثر تركيز الأيونات المشتركة بالخلط.",
+          "zh": "共同离子的浓度不受混合的影响。",
           "ku": "Tevlihevkirina îyonên hevpar bi tevlihevkirinê bandor nabe."
         }
       ],
@@ -1927,7 +1927,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Dema ku av lê tê zêdekirin, hejmara molên maddeyê nîvî dibe."
         },
         {
-          "tr": "0.2 M 500 mL NaCl çözeltisinde çözünmüş NaCl mol sayısı n = M * V = 0.2 * 0.5 = 0.1 moldür.",
+          "tr": "0,2 M 500 mL NaCl çözeltisinde çözünmüş NaCl mol sayısı n = M * V = 0,2 * 0,5 = 0,1 moldür.",
           "en": "The number of moles of NaCl dissolved in 0.2 M 500 mL NaCl solution is n = M * V = 0.2 * 0.5 = 0.1 mol.",
           "de": "Die Anzahl der Mol NaCl, gelöst in 0,2 M 500 ml NaCl-Lösung, beträgt n = M * V = 0,2 * 0,5 = 0,1 Mol.",
           "fr": "Le nombre de moles de NaCl dissoutes dans une solution de NaCl 0,2 M dans 500 ml est n = M * V = 0,2 * 0,5 = 0,1 mol.",
@@ -1943,13 +1943,13 @@ export const unit14: ChemistryUnitSeedData = {
           "fr": "La molalité diminue à mesure que la température augmente en raison de l'expansion du volume.",
           "ru": "Моляльность уменьшается с увеличением температуры из-за объемного расширения.",
           "ar": "تتناقص المولالية مع زيادة درجة الحرارة بسبب توسع الحجم.",
-          "zh": "由于体积膨胀，摩尔浓度随着温度升高而降低。",
+          "zh": "由于体积膨胀，质量摩尔浓度随温度升高而降低。",
           "ku": "Her ku germahî zêde dibe ji ber berbelavbûna qebareyê molalîte kêm dibe."
         }
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"0.2 M 500 mL NaCl çözeltisinde çözünmüş NaCl mol sayısı n = M * V = 0.2 * 0.5 = 0.1 moldür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"0,2 M 500 mL NaCl çözeltisinde çözünmüş NaCl mol sayısı n = M * V = 0,2 * 0,5 = 0,1 moldür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"The number of moles of NaCl dissolved in 0.2 M 500 mL NaCl solution is n = M * V = 0.2 * 0.5 = 0.1 mol.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Die Anzahl der Mol NaCl, gelöst in 0,2 M 500 ml NaCl-Lösung, beträgt n = M * V = 0,2 * 0,5 = 0,1 Mol.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Le nombre de moles de NaCl dissoutes dans une solution de NaCl 0,2 M dans 500 ml est n = M * V = 0,2 * 0,5 = 0,1 mol.\". Notion fondamentale du programme officiel de chimie.",
@@ -1979,7 +1979,7 @@ export const unit14: ChemistryUnitSeedData = {
           "fr": "La molalité se trouve en divisant par le volume total de la solution.",
           "ru": "Моляльность находится путем деления на общий объем раствора.",
           "ar": "يتم العثور على المولالية عن طريق القسمة على الحجم الكلي للحل.",
-          "zh": "通过除以溶液的总体积即可得出摩尔浓度。",
+          "zh": "质量摩尔浓度是用溶质的物质的量除以溶液的总体积求得的。",
           "ku": "Molality bi dabeşkirina bi qebareya tevahî ya çareseriyê ve tê dîtin."
         },
         {
@@ -2069,7 +2069,7 @@ export const unit14: ChemistryUnitSeedData = {
           "ku": "Parçeya molê dikare ji 1-ê mezintir nirxan bigire."
         },
         {
-          "tr": "0.1 M AlCl3 çözeltisinde klor iyonu derişimi 0.1 M'dır.",
+          "tr": "0,1 M AlCl3 çözeltisinde klor iyonu derişimi 0,1 M'dır.",
           "en": "The chloride ion concentration in 0.1 M AlCl3 solution is 0.1 M.",
           "de": "Die Chloridionenkonzentration in 0,1 M AlCl3-Lösung beträgt 0,1 M.",
           "fr": "La concentration en ions chlorure dans une solution 0,1 M d’AlCl3 est de 0,1 M.",
@@ -2083,9 +2083,9 @@ export const unit14: ChemistryUnitSeedData = {
           "en": "The concentration of common ions is not affected by mixing.",
           "de": "Die Konzentration gemeinsamer Ionen wird durch das Mischen nicht beeinflusst.",
           "fr": "La concentration des ions communs n'est pas affectée par le mélange.",
-          "ru": "Смешивание не влияет на концентрацию обычных ионов.",
-          "ar": "لا يتأثر تركيز الأيونات الشائعة بالخلط.",
-          "zh": "普通离子的浓度不受混合的影响。",
+          "ru": "Смешивание не влияет на концентрацию общих ионов.",
+          "ar": "لا يتأثر تركيز الأيونات المشتركة بالخلط.",
+          "zh": "共同离子的浓度不受混合的影响。",
           "ku": "Tevlihevkirina îyonên hevpar bi tevlihevkirinê bandor nabe."
         },
         {

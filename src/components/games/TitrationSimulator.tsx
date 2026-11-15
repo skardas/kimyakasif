@@ -29,8 +29,9 @@ export function calculatePhCurve(volumeAddedMl: number): {
   if (Math.abs(clampedVol - vEquiv) <= 0.05) {
     phVal = 7.0;
   } else if (clampedVol < vEquiv) {
-    const fraction = clampedVol / vEquiv;
-    phVal = 1.0 + Math.log10(1 + fraction * 9);
+    // Strong acid left over: [H⁺] = (0,100 M · (25,0 − V)) / (25,0 + V)
+    const excessAcidMolarity = (0.100 * (vEquiv - clampedVol)) / (25.0 + clampedVol);
+    phVal = -Math.log10(excessAcidMolarity);
     phVal = Math.min(phVal, 6.5);
   } else {
     const excessVol = clampedVol - vEquiv;

@@ -57,7 +57,7 @@ export const unit17: ChemistryUnitSeedData = {
         "en": "Reaction rate is the amount of reactant consumed or product formed per unit time (r = -Δ[R]/Δt = +Δ[Ü]/Δt).",
         "de": "Die Reaktionsgeschwindigkeit ist die Menge an verbrauchtem Reaktanten oder gebildetem Produkt pro Zeiteinheit (r = -Δ[R]/Δt = +Δ[Ü]/Δt).",
         "fr": "La vitesse de réaction est la quantité de réactif consommée ou de produit formé par unité de temps (r = -Δ[R]/Δt = +Δ[Ü]/Δt).",
-        "ru": "Скорость реакции — это количество израсходованного реагента или продукта, образовавшегося в единицу времени (r = -Δ[R]/Δt = +Δ[Ü]/Δt.",
+        "ru": "Скорость реакции — это количество израсходованного реагента или продукта, образовавшегося в единицу времени (r = -Δ[R]/Δt = +Δ[Ü]/Δt).",
         "ar": "معدل التفاعل هو كمية المادة المتفاعلة المستهلكة أو المنتج المتكون في وحدة الزمن (r = -Δ[R]/Δt = +Δ[Ü]/Δt).",
         "zh": "反应速率是每单位时间消耗的反应物或形成的产物的量(r = -Δ[R]/Δt = +Δ[Ü]/Δt)。",
         "ku": "Rêjeya reaksiyonê mîqdara reaktantê tê vexwarin an hilbera ku di yekîneya demê de hatî çêkirin e (r = -Δ[R]/Δt = +Δ[Ü]/Δt)."
@@ -77,13 +77,13 @@ export const unit17: ChemistryUnitSeedData = {
       "id": "u17-f03",
       "fact": {
         "tr": "Hız denklemi sadece gaz ve suda çözünmüş (aq) maddelerin derişimlerine göre yazılır; saf katı ve sıvılar hız bağıntısında yer almaz.",
-        "en": "The rate equation is written only according to the concentrations of substances dissolved in gas and water (aq); Pure solids and liquids are not included in the velocity relationship.",
-        "de": "Die Geschwindigkeitsgleichung wird nur nach den Konzentrationen der in Gas und Wasser gelösten Stoffe (aq) geschrieben; Reine Feststoffe und Flüssigkeiten werden nicht in die Geschwindigkeitsbeziehung einbezogen.",
-        "fr": "L'équation du taux s'écrit uniquement en fonction des concentrations de substances dissoutes dans le gaz et l'eau (aq) ; Les solides purs et les liquides ne sont pas inclus dans la relation de vitesse.",
-        "ru": "Уравнение скорости записано только по концентрациям веществ, растворенных в газе и воде (водн.); Чистые твердые тела и жидкости не включаются в соотношение скоростей.",
-        "ar": "معادلة المعدل تكتب فقط على أساس تراكيز المواد المذابة في الغاز والماء (aq)؛ لا يتم تضمين المواد الصلبة والسوائل النقية في علاقة السرعة.",
-        "zh": "仅根据溶解在气体和水中的物质浓度（aq）写出速率方程；纯固体和液体不包括在速度关系中。",
-        "ku": "Wekheviya rêjeyê tenê li gorî tansiyona maddeyên di gaz û avê de (aq); Tiştên safî û şilek di nav têkiliya lezê de ne."
+        "en": "The rate equation is written only in terms of the concentrations of gases and of substances dissolved in water (aq); pure solids and liquids are not included in the rate expression.",
+        "de": "Die Geschwindigkeitsgleichung wird nur mit den Konzentrationen von Gasen und in Wasser gelösten Stoffen (aq) aufgestellt; reine Feststoffe und Flüssigkeiten erscheinen nicht im Geschwindigkeitsgesetz.",
+        "fr": "L'équation de vitesse s'écrit uniquement avec les concentrations des gaz et des substances dissoutes dans l'eau (aq) ; les solides et liquides purs n'apparaissent pas dans la loi de vitesse.",
+        "ru": "Уравнение скорости записывается только через концентрации газов и веществ, растворённых в воде (водн.); чистые твёрдые вещества и жидкости в выражение скорости не входят.",
+        "ar": "تُكتب معادلة السرعة فقط بدلالة تراكيز الغازات والمواد المذابة في الماء (aq)؛ ولا تدخل المواد الصلبة والسوائل النقية في قانون السرعة.",
+        "zh": "速率方程只用气体和水溶液中溶质（aq）的浓度来书写；纯固体和纯液体不出现在速率表达式中。",
+        "ku": "Hevkêşana lezê tenê bi tîrbûna gazan û maddeyên di avê de helandî (aq) tê nivîsandin; hişkên saf û şilên saf di têkiliya lezê de cih nagirin."
       },
       "trap": {
         "tr": "Saf katıların derişimi hız denkleminde üs olarak yer alır.",
@@ -271,22 +271,22 @@ export const unit17: ChemistryUnitSeedData = {
       "id": "u17-f11",
       "fact": {
         "tr": "Hız sabiti k nın birimi: (L/mol)^(n-1) * s^-1 dir (n: tepkimenin toplam derecesi).",
-        "en": "The unit of the rate constant k is: (L/mol)^(n-1) * s^-1 (n: total rate of reaction).",
-        "de": "Die Einheit der Geschwindigkeitskonstante k ist: (L/mol)^(n-1) * s^-1 (n: Gesamtreaktionsgeschwindigkeit).",
-        "fr": "L'unité de la constante de vitesse k est : (L/mol)^(n-1) * s^-1 (n : vitesse totale de réaction).",
-        "ru": "Единица измерения константы скорости k: (л/моль)^(n-1) * с^-1 (n: общая скорость реакции).",
-        "ar": "وحدة المعدل الثابت k هي: (L/mol)^(n-1) * s^-1 (n: المعدل الإجمالي للتفاعل).",
-        "zh": "速率常数k的单位为：(L/mol)^(n-1) * s^-1（n：反应总速率）。",
-        "ku": "Yekeya leza sabit k ev e: (L/mol)^(n-1) * s^-1 (n: rêjeya tevhev a reaksiyonê)."
+        "en": "The unit of the rate constant k is: (L/mol)^(n-1) * s^-1 (n: overall order of the reaction).",
+        "de": "Die Einheit der Geschwindigkeitskonstante k ist: (L/mol)^(n-1) * s^-1 (n: Gesamtordnung der Reaktion).",
+        "fr": "L'unité de la constante de vitesse k est : (L/mol)^(n-1) * s^-1 (n : ordre global de la réaction).",
+        "ru": "Единица измерения константы скорости k: (л/моль)^(n-1) * с^-1 (n: общий порядок реакции).",
+        "ar": "وحدة ثابت السرعة k هي: (L/mol)^(n-1) * s^-1 (n: الرتبة الكلية للتفاعل).",
+        "zh": "速率常数k的单位为：(L/mol)^(n-1) * s^-1（n：反应的总级数）。",
+        "ku": "Yekeya sabîta lezê k ev e: (L/mol)^(n-1) * s^-1 (n: dereceya giştî ya reaksiyonê)."
       },
       "trap": {
         "tr": "Hız sabiti k nın birimi tepkime derecesinden bağımsızdır.",
-        "en": "The unit of the rate constant k is independent of the degree of reaction.",
-        "de": "Die Einheit der Geschwindigkeitskonstante k ist unabhängig vom Reaktionsgrad.",
-        "fr": "L'unité de la constante de vitesse k est indépendante du degré de réaction.",
-        "ru": "Единица константы скорости k не зависит от степени реакции.",
-        "ar": "وحدة المعدل الثابت k مستقلة عن درجة التفاعل.",
-        "zh": "速率常数k的单位与反应程度无关。",
+        "en": "The unit of the rate constant k is independent of the order of the reaction.",
+        "de": "Die Einheit der Geschwindigkeitskonstante k ist unabhängig von der Reaktionsordnung.",
+        "fr": "L'unité de la constante de vitesse k est indépendante de l'ordre de la réaction.",
+        "ru": "Единица константы скорости k не зависит от порядка реакции.",
+        "ar": "وحدة ثابت السرعة k مستقلة عن رتبة التفاعل.",
+        "zh": "速率常数k的单位与反应级数无关。",
         "ku": "Yekeya leza sabit k ji dereceya reaksiyonê serbixwe ye."
       }
     },
@@ -294,22 +294,22 @@ export const unit17: ChemistryUnitSeedData = {
       "id": "u17-f12",
       "fact": {
         "tr": "Tepkime derecesi, deneysel hız bağıntısındaki derişimlerin üsleri toplamıdır.",
-        "en": "The degree of reaction is the sum of the exponents of the concentrations in the experimental rate equation.",
-        "de": "Der Reaktionsgrad ist die Summe der Exponenten der Konzentrationen in der experimentellen Geschwindigkeitsgleichung.",
-        "fr": "Le degré de réaction est la somme des exposants des concentrations dans l'équation de vitesse expérimentale.",
-        "ru": "Степень реакции представляет собой сумму показателей концентраций в экспериментальном уравнении скорости.",
-        "ar": "درجة التفاعل هي مجموع أسس التركيزات في معادلة المعدل التجريبي.",
-        "zh": "反应程度是实验速率方程中浓度指数的总和。",
+        "en": "The order of a reaction is the sum of the exponents of the concentrations in the experimental rate law.",
+        "de": "Die Reaktionsordnung ist die Summe der Exponenten der Konzentrationen im experimentellen Geschwindigkeitsgesetz.",
+        "fr": "L'ordre de réaction est la somme des exposants des concentrations dans la loi de vitesse expérimentale.",
+        "ru": "Порядок реакции равен сумме показателей степеней концентраций в экспериментальном уравнении скорости.",
+        "ar": "رتبة التفاعل هي مجموع أسس التراكيز في قانون السرعة التجريبي.",
+        "zh": "反应级数是实验速率方程中各浓度指数之和。",
         "ku": "Dereceya reaksîyonê kombûna nîşanderên hûrbûnên di hevkêşeya rêjeya ceribandinê de ye."
       },
       "trap": {
         "tr": "Tepkime derecesi net tepkimenin stokiyometrik katsayıları toplamına eşittir.",
-        "en": "The degree of reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
-        "de": "Der Reaktionsgrad ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
-        "fr": "Le degré de réaction est égal à la somme des coefficients stoechiométriques de la réaction nette.",
-        "ru": "Степень реакции равна сумме стехиометрических коэффициентов чистой реакции.",
-        "ar": "درجة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
-        "zh": "反应程度等于净反应的化学计量系数之和。",
+        "en": "The order of a reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
+        "de": "Die Reaktionsordnung ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
+        "fr": "L'ordre de réaction est égal à la somme des coefficients stœchiométriques de la réaction nette.",
+        "ru": "Порядок реакции равен сумме стехиометрических коэффициентов суммарной реакции.",
+        "ar": "رتبة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
+        "zh": "反应级数等于总反应的化学计量系数之和。",
         "ku": "Dereceya reaksîyonê bi kombûna hevberên stokyometrîkî yên reaksiyona tevnê re ye."
       }
     },
@@ -319,7 +319,7 @@ export const unit17: ChemistryUnitSeedData = {
         "tr": "Molekülerite, tek bir basamakta tepkimeye giren tanecik sayısını ifade eder (unimoleküler, bimoleküler, trimoleküler).",
         "en": "Molecularity refers to the number of particles that react in a single step (unimolecular, bimolecular, trimolecular).",
         "de": "Unter Molekularität versteht man die Anzahl der Teilchen, die in einem einzigen Schritt reagieren (unimolekular, bimolekular, trimolekular).",
-        "fr": "La moléculaire fait référence au nombre de particules qui réagissent en une seule étape (unimoléculaire, bimoléculaire, trimoléculaire).",
+        "fr": "La molécularité désigne le nombre de particules qui réagissent dans une seule étape (unimoléculaire, bimoléculaire, trimoléculaire).",
         "ru": "Молекулярность относится к числу частиц, которые реагируют за одну стадию (мономолекулярная, бимолекулярная, тримолекулярная).",
         "ar": "تشير الجزيئية إلى عدد الجزيئات التي تتفاعل في خطوة واحدة (أحادية الجزيئية، ثنائية الجزيئية، ثلاثية الجزيئات).",
         "zh": "分子度是指一步反应的粒子数量（单分子、双分子、​​三分子）。",
@@ -329,7 +329,7 @@ export const unit17: ChemistryUnitSeedData = {
         "tr": "Molekülerite sadece deneysel hız bağıntısından bulunur.",
         "en": "Molecularity is found only from the empirical rate relation.",
         "de": "Molekularität lässt sich nur aus der empirischen Geschwindigkeitsbeziehung ermitteln.",
-        "fr": "La molécule n'est trouvée qu'à partir de la relation de taux empirique.",
+        "fr": "La molécularité ne se détermine qu'à partir de la loi de vitesse expérimentale.",
         "ru": "Молекулярность находится только из эмпирического соотношения скоростей.",
         "ar": "تم العثور على الجزيئية فقط من علاقة المعدل التجريبي.",
         "zh": "分子性只能从经验速率关系中找到。",
@@ -339,14 +339,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-f14",
       "fact": {
-        "tr": "Tersiyer kalsiyum karbonat tozunun asitte çözünmesi parça kireç taşına göre temas yüzeyi nedeniyle çok daha hızlıdır.",
-        "en": "Tertiary calcium carbonate powder dissolves in acid much faster than lump limestone due to its contact surface.",
-        "de": "Tertiäres Calciumcarbonat-Pulver löst sich aufgrund seiner Kontaktoberfläche viel schneller in Säure auf als Stückkalkstein.",
-        "fr": "La poudre de carbonate de calcium tertiaire se dissout dans l'acide beaucoup plus rapidement que le calcaire en morceaux en raison de sa surface de contact.",
-        "ru": "Порошок третичного карбоната кальция растворяется в кислоте гораздо быстрее, чем кусковый известняк, благодаря своей контактной поверхности.",
-        "ar": "يذوب مسحوق كربونات الكالسيوم الثلاثي في ​​الحمض بشكل أسرع بكثير من الحجر الجيري المقطوع بسبب سطح ملامسته.",
-        "zh": "由于其接触表面，叔碳酸钙粉末在酸中的溶解速度比块状石灰石快得多。",
-        "ku": "Toza karbonat a kalsiyûmê ya sêyem ji ber rûbera pêwendiya wê di asîdê de ji kevirê kilsinî pir zûtir dihele."
+        "tr": "Toz hâlindeki kalsiyum karbonatın (CaCO₃) asitte çözünmesi, temas yüzeyi daha büyük olduğundan parça kireç taşına göre çok daha hızlıdır.",
+        "en": "Powdered calcium carbonate (CaCO₃) dissolves in acid much faster than lump limestone because its contact surface is larger.",
+        "de": "Pulverförmiges Calciumcarbonat (CaCO₃) löst sich in Säure viel schneller als stückiger Kalkstein, weil seine Kontaktfläche größer ist.",
+        "fr": "Le carbonate de calcium (CaCO₃) en poudre se dissout dans l'acide beaucoup plus vite que le calcaire en morceaux, car sa surface de contact est plus grande.",
+        "ru": "Порошкообразный карбонат кальция (CaCO₃) растворяется в кислоте гораздо быстрее, чем кусковой известняк, так как его поверхность контакта больше.",
+        "ar": "يذوب مسحوق كربونات الكالسيوم (CaCO₃) في الحمض أسرع بكثير من قطع الحجر الجيري لأن سطح تلامسه أكبر.",
+        "zh": "粉末状碳酸钙（CaCO₃）因接触面积更大，在酸中溶解得比块状石灰石快得多。",
+        "ku": "Karbonata kalsiyûmê (CaCO₃) ya toz ji ber ku rûbera wê ya pêwendiyê mezintir e, di asîdê de ji kevirê kilsê yê perçe pir zûtir dihele."
       },
       "trap": {
         "tr": "Katıyı toz haline getirmek açığa çıkan gaz miktarını artırır.",
@@ -441,13 +441,13 @@ export const unit17: ChemistryUnitSeedData = {
       },
       "distinction": {
         "tr": "Katalizör Ea yı düşürerek k yı artırır; sıcaklık Ea yı değiştirmeden aşan tanecik sayısını ve k yı artırır.",
-        "en": "The catalyst increases k by decreasing Ea; Temperature increases the number of particles and k exceeding Ea without changing it.",
-        "de": "Der Katalysator erhöht k durch Verringerung von Ea; Die Temperatur erhöht die Anzahl der Teilchen und k über Ea hinaus, ohne sie zu verändern.",
-        "fr": "Le catalyseur augmente k en diminuant Ea ; La température augmente le nombre de particules et k dépasse Ea sans le modifier.",
-        "ru": "Катализатор увеличивает k за счет уменьшения Ea; Температура увеличивает число частиц и k, превышающее Ea, не изменяя его.",
-        "ar": "يزيد المحفز k عن طريق تقليل Ea؛ تزيد درجة الحرارة من عدد الجزيئات و k تتجاوز Ea دون تغييرها.",
-        "zh": "催化剂通过降低Ea来增加k；温度会增加粒子数量，并且 k 会超过 Ea，而不会改变它。",
-        "ku": "Katalîzator k bi kêmkirina Ea zêde dike; Germahî bêyî ku biguhere, hejmara pirtikan û k ji Ea zêdetir dike."
+        "en": "A catalyst increases k by lowering Ea; temperature increases k and the number of particles exceeding Ea without changing Ea.",
+        "de": "Ein Katalysator erhöht k, indem er Ea senkt; die Temperatur erhöht k und die Anzahl der Teilchen, die Ea überschreiten, ohne Ea zu verändern.",
+        "fr": "Un catalyseur augmente k en abaissant Ea ; la température augmente k et le nombre de particules dépassant Ea sans modifier Ea.",
+        "ru": "Катализатор увеличивает k, снижая Ea; температура увеличивает k и число частиц, преодолевающих Ea, не изменяя Ea.",
+        "ar": "يزيد المحفز k بخفض Ea؛ أما درجة الحرارة فتزيد k وعدد الجسيمات التي تتجاوز Ea دون أن تغيّر Ea.",
+        "zh": "催化剂通过降低Ea使k增大；温度不改变Ea，而是增加能量超过Ea的粒子数并使k增大。",
+        "ku": "Katalîzator bi kêmkirina Ea k zêde dike; germahî bêyî ku Ea biguherîne, k û hejmara taneyên ku Ea derbas dikin zêde dike."
       }
     },
     {
@@ -586,99 +586,99 @@ export const unit17: ChemistryUnitSeedData = {
       "id": "u17-c06",
       "conceptA": {
         "tr": "Etkin Çarpışma",
-        "en": "Active Collision",
-        "de": "Aktive Kollision",
-        "fr": "Collision active",
-        "ru": "Активное столкновение",
-        "ar": "الاصطدام النشط",
-        "zh": "主动碰撞",
-        "ku": "Active Collision"
+        "en": "Effective Collision",
+        "de": "Wirksamer Stoß",
+        "fr": "Collision efficace",
+        "ru": "Эффективное столкновение",
+        "ar": "الاصطدام الفعال",
+        "zh": "有效碰撞",
+        "ku": "Lihevketina Bi Bandor"
       },
       "conceptB": {
-        "tr": "Esnek Çarpışma",
-        "en": "Flexible Collision",
-        "de": "Flexible Kollision",
-        "fr": "Collision flexible",
-        "ru": "Гибкое столкновение",
-        "ar": "الاصطدام المرن",
-        "zh": "灵活碰撞",
-        "ku": "Pevçûnek Flexible"
+        "tr": "Etkin Olmayan Çarpışma",
+        "en": "Ineffective Collision",
+        "de": "Unwirksamer Stoß",
+        "fr": "Collision inefficace",
+        "ru": "Неэффективное столкновение",
+        "ar": "الاصطدام غير الفعال",
+        "zh": "无效碰撞",
+        "ku": "Lihevketina Bê Bandor"
       },
       "distinction": {
-        "tr": "Etkin çarpışma uygun geometride ve yeterli eşik enerjisiyle ürün veren çarpışmadır; esnek çarpışmada ürün oluşmaz.",
-        "en": "An effective collision is one that produces a product with appropriate geometry and sufficient threshold energy; In an elastic collision, no product is formed.",
-        "de": "Bei einer effektiven Kollision entsteht ein Produkt mit geeigneter Geometrie und ausreichender Schwellenenergie; Bei einem elastischen Stoß entsteht kein Produkt.",
-        "fr": "Une collision efficace est celle qui produit un produit avec une géométrie appropriée et une énergie de seuil suffisante ; Lors d’une collision élastique, aucun produit ne se forme.",
-        "ru": "Эффективное столкновение — это столкновение, в результате которого образуется продукт соответствующей геометрии и достаточной пороговой энергии; При упругом столкновении продукт не образуется.",
-        "ar": "الاصطدام الفعال هو الذي ينتج منتجًا ذو هندسة مناسبة وطاقة عتبة كافية؛ في التصادم المرن لا يتشكل أي منتج.",
-        "zh": "有效的碰撞是指产生具有适当几何形状和足够阈值能量的产物的碰撞；在弹性碰撞中，不会形成任何产物。",
-        "ku": "Pevçûnek bi bandor ew e ku hilberek bi geometriya guncav û enerjiya behrê ya têr hildiberîne; Di pevçûnek elastîk de, hilberek çê nabe."
+        "tr": "Etkin çarpışma uygun geometride ve yeterli eşik enerjisiyle ürün veren çarpışmadır; etkin olmayan çarpışmada ürün oluşmaz.",
+        "en": "An effective collision is one with suitable orientation and sufficient threshold energy that produces products; in an ineffective collision no product forms.",
+        "de": "Ein wirksamer Stoß erfolgt mit geeigneter Orientierung und ausreichender Schwellenenergie und liefert Produkte; bei einem unwirksamen Stoß entsteht kein Produkt.",
+        "fr": "Une collision efficace se produit avec une orientation appropriée et une énergie seuil suffisante et forme des produits ; une collision inefficace ne forme aucun produit.",
+        "ru": "Эффективное столкновение происходит при подходящей ориентации и достаточной пороговой энергии и даёт продукты; при неэффективном столкновении продукт не образуется.",
+        "ar": "الاصطدام الفعال هو الذي يحدث باتجاه هندسي مناسب وطاقة عتبة كافية فينتج نواتج؛ أما الاصطدام غير الفعال فلا يتكوّن فيه ناتج.",
+        "zh": "有效碰撞是取向合适且能量达到阈值、能生成产物的碰撞；无效碰撞不生成产物。",
+        "ku": "Lihevketina bi bandor bi arasteya guncaw û enerjiya bendê ya têr pêk tê û hilber çêdike; di lihevketina bê bandor de hilber çênabe."
       }
     },
     {
       "id": "u17-c07",
       "conceptA": {
         "tr": "Tepkime Derecesi (Mertebesi)",
-        "en": "Degree of Reactivity",
-        "de": "Grad der Reaktivität",
-        "fr": "Degré de réactivité",
-        "ru": "Степень реактивности",
-        "ar": "درجة التفاعل",
-        "zh": "反应度",
+        "en": "Reaction Order",
+        "de": "Reaktionsordnung",
+        "fr": "Ordre de réaction",
+        "ru": "Порядок реакции",
+        "ar": "رتبة التفاعل",
+        "zh": "反应级数",
         "ku": "Dereceya Reaksiyonê"
       },
       "conceptB": {
         "tr": "Molekülerite",
         "en": "molecularity",
         "de": "Molekularität",
-        "fr": "moléculaire",
+        "fr": "Molécularité",
         "ru": "молекулярность",
         "ar": "الجزيئية",
         "zh": "分子性",
-        "ku": "molecularity"
+        "ku": "Molekularîte"
       },
       "distinction": {
-        "tr": "Derece deneysel hız denklemindeki üslerin toplamıdır; molekülerite net tepkimeye giren tanecik sayısıdır.",
-        "en": "Degree is the sum of the exponents in the experimental rate equation; Molecularity is the net number of reacting particles.",
-        "de": "Der Grad ist die Summe der Exponenten in der experimentellen Geschwindigkeitsgleichung; Molekularität ist die Nettozahl der reagierenden Teilchen.",
-        "fr": "Le degré est la somme des exposants de l'équation du taux expérimental ; La molécule est le nombre net de particules en réaction.",
-        "ru": "Степень представляет собой сумму показателей в экспериментальном уравнении скорости; Молекулярность – это чистое число реагирующих частиц.",
-        "ar": "الدرجة هي مجموع الأسس في معادلة المعدل التجريبي؛ الجزيئية هي العدد الصافي للجزيئات المتفاعلة.",
-        "zh": "度数是实验速率方程中的指数之和；分子度是反应粒子的净数量。",
-        "ku": "Derece ji hevkêşana rêjeya ceribandinê kombûna nîşanderan e; Molecularity jimareya net ya pirtikên reaksiyonê ye."
+        "tr": "Derece deneysel hız denklemindeki üslerin toplamıdır; molekülerite tek bir (temel) basamakta çarpışan tanecik sayısıdır.",
+        "en": "Order is the sum of the exponents in the experimental rate law; molecularity is the number of particles colliding in a single (elementary) step.",
+        "de": "Die Ordnung ist die Summe der Exponenten im experimentellen Geschwindigkeitsgesetz; die Molekularität ist die Anzahl der in einem einzelnen (Elementar-)Schritt zusammenstoßenden Teilchen.",
+        "fr": "L'ordre est la somme des exposants de la loi de vitesse expérimentale ; la molécularité est le nombre de particules qui entrent en collision dans une seule étape (élémentaire).",
+        "ru": "Порядок — сумма показателей степеней в экспериментальном уравнении скорости; молекулярность — число частиц, сталкивающихся в одной (элементарной) стадии.",
+        "ar": "الرتبة هي مجموع الأسس في قانون السرعة التجريبي؛ والجزيئية هي عدد الجسيمات المتصادمة في خطوة (أولية) واحدة.",
+        "zh": "级数是实验速率方程中指数之和；分子数是单个（基元）步骤中相互碰撞的粒子数。",
+        "ku": "Derece kombûna nîşanderên di hevkêşana lezê ya ezmûnî de ye; molekularîte hejmara taneyên ku di yek gava (bingehîn) de li hev dikevin e."
       }
     },
     {
       "id": "u17-c08",
       "conceptA": {
-        "tr": "Katalizör",
-        "en": "catalyst",
-        "de": "Katalysator",
-        "fr": "catalyseur",
-        "ru": "катализатор",
-        "ar": "محفز",
-        "zh": "催化剂",
-        "ku": "katalîzator"
+        "tr": "Homojen Tepkime",
+        "en": "Homogeneous Reaction",
+        "de": "Homogene Reaktion",
+        "fr": "Réaction homogène",
+        "ru": "Гомогенная реакция",
+        "ar": "التفاعل المتجانس",
+        "zh": "均相反应",
+        "ku": "Reaksiyona Homojen"
       },
       "conceptB": {
-        "tr": "Sıcaklık",
-        "en": "temperature",
-        "de": "Temperatur",
-        "fr": "température",
-        "ru": "температура",
-        "ar": "درجة الحرارة",
-        "zh": "温度",
-        "ku": "germahîya"
+        "tr": "Heterojen Tepkime",
+        "en": "Heterogeneous Reaction",
+        "de": "Heterogene Reaktion",
+        "fr": "Réaction hétérogène",
+        "ru": "Гетерогенная реакция",
+        "ar": "التفاعل غير المتجانس",
+        "zh": "非均相反应",
+        "ku": "Reaksiyona Heterojen"
       },
       "distinction": {
-        "tr": "Katalizör Ea yı düşürerek k yı artırır; sıcaklık Ea yı değiştirmeden aşan tanecik sayısını ve k yı artırır.",
-        "en": "The catalyst increases k by decreasing Ea; Temperature increases the number of particles and k exceeding Ea without changing it.",
-        "de": "Der Katalysator erhöht k durch Verringerung von Ea; Die Temperatur erhöht die Anzahl der Teilchen und k über Ea hinaus, ohne sie zu verändern.",
-        "fr": "Le catalyseur augmente k en diminuant Ea ; La température augmente le nombre de particules et k dépasse Ea sans le modifier.",
-        "ru": "Катализатор увеличивает k за счет уменьшения Ea; Температура увеличивает число частиц и k, превышающее Ea, не изменяя его.",
-        "ar": "يزيد المحفز k عن طريق تقليل Ea؛ تزيد درجة الحرارة من عدد الجزيئات و k تتجاوز Ea دون تغييرها.",
-        "zh": "催化剂通过降低Ea来增加k；温度会增加粒子数量，并且 k 会超过 Ea，而不会改变它。",
-        "ku": "Katalîzator k bi kêmkirina Ea zêde dike; Germahî bêyî ku biguhere, hejmara pirtikan û k ji Ea zêdetir dike."
+        "tr": "Homojen tepkimede tüm maddeler aynı fazdadır ve temas yüzeyi hızı etkilemez; heterojen tepkimede farklı fazlar bulunur ve temas yüzeyi arttıkça hız artar.",
+        "en": "In a homogeneous reaction all substances are in the same phase and contact surface does not affect the rate; in a heterogeneous reaction different phases are present and the rate increases as the contact surface increases.",
+        "de": "Bei einer homogenen Reaktion liegen alle Stoffe in derselben Phase vor und die Kontaktfläche beeinflusst die Geschwindigkeit nicht; bei einer heterogenen Reaktion liegen verschiedene Phasen vor und die Geschwindigkeit steigt mit der Kontaktfläche.",
+        "fr": "Dans une réaction homogène, toutes les substances sont dans la même phase et la surface de contact n'influence pas la vitesse ; dans une réaction hétérogène, plusieurs phases coexistent et la vitesse augmente avec la surface de contact.",
+        "ru": "В гомогенной реакции все вещества находятся в одной фазе, и поверхность контакта не влияет на скорость; в гетерогенной реакции присутствуют разные фазы, и скорость растёт с увеличением поверхности контакта.",
+        "ar": "في التفاعل المتجانس تكون جميع المواد في الطور نفسه ولا يؤثر سطح التلامس في السرعة؛ أما في التفاعل غير المتجانس فتوجد أطوار مختلفة وتزداد السرعة بزيادة سطح التلامس.",
+        "zh": "均相反应中所有物质处于同一相，接触面积不影响速率；非均相反应中存在不同的相，接触面积越大速率越快。",
+        "ku": "Di reaksiyona homojen de hemû madde di heman qonaxê de ne û rûbera pêwendiyê bandorê li lezê nake; di reaksiyona heterojen de qonaxên cuda hene û her ku rûbera pêwendiyê zêde dibe lez zêde dibe."
       }
     }
   ],
@@ -708,13 +708,13 @@ export const unit17: ChemistryUnitSeedData = {
         },
         {
           "tr": "Diğer reaktifin derişim katı ile hız katını oranla",
-          "en": "Ratio the concentration times and rate times of the other reagent.",
-          "de": "Setzen Sie die Konzentrationszeiten und Geschwindigkeitszeiten des anderen Reagenz ins Verhältnis.",
-          "fr": "Rapportez les temps de concentration et les temps de débit de l’autre réactif.",
-          "ru": "Соотнесите время концентрации и время скорости другого реагента.",
-          "ar": "قم بحساب أوقات التركيز وأوقات معدل الكاشف الآخر.",
-          "zh": "将其他试剂的浓缩倍数与速率倍数进行比值。",
-          "ku": "Rêjeya demên komkirinê û demên rêjeya reagenta din."
+          "en": "Compare the factor by which the other reactant's concentration changes with the factor by which the rate changes",
+          "de": "Vergleiche den Faktor, um den sich die Konzentration des anderen Reaktanten ändert, mit dem Faktor, um den sich die Geschwindigkeit ändert",
+          "fr": "Comparez le facteur de variation de la concentration de l'autre réactif au facteur de variation de la vitesse",
+          "ru": "Сопоставьте, во сколько раз изменилась концентрация другого реагента и во сколько раз изменилась скорость",
+          "ar": "قارن عدد مرات تغيّر تركيز المادة المتفاعلة الأخرى بعدد مرات تغيّر السرعة",
+          "zh": "比较另一反应物浓度变化的倍数与速率变化的倍数",
+          "ku": "Qatê guherîna tîrbûna reaktanta din bi qatê guherîna lezê re bide ber hev"
         },
         {
           "tr": "Reaktifin üssünü belirle",
@@ -741,14 +741,14 @@ export const unit17: ChemistryUnitSeedData = {
     {
       "id": "u17-s02",
       "title": {
-        "tr": "Reaksiyon Hızına Sıcaklık ve Basınç Etkisi",
-        "en": "Effect of Temperature and Pressure on Reaction Rate",
-        "de": "Einfluss von Temperatur und Druck auf die Reaktionsgeschwindigkeit",
-        "fr": "Effet de la température et de la pression sur la vitesse de réaction",
-        "ru": "Влияние температуры и давления на скорость реакции",
-        "ar": "تأثير درجة الحرارة والضغط على معدل التفاعل",
-        "zh": "温度和压力对反应速率的影响",
-        "ku": "Bandora germahî û zextê li ser rêjeya reaksiyonê"
+        "tr": "Sıcaklık Artışının Tepkime Hızına Etkisi",
+        "en": "Effect of Increasing Temperature on Reaction Rate",
+        "de": "Einfluss einer Temperaturerhöhung auf die Reaktionsgeschwindigkeit",
+        "fr": "Effet d'une hausse de température sur la vitesse de réaction",
+        "ru": "Влияние повышения температуры на скорость реакции",
+        "ar": "تأثير رفع درجة الحرارة على سرعة التفاعل",
+        "zh": "升高温度对反应速率的影响",
+        "ku": "Bandora Zêdebûna Germahiyê li ser Leza Reaksiyonê"
       },
       "steps": [
         {
@@ -762,34 +762,34 @@ export const unit17: ChemistryUnitSeedData = {
           "ku": "Dema ku germahî zêde dibe, enerjiya kînetîk a navîn ya pirtikan zêde dibe."
         },
         {
-          "tr": "Eşik enerjisini aşan etkin çarpışma sayısı artar",
-          "en": "The number of effective collisions exceeding the threshold energy increases",
-          "de": "Die Zahl der effektiven Kollisionen, die die Schwellenenergie überschreiten, steigt",
-          "fr": "Le nombre de collisions effectives dépassant l'énergie seuil augmente",
-          "ru": "Увеличивается число эффективных столкновений, превышающих пороговую энергию.",
-          "ar": "يزداد عدد الاصطدامات الفعالة التي تتجاوز عتبة الطاقة",
-          "zh": "超过阈值能量的有效碰撞次数增加",
-          "ku": "Hejmara pevçûnên bandor ên ku ji enerjiyê derbas dibe zêde dibe"
+          "tr": "Eşik enerjisini (Ea) aşan enerjiye sahip tanecik sayısı artar",
+          "en": "The number of particles with energy exceeding the threshold energy (Ea) increases",
+          "de": "Die Anzahl der Teilchen mit einer Energie oberhalb der Schwellenenergie (Ea) nimmt zu",
+          "fr": "Le nombre de particules dont l'énergie dépasse l'énergie seuil (Ea) augmente",
+          "ru": "Возрастает число частиц с энергией выше пороговой (Ea)",
+          "ar": "يزداد عدد الجسيمات التي تمتلك طاقة تتجاوز طاقة العتبة (Ea)",
+          "zh": "能量超过阈能（Ea）的粒子数增加",
+          "ku": "Hejmara taneyên ku enerjiya wan ji enerjiya bendê (Ea) derbas dibe zêde dibe"
+        },
+        {
+          "tr": "Birim zamandaki etkin çarpışma sayısı artar",
+          "en": "The number of effective collisions per unit time increases",
+          "de": "Die Anzahl wirksamer Stöße pro Zeiteinheit nimmt zu",
+          "fr": "Le nombre de collisions efficaces par unité de temps augmente",
+          "ru": "Число эффективных столкновений в единицу времени увеличивается",
+          "ar": "يزداد عدد الاصطدامات الفعالة في وحدة الزمن",
+          "zh": "单位时间内的有效碰撞次数增加",
+          "ku": "Hejmara lihevketinên bi bandor di yekeya demê de zêde dibe"
         },
         {
           "tr": "Hız sabiti k'nın değeri büyür ve tepkime hızlanır",
-          "en": "The value of the rate constant k increases and the reaction accelerates.",
-          "de": "Der Wert der Geschwindigkeitskonstante k steigt und die Reaktion beschleunigt sich.",
-          "fr": "La valeur de la constante de vitesse k augmente et la réaction s'accélère.",
-          "ru": "Значение константы скорости k увеличивается и реакция ускоряется.",
-          "ar": "تزداد قيمة ثابت المعدل k ويتسارع التفاعل.",
-          "zh": "速率常数k值增大，反应加速。",
-          "ku": "Nirxa rêjeyê k zêde dibe û reaksîyon lez dibe."
-        },
-        {
-          "tr": "Gaz tepkimesinde basınç artışı birim hacimdeki tanecik sayısını artırarak hızı artırır",
-          "en": "In a gas reaction, increasing pressure increases the rate by increasing the number of particles in the unit volume.",
-          "de": "Bei einer Gasreaktion erhöht ein zunehmender Druck die Geschwindigkeit, indem die Anzahl der Partikel im Einheitsvolumen erhöht wird.",
-          "fr": "Dans une réaction gazeuse, l’augmentation de la pression augmente la vitesse en augmentant le nombre de particules dans l’unité de volume.",
-          "ru": "В газовой реакции увеличение давления увеличивает скорость за счет увеличения количества частиц в единице объема.",
-          "ar": "في تفاعل الغاز، تؤدي زيادة الضغط إلى زيادة المعدل عن طريق زيادة عدد الجزيئات في وحدة الحجم.",
-          "zh": "在气体反应中，增加压力通过增加单位体积中的颗粒数量来提高速率。",
-          "ku": "Di reaksiyona gazê de, zêdebûna zextê bi zêdebûna hejmara keriyên di qebareya yekîneyê de rêjeyê zêde dike."
+          "en": "The value of the rate constant k increases and the reaction speeds up",
+          "de": "Der Wert der Geschwindigkeitskonstante k steigt und die Reaktion wird schneller",
+          "fr": "La valeur de la constante de vitesse k augmente et la réaction s'accélère",
+          "ru": "Значение константы скорости k увеличивается, и реакция ускоряется",
+          "ar": "تزداد قيمة ثابت السرعة k ويتسارع التفاعل",
+          "zh": "速率常数k增大，反应加快",
+          "ku": "Nirxa sabîta lezê k mezin dibe û reaksiyon bilez dibe"
         }
       ]
     },
@@ -807,24 +807,14 @@ export const unit17: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Tepkimenin yavaş ve hızlı basamakları incelenir",
-          "en": "The slow and fast steps of the reaction are examined",
-          "de": "Es werden die langsamen und schnellen Schritte der Reaktion untersucht",
-          "fr": "Les étapes lentes et rapides de la réaction sont examinées",
-          "ru": "Рассмотрены медленная и быстрая стадии реакции.",
-          "ar": "يتم فحص خطوات التفاعل البطيئة والسريعة",
-          "zh": "检查反应的慢步骤和快步骤",
-          "ku": "Pêngavên hêdî û bilez ên reaksiyonê têne lêkolîn kirin"
-        },
-        {
-          "tr": "Hız bağıntısı yavaş basamağın girenlerine göre yazılır",
-          "en": "The velocity relation is written according to the inputs of the slow step.",
-          "de": "Die Geschwindigkeitsrelation wird entsprechend den Eingaben des langsamen Schritts geschrieben.",
-          "fr": "La relation de vitesse s'écrit en fonction des entrées du pas lent.",
-          "ru": "Зависимость скоростей записывается по входам медленного шага.",
-          "ar": "تتم كتابة علاقة السرعة وفقا لمدخلات الخطوة البطيئة.",
-          "zh": "速度关系是根据慢步的输入编写的。",
-          "ku": "Têkiliya lezê li gorî ketina gavê hêdî tê nivîsandin."
+          "tr": "Basamaklar toplanarak net tepkime denklemi yazılır",
+          "en": "The steps are added to write the net reaction equation",
+          "de": "Die Nettoreaktionsgleichung wird durch Addition der Schritte geschrieben",
+          "fr": "L'équation de réaction nette s'écrit en ajoutant les étapes",
+          "ru": "Складывая стадии, записывают суммарное уравнение реакции",
+          "ar": "تتم كتابة معادلة التفاعل الصافية عن طريق إضافة الخطوات",
+          "zh": "将各步骤相加写出总反应方程式",
+          "ku": "Hevkêşana reaksiyona tevnvî bi lêzêdekirina gavan tê nivîsandin"
         },
         {
           "tr": "Katalizör ve ara ürün molekülleri tespit edilir",
@@ -837,14 +827,24 @@ export const unit17: ChemistryUnitSeedData = {
           "ku": "Molekulên katalîzator û hilberên navîn têne kifş kirin"
         },
         {
-          "tr": "Basamaklar toplanarak net tepkime denklemi yazılır",
-          "en": "The net reaction equation is written by adding the steps",
-          "de": "Die Nettoreaktionsgleichung wird durch Addition der Schritte geschrieben",
-          "fr": "L'équation de réaction nette s'écrit en ajoutant les étapes",
-          "ru": "Чистое уравнение реакции записывается сложением ступеней",
-          "ar": "تتم كتابة معادلة التفاعل الصافية عن طريق إضافة الخطوات",
-          "zh": "通过添加以下步骤编写净反应方程",
-          "ku": "Hevkêşana reaksiyona tevnvî bi lêzêdekirina gavan tê nivîsandin"
+          "tr": "Hızı belirleyen en yavaş basamak belirlenir",
+          "en": "The slowest (rate-determining) step is identified",
+          "de": "Der langsamste (geschwindigkeitsbestimmende) Schritt wird ermittelt",
+          "fr": "L'étape la plus lente (cinétiquement déterminante) est identifiée",
+          "ru": "Определяется самая медленная (лимитирующая) стадия",
+          "ar": "تُحدَّد الخطوة الأبطأ (المحدِّدة للسرعة)",
+          "zh": "找出最慢的（决速）步骤",
+          "ku": "Gava herî hêdî ya ku lezê diyar dike tê destnîşankirin"
+        },
+        {
+          "tr": "Hız bağıntısı yavaş basamağın girenlerine göre yazılır",
+          "en": "The rate law is written from the reactants of the slow step",
+          "de": "Das Geschwindigkeitsgesetz wird aus den Reaktanten des langsamen Schritts aufgestellt",
+          "fr": "La loi de vitesse s'écrit à partir des réactifs de l'étape lente",
+          "ru": "Уравнение скорости записывается по реагентам медленной стадии",
+          "ar": "يُكتب قانون السرعة بدلالة متفاعلات الخطوة البطيئة",
+          "zh": "根据慢步骤的反应物写出速率方程",
+          "ku": "Têkiliya lezê li gorî reaktantên gava hêdî tê nivîsandin"
         }
       ]
     },
@@ -892,14 +892,14 @@ export const unit17: ChemistryUnitSeedData = {
           "ku": "Hejmara keriyên ku ji enerjiyê derbas dibin zêde dibe"
         },
         {
-          "tr": "Tepkime hızlanır ancak entalpi Delta H değişmez",
-          "en": "The reaction accelerates but the enthalpy Delta H does not change",
-          "de": "Die Reaktion beschleunigt sich, aber die Enthalpie Delta H ändert sich nicht",
-          "fr": "La réaction s'accélère mais l'enthalpie Delta H ne change pas",
-          "ru": "Реакция ускоряется, но энтальпия Delta H не меняется.",
-          "ar": "يتسارع التفاعل لكن المحتوى الحراري Delta H لا يتغير",
-          "zh": "反应加速但焓 Delta H 不变",
-          "ku": "Reaksîyon lez dibe lê entalpî Delta H naguhere"
+          "tr": "Tepkime hızlanır ancak entalpi değişimi (ΔH) değişmez",
+          "en": "The reaction speeds up but the enthalpy change (ΔH) stays the same",
+          "de": "Die Reaktion wird schneller, aber die Enthalpieänderung (ΔH) bleibt gleich",
+          "fr": "La réaction s'accélère mais la variation d'enthalpie (ΔH) reste la même",
+          "ru": "Реакция ускоряется, но изменение энтальпии (ΔH) не меняется",
+          "ar": "يتسارع التفاعل لكن تغيّر المحتوى الحراري (ΔH) لا يتغيّر",
+          "zh": "反应加快，但焓变（ΔH）不变",
+          "ku": "Reaksiyon bilez dibe lê guherîna entalpiyê (ΔH) naguhere"
         }
       ]
     }
@@ -973,7 +973,7 @@ export const unit17: ChemistryUnitSeedData = {
       "explanation": {
         "tr": "Tepkime derecesi n = 2 + 1 = 3 tür. k birimi = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
         "en": "The order of reaction is n = 2 + 1 = 3. unit k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
-        "de": "Die Reihenfolge der Reaktion ist n = 2 + 1 = 3. Einheit k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
+        "de": "Die Reaktionsordnung ist n = 2 + 1 = 3. Einheit von k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
         "fr": "L'ordre de réaction est n = 2 + 1 = 3. unité k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
         "ru": "Порядок реакции: n = 2 + 1 = 3. единица k = (л/моль)^(n-1) * с^-1 = (л/моль)^2 * с^-1 = L^2 / (моль^2 * с).",
         "ar": "ترتيب التفاعل هو n = 2 + 1 = 3. الوحدة k = (L/mol)^(n-1) * s^-1 = (L/mol)^2 * s^-1 = L^2 / (mol^2 * s).",
@@ -1092,22 +1092,22 @@ export const unit17: ChemistryUnitSeedData = {
         },
         {
           "tr": "Hız denklemi sadece gaz ve suda çözünmüş (aq) maddelerin derişimlerine göre yazılır; saf katı ve sıvılar hız bağıntısında yer almaz.",
-          "en": "The rate equation is written only according to the concentrations of substances dissolved in gas and water (aq); Pure solids and liquids are not included in the velocity relationship.",
-          "de": "Die Geschwindigkeitsgleichung wird nur nach den Konzentrationen der in Gas und Wasser gelösten Stoffe (aq) geschrieben; Reine Feststoffe und Flüssigkeiten werden nicht in die Geschwindigkeitsbeziehung einbezogen.",
-          "fr": "L'équation du taux s'écrit uniquement en fonction des concentrations de substances dissoutes dans le gaz et l'eau (aq) ; Les solides purs et les liquides ne sont pas inclus dans la relation de vitesse.",
-          "ru": "Уравнение скорости записано только по концентрациям веществ, растворенных в газе и воде (водн.); Чистые твердые тела и жидкости не включаются в соотношение скоростей.",
-          "ar": "معادلة المعدل تكتب فقط على أساس تراكيز المواد المذابة في الغاز والماء (aq)؛ لا يتم تضمين المواد الصلبة والسوائل النقية في علاقة السرعة.",
-          "zh": "仅根据溶解在气体和水中的物质浓度（aq）写出速率方程；纯固体和液体不包括在速度关系中。",
-          "ku": "Wekheviya rêjeyê tenê li gorî tansiyona maddeyên di gaz û avê de (aq); Tiştên safî û şilek di nav têkiliya lezê de ne."
+          "en": "The rate equation is written only in terms of the concentrations of gases and of substances dissolved in water (aq); pure solids and liquids are not included in the rate expression.",
+          "de": "Die Geschwindigkeitsgleichung wird nur mit den Konzentrationen von Gasen und in Wasser gelösten Stoffen (aq) aufgestellt; reine Feststoffe und Flüssigkeiten erscheinen nicht im Geschwindigkeitsgesetz.",
+          "fr": "L'équation de vitesse s'écrit uniquement avec les concentrations des gaz et des substances dissoutes dans l'eau (aq) ; les solides et liquides purs n'apparaissent pas dans la loi de vitesse.",
+          "ru": "Уравнение скорости записывается только через концентрации газов и веществ, растворённых в воде (водн.); чистые твёрдые вещества и жидкости в выражение скорости не входят.",
+          "ar": "تُكتب معادلة السرعة فقط بدلالة تراكيز الغازات والمواد المذابة في الماء (aq)؛ ولا تدخل المواد الصلبة والسوائل النقية في قانون السرعة.",
+          "zh": "速率方程只用气体和水溶液中溶质（aq）的浓度来书写；纯固体和纯液体不出现在速率表达式中。",
+          "ku": "Hevkêşana lezê tenê bi tîrbûna gazan û maddeyên di avê de helandî (aq) tê nivîsandin; hişkên saf û şilên saf di têkiliya lezê de cih nagirin."
         },
         {
           "tr": "Tepkime derecesi net tepkimenin stokiyometrik katsayıları toplamına eşittir.",
-          "en": "The degree of reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
-          "de": "Der Reaktionsgrad ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
-          "fr": "Le degré de réaction est égal à la somme des coefficients stoechiométriques de la réaction nette.",
-          "ru": "Степень реакции равна сумме стехиометрических коэффициентов чистой реакции.",
-          "ar": "درجة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
-          "zh": "反应程度等于净反应的化学计量系数之和。",
+          "en": "The order of a reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
+          "de": "Die Reaktionsordnung ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
+          "fr": "L'ordre de réaction est égal à la somme des coefficients stœchiométriques de la réaction nette.",
+          "ru": "Порядок реакции равен сумме стехиометрических коэффициентов суммарной реакции.",
+          "ar": "رتبة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
+          "zh": "反应级数等于总反应的化学计量系数之和。",
           "ku": "Dereceya reaksîyonê bi kombûna hevberên stokyometrîkî yên reaksiyona tevnê re ye."
         },
         {
@@ -1124,13 +1124,13 @@ export const unit17: ChemistryUnitSeedData = {
       "correctIndex": 2,
       "explanation": {
         "tr": "Doğru cevap \"Hız denklemi sadece gaz ve suda çözünmüş (aq) maddelerin derişimlerine göre yazılır; saf katı ve sıvılar hız bağıntısında yer almaz.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The rate equation is written only according to the concentrations of substances dissolved in gas and water (aq); Pure solids and liquids are not included in the velocity relationship.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die Geschwindigkeitsgleichung wird nur nach den Konzentrationen der in Gas und Wasser gelösten Stoffe (aq) geschrieben; Reine Feststoffe und Flüssigkeiten werden nicht in die Geschwindigkeitsbeziehung einbezogen.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"L'équation du taux s'écrit uniquement en fonction des concentrations de substances dissoutes dans le gaz et l'eau (aq) ; Les solides purs et les liquides ne sont pas inclus dans la relation de vitesse.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Уравнение скорости записано только по концентрациям веществ, растворенных в газе и воде (водн.); Чистые твердые тела и жидкости не включаются в соотношение скоростей.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"معادلة المعدل تكتب فقط على أساس تراكيز المواد المذابة في الغاز والماء (aq)؛ لا يتم تضمين المواد الصلبة والسوائل النقية في علاقة السرعة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“仅根据溶解在气体和水中的物质浓度（aq）写出速率方程；纯固体和液体不包括在速度关系中。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Wekheviya rêjeyê tenê li gorî tansiyona maddeyên di gaz û avê de (aq); Tiştên safî û şilek di nav têkiliya lezê de ne.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"The rate equation is written only in terms of the concentrations of gases and of substances dissolved in water (aq); pure solids and liquids are not included in the rate expression.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Die Geschwindigkeitsgleichung wird nur mit den Konzentrationen von Gasen und in Wasser gelösten Stoffen (aq) aufgestellt; reine Feststoffe und Flüssigkeiten erscheinen nicht im Geschwindigkeitsgesetz.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"L'équation de vitesse s'écrit uniquement avec les concentrations des gaz et des substances dissoutes dans l'eau (aq) ; les solides et liquides purs n'apparaissent pas dans la loi de vitesse.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Уравнение скорости записывается только через концентрации газов и веществ, растворённых в воде (водн.); чистые твёрдые вещества и жидкости в выражение скорости не входят.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تُكتب معادلة السرعة فقط بدلالة تراكيز الغازات والمواد المذابة في الماء (aq)؛ ولا تدخل المواد الصلبة والسوائل النقية في قانون السرعة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“速率方程只用气体和水溶液中溶质（aq）的浓度来书写；纯固体和纯液体不出现在速率表达式中。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Hevkêşana lezê tenê bi tîrbûna gazan û maddeyên di avê de helandî (aq) tê nivîsandin; hişkên saf û şilên saf di têkiliya lezê de cih nagirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1170,7 +1170,7 @@ export const unit17: ChemistryUnitSeedData = {
           "tr": "Molekülerite sadece deneysel hız bağıntısından bulunur.",
           "en": "Molecularity is found only from the empirical rate relation.",
           "de": "Molekularität lässt sich nur aus der empirischen Geschwindigkeitsbeziehung ermitteln.",
-          "fr": "La molécule n'est trouvée qu'à partir de la relation de taux empirique.",
+          "fr": "La molécularité ne se détermine qu'à partir de la loi de vitesse expérimentale.",
           "ru": "Молекулярность находится только из эмпирического соотношения скоростей.",
           "ar": "تم العثور على الجزيئية فقط من علاقة المعدل التجريبي.",
           "zh": "分子性只能从经验速率关系中找到。",
@@ -1234,12 +1234,12 @@ export const unit17: ChemistryUnitSeedData = {
         },
         {
           "tr": "Hız sabiti k nın birimi tepkime derecesinden bağımsızdır.",
-          "en": "The unit of the rate constant k is independent of the degree of reaction.",
-          "de": "Die Einheit der Geschwindigkeitskonstante k ist unabhängig vom Reaktionsgrad.",
-          "fr": "L'unité de la constante de vitesse k est indépendante du degré de réaction.",
-          "ru": "Единица константы скорости k не зависит от степени реакции.",
-          "ar": "وحدة المعدل الثابت k مستقلة عن درجة التفاعل.",
-          "zh": "速率常数k的单位与反应程度无关。",
+          "en": "The unit of the rate constant k is independent of the order of the reaction.",
+          "de": "Die Einheit der Geschwindigkeitskonstante k ist unabhängig von der Reaktionsordnung.",
+          "fr": "L'unité de la constante de vitesse k est indépendante de l'ordre de la réaction.",
+          "ru": "Единица константы скорости k не зависит от порядка реакции.",
+          "ar": "وحدة ثابت السرعة k مستقلة عن رتبة التفاعل.",
+          "zh": "速率常数k的单位与反应级数无关。",
           "ku": "Yekeya leza sabit k ji dereceya reaksiyonê serbixwe ye."
         },
         {
@@ -1320,12 +1320,12 @@ export const unit17: ChemistryUnitSeedData = {
         },
         {
           "tr": "Tepkime derecesi net tepkimenin stokiyometrik katsayıları toplamına eşittir.",
-          "en": "The degree of reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
-          "de": "Der Reaktionsgrad ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
-          "fr": "Le degré de réaction est égal à la somme des coefficients stoechiométriques de la réaction nette.",
-          "ru": "Степень реакции равна сумме стехиометрических коэффициентов чистой реакции.",
-          "ar": "درجة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
-          "zh": "反应程度等于净反应的化学计量系数之和。",
+          "en": "The order of a reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
+          "de": "Die Reaktionsordnung ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
+          "fr": "L'ordre de réaction est égal à la somme des coefficients stœchiométriques de la réaction nette.",
+          "ru": "Порядок реакции равен сумме стехиометрических коэффициентов суммарной реакции.",
+          "ar": "رتبة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
+          "zh": "反应级数等于总反应的化学计量系数之和。",
           "ku": "Dereceya reaksîyonê bi kombûna hevberên stokyometrîkî yên reaksiyona tevnê re ye."
         },
         {
@@ -1398,7 +1398,7 @@ export const unit17: ChemistryUnitSeedData = {
           "tr": "Molekülerite sadece deneysel hız bağıntısından bulunur.",
           "en": "Molecularity is found only from the empirical rate relation.",
           "de": "Molekularität lässt sich nur aus der empirischen Geschwindigkeitsbeziehung ermitteln.",
-          "fr": "La molécule n'est trouvée qu'à partir de la relation de taux empirique.",
+          "fr": "La molécularité ne se détermine qu'à partir de la loi de vitesse expérimentale.",
           "ru": "Молекулярность находится только из эмпирического соотношения скоростей.",
           "ar": "تم العثور على الجزيئية فقط من علاقة المعدل التجريبي.",
           "zh": "分子性只能从经验速率关系中找到。",
@@ -1452,12 +1452,12 @@ export const unit17: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Hız sabiti k nın birimi tepkime derecesinden bağımsızdır.",
-          "en": "The unit of the rate constant k is independent of the degree of reaction.",
-          "de": "Die Einheit der Geschwindigkeitskonstante k ist unabhängig vom Reaktionsgrad.",
-          "fr": "L'unité de la constante de vitesse k est indépendante du degré de réaction.",
-          "ru": "Единица константы скорости k не зависит от степени реакции.",
-          "ar": "وحدة المعدل الثابت k مستقلة عن درجة التفاعل.",
-          "zh": "速率常数k的单位与反应程度无关。",
+          "en": "The unit of the rate constant k is independent of the order of the reaction.",
+          "de": "Die Einheit der Geschwindigkeitskonstante k ist unabhängig von der Reaktionsordnung.",
+          "fr": "L'unité de la constante de vitesse k est indépendante de l'ordre de la réaction.",
+          "ru": "Единица константы скорости k не зависит от порядка реакции.",
+          "ar": "وحدة ثابت السرعة k مستقلة عن رتبة التفاعل.",
+          "zh": "速率常数k的单位与反应级数无关。",
           "ku": "Yekeya leza sabit k ji dereceya reaksiyonê serbixwe ye."
         },
         {
@@ -1528,12 +1528,12 @@ export const unit17: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Tepkime derecesi net tepkimenin stokiyometrik katsayıları toplamına eşittir.",
-          "en": "The degree of reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
-          "de": "Der Reaktionsgrad ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
-          "fr": "Le degré de réaction est égal à la somme des coefficients stoechiométriques de la réaction nette.",
-          "ru": "Степень реакции равна сумме стехиометрических коэффициентов чистой реакции.",
-          "ar": "درجة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
-          "zh": "反应程度等于净反应的化学计量系数之和。",
+          "en": "The order of a reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
+          "de": "Die Reaktionsordnung ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
+          "fr": "L'ordre de réaction est égal à la somme des coefficients stœchiométriques de la réaction nette.",
+          "ru": "Порядок реакции равен сумме стехиометрических коэффициентов суммарной реакции.",
+          "ar": "رتبة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
+          "zh": "反应级数等于总反应的化学计量系数之和。",
           "ku": "Dereceya reaksîyonê bi kombûna hevberên stokyometrîkî yên reaksiyona tevnê re ye."
         },
         {
@@ -1606,7 +1606,7 @@ export const unit17: ChemistryUnitSeedData = {
           "tr": "Molekülerite sadece deneysel hız bağıntısından bulunur.",
           "en": "Molecularity is found only from the empirical rate relation.",
           "de": "Molekularität lässt sich nur aus der empirischen Geschwindigkeitsbeziehung ermitteln.",
-          "fr": "La molécule n'est trouvée qu'à partir de la relation de taux empirique.",
+          "fr": "La molécularité ne se détermine qu'à partir de la loi de vitesse expérimentale.",
           "ru": "Молекулярность находится только из эмпирического соотношения скоростей.",
           "ar": "تم العثور على الجزيئية فقط من علاقة المعدل التجريبي.",
           "zh": "分子性只能从经验速率关系中找到。",
@@ -1680,13 +1680,13 @@ export const unit17: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Hız sabiti k nın birimi: (L/mol)^(n-1) * s^-1 dir (n: tepkimenin toplam derecesi).",
-          "en": "The unit of the rate constant k is: (L/mol)^(n-1) * s^-1 (n: total rate of reaction).",
-          "de": "Die Einheit der Geschwindigkeitskonstante k ist: (L/mol)^(n-1) * s^-1 (n: Gesamtreaktionsgeschwindigkeit).",
-          "fr": "L'unité de la constante de vitesse k est : (L/mol)^(n-1) * s^-1 (n : vitesse totale de réaction).",
-          "ru": "Единица измерения константы скорости k: (л/моль)^(n-1) * с^-1 (n: общая скорость реакции).",
-          "ar": "وحدة المعدل الثابت k هي: (L/mol)^(n-1) * s^-1 (n: المعدل الإجمالي للتفاعل).",
-          "zh": "速率常数k的单位为：(L/mol)^(n-1) * s^-1（n：反应总速率）。",
-          "ku": "Yekeya leza sabit k ev e: (L/mol)^(n-1) * s^-1 (n: rêjeya tevhev a reaksiyonê)."
+          "en": "The unit of the rate constant k is: (L/mol)^(n-1) * s^-1 (n: overall order of the reaction).",
+          "de": "Die Einheit der Geschwindigkeitskonstante k ist: (L/mol)^(n-1) * s^-1 (n: Gesamtordnung der Reaktion).",
+          "fr": "L'unité de la constante de vitesse k est : (L/mol)^(n-1) * s^-1 (n : ordre global de la réaction).",
+          "ru": "Единица измерения константы скорости k: (л/моль)^(n-1) * с^-1 (n: общий порядок реакции).",
+          "ar": "وحدة ثابت السرعة k هي: (L/mol)^(n-1) * s^-1 (n: الرتبة الكلية للتفاعل).",
+          "zh": "速率常数k的单位为：(L/mol)^(n-1) * s^-1（n：反应的总级数）。",
+          "ku": "Yekeya sabîta lezê k ev e: (L/mol)^(n-1) * s^-1 (n: dereceya giştî ya reaksiyonê)."
         },
         {
           "tr": "Katıyı toz haline getirmek açığa çıkan gaz miktarını artırır.",
@@ -1732,13 +1732,13 @@ export const unit17: ChemistryUnitSeedData = {
       "correctIndex": 0,
       "explanation": {
         "tr": "Doğru cevap \"Hız sabiti k nın birimi: (L/mol)^(n-1) * s^-1 dir (n: tepkimenin toplam derecesi).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The unit of the rate constant k is: (L/mol)^(n-1) * s^-1 (n: total rate of reaction).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die Einheit der Geschwindigkeitskonstante k ist: (L/mol)^(n-1) * s^-1 (n: Gesamtreaktionsgeschwindigkeit).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"L'unité de la constante de vitesse k est : (L/mol)^(n-1) * s^-1 (n : vitesse totale de réaction).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Единица измерения константы скорости k: (л/моль)^(n-1) * с^-1 (n: общая скорость реакции).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"وحدة المعدل الثابت k هي: (L/mol)^(n-1) * s^-1 (n: المعدل الإجمالي للتفاعل).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“速率常数k的单位为：(L/mol)^(n-1) * s^-1（n：反应总速率）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Yekeya leza sabit k ev e: (L/mol)^(n-1) * s^-1 (n: rêjeya tevhev a reaksiyonê).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"The unit of the rate constant k is: (L/mol)^(n-1) * s^-1 (n: overall order of the reaction).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Die Einheit der Geschwindigkeitskonstante k ist: (L/mol)^(n-1) * s^-1 (n: Gesamtordnung der Reaktion).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"L'unité de la constante de vitesse k est : (L/mol)^(n-1) * s^-1 (n : ordre global de la réaction).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Единица измерения константы скорости k: (л/моль)^(n-1) * с^-1 (n: общий порядок реакции).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"وحدة ثابت السرعة k هي: (L/mol)^(n-1) * s^-1 (n: الرتبة الكلية للتفاعل).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“速率常数k的单位为：(L/mol)^(n-1) * s^-1（n：反应的总级数）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Yekeya sabîta lezê k ev e: (L/mol)^(n-1) * s^-1 (n: dereceya giştî ya reaksiyonê).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1766,12 +1766,12 @@ export const unit17: ChemistryUnitSeedData = {
         },
         {
           "tr": "Tepkime derecesi, deneysel hız bağıntısındaki derişimlerin üsleri toplamıdır.",
-          "en": "The degree of reaction is the sum of the exponents of the concentrations in the experimental rate equation.",
-          "de": "Der Reaktionsgrad ist die Summe der Exponenten der Konzentrationen in der experimentellen Geschwindigkeitsgleichung.",
-          "fr": "Le degré de réaction est la somme des exposants des concentrations dans l'équation de vitesse expérimentale.",
-          "ru": "Степень реакции представляет собой сумму показателей концентраций в экспериментальном уравнении скорости.",
-          "ar": "درجة التفاعل هي مجموع أسس التركيزات في معادلة المعدل التجريبي.",
-          "zh": "反应程度是实验速率方程中浓度指数的总和。",
+          "en": "The order of a reaction is the sum of the exponents of the concentrations in the experimental rate law.",
+          "de": "Die Reaktionsordnung ist die Summe der Exponenten der Konzentrationen im experimentellen Geschwindigkeitsgesetz.",
+          "fr": "L'ordre de réaction est la somme des exposants des concentrations dans la loi de vitesse expérimentale.",
+          "ru": "Порядок реакции равен сумме показателей степеней концентраций в экспериментальном уравнении скорости.",
+          "ar": "رتبة التفاعل هي مجموع أسس التراكيز في قانون السرعة التجريبي.",
+          "zh": "反应级数是实验速率方程中各浓度指数之和。",
           "ku": "Dereceya reaksîyonê kombûna nîşanderên hûrbûnên di hevkêşeya rêjeya ceribandinê de ye."
         },
         {
@@ -1808,12 +1808,12 @@ export const unit17: ChemistryUnitSeedData = {
       "correctIndex": 1,
       "explanation": {
         "tr": "Doğru cevap \"Tepkime derecesi, deneysel hız bağıntısındaki derişimlerin üsleri toplamıdır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The degree of reaction is the sum of the exponents of the concentrations in the experimental rate equation.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Der Reaktionsgrad ist die Summe der Exponenten der Konzentrationen in der experimentellen Geschwindigkeitsgleichung.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Le degré de réaction est la somme des exposants des concentrations dans l'équation de vitesse expérimentale.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Степень реакции представляет собой сумму показателей концентраций в экспериментальном уравнении скорости.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"درجة التفاعل هي مجموع أسس التركيزات في معادلة المعدل التجريبي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“反应程度是实验速率方程中浓度指数的总和。”。属于化学学科必考的核心客观真理。",
+        "en": "The correct statement is: \"The order of a reaction is the sum of the exponents of the concentrations in the experimental rate law.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Die Reaktionsordnung ist die Summe der Exponenten der Konzentrationen im experimentellen Geschwindigkeitsgesetz.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"L'ordre de réaction est la somme des exposants des concentrations dans la loi de vitesse expérimentale.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Порядок реакции равен сумме показателей степеней концентраций в экспериментальном уравнении скорости.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"رتبة التفاعل هي مجموع أسس التراكيز في قانون السرعة التجريبي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“反应级数是实验速率方程中各浓度指数之和。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Dereceya reaksîyonê kombûna nîşanderên hûrbûnên di hevkêşeya rêjeya ceribandinê de ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
@@ -1854,7 +1854,7 @@ export const unit17: ChemistryUnitSeedData = {
           "tr": "Molekülerite, tek bir basamakta tepkimeye giren tanecik sayısını ifade eder (unimoleküler, bimoleküler, trimoleküler).",
           "en": "Molecularity refers to the number of particles that react in a single step (unimolecular, bimolecular, trimolecular).",
           "de": "Unter Molekularität versteht man die Anzahl der Teilchen, die in einem einzigen Schritt reagieren (unimolekular, bimolekular, trimolekular).",
-          "fr": "La moléculaire fait référence au nombre de particules qui réagissent en une seule étape (unimoléculaire, bimoléculaire, trimoléculaire).",
+          "fr": "La molécularité désigne le nombre de particules qui réagissent dans une seule étape (unimoléculaire, bimoléculaire, trimoléculaire).",
           "ru": "Молекулярность относится к числу частиц, которые реагируют за одну стадию (мономолекулярная, бимолекулярная, тримолекулярная).",
           "ar": "تشير الجزيئية إلى عدد الجزيئات التي تتفاعل في خطوة واحدة (أحادية الجزيئية، ثنائية الجزيئية، ثلاثية الجزيئات).",
           "zh": "分子度是指一步反应的粒子数量（单分子、双分子、​​三分子）。",
@@ -1886,7 +1886,7 @@ export const unit17: ChemistryUnitSeedData = {
         "tr": "Doğru cevap \"Molekülerite, tek bir basamakta tepkimeye giren tanecik sayısını ifade eder (unimoleküler, bimoleküler, trimoleküler).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Molecularity refers to the number of particles that react in a single step (unimolecular, bimolecular, trimolecular).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Unter Molekularität versteht man die Anzahl der Teilchen, die in einem einzigen Schritt reagieren (unimolekular, bimolekular, trimolekular).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La moléculaire fait référence au nombre de particules qui réagissent en une seule étape (unimoléculaire, bimoléculaire, trimoléculaire).\". Notion fondamentale du programme officiel de chimie.",
+        "fr": "L'affirmation exacte est: \"La molécularité désigne le nombre de particules qui réagissent dans une seule étape (unimoléculaire, bimoléculaire, trimoléculaire).\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Молекулярность относится к числу частиц, которые реагируют за одну стадию (мономолекулярная, бимолекулярная, тримолекулярная).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"تشير الجزيئية إلى عدد الجزيئات التي تتفاعل في خطوة واحدة (أحادية الجزيئية، ثنائية الجزيئية، ثلاثية الجزيئات).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“分子度是指一步反应的粒子数量（单分子、双分子、​​三分子）。”。属于化学学科必考的核心客观真理。",
@@ -1937,14 +1937,14 @@ export const unit17: ChemistryUnitSeedData = {
           "ku": "Zêdebûna germahiyê bi kêmkirina enerjiya aktîfkirinê re reaksiyonê leztir dike."
         },
         {
-          "tr": "Tersiyer kalsiyum karbonat tozunun asitte çözünmesi parça kireç taşına göre temas yüzeyi nedeniyle çok daha hızlıdır.",
-          "en": "Tertiary calcium carbonate powder dissolves in acid much faster than lump limestone due to its contact surface.",
-          "de": "Tertiäres Calciumcarbonat-Pulver löst sich aufgrund seiner Kontaktoberfläche viel schneller in Säure auf als Stückkalkstein.",
-          "fr": "La poudre de carbonate de calcium tertiaire se dissout dans l'acide beaucoup plus rapidement que le calcaire en morceaux en raison de sa surface de contact.",
-          "ru": "Порошок третичного карбоната кальция растворяется в кислоте гораздо быстрее, чем кусковый известняк, благодаря своей контактной поверхности.",
-          "ar": "يذوب مسحوق كربونات الكالسيوم الثلاثي في ​​الحمض بشكل أسرع بكثير من الحجر الجيري المقطوع بسبب سطح ملامسته.",
-          "zh": "由于其接触表面，叔碳酸钙粉末在酸中的溶解速度比块状石灰石快得多。",
-          "ku": "Toza karbonat a kalsiyûmê ya sêyem ji ber rûbera pêwendiya wê di asîdê de ji kevirê kilsinî pir zûtir dihele."
+          "tr": "Toz hâlindeki kalsiyum karbonatın (CaCO₃) asitte çözünmesi, temas yüzeyi daha büyük olduğundan parça kireç taşına göre çok daha hızlıdır.",
+          "en": "Powdered calcium carbonate (CaCO₃) dissolves in acid much faster than lump limestone because its contact surface is larger.",
+          "de": "Pulverförmiges Calciumcarbonat (CaCO₃) löst sich in Säure viel schneller als stückiger Kalkstein, weil seine Kontaktfläche größer ist.",
+          "fr": "Le carbonate de calcium (CaCO₃) en poudre se dissout dans l'acide beaucoup plus vite que le calcaire en morceaux, car sa surface de contact est plus grande.",
+          "ru": "Порошкообразный карбонат кальция (CaCO₃) растворяется в кислоте гораздо быстрее, чем кусковой известняк, так как его поверхность контакта больше.",
+          "ar": "يذوب مسحوق كربونات الكالسيوم (CaCO₃) في الحمض أسرع بكثير من قطع الحجر الجيري لأن سطح تلامسه أكبر.",
+          "zh": "粉末状碳酸钙（CaCO₃）因接触面积更大，在酸中溶解得比块状石灰石快得多。",
+          "ku": "Karbonata kalsiyûmê (CaCO₃) ya toz ji ber ku rûbera wê ya pêwendiyê mezintir e, di asîdê de ji kevirê kilsê yê perçe pir zûtir dihele."
         },
         {
           "tr": "Katalizör tepkime sonunda tükenerek yok olur.",
@@ -1959,14 +1959,14 @@ export const unit17: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Tersiyer kalsiyum karbonat tozunun asitte çözünmesi parça kireç taşına göre temas yüzeyi nedeniyle çok daha hızlıdır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Tertiary calcium carbonate powder dissolves in acid much faster than lump limestone due to its contact surface.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Tertiäres Calciumcarbonat-Pulver löst sich aufgrund seiner Kontaktoberfläche viel schneller in Säure auf als Stückkalkstein.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La poudre de carbonate de calcium tertiaire se dissout dans l'acide beaucoup plus rapidement que le calcaire en morceaux en raison de sa surface de contact.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Порошок третичного карбоната кальция растворяется в кислоте гораздо быстрее, чем кусковый известняк, благодаря своей контактной поверхности.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"يذوب مسحوق كربونات الكالسيوم الثلاثي في ​​الحمض بشكل أسرع بكثير من الحجر الجيري المقطوع بسبب سطح ملامسته.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“由于其接触表面，叔碳酸钙粉末在酸中的溶解速度比块状石灰石快得多。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Toza karbonat a kalsiyûmê ya sêyem ji ber rûbera pêwendiya wê di asîdê de ji kevirê kilsinî pir zûtir dihele.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Toz hâlindeki kalsiyum karbonatın (CaCO₃) asitte çözünmesi, temas yüzeyi daha büyük olduğundan parça kireç taşına göre çok daha hızlıdır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Powdered calcium carbonate (CaCO₃) dissolves in acid much faster than lump limestone because its contact surface is larger.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Pulverförmiges Calciumcarbonat (CaCO₃) löst sich in Säure viel schneller als stückiger Kalkstein, weil seine Kontaktfläche größer ist.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Le carbonate de calcium (CaCO₃) en poudre se dissout dans l'acide beaucoup plus vite que le calcaire en morceaux, car sa surface de contact est plus grande.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Порошкообразный карбонат кальция (CaCO₃) растворяется в кислоте гораздо быстрее, чем кусковой известняк, так как его поверхность контакта больше.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"يذوب مسحوق كربونات الكالسيوم (CaCO₃) في الحمض أسرع بكثير من قطع الحجر الجيري لأن سطح تلامسه أكبر.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“粉末状碳酸钙（CaCO₃）因接触面积更大，在酸中溶解得比块状石灰石快得多。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Karbonata kalsiyûmê (CaCO₃) ya toz ji ber ku rûbera wê ya pêwendiyê mezintir e, di asîdê de ji kevirê kilsê yê perçe pir zûtir dihele.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2014,12 +2014,12 @@ export const unit17: ChemistryUnitSeedData = {
         },
         {
           "tr": "Hız sabiti k nın birimi tepkime derecesinden bağımsızdır.",
-          "en": "The unit of the rate constant k is independent of the degree of reaction.",
-          "de": "Die Einheit der Geschwindigkeitskonstante k ist unabhängig vom Reaktionsgrad.",
-          "fr": "L'unité de la constante de vitesse k est indépendante du degré de réaction.",
-          "ru": "Единица константы скорости k не зависит от степени реакции.",
-          "ar": "وحدة المعدل الثابت k مستقلة عن درجة التفاعل.",
-          "zh": "速率常数k的单位与反应程度无关。",
+          "en": "The unit of the rate constant k is independent of the order of the reaction.",
+          "de": "Die Einheit der Geschwindigkeitskonstante k ist unabhängig von der Reaktionsordnung.",
+          "fr": "L'unité de la constante de vitesse k est indépendante de l'ordre de la réaction.",
+          "ru": "Единица константы скорости k не зависит от порядка реакции.",
+          "ar": "وحدة ثابت السرعة k مستقلة عن رتبة التفاعل.",
+          "zh": "速率常数k的单位与反应级数无关。",
           "ku": "Yekeya leza sabit k ji dereceya reaksiyonê serbixwe ye."
         },
         {
@@ -2100,12 +2100,12 @@ export const unit17: ChemistryUnitSeedData = {
         },
         {
           "tr": "Tepkime derecesi net tepkimenin stokiyometrik katsayıları toplamına eşittir.",
-          "en": "The degree of reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
-          "de": "Der Reaktionsgrad ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
-          "fr": "Le degré de réaction est égal à la somme des coefficients stoechiométriques de la réaction nette.",
-          "ru": "Степень реакции равна сумме стехиометрических коэффициентов чистой реакции.",
-          "ar": "درجة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
-          "zh": "反应程度等于净反应的化学计量系数之和。",
+          "en": "The order of a reaction is equal to the sum of the stoichiometric coefficients of the net reaction.",
+          "de": "Die Reaktionsordnung ist gleich der Summe der stöchiometrischen Koeffizienten der Nettoreaktion.",
+          "fr": "L'ordre de réaction est égal à la somme des coefficients stœchiométriques de la réaction nette.",
+          "ru": "Порядок реакции равен сумме стехиометрических коэффициентов суммарной реакции.",
+          "ar": "رتبة التفاعل تساوي مجموع المعاملات المتكافئة للتفاعل الصافي.",
+          "zh": "反应级数等于总反应的化学计量系数之和。",
           "ku": "Dereceya reaksîyonê bi kombûna hevberên stokyometrîkî yên reaksiyona tevnê re ye."
         }
       ],

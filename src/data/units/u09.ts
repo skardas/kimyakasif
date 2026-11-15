@@ -32,10 +32,10 @@ export const unit09: ChemistryUnitSeedData = {
       "fact": {
         "tr": "Asitler sulu çözeltilerine H+ (H3O+) iyonu verir, tatları ekşidir ve mavi turnusolu kırmızıya çevirir.",
         "en": "Acids give off H+ (H3O+) ions to their aqueous solutions, taste sour and turn blue litmus red.",
-        "de": "Säuren geben H+ (H3O+)-Ionen an ihre wässrigen Lösungen ab, schmecken sauer und verfärben sich blauen Lackmus rot.",
-        "fr": "Les acides dégagent des ions H+ (H3O+) dans leurs solutions aqueuses, ont un goût aigre et virent au rouge tournesol bleu.",
+        "de": "Säuren geben H+ (H3O+)-Ionen an ihre wässrigen Lösungen ab, schmecken sauer und färben blauen Lackmus rot.",
+        "fr": "Les acides libèrent des ions H+ (H3O+) dans leurs solutions aqueuses, ont un goût aigre et font virer au rouge le tournesol bleu.",
         "ru": "Кислоты отдают в свои водные растворы ионы H+ (H3O+), имеют кислый вкус и окрашивают синий лакмус в красный цвет.",
-        "ar": "تطلق الأحماض أيونات H+ (H3O+) في محاليلها المائية، ويكون طعمها حامضًا ويتحول إلى اللون الأزرق لزهرة عباد الشمس.",
+        "ar": "تطلق الأحماض أيونات H+ (H3O+) في محاليلها المائية، وطعمها حامض، وتحوّل ورق عباد الشمس الأزرق إلى اللون الأحمر.",
         "zh": "酸在其水溶液中释放出 H+ (H3O+) 离子，尝起来有酸味，并使蓝色石蕊变成红色。",
         "ku": "Asîd îyonên H+ (H3O+) ji halên xwe yên avî derdixin, tama tirşiyê çêdikin û lîmûsê şîn sor dikin."
       },
@@ -43,7 +43,7 @@ export const unit09: ChemistryUnitSeedData = {
         "tr": "Asitler ele kayganlık hissi verir ve turnusolu maviye boyar.",
         "en": "Acids give the hand a slippery feeling and turn litmus blue.",
         "de": "Säuren verleihen der Hand ein rutschiges Gefühl und verfärben Lackmus blau.",
-        "fr": "Les acides donnent à la main une sensation glissante et virent au bleu tournesol.",
+        "fr": "Les acides donnent à la main une sensation glissante et font virer le tournesol au bleu.",
         "ru": "Кислоты придают руке ощущение скользкости и окрашивают лакмус в синий цвет.",
         "ar": "تمنح الأحماض اليد ملمسًا زلقًا وتحوّل لون عباد الشمس إلى اللون الأزرق.",
         "zh": "酸使手有滑溜的感觉并使石蕊变成蓝色。",
@@ -56,7 +56,7 @@ export const unit09: ChemistryUnitSeedData = {
         "tr": "Bazlar sulu çözeltilerine OH- iyonu verir, tatları acıdır ve kırmızı turnusolu maviye çevirir.",
         "en": "Bases give OH- ions to their aqueous solutions, taste bitter and turn red litmus blue.",
         "de": "Basen geben OH-Ionen an ihre wässrigen Lösungen ab, schmecken bitter und färben roten Lackmus blau.",
-        "fr": "Les bases donnent des ions OH- à leurs solutions aqueuses, ont un goût amer et virent au bleu tournesol rouge.",
+        "fr": "Les bases libèrent des ions OH- dans leurs solutions aqueuses, ont un goût amer et font virer au bleu le tournesol rouge.",
         "ru": "Основания отдают в свои водные растворы ионы OH-, имеют горький вкус и окрашивают красный лакмус в синий цвет.",
         "ar": "تعطي القواعد أيونات OH- لمحاليلها المائية، وطعمها مر ويتحول لون عباد الشمس الأحمر إلى اللون الأزرق.",
         "zh": "碱在其水溶液中产生 OH- 离子，味道苦，并使红色石蕊变成蓝色。",
@@ -99,24 +99,24 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-f04",
       "fact": {
-        "tr": "Aktif metaller (Na, K, Mg, Fe vb.) asitlerle tepkimeye girdiğinde H2 gazı açığa çıkarır.",
-        "en": "When active metals (Na, K, Mg, Fe, etc.) react with acids, they release H2 gas.",
-        "de": "Wenn aktive Metalle (Na, K, Mg, Fe usw.) mit Säuren reagieren, setzen sie H2-Gas frei.",
-        "fr": "Lorsque les métaux actifs (Na, K, Mg, Fe, etc.) réagissent avec les acides, ils libèrent du gaz H2.",
-        "ru": "При взаимодействии активных металлов (Na, K, Mg, Fe и др.) с кислотами выделяется газ H2.",
-        "ar": "عندما تتفاعل المعادن النشطة (Na، K، Mg، Fe، إلخ) مع الأحماض، فإنها تطلق غاز H2.",
-        "zh": "当活性金属（Na、K、Mg、Fe等）与酸反应时，会释放出H2气体。",
-        "ku": "Dema ku metalên çalak (Na, K, Mg, Fe, hwd.) bi asîdan re bertek nîşan didin, gaza H2 derdixin."
+        "tr": "Aktif metaller (Na, K, Mg, Fe vb.) HCl ve seyreltik H2SO4 gibi asitlerle tepkimeye girdiğinde H2 gazı açığa çıkarır.",
+        "en": "When active metals (Na, K, Mg, Fe, etc.) react with acids such as HCl and dilute H2SO4, they release H2 gas.",
+        "de": "Wenn aktive Metalle (Na, K, Mg, Fe usw.) mit Säuren wie HCl und verdünnter H2SO4 reagieren, setzen sie H2-Gas frei.",
+        "fr": "Lorsque les métaux actifs (Na, K, Mg, Fe, etc.) réagissent avec des acides comme HCl et H2SO4 dilué, ils libèrent du gaz H2.",
+        "ru": "При взаимодействии активных металлов (Na, K, Mg, Fe и др.) с такими кислотами, как HCl и разбавленная H2SO4, выделяется газ H2.",
+        "ar": "عندما تتفاعل المعادن النشطة (Na، K، Mg، Fe، إلخ) مع أحماض مثل HCl وH2SO4 المخفف، فإنها تطلق غاز H2.",
+        "zh": "当活性金属（Na、K、Mg、Fe等）与HCl、稀H2SO4等酸反应时，会释放出H2气体。",
+        "ku": "Dema ku metalên çalak (Na, K, Mg, Fe, hwd.) bi asîdên wekî HCl û H2SO4-a sivik re bertek nîşan didin, gaza H2 derdixin."
       },
       "trap": {
-        "tr": "Aktif metaller asitlerle SO2 zehirli gazı oluşturur.",
-        "en": "Active metals form toxic gas SO2 with acids.",
-        "de": "Aktive Metalle bilden mit Säuren das giftige Gas SO2.",
-        "fr": "Les métaux actifs forment du gaz toxique SO2 avec les acides.",
-        "ru": "Активные металлы образуют с кислотами токсичный газ SO2.",
-        "ar": "تشكل المعادن النشطة غازًا سامًا SO2 مع الأحماض.",
-        "zh": "活性金属与酸反应生成有毒气体SO2。",
-        "ku": "Metalên çalak bi asîdên gaza jehrî SO2 çêdikin."
+        "tr": "Aktif metaller seyreltik HCl ile tepkimeye girdiğinde SO2 gazı oluşturur.",
+        "en": "When active metals react with dilute HCl, they form SO2 gas.",
+        "de": "Wenn aktive Metalle mit verdünnter HCl reagieren, bilden sie SO2-Gas.",
+        "fr": "Lorsque les métaux actifs réagissent avec HCl dilué, ils forment du gaz SO2.",
+        "ru": "При взаимодействии активных металлов с разбавленной HCl образуется газ SO2.",
+        "ar": "عندما تتفاعل المعادن النشطة مع HCl المخفف، فإنها تكوّن غاز SO2.",
+        "zh": "活性金属与稀HCl反应时生成SO2气体。",
+        "ku": "Dema ku metalên çalak bi HCl-a sivik re bertek nîşan didin, gaza SO2 çêdikin."
       }
     },
     {
@@ -155,14 +155,14 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-f06",
       "fact": {
-        "tr": "Yarı soy metaller sadece derişik HNO3 (NO2 gazı), seyreltik HNO3 (NO gazı) ve sıcak derişik H2SO4 (SO2 gazı) ile tepkime verir.",
-        "en": "Semi-noble metals react only with concentrated HNO3 (NO2 gas), dilute HNO3 (NO gas) and hot concentrated H2SO4 (SO2 gas).",
-        "de": "Halbedelmetalle reagieren nur mit konzentriertem HNO3 (NO2-Gas), verdünntem HNO3 (NO-Gas) und heißem konzentriertem H2SO4 (SO2-Gas).",
-        "fr": "Les métaux semi-nobles réagissent uniquement avec le HNO3 concentré (gaz NO2), le HNO3 dilué (gaz NO) et le H2SO4 concentré chaud (gaz SO2).",
-        "ru": "Полублагородные металлы реагируют только с концентрированной HNO3 (газ NO2), разбавленной HNO3 (газ NO) и горячей концентрированной H2SO4 (газ SO2).",
-        "ar": "تتفاعل المعادن شبه النبيلة فقط مع HNO3 المركز (غاز NO2)، وHNO3 المخفف (NO غاز) وH2SO4 الساخن المركز (غاز SO2).",
-        "zh": "半贵金属仅与浓HNO3（NO2气体）、稀HNO3（NO气体）和热浓H2SO4（SO2气体）发生反应。",
-        "ku": "Metalên nîv-esilzade tenê bi HNO3 (gaza NO2) konsantrekirî, HNO3 (gaza NO2) rijandin û H2SO4 (gaza SO2) ya germ re reaksiyonê dikin."
+        "tr": "Yarı soy metaller asitlerden yalnızca derişik HNO3 (NO2 gazı), seyreltik HNO3 (NO gazı) ve sıcak derişik H2SO4 (SO2 gazı) ile tepkime verir.",
+        "en": "Among acids, semi-noble metals react only with concentrated HNO3 (NO2 gas), dilute HNO3 (NO gas) and hot concentrated H2SO4 (SO2 gas).",
+        "de": "Von den Säuren reagieren Halbedelmetalle nur mit konzentrierter HNO3 (NO2-Gas), verdünnter HNO3 (NO-Gas) und heißer konzentrierter H2SO4 (SO2-Gas).",
+        "fr": "Parmi les acides, les métaux semi-nobles réagissent uniquement avec HNO3 concentré (gaz NO2), HNO3 dilué (gaz NO) et H2SO4 concentré chaud (gaz SO2).",
+        "ru": "Из кислот полублагородные металлы реагируют только с концентрированной HNO3 (газ NO2), разбавленной HNO3 (газ NO) и горячей концентрированной H2SO4 (газ SO2).",
+        "ar": "من بين الأحماض، لا تتفاعل المعادن شبه النبيلة إلا مع HNO3 المركز (غاز NO2) وHNO3 المخفف (غاز NO) وH2SO4 المركز الساخن (غاز SO2).",
+        "zh": "在酸中，半贵金属只与浓HNO3（生成NO2气体）、稀HNO3（生成NO气体）和热浓H2SO4（生成SO2气体）反应。",
+        "ku": "Ji asîdan, metalên nîv-esîl tenê bi HNO3-a konsantre (gaza NO2), HNO3-a sivik (gaza NO) û H2SO4-a konsantre ya germ (gaza SO2) re reaksiyonê dikin."
       },
       "trap": {
         "tr": "Bakır HNO3 ile tepkime verdiğinde H2 gazı üretir.",
@@ -225,13 +225,13 @@ export const unit09: ChemistryUnitSeedData = {
       "id": "u09-f09",
       "fact": {
         "tr": "Karbonatlı bileşikler (CaCO3, NaHCO3) asitlerle tepkimeye girdiğinde CO2 gazı açığa çıkarır.",
-        "en": "When carbonated compounds (CaCO3, NaHCO3) react with acids, they release CO2 gas.",
-        "de": "Wenn karbonisierte Verbindungen (CaCO3, NaHCO3) mit Säuren reagieren, setzen sie CO2-Gas frei.",
+        "en": "When carbonate compounds (CaCO3, NaHCO3) react with acids, they release CO2 gas.",
+        "de": "Wenn Carbonatverbindungen (CaCO3, NaHCO3) mit Säuren reagieren, setzen sie CO2-Gas frei.",
         "fr": "Lorsque les composés carbonatés (CaCO3, NaHCO3) réagissent avec des acides, ils libèrent du CO2 gazeux.",
-        "ru": "Когда карбонизированные соединения (CaCO3, NaHCO3) реагируют с кислотами, они выделяют газ CO2.",
-        "ar": "عندما تتفاعل المركبات الغازية (CaCO3، NaHCO3) مع الأحماض، فإنها تطلق غاز ثاني أكسيد الكربون.",
+        "ru": "Когда карбонаты (CaCO3, NaHCO3) реагируют с кислотами, они выделяют газ CO2.",
+        "ar": "عندما تتفاعل مركبات الكربونات (CaCO3، NaHCO3) مع الأحماض، فإنها تطلق غاز CO2.",
         "zh": "当碳酸化合物（CaCO3、NaHCO3）与酸反应时，会释放 CO2 气体。",
-        "ku": "Dema pêkhateyên karbonatkirî (CaCO3, NaHCO3) bi asîdan re bertek nîşan didin, gaza CO2 derdixin."
+        "ku": "Dema pêkhateyên karbonatî (CaCO3, NaHCO3) bi asîdan re bertek nîşan didin, gaza CO2 derdixin."
       },
       "trap": {
         "tr": "Kireç taşı üzerine asit döküldüğünde O2 gazı fışkırır.",
@@ -293,7 +293,7 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-f12",
       "fact": {
-        "tr": "Kuvvetli asit ile zayıf bazdan oluşan tuz asidiktir (örn. NH4Cl); sulu çözeltisinin pH ı 7 den küçüktür.",
+        "tr": "Kuvvetli asit ile zayıf bazdan oluşan tuz asidiktir (örn. NH4Cl); sulu çözeltisinin pH'ı 7'den küçüktür.",
         "en": "A salt consisting of a strong acid and a weak base is acidic (e.g. NH4Cl); The pH of its aqueous solution is less than 7.",
         "de": "Ein Salz, das aus einer starken Säure und einer schwachen Base besteht, ist sauer (z. B. NH4Cl); Der pH-Wert seiner wässrigen Lösung liegt unter 7.",
         "fr": "Un sel constitué d'un acide fort et d'une base faible est acide (par exemple NH4Cl) ; Le pH de sa solution aqueuse est inférieur à 7.",
@@ -316,7 +316,7 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-f13",
       "fact": {
-        "tr": "Zayıf asit ile kuvvetli bazdan oluşan tuz baziktir (örn. CH3COONa); sulu çözeltisinin pH ı 7 den büyüktür.",
+        "tr": "Zayıf asit ile kuvvetli bazdan oluşan tuz baziktir (örn. CH3COONa); sulu çözeltisinin pH'ı 7'den büyüktür.",
         "en": "A salt consisting of a weak acid and a strong base is basic (e.g. CH3COONa); The pH of its aqueous solution is greater than 7.",
         "de": "Ein Salz, das aus einer schwachen Säure und einer starken Base besteht, ist basisch (z. B. CH3COONa); Der pH-Wert seiner wässrigen Lösung liegt über 7.",
         "fr": "Un sel constitué d'un acide faible et d'une base forte est basique (par exemple CH3COONa) ; Le pH de sa solution aqueuse est supérieur à 7.",
@@ -369,7 +369,7 @@ export const unit09: ChemistryUnitSeedData = {
         "ru": "Соли представляют собой кристаллические вещества с ионной структурой. Они не проводят ток в твердой форме, но проводят в жидкости и растворе.",
         "ar": "الأملاح هي مواد صلبة بلورية ذات بنية أيونية. وهي لا توصل في الحالة الصلبة، ولكنها توصل في السائل والمحلول.",
         "zh": "盐是具有离子结构的结晶固体。它们不以固体形式导电，但以液体和溶液形式导电。",
-        "ku": "Xwê madeyên krîstalî yên bi avahiyeke îyonî ne. Ew ne di forma hişk de, lê di şikil û çareseriyê de digerin."
+        "ku": "Xwê madeyên krîstalî yên bi avahiyeke îyonî ne. Ew di halê hişk de elektrîkê naguhêzin, lê di halê şile û di çareseriyê de diguhêzin."
       },
       "trap": {
         "tr": "Tuzlar kovalent moleküllerden oluşur.",
@@ -387,17 +387,17 @@ export const unit09: ChemistryUnitSeedData = {
       "fact": {
         "tr": "Yemek sodası NaHCO3 (sodyum bikarbonat), çamaşır sodası Na2CO3 (sodyum karbonat) dır.",
         "en": "Baking soda is NaHCO3 (sodium bicarbonate), washing soda is Na2CO3 (sodium carbonate).",
-        "de": "Backpulver ist NaHCO3 (Natriumbikarbonat), Waschsoda ist Na2CO3 (Natriumkarbonat).",
-        "fr": "Le bicarbonate de soude est du NaHCO3 (bicarbonate de sodium), la lessive de soude est du Na2CO3 (carbonate de sodium).",
+        "de": "Natron (Backsoda) ist NaHCO3 (Natriumhydrogencarbonat), Waschsoda ist Na2CO3 (Natriumcarbonat).",
+        "fr": "Le bicarbonate de soude est du NaHCO3 (hydrogénocarbonate de sodium), les cristaux de soude sont du Na2CO3 (carbonate de sodium).",
         "ru": "Пищевая сода — это NaHCO3 (бикарбонат натрия), стиральная сода — Na2CO3 (карбонат натрия).",
         "ar": "صودا الخبز هي NaHCO3 (بيكربونات الصوديوم)، وصودا الغسيل هي Na2CO3 (كربونات الصوديوم).",
         "zh": "小苏打是NaHCO3（碳酸氢钠），洗苏打是Na2CO3（碳酸钠）。",
-        "ku": "Soda şuştinê NaHCO3 (bikarbonat sodyûm), soda şuştinê Na2CO3 (karbonat sodyûm) e."
+        "ku": "Soda xwarinê NaHCO3 (bîkarbonata sodyûmê), soda şuştinê Na2CO3 (karbonata sodyûmê) e."
       },
       "trap": {
         "tr": "Yemek sodası NaOH bileşiğidir.",
         "en": "Baking soda is a NaOH compound.",
-        "de": "Backpulver ist eine NaOH-Verbindung.",
+        "de": "Natron (Backsoda) ist eine NaOH-Verbindung.",
         "fr": "Le bicarbonate de soude est un composé NaOH.",
         "ru": "Пищевая сода представляет собой соединение NaOH.",
         "ar": "صودا الخبز عبارة عن مركب NaOH.",
@@ -417,7 +417,7 @@ export const unit09: ChemistryUnitSeedData = {
         "ru": "Активный металл",
         "ar": "المعدن النشط",
         "zh": "活性金属",
-        "ku": "Active Metal"
+        "ku": "Metala çalak"
       },
       "conceptB": {
         "tr": "Yarı Soy Metal",
@@ -427,7 +427,7 @@ export const unit09: ChemistryUnitSeedData = {
         "ru": "Полублагородный металл",
         "ar": "شبه المعدن النبيل",
         "zh": "半贵金属",
-        "ku": "Semi Noble Metal"
+        "ku": "Metala nîv-esîl"
       },
       "distinction": {
         "tr": "Aktif metal asitle H2 gazı verir; yarı soy metal (Cu, Ag, Hg) oksijensiz asitle tepkime vermez, oksijenli asitle NO/NO2/SO2 verir.",
@@ -450,7 +450,7 @@ export const unit09: ChemistryUnitSeedData = {
         "ru": "Амфотер Металл",
         "ar": "امفوتر معدن",
         "zh": "两性金属",
-        "ku": "Amphoter Metal"
+        "ku": "Metala amfoter"
       },
       "conceptB": {
         "tr": "Normal Metal",
@@ -460,13 +460,13 @@ export const unit09: ChemistryUnitSeedData = {
         "ru": "Обычный металл",
         "ar": "معدن عادي",
         "zh": "普通金属",
-        "ku": "Regular Metal"
+        "ku": "Metala normal"
       },
       "distinction": {
         "tr": "Amfoter metaller (Zn, Al vb.) hem kuvvetli asitle hem kuvvetli bazla H2 gazı verir.",
         "en": "Amphoteric metals (Zn, Al, etc.) give off H2 gas with both strong acids and strong bases.",
         "de": "Amphotere Metalle (Zn, Al usw.) geben sowohl mit starken Säuren als auch mit starken Basen H2-Gas ab.",
-        "fr": "Les métaux amphotères (Zn, Al, etc.) dégagent du gaz H2 contenant à la fois des acides forts et des bases fortes.",
+        "fr": "Les métaux amphotères (Zn, Al, etc.) dégagent du gaz H2 aussi bien avec les acides forts qu'avec les bases fortes.",
         "ru": "Амфотерные металлы (Zn, Al и др.) выделяют газ H2 как с сильными кислотами, так и с сильными основаниями.",
         "ar": "تطلق المعادن المذبذبة (Zn، Al، إلخ) غاز H2 مع كل من الأحماض القوية والقواعد القوية.",
         "zh": "两性金属（锌、铝等）与强酸和强碱均放出氢气。",
@@ -513,19 +513,19 @@ export const unit09: ChemistryUnitSeedData = {
         "en": "Acidic Salt",
         "de": "Saures Salz",
         "fr": "Sel acide",
-        "ru": "Кислотная соль",
+        "ru": "Соль с кислой средой раствора",
         "ar": "ملح حمضي",
-        "zh": "酸性盐",
+        "zh": "水溶液呈酸性的盐",
         "ku": "Xwêya Asîdî"
       },
       "conceptB": {
         "tr": "Bazik Tuz",
         "en": "Basic Salt",
         "de": "Basisches Salz",
-        "fr": "Sel de base",
-        "ru": "Основная соль",
-        "ar": "الملح الأساسي",
-        "zh": "碱式盐",
+        "fr": "Sel basique",
+        "ru": "Соль со щелочной средой раствора",
+        "ar": "ملح قاعدي",
+        "zh": "水溶液呈碱性的盐",
         "ku": "Xwêya bingehîn"
       },
       "distinction": {
@@ -545,11 +545,11 @@ export const unit09: ChemistryUnitSeedData = {
         "tr": "Turnusol İndikatörü",
         "en": "Litmus Indicator",
         "de": "Lackmus-Indikator",
-        "fr": "Indicateur décisif",
+        "fr": "Indicateur tournesol",
         "ru": "Лакмусовый индикатор",
         "ar": "مؤشر عباد الشمس",
         "zh": "石蕊指示剂",
-        "ku": "Ltmus Indicator"
+        "ku": "Nîşandera lîtmûsê"
       },
       "conceptB": {
         "tr": "Fenolftalein İndikatörü",
@@ -559,7 +559,7 @@ export const unit09: ChemistryUnitSeedData = {
         "ru": "Индикатор фенолфталеина",
         "ar": "مؤشر الفينول فثالين",
         "zh": "酚酞指示剂",
-        "ku": "Nîşana Phenolphthalein"
+        "ku": "Nîşandera fenolftaleînê"
       },
       "distinction": {
         "tr": "Turnusol asitte kırmızı bazda mavidir; fenolftalein asitte renksiz bazda pembedir.",
@@ -608,67 +608,67 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-c07",
       "conceptA": {
-        "tr": "Aktif Metal",
-        "en": "Active Metal",
-        "de": "Aktives Metall",
-        "fr": "Métal actif",
-        "ru": "Активный металл",
-        "ar": "المعدن النشط",
-        "zh": "活性金属",
-        "ku": "Active Metal"
+        "tr": "Kuvvetli Baz",
+        "en": "Strong Base",
+        "de": "Starke Base",
+        "fr": "Base forte",
+        "ru": "Сильное основание",
+        "ar": "قاعدة قوية",
+        "zh": "强碱",
+        "ku": "Baza xurt"
       },
       "conceptB": {
-        "tr": "Yarı Soy Metal",
-        "en": "Semi Noble Metal",
-        "de": "Halbedles Metall",
-        "fr": "Métal semi-noble",
-        "ru": "Полублагородный металл",
-        "ar": "شبه المعدن النبيل",
-        "zh": "半贵金属",
-        "ku": "Semi Noble Metal"
+        "tr": "Zayıf Baz",
+        "en": "Weak Base",
+        "de": "Schwache Base",
+        "fr": "Base faible",
+        "ru": "Слабое основание",
+        "ar": "قاعدة ضعيفة",
+        "zh": "弱碱",
+        "ku": "Baza qels"
       },
       "distinction": {
-        "tr": "Aktif metal asitle H2 gazı verir; yarı soy metal (Cu, Ag, Hg) oksijensiz asitle tepkime vermez, oksijenli asitle NO/NO2/SO2 verir.",
-        "en": "The active metal gives H2 gas with acid; Semi-noble metal (Cu, Ag, Hg) does not react with oxygen-free acid, but gives NO/NO2/SO2 with oxygenated acid.",
-        "de": "Das aktive Metall gibt mit Säure H2-Gas ab; Halbedelmetalle (Cu, Ag, Hg) reagieren nicht mit sauerstofffreier Säure, sondern ergeben mit sauerstoffhaltiger Säure NO/NO2/SO2.",
-        "fr": "Le métal actif donne du gaz H2 avec l'acide ; Le métal semi-noble (Cu, Ag, Hg) ne réagit pas avec l'acide sans oxygène, mais donne du NO/NO2/SO2 avec l'acide oxygéné.",
-        "ru": "Активный металл дает с кислотой газ H2; Полублагородные металлы (Cu, Ag, Hg) не реагируют с бескислородной кислотой, но дают NO/NO2/SO2 с кислородсодержащей кислотой.",
-        "ar": "يعطي المعدن النشط غاز H2 مع الحمض؛ لا يتفاعل المعدن شبه النبيل (Cu، Ag، Hg) مع الحمض الخالي من الأكسجين، ولكنه يعطي NO/NO2/SO2 مع الحمض المؤكسج.",
-        "zh": "活性金属与酸作用放出H2气体；半贵金属（Cu、Ag、Hg）不与无氧酸反应，但与含氧酸反应生成NO/NO2/SO2。",
-        "ku": "Metala çalak gaza H2 bi asîdê dide; Metala nîv-esîl (Cu, Ag, Hg) bi asîda bêoksîjen re reaksiyonê nake, lê bi asîda oksîjenkirî re NO/NO2/SO2 dide."
+        "tr": "Kuvvetli bazlar suda tamamen iyonlaşır (NaOH, KOH); zayıf bazlar suda kısmen iyonlaşarak denge kurar (NH3).",
+        "en": "Strong bases ionize completely in water (NaOH, KOH); weak bases ionize only partially in water and establish equilibrium (NH3).",
+        "de": "Starke Basen ionisieren in Wasser vollständig (NaOH, KOH); schwache Basen ionisieren nur teilweise und stellen ein Gleichgewicht ein (NH3).",
+        "fr": "Les bases fortes s'ionisent complètement dans l'eau (NaOH, KOH) ; les bases faibles s'ionisent partiellement et établissent un équilibre (NH3).",
+        "ru": "Сильные основания полностью ионизируются в воде (NaOH, KOH); слабые основания ионизируются частично и устанавливают равновесие (NH3).",
+        "ar": "تتأين القواعد القوية كليًا في الماء (NaOH، KOH)؛ أما القواعد الضعيفة فتتأين جزئيًا وتصل إلى حالة اتزان (NH3).",
+        "zh": "强碱在水中完全电离（NaOH、KOH）；弱碱在水中部分电离并建立平衡（NH3）。",
+        "ku": "Bazên xurt di avê de bi tevahî îyonîze dibin (NaOH, KOH); bazên qels tenê qismî îyonîze dibin û hevsengiyê ava dikin (NH3)."
       }
     },
     {
       "id": "u09-c08",
       "conceptA": {
-        "tr": "Aktif Metal",
-        "en": "Active Metal",
-        "de": "Aktives Metall",
-        "fr": "Métal actif",
-        "ru": "Активный металл",
-        "ar": "المعدن النشط",
-        "zh": "活性金属",
-        "ku": "Active Metal"
+        "tr": "Oksijenli Asit",
+        "en": "Oxyacid",
+        "de": "Sauerstoffhaltige Säure",
+        "fr": "Oxacide",
+        "ru": "Кислородсодержащая кислота",
+        "ar": "حمض أكسجيني",
+        "zh": "含氧酸",
+        "ku": "Asîda bi oksîjen"
       },
       "conceptB": {
-        "tr": "Yarı Soy Metal",
-        "en": "Semi Noble Metal",
-        "de": "Halbedles Metall",
-        "fr": "Métal semi-noble",
-        "ru": "Полублагородный металл",
-        "ar": "شبه المعدن النبيل",
-        "zh": "半贵金属",
-        "ku": "Semi Noble Metal"
+        "tr": "Oksijensiz Asit",
+        "en": "Oxygen-free Acid",
+        "de": "Sauerstofffreie Säure",
+        "fr": "Acide sans oxygène",
+        "ru": "Бескислородная кислота",
+        "ar": "حمض غير أكسجيني",
+        "zh": "无氧酸",
+        "ku": "Asîda bê oksîjen"
       },
       "distinction": {
-        "tr": "Aktif metal asitle H2 gazı verir; yarı soy metal (Cu, Ag, Hg) oksijensiz asitle tepkime vermez, oksijenli asitle NO/NO2/SO2 verir.",
-        "en": "The active metal gives H2 gas with acid; Semi-noble metal (Cu, Ag, Hg) does not react with oxygen-free acid, but gives NO/NO2/SO2 with oxygenated acid.",
-        "de": "Das aktive Metall gibt mit Säure H2-Gas ab; Halbedelmetalle (Cu, Ag, Hg) reagieren nicht mit sauerstofffreier Säure, sondern ergeben mit sauerstoffhaltiger Säure NO/NO2/SO2.",
-        "fr": "Le métal actif donne du gaz H2 avec l'acide ; Le métal semi-noble (Cu, Ag, Hg) ne réagit pas avec l'acide sans oxygène, mais donne du NO/NO2/SO2 avec l'acide oxygéné.",
-        "ru": "Активный металл дает с кислотой газ H2; Полублагородные металлы (Cu, Ag, Hg) не реагируют с бескислородной кислотой, но дают NO/NO2/SO2 с кислородсодержащей кислотой.",
-        "ar": "يعطي المعدن النشط غاز H2 مع الحمض؛ لا يتفاعل المعدن شبه النبيل (Cu، Ag، Hg) مع الحمض الخالي من الأكسجين، ولكنه يعطي NO/NO2/SO2 مع الحمض المؤكسج.",
-        "zh": "活性金属与酸作用放出H2气体；半贵金属（Cu、Ag、Hg）不与无氧酸反应，但与含氧酸反应生成NO/NO2/SO2。",
-        "ku": "Metala çalak gaza H2 bi asîdê dide; Metala nîv-esîl (Cu, Ag, Hg) bi asîda bêoksîjen re reaksiyonê nake, lê bi asîda oksîjenkirî re NO/NO2/SO2 dide."
+        "tr": "Oksijenli asitler (HNO3, H2SO4) yapısında oksijen bulundurur; derişik HNO3 ve sıcak derişik H2SO4 yarı soy metalleri de çözer. Oksijensiz asitler (HCl, HBr) oksijen içermez ve yarı soy metallerle tepkime vermez.",
+        "en": "Oxyacids (HNO3, H2SO4) contain oxygen; concentrated HNO3 and hot concentrated H2SO4 also dissolve semi-noble metals. Oxygen-free acids (HCl, HBr) contain no oxygen and do not react with semi-noble metals.",
+        "de": "Sauerstoffhaltige Säuren (HNO3, H2SO4) enthalten Sauerstoff; konzentrierte HNO3 und heiße konzentrierte H2SO4 lösen auch Halbedelmetalle. Sauerstofffreie Säuren (HCl, HBr) enthalten keinen Sauerstoff und reagieren nicht mit Halbedelmetallen.",
+        "fr": "Les oxacides (HNO3, H2SO4) contiennent de l'oxygène ; HNO3 concentré et H2SO4 concentré chaud dissolvent aussi les métaux semi-nobles. Les acides sans oxygène (HCl, HBr) ne contiennent pas d'oxygène et ne réagissent pas avec les métaux semi-nobles.",
+        "ru": "Кислородсодержащие кислоты (HNO3, H2SO4) содержат кислород; концентрированная HNO3 и горячая концентрированная H2SO4 растворяют и полублагородные металлы. Бескислородные кислоты (HCl, HBr) не содержат кислорода и не реагируют с полублагородными металлами.",
+        "ar": "تحتوي الأحماض الأكسجينية (HNO3، H2SO4) على الأكسجين، ويذيب HNO3 المركز وH2SO4 المركز الساخن المعادن شبه النبيلة أيضًا. أما الأحماض غير الأكسجينية (HCl، HBr) فلا تحتوي على الأكسجين ولا تتفاعل مع المعادن شبه النبيلة.",
+        "zh": "含氧酸（HNO3、H2SO4）含有氧元素，浓HNO3和热浓H2SO4还能溶解半贵金属；无氧酸（HCl、HBr）不含氧，不与半贵金属反应。",
+        "ku": "Asîdên bi oksîjen (HNO3, H2SO4) oksîjenê dihewînin; HNO3-a konsantre û H2SO4-a konsantre ya germ metalên nîv-esîl jî dihelînin. Asîdên bê oksîjen (HCl, HBr) oksîjenê nahewînin û bi metalên nîv-esîl re reaksiyonê nakin."
       }
     }
   ],
@@ -742,44 +742,44 @@ export const unit09: ChemistryUnitSeedData = {
       },
       "steps": [
         {
-          "tr": "Erlenmayere asit ve indikatör konur",
-          "en": "Acid and indicator are placed in the Erlenenmayere.",
-          "de": "Säure und Indikator werden in die Erlenenmayere gegeben.",
-          "fr": "L'acide et l'indicateur sont placés dans l'Erlenenmayere.",
-          "ru": "Кислоту и индикатор помещают в Эрлененмайер.",
-          "ar": "يتم وضع الحمض والمؤشر في Erlenenmayere.",
-          "zh": "酸和指示剂被放置在 Erlenenmayere 中。",
-          "ku": "Acid û nîşana di Erlenenmayere de têne danîn."
+          "tr": "Erlenmayere belirli hacimde asit çözeltisi konur",
+          "en": "A known volume of acid solution is placed in the Erlenmeyer flask",
+          "de": "Ein bekanntes Volumen Säurelösung wird in den Erlenmeyerkolben gegeben",
+          "fr": "Un volume connu de solution acide est placé dans l'erlenmeyer",
+          "ru": "В колбу Эрленмейера помещают известный объём раствора кислоты",
+          "ar": "يوضع حجم معلوم من محلول الحمض في دورق إرلنماير",
+          "zh": "将已知体积的酸溶液放入锥形瓶中",
+          "ku": "Qebareyeke diyar a çareseriya asîdê dikeve şûşeya Erlenmeyer"
         },
         {
-          "tr": "Bürete standart baz çözeltisi doldurulur",
-          "en": "Standard base solution is filled into the burette.",
-          "de": "In die Bürette wird Standard-Basislösung eingefüllt.",
-          "fr": "La solution de base étalon est versée dans la burette.",
-          "ru": "В бюретку заливается стандартный базовый раствор.",
-          "ar": "يتم ملء المحلول الأساسي القياسي في السحاحة.",
-          "zh": "将标准碱溶液装入滴定管中。",
-          "ku": "Çareseriya bingehîn a standard di buretê de tê dagirtin."
+          "tr": "Erlenmayerdeki asidin üzerine birkaç damla indikatör eklenir",
+          "en": "A few drops of indicator are added to the acid in the flask",
+          "de": "Zur Säure im Kolben werden einige Tropfen Indikator gegeben",
+          "fr": "Quelques gouttes d'indicateur sont ajoutées à l'acide dans l'erlenmeyer",
+          "ru": "К кислоте в колбе добавляют несколько капель индикатора",
+          "ar": "تضاف بضع قطرات من الكاشف إلى الحمض في الدورق",
+          "zh": "向锥形瓶中的酸加入几滴指示剂",
+          "ku": "Çend dilopên nîşanderê li ser asîda di şûşeyê de tê zêdekirin"
         },
         {
-          "tr": "Büret musluğu açılarak damla damla eklenir",
-          "en": "Open the burette valve and add drop by drop.",
-          "de": "Öffnen Sie das Bürettenventil und geben Sie tropfenweise hinzu.",
-          "fr": "Ouvrir la valve de la burette et ajouter goutte à goutte.",
-          "ru": "Откройте кран бюретки и добавляйте по каплям.",
-          "ar": "افتح صمام السحاحة وأضف قطرة قطرة.",
-          "zh": "打开滴定管阀门并逐滴添加。",
-          "ku": "Valveya buretê vekin û dilop bi dilop zêde bikin."
+          "tr": "Büretteki standart baz çözeltisi damla damla eklenir",
+          "en": "Standard base solution from the burette is added drop by drop",
+          "de": "Standard-Basenlösung aus der Bürette wird tropfenweise zugegeben",
+          "fr": "La solution basique étalon de la burette est ajoutée goutte à goutte",
+          "ru": "Стандартный раствор основания из бюретки добавляют по каплям",
+          "ar": "يضاف محلول القاعدة القياسي من السحاحة قطرةً قطرة",
+          "zh": "从滴定管中逐滴加入标准碱溶液",
+          "ku": "Çareseriya baza standard ji buretê dilop bi dilop tê zêdekirin"
         },
         {
-          "tr": "İndikatör renk değiştirdiği anda eşdeğerlik noktası kaydedilir",
-          "en": "The equivalence point is recorded as soon as the indicator changes color",
-          "de": "Der Äquivalenzpunkt wird erfasst, sobald der Indikator seine Farbe ändert",
-          "fr": "Le point d'équivalence est enregistré dès que l'indicateur change de couleur",
-          "ru": "Точка эквивалентности фиксируется, как только индикатор меняет цвет.",
-          "ar": "يتم تسجيل نقطة التكافؤ بمجرد تغير لون المؤشر",
-          "zh": "指示剂变色后立即记录当量点",
-          "ku": "Dema ku nîşander reng diguhere, xala hevsengiyê tê tomar kirin"
+          "tr": "İndikatörün rengi kalıcı olarak değiştiğinde (dönüm noktası) harcanan baz hacmi okunur",
+          "en": "When the indicator colour changes permanently (end point), the volume of base used is read",
+          "de": "Wenn der Indikator dauerhaft umschlägt (Endpunkt), wird das verbrauchte Basenvolumen abgelesen",
+          "fr": "Lorsque l'indicateur change durablement de couleur (point de virage), on lit le volume de base versé",
+          "ru": "Когда окраска индикатора устойчиво меняется (конечная точка), считывают объём израсходованного основания",
+          "ar": "عندما يتغير لون الكاشف بشكل دائم (نقطة النهاية) يُقرأ حجم القاعدة المستهلك",
+          "zh": "当指示剂颜色发生持久变化（滴定终点）时，读取消耗的碱溶液体积",
+          "ku": "Dema rengê nîşanderê bi awayekî domdar diguhere (xala dawî), qebareya baza xerckirî tê xwendin"
         }
       ]
     },
@@ -810,21 +810,21 @@ export const unit09: ChemistryUnitSeedData = {
           "tr": "Amfoter metal hem asit hem kuvvetli bazla H2 gazı çıkarır",
           "en": "Amphoteric metal releases H2 gas with both acid and strong base.",
           "de": "Amphoteres Metall setzt H2-Gas sowohl mit Säure als auch mit starker Base frei.",
-          "fr": "Le métal amphotère libère du gaz H2 contenant à la fois un acide et une base forte.",
-          "ru": "Амфотерный металл выделяет газ H2, содержащий как кислоту, так и сильное основание.",
-          "ar": "يطلق المعدن المذبذب غاز H2 مع كل من القاعدة الحمضية والقوية.",
+          "fr": "Le métal amphotère libère du gaz H2 aussi bien avec un acide qu'avec une base forte.",
+          "ru": "Амфотерный металл выделяет газ H2 как с кислотой, так и с сильным основанием.",
+          "ar": "يطلق المعدن المذبذب غاز H2 مع الحمض ومع القاعدة القوية.",
           "zh": "两性金属与酸和强碱均放出H2气体。",
           "ku": "Metala amfoterîk gaza H2 hem bi asîd û hem jî bi bazeke xurt derdixe."
         },
         {
-          "tr": "Yarı soy metaller sadece HNO3 ve H2SO4 ile gaz çıkarır",
-          "en": "Semi-noble metals release gas only with HNO3 and H2SO4",
-          "de": "Halbedelmetalle setzen Gas nur mit HNO3 und H2SO4 frei",
-          "fr": "Les métaux semi-nobles libèrent des gaz uniquement avec HNO3 et H2SO4",
-          "ru": "Полублагородные металлы выделяют газ только с HNO3 и H2SO4.",
-          "ar": "تطلق المعادن شبه النبيلة الغاز فقط مع HNO3 وH2SO4",
-          "zh": "半贵金属仅与 HNO3 和 H2SO4 一起释放气体",
-          "ku": "Metalên nîv-esilzade tenê bi HNO3 û H2SO4 gazê derdixin"
+          "tr": "Yarı soy metaller yalnızca HNO3 ve sıcak derişik H2SO4 ile gaz çıkarır",
+          "en": "Semi-noble metals release gas only with HNO3 and hot concentrated H2SO4",
+          "de": "Halbedelmetalle setzen nur mit HNO3 und heißer konzentrierter H2SO4 Gas frei",
+          "fr": "Les métaux semi-nobles ne libèrent de gaz qu'avec HNO3 et H2SO4 concentré chaud",
+          "ru": "Полублагородные металлы выделяют газ только с HNO3 и горячей концентрированной H2SO4",
+          "ar": "تطلق المعادن شبه النبيلة الغاز فقط مع HNO3 وH2SO4 المركز الساخن",
+          "zh": "半贵金属只与HNO3和热浓H2SO4反应放出气体",
+          "ku": "Metalên nîv-esîl tenê bi HNO3 û H2SO4-a konsantre ya germ gazê derdixin"
         },
         {
           "tr": "Soy metaller (Pt, Au) kral suyu hariç hiçbir asitle tepkime vermez",
@@ -841,55 +841,55 @@ export const unit09: ChemistryUnitSeedData = {
     {
       "id": "u09-s04",
       "title": {
-        "tr": "pH Değerinin Değişimi",
-        "en": "Change of pH Value",
-        "de": "Änderung des pH-Wertes",
-        "fr": "Modification de la valeur du pH",
-        "ru": "Изменение значения pH",
-        "ar": "تغيير قيمة الرقم الهيدروجيني",
-        "zh": "pH值变化",
-        "ku": "Guhertina nirxa pH"
+        "tr": "Kuvvetli Asit Çözeltisine Kuvvetli Baz Eklenirken pH Değişimi (25 °C)",
+        "en": "pH Change When a Strong Base Is Added to a Strong Acid (25 °C)",
+        "de": "pH-Änderung bei Zugabe einer starken Base zu einer starken Säure (25 °C)",
+        "fr": "Variation du pH lors de l'ajout d'une base forte à un acide fort (25 °C)",
+        "ru": "Изменение pH при добавлении сильного основания к сильной кислоте (25 °C)",
+        "ar": "تغيّر الرقم الهيدروجيني عند إضافة قاعدة قوية إلى حمض قوي (25 °C)",
+        "zh": "向强酸溶液中加入强碱时pH的变化（25 °C）",
+        "ku": "Guhertina pH dema ku baza xurt li asîda xurt tê zêdekirin (25 °C)"
       },
       "steps": [
         {
-          "tr": "Saf suyun pH değeri 7'dir",
-          "en": "The pH value of pure water is 7",
-          "de": "Der pH-Wert von reinem Wasser beträgt 7",
-          "fr": "La valeur du pH de l'eau pure est de 7",
-          "ru": "Значение pH чистой воды составляет 7.",
-          "ar": "قيمة الرقم الهيدروجيني للمياه النقية هي 7",
-          "zh": "纯净水的pH值为7",
-          "ku": "Nirxa pH ya ava paqij 7 e"
+          "tr": "Başlangıçta çözelti asidiktir (pH < 7)",
+          "en": "Initially the solution is acidic (pH < 7)",
+          "de": "Anfangs ist die Lösung sauer (pH < 7)",
+          "fr": "Au départ, la solution est acide (pH < 7)",
+          "ru": "Вначале раствор кислый (pH < 7)",
+          "ar": "في البداية يكون المحلول حمضيًا (pH < 7)",
+          "zh": "开始时溶液呈酸性（pH < 7）",
+          "ku": "Di destpêkê de çareserî asîdî ye (pH < 7)"
         },
         {
-          "tr": "Asit eklendikçe H+ derişimi artar ve pH düşer",
-          "en": "As acid is added, H+ concentration increases and pH decreases.",
-          "de": "Wenn Säure hinzugefügt wird, steigt die H+-Konzentration und der pH-Wert sinkt.",
-          "fr": "À mesure que l’acide est ajouté, la concentration de H+ augmente et le pH diminue.",
-          "ru": "При добавлении кислоты концентрация H+ увеличивается, а pH снижается.",
-          "ar": "ومع إضافة الحمض، يزداد تركيز H+ ويقل الرقم الهيدروجيني.",
-          "zh": "随着酸的添加，H+ 浓度增加，pH 值降低。",
-          "ku": "Her ku asîd tê zêdekirin, konseya H+ zêde dibe û pH kêm dibe."
+          "tr": "Baz eklendikçe H+ derişimi azalır ve pH yükselir",
+          "en": "As base is added, the H+ concentration decreases and the pH rises",
+          "de": "Bei Basenzugabe sinkt die H+-Konzentration und der pH-Wert steigt",
+          "fr": "À mesure que la base est ajoutée, la concentration en H+ diminue et le pH augmente",
+          "ru": "По мере добавления основания концентрация H+ уменьшается, а pH растёт",
+          "ar": "مع إضافة القاعدة يقل تركيز H+ ويرتفع الرقم الهيدروجيني",
+          "zh": "随着碱的加入，H+浓度降低，pH升高",
+          "ku": "Her ku baz tê zêdekirin, giraniya H+ kêm dibe û pH bilind dibe"
         },
         {
-          "tr": "Baz eklendikçe OH- derişimi artar ve pH yükselir",
-          "en": "As base is added, the OH- concentration increases and the pH rises.",
-          "de": "Mit der Zugabe von Base erhöht sich die OH-Konzentration und der pH-Wert steigt.",
-          "fr": "À mesure que la base est ajoutée, la concentration en OH- augmente et le pH augmente.",
-          "ru": "По мере добавления основания концентрация OH- увеличивается и pH повышается.",
-          "ar": "ومع إضافة القاعدة، يزداد تركيز OH ويرتفع الرقم الهيدروجيني.",
-          "zh": "随着碱的添加，OH- 浓度增加，pH 值上升。",
-          "ku": "Her ku baz tê zêdekirin, konsantasyona OH- zêde dibe û pH jî bilind dibe."
+          "tr": "Eşdeğerlik noktasında tüm asit nötrleşir ve pH = 7 olur",
+          "en": "At the equivalence point all the acid is neutralized and pH = 7",
+          "de": "Am Äquivalenzpunkt ist die gesamte Säure neutralisiert, pH = 7",
+          "fr": "Au point d'équivalence, tout l'acide est neutralisé et pH = 7",
+          "ru": "В точке эквивалентности вся кислота нейтрализована, pH = 7",
+          "ar": "عند نقطة التكافؤ تتعادل كل كمية الحمض ويصبح pH = 7",
+          "zh": "在等当点，酸全部被中和，pH = 7",
+          "ku": "Li xala hevwatiyê hemû asîd bêalî dibe û pH = 7 e"
         },
         {
-          "tr": "Derişik asit ile derişik baz nötralleşerek tuz ve su verir",
-          "en": "Concentrated acid and concentrated base neutralize to give salt and water.",
-          "de": "Konzentrierte Säure und konzentrierte Base neutralisieren zu Salz und Wasser.",
-          "fr": "L'acide concentré et la base concentrée se neutralisent pour donner du sel et de l'eau.",
-          "ru": "Концентрированная кислота и концентрированное основание нейтрализуются с образованием соли и воды.",
-          "ar": "يتم تحييد الحمض المركز والقاعدة المركزة لإعطاء الملح والماء.",
-          "zh": "浓酸和浓碱中和，得到盐和水。",
-          "ku": "Asîd û bazê konsantrekirî bêbandor dibin da ku xwê û avê bidin."
+          "tr": "Baz eklenmeye devam edilirse OH- fazlası oluşur ve pH > 7 olur",
+          "en": "If more base is added, excess OH- forms and pH > 7",
+          "de": "Bei weiterer Basenzugabe entsteht ein OH--Überschuss, pH > 7",
+          "fr": "Si l'on continue d'ajouter de la base, un excès d'OH- se forme et pH > 7",
+          "ru": "При дальнейшем добавлении основания образуется избыток OH-, pH > 7",
+          "ar": "إذا استمرت إضافة القاعدة يتكوّن فائض من OH- ويصبح pH > 7",
+          "zh": "继续加碱则OH-过量，pH > 7",
+          "ku": "Ger zêdekirina bazê berdewam bike, OH- zêde dibe û pH > 7 e"
         }
       ]
     }
@@ -1167,19 +1167,19 @@ export const unit09: ChemistryUnitSeedData = {
           "ku": "Xwêya CH3COONa asîdî ye."
         },
         {
-          "tr": "Aktif metaller (Na, K, Mg, Fe vb.) asitlerle tepkimeye girdiğinde H2 gazı açığa çıkarır.",
-          "en": "When active metals (Na, K, Mg, Fe, etc.) react with acids, they release H2 gas.",
-          "de": "Wenn aktive Metalle (Na, K, Mg, Fe usw.) mit Säuren reagieren, setzen sie H2-Gas frei.",
-          "fr": "Lorsque les métaux actifs (Na, K, Mg, Fe, etc.) réagissent avec les acides, ils libèrent du gaz H2.",
-          "ru": "При взаимодействии активных металлов (Na, K, Mg, Fe и др.) с кислотами выделяется газ H2.",
-          "ar": "عندما تتفاعل المعادن النشطة (Na، K، Mg، Fe، إلخ) مع الأحماض، فإنها تطلق غاز H2.",
-          "zh": "当活性金属（Na、K、Mg、Fe等）与酸反应时，会释放出H2气体。",
-          "ku": "Dema ku metalên çalak (Na, K, Mg, Fe, hwd.) bi asîdan re bertek nîşan didin, gaza H2 derdixin."
+          "tr": "Aktif metaller (Na, K, Mg, Fe vb.) HCl ve seyreltik H2SO4 gibi asitlerle tepkimeye girdiğinde H2 gazı açığa çıkarır.",
+          "en": "When active metals (Na, K, Mg, Fe, etc.) react with acids such as HCl and dilute H2SO4, they release H2 gas.",
+          "de": "Wenn aktive Metalle (Na, K, Mg, Fe usw.) mit Säuren wie HCl und verdünnter H2SO4 reagieren, setzen sie H2-Gas frei.",
+          "fr": "Lorsque les métaux actifs (Na, K, Mg, Fe, etc.) réagissent avec des acides comme HCl et H2SO4 dilué, ils libèrent du gaz H2.",
+          "ru": "При взаимодействии активных металлов (Na, K, Mg, Fe и др.) с такими кислотами, как HCl и разбавленная H2SO4, выделяется газ H2.",
+          "ar": "عندما تتفاعل المعادن النشطة (Na، K، Mg، Fe، إلخ) مع أحماض مثل HCl وH2SO4 المخفف، فإنها تطلق غاز H2.",
+          "zh": "当活性金属（Na、K、Mg、Fe等）与HCl、稀H2SO4等酸反应时，会释放出H2气体。",
+          "ku": "Dema ku metalên çalak (Na, K, Mg, Fe, hwd.) bi asîdên wekî HCl û H2SO4-a sivik re bertek nîşan didin, gaza H2 derdixin."
         },
         {
           "tr": "Yemek sodası NaOH bileşiğidir.",
           "en": "Baking soda is a NaOH compound.",
-          "de": "Backpulver ist eine NaOH-Verbindung.",
+          "de": "Natron (Backsoda) ist eine NaOH-Verbindung.",
           "fr": "Le bicarbonate de soude est un composé NaOH.",
           "ru": "Пищевая сода представляет собой соединение NaOH.",
           "ar": "صودا الخبز عبارة عن مركب NaOH.",
@@ -1189,14 +1189,14 @@ export const unit09: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Aktif metaller (Na, K, Mg, Fe vb.) asitlerle tepkimeye girdiğinde H2 gazı açığa çıkarır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"When active metals (Na, K, Mg, Fe, etc.) react with acids, they release H2 gas.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Wenn aktive Metalle (Na, K, Mg, Fe usw.) mit Säuren reagieren, setzen sie H2-Gas frei.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Lorsque les métaux actifs (Na, K, Mg, Fe, etc.) réagissent avec les acides, ils libèrent du gaz H2.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «При взаимодействии активных металлов (Na, K, Mg, Fe и др.) с кислотами выделяется газ H2.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"عندما تتفاعل المعادن النشطة (Na، K، Mg، Fe، إلخ) مع الأحماض، فإنها تطلق غاز H2.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“当活性金属（Na、K、Mg、Fe等）与酸反应时，会释放出H2气体。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Dema ku metalên çalak (Na, K, Mg, Fe, hwd.) bi asîdan re bertek nîşan didin, gaza H2 derdixin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Aktif metaller (Na, K, Mg, Fe vb.) HCl ve seyreltik H2SO4 gibi asitlerle tepkimeye girdiğinde H2 gazı açığa çıkarır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"When active metals (Na, K, Mg, Fe, etc.) react with acids such as HCl and dilute H2SO4, they release H2 gas.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Wenn aktive Metalle (Na, K, Mg, Fe usw.) mit Säuren wie HCl und verdünnter H2SO4 reagieren, setzen sie H2-Gas frei.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Lorsque les métaux actifs (Na, K, Mg, Fe, etc.) réagissent avec des acides comme HCl et H2SO4 dilué, ils libèrent du gaz H2.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «При взаимодействии активных металлов (Na, K, Mg, Fe и др.) с такими кислотами, как HCl и разбавленная H2SO4, выделяется газ H2.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"عندما تتفاعل المعادن النشطة (Na، K، Mg، Fe، إلخ) مع أحماض مثل HCl وH2SO4 المخفف، فإنها تطلق غاز H2.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“当活性金属（Na、K、Mg、Fe等）与HCl、稀H2SO4等酸反应时，会释放出H2气体。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Dema ku metalên çalak (Na, K, Mg, Fe, hwd.) bi asîdên wekî HCl û H2SO4-a sivik re bertek nîşan didin, gaza H2 derdixin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1246,7 +1246,7 @@ export const unit09: ChemistryUnitSeedData = {
           "tr": "Asitler ele kayganlık hissi verir ve turnusolu maviye boyar.",
           "en": "Acids give the hand a slippery feeling and turn litmus blue.",
           "de": "Säuren verleihen der Hand ein rutschiges Gefühl und verfärben Lackmus blau.",
-          "fr": "Les acides donnent à la main une sensation glissante et virent au bleu tournesol.",
+          "fr": "Les acides donnent à la main une sensation glissante et font virer le tournesol au bleu.",
           "ru": "Кислоты придают руке ощущение скользкости и окрашивают лакмус в синий цвет.",
           "ar": "تمنح الأحماض اليد ملمسًا زلقًا وتحوّل لون عباد الشمس إلى اللون الأزرق.",
           "zh": "酸使手有滑溜的感觉并使石蕊变成蓝色。",
@@ -1289,14 +1289,14 @@ export const unit09: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Yarı soy metaller sadece derişik HNO3 (NO2 gazı), seyreltik HNO3 (NO gazı) ve sıcak derişik H2SO4 (SO2 gazı) ile tepkime verir.",
-          "en": "Semi-noble metals react only with concentrated HNO3 (NO2 gas), dilute HNO3 (NO gas) and hot concentrated H2SO4 (SO2 gas).",
-          "de": "Halbedelmetalle reagieren nur mit konzentriertem HNO3 (NO2-Gas), verdünntem HNO3 (NO-Gas) und heißem konzentriertem H2SO4 (SO2-Gas).",
-          "fr": "Les métaux semi-nobles réagissent uniquement avec le HNO3 concentré (gaz NO2), le HNO3 dilué (gaz NO) et le H2SO4 concentré chaud (gaz SO2).",
-          "ru": "Полублагородные металлы реагируют только с концентрированной HNO3 (газ NO2), разбавленной HNO3 (газ NO) и горячей концентрированной H2SO4 (газ SO2).",
-          "ar": "تتفاعل المعادن شبه النبيلة فقط مع HNO3 المركز (غاز NO2)، وHNO3 المخفف (NO غاز) وH2SO4 الساخن المركز (غاز SO2).",
-          "zh": "半贵金属仅与浓HNO3（NO2气体）、稀HNO3（NO气体）和热浓H2SO4（SO2气体）发生反应。",
-          "ku": "Metalên nîv-esilzade tenê bi HNO3 (gaza NO2) konsantrekirî, HNO3 (gaza NO2) rijandin û H2SO4 (gaza SO2) ya germ re reaksiyonê dikin."
+          "tr": "Yarı soy metaller asitlerden yalnızca derişik HNO3 (NO2 gazı), seyreltik HNO3 (NO gazı) ve sıcak derişik H2SO4 (SO2 gazı) ile tepkime verir.",
+          "en": "Among acids, semi-noble metals react only with concentrated HNO3 (NO2 gas), dilute HNO3 (NO gas) and hot concentrated H2SO4 (SO2 gas).",
+          "de": "Von den Säuren reagieren Halbedelmetalle nur mit konzentrierter HNO3 (NO2-Gas), verdünnter HNO3 (NO-Gas) und heißer konzentrierter H2SO4 (SO2-Gas).",
+          "fr": "Parmi les acides, les métaux semi-nobles réagissent uniquement avec HNO3 concentré (gaz NO2), HNO3 dilué (gaz NO) et H2SO4 concentré chaud (gaz SO2).",
+          "ru": "Из кислот полублагородные металлы реагируют только с концентрированной HNO3 (газ NO2), разбавленной HNO3 (газ NO) и горячей концентрированной H2SO4 (газ SO2).",
+          "ar": "من بين الأحماض، لا تتفاعل المعادن شبه النبيلة إلا مع HNO3 المركز (غاز NO2) وHNO3 المخفف (غاز NO) وH2SO4 المركز الساخن (غاز SO2).",
+          "zh": "在酸中，半贵金属只与浓HNO3（生成NO2气体）、稀HNO3（生成NO气体）和热浓H2SO4（生成SO2气体）反应。",
+          "ku": "Ji asîdan, metalên nîv-esîl tenê bi HNO3-a konsantre (gaza NO2), HNO3-a sivik (gaza NO) û H2SO4-a konsantre ya germ (gaza SO2) re reaksiyonê dikin."
         },
         {
           "tr": "Kireç taşı üzerine asit döküldüğünde O2 gazı fışkırır.",
@@ -1341,14 +1341,14 @@ export const unit09: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Yarı soy metaller sadece derişik HNO3 (NO2 gazı), seyreltik HNO3 (NO gazı) ve sıcak derişik H2SO4 (SO2 gazı) ile tepkime verir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Semi-noble metals react only with concentrated HNO3 (NO2 gas), dilute HNO3 (NO gas) and hot concentrated H2SO4 (SO2 gas).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Halbedelmetalle reagieren nur mit konzentriertem HNO3 (NO2-Gas), verdünntem HNO3 (NO-Gas) und heißem konzentriertem H2SO4 (SO2-Gas).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les métaux semi-nobles réagissent uniquement avec le HNO3 concentré (gaz NO2), le HNO3 dilué (gaz NO) et le H2SO4 concentré chaud (gaz SO2).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Полублагородные металлы реагируют только с концентрированной HNO3 (газ NO2), разбавленной HNO3 (газ NO) и горячей концентрированной H2SO4 (газ SO2).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تتفاعل المعادن شبه النبيلة فقط مع HNO3 المركز (غاز NO2)، وHNO3 المخفف (NO غاز) وH2SO4 الساخن المركز (غاز SO2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“半贵金属仅与浓HNO3（NO2气体）、稀HNO3（NO气体）和热浓H2SO4（SO2气体）发生反应。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Metalên nîv-esilzade tenê bi HNO3 (gaza NO2) konsantrekirî, HNO3 (gaza NO2) rijandin û H2SO4 (gaza SO2) ya germ re reaksiyonê dikin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Yarı soy metaller asitlerden yalnızca derişik HNO3 (NO2 gazı), seyreltik HNO3 (NO gazı) ve sıcak derişik H2SO4 (SO2 gazı) ile tepkime verir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Among acids, semi-noble metals react only with concentrated HNO3 (NO2 gas), dilute HNO3 (NO gas) and hot concentrated H2SO4 (SO2 gas).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Von den Säuren reagieren Halbedelmetalle nur mit konzentrierter HNO3 (NO2-Gas), verdünnter HNO3 (NO-Gas) und heißer konzentrierter H2SO4 (SO2-Gas).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Parmi les acides, les métaux semi-nobles réagissent uniquement avec HNO3 concentré (gaz NO2), HNO3 dilué (gaz NO) et H2SO4 concentré chaud (gaz SO2).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Из кислот полублагородные металлы реагируют только с концентрированной HNO3 (газ NO2), разбавленной HNO3 (газ NO) и горячей концентрированной H2SO4 (газ SO2).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"من بين الأحماض، لا تتفاعل المعادن شبه النبيلة إلا مع HNO3 المركز (غاز NO2) وHNO3 المخفف (غاز NO) وH2SO4 المركز الساخن (غاز SO2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“在酸中，半贵金属只与浓HNO3（生成NO2气体）、稀HNO3（生成NO气体）和热浓H2SO4（生成SO2气体）反应。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Ji asîdan, metalên nîv-esîl tenê bi HNO3-a konsantre (gaza NO2), HNO3-a sivik (gaza NO) û H2SO4-a konsantre ya germ (gaza SO2) re reaksiyonê dikin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1397,7 +1397,7 @@ export const unit09: ChemistryUnitSeedData = {
         {
           "tr": "Yemek sodası NaOH bileşiğidir.",
           "en": "Baking soda is a NaOH compound.",
-          "de": "Backpulver ist eine NaOH-Verbindung.",
+          "de": "Natron (Backsoda) ist eine NaOH-Verbindung.",
           "fr": "Le bicarbonate de soude est un composé NaOH.",
           "ru": "Пищевая сода представляет собой соединение NaOH.",
           "ar": "صودا الخبز عبارة عن مركب NaOH.",
@@ -1474,21 +1474,21 @@ export const unit09: ChemistryUnitSeedData = {
           "tr": "Asitler ele kayganlık hissi verir ve turnusolu maviye boyar.",
           "en": "Acids give the hand a slippery feeling and turn litmus blue.",
           "de": "Säuren verleihen der Hand ein rutschiges Gefühl und verfärben Lackmus blau.",
-          "fr": "Les acides donnent à la main une sensation glissante et virent au bleu tournesol.",
+          "fr": "Les acides donnent à la main une sensation glissante et font virer le tournesol au bleu.",
           "ru": "Кислоты придают руке ощущение скользкости и окрашивают лакмус в синий цвет.",
           "ar": "تمنح الأحماض اليد ملمسًا زلقًا وتحوّل لون عباد الشمس إلى اللون الأزرق.",
           "zh": "酸使手有滑溜的感觉并使石蕊变成蓝色。",
           "ku": "Asîd hestek şilbûnê dide dest û lîmûsê şîn dibin."
         },
         {
-          "tr": "Aktif metaller asitlerle SO2 zehirli gazı oluşturur.",
-          "en": "Active metals form toxic gas SO2 with acids.",
-          "de": "Aktive Metalle bilden mit Säuren das giftige Gas SO2.",
-          "fr": "Les métaux actifs forment du gaz toxique SO2 avec les acides.",
-          "ru": "Активные металлы образуют с кислотами токсичный газ SO2.",
-          "ar": "تشكل المعادن النشطة غازًا سامًا SO2 مع الأحماض.",
-          "zh": "活性金属与酸反应生成有毒气体SO2。",
-          "ku": "Metalên çalak bi asîdên gaza jehrî SO2 çêdikin."
+          "tr": "Aktif metaller seyreltik HCl ile tepkimeye girdiğinde SO2 gazı oluşturur.",
+          "en": "When active metals react with dilute HCl, they form SO2 gas.",
+          "de": "Wenn aktive Metalle mit verdünnter HCl reagieren, bilden sie SO2-Gas.",
+          "fr": "Lorsque les métaux actifs réagissent avec HCl dilué, ils forment du gaz SO2.",
+          "ru": "При взаимодействии активных металлов с разбавленной HCl образуется газ SO2.",
+          "ar": "عندما تتفاعل المعادن النشطة مع HCl المخفف، فإنها تكوّن غاز SO2.",
+          "zh": "活性金属与稀HCl反应时生成SO2气体。",
+          "ku": "Dema ku metalên çalak bi HCl-a sivik re bertek nîşan didin, gaza SO2 çêdikin."
         }
       ],
       "correctIndex": 2,
@@ -1548,13 +1548,13 @@ export const unit09: ChemistryUnitSeedData = {
         },
         {
           "tr": "Karbonatlı bileşikler (CaCO3, NaHCO3) asitlerle tepkimeye girdiğinde CO2 gazı açığa çıkarır.",
-          "en": "When carbonated compounds (CaCO3, NaHCO3) react with acids, they release CO2 gas.",
-          "de": "Wenn karbonisierte Verbindungen (CaCO3, NaHCO3) mit Säuren reagieren, setzen sie CO2-Gas frei.",
+          "en": "When carbonate compounds (CaCO3, NaHCO3) react with acids, they release CO2 gas.",
+          "de": "Wenn Carbonatverbindungen (CaCO3, NaHCO3) mit Säuren reagieren, setzen sie CO2-Gas frei.",
           "fr": "Lorsque les composés carbonatés (CaCO3, NaHCO3) réagissent avec des acides, ils libèrent du CO2 gazeux.",
-          "ru": "Когда карбонизированные соединения (CaCO3, NaHCO3) реагируют с кислотами, они выделяют газ CO2.",
-          "ar": "عندما تتفاعل المركبات الغازية (CaCO3، NaHCO3) مع الأحماض، فإنها تطلق غاز ثاني أكسيد الكربون.",
+          "ru": "Когда карбонаты (CaCO3, NaHCO3) реагируют с кислотами, они выделяют газ CO2.",
+          "ar": "عندما تتفاعل مركبات الكربونات (CaCO3، NaHCO3) مع الأحماض، فإنها تطلق غاز CO2.",
           "zh": "当碳酸化合物（CaCO3、NaHCO3）与酸反应时，会释放 CO2 气体。",
-          "ku": "Dema pêkhateyên karbonatkirî (CaCO3, NaHCO3) bi asîdan re bertek nîşan didin, gaza CO2 derdixin."
+          "ku": "Dema pêkhateyên karbonatî (CaCO3, NaHCO3) bi asîdan re bertek nîşan didin, gaza CO2 derdixin."
         },
         {
           "tr": "Bakır metali HCl çözeltisine atıldığında bolca H2 gazı çıkarır.",
@@ -1570,13 +1570,13 @@ export const unit09: ChemistryUnitSeedData = {
       "correctIndex": 3,
       "explanation": {
         "tr": "Doğru cevap \"Karbonatlı bileşikler (CaCO3, NaHCO3) asitlerle tepkimeye girdiğinde CO2 gazı açığa çıkarır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"When carbonated compounds (CaCO3, NaHCO3) react with acids, they release CO2 gas.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Wenn karbonisierte Verbindungen (CaCO3, NaHCO3) mit Säuren reagieren, setzen sie CO2-Gas frei.\". Gesichertes chemisches Grundprinzip.",
+        "en": "The correct statement is: \"When carbonate compounds (CaCO3, NaHCO3) react with acids, they release CO2 gas.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Wenn Carbonatverbindungen (CaCO3, NaHCO3) mit Säuren reagieren, setzen sie CO2-Gas frei.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Lorsque les composés carbonatés (CaCO3, NaHCO3) réagissent avec des acides, ils libèrent du CO2 gazeux.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Когда карбонизированные соединения (CaCO3, NaHCO3) реагируют с кислотами, они выделяют газ CO2.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"عندما تتفاعل المركبات الغازية (CaCO3، NaHCO3) مع الأحماض، فإنها تطلق غاز ثاني أكسيد الكربون.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ru": "Правильное утверждение: «Когда карбонаты (CaCO3, NaHCO3) реагируют с кислотами, они выделяют газ CO2.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"عندما تتفاعل مركبات الكربونات (CaCO3، NaHCO3) مع الأحماض، فإنها تطلق غاز CO2.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“当碳酸化合物（CaCO3、NaHCO3）与酸反应时，会释放 CO2 气体。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Dema pêkhateyên karbonatkirî (CaCO3, NaHCO3) bi asîdan re bertek nîşan didin, gaza CO2 derdixin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Dema pêkhateyên karbonatî (CaCO3, NaHCO3) bi asîdan re bertek nîşan didin, gaza CO2 derdixin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1605,7 +1605,7 @@ export const unit09: ChemistryUnitSeedData = {
         {
           "tr": "Yemek sodası NaOH bileşiğidir.",
           "en": "Baking soda is a NaOH compound.",
-          "de": "Backpulver ist eine NaOH-Verbindung.",
+          "de": "Natron (Backsoda) ist eine NaOH-Verbindung.",
           "fr": "Le bicarbonate de soude est un composé NaOH.",
           "ru": "Пищевая сода представляет собой соединение NaOH.",
           "ar": "صودا الخبز عبارة عن مركب NaOH.",
@@ -1692,21 +1692,21 @@ export const unit09: ChemistryUnitSeedData = {
           "tr": "Asitler ele kayganlık hissi verir ve turnusolu maviye boyar.",
           "en": "Acids give the hand a slippery feeling and turn litmus blue.",
           "de": "Säuren verleihen der Hand ein rutschiges Gefühl und verfärben Lackmus blau.",
-          "fr": "Les acides donnent à la main une sensation glissante et virent au bleu tournesol.",
+          "fr": "Les acides donnent à la main une sensation glissante et font virer le tournesol au bleu.",
           "ru": "Кислоты придают руке ощущение скользкости и окрашивают лакмус в синий цвет.",
           "ar": "تمنح الأحماض اليد ملمسًا زلقًا وتحوّل لون عباد الشمس إلى اللون الأزرق.",
           "zh": "酸使手有滑溜的感觉并使石蕊变成蓝色。",
           "ku": "Asîd hestek şilbûnê dide dest û lîmûsê şîn dibin."
         },
         {
-          "tr": "Aktif metaller asitlerle SO2 zehirli gazı oluşturur.",
-          "en": "Active metals form toxic gas SO2 with acids.",
-          "de": "Aktive Metalle bilden mit Säuren das giftige Gas SO2.",
-          "fr": "Les métaux actifs forment du gaz toxique SO2 avec les acides.",
-          "ru": "Активные металлы образуют с кислотами токсичный газ SO2.",
-          "ar": "تشكل المعادن النشطة غازًا سامًا SO2 مع الأحماض.",
-          "zh": "活性金属与酸反应生成有毒气体SO2。",
-          "ku": "Metalên çalak bi asîdên gaza jehrî SO2 çêdikin."
+          "tr": "Aktif metaller seyreltik HCl ile tepkimeye girdiğinde SO2 gazı oluşturur.",
+          "en": "When active metals react with dilute HCl, they form SO2 gas.",
+          "de": "Wenn aktive Metalle mit verdünnter HCl reagieren, bilden sie SO2-Gas.",
+          "fr": "Lorsque les métaux actifs réagissent avec HCl dilué, ils forment du gaz SO2.",
+          "ru": "При взаимодействии активных металлов с разбавленной HCl образуется газ SO2.",
+          "ar": "عندما تتفاعل المعادن النشطة مع HCl المخفف، فإنها تكوّن غاز SO2.",
+          "zh": "活性金属与稀HCl反应时生成SO2气体。",
+          "ku": "Dema ku metalên çalak bi HCl-a sivik re bertek nîşan didin, gaza SO2 çêdikin."
         },
         {
           "tr": "Altın derişik sülfürik asitte hızla çözünerek H2 gazı çıkarır.",
@@ -1755,7 +1755,7 @@ export const unit09: ChemistryUnitSeedData = {
           "ku": "Xwê ji molekulên kovalent pêk tên."
         },
         {
-          "tr": "Kuvvetli asit ile zayıf bazdan oluşan tuz asidiktir (örn. NH4Cl); sulu çözeltisinin pH ı 7 den küçüktür.",
+          "tr": "Kuvvetli asit ile zayıf bazdan oluşan tuz asidiktir (örn. NH4Cl); sulu çözeltisinin pH'ı 7'den küçüktür.",
           "en": "A salt consisting of a strong acid and a weak base is acidic (e.g. NH4Cl); The pH of its aqueous solution is less than 7.",
           "de": "Ein Salz, das aus einer starken Säure und einer schwachen Base besteht, ist sauer (z. B. NH4Cl); Der pH-Wert seiner wässrigen Lösung liegt unter 7.",
           "fr": "Un sel constitué d'un acide fort et d'une base faible est acide (par exemple NH4Cl) ; Le pH de sa solution aqueuse est inférieur à 7.",
@@ -1797,7 +1797,7 @@ export const unit09: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"Kuvvetli asit ile zayıf bazdan oluşan tuz asidiktir (örn. NH4Cl); sulu çözeltisinin pH ı 7 den küçüktür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Kuvvetli asit ile zayıf bazdan oluşan tuz asidiktir (örn. NH4Cl); sulu çözeltisinin pH'ı 7'den küçüktür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"A salt consisting of a strong acid and a weak base is acidic (e.g. NH4Cl); The pH of its aqueous solution is less than 7.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Ein Salz, das aus einer starken Säure und einer schwachen Base besteht, ist sauer (z. B. NH4Cl); Der pH-Wert seiner wässrigen Lösung liegt unter 7.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Un sel constitué d'un acide fort et d'une base faible est acide (par exemple NH4Cl) ; Le pH de sa solution aqueuse est inférieur à 7.\". Notion fondamentale du programme officiel de chimie.",
@@ -1823,7 +1823,7 @@ export const unit09: ChemistryUnitSeedData = {
         {
           "tr": "Yemek sodası NaOH bileşiğidir.",
           "en": "Baking soda is a NaOH compound.",
-          "de": "Backpulver ist eine NaOH-Verbindung.",
+          "de": "Natron (Backsoda) ist eine NaOH-Verbindung.",
           "fr": "Le bicarbonate de soude est un composé NaOH.",
           "ru": "Пищевая сода представляет собой соединение NaOH.",
           "ar": "صودا الخبز عبارة عن مركب NaOH.",
@@ -1841,7 +1841,7 @@ export const unit09: ChemistryUnitSeedData = {
           "ku": "Çareseriya bi pH 8 di 25 °C de asîdî ye."
         },
         {
-          "tr": "Zayıf asit ile kuvvetli bazdan oluşan tuz baziktir (örn. CH3COONa); sulu çözeltisinin pH ı 7 den büyüktür.",
+          "tr": "Zayıf asit ile kuvvetli bazdan oluşan tuz baziktir (örn. CH3COONa); sulu çözeltisinin pH'ı 7'den büyüktür.",
           "en": "A salt consisting of a weak acid and a strong base is basic (e.g. CH3COONa); The pH of its aqueous solution is greater than 7.",
           "de": "Ein Salz, das aus einer schwachen Säure und einer starken Base besteht, ist basisch (z. B. CH3COONa); Der pH-Wert seiner wässrigen Lösung liegt über 7.",
           "fr": "Un sel constitué d'un acide faible et d'une base forte est basique (par exemple CH3COONa) ; Le pH de sa solution aqueuse est supérieur à 7.",
@@ -1873,7 +1873,7 @@ export const unit09: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Zayıf asit ile kuvvetli bazdan oluşan tuz baziktir (örn. CH3COONa); sulu çözeltisinin pH ı 7 den büyüktür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Zayıf asit ile kuvvetli bazdan oluşan tuz baziktir (örn. CH3COONa); sulu çözeltisinin pH'ı 7'den büyüktür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"A salt consisting of a weak acid and a strong base is basic (e.g. CH3COONa); The pH of its aqueous solution is greater than 7.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Ein Salz, das aus einer schwachen Säure und einer starken Base besteht, ist basisch (z. B. CH3COONa); Der pH-Wert seiner wässrigen Lösung liegt über 7.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Un sel constitué d'un acide faible et d'une base forte est basique (par exemple CH3COONa) ; Le pH de sa solution aqueuse est supérieur à 7.\". Notion fondamentale du programme officiel de chimie.",
@@ -1900,21 +1900,21 @@ export const unit09: ChemistryUnitSeedData = {
           "tr": "Asitler ele kayganlık hissi verir ve turnusolu maviye boyar.",
           "en": "Acids give the hand a slippery feeling and turn litmus blue.",
           "de": "Säuren verleihen der Hand ein rutschiges Gefühl und verfärben Lackmus blau.",
-          "fr": "Les acides donnent à la main une sensation glissante et virent au bleu tournesol.",
+          "fr": "Les acides donnent à la main une sensation glissante et font virer le tournesol au bleu.",
           "ru": "Кислоты придают руке ощущение скользкости и окрашивают лакмус в синий цвет.",
           "ar": "تمنح الأحماض اليد ملمسًا زلقًا وتحوّل لون عباد الشمس إلى اللون الأزرق.",
           "zh": "酸使手有滑溜的感觉并使石蕊变成蓝色。",
           "ku": "Asîd hestek şilbûnê dide dest û lîmûsê şîn dibin."
         },
         {
-          "tr": "Aktif metaller asitlerle SO2 zehirli gazı oluşturur.",
-          "en": "Active metals form toxic gas SO2 with acids.",
-          "de": "Aktive Metalle bilden mit Säuren das giftige Gas SO2.",
-          "fr": "Les métaux actifs forment du gaz toxique SO2 avec les acides.",
-          "ru": "Активные металлы образуют с кислотами токсичный газ SO2.",
-          "ar": "تشكل المعادن النشطة غازًا سامًا SO2 مع الأحماض.",
-          "zh": "活性金属与酸反应生成有毒气体SO2。",
-          "ku": "Metalên çalak bi asîdên gaza jehrî SO2 çêdikin."
+          "tr": "Aktif metaller seyreltik HCl ile tepkimeye girdiğinde SO2 gazı oluşturur.",
+          "en": "When active metals react with dilute HCl, they form SO2 gas.",
+          "de": "Wenn aktive Metalle mit verdünnter HCl reagieren, bilden sie SO2-Gas.",
+          "fr": "Lorsque les métaux actifs réagissent avec HCl dilué, ils forment du gaz SO2.",
+          "ru": "При взаимодействии активных металлов с разбавленной HCl образуется газ SO2.",
+          "ar": "عندما تتفاعل المعادن النشطة مع HCl المخفف، فإنها تكوّن غاز SO2.",
+          "zh": "活性金属与稀HCl反应时生成SO2气体。",
+          "ku": "Dema ku metalên çalak bi HCl-a sivik re bertek nîşan didin, gaza SO2 çêdikin."
         },
         {
           "tr": "Altın derişik sülfürik asitte hızla çözünerek H2 gazı çıkarır.",
@@ -2020,7 +2020,7 @@ export const unit09: ChemistryUnitSeedData = {
           "ru": "Соли представляют собой кристаллические вещества с ионной структурой. Они не проводят ток в твердой форме, но проводят в жидкости и растворе.",
           "ar": "الأملاح هي مواد صلبة بلورية ذات بنية أيونية. وهي لا توصل في الحالة الصلبة، ولكنها توصل في السائل والمحلول.",
           "zh": "盐是具有离子结构的结晶固体。它们不以固体形式导电，但以液体和溶液形式导电。",
-          "ku": "Xwê madeyên krîstalî yên bi avahiyeke îyonî ne. Ew ne di forma hişk de, lê di şikil û çareseriyê de digerin."
+          "ku": "Xwê madeyên krîstalî yên bi avahiyeke îyonî ne. Ew di halê hişk de elektrîkê naguhêzin, lê di halê şile û di çareseriyê de diguhêzin."
         }
       ],
       "correctIndex": 4,
@@ -2032,7 +2032,7 @@ export const unit09: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Соли представляют собой кристаллические вещества с ионной структурой. Они не проводят ток в твердой форме, но проводят в жидкости и растворе.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"الأملاح هي مواد صلبة بلورية ذات بنية أيونية. وهي لا توصل في الحالة الصلبة، ولكنها توصل في السائل والمحلول.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“盐是具有离子结构的结晶固体。它们不以固体形式导电，但以液体和溶液形式导电。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Xwê madeyên krîstalî yên bi avahiyeke îyonî ne. Ew ne di forma hişk de, lê di şikil û çareseriyê de digerin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Xwê madeyên krîstalî yên bi avahiyeke îyonî ne. Ew di halê hişk de elektrîkê naguhêzin, lê di halê şile û di çareseriyê de diguhêzin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2051,12 +2051,12 @@ export const unit09: ChemistryUnitSeedData = {
         {
           "tr": "Yemek sodası NaHCO3 (sodyum bikarbonat), çamaşır sodası Na2CO3 (sodyum karbonat) dır.",
           "en": "Baking soda is NaHCO3 (sodium bicarbonate), washing soda is Na2CO3 (sodium carbonate).",
-          "de": "Backpulver ist NaHCO3 (Natriumbikarbonat), Waschsoda ist Na2CO3 (Natriumkarbonat).",
-          "fr": "Le bicarbonate de soude est du NaHCO3 (bicarbonate de sodium), la lessive de soude est du Na2CO3 (carbonate de sodium).",
+          "de": "Natron (Backsoda) ist NaHCO3 (Natriumhydrogencarbonat), Waschsoda ist Na2CO3 (Natriumcarbonat).",
+          "fr": "Le bicarbonate de soude est du NaHCO3 (hydrogénocarbonate de sodium), les cristaux de soude sont du Na2CO3 (carbonate de sodium).",
           "ru": "Пищевая сода — это NaHCO3 (бикарбонат натрия), стиральная сода — Na2CO3 (карбонат натрия).",
           "ar": "صودا الخبز هي NaHCO3 (بيكربونات الصوديوم)، وصودا الغسيل هي Na2CO3 (كربونات الصوديوم).",
           "zh": "小苏打是NaHCO3（碳酸氢钠），洗苏打是Na2CO3（碳酸钠）。",
-          "ku": "Soda şuştinê NaHCO3 (bikarbonat sodyûm), soda şuştinê Na2CO3 (karbonat sodyûm) e."
+          "ku": "Soda xwarinê NaHCO3 (bîkarbonata sodyûmê), soda şuştinê Na2CO3 (karbonata sodyûmê) e."
         },
         {
           "tr": "25 °C'de pH değeri 8 olan bir çözelti asidiktir.",
@@ -2103,12 +2103,12 @@ export const unit09: ChemistryUnitSeedData = {
       "explanation": {
         "tr": "Doğru cevap \"Yemek sodası NaHCO3 (sodyum bikarbonat), çamaşır sodası Na2CO3 (sodyum karbonat) dır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Baking soda is NaHCO3 (sodium bicarbonate), washing soda is Na2CO3 (sodium carbonate).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Backpulver ist NaHCO3 (Natriumbikarbonat), Waschsoda ist Na2CO3 (Natriumkarbonat).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Le bicarbonate de soude est du NaHCO3 (bicarbonate de sodium), la lessive de soude est du Na2CO3 (carbonate de sodium).\". Notion fondamentale du programme officiel de chimie.",
+        "de": "Die zutreffende Aussage lautet: \"Natron (Backsoda) ist NaHCO3 (Natriumhydrogencarbonat), Waschsoda ist Na2CO3 (Natriumcarbonat).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Le bicarbonate de soude est du NaHCO3 (hydrogénocarbonate de sodium), les cristaux de soude sont du Na2CO3 (carbonate de sodium).\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Пищевая сода — это NaHCO3 (бикарбонат натрия), стиральная сода — Na2CO3 (карбонат натрия).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"صودا الخبز هي NaHCO3 (بيكربونات الصوديوم)، وصودا الغسيل هي Na2CO3 (كربونات الصوديوم).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“小苏打是NaHCO3（碳酸氢钠），洗苏打是Na2CO3（碳酸钠）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Soda şuştinê NaHCO3 (bikarbonat sodyûm), soda şuştinê Na2CO3 (karbonat sodyûm) e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Soda xwarinê NaHCO3 (bîkarbonata sodyûmê), soda şuştinê Na2CO3 (karbonata sodyûmê) e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }
   ]

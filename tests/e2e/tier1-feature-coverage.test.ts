@@ -777,7 +777,7 @@ export async function runTier1Tests(): Promise<void> {
         expect(readPngDims(`android/app/src/main/res/${folder}/ic_launcher_foreground.png`)).toEqual([fgPx, fgPx]);
       }
       const icBg = fs.readFileSync(path.join(root, 'android/app/src/main/res/values/ic_launcher_background.xml'), 'utf8');
-      expect(icBg).toContain('#0B0F19');
+      expect(icBg).toContain('#070B14'); // redesign dark ground (public/manifest.webmanifest background_color)
 
       const androidSplashes: Array<[string, number, number]> = [
         ['drawable/splash.png', 480, 320],
@@ -1383,10 +1383,10 @@ export async function runTier1Tests(): Promise<void> {
       const u06Ar = prodCompileUnitQuestions(u06!, 'ar');
       const q06_27 = u06Ar.find(q => q.id === 'u06-q027');
       expect(q06_27).toBeDefined();
-      expect(q06_27!.options[q06_27!.correctIndex]).toBe('1 أكب');
+      expect(q06_27!.options[q06_27!.correctIndex]).toBe('1 وحدة كتل ذرية (amu)');
       const quote06_27 = q06_27!.stem.match(/["“«]([^"”»]+)["”»]/g);
       const clue06_27 = quote06_27 ? quote06_27[quote06_27.length - 1].replace(/^["“«]|["”»]$/g, '').trim() : '';
-      expect(clue06_27.includes('1 أكب')).toBe(false);
+      expect(clue06_27.includes('1 وحدة كتل ذرية (amu)')).toBe(false);
 
       const u02 = PROD_CHEMISTRY_UNITS.find(u => u.id === 'u02');
       expect(u02).toBeDefined();

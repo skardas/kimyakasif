@@ -139,10 +139,8 @@ export const Onboarding: React.FC<OnboardingProps> = ({ lang, onSetLanguage, onF
                   >
                     <span className="ky-key wide ky-mono">{n}</span>
                     <span className="onboarding-option-text">
-                      <strong>
-                        {n} {s.goalUnit}
-                      </strong>
-                      <span>{s.goalNames[i]}</span>
+                      <strong>{s.goalOption(n, s.goalNames[i])}</strong>
+                      <span>{s.goalMinutes(n)}</span>
                     </span>
                   </button>
                 );

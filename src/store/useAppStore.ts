@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { LANGUAGES } from '../i18n/translations';
 import type { LanguageCode } from '../types/chemistry';
+import { clearLeitnerDataForProfile, migrateLegacyLeitnerData } from '../engine/leitnerEngine';
 
 export type { LanguageCode };
 export type ThemeSetting = 'system' | 'light' | 'dark';
@@ -343,6 +344,9 @@ function sanitizeProfile(rawProf: any, defaultId: string): LearnerProfile {
 }
 
 function loadStoredData(): PersistedData {
+  // Card boxes used to be stored once for the whole app; hand them to the profile
+  // that was active at the last save before anything else changes the store.
+  migrateLegacyLeitnerData();
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return DEFAULT_DATA;
@@ -660,6 +664,7 @@ export function useAppStore(): AppState {
   const deleteProfile = useCallback((profileId: string) => {
     setData((prev) => {
       if (prev.profiles.length <= 1) return prev; // Preserve at least one profile
+      clearLeitnerDataForProfile(profileId);
       const remaining = prev.profiles.filter((p) => p.id !== profileId);
       const nextActiveId =
         prev.activeProfileId === profileId ? remaining[0].id : prev.activeProfileId;

@@ -27,6 +27,8 @@ import {
 
 export interface FlashcardsViewProps {
   lang: LanguageCode;
+  /** Card boxes are stored per profile (the app always passes the active profile). */
+  profileId?: string;
   initialUnitId?: string | null;
   masteredCardIds: string[];
   onRateCard: (cardId: string, mastered: boolean, xpReward: number) => void;
@@ -34,6 +36,7 @@ export interface FlashcardsViewProps {
 
 export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   lang,
+  profileId,
   initialUnitId = null,
   masteredCardIds,
   onRateCard,
@@ -41,7 +44,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   const t = UI_TRANSLATIONS[lang];
 
   // Persistent Leitner Spaced Repetition Engine
-  const engine = useMemo(() => new LeitnerBoxEngine(), []);
+  const engine = useMemo(() => new LeitnerBoxEngine(null, { profileId }), [profileId]);
 
   // Compile all canonical flashcards
   const allCards = useMemo(() => compileAllFlashcards(ALL_CHEMISTRY_UNITS, lang), [lang]);

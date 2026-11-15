@@ -920,7 +920,7 @@ export const UI_TRANSLATIONS: Record<LanguageCode, UIStrings> = {
       modeTgProvaDesc: '20 سؤالاً محاكاة شاملة',
       modeMistakes: 'دفتر الأخطاء',
       modeMistakesDesc: 'أعد حل الأسئلة التي أخطأت بها سابقاً',
-      modeBookmarks: 'الأسئلة المميزة بنجمة',
+      modeBookmarks: 'المميزة بنجمة',
       modeBookmarksDesc: 'مراجعة الأسئلة المحفوظة لديك',
       selectUnit: 'اختر الوحدة',
       setLabel: 'المجموعة',

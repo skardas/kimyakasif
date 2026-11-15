@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Maximize2, X, ZoomIn, ZoomOut } from 'lucide-react';
 import type { QuestionDiagramSpec, LanguageCode } from '../../types/chemistry';
 import { ZOOM_FIT_I18N } from '../three/Kimya3DLab';
+import { diagramLabelResolver } from '../../i18n/diagramStrings';
 
 const FULLSCREEN_I18N: Record<LanguageCode, string> = {
   tr: 'Tam Ekran Büyüt',
@@ -246,44 +247,44 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
       case 'bohr-orbital-atom':
       case 'bohr-orbital-levels':
       case 'quantum-orbitals':
-        return renderBohrOrbitalAtom(spec);
+        return renderBohrOrbitalAtom(spec, lang);
 
       case 'periodic-table-trends':
       case 'periodic-trends-spiral':
-        return renderPeriodicTrends(spec);
+        return renderPeriodicTrends(spec, lang);
 
       case 'gas-piston-manometer':
       case 'gas-law-piston-manometer':
-        return renderGasPistonManometer(spec);
+        return renderGasPistonManometer(spec, lang);
 
       case 'phase-heating-curve':
       case 'heating-cooling-phase-diagram':
-        return renderPhaseHeatingCurve(spec);
+        return renderPhaseHeatingCurve(spec, lang);
 
       case 'potential-energy-reaction':
       case 'potential-energy-reaction-coordinate':
-        return renderPotentialEnergyCurve(spec);
+        return renderPotentialEnergyCurve(spec, lang);
 
       case 'titration-burette-curve':
       case 'titration-curve-burette':
-        return renderTitrationBurette(spec);
+        return renderTitrationBurette(spec, lang);
 
       case 'galvanic-daniell-cell':
-        return renderDaniellCell(spec);
+        return renderDaniellCell(spec, lang);
 
       case 'electrolysis-hoffman-cell':
-        return renderElectrolysisHoffman(spec);
+        return renderElectrolysisHoffman(spec, lang);
 
       case 'vsepr-molecular-geometry':
       case 'lewis-dot-bonding':
       case 'crystal-lattice':
       case 'polymer-micelle':
       case 'organic-functional-groups':
-        return renderVseprGeometry(spec);
+        return renderVseprGeometry(spec, lang);
 
       case 'equilibrium-le-chatelier':
       case 'equilibrium-le-chatelier-graph':
-        return renderLeChatelierEquilibrium(spec);
+        return renderLeChatelierEquilibrium(spec, lang);
 
       case 'lab-glassware-setup':
       case 'solution-solvation-sphere':
@@ -291,7 +292,7 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
       case 'distillation-column':
       case 'acid-base-metal':
       default:
-        return renderLabGlassware(spec);
+        return renderLabGlassware(spec, lang);
     }
   };
 
@@ -500,8 +501,9 @@ export const ChemicalDiagram: React.FC<ChemicalDiagramProps> = ({
 // ---------------------------------------------------------------------------
 // 1. Bohr & Quantum Atomic Model (Orbits, Electron Movement & Photon Emission)
 // ---------------------------------------------------------------------------
-function renderBohrOrbitalAtom(spec: QuestionDiagramSpec) {
+function renderBohrOrbitalAtom(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* Concentric Orbits */}
@@ -549,7 +551,7 @@ function renderBohrOrbitalAtom(spec: QuestionDiagramSpec) {
         {lbl.n2 || 'n = 2 (L)'}
       </FitLabel>
       <FitLabel x={270} y={275} w={500} size={12} weight={600} valign="bottom" fill="var(--text-secondary, #94a3b8)">
-        {lbl.photon || 'Foton Salımı: ΔE = h·ν (Spektrum Çizgisi)'}
+        {L('bohr_photon', 'photon')}
       </FitLabel>
     </g>
   );
@@ -558,8 +560,9 @@ function renderBohrOrbitalAtom(spec: QuestionDiagramSpec) {
 // ---------------------------------------------------------------------------
 // 2. Periodic Table Trends (Radius vs Ionization Energy & Electronegativity)
 // ---------------------------------------------------------------------------
-function renderPeriodicTrends(spec: QuestionDiagramSpec) {
+function renderPeriodicTrends(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* Stylized Periodic Table Blocks */}
@@ -572,10 +575,10 @@ function renderPeriodicTrends(spec: QuestionDiagramSpec) {
       {/* Block Text */}
       <text x="90" y="140" textAnchor="middle" fill="var(--accent-cyan, #06b6d4)" fontSize="11" fontWeight="bold">1A</text>
       <FitLabel x={240} y={175} w={170} size={12} fill="var(--text-muted, #64748b)">
-        {lbl.transition || lbl.d_block || 'Geçiş Metalleri (d)'}
+        {L('per_transition', 'transition', 'd_block')}
       </FitLabel>
       <FitLabel x={385} y={150} w={92} weight="bold" fill="var(--accent-amber, #f59e0b)">
-        {lbl.nonmetals || lbl.nonmetal || 'Ametaller'}
+        {L('per_nonmetals', 'nonmetals', 'nonmetal')}
       </FitLabel>
       <text x="455" y="140" textAnchor="middle" fill="var(--accent-emerald, #10b981)" fontSize="11" fontWeight="bold">8A</text>
 
@@ -583,14 +586,14 @@ function renderPeriodicTrends(spec: QuestionDiagramSpec) {
       <line x1="100" y1="240" x2="440" y2="40" stroke="var(--accent-ruby, #f43f5e)" strokeWidth="3" className="anim-pulse" />
       <polygon points="440,35 448,45 435,48" fill="var(--accent-ruby, #f43f5e)" />
       <FitLabel x={270} y={26} w={500} size={12} weight="bold" wrap={false} fill="var(--accent-ruby, #f43f5e)">
-        {lbl.ie || '↗ İyonlaşma Enerjisi & Elektronegatiflik Artar'}
+        {L('per_ie', 'ie')}
       </FitLabel>
 
       {/* Trend Arrow 2: Atomic Radius (Top-Right to Bottom-Left) */}
       <line x1="430" y1="230" x2="110" y2="245" stroke="var(--accent-cyan, #06b6d4)" strokeWidth="3" />
       <polygon points="105,245 118,238 118,252" fill="var(--accent-cyan, #06b6d4)" />
       <FitLabel x={270} y={274} w={500} size={12} weight="bold" wrap={false} fill="var(--accent-cyan, #06b6d4)">
-        {lbl.radius || '↙ Atom Yarıçapı & Metalik Aktiflik Artar'}
+        {L('per_radius', 'radius')}
       </FitLabel>
     </g>
   );
@@ -599,8 +602,9 @@ function renderPeriodicTrends(spec: QuestionDiagramSpec) {
 // ---------------------------------------------------------------------------
 // 3. Gas Piston & U-Tube Manometer Setup
 // ---------------------------------------------------------------------------
-function renderGasPistonManometer(spec: QuestionDiagramSpec) {
+function renderGasPistonManometer(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* Gas Cylinder Chamber */}
@@ -650,10 +654,10 @@ function renderGasPistonManometer(spec: QuestionDiagramSpec) {
 
       {/* Labels */}
       <FitLabel x={140} y={248} w={210} size={12} valign="top" fill="var(--text-secondary, #94a3b8)">
-        {lbl.piston || 'Pistonlu Gaz Kabı (Pgaz = P0)'}
+        {L('gas_piston', 'piston')}
       </FitLabel>
       <FitLabel x={410} y={270} w={230} size={12} fill="var(--text-secondary, #94a3b8)">
-        {lbl.eq || 'Pgaz = P0 + h'}
+        {L('gas_eq', 'eq')}
       </FitLabel>
     </g>
   );
@@ -662,18 +666,19 @@ function renderGasPistonManometer(spec: QuestionDiagramSpec) {
 // ---------------------------------------------------------------------------
 // 4. Phase Diagram & Heating Curve (Solid, Melt, Liquid, Boil, Gas)
 // ---------------------------------------------------------------------------
-function renderPhaseHeatingCurve(spec: QuestionDiagramSpec) {
+function renderPhaseHeatingCurve(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* Cartesian Axes */}
       <line x1="70" y1="240" x2="490" y2="240" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <line x1="70" y1="240" x2="70" y2="40" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <FitLabel x={490} y={258} w={300} anchor="end" wrap={false} fill="var(--text-muted, #64748b)">
-        {lbl.heat_axis || lbl.heat || 'Isı (Q / Zaman)'}
+        {L('phase_heat_axis', 'heat_axis', 'heat')}
       </FitLabel>
       <FitLabel x={75} y={30} w={300} anchor="start" wrap={false} fill="var(--text-muted, #64748b)">
-        {lbl.temp_axis || lbl.temp || 'Sıcaklık (T °C)'}
+        {L('phase_temp_axis', 'temp_axis', 'temp')}
       </FitLabel>
 
       {/* 5-Stage Stepped Heating Curve */}
@@ -687,12 +692,12 @@ function renderPhaseHeatingCurve(spec: QuestionDiagramSpec) {
       {/* Temperature Reference Dashed Lines */}
       <line x1="70" y1="180" x2="210" y2="180" stroke="var(--border-subtle, #334155)" strokeDasharray="3 3" />
       <text x="60" y="184" textAnchor="start" fill="var(--text-secondary, #94a3b8)" fontSize="11">
-        {lbl.melt_point || lbl.te || 'Te (0°C)'}
+        {L('phase_melt_point', 'melt_point', 'te')}
       </text>
 
       <line x1="70" y1="100" x2="390" y2="100" stroke="var(--border-subtle, #334155)" strokeDasharray="3 3" />
       <text x="60" y="104" textAnchor="start" fill="var(--text-secondary, #94a3b8)" fontSize="11">
-        {lbl.boil_point || lbl.tk || 'Tk (100°C)'}
+        {L('phase_boil_point', 'boil_point', 'tk')}
       </text>
 
       {/* Animated Tracer Dot moving along the curve */}
@@ -700,24 +705,24 @@ function renderPhaseHeatingCurve(spec: QuestionDiagramSpec) {
 
       {/* Phase Labels */}
       <FitLabel x={105} y={215} w={150} anchor="start" weight="bold" valign="bottom" fill="var(--text-secondary, #94a3b8)">
-        {`I: ${lbl.solid || 'Katı'}`}
+        {`I: ${L('phase_solid', 'solid')}`}
       </FitLabel>
       <FitLabel x={175} y={170} w={125} anchor="start" weight="bold" valign="bottom" fill="var(--accent-amber, #f59e0b)">
-        {`II: ${lbl.melt || 'Erime'}`}
+        {`II: ${L('phase_melt', 'melt')}`}
       </FitLabel>
       <FitLabel x={255} y={145} w={130} anchor="start" weight="bold" valign="bottom" fill="var(--text-secondary, #94a3b8)">
-        {`III: ${lbl.liquid || 'Sıvı'}`}
+        {`III: ${L('phase_liquid', 'liquid')}`}
       </FitLabel>
       <FitLabel x={345} y={90} w={110} anchor="start" weight="bold" valign="bottom" fill="var(--accent-ruby, #f43f5e)">
-        {`IV: ${lbl.boil || 'Kaynama'}`}
+        {`IV: ${L('phase_boil', 'boil')}`}
       </FitLabel>
       <FitLabel x={430} y={65} w={105} anchor="start" weight="bold" valign="bottom" fill="var(--accent-cyan, #06b6d4)">
-        {`V: ${lbl.gas || 'Gaz'}`}
+        {`V: ${L('phase_gas', 'gas')}`}
       </FitLabel>
 
       {/* Bottom Summary Pill */}
       <FitLabel x={270} y={282} w={500} size={12} weight={600} valign="bottom" fill="var(--text-primary, #ffffff)">
-        {lbl.summary || lbl.heat_summary || 'Hal Değişimi: T Sabit, Potansiyel Enerji Artar, Kinetik Sabit'}
+        {L('phase_summary', 'summary', 'heat_summary')}
       </FitLabel>
     </g>
   );
@@ -726,18 +731,19 @@ function renderPhaseHeatingCurve(spec: QuestionDiagramSpec) {
 // ---------------------------------------------------------------------------
 // 5. Potential Energy vs Reaction Coordinate Curve
 // ---------------------------------------------------------------------------
-function renderPotentialEnergyCurve(spec: QuestionDiagramSpec) {
+function renderPotentialEnergyCurve(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* Cartesian Axes */}
       <line x1="70" y1="240" x2="490" y2="240" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <line x1="70" y1="240" x2="70" y2="40" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <FitLabel x={490} y={258} w={300} anchor="end" wrap={false} fill="var(--text-muted, #64748b)">
-        {lbl.coord || lbl.rxn_coord || 'Tepkime Koordinatı'}
+        {L('pe_coord', 'coord', 'rxn_coord')}
       </FitLabel>
       <FitLabel x={75} y={30} w={170} anchor="start" wrap={false} fill="var(--text-muted, #64748b)">
-        {lbl.pe || 'PE (kJ)'}
+        {L('pe_pe', 'pe')}
       </FitLabel>
 
       {/* Uncatalyzed High Barrier Curve (Solid) */}
@@ -760,12 +766,12 @@ function renderPotentialEnergyCurve(spec: QuestionDiagramSpec) {
       {/* Reactant & Product Levels */}
       <line x1="60" y1="170" x2="110" y2="170" stroke="var(--border-subtle, #334155)" strokeDasharray="2 2" />
       <FitLabel x={78} y={186} w={130} anchor="start" weight="bold" valign="top" fill="var(--accent-cyan, #06b6d4)">
-        {lbl.reactants || lbl.girenler || 'Girenler (Hgiren)'}
+        {L('pe_reactants', 'reactants', 'girenler')}
       </FitLabel>
 
       <line x1="420" y1="210" x2="480" y2="210" stroke="var(--border-subtle, #334155)" strokeDasharray="2 2" />
       <FitLabel x={472} y={228} w={150} anchor="end" weight="bold" wrap={false} fill="var(--accent-emerald, #10b981)">
-        {lbl.products || lbl.urunler || 'Ürünler (Hürün)'}
+        {L('pe_products', 'products', 'urunler')}
       </FitLabel>
 
       {/* Enthalpy Difference ΔH */}
@@ -778,12 +784,12 @@ function renderPotentialEnergyCurve(spec: QuestionDiagramSpec) {
       {/* Peak Activated Complex marker */}
       <circle cx="270" cy="60" r="5" fill="url(#dg-lit-ruby)" filter="url(#dg-shadow)" className="anim-pulse" />
       <FitLabel x={270} y={45} w={170} weight="bold" valign="bottom" fill="var(--text-primary, #ffffff)">
-        {lbl.ak || '[AK]‡'}
+        {L('pe_ak', 'ak')}
       </FitLabel>
 
       {/* Bottom Summary */}
       <FitLabel x={270} y={282} w={500} size={12} weight={600} valign="bottom" fill="var(--text-primary, #ffffff)">
-        {lbl.cat || lbl.dh || 'Katalizör Aktifleşme Enerjisini (Ea) Düşürür, ΔH Değişmez!'}
+        {L('pe_summary', 'cat', 'dh')}
       </FitLabel>
     </g>
   );
@@ -792,8 +798,9 @@ function renderPotentialEnergyCurve(spec: QuestionDiagramSpec) {
 // ---------------------------------------------------------------------------
 // 6. Acid-Base Titration Burette & Sigmoidal pH S-Curve
 // ---------------------------------------------------------------------------
-function renderTitrationBurette(spec: QuestionDiagramSpec) {
+function renderTitrationBurette(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* Left: Graduated Burette */}
@@ -813,14 +820,14 @@ function renderTitrationBurette(spec: QuestionDiagramSpec) {
       {/* Erlenmeyer Flask at Bottom */}
       <path d="M 112 195 L 90 245 A 8 8 0 0 0 98 255 L 144 255 A 8 8 0 0 0 152 245 L 130 195 Z" fill="rgba(6,182,212,0.15)" stroke="var(--text-primary, #ffffff)" strokeWidth="2" />
       <FitLabel x={158} y={232} w={66} size={10} anchor="start" weight="bold" fill="var(--accent-cyan, #06b6d4)">
-        {lbl.solution || lbl.flask || 'Çözelti'}
+        {L('tit_solution', 'solution', 'flask')}
       </FitLabel>
 
       {/* Right: Sigmoidal pH Titration Curve */}
       <line x1="230" y1="240" x2="480" y2="240" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <line x1="230" y1="240" x2="230" y2="40" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <FitLabel x={480} y={258} w={245} anchor="end" wrap={false} fill="var(--text-muted, #64748b)">
-        {lbl.base_vol || lbl.volume || 'Eklenen Baz (mL)'}
+        {L('tit_base_vol', 'base_vol', 'volume')}
       </FitLabel>
       <text x="235" y="32" textAnchor="start" fill="var(--text-muted, #64748b)" fontSize="11">pH</text>
 
@@ -837,12 +844,12 @@ function renderTitrationBurette(spec: QuestionDiagramSpec) {
       <line x1="230" y1="140" x2="345" y2="140" stroke="var(--border-subtle, #334155)" strokeDasharray="3 3" />
       <text x="215" y="145" textAnchor="end" fill="var(--accent-amber, #f59e0b)" fontSize="11" fontWeight="bold">pH = 7.0</text>
       <FitLabel x={358} y={150} w={176} anchor="start" weight="bold" fill="var(--accent-amber, #f59e0b)">
-        {lbl.eqpt || 'Eşdeğerlik Noktası'}
+        {L('tit_eqpt', 'eqpt')}
       </FitLabel>
 
       {/* Bottom Summary */}
       <FitLabel x={270} y={284} w={510} size={12} weight={600} wrap={false} fill="var(--text-primary, #ffffff)">
-        {lbl.burette || 'Kuvvetli Asit - Kuvvetli Baz Titrasyonu: Ma·Va·za = Mb·Vb·zb'}
+        {L('tit_summary', 'burette')}
       </FitLabel>
     </g>
   );
@@ -851,15 +858,16 @@ function renderTitrationBurette(spec: QuestionDiagramSpec) {
 // ---------------------------------------------------------------------------
 // 7. Galvanic Daniell Cell (Zn Anode, Cu Cathode, Salt Bridge, Electron Stream)
 // ---------------------------------------------------------------------------
-function renderDaniellCell(spec: QuestionDiagramSpec) {
+function renderDaniellCell(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* Left Beaker: Anode Half-Cell (ZnSO4) */}
       <rect x="70" y="130" width="130" height="110" rx="6" fill="rgba(6,182,212,0.12)" stroke="var(--border-subtle, #334155)" strokeWidth="2" />
       <rect x="110" y="90" width="22" height="110" fill="var(--border-strong, #94a3b8)" stroke="var(--border-subtle, #475569)" strokeWidth="2" />
       <FitLabel x={135} y={256} w={190} weight="bold" wrap={false} fill="var(--accent-cyan, #06b6d4)">
-        {lbl.anode_label || lbl.anode || 'Zn Anot'}
+        {L('dan_anode', 'anode_label', 'anode')}
       </FitLabel>
       <FitLabel x={135} y={222} w={120} size={10} fill="var(--text-muted, #64748b)">
         {lbl.anode_sol || '1 M ZnSO4(aq)'}
@@ -869,7 +877,7 @@ function renderDaniellCell(spec: QuestionDiagramSpec) {
       <rect x="340" y="130" width="130" height="110" rx="6" fill="rgba(244,63,94,0.12)" stroke="var(--border-subtle, #334155)" strokeWidth="2" />
       <rect x="408" y="90" width="22" height="110" fill="var(--accent-amber, #f97316)" stroke="var(--accent-ruby, #c2410c)" strokeWidth="2" />
       <FitLabel x={405} y={256} w={190} weight="bold" wrap={false} fill="var(--accent-ruby, #f43f5e)">
-        {lbl.cathode_label || lbl.cathode || 'Cu Katot'}
+        {L('dan_cathode', 'cathode_label', 'cathode')}
       </FitLabel>
       <FitLabel x={405} y={222} w={120} size={10} fill="var(--text-muted, #64748b)">
         {lbl.cathode_sol || '1 M CuSO4(aq)'}
@@ -884,7 +892,7 @@ function renderDaniellCell(spec: QuestionDiagramSpec) {
         strokeLinecap="round"
       />
       <FitLabel x={270} y={84} w={150} size={10} weight="bold" wrap={false} fill="#1a1204">
-        {lbl.bridge || 'Tuz Köprüsü (KNO3)'}
+        {L('dan_bridge', 'bridge')}
       </FitLabel>
 
       {/* External Wire Circuit with Voltmeter */}
@@ -903,7 +911,7 @@ function renderDaniellCell(spec: QuestionDiagramSpec) {
 
       {/* Bottom Summary */}
       <FitLabel x={270} y={282} w={510} size={12} weight={600} wrap={false} fill="var(--text-primary, #ffffff)">
-        {lbl.anode_note || lbl.volt || 'Elektron Akışı: Dış devrede ANOT (Zn) -> KATOT (Cu)'}
+        {L('dan_summary', 'anode_note', 'volt')}
       </FitLabel>
     </g>
   );
@@ -912,8 +920,9 @@ function renderDaniellCell(spec: QuestionDiagramSpec) {
 // ---------------------------------------------------------------------------
 // 8. Electrolysis & Hoffman Voltameter (2:1 H2 vs O2 Gas Bubbles)
 // ---------------------------------------------------------------------------
-function renderElectrolysisHoffman(spec: QuestionDiagramSpec) {
+function renderElectrolysisHoffman(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* 3-Tube Hoffman Apparatus Frame */}
@@ -945,18 +954,18 @@ function renderElectrolysisHoffman(spec: QuestionDiagramSpec) {
 
       {/* Labels */}
       <FitLabel x={147} y={32} w={190} weight="bold" wrap={false} fill="var(--accent-cyan, #06b6d4)">
-        {lbl.cathode || lbl.Katot || 'Katot: 2V (H2)'}
+        {L('hof_cathode', 'cathode', 'Katot')}
       </FitLabel>
       <FitLabel x={392} y={32} w={190} weight="bold" wrap={false} fill="var(--accent-ruby, #f43f5e)">
-        {lbl.anode || lbl.Anot || 'Anot: 1V (O2)'}
+        {L('hof_anode', 'anode', 'Anot')}
       </FitLabel>
 
       {/* Bottom Summary */}
       <FitLabel x={270} y={260} w={510} wrap={false} fill="var(--text-secondary, #94a3b8)">
-        {lbl.reaction || '2 H2O(s) → 2 H2(g) [Katot, -] + O2(g) [Anot, +]'}
+        {L('hof_reaction', 'reaction')}
       </FitLabel>
       <FitLabel x={270} y={282} w={510} size={12} weight={600} wrap={false} fill="var(--text-primary, #ffffff)">
-        {lbl.cathode_h2 || lbl.faraday || 'Katotta Toplanan H2 Gazı Hacmi, Anottaki O2 Gazının 2 Katıdır!'}
+        {L('hof_summary', 'cathode_h2', 'faraday')}
       </FitLabel>
     </g>
   );
@@ -965,8 +974,9 @@ function renderElectrolysisHoffman(spec: QuestionDiagramSpec) {
 // ---------------------------------------------------------------------------
 // 9. VSEPR Molecular Geometries (AX2, AX3, AX4, AX3E, AX2E2)
 // ---------------------------------------------------------------------------
-function renderVseprGeometry(spec: QuestionDiagramSpec) {
+function renderVseprGeometry(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* Center 1: Linear AX2 (180°) */}
@@ -1058,7 +1068,7 @@ function renderVseprGeometry(spec: QuestionDiagramSpec) {
 
       {/* Bottom Summary */}
       <FitLabel x={270} y={288} w={510} weight={600} wrap={false} fill="var(--text-primary, #ffffff)">
-        {lbl.summary || lbl.vsepr || 'VSEPR: Ortaklanmamış Elektron Çifti Bağ Açısını Daraltır!'}
+        {L('vsepr_summary', 'summary', 'vsepr')}
       </FitLabel>
     </g>
   );
@@ -1067,29 +1077,30 @@ function renderVseprGeometry(spec: QuestionDiagramSpec) {
 // ---------------------------------------------------------------------------
 // 10. Le Chatelier Equilibrium Shift Graph (Perturbation at t1)
 // ---------------------------------------------------------------------------
-function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec) {
+function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* Cartesian Axes */}
       <line x1="70" y1="240" x2="490" y2="240" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <line x1="70" y1="240" x2="70" y2="40" stroke="var(--text-secondary, #94a3b8)" strokeWidth="2" />
       <FitLabel x={488} y={232} w={100} anchor="end" wrap={false} fill="var(--text-muted, #64748b)">
-        {lbl.time || 'Zaman (t)'}
+        {L('le_time', 'time')}
       </FitLabel>
       <FitLabel x={75} y={30} w={250} anchor="start" wrap={false} fill="var(--text-muted, #64748b)">
-        {lbl.conc || 'Derişim (M)'}
+        {L('le_conc', 'conc')}
       </FitLabel>
 
       {/* Time Markers t1 (Perturbation) and t2 (Re-equilibrium) */}
       <line x1="220" y1="240" x2="220" y2="50" stroke="var(--border-subtle, #334155)" strokeDasharray="3 3" />
       <FitLabel x={220} y={256} w={145} weight="bold" wrap={false} fill="var(--accent-amber, #f59e0b)">
-        {lbl.t1 || 't1 (Etki)'}
+        {L('le_t1', 't1')}
       </FitLabel>
 
       <line x1="380" y1="240" x2="380" y2="50" stroke="var(--border-subtle, #334155)" strokeDasharray="3 3" />
       <FitLabel x={380} y={256} w={145} weight="bold" wrap={false} fill="var(--accent-emerald, #10b981)">
-        {lbl.t2 || 't2 (Yeni Denge)'}
+        {L('le_t2', 't2')}
       </FitLabel>
 
       {/* Reactant 1 Curve: Sharp spike at t1 then gradual consumption */}
@@ -1100,7 +1111,7 @@ function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec) {
         strokeWidth="3"
       />
       <FitLabel x={78} y={112} w={138} anchor="start" weight="bold" valign="bottom" fill="var(--accent-cyan, #06b6d4)">
-        {lbl.spike || '[N2] (Eklenen)'}
+        {L('le_spike', 'spike')}
       </FitLabel>
 
       {/* Reactant 2 Curve: Gradual consumption after t1 */}
@@ -1111,7 +1122,7 @@ function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec) {
         strokeWidth="3"
       />
       <FitLabel x={78} y={152} w={138} anchor="start" weight="bold" valign="bottom" fill="var(--accent-ruby, #f43f5e)">
-        {lbl.shift || '[H2] (Harcanan)'}
+        {L('le_shift', 'shift')}
       </FitLabel>
 
       {/* Product Curve: Gradual increase after t1 */}
@@ -1122,12 +1133,12 @@ function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec) {
         strokeWidth="3"
       />
       <FitLabel x={78} y={193} w={138} anchor="start" weight="bold" valign="bottom" fill="var(--accent-emerald, #10b981)">
-        {lbl.product || '[NH3] (Oluşan)'}
+        {L('le_product', 'product')}
       </FitLabel>
 
       {/* Bottom Summary */}
       <FitLabel x={270} y={282} w={510} size={10.5} weight={600} wrap={false} fill="var(--text-primary, #ffffff)">
-        {lbl.summary || lbl.kc_t || 'Le Chatelier: N2 eklenince denge ürünlere kayar; Kc sabittir!'}
+        {L('le_summary', 'summary', 'kc_t')}
       </FitLabel>
     </g>
   );
@@ -1136,8 +1147,9 @@ function renderLeChatelierEquilibrium(spec: QuestionDiagramSpec) {
 // ---------------------------------------------------------------------------
 // 11. Laboratory Glassware & Separation Apparatus
 // ---------------------------------------------------------------------------
-function renderLabGlassware(spec: QuestionDiagramSpec) {
+function renderLabGlassware(spec: QuestionDiagramSpec, lang: LanguageCode) {
   const lbl = spec.labels || {};
+  const L = diagramLabelResolver(spec.labels, lang);
   return (
     <g>
       {/* Separation Funnel (Ayırma Hunisi) */}
@@ -1156,13 +1168,13 @@ function renderLabGlassware(spec: QuestionDiagramSpec) {
         <line x1="20" y1="80" x2="44" y2="80" stroke="var(--accent-amber, #f59e0b)" strokeWidth="1.2" />
         <line x1="20" y1="118" x2="52" y2="118" stroke="var(--accent-cyan, #06b6d4)" strokeWidth="1.2" />
         <FitLabel x={16} y={84} w={100} size={10} anchor="end" weight="bold" fill="var(--accent-amber, #f59e0b)">
-          {lbl.oil || lbl.top || 'Yağ (Üst)'}
+          {L('lab_oil', 'oil', 'top')}
         </FitLabel>
         <FitLabel x={16} y={122} w={100} size={10} anchor="end" weight="bold" fill="var(--accent-cyan, #06b6d4)">
-          {lbl.water || lbl.bottom || 'Su (Alt)'}
+          {L('lab_water', 'water', 'bottom')}
         </FitLabel>
         <FitLabel x={60} y={192} w={170} valign="top" fill="var(--text-secondary, #94a3b8)">
-          {lbl.funnel || lbl.item4 || 'Ayırma Hunisi'}
+          {L('lab_funnel', 'funnel', 'item4')}
         </FitLabel>
       </g>
 
@@ -1174,7 +1186,7 @@ function renderLabGlassware(spec: QuestionDiagramSpec) {
         <line x1="30" y1="120" x2="50" y2="120" stroke="var(--text-secondary, #94a3b8)" />
         <line x1="30" y1="140" x2="45" y2="140" stroke="var(--text-secondary, #94a3b8)" />
         <FitLabel x={60} y={180} w={92} valign="top" fill="var(--text-secondary, #94a3b8)">
-          {lbl.beaker || lbl.item2 || 'Beherglas'}
+          {L('lab_beaker', 'beaker', 'item2')}
         </FitLabel>
 
         {/* Volumetric Flask (Balon Joje) */}
@@ -1186,13 +1198,13 @@ function renderLabGlassware(spec: QuestionDiagramSpec) {
         />
         <line x1="138" y1="75" x2="152" y2="75" stroke="var(--accent-ruby, #f43f5e)" strokeWidth="1.5" />
         <FitLabel x={157} y={180} w={74} valign="top" fill="var(--text-secondary, #94a3b8)">
-          {lbl.flask || lbl.item3 || 'Balon Joje'}
+          {L('lab_flask', 'flask', 'item3')}
         </FitLabel>
       </g>
 
       {/* Bottom Summary */}
       <FitLabel x={270} y={282} w={510} size={12} weight={600} wrap={false} fill="var(--text-primary, #ffffff)">
-        {lbl.item1 || lbl.summary || 'Hassas Çözelti Hazırlama ve Yoğunluk Farkıyla Ayırma'}
+        {L('lab_summary', 'item1', 'summary')}
       </FitLabel>
     </g>
   );

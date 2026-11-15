@@ -309,7 +309,9 @@ export const App: React.FC = () => {
 
           {activeTab === 'cards' && (
             <FlashcardsView
+              key={store.activeProfileId}
               lang={lang}
+              profileId={store.activeProfileId}
               initialUnitId={targetCardUnitId}
               masteredCardIds={store.masteredCardIds}
               onRateCard={store.markCardMastered}
@@ -391,7 +393,7 @@ export const App: React.FC = () => {
               onRelaunchOnboarding={() => setShowOnboarding(true)}
               onResetProgress={() => {
                 resetToday();
-                new LeitnerBoxEngine().reset();
+                new LeitnerBoxEngine(null, { profileId: store.activeProfileId }).reset();
               }}
               onOpenProfiles={() => openProfile('profiles')}
               onBack={() => setActiveTab('curriculum')}

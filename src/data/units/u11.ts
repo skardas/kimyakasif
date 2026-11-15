@@ -57,7 +57,7 @@ export const unit11: ChemistryUnitSeedData = {
         "en": "The angular momentum quantum number (l) specifies the type and shape of the orbital (l = 0 s, l = 1 p, l = 2 d, l = 3 f).",
         "de": "Die Drehimpulsquantenzahl (l) gibt Art und Form des Orbitals an (l = 0 s, l = 1 p, l = 2 d, l = 3 f).",
         "fr": "Le nombre quantique du moment cinétique (l) spécifie le type et la forme de l'orbitale (l = 0 s, l = 1 p, l = 2 d, l = 3 f).",
-        "ru": "Квантовое число углового момента (l) определяет тип и форму орбитали (l = 0 с, l = 1 p, l = 2 d, l = 3 f).",
+        "ru": "Квантовое число углового момента (l) определяет тип и форму орбитали (l = 0 s, l = 1 p, l = 2 d, l = 3 f).",
         "ar": "يحدد الرقم الكمي للزخم الزاوي (l) نوع وشكل المدار (l = 0 s، l = 1 p، l = 2 d، l = 3 f).",
         "zh": "角动量量子数 (l) 指定轨道的类型和形状（l = 0 s、l = 1 p、l = 2 d、l = 3 f）。",
         "ku": "Hejmara quantuma leza goşeyî (l) cure û şiklê orbîtalê diyar dike (l = 0 s, l = 1 p, l = 2 d, l = 3 f)."
@@ -77,13 +77,13 @@ export const unit11: ChemistryUnitSeedData = {
       "id": "u11-f03",
       "fact": {
         "tr": "Manyetik kuantum sayısı (ml), orbitalin uzaydaki yönelimini belirtir ve -l ile +l arasındaki tamsayı değerlerini alır.",
-        "en": "The magnetic quantum number (ml) indicates the orientation of the orbital in space and takes integer values ​​between -l and +1.",
-        "de": "Die magnetische Quantenzahl (ml) gibt die Orientierung des Orbitals im Raum an und nimmt ganzzahlige Werte zwischen -l und +1 an.",
-        "fr": "Le nombre quantique magnétique (ml) indique l'orientation de l'orbitale dans l'espace et prend des valeurs entières comprises entre -l et +1.",
-        "ru": "Магнитное квантовое число (ml) указывает на ориентацию орбитали в пространстве и принимает целые значения от -l до +1.",
-        "ar": "يشير رقم الكم المغناطيسي (ml) إلى اتجاه المدار في الفضاء ويأخذ قيمًا صحيحة بين -l و+1.",
-        "zh": "磁量子数（ml）表示轨道在空间中的取向，取-l到+1之间的整数值。",
-        "ku": "Hejmara quantumê ya magnetîkî (ml) arastekirina orbîtalê li fezayê destnîşan dike û jimareyên yekjimar di navbera -l û +1 de digire."
+        "en": "The magnetic quantum number (ml) indicates the orientation of the orbital in space and takes integer values ​​between -l and +l.",
+        "de": "Die magnetische Quantenzahl (ml) gibt die Orientierung des Orbitals im Raum an und nimmt ganzzahlige Werte zwischen -l und +l an.",
+        "fr": "Le nombre quantique magnétique (ml) indique l'orientation de l'orbitale dans l'espace et prend des valeurs entières comprises entre -l et +l.",
+        "ru": "Магнитное квантовое число (ml) указывает на ориентацию орбитали в пространстве и принимает целые значения от -l до +l.",
+        "ar": "يشير رقم الكم المغناطيسي (ml) إلى اتجاه المدار في الفضاء ويأخذ قيمًا صحيحة بين -l و+l.",
+        "zh": "磁量子数（ml）表示轨道在空间中的取向，取-l到+l之间的整数值。",
+        "ku": "Hejmara quantumê ya magnetîkî (ml) arastekirina orbîtalê li fezayê destnîşan dike û jimareyên yekjimar di navbera -l û +l de digire."
       },
       "trap": {
         "tr": "d orbitalleri için ml sadece -1, 0, +1 değerlerini alır.",
@@ -103,7 +103,7 @@ export const unit11: ChemistryUnitSeedData = {
         "en": "The spin quantum number (ms) indicates the direction of rotation of the electron around its axis (+1/2 or -1/2).",
         "de": "Die Spinquantenzahl (ms) gibt die Rotationsrichtung des Elektrons um seine Achse (+1/2 oder -1/2) an.",
         "fr": "Le nombre quantique de spin (ms) indique le sens de rotation de l'électron autour de son axe (+1/2 ou -1/2).",
-        "ru": "Спиновое квантовое число (мс) указывает направление вращения электрона вокруг своей оси (+1/2 или -1/2).",
+        "ru": "Спиновое квантовое число (ms) указывает направление вращения электрона вокруг своей оси (+1/2 или -1/2).",
         "ar": "يشير الرقم الكمي المغزلي (ms) إلى اتجاه دوران الإلكترون حول محوره (+1/2 أو -1/2).",
         "zh": "自旋量子数 (ms) 表示电子绕其轴旋转的方向（+1/2 或 -1/2）。",
         "ku": "Hejmara kuantûmê ya spinê (ms) arasteya zivirandina elektronê li dora eksê xwe (+1/2 an -1/2) nîşan dide."
@@ -160,7 +160,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Nach der Aufbau-Regel wird das 3d-Orbital immer vor dem 4s-Orbital gefüllt.",
         "fr": "Selon la règle d'Aufbau, l'orbitale 3d est toujours remplie avant l'orbitale 4s.",
         "ru": "Согласно правилу Ауфбау, 3d-орбиталь всегда заполняется раньше 4s-орбитали.",
-        "ar": "وفقًا لقاعدة أوفباو، فإن المدار ثلاثي الأبعاد يمتلئ دائمًا قبل المدار 4s.",
+        "ar": "وفقًا لقاعدة أوفباو، فإن المدار 3d يمتلئ دائمًا قبل المدار 4s.",
         "zh": "根据 Aufbau 规则，3d 轨道总是在 4s 轨道之前被填充。",
         "ku": "Li gorî qaîdeya Aufbau, orbîtala 3d her dem berî orbitala 4s tê dagirtin."
       }
@@ -227,9 +227,9 @@ export const unit11: ChemistryUnitSeedData = {
         "tr": "Fe atomu iyonlaşırken elektron önce 3d orbitalinden kopar.",
         "en": "While the Fe atom is ionized, the electron first breaks away from the 3d orbital.",
         "de": "Während das Fe-Atom ionisiert wird, löst sich zunächst das Elektron aus dem 3d-Orbital.",
-        "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3D.",
+        "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3d.",
         "ru": "Пока атом Fe ионизируется, электрон сначала отрывается от 3d-орбитали.",
-        "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار ثلاثي الأبعاد.",
+        "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار 3d.",
         "zh": "当 Fe 原子被电离时，电子首先脱离 3d 轨道。",
         "ku": "Dema ku atoma Fe îyonîze dibe, elektron pêşî ji orbitala 3d vediqete."
       }
@@ -239,35 +239,35 @@ export const unit11: ChemistryUnitSeedData = {
       "fact": {
         "tr": "Aynı periyotta iyonlaşma enerjisi \"3 aşağı 5 yukarı\" kuralına göre sıralanır: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
         "en": "In the same period, ionization energy is ranked according to the \"3 down, 5 up\" rule: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
-        "de": "Im gleichen Zeitraum wird die Ionisierungsenergie nach der Regel „3 runter, 5 rauf“ eingestuft: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
-        "fr": "Au cours de la même période, l'énergie d'ionisation est classée selon la règle « 3 vers le bas, 5 vers le haut » : 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
-        "ru": "В этот же период энергия ионизации ранжируется по правилу «3 вниз, 5 вверх»: 1А < 3А < 2А < 4А < 6А < 5А < 7А < 8А.",
-        "ar": "وفي نفس الفترة، يتم ترتيب طاقة التأين وفقًا لقاعدة \"3 لأسفل، 5 لأعلى\": 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
-        "zh": "同一时期内，电离能按照“3下5上”的规则排列：1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A。",
-        "ku": "Di heman serdemê de, enerjiya iyonîzasyonê li gorî qaîdeya \"3 berjêr, 5 jor\" tê rêz kirin: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A."
+        "de": "In derselben Periode wird die Ionisierungsenergie nach der Regel „3 runter, 5 rauf“ eingestuft: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
+        "fr": "Dans une même période, l'énergie d'ionisation est classée selon la règle « 3 vers le bas, 5 vers le haut » : 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
+        "ru": "В одном периоде энергия ионизации ранжируется по правилу «3 вниз, 5 вверх»: 1А < 3А < 2А < 4А < 6А < 5А < 7А < 8А.",
+        "ar": "في الدورة نفسها، يتم ترتيب طاقة التأين وفقًا لقاعدة \"3 لأسفل، 5 لأعلى\": 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
+        "zh": "同一周期内，电离能按照“3下5上”的规则排列：1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A。",
+        "ku": "Di heman periyodê de, enerjiya iyonîzasyonê li gorî qaîdeya \"3 berjêr, 5 jor\" tê rêz kirin: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A."
       },
       "trap": {
         "tr": "Aynı periyotta 3A grubunun iyonlaşma enerjisi 2A grubundan büyüktür.",
         "en": "In the same period, the ionization energy of the 3A group is greater than that of the 2A group.",
-        "de": "Im gleichen Zeitraum ist die Ionisierungsenergie der 3A-Gruppe größer als die der 2A-Gruppe.",
+        "de": "In derselben Periode ist die Ionisierungsenergie der 3A-Gruppe größer als die der 2A-Gruppe.",
         "fr": "Dans la même période, l'énergie d'ionisation du groupe 3A est supérieure à celle du groupe 2A.",
-        "ru": "В этот же период энергия ионизации группы 3А больше, чем у группы 2А.",
-        "ar": "وفي نفس الفترة، تكون طاقة التأين للمجموعة 3A أكبر من طاقة التأين للمجموعة 2A.",
-        "zh": "同一时期，3A基团的电离能大于2A基团的电离能。",
-        "ku": "Di heman serdemê de, enerjiya iyonîzasyona koma 3A ji ya koma 2A mezintir e."
+        "ru": "В одном периоде энергия ионизации группы 3А больше, чем у группы 2А.",
+        "ar": "في الدورة نفسها، تكون طاقة التأين للمجموعة 3A أكبر من طاقة التأين للمجموعة 2A.",
+        "zh": "同一周期，3A族的电离能大于2A族的电离能。",
+        "ku": "Di heman periyodê de, enerjiya iyonîzasyona koma 3A ji ya koma 2A mezintir e."
       }
     },
     {
       "id": "u11-f11",
       "fact": {
-        "tr": "s orbitalleri küresel simetriktir ve her enerji düzeyinde 1 tane (en çok 2 elektron) bulunur.",
-        "en": "s orbitals are spherically symmetrical and there is 1 electron (maximum 2 electrons) in each energy level.",
-        "de": "s-Orbitale sind sphärisch symmetrisch und in jedem Energieniveau befindet sich 1 Elektron (maximal 2 Elektronen).",
-        "fr": "Les orbitales sont à symétrie sphérique et il y a 1 électron (maximum 2 électrons) dans chaque niveau d'énergie.",
-        "ru": "s-орбитали сферически симметричны, и на каждом энергетическом уровне находится 1 электрон (максимум 2 электрона).",
-        "ar": "مدارات s متناظرة كرويًا ويوجد إلكترون واحد (بحد أقصى إلكترونين) في كل مستوى طاقة.",
-        "zh": "s 轨道是球对称的，每个能级有 1 个电子（最多 2 个电子）。",
-        "ku": "Orbîtalên s bi sferîk sîmetrîk in û di her asta enerjiyê de 1 elektron (herî zêde 2 elektron) heye."
+        "tr": "s orbitalleri küresel simetriktir ve her enerji düzeyinde 1 tane s orbitali bulunur (en çok 2 elektron alır).",
+        "en": "s orbitals are spherically symmetric; each energy level has one s orbital (holding at most 2 electrons).",
+        "de": "s-Orbitale sind kugelsymmetrisch; jedes Energieniveau hat ein s-Orbital (mit höchstens 2 Elektronen).",
+        "fr": "Les orbitales s sont à symétrie sphérique ; chaque niveau d'énergie possède une orbitale s (contenant au plus 2 électrons).",
+        "ru": "s-орбитали сферически симметричны; на каждом энергетическом уровне есть одна s-орбиталь (вмещает не более 2 электронов).",
+        "ar": "مدارات s متناظرة كرويًا، ويوجد في كل مستوى طاقة مدار s واحد (يتسع لإلكترونين على الأكثر).",
+        "zh": "s轨道呈球形对称，每个能级有1个s轨道（最多容纳2个电子）。",
+        "ku": "Orbîtalên s sîmetriya gewherî nîşan didin; di her asta enerjiyê de 1 orbîtala s heye (herî zêde 2 elektronan digire)."
       },
       "trap": {
         "tr": "s orbitalleri sadece n = 2'den itibaren başlar.",
@@ -369,7 +369,7 @@ export const unit11: ChemistryUnitSeedData = {
         "ru": "Электронная конфигурация, оканчивающаяся на p4, сферически симметрична.",
         "ar": "تكوين الإلكترون المنتهي بـ p4 متماثل كرويًا.",
         "zh": "以 p4 结尾的电子构型是球对称的。",
-        "ku": "Veavakirina elektronê ku bi p4-ê diqede, bi rengek simetrîk e."
+        "ku": "Veavakirina elektronê ku bi p4-ê diqede sîmetriya gewherî nîşan dide."
       }
     },
     {
@@ -454,26 +454,26 @@ export const unit11: ChemistryUnitSeedData = {
       },
       "distinction": {
         "tr": "s orbitali küresel simetriktir (l=0, 1 adet); p orbitali yönlü iki loblu halterdir (l=1, 3 adet).",
-        "en": "s orbital is spherically symmetric (l=0, 1); It is a directional two-lobed barbell with a p orbital (l=1, 3 pieces).",
-        "de": "s-Orbital ist sphärisch symmetrisch (l=0, 1); Es handelt sich um eine gerichtete zweilappige Langhantel mit einem p-Orbital (l=1, 3 Stück).",
-        "fr": "L'orbitale s est à symétrie sphérique (l=0, 1) ; Il s'agit d'une barre directionnelle bilobée avec une orbitale p (l=1, 3 pièces).",
-        "ru": "s-орбиталь сферически симметрична (l=0, 1); Это направленная двулопастная штанга с p-орбиталью (l=1,3 шт.).",
-        "ar": "المدار s متماثل كرويًا (l=0, 1); وهو عبارة عن قضيب حديد اتجاهي ذو فصين مع مدار p (l = 1، 3 قطع).",
-        "zh": "s 轨道是球对称的 (l=0, 1)；它是一个带有 p 轨道的定向两叶杠铃（l=1，3 件）。",
-        "ku": "s orbital bi spherîk sîmetrîk e (l=0, 1); Ew barbelek du-lobek arasteyî ye û bi orbîtalek p (l=1, 3 perçe) ye."
+        "en": "The s orbital is spherically symmetric (l=0, 1 orbital); the p orbital is a directional two-lobed dumbbell (l=1, 3 orbitals).",
+        "de": "Das s-Orbital ist kugelsymmetrisch (l=0, 1 Orbital); das p-Orbital ist eine gerichtete, zweilappige Hantel (l=1, 3 Orbitale).",
+        "fr": "L'orbitale s est à symétrie sphérique (l=0, 1 orbitale) ; l'orbitale p est un haltère orienté à deux lobes (l=1, 3 orbitales).",
+        "ru": "s-орбиталь сферически симметрична (l=0, 1 орбиталь); p-орбиталь — направленная двухлопастная гантель (l=1, 3 орбитали).",
+        "ar": "المدار s متناظر كرويًا (l=0، مدار واحد)؛ والمدار p على شكل دمبل موجّه ذي فصين (l=1، 3 مدارات).",
+        "zh": "s轨道呈球形对称（l=0，1个）；p轨道是有方向性的双叶哑铃形（l=1，3个）。",
+        "ku": "Orbîtala s sîmetriya gewherî heye (l=0, 1 orbîtal); orbîtala p wek halterê du-lobî û arasteyî ye (l=1, 3 orbîtal)."
       }
     },
     {
       "id": "u11-c03",
       "conceptA": {
         "tr": "Baş Kuantum Sayısı (n)",
-        "en": "Lead Quantum Number (n)",
-        "de": "Leitquantenzahl (n)",
-        "fr": "Nombre quantique de plomb (n)",
-        "ru": "Квантовое число свинца (n)",
-        "ar": "رقم الكم الرصاصي (ن)",
-        "zh": "铅量子数 (n)",
-        "ku": "Hejmara Kuantuma Pêşîn (n)"
+        "en": "Principal Quantum Number (n)",
+        "de": "Hauptquantenzahl (n)",
+        "fr": "Nombre quantique principal (n)",
+        "ru": "Главное квантовое число (n)",
+        "ar": "عدد الكم الرئيسي (n)",
+        "zh": "主量子数 (n)",
+        "ku": "Hejmara kuantûmê ya sereke (n)"
       },
       "conceptB": {
         "tr": "Açısal Momentum Kuantum (l)",
@@ -481,7 +481,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Drehimpuls Quantum (l)",
         "fr": "Moment angulaire quantique (l)",
         "ru": "Квант углового момента (l)",
-        "ar": "الزخم الزاوي الكم (ل)",
+        "ar": "عدد كم الزخم الزاوي (l)",
         "zh": "角动量量子 (l)",
         "ku": "Momenta Angular Quantum (l)"
       },
@@ -503,9 +503,9 @@ export const unit11: ChemistryUnitSeedData = {
         "en": "Magnetic Quantum (ml)",
         "de": "Magnetisches Quantum (ml)",
         "fr": "Quantique magnétique (ml)",
-        "ru": "Магнитный Квант (мл)",
-        "ar": "الكم المغناطيسي (مل)",
-        "zh": "磁量子（ml）",
+        "ru": "Магнитное квантовое число (ml)",
+        "ar": "عدد الكم المغناطيسي (ml)",
+        "zh": "磁量子数（ml）",
         "ku": "Quantuma Magnetîk (ml)"
       },
       "conceptB": {
@@ -513,9 +513,9 @@ export const unit11: ChemistryUnitSeedData = {
         "en": "Spin Quantum Number (ms)",
         "de": "Spinquantenzahl (ms)",
         "fr": "Nombre quantique de spin (ms)",
-        "ru": "Спиновое квантовое число (мс)",
-        "ar": "عدد الكم المغزلي (ملي ثانية)",
-        "zh": "自旋量子数（毫秒）",
+        "ru": "Спиновое квантовое число (ms)",
+        "ar": "عدد الكم المغزلي (ms)",
+        "zh": "自旋量子数（ms）",
         "ku": "Hejmara Kuantûmê ya Spin (ms)"
       },
       "distinction": {
@@ -523,7 +523,7 @@ export const unit11: ChemistryUnitSeedData = {
         "en": "ml is the 3D orientation of the orbital in space (-l..+l); ms indicates the direction of rotation of the electron around its axis (+1/2, -1/2).",
         "de": "ml ist die 3D-Ausrichtung des Orbitals im Raum (-l..+l); ms gibt die Rotationsrichtung des Elektrons um seine Achse an (+1/2, -1/2).",
         "fr": "ml est l'orientation 3D de l'orbitale dans l'espace (-l..+l) ; ms indique le sens de rotation de l'électron autour de son axe (+1/2, -1/2).",
-        "ru": "ml – трехмерная ориентация орбитали в пространстве (-l..+l); мс указывает направление вращения электрона вокруг своей оси (+1/2, -1/2).",
+        "ru": "ml – трехмерная ориентация орбитали в пространстве (-l..+l); ms указывает направление вращения электрона вокруг своей оси (+1/2, -1/2).",
         "ar": "ml هو الاتجاه ثلاثي الأبعاد للمدار في الفضاء (-l..+l); يشير ms إلى اتجاه دوران الإلكترون حول محوره (+1/2، -1/2).",
         "zh": "ml 是轨道在空间中的 3D 方向 (-l..+l)； ms 表示电子绕其轴的旋转方向（+1/2，-1/2）。",
         "ku": "ml di fezayê de seyrûsefera 3D ya orbîtalê ye (-l..+l); ms arasteya zivirîna elektronê li dora eksê xwe nîşan dide (+1/2, -1/2)."
@@ -549,17 +549,17 @@ export const unit11: ChemistryUnitSeedData = {
         "ru": "Сферическая симметрия",
         "ar": "التماثل الكروي",
         "zh": "球对称",
-        "ku": "Spherical Symmetry"
+        "ku": "Sîmetriya gewherî"
       },
       "distinction": {
         "tr": "Pauli bir atomda 4 kuantum sayısı da aynı iki elektron olamayacağını; küresel simetri son orbitalin yarı veya tam dolu olma kararlılığını belirtir.",
-        "en": "Pauli stated that there cannot be two electrons with the same quantum number 4 in an atom; Spherical symmetry indicates the stability of the last orbital being half or fully occupied.",
-        "de": "Pauli stellte fest, dass es in einem Atom nicht zwei Elektronen mit derselben Quantenzahl 4 geben kann; Die sphärische Symmetrie gibt die Stabilität an, bei der das letzte Orbital zur Hälfte oder vollständig besetzt ist.",
-        "fr": "Pauli a déclaré qu'il ne peut pas y avoir deux électrons avec le même nombre quantique 4 dans un atome ; La symétrie sphérique indique que la stabilité de la dernière orbitale est à moitié ou entièrement occupée.",
-        "ru": "Паули заявил, что в атоме не может быть двух электронов с одинаковым квантовым числом 4; Сферическая симметрия указывает на стабильность последней орбитали, занятой наполовину или полностью.",
-        "ar": "وذكر باولي أنه لا يمكن أن يكون هناك إلكترونين لهما نفس العدد الكمي 4 في الذرة؛ يشير التناظر الكروي إلى استقرار المدار الأخير الذي يكون نصفه أو مشغولًا بالكامل.",
-        "zh": "泡利指出，一个原子中不可能有两个具有相同量子数4的电子；球对称性表明最后一个轨道被一半或完全占据的稳定性。",
-        "ku": "Pauli diyar kir ku di atomê de du elektronên bi heman kuantuma jimare 4 nikarin hebin; Simetrîya sperîkî îstîqrara orbîtala paşîn nîv an bi tevahî dagirkirî nîşan dide."
+        "en": "Pauli: no two electrons in an atom can have all four quantum numbers the same; spherical symmetry describes the extra stability of a half-filled or completely filled last sublevel.",
+        "de": "Pauli: In einem Atom können keine zwei Elektronen in allen vier Quantenzahlen übereinstimmen; die Kugelsymmetrie beschreibt die besondere Stabilität eines halb- oder vollbesetzten letzten Unterniveaus.",
+        "fr": "Pauli : deux électrons d'un atome ne peuvent pas avoir leurs quatre nombres quantiques identiques ; la symétrie sphérique décrit la stabilité particulière d'une dernière sous-couche à moitié ou entièrement remplie.",
+        "ru": "Паули: в атоме не может быть двух электронов с одинаковыми всеми четырьмя квантовыми числами; сферическая симметрия означает особую устойчивость наполовину или полностью заполненного последнего подуровня.",
+        "ar": "باولي: لا يمكن أن يتطابق إلكترونان في الذرة في أعداد الكم الأربعة جميعها؛ أما التناظر الكروي فيعبّر عن الاستقرار الخاص للمستوى الفرعي الأخير نصف الممتلئ أو الممتلئ تمامًا.",
+        "zh": "泡利原理：同一原子中不可能有两个电子的四个量子数完全相同；球形对称指最后一个亚层半充满或全充满时的特殊稳定性。",
+        "ku": "Pauli: di atomekê de du elektron nikarin her çar hejmarên kuantûmê wekhev hebin; sîmetriya gewherî aramiya taybet a binasta dawî ya nîv-tijî an tam-tijî nîşan dide."
       }
     },
     {
@@ -571,18 +571,18 @@ export const unit11: ChemistryUnitSeedData = {
         "fr": "État fondamental",
         "ru": "Основное состояние",
         "ar": "الحالة الأرضية",
-        "zh": "Ground State",
-        "ku": "Dewleta erdê"
+        "zh": "基态",
+        "ku": "Rewşa bingehîn"
       },
       "conceptB": {
         "tr": "Uyarılmış Hal",
         "en": "Excited State",
-        "de": "Aufgeregter Zustand",
+        "de": "Angeregter Zustand",
         "fr": "État excité",
         "ru": "Возбужденное состояние",
-        "ar": "الدولة متحمس",
-        "zh": "兴奋态",
-        "ku": "Dewleta heyecan"
+        "ar": "الحالة المثارة",
+        "zh": "激发态",
+        "ku": "Rewşa heyecanbûyî"
       },
       "distinction": {
         "tr": "Temel hal elektronların en düşük enerjili kararlı düzenidir; uyarılmış hal dışarıdan enerji alarak üst orbitale sıçramış kararsız durumdur.",
@@ -598,67 +598,67 @@ export const unit11: ChemistryUnitSeedData = {
     {
       "id": "u11-c07",
       "conceptA": {
-        "tr": "Aufbau İlkesi",
-        "en": "Aufbau Principle",
-        "de": "Aufbauprinzip",
-        "fr": "Principe d'Aufbau",
-        "ru": "Принцип Ауфбау",
-        "ar": "مبدأ أوفباو",
-        "zh": "奥夫鲍原则",
-        "ku": "Prensîba Aufbau"
+        "tr": "Bohr Atom Modeli",
+        "en": "Bohr Atomic Model",
+        "de": "Bohrsches Atommodell",
+        "fr": "Modèle atomique de Bohr",
+        "ru": "Модель атома Бора",
+        "ar": "نموذج بور الذري",
+        "zh": "玻尔原子模型",
+        "ku": "Modela atomê ya Bohr"
       },
       "conceptB": {
-        "tr": "Hund Kuralı",
-        "en": "Hund's Rule",
-        "de": "Hunds Regel",
-        "fr": "La règle de Hund",
-        "ru": "Правило Хунда",
-        "ar": "قاعدة هوند",
-        "zh": "洪特法则",
-        "ku": "Qanûna Hund"
+        "tr": "Modern Atom Modeli",
+        "en": "Modern Atomic Model",
+        "de": "Modernes Atommodell",
+        "fr": "Modèle atomique moderne",
+        "ru": "Современная модель атома",
+        "ar": "النموذج الذري الحديث",
+        "zh": "现代原子模型",
+        "ku": "Modela atomê ya nûjen"
       },
       "distinction": {
-        "tr": "Aufbau elektronların düşük enerjili orbitale yerleşmesini, Hund eş enerjili orbitallere önce tek tek paralel spinle girmesini kurala bağlar.",
-        "en": "Aufbau rules that electrons settle in low-energy orbitals, while Hund rules that electrons first enter orbitals with equal energy, one by one, with parallel spin.",
-        "de": "Aufbau geht davon aus, dass sich Elektronen in Orbitalen mit niedriger Energie niederlassen, während Hund davon ausgeht, dass Elektronen zunächst nacheinander in Orbitale mit gleicher Energie und parallelem Spin eintreten.",
-        "fr": "Aufbau stipule que les électrons s'installent dans des orbitales de basse énergie, tandis que Hund stipule que les électrons entrent d'abord dans des orbitales d'énergie égale, un par un, avec un spin parallèle.",
-        "ru": "Ауфбау утверждает, что электроны располагаются на низкоэнергетических орбиталях, в то время как Хунд утверждает, что электроны сначала один за другим выходят на орбитали с одинаковой энергией и с параллельным спином.",
-        "ar": "يحكم أوفباو أن الإلكترونات تستقر في مدارات منخفضة الطاقة، بينما يحكم هوند أن الإلكترونات تدخل أولاً إلى مدارات ذات طاقة متساوية، واحدة تلو الأخرى، بدوران متوازي.",
-        "zh": "奥夫鲍规则电子在低能轨道上定居，而洪德（Hund）规则电子首先进入具有相等能量的轨道，一个接一个，并具有平行自旋。",
-        "ku": "Aufbau qaîde dike ku elektron di orbîtalên kêm-enerjiyê de bi cih dibin, dema ku Hund biryar dide ku elektron yekem car bi enerjiya wekhev, yek bi yek, bi spinek paralel dikevin orbîtalan."
+        "tr": "Bohr modeline göre elektronlar çekirdekten belirli uzaklıktaki dairesel yörüngelerde bulunur ve model yalnızca tek elektronlu taneciklerin (H, He+) spektrumunu açıklar; modern atom modelinde elektronun yeri kesin olarak belirlenemez, yalnızca orbital adı verilen bölgelerde bulunma olasılığından söz edilir.",
+        "en": "In the Bohr model electrons move in circular orbits at fixed distances from the nucleus, and the model explains only the spectra of one-electron species (H, He+); in the modern model the electron's position cannot be known exactly, only its probability of being found in regions called orbitals.",
+        "de": "Im Bohrschen Modell bewegen sich Elektronen auf Kreisbahnen mit festem Abstand zum Kern; das Modell erklärt nur die Spektren von Einelektronenteilchen (H, He+). Im modernen Modell ist der Ort des Elektrons nicht genau bestimmbar, nur seine Aufenthaltswahrscheinlichkeit in Bereichen, die Orbitale heißen.",
+        "fr": "Dans le modèle de Bohr, les électrons décrivent des orbites circulaires à distance fixe du noyau, et le modèle n'explique que les spectres des espèces à un électron (H, He+) ; dans le modèle moderne, la position de l'électron ne peut être connue exactement, seule sa probabilité de présence dans des régions appelées orbitales l'est.",
+        "ru": "В модели Бора электроны движутся по круговым орбитам на определённом расстоянии от ядра, и модель объясняет только спектры одноэлектронных частиц (H, He+); в современной модели положение электрона нельзя точно определить — говорят лишь о вероятности его нахождения в областях, называемых орбиталями.",
+        "ar": "في نموذج بور تتحرك الإلكترونات في مدارات دائرية على أبعاد محددة من النواة، ولا يفسر النموذج إلا أطياف الأنواع أحادية الإلكترون (H، He+)؛ أما في النموذج الحديث فلا يمكن تحديد موقع الإلكترون بدقة، بل احتمال وجوده في مناطق تسمى الأوربيتالات.",
+        "zh": "玻尔模型认为电子在离核固定距离的圆形轨道上运动，只能解释单电子粒子（H、He+）的光谱；现代原子模型中电子的位置无法确定，只能描述其在称为原子轨道的区域中出现的概率。",
+        "ku": "Li gorî modela Bohr elektron li ser rêgehên dorhêlî yên bi dûrahiya diyar ji navokê dizivirin û model tenê spektra tenekên yek-elektronî (H, He+) rave dike; di modela nûjen de cihê elektronê bi tevahî nayê zanîn, tenê îhtîmala dîtina wê di herêmên bi navê orbîtal de tê gotin."
       }
     },
     {
       "id": "u11-c08",
       "conceptA": {
-        "tr": "Aufbau İlkesi",
-        "en": "Aufbau Principle",
-        "de": "Aufbauprinzip",
-        "fr": "Principe d'Aufbau",
-        "ru": "Принцип Ауфбау",
-        "ar": "مبدأ أوفباو",
-        "zh": "奥夫鲍原则",
-        "ku": "Prensîba Aufbau"
+        "tr": "İyonlaşma Enerjisi",
+        "en": "Ionization Energy",
+        "de": "Ionisierungsenergie",
+        "fr": "Énergie d'ionisation",
+        "ru": "Энергия ионизации",
+        "ar": "طاقة التأين",
+        "zh": "电离能",
+        "ku": "Enerjiya îyonbûnê"
       },
       "conceptB": {
-        "tr": "Hund Kuralı",
-        "en": "Hund's Rule",
-        "de": "Hunds Regel",
-        "fr": "La règle de Hund",
-        "ru": "Правило Хунда",
-        "ar": "قاعدة هوند",
-        "zh": "洪特法则",
-        "ku": "Qanûna Hund"
+        "tr": "Elektron İlgisi",
+        "en": "Electron Affinity",
+        "de": "Elektronenaffinität",
+        "fr": "Affinité électronique",
+        "ru": "Сродство к электрону",
+        "ar": "الألفة الإلكترونية",
+        "zh": "电子亲和能",
+        "ku": "Têkiliya elektronê"
       },
       "distinction": {
-        "tr": "Aufbau elektronların düşük enerjili orbitale yerleşmesini, Hund eş enerjili orbitallere önce tek tek paralel spinle girmesini kurala bağlar.",
-        "en": "Aufbau rules that electrons settle in low-energy orbitals, while Hund rules that electrons first enter orbitals with equal energy, one by one, with parallel spin.",
-        "de": "Aufbau geht davon aus, dass sich Elektronen in Orbitalen mit niedriger Energie niederlassen, während Hund davon ausgeht, dass Elektronen zunächst nacheinander in Orbitale mit gleicher Energie und parallelem Spin eintreten.",
-        "fr": "Aufbau stipule que les électrons s'installent dans des orbitales de basse énergie, tandis que Hund stipule que les électrons entrent d'abord dans des orbitales d'énergie égale, un par un, avec un spin parallèle.",
-        "ru": "Ауфбау утверждает, что электроны располагаются на низкоэнергетических орбиталях, в то время как Хунд утверждает, что электроны сначала один за другим выходят на орбитали с одинаковой энергией и с параллельным спином.",
-        "ar": "يحكم أوفباو أن الإلكترونات تستقر في مدارات منخفضة الطاقة، بينما يحكم هوند أن الإلكترونات تدخل أولاً إلى مدارات ذات طاقة متساوية، واحدة تلو الأخرى، بدوران متوازي.",
-        "zh": "奥夫鲍规则电子在低能轨道上定居，而洪德（Hund）规则电子首先进入具有相等能量的轨道，一个接一个，并具有平行自旋。",
-        "ku": "Aufbau qaîde dike ku elektron di orbîtalên kêm-enerjiyê de bi cih dibin, dema ku Hund biryar dide ku elektron yekem car bi enerjiya wekhev, yek bi yek, bi spinek paralel dikevin orbîtalan."
+        "tr": "İyonlaşma enerjisi gaz hâlindeki nötr bir atomdan bir elektron koparmak için gereken enerjidir ve her zaman endotermiktir; elektron ilgisi gaz hâlindeki nötr bir atomun bir elektron almasıyla gerçekleşen enerji değişimidir ve çoğu atom için ekzotermiktir.",
+        "en": "Ionization energy is the energy needed to remove an electron from a neutral gaseous atom and is always endothermic; electron affinity is the energy change when a neutral gaseous atom gains an electron and is exothermic for most atoms.",
+        "de": "Die Ionisierungsenergie ist die Energie, die nötig ist, um einem neutralen gasförmigen Atom ein Elektron zu entreißen, und ist immer endotherm; die Elektronenaffinität ist die Energieänderung bei der Aufnahme eines Elektrons durch ein neutrales gasförmiges Atom und ist für die meisten Atome exotherm.",
+        "fr": "L'énergie d'ionisation est l'énergie nécessaire pour arracher un électron à un atome neutre gazeux ; elle est toujours endothermique. L'affinité électronique est la variation d'énergie lorsqu'un atome neutre gazeux capte un électron ; elle est exothermique pour la plupart des atomes.",
+        "ru": "Энергия ионизации — энергия, необходимая для отрыва электрона от нейтрального атома в газовой фазе; процесс всегда эндотермический. Сродство к электрону — изменение энергии при присоединении электрона к нейтральному атому в газовой фазе; для большинства атомов процесс экзотермический.",
+        "ar": "طاقة التأين هي الطاقة اللازمة لنزع إلكترون من ذرة متعادلة في الحالة الغازية وهي ماصّة للحرارة دائمًا؛ أما الألفة الإلكترونية فهي تغيّر الطاقة عند اكتساب ذرة متعادلة غازية إلكترونًا، وهي طاردة للحرارة لمعظم الذرات.",
+        "zh": "电离能是从气态中性原子中移去一个电子所需的能量，总是吸热的；电子亲和能是气态中性原子获得一个电子时的能量变化，对大多数原子是放热的。",
+        "ku": "Enerjiya îyonbûnê enerjiya ku ji bo derxistina elektronekê ji atomeke bêalî ya di rewşa gazê de pêwîst e û her tim endotermîk e; têkiliya elektronê guhertina enerjiyê ye dema ku atomeke bêalî ya gazî elektronekê werdigire û ji bo piraniya atoman ekzotermîk e."
       }
     }
   ],
@@ -671,7 +671,7 @@ export const unit11: ChemistryUnitSeedData = {
         "de": "Rangfolge der Orbitalenergie (n + l-Inkrement)",
         "fr": "Classement de l'énergie orbitale (incrément n + l)",
         "ru": "Рейтинг орбитальной энергии (приращение n + l)",
-        "ar": "تصنيف الطاقة المدارية (ن + لتر الزيادة)",
+        "ar": "تصنيف طاقة المدارات (تزايد n + l)",
         "zh": "轨道能量排名（n + l 增量）",
         "ku": "Rêzkirina Enerjiya Orbital (n + l Zêdebûn)"
       },
@@ -764,11 +764,11 @@ export const unit11: ChemistryUnitSeedData = {
         {
           "tr": "4s'ten sonra 3d orbitallerine elektron yerleşir",
           "en": "After 4s, electrons are placed in 3d orbitals.",
-          "de": "Nach 4 Sekunden werden die Elektronen in 3D-Orbitalen platziert.",
-          "fr": "Après 4 secondes, les électrons sont placés sur des orbitales 3D.",
-          "ru": "Через 4 секунды электроны перемещаются на 3d-орбитали.",
-          "ar": "بعد 4s، يتم وضع الإلكترونات في مدارات ثلاثية الأبعاد.",
-          "zh": "4 秒后，电子被置于 3d 轨道中。",
+          "de": "Nach 4s werden die Elektronen in die 3d-Orbitale eingebaut.",
+          "fr": "Après la 4s, les électrons se placent dans les orbitales 3d.",
+          "ru": "После 4s электроны заполняют 3d-орбитали.",
+          "ar": "بعد 4s، توضع الإلكترونات في مدارات 3d.",
+          "zh": "4s之后，电子填入3d轨道。",
           "ku": "Piştî 4s, elektron di orbitalên 3d de têne danîn."
         }
       ]
@@ -821,8 +821,8 @@ export const unit11: ChemistryUnitSeedData = {
           "en": "ms is determined from the rotation of the electron around its own axis",
           "de": "ms wird aus der Drehung des Elektrons um seine eigene Achse bestimmt",
           "fr": "ms est déterminé à partir de la rotation de l'électron autour de son propre axe",
-          "ru": "мс определяется из вращения электрона вокруг собственной оси",
-          "ar": "يتم تحديد مللي ثانية من دوران الإلكترون حول محوره",
+          "ru": "ms определяется из вращения электрона вокруг собственной оси",
+          "ar": "يتم تحديد ms من دوران الإلكترون حول محوره",
           "zh": "ms 由电子绕其自身轴的旋转确定",
           "ku": "ms ji zivirîna elektronê li dora tehma xwe tê destnîşankirin"
         }
@@ -844,10 +844,10 @@ export const unit11: ChemistryUnitSeedData = {
         {
           "tr": "Sc'den itibaren 3d orbitalleri doldurulur",
           "en": "3d orbitals are filled starting from Sc",
-          "de": "3D-Orbitale werden ab Sc gefüllt",
-          "fr": "Les orbitales 3D sont remplies à partir de Sc",
+          "de": "3d-Orbitale werden ab Sc gefüllt",
+          "fr": "Les orbitales 3d sont remplies à partir de Sc",
           "ru": "3d-орбитали заполняются, начиная с Sc",
-          "ar": "تمتلئ المدارات ثلاثية الأبعاد بدءًا من Sc",
+          "ar": "تمتلئ مدارات 3d بدءًا من Sc",
           "zh": "3d 轨道从 Sc 开始填充",
           "ku": "Orbitalên 3d ji Sc dest pê dikin têne dagirtin"
         },
@@ -864,10 +864,10 @@ export const unit11: ChemistryUnitSeedData = {
         {
           "tr": "3d orbitalleri yarı dolu hale gelerek küresel simetri kazanır",
           "en": "3d orbitals become half-filled and gain spherical symmetry",
-          "de": "3D-Orbitale werden zur Hälfte gefüllt und erhalten sphärische Symmetrie",
-          "fr": "Les orbitales 3D deviennent à moitié remplies et acquièrent une symétrie sphérique",
-          "ru": "Трехмерные орбитали становятся наполовину заполненными и приобретают сферическую симметрию.",
-          "ar": "تصبح المدارات ثلاثية الأبعاد نصف ممتلئة وتكتسب تناظرًا كرويًا",
+          "de": "3d-Orbitale werden zur Hälfte gefüllt und erhalten sphärische Symmetrie",
+          "fr": "Les orbitales 3d deviennent à moitié remplies et acquièrent une symétrie sphérique",
+          "ru": "3d-орбитали становятся наполовину заполненными и приобретают сферическую симметрию.",
+          "ar": "تصبح مدارات 3d نصف ممتلئة وتكتسب تناظرًا كرويًا",
           "zh": "3d 轨道变为半填充并获得球对称性",
           "ku": "Orbîtalên 3d nîv tije dibin û hevsengiya ferîkî werdigirin"
         },
@@ -954,7 +954,7 @@ export const unit11: ChemistryUnitSeedData = {
         "tr": "24Cr elektron dizilimi [Ar] 4s1 3d5'tir. 4s'te 1 tane, 3d'de 5 tane olmak üzere toplam 6 adet yarı dolu orbital içerir.",
         "en": "The electron configuration of 24Cr is [Ar] 4s1 3d5. It contains a total of 6 half-filled orbitals, 1 in 4s and 5 in 3d.",
         "de": "Die Elektronenkonfiguration von 24Cr ist [Ar] 4s1 3d5. Es enthält insgesamt 6 halbgefüllte Orbitale, 1 in 4s und 5 in 3d.",
-        "fr": "La configuration électronique du 24Cr est [Ar] 4s1 3d5. Il contient un total de 6 orbitales à moitié remplies, 1 en 4s et 5 en 3D.",
+        "fr": "La configuration électronique du 24Cr est [Ar] 4s1 3d5. Il contient un total de 6 orbitales à moitié remplies, 1 en 4s et 5 en 3d.",
         "ru": "Электронная конфигурация 24Cr: [Ar] 4s1 3d5. Всего он содержит 6 наполовину заполненных орбиталей: 1 в 4s и 5 в 3d.",
         "ar": "التكوين الإلكتروني لـ 24Cr هو [Ar] 4s1 3d5. يحتوي على إجمالي 6 مدارات نصف مملوءة، 1 في 4s و5 في 3d.",
         "zh": "24Cr的电子排布为[Ar] 4s1 3d5。它总共包含 6 个半填充轨道，其中 1 个为 4s，5 个为 3d。",
@@ -968,7 +968,7 @@ export const unit11: ChemistryUnitSeedData = {
         "en": "In which orbital type can an electron with angular momentum quantum number l = 2 and magnetic quantum number ml = -1 be found?",
         "de": "In welchem Orbitaltyp befindet sich ein Elektron mit der Drehimpulsquantenzahl l = 2 und der magnetischen Quantenzahl ml = -1?",
         "fr": "Dans quel type d'orbite peut-on trouver un électron avec un nombre quantique de moment cinétique l = 2 et un nombre quantique magnétique ml = -1 ?",
-        "ru": "На какой орбите может находиться электрон с квантовым числом углового момента l = 2 и магнитным квантовым числом ml = -1?",
+        "ru": "В каком типе орбитали может находиться электрон с квантовым числом углового момента l = 2 и магнитным квантовым числом ml = -1?",
         "ar": "في أي نوع مداري يمكن العثور على إلكترون له زخم زاوي عدد الكم l = 2 وعدد كم مغناطيسي ml = -1؟",
         "zh": "在哪种轨道类型中可以找到角动量量子数 l = 2 且磁量子数 ml = -1 的电子？",
         "ku": "Elektroneke bi leza goşeyî hejmara kuantûmê l = 2 û jimareya kûantûmê ya magnetîkî ml = -1 di kîjan cureya orbîtalê de dikare were dîtin?"
@@ -1056,7 +1056,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Nach der Aufbau-Regel wird das 3d-Orbital immer vor dem 4s-Orbital gefüllt.",
           "fr": "Selon la règle d'Aufbau, l'orbitale 3d est toujours remplie avant l'orbitale 4s.",
           "ru": "Согласно правилу Ауфбау, 3d-орбиталь всегда заполняется раньше 4s-орбитали.",
-          "ar": "وفقًا لقاعدة أوفباو، فإن المدار ثلاثي الأبعاد يمتلئ دائمًا قبل المدار 4s.",
+          "ar": "وفقًا لقاعدة أوفباو، فإن المدار 3d يمتلئ دائمًا قبل المدار 4s.",
           "zh": "根据 Aufbau 规则，3d 轨道总是在 4s 轨道之前被填充。",
           "ku": "Li gorî qaîdeya Aufbau, orbîtala 3d her dem berî orbitala 4s tê dagirtin."
         },
@@ -1064,21 +1064,21 @@ export const unit11: ChemistryUnitSeedData = {
           "tr": "Fe atomu iyonlaşırken elektron önce 3d orbitalinden kopar.",
           "en": "While the Fe atom is ionized, the electron first breaks away from the 3d orbital.",
           "de": "Während das Fe-Atom ionisiert wird, löst sich zunächst das Elektron aus dem 3d-Orbital.",
-          "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3D.",
+          "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3d.",
           "ru": "Пока атом Fe ионизируется, электрон сначала отрывается от 3d-орбитали.",
-          "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار ثلاثي الأبعاد.",
+          "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار 3d.",
           "zh": "当 Fe 原子被电离时，电子首先脱离 3d 轨道。",
           "ku": "Dema ku atoma Fe îyonîze dibe, elektron pêşî ji orbitala 3d vediqete."
         },
         {
           "tr": "Manyetik kuantum sayısı (ml), orbitalin uzaydaki yönelimini belirtir ve -l ile +l arasındaki tamsayı değerlerini alır.",
-          "en": "The magnetic quantum number (ml) indicates the orientation of the orbital in space and takes integer values ​​between -l and +1.",
-          "de": "Die magnetische Quantenzahl (ml) gibt die Orientierung des Orbitals im Raum an und nimmt ganzzahlige Werte zwischen -l und +1 an.",
-          "fr": "Le nombre quantique magnétique (ml) indique l'orientation de l'orbitale dans l'espace et prend des valeurs entières comprises entre -l et +1.",
-          "ru": "Магнитное квантовое число (ml) указывает на ориентацию орбитали в пространстве и принимает целые значения от -l до +1.",
-          "ar": "يشير رقم الكم المغناطيسي (ml) إلى اتجاه المدار في الفضاء ويأخذ قيمًا صحيحة بين -l و+1.",
-          "zh": "磁量子数（ml）表示轨道在空间中的取向，取-l到+1之间的整数值。",
-          "ku": "Hejmara quantumê ya magnetîkî (ml) arastekirina orbîtalê li fezayê destnîşan dike û jimareyên yekjimar di navbera -l û +1 de digire."
+          "en": "The magnetic quantum number (ml) indicates the orientation of the orbital in space and takes integer values ​​between -l and +l.",
+          "de": "Die magnetische Quantenzahl (ml) gibt die Orientierung des Orbitals im Raum an und nimmt ganzzahlige Werte zwischen -l und +l an.",
+          "fr": "Le nombre quantique magnétique (ml) indique l'orientation de l'orbitale dans l'espace et prend des valeurs entières comprises entre -l et +l.",
+          "ru": "Магнитное квантовое число (ml) указывает на ориентацию орбитали в пространстве и принимает целые значения от -l до +l.",
+          "ar": "يشير رقم الكم المغناطيسي (ml) إلى اتجاه المدار في الفضاء ويأخذ قيمًا صحيحة بين -l و+l.",
+          "zh": "磁量子数（ml）表示轨道在空间中的取向，取-l到+l之间的整数值。",
+          "ku": "Hejmara quantumê ya magnetîkî (ml) arastekirina orbîtalê li fezayê destnîşan dike û jimareyên yekjimar di navbera -l û +l de digire."
         },
         {
           "tr": "1. temel enerji düzeyinde 3 adet p orbitali bulunur.",
@@ -1098,19 +1098,19 @@ export const unit11: ChemistryUnitSeedData = {
           "ru": "Электронная конфигурация, оканчивающаяся на p4, сферически симметрична.",
           "ar": "تكوين الإلكترون المنتهي بـ p4 متماثل كرويًا.",
           "zh": "以 p4 结尾的电子构型是球对称的。",
-          "ku": "Veavakirina elektronê ku bi p4-ê diqede, bi rengek simetrîk e."
+          "ku": "Veavakirina elektronê ku bi p4-ê diqede sîmetriya gewherî nîşan dide."
         }
       ],
       "correctIndex": 2,
       "explanation": {
         "tr": "Doğru cevap \"Manyetik kuantum sayısı (ml), orbitalin uzaydaki yönelimini belirtir ve -l ile +l arasındaki tamsayı değerlerini alır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The magnetic quantum number (ml) indicates the orientation of the orbital in space and takes integer values ​​between -l and +1.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die magnetische Quantenzahl (ml) gibt die Orientierung des Orbitals im Raum an und nimmt ganzzahlige Werte zwischen -l und +1 an.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Le nombre quantique magnétique (ml) indique l'orientation de l'orbitale dans l'espace et prend des valeurs entières comprises entre -l et +1.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Магнитное квантовое число (ml) указывает на ориентацию орбитали в пространстве и принимает целые значения от -l до +1.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"يشير رقم الكم المغناطيسي (ml) إلى اتجاه المدار في الفضاء ويأخذ قيمًا صحيحة بين -l و+1.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“磁量子数（ml）表示轨道在空间中的取向，取-l到+1之间的整数值。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Hejmara quantumê ya magnetîkî (ml) arastekirina orbîtalê li fezayê destnîşan dike û jimareyên yekjimar di navbera -l û +1 de digire.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"The magnetic quantum number (ml) indicates the orientation of the orbital in space and takes integer values ​​between -l and +l.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Die magnetische Quantenzahl (ml) gibt die Orientierung des Orbitals im Raum an und nimmt ganzzahlige Werte zwischen -l und +l an.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Le nombre quantique magnétique (ml) indique l'orientation de l'orbitale dans l'espace et prend des valeurs entières comprises entre -l et +l.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Магнитное квантовое число (ml) указывает на ориентацию орбитали в пространстве и принимает целые значения от -l до +l.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"يشير رقم الكم المغناطيسي (ml) إلى اتجاه المدار في الفضاء ويأخذ قيمًا صحيحة بين -l و+l.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“磁量子数（ml）表示轨道在空间中的取向，取-l到+l之间的整数值。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Hejmara quantumê ya magnetîkî (ml) arastekirina orbîtalê li fezayê destnîşan dike û jimareyên yekjimar di navbera -l û +l de digire.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1139,12 +1139,12 @@ export const unit11: ChemistryUnitSeedData = {
         {
           "tr": "Aynı periyotta 3A grubunun iyonlaşma enerjisi 2A grubundan büyüktür.",
           "en": "In the same period, the ionization energy of the 3A group is greater than that of the 2A group.",
-          "de": "Im gleichen Zeitraum ist die Ionisierungsenergie der 3A-Gruppe größer als die der 2A-Gruppe.",
+          "de": "In derselben Periode ist die Ionisierungsenergie der 3A-Gruppe größer als die der 2A-Gruppe.",
           "fr": "Dans la même période, l'énergie d'ionisation du groupe 3A est supérieure à celle du groupe 2A.",
-          "ru": "В этот же период энергия ионизации группы 3А больше, чем у группы 2А.",
-          "ar": "وفي نفس الفترة، تكون طاقة التأين للمجموعة 3A أكبر من طاقة التأين للمجموعة 2A.",
-          "zh": "同一时期，3A基团的电离能大于2A基团的电离能。",
-          "ku": "Di heman serdemê de, enerjiya iyonîzasyona koma 3A ji ya koma 2A mezintir e."
+          "ru": "В одном периоде энергия ионизации группы 3А больше, чем у группы 2А.",
+          "ar": "في الدورة نفسها، تكون طاقة التأين للمجموعة 3A أكبر من طاقة التأين للمجموعة 2A.",
+          "zh": "同一周期，3A族的电离能大于2A族的电离能。",
+          "ku": "Di heman periyodê de, enerjiya iyonîzasyona koma 3A ji ya koma 2A mezintir e."
         },
         {
           "tr": "d orbitalleri 4. temel enerji düzeyinden itibaren başlar.",
@@ -1161,7 +1161,7 @@ export const unit11: ChemistryUnitSeedData = {
           "en": "The spin quantum number (ms) indicates the direction of rotation of the electron around its axis (+1/2 or -1/2).",
           "de": "Die Spinquantenzahl (ms) gibt die Rotationsrichtung des Elektrons um seine Achse (+1/2 oder -1/2) an.",
           "fr": "Le nombre quantique de spin (ms) indique le sens de rotation de l'électron autour de son axe (+1/2 ou -1/2).",
-          "ru": "Спиновое квантовое число (мс) указывает направление вращения электрона вокруг своей оси (+1/2 или -1/2).",
+          "ru": "Спиновое квантовое число (ms) указывает направление вращения электрона вокруг своей оси (+1/2 или -1/2).",
           "ar": "يشير الرقم الكمي المغزلي (ms) إلى اتجاه دوران الإلكترون حول محوره (+1/2 أو -1/2).",
           "zh": "自旋量子数 (ms) 表示电子绕其轴旋转的方向（+1/2 或 -1/2）。",
           "ku": "Hejmara kuantûmê ya spinê (ms) arasteya zivirandina elektronê li dora eksê xwe (+1/2 an -1/2) nîşan dide."
@@ -1183,7 +1183,7 @@ export const unit11: ChemistryUnitSeedData = {
         "en": "The correct statement is: \"The spin quantum number (ms) indicates the direction of rotation of the electron around its axis (+1/2 or -1/2).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Die Spinquantenzahl (ms) gibt die Rotationsrichtung des Elektrons um seine Achse (+1/2 oder -1/2) an.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Le nombre quantique de spin (ms) indique le sens de rotation de l'électron autour de son axe (+1/2 ou -1/2).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Спиновое квантовое число (мс) указывает направление вращения электрона вокруг своей оси (+1/2 или -1/2).». Фундаментальный химический факт официальной программы.",
+        "ru": "Правильное утверждение: «Спиновое квантовое число (ms) указывает направление вращения электрона вокруг своей оси (+1/2 или -1/2).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"يشير الرقم الكمي المغزلي (ms) إلى اتجاه دوران الإلكترون حول محوره (+1/2 أو -1/2).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“自旋量子数 (ms) 表示电子绕其轴旋转的方向（+1/2 或 -1/2）。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Hejmara kuantûmê ya spinê (ms) arasteya zivirandina elektronê li dora eksê xwe (+1/2 an -1/2) nîşan dide.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
@@ -1292,9 +1292,9 @@ export const unit11: ChemistryUnitSeedData = {
           "tr": "Fe atomu iyonlaşırken elektron önce 3d orbitalinden kopar.",
           "en": "While the Fe atom is ionized, the electron first breaks away from the 3d orbital.",
           "de": "Während das Fe-Atom ionisiert wird, löst sich zunächst das Elektron aus dem 3d-Orbital.",
-          "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3D.",
+          "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3d.",
           "ru": "Пока атом Fe ионизируется, электрон сначала отрывается от 3d-орбитали.",
-          "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار ثلاثي الأبعاد.",
+          "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار 3d.",
           "zh": "当 Fe 原子被电离时，电子首先脱离 3d 轨道。",
           "ku": "Dema ku atoma Fe îyonîze dibe, elektron pêşî ji orbitala 3d vediqete."
         },
@@ -1316,7 +1316,7 @@ export const unit11: ChemistryUnitSeedData = {
           "ru": "Электронная конфигурация, оканчивающаяся на p4, сферически симметрична.",
           "ar": "تكوين الإلكترون المنتهي بـ p4 متماثل كرويًا.",
           "zh": "以 p4 结尾的电子构型是球对称的。",
-          "ku": "Veavakirina elektronê ku bi p4-ê diqede, bi rengek simetrîk e."
+          "ku": "Veavakirina elektronê ku bi p4-ê diqede sîmetriya gewherî nîşan dide."
         },
         {
           "tr": "l = 2 açısal momentum sayısı p orbitalini temsil eder.",
@@ -1357,12 +1357,12 @@ export const unit11: ChemistryUnitSeedData = {
         {
           "tr": "Aynı periyotta 3A grubunun iyonlaşma enerjisi 2A grubundan büyüktür.",
           "en": "In the same period, the ionization energy of the 3A group is greater than that of the 2A group.",
-          "de": "Im gleichen Zeitraum ist die Ionisierungsenergie der 3A-Gruppe größer als die der 2A-Gruppe.",
+          "de": "In derselben Periode ist die Ionisierungsenergie der 3A-Gruppe größer als die der 2A-Gruppe.",
           "fr": "Dans la même période, l'énergie d'ionisation du groupe 3A est supérieure à celle du groupe 2A.",
-          "ru": "В этот же период энергия ионизации группы 3А больше, чем у группы 2А.",
-          "ar": "وفي نفس الفترة، تكون طاقة التأين للمجموعة 3A أكبر من طاقة التأين للمجموعة 2A.",
-          "zh": "同一时期，3A基团的电离能大于2A基团的电离能。",
-          "ku": "Di heman serdemê de, enerjiya iyonîzasyona koma 3A ji ya koma 2A mezintir e."
+          "ru": "В одном периоде энергия ионизации группы 3А больше, чем у группы 2А.",
+          "ar": "في الدورة نفسها، تكون طاقة التأين للمجموعة 3A أكبر من طاقة التأين للمجموعة 2A.",
+          "zh": "同一周期，3A族的电离能大于2A族的电离能。",
+          "ku": "Di heman periyodê de, enerjiya iyonîzasyona koma 3A ji ya koma 2A mezintir e."
         },
         {
           "tr": "Hund Kuralı: Eş enerjili orbitallere elektronlar önce aynı spinle birer birer yerleştirilir.",
@@ -1524,7 +1524,7 @@ export const unit11: ChemistryUnitSeedData = {
           "ru": "Электронная конфигурация, оканчивающаяся на p4, сферически симметрична.",
           "ar": "تكوين الإلكترون المنتهي بـ p4 متماثل كرويًا.",
           "zh": "以 p4 结尾的电子构型是球对称的。",
-          "ku": "Veavakirina elektronê ku bi p4-ê diqede, bi rengek simetrîk e."
+          "ku": "Veavakirina elektronê ku bi p4-ê diqede sîmetriya gewherî nîşan dide."
         },
         {
           "tr": "l = 2 açısal momentum sayısı p orbitalini temsil eder.",
@@ -1618,31 +1618,31 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Nach der Aufbau-Regel wird das 3d-Orbital immer vor dem 4s-Orbital gefüllt.",
           "fr": "Selon la règle d'Aufbau, l'orbitale 3d est toujours remplie avant l'orbitale 4s.",
           "ru": "Согласно правилу Ауфбау, 3d-орбиталь всегда заполняется раньше 4s-орбитали.",
-          "ar": "وفقًا لقاعدة أوفباو، فإن المدار ثلاثي الأبعاد يمتلئ دائمًا قبل المدار 4s.",
+          "ar": "وفقًا لقاعدة أوفباو، فإن المدار 3d يمتلئ دائمًا قبل المدار 4s.",
           "zh": "根据 Aufbau 规则，3d 轨道总是在 4s 轨道之前被填充。",
           "ku": "Li gorî qaîdeya Aufbau, orbîtala 3d her dem berî orbitala 4s tê dagirtin."
         },
         {
           "tr": "Aynı periyotta iyonlaşma enerjisi \"3 aşağı 5 yukarı\" kuralına göre sıralanır: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
           "en": "In the same period, ionization energy is ranked according to the \"3 down, 5 up\" rule: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
-          "de": "Im gleichen Zeitraum wird die Ionisierungsenergie nach der Regel „3 runter, 5 rauf“ eingestuft: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
-          "fr": "Au cours de la même période, l'énergie d'ionisation est classée selon la règle « 3 vers le bas, 5 vers le haut » : 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
-          "ru": "В этот же период энергия ионизации ранжируется по правилу «3 вниз, 5 вверх»: 1А < 3А < 2А < 4А < 6А < 5А < 7А < 8А.",
-          "ar": "وفي نفس الفترة، يتم ترتيب طاقة التأين وفقًا لقاعدة \"3 لأسفل، 5 لأعلى\": 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
-          "zh": "同一时期内，电离能按照“3下5上”的规则排列：1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A。",
-          "ku": "Di heman serdemê de, enerjiya iyonîzasyonê li gorî qaîdeya \"3 berjêr, 5 jor\" tê rêz kirin: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A."
+          "de": "In derselben Periode wird die Ionisierungsenergie nach der Regel „3 runter, 5 rauf“ eingestuft: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
+          "fr": "Dans une même période, l'énergie d'ionisation est classée selon la règle « 3 vers le bas, 5 vers le haut » : 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
+          "ru": "В одном периоде энергия ионизации ранжируется по правилу «3 вниз, 5 вверх»: 1А < 3А < 2А < 4А < 6А < 5А < 7А < 8А.",
+          "ar": "في الدورة نفسها، يتم ترتيب طاقة التأين وفقًا لقاعدة \"3 لأسفل، 5 لأعلى\": 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.",
+          "zh": "同一周期内，电离能按照“3下5上”的规则排列：1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A。",
+          "ku": "Di heman periyodê de, enerjiya iyonîzasyonê li gorî qaîdeya \"3 berjêr, 5 jor\" tê rêz kirin: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A."
         }
       ],
       "correctIndex": 4,
       "explanation": {
         "tr": "Doğru cevap \"Aynı periyotta iyonlaşma enerjisi \"3 aşağı 5 yukarı\" kuralına göre sıralanır: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"In the same period, ionization energy is ranked according to the \"3 down, 5 up\" rule: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Im gleichen Zeitraum wird die Ionisierungsenergie nach der Regel „3 runter, 5 rauf“ eingestuft: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Au cours de la même période, l'énergie d'ionisation est classée selon la règle « 3 vers le bas, 5 vers le haut » : 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «В этот же период энергия ионизации ранжируется по правилу «3 вниз, 5 вверх»: 1А < 3А < 2А < 4А < 6А < 5А < 7А < 8А.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"وفي نفس الفترة، يتم ترتيب طاقة التأين وفقًا لقاعدة \"3 لأسفل، 5 لأعلى\": 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“同一时期内，电离能按照“3下5上”的规则排列：1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di heman serdemê de, enerjiya iyonîzasyonê li gorî qaîdeya \"3 berjêr, 5 jor\" tê rêz kirin: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "de": "Die zutreffende Aussage lautet: \"In derselben Periode wird die Ionisierungsenergie nach der Regel „3 runter, 5 rauf“ eingestuft: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Dans une même période, l'énergie d'ionisation est classée selon la règle « 3 vers le bas, 5 vers le haut » : 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «В одном периоде энергия ионизации ранжируется по правилу «3 вниз, 5 вверх»: 1А < 3А < 2А < 4А < 6А < 5А < 7А < 8А.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"في الدورة نفسها، يتم ترتيب طاقة التأين وفقًا لقاعدة \"3 لأسفل، 5 لأعلى\": 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“同一周期内，电离能按照“3下5上”的规则排列：1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di heman periyodê de, enerjiya iyonîzasyonê li gorî qaîdeya \"3 berjêr, 5 jor\" tê rêz kirin: 1A < 3A < 2A < 4A < 6A < 5A < 7A < 8A.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1659,14 +1659,14 @@ export const unit11: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "s orbitalleri küresel simetriktir ve her enerji düzeyinde 1 tane (en çok 2 elektron) bulunur.",
-          "en": "s orbitals are spherically symmetrical and there is 1 electron (maximum 2 electrons) in each energy level.",
-          "de": "s-Orbitale sind sphärisch symmetrisch und in jedem Energieniveau befindet sich 1 Elektron (maximal 2 Elektronen).",
-          "fr": "Les orbitales sont à symétrie sphérique et il y a 1 électron (maximum 2 électrons) dans chaque niveau d'énergie.",
-          "ru": "s-орбитали сферически симметричны, и на каждом энергетическом уровне находится 1 электрон (максимум 2 электрона).",
-          "ar": "مدارات s متناظرة كرويًا ويوجد إلكترون واحد (بحد أقصى إلكترونين) في كل مستوى طاقة.",
-          "zh": "s 轨道是球对称的，每个能级有 1 个电子（最多 2 个电子）。",
-          "ku": "Orbîtalên s bi sferîk sîmetrîk in û di her asta enerjiyê de 1 elektron (herî zêde 2 elektron) heye."
+          "tr": "s orbitalleri küresel simetriktir ve her enerji düzeyinde 1 tane s orbitali bulunur (en çok 2 elektron alır).",
+          "en": "s orbitals are spherically symmetric; each energy level has one s orbital (holding at most 2 electrons).",
+          "de": "s-Orbitale sind kugelsymmetrisch; jedes Energieniveau hat ein s-Orbital (mit höchstens 2 Elektronen).",
+          "fr": "Les orbitales s sont à symétrie sphérique ; chaque niveau d'énergie possède une orbitale s (contenant au plus 2 électrons).",
+          "ru": "s-орбитали сферически симметричны; на каждом энергетическом уровне есть одна s-орбиталь (вмещает не более 2 электронов).",
+          "ar": "مدارات s متناظرة كرويًا، ويوجد في كل مستوى طاقة مدار s واحد (يتسع لإلكترونين على الأكثر).",
+          "zh": "s轨道呈球形对称，每个能级有1个s轨道（最多容纳2个电子）。",
+          "ku": "Orbîtalên s sîmetriya gewherî nîşan didin; di her asta enerjiyê de 1 orbîtala s heye (herî zêde 2 elektronan digire)."
         },
         {
           "tr": "f orbitallerinde en çok 10 elektron bulunabilir.",
@@ -1711,14 +1711,14 @@ export const unit11: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"s orbitalleri küresel simetriktir ve her enerji düzeyinde 1 tane (en çok 2 elektron) bulunur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"s orbitals are spherically symmetrical and there is 1 electron (maximum 2 electrons) in each energy level.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"s-Orbitale sind sphärisch symmetrisch und in jedem Energieniveau befindet sich 1 Elektron (maximal 2 Elektronen).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les orbitales sont à symétrie sphérique et il y a 1 électron (maximum 2 électrons) dans chaque niveau d'énergie.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «s-орбитали сферически симметричны, и на каждом энергетическом уровне находится 1 электрон (максимум 2 электрона).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"مدارات s متناظرة كرويًا ويوجد إلكترون واحد (بحد أقصى إلكترونين) في كل مستوى طاقة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“s 轨道是球对称的，每个能级有 1 个电子（最多 2 个电子）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Orbîtalên s bi sferîk sîmetrîk in û di her asta enerjiyê de 1 elektron (herî zêde 2 elektron) heye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"s orbitalleri küresel simetriktir ve her enerji düzeyinde 1 tane s orbitali bulunur (en çok 2 elektron alır).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"s orbitals are spherically symmetric; each energy level has one s orbital (holding at most 2 electrons).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"s-Orbitale sind kugelsymmetrisch; jedes Energieniveau hat ein s-Orbital (mit höchstens 2 Elektronen).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les orbitales s sont à symétrie sphérique ; chaque niveau d'énergie possède une orbitale s (contenant au plus 2 électrons).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «s-орбитали сферически симметричны; на каждом энергетическом уровне есть одна s-орбиталь (вмещает не более 2 электронов).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"مدارات s متناظرة كرويًا، ويوجد في كل مستوى طاقة مدار s واحد (يتسع لإلكترونين على الأكثر).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“s轨道呈球形对称，每个能级有1个s轨道（最多容纳2个电子）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Orbîtalên s sîmetriya gewherî nîşan didin; di her asta enerjiyê de 1 orbîtala s heye (herî zêde 2 elektronan digire).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1742,7 +1742,7 @@ export const unit11: ChemistryUnitSeedData = {
           "ru": "Электронная конфигурация, оканчивающаяся на p4, сферически симметрична.",
           "ar": "تكوين الإلكترون المنتهي بـ p4 متماثل كرويًا.",
           "zh": "以 p4 结尾的电子构型是球对称的。",
-          "ku": "Veavakirina elektronê ku bi p4-ê diqede, bi rengek simetrîk e."
+          "ku": "Veavakirina elektronê ku bi p4-ê diqede sîmetriya gewherî nîşan dide."
         },
         {
           "tr": "p orbitalleri n = 2'den başlar, halter şeklindedir ve 3 tanedir (px, py, pz, en çok 6 elektron).",
@@ -1846,7 +1846,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Nach der Aufbau-Regel wird das 3d-Orbital immer vor dem 4s-Orbital gefüllt.",
           "fr": "Selon la règle d'Aufbau, l'orbitale 3d est toujours remplie avant l'orbitale 4s.",
           "ru": "Согласно правилу Ауфбау, 3d-орбиталь всегда заполняется раньше 4s-орбитали.",
-          "ar": "وفقًا لقاعدة أوفباو، فإن المدار ثلاثي الأبعاد يمتلئ دائمًا قبل المدار 4s.",
+          "ar": "وفقًا لقاعدة أوفباو، فإن المدار 3d يمتلئ دائمًا قبل المدار 4s.",
           "zh": "根据 Aufbau 规则，3d 轨道总是在 4s 轨道之前被填充。",
           "ku": "Li gorî qaîdeya Aufbau, orbîtala 3d her dem berî orbitala 4s tê dagirtin."
         },
@@ -1854,9 +1854,9 @@ export const unit11: ChemistryUnitSeedData = {
           "tr": "Fe atomu iyonlaşırken elektron önce 3d orbitalinden kopar.",
           "en": "While the Fe atom is ionized, the electron first breaks away from the 3d orbital.",
           "de": "Während das Fe-Atom ionisiert wird, löst sich zunächst das Elektron aus dem 3d-Orbital.",
-          "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3D.",
+          "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3d.",
           "ru": "Пока атом Fe ионизируется, электрон сначала отрывается от 3d-орбитали.",
-          "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار ثلاثي الأبعاد.",
+          "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار 3d.",
           "zh": "当 Fe 原子被电离时，电子首先脱离 3d 轨道。",
           "ku": "Dema ku atoma Fe îyonîze dibe, elektron pêşî ji orbitala 3d vediqete."
         }
@@ -1929,12 +1929,12 @@ export const unit11: ChemistryUnitSeedData = {
         {
           "tr": "Aynı periyotta 3A grubunun iyonlaşma enerjisi 2A grubundan büyüktür.",
           "en": "In the same period, the ionization energy of the 3A group is greater than that of the 2A group.",
-          "de": "Im gleichen Zeitraum ist die Ionisierungsenergie der 3A-Gruppe größer als die der 2A-Gruppe.",
+          "de": "In derselben Periode ist die Ionisierungsenergie der 3A-Gruppe größer als die der 2A-Gruppe.",
           "fr": "Dans la même période, l'énergie d'ionisation du groupe 3A est supérieure à celle du groupe 2A.",
-          "ru": "В этот же период энергия ионизации группы 3А больше, чем у группы 2А.",
-          "ar": "وفي نفس الفترة، تكون طاقة التأين للمجموعة 3A أكبر من طاقة التأين للمجموعة 2A.",
-          "zh": "同一时期，3A基团的电离能大于2A基团的电离能。",
-          "ku": "Di heman serdemê de, enerjiya iyonîzasyona koma 3A ji ya koma 2A mezintir e."
+          "ru": "В одном периоде энергия ионизации группы 3А больше, чем у группы 2А.",
+          "ar": "في الدورة نفسها، تكون طاقة التأين للمجموعة 3A أكبر من طاقة التأين للمجموعة 2A.",
+          "zh": "同一周期，3A族的电离能大于2A族的电离能。",
+          "ku": "Di heman periyodê de, enerjiya iyonîzasyona koma 3A ji ya koma 2A mezintir e."
         }
       ],
       "correctIndex": 3,
@@ -2064,7 +2064,7 @@ export const unit11: ChemistryUnitSeedData = {
           "de": "Nach der Aufbau-Regel wird das 3d-Orbital immer vor dem 4s-Orbital gefüllt.",
           "fr": "Selon la règle d'Aufbau, l'orbitale 3d est toujours remplie avant l'orbitale 4s.",
           "ru": "Согласно правилу Ауфбау, 3d-орбиталь всегда заполняется раньше 4s-орбитали.",
-          "ar": "وفقًا لقاعدة أوفباو، فإن المدار ثلاثي الأبعاد يمتلئ دائمًا قبل المدار 4s.",
+          "ar": "وفقًا لقاعدة أوفباو، فإن المدار 3d يمتلئ دائمًا قبل المدار 4s.",
           "zh": "根据 Aufbau 规则，3d 轨道总是在 4s 轨道之前被填充。",
           "ku": "Li gorî qaîdeya Aufbau, orbîtala 3d her dem berî orbitala 4s tê dagirtin."
         },
@@ -2072,9 +2072,9 @@ export const unit11: ChemistryUnitSeedData = {
           "tr": "Fe atomu iyonlaşırken elektron önce 3d orbitalinden kopar.",
           "en": "While the Fe atom is ionized, the electron first breaks away from the 3d orbital.",
           "de": "Während das Fe-Atom ionisiert wird, löst sich zunächst das Elektron aus dem 3d-Orbital.",
-          "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3D.",
+          "fr": "Pendant que l’atome de Fe est ionisé, l’électron se détache d’abord de l’orbitale 3d.",
           "ru": "Пока атом Fe ионизируется, электрон сначала отрывается от 3d-орбитали.",
-          "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار ثلاثي الأبعاد.",
+          "ar": "أثناء تأين ذرة الحديد، ينفصل الإلكترون أولاً عن المدار 3d.",
           "zh": "当 Fe 原子被电离时，电子首先脱离 3d 轨道。",
           "ku": "Dema ku atoma Fe îyonîze dibe, elektron pêşî ji orbitala 3d vediqete."
         },

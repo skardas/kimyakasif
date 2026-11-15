@@ -22,7 +22,7 @@ export const unit20: ChemistryUnitSeedData = {
     "de": "Niederschlagszustand, Ktch-Beziehungen und gemeinsames Ion",
     "fr": "Conditions de précipitation, relations Ktch et ions communs",
     "ru": "Условия осаждения, отношения Ktch и общий ион",
-    "ar": "حالة الهطول، علاقات Ktch والأيون المشترك",
+    "ar": "حالة الترسيب، علاقات Ktch والأيون المشترك",
     "zh": "降水条件、Ktch关系和共离子",
     "ku": "Rewşa baranê, Têkiliyên Ktch û Ionê Hevbeş"
   },
@@ -41,13 +41,13 @@ export const unit20: ChemistryUnitSeedData = {
       },
       "trap": {
         "tr": "Kçç çok çözünen tuzların derişimini ifade eder.",
-        "en": "Kçç refers to the concentration of highly soluble salts.",
-        "de": "Kçç bezieht sich auf die Konzentration hochlöslicher Salze.",
-        "fr": "Kçç fait référence à la concentration de sels hautement solubles.",
-        "ru": "Kçç относится к концентрации хорошо растворимых солей.",
-        "ar": "يشير Kçç إلى تركيز الأملاح شديدة الذوبان.",
-        "zh": "Kçç 是指高溶解盐的浓度。",
-        "ku": "Kçç behsa kombûna xwêyên pir heliyaye dike."
+        "en": "Ksp refers to the concentration of highly soluble salts.",
+        "de": "Ksp bezieht sich auf die Konzentration hochlöslicher Salze.",
+        "fr": "Ksp fait référence à la concentration de sels hautement solubles.",
+        "ru": "Ksp относится к концентрации хорошо растворимых солей.",
+        "ar": "يشير Ksp إلى تركيز الأملاح شديدة الذوبان.",
+        "zh": "Ksp 是指高溶解盐的浓度。",
+        "ku": "Ksp behsa kombûna xwêyên pir heliyaye dike."
       }
     },
     {
@@ -55,11 +55,11 @@ export const unit20: ChemistryUnitSeedData = {
       "fact": {
         "tr": "Kçç sabiti YALNIZCA sıcaklıkla değişir; ortak iyon, çözünen miktarı veya su eklemek Kçç yi DEĞİŞTİRMEZ.",
         "en": "The Ksp constant changes ONLY with temperature; Adding common ion, amount of solute, or water DOES NOT change Ksp.",
-        "de": "Die Ksp-Konstante ändert sich NUR mit der Temperatur; Die Zugabe von gewöhnlichem Ion, der Menge an gelöstem Stoff oder Wasser verändert Ksp NICHT.",
+        "de": "Die Ksp-Konstante ändert sich NUR mit der Temperatur; die Zugabe eines gleichen (gemeinsamen) Ions, die Menge an gelöstem Stoff oder Wasser verändert Ksp NICHT.",
         "fr": "La constante Ksp change UNIQUEMENT avec la température ; L'ajout d'ions communs, de quantité de soluté ou d'eau NE modifie PAS Ksp.",
         "ru": "Константа Ksp меняется ТОЛЬКО с температурой; Добавление общего иона, количества растворенного вещества или воды НЕ ИЗМЕНЯЕТ Ksp.",
         "ar": "يتغير ثابت Ksp فقط مع درجة الحرارة؛ إن إضافة الأيون المشترك أو كمية المذاب أو الماء لا يغير Ksp.",
-        "zh": "Ksp 常数仅随温度变化；添加普通离子、溶质量或水不会改变 Ksp。",
+        "zh": "Ksp 常数仅随温度变化；添加同离子、溶质量或水不会改变 Ksp。",
         "ku": "Ksp domdar TENÊ bi germahiyê diguhere; Zêdekirina îyona hevpar, mîqdara madeya çareserkirî, an avê Ksp NAguherîne."
       },
       "trap": {
@@ -69,18 +69,18 @@ export const unit20: ChemistryUnitSeedData = {
         "fr": "Lorsque l'ion commun est ajouté, la valeur Ksp devient plus petite.",
         "ru": "При добавлении общего иона значение Ksp становится меньше.",
         "ar": "عند إضافة الأيون المشترك، تصبح قيمة Ksp أصغر.",
-        "zh": "当添加普通离子时，Ksp值变小。",
+        "zh": "当添加同离子时，Ksp值变小。",
         "ku": "Dema ku îona hevpar tê zêdekirin, nirxa Ksp piçûktir dibe."
       },
       "osymTip": {
         "tr": "ÖSYM kuralı: Kçç yi sadece sıcaklık değiştirir!",
-        "en": "ÖSYM rule: Only temperature changes Kçç!",
-        "de": "ÖSYM-Regel: Nur Temperaturänderungen Kçç!",
-        "fr": "Règle ÖSYM : Seuls les changements de température Kçç !",
-        "ru": "Правило ÖSYM: Изменения только температуры Kçç!",
-        "ar": "قاعدة ÖSYM: فقط درجات الحرارة تتغير Kçç!",
-        "zh": "ÖSYM 规则：只有温度会改变 Kçç！",
-        "ku": "Qanûna ÖSYM: Tenê germahî diguhere Kçç!"
+        "en": "ÖSYM rule: Only temperature changes Ksp!",
+        "de": "ÖSYM-Regel: Nur die Temperatur ändert Ksp!",
+        "fr": "Règle ÖSYM : seule la température modifie Ksp !",
+        "ru": "Правило ÖSYM: Ksp изменяет только температура!",
+        "ar": "قاعدة ÖSYM: درجة الحرارة وحدها تغيّر Ksp!",
+        "zh": "ÖSYM 规则：只有温度会改变 Ksp！",
+        "ku": "Qanûna ÖSYM: Tenê germahî Ksp diguherîne!"
       }
     },
     {
@@ -161,7 +161,7 @@ export const unit20: ChemistryUnitSeedData = {
         "fr": "Effet des ions communs : La présence d'ions communs dans la solution déplace l'équilibre vers les réactifs et réduit la solubilité, selon Le Chatelier.",
         "ru": "Эффект общего иона: присутствие общих ионов в растворе смещает равновесие в сторону реагентов и снижает растворимость, согласно Ле Шателье.",
         "ar": "تأثير الأيونات المشتركة: يؤدي وجود الأيونات المشتركة في المحلول إلى تحويل التوازن إلى المواد المتفاعلة وتقليل قابلية الذوبان، وفقًا لـ Le Chatelier.",
-        "zh": "常见离子效应：根据 Le Chatelier 的说法，溶液中常见离子的存在会将平衡转移到反应物并降低溶解度。",
+        "zh": "同离子效应：根据 Le Chatelier 的说法，溶液中同离子的存在会将平衡转移到反应物并降低溶解度。",
         "ku": "Bandora îyona hevpar: Li gorî Le Chatelier, hebûna îyonên hevpar di çareseriyê de hevsengiyê ber bi reaktantan ve diguhezîne û çareserbûnê kêm dike."
       },
       "trap": {
@@ -171,7 +171,7 @@ export const unit20: ChemistryUnitSeedData = {
         "fr": "L'ion commun augmente la solubilité du sel.",
         "ru": "Общий ион увеличивает растворимость соли.",
         "ar": "الأيون المشترك يزيد من ذوبان الملح.",
-        "zh": "共同离子增加了盐的溶解度。",
+        "zh": "同离子增加了盐的溶解度。",
         "ku": "Iyona hevpar helbûna xwê zêde dike."
       }
     },
@@ -179,36 +179,36 @@ export const unit20: ChemistryUnitSeedData = {
       "id": "u20-f07",
       "fact": {
         "tr": "İyon çarpımı Qi (çökelme kesri): Qi > Kçç ise çözelti aşırı doygundur ve çökelme gerçekleşir.",
-        "en": "Ion product Qi (precipitation fraction): If Qi > Kçç, the solution is supersaturated and precipitation occurs.",
-        "de": "Ionenprodukt Qi (Ausfällungsanteil): Wenn Qi > Kçç, ist die Lösung übersättigt und es kommt zur Ausfällung.",
-        "fr": "Produit ionique Qi (fraction de précipitation) : Si Qi > Kçç, la solution est sursaturée et une précipitation se produit.",
-        "ru": "Ионный продукт Qi (фракция осадков): Если Qi > Kçç, раствор перенасыщен и происходит осаждение.",
-        "ar": "المنتج الأيوني Qi (جزء الهطول): إذا كان Qi > Kçç، يكون المحلول مفرط التشبع ويحدث الهطول.",
-        "zh": "离子积 Qi（沉淀分数）：如果 Qi > Kçç，则溶液过饱和并发生沉淀。",
-        "ku": "Berhema îyonî Qi (parçeya baranê): Ger Qi > Kçç, çareserî pir têr dibe û barîn çêdibe."
+        "en": "Ion product Qi: if Qi > Ksp, the solution is supersaturated and precipitation occurs.",
+        "de": "Ionenprodukt Qi: Wenn Qi > Ksp, ist die Lösung übersättigt und es kommt zur Fällung.",
+        "fr": "Produit ionique Qi : si Qi > Ksp, la solution est sursaturée et un précipité se forme.",
+        "ru": "Ионное произведение Qi: если Qi > Ksp, раствор пересыщен и выпадает осадок.",
+        "ar": "الحاصل الأيوني Qi: إذا كان Qi > Ksp يكون المحلول فوق مشبع ويحدث ترسيب.",
+        "zh": "离子积Qi：若Qi > Ksp，溶液过饱和，产生沉淀。",
+        "ku": "Hevdana îyonan Qi: ger Qi > Ksp be, çareserî ji têrbûnê zêdetir e û nişte çêdibe."
       },
       "trap": {
         "tr": "Qi < Kçç olduğunda çökelme meydana gelir.",
         "en": "When Qi < Ksp, precipitation occurs.",
         "de": "Wenn Qi < Ksp, kommt es zu Niederschlag.",
-        "fr": "Lorsque Qi < Ksp, des précipitations se produisent.",
-        "ru": "Когда Qi < Ksp, выпадают осадки.",
-        "ar": "عندما يكون Qi <Ksp، يحدث هطول الأمطار.",
+        "fr": "Lorsque Qi < Ksp, un précipité se forme.",
+        "ru": "Когда Qi < Ksp, выпадает осадок.",
+        "ar": "عندما يكون Qi < Ksp يحدث ترسيب.",
         "zh": "当 Qi < Ksp 时，发生沉淀。",
-        "ku": "Dema Qi < Ksp, barîn çêdibe."
+        "ku": "Dema Qi < Ksp be, nişte çêdibe."
       }
     },
     {
       "id": "u20-f08",
       "fact": {
         "tr": "Qi = Kçç ise çözelti tam doygundur ve çökelme olmaz; Qi < Kçç ise çözelti doymamıştır.",
-        "en": "If Qi = Kçç, the solution is fully saturated and there is no precipitation; If Qi < Kçç, the solution is unsaturated.",
-        "de": "Wenn Qi = Kçç, ist die Lösung vollständig gesättigt und es kommt zu keinem Niederschlag; Wenn Qi < Kçç, ist die Lösung ungesättigt.",
-        "fr": "Si Qi = Kçç, la solution est totalement saturée et il n’y a pas de précipitation ; Si Qi < Kçç, la solution est insaturée.",
-        "ru": "Если Qi = Kçç, раствор полностью насыщен и осадок отсутствует; Если Qi < Kçç, решение ненасыщенное.",
-        "ar": "إذا كان Qi = Kçç، يكون المحلول مشبعًا بالكامل ولا يوجد هطول؛ إذا كان Qi < Kçç، فإن المحلول غير مشبع.",
-        "zh": "若Qi=Kçç，则溶液完全饱和，无沉淀；如果 Qi < Kçç，则溶液不饱和。",
-        "ku": "Heke Qi = Kçç, çareserî bi tevahî têr bûye û barîn tune; Heke Qi < Kçç, çareserî ne têr e."
+        "en": "If Qi = Ksp, the solution is fully saturated and there is no precipitation; If Qi < Ksp, the solution is unsaturated.",
+        "de": "Wenn Qi = Ksp, ist die Lösung vollständig gesättigt und es kommt zu keinem Niederschlag; Wenn Qi < Ksp, ist die Lösung ungesättigt.",
+        "fr": "Si Qi = Ksp, la solution est totalement saturée et il n’y a pas de précipitation ; Si Qi < Ksp, la solution est insaturée.",
+        "ru": "Если Qi = Ksp, раствор насыщен и осадок не выпадает; если Qi < Ksp, раствор ненасыщенный.",
+        "ar": "إذا كان Qi = Ksp يكون المحلول مشبعًا تمامًا ولا يحدث ترسيب؛ وإذا كان Qi < Ksp فالمحلول غير مشبع.",
+        "zh": "若Qi=Ksp，则溶液完全饱和，无沉淀；如果 Qi < Ksp，则溶液不饱和。",
+        "ku": "Ger Qi = Ksp be, çareserî tam têr e û nişte çênabe; ger Qi < Ksp be, çareserî ne têr e."
       },
       "trap": {
         "tr": "Qi = Kçç olduğunda çözelti doymamıştır ve tuz çöker.",
@@ -218,20 +218,20 @@ export const unit20: ChemistryUnitSeedData = {
         "ru": "При Qi = Ksp раствор ненасыщен и соль выпадает в осадок.",
         "ar": "عندما يكون Qi = Ksp، يكون المحلول غير مشبع ويترسب الملح.",
         "zh": "当Qi = Ksp时，溶液不饱和，盐沉淀。",
-        "ku": "Dema Qi = Ksp, çareserî têr nabe û xwê dibare."
+        "ku": "Dema Qi = Ksp be, çareserî ne têr e û xwê dinişe."
       }
     },
     {
       "id": "u20-f09",
       "fact": {
-        "tr": "AgCl katısının saf sudaki çözünürlüğü, 0.1 M NaCl çözeltisindeki çözünürlüğünden ÇOK DAHA BÜYÜKTÜR.",
+        "tr": "AgCl katısının saf sudaki çözünürlüğü, 0,1 M NaCl çözeltisindeki çözünürlüğünden ÇOK DAHA BÜYÜKTÜR.",
         "en": "The solubility of AgCl solid in pure water is MUCH LARGER than its solubility in 0.1 M NaCl solution.",
         "de": "Die Löslichkeit von AgCl-Feststoff in reinem Wasser ist VIEL GRÖSSER als seine Löslichkeit in 0,1 M NaCl-Lösung.",
         "fr": "La solubilité du solide AgCl dans l’eau pure est BEAUCOUP PLUS GRANDE que sa solubilité dans une solution de NaCl 0,1 M.",
         "ru": "Растворимость твердого вещества AgCl в чистой воде НАМНОГО БОЛЬШЕ, чем его растворимость в 0,1 М растворе NaCl.",
         "ar": "إن قابلية ذوبان AgCl الصلب في الماء النقي أكبر بكثير من ذوبانه في محلول كلوريد الصوديوم 0.1 مولار.",
         "zh": "AgCl固体在纯水中的溶解度比其在0.1 M NaCl溶液中的溶解度大得多。",
-        "ku": "Çareseriya AgCl ya hişk a di ava paqij de ji helbûna wê ya di nav 0,1 M çareseriya NaCl de PÊKIR MEZIRtir e."
+        "ku": "Helbûna AgCl ya hişk di ava saf de ji helbûna wê di çareseriya 0,1 M NaCl de PIR MEZINTIR e."
       },
       "trap": {
         "tr": "AgCl tuzu NaCl çözeltisinde saf sudakinden daha çok çözünür.",
@@ -293,14 +293,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-f12",
       "fact": {
-        "tr": "Çözeltiye aynı sıcaklıkta su eklenirse dipteki katı çözünür ancak doymuş çözeltideki iyon derişimleri ve Kçç değişmez.",
-        "en": "If water is added to the solution at the same temperature, the bottom solid dissolves, but the ion concentrations and Ksp in the saturated solution do not change.",
-        "de": "Wenn der Lösung bei gleicher Temperatur Wasser zugesetzt wird, löst sich der Bodenfeststoff auf, aber die Ionenkonzentrationen und Ksp in der gesättigten Lösung ändern sich nicht.",
-        "fr": "Si de l'eau est ajoutée à la solution à la même température, le solide inférieur se dissout, mais les concentrations d'ions et de Ksp dans la solution saturée ne changent pas.",
-        "ru": "Если к раствору при той же температуре добавить воду, донный остаток растворится, но концентрации ионов и Kуд в насыщенном растворе не изменяются.",
-        "ar": "إذا أضيف الماء إلى المحلول بنفس درجة الحرارة، فإن المادة الصلبة السفلية تذوب، لكن تركيز الأيونات و Ksp في المحلول المشبع لا يتغير.",
-        "zh": "如果在相同温度下向溶液中加入水，底部固体溶解，但饱和溶液中的离子浓度和Ksp不改变。",
-        "ku": "Ger di heman germahiyê de av li çarenûsê were zêdekirin, qalika binî dihele, lê hêjmara îyonan û Ksp di çareseriya têrbûyî de naguhere."
+        "tr": "Dipte katısı bulunan doymuş çözeltiye aynı sıcaklıkta su eklenirse dipteki katının bir kısmı çözünür; dipte katı kaldığı sürece iyon derişimleri ve Kçç değişmez.",
+        "en": "If water is added at the same temperature to a saturated solution with solid at the bottom, part of the solid dissolves; as long as some solid remains, the ion concentrations and Ksp do not change.",
+        "de": "Wird einer gesättigten Lösung mit Bodenkörper bei gleicher Temperatur Wasser zugesetzt, löst sich ein Teil des Bodenkörpers; solange Bodenkörper vorhanden bleibt, ändern sich die Ionenkonzentrationen und Ksp nicht.",
+        "fr": "Si l'on ajoute de l'eau à même température à une solution saturée contenant un dépôt solide, une partie du solide se dissout ; tant qu'il reste du solide, les concentrations des ions et Ksp ne changent pas.",
+        "ru": "Если к насыщенному раствору с осадком на дне добавить воду при той же температуре, часть осадка растворится; пока осадок остаётся, концентрации ионов и Ksp не изменяются.",
+        "ar": "إذا أُضيف الماء عند درجة الحرارة نفسها إلى محلول مشبع في قاعه مادة صلبة، يذوب جزء من الصلب؛ وما دام بعض الصلب باقيًا فلا تتغير تراكيز الأيونات ولا Ksp.",
+        "zh": "在同一温度下向底部有固体的饱和溶液中加水，部分固体溶解；只要仍有固体剩余，离子浓度和Ksp都不变。",
+        "ku": "Ger di heman germahiyê de av li çareseriya têr a ku li binê wê hişk heye were zêdekirin, beşek ji hişkê dihele; heta ku hişk bimîne, tîrbûna îyonan û Ksp naguherin."
       },
       "trap": {
         "tr": "Dipte katısı olan çözeltiye su eklenirse çözelti derişimi hızla artar.",
@@ -310,43 +310,43 @@ export const unit20: ChemistryUnitSeedData = {
         "ru": "Если к раствору с твердыми частицами на дне добавить воду, концентрация раствора быстро возрастает.",
         "ar": "إذا أضيف الماء إلى محلول به مواد صلبة في القاع، فإن تركيز المحلول يزداد بسرعة.",
         "zh": "如果向底部有固体的溶液中添加水，则溶液浓度迅速增加。",
-        "ku": "Ger av li çaraleke ku li binê wê maddeyên hişk hene, were zêdekirin, konsantasyona çareseriyê zû zêde dibe."
+        "ku": "Ger av li çareseriya ku li binê wê hişk heye were zêdekirin, tîrbûna çareseriyê bi lez zêde dibe."
       }
     },
     {
       "id": "u20-f13",
       "fact": {
-        "tr": "Seçimli çöktürme: İki iyon içeren çözeltiye çöktürücü eklendiğinde Kçç si küçük olan (daha az çözünen) önce çöker.",
-        "en": "Selective precipitation: When a precipitant is added to a solution containing two ions, the one with the lower Ksp (less soluble) precipitates first.",
-        "de": "Selektive Fällung: Wenn einer Lösung, die zwei Ionen enthält, ein Fällungsmittel zugesetzt wird, fällt zuerst dasjenige mit dem niedrigeren Ksp (weniger löslich) aus.",
-        "fr": "Précipitation sélective : lorsqu'un précipitant est ajouté à une solution contenant deux ions, celui avec le Ksp le plus faible (le moins soluble) précipite en premier.",
-        "ru": "Селективное осаждение: когда осадитель добавляется к раствору, содержащему два иона, первым выпадает в осадок тот, у которого меньше Ksp (менее растворимый).",
-        "ar": "الترسيب الانتقائي: عند إضافة مادة مرسبة إلى محلول يحتوي على أيونين، فإن الذي يحتوي على Ksp الأقل (الأقل قابلية للذوبان) يترسب أولاً.",
-        "zh": "选择性沉淀：当将沉淀剂添加到含有两种离子的溶液中时，Ksp 较低（溶解度较小）的离子首先沉淀。",
-        "ku": "Barîna hilbijartî: Dema ku rijandinek li çareseriyek ku du îyon tê de tê zêde kirin, ya ku Ksp kêmtir e (kêm tê çareserkirin) pêşî dibare."
+        "tr": "Seçimli çöktürme: Aynı tipteki (ör. AgCl ve AgBr gibi XY) tuzların iyonlarını eşit derişimde içeren çözeltiye çöktürücü eklendiğinde Kçç si küçük olan (daha az çözünen) önce çöker.",
+        "en": "Selective precipitation: when a precipitating agent is added to a solution containing equal concentrations of the ions of salts of the same type (e.g. XY salts such as AgCl and AgBr), the one with the smaller Ksp (less soluble) precipitates first.",
+        "de": "Selektive Fällung: Wird einer Lösung, die die Ionen gleichartiger Salze (z. B. XY-Salze wie AgCl und AgBr) in gleicher Konzentration enthält, ein Fällungsmittel zugesetzt, fällt das Salz mit dem kleineren Ksp (schwerer löslich) zuerst aus.",
+        "fr": "Précipitation sélective : lorsqu'on ajoute un agent précipitant à une solution contenant, à concentrations égales, les ions de sels du même type (ex. sels XY comme AgCl et AgBr), celui dont le Ksp est le plus petit (le moins soluble) précipite en premier.",
+        "ru": "Селективное осаждение: при добавлении осадителя к раствору, содержащему в равных концентрациях ионы солей одного типа (напр., солей XY, таких как AgCl и AgBr), первой осаждается соль с меньшим Ksp (менее растворимая).",
+        "ar": "الترسيب الانتقائي: عند إضافة عامل مرسِّب إلى محلول يحتوي بتراكيز متساوية على أيونات أملاح من النوع نفسه (مثل أملاح XY كـ AgCl و AgBr)، يترسب أولًا الملح ذو Ksp الأصغر (الأقل ذوبانًا).",
+        "zh": "选择性沉淀：向含有等浓度同类型盐（如AgCl和AgBr这类XY型盐）离子的溶液中加入沉淀剂时，Ksp较小（溶解度较小）的先沉淀。",
+        "ku": "Niştina hilbijartî: dema ku madeyeke nişteker li çareseriyeke ku îyonên xwêyên ji heman tîpê (mînak xwêyên XY wekî AgCl û AgBr) bi tîrbûna wekhev dihewîne tê zêdekirin, ya ku Ksp wê piçûktir e (kêmtir dihele) pêşî dinişe."
       },
       "trap": {
-        "tr": "Kçç si büyük olan tuz çözeltiden ilk önce çöker.",
-        "en": "The salt with the highest Ksp precipitates out of solution first.",
-        "de": "Das Salz mit dem höchsten Ksp fällt zuerst aus der Lösung aus.",
-        "fr": "Le sel avec le Ksp le plus élevé précipite en premier hors de la solution.",
-        "ru": "Соль с наибольшим Ksp выпадает в осадок из раствора первой.",
-        "ar": "يترسب الملح ذو أعلى Ksp خارج المحلول أولاً.",
-        "zh": "Ksp 最高的盐首先从溶液中沉淀出来。",
-        "ku": "Xwêya bi Ksp-ya herî zêde ewil ji çareseriyê derdikeve."
+        "tr": "Aynı tipteki tuzlardan Kçç si büyük olan tuz çözeltiden ilk önce çöker.",
+        "en": "Among salts of the same type, the salt with the larger Ksp precipitates from the solution first.",
+        "de": "Von gleichartigen Salzen fällt das Salz mit dem größeren Ksp zuerst aus der Lösung aus.",
+        "fr": "Parmi des sels du même type, celui dont le Ksp est le plus grand précipite en premier.",
+        "ru": "Из солей одного типа первой из раствора осаждается соль с бо́льшим Ksp.",
+        "ar": "من بين الأملاح من النوع نفسه، يترسب أولًا الملح ذو Ksp الأكبر.",
+        "zh": "在同类型的盐中，Ksp较大的盐先从溶液中沉淀出来。",
+        "ku": "Di nav xwêyên ji heman tîpê de, xwêya ku Ksp wê mezintir e pêşî ji çareseriyê dinişe."
       }
     },
     {
       "id": "u20-f14",
       "fact": {
-        "tr": "Sıcak su mağaralarındaki sarkıt ve dikitler (travertenler), CaCO3 ün çözünürlük dengesi ile oluşur.",
-        "en": "Stalactites and stalagmites (travertines) in hot water caves are formed by the solubility balance of CaCO3.",
-        "de": "Stalaktiten und Stalagmiten (Travertine) in Heißwasserhöhlen entstehen durch das Löslichkeitsgleichgewicht von CaCO3.",
-        "fr": "Les stalactites et stalagmites (travertins) dans les grottes d’eau chaude sont formées par l’équilibre de solubilité du CaCO3.",
-        "ru": "Сталактиты и сталагмиты (травертины) в пещерах с горячей водой образуются за счет баланса растворимости CaCO3.",
-        "ar": "تتشكل الهوابط والصواعد (الحجر الجيري) في كهوف الماء الساخن من خلال توازن ذوبان CaCO3.",
-        "zh": "热水洞中的钟乳石和石笋（石灰华）是由CaCO3的溶解度平衡形成的。",
-        "ku": "Stalaktît û stalagmît (travertîn) di şikeftên ava germ de ji balansa çareserbûnê ya CaCO3 çêdibin."
+        "tr": "Mağaralardaki sarkıt ve dikitler ile Pamukkale travertenleri, CaCO3'ün çözünme-çökelme dengesiyle oluşur.",
+        "en": "Stalactites and stalagmites in caves and the travertines of Pamukkale form through the dissolution-precipitation equilibrium of CaCO3.",
+        "de": "Stalaktiten und Stalagmiten in Höhlen sowie die Travertinterrassen von Pamukkale entstehen durch das Lösungs-Fällungs-Gleichgewicht von CaCO3.",
+        "fr": "Les stalactites et stalagmites des grottes ainsi que les travertins de Pamukkale se forment grâce à l’équilibre de dissolution-précipitation de CaCO3.",
+        "ru": "Сталактиты и сталагмиты в пещерах, а также травертины Памуккале образуются благодаря равновесию растворения-осаждения CaCO3.",
+        "ar": "تتكوّن الهوابط والصواعد في الكهوف وترافرتينات باموكالي من خلال اتزان الذوبان-الترسيب لـ CaCO3.",
+        "zh": "洞穴中的钟乳石、石笋以及棉花堡的石灰华，都是由CaCO3的溶解-沉淀平衡形成的。",
+        "ku": "Stalaktît û stalagmîtên di şikeftan de û travertenên Pamukkaleyê bi hevsengiya helîn-niştinê ya CaCO3 çêdibin."
       },
       "trap": {
         "tr": "Sarkıt ve dikitler fiziksel buharlaşma sonucu kum birikimidir.",
@@ -362,14 +362,14 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-f15",
       "fact": {
-        "tr": "Bazik tuzların (örn. Mg(OH)2) asidik ortamda çözünürlüğü artar çünkü H+ iyonları OH- iyonlarını nötralleştirerek dengeyi sağa kaydırır.",
-        "en": "The solubility of basic salts (e.g. Mg(OH)2) in an acidic environment increases because H+ ions neutralize OH- ions, shifting the equilibrium to the right.",
-        "de": "Die Löslichkeit basischer Salze (z. B. Mg(OH)2) in einer sauren Umgebung erhöht sich, weil H+-Ionen OH--Ionen neutralisieren und das Gleichgewicht nach rechts verschiebt.",
-        "fr": "La solubilité des sels basiques (par exemple Mg(OH)2) dans un environnement acide augmente car les ions H+ neutralisent les ions OH-, déplaçant l'équilibre vers la droite.",
-        "ru": "Растворимость основных солей (например, Mg(OH)2) в кислой среде увеличивается, поскольку ионы H+ нейтрализуют ионы OH-, смещая равновесие вправо.",
-        "ar": "تزداد قابلية ذوبان الأملاح الأساسية (مثل Mg(OH)2) في البيئة الحمضية لأن أيونات H+ تحيد أيونات OH-، مما يؤدي إلى تحويل التوازن إلى اليمين.",
-        "zh": "碱性盐（例如 Mg(OH)2）在酸性环境中的溶解度增加，因为 H+ 离子中和 OH- 离子，使平衡向右移动。",
-        "ku": "Çareseriya xwêyên bingehîn (mînak Mg(OH)2) di hawîrdora asîd de zêde dibe ji ber ku îyonên H+ îyonên OH- bêbandor dikin, hevsengiyê ber bi rastê ve diguherînin."
+        "tr": "Az çözünen bazların (ör. Mg(OH)2) asidik ortamda çözünürlüğü artar çünkü H+ iyonları OH- iyonlarını nötralleştirerek dengeyi sağa kaydırır.",
+        "en": "The solubility of sparingly soluble bases (e.g. Mg(OH)2) increases in an acidic medium because H+ ions neutralize OH- ions, shifting the equilibrium to the right.",
+        "de": "Die Löslichkeit schwerlöslicher Basen (z. B. Mg(OH)2) nimmt in saurem Milieu zu, weil H+-Ionen die OH--Ionen neutralisieren und das Gleichgewicht nach rechts verschieben.",
+        "fr": "La solubilité des bases peu solubles (ex. Mg(OH)2) augmente en milieu acide car les ions H+ neutralisent les ions OH-, ce qui déplace l’équilibre vers la droite.",
+        "ru": "Растворимость малорастворимых оснований (напр., Mg(OH)2) в кислой среде увеличивается, так как ионы H+ нейтрализуют ионы OH- и смещают равновесие вправо.",
+        "ar": "تزداد ذوبانية القواعد قليلة الذوبان (مثل Mg(OH)2) في الوسط الحمضي لأن أيونات H+ تعادل أيونات OH- فينزاح الاتزان نحو اليمين.",
+        "zh": "难溶碱（如Mg(OH)2）在酸性介质中的溶解度增大，因为H+中和OH-，使平衡向右移动。",
+        "ku": "Helbûna bazên kêm-helbar (mînak Mg(OH)2) di navgîna asîdî de zêde dibe, ji ber ku îyonên H+ îyonên OH- bêbandor dikin û hevsengiyê ber bi rastê ve dibin."
       },
       "trap": {
         "tr": "Mg(OH)2 asidik ortamda daha az çözünür.",
@@ -390,9 +390,9 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Die Komplexierung kann die Löslichkeit schwerlöslicher Salze erhöhen (z. B. Auflösung von AgCl in NH3-Medium).",
         "fr": "La complexation peut augmenter la solubilité des sels peu solubles (par exemple dissolution d'AgCl dans un milieu NH3).",
         "ru": "Комплексообразование может повысить растворимость плохо растворимых солей (например, растворение AgCl в среде NH3).",
-        "ar": "قد يزيد التعقيد من قابلية ذوبان الأملاح ضعيفة الذوبان (مثل ذوبان AgCl في وسط NH3).",
+        "ar": "قد يزيد تكوين الأيونات المعقدة من ذوبانية الأملاح قليلة الذوبان (مثل ذوبان AgCl في وسط يحتوي NH3).",
         "zh": "络合可能会增加难溶盐的溶解度（例如 AgCl 在 NH3 介质中的溶解）。",
-        "ku": "Tevlihevbûn dibe ku helbûna xwêyên kêm-çareserî zêde bike (mînak, belavbûna AgCl di navgîna NH3 de)."
+        "ku": "Pêkhatina îyonên kompleks dikare helbûna xwêyên kêm-helbar zêde bike (mînak helîna AgCl di navgîna NH3 de)."
       },
       "trap": {
         "tr": "Kompleks oluşumu tuzu hemen çöktürür.",
@@ -400,9 +400,9 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Durch die Komplexbildung fällt das Salz sofort aus.",
         "fr": "La formation de complexes précipite le sel immédiatement.",
         "ru": "При образовании комплекса соль немедленно осаждается.",
-        "ar": "يؤدي التكوين المعقد إلى ترسيب الملح على الفور.",
+        "ar": "يؤدي تكوين المعقد إلى ترسيب الملح فورًا.",
         "zh": "络合物的形成使盐立即沉淀。",
-        "ku": "Pêkhatina tevlihev xwê tavilê radike."
+        "ku": "Pêkhatina kompleksê xwê tavilê dinişîne."
       }
     }
   ],
@@ -414,30 +414,30 @@ export const unit20: ChemistryUnitSeedData = {
         "en": "Qi < Ksp",
         "de": "Qi < Ksp",
         "fr": "Qi < Ksp",
-        "ru": "Ци < Ксп",
+        "ru": "Qi < Ksp",
         "ar": "Qi < Ksp",
         "zh": "Qi < Ksp",
         "ku": "Qi < Ksp"
       },
       "conceptB": {
         "tr": "Qi > Kçç",
-        "en": "Qi > Kçch",
-        "de": "Qi > Kçch",
-        "fr": "Qi > Kçch",
-        "ru": "Ци > Кчч",
+        "en": "Qi > Ksp",
+        "de": "Qi > Ksp",
+        "fr": "Qi > Ksp",
+        "ru": "Qi > Ksp",
         "ar": "Qi > Ksp",
-        "zh": "齐 > 克奇",
-        "ku": "Qi > Kçch"
+        "zh": "Qi > Ksp",
+        "ku": "Qi > Ksp"
       },
       "distinction": {
         "tr": "Qi < Kçç doymamış çözelti çökelme yok; Qi > Kçç aşırı doymuş çözelti çökelme var demektir.",
-        "en": "Qi < Ksp unsaturated solution no precipitation; Qi > Kçç means there is supersaturated solution precipitation.",
-        "de": "Qi < Ksp ungesättigte Lösung kein Niederschlag; Qi > Kçç bedeutet, dass eine übersättigte Lösung ausfällt.",
-        "fr": "Qi < Ksp solution insaturée pas de précipitation ; Qi > Kçç signifie qu’il y a précipitation de solution sursaturée.",
-        "ru": "Qi < Ksp ненасыщенный раствор без выпадения осадка; Qi > Kçç означает выпадение пересыщенного раствора.",
-        "ar": "Qi < Ksp محلول غير مشبع بدون هطول؛ Qi > Kçç يعني وجود ترسيب محلول مفرط التشبع.",
-        "zh": "Qi < Ksp 不饱和溶液无沉淀； Qi > Kçç 表示有过饱和溶液沉淀。",
-        "ku": "Qi < Ksp çareseriya ne têrbûyî bê barîn; Qi > Kçç tê wê wateyê ku barîna çareseriya pir têrbûyî heye."
+        "en": "Qi < Ksp means an unsaturated solution with no precipitation; Qi > Ksp means a supersaturated solution in which precipitation occurs.",
+        "de": "Qi < Ksp bedeutet eine ungesättigte Lösung ohne Fällung; Qi > Ksp bedeutet eine übersättigte Lösung, in der Fällung eintritt.",
+        "fr": "Qi < Ksp signifie une solution insaturée sans précipitation ; Qi > Ksp signifie une solution sursaturée où un précipité se forme.",
+        "ru": "Qi < Ksp — ненасыщенный раствор, осадок не выпадает; Qi > Ksp — пересыщенный раствор, выпадает осадок.",
+        "ar": "Qi < Ksp يعني محلولًا غير مشبع بلا ترسيب؛ و Qi > Ksp يعني محلولًا فوق مشبع يحدث فيه ترسيب.",
+        "zh": "Qi < Ksp表示不饱和溶液，无沉淀；Qi > Ksp表示过饱和溶液，有沉淀生成。",
+        "ku": "Qi < Ksp yanî çareseriya ne têr û nişte çênabe; Qi > Ksp yanî çareseriya ji têrbûnê zêdetir û nişte çêdibe."
       }
     },
     {
@@ -450,17 +450,17 @@ export const unit20: ChemistryUnitSeedData = {
         "ru": "Растворимость в чистой воде",
         "ar": "الذوبان في الماء النقي",
         "zh": "在纯水中的溶解度",
-        "ku": "Çareseriya di ava paqij"
+        "ku": "Helbûn di ava saf de"
       },
       "conceptB": {
-        "tr": "Ortak İyondaki Çözünürlük",
-        "en": "Solubility in Common Ion",
-        "de": "Löslichkeit in gewöhnlichem Ion",
-        "fr": "Solubilité dans l'ion commun",
-        "ru": "Растворимость в общем ионе",
-        "ar": "الذوبان في الأيونات المشتركة",
-        "zh": "在普通离子中的溶解度",
-        "ku": "Çareseriya di Ionê de"
+        "tr": "Ortak İyon İçeren Çözeltideki Çözünürlük",
+        "en": "Solubility in a Solution Containing a Common Ion",
+        "de": "Löslichkeit in einer Lösung mit gleichionigem Zusatz",
+        "fr": "Solubilité dans une solution contenant un ion commun",
+        "ru": "Растворимость в растворе, содержащем общий ион",
+        "ar": "الذوبانية في محلول يحتوي على أيون مشترك",
+        "zh": "在含同离子溶液中的溶解度",
+        "ku": "Helbûn di çareseriya bi îyona hevpar de"
       },
       "distinction": {
         "tr": "Ortak iyon varlığı dengeyi sola kaydırarak çözünürlüğü büyük ölçüde düşürür.",
@@ -469,7 +469,7 @@ export const unit20: ChemistryUnitSeedData = {
         "fr": "La présence d’ions communs déplace l’équilibre vers la gauche, réduisant considérablement la solubilité.",
         "ru": "Присутствие общих ионов смещает равновесие влево, что значительно снижает растворимость.",
         "ar": "يؤدي وجود الأيونات المشتركة إلى تغيير التوازن إلى اليسار، مما يقلل بشكل كبير من قابلية الذوبان.",
-        "zh": "常见离子的存在使平衡向左移动，大大降低了溶解度。",
+        "zh": "同离子的存在使平衡向左移动，大大降低了溶解度。",
         "ku": "Hebûna îyonên hevpar hevsengiyê ber bi çepê ve diguhere, helbûnê pir kêm dike."
       }
     },
@@ -477,23 +477,23 @@ export const unit20: ChemistryUnitSeedData = {
       "id": "u20-c03",
       "conceptA": {
         "tr": "Çözünürlük Çarpımı (Kçç)",
-        "en": "Resolution Product (Ksp)",
-        "de": "Auflösungsprodukt (Ksp)",
-        "fr": "Produit de résolution (Ksp)",
-        "ru": "Продукт разрешения (Ksp)",
-        "ar": "منتج الدقة (Ksp)",
-        "zh": "分辨率产品 (Ksp)",
-        "ku": "Hilbera Çareseriyê (Ksp)"
+        "en": "Solubility Product (Ksp)",
+        "de": "Löslichkeitsprodukt (Ksp)",
+        "fr": "Produit de solubilité (Ksp)",
+        "ru": "Произведение растворимости (Ksp)",
+        "ar": "حاصل الإذابة (Ksp)",
+        "zh": "溶度积 (Ksp)",
+        "ku": "Hevdana Helbûnê (Ksp)"
       },
       "conceptB": {
         "tr": "Molar Çözünürlük (s)",
         "en": "Molar Solubility (s)",
-        "de": "Molare Löslichkeit (en)",
-        "fr": "Solubilité(s) molaire(s)",
-        "ru": "Молярная растворимость (а)",
-        "ar": "الذوبان المولي (ق)",
+        "de": "Molare Löslichkeit (s)",
+        "fr": "Solubilité molaire (s)",
+        "ru": "Молярная растворимость (s)",
+        "ar": "الذوبانية المولية (s)",
         "zh": "摩尔溶解度（s）",
-        "ku": "Çareseriya Molar (s)"
+        "ku": "Helbûna Molar (s)"
       },
       "distinction": {
         "tr": "Kçç denge sabitidir ve sadece sıcaklıkla değişir; s ise 1 litrede çözünen maksimum mol sayısı olup ortak iyonla azalır.",
@@ -502,7 +502,7 @@ export const unit20: ChemistryUnitSeedData = {
         "fr": "Ksp est la constante d'équilibre et ne varie qu'avec la température ; s est le nombre maximum de moles dissoutes dans 1 litre et diminue avec l'ion commun.",
         "ru": "Ksp — константа равновесия и меняется только с температурой; s — максимальное количество молей, растворенных в 1 литре, которое уменьшается с ростом общего иона.",
         "ar": "Ksp هو ثابت التوازن ويتغير فقط مع درجة الحرارة؛ s هو الحد الأقصى لعدد المولات المذابة في 1 لتر ويتناقص مع الأيون المشترك.",
-        "zh": "Ksp 是平衡常数，仅随温度变化； s 是 1 升中溶解的最大摩尔数，随着普通离子的增加而减少。",
+        "zh": "Ksp 是平衡常数，仅随温度变化； s 是 1 升中溶解的最大摩尔数，随着同离子的增加而减少。",
         "ku": "Ksp berdewamiya hevsengiyê ye û tenê bi germahiyê diguhere; s hejmara herî zêde ya molên ku di 1 lîtreyê de dihele ye û bi îyona hevpar re kêm dibe."
       }
     },
@@ -510,33 +510,33 @@ export const unit20: ChemistryUnitSeedData = {
       "id": "u20-c04",
       "conceptA": {
         "tr": "İyon Çarpımı (Qi)",
-        "en": "Ion Multiplication (Qi)",
-        "de": "Ionenvervielfachung (Qi)",
-        "fr": "Multiplication des ions (Qi)",
-        "ru": "Умножение ионов (Ци)",
-        "ar": "الضرب الأيوني (تشي)",
-        "zh": "离子倍增 (Qi)",
-        "ku": "Pirbûna îyonan (Qi)"
+        "en": "Ion Product (Qi)",
+        "de": "Ionenprodukt (Qi)",
+        "fr": "Produit ionique (Qi)",
+        "ru": "Ионное произведение (Qi)",
+        "ar": "الحاصل الأيوني (Qi)",
+        "zh": "离子积 (Qi)",
+        "ku": "Hevdana Îyonan (Qi)"
       },
       "conceptB": {
         "tr": "Çözünürlük Çarpımı (Kçç)",
-        "en": "Resolution Product (Ksp)",
-        "de": "Auflösungsprodukt (Ksp)",
-        "fr": "Produit de résolution (Ksp)",
-        "ru": "Продукт разрешения (Ksp)",
-        "ar": "منتج الدقة (Ksp)",
-        "zh": "分辨率产品 (Ksp)",
-        "ku": "Hilbera Çareseriyê (Ksp)"
+        "en": "Solubility Product (Ksp)",
+        "de": "Löslichkeitsprodukt (Ksp)",
+        "fr": "Produit de solubilité (Ksp)",
+        "ru": "Произведение растворимости (Ksp)",
+        "ar": "حاصل الإذابة (Ksp)",
+        "zh": "溶度积 (Ksp)",
+        "ku": "Hevdana Helbûnê (Ksp)"
       },
       "distinction": {
         "tr": "Qi o andaki iyon derişimleri çarpımıdır; Qi > Kçç ise çözelti aşırı doygundur ve çökme başlar.",
-        "en": "Qi is the product of ion concentrations at that moment; If Qi > Kçç, the solution is supersaturated and precipitation begins.",
-        "de": "Qi ist das Produkt der Ionenkonzentrationen zu diesem Zeitpunkt; Wenn Qi > Kçç, ist die Lösung übersättigt und es beginnt eine Ausfällung.",
-        "fr": "Le Qi est le produit des concentrations d’ions à ce moment-là ; Si Qi > Kçç, la solution est sursaturée et la précipitation commence.",
-        "ru": "Qi – произведение концентраций ионов в данный момент; Если Qi > Kçç, раствор пересыщается и начинается осаждение.",
-        "ar": "تشي هو نتاج تركيزات الأيونات في تلك اللحظة؛ إذا كان Qi > Kçç، يكون المحلول مفرط التشبع ويبدأ هطول الأمطار.",
-        "zh": "Qi是该时刻离子浓度的乘积；如果 Qi > Kçç，则溶液过饱和并开始沉淀。",
-        "ku": "Qi berhema îyonên wê gavê ye; Ger Qi > Kçç, çareserî pir têr dibe û barîn dest pê dike."
+        "en": "Qi is the product of ion concentrations at that moment; If Qi > Ksp, the solution is supersaturated and precipitation begins.",
+        "de": "Qi ist das Produkt der Ionenkonzentrationen zu diesem Zeitpunkt; Wenn Qi > Ksp, ist die Lösung übersättigt und es beginnt eine Ausfällung.",
+        "fr": "Le Qi est le produit des concentrations d’ions à ce moment-là ; Si Qi > Ksp, la solution est sursaturée et la précipitation commence.",
+        "ru": "Qi – произведение концентраций ионов в данный момент; Если Qi > Ksp, раствор пересыщается и начинается осаждение.",
+        "ar": "Qi هو نتاج تركيزات الأيونات في تلك اللحظة؛ إذا كان Qi > Ksp، يكون المحلول مفرط التشبع ويبدأ الترسيب.",
+        "zh": "Qi是该时刻离子浓度的乘积；如果 Qi > Ksp，则溶液过饱和并开始沉淀。",
+        "ku": "Qi berhema îyonên wê gavê ye; Ger Qi > Ksp, çareserî pir têr dibe û niştin dest pê dike."
       }
     },
     {
@@ -548,8 +548,8 @@ export const unit20: ChemistryUnitSeedData = {
         "fr": "Effet ionique commun",
         "ru": "Общий ионный эффект",
         "ar": "تأثير الأيونات المشتركة",
-        "zh": "共同离子效应",
-        "ku": "Bandora Ionê ya Hevbeş"
+        "zh": "同离子效应",
+        "ku": "Bandora Îyona Hevpar"
       },
       "conceptB": {
         "tr": "Yabancı İyon Etkisi",
@@ -559,17 +559,17 @@ export const unit20: ChemistryUnitSeedData = {
         "ru": "Эффект инородного иона",
         "ar": "تأثير الأيونات الأجنبية",
         "zh": "外来离子效应",
-        "ku": "Bandora Ion Biyanî"
+        "ku": "Bandora Îyona Biyanî"
       },
       "distinction": {
-        "tr": "Ortak iyon çözünürlüğü le Chatelier gereği belirgin şekilde azaltır; yabancı iyon tuz etkisiyle çözünürlüğü az miktarda artırabilir.",
-        "en": "The common ion solubility significantly reduces the Chatelier requirement; The foreign ion may increase the solubility slightly by salt effect.",
-        "de": "Die gemeinsame Ionenlöslichkeit reduziert den Chatelier-Bedarf erheblich; Das Fremdion kann durch Salzeinwirkung die Löslichkeit leicht erhöhen.",
-        "fr": "La solubilité des ions communs réduit considérablement les besoins de Chatelier ; L'ion étranger peut augmenter légèrement la solubilité par effet sel.",
-        "ru": "Растворимость обычных ионов значительно снижает требования Шателье; Инородный ион может немного увеличить растворимость за счет эффекта соли.",
-        "ar": "إن قابلية الذوبان في الأيونات الشائعة تقلل بشكل كبير من متطلبات Chatelier؛ قد يزيد الأيون الأجنبي من قابلية الذوبان قليلاً عن طريق تأثير الملح.",
-        "zh": "共同离子溶解度显着降低了夏特列要求；外来离子可以通过盐效应稍微增加溶解度。",
-        "ku": "Çareseriya îona hevpar bi girîngî hewcedariya Chatelier kêm dike; Dibe ku îyona biyanî bi bandora xwê re halbûnê hinekî zêde bike."
+        "tr": "Ortak iyon, Le Chatelier ilkesi gereği çözünürlüğü belirgin şekilde azaltır; yabancı iyon ise tuz etkisiyle çözünürlüğü az miktarda artırabilir.",
+        "en": "A common ion markedly decreases solubility in accordance with Le Chatelier's principle; a foreign ion may slightly increase solubility through the salt effect.",
+        "de": "Ein gleiches (gemeinsames) Ion verringert die Löslichkeit nach dem Prinzip von Le Chatelier deutlich; ein Fremdion kann die Löslichkeit durch den Salzeffekt leicht erhöhen.",
+        "fr": "Un ion commun diminue nettement la solubilité, conformément au principe de Le Chatelier ; un ion étranger peut légèrement l'augmenter par effet de sel.",
+        "ru": "Общий ион, согласно принципу Ле Шателье, заметно снижает растворимость; посторонний ион может немного повысить растворимость за счёт солевого эффекта.",
+        "ar": "يقلل الأيون المشترك الذوبانية بشكل واضح وفق مبدأ لوشاتلييه؛ أما الأيون الغريب فقد يزيد الذوبانية قليلًا بتأثير الملح.",
+        "zh": "根据勒夏特列原理，同离子会明显降低溶解度；外来离子则可能通过盐效应使溶解度略有增大。",
+        "ku": "Îyona hevpar li gorî prensîba Le Chatelier helbûnê bi awayekî eşkere kêm dike; îyona biyanî dikare bi bandora xwê helbûnê hinekî zêde bike."
       }
     },
     {
@@ -580,7 +580,7 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Gleichgewicht der gesättigten Lösung",
         "fr": "Équilibre des solutions saturées",
         "ru": "Равновесие в насыщенном растворе",
-        "ar": "توازن الحل المشبع",
+        "ar": "اتزان المحلول المشبع",
         "zh": "饱和溶液平衡",
         "ku": "Hevsengiya Çareseriya Têrbûyî"
       },
@@ -592,17 +592,17 @@ export const unit20: ChemistryUnitSeedData = {
         "ru": "Перенасыщенный раствор",
         "ar": "محلول مفرط التشبع",
         "zh": "过饱和溶液",
-        "ku": "Çareseriya Supersaturated"
+        "ku": "Çareseriya Ji Têrbûnê Zêdetir"
       },
       "distinction": {
         "tr": "Doygun çözeltide katı ile iyonlar dengededir ve Qi = Kçç'dir; aşırı doygunda Qi > Kçç olup sistem kararsızdır.",
-        "en": "In saturated solution, the solid and ions are in balance and Qi = Kçç; In oversaturation, Qi > Kçç and the system is unstable.",
-        "de": "In gesättigter Lösung sind Feststoff und Ionen im Gleichgewicht und Qi = Kçç; Bei Übersättigung ist Qi > Kçç und das System ist instabil.",
-        "fr": "En solution saturée, le solide et les ions sont en équilibre et Qi = Kçç ; En sursaturation, Qi > Kçç et le système est instable.",
-        "ru": "В насыщенном растворе твердое вещество и ионы находятся в равновесии и Qi = Kçç; При пересыщении Qi > Kçç и система неустойчива.",
-        "ar": "في المحلول المشبع، تكون المواد الصلبة والأيونات متوازنة وQi = Kçç؛ في حالة التشبع الزائد، Qi > Kçç والنظام غير مستقر.",
-        "zh": "在饱和溶液中，固体和离子处于平衡状态，Qi = Kçç；过饱和时，Qi > Kçç，系统不稳定。",
-        "ku": "Di çareseriya têrbûyî de, hişk û îyon di hevsengiyê de ne û Qi = Kçç; Di zêde têrbûnê de Qi > Kçç û pergal bêîstîkrar e."
+        "en": "In saturated solution, the solid and ions are in balance and Qi = Ksp; In oversaturation, Qi > Ksp and the system is unstable.",
+        "de": "In gesättigter Lösung sind Feststoff und Ionen im Gleichgewicht und Qi = Ksp; Bei Übersättigung ist Qi > Ksp und das System ist instabil.",
+        "fr": "En solution saturée, le solide et les ions sont en équilibre et Qi = Ksp ; En sursaturation, Qi > Ksp et le système est instable.",
+        "ru": "В насыщенном растворе твердое вещество и ионы находятся в равновесии и Qi = Ksp; При пересыщении Qi > Ksp и система неустойчива.",
+        "ar": "في المحلول المشبع، تكون المواد الصلبة والأيونات متوازنة وQi = Ksp؛ في حالة التشبع الزائد، Qi > Ksp والنظام غير مستقر.",
+        "zh": "在饱和溶液中，固体和离子处于平衡状态，Qi = Ksp；过饱和时，Qi > Ksp，系统不稳定。",
+        "ku": "Di çareseriya têrbûyî de, hişk û îyon di hevsengiyê de ne û Qi = Ksp; Di zêde têrbûnê de Qi > Ksp û pergal bêîstîkrar e."
       }
     },
     {
@@ -662,13 +662,13 @@ export const unit20: ChemistryUnitSeedData = {
       },
       "distinction": {
         "tr": "XY tuzunda Kçç = s^2'dir; XY2 tuzunda Kçç = 4s^3 bağıntısı geçerlidir.",
-        "en": "In the XY salt, Ksp = s^2; In the XY2 salt, the relation Kçç = 4s^3 is valid.",
-        "de": "Im XY-Salz ist Ksp = s^2; Im XY2-Salz gilt die Beziehung Kçç = 4s^3.",
-        "fr": "Dans le sel XY, Ksp = s^2 ; Dans le sel XY2, la relation Kçç = 4s^3 est valide.",
-        "ru": "В соли XY Ksp = s^2; В соли XY2 справедливо соотношение Kçç = 4s^3.",
-        "ar": "في ملح XY، Ksp = s^2؛ في ملح XY2، العلاقة Kçç = 4s^3 صحيحة.",
-        "zh": "在 XY 盐中，Ksp = s^2；在 XY2 盐中，关系式 Kçç = 4s^3 有效。",
-        "ku": "Di xwêya XY de, Ksp = s^2; Di xwêya XY2 de, têkiliya Kçç = 4s^3 derbasdar e."
+        "en": "In the XY salt, Ksp = s^2; In the XY2 salt, the relation Ksp = 4s^3 is valid.",
+        "de": "Im XY-Salz ist Ksp = s^2; Im XY2-Salz gilt die Beziehung Ksp = 4s^3.",
+        "fr": "Dans le sel XY, Ksp = s^2 ; Dans le sel XY2, la relation Ksp = 4s^3 est valide.",
+        "ru": "В соли XY Ksp = s^2; В соли XY2 справедливо соотношение Ksp = 4s^3.",
+        "ar": "في ملح XY، Ksp = s^2؛ في ملح XY2، العلاقة Ksp = 4s^3 صحيحة.",
+        "zh": "在 XY 盐中，Ksp = s^2；在 XY2 盐中，关系式 Ksp = 4s^3 有效。",
+        "ku": "Di xwêya XY de, Ksp = s^2; Di xwêya XY2 de, têkiliya Ksp = 4s^3 derbasdar e."
       }
     }
   ],
@@ -679,11 +679,11 @@ export const unit20: ChemistryUnitSeedData = {
         "tr": "Çökelme Olup Olmayacağını Belirleme",
         "en": "Determining Whether Precipitation Will Occur",
         "de": "Bestimmen, ob Niederschlag auftreten wird",
-        "fr": "Déterminer si des précipitations se produiront",
-        "ru": "Определение того, произойдут ли осадки",
-        "ar": "تحديد ما إذا كان هطول الأمطار سيحدث",
-        "zh": "确定是否会发生降水",
-        "ku": "Tespîtkirin Ka Barîn Dê Biqewime"
+        "fr": "Déterminer si un précipité se formera",
+        "ru": "Определение, выпадет ли осадок",
+        "ar": "تحديد ما إذا كان سيحدث ترسيب",
+        "zh": "判断是否会产生沉淀",
+        "ku": "Diyarkirina ka nişte dê çêbibe an na"
       },
       "steps": [
         {
@@ -698,33 +698,33 @@ export const unit20: ChemistryUnitSeedData = {
         },
         {
           "tr": "İyon çarpımı bağıntısını yaz: Qi = [A+]^a * [B-]^b",
-          "en": "Write the ion multiplication relation: Qi = [A+]^a * [B-]^b",
-          "de": "Schreiben Sie die Ionenmultiplikationsbeziehung: Qi = [A+]^a * [B-]^b",
-          "fr": "Écrivez la relation de multiplication des ions : Qi = [A+]^a * [B-]^b",
-          "ru": "Запишите соотношение умножения ионов: Qi = [A+]^a * [B-]^b",
-          "ar": "اكتب علاقة ضرب الأيونات: Qi = [A+]^a * [B-]^b",
-          "zh": "写出离子倍增关系：Qi = [A+]^a * [B-]^b",
-          "ku": "Têkiliya pirbûna îyonan binivîsin: Qi = [A+]^a * [B-]^b"
+          "en": "Write the ion product expression: Qi = [A+]^a * [B-]^b",
+          "de": "Stelle den Ausdruck für das Ionenprodukt auf: Qi = [A+]^a * [B-]^b",
+          "fr": "Écrire l'expression du produit ionique : Qi = [A+]^a * [B-]^b",
+          "ru": "Запишите выражение ионного произведения: Qi = [A+]^a * [B-]^b",
+          "ar": "اكتب علاقة الحاصل الأيوني: Qi = [A+]^a * [B-]^b",
+          "zh": "写出离子积表达式：Qi = [A+]^a * [B-]^b",
+          "ku": "Têkiliya hevdana îyonan binivîse: Qi = [A+]^a * [B-]^b"
         },
         {
           "tr": "Qi değerini hesapla",
           "en": "Calculate Qi value",
           "de": "Berechnen Sie den Qi-Wert",
           "fr": "Calculer la valeur Qi",
-          "ru": "Рассчитать значение Ци",
-          "ar": "حساب قيمة تشي",
+          "ru": "Рассчитать значение Qi",
+          "ar": "حساب قيمة Qi",
           "zh": "计算Qi值",
           "ku": "Nirxa Qi hesab bike"
         },
         {
           "tr": "Qi ile Kçç yi karşılaştır (Qi > Kçç ise çöker)",
-          "en": "Compare Qi with Kçç (collapses if Qi > Kçç)",
-          "de": "Vergleichen Sie Qi mit Kçç (kollabiert, wenn Qi > Kçç)",
-          "fr": "Comparez Qi avec Kçç (s'effondre si Qi > Kçç)",
-          "ru": "Сравнить Ци с Kçç (сворачивается, если Qi > Kçç)",
-          "ar": "قارن Qi مع Kçç (ينهار إذا كان Qi > Kçç)",
-          "zh": "将 Qi 与 Kçç 进行比较（如果 Qi > Kçç 则折叠）",
-          "ku": "Qi bi Kçç re bidin ber hev (heke Qi > Kçç hilweşe)"
+          "en": "Compare Qi with Ksp (a precipitate forms if Qi > Ksp)",
+          "de": "Vergleiche Qi mit Ksp (bei Qi > Ksp fällt ein Niederschlag aus)",
+          "fr": "Comparer Qi à Ksp (un précipité se forme si Qi > Ksp)",
+          "ru": "Сравните Qi с Ksp (если Qi > Ksp, выпадает осадок)",
+          "ar": "قارن Qi مع Ksp (يحدث ترسيب إذا كان Qi > Ksp)",
+          "zh": "比较Qi与Ksp（若Qi > Ksp则产生沉淀）",
+          "ku": "Qi bi Ksp re bide ber hev (ger Qi > Ksp be nişte çêdibe)"
         }
       ]
     },
@@ -732,13 +732,13 @@ export const unit20: ChemistryUnitSeedData = {
       "id": "u20-s02",
       "title": {
         "tr": "Kçç'den Çözünürlük Hesabı",
-        "en": "Solubility Calculation from Kçç",
-        "de": "Löslichkeitsberechnung aus Kçç",
-        "fr": "Calcul de solubilité à partir de Kçç",
-        "ru": "Расчет растворимости по Kçç",
-        "ar": "حساب الذوبان من Kçç",
-        "zh": "根据 Kçç 计算溶解度",
-        "ku": "Hesabkirina Çareseriyê ji Kçç"
+        "en": "Solubility Calculation from Ksp",
+        "de": "Löslichkeitsberechnung aus Ksp",
+        "fr": "Calcul de solubilité à partir de Ksp",
+        "ru": "Расчет растворимости по Ksp",
+        "ar": "حساب الذوبان من Ksp",
+        "zh": "根据 Ksp 计算溶解度",
+        "ku": "Hesabkirina Çareseriyê ji Ksp"
       },
       "steps": [
         {
@@ -763,13 +763,13 @@ export const unit20: ChemistryUnitSeedData = {
         },
         {
           "tr": "Kçç bağıntısı kurularak s'nin kuvvetine eşitlenir",
-          "en": "It is equalized to the power of s by establishing the Kçç relation",
-          "de": "Es wird durch die Festlegung der Kçç-Relation mit der Potenz s gleichgesetzt",
-          "fr": "Il est égalisé à la puissance de s en établissant la relation Kçç",
-          "ru": "Его приравнивают к степени s, устанавливая соотношение Kçç",
-          "ar": "يتم معادلتها لقوة s من خلال إنشاء علاقة Kçç",
-          "zh": "通过建立 Kçç 关系将其等于 s 的幂",
-          "ku": "Bi danîna pêwendiya Kçç re bi hêza s-yê re tê wekhev kirin"
+          "en": "The Ksp expression is written in terms of a power of s (e.g. s^2, 4s^3)",
+          "de": "Der Ksp-Ausdruck wird als Potenz von s geschrieben (z. B. s^2, 4s^3)",
+          "fr": "L'expression de Ksp est écrite en fonction d'une puissance de s (ex. s^2, 4s^3)",
+          "ru": "Выражение Ksp записывают через степень s (напр., s^2, 4s^3)",
+          "ar": "يُكتب تعبير Ksp بدلالة قوة لـ s (مثل s^2 و 4s^3)",
+          "zh": "把Ksp表达式写成s的幂的形式（如s^2、4s^3）",
+          "ku": "Têkiliya Ksp bi hêzeke s tê nivîsandin (mînak s^2, 4s^3)"
         },
         {
           "tr": "Karekök veya küpkök alınarak molar çözünürlük s bulunur",
@@ -792,7 +792,7 @@ export const unit20: ChemistryUnitSeedData = {
         "fr": "Calcul de l'effet ionique commun",
         "ru": "Расчет общего ионного эффекта",
         "ar": "حساب تأثير الأيونات المشتركة",
-        "zh": "常见离子效应计算",
+        "zh": "同离子效应计算",
         "ku": "Hesabkirina Bandora Ionê ya Hevbeş"
       },
       "steps": [
@@ -803,18 +803,18 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "La concentration en ions communs d'un sel bien soluble est déterminée",
           "ru": "Определена общая концентрация ионов хорошо растворимой соли.",
           "ar": "يتم تحديد تركيز الأيون المشترك من الملح القابل للذوبان بشكل جيد",
-          "zh": "测定易溶盐的常见离子浓度",
+          "zh": "测定易溶盐的同离子浓度",
           "ku": "Pîvana îona hevpar a ji xwêyek baş-çareserî tê destnîşankirin"
         },
         {
-          "tr": "Az çözünen tuzun saf sudaki çözünürlük dengesi yazılır",
-          "en": "The solubility balance of the slightly soluble salt in pure water is written",
-          "de": "Dargestellt wird die Löslichkeitsbilanz des schwerlöslichen Salzes in reinem Wasser",
-          "fr": "Le bilan de solubilité du sel légèrement soluble dans l’eau pure s’écrit",
-          "ru": "Записан баланс растворимости малорастворимой соли в чистой воде.",
-          "ar": "تتم كتابة توازن ذوبان الملح قليل الذوبان في الماء النقي",
-          "zh": "微溶盐在纯水中的溶解度平衡写成",
-          "ku": "Hevsengiya helbûnê ya xwêya piçek di ava paqij de tê nivîsandin"
+          "tr": "Az çözünen tuzun çözünme dengesi ve Kçç bağıntısı yazılır",
+          "en": "The dissolution equilibrium and Ksp expression of the sparingly soluble salt are written",
+          "de": "Das Lösungsgleichgewicht und der Ksp-Ausdruck des schwerlöslichen Salzes werden aufgestellt",
+          "fr": "L'équilibre de dissolution et l'expression de Ksp du sel peu soluble sont écrits",
+          "ru": "Записываются равновесие растворения малорастворимой соли и выражение Ksp",
+          "ar": "تُكتب معادلة اتزان ذوبان الملح قليل الذوبان وعلاقة Ksp",
+          "zh": "写出难溶盐的溶解平衡及Ksp表达式",
+          "ku": "Hevsengiya helînê û têkiliya Ksp ya xwêya kêm-helbar tên nivîsandin"
         },
         {
           "tr": "Ortak iyon derişimi denge bağıntısında yerine konur",
@@ -823,18 +823,18 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "La concentration en ions communs est substituée dans la relation d'équilibre",
           "ru": "Концентрация обычных ионов подставляется в соотношение равновесия",
           "ar": "يتم استبدال تركيز الأيونات المشتركة في علاقة التوازن",
-          "zh": "将共同离子浓度代入平衡关系式",
+          "zh": "将同离子浓度代入平衡关系式",
           "ku": "Giraniya îyona hevpar di têkiliya hevsengiyê de tê veguheztin"
         },
         {
           "tr": "Le Chatelier gereği çözünürlüğün azaldığı gösterilir",
-          "en": "It is shown that the resolution decreases according to Le Chatelier",
-          "de": "Es zeigt sich, dass die Auflösung nach Le Chatelier abnimmt",
-          "fr": "On montre que la résolution diminue selon Le Chatelier",
-          "ru": "Показано, что разрешение уменьшается по Ле Шателье.",
-          "ar": "لقد تبين أن الدقة تتناقص وفقًا لـ Le Chatelier",
-          "zh": "根据勒夏特列 (Le Chatelier) 定律，分辨率会降低",
-          "ku": "Tê nîşandan ku li gorî Le Chatelier çareserî kêm dibe"
+          "en": "It is shown that the solubility decreases, in accordance with Le Chatelier's principle",
+          "de": "Es wird gezeigt, dass die Löslichkeit nach Le Chatelier abnimmt",
+          "fr": "On montre que la solubilité diminue, conformément au principe de Le Chatelier",
+          "ru": "Показывают, что растворимость уменьшается в соответствии с принципом Ле Шателье",
+          "ar": "يُبيَّن أن الذوبانية تقل وفق مبدأ لوشاتلييه",
+          "zh": "根据勒夏特列原理，说明溶解度降低",
+          "ku": "Tê nîşandan ku li gorî Le Chatelier helbûn kêm dibe"
         }
       ]
     },
@@ -842,13 +842,13 @@ export const unit20: ChemistryUnitSeedData = {
       "id": "u20-s04",
       "title": {
         "tr": "Çökme Olup Olmayacağını Belirleme",
-        "en": "Determining Whether a Crash Will Occur",
-        "de": "Bestimmen, ob ein Absturz auftritt",
-        "fr": "Déterminer si un crash va se produire",
-        "ru": "Определение того, произойдет ли сбой",
-        "ar": "تحديد ما إذا كان العطل سيحدث أم لا",
-        "zh": "确定是否会发生崩溃",
-        "ku": "Tespîtkirin ka Qezayek Dê Biqewime"
+        "en": "Determining Whether Precipitation Will Occur",
+        "de": "Bestimmen, ob eine Fällung eintritt",
+        "fr": "Déterminer si une précipitation aura lieu",
+        "ru": "Определение, произойдёт ли осаждение",
+        "ar": "تحديد ما إذا كان الترسيب سيحدث",
+        "zh": "判断是否发生沉淀",
+        "ku": "Diyarkirina ka niştin dê çêbibe an na"
       },
       "steps": [
         {
@@ -866,8 +866,8 @@ export const unit20: ChemistryUnitSeedData = {
           "en": "Qi is found by multiplying the current ion concentrations",
           "de": "Qi wird durch Multiplikation der aktuellen Ionenkonzentrationen ermittelt",
           "fr": "Le Qi est trouvé en multipliant les concentrations d'ions actuelles",
-          "ru": "Ци находится путем умножения текущих концентраций ионов",
-          "ar": "تم العثور على تشى عن طريق ضرب تركيزات الأيونات الحالية",
+          "ru": "Находят Qi — произведение текущих концентраций ионов",
+          "ar": "يُحسب Qi بضرب تراكيز الأيونات في تلك اللحظة",
           "zh": "Qi 是通过乘以当前离子浓度得出的",
           "ku": "Qi bi pirkirina hûrgelên ionê yên heyî tê dîtin"
         },
@@ -883,13 +883,13 @@ export const unit20: ChemistryUnitSeedData = {
         },
         {
           "tr": "Qi > Kçç ise çözelti aşırı doygundur ve çökme gerçekleşir",
-          "en": "If Qi > Kçç, the solution is supersaturated and collapse occurs.",
-          "de": "Wenn Qi > Kçç, ist die Lösung übersättigt und es kommt zum Kollaps.",
-          "fr": "Si Qi > Kçç, la solution est sursaturée et un effondrement se produit.",
-          "ru": "Если Qi > Kçç, раствор пересыщен и происходит коллапс.",
-          "ar": "إذا كان Qi > Kçç، يكون المحلول مفرط التشبع ويحدث الانهيار.",
-          "zh": "如果 Qi > Kçç，则溶液过饱和并发生塌陷。",
-          "ku": "Ger Qi > Kçç, çareserî pir têr dibe û hilweşîn çêdibe."
+          "en": "If Qi > Ksp, the solution is supersaturated and precipitation occurs",
+          "de": "Wenn Qi > Ksp, ist die Lösung übersättigt und es kommt zur Fällung",
+          "fr": "Si Qi > Ksp, la solution est sursaturée et un précipité se forme",
+          "ru": "Если Qi > Ksp, раствор пересыщен и выпадает осадок",
+          "ar": "إذا كان Qi > Ksp يكون المحلول فوق مشبع ويحدث الترسيب",
+          "zh": "若Qi > Ksp，溶液过饱和，发生沉淀",
+          "ku": "Ger Qi > Ksp be, çareserî ji têrbûnê zêdetir e û niştin çêdibe"
         }
       ]
     }
@@ -898,7 +898,7 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin01",
       "stem": {
-        "tr": "Belirli bir sıcaklıkta AgCl katısının çözünürlük çarpımı Kçç = 1.0x10^-10 dur. Buna göre AgCl nin saf sudaki çözünürlüğü kaç mol/L dir?",
+        "tr": "Belirli bir sıcaklıkta AgCl katısının çözünürlük çarpımı Kçç = 1,0x10^-10 dur. Buna göre AgCl nin saf sudaki çözünürlüğü kaç mol/L dir?",
         "en": "The solubility product of AgCl solid at a certain temperature is Ksp = 1.0x10^-10. Accordingly, what is the solubility of AgCl in pure water?",
         "de": "Das Löslichkeitsprodukt des festen AgCl bei einer bestimmten Temperatur beträgt Ksp = 1,0x10^-10. Wie hoch ist dementsprechend die Löslichkeit von AgCl in reinem Wasser?",
         "fr": "Le produit de solubilité du solide AgCl à une certaine température est Ksp = 1,0x10^-10. Par conséquent, quelle est la solubilité de AgCl dans l’eau pure ?",
@@ -909,59 +909,59 @@ export const unit20: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "1.0x10^-5 M",
-          "en": "1.0x10^-5M",
-          "de": "1,0x10^-5M",
-          "fr": "1,0x10^-5M",
-          "ru": "1,0x10^-5М",
+          "tr": "1,0x10^-5 M",
+          "en": "1.0x10^-5 M",
+          "de": "1,0x10^-5 M",
+          "fr": "1,0x10^-5 M",
+          "ru": "1,0x10^-5 М",
           "ar": "1.0x10^-5 م",
-          "zh": "1.0x10^-5M",
-          "ku": "1.0x10^-5M"
+          "zh": "1.0x10^-5 M",
+          "ku": "1.0x10^-5 M"
         },
         {
-          "tr": "1.0x10^-10 M",
-          "en": "1.0x10^-10M",
-          "de": "1,0x10^-10M",
-          "fr": "1,0x10^-10M",
-          "ru": "1,0x10^-10М",
+          "tr": "1,0x10^-10 M",
+          "en": "1.0x10^-10 M",
+          "de": "1,0x10^-10 M",
+          "fr": "1,0x10^-10 M",
+          "ru": "1,0x10^-10 М",
           "ar": "1.0x10^-10 م",
-          "zh": "1.0x10^-10M",
-          "ku": "1.0x10^-10M"
+          "zh": "1.0x10^-10 M",
+          "ku": "1.0x10^-10 M"
         },
         {
-          "tr": "2.0x10^-5 M",
-          "en": "2.0x10^-5M",
-          "de": "2,0x10^-5M",
-          "fr": "2,0x10^-5M",
-          "ru": "2,0x10^-5М",
+          "tr": "2,0x10^-5 M",
+          "en": "2.0x10^-5 M",
+          "de": "2,0x10^-5 M",
+          "fr": "2,0x10^-5 M",
+          "ru": "2,0x10^-5 М",
           "ar": "2.0x10^-5 م",
-          "zh": "2.0x10^-5M",
-          "ku": "2.0x10^-5M"
+          "zh": "2.0x10^-5 M",
+          "ku": "2.0x10^-5 M"
         },
         {
-          "tr": "1.0x10^-20 M",
-          "en": "1.0x10^-20M",
-          "de": "1,0x10^-20M",
-          "fr": "1,0x10^-20M",
-          "ru": "1,0x10^-20М",
+          "tr": "1,0x10^-20 M",
+          "en": "1.0x10^-20 M",
+          "de": "1,0x10^-20 M",
+          "fr": "1,0x10^-20 M",
+          "ru": "1,0x10^-20 М",
           "ar": "1.0x10^-20 م",
-          "zh": "1.0x10^-20M",
-          "ku": "1.0x10^-20M"
+          "zh": "1.0x10^-20 M",
+          "ku": "1.0x10^-20 M"
         },
         {
-          "tr": "5.0x10^-6 M",
-          "en": "5.0x10^-6M",
-          "de": "5,0x10^-6M",
-          "fr": "5,0x10^-6M",
-          "ru": "5,0x10^-6М",
+          "tr": "5,0x10^-6 M",
+          "en": "5.0x10^-6 M",
+          "de": "5,0x10^-6 M",
+          "fr": "5,0x10^-6 M",
+          "ru": "5,0x10^-6 М",
           "ar": "5.0x10^-6 م",
-          "zh": "5.0x10^-6M",
-          "ku": "5.0x10^-6M"
+          "zh": "5.0x10^-6 M",
+          "ku": "5.0x10^-6 M"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "AgCl ⇌ Ag+ + Cl- -> Kçç = s^2 = 10^-10 -> s = sqrt(10^-10) = 1.0x10^-5 M.",
+        "tr": "AgCl ⇌ Ag+ + Cl- -> Kçç = s^2 = 10^-10 -> s = sqrt(10^-10) = 1,0x10^-5 M.",
         "en": "AgCl ⇌ Ag+ + Cl- -> Ksp = s^2 = 10^-10 -> s = sqrt(10^-10) = 1.0x10^-5 M.",
         "de": "AgCl ⇌ Ag+ + Cl- -> Ksp = s^2 = 10^-10 -> s = sqrt(10^-10) = 1,0x10^-5 M.",
         "fr": "AgCl ⇌ Ag+ + Cl- -> Ksp = s^2 = 10^-10 -> s = sqrt(10^-10) = 1,0x10^-5 M.",
@@ -974,7 +974,7 @@ export const unit20: ChemistryUnitSeedData = {
     {
       "id": "u20-twin02",
       "stem": {
-        "tr": "Belirli sıcaklıkta Kçç si 4.0x10^-12 olan XY2 tuzunun saf sudaki molar çözünürlüğü kaçtır?",
+        "tr": "Belirli sıcaklıkta Kçç si 4,0x10^-12 olan XY2 tuzunun saf sudaki molar çözünürlüğü kaçtır?",
         "en": "What is the molar solubility of salt XY2, whose Ksp is 4.0x10^-12, in pure water at a certain temperature?",
         "de": "Wie hoch ist die molare Löslichkeit des Salzes XY2, dessen Ksp 4,0x10^-12 beträgt, in reinem Wasser bei einer bestimmten Temperatur?",
         "fr": "Quelle est la solubilité molaire du sel XY2, dont le Ksp est de 4,0x10^-12, dans l'eau pure à une certaine température ?",
@@ -985,59 +985,59 @@ export const unit20: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "1.0x10^-4 M",
-          "en": "1.0x10^-4M",
-          "de": "1,0x10^-4M",
-          "fr": "1,0x10^-4M",
-          "ru": "1,0x10^-4М",
+          "tr": "1,0x10^-4 M",
+          "en": "1.0x10^-4 M",
+          "de": "1,0x10^-4 M",
+          "fr": "1,0x10^-4 M",
+          "ru": "1,0x10^-4 М",
           "ar": "1.0x10^-4 م",
-          "zh": "1.0x10^-4M",
-          "ku": "1.0x10^-4M"
+          "zh": "1.0x10^-4 M",
+          "ku": "1.0x10^-4 M"
         },
         {
-          "tr": "2.0x10^-6 M",
-          "en": "2.0x10^-6M",
-          "de": "2,0x10^-6M",
-          "fr": "2,0x10^-6M",
-          "ru": "2,0x10^-6М",
+          "tr": "2,0x10^-6 M",
+          "en": "2.0x10^-6 M",
+          "de": "2,0x10^-6 M",
+          "fr": "2,0x10^-6 M",
+          "ru": "2,0x10^-6 М",
           "ar": "2.0x10^-6 م",
-          "zh": "2.0x10^-6M",
-          "ku": "2.0x10^-6M"
+          "zh": "2.0x10^-6 M",
+          "ku": "2.0x10^-6 M"
         },
         {
-          "tr": "1.0x10^-6 M",
-          "en": "1.0x10^-6M",
-          "de": "1,0x10^-6M",
-          "fr": "1,0x10^-6M",
-          "ru": "1,0x10^-6М",
+          "tr": "1,0x10^-6 M",
+          "en": "1.0x10^-6 M",
+          "de": "1,0x10^-6 M",
+          "fr": "1,0x10^-6 M",
+          "ru": "1,0x10^-6 М",
           "ar": "1.0x10^-6 م",
-          "zh": "1.0x10^-6M",
-          "ku": "1.0x10^-6M"
+          "zh": "1.0x10^-6 M",
+          "ku": "1.0x10^-6 M"
         },
         {
-          "tr": "4.0x10^-4 M",
-          "en": "4.0x10^-4M",
-          "de": "4,0x10^-4M",
-          "fr": "4,0x10^-4M",
-          "ru": "4,0x10^-4М",
+          "tr": "4,0x10^-4 M",
+          "en": "4.0x10^-4 M",
+          "de": "4,0x10^-4 M",
+          "fr": "4,0x10^-4 M",
+          "ru": "4,0x10^-4 М",
           "ar": "4.0x10^-4 م",
-          "zh": "4.0x10^-4M",
-          "ku": "4.0x10^-4M"
+          "zh": "4.0x10^-4 M",
+          "ku": "4.0x10^-4 M"
         },
         {
-          "tr": "2.0x10^-4 M",
-          "en": "2.0x10^-4M",
-          "de": "2,0x10^-4M",
-          "fr": "2,0x10^-4M",
-          "ru": "2,0x10^-4М",
+          "tr": "2,0x10^-4 M",
+          "en": "2.0x10^-4 M",
+          "de": "2,0x10^-4 M",
+          "fr": "2,0x10^-4 M",
+          "ru": "2,0x10^-4 М",
           "ar": "2.0x10^-4 م",
-          "zh": "2.0x10^-4M",
-          "ku": "2.0x10^-4M"
+          "zh": "2.0x10^-4 M",
+          "ku": "2.0x10^-4 M"
         }
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "XY2 ⇌ X2+ + 2 Y- -> Kçç = s * (2s)^2 = 4s^3 = 4.0x10^-12 -> s^3 = 10^-12 -> s = 1.0x10^-4 M.",
+        "tr": "XY2 ⇌ X2+ + 2 Y- -> Kçç = s * (2s)^2 = 4s^3 = 4,0x10^-12 -> s^3 = 10^-12 -> s = 1,0x10^-4 M.",
         "en": "XY2 ⇌ X2+ + 2 Y- -> Ksp = s * (2s)^2 = 4s^3 = 4.0x10^-12 -> s^3 = 10^-12 -> s = 1.0x10^-4 M.",
         "de": "XY2 ⇌ X2+ + 2 Y- -> KL = s * (2s)^2 = 4s^3 = 4.0x10^-12 -> s^3 = 10^-12 -> s = 1.0x10^-4 M.",
         "fr": "XY2 ⇌ X2+ + 2 Y- -> Ks = s * (2s)^2 = 4s^3 = 4.0x10^-12 -> s^3 = 10^-12 -> s = 1.0x10^-4 M.",
@@ -1067,7 +1067,7 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "L'ion commun augmente la solubilité du sel.",
           "ru": "Общий ион увеличивает растворимость соли.",
           "ar": "الأيون المشترك يزيد من ذوبان الملح.",
-          "zh": "共同离子增加了盐的溶解度。",
+          "zh": "同离子增加了盐的溶解度。",
           "ku": "Iyona hevpar helbûna xwê zêde dike."
         },
         {
@@ -1098,7 +1098,7 @@ export const unit20: ChemistryUnitSeedData = {
           "ru": "Если к раствору с твердыми частицами на дне добавить воду, концентрация раствора быстро возрастает.",
           "ar": "إذا أضيف الماء إلى محلول به مواد صلبة في القاع، فإن تركيز المحلول يزداد بسرعة.",
           "zh": "如果向底部有固体的溶液中添加水，则溶液浓度迅速增加。",
-          "ku": "Ger av li çaraleke ku li binê wê maddeyên hişk hene, were zêdekirin, konsantasyona çareseriyê zû zêde dibe."
+          "ku": "Ger av li çareseriya ku li binê wê hişk heye were zêdekirin, tîrbûna çareseriyê bi lez zêde dibe."
         },
         {
           "tr": "Mg(OH)2 asidik ortamda daha az çözünür.",
@@ -1140,11 +1140,11 @@ export const unit20: ChemistryUnitSeedData = {
           "tr": "Qi < Kçç olduğunda çökelme meydana gelir.",
           "en": "When Qi < Ksp, precipitation occurs.",
           "de": "Wenn Qi < Ksp, kommt es zu Niederschlag.",
-          "fr": "Lorsque Qi < Ksp, des précipitations se produisent.",
-          "ru": "Когда Qi < Ksp, выпадают осадки.",
-          "ar": "عندما يكون Qi <Ksp، يحدث هطول الأمطار.",
+          "fr": "Lorsque Qi < Ksp, un précipité se forme.",
+          "ru": "Когда Qi < Ksp, выпадает осадок.",
+          "ar": "عندما يكون Qi < Ksp يحدث ترسيب.",
           "zh": "当 Qi < Ksp 时，发生沉淀。",
-          "ku": "Dema Qi < Ksp, barîn çêdibe."
+          "ku": "Dema Qi < Ksp be, nişte çêdibe."
         },
         {
           "tr": "Endotermik tuzda ısıtma yapılırsa Kçç küçülür.",
@@ -1157,14 +1157,14 @@ export const unit20: ChemistryUnitSeedData = {
           "ku": "Ger germkirin di xwêya endotermîk de were kirin, Ksp piçûk dibe."
         },
         {
-          "tr": "Kçç si büyük olan tuz çözeltiden ilk önce çöker.",
-          "en": "The salt with the highest Ksp precipitates out of solution first.",
-          "de": "Das Salz mit dem höchsten Ksp fällt zuerst aus der Lösung aus.",
-          "fr": "Le sel avec le Ksp le plus élevé précipite en premier hors de la solution.",
-          "ru": "Соль с наибольшим Ksp выпадает в осадок из раствора первой.",
-          "ar": "يترسب الملح ذو أعلى Ksp خارج المحلول أولاً.",
-          "zh": "Ksp 最高的盐首先从溶液中沉淀出来。",
-          "ku": "Xwêya bi Ksp-ya herî zêde ewil ji çareseriyê derdikeve."
+          "tr": "Aynı tipteki tuzlardan Kçç si büyük olan tuz çözeltiden ilk önce çöker.",
+          "en": "Among salts of the same type, the salt with the larger Ksp precipitates from the solution first.",
+          "de": "Von gleichartigen Salzen fällt das Salz mit dem größeren Ksp zuerst aus der Lösung aus.",
+          "fr": "Parmi des sels du même type, celui dont le Ksp est le plus grand précipite en premier.",
+          "ru": "Из солей одного типа первой из раствора осаждается соль с бо́льшим Ksp.",
+          "ar": "من بين الأملاح من النوع نفسه، يترسب أولًا الملح ذو Ksp الأكبر.",
+          "zh": "在同类型的盐中，Ksp较大的盐先从溶液中沉淀出来。",
+          "ku": "Di nav xwêyên ji heman tîpê de, xwêya ku Ksp wê mezintir e pêşî ji çareseriyê dinişe."
         },
         {
           "tr": "1:2 tuzlarda (PbCl2, CaF2) çözünürlük s ise Kçç = [Pb2+][Cl-]^2 = s * (2s)^2 = 4s^3 tür.",
@@ -1182,9 +1182,9 @@ export const unit20: ChemistryUnitSeedData = {
           "de": "Durch die Komplexbildung fällt das Salz sofort aus.",
           "fr": "La formation de complexes précipite le sel immédiatement.",
           "ru": "При образовании комплекса соль немедленно осаждается.",
-          "ar": "يؤدي التكوين المعقد إلى ترسيب الملح على الفور.",
+          "ar": "يؤدي تكوين المعقد إلى ترسيب الملح فورًا.",
           "zh": "络合物的形成使盐立即沉淀。",
-          "ku": "Pêkhatina tevlihev xwê tavilê radike."
+          "ku": "Pêkhatina kompleksê xwê tavilê dinişîne."
         }
       ],
       "correctIndex": 3,
@@ -1220,7 +1220,7 @@ export const unit20: ChemistryUnitSeedData = {
           "ru": "При Qi = Ksp раствор ненасыщен и соль выпадает в осадок.",
           "ar": "عندما يكون Qi = Ksp، يكون المحلول غير مشبع ويترسب الملح.",
           "zh": "当Qi = Ksp时，溶液不饱和，盐沉淀。",
-          "ku": "Dema Qi = Ksp, çareserî têr nabe û xwê dibare."
+          "ku": "Dema Qi = Ksp be, çareserî ne têr e û xwê dinişe."
         },
         {
           "tr": "Ekzotermik tuzlarda sıcaklık arttıkça daha çok madde çözünür.",
@@ -1244,13 +1244,13 @@ export const unit20: ChemistryUnitSeedData = {
         },
         {
           "tr": "Kçç çok çözünen tuzların derişimini ifade eder.",
-          "en": "Kçç refers to the concentration of highly soluble salts.",
-          "de": "Kçç bezieht sich auf die Konzentration hochlöslicher Salze.",
-          "fr": "Kçç fait référence à la concentration de sels hautement solubles.",
-          "ru": "Kçç относится к концентрации хорошо растворимых солей.",
-          "ar": "يشير Kçç إلى تركيز الأملاح شديدة الذوبان.",
-          "zh": "Kçç 是指高溶解盐的浓度。",
-          "ku": "Kçç behsa kombûna xwêyên pir heliyaye dike."
+          "en": "Ksp refers to the concentration of highly soluble salts.",
+          "de": "Ksp bezieht sich auf die Konzentration hochlöslicher Salze.",
+          "fr": "Ksp fait référence à la concentration de sels hautement solubles.",
+          "ru": "Ksp относится к концентрации хорошо растворимых солей.",
+          "ar": "يشير Ksp إلى تركيز الأملاح شديدة الذوبان.",
+          "zh": "Ksp 是指高溶解盐的浓度。",
+          "ku": "Ksp behsa kombûna xwêyên pir heliyaye dike."
         },
         {
           "tr": "1:3 tuzlarda (Al(OH)3, Fe(OH)3) çözünürlük s ise Kçç = s * (3s)^3 = 27s^4 tür.",
@@ -1295,7 +1295,7 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "Effet des ions communs : La présence d'ions communs dans la solution déplace l'équilibre vers les réactifs et réduit la solubilité, selon Le Chatelier.",
           "ru": "Эффект общего иона: присутствие общих ионов в растворе смещает равновесие в сторону реагентов и снижает растворимость, согласно Ле Шателье.",
           "ar": "تأثير الأيونات المشتركة: يؤدي وجود الأيونات المشتركة في المحلول إلى تحويل التوازن إلى المواد المتفاعلة وتقليل قابلية الذوبان، وفقًا لـ Le Chatelier.",
-          "zh": "常见离子效应：根据 Le Chatelier 的说法，溶液中常见离子的存在会将平衡转移到反应物并降低溶解度。",
+          "zh": "同离子效应：根据 Le Chatelier 的说法，溶液中同离子的存在会将平衡转移到反应物并降低溶解度。",
           "ku": "Bandora îyona hevpar: Li gorî Le Chatelier, hebûna îyonên hevpar di çareseriyê de hevsengiyê ber bi reaktantan ve diguhezîne û çareserbûnê kêm dike."
         },
         {
@@ -1316,7 +1316,7 @@ export const unit20: ChemistryUnitSeedData = {
           "ru": "Если к раствору с твердыми частицами на дне добавить воду, концентрация раствора быстро возрастает.",
           "ar": "إذا أضيف الماء إلى محلول به مواد صلبة في القاع، فإن تركيز المحلول يزداد بسرعة.",
           "zh": "如果向底部有固体的溶液中添加水，则溶液浓度迅速增加。",
-          "ku": "Ger av li çaraleke ku li binê wê maddeyên hişk hene, were zêdekirin, konsantasyona çareseriyê zû zêde dibe."
+          "ku": "Ger av li çareseriya ku li binê wê hişk heye were zêdekirin, tîrbûna çareseriyê bi lez zêde dibe."
         },
         {
           "tr": "Mg(OH)2 asidik ortamda daha az çözünür.",
@@ -1335,7 +1335,7 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "Lorsque l'ion commun est ajouté, la valeur Ksp devient plus petite.",
           "ru": "При добавлении общего иона значение Ksp становится меньше.",
           "ar": "عند إضافة الأيون المشترك، تصبح قيمة Ksp أصغر.",
-          "zh": "当添加普通离子时，Ksp值变小。",
+          "zh": "当添加同离子时，Ksp值变小。",
           "ku": "Dema ku îona hevpar tê zêdekirin, nirxa Ksp piçûktir dibe."
         }
       ],
@@ -1347,7 +1347,7 @@ export const unit20: ChemistryUnitSeedData = {
         "fr": "L'affirmation exacte est: \"Effet des ions communs : La présence d'ions communs dans la solution déplace l'équilibre vers les réactifs et réduit la solubilité, selon Le Chatelier.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Эффект общего иона: присутствие общих ионов в растворе смещает равновесие в сторону реагентов и снижает растворимость, согласно Ле Шателье.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"تأثير الأيونات المشتركة: يؤدي وجود الأيونات المشتركة في المحلول إلى تحويل التوازن إلى المواد المتفاعلة وتقليل قابلية الذوبان، وفقًا لـ Le Chatelier.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“常见离子效应：根据 Le Chatelier 的说法，溶液中常见离子的存在会将平衡转移到反应物并降低溶解度。”。属于化学学科必考的核心客观真理。",
+        "zh": "正确表述为：“同离子效应：根据 Le Chatelier 的说法，溶液中同离子的存在会将平衡转移到反应物并降低溶解度。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Bandora îyona hevpar: Li gorî Le Chatelier, hebûna îyonên hevpar di çareseriyê de hevsengiyê ber bi reaktantan ve diguhezîne û çareserbûnê kêm dike.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
@@ -1376,23 +1376,23 @@ export const unit20: ChemistryUnitSeedData = {
         },
         {
           "tr": "İyon çarpımı Qi (çökelme kesri): Qi > Kçç ise çözelti aşırı doygundur ve çökelme gerçekleşir.",
-          "en": "Ion product Qi (precipitation fraction): If Qi > Kçç, the solution is supersaturated and precipitation occurs.",
-          "de": "Ionenprodukt Qi (Ausfällungsanteil): Wenn Qi > Kçç, ist die Lösung übersättigt und es kommt zur Ausfällung.",
-          "fr": "Produit ionique Qi (fraction de précipitation) : Si Qi > Kçç, la solution est sursaturée et une précipitation se produit.",
-          "ru": "Ионный продукт Qi (фракция осадков): Если Qi > Kçç, раствор перенасыщен и происходит осаждение.",
-          "ar": "المنتج الأيوني Qi (جزء الهطول): إذا كان Qi > Kçç، يكون المحلول مفرط التشبع ويحدث الهطول.",
-          "zh": "离子积 Qi（沉淀分数）：如果 Qi > Kçç，则溶液过饱和并发生沉淀。",
-          "ku": "Berhema îyonî Qi (parçeya baranê): Ger Qi > Kçç, çareserî pir têr dibe û barîn çêdibe."
+          "en": "Ion product Qi: if Qi > Ksp, the solution is supersaturated and precipitation occurs.",
+          "de": "Ionenprodukt Qi: Wenn Qi > Ksp, ist die Lösung übersättigt und es kommt zur Fällung.",
+          "fr": "Produit ionique Qi : si Qi > Ksp, la solution est sursaturée et un précipité se forme.",
+          "ru": "Ионное произведение Qi: если Qi > Ksp, раствор пересыщен и выпадает осадок.",
+          "ar": "الحاصل الأيوني Qi: إذا كان Qi > Ksp يكون المحلول فوق مشبع ويحدث ترسيب.",
+          "zh": "离子积Qi：若Qi > Ksp，溶液过饱和，产生沉淀。",
+          "ku": "Hevdana îyonan Qi: ger Qi > Ksp be, çareserî ji têrbûnê zêdetir e û nişte çêdibe."
         },
         {
-          "tr": "Kçç si büyük olan tuz çözeltiden ilk önce çöker.",
-          "en": "The salt with the highest Ksp precipitates out of solution first.",
-          "de": "Das Salz mit dem höchsten Ksp fällt zuerst aus der Lösung aus.",
-          "fr": "Le sel avec le Ksp le plus élevé précipite en premier hors de la solution.",
-          "ru": "Соль с наибольшим Ksp выпадает в осадок из раствора первой.",
-          "ar": "يترسب الملح ذو أعلى Ksp خارج المحلول أولاً.",
-          "zh": "Ksp 最高的盐首先从溶液中沉淀出来。",
-          "ku": "Xwêya bi Ksp-ya herî zêde ewil ji çareseriyê derdikeve."
+          "tr": "Aynı tipteki tuzlardan Kçç si büyük olan tuz çözeltiden ilk önce çöker.",
+          "en": "Among salts of the same type, the salt with the larger Ksp precipitates from the solution first.",
+          "de": "Von gleichartigen Salzen fällt das Salz mit dem größeren Ksp zuerst aus der Lösung aus.",
+          "fr": "Parmi des sels du même type, celui dont le Ksp est le plus grand précipite en premier.",
+          "ru": "Из солей одного типа первой из раствора осаждается соль с бо́льшим Ksp.",
+          "ar": "من بين الأملاح من النوع نفسه، يترسب أولًا الملح ذو Ksp الأكبر.",
+          "zh": "在同类型的盐中，Ksp较大的盐先从溶液中沉淀出来。",
+          "ku": "Di nav xwêyên ji heman tîpê de, xwêya ku Ksp wê mezintir e pêşî ji çareseriyê dinişe."
         },
         {
           "tr": "Kompleks oluşumu tuzu hemen çöktürür.",
@@ -1400,9 +1400,9 @@ export const unit20: ChemistryUnitSeedData = {
           "de": "Durch die Komplexbildung fällt das Salz sofort aus.",
           "fr": "La formation de complexes précipite le sel immédiatement.",
           "ru": "При образовании комплекса соль немедленно осаждается.",
-          "ar": "يؤدي التكوين المعقد إلى ترسيب الملح على الفور.",
+          "ar": "يؤدي تكوين المعقد إلى ترسيب الملح فورًا.",
           "zh": "络合物的形成使盐立即沉淀。",
-          "ku": "Pêkhatina tevlihev xwê tavilê radike."
+          "ku": "Pêkhatina kompleksê xwê tavilê dinişîne."
         },
         {
           "tr": "AgCl için Kçç = 4s^3 tür.",
@@ -1418,13 +1418,13 @@ export const unit20: ChemistryUnitSeedData = {
       "correctIndex": 1,
       "explanation": {
         "tr": "Doğru cevap \"İyon çarpımı Qi (çökelme kesri): Qi > Kçç ise çözelti aşırı doygundur ve çökelme gerçekleşir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Ion product Qi (precipitation fraction): If Qi > Kçç, the solution is supersaturated and precipitation occurs.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Ionenprodukt Qi (Ausfällungsanteil): Wenn Qi > Kçç, ist die Lösung übersättigt und es kommt zur Ausfällung.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Produit ionique Qi (fraction de précipitation) : Si Qi > Kçç, la solution est sursaturée et une précipitation se produit.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Ионный продукт Qi (фракция осадков): Если Qi > Kçç, раствор перенасыщен и происходит осаждение.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"المنتج الأيوني Qi (جزء الهطول): إذا كان Qi > Kçç، يكون المحلول مفرط التشبع ويحدث الهطول.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“离子积 Qi（沉淀分数）：如果 Qi > Kçç，则溶液过饱和并发生沉淀。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Berhema îyonî Qi (parçeya baranê): Ger Qi > Kçç, çareserî pir têr dibe û barîn çêdibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Ion product Qi: if Qi > Ksp, the solution is supersaturated and precipitation occurs.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Ionenprodukt Qi: Wenn Qi > Ksp, ist die Lösung übersättigt und es kommt zur Fällung.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Produit ionique Qi : si Qi > Ksp, la solution est sursaturée et un précipité se forme.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Ионное произведение Qi: если Qi > Ksp, раствор пересыщен и выпадает осадок.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"الحاصل الأيوني Qi: إذا كان Qi > Ksp يكون المحلول فوق مشبع ويحدث ترسيب.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“离子积Qi：若Qi > Ksp，溶液过饱和，产生沉淀。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Hevdana îyonan Qi: ger Qi > Ksp be, çareserî ji têrbûnê zêdetir e û nişte çêdibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1462,23 +1462,23 @@ export const unit20: ChemistryUnitSeedData = {
         },
         {
           "tr": "Qi = Kçç ise çözelti tam doygundur ve çökelme olmaz; Qi < Kçç ise çözelti doymamıştır.",
-          "en": "If Qi = Kçç, the solution is fully saturated and there is no precipitation; If Qi < Kçç, the solution is unsaturated.",
-          "de": "Wenn Qi = Kçç, ist die Lösung vollständig gesättigt und es kommt zu keinem Niederschlag; Wenn Qi < Kçç, ist die Lösung ungesättigt.",
-          "fr": "Si Qi = Kçç, la solution est totalement saturée et il n’y a pas de précipitation ; Si Qi < Kçç, la solution est insaturée.",
-          "ru": "Если Qi = Kçç, раствор полностью насыщен и осадок отсутствует; Если Qi < Kçç, решение ненасыщенное.",
-          "ar": "إذا كان Qi = Kçç، يكون المحلول مشبعًا بالكامل ولا يوجد هطول؛ إذا كان Qi < Kçç، فإن المحلول غير مشبع.",
-          "zh": "若Qi=Kçç，则溶液完全饱和，无沉淀；如果 Qi < Kçç，则溶液不饱和。",
-          "ku": "Heke Qi = Kçç, çareserî bi tevahî têr bûye û barîn tune; Heke Qi < Kçç, çareserî ne têr e."
+          "en": "If Qi = Ksp, the solution is fully saturated and there is no precipitation; If Qi < Ksp, the solution is unsaturated.",
+          "de": "Wenn Qi = Ksp, ist die Lösung vollständig gesättigt und es kommt zu keinem Niederschlag; Wenn Qi < Ksp, ist die Lösung ungesättigt.",
+          "fr": "Si Qi = Ksp, la solution est totalement saturée et il n’y a pas de précipitation ; Si Qi < Ksp, la solution est insaturée.",
+          "ru": "Если Qi = Ksp, раствор насыщен и осадок не выпадает; если Qi < Ksp, раствор ненасыщенный.",
+          "ar": "إذا كان Qi = Ksp يكون المحلول مشبعًا تمامًا ولا يحدث ترسيب؛ وإذا كان Qi < Ksp فالمحلول غير مشبع.",
+          "zh": "若Qi=Ksp，则溶液完全饱和，无沉淀；如果 Qi < Ksp，则溶液不饱和。",
+          "ku": "Ger Qi = Ksp be, çareserî tam têr e û nişte çênabe; ger Qi < Ksp be, çareserî ne têr e."
         },
         {
           "tr": "Kçç çok çözünen tuzların derişimini ifade eder.",
-          "en": "Kçç refers to the concentration of highly soluble salts.",
-          "de": "Kçç bezieht sich auf die Konzentration hochlöslicher Salze.",
-          "fr": "Kçç fait référence à la concentration de sels hautement solubles.",
-          "ru": "Kçç относится к концентрации хорошо растворимых солей.",
-          "ar": "يشير Kçç إلى تركيز الأملاح شديدة الذوبان.",
-          "zh": "Kçç 是指高溶解盐的浓度。",
-          "ku": "Kçç behsa kombûna xwêyên pir heliyaye dike."
+          "en": "Ksp refers to the concentration of highly soluble salts.",
+          "de": "Ksp bezieht sich auf die Konzentration hochlöslicher Salze.",
+          "fr": "Ksp fait référence à la concentration de sels hautement solubles.",
+          "ru": "Ksp относится к концентрации хорошо растворимых солей.",
+          "ar": "يشير Ksp إلى تركيز الأملاح شديدة الذوبان.",
+          "zh": "Ksp 是指高溶解盐的浓度。",
+          "ku": "Ksp behsa kombûna xwêyên pir heliyaye dike."
         },
         {
           "tr": "PbCl2 için Kçç = 2s^2 dir.",
@@ -1494,13 +1494,13 @@ export const unit20: ChemistryUnitSeedData = {
       "correctIndex": 2,
       "explanation": {
         "tr": "Doğru cevap \"Qi = Kçç ise çözelti tam doygundur ve çökelme olmaz; Qi < Kçç ise çözelti doymamıştır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"If Qi = Kçç, the solution is fully saturated and there is no precipitation; If Qi < Kçç, the solution is unsaturated.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Wenn Qi = Kçç, ist die Lösung vollständig gesättigt und es kommt zu keinem Niederschlag; Wenn Qi < Kçç, ist die Lösung ungesättigt.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Si Qi = Kçç, la solution est totalement saturée et il n’y a pas de précipitation ; Si Qi < Kçç, la solution est insaturée.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Если Qi = Kçç, раствор полностью насыщен и осадок отсутствует; Если Qi < Kçç, решение ненасыщенное.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"إذا كان Qi = Kçç، يكون المحلول مشبعًا بالكامل ولا يوجد هطول؛ إذا كان Qi < Kçç، فإن المحلول غير مشبع.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“若Qi=Kçç，则溶液完全饱和，无沉淀；如果 Qi < Kçç，则溶液不饱和。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Heke Qi = Kçç, çareserî bi tevahî têr bûye û barîn tune; Heke Qi < Kçç, çareserî ne têr e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"If Qi = Ksp, the solution is fully saturated and there is no precipitation; If Qi < Ksp, the solution is unsaturated.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Wenn Qi = Ksp, ist die Lösung vollständig gesättigt und es kommt zu keinem Niederschlag; Wenn Qi < Ksp, ist die Lösung ungesättigt.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Si Qi = Ksp, la solution est totalement saturée et il n’y a pas de précipitation ; Si Qi < Ksp, la solution est insaturée.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Если Qi = Ksp, раствор насыщен и осадок не выпадает; если Qi < Ksp, раствор ненасыщенный.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"إذا كان Qi = Ksp يكون المحلول مشبعًا تمامًا ولا يحدث ترسيب؛ وإذا كان Qi < Ksp فالمحلول غير مشبع.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“若Qi=Ksp，则溶液完全饱和，无沉淀；如果 Qi < Ksp，则溶液不饱和。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Ger Qi = Ksp be, çareserî tam têr e û nişte çênabe; ger Qi < Ksp be, çareserî ne têr e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1524,7 +1524,7 @@ export const unit20: ChemistryUnitSeedData = {
           "ru": "Если к раствору с твердыми частицами на дне добавить воду, концентрация раствора быстро возрастает.",
           "ar": "إذا أضيف الماء إلى محلول به مواد صلبة في القاع، فإن تركيز المحلول يزداد بسرعة.",
           "zh": "如果向底部有固体的溶液中添加水，则溶液浓度迅速增加。",
-          "ku": "Ger av li çaraleke ku li binê wê maddeyên hişk hene, were zêdekirin, konsantasyona çareseriyê zû zêde dibe."
+          "ku": "Ger av li çareseriya ku li binê wê hişk heye were zêdekirin, tîrbûna çareseriyê bi lez zêde dibe."
         },
         {
           "tr": "Mg(OH)2 asidik ortamda daha az çözünür.",
@@ -1543,18 +1543,18 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "Lorsque l'ion commun est ajouté, la valeur Ksp devient plus petite.",
           "ru": "При добавлении общего иона значение Ksp становится меньше.",
           "ar": "عند إضافة الأيون المشترك، تصبح قيمة Ksp أصغر.",
-          "zh": "当添加普通离子时，Ksp值变小。",
+          "zh": "当添加同离子时，Ksp值变小。",
           "ku": "Dema ku îona hevpar tê zêdekirin, nirxa Ksp piçûktir dibe."
         },
         {
-          "tr": "AgCl katısının saf sudaki çözünürlüğü, 0.1 M NaCl çözeltisindeki çözünürlüğünden ÇOK DAHA BÜYÜKTÜR.",
+          "tr": "AgCl katısının saf sudaki çözünürlüğü, 0,1 M NaCl çözeltisindeki çözünürlüğünden ÇOK DAHA BÜYÜKTÜR.",
           "en": "The solubility of AgCl solid in pure water is MUCH LARGER than its solubility in 0.1 M NaCl solution.",
           "de": "Die Löslichkeit von AgCl-Feststoff in reinem Wasser ist VIEL GRÖSSER als seine Löslichkeit in 0,1 M NaCl-Lösung.",
           "fr": "La solubilité du solide AgCl dans l’eau pure est BEAUCOUP PLUS GRANDE que sa solubilité dans une solution de NaCl 0,1 M.",
           "ru": "Растворимость твердого вещества AgCl в чистой воде НАМНОГО БОЛЬШЕ, чем его растворимость в 0,1 М растворе NaCl.",
           "ar": "إن قابلية ذوبان AgCl الصلب في الماء النقي أكبر بكثير من ذوبانه في محلول كلوريد الصوديوم 0.1 مولار.",
           "zh": "AgCl固体在纯水中的溶解度比其在0.1 M NaCl溶液中的溶解度大得多。",
-          "ku": "Çareseriya AgCl ya hişk a di ava paqij de ji helbûna wê ya di nav 0,1 M çareseriya NaCl de PÊKIR MEZIRtir e."
+          "ku": "Helbûna AgCl ya hişk di ava saf de ji helbûna wê di çareseriya 0,1 M NaCl de PIR MEZINTIR e."
         },
         {
           "tr": "Al(OH)3 için Kçç = 3s^3 tür.",
@@ -1569,14 +1569,14 @@ export const unit20: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"AgCl katısının saf sudaki çözünürlüğü, 0.1 M NaCl çözeltisindeki çözünürlüğünden ÇOK DAHA BÜYÜKTÜR.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"AgCl katısının saf sudaki çözünürlüğü, 0,1 M NaCl çözeltisindeki çözünürlüğünden ÇOK DAHA BÜYÜKTÜR.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"The solubility of AgCl solid in pure water is MUCH LARGER than its solubility in 0.1 M NaCl solution.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Die Löslichkeit von AgCl-Feststoff in reinem Wasser ist VIEL GRÖSSER als seine Löslichkeit in 0,1 M NaCl-Lösung.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La solubilité du solide AgCl dans l’eau pure est BEAUCOUP PLUS GRANDE que sa solubilité dans une solution de NaCl 0,1 M.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Растворимость твердого вещества AgCl в чистой воде НАМНОГО БОЛЬШЕ, чем его растворимость в 0,1 М растворе NaCl.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"إن قابلية ذوبان AgCl الصلب في الماء النقي أكبر بكثير من ذوبانه في محلول كلوريد الصوديوم 0.1 مولار.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“AgCl固体在纯水中的溶解度比其在0.1 M NaCl溶液中的溶解度大得多。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Çareseriya AgCl ya hişk a di ava paqij de ji helbûna wê ya di nav 0,1 M çareseriya NaCl de PÊKIR MEZIRtir e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Helbûna AgCl ya hişk di ava saf de ji helbûna wê di çareseriya 0,1 M NaCl de PIR MEZINTIR e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1593,14 +1593,14 @@ export const unit20: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Kçç si büyük olan tuz çözeltiden ilk önce çöker.",
-          "en": "The salt with the highest Ksp precipitates out of solution first.",
-          "de": "Das Salz mit dem höchsten Ksp fällt zuerst aus der Lösung aus.",
-          "fr": "Le sel avec le Ksp le plus élevé précipite en premier hors de la solution.",
-          "ru": "Соль с наибольшим Ksp выпадает в осадок из раствора первой.",
-          "ar": "يترسب الملح ذو أعلى Ksp خارج المحلول أولاً.",
-          "zh": "Ksp 最高的盐首先从溶液中沉淀出来。",
-          "ku": "Xwêya bi Ksp-ya herî zêde ewil ji çareseriyê derdikeve."
+          "tr": "Aynı tipteki tuzlardan Kçç si büyük olan tuz çözeltiden ilk önce çöker.",
+          "en": "Among salts of the same type, the salt with the larger Ksp precipitates from the solution first.",
+          "de": "Von gleichartigen Salzen fällt das Salz mit dem größeren Ksp zuerst aus der Lösung aus.",
+          "fr": "Parmi des sels du même type, celui dont le Ksp est le plus grand précipite en premier.",
+          "ru": "Из солей одного типа первой из раствора осаждается соль с бо́льшим Ksp.",
+          "ar": "من بين الأملاح من النوع نفسه، يترسب أولًا الملح ذو Ksp الأكبر.",
+          "zh": "在同类型的盐中，Ksp较大的盐先从溶液中沉淀出来。",
+          "ku": "Di nav xwêyên ji heman tîpê de, xwêya ku Ksp wê mezintir e pêşî ji çareseriyê dinişe."
         },
         {
           "tr": "Kompleks oluşumu tuzu hemen çöktürür.",
@@ -1608,9 +1608,9 @@ export const unit20: ChemistryUnitSeedData = {
           "de": "Durch die Komplexbildung fällt das Salz sofort aus.",
           "fr": "La formation de complexes précipite le sel immédiatement.",
           "ru": "При образовании комплекса соль немедленно осаждается.",
-          "ar": "يؤدي التكوين المعقد إلى ترسيب الملح على الفور.",
+          "ar": "يؤدي تكوين المعقد إلى ترسيب الملح فورًا.",
           "zh": "络合物的形成使盐立即沉淀。",
-          "ku": "Pêkhatina tevlihev xwê tavilê radike."
+          "ku": "Pêkhatina kompleksê xwê tavilê dinişîne."
         },
         {
           "tr": "AgCl için Kçç = 4s^3 tür.",
@@ -1629,7 +1629,7 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "L'ion commun augmente la solubilité du sel.",
           "ru": "Общий ион увеличивает растворимость соли.",
           "ar": "الأيون المشترك يزيد من ذوبان الملح.",
-          "zh": "共同离子增加了盐的溶解度。",
+          "zh": "同离子增加了盐的溶解度。",
           "ku": "Iyona hevpar helbûna xwê zêde dike."
         },
         {
@@ -1690,13 +1690,13 @@ export const unit20: ChemistryUnitSeedData = {
         },
         {
           "tr": "Kçç çok çözünen tuzların derişimini ifade eder.",
-          "en": "Kçç refers to the concentration of highly soluble salts.",
-          "de": "Kçç bezieht sich auf die Konzentration hochlöslicher Salze.",
-          "fr": "Kçç fait référence à la concentration de sels hautement solubles.",
-          "ru": "Kçç относится к концентрации хорошо растворимых солей.",
-          "ar": "يشير Kçç إلى تركيز الأملاح شديدة الذوبان.",
-          "zh": "Kçç 是指高溶解盐的浓度。",
-          "ku": "Kçç behsa kombûna xwêyên pir heliyaye dike."
+          "en": "Ksp refers to the concentration of highly soluble salts.",
+          "de": "Ksp bezieht sich auf die Konzentration hochlöslicher Salze.",
+          "fr": "Ksp fait référence à la concentration de sels hautement solubles.",
+          "ru": "Ksp относится к концентрации хорошо растворимых солей.",
+          "ar": "يشير Ksp إلى تركيز الأملاح شديدة الذوبان.",
+          "zh": "Ksp 是指高溶解盐的浓度。",
+          "ku": "Ksp behsa kombûna xwêyên pir heliyaye dike."
         },
         {
           "tr": "PbCl2 için Kçç = 2s^2 dir.",
@@ -1712,11 +1712,11 @@ export const unit20: ChemistryUnitSeedData = {
           "tr": "Qi < Kçç olduğunda çökelme meydana gelir.",
           "en": "When Qi < Ksp, precipitation occurs.",
           "de": "Wenn Qi < Ksp, kommt es zu Niederschlag.",
-          "fr": "Lorsque Qi < Ksp, des précipitations se produisent.",
-          "ru": "Когда Qi < Ksp, выпадают осадки.",
-          "ar": "عندما يكون Qi <Ksp، يحدث هطول الأمطار.",
+          "fr": "Lorsque Qi < Ksp, un précipité se forme.",
+          "ru": "Когда Qi < Ksp, выпадает осадок.",
+          "ar": "عندما يكون Qi < Ksp يحدث ترسيب.",
           "zh": "当 Qi < Ksp 时，发生沉淀。",
-          "ku": "Dema Qi < Ksp, barîn çêdibe."
+          "ku": "Dema Qi < Ksp be, nişte çêdibe."
         }
       ],
       "correctIndex": 0,
@@ -1755,14 +1755,14 @@ export const unit20: ChemistryUnitSeedData = {
           "ku": "Mg(OH)2 di hawîrdora asîd de kêmtir tê çareserkirin."
         },
         {
-          "tr": "Çözeltiye aynı sıcaklıkta su eklenirse dipteki katı çözünür ancak doymuş çözeltideki iyon derişimleri ve Kçç değişmez.",
-          "en": "If water is added to the solution at the same temperature, the bottom solid dissolves, but the ion concentrations and Ksp in the saturated solution do not change.",
-          "de": "Wenn der Lösung bei gleicher Temperatur Wasser zugesetzt wird, löst sich der Bodenfeststoff auf, aber die Ionenkonzentrationen und Ksp in der gesättigten Lösung ändern sich nicht.",
-          "fr": "Si de l'eau est ajoutée à la solution à la même température, le solide inférieur se dissout, mais les concentrations d'ions et de Ksp dans la solution saturée ne changent pas.",
-          "ru": "Если к раствору при той же температуре добавить воду, донный остаток растворится, но концентрации ионов и Kуд в насыщенном растворе не изменяются.",
-          "ar": "إذا أضيف الماء إلى المحلول بنفس درجة الحرارة، فإن المادة الصلبة السفلية تذوب، لكن تركيز الأيونات و Ksp في المحلول المشبع لا يتغير.",
-          "zh": "如果在相同温度下向溶液中加入水，底部固体溶解，但饱和溶液中的离子浓度和Ksp不改变。",
-          "ku": "Ger di heman germahiyê de av li çarenûsê were zêdekirin, qalika binî dihele, lê hêjmara îyonan û Ksp di çareseriya têrbûyî de naguhere."
+          "tr": "Dipte katısı bulunan doymuş çözeltiye aynı sıcaklıkta su eklenirse dipteki katının bir kısmı çözünür; dipte katı kaldığı sürece iyon derişimleri ve Kçç değişmez.",
+          "en": "If water is added at the same temperature to a saturated solution with solid at the bottom, part of the solid dissolves; as long as some solid remains, the ion concentrations and Ksp do not change.",
+          "de": "Wird einer gesättigten Lösung mit Bodenkörper bei gleicher Temperatur Wasser zugesetzt, löst sich ein Teil des Bodenkörpers; solange Bodenkörper vorhanden bleibt, ändern sich die Ionenkonzentrationen und Ksp nicht.",
+          "fr": "Si l'on ajoute de l'eau à même température à une solution saturée contenant un dépôt solide, une partie du solide se dissout ; tant qu'il reste du solide, les concentrations des ions et Ksp ne changent pas.",
+          "ru": "Если к насыщенному раствору с осадком на дне добавить воду при той же температуре, часть осадка растворится; пока осадок остаётся, концентрации ионов и Ksp не изменяются.",
+          "ar": "إذا أُضيف الماء عند درجة الحرارة نفسها إلى محلول مشبع في قاعه مادة صلبة، يذوب جزء من الصلب؛ وما دام بعض الصلب باقيًا فلا تتغير تراكيز الأيونات ولا Ksp.",
+          "zh": "在同一温度下向底部有固体的饱和溶液中加水，部分固体溶解；只要仍有固体剩余，离子浓度和Ksp都不变。",
+          "ku": "Ger di heman germahiyê de av li çareseriya têr a ku li binê wê hişk heye were zêdekirin, beşek ji hişkê dihele; heta ku hişk bimîne, tîrbûna îyonan û Ksp naguherin."
         },
         {
           "tr": "Ortak iyon eklendiğinde Kçç değeri küçülür.",
@@ -1771,7 +1771,7 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "Lorsque l'ion commun est ajouté, la valeur Ksp devient plus petite.",
           "ru": "При добавлении общего иона значение Ksp становится меньше.",
           "ar": "عند إضافة الأيون المشترك، تصبح قيمة Ksp أصغر.",
-          "zh": "当添加普通离子时，Ksp值变小。",
+          "zh": "当添加同离子时，Ksp值变小。",
           "ku": "Dema ku îona hevpar tê zêdekirin, nirxa Ksp piçûktir dibe."
         },
         {
@@ -1792,19 +1792,19 @@ export const unit20: ChemistryUnitSeedData = {
           "ru": "При Qi = Ksp раствор ненасыщен и соль выпадает в осадок.",
           "ar": "عندما يكون Qi = Ksp، يكون المحلول غير مشبع ويترسب الملح.",
           "zh": "当Qi = Ksp时，溶液不饱和，盐沉淀。",
-          "ku": "Dema Qi = Ksp, çareserî têr nabe û xwê dibare."
+          "ku": "Dema Qi = Ksp be, çareserî ne têr e û xwê dinişe."
         }
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"Çözeltiye aynı sıcaklıkta su eklenirse dipteki katı çözünür ancak doymuş çözeltideki iyon derişimleri ve Kçç değişmez.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"If water is added to the solution at the same temperature, the bottom solid dissolves, but the ion concentrations and Ksp in the saturated solution do not change.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Wenn der Lösung bei gleicher Temperatur Wasser zugesetzt wird, löst sich der Bodenfeststoff auf, aber die Ionenkonzentrationen und Ksp in der gesättigten Lösung ändern sich nicht.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Si de l'eau est ajoutée à la solution à la même température, le solide inférieur se dissout, mais les concentrations d'ions et de Ksp dans la solution saturée ne changent pas.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Если к раствору при той же температуре добавить воду, донный остаток растворится, но концентрации ионов и Kуд в насыщенном растворе не изменяются.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"إذا أضيف الماء إلى المحلول بنفس درجة الحرارة، فإن المادة الصلبة السفلية تذوب، لكن تركيز الأيونات و Ksp في المحلول المشبع لا يتغير.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“如果在相同温度下向溶液中加入水，底部固体溶解，但饱和溶液中的离子浓度和Ksp不改变。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger di heman germahiyê de av li çarenûsê were zêdekirin, qalika binî dihele, lê hêjmara îyonan û Ksp di çareseriya têrbûyî de naguhere.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Dipte katısı bulunan doymuş çözeltiye aynı sıcaklıkta su eklenirse dipteki katının bir kısmı çözünür; dipte katı kaldığı sürece iyon derişimleri ve Kçç değişmez.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"If water is added at the same temperature to a saturated solution with solid at the bottom, part of the solid dissolves; as long as some solid remains, the ion concentrations and Ksp do not change.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Wird einer gesättigten Lösung mit Bodenkörper bei gleicher Temperatur Wasser zugesetzt, löst sich ein Teil des Bodenkörpers; solange Bodenkörper vorhanden bleibt, ändern sich die Ionenkonzentrationen und Ksp nicht.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Si l'on ajoute de l'eau à même température à une solution saturée contenant un dépôt solide, une partie du solide se dissout ; tant qu'il reste du solide, les concentrations des ions et Ksp ne changent pas.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Если к насыщенному раствору с осадком на дне добавить воду при той же температуре, часть осадка растворится; пока осадок остаётся, концентрации ионов и Ksp не изменяются.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"إذا أُضيف الماء عند درجة الحرارة نفسها إلى محلول مشبع في قاعه مادة صلبة، يذوب جزء من الصلب؛ وما دام بعض الصلب باقيًا فلا تتغير تراكيز الأيونات ولا Ksp.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“在同一温度下向底部有固体的饱和溶液中加水，部分固体溶解；只要仍有固体剩余，离子浓度和Ksp都不变。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Ger di heman germahiyê de av li çareseriya têr a ku li binê wê hişk heye were zêdekirin, beşek ji hişkê dihele; heta ku hişk bimîne, tîrbûna îyonan û Ksp naguherin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1826,9 +1826,9 @@ export const unit20: ChemistryUnitSeedData = {
           "de": "Durch die Komplexbildung fällt das Salz sofort aus.",
           "fr": "La formation de complexes précipite le sel immédiatement.",
           "ru": "При образовании комплекса соль немедленно осаждается.",
-          "ar": "يؤدي التكوين المعقد إلى ترسيب الملح على الفور.",
+          "ar": "يؤدي تكوين المعقد إلى ترسيب الملح فورًا.",
           "zh": "络合物的形成使盐立即沉淀。",
-          "ku": "Pêkhatina tevlihev xwê tavilê radike."
+          "ku": "Pêkhatina kompleksê xwê tavilê dinişîne."
         },
         {
           "tr": "AgCl için Kçç = 4s^3 tür.",
@@ -1841,14 +1841,14 @@ export const unit20: ChemistryUnitSeedData = {
           "ku": "Ji bo AgCl, Ksp = 4s^3."
         },
         {
-          "tr": "Seçimli çöktürme: İki iyon içeren çözeltiye çöktürücü eklendiğinde Kçç si küçük olan (daha az çözünen) önce çöker.",
-          "en": "Selective precipitation: When a precipitant is added to a solution containing two ions, the one with the lower Ksp (less soluble) precipitates first.",
-          "de": "Selektive Fällung: Wenn einer Lösung, die zwei Ionen enthält, ein Fällungsmittel zugesetzt wird, fällt zuerst dasjenige mit dem niedrigeren Ksp (weniger löslich) aus.",
-          "fr": "Précipitation sélective : lorsqu'un précipitant est ajouté à une solution contenant deux ions, celui avec le Ksp le plus faible (le moins soluble) précipite en premier.",
-          "ru": "Селективное осаждение: когда осадитель добавляется к раствору, содержащему два иона, первым выпадает в осадок тот, у которого меньше Ksp (менее растворимый).",
-          "ar": "الترسيب الانتقائي: عند إضافة مادة مرسبة إلى محلول يحتوي على أيونين، فإن الذي يحتوي على Ksp الأقل (الأقل قابلية للذوبان) يترسب أولاً.",
-          "zh": "选择性沉淀：当将沉淀剂添加到含有两种离子的溶液中时，Ksp 较低（溶解度较小）的离子首先沉淀。",
-          "ku": "Barîna hilbijartî: Dema ku rijandinek li çareseriyek ku du îyon tê de tê zêde kirin, ya ku Ksp kêmtir e (kêm tê çareserkirin) pêşî dibare."
+          "tr": "Seçimli çöktürme: Aynı tipteki (ör. AgCl ve AgBr gibi XY) tuzların iyonlarını eşit derişimde içeren çözeltiye çöktürücü eklendiğinde Kçç si küçük olan (daha az çözünen) önce çöker.",
+          "en": "Selective precipitation: when a precipitating agent is added to a solution containing equal concentrations of the ions of salts of the same type (e.g. XY salts such as AgCl and AgBr), the one with the smaller Ksp (less soluble) precipitates first.",
+          "de": "Selektive Fällung: Wird einer Lösung, die die Ionen gleichartiger Salze (z. B. XY-Salze wie AgCl und AgBr) in gleicher Konzentration enthält, ein Fällungsmittel zugesetzt, fällt das Salz mit dem kleineren Ksp (schwerer löslich) zuerst aus.",
+          "fr": "Précipitation sélective : lorsqu'on ajoute un agent précipitant à une solution contenant, à concentrations égales, les ions de sels du même type (ex. sels XY comme AgCl et AgBr), celui dont le Ksp est le plus petit (le moins soluble) précipite en premier.",
+          "ru": "Селективное осаждение: при добавлении осадителя к раствору, содержащему в равных концентрациях ионы солей одного типа (напр., солей XY, таких как AgCl и AgBr), первой осаждается соль с меньшим Ksp (менее растворимая).",
+          "ar": "الترسيب الانتقائي: عند إضافة عامل مرسِّب إلى محلول يحتوي بتراكيز متساوية على أيونات أملاح من النوع نفسه (مثل أملاح XY كـ AgCl و AgBr)، يترسب أولًا الملح ذو Ksp الأصغر (الأقل ذوبانًا).",
+          "zh": "选择性沉淀：向含有等浓度同类型盐（如AgCl和AgBr这类XY型盐）离子的溶液中加入沉淀剂时，Ksp较小（溶解度较小）的先沉淀。",
+          "ku": "Niştina hilbijartî: dema ku madeyeke nişteker li çareseriyeke ku îyonên xwêyên ji heman tîpê (mînak xwêyên XY wekî AgCl û AgBr) bi tîrbûna wekhev dihewîne tê zêdekirin, ya ku Ksp wê piçûktir e (kêmtir dihele) pêşî dinişe."
         },
         {
           "tr": "Ortak iyon tuzun çözünürlüğünü artırır.",
@@ -1857,7 +1857,7 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "L'ion commun augmente la solubilité du sel.",
           "ru": "Общий ион увеличивает растворимость соли.",
           "ar": "الأيون المشترك يزيد من ذوبان الملح.",
-          "zh": "共同离子增加了盐的溶解度。",
+          "zh": "同离子增加了盐的溶解度。",
           "ku": "Iyona hevpar helbûna xwê zêde dike."
         },
         {
@@ -1873,14 +1873,14 @@ export const unit20: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Seçimli çöktürme: İki iyon içeren çözeltiye çöktürücü eklendiğinde Kçç si küçük olan (daha az çözünen) önce çöker.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Selective precipitation: When a precipitant is added to a solution containing two ions, the one with the lower Ksp (less soluble) precipitates first.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Selektive Fällung: Wenn einer Lösung, die zwei Ionen enthält, ein Fällungsmittel zugesetzt wird, fällt zuerst dasjenige mit dem niedrigeren Ksp (weniger löslich) aus.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Précipitation sélective : lorsqu'un précipitant est ajouté à une solution contenant deux ions, celui avec le Ksp le plus faible (le moins soluble) précipite en premier.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Селективное осаждение: когда осадитель добавляется к раствору, содержащему два иона, первым выпадает в осадок тот, у которого меньше Ksp (менее растворимый).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"الترسيب الانتقائي: عند إضافة مادة مرسبة إلى محلول يحتوي على أيونين، فإن الذي يحتوي على Ksp الأقل (الأقل قابلية للذوبان) يترسب أولاً.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“选择性沉淀：当将沉淀剂添加到含有两种离子的溶液中时，Ksp 较低（溶解度较小）的离子首先沉淀。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Barîna hilbijartî: Dema ku rijandinek li çareseriyek ku du îyon tê de tê zêde kirin, ya ku Ksp kêmtir e (kêm tê çareserkirin) pêşî dibare.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Seçimli çöktürme: Aynı tipteki (ör. AgCl ve AgBr gibi XY) tuzların iyonlarını eşit derişimde içeren çözeltiye çöktürücü eklendiğinde Kçç si küçük olan (daha az çözünen) önce çöker.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Selective precipitation: when a precipitating agent is added to a solution containing equal concentrations of the ions of salts of the same type (e.g. XY salts such as AgCl and AgBr), the one with the smaller Ksp (less soluble) precipitates first.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Selektive Fällung: Wird einer Lösung, die die Ionen gleichartiger Salze (z. B. XY-Salze wie AgCl und AgBr) in gleicher Konzentration enthält, ein Fällungsmittel zugesetzt, fällt das Salz mit dem kleineren Ksp (schwerer löslich) zuerst aus.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Précipitation sélective : lorsqu'on ajoute un agent précipitant à une solution contenant, à concentrations égales, les ions de sels du même type (ex. sels XY comme AgCl et AgBr), celui dont le Ksp est le plus petit (le moins soluble) précipite en premier.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Селективное осаждение: при добавлении осадителя к раствору, содержащему в равных концентрациях ионы солей одного типа (напр., солей XY, таких как AgCl и AgBr), первой осаждается соль с меньшим Ksp (менее растворимая).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"الترسيب الانتقائي: عند إضافة عامل مرسِّب إلى محلول يحتوي بتراكيز متساوية على أيونات أملاح من النوع نفسه (مثل أملاح XY كـ AgCl و AgBr)، يترسب أولًا الملح ذو Ksp الأصغر (الأقل ذوبانًا).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“选择性沉淀：向含有等浓度同类型盐（如AgCl和AgBr这类XY型盐）离子的溶液中加入沉淀剂时，Ksp较小（溶解度较小）的先沉淀。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Niştina hilbijartî: dema ku madeyeke nişteker li çareseriyeke ku îyonên xwêyên ji heman tîpê (mînak xwêyên XY wekî AgCl û AgBr) bi tîrbûna wekhev dihewîne tê zêdekirin, ya ku Ksp wê piçûktir e (kêmtir dihele) pêşî dinişe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1898,13 +1898,13 @@ export const unit20: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Kçç çok çözünen tuzların derişimini ifade eder.",
-          "en": "Kçç refers to the concentration of highly soluble salts.",
-          "de": "Kçç bezieht sich auf die Konzentration hochlöslicher Salze.",
-          "fr": "Kçç fait référence à la concentration de sels hautement solubles.",
-          "ru": "Kçç относится к концентрации хорошо растворимых солей.",
-          "ar": "يشير Kçç إلى تركيز الأملاح شديدة الذوبان.",
-          "zh": "Kçç 是指高溶解盐的浓度。",
-          "ku": "Kçç behsa kombûna xwêyên pir heliyaye dike."
+          "en": "Ksp refers to the concentration of highly soluble salts.",
+          "de": "Ksp bezieht sich auf die Konzentration hochlöslicher Salze.",
+          "fr": "Ksp fait référence à la concentration de sels hautement solubles.",
+          "ru": "Ksp относится к концентрации хорошо растворимых солей.",
+          "ar": "يشير Ksp إلى تركيز الأملاح شديدة الذوبان.",
+          "zh": "Ksp 是指高溶解盐的浓度。",
+          "ku": "Ksp behsa kombûna xwêyên pir heliyaye dike."
         },
         {
           "tr": "PbCl2 için Kçç = 2s^2 dir.",
@@ -1920,21 +1920,21 @@ export const unit20: ChemistryUnitSeedData = {
           "tr": "Qi < Kçç olduğunda çökelme meydana gelir.",
           "en": "When Qi < Ksp, precipitation occurs.",
           "de": "Wenn Qi < Ksp, kommt es zu Niederschlag.",
-          "fr": "Lorsque Qi < Ksp, des précipitations se produisent.",
-          "ru": "Когда Qi < Ksp, выпадают осадки.",
-          "ar": "عندما يكون Qi <Ksp، يحدث هطول الأمطار.",
+          "fr": "Lorsque Qi < Ksp, un précipité se forme.",
+          "ru": "Когда Qi < Ksp, выпадает осадок.",
+          "ar": "عندما يكون Qi < Ksp يحدث ترسيب.",
           "zh": "当 Qi < Ksp 时，发生沉淀。",
-          "ku": "Dema Qi < Ksp, barîn çêdibe."
+          "ku": "Dema Qi < Ksp be, nişte çêdibe."
         },
         {
-          "tr": "Sıcak su mağaralarındaki sarkıt ve dikitler (travertenler), CaCO3 ün çözünürlük dengesi ile oluşur.",
-          "en": "Stalactites and stalagmites (travertines) in hot water caves are formed by the solubility balance of CaCO3.",
-          "de": "Stalaktiten und Stalagmiten (Travertine) in Heißwasserhöhlen entstehen durch das Löslichkeitsgleichgewicht von CaCO3.",
-          "fr": "Les stalactites et stalagmites (travertins) dans les grottes d’eau chaude sont formées par l’équilibre de solubilité du CaCO3.",
-          "ru": "Сталактиты и сталагмиты (травертины) в пещерах с горячей водой образуются за счет баланса растворимости CaCO3.",
-          "ar": "تتشكل الهوابط والصواعد (الحجر الجيري) في كهوف الماء الساخن من خلال توازن ذوبان CaCO3.",
-          "zh": "热水洞中的钟乳石和石笋（石灰华）是由CaCO3的溶解度平衡形成的。",
-          "ku": "Stalaktît û stalagmît (travertîn) di şikeftên ava germ de ji balansa çareserbûnê ya CaCO3 çêdibin."
+          "tr": "Mağaralardaki sarkıt ve dikitler ile Pamukkale travertenleri, CaCO3'ün çözünme-çökelme dengesiyle oluşur.",
+          "en": "Stalactites and stalagmites in caves and the travertines of Pamukkale form through the dissolution-precipitation equilibrium of CaCO3.",
+          "de": "Stalaktiten und Stalagmiten in Höhlen sowie die Travertinterrassen von Pamukkale entstehen durch das Lösungs-Fällungs-Gleichgewicht von CaCO3.",
+          "fr": "Les stalactites et stalagmites des grottes ainsi que les travertins de Pamukkale se forment grâce à l’équilibre de dissolution-précipitation de CaCO3.",
+          "ru": "Сталактиты и сталагмиты в пещерах, а также травертины Памуккале образуются благодаря равновесию растворения-осаждения CaCO3.",
+          "ar": "تتكوّن الهوابط والصواعد في الكهوف وترافرتينات باموكالي من خلال اتزان الذوبان-الترسيب لـ CaCO3.",
+          "zh": "洞穴中的钟乳石、石笋以及棉花堡的石灰华，都是由CaCO3的溶解-沉淀平衡形成的。",
+          "ku": "Stalaktît û stalagmîtên di şikeftan de û travertenên Pamukkaleyê bi hevsengiya helîn-niştinê ya CaCO3 çêdibin."
         },
         {
           "tr": "Endotermik tuzda ısıtma yapılırsa Kçç küçülür.",
@@ -1949,14 +1949,14 @@ export const unit20: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Sıcak su mağaralarındaki sarkıt ve dikitler (travertenler), CaCO3 ün çözünürlük dengesi ile oluşur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Stalactites and stalagmites (travertines) in hot water caves are formed by the solubility balance of CaCO3.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Stalaktiten und Stalagmiten (Travertine) in Heißwasserhöhlen entstehen durch das Löslichkeitsgleichgewicht von CaCO3.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les stalactites et stalagmites (travertins) dans les grottes d’eau chaude sont formées par l’équilibre de solubilité du CaCO3.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Сталактиты и сталагмиты (травертины) в пещерах с горячей водой образуются за счет баланса растворимости CaCO3.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تتشكل الهوابط والصواعد (الحجر الجيري) في كهوف الماء الساخن من خلال توازن ذوبان CaCO3.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“热水洞中的钟乳石和石笋（石灰华）是由CaCO3的溶解度平衡形成的。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Stalaktît û stalagmît (travertîn) di şikeftên ava germ de ji balansa çareserbûnê ya CaCO3 çêdibin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Mağaralardaki sarkıt ve dikitler ile Pamukkale travertenleri, CaCO3'ün çözünme-çökelme dengesiyle oluşur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Stalactites and stalagmites in caves and the travertines of Pamukkale form through the dissolution-precipitation equilibrium of CaCO3.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Stalaktiten und Stalagmiten in Höhlen sowie die Travertinterrassen von Pamukkale entstehen durch das Lösungs-Fällungs-Gleichgewicht von CaCO3.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les stalactites et stalagmites des grottes ainsi que les travertins de Pamukkale se forment grâce à l’équilibre de dissolution-précipitation de CaCO3.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Сталактиты и сталагмиты в пещерах, а также травертины Памуккале образуются благодаря равновесию растворения-осаждения CaCO3.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تتكوّن الهوابط والصواعد في الكهوف وترافرتينات باموكالي من خلال اتزان الذوبان-الترسيب لـ CaCO3.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“洞穴中的钟乳石、石笋以及棉花堡的石灰华，都是由CaCO3的溶解-沉淀平衡形成的。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Stalaktît û stalagmîtên di şikeftan de û travertenên Pamukkaleyê bi hevsengiya helîn-niştinê ya CaCO3 çêdibin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1979,7 +1979,7 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "Lorsque l'ion commun est ajouté, la valeur Ksp devient plus petite.",
           "ru": "При добавлении общего иона значение Ksp становится меньше.",
           "ar": "عند إضافة الأيون المشترك، تصبح قيمة Ksp أصغر.",
-          "zh": "当添加普通离子时，Ksp值变小。",
+          "zh": "当添加同离子时，Ksp值变小。",
           "ku": "Dema ku îona hevpar tê zêdekirin, nirxa Ksp piçûktir dibe."
         },
         {
@@ -2000,7 +2000,7 @@ export const unit20: ChemistryUnitSeedData = {
           "ru": "При Qi = Ksp раствор ненасыщен и соль выпадает в осадок.",
           "ar": "عندما يكون Qi = Ksp، يكون المحلول غير مشبع ويترسب الملح.",
           "zh": "当Qi = Ksp时，溶液不饱和，盐沉淀。",
-          "ku": "Dema Qi = Ksp, çareserî têr nabe û xwê dibare."
+          "ku": "Dema Qi = Ksp be, çareserî ne têr e û xwê dinişe."
         },
         {
           "tr": "Ekzotermik tuzlarda sıcaklık arttıkça daha çok madde çözünür.",
@@ -2013,26 +2013,26 @@ export const unit20: ChemistryUnitSeedData = {
           "ku": "Di xwêyên exotermîk de, her ku germahî zêde dibe, maddeyên zêde dihelin."
         },
         {
-          "tr": "Bazik tuzların (örn. Mg(OH)2) asidik ortamda çözünürlüğü artar çünkü H+ iyonları OH- iyonlarını nötralleştirerek dengeyi sağa kaydırır.",
-          "en": "The solubility of basic salts (e.g. Mg(OH)2) in an acidic environment increases because H+ ions neutralize OH- ions, shifting the equilibrium to the right.",
-          "de": "Die Löslichkeit basischer Salze (z. B. Mg(OH)2) in einer sauren Umgebung erhöht sich, weil H+-Ionen OH--Ionen neutralisieren und das Gleichgewicht nach rechts verschiebt.",
-          "fr": "La solubilité des sels basiques (par exemple Mg(OH)2) dans un environnement acide augmente car les ions H+ neutralisent les ions OH-, déplaçant l'équilibre vers la droite.",
-          "ru": "Растворимость основных солей (например, Mg(OH)2) в кислой среде увеличивается, поскольку ионы H+ нейтрализуют ионы OH-, смещая равновесие вправо.",
-          "ar": "تزداد قابلية ذوبان الأملاح الأساسية (مثل Mg(OH)2) في البيئة الحمضية لأن أيونات H+ تحيد أيونات OH-، مما يؤدي إلى تحويل التوازن إلى اليمين.",
-          "zh": "碱性盐（例如 Mg(OH)2）在酸性环境中的溶解度增加，因为 H+ 离子中和 OH- 离子，使平衡向右移动。",
-          "ku": "Çareseriya xwêyên bingehîn (mînak Mg(OH)2) di hawîrdora asîd de zêde dibe ji ber ku îyonên H+ îyonên OH- bêbandor dikin, hevsengiyê ber bi rastê ve diguherînin."
+          "tr": "Az çözünen bazların (ör. Mg(OH)2) asidik ortamda çözünürlüğü artar çünkü H+ iyonları OH- iyonlarını nötralleştirerek dengeyi sağa kaydırır.",
+          "en": "The solubility of sparingly soluble bases (e.g. Mg(OH)2) increases in an acidic medium because H+ ions neutralize OH- ions, shifting the equilibrium to the right.",
+          "de": "Die Löslichkeit schwerlöslicher Basen (z. B. Mg(OH)2) nimmt in saurem Milieu zu, weil H+-Ionen die OH--Ionen neutralisieren und das Gleichgewicht nach rechts verschieben.",
+          "fr": "La solubilité des bases peu solubles (ex. Mg(OH)2) augmente en milieu acide car les ions H+ neutralisent les ions OH-, ce qui déplace l’équilibre vers la droite.",
+          "ru": "Растворимость малорастворимых оснований (напр., Mg(OH)2) в кислой среде увеличивается, так как ионы H+ нейтрализуют ионы OH- и смещают равновесие вправо.",
+          "ar": "تزداد ذوبانية القواعد قليلة الذوبان (مثل Mg(OH)2) في الوسط الحمضي لأن أيونات H+ تعادل أيونات OH- فينزاح الاتزان نحو اليمين.",
+          "zh": "难溶碱（如Mg(OH)2）在酸性介质中的溶解度增大，因为H+中和OH-，使平衡向右移动。",
+          "ku": "Helbûna bazên kêm-helbar (mînak Mg(OH)2) di navgîna asîdî de zêde dibe, ji ber ku îyonên H+ îyonên OH- bêbandor dikin û hevsengiyê ber bi rastê ve dibin."
         }
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Bazik tuzların (örn. Mg(OH)2) asidik ortamda çözünürlüğü artar çünkü H+ iyonları OH- iyonlarını nötralleştirerek dengeyi sağa kaydırır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The solubility of basic salts (e.g. Mg(OH)2) in an acidic environment increases because H+ ions neutralize OH- ions, shifting the equilibrium to the right.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Die Löslichkeit basischer Salze (z. B. Mg(OH)2) in einer sauren Umgebung erhöht sich, weil H+-Ionen OH--Ionen neutralisieren und das Gleichgewicht nach rechts verschiebt.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La solubilité des sels basiques (par exemple Mg(OH)2) dans un environnement acide augmente car les ions H+ neutralisent les ions OH-, déplaçant l'équilibre vers la droite.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Растворимость основных солей (например, Mg(OH)2) в кислой среде увеличивается, поскольку ионы H+ нейтрализуют ионы OH-, смещая равновесие вправо.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تزداد قابلية ذوبان الأملاح الأساسية (مثل Mg(OH)2) في البيئة الحمضية لأن أيونات H+ تحيد أيونات OH-، مما يؤدي إلى تحويل التوازن إلى اليمين.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“碱性盐（例如 Mg(OH)2）在酸性环境中的溶解度增加，因为 H+ 离子中和 OH- 离子，使平衡向右移动。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Çareseriya xwêyên bingehîn (mînak Mg(OH)2) di hawîrdora asîd de zêde dibe ji ber ku îyonên H+ îyonên OH- bêbandor dikin, hevsengiyê ber bi rastê ve diguherînin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Az çözünen bazların (ör. Mg(OH)2) asidik ortamda çözünürlüğü artar çünkü H+ iyonları OH- iyonlarını nötralleştirerek dengeyi sağa kaydırır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"The solubility of sparingly soluble bases (e.g. Mg(OH)2) increases in an acidic medium because H+ ions neutralize OH- ions, shifting the equilibrium to the right.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Die Löslichkeit schwerlöslicher Basen (z. B. Mg(OH)2) nimmt in saurem Milieu zu, weil H+-Ionen die OH--Ionen neutralisieren und das Gleichgewicht nach rechts verschieben.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"La solubilité des bases peu solubles (ex. Mg(OH)2) augmente en milieu acide car les ions H+ neutralisent les ions OH-, ce qui déplace l’équilibre vers la droite.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Растворимость малорастворимых оснований (напр., Mg(OH)2) в кислой среде увеличивается, так как ионы H+ нейтрализуют ионы OH- и смещают равновесие вправо.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تزداد ذوبانية القواعد قليلة الذوبان (مثل Mg(OH)2) في الوسط الحمضي لأن أيونات H+ تعادل أيونات OH- فينزاح الاتزان نحو اليمين.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“难溶碱（如Mg(OH)2）在酸性介质中的溶解度增大，因为H+中和OH-，使平衡向右移动。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Helbûna bazên kêm-helbar (mînak Mg(OH)2) di navgîna asîdî de zêde dibe, ji ber ku îyonên H+ îyonên OH- bêbandor dikin û hevsengiyê ber bi rastê ve dibin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2054,9 +2054,9 @@ export const unit20: ChemistryUnitSeedData = {
           "de": "Die Komplexierung kann die Löslichkeit schwerlöslicher Salze erhöhen (z. B. Auflösung von AgCl in NH3-Medium).",
           "fr": "La complexation peut augmenter la solubilité des sels peu solubles (par exemple dissolution d'AgCl dans un milieu NH3).",
           "ru": "Комплексообразование может повысить растворимость плохо растворимых солей (например, растворение AgCl в среде NH3).",
-          "ar": "قد يزيد التعقيد من قابلية ذوبان الأملاح ضعيفة الذوبان (مثل ذوبان AgCl في وسط NH3).",
+          "ar": "قد يزيد تكوين الأيونات المعقدة من ذوبانية الأملاح قليلة الذوبان (مثل ذوبان AgCl في وسط يحتوي NH3).",
           "zh": "络合可能会增加难溶盐的溶解度（例如 AgCl 在 NH3 介质中的溶解）。",
-          "ku": "Tevlihevbûn dibe ku helbûna xwêyên kêm-çareserî zêde bike (mînak, belavbûna AgCl di navgîna NH3 de)."
+          "ku": "Pêkhatina îyonên kompleks dikare helbûna xwêyên kêm-helbar zêde bike (mînak helîna AgCl di navgîna NH3 de)."
         },
         {
           "tr": "AgCl için Kçç = 4s^3 tür.",
@@ -2075,7 +2075,7 @@ export const unit20: ChemistryUnitSeedData = {
           "fr": "L'ion commun augmente la solubilité du sel.",
           "ru": "Общий ион увеличивает растворимость соли.",
           "ar": "الأيون المشترك يزيد من ذوبان الملح.",
-          "zh": "共同离子增加了盐的溶解度。",
+          "zh": "同离子增加了盐的溶解度。",
           "ku": "Iyona hevpar helbûna xwê zêde dike."
         },
         {
@@ -2096,7 +2096,7 @@ export const unit20: ChemistryUnitSeedData = {
           "ru": "Если к раствору с твердыми частицами на дне добавить воду, концентрация раствора быстро возрастает.",
           "ar": "إذا أضيف الماء إلى محلول به مواد صلبة في القاع، فإن تركيز المحلول يزداد بسرعة.",
           "zh": "如果向底部有固体的溶液中添加水，则溶液浓度迅速增加。",
-          "ku": "Ger av li çaraleke ku li binê wê maddeyên hişk hene, were zêdekirin, konsantasyona çareseriyê zû zêde dibe."
+          "ku": "Ger av li çareseriya ku li binê wê hişk heye were zêdekirin, tîrbûna çareseriyê bi lez zêde dibe."
         }
       ],
       "correctIndex": 0,
@@ -2106,9 +2106,9 @@ export const unit20: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Die Komplexierung kann die Löslichkeit schwerlöslicher Salze erhöhen (z. B. Auflösung von AgCl in NH3-Medium).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"La complexation peut augmenter la solubilité des sels peu solubles (par exemple dissolution d'AgCl dans un milieu NH3).\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Комплексообразование может повысить растворимость плохо растворимых солей (например, растворение AgCl в среде NH3).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"قد يزيد التعقيد من قابلية ذوبان الأملاح ضعيفة الذوبان (مثل ذوبان AgCl في وسط NH3).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"قد يزيد تكوين الأيونات المعقدة من ذوبانية الأملاح قليلة الذوبان (مثل ذوبان AgCl في وسط يحتوي NH3).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“络合可能会增加难溶盐的溶解度（例如 AgCl 在 NH3 介质中的溶解）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Tevlihevbûn dibe ku helbûna xwêyên kêm-çareserî zêde bike (mînak, belavbûna AgCl di navgîna NH3 de).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Pêkhatina îyonên kompleks dikare helbûna xwêyên kêm-helbar zêde bike (mînak helîna AgCl di navgîna NH3 de).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }
   ]

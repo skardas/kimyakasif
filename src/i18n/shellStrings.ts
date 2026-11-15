@@ -28,6 +28,10 @@ export interface ShellLocale {
   goalTitle: string;
   goalBody: string;
   goalNames: [string, string, string];
+  /** Option name line, e.g. "20 soru · Düzenli". */
+  goalOption: (n: number, name: string) => string;
+  /** Option second line, e.g. "Günde yaklaşık 20 dakika". */
+  goalMinutes: (n: number) => string;
   goalUnit: string;
   dailyGoal: string;
   today: string;
@@ -63,7 +67,9 @@ export const SHELL_STRINGS: Record<LanguageCode, ShellLocale> = {
     sfxHint: 'Doğru/yanlış sesleri, tepkime köpürmesi ve sınav tamamlama konfetisi',
     goalTitle: 'Günde kaç kimya sorusu çözeceksin?',
     goalBody: 'Her gün tutturduğun küçük bir soru hedefi, haftada bir yapılan uzun çalışmadan çok daha verimlidir.',
-    goalNames: ['Hafif (10)', 'Düzenli (20)', 'Yoğun (40)'],
+    goalNames: ['Hafif', 'Düzenli', 'Yoğun'],
+    goalOption: (n, name) => `${n} soru · ${name}`,
+    goalMinutes: (n) => `Günde yaklaşık ${n} dakika`,
     goalUnit: 'soru',
     dailyGoal: 'Günlük hedef',
     today: 'Bugün',
@@ -97,7 +103,9 @@ export const SHELL_STRINGS: Record<LanguageCode, ShellLocale> = {
     sfxHint: 'Right/wrong chimes, reaction fizz, and celebration confetti',
     goalTitle: 'How many questions a day?',
     goalBody: 'A small goal you hit every day beats a long study session once in a while.',
-    goalNames: ['Light (10)', 'Steady (20)', 'Intense (40)'],
+    goalNames: ['Light', 'Steady', 'Intense'],
+    goalOption: (n, name) => `${n} questions · ${name}`,
+    goalMinutes: (n) => `About ${n} minutes a day`,
     goalUnit: 'questions',
     dailyGoal: 'Daily goal',
     today: 'Today',
@@ -131,7 +139,9 @@ export const SHELL_STRINGS: Record<LanguageCode, ShellLocale> = {
     sfxHint: 'Töne für richtig/falsch, Reaktionssprudeln und Konfetti',
     goalTitle: 'Wie viele Fragen pro Tag?',
     goalBody: 'Ein kleines tägliches Ziel ist besser als gelegentliches langes Lernen.',
-    goalNames: ['Leicht (10)', 'Regelmäßig (20)', 'Intensiv (40)'],
+    goalNames: ['Leicht', 'Regelmäßig', 'Intensiv'],
+    goalOption: (n, name) => `${n} Fragen · ${name}`,
+    goalMinutes: (n) => `Etwa ${n} Minuten pro Tag`,
     goalUnit: 'Fragen',
     dailyGoal: 'Tagesziel',
     today: 'Heute',
@@ -165,7 +175,9 @@ export const SHELL_STRINGS: Record<LanguageCode, ShellLocale> = {
     sfxHint: 'Sons bonne/mauvaise réponse, effervescence chimique et confettis',
     goalTitle: 'Combien de questions par jour ?',
     goalBody: 'Un petit objectif quotidien régulier est bien plus efficace.',
-    goalNames: ['Léger (10)', 'Régulier (20)', 'Intensif (40)'],
+    goalNames: ['Léger', 'Régulier', 'Intensif'],
+    goalOption: (n, name) => `${n} questions · ${name}`,
+    goalMinutes: (n) => `Environ ${n} minutes par jour`,
     goalUnit: 'questions',
     dailyGoal: 'Objectif du jour',
     today: "Aujourd'hui",
@@ -199,7 +211,9 @@ export const SHELL_STRINGS: Record<LanguageCode, ShellLocale> = {
     sfxHint: 'Звуки верного/неверного ответа, шипение реакций и конфетти',
     goalTitle: 'Сколько вопросов в день?',
     goalBody: 'Небольшая ежедневная цель лучше редких многочасовых занятий.',
-    goalNames: ['Лёгкий (10)', 'Регулярный (20)', 'Интенсивный (40)'],
+    goalNames: ['Лёгкий', 'Регулярный', 'Интенсивный'],
+    goalOption: (n, name) => `${n} вопросов · ${name}`,
+    goalMinutes: (n) => `Около ${n} минут в день`,
     goalUnit: 'вопросов',
     dailyGoal: 'Цель на день',
     today: 'Сегодня',
@@ -233,7 +247,9 @@ export const SHELL_STRINGS: Record<LanguageCode, ShellLocale> = {
     sfxHint: 'أصوات الإجابة، فوران التفاعلات، وقصاصات الاحتفال',
     goalTitle: 'كم سؤالاً ستحل يومياً؟',
     goalBody: 'هدف صغير يومي يحقق نتائج أفضل بكثير من جلسات الدراسة المتباعدة.',
-    goalNames: ['خفيف (10)', 'منتظم (20)', 'مكثف (40)'],
+    goalNames: ['خفيف', 'منتظم', 'مكثف'],
+    goalOption: (n, name) => `${n} ${n >= 3 && n <= 10 ? 'أسئلة' : 'سؤالاً'} · ${name}`,
+    goalMinutes: (n) => `حوالي ${n} ${n >= 3 && n <= 10 ? 'دقائق' : 'دقيقة'} يومياً`,
     goalUnit: 'سؤال',
     dailyGoal: 'الهدف اليومي',
     today: 'اليوم',
@@ -267,7 +283,9 @@ export const SHELL_STRINGS: Record<LanguageCode, ShellLocale> = {
     sfxHint: '答题音效、化学反应气泡声与通关彩带',
     goalTitle: '每天做多少道题？',
     goalBody: '每天坚持达成小目标，胜过偶尔长时间突击。',
-    goalNames: ['轻松 (10题)', '规律 (20题)', '强化 (40题)'],
+    goalNames: ['轻松', '规律', '强化'],
+    goalOption: (n, name) => `${n} 题 · ${name}`,
+    goalMinutes: (n) => `每天约 ${n} 分钟`,
     goalUnit: '题',
     dailyGoal: '每日目标',
     today: '今天',
@@ -301,7 +319,9 @@ export const SHELL_STRINGS: Record<LanguageCode, ShellLocale> = {
     sfxHint: 'Dengên rast/şaş, kelîna kîmyayî û konfetî',
     goalTitle: 'Rojê çend pirsên kîmyayê?',
     goalBody: 'Armanceke piçûk a rojane ji xebatên dirêj ên bê pergal pir bi bandortir e.',
-    goalNames: ['Sivik (10)', 'Birêkûpêk (20)', 'Giran (40)'],
+    goalNames: ['Sivik', 'Birêkûpêk', 'Giran'],
+    goalOption: (n, name) => `${n} pirs · ${name}`,
+    goalMinutes: (n) => `Rojê nêzîkî ${n} deqîqe`,
     goalUnit: 'pirs',
     dailyGoal: 'Armanca rojane',
     today: 'Îro',

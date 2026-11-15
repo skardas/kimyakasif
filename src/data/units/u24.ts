@@ -21,10 +21,10 @@ export const unit24: ChemistryUnitSeedData = {
     "en": "Nomenclature, Isomerism, Reactions & Tests",
     "de": "Alkan, Alken, Alkin, Alkohol, Ester und Markownikow",
     "fr": "Alcane, alcène, alcyne, alcool, ester et Markovnikov",
-    "ru": "Алкан, Алкен, Алкин, Спирт, Эфир и Марковник",
+    "ru": "Алканы, алкены, алкины, спирты, сложные эфиры и правило Марковникова",
     "ar": "ألكان، ألكين، ألكاين، كحول، إستر وماركوفنيكوف",
     "zh": "烷烃、烯烃、炔烃、醇、酯和马可夫尼科夫",
-    "ku": "Alkan, Alkene, Alkyne, Alkol, Ester û Markovnikov"
+    "ku": "Alkan, Alken, Alkîn, Alkol, Ester û Markovnikov"
   },
   "facts": [
     {
@@ -35,19 +35,19 @@ export const unit24: ChemistryUnitSeedData = {
         "de": "Alkane (Paraffine, CnH2n+2) sind gesättigte Kohlenwasserstoffe; Es enthält nur Sigma-Bindungen und führt KEINE Additionsreaktion durch.",
         "fr": "Les alcanes (paraffines, CnH2n+2) sont des hydrocarbures saturés ; Il ne contient que des liaisons sigma et NE donne PAS de réaction d’addition.",
         "ru": "Алканы (парафины, CnH2n+2) – предельные углеводороды; Он содержит только сигма-связи и НЕ дает реакции присоединения.",
-        "ar": "الألكانات (البارافينات، CnH2n+2) عبارة عن هيدروكربونات مشبعة؛ أنه يحتوي فقط على روابط سيجما ولا يعطي رد فعل إضافي.",
+        "ar": "الألكانات (البارافينات، CnH2n+2) هيدروكربونات مشبعة؛ تحتوي على روابط سيجما فقط ولا تدخل في تفاعلات الإضافة.",
         "zh": "烷烃（石蜡，CnH2n+2）是饱和烃；它仅包含西格玛键并且不发生加成反应。",
         "ku": "Alkan (parafîn, CnH2n+2) hîdrokarbonên têrbûyî ne; Ew tenê girêdanên sigma dihewîne û reaksiyonek lêzêdekirinê NADE."
       },
       "trap": {
         "tr": "Alkanlar bromlu suyun kırmızı rengini hızla giderir.",
-        "en": "Alkanes quickly remove the red color of brominated water.",
-        "de": "Alkane entfernen schnell die rote Farbe von bromiertem Wasser.",
-        "fr": "Les alcanes éliminent rapidement la couleur rouge de l'eau bromée.",
-        "ru": "Алканы быстро удаляют красный цвет бромированной воды.",
-        "ar": "تقوم الألكانات بإزالة اللون الأحمر للمياه المبرومة بسرعة.",
-        "zh": "烷烃可以快速去除溴化水的红色。",
-        "ku": "Alkan bi lez rengê sor yê ava bromînê jê dikin."
+        "en": "Alkanes rapidly decolorize the red colour of bromine water.",
+        "de": "Alkane entfärben die rote Farbe von Bromwasser schnell.",
+        "fr": "Les alcanes décolorent rapidement la couleur rouge de l'eau de brome.",
+        "ru": "Алканы быстро обесцвечивают красную окраску бромной воды.",
+        "ar": "تزيل الألكانات اللون الأحمر لماء البروم بسرعة.",
+        "zh": "烷烃能迅速使溴水的红色褪去。",
+        "ku": "Alkan rengê sor ê ava bromê bi lez radikin."
       }
     },
     {
@@ -58,7 +58,7 @@ export const unit24: ChemistryUnitSeedData = {
         "de": "Alkene (Olefine, CnH2n) enthalten mindestens eine Doppelbindung (C=C); Es führt zu einer Additions- und Polymerisationsreaktion.",
         "fr": "Les alcènes (oléfines, CnH2n) contiennent au moins une double liaison (C=C) ; Il donne une réaction d'addition et de polymérisation.",
         "ru": "Алкены (олефины, CnH2n) содержат хотя бы одну двойную связь (C=C); Дает реакции присоединения и полимеризации.",
-        "ar": "تحتوي الألكينات (الأوليفينات، CnH2n) على رابطة مزدوجة واحدة على الأقل (C=C)؛ أنه يعطي رد فعل بالإضافة والبلمرة.",
+        "ar": "تحتوي الألكينات (الأوليفينات، CnH2n) على رابطة ثنائية واحدة على الأقل (C=C)؛ وتدخل في تفاعلات الإضافة والبلمرة.",
         "zh": "烯烃（olefins，CnH2n）含有至少一个双键（C=C）；发生加成和聚合反应。",
         "ku": "Alken (olefîn, CnH2n) herî kêm girêdanek ducarî dihewîne (C=C); Ew reaksiyona zêdebûn û polîmerîzasyonê dide."
       },
@@ -78,12 +78,12 @@ export const unit24: ChemistryUnitSeedData = {
       "fact": {
         "tr": "Markovnikov Kuralı: Asimetrik alkenlere HX katılırken H atomu hidrojeni ÇOK olan karbona, X atomu hidrojeni AZ olan karbona bağlanır.",
         "en": "Markovnikov's Rule: When HX is added to asymmetric alkenes, the H atom is bonded to the carbon with MORE hydrogen, and the X atom is bonded to the carbon with LESS hydrogen.",
-        "de": "Markownikows Regel: Wenn HX zu asymmetrischen Alkenen hinzugefügt wird, wird das H-Atom mit MEHR Wasserstoff an den Kohlenstoff gebunden, und das X-Atom wird mit WENIGER Wasserstoff an den Kohlenstoff gebunden.",
+        "de": "Markownikow-Regel: Bei der Addition von HX an unsymmetrische Alkene bindet das H-Atom an das C-Atom mit MEHR Wasserstoffatomen und das X-Atom an das C-Atom mit WENIGER Wasserstoffatomen.",
         "fr": "Règle de Markovnikov : lorsque HX est ajouté à des alcènes asymétriques, l'atome H est lié au carbone avec PLUS d'hydrogène et l'atome X est lié au carbone avec MOINS d'hydrogène.",
         "ru": "Правило Марковникова: когда HX добавляется к асимметричным алкенам, атом H связан с углеродом с БОЛЬШИМ водородом, а атом X связан с углеродом с МЕНЬШИМ водородом.",
         "ar": "قاعدة ماركونيكوف: عند إضافة HX إلى الألكينات غير المتماثلة، ترتبط ذرة H بالكربون الذي يحتوي على المزيد من الهيدروجين، وترتبط ذرة X بالكربون الذي يحتوي على كمية أقل من الهيدروجين.",
         "zh": "马尔可夫尼科夫规则：当HX添加到不对称烯烃中时，H原子与具有更多氢的碳键合，而X原子与具有较少氢的碳键合。",
-        "ku": "Rêbaza Markovnikov: Dema ku HX li alkenên asîmetrîk tê zêdekirin, atoma H bi karbonê re bi HÎdrojena ZÊDETIR, û atoma X bi karbonê bi hîdrojena KÊMT re tê girêdan."
+        "ku": "Qaîdeya Markovnikov: dema HX li alkenên nesîmetrîk tê zêdekirin, atoma H diçe ser karbona ku hîdrojenên wê ZÊDETIR in, atoma X jî diçe ser karbona ku hîdrojenên wê KÊMTIR in."
       },
       "trap": {
         "tr": "Katılma tepkimesinde hidrojen daima hidrojeni az olan karbona bağlanır.",
@@ -109,70 +109,70 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-f04",
       "fact": {
-        "tr": "Alkenler ve alkinler bromlu suyun (Br2/CCl4) kırmızı-kahverengi rengini soğukta giderir (doymamışlık testi).",
-        "en": "Alkenes and alkynes remove the red-brown color of brominated water (Br2/CCl4) on cold (unsaturation test).",
-        "de": "Alkene und Alkine entfernen die rotbraune Farbe von bromiertem Wasser (Br2/CCl4) bei Kälte (Unsättigungstest).",
-        "fr": "Les alcènes et alcynes enlèvent la couleur rouge-brun de l'eau bromée (Br2/CCl4) à froid (test d'insaturation).",
-        "ru": "Алкены и алкины удаляют красно-коричневую окраску бромированной воды (Br2/CCl4) на холоду (испытание на ненасыщенность).",
-        "ar": "تقوم الألكينات والألكاينات بإزالة اللون البني المحمر من الماء المبروم (Br2/CCl4) عند البرد (اختبار عدم التشبع).",
-        "zh": "烯烃和炔烃在冷时消除溴化水 (Br2/CCl4) 的红棕色（不饱和度测试）。",
-        "ku": "Alken û alkîn rengê sor-qehweyî yê ava bromînkirî (Br2/CCl4) di sermayê de (ceribandina têrbûnê) jê dikin."
+        "tr": "Alkenler ve alkinler bromlu suyun kırmızı-kahverengi rengini oda koşullarında giderir (doymamışlık testi).",
+        "en": "Alkenes and alkynes decolorize the red-brown colour of bromine water at room conditions (test for unsaturation).",
+        "de": "Alkene und Alkine entfärben rotbraunes Bromwasser bereits bei Raumbedingungen (Nachweis von Mehrfachbindungen).",
+        "fr": "Les alcènes et les alcynes décolorent l'eau de brome rouge-brun dans les conditions ambiantes (test d'insaturation).",
+        "ru": "Алкены и алкины обесцвечивают красно-бурую бромную воду при комнатных условиях (качественная реакция на непредельность).",
+        "ar": "تزيل الألكينات والألكاينات اللون الأحمر البني لماء البروم في الظروف العادية (اختبار عدم التشبع).",
+        "zh": "烯烃和炔烃在室温下能使红棕色的溴水褪色（不饱和性检验）。",
+        "ku": "Alken û alkîn di şertên odeyê de rengê sor-qehweyî yê ava bromê radikin (testa netêrbûnê)."
       },
       "trap": {
-        "tr": "Alkanlar bromlu suyun rengini hemen giderir.",
-        "en": "Alkanes quickly decolorize brominated water.",
-        "de": "Alkane entfärben bromiertes Wasser schnell.",
-        "fr": "Les alcanes décolorent rapidement l'eau bromée.",
-        "ru": "Алканы быстро обесцвечивают бромированную воду.",
-        "ar": "تعمل الألكانات على إزالة اللون من الماء المبروم بسرعة.",
-        "zh": "烷烃可以快速使溴化水脱色。",
-        "ku": "Alkan bi lez ava bromînkirî dereng dikin."
+        "tr": "Alkinler üçlü bağ içerdiğinden bromlu suyun rengini gidermez.",
+        "en": "Because they contain a triple bond, alkynes do not decolorize bromine water.",
+        "de": "Da Alkine eine Dreifachbindung enthalten, entfärben sie Bromwasser nicht.",
+        "fr": "Parce qu'ils contiennent une triple liaison, les alcynes ne décolorent pas l'eau de brome.",
+        "ru": "Поскольку алкины содержат тройную связь, они не обесцвечивают бромную воду.",
+        "ar": "لا تزيل الألكاينات لون ماء البروم لأنها تحتوي على رابطة ثلاثية.",
+        "zh": "炔烃因含有三键，所以不能使溴水褪色。",
+        "ku": "Ji ber ku alkîn girêdana sêcarî dihewînin, rengê ava bromê ranakin."
       }
     },
     {
       "id": "u24-f05",
       "fact": {
-        "tr": "Alkinler (asetilenler, CnH2n-2) en az bir üçlü bağ içerir; uç alkinler Tollens (Ag+) ile beyaz, Fehling (Cu+) ile kırmızı çökelek verir.",
-        "en": "Alkynes (acetylenes, CnH2n-2) contain at least one triple bond; Terminal alkynes give white precipitates with Tollens (Ag+) and red precipitates with Fehlings (Cu+).",
-        "de": "Alkine (Acetylene, CnH2n-2) enthalten mindestens eine Dreifachbindung; Terminale Alkine ergeben weiße Niederschläge mit Tollens (Ag+) und rote Niederschläge mit Fehlings (Cu+).",
-        "fr": "Les alcynes (acétylènes, CnH2n-2) contiennent au moins une triple liaison ; Les alcynes terminaux donnent des précipités blancs avec les Tollens (Ag+) et rouges avec les Fehlings (Cu+).",
-        "ru": "Алкины (ацетилены, CnH2n-2) содержат хотя бы одну тройную связь; Концевые алкины дают белые осадки с Толленами (Ag+) и красные осадки с Фелингами (Cu+).",
-        "ar": "تحتوي الألكينات (الأسيتيلين، CnH2n-2) على رابطة ثلاثية واحدة على الأقل؛ الألكينات الطرفية تعطي رواسب بيضاء مع تولنز (Ag+) ورواسب حمراء مع فهلينغز (Cu+).",
-        "zh": "炔烃（乙炔，CnH2n-2）含有至少一个三键；末端炔烃与托伦斯 (Ag+) 产生白色沉淀，与费林斯 (Cu+) 产生红色沉淀。",
-        "ku": "Alkines (acetylenes, CnH2n-2) bi kêmanî yek girêdana sê-sêyan heye; Alkînên termînalê bi Tollens (Ag+) û barîna sor bi Fehlings (Cu+) baranê spî didin."
+        "tr": "Alkinler (asetilenler, CnH2n-2) en az bir üçlü bağ içerir; uç alkinler amonyaklı AgNO3 çözeltisiyle beyaz, amonyaklı CuCl çözeltisiyle kırmızı çökelek verir.",
+        "en": "Alkynes (acetylenes, CnH2n-2) contain at least one triple bond; terminal alkynes give a white precipitate with ammoniacal AgNO3 solution and a red precipitate with ammoniacal CuCl solution.",
+        "de": "Alkine (Acetylene, CnH2n-2) enthalten mindestens eine Dreifachbindung; endständige Alkine bilden mit ammoniakalischer AgNO3-Lösung einen weißen und mit ammoniakalischer CuCl-Lösung einen roten Niederschlag.",
+        "fr": "Les alcynes (acétyléniques, CnH2n-2) contiennent au moins une triple liaison ; les alcynes terminaux donnent un précipité blanc avec une solution ammoniacale d'AgNO3 et un précipité rouge avec une solution ammoniacale de CuCl.",
+        "ru": "Алкины (ацетиленовые, CnH2n-2) содержат хотя бы одну тройную связь; терминальные алкины дают белый осадок с аммиачным раствором AgNO3 и красный осадок с аммиачным раствором CuCl.",
+        "ar": "تحتوي الألكاينات (الأسيتيلينات، CnH2n-2) على رابطة ثلاثية واحدة على الأقل؛ وتعطي الألكاينات الطرفية راسبًا أبيض مع محلول AgNO3 النشادري وراسبًا أحمر مع محلول CuCl النشادري.",
+        "zh": "炔烃（CnH2n-2）至少含有一个三键；末端炔烃与氨性 AgNO3 溶液生成白色沉淀，与氨性 CuCl 溶液生成红色沉淀。",
+        "ku": "Alkîn (asetîlen, CnH2n-2) herî kêm girêdanek sêcarî dihewînin; alkînên dawiyê bi çareseriya AgNO3 ya amonyakî re niştekî spî, bi çareseriya CuCl ya amonyakî re niştekî sor didin."
       },
       "trap": {
-        "tr": "İç alkinler Tollens belirteciyle çökelek verir.",
-        "en": "Internal alkynes precipitate with the Tollens reagent.",
-        "de": "Interne Alkine fallen mit dem Tollens-Reagenz aus.",
-        "fr": "Les alcynes internes précipitent avec le réactif de Tollens.",
-        "ru": "Внутренние алкины осаждаются реактивом Толленса.",
-        "ar": "تترسب الألكينات الداخلية مع كاشف تولنس.",
-        "zh": "内部炔烃与 Tollens 试剂一起沉淀。",
-        "ku": "Alkînên hundirîn bi reagenta Tollens dibarin."
+        "tr": "İç alkinler amonyaklı AgNO3 (Tollens) çözeltisiyle çökelek verir.",
+        "en": "Internal alkynes give a precipitate with ammoniacal AgNO3 (Tollens) solution.",
+        "de": "Innenständige Alkine bilden mit ammoniakalischer AgNO3-Lösung (Tollens) einen Niederschlag.",
+        "fr": "Les alcynes internes donnent un précipité avec une solution ammoniacale d'AgNO3 (Tollens).",
+        "ru": "Внутренние алкины дают осадок с аммиачным раствором AgNO3 (реактив Толленса).",
+        "ar": "تعطي الألكاينات الداخلية راسبًا مع محلول AgNO3 النشادري (كاشف تولنز).",
+        "zh": "非末端（内部）炔烃能与氨性 AgNO3 溶液（托伦试剂）生成沉淀。",
+        "ku": "Alkînên navîn bi çareseriya AgNO3 ya amonyakî (Tollens) re nişt didin."
       }
     },
     {
       "id": "u24-f06",
       "fact": {
         "tr": "Aromatik bileşiklerin atası benzendir (C6H6); Kekule rezonans yapısına sahiptir, çok kararlıdır ve katılma tepkimesine isteksizdir.",
-        "en": "The ancestor of aromatic compounds is benzene (C6H6); Kekule has a resonance structure, is very stable and is reluctant to undergo addition reactions.",
-        "de": "Der Vorfahre aromatischer Verbindungen ist Benzol (C6H6); Kekule hat eine Resonanzstruktur, ist sehr stabil und geht nur ungern Additionsreaktionen ein.",
-        "fr": "L'ancêtre des composés aromatiques est le benzène (C6H6) ; Kekule a une structure de résonance, est très stable et hésite à subir des réactions d'addition.",
-        "ru": "Предком ароматических соединений является бензол (C6H6); Кекуле имеет резонансную структуру, очень стабилен и неохотно вступает в реакции присоединения.",
-        "ar": "سلف المركبات العطرية هو البنزين (C6H6)؛ يتمتع Kekule ببنية رنينية، وهو مستقر للغاية ولا يرغب في الخضوع لتفاعلات إضافية.",
-        "zh": "芳香族化合物的祖先是苯（C6H6）；凯库勒具有共振结构，非常稳定，不易发生加成反应。",
-        "ku": "Bavê pêkhateyên aromatîk benzen (C6H6) e; Kekule xwedan avahiyek rezonansê ye, pir bi îstîqrar e û ji ber reaksiyonên zêdebûnê nerazî ye."
+        "en": "Benzene (C6H6) is the parent of aromatic compounds; it has Kekulé resonance structures, is very stable and resists addition reactions.",
+        "de": "Benzol (C6H6) ist die Stammverbindung der Aromaten; es besitzt Kekulé-Resonanzstrukturen, ist sehr stabil und geht nur ungern Additionsreaktionen ein.",
+        "fr": "Le benzène (C6H6) est le composé parent des aromatiques ; il possède des structures de résonance de Kekulé, est très stable et se prête mal aux réactions d'addition.",
+        "ru": "Бензол (C6H6) — родоначальник ароматических соединений; для него характерны резонансные структуры Кекуле, он очень устойчив и неохотно вступает в реакции присоединения.",
+        "ar": "البنزين (C6H6) هو أصل المركبات الأروماتية؛ له بنى رنين كيكوليه، وهو شديد الثبات ولا يميل إلى تفاعلات الإضافة.",
+        "zh": "苯（C6H6）是芳香族化合物的母体；具有凯库勒共振结构，非常稳定，不易发生加成反应。",
+        "ku": "Benzen (C6H6) bavê pêkhateyên aromatîk e; xwedî avahiyên rezonansê yên Kekulé ye, pir aram e û naxwaze beşdarî reaksiyonên lêzêdekirinê bibe."
       },
       "trap": {
-        "tr": "Benzen üç tane normal alken gibi kolayca bromlu suyu giderir.",
-        "en": "Benzene readily removes brominated water, as do the three normal alkenes.",
-        "de": "Benzol entfernt leicht bromiertes Wasser, ebenso wie die drei normalen Alkene.",
-        "fr": "Le benzène élimine facilement l'eau bromée, tout comme les trois alcènes normaux.",
-        "ru": "Бензол легко удаляет бромированную воду, как и три нормальных алкена.",
-        "ar": "يزيل البنزين الماء المبروم بسهولة، كما تفعل الألكينات الطبيعية الثلاثة.",
-        "zh": "与三种普通烯烃一样，苯很容易去除溴化水。",
-        "ku": "Benzene bi hêsanî ava bromînkirî radike, wekî sê alkenên normal."
+        "tr": "Benzen, üç ikili bağ içeren sıradan bir alken gibi bromlu suyun rengini kolayca giderir.",
+        "en": "Benzene decolorizes bromine water as easily as an ordinary alkene with three double bonds.",
+        "de": "Benzol entfärbt Bromwasser so leicht wie ein gewöhnliches Alken mit drei Doppelbindungen.",
+        "fr": "Le benzène décolore l'eau de brome aussi facilement qu'un alcène ordinaire à trois doubles liaisons.",
+        "ru": "Бензол обесцвечивает бромную воду так же легко, как обычный алкен с тремя двойными связями.",
+        "ar": "يزيل البنزين لون ماء البروم بسهولة مثل ألكين عادي يحتوي على ثلاث روابط ثنائية.",
+        "zh": "苯像含三个双键的普通烯烃一样，很容易使溴水褪色。",
+        "ku": "Benzen wek alkeneke asayî ya bi sê girêdanên ducarî, rengê ava bromê bi hêsanî radike."
       }
     },
     {
@@ -195,7 +195,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Эфиры имеют более высокую температуру кипения, чем спирты.",
         "ar": "الإيثرات لها درجة غليان أعلى من الكحولات.",
         "zh": "醚的沸点高于醇。",
-        "ku": "Eter ji alkolan xwedî nuqteya kelandinê ye."
+        "ku": "Xala kelandinê ya eteran ji ya alkolan bilindtir e."
       }
     },
     {
@@ -276,7 +276,7 @@ export const unit24: ChemistryUnitSeedData = {
         "fr": "Les acides carboxyliques (R-COOH) réagissent avec les alcools sous catalyse acide pour former des esters parfumés (R-COO-R') (estérification).",
         "ru": "Карбоновые кислоты (R-COOH) реагируют со спиртами в условиях кислотного катализа с образованием ароматных эфиров (R-COO-R') (этерификация).",
         "ar": "تتفاعل الأحماض الكربوكسيلية (R-COOH) مع الكحولات تحت التحفيز الحمضي لتكوين استرات عطرة (R-COO-R') (الأسترة).",
-        "zh": "羧酸（R-COOH）在酸催化下与醇反应生成芳香酯（R-COO-R'）（酯化）。",
+        "zh": "羧酸（R-COOH）在酸催化下与醇反应，生成有香味的酯（R-COO-R'）（酯化反应）。",
         "ku": "Asîdên karboksîlîk (R-COOH) di bin katalîzasyona asîdê de bi alkolan re reaksiyonê dikin û esterên bîhnxweş (R-COO-R') çê dikin (esterîkirin)."
       },
       "trap": {
@@ -303,14 +303,14 @@ export const unit24: ChemistryUnitSeedData = {
         "ku": "Ji ber ku molekulên asîda karboksîlîk di nav xwe de dubendên hîdrojenê (dimer) çêdikin, xalên kelandinê yên wan pir zêde ne."
       },
       "trap": {
-        "tr": "Karboksilik asitlerin kaynama noktası hidrokarbonlardan düşüktür.",
-        "en": "The boiling point of carboxylic acids is lower than hydrocarbons.",
-        "de": "Der Siedepunkt von Carbonsäuren ist niedriger als der von Kohlenwasserstoffen.",
-        "fr": "Le point d'ébullition des acides carboxyliques est inférieur à celui des hydrocarbures.",
-        "ru": "Температура кипения карбоновых кислот ниже, чем у углеводородов.",
-        "ar": "درجة غليان الأحماض الكربوكسيلية أقل من درجة غليان الهيدروكربونات.",
-        "zh": "羧酸的沸点比烃低。",
-        "ku": "Xala kelandinê ya asîdên karboksîlî ji hîdrokarbonan kêmtir e."
+        "tr": "Karboksilik asitlerin kaynama noktası, mol kütlesi yakın olan alkanlarınkinden düşüktür.",
+        "en": "Carboxylic acids have lower boiling points than alkanes of similar molar mass.",
+        "de": "Carbonsäuren haben niedrigere Siedepunkte als Alkane mit ähnlicher molarer Masse.",
+        "fr": "Les acides carboxyliques ont des températures d'ébullition plus basses que les alcanes de masse molaire voisine.",
+        "ru": "Карбоновые кислоты имеют более низкие температуры кипения, чем алканы с близкой молярной массой.",
+        "ar": "درجات غليان الأحماض الكربوكسيلية أقل من درجات غليان الألكانات المقاربة لها في الكتلة المولية.",
+        "zh": "羧酸的沸点低于摩尔质量相近的烷烃。",
+        "ku": "Xala kelandinê ya asîdên karboksîlîk ji ya alkanên bi girseya molî ya nêzîk kêmtir e."
       }
     },
     {
@@ -369,7 +369,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Монокарбоновые кислоты и сложные эфиры с одинаковым числом атомов углерода являются изомерами функциональных групп друг друга (например, уксусная кислота и метилформиат).",
         "ar": "الأحماض الأحادية الكربوكسيلية والإسترات التي لها نفس رقم الكربون هي أيزومرات مجموعة وظيفية لبعضها البعض (مثل حمض الأسيتيك وفورمات الميثيل).",
         "zh": "具有相同碳数的一元羧酸和酯是彼此的官能团异构体（例如乙酸和甲酸甲酯）。",
-        "ku": "Asîdên monokarboksîlî û esterên bi heman hejmara karbonê îzomerên koma fonksîyonel ên hev in (mînak asîda acetîk û format Methyl)."
+        "ku": "Asîdên monokarboksîlîk û esterên bi heman hejmara karbonê îzomerên koma fonksiyonel ên hev in (mînak asîda asetîk û metîl format)."
       },
       "trap": {
         "tr": "Esterlerin en küçük üyesi 1 karbonludur.",
@@ -390,7 +390,7 @@ export const unit24: ChemistryUnitSeedData = {
         "de": "Befinden sich in Alkenen die an die Doppelbindungskohlenstoffe gebundenen Gruppen auf derselben Seite, werden sie als cis-geometrische Isomere bezeichnet, wenn sie sich auf entgegengesetzten Seiten befinden, werden sie als trans-geometrische Isomere bezeichnet.",
         "fr": "Dans les alcènes, si les groupes attachés aux carbones de la double liaison sont du même côté, ils sont appelés cis- et s'ils sont sur des côtés opposés, ils sont appelés isomères géométriques trans.",
         "ru": "В алкенах, если группы, присоединенные к двойной связи углерода, находятся на одной стороне, их называют цис-, а если они расположены на противоположных сторонах, их называют транс-геометрическими изомерами.",
-        "ar": "في الألكينات، إذا كانت المجموعات المرتبطة بذرات الكربون ذات الرابطة المزدوجة على نفس الجانب، فإنها تسمى cis- وإذا كانت على جوانب متقابلة، فإنها تسمى أيزومرات هندسية متحولة.",
+        "ar": "في الألكينات إذا كانت المجموعات المرتبطة بذرتي كربون الرابطة الثنائية في الجهة نفسها سُمّي المتماكب الهندسي سيس، وإذا كانت في جهتين متقابلتين سُمّي ترانس.",
         "zh": "在烯烃中，如果连接到双键碳的基团位于同一侧，则称为顺式几何异构体，如果位于相反侧，则称为反式几何异构体。",
         "ku": "Di alkenan de ger komên ku bi karbonên girêka ducarî ve girêdayî bin li ser hev bin, ji wan re cis- û heke li aliyên dijber bin, jê re îzomerên geometrîk trans tê gotin."
       },
@@ -400,7 +400,7 @@ export const unit24: ChemistryUnitSeedData = {
         "de": "Selbst wenn zwei identische Gruppen an dasselbe Kohlenstoffatom gebunden sind, wird das cis-trans-Isomer beobachtet.",
         "fr": "Même si deux groupes identiques sont liés au même atome de carbone, l’isomère cis-trans est visible.",
         "ru": "Даже если две идентичные группы связаны с одним и тем же атомом углерода, виден цис-транс-изомер.",
-        "ar": "حتى لو تم ربط مجموعتين متطابقتين بنفس ذرة الكربون، فإن الأيزومر المقرون العابر يمكن رؤيته.",
+        "ar": "حتى لو ارتبطت مجموعتان متماثلتان بذرة الكربون نفسها، يظهر تماكب سيس-ترانس.",
         "zh": "即使两个相同的基团键合到相同的碳原子上，也会出现顺反异构体。",
         "ku": "Ger du komên wekhev bi heman atoma karbonê re werin girêdan jî, îzomera cis-trans tê dîtin."
       }
@@ -430,14 +430,14 @@ export const unit24: ChemistryUnitSeedData = {
         "ku": "Ketone"
       },
       "distinction": {
-        "tr": "Aldehit karbonilin ucundadır (Tollens ile gümüş aynası verir); keton karbonilin ortasındadır (Tollens'e etki etmez).",
-        "en": "The aldehyde is at the end of the carbonyl (giving silver mirror with Tollens); The ketone is in the middle of the carbonyl (does not affect Tollens).",
-        "de": "Der Aldehyd befindet sich am Ende des Carbonyls (ergibt mit Tollens einen silbernen Spiegel); Das Keton befindet sich in der Mitte des Carbonyls (beeinflusst Tollens nicht).",
-        "fr": "L'aldéhyde est à l'extrémité du carbonyle (donnant un miroir argenté avec Tollens) ; La cétone est au milieu du carbonyle (n'affecte pas Tollens).",
-        "ru": "Альдегид находится на конце карбонила (давая серебряное зеркало с Толленсом); Кетон находится в середине карбонила (не влияет на Толленса).",
-        "ar": "الألدهيد موجود في نهاية الكربونيل (يعطي مرآة فضية مع تولنز)؛ يوجد الكيتون في منتصف الكربونيل (لا يؤثر على تولنس).",
-        "zh": "醛位于羰基末端（托伦斯给出银镜）；酮位于羰基中间（不影响托伦斯）。",
-        "ku": "Aldehîd li dawiya karbonîlê ye (neynika zîv bi Tollens dide); Keton di nîvê karbonylê de ye (bandorê li Tollens nake)."
+        "tr": "Aldehitte karbonil grubu zincirin ucundadır (Tollens ile gümüş aynası verir); ketonda karbonil grubu zincirin ortasındadır (Tollens ile tepkime vermez).",
+        "en": "In an aldehyde the carbonyl group is at the end of the chain (gives a silver mirror with Tollens); in a ketone the carbonyl group is within the chain (does not react with Tollens).",
+        "de": "Beim Aldehyd steht die Carbonylgruppe am Kettenende (Silberspiegel mit Tollens); beim Keton steht sie innerhalb der Kette (keine Reaktion mit Tollens).",
+        "fr": "Dans un aldéhyde, le groupe carbonyle est en bout de chaîne (miroir d'argent avec Tollens) ; dans une cétone, il est à l'intérieur de la chaîne (pas de réaction avec Tollens).",
+        "ru": "В альдегиде карбонильная группа находится на конце цепи (реакция серебряного зеркала с реактивом Толленса); в кетоне — внутри цепи (с реактивом Толленса не реагирует).",
+        "ar": "في الألدهيد تقع مجموعة الكربونيل في طرف السلسلة (يعطي مرآة فضية مع كاشف تولنز)؛ وفي الكيتون تقع داخل السلسلة (لا يتفاعل مع كاشف تولنز).",
+        "zh": "醛的羰基位于碳链末端（与托伦试剂产生银镜）；酮的羰基位于碳链中间（不与托伦试剂反应）。",
+        "ku": "Di aldehîdê de koma karbonîl li dawiya zincîrê ye (bi Tollens re neynika zîvîn dide); di ketonê de koma karbonîl di nav zincîrê de ye (bi Tollens re reaksiyon nade)."
       }
     },
     {
@@ -460,83 +460,83 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Алкен",
         "ar": "ألكين",
         "zh": "烯烃",
-        "ku": "Alkene"
+        "ku": "Alken"
       },
       "distinction": {
         "tr": "Alkan doymuştur katılma vermez; alken doymamıştır bromlu suyun rengini giderir ve polimerleşir.",
-        "en": "The alkane is saturated and does not add; The alkene is unsaturated, decolorizes brominated water and polymerizes.",
-        "de": "Das Alkan ist gesättigt und addiert nicht; Das Alken ist ungesättigt, entfärbt bromiertes Wasser und polymerisiert.",
-        "fr": "L'alcane est saturé et n'ajoute rien ; L'alcène est insaturé, décolore l'eau bromée et polymérise.",
-        "ru": "Алкан является насыщенным и не присоединяется; Алкен непределен, обесцвечивает бромированную воду и полимеризуется.",
-        "ar": "الألكان مشبع ولا يضيف؛ الألكين غير مشبع، يزيل لون الماء المبروم ويتبلمر.",
-        "zh": "烷烃饱和，不加；该烯烃是不饱和的，使溴化水脱色并聚合。",
-        "ku": "Alkan têr e û lê zêde nake; Alken têrnebûyî ye, ava bromînkirî bêreng dike û polîmerîze dike."
+        "en": "An alkane is saturated and does not undergo addition; an alkene is unsaturated, decolorizes bromine water and polymerizes.",
+        "de": "Ein Alkan ist gesättigt und geht keine Addition ein; ein Alken ist ungesättigt, entfärbt Bromwasser und polymerisiert.",
+        "fr": "Un alcane est saturé et ne subit pas d'addition ; un alcène est insaturé, décolore l'eau de brome et se polymérise.",
+        "ru": "Алкан предельный и не вступает в реакции присоединения; алкен непредельный, обесцвечивает бромную воду и полимеризуется.",
+        "ar": "الألكان مشبع ولا يدخل في تفاعلات الإضافة؛ والألكين غير مشبع يزيل لون ماء البروم ويتبلمر.",
+        "zh": "烷烃是饱和烃，不发生加成反应；烯烃是不饱和烃，能使溴水褪色并能发生聚合。",
+        "ku": "Alkan têrbûyî ye û lêzêdekirinê nake; alken netêr e, rengê ava bromê radike û polîmerîze dibe."
       }
     },
     {
       "id": "u24-c03",
       "conceptA": {
-        "tr": "Alkan (Parafin)",
-        "en": "Alkane (Paraffin)",
-        "de": "Alkan (Paraffin)",
-        "fr": "Alcane (Paraffine)",
-        "ru": "Алкан (парафин)",
-        "ar": "ألكان (بارافين)",
-        "zh": "烷烃（石蜡）",
-        "ku": "Alkan (Parafîn)"
+        "tr": "Zincir izomerisi",
+        "en": "Chain Isomerism",
+        "de": "Kettenisomerie",
+        "fr": "Isomérie de chaîne",
+        "ru": "Изомерия углеродного скелета",
+        "ar": "تماكب السلسلة",
+        "zh": "碳链异构",
+        "ku": "Îzomeriya Zincîrê"
       },
       "conceptB": {
-        "tr": "Alken (Olefin)",
-        "en": "Alkene (Olefin)",
-        "de": "Alken (Olefin)",
-        "fr": "Alcène (oléfine)",
-        "ru": "Алкен (олефин)",
-        "ar": "ألكين (أولفين)",
-        "zh": "烯烃（烯烃）",
-        "ku": "Alkene (Olefin)"
+        "tr": "Fonksiyonel grup izomerisi",
+        "en": "Functional Group Isomerism",
+        "de": "Funktionsisomerie",
+        "fr": "Isomérie de fonction",
+        "ru": "Межклассовая изомерия (изомерия функциональной группы)",
+        "ar": "تماكب المجموعة الوظيفية",
+        "zh": "官能团异构",
+        "ku": "Îzomeriya Koma Fonksiyonel"
       },
       "distinction": {
-        "tr": "Alkanlar sadece tekli sigma bağı içeren doymuş hidrokarbonlardır (CnH2n+2); alkenler en az bir ikili pi bağı içerir (CnH2n).",
-        "en": "Alkanes are saturated hydrocarbons (CnH2n+2) containing only a single sigma bond; alkenes contain at least one double pi bond (CnH2n).",
-        "de": "Alkane sind gesättigte Kohlenwasserstoffe (CnH2n+2), die nur eine einzige Sigma-Bindung enthalten; Alkene enthalten mindestens eine Doppel-Pi-Bindung (CnH2n).",
-        "fr": "Les alcanes sont des hydrocarbures saturés (CnH2n+2) ne contenant qu'une seule liaison sigma ; les alcènes contiennent au moins une double liaison pi (CnH2n).",
-        "ru": "Алканы – это насыщенные углеводороды (CnH2n+2), содержащие только одну сигма-связь; алкены содержат по крайней мере одну двойную пи-связь (CnH2n).",
-        "ar": "الألكانات عبارة عن هيدروكربونات مشبعة (CnH2n+2) تحتوي على رابطة سيجما واحدة فقط؛ تحتوي الألكينات على رابطة باي مزدوجة واحدة على الأقل (CnH2n).",
-        "zh": "烷烃是仅含有一个西格玛键的饱和烃（CnH2n+2）；烯烃含有至少一个双π键(CnH2n)。",
-        "ku": "Alkan hîdrokarbonên têrbûyî ne (CnH2n+2) ku tenê girêdanek sigmayê dihewîne; alkenan bi kêmî ve girêdanek pi ya ducar (CnH2n) heye."
+        "tr": "Zincir izomerisinde fonksiyonel grup aynıdır, karbon zinciri (dallanma) farklıdır (örn. bütan ve 2-metilpropan); fonksiyonel grup izomerisinde molekül formülü aynı, fonksiyonel grup farklıdır (örn. etanol ve dimetil eter).",
+        "en": "In chain isomerism the functional group is the same but the carbon chain (branching) differs (e.g., butane and 2-methylpropane); in functional group isomerism the molecular formula is the same but the functional groups differ (e.g., ethanol and dimethyl ether).",
+        "de": "Bei der Kettenisomerie bleibt die funktionelle Gruppe gleich, aber die Kohlenstoffkette (Verzweigung) ist verschieden (z. B. Butan und 2-Methylpropan); Funktionsisomere haben dieselbe Summenformel, aber verschiedene funktionelle Gruppen (z. B. Ethanol und Dimethylether).",
+        "fr": "Dans l'isomérie de chaîne, le groupe fonctionnel est le même mais la chaîne carbonée (ramification) diffère (par ex. butane et 2-méthylpropane) ; les isomères de fonction ont la même formule brute mais des groupes fonctionnels différents (par ex. éthanol et méthoxyméthane).",
+        "ru": "Изомеры углеродного скелета имеют одинаковую функциональную группу, но разную углеродную цепь (разветвление) (например, бутан и 2-метилпропан); межклассовые изомеры имеют одинаковую молекулярную формулу, но разные функциональные группы (например, этанол и диметиловый эфир).",
+        "ar": "متماكبات السلسلة لها المجموعة الوظيفية نفسها لكن سلسلة كربونية مختلفة (تفرع) (مثل البيوتان و2-ميثيل بروبان)؛ أما متماكبات المجموعة الوظيفية فلها الصيغة الجزيئية نفسها ومجموعات وظيفية مختلفة (مثل الإيثانول وثنائي ميثيل الإيثر).",
+        "zh": "碳链异构体官能团相同而碳链（支链）不同（如丁烷与 2-甲基丙烷）；官能团异构体分子式相同而官能团不同（如乙醇与二甲醚）。",
+        "ku": "Îzomerên zincîrê xwedî heman koma fonksiyonel in lê zincîra karbonê (şaxbûn) cuda ye (mînak bûtan û 2-metîlpropan); îzomerên koma fonksiyonel xwedî heman formula molekulî ne lê komên fonksiyonel cuda ne (mînak etanol û dîmetîl eter)."
       }
     },
     {
       "id": "u24-c04",
       "conceptA": {
-        "tr": "Alken",
-        "en": "Alkene",
-        "de": "Alken",
-        "fr": "Alcène",
-        "ru": "Алкен",
-        "ar": "ألكين",
-        "zh": "烯烃",
-        "ku": "Alken"
+        "tr": "Alkin",
+        "en": "Alkyne",
+        "de": "Alkin",
+        "fr": "Alcyne",
+        "ru": "Алкин",
+        "ar": "ألكاين",
+        "zh": "炔烃",
+        "ku": "Alkîn"
       },
       "conceptB": {
-        "tr": "Alkin (Asetilenler)",
-        "en": "Alkyne (Acetylenes)",
-        "de": "Alkin (Acetylene)",
-        "fr": "Alcyne (Acétylènes)",
-        "ru": "Алкин (ацетилены)",
-        "ar": "الألكين (الأسيتيلين)",
-        "zh": "炔烃（乙炔）",
-        "ku": "Alkyne (Acetylenes)"
+        "tr": "Aromatik Hidrokarbon (Benzen)",
+        "en": "Aromatic Hydrocarbon (Benzene)",
+        "de": "Aromatischer Kohlenwasserstoff (Benzol)",
+        "fr": "Hydrocarbure aromatique (benzène)",
+        "ru": "Ароматический углеводород (бензол)",
+        "ar": "هيدروكربون أروماتي (البنزين)",
+        "zh": "芳香烃（苯）",
+        "ku": "Hîdrokarbona Aromatîk (Benzen)"
       },
       "distinction": {
-        "tr": "Alkenler ikili bağ içerir ve katılma tepkimesi verir; alkinler üçlü bağ içerir (CnH2n-2) ve uç alkinler Tollens ile çökelek verir.",
-        "en": "Alkenes contain double bonds and undergo addition reactions; Alkynes contain triple bonds (CnH2n-2) and terminal alkynes precipitate with Tollens.",
-        "de": "Alkene enthalten Doppelbindungen und gehen Additionsreaktionen ein; Alkine enthalten Dreifachbindungen (CnH2n-2) und terminale Alkine fallen mit Tollens aus.",
-        "fr": "Les alcènes contiennent des doubles liaisons et subissent des réactions d'addition ; Les alcynes contiennent des triples liaisons (CnH2n-2) et les alcynes terminaux précipitent avec Tollens.",
-        "ru": "Алкены содержат двойные связи и вступают в реакции присоединения; Алкины содержат тройные связи (CnH2n-2), а концевые алкины осаждаются с помощью Толленов.",
-        "ar": "تحتوي الألكينات على روابط مزدوجة وتخضع لتفاعلات إضافة؛ تحتوي الألكينات على روابط ثلاثية (CnH2n-2) وتترسب الألكينات الطرفية مع تولنز.",
-        "zh": "烯烃含有双键，发生加成反应；炔烃含有三键 (CnH2n-2)，末端炔烃与 Tollens 一起沉淀。",
-        "ku": "Alkenan girêdanên ducarî dihewîne û reaksiyonên lêzêdekirinê derbas dikin; Alkîn girêdanên sêqat (CnH2n-2) dihewîne û alkînên termînalê bi Tollenan dibarin."
+        "tr": "Alkinler üçlü bağ içerir (CnH2n-2) ve kolayca katılma tepkimesi verir; benzen rezonans kararlılığı nedeniyle katılmaya isteksizdir, daha çok yer değiştirme (sübstitüsyon) tepkimesi verir.",
+        "en": "Alkynes contain a triple bond (CnH2n-2) and readily undergo addition reactions; benzene resists addition because of resonance stabilization and mainly undergoes substitution reactions.",
+        "de": "Alkine enthalten eine Dreifachbindung (CnH2n-2) und gehen leicht Additionsreaktionen ein; Benzol ist wegen seiner Resonanzstabilisierung additionsträge und reagiert vorwiegend durch Substitution.",
+        "fr": "Les alcynes contiennent une triple liaison (CnH2n-2) et subissent facilement des additions ; le benzène, stabilisé par résonance, se prête mal à l'addition et donne surtout des réactions de substitution.",
+        "ru": "Алкины содержат тройную связь (CnH2n-2) и легко вступают в реакции присоединения; бензол из-за резонансной стабилизации неохотно присоединяет и в основном вступает в реакции замещения.",
+        "ar": "تحتوي الألكاينات على رابطة ثلاثية (CnH2n-2) وتدخل بسهولة في تفاعلات الإضافة؛ أما البنزين فلا يميل إلى الإضافة بسبب الثبات الرنيني ويدخل غالبًا في تفاعلات الاستبدال.",
+        "zh": "炔烃含三键（CnH2n-2），容易发生加成反应；苯因共振稳定而不易加成，主要发生取代反应。",
+        "ku": "Alkîn girêdana sêcarî dihewînin (CnH2n-2) û bi hêsanî reaksiyonên lêzêdekirinê didin; benzen ji ber aramiya rezonansê naxwaze lêzêdekirinê bike, bi piranî reaksiyonên cihguhertinê (sûbstîtûsyon) dide."
       }
     },
     {
@@ -558,7 +558,7 @@ export const unit24: ChemistryUnitSeedData = {
         "fr": "Alcool secondaire",
         "ru": "Вторичный спирт",
         "ar": "الكحول الثانوي",
-        "zh": "二级酒精",
+        "zh": "仲醇",
         "ku": "Alkola Duyemîn"
       },
       "distinction": {
@@ -600,75 +600,75 @@ export const unit24: ChemistryUnitSeedData = {
         "de": "Carbonsäure enthält eine -COOH-Gruppe und bildet Wasserstoffbrücken; Ester ist eine duftende Verbindung (-COOR), die durch Kondensation von Säure und Alkohol entsteht.",
         "fr": "L'acide carboxylique contient un groupe -COOH et établit des liaisons hydrogène ; L'ester est un composé parfumé (-COOR) formé par la condensation d'un acide et d'un alcool.",
         "ru": "Карбоновая кислота содержит группу -СООН и образует водородные связи; Эфир — ароматное соединение (-COOR), образующееся в результате конденсации кислоты и спирта.",
-        "ar": "يحتوي الحمض الكربوكسيلي على مجموعة -COOH ويكوّن روابط هيدروجينية؛ الإستر هو مركب عطري (-COOR) يتكون من تكثيف الحمض والكحول.",
-        "zh": "羧酸含有-COOH基团并形成氢键；酯是由酸和醇缩合形成的芳香化合物（-COOR）。",
-        "ku": "Karboksîlîk koma -COOH dihewîne û girêdanên hîdrojenê çêdike; Ester pêkhateyek bîhnxweş e (-COOR) ku ji berhevbûna asîd û alkolê pêk tê."
+        "ar": "يحتوي الحمض الكربوكسيلي على مجموعة -COOH ويكوّن روابط هيدروجينية؛ والإستر مركب ذو رائحة طيبة (-COOR) يتكون من تكاثف حمض مع كحول.",
+        "zh": "羧酸含有 -COOH 基团，能形成氢键；酯是由酸和醇缩合生成的有香味的化合物（-COOR）。",
+        "ku": "Asîda karboksîlîk koma -COOH dihewîne û girêdanên hîdrojenê çêdike; ester pêkhateyeke bîhnxweş e (-COOR) ku ji kondensasyona asîd û alkolê çêdibe."
       }
     },
     {
       "id": "u24-c07",
       "conceptA": {
         "tr": "Markovnikov Katılması",
-        "en": "Joining Markovnikov",
-        "de": "Beitritt zu Markownikow",
-        "fr": "Rejoindre Markovnikov",
-        "ru": "Присоединение к Марковникову",
-        "ar": "الانضمام إلى ماركوفنيكوف",
-        "zh": "马氏加成规则",
-        "ku": "Tevlî Markovnikov dibe"
+        "en": "Markovnikov Addition",
+        "de": "Markownikow-Addition",
+        "fr": "Addition de Markovnikov",
+        "ru": "Присоединение по Марковникову",
+        "ar": "إضافة ماركوفنيكوف",
+        "zh": "马氏加成",
+        "ku": "Lêzêdekirina Markovnikov"
       },
       "conceptB": {
         "tr": "Zaitsev Ayrılması",
-        "en": "Zaitsev Detachment",
-        "de": "Zaitsev-Abteilung",
-        "fr": "Détachement de Zaïtsev",
-        "ru": "Зайцевский отряд",
-        "ar": "مفرزة زايتسيف",
-        "zh": "扎伊采夫消去规则",
-        "ku": "Detachment Zaitsev"
+        "en": "Zaitsev Elimination",
+        "de": "Saizew-Eliminierung",
+        "fr": "Élimination de Zaïtsev",
+        "ru": "Отщепление по Зайцеву",
+        "ar": "حذف زايتسيف",
+        "zh": "札依采夫消除",
+        "ku": "Veqetandina Zaitsev"
       },
       "distinction": {
-        "tr": "Markovnikov katılan H'nin çok hidrojeni olan karbona gitmesidir; Zaitsev ayrılmada eliminasyon az hidrojeni olan karbondan gerçekleşir.",
-        "en": "The Markovnikov addition is that the H goes to the carbon that has a lot of hydrogen; In Zaitsev separation, elimination occurs from carbon with less hydrogen.",
-        "de": "Der Markownikow-Zusatz besteht darin, dass das H an den Kohlenstoff geht, der viel Wasserstoff enthält; Bei der Zaitsev-Trennung erfolgt die Eliminierung von Kohlenstoff mit weniger Wasserstoff.",
-        "fr": "L'ajout de Markovnikov est que le H va au carbone qui contient beaucoup d'hydrogène ; Dans la séparation Zaitsev, l'élimination se produit du carbone avec moins d'hydrogène.",
-        "ru": "Дополнение Марковникова состоит в том, что H переходит к углероду, в котором много водорода; При разделении Зайцева отщепление происходит от углерода с меньшим количеством водорода.",
-        "ar": "إضافة ماركوفنيكوف هي أن H يذهب إلى الكربون الذي يحتوي على الكثير من الهيدروجين؛ في فصل زايتسيف، يحدث التخلص من الكربون مع كمية أقل من الهيدروجين.",
-        "zh": "马氏加成是，H 进入含有大量氢的碳；在扎伊采夫分离中，消除是从碳和较少的氢中发生的。",
-        "ku": "Zêdekirina Markovnikov ew e ku H diçe karbona ku pir hîdrojen lê heye; Di veqetandina Zaitsev de, jêbirin ji karbonê bi hîdrojenê kêmtir pêk tê."
+        "tr": "Markovnikov katılmasında katılan H, hidrojeni çok olan karbona bağlanır; Zaitsev ayrılmasında H, hidrojeni az olan karbondan koparılır.",
+        "en": "In Markovnikov addition the added H goes to the carbon that already has more hydrogens; in Zaitsev elimination the H is removed from the carbon that has fewer hydrogens.",
+        "de": "Bei der Markownikow-Addition geht das addierte H an das Kohlenstoffatom mit mehr Wasserstoffatomen; bei der Saizew-Eliminierung wird das H vom Kohlenstoffatom mit weniger Wasserstoffatomen abgespalten.",
+        "fr": "Dans l'addition de Markovnikov, le H ajouté se fixe sur le carbone le plus hydrogéné ; dans l'élimination de Zaïtsev, le H est arraché au carbone le moins hydrogéné.",
+        "ru": "При присоединении по Марковникову H присоединяется к более гидрогенизированному атому углерода; при отщеплении по Зайцеву H отщепляется от менее гидрогенизированного атома углерода.",
+        "ar": "في إضافة ماركوفنيكوف يرتبط H المضاف بذرة الكربون التي تحمل عددًا أكبر من الهيدروجين؛ وفي حذف زايتسيف يُنزع H من ذرة الكربون التي تحمل عددًا أقل من الهيدروجين.",
+        "zh": "马氏加成中，加上的 H 连到含氢较多的碳原子上；札依采夫消除中，H 从含氢较少的碳原子上脱去。",
+        "ku": "Di lêzêdekirina Markovnikov de H ya tê zêdekirin diçe ser karbona ku hîdrojenên wê zêdetir in; di veqetandina Zaitsev de H ji karbona ku hîdrojenên wê kêmtir in tê rakirin."
       }
     },
     {
       "id": "u24-c08",
       "conceptA": {
-        "tr": "Aldehit",
-        "en": "aldehyde",
-        "de": "Aldehyd",
-        "fr": "aldéhyde",
-        "ru": "альдегид",
-        "ar": "ألدهيد",
-        "zh": "醛",
-        "ku": "Aldehîd"
+        "tr": "Cis izomeri",
+        "en": "Cis Isomer",
+        "de": "cis-Isomer",
+        "fr": "Isomère cis",
+        "ru": "Цис-изомер",
+        "ar": "متماكب سيس",
+        "zh": "顺式异构体",
+        "ku": "Îzomera Cis"
       },
       "conceptB": {
-        "tr": "Keton",
-        "en": "Ketone",
-        "de": "Keton",
-        "fr": "Cétone",
-        "ru": "Кетон",
-        "ar": "كيتون",
-        "zh": "酮",
-        "ku": "Ketone"
+        "tr": "Trans izomeri",
+        "en": "Trans Isomer",
+        "de": "trans-Isomer",
+        "fr": "Isomère trans",
+        "ru": "Транс-изомер",
+        "ar": "متماكب ترانس",
+        "zh": "反式异构体",
+        "ku": "Îzomera Trans"
       },
       "distinction": {
-        "tr": "Aldehit karbonilin ucundadır (Tollens ile gümüş aynası verir); keton karbonilin ortasındadır (Tollens'e etki etmez).",
-        "en": "The aldehyde is at the end of the carbonyl (giving silver mirror with Tollens); The ketone is in the middle of the carbonyl (does not affect Tollens).",
-        "de": "Der Aldehyd befindet sich am Ende des Carbonyls (ergibt mit Tollens einen silbernen Spiegel); Das Keton befindet sich in der Mitte des Carbonyls (beeinflusst Tollens nicht).",
-        "fr": "L'aldéhyde est à l'extrémité du carbonyle (donnant un miroir argenté avec Tollens) ; La cétone est au milieu du carbonyle (n'affecte pas Tollens).",
-        "ru": "Альдегид находится на конце карбонила (давая серебряное зеркало с Толленсом); Кетон находится в середине карбонила (не влияет на Толленса).",
-        "ar": "الألدهيد موجود في نهاية الكربونيل (يعطي مرآة فضية مع تولنز)؛ يوجد الكيتون في منتصف الكربونيل (لا يؤثر على تولنس).",
-        "zh": "醛位于羰基末端（托伦斯给出银镜）；酮位于羰基中间（不影响托伦斯）。",
-        "ku": "Aldehîd li dawiya karbonîlê ye (neynika zîv bi Tollens dide); Keton di nîvê karbonylê de ye (bandorê li Tollens nake)."
+        "tr": "Cis izomerinde benzer gruplar ikili bağın aynı tarafında, trans izomerinde zıt taraflarındadır; geometrik izomeri için her iki ikili bağ karbonunda iki farklı grup bulunmalıdır.",
+        "en": "In the cis isomer similar groups are on the same side of the double bond, in the trans isomer on opposite sides; geometric isomerism requires two different groups on each double-bond carbon.",
+        "de": "Beim cis-Isomer liegen gleiche Gruppen auf derselben Seite der Doppelbindung, beim trans-Isomer auf gegenüberliegenden Seiten; für geometrische Isomerie muss jedes Doppelbindungs-C-Atom zwei verschiedene Gruppen tragen.",
+        "fr": "Dans l'isomère cis, les groupes semblables sont du même côté de la double liaison, dans l'isomère trans de part et d'autre ; l'isomérie géométrique exige deux groupes différents sur chaque carbone de la double liaison.",
+        "ru": "В цис-изомере одинаковые группы находятся по одну сторону двойной связи, в транс-изомере — по разные стороны; для геометрической изомерии каждый атом углерода при двойной связи должен иметь две разные группы.",
+        "ar": "في متماكب سيس تكون المجموعات المتشابهة في الجهة نفسها من الرابطة الثنائية، وفي متماكب ترانس في جهتين متقابلتين؛ ويتطلب التماكب الهندسي وجود مجموعتين مختلفتين على كل ذرة كربون في الرابطة الثنائية.",
+        "zh": "顺式异构体中相同基团位于双键同侧，反式异构体中位于双键两侧；产生顺反异构要求每个双键碳原子上连有两个不同的基团。",
+        "ku": "Di îzomera cis de komên wekhev li heman aliyê girêdana ducarî ne, di îzomera trans de li aliyên dijber in; ji bo îzomeriya geometrîk divê li ser her karboneke girêdana ducarî du komên cuda hebin."
       }
     }
   ],
@@ -676,55 +676,55 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-s01",
       "title": {
-        "tr": "Markovnikov Katılma Mekanizması",
-        "en": "Markovnikov Addition Mechanism",
-        "de": "Markownikow-Additionsmechanismus",
-        "fr": "Mécanisme d'addition de Markovnikov",
-        "ru": "Механизм сложения Марковникова",
-        "ar": "آلية إضافة ماركوفنيكوف",
-        "zh": "马尔可夫尼科夫加法机制",
-        "ku": "Mekanîzmaya Zêdekirina Markovnikov"
+        "tr": "Markovnikov Kuralının Uygulanması",
+        "en": "Applying Markovnikov's Rule",
+        "de": "Anwendung der Markownikow-Regel",
+        "fr": "Application de la règle de Markovnikov",
+        "ru": "Применение правила Марковникова",
+        "ar": "تطبيق قاعدة ماركوفنيكوف",
+        "zh": "马氏规则的应用",
+        "ku": "Sepandina Qaîdeya Markovnikov"
       },
       "steps": [
         {
-          "tr": "Alkendeki pi bağını kır",
-          "en": "Break the pi bond in the alkene",
-          "de": "Brechen Sie die Pi-Bindung im Alken",
-          "fr": "Rompre la liaison pi dans l'alcène",
-          "ru": "Разрыв пи-связи в алкене",
-          "ar": "اكسر الرابطة باي في الألكين",
-          "zh": "打破烯烃中的π键",
-          "ku": "Di alkenê de girêdana pi bişkînin"
+          "tr": "Asimetrik alkendeki ikili bağ karbonları belirlenir",
+          "en": "Identify the double-bond carbons in the unsymmetrical alkene",
+          "de": "Die Doppelbindungs-C-Atome im unsymmetrischen Alken werden bestimmt",
+          "fr": "On repère les carbones de la double liaison dans l'alcène dissymétrique",
+          "ru": "Определяют атомы углерода при двойной связи в несимметричном алкене",
+          "ar": "تُحدد ذرتا الكربون في الرابطة الثنائية للألكين غير المتماثل",
+          "zh": "找出不对称烯烃中双键上的两个碳原子",
+          "ku": "Karbonên girêdana ducarî yên di alkena nesîmetrîk de têne diyarkirin"
         },
         {
-          "tr": "Reaktifin H+ katyonunu hidrojeni çok olan C'ye bağla",
-          "en": "Connect the H+ cation of the reagent to the C that has more hydrogen.",
-          "de": "Verbinden Sie das H+-Kation des Reagenzes mit dem C, das mehr Wasserstoff enthält.",
-          "fr": "Connectez le cation H+ du réactif au C qui contient plus d’hydrogène.",
-          "ru": "Соедините катион H+ реагента с катионом C, в котором больше водорода.",
-          "ar": "قم بتوصيل كاتيون H+ للكاشف إلى C الذي يحتوي على المزيد من الهيدروجين.",
-          "zh": "将试剂的 H+ 阳离子连接到具有更多氢的 C。",
-          "ku": "H+ kationa reagentê bi C-ya ku hîdrojena wê zêdetir e ve girêdin."
+          "tr": "İkili bağ karbonlarına bağlı hidrojen sayıları karşılaştırılır",
+          "en": "Compare the numbers of hydrogens on the two double-bond carbons",
+          "de": "Die Anzahl der Wasserstoffatome an beiden Doppelbindungs-C-Atomen wird verglichen",
+          "fr": "On compare le nombre d'hydrogènes portés par chacun des deux carbones de la double liaison",
+          "ru": "Сравнивают число атомов водорода у этих двух атомов углерода",
+          "ar": "يُقارن عدد ذرات الهيدروجين المرتبطة بكل من ذرتي الكربون",
+          "zh": "比较两个双键碳原子上所连氢原子的数目",
+          "ku": "Hejmara hîdrojenên li ser her du karbonên girêdana ducarî têne berawirdkirin"
         },
         {
-          "tr": "Kararlı karbokatyonu oluştur",
-          "en": "Form stable carbocation",
-          "de": "Bilden Sie stabile Carbokationen",
-          "fr": "Forme un carbocation stable",
-          "ru": "Образуют стабильный карбокатион",
-          "ar": "شكل كاربوكاتيون مستقر",
-          "zh": "形成稳定的碳正离子",
-          "ku": "Carbocation stabîl ava bikin"
+          "tr": "HX'in H atomu hidrojeni çok olan karbona, X atomu hidrojeni az olan karbona bağlanır",
+          "en": "The H of HX bonds to the carbon with more hydrogens and X to the carbon with fewer hydrogens",
+          "de": "Das H von HX bindet an das C-Atom mit mehr, X an das C-Atom mit weniger Wasserstoffatomen",
+          "fr": "Le H de HX se fixe sur le carbone le plus hydrogéné et X sur le carbone le moins hydrogéné",
+          "ru": "H из HX присоединяется к атому углерода с большим числом водородов, X — к атому с меньшим",
+          "ar": "يرتبط H من HX بذرة الكربون الأكثر هيدروجينًا ويرتبط X بذرة الكربون الأقل هيدروجينًا",
+          "zh": "HX 中的 H 加到含氢较多的碳原子上，X 加到含氢较少的碳原子上",
+          "ku": "H ya HX diçe ser karbona bi hîdrojenên zêdetir, X jî diçe ser karbona bi hîdrojenên kêmtir"
         },
         {
-          "tr": "Reaktifin anyonunu (Br-, OH-) diğer C'ye bağla",
-          "en": "Connect the anion of the reagent (Br-, OH-) to the other C",
-          "de": "Verbinden Sie das Anion des Reagenzes (Br-, OH-) mit dem anderen C",
-          "fr": "Connectez l'anion du réactif (Br-, OH-) à l'autre C",
-          "ru": "Соедините анион реагента (Br-, OH-) с другим C",
-          "ar": "قم بتوصيل أنيون الكاشف (Br-، OH-) بالآخر C",
-          "zh": "将试剂的阴离子（Br-、OH-）连接到另一个 C",
-          "ku": "Anyona reagentê (Br-, OH-) bi C-ya din ve girêdin"
+          "tr": "Oluşan ana ürün adlandırılır (örn. propen + HBr → 2-bromopropan)",
+          "en": "Name the major product formed (e.g., propene + HBr → 2-bromopropane)",
+          "de": "Das gebildete Hauptprodukt wird benannt (z. B. Propen + HBr → 2-Brompropan)",
+          "fr": "On nomme le produit majoritaire formé (par ex. propène + HBr → 2-bromopropane)",
+          "ru": "Называют образовавшийся основной продукт (например, пропен + HBr → 2-бромпропан)",
+          "ar": "يُسمى الناتج الرئيسي المتكون (مثل بروبين + HBr → 2-برومو بروبان)",
+          "zh": "命名生成的主要产物（如 丙烯 + HBr → 2-溴丙烷）",
+          "ku": "Berhema sereke ya çêbûyî tê binavkirin (mînak propen + HBr → 2-bromopropan)"
         }
       ]
     },
@@ -738,7 +738,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Номенклатура алканов ИЮПАК",
         "ar": "تسمية الألكانات IUPAC",
         "zh": "IUPAC 烷烃命名法",
-        "ku": "IUPAC Alkane Nomenclature"
+        "ku": "Binavkirina Alkanan li gorî IUPAC"
       },
       "steps": [
         {
@@ -789,11 +789,11 @@ export const unit24: ChemistryUnitSeedData = {
         "tr": "Alkinlere Su Katılması ve Totomeri",
         "en": "Addition of Water to Alkynes and Tautomery",
         "de": "Addition von Wasser an Alkine und Tautomerie",
-        "fr": "Ajout d'eau aux alcynes et à la tautomérie",
+        "fr": "Addition d'eau sur les alcynes et tautomérie",
         "ru": "Присоединение воды к алкинам и таутомерия",
-        "ar": "إضافة الماء إلى الألكينات والتوتومري",
+        "ar": "إضافة الماء إلى الألكاينات والتوتومرية",
         "zh": "炔烃加水和互变异构",
-        "ku": "Zêdekirina avê li Alkines û Tautomery"
+        "ku": "Lêzêdekirina Avê li Alkînan û Totomerî"
       },
       "steps": [
         {
@@ -804,7 +804,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Вода добавляется в ацетилен под катализатором сульфата ртути (HgSO4) в кислой среде.",
           "ar": "يضاف الماء إلى الأسيتيلين تحت محفز كبريتات الزئبق (HgSO4) في بيئة حمضية.",
           "zh": "在硫酸汞（HgSO4）催化下，在酸性环境下将水加入乙炔中。",
-          "ku": "Av li asetîlenê di bin katalîzatorê sulfate mercury (HgSO4) de di hawîrdorek asîd de tê zêdekirin."
+          "ku": "Di hawîrdora asîdî de bi katalîzora sulfata cîwayê (HgSO4) av li asetîlenê tê zêdekirin"
         },
         {
           "tr": "Kararsız enol ara ürünü oluşur",
@@ -834,62 +834,62 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Получено стабильное соединение ацетальдегида.",
           "ar": "يتم الحصول على مركب الأسيتالديهيد المستقر",
           "zh": "获得稳定的乙醛化合物",
-          "ku": "Têkiliya acetaldehyde ya stabîl tê wergirtin"
+          "ku": "Pêkhateya asetaldehîdê ya aram tê bidestxistin"
         }
       ]
     },
     {
       "id": "u24-s04",
       "title": {
-        "tr": "Alkollerin Kademeli Yükseltgenmesi",
-        "en": "Stepwise Oxidation of Alcohols",
-        "de": "Stufenweise Oxidation von Alkoholen",
-        "fr": "Oxydation étape par étape des alcools",
-        "ru": "Ступенчатое окисление спиртов.",
-        "ar": "الأكسدة التدريجية للكحولات",
-        "zh": "醇的逐步氧化",
-        "ku": "Oksîdakirina Alkolan a Gav bi gav"
+        "tr": "Primer Alkolün Kademeli Yükseltgenmesi (Etanol)",
+        "en": "Stepwise Oxidation of a Primary Alcohol (Ethanol)",
+        "de": "Stufenweise Oxidation eines primären Alkohols (Ethanol)",
+        "fr": "Oxydation par étapes d'un alcool primaire (éthanol)",
+        "ru": "Ступенчатое окисление первичного спирта (этанол)",
+        "ar": "الأكسدة المتدرجة لكحول أولي (الإيثانول)",
+        "zh": "伯醇的逐步氧化（乙醇）",
+        "ku": "Oksîdasyona Qonax bi Qonax a Alkola Primer (Etanol)"
       },
       "steps": [
         {
-          "tr": "Primer alkol bir basamak yükseltgenerek aldehite dönüşür",
-          "en": "The primary alcohol is oxidized one step to an aldehyde.",
-          "de": "Der primäre Alkohol wird in einem Schritt zu einem Aldehyd oxidiert.",
-          "fr": "L'alcool primaire est oxydé en une étape en aldéhyde.",
-          "ru": "Первичный спирт окисляется на одну ступень до альдегида.",
-          "ar": "يتأكسد الكحول الأولي خطوة واحدة إلى الألدهيد.",
-          "zh": "伯醇一步被氧化成醛。",
-          "ku": "Alkola seretayî gavekê berbi aldehîdê ve tê oksîdan."
+          "tr": "Etanol (primer alkol) asitli KMnO4 gibi bir yükseltgenle tepkimeye sokulur",
+          "en": "Ethanol (a primary alcohol) is treated with an oxidizing agent such as acidified KMnO4",
+          "de": "Ethanol (ein primärer Alkohol) wird mit einem Oxidationsmittel wie angesäuertem KMnO4 umgesetzt",
+          "fr": "L'éthanol (alcool primaire) est mis en réaction avec un oxydant comme KMnO4 acidifié",
+          "ru": "Этанол (первичный спирт) обрабатывают окислителем, например подкисленным KMnO4",
+          "ar": "يُعالج الإيثانول (كحول أولي) بعامل مؤكسد مثل KMnO4 المحمض",
+          "zh": "用酸性 KMnO4 等氧化剂处理乙醇（伯醇）",
+          "ku": "Etanol (alkoleke primer) bi oksîdkerekî wek KMnO4 ya asîdî re tê reaksiyonkirin"
         },
         {
-          "tr": "Aldehit bir basamak daha yükseltgenerek karboksilik asit verir",
-          "en": "The aldehyde is further oxidized to give carboxylic acid.",
-          "de": "Der Aldehyd wird weiter zu Carbonsäure oxidiert.",
-          "fr": "L'aldéhyde est ensuite oxydé pour donner de l'acide carboxylique.",
-          "ru": "Альдегид далее окисляется с образованием карбоновой кислоты.",
-          "ar": "يتأكسد الألدهيد أيضًا ليعطي حمض كربوكسيلي.",
-          "zh": "醛进一步氧化得到羧酸。",
-          "ku": "Aldehîd bêtir tê oksîd kirin ku asîda karboksîlîk bide."
+          "tr": "Etanol bir basamak yükseltgenerek etanale (asetaldehit) dönüşür",
+          "en": "Ethanol is oxidized one step to ethanal (acetaldehyde)",
+          "de": "Ethanol wird in einer Stufe zu Ethanal (Acetaldehyd) oxidiert",
+          "fr": "L'éthanol est oxydé en une étape en éthanal (acétaldéhyde)",
+          "ru": "Этанол окисляется на одну ступень до этаналя (уксусного альдегида)",
+          "ar": "يتأكسد الإيثانول خطوة واحدة إلى الإيثانال (الأسيتالدهيد)",
+          "zh": "乙醇被氧化一步生成乙醛",
+          "ku": "Etanol bi qonaxekê oksîd dibe û dibe etanal (asetaldehîd)"
         },
         {
-          "tr": "Sekonder alkol yükseltgendiğinde sadece keton oluşur",
-          "en": "When secondary alcohol is oxidized, only ketones are formed.",
-          "de": "Bei der Oxidation von sekundärem Alkohol entstehen ausschließlich Ketone.",
-          "fr": "Lorsque l’alcool secondaire est oxydé, seules des cétones se forment.",
-          "ru": "При окислении вторичного спирта образуются только кетоны.",
-          "ar": "عندما يتأكسد الكحول الثانوي، يتم تشكيل الكيتونات فقط.",
-          "zh": "当仲醇被氧化时，仅形成酮。",
-          "ku": "Dema ku alkola duyemîn oksîde dibe, tenê keton têne çêkirin."
+          "tr": "Etanal bir basamak daha yükseltgenerek etanoik aside (asetik asit) dönüşür",
+          "en": "Ethanal is oxidized one more step to ethanoic acid (acetic acid)",
+          "de": "Ethanal wird in einer weiteren Stufe zu Ethansäure (Essigsäure) oxidiert",
+          "fr": "L'éthanal est oxydé en une étape supplémentaire en acide éthanoïque (acide acétique)",
+          "ru": "Этаналь окисляется ещё на одну ступень до этановой (уксусной) кислоты",
+          "ar": "يتأكسد الإيثانال خطوة أخرى إلى حمض الإيثانويك (حمض الأسيتيك)",
+          "zh": "乙醛再被氧化一步生成乙酸",
+          "ku": "Etanal bi qonaxeke din oksîd dibe û dibe asîda etanoîk (asîda asetîk)"
         },
         {
-          "tr": "Tersiyer alkoller yükseltgenme tepkimesi vermez",
-          "en": "Tertiary alcohols do not undergo oxidation reactions",
-          "de": "Tertiäre Alkohole unterliegen keinen Oxidationsreaktionen",
-          "fr": "Les alcools tertiaires ne subissent pas de réactions d'oxydation",
-          "ru": "Третичные спирты не вступают в реакции окисления.",
-          "ar": "لا تخضع الكحولات الثلاثية لتفاعلات الأكسدة",
-          "zh": "叔醇不发生氧化反应",
-          "ku": "Alkolên sêyemîn reaksiyonên oksîdasyonê derbas nakin"
+          "tr": "Oluşan karboksilik asit bu koşullarda daha fazla yükseltgenmez; zincirin son ürünüdür",
+          "en": "The carboxylic acid formed is not oxidized further under these conditions; it is the final product",
+          "de": "Die entstandene Carbonsäure wird unter diesen Bedingungen nicht weiter oxidiert; sie ist das Endprodukt",
+          "fr": "L'acide carboxylique formé n'est plus oxydé dans ces conditions ; c'est le produit final",
+          "ru": "Образовавшаяся карбоновая кислота в этих условиях дальше не окисляется; это конечный продукт",
+          "ar": "لا يتأكسد الحمض الكربوكسيلي الناتج أكثر في هذه الظروف؛ فهو الناتج النهائي",
+          "zh": "生成的羧酸在该条件下不再被进一步氧化，是最终产物",
+          "ku": "Asîda karboksîlîk a çêbûyî di van şertan de êdî oksîd nabe; berhema dawî ye"
         }
       ]
     }
@@ -992,7 +992,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "альдегиды",
           "ar": "الألدهيدات",
           "zh": "醛类",
-          "ku": "aldehydes"
+          "ku": "Aldehîd"
         },
         {
           "tr": "Ketonlar",
@@ -1002,7 +1002,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Кетоны",
           "ar": "الكيتونات",
           "zh": "酮类",
-          "ku": "Ketones"
+          "ku": "Keton"
         },
         {
           "tr": "Eterler",
@@ -1022,7 +1022,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Алканы",
           "ar": "الألكانات",
           "zh": "烷烃",
-          "ku": "Alkanes"
+          "ku": "Alkan"
         },
         {
           "tr": "Esterler",
@@ -1042,7 +1042,7 @@ export const unit24: ChemistryUnitSeedData = {
         "de": "Aldehyde werden dank des Wasserstoffs in der Carbonylgruppe leicht zu Carbonsäure oxidiert, wodurch die Ag+-Ionen im Tollens-Reagenz zu metallischem Silber (Silberspiegel) reduziert werden.",
         "fr": "Les aldéhydes sont facilement oxydés en acide carboxylique grâce à l'hydrogène du groupe carbonyle, réduisant les ions Ag+ du réactif de Tollens en argent métallique (miroir d'argent).",
         "ru": "Альдегиды легко окисляются до карбоновой кислоты благодаря водороду в карбонильной группе, восстанавливая ионы Ag+ в реактиве Толленса до металлического серебра (серебряное зеркало).",
-        "ar": "تتأكسد الألدهيدات بسهولة إلى حمض كربوكسيلي بفضل الهيدروجين الموجود في مجموعة الكربونيل، مما يقلل أيونات Ag+ في كاشف تولنز إلى الفضة المعدنية (المرآة الفضية).",
+        "ar": "تتأكسد الألدهيدات بسهولة إلى أحماض كربوكسيلية بفضل ذرة الهيدروجين المرتبطة بمجموعة الكربونيل، فتختزل أيونات Ag+ في كاشف تولنز إلى فضة فلزية (مرآة فضية).",
         "zh": "由于羰基中的氢，醛很容易被氧化为羧酸，从而将Tollens试剂中的Ag+离子还原为金属银（银镜）。",
         "ku": "Aldehîd bi saya hîdrojena di koma karbonîl de bi hêsanî dibin asîda karboksîlîk, îyonên Ag+ yên di reagenta Tollensê de dibe zîvê metalîk (neynika zîv)."
       }
@@ -1061,14 +1061,14 @@ export const unit24: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Benzen üç tane normal alken gibi kolayca bromlu suyu giderir.",
-          "en": "Benzene readily removes brominated water, as do the three normal alkenes.",
-          "de": "Benzol entfernt leicht bromiertes Wasser, ebenso wie die drei normalen Alkene.",
-          "fr": "Le benzène élimine facilement l'eau bromée, tout comme les trois alcènes normaux.",
-          "ru": "Бензол легко удаляет бромированную воду, как и три нормальных алкена.",
-          "ar": "يزيل البنزين الماء المبروم بسهولة، كما تفعل الألكينات الطبيعية الثلاثة.",
-          "zh": "与三种普通烯烃一样，苯很容易去除溴化水。",
-          "ku": "Benzene bi hêsanî ava bromînkirî radike, wekî sê alkenên normal."
+          "tr": "Benzen, üç ikili bağ içeren sıradan bir alken gibi bromlu suyun rengini kolayca giderir.",
+          "en": "Benzene decolorizes bromine water as easily as an ordinary alkene with three double bonds.",
+          "de": "Benzol entfärbt Bromwasser so leicht wie ein gewöhnliches Alken mit drei Doppelbindungen.",
+          "fr": "Le benzène décolore l'eau de brome aussi facilement qu'un alcène ordinaire à trois doubles liaisons.",
+          "ru": "Бензол обесцвечивает бромную воду так же легко, как обычный алкен с тремя двойными связями.",
+          "ar": "يزيل البنزين لون ماء البروم بسهولة مثل ألكين عادي يحتوي على ثلاث روابط ثنائية.",
+          "zh": "苯像含三个双键的普通烯烃一样，很容易使溴水褪色。",
+          "ku": "Benzen wek alkeneke asayî ya bi sê girêdanên ducarî, rengê ava bromê bi hêsanî radike."
         },
         {
           "tr": "Ketonlar daha ileri yükseltgenerek esterlere dönüşür.",
@@ -1083,22 +1083,22 @@ export const unit24: ChemistryUnitSeedData = {
         {
           "tr": "Markovnikov Kuralı: Asimetrik alkenlere HX katılırken H atomu hidrojeni ÇOK olan karbona, X atomu hidrojeni AZ olan karbona bağlanır.",
           "en": "Markovnikov's Rule: When HX is added to asymmetric alkenes, the H atom is bonded to the carbon with MORE hydrogen, and the X atom is bonded to the carbon with LESS hydrogen.",
-          "de": "Markownikows Regel: Wenn HX zu asymmetrischen Alkenen hinzugefügt wird, wird das H-Atom mit MEHR Wasserstoff an den Kohlenstoff gebunden, und das X-Atom wird mit WENIGER Wasserstoff an den Kohlenstoff gebunden.",
+          "de": "Markownikow-Regel: Bei der Addition von HX an unsymmetrische Alkene bindet das H-Atom an das C-Atom mit MEHR Wasserstoffatomen und das X-Atom an das C-Atom mit WENIGER Wasserstoffatomen.",
           "fr": "Règle de Markovnikov : lorsque HX est ajouté à des alcènes asymétriques, l'atome H est lié au carbone avec PLUS d'hydrogène et l'atome X est lié au carbone avec MOINS d'hydrogène.",
           "ru": "Правило Марковникова: когда HX добавляется к асимметричным алкенам, атом H связан с углеродом с БОЛЬШИМ водородом, а атом X связан с углеродом с МЕНЬШИМ водородом.",
           "ar": "قاعدة ماركونيكوف: عند إضافة HX إلى الألكينات غير المتماثلة، ترتبط ذرة H بالكربون الذي يحتوي على المزيد من الهيدروجين، وترتبط ذرة X بالكربون الذي يحتوي على كمية أقل من الهيدروجين.",
           "zh": "马尔可夫尼科夫规则：当HX添加到不对称烯烃中时，H原子与具有更多氢的碳键合，而X原子与具有较少氢的碳键合。",
-          "ku": "Rêbaza Markovnikov: Dema ku HX li alkenên asîmetrîk tê zêdekirin, atoma H bi karbonê re bi HÎdrojena ZÊDETIR, û atoma X bi karbonê bi hîdrojena KÊMT re tê girêdan."
+          "ku": "Qaîdeya Markovnikov: dema HX li alkenên nesîmetrîk tê zêdekirin, atoma H diçe ser karbona ku hîdrojenên wê ZÊDETIR in, atoma X jî diçe ser karbona ku hîdrojenên wê KÊMTIR in."
         },
         {
-          "tr": "Karboksilik asitlerin kaynama noktası hidrokarbonlardan düşüktür.",
-          "en": "The boiling point of carboxylic acids is lower than hydrocarbons.",
-          "de": "Der Siedepunkt von Carbonsäuren ist niedriger als der von Kohlenwasserstoffen.",
-          "fr": "Le point d'ébullition des acides carboxyliques est inférieur à celui des hydrocarbures.",
-          "ru": "Температура кипения карбоновых кислот ниже, чем у углеводородов.",
-          "ar": "درجة غليان الأحماض الكربوكسيلية أقل من درجة غليان الهيدروكربونات.",
-          "zh": "羧酸的沸点比烃低。",
-          "ku": "Xala kelandinê ya asîdên karboksîlî ji hîdrokarbonan kêmtir e."
+          "tr": "Karboksilik asitlerin kaynama noktası, mol kütlesi yakın olan alkanlarınkinden düşüktür.",
+          "en": "Carboxylic acids have lower boiling points than alkanes of similar molar mass.",
+          "de": "Carbonsäuren haben niedrigere Siedepunkte als Alkane mit ähnlicher molarer Masse.",
+          "fr": "Les acides carboxyliques ont des températures d'ébullition plus basses que les alcanes de masse molaire voisine.",
+          "ru": "Карбоновые кислоты имеют более низкие температуры кипения, чем алканы с близкой молярной массой.",
+          "ar": "درجات غليان الأحماض الكربوكسيلية أقل من درجات غليان الألكانات المقاربة لها في الكتلة المولية.",
+          "zh": "羧酸的沸点低于摩尔质量相近的烷烃。",
+          "ku": "Xala kelandinê ya asîdên karboksîlîk ji ya alkanên bi girseya molî ya nêzîk kêmtir e."
         },
         {
           "tr": "Esterlerin en küçük üyesi 1 karbonludur.",
@@ -1115,12 +1115,12 @@ export const unit24: ChemistryUnitSeedData = {
       "explanation": {
         "tr": "Doğru cevap \"Markovnikov Kuralı: Asimetrik alkenlere HX katılırken H atomu hidrojeni ÇOK olan karbona, X atomu hidrojeni AZ olan karbona bağlanır.\" ifadesidir. Zengin daha zengin olur kuralı: Hidrojen çok olana H gider!",
         "en": "The correct statement is: \"Markovnikov's Rule: When HX is added to asymmetric alkenes, the H atom is bonded to the carbon with MORE hydrogen, and the X atom is bonded to the carbon with LESS hydrogen.\". The rich get richer rule: H goes to the one who has more hydrogen!",
-        "de": "Die zutreffende Aussage lautet: \"Markownikows Regel: Wenn HX zu asymmetrischen Alkenen hinzugefügt wird, wird das H-Atom mit MEHR Wasserstoff an den Kohlenstoff gebunden, und das X-Atom wird mit WENIGER Wasserstoff an den Kohlenstoff gebunden.\". Die Reiche werden reicher Regel: H geht an den, der mehr Wasserstoff hat!",
+        "de": "Die zutreffende Aussage lautet: \"Markownikow-Regel: Bei der Addition von HX an unsymmetrische Alkene bindet das H-Atom an das C-Atom mit MEHR Wasserstoffatomen und das X-Atom an das C-Atom mit WENIGER Wasserstoffatomen.\". Die Reiche werden reicher Regel: H geht an den, der mehr Wasserstoff hat!",
         "fr": "L'affirmation exacte est: \"Règle de Markovnikov : lorsque HX est ajouté à des alcènes asymétriques, l'atome H est lié au carbone avec PLUS d'hydrogène et l'atome X est lié au carbone avec MOINS d'hydrogène.\". Règle des riches s’enrichissent : H va à celui qui a le plus d’hydrogène !",
         "ru": "Правильное утверждение: «Правило Марковникова: когда HX добавляется к асимметричным алкенам, атом H связан с углеродом с БОЛЬШИМ водородом, а атом X связан с углеродом с МЕНЬШИМ водородом.». Правило богатых богатеет: H достаётся тому, у кого больше водорода!",
         "ar": "العبارة الصحيحة هي: \"قاعدة ماركونيكوف: عند إضافة HX إلى الألكينات غير المتماثلة، ترتبط ذرة H بالكربون الذي يحتوي على المزيد من الهيدروجين، وترتبط ذرة X بالكربون الذي يحتوي على كمية أقل من الهيدروجين.\". قاعدة الأغنياء يصبحون أكثر ثراء: H يذهب إلى الشخص الذي لديه المزيد من الهيدروجين!",
         "zh": "正确表述为：“马尔可夫尼科夫规则：当HX添加到不对称烯烃中时，H原子与具有更多氢的碳键合，而X原子与具有较少氢的碳键合。”。富者愈富的规则：氢归拥有更多氢的人！",
-        "ku": "Gotina rast ev e: \"Rêbaza Markovnikov: Dema ku HX li alkenên asîmetrîk tê zêdekirin, atoma H bi karbonê re bi HÎdrojena ZÊDETIR, û atoma X bi karbonê bi hîdrojena KÊMT re tê girêdan.\". Desthilatdariya dewlemend dewlemendtir dibe: H diçe ba yê ku hîdrojenê wî zêde heye!"
+        "ku": "Gotina rast ev e: \"Qaîdeya Markovnikov: dema HX li alkenên nesîmetrîk tê zêdekirin, atoma H diçe ser karbona ku hîdrojenên wê ZÊDETIR in, atoma X jî diçe ser karbona ku hîdrojenên wê KÊMTIR in.\". Desthilatdariya dewlemend dewlemendtir dibe: H diçe ba yê ku hîdrojenê wî zêde heye!"
       }
     },
     {
@@ -1144,7 +1144,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Эфиры имеют более высокую температуру кипения, чем спирты.",
           "ar": "الإيثرات لها درجة غليان أعلى من الكحولات.",
           "zh": "醚的沸点高于醇。",
-          "ku": "Eter ji alkolan xwedî nuqteya kelandinê ye."
+          "ku": "Xala kelandinê ya eteran ji ya alkolan bilindtir e."
         },
         {
           "tr": "Aseton (keton) Tollens reaktifiyle gümüş aynası verir.",
@@ -1167,14 +1167,14 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Etanol û dimethyl ether xwedî heman taybetmendiyên kîmyewî ne."
         },
         {
-          "tr": "Alkenler ve alkinler bromlu suyun (Br2/CCl4) kırmızı-kahverengi rengini soğukta giderir (doymamışlık testi).",
-          "en": "Alkenes and alkynes remove the red-brown color of brominated water (Br2/CCl4) on cold (unsaturation test).",
-          "de": "Alkene und Alkine entfernen die rotbraune Farbe von bromiertem Wasser (Br2/CCl4) bei Kälte (Unsättigungstest).",
-          "fr": "Les alcènes et alcynes enlèvent la couleur rouge-brun de l'eau bromée (Br2/CCl4) à froid (test d'insaturation).",
-          "ru": "Алкены и алкины удаляют красно-коричневую окраску бромированной воды (Br2/CCl4) на холоду (испытание на ненасыщенность).",
-          "ar": "تقوم الألكينات والألكاينات بإزالة اللون البني المحمر من الماء المبروم (Br2/CCl4) عند البرد (اختبار عدم التشبع).",
-          "zh": "烯烃和炔烃在冷时消除溴化水 (Br2/CCl4) 的红棕色（不饱和度测试）。",
-          "ku": "Alken û alkîn rengê sor-qehweyî yê ava bromînkirî (Br2/CCl4) di sermayê de (ceribandina têrbûnê) jê dikin."
+          "tr": "Alkenler ve alkinler bromlu suyun kırmızı-kahverengi rengini oda koşullarında giderir (doymamışlık testi).",
+          "en": "Alkenes and alkynes decolorize the red-brown colour of bromine water at room conditions (test for unsaturation).",
+          "de": "Alkene und Alkine entfärben rotbraunes Bromwasser bereits bei Raumbedingungen (Nachweis von Mehrfachbindungen).",
+          "fr": "Les alcènes et les alcynes décolorent l'eau de brome rouge-brun dans les conditions ambiantes (test d'insaturation).",
+          "ru": "Алкены и алкины обесцвечивают красно-бурую бромную воду при комнатных условиях (качественная реакция на непредельность).",
+          "ar": "تزيل الألكينات والألكاينات اللون الأحمر البني لماء البروم في الظروف العادية (اختبار عدم التشبع).",
+          "zh": "烯烃和炔烃在室温下能使红棕色的溴水褪色（不饱和性检验）。",
+          "ku": "Alken û alkîn di şertên odeyê de rengê sor-qehweyî yê ava bromê radikin (testa netêrbûnê)."
         },
         {
           "tr": "Aynı karbon atomuna iki özdeş grup bağlı olsa bile cis-trans izomeri görülür.",
@@ -1182,21 +1182,21 @@ export const unit24: ChemistryUnitSeedData = {
           "de": "Selbst wenn zwei identische Gruppen an dasselbe Kohlenstoffatom gebunden sind, wird das cis-trans-Isomer beobachtet.",
           "fr": "Même si deux groupes identiques sont liés au même atome de carbone, l’isomère cis-trans est visible.",
           "ru": "Даже если две идентичные группы связаны с одним и тем же атомом углерода, виден цис-транс-изомер.",
-          "ar": "حتى لو تم ربط مجموعتين متطابقتين بنفس ذرة الكربون، فإن الأيزومر المقرون العابر يمكن رؤيته.",
+          "ar": "حتى لو ارتبطت مجموعتان متماثلتان بذرة الكربون نفسها، يظهر تماكب سيس-ترانس.",
           "zh": "即使两个相同的基团键合到相同的碳原子上，也会出现顺反异构体。",
           "ku": "Ger du komên wekhev bi heman atoma karbonê re werin girêdan jî, îzomera cis-trans tê dîtin."
         }
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Alkenler ve alkinler bromlu suyun (Br2/CCl4) kırmızı-kahverengi rengini soğukta giderir (doymamışlık testi).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Alkenes and alkynes remove the red-brown color of brominated water (Br2/CCl4) on cold (unsaturation test).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Alkene und Alkine entfernen die rotbraune Farbe von bromiertem Wasser (Br2/CCl4) bei Kälte (Unsättigungstest).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les alcènes et alcynes enlèvent la couleur rouge-brun de l'eau bromée (Br2/CCl4) à froid (test d'insaturation).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Алкены и алкины удаляют красно-коричневую окраску бромированной воды (Br2/CCl4) на холоду (испытание на ненасыщенность).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تقوم الألكينات والألكاينات بإزالة اللون البني المحمر من الماء المبروم (Br2/CCl4) عند البرد (اختبار عدم التشبع).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“烯烃和炔烃在冷时消除溴化水 (Br2/CCl4) 的红棕色（不饱和度测试）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Alken û alkîn rengê sor-qehweyî yê ava bromînkirî (Br2/CCl4) di sermayê de (ceribandina têrbûnê) jê dikin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Alkenler ve alkinler bromlu suyun kırmızı-kahverengi rengini oda koşullarında giderir (doymamışlık testi).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Alkenes and alkynes decolorize the red-brown colour of bromine water at room conditions (test for unsaturation).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Alkene und Alkine entfärben rotbraunes Bromwasser bereits bei Raumbedingungen (Nachweis von Mehrfachbindungen).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les alcènes et les alcynes décolorent l'eau de brome rouge-brun dans les conditions ambiantes (test d'insaturation).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Алкены и алкины обесцвечивают красно-бурую бромную воду при комнатных условиях (качественная реакция на непредельность).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تزيل الألكينات والألكاينات اللون الأحمر البني لماء البروم في الظروف العادية (اختبار عدم التشبع).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“烯烃和炔烃在室温下能使红棕色的溴水褪色（不饱和性检验）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Alken û alkîn di şertên odeyê de rengê sor-qehweyî yê ava bromê radikin (testa netêrbûnê).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1244,35 +1244,35 @@ export const unit24: ChemistryUnitSeedData = {
         },
         {
           "tr": "Alkanlar bromlu suyun kırmızı rengini hızla giderir.",
-          "en": "Alkanes quickly remove the red color of brominated water.",
-          "de": "Alkane entfernen schnell die rote Farbe von bromiertem Wasser.",
-          "fr": "Les alcanes éliminent rapidement la couleur rouge de l'eau bromée.",
-          "ru": "Алканы быстро удаляют красный цвет бромированной воды.",
-          "ar": "تقوم الألكانات بإزالة اللون الأحمر للمياه المبرومة بسرعة.",
-          "zh": "烷烃可以快速去除溴化水的红色。",
-          "ku": "Alkan bi lez rengê sor yê ava bromînê jê dikin."
+          "en": "Alkanes rapidly decolorize the red colour of bromine water.",
+          "de": "Alkane entfärben die rote Farbe von Bromwasser schnell.",
+          "fr": "Les alcanes décolorent rapidement la couleur rouge de l'eau de brome.",
+          "ru": "Алканы быстро обесцвечивают красную окраску бромной воды.",
+          "ar": "تزيل الألكانات اللون الأحمر لماء البروم بسرعة.",
+          "zh": "烷烃能迅速使溴水的红色褪去。",
+          "ku": "Alkan rengê sor ê ava bromê bi lez radikin."
         },
         {
-          "tr": "Alkinler (asetilenler, CnH2n-2) en az bir üçlü bağ içerir; uç alkinler Tollens (Ag+) ile beyaz, Fehling (Cu+) ile kırmızı çökelek verir.",
-          "en": "Alkynes (acetylenes, CnH2n-2) contain at least one triple bond; Terminal alkynes give white precipitates with Tollens (Ag+) and red precipitates with Fehlings (Cu+).",
-          "de": "Alkine (Acetylene, CnH2n-2) enthalten mindestens eine Dreifachbindung; Terminale Alkine ergeben weiße Niederschläge mit Tollens (Ag+) und rote Niederschläge mit Fehlings (Cu+).",
-          "fr": "Les alcynes (acétylènes, CnH2n-2) contiennent au moins une triple liaison ; Les alcynes terminaux donnent des précipités blancs avec les Tollens (Ag+) et rouges avec les Fehlings (Cu+).",
-          "ru": "Алкины (ацетилены, CnH2n-2) содержат хотя бы одну тройную связь; Концевые алкины дают белые осадки с Толленами (Ag+) и красные осадки с Фелингами (Cu+).",
-          "ar": "تحتوي الألكينات (الأسيتيلين، CnH2n-2) على رابطة ثلاثية واحدة على الأقل؛ الألكينات الطرفية تعطي رواسب بيضاء مع تولنز (Ag+) ورواسب حمراء مع فهلينغز (Cu+).",
-          "zh": "炔烃（乙炔，CnH2n-2）含有至少一个三键；末端炔烃与托伦斯 (Ag+) 产生白色沉淀，与费林斯 (Cu+) 产生红色沉淀。",
-          "ku": "Alkines (acetylenes, CnH2n-2) bi kêmanî yek girêdana sê-sêyan heye; Alkînên termînalê bi Tollens (Ag+) û barîna sor bi Fehlings (Cu+) baranê spî didin."
+          "tr": "Alkinler (asetilenler, CnH2n-2) en az bir üçlü bağ içerir; uç alkinler amonyaklı AgNO3 çözeltisiyle beyaz, amonyaklı CuCl çözeltisiyle kırmızı çökelek verir.",
+          "en": "Alkynes (acetylenes, CnH2n-2) contain at least one triple bond; terminal alkynes give a white precipitate with ammoniacal AgNO3 solution and a red precipitate with ammoniacal CuCl solution.",
+          "de": "Alkine (Acetylene, CnH2n-2) enthalten mindestens eine Dreifachbindung; endständige Alkine bilden mit ammoniakalischer AgNO3-Lösung einen weißen und mit ammoniakalischer CuCl-Lösung einen roten Niederschlag.",
+          "fr": "Les alcynes (acétyléniques, CnH2n-2) contiennent au moins une triple liaison ; les alcynes terminaux donnent un précipité blanc avec une solution ammoniacale d'AgNO3 et un précipité rouge avec une solution ammoniacale de CuCl.",
+          "ru": "Алкины (ацетиленовые, CnH2n-2) содержат хотя бы одну тройную связь; терминальные алкины дают белый осадок с аммиачным раствором AgNO3 и красный осадок с аммиачным раствором CuCl.",
+          "ar": "تحتوي الألكاينات (الأسيتيلينات، CnH2n-2) على رابطة ثلاثية واحدة على الأقل؛ وتعطي الألكاينات الطرفية راسبًا أبيض مع محلول AgNO3 النشادري وراسبًا أحمر مع محلول CuCl النشادري.",
+          "zh": "炔烃（CnH2n-2）至少含有一个三键；末端炔烃与氨性 AgNO3 溶液生成白色沉淀，与氨性 CuCl 溶液生成红色沉淀。",
+          "ku": "Alkîn (asetîlen, CnH2n-2) herî kêm girêdanek sêcarî dihewînin; alkînên dawiyê bi çareseriya AgNO3 ya amonyakî re niştekî spî, bi çareseriya CuCl ya amonyakî re niştekî sor didin."
         }
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Alkinler (asetilenler, CnH2n-2) en az bir üçlü bağ içerir; uç alkinler Tollens (Ag+) ile beyaz, Fehling (Cu+) ile kırmızı çökelek verir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Alkynes (acetylenes, CnH2n-2) contain at least one triple bond; Terminal alkynes give white precipitates with Tollens (Ag+) and red precipitates with Fehlings (Cu+).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Alkine (Acetylene, CnH2n-2) enthalten mindestens eine Dreifachbindung; Terminale Alkine ergeben weiße Niederschläge mit Tollens (Ag+) und rote Niederschläge mit Fehlings (Cu+).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les alcynes (acétylènes, CnH2n-2) contiennent au moins une triple liaison ; Les alcynes terminaux donnent des précipités blancs avec les Tollens (Ag+) et rouges avec les Fehlings (Cu+).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Алкины (ацетилены, CnH2n-2) содержат хотя бы одну тройную связь; Концевые алкины дают белые осадки с Толленами (Ag+) и красные осадки с Фелингами (Cu+).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تحتوي الألكينات (الأسيتيلين، CnH2n-2) على رابطة ثلاثية واحدة على الأقل؛ الألكينات الطرفية تعطي رواسب بيضاء مع تولنز (Ag+) ورواسب حمراء مع فهلينغز (Cu+).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“炔烃（乙炔，CnH2n-2）含有至少一个三键；末端炔烃与托伦斯 (Ag+) 产生白色沉淀，与费林斯 (Cu+) 产生红色沉淀。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Alkines (acetylenes, CnH2n-2) bi kêmanî yek girêdana sê-sêyan heye; Alkînên termînalê bi Tollens (Ag+) û barîna sor bi Fehlings (Cu+) baranê spî didin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Alkinler (asetilenler, CnH2n-2) en az bir üçlü bağ içerir; uç alkinler amonyaklı AgNO3 çözeltisiyle beyaz, amonyaklı CuCl çözeltisiyle kırmızı çökelek verir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Alkynes (acetylenes, CnH2n-2) contain at least one triple bond; terminal alkynes give a white precipitate with ammoniacal AgNO3 solution and a red precipitate with ammoniacal CuCl solution.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Alkine (Acetylene, CnH2n-2) enthalten mindestens eine Dreifachbindung; endständige Alkine bilden mit ammoniakalischer AgNO3-Lösung einen weißen und mit ammoniakalischer CuCl-Lösung einen roten Niederschlag.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les alcynes (acétyléniques, CnH2n-2) contiennent au moins une triple liaison ; les alcynes terminaux donnent un précipité blanc avec une solution ammoniacale d'AgNO3 et un précipité rouge avec une solution ammoniacale de CuCl.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Алкины (ацетиленовые, CnH2n-2) содержат хотя бы одну тройную связь; терминальные алкины дают белый осадок с аммиачным раствором AgNO3 и красный осадок с аммиачным раствором CuCl.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تحتوي الألكاينات (الأسيتيلينات، CnH2n-2) على رابطة ثلاثية واحدة على الأقل؛ وتعطي الألكاينات الطرفية راسبًا أبيض مع محلول AgNO3 النشادري وراسبًا أحمر مع محلول CuCl النشادري.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“炔烃（CnH2n-2）至少含有一个三键；末端炔烃与氨性 AgNO3 溶液生成白色沉淀，与氨性 CuCl 溶液生成红色沉淀。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Alkîn (asetîlen, CnH2n-2) herî kêm girêdanek sêcarî dihewînin; alkînên dawiyê bi çareseriya AgNO3 ya amonyakî re niştekî spî, bi çareseriya CuCl ya amonyakî re niştekî sor didin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1290,13 +1290,13 @@ export const unit24: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Aromatik bileşiklerin atası benzendir (C6H6); Kekule rezonans yapısına sahiptir, çok kararlıdır ve katılma tepkimesine isteksizdir.",
-          "en": "The ancestor of aromatic compounds is benzene (C6H6); Kekule has a resonance structure, is very stable and is reluctant to undergo addition reactions.",
-          "de": "Der Vorfahre aromatischer Verbindungen ist Benzol (C6H6); Kekule hat eine Resonanzstruktur, ist sehr stabil und geht nur ungern Additionsreaktionen ein.",
-          "fr": "L'ancêtre des composés aromatiques est le benzène (C6H6) ; Kekule a une structure de résonance, est très stable et hésite à subir des réactions d'addition.",
-          "ru": "Предком ароматических соединений является бензол (C6H6); Кекуле имеет резонансную структуру, очень стабилен и неохотно вступает в реакции присоединения.",
-          "ar": "سلف المركبات العطرية هو البنزين (C6H6)؛ يتمتع Kekule ببنية رنينية، وهو مستقر للغاية ولا يرغب في الخضوع لتفاعلات إضافية.",
-          "zh": "芳香族化合物的祖先是苯（C6H6）；凯库勒具有共振结构，非常稳定，不易发生加成反应。",
-          "ku": "Bavê pêkhateyên aromatîk benzen (C6H6) e; Kekule xwedan avahiyek rezonansê ye, pir bi îstîqrar e û ji ber reaksiyonên zêdebûnê nerazî ye."
+          "en": "Benzene (C6H6) is the parent of aromatic compounds; it has Kekulé resonance structures, is very stable and resists addition reactions.",
+          "de": "Benzol (C6H6) ist die Stammverbindung der Aromaten; es besitzt Kekulé-Resonanzstrukturen, ist sehr stabil und geht nur ungern Additionsreaktionen ein.",
+          "fr": "Le benzène (C6H6) est le composé parent des aromatiques ; il possède des structures de résonance de Kekulé, est très stable et se prête mal aux réactions d'addition.",
+          "ru": "Бензол (C6H6) — родоначальник ароматических соединений; для него характерны резонансные структуры Кекуле, он очень устойчив и неохотно вступает в реакции присоединения.",
+          "ar": "البنزين (C6H6) هو أصل المركبات الأروماتية؛ له بنى رنين كيكوليه، وهو شديد الثبات ولا يميل إلى تفاعلات الإضافة.",
+          "zh": "苯（C6H6）是芳香族化合物的母体；具有凯库勒共振结构，非常稳定，不易发生加成反应。",
+          "ku": "Benzen (C6H6) bavê pêkhateyên aromatîk e; xwedî avahiyên rezonansê yên Kekulé ye, pir aram e û naxwaze beşdarî reaksiyonên lêzêdekirinê bibe."
         },
         {
           "tr": "Ketonlar daha ileri yükseltgenerek esterlere dönüşür.",
@@ -1309,14 +1309,14 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Ketone bêtir ji bo esteran têne oksîd kirin."
         },
         {
-          "tr": "Karboksilik asitlerin kaynama noktası hidrokarbonlardan düşüktür.",
-          "en": "The boiling point of carboxylic acids is lower than hydrocarbons.",
-          "de": "Der Siedepunkt von Carbonsäuren ist niedriger als der von Kohlenwasserstoffen.",
-          "fr": "Le point d'ébullition des acides carboxyliques est inférieur à celui des hydrocarbures.",
-          "ru": "Температура кипения карбоновых кислот ниже, чем у углеводородов.",
-          "ar": "درجة غليان الأحماض الكربوكسيلية أقل من درجة غليان الهيدروكربونات.",
-          "zh": "羧酸的沸点比烃低。",
-          "ku": "Xala kelandinê ya asîdên karboksîlî ji hîdrokarbonan kêmtir e."
+          "tr": "Karboksilik asitlerin kaynama noktası, mol kütlesi yakın olan alkanlarınkinden düşüktür.",
+          "en": "Carboxylic acids have lower boiling points than alkanes of similar molar mass.",
+          "de": "Carbonsäuren haben niedrigere Siedepunkte als Alkane mit ähnlicher molarer Masse.",
+          "fr": "Les acides carboxyliques ont des températures d'ébullition plus basses que les alcanes de masse molaire voisine.",
+          "ru": "Карбоновые кислоты имеют более низкие температуры кипения, чем алканы с близкой молярной массой.",
+          "ar": "درجات غليان الأحماض الكربوكسيلية أقل من درجات غليان الألكانات المقاربة لها في الكتلة المولية.",
+          "zh": "羧酸的沸点低于摩尔质量相近的烷烃。",
+          "ku": "Xala kelandinê ya asîdên karboksîlîk ji ya alkanên bi girseya molî ya nêzîk kêmtir e."
         },
         {
           "tr": "Esterlerin en küçük üyesi 1 karbonludur.",
@@ -1342,13 +1342,13 @@ export const unit24: ChemistryUnitSeedData = {
       "correctIndex": 0,
       "explanation": {
         "tr": "Doğru cevap \"Aromatik bileşiklerin atası benzendir (C6H6); Kekule rezonans yapısına sahiptir, çok kararlıdır ve katılma tepkimesine isteksizdir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The ancestor of aromatic compounds is benzene (C6H6); Kekule has a resonance structure, is very stable and is reluctant to undergo addition reactions.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Der Vorfahre aromatischer Verbindungen ist Benzol (C6H6); Kekule hat eine Resonanzstruktur, ist sehr stabil und geht nur ungern Additionsreaktionen ein.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"L'ancêtre des composés aromatiques est le benzène (C6H6) ; Kekule a une structure de résonance, est très stable et hésite à subir des réactions d'addition.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Предком ароматических соединений является бензол (C6H6); Кекуле имеет резонансную структуру, очень стабилен и неохотно вступает в реакции присоединения.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"سلف المركبات العطرية هو البنزين (C6H6)؛ يتمتع Kekule ببنية رنينية، وهو مستقر للغاية ولا يرغب في الخضوع لتفاعلات إضافية.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“芳香族化合物的祖先是苯（C6H6）；凯库勒具有共振结构，非常稳定，不易发生加成反应。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Bavê pêkhateyên aromatîk benzen (C6H6) e; Kekule xwedan avahiyek rezonansê ye, pir bi îstîqrar e û ji ber reaksiyonên zêdebûnê nerazî ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Benzene (C6H6) is the parent of aromatic compounds; it has Kekulé resonance structures, is very stable and resists addition reactions.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Benzol (C6H6) ist die Stammverbindung der Aromaten; es besitzt Kekulé-Resonanzstrukturen, ist sehr stabil und geht nur ungern Additionsreaktionen ein.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Le benzène (C6H6) est le composé parent des aromatiques ; il possède des structures de résonance de Kekulé, est très stable et se prête mal aux réactions d'addition.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Бензол (C6H6) — родоначальник ароматических соединений; для него характерны резонансные структуры Кекуле, он очень устойчив и неохотно вступает в реакции присоединения.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"البنزين (C6H6) هو أصل المركبات الأروماتية؛ له بنى رنين كيكوليه، وهو شديد الثبات ولا يميل إلى تفاعلات الإضافة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“苯（C6H6）是芳香族化合物的母体；具有凯库勒共振结构，非常稳定，不易发生加成反应。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Benzen (C6H6) bavê pêkhateyên aromatîk e; xwedî avahiyên rezonansê yên Kekulé ye, pir aram e û naxwaze beşdarî reaksiyonên lêzêdekirinê bibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1400,7 +1400,7 @@ export const unit24: ChemistryUnitSeedData = {
           "de": "Selbst wenn zwei identische Gruppen an dasselbe Kohlenstoffatom gebunden sind, wird das cis-trans-Isomer beobachtet.",
           "fr": "Même si deux groupes identiques sont liés au même atome de carbone, l’isomère cis-trans est visible.",
           "ru": "Даже если две идентичные группы связаны с одним и тем же атомом углерода, виден цис-транс-изомер.",
-          "ar": "حتى لو تم ربط مجموعتين متطابقتين بنفس ذرة الكربون، فإن الأيزومر المقرون العابر يمكن رؤيته.",
+          "ar": "حتى لو ارتبطت مجموعتان متماثلتان بذرة الكربون نفسها، يظهر تماكب سيس-ترانس.",
           "zh": "即使两个相同的基团键合到相同的碳原子上，也会出现顺反异构体。",
           "ku": "Ger du komên wekhev bi heman atoma karbonê re werin girêdan jî, îzomera cis-trans tê dîtin."
         },
@@ -1472,23 +1472,23 @@ export const unit24: ChemistryUnitSeedData = {
         },
         {
           "tr": "Alkanlar bromlu suyun kırmızı rengini hızla giderir.",
-          "en": "Alkanes quickly remove the red color of brominated water.",
-          "de": "Alkane entfernen schnell die rote Farbe von bromiertem Wasser.",
-          "fr": "Les alcanes éliminent rapidement la couleur rouge de l'eau bromée.",
-          "ru": "Алканы быстро удаляют красный цвет бромированной воды.",
-          "ar": "تقوم الألكانات بإزالة اللون الأحمر للمياه المبرومة بسرعة.",
-          "zh": "烷烃可以快速去除溴化水的红色。",
-          "ku": "Alkan bi lez rengê sor yê ava bromînê jê dikin."
+          "en": "Alkanes rapidly decolorize the red colour of bromine water.",
+          "de": "Alkane entfärben die rote Farbe von Bromwasser schnell.",
+          "fr": "Les alcanes décolorent rapidement la couleur rouge de l'eau de brome.",
+          "ru": "Алканы быстро обесцвечивают красную окраску бромной воды.",
+          "ar": "تزيل الألكانات اللون الأحمر لماء البروم بسرعة.",
+          "zh": "烷烃能迅速使溴水的红色褪去。",
+          "ku": "Alkan rengê sor ê ava bromê bi lez radikin."
         },
         {
-          "tr": "Alkanlar bromlu suyun rengini hemen giderir.",
-          "en": "Alkanes quickly decolorize brominated water.",
-          "de": "Alkane entfärben bromiertes Wasser schnell.",
-          "fr": "Les alcanes décolorent rapidement l'eau bromée.",
-          "ru": "Алканы быстро обесцвечивают бромированную воду.",
-          "ar": "تعمل الألكانات على إزالة اللون من الماء المبروم بسرعة.",
-          "zh": "烷烃可以快速使溴化水脱色。",
-          "ku": "Alkan bi lez ava bromînkirî dereng dikin."
+          "tr": "Alkinler üçlü bağ içerdiğinden bromlu suyun rengini gidermez.",
+          "en": "Because they contain a triple bond, alkynes do not decolorize bromine water.",
+          "de": "Da Alkine eine Dreifachbindung enthalten, entfärben sie Bromwasser nicht.",
+          "fr": "Parce qu'ils contiennent une triple liaison, les alcynes ne décolorent pas l'eau de brome.",
+          "ru": "Поскольку алкины содержат тройную связь, они не обесцвечивают бромную воду.",
+          "ar": "لا تزيل الألكاينات لون ماء البروم لأنها تحتوي على رابطة ثلاثية.",
+          "zh": "炔烃因含有三键，所以不能使溴水褪色。",
+          "ku": "Ji ber ku alkîn girêdana sêcarî dihewînin, rengê ava bromê ranakin."
         }
       ],
       "correctIndex": 2,
@@ -1517,14 +1517,14 @@ export const unit24: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Karboksilik asitlerin kaynama noktası hidrokarbonlardan düşüktür.",
-          "en": "The boiling point of carboxylic acids is lower than hydrocarbons.",
-          "de": "Der Siedepunkt von Carbonsäuren ist niedriger als der von Kohlenwasserstoffen.",
-          "fr": "Le point d'ébullition des acides carboxyliques est inférieur à celui des hydrocarbures.",
-          "ru": "Температура кипения карбоновых кислот ниже, чем у углеводородов.",
-          "ar": "درجة غليان الأحماض الكربوكسيلية أقل من درجة غليان الهيدروكربونات.",
-          "zh": "羧酸的沸点比烃低。",
-          "ku": "Xala kelandinê ya asîdên karboksîlî ji hîdrokarbonan kêmtir e."
+          "tr": "Karboksilik asitlerin kaynama noktası, mol kütlesi yakın olan alkanlarınkinden düşüktür.",
+          "en": "Carboxylic acids have lower boiling points than alkanes of similar molar mass.",
+          "de": "Carbonsäuren haben niedrigere Siedepunkte als Alkane mit ähnlicher molarer Masse.",
+          "fr": "Les acides carboxyliques ont des températures d'ébullition plus basses que les alcanes de masse molaire voisine.",
+          "ru": "Карбоновые кислоты имеют более низкие температуры кипения, чем алканы с близкой молярной массой.",
+          "ar": "درجات غليان الأحماض الكربوكسيلية أقل من درجات غليان الألكانات المقاربة لها في الكتلة المولية.",
+          "zh": "羧酸的沸点低于摩尔质量相近的烷烃。",
+          "ku": "Xala kelandinê ya asîdên karboksîlîk ji ya alkanên bi girseya molî ya nêzîk kêmtir e."
         },
         {
           "tr": "Esterlerin en küçük üyesi 1 karbonludur.",
@@ -1557,14 +1557,14 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Alkolên duyemîn têne oksîd kirin ku ketonan çêbikin; alkolên sêyem li hember oksîdasyonê berxwedêr in."
         },
         {
-          "tr": "İç alkinler Tollens belirteciyle çökelek verir.",
-          "en": "Internal alkynes precipitate with the Tollens reagent.",
-          "de": "Interne Alkine fallen mit dem Tollens-Reagenz aus.",
-          "fr": "Les alcynes internes précipitent avec le réactif de Tollens.",
-          "ru": "Внутренние алкины осаждаются реактивом Толленса.",
-          "ar": "تترسب الألكينات الداخلية مع كاشف تولنس.",
-          "zh": "内部炔烃与 Tollens 试剂一起沉淀。",
-          "ku": "Alkînên hundirîn bi reagenta Tollens dibarin."
+          "tr": "İç alkinler amonyaklı AgNO3 (Tollens) çözeltisiyle çökelek verir.",
+          "en": "Internal alkynes give a precipitate with ammoniacal AgNO3 (Tollens) solution.",
+          "de": "Innenständige Alkine bilden mit ammoniakalischer AgNO3-Lösung (Tollens) einen Niederschlag.",
+          "fr": "Les alcynes internes donnent un précipité avec une solution ammoniacale d'AgNO3 (Tollens).",
+          "ru": "Внутренние алкины дают осадок с аммиачным раствором AgNO3 (реактив Толленса).",
+          "ar": "تعطي الألكاينات الداخلية راسبًا مع محلول AgNO3 النشادري (كاشف تولنز).",
+          "zh": "非末端（内部）炔烃能与氨性 AgNO3 溶液（托伦试剂）生成沉淀。",
+          "ku": "Alkînên navîn bi çareseriya AgNO3 ya amonyakî (Tollens) re nişt didin."
         }
       ],
       "correctIndex": 3,
@@ -1608,7 +1608,7 @@ export const unit24: ChemistryUnitSeedData = {
           "de": "Selbst wenn zwei identische Gruppen an dasselbe Kohlenstoffatom gebunden sind, wird das cis-trans-Isomer beobachtet.",
           "fr": "Même si deux groupes identiques sont liés au même atome de carbone, l’isomère cis-trans est visible.",
           "ru": "Даже если две идентичные группы связаны с одним и тем же атомом углерода, виден цис-транс-изомер.",
-          "ar": "حتى لو تم ربط مجموعتين متطابقتين بنفس ذرة الكربون، فإن الأيزومر المقرون العابر يمكن رؤيته.",
+          "ar": "حتى لو ارتبطت مجموعتان متماثلتان بذرة الكربون نفسها، يظهر تماكب سيس-ترانس.",
           "zh": "即使两个相同的基团键合到相同的碳原子上，也会出现顺反异构体。",
           "ku": "Ger du komên wekhev bi heman atoma karbonê re werin girêdan jî, îzomera cis-trans tê dîtin."
         },
@@ -1623,14 +1623,14 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Di reaksiyona pêvekirinê de, hîdrojen her gav bi karbonê re bi hîdrojenê kêmtir ve girêdayî ye."
         },
         {
-          "tr": "Benzen üç tane normal alken gibi kolayca bromlu suyu giderir.",
-          "en": "Benzene readily removes brominated water, as do the three normal alkenes.",
-          "de": "Benzol entfernt leicht bromiertes Wasser, ebenso wie die drei normalen Alkene.",
-          "fr": "Le benzène élimine facilement l'eau bromée, tout comme les trois alcènes normaux.",
-          "ru": "Бензол легко удаляет бромированную воду, как и три нормальных алкена.",
-          "ar": "يزيل البنزين الماء المبروم بسهولة، كما تفعل الألكينات الطبيعية الثلاثة.",
-          "zh": "与三种普通烯烃一样，苯很容易去除溴化水。",
-          "ku": "Benzene bi hêsanî ava bromînkirî radike, wekî sê alkenên normal."
+          "tr": "Benzen, üç ikili bağ içeren sıradan bir alken gibi bromlu suyun rengini kolayca giderir.",
+          "en": "Benzene decolorizes bromine water as easily as an ordinary alkene with three double bonds.",
+          "de": "Benzol entfärbt Bromwasser so leicht wie ein gewöhnliches Alken mit drei Doppelbindungen.",
+          "fr": "Le benzène décolore l'eau de brome aussi facilement qu'un alcène ordinaire à trois doubles liaisons.",
+          "ru": "Бензол обесцвечивает бромную воду так же легко, как обычный алкен с тремя двойными связями.",
+          "ar": "يزيل البنزين لون ماء البروم بسهولة مثل ألكين عادي يحتوي على ثلاث روابط ثنائية.",
+          "zh": "苯像含三个双键的普通烯烃一样，很容易使溴水褪色。",
+          "ku": "Benzen wek alkeneke asayî ya bi sê girêdanên ducarî, rengê ava bromê bi hêsanî radike."
         },
         {
           "tr": "Aldehitler (R-CHO) Tollens reaktifi ile gümüş aynası, Fehling çözeltisi ile kırmızı Cu2O çökeleği oluşturur; ketonlar bu tepkimeyi vermez.",
@@ -1675,7 +1675,7 @@ export const unit24: ChemistryUnitSeedData = {
           "fr": "Les acides carboxyliques (R-COOH) réagissent avec les alcools sous catalyse acide pour former des esters parfumés (R-COO-R') (estérification).",
           "ru": "Карбоновые кислоты (R-COOH) реагируют со спиртами в условиях кислотного катализа с образованием ароматных эфиров (R-COO-R') (этерификация).",
           "ar": "تتفاعل الأحماض الكربوكسيلية (R-COOH) مع الكحولات تحت التحفيز الحمضي لتكوين استرات عطرة (R-COO-R') (الأسترة).",
-          "zh": "羧酸（R-COOH）在酸催化下与醇反应生成芳香酯（R-COO-R'）（酯化）。",
+          "zh": "羧酸（R-COOH）在酸催化下与醇反应，生成有香味的酯（R-COO-R'）（酯化反应）。",
           "ku": "Asîdên karboksîlîk (R-COOH) di bin katalîzasyona asîdê de bi alkolan re reaksiyonê dikin û esterên bîhnxweş (R-COO-R') çê dikin (esterîkirin)."
         },
         {
@@ -1690,23 +1690,23 @@ export const unit24: ChemistryUnitSeedData = {
         },
         {
           "tr": "Alkanlar bromlu suyun kırmızı rengini hızla giderir.",
-          "en": "Alkanes quickly remove the red color of brominated water.",
-          "de": "Alkane entfernen schnell die rote Farbe von bromiertem Wasser.",
-          "fr": "Les alcanes éliminent rapidement la couleur rouge de l'eau bromée.",
-          "ru": "Алканы быстро удаляют красный цвет бромированной воды.",
-          "ar": "تقوم الألكانات بإزالة اللون الأحمر للمياه المبرومة بسرعة.",
-          "zh": "烷烃可以快速去除溴化水的红色。",
-          "ku": "Alkan bi lez rengê sor yê ava bromînê jê dikin."
+          "en": "Alkanes rapidly decolorize the red colour of bromine water.",
+          "de": "Alkane entfärben die rote Farbe von Bromwasser schnell.",
+          "fr": "Les alcanes décolorent rapidement la couleur rouge de l'eau de brome.",
+          "ru": "Алканы быстро обесцвечивают красную окраску бромной воды.",
+          "ar": "تزيل الألكانات اللون الأحمر لماء البروم بسرعة.",
+          "zh": "烷烃能迅速使溴水的红色褪去。",
+          "ku": "Alkan rengê sor ê ava bromê bi lez radikin."
         },
         {
-          "tr": "Alkanlar bromlu suyun rengini hemen giderir.",
-          "en": "Alkanes quickly decolorize brominated water.",
-          "de": "Alkane entfärben bromiertes Wasser schnell.",
-          "fr": "Les alcanes décolorent rapidement l'eau bromée.",
-          "ru": "Алканы быстро обесцвечивают бромированную воду.",
-          "ar": "تعمل الألكانات على إزالة اللون من الماء المبروم بسرعة.",
-          "zh": "烷烃可以快速使溴化水脱色。",
-          "ku": "Alkan bi lez ava bromînkirî dereng dikin."
+          "tr": "Alkinler üçlü bağ içerdiğinden bromlu suyun rengini gidermez.",
+          "en": "Because they contain a triple bond, alkynes do not decolorize bromine water.",
+          "de": "Da Alkine eine Dreifachbindung enthalten, entfärben sie Bromwasser nicht.",
+          "fr": "Parce qu'ils contiennent une triple liaison, les alcynes ne décolorent pas l'eau de brome.",
+          "ru": "Поскольку алкины содержат тройную связь, они не обесцвечивают бромную воду.",
+          "ar": "لا تزيل الألكاينات لون ماء البروم لأنها تحتوي على رابطة ثلاثية.",
+          "zh": "炔烃因含有三键，所以不能使溴水褪色。",
+          "ku": "Ji ber ku alkîn girêdana sêcarî dihewînin, rengê ava bromê ranakin."
         },
         {
           "tr": "Eterlerin kaynama noktası alkollerden daha yüksektir.",
@@ -1716,7 +1716,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Эфиры имеют более высокую температуру кипения, чем спирты.",
           "ar": "الإيثرات لها درجة غليان أعلى من الكحولات.",
           "zh": "醚的沸点高于醇。",
-          "ku": "Eter ji alkolan xwedî nuqteya kelandinê ye."
+          "ku": "Xala kelandinê ya eteran ji ya alkolan bilindtir e."
         }
       ],
       "correctIndex": 0,
@@ -1727,7 +1727,7 @@ export const unit24: ChemistryUnitSeedData = {
         "fr": "L'affirmation exacte est: \"Les acides carboxyliques (R-COOH) réagissent avec les alcools sous catalyse acide pour former des esters parfumés (R-COO-R') (estérification).\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Карбоновые кислоты (R-COOH) реагируют со спиртами в условиях кислотного катализа с образованием ароматных эфиров (R-COO-R') (этерификация).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"تتفاعل الأحماض الكربوكسيلية (R-COOH) مع الكحولات تحت التحفيز الحمضي لتكوين استرات عطرة (R-COO-R') (الأسترة).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“羧酸（R-COOH）在酸催化下与醇反应生成芳香酯（R-COO-R'）（酯化）。”。属于化学学科必考的核心客观真理。",
+        "zh": "正确表述为：“羧酸（R-COOH）在酸催化下与醇反应，生成有香味的酯（R-COO-R'）（酯化反应）。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Asîdên karboksîlîk (R-COOH) di bin katalîzasyona asîdê de bi alkolan re reaksiyonê dikin û esterên bîhnxweş (R-COO-R') çê dikin (esterîkirin).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
@@ -1775,14 +1775,14 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Alken di çîna hîdrokarbonên têrbûyî de ne."
         },
         {
-          "tr": "İç alkinler Tollens belirteciyle çökelek verir.",
-          "en": "Internal alkynes precipitate with the Tollens reagent.",
-          "de": "Interne Alkine fallen mit dem Tollens-Reagenz aus.",
-          "fr": "Les alcynes internes précipitent avec le réactif de Tollens.",
-          "ru": "Внутренние алкины осаждаются реактивом Толленса.",
-          "ar": "تترسب الألكينات الداخلية مع كاشف تولنس.",
-          "zh": "内部炔烃与 Tollens 试剂一起沉淀。",
-          "ku": "Alkînên hundirîn bi reagenta Tollens dibarin."
+          "tr": "İç alkinler amonyaklı AgNO3 (Tollens) çözeltisiyle çökelek verir.",
+          "en": "Internal alkynes give a precipitate with ammoniacal AgNO3 (Tollens) solution.",
+          "de": "Innenständige Alkine bilden mit ammoniakalischer AgNO3-Lösung (Tollens) einen Niederschlag.",
+          "fr": "Les alcynes internes donnent un précipité avec une solution ammoniacale d'AgNO3 (Tollens).",
+          "ru": "Внутренние алкины дают осадок с аммиачным раствором AgNO3 (реактив Толленса).",
+          "ar": "تعطي الألكاينات الداخلية راسبًا مع محلول AgNO3 النشادري (كاشف تولنز).",
+          "zh": "非末端（内部）炔烃能与氨性 AgNO3 溶液（托伦试剂）生成沉淀。",
+          "ku": "Alkînên navîn bi çareseriya AgNO3 ya amonyakî (Tollens) re nişt didin."
         },
         {
           "tr": "Tersiyer alkoller kolayca yükseltgenerek keton verir.",
@@ -1826,7 +1826,7 @@ export const unit24: ChemistryUnitSeedData = {
           "de": "Selbst wenn zwei identische Gruppen an dasselbe Kohlenstoffatom gebunden sind, wird das cis-trans-Isomer beobachtet.",
           "fr": "Même si deux groupes identiques sont liés au même atome de carbone, l’isomère cis-trans est visible.",
           "ru": "Даже если две идентичные группы связаны с одним и тем же атомом углерода, виден цис-транс-изомер.",
-          "ar": "حتى لو تم ربط مجموعتين متطابقتين بنفس ذرة الكربون، فإن الأيزومر المقرون العابر يمكن رؤيته.",
+          "ar": "حتى لو ارتبطت مجموعتان متماثلتان بذرة الكربون نفسها، يظهر تماكب سيس-ترانس.",
           "zh": "即使两个相同的基团键合到相同的碳原子上，也会出现顺反异构体。",
           "ku": "Ger du komên wekhev bi heman atoma karbonê re werin girêdan jî, îzomera cis-trans tê dîtin."
         },
@@ -1851,14 +1851,14 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Monoalkol û etherên bi heman hejmara karbonê îzomerên koma fonksiyonel ên hev in (mînak Etanol C2H5OH û Dimetîl ether CH3-O-CH3)."
         },
         {
-          "tr": "Benzen üç tane normal alken gibi kolayca bromlu suyu giderir.",
-          "en": "Benzene readily removes brominated water, as do the three normal alkenes.",
-          "de": "Benzol entfernt leicht bromiertes Wasser, ebenso wie die drei normalen Alkene.",
-          "fr": "Le benzène élimine facilement l'eau bromée, tout comme les trois alcènes normaux.",
-          "ru": "Бензол легко удаляет бромированную воду, как и три нормальных алкена.",
-          "ar": "يزيل البنزين الماء المبروم بسهولة، كما تفعل الألكينات الطبيعية الثلاثة.",
-          "zh": "与三种普通烯烃一样，苯很容易去除溴化水。",
-          "ku": "Benzene bi hêsanî ava bromînkirî radike, wekî sê alkenên normal."
+          "tr": "Benzen, üç ikili bağ içeren sıradan bir alken gibi bromlu suyun rengini kolayca giderir.",
+          "en": "Benzene decolorizes bromine water as easily as an ordinary alkene with three double bonds.",
+          "de": "Benzol entfärbt Bromwasser so leicht wie ein gewöhnliches Alken mit drei Doppelbindungen.",
+          "fr": "Le benzène décolore l'eau de brome aussi facilement qu'un alcène ordinaire à trois doubles liaisons.",
+          "ru": "Бензол обесцвечивает бромную воду так же легко, как обычный алкен с тремя двойными связями.",
+          "ar": "يزيل البنزين لون ماء البروم بسهولة مثل ألكين عادي يحتوي على ثلاث روابط ثنائية.",
+          "zh": "苯像含三个双键的普通烯烃一样，很容易使溴水褪色。",
+          "ku": "Benzen wek alkeneke asayî ya bi sê girêdanên ducarî, rengê ava bromê bi hêsanî radike."
         },
         {
           "tr": "Ketonlar daha ileri yükseltgenerek esterlere dönüşür.",
@@ -1898,23 +1898,23 @@ export const unit24: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Alkanlar bromlu suyun kırmızı rengini hızla giderir.",
-          "en": "Alkanes quickly remove the red color of brominated water.",
-          "de": "Alkane entfernen schnell die rote Farbe von bromiertem Wasser.",
-          "fr": "Les alcanes éliminent rapidement la couleur rouge de l'eau bromée.",
-          "ru": "Алканы быстро удаляют красный цвет бромированной воды.",
-          "ar": "تقوم الألكانات بإزالة اللون الأحمر للمياه المبرومة بسرعة.",
-          "zh": "烷烃可以快速去除溴化水的红色。",
-          "ku": "Alkan bi lez rengê sor yê ava bromînê jê dikin."
+          "en": "Alkanes rapidly decolorize the red colour of bromine water.",
+          "de": "Alkane entfärben die rote Farbe von Bromwasser schnell.",
+          "fr": "Les alcanes décolorent rapidement la couleur rouge de l'eau de brome.",
+          "ru": "Алканы быстро обесцвечивают красную окраску бромной воды.",
+          "ar": "تزيل الألكانات اللون الأحمر لماء البروم بسرعة.",
+          "zh": "烷烃能迅速使溴水的红色褪去。",
+          "ku": "Alkan rengê sor ê ava bromê bi lez radikin."
         },
         {
-          "tr": "Alkanlar bromlu suyun rengini hemen giderir.",
-          "en": "Alkanes quickly decolorize brominated water.",
-          "de": "Alkane entfärben bromiertes Wasser schnell.",
-          "fr": "Les alcanes décolorent rapidement l'eau bromée.",
-          "ru": "Алканы быстро обесцвечивают бромированную воду.",
-          "ar": "تعمل الألكانات على إزالة اللون من الماء المبروم بسرعة.",
-          "zh": "烷烃可以快速使溴化水脱色。",
-          "ku": "Alkan bi lez ava bromînkirî dereng dikin."
+          "tr": "Alkinler üçlü bağ içerdiğinden bromlu suyun rengini gidermez.",
+          "en": "Because they contain a triple bond, alkynes do not decolorize bromine water.",
+          "de": "Da Alkine eine Dreifachbindung enthalten, entfärben sie Bromwasser nicht.",
+          "fr": "Parce qu'ils contiennent une triple liaison, les alcynes ne décolorent pas l'eau de brome.",
+          "ru": "Поскольку алкины содержат тройную связь, они не обесцвечивают бромную воду.",
+          "ar": "لا تزيل الألكاينات لون ماء البروم لأنها تحتوي على رابطة ثلاثية.",
+          "zh": "炔烃因含有三键，所以不能使溴水褪色。",
+          "ku": "Ji ber ku alkîn girêdana sêcarî dihewînin, rengê ava bromê ranakin."
         },
         {
           "tr": "Eterlerin kaynama noktası alkollerden daha yüksektir.",
@@ -1924,7 +1924,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Эфиры имеют более высокую температуру кипения, чем спирты.",
           "ar": "الإيثرات لها درجة غليان أعلى من الكحولات.",
           "zh": "醚的沸点高于醇。",
-          "ku": "Eter ji alkolan xwedî nuqteya kelandinê ye."
+          "ku": "Xala kelandinê ya eteran ji ya alkolan bilindtir e."
         },
         {
           "tr": "Aynı karbon sayılı aldehitler ile ketonlar birbirinin fonksiyonel grup izomeridir (örn. Propanal ve Propanon).",
@@ -1983,14 +1983,14 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Alken di çîna hîdrokarbonên têrbûyî de ne."
         },
         {
-          "tr": "İç alkinler Tollens belirteciyle çökelek verir.",
-          "en": "Internal alkynes precipitate with the Tollens reagent.",
-          "de": "Interne Alkine fallen mit dem Tollens-Reagenz aus.",
-          "fr": "Les alcynes internes précipitent avec le réactif de Tollens.",
-          "ru": "Внутренние алкины осаждаются реактивом Толленса.",
-          "ar": "تترسب الألكينات الداخلية مع كاشف تولنس.",
-          "zh": "内部炔烃与 Tollens 试剂一起沉淀。",
-          "ku": "Alkînên hundirîn bi reagenta Tollens dibarin."
+          "tr": "İç alkinler amonyaklı AgNO3 (Tollens) çözeltisiyle çökelek verir.",
+          "en": "Internal alkynes give a precipitate with ammoniacal AgNO3 (Tollens) solution.",
+          "de": "Innenständige Alkine bilden mit ammoniakalischer AgNO3-Lösung (Tollens) einen Niederschlag.",
+          "fr": "Les alcynes internes donnent un précipité avec une solution ammoniacale d'AgNO3 (Tollens).",
+          "ru": "Внутренние алкины дают осадок с аммиачным раствором AgNO3 (реактив Толленса).",
+          "ar": "تعطي الألكاينات الداخلية راسبًا مع محلول AgNO3 النشادري (كاشف تولنز).",
+          "zh": "非末端（内部）炔烃能与氨性 AgNO3 溶液（托伦试剂）生成沉淀。",
+          "ku": "Alkînên navîn bi çareseriya AgNO3 ya amonyakî (Tollens) re nişt didin."
         },
         {
           "tr": "Tersiyer alkoller kolayca yükseltgenerek keton verir.",
@@ -2020,7 +2020,7 @@ export const unit24: ChemistryUnitSeedData = {
           "ru": "Монокарбоновые кислоты и сложные эфиры с одинаковым числом атомов углерода являются изомерами функциональных групп друг друга (например, уксусная кислота и метилформиат).",
           "ar": "الأحماض الأحادية الكربوكسيلية والإسترات التي لها نفس رقم الكربون هي أيزومرات مجموعة وظيفية لبعضها البعض (مثل حمض الأسيتيك وفورمات الميثيل).",
           "zh": "具有相同碳数的一元羧酸和酯是彼此的官能团异构体（例如乙酸和甲酸甲酯）。",
-          "ku": "Asîdên monokarboksîlî û esterên bi heman hejmara karbonê îzomerên koma fonksîyonel ên hev in (mînak asîda acetîk û format Methyl)."
+          "ku": "Asîdên monokarboksîlîk û esterên bi heman hejmara karbonê îzomerên koma fonksiyonel ên hev in (mînak asîda asetîk û metîl format)."
         }
       ],
       "correctIndex": 4,
@@ -2032,7 +2032,7 @@ export const unit24: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Монокарбоновые кислоты и сложные эфиры с одинаковым числом атомов углерода являются изомерами функциональных групп друг друга (например, уксусная кислота и метилформиат).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"الأحماض الأحادية الكربوكسيلية والإسترات التي لها نفس رقم الكربون هي أيزومرات مجموعة وظيفية لبعضها البعض (مثل حمض الأسيتيك وفورمات الميثيل).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“具有相同碳数的一元羧酸和酯是彼此的官能团异构体（例如乙酸和甲酸甲酯）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Asîdên monokarboksîlî û esterên bi heman hejmara karbonê îzomerên koma fonksîyonel ên hev in (mînak asîda acetîk û format Methyl).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Asîdên monokarboksîlîk û esterên bi heman hejmara karbonê îzomerên koma fonksiyonel ên hev in (mînak asîda asetîk û metîl format).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2054,7 +2054,7 @@ export const unit24: ChemistryUnitSeedData = {
           "de": "Befinden sich in Alkenen die an die Doppelbindungskohlenstoffe gebundenen Gruppen auf derselben Seite, werden sie als cis-geometrische Isomere bezeichnet, wenn sie sich auf entgegengesetzten Seiten befinden, werden sie als trans-geometrische Isomere bezeichnet.",
           "fr": "Dans les alcènes, si les groupes attachés aux carbones de la double liaison sont du même côté, ils sont appelés cis- et s'ils sont sur des côtés opposés, ils sont appelés isomères géométriques trans.",
           "ru": "В алкенах, если группы, присоединенные к двойной связи углерода, находятся на одной стороне, их называют цис-, а если они расположены на противоположных сторонах, их называют транс-геометрическими изомерами.",
-          "ar": "في الألكينات، إذا كانت المجموعات المرتبطة بذرات الكربون ذات الرابطة المزدوجة على نفس الجانب، فإنها تسمى cis- وإذا كانت على جوانب متقابلة، فإنها تسمى أيزومرات هندسية متحولة.",
+          "ar": "في الألكينات إذا كانت المجموعات المرتبطة بذرتي كربون الرابطة الثنائية في الجهة نفسها سُمّي المتماكب الهندسي سيس، وإذا كانت في جهتين متقابلتين سُمّي ترانس.",
           "zh": "在烯烃中，如果连接到双键碳的基团位于同一侧，则称为顺式几何异构体，如果位于相反侧，则称为反式几何异构体。",
           "ku": "Di alkenan de ger komên ku bi karbonên girêka ducarî ve girêdayî bin li ser hev bin, ji wan re cis- û heke li aliyên dijber bin, jê re îzomerên geometrîk trans tê gotin."
         },
@@ -2069,14 +2069,14 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Di reaksiyona pêvekirinê de, hîdrojen her gav bi karbonê re bi hîdrojenê kêmtir ve girêdayî ye."
         },
         {
-          "tr": "Benzen üç tane normal alken gibi kolayca bromlu suyu giderir.",
-          "en": "Benzene readily removes brominated water, as do the three normal alkenes.",
-          "de": "Benzol entfernt leicht bromiertes Wasser, ebenso wie die drei normalen Alkene.",
-          "fr": "Le benzène élimine facilement l'eau bromée, tout comme les trois alcènes normaux.",
-          "ru": "Бензол легко удаляет бромированную воду, как и три нормальных алкена.",
-          "ar": "يزيل البنزين الماء المبروم بسهولة، كما تفعل الألكينات الطبيعية الثلاثة.",
-          "zh": "与三种普通烯烃一样，苯很容易去除溴化水。",
-          "ku": "Benzene bi hêsanî ava bromînkirî radike, wekî sê alkenên normal."
+          "tr": "Benzen, üç ikili bağ içeren sıradan bir alken gibi bromlu suyun rengini kolayca giderir.",
+          "en": "Benzene decolorizes bromine water as easily as an ordinary alkene with three double bonds.",
+          "de": "Benzol entfärbt Bromwasser so leicht wie ein gewöhnliches Alken mit drei Doppelbindungen.",
+          "fr": "Le benzène décolore l'eau de brome aussi facilement qu'un alcène ordinaire à trois doubles liaisons.",
+          "ru": "Бензол обесцвечивает бромную воду так же легко, как обычный алкен с тремя двойными связями.",
+          "ar": "يزيل البنزين لون ماء البروم بسهولة مثل ألكين عادي يحتوي على ثلاث روابط ثنائية.",
+          "zh": "苯像含三个双键的普通烯烃一样，很容易使溴水褪色。",
+          "ku": "Benzen wek alkeneke asayî ya bi sê girêdanên ducarî, rengê ava bromê bi hêsanî radike."
         },
         {
           "tr": "Ketonlar daha ileri yükseltgenerek esterlere dönüşür.",
@@ -2089,14 +2089,14 @@ export const unit24: ChemistryUnitSeedData = {
           "ku": "Ketone bêtir ji bo esteran têne oksîd kirin."
         },
         {
-          "tr": "Karboksilik asitlerin kaynama noktası hidrokarbonlardan düşüktür.",
-          "en": "The boiling point of carboxylic acids is lower than hydrocarbons.",
-          "de": "Der Siedepunkt von Carbonsäuren ist niedriger als der von Kohlenwasserstoffen.",
-          "fr": "Le point d'ébullition des acides carboxyliques est inférieur à celui des hydrocarbures.",
-          "ru": "Температура кипения карбоновых кислот ниже, чем у углеводородов.",
-          "ar": "درجة غليان الأحماض الكربوكسيلية أقل من درجة غليان الهيدروكربونات.",
-          "zh": "羧酸的沸点比烃低。",
-          "ku": "Xala kelandinê ya asîdên karboksîlî ji hîdrokarbonan kêmtir e."
+          "tr": "Karboksilik asitlerin kaynama noktası, mol kütlesi yakın olan alkanlarınkinden düşüktür.",
+          "en": "Carboxylic acids have lower boiling points than alkanes of similar molar mass.",
+          "de": "Carbonsäuren haben niedrigere Siedepunkte als Alkane mit ähnlicher molarer Masse.",
+          "fr": "Les acides carboxyliques ont des températures d'ébullition plus basses que les alcanes de masse molaire voisine.",
+          "ru": "Карбоновые кислоты имеют более низкие температуры кипения, чем алканы с близкой молярной массой.",
+          "ar": "درجات غليان الأحماض الكربوكسيلية أقل من درجات غليان الألكانات المقاربة لها في الكتلة المولية.",
+          "zh": "羧酸的沸点低于摩尔质量相近的烷烃。",
+          "ku": "Xala kelandinê ya asîdên karboksîlîk ji ya alkanên bi girseya molî ya nêzîk kêmtir e."
         }
       ],
       "correctIndex": 0,
@@ -2106,7 +2106,7 @@ export const unit24: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Befinden sich in Alkenen die an die Doppelbindungskohlenstoffe gebundenen Gruppen auf derselben Seite, werden sie als cis-geometrische Isomere bezeichnet, wenn sie sich auf entgegengesetzten Seiten befinden, werden sie als trans-geometrische Isomere bezeichnet.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Dans les alcènes, si les groupes attachés aux carbones de la double liaison sont du même côté, ils sont appelés cis- et s'ils sont sur des côtés opposés, ils sont appelés isomères géométriques trans.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «В алкенах, если группы, присоединенные к двойной связи углерода, находятся на одной стороне, их называют цис-, а если они расположены на противоположных сторонах, их называют транс-геометрическими изомерами.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في الألكينات، إذا كانت المجموعات المرتبطة بذرات الكربون ذات الرابطة المزدوجة على نفس الجانب، فإنها تسمى cis- وإذا كانت على جوانب متقابلة، فإنها تسمى أيزومرات هندسية متحولة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"في الألكينات إذا كانت المجموعات المرتبطة بذرتي كربون الرابطة الثنائية في الجهة نفسها سُمّي المتماكب الهندسي سيس، وإذا كانت في جهتين متقابلتين سُمّي ترانس.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“在烯烃中，如果连接到双键碳的基团位于同一侧，则称为顺式几何异构体，如果位于相反侧，则称为反式几何异构体。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"Di alkenan de ger komên ku bi karbonên girêka ducarî ve girêdayî bin li ser hev bin, ji wan re cis- û heke li aliyên dijber bin, jê re îzomerên geometrîk trans tê gotin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }

@@ -31,13 +31,13 @@ export const unit02: ChemistryUnitSeedData = {
       "id": "u02-f01",
       "fact": {
         "tr": "Rutherford altın levha deneyiyle çekirdekli atom modelini ve atomun büyük kısmının boşluk olduğunu keşfetmiştir.",
-        "en": "With his gold plate experiment, Rutherford discovered the atomic model with a nucleus and that most of the atom was empty space.",
-        "de": "Mit seinem Goldplattenexperiment entdeckte Rutherford das Atommodell mit einem Kern und dass der größte Teil des Atoms aus leerem Raum besteht.",
-        "fr": "Avec son expérience sur la plaque d'or, Rutherford a découvert le modèle atomique avec un noyau et que la majeure partie de l'atome était un espace vide.",
-        "ru": "В ходе своего эксперимента с золотой пластинкой Резерфорд открыл модель атома с ядром и обнаружил, что большая часть атома представляет собой пустое пространство.",
-        "ar": "من خلال تجربته على صفيحة الذهب، اكتشف رذرفورد النموذج الذري الذي يحتوي على نواة وأن معظم الذرة عبارة عن مساحة فارغة.",
-        "zh": "卢瑟福通过金板实验发现了带有原子核的原子模型，并且原子的大部分是空的。",
-        "ku": "Rutherford bi ceribandina xwe ya plakaya zêr, modela atomê ya bi navokê vedît û ku piraniya atomê cihê vala bû."
+        "en": "With his gold foil experiment, Rutherford discovered the atomic model with a nucleus and that most of the atom was empty space.",
+        "de": "Mit seinem Goldfolienexperiment entdeckte Rutherford das Atommodell mit einem Kern und dass der größte Teil des Atoms aus leerem Raum besteht.",
+        "fr": "Avec son expérience de la feuille d'or, Rutherford a découvert le modèle atomique avec un noyau et que la majeure partie de l'atome était un espace vide.",
+        "ru": "В ходе своего эксперимента с золотой фольгой Резерфорд открыл модель атома с ядром и обнаружил, что большая часть атома представляет собой пустое пространство.",
+        "ar": "من خلال تجربته على رقاقة الذهب، اكتشف رذرفورد النموذج الذري الذي يحتوي على نواة وأن معظم الذرة عبارة عن مساحة فارغة.",
+        "zh": "卢瑟福通过金箔实验发现了带有原子核的原子模型，并且原子的大部分是空的。",
+        "ku": "Rutherford bi ceribandina xwe ya pelê zêr, modela atomê ya bi navokê vedît û ku piraniya atomê cihê vala bû."
       },
       "trap": {
         "tr": "Rutherford elektronların sabit dairesel yörüngelerde döndüğünü matematiksel kanıtlamıştır.",
@@ -51,13 +51,13 @@ export const unit02: ChemistryUnitSeedData = {
       },
       "osymTip": {
         "tr": "Yörünge modeli Bohr'a aittir.",
-        "en": "The orbital model belongs to Bohr.",
-        "de": "Das Orbitalmodell gehört zu Bohr.",
-        "fr": "Le modèle orbital appartient à Bohr.",
-        "ru": "Орбитальная модель принадлежит Бору.",
-        "ar": "النموذج المداري ينتمي إلى بور.",
-        "zh": "轨道模型属于玻尔。",
-        "ku": "Modela orbital ya Bohr e."
+        "en": "The model with fixed circular orbits belongs to Bohr.",
+        "de": "Das Modell mit festen Kreisbahnen stammt von Bohr.",
+        "fr": "Le modèle à orbites circulaires fixes est celui de Bohr.",
+        "ru": "Модель с фиксированными круговыми орбитами принадлежит Бору.",
+        "ar": "نموذج المدارات الدائرية الثابتة يعود إلى بور.",
+        "zh": "固定圆形轨道模型属于玻尔。",
+        "ku": "Modela rêgehên dorhêl ên sabît ya Bohr e."
       }
     },
     {
@@ -87,13 +87,13 @@ export const unit02: ChemistryUnitSeedData = {
       "id": "u02-f03",
       "fact": {
         "tr": "Bohr atom modeline göre elektronlar çekirdek çevresinde belirli enerji düzeylerinde (yörüngelerde) bulunur.",
-        "en": "According to the Bohr atomic model, electrons are located in certain energy levels (orbitals) around the nucleus.",
-        "de": "Nach dem Bohrschen Atommodell befinden sich Elektronen in bestimmten Energieniveaus (Orbitalen) um den Kern.",
-        "fr": "Selon le modèle atomique de Bohr, les électrons sont situés à certains niveaux d'énergie (orbitales) autour du noyau.",
-        "ru": "Согласно атомной модели Бора, электроны располагаются на определенных энергетических уровнях (орбиталях) вокруг ядра.",
+        "en": "According to the Bohr atomic model, electrons are located in certain energy levels (orbits) around the nucleus.",
+        "de": "Nach dem Bohrschen Atommodell befinden sich Elektronen in bestimmten Energieniveaus (Bahnen) um den Kern.",
+        "fr": "Selon le modèle atomique de Bohr, les électrons sont situés à certains niveaux d'énergie (orbites) autour du noyau.",
+        "ru": "Согласно атомной модели Бора, электроны располагаются на определенных энергетических уровнях (орбитах) вокруг ядра.",
         "ar": "وفقا لنموذج بور الذري، توجد الإلكترونات في مستويات طاقة معينة (المدارات) حول النواة.",
         "zh": "根据玻尔原子模型，电子位于原子核周围的某些能级（轨道）中。",
-        "ku": "Li gorî modela atomê ya Bohr, elektron li derdora navokê di hin astên enerjiyê (orbital) de cih digirin."
+        "ku": "Li gorî modela atomê ya Bohr, elektron li derdora navokê di hin astên enerjiyê (rêgeh) de cih digirin."
       },
       "trap": {
         "tr": "Bohr modeli çok elektronlu atomların spektrumunu tam olarak açıklamıştır.",
@@ -139,30 +139,30 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "При движении слева направо по таблице Менделеева радиус атома обычно уменьшается, а электроотрицательность увеличивается.",
         "ar": "أثناء انتقالك من اليسار إلى اليمين في الجدول الدوري، يتناقص نصف القطر الذري عمومًا وتزداد السالبية الكهربية.",
         "zh": "当您在元素周期表中从左向右移动时，原子半径通常会减小，电负性会增加。",
-        "ku": "Her ku hûn di tabloya perîyodîk de ji çepê ber bi rastê ve diçin, tîrêjê atomê bi gelemperî kêm dibe û elektronegatîv zêde dibe."
+        "ku": "Her ku hûn di tabloya periyodîk de ji çepê ber bi rastê ve diçin, bi gelemperî nîvçapa atomê kêm dibe û elektronegatîfî zêde dibe."
       },
       "trap": {
         "tr": "Aynı periyotta soldan sağa gidildikçe iyonlaşma enerjisi daima düzenli artar.",
         "en": "Ionization energy always increases steadily as you move from left to right in the same period.",
-        "de": "Die Ionisierungsenergie nimmt immer stetig zu, wenn man sich im gleichen Zeitraum von links nach rechts bewegt.",
+        "de": "Die Ionisierungsenergie nimmt immer stetig zu, wenn man sich in derselben Periode von links nach rechts bewegt.",
         "fr": "L'énergie d'ionisation augmente toujours régulièrement à mesure que vous vous déplacez de gauche à droite au cours de la même période.",
-        "ru": "Энергия ионизации всегда неуклонно возрастает по мере движения слева направо за один и тот же период.",
+        "ru": "Энергия ионизации всегда неуклонно возрастает по мере движения слева направо в пределах одного периода.",
         "ar": "تزداد طاقة التأين دائمًا بشكل مطرد أثناء انتقالك من اليسار إلى اليمين في نفس الفترة.",
-        "zh": "当您在同一时间段内从左向右移动时，电离能始终稳定增加。",
-        "ku": "Dema ku hûn di heman heyamê de ji çepê ber bi rastê ve diçin, enerjiya ionîzasyonê her gav bi domdarî zêde dibe."
+        "zh": "当您在同一周期中从左向右移动时，电离能始终稳定增加。",
+        "ku": "Dema ku hûn di heman periyodê de ji çepê ber bi rastê ve diçin, enerjiya ionîzasyonê her gav bi domdarî zêde dibe."
       }
     },
     {
       "id": "u02-f06",
       "fact": {
-        "tr": "Ardışık iyonlaşma enerjisinde 3.5-4 kattan büyük sıçrama değerlik elektron sayısını verir.",
+        "tr": "Ardışık iyonlaşma enerjisinde 3,5-4 kattan büyük sıçrama değerlik elektron sayısını verir.",
         "en": "A jump of more than 3.5-4 times in successive ionization energy gives the number of valence electrons.",
         "de": "Ein Sprung der aufeinanderfolgenden Ionisierungsenergie um mehr als das 3,5- bis 4-fache ergibt die Anzahl der Valenzelektronen.",
         "fr": "Un saut de plus de 3,5 à 4 fois dans l'énergie d'ionisation successive donne le nombre d'électrons de valence.",
         "ru": "Скачок последовательной энергии ионизации более чем в 3,5-4 раза дает число валентных электронов.",
         "ar": "قفزة أكثر من 3.5-4 مرات في طاقة التأين المتعاقبة تعطي عدد إلكترونات التكافؤ.",
         "zh": "连续电离能跳跃超过 3.5-4 倍即可得出价电子数。",
-        "ku": "Di enerjiya ionîzasyonê ya li pey hev de ji 3,5-4 qatan zêdetir ketina jimareya elektronên valence dide."
+        "ku": "Di enerjiya ionîzasyonê ya li pey hev de ji 3,5-4 qatan zêdetir bazdana jimareya elektronên valence dide."
       },
       "trap": {
         "tr": "İkinci iyonlaşma enerjisi daima birinci iyonlaşma enerjisinden daha küçüktür.",
@@ -201,7 +201,7 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-f08",
       "fact": {
-        "tr": "Flor periyodik sistemin elektronegatifliği en yüksek elementidir (4.0 kabul edilir).",
+        "tr": "Flor periyodik sistemin elektronegatifliği en yüksek elementidir (4,0 kabul edilir).",
         "en": "Fluorine is the element with the highest electronegativity in the periodic system (accepted as 4.0).",
         "de": "Fluor ist das Element mit der höchsten Elektronegativität im Periodensystem (akzeptiert als 4,0).",
         "fr": "Le fluor est l'élément ayant l'électronégativité la plus élevée dans le système périodique (accepté comme 4,0).",
@@ -225,13 +225,13 @@ export const unit02: ChemistryUnitSeedData = {
       "id": "u02-f09",
       "fact": {
         "tr": "Soy gazlar kararlı oktet/dublet yapısına sahip olduklarından elektron ilgisi ihmal edilecek kadar düşüktür.",
-        "en": "Since noble gases have a stable octet/duplex structure, their electron affinity is negligibly low.",
-        "de": "Da Edelgase eine stabile Oktett-/Duplexstruktur haben, ist ihre Elektronenaffinität vernachlässigbar gering.",
-        "fr": "Étant donné que les gaz rares ont une structure octet/duplex stable, leur affinité électronique est négligeable.",
-        "ru": "Поскольку благородные газы имеют стабильную октетно-дуплексную структуру, их сродство к электрону пренебрежимо мало.",
+        "en": "Since noble gases have a stable octet/duet structure, their electron affinity is negligibly low.",
+        "de": "Da Edelgase eine stabile Oktett-/Duett-Struktur haben, ist ihre Elektronenaffinität vernachlässigbar gering.",
+        "fr": "Étant donné que les gaz rares ont une structure octet/duet stable, leur affinité électronique est négligeable.",
+        "ru": "Поскольку благородные газы имеют стабильную октетную/дублетную структуру, их сродство к электрону пренебрежимо мало.",
         "ar": "نظرًا لأن الغازات النبيلة لها بنية ثمانية/ثنائية مستقرة، فإن تقاربها الإلكتروني منخفض بشكل لا يذكر.",
-        "zh": "由于稀有气体具有稳定的八位组/双链体结构，因此它们的电子亲和力低得可以忽略不计。",
-        "ku": "Ji ber ku gazên hêja xwedan avahiyek oktet/dupleks a stabîl in, girêdana wan a elektron pir kêm e."
+        "zh": "由于稀有气体具有稳定的八隅体/二隅体（双电子）结构，因此它们的电子亲和力低得可以忽略不计。",
+        "ku": "Ji ber ku gazên esîl xwedan avahiyek oktet/dublet a stabîl in, girêdana wan a elektron pir kêm e."
       },
       "trap": {
         "tr": "Helyum 8 değerlik elektronuna sahip bir asal gazdır.",
@@ -254,17 +254,17 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "В порядке энергии ионизации за период 2А и 5А больше, чем 3А и 6А из-за сферической симметрии.",
         "ar": "في ترتيب طاقة التأين في الفترة، 2A و5A أكبر من 3A و6A بسبب التناظر الكروي.",
         "zh": "在一个周期内的电离能顺序中，由于球对称性，2A和5A大于3A和6A。",
-        "ku": "Di rêza enerjiya iyonîzasyonê de di heyamekê de, 2A û 5A ji 3A û 6A mezintir in ji ber simetrîya ferîkî."
+        "ku": "Di rêza enerjiya iyonîzasyonê de di periyodekê de, 2A û 5A ji 3A û 6A mezintir in ji ber sîmetriya gogî."
       },
       "trap": {
         "tr": "Aynı periyotta 3A grubunun iyonlaşma enerjisi daima 2A grubundan büyüktür.",
         "en": "In the same period, the ionization energy of the 3A group is always greater than that of the 2A group.",
-        "de": "Im gleichen Zeitraum ist die Ionisierungsenergie der 3A-Gruppe immer größer als die der 2A-Gruppe.",
+        "de": "In derselben Periode ist die Ionisierungsenergie der 3A-Gruppe immer größer als die der 2A-Gruppe.",
         "fr": "Dans la même période, l'énergie d'ionisation du groupe 3A est toujours supérieure à celle du groupe 2A.",
-        "ru": "В этот же период энергия ионизации группы 3А всегда больше, чем у группы 2А.",
+        "ru": "В одном и том же периоде энергия ионизации группы 3А всегда больше, чем у группы 2А.",
         "ar": "وفي نفس الفترة، تكون طاقة التأين للمجموعة 3A دائمًا أكبر من طاقة التأين للمجموعة 2A.",
-        "zh": "在同一时期，3A基团的电离能总是大于2A基团的电离能。",
-        "ku": "Di heman serdemê de, enerjiya iyonîzasyona koma 3A her gav ji ya koma 2A mezintir e."
+        "zh": "在同一周期中，3A族的电离能总是大于2A族的电离能。",
+        "ku": "Di heman periyodê de, enerjiya iyonîzasyona koma 3A her gav ji ya koma 2A mezintir e."
       }
     },
     {
@@ -277,30 +277,30 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "Поскольку электроны отдаются при образовании катиона, радиус частицы всегда уменьшается.",
         "ar": "وبما أن الإلكترونات تتحرر عند تكوين الكاتيون، فإن نصف قطر الجسيم يتناقص دائمًا.",
         "zh": "由于形成阳离子时会释放电子，因此粒子半径总是减小。",
-        "ku": "Ji ber ku dema ku katyonek çêdibe elektron têne dayîn, tîrêjê perçeyê her gav kêm dibe."
+        "ku": "Ji ber ku dema ku katyonek çêdibe elektron têne dayîn, nîvçapa tanecîkê her gav kêm dibe."
       },
       "trap": {
-        "tr": "Katyon oluştuğunda çekirdeğin çekim gücü artar.",
-        "en": "When a cation is formed, the gravitational force of the nucleus increases.",
-        "de": "Bei der Bildung eines Kations erhöht sich die Gravitationskraft des Kerns.",
-        "fr": "Lorsqu’un cation se forme, la force gravitationnelle du noyau augmente.",
-        "ru": "При образовании катиона гравитационная сила ядра увеличивается.",
-        "ar": "عندما يتكون الكاتيون، تزداد قوة الجاذبية للنواة.",
-        "zh": "当形成阳离子时，原子核的引力增加。",
-        "ku": "Dema ku katyonek çêbibe, hêza gravîtasyonê ya navokê zêde dibe."
+        "tr": "Katyon oluşurken elektron başına düşen çekim kuvveti azalır.",
+        "en": "When a cation forms, the nuclear attraction per electron decreases.",
+        "de": "Bei der Bildung eines Kations nimmt die Anziehungskraft pro Elektron ab.",
+        "fr": "Lors de la formation d'un cation, la force d'attraction par électron diminue.",
+        "ru": "При образовании катиона сила притяжения, приходящаяся на один электрон, уменьшается.",
+        "ar": "عند تكوّن الكاتيون تقل قوة الجذب لكل إلكترون.",
+        "zh": "形成阳离子时，每个电子受到的核引力减小。",
+        "ku": "Dema ku katyon çêdibe, hêza kêşanê ya ku dikeve ser her elektronekê kêm dibe."
       }
     },
     {
       "id": "u02-f12",
       "fact": {
         "tr": "Anyon oluşurken elektron alındığı için elektron başına düşen çekim kuvveti azalır, yarıçap büyür.",
-        "en": "As an electron is removed while an anion is forming, the attractive force per electron decreases and the radius increases.",
-        "de": "Wenn ein Elektron entfernt wird, während sich ein Anion bildet, nimmt die Anziehungskraft pro Elektron ab und der Radius nimmt zu.",
-        "fr": "Lorsqu'un électron est retiré pendant la formation d'un anion, la force d'attraction par électron diminue et le rayon augmente.",
-        "ru": "Поскольку электрон удаляется во время образования аниона, сила притяжения, приходящаяся на электрон, уменьшается, а радиус увеличивается.",
-        "ar": "عند إزالة الإلكترون أثناء تكوين الأنيون، تقل قوة الجذب لكل إلكترون ويزداد نصف القطر.",
-        "zh": "当电子在阴离子形成时被移除时，每个电子的吸引力减小并且半径增大。",
-        "ku": "Gava ku elektronek tê rakirin dema ku anionek çê dibe, hêza balkêş a her elektronê kêm dibe û tîrêj zêde dibe."
+        "en": "Since an electron is gained when an anion forms, the attractive force per electron decreases and the radius increases.",
+        "de": "Da bei der Bildung eines Anions ein Elektron aufgenommen wird, nimmt die Anziehungskraft pro Elektron ab und der Radius nimmt zu.",
+        "fr": "Comme un électron est capté lors de la formation d'un anion, la force d'attraction par électron diminue et le rayon augmente.",
+        "ru": "Поскольку при образовании аниона электрон присоединяется, сила притяжения, приходящаяся на один электрон, уменьшается, а радиус увеличивается.",
+        "ar": "بما أن الإلكترون يُكتسب عند تكوّن الأنيون، تقل قوة الجذب لكل إلكترون ويزداد نصف القطر.",
+        "zh": "形成阴离子时获得电子，因此每个电子受到的引力减小，半径增大。",
+        "ku": "Ji ber ku dema anyon çêdibe elektron tê wergirtin, hêza kêşanê ya her elektronekê kêm dibe û nîvçap zêde dibe."
       },
       "trap": {
         "tr": "Anyon oluşurken çekirdekteki proton sayısı artar.",
@@ -350,13 +350,13 @@ export const unit02: ChemistryUnitSeedData = {
       },
       "trap": {
         "tr": "Flor bileşiklerinde +7 yükseltgenme basamağına ulaşabilir.",
-        "en": "It can reach +7 oxidation state in fluorine compounds.",
-        "de": "In Fluorverbindungen kann es eine Oxidationsstufe von +7 erreichen.",
-        "fr": "Il peut atteindre un état d’oxydation de +7 dans les composés fluorés.",
-        "ru": "В соединениях фтора он может достигать степени окисления +7.",
-        "ar": "يمكن أن يصل إلى حالة الأكسدة +7 في مركبات الفلور.",
-        "zh": "在氟化合物中可以达到+7氧化态。",
-        "ku": "Ew dikare di pêkhateyên florînê de bigihîje rewşa oksîdasyonê +7."
+        "en": "Fluorine can reach the +7 oxidation state in its compounds.",
+        "de": "Fluor kann in seinen Verbindungen die Oxidationsstufe +7 erreichen.",
+        "fr": "Le fluor peut atteindre l'état d'oxydation +7 dans ses composés.",
+        "ru": "Фтор в своих соединениях может проявлять степень окисления +7.",
+        "ar": "يمكن أن يصل الفلور في مركباته إلى حالة الأكسدة +7.",
+        "zh": "氟在其化合物中可以达到+7氧化态。",
+        "ku": "Florîn di pêkhateyên xwe de dikare bigihîje rewşa oksîdasyonê ya +7."
       }
     },
     {
@@ -396,13 +396,13 @@ export const unit02: ChemistryUnitSeedData = {
       },
       "trap": {
         "tr": "Magnezyum bileşiklerinde +1 ve +2 kararlı iyonlarını oluşturur.",
-        "en": "It forms +1 and +2 stable ions in magnesium compounds.",
-        "de": "Es bildet +1 und +2 stabile Ionen in Magnesiumverbindungen.",
-        "fr": "Il forme des ions stables +1 et +2 dans les composés de magnésium.",
-        "ru": "Он образует +1 и +2 стабильные ионы в соединениях магния.",
-        "ar": "وهو يشكل +1 و +2 أيونات مستقرة في مركبات المغنيسيوم.",
-        "zh": "它在镁化合物中形成+1和+2稳定离子。",
-        "ku": "Di pêkhateyên magnesiumê de +1 û +2 îyonên stabîl çêdike."
+        "en": "Magnesium forms stable +1 and +2 ions in its compounds.",
+        "de": "Magnesium bildet in seinen Verbindungen stabile +1- und +2-Ionen.",
+        "fr": "Le magnésium forme des ions stables +1 et +2 dans ses composés.",
+        "ru": "Магний в своих соединениях образует устойчивые ионы +1 и +2.",
+        "ar": "يكوّن المغنيسيوم في مركباته أيونات مستقرة +1 و+2.",
+        "zh": "镁在其化合物中形成稳定的+1和+2离子。",
+        "ku": "Magnezyûm di pêkhateyên xwe de îyonên stabîl ên +1 û +2 çêdike."
       }
     }
   ],
@@ -425,8 +425,8 @@ export const unit02: ChemistryUnitSeedData = {
         "de": "isoton",
         "fr": "isotone",
         "ru": "изотон",
-        "ar": "isotone",
-        "zh": "等酮",
+        "ar": "الأيزوتونات",
+        "zh": "同中子素",
         "ku": "îzoton"
       },
       "distinction": {
@@ -436,7 +436,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Dans l'isotope, le nombre de protons est le même et le nombre de neutrons est différent ; Le nombre de neutrons dans l’isotone est le même, mais le nombre de protons est différent.",
         "ru": "В изотопе число протонов одинаково, а число нейтронов различно; Число нейтронов в изотоне одинаковое, а количество протонов разное.",
         "ar": "في النظائر، عدد البروتونات هو نفسه وعدد النيوترونات مختلف؛ عدد النيوترونات في الأيزوتون هو نفسه، لكن عدد البروتونات مختلف.",
-        "zh": "同位素中，质子数相同，中子数不同；等位素中的中子数相同，但质子数不同。",
+        "zh": "同位素中，质子数相同，中子数不同；同中子素中的中子数相同，但质子数不同。",
         "ku": "Di îzotopê de hejmara protonan yek e û hejmara notronan jî cuda ye; Di îzotonê de hejmara notronan yek e, lê hejmara protonan cuda ye."
       }
     },
@@ -476,34 +476,34 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-c03",
       "conceptA": {
-        "tr": "İzotop Atomlar",
-        "en": "Isotope Atoms",
-        "de": "Isotopenatome",
-        "fr": "Atomes isotopiques",
-        "ru": "Изотопные атомы",
-        "ar": "ذرات النظائر",
-        "zh": "同位素原子",
-        "ku": "Atomên Îzotop"
+        "tr": "Thomson Atom Modeli",
+        "en": "Thomson Atomic Model",
+        "de": "Thomsonsches Atommodell",
+        "fr": "Modèle atomique de Thomson",
+        "ru": "Модель атома Томсона",
+        "ar": "نموذج طومسون الذري",
+        "zh": "汤姆森原子模型",
+        "ku": "Modela Atomê ya Thomson"
       },
       "conceptB": {
-        "tr": "İzoton Atomlar",
-        "en": "Isotone Atoms",
-        "de": "Isotone Atome",
-        "fr": "Atomes d'isotone",
-        "ru": "Изотоновые атомы",
-        "ar": "ذرات الأيزوتون",
-        "zh": "等酮原子",
-        "ku": "Atomên Îzoton"
+        "tr": "Rutherford Atom Modeli",
+        "en": "Rutherford Atomic Model",
+        "de": "Rutherfordsches Atommodell",
+        "fr": "Modèle atomique de Rutherford",
+        "ru": "Модель атома Резерфорда",
+        "ar": "نموذج رذرفورد الذري",
+        "zh": "卢瑟福原子模型",
+        "ku": "Modela Atomê ya Rutherford"
       },
       "distinction": {
-        "tr": "İzotop atomların proton sayıları aynı nötronları farklıdır; izoton atomların nötron sayıları aynı protonları farklıdır.",
-        "en": "Isotope atoms have the same number of protons but different numbers of neutrons; Isotone atoms have the same number of neutrons but different numbers of protons.",
-        "de": "Isotopenatome haben die gleiche Anzahl an Protonen, aber eine unterschiedliche Anzahl an Neutronen; Isotonische Atome haben die gleiche Anzahl an Neutronen, aber eine unterschiedliche Anzahl an Protonen.",
-        "fr": "Les atomes isotopiques ont le même nombre de protons mais un nombre différent de neutrons ; Les atomes d'isotone ont le même nombre de neutrons mais un nombre différent de protons.",
-        "ru": "Атомы изотопов имеют одинаковое количество протонов, но разное количество нейтронов; Атомы изотонов имеют одинаковое количество нейтронов, но разное количество протонов.",
-        "ar": "تحتوي ذرات النظائر على نفس عدد البروتونات ولكن بأعداد مختلفة من النيوترونات. تحتوي ذرات الأيزوتون على نفس عدد النيوترونات ولكن بأعداد مختلفة من البروتونات.",
-        "zh": "同位素原子具有相同数量的质子但不同数量的中子；等酮原子具有相同数量的中子，但具有不同数量的质子。",
-        "ku": "Di atomên îzotopan de heman hejmar proton lê jimareyên neutronên cuda hene; Atomên îzoton xwedî heman hejmara notronan in lê hejmarên proton cuda ne."
+        "tr": "Thomson modelinde pozitif yük atom içinde homojen dağılmıştır; Rutherford modelinde pozitif yük ve kütlenin neredeyse tamamı küçük bir çekirdekte toplanmıştır.",
+        "en": "In the Thomson model, positive charge is spread uniformly throughout the atom; in the Rutherford model, the positive charge and almost all of the mass are concentrated in a tiny nucleus.",
+        "de": "Im Thomson-Modell ist die positive Ladung gleichmäßig im Atom verteilt; im Rutherford-Modell sind die positive Ladung und fast die gesamte Masse in einem winzigen Kern konzentriert.",
+        "fr": "Dans le modèle de Thomson, la charge positive est répartie uniformément dans l'atome ; dans le modèle de Rutherford, la charge positive et presque toute la masse sont concentrées dans un minuscule noyau.",
+        "ru": "В модели Томсона положительный заряд равномерно распределён по атому; в модели Резерфорда положительный заряд и почти вся масса сосредоточены в крошечном ядре.",
+        "ar": "في نموذج طومسون تتوزع الشحنة الموجبة بانتظام في الذرة؛ أما في نموذج رذرفورد فتتركز الشحنة الموجبة ومعظم الكتلة تقريبًا في نواة صغيرة جدًا.",
+        "zh": "汤姆森模型中正电荷均匀分布在整个原子中；卢瑟福模型中正电荷和几乎全部质量集中在很小的原子核里。",
+        "ku": "Di modela Thomson de bara erênî bi awayekî wekhev li seranserê atomê belav bûye; di modela Rutherford de bara erênî û hema hema hemû girse di navokeke pir piçûk de kom bûne."
       }
     },
     {
@@ -515,7 +515,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Atomes isobares",
         "ru": "Изобарные атомы",
         "ar": "ذرات الأيزوبار",
-        "zh": "等压原子",
+        "zh": "同量异位素原子",
         "ku": "Atomên Îsobar"
       },
       "conceptB": {
@@ -523,7 +523,7 @@ export const unit02: ChemistryUnitSeedData = {
         "en": "Isoelectronic Species",
         "de": "Isoelektronische Spezies",
         "fr": "Espèces isoélectroniques",
-        "ru": "Изоэлектронные виды",
+        "ru": "Изоэлектронные частицы",
         "ar": "الأنواع الأيزوإلكترونية",
         "zh": "等电子物种",
         "ku": "Cureyên Îzoelektronîk"
@@ -535,7 +535,7 @@ export const unit02: ChemistryUnitSeedData = {
         "fr": "Les nombres de masse des isobares sont les mêmes ; Le nombre d’électrons et la disposition des espèces isoélectroniques sont les mêmes.",
         "ru": "Массовые числа изобар одинаковы; Число электронов и расположение изоэлектронных частиц одинаковы.",
         "ar": "الأعداد الكتلية للإيزوبار هي نفسها؛ أعداد الإلكترونات وترتيباتها للأنواع متساوية الإلكترون هي نفسها.",
-        "zh": "等压线的质量数相同；等电子物种的电子数和排列是相同的。",
+        "zh": "同量异位素的质量数相同；等电子物种的电子数和排列是相同的。",
         "ku": "Hejmarên girseyî yên îsobaran yek in; Hejmar û rêzikên elektronên cureyên isoelektronîk yek in."
       }
     },
@@ -582,7 +582,7 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "Электроотрицательность",
         "ar": "السالبية الكهربية",
         "zh": "电负性",
-        "ku": "Electronegativity"
+        "ku": "Elektronegatîfî"
       },
       "conceptB": {
         "tr": "Metalik Aktiflik",
@@ -590,19 +590,19 @@ export const unit02: ChemistryUnitSeedData = {
         "de": "Metallische Aktivität",
         "fr": "Activité métallique",
         "ru": "Металлическая активность",
-        "ar": "النشاط المعدني",
-        "zh": "金属活性",
+        "ar": "النشاط الفلزي",
+        "zh": "金属活泼性",
         "ku": "Çalakiya Metalîk"
       },
       "distinction": {
         "tr": "Elektronegatiflik bağ elektronlarını çekme yeteneğidir ve sağ-yukarı artar; metalik aktiflik elektron verme eğilimidir ve sol-aşağı artar.",
-        "en": "Electronegativity is the ability to attract bond electrons and increases right-up; Metallic activity is the tendency to lose electrons and increases left-down.",
-        "de": "Elektronegativität ist die Fähigkeit, Bindungselektronen anzuziehen und nimmt direkt zu; Metallische Aktivität ist die Tendenz, Elektronen zu verlieren und nach links zuzunehmen.",
-        "fr": "L'électronégativité est la capacité à attirer les électrons de liaison et augmente vers le haut ; L'activité métallique est la tendance à perdre des électrons et à augmenter vers le bas.",
-        "ru": "Электроотрицательность — это способность притягивать электроны связи и увеличивается с увеличением; Металлическая активность — это тенденция терять электроны и увеличиваться слева вниз.",
-        "ar": "السالبية الكهربية هي القدرة على جذب إلكترونات الرابطة وزيادة الاتجاه نحو الأعلى؛ النشاط المعدني هو الميل إلى فقدان الإلكترونات ويزيد من اليسار إلى الأسفل.",
-        "zh": "电负性是指吸引键电子并向右上方增加的能力；金属活性是失去电子并从左往下增加的趋势。",
-        "ku": "Electronegativity şiyana kişandina elektronên girêdanê ye û rast-up zêde dike; Çalakiya metalîk meyla windakirina elektronan e û çep-xwarê zêde dike."
+        "en": "Electronegativity is the ability to attract bonding electrons and increases toward the upper right; metallic activity is the tendency to lose electrons and increases toward the lower left.",
+        "de": "Die Elektronegativität ist die Fähigkeit, Bindungselektronen anzuziehen, und nimmt nach rechts oben zu; die metallische Aktivität ist die Neigung, Elektronen abzugeben, und nimmt nach links unten zu.",
+        "fr": "L'électronégativité est la capacité d'attirer les électrons de liaison et augmente vers le haut à droite ; l'activité métallique est la tendance à céder des électrons et augmente vers le bas à gauche.",
+        "ru": "Электроотрицательность — способность притягивать электроны связи, она растёт вправо и вверх; металлическая активность — склонность отдавать электроны, она растёт влево и вниз.",
+        "ar": "السالبية الكهربائية هي قدرة الذرة على جذب إلكترونات الرابطة وتزداد نحو اليمين والأعلى؛ أما النشاط الفلزي فهو الميل إلى فقد الإلكترونات ويزداد نحو اليسار والأسفل.",
+        "zh": "电负性是吸引成键电子的能力，向右上方增大；金属活泼性是失去电子的倾向，向左下方增大。",
+        "ku": "Elektronegatîfî şiyana kişandina elektronên girêdanê ye û ber bi rast-jor ve zêde dibe; çalakiya metalî meyla dayîna elektronan e û ber bi çep-jêr ve zêde dibe."
       }
     },
     {
@@ -615,17 +615,17 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "Катионный радиус",
         "ar": "نصف قطر الكاتيون",
         "zh": "阳离子半径",
-        "ku": "Radyoya Cation"
+        "ku": "Nîvçapa Katyonê"
       },
       "conceptB": {
         "tr": "Anyon Yarıçapı",
         "en": "Anion Radius",
         "de": "Anionenradius",
         "fr": "Rayon anionique",
-        "ru": "Анион Радиус",
+        "ru": "Радиус аниона",
         "ar": "نصف قطر أنيون",
         "zh": "阴离子半径",
-        "ku": "Anion Radius"
+        "ku": "Nîvçapa Anyonê"
       },
       "distinction": {
         "tr": "Nötr atom elektron verdiğinde katyon yarıçapı küçülür; elektron aldığında anyon yarıçapı büyür.",
@@ -635,40 +635,40 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "Когда нейтральный атом теряет электроны, радиус катиона становится меньше; Когда он присоединяет электроны, радиус аниона увеличивается.",
         "ar": "عندما تفقد الذرة المحايدة الإلكترونات، يصبح نصف قطر الكاتيون أصغر؛ وعندما تكتسب إلكترونات، يزداد نصف قطر الأنيون.",
         "zh": "当中性原子失去电子时，阳离子半径变小；当它获得电子时，阴离子半径增加。",
-        "ku": "Dema ku atomek bêalî elektronan winda dike, tîrêjê kation piçûktir dibe; Dema ku ew elektronan bi dest dixe, radiusa anionê zêde dibe."
+        "ku": "Dema ku atomeke bêalî elektronan winda dike, nîvçapa katyonê piçûktir dibe; dema ku elektronan werdigire, nîvçapa anyonê zêde dibe."
       }
     },
     {
       "id": "u02-c08",
       "conceptA": {
-        "tr": "İzotop",
-        "en": "isotope",
-        "de": "Isotop",
-        "fr": "isotope",
-        "ru": "изотоп",
-        "ar": "النظائر",
-        "zh": "同位素",
-        "ku": "îzotop"
+        "tr": "Atom Numarası",
+        "en": "Atomic Number",
+        "de": "Ordnungszahl",
+        "fr": "Numéro atomique",
+        "ru": "Атомный номер",
+        "ar": "العدد الذري",
+        "zh": "原子序数",
+        "ku": "Hejmara Atomê"
       },
       "conceptB": {
-        "tr": "İzoton",
-        "en": "isotone",
-        "de": "isoton",
-        "fr": "isotone",
-        "ru": "изотон",
-        "ar": "isotone",
-        "zh": "等酮",
-        "ku": "îzoton"
+        "tr": "Kütle Numarası",
+        "en": "Mass Number",
+        "de": "Massenzahl",
+        "fr": "Nombre de masse",
+        "ru": "Массовое число",
+        "ar": "العدد الكتلي",
+        "zh": "质量数",
+        "ku": "Hejmara Girseyê"
       },
       "distinction": {
-        "tr": "İzotopta proton sayıları aynı nötron farklı; izotonda nötron sayıları aynı proton farklıdır.",
-        "en": "In the isotope, the number of protons is the same and the number of neutrons is different; The number of neutrons in the isotone is the same, but the number of protons is different.",
-        "de": "Im Isotop ist die Anzahl der Protonen gleich und die Anzahl der Neutronen unterschiedlich; Die Anzahl der Neutronen im Isoton ist gleich, aber die Anzahl der Protonen ist unterschiedlich.",
-        "fr": "Dans l'isotope, le nombre de protons est le même et le nombre de neutrons est différent ; Le nombre de neutrons dans l’isotone est le même, mais le nombre de protons est différent.",
-        "ru": "В изотопе число протонов одинаково, а число нейтронов различно; Число нейтронов в изотоне одинаковое, а количество протонов разное.",
-        "ar": "في النظائر، عدد البروتونات هو نفسه وعدد النيوترونات مختلف؛ عدد النيوترونات في الأيزوتون هو نفسه، لكن عدد البروتونات مختلف.",
-        "zh": "同位素中，质子数相同，中子数不同；等位素中的中子数相同，但质子数不同。",
-        "ku": "Di îzotopê de hejmara protonan yek e û hejmara notronan jî cuda ye; Di îzotonê de hejmara notronan yek e, lê hejmara protonan cuda ye."
+        "tr": "Atom numarası çekirdekteki proton sayısıdır; kütle numarası çekirdekteki proton ve nötron sayılarının toplamıdır.",
+        "en": "The atomic number is the number of protons in the nucleus; the mass number is the sum of the numbers of protons and neutrons in the nucleus.",
+        "de": "Die Ordnungszahl ist die Anzahl der Protonen im Kern; die Massenzahl ist die Summe aus Protonen- und Neutronenzahl im Kern.",
+        "fr": "Le numéro atomique est le nombre de protons du noyau ; le nombre de masse est la somme des nombres de protons et de neutrons du noyau.",
+        "ru": "Атомный номер — число протонов в ядре; массовое число — сумма чисел протонов и нейтронов в ядре.",
+        "ar": "العدد الذري هو عدد البروتونات في النواة؛ والعدد الكتلي هو مجموع أعداد البروتونات والنيوترونات في النواة.",
+        "zh": "原子序数是原子核中的质子数；质量数是原子核中质子数与中子数之和。",
+        "ku": "Hejmara atomê hejmara protonên di navokê de ye; hejmara girseyê berhevoka hejmarên proton û notronên di navokê de ye."
       }
     }
   ],
@@ -683,48 +683,48 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "Периодические тенденции (слева направо)",
         "ar": "الاتجاهات الدورية (من اليسار إلى اليمين)",
         "zh": "周期性趋势（从左到右）",
-        "ku": "Trendên Perîyodîk (Çep Ber Bi Rast)"
+        "ku": "Meylên Periyodîk (Ji Çepê ber bi Rastê)"
       },
       "steps": [
         {
-          "tr": "Çekirdek yükü artar",
-          "en": "Core load increases",
-          "de": "Die Kernbelastung steigt",
-          "fr": "La charge de base augmente",
-          "ru": "Нагрузка на ядро увеличивается",
-          "ar": "يزيد الحمل الأساسي",
-          "zh": "核心负载增加",
-          "ku": "Barkirina bingehîn zêde dibe"
+          "tr": "Proton sayısı (çekirdek yükü) artar",
+          "en": "Number of protons (nuclear charge) increases",
+          "de": "Die Protonenzahl (Kernladung) nimmt zu",
+          "fr": "Le nombre de protons (charge nucléaire) augmente",
+          "ru": "Число протонов (заряд ядра) увеличивается",
+          "ar": "يزداد عدد البروتونات (الشحنة النووية)",
+          "zh": "质子数（核电荷数）增加",
+          "ku": "Hejmara protonan (bara navokê) zêde dibe"
+        },
+        {
+          "tr": "Değerlik elektronlarına etki eden çekim kuvveti artar",
+          "en": "The attraction acting on the valence electrons increases",
+          "de": "Die Anziehung auf die Valenzelektronen nimmt zu",
+          "fr": "L'attraction exercée sur les électrons de valence augmente",
+          "ru": "Притяжение валентных электронов к ядру усиливается",
+          "ar": "تزداد قوة الجذب المؤثرة في إلكترونات التكافؤ",
+          "zh": "价电子受到的引力增强",
+          "ku": "Hêza kêşanê ya li ser elektronên valansê zêde dibe"
         },
         {
           "tr": "Atom yarıçapı küçülür",
-          "en": "Atomic radius decreases",
-          "de": "Der Atomradius nimmt ab",
-          "fr": "Le rayon atomique diminue",
-          "ru": "Атомный радиус уменьшается",
-          "ar": "يتناقص نصف القطر الذري",
-          "zh": "原子半径减小",
-          "ku": "Radyoya atomê kêm dibe"
-        },
-        {
-          "tr": "Elektronegatiflik genellikle artar",
           "en": "Electronegativity usually increases",
           "de": "Normalerweise nimmt die Elektronegativität zu",
           "fr": "L'électronégativité augmente généralement",
           "ru": "Электроотрицательность обычно увеличивается",
           "ar": "عادة ما تزداد السالبية الكهربية",
           "zh": "电负性通常会增加",
-          "ku": "Electronegativity bi gelemperî zêde dibe"
+          "ku": "Nîvçapa atomê kêm dibe"
         },
         {
-          "tr": "İyonlaşma enerjisi genellikle artar",
-          "en": "Ionization energy generally increases",
-          "de": "Die Ionisierungsenergie nimmt im Allgemeinen zu",
-          "fr": "L'énergie d'ionisation augmente généralement",
-          "ru": "Энергия ионизации обычно увеличивается",
-          "ar": "تزداد طاقة التأين بشكل عام",
-          "zh": "电离能普遍增加",
-          "ku": "Enerjiya ionîzasyonê bi gelemperî zêde dibe"
+          "tr": "Elektron koparmak zorlaşır; iyonlaşma enerjisi genellikle artar",
+          "en": "Removing an electron becomes harder; ionization energy generally increases",
+          "de": "Ein Elektron lässt sich schwerer abtrennen; die Ionisierungsenergie nimmt im Allgemeinen zu",
+          "fr": "Arracher un électron devient plus difficile ; l'énergie d'ionisation augmente généralement",
+          "ru": "Оторвать электрон становится труднее; энергия ионизации, как правило, растёт",
+          "ar": "يصعب نزع الإلكترون؛ وتزداد طاقة التأين عمومًا",
+          "zh": "失去电子变难，电离能一般增大",
+          "ku": "Qetandina elektronê dijwartir dibe; enerjiya îyonîzasyonê bi gelemperî zêde dibe"
         }
       ]
     },
@@ -749,7 +749,7 @@ export const unit02: ChemistryUnitSeedData = {
           "ru": "Модель твердой неделимой сферы Дальтона",
           "ar": "نموذج دالتون للكرة الصلبة غير القابلة للتجزئة",
           "zh": "道尔顿固体不可分球模型",
-          "ku": "Modela qada yekbûyî ya hişk a Dalton"
+          "ku": "Modela goga hişk û neparçebar a Dalton"
         },
         {
           "tr": "Thomson pozitif yük içinde gömülü elektron modeli",
@@ -773,13 +773,13 @@ export const unit02: ChemistryUnitSeedData = {
         },
         {
           "tr": "Bohr yörüngeli kuantum modeli",
-          "en": "Bohr orbital quantum model",
-          "de": "Bohr-Orbital-Quantenmodell",
-          "fr": "Modèle quantique orbital de Bohr",
-          "ru": "Орбитальная квантовая модель Бора",
-          "ar": "نموذج بور الكمي المداري",
-          "zh": "玻尔轨道量子模型",
-          "ku": "Modela quantuma orbîtal a Bohr"
+          "en": "Bohr model with quantized energy levels (orbits)",
+          "de": "Bohrsches Modell mit gequantelten Energieniveaus (Bahnen)",
+          "fr": "Modèle de Bohr à niveaux d'énergie quantifiés (orbites)",
+          "ru": "Модель Бора с квантованными энергетическими уровнями (орбитами)",
+          "ar": "نموذج بور ذو مستويات الطاقة المكمّاة (المدارات)",
+          "zh": "玻尔的量子化能级（轨道）模型",
+          "ku": "Modela Bohr a bi astên enerjiyê yên kuantîzekirî (rêgeh)"
         }
       ]
     },
@@ -793,7 +793,7 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "Увеличение энергии ионизации 2-го периода",
         "ar": "زيادة طاقة التأين في الفترة الثانية",
         "zh": "第二周期电离能量增加",
-        "ku": "Zêdebûna Enerjiya Îyonîzasyona Serdema 2"
+        "ku": "Zêdebûna Enerjiya Îyonîzasyonê di Periyoda 2. de"
       },
       "steps": [
         {
@@ -801,10 +801,10 @@ export const unit02: ChemistryUnitSeedData = {
           "en": "1A Lithium has the lowest IE1 value",
           "de": "1A Lithium hat den niedrigsten IE1-Wert",
           "fr": "1A Lithium a la valeur IE1 la plus basse",
-          "ru": "1A Lithium имеет самое низкое значение IE1.",
+          "ru": "1A Литий имеет самое низкое значение IE1",
           "ar": "1A الليثيوم لديه أدنى قيمة IE1",
-          "zh": "1A锂电池的IE1值最低",
-          "ku": "1A Lithium nirxa IE1 ya herî kêm heye"
+          "zh": "1A 锂的IE1值最低",
+          "ku": "1A Lîtyûm xwedî nirxa IE1 ya herî kêm e"
         },
         {
           "tr": "2A Berilyum küresel simetriyle 3A'yı geçer",
@@ -813,7 +813,7 @@ export const unit02: ChemistryUnitSeedData = {
           "fr": "Le béryllium 2A dépasse 3A avec une symétrie sphérique",
           "ru": "2А Бериллий превосходит 3А со сферической симметрией",
           "ar": "2A البريليوم يتجاوز 3A مع التماثل الكروي",
-          "zh": "2A 铍超过 3A 具有球对称性",
+          "zh": "2A 铍因球对称而超过3A",
           "ku": "2A Beryllium bi simetrîya gewherî ji 3A derbas dibe"
         },
         {
@@ -823,17 +823,17 @@ export const unit02: ChemistryUnitSeedData = {
           "fr": "L'azote 5A dépasse 6A avec une symétrie sphérique",
           "ru": "5А Азот превышает 6А при сферической симметрии",
           "ar": "5A النيتروجين يتجاوز 6A مع التماثل الكروي",
-          "zh": "5A 氮气超过6A 球对称",
+          "zh": "5A 氮因球对称而超过6A",
           "ku": "5A Nîtrojen bi simetrîya gewherî ji 6A derbas dibe"
         },
         {
           "tr": "8A Neon maksimum kararlılıkla en yüksektir",
           "en": "8A Neon is the highest with maximum stability",
           "de": "8A Neon ist das höchste mit maximaler Stabilität",
-          "fr": "8A Neon est le plus élevé avec une stabilité maximale",
-          "ru": "8A Neon — самый высокий с максимальной стабильностью.",
+          "fr": "8A Le néon est le plus élevé grâce à sa stabilité maximale",
+          "ru": "8A Неон — самый высокий благодаря максимальной устойчивости",
           "ar": "8A نيون هو الأعلى مع أقصى قدر من الاستقرار",
-          "zh": "8A Neon最高，稳定性最高",
+          "zh": "8A 氖最稳定，电离能最高",
           "ku": "8A Neon bi aramiya herî zêde ya herî bilind e"
         }
       ]
@@ -848,7 +848,7 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "Электронное возбуждение и излучение",
         "ar": "الإثارة الإلكترونية والإشعاع",
         "zh": "电子激发和辐射",
-        "ku": "Radyasyon û Excitation Electron"
+        "ku": "Teşwîqbûna Elektronê û Tîrêjdan"
       },
       "steps": [
         {
@@ -859,27 +859,27 @@ export const unit02: ChemistryUnitSeedData = {
           "ru": "Электрон в основном состоянии поглощает энергию",
           "ar": "يمتص الإلكترون في الحالة الأرضية الطاقة",
           "zh": "基态电子吸收能量",
-          "ku": "Elektron di rewşa zemînê de enerjiyê digire"
+          "ku": "Elektrona di rewşa bingehîn de enerjiyê dikişîne"
         },
         {
           "tr": "Daha yüksek enerjili yörüngeye fırlar",
-          "en": "Launches into higher energy orbit",
-          "de": "Startet in eine Umlaufbahn mit höherer Energie",
-          "fr": "Se lance sur une orbite à énergie supérieure",
-          "ru": "Запуск на более высокую энергетическую орбиту",
-          "ar": "ينطلق إلى مدار طاقة أعلى",
-          "zh": "发射进入更高能量轨道",
-          "ku": "Di dorbera enerjiya bilind de dest pê dike"
+          "en": "Jumps to a higher-energy orbit",
+          "de": "Springt auf eine Bahn höherer Energie",
+          "fr": "Passe sur une orbite d'énergie plus élevée",
+          "ru": "Переходит на орбиту с более высокой энергией",
+          "ar": "ينتقل إلى مدار ذي طاقة أعلى",
+          "zh": "跃迁到能量更高的轨道",
+          "ku": "Derbasî rêgeheke bi enerjiya bilindtir dibe"
         },
         {
           "tr": "Uyarılmış kararsız halde kısa süre kalır",
           "en": "Stays in an excited, unstable state for a short time",
-          "de": "Bleibt für kurze Zeit in einem aufgeregten, instabilen Zustand",
+          "de": "Bleibt kurzzeitig in einem angeregten, instabilen Zustand",
           "fr": "Reste dans un état excité et instable pendant une courte période",
           "ru": "Кратковременно пребывает в возбужденном, нестабильном состоянии.",
-          "ar": "يبقى في حالة متحمسة وغير مستقرة لفترة قصيرة",
-          "zh": "短时间内处于兴奋、不稳定的状态",
-          "ku": "Ji bo demek kurt di rewşek heyecan, bêîstîqrar de dimîne"
+          "ar": "يبقى لفترة قصيرة في حالة مثارة غير مستقرة",
+          "zh": "在不稳定的激发态短暂停留",
+          "ku": "Ji bo demeke kurt di rewşa teşwîqbûyî ya ne-stabîl de dimîne"
         },
         {
           "tr": "Foton yayarak temel hale geri döner",
@@ -889,7 +889,7 @@ export const unit02: ChemistryUnitSeedData = {
           "ru": "Возвращается в основное состояние путем испускания фотонов",
           "ar": "يعود إلى الحالة الأرضية عن طريق إصدار الفوتونات",
           "zh": "通过发射光子返回基态",
-          "ku": "Bi belavkirina fotonan vedigere rewşa erdê"
+          "ku": "Bi belavkirina fotonan vedigere rewşa bingehîn"
         }
       ]
     }
@@ -899,13 +899,13 @@ export const unit02: ChemistryUnitSeedData = {
       "id": "u02-twin01",
       "stem": {
         "tr": "Baş grup elementi olan X'in ardışık iyonlaşma enerjileri (kJ/mol): İE1: 496, İE2: 4562, İE3: 6912'dir. Buna göre X hangi gruptadır?",
-        "en": "The consecutive ionization energies (kJ/mol) of the main group element X are: İE1: 496, İE2: 4562, İE3: 6912. Accordingly, in which group is X?",
-        "de": "Die aufeinanderfolgenden Ionisierungsenergien (kJ/mol) des Hauptgruppenelements",
-        "fr": "Les énergies d'ionisation consécutives (kJ/mol) de l'élément principal du groupe X sont : İE1 : 496, İE2 : 4562, İE3 : 6912. Par conséquent, dans quel groupe se trouve X ?",
-        "ru": "Последовательные энергии ионизации (кДж/моль) элемента основной группы X составляют: İE1: 496, İE2: 4562, İE3: 6912. Соответственно, в какой группе находится X?",
+        "en": "The successive ionization energies (kJ/mol) of the main group element X are: IE1: 496, IE2: 4562, IE3: 6912. Accordingly, in which group is X?",
+        "de": "Die aufeinanderfolgenden Ionisierungsenergien (kJ/mol) des Hauptgruppenelements X betragen: IE1: 496, IE2: 4562, IE3: 6912. In welcher Gruppe befindet sich X demnach?",
+        "fr": "Les énergies d'ionisation consécutives (kJ/mol) de l'élément principal du groupe X sont : IE1 : 496, IE2 : 4562, IE3 : 6912. Par conséquent, dans quel groupe se trouve X ?",
+        "ru": "Последовательные энергии ионизации (кДж/моль) элемента основной группы X составляют: IE1: 496, IE2: 4562, IE3: 6912. Соответственно, в какой группе находится X?",
         "ar": "طاقات التأين المتتالية (كيلو جول/مول) لعنصر المجموعة الرئيسية X هي: IE1: 496، IE2: 4562، IE3: 6912. وبناءً على ذلك، في أي مجموعة يقع X؟",
-        "zh": "主族元素X的连续电离能(kJ/mol)为： ?E1：496，?E2：4562，?E3：6912。因此，X属于哪个基团？",
-        "ku": "Enerjiyên îyonîzasyonê yên li pey hev (kJ/mol) yên hêmana koma sereke X ev in: İE1: 496, İE2: 4562, İE3: 6912. Li gorî vê yekê, X di kîjan komê de ye?"
+        "zh": "主族元素X的逐级电离能(kJ/mol)为：IE1：496，IE2：4562，IE3：6912。据此，X位于哪一族？",
+        "ku": "Enerjiyên îyonîzasyonê yên li pey hev (kJ/mol) yên hêmana koma sereke X ev in: IE1: 496, IE2: 4562, IE3: 6912. Li gorî vê yekê, X di kîjan komê de ye?"
       },
       "options": [
         {
@@ -961,14 +961,14 @@ export const unit02: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "İE1'den İE2'ye geçişte yaklaşık 9.2 kat sıçrama vardır (496 -> 4562). Bu durum 1 değerlik elektronu olduğunu ve 1A grubunda bulunduğunu gösterir.",
-        "en": "There is approximately a 9.2-fold jump in the transition from İE1 to İE2 (496 -> 4562). This indicates that it has 1 valence electron and is in group 1A.",
-        "de": "Beim Übergang von İE1 zu İE2 (496 -> 4562) gibt es einen etwa 9,2-fachen Sprung. Dies zeigt an, dass es 1 Valenzelektron hat und zur Gruppe 1A gehört.",
-        "fr": "Il y a un saut d'environ 9,2 fois dans la transition de İE1 à İE2 (496 -> 4562). Cela indique qu’il possède 1 électron de valence et qu’il appartient au groupe 1A.",
-        "ru": "При переходе от İE1 к İE2 наблюдается примерно 9,2-кратный скачок (496 -> 4562). Это указывает на то, что он имеет 1 валентный электрон и находится в группе 1А.",
-        "ar": "هناك ما يقرب من قفزة 9.2 أضعاف في الانتقال من IES1 إلى IES2 (496 -> 4562). يشير هذا إلى أنه يحتوي على إلكترون تكافؤ واحد ويقع في المجموعة 1A.",
-        "zh": "从 ?E1 到 ?E2 的过渡大约有 9.2 倍的跳跃 (496 -> 4562)。这表明它有 1 个价电子并且属于 1A 族。",
-        "ku": "Di derbasbûna ji İE1 ber bi İE2 (496 -> 4562) bi qasî 9,2 qat bazdanek heye. Ev nîşan dide ku ew 1 elektronek valence heye û di koma 1A de ye."
+        "tr": "İE1'den İE2'ye geçişte yaklaşık 9,2 kat sıçrama vardır (496 -> 4562). Bu durum 1 değerlik elektronu olduğunu ve 1A grubunda bulunduğunu gösterir.",
+        "en": "There is approximately a 9.2-fold jump in the transition from IE1 to IE2 (496 -> 4562). This indicates that it has 1 valence electron and is in group 1A.",
+        "de": "Beim Übergang von IE1 zu IE2 (496 -> 4562) gibt es einen etwa 9,2-fachen Sprung. Dies zeigt an, dass es 1 Valenzelektron hat und zur Gruppe 1A gehört.",
+        "fr": "Il y a un saut d'environ 9,2 fois dans la transition de IE1 à IE2 (496 -> 4562). Cela indique qu’il possède 1 électron de valence et qu’il appartient au groupe 1A.",
+        "ru": "При переходе от IE1 к IE2 наблюдается примерно 9,2-кратный скачок (496 -> 4562). Это указывает на то, что он имеет 1 валентный электрон и находится в группе 1А.",
+        "ar": "هناك ما يقرب من قفزة 9.2 أضعاف في الانتقال من IE1 إلى IE2 (496 -> 4562). يشير هذا إلى أنه يحتوي على إلكترون تكافؤ واحد ويقع في المجموعة 1A.",
+        "zh": "从 IE1 到 IE2 的过渡大约有 9.2 倍的跳跃 (496 -> 4562)。这表明它有 1 个价电子并且属于 1A 族。",
+        "ku": "Di derbasbûna ji IE1 ber bi IE2 (496 -> 4562) bi qasî 9,2 qat bazdanek heye. Ev nîşan dide ku ew 1 elektronek valence heye û di koma 1A de ye."
       }
     },
     {
@@ -976,12 +976,12 @@ export const unit02: ChemistryUnitSeedData = {
       "stem": {
         "tr": "Periyodik sistemde aynı periyotta yer alan elementler için soldan sağa doğru gidildikçe aşağıdakilerden hangisi genellikle azalır?",
         "en": "For elements in the same period in the periodic table, which of the following generally decreases as you move from left to right?",
-        "de": "Welcher der folgenden Werte nimmt für Elemente im gleichen Zeitraum im Periodensystem im Allgemeinen ab, wenn man sich von links nach rechts bewegt?",
+        "de": "Welcher der folgenden Werte nimmt für Elemente derselben Periode im Periodensystem im Allgemeinen ab, wenn man sich von links nach rechts bewegt?",
         "fr": "Pour les éléments de la même période dans le tableau périodique, lequel des éléments suivants diminue généralement à mesure que vous vous déplacez de gauche à droite ?",
         "ru": "Что из следующего обычно уменьшается при движении слева направо для элементов периодической таблицы Менделеева, находящихся в одном и том же периоде?",
         "ar": "بالنسبة للعناصر الموجودة في نفس الفترة في الجدول الدوري، أي مما يلي يتناقص بشكل عام كلما انتقلت من اليسار إلى اليمين؟",
         "zh": "对于元素周期表中同一周期的元素，下列哪项通常随着从左向右移动而减少？",
-        "ku": "Ji bo hêmanên di heman heyamê de di tabloya peryodîk de, dema ku hûn ji çepê ber bi rastê ve diçin, kîjan ji van jêrîn bi gelemperî kêm dibe?"
+        "ku": "Ji bo hêmanên di heman periyodê de di tabloya peryodîk de, dema ku hûn ji çepê ber bi rastê ve diçin, kîjan ji van jêrîn bi gelemperî kêm dibe?"
       },
       "options": [
         {
@@ -992,7 +992,7 @@ export const unit02: ChemistryUnitSeedData = {
           "ru": "Атомный радиус",
           "ar": "نصف القطر الذري",
           "zh": "原子半径",
-          "ku": "Radyoya atomê"
+          "ku": "Nîvçapa atomê"
         },
         {
           "tr": "İyonlaşma enerjisi",
@@ -1012,26 +1012,26 @@ export const unit02: ChemistryUnitSeedData = {
           "ru": "Электроотрицательность",
           "ar": "السالبية الكهربية",
           "zh": "电负性",
-          "ku": "Electronegativity"
+          "ku": "Elektronegatîfî"
         },
         {
           "tr": "Çekirdek yükü",
-          "en": "core load",
-          "de": "Kernbelastung",
-          "fr": "charge de base",
-          "ru": "основная нагрузка",
-          "ar": "الحمل الأساسي",
-          "zh": "核心负荷",
-          "ku": "barkirina bingehîn"
+          "en": "Nuclear charge",
+          "de": "Kernladung",
+          "fr": "Charge nucléaire",
+          "ru": "Заряд ядра",
+          "ar": "الشحنة النووية",
+          "zh": "核电荷",
+          "ku": "Bara navokê"
         },
         {
           "tr": "Ametalik aktiflik",
           "en": "Nonmetallic activity",
           "de": "Nichtmetallische Aktivität",
           "fr": "Activité non métallique",
-          "ru": "Неметаллическая деятельность",
+          "ru": "Неметаллическая активность",
           "ar": "النشاط غير المعدني",
-          "zh": "非金属活动",
+          "zh": "非金属活泼性",
           "ku": "Çalakiya nemetalîk"
         }
       ],
@@ -1044,7 +1044,7 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "По мере увеличения заряда ядра слева направо электроны притягиваются сильнее, а радиус атома уменьшается.",
         "ar": "ومع زيادة الشحنة النووية من اليسار إلى اليمين، تنجذب الإلكترونات بقوة أكبر ويتناقص نصف القطر الذري.",
         "zh": "随着核电荷从左到右增加，电子被更强地吸引，原子半径减小。",
-        "ku": "Her ku barê nukleerî ji çepê ber bi rastê ve zêde dibe, elektron bi hêztir dikşîne û tîrêja atomê kêm dibe."
+        "ku": "Her ku barê nukleerî ji çepê ber bi rastê ve zêde dibe, elektron bi hêztir dikşîne û nîvçapa atomê kêm dibe."
       }
     },
     {
@@ -1082,13 +1082,13 @@ export const unit02: ChemistryUnitSeedData = {
         },
         {
           "tr": "Bohr atom modeline göre elektronlar çekirdek çevresinde belirli enerji düzeylerinde (yörüngelerde) bulunur.",
-          "en": "According to the Bohr atomic model, electrons are located in certain energy levels (orbitals) around the nucleus.",
-          "de": "Nach dem Bohrschen Atommodell befinden sich Elektronen in bestimmten Energieniveaus (Orbitalen) um den Kern.",
-          "fr": "Selon le modèle atomique de Bohr, les électrons sont situés à certains niveaux d'énergie (orbitales) autour du noyau.",
-          "ru": "Согласно атомной модели Бора, электроны располагаются на определенных энергетических уровнях (орбиталях) вокруг ядра.",
+          "en": "According to the Bohr atomic model, electrons are located in certain energy levels (orbits) around the nucleus.",
+          "de": "Nach dem Bohrschen Atommodell befinden sich Elektronen in bestimmten Energieniveaus (Bahnen) um den Kern.",
+          "fr": "Selon le modèle atomique de Bohr, les électrons sont situés à certains niveaux d'énergie (orbites) autour du noyau.",
+          "ru": "Согласно атомной модели Бора, электроны располагаются на определенных энергетических уровнях (орбитах) вокруг ядра.",
           "ar": "وفقا لنموذج بور الذري، توجد الإلكترونات في مستويات طاقة معينة (المدارات) حول النواة.",
           "zh": "根据玻尔原子模型，电子位于原子核周围的某些能级（轨道）中。",
-          "ku": "Li gorî modela atomê ya Bohr, elektron li derdora navokê di hin astên enerjiyê (orbital) de cih digirin."
+          "ku": "Li gorî modela atomê ya Bohr, elektron li derdora navokê di hin astên enerjiyê (rêgeh) de cih digirin."
         },
         {
           "tr": "Anyon oluşurken çekirdekteki proton sayısı artar.",
@@ -1114,13 +1114,13 @@ export const unit02: ChemistryUnitSeedData = {
       "correctIndex": 2,
       "explanation": {
         "tr": "Doğru cevap \"Bohr atom modeline göre elektronlar çekirdek çevresinde belirli enerji düzeylerinde (yörüngelerde) bulunur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"According to the Bohr atomic model, electrons are located in certain energy levels (orbitals) around the nucleus.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Nach dem Bohrschen Atommodell befinden sich Elektronen in bestimmten Energieniveaus (Orbitalen) um den Kern.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Selon le modèle atomique de Bohr, les électrons sont situés à certains niveaux d'énergie (orbitales) autour du noyau.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Согласно атомной модели Бора, электроны располагаются на определенных энергетических уровнях (орбиталях) вокруг ядра.». Фундаментальный химический факт официальной программы.",
+        "en": "The correct statement is: \"According to the Bohr atomic model, electrons are located in certain energy levels (orbits) around the nucleus.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Nach dem Bohrschen Atommodell befinden sich Elektronen in bestimmten Energieniveaus (Bahnen) um den Kern.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Selon le modèle atomique de Bohr, les électrons sont situés à certains niveaux d'énergie (orbites) autour du noyau.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Согласно атомной модели Бора, электроны располагаются на определенных энергетических уровнях (орбитах) вокруг ядра.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"وفقا لنموذج بور الذري، توجد الإلكترونات في مستويات طاقة معينة (المدارات) حول النواة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“根据玻尔原子模型，电子位于原子核周围的某些能级（轨道）中。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Li gorî modela atomê ya Bohr, elektron li derdora navokê di hin astên enerjiyê (orbital) de cih digirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Li gorî modela atomê ya Bohr, elektron li derdora navokê di hin astên enerjiyê (rêgeh) de cih digirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1149,12 +1149,12 @@ export const unit02: ChemistryUnitSeedData = {
         {
           "tr": "Aynı periyotta 3A grubunun iyonlaşma enerjisi daima 2A grubundan büyüktür.",
           "en": "In the same period, the ionization energy of the 3A group is always greater than that of the 2A group.",
-          "de": "Im gleichen Zeitraum ist die Ionisierungsenergie der 3A-Gruppe immer größer als die der 2A-Gruppe.",
+          "de": "In derselben Periode ist die Ionisierungsenergie der 3A-Gruppe immer größer als die der 2A-Gruppe.",
           "fr": "Dans la même période, l'énergie d'ionisation du groupe 3A est toujours supérieure à celle du groupe 2A.",
-          "ru": "В этот же период энергия ионизации группы 3А всегда больше, чем у группы 2А.",
+          "ru": "В одном и том же периоде энергия ионизации группы 3А всегда больше, чем у группы 2А.",
           "ar": "وفي نفس الفترة، تكون طاقة التأين للمجموعة 3A دائمًا أكبر من طاقة التأين للمجموعة 2A.",
-          "zh": "在同一时期，3A基团的电离能总是大于2A基团的电离能。",
-          "ku": "Di heman serdemê de, enerjiya iyonîzasyona koma 3A her gav ji ya koma 2A mezintir e."
+          "zh": "在同一周期中，3A族的电离能总是大于2A族的电离能。",
+          "ku": "Di heman periyodê de, enerjiya iyonîzasyona koma 3A her gav ji ya koma 2A mezintir e."
         },
         {
           "tr": "Moseley periyodik cetveli nötron sayılarına göre dizmiştir.",
@@ -1178,13 +1178,13 @@ export const unit02: ChemistryUnitSeedData = {
         },
         {
           "tr": "Magnezyum bileşiklerinde +1 ve +2 kararlı iyonlarını oluşturur.",
-          "en": "It forms +1 and +2 stable ions in magnesium compounds.",
-          "de": "Es bildet +1 und +2 stabile Ionen in Magnesiumverbindungen.",
-          "fr": "Il forme des ions stables +1 et +2 dans les composés de magnésium.",
-          "ru": "Он образует +1 и +2 стабильные ионы в соединениях магния.",
-          "ar": "وهو يشكل +1 و +2 أيونات مستقرة في مركبات المغنيسيوم.",
-          "zh": "它在镁化合物中形成+1和+2稳定离子。",
-          "ku": "Di pêkhateyên magnesiumê de +1 û +2 îyonên stabîl çêdike."
+          "en": "Magnesium forms stable +1 and +2 ions in its compounds.",
+          "de": "Magnesium bildet in seinen Verbindungen stabile +1- und +2-Ionen.",
+          "fr": "Le magnésium forme des ions stables +1 et +2 dans ses composés.",
+          "ru": "Магний в своих соединениях образует устойчивые ионы +1 и +2.",
+          "ar": "يكوّن المغنيسيوم في مركباته أيونات مستقرة +1 و+2.",
+          "zh": "镁在其化合物中形成稳定的+1和+2离子。",
+          "ku": "Magnezyûm di pêkhateyên xwe de îyonên stabîl ên +1 û +2 çêdike."
         }
       ],
       "correctIndex": 3,
@@ -1223,24 +1223,24 @@ export const unit02: ChemistryUnitSeedData = {
           "ku": "Fransiyûm nemetal e ku xwedî elektronegatîfiya herî bilind e."
         },
         {
-          "tr": "Katyon oluştuğunda çekirdeğin çekim gücü artar.",
-          "en": "When a cation is formed, the gravitational force of the nucleus increases.",
-          "de": "Bei der Bildung eines Kations erhöht sich die Gravitationskraft des Kerns.",
-          "fr": "Lorsqu’un cation se forme, la force gravitationnelle du noyau augmente.",
-          "ru": "При образовании катиона гравитационная сила ядра увеличивается.",
-          "ar": "عندما يتكون الكاتيون، تزداد قوة الجاذبية للنواة.",
-          "zh": "当形成阳离子时，原子核的引力增加。",
-          "ku": "Dema ku katyonek çêbibe, hêza gravîtasyonê ya navokê zêde dibe."
+          "tr": "Katyon oluşurken elektron başına düşen çekim kuvveti azalır.",
+          "en": "When a cation forms, the nuclear attraction per electron decreases.",
+          "de": "Bei der Bildung eines Kations nimmt die Anziehungskraft pro Elektron ab.",
+          "fr": "Lors de la formation d'un cation, la force d'attraction par électron diminue.",
+          "ru": "При образовании катиона сила притяжения, приходящаяся на один электрон, уменьшается.",
+          "ar": "عند تكوّن الكاتيون تقل قوة الجذب لكل إلكترون.",
+          "zh": "形成阳离子时，每个电子受到的核引力减小。",
+          "ku": "Dema ku katyon çêdibe, hêza kêşanê ya ku dikeve ser her elektronekê kêm dibe."
         },
         {
           "tr": "Flor bileşiklerinde +7 yükseltgenme basamağına ulaşabilir.",
-          "en": "It can reach +7 oxidation state in fluorine compounds.",
-          "de": "In Fluorverbindungen kann es eine Oxidationsstufe von +7 erreichen.",
-          "fr": "Il peut atteindre un état d’oxydation de +7 dans les composés fluorés.",
-          "ru": "В соединениях фтора он может достигать степени окисления +7.",
-          "ar": "يمكن أن يصل إلى حالة الأكسدة +7 في مركبات الفلور.",
-          "zh": "在氟化合物中可以达到+7氧化态。",
-          "ku": "Ew dikare di pêkhateyên florînê de bigihîje rewşa oksîdasyonê +7."
+          "en": "Fluorine can reach the +7 oxidation state in its compounds.",
+          "de": "Fluor kann in seinen Verbindungen die Oxidationsstufe +7 erreichen.",
+          "fr": "Le fluor peut atteindre l'état d'oxydation +7 dans ses composés.",
+          "ru": "Фтор в своих соединениях может проявлять степень окисления +7.",
+          "ar": "يمكن أن يصل الفلور في مركباته إلى حالة الأكسدة +7.",
+          "zh": "氟在其化合物中可以达到+7氧化态。",
+          "ku": "Florîn di pêkhateyên xwe de dikare bigihîje rewşa oksîdasyonê ya +7."
         },
         {
           "tr": "Rutherford elektronların sabit dairesel yörüngelerde döndüğünü matematiksel kanıtlamıştır.",
@@ -1260,7 +1260,7 @@ export const unit02: ChemistryUnitSeedData = {
           "ru": "При движении слева направо по таблице Менделеева радиус атома обычно уменьшается, а электроотрицательность увеличивается.",
           "ar": "أثناء انتقالك من اليسار إلى اليمين في الجدول الدوري، يتناقص نصف القطر الذري عمومًا وتزداد السالبية الكهربية.",
           "zh": "当您在元素周期表中从左向右移动时，原子半径通常会减小，电负性会增加。",
-          "ku": "Her ku hûn di tabloya perîyodîk de ji çepê ber bi rastê ve diçin, tîrêjê atomê bi gelemperî kêm dibe û elektronegatîv zêde dibe."
+          "ku": "Her ku hûn di tabloya periyodîk de ji çepê ber bi rastê ve diçin, bi gelemperî nîvçapa atomê kêm dibe û elektronegatîfî zêde dibe."
         }
       ],
       "correctIndex": 4,
@@ -1272,7 +1272,7 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «При движении слева направо по таблице Менделеева радиус атома обычно уменьшается, а электроотрицательность увеличивается.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"أثناء انتقالك من اليسار إلى اليمين في الجدول الدوري، يتناقص نصف القطر الذري عمومًا وتزداد السالبية الكهربية.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“当您在元素周期表中从左向右移动时，原子半径通常会减小，电负性会增加。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Her ku hûn di tabloya perîyodîk de ji çepê ber bi rastê ve diçin, tîrêjê atomê bi gelemperî kêm dibe û elektronegatîv zêde dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Her ku hûn di tabloya periyodîk de ji çepê ber bi rastê ve diçin, bi gelemperî nîvçapa atomê kêm dibe û elektronegatîfî zêde dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1289,14 +1289,14 @@ export const unit02: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Ardışık iyonlaşma enerjisinde 3.5-4 kattan büyük sıçrama değerlik elektron sayısını verir.",
+          "tr": "Ardışık iyonlaşma enerjisinde 3,5-4 kattan büyük sıçrama değerlik elektron sayısını verir.",
           "en": "A jump of more than 3.5-4 times in successive ionization energy gives the number of valence electrons.",
           "de": "Ein Sprung der aufeinanderfolgenden Ionisierungsenergie um mehr als das 3,5- bis 4-fache ergibt die Anzahl der Valenzelektronen.",
           "fr": "Un saut de plus de 3,5 à 4 fois dans l'énergie d'ionisation successive donne le nombre d'électrons de valence.",
           "ru": "Скачок последовательной энергии ионизации более чем в 3,5-4 раза дает число валентных электронов.",
           "ar": "قفزة أكثر من 3.5-4 مرات في طاقة التأين المتعاقبة تعطي عدد إلكترونات التكافؤ.",
           "zh": "连续电离能跳跃超过 3.5-4 倍即可得出价电子数。",
-          "ku": "Di enerjiya ionîzasyonê ya li pey hev de ji 3,5-4 qatan zêdetir ketina jimareya elektronên valence dide."
+          "ku": "Di enerjiya ionîzasyonê ya li pey hev de ji 3,5-4 qatan zêdetir bazdana jimareya elektronên valence dide."
         },
         {
           "tr": "Helyum 8 değerlik elektronuna sahip bir asal gazdır.",
@@ -1341,14 +1341,14 @@ export const unit02: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Ardışık iyonlaşma enerjisinde 3.5-4 kattan büyük sıçrama değerlik elektron sayısını verir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Ardışık iyonlaşma enerjisinde 3,5-4 kattan büyük sıçrama değerlik elektron sayısını verir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"A jump of more than 3.5-4 times in successive ionization energy gives the number of valence electrons.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Ein Sprung der aufeinanderfolgenden Ionisierungsenergie um mehr als das 3,5- bis 4-fache ergibt die Anzahl der Valenzelektronen.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Un saut de plus de 3,5 à 4 fois dans l'énergie d'ionisation successive donne le nombre d'électrons de valence.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Скачок последовательной энергии ионизации более чем в 3,5-4 раза дает число валентных электронов.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"قفزة أكثر من 3.5-4 مرات في طاقة التأين المتعاقبة تعطي عدد إلكترونات التكافؤ.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“连续电离能跳跃超过 3.5-4 倍即可得出价电子数。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di enerjiya ionîzasyonê ya li pey hev de ji 3,5-4 qatan zêdetir ketina jimareya elektronên valence dide.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Di enerjiya ionîzasyonê ya li pey hev de ji 3,5-4 qatan zêdetir bazdana jimareya elektronên valence dide.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1367,12 +1367,12 @@ export const unit02: ChemistryUnitSeedData = {
         {
           "tr": "Aynı periyotta 3A grubunun iyonlaşma enerjisi daima 2A grubundan büyüktür.",
           "en": "In the same period, the ionization energy of the 3A group is always greater than that of the 2A group.",
-          "de": "Im gleichen Zeitraum ist die Ionisierungsenergie der 3A-Gruppe immer größer als die der 2A-Gruppe.",
+          "de": "In derselben Periode ist die Ionisierungsenergie der 3A-Gruppe immer größer als die der 2A-Gruppe.",
           "fr": "Dans la même période, l'énergie d'ionisation du groupe 3A est toujours supérieure à celle du groupe 2A.",
-          "ru": "В этот же период энергия ионизации группы 3А всегда больше, чем у группы 2А.",
+          "ru": "В одном и том же периоде энергия ионизации группы 3А всегда больше, чем у группы 2А.",
           "ar": "وفي نفس الفترة، تكون طاقة التأين للمجموعة 3A دائمًا أكبر من طاقة التأين للمجموعة 2A.",
-          "zh": "在同一时期，3A基团的电离能总是大于2A基团的电离能。",
-          "ku": "Di heman serdemê de, enerjiya iyonîzasyona koma 3A her gav ji ya koma 2A mezintir e."
+          "zh": "在同一周期中，3A族的电离能总是大于2A族的电离能。",
+          "ku": "Di heman periyodê de, enerjiya iyonîzasyona koma 3A her gav ji ya koma 2A mezintir e."
         },
         {
           "tr": "İzoelektronik taneciklerin elektron sayıları ve dizilimleri aynı, proton sayıları farklıdır.",
@@ -1396,13 +1396,13 @@ export const unit02: ChemistryUnitSeedData = {
         },
         {
           "tr": "Magnezyum bileşiklerinde +1 ve +2 kararlı iyonlarını oluşturur.",
-          "en": "It forms +1 and +2 stable ions in magnesium compounds.",
-          "de": "Es bildet +1 und +2 stabile Ionen in Magnesiumverbindungen.",
-          "fr": "Il forme des ions stables +1 et +2 dans les composés de magnésium.",
-          "ru": "Он образует +1 и +2 стабильные ионы в соединениях магния.",
-          "ar": "وهو يشكل +1 و +2 أيونات مستقرة في مركبات المغنيسيوم.",
-          "zh": "它在镁化合物中形成+1和+2稳定离子。",
-          "ku": "Di pêkhateyên magnesiumê de +1 û +2 îyonên stabîl çêdike."
+          "en": "Magnesium forms stable +1 and +2 ions in its compounds.",
+          "de": "Magnesium bildet in seinen Verbindungen stabile +1- und +2-Ionen.",
+          "fr": "Le magnésium forme des ions stables +1 et +2 dans ses composés.",
+          "ru": "Магний в своих соединениях образует устойчивые ионы +1 и +2.",
+          "ar": "يكوّن المغنيسيوم في مركباته أيونات مستقرة +1 و+2.",
+          "zh": "镁在其化合物中形成稳定的+1和+2离子。",
+          "ku": "Magnezyûm di pêkhateyên xwe de îyonên stabîl ên +1 û +2 çêdike."
         },
         {
           "tr": "Bohr modeli çok elektronlu atomların spektrumunu tam olarak açıklamıştır.",
@@ -1441,27 +1441,27 @@ export const unit02: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Katyon oluştuğunda çekirdeğin çekim gücü artar.",
-          "en": "When a cation is formed, the gravitational force of the nucleus increases.",
-          "de": "Bei der Bildung eines Kations erhöht sich die Gravitationskraft des Kerns.",
-          "fr": "Lorsqu’un cation se forme, la force gravitationnelle du noyau augmente.",
-          "ru": "При образовании катиона гравитационная сила ядра увеличивается.",
-          "ar": "عندما يتكون الكاتيون، تزداد قوة الجاذبية للنواة.",
-          "zh": "当形成阳离子时，原子核的引力增加。",
-          "ku": "Dema ku katyonek çêbibe, hêza gravîtasyonê ya navokê zêde dibe."
+          "tr": "Katyon oluşurken elektron başına düşen çekim kuvveti azalır.",
+          "en": "When a cation forms, the nuclear attraction per electron decreases.",
+          "de": "Bei der Bildung eines Kations nimmt die Anziehungskraft pro Elektron ab.",
+          "fr": "Lors de la formation d'un cation, la force d'attraction par électron diminue.",
+          "ru": "При образовании катиона сила притяжения, приходящаяся на один электрон, уменьшается.",
+          "ar": "عند تكوّن الكاتيون تقل قوة الجذب لكل إلكترون.",
+          "zh": "形成阳离子时，每个电子受到的核引力减小。",
+          "ku": "Dema ku katyon çêdibe, hêza kêşanê ya ku dikeve ser her elektronekê kêm dibe."
         },
         {
           "tr": "Flor bileşiklerinde +7 yükseltgenme basamağına ulaşabilir.",
-          "en": "It can reach +7 oxidation state in fluorine compounds.",
-          "de": "In Fluorverbindungen kann es eine Oxidationsstufe von +7 erreichen.",
-          "fr": "Il peut atteindre un état d’oxydation de +7 dans les composés fluorés.",
-          "ru": "В соединениях фтора он может достигать степени окисления +7.",
-          "ar": "يمكن أن يصل إلى حالة الأكسدة +7 في مركبات الفلور.",
-          "zh": "在氟化合物中可以达到+7氧化态。",
-          "ku": "Ew dikare di pêkhateyên florînê de bigihîje rewşa oksîdasyonê +7."
+          "en": "Fluorine can reach the +7 oxidation state in its compounds.",
+          "de": "Fluor kann in seinen Verbindungen die Oxidationsstufe +7 erreichen.",
+          "fr": "Le fluor peut atteindre l'état d'oxydation +7 dans ses composés.",
+          "ru": "Фтор в своих соединениях может проявлять степень окисления +7.",
+          "ar": "يمكن أن يصل الفلور في مركباته إلى حالة الأكسدة +7.",
+          "zh": "氟在其化合物中可以达到+7氧化态。",
+          "ku": "Florîn di pêkhateyên xwe de dikare bigihîje rewşa oksîdasyonê ya +7."
         },
         {
-          "tr": "Flor periyodik sistemin elektronegatifliği en yüksek elementidir (4.0 kabul edilir).",
+          "tr": "Flor periyodik sistemin elektronegatifliği en yüksek elementidir (4,0 kabul edilir).",
           "en": "Fluorine is the element with the highest electronegativity in the periodic system (accepted as 4.0).",
           "de": "Fluor ist das Element mit der höchsten Elektronegativität im Periodensystem (akzeptiert als 4,0).",
           "fr": "Le fluor est l'élément ayant l'électronégativité la plus élevée dans le système périodique (accepté comme 4,0).",
@@ -1493,7 +1493,7 @@ export const unit02: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Flor periyodik sistemin elektronegatifliği en yüksek elementidir (4.0 kabul edilir).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Flor periyodik sistemin elektronegatifliği en yüksek elementidir (4,0 kabul edilir).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Fluorine is the element with the highest electronegativity in the periodic system (accepted as 4.0).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Fluor ist das Element mit der höchsten Elektronegativität im Periodensystem (akzeptiert als 4,0).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Le fluor est l'élément ayant l'électronégativité la plus élevée dans le système périodique (accepté comme 4,0).\". Notion fondamentale du programme officiel de chimie.",
@@ -1548,35 +1548,35 @@ export const unit02: ChemistryUnitSeedData = {
         },
         {
           "tr": "Soy gazlar kararlı oktet/dublet yapısına sahip olduklarından elektron ilgisi ihmal edilecek kadar düşüktür.",
-          "en": "Since noble gases have a stable octet/duplex structure, their electron affinity is negligibly low.",
-          "de": "Da Edelgase eine stabile Oktett-/Duplexstruktur haben, ist ihre Elektronenaffinität vernachlässigbar gering.",
-          "fr": "Étant donné que les gaz rares ont une structure octet/duplex stable, leur affinité électronique est négligeable.",
-          "ru": "Поскольку благородные газы имеют стабильную октетно-дуплексную структуру, их сродство к электрону пренебрежимо мало.",
+          "en": "Since noble gases have a stable octet/duet structure, their electron affinity is negligibly low.",
+          "de": "Da Edelgase eine stabile Oktett-/Duett-Struktur haben, ist ihre Elektronenaffinität vernachlässigbar gering.",
+          "fr": "Étant donné que les gaz rares ont une structure octet/duet stable, leur affinité électronique est négligeable.",
+          "ru": "Поскольку благородные газы имеют стабильную октетную/дублетную структуру, их сродство к электрону пренебрежимо мало.",
           "ar": "نظرًا لأن الغازات النبيلة لها بنية ثمانية/ثنائية مستقرة، فإن تقاربها الإلكتروني منخفض بشكل لا يذكر.",
-          "zh": "由于稀有气体具有稳定的八位组/双链体结构，因此它们的电子亲和力低得可以忽略不计。",
-          "ku": "Ji ber ku gazên hêja xwedan avahiyek oktet/dupleks a stabîl in, girêdana wan a elektron pir kêm e."
+          "zh": "由于稀有气体具有稳定的八隅体/二隅体（双电子）结构，因此它们的电子亲和力低得可以忽略不计。",
+          "ku": "Ji ber ku gazên esîl xwedan avahiyek oktet/dublet a stabîl in, girêdana wan a elektron pir kêm e."
         },
         {
           "tr": "Aynı periyotta soldan sağa gidildikçe iyonlaşma enerjisi daima düzenli artar.",
           "en": "Ionization energy always increases steadily as you move from left to right in the same period.",
-          "de": "Die Ionisierungsenergie nimmt immer stetig zu, wenn man sich im gleichen Zeitraum von links nach rechts bewegt.",
+          "de": "Die Ionisierungsenergie nimmt immer stetig zu, wenn man sich in derselben Periode von links nach rechts bewegt.",
           "fr": "L'énergie d'ionisation augmente toujours régulièrement à mesure que vous vous déplacez de gauche à droite au cours de la même période.",
-          "ru": "Энергия ионизации всегда неуклонно возрастает по мере движения слева направо за один и тот же период.",
+          "ru": "Энергия ионизации всегда неуклонно возрастает по мере движения слева направо в пределах одного периода.",
           "ar": "تزداد طاقة التأين دائمًا بشكل مطرد أثناء انتقالك من اليسار إلى اليمين في نفس الفترة.",
-          "zh": "当您在同一时间段内从左向右移动时，电离能始终稳定增加。",
-          "ku": "Dema ku hûn di heman heyamê de ji çepê ber bi rastê ve diçin, enerjiya ionîzasyonê her gav bi domdarî zêde dibe."
+          "zh": "当您在同一周期中从左向右移动时，电离能始终稳定增加。",
+          "ku": "Dema ku hûn di heman periyodê de ji çepê ber bi rastê ve diçin, enerjiya ionîzasyonê her gav bi domdarî zêde dibe."
         }
       ],
       "correctIndex": 3,
       "explanation": {
         "tr": "Doğru cevap \"Soy gazlar kararlı oktet/dublet yapısına sahip olduklarından elektron ilgisi ihmal edilecek kadar düşüktür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Since noble gases have a stable octet/duplex structure, their electron affinity is negligibly low.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Da Edelgase eine stabile Oktett-/Duplexstruktur haben, ist ihre Elektronenaffinität vernachlässigbar gering.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Étant donné que les gaz rares ont une structure octet/duplex stable, leur affinité électronique est négligeable.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Поскольку благородные газы имеют стабильную октетно-дуплексную структуру, их сродство к электрону пренебрежимо мало.». Фундаментальный химический факт официальной программы.",
+        "en": "The correct statement is: \"Since noble gases have a stable octet/duet structure, their electron affinity is negligibly low.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Da Edelgase eine stabile Oktett-/Duett-Struktur haben, ist ihre Elektronenaffinität vernachlässigbar gering.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Étant donné que les gaz rares ont une structure octet/duet stable, leur affinité électronique est négligeable.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Поскольку благородные газы имеют стабильную октетную/дублетную структуру, их сродство к электрону пренебрежимо мало.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"نظرًا لأن الغازات النبيلة لها بنية ثمانية/ثنائية مستقرة، فإن تقاربها الإلكتروني منخفض بشكل لا يذكر.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“由于稀有气体具有稳定的八位组/双链体结构，因此它们的电子亲和力低得可以忽略不计。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ji ber ku gazên hêja xwedan avahiyek oktet/dupleks a stabîl in, girêdana wan a elektron pir kêm e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "zh": "正确表述为：“由于稀有气体具有稳定的八隅体/二隅体（双电子）结构，因此它们的电子亲和力低得可以忽略不计。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Ji ber ku gazên esîl xwedan avahiyek oktet/dublet a stabîl in, girêdana wan a elektron pir kêm e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1604,13 +1604,13 @@ export const unit02: ChemistryUnitSeedData = {
         },
         {
           "tr": "Magnezyum bileşiklerinde +1 ve +2 kararlı iyonlarını oluşturur.",
-          "en": "It forms +1 and +2 stable ions in magnesium compounds.",
-          "de": "Es bildet +1 und +2 stabile Ionen in Magnesiumverbindungen.",
-          "fr": "Il forme des ions stables +1 et +2 dans les composés de magnésium.",
-          "ru": "Он образует +1 и +2 стабильные ионы в соединениях магния.",
-          "ar": "وهو يشكل +1 و +2 أيونات مستقرة في مركبات المغنيسيوم.",
-          "zh": "它在镁化合物中形成+1和+2稳定离子。",
-          "ku": "Di pêkhateyên magnesiumê de +1 û +2 îyonên stabîl çêdike."
+          "en": "Magnesium forms stable +1 and +2 ions in its compounds.",
+          "de": "Magnesium bildet in seinen Verbindungen stabile +1- und +2-Ionen.",
+          "fr": "Le magnésium forme des ions stables +1 et +2 dans ses composés.",
+          "ru": "Магний в своих соединениях образует устойчивые ионы +1 и +2.",
+          "ar": "يكوّن المغنيسيوم في مركباته أيونات مستقرة +1 و+2.",
+          "zh": "镁在其化合物中形成稳定的+1和+2离子。",
+          "ku": "Magnezyûm di pêkhateyên xwe de îyonên stabîl ên +1 û +2 çêdike."
         },
         {
           "tr": "Bohr modeli çok elektronlu atomların spektrumunu tam olarak açıklamıştır.",
@@ -1640,7 +1640,7 @@ export const unit02: ChemistryUnitSeedData = {
           "ru": "В порядке энергии ионизации за период 2А и 5А больше, чем 3А и 6А из-за сферической симметрии.",
           "ar": "في ترتيب طاقة التأين في الفترة، 2A و5A أكبر من 3A و6A بسبب التناظر الكروي.",
           "zh": "在一个周期内的电离能顺序中，由于球对称性，2A和5A大于3A和6A。",
-          "ku": "Di rêza enerjiya iyonîzasyonê de di heyamekê de, 2A û 5A ji 3A û 6A mezintir in ji ber simetrîya ferîkî."
+          "ku": "Di rêza enerjiya iyonîzasyonê de di periyodekê de, 2A û 5A ji 3A û 6A mezintir in ji ber sîmetriya gogî."
         }
       ],
       "correctIndex": 4,
@@ -1652,7 +1652,7 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «В порядке энергии ионизации за период 2А и 5А больше, чем 3А и 6А из-за сферической симметрии.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"في ترتيب طاقة التأين في الفترة، 2A و5A أكبر من 3A و6A بسبب التناظر الكروي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“在一个周期内的电离能顺序中，由于球对称性，2A和5A大于3A和6A。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di rêza enerjiya iyonîzasyonê de di heyamekê de, 2A û 5A ji 3A û 6A mezintir in ji ber simetrîya ferîkî.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Di rêza enerjiya iyonîzasyonê de di periyodekê de, 2A û 5A ji 3A û 6A mezintir in ji ber sîmetriya gogî.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1676,17 +1676,17 @@ export const unit02: ChemistryUnitSeedData = {
           "ru": "Поскольку электроны отдаются при образовании катиона, радиус частицы всегда уменьшается.",
           "ar": "وبما أن الإلكترونات تتحرر عند تكوين الكاتيون، فإن نصف قطر الجسيم يتناقص دائمًا.",
           "zh": "由于形成阳离子时会释放电子，因此粒子半径总是减小。",
-          "ku": "Ji ber ku dema ku katyonek çêdibe elektron têne dayîn, tîrêjê perçeyê her gav kêm dibe."
+          "ku": "Ji ber ku dema ku katyonek çêdibe elektron têne dayîn, nîvçapa tanecîkê her gav kêm dibe."
         },
         {
           "tr": "Flor bileşiklerinde +7 yükseltgenme basamağına ulaşabilir.",
-          "en": "It can reach +7 oxidation state in fluorine compounds.",
-          "de": "In Fluorverbindungen kann es eine Oxidationsstufe von +7 erreichen.",
-          "fr": "Il peut atteindre un état d’oxydation de +7 dans les composés fluorés.",
-          "ru": "В соединениях фтора он может достигать степени окисления +7.",
-          "ar": "يمكن أن يصل إلى حالة الأكسدة +7 في مركبات الفلور.",
-          "zh": "在氟化合物中可以达到+7氧化态。",
-          "ku": "Ew dikare di pêkhateyên florînê de bigihîje rewşa oksîdasyonê +7."
+          "en": "Fluorine can reach the +7 oxidation state in its compounds.",
+          "de": "Fluor kann in seinen Verbindungen die Oxidationsstufe +7 erreichen.",
+          "fr": "Le fluor peut atteindre l'état d'oxydation +7 dans ses composés.",
+          "ru": "Фтор в своих соединениях может проявлять степень окисления +7.",
+          "ar": "يمكن أن يصل الفلور في مركباته إلى حالة الأكسدة +7.",
+          "zh": "氟在其化合物中可以达到+7氧化态。",
+          "ku": "Florîn di pêkhateyên xwe de dikare bigihîje rewşa oksîdasyonê ya +7."
         },
         {
           "tr": "Rutherford elektronların sabit dairesel yörüngelerde döndüğünü matematiksel kanıtlamıştır.",
@@ -1728,7 +1728,7 @@ export const unit02: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Поскольку электроны отдаются при образовании катиона, радиус частицы всегда уменьшается.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"وبما أن الإلكترونات تتحرر عند تكوين الكاتيون، فإن نصف قطر الجسيم يتناقص دائمًا.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“由于形成阳离子时会释放电子，因此粒子半径总是减小。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ji ber ku dema ku katyonek çêdibe elektron têne dayîn, tîrêjê perçeyê her gav kêm dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Ji ber ku dema ku katyonek çêdibe elektron têne dayîn, nîvçapa tanecîkê her gav kêm dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1756,13 +1756,13 @@ export const unit02: ChemistryUnitSeedData = {
         },
         {
           "tr": "Anyon oluşurken elektron alındığı için elektron başına düşen çekim kuvveti azalır, yarıçap büyür.",
-          "en": "As an electron is removed while an anion is forming, the attractive force per electron decreases and the radius increases.",
-          "de": "Wenn ein Elektron entfernt wird, während sich ein Anion bildet, nimmt die Anziehungskraft pro Elektron ab und der Radius nimmt zu.",
-          "fr": "Lorsqu'un électron est retiré pendant la formation d'un anion, la force d'attraction par électron diminue et le rayon augmente.",
-          "ru": "Поскольку электрон удаляется во время образования аниона, сила притяжения, приходящаяся на электрон, уменьшается, а радиус увеличивается.",
-          "ar": "عند إزالة الإلكترون أثناء تكوين الأنيون، تقل قوة الجذب لكل إلكترون ويزداد نصف القطر.",
-          "zh": "当电子在阴离子形成时被移除时，每个电子的吸引力减小并且半径增大。",
-          "ku": "Gava ku elektronek tê rakirin dema ku anionek çê dibe, hêza balkêş a her elektronê kêm dibe û tîrêj zêde dibe."
+          "en": "Since an electron is gained when an anion forms, the attractive force per electron decreases and the radius increases.",
+          "de": "Da bei der Bildung eines Anions ein Elektron aufgenommen wird, nimmt die Anziehungskraft pro Elektron ab und der Radius nimmt zu.",
+          "fr": "Comme un électron est capté lors de la formation d'un anion, la force d'attraction par électron diminue et le rayon augmente.",
+          "ru": "Поскольку при образовании аниона электрон присоединяется, сила притяжения, приходящаяся на один электрон, уменьшается, а радиус увеличивается.",
+          "ar": "بما أن الإلكترون يُكتسب عند تكوّن الأنيون، تقل قوة الجذب لكل إلكترون ويزداد نصف القطر.",
+          "zh": "形成阴离子时获得电子，因此每个电子受到的引力减小，半径增大。",
+          "ku": "Ji ber ku dema anyon çêdibe elektron tê wergirtin, hêza kêşanê ya her elektronekê kêm dibe û nîvçap zêde dibe."
         },
         {
           "tr": "Thomson çekirdekte nötron bulunduğunu ispatlamıştır.",
@@ -1777,12 +1777,12 @@ export const unit02: ChemistryUnitSeedData = {
         {
           "tr": "Aynı periyotta soldan sağa gidildikçe iyonlaşma enerjisi daima düzenli artar.",
           "en": "Ionization energy always increases steadily as you move from left to right in the same period.",
-          "de": "Die Ionisierungsenergie nimmt immer stetig zu, wenn man sich im gleichen Zeitraum von links nach rechts bewegt.",
+          "de": "Die Ionisierungsenergie nimmt immer stetig zu, wenn man sich in derselben Periode von links nach rechts bewegt.",
           "fr": "L'énergie d'ionisation augmente toujours régulièrement à mesure que vous vous déplacez de gauche à droite au cours de la même période.",
-          "ru": "Энергия ионизации всегда неуклонно возрастает по мере движения слева направо за один и тот же период.",
+          "ru": "Энергия ионизации всегда неуклонно возрастает по мере движения слева направо в пределах одного периода.",
           "ar": "تزداد طاقة التأين دائمًا بشكل مطرد أثناء انتقالك من اليسار إلى اليمين في نفس الفترة.",
-          "zh": "当您在同一时间段内从左向右移动时，电离能始终稳定增加。",
-          "ku": "Dema ku hûn di heman heyamê de ji çepê ber bi rastê ve diçin, enerjiya ionîzasyonê her gav bi domdarî zêde dibe."
+          "zh": "当您在同一周期中从左向右移动时，电离能始终稳定增加。",
+          "ku": "Dema ku hûn di heman periyodê de ji çepê ber bi rastê ve diçin, enerjiya ionîzasyonê her gav bi domdarî zêde dibe."
         },
         {
           "tr": "Fransiyum elektronegatifliği en yüksek ametaldir.",
@@ -1798,13 +1798,13 @@ export const unit02: ChemistryUnitSeedData = {
       "correctIndex": 1,
       "explanation": {
         "tr": "Doğru cevap \"Anyon oluşurken elektron alındığı için elektron başına düşen çekim kuvveti azalır, yarıçap büyür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"As an electron is removed while an anion is forming, the attractive force per electron decreases and the radius increases.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Wenn ein Elektron entfernt wird, während sich ein Anion bildet, nimmt die Anziehungskraft pro Elektron ab und der Radius nimmt zu.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Lorsqu'un électron est retiré pendant la formation d'un anion, la force d'attraction par électron diminue et le rayon augmente.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Поскольку электрон удаляется во время образования аниона, сила притяжения, приходящаяся на электрон, уменьшается, а радиус увеличивается.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"عند إزالة الإلكترون أثناء تكوين الأنيون، تقل قوة الجذب لكل إلكترون ويزداد نصف القطر.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“当电子在阴离子形成时被移除时，每个电子的吸引力减小并且半径增大。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Gava ku elektronek tê rakirin dema ku anionek çê dibe, hêza balkêş a her elektronê kêm dibe û tîrêj zêde dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Since an electron is gained when an anion forms, the attractive force per electron decreases and the radius increases.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Da bei der Bildung eines Anions ein Elektron aufgenommen wird, nimmt die Anziehungskraft pro Elektron ab und der Radius nimmt zu.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Comme un électron est capté lors de la formation d'un anion, la force d'attraction par électron diminue et le rayon augmente.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Поскольку при образовании аниона электрон присоединяется, сила притяжения, приходящаяся на один электрон, уменьшается, а радиус увеличивается.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"بما أن الإلكترون يُكتسب عند تكوّن الأنيون، تقل قوة الجذب لكل إلكترون ويزداد نصف القطر.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“形成阴离子时获得电子，因此每个电子受到的引力减小，半径增大。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Ji ber ku dema anyon çêdibe elektron tê wergirtin, hêza kêşanê ya her elektronekê kêm dibe û nîvçap zêde dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1822,13 +1822,13 @@ export const unit02: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Magnezyum bileşiklerinde +1 ve +2 kararlı iyonlarını oluşturur.",
-          "en": "It forms +1 and +2 stable ions in magnesium compounds.",
-          "de": "Es bildet +1 und +2 stabile Ionen in Magnesiumverbindungen.",
-          "fr": "Il forme des ions stables +1 et +2 dans les composés de magnésium.",
-          "ru": "Он образует +1 и +2 стабильные ионы в соединениях магния.",
-          "ar": "وهو يشكل +1 و +2 أيونات مستقرة في مركبات المغنيسيوم.",
-          "zh": "它在镁化合物中形成+1和+2稳定离子。",
-          "ku": "Di pêkhateyên magnesiumê de +1 û +2 îyonên stabîl çêdike."
+          "en": "Magnesium forms stable +1 and +2 ions in its compounds.",
+          "de": "Magnesium bildet in seinen Verbindungen stabile +1- und +2-Ionen.",
+          "fr": "Le magnésium forme des ions stables +1 et +2 dans ses composés.",
+          "ru": "Магний в своих соединениях образует устойчивые ионы +1 и +2.",
+          "ar": "يكوّن المغنيسيوم في مركباته أيونات مستقرة +1 و+2.",
+          "zh": "镁在其化合物中形成稳定的+1和+2离子。",
+          "ku": "Magnezyûm di pêkhateyên xwe de îyonên stabîl ên +1 û +2 çêdike."
         },
         {
           "tr": "Bohr modeli çok elektronlu atomların spektrumunu tam olarak açıklamıştır.",
@@ -1939,12 +1939,12 @@ export const unit02: ChemistryUnitSeedData = {
         {
           "tr": "Aynı periyotta 3A grubunun iyonlaşma enerjisi daima 2A grubundan büyüktür.",
           "en": "In the same period, the ionization energy of the 3A group is always greater than that of the 2A group.",
-          "de": "Im gleichen Zeitraum ist die Ionisierungsenergie der 3A-Gruppe immer größer als die der 2A-Gruppe.",
+          "de": "In derselben Periode ist die Ionisierungsenergie der 3A-Gruppe immer größer als die der 2A-Gruppe.",
           "fr": "Dans la même période, l'énergie d'ionisation du groupe 3A est toujours supérieure à celle du groupe 2A.",
-          "ru": "В этот же период энергия ионизации группы 3А всегда больше, чем у группы 2А.",
+          "ru": "В одном и том же периоде энергия ионизации группы 3А всегда больше, чем у группы 2А.",
           "ar": "وفي نفس الفترة، تكون طاقة التأين للمجموعة 3A دائمًا أكبر من طاقة التأين للمجموعة 2A.",
-          "zh": "在同一时期，3A基团的电离能总是大于2A基团的电离能。",
-          "ku": "Di heman serdemê de, enerjiya iyonîzasyona koma 3A her gav ji ya koma 2A mezintir e."
+          "zh": "在同一周期中，3A族的电离能总是大于2A族的电离能。",
+          "ku": "Di heman periyodê de, enerjiya iyonîzasyona koma 3A her gav ji ya koma 2A mezintir e."
         }
       ],
       "correctIndex": 3,
@@ -1985,12 +1985,12 @@ export const unit02: ChemistryUnitSeedData = {
         {
           "tr": "Aynı periyotta soldan sağa gidildikçe iyonlaşma enerjisi daima düzenli artar.",
           "en": "Ionization energy always increases steadily as you move from left to right in the same period.",
-          "de": "Die Ionisierungsenergie nimmt immer stetig zu, wenn man sich im gleichen Zeitraum von links nach rechts bewegt.",
+          "de": "Die Ionisierungsenergie nimmt immer stetig zu, wenn man sich in derselben Periode von links nach rechts bewegt.",
           "fr": "L'énergie d'ionisation augmente toujours régulièrement à mesure que vous vous déplacez de gauche à droite au cours de la même période.",
-          "ru": "Энергия ионизации всегда неуклонно возрастает по мере движения слева направо за один и тот же период.",
+          "ru": "Энергия ионизации всегда неуклонно возрастает по мере движения слева направо в пределах одного периода.",
           "ar": "تزداد طاقة التأين دائمًا بشكل مطرد أثناء انتقالك من اليسار إلى اليمين في نفس الفترة.",
-          "zh": "当您在同一时间段内从左向右移动时，电离能始终稳定增加。",
-          "ku": "Dema ku hûn di heman heyamê de ji çepê ber bi rastê ve diçin, enerjiya ionîzasyonê her gav bi domdarî zêde dibe."
+          "zh": "当您在同一周期中从左向右移动时，电离能始终稳定增加。",
+          "ku": "Dema ku hûn di heman periyodê de ji çepê ber bi rastê ve diçin, enerjiya ionîzasyonê her gav bi domdarî zêde dibe."
         },
         {
           "tr": "Fransiyum elektronegatifliği en yüksek ametaldir.",
@@ -2003,14 +2003,14 @@ export const unit02: ChemistryUnitSeedData = {
           "ku": "Fransiyûm nemetal e ku xwedî elektronegatîfiya herî bilind e."
         },
         {
-          "tr": "Katyon oluştuğunda çekirdeğin çekim gücü artar.",
-          "en": "When a cation is formed, the gravitational force of the nucleus increases.",
-          "de": "Bei der Bildung eines Kations erhöht sich die Gravitationskraft des Kerns.",
-          "fr": "Lorsqu’un cation se forme, la force gravitationnelle du noyau augmente.",
-          "ru": "При образовании катиона гравитационная сила ядра увеличивается.",
-          "ar": "عندما يتكون الكاتيون، تزداد قوة الجاذبية للنواة.",
-          "zh": "当形成阳离子时，原子核的引力增加。",
-          "ku": "Dema ku katyonek çêbibe, hêza gravîtasyonê ya navokê zêde dibe."
+          "tr": "Katyon oluşurken elektron başına düşen çekim kuvveti azalır.",
+          "en": "When a cation forms, the nuclear attraction per electron decreases.",
+          "de": "Bei der Bildung eines Kations nimmt die Anziehungskraft pro Elektron ab.",
+          "fr": "Lors de la formation d'un cation, la force d'attraction par électron diminue.",
+          "ru": "При образовании катиона сила притяжения, приходящаяся на один электрон, уменьшается.",
+          "ar": "عند تكوّن الكاتيون تقل قوة الجذب لكل إلكترون.",
+          "zh": "形成阳离子时，每个电子受到的核引力减小。",
+          "ku": "Dema ku katyon çêdibe, hêza kêşanê ya ku dikeve ser her elektronekê kêm dibe."
         },
         {
           "tr": "Alkali metaller (1A) en aktif metallerdir ve suyla şiddetli tepkime vererek H2 gazı açığa çıkarır.",

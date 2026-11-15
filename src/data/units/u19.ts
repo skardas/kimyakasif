@@ -30,12 +30,12 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-f01",
       "fact": {
-        "tr": "25 °C'de suyun otoiyonizasyon sabiti Ksu = [H+] * [OH-] = 1.0x10^-14'tür; pH + pOH = 14'tür.",
+        "tr": "25 °C'de suyun otoiyonizasyon sabiti Ksu = [H+] * [OH-] = 1,0x10^-14'tür; pH + pOH = 14'tür.",
         "en": "The autoionization constant of water at 25 °C is Ksu = [H+] * [OH-] = 1.0x10^-14; pH + pOH = 14.",
         "de": "Die Autoionisierungskonstante von Wasser bei 25 °C beträgt Ksu = [H+] * [OH-] = 1,0x10^-14; pH + pOH = 14.",
         "fr": "La constante d'autoionisation de l'eau à 25 °C est Ksu = [H+] * [OH-] = 1,0x10^-14 ; pH + pOH = 14.",
         "ru": "Константа автоионизации воды при 25 °С равна Ksu = [H+] * [OH-] = 1,0x10^-14; рН + рОН = 14.",
-        "ar": "ثابت التأين الذاتي للماء عند 25 درجة مئوية هو Ksu = [H+] * [OH-] = 1.0x10^-14؛ الرقم الهيدروجيني + الرقم الهيدروجيني = 14.",
+        "ar": "ثابت التأين الذاتي للماء عند 25 °C هو Ksu = [H+] * [OH-] = 1.0x10^-14؛ و pH + pOH = 14.",
         "zh": "25℃时水的自电离常数为Ksu = [H+] * [OH-] = 1.0x10^-14； pH + pOH = 14。",
         "ku": "Hêmana otoyonîzasyona avê di 25 °C de Ksu = [H+] * [OH-] = 1,0x10^-14 e; pH + pOH = 14."
       },
@@ -45,19 +45,19 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Die Summe aus pH + pOH beträgt bei jeder Temperatur definitiv 14.",
         "fr": "La somme pH + pOH à chaque température est définitivement de 14.",
         "ru": "Сумма pH + pOH при каждой температуре определенно равна 14.",
-        "ar": "مجموع الرقم الهيدروجيني + الرقم الهيدروجيني عند كل درجة حرارة هو بالتأكيد 14.",
+        "ar": "مجموع pH + pOH يساوي 14 بالضرورة عند أي درجة حرارة.",
         "zh": "每个温度下 pH + pOH 的总和肯定是 14。",
         "ku": "Di her germahiyê de hejmara pH + pOH bê guman 14 e."
       },
       "osymTip": {
         "tr": "Ksu sıcaklık arttıkça büyür (endotermiktir), bu yüzden sıcaklıkla pH+pOH değişir!",
-        "en": "Kwater grows as temperature increases (it is endothermic), so pH+pOH changes with temperature!",
-        "de": "KWasser wächst mit steigender Temperatur (es ist endotherm), daher ändern sich pH+pOH mit der Temperatur!",
-        "fr": "L'eau K croît à mesure que la température augmente (elle est endothermique), donc pH+pOH change avec la température !",
-        "ru": "Kwater растет с повышением температуры (она эндотермична), поэтому pH+pOH меняется с температурой!",
-        "ar": "ينمو الماء مع ارتفاع درجة الحرارة (وهو ماص للحرارة)، وبالتالي يتغير الرقم الهيدروجيني + pOH مع درجة الحرارة!",
-        "zh": "Kwater 随着温度升高而增加（它是吸热的），因此 pH+pOH 随温度变化！",
-        "ku": "Kwater her ku germahî zêde dibe mezin dibe (ew endotermîk e), lewra pH+pOH bi germahiyê re diguhere!"
+        "en": "Kw increases as temperature increases (autoionization is endothermic), so pH + pOH changes with temperature!",
+        "de": "Kw nimmt mit steigender Temperatur zu (die Autoprotolyse ist endotherm), daher ändert sich pH + pOH mit der Temperatur!",
+        "fr": "Ke augmente avec la température (l'autoprotolyse est endothermique), donc pH + pOH varie avec la température !",
+        "ru": "Kw растёт с повышением температуры (автоионизация эндотермична), поэтому pH + pOH зависит от температуры!",
+        "ar": "يزداد Kw بارتفاع درجة الحرارة (التأين الذاتي ماص للحرارة)، لذلك يتغير مجموع pH + pOH مع درجة الحرارة!",
+        "zh": "Kw随温度升高而增大（水的自电离是吸热的），因此pH + pOH随温度而变！",
+        "ku": "Ksu bi zêdebûna germahiyê mezin dibe (otoiyonîzasyon endotermîk e), ji ber vê pH + pOH bi germahiyê diguhere!"
       }
     },
     {
@@ -86,14 +86,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-f03",
       "fact": {
-        "tr": "Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca)'dır (Ca: asidin başlangıç molaritesi).",
-        "en": "For weak monoproteic acid, [H+] = sqrt(Ka * Ca) (Ca: initial molarity of the acid).",
-        "de": "Für schwache Monoproteinsäure ist [H+] = sqrt(Ka * Ca) (Ca: anfängliche Molarität der Säure).",
-        "fr": "Pour l'acide monoprotéique faible, [H+] = sqrt(Ka * Ca) (Ca : molarité initiale de l'acide).",
-        "ru": "Для слабой монопротеиновой кислоты [H+] = sqrt(Ka * Ca) (Ca: начальная молярность кислоты).",
-        "ar": "بالنسبة للحمض أحادي البروتين الضعيف، [H+] = sqrt(Ka * Ca) (Ca: المولارية الأولية للحمض).",
-        "zh": "对于弱单蛋白酸，[H+] = sqrt(Ka * Ca)（Ca：酸的初始摩尔浓度）。",
-        "ku": "Ji bo asîda monoproteîk a qels, [H+] = sqrt(Ka * Ca) (Ca: molarîteya destpêkê ya asîdê)."
+        "tr": "Zayıf monoprotik asit için [H+] = sqrt(Ka * Ca)'dır (Ca: asidin başlangıç molaritesi).",
+        "en": "For a weak monoprotic acid, [H+] = sqrt(Ka * Ca) (Ca: initial molarity of the acid).",
+        "de": "Für eine schwache einprotonige Säure gilt [H+] = sqrt(Ka * Ca) (Ca: Anfangsmolarität der Säure).",
+        "fr": "Pour un monoacide faible, [H+] = sqrt(Ka * Ca) (Ca : molarité initiale de l'acide).",
+        "ru": "Для слабой одноосновной кислоты [H+] = sqrt(Ka * Ca) (Ca: начальная молярность кислоты).",
+        "ar": "بالنسبة لحمض ضعيف أحادي البروتون، [H+] = sqrt(Ka * Ca) (Ca: المولارية الابتدائية للحمض).",
+        "zh": "对于弱一元酸，[H+] = sqrt(Ka * Ca)（Ca：酸的初始物质的量浓度）。",
+        "ku": "Ji bo asîda qels a monoprotîk, [H+] = sqrt(Ka * Ca) e (Ca: molarîteya destpêkê ya asîdê)."
       },
       "trap": {
         "tr": "Zayıf asidin H+ derişimi başlangıç derişimine eşittir.",
@@ -103,20 +103,20 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Концентрация H+ слабой кислоты равна исходной концентрации.",
         "ar": "تركيز H+ للحمض الضعيف يساوي التركيز الأولي.",
         "zh": "弱酸的H+浓度等于初始浓度。",
-        "ku": "Pîvana H+ ya asîda qels bi kêşeya destpêkê re ye."
+        "ku": "Tîrbûna H+ ya asîda qels bi tîrbûna wê ya destpêkê re wekhev e."
       }
     },
     {
       "id": "u19-f04",
       "fact": {
-        "tr": "Brønsted-Lowry tanımına göre H+ veren asit, H+ alan bazdır; aralarında 1 H+ fark olan çiftlere konjuge (eşlenik) asit-baz denir.",
-        "en": "According to the Brønsted-Lowry definition, an acid that donates H+ is a base that accepts H+; Pairs with a difference of 1 H+ between them are called conjugated acid-base.",
-        "de": "Gemäß der Brønsted-Lowry-Definition ist eine Säure, die H+ abgibt, eine Base, die H+ akzeptiert; Paare mit einem Unterschied von 1 H+ zwischen ihnen werden als konjugierte Säure-Base bezeichnet.",
-        "fr": "Selon la définition de Brønsted-Lowry, un acide qui donne H+ est une base qui accepte H+ ; Les paires avec une différence de 1 H+ entre elles sont appelées acide-base conjuguée.",
-        "ru": "Согласно определению Бренстеда-Лоури, кислота, отдающая H+, является основанием, акцептирующим H+; Пары с разницей между ними в 1 Н+ называются сопряженными кислотно-основными.",
-        "ar": "وفقًا لتعريف برونستد-لوري، فإن الحمض الذي يمنح H+ هو قاعدة تقبل H+؛ تسمى الأزواج التي يكون الفرق بينها 1H+ بقاعدة حمضية مترافقة.",
-        "zh": "根据 Brønsted-Lowry 定义，提供 H+ 的酸是接受 H+ 的碱；相差 1 H+ 的酸碱对称为共轭酸碱对。",
-        "ku": "Li gorî pênaseya Brønsted-Lowry, asîda ku H+ dide bazeke ku H+ qebûl dike; Ji cotên ku di navbera wan de 1 H+ ferqa wan heye, asîda-baza hevgirtî tê gotin."
+        "tr": "Brønsted-Lowry tanımına göre H+ veren tür asit, H+ alan tür bazdır; aralarında 1 H+ fark olan çiftlere konjuge (eşlenik) asit-baz çifti denir.",
+        "en": "According to the Brønsted-Lowry definition, a species that donates H+ is an acid and a species that accepts H+ is a base; pairs that differ by one H+ are called conjugate acid-base pairs.",
+        "de": "Nach Brønsted-Lowry ist ein Teilchen, das H+ abgibt, eine Säure, und ein Teilchen, das H+ aufnimmt, eine Base; Paare, die sich um ein H+ unterscheiden, heißen konjugierte Säure-Base-Paare.",
+        "fr": "Selon Brønsted-Lowry, une espèce qui cède H+ est un acide et une espèce qui capte H+ est une base ; les couples qui diffèrent d'un H+ sont appelés couples acide-base conjugués.",
+        "ru": "По Брёнстеду-Лоури частица, отдающая H+, — кислота, а частица, принимающая H+, — основание; пары, отличающиеся на один H+, называются сопряжёнными кислотно-основными парами.",
+        "ar": "وفق تعريف برونستد-لوري، النوع الذي يمنح H+ حمض، والنوع الذي يستقبل H+ قاعدة؛ والأزواج التي يختلف أفرادها بـ H+ واحد تُسمّى أزواج حمض-قاعدة مترافقة.",
+        "zh": "根据布朗斯特-劳里定义，给出H+的物种是酸，接受H+的物种是碱；相差一个H+的一对物种称为共轭酸碱对。",
+        "ku": "Li gorî pênaseya Brønsted-Lowry, cureya ku H+ dide asîd e û cureya ku H+ digire baz e; cotên ku 1 H+ ferqa wan heye cotên asîd-baz ên hevgirtî (konjuge) tên gotin."
       },
       "trap": {
         "tr": "Eşlenik asit-baz çiftleri arasında 2 elektron farkı bulunur.",
@@ -234,14 +234,14 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-f09",
       "fact": {
-        "tr": "Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00'dir.",
-        "en": "In the strong acid - strong base titration, the pH at the equivalence point is exactly 7.00.",
-        "de": "Bei der Titration starke Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt genau 7,00.",
-        "fr": "Dans le titrage acide fort - base forte, le pH au point d’équivalence est exactement de 7,00.",
-        "ru": "При титровании сильной кислотой и сильным основанием pH в точке эквивалентности составляет ровно 7,00.",
-        "ar": "في معايرة حمض قوي - قاعدة قوية، يكون الرقم الهيدروجيني عند نقطة التكافؤ 7.00 بالضبط.",
-        "zh": "在强酸-强碱滴定中，等当点的pH值恰好为7.00。",
-        "ku": "Di tîtrasyona asîd-bazek xurt de, pH li xala hevsengiyê tam 7.00 e."
+        "tr": "Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 25 °C'de 7,00'dir.",
+        "en": "In a strong acid - strong base titration, the pH at the equivalence point is 7.00 at 25 °C.",
+        "de": "Bei der Titration starke Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt bei 25 °C 7,00.",
+        "fr": "Dans le titrage acide fort - base forte, le pH au point d'équivalence est de 7,00 à 25 °C.",
+        "ru": "При титровании сильной кислоты сильным основанием pH в точке эквивалентности при 25 °C равен 7,00.",
+        "ar": "في معايرة حمض قوي بقاعدة قوية يكون pH عند نقطة التكافؤ 7.00 عند 25 °C.",
+        "zh": "在强酸-强碱滴定中，25 °C时等当点的pH为7.00。",
+        "ku": "Di tîtrasyona asîda xurt - baza xurt de, li 25 °C pH di xala hevwateyê de 7,00 e."
       },
       "trap": {
         "tr": "Kuvvetli asit kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 0'dır.",
@@ -251,7 +251,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При титровании сильной кислотой и сильным основанием pH равен 0 в точке эквивалентности.",
         "ar": "في معايرة حمض قوي بقاعدة قوية، يكون الرقم الهيدروجيني 0 عند نقطة التكافؤ.",
         "zh": "在强酸强碱滴定中，等当点的pH值为0。",
-        "ku": "Di titrasyonek bingehîn a bihêz a asîdê de, pH di xala hevkêşiyê de 0 ye."
+        "ku": "Di tîtrasyona asîda xurt - baza xurt de, pH di xala hevwateyê de 0 ye."
       }
     },
     {
@@ -291,13 +291,13 @@ export const unit19: ChemistryUnitSeedData = {
       },
       "trap": {
         "tr": "Ka'sı küçük olan asit daha kuvvetlidir.",
-        "en": "The acid with smaller muscles is stronger.",
-        "de": "Bei kleineren Muskeln ist die Säure stärker.",
-        "fr": "L'acide avec des muscles plus petits est plus fort.",
-        "ru": "Кислота с меньшими мышцами сильнее.",
-        "ar": "الحمض ذو العضلات الأصغر يكون أقوى.",
-        "zh": "肌肉越小，酸越强。",
-        "ku": "Asîda bi masûlkeyên piçûktir bihêztir e."
+        "en": "The acid with the smaller Ka is the stronger acid.",
+        "de": "Die Säure mit dem kleineren Ka ist die stärkere Säure.",
+        "fr": "L'acide dont le Ka est le plus petit est le plus fort.",
+        "ru": "Кислота с меньшим Ka является более сильной.",
+        "ar": "الحمض ذو قيمة Ka الأصغر هو الأقوى.",
+        "zh": "Ka较小的酸酸性更强。",
+        "ku": "Asîda ku Ka ya wê piçûktir e bihêztir e."
       }
     },
     {
@@ -310,7 +310,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Если к раствору слабой кислоты добавить чистую воду и разбавить ее, процент ионизации возрастает; но концентрация H+ уменьшается (рН увеличивается).",
         "ar": "إذا أضيف الماء النقي إلى محلول حمضي ضعيف وتم تخفيفه، تزداد نسبة التأين؛ لكن تركيز H+ يتناقص (يزيد الرقم الهيدروجيني).",
         "zh": "如果将纯水加入到弱酸溶液中并稀释，电离的百分比会增加；但 H+ 浓度降低（pH 值升高）。",
-        "ku": "Ger ava paqij li çareseriyek asîdê ya qels were zêdekirin û were rijandin, rêjeya îyonîzasyonê zêde dibe; lê giraniya H+ kêm dibe (pH zêde dibe)."
+        "ku": "Ger ava saf li çareseriya asîdeke qels were zêdekirin û sist bibe, rêjeya îyonîzasyonê zêde dibe; lê tîrbûna H+ kêm dibe (pH zêde dibe)."
       },
       "trap": {
         "tr": "Zayıf asit seyreltildiğinde H+ derişimi artar.",
@@ -320,30 +320,30 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "При разбавлении слабой кислоты концентрация H+ увеличивается.",
         "ar": "عند تخفيف حمض ضعيف يزداد تركيز H+.",
         "zh": "当弱酸被稀释时，H+浓度增加。",
-        "ku": "Dema ku asîdek qels tê rijandin, tansiyona H+ zêde dibe."
+        "ku": "Dema ku asîdeke qels tê sistkirin, tîrbûna H+ zêde dibe."
       }
     },
     {
       "id": "u19-f13",
       "fact": {
         "tr": "Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb'dir (Z: tesir/etki değerliği).",
-        "en": "At the point of equivalence, the formula is: Ma * Va * Za = Mb * Vb * Zb (Z: potency).",
-        "de": "Am Äquivalenzpunkt lautet die Formel: Ma * Va * Za = Mb * Vb * Zb (Z: Potenz).",
-        "fr": "Au point d'équivalence, la formule est : Ma * Va * Za = Mb * Vb * Zb (Z : puissance).",
-        "ru": "В точке эквивалентности формула такова: Ma * Va * Za = Mb * Vb * Zb (Z: потенция).",
-        "ar": "عند نقطة التكافؤ، تكون الصيغة: Ma * Va * Za = Mb * Vb * Zb (Z: فاعلية).",
-        "zh": "在等价点，公式为：Ma * Va * Za = Mb * Vb * Zb（Z：效力）。",
-        "ku": "Di xala hevdengiyê de, formula ev e: Ma * Va * Za = Mb * Vb * Zb (Z: hêz)."
+        "en": "At the equivalence point the formula is: Ma * Va * Za = Mb * Vb * Zb (Z: number of H+ or OH- ions released per formula unit).",
+        "de": "Am Äquivalenzpunkt gilt: Ma * Va * Za = Mb * Vb * Zb (Z: Anzahl der pro Formeleinheit abgegebenen H+- bzw. OH--Ionen).",
+        "fr": "Au point d'équivalence, la formule est : Ma * Va * Za = Mb * Vb * Zb (Z : nombre d'ions H+ ou OH- libérés par unité de formule).",
+        "ru": "В точке эквивалентности: Ma * Va * Za = Mb * Vb * Zb (Z: число ионов H+ или OH-, отдаваемых одной формульной единицей).",
+        "ar": "عند نقطة التكافؤ تكون الصيغة: Ma * Va * Za = Mb * Vb * Zb (Z: عدد أيونات H+ أو OH- التي تطلقها وحدة الصيغة).",
+        "zh": "在等当点：Ma * Va * Za = Mb * Vb * Zb（Z：每个化学式单位释放的H+或OH-数目）。",
+        "ku": "Di xala hevwateyê de formul ev e: Ma * Va * Za = Mb * Vb * Zb (Z: hejmara îyonên H+ an OH- yên ku yek yekeya formulê dide)."
       },
       "trap": {
         "tr": "Titrasyonda tesir değerliği dikkate alınmaz.",
-        "en": "Potency is not taken into account in titration.",
-        "de": "Die Potenz wird bei der Titration nicht berücksichtigt.",
-        "fr": "La puissance n'est pas prise en compte lors du titrage.",
-        "ru": "Потенциал не учитывается при титровании.",
-        "ar": "لا تؤخذ الفاعلية بعين الاعتبار في المعايرة.",
-        "zh": "滴定时不考虑效价。",
-        "ku": "Potansiyel di titrasyonê de nayê hesibandin."
+        "en": "In titration, the number of H+ or OH- ions per formula unit (Z) is not taken into account.",
+        "de": "Bei der Titration wird die Anzahl der H+- bzw. OH--Ionen pro Formeleinheit (Z) nicht berücksichtigt.",
+        "fr": "Lors d'un titrage, le nombre d'ions H+ ou OH- par unité de formule (Z) n'est pas pris en compte.",
+        "ru": "При титровании число ионов H+ или OH- на формульную единицу (Z) не учитывается.",
+        "ar": "في المعايرة لا يؤخذ عدد أيونات H+ أو OH- لكل وحدة صيغة (Z) بعين الاعتبار.",
+        "zh": "滴定时不考虑每个化学式单位释放的H+或OH-数目（Z）。",
+        "ku": "Di tîtrasyonê de hejmara îyonên H+ an OH- yên her yekeya formulê (Z) nayê hesibandin."
       }
     },
     {
@@ -352,31 +352,31 @@ export const unit19: ChemistryUnitSeedData = {
         "tr": "HCl, HNO3, H2SO4 kuvvetli asit; HF, HCN, CH3COOH (sirke asidi) zayıf asitlerdir.",
         "en": "HCl, HNO3, H2SO4 strong acid; HF, HCN, CH3COOH (vinegar acid) are weak acids.",
         "de": "HCl, HNO3, H2SO4 starke Säure; HF, HCN, CH3COOH (Essigsäure) sind schwache Säuren.",
-        "fr": "HCl, HNO3, H2SO4 acide fort ; HF, HCN, CH3COOH (acide vinaigre) sont des acides faibles.",
+        "fr": "HCl, HNO3, H2SO4 sont des acides forts ; HF, HCN, CH3COOH (acide acétique) sont des acides faibles.",
         "ru": "HCl, HNO3, H2SO4 сильная кислота; HF, HCN, CH3COOH (уксусная кислота) – слабые кислоты.",
-        "ar": "حمض الهيدروكلوريك، HNO3، H2SO4 حمض قوي؛ HF، HCN، CH3COOH (حمض الخل) هي أحماض ضعيفة.",
+        "ar": "HCl و HNO3 و H2SO4 أحماض قوية؛ و HF و HCN و CH3COOH (حمض الخل) أحماض ضعيفة.",
         "zh": "HCl、HNO3、H2SO4强酸； HF、HCN、CH3COOH（醋酸）是弱酸。",
         "ku": "HCl, HNO3, H2SO4 asîdê xurt; HF, HCN, CH3COOH (asîda sîrkeyê) asîdên qels in."
       },
       "trap": {
-        "tr": "HF camı erittiği için en kuvvetli asittir.",
-        "en": "HF is the strongest acid because it melts glass.",
-        "de": "HF ist die stärkste Säure, da sie Glas schmilzt.",
-        "fr": "Le HF est l'acide le plus fort car il fait fondre le verre.",
-        "ru": "HF — самая сильная кислота, потому что она плавит стекло.",
-        "ar": "HF هو أقوى حمض لأنه يذيب الزجاج.",
-        "zh": "HF 是最强的酸，因为它可以熔化玻璃。",
-        "ku": "HF asîda herî xurt e ji ber ku camê dihelîne."
+        "tr": "HF camı aşındırdığı için en kuvvetli asittir.",
+        "en": "HF is the strongest acid because it etches glass.",
+        "de": "HF ist die stärkste Säure, weil sie Glas ätzt.",
+        "fr": "HF est l'acide le plus fort car il attaque le verre.",
+        "ru": "HF — самая сильная кислота, потому что она разъедает стекло.",
+        "ar": "HF هو أقوى حمض لأنه يُذيب (يتآكل) الزجاج.",
+        "zh": "HF是最强的酸，因为它能腐蚀玻璃。",
+        "ku": "HF asîda herî xurt e ji ber ku camê dixwe (diqelişîne)."
       },
       "osymTip": {
-        "tr": "HF zayıf asittir; camı eritmesi kimyasal özel afinitesindendir!",
-        "en": "HF is a weak acid; Melting glass is due to its special chemical affinity!",
-        "de": "HF ist eine schwache Säure; Das Schmelzen von Glas ist auf seine besondere chemische Affinität zurückzuführen!",
-        "fr": "Le HF est un acide faible ; La fonte du verre est due à son affinité chimique particulière !",
-        "ru": "HF – слабая кислота; Плавление стекла происходит благодаря его особому химическому сродству!",
-        "ar": "HF حمض ضعيف. ذوبان الزجاج يرجع إلى تقاربه الكيميائي الخاص!",
-        "zh": "HF是弱酸；玻璃的熔化是由于其特殊的化学亲和力！",
-        "ku": "HF asîdeke qels e; Şilbûna şûşê ji ber girêdana wê ya kîmyewî ya taybetî ye!"
+        "tr": "HF zayıf asittir; camı aşındırması asit kuvvetinden değil, camdaki SiO2 ile tepkimeye girip SiF4 oluşturmasındandır!",
+        "en": "HF is a weak acid; it etches glass not because of its acid strength but because it reacts with the SiO2 in glass to form SiF4!",
+        "de": "HF ist eine schwache Säure; sie ätzt Glas nicht wegen ihrer Säurestärke, sondern weil sie mit dem SiO2 des Glases zu SiF4 reagiert!",
+        "fr": "HF est un acide faible ; il attaque le verre non pas à cause de sa force acide, mais parce qu'il réagit avec le SiO2 du verre pour former SiF4 !",
+        "ru": "HF — слабая кислота; она разъедает стекло не из-за силы кислоты, а потому что реагирует с SiO2 стекла, образуя SiF4!",
+        "ar": "HF حمض ضعيف؛ وتآكله للزجاج ليس بسبب قوته الحمضية بل لأنه يتفاعل مع SiO2 في الزجاج مكوّنًا SiF4!",
+        "zh": "HF是弱酸；它腐蚀玻璃不是因为酸性强，而是因为它与玻璃中的SiO2反应生成SiF4！",
+        "ku": "HF asîdeke qels e; camê dixwe ne ji ber hêza asîdiyê, lê ji ber ku bi SiO2 ya camê re reaksiyon dike û SiF4 çêdike!"
       }
     },
     {
@@ -386,8 +386,8 @@ export const unit19: ChemistryUnitSeedData = {
         "en": "NaOH, KOH strong base; NH3 (ammonia) is a weak base.",
         "de": "NaOH, KOH starke Base; NH3 (Ammoniak) ist eine schwache Base.",
         "fr": "NaOH, KOH base forte ; NH3 (ammoniac) est une base faible.",
-        "ru": "NaOH, КОН сильное основание; NH3 (аммиак) – слабое основание.",
-        "ar": "هيدروكسيد الصوديوم، كوه قاعدة قوية؛ NH3 (الأمونيا) قاعدة ضعيفة.",
+        "ru": "NaOH, KOH — сильные основания; NH3 (аммиак) — слабое основание.",
+        "ar": "NaOH و KOH قاعدتان قويتان؛ NH3 (الأمونيا) قاعدة ضعيفة.",
         "zh": "NaOH、KOH强碱； NH3（氨）是弱碱。",
         "ku": "NaOH, KOH bingeha xurt; NH3 (ammoniak) bingeheke qels e."
       },
@@ -396,7 +396,7 @@ export const unit19: ChemistryUnitSeedData = {
         "en": "NH3 is a strong base.",
         "de": "NH3 ist eine starke Base.",
         "fr": "NH3 est une base forte.",
-        "ru": "NH3 – сильная база.",
+        "ru": "NH3 — сильное основание.",
         "ar": "NH3 قاعدة قوية .",
         "zh": "NH3 是强碱。",
         "ku": "NH3 bingehek xurt e."
@@ -455,7 +455,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Starke Säure ionisiert in Wasser zu 100 % (hat kein Ka); Die schwache Säure ionisiert teilweise und stellt ein Gleichgewicht her (Ka ist vorhanden).",
         "fr": "L'acide fort s'ionise à 100 % dans l'eau (n'a pas de Ka) ; L'acide faible s'ionise partiellement et établit l'équilibre (Ka est présent).",
         "ru": "Сильная кислота на 100% ионизируется в воде (не имеет Ка); Слабая кислота частично ионизируется и устанавливает равновесие (присутствует Ка).",
-        "ar": "يتأين الحمض القوي بنسبة 100% في الماء (لا يحتوي على كا)؛ يتأين الحمض الضعيف جزئيًا ويحقق التوازن (يوجد Ka).",
+        "ar": "يتأين الحمض القوي في الماء بنسبة 100% (ليس له Ka)؛ ويتأين الحمض الضعيف جزئيًا ويكوّن اتزانًا (له Ka).",
         "zh": "强酸在水中100%电离（无Ka）；弱酸部分电离并建立平衡（Ka 存在）。",
         "ku": "Asîda xurt 100% di avê de îyonîze dike (Ka tune); Asîda qels qismî ionîze dike û hevsengiyê saz dike (Ka heye)."
       }
@@ -496,34 +496,34 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-c03",
       "conceptA": {
-        "tr": "Kuvvetli Asit (HCl)",
-        "en": "Strong Acid (HCl)",
-        "de": "Starke Säure (HCl)",
-        "fr": "Acide fort (HCl)",
-        "ru": "Сильная кислота (HCl)",
-        "ar": "حمض قوي (حمض الهيدروكلوريك)",
-        "zh": "强酸（HCl）",
-        "ku": "Asîda Xurt (HCl)"
+        "tr": "Kuvvetli Baz (NaOH)",
+        "en": "Strong Base (NaOH)",
+        "de": "Starke Base (NaOH)",
+        "fr": "Base forte (NaOH)",
+        "ru": "Сильное основание (NaOH)",
+        "ar": "قاعدة قوية (NaOH)",
+        "zh": "强碱（NaOH）",
+        "ku": "Baza Xurt (NaOH)"
       },
       "conceptB": {
-        "tr": "Zayıf Asit (HF)",
-        "en": "Weak Acid (HF)",
-        "de": "Schwache Säure (HF)",
-        "fr": "Acide faible (HF)",
-        "ru": "Слабая кислота (HF)",
-        "ar": "حمض ضعيف (HF)",
-        "zh": "弱酸（HF）",
-        "ku": "Asîda qels (HF)"
+        "tr": "Zayıf Baz (NH3)",
+        "en": "Weak Base (NH3)",
+        "de": "Schwache Base (NH3)",
+        "fr": "Base faible (NH3)",
+        "ru": "Слабое основание (NH3)",
+        "ar": "قاعدة ضعيفة (NH3)",
+        "zh": "弱碱（NH3）",
+        "ku": "Baza Qels (NH3)"
       },
       "distinction": {
-        "tr": "HCl suda %100 iyonlaşarak pH = -log Ca olur; HF suda az iyonlaşır ve [H+] = karekök(Ka.Ca) dengesi kurar.",
-        "en": "HCl ionizes 100% in water and becomes pH = -log Ca; HF ionizes less in water and establishes [H+] = square root (Ka.Ca) balance.",
-        "de": "HCl ionisiert in Wasser zu 100 % und wird pH = -log Ca; HF ionisiert in Wasser weniger und stellt ein [H+] = Quadratwurzel (Ka.Ca)-Gleichgewicht her.",
-        "fr": "HCl s'ionise à 100 % dans l'eau et devient pH = -log Ca ; Le HF s'ionise moins dans l'eau et établit l'équilibre [H+] = racine carrée (Ka.Ca).",
-        "ru": "HCl ионизируется на 100% в воде и становится pH = -log Ca; HF меньше ионизируется в воде и устанавливает баланс [H+] = квадратный корень (Ka.Ca).",
-        "ar": "يتأين حمض الهيدروكلوريك بنسبة 100% في الماء ويصبح الرقم الهيدروجيني = -log Ca؛ يتأين HF بشكل أقل في الماء ويؤسس توازن [H+] = الجذر التربيعي (Ka.Ca).",
-        "zh": "HCl 在水中 100% 电离，变成 pH = -log Ca； HF 在水中电离较少，并建立 [H+] = 平方根 (Ka.Ca) 平衡。",
-        "ku": "HCl di avê de %100 iyonîze dibe û dibe pH = -log Ca; HF di avê de kêmtir îyonîze dike û hevsengiya [H+] = koka çargoşe (Ka.Ca) saz dike."
+        "tr": "NaOH suda %100 iyonlaşır ve pOH = -log Cb olur; NH3 sudan kısmen H+ alarak OH- oluşturur ve [OH-] = karekök(Kb.Cb) dengesi kurar.",
+        "en": "NaOH ionizes 100% in water so pOH = -log Cb; NH3 partially accepts H+ from water to form OH- and sets up the equilibrium [OH-] = square root(Kb.Cb).",
+        "de": "NaOH ionisiert in Wasser zu 100 %, also pOH = -log Cb; NH3 nimmt teilweise H+ aus Wasser auf, bildet OH- und stellt das Gleichgewicht [OH-] = Quadratwurzel(Kb.Cb) ein.",
+        "fr": "NaOH s'ionise à 100 % dans l'eau, donc pOH = -log Cb ; NH3 capte partiellement H+ de l'eau en formant OH- et établit l'équilibre [OH-] = racine carrée(Kb.Cb).",
+        "ru": "NaOH ионизируется в воде на 100 %, поэтому pOH = -log Cb; NH3 частично принимает H+ от воды, образуя OH-, и устанавливает равновесие [OH-] = квадратный корень(Kb.Cb).",
+        "ar": "يتأين NaOH في الماء بنسبة 100% فيكون pOH = -log Cb؛ أما NH3 فيستقبل H+ من الماء جزئيًا مكوّنًا OH- ويكوّن الاتزان [OH-] = الجذر التربيعي(Kb.Cb).",
+        "zh": "NaOH在水中100%电离，pOH = -log Cb；NH3从水中部分接受H+生成OH-，建立平衡[OH-] = 平方根(Kb.Cb)。",
+        "ku": "NaOH di avê de %100 îyonîze dibe û pOH = -log Cb ye; NH3 ji avê qismî H+ digire, OH- çêdike û hevsengiya [OH-] = koka çargoşe(Kb.Cb) saz dike."
       }
     },
     {
@@ -533,30 +533,30 @@ export const unit19: ChemistryUnitSeedData = {
         "en": "Acid Dissociation Constant (Ka)",
         "de": "Säuredissoziationskonstante (Ka)",
         "fr": "Constante de dissociation acide (Ka)",
-        "ru": "Константа диссоциации кислоты (Ка)",
+        "ru": "Константа диссоциации кислоты (Ka)",
         "ar": "ثابت تفكك الحمض (Ka)",
         "zh": "酸解离常数 (Ka)",
-        "ku": "Berdewamiya Veqetîna Asîdê (Ka)"
+        "ku": "Sabîta Veqetîna Asîdê (Ka)"
       },
       "conceptB": {
         "tr": "Baz Ayrışma Sabiti (Kb)",
         "en": "Base Dissociation Constant (Kb)",
         "de": "Basendissoziationskonstante (Kb)",
         "fr": "Constante de dissociation de base (Kb)",
-        "ru": "Базовая константа диссоциации (Кб)",
-        "ar": "ثابت التفكك الأساسي (كيلو بايت)",
-        "zh": "碱基解离常数 (Kb)",
-        "ku": "Berdewamiya Veqetandina Bingehê (Kb)"
+        "ru": "Константа диссоциации основания (Kb)",
+        "ar": "ثابت تأين القاعدة (Kb)",
+        "zh": "碱解离常数 (Kb)",
+        "ku": "Sabîta Veqetîna Bazê (Kb)"
       },
       "distinction": {
-        "tr": "Ka asidin kuvvetini ve iyonlaşma dengesini belirtir; eşlenik asit-baz çiftinde Ka . Kb = Ksu = 10^-14'tür.",
-        "en": "Ka indicates the strength and ionization balance of the acid; Ka in the conjugate acid-base pair. Kb = Ksu = 10^-14.",
-        "de": "Ka gibt die Stärke und das Ionisierungsgleichgewicht der Säure an; Ka im konjugierten Säure-Base-Paar. Kb = Ksu = 10^-14.",
-        "fr": "Ka indique la force et l'équilibre d'ionisation de l'acide ; Ka dans la paire acide-base conjuguée. Ko = Ksu = 10^-14.",
-        "ru": "Ка указывает на силу и ионизационный баланс кислоты; Ка в сопряженной кислотно-основной паре. Кб = Ксу = 10^-14.",
-        "ar": "يشير Ka إلى قوة الحمض وتوازن التأين فيه؛ Ka في الزوج المترافق من حمض وقاعدة. كيلو بايت = Ksu = 10^-14.",
-        "zh": "Ka表示酸的强度和电离平衡；共轭酸碱对中的 Ka。 Kb = Ksu = 10^-14。",
-        "ku": "Ka balansa hêz û iyonîzasyona asîdê nîşan dide; Ka di cotek asîd-bazê ya konjugate de. Kb = Ksu = 10^-14."
+        "tr": "Ka asidin kuvvetini ve iyonlaşma dengesini belirtir; eşlenik asit-baz çiftinde Ka * Kb = Ksu = 10^-14'tür (25 °C).",
+        "en": "Ka expresses the strength and ionization equilibrium of an acid; for a conjugate acid-base pair, Ka * Kb = Ksu = 10^-14 (25 °C).",
+        "de": "Ka gibt die Stärke und das Ionisationsgleichgewicht einer Säure an; für ein konjugiertes Säure-Base-Paar gilt Ka * Kb = Ksu = 10^-14 (25 °C).",
+        "fr": "Ka exprime la force et l'équilibre d'ionisation d'un acide ; pour un couple acide-base conjugué, Ka * Kb = Ksu = 10^-14 (25 °C).",
+        "ru": "Ka выражает силу кислоты и её равновесие ионизации; для сопряжённой кислотно-основной пары Ka * Kb = Ksu = 10^-14 (25 °C).",
+        "ar": "يعبّر Ka عن قوة الحمض واتزان تأينه؛ وفي زوج حمض-قاعدة مترافق يكون Ka * Kb = Ksu = 10^-14 (عند 25 °C).",
+        "zh": "Ka表示酸的强度和电离平衡；对共轭酸碱对，Ka * Kb = Ksu = 10^-14（25 °C）。",
+        "ku": "Ka hêz û hevsengiya îyonîzasyonê ya asîdê nîşan dide; di cotek asîd-baz a hevgirtî de Ka * Kb = Ksu = 10^-14 e (25 °C)."
       }
     },
     {
@@ -567,7 +567,7 @@ export const unit19: ChemistryUnitSeedData = {
         "de": "Pufferlösung",
         "fr": "Solution tampon",
         "ru": "Буферный раствор",
-        "ar": "الحل العازلة",
+        "ar": "المحلول المنظم",
         "zh": "缓冲液",
         "ku": "Çareseriya tampon"
       },
@@ -576,8 +576,8 @@ export const unit19: ChemistryUnitSeedData = {
         "en": "Neutral Solution",
         "de": "Neutrale Lösung",
         "fr": "Solution neutre",
-        "ru": "Нейтральное решение",
-        "ar": "حل محايد",
+        "ru": "Нейтральный раствор",
+        "ar": "المحلول المتعادل",
         "zh": "中性溶液",
         "ku": "Çareseriya Bêalî"
       },
@@ -595,67 +595,67 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-c06",
       "conceptA": {
-        "tr": "Eşdeğerlik Noktası (Dönüm Noktası)",
-        "en": "Equivalence Point (Turning Point)",
-        "de": "Äquivalenzpunkt (Wendepunkt)",
-        "fr": "Point d’équivalence (point tournant)",
-        "ru": "Точка эквивалентности (поворотный момент)",
-        "ar": "نقطة التكافؤ (نقطة التحول)",
-        "zh": "当量点（转折点）",
-        "ku": "Xala Wekheviyê (Xala Zivirandinê)"
+        "tr": "Arrhenius Asidi",
+        "en": "Arrhenius Acid",
+        "de": "Arrhenius-Säure",
+        "fr": "Acide d'Arrhenius",
+        "ru": "Кислота Аррениуса",
+        "ar": "حمض أرهينيوس",
+        "zh": "阿伦尼乌斯酸",
+        "ku": "Asîda Arrhenius"
       },
       "conceptB": {
-        "tr": "Nötrleşme Noktası (pH = 7)",
-        "en": "Neutralization Point (pH = 7)",
-        "de": "Neutralisationspunkt (pH = 7)",
-        "fr": "Point de neutralisation (pH = 7)",
-        "ru": "Точка нейтрализации (pH = 7)",
-        "ar": "نقطة التعادل (الرقم الهيدروجيني = 7)",
-        "zh": "中和点（pH = 7）",
-        "ku": "Xala bêalîbûnê (pH = 7)"
+        "tr": "Brønsted-Lowry Asidi",
+        "en": "Brønsted-Lowry Acid",
+        "de": "Brønsted-Lowry-Säure",
+        "fr": "Acide de Brønsted-Lowry",
+        "ru": "Кислота Брёнстеда-Лоури",
+        "ar": "حمض برونستد-لوري",
+        "zh": "布朗斯特-劳里酸",
+        "ku": "Asîda Brønsted-Lowry"
       },
       "distinction": {
-        "tr": "Eşdeğerlik noktasında H+ mol sayısı OH- mole eşittir; zayıf asit kuvvetli baz titrasyonunda eşdeğerlik pH'ı 7'den büyüktür.",
-        "en": "At the equivalence point, the number of moles of H+ equals the moles of OH-; In weak acid strong base titration, the equivalence pH is greater than 7.",
-        "de": "Am Äquivalenzpunkt entspricht die Anzahl der Mol H+ der Molzahl OH-; Bei der Titration mit schwacher Säure und starker Base liegt der Äquivalenz-pH-Wert über 7.",
-        "fr": "Au point d'équivalence, le nombre de moles de H+ est égal aux moles de OH- ; En titrage acide faible base forte, le pH d’équivalence est supérieur à 7.",
-        "ru": "В точке эквивалентности количество молей H+ равно молям OH-; При титровании слабой кислоты сильным основанием эквивалентный pH превышает 7.",
-        "ar": "عند نقطة التكافؤ، عدد مولات H+ يساوي مولات OH-؛ في معايرة القاعدة القوية للحمض الضعيف، يكون الرقم الهيدروجيني المكافئ أكبر من 7.",
-        "zh": "当量点时，H+的摩尔数等于OH-的摩尔数；弱酸强碱滴定时，当量pH值大于7。",
-        "ku": "Di xala hevsengiyê de, hejmara molên H+ bi molên OH- re ye; Di titrasyona bingehîn a asîda qels de, pH-ya hevwate ji 7 mezintir e."
+        "tr": "Arrhenius asidi suda çözündüğünde H+ (H3O+) derişimini artıran maddedir; Brønsted-Lowry asidi ise tepkimede başka bir türe proton (H+) veren türdür ve tanımı sulu ortamla sınırlı değildir.",
+        "en": "An Arrhenius acid is a substance that increases the H+ (H3O+) concentration when dissolved in water; a Brønsted-Lowry acid is a species that donates a proton (H+) to another species, and the definition is not limited to aqueous solutions.",
+        "de": "Eine Arrhenius-Säure erhöht beim Lösen in Wasser die H+ (H3O+)-Konzentration; eine Brønsted-Lowry-Säure ist ein Teilchen, das ein Proton (H+) an ein anderes Teilchen abgibt, und die Definition ist nicht auf wässrige Lösungen beschränkt.",
+        "fr": "Un acide d'Arrhenius augmente la concentration en H+ (H3O+) lorsqu'il est dissous dans l'eau ; un acide de Brønsted-Lowry est une espèce qui cède un proton (H+) à une autre espèce, et cette définition ne se limite pas aux solutions aqueuses.",
+        "ru": "Кислота Аррениуса при растворении в воде увеличивает концентрацию H+ (H3O+); кислота Брёнстеда-Лоури — частица, отдающая протон (H+) другой частице, и это определение не ограничено водными растворами.",
+        "ar": "حمض أرهينيوس مادة تزيد تركيز H+ (H3O+) عند ذوبانها في الماء؛ أما حمض برونستد-لوري فهو نوع يمنح بروتونًا (H+) لنوع آخر، ولا يقتصر تعريفه على المحاليل المائية.",
+        "zh": "阿伦尼乌斯酸是溶于水时使H+（H3O+）浓度增大的物质；布朗斯特-劳里酸是向其他物种给出质子（H+）的物种，其定义不限于水溶液。",
+        "ku": "Asîda Arrhenius maddeyek e ku dema di avê de dihele tîrbûna H+ (H3O+) zêde dike; asîda Brønsted-Lowry cureyek e ku protonekê (H+) dide cureyeke din û pênaseya wê bi avê ve sînordar nîne."
       }
     },
     {
       "id": "u19-c07",
       "conceptA": {
         "tr": "Konjuge (Eşlenik) Asit",
-        "en": "Conjugated Acid",
+        "en": "Conjugate Acid",
         "de": "Konjugierte Säure",
-        "fr": "Acide Conjugué",
-        "ru": "Конъюгированная кислота",
+        "fr": "Acide conjugué",
+        "ru": "Сопряжённая кислота",
         "ar": "حمض مترافق",
         "zh": "共轭酸",
-        "ku": "Asîda hevgirtî"
+        "ku": "Asîda Hevgirtî (Konjuge)"
       },
       "conceptB": {
         "tr": "Konjuge (Eşlenik) Baz",
-        "en": "Conjugated Base",
+        "en": "Conjugate Base",
         "de": "Konjugierte Base",
         "fr": "Base conjuguée",
-        "ru": "Сопряженная база",
+        "ru": "Сопряжённое основание",
         "ar": "قاعدة مترافقة",
-        "zh": "共轭碱基",
-        "ku": "Bingeha hevgirtî"
+        "zh": "共轭碱",
+        "ku": "Baza Hevgirtî (Konjuge)"
       },
       "distinction": {
-        "tr": "Aralarında 1 proton (H+) farkı olan çiftlerdir; proton veren konjuge asit, proton alan konjuge bazdır.",
-        "en": "They are pairs with 1 proton (H+) difference between them; A proton-donating conjugate acid is a proton-accepting conjugate base.",
-        "de": "Es handelt sich um Paare mit einem Protonenunterschied (H+) zwischen ihnen; Eine protonenspendende konjugierte Säure ist eine protonenaufnehmende konjugierte Base.",
-        "fr": "Ce sont des paires avec une différence de 1 proton (H+) entre elles ; Un acide conjugué donneur de protons est une base conjuguée accepteuse de protons.",
-        "ru": "Это пары с разницей в 1 протон (H+); Протондонорная конъюгатная кислота представляет собой протонакцепторное конъюгатное основание.",
-        "ar": "وهي عبارة عن أزواج بفارق بروتون واحد (H+) بينهما؛ الحمض المرافق المتبرع بالبروتون هو قاعدة مرافقة تقبل البروتون.",
-        "zh": "它们是彼此相差 1 个质子 (H+) 的对；供质子共轭酸是接受质子共轭碱。",
-        "ku": "Ew cot in ku di navbera wan de 1 proton (H+) ferqa wan heye; Asîdek hevjînî ya ku proton dide, bingehek hevgirtî ya proton-qebûlker e."
+        "tr": "Aralarında 1 proton (H+) farkı olan çiftlerdir; çiftte fazla H+ içeren ve proton verebilen tür konjuge asit, proton alabilen tür konjuge bazdır (ör. NH4+ / NH3).",
+        "en": "They are pairs differing by one proton (H+); the member with the extra H+ that can donate a proton is the conjugate acid, and the member that can accept a proton is the conjugate base (e.g. NH4+ / NH3).",
+        "de": "Es sind Paare, die sich um ein Proton (H+) unterscheiden; das Teilchen mit dem zusätzlichen H+, das ein Proton abgeben kann, ist die konjugierte Säure, das Teilchen, das ein Proton aufnehmen kann, die konjugierte Base (z. B. NH4+ / NH3).",
+        "fr": "Ce sont des couples qui diffèrent d'un proton (H+) ; l'espèce qui possède le H+ supplémentaire et peut le céder est l'acide conjugué, celle qui peut capter un proton est la base conjuguée (ex. NH4+ / NH3).",
+        "ru": "Это пары, отличающиеся на один протон (H+); частица с лишним H+, способная отдать протон, — сопряжённая кислота, а частица, способная принять протон, — сопряжённое основание (напр., NH4+ / NH3).",
+        "ar": "هي أزواج يختلف أفرادها ببروتون واحد (H+)؛ النوع الذي يحتوي على H+ الإضافي ويستطيع منحه هو الحمض المرافق، والنوع الذي يستطيع استقبال البروتون هو القاعدة المرافقة (مثل NH4+ / NH3).",
+        "zh": "它们是相差一个质子（H+）的一对物种；多一个H+、能给出质子的是共轭酸，能接受质子的是共轭碱（如NH4+ / NH3）。",
+        "ku": "Ew cot in ku 1 proton (H+) ferqa wan heye; cureya ku H+ ya zêde heye û dikare proton bide asîda konjuge ye, cureya ku dikare proton bigire baza konjuge ye (mînak NH4+ / NH3)."
       }
     },
     {
@@ -668,7 +668,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Катионный гидролиз",
         "ar": "التحلل الكاتيوني",
         "zh": "阳离子水解",
-        "ku": "Hîdrolîza Cation"
+        "ku": "Hîdrolîza Katyonê"
       },
       "conceptB": {
         "tr": "Anyon Hidrolizi",
@@ -678,7 +678,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Анионный гидролиз",
         "ar": "التحلل الأنيوني",
         "zh": "阴离子水解",
-        "ku": "Anion Hydrolysis"
+        "ku": "Hîdrolîza Anyonê"
       },
       "distinction": {
         "tr": "Zayıf bazdan gelen katyon (NH4+) hidroliz olarak asidik ortam yapar; zayıf asitten gelen anyon (CH3COO-) hidrolizle bazik ortam yapar.",
@@ -773,13 +773,13 @@ export const unit19: ChemistryUnitSeedData = {
         },
         {
           "tr": "HA ayrışarak H+ ve A- iyonlarına parçalanır",
-          "en": "HA decomposes into H+ and A- ions",
-          "de": "HA zerfällt in H+- und A--Ionen",
-          "fr": "HA se décompose en ions H+ et A-",
-          "ru": "ГК распадается на ионы H+ и A-.",
-          "ar": "يتحلل HA إلى أيونات H+ وA-",
-          "zh": "HA 分解成 H+ 和 A- 离子",
-          "ku": "HA di îyonên H+ û A- de veqete"
+          "en": "HA partially ionizes into H+ and A- ions",
+          "de": "HA dissoziiert teilweise in H+- und A--Ionen",
+          "fr": "HA s’ionise partiellement en ions H+ et A-",
+          "ru": "HA частично ионизируется на ионы H+ и A-",
+          "ar": "يتأين HA جزئيًا إلى أيونات H+ و A-",
+          "zh": "HA部分电离为H+和A-离子",
+          "ku": "HA bi qismî dibe îyonên H+ û A-"
         },
         {
           "tr": "[H+] = karekök(Ka . Ca) formülü uygulanır",
@@ -827,24 +827,24 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Asîdek qels bi xwêya wê ya hevgirtî re tevlihev bikin"
         },
         {
-          "tr": "Ortama az miktar kuvvetli asit eklendiğinde eşlenik baz H+'yı tutar",
-          "en": "When a small amount of strong acid is added to the medium, the conjugate base retains H+",
-          "de": "Wenn dem Medium eine kleine Menge starker Säure zugesetzt wird, behält die konjugierte Base H+",
-          "fr": "Lorsqu'une petite quantité d'acide fort est ajoutée au milieu, la base conjuguée retient H+",
-          "ru": "При добавлении в среду небольшого количества сильной кислоты сопряженное основание сохраняет H+.",
-          "ar": "عند إضافة كمية صغيرة من حمض قوي إلى الوسط، تحتفظ القاعدة المترافقة بـ H+",
-          "zh": "当培养基中加入少量强酸时，共轭碱保留H+",
-          "ku": "Dema ku mîqdarek piçûk a asîdek bihêz li navgînê were zêdekirin, bingeha hevgirtî H+ digire"
+          "tr": "Çözeltide hem zayıf asit (HA) hem de eşlenik bazı (A-) önemli miktarda bulunur",
+          "en": "The solution contains significant amounts of both the weak acid (HA) and its conjugate base (A-)",
+          "de": "Die Lösung enthält sowohl die schwache Säure (HA) als auch ihre konjugierte Base (A-) in nennenswerter Menge",
+          "fr": "La solution contient des quantités importantes à la fois de l’acide faible (HA) et de sa base conjuguée (A-)",
+          "ru": "В растворе в заметных количествах присутствуют и слабая кислота (HA), и её сопряжённое основание (A-)",
+          "ar": "يحتوي المحلول على كميات معتبرة من الحمض الضعيف (HA) ومن قاعدته المرافقة (A-) معًا",
+          "zh": "溶液中同时含有相当量的弱酸（HA）及其共轭碱（A-）",
+          "ku": "Di çareseriyê de hem asîda qels (HA) hem jî baza wê ya konjuge (A-) bi mîqdareke girîng heye"
         },
         {
-          "tr": "Ortama az miktar baz eklendiğinde zayıf asit OH-'ı nötralleştirir",
-          "en": "When a small amount of base is added to the medium, it neutralizes the weak acid OH-",
-          "de": "Wenn dem Medium eine kleine Menge Base zugesetzt wird, neutralisiert diese die schwache Säure OH-",
-          "fr": "Lorsqu'une petite quantité de base est ajoutée au milieu, elle neutralise l'acide faible OH-",
-          "ru": "При добавлении в среду небольшого количества основания оно нейтрализует слабую кислоту OH-.",
-          "ar": "عند إضافة كمية صغيرة من القاعدة إلى الوسط، فإنها تعادل الحمض الضعيف OH-",
-          "zh": "当介质中加入少量碱时，中和弱酸OH-",
-          "ku": "Dema ku mîqdarek piçûk li navgînê tê zêdekirin, ew asîdeya qels OH- bêbandor dike."
+          "tr": "Eklenen az miktardaki H+ iyonlarını A-, OH- iyonlarını ise HA tüketir",
+          "en": "Small amounts of added H+ ions are consumed by A-, and added OH- ions by HA",
+          "de": "Kleine Mengen zugesetzter H+-Ionen werden von A-, zugesetzte OH--Ionen von HA verbraucht",
+          "fr": "De petites quantités d’ions H+ ajoutés sont consommées par A-, et les ions OH- ajoutés par HA",
+          "ru": "Небольшие количества добавленных ионов H+ связываются A-, а ионы OH- — кислотой HA",
+          "ar": "تستهلك A- أيونات H+ المضافة بكميات قليلة، ويستهلك HA أيونات OH- المضافة",
+          "zh": "少量加入的H+被A-消耗，加入的OH-被HA消耗",
+          "ku": "Îyonên H+ yên bi mîqdara kêm hatine zêdekirin ji aliyê A- ve, îyonên OH- jî ji aliyê HA ve tên xerckirin"
         },
         {
           "tr": "Çözeltinin pH değeri neredeyse sabit kalır",
@@ -882,24 +882,24 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Bingeha di buretê de li ser asîdê di flask de tê avêtin."
         },
         {
-          "tr": "Asidin mol sayısı bazın mol sayısına eşitlenir",
-          "en": "The number of moles of acid equals the number of moles of base",
-          "de": "Die Anzahl der Mol Säure entspricht der Anzahl der Mol Base",
-          "fr": "Le nombre de moles d’acide est égal au nombre de moles de base",
-          "ru": "Количество молей кислоты равно количеству молей основания.",
-          "ar": "عدد مولات الحمض يساوي عدد مولات القاعدة",
-          "zh": "酸的摩尔数等于碱的摩尔数",
-          "ku": "Hejmara molên asîdê bi hejmara molên bazê ye"
+          "tr": "Asitten gelen H+ mol sayısı, eklenen bazdan gelen OH- mol sayısına eşit olur",
+          "en": "The moles of H+ from the acid become equal to the moles of OH- from the added base",
+          "de": "Die Stoffmenge H+ aus der Säure wird gleich der Stoffmenge OH- aus der zugesetzten Base",
+          "fr": "Le nombre de moles de H+ provenant de l’acide devient égal au nombre de moles de OH- provenant de la base ajoutée",
+          "ru": "Число молей H+ из кислоты становится равным числу молей OH- из добавленного основания",
+          "ar": "يصبح عدد مولات H+ القادمة من الحمض مساويًا لعدد مولات OH- القادمة من القاعدة المضافة",
+          "zh": "来自酸的H+的物质的量等于加入的碱提供的OH-的物质的量",
+          "ku": "Hejmara molên H+ yên ji asîdê bi hejmara molên OH- yên ji baza zêdekirî re wekhev dibe"
         },
         {
-          "tr": "Eşdeğerlik noktasında pH tam olarak 7.00 olur",
-          "en": "At the equivalence point the pH is exactly 7.00",
-          "de": "Am Äquivalenzpunkt liegt der pH-Wert genau bei 7,00",
-          "fr": "Au point d'équivalence, le pH est exactement de 7,00",
-          "ru": "В точке эквивалентности pH равен ровно 7,00.",
-          "ar": "عند نقطة التكافؤ يكون الرقم الهيدروجيني 7.00 بالضبط",
-          "zh": "在等当点，pH 值恰好为 7.00",
-          "ku": "Di xala hevdengiyê de pH tam 7.00 e"
+          "tr": "Eşdeğerlik noktasında pH 7,00 olur (25 °C'de)",
+          "en": "At the equivalence point the pH is 7.00 (at 25 °C)",
+          "de": "Am Äquivalenzpunkt ist der pH-Wert 7,00 (bei 25 °C)",
+          "fr": "Au point d'équivalence, le pH est de 7,00 (à 25 °C)",
+          "ru": "В точке эквивалентности pH равен 7,00 (при 25 °C)",
+          "ar": "عند نقطة التكافؤ يكون pH مساويًا 7.00 (عند 25 °C)",
+          "zh": "等当点时pH为7.00（25 °C）",
+          "ku": "Di xala hevwateyê de pH 7,00 e (li 25 °C)"
         },
         {
           "tr": "Baz eklenmeye devam edilirse pH 7'nin üstüne çıkar",
@@ -918,12 +918,12 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin01",
       "stem": {
-        "tr": "0.1 M'lık sulu sirke asidi (CH3COOH) çözeltisinin pH değeri kaçtır? (CH3COOH için Ka = 1.0x10^-5)",
+        "tr": "0,1 M'lık sulu sirke asidi (CH3COOH) çözeltisinin pH değeri kaçtır? (CH3COOH için Ka = 1,0x10^-5)",
         "en": "What is the pH value of 0.1 M aqueous vinegar acid (CH3COOH) solution? (Ka for CH3COOH = 1.0x10^-5)",
         "de": "Wie hoch ist der pH-Wert einer 0,1 M wässrigen Essigsäurelösung (CH3COOH)? (Ka für CH3COOH = 1,0x10^-5)",
-        "fr": "Quelle est la valeur du pH d’une solution aqueuse d’acide vinaigre (CH3COOH) 0,1 M ? (Ka pour CH3COOH = 1,0x10^-5)",
+        "fr": "Quelle est la valeur du pH d'une solution aqueuse d'acide acétique (CH3COOH) 0,1 M ? (Ka pour CH3COOH = 1,0x10^-5)",
         "ru": "Каково значение pH 0,1 М водного раствора уксусной кислоты (CH3COOH)? (Ка для CH3COOH = 1,0x10^-5)",
-        "ar": "ما هي قيمة الرقم الهيدروجيني لمحلول حمض الخل المائي (CH3COOH) 0.1 م؟ (كا لCH3COOH = 1.0x10^-5)",
+        "ar": "ما قيمة pH لمحلول مائي من حمض الخل (CH3COOH) تركيزه 0.1 M؟ (Ka لـ CH3COOH = 1.0x10^-5)",
         "zh": "0.1 M 醋酸 (CH3COOH) 水溶液的 pH 值是多少？ （CH3COOH 的 Ka = 1.0x10^-5）",
         "ku": "Nirxa pH ya 0,1 M çareseriya asîda avî ya sîrkê (CH3COOH) çi ye? (Ka ji bo CH3COOH = 1.0x10^-5)"
       },
@@ -994,7 +994,7 @@ export const unit19: ChemistryUnitSeedData = {
     {
       "id": "u19-twin02",
       "stem": {
-        "tr": "0.1 M 100 mL HCl çözeltisini tam nötralleştirmek için 0.2 M NaOH çözeltisinden kaç mL harcanmalıdır?",
+        "tr": "0,1 M 100 mL HCl çözeltisini tam nötralleştirmek için 0,2 M NaOH çözeltisinden kaç mL harcanmalıdır?",
         "en": "How many mL of 0.2 M NaOH solution should be consumed to completely neutralize 100 mL of 0.1 M HCl solution?",
         "de": "Wie viele ml 0,2 M NaOH-Lösung sollten verbraucht werden, um 100 ml 0,1 M HCl-Lösung vollständig zu neutralisieren?",
         "fr": "Combien de ml de solution de NaOH 0,2 M faut-il consommer pour neutraliser complètement 100 ml de solution de HCl 0,1 M ?",
@@ -1006,50 +1006,50 @@ export const unit19: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "50 mL",
-          "en": "50mL",
+          "en": "50 mL",
           "de": "50 ml",
           "fr": "50 ml",
-          "ru": "50мл",
+          "ru": "50 мл",
           "ar": "50 مل",
           "zh": "50毫升",
           "ku": "50 ml"
         },
         {
           "tr": "100 mL",
-          "en": "100mL",
+          "en": "100 mL",
           "de": "100 ml",
           "fr": "100 ml",
-          "ru": "100мл",
+          "ru": "100 мл",
           "ar": "100 مل",
           "zh": "100毫升",
           "ku": "100 ml"
         },
         {
           "tr": "200 mL",
-          "en": "200mL",
+          "en": "200 mL",
           "de": "200 ml",
           "fr": "200 ml",
-          "ru": "200мл",
+          "ru": "200 мл",
           "ar": "200 مل",
           "zh": "200毫升",
           "ku": "200 ml"
         },
         {
           "tr": "25 mL",
-          "en": "25mL",
+          "en": "25 mL",
           "de": "25 ml",
           "fr": "25 ml",
-          "ru": "25мл",
+          "ru": "25 мл",
           "ar": "25 مل",
           "zh": "25毫升",
           "ku": "25 ml"
         },
         {
           "tr": "10 mL",
-          "en": "10mL",
+          "en": "10 mL",
           "de": "10 ml",
           "fr": "10 ml",
-          "ru": "10мл",
+          "ru": "10 мл",
           "ar": "10 مل",
           "zh": "10毫升",
           "ku": "10 ml"
@@ -1057,11 +1057,11 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Ma * Va * Za = Mb * Vb * Zb -> 0.1 * 100 * 1 = 0.2 * Vb * 1 -> 10 = 0.2 * Vb -> Vb = 50 mL.",
+        "tr": "Ma * Va * Za = Mb * Vb * Zb -> 0,1 * 100 * 1 = 0,2 * Vb * 1 -> 10 = 0,2 * Vb -> Vb = 50 mL.",
         "en": "Ma * Va * Za = Mb * Vb * Zb -> 0.1 * 100 * 1 = 0.2 * Vb * 1 -> 10 = 0.2 * Vb -> Vb = 50 mL.",
         "de": "Ma * Va * Za = Mb * Vb * Zb -> 0,1 * 100 * 1 = 0,2 * Vb * 1 -> 10 = 0,2 * Vb -> Vb = 50 ml.",
         "fr": "Ma * Va * Za = Mb * Vb * Zb -> 0,1 * 100 * 1 = 0,2 * Vb * 1 -> 10 = 0,2 * Vb -> Vb = 50 mL.",
-        "ru": "Ма*Ва*За = Мб*Вб*Зб -> 0,1*100*1 = 0,2*Вб*1 -> 10 = 0,2*Вб -> Вб = 50 мл.",
+        "ru": "Ma * Va * Za = Mb * Vb * Zb -> 0,1 * 100 * 1 = 0,2 * Vb * 1 -> 10 = 0,2 * Vb -> Vb = 50 мл.",
         "ar": "Ma * Va * Za = Mb * Vb * Zb -> 0.1 * 100 * 1 = 0.2 * Vb * 1 -> 10 = 0.2 * Vb -> Vb = 50 مل.",
         "zh": "Ma * Va * Za = Mb * Vb * Zb -> 0.1 * 100 * 1 = 0.2 * Vb * 1 -> 10 = 0.2 * Vb -> Vb = 50 mL。",
         "ku": "Ma * Va * Za = Mb * Vb * Zb -> 0,1 * 100 * 1 = 0,2 * Vb * 1 -> 10 = 0,2 * Vb -> Vb = 50 mL."
@@ -1098,17 +1098,17 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "При титровании сильной кислотой и сильным основанием pH равен 0 в точке эквивалентности.",
           "ar": "في معايرة حمض قوي بقاعدة قوية، يكون الرقم الهيدروجيني 0 عند نقطة التكافؤ.",
           "zh": "在强酸强碱滴定中，等当点的pH值为0。",
-          "ku": "Di titrasyonek bingehîn a bihêz a asîdê de, pH di xala hevkêşiyê de 0 ye."
+          "ku": "Di tîtrasyona asîda xurt - baza xurt de, pH di xala hevwateyê de 0 ye."
         },
         {
-          "tr": "Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca)'dır (Ca: asidin başlangıç molaritesi).",
-          "en": "For weak monoproteic acid, [H+] = sqrt(Ka * Ca) (Ca: initial molarity of the acid).",
-          "de": "Für schwache Monoproteinsäure ist [H+] = sqrt(Ka * Ca) (Ca: anfängliche Molarität der Säure).",
-          "fr": "Pour l'acide monoprotéique faible, [H+] = sqrt(Ka * Ca) (Ca : molarité initiale de l'acide).",
-          "ru": "Для слабой монопротеиновой кислоты [H+] = sqrt(Ka * Ca) (Ca: начальная молярность кислоты).",
-          "ar": "بالنسبة للحمض أحادي البروتين الضعيف، [H+] = sqrt(Ka * Ca) (Ca: المولارية الأولية للحمض).",
-          "zh": "对于弱单蛋白酸，[H+] = sqrt(Ka * Ca)（Ca：酸的初始摩尔浓度）。",
-          "ku": "Ji bo asîda monoproteîk a qels, [H+] = sqrt(Ka * Ca) (Ca: molarîteya destpêkê ya asîdê)."
+          "tr": "Zayıf monoprotik asit için [H+] = sqrt(Ka * Ca)'dır (Ca: asidin başlangıç molaritesi).",
+          "en": "For a weak monoprotic acid, [H+] = sqrt(Ka * Ca) (Ca: initial molarity of the acid).",
+          "de": "Für eine schwache einprotonige Säure gilt [H+] = sqrt(Ka * Ca) (Ca: Anfangsmolarität der Säure).",
+          "fr": "Pour un monoacide faible, [H+] = sqrt(Ka * Ca) (Ca : molarité initiale de l'acide).",
+          "ru": "Для слабой одноосновной кислоты [H+] = sqrt(Ka * Ca) (Ca: начальная молярность кислоты).",
+          "ar": "بالنسبة لحمض ضعيف أحادي البروتون، [H+] = sqrt(Ka * Ca) (Ca: المولارية الابتدائية للحمض).",
+          "zh": "对于弱一元酸，[H+] = sqrt(Ka * Ca)（Ca：酸的初始物质的量浓度）。",
+          "ku": "Ji bo asîda qels a monoprotîk, [H+] = sqrt(Ka * Ca) e (Ca: molarîteya destpêkê ya asîdê)."
         },
         {
           "tr": "Zayıf asit seyreltildiğinde H+ derişimi artar.",
@@ -1118,14 +1118,14 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "При разбавлении слабой кислоты концентрация H+ увеличивается.",
           "ar": "عند تخفيف حمض ضعيف يزداد تركيز H+.",
           "zh": "当弱酸被稀释时，H+浓度增加。",
-          "ku": "Dema ku asîdek qels tê rijandin, tansiyona H+ zêde dibe."
+          "ku": "Dema ku asîdeke qels tê sistkirin, tîrbûna H+ zêde dibe."
         },
         {
           "tr": "NH3 kuvvetli bir bazdır.",
           "en": "NH3 is a strong base.",
           "de": "NH3 ist eine starke Base.",
           "fr": "NH3 est une base forte.",
-          "ru": "NH3 – сильная база.",
+          "ru": "NH3 — сильное основание.",
           "ar": "NH3 قاعدة قوية .",
           "zh": "NH3 是强碱。",
           "ku": "NH3 bingehek xurt e."
@@ -1133,14 +1133,14 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Zayıf monoproteik asit için [H+] = sqrt(Ka * Ca)'dır (Ca: asidin başlangıç molaritesi).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"For weak monoproteic acid, [H+] = sqrt(Ka * Ca) (Ca: initial molarity of the acid).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Für schwache Monoproteinsäure ist [H+] = sqrt(Ka * Ca) (Ca: anfängliche Molarität der Säure).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Pour l'acide monoprotéique faible, [H+] = sqrt(Ka * Ca) (Ca : molarité initiale de l'acide).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Для слабой монопротеиновой кислоты [H+] = sqrt(Ka * Ca) (Ca: начальная молярность кислоты).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"بالنسبة للحمض أحادي البروتين الضعيف، [H+] = sqrt(Ka * Ca) (Ca: المولارية الأولية للحمض).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“对于弱单蛋白酸，[H+] = sqrt(Ka * Ca)（Ca：酸的初始摩尔浓度）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ji bo asîda monoproteîk a qels, [H+] = sqrt(Ka * Ca) (Ca: molarîteya destpêkê ya asîdê).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Zayıf monoprotik asit için [H+] = sqrt(Ka * Ca)'dır (Ca: asidin başlangıç molaritesi).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"For a weak monoprotic acid, [H+] = sqrt(Ka * Ca) (Ca: initial molarity of the acid).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Für eine schwache einprotonige Säure gilt [H+] = sqrt(Ka * Ca) (Ca: Anfangsmolarität der Säure).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Pour un monoacide faible, [H+] = sqrt(Ka * Ca) (Ca : molarité initiale de l'acide).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Для слабой одноосновной кислоты [H+] = sqrt(Ka * Ca) (Ca: начальная молярность кислоты).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"بالنسبة لحمض ضعيف أحادي البروتون، [H+] = sqrt(Ka * Ca) (Ca: المولارية الابتدائية للحمض).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“对于弱一元酸，[H+] = sqrt(Ka * Ca)（Ca：酸的初始物质的量浓度）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Ji bo asîda qels a monoprotîk, [H+] = sqrt(Ka * Ca) e (Ca: molarîteya destpêkê ya asîdê).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1178,23 +1178,23 @@ export const unit19: ChemistryUnitSeedData = {
         },
         {
           "tr": "Titrasyonda tesir değerliği dikkate alınmaz.",
-          "en": "Potency is not taken into account in titration.",
-          "de": "Die Potenz wird bei der Titration nicht berücksichtigt.",
-          "fr": "La puissance n'est pas prise en compte lors du titrage.",
-          "ru": "Потенциал не учитывается при титровании.",
-          "ar": "لا تؤخذ الفاعلية بعين الاعتبار في المعايرة.",
-          "zh": "滴定时不考虑效价。",
-          "ku": "Potansiyel di titrasyonê de nayê hesibandin."
+          "en": "In titration, the number of H+ or OH- ions per formula unit (Z) is not taken into account.",
+          "de": "Bei der Titration wird die Anzahl der H+- bzw. OH--Ionen pro Formeleinheit (Z) nicht berücksichtigt.",
+          "fr": "Lors d'un titrage, le nombre d'ions H+ ou OH- par unité de formule (Z) n'est pas pris en compte.",
+          "ru": "При титровании число ионов H+ или OH- на формульную единицу (Z) не учитывается.",
+          "ar": "في المعايرة لا يؤخذ عدد أيونات H+ أو OH- لكل وحدة صيغة (Z) بعين الاعتبار.",
+          "zh": "滴定时不考虑每个化学式单位释放的H+或OH-数目（Z）。",
+          "ku": "Di tîtrasyonê de hejmara îyonên H+ an OH- yên her yekeya formulê (Z) nayê hesibandin."
         },
         {
-          "tr": "Brønsted-Lowry tanımına göre H+ veren asit, H+ alan bazdır; aralarında 1 H+ fark olan çiftlere konjuge (eşlenik) asit-baz denir.",
-          "en": "According to the Brønsted-Lowry definition, an acid that donates H+ is a base that accepts H+; Pairs with a difference of 1 H+ between them are called conjugated acid-base.",
-          "de": "Gemäß der Brønsted-Lowry-Definition ist eine Säure, die H+ abgibt, eine Base, die H+ akzeptiert; Paare mit einem Unterschied von 1 H+ zwischen ihnen werden als konjugierte Säure-Base bezeichnet.",
-          "fr": "Selon la définition de Brønsted-Lowry, un acide qui donne H+ est une base qui accepte H+ ; Les paires avec une différence de 1 H+ entre elles sont appelées acide-base conjuguée.",
-          "ru": "Согласно определению Бренстеда-Лоури, кислота, отдающая H+, является основанием, акцептирующим H+; Пары с разницей между ними в 1 Н+ называются сопряженными кислотно-основными.",
-          "ar": "وفقًا لتعريف برونستد-لوري، فإن الحمض الذي يمنح H+ هو قاعدة تقبل H+؛ تسمى الأزواج التي يكون الفرق بينها 1H+ بقاعدة حمضية مترافقة.",
-          "zh": "根据 Brønsted-Lowry 定义，提供 H+ 的酸是接受 H+ 的碱；相差 1 H+ 的酸碱对称为共轭酸碱对。",
-          "ku": "Li gorî pênaseya Brønsted-Lowry, asîda ku H+ dide bazeke ku H+ qebûl dike; Ji cotên ku di navbera wan de 1 H+ ferqa wan heye, asîda-baza hevgirtî tê gotin."
+          "tr": "Brønsted-Lowry tanımına göre H+ veren tür asit, H+ alan tür bazdır; aralarında 1 H+ fark olan çiftlere konjuge (eşlenik) asit-baz çifti denir.",
+          "en": "According to the Brønsted-Lowry definition, a species that donates H+ is an acid and a species that accepts H+ is a base; pairs that differ by one H+ are called conjugate acid-base pairs.",
+          "de": "Nach Brønsted-Lowry ist ein Teilchen, das H+ abgibt, eine Säure, und ein Teilchen, das H+ aufnimmt, eine Base; Paare, die sich um ein H+ unterscheiden, heißen konjugierte Säure-Base-Paare.",
+          "fr": "Selon Brønsted-Lowry, une espèce qui cède H+ est un acide et une espèce qui capte H+ est une base ; les couples qui diffèrent d'un H+ sont appelés couples acide-base conjugués.",
+          "ru": "По Брёнстеду-Лоури частица, отдающая H+, — кислота, а частица, принимающая H+, — основание; пары, отличающиеся на один H+, называются сопряжёнными кислотно-основными парами.",
+          "ar": "وفق تعريف برونستد-لوري، النوع الذي يمنح H+ حمض، والنوع الذي يستقبل H+ قاعدة؛ والأزواج التي يختلف أفرادها بـ H+ واحد تُسمّى أزواج حمض-قاعدة مترافقة.",
+          "zh": "根据布朗斯特-劳里定义，给出H+的物种是酸，接受H+的物种是碱；相差一个H+的一对物种称为共轭酸碱对。",
+          "ku": "Li gorî pênaseya Brønsted-Lowry, cureya ku H+ dide asîd e û cureya ku H+ digire baz e; cotên ku 1 H+ ferqa wan heye cotên asîd-baz ên hevgirtî (konjuge) tên gotin."
         },
         {
           "tr": "İndikatörler titrasyon tepkimesini hızlandıran katalizörlerdir.",
@@ -1209,14 +1209,14 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Brønsted-Lowry tanımına göre H+ veren asit, H+ alan bazdır; aralarında 1 H+ fark olan çiftlere konjuge (eşlenik) asit-baz denir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"According to the Brønsted-Lowry definition, an acid that donates H+ is a base that accepts H+; Pairs with a difference of 1 H+ between them are called conjugated acid-base.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Gemäß der Brønsted-Lowry-Definition ist eine Säure, die H+ abgibt, eine Base, die H+ akzeptiert; Paare mit einem Unterschied von 1 H+ zwischen ihnen werden als konjugierte Säure-Base bezeichnet.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Selon la définition de Brønsted-Lowry, un acide qui donne H+ est une base qui accepte H+ ; Les paires avec une différence de 1 H+ entre elles sont appelées acide-base conjuguée.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Согласно определению Бренстеда-Лоури, кислота, отдающая H+, является основанием, акцептирующим H+; Пары с разницей между ними в 1 Н+ называются сопряженными кислотно-основными.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"وفقًا لتعريف برونستد-لوري، فإن الحمض الذي يمنح H+ هو قاعدة تقبل H+؛ تسمى الأزواج التي يكون الفرق بينها 1H+ بقاعدة حمضية مترافقة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“根据 Brønsted-Lowry 定义，提供 H+ 的酸是接受 H+ 的碱；相差 1 H+ 的酸碱对称为共轭酸碱对。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Li gorî pênaseya Brønsted-Lowry, asîda ku H+ dide bazeke ku H+ qebûl dike; Ji cotên ku di navbera wan de 1 H+ ferqa wan heye, asîda-baza hevgirtî tê gotin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Brønsted-Lowry tanımına göre H+ veren tür asit, H+ alan tür bazdır; aralarında 1 H+ fark olan çiftlere konjuge (eşlenik) asit-baz çifti denir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"According to the Brønsted-Lowry definition, a species that donates H+ is an acid and a species that accepts H+ is a base; pairs that differ by one H+ are called conjugate acid-base pairs.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Nach Brønsted-Lowry ist ein Teilchen, das H+ abgibt, eine Säure, und ein Teilchen, das H+ aufnimmt, eine Base; Paare, die sich um ein H+ unterscheiden, heißen konjugierte Säure-Base-Paare.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Selon Brønsted-Lowry, une espèce qui cède H+ est un acide et une espèce qui capte H+ est une base ; les couples qui diffèrent d'un H+ sont appelés couples acide-base conjugués.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «По Брёнстеду-Лоури частица, отдающая H+, — кислота, а частица, принимающая H+, — основание; пары, отличающиеся на один H+, называются сопряжёнными кислотно-основными парами.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"وفق تعريف برونستد-لوري، النوع الذي يمنح H+ حمض، والنوع الذي يستقبل H+ قاعدة؛ والأزواج التي يختلف أفرادها بـ H+ واحد تُسمّى أزواج حمض-قاعدة مترافقة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“根据布朗斯特-劳里定义，给出H+的物种是酸，接受H+的物种是碱；相差一个H+的一对物种称为共轭酸碱对。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Li gorî pênaseya Brønsted-Lowry, cureya ku H+ dide asîd e û cureya ku H+ digire baz e; cotên ku 1 H+ ferqa wan heye cotên asîd-baz ên hevgirtî (konjuge) tên gotin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1244,23 +1244,23 @@ export const unit19: ChemistryUnitSeedData = {
         },
         {
           "tr": "Ka'sı küçük olan asit daha kuvvetlidir.",
-          "en": "The acid with smaller muscles is stronger.",
-          "de": "Bei kleineren Muskeln ist die Säure stärker.",
-          "fr": "L'acide avec des muscles plus petits est plus fort.",
-          "ru": "Кислота с меньшими мышцами сильнее.",
-          "ar": "الحمض ذو العضلات الأصغر يكون أقوى.",
-          "zh": "肌肉越小，酸越强。",
-          "ku": "Asîda bi masûlkeyên piçûktir bihêztir e."
+          "en": "The acid with the smaller Ka is the stronger acid.",
+          "de": "Die Säure mit dem kleineren Ka ist die stärkere Säure.",
+          "fr": "L'acide dont le Ka est le plus petit est le plus fort.",
+          "ru": "Кислота с меньшим Ka является более сильной.",
+          "ar": "الحمض ذو قيمة Ka الأصغر هو الأقوى.",
+          "zh": "Ka较小的酸酸性更强。",
+          "ku": "Asîda ku Ka ya wê piçûktir e bihêztir e."
         },
         {
-          "tr": "HF camı erittiği için en kuvvetli asittir.",
-          "en": "HF is the strongest acid because it melts glass.",
-          "de": "HF ist die stärkste Säure, da sie Glas schmilzt.",
-          "fr": "Le HF est l'acide le plus fort car il fait fondre le verre.",
-          "ru": "HF — самая сильная кислота, потому что она плавит стекло.",
-          "ar": "HF هو أقوى حمض لأنه يذيب الزجاج.",
-          "zh": "HF 是最强的酸，因为它可以熔化玻璃。",
-          "ku": "HF asîda herî xurt e ji ber ku camê dihelîne."
+          "tr": "HF camı aşındırdığı için en kuvvetli asittir.",
+          "en": "HF is the strongest acid because it etches glass.",
+          "de": "HF ist die stärkste Säure, weil sie Glas ätzt.",
+          "fr": "HF est l'acide le plus fort car il attaque le verre.",
+          "ru": "HF — самая сильная кислота, потому что она разъедает стекло.",
+          "ar": "HF هو أقوى حمض لأنه يُذيب (يتآكل) الزجاج.",
+          "zh": "HF是最强的酸，因为它能腐蚀玻璃。",
+          "ku": "HF asîda herî xurt e ji ber ku camê dixwe (diqelişîne)."
         },
         {
           "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14'tür.",
@@ -1268,7 +1268,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "Die Summe aus pH + pOH beträgt bei jeder Temperatur definitiv 14.",
           "fr": "La somme pH + pOH à chaque température est définitivement de 14.",
           "ru": "Сумма pH + pOH при каждой температуре определенно равна 14.",
-          "ar": "مجموع الرقم الهيدروجيني + الرقم الهيدروجيني عند كل درجة حرارة هو بالتأكيد 14.",
+          "ar": "مجموع pH + pOH يساوي 14 بالضرورة عند أي درجة حرارة.",
           "zh": "每个温度下 pH + pOH 的总和肯定是 14。",
           "ku": "Di her germahiyê de hejmara pH + pOH bê guman 14 e."
         },
@@ -1326,7 +1326,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "При титровании сильной кислотой и сильным основанием pH равен 0 в точке эквивалентности.",
           "ar": "في معايرة حمض قوي بقاعدة قوية، يكون الرقم الهيدروجيني 0 عند نقطة التكافؤ.",
           "zh": "在强酸强碱滴定中，等当点的pH值为0。",
-          "ku": "Di titrasyonek bingehîn a bihêz a asîdê de, pH di xala hevkêşiyê de 0 ye."
+          "ku": "Di tîtrasyona asîda xurt - baza xurt de, pH di xala hevwateyê de 0 ye."
         },
         {
           "tr": "Zayıf asit seyreltildiğinde H+ derişimi artar.",
@@ -1336,14 +1336,14 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "При разбавлении слабой кислоты концентрация H+ увеличивается.",
           "ar": "عند تخفيف حمض ضعيف يزداد تركيز H+.",
           "zh": "当弱酸被稀释时，H+浓度增加。",
-          "ku": "Dema ku asîdek qels tê rijandin, tansiyona H+ zêde dibe."
+          "ku": "Dema ku asîdeke qels tê sistkirin, tîrbûna H+ zêde dibe."
         },
         {
           "tr": "NH3 kuvvetli bir bazdır.",
           "en": "NH3 is a strong base.",
           "de": "NH3 ist eine starke Base.",
           "fr": "NH3 est une base forte.",
-          "ru": "NH3 – сильная база.",
+          "ru": "NH3 — сильное основание.",
           "ar": "NH3 قاعدة قوية .",
           "zh": "NH3 是强碱。",
           "ku": "NH3 bingehek xurt e."
@@ -1406,13 +1406,13 @@ export const unit19: ChemistryUnitSeedData = {
         },
         {
           "tr": "Titrasyonda tesir değerliği dikkate alınmaz.",
-          "en": "Potency is not taken into account in titration.",
-          "de": "Die Potenz wird bei der Titration nicht berücksichtigt.",
-          "fr": "La puissance n'est pas prise en compte lors du titrage.",
-          "ru": "Потенциал не учитывается при титровании.",
-          "ar": "لا تؤخذ الفاعلية بعين الاعتبار في المعايرة.",
-          "zh": "滴定时不考虑效价。",
-          "ku": "Potansiyel di titrasyonê de nayê hesibandin."
+          "en": "In titration, the number of H+ or OH- ions per formula unit (Z) is not taken into account.",
+          "de": "Bei der Titration wird die Anzahl der H+- bzw. OH--Ionen pro Formeleinheit (Z) nicht berücksichtigt.",
+          "fr": "Lors d'un titrage, le nombre d'ions H+ ou OH- par unité de formule (Z) n'est pas pris en compte.",
+          "ru": "При титровании число ионов H+ или OH- на формульную единицу (Z) не учитывается.",
+          "ar": "في المعايرة لا يؤخذ عدد أيونات H+ أو OH- لكل وحدة صيغة (Z) بعين الاعتبار.",
+          "zh": "滴定时不考虑每个化学式单位释放的H+或OH-数目（Z）。",
+          "ku": "Di tîtrasyonê de hejmara îyonên H+ an OH- yên her yekeya formulê (Z) nayê hesibandin."
         },
         {
           "tr": "İndikatörler titrasyon tepkimesini hızlandıran katalizörlerdir.",
@@ -1432,7 +1432,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Концентрация H+ слабой кислоты равна исходной концентрации.",
           "ar": "تركيز H+ للحمض الضعيف يساوي التركيز الأولي.",
           "zh": "弱酸的H+浓度等于初始浓度。",
-          "ku": "Pîvana H+ ya asîda qels bi kêşeya destpêkê re ye."
+          "ku": "Tîrbûna H+ ya asîda qels bi tîrbûna wê ya destpêkê re wekhev e."
         }
       ],
       "correctIndex": 1,
@@ -1462,23 +1462,23 @@ export const unit19: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Ka'sı küçük olan asit daha kuvvetlidir.",
-          "en": "The acid with smaller muscles is stronger.",
-          "de": "Bei kleineren Muskeln ist die Säure stärker.",
-          "fr": "L'acide avec des muscles plus petits est plus fort.",
-          "ru": "Кислота с меньшими мышцами сильнее.",
-          "ar": "الحمض ذو العضلات الأصغر يكون أقوى.",
-          "zh": "肌肉越小，酸越强。",
-          "ku": "Asîda bi masûlkeyên piçûktir bihêztir e."
+          "en": "The acid with the smaller Ka is the stronger acid.",
+          "de": "Die Säure mit dem kleineren Ka ist die stärkere Säure.",
+          "fr": "L'acide dont le Ka est le plus petit est le plus fort.",
+          "ru": "Кислота с меньшим Ka является более сильной.",
+          "ar": "الحمض ذو قيمة Ka الأصغر هو الأقوى.",
+          "zh": "Ka较小的酸酸性更强。",
+          "ku": "Asîda ku Ka ya wê piçûktir e bihêztir e."
         },
         {
-          "tr": "HF camı erittiği için en kuvvetli asittir.",
-          "en": "HF is the strongest acid because it melts glass.",
-          "de": "HF ist die stärkste Säure, da sie Glas schmilzt.",
-          "fr": "Le HF est l'acide le plus fort car il fait fondre le verre.",
-          "ru": "HF — самая сильная кислота, потому что она плавит стекло.",
-          "ar": "HF هو أقوى حمض لأنه يذيب الزجاج.",
-          "zh": "HF 是最强的酸，因为它可以熔化玻璃。",
-          "ku": "HF asîda herî xurt e ji ber ku camê dihelîne."
+          "tr": "HF camı aşındırdığı için en kuvvetli asittir.",
+          "en": "HF is the strongest acid because it etches glass.",
+          "de": "HF ist die stärkste Säure, weil sie Glas ätzt.",
+          "fr": "HF est l'acide le plus fort car il attaque le verre.",
+          "ru": "HF — самая сильная кислота, потому что она разъедает стекло.",
+          "ar": "HF هو أقوى حمض لأنه يُذيب (يتآكل) الزجاج.",
+          "zh": "HF是最强的酸，因为它能腐蚀玻璃。",
+          "ku": "HF asîda herî xurt e ji ber ku camê dixwe (diqelişîne)."
         },
         {
           "tr": "Titrasyonda eşdeğerlik noktası (dönüm noktası): Asitten gelen H+ mol sayısının bazdan gelen OH- mol sayısına eşit olduğu andır (nH+ = nOH-).",
@@ -1496,7 +1496,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "Die Summe aus pH + pOH beträgt bei jeder Temperatur definitiv 14.",
           "fr": "La somme pH + pOH à chaque température est définitivement de 14.",
           "ru": "Сумма pH + pOH при каждой температуре определенно равна 14.",
-          "ar": "مجموع الرقم الهيدروجيني + الرقم الهيدروجيني عند كل درجة حرارة هو بالتأكيد 14.",
+          "ar": "مجموع pH + pOH يساوي 14 بالضرورة عند أي درجة حرارة.",
           "zh": "每个温度下 pH + pOH 的总和肯定是 14。",
           "ku": "Di her germahiyê de hejmara pH + pOH bê guman 14 e."
         },
@@ -1544,14 +1544,14 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "При разбавлении слабой кислоты концентрация H+ увеличивается.",
           "ar": "عند تخفيف حمض ضعيف يزداد تركيز H+.",
           "zh": "当弱酸被稀释时，H+浓度增加。",
-          "ku": "Dema ku asîdek qels tê rijandin, tansiyona H+ zêde dibe."
+          "ku": "Dema ku asîdeke qels tê sistkirin, tîrbûna H+ zêde dibe."
         },
         {
           "tr": "NH3 kuvvetli bir bazdır.",
           "en": "NH3 is a strong base.",
           "de": "NH3 ist eine starke Base.",
           "fr": "NH3 est une base forte.",
-          "ru": "NH3 – сильная база.",
+          "ru": "NH3 — сильное основание.",
           "ar": "NH3 قاعدة قوية .",
           "zh": "NH3 是强碱。",
           "ku": "NH3 bingehek xurt e."
@@ -1567,14 +1567,14 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Asîdên qels di avê de qet îyonîze nabin."
         },
         {
-          "tr": "Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00'dir.",
-          "en": "In the strong acid - strong base titration, the pH at the equivalence point is exactly 7.00.",
-          "de": "Bei der Titration starke Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt genau 7,00.",
-          "fr": "Dans le titrage acide fort - base forte, le pH au point d’équivalence est exactement de 7,00.",
-          "ru": "При титровании сильной кислотой и сильным основанием pH в точке эквивалентности составляет ровно 7,00.",
-          "ar": "في معايرة حمض قوي - قاعدة قوية، يكون الرقم الهيدروجيني عند نقطة التكافؤ 7.00 بالضبط.",
-          "zh": "在强酸-强碱滴定中，等当点的pH值恰好为7.00。",
-          "ku": "Di tîtrasyona asîd-bazek xurt de, pH li xala hevsengiyê tam 7.00 e."
+          "tr": "Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 25 °C'de 7,00'dir.",
+          "en": "In a strong acid - strong base titration, the pH at the equivalence point is 7.00 at 25 °C.",
+          "de": "Bei der Titration starke Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt bei 25 °C 7,00.",
+          "fr": "Dans le titrage acide fort - base forte, le pH au point d'équivalence est de 7,00 à 25 °C.",
+          "ru": "При титровании сильной кислоты сильным основанием pH в точке эквивалентности при 25 °C равен 7,00.",
+          "ar": "في معايرة حمض قوي بقاعدة قوية يكون pH عند نقطة التكافؤ 7.00 عند 25 °C.",
+          "zh": "在强酸-强碱滴定中，25 °C时等当点的pH为7.00。",
+          "ku": "Di tîtrasyona asîda xurt - baza xurt de, li 25 °C pH di xala hevwateyê de 7,00 e."
         },
         {
           "tr": "Ka değeri büyük olan asidin eşlenik bazının Kb değeri de çok büyüktür.",
@@ -1589,14 +1589,14 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH tam 7.00'dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"In the strong acid - strong base titration, the pH at the equivalence point is exactly 7.00.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Bei der Titration starke Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt genau 7,00.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Dans le titrage acide fort - base forte, le pH au point d’équivalence est exactement de 7,00.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «При титровании сильной кислотой и сильным основанием pH в точке эквивалентности составляет ровно 7,00.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في معايرة حمض قوي - قاعدة قوية، يكون الرقم الهيدروجيني عند نقطة التكافؤ 7.00 بالضبط.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“在强酸-强碱滴定中，等当点的pH值恰好为7.00。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di tîtrasyona asîd-bazek xurt de, pH li xala hevsengiyê tam 7.00 e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Kuvvetli asit - kuvvetli baz titrasyonunda eşdeğerlik noktasında pH 25 °C'de 7,00'dir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"In a strong acid - strong base titration, the pH at the equivalence point is 7.00 at 25 °C.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Bei der Titration starke Säure – starke Base beträgt der pH-Wert am Äquivalenzpunkt bei 25 °C 7,00.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Dans le titrage acide fort - base forte, le pH au point d'équivalence est de 7,00 à 25 °C.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «При титровании сильной кислоты сильным основанием pH в точке эквивалентности при 25 °C равен 7,00.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"في معايرة حمض قوي بقاعدة قوية يكون pH عند نقطة التكافؤ 7.00 عند 25 °C.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“在强酸-强碱滴定中，25 °C时等当点的pH为7.00。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di tîtrasyona asîda xurt - baza xurt de, li 25 °C pH di xala hevwateyê de 7,00 e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1614,13 +1614,13 @@ export const unit19: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Titrasyonda tesir değerliği dikkate alınmaz.",
-          "en": "Potency is not taken into account in titration.",
-          "de": "Die Potenz wird bei der Titration nicht berücksichtigt.",
-          "fr": "La puissance n'est pas prise en compte lors du titrage.",
-          "ru": "Потенциал не учитывается при титровании.",
-          "ar": "لا تؤخذ الفاعلية بعين الاعتبار في المعايرة.",
-          "zh": "滴定时不考虑效价。",
-          "ku": "Potansiyel di titrasyonê de nayê hesibandin."
+          "en": "In titration, the number of H+ or OH- ions per formula unit (Z) is not taken into account.",
+          "de": "Bei der Titration wird die Anzahl der H+- bzw. OH--Ionen pro Formeleinheit (Z) nicht berücksichtigt.",
+          "fr": "Lors d'un titrage, le nombre d'ions H+ ou OH- par unité de formule (Z) n'est pas pris en compte.",
+          "ru": "При титровании число ионов H+ или OH- на формульную единицу (Z) не учитывается.",
+          "ar": "في المعايرة لا يؤخذ عدد أيونات H+ أو OH- لكل وحدة صيغة (Z) بعين الاعتبار.",
+          "zh": "滴定时不考虑每个化学式单位释放的H+或OH-数目（Z）。",
+          "ku": "Di tîtrasyonê de hejmara îyonên H+ an OH- yên her yekeya formulê (Z) nayê hesibandin."
         },
         {
           "tr": "İndikatörler titrasyon tepkimesini hızlandıran katalizörlerdir.",
@@ -1640,7 +1640,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Концентрация H+ слабой кислоты равна исходной концентрации.",
           "ar": "تركيز H+ للحمض الضعيف يساوي التركيز الأولي.",
           "zh": "弱酸的H+浓度等于初始浓度。",
-          "ku": "Pîvana H+ ya asîda qels bi kêşeya destpêkê re ye."
+          "ku": "Tîrbûna H+ ya asîda qels bi tîrbûna wê ya destpêkê re wekhev e."
         },
         {
           "tr": "Tampon çözelti kuvvetli asit ile kuvvetli baz karışımından oluşur.",
@@ -1699,14 +1699,14 @@ export const unit19: ChemistryUnitSeedData = {
           "ku": "Her ku tîrêjiya asîdê ya Ka zêde dibe, hêza asîdê û rêjeya îyonîzasyonê zêde dibe."
         },
         {
-          "tr": "HF camı erittiği için en kuvvetli asittir.",
-          "en": "HF is the strongest acid because it melts glass.",
-          "de": "HF ist die stärkste Säure, da sie Glas schmilzt.",
-          "fr": "Le HF est l'acide le plus fort car il fait fondre le verre.",
-          "ru": "HF — самая сильная кислота, потому что она плавит стекло.",
-          "ar": "HF هو أقوى حمض لأنه يذيب الزجاج.",
-          "zh": "HF 是最强的酸，因为它可以熔化玻璃。",
-          "ku": "HF asîda herî xurt e ji ber ku camê dihelîne."
+          "tr": "HF camı aşındırdığı için en kuvvetli asittir.",
+          "en": "HF is the strongest acid because it etches glass.",
+          "de": "HF ist die stärkste Säure, weil sie Glas ätzt.",
+          "fr": "HF est l'acide le plus fort car il attaque le verre.",
+          "ru": "HF — самая сильная кислота, потому что она разъедает стекло.",
+          "ar": "HF هو أقوى حمض لأنه يُذيب (يتآكل) الزجاج.",
+          "zh": "HF是最强的酸，因为它能腐蚀玻璃。",
+          "ku": "HF asîda herî xurt e ji ber ku camê dixwe (diqelişîne)."
         },
         {
           "tr": "Her sıcaklıkta pH + pOH toplamı mutlaka 14'tür.",
@@ -1714,7 +1714,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "Die Summe aus pH + pOH beträgt bei jeder Temperatur definitiv 14.",
           "fr": "La somme pH + pOH à chaque température est définitivement de 14.",
           "ru": "Сумма pH + pOH при каждой температуре определенно равна 14.",
-          "ar": "مجموع الرقم الهيدروجيني + الرقم الهيدروجيني عند كل درجة حرارة هو بالتأكيد 14.",
+          "ar": "مجموع pH + pOH يساوي 14 بالضرورة عند أي درجة حرارة.",
           "zh": "每个温度下 pH + pOH 的总和肯定是 14。",
           "ku": "Di her germahiyê de hejmara pH + pOH bê guman 14 e."
         },
@@ -1769,7 +1769,7 @@ export const unit19: ChemistryUnitSeedData = {
           "en": "NH3 is a strong base.",
           "de": "NH3 ist eine starke Base.",
           "fr": "NH3 est une base forte.",
-          "ru": "NH3 – сильная база.",
+          "ru": "NH3 — сильное основание.",
           "ar": "NH3 قاعدة قوية .",
           "zh": "NH3 是强碱。",
           "ku": "NH3 bingehek xurt e."
@@ -1782,7 +1782,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Если к раствору слабой кислоты добавить чистую воду и разбавить ее, процент ионизации возрастает; но концентрация H+ уменьшается (рН увеличивается).",
           "ar": "إذا أضيف الماء النقي إلى محلول حمضي ضعيف وتم تخفيفه، تزداد نسبة التأين؛ لكن تركيز H+ يتناقص (يزيد الرقم الهيدروجيني).",
           "zh": "如果将纯水加入到弱酸溶液中并稀释，电离的百分比会增加；但 H+ 浓度降低（pH 值升高）。",
-          "ku": "Ger ava paqij li çareseriyek asîdê ya qels were zêdekirin û were rijandin, rêjeya îyonîzasyonê zêde dibe; lê giraniya H+ kêm dibe (pH zêde dibe)."
+          "ku": "Ger ava saf li çareseriya asîdeke qels were zêdekirin û sist bibe, rêjeya îyonîzasyonê zêde dibe; lê tîrbûna H+ kêm dibe (pH zêde dibe)."
         },
         {
           "tr": "Zayıf asitler suda hiç iyonlaşmaz.",
@@ -1824,7 +1824,7 @@ export const unit19: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Если к раствору слабой кислоты добавить чистую воду и разбавить ее, процент ионизации возрастает; но концентрация H+ уменьшается (рН увеличивается).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"إذا أضيف الماء النقي إلى محلول حمضي ضعيف وتم تخفيفه، تزداد نسبة التأين؛ لكن تركيز H+ يتناقص (يزيد الرقم الهيدروجيني).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“如果将纯水加入到弱酸溶液中并稀释，电离的百分比会增加；但 H+ 浓度降低（pH 值升高）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger ava paqij li çareseriyek asîdê ya qels were zêdekirin û were rijandin, rêjeya îyonîzasyonê zêde dibe; lê giraniya H+ kêm dibe (pH zêde dibe).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Ger ava saf li çareseriya asîdeke qels were zêdekirin û sist bibe, rêjeya îyonîzasyonê zêde dibe; lê tîrbûna H+ kêm dibe (pH zêde dibe).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1858,17 +1858,17 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Концентрация H+ слабой кислоты равна исходной концентрации.",
           "ar": "تركيز H+ للحمض الضعيف يساوي التركيز الأولي.",
           "zh": "弱酸的H+浓度等于初始浓度。",
-          "ku": "Pîvana H+ ya asîda qels bi kêşeya destpêkê re ye."
+          "ku": "Tîrbûna H+ ya asîda qels bi tîrbûna wê ya destpêkê re wekhev e."
         },
         {
           "tr": "Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb'dir (Z: tesir/etki değerliği).",
-          "en": "At the point of equivalence, the formula is: Ma * Va * Za = Mb * Vb * Zb (Z: potency).",
-          "de": "Am Äquivalenzpunkt lautet die Formel: Ma * Va * Za = Mb * Vb * Zb (Z: Potenz).",
-          "fr": "Au point d'équivalence, la formule est : Ma * Va * Za = Mb * Vb * Zb (Z : puissance).",
-          "ru": "В точке эквивалентности формула такова: Ma * Va * Za = Mb * Vb * Zb (Z: потенция).",
-          "ar": "عند نقطة التكافؤ، تكون الصيغة: Ma * Va * Za = Mb * Vb * Zb (Z: فاعلية).",
-          "zh": "在等价点，公式为：Ma * Va * Za = Mb * Vb * Zb（Z：效力）。",
-          "ku": "Di xala hevdengiyê de, formula ev e: Ma * Va * Za = Mb * Vb * Zb (Z: hêz)."
+          "en": "At the equivalence point the formula is: Ma * Va * Za = Mb * Vb * Zb (Z: number of H+ or OH- ions released per formula unit).",
+          "de": "Am Äquivalenzpunkt gilt: Ma * Va * Za = Mb * Vb * Zb (Z: Anzahl der pro Formeleinheit abgegebenen H+- bzw. OH--Ionen).",
+          "fr": "Au point d'équivalence, la formule est : Ma * Va * Za = Mb * Vb * Zb (Z : nombre d'ions H+ ou OH- libérés par unité de formule).",
+          "ru": "В точке эквивалентности: Ma * Va * Za = Mb * Vb * Zb (Z: число ионов H+ или OH-, отдаваемых одной формульной единицей).",
+          "ar": "عند نقطة التكافؤ تكون الصيغة: Ma * Va * Za = Mb * Vb * Zb (Z: عدد أيونات H+ أو OH- التي تطلقها وحدة الصيغة).",
+          "zh": "在等当点：Ma * Va * Za = Mb * Vb * Zb（Z：每个化学式单位释放的H+或OH-数目）。",
+          "ku": "Di xala hevwateyê de formul ev e: Ma * Va * Za = Mb * Vb * Zb (Z: hejmara îyonên H+ an OH- yên ku yek yekeya formulê dide)."
         },
         {
           "tr": "Tampon çözelti kuvvetli asit ile kuvvetli baz karışımından oluşur.",
@@ -1888,19 +1888,19 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "При титровании сильной кислотой и сильным основанием pH равен 0 в точке эквивалентности.",
           "ar": "في معايرة حمض قوي بقاعدة قوية، يكون الرقم الهيدروجيني 0 عند نقطة التكافؤ.",
           "zh": "在强酸强碱滴定中，等当点的pH值为0。",
-          "ku": "Di titrasyonek bingehîn a bihêz a asîdê de, pH di xala hevkêşiyê de 0 ye."
+          "ku": "Di tîtrasyona asîda xurt - baza xurt de, pH di xala hevwateyê de 0 ye."
         }
       ],
       "correctIndex": 2,
       "explanation": {
         "tr": "Doğru cevap \"Eşdeğerlik noktasında formül: Ma * Va * Za = Mb * Vb * Zb'dir (Z: tesir/etki değerliği).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"At the point of equivalence, the formula is: Ma * Va * Za = Mb * Vb * Zb (Z: potency).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Am Äquivalenzpunkt lautet die Formel: Ma * Va * Za = Mb * Vb * Zb (Z: Potenz).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Au point d'équivalence, la formule est : Ma * Va * Za = Mb * Vb * Zb (Z : puissance).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «В точке эквивалентности формула такова: Ma * Va * Za = Mb * Vb * Zb (Z: потенция).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"عند نقطة التكافؤ، تكون الصيغة: Ma * Va * Za = Mb * Vb * Zb (Z: فاعلية).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“在等价点，公式为：Ma * Va * Za = Mb * Vb * Zb（Z：效力）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di xala hevdengiyê de, formula ev e: Ma * Va * Za = Mb * Vb * Zb (Z: hêz).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"At the equivalence point the formula is: Ma * Va * Za = Mb * Vb * Zb (Z: number of H+ or OH- ions released per formula unit).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Am Äquivalenzpunkt gilt: Ma * Va * Za = Mb * Vb * Zb (Z: Anzahl der pro Formeleinheit abgegebenen H+- bzw. OH--Ionen).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Au point d'équivalence, la formule est : Ma * Va * Za = Mb * Vb * Zb (Z : nombre d'ions H+ ou OH- libérés par unité de formule).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «В точке эквивалентности: Ma * Va * Za = Mb * Vb * Zb (Z: число ионов H+ или OH-, отдаваемых одной формульной единицей).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"عند نقطة التكافؤ تكون الصيغة: Ma * Va * Za = Mb * Vb * Zb (Z: عدد أيونات H+ أو OH- التي تطلقها وحدة الصيغة).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“在等当点：Ma * Va * Za = Mb * Vb * Zb（Z：每个化学式单位释放的H+或OH-数目）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di xala hevwateyê de formul ev e: Ma * Va * Za = Mb * Vb * Zb (Z: hejmara îyonên H+ an OH- yên ku yek yekeya formulê dide).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1922,7 +1922,7 @@ export const unit19: ChemistryUnitSeedData = {
           "de": "Die Summe aus pH + pOH beträgt bei jeder Temperatur definitiv 14.",
           "fr": "La somme pH + pOH à chaque température est définitivement de 14.",
           "ru": "Сумма pH + pOH при каждой температуре определенно равна 14.",
-          "ar": "مجموع الرقم الهيدروجيني + الرقم الهيدروجيني عند كل درجة حرارة هو بالتأكيد 14.",
+          "ar": "مجموع pH + pOH يساوي 14 بالضرورة عند أي درجة حرارة.",
           "zh": "每个温度下 pH + pOH 的总和肯定是 14。",
           "ku": "Di her germahiyê de hejmara pH + pOH bê guman 14 e."
         },
@@ -1950,9 +1950,9 @@ export const unit19: ChemistryUnitSeedData = {
           "tr": "HCl, HNO3, H2SO4 kuvvetli asit; HF, HCN, CH3COOH (sirke asidi) zayıf asitlerdir.",
           "en": "HCl, HNO3, H2SO4 strong acid; HF, HCN, CH3COOH (vinegar acid) are weak acids.",
           "de": "HCl, HNO3, H2SO4 starke Säure; HF, HCN, CH3COOH (Essigsäure) sind schwache Säuren.",
-          "fr": "HCl, HNO3, H2SO4 acide fort ; HF, HCN, CH3COOH (acide vinaigre) sont des acides faibles.",
+          "fr": "HCl, HNO3, H2SO4 sont des acides forts ; HF, HCN, CH3COOH (acide acétique) sont des acides faibles.",
           "ru": "HCl, HNO3, H2SO4 сильная кислота; HF, HCN, CH3COOH (уксусная кислота) – слабые кислоты.",
-          "ar": "حمض الهيدروكلوريك، HNO3، H2SO4 حمض قوي؛ HF، HCN، CH3COOH (حمض الخل) هي أحماض ضعيفة.",
+          "ar": "HCl و HNO3 و H2SO4 أحماض قوية؛ و HF و HCN و CH3COOH (حمض الخل) أحماض ضعيفة.",
           "zh": "HCl、HNO3、H2SO4强酸； HF、HCN、CH3COOH（醋酸）是弱酸。",
           "ku": "HCl, HNO3, H2SO4 asîdê xurt; HF, HCN, CH3COOH (asîda sîrkeyê) asîdên qels in."
         },
@@ -1969,14 +1969,14 @@ export const unit19: ChemistryUnitSeedData = {
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"HCl, HNO3, H2SO4 kuvvetli asit; HF, HCN, CH3COOH (sirke asidi) zayıf asitlerdir.\" ifadesidir. HF zayıf asittir; camı eritmesi kimyasal özel afinitesindendir!",
-        "en": "The correct statement is: \"HCl, HNO3, H2SO4 strong acid; HF, HCN, CH3COOH (vinegar acid) are weak acids.\". HF is a weak acid; Melting glass is due to its special chemical affinity!",
-        "de": "Die zutreffende Aussage lautet: \"HCl, HNO3, H2SO4 starke Säure; HF, HCN, CH3COOH (Essigsäure) sind schwache Säuren.\". HF ist eine schwache Säure; Das Schmelzen von Glas ist auf seine besondere chemische Affinität zurückzuführen!",
-        "fr": "L'affirmation exacte est: \"HCl, HNO3, H2SO4 acide fort ; HF, HCN, CH3COOH (acide vinaigre) sont des acides faibles.\". Le HF est un acide faible ; La fonte du verre est due à son affinité chimique particulière !",
-        "ru": "Правильное утверждение: «HCl, HNO3, H2SO4 сильная кислота; HF, HCN, CH3COOH (уксусная кислота) – слабые кислоты.». HF – слабая кислота; Плавление стекла происходит благодаря его особому химическому сродству!",
-        "ar": "العبارة الصحيحة هي: \"حمض الهيدروكلوريك، HNO3، H2SO4 حمض قوي؛ HF، HCN، CH3COOH (حمض الخل) هي أحماض ضعيفة.\". HF حمض ضعيف. ذوبان الزجاج يرجع إلى تقاربه الكيميائي الخاص!",
-        "zh": "正确表述为：“HCl、HNO3、H2SO4强酸； HF、HCN、CH3COOH（醋酸）是弱酸。”。HF是弱酸；玻璃的熔化是由于其特殊的化学亲和力！",
-        "ku": "Gotina rast ev e: \"HCl, HNO3, H2SO4 asîdê xurt; HF, HCN, CH3COOH (asîda sîrkeyê) asîdên qels in.\". HF asîdeke qels e; Şilbûna şûşê ji ber girêdana wê ya kîmyewî ya taybetî ye!"
+        "tr": "Doğru cevap \"HCl, HNO3, H2SO4 kuvvetli asit; HF, HCN, CH3COOH (sirke asidi) zayıf asitlerdir.\" ifadesidir. HF zayıf asittir; camı aşındırması asit kuvvetinden değil, camdaki SiO2 ile tepkimeye girip SiF4 oluşturmasındandır!",
+        "en": "The correct statement is: \"HCl, HNO3, H2SO4 strong acid; HF, HCN, CH3COOH (vinegar acid) are weak acids.\". HF is a weak acid; it etches glass not because of its acid strength but because it reacts with the SiO2 in glass to form SiF4!",
+        "de": "Die zutreffende Aussage lautet: \"HCl, HNO3, H2SO4 starke Säure; HF, HCN, CH3COOH (Essigsäure) sind schwache Säuren.\". HF ist eine schwache Säure; sie ätzt Glas nicht wegen ihrer Säurestärke, sondern weil sie mit dem SiO2 des Glases zu SiF4 reagiert!",
+        "fr": "L'affirmation exacte est: \"HCl, HNO3, H2SO4 sont des acides forts ; HF, HCN, CH3COOH (acide acétique) sont des acides faibles.\". HF est un acide faible ; il attaque le verre non pas à cause de sa force acide, mais parce qu'il réagit avec le SiO2 du verre pour former SiF4 !",
+        "ru": "Правильное утверждение: «HCl, HNO3, H2SO4 сильная кислота; HF, HCN, CH3COOH (уксусная кислота) – слабые кислоты.». HF — слабая кислота; она разъедает стекло не из-за силы кислоты, а потому что реагирует с SiO2 стекла, образуя SiF4!",
+        "ar": "العبارة الصحيحة هي: \"HCl و HNO3 و H2SO4 أحماض قوية؛ و HF و HCN و CH3COOH (حمض الخل) أحماض ضعيفة.\". HF حمض ضعيف؛ وتآكله للزجاج ليس بسبب قوته الحمضية بل لأنه يتفاعل مع SiO2 في الزجاج مكوّنًا SiF4!",
+        "zh": "正确表述为：“HCl、HNO3、H2SO4强酸； HF、HCN、CH3COOH（醋酸）是弱酸。”。HF是弱酸；它腐蚀玻璃不是因为酸性强，而是因为它与玻璃中的SiO2反应生成SiF4！",
+        "ku": "Gotina rast ev e: \"HCl, HNO3, H2SO4 asîdê xurt; HF, HCN, CH3COOH (asîda sîrkeyê) asîdên qels in.\". HF asîdeke qels e; camê dixwe ne ji ber hêza asîdiyê, lê ji ber ku bi SiO2 ya camê re reaksiyon dike û SiF4 çêdike!"
       }
     },
     {
@@ -2024,21 +2024,21 @@ export const unit19: ChemistryUnitSeedData = {
         },
         {
           "tr": "Ka'sı küçük olan asit daha kuvvetlidir.",
-          "en": "The acid with smaller muscles is stronger.",
-          "de": "Bei kleineren Muskeln ist die Säure stärker.",
-          "fr": "L'acide avec des muscles plus petits est plus fort.",
-          "ru": "Кислота с меньшими мышцами сильнее.",
-          "ar": "الحمض ذو العضلات الأصغر يكون أقوى.",
-          "zh": "肌肉越小，酸越强。",
-          "ku": "Asîda bi masûlkeyên piçûktir bihêztir e."
+          "en": "The acid with the smaller Ka is the stronger acid.",
+          "de": "Die Säure mit dem kleineren Ka ist die stärkere Säure.",
+          "fr": "L'acide dont le Ka est le plus petit est le plus fort.",
+          "ru": "Кислота с меньшим Ka является более сильной.",
+          "ar": "الحمض ذو قيمة Ka الأصغر هو الأقوى.",
+          "zh": "Ka较小的酸酸性更强。",
+          "ku": "Asîda ku Ka ya wê piçûktir e bihêztir e."
         },
         {
           "tr": "NaOH, KOH kuvvetli baz; NH3 (amonyak) zayıf bazdır.",
           "en": "NaOH, KOH strong base; NH3 (ammonia) is a weak base.",
           "de": "NaOH, KOH starke Base; NH3 (Ammoniak) ist eine schwache Base.",
           "fr": "NaOH, KOH base forte ; NH3 (ammoniac) est une base faible.",
-          "ru": "NaOH, КОН сильное основание; NH3 (аммиак) – слабое основание.",
-          "ar": "هيدروكسيد الصوديوم، كوه قاعدة قوية؛ NH3 (الأمونيا) قاعدة ضعيفة.",
+          "ru": "NaOH, KOH — сильные основания; NH3 (аммиак) — слабое основание.",
+          "ar": "NaOH و KOH قاعدتان قويتان؛ NH3 (الأمونيا) قاعدة ضعيفة.",
           "zh": "NaOH、KOH强碱； NH3（氨）是弱碱。",
           "ku": "NaOH, KOH bingeha xurt; NH3 (ammoniak) bingeheke qels e."
         }
@@ -2049,8 +2049,8 @@ export const unit19: ChemistryUnitSeedData = {
         "en": "The correct statement is: \"NaOH, KOH strong base; NH3 (ammonia) is a weak base.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"NaOH, KOH starke Base; NH3 (Ammoniak) ist eine schwache Base.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"NaOH, KOH base forte ; NH3 (ammoniac) est une base faible.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «NaOH, КОН сильное основание; NH3 (аммиак) – слабое основание.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"هيدروكسيد الصوديوم، كوه قاعدة قوية؛ NH3 (الأمونيا) قاعدة ضعيفة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ru": "Правильное утверждение: «NaOH, KOH — сильные основания; NH3 (аммиак) — слабое основание.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"NaOH و KOH قاعدتان قويتان؛ NH3 (الأمونيا) قاعدة ضعيفة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“NaOH、KOH强碱； NH3（氨）是弱碱。”。属于化学学科必考的核心客观真理。",
         "ku": "Gotina rast ev e: \"NaOH, KOH bingeha xurt; NH3 (ammoniak) bingeheke qels e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
@@ -2086,7 +2086,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "Концентрация H+ слабой кислоты равна исходной концентрации.",
           "ar": "تركيز H+ للحمض الضعيف يساوي التركيز الأولي.",
           "zh": "弱酸的H+浓度等于初始浓度。",
-          "ku": "Pîvana H+ ya asîda qels bi kêşeya destpêkê re ye."
+          "ku": "Tîrbûna H+ ya asîda qels bi tîrbûna wê ya destpêkê re wekhev e."
         },
         {
           "tr": "Tampon çözelti kuvvetli asit ile kuvvetli baz karışımından oluşur.",
@@ -2106,7 +2106,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "При титровании сильной кислотой и сильным основанием pH равен 0 в точке эквивалентности.",
           "ar": "في معايرة حمض قوي بقاعدة قوية، يكون الرقم الهيدروجيني 0 عند نقطة التكافؤ.",
           "zh": "在强酸强碱滴定中，等当点的pH值为0。",
-          "ku": "Di titrasyonek bingehîn a bihêz a asîdê de, pH di xala hevkêşiyê de 0 ye."
+          "ku": "Di tîtrasyona asîda xurt - baza xurt de, pH di xala hevwateyê de 0 ye."
         },
         {
           "tr": "Zayıf asit seyreltildiğinde H+ derişimi artar.",
@@ -2116,7 +2116,7 @@ export const unit19: ChemistryUnitSeedData = {
           "ru": "При разбавлении слабой кислоты концентрация H+ увеличивается.",
           "ar": "عند تخفيف حمض ضعيف يزداد تركيز H+.",
           "zh": "当弱酸被稀释时，H+浓度增加。",
-          "ku": "Dema ku asîdek qels tê rijandin, tansiyona H+ zêde dibe."
+          "ku": "Dema ku asîdeke qels tê sistkirin, tîrbûna H+ zêde dibe."
         }
       ],
       "correctIndex": 0,

@@ -25,13 +25,75 @@ export const LEITNER_INTERVALS_MS: Record<1 | 2 | 3 | 4 | 5, number> = {
   5: 14 * 86_400_000,
 };
 
+/** Legacy app-wide key (before card boxes became per profile). Still read for migration. */
 export const LEITNER_STORAGE_KEY = 'kimya-yks-leitner-v1';
+const PROGRESS_STORAGE_KEY = 'kimya-yks-progress-v1';
+
+/** Per-profile storage key for card-box progress. */
+export function leitnerStorageKey(profileId?: string): string {
+  return profileId ? `${LEITNER_STORAGE_KEY}:${profileId}` : LEITNER_STORAGE_KEY;
+}
+
+/** The profile that was active when the app last saved (the owner of legacy, app-wide card boxes). */
+function storedActiveProfileId(): string {
+  try {
+    const raw = localStorage.getItem(PROGRESS_STORAGE_KEY);
+    const parsed = raw ? JSON.parse(raw) : null;
+    if (parsed && typeof parsed === 'object') {
+      const profiles = Array.isArray(parsed.profiles) ? parsed.profiles : [];
+      if (typeof parsed.activeProfileId === 'string' && profiles.some((p: { id?: unknown }) => p?.id === parsed.activeProfileId)) {
+        return parsed.activeProfileId;
+      }
+      if (typeof profiles[0]?.id === 'string' && profiles[0].id) return profiles[0].id;
+    }
+  } catch {
+    // fall through
+  }
+  return 'profile-default';
+}
+
+/**
+ * One-time migration: card boxes saved app-wide under the legacy key move to the
+ * profile that is currently active, then the legacy key is removed so other
+ * profiles start with empty boxes.
+ */
+export function migrateLegacyLeitnerData(): void {
+  if (typeof localStorage === 'undefined') return;
+  try {
+    const legacy = localStorage.getItem(LEITNER_STORAGE_KEY);
+    if (legacy === null) return;
+    const target = leitnerStorageKey(storedActiveProfileId());
+    if (localStorage.getItem(target) === null) localStorage.setItem(target, legacy);
+    localStorage.removeItem(LEITNER_STORAGE_KEY);
+  } catch {
+    // Storage unavailable
+  }
+}
+
+/** Removes one profile's saved card boxes (used when a profile is deleted). */
+export function clearLeitnerDataForProfile(profileId: string): void {
+  if (typeof localStorage === 'undefined') return;
+  try {
+    localStorage.removeItem(leitnerStorageKey(profileId));
+  } catch {
+    // Ignore
+  }
+}
+
+export interface LeitnerEngineOptions {
+  /** Store card boxes for this profile only. Without it the legacy app-wide key is used. */
+  profileId?: string;
+}
 
 export class LeitnerBoxEngine {
   private boxMap: Record<string, number> = {};
   private progressMap: Record<string, CardProgressRecord> = {};
+  private readonly storageKey: string;
+  private readonly profileId?: string;
 
-  constructor(initialData?: Record<string, CardProgressRecord | number>) {
+  constructor(initialData?: Record<string, CardProgressRecord | number> | null, options: LeitnerEngineOptions = {}) {
+    this.profileId = options.profileId || undefined;
+    this.storageKey = leitnerStorageKey(this.profileId);
     if (initialData) {
       Object.entries(initialData).forEach(([k, v]) => {
         if (typeof v === 'number') {
@@ -121,7 +183,7 @@ export class LeitnerBoxEngine {
   save(): void {
     if (typeof localStorage === 'undefined') return;
     try {
-      localStorage.setItem(LEITNER_STORAGE_KEY, JSON.stringify(this.progressMap));
+      localStorage.setItem(this.storageKey, JSON.stringify(this.progressMap));
     } catch {
       // Storage unavailable or quota exceeded
     }
@@ -129,8 +191,9 @@ export class LeitnerBoxEngine {
 
   load(): void {
     if (typeof localStorage === 'undefined') return;
+    if (this.profileId) migrateLegacyLeitnerData();
     try {
-      const raw = localStorage.getItem(LEITNER_STORAGE_KEY);
+      const raw = localStorage.getItem(this.storageKey);
       if (raw) {
         const parsed = JSON.parse(raw);
         this.progressMap = parsed;
@@ -152,7 +215,7 @@ export class LeitnerBoxEngine {
     this.boxMap = {};
     if (typeof localStorage !== 'undefined') {
       try {
-        localStorage.removeItem(LEITNER_STORAGE_KEY);
+        localStorage.removeItem(this.storageKey);
       } catch {
         // Ignore
       }

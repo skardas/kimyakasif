@@ -215,20 +215,20 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Percentage yield is calculated with the formula = (Actual Yield / Theoretical Yield) x 100.",
         "de": "Der prozentuale Ertrag wird mit der Formel = (tatsächlicher Ertrag / theoretischer Ertrag) x 100 berechnet.",
         "fr": "Le rendement en pourcentage est calculé avec la formule = (Rendement réel / Rendement théorique) x 100.",
-        "ru": "Процентная доходность рассчитывается по формуле = (Фактическая доходность / Теоретическая доходность) x 100.",
+        "ru": "Процентный выход рассчитывается по формуле = (Фактический выход / Теоретический выход) x 100.",
         "ar": "يتم حساب نسبة العائد باستخدام الصيغة = (العائد الفعلي / العائد النظري) × 100.",
-        "zh": "百分比收益率的计算公式为 =（实际收益率/理论收益率）x 100。",
-        "ku": "Berhema ji sedî bi formula = (Rêberdana Rastî / Berhema Teorîk) x 100 tê hesibandin."
+        "zh": "百分产率的计算公式为 =（实际产量/理论产量）x 100。",
+        "ku": "Berhema ji sedî bi formula = (Berhema Rastîn / Berhema Teorîk) x 100 tê hesibandin."
       },
       "trap": {
         "tr": "Gerçek verim teorik verimden daima daha büyüktür.",
-        "en": "Actual efficiency is always greater than theoretical efficiency.",
-        "de": "Der tatsächliche Wirkungsgrad ist immer größer als der theoretische Wirkungsgrad.",
-        "fr": "L'efficacité réelle est toujours supérieure à l'efficacité théorique.",
-        "ru": "Фактическая эффективность всегда выше теоретической эффективности.",
-        "ar": "الكفاءة الفعلية دائما أكبر من الكفاءة النظرية.",
-        "zh": "实际效率总是大于理论效率。",
-        "ku": "Karbidestiya rastîn her gav ji karbidestiya teorîkî mezintir e."
+        "en": "The actual yield is always greater than the theoretical yield.",
+        "de": "Die tatsächliche Ausbeute ist immer größer als die theoretische Ausbeute.",
+        "fr": "Le rendement réel est toujours supérieur au rendement théorique.",
+        "ru": "Фактический выход всегда больше теоретического выхода.",
+        "ar": "العائد الفعلي دائمًا أكبر من العائد النظري.",
+        "zh": "实际产量总是大于理论产量。",
+        "ku": "Berhema rastîn her gav ji berhema teorîk mezintir e."
       }
     },
     {
@@ -293,9 +293,9 @@ export const unit07: ChemistryUnitSeedData = {
         "tr": "Hangi maddeden daha çok mol varsa o madde önce biter.",
         "en": "Whichever substance has the most moles, that substance runs out first.",
         "de": "Welche Substanz auch immer die meisten Mole hat, diese Substanz geht zuerst aus.",
-        "fr": "Quelle que soit la substance qui contient le plus de grains de beauté, elle s’épuise en premier.",
+        "fr": "La substance qui a le plus grand nombre de moles s'épuise en premier.",
         "ru": "В каком бы веществе ни было больше всего молей, оно исчерпается первым.",
-        "ar": "أيًا كانت المادة التي تحتوي على أكبر عدد من الشامات، فإن تلك المادة تنفد أولاً.",
+        "ar": "المادة التي لديها أكبر عدد من المولات هي التي تنفد أولاً.",
         "zh": "无论哪种物质的摩尔数最多，该物质都会先耗尽。",
         "ku": "Kîjan maddeya ku herî zêde molên wê hebin, ew madde pêşî diqede."
       }
@@ -333,7 +333,7 @@ export const unit07: ChemistryUnitSeedData = {
         "ru": "Ржавление железа (4Fe + 3O2 -> 2Fe2O3) является примером медленного беспламенного горения.",
         "ar": "صدأ الحديد (4Fe + 3O2 -> 2Fe2O3) هو مثال على الاحتراق البطيء عديم اللهب.",
         "zh": "铁生锈（4Fe + 3O2 -> 2Fe2O3）是缓慢无焰燃烧的一个例子。",
-        "ku": "Zehfkirina hesin (4Fe + 3O2 -> 2Fe2O3) mînakek şewitandina hêdî hêdî ye."
+        "ku": "Zengarbûna hesin (4Fe + 3O2 -> 2Fe2O3) mînaka şewitandina hêdî ya bê agir e."
       },
       "trap": {
         "tr": "Demirin paslanması fiziksel bir çözünme olayıdır.",
@@ -343,7 +343,7 @@ export const unit07: ChemistryUnitSeedData = {
         "ru": "Ржавление железа – это явление физического растворения.",
         "ar": "صدأ الحديد هو ظاهرة انحلال فيزيائي.",
         "zh": "铁的生锈是一种物理溶解现象。",
-        "ku": "Zehfbûna hesin diyardeyeke fîzîkî ya têkçûyînê ye."
+        "ku": "Zengarbûna hesin diyardeyeke fîzîkî ya helbûnê ye."
       }
     },
     {
@@ -359,14 +359,14 @@ export const unit07: ChemistryUnitSeedData = {
         "ku": "Di reaksiyonê de AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), îyonên temaşeker Na+ û NO3- in."
       },
       "trap": {
-        "tr": "Yukarıdaki tepkimede Ag+ ve Cl- seyirci iyonlardır.",
-        "en": "In the above reaction, Ag+ and Cl- are spectator ions.",
-        "de": "In der obigen Reaktion sind Ag+ und Cl- Zuschauerionen.",
-        "fr": "Dans la réaction ci-dessus, Ag+ et Cl- sont des ions spectateurs.",
-        "ru": "В приведенной выше реакции Ag+ и Cl- являются ионами-спектаторами.",
-        "ar": "في التفاعل أعلاه، Ag+ وCl- هما أيونان متفرجان.",
-        "zh": "在上述反应中，Ag+和Cl-是旁观者离子。",
-        "ku": "Di reaksiyona jorîn de Ag+ û Cl- îyonên temaşeker in."
+        "tr": "AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde Ag+ ve Cl- seyirci iyonlardır.",
+        "en": "In the reaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), Ag+ and Cl- are spectator ions.",
+        "de": "Bei der Reaktion AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) sind Ag+ und Cl- Zuschauerionen.",
+        "fr": "Dans la réaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), Ag+ et Cl- sont des ions spectateurs.",
+        "ru": "В реакции AgNO3(вод) + NaCl(вод) -> AgCl(k) + NaNO3(вод) ионами-спектаторами являются Ag+ и Cl-.",
+        "ar": "في التفاعل AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq)، يكون Ag+ وCl- أيونين متفرجين.",
+        "zh": "在反应 AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) 中，Ag+ 和 Cl- 是旁观离子。",
+        "ku": "Di reaksiyona AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) de Ag+ û Cl- îyonên temaşeker in."
       }
     },
     {
@@ -421,7 +421,7 @@ export const unit07: ChemistryUnitSeedData = {
       "id": "u07-c01",
       "conceptA": {
         "tr": "Sentez",
-        "en": "synthesis",
+        "en": "Synthesis",
         "de": "Synthese",
         "fr": "synthèse",
         "ru": "синтез",
@@ -437,17 +437,17 @@ export const unit07: ChemistryUnitSeedData = {
         "ru": "Анализ",
         "ar": "التحليل",
         "zh": "分析",
-        "ku": "Analysis"
+        "ku": "Analîz"
       },
       "distinction": {
         "tr": "Sentez maddelerin birleşerek tek ürün vermesi; analiz tek bileşiğin parçalanarak ayrışmasıdır.",
-        "en": "Synthetic substances combine to produce a single product; analysis is the disintegration of a single compound.",
-        "de": "Synthetische Stoffe verbinden sich zu einem einzigen Produkt; Analyse ist der Zerfall einer einzelnen Verbindung.",
-        "fr": "Les substances synthétiques se combinent pour produire un seul produit ; l’analyse est la désintégration d’un seul composé.",
-        "ru": "Синтетические вещества объединяются для производства единого продукта; Анализ представляет собой распад одного соединения.",
-        "ar": "تجتمع المواد الاصطناعية لتنتج منتجاً واحداً؛ التحليل هو تفكك مركب واحد.",
-        "zh": "合成物质结合起来生产单一产品；分析是单个化合物的分解。",
-        "ku": "Materyalên sentetîk bi hev re hilberek yekane çêdikin; analîz perçebûna yek pêkhatî ye."
+        "en": "In synthesis, substances combine to give a single product; analysis is the breakdown of a single compound.",
+        "de": "Bei der Synthese verbinden sich Stoffe zu einem einzigen Produkt; die Analyse ist die Zerlegung einer einzelnen Verbindung.",
+        "fr": "Dans la synthèse, des substances se combinent pour donner un seul produit ; l'analyse est la décomposition d'un seul composé.",
+        "ru": "При синтезе вещества соединяются в один продукт; анализ — это разложение одного соединения.",
+        "ar": "في التركيب تتحد المواد لتعطي ناتجًا واحدًا؛ والتحليل هو تفكك مركب واحد.",
+        "zh": "合成是物质结合生成单一产物；分解（分析）是单一化合物的分解。",
+        "ku": "Di sentezê de madde bi hev re dibin yek hilber; analîz perçebûna yek pêkhateyê ye."
       }
     },
     {
@@ -457,63 +457,63 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "Actual Yield",
         "de": "Tatsächlicher Ertrag",
         "fr": "Rendement réel",
-        "ru": "Фактическая доходность",
+        "ru": "Фактический выход",
         "ar": "العائد الفعلي",
         "zh": "实际产量",
-        "ku": "Hilberîna Rastî"
+        "ku": "Berhema Rastîn"
       },
       "conceptB": {
         "tr": "Teorik Verim",
         "en": "Theoretical Yield",
         "de": "Theoretischer Ertrag",
         "fr": "Rendement théorique",
-        "ru": "Теоретическая доходность",
+        "ru": "Теоретический выход",
         "ar": "العائد النظري",
         "zh": "理论产量",
-        "ku": "Hilberîna Teorîk"
+        "ku": "Berhema Teorîk"
       },
       "distinction": {
         "tr": "Teorik verim hesaplanan maksimum verim; gerçek verim deneyde elde edilen net miktardır.",
-        "en": "The theoretical efficiency is the calculated maximum efficiency; The actual yield is the net amount obtained in the experiment.",
-        "de": "Der theoretische Wirkungsgrad ist der berechnete maximale Wirkungsgrad; Die tatsächliche Ausbeute ist die im Experiment erzielte Nettomenge.",
+        "en": "The theoretical yield is the calculated maximum amount of product; the actual yield is the amount actually obtained in the experiment.",
+        "de": "Die theoretische Ausbeute ist die berechnete maximale Produktmenge; die tatsächliche Ausbeute ist die im Experiment tatsächlich erhaltene Menge.",
         "fr": "Le rendement théorique est le rendement maximal calculé ; Le rendement réel est le montant net obtenu dans l'expérience.",
-        "ru": "Теоретическая эффективность — это расчетная максимальная эффективность; Фактический выход представляет собой чистую сумму, полученную в ходе эксперимента.",
-        "ar": "الكفاءة النظرية هي الكفاءة القصوى المحسوبة. العائد الفعلي هو المبلغ الصافي الذي تم الحصول عليه في التجربة.",
-        "zh": "理论效率是计算出的最大效率；实际产量为实验中获得的净量。",
-        "ku": "Karbidestiya teorîkî karbidestiya herî zêde ya hesabkirî ye; Berhema rastîn mîqdara net e ku di ceribandinê de hatî bidestxistin."
+        "ru": "Теоретический выход — рассчитанное максимальное количество продукта; фактический выход — количество, реально полученное в эксперименте.",
+        "ar": "العائد النظري هو أكبر كمية ناتج محسوبة؛ والعائد الفعلي هو الكمية التي يتم الحصول عليها فعلًا في التجربة.",
+        "zh": "理论产量是计算得到的最大产物量；实际产量是实验中实际得到的量。",
+        "ku": "Berhema teorîk mîqdara herî zêde ya hilberê ya hesabkirî ye; berhema rastîn mîqdara ku di ceribandinê de bi rastî tê bidestxistin e."
       }
     },
     {
       "id": "u07-c03",
       "conceptA": {
-        "tr": "Sentez (Oluşum) Tepkimesi",
-        "en": "Synthesis Reaction",
-        "de": "Synthesereaktion",
-        "fr": "Réaction de synthèse",
-        "ru": "Реакция синтеза",
-        "ar": "رد فعل التوليف",
-        "zh": "合成反应",
-        "ku": "Reaksiyona Sentezê"
+        "tr": "Saflık Yüzdesi",
+        "en": "Percent Purity",
+        "de": "Reinheit in Prozent",
+        "fr": "Pourcentage de pureté",
+        "ru": "Процент чистоты",
+        "ar": "نسبة النقاء",
+        "zh": "纯度百分比",
+        "ku": "Rêjeya paqijiyê ya ji sedî"
       },
       "conceptB": {
-        "tr": "Analiz (Ayrışma) Tepkimesi",
-        "en": "Analysis (Decomposition) Reaction",
-        "de": "Analyse (Zersetzung) Reaktion",
-        "fr": "Analyse (décomposition) Réaction",
-        "ru": "Анализ (разложение) Реакция",
-        "ar": "تحليل (التحلل) رد الفعل",
-        "zh": "分析（分解）反应",
-        "ku": "Reaksîyona Analîz (Pêkvebûn)."
+        "tr": "Yüzde Verim",
+        "en": "Percent Yield",
+        "de": "Prozentuale Ausbeute",
+        "fr": "Rendement en pourcentage",
+        "ru": "Процентный выход",
+        "ar": "النسبة المئوية للعائد",
+        "zh": "百分产率",
+        "ku": "Berhema ji sedî"
       },
       "distinction": {
-        "tr": "Sentez küçük maddelerden büyük bileşik oluşumudur; analiz tek bir bileşiğin daha küçük maddelere parçalanmasıdır.",
-        "en": "Synthesis is the formation of large compounds from small substances; Analysis is the breakdown of a single compound into smaller substances.",
-        "de": "Synthese ist die Bildung großer Verbindungen aus kleinen Substanzen; Unter Analyse versteht man die Zerlegung einer einzelnen Verbindung in kleinere Substanzen.",
-        "fr": "La synthèse est la formation de gros composés à partir de petites substances ; L'analyse est la décomposition d'un seul composé en substances plus petites.",
-        "ru": "Синтез — образование крупных соединений из мелких веществ; Анализ – это распад одного соединения на более мелкие вещества.",
-        "ar": "التخليق هو تكوين مركبات كبيرة من مواد صغيرة؛ التحليل هو تحلل مركب واحد إلى مواد أصغر.",
-        "zh": "合成是由小物质形成大化合物；分析是将单一化合物分解成更小的物质。",
-        "ku": "Sentez çêbûna pêkhateyên mezin ji madeyên biçûk e; Analîz dabeşkirina yek pêkhateyek nav maddeyên piçûktir e."
+        "tr": "Saflık yüzdesi numunedeki saf madde kütlesinin numune kütlesine oranıdır (x100); yüzde verim gerçekte elde edilen ürün miktarının hesaplanan en fazla ürün miktarına oranıdır (x100).",
+        "en": "Percent purity is the ratio of the mass of pure substance to the mass of the sample (x100); percent yield is the ratio of the amount of product actually obtained to the maximum amount of product calculated (x100).",
+        "de": "Die Reinheit in Prozent ist das Verhältnis der Masse des reinen Stoffes zur Masse der Probe (x100); die prozentuale Ausbeute ist das Verhältnis der tatsächlich erhaltenen Produktmenge zur berechneten maximalen Produktmenge (x100).",
+        "fr": "Le pourcentage de pureté est le rapport de la masse de substance pure à la masse de l'échantillon (x100) ; le rendement en pourcentage est le rapport de la quantité de produit réellement obtenue à la quantité maximale de produit calculée (x100).",
+        "ru": "Процент чистоты — это отношение массы чистого вещества к массе образца (x100); процентный выход — это отношение реально полученного количества продукта к рассчитанному максимальному количеству продукта (x100).",
+        "ar": "نسبة النقاء هي نسبة كتلة المادة النقية إلى كتلة العينة (x100)؛ والنسبة المئوية للعائد هي نسبة كمية الناتج التي حُصل عليها فعلًا إلى أكبر كمية ناتج محسوبة (x100).",
+        "zh": "纯度百分比是纯物质质量与样品质量之比（x100）；百分产率是实际得到的产物量与计算出的最大产物量之比（x100）。",
+        "ku": "Rêjeya paqijiyê ya ji sedî rêjeya girseya madeya paqij li girseya nimûneyê ye (x100); berhema ji sedî rêjeya mîqdara hilberê ya bi rastî hatî bidestxistin li mîqdara herî zêde ya hesabkirî ye (x100)."
       }
     },
     {
@@ -553,23 +553,23 @@ export const unit07: ChemistryUnitSeedData = {
       "id": "u07-c05",
       "conceptA": {
         "tr": "Sınırlayıcı Bileşen",
-        "en": "Limiting Component",
-        "de": "Begrenzende Komponente",
-        "fr": "Composant limitant",
-        "ru": "Ограничивающий компонент",
-        "ar": "مكون الحد",
-        "zh": "限制元件",
-        "ku": "Parvekirina Sînorkirin"
+        "en": "Limiting Reactant",
+        "de": "Limitierender Reaktant",
+        "fr": "Réactif limitant",
+        "ru": "Лимитирующий реагент",
+        "ar": "المادة المحددة",
+        "zh": "限量反应物",
+        "ku": "Reaktanta sînordar"
       },
       "conceptB": {
         "tr": "Artan Madde",
-        "en": "Increased Matter",
-        "de": "Erhöhte Materie",
-        "fr": "Matière accrue",
-        "ru": "Повышенная материя",
-        "ar": "زيادة المادة",
-        "zh": "增加物质",
-        "ku": "Zêdebûna Madeyê"
+        "en": "Excess Reactant",
+        "de": "Überschussreaktant",
+        "fr": "Réactif en excès",
+        "ru": "Избыточный реагент",
+        "ar": "المادة الفائضة",
+        "zh": "过量反应物",
+        "ku": "Reaktanta zêde"
       },
       "distinction": {
         "tr": "Sınırlayıcı bileşen tepkimede ilk önce tükenen ve ürün miktarını belirleyen maddedir; artan madde tepkime bittiğinde artakalandır.",
@@ -596,13 +596,13 @@ export const unit07: ChemistryUnitSeedData = {
       },
       "conceptB": {
         "tr": "Seyirci İyonlar",
-        "en": "Audience Ions",
-        "de": "Publikumsionen",
-        "fr": "Ions du public",
-        "ru": "Ионы аудитории",
-        "ar": "أيونات الجمهور",
-        "zh": "观众离子",
-        "ku": "Audience Ions"
+        "en": "Spectator Ions",
+        "de": "Zuschauerionen",
+        "fr": "Ions spectateurs",
+        "ru": "Ионы-спектаторы",
+        "ar": "الأيونات المتفرجة",
+        "zh": "旁观离子",
+        "ku": "Îyonên temaşeker"
       },
       "distinction": {
         "tr": "Net iyon denklemi çöken katıyı veya oluşan suyu gösterir; seyirci iyonlar çözeltide değişmeden kalan iyonlardır.",
@@ -651,34 +651,34 @@ export const unit07: ChemistryUnitSeedData = {
     {
       "id": "u07-c08",
       "conceptA": {
-        "tr": "Sentez",
-        "en": "synthesis",
-        "de": "Synthese",
-        "fr": "synthèse",
-        "ru": "синтез",
-        "ar": "التوليف",
-        "zh": "合成",
-        "ku": "sentez"
+        "tr": "Mol Oranı",
+        "en": "Mole Ratio",
+        "de": "Stoffmengenverhältnis",
+        "fr": "Rapport molaire",
+        "ru": "Мольное соотношение",
+        "ar": "النسبة المولية",
+        "zh": "摩尔比",
+        "ku": "Rêjeya molan"
       },
       "conceptB": {
-        "tr": "Analiz",
-        "en": "Analysis",
-        "de": "Analyse",
-        "fr": "Analyse",
-        "ru": "Анализ",
-        "ar": "التحليل",
-        "zh": "分析",
-        "ku": "Analysis"
+        "tr": "Kütle Oranı",
+        "en": "Mass Ratio",
+        "de": "Massenverhältnis",
+        "fr": "Rapport massique",
+        "ru": "Массовое соотношение",
+        "ar": "النسبة الكتلية",
+        "zh": "质量比",
+        "ku": "Rêjeya girseyan"
       },
       "distinction": {
-        "tr": "Sentez maddelerin birleşerek tek ürün vermesi; analiz tek bileşiğin parçalanarak ayrışmasıdır.",
-        "en": "Synthetic substances combine to produce a single product; analysis is the disintegration of a single compound.",
-        "de": "Synthetische Stoffe verbinden sich zu einem einzigen Produkt; Analyse ist der Zerfall einer einzelnen Verbindung.",
-        "fr": "Les substances synthétiques se combinent pour produire un seul produit ; l’analyse est la désintégration d’un seul composé.",
-        "ru": "Синтетические вещества объединяются для производства единого продукта; Анализ представляет собой распад одного соединения.",
-        "ar": "تجتمع المواد الاصطناعية لتنتج منتجاً واحداً؛ التحليل هو تفكك مركب واحد.",
-        "zh": "合成物质结合起来生产单一产品；分析是单个化合物的分解。",
-        "ku": "Materyalên sentetîk bi hev re hilberek yekane çêdikin; analîz perçebûna yek pêkhatî ye."
+        "tr": "Denkleştirilmiş tepkimede maddelerin mol oranı katsayılarına eşittir; kütle oranı ise katsayılar mol kütleleriyle çarpılarak bulunur.",
+        "en": "In a balanced equation, the mole ratio of the substances equals their coefficients; the mass ratio is found by multiplying the coefficients by the molar masses.",
+        "de": "In einer ausgeglichenen Gleichung entspricht das Stoffmengenverhältnis den Koeffizienten; das Massenverhältnis erhält man, indem man die Koeffizienten mit den molaren Massen multipliziert.",
+        "fr": "Dans une équation équilibrée, le rapport molaire des substances est égal à leurs coefficients ; le rapport massique s'obtient en multipliant les coefficients par les masses molaires.",
+        "ru": "В уравненной реакции мольное соотношение веществ равно их коэффициентам; массовое соотношение находят, умножая коэффициенты на молярные массы.",
+        "ar": "في المعادلة الموزونة تساوي النسبة المولية للمواد معاملاتها؛ أما النسبة الكتلية فتُحسب بضرب المعاملات في الكتل المولية.",
+        "zh": "在配平的方程式中，各物质的摩尔比等于其系数之比；质量比则由系数乘以各自的摩尔质量求得。",
+        "ku": "Di hevkêşeya hevsengkirî de rêjeya molan a maddeyan bi hevberên wan re wekhev e; rêjeya girseyan jî bi lêdana hevberan bi girseyên molar tê dîtin."
       }
     }
   ],
@@ -698,98 +698,98 @@ export const unit07: ChemistryUnitSeedData = {
       "steps": [
         {
           "tr": "Denkleştirilmiş tepkimeyi yaz",
-          "en": "Write the balanced reaction",
-          "de": "Schreiben Sie die ausgewogene Reaktion",
-          "fr": "Écrivez la réaction équilibrée",
-          "ru": "Напишите сбалансированную реакцию",
-          "ar": "اكتب التفاعل المتوازن",
-          "zh": "写出平衡反应",
-          "ku": "Reaksiyona hevseng binivîsin"
+          "en": "Write the balanced equation",
+          "de": "Die ausgeglichene Reaktionsgleichung aufschreiben",
+          "fr": "Écrire l'équation équilibrée",
+          "ru": "Записать уравненную реакцию",
+          "ar": "اكتب معادلة التفاعل الموزونة",
+          "zh": "写出配平的化学方程式",
+          "ku": "Hevkêşeya reaksiyonê ya hevsengkirî binivîse"
         },
         {
           "tr": "Verilen miktarları mole çevir",
-          "en": "Convert given amounts to moles",
-          "de": "Rechne gegebene Beträge in Mol um",
-          "fr": "Convertir les montants donnés en taupes",
-          "ru": "Преобразовать заданные количества в моли",
-          "ar": "تحويل كميات معينة إلى الشامات",
-          "zh": "将给定量转换为摩尔",
-          "ku": "Mîqdarên dayîn veguherînin mol"
+          "en": "Convert the given amounts to moles",
+          "de": "Gegebene Mengen in Mol umrechnen",
+          "fr": "Convertir les quantités données en moles",
+          "ru": "Перевести данные количества в моли",
+          "ar": "حوّل الكميات المعطاة إلى مولات",
+          "zh": "将已知量换算成摩尔数",
+          "ku": "Mîqdarên dayî veguherîne molan"
         },
         {
           "tr": "Molü katsayıya bölüp sınırlayıcıyı bul",
-          "en": "Divide the mole by the coefficient and find the limiter",
-          "de": "Teilen Sie das Mol durch den Koeffizienten und finden Sie den Begrenzer",
-          "fr": "Divisez la taupe par le coefficient et trouvez le limiteur",
-          "ru": "Разделите моль на коэффициент и найдите ограничитель",
-          "ar": "اقسم المول على المعامل وابحث عن المحدد",
-          "zh": "将摩尔除以系数并找到限制器",
-          "ku": "Mole bi hevberê dabeş bikin û sînorkerê bibînin"
+          "en": "Divide each mole number by its coefficient to find the limiting reactant",
+          "de": "Stoffmengen durch die Koeffizienten teilen und den limitierenden Reaktanten bestimmen",
+          "fr": "Diviser le nombre de moles par le coefficient et trouver le réactif limitant",
+          "ru": "Разделить число молей на коэффициент и найти лимитирующий реагент",
+          "ar": "اقسم عدد المولات على المعامل وحدد المادة المحددة",
+          "zh": "用摩尔数除以系数，找出限量反应物",
+          "ku": "Hejmara molan li hevberê parve bike û reaktanta sînordar bibîne"
         },
         {
           "tr": "Sınırlayıcı üzerinden ürün molünü ve kütlesini hesapla",
-          "en": "Calculate product mole and mass via delimiter",
-          "de": "Berechnen Sie Mol und Masse des Produkts mithilfe des Trennzeichens",
-          "fr": "Calculer la mole et la masse du produit via un délimiteur",
-          "ru": "Рассчитать моль и массу продукта через разделитель",
-          "ar": "حساب الخلد المنتج والكتلة عن طريق المحدد",
-          "zh": "通过分隔符计算产物摩尔和质量",
-          "ku": "Mole û girseya hilberê bi navbeynkar hesab bikin"
+          "en": "Calculate the moles and mass of product from the limiting reactant",
+          "de": "Stoffmenge und Masse des Produkts über den limitierenden Reaktanten berechnen",
+          "fr": "Calculer le nombre de moles et la masse de produit à partir du réactif limitant",
+          "ru": "Рассчитать количество молей и массу продукта по лимитирующему реагенту",
+          "ar": "احسب عدد مولات الناتج وكتلته اعتمادًا على المادة المحددة",
+          "zh": "根据限量反应物计算产物的摩尔数和质量",
+          "ku": "Li gorî reaktanta sînordar mol û girseya hilberê hesab bike"
         }
       ]
     },
     {
       "id": "u07-s02",
       "title": {
-        "tr": "Tepkime Denkleştirme ve Hesaplama",
-        "en": "Reaction Balancing and Calculation",
-        "de": "Reaktionsbilanzierung und -berechnung",
-        "fr": "Équilibrage et calcul de la réaction",
-        "ru": "Балансировка и расчет реакций",
-        "ar": "موازنة التفاعل والحساب",
-        "zh": "反应平衡与计算",
-        "ku": "Balansek û Hesabkirina Reaksiyonê"
+        "tr": "Tepkime Denkleştirme Adımları",
+        "en": "Steps for Balancing a Reaction",
+        "de": "Schritte zum Ausgleichen einer Reaktionsgleichung",
+        "fr": "Étapes pour équilibrer une réaction",
+        "ru": "Этапы уравнивания реакции",
+        "ar": "خطوات موازنة التفاعل",
+        "zh": "配平化学方程式的步骤",
+        "ku": "Gavên hevsengkirina reaksiyonê"
       },
       "steps": [
         {
-          "tr": "Tepkimeye girenler ve ürünler yazılır",
-          "en": "Reactants and products are written",
-          "de": "Reaktanten und Produkte werden beschrieben",
-          "fr": "Les réactifs et les produits sont écrits",
-          "ru": "Реагенты и продукты записаны",
-          "ar": "تتم كتابة المواد المتفاعلة والمنتجات",
-          "zh": "反应物和产物被写成",
-          "ku": "Reaktant û hilber têne nivîsandin"
+          "tr": "Girenlerin ve ürünlerin formülleri doğru yazılır",
+          "en": "The formulas of the reactants and products are written correctly",
+          "de": "Die Formeln der Edukte und Produkte werden korrekt aufgeschrieben",
+          "fr": "Les formules des réactifs et des produits sont écrites correctement",
+          "ru": "Правильно записывают формулы реагентов и продуктов",
+          "ar": "تُكتب صيغ المواد المتفاعلة والنواتج بشكل صحيح",
+          "zh": "正确写出反应物和生成物的化学式",
+          "ku": "Formulên reaktant û hilberan rast tên nivîsandin"
         },
         {
-          "tr": "En kalabalık gruptan başlanarak atomlar eşitlenir",
-          "en": "Atoms are equalized starting from the most populous group.",
-          "de": "Atome werden ausgehend von der bevölkerungsreichsten Gruppe ausgeglichen.",
-          "fr": "Les atomes sont égalisés en commençant par le groupe le plus peuplé.",
-          "ru": "Атомы выравниваются, начиная с самой густонаселенной группы.",
-          "ar": "يتم تعادل الذرات بدءًا من المجموعة الأكثر اكتظاظًا بالسكان.",
-          "zh": "原子从数量最多的组开始被均衡。",
-          "ku": "Atoman ji koma herî qelebalix dest pê dikin têne wekhev kirin."
+          "tr": "En çok atom içeren bileşikten başlanır",
+          "en": "Start with the compound containing the most atoms",
+          "de": "Man beginnt mit der Verbindung, die die meisten Atome enthält",
+          "fr": "On commence par le composé qui contient le plus d'atomes",
+          "ru": "Начинают с соединения, содержащего больше всего атомов",
+          "ar": "يُبدأ بالمركب الذي يحتوي على أكبر عدد من الذرات",
+          "zh": "从含原子数最多的化合物开始",
+          "ku": "Ji pêkhateya ku herî zêde atom dihewîne tê destpêkirin"
         },
         {
-          "tr": "Başlangıç mol sayıları katsayılarla karşılaştırılır",
-          "en": "Initial mole numbers are compared with coefficients",
-          "de": "Die anfänglichen Molzahlen werden mit Koeffizienten verglichen",
-          "fr": "Les nombres de taupes initiaux sont comparés aux coefficients",
-          "ru": "Исходные мольные числа сравниваются с коэффициентами",
-          "ar": "تتم مقارنة أرقام الخلد الأولية مع المعاملات",
-          "zh": "将初始摩尔数与系数进行比较",
-          "ku": "Hejmarên mole yên destpêkê bi hevberan re têne berhev kirin"
+          "tr": "Önce metal ve ametal atomları, en son H ve O atomları eşitlenir",
+          "en": "Balance metal and nonmetal atoms first, H and O atoms last",
+          "de": "Zuerst werden Metall- und Nichtmetallatome, zuletzt H- und O-Atome ausgeglichen",
+          "fr": "On équilibre d'abord les atomes de métaux et de non-métaux, puis en dernier H et O",
+          "ru": "Сначала уравнивают атомы металлов и неметаллов, в последнюю очередь — H и O",
+          "ar": "تُوازن ذرات الفلزات واللافلزات أولًا، وذرات H وO في النهاية",
+          "zh": "先配平金属和非金属原子，最后配平 H 和 O 原子",
+          "ku": "Pêşî atomên metal û nemetalan, herî dawî atomên H û O tên wekhevkirin"
         },
         {
-          "tr": "Sınırlayıcı bileşene göre ürün miktarı hesaplanır",
-          "en": "Product quantity is calculated according to the limiting component",
-          "de": "Die Produktmenge wird entsprechend der limitierenden Komponente berechnet",
-          "fr": "La quantité de produit est calculée en fonction du composant limitant",
-          "ru": "Количество продукта рассчитывается по лимитирующему компоненту",
-          "ar": "يتم حساب كمية المنتج وفقًا للمكون المحدد",
-          "zh": "产品数量按限制成分计算",
-          "ku": "Hejmara hilberê li gorî hêmana sînorkirî tê hesibandin"
+          "tr": "Katsayılar en küçük tam sayılara indirgenir",
+          "en": "Reduce the coefficients to the smallest whole numbers",
+          "de": "Die Koeffizienten werden auf die kleinsten ganzen Zahlen gekürzt",
+          "fr": "Les coefficients sont réduits aux plus petits nombres entiers",
+          "ru": "Коэффициенты сокращают до наименьших целых чисел",
+          "ar": "تُختزل المعاملات إلى أصغر أعداد صحيحة",
+          "zh": "将系数化为最简整数",
+          "ku": "Hevber bi hejmarên tam ên herî biçûk tên kêmkirin"
         }
       ]
     },
@@ -824,7 +824,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ru": "Катионы и анионы меняются местами.",
           "ar": "تبادل الكاتيونات والأنيونات الأماكن",
           "zh": "阳离子和阴离子交换位置",
-          "ku": "Cîyon û anyon cîhên xwe diguherînin"
+          "ku": "Katyon û anyon cîhên xwe diguherînin"
         },
         {
           "tr": "Az çözünen tuz çökelek halinde katılaşır",
@@ -834,7 +834,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ru": "Малорастворимая соль затвердевает в виде осадка.",
           "ar": "يتصلب الملح قليل الذوبان على شكل راسب",
           "zh": "微溶盐凝固成沉淀",
-          "ku": "Xwêya hindik tê çareserkirin, wekî tîrêjê hişk dibe"
+          "ku": "Xwêya kêm-helbar wek niştek hişk dinişe"
         },
         {
           "tr": "Çöken katıyı gösteren net iyon denklemi yazılır",
@@ -844,7 +844,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ru": "Чистое ионное уравнение, показывающее выпавшее в осадок твердое вещество, записывается",
           "ar": "يتم كتابة المعادلة الأيونية الصافية التي توضح المادة الصلبة المترسبة",
           "zh": "显示沉淀固体的净离子方程写为",
-          "ku": "Hevkêşana îyonî ya tora ku zewaca barkirî nîşan dide tê nivîsandin"
+          "ku": "Hevkêşeya îyonî ya net a ku madeya hişk a niştî nîşan dide tê nivîsandin"
         }
       ]
     },
@@ -853,22 +853,22 @@ export const unit07: ChemistryUnitSeedData = {
       "title": {
         "tr": "Yüzde Verim Belirleme",
         "en": "Determining Percent Yield",
-        "de": "Bestimmung des prozentualen Ertrags",
+        "de": "Bestimmung der prozentualen Ausbeute",
         "fr": "Détermination du pourcentage de rendement",
-        "ru": "Определение процентной доходности",
-        "ar": "تحديد العائد في المئة",
-        "zh": "确定收益率百分比",
+        "ru": "Определение процентного выхода",
+        "ar": "تحديد النسبة المئوية للعائد",
+        "zh": "百分产率的测定",
         "ku": "Tespîtkirina Ji sedî Berhemê"
       },
       "steps": [
         {
           "tr": "Sınırlayıcı bileşenden teorik ürün hesaplanır",
           "en": "The theoretical product is calculated from the limiting component",
-          "de": "Aus der limitierenden Komponente wird das theoretische Produkt berechnet",
-          "fr": "Le produit théorique est calculé à partir de la composante limite",
-          "ru": "Теоретический продукт рассчитывается по предельной составляющей",
-          "ar": "يتم حساب المنتج النظري من المكون المحدد",
-          "zh": "理论乘积由限制成分计算得出",
+          "de": "Aus dem limitierenden Reaktanten wird die theoretische Produktmenge berechnet",
+          "fr": "La quantité théorique de produit est calculée à partir du réactif limitant",
+          "ru": "По лимитирующему реагенту рассчитывают теоретическое количество продукта",
+          "ar": "تُحسب كمية الناتج النظرية من المادة المحددة",
+          "zh": "由限量反应物计算理论产量",
           "ku": "Hilbera teorîk ji pêkhateya sînordar tê hesibandin"
         },
         {
@@ -876,30 +876,30 @@ export const unit07: ChemistryUnitSeedData = {
           "en": "The actual product actually obtained in the experiment is weighed",
           "de": "Das im Versuch tatsächlich erhaltene Produkt wird gewogen",
           "fr": "Le produit réellement obtenu lors de l'expérience est pesé",
-          "ru": "Фактически полученный в эксперименте продукт взвешивают.",
-          "ar": "يتم وزن المنتج الفعلي الذي تم الحصول عليه بالفعل في التجربة",
-          "zh": "将实验中实际得到的实际产品称重",
+          "ru": "Фактически полученный в эксперименте продукт взвешивают",
+          "ar": "يُوزن الناتج الفعلي الذي تم الحصول عليه في التجربة",
+          "zh": "称量实验中实际得到的产物",
           "ku": "Hilbera rastîn a ku di ceribandinê de hatî bidestxistin tê pîvandin"
         },
         {
           "tr": "Gerçek miktar teorik miktara bölünür",
           "en": "Actual amount divided by theoretical amount",
-          "de": "Tatsächlicher Betrag dividiert durch theoretischen Betrag",
-          "fr": "Montant réel divisé par le montant théorique",
-          "ru": "Фактическая сумма, разделенная на теоретическую сумму",
-          "ar": "المبلغ الفعلي مقسوما على المبلغ النظري",
-          "zh": "实际量除以理论量",
+          "de": "Die tatsächliche Menge wird durch die theoretische Menge geteilt",
+          "fr": "La quantité réelle est divisée par la quantité théorique",
+          "ru": "Фактическое количество делят на теоретическое",
+          "ar": "تُقسم الكمية الفعلية على الكمية النظرية",
+          "zh": "用实际产量除以理论产量",
           "ku": "Mîqdara rastîn bi mîqdara teorîk ve tê dabeş kirin"
         },
         {
           "tr": "100 ile çarpılarak yüzde verim bulunur",
-          "en": "Percentage efficiency is found by multiplying by 100",
-          "de": "Der prozentuale Wirkungsgrad wird durch Multiplikation mit 100 ermittelt",
-          "fr": "Le pourcentage d'efficacité est obtenu en multipliant par 100",
-          "ru": "Процент эффективности находится путем умножения на 100.",
-          "ar": "يتم العثور على الكفاءة المئوية عن طريق الضرب في 100",
-          "zh": "乘以 100 即可得出百分比效率",
-          "ku": "Rêjeya ji sedî bi 100-ê zêde dibe tê dîtin"
+          "en": "The percent yield is found by multiplying by 100",
+          "de": "Durch Multiplikation mit 100 erhält man die prozentuale Ausbeute",
+          "fr": "Le rendement en pourcentage est obtenu en multipliant par 100",
+          "ru": "Умножением на 100 находят процентный выход",
+          "ar": "يُضرب الناتج في 100 للحصول على النسبة المئوية للعائد",
+          "zh": "乘以 100 得到百分产率",
+          "ku": "Bi lêdana bi 100 berhema ji sedî tê dîtin"
         }
       ]
     }
@@ -1174,7 +1174,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ru": "Ржавление железа – это явление физического растворения.",
           "ar": "صدأ الحديد هو ظاهرة انحلال فيزيائي.",
           "zh": "铁的生锈是一种物理溶解现象。",
-          "ku": "Zehfbûna hesin diyardeyeke fîzîkî ya têkçûyînê ye."
+          "ku": "Zengarbûna hesin diyardeyeke fîzîkî ya helbûnê ye."
         },
         {
           "tr": "Analiz (ayrışma) tepkimesinde bir bileşik ısı veya elektrik enerjisiyle daha basit maddelere ayrışır.",
@@ -1224,33 +1224,33 @@ export const unit07: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Gerçek verim teorik verimden daima daha büyüktür.",
-          "en": "Actual efficiency is always greater than theoretical efficiency.",
-          "de": "Der tatsächliche Wirkungsgrad ist immer größer als der theoretische Wirkungsgrad.",
-          "fr": "L'efficacité réelle est toujours supérieure à l'efficacité théorique.",
-          "ru": "Фактическая эффективность всегда выше теоретической эффективности.",
-          "ar": "الكفاءة الفعلية دائما أكبر من الكفاءة النظرية.",
-          "zh": "实际效率总是大于理论效率。",
-          "ku": "Karbidestiya rastîn her gav ji karbidestiya teorîkî mezintir e."
+          "en": "The actual yield is always greater than the theoretical yield.",
+          "de": "Die tatsächliche Ausbeute ist immer größer als die theoretische Ausbeute.",
+          "fr": "Le rendement réel est toujours supérieur au rendement théorique.",
+          "ru": "Фактический выход всегда больше теоретического выхода.",
+          "ar": "العائد الفعلي دائمًا أكبر من العائد النظري.",
+          "zh": "实际产量总是大于理论产量。",
+          "ku": "Berhema rastîn her gav ji berhema teorîk mezintir e."
         },
         {
           "tr": "Hangi maddeden daha çok mol varsa o madde önce biter.",
           "en": "Whichever substance has the most moles, that substance runs out first.",
           "de": "Welche Substanz auch immer die meisten Mole hat, diese Substanz geht zuerst aus.",
-          "fr": "Quelle que soit la substance qui contient le plus de grains de beauté, elle s’épuise en premier.",
+          "fr": "La substance qui a le plus grand nombre de moles s'épuise en premier.",
           "ru": "В каком бы веществе ни было больше всего молей, оно исчерпается первым.",
-          "ar": "أيًا كانت المادة التي تحتوي على أكبر عدد من الشامات، فإن تلك المادة تنفد أولاً.",
+          "ar": "المادة التي لديها أكبر عدد من المولات هي التي تنفد أولاً.",
           "zh": "无论哪种物质的摩尔数最多，该物质都会先耗尽。",
           "ku": "Kîjan maddeya ku herî zêde molên wê hebin, ew madde pêşî diqede."
         },
         {
-          "tr": "Yukarıdaki tepkimede Ag+ ve Cl- seyirci iyonlardır.",
-          "en": "In the above reaction, Ag+ and Cl- are spectator ions.",
-          "de": "In der obigen Reaktion sind Ag+ und Cl- Zuschauerionen.",
-          "fr": "Dans la réaction ci-dessus, Ag+ et Cl- sont des ions spectateurs.",
-          "ru": "В приведенной выше реакции Ag+ и Cl- являются ионами-спектаторами.",
-          "ar": "في التفاعل أعلاه، Ag+ وCl- هما أيونان متفرجان.",
-          "zh": "在上述反应中，Ag+和Cl-是旁观者离子。",
-          "ku": "Di reaksiyona jorîn de Ag+ û Cl- îyonên temaşeker in."
+          "tr": "AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde Ag+ ve Cl- seyirci iyonlardır.",
+          "en": "In the reaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), Ag+ and Cl- are spectator ions.",
+          "de": "Bei der Reaktion AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) sind Ag+ und Cl- Zuschauerionen.",
+          "fr": "Dans la réaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), Ag+ et Cl- sont des ions spectateurs.",
+          "ru": "В реакции AgNO3(вод) + NaCl(вод) -> AgCl(k) + NaNO3(вод) ионами-спектаторами являются Ag+ и Cl-.",
+          "ar": "في التفاعل AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq)، يكون Ag+ وCl- أيونين متفرجين.",
+          "zh": "在反应 AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) 中，Ag+ 和 Cl- 是旁观离子。",
+          "ku": "Di reaksiyona AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) de Ag+ û Cl- îyonên temaşeker in."
         },
         {
           "tr": "Tüm yanma tepkimeleri dışarıya ısı verir, hiçbir istisnası yoktur.",
@@ -1402,7 +1402,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ru": "Ржавление железа – это явление физического растворения.",
           "ar": "صدأ الحديد هو ظاهرة انحلال فيزيائي.",
           "zh": "铁的生锈是一种物理溶解现象。",
-          "ku": "Zehfbûna hesin diyardeyeke fîzîkî ya têkçûyînê ye."
+          "ku": "Zengarbûna hesin diyardeyeke fîzîkî ya helbûnê ye."
         },
         {
           "tr": "Gaz tepkimelerinde girenlerin hacim toplamı ürünlerin hacim toplamına daima eşittir.",
@@ -1454,31 +1454,31 @@ export const unit07: ChemistryUnitSeedData = {
           "tr": "Hangi maddeden daha çok mol varsa o madde önce biter.",
           "en": "Whichever substance has the most moles, that substance runs out first.",
           "de": "Welche Substanz auch immer die meisten Mole hat, diese Substanz geht zuerst aus.",
-          "fr": "Quelle que soit la substance qui contient le plus de grains de beauté, elle s’épuise en premier.",
+          "fr": "La substance qui a le plus grand nombre de moles s'épuise en premier.",
           "ru": "В каком бы веществе ни было больше всего молей, оно исчерпается первым.",
-          "ar": "أيًا كانت المادة التي تحتوي على أكبر عدد من الشامات، فإن تلك المادة تنفد أولاً.",
+          "ar": "المادة التي لديها أكبر عدد من المولات هي التي تنفد أولاً.",
           "zh": "无论哪种物质的摩尔数最多，该物质都会先耗尽。",
           "ku": "Kîjan maddeya ku herî zêde molên wê hebin, ew madde pêşî diqede."
         },
         {
-          "tr": "Yukarıdaki tepkimede Ag+ ve Cl- seyirci iyonlardır.",
-          "en": "In the above reaction, Ag+ and Cl- are spectator ions.",
-          "de": "In der obigen Reaktion sind Ag+ und Cl- Zuschauerionen.",
-          "fr": "Dans la réaction ci-dessus, Ag+ et Cl- sont des ions spectateurs.",
-          "ru": "В приведенной выше реакции Ag+ и Cl- являются ионами-спектаторами.",
-          "ar": "في التفاعل أعلاه، Ag+ وCl- هما أيونان متفرجان.",
-          "zh": "在上述反应中，Ag+和Cl-是旁观者离子。",
-          "ku": "Di reaksiyona jorîn de Ag+ û Cl- îyonên temaşeker in."
+          "tr": "AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde Ag+ ve Cl- seyirci iyonlardır.",
+          "en": "In the reaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), Ag+ and Cl- are spectator ions.",
+          "de": "Bei der Reaktion AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) sind Ag+ und Cl- Zuschauerionen.",
+          "fr": "Dans la réaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), Ag+ et Cl- sont des ions spectateurs.",
+          "ru": "В реакции AgNO3(вод) + NaCl(вод) -> AgCl(k) + NaNO3(вод) ионами-спектаторами являются Ag+ и Cl-.",
+          "ar": "في التفاعل AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq)، يكون Ag+ وCl- أيونين متفرجين.",
+          "zh": "在反应 AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) 中，Ag+ 和 Cl- 是旁观离子。",
+          "ku": "Di reaksiyona AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) de Ag+ û Cl- îyonên temaşeker in."
         },
         {
           "tr": "Yüzde verim = (Gerçek Verim / Teorik Verim) x 100 formülü ile hesaplanır.",
           "en": "Percentage yield is calculated with the formula = (Actual Yield / Theoretical Yield) x 100.",
           "de": "Der prozentuale Ertrag wird mit der Formel = (tatsächlicher Ertrag / theoretischer Ertrag) x 100 berechnet.",
           "fr": "Le rendement en pourcentage est calculé avec la formule = (Rendement réel / Rendement théorique) x 100.",
-          "ru": "Процентная доходность рассчитывается по формуле = (Фактическая доходность / Теоретическая доходность) x 100.",
+          "ru": "Процентный выход рассчитывается по формуле = (Фактический выход / Теоретический выход) x 100.",
           "ar": "يتم حساب نسبة العائد باستخدام الصيغة = (العائد الفعلي / العائد النظري) × 100.",
-          "zh": "百分比收益率的计算公式为 =（实际收益率/理论收益率）x 100。",
-          "ku": "Berhema ji sedî bi formula = (Rêberdana Rastî / Berhema Teorîk) x 100 tê hesibandin."
+          "zh": "百分产率的计算公式为 =（实际产量/理论产量）x 100。",
+          "ku": "Berhema ji sedî bi formula = (Berhema Rastîn / Berhema Teorîk) x 100 tê hesibandin."
         },
         {
           "tr": "Tüm yanma tepkimeleri dışarıya ısı verir, hiçbir istisnası yoktur.",
@@ -1507,10 +1507,10 @@ export const unit07: ChemistryUnitSeedData = {
         "en": "The correct statement is: \"Percentage yield is calculated with the formula = (Actual Yield / Theoretical Yield) x 100.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Der prozentuale Ertrag wird mit der Formel = (tatsächlicher Ertrag / theoretischer Ertrag) x 100 berechnet.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Le rendement en pourcentage est calculé avec la formule = (Rendement réel / Rendement théorique) x 100.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Процентная доходность рассчитывается по формуле = (Фактическая доходность / Теоретическая доходность) x 100.». Фундаментальный химический факт официальной программы.",
+        "ru": "Правильное утверждение: «Процентный выход рассчитывается по формуле = (Фактический выход / Теоретический выход) x 100.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"يتم حساب نسبة العائد باستخدام الصيغة = (العائد الفعلي / العائد النظري) × 100.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“百分比收益率的计算公式为 =（实际收益率/理论收益率）x 100。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Berhema ji sedî bi formula = (Rêberdana Rastî / Berhema Teorîk) x 100 tê hesibandin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "zh": "正确表述为：“百分产率的计算公式为 =（实际产量/理论产量）x 100。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Berhema ji sedî bi formula = (Berhema Rastîn / Berhema Teorîk) x 100 tê hesibandin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1610,7 +1610,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ru": "Ржавление железа – это явление физического растворения.",
           "ar": "صدأ الحديد هو ظاهرة انحلال فيزيائي.",
           "zh": "铁的生锈是一种物理溶解现象。",
-          "ku": "Zehfbûna hesin diyardeyeke fîzîkî ya têkçûyînê ye."
+          "ku": "Zengarbûna hesin diyardeyeke fîzîkî ya helbûnê ye."
         },
         {
           "tr": "Gaz tepkimelerinde girenlerin hacim toplamı ürünlerin hacim toplamına daima eşittir.",
@@ -1689,14 +1689,14 @@ export const unit07: ChemistryUnitSeedData = {
           "ku": "Ji bo hesabkirina maddeya mayî, maddeya sînordar bi dabeşkirina hejmara molên reaktantan li ser hevberên wan tê dîtin."
         },
         {
-          "tr": "Yukarıdaki tepkimede Ag+ ve Cl- seyirci iyonlardır.",
-          "en": "In the above reaction, Ag+ and Cl- are spectator ions.",
-          "de": "In der obigen Reaktion sind Ag+ und Cl- Zuschauerionen.",
-          "fr": "Dans la réaction ci-dessus, Ag+ et Cl- sont des ions spectateurs.",
-          "ru": "В приведенной выше реакции Ag+ и Cl- являются ионами-спектаторами.",
-          "ar": "في التفاعل أعلاه، Ag+ وCl- هما أيونان متفرجان.",
-          "zh": "在上述反应中，Ag+和Cl-是旁观者离子。",
-          "ku": "Di reaksiyona jorîn de Ag+ û Cl- îyonên temaşeker in."
+          "tr": "AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) tepkimesinde Ag+ ve Cl- seyirci iyonlardır.",
+          "en": "In the reaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), Ag+ and Cl- are spectator ions.",
+          "de": "Bei der Reaktion AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) sind Ag+ und Cl- Zuschauerionen.",
+          "fr": "Dans la réaction AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq), Ag+ et Cl- sont des ions spectateurs.",
+          "ru": "В реакции AgNO3(вод) + NaCl(вод) -> AgCl(k) + NaNO3(вод) ионами-спектаторами являются Ag+ и Cl-.",
+          "ar": "في التفاعل AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq)، يكون Ag+ وCl- أيونين متفرجين.",
+          "zh": "在反应 AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) 中，Ag+ 和 Cl- 是旁观离子。",
+          "ku": "Di reaksiyona AgNO3(aq) + NaCl(aq) -> AgCl(k) + NaNO3(aq) de Ag+ û Cl- îyonên temaşeker in."
         },
         {
           "tr": "Tüm yanma tepkimeleri dışarıya ısı verir, hiçbir istisnası yoktur.",
@@ -1796,13 +1796,13 @@ export const unit07: ChemistryUnitSeedData = {
         },
         {
           "tr": "Gerçek verim teorik verimden daima daha büyüktür.",
-          "en": "Actual efficiency is always greater than theoretical efficiency.",
-          "de": "Der tatsächliche Wirkungsgrad ist immer größer als der theoretische Wirkungsgrad.",
-          "fr": "L'efficacité réelle est toujours supérieure à l'efficacité théorique.",
-          "ru": "Фактическая эффективность всегда выше теоретической эффективности.",
-          "ar": "الكفاءة الفعلية دائما أكبر من الكفاءة النظرية.",
-          "zh": "实际效率总是大于理论效率。",
-          "ku": "Karbidestiya rastîn her gav ji karbidestiya teorîkî mezintir e."
+          "en": "The actual yield is always greater than the theoretical yield.",
+          "de": "Die tatsächliche Ausbeute ist immer größer als die theoretische Ausbeute.",
+          "fr": "Le rendement réel est toujours supérieur au rendement théorique.",
+          "ru": "Фактический выход всегда больше теоретического выхода.",
+          "ar": "العائد الفعلي دائمًا أكبر من العائد النظري.",
+          "zh": "实际产量总是大于理论产量。",
+          "ku": "Berhema rastîn her gav ji berhema teorîk mezintir e."
         }
       ],
       "correctIndex": 1,
@@ -1858,7 +1858,7 @@ export const unit07: ChemistryUnitSeedData = {
           "ru": "Ржавление железа (4Fe + 3O2 -> 2Fe2O3) является примером медленного беспламенного горения.",
           "ar": "صدأ الحديد (4Fe + 3O2 -> 2Fe2O3) هو مثال على الاحتراق البطيء عديم اللهب.",
           "zh": "铁生锈（4Fe + 3O2 -> 2Fe2O3）是缓慢无焰燃烧的一个例子。",
-          "ku": "Zehfkirina hesin (4Fe + 3O2 -> 2Fe2O3) mînakek şewitandina hêdî hêdî ye."
+          "ku": "Zengarbûna hesin (4Fe + 3O2 -> 2Fe2O3) mînaka şewitandina hêdî ya bê agir e."
         },
         {
           "tr": "Net iyon denklemi çözeltide kalan seyirci iyonlara göre yazılır.",
@@ -1890,7 +1890,7 @@ export const unit07: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Ржавление железа (4Fe + 3O2 -> 2Fe2O3) является примером медленного беспламенного горения.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"صدأ الحديد (4Fe + 3O2 -> 2Fe2O3) هو مثال على الاحتراق البطيء عديم اللهب.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“铁生锈（4Fe + 3O2 -> 2Fe2O3）是缓慢无焰燃烧的一个例子。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Zehfkirina hesin (4Fe + 3O2 -> 2Fe2O3) mînakek şewitandina hêdî hêdî ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Zengarbûna hesin (4Fe + 3O2 -> 2Fe2O3) mînaka şewitandina hêdî ya bê agir e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2004,21 +2004,21 @@ export const unit07: ChemistryUnitSeedData = {
         },
         {
           "tr": "Gerçek verim teorik verimden daima daha büyüktür.",
-          "en": "Actual efficiency is always greater than theoretical efficiency.",
-          "de": "Der tatsächliche Wirkungsgrad ist immer größer als der theoretische Wirkungsgrad.",
-          "fr": "L'efficacité réelle est toujours supérieure à l'efficacité théorique.",
-          "ru": "Фактическая эффективность всегда выше теоретической эффективности.",
-          "ar": "الكفاءة الفعلية دائما أكبر من الكفاءة النظرية.",
-          "zh": "实际效率总是大于理论效率。",
-          "ku": "Karbidestiya rastîn her gav ji karbidestiya teorîkî mezintir e."
+          "en": "The actual yield is always greater than the theoretical yield.",
+          "de": "Die tatsächliche Ausbeute ist immer größer als die theoretische Ausbeute.",
+          "fr": "Le rendement réel est toujours supérieur au rendement théorique.",
+          "ru": "Фактический выход всегда больше теоретического выхода.",
+          "ar": "العائد الفعلي دائمًا أكبر من العائد النظري.",
+          "zh": "实际产量总是大于理论产量。",
+          "ku": "Berhema rastîn her gav ji berhema teorîk mezintir e."
         },
         {
           "tr": "Hangi maddeden daha çok mol varsa o madde önce biter.",
           "en": "Whichever substance has the most moles, that substance runs out first.",
           "de": "Welche Substanz auch immer die meisten Mole hat, diese Substanz geht zuerst aus.",
-          "fr": "Quelle que soit la substance qui contient le plus de grains de beauté, elle s’épuise en premier.",
+          "fr": "La substance qui a le plus grand nombre de moles s'épuise en premier.",
           "ru": "В каком бы веществе ни было больше всего молей, оно исчерпается первым.",
-          "ar": "أيًا كانت المادة التي تحتوي على أكبر عدد من الشامات، فإن تلك المادة تنفد أولاً.",
+          "ar": "المادة التي لديها أكبر عدد من المولات هي التي تنفد أولاً.",
           "zh": "无论哪种物质的摩尔数最多，该物质都会先耗尽。",
           "ku": "Kîjan maddeya ku herî zêde molên wê hebin, ew madde pêşî diqede."
         },

@@ -37,7 +37,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Лавуазье считается основоположником современной химии с его Законом сохранения массы.",
         "ar": "يعتبر لافوازييه مؤسس الكيمياء الحديثة من خلال قانون حفظ الكتلة.",
         "zh": "拉瓦锡以其质量守恒定律被认为是现代化学的创始人。",
-        "ku": "Lavoisier bi Qanûna Parastina Komkujiyê damezrînerê kîmya nûjen tê hesibandin."
+        "ku": "Lavoisier bi Qanûna Parastina Girseyê damezrînerê kîmyaya nûjen tê hesibandin."
       },
       "trap": {
         "tr": "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.",
@@ -65,7 +65,7 @@ export const unit01: ChemistryUnitSeedData = {
       "fact": {
         "tr": "Zaç yağı H2SO4 (sülfürik asit), Tuz ruhu HCl (hidroklorik asit) geleneksel adıdır.",
         "en": "Oil of vitriol is H2SO4 (sulfuric acid); spirit of salt (muriatic acid) is the traditional name for HCl (hydrochloric acid).",
-        "de": "Vitriolöl ist H2SO4 (Schwefelsäure), der traditionelle Name von Salzsäure (Salzgeist) ist HCl (Salzsäure).",
+        "de": "Vitriolöl ist H2SO4 (Schwefelsäure); Salzgeist ist der traditionelle Name für HCl (Salzsäure).",
         "fr": "L'huile de vitriol est H2SO4 (acide sulfurique) ; l'esprit de sel est le nom traditionnel de HCl (acide chlorhydrique).",
         "ru": "Купоросное масло — это H2SO4 (серная кислота), а соляной спирт — традиционное название HCl (соляной кислоты).",
         "ar": "زيت الزاج هو H2SO4 (حمض الكبريتيك)، والاسم التقليدي لروح الملح هو HCl (حمض الهيدروكلوريك).",
@@ -119,14 +119,14 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-f04",
       "fact": {
-        "tr": "Ebu Bekir er-Razi kostik soda ve karınca asidini (formik asit) ilk kez elde etmiştir.",
-        "en": "Abu Bakr al-Razi synthesized caustic soda and formic acid (methanoic acid) for the first time.",
-        "de": "Abu Bakr ar-Razi stellte erstmals Ätznatron und Ameisensäure (Methansäure) her.",
-        "fr": "Abu Bakr al-Razi a obtenu pour la première fois la soude caustique et l'acide formique (acide méthanoïque).",
-        "ru": "Абу Бакр ар-Рази впервые получил едкий натр и муравьиную кислоту (метановую кислоту).",
-        "ar": "حصل أبو بكر الرازي على الصودا الكاوية وحمض الفورميك (حمض النمليك) لأول مرة.",
-        "zh": "阿布·伯克尔·拉齐首次制得了烧碱和甲酸（蚁酸）。",
-        "ku": "Ebû Bekir el-Razî bo cara yekem soda kaustîk û asîda formîk bi dest xist."
+        "tr": "Ebu Bekir er-Razi zaç yağını (sülfürik asit) ve kostik sodayı (sodyum hidroksit) elde etmiştir.",
+        "en": "Abu Bakr al-Razi obtained oil of vitriol (sulfuric acid) and caustic soda (sodium hydroxide).",
+        "de": "Abu Bakr ar-Razi gewann Vitriolöl (Schwefelsäure) und Ätznatron (Natriumhydroxid).",
+        "fr": "Abu Bakr al-Razi a obtenu l'huile de vitriol (acide sulfurique) et la soude caustique (hydroxyde de sodium).",
+        "ru": "Абу Бакр ар-Рази получил купоросное масло (серную кислоту) и едкий натр (гидроксид натрия).",
+        "ar": "حصل أبو بكر الرازي على زيت الزاج (حمض الكبريتيك) والصودا الكاوية (هيدروكسيد الصوديوم).",
+        "zh": "阿布·伯克尔·拉齐制得了矾油（硫酸）和烧碱（氢氧化钠）。",
+        "ku": "Ebû Bekir el-Razî rûnê zaçê (asîda sulfurîk) û soda kaustîk (sodyûm hîdroksît) bi dest xist."
       },
       "trap": {
         "tr": "Formik asit Robert Boyle tarafından element olarak tanımlanmıştır.",
@@ -195,7 +195,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Мерная колба представляет собой прецизионную стеклянную емкость с узким горлышком для приготовления стандартного раствора определенной концентрации.",
         "ar": "الدورق الحجمي عبارة عن حاوية زجاجية دقيقة ضيقة العنق لتحضير محلول قياسي بتركيز معين.",
         "zh": "容量瓶是一种细颈精密玻璃容器，用于配制特定浓度的标准溶液。",
-        "ku": "Firmaya volumetric konteynirek camê ya bi stûyê teng e ku ji bo amadekirina çareseriyek standard di konsantreyek taybetî de ye."
+        "ku": "Balon joje firaxeke camê ya hesas û stûteng e ku ji bo amadekirina çareseriyeke standard bi konsantreyeke diyar tê bikaranîn."
       },
       "trap": {
         "tr": "Balon joje katı yakma fırını olarak kullanılır.",
@@ -205,20 +205,20 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Мерную колбу используют в качестве печи для сжигания твердых веществ.",
         "ar": "يتم استخدام الدورق الحجمي كمحرقة صلبة.",
         "zh": "容量瓶用作固体焚烧炉。",
-        "ku": "Firmaya volumetric wekî şewitandina hişk tê bikaranîn."
+        "ku": "Balon joje wekî firneya şewitandina madeyên hişk tê bikaranîn."
       }
     },
     {
       "id": "u01-f08",
       "fact": {
-        "tr": "Kezzap HNO3, kireç taşı CaCO3, kostik soda NaOH bileşiklerinin geleneksel adlarıdır.",
-        "en": "Kezzap HNO3, limestone CaCO3, caustic soda are the traditional names of NaOH compounds.",
-        "de": "Kezzap HNO3, Kalkstein CaCO3, Natronlauge sind die traditionellen Namen von NaOH-Verbindungen.",
-        "fr": "Kezzap HNO3, calcaire CaCO3, soude caustique sont les noms traditionnels des composés NaOH.",
-        "ru": "Кеззап HNO3, известняк CaCO3, каустическая сода – традиционные названия соединений NaOH.",
-        "ar": "Kezzap HNO3، الحجر الجيري CaCO3، الصودا الكاوية هي الأسماء التقليدية لمركبات NaOH.",
-        "zh": "Kezzap HNO3、石灰石 CaCO3、烧碱是 NaOH 化合物的传统名称。",
-        "ku": "Kezzap HNO3, kevirê kilsinî CaCO3, soda caustic navên kevneşopî yên pêkhateyên NaOH in."
+        "tr": "Kezzap HNO3'ün, kireç taşı CaCO3'ün, kostik soda NaOH'ın geleneksel adıdır.",
+        "en": "Aqua fortis is the traditional name of HNO3, limestone that of CaCO3 and caustic soda that of NaOH.",
+        "de": "Scheidewasser ist der traditionelle Name von HNO3, Kalkstein der von CaCO3 und Ätznatron der von NaOH.",
+        "fr": "L'eau-forte est le nom traditionnel de HNO3, le calcaire celui de CaCO3 et la soude caustique celui de NaOH.",
+        "ru": "Крепкая водка — традиционное название HNO3, известняк — CaCO3, едкий натр — NaOH.",
+        "ar": "ماء الفضة هو الاسم التقليدي لـ HNO3، والحجر الجيري لـ CaCO3، والصودا الكاوية لـ NaOH.",
+        "zh": "硝镪水是HNO3的传统名称，石灰石是CaCO3的传统名称，烧碱是NaOH的传统名称。",
+        "ku": "Kezzap navê kevneşopî yê HNO3, kevirê kilsê yê CaCO3 û soda kaustîk yê NaOH e."
       },
       "trap": {
         "tr": "Kireç taşı CaO sönmemiş kireç ile aynı bileşiktir.",
@@ -228,7 +228,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Известняк CaO представляет собой то же соединение, что и негашеная известь.",
         "ar": "الحجر الجيري CaO هو نفس مركب الجير الحي.",
         "zh": "石灰石 CaO 与生石灰是相同的化合物。",
-        "ku": "Kevirê kilsinî CaO heman pêkhatî ye wekî kilê zû."
+        "ku": "Kevirê kilsê CaO ye û bi kilsa nevemirî re heman pêkhate ye."
       }
     },
     {
@@ -297,20 +297,20 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Биохимия изучает промышленные металлические сплавы.",
         "ar": "تدرس الكيمياء الحيوية السبائك المعدنية الصناعية.",
         "zh": "生物化学研究工业金属合金。",
-        "ku": "Biyokîmya aligirên metal ên pîşesaziyê lêkolîn dike."
+        "ku": "Biyokîmya alyajên metal ên pîşesaziyê lêkolîn dike."
       }
     },
     {
       "id": "u01-f12",
       "fact": {
-        "tr": "Taharriş edici güvenlik piktogramı ünlem işareti ile gösterilir.",
-        "en": "The irritating safety pictogram is indicated by an exclamation mark.",
-        "de": "Das irritierende Sicherheitspiktogramm ist durch ein Ausrufezeichen gekennzeichnet.",
-        "fr": "Le pictogramme de sécurité irritant est signalé par un point d'exclamation.",
-        "ru": "Раздражающая пиктограмма безопасности обозначается восклицательным знаком.",
-        "ar": "يُشار إلى الرسم التوضيحي للسلامة المزعج بعلامة تعجب.",
-        "zh": "令人恼火的安全象形图用感叹号表示。",
-        "ku": "Pîktograma ewlehiyê ya acizker bi nîşanek ravek tê destnîşan kirin."
+        "tr": "Tahriş edici maddeler için kullanılan güvenlik piktogramı ünlem işaretidir.",
+        "en": "The safety pictogram for irritant substances is an exclamation mark.",
+        "de": "Das Sicherheitspiktogramm für reizende Stoffe ist ein Ausrufezeichen.",
+        "fr": "Le pictogramme de sécurité des substances irritantes est un point d'exclamation.",
+        "ru": "Пиктограмма безопасности для раздражающих веществ — восклицательный знак.",
+        "ar": "رمز السلامة للمواد المهيِّجة هو علامة التعجب.",
+        "zh": "刺激性物质的安全象形图是感叹号。",
+        "ku": "Pîktograma ewlehiyê ya maddeyên ku çerm û çavan aciz dikin nîşana bangkirinê (!) ye."
       },
       "trap": {
         "tr": "Ünlem piktogramı patlayıcı maddeleri temsil eder.",
@@ -320,7 +320,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Восклицательный знак обозначает взрывоопасные вещества.",
         "ar": "يمثل رسم التعجب المواد المتفجرة.",
         "zh": "感叹号象形图代表爆炸性物质。",
-        "ku": "Pîktograma qîrînê madeyên teqemenî nîşan dide."
+        "ku": "Pîktograma nîşana bangkirinê (!) madeyên teqemenî nîşan dide."
       }
     },
     {
@@ -356,7 +356,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Ядовитые (токсичные) вещества имеют символ черепа, и их нельзя вдыхать.",
         "ar": "المواد السامة (السامة) تحمل رمز الجمجمة ويجب عدم استنشاقها.",
         "zh": "有毒（有毒）物质带有骷髅符号，不应吸入。",
-        "ku": "Madeyên jehrîn (jehrîn) sembola serjê hildigirin û divê neyên hilgirtin."
+        "ku": "Madeyên jehrî (toksîk) sembola qafa serî hildigirin û divê neyên hilmijandin."
       },
       "trap": {
         "tr": "Kuru kafa sembolü radyoaktif ışıma yapan maddeleri belirtir.",
@@ -366,7 +366,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Символ черепа обозначает вещества, излучающие радиоактивное излучение.",
         "ar": "يشير رمز الجمجمة إلى المواد التي تنبعث منها إشعاعات مشعة.",
         "zh": "骷髅符号表示发射放射性辐射的物质。",
-        "ku": "Sembola skull maddeyên ku tîrêjên radyoaktîf derdixin nîşan dide."
+        "ku": "Sembola qafa serî maddeyên ku tîrêjên radyoaktîf derdixin nîşan dide."
       }
     },
     {
@@ -412,7 +412,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Чистоту органических растворителей можно определить по запаху.",
         "ar": "يمكن تحديد نقاء المذيبات العضوية عن طريق الرائحة.",
         "zh": "有机溶剂的纯度可以通过气味来判断。",
-        "ku": "Paqijiya rûkalên organîk bi bîhnê dikare were destnîşankirin."
+        "ku": "Paqijiya helkerên organîk bi bêhnkirinê dikare were destnîşankirin."
       }
     }
   ],
@@ -445,7 +445,7 @@ export const unit01: ChemistryUnitSeedData = {
         "de": "Während die Alchemie ein auf Versuch und Irrtum basierendes Unterfangen ist, ist die Chemie eine positive Wissenschaft, die auf systematischem Experimentieren und Messen basiert.",
         "fr": "Alors que l'alchimie est une entreprise basée sur des essais et des erreurs, la chimie est une science positive basée sur l'expérimentation et la mesure systématiques.",
         "ru": "В то время как алхимия — это попытка, основанная на пробах и ошибках, химия — позитивная наука, основанная на систематических экспериментах и измерениях.",
-        "ar": "في حين أن الكيمياء هي مسعى يعتمد على التجربة والخطأ، فإن الكيمياء هي علم إيجابي يعتمد على التجريب والقياس المنهجي.",
+        "ar": "في حين أن الخيمياء مسعى يعتمد على التجربة والخطأ، فإن الكيمياء علم وضعي يعتمد على التجريب والقياس المنهجي.",
         "zh": "炼金术是一门基于反复试验的努力，而化学是一门基于系统实验和测量的实证科学。",
         "ku": "Digel ku alkîmya hewldanek li ser ceribandin û xeletiyê ye, kîmya zanistek erênî ye ku li ser ceribandin û pîvandina sîstematîk e."
       }
@@ -493,7 +493,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Качественный анализ",
         "ar": "التحليل النوعي",
         "zh": "定性分析",
-        "ku": "Analysis Qualitative"
+        "ku": "Analîza Çawaniyê"
       },
       "conceptB": {
         "tr": "Nicel Analiz",
@@ -503,17 +503,17 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Количественный анализ",
         "ar": "التحليل الكمي",
         "zh": "定量分析",
-        "ku": "Analysis Quantitative"
+        "ku": "Analîza Çendaniyê"
       },
       "distinction": {
         "tr": "Nitel analiz \"ne var?\" sorusuna, nicel analiz \"ne kadar var?\" sorusuna cevap verir.",
-        "en": "Qualitative analysis “what is it?” to the question, quantitative analysis \"how much is there?\" answers the question.",
-        "de": "Qualitative Analyse „Was ist das?“ Auf die Frage, quantitative Analyse „Wie viel ist da?“ beantwortet die Frage.",
-        "fr": "Analyse qualitative « qu'est-ce que c'est ? à la question, analyse quantitative « combien y a-t-il ? répond à la question.",
-        "ru": "Качественный анализ «что это?» на вопрос, количественный анализ \"сколько там?\" отвечает на вопрос.",
-        "ar": "التحليل النوعي \"ما هو؟\" على السؤال، التحليل الكمي \"كم هو هناك؟\" يجيب على السؤال.",
-        "zh": "定性分析“这是什么？”对于问题，定量分析“有多少？”回答了问题。",
-        "ku": "Analîzek kalîteyê \"ew çi ye?\" li ser pirsa, analîza hejmarî \"çiqas heye?\" bersiva pirsê dide."
+        "en": "Qualitative analysis answers the question “what is present?”; quantitative analysis answers “how much is present?”.",
+        "de": "Die qualitative Analyse beantwortet die Frage „Was ist vorhanden?“, die quantitative Analyse die Frage „Wie viel ist vorhanden?“.",
+        "fr": "L'analyse qualitative répond à la question « qu'y a-t-il ? », l'analyse quantitative à la question « combien y en a-t-il ? ».",
+        "ru": "Качественный анализ отвечает на вопрос «что содержится?», количественный — на вопрос «сколько содержится?».",
+        "ar": "يجيب التحليل النوعي عن سؤال «ماذا يوجد؟»، ويجيب التحليل الكمي عن سؤال «كم يوجد؟».",
+        "zh": "定性分析回答“有什么？”的问题，定量分析回答“有多少？”的问题。",
+        "ku": "Analîza çawaniyê bersiva pirsa “çi heye?” dide, analîza çendaniyê bersiva pirsa “çiqas heye?” dide."
       }
     },
     {
@@ -526,7 +526,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "бюретка",
         "ar": "السحاحة",
         "zh": "滴定管",
-        "ku": "burette"
+        "ku": "Buret"
       },
       "conceptB": {
         "tr": "Pipet",
@@ -536,50 +536,50 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "пипетка",
         "ar": "ماصة",
         "zh": "移液器",
-        "ku": "pipette"
+        "ku": "Pîpet"
       },
       "distinction": {
         "tr": "Büret musluklu ve titrasyon damlatmalı, pipet ise küçük hacimli sıvı aktarıcıdır.",
-        "en": "A burette has a stopper and a titration dropper, while a pipette is a small volume liquid transmitter.",
-        "de": "Eine Bürette hat einen Stopfen und einen Titriertropfer, während eine Pipette ein Flüssigkeitstransmitter für kleine Volumina ist.",
-        "fr": "Une burette est dotée d'un bouchon et d'un compte-gouttes de titrage, tandis qu'une pipette est un transmetteur de liquide de petit volume.",
-        "ru": "Бюретка имеет пробку и пипетку для титрования, а пипетка представляет собой датчик жидкости небольшого объема.",
-        "ar": "تحتوي السحاحة على سدادة وقطارة معايرة، في حين أن الماصة عبارة عن جهاز إرسال سائل صغير الحجم.",
-        "zh": "滴定管有塞子和滴定管，而移液管是小容量液体传送器。",
-        "ku": "Bûretek xwedan rawestgehek û dilopek titrasyonê ye, dema ku pîpettek veguhezkerek şilavê ya piçûk e."
+        "en": "A burette has a stopcock and is used for dropwise addition in titration; a pipette transfers small, measured volumes of liquid.",
+        "de": "Eine Bürette besitzt einen Hahn und dient zum tropfenweisen Zugeben bei der Titration; eine Pipette überträgt kleine, abgemessene Flüssigkeitsvolumina.",
+        "fr": "La burette possède un robinet et sert à l'ajout goutte à goutte lors du titrage ; la pipette sert à transférer de petits volumes mesurés de liquide.",
+        "ru": "Бюретка снабжена краном и используется для покапельного добавления при титровании; пипетка служит для переноса небольших отмеренных объёмов жидкости.",
+        "ar": "السحاحة مزودة بصنبور وتُستخدم للإضافة قطرةً قطرة في المعايرة؛ أما الماصة فتنقل أحجامًا صغيرة مقيسة من السائل.",
+        "zh": "滴定管带有活塞，用于滴定时逐滴加入；移液管用于转移少量定量的液体。",
+        "ku": "Buret xwedî musluk e û di tîtrasyonê de ji bo dilop-dilop rijandinê tê bikaranîn; pîpet ji bo veguhestina qebareyên piçûk ên şilekê ye."
       }
     },
     {
       "id": "u01-c05",
       "conceptA": {
         "tr": "Erlenmayer",
-        "en": "Erlenmayer",
-        "de": "Erlenmayer",
-        "fr": "Erlenmayer",
-        "ru": "Эрленмайер",
-        "ar": "إرلينماير",
-        "zh": "埃伦梅尔",
+        "en": "Erlenmeyer Flask",
+        "de": "Erlenmeyerkolben",
+        "fr": "Fiole d'Erlenmeyer",
+        "ru": "Колба Эрленмейера",
+        "ar": "دورق إرلنماير",
+        "zh": "锥形瓶",
         "ku": "Erlenmayer"
       },
       "conceptB": {
         "tr": "Balon Joje",
-        "en": "Balloon Bottle",
-        "de": "Ballonflasche",
-        "fr": "Bouteille de ballon",
-        "ru": "Бутылка с воздушным шаром",
-        "ar": "زجاجة بالون",
-        "zh": "气球瓶",
-        "ku": "Balloon Bottle"
+        "en": "Volumetric Flask",
+        "de": "Messkolben",
+        "fr": "Fiole jaugée",
+        "ru": "Мерная колба",
+        "ar": "الدورق الحجمي",
+        "zh": "容量瓶",
+        "ku": "Balon joje"
       },
       "distinction": {
         "tr": "Erlenmayer çalkalama ve titrasyonda; balon joje ise tam hacimde hassas derişimli çözelti hazırlamada kullanılır.",
-        "en": "In Erlenmayer shaking and titration; The volumetric flask is used to prepare a full volume of precisely concentrated solution.",
-        "de": "Bei Erlenmayer Schütteln und Titrieren; Mit dem Messkolben wird ein vollständiges Volumen einer präzise konzentrierten Lösung hergestellt.",
-        "fr": "Dans l'agitation et le titrage d'Erlenmayer ; La fiole jaugée est utilisée pour préparer un volume complet de solution précisément concentrée.",
-        "ru": "По Эрленмайеру встряхивание и титрование; Мерную колбу используют для приготовления полного объема точно концентрированного раствора.",
-        "ar": "في إرلنماير، الاهتزاز والمعايرة؛ يُستخدم الدورق الحجمي لتحضير حجم كامل من المحلول المركز بدقة.",
-        "zh": "在锥形瓶摇动和滴定中；容量瓶用于配制全体积的精密浓缩溶液。",
-        "ku": "Di Erlenmayer de hejandin û titrasyon; Firmaya volumetric ji bo amadekirina cildek tije ya çareseriyek berbiçav tê bikar anîn."
+        "en": "The Erlenmeyer flask is used for shaking and titration; the volumetric flask is used to prepare a solution of exact concentration at an exact volume.",
+        "de": "Der Erlenmeyerkolben wird zum Schütteln und Titrieren verwendet; der Messkolben dient zur Herstellung einer Lösung genauer Konzentration mit genauem Volumen.",
+        "fr": "La fiole d'Erlenmeyer sert à l'agitation et au titrage ; la fiole jaugée sert à préparer une solution de concentration précise à un volume exact.",
+        "ru": "Колба Эрленмейера используется для перемешивания и титрования; мерная колба — для приготовления раствора точной концентрации точного объёма.",
+        "ar": "يُستخدم دورق إرلنماير في الرج والمعايرة؛ أما الدورق الحجمي فيُستخدم لتحضير محلول دقيق التركيز بحجم محدد تمامًا.",
+        "zh": "锥形瓶用于摇动和滴定；容量瓶用于配制体积准确、浓度精确的溶液。",
+        "ku": "Erlenmayer ji bo hejandin û tîtrasyonê tê bikaranîn; balon joje ji bo amadekirina çareseriyeke bi qebare û konsantreya rast tê bikaranîn."
       }
     },
     {
@@ -620,10 +620,10 @@ export const unit01: ChemistryUnitSeedData = {
       "conceptA": {
         "tr": "Fiziksel Değişim",
         "en": "Physical Change",
-        "de": "Körperliche Veränderung",
+        "de": "Physikalische Veränderung",
         "fr": "Changement physique",
         "ru": "Физические изменения",
-        "ar": "التغيير الجسدي",
+        "ar": "التغير الفيزيائي",
         "zh": "物理变化",
         "ku": "Guhertina Fîzîkî"
       },
@@ -643,7 +643,7 @@ export const unit01: ChemistryUnitSeedData = {
         "de": "Bei der physikalischen Veränderung bleiben die innere Struktur und Identität der Substanz erhalten; Bei einer chemischen Veränderung entstehen neue chemische Spezies.",
         "fr": "Lors d'un changement physique, la structure interne et l'identité de la substance sont préservées ; Lors d’un changement chimique, de nouvelles espèces chimiques se forment.",
         "ru": "При физическом изменении внутренняя структура и самобытность вещества сохраняются; В результате химических изменений образуются новые химические виды.",
-        "ar": "في التغير الجسدي، يتم الحفاظ على البنية الداخلية وهوية المادة؛ في التغير الكيميائي، تتشكل أنواع كيميائية جديدة.",
+        "ar": "في التغير الفيزيائي، يتم الحفاظ على البنية الداخلية وهوية المادة؛ في التغير الكيميائي، تتشكل أنواع كيميائية جديدة.",
         "zh": "在物理变化中，物质的内部结构和特性得以保留；在化学变化中，形成新的化学物质。",
         "ku": "Di guherîna fizîkî de, avahiya navxweyî û nasnameya maddeyê tê parastin; Di guherîneke kîmyewî de, cureyên kîmyewî yên nû çêdibin."
       }
@@ -666,7 +666,7 @@ export const unit01: ChemistryUnitSeedData = {
         "de": "Ätzender Stoff",
         "fr": "Substance corrosive",
         "ru": "Коррозионное вещество",
-        "ar": "مادة قابلة للتآكل",
+        "ar": "مادة أكّالة",
         "zh": "腐蚀性物质",
         "ku": "Madeya korozive"
       },
@@ -678,7 +678,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Токсичные вещества ядовиты и имеют пиктограмму черепа; Коррозионные вещества – это вещества, которые разъедают кожу и металлы, сжигая их.",
         "ar": "المواد السامة سامة وتحمل رسمًا تخطيطيًا للجمجمة؛ المواد المسببة للتآكل هي مواد تؤدي إلى تآكل الجلد والمعادن عن طريق حرقها.",
         "zh": "有毒物质有毒，并带有骷髅象形文字；腐蚀性物质是通过燃烧而腐蚀皮肤和金属的物质。",
-        "ku": "Madeyên jehrî jehrîn in û pîktograma serê serê xwe hildigirin; Madeyên gemarî ew maddeyên ku bi şewitandina çerm û metalan dişewitînin."
+        "ku": "Madeyên toksîk jehrî ne û pîktograma qafa serî hildigirin; madeyên korozîf çerm û metalan dixwin û dişewitînin."
       }
     }
   ],
@@ -691,50 +691,50 @@ export const unit01: ChemistryUnitSeedData = {
         "de": "Schritte zur Lösungsvorbereitung",
         "fr": "Étapes de préparation de la solution",
         "ru": "Этапы подготовки раствора",
-        "ar": "خطوات تحضير الحل",
+        "ar": "خطوات تحضير المحلول",
         "zh": "溶液制备步骤",
         "ku": "Pêngavên Amadekirina Çareseriyê"
       },
       "steps": [
         {
           "tr": "Hassas terazide katı tartımı yapılır",
-          "en": "Solids are weighed on a precision scale",
-          "de": "Feststoffe werden auf einer Präzisionswaage gewogen",
-          "fr": "Les solides sont pesés sur une balance de précision",
-          "ru": "Твердые вещества взвешиваются на прецизионных весах.",
-          "ar": "يتم وزن المواد الصلبة على مقياس دقيق",
-          "zh": "在精密天平上对固体进行称重",
-          "ku": "Zeviyên hişk li ser pîvanek rastîn têne giran kirin"
+          "en": "The solid is weighed on a precision balance",
+          "de": "Der Feststoff wird auf einer Präzisionswaage abgewogen",
+          "fr": "Le solide est pesé sur une balance de précision",
+          "ru": "Твёрдое вещество взвешивают на точных весах",
+          "ar": "يُوزن المذاب الصلب بميزان دقيق",
+          "zh": "用精密天平称量固体",
+          "ku": "Madeya hişk bi terazûya hesas tê kişandin"
         },
         {
           "tr": "Az miktar saf suda behere çözünür",
-          "en": "Soluble in small amount of pure water in beaker",
-          "de": "Löslich in einer kleinen Menge reinem Wasser im Becher",
-          "fr": "Soluble dans une petite quantité d'eau pure dans un bécher",
-          "ru": "Растворим в небольшом количестве чистой воды в стакане.",
-          "ar": "قابل للذوبان في كمية صغيرة من الماء النقي في كوب",
-          "zh": "溶于烧杯中少量纯水",
-          "ku": "Di mîqdarek piçûk a ava paqij a di kaxezê de tê çareser kirin"
+          "en": "It is dissolved in a small amount of pure water in a beaker",
+          "de": "Er wird im Becherglas in wenig reinem Wasser gelöst",
+          "fr": "Il est dissous dans un peu d'eau pure dans un bécher",
+          "ru": "Его растворяют в небольшом количестве чистой воды в стакане",
+          "ar": "يُذاب في كمية قليلة من الماء النقي داخل كأس زجاجية",
+          "zh": "在烧杯中用少量纯水溶解",
+          "ku": "Di beherê de di hindek ava paqij de tê helandin"
         },
         {
           "tr": "Balon jojeye aktarılır",
-          "en": "The flask is transferred to the volumetric jar",
-          "de": "Der Kolben wird in das Messgefäß überführt",
-          "fr": "Le ballon est transféré dans le pot jaugé",
-          "ru": "Колбу переносят в мерную банку.",
-          "ar": "يتم نقل القارورة إلى الجرة الحجمية",
-          "zh": "将烧瓶转移至容量瓶中",
-          "ku": "Falsk li jar volumetric ve tê veguhestin"
+          "en": "The solution is transferred to the volumetric flask",
+          "de": "Die Lösung wird in den Messkolben überführt",
+          "fr": "La solution est transvasée dans la fiole jaugée",
+          "ru": "Раствор переносят в мерную колбу",
+          "ar": "يُنقل المحلول إلى الدورق الحجمي",
+          "zh": "将溶液转移至容量瓶中",
+          "ku": "Çareserî tê veguhestin nav balon jojeyê"
         },
         {
           "tr": "Çizgiye kadar saf su eklenip çalkalanır",
-          "en": "Pure water is added up to the line and shaken.",
-          "de": "Reines Wasser wird in die Leitung gegeben und geschüttelt.",
-          "fr": "De l'eau pure est ajoutée jusqu'au trait et secouée.",
-          "ru": "В линию добавляют чистую воду и встряхивают.",
-          "ar": "يضاف الماء النقي إلى الخط ويهز.",
-          "zh": "将纯水添加到管线中并摇匀。",
-          "ku": "Ava paqij li ser rêzê tê zêdekirin û dihejîne."
+          "en": "Pure water is added up to the mark and the flask is shaken",
+          "de": "Reines Wasser wird bis zur Eichmarke aufgefüllt und der Kolben geschüttelt",
+          "fr": "On complète avec de l'eau pure jusqu'au trait de jauge et on agite",
+          "ru": "Доливают чистую воду до метки и перемешивают",
+          "ar": "يُضاف الماء النقي حتى العلامة ويُرج الدورق",
+          "zh": "加纯水至刻度线并摇匀",
+          "ku": "Ava paqij heta xetê tê zêdekirin û tê hejandin"
         }
       ]
     },
@@ -748,38 +748,38 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Простая установка дистилляции",
         "ar": "إعداد التقطير البسيط",
         "zh": "简单的蒸馏设置",
-        "ku": "Setup Distillation Simple"
+        "ku": "Sazkirina Amûra Distilasyona Sade"
       },
       "steps": [
         {
           "tr": "Balona sıvı karışım konur",
-          "en": "Liquid mixture is placed in the balloon",
-          "de": "In den Ballon wird eine flüssige Mischung gegeben",
+          "en": "The liquid mixture is placed in the flask",
+          "de": "Das Flüssigkeitsgemisch wird in den Rundkolben gegeben",
           "fr": "Le mélange liquide est placé dans le ballon",
-          "ru": "Жидкая смесь помещается в баллон.",
-          "ar": "يوضع الخليط السائل في البالون",
-          "zh": "将液体混合物放入气球中",
+          "ru": "Жидкую смесь помещают в колбу",
+          "ar": "يوضع الخليط السائل في الدورق",
+          "zh": "将液体混合物放入烧瓶中",
           "ku": "Tevliheviya şil di balonê de tê danîn"
         },
         {
           "tr": "Isıtıcı açılıp kaynatılır",
-          "en": "The heater is turned on and boiled",
-          "de": "Die Heizung wird eingeschaltet und gekocht",
-          "fr": "Le chauffage est allumé et bouilli",
-          "ru": "Нагреватель включается и кипит",
-          "ar": "يتم تشغيل المدفأة وغليها",
-          "zh": "加热器已打开并煮沸",
-          "ku": "Germahî tê vekirin û tê kelandin"
+          "en": "The heater is turned on and the mixture is boiled",
+          "de": "Die Heizquelle wird eingeschaltet und das Gemisch zum Sieden gebracht",
+          "fr": "On allume le chauffage et on porte le mélange à ébullition",
+          "ru": "Включают нагреватель и доводят смесь до кипения",
+          "ar": "يُشغَّل المسخن ويُغلى الخليط",
+          "zh": "打开加热器，使混合物沸腾",
+          "ku": "Germker tê vêxistin û tevlihevî tê kelandin"
         },
         {
           "tr": "Buharlaşan sıvı soğutucuya geçer",
-          "en": "The evaporated liquid passes into the cooler",
-          "de": "Die verdampfte Flüssigkeit gelangt in den Kühler",
-          "fr": "Le liquide évaporé passe dans le refroidisseur",
-          "ru": "Испаренная жидкость поступает в охладитель.",
-          "ar": "يمر السائل المتبخر إلى المبرد",
-          "zh": "蒸发的液体进入冷却器",
-          "ku": "Şîva hilmikî derbasî sarincê dibe"
+          "en": "The vapor passes into the condenser",
+          "de": "Der Dampf gelangt in den Kühler",
+          "fr": "La vapeur passe dans le réfrigérant",
+          "ru": "Пар поступает в холодильник",
+          "ar": "يمر البخار إلى المكثف",
+          "zh": "蒸气进入冷凝管",
+          "ku": "Hilm derbasî sarker dibe"
         },
         {
           "tr": "Yoğuşan sıvı erlende toplanır",
@@ -789,7 +789,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Конденсированную жидкость собирают в коническую колбу.",
           "ar": "يتم جمع السائل المكثف في الدورق المخروطي.",
           "zh": "将冷凝液收集在锥形瓶中。",
-          "ku": "Avêra kondenskirî di fîşeka konîk de tê berhev kirin."
+          "ku": "Şileya ku tê kondenskirin di erlenmayerê de tê berhevkirin."
         }
       ]
     },
@@ -883,13 +883,13 @@ export const unit01: ChemistryUnitSeedData = {
         },
         {
           "tr": "Heterojen karışım bagetle dökülür",
-          "en": "The heterogeneous mixture is poured with a baguette",
-          "de": "Die heterogene Mischung wird mit einem Baguette gegossen",
-          "fr": "Le mélange hétérogène est versé avec une baguette",
-          "ru": "Неоднородная смесь заливается багетом",
-          "ar": "يُسكب الخليط غير المتجانس بالرغيف الفرنسي",
-          "zh": "将异质混合物倒入长棍面包中",
-          "ku": "Têkeliya heterojen bi baguette tê rijandin"
+          "en": "The heterogeneous mixture is poured along a glass rod",
+          "de": "Das heterogene Gemisch wird an einem Glasstab entlang eingegossen",
+          "fr": "Le mélange hétérogène est versé le long d'une baguette de verre",
+          "ru": "Неоднородную смесь наливают по стеклянной палочке",
+          "ar": "يُسكب الخليط غير المتجانس على ساق زجاجية",
+          "zh": "沿玻璃棒倒入非均相混合物",
+          "ku": "Tevliheviya heterojen bi alîkariya çovika camê tê rijandin"
         },
         {
           "tr": "Süzüntü beherde toplanır",
@@ -899,7 +899,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Фильтрат собирают в стакан.",
           "ar": "يتم جمع الترشيح في الدورق.",
           "zh": "将滤液收集在烧杯中。",
-          "ku": "Parzûna di qalikê de tê berhevkirin."
+          "ku": "Şileya parzûnkirî di beherê de tê berhevkirin."
         }
       ]
     }
@@ -908,7 +908,7 @@ export const unit01: ChemistryUnitSeedData = {
     {
       "id": "u01-twin01",
       "stem": {
-        "tr": "Laboratuvarda 0.1 M 250 mL standart NaCl çözeltisi hazırlamak isteyen bir araştırmacı, aşağıdaki cam malzemelerden hangisini kullanmalıdır?",
+        "tr": "Laboratuvarda 0,1 M 250 mL standart NaCl çözeltisi hazırlamak isteyen bir araştırmacı, aşağıdaki cam malzemelerden hangisini kullanmalıdır?",
         "en": "Which of the following glassware should a researcher who wants to prepare 0.1 M 250 mL standard NaCl solution in the laboratory use?",
         "de": "Welches der folgenden Glasgeräte sollte ein Forscher verwenden, der im Labor eine 0,1 M 250 ml Standard-NaCl-Lösung herstellen möchte?",
         "fr": "Laquelle des verreries suivantes un chercheur souhaitant préparer une solution étalon de NaCl 0,1 M 250 mL en laboratoire devrait-il utiliser ?",
@@ -926,7 +926,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "мерная колба",
           "ar": "قارورة حجمية",
           "zh": "容量瓶",
-          "ku": "flaskek volumetric"
+          "ku": "Balon joje"
         },
         {
           "tr": "Ayırma hunisi",
@@ -934,9 +934,9 @@ export const unit01: ChemistryUnitSeedData = {
           "de": "Scheidetrichter",
           "fr": "entonnoir séparateur",
           "ru": "делительная воронка",
-          "ar": "قمع منفصل",
+          "ar": "قمع الفصل",
           "zh": "分液漏斗",
-          "ku": "kana veqetandinê"
+          "ku": "Qîfa veqetandinê"
         },
         {
           "tr": "Kısa deney tüpü",
@@ -951,12 +951,12 @@ export const unit01: ChemistryUnitSeedData = {
         {
           "tr": "Havan",
           "en": "mortar",
-          "de": "Mörtel",
+          "de": "Mörser",
           "fr": "mortier",
           "ru": "ступка",
           "ar": "هاون",
-          "zh": "迫击炮",
-          "ku": "mortar"
+          "zh": "研钵",
+          "ku": "Hawan"
         },
         {
           "tr": "Kroze",
@@ -966,7 +966,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "тигель",
           "ar": "بوتقة",
           "zh": "坩埚",
-          "ku": "crucible"
+          "ku": "Kroze"
         }
       ],
       "correctIndex": 0,
@@ -978,7 +978,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "В мерной колбе готовят стандартный раствор определенного объема и концентрации.",
         "ar": "يتم استخدام دورق حجمي لتحضير محلول قياسي بحجم وتركيز معينين.",
         "zh": "容量瓶用于配制一定体积和浓度的标准溶液。",
-        "ku": "Kulîlkek volumetric tê bikar anîn da ku çareseriyek standard di hêjmarek diyarkirî û hûrgelê de amade bike."
+        "ku": "Balon joje ji bo amadekirina çareseriyeke standard bi qebare û konsantreyeke diyar tê bikaranîn."
       }
     },
     {
@@ -1032,7 +1032,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Известняк: CaCO3",
           "ar": "الحجر الجيري: CaCO3",
           "zh": "石灰石：CaCO3",
-          "ku": "Kevir: CaCO3"
+          "ku": "Kevirê kilsê: CaCO3"
         },
         {
           "tr": "Sönmüş kireç: CaO",
@@ -1042,7 +1042,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Гашеная известь: CaO",
           "ar": "الجير المطفأ : CaO",
           "zh": "熟石灰：CaO",
-          "ku": "Kevirê şilandî: CaO"
+          "ku": "Kilsa vemirî: CaO"
         }
       ],
       "correctIndex": 4,
@@ -1054,7 +1054,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Гашеная известь – это Ca(OH)2. СаО – это негашеная известь.",
         "ar": "الجير المطفأ هو Ca(OH)2. CaO هو الجير الحي.",
         "zh": "熟石灰是Ca(OH)2。 CaO是生石灰。",
-        "ku": "Kevirê şilandî Ca(OH)2 ye. CaO zirav zû ye."
+        "ku": "Kilsa vemirî Ca(OH)2 ye. CaO kilsa nevemirî ye."
       }
     },
     {
@@ -1108,7 +1108,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Восклицательный знак обозначает взрывоопасные вещества.",
           "ar": "يمثل رسم التعجب المواد المتفجرة.",
           "zh": "感叹号象形图代表爆炸性物质。",
-          "ku": "Pîktograma qîrînê madeyên teqemenî nîşan dide."
+          "ku": "Pîktograma nîşana bangkirinê (!) madeyên teqemenî nîşan dide."
         },
         {
           "tr": "Derişik asidi seyreltirken hızla üzerine soğuk su boşaltılmalıdır.",
@@ -1154,7 +1154,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Мерную колбу используют в качестве печи для сжигания твердых веществ.",
           "ar": "يتم استخدام الدورق الحجمي كمحرقة صلبة.",
           "zh": "容量瓶用作固体焚烧炉。",
-          "ku": "Firmaya volumetric wekî şewitandina hişk tê bikaranîn."
+          "ku": "Balon joje wekî firneya şewitandina madeyên hişk tê bikaranîn."
         },
         {
           "tr": "Analitik kimya karbon temelli polimerleri sentezleyen daldır.",
@@ -1177,14 +1177,14 @@ export const unit01: ChemistryUnitSeedData = {
           "ku": "Madeyên ku ji jîngehê re zerardar in, bi nîşana şewatê têne destnîşan kirin."
         },
         {
-          "tr": "Ebu Bekir er-Razi kostik soda ve karınca asidini (formik asit) ilk kez elde etmiştir.",
-          "en": "Abu Bakr al-Razi synthesized caustic soda and formic acid (methanoic acid) for the first time.",
-          "de": "Abu Bakr ar-Razi stellte erstmals Ätznatron und Ameisensäure (Methansäure) her.",
-          "fr": "Abu Bakr al-Razi a obtenu pour la première fois la soude caustique et l'acide formique (acide méthanoïque).",
-          "ru": "Абу Бакр ар-Рази впервые получил едкий натр и муравьиную кислоту (метановую кислоту).",
-          "ar": "حصل أبو بكر الرازي على الصودا الكاوية وحمض الفورميك (حمض النمليك) لأول مرة.",
-          "zh": "阿布·伯克尔·拉齐首次制得了烧碱和甲酸（蚁酸）。",
-          "ku": "Ebû Bekir el-Razî bo cara yekem soda kaustîk û asîda formîk bi dest xist."
+          "tr": "Ebu Bekir er-Razi zaç yağını (sülfürik asit) ve kostik sodayı (sodyum hidroksit) elde etmiştir.",
+          "en": "Abu Bakr al-Razi obtained oil of vitriol (sulfuric acid) and caustic soda (sodium hydroxide).",
+          "de": "Abu Bakr ar-Razi gewann Vitriolöl (Schwefelsäure) und Ätznatron (Natriumhydroxid).",
+          "fr": "Abu Bakr al-Razi a obtenu l'huile de vitriol (acide sulfurique) et la soude caustique (hydroxyde de sodium).",
+          "ru": "Абу Бакр ар-Рази получил купоросное масло (серную кислоту) и едкий натр (гидроксид натрия).",
+          "ar": "حصل أبو بكر الرازي على زيت الزاج (حمض الكبريتيك) والصودا الكاوية (هيدروكسيد الصوديوم).",
+          "zh": "阿布·伯克尔·拉齐制得了矾油（硫酸）和烧碱（氢氧化钠）。",
+          "ku": "Ebû Bekir el-Razî rûnê zaçê (asîda sulfurîk) û soda kaustîk (sodyûm hîdroksît) bi dest xist."
         },
         {
           "tr": "Organik çözücülerin saflığı koklanarak tayin edilebilir.",
@@ -1194,19 +1194,19 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Чистоту органических растворителей можно определить по запаху.",
           "ar": "يمكن تحديد نقاء المذيبات العضوية عن طريق الرائحة.",
           "zh": "有机溶剂的纯度可以通过气味来判断。",
-          "ku": "Paqijiya rûkalên organîk bi bîhnê dikare were destnîşankirin."
+          "ku": "Paqijiya helkerên organîk bi bêhnkirinê dikare were destnîşankirin."
         }
       ],
       "correctIndex": 3,
       "explanation": {
-        "tr": "Doğru cevap \"Ebu Bekir er-Razi kostik soda ve karınca asidini (formik asit) ilk kez elde etmiştir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Abu Bakr al-Razi synthesized caustic soda and formic acid (methanoic acid) for the first time.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Abu Bakr ar-Razi stellte erstmals Ätznatron und Ameisensäure (Methansäure) her.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Abu Bakr al-Razi a obtenu pour la première fois la soude caustique et l'acide formique (acide méthanoïque).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Абу Бакр ар-Рази впервые получил едкий натр и муравьиную кислоту (метановую кислоту).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"حصل أبو بكر الرازي على الصودا الكاوية وحمض الفورميك (حمض النمليك) لأول مرة.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“阿布·伯克尔·拉齐首次制得了烧碱和甲酸（蚁酸）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ebû Bekir el-Razî bo cara yekem soda kaustîk û asîda formîk bi dest xist.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Ebu Bekir er-Razi zaç yağını (sülfürik asit) ve kostik sodayı (sodyum hidroksit) elde etmiştir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Abu Bakr al-Razi obtained oil of vitriol (sulfuric acid) and caustic soda (sodium hydroxide).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Abu Bakr ar-Razi gewann Vitriolöl (Schwefelsäure) und Ätznatron (Natriumhydroxid).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Abu Bakr al-Razi a obtenu l'huile de vitriol (acide sulfurique) et la soude caustique (hydroxyde de sodium).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Абу Бакр ар-Рази получил купоросное масло (серную кислоту) и едкий натр (гидроксид натрия).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"حصل أبو بكر الرازي على زيت الزاج (حمض الكبريتيك) والصودا الكاوية (هيدروكسيد الصوديوم).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“阿布·伯克尔·拉齐制得了矾油（硫酸）和烧碱（氢氧化钠）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Ebû Bekir el-Razî rûnê zaçê (asîda sulfurîk) û soda kaustîk (sodyûm hîdroksît) bi dest xist.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1230,7 +1230,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Известняк CaO представляет собой то же соединение, что и негашеная известь.",
           "ar": "الحجر الجيري CaO هو نفس مركب الجير الحي.",
           "zh": "石灰石 CaO 与生石灰是相同的化合物。",
-          "ku": "Kevirê kilsinî CaO heman pêkhatî ye wekî kilê zû."
+          "ku": "Kevirê kilsê CaO ye û bi kilsa nevemirî re heman pêkhate ye."
         },
         {
           "tr": "Biyokimya endüstriyel metal alaşımlarını inceler.",
@@ -1240,7 +1240,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Биохимия изучает промышленные металлические сплавы.",
           "ar": "تدرس الكيمياء الحيوية السبائك المعدنية الصناعية.",
           "zh": "生物化学研究工业金属合金。",
-          "ku": "Biyokîmya aligirên metal ên pîşesaziyê lêkolîn dike."
+          "ku": "Biyokîmya alyajên metal ên pîşesaziyê lêkolîn dike."
         },
         {
           "tr": "Kuru kafa sembolü radyoaktif ışıma yapan maddeleri belirtir.",
@@ -1250,7 +1250,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Символ черепа обозначает вещества, излучающие радиоактивное излучение.",
           "ar": "يشير رمز الجمجمة إلى المواد التي تنبعث منها إشعاعات مشعة.",
           "zh": "骷髅符号表示发射放射性辐射的物质。",
-          "ku": "Sembola skull maddeyên ku tîrêjên radyoaktîf derdixin nîşan dide."
+          "ku": "Sembola qafa serî maddeyên ku tîrêjên radyoaktîf derdixin nîşan dide."
         },
         {
           "tr": "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.",
@@ -1326,7 +1326,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Восклицательный знак обозначает взрывоопасные вещества.",
           "ar": "يمثل رسم التعجب المواد المتفجرة.",
           "zh": "感叹号象形图代表爆炸性物质。",
-          "ku": "Pîktograma qîrînê madeyên teqemenî nîşan dide."
+          "ku": "Pîktograma nîşana bangkirinê (!) madeyên teqemenî nîşan dide."
         },
         {
           "tr": "Derişik asidi seyreltirken hızla üzerine soğuk su boşaltılmalıdır.",
@@ -1392,7 +1392,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Мерная колба представляет собой прецизионную стеклянную емкость с узким горлышком для приготовления стандартного раствора определенной концентрации.",
           "ar": "الدورق الحجمي عبارة عن حاوية زجاجية دقيقة ضيقة العنق لتحضير محلول قياسي بتركيز معين.",
           "zh": "容量瓶是一种细颈精密玻璃容器，用于配制特定浓度的标准溶液。",
-          "ku": "Firmaya volumetric konteynirek camê ya bi stûyê teng e ku ji bo amadekirina çareseriyek standard di konsantreyek taybetî de ye."
+          "ku": "Balon joje firaxeke camê ya hesas û stûteng e ku ji bo amadekirina çareseriyeke standard bi konsantreyeke diyar tê bikaranîn."
         },
         {
           "tr": "Çevreye zararlı maddeler alev sembolü ile gösterilir.",
@@ -1412,7 +1412,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Чистоту органических растворителей можно определить по запаху.",
           "ar": "يمكن تحديد نقاء المذيبات العضوية عن طريق الرائحة.",
           "zh": "有机溶剂的纯度可以通过气味来判断。",
-          "ku": "Paqijiya rûkalên organîk bi bîhnê dikare were destnîşankirin."
+          "ku": "Paqijiya helkerên organîk bi bêhnkirinê dikare were destnîşankirin."
         },
         {
           "tr": "Kral suyunu Aristo dört element kuramıyla açıklamıştır.",
@@ -1434,7 +1434,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Мерная колба представляет собой прецизионную стеклянную емкость с узким горлышком для приготовления стандартного раствора определенной концентрации.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"الدورق الحجمي عبارة عن حاوية زجاجية دقيقة ضيقة العنق لتحضير محلول قياسي بتركيز معين.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“容量瓶是一种细颈精密玻璃容器，用于配制特定浓度的标准溶液。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Firmaya volumetric konteynirek camê ya bi stûyê teng e ku ji bo amadekirina çareseriyek standard di konsantreyek taybetî de ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Balon joje firaxeke camê ya hesas û stûteng e ku ji bo amadekirina çareseriyeke standard bi konsantreyeke diyar tê bikaranîn.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1458,7 +1458,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Биохимия изучает промышленные металлические сплавы.",
           "ar": "تدرس الكيمياء الحيوية السبائك المعدنية الصناعية.",
           "zh": "生物化学研究工业金属合金。",
-          "ku": "Biyokîmya aligirên metal ên pîşesaziyê lêkolîn dike."
+          "ku": "Biyokîmya alyajên metal ên pîşesaziyê lêkolîn dike."
         },
         {
           "tr": "Kuru kafa sembolü radyoaktif ışıma yapan maddeleri belirtir.",
@@ -1468,17 +1468,17 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Символ черепа обозначает вещества, излучающие радиоактивное излучение.",
           "ar": "يشير رمز الجمجمة إلى المواد التي تنبعث منها إشعاعات مشعة.",
           "zh": "骷髅符号表示发射放射性辐射的物质。",
-          "ku": "Sembola skull maddeyên ku tîrêjên radyoaktîf derdixin nîşan dide."
+          "ku": "Sembola qafa serî maddeyên ku tîrêjên radyoaktîf derdixin nîşan dide."
         },
         {
-          "tr": "Kezzap HNO3, kireç taşı CaCO3, kostik soda NaOH bileşiklerinin geleneksel adlarıdır.",
-          "en": "Kezzap HNO3, limestone CaCO3, caustic soda are the traditional names of NaOH compounds.",
-          "de": "Kezzap HNO3, Kalkstein CaCO3, Natronlauge sind die traditionellen Namen von NaOH-Verbindungen.",
-          "fr": "Kezzap HNO3, calcaire CaCO3, soude caustique sont les noms traditionnels des composés NaOH.",
-          "ru": "Кеззап HNO3, известняк CaCO3, каустическая сода – традиционные названия соединений NaOH.",
-          "ar": "Kezzap HNO3، الحجر الجيري CaCO3، الصودا الكاوية هي الأسماء التقليدية لمركبات NaOH.",
-          "zh": "Kezzap HNO3、石灰石 CaCO3、烧碱是 NaOH 化合物的传统名称。",
-          "ku": "Kezzap HNO3, kevirê kilsinî CaCO3, soda caustic navên kevneşopî yên pêkhateyên NaOH in."
+          "tr": "Kezzap HNO3'ün, kireç taşı CaCO3'ün, kostik soda NaOH'ın geleneksel adıdır.",
+          "en": "Aqua fortis is the traditional name of HNO3, limestone that of CaCO3 and caustic soda that of NaOH.",
+          "de": "Scheidewasser ist der traditionelle Name von HNO3, Kalkstein der von CaCO3 und Ätznatron der von NaOH.",
+          "fr": "L'eau-forte est le nom traditionnel de HNO3, le calcaire celui de CaCO3 et la soude caustique celui de NaOH.",
+          "ru": "Крепкая водка — традиционное название HNO3, известняк — CaCO3, едкий натр — NaOH.",
+          "ar": "ماء الفضة هو الاسم التقليدي لـ HNO3، والحجر الجيري لـ CaCO3، والصودا الكاوية لـ NaOH.",
+          "zh": "硝镪水是HNO3的传统名称，石灰石是CaCO3的传统名称，烧碱是NaOH的传统名称。",
+          "ku": "Kezzap navê kevneşopî yê HNO3, kevirê kilsê yê CaCO3 û soda kaustîk yê NaOH e."
         },
         {
           "tr": "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.",
@@ -1503,14 +1503,14 @@ export const unit01: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Kezzap HNO3, kireç taşı CaCO3, kostik soda NaOH bileşiklerinin geleneksel adlarıdır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Kezzap HNO3, limestone CaCO3, caustic soda are the traditional names of NaOH compounds.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Kezzap HNO3, Kalkstein CaCO3, Natronlauge sind die traditionellen Namen von NaOH-Verbindungen.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Kezzap HNO3, calcaire CaCO3, soude caustique sont les noms traditionnels des composés NaOH.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Кеззап HNO3, известняк CaCO3, каустическая сода – традиционные названия соединений NaOH.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"Kezzap HNO3، الحجر الجيري CaCO3، الصودا الكاوية هي الأسماء التقليدية لمركبات NaOH.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“Kezzap HNO3、石灰石 CaCO3、烧碱是 NaOH 化合物的传统名称。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Kezzap HNO3, kevirê kilsinî CaCO3, soda caustic navên kevneşopî yên pêkhateyên NaOH in.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Kezzap HNO3'ün, kireç taşı CaCO3'ün, kostik soda NaOH'ın geleneksel adıdır.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Aqua fortis is the traditional name of HNO3, limestone that of CaCO3 and caustic soda that of NaOH.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Scheidewasser ist der traditionelle Name von HNO3, Kalkstein der von CaCO3 und Ätznatron der von NaOH.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"L'eau-forte est le nom traditionnel de HNO3, le calcaire celui de CaCO3 et la soude caustique celui de NaOH.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Крепкая водка — традиционное название HNO3, известняк — CaCO3, едкий натр — NaOH.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"ماء الفضة هو الاسم التقليدي لـ HNO3، والحجر الجيري لـ CaCO3، والصودا الكاوية لـ NaOH.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“硝镪水是HNO3的传统名称，石灰石是CaCO3的传统名称，烧碱是NaOH的传统名称。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Kezzap navê kevneşopî yê HNO3, kevirê kilsê yê CaCO3 û soda kaustîk yê NaOH e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1534,7 +1534,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Восклицательный знак обозначает взрывоопасные вещества.",
           "ar": "يمثل رسم التعجب المواد المتفجرة.",
           "zh": "感叹号象形图代表爆炸性物质。",
-          "ku": "Pîktograma qîrînê madeyên teqemenî nîşan dide."
+          "ku": "Pîktograma nîşana bangkirinê (!) madeyên teqemenî nîşan dide."
         },
         {
           "tr": "Derişik asidi seyreltirken hızla üzerine soğuk su boşaltılmalıdır.",
@@ -1620,7 +1620,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Чистоту органических растворителей можно определить по запаху.",
           "ar": "يمكن تحديد نقاء المذيبات العضوية عن طريق الرائحة.",
           "zh": "有机溶剂的纯度可以通过气味来判断。",
-          "ku": "Paqijiya rûkalên organîk bi bîhnê dikare were destnîşankirin."
+          "ku": "Paqijiya helkerên organîk bi bêhnkirinê dikare were destnîşankirin."
         },
         {
           "tr": "Kral suyunu Aristo dört element kuramıyla açıklamıştır.",
@@ -1696,7 +1696,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Символ черепа обозначает вещества, излучающие радиоактивное излучение.",
           "ar": "يشير رمز الجمجمة إلى المواد التي تنبعث منها إشعاعات مشعة.",
           "zh": "骷髅符号表示发射放射性辐射的物质。",
-          "ku": "Sembola skull maddeyên ku tîrêjên radyoaktîf derdixin nîşan dide."
+          "ku": "Sembola qafa serî maddeyên ku tîrêjên radyoaktîf derdixin nîşan dide."
         },
         {
           "tr": "Simyacılar teraziyi hassas olarak kullanarak kütle korunumunu kanıtlamıştır.",
@@ -1726,7 +1726,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Мерную колбу используют в качестве печи для сжигания твердых веществ.",
           "ar": "يتم استخدام الدورق الحجمي كمحرقة صلبة.",
           "zh": "容量瓶用作固体焚烧炉。",
-          "ku": "Firmaya volumetric wekî şewitandina hişk tê bikaranîn."
+          "ku": "Balon joje wekî firneya şewitandina madeyên hişk tê bikaranîn."
         }
       ],
       "correctIndex": 0,
@@ -1765,14 +1765,14 @@ export const unit01: ChemistryUnitSeedData = {
           "ku": "Dema ku asîda konsantrekirî tê rijandin, divê ava sar zû bi ser de were rijandin."
         },
         {
-          "tr": "Taharriş edici güvenlik piktogramı ünlem işareti ile gösterilir.",
-          "en": "The irritating safety pictogram is indicated by an exclamation mark.",
-          "de": "Das irritierende Sicherheitspiktogramm ist durch ein Ausrufezeichen gekennzeichnet.",
-          "fr": "Le pictogramme de sécurité irritant est signalé par un point d'exclamation.",
-          "ru": "Раздражающая пиктограмма безопасности обозначается восклицательным знаком.",
-          "ar": "يُشار إلى الرسم التوضيحي للسلامة المزعج بعلامة تعجب.",
-          "zh": "令人恼火的安全象形图用感叹号表示。",
-          "ku": "Pîktograma ewlehiyê ya acizker bi nîşanek ravek tê destnîşan kirin."
+          "tr": "Tahriş edici maddeler için kullanılan güvenlik piktogramı ünlem işaretidir.",
+          "en": "The safety pictogram for irritant substances is an exclamation mark.",
+          "de": "Das Sicherheitspiktogramm für reizende Stoffe ist ein Ausrufezeichen.",
+          "fr": "Le pictogramme de sécurité des substances irritantes est un point d'exclamation.",
+          "ru": "Пиктограмма безопасности для раздражающих веществ — восклицательный знак.",
+          "ar": "رمز السلامة للمواد المهيِّجة هو علامة التعجب.",
+          "zh": "刺激性物质的安全象形图是感叹号。",
+          "ku": "Pîktograma ewlehiyê ya maddeyên ku çerm û çavan aciz dikin nîşana bangkirinê (!) ye."
         },
         {
           "tr": "Zaç yağı HNO3 formülüne sahiptir.",
@@ -1802,19 +1802,19 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Известняк CaO представляет собой то же соединение, что и негашеная известь.",
           "ar": "الحجر الجيري CaO هو نفس مركب الجير الحي.",
           "zh": "石灰石 CaO 与生石灰是相同的化合物。",
-          "ku": "Kevirê kilsinî CaO heman pêkhatî ye wekî kilê zû."
+          "ku": "Kevirê kilsê CaO ye û bi kilsa nevemirî re heman pêkhate ye."
         }
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"Taharriş edici güvenlik piktogramı ünlem işareti ile gösterilir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"The irritating safety pictogram is indicated by an exclamation mark.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Das irritierende Sicherheitspiktogramm ist durch ein Ausrufezeichen gekennzeichnet.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Le pictogramme de sécurité irritant est signalé par un point d'exclamation.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Раздражающая пиктограмма безопасности обозначается восклицательным знаком.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"يُشار إلى الرسم التوضيحي للسلامة المزعج بعلامة تعجب.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“令人恼火的安全象形图用感叹号表示。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Pîktograma ewlehiyê ya acizker bi nîşanek ravek tê destnîşan kirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Tahriş edici maddeler için kullanılan güvenlik piktogramı ünlem işaretidir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"The safety pictogram for irritant substances is an exclamation mark.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Das Sicherheitspiktogramm für reizende Stoffe ist ein Ausrufezeichen.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Le pictogramme de sécurité des substances irritantes est un point d'exclamation.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Пиктограмма безопасности для раздражающих веществ — восклицательный знак.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"رمز السلامة للمواد المهيِّجة هو علامة التعجب.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“刺激性物质的安全象形图是感叹号。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Pîktograma ewlehiyê ya maddeyên ku çerm û çavan aciz dikin nîşana bangkirinê (!) ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1838,7 +1838,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Чистоту органических растворителей можно определить по запаху.",
           "ar": "يمكن تحديد نقاء المذيبات العضوية عن طريق الرائحة.",
           "zh": "有机溶剂的纯度可以通过气味来判断。",
-          "ku": "Paqijiya rûkalên organîk bi bîhnê dikare were destnîşankirin."
+          "ku": "Paqijiya helkerên organîk bi bêhnkirinê dikare were destnîşankirin."
         },
         {
           "tr": "Kral suyunu Aristo dört element kuramıyla açıklamıştır.",
@@ -1934,7 +1934,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Мерную колбу используют в качестве печи для сжигания твердых веществ.",
           "ar": "يتم استخدام الدورق الحجمي كمحرقة صلبة.",
           "zh": "容量瓶用作固体焚烧炉。",
-          "ku": "Firmaya volumetric wekî şewitandina hişk tê bikaranîn."
+          "ku": "Balon joje wekî firneya şewitandina madeyên hişk tê bikaranîn."
         },
         {
           "tr": "Zehirli (toksik) maddeler kuru kafa sembolü taşır ve solunmamalıdır.",
@@ -1944,7 +1944,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Ядовитые (токсичные) вещества имеют символ черепа, и их нельзя вдыхать.",
           "ar": "المواد السامة (السامة) تحمل رمز الجمجمة ويجب عدم استنشاقها.",
           "zh": "有毒（有毒）物质带有骷髅符号，不应吸入。",
-          "ku": "Madeyên jehrîn (jehrîn) sembola serjê hildigirin û divê neyên hilgirtin."
+          "ku": "Madeyên jehrî (toksîk) sembola qafa serî hildigirin û divê neyên hilmijandin."
         },
         {
           "tr": "Analitik kimya karbon temelli polimerleri sentezleyen daldır.",
@@ -1966,7 +1966,7 @@ export const unit01: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Ядовитые (токсичные) вещества имеют символ черепа, и их нельзя вдыхать.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"المواد السامة (السامة) تحمل رمز الجمجمة ويجب عدم استنشاقها.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“有毒（有毒）物质带有骷髅符号，不应吸入。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Madeyên jehrîn (jehrîn) sembola serjê hildigirin û divê neyên hilgirtin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Madeyên jehrî (toksîk) sembola qafa serî hildigirin û divê neyên hilmijandin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -2010,7 +2010,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Известняк CaO представляет собой то же соединение, что и негашеная известь.",
           "ar": "الحجر الجيري CaO هو نفس مركب الجير الحي.",
           "zh": "石灰石 CaO 与生石灰是相同的化合物。",
-          "ku": "Kevirê kilsinî CaO heman pêkhatî ye wekî kilê zû."
+          "ku": "Kevirê kilsê CaO ye û bi kilsa nevemirî re heman pêkhate ye."
         },
         {
           "tr": "Biyokimya endüstriyel metal alaşımlarını inceler.",
@@ -2020,7 +2020,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Биохимия изучает промышленные металлические сплавы.",
           "ar": "تدرس الكيمياء الحيوية السبائك المعدنية الصناعية.",
           "zh": "生物化学研究工业金属合金。",
-          "ku": "Biyokîmya aligirên metal ên pîşesaziyê lêkolîn dike."
+          "ku": "Biyokîmya alyajên metal ên pîşesaziyê lêkolîn dike."
         },
         {
           "tr": "Asit üzerine su dökülmez; aşırı ısı açığa çıkıp sıçramaması için su üzerine yavaşça asit eklenir.",
@@ -2106,7 +2106,7 @@ export const unit01: ChemistryUnitSeedData = {
           "ru": "Восклицательный знак обозначает взрывоопасные вещества.",
           "ar": "يمثل رسم التعجب المواد المتفجرة.",
           "zh": "感叹号象形图代表爆炸性物质。",
-          "ku": "Pîktograma qîrînê madeyên teqemenî nîşan dide."
+          "ku": "Pîktograma nîşana bangkirinê (!) madeyên teqemenî nîşan dide."
         }
       ],
       "correctIndex": 0,

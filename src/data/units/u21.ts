@@ -19,25 +19,25 @@ export const unit21: ChemistryUnitSeedData = {
   "subtitle": {
     "tr": "Yükseltgenme Basamağı, Daniell Pili ve Nernst Eşitliği",
     "en": "Oxidation States, Daniell Cell & Nernst Equation",
-    "de": "Oxidationsschritt, Daniell-Zelle und Nernst-Gleichung",
-    "fr": "Étape d'oxydation, cellule de Daniell et équation de Nernst",
-    "ru": "Стадия окисления, ячейка Даниэля и уравнение Нернста",
-    "ar": "خطوة الأكسدة، خلية دانييل ومعادلة نيرنست",
-    "zh": "氧化步骤、丹尼尔盒和能斯特方程",
-    "ku": "Pêngava Oksîdasyonê, Hucreya Daniell û Wekheviya Nernst"
+    "de": "Oxidationszahlen, Daniell-Element und Nernst-Gleichung",
+    "fr": "Nombres d'oxydation, pile Daniell et équation de Nernst",
+    "ru": "Степени окисления, элемент Даниэля и уравнение Нернста",
+    "ar": "أعداد التأكسد، خلية دانيال ومعادلة نيرنست",
+    "zh": "氧化数、丹尼尔电池与能斯特方程",
+    "ku": "Hejmarên Oksîdasyonê, Pîla Daniell û Hevkêşeya Nernst"
   },
   "facts": [
     {
       "id": "u21-f01",
       "fact": {
         "tr": "Redoks tepkimelerinde elektron veren madde yükseltgenir (indirgendir); elektron alan madde indirgenir (yükseltgendir).",
-        "en": "In redox reactions, the substance donating electrons is oxidized (reduced); The substance that accepts electrons is reduced (oxidizing).",
-        "de": "Bei Redoxreaktionen wird der elektronenspendende Stoff oxidiert (reduziert); Der Stoff, der Elektronen aufnimmt, wird reduziert (oxidierend).",
-        "fr": "Dans les réactions redox, la substance donneuse d'électrons est oxydée (réduite) ; La substance qui accepte les électrons est réduite (oxydante).",
-        "ru": "В окислительно-восстановительных реакциях вещество, отдающее электроны, окисляется (восстанавливается); Вещество, принимающее электроны, восстанавливается (окисляется).",
-        "ar": "في تفاعلات الأكسدة والاختزال، تتأكسد (تخفض) المادة المانحة للإلكترونات؛ يتم اختزال المادة التي تقبل الإلكترونات (المؤكسدة).",
-        "zh": "在氧化还原反应中，提供电子的物质被氧化（还原）；接受电子的物质被还原（氧化）。",
-        "ku": "Di reaksiyonên redoksê de, maddeya ku elektron dide oksîdan (kêm kirin); Madeya ku elektronan qebûl dike kêm dibe (oksîdan)."
+        "en": "In redox reactions, the substance that loses electrons is oxidized (it is the reducing agent); the substance that gains electrons is reduced (it is the oxidizing agent).",
+        "de": "Bei Redoxreaktionen wird der Stoff, der Elektronen abgibt, oxidiert (er ist das Reduktionsmittel); der Stoff, der Elektronen aufnimmt, wird reduziert (er ist das Oxidationsmittel).",
+        "fr": "Dans les réactions redox, l'espèce qui cède des électrons est oxydée (c'est le réducteur) ; l'espèce qui capte des électrons est réduite (c'est l'oxydant).",
+        "ru": "В окислительно-восстановительных реакциях вещество, отдающее электроны, окисляется (является восстановителем); вещество, принимающее электроны, восстанавливается (является окислителем).",
+        "ar": "في تفاعلات الأكسدة والاختزال، المادة التي تفقد الإلكترونات تتأكسد (وهي العامل المختزل)؛ والمادة التي تكتسب الإلكترونات تُختزل (وهي العامل المؤكسد).",
+        "zh": "在氧化还原反应中，失去电子的物质被氧化（是还原剂）；得到电子的物质被还原（是氧化剂）。",
+        "ku": "Di reaksiyonên redoksê de, madeya ku elektronan dide oksîd dibe (ew reduktant e); madeya ku elektronan distîne kêm dibe (ew oksîdant e)."
       },
       "trap": {
         "tr": "Elektron alan madde yükseltgenmiştir.",
@@ -53,14 +53,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-f02",
       "fact": {
-        "tr": "Galvanik pilde ANOTTA daima YÜKSELTGENME, KATOTTA daima İNDİRGENME gerçekleşir (KİMYA: Katotta İndirgenme, Mayot/Anotta Yükseltgenme).",
-        "en": "In a galvanic battery, OXIDATION always occurs at the ANODE, and REDUCTION always occurs at the CATHODE (CHEMISTRY: Reduction at the Cathode, Oxidation at the Mayode/Anode).",
-        "de": "In einer galvanischen Batterie findet die OXIDATION immer an der ANODE und die REDUKTION immer an der KATHODE statt (CHEMIE: Reduktion an der Kathode, Oxidation an der Mayode/Anode).",
-        "fr": "Dans une batterie galvanique, l'OXYDATION se produit toujours à l'ANODE, et la RÉDUCTION se produit toujours à la CATHODE (CHIMIE : Réduction à la Cathode, Oxydation à la Mayode/Anode).",
-        "ru": "В гальванической батарее ОКИСЛЕНИЕ всегда происходит на АНОДЕ, а ВОССТАНОВЛЕНИЕ всегда происходит на КАТОДЕ (ХИМИЯ: восстановление на катоде, окисление на майоде/аноде).",
-        "ar": "في البطارية الغلفانية، تحدث الأكسدة دائمًا عند الأنود، ويحدث التخفيض دائمًا عند الكاثود (الكيمياء: الاختزال عند الكاثود، والأكسدة عند المايود/الأنود).",
-        "zh": "在原电池中，氧化总是发生在阳极，还原总是发生在阴极（化学：阴极还原，梅奥德/阳极氧化）。",
-        "ku": "Di pîlê galvanîk de, OXÎDasyon her tim li ANODÊ, û KÊMKIRINA her tim li KATODÊ pêk tê (KÎMÎ: Kêmkirin li Katodê, Oksîdasyon li Mayode/Anodê)."
+        "tr": "Galvanik pilde ANOTTA daima YÜKSELTGENME, KATOTTA daima İNDİRGENME gerçekleşir (kısaca: Anot–Yükseltgenme, Katot–İndirgenme).",
+        "en": "In a galvanic cell, OXIDATION always occurs at the ANODE and REDUCTION always occurs at the CATHODE (in short: Anode–Oxidation, Cathode–Reduction).",
+        "de": "In einer galvanischen Zelle findet an der ANODE stets die OXIDATION und an der KATHODE stets die REDUKTION statt (kurz: Anode–Oxidation, Kathode–Reduktion).",
+        "fr": "Dans une pile galvanique, l'OXYDATION a toujours lieu à l'ANODE et la RÉDUCTION toujours à la CATHODE (en bref : Anode–Oxydation, Cathode–Réduction).",
+        "ru": "В гальваническом элементе на АНОДЕ всегда происходит ОКИСЛЕНИЕ, а на КАТОДЕ всегда ВОССТАНОВЛЕНИЕ (кратко: анод – окисление, катод – восстановление).",
+        "ar": "في الخلية الجلفانية تحدث الأكسدة دائمًا عند الأنود ويحدث الاختزال دائمًا عند الكاثود (باختصار: أنود–أكسدة، كاثود–اختزال).",
+        "zh": "在原电池中，阳极（负极）总是发生氧化反应，阴极（正极）总是发生还原反应（简记：阳极—氧化，阴极—还原）。",
+        "ku": "Di pîla galvanîk de li ANODÊ her tim OKSÎDASYON, li KATODÊ her tim REDUKSIYON pêk tê (bi kurtî: Anod–Oksîdasyon, Katod–Reduksiyon)."
       },
       "trap": {
         "tr": "Anotta indirgenme gerçekleşir.",
@@ -68,22 +68,22 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "An der Anode findet die Reduktion statt.",
         "fr": "La réduction a lieu à l'anode.",
         "ru": "Восстановление происходит на аноде.",
-        "ar": "يحدث التخفيض عند الأنود.",
+        "ar": "يحدث الاختزال عند الأنود.",
         "zh": "还原发生在阳极。",
-        "ku": "Kêmkirin li anode pêk tê."
+        "ku": "Reduksiyon li anodê pêk tê."
       }
     },
     {
       "id": "u21-f03",
       "fact": {
         "tr": "Tuz köprüsündeki ANYONLAR ANODA, KATYONLAR KATODA göç ederek yük denkliğini sağlar.",
-        "en": "ANIONS in the salt bridge migrate to the ANODE and CATIONS migrate to the CATHOD and ensure charge balance.",
+        "en": "ANIONS in the salt bridge migrate to the ANODE and CATIONS to the CATHODE, maintaining charge balance.",
         "de": "ANIONEN in der Salzbrücke wandern zur ANODE und KATIONEN wandern zur KATHODE und sorgen für den Ladungsausgleich.",
-        "fr": "Les ANIONS dans le pont salin migrent vers l'ANODE et les CATIONS migrent vers la CATHOD et assurent l'équilibre des charges.",
+        "fr": "Les ANIONS du pont salin migrent vers l'ANODE et les CATIONS vers la CATHODE, ce qui assure l'équilibre des charges.",
         "ru": "АНИОНЫ в солевом мостике мигрируют к АНОДУ, а КАТИОНЫ мигрируют к КАТОДУ и обеспечивают баланс заряда.",
-        "ar": "تهاجر الأنيونات الموجودة في جسر الملح إلى الأنود وتهاجر الكاتيونات إلى الكاثود وتضمن توازن الشحن.",
+        "ar": "تهاجر الأنيونات في القنطرة الملحية نحو الأنود والكاتيونات نحو الكاثود فتحافظ على توازن الشحنات.",
         "zh": "盐桥中的阴离子迁移到阳极，阳离子迁移到阴极并确保电荷平衡。",
-        "ku": "ANIONÊN di pira xwê de ber bi ANODEyê û CATIONS koçî CATHODê dikin û hevsengiya barkirinê misoger dikin."
+        "ku": "ANYONÊN di pira xwê de ber bi ANODÊ, KATYON jî ber bi KATODÊ ve koç dikin û hevsengiya barê diparêzin."
       },
       "trap": {
         "tr": "Tuz köprüsündeki anyonlar katoda gider.",
@@ -100,46 +100,46 @@ export const unit21: ChemistryUnitSeedData = {
       "id": "u21-f04",
       "fact": {
         "tr": "Standart pil potansiyeli: E°pil = E°yüks(anot) + E°ind(katot) tur; E°pil > 0 ise tepkime istemlidir.",
-        "en": "Standard battery potential: E°battery = E°high(anode) + E°ind(cathode); If E°pil > 0, the reaction is voluntary.",
-        "de": "Standardbatteriepotential: E°Batterie = E°hoch(Anode) + E°ind(Kathode); Wenn E°pil > 0 ist, ist die Reaktion freiwillig.",
-        "fr": "Potentiel de batterie standard : E°batterie = E°haut (anode) + E°ind (cathode) ; Si E°pil > 0, la réaction est volontaire.",
-        "ru": "Стандартный потенциал батареи: E°battery = E°high(анод) + E°ind(катод); Если E°pil > 0, реакция является произвольной.",
-        "ar": "إمكانات البطارية القياسية: E°battery = E°high(anode) + E°ind(catode); إذا كان E°pil > 0، فإن التفاعل يكون إراديًا.",
-        "zh": "标准电池电位：E°电池=E°high（阳极）+E°ind（阴极）；如果 E°pil > 0，则反应是自愿的。",
-        "ku": "Potansiyela bataryayê ya standard: E°baterî = E°bilind(anode) + E°ind(katod); Ger E°pil > 0, reaksîyon bi dilxwazî ​​ye."
+        "en": "Standard cell potential: E°cell = E°ox(anode) + E°red(cathode); if E°cell > 0, the reaction is spontaneous.",
+        "de": "Standardzellpotential: E°Zelle = E°Ox(Anode) + E°Red(Kathode); ist E°Zelle > 0, verläuft die Reaktion freiwillig (spontan).",
+        "fr": "Potentiel standard de pile : E°pile = E°ox(anode) + E°réd(cathode) ; si E°pile > 0, la réaction est spontanée.",
+        "ru": "Стандартный потенциал элемента: E°эл = E°ок(анод) + E°восст(катод); если E°эл > 0, реакция протекает самопроизвольно.",
+        "ar": "جهد الخلية القياسي: E°خلية = E°تأكسد(الأنود) + E°اختزال(الكاثود)؛ إذا كان E°خلية > 0 فالتفاعل تلقائي.",
+        "zh": "标准电池电势：E°电池 = E°氧化(阳极) + E°还原(阴极)；若 E°电池 > 0，则反应自发进行。",
+        "ku": "Potansiyela standard a pîlê: E°pîl = E°oks(anod) + E°red(katod); heke E°pîl > 0 be, reaksiyon xweber e."
       },
       "trap": {
         "tr": "E°pil negatif olduğunda pil kendiliğinden çalışır ve elektrik üretir.",
-        "en": "When E°battery is negative, the battery works on its own and produces electricity.",
-        "de": "Wenn die E°-Batterie negativ ist, arbeitet die Batterie selbstständig und produziert Strom.",
-        "fr": "Lorsque E°batterie est négatif, la batterie fonctionne toute seule et produit de l'électricité.",
-        "ru": "Когда E°battery имеет отрицательное значение, батарея работает сама по себе и производит электричество.",
-        "ar": "عندما تكون البطارية E سالبة، تعمل البطارية من تلقاء نفسها وتنتج الكهرباء.",
-        "zh": "当E°电池为负极时，电池自行工作并产生电力。",
-        "ku": "Dema ku batarya E° neyînî be, pîlê bi serê xwe dixebite û elektrîkê çêdike."
+        "en": "When E°cell is negative, the cell works by itself and produces electricity.",
+        "de": "Wenn E°Zelle negativ ist, arbeitet die Zelle von selbst und erzeugt elektrischen Strom.",
+        "fr": "Lorsque E°pile est négatif, la pile fonctionne d'elle-même et produit de l'électricité.",
+        "ru": "Когда E°эл отрицателен, элемент работает самопроизвольно и вырабатывает электричество.",
+        "ar": "عندما يكون E°خلية سالبًا تعمل الخلية تلقائيًا وتنتج الكهرباء.",
+        "zh": "当 E°电池 为负值时，电池能自发工作并产生电能。",
+        "ku": "Dema E°pîl neyînî be, pîl bi xwe dixebite û elektrîkê çêdike."
       }
     },
     {
       "id": "u21-f05",
       "fact": {
-        "tr": "Standart Hidrojen Elektrodu (SHE): 25 °C, 1 atm H2 gazı ve 1 M H+ çözeltisi içerir; potansiyeli 0.00 V kabul edilir.",
+        "tr": "Standart Hidrojen Elektrodu (SHE): 25 °C, 1 atm H2 gazı ve 1 M H+ çözeltisi içerir; potansiyeli 0,00 V kabul edilir.",
         "en": "Standard Hydrogen Electrode (SHE): 25 °C, contains 1 atm H2 gas and 1 M H+ solution; potential is accepted as 0.00 V.",
         "de": "Standard-Wasserstoffelektrode (SHE): 25 °C, enthält 1 atm H2-Gas und 1 M H+-Lösung; Das Potential wird mit 0,00 V angenommen.",
         "fr": "Électrode à hydrogène standard (SHE) : 25 °C, contient 1 atm de gaz H2 et 1 M de solution H+ ; le potentiel est accepté comme 0,00 V.",
         "ru": "Стандартный водородный электрод (SHE): 25 °C, содержит 1 атм газа H2 и 1 M раствор H+; потенциал принимается равным 0,00 В.",
-        "ar": "قطب الهيدروجين القياسي (SHE): 25 درجة مئوية، يحتوي على 1 atm H2 غاز ومحلول 1 MH+؛ يتم قبول الإمكانات على أنها 0.00 فولت.",
+        "ar": "قطب الهيدروجين القياسي (SHE): عند 25 °C يحتوي على غاز H2 تحت ضغط 1 atm ومحلول H+ تركيزه 1 M؛ ويُعتبر جهده 0.00 V.",
         "zh": "标准氢电极（SHE）：25℃，含有1atm H2气体和1M H+溶液；电位接受为 0.00 V。",
-        "ku": "Elektroda Hîdrojen a Standard (SHE): 25 °C, 1 atm gaza H2 û çareseriya 1 M H+ heye; potansiyel wekî 0.00 V tê pejirandin."
+        "ku": "Elektroda Hîdrojenê ya Standard (SHE): li 25 °C gaza H2 ya 1 atm û çareseriya H+ ya 1 M dihewîne; potansiyela wê 0,00 V tê qebûlkirin."
       },
       "trap": {
-        "tr": "Standart hidrojen elektrodunun gerilimi 1.00 V tur.",
+        "tr": "Standart hidrojen elektrodunun gerilimi 1,00 V tur.",
         "en": "The voltage of the standard hydrogen electrode is 1.00 V.",
         "de": "Die Spannung der Standard-Wasserstoffelektrode beträgt 1,00 V.",
         "fr": "La tension de l'électrode à hydrogène standard est de 1,00 V.",
         "ru": "Напряжение стандартного водородного электрода составляет 1,00 В.",
         "ar": "جهد قطب الهيدروجين القياسي هو 1.00 V.",
         "zh": "标准氢电极的电压为1.00V。",
-        "ku": "Voltaja elektroda hîdrojenê ya standard 1.00 V e."
+        "ku": "Voltaja elektroda hîdrojenê ya standard 1,00 V e."
       }
     },
     {
@@ -150,42 +150,42 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "Das Metall mit der größeren Aktivität ist die Anode (das Metall mit dem größeren Oxidationspotential wird zur Anode).",
         "fr": "Le métal ayant la plus grande activité est l'anode (le métal ayant le plus grand potentiel d'oxydation devient l'anode).",
         "ru": "Металл с большей активностью является анодом (анодом становится металл с большим окислительным потенциалом).",
-        "ar": "المعدن ذو النشاط الأكبر هو الأنود (المعدن الذي يتمتع بقدرة أكسدة أكبر يصبح الأنود).",
+        "ar": "الفلز الأكثر نشاطًا هو الأنود (الفلز ذو جهد التأكسد الأكبر يكون الأنود).",
         "zh": "活性较大的金属是阳极（氧化电位较大的金属成为阳极）。",
-        "ku": "Metala bi çalakiyek mezintir anod e (metalê ku potansiyela oksîdasyonê mezintir dibe anod)."
+        "ku": "Metala çalaktir anod e (metala ku potansiyela wê ya oksîdasyonê mezintir e dibe anod)."
       },
       "trap": {
         "tr": "İndirgenme potansiyeli büyük olan metal anot kutbudur.",
-        "en": "It is the metal anode pole with high reduction potential.",
-        "de": "Es ist der Metallanodenpol mit hohem Reduktionspotential.",
-        "fr": "C'est le pôle anode métallique à haut potentiel de réduction.",
-        "ru": "Это металлический анод с высоким восстановительным потенциалом.",
-        "ar": "إنه قطب الأنود المعدني ذو إمكانية التخفيض العالية.",
-        "zh": "它是具有高还原电位的金属阳极极。",
-        "ku": "Ew pola anodê ya metal e ku bi potansiyela kêmkirina bilind e."
+        "en": "The metal with the greater reduction potential is the anode.",
+        "de": "Das Metall mit dem größeren Reduktionspotential ist die Anode.",
+        "fr": "Le métal ayant le plus grand potentiel de réduction est l'anode.",
+        "ru": "Металл с большим потенциалом восстановления является анодом.",
+        "ar": "الفلز ذو جهد الاختزال الأكبر هو الأنود.",
+        "zh": "还原电势较大的金属是阳极。",
+        "ku": "Metala ku potansiyela wê ya reduksiyonê mezintir e anod e."
       }
     },
     {
       "id": "u21-f07",
       "fact": {
         "tr": "Pil çalıştıkça anot elektrot kütlesi genellikle aşınarak azalır; katot elektrot üzerinde madde toplanır kütlesi artar.",
-        "en": "As the battery operates, the anode electrode mass generally decreases through wear; As matter accumulates on the cathode electrode, its mass increases.",
-        "de": "Während die Batterie in Betrieb ist, nimmt die Masse der Anodenelektrode im Allgemeinen durch Verschleiß ab; Wenn sich Materie an der Kathodenelektrode ansammelt, nimmt deren Masse zu.",
-        "fr": "Au fur et à mesure que la batterie fonctionne, la masse de l'électrode anodique diminue généralement à cause de l'usure ; À mesure que la matière s’accumule sur l’électrode cathodique, sa masse augmente.",
-        "ru": "Во время работы батареи масса анодного электрода обычно уменьшается из-за износа; По мере накопления вещества на катодном электроде его масса увеличивается.",
-        "ar": "أثناء تشغيل البطارية، تنخفض كتلة القطب الكهربائي بشكل عام من خلال التآكل؛ ومع تراكم المادة على القطب السالب، تزداد كتلتها.",
-        "zh": "当电池工作时，阳极电极质量通常会因磨损而减少；随着物质在阴极上积聚，其质量会增加。",
-        "ku": "Gava ku pîlê kar dike, girseya elektrodê anodê bi gelemperî bi cilê kêm dibe; Her ku madde li ser elektroda katodê kom dibe, girseya wê zêde dibe."
+        "en": "As the cell operates, the mass of the anode electrode usually decreases as it is consumed; substance deposits on the cathode electrode and its mass increases.",
+        "de": "Während die Zelle arbeitet, nimmt die Masse der Anode meist ab, da sie sich auflöst; an der Kathode scheidet sich Stoff ab und ihre Masse nimmt zu.",
+        "fr": "Pendant le fonctionnement de la pile, la masse de l'anode diminue généralement car elle se dissout ; de la matière se dépose sur la cathode, dont la masse augmente.",
+        "ru": "При работе элемента масса анода обычно уменьшается, так как он растворяется; на катоде осаждается вещество, и его масса увеличивается.",
+        "ar": "أثناء عمل الخلية تنقص كتلة قطب الأنود عادةً لأنه يتآكل، وتترسب المادة على قطب الكاثود فتزداد كتلته.",
+        "zh": "电池工作时，阳极因溶解而质量通常减小；物质在阴极上沉积，阴极质量增加。",
+        "ku": "Dema pîl dixebite, girseya anodê bi gelemperî kêm dibe ji ber ku dihele; li ser katodê made kom dibe û girseya wê zêde dibe."
       },
       "trap": {
         "tr": "Pil çalıştıkça anot elektrotun kütlesi katlanır.",
-        "en": "As the battery operates, the mass of the anode electrode increases.",
-        "de": "Während die Batterie in Betrieb ist, nimmt die Masse der Anodenelektrode zu.",
-        "fr": "Au fur et à mesure que la batterie fonctionne, la masse de l'électrode anodique augmente.",
-        "ru": "По мере работы аккумулятора масса анодного электрода увеличивается.",
-        "ar": "ومع تشغيل البطارية، تزداد كتلة القطب الموجب.",
-        "zh": "随着电池的工作，阳极电极的质量增加。",
-        "ku": "Her ku pîlê kar dike, girseya elektrodê anode zêde dibe."
+        "en": "As the cell operates, the mass of the anode electrode increases.",
+        "de": "Während die Zelle arbeitet, nimmt die Masse der Anode zu.",
+        "fr": "Pendant le fonctionnement de la pile, la masse de l'anode augmente.",
+        "ru": "При работе элемента масса анода увеличивается.",
+        "ar": "أثناء عمل الخلية تزداد كتلة قطب الأنود.",
+        "zh": "电池工作时，阳极质量增加。",
+        "ku": "Dema pîl dixebite, girseya anodê zêde dibe."
       }
     },
     {
@@ -237,7 +237,7 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-f10",
       "fact": {
-        "tr": "Nernst Eşitliği: Epil = E°pil - (0.0592 / n) * log Q dur (n: aktarılan elektron mol sayısı, Q: anot/katot derişim oranı).",
+        "tr": "Nernst Eşitliği: Epil = E°pil - (0,0592 / n) * log Q dur (n: aktarılan elektron mol sayısı, Q: anot/katot derişim oranı).",
         "en": "Nernst Equation: Epil = E°pil - (0.0592 / n) * log Q (n: number of electron moles transferred, Q: anode/cathode concentration ratio).",
         "de": "Nernst-Gleichung: Epil = E°pil - (0,0592 / n) * log Q (n: Anzahl der übertragenen Elektronenmole, Q: Konzentrationsverhältnis Anode/Kathode).",
         "fr": "Equation de Nernst : Epil = E°pil - (0,0592 / n) * log Q (n : nombre de moles électroniques transférées, Q : rapport de concentration anode/cathode).",
@@ -267,7 +267,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Концентрационные батареи: устанавливаются с одним и тем же электродом и разными концентрациями одних и тех же растворов; Полуэлемент с небольшой концентрацией – АНОД.",
         "ar": "بطاريات التركيز: يتم إنشاؤها بنفس القطب وتركيزات مختلفة لنفس المحاليل؛ نصف الخلية ذات التركيز الصغير هو الأنود.",
         "zh": "浓差电池：用相同的电极和不同浓度的相同溶液建立的；浓度小的半电池为阳极。",
-        "ku": "Batteries Concentration: Ew bi heman elektrodê û kêşeyên cûda yên heman çareseriyê têne saz kirin; Nîv-şaneya bi konsantreya piçûk ANODE ye."
+        "ku": "Pîlên tîrbûnê: bi heman elektrodê û bi tîrbûnên cuda yên heman çareseriyê têne sazkirin; nîvhucreya ku tîrbûna wê kêmtir e ANOD e."
       },
       "trap": {
         "tr": "Derişim pillerinde derişimi büyük olan hücre anottur.",
@@ -277,7 +277,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "В концентрационных батареях анодом является элемент с наибольшей концентрацией.",
         "ar": "في بطاريات التركيز، الخلية ذات التركيز الأعلى هي الأنود.",
         "zh": "在浓差电池中，浓度最高的电池是阳极。",
-        "ku": "Di bataryayên konsantrekirinê de, şaneya ku herî zêde giranî lê heye anode ye."
+        "ku": "Di pîlên tîrbûnê de hucreya ku tîrbûna wê mezintir e anod e."
       }
     },
     {
@@ -290,7 +290,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Когда концентрации в концентрационной батарее выравниваются, система достигает равновесия и напряжение батареи становится Epil = 0 (батарея разряжается).",
         "ar": "عندما تتساوى التركيزات في بطارية التركيز، يصل النظام إلى التوازن ويصبح جهد البطارية Epil = 0 (نفاد البطارية).",
         "zh": "当浓差电池中的浓度均衡时，系统达到平衡，电池电压变为Epil = 0（电池耗尽）。",
-        "ku": "Dema ku tansiyonên di pîlê komandî de wekhev dibin, pergal digihîje hevsengiyê û voltaja pîlê dibe Epil = 0 (baterî diqede)."
+        "ku": "Di pîla tîrbûnê de dema tîrbûn wekhev dibin, sîstem digihîje hevsengiyê û voltaja pîlê dibe Epîl = 0 (pîl diqede)."
       },
       "trap": {
         "tr": "Derişimler eşitlendiğinde pil gerilimi maksimuma ulaşır.",
@@ -306,37 +306,37 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-f13",
       "fact": {
-        "tr": "Pil tepkimeleri ekzotermik denge tepkimeleridir; sıcaklık artırılırsa Le Chatelier gereği denge sola kayar ve pil gerilimi düşer.",
-        "en": "Battery reactions are exothermic equilibrium reactions; If the temperature is increased, the equilibrium shifts to the left and the battery voltage decreases, according to Le Chatelier.",
-        "de": "Batteriereaktionen sind exotherme Gleichgewichtsreaktionen; Steigt die Temperatur, verschiebt sich das Gleichgewicht nach links und die Batteriespannung sinkt, so Le Chatelier.",
-        "fr": "Les réactions de batterie sont des réactions d'équilibre exothermiques ; Si la température augmente, l'équilibre se déplace vers la gauche et la tension de la batterie diminue, selon Le Chatelier.",
-        "ru": "Реакции батареи представляют собой экзотермические равновесные реакции; По словам Ле Шателье, если температура повышается, равновесие смещается влево и напряжение батареи снижается.",
-        "ar": "تفاعلات البطارية هي تفاعلات توازن طاردة للحرارة؛ إذا ارتفعت درجة الحرارة، ينتقل التوازن إلى اليسار وينخفض ​​جهد البطارية، وفقًا لما ذكره لو شاتيليه.",
-        "zh": "电池反应为放热平衡反应； Le Chatelier 表示，如果温度升高，平衡就会向左移动，电池电压就会降低。",
-        "ku": "Reaksiyonên bataryayê reaksiyonên hevsengiya exotermîk in; Ger germahî zêde bibe, hevsengî ber bi çepê ve diçe û voltaja pîlê kêm dibe, li gorî Le Chatelier."
+        "tr": "Pil tepkimeleri genellikle ekzotermiktir; ekzotermik bir pil tepkimesinde sıcaklık artırılırsa Le Chatelier ilkesine göre denge sola kayar ve pil gerilimi düşer.",
+        "en": "Cell reactions are usually exothermic; for an exothermic cell reaction, raising the temperature shifts the equilibrium to the left (Le Chatelier's principle) and the cell voltage decreases.",
+        "de": "Zellreaktionen sind meist exotherm; wird bei einer exothermen Zellreaktion die Temperatur erhöht, verschiebt sich das Gleichgewicht nach dem Prinzip von Le Chatelier nach links und die Zellspannung sinkt.",
+        "fr": "Les réactions de pile sont généralement exothermiques ; pour une réaction de pile exothermique, une hausse de température déplace l'équilibre vers la gauche (principe de Le Chatelier) et la tension de la pile diminue.",
+        "ru": "Реакции в гальванических элементах обычно экзотермичны; при повышении температуры для экзотермической реакции равновесие по принципу Ле Шателье смещается влево и напряжение элемента уменьшается.",
+        "ar": "تفاعلات الخلايا غالبًا طاردة للحرارة؛ وفي تفاعل خلية طارد للحرارة يؤدي رفع درجة الحرارة إلى إزاحة الاتزان نحو اليسار (مبدأ لوشاتلييه) فينخفض جهد الخلية.",
+        "zh": "电池反应通常是放热反应；对放热的电池反应，升高温度时根据勒夏特列原理平衡向左移动，电池电压降低。",
+        "ku": "Reaksiyonên pîlê bi gelemperî ekzotermîk in; di reaksiyoneke pîlê ya ekzotermîk de heke germahî zêde bibe, li gorî prensîba Le Chatelier hevsengî ber bi çepê ve diçe û voltaja pîlê kêm dibe."
       },
       "trap": {
-        "tr": "Pil ısıtıldığında gerilimi artar ve daha çok akım üretir.",
-        "en": "When the battery is heated, its voltage increases and it produces more current.",
-        "de": "Wenn sich die Batterie erwärmt, erhöht sich ihre Spannung und sie erzeugt mehr Strom.",
-        "fr": "Lorsque la batterie chauffe, sa tension augmente et elle produit plus de courant.",
-        "ru": "Когда аккумулятор нагревается, его напряжение увеличивается и он производит больший ток.",
-        "ar": "عندما يتم تسخين البطارية، يزداد جهدها وينتج تيارًا أكبر.",
-        "zh": "当电池受热时，其电压会增加并产生更多电流。",
-        "ku": "Dema ku pîlê tê germ kirin, voltaja wê zêde dibe û herik zêde çêdike."
+        "tr": "Ekzotermik bir pil tepkimesinde sıcaklık artırılırsa pil gerilimi artar.",
+        "en": "For an exothermic cell reaction, raising the temperature increases the cell voltage.",
+        "de": "Bei einer exothermen Zellreaktion steigt die Zellspannung, wenn die Temperatur erhöht wird.",
+        "fr": "Pour une réaction de pile exothermique, une hausse de température augmente la tension de la pile.",
+        "ru": "Для экзотермической реакции в элементе повышение температуры увеличивает напряжение элемента.",
+        "ar": "في تفاعل خلية طارد للحرارة، يؤدي رفع درجة الحرارة إلى زيادة جهد الخلية.",
+        "zh": "对放热的电池反应，升高温度会使电池电压升高。",
+        "ku": "Di reaksiyoneke pîlê ya ekzotermîk de, zêdekirina germahiyê voltaja pîlê zêde dike."
       }
     },
     {
       "id": "u21-f14",
       "fact": {
         "tr": "Pil denklemi bir katsayı ile çarpılırsa E°pil değeri DEĞİŞMEZ (potansiyel şiddet özelliğidir).",
-        "en": "If the battery equation is multiplied by a coefficient, the E°battery value WILL NOT change (it is the potential intensity characteristic).",
-        "de": "Wenn die Batteriegleichung mit einem Koeffizienten multipliziert wird, ändert sich der E°-Batteriewert NICHT (es ist die potenzielle Intensitätseigenschaft).",
-        "fr": "Si l'équation de la batterie est multipliée par un coefficient, la valeur E°batterie NE changera PAS (c'est la caractéristique d'intensité potentielle).",
-        "ru": "Если уравнение батареи умножить на коэффициент, значение E° батареи НЕ изменится (это характеристика потенциальной интенсивности).",
-        "ar": "إذا تم ضرب معادلة البطارية بمعامل، فلن تتغير قيمة البطارية E (وهي خاصية الكثافة المحتملة).",
-        "zh": "如果电池方程乘以一个系数，E°电池值不会改变（它是电位强度特性）。",
-        "ku": "Ger hevkêşana bataryayê bi hevberek were zêdekirin, nirxa bataryayê E° DÊ NE guherî (ew taybetmendiya tundiya potansiyel e)."
+        "en": "If the cell equation is multiplied by a coefficient, the E°cell value does NOT change (potential is an intensive property).",
+        "de": "Wird die Zellgleichung mit einem Faktor multipliziert, ändert sich E°Zelle NICHT (das Potential ist eine intensive Größe).",
+        "fr": "Si l'équation de la pile est multipliée par un coefficient, la valeur de E°pile ne change PAS (le potentiel est une grandeur intensive).",
+        "ru": "Если уравнение реакции элемента умножить на коэффициент, значение E°эл НЕ изменяется (потенциал — интенсивная величина).",
+        "ar": "إذا ضُربت معادلة الخلية في معامل فإن قيمة E°خلية لا تتغير (الجهد خاصية مكثفة).",
+        "zh": "电池反应方程式乘以某个系数时，E°电池 的值不变（电势是强度性质）。",
+        "ku": "Heke hevkêşeya pîlê bi katsayiyekê were zêdekirin, nirxa E°pîl NAGUHERE (potansiyel taybetmendiyeke întensîf e)."
       },
       "trap": {
         "tr": "Tepkime 2 ile çarpılırsa E°pil de 2 ile çarpılır.",
@@ -375,14 +375,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-f16",
       "fact": {
-        "tr": "Daniell pilinde Zn anot (Zn -> Zn2+ + 2e-) ve Cu katottur (Cu2+ + 2e- -> Cu); E°pil = 1.10 V tur.",
-        "en": "In the Daniell battery, Zn is the anode (Zn -> Zn2+ + 2e-) and Cu is the cathode (Cu2+ + 2e- -> Cu); E°battery = 1.10 V.",
-        "de": "In der Daniell-Batterie ist Zn die Anode (Zn -> Zn2+ + 2e-) und Cu die Kathode (Cu2+ + 2e- -> Cu); E°Batterie = 1,10 V.",
-        "fr": "Dans la batterie Daniell, Zn est l'anode (Zn -> Zn2+ + 2e-) et Cu est la cathode (Cu2+ + 2e- -> Cu) ; E°batterie = 1,10 V.",
-        "ru": "В батарее Даниэля Zn является анодом (Zn -> Zn2+ + 2e-), а Cu — катодом (Cu2+ + 2e- -> Cu); E°батареи = 1,10 В.",
-        "ar": "في بطارية دانييل، Zn هو الأنود (Zn -> Zn2+ + 2e-) والنحاس هو الكاثود (Cu2+ + 2e- -> Cu)؛ البطارية الإلكترونية = 1.10 فولت.",
-        "zh": "在丹尼尔电池中，Zn为阳极（Zn -> Zn2+ + 2e-），Cu为阴极（Cu2+ + 2e- -> Cu）； E°电池 = 1.10 V。",
-        "ku": "Di pîlê Daniell de, Zn anode ye (Zn -> Zn2+ + 2e-) û Cu katod e (Cu2+ + 2e- -> Cu); E°baterî = 1,10 V."
+        "tr": "Daniell pilinde Zn anot (Zn → Zn2+ + 2e-) ve Cu katottur (Cu2+ + 2e- → Cu); E°pil = 1,10 V tur.",
+        "en": "In the Daniell battery, Zn is the anode (Zn → Zn2+ + 2e-) and Cu is the cathode (Cu2+ + 2e- → Cu); E°battery = 1.10 V.",
+        "de": "In der Daniell-Batterie ist Zn die Anode (Zn → Zn2+ + 2e-) und Cu die Kathode (Cu2+ + 2e- → Cu); E°Batterie = 1,10 V.",
+        "fr": "Dans la batterie Daniell, Zn est l'anode (Zn → Zn2+ + 2e-) et Cu est la cathode (Cu2+ + 2e- → Cu) ; E°batterie = 1,10 V.",
+        "ru": "В батарее Даниэля Zn является анодом (Zn → Zn2+ + 2e-), а Cu — катодом (Cu2+ + 2e- → Cu); E°батареи = 1,10 В.",
+        "ar": "في خلية دانيال يكون Zn هو الأنود (Zn → Zn2+ + 2e-) ويكون Cu هو الكاثود (Cu2+ + 2e- → Cu)؛ E°خلية = 1.10 V.",
+        "zh": "在丹尼尔电池中，Zn为阳极（Zn → Zn2+ + 2e-），Cu为阴极（Cu2+ + 2e- → Cu）； E°电池 = 1.10 V。",
+        "ku": "Di pîlê Daniell de, Zn anode ye (Zn → Zn2+ + 2e-) û Cu katod e (Cu2+ + 2e- → Cu); E°baterî = 1,10 V."
       },
       "trap": {
         "tr": "Daniell pilinde bakır elektrot anot olarak davranır.",
@@ -425,7 +425,7 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "An der Anode kommt es zu Oxidation und die Elektrodenmasse nimmt ab; An der Kathode findet eine Reduktion statt und die Elektrodenmasse nimmt zu.",
         "fr": "L'oxydation se produit au niveau de l'anode et la masse de l'électrode diminue ; La réduction se produit au niveau de la cathode et la masse de l'électrode augmente.",
         "ru": "На аноде происходит окисление и масса электрода уменьшается; Восстановление происходит на катоде и масса электрода увеличивается.",
-        "ar": "تحدث الأكسدة عند الأنود وتنخفض كتلة القطب. يحدث التخفيض عند الكاثود وتزداد كتلة القطب.",
+        "ar": "عند الأنود تحدث الأكسدة وتنقص كتلة القطب؛ وعند الكاثود يحدث الاختزال وتزداد كتلة القطب.",
         "zh": "阳极发生氧化，电极质量减少；阴极发生还原反应，电极质量增加。",
         "ku": "Oksîdasyon li anodê çêdibe û girseya elektrodê kêm dibe; Li katodê kêmbûn çêdibe û girseya elektrodê zêde dibe."
       }
@@ -444,13 +444,13 @@ export const unit21: ChemistryUnitSeedData = {
       },
       "conceptB": {
         "tr": "Derişim Pili",
-        "en": "Concentration Battery",
-        "de": "Konzentrationsbatterie",
-        "fr": "Batterie de concentration",
-        "ru": "Концентрационная батарея",
-        "ar": "بطارية التركيز",
-        "zh": "浓缩电池",
-        "ku": "Battery Concentration"
+        "en": "Concentration Cell",
+        "de": "Konzentrationselement",
+        "fr": "Pile de concentration",
+        "ru": "Концентрационный элемент",
+        "ar": "خلية التركيز",
+        "zh": "浓差电池",
+        "ku": "Pîla Tîrbûnê"
       },
       "distinction": {
         "tr": "Kimyasal pilde farklı metaller vardır; derişim pilinde aynı metalin farklı derişimleri vardır.",
@@ -466,34 +466,34 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-c03",
       "conceptA": {
-        "tr": "Anot Yarı Hücresi",
-        "en": "Anode Half Cell",
-        "de": "Anodenhalbzelle",
-        "fr": "Demi-cellule d'anode",
-        "ru": "Анодная полуячейка",
-        "ar": "الأنود نصف الخلية",
-        "zh": "阳极半电池",
-        "ku": "Anode Half Cell"
+        "tr": "Standart Hidrojen Elektrodu (SHE)",
+        "en": "Standard Hydrogen Electrode (SHE)",
+        "de": "Standard-Wasserstoffelektrode (SHE)",
+        "fr": "Électrode standard à hydrogène (ESH)",
+        "ru": "Стандартный водородный электрод (СВЭ)",
+        "ar": "قطب الهيدروجين القياسي (SHE)",
+        "zh": "标准氢电极（SHE）",
+        "ku": "Elektroda Hîdrojenê ya Standard (SHE)"
       },
       "conceptB": {
-        "tr": "Katot Yarı Hücresi",
-        "en": "Cathode Half Cell",
-        "de": "Kathodenhalbzelle",
-        "fr": "Demi-cellule cathodique",
-        "ru": "Катодная полуячейка",
-        "ar": "نصف خلية الكاثود",
-        "zh": "阴极半电池",
-        "ku": "Katod Half Cell"
+        "tr": "Standart İndirgenme Potansiyeli (E°ind)",
+        "en": "Standard Reduction Potential (E°red)",
+        "de": "Standardreduktionspotential (E°Red)",
+        "fr": "Potentiel standard de réduction (E°réd)",
+        "ru": "Стандартный потенциал восстановления (E°восст)",
+        "ar": "جهد الاختزال القياسي (E°اختزال)",
+        "zh": "标准还原电势（E°还原）",
+        "ku": "Potansiyela Reduksiyonê ya Standard (E°red)"
       },
       "distinction": {
-        "tr": "Anotta yükseltgenme olur, elektrot aşınır, elektronlar dış devreye verilir; katotta indirgenme olur ve kütle artar.",
-        "en": "Oxidation occurs at the anode, the electrode wears out, electrons are given to the external circuit; Reduction occurs at the cathode and the mass increases.",
-        "de": "An der Anode kommt es zu Oxidation, die Elektrode nutzt sich ab, Elektronen werden an den externen Stromkreis abgegeben; An der Kathode findet eine Reduktion statt und die Masse nimmt zu.",
-        "fr": "L'oxydation se produit à l'anode, l'électrode s'use, des électrons sont cédés au circuit extérieur ; La réduction se produit à la cathode et la masse augmente.",
-        "ru": "На аноде происходит окисление, электрод изнашивается, электроны отдаются во внешнюю цепь; Восстановление происходит на катоде и масса увеличивается.",
-        "ar": "تحدث الأكسدة عند الأنود، ويتآكل القطب، وتنتقل الإلكترونات إلى الدائرة الخارجية؛ يحدث التخفيض عند الكاثود وتزداد الكتلة.",
-        "zh": "阳极发生氧化，电极磨损，电子供给外电路；阴极发生还原，质量增加。",
-        "ku": "Oksîdasyon li anodê çêdibe, elektrod dişewite, elektron li çerxa derve têne dayîn; Kêmkirin li katodê çêdibe û girse zêde dibe."
+        "tr": "SHE, potansiyeli 0,00 V kabul edilen referans elektrottur; standart indirgenme potansiyeli bir yarı hücrenin 25 °C ve 1 M koşullarında SHE'ye karşı ölçülen indirgenme eğilimidir.",
+        "en": "The SHE is the reference electrode whose potential is defined as 0.00 V; the standard reduction potential is a half-cell's tendency to be reduced, measured against the SHE at 25 °C and 1 M.",
+        "de": "Die SHE ist die Bezugselektrode, deren Potential als 0,00 V festgelegt ist; das Standardreduktionspotential ist die gegen die SHE bei 25 °C und 1 M gemessene Reduktionsneigung einer Halbzelle.",
+        "fr": "L'ESH est l'électrode de référence dont le potentiel est fixé à 0,00 V ; le potentiel standard de réduction est la tendance d'une demi-pile à être réduite, mesurée par rapport à l'ESH à 25 °C et 1 M.",
+        "ru": "СВЭ — электрод сравнения, потенциал которого принят равным 0,00 В; стандартный потенциал восстановления — склонность полуэлемента к восстановлению, измеренная относительно СВЭ при 25 °C и 1 M.",
+        "ar": "قطب الهيدروجين القياسي هو القطب المرجعي الذي يُعتبر جهده 0.00 V؛ أما جهد الاختزال القياسي فهو ميل نصف الخلية إلى الاختزال مقيسًا مقابل قطب الهيدروجين القياسي عند 25 °C و 1 M.",
+        "zh": "标准氢电极是电势规定为 0.00 V 的参比电极；标准还原电势是半电池在 25 °C、1 M 条件下相对于标准氢电极测得的被还原倾向。",
+        "ku": "SHE elektroda referansê ye ku potansiyela wê 0,00 V tê qebûlkirin; potansiyela reduksiyonê ya standard meyla nîvhucreyekê ya kêmbûnê ye ku li 25 °C û 1 M li hember SHE tê pîvan."
       }
     },
     {
@@ -519,80 +519,80 @@ export const unit21: ChemistryUnitSeedData = {
         "ku": "Hucreya Elektrolîtîk"
       },
       "distinction": {
-        "tr": "Galvanik pil kimyasal enerjiyi istemli olarak elektrik enerjisine çevirir (Epil > 0); elektroliz elektrikle istemsiz tepkimeyi yürütür.",
-        "en": "The galvanic cell voluntarily converts chemical energy into electrical energy (Epil > 0); Electrolysis drives an involuntary reaction with electricity.",
-        "de": "Die galvanische Zelle wandelt chemische Energie freiwillig in elektrische Energie um (Epil > 0); Die Elektrolyse löst eine unwillkürliche Reaktion mit Elektrizität aus.",
-        "fr": "La cellule galvanique convertit volontairement l'énergie chimique en énergie électrique (Epil > 0) ; L'électrolyse provoque une réaction involontaire avec l'électricité.",
-        "ru": "Гальванический элемент добровольно преобразует химическую энергию в электрическую (Epil > 0); Электролиз вызывает непроизвольную реакцию с электричеством.",
-        "ar": "تقوم الخلية الجلفانية بتحويل الطاقة الكيميائية طوعًا إلى طاقة كهربائية (Epil > 0)؛ يؤدي التحليل الكهربائي إلى تفاعل لا إرادي مع الكهرباء.",
-        "zh": "原电池主动将化学能转化为电能（Epil > 0）；电解会与电发生非自愿反应。",
-        "ku": "Xaneya galvanîk bi dilxwazî enerjiya kîmyewî vediguherîne enerjiya elektrîkê (Epil > 0); Elektrolîz bi elektrîkê re reaksiyonek bê dildar dimeşîne."
+        "tr": "Galvanik hücre kimyasal enerjiyi istemli olarak elektrik enerjisine çevirir (Epil > 0); elektrolitik hücre elektrikle istemsiz bir tepkimeyi yürütür.",
+        "en": "A galvanic cell converts chemical energy into electrical energy spontaneously (Ecell > 0); electrolysis uses electricity to drive a non-spontaneous reaction.",
+        "de": "Eine galvanische Zelle wandelt chemische Energie freiwillig in elektrische Energie um (EZelle > 0); die Elektrolyse erzwingt mit elektrischem Strom eine nicht freiwillige Reaktion.",
+        "fr": "Une pile galvanique convertit spontanément l'énergie chimique en énergie électrique (Epile > 0) ; l'électrolyse utilise l'électricité pour réaliser une réaction non spontanée.",
+        "ru": "Гальванический элемент самопроизвольно превращает химическую энергию в электрическую (Eэл > 0); электролиз с помощью электрического тока осуществляет несамопроизвольную реакцию.",
+        "ar": "تحوّل الخلية الجلفانية الطاقة الكيميائية إلى طاقة كهربائية تلقائيًا (Eخلية > 0)؛ أما التحليل الكهربائي فيستخدم الكهرباء لإحداث تفاعل غير تلقائي.",
+        "zh": "原电池自发地将化学能转化为电能（E电池 > 0）；电解则利用电能驱动非自发反应。",
+        "ku": "Pîla galvanîk enerjiya kîmyewî bi awayekî xweber vediguherîne enerjiya elektrîkê (Epîl > 0); elektrolîz bi elektrîkê reaksiyoneke ne-xweber pêk tîne."
       }
     },
     {
       "id": "u21-c05",
       "conceptA": {
         "tr": "Standart Pil Potansiyeli (E°pil)",
-        "en": "Standard Battery Potential (E°battery)",
-        "de": "Standardbatteriepotential (E°Batterie)",
-        "fr": "Potentiel de batterie standard (batterie E°)",
-        "ru": "Стандартный потенциал батареи (батарея E°)",
-        "ar": "إمكانات البطارية القياسية (البطارية E°)",
-        "zh": "标准电池电位（E°电池）",
-        "ku": "Potansiyela Pîlê Standard (E°batê)"
+        "en": "Standard Cell Potential (E°cell)",
+        "de": "Standardzellpotential (E°Zelle)",
+        "fr": "Potentiel standard de pile (E°pile)",
+        "ru": "Стандартный потенциал элемента (E°эл)",
+        "ar": "جهد الخلية القياسي (E°خلية)",
+        "zh": "标准电池电势（E°电池）",
+        "ku": "Potansiyela Standard a Pîlê (E°pîl)"
       },
       "conceptB": {
         "tr": "Gerçek Pil Potansiyeli (Epil)",
-        "en": "Actual Battery Potential (Epil)",
-        "de": "Tatsächliches Batteriepotential (Epil)",
-        "fr": "Potentiel réel de la batterie (Epil)",
-        "ru": "Фактический потенциал батареи (Epil)",
-        "ar": "إمكانات البطارية الفعلية (Epil)",
-        "zh": "实际电池潜力 (Epil)",
-        "ku": "Potansiyela Pîlê ya Rastî (Epil)"
+        "en": "Actual Cell Potential (Ecell)",
+        "de": "Tatsächliches Zellpotential (EZelle)",
+        "fr": "Potentiel réel de pile (Epile)",
+        "ru": "Реальный потенциал элемента (Eэл)",
+        "ar": "جهد الخلية الفعلي (Eخلية)",
+        "zh": "实际电池电势（E电池）",
+        "ku": "Potansiyela Rastîn a Pîlê (Epîl)"
       },
       "distinction": {
         "tr": "E°pil 1 M standart derişimlerdeki potansiyeldir; Epil Nernst denklemiyle farklı derişimlerde hesaplanan potansiyeldir.",
-        "en": "E°pil is the potential at 1 M standard concentrations; Epil is the potential calculated at different concentrations with the Nernst equation.",
-        "de": "E°pil ist das Potenzial bei 1 M Standardkonzentrationen; Epil ist das Potenzial, das bei verschiedenen Konzentrationen mit der Nernst-Gleichung berechnet wird.",
-        "fr": "E°pil est le potentiel à des concentrations standards de 1 M ; Epil est le potentiel calculé à différentes concentrations avec l'équation de Nernst.",
-        "ru": "E°pil — потенциал при 1 М стандартных концентрациях; Epil — это потенциал, рассчитанный при различных концентрациях по уравнению Нернста.",
-        "ar": "E°pil هو الإمكانية عند التركيزات القياسية 1 M؛ Epil هو الجهد المحسوب بتركيزات مختلفة باستخدام معادلة Nernst.",
-        "zh": "E°pil 是 1 M 标准浓度下的电位； Epil 是用 Nernst 方程计算出不同浓度下的电势。",
-        "ku": "E°pil potansiyela 1 M tansiyonên standard e; Epil potansiyela ku bi hevsengiya Nernst re di hûrguliyên cûda de tê hesibandin e."
+        "en": "E°cell is the potential at standard 1 M concentrations; Ecell is the potential at other concentrations, calculated with the Nernst equation.",
+        "de": "E°Zelle ist das Potential bei Standardkonzentrationen von 1 M; EZelle ist das mit der Nernst-Gleichung berechnete Potential bei anderen Konzentrationen.",
+        "fr": "E°pile est le potentiel aux concentrations standard de 1 M ; Epile est le potentiel calculé à d'autres concentrations avec l'équation de Nernst.",
+        "ru": "E°эл — потенциал при стандартных концентрациях 1 М; Eэл — потенциал при других концентрациях, рассчитанный по уравнению Нернста.",
+        "ar": "E°خلية هو الجهد عند التراكيز القياسية 1 M؛ أما Eخلية فهو الجهد عند تراكيز أخرى ويُحسب بمعادلة نيرنست.",
+        "zh": "E°电池 是 1 M 标准浓度下的电势；E电池 是用能斯特方程计算的其他浓度下的电势。",
+        "ku": "E°pîl potansiyela di tîrbûnên standard ên 1 M de ye; Epîl potansiyela di tîrbûnên din de ye ku bi hevkêşeya Nernst tê hesabkirin."
       }
     },
     {
       "id": "u21-c06",
       "conceptA": {
-        "tr": "Derişim Pili",
-        "en": "Concentration Battery",
-        "de": "Konzentrationsbatterie",
-        "fr": "Batterie de concentration",
-        "ru": "Концентрационная батарея",
-        "ar": "بطارية التركيز",
-        "zh": "浓缩电池",
-        "ku": "Battery Concentration"
+        "tr": "Elektrot",
+        "en": "Electrode",
+        "de": "Elektrode",
+        "fr": "Électrode",
+        "ru": "Электрод",
+        "ar": "القطب",
+        "zh": "电极",
+        "ku": "Elektrod"
       },
       "conceptB": {
-        "tr": "Kimyasal Pil",
-        "en": "Chemical Battery",
-        "de": "Chemische Batterie",
-        "fr": "Batterie chimique",
-        "ru": "Химическая батарея",
-        "ar": "البطارية الكيميائية",
-        "zh": "化学电池",
-        "ku": "Pîl Kîmyewî"
+        "tr": "Elektrolit",
+        "en": "Electrolyte",
+        "de": "Elektrolyt",
+        "fr": "Électrolyte",
+        "ru": "Электролит",
+        "ar": "الإلكتروليت",
+        "zh": "电解质",
+        "ku": "Elektrolît"
       },
       "distinction": {
-        "tr": "Derişim pilinde elektrotlar aynı metaldir, potansiyel sadece derişim farkından doğar; kimyasal pilde elektrot metalleri farklıdır.",
-        "en": "In the concentration cell, the electrodes are the same metal, the potential arises only from the concentration difference; In a chemical battery, the electrode metals are different.",
-        "de": "In der Konzentrationszelle bestehen die Elektroden aus demselben Metall, das Potential entsteht nur aus der Konzentrationsdifferenz; In einer chemischen Batterie sind die Elektrodenmetalle unterschiedlich.",
-        "fr": "Dans la cellule de concentration, les électrodes sont du même métal, le potentiel naît uniquement de la différence de concentration ; Dans une batterie chimique, les métaux des électrodes sont différents.",
-        "ru": "В концентрационной ячейке электроды — один и тот же металл, потенциал возникает только за счет разницы концентраций; В химической батарее электродные металлы разные.",
-        "ar": "في خلية التركيز، تكون الأقطاب الكهربائية من نفس المعدن، ولا تنشأ الإمكانات إلا من اختلاف التركيز؛ في البطارية الكيميائية، تختلف معادن القطب.",
-        "zh": "在浓差池中，电极是相同的金属，电势仅由浓度差产生；在化学电池中，电极金属是不同的。",
-        "ku": "Di hucreya konsantasyonê de, elektrod heman metal in, potansiyel tenê ji cûdahiya konsantreyê derdikeve; Di pîlê kîmyewî de, metalên elektrodê cuda ne."
+        "tr": "Elektrot, elektronların alınıp verildiği iletken katıdır (örn. metal çubuk); elektrolit, akımı iyonlar aracılığıyla ileten çözelti veya eriyiktir.",
+        "en": "An electrode is the conducting solid at which electrons are gained or lost (e.g., a metal rod); an electrolyte is a solution or melt that conducts current by means of ions.",
+        "de": "Eine Elektrode ist der leitende Festkörper, an dem Elektronen aufgenommen oder abgegeben werden (z. B. ein Metallstab); ein Elektrolyt ist eine Lösung oder Schmelze, die den Strom durch Ionen leitet.",
+        "fr": "Une électrode est le solide conducteur où les électrons sont captés ou cédés (par ex. une tige métallique) ; un électrolyte est une solution ou un sel fondu qui conduit le courant grâce aux ions.",
+        "ru": "Электрод — проводящее твёрдое тело, на котором принимаются или отдаются электроны (например, металлический стержень); электролит — раствор или расплав, проводящий ток за счёт ионов.",
+        "ar": "القطب جسم صلب موصل تُكتسب عنده الإلكترونات أو تُفقد (مثل قضيب فلزي)؛ أما الإلكتروليت فهو محلول أو مصهور يوصل التيار بواسطة الأيونات.",
+        "zh": "电极是得失电子的导电固体（如金属棒）；电解质是依靠离子导电的溶液或熔融物。",
+        "ku": "Elektrod hişkeke guhêzbar e ku elektron li ser wê têne wergirtin an dayîn (mînak çîpeke metalî); elektrolît çareserî an helandineke ku herikînê bi riya îyonan diguhezîne ye."
       }
     },
     {
@@ -623,7 +623,7 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "Anionen in der Salzbrücke wandern zur Anode, um die positive Ladung zu neutralisieren; Kationen wandern zur Kathodenzelle.",
         "fr": "Les anions du pont salin migrent vers l'anode pour neutraliser la charge positive ; les cations migrent vers la cellule cathodique.",
         "ru": "Анионы в солевом мостике мигрируют к аноду, чтобы нейтрализовать положительный заряд; катионы мигрируют к катодной ячейке.",
-        "ar": "تهاجر الأنيونات الموجودة في جسر الملح إلى القطب الموجب لتحييد الشحنة الموجبة؛ تهاجر الكاتيونات إلى خلية الكاثود.",
+        "ar": "تهاجر الأنيونات في القنطرة الملحية نحو الأنود لمعادلة الشحنة الموجبة الزائدة؛ وتهاجر الكاتيونات نحو خلية الكاثود.",
         "zh": "盐桥中的阴离子迁移到阳极，中和正电荷；阳离子迁移到阴极电池。",
         "ku": "Anyonên di pira xwê de ji bo bêbandorkirina barê erênî ber bi anodê ve diçin; kation koçî şaneya katodê dikin."
       }
@@ -632,33 +632,33 @@ export const unit21: ChemistryUnitSeedData = {
       "id": "u21-c08",
       "conceptA": {
         "tr": "Yükseltgen Madde",
-        "en": "Oxidizing Substance",
-        "de": "Oxidierende Substanz",
-        "fr": "Substance comburante",
-        "ru": "Окисляющее вещество",
-        "ar": "مادة مؤكسدة",
-        "zh": "氧化性物质",
-        "ku": "Madeya oksîdan"
+        "en": "Oxidizing Agent",
+        "de": "Oxidationsmittel",
+        "fr": "Oxydant",
+        "ru": "Окислитель",
+        "ar": "العامل المؤكسد",
+        "zh": "氧化剂",
+        "ku": "Oksîdant"
       },
       "conceptB": {
         "tr": "İndirgen Madde",
-        "en": "Reducing Matter",
-        "de": "Materie reduzieren",
-        "fr": "Réduire la matière",
-        "ru": "Уменьшение материи",
-        "ar": "تقليل المادة",
-        "zh": "减少物质",
-        "ku": "Kêmkirina Madeyê"
+        "en": "Reducing Agent",
+        "de": "Reduktionsmittel",
+        "fr": "Réducteur",
+        "ru": "Восстановитель",
+        "ar": "العامل المختزل",
+        "zh": "还原剂",
+        "ku": "Reduktant"
       },
       "distinction": {
         "tr": "Yükseltgen madde elektron alarak kendisi indirgenendir; indirgen madde elektron vererek kendisi yükseltgenendir.",
-        "en": "An oxidizing substance is one that is itself reduced by gaining electrons; A reducing substance is itself oxidized by donating electrons.",
-        "de": "Eine oxidierende Substanz ist eine Substanz, die selbst durch Aufnahme von Elektronen reduziert wird; Eine reduzierende Substanz wird selbst durch Abgabe von Elektronen oxidiert.",
-        "fr": "Une substance oxydante est une substance qui est elle-même réduite en gagnant des électrons ; Une substance réductrice est elle-même oxydée en donnant des électrons.",
-        "ru": "Окисляющее вещество — это вещество, которое само восстанавливается за счет присоединения электронов; Восстановительное вещество само окисляется путем отдачи электронов.",
-        "ar": "المادة المؤكسدة هي المادة التي يتم اختزالها باكتساب الإلكترونات؛ تتأكسد المادة المختزلة نفسها عن طريق التبرع بالإلكترونات.",
-        "zh": "氧化物质是一种通过获得电子而自身被还原的物质。还原物质本身通过提供电子而被氧化。",
-        "ku": "Maddeyek oksîdker ew e ku bixwe bi bidestxistina elektronan kêm dibe; Madeyek kêmker bixwe bi dayîna elektronan oksîde dibe."
+        "en": "An oxidizing agent gains electrons and is itself reduced; a reducing agent loses electrons and is itself oxidized.",
+        "de": "Ein Oxidationsmittel nimmt Elektronen auf und wird dabei selbst reduziert; ein Reduktionsmittel gibt Elektronen ab und wird dabei selbst oxidiert.",
+        "fr": "Un oxydant capte des électrons et est lui-même réduit ; un réducteur cède des électrons et est lui-même oxydé.",
+        "ru": "Окислитель принимает электроны и сам восстанавливается; восстановитель отдаёт электроны и сам окисляется.",
+        "ar": "العامل المؤكسد يكتسب الإلكترونات فيُختزل هو نفسه؛ والعامل المختزل يفقد الإلكترونات فيتأكسد هو نفسه.",
+        "zh": "氧化剂得到电子，自身被还原；还原剂失去电子，自身被氧化。",
+        "ku": "Oksîdant elektronan distîne û bi xwe kêm dibe; reduktant elektronan dide û bi xwe oksîd dibe."
       }
     }
   ],
@@ -667,12 +667,12 @@ export const unit21: ChemistryUnitSeedData = {
       "id": "u21-s01",
       "title": {
         "tr": "Pil Potansiyeli Hesaplama Adımları",
-        "en": "Battery Potential Calculation Steps",
-        "de": "Schritte zur Berechnung des Batteriepotentials",
-        "fr": "Étapes de calcul du potentiel de la batterie",
-        "ru": "Этапы расчета потенциала батареи",
-        "ar": "خطوات حساب البطارية المحتملة",
-        "zh": "电池潜力计算步骤",
+        "en": "Steps for Calculating Cell Potential",
+        "de": "Schritte zur Berechnung des Zellpotentials",
+        "fr": "Étapes du calcul du potentiel de pile",
+        "ru": "Этапы расчёта потенциала элемента",
+        "ar": "خطوات حساب جهد الخلية",
+        "zh": "电池电势的计算步骤",
         "ku": "Gavên Hesabkirina Potansiyela Pîlê"
       },
       "steps": [
@@ -682,9 +682,9 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "Vergleichen Sie Oxidationspotentiale und identifizieren Sie die Anode",
           "fr": "Comparer les potentiels d'oxydation et identifier l'anode",
           "ru": "Сравните окислительные потенциалы и определите анод.",
-          "ar": "قارن جهود الأكسدة وتعرف على القطب الموجب",
+          "ar": "قارن جهود التأكسد وحدد الأنود",
           "zh": "比较氧化电位并识别阳极",
-          "ku": "Potansiyelên oksîdasyonê bidin ber hev û anode nas bikin"
+          "ku": "Potansiyelên oksîdasyonê bide ber hev û anodê diyar bike"
         },
         {
           "tr": "Katot indirgenme yarı tepkimesini yaz",
@@ -698,78 +698,78 @@ export const unit21: ChemistryUnitSeedData = {
         },
         {
           "tr": "E°pil = E°anot + E°katot ile standart gerilimi bul",
-          "en": "Find the standard voltage with E°battery = E°anode + E°cathode",
-          "de": "Finden Sie die Standardspannung mit E°Batterie = E°Anode + E°Kathode",
-          "fr": "Trouver la tension standard avec E°batterie = E°anode + E°cathode",
-          "ru": "Найдите стандартное напряжение, используя E°battery = E°анода + E°катода.",
-          "ar": "أوجد الجهد القياسي باستخدام البطارية E° = E°الأنود + E°الكاثود",
-          "zh": "找到标准电压 E°电池 = E°阳极 + E°阴极",
-          "ku": "Bi E°batterya = E°anode + E°katod voltaja standard bibînin"
+          "en": "Find the standard voltage with E°cell = E°anode + E°cathode",
+          "de": "Standardspannung mit E°Zelle = E°Anode + E°Kathode berechnen",
+          "fr": "Calculer la tension standard avec E°pile = E°anode + E°cathode",
+          "ru": "Найти стандартное напряжение по формуле E°эл = E°анод + E°катод",
+          "ar": "احسب الجهد القياسي من E°خلية = E°الأنود + E°الكاثود",
+          "zh": "用 E°电池 = E°阳极 + E°阴极 求标准电压",
+          "ku": "Bi E°pîl = E°anod + E°katod voltaja standard bibîne"
         },
         {
-          "tr": "Derişimler 1 M den farklıysa Nernst formülünü uygula",
-          "en": "If concentrations are different than 1 M, apply Nernst formula",
-          "de": "Wenn die Konzentrationen von 1 M abweichen, wenden Sie die Nernst-Formel an",
-          "fr": "Si les concentrations sont différentes de 1 M, appliquer la formule de Nernst",
-          "ru": "Если концентрации отличаются от 1 М, применяют формулу Нернста.",
-          "ar": "إذا كانت التركيزات مختلفة عن 1 م، قم بتطبيق صيغة نيرنست",
-          "zh": "如果浓度不同于 1 M，则应用能斯特公式",
-          "ku": "Ger konsantre ji 1 M cuda be, formula Nernst bikar bînin"
+          "tr": "E°pil > 0 ise tepkimenin istemli olduğuna karar ver",
+          "en": "If E°cell > 0, conclude that the reaction is spontaneous",
+          "de": "Ist E°Zelle > 0, auf eine freiwillige (spontane) Reaktion schließen",
+          "fr": "Si E°pile > 0, conclure que la réaction est spontanée",
+          "ru": "Если E°эл > 0, сделать вывод, что реакция самопроизвольна",
+          "ar": "إذا كان E°خلية > 0 فاستنتج أن التفاعل تلقائي",
+          "zh": "若 E°电池 > 0，则判断反应为自发反应",
+          "ku": "Heke E°pîl > 0 be, biryar bide ku reaksiyon xweber e"
         }
       ]
     },
     {
       "id": "u21-s02",
       "title": {
-        "tr": "Standart Pil Potansiyeli Hesabı",
-        "en": "Standard Battery Potential Calculation",
-        "de": "Standard-Batteriepotentialberechnung",
-        "fr": "Calcul du potentiel de batterie standard",
-        "ru": "Стандартный расчет потенциала батареи",
-        "ar": "حساب البطارية المحتملة القياسية",
-        "zh": "标准电池潜力计算",
-        "ku": "Hesabkirina Potansiyela Battery Standard"
+        "tr": "Derişim Pilinin Kurulması ve Çalışması",
+        "en": "Setting Up and Operating a Concentration Cell",
+        "de": "Aufbau und Funktionsweise eines Konzentrationselements",
+        "fr": "Montage et fonctionnement d'une pile de concentration",
+        "ru": "Устройство и работа концентрационного элемента",
+        "ar": "تركيب خلية التركيز وطريقة عملها",
+        "zh": "浓差电池的组装与工作过程",
+        "ku": "Sazkirin û Xebata Pîla Tîrbûnê"
       },
       "steps": [
         {
-          "tr": "Yarı hücrelerdeki yükseltgenme potansiyelleri karşılaştırılır",
-          "en": "Oxidation potentials in half-cells are compared",
-          "de": "Oxidationspotentiale in Halbzellen werden verglichen",
-          "fr": "Les potentiels d'oxydation dans les demi-cellules sont comparés",
-          "ru": "Сравнение потенциалов окисления в полуклетках.",
-          "ar": "تتم مقارنة إمكانات الأكسدة في نصف الخلايا",
-          "zh": "比较半电池的氧化电位",
-          "ku": "Potansiyelên oksîdasyonê yên di nîv-hucreyan de têne berhev kirin"
+          "tr": "Aynı metalden iki elektrot, aynı iyonun farklı derişimli iki çözeltisine daldırılır",
+          "en": "Two electrodes of the same metal are dipped into two solutions of the same ion at different concentrations",
+          "de": "Zwei Elektroden aus demselben Metall werden in zwei unterschiedlich konzentrierte Lösungen desselben Ions getaucht",
+          "fr": "Deux électrodes du même métal sont plongées dans deux solutions du même ion de concentrations différentes",
+          "ru": "Два электрода из одного металла погружают в два раствора одного и того же иона разной концентрации",
+          "ar": "يُغمس قطبان من الفلز نفسه في محلولين للأيون نفسه بتركيزين مختلفين",
+          "zh": "将两根相同金属的电极分别插入同种离子、不同浓度的两种溶液中",
+          "ku": "Du elektrodên ji heman metalê di du çareseriyên heman îyonê yên bi tîrbûnên cuda de têne danîn"
         },
         {
-          "tr": "Potansiyeli büyük olan metal anot olarak seçilir",
-          "en": "The metal with the highest potential is selected as the anode.",
-          "de": "Als Anode wird das Metall mit dem höchsten Potential gewählt.",
-          "fr": "Le métal ayant le potentiel le plus élevé est sélectionné comme anode.",
-          "ru": "В качестве анода выбирают металл с наибольшим потенциалом.",
-          "ar": "يتم اختيار المعدن ذو الإمكانات الأعلى ليكون الأنود.",
-          "zh": "选择电势最高的金属作为阳极。",
-          "ku": "Metala bi potansiyela herî bilind wekî anode tê hilbijartin."
+          "tr": "Elektrotlar iletken telle, çözeltiler tuz köprüsüyle birbirine bağlanır",
+          "en": "The electrodes are joined by a conducting wire and the solutions by a salt bridge",
+          "de": "Die Elektroden werden mit einem leitenden Draht, die Lösungen mit einer Salzbrücke verbunden",
+          "fr": "Les électrodes sont reliées par un fil conducteur et les solutions par un pont salin",
+          "ru": "Электроды соединяют проводником, а растворы — солевым мостиком",
+          "ar": "يوصل القطبان بسلك موصل ويوصل المحلولان بقنطرة ملحية",
+          "zh": "用导线连接两电极，用盐桥连接两溶液",
+          "ku": "Elektrod bi têleke guhêzbar, çareserî jî bi pira xwê bi hev ve têne girêdan"
         },
         {
-          "tr": "Diğer yarı hücrede katot indirgenmesi yazılır",
-          "en": "In the other half cell, cathode reduction is written",
-          "de": "In der anderen Halbzelle findet die Kathodenreduktion statt",
-          "fr": "Dans l’autre moitié de cellule, la réduction cathodique est écrite",
-          "ru": "В другой полуэлементе записано катодное восстановление",
-          "ar": "في النصف الآخر من الخلية، يتم كتابة اختزال الكاثود",
-          "zh": "在另一半电池中，阴极还原被写为",
-          "ku": "Di nîvê şaneya din de kêmkirina katodê tê nivîsandin"
+          "tr": "Seyreltik çözeltideki elektrot anot olup yükseltgenir; derişik çözeltideki iyonlar katotta indirgenir",
+          "en": "The electrode in the dilute solution is the anode and is oxidized; ions in the concentrated solution are reduced at the cathode",
+          "de": "Die Elektrode in der verdünnten Lösung ist die Anode und wird oxidiert; die Ionen der konzentrierten Lösung werden an der Kathode reduziert",
+          "fr": "L'électrode plongée dans la solution diluée est l'anode et s'oxyde ; les ions de la solution concentrée sont réduits à la cathode",
+          "ru": "Электрод в разбавленном растворе является анодом и окисляется; ионы концентрированного раствора восстанавливаются на катоде",
+          "ar": "القطب المغموس في المحلول المخفف هو الأنود ويتأكسد؛ وتُختزل أيونات المحلول المركز عند الكاثود",
+          "zh": "稀溶液中的电极为阳极并被氧化；浓溶液中的离子在阴极被还原",
+          "ku": "Elektroda di çareseriya sist de anod e û oksîd dibe; îyonên çareseriya tîr li katodê kêm dibin"
         },
         {
-          "tr": "E°pil = E°yükseltgenme + E°indirgenme formülüyle standart pil potansiyeli bulunur",
-          "en": "Standard battery potential is found with the formula E°battery = E°oxidation + E°reduction",
-          "de": "Das Standardbatteriepotential wird mit der Formel E°Batterie = E°Oxidation + E°Reduktion ermittelt",
-          "fr": "Le potentiel de batterie standard se trouve avec la formule E°batterie = E°oxydation + E°réduction",
-          "ru": "Стандартный потенциал батареи находится по формуле E°battery = E°окисления + E°восстановления.",
-          "ar": "تم العثور على إمكانات البطارية القياسية بالصيغة E°battery = E°أكسدة + E°reduction",
-          "zh": "标准电池电势可通过以下公式得出：E°电池 = E°氧化 + E°还原",
-          "ku": "Potansiyela bataryayê ya standard bi formula E°batê = E°oksîdasyon + E° kêmkirin tê dîtin"
+          "tr": "Derişimler eşitlendiğinde Epil = 0 olur ve pil çalışmayı durdurur",
+          "en": "When the concentrations become equal, Ecell = 0 and the cell stops working",
+          "de": "Sind die Konzentrationen gleich, gilt EZelle = 0 und das Element hört auf zu arbeiten",
+          "fr": "Lorsque les concentrations deviennent égales, Epile = 0 et la pile cesse de fonctionner",
+          "ru": "Когда концентрации выравниваются, Eэл = 0 и элемент перестаёт работать",
+          "ar": "عندما يتساوى التركيزان يصبح Eخلية = 0 وتتوقف الخلية عن العمل",
+          "zh": "当两溶液浓度相等时，E电池 = 0，电池停止工作",
+          "ku": "Dema tîrbûn wekhev dibin, Epîl = 0 dibe û pîl radiweste"
         }
       ]
     },
@@ -798,23 +798,23 @@ export const unit21: ChemistryUnitSeedData = {
         },
         {
           "tr": "Tepkime kesri Q = [Anot iyonu] / [Katot iyonu] yazılır",
-          "en": "The reaction fraction is written as Q = [Anode ion] / [Cathode ion]",
-          "de": "Der Reaktionsanteil wird geschrieben als Q = [Anodenion] / [Kathodenion]",
-          "fr": "La fraction de réaction s'écrit Q = [Ion anode] / [Ion cathode]",
-          "ru": "Доля реакции записывается как Q = [Анодный ион] / [Катодный ион]",
-          "ar": "تتم كتابة جزء التفاعل كـ Q = [أيون الأنود] / [أيون الكاثود]",
-          "zh": "反应分数写为 Q = [阳极离子] / [阴极离子]",
-          "ku": "Parçeya reaksiyonê wekî Q = [Îyona anodê] / [Îyona katodê] tê nivîsandin"
+          "en": "Write the reaction quotient Q = [anode ion] / [cathode ion]",
+          "de": "Der Reaktionsquotient wird als Q = [Anodenion] / [Kathodenion] aufgestellt",
+          "fr": "On écrit le quotient de réaction Q = [ion de l'anode] / [ion de la cathode]",
+          "ru": "Записывают коэффициент реакции Q = [ион анода] / [ион катода]",
+          "ar": "يُكتب حاصل التفاعل Q = [أيون الأنود] / [أيون الكاثود]",
+          "zh": "写出反应商 Q = [阳极离子] / [阴极离子]",
+          "ku": "Kêşeya reaksiyonê Q = [îyona anodê] / [îyona katodê] tê nivîsîn"
         },
         {
-          "tr": "Nernst formülü: Epil = E°pil - (0.0592 / n) . log Q kurulur",
-          "en": "Nernst formula: Epil = E°pil - (0.0592 / n) . log Q is set",
-          "de": "Nernst-Formel: Epil = E°pil - (0,0592 / n) . log Q ist gesetzt",
-          "fr": "Formule de Nernst : Epil = E°pil - (0,0592 / n) . le journal Q est défini",
-          "ru": "Формула Нернста: Эпил = Е°пил - (0,0592/n). журнал Q установлен",
-          "ar": "صيغة نيرنست : Epil = E°pil - (0.0592 / n) . تم تعيين السجل Q",
-          "zh": "能斯特公式：Epil = E°pil - (0.0592 / n) 。日志 Q 已设置",
-          "ku": "Formula Nernst: Epil = E°pil - (0.0592 / n) . log Q tê danîn"
+          "tr": "Nernst formülü: Epil = E°pil - (0,0592 / n) . log Q kurulur",
+          "en": "Set up the Nernst equation: Ecell = E°cell - (0.0592 / n) . log Q",
+          "de": "Die Nernst-Gleichung wird aufgestellt: EZelle = E°Zelle - (0,0592 / n) . log Q",
+          "fr": "On pose l'équation de Nernst : Epile = E°pile - (0,0592 / n) . log Q",
+          "ru": "Составляют уравнение Нернста: Eэл = E°эл - (0,0592 / n) . lg Q",
+          "ar": "تُكتب معادلة نيرنست: Eخلية = E°خلية - (0.0592 / n) . log Q",
+          "zh": "列出能斯特方程：E电池 = E°电池 - (0.0592 / n) · lg Q",
+          "ku": "Hevkêşeya Nernst tê danîn: Epîl = E°pîl - (0,0592 / n) . log Q"
         },
         {
           "tr": "Logaritmik terim hesaplanarak gerçek pil potansiyeli bulunur",
@@ -877,7 +877,7 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "Anionen in der Salzbrücke wandern zur Anode, Kationen zur Kathode",
           "fr": "Les anions du pont salin migrent vers l'anode, les cations migrent vers la cathode",
           "ru": "Анионы в солевом мостике мигрируют к аноду, катионы мигрируют к катоду.",
-          "ar": "تهاجر الأنيونات الموجودة في جسر الملح إلى القطب الموجب، وتهاجر الكاتيونات إلى الكاثود",
+          "ar": "تهاجر الأنيونات في القنطرة الملحية نحو الأنود والكاتيونات نحو الكاثود",
           "zh": "盐桥中的阴离子迁移到阳极，阳离子迁移到阴极",
           "ku": "Anyonên di pira xwê de koçî anodê dikin, kation jî ber bi katodê ve diçin"
         }
@@ -888,18 +888,18 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin01",
       "stem": {
-        "tr": "Zn(k) | Zn2+(1 M) || Cu2+(1 M) | Cu(k) Daniell pili için E°(Zn2+/Zn) = -0.76 V ve E°(Cu2+/Cu) = +0.34 V olduğuna göre standart pil potansiyeli kaç volttur?",
-        "en": "Zn(k) | Zn2+(1 M) || Cu2+(1M) | For the Cu(k) Daniell battery, if E°(Zn2+/Zn) = -0.76 V and E°(Cu2+/Cu) = +0.34 V, how many volts is the standard battery potential?",
-        "de": "Zn(k) | Zn2+(1 M) || Cu2+(1M) | Für die Cu(k)-Daniell-Batterie: Wenn E°(Zn2+/Zn) = -0,76 V und E°(Cu2+/Cu) = +0,34 V, wie viel Volt beträgt dann das Standardbatteriepotential?",
-        "fr": "Zn(k) | Zn2+(1 M) || Cu2+(1M) | Pour la batterie Cu(k) Daniell, si E°(Zn2+/Zn) = -0,76 V et E°(Cu2+/Cu) = +0,34 V, de combien de volts est le potentiel standard de la batterie ?",
-        "ru": "Zn(к) | Zn2+(1 М) || Cu2+(1M) | Для батареи Cu(k) Дэниела, если E°(Zn2+/Zn) = -0,76 В и E°(Cu2+/Cu) = +0,34 В, сколько вольт составляет стандартный потенциал батареи?",
-        "ar": "الزنك (ك) | Zn2+(1 م) || Cu2+(1M) | بالنسبة لبطارية Cu(k) Daniell، إذا كانت E°(Zn2+/Zn) = -0.76 V وE°(Cu2+/Cu) = +0.34 V، فما هو عدد فولت الجهد القياسي للبطارية؟",
-        "zh": "锌(k) | Zn2+(1 M) || Cu2+(1M) |对于 Cu(k) Daniell 电池，如果 E°(Zn2+/Zn) = -0.76 V 且 E°(Cu2+/Cu) = +0.34 V，则标准电池电位是多少伏？",
-        "ku": "Zn(k) | Zn2+(1 M) || Cu2+(1M) | Ji bo pîlê Cu(k) Daniell, heke E°(Zn2+/Zn) = -0,76 V û E°(Cu2+/Cu) = +0,34 V, potansiyela pîlê standard çend volt e?"
+        "tr": "Zn(k) | Zn2+(1 M) || Cu2+(1 M) | Cu(k) Daniell pili için E°(Zn2+/Zn) = -0,76 V ve E°(Cu2+/Cu) = +0,34 V olduğuna göre standart pil potansiyeli kaç volttur?",
+        "en": "For the Daniell cell Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s), given E°(Zn2+/Zn) = -0.76 V and E°(Cu2+/Cu) = +0.34 V, what is the standard cell potential in volts?",
+        "de": "Für das Daniell-Element Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s) gilt E°(Zn2+/Zn) = -0,76 V und E°(Cu2+/Cu) = +0,34 V. Wie groß ist das Standardzellpotential in Volt?",
+        "fr": "Pour la pile Daniell Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s), avec E°(Zn2+/Zn) = -0,76 V et E°(Cu2+/Cu) = +0,34 V, quel est le potentiel standard de la pile en volts ?",
+        "ru": "Для элемента Даниэля Zn(тв) | Zn2+(1 M) || Cu2+(1 M) | Cu(тв) при E°(Zn2+/Zn) = -0,76 В и E°(Cu2+/Cu) = +0,34 В чему равен стандартный потенциал элемента (в вольтах)?",
+        "ar": "لخلية دانيال Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s)، إذا كان E°(Zn2+/Zn) = -0.76 V و E°(Cu2+/Cu) = +0.34 V، فكم فولتًا يبلغ جهد الخلية القياسي؟",
+        "zh": "对于丹尼尔电池 Zn(s) | Zn2+(1 M) || Cu2+(1 M) | Cu(s)，已知 E°(Zn2+/Zn) = -0.76 V，E°(Cu2+/Cu) = +0.34 V，其标准电池电势为多少伏？",
+        "ku": "Ji bo pîla Daniell Zn(k) | Zn2+(1 M) || Cu2+(1 M) | Cu(k), heke E°(Zn2+/Zn) = -0,76 V û E°(Cu2+/Cu) = +0,34 V be, potansiyela standard a pîlê çend volt e?"
       },
       "options": [
         {
-          "tr": "1.10 V",
+          "tr": "1,10 V",
           "en": "1.10V",
           "de": "1,10 V",
           "fr": "1,10 V",
@@ -909,7 +909,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ku": "1.10V"
         },
         {
-          "tr": "0.42 V",
+          "tr": "0,42 V",
           "en": "0.42V",
           "de": "0,42 V",
           "fr": "0,42 V",
@@ -919,7 +919,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ku": "0.42V"
         },
         {
-          "tr": "-1.10 V",
+          "tr": "-1,10 V",
           "en": "-1.10V",
           "de": "-1,10 V",
           "fr": "-1,10V",
@@ -929,7 +929,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ku": "-1.10V"
         },
         {
-          "tr": "0.76 V",
+          "tr": "0,76 V",
           "en": "0.76V",
           "de": "0,76 V",
           "fr": "0,76 V",
@@ -939,7 +939,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ku": "0.76V"
         },
         {
-          "tr": "-0.42 V",
+          "tr": "-0,42 V",
           "en": "-0.42V",
           "de": "-0,42 V",
           "fr": "-0,42V",
@@ -951,12 +951,12 @@ export const unit21: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Zn yükseltgenme potansiyeli = +0.76 V (anot). Cu indirgenme potansiyeli = +0.34 V (katot). E°pil = 0.76 + 0.34 = 1.10 V.",
+        "tr": "Zn yükseltgenme potansiyeli = +0,76 V (anot). Cu indirgenme potansiyeli = +0,34 V (katot). E°pil = 0,76 + 0,34 = 1,10 V.",
         "en": "Zn oxidation potential = +0.76 V (anode). Cu reduction potential = +0.34 V (cathode). E°battery = 0.76 + 0.34 = 1.10 V.",
         "de": "Zn-Oxidationspotential = +0,76 V (Anode). Cu-Reduktionspotential = +0,34 V (Kathode). E°Batterie = 0,76 + 0,34 = 1,10 V.",
         "fr": "Potentiel d'oxydation du Zn = +0,76 V (anode). Potentiel de réduction du Cu = +0,34 V (cathode). E°batterie = 0,76 + 0,34 = 1,10 V.",
         "ru": "Потенциал окисления Zn = +0,76 В (анод). Потенциал восстановления Cu = +0,34 В (катод). E°батареи = 0,76 + 0,34 = 1,10 В.",
-        "ar": "إمكانات أكسدة الزنك = +0.76 فولت (الأنود). إمكانية تخفيض النحاس = +0.34 فولت (الكاثود). البطارية الإلكترونية = 0.76 + 0.34 = 1.10 فولت.",
+        "ar": "جهد تأكسد Zn = +0.76 V (الأنود). جهد اختزال Cu = +0.34 V (الكاثود). E°خلية = 0.76 + 0.34 = 1.10 V.",
         "zh": "Zn 氧化电位 = +0.76 V（阳极）。 Cu 还原电位 = +0.34 V（阴极）。 E°电池 = 0.76 + 0.34 = 1.10 V。",
         "ku": "Potansiyela oksîdasyona Zn = +0,76 V (anod). Potansiyela kêmkirina Cu = +0,34 V (katod). E°baterî = 0,76 + 0,34 = 1,10 V."
       }
@@ -980,7 +980,7 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "Anionen wandern zur Anode, Kationen zur Kathode",
           "fr": "Les anions migrent vers l'anode, les cations migrent vers la cathode",
           "ru": "Анионы мигрируют к аноду, катионы мигрируют к катоду.",
-          "ar": "تهاجر الأنيونات إلى القطب الموجب، وتهاجر الكاتيونات إلى الكاثود",
+          "ar": "تهاجر الأنيونات نحو الأنود والكاتيونات نحو الكاثود",
           "zh": "阴离子迁移到阳极，阳离子迁移到阴极",
           "ku": "Anyon koçî anodê dikin, katyon jî ber bi katodê ve diçin"
         },
@@ -990,7 +990,7 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "Kationen wandern zur Anode, Anionen wandern zur Kathode",
           "fr": "Les cations migrent vers l'anode, les anions migrent vers la cathode",
           "ru": "Катионы мигрируют к аноду, анионы мигрируют к катоду.",
-          "ar": "تهاجر الكاتيونات إلى القطب الموجب، والأنيونات إلى الكاثود",
+          "ar": "تهاجر الكاتيونات نحو الأنود والأنيونات نحو الكاثود",
           "zh": "阳离子迁移到阳极，阴离子迁移到阴极",
           "ku": "Katyon ber bi anodê, anyon koçî katodê dikin"
         },
@@ -1032,7 +1032,7 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "In der Salzbrücke wandern Anionen zum Ladungsausgleich zur Anode und Kationen zur Kathode. Elektronen fließen durch den externen Stromkreis von der Anode zur Kathode.",
         "fr": "Dans le pont salin, les anions migrent vers l'anode et les cations migrent vers la cathode pour équilibrer les charges. Les électrons circulent de l'anode à la cathode via le circuit externe.",
         "ru": "В солевом мостике анионы мигрируют к аноду, а катионы - к катоду для баланса заряда. Электроны перетекают от анода к катоду по внешней цепи.",
-        "ar": "في جسر الملح، تهاجر الأنيونات إلى القطب الموجب وتهاجر الكاتيونات إلى الكاثود لتوازن الشحنة. تتدفق الإلكترونات من الأنود إلى الكاثود عبر الدائرة الخارجية.",
+        "ar": "في القنطرة الملحية تهاجر الأنيونات نحو الأنود والكاتيونات نحو الكاثود لحفظ توازن الشحنات، بينما تنتقل الإلكترونات عبر الدائرة الخارجية من الأنود إلى الكاثود.",
         "zh": "在盐桥中，阴离子迁移到阳极，阳离子迁移到阴极以实现电荷平衡。电子通过外电路从阳极流向阴极。",
         "ku": "Di pira xwê de, anyon ber bi anodê ve û kation jî ji bo balansa barkirinê ber bi katodê ve diçin. Elektron ji anodê diherikin katodê bi çerxa derve."
       }
@@ -1052,13 +1052,13 @@ export const unit21: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "İndirgenme potansiyeli büyük olan metal anot kutbudur.",
-          "en": "It is the metal anode pole with high reduction potential.",
-          "de": "Es ist der Metallanodenpol mit hohem Reduktionspotential.",
-          "fr": "C'est le pôle anode métallique à haut potentiel de réduction.",
-          "ru": "Это металлический анод с высоким восстановительным потенциалом.",
-          "ar": "إنه قطب الأنود المعدني ذو إمكانية التخفيض العالية.",
-          "zh": "它是具有高还原电位的金属阳极极。",
-          "ku": "Ew pola anodê ya metal e ku bi potansiyela kêmkirina bilind e."
+          "en": "The metal with the greater reduction potential is the anode.",
+          "de": "Das Metall mit dem größeren Reduktionspotential ist die Anode.",
+          "fr": "Le métal ayant le plus grand potentiel de réduction est l'anode.",
+          "ru": "Металл с большим потенциалом восстановления является анодом.",
+          "ar": "الفلز ذو جهد الاختزال الأكبر هو الأنود.",
+          "zh": "还原电势较大的金属是阳极。",
+          "ku": "Metala ku potansiyela wê ya reduksiyonê mezintir e anod e."
         },
         {
           "tr": "Katot çözeltisine su eklendiğinde pil gerilimi yükselir.",
@@ -1072,13 +1072,13 @@ export const unit21: ChemistryUnitSeedData = {
         },
         {
           "tr": "Tuz köprüsündeki ANYONLAR ANODA, KATYONLAR KATODA göç ederek yük denkliğini sağlar.",
-          "en": "ANIONS in the salt bridge migrate to the ANODE and CATIONS migrate to the CATHOD and ensure charge balance.",
+          "en": "ANIONS in the salt bridge migrate to the ANODE and CATIONS to the CATHODE, maintaining charge balance.",
           "de": "ANIONEN in der Salzbrücke wandern zur ANODE und KATIONEN wandern zur KATHODE und sorgen für den Ladungsausgleich.",
-          "fr": "Les ANIONS dans le pont salin migrent vers l'ANODE et les CATIONS migrent vers la CATHOD et assurent l'équilibre des charges.",
+          "fr": "Les ANIONS du pont salin migrent vers l'ANODE et les CATIONS vers la CATHODE, ce qui assure l'équilibre des charges.",
           "ru": "АНИОНЫ в солевом мостике мигрируют к АНОДУ, а КАТИОНЫ мигрируют к КАТОДУ и обеспечивают баланс заряда.",
-          "ar": "تهاجر الأنيونات الموجودة في جسر الملح إلى الأنود وتهاجر الكاتيونات إلى الكاثود وتضمن توازن الشحن.",
+          "ar": "تهاجر الأنيونات في القنطرة الملحية نحو الأنود والكاتيونات نحو الكاثود فتحافظ على توازن الشحنات.",
           "zh": "盐桥中的阴离子迁移到阳极，阳离子迁移到阴极并确保电荷平衡。",
-          "ku": "ANIONÊN di pira xwê de ber bi ANODEyê û CATIONS koçî CATHODê dikin û hevsengiya barkirinê misoger dikin."
+          "ku": "ANYONÊN di pira xwê de ber bi ANODÊ, KATYON jî ber bi KATODÊ ve koç dikin û hevsengiya barê diparêzin."
         },
         {
           "tr": "Derişimler eşitlendiğinde pil gerilimi maksimuma ulaşır.",
@@ -1104,13 +1104,13 @@ export const unit21: ChemistryUnitSeedData = {
       "correctIndex": 2,
       "explanation": {
         "tr": "Doğru cevap \"Tuz köprüsündeki ANYONLAR ANODA, KATYONLAR KATODA göç ederek yük denkliğini sağlar.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"ANIONS in the salt bridge migrate to the ANODE and CATIONS migrate to the CATHOD and ensure charge balance.\". Verified fundamental chemical concept in the official curriculum.",
+        "en": "The correct statement is: \"ANIONS in the salt bridge migrate to the ANODE and CATIONS to the CATHODE, maintaining charge balance.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"ANIONEN in der Salzbrücke wandern zur ANODE und KATIONEN wandern zur KATHODE und sorgen für den Ladungsausgleich.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les ANIONS dans le pont salin migrent vers l'ANODE et les CATIONS migrent vers la CATHOD et assurent l'équilibre des charges.\". Notion fondamentale du programme officiel de chimie.",
+        "fr": "L'affirmation exacte est: \"Les ANIONS du pont salin migrent vers l'ANODE et les CATIONS vers la CATHODE, ce qui assure l'équilibre des charges.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «АНИОНЫ в солевом мостике мигрируют к АНОДУ, а КАТИОНЫ мигрируют к КАТОДУ и обеспечивают баланс заряда.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تهاجر الأنيونات الموجودة في جسر الملح إلى الأنود وتهاجر الكاتيونات إلى الكاثود وتضمن توازن الشحن.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"تهاجر الأنيونات في القنطرة الملحية نحو الأنود والكاتيونات نحو الكاثود فتحافظ على توازن الشحنات.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“盐桥中的阴离子迁移到阳极，阳离子迁移到阴极并确保电荷平衡。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"ANIONÊN di pira xwê de ber bi ANODEyê û CATIONS koçî CATHODê dikin û hevsengiya barkirinê misoger dikin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"ANYONÊN di pira xwê de ber bi ANODÊ, KATYON jî ber bi KATODÊ ve koç dikin û hevsengiya barê diparêzin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1128,13 +1128,13 @@ export const unit21: ChemistryUnitSeedData = {
       "options": [
         {
           "tr": "Pil çalıştıkça anot elektrotun kütlesi katlanır.",
-          "en": "As the battery operates, the mass of the anode electrode increases.",
-          "de": "Während die Batterie in Betrieb ist, nimmt die Masse der Anodenelektrode zu.",
-          "fr": "Au fur et à mesure que la batterie fonctionne, la masse de l'électrode anodique augmente.",
-          "ru": "По мере работы аккумулятора масса анодного электрода увеличивается.",
-          "ar": "ومع تشغيل البطارية، تزداد كتلة القطب الموجب.",
-          "zh": "随着电池的工作，阳极电极的质量增加。",
-          "ku": "Her ku pîlê kar dike, girseya elektrodê anode zêde dibe."
+          "en": "As the cell operates, the mass of the anode electrode increases.",
+          "de": "Während die Zelle arbeitet, nimmt die Masse der Anode zu.",
+          "fr": "Pendant le fonctionnement de la pile, la masse de l'anode augmente.",
+          "ru": "При работе элемента масса анода увеличивается.",
+          "ar": "أثناء عمل الخلية تزداد كتلة قطب الأنود.",
+          "zh": "电池工作时，阳极质量增加。",
+          "ku": "Dema pîl dixebite, girseya anodê zêde dibe."
         },
         {
           "tr": "Nernst eşitliğinde pil potansiyeli derişimden etkilenmez.",
@@ -1147,24 +1147,24 @@ export const unit21: ChemistryUnitSeedData = {
           "ku": "Di hevkêşana Nernst de, potansiyela bataryayê ji hêla konsantrebûnê ve nayê bandor kirin."
         },
         {
-          "tr": "Pil ısıtıldığında gerilimi artar ve daha çok akım üretir.",
-          "en": "When the battery is heated, its voltage increases and it produces more current.",
-          "de": "Wenn sich die Batterie erwärmt, erhöht sich ihre Spannung und sie erzeugt mehr Strom.",
-          "fr": "Lorsque la batterie chauffe, sa tension augmente et elle produit plus de courant.",
-          "ru": "Когда аккумулятор нагревается, его напряжение увеличивается и он производит больший ток.",
-          "ar": "عندما يتم تسخين البطارية، يزداد جهدها وينتج تيارًا أكبر.",
-          "zh": "当电池受热时，其电压会增加并产生更多电流。",
-          "ku": "Dema ku pîlê tê germ kirin, voltaja wê zêde dibe û herik zêde çêdike."
+          "tr": "Ekzotermik bir pil tepkimesinde sıcaklık artırılırsa pil gerilimi artar.",
+          "en": "For an exothermic cell reaction, raising the temperature increases the cell voltage.",
+          "de": "Bei einer exothermen Zellreaktion steigt die Zellspannung, wenn die Temperatur erhöht wird.",
+          "fr": "Pour une réaction de pile exothermique, une hausse de température augmente la tension de la pile.",
+          "ru": "Для экзотермической реакции в элементе повышение температуры увеличивает напряжение элемента.",
+          "ar": "في تفاعل خلية طارد للحرارة، يؤدي رفع درجة الحرارة إلى زيادة جهد الخلية.",
+          "zh": "对放热的电池反应，升高温度会使电池电压升高。",
+          "ku": "Di reaksiyoneke pîlê ya ekzotermîk de, zêdekirina germahiyê voltaja pîlê zêde dike."
         },
         {
           "tr": "Standart pil potansiyeli: E°pil = E°yüks(anot) + E°ind(katot) tur; E°pil > 0 ise tepkime istemlidir.",
-          "en": "Standard battery potential: E°battery = E°high(anode) + E°ind(cathode); If E°pil > 0, the reaction is voluntary.",
-          "de": "Standardbatteriepotential: E°Batterie = E°hoch(Anode) + E°ind(Kathode); Wenn E°pil > 0 ist, ist die Reaktion freiwillig.",
-          "fr": "Potentiel de batterie standard : E°batterie = E°haut (anode) + E°ind (cathode) ; Si E°pil > 0, la réaction est volontaire.",
-          "ru": "Стандартный потенциал батареи: E°battery = E°high(анод) + E°ind(катод); Если E°pil > 0, реакция является произвольной.",
-          "ar": "إمكانات البطارية القياسية: E°battery = E°high(anode) + E°ind(catode); إذا كان E°pil > 0، فإن التفاعل يكون إراديًا.",
-          "zh": "标准电池电位：E°电池=E°high（阳极）+E°ind（阴极）；如果 E°pil > 0，则反应是自愿的。",
-          "ku": "Potansiyela bataryayê ya standard: E°baterî = E°bilind(anode) + E°ind(katod); Ger E°pil > 0, reaksîyon bi dilxwazî ​​ye."
+          "en": "Standard cell potential: E°cell = E°ox(anode) + E°red(cathode); if E°cell > 0, the reaction is spontaneous.",
+          "de": "Standardzellpotential: E°Zelle = E°Ox(Anode) + E°Red(Kathode); ist E°Zelle > 0, verläuft die Reaktion freiwillig (spontan).",
+          "fr": "Potentiel standard de pile : E°pile = E°ox(anode) + E°réd(cathode) ; si E°pile > 0, la réaction est spontanée.",
+          "ru": "Стандартный потенциал элемента: E°эл = E°ок(анод) + E°восст(катод); если E°эл > 0, реакция протекает самопроизвольно.",
+          "ar": "جهد الخلية القياسي: E°خلية = E°تأكسد(الأنود) + E°اختزال(الكاثود)؛ إذا كان E°خلية > 0 فالتفاعل تلقائي.",
+          "zh": "标准电池电势：E°电池 = E°氧化(阳极) + E°还原(阴极)；若 E°电池 > 0，则反应自发进行。",
+          "ku": "Potansiyela standard a pîlê: E°pîl = E°oks(anod) + E°red(katod); heke E°pîl > 0 be, reaksiyon xweber e."
         },
         {
           "tr": "Daniell pilinde bakır elektrot anot olarak davranır.",
@@ -1180,13 +1180,13 @@ export const unit21: ChemistryUnitSeedData = {
       "correctIndex": 3,
       "explanation": {
         "tr": "Doğru cevap \"Standart pil potansiyeli: E°pil = E°yüks(anot) + E°ind(katot) tur; E°pil > 0 ise tepkime istemlidir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Standard battery potential: E°battery = E°high(anode) + E°ind(cathode); If E°pil > 0, the reaction is voluntary.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Standardbatteriepotential: E°Batterie = E°hoch(Anode) + E°ind(Kathode); Wenn E°pil > 0 ist, ist die Reaktion freiwillig.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Potentiel de batterie standard : E°batterie = E°haut (anode) + E°ind (cathode) ; Si E°pil > 0, la réaction est volontaire.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Стандартный потенциал батареи: E°battery = E°high(анод) + E°ind(катод); Если E°pil > 0, реакция является произвольной.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"إمكانات البطارية القياسية: E°battery = E°high(anode) + E°ind(catode); إذا كان E°pil > 0، فإن التفاعل يكون إراديًا.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“标准电池电位：E°电池=E°high（阳极）+E°ind（阴极）；如果 E°pil > 0，则反应是自愿的。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Potansiyela bataryayê ya standard: E°baterî = E°bilind(anode) + E°ind(katod); Ger E°pil > 0, reaksîyon bi dilxwazî ​​ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Standard cell potential: E°cell = E°ox(anode) + E°red(cathode); if E°cell > 0, the reaction is spontaneous.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Standardzellpotential: E°Zelle = E°Ox(Anode) + E°Red(Kathode); ist E°Zelle > 0, verläuft die Reaktion freiwillig (spontan).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Potentiel standard de pile : E°pile = E°ox(anode) + E°réd(cathode) ; si E°pile > 0, la réaction est spontanée.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Стандартный потенциал элемента: E°эл = E°ок(анод) + E°восст(катод); если E°эл > 0, реакция протекает самопроизвольно.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"جهد الخلية القياسي: E°خلية = E°تأكسد(الأنود) + E°اختزال(الكاثود)؛ إذا كان E°خلية > 0 فالتفاعل تلقائي.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“标准电池电势：E°电池 = E°氧化(阳极) + E°还原(阴极)；若 E°电池 > 0，则反应自发进行。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Potansiyela standard a pîlê: E°pîl = E°oks(anod) + E°red(katod); heke E°pîl > 0 be, reaksiyon xweber e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1220,7 +1220,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "В концентрационных батареях анодом является элемент с наибольшей концентрацией.",
           "ar": "في بطاريات التركيز، الخلية ذات التركيز الأعلى هي الأنود.",
           "zh": "在浓差电池中，浓度最高的电池是阳极。",
-          "ku": "Di bataryayên konsantrekirinê de, şaneya ku herî zêde giranî lê heye anode ye."
+          "ku": "Di pîlên tîrbûnê de hucreya ku tîrbûna wê mezintir e anod e."
         },
         {
           "tr": "Tepkime 2 ile çarpılırsa E°pil de 2 ile çarpılır.",
@@ -1243,26 +1243,26 @@ export const unit21: ChemistryUnitSeedData = {
           "ku": "Madeya ku elektronan distîne tê oksîdan."
         },
         {
-          "tr": "Standart Hidrojen Elektrodu (SHE): 25 °C, 1 atm H2 gazı ve 1 M H+ çözeltisi içerir; potansiyeli 0.00 V kabul edilir.",
+          "tr": "Standart Hidrojen Elektrodu (SHE): 25 °C, 1 atm H2 gazı ve 1 M H+ çözeltisi içerir; potansiyeli 0,00 V kabul edilir.",
           "en": "Standard Hydrogen Electrode (SHE): 25 °C, contains 1 atm H2 gas and 1 M H+ solution; potential is accepted as 0.00 V.",
           "de": "Standard-Wasserstoffelektrode (SHE): 25 °C, enthält 1 atm H2-Gas und 1 M H+-Lösung; Das Potential wird mit 0,00 V angenommen.",
           "fr": "Électrode à hydrogène standard (SHE) : 25 °C, contient 1 atm de gaz H2 et 1 M de solution H+ ; le potentiel est accepté comme 0,00 V.",
           "ru": "Стандартный водородный электрод (SHE): 25 °C, содержит 1 атм газа H2 и 1 M раствор H+; потенциал принимается равным 0,00 В.",
-          "ar": "قطب الهيدروجين القياسي (SHE): 25 درجة مئوية، يحتوي على 1 atm H2 غاز ومحلول 1 MH+؛ يتم قبول الإمكانات على أنها 0.00 فولت.",
+          "ar": "قطب الهيدروجين القياسي (SHE): عند 25 °C يحتوي على غاز H2 تحت ضغط 1 atm ومحلول H+ تركيزه 1 M؛ ويُعتبر جهده 0.00 V.",
           "zh": "标准氢电极（SHE）：25℃，含有1atm H2气体和1M H+溶液；电位接受为 0.00 V。",
-          "ku": "Elektroda Hîdrojen a Standard (SHE): 25 °C, 1 atm gaza H2 û çareseriya 1 M H+ heye; potansiyel wekî 0.00 V tê pejirandin."
+          "ku": "Elektroda Hîdrojenê ya Standard (SHE): li 25 °C gaza H2 ya 1 atm û çareseriya H+ ya 1 M dihewîne; potansiyela wê 0,00 V tê qebûlkirin."
         }
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Standart Hidrojen Elektrodu (SHE): 25 °C, 1 atm H2 gazı ve 1 M H+ çözeltisi içerir; potansiyeli 0.00 V kabul edilir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Standart Hidrojen Elektrodu (SHE): 25 °C, 1 atm H2 gazı ve 1 M H+ çözeltisi içerir; potansiyeli 0,00 V kabul edilir.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Standard Hydrogen Electrode (SHE): 25 °C, contains 1 atm H2 gas and 1 M H+ solution; potential is accepted as 0.00 V.\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Standard-Wasserstoffelektrode (SHE): 25 °C, enthält 1 atm H2-Gas und 1 M H+-Lösung; Das Potential wird mit 0,00 V angenommen.\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Électrode à hydrogène standard (SHE) : 25 °C, contient 1 atm de gaz H2 et 1 M de solution H+ ; le potentiel est accepté comme 0,00 V.\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Стандартный водородный электрод (SHE): 25 °C, содержит 1 атм газа H2 и 1 M раствор H+; потенциал принимается равным 0,00 В.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"قطب الهيدروجين القياسي (SHE): 25 درجة مئوية، يحتوي على 1 atm H2 غاز ومحلول 1 MH+؛ يتم قبول الإمكانات على أنها 0.00 فولت.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"قطب الهيدروجين القياسي (SHE): عند 25 °C يحتوي على غاز H2 تحت ضغط 1 atm ومحلول H+ تركيزه 1 M؛ ويُعتبر جهده 0.00 V.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“标准氢电极（SHE）：25℃，含有1atm H2气体和1M H+溶液；电位接受为 0.00 V。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Elektroda Hîdrojen a Standard (SHE): 25 °C, 1 atm gaza H2 û çareseriya 1 M H+ heye; potansiyel wekî 0.00 V tê pejirandin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Elektroda Hîdrojenê ya Standard (SHE): li 25 °C gaza H2 ya 1 atm û çareseriya H+ ya 1 M dihewîne; potansiyela wê 0,00 V tê qebûlkirin.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1284,9 +1284,9 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "Das Metall mit der größeren Aktivität ist die Anode (das Metall mit dem größeren Oxidationspotential wird zur Anode).",
           "fr": "Le métal ayant la plus grande activité est l'anode (le métal ayant le plus grand potentiel d'oxydation devient l'anode).",
           "ru": "Металл с большей активностью является анодом (анодом становится металл с большим окислительным потенциалом).",
-          "ar": "المعدن ذو النشاط الأكبر هو الأنود (المعدن الذي يتمتع بقدرة أكسدة أكبر يصبح الأنود).",
+          "ar": "الفلز الأكثر نشاطًا هو الأنود (الفلز ذو جهد التأكسد الأكبر يكون الأنود).",
           "zh": "活性较大的金属是阳极（氧化电位较大的金属成为阳极）。",
-          "ku": "Metala bi çalakiyek mezintir anod e (metalê ku potansiyela oksîdasyonê mezintir dibe anod)."
+          "ku": "Metala çalaktir anod e (metala ku potansiyela wê ya oksîdasyonê mezintir e dibe anod)."
         },
         {
           "tr": "Katot çözeltisine su eklendiğinde pil gerilimi yükselir.",
@@ -1324,9 +1324,9 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "An der Anode findet die Reduktion statt.",
           "fr": "La réduction a lieu à l'anode.",
           "ru": "Восстановление происходит на аноде.",
-          "ar": "يحدث التخفيض عند الأنود.",
+          "ar": "يحدث الاختزال عند الأنود.",
           "zh": "还原发生在阳极。",
-          "ku": "Kêmkirin li anode pêk tê."
+          "ku": "Reduksiyon li anodê pêk tê."
         }
       ],
       "correctIndex": 0,
@@ -1336,9 +1336,9 @@ export const unit21: ChemistryUnitSeedData = {
         "de": "Die zutreffende Aussage lautet: \"Das Metall mit der größeren Aktivität ist die Anode (das Metall mit dem größeren Oxidationspotential wird zur Anode).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Le métal ayant la plus grande activité est l'anode (le métal ayant le plus grand potentiel d'oxydation devient l'anode).\". Notion fondamentale du programme officiel de chimie.",
         "ru": "Правильное утверждение: «Металл с большей активностью является анодом (анодом становится металл с большим окислительным потенциалом).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"المعدن ذو النشاط الأكبر هو الأنود (المعدن الذي يتمتع بقدرة أكسدة أكبر يصبح الأنود).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "ar": "العبارة الصحيحة هي: \"الفلز الأكثر نشاطًا هو الأنود (الفلز ذو جهد التأكسد الأكبر يكون الأنود).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“活性较大的金属是阳极（氧化电位较大的金属成为阳极）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Metala bi çalakiyek mezintir anod e (metalê ku potansiyela oksîdasyonê mezintir dibe anod).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Metala çalaktir anod e (metala ku potansiyela wê ya oksîdasyonê mezintir e dibe anod).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1366,23 +1366,23 @@ export const unit21: ChemistryUnitSeedData = {
         },
         {
           "tr": "Pil çalıştıkça anot elektrot kütlesi genellikle aşınarak azalır; katot elektrot üzerinde madde toplanır kütlesi artar.",
-          "en": "As the battery operates, the anode electrode mass generally decreases through wear; As matter accumulates on the cathode electrode, its mass increases.",
-          "de": "Während die Batterie in Betrieb ist, nimmt die Masse der Anodenelektrode im Allgemeinen durch Verschleiß ab; Wenn sich Materie an der Kathodenelektrode ansammelt, nimmt deren Masse zu.",
-          "fr": "Au fur et à mesure que la batterie fonctionne, la masse de l'électrode anodique diminue généralement à cause de l'usure ; À mesure que la matière s’accumule sur l’électrode cathodique, sa masse augmente.",
-          "ru": "Во время работы батареи масса анодного электрода обычно уменьшается из-за износа; По мере накопления вещества на катодном электроде его масса увеличивается.",
-          "ar": "أثناء تشغيل البطارية، تنخفض كتلة القطب الكهربائي بشكل عام من خلال التآكل؛ ومع تراكم المادة على القطب السالب، تزداد كتلتها.",
-          "zh": "当电池工作时，阳极电极质量通常会因磨损而减少；随着物质在阴极上积聚，其质量会增加。",
-          "ku": "Gava ku pîlê kar dike, girseya elektrodê anodê bi gelemperî bi cilê kêm dibe; Her ku madde li ser elektroda katodê kom dibe, girseya wê zêde dibe."
+          "en": "As the cell operates, the mass of the anode electrode usually decreases as it is consumed; substance deposits on the cathode electrode and its mass increases.",
+          "de": "Während die Zelle arbeitet, nimmt die Masse der Anode meist ab, da sie sich auflöst; an der Kathode scheidet sich Stoff ab und ihre Masse nimmt zu.",
+          "fr": "Pendant le fonctionnement de la pile, la masse de l'anode diminue généralement car elle se dissout ; de la matière se dépose sur la cathode, dont la masse augmente.",
+          "ru": "При работе элемента масса анода обычно уменьшается, так как он растворяется; на катоде осаждается вещество, и его масса увеличивается.",
+          "ar": "أثناء عمل الخلية تنقص كتلة قطب الأنود عادةً لأنه يتآكل، وتترسب المادة على قطب الكاثود فتزداد كتلته.",
+          "zh": "电池工作时，阳极因溶解而质量通常减小；物质在阴极上沉积，阴极质量增加。",
+          "ku": "Dema pîl dixebite, girseya anodê bi gelemperî kêm dibe ji ber ku dihele; li ser katodê made kom dibe û girseya wê zêde dibe."
         },
         {
-          "tr": "Pil ısıtıldığında gerilimi artar ve daha çok akım üretir.",
-          "en": "When the battery is heated, its voltage increases and it produces more current.",
-          "de": "Wenn sich die Batterie erwärmt, erhöht sich ihre Spannung und sie erzeugt mehr Strom.",
-          "fr": "Lorsque la batterie chauffe, sa tension augmente et elle produit plus de courant.",
-          "ru": "Когда аккумулятор нагревается, его напряжение увеличивается и он производит больший ток.",
-          "ar": "عندما يتم تسخين البطارية، يزداد جهدها وينتج تيارًا أكبر.",
-          "zh": "当电池受热时，其电压会增加并产生更多电流。",
-          "ku": "Dema ku pîlê tê germ kirin, voltaja wê zêde dibe û herik zêde çêdike."
+          "tr": "Ekzotermik bir pil tepkimesinde sıcaklık artırılırsa pil gerilimi artar.",
+          "en": "For an exothermic cell reaction, raising the temperature increases the cell voltage.",
+          "de": "Bei einer exothermen Zellreaktion steigt die Zellspannung, wenn die Temperatur erhöht wird.",
+          "fr": "Pour une réaction de pile exothermique, une hausse de température augmente la tension de la pile.",
+          "ru": "Для экзотермической реакции в элементе повышение температуры увеличивает напряжение элемента.",
+          "ar": "في تفاعل خلية طارد للحرارة، يؤدي رفع درجة الحرارة إلى زيادة جهد الخلية.",
+          "zh": "对放热的电池反应，升高温度会使电池电压升高。",
+          "ku": "Di reaksiyoneke pîlê ya ekzotermîk de, zêdekirina germahiyê voltaja pîlê zêde dike."
         },
         {
           "tr": "Daniell pilinde bakır elektrot anot olarak davranır.",
@@ -1408,13 +1408,13 @@ export const unit21: ChemistryUnitSeedData = {
       "correctIndex": 1,
       "explanation": {
         "tr": "Doğru cevap \"Pil çalıştıkça anot elektrot kütlesi genellikle aşınarak azalır; katot elektrot üzerinde madde toplanır kütlesi artar.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"As the battery operates, the anode electrode mass generally decreases through wear; As matter accumulates on the cathode electrode, its mass increases.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Während die Batterie in Betrieb ist, nimmt die Masse der Anodenelektrode im Allgemeinen durch Verschleiß ab; Wenn sich Materie an der Kathodenelektrode ansammelt, nimmt deren Masse zu.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Au fur et à mesure que la batterie fonctionne, la masse de l'électrode anodique diminue généralement à cause de l'usure ; À mesure que la matière s’accumule sur l’électrode cathodique, sa masse augmente.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Во время работы батареи масса анодного электрода обычно уменьшается из-за износа; По мере накопления вещества на катодном электроде его масса увеличивается.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"أثناء تشغيل البطارية، تنخفض كتلة القطب الكهربائي بشكل عام من خلال التآكل؛ ومع تراكم المادة على القطب السالب، تزداد كتلتها.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“当电池工作时，阳极电极质量通常会因磨损而减少；随着物质在阴极上积聚，其质量会增加。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Gava ku pîlê kar dike, girseya elektrodê anodê bi gelemperî bi cilê kêm dibe; Her ku madde li ser elektroda katodê kom dibe, girseya wê zêde dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"As the cell operates, the mass of the anode electrode usually decreases as it is consumed; substance deposits on the cathode electrode and its mass increases.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Während die Zelle arbeitet, nimmt die Masse der Anode meist ab, da sie sich auflöst; an der Kathode scheidet sich Stoff ab und ihre Masse nimmt zu.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Pendant le fonctionnement de la pile, la masse de l'anode diminue généralement car elle se dissout ; de la matière se dépose sur la cathode, dont la masse augmente.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «При работе элемента масса анода обычно уменьшается, так как он растворяется; на катоде осаждается вещество, и его масса увеличивается.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"أثناء عمل الخلية تنقص كتلة قطب الأنود عادةً لأنه يتآكل، وتترسب المادة على قطب الكاثود فتزداد كتلته.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“电池工作时，阳极因溶解而质量通常减小；物质在阴极上沉积，阴极质量增加。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Dema pîl dixebite, girseya anodê bi gelemperî kêm dibe ji ber ku dihele; li ser katodê made kom dibe û girseya wê zêde dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1438,7 +1438,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "В концентрационных батареях анодом является элемент с наибольшей концентрацией.",
           "ar": "في بطاريات التركيز، الخلية ذات التركيز الأعلى هي الأنود.",
           "zh": "在浓差电池中，浓度最高的电池是阳极。",
-          "ku": "Di bataryayên konsantrekirinê de, şaneya ku herî zêde giranî lê heye anode ye."
+          "ku": "Di pîlên tîrbûnê de hucreya ku tîrbûna wê mezintir e anod e."
         },
         {
           "tr": "Tepkime 2 ile çarpılırsa E°pil de 2 ile çarpılır.",
@@ -1472,13 +1472,13 @@ export const unit21: ChemistryUnitSeedData = {
         },
         {
           "tr": "E°pil negatif olduğunda pil kendiliğinden çalışır ve elektrik üretir.",
-          "en": "When E°battery is negative, the battery works on its own and produces electricity.",
-          "de": "Wenn die E°-Batterie negativ ist, arbeitet die Batterie selbstständig und produziert Strom.",
-          "fr": "Lorsque E°batterie est négatif, la batterie fonctionne toute seule et produit de l'électricité.",
-          "ru": "Когда E°battery имеет отрицательное значение, батарея работает сама по себе и производит электричество.",
-          "ar": "عندما تكون البطارية E سالبة، تعمل البطارية من تلقاء نفسها وتنتج الكهرباء.",
-          "zh": "当E°电池为负极时，电池自行工作并产生电力。",
-          "ku": "Dema ku batarya E° neyînî be, pîlê bi serê xwe dixebite û elektrîkê çêdike."
+          "en": "When E°cell is negative, the cell works by itself and produces electricity.",
+          "de": "Wenn E°Zelle negativ ist, arbeitet die Zelle von selbst und erzeugt elektrischen Strom.",
+          "fr": "Lorsque E°pile est négatif, la pile fonctionne d'elle-même et produit de l'électricité.",
+          "ru": "Когда E°эл отрицателен, элемент работает самопроизвольно и вырабатывает электричество.",
+          "ar": "عندما يكون E°خلية سالبًا تعمل الخلية تلقائيًا وتنتج الكهرباء.",
+          "zh": "当 E°电池 为负值时，电池能自发工作并产生电能。",
+          "ku": "Dema E°pîl neyînî be, pîl bi xwe dixebite û elektrîkê çêdike."
         }
       ],
       "correctIndex": 2,
@@ -1532,9 +1532,9 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "An der Anode findet die Reduktion statt.",
           "fr": "La réduction a lieu à l'anode.",
           "ru": "Восстановление происходит на аноде.",
-          "ar": "يحدث التخفيض عند الأنود.",
+          "ar": "يحدث الاختزال عند الأنود.",
           "zh": "还原发生在阳极。",
-          "ku": "Kêmkirin li anode pêk tê."
+          "ku": "Reduksiyon li anodê pêk tê."
         },
         {
           "tr": "Katot yarı hücresine saf su eklenirse katot iyon derişimi azalır, denge girenlere kayar ve pil potansiyeli azalır.",
@@ -1547,14 +1547,14 @@ export const unit21: ChemistryUnitSeedData = {
           "ku": "Ger ava paqij li nîv şaneya katodê were zêdekirin, kombûna îyona katodê kêm dibe, hevseng ber bi reaktantan ve diçe û potansiyela pîlê kêm dibe."
         },
         {
-          "tr": "Standart hidrojen elektrodunun gerilimi 1.00 V tur.",
+          "tr": "Standart hidrojen elektrodunun gerilimi 1,00 V tur.",
           "en": "The voltage of the standard hydrogen electrode is 1.00 V.",
           "de": "Die Spannung der Standard-Wasserstoffelektrode beträgt 1,00 V.",
           "fr": "La tension de l'électrode à hydrogène standard est de 1,00 V.",
           "ru": "Напряжение стандартного водородного электрода составляет 1,00 В.",
           "ar": "جهد قطب الهيدروجين القياسي هو 1.00 V.",
           "zh": "标准氢电极的电压为1.00V。",
-          "ku": "Voltaja elektroda hîdrojenê ya standard 1.00 V e."
+          "ku": "Voltaja elektroda hîdrojenê ya standard 1,00 V e."
         }
       ],
       "correctIndex": 3,
@@ -1583,14 +1583,14 @@ export const unit21: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Pil ısıtıldığında gerilimi artar ve daha çok akım üretir.",
-          "en": "When the battery is heated, its voltage increases and it produces more current.",
-          "de": "Wenn sich die Batterie erwärmt, erhöht sich ihre Spannung und sie erzeugt mehr Strom.",
-          "fr": "Lorsque la batterie chauffe, sa tension augmente et elle produit plus de courant.",
-          "ru": "Когда аккумулятор нагревается, его напряжение увеличивается и он производит больший ток.",
-          "ar": "عندما يتم تسخين البطارية، يزداد جهدها وينتج تيارًا أكبر.",
-          "zh": "当电池受热时，其电压会增加并产生更多电流。",
-          "ku": "Dema ku pîlê tê germ kirin, voltaja wê zêde dibe û herik zêde çêdike."
+          "tr": "Ekzotermik bir pil tepkimesinde sıcaklık artırılırsa pil gerilimi artar.",
+          "en": "For an exothermic cell reaction, raising the temperature increases the cell voltage.",
+          "de": "Bei einer exothermen Zellreaktion steigt die Zellspannung, wenn die Temperatur erhöht wird.",
+          "fr": "Pour une réaction de pile exothermique, une hausse de température augmente la tension de la pile.",
+          "ru": "Для экзотермической реакции в элементе повышение температуры увеличивает напряжение элемента.",
+          "ar": "في تفاعل خلية طارد للحرارة، يؤدي رفع درجة الحرارة إلى زيادة جهد الخلية.",
+          "zh": "对放热的电池反应，升高温度会使电池电压升高。",
+          "ku": "Di reaksiyoneke pîlê ya ekzotermîk de, zêdekirina germahiyê voltaja pîlê zêde dike."
         },
         {
           "tr": "Daniell pilinde bakır elektrot anot olarak davranır.",
@@ -1614,16 +1614,16 @@ export const unit21: ChemistryUnitSeedData = {
         },
         {
           "tr": "İndirgenme potansiyeli büyük olan metal anot kutbudur.",
-          "en": "It is the metal anode pole with high reduction potential.",
-          "de": "Es ist der Metallanodenpol mit hohem Reduktionspotential.",
-          "fr": "C'est le pôle anode métallique à haut potentiel de réduction.",
-          "ru": "Это металлический анод с высоким восстановительным потенциалом.",
-          "ar": "إنه قطب الأنود المعدني ذو إمكانية التخفيض العالية.",
-          "zh": "它是具有高还原电位的金属阳极极。",
-          "ku": "Ew pola anodê ya metal e ku bi potansiyela kêmkirina bilind e."
+          "en": "The metal with the greater reduction potential is the anode.",
+          "de": "Das Metall mit dem größeren Reduktionspotential ist die Anode.",
+          "fr": "Le métal ayant le plus grand potentiel de réduction est l'anode.",
+          "ru": "Металл с большим потенциалом восстановления является анодом.",
+          "ar": "الفلز ذو جهد الاختزال الأكبر هو الأنود.",
+          "zh": "还原电势较大的金属是阳极。",
+          "ku": "Metala ku potansiyela wê ya reduksiyonê mezintir e anod e."
         },
         {
-          "tr": "Nernst Eşitliği: Epil = E°pil - (0.0592 / n) * log Q dur (n: aktarılan elektron mol sayısı, Q: anot/katot derişim oranı).",
+          "tr": "Nernst Eşitliği: Epil = E°pil - (0,0592 / n) * log Q dur (n: aktarılan elektron mol sayısı, Q: anot/katot derişim oranı).",
           "en": "Nernst Equation: Epil = E°pil - (0.0592 / n) * log Q (n: number of electron moles transferred, Q: anode/cathode concentration ratio).",
           "de": "Nernst-Gleichung: Epil = E°pil - (0,0592 / n) * log Q (n: Anzahl der übertragenen Elektronenmole, Q: Konzentrationsverhältnis Anode/Kathode).",
           "fr": "Equation de Nernst : Epil = E°pil - (0,0592 / n) * log Q (n : nombre de moles électroniques transférées, Q : rapport de concentration anode/cathode).",
@@ -1635,7 +1635,7 @@ export const unit21: ChemistryUnitSeedData = {
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Nernst Eşitliği: Epil = E°pil - (0.0592 / n) * log Q dur (n: aktarılan elektron mol sayısı, Q: anot/katot derişim oranı).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "tr": "Doğru cevap \"Nernst Eşitliği: Epil = E°pil - (0,0592 / n) * log Q dur (n: aktarılan elektron mol sayısı, Q: anot/katot derişim oranı).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
         "en": "The correct statement is: \"Nernst Equation: Epil = E°pil - (0.0592 / n) * log Q (n: number of electron moles transferred, Q: anode/cathode concentration ratio).\". Verified fundamental chemical concept in the official curriculum.",
         "de": "Die zutreffende Aussage lautet: \"Nernst-Gleichung: Epil = E°pil - (0,0592 / n) * log Q (n: Anzahl der übertragenen Elektronenmole, Q: Konzentrationsverhältnis Anode/Kathode).\". Gesichertes chemisches Grundprinzip.",
         "fr": "L'affirmation exacte est: \"Equation de Nernst : Epil = E°pil - (0,0592 / n) * log Q (n : nombre de moles électroniques transférées, Q : rapport de concentration anode/cathode).\". Notion fondamentale du programme officiel de chimie.",
@@ -1666,7 +1666,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Концентрационные батареи: устанавливаются с одним и тем же электродом и разными концентрациями одних и тех же растворов; Полуэлемент с небольшой концентрацией – АНОД.",
           "ar": "بطاريات التركيز: يتم إنشاؤها بنفس القطب وتركيزات مختلفة لنفس المحاليل؛ نصف الخلية ذات التركيز الصغير هو الأنود.",
           "zh": "浓差电池：用相同的电极和不同浓度的相同溶液建立的；浓度小的半电池为阳极。",
-          "ku": "Batteries Concentration: Ew bi heman elektrodê û kêşeyên cûda yên heman çareseriyê têne saz kirin; Nîv-şaneya bi konsantreya piçûk ANODE ye."
+          "ku": "Pîlên tîrbûnê: bi heman elektrodê û bi tîrbûnên cuda yên heman çareseriyê têne sazkirin; nîvhucreya ku tîrbûna wê kêmtir e ANOD e."
         },
         {
           "tr": "Tepkime 2 ile çarpılırsa E°pil de 2 ile çarpılır.",
@@ -1690,23 +1690,23 @@ export const unit21: ChemistryUnitSeedData = {
         },
         {
           "tr": "E°pil negatif olduğunda pil kendiliğinden çalışır ve elektrik üretir.",
-          "en": "When E°battery is negative, the battery works on its own and produces electricity.",
-          "de": "Wenn die E°-Batterie negativ ist, arbeitet die Batterie selbstständig und produziert Strom.",
-          "fr": "Lorsque E°batterie est négatif, la batterie fonctionne toute seule et produit de l'électricité.",
-          "ru": "Когда E°battery имеет отрицательное значение, батарея работает сама по себе и производит электричество.",
-          "ar": "عندما تكون البطارية E سالبة، تعمل البطارية من تلقاء نفسها وتنتج الكهرباء.",
-          "zh": "当E°电池为负极时，电池自行工作并产生电力。",
-          "ku": "Dema ku batarya E° neyînî be, pîlê bi serê xwe dixebite û elektrîkê çêdike."
+          "en": "When E°cell is negative, the cell works by itself and produces electricity.",
+          "de": "Wenn E°Zelle negativ ist, arbeitet die Zelle von selbst und erzeugt elektrischen Strom.",
+          "fr": "Lorsque E°pile est négatif, la pile fonctionne d'elle-même et produit de l'électricité.",
+          "ru": "Когда E°эл отрицателен, элемент работает самопроизвольно и вырабатывает электричество.",
+          "ar": "عندما يكون E°خلية سالبًا تعمل الخلية تلقائيًا وتنتج الكهرباء.",
+          "zh": "当 E°电池 为负值时，电池能自发工作并产生电能。",
+          "ku": "Dema E°pîl neyînî be, pîl bi xwe dixebite û elektrîkê çêdike."
         },
         {
           "tr": "Pil çalıştıkça anot elektrotun kütlesi katlanır.",
-          "en": "As the battery operates, the mass of the anode electrode increases.",
-          "de": "Während die Batterie in Betrieb ist, nimmt die Masse der Anodenelektrode zu.",
-          "fr": "Au fur et à mesure que la batterie fonctionne, la masse de l'électrode anodique augmente.",
-          "ru": "По мере работы аккумулятора масса анодного электрода увеличивается.",
-          "ar": "ومع تشغيل البطارية، تزداد كتلة القطب الموجب.",
-          "zh": "随着电池的工作，阳极电极的质量增加。",
-          "ku": "Her ku pîlê kar dike, girseya elektrodê anode zêde dibe."
+          "en": "As the cell operates, the mass of the anode electrode increases.",
+          "de": "Während die Zelle arbeitet, nimmt die Masse der Anode zu.",
+          "fr": "Pendant le fonctionnement de la pile, la masse de l'anode augmente.",
+          "ru": "При работе элемента масса анода увеличивается.",
+          "ar": "أثناء عمل الخلية تزداد كتلة قطب الأنود.",
+          "zh": "电池工作时，阳极质量增加。",
+          "ku": "Dema pîl dixebite, girseya anodê zêde dibe."
         }
       ],
       "correctIndex": 0,
@@ -1718,7 +1718,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Концентрационные батареи: устанавливаются с одним и тем же электродом и разными концентрациями одних и тех же растворов; Полуэлемент с небольшой концентрацией – АНОД.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"بطاريات التركيز: يتم إنشاؤها بنفس القطب وتركيزات مختلفة لنفس المحاليل؛ نصف الخلية ذات التركيز الصغير هو الأنود.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“浓差电池：用相同的电极和不同浓度的相同溶液建立的；浓度小的半电池为阳极。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Batteries Concentration: Ew bi heman elektrodê û kêşeyên cûda yên heman çareseriyê têne saz kirin; Nîv-şaneya bi konsantreya piçûk ANODE ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Pîlên tîrbûnê: bi heman elektrodê û bi tîrbûnên cuda yên heman çareseriyê têne sazkirin; nîvhucreya ku tîrbûna wê kêmtir e ANOD e.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1752,7 +1752,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "Когда концентрации в концентрационной батарее выравниваются, система достигает равновесия и напряжение батареи становится Epil = 0 (батарея разряжается).",
           "ar": "عندما تتساوى التركيزات في بطارية التركيز، يصل النظام إلى التوازن ويصبح جهد البطارية Epil = 0 (نفاد البطارية).",
           "zh": "当浓差电池中的浓度均衡时，系统达到平衡，电池电压变为Epil = 0（电池耗尽）。",
-          "ku": "Dema ku tansiyonên di pîlê komandî de wekhev dibin, pergal digihîje hevsengiyê û voltaja pîlê dibe Epil = 0 (baterî diqede)."
+          "ku": "Di pîla tîrbûnê de dema tîrbûn wekhev dibin, sîstem digihîje hevsengiyê û voltaja pîlê dibe Epîl = 0 (pîl diqede)."
         },
         {
           "tr": "Anotta indirgenme gerçekleşir.",
@@ -1760,19 +1760,19 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "An der Anode findet die Reduktion statt.",
           "fr": "La réduction a lieu à l'anode.",
           "ru": "Восстановление происходит на аноде.",
-          "ar": "يحدث التخفيض عند الأنود.",
+          "ar": "يحدث الاختزال عند الأنود.",
           "zh": "还原发生在阳极。",
-          "ku": "Kêmkirin li anode pêk tê."
+          "ku": "Reduksiyon li anodê pêk tê."
         },
         {
-          "tr": "Standart hidrojen elektrodunun gerilimi 1.00 V tur.",
+          "tr": "Standart hidrojen elektrodunun gerilimi 1,00 V tur.",
           "en": "The voltage of the standard hydrogen electrode is 1.00 V.",
           "de": "Die Spannung der Standard-Wasserstoffelektrode beträgt 1,00 V.",
           "fr": "La tension de l'électrode à hydrogène standard est de 1,00 V.",
           "ru": "Напряжение стандартного водородного электрода составляет 1,00 В.",
           "ar": "جهد قطب الهيدروجين القياسي هو 1.00 V.",
           "zh": "标准氢电极的电压为1.00V。",
-          "ku": "Voltaja elektroda hîdrojenê ya standard 1.00 V e."
+          "ku": "Voltaja elektroda hîdrojenê ya standard 1,00 V e."
         },
         {
           "tr": "Anot çözeltisine su eklendiğinde pil gerilimi düşer.",
@@ -1794,7 +1794,7 @@ export const unit21: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Когда концентрации в концентрационной батарее выравниваются, система достигает равновесия и напряжение батареи становится Epil = 0 (батарея разряжается).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"عندما تتساوى التركيزات في بطارية التركيز، يصل النظام إلى التوازن ويصبح جهد البطارية Epil = 0 (نفاد البطارية).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“当浓差电池中的浓度均衡时，系统达到平衡，电池电压变为Epil = 0（电池耗尽）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Dema ku tansiyonên di pîlê komandî de wekhev dibin, pergal digihîje hevsengiyê û voltaja pîlê dibe Epil = 0 (baterî diqede).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Di pîla tîrbûnê de dema tîrbûn wekhev dibin, sîstem digihîje hevsengiyê û voltaja pîlê dibe Epîl = 0 (pîl diqede).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1831,24 +1831,24 @@ export const unit21: ChemistryUnitSeedData = {
           "ku": "Anyonên di pira xwê de diçin katodê."
         },
         {
-          "tr": "Pil tepkimeleri ekzotermik denge tepkimeleridir; sıcaklık artırılırsa Le Chatelier gereği denge sola kayar ve pil gerilimi düşer.",
-          "en": "Battery reactions are exothermic equilibrium reactions; If the temperature is increased, the equilibrium shifts to the left and the battery voltage decreases, according to Le Chatelier.",
-          "de": "Batteriereaktionen sind exotherme Gleichgewichtsreaktionen; Steigt die Temperatur, verschiebt sich das Gleichgewicht nach links und die Batteriespannung sinkt, so Le Chatelier.",
-          "fr": "Les réactions de batterie sont des réactions d'équilibre exothermiques ; Si la température augmente, l'équilibre se déplace vers la gauche et la tension de la batterie diminue, selon Le Chatelier.",
-          "ru": "Реакции батареи представляют собой экзотермические равновесные реакции; По словам Ле Шателье, если температура повышается, равновесие смещается влево и напряжение батареи снижается.",
-          "ar": "تفاعلات البطارية هي تفاعلات توازن طاردة للحرارة؛ إذا ارتفعت درجة الحرارة، ينتقل التوازن إلى اليسار وينخفض ​​جهد البطارية، وفقًا لما ذكره لو شاتيليه.",
-          "zh": "电池反应为放热平衡反应； Le Chatelier 表示，如果温度升高，平衡就会向左移动，电池电压就会降低。",
-          "ku": "Reaksiyonên bataryayê reaksiyonên hevsengiya exotermîk in; Ger germahî zêde bibe, hevsengî ber bi çepê ve diçe û voltaja pîlê kêm dibe, li gorî Le Chatelier."
+          "tr": "Pil tepkimeleri genellikle ekzotermiktir; ekzotermik bir pil tepkimesinde sıcaklık artırılırsa Le Chatelier ilkesine göre denge sola kayar ve pil gerilimi düşer.",
+          "en": "Cell reactions are usually exothermic; for an exothermic cell reaction, raising the temperature shifts the equilibrium to the left (Le Chatelier's principle) and the cell voltage decreases.",
+          "de": "Zellreaktionen sind meist exotherm; wird bei einer exothermen Zellreaktion die Temperatur erhöht, verschiebt sich das Gleichgewicht nach dem Prinzip von Le Chatelier nach links und die Zellspannung sinkt.",
+          "fr": "Les réactions de pile sont généralement exothermiques ; pour une réaction de pile exothermique, une hausse de température déplace l'équilibre vers la gauche (principe de Le Chatelier) et la tension de la pile diminue.",
+          "ru": "Реакции в гальванических элементах обычно экзотермичны; при повышении температуры для экзотермической реакции равновесие по принципу Ле Шателье смещается влево и напряжение элемента уменьшается.",
+          "ar": "تفاعلات الخلايا غالبًا طاردة للحرارة؛ وفي تفاعل خلية طارد للحرارة يؤدي رفع درجة الحرارة إلى إزاحة الاتزان نحو اليسار (مبدأ لوشاتلييه) فينخفض جهد الخلية.",
+          "zh": "电池反应通常是放热反应；对放热的电池反应，升高温度时根据勒夏特列原理平衡向左移动，电池电压降低。",
+          "ku": "Reaksiyonên pîlê bi gelemperî ekzotermîk in; di reaksiyoneke pîlê ya ekzotermîk de heke germahî zêde bibe, li gorî prensîba Le Chatelier hevsengî ber bi çepê ve diçe û voltaja pîlê kêm dibe."
         },
         {
           "tr": "İndirgenme potansiyeli büyük olan metal anot kutbudur.",
-          "en": "It is the metal anode pole with high reduction potential.",
-          "de": "Es ist der Metallanodenpol mit hohem Reduktionspotential.",
-          "fr": "C'est le pôle anode métallique à haut potentiel de réduction.",
-          "ru": "Это металлический анод с высоким восстановительным потенциалом.",
-          "ar": "إنه قطب الأنود المعدني ذو إمكانية التخفيض العالية.",
-          "zh": "它是具有高还原电位的金属阳极极。",
-          "ku": "Ew pola anodê ya metal e ku bi potansiyela kêmkirina bilind e."
+          "en": "The metal with the greater reduction potential is the anode.",
+          "de": "Das Metall mit dem größeren Reduktionspotential ist die Anode.",
+          "fr": "Le métal ayant le plus grand potentiel de réduction est l'anode.",
+          "ru": "Металл с большим потенциалом восстановления является анодом.",
+          "ar": "الفلز ذو جهد الاختزال الأكبر هو الأنود.",
+          "zh": "还原电势较大的金属是阳极。",
+          "ku": "Metala ku potansiyela wê ya reduksiyonê mezintir e anod e."
         },
         {
           "tr": "Katot çözeltisine su eklendiğinde pil gerilimi yükselir.",
@@ -1863,14 +1863,14 @@ export const unit21: ChemistryUnitSeedData = {
       ],
       "correctIndex": 2,
       "explanation": {
-        "tr": "Doğru cevap \"Pil tepkimeleri ekzotermik denge tepkimeleridir; sıcaklık artırılırsa Le Chatelier gereği denge sola kayar ve pil gerilimi düşer.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Battery reactions are exothermic equilibrium reactions; If the temperature is increased, the equilibrium shifts to the left and the battery voltage decreases, according to Le Chatelier.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Batteriereaktionen sind exotherme Gleichgewichtsreaktionen; Steigt die Temperatur, verschiebt sich das Gleichgewicht nach links und die Batteriespannung sinkt, so Le Chatelier.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Les réactions de batterie sont des réactions d'équilibre exothermiques ; Si la température augmente, l'équilibre se déplace vers la gauche et la tension de la batterie diminue, selon Le Chatelier.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Реакции батареи представляют собой экзотермические равновесные реакции; По словам Ле Шателье, если температура повышается, равновесие смещается влево и напряжение батареи снижается.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تفاعلات البطارية هي تفاعلات توازن طاردة للحرارة؛ إذا ارتفعت درجة الحرارة، ينتقل التوازن إلى اليسار وينخفض ​​جهد البطارية، وفقًا لما ذكره لو شاتيليه.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“电池反应为放热平衡反应； Le Chatelier 表示，如果温度升高，平衡就会向左移动，电池电压就会降低。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Reaksiyonên bataryayê reaksiyonên hevsengiya exotermîk in; Ger germahî zêde bibe, hevsengî ber bi çepê ve diçe û voltaja pîlê kêm dibe, li gorî Le Chatelier.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Pil tepkimeleri genellikle ekzotermiktir; ekzotermik bir pil tepkimesinde sıcaklık artırılırsa Le Chatelier ilkesine göre denge sola kayar ve pil gerilimi düşer.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Cell reactions are usually exothermic; for an exothermic cell reaction, raising the temperature shifts the equilibrium to the left (Le Chatelier's principle) and the cell voltage decreases.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Zellreaktionen sind meist exotherm; wird bei einer exothermen Zellreaktion die Temperatur erhöht, verschiebt sich das Gleichgewicht nach dem Prinzip von Le Chatelier nach links und die Zellspannung sinkt.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Les réactions de pile sont généralement exothermiques ; pour une réaction de pile exothermique, une hausse de température déplace l'équilibre vers la gauche (principe de Le Chatelier) et la tension de la pile diminue.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Реакции в гальванических элементах обычно экзотермичны; при повышении температуры для экзотермической реакции равновесие по принципу Ле Шателье смещается влево и напряжение элемента уменьшается.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تفاعلات الخلايا غالبًا طاردة للحرارة؛ وفي تفاعل خلية طارد للحرارة يؤدي رفع درجة الحرارة إلى إزاحة الاتزان نحو اليسار (مبدأ لوشاتلييه) فينخفض جهد الخلية.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“电池反应通常是放热反应；对放热的电池反应，升高温度时根据勒夏特列原理平衡向左移动，电池电压降低。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Reaksiyonên pîlê bi gelemperî ekzotermîk in; di reaksiyoneke pîlê ya ekzotermîk de heke germahî zêde bibe, li gorî prensîba Le Chatelier hevsengî ber bi çepê ve diçe û voltaja pîlê kêm dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1898,33 +1898,33 @@ export const unit21: ChemistryUnitSeedData = {
         },
         {
           "tr": "E°pil negatif olduğunda pil kendiliğinden çalışır ve elektrik üretir.",
-          "en": "When E°battery is negative, the battery works on its own and produces electricity.",
-          "de": "Wenn die E°-Batterie negativ ist, arbeitet die Batterie selbstständig und produziert Strom.",
-          "fr": "Lorsque E°batterie est négatif, la batterie fonctionne toute seule et produit de l'électricité.",
-          "ru": "Когда E°battery имеет отрицательное значение, батарея работает сама по себе и производит электричество.",
-          "ar": "عندما تكون البطارية E سالبة، تعمل البطارية من تلقاء نفسها وتنتج الكهرباء.",
-          "zh": "当E°电池为负极时，电池自行工作并产生电力。",
-          "ku": "Dema ku batarya E° neyînî be, pîlê bi serê xwe dixebite û elektrîkê çêdike."
+          "en": "When E°cell is negative, the cell works by itself and produces electricity.",
+          "de": "Wenn E°Zelle negativ ist, arbeitet die Zelle von selbst und erzeugt elektrischen Strom.",
+          "fr": "Lorsque E°pile est négatif, la pile fonctionne d'elle-même et produit de l'électricité.",
+          "ru": "Когда E°эл отрицателен, элемент работает самопроизвольно и вырабатывает электричество.",
+          "ar": "عندما يكون E°خلية سالبًا تعمل الخلية تلقائيًا وتنتج الكهرباء.",
+          "zh": "当 E°电池 为负值时，电池能自发工作并产生电能。",
+          "ku": "Dema E°pîl neyînî be, pîl bi xwe dixebite û elektrîkê çêdike."
         },
         {
           "tr": "Pil çalıştıkça anot elektrotun kütlesi katlanır.",
-          "en": "As the battery operates, the mass of the anode electrode increases.",
-          "de": "Während die Batterie in Betrieb ist, nimmt die Masse der Anodenelektrode zu.",
-          "fr": "Au fur et à mesure que la batterie fonctionne, la masse de l'électrode anodique augmente.",
-          "ru": "По мере работы аккумулятора масса анодного электрода увеличивается.",
-          "ar": "ومع تشغيل البطارية، تزداد كتلة القطب الموجب.",
-          "zh": "随着电池的工作，阳极电极的质量增加。",
-          "ku": "Her ku pîlê kar dike, girseya elektrodê anode zêde dibe."
+          "en": "As the cell operates, the mass of the anode electrode increases.",
+          "de": "Während die Zelle arbeitet, nimmt die Masse der Anode zu.",
+          "fr": "Pendant le fonctionnement de la pile, la masse de l'anode augmente.",
+          "ru": "При работе элемента масса анода увеличивается.",
+          "ar": "أثناء عمل الخلية تزداد كتلة قطب الأنود.",
+          "zh": "电池工作时，阳极质量增加。",
+          "ku": "Dema pîl dixebite, girseya anodê zêde dibe."
         },
         {
           "tr": "Pil denklemi bir katsayı ile çarpılırsa E°pil değeri DEĞİŞMEZ (potansiyel şiddet özelliğidir).",
-          "en": "If the battery equation is multiplied by a coefficient, the E°battery value WILL NOT change (it is the potential intensity characteristic).",
-          "de": "Wenn die Batteriegleichung mit einem Koeffizienten multipliziert wird, ändert sich der E°-Batteriewert NICHT (es ist die potenzielle Intensitätseigenschaft).",
-          "fr": "Si l'équation de la batterie est multipliée par un coefficient, la valeur E°batterie NE changera PAS (c'est la caractéristique d'intensité potentielle).",
-          "ru": "Если уравнение батареи умножить на коэффициент, значение E° батареи НЕ изменится (это характеристика потенциальной интенсивности).",
-          "ar": "إذا تم ضرب معادلة البطارية بمعامل، فلن تتغير قيمة البطارية E (وهي خاصية الكثافة المحتملة).",
-          "zh": "如果电池方程乘以一个系数，E°电池值不会改变（它是电位强度特性）。",
-          "ku": "Ger hevkêşana bataryayê bi hevberek were zêdekirin, nirxa bataryayê E° DÊ NE guherî (ew taybetmendiya tundiya potansiyel e)."
+          "en": "If the cell equation is multiplied by a coefficient, the E°cell value does NOT change (potential is an intensive property).",
+          "de": "Wird die Zellgleichung mit einem Faktor multipliziert, ändert sich E°Zelle NICHT (das Potential ist eine intensive Größe).",
+          "fr": "Si l'équation de la pile est multipliée par un coefficient, la valeur de E°pile ne change PAS (le potentiel est une grandeur intensive).",
+          "ru": "Если уравнение реакции элемента умножить на коэффициент, значение E°эл НЕ изменяется (потенциал — интенсивная величина).",
+          "ar": "إذا ضُربت معادلة الخلية في معامل فإن قيمة E°خلية لا تتغير (الجهد خاصية مكثفة).",
+          "zh": "电池反应方程式乘以某个系数时，E°电池 的值不变（电势是强度性质）。",
+          "ku": "Heke hevkêşeya pîlê bi katsayiyekê were zêdekirin, nirxa E°pîl NAGUHERE (potansiyel taybetmendiyeke întensîf e)."
         },
         {
           "tr": "Nernst eşitliğinde pil potansiyeli derişimden etkilenmez.",
@@ -1940,13 +1940,13 @@ export const unit21: ChemistryUnitSeedData = {
       "correctIndex": 3,
       "explanation": {
         "tr": "Doğru cevap \"Pil denklemi bir katsayı ile çarpılırsa E°pil değeri DEĞİŞMEZ (potansiyel şiddet özelliğidir).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"If the battery equation is multiplied by a coefficient, the E°battery value WILL NOT change (it is the potential intensity characteristic).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Wenn die Batteriegleichung mit einem Koeffizienten multipliziert wird, ändert sich der E°-Batteriewert NICHT (es ist die potenzielle Intensitätseigenschaft).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Si l'équation de la batterie est multipliée par un coefficient, la valeur E°batterie NE changera PAS (c'est la caractéristique d'intensité potentielle).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Если уравнение батареи умножить на коэффициент, значение E° батареи НЕ изменится (это характеристика потенциальной интенсивности).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"إذا تم ضرب معادلة البطارية بمعامل، فلن تتغير قيمة البطارية E (وهي خاصية الكثافة المحتملة).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“如果电池方程乘以一个系数，E°电池值不会改变（它是电位强度特性）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger hevkêşana bataryayê bi hevberek were zêdekirin, nirxa bataryayê E° DÊ NE guherî (ew taybetmendiya tundiya potansiyel e).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"If the cell equation is multiplied by a coefficient, the E°cell value does NOT change (potential is an intensive property).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Wird die Zellgleichung mit einem Faktor multipliziert, ändert sich E°Zelle NICHT (das Potential ist eine intensive Größe).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Si l'équation de la pile est multipliée par un coefficient, la valeur de E°pile ne change PAS (le potentiel est une grandeur intensive).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Если уравнение реакции элемента умножить на коэффициент, значение E°эл НЕ изменяется (потенциал — интенсивная величина).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"إذا ضُربت معادلة الخلية في معامل فإن قيمة E°خلية لا تتغير (الجهد خاصية مكثفة).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“电池反应方程式乘以某个系数时，E°电池 的值不变（电势是强度性质）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Heke hevkêşeya pîlê bi katsayiyekê were zêdekirin, nirxa E°pîl NAGUHERE (potansiyel taybetmendiyeke întensîf e).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1968,19 +1968,19 @@ export const unit21: ChemistryUnitSeedData = {
           "de": "An der Anode findet die Reduktion statt.",
           "fr": "La réduction a lieu à l'anode.",
           "ru": "Восстановление происходит на аноде.",
-          "ar": "يحدث التخفيض عند الأنود.",
+          "ar": "يحدث الاختزال عند الأنود.",
           "zh": "还原发生在阳极。",
-          "ku": "Kêmkirin li anode pêk tê."
+          "ku": "Reduksiyon li anodê pêk tê."
         },
         {
-          "tr": "Standart hidrojen elektrodunun gerilimi 1.00 V tur.",
+          "tr": "Standart hidrojen elektrodunun gerilimi 1,00 V tur.",
           "en": "The voltage of the standard hydrogen electrode is 1.00 V.",
           "de": "Die Spannung der Standard-Wasserstoffelektrode beträgt 1,00 V.",
           "fr": "La tension de l'électrode à hydrogène standard est de 1,00 V.",
           "ru": "Напряжение стандартного водородного электрода составляет 1,00 В.",
           "ar": "جهد قطب الهيدروجين القياسي هو 1.00 V.",
           "zh": "标准氢电极的电压为1.00V。",
-          "ku": "Voltaja elektroda hîdrojenê ya standard 1.00 V e."
+          "ku": "Voltaja elektroda hîdrojenê ya standard 1,00 V e."
         },
         {
           "tr": "Anot çözeltisine su eklendiğinde pil gerilimi düşer.",
@@ -2000,7 +2000,7 @@ export const unit21: ChemistryUnitSeedData = {
           "ru": "В концентрационных батареях анодом является элемент с наибольшей концентрацией.",
           "ar": "في بطاريات التركيز، الخلية ذات التركيز الأعلى هي الأنود.",
           "zh": "在浓差电池中，浓度最高的电池是阳极。",
-          "ku": "Di bataryayên konsantrekirinê de, şaneya ku herî zêde giranî lê heye anode ye."
+          "ku": "Di pîlên tîrbûnê de hucreya ku tîrbûna wê mezintir e anod e."
         },
         {
           "tr": "Tuz köprüsü çekilirse devreden akım geçmez ve pil anında durur.",
@@ -2039,14 +2039,14 @@ export const unit21: ChemistryUnitSeedData = {
       },
       "options": [
         {
-          "tr": "Daniell pilinde Zn anot (Zn -> Zn2+ + 2e-) ve Cu katottur (Cu2+ + 2e- -> Cu); E°pil = 1.10 V tur.",
-          "en": "In the Daniell battery, Zn is the anode (Zn -> Zn2+ + 2e-) and Cu is the cathode (Cu2+ + 2e- -> Cu); E°battery = 1.10 V.",
-          "de": "In der Daniell-Batterie ist Zn die Anode (Zn -> Zn2+ + 2e-) und Cu die Kathode (Cu2+ + 2e- -> Cu); E°Batterie = 1,10 V.",
-          "fr": "Dans la batterie Daniell, Zn est l'anode (Zn -> Zn2+ + 2e-) et Cu est la cathode (Cu2+ + 2e- -> Cu) ; E°batterie = 1,10 V.",
-          "ru": "В батарее Даниэля Zn является анодом (Zn -> Zn2+ + 2e-), а Cu — катодом (Cu2+ + 2e- -> Cu); E°батареи = 1,10 В.",
-          "ar": "في بطارية دانييل، Zn هو الأنود (Zn -> Zn2+ + 2e-) والنحاس هو الكاثود (Cu2+ + 2e- -> Cu)؛ البطارية الإلكترونية = 1.10 فولت.",
-          "zh": "在丹尼尔电池中，Zn为阳极（Zn -> Zn2+ + 2e-），Cu为阴极（Cu2+ + 2e- -> Cu）； E°电池 = 1.10 V。",
-          "ku": "Di pîlê Daniell de, Zn anode ye (Zn -> Zn2+ + 2e-) û Cu katod e (Cu2+ + 2e- -> Cu); E°baterî = 1,10 V."
+          "tr": "Daniell pilinde Zn anot (Zn → Zn2+ + 2e-) ve Cu katottur (Cu2+ + 2e- → Cu); E°pil = 1,10 V tur.",
+          "en": "In the Daniell battery, Zn is the anode (Zn → Zn2+ + 2e-) and Cu is the cathode (Cu2+ + 2e- → Cu); E°battery = 1.10 V.",
+          "de": "In der Daniell-Batterie ist Zn die Anode (Zn → Zn2+ + 2e-) und Cu die Kathode (Cu2+ + 2e- → Cu); E°Batterie = 1,10 V.",
+          "fr": "Dans la batterie Daniell, Zn est l'anode (Zn → Zn2+ + 2e-) et Cu est la cathode (Cu2+ + 2e- → Cu) ; E°batterie = 1,10 V.",
+          "ru": "В батарее Даниэля Zn является анодом (Zn → Zn2+ + 2e-), а Cu — катодом (Cu2+ + 2e- → Cu); E°батареи = 1,10 В.",
+          "ar": "في خلية دانيال يكون Zn هو الأنود (Zn → Zn2+ + 2e-) ويكون Cu هو الكاثود (Cu2+ + 2e- → Cu)؛ E°خلية = 1.10 V.",
+          "zh": "在丹尼尔电池中，Zn为阳极（Zn → Zn2+ + 2e-），Cu为阴极（Cu2+ + 2e- → Cu）； E°电池 = 1.10 V。",
+          "ku": "Di pîlê Daniell de, Zn anode ye (Zn → Zn2+ + 2e-) û Cu katod e (Cu2+ + 2e- → Cu); E°baterî = 1,10 V."
         },
         {
           "tr": "Tuz köprüsündeki anyonlar katoda gider.",
@@ -2060,13 +2060,13 @@ export const unit21: ChemistryUnitSeedData = {
         },
         {
           "tr": "İndirgenme potansiyeli büyük olan metal anot kutbudur.",
-          "en": "It is the metal anode pole with high reduction potential.",
-          "de": "Es ist der Metallanodenpol mit hohem Reduktionspotential.",
-          "fr": "C'est le pôle anode métallique à haut potentiel de réduction.",
-          "ru": "Это металлический анод с высоким восстановительным потенциалом.",
-          "ar": "إنه قطب الأنود المعدني ذو إمكانية التخفيض العالية.",
-          "zh": "它是具有高还原电位的金属阳极极。",
-          "ku": "Ew pola anodê ya metal e ku bi potansiyela kêmkirina bilind e."
+          "en": "The metal with the greater reduction potential is the anode.",
+          "de": "Das Metall mit dem größeren Reduktionspotential ist die Anode.",
+          "fr": "Le métal ayant le plus grand potentiel de réduction est l'anode.",
+          "ru": "Металл с большим потенциалом восстановления является анодом.",
+          "ar": "الفلز ذو جهد الاختزال الأكبر هو الأنود.",
+          "zh": "还原电势较大的金属是阳极。",
+          "ku": "Metala ku potansiyela wê ya reduksiyonê mezintir e anod e."
         },
         {
           "tr": "Katot çözeltisine su eklendiğinde pil gerilimi yükselir.",
@@ -2091,14 +2091,14 @@ export const unit21: ChemistryUnitSeedData = {
       ],
       "correctIndex": 0,
       "explanation": {
-        "tr": "Doğru cevap \"Daniell pilinde Zn anot (Zn -> Zn2+ + 2e-) ve Cu katottur (Cu2+ + 2e- -> Cu); E°pil = 1.10 V tur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"In the Daniell battery, Zn is the anode (Zn -> Zn2+ + 2e-) and Cu is the cathode (Cu2+ + 2e- -> Cu); E°battery = 1.10 V.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"In der Daniell-Batterie ist Zn die Anode (Zn -> Zn2+ + 2e-) und Cu die Kathode (Cu2+ + 2e- -> Cu); E°Batterie = 1,10 V.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Dans la batterie Daniell, Zn est l'anode (Zn -> Zn2+ + 2e-) et Cu est la cathode (Cu2+ + 2e- -> Cu) ; E°batterie = 1,10 V.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «В батарее Даниэля Zn является анодом (Zn -> Zn2+ + 2e-), а Cu — катодом (Cu2+ + 2e- -> Cu); E°батареи = 1,10 В.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"في بطارية دانييل، Zn هو الأنود (Zn -> Zn2+ + 2e-) والنحاس هو الكاثود (Cu2+ + 2e- -> Cu)؛ البطارية الإلكترونية = 1.10 فولت.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“在丹尼尔电池中，Zn为阳极（Zn -> Zn2+ + 2e-），Cu为阴极（Cu2+ + 2e- -> Cu）； E°电池 = 1.10 V。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Di pîlê Daniell de, Zn anode ye (Zn -> Zn2+ + 2e-) û Cu katod e (Cu2+ + 2e- -> Cu); E°baterî = 1,10 V.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Daniell pilinde Zn anot (Zn → Zn2+ + 2e-) ve Cu katottur (Cu2+ + 2e- → Cu); E°pil = 1,10 V tur.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"In the Daniell battery, Zn is the anode (Zn → Zn2+ + 2e-) and Cu is the cathode (Cu2+ + 2e- → Cu); E°battery = 1.10 V.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"In der Daniell-Batterie ist Zn die Anode (Zn → Zn2+ + 2e-) und Cu die Kathode (Cu2+ + 2e- → Cu); E°Batterie = 1,10 V.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Dans la batterie Daniell, Zn est l'anode (Zn → Zn2+ + 2e-) et Cu est la cathode (Cu2+ + 2e- → Cu) ; E°batterie = 1,10 V.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «В батарее Даниэля Zn является анодом (Zn → Zn2+ + 2e-), а Cu — катодом (Cu2+ + 2e- → Cu); E°батареи = 1,10 В.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"في خلية دانيال يكون Zn هو الأنود (Zn → Zn2+ + 2e-) ويكون Cu هو الكاثود (Cu2+ + 2e- → Cu)؛ E°خلية = 1.10 V.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“在丹尼尔电池中，Zn为阳极（Zn → Zn2+ + 2e-），Cu为阴极（Cu2+ + 2e- → Cu）； E°电池 = 1.10 V。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Di pîlê Daniell de, Zn anode ye (Zn → Zn2+ + 2e-) û Cu katod e (Cu2+ + 2e- → Cu); E°baterî = 1,10 V.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     }
   ]

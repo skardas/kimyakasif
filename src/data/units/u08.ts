@@ -60,7 +60,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Суспензия представляет собой твердожидкостную гетерогенную смесь (например, мел-вода, турецкий кофе, пахта).",
         "ar": "المعلق عبارة عن خليط غير متجانس صلب وسائل (مثل مسحوق الطباشير والماء والقهوة التركية واللبن).",
         "zh": "悬浮液是一种固液异质混合物（例如粉笔粉-水、土耳其咖啡、酪乳）。",
-        "ku": "Suspension tevliheviyek heterojen a hişk-avî ye (mînak toz-av, qehweya tirkî, rûn)."
+        "ku": "Süspansiyon tevliheviyeke heterojen a hişk-şil e (mînak toza tebeşîrê-av, qehweya tirkî, dew)."
       },
       "trap": {
         "tr": "Süspansiyon tek fazlı homojen bir çözeltidir.",
@@ -68,9 +68,9 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Die Suspension ist eine einphasige homogene Lösung.",
         "fr": "La suspension est une solution homogène monophasée.",
         "ru": "Суспензия представляет собой однофазный гомогенный раствор.",
-        "ar": "التعليق هو حل متجانس أحادي الطور.",
+        "ar": "المعلق محلول متجانس أحادي الطور.",
         "zh": "该悬浮液是单相均相溶液。",
-        "ku": "Rawestandin çareseriyek homojen a yek-qonaxê ye."
+        "ku": "Süspansiyon çareseriyeke homojen a yek-qonaxî ye."
       }
     },
     {
@@ -122,14 +122,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-f05",
       "fact": {
-        "tr": "Tyndall etkisi: Kolloit çözeltilerden geçen ışık demeti saçılır ve ışığın yolu görünür.",
-        "en": "Tyndall effect: The light beam passing through colloid solutions is scattered and the path of the light is visible.",
-        "de": "Tyndall-Effekt: Der durch kolloidale Lösungen hindurchtretende Lichtstrahl wird gestreut und der Weg des Lichts ist sichtbar.",
-        "fr": "Effet Tyndall : Le faisceau lumineux traversant les solutions colloïdales est diffusé et le trajet de la lumière est visible.",
-        "ru": "Эффект Тиндаля: луч света, проходящий через коллоидные растворы, рассеивается, и путь света виден.",
-        "ar": "تأثير تيندال: تشتت شعاع الضوء الذي يمر عبر المحاليل الغروانية ويصبح مسار الضوء مرئيا.",
-        "zh": "丁达尔效应：光束穿过胶体溶液时发生散射，光的路径可见。",
-        "ku": "Bandora Tyndall: Tîrêja ronahiyê ya ku di çareseriyên koloidan re derbas dibe, belav dibe û riya ronahiyê xuya dike."
+        "tr": "Tyndall etkisi: Kolloitlerden geçen ışık demeti saçılır ve ışığın yolu görünür.",
+        "en": "Tyndall effect: A light beam passing through a colloid is scattered and its path becomes visible.",
+        "de": "Tyndall-Effekt: Ein Lichtstrahl, der durch ein Kolloid fällt, wird gestreut, und sein Weg wird sichtbar.",
+        "fr": "Effet Tyndall : un faisceau lumineux traversant un colloïde est diffusé et son trajet devient visible.",
+        "ru": "Эффект Тиндаля: луч света, проходящий через коллоид, рассеивается, и его путь становится видимым.",
+        "ar": "تأثير تيندال: يتشتت شعاع الضوء المار عبر الغروي ويصبح مساره مرئيًا.",
+        "zh": "丁达尔效应：光束通过胶体时发生散射，光的路径清晰可见。",
+        "ku": "Bandora Tyndall: Tîrêja ronahiyê ya ku di koloîdekê re derbas dibe belav dibe û riya wê xuya dibe."
       },
       "trap": {
         "tr": "Gerçek homojen çözeltilerde ışık demeti kuvvetle saçılır ve görünür.",
@@ -138,7 +138,7 @@ export const unit08: ChemistryUnitSeedData = {
         "fr": "Dans les solutions véritablement homogènes, le faisceau lumineux est fortement diffusé et visible.",
         "ru": "В истинно однородных растворах луч света сильно рассеивается и виден.",
         "ar": "في المحاليل المتجانسة الحقيقية، يكون شعاع الضوء منتشرًا بقوة ومرئيًا.",
-        "zh": "在真正均匀的解决方案中，光束被强烈散射并且可见。",
+        "zh": "在真溶液中，光束被强烈散射并且可见。",
         "ku": "Di çareseriyên homojen ên rastîn de, tîrêjê ronahiyê bi tundî belav dibe û xuya dibe."
       }
     },
@@ -152,7 +152,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Процентная концентрация по массе = (Масса растворенного вещества / Масса раствора) x 100.",
         "ar": "نسبة التركيز بالكتلة = (كتلة المذاب / كتلة المحلول) × 100.",
         "zh": "质量百分比浓度 =（溶质质量 / 溶液质量）x 100。",
-        "ku": "Rêjeya ji sedî ji aliyê girseyê = (Girseya Çareserî / Solution Mass) x 100."
+        "ku": "Rêjeya girseyî ya ji sedî = (Girseya madeya helyayî / Girseya çareseriyê) x 100."
       },
       "trap": {
         "tr": "Kütlece yüzde derişim çözünen kütlesinin çözücü kütlesine bölünmesiyle bulunur.",
@@ -162,7 +162,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Массовая процентная концентрация рассчитывается путем деления массы растворенного вещества на массу растворителя.",
         "ar": "يتم حساب التركيز المئوي للكتلة عن طريق قسمة كتلة المذاب على كتلة المذيب.",
         "zh": "质量百分比浓度通过溶质质量除以溶剂质量来计算。",
-        "ku": "Rêjeya sedî ji hêla girseyê ve bi dabeşkirina girseya madeya çareserkirî li ser girseya rûkalê tê hesibandin."
+        "ku": "Rêjeya girseyî ya ji sedî bi parvekirina girseya madeya helyayî li girseya helkerê tê dîtin."
       }
     },
     {
@@ -175,7 +175,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "ppm (частей на миллион) = (Масса растворенного вещества / Масса раствора) x 10^6.",
         "ar": "جزء في المليون (جزء في المليون) = (كتلة المذاب / كتلة المحلول) × 10 ^ 6.",
         "zh": "ppm（百万分之一）=（溶质质量/溶液质量）x 10^6。",
-        "ku": "ppm (parçe di mîlyonekê de) = (Girdeya Solute / Solution Mass) x 10^6."
+        "ku": "ppm (parçe di mîlyonekê de) = (Girseya madeya helyayî / Girseya çareseriyê) x 10^6."
       },
       "trap": {
         "tr": "ppm hesaplanırken çarpan 100'dür.",
@@ -221,7 +221,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Делительная воронка разделяет нерастворимые гетерогенные смеси жидкость-жидкость различной плотности (например, оливковое масло-вода).",
         "ar": "يفصل قمع الفصل المخاليط غير المتجانسة السائلة غير القابلة للذوبان ذات الكثافة المختلفة (مثل زيت الزيتون والماء).",
         "zh": "分液漏斗分离不同密度的不溶性液-液非均质混合物（例如橄榄油-水）。",
-        "ku": "Kaniya veqetandinê tevliheviyên heterojen ên şil-avî yên bêçareserî yên bi tîrêjên cihêreng vediqetîne (mînak rûnê zeytûn-avê)."
+        "ku": "Hunîya veqetandinê tevliheviyên heterojen ên şil-şil ên ku di hev de nahelin û dendikên wan cuda ne ji hev vediqetîne (mînak rûnê zeytûnê-av)."
       },
       "trap": {
         "tr": "Ayırma hunisi kaynama noktaları farklı homojen karışımları ayırır.",
@@ -231,20 +231,20 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Делительная воронка разделяет однородные смеси с разной температурой кипения.",
         "ar": "يقوم القمع الفاصل بفصل المخاليط المتجانسة ذات نقاط غليان مختلفة.",
         "zh": "分液漏斗分离具有不同沸点的均匀混合物。",
-        "ku": "Kaniya veqetandinê tevliheviyên homojen ên bi xalên kelandinê yên cihêreng vediqetîne."
+        "ku": "Hunîya veqetandinê tevliheviyên homojen ên bi xalên kelandinê yên cihêreng vediqetîne."
       }
     },
     {
       "id": "u08-f10",
       "fact": {
         "tr": "Flotasyon (yüzdürme), yoğunluğu sıvıdan küçük olan katı taneciklerin yüzeye çıkarılarak toplanmasıdır (madencilikte sülfürlü cevherler).",
-        "en": "Flotation is the collection of solid particles, whose density is less than the liquid, by bringing them to the surface (sulfur ores in mining).",
-        "de": "Bei der Flotation werden feste Partikel, deren Dichte geringer ist als die der Flüssigkeit, an die Oberfläche gebracht (Schwefelerze im Bergbau).",
-        "fr": "La flottation est la collecte de particules solides, dont la densité est inférieure à celle du liquide, en les ramenant à la surface (minerais de soufre en exploitation minière).",
-        "ru": "Флотация — сбор твердых частиц, плотность которых меньше плотности жидкости, путем выноса их на поверхность (серные руды в горнодобывающей промышленности).",
-        "ar": "التعويم هو تجميع الجزيئات الصلبة التي تقل كثافتها عن السائل عن طريق رفعها إلى السطح (خامات الكبريت في التعدين).",
-        "zh": "浮选是通过将密度小于液体的固体颗粒带到表面（采矿中的硫矿石）来收集它们。",
-        "ku": "Flotasyon komkirina keriyên hişk e, ku tîraniya wan ji şilê kêmtir e, bi anîna wan li ser rûyê erdê (di madenê de kanên kewûltê)."
+        "en": "Flotation is the collection of solid particles, whose density is less than the liquid, by bringing them to the surface (sulfide ores in mining).",
+        "de": "Bei der Flotation werden feste Partikel, deren Dichte geringer ist als die der Flüssigkeit, an die Oberfläche gebracht (Sulfiderze im Bergbau).",
+        "fr": "La flottation est la collecte de particules solides, dont la densité est inférieure à celle du liquide, en les ramenant à la surface (minerais sulfurés en exploitation minière).",
+        "ru": "Флотация — сбор твердых частиц, плотность которых меньше плотности жидкости, путем выноса их на поверхность (сульфидные руды в горнодобывающей промышленности).",
+        "ar": "التعويم هو تجميع الجزيئات الصلبة التي تقل كثافتها عن السائل عن طريق رفعها إلى السطح (خامات الكبريتيد في التعدين).",
+        "zh": "浮选是通过将密度小于液体的固体颗粒带到表面（采矿中的硫化矿石）来收集它们。",
+        "ku": "Flotasyon komkirina keriyên hişk e, ku tîraniya wan ji şilê kêmtir e, bi anîna wan li ser rûyê erdê (di madenê de kanên sulfîdî)."
       },
       "trap": {
         "tr": "Flotasyon mıknatıs yardımıyla demir ayırma işlemidir.",
@@ -283,14 +283,14 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-f12",
       "fact": {
-        "tr": "Diyaliz, kolloidal boyutlu taneciklerin yarı geçirgen zardan geçirilerek temizlenmesidir (böbrek hastalarında kan temizliği).",
-        "en": "Dialysis is the cleaning of colloidal sized particles by passing them through a semi-permeable membrane (blood cleaning in kidney patients).",
-        "de": "Bei der Dialyse werden kolloidale Partikel gereinigt, indem sie durch eine semipermeable Membran geleitet werden (Blutreinigung bei Nierenpatienten).",
-        "fr": "La dialyse est le nettoyage des particules de taille colloïdale en les faisant passer à travers une membrane semi-perméable (nettoyage du sang chez les patients rénaux).",
-        "ru": "Диализ – это очистка частиц коллоидного размера путем пропускания их через полупроницаемую мембрану (очистка крови у пациентов с почками).",
-        "ar": "غسيل الكلى هو تنظيف الجزيئات الغروية الحجم عن طريق تمريرها عبر غشاء شبه منفذ (تنظيف الدم لدى مرضى الكلى).",
-        "zh": "透析是通过使胶体大小的颗粒穿过半透膜来清洁它们（肾脏患者的血液清洁）。",
-        "ku": "Dialîz paqijkirina pariyên bi mezinahiya koloidal e bi derbaskirina wan di parzûnek nîv-permeable (paqijkirina xwînê di nexweşên gurçikê de)."
+        "tr": "Diyaliz, küçük iyon ve moleküllerin yarı geçirgen zardan geçirilerek kolloidal boyutlu taneciklerden ayrılmasıdır (böbrek hastalarında kan temizliği).",
+        "en": "Dialysis is the separation of small ions and molecules from colloidal-sized particles by passing them through a semi-permeable membrane (blood cleansing in kidney patients).",
+        "de": "Dialyse ist die Abtrennung kleiner Ionen und Moleküle von kolloidalen Teilchen, indem sie durch eine semipermeable Membran hindurchtreten (Blutreinigung bei Nierenpatienten).",
+        "fr": "La dialyse est la séparation des petits ions et molécules des particules de taille colloïdale, qui passent à travers une membrane semi-perméable (épuration du sang chez les insuffisants rénaux).",
+        "ru": "Диализ — это отделение малых ионов и молекул от частиц коллоидного размера путём их прохождения через полупроницаемую мембрану (очистка крови у почечных больных).",
+        "ar": "الديلزة هي فصل الأيونات والجزيئات الصغيرة عن الجسيمات الغروية الحجم بتمريرها عبر غشاء شبه منفذ (تنقية الدم لدى مرضى الكلى).",
+        "zh": "透析是让小的离子和分子透过半透膜，从而与胶体大小的粒子分离（肾病患者的血液净化）。",
+        "ku": "Dialîz veqetandina îyon û molekulên biçûk ji perçeyên bi mezinahiya koloîdal e, bi derbaskirina wan di parzûneke nîv-derbasbar re (paqijkirina xwînê di nexweşên gurçikan de)."
       },
       "trap": {
         "tr": "Diyaliz santrifüj ile çöktürme işlemidir.",
@@ -298,9 +298,9 @@ export const unit08: ChemistryUnitSeedData = {
         "de": "Bei der Dialyse handelt es sich um ein zentrifugales Fällungsverfahren.",
         "fr": "La dialyse est un processus de précipitation centrifuge.",
         "ru": "Диализ – это процесс осаждения центрифугированием.",
-        "ar": "غسيل الكلى هو عملية هطول الأمطار بالطرد المركزي.",
+        "ar": "الديلزة عملية ترسيب بالطرد المركزي.",
         "zh": "透析是一种离心沉淀过程。",
-        "ku": "Dialîz pêvajoyek baranê ya navendî ye."
+        "ku": "Dialîz pêvajoyeke niştandinê bi santrîfûjê ye."
       }
     },
     {
@@ -313,7 +313,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Если к раствору добавляют воду (разбавление), концентрация снижается; Формула: C1m1 = C2m2.",
         "ar": "إذا تمت إضافة الماء إلى المحلول (التخفيف)، ينخفض ​​التركيز؛ الصيغة هي C1m1 = C2m2.",
         "zh": "如果向溶液中添加水（稀释），浓度会降低；公式为C1m1 = C2m2。",
-        "ku": "Ger av li çarenûsê were zêdekirin (dilution), konsantre kêm dibe; Formula C1m1 = C2m2 ye."
+        "ku": "Ger av li çareseriyê were zêdekirin (seyrelandin), derîşî kêm dibe; formula C1m1 = C2m2 ye."
       },
       "trap": {
         "tr": "Su eklendiğinde çözünen madde kütlesi de artar.",
@@ -323,7 +323,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "При добавлении воды масса растворенного вещества также увеличивается.",
         "ar": "عند إضافة الماء، تزداد كتلة المذاب أيضًا.",
         "zh": "当添加水时，溶质的质量也会增加。",
-        "ku": "Dema ku av lê tê zêdekirin, girseya soletê jî zêde dibe."
+        "ku": "Dema ku av lê tê zêdekirin, girseya madeya helyayî jî zêde dibe."
       }
     },
     {
@@ -346,7 +346,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Неполярное масляное пятно легко растворяется полярной водой.",
         "ar": "تذوب وصمة الزيت غير القطبية بسهولة بالماء القطبي.",
         "zh": "非极性油污很容易被极性水溶解。",
-        "ku": "Leza rûnê ne-polar bi ava polar re bi hêsanî dihele."
+        "ku": "Lekeya rûnê ne-polar bi ava polar bi hêsanî dihele."
       }
     },
     {
@@ -392,7 +392,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Если к насыщенному раствору добавить соль, раствор станет более концентрированным.",
         "ar": "إذا أضيف الملح إلى محلول مشبع، يصبح المحلول أكثر تركيزا.",
         "zh": "如果将盐添加到饱和溶液中，溶液会变得更加浓缩。",
-        "ku": "Heke xwê li çaraliyek têrbûyî were zêdekirin, çareserî bêtir konsantre dibe."
+        "ku": "Heke xwê li çareseriyeke têrbûyî were zêdekirin, çareserî bêtir derîşîk dibe."
       }
     }
   ],
@@ -407,7 +407,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Простая дистилляция",
         "ar": "التقطير البسيط",
         "zh": "简单蒸馏",
-        "ku": "Simple Distillation"
+        "ku": "Distîlasyona sade"
       },
       "conceptB": {
         "tr": "Ayrımsal Damıtma",
@@ -417,7 +417,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Фракционная перегонка",
         "ar": "التقطير التجزيئي",
         "zh": "分馏",
-        "ku": "Distillation Fractional"
+        "ku": "Distîlasyona fraksîyonî"
       },
       "distinction": {
         "tr": "Basit damıtma katı-sıvı çözeltilerde sıvıyı buharlaştırıp yoğuşturur; ayrımsal damıtma kaynama noktaları yakın sıvı-sıvı homojen karışımları ayırır.",
@@ -467,23 +467,23 @@ export const unit08: ChemistryUnitSeedData = {
       "id": "u08-c03",
       "conceptA": {
         "tr": "Süspansiyon",
-        "en": "suspension",
-        "de": "Aussetzung",
+        "en": "Suspension",
+        "de": "Suspension",
         "fr": "suspension",
-        "ru": "подвеска",
-        "ar": "تعليق",
-        "zh": "悬浮",
-        "ku": "suspension"
+        "ru": "Суспензия",
+        "ar": "المعلق",
+        "zh": "悬浮液",
+        "ku": "Süspansiyon"
       },
       "conceptB": {
         "tr": "Emülsiyon",
-        "en": "emulsion",
+        "en": "Emulsion",
         "de": "Emulsion",
         "fr": "émulsion",
         "ru": "эмульсия",
         "ar": "مستحلب",
         "zh": "乳液",
-        "ku": "emulsion"
+        "ku": "Emulsiyon"
       },
       "distinction": {
         "tr": "Süspansiyon katı-sıvı heterojen karışımdır (ör. ayran); emülsiyon sıvı-sıvı heterojen karışımdır (ör. zeytinyağı-su).",
@@ -493,40 +493,40 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Суспензия представляет собой твердожидкостную гетерогенную смесь (например, пахта); Эмульсия представляет собой гетерогенную смесь жидкость-жидкость (например, оливковое масло-вода).",
         "ar": "المعلق عبارة عن خليط غير متجانس صلب وسائل (مثل اللبن)؛ المستحلب عبارة عن خليط سائل غير متجانس (مثل زيت الزيتون والماء).",
         "zh": "悬浮液是固液非均质混合物（例如酪乳）；乳液是液-液非均质混合物（例如橄榄油-水）。",
-        "ku": "Suspension tevliheviyek heterojen a hişk-avî ye (mînak rûn); Emulsiyon tevliheviyek heterojen a şil-avî ye (mînak rûnê zeytûn-ava)."
+        "ku": "Süspansiyon tevliheviyeke heterojen a hişk-şil e (mînak dew); emulsiyon tevliheviyeke heterojen a şil-şil e (mînak rûnê zeytûnê-av)."
       }
     },
     {
       "id": "u08-c04",
       "conceptA": {
-        "tr": "Ayrımsal Damıtma",
-        "en": "Fractional Distillation",
-        "de": "Fraktionierte Destillation",
-        "fr": "Distillation fractionnée",
-        "ru": "Фракционная перегонка",
-        "ar": "التقطير التجزيئي",
-        "zh": "分馏",
-        "ku": "Distillation Fractional"
+        "tr": "Süzme",
+        "en": "Filtration",
+        "de": "Filtration",
+        "fr": "Filtration",
+        "ru": "Фильтрование",
+        "ar": "الترشيح",
+        "zh": "过滤",
+        "ku": "Parzûnkirin"
       },
       "conceptB": {
-        "tr": "Basit Damıtma",
-        "en": "Simple Distillation",
-        "de": "Einfache Destillation",
-        "fr": "Distillation simple",
-        "ru": "Простая дистилляция",
-        "ar": "التقطير البسيط",
-        "zh": "简单蒸馏",
-        "ku": "Simple Distillation"
+        "tr": "Diyaliz",
+        "en": "Dialysis",
+        "de": "Dialyse",
+        "fr": "Dialyse",
+        "ru": "Диализ",
+        "ar": "الديلزة",
+        "zh": "透析",
+        "ku": "Dialîz"
       },
       "distinction": {
-        "tr": "Ayrımsal damıtma kaynama noktaları yakın sıvı-sıvı homojen karışımları ayırır; basit damıtma katı-sıvı homojen karışımları ayırır.",
-        "en": "Fractional distillation separates liquid-liquid homogeneous mixtures with close boiling points; Simple distillation separates solid-liquid homogeneous mixtures.",
-        "de": "Die fraktionierte Destillation trennt flüssig-flüssige homogene Gemische mit nahe beieinander liegenden Siedepunkten; Durch einfache Destillation werden fest-flüssige homogene Gemische getrennt.",
-        "fr": "La distillation fractionnée sépare des mélanges homogènes liquide-liquide avec des points d'ébullition proches ; Une simple distillation sépare des mélanges homogènes solide-liquide.",
-        "ru": "Фракционная перегонка разделяет однородные жидкостно-жидкостные смеси с близкими температурами кипения; Простая перегонка разделяет однородные твердые и жидкие смеси.",
-        "ar": "يفصل التقطير التجزيئي المخاليط المتجانسة من سائل إلى سائل ذات نقاط غليان متقاربة؛ التقطير البسيط يفصل المخاليط المتجانسة الصلبة والسائلة.",
-        "zh": "分馏分离沸点相近的液-液均质混合物；简单的蒸馏即可分离固液均质混合物。",
-        "ku": "Distîlasyona fraksîyonel hevokên homojen ên şil-avî bi xalên kelandinê yên nêzîk ji hev vediqetîne; Distîlasyona hêsan tevliheviyên homojen ên hişk-avî ji hev vediqetîne."
+        "tr": "Süzme, katı tanecikleri süzgeç kâğıdında tutarak heterojen katı-sıvı karışımları ayırır; diyaliz ise küçük iyon ve molekülleri yarı geçirgen zardan geçirerek kolloidal taneciklerden ayırır.",
+        "en": "Filtration separates heterogeneous solid-liquid mixtures by retaining the solid particles on filter paper; dialysis separates small ions and molecules from colloidal particles by passing them through a semi-permeable membrane.",
+        "de": "Die Filtration trennt heterogene Fest-flüssig-Gemische, indem die Feststoffteilchen im Filterpapier zurückgehalten werden; die Dialyse trennt kleine Ionen und Moleküle von kolloidalen Teilchen, indem sie diese durch eine semipermeable Membran treten lässt.",
+        "fr": "La filtration sépare les mélanges hétérogènes solide-liquide en retenant les particules solides sur le papier filtre ; la dialyse sépare les petits ions et molécules des particules colloïdales en les faisant passer à travers une membrane semi-perméable.",
+        "ru": "Фильтрование разделяет гетерогенные смеси твёрдое-жидкость, задерживая твёрдые частицы на фильтровальной бумаге; диализ отделяет малые ионы и молекулы от коллоидных частиц, пропуская их через полупроницаемую мембрану.",
+        "ar": "يفصل الترشيح المخاليط غير المتجانسة الصلبة-السائلة باحتجاز الجسيمات الصلبة على ورق الترشيح؛ وتفصل الديلزة الأيونات والجزيئات الصغيرة عن الجسيمات الغروية بتمريرها عبر غشاء شبه منفذ.",
+        "zh": "过滤是用滤纸截留固体颗粒，分离非均相的固-液混合物；透析是让小的离子和分子透过半透膜，使其与胶体粒子分离。",
+        "ku": "Parzûnkirin perçeyên hişk li ser kaxeza parzûnê digire û tevliheviyên heterojen ên hişk-şil ji hev vediqetîne; dialîz îyon û molekulên biçûk di parzûneke nîv-derbasbar re derbas dike û wan ji perçeyên koloîdal vediqetîne."
       }
     },
     {
@@ -539,7 +539,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Разделение с помощью делительной воронки",
         "ar": "الفصل مع قمع الفصل",
         "zh": "用分液漏斗分离",
-        "ku": "Veqetandin bi Funnel Separatory"
+        "ku": "Veqetandin bi hunîya veqetandinê"
       },
       "conceptB": {
         "tr": "Yüzdürme (Flotasyon)",
@@ -559,7 +559,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Делительная воронка разделяет несмешивающиеся жидкости различной плотности; Флотация – это обогащение руды за счет разницы плотностей в смесях твердого и твердого.",
         "ar": "يقوم قمع الفصل بفصل السوائل غير القابلة للامتزاج ذات الكثافات المختلفة؛ التعويم هو إثراء الخام عن طريق اختلاف الكثافة في المخاليط الصلبة والصلبة.",
         "zh": "分液漏斗分离不同密度的互不相溶的液体；浮选是利用固-固混合物中的密度差来富集矿石。",
-        "ku": "Kaniya veqetandinê şilekên nelihevkirî yên tîrêjên cihêreng ji hev vediqetîne; Flotasyon dewlemendkirina kanzayê ji hêla cûdahiya tîrêjê ve di tevliheviyên hişk-hişk de ye."
+        "ku": "Hunîya veqetandinê şilekên nelihevkirî yên tîrêjên cihêreng ji hev vediqetîne; Flotasyon dewlemendkirina kanzayê ji hêla cûdahiya tîrêjê ve di tevliheviyên hişk-hişk de ye."
       }
     },
     {
@@ -572,7 +572,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Процентная концентрация по массе",
         "ar": "تركيز النسبة المئوية بالكتلة",
         "zh": "质量百分比浓度",
-        "ku": "Ji sedî Kombûna bi Mass"
+        "ku": "Rêjeya girseyî ya ji sedî"
       },
       "conceptB": {
         "tr": "Hacimce Yüzde Derişim",
@@ -582,17 +582,17 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Процентная концентрация по объему",
         "ar": "تركيز النسبة المئوية حسب الحجم",
         "zh": "体积百分比浓度",
-        "ku": "Ji sedî Teqlîd ji aliyê Volume"
+        "ku": "Rêjeya qebareyî ya ji sedî"
       },
       "distinction": {
-        "tr": "Kütlece yüzde çözünen kütlesinin çözelti kütlesine oranıdır; hacimce yüzde sıvı çözünen hacminin toplam hacme oranıdır.",
-        "en": "It is the ratio of the percent mass of solute to the mass of solution by mass; It is the ratio of the volume of liquid solute in percent by volume to the total volume.",
-        "de": "Es ist das Verhältnis der prozentualen Masse des gelösten Stoffes zur Masse der Lösung, bezogen auf die Masse; Es ist das Verhältnis des Volumens des flüssigen gelösten Stoffes in Volumenprozent zum Gesamtvolumen.",
-        "fr": "C'est le rapport entre le pourcentage de masse de soluté et la masse de solution en masse ; C'est le rapport entre le volume de soluté liquide en pourcentage en volume et le volume total.",
-        "ru": "Это отношение процентной массы растворенного вещества к массе раствора по массе; Это отношение объема жидкого растворенного вещества в объемных процентах к общему объему.",
-        "ar": "إنها النسبة بين النسبة المئوية لكتلة المذاب إلى كتلة المحلول بالكتلة؛ هي نسبة حجم السائل المذاب بالنسبة المئوية للحجم إلى الحجم الإجمالي.",
-        "zh": "它是溶质的质量百分比与溶液质量的比值；它是液体溶质的体积与总体积的比率（以体积百分比表示）。",
-        "ku": "Ew rêjeya rêjeya ji sedî ya soletê ya bi girseya çareseriyê bi girseyê re ye; Ew rêjeya qebareya madeya şilbûyî ya ji sedî bi qebarê bi qebareya giştî re ye."
+        "tr": "Kütlece yüzde, çözünen kütlesinin çözelti kütlesine oranıdır (x100); hacimce yüzde, sıvı çözünen hacminin toplam hacme oranıdır (x100).",
+        "en": "Percent by mass is the ratio of solute mass to solution mass (x100); percent by volume is the ratio of liquid solute volume to total volume (x100).",
+        "de": "Massenprozent ist das Verhältnis der Masse des gelösten Stoffes zur Masse der Lösung (x100); Volumenprozent ist das Verhältnis des Volumens des flüssigen gelösten Stoffes zum Gesamtvolumen (x100).",
+        "fr": "Le pourcentage massique est le rapport de la masse de soluté à la masse de solution (x100) ; le pourcentage volumique est le rapport du volume de soluté liquide au volume total (x100).",
+        "ru": "Массовая доля в процентах — отношение массы растворённого вещества к массе раствора (x100); объёмная доля в процентах — отношение объёма жидкого растворённого вещества к общему объёму (x100).",
+        "ar": "النسبة المئوية الكتلية هي نسبة كتلة المذاب إلى كتلة المحلول (x100)؛ والنسبة المئوية الحجمية هي نسبة حجم المذاب السائل إلى الحجم الكلي (x100).",
+        "zh": "质量百分比浓度是溶质质量与溶液质量之比（x100）；体积百分比浓度是液态溶质体积与总体积之比（x100）。",
+        "ku": "Rêjeya girseyî ya ji sedî rêjeya girseya madeya helyayî li girseya çareseriyê ye (x100); rêjeya qebareyî ya ji sedî rêjeya qebareya madeya helyayî ya şil li qebareya giştî ye (x100)."
       }
     },
     {
@@ -631,34 +631,34 @@ export const unit08: ChemistryUnitSeedData = {
     {
       "id": "u08-c08",
       "conceptA": {
-        "tr": "Basit Damıtma",
-        "en": "Simple Distillation",
-        "de": "Einfache Destillation",
-        "fr": "Distillation simple",
-        "ru": "Простая дистилляция",
-        "ar": "التقطير البسيط",
-        "zh": "简单蒸馏",
-        "ku": "Simple Distillation"
+        "tr": "Seyreltme",
+        "en": "Dilution",
+        "de": "Verdünnen",
+        "fr": "Dilution",
+        "ru": "Разбавление",
+        "ar": "التخفيف",
+        "zh": "稀释",
+        "ku": "Seyrelandin"
       },
       "conceptB": {
-        "tr": "Ayrımsal Damıtma",
-        "en": "Fractional Distillation",
-        "de": "Fraktionierte Destillation",
-        "fr": "Distillation fractionnée",
-        "ru": "Фракционная перегонка",
-        "ar": "التقطير التجزيئي",
-        "zh": "分馏",
-        "ku": "Distillation Fractional"
+        "tr": "Deriştirme",
+        "en": "Concentrating",
+        "de": "Aufkonzentrieren",
+        "fr": "Concentration",
+        "ru": "Концентрирование",
+        "ar": "التركيز",
+        "zh": "浓缩",
+        "ku": "Tîrkirin"
       },
       "distinction": {
-        "tr": "Basit damıtma katı-sıvı çözeltilerde sıvıyı buharlaştırıp yoğuşturur; ayrımsal damıtma kaynama noktaları yakın sıvı-sıvı homojen karışımları ayırır.",
-        "en": "Simple distillation evaporates and condenses the liquid in solid-liquid solutions; Fractional distillation separates liquid-liquid homogeneous mixtures with close boiling points.",
-        "de": "Durch einfache Destillation wird die Flüssigkeit in Fest-Flüssig-Lösungen verdampft und kondensiert; Die fraktionierte Destillation trennt flüssig-flüssig homogene Gemische mit nahe beieinander liegenden Siedepunkten.",
-        "fr": "Une simple distillation évapore et condense le liquide en solutions solide-liquide ; La distillation fractionnée sépare des mélanges homogènes liquide-liquide avec des points d'ébullition proches.",
-        "ru": "Простая перегонка испаряет и конденсирует жидкость в твердожидкие растворы; Фракционная перегонка разделяет жидкость-жидкость однородных смесей с близкими температурами кипения.",
-        "ar": "التقطير البسيط يتبخر ويكثف السائل في المحاليل الصلبة والسائلة؛ يفصل التقطير التجزيئي المخاليط المتجانسة من سائل إلى سائل ذات نقاط غليان متقاربة.",
-        "zh": "简单蒸馏将固液溶液中的液体蒸发并冷凝；分馏可分离沸点接近的液-液均匀混合物。",
-        "ku": "Distilasyona hêsan şilê di çareseriyên zirav-avî de diherikîne û dişewitîne; Distîlasyona fraksîyonel hevokên homojen ên şil-avî yên bi xalên kelandinê yên nêzîk ji hev vediqetîne."
+        "tr": "Seyreltmede çözeltiye çözücü eklenir, çözünen kütlesi değişmez ve derişim azalır; deriştirmede çözücü buharlaştırılır veya çözünen eklenir ve derişim artar.",
+        "en": "In dilution, solvent is added, the mass of solute stays the same and the concentration decreases; in concentrating, solvent is evaporated or more solute is added and the concentration increases.",
+        "de": "Beim Verdünnen wird Lösungsmittel zugegeben, die Masse des gelösten Stoffes bleibt gleich und die Konzentration sinkt; beim Aufkonzentrieren wird Lösungsmittel verdampft oder mehr gelöster Stoff zugegeben, und die Konzentration steigt.",
+        "fr": "Lors d'une dilution, on ajoute du solvant : la masse de soluté reste la même et la concentration diminue ; pour concentrer, on évapore du solvant ou on ajoute du soluté, et la concentration augmente.",
+        "ru": "При разбавлении добавляют растворитель, масса растворённого вещества не меняется, и концентрация уменьшается; при концентрировании растворитель выпаривают или добавляют растворённое вещество, и концентрация растёт.",
+        "ar": "في التخفيف يُضاف المذيب فتبقى كتلة المذاب ثابتة ويقل التركيز؛ وفي التركيز يُبخَّر المذيب أو يُضاف مزيد من المذاب فيزداد التركيز.",
+        "zh": "稀释是加入溶剂，溶质质量不变，浓度降低；浓缩是蒸发溶剂或加入更多溶质，浓度升高。",
+        "ku": "Di seyrelandinê de helker tê zêdekirin, girseya madeya helyayî naguhere û derîşî kêm dibe; di tîrkirinê de helker tê hilmikandin an madeya helyayî tê zêdekirin û derîşî zêde dibe."
       }
     }
   ],
@@ -749,7 +749,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Летучий компонент испаряется первым.",
           "ar": "يتبخر المكون المتطاير أولاً",
           "zh": "挥发性成分首先蒸发",
-          "ku": "Pêkhateya volatile pêşî diherike"
+          "ku": "Pêkhateya hêsan-buharbûyî pêşî dibe buhar"
         },
         {
           "tr": "Fraksiyon kolonunda buhar ayrışır",
@@ -777,13 +777,13 @@ export const unit08: ChemistryUnitSeedData = {
       "id": "u08-s03",
       "title": {
         "tr": "Kütlece Yüzde Derişim Hazırlığı",
-        "en": "Percentage Concentration by Mass Preparation",
-        "de": "Prozentuale Konzentration durch Massenvorbereitung",
-        "fr": "Pourcentage de concentration par préparation de masse",
-        "ru": "Процентная концентрация по приготовлению массы",
-        "ar": "نسبة التركيز عن طريق التحضير الشامل",
-        "zh": "质量制备的百分比浓度",
-        "ku": "Bi Amadekirina Komkujiya Sedî"
+        "en": "Preparing a Solution of Given Mass Percent",
+        "de": "Herstellung einer Lösung mit bestimmtem Massenprozent",
+        "fr": "Préparation d'une solution de pourcentage massique donné",
+        "ru": "Приготовление раствора с заданной массовой долей",
+        "ar": "تحضير محلول بنسبة مئوية كتلية محددة",
+        "zh": "配制一定质量百分比浓度的溶液",
+        "ku": "Amadekirina çareseriyeke bi rêjeya girseyî ya ji sedî"
       },
       "steps": [
         {
@@ -794,7 +794,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Взвесьте необходимую массу растворенного вещества",
           "ar": "وزن الكتلة المطلوبة من المذاب",
           "zh": "称量所需的溶质质量",
-          "ku": "Girseya pêdivî ya solute giran bikin"
+          "ku": "Girseya pêwîst a madeya helyayî tê kişandin"
         },
         {
           "tr": "Gereken çözücü su miktarı tartılır",
@@ -804,17 +804,17 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Необходимое количество воды-растворителя отвешивается.",
           "ar": "يتم وزن الكمية المطلوبة من الماء المذيب",
           "zh": "称取所需溶剂水量",
-          "ku": "Mîqdara pêwîst a ava helalî tê pîvaz kirin"
+          "ku": "Mîqdara pêwîst a ava helker tê kişandin"
         },
         {
           "tr": "Çözünen kütlesi toplam kütleye oranlanır",
-          "en": "The mass of the solute is proportioned to the total mass",
-          "de": "Die Masse des gelösten Stoffes verhält sich proportional zur Gesamtmasse",
-          "fr": "La masse du soluté est proportionnelle à la masse totale",
-          "ru": "Масса растворенного вещества пропорциональна общей массе",
-          "ar": "تتناسب كتلة المذاب مع الكتلة الكلية",
-          "zh": "溶质的质量与总质量成正比",
-          "ku": "Girseya madeyê bi girseya giştî ve girêdayî ye"
+          "en": "The mass of the solute is divided by the total mass",
+          "de": "Die Masse des gelösten Stoffes wird durch die Gesamtmasse geteilt",
+          "fr": "La masse du soluté est divisée par la masse totale",
+          "ru": "Массу растворённого вещества делят на общую массу",
+          "ar": "تُقسم كتلة المذاب على الكتلة الكلية",
+          "zh": "用溶质质量除以总质量",
+          "ku": "Girseya madeya helyayî li girseya giştî tê parvekirin"
         },
         {
           "tr": "Yüz ile çarpılarak kütlece yüzde belirlenir",
@@ -824,7 +824,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Процент по массе определяют путем умножения на сто.",
           "ar": "يتم تحديد النسبة المئوية للكتلة بضربها في مائة.",
           "zh": "质量百分比通过乘以一百来确定。",
-          "ku": "Rêjeya ji hêla girseyê ve bi sed zêdekirinê tê destnîşankirin."
+          "ku": "Bi lêdana bi sed rêjeya girseyî ya ji sedî tê dîtin"
         }
       ]
     },
@@ -869,7 +869,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "При понижении температуры растворимость снижается и твердое вещество выпадает в осадок.",
           "ar": "مع انخفاض درجة الحرارة، تنخفض قابلية الذوبان وتترسب المواد الصلبة.",
           "zh": "随着温度降低，溶解度降低，固体析出。",
-          "ku": "Her ku germahî kêm dibe, çareserî kêm dibe û zirav diherike."
+          "ku": "Her ku germahî kêm dibe, helbûnî kêm dibe û madeya hişk dinişe"
         },
         {
           "tr": "Süzgeç kağıdından süzülerek saf kristaller alınır",
@@ -906,7 +906,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "16%",
           "ar": "16%",
           "zh": "16%",
-          "ku": "Rêsakanî bekarhênan 16%"
+          "ku": "%16"
         },
         {
           "tr": "%10",
@@ -916,7 +916,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "10%",
           "ar": "10%",
           "zh": "10%",
-          "ku": "10%"
+          "ku": "%10"
         },
         {
           "tr": "%15",
@@ -926,7 +926,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "15%",
           "ar": "15%",
           "zh": "15%",
-          "ku": "Rêsakanî bekarhênan 15%"
+          "ku": "%15"
         },
         {
           "tr": "%25",
@@ -936,7 +936,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "25%",
           "ar": "25%",
           "zh": "25%",
-          "ku": "Rêsakanî bekarhênan 25%"
+          "ku": "%25"
         },
         {
           "tr": "%12",
@@ -946,7 +946,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "12%",
           "ar": "12%",
           "zh": "12%",
-          "ku": "Rêsakanî bekarhênan 12%"
+          "ku": "%12"
         }
       ],
       "correctIndex": 0,
@@ -992,17 +992,17 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "делительная воронка",
           "ar": "قمع منفصل",
           "zh": "分液漏斗",
-          "ku": "kana veqetandinê"
+          "ku": "Hunîya veqetandinê"
         },
         {
           "tr": "Süzme",
-          "en": "straining",
-          "de": "anstrengend",
-          "fr": "forcer",
-          "ru": "напряжение",
-          "ar": "اجهاد",
-          "zh": "使劲",
-          "ku": "straining"
+          "en": "Filtration",
+          "de": "Filtration",
+          "fr": "Filtration",
+          "ru": "Фильтрование",
+          "ar": "الترشيح",
+          "zh": "过滤",
+          "ku": "Parzûnkirin"
         },
         {
           "tr": "Diyaliz",
@@ -1058,7 +1058,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Массовая процентная концентрация рассчитывается путем деления массы растворенного вещества на массу растворителя.",
           "ar": "يتم حساب التركيز المئوي للكتلة عن طريق قسمة كتلة المذاب على كتلة المذيب.",
           "zh": "质量百分比浓度通过溶质质量除以溶剂质量来计算。",
-          "ku": "Rêjeya sedî ji hêla girseyê ve bi dabeşkirina girseya madeya çareserkirî li ser girseya rûkalê tê hesibandin."
+          "ku": "Rêjeya girseyî ya ji sedî bi parvekirina girseya madeya helyayî li girseya helkerê tê dîtin."
         },
         {
           "tr": "Ayırma hunisi kaynama noktaları farklı homojen karışımları ayırır.",
@@ -1068,7 +1068,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Делительная воронка разделяет однородные смеси с разной температурой кипения.",
           "ar": "يقوم القمع الفاصل بفصل المخاليط المتجانسة ذات نقاط غليان مختلفة.",
           "zh": "分液漏斗分离具有不同沸点的均匀混合物。",
-          "ku": "Kaniya veqetandinê tevliheviyên homojen ên bi xalên kelandinê yên cihêreng vediqetîne."
+          "ku": "Hunîya veqetandinê tevliheviyên homojen ên bi xalên kelandinê yên cihêreng vediqetîne."
         },
         {
           "tr": "Emülsiyon birbiri içinde çözünmeyen sıvı-sıvı heterojen karışımdır (örn. zeytinyağı-su, mayonez).",
@@ -1086,9 +1086,9 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Bei der Dialyse handelt es sich um ein zentrifugales Fällungsverfahren.",
           "fr": "La dialyse est un processus de précipitation centrifuge.",
           "ru": "Диализ – это процесс осаждения центрифугированием.",
-          "ar": "غسيل الكلى هو عملية هطول الأمطار بالطرد المركزي.",
+          "ar": "الديلزة عملية ترسيب بالطرد المركزي.",
           "zh": "透析是一种离心沉淀过程。",
-          "ku": "Dialîz pêvajoyek baranê ya navendî ye."
+          "ku": "Dialîz pêvajoyeke niştandinê bi santrîfûjê ye."
         },
         {
           "tr": "Tuzlu su kaynarken sıcaklığı baştan itibaren sabit kalır.",
@@ -1154,7 +1154,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "При добавлении воды масса растворенного вещества также увеличивается.",
           "ar": "عند إضافة الماء، تزداد كتلة المذاب أيضًا.",
           "zh": "当添加水时，溶质的质量也会增加。",
-          "ku": "Dema ku av lê tê zêdekirin, girseya soletê jî zêde dibe."
+          "ku": "Dema ku av lê tê zêdekirin, girseya madeya helyayî jî zêde dibe."
         },
         {
           "tr": "Aerosol bir gaz içinde katı veya sıvının dağılmasıyla oluşur (örn. sis, duman, sprey).",
@@ -1174,7 +1174,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Если к насыщенному раствору добавить соль, раствор станет более концентрированным.",
           "ar": "إذا أضيف الملح إلى محلول مشبع، يصبح المحلول أكثر تركيزا.",
           "zh": "如果将盐添加到饱和溶液中，溶液会变得更加浓缩。",
-          "ku": "Heke xwê li çaraliyek têrbûyî were zêdekirin, çareserî bêtir konsantre dibe."
+          "ku": "Heke xwê li çareseriyeke têrbûyî were zêdekirin, çareserî bêtir derîşîk dibe."
         }
       ],
       "correctIndex": 3,
@@ -1230,7 +1230,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Неполярное масляное пятно легко растворяется полярной водой.",
           "ar": "تذوب وصمة الزيت غير القطبية بسهولة بالماء القطبي.",
           "zh": "非极性油污很容易被极性水溶解。",
-          "ku": "Leza rûnê ne-polar bi ava polar re bi hêsanî dihele."
+          "ku": "Lekeya rûnê ne-polar bi ava polar bi hêsanî dihele."
         },
         {
           "tr": "Kolloitler mikroskopsuz bakıldığında da heterojen görünür ve hemen çöker.",
@@ -1243,26 +1243,26 @@ export const unit08: ChemistryUnitSeedData = {
           "ku": "Dema ku bêyî mîkroskopê were temaşe kirin jî, koloid heterojen xuya dikin û yekser dibarin."
         },
         {
-          "tr": "Tyndall etkisi: Kolloit çözeltilerden geçen ışık demeti saçılır ve ışığın yolu görünür.",
-          "en": "Tyndall effect: The light beam passing through colloid solutions is scattered and the path of the light is visible.",
-          "de": "Tyndall-Effekt: Der durch kolloidale Lösungen hindurchtretende Lichtstrahl wird gestreut und der Weg des Lichts ist sichtbar.",
-          "fr": "Effet Tyndall : Le faisceau lumineux traversant les solutions colloïdales est diffusé et le trajet de la lumière est visible.",
-          "ru": "Эффект Тиндаля: луч света, проходящий через коллоидные растворы, рассеивается, и путь света виден.",
-          "ar": "تأثير تيندال: تشتت شعاع الضوء الذي يمر عبر المحاليل الغروانية ويصبح مسار الضوء مرئيا.",
-          "zh": "丁达尔效应：光束穿过胶体溶液时发生散射，光的路径可见。",
-          "ku": "Bandora Tyndall: Tîrêja ronahiyê ya ku di çareseriyên koloidan re derbas dibe, belav dibe û riya ronahiyê xuya dike."
+          "tr": "Tyndall etkisi: Kolloitlerden geçen ışık demeti saçılır ve ışığın yolu görünür.",
+          "en": "Tyndall effect: A light beam passing through a colloid is scattered and its path becomes visible.",
+          "de": "Tyndall-Effekt: Ein Lichtstrahl, der durch ein Kolloid fällt, wird gestreut, und sein Weg wird sichtbar.",
+          "fr": "Effet Tyndall : un faisceau lumineux traversant un colloïde est diffusé et son trajet devient visible.",
+          "ru": "Эффект Тиндаля: луч света, проходящий через коллоид, рассеивается, и его путь становится видимым.",
+          "ar": "تأثير تيندال: يتشتت شعاع الضوء المار عبر الغروي ويصبح مساره مرئيًا.",
+          "zh": "丁达尔效应：光束通过胶体时发生散射，光的路径清晰可见。",
+          "ku": "Bandora Tyndall: Tîrêja ronahiyê ya ku di koloîdekê re derbas dibe belav dibe û riya wê xuya dibe."
         }
       ],
       "correctIndex": 4,
       "explanation": {
-        "tr": "Doğru cevap \"Tyndall etkisi: Kolloit çözeltilerden geçen ışık demeti saçılır ve ışığın yolu görünür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Tyndall effect: The light beam passing through colloid solutions is scattered and the path of the light is visible.\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Tyndall-Effekt: Der durch kolloidale Lösungen hindurchtretende Lichtstrahl wird gestreut und der Weg des Lichts ist sichtbar.\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"Effet Tyndall : Le faisceau lumineux traversant les solutions colloïdales est diffusé et le trajet de la lumière est visible.\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Эффект Тиндаля: луч света, проходящий через коллоидные растворы, рассеивается, и путь света виден.». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"تأثير تيندال: تشتت شعاع الضوء الذي يمر عبر المحاليل الغروانية ويصبح مسار الضوء مرئيا.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“丁达尔效应：光束穿过胶体溶液时发生散射，光的路径可见。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Bandora Tyndall: Tîrêja ronahiyê ya ku di çareseriyên koloidan re derbas dibe, belav dibe û riya ronahiyê xuya dike.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Tyndall etkisi: Kolloitlerden geçen ışık demeti saçılır ve ışığın yolu görünür.\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Tyndall effect: A light beam passing through a colloid is scattered and its path becomes visible.\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Tyndall-Effekt: Ein Lichtstrahl, der durch ein Kolloid fällt, wird gestreut, und sein Weg wird sichtbar.\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"Effet Tyndall : un faisceau lumineux traversant un colloïde est diffusé et son trajet devient visible.\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Эффект Тиндаля: луч света, проходящий через коллоид, рассеивается, и его путь становится видимым.». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"تأثير تيندال: يتشتت شعاع الضوء المار عبر الغروي ويصبح مساره مرئيًا.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“丁达尔效应：光束通过胶体时发生散射，光的路径清晰可见。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Bandora Tyndall: Tîrêja ronahiyê ya ku di koloîdekê re derbas dibe belav dibe û riya wê xuya dibe.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1286,7 +1286,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Процентная концентрация по массе = (Масса растворенного вещества / Масса раствора) x 100.",
           "ar": "نسبة التركيز بالكتلة = (كتلة المذاب / كتلة المحلول) × 100.",
           "zh": "质量百分比浓度 =（溶质质量 / 溶液质量）x 100。",
-          "ku": "Rêjeya ji sedî ji aliyê girseyê = (Girseya Çareserî / Solution Mass) x 100."
+          "ku": "Rêjeya girseyî ya ji sedî = (Girseya madeya helyayî / Girseya çareseriyê) x 100."
         },
         {
           "tr": "Ayırma hunisi kaynama noktaları farklı homojen karışımları ayırır.",
@@ -1296,7 +1296,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Делительная воронка разделяет однородные смеси с разной температурой кипения.",
           "ar": "يقوم القمع الفاصل بفصل المخاليط المتجانسة ذات نقاط غليان مختلفة.",
           "zh": "分液漏斗分离具有不同沸点的均匀混合物。",
-          "ku": "Kaniya veqetandinê tevliheviyên homojen ên bi xalên kelandinê yên cihêreng vediqetîne."
+          "ku": "Hunîya veqetandinê tevliheviyên homojen ên bi xalên kelandinê yên cihêreng vediqetîne."
         },
         {
           "tr": "Diyaliz santrifüj ile çöktürme işlemidir.",
@@ -1304,9 +1304,9 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Bei der Dialyse handelt es sich um ein zentrifugales Fällungsverfahren.",
           "fr": "La dialyse est un processus de précipitation centrifuge.",
           "ru": "Диализ – это процесс осаждения центрифугированием.",
-          "ar": "غسيل الكلى هو عملية هطول الأمطار بالطرد المركزي.",
+          "ar": "الديلزة عملية ترسيب بالطرد المركزي.",
           "zh": "透析是一种离心沉淀过程。",
-          "ku": "Dialîz pêvajoyek baranê ya navendî ye."
+          "ku": "Dialîz pêvajoyeke niştandinê bi santrîfûjê ye."
         },
         {
           "tr": "Tuzlu su kaynarken sıcaklığı baştan itibaren sabit kalır.",
@@ -1324,9 +1324,9 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Die Suspension ist eine einphasige homogene Lösung.",
           "fr": "La suspension est une solution homogène monophasée.",
           "ru": "Суспензия представляет собой однофазный гомогенный раствор.",
-          "ar": "التعليق هو حل متجانس أحادي الطور.",
+          "ar": "المعلق محلول متجانس أحادي الطور.",
           "zh": "该悬浮液是单相均相溶液。",
-          "ku": "Rawestandin çareseriyek homojen a yek-qonaxê ye."
+          "ku": "Süspansiyon çareseriyeke homojen a yek-qonaxî ye."
         }
       ],
       "correctIndex": 0,
@@ -1338,7 +1338,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Процентная концентрация по массе = (Масса растворенного вещества / Масса раствора) x 100.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"نسبة التركيز بالكتلة = (كتلة المذاب / كتلة المحلول) × 100.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“质量百分比浓度 =（溶质质量 / 溶液质量）x 100。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Rêjeya ji sedî ji aliyê girseyê = (Girseya Çareserî / Solution Mass) x 100.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Rêjeya girseyî ya ji sedî = (Girseya madeya helyayî / Girseya çareseriyê) x 100.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1372,7 +1372,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "ppm (частей на миллион) = (Масса растворенного вещества / Масса раствора) x 10^6.",
           "ar": "جزء في المليون (جزء في المليون) = (كتلة المذاب / كتلة المحلول) × 10 ^ 6.",
           "zh": "ppm（百万分之一）=（溶质质量/溶液质量）x 10^6。",
-          "ku": "ppm (parçe di mîlyonekê de) = (Girdeya Solute / Solution Mass) x 10^6."
+          "ku": "ppm (parçe di mîlyonekê de) = (Girseya madeya helyayî / Girseya çareseriyê) x 10^6."
         },
         {
           "tr": "Su eklendiğinde çözünen madde kütlesi de artar.",
@@ -1382,7 +1382,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "При добавлении воды масса растворенного вещества также увеличивается.",
           "ar": "عند إضافة الماء، تزداد كتلة المذاب أيضًا.",
           "zh": "当添加水时，溶质的质量也会增加。",
-          "ku": "Dema ku av lê tê zêdekirin, girseya soletê jî zêde dibe."
+          "ku": "Dema ku av lê tê zêdekirin, girseya madeya helyayî jî zêde dibe."
         },
         {
           "tr": "Doygun çözeltiye tuz eklenirse çözelti daha derişik hale gelir.",
@@ -1392,7 +1392,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Если к насыщенному раствору добавить соль, раствор станет более концентрированным.",
           "ar": "إذا أضيف الملح إلى محلول مشبع، يصبح المحلول أكثر تركيزا.",
           "zh": "如果将盐添加到饱和溶液中，溶液会变得更加浓缩。",
-          "ku": "Heke xwê li çaraliyek têrbûyî were zêdekirin, çareserî bêtir konsantre dibe."
+          "ku": "Heke xwê li çareseriyeke têrbûyî were zêdekirin, çareserî bêtir derîşîk dibe."
         },
         {
           "tr": "Zeytinyağı-su karışımı ayrımsal damıtma ile ayrılır.",
@@ -1414,7 +1414,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «ppm (частей на миллион) = (Масса растворенного вещества / Масса раствора) x 10^6.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"جزء في المليون (جزء في المليون) = (كتلة المذاب / كتلة المحلول) × 10 ^ 6.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“ppm（百万分之一）=（溶质质量/溶液质量）x 10^6。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"ppm (parçe di mîlyonekê de) = (Girdeya Solute / Solution Mass) x 10^6.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"ppm (parçe di mîlyonekê de) = (Girseya madeya helyayî / Girseya çareseriyê) x 10^6.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1448,7 +1448,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Неполярное масляное пятно легко растворяется полярной водой.",
           "ar": "تذوب وصمة الزيت غير القطبية بسهولة بالماء القطبي.",
           "zh": "非极性油污很容易被极性水溶解。",
-          "ku": "Leza rûnê ne-polar bi ava polar re bi hêsanî dihele."
+          "ku": "Lekeya rûnê ne-polar bi ava polar bi hêsanî dihele."
         },
         {
           "tr": "Ayrımsal damıtma, kaynama noktaları farklı olan homojen sıvı-sıvı karışımları ayırmada kullanılır (örn. petrol, alkol-su).",
@@ -1512,9 +1512,9 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Bei der Dialyse handelt es sich um ein zentrifugales Fällungsverfahren.",
           "fr": "La dialyse est un processus de précipitation centrifuge.",
           "ru": "Диализ – это процесс осаждения центрифугированием.",
-          "ar": "غسيل الكلى هو عملية هطول الأمطار بالطرد المركزي.",
+          "ar": "الديلزة عملية ترسيب بالطرد المركزي.",
           "zh": "透析是一种离心沉淀过程。",
-          "ku": "Dialîz pêvajoyek baranê ya navendî ye."
+          "ku": "Dialîz pêvajoyeke niştandinê bi santrîfûjê ye."
         },
         {
           "tr": "Tuzlu su kaynarken sıcaklığı baştan itibaren sabit kalır.",
@@ -1532,9 +1532,9 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Die Suspension ist eine einphasige homogene Lösung.",
           "fr": "La suspension est une solution homogène monophasée.",
           "ru": "Суспензия представляет собой однофазный гомогенный раствор.",
-          "ar": "التعليق هو حل متجانس أحادي الطور.",
+          "ar": "المعلق محلول متجانس أحادي الطور.",
           "zh": "该悬浮液是单相均相溶液。",
-          "ku": "Rawestandin çareseriyek homojen a yek-qonaxê ye."
+          "ku": "Süspansiyon çareseriyeke homojen a yek-qonaxî ye."
         },
         {
           "tr": "Ayırma hunisi, özkütleleri farklı birbiri içinde çözünmeyen sıvı-sıvı heterojen karışımları ayırır (örn. zeytinyağı-su).",
@@ -1544,7 +1544,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Делительная воронка разделяет нерастворимые гетерогенные смеси жидкость-жидкость различной плотности (например, оливковое масло-вода).",
           "ar": "يفصل قمع الفصل المخاليط غير المتجانسة السائلة غير القابلة للذوبان ذات الكثافة المختلفة (مثل زيت الزيتون والماء).",
           "zh": "分液漏斗分离不同密度的不溶性液-液非均质混合物（例如橄榄油-水）。",
-          "ku": "Kaniya veqetandinê tevliheviyên heterojen ên şil-avî yên bêçareserî yên bi tîrêjên cihêreng vediqetîne (mînak rûnê zeytûn-avê)."
+          "ku": "Hunîya veqetandinê tevliheviyên heterojen ên şil-şil ên ku di hev de nahelin û dendikên wan cuda ne ji hev vediqetîne (mînak rûnê zeytûnê-av)."
         },
         {
           "tr": "Gerçek homojen çözeltilerde ışık demeti kuvvetle saçılır ve görünür.",
@@ -1553,7 +1553,7 @@ export const unit08: ChemistryUnitSeedData = {
           "fr": "Dans les solutions véritablement homogènes, le faisceau lumineux est fortement diffusé et visible.",
           "ru": "В истинно однородных растворах луч света сильно рассеивается и виден.",
           "ar": "في المحاليل المتجانسة الحقيقية، يكون شعاع الضوء منتشرًا بقوة ومرئيًا.",
-          "zh": "在真正均匀的解决方案中，光束被强烈散射并且可见。",
+          "zh": "在真溶液中，光束被强烈散射并且可见。",
           "ku": "Di çareseriyên homojen ên rastîn de, tîrêjê ronahiyê bi tundî belav dibe û xuya dibe."
         }
       ],
@@ -1566,7 +1566,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Делительная воронка разделяет нерастворимые гетерогенные смеси жидкость-жидкость различной плотности (например, оливковое масло-вода).». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"يفصل قمع الفصل المخاليط غير المتجانسة السائلة غير القابلة للذوبان ذات الكثافة المختلفة (مثل زيت الزيتون والماء).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“分液漏斗分离不同密度的不溶性液-液非均质混合物（例如橄榄油-水）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Kaniya veqetandinê tevliheviyên heterojen ên şil-avî yên bêçareserî yên bi tîrêjên cihêreng vediqetîne (mînak rûnê zeytûn-avê).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Hunîya veqetandinê tevliheviyên heterojen ên şil-şil ên ku di hev de nahelin û dendikên wan cuda ne ji hev vediqetîne (mînak rûnê zeytûnê-av).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1590,7 +1590,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "При добавлении воды масса растворенного вещества также увеличивается.",
           "ar": "عند إضافة الماء، تزداد كتلة المذاب أيضًا.",
           "zh": "当添加水时，溶质的质量也会增加。",
-          "ku": "Dema ku av lê tê zêdekirin, girseya soletê jî zêde dibe."
+          "ku": "Dema ku av lê tê zêdekirin, girseya madeya helyayî jî zêde dibe."
         },
         {
           "tr": "Doygun çözeltiye tuz eklenirse çözelti daha derişik hale gelir.",
@@ -1600,7 +1600,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Если к насыщенному раствору добавить соль, раствор станет более концентрированным.",
           "ar": "إذا أضيف الملح إلى محلول مشبع، يصبح المحلول أكثر تركيزا.",
           "zh": "如果将盐添加到饱和溶液中，溶液会变得更加浓缩。",
-          "ku": "Heke xwê li çaraliyek têrbûyî were zêdekirin, çareserî bêtir konsantre dibe."
+          "ku": "Heke xwê li çareseriyeke têrbûyî were zêdekirin, çareserî bêtir derîşîk dibe."
         },
         {
           "tr": "Zeytinyağı-su karışımı ayrımsal damıtma ile ayrılır.",
@@ -1620,29 +1620,29 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Массовая процентная концентрация рассчитывается путем деления массы растворенного вещества на массу растворителя.",
           "ar": "يتم حساب التركيز المئوي للكتلة عن طريق قسمة كتلة المذاب على كتلة المذيب.",
           "zh": "质量百分比浓度通过溶质质量除以溶剂质量来计算。",
-          "ku": "Rêjeya sedî ji hêla girseyê ve bi dabeşkirina girseya madeya çareserkirî li ser girseya rûkalê tê hesibandin."
+          "ku": "Rêjeya girseyî ya ji sedî bi parvekirina girseya madeya helyayî li girseya helkerê tê dîtin."
         },
         {
           "tr": "Flotasyon (yüzdürme), yoğunluğu sıvıdan küçük olan katı taneciklerin yüzeye çıkarılarak toplanmasıdır (madencilikte sülfürlü cevherler).",
-          "en": "Flotation is the collection of solid particles, whose density is less than the liquid, by bringing them to the surface (sulfur ores in mining).",
-          "de": "Bei der Flotation werden feste Partikel, deren Dichte geringer ist als die der Flüssigkeit, an die Oberfläche gebracht (Schwefelerze im Bergbau).",
-          "fr": "La flottation est la collecte de particules solides, dont la densité est inférieure à celle du liquide, en les ramenant à la surface (minerais de soufre en exploitation minière).",
-          "ru": "Флотация — сбор твердых частиц, плотность которых меньше плотности жидкости, путем выноса их на поверхность (серные руды в горнодобывающей промышленности).",
-          "ar": "التعويم هو تجميع الجزيئات الصلبة التي تقل كثافتها عن السائل عن طريق رفعها إلى السطح (خامات الكبريت في التعدين).",
-          "zh": "浮选是通过将密度小于液体的固体颗粒带到表面（采矿中的硫矿石）来收集它们。",
-          "ku": "Flotasyon komkirina keriyên hişk e, ku tîraniya wan ji şilê kêmtir e, bi anîna wan li ser rûyê erdê (di madenê de kanên kewûltê)."
+          "en": "Flotation is the collection of solid particles, whose density is less than the liquid, by bringing them to the surface (sulfide ores in mining).",
+          "de": "Bei der Flotation werden feste Partikel, deren Dichte geringer ist als die der Flüssigkeit, an die Oberfläche gebracht (Sulfiderze im Bergbau).",
+          "fr": "La flottation est la collecte de particules solides, dont la densité est inférieure à celle du liquide, en les ramenant à la surface (minerais sulfurés en exploitation minière).",
+          "ru": "Флотация — сбор твердых частиц, плотность которых меньше плотности жидкости, путем выноса их на поверхность (сульфидные руды в горнодобывающей промышленности).",
+          "ar": "التعويم هو تجميع الجزيئات الصلبة التي تقل كثافتها عن السائل عن طريق رفعها إلى السطح (خامات الكبريتيد في التعدين).",
+          "zh": "浮选是通过将密度小于液体的固体颗粒带到表面（采矿中的硫化矿石）来收集它们。",
+          "ku": "Flotasyon komkirina keriyên hişk e, ku tîraniya wan ji şilê kêmtir e, bi anîna wan li ser rûyê erdê (di madenê de kanên sulfîdî)."
         }
       ],
       "correctIndex": 4,
       "explanation": {
         "tr": "Doğru cevap \"Flotasyon (yüzdürme), yoğunluğu sıvıdan küçük olan katı taneciklerin yüzeye çıkarılarak toplanmasıdır (madencilikte sülfürlü cevherler).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Flotation is the collection of solid particles, whose density is less than the liquid, by bringing them to the surface (sulfur ores in mining).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Bei der Flotation werden feste Partikel, deren Dichte geringer ist als die der Flüssigkeit, an die Oberfläche gebracht (Schwefelerze im Bergbau).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La flottation est la collecte de particules solides, dont la densité est inférieure à celle du liquide, en les ramenant à la surface (minerais de soufre en exploitation minière).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Флотация — сбор твердых частиц, плотность которых меньше плотности жидкости, путем выноса их на поверхность (серные руды в горнодобывающей промышленности).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"التعويم هو تجميع الجزيئات الصلبة التي تقل كثافتها عن السائل عن طريق رفعها إلى السطح (خامات الكبريت في التعدين).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“浮选是通过将密度小于液体的固体颗粒带到表面（采矿中的硫矿石）来收集它们。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Flotasyon komkirina keriyên hişk e, ku tîraniya wan ji şilê kêmtir e, bi anîna wan li ser rûyê erdê (di madenê de kanên kewûltê).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "en": "The correct statement is: \"Flotation is the collection of solid particles, whose density is less than the liquid, by bringing them to the surface (sulfide ores in mining).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Bei der Flotation werden feste Partikel, deren Dichte geringer ist als die der Flüssigkeit, an die Oberfläche gebracht (Sulfiderze im Bergbau).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"La flottation est la collecte de particules solides, dont la densité est inférieure à celle du liquide, en les ramenant à la surface (minerais sulfurés en exploitation minière).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Флотация — сбор твердых частиц, плотность которых меньше плотности жидкости, путем выноса их на поверхность (сульфидные руды в горнодобывающей промышленности).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"التعويم هو تجميع الجزيئات الصلبة التي تقل كثافتها عن السائل عن طريق رفعها إلى السطح (خامات الكبريتيد في التعدين).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“浮选是通过将密度小于液体的固体颗粒带到表面（采矿中的硫化矿石）来收集它们。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Flotasyon komkirina keriyên hişk e, ku tîraniya wan ji şilê kêmtir e, bi anîna wan li ser rûyê erdê (di madenê de kanên sulfîdî).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1676,7 +1676,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Неполярное масляное пятно легко растворяется полярной водой.",
           "ar": "تذوب وصمة الزيت غير القطبية بسهولة بالماء القطبي.",
           "zh": "非极性油污很容易被极性水溶解。",
-          "ku": "Leza rûnê ne-polar bi ava polar re bi hêsanî dihele."
+          "ku": "Lekeya rûnê ne-polar bi ava polar bi hêsanî dihele."
         },
         {
           "tr": "Kolloitler mikroskopsuz bakıldığında da heterojen görünür ve hemen çöker.",
@@ -1745,14 +1745,14 @@ export const unit08: ChemistryUnitSeedData = {
           "ku": "Dema ava şor dikele, germahiya wê ji destpêkê ve sabit dimîne."
         },
         {
-          "tr": "Diyaliz, kolloidal boyutlu taneciklerin yarı geçirgen zardan geçirilerek temizlenmesidir (böbrek hastalarında kan temizliği).",
-          "en": "Dialysis is the cleaning of colloidal sized particles by passing them through a semi-permeable membrane (blood cleaning in kidney patients).",
-          "de": "Bei der Dialyse werden kolloidale Partikel gereinigt, indem sie durch eine semipermeable Membran geleitet werden (Blutreinigung bei Nierenpatienten).",
-          "fr": "La dialyse est le nettoyage des particules de taille colloïdale en les faisant passer à travers une membrane semi-perméable (nettoyage du sang chez les patients rénaux).",
-          "ru": "Диализ – это очистка частиц коллоидного размера путем пропускания их через полупроницаемую мембрану (очистка крови у пациентов с почками).",
-          "ar": "غسيل الكلى هو تنظيف الجزيئات الغروية الحجم عن طريق تمريرها عبر غشاء شبه منفذ (تنظيف الدم لدى مرضى الكلى).",
-          "zh": "透析是通过使胶体大小的颗粒穿过半透膜来清洁它们（肾脏患者的血液清洁）。",
-          "ku": "Dialîz paqijkirina pariyên bi mezinahiya koloidal e bi derbaskirina wan di parzûnek nîv-permeable (paqijkirina xwînê di nexweşên gurçikê de)."
+          "tr": "Diyaliz, küçük iyon ve moleküllerin yarı geçirgen zardan geçirilerek kolloidal boyutlu taneciklerden ayrılmasıdır (böbrek hastalarında kan temizliği).",
+          "en": "Dialysis is the separation of small ions and molecules from colloidal-sized particles by passing them through a semi-permeable membrane (blood cleansing in kidney patients).",
+          "de": "Dialyse ist die Abtrennung kleiner Ionen und Moleküle von kolloidalen Teilchen, indem sie durch eine semipermeable Membran hindurchtreten (Blutreinigung bei Nierenpatienten).",
+          "fr": "La dialyse est la séparation des petits ions et molécules des particules de taille colloïdale, qui passent à travers une membrane semi-perméable (épuration du sang chez les insuffisants rénaux).",
+          "ru": "Диализ — это отделение малых ионов и молекул от частиц коллоидного размера путём их прохождения через полупроницаемую мембрану (очистка крови у почечных больных).",
+          "ar": "الديلزة هي فصل الأيونات والجزيئات الصغيرة عن الجسيمات الغروية الحجم بتمريرها عبر غشاء شبه منفذ (تنقية الدم لدى مرضى الكلى).",
+          "zh": "透析是让小的离子和分子透过半透膜，从而与胶体大小的粒子分离（肾病患者的血液净化）。",
+          "ku": "Dialîz veqetandina îyon û molekulên biçûk ji perçeyên bi mezinahiya koloîdal e, bi derbaskirina wan di parzûneke nîv-derbasbar re (paqijkirina xwînê di nexweşên gurçikan de)."
         },
         {
           "tr": "Süspansiyon tek fazlı homojen bir çözeltidir.",
@@ -1760,9 +1760,9 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Die Suspension ist eine einphasige homogene Lösung.",
           "fr": "La suspension est une solution homogène monophasée.",
           "ru": "Суспензия представляет собой однофазный гомогенный раствор.",
-          "ar": "التعليق هو حل متجانس أحادي الطور.",
+          "ar": "المعلق محلول متجانس أحادي الطور.",
           "zh": "该悬浮液是单相均相溶液。",
-          "ku": "Rawestandin çareseriyek homojen a yek-qonaxê ye."
+          "ku": "Süspansiyon çareseriyeke homojen a yek-qonaxî ye."
         },
         {
           "tr": "Gerçek homojen çözeltilerde ışık demeti kuvvetle saçılır ve görünür.",
@@ -1771,7 +1771,7 @@ export const unit08: ChemistryUnitSeedData = {
           "fr": "Dans les solutions véritablement homogènes, le faisceau lumineux est fortement diffusé et visible.",
           "ru": "В истинно однородных растворах луч света сильно рассеивается и виден.",
           "ar": "في المحاليل المتجانسة الحقيقية، يكون شعاع الضوء منتشرًا بقوة ومرئيًا.",
-          "zh": "在真正均匀的解决方案中，光束被强烈散射并且可见。",
+          "zh": "在真溶液中，光束被强烈散射并且可见。",
           "ku": "Di çareseriyên homojen ên rastîn de, tîrêjê ronahiyê bi tundî belav dibe û xuya dibe."
         },
         {
@@ -1787,14 +1787,14 @@ export const unit08: ChemistryUnitSeedData = {
       ],
       "correctIndex": 1,
       "explanation": {
-        "tr": "Doğru cevap \"Diyaliz, kolloidal boyutlu taneciklerin yarı geçirgen zardan geçirilerek temizlenmesidir (böbrek hastalarında kan temizliği).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
-        "en": "The correct statement is: \"Dialysis is the cleaning of colloidal sized particles by passing them through a semi-permeable membrane (blood cleaning in kidney patients).\". Verified fundamental chemical concept in the official curriculum.",
-        "de": "Die zutreffende Aussage lautet: \"Bei der Dialyse werden kolloidale Partikel gereinigt, indem sie durch eine semipermeable Membran geleitet werden (Blutreinigung bei Nierenpatienten).\". Gesichertes chemisches Grundprinzip.",
-        "fr": "L'affirmation exacte est: \"La dialyse est le nettoyage des particules de taille colloïdale en les faisant passer à travers une membrane semi-perméable (nettoyage du sang chez les patients rénaux).\". Notion fondamentale du programme officiel de chimie.",
-        "ru": "Правильное утверждение: «Диализ – это очистка частиц коллоидного размера путем пропускания их через полупроницаемую мембрану (очистка крови у пациентов с почками).». Фундаментальный химический факт официальной программы.",
-        "ar": "العبارة الصحيحة هي: \"غسيل الكلى هو تنظيف الجزيئات الغروية الحجم عن طريق تمريرها عبر غشاء شبه منفذ (تنظيف الدم لدى مرضى الكلى).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
-        "zh": "正确表述为：“透析是通过使胶体大小的颗粒穿过半透膜来清洁它们（肾脏患者的血液清洁）。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Dialîz paqijkirina pariyên bi mezinahiya koloidal e bi derbaskirina wan di parzûnek nîv-permeable (paqijkirina xwînê di nexweşên gurçikê de).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "tr": "Doğru cevap \"Diyaliz, küçük iyon ve moleküllerin yarı geçirgen zardan geçirilerek kolloidal boyutlu taneciklerden ayrılmasıdır (böbrek hastalarında kan temizliği).\" ifadesidir. Bu kural ÖSYM Kimya sınavlarında temel bir kazanım olarak doğrudan sorgulanmaktadır.",
+        "en": "The correct statement is: \"Dialysis is the separation of small ions and molecules from colloidal-sized particles by passing them through a semi-permeable membrane (blood cleansing in kidney patients).\". Verified fundamental chemical concept in the official curriculum.",
+        "de": "Die zutreffende Aussage lautet: \"Dialyse ist die Abtrennung kleiner Ionen und Moleküle von kolloidalen Teilchen, indem sie durch eine semipermeable Membran hindurchtreten (Blutreinigung bei Nierenpatienten).\". Gesichertes chemisches Grundprinzip.",
+        "fr": "L'affirmation exacte est: \"La dialyse est la séparation des petits ions et molécules des particules de taille colloïdale, qui passent à travers une membrane semi-perméable (épuration du sang chez les insuffisants rénaux).\". Notion fondamentale du programme officiel de chimie.",
+        "ru": "Правильное утверждение: «Диализ — это отделение малых ионов и молекул от частиц коллоидного размера путём их прохождения через полупроницаемую мембрану (очистка крови у почечных больных).». Фундаментальный химический факт официальной программы.",
+        "ar": "العبارة الصحيحة هي: \"الديلزة هي فصل الأيونات والجزيئات الصغيرة عن الجسيمات الغروية الحجم بتمريرها عبر غشاء شبه منفذ (تنقية الدم لدى مرضى الكلى).\". مفهوم كيميائي أساسي معتمد في المنهاج.",
+        "zh": "正确表述为：“透析是让小的离子和分子透过半透膜，从而与胶体大小的粒子分离（肾病患者的血液净化）。”。属于化学学科必考的核心客观真理。",
+        "ku": "Gotina rast ev e: \"Dialîz veqetandina îyon û molekulên biçûk ji perçeyên bi mezinahiya koloîdal e, bi derbaskirina wan di parzûneke nîv-derbasbar re (paqijkirina xwînê di nexweşên gurçikan de).\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1818,7 +1818,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Если к насыщенному раствору добавить соль, раствор станет более концентрированным.",
           "ar": "إذا أضيف الملح إلى محلول مشبع، يصبح المحلول أكثر تركيزا.",
           "zh": "如果将盐添加到饱和溶液中，溶液会变得更加浓缩。",
-          "ku": "Heke xwê li çaraliyek têrbûyî were zêdekirin, çareserî bêtir konsantre dibe."
+          "ku": "Heke xwê li çareseriyeke têrbûyî were zêdekirin, çareserî bêtir derîşîk dibe."
         },
         {
           "tr": "Zeytinyağı-su karışımı ayrımsal damıtma ile ayrılır.",
@@ -1838,7 +1838,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Если к раствору добавляют воду (разбавление), концентрация снижается; Формула: C1m1 = C2m2.",
           "ar": "إذا تمت إضافة الماء إلى المحلول (التخفيف)، ينخفض ​​التركيز؛ الصيغة هي C1m1 = C2m2.",
           "zh": "如果向溶液中添加水（稀释），浓度会降低；公式为C1m1 = C2m2。",
-          "ku": "Ger av li çarenûsê were zêdekirin (dilution), konsantre kêm dibe; Formula C1m1 = C2m2 ye."
+          "ku": "Ger av li çareseriyê were zêdekirin (seyrelandin), derîşî kêm dibe; formula C1m1 = C2m2 ye."
         },
         {
           "tr": "Kütlece yüzde derişim çözünen kütlesinin çözücü kütlesine bölünmesiyle bulunur.",
@@ -1848,7 +1848,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Массовая процентная концентрация рассчитывается путем деления массы растворенного вещества на массу растворителя.",
           "ar": "يتم حساب التركيز المئوي للكتلة عن طريق قسمة كتلة المذاب على كتلة المذيب.",
           "zh": "质量百分比浓度通过溶质质量除以溶剂质量来计算。",
-          "ku": "Rêjeya sedî ji hêla girseyê ve bi dabeşkirina girseya madeya çareserkirî li ser girseya rûkalê tê hesibandin."
+          "ku": "Rêjeya girseyî ya ji sedî bi parvekirina girseya madeya helyayî li girseya helkerê tê dîtin."
         },
         {
           "tr": "Ayırma hunisi kaynama noktaları farklı homojen karışımları ayırır.",
@@ -1858,7 +1858,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Делительная воронка разделяет однородные смеси с разной температурой кипения.",
           "ar": "يقوم القمع الفاصل بفصل المخاليط المتجانسة ذات نقاط غليان مختلفة.",
           "zh": "分液漏斗分离具有不同沸点的均匀混合物。",
-          "ku": "Kaniya veqetandinê tevliheviyên homojen ên bi xalên kelandinê yên cihêreng vediqetîne."
+          "ku": "Hunîya veqetandinê tevliheviyên homojen ên bi xalên kelandinê yên cihêreng vediqetîne."
         }
       ],
       "correctIndex": 2,
@@ -1870,7 +1870,7 @@ export const unit08: ChemistryUnitSeedData = {
         "ru": "Правильное утверждение: «Если к раствору добавляют воду (разбавление), концентрация снижается; Формула: C1m1 = C2m2.». Фундаментальный химический факт официальной программы.",
         "ar": "العبارة الصحيحة هي: \"إذا تمت إضافة الماء إلى المحلول (التخفيف)، ينخفض ​​التركيز؛ الصيغة هي C1m1 = C2m2.\". مفهوم كيميائي أساسي معتمد في المنهاج.",
         "zh": "正确表述为：“如果向溶液中添加水（稀释），浓度会降低；公式为C1m1 = C2m2。”。属于化学学科必考的核心客观真理。",
-        "ku": "Gotina rast ev e: \"Ger av li çarenûsê were zêdekirin (dilution), konsantre kêm dibe; Formula C1m1 = C2m2 ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
+        "ku": "Gotina rast ev e: \"Ger av li çareseriyê were zêdekirin (seyrelandin), derîşî kêm dibe; formula C1m1 = C2m2 ye.\". Têgeheke kîmyewî ya bingehîn a fermî ye."
       }
     },
     {
@@ -1968,9 +1968,9 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Die Suspension ist eine einphasige homogene Lösung.",
           "fr": "La suspension est une solution homogène monophasée.",
           "ru": "Суспензия представляет собой однофазный гомогенный раствор.",
-          "ar": "التعليق هو حل متجانس أحادي الطور.",
+          "ar": "المعلق محلول متجانس أحادي الطور.",
           "zh": "该悬浮液是单相均相溶液。",
-          "ku": "Rawestandin çareseriyek homojen a yek-qonaxê ye."
+          "ku": "Süspansiyon çareseriyeke homojen a yek-qonaxî ye."
         },
         {
           "tr": "Gerçek homojen çözeltilerde ışık demeti kuvvetle saçılır ve görünür.",
@@ -1979,7 +1979,7 @@ export const unit08: ChemistryUnitSeedData = {
           "fr": "Dans les solutions véritablement homogènes, le faisceau lumineux est fortement diffusé et visible.",
           "ru": "В истинно однородных растворах луч света сильно рассеивается и виден.",
           "ar": "في المحاليل المتجانسة الحقيقية، يكون شعاع الضوء منتشرًا بقوة ومرئيًا.",
-          "zh": "在真正均匀的解决方案中，光束被强烈散射并且可见。",
+          "zh": "在真溶液中，光束被强烈散射并且可见。",
           "ku": "Di çareseriyên homojen ên rastîn de, tîrêjê ronahiyê bi tundî belav dibe û xuya dibe."
         },
         {
@@ -2066,7 +2066,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Массовая процентная концентрация рассчитывается путем деления массы растворенного вещества на массу растворителя.",
           "ar": "يتم حساب التركيز المئوي للكتلة عن طريق قسمة كتلة المذاب على كتلة المذيب.",
           "zh": "质量百分比浓度通过溶质质量除以溶剂质量来计算。",
-          "ku": "Rêjeya sedî ji hêla girseyê ve bi dabeşkirina girseya madeya çareserkirî li ser girseya rûkalê tê hesibandin."
+          "ku": "Rêjeya girseyî ya ji sedî bi parvekirina girseya madeya helyayî li girseya helkerê tê dîtin."
         },
         {
           "tr": "Ayırma hunisi kaynama noktaları farklı homojen karışımları ayırır.",
@@ -2076,7 +2076,7 @@ export const unit08: ChemistryUnitSeedData = {
           "ru": "Делительная воронка разделяет однородные смеси с разной температурой кипения.",
           "ar": "يقوم القمع الفاصل بفصل المخاليط المتجانسة ذات نقاط غليان مختلفة.",
           "zh": "分液漏斗分离具有不同沸点的均匀混合物。",
-          "ku": "Kaniya veqetandinê tevliheviyên homojen ên bi xalên kelandinê yên cihêreng vediqetîne."
+          "ku": "Hunîya veqetandinê tevliheviyên homojen ên bi xalên kelandinê yên cihêreng vediqetîne."
         },
         {
           "tr": "Diyaliz santrifüj ile çöktürme işlemidir.",
@@ -2084,9 +2084,9 @@ export const unit08: ChemistryUnitSeedData = {
           "de": "Bei der Dialyse handelt es sich um ein zentrifugales Fällungsverfahren.",
           "fr": "La dialyse est un processus de précipitation centrifuge.",
           "ru": "Диализ – это процесс осаждения центрифугированием.",
-          "ar": "غسيل الكلى هو عملية هطول الأمطار بالطرد المركزي.",
+          "ar": "الديلزة عملية ترسيب بالطرد المركزي.",
           "zh": "透析是一种离心沉淀过程。",
-          "ku": "Dialîz pêvajoyek baranê ya navendî ye."
+          "ku": "Dialîz pêvajoyeke niştandinê bi santrîfûjê ye."
         }
       ],
       "correctIndex": 0,
