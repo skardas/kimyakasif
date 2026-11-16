@@ -705,6 +705,41 @@ export function tokenizeChemText(raw: string): ChemSegment[] {
   return tokenize(normalizeChemArrows(raw), true);
 }
 
+// ---------------------------------------------------------------------------
+// Signed numbers and degree units inside right-to-left (Arabic) text
+// ---------------------------------------------------------------------------
+
+/** True when the text contains right-to-left script (Hebrew/Arabic blocks). */
+export function hasRtlScript(text: string): boolean {
+  return /[\u0590-\u08FF\uFB1D-\uFDFF\uFE70-\uFEFF]/.test(text);
+}
+
+// "−0,76", "+0.34", "±2", "25 °C", "100°C", "109.5°", "(°C)": a sign or "°" is a neutral character
+// for the Unicode bidi algorithm, so inside Arabic text it joins the surrounding right-to-left run
+// and lands on the wrong side ("0.76−", "C° 25", "°109.5"). These runs are rendered as small
+// left-to-right isolates. A sign counts only at the start of a number ("10 - 5" and "2-3" stay
+// as they are), and a plain number without sign or degree is left alone (it already reads LTR).
+const LTR_NUMBER_RUN =
+  /(?<![\p{L}\p{N}.,)\]])(?:[−+±-]\d+(?:[.,]\d+)*(?:\s?°\s?[CFK](?!\p{L})|°)?|\d+(?:[.,]\d+)*\s?°(?:\s?[CFK](?!\p{L}))?|°\s?[CFK](?!\p{L}))/gu;
+
+/**
+ * Splits plain text into pieces; `ltr: true` pieces are signed numbers / degree values that must be
+ * isolated left-to-right when the text is shown right-to-left. Concatenating all pieces gives the
+ * input back unchanged.
+ */
+export function splitLtrNumberRuns(text: string): Array<{ text: string; ltr: boolean }> {
+  const out: Array<{ text: string; ltr: boolean }> = [];
+  let last = 0;
+  for (const m of text.matchAll(LTR_NUMBER_RUN)) {
+    const i = m.index ?? 0;
+    if (i > last) out.push({ text: text.slice(last, i), ltr: false });
+    out.push({ text: m[0], ltr: true });
+    last = i + m[0].length;
+  }
+  if (last < text.length) out.push({ text: text.slice(last), ltr: false });
+  return out;
+}
+
 /** Compact debug rendering: chem tokens in ‹›, subscripts as _{..}, superscripts as ^{..}. */
 export function renderChemDebug(raw: string): string {
   return tokenizeChemText(raw)

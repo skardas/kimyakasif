@@ -13,6 +13,7 @@ import { PRIMARY_32_SCENES } from '../../src/data/threeScenesData';
 import { calculateFitDistance, ZOOM_FIT_I18N } from '../../src/components/three/Kimya3DLab';
 import { ChemicalDiagram, CLOSE_MODAL_I18N } from '../../src/components/diagrams/ChemicalDiagram';
 import { Kimya3DFallbackCanvas } from '../../src/components/three/Kimya3DFallbackCanvas';
+import { splitLtrNumberRuns } from '../../src/components/common/chemNotation';
 import { expect, test } from './harness/testFramework';
 import { printTestResult } from './harness/reporter';
 import {
@@ -130,6 +131,13 @@ export async function runTier2Tests(): Promise<void> {
         expect(fp.fact.tr.length).toBeGreaterThan(10);
         expect(fp.trap.tr.length).toBeGreaterThan(10);
       });
+
+      // 4. Arabic text: signed numbers and degree values become LTR isolates ("25 °C" not "C° 25",
+      //    "−0.76" not "0.76−"); binary minus and ranges stay plain, and the text is never changed.
+      const ar = 'عند 25 °C و −0.76 V (°C) و 109.5° و 10 - 5 و 2-3';
+      const pieces = splitLtrNumberRuns(ar);
+      expect(pieces.filter((p) => p.ltr).map((p) => p.text)).toEqual(['25 °C', '−0.76', '°C', '109.5°']);
+      expect(pieces.map((p) => p.text).join('')).toBe(ar);
     })
   );
 
