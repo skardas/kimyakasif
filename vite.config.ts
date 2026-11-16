@@ -75,7 +75,10 @@ export default defineConfig({
     },
   ],
   build: {
-    target: 'esnext',
+    // Oldest engines the app ships to: iOS 15 (deployment target → Safari 15) and Android System
+    // WebView 87+. 'esnext' left syntax such as three.js's class static blocks (Chrome 94, Safari
+    // 16.4) in the bundle, so the 3D/exam chunks failed to parse on those WebViews.
+    target: ['safari15', 'chrome87'],
     chunkSizeWarningLimit: 2500,
     rollupOptions: {
       output: {
