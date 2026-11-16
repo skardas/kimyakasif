@@ -2120,7 +2120,16 @@ export const unit22: ChemistryUnitSeedData = {
             "zh": "半反应",
             "ku": "Nîvreaksiyon"
           },
-          "E° (V)"
+          {
+            "tr": "E° (V)",
+            "en": "E° (V)",
+            "de": "E° (V)",
+            "fr": "E° (V)",
+            "ru": "E° (В)",
+            "ar": "E° (V)",
+            "zh": "E° (V)",
+            "ku": "E° (V)"
+          }
         ],
         "rows": [
           [
@@ -2224,6 +2233,44 @@ export const unit22: ChemistryUnitSeedData = {
         "ar": "I صحيحة: الزنك أنشط من الحديد، فعند انكشاف الخدش يصبح مصعدًا ويتأكسد هو فيحمي الحديد. II صحيحة: القصدير أقل نشاطًا من الحديد؛ وفي زوج الحديد–القصدير في الوسط الرطب يصبح الحديد مصعدًا، لذا قد يتآكل الحديد عند الخدش أسرع حتى من الحديد غير المطلي. III صحيحة: الطلاء السليم، أيًّا كان فلزه، يعزل الحديد عن O2 والرطوبة كحاجز فيزيائي. العبارات الثلاث صحيحة.",
         "zh": "I 正确：锌比铁活泼，划痕露出后锌成为负极而自身被氧化，从而保护铁。II 正确：锡不如铁活泼；在潮湿环境中铁–锡构成的原电池里铁作负极，所以划痕处的铁甚至可能比未镀层的铁腐蚀更快。III 正确：完好的镀层无论是哪种金属，都能作为物理屏障把铁与 O2 和水分隔开。三种说法都正确。",
         "ku": "I rast e: zink ji hesin çalaktir e, loma dema xêz vebe ew dibe anod, bi xwe oksîde dibe û hesin diparêze. II rast e: qelay ji hesin kêmçalaktir e; di hawîrdora şil de di cotê hesin–qelay de hesin dibe anod, loma hesinê li cihê xêzê dikare ji hesinê bêpêçan jî zûtir were xwarin. III rast e: pêçaneke saxlem, ji kîjan metalê dibe bila bibe, wek astengiyeke fîzîkî hesin ji O2 û şiliyê diparêze. Her sê gotin rast in."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 156,
+        "markup": "<rect x=\"20\" y=\"89\" width=\"150\" height=\"36\" class=\"qf-fill\"/><rect x=\"20\" y=\"80\" width=\"67\" height=\"9\" class=\"qf-hl\"/><rect x=\"103\" y=\"80\" width=\"67\" height=\"9\" class=\"qf-hl\"/><path d=\"M65 80 Q95 50 125 80 Z\" class=\"qf-water\"/><rect x=\"87\" y=\"80\" width=\"16\" height=\"9\" class=\"qf-water\"/><text x=\"95\" y=\"112\" text-anchor=\"middle\" class=\"qf-strong\">Fe</text><text x=\"43\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">Sn</text><text x=\"95\" y=\"146\" text-anchor=\"middle\" class=\"qf-small\">{{sn}}</text><rect x=\"190\" y=\"89\" width=\"150\" height=\"36\" class=\"qf-fill\"/><rect x=\"190\" y=\"80\" width=\"67\" height=\"9\" class=\"qf-hl2\"/><rect x=\"273\" y=\"80\" width=\"67\" height=\"9\" class=\"qf-hl2\"/><path d=\"M235 80 Q265 50 295 80 Z\" class=\"qf-water\"/><rect x=\"257\" y=\"80\" width=\"16\" height=\"9\" class=\"qf-water\"/><text x=\"265\" y=\"112\" text-anchor=\"middle\" class=\"qf-strong\">Fe</text><text x=\"213\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">Zn</text><text x=\"265\" y=\"146\" text-anchor=\"middle\" class=\"qf-small\">{{zn}}</text>",
+        "labels": {
+          "sn": {
+            "tr": "kalay kaplı demir",
+            "en": "tin-coated iron",
+            "de": "verzinntes Eisen",
+            "fr": "fer étamé",
+            "ru": "железо, покрытое оловом",
+            "ar": "حديد مطلي بالقصدير",
+            "zh": "镀锡铁",
+            "ku": "hesinê bi qelayê pêçayî"
+          },
+          "zn": {
+            "tr": "çinko kaplı demir",
+            "en": "zinc-coated iron",
+            "de": "verzinktes Eisen",
+            "fr": "fer galvanisé",
+            "ru": "железо, покрытое цинком",
+            "ar": "حديد مطلي بالزنك",
+            "zh": "镀锌铁",
+            "ku": "hesinê bi zinkê pêçayî"
+          }
+        },
+        "caption": {
+          "tr": "Kesit görünüşü: kaplamadaki çizik, nemli havada su damlasıyla örtülüdür.",
+          "en": "Cross-section: the scratch in the coating is covered by a water droplet in humid air.",
+          "de": "Querschnitt: Der Kratzer in der Beschichtung ist in feuchter Luft von einem Wassertropfen bedeckt.",
+          "fr": "Vue en coupe : dans l'air humide, la rayure du revêtement est recouverte d'une gouttelette d'eau.",
+          "ru": "Разрез: царапина в покрытии во влажном воздухе покрыта каплей воды.",
+          "ar": "مقطع عرضي: الخدش في الطلاء مغطّى بقطرة ماء في الهواء الرطب.",
+          "zh": "截面图：潮湿空气中，镀层划痕处覆盖着一滴水。",
+          "ku": "Dîmena birrînê: di hewaya şil de dilopek av xêza li ser pêçanê digire."
+        }
       }
     },
     {

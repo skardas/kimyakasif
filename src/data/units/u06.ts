@@ -2075,6 +2075,34 @@ export const unit06: ChemistryUnitSeedData = {
         "ar": "I صحيحة: في الدورق المفتوح يخرج غاز H2 الناتج فيُظهر الميزان نقصًا، وإذا احتُسب الغاز الخارج تبقى الكتلة الكلية محفوظة. II صحيحة: في التفاعلات الكيميائية لا تفنى الذرات ولا تُستحدث بل يُعاد ترتيبها فقط. III خاطئة: وفق المعادلة مولات المتفاعلات 1 + 2 = 3 mol ومولات النواتج 1 + 1 = 2 mol؛ فالكتلة محفوظة ولا يلزم أن يُحفظ عدد المولات.",
         "zh": "I 正确：敞口瓶中生成的 H2 逸出，所以天平示数减小；若把逸出的气体计算在内，总质量守恒。II 正确：化学反应中原子既不消失也不产生，只是重新组合。III 错误：按方程式反应物为 1 + 2 = 3 mol，生成物为 1 + 1 = 2 mol；质量守恒，但物质的量不一定守恒。",
         "ku": "I rast e: di firaxa devvekirî de gaza H2 ya ku çêdibe ji derdorê dûr dikeve, loma terazû kêmbûnê nîşan dide; heke gaza ku derketiye jî were hesibandin, girseya giştî tê parastin. II rast e: di reaksiyonên kîmyewî de atom ne winda dibin ne jî çêdibin, tenê ji nû ve tên rêzkirin. III şaş e: li gorî hevkêşeyê, reaktant 1 + 2 = 3 mol, hilber 1 + 1 = 2 mol in; girse tê parastin, lê ne mecbûr e ku hejmara molan were parastin."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 200,
+        "markup": "<rect x=\"43\" y=\"166\" width=\"104\" height=\"7\" class=\"qf-solid\"/><rect x=\"51\" y=\"173\" width=\"88\" height=\"20\" class=\"qf-fill\"/><rect x=\"77\" y=\"177\" width=\"36\" height=\"11\" class=\"qf-water\"/><polygon points=\"59,165 131,165 103,105 103,72 87,72 87,105\" class=\"qf-fill\"/><polygon points=\"60,164 130,164 120,142 70,142\" class=\"qf-water\"/><rect x=\"83\" y=\"155\" width=\"16\" height=\"4\" class=\"qf-solid\"/><circle cx=\"103\" cy=\"150\" r=\"2.4\" class=\"qf-fill\"/><circle cx=\"93\" cy=\"147\" r=\"2\" class=\"qf-fill\"/><circle cx=\"95\" cy=\"60\" r=\"2.6\" class=\"qf-fill\"/><circle cx=\"101\" cy=\"48\" r=\"2.6\" class=\"qf-fill\"/><circle cx=\"91\" cy=\"37\" r=\"2.6\" class=\"qf-fill\"/><text x=\"109\" y=\"52\" class=\"qf-strong\">H₂</text><text x=\"95\" y=\"18\" text-anchor=\"middle\" class=\"qf-small\">{{open}}</text><rect x=\"213\" y=\"166\" width=\"104\" height=\"7\" class=\"qf-solid\"/><rect x=\"221\" y=\"173\" width=\"88\" height=\"20\" class=\"qf-fill\"/><rect x=\"247\" y=\"177\" width=\"36\" height=\"11\" class=\"qf-water\"/><polygon points=\"229,165 301,165 273,105 273,72 257,72 257,105\" class=\"qf-fill\"/><polygon points=\"230,164 300,164 290,142 240,142\" class=\"qf-water\"/><rect x=\"253\" y=\"155\" width=\"16\" height=\"4\" class=\"qf-solid\"/><circle cx=\"273\" cy=\"150\" r=\"2.4\" class=\"qf-fill\"/><circle cx=\"263\" cy=\"147\" r=\"2\" class=\"qf-fill\"/><rect x=\"254\" y=\"62\" width=\"22\" height=\"13\" class=\"qf-solid\"/><text x=\"265\" y=\"18\" text-anchor=\"middle\" class=\"qf-small\">{{closed}}</text>",
+        "labels": {
+          "open": {
+            "tr": "ağzı açık",
+            "en": "open flask",
+            "de": "offener Kolben",
+            "fr": "erlenmeyer ouvert",
+            "ru": "открытая колба",
+            "ar": "دورق مفتوح",
+            "zh": "敞口锥形瓶",
+            "ku": "devê vekirî"
+          },
+          "closed": {
+            "tr": "lastik tıpayla kapalı",
+            "en": "closed with a rubber stopper",
+            "de": "mit Gummistopfen verschlossen",
+            "fr": "fermé par un bouchon",
+            "ru": "закрыта резиновой пробкой",
+            "ar": "مسدود بسدادة مطاطية",
+            "zh": "用橡胶塞塞紧",
+            "ku": "bi tipaya lastîkî girtî"
+          }
+        }
       }
     },
     {

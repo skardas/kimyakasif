@@ -1309,7 +1309,7 @@ export const unit03: ChemistryUnitSeedData = {
         "kind": "svg",
         "width": 340,
         "height": 192,
-        "markup": "<circle cx=\"55\" cy=\"70\" r=\"22\" class=\"qf-fill\"/><text x=\"55\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">Na⁺</text><circle cx=\"153\" cy=\"54\" r=\"9\" class=\"qf-fill\"/><text x=\"153\" y=\"58\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"153\" cy=\"86\" r=\"9\" class=\"qf-fill\"/><text x=\"153\" y=\"90\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"135\" cy=\"70\" r=\"13\" class=\"qf-fill\"/><text x=\"135\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">O</text><line x1=\"78\" y1=\"70\" x2=\"121\" y2=\"70\" class=\"qf-dash\"/><text x=\"100\" y=\"61\" text-anchor=\"middle\" class=\"qf-big\">a</text><circle cx=\"302\" cy=\"70\" r=\"26\" class=\"qf-fill\"/><text x=\"302\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">Cl⁻</text><circle cx=\"205\" cy=\"52\" r=\"9\" class=\"qf-fill\"/><text x=\"205\" y=\"56\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"218\" cy=\"70\" r=\"13\" class=\"qf-fill\"/><text x=\"218\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">O</text><circle cx=\"238\" cy=\"70\" r=\"9\" class=\"qf-fill\"/><text x=\"238\" y=\"74\" text-anchor=\"middle\" class=\"qf-small\">H</text><line x1=\"248\" y1=\"70\" x2=\"275\" y2=\"70\" class=\"qf-dash\"/><text x=\"261\" y=\"61\" text-anchor=\"middle\" class=\"qf-big\">b</text><circle cx=\"103\" cy=\"143\" r=\"9\" class=\"qf-fill\"/><text x=\"103\" y=\"147\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"115\" cy=\"160\" r=\"13\" class=\"qf-fill\"/><text x=\"115\" y=\"164\" text-anchor=\"middle\" class=\"qf-strong\">O</text><circle cx=\"135\" cy=\"160\" r=\"9\" class=\"qf-fill\"/><text x=\"135\" y=\"164\" text-anchor=\"middle\" class=\"qf-small\">H</text><line x1=\"145\" y1=\"160\" x2=\"181\" y2=\"160\" class=\"qf-dash\"/><circle cx=\"195\" cy=\"160\" r=\"13\" class=\"qf-fill\"/><text x=\"195\" y=\"164\" text-anchor=\"middle\" class=\"qf-strong\">O</text><circle cx=\"211\" cy=\"175\" r=\"9\" class=\"qf-fill\"/><text x=\"211\" y=\"179\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"211\" cy=\"145\" r=\"9\" class=\"qf-fill\"/><text x=\"211\" y=\"149\" text-anchor=\"middle\" class=\"qf-small\">H</text><text x=\"163\" y=\"151\" text-anchor=\"middle\" class=\"qf-big\">c</text>"
+        "markup": "<circle cx=\"55\" cy=\"70\" r=\"15\" class=\"qf-fill\"/><text x=\"55\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">Na⁺</text><circle cx=\"153\" cy=\"54\" r=\"9\" class=\"qf-fill\"/><text x=\"153\" y=\"58\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"153\" cy=\"86\" r=\"9\" class=\"qf-fill\"/><text x=\"153\" y=\"90\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"135\" cy=\"70\" r=\"13\" class=\"qf-fill\"/><text x=\"135\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">O</text><line x1=\"72\" y1=\"70\" x2=\"121\" y2=\"70\" class=\"qf-dash\"/><text x=\"100\" y=\"61\" text-anchor=\"middle\" class=\"qf-big\">a</text><circle cx=\"302\" cy=\"70\" r=\"26\" class=\"qf-fill\"/><text x=\"302\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">Cl⁻</text><circle cx=\"205\" cy=\"52\" r=\"9\" class=\"qf-fill\"/><text x=\"205\" y=\"56\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"218\" cy=\"70\" r=\"13\" class=\"qf-fill\"/><text x=\"218\" y=\"74\" text-anchor=\"middle\" class=\"qf-strong\">O</text><circle cx=\"238\" cy=\"70\" r=\"9\" class=\"qf-fill\"/><text x=\"238\" y=\"74\" text-anchor=\"middle\" class=\"qf-small\">H</text><line x1=\"248\" y1=\"70\" x2=\"275\" y2=\"70\" class=\"qf-dash\"/><text x=\"261\" y=\"61\" text-anchor=\"middle\" class=\"qf-big\">b</text><circle cx=\"103\" cy=\"143\" r=\"9\" class=\"qf-fill\"/><text x=\"103\" y=\"147\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"115\" cy=\"160\" r=\"13\" class=\"qf-fill\"/><text x=\"115\" y=\"164\" text-anchor=\"middle\" class=\"qf-strong\">O</text><circle cx=\"135\" cy=\"160\" r=\"9\" class=\"qf-fill\"/><text x=\"135\" y=\"164\" text-anchor=\"middle\" class=\"qf-small\">H</text><line x1=\"145\" y1=\"160\" x2=\"181\" y2=\"160\" class=\"qf-dash\"/><circle cx=\"195\" cy=\"160\" r=\"13\" class=\"qf-fill\"/><text x=\"195\" y=\"164\" text-anchor=\"middle\" class=\"qf-strong\">O</text><circle cx=\"211\" cy=\"175\" r=\"9\" class=\"qf-fill\"/><text x=\"211\" y=\"179\" text-anchor=\"middle\" class=\"qf-small\">H</text><circle cx=\"211\" cy=\"145\" r=\"9\" class=\"qf-fill\"/><text x=\"211\" y=\"149\" text-anchor=\"middle\" class=\"qf-small\">H</text><text x=\"163\" y=\"151\" text-anchor=\"middle\" class=\"qf-big\">c</text>"
       }
     },
     {
@@ -2289,6 +2289,44 @@ export const unit03: ChemistryUnitSeedData = {
         "ar": "لكي يوصل المحلول التيار يجب أن يحتوي على دقائق مشحونة تتحرك بحرية (أيونات). وNaCl مركب أيوني يتفكك عند ذوبانه إلى أيونات Na+ وCl- التي تنقل التيار. أما السكر فيتكوّن من جزيئات مترابطة تساهمياً، يذوب لكنه ينتشر جزيئاتٍ دون أن يتأين فلا يوصل. والسكر يذوب في الماء جيداً، وNaCl لا يحتوي على روابط تساهمية أو فلزية.",
         "zh": "溶液要导电，必须含有可自由移动的带电微粒（离子）。离子化合物 NaCl 溶于水时解离成 Na+ 和 Cl-，这些离子导电。糖由共价键结合的分子构成，能溶于水，但以分子形式分散而不电离，所以不导电。糖易溶于水；NaCl 中没有共价键或金属键。",
         "ku": "Ji bo ku çareserî herikînê biguhezîne, divê perçeyên barkirî yên ku bi azadî dilivin (îyon) tê de hebin. NaCl, ku pêkhateyeke îyonîk e, dema di avê de dihele li îyonên Na+ û Cl- vediqete û ev îyon herikînê hildigirin. Şekir jî ji molekulên bi girêdanên kovalent pêk tê; di avê de dihele, lê bê ku bibe îyon wekî molekul belav dibe, loma naguhezîne. Şekir di avê de baş dihele; di NaCl de girêdana kovalent an metalîk tune ye."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 200,
+        "markup": "<path d=\"M20 92 V170 H100 V92\" class=\"qf-line\"/><rect x=\"21\" y=\"110\" width=\"78\" height=\"59\" class=\"qf-water\"/><rect x=\"39\" y=\"72\" width=\"6\" height=\"84\" class=\"qf-solid\"/><rect x=\"75\" y=\"72\" width=\"6\" height=\"84\" class=\"qf-solid\"/><path d=\"M42 72 V60 M42 52 V36 H50 M70 36 H78 V72\" class=\"qf-line\"/><line x1=\"34\" y1=\"60\" x2=\"50\" y2=\"60\" class=\"qf-line\"/><line x1=\"38\" y1=\"52\" x2=\"46\" y2=\"52\" class=\"qf-line\" style=\"stroke-width:3\"/><circle cx=\"60\" cy=\"36\" r=\"10\" class=\"qf-fill\"/><text x=\"60\" y=\"190\" text-anchor=\"middle\" class=\"qf-small\">{{a}}</text><path d=\"M140 92 V170 H220 V92\" class=\"qf-line\"/><rect x=\"141\" y=\"110\" width=\"78\" height=\"59\" class=\"qf-water\"/><rect x=\"159\" y=\"72\" width=\"6\" height=\"84\" class=\"qf-solid\"/><rect x=\"195\" y=\"72\" width=\"6\" height=\"84\" class=\"qf-solid\"/><path d=\"M162 72 V60 M162 52 V36 H170 M190 36 H198 V72\" class=\"qf-line\"/><line x1=\"154\" y1=\"60\" x2=\"170\" y2=\"60\" class=\"qf-line\"/><line x1=\"158\" y1=\"52\" x2=\"166\" y2=\"52\" class=\"qf-line\" style=\"stroke-width:3\"/><circle cx=\"180\" cy=\"36\" r=\"10\" class=\"qf-fill\"/><text x=\"180\" y=\"190\" text-anchor=\"middle\" class=\"qf-small\">{{b}}</text><path d=\"M260 92 V170 H340 V92\" class=\"qf-line\"/><rect x=\"261\" y=\"110\" width=\"78\" height=\"59\" class=\"qf-water\"/><rect x=\"279\" y=\"72\" width=\"6\" height=\"84\" class=\"qf-solid\"/><rect x=\"315\" y=\"72\" width=\"6\" height=\"84\" class=\"qf-solid\"/><path d=\"M282 72 V60 M282 52 V36 H290 M310 36 H318 V72\" class=\"qf-line\"/><line x1=\"274\" y1=\"60\" x2=\"290\" y2=\"60\" class=\"qf-line\"/><line x1=\"278\" y1=\"52\" x2=\"286\" y2=\"52\" class=\"qf-line\" style=\"stroke-width:3\"/><circle cx=\"300\" cy=\"36\" r=\"10\" class=\"qf-accent2\"/><path d=\"M300 20 V13 M288 25 L283 20 M312 25 L317 20 M285 36 H279 M315 36 H321\" class=\"qf-stroke-accent2\"/><text x=\"300\" y=\"190\" text-anchor=\"middle\" class=\"qf-small\">{{c}}</text>",
+        "labels": {
+          "a": {
+            "tr": "saf su",
+            "en": "pure water",
+            "de": "reines Wasser",
+            "fr": "eau pure",
+            "ru": "чистая вода",
+            "ar": "ماء نقي",
+            "zh": "纯水",
+            "ku": "ava paqij"
+          },
+          "b": {
+            "tr": "şekerli su",
+            "en": "sugar water",
+            "de": "Zuckerwasser",
+            "fr": "eau sucrée",
+            "ru": "раствор сахара",
+            "ar": "ماء محلّى بالسكر",
+            "zh": "糖水",
+            "ku": "ava bi şekir"
+          },
+          "c": {
+            "tr": "tuzlu su (NaCl)",
+            "en": "salt water (NaCl)",
+            "de": "Salzwasser (NaCl)",
+            "fr": "eau salée (NaCl)",
+            "ru": "раствор NaCl",
+            "ar": "ماء مملح (NaCl)",
+            "zh": "食盐水 (NaCl)",
+            "ku": "ava bi xwê (NaCl)"
+          }
+        }
       }
     },
     {

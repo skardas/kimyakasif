@@ -505,6 +505,11 @@
 .qf-svg .qf-accent2 { fill: var(--gold); stroke: none; }
 .qf-svg .qf-accent3 { fill: var(--violet); stroke: none; }
 .qf-svg .qf-stroke-accent { stroke: var(--accent); fill: none; stroke-width: 2.2; }
+.qf-svg .qf-stroke-accent2 { stroke: var(--gold); fill: none; stroke-width: 2; stroke-linecap: round; }
+/* Highlighted cells/regions that carry text: a soft tint keeps var(--text) readable in both themes
+   (text on the solid accents measures only ~1.6:1 in dark mode). */
+.qf-svg .qf-hl { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; }
+.qf-svg .qf-hl2 { fill: var(--gold-soft); stroke: var(--gold); stroke-width: 2; }
 .qf-svg .qf-water { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.2; }
 .qf-svg .qf-gas { fill: var(--violet-soft); stroke: none; }
 .qf-svg .qf-solid { fill: var(--muted); stroke: var(--text); stroke-width: 1.2; }

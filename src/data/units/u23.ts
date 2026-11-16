@@ -1334,6 +1334,12 @@ export const unit23: ChemistryUnitSeedData = {
         "ar": "يحتوي الجزيء على 3 روابط C–H كلها أحادية: 3 σ. والرابطة الثنائية C=C تحتوي 1 σ + 1 π، والرابطة الأحادية C–C تحتوي 1 σ، والرابطة الثلاثية C≡N تحتوي 1 σ + 2 π. مجموع σ = 3 + 1 + 1 + 1 = 6، ومجموع π = 1 + 2 = 3. عدّ الرابطة الثلاثية رابطة π واحدة يعطي 6 σ و2 π، وعدّ كل خط رابطة σ يعطي 9 σ، وكلاهما خطأ.",
         "zh": "分子中有3个C–H单键，即3个σ键。C=C双键含1个σ键和1个π键，C–C单键含1个σ键，C≡N三键含1个σ键和2个π键。σ键总数 = 3 + 1 + 1 + 1 = 6，π键总数 = 1 + 2 = 3。把三键只算一个π键会得到6个σ、2个π；把每条键线都算作σ键会得到9个σ，两者都不对。",
         "ku": "Di molekulê de 3 girêdanên C–H hene, hemû yekane ne: 3 σ. Girêdana ducarî ya C=C 1 σ + 1 π, girêdana yekane ya C–C 1 σ û girêdana sêcarî ya C≡N 1 σ + 2 π dihewîne. Hejmara giştî ya σ = 3 + 1 + 1 + 1 = 6, ya π = 1 + 2 = 3. Hejmartina girêdana sêcarî wek tenê yek π encama 6 σ, 2 π dide; hejmartina her xêza girêdanê wek σ encama 9 σ dide; her du jî şaş in."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 320,
+        "height": 160,
+        "markup": "<text x=\"38\" y=\"62\" text-anchor=\"middle\" class=\"qf-big\">H</text><text x=\"38\" y=\"148\" text-anchor=\"middle\" class=\"qf-big\">H</text><line x1=\"60\" y1=\"91\" x2=\"46\" y2=\"68\" class=\"qf-line\"/><line x1=\"60\" y1=\"109\" x2=\"46\" y2=\"132\" class=\"qf-line\"/><text x=\"70\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">C</text><line x1=\"80\" y1=\"96\" x2=\"130\" y2=\"96\" class=\"qf-line\"/><line x1=\"80\" y1=\"104\" x2=\"130\" y2=\"104\" class=\"qf-line\"/><text x=\"140\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">C</text><line x1=\"140\" y1=\"89\" x2=\"140\" y2=\"64\" class=\"qf-line\"/><text x=\"140\" y=\"58\" text-anchor=\"middle\" class=\"qf-big\">H</text><line x1=\"150\" y1=\"100\" x2=\"200\" y2=\"100\" class=\"qf-line\"/><text x=\"210\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">C</text><line x1=\"220\" y1=\"94\" x2=\"268\" y2=\"94\" class=\"qf-line\"/><line x1=\"220\" y1=\"100\" x2=\"268\" y2=\"100\" class=\"qf-line\"/><line x1=\"220\" y1=\"106\" x2=\"268\" y2=\"106\" class=\"qf-line\"/><text x=\"280\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">N</text>"
       }
     },
     {

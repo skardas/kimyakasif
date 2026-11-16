@@ -88,6 +88,12 @@ function GraphFigure({ fig }: { fig: Extract<QuestionFigure, { kind: 'graph' }> 
   );
 }
 
+/**
+ * Signed numbers ("−1,66", "+0.34", "2,0x10^-4") keep their sign on the left in RTL tables: without an
+ * explicit LTR run the bidi algorithm renders "−1.66" as "1.66−" in Arabic.
+ */
+const numericDir = (c: string) => (/^[\s+\-−–]*\d[\d.,]*(?:\s*[x×]\s*10\^?[-−–]?\d+)?\s*$/.test(c) ? 'ltr' : undefined);
+
 function TableFigure({ fig }: { fig: Extract<QuestionFigure, { kind: 'table' }> }) {
   return (
     <div className="qf-table-wrap">
@@ -103,7 +109,11 @@ function TableFigure({ fig }: { fig: Extract<QuestionFigure, { kind: 'table' }> 
           {fig.rows.map((row, ri) => (
             <tr key={ri}>
               {row.map((c, ci) =>
-                ci === 0 ? <th key={ci} scope="row">{formatChemText(c)}</th> : <td key={ci}>{formatChemText(c)}</td>
+                ci === 0 ? (
+                  <th key={ci} scope="row" dir={numericDir(c)}>{formatChemText(c)}</th>
+                ) : (
+                  <td key={ci} dir={numericDir(c)}>{formatChemText(c)}</td>
+                )
               )}
             </tr>
           ))}

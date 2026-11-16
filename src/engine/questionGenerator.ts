@@ -13,10 +13,18 @@ import { enrichQuestionsWithDiagrams, planDiagramPlacement, type DiagramPlacemen
 
 /** Resolves a figure seed's texts to one language (language-neutral strings pass through). */
 export function resolveFigure(seed: QuestionFigureSeed, lang: LanguageCode): QuestionFigure {
-  const t = (x: FigureText): string => (typeof x === 'string' ? x : x[lang] || x.tr);
+  // In Arabic (RTL) the neutral "°" of "(°C)" joins the Arabic run and renders as "(C°)"; an LRM keeps "°C" together.
+  const t = (x: FigureText): string => {
+    const s = typeof x === 'string' ? x : x[lang] || x.tr;
+    return lang === 'ar' ? s.replace(/°C/g, '‎°C') : s;
+  };
   // Numeric ticks get a language-appropriate decimal separator (32,4 in tr/de/fr/ru/ku; 32.4 in en/zh/ar).
-  const dec = (n: number) => (['en', 'zh', 'ar'].includes(lang) ? String(n) : String(n).replace('.', ','));
-  const tick = (v: number | { v: number; label: FigureText }) => (typeof v === 'number' ? { v, label: dec(v) } : { v: v.v, label: t(v.label) });
+  const pointLangs = ['en', 'zh', 'ar'].includes(lang);
+  const minus = (s: string) => s.replace(/^-(?=\d)/, '−');
+  const dec = (n: number) => minus(pointLangs ? String(n) : String(n).replace('.', ','));
+  // Authored numeric tick labels ("1,10", "-150") follow the same separator and minus sign.
+  const numLabel = (s: string) => (/^[-−]?\d+(?:[.,]\d+)?$/.test(s) ? minus(pointLangs ? s.replace(',', '.') : s.replace('.', ',')) : s);
+  const tick = (v: number | { v: number; label: FigureText }) => (typeof v === 'number' ? { v, label: dec(v) } : { v: v.v, label: numLabel(t(v.label)) });
   const cap = seed.caption !== undefined ? { caption: t(seed.caption) } : {};
   switch (seed.kind) {
     case 'graph': {
@@ -35,7 +43,6 @@ export function resolveFigure(seed: QuestionFigureSeed, lang: LanguageCode): Que
     }
     case 'table': {
       // Purely numeric cells ("+2,87", "0,1", "2,0x10^-4") follow the language's decimal separator.
-      const pointLangs = ['en', 'zh', 'ar'].includes(lang);
       const cell = (x: FigureText) => {
         const v = t(x);
         return pointLangs && /^[\s+\-−–]*\d[\d,]*(?:\s*[x×]\s*10\^?[-−–]?\d+)?\s*$/.test(v) ? v.replace(/(\d),(\d)/g, '$1.$2') : v;

@@ -1243,7 +1243,7 @@ export const unit16: ChemistryUnitSeedData = {
         "kind": "svg",
         "width": 360,
         "height": 230,
-        "markup": "<path d='M50,218 V22' class='qf-line'/><path d='M50,12 L45,23 H55 Z' class='qf-dot'/><text x='60' y='18'>H (kJ)</text><path d='M46,40 H54 M46,86 H54 M46,205 H54' class='qf-line'/><path d='M54,40 H110 M54,86 H110 M54,205 H110' class='qf-dash'/><path d='M110,40 H300 M110,86 H300 M110,205 H300' class='qf-stroke-accent'/><text x='42' y='44' text-anchor='end'>0</text><text x='42' y='90' text-anchor='end'>{{v1}}</text><text x='42' y='209' text-anchor='end'>{{v2}}</text><text x='205' y='33' text-anchor='middle' class='qf-strong'>{{l0}}</text><text x='205' y='79' text-anchor='middle' class='qf-strong'>{{l1}}</text><text x='205' y='198' text-anchor='middle' class='qf-strong'>{{l2}}</text>",
+        "markup": "<path d='M50,218 V22' class='qf-line'/><path d='M50,12 L45,23 H55 Z' class='qf-dot'/><text x='60' y='18'>{{ax}}</text><path d='M46,40 H54 M46,86 H54 M46,205 H54' class='qf-line'/><path d='M54,40 H110 M54,86 H110 M54,205 H110' class='qf-dash'/><path d='M110,40 H300 M110,86 H300 M110,205 H300' class='qf-stroke-accent'/><text x='42' y='44' text-anchor='end'>0</text><text x='42' y='90' text-anchor='end'>{{v1}}</text><text x='42' y='209' text-anchor='end'>{{v2}}</text><text x='205' y='33' text-anchor='middle' class='qf-strong'>{{l0}}</text><text x='205' y='79' text-anchor='middle' class='qf-strong'>{{l1}}</text><text x='205' y='198' text-anchor='middle' class='qf-strong'>{{l2}}</text>",
         "labels": {
           "v1": {
             "tr": "−110,5",
@@ -1294,6 +1294,16 @@ export const unit16: ChemistryUnitSeedData = {
             "ar": "CO₂(g)",
             "zh": "CO₂(g)",
             "ku": "CO₂(g)"
+          },
+          "ax": {
+            "tr": "H (kJ)",
+            "en": "H (kJ)",
+            "de": "H (kJ)",
+            "fr": "H (kJ)",
+            "ru": "H (кДж)",
+            "ar": "H (kJ)",
+            "zh": "H (kJ)",
+            "ku": "H (kJ)"
           }
         }
       }
@@ -1752,12 +1762,30 @@ export const unit16: ChemistryUnitSeedData = {
           {
             "x": 1,
             "y": 40,
-            "label": "X(g)"
+            "label": {
+              "tr": "X(g)",
+              "en": "X(g)",
+              "de": "X(g)",
+              "fr": "X(g)",
+              "ru": "X(г)",
+              "ar": "X(g)",
+              "zh": "X(g)",
+              "ku": "X(g)"
+            }
           },
           {
             "x": 9,
             "y": 90,
-            "label": "Y(g)"
+            "label": {
+              "tr": "Y(g)",
+              "en": "Y(g)",
+              "de": "Y(g)",
+              "fr": "Y(g)",
+              "ru": "Y(г)",
+              "ar": "Y(g)",
+              "zh": "Y(g)",
+              "ku": "Y(g)"
+            }
           },
           {
             "x": 5,

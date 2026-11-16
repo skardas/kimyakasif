@@ -1147,11 +1147,11 @@ export const unit04: ChemistryUnitSeedData = {
             "ku": "ava pak"
           },
           "salt": {
-            "tr": "NaCl(aq)",
+            "tr": "NaCl(suda)",
             "en": "NaCl(aq)",
             "de": "NaCl(aq)",
             "fr": "NaCl(aq)",
-            "ru": "NaCl(aq)",
+            "ru": "NaCl (р-р)",
             "ar": "NaCl(aq)",
             "zh": "NaCl(aq)",
             "ku": "NaCl(aq)"
@@ -1610,14 +1610,6 @@ export const unit04: ChemistryUnitSeedData = {
               ]
             ],
             "label": "Z"
-          }
-        ],
-        "markers": [
-          {
-            "x": 65,
-            "y": 760,
-            "label": "",
-            "guides": true
           }
         ]
       }

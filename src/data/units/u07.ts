@@ -2510,8 +2510,26 @@ export const unit07: ChemistryUnitSeedData = {
             "zh": "实验",
             "ku": "Ceribandin"
           },
-          "X (mol)",
-          "Y (mol)",
+          {
+            "tr": "X (mol)",
+            "en": "X (mol)",
+            "de": "X (mol)",
+            "fr": "X (mol)",
+            "ru": "X (моль)",
+            "ar": "X (mol)",
+            "zh": "X (mol)",
+            "ku": "X (mol)"
+          },
+          {
+            "tr": "Y (mol)",
+            "en": "Y (mol)",
+            "de": "Y (mol)",
+            "fr": "Y (mol)",
+            "ru": "Y (моль)",
+            "ar": "Y (mol)",
+            "zh": "Y (mol)",
+            "ku": "Y (mol)"
+          },
           {
             "tr": "Oluşan Z (mol)",
             "en": "Z formed (mol)",
