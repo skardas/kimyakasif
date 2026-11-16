@@ -1390,14 +1390,14 @@ export const unit24: ChemistryUnitSeedData = {
     {
       "id": "u24-twin03",
       "stem": {
-        "tr": "Kapalı yapı formülü CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3 olan alkanın IUPAC adı aşağıdakilerden hangisidir?",
-        "en": "What is the IUPAC name of the alkane whose condensed structural formula is CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3?",
-        "de": "Wie lautet der IUPAC-Name des Alkans mit der Halbstrukturformel CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3?",
-        "fr": "Quel est le nom IUPAC de l'alcane de formule semi-développée CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3 ?",
-        "ru": "Как называется по номенклатуре ИЮПАК алкан с сокращённой структурной формулой CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3?",
-        "ar": "ما اسم IUPAC للألكان الذي صيغته البنائية المختصرة CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3؟",
-        "zh": "结构简式为 CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3 的烷烃的 IUPAC 名称是下列哪一个？",
-        "ku": "Navê IUPAC ê alkana ku formula wê ya avahiyê ya kurt CH3-CH(CH3)-CH2-CH(CH2-CH3)-CH3 e kîjan e?"
+        "tr": "Şekilde yapı formülü verilen alkanın IUPAC adı aşağıdakilerden hangisidir?",
+        "en": "What is the IUPAC name of the alkane whose structural formula is shown in the figure?",
+        "de": "Wie lautet der IUPAC-Name des Alkans, dessen Strukturformel in der Abbildung gezeigt ist?",
+        "fr": "Quel est le nom IUPAC de l'alcane dont la formule développée est représentée sur la figure ?",
+        "ru": "Как называется по номенклатуре ИЮПАК алкан, структурная формула которого показана на рисунке?",
+        "ar": "ما اسم IUPAC للألكان المبيَّنة صيغته البنائية في الشكل؟",
+        "zh": "图中所示结构式的烷烃的 IUPAC 名称是下列哪一个？",
+        "ku": "Navê IUPAC ê alkana ku formula wê ya avahiyê di şiklê de hatiye dayîn kîjan e?"
       },
       "options": [
         {
@@ -1461,6 +1461,12 @@ export const unit24: ChemistryUnitSeedData = {
         "ar": "أطول سلسلة كربونية متصلة هي سلسلة من 6 ذرات كربون تضم ذرتي كربون مجموعة الإيثيل، لذا فالاسم الأصلي هكسان ولا يُكتب الإيثيل فرعًا. وعند الترقيم من الطرف الأقرب إلى التفرع تقع مجموعتا الميثيل على C2 وC4 (ومن الطرف الآخر 3 و5): 2,4-ثنائي ميثيل هكسان. الأسماء المنتهية بالبنتان تنتج عن عدم اختيار أطول سلسلة، و3,5-ثنائي ميثيل هكسان ينتج عن الترقيم من الطرف الخطأ.",
         "zh": "最长碳链是包含乙基两个碳在内的六碳链，所以母体名为己烷，乙基不作为取代基写出。从离支链最近的一端编号，两个甲基位于 2 号和 4 号碳(从另一端编号则为 3 和 5)：2,4-二甲基己烷。以戊烷结尾的名称源于没有选出最长碳链；3,5-二甲基己烷源于从错误的一端编号。",
         "ku": "Zincîra karbonê ya herî dirêj a bênavber zincîra bi 6 karbonan e ku her du karbonên koma etîl jî dihewîne; loma navê bingehîn heksan e û etîl wek şaxeke cuda nayê nivîsandin. Dema zincîr ji wê dawiyê ku herî nêzî şaxê ye tê hejmarkirin, komên metîl dikevin ser karbonên 2. û 4. (ji dawiya din dê 3 û 5 bûna): 2,4-dîmetîlheksan. Navên bi pentan ji hilnebijartina zincîra herî dirêj, 3,5-dîmetîlheksan jî ji hejmarkirina ji dawiya şaş tê."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 176,
+        "markup": "<text x=\"40\" y=\"80\" text-anchor=\"middle\" class=\"qf-big\">CH₃</text><line x1=\"58\" y1=\"75\" x2=\"96\" y2=\"75\" class=\"qf-line\"/><text x=\"110\" y=\"80\" text-anchor=\"middle\" class=\"qf-big\">CH</text><line x1=\"124\" y1=\"75\" x2=\"162\" y2=\"75\" class=\"qf-line\"/><text x=\"180\" y=\"80\" text-anchor=\"middle\" class=\"qf-big\">CH₂</text><line x1=\"198\" y1=\"75\" x2=\"236\" y2=\"75\" class=\"qf-line\"/><text x=\"250\" y=\"80\" text-anchor=\"middle\" class=\"qf-big\">CH</text><line x1=\"264\" y1=\"75\" x2=\"302\" y2=\"75\" class=\"qf-line\"/><text x=\"320\" y=\"80\" text-anchor=\"middle\" class=\"qf-big\">CH₃</text><line x1=\"110\" y1=\"62\" x2=\"110\" y2=\"44\" class=\"qf-line\"/><text x=\"110\" y=\"38\" text-anchor=\"middle\" class=\"qf-big\">CH₃</text><line x1=\"250\" y1=\"86\" x2=\"250\" y2=\"104\" class=\"qf-line\"/><text x=\"250\" y=\"121\" text-anchor=\"middle\" class=\"qf-big\">CH₂</text><line x1=\"250\" y1=\"127\" x2=\"250\" y2=\"145\" class=\"qf-line\"/><text x=\"250\" y=\"162\" text-anchor=\"middle\" class=\"qf-big\">CH₃</text>"
       }
     },
     {

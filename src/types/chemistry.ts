@@ -106,8 +106,10 @@ export type QuestionFigureSeed =
       height: number;
       /**
        * Inner SVG markup. Use currentColor / the classes qf-line, qf-fill, qf-accent, qf-accent2,
-       * qf-muted, qf-water, qf-gas for theme-aware colors. Text placeholders {{key}} are replaced
-       * with labels[key] in the active language.
+       * qf-muted, qf-water, qf-gas for theme-aware colors. A shape that carries text uses the soft
+       * highlights qf-hl / qf-hl2, never a solid accent (unreadable in dark mode). Text placeholders
+       * {{key}} are replaced with labels[key] in the active language; units and decimals that differ
+       * by language (Russian л, атм, см, моль; 0,1 vs 0.1) go through labels too.
        */
       markup: string;
       labels?: Record<string, FigureText>;

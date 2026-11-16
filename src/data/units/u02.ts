@@ -1189,7 +1189,7 @@ export const unit02: ChemistryUnitSeedData = {
             "X",
             "496",
             "4562",
-            "6912",
+            "6910",
             "9543"
           ],
           [
@@ -1197,7 +1197,7 @@ export const unit02: ChemistryUnitSeedData = {
             "738",
             "1451",
             "7733",
-            "10540"
+            "10543"
           ],
           [
             "Z",
@@ -1495,14 +1495,14 @@ export const unit02: ChemistryUnitSeedData = {
     {
       "id": "u02-twin04",
       "stem": {
-        "tr": "14/6 C, 14/7 N ve 12/6 C atomları ile ilgili aşağıdaki yargılardan hangileri doğrudur? (Gösterimde üstteki sayı kütle numarası, alttaki sayı atom numarasıdır.)\nI. 14C ve 12C birbirinin izotopudur.\nII. 14C ve 14N birbirinin izobarıdır.\nIII. 12C ve 14N birbirinin izotonudur.",
-        "en": "Which of the following statements about the atoms 14/6 C, 14/7 N and 12/6 C are correct? (Upper number: mass number; lower number: atomic number.)\nI. 14C and 12C are isotopes of each other.\nII. 14C and 14N are isobars of each other.\nIII. 12C and 14N are isotones of each other.",
-        "de": "Welche Aussagen über die Atome 14/6 C, 14/7 N und 12/6 C sind richtig? (Obere Zahl: Massenzahl, untere Zahl: Ordnungszahl.)\nI. 14C und 12C sind Isotope.\nII. 14C und 14N sind Isobare.\nIII. 12C und 14N sind Isotone.",
-        "fr": "Lesquelles des affirmations suivantes sur les atomes 14/6 C, 14/7 N et 12/6 C sont correctes ? (Nombre du haut : nombre de masse ; nombre du bas : numéro atomique.)\nI. 14C et 12C sont des isotopes.\nII. 14C et 14N sont des isobares.\nIII. 12C et 14N sont des isotones.",
-        "ru": "Какие утверждения об атомах 14/6 C, 14/7 N и 12/6 C верны? (Верхнее число — массовое число, нижнее — порядковый номер.)\nI. 14C и 12C — изотопы.\nII. 14C и 14N — изобары.\nIII. 12C и 14N — изотоны.",
-        "ar": "أيّ العبارات الآتية عن الذرات 14/6 C و14/7 N و12/6 C صحيحة؟ (العدد العلوي هو العدد الكتلي والسفلي هو العدد الذري.)\nI. ‏14C و12C نظيران.\nII. ‏14C و14N متساويا الكتلة (أيزوبار).\nIII. ‏12C و14N متساويا النيوترونات (أيزوتون).",
-        "zh": "关于原子 14/6 C、14/7 N 和 12/6 C 的下列说法中，哪些正确？（上方数字为质量数，下方数字为原子序数。）\nI. 14C 和 12C 互为同位素。\nII. 14C 和 14N 互为同量素。\nIII. 12C 和 14N 互为同中子素。",
-        "ku": "Kîjan ji van hukmên li ser atomên 14/6 C, 14/7 N û 12/6 C rast in? (Di nîşandanê de hejmara jorîn hejmara girseyê, ya jêrîn hejmara atomî ye.)\nI. 14C û 12C îzotopên hev in.\nII. 14C û 14N îzobarên hev in.\nIII. 12C û 14N îzotonên hev in."
+        "tr": "Şekilde gösterimleri verilen atomlarla ilgili aşağıdaki yargılardan hangileri doğrudur? (Gösterimde üstteki sayı kütle numarası, alttaki sayı atom numarasıdır.)\nI. 14C ve 12C birbirinin izotopudur.\nII. 14C ve 14N birbirinin izobarıdır.\nIII. 12C ve 14N birbirinin izotonudur.",
+        "en": "Which of the following statements about the atoms shown in the figure are correct? (Upper number: mass number; lower number: atomic number.)\nI. 14C and 12C are isotopes of each other.\nII. 14C and 14N are isobars of each other.\nIII. 12C and 14N are isotones of each other.",
+        "de": "Welche Aussagen über die in der Abbildung dargestellten Atome sind richtig? (Obere Zahl: Massenzahl, untere Zahl: Ordnungszahl.)\nI. 14C und 12C sind Isotope.\nII. 14C und 14N sind Isobare.\nIII. 12C und 14N sind Isotone.",
+        "fr": "Lesquelles des affirmations suivantes sur les atomes représentés sur la figure sont correctes ? (Nombre du haut : nombre de masse ; nombre du bas : numéro atomique.)\nI. 14C et 12C sont des isotopes.\nII. 14C et 14N sont des isobares.\nIII. 12C et 14N sont des isotones.",
+        "ru": "Какие утверждения об атомах, показанных на рисунке, верны? (Верхнее число — массовое число, нижнее — порядковый номер.)\nI. 14C и 12C — изотопы.\nII. 14C и 14N — изобары.\nIII. 12C и 14N — изотоны.",
+        "ar": "أيّ العبارات الآتية عن الذرات المبيَّنة في الشكل صحيحة؟ (العدد العلوي هو العدد الكتلي والسفلي هو العدد الذري.)\nI. ‏14C و12C نظيران.\nII. ‏14C و14N متساويا الكتلة (أيزوبار).\nIII. ‏12C و14N متساويا النيوترونات (أيزوتون).",
+        "zh": "关于图中所示原子的下列说法中，哪些正确？（上方数字为质量数，下方数字为原子序数。）\nI. 14C 和 12C 互为同位素。\nII. 14C 和 14N 互为同量素。\nIII. 12C 和 14N 互为同中子素。",
+        "ku": "Kîjan ji van hukmên li ser atomên ku di şiklê de hatine nîşandan rast in? (Di nîşandanê de hejmara jorîn hejmara girseyê, ya jêrîn hejmara atomî ye.)\nI. 14C û 12C îzotopên hev in.\nII. 14C û 14N îzobarên hev in.\nIII. 12C û 14N îzotonên hev in."
       },
       "options": [
         {
@@ -1566,6 +1566,12 @@ export const unit02: ChemistryUnitSeedData = {
         "ar": "عدد النيوترونات: في 14C ‏14 − 6 = 8، وفي 12C ‏12 − 6 = 6، وفي 14N ‏14 − 7 = 7. العبارة I صحيحة: لهما العدد الذري نفسه (6) وعددان كتليان مختلفان. العبارة II صحيحة: لهما العدد الكتلي نفسه (14) وعددان ذريان مختلفان. العبارة III خاطئة: يتطلب كونهما أيزوتونين تساوي عدد النيوترونات، وفي 12C ستة وفي 14N سبعة. الإجابة: I وII.",
         "zh": "中子数：14C 为 14 − 6 = 8，12C 为 12 − 6 = 6，14N 为 14 − 7 = 7。I 正确：14C 与 12C 质子数相同(6)，质量数不同。II 正确：14C 与 14N 质量数相同(14)，质子数不同。III 错误：同中子素要求中子数相等，而 12C 有 6 个、14N 有 7 个中子。答案：I 和 II。",
         "ku": "Hejmara notronan: ji bo 14C 14 − 6 = 8, ji bo 12C 12 − 6 = 6, ji bo 14N 14 − 7 = 7. I rast e: hejmara protonên 14C û 12C (6) wekhev e, hejmarên girseyê cuda ne. II rast e: hejmara girseyê ya 14C û 14N (14) wekhev e, hejmarên protonan cuda ne. III şaş e: ji bo îzotonbûnê divê hejmara notronan wekhev be; di 12C de 6, di 14N de 7 notron hene. Bersiva rast: I û II."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 84,
+        "markup": "<text x=\"56\" y=\"40\" text-anchor=\"end\" class=\"qf-strong\" style=\"font-size:15px\">14</text><text x=\"56\" y=\"70\" text-anchor=\"end\" class=\"qf-strong\" style=\"font-size:15px\">6</text><text x=\"60\" y=\"66\" class=\"qf-strong\" style=\"font-size:32px\">C</text><text x=\"171\" y=\"40\" text-anchor=\"end\" class=\"qf-strong\" style=\"font-size:15px\">14</text><text x=\"171\" y=\"70\" text-anchor=\"end\" class=\"qf-strong\" style=\"font-size:15px\">7</text><text x=\"175\" y=\"66\" class=\"qf-strong\" style=\"font-size:32px\">N</text><text x=\"286\" y=\"40\" text-anchor=\"end\" class=\"qf-strong\" style=\"font-size:15px\">12</text><text x=\"286\" y=\"70\" text-anchor=\"end\" class=\"qf-strong\" style=\"font-size:15px\">6</text><text x=\"290\" y=\"66\" class=\"qf-strong\" style=\"font-size:32px\">C</text>"
       }
     },
     {

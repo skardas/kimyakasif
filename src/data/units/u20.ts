@@ -1132,8 +1132,26 @@ export const unit20: ChemistryUnitSeedData = {
       },
       "figure": {
         "kind": "graph",
-        "xLabel": "[Cl⁻] (10⁻⁵ mol/L)",
-        "yLabel": "[Ag⁺] (10⁻⁵ mol/L)",
+        "xLabel": {
+          "tr": "[Cl⁻] (10⁻⁵ mol/L)",
+          "en": "[Cl⁻] (10⁻⁵ mol/L)",
+          "de": "[Cl⁻] (10⁻⁵ mol/L)",
+          "fr": "[Cl⁻] (10⁻⁵ mol/L)",
+          "ru": "[Cl⁻] (10⁻⁵ моль/л)",
+          "ar": "[Cl⁻] (10⁻⁵ mol/L)",
+          "zh": "[Cl⁻] (10⁻⁵ mol/L)",
+          "ku": "[Cl⁻] (10⁻⁵ mol/L)"
+        },
+        "yLabel": {
+          "tr": "[Ag⁺] (10⁻⁵ mol/L)",
+          "en": "[Ag⁺] (10⁻⁵ mol/L)",
+          "de": "[Ag⁺] (10⁻⁵ mol/L)",
+          "fr": "[Ag⁺] (10⁻⁵ mol/L)",
+          "ru": "[Ag⁺] (10⁻⁵ моль/л)",
+          "ar": "[Ag⁺] (10⁻⁵ mol/L)",
+          "zh": "[Ag⁺] (10⁻⁵ mol/L)",
+          "ku": "[Ag⁺] (10⁻⁵ mol/L)"
+        },
         "xMax": 5.5,
         "yMax": 5.5,
         "xTicks": [
@@ -1155,11 +1173,11 @@ export const unit20: ChemistryUnitSeedData = {
             "points": [
               [
                 0.8,
-                5.0
+                5
               ],
               [
                 1,
-                4.0
+                4
               ],
               [
                 1.25,
@@ -1171,7 +1189,7 @@ export const unit20: ChemistryUnitSeedData = {
               ],
               [
                 2,
-                2.0
+                2
               ],
               [
                 2.5,
@@ -1183,7 +1201,7 @@ export const unit20: ChemistryUnitSeedData = {
               ],
               [
                 4,
-                1.0
+                1
               ],
               [
                 5,
@@ -1614,8 +1632,26 @@ export const unit20: ChemistryUnitSeedData = {
             "zh": "混合",
             "ku": "Tevlihevî"
           },
-          "[AgNO3] (mol/L)",
-          "[NaCl] (mol/L)"
+          {
+            "tr": "[AgNO3] (mol/L)",
+            "en": "[AgNO3] (mol/L)",
+            "de": "[AgNO3] (mol/L)",
+            "fr": "[AgNO3] (mol/L)",
+            "ru": "[AgNO3] (моль/л)",
+            "ar": "[AgNO3] (mol/L)",
+            "zh": "[AgNO3] (mol/L)",
+            "ku": "[AgNO3] (mol/L)"
+          },
+          {
+            "tr": "[NaCl] (mol/L)",
+            "en": "[NaCl] (mol/L)",
+            "de": "[NaCl] (mol/L)",
+            "fr": "[NaCl] (mol/L)",
+            "ru": "[NaCl] (моль/л)",
+            "ar": "[NaCl] (mol/L)",
+            "zh": "[NaCl] (mol/L)",
+            "ku": "[NaCl] (mol/L)"
+          }
         ],
         "rows": [
           [
@@ -1929,7 +1965,16 @@ export const unit20: ChemistryUnitSeedData = {
           "zh": "温度 (°C)",
           "ku": "Germahî (°C)"
         },
-        "yLabel": "s (10⁻⁵ mol/L)",
+        "yLabel": {
+          "tr": "s (10⁻⁵ mol/L)",
+          "en": "s (10⁻⁵ mol/L)",
+          "de": "s (10⁻⁵ mol/L)",
+          "fr": "s (10⁻⁵ mol/L)",
+          "ru": "s (10⁻⁵ моль/л)",
+          "ar": "s (10⁻⁵ mol/L)",
+          "zh": "s (10⁻⁵ mol/L)",
+          "ku": "s (10⁻⁵ mol/L)"
+        },
         "xMax": 70,
         "yMax": 3.6,
         "xTicks": [

@@ -1144,7 +1144,7 @@ export const unit13: ChemistryUnitSeedData = {
         "kind": "svg",
         "width": 360,
         "height": 140,
-        "markup": "<rect x='30' y='40' width='300' height='28' rx='12' class='qf-fill'/><rect x='32' y='43' width='18' height='22' rx='4' class='qf-solid'/><rect x='310' y='43' width='18' height='22' rx='4' class='qf-solid'/><line x1='223' y1='34' x2='223' y2='74' class='qf-stroke-accent'/><circle cx='223' cy='54' r='5' class='qf-accent'/><text x='223' y='26' text-anchor='middle' class='qf-small'>{{meet}}</text><text x='41' y='90' text-anchor='middle' class='qf-strong'>He</text><text x='319' y='90' text-anchor='middle' class='qf-strong'>X</text><path d='M50,112 H310 M50,105 V119 M223,105 V119 M310,105 V119' class='qf-line'/><text x='136' y='132' text-anchor='middle'>80 cm</text><text x='266' y='132' text-anchor='middle'>40 cm</text>",
+        "markup": "<rect x='30' y='40' width='300' height='28' rx='12' class='qf-fill'/><rect x='32' y='43' width='18' height='22' rx='4' class='qf-solid'/><rect x='310' y='43' width='18' height='22' rx='4' class='qf-solid'/><line x1='223' y1='34' x2='223' y2='74' class='qf-stroke-accent'/><circle cx='223' cy='54' r='5' class='qf-accent'/><text x='223' y='26' text-anchor='middle' class='qf-small'>{{meet}}</text><text x='41' y='90' text-anchor='middle' class='qf-strong'>He</text><text x='319' y='90' text-anchor='middle' class='qf-strong'>X</text><path d='M50,112 H310 M50,105 V119 M223,105 V119 M310,105 V119' class='qf-line'/><text x='136' y='132' text-anchor='middle'>{{d1}}</text><text x='266' y='132' text-anchor='middle'>{{d2}}</text>",
         "labels": {
           "meet": {
             "tr": "İlk karşılaşma noktası",
@@ -1155,6 +1155,26 @@ export const unit13: ChemistryUnitSeedData = {
             "ar": "نقطة الالتقاء الأولى",
             "zh": "首次相遇处",
             "ku": "Xala hevdîtina yekem"
+          },
+          "d1": {
+            "tr": "80 cm",
+            "en": "80 cm",
+            "de": "80 cm",
+            "fr": "80 cm",
+            "ru": "80 см",
+            "ar": "80 cm",
+            "zh": "80 cm",
+            "ku": "80 cm"
+          },
+          "d2": {
+            "tr": "40 cm",
+            "en": "40 cm",
+            "de": "40 cm",
+            "fr": "40 cm",
+            "ru": "40 см",
+            "ar": "40 cm",
+            "zh": "40 cm",
+            "ku": "40 cm"
           }
         }
       }
@@ -1665,6 +1685,34 @@ export const unit13: ChemistryUnitSeedData = {
         "ar": "ضغط H2 الجاف: P(H2) = 1.03 − 0.03 = 1.00 atm. n(H2) = PV/RT = (1.00 × 24.6)/(0.082 × 300) = 1.00 mol. وفق المعادلة يعطي 1 mol من Zn مقدار 1 mol من H2، إذن m(Zn) = 1.00 × 65 = 65.0 g. الطالب الذي لا يطرح ضغط بخار الماء يحصل على 1.03 mol و67.0 g، ومن يطرحه مرتين يحصل على 0.97 mol و63.1 g، ومن يأخذ نسبة Zn : H2 على أنها 2 : 1 أو 1 : 2 يحصل على 130.0 g أو 32.5 g.",
         "zh": "干燥H2的压强：P(H2) = 1.03 − 0.03 = 1.00 atm。n(H2) = PV/RT = (1.00 × 24.6)/(0.082 × 300) = 1.00 mol。由方程式，1 mol Zn 生成 1 mol H2，m(Zn) = 1.00 × 65 = 65.0 g。没有减去水的蒸气压的学生得到 1.03 mol、67.0 g；减了两次的得到 0.97 mol、63.1 g；把 Zn : H2 当作 2 : 1 或 1 : 2 的得到 130.0 g 或 32.5 g。",
         "ku": "Zexta H2 ya ziwa: P(H2) = 1,03 − 0,03 = 1,00 atm. n(H2) = PV/RT = (1,00 × 24,6)/(0,082 × 300) = 1,00 mol. Li gorî hevkêşeyê ji 1 mol Zn 1 mol H2 çêdibe, m(Zn) = 1,00 × 65 = 65,0 g. Xwendekarê ku zexta buhara avê jê dernaxe bi 1,03 mol 67,0 g dibîne; yê ku wê du caran jê derdixe bi 0,97 mol 63,1 g dibîne; yê ku rêjeya Zn : H2 wekî 2 : 1 an 1 : 2 digire 130,0 g an 32,5 g dibîne."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 200,
+        "markup": "<polygon points=\"34,182 106,182 78,122 78,88 62,88 62,122\" class=\"qf-fill\"/><polygon points=\"36,180 104,180 92,154 48,154\" class=\"qf-water\"/><rect x=\"52\" y=\"170\" width=\"10\" height=\"6\" class=\"qf-solid\"/><rect x=\"74\" y=\"172\" width=\"8\" height=\"5\" class=\"qf-solid\"/><rect x=\"59\" y=\"78\" width=\"22\" height=\"12\" class=\"qf-solid\"/><path d=\"M70 78 V28 H200 V184 H250 V158\" class=\"qf-line\"/><path d=\"M160 112 V192 H340 V112\" class=\"qf-line\"/><rect x=\"161\" y=\"126\" width=\"178\" height=\"65\" class=\"qf-water\"/><rect x=\"221\" y=\"46\" width=\"58\" height=\"80\" class=\"qf-gas\"/><path d=\"M220 176 V45 H280 V176\" class=\"qf-line\"/><circle cx=\"250\" cy=\"148\" r=\"3\" class=\"qf-fill\"/><circle cx=\"252\" cy=\"134\" r=\"3\" class=\"qf-fill\"/><circle cx=\"248\" cy=\"118\" r=\"3\" class=\"qf-fill\"/><text x=\"250\" y=\"90\" text-anchor=\"middle\" class=\"qf-strong\">H₂</text><text x=\"70\" y=\"198\" text-anchor=\"middle\" class=\"qf-small\">{{flask}}</text><text x=\"315\" y=\"150\" text-anchor=\"middle\" class=\"qf-small\">{{water}}</text>",
+        "labels": {
+          "flask": {
+            "tr": "Zn + HCl(suda)",
+            "en": "Zn + HCl(aq)",
+            "de": "Zn + HCl(aq)",
+            "fr": "Zn + HCl(aq)",
+            "ru": "Zn + HCl (р-р)",
+            "ar": "Zn + HCl(aq)",
+            "zh": "Zn + HCl(aq)",
+            "ku": "Zn + HCl(aq)"
+          },
+          "water": {
+            "tr": "su",
+            "en": "water",
+            "de": "Wasser",
+            "fr": "eau",
+            "ru": "вода",
+            "ar": "ماء",
+            "zh": "水",
+            "ku": "av"
+          }
+        }
       }
     },
     {
@@ -2050,7 +2098,49 @@ export const unit13: ChemistryUnitSeedData = {
         "kind": "svg",
         "width": 360,
         "height": 165,
-        "markup": "<rect x='30' y='45' width='110' height='90' rx='8' class='qf-fill'/><rect x='34' y='49' width='102' height='82' rx='6' class='qf-gas'/><rect x='220' y='30' width='120' height='120' rx='8' class='qf-fill'/><rect x='224' y='34' width='112' height='112' rx='6' class='qf-gas'/><path d='M140,84 H220 M140,96 H220' class='qf-line'/><path d='M168,80 L192,100 L192,80 L168,100 Z' class='qf-accent'/><path d='M180,90 V66 M171,66 H189' class='qf-line'/><text x='180' y='58' text-anchor='middle' class='qf-strong'>M</text><text x='85' y='80' text-anchor='middle' class='qf-big'>He</text><text x='85' y='102' text-anchor='middle'>2 L</text><text x='85' y='122' text-anchor='middle'>3 atm</text><text x='280' y='72' text-anchor='middle' class='qf-big'>Ne</text><text x='280' y='98' text-anchor='middle'>3 L</text><text x='280' y='120' text-anchor='middle'>2 atm</text>"
+        "markup": "<rect x='30' y='45' width='110' height='90' rx='8' class='qf-fill'/><rect x='34' y='49' width='102' height='82' rx='6' class='qf-gas'/><rect x='220' y='30' width='120' height='120' rx='8' class='qf-fill'/><rect x='224' y='34' width='112' height='112' rx='6' class='qf-gas'/><path d='M140,84 H220 M140,96 H220' class='qf-line'/><path d='M168,80 L192,100 L192,80 L168,100 Z' class='qf-accent'/><path d='M180,90 V66 M171,66 H189' class='qf-line'/><text x='180' y='58' text-anchor='middle' class='qf-strong'>M</text><text x='85' y='80' text-anchor='middle' class='qf-big'>He</text><text x='85' y='102' text-anchor='middle'>{{v1}}</text><text x='85' y='122' text-anchor='middle'>{{p1}}</text><text x='280' y='72' text-anchor='middle' class='qf-big'>Ne</text><text x='280' y='98' text-anchor='middle'>{{v2}}</text><text x='280' y='120' text-anchor='middle'>{{p2}}</text>",
+        "labels": {
+          "v1": {
+            "tr": "2 L",
+            "en": "2 L",
+            "de": "2 L",
+            "fr": "2 L",
+            "ru": "2 л",
+            "ar": "2 L",
+            "zh": "2 L",
+            "ku": "2 L"
+          },
+          "v2": {
+            "tr": "3 L",
+            "en": "3 L",
+            "de": "3 L",
+            "fr": "3 L",
+            "ru": "3 л",
+            "ar": "3 L",
+            "zh": "3 L",
+            "ku": "3 L"
+          },
+          "p1": {
+            "tr": "3 atm",
+            "en": "3 atm",
+            "de": "3 atm",
+            "fr": "3 atm",
+            "ru": "3 атм",
+            "ar": "3 atm",
+            "zh": "3 atm",
+            "ku": "3 atm"
+          },
+          "p2": {
+            "tr": "2 atm",
+            "en": "2 atm",
+            "de": "2 atm",
+            "fr": "2 atm",
+            "ru": "2 атм",
+            "ar": "2 atm",
+            "zh": "2 atm",
+            "ku": "2 atm"
+          }
+        }
       }
     },
     {

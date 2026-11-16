@@ -1244,32 +1244,160 @@ export const unit12: ChemistryUnitSeedData = {
                 6
               ],
               [
-                1.2,
-                5
+                1.125,
+                5.333
+              ],
+              [
+                1.25,
+                4.8
+              ],
+              [
+                1.375,
+                4.364
               ],
               [
                 1.5,
                 4
               ],
               [
+                1.625,
+                3.692
+              ],
+              [
+                1.75,
+                3.429
+              ],
+              [
+                1.875,
+                3.2
+              ],
+              [
                 2,
                 3
+              ],
+              [
+                2.125,
+                2.824
+              ],
+              [
+                2.25,
+                2.667
+              ],
+              [
+                2.375,
+                2.526
               ],
               [
                 2.5,
                 2.4
               ],
               [
+                2.625,
+                2.286
+              ],
+              [
+                2.75,
+                2.182
+              ],
+              [
+                2.875,
+                2.087
+              ],
+              [
                 3,
                 2
+              ],
+              [
+                3.125,
+                1.92
+              ],
+              [
+                3.25,
+                1.846
+              ],
+              [
+                3.375,
+                1.778
+              ],
+              [
+                3.5,
+                1.714
+              ],
+              [
+                3.625,
+                1.655
+              ],
+              [
+                3.75,
+                1.6
+              ],
+              [
+                3.875,
+                1.548
               ],
               [
                 4,
                 1.5
               ],
               [
+                4.125,
+                1.455
+              ],
+              [
+                4.25,
+                1.412
+              ],
+              [
+                4.375,
+                1.371
+              ],
+              [
+                4.5,
+                1.333
+              ],
+              [
+                4.625,
+                1.297
+              ],
+              [
+                4.75,
+                1.263
+              ],
+              [
+                4.875,
+                1.231
+              ],
+              [
                 5,
                 1.2
+              ],
+              [
+                5.125,
+                1.171
+              ],
+              [
+                5.25,
+                1.143
+              ],
+              [
+                5.375,
+                1.116
+              ],
+              [
+                5.5,
+                1.091
+              ],
+              [
+                5.625,
+                1.067
+              ],
+              [
+                5.75,
+                1.043
+              ],
+              [
+                5.875,
+                1.021
               ],
               [
                 6,
@@ -1286,20 +1414,128 @@ export const unit12: ChemistryUnitSeedData = {
                 6
               ],
               [
-                2.4,
-                5
+                2.125,
+                5.647
+              ],
+              [
+                2.25,
+                5.333
+              ],
+              [
+                2.375,
+                5.053
+              ],
+              [
+                2.5,
+                4.8
+              ],
+              [
+                2.625,
+                4.571
+              ],
+              [
+                2.75,
+                4.364
+              ],
+              [
+                2.875,
+                4.174
               ],
               [
                 3,
                 4
               ],
               [
+                3.125,
+                3.84
+              ],
+              [
+                3.25,
+                3.692
+              ],
+              [
+                3.375,
+                3.556
+              ],
+              [
+                3.5,
+                3.429
+              ],
+              [
+                3.625,
+                3.31
+              ],
+              [
+                3.75,
+                3.2
+              ],
+              [
+                3.875,
+                3.097
+              ],
+              [
                 4,
                 3
               ],
               [
+                4.125,
+                2.909
+              ],
+              [
+                4.25,
+                2.824
+              ],
+              [
+                4.375,
+                2.743
+              ],
+              [
+                4.5,
+                2.667
+              ],
+              [
+                4.625,
+                2.595
+              ],
+              [
+                4.75,
+                2.526
+              ],
+              [
+                4.875,
+                2.462
+              ],
+              [
                 5,
                 2.4
+              ],
+              [
+                5.125,
+                2.341
+              ],
+              [
+                5.25,
+                2.286
+              ],
+              [
+                5.375,
+                2.233
+              ],
+              [
+                5.5,
+                2.182
+              ],
+              [
+                5.625,
+                2.133
+              ],
+              [
+                5.75,
+                2.087
+              ],
+              [
+                5.875,
+                2.043
               ],
               [
                 6,
@@ -1861,7 +2097,7 @@ export const unit12: ChemistryUnitSeedData = {
         "kind": "svg",
         "width": 360,
         "height": 250,
-        "markup": "<rect x=\"16\" y=\"66\" width=\"110\" height=\"110\" class=\"qf-gas\"/><rect x=\"16\" y=\"66\" width=\"110\" height=\"110\" class=\"qf-line\"/><text x=\"71\" y=\"126\" text-anchor=\"middle\" class=\"qf-strong\">{{gas}}</text><rect x=\"170\" y=\"160\" width=\"16\" height=\"60\" class=\"qf-muted\"/><rect x=\"170\" y=\"204\" width=\"96\" height=\"16\" class=\"qf-muted\"/><rect x=\"250\" y=\"90\" width=\"16\" height=\"130\" class=\"qf-muted\"/><line x1=\"126\" y1=\"90\" x2=\"186\" y2=\"90\" class=\"qf-line\"/><line x1=\"126\" y1=\"102\" x2=\"170\" y2=\"102\" class=\"qf-line\"/><line x1=\"170\" y1=\"102\" x2=\"170\" y2=\"220\" class=\"qf-line\"/><line x1=\"186\" y1=\"90\" x2=\"186\" y2=\"204\" class=\"qf-line\"/><line x1=\"170\" y1=\"220\" x2=\"266\" y2=\"220\" class=\"qf-line\"/><line x1=\"186\" y1=\"204\" x2=\"250\" y2=\"204\" class=\"qf-line\"/><line x1=\"250\" y1=\"204\" x2=\"250\" y2=\"40\" class=\"qf-line\"/><line x1=\"266\" y1=\"220\" x2=\"266\" y2=\"40\" class=\"qf-line\"/><text x=\"258\" y=\"30\" text-anchor=\"middle\" class=\"qf-small\">{{open}}</text><line x1=\"186\" y1=\"160\" x2=\"300\" y2=\"160\" class=\"qf-dash\"/><line x1=\"266\" y1=\"90\" x2=\"300\" y2=\"90\" class=\"qf-dash\"/><line x1=\"292\" y1=\"90\" x2=\"292\" y2=\"160\" class=\"qf-line\"/><text x=\"298\" y=\"130\" class=\"qf-strong\">14 cm</text><text x=\"218\" y=\"240\" text-anchor=\"middle\" class=\"qf-small\">Hg</text>",
+        "markup": "<rect x=\"16\" y=\"66\" width=\"110\" height=\"110\" class=\"qf-gas\"/><rect x=\"16\" y=\"66\" width=\"110\" height=\"110\" class=\"qf-line\"/><text x=\"71\" y=\"126\" text-anchor=\"middle\" class=\"qf-strong\">{{gas}}</text><rect x=\"170\" y=\"160\" width=\"16\" height=\"60\" class=\"qf-muted\"/><rect x=\"170\" y=\"204\" width=\"96\" height=\"16\" class=\"qf-muted\"/><rect x=\"250\" y=\"90\" width=\"16\" height=\"130\" class=\"qf-muted\"/><line x1=\"126\" y1=\"90\" x2=\"186\" y2=\"90\" class=\"qf-line\"/><line x1=\"126\" y1=\"102\" x2=\"170\" y2=\"102\" class=\"qf-line\"/><line x1=\"170\" y1=\"102\" x2=\"170\" y2=\"220\" class=\"qf-line\"/><line x1=\"186\" y1=\"90\" x2=\"186\" y2=\"204\" class=\"qf-line\"/><line x1=\"170\" y1=\"220\" x2=\"266\" y2=\"220\" class=\"qf-line\"/><line x1=\"186\" y1=\"204\" x2=\"250\" y2=\"204\" class=\"qf-line\"/><line x1=\"250\" y1=\"204\" x2=\"250\" y2=\"40\" class=\"qf-line\"/><line x1=\"266\" y1=\"220\" x2=\"266\" y2=\"40\" class=\"qf-line\"/><text x=\"258\" y=\"30\" text-anchor=\"middle\" class=\"qf-small\">{{open}}</text><line x1=\"186\" y1=\"160\" x2=\"300\" y2=\"160\" class=\"qf-dash\"/><line x1=\"266\" y1=\"90\" x2=\"300\" y2=\"90\" class=\"qf-dash\"/><line x1=\"292\" y1=\"90\" x2=\"292\" y2=\"160\" class=\"qf-line\"/><text x=\"298\" y=\"130\" class=\"qf-strong\">{{h}}</text><text x=\"218\" y=\"240\" text-anchor=\"middle\" class=\"qf-small\">Hg</text>",
         "labels": {
           "gas": {
             "tr": "Gaz",
@@ -1882,6 +2118,16 @@ export const unit12: ChemistryUnitSeedData = {
             "ar": "طرف مفتوح",
             "zh": "开口端",
             "ku": "dawiya vekirî"
+          },
+          "h": {
+            "tr": "14 cm",
+            "en": "14 cm",
+            "de": "14 cm",
+            "fr": "14 cm",
+            "ru": "14 см",
+            "ar": "14 cm",
+            "zh": "14 cm",
+            "ku": "14 cm"
           }
         }
       }
@@ -1965,7 +2211,7 @@ export const unit12: ChemistryUnitSeedData = {
         "kind": "svg",
         "width": 360,
         "height": 220,
-        "markup": "<rect x=\"20\" y=\"70\" width=\"110\" height=\"110\" class=\"qf-gas\"/><rect x=\"20\" y=\"70\" width=\"110\" height=\"110\" class=\"qf-line\"/><rect x=\"210\" y=\"40\" width=\"134\" height=\"170\" class=\"qf-gas\"/><rect x=\"210\" y=\"40\" width=\"134\" height=\"170\" class=\"qf-line\"/><line x1=\"130\" y1=\"120\" x2=\"210\" y2=\"120\" class=\"qf-line\"/><line x1=\"130\" y1=\"130\" x2=\"210\" y2=\"130\" class=\"qf-line\"/><circle cx=\"170\" cy=\"125\" r=\"11\" class=\"qf-fill\"/><line x1=\"170\" y1=\"114\" x2=\"170\" y2=\"136\" class=\"qf-line\"/><text x=\"170\" y=\"100\" text-anchor=\"middle\" class=\"qf-small\">{{valve}}</text><text x=\"75\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">He</text><text x=\"75\" y=\"131\" text-anchor=\"middle\" class=\"qf-strong\">2 L</text><text x=\"75\" y=\"155\" text-anchor=\"middle\" class=\"qf-strong\">3 atm</text><text x=\"277\" y=\"100\" text-anchor=\"middle\" class=\"qf-big\">Ne</text><text x=\"277\" y=\"128\" text-anchor=\"middle\" class=\"qf-strong\">3 L</text><text x=\"277\" y=\"154\" text-anchor=\"middle\" class=\"qf-strong\">2 atm</text>",
+        "markup": "<rect x=\"20\" y=\"70\" width=\"110\" height=\"110\" class=\"qf-gas\"/><rect x=\"20\" y=\"70\" width=\"110\" height=\"110\" class=\"qf-line\"/><rect x=\"210\" y=\"40\" width=\"134\" height=\"170\" class=\"qf-gas\"/><rect x=\"210\" y=\"40\" width=\"134\" height=\"170\" class=\"qf-line\"/><line x1=\"130\" y1=\"120\" x2=\"210\" y2=\"120\" class=\"qf-line\"/><line x1=\"130\" y1=\"130\" x2=\"210\" y2=\"130\" class=\"qf-line\"/><circle cx=\"170\" cy=\"125\" r=\"11\" class=\"qf-fill\"/><line x1=\"170\" y1=\"114\" x2=\"170\" y2=\"136\" class=\"qf-line\"/><text x=\"170\" y=\"100\" text-anchor=\"middle\" class=\"qf-small\">{{valve}}</text><text x=\"75\" y=\"105\" text-anchor=\"middle\" class=\"qf-big\">He</text><text x=\"75\" y=\"131\" text-anchor=\"middle\" class=\"qf-strong\">{{v1}}</text><text x=\"75\" y=\"155\" text-anchor=\"middle\" class=\"qf-strong\">{{p1}}</text><text x=\"277\" y=\"100\" text-anchor=\"middle\" class=\"qf-big\">Ne</text><text x=\"277\" y=\"128\" text-anchor=\"middle\" class=\"qf-strong\">{{v2}}</text><text x=\"277\" y=\"154\" text-anchor=\"middle\" class=\"qf-strong\">{{p2}}</text>",
         "labels": {
           "valve": {
             "tr": "musluk",
@@ -1976,6 +2222,46 @@ export const unit12: ChemistryUnitSeedData = {
             "ar": "صمام",
             "zh": "阀门",
             "ku": "muslux"
+          },
+          "v1": {
+            "tr": "2 L",
+            "en": "2 L",
+            "de": "2 L",
+            "fr": "2 L",
+            "ru": "2 л",
+            "ar": "2 L",
+            "zh": "2 L",
+            "ku": "2 L"
+          },
+          "v2": {
+            "tr": "3 L",
+            "en": "3 L",
+            "de": "3 L",
+            "fr": "3 L",
+            "ru": "3 л",
+            "ar": "3 L",
+            "zh": "3 L",
+            "ku": "3 L"
+          },
+          "p1": {
+            "tr": "3 atm",
+            "en": "3 atm",
+            "de": "3 atm",
+            "fr": "3 atm",
+            "ru": "3 атм",
+            "ar": "3 atm",
+            "zh": "3 atm",
+            "ku": "3 atm"
+          },
+          "p2": {
+            "tr": "2 atm",
+            "en": "2 atm",
+            "de": "2 atm",
+            "fr": "2 atm",
+            "ru": "2 атм",
+            "ar": "2 atm",
+            "zh": "2 atm",
+            "ku": "2 atm"
           }
         }
       }

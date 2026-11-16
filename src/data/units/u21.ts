@@ -1758,14 +1758,14 @@ export const unit21: ChemistryUnitSeedData = {
     {
       "id": "u21-twin08",
       "stem": {
-        "tr": "Standart indirgenme potansiyelleri:\nAl3+/Al: -1,66 V; Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V\n1 M CuSO4 çözeltisi, aşağıdaki metallerden hangisinden yapılmış bir kapta kabın aşınmasına yol açmadan saklanabilir?",
-        "en": "Standard reduction potentials:\nAl3+/Al: -1.66 V; Zn2+/Zn: -0.76 V; Fe2+/Fe: -0.44 V; Ni2+/Ni: -0.25 V; Cu2+/Cu: +0.34 V; Ag+/Ag: +0.80 V\nIn a container made of which of the following metals can a 1 M CuSO4 solution be stored without corroding the container?",
-        "de": "Standardreduktionspotentiale:\nAl3+/Al: -1,66 V; Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V\nIn einem Gefäß aus welchem der folgenden Metalle kann eine 1 M CuSO4-Lösung aufbewahrt werden, ohne dass das Gefäß angegriffen wird?",
-        "fr": "Potentiels standard de réduction :\nAl3+/Al : -1,66 V ; Zn2+/Zn : -0,76 V ; Fe2+/Fe : -0,44 V ; Ni2+/Ni : -0,25 V ; Cu2+/Cu : +0,34 V ; Ag+/Ag : +0,80 V\nDans un récipient fait de quel métal peut-on conserver une solution 1 M de CuSO4 sans que le récipient soit attaqué ?",
-        "ru": "Стандартные потенциалы восстановления:\nAl3+/Al: -1,66 В; Zn2+/Zn: -0,76 В; Fe2+/Fe: -0,44 В; Ni2+/Ni: -0,25 В; Cu2+/Cu: +0,34 В; Ag+/Ag: +0,80 В\nВ сосуде из какого металла можно хранить 1 M раствор CuSO4 так, чтобы сосуд не разрушался?",
-        "ar": "جهود الاختزال القياسية:\nAl3+/Al: -1.66 V؛ Zn2+/Zn: -0.76 V؛ Fe2+/Fe: -0.44 V؛ Ni2+/Ni: -0.25 V؛ Cu2+/Cu: +0.34 V؛ Ag+/Ag: +0.80 V\nفي وعاء مصنوع من أيّ الفلزات الآتية يمكن حفظ محلول CuSO4 تركيزه 1 M دون أن يتآكل الوعاء؟",
-        "zh": "标准还原电势：\nAl3+/Al：-1.66 V；Zn2+/Zn：-0.76 V；Fe2+/Fe：-0.44 V；Ni2+/Ni：-0.25 V；Cu2+/Cu：+0.34 V；Ag+/Ag：+0.80 V\n1 M CuSO4 溶液可以保存在由下列哪种金属制成的容器中而不腐蚀容器？",
-        "ku": "Potansiyelên redûksiyonê yên standard:\nAl3+/Al: -1,66 V; Zn2+/Zn: -0,76 V; Fe2+/Fe: -0,44 V; Ni2+/Ni: -0,25 V; Cu2+/Cu: +0,34 V; Ag+/Ag: +0,80 V\nÇareseriya 1 M CuSO4 dikare di firaxeke ji kîjan metalê çêkirî de bê hilanîn bêyî ku firax bixure?"
+        "tr": "Tabloda bazı yarı tepkimelerin standart indirgenme potansiyelleri verilmiştir.\n1 M CuSO4 çözeltisi, aşağıdaki metallerden hangisinden yapılmış bir kapta kabın aşınmasına yol açmadan saklanabilir?",
+        "en": "The table gives the standard reduction potentials of some half-reactions.\nIn a container made of which of the following metals can a 1 M CuSO4 solution be stored without corroding the container?",
+        "de": "Die Tabelle enthält die Standardreduktionspotentiale einiger Halbreaktionen.\nIn einem Gefäß aus welchem der folgenden Metalle kann eine 1 M CuSO4-Lösung aufbewahrt werden, ohne dass das Gefäß angegriffen wird?",
+        "fr": "Le tableau donne les potentiels standard de réduction de quelques demi-réactions.\nDans un récipient fait de quel métal peut-on conserver une solution 1 M de CuSO4 sans que le récipient soit attaqué ?",
+        "ru": "В таблице приведены стандартные потенциалы восстановления некоторых полуреакций.\nВ сосуде из какого металла можно хранить 1 M раствор CuSO4 так, чтобы сосуд не разрушался?",
+        "ar": "يبيّن الجدول جهود الاختزال القياسية لبعض أنصاف التفاعلات.\nفي وعاء مصنوع من أيّ الفلزات الآتية يمكن حفظ محلول CuSO4 تركيزه 1 M دون أن يتآكل الوعاء؟",
+        "zh": "表中列出了一些半反应的标准还原电势。\n1 M CuSO4 溶液可以保存在由下列哪种金属制成的容器中而不腐蚀容器？",
+        "ku": "Di tabloyê de potansiyelên redûksiyonê yên standard ên hin nîvreaksiyonan hatine dayîn.\nÇareseriya 1 M CuSO4 dikare di firaxeke ji kîjan metalê çêkirî de bê hilanîn bêyî ku firax bixure?"
       },
       "options": [
         {
@@ -1829,6 +1829,57 @@ export const unit21: ChemistryUnitSeedData = {
         "ar": "إذا استطاع فلز الوعاء اختزال أيونات Cu2+ (أي إذا كان التفاعل M + Cu2+ → M2+ + Cu تلقائيًا) فإن الوعاء يتآكل. الفلزات Al و Zn و Fe و Ni ذات جهود الاختزال الأقل من +0.34 V تختزل Cu2+ ويكون معها E°cell > 0. أما جهد اختزال الفضة (+0.80 V) فأكبر من جهد النحاس، فيكون E° للتفاعل Ag + Cu2+ = 0.34 - 0.80 = -0.46 V، أي غير تلقائي ولا يتآكل الوعاء. والنيكل رغم أنه الأقرب إلى النحاس فإن جهده أقل ويتفاعل مع Cu2+.",
         "zh": "如果容器金属能还原 Cu2+(即 M + Cu2+ → M2+ + Cu 自发)，容器就会被腐蚀。还原电势低于 +0.34 V 的 Al、Zn、Fe、Ni 都能还原 Cu2+，此时 E°电池 > 0。银的还原电势(+0.80 V)大于铜，Ag + Cu2+ 的 E° = 0.34 - 0.80 = -0.46 V，非自发，容器不被腐蚀。镍虽然电势最接近铜，但仍然更低，会与 Cu2+ 反应。",
         "ku": "Heke metala firaxê bikaribe îyonên Cu2+ redûkte bike (heke M + Cu2+ → M2+ + Cu xweber be), firax dixure. Al, Zn, Fe û Ni, ku potansiyela wan a redûksiyonê ji +0,34 V piçûktir e, Cu2+ redûkte dikin; bi wan re E°pîl > 0 ye. Potansiyela redûksiyonê ya zîv (+0,80 V) ji ya sifirê mezintir e; ji bo Ag + Cu2+ E° = 0,34 - 0,80 = -0,46 V e, ji ber vê yekê reaksiyon ne-xweber e û firax naxure. Her çend potansiyela nîkelê herî nêzî ya sifirê be jî, dîsa ji +0,34 V piçûktir e, ji ber vê yekê bi Cu2+ re dikeve reaksiyonê."
+      },
+      "figure": {
+        "kind": "table",
+        "header": [
+          {
+            "tr": "Yarı tepkime",
+            "en": "Half-reaction",
+            "de": "Halbreaktion",
+            "fr": "Demi-réaction",
+            "ru": "Полуреакция",
+            "ar": "نصف التفاعل",
+            "zh": "半反应",
+            "ku": "Nîvreaksiyon"
+          },
+          {
+            "tr": "E° (V)",
+            "en": "E° (V)",
+            "de": "E° (V)",
+            "fr": "E° (V)",
+            "ru": "E° (В)",
+            "ar": "E° (V)",
+            "zh": "E° (V)",
+            "ku": "E° (V)"
+          }
+        ],
+        "rows": [
+          [
+            "Al3+ + 3e- → Al",
+            "−1,66"
+          ],
+          [
+            "Zn2+ + 2e- → Zn",
+            "−0,76"
+          ],
+          [
+            "Fe2+ + 2e- → Fe",
+            "−0,44"
+          ],
+          [
+            "Ni2+ + 2e- → Ni",
+            "−0,25"
+          ],
+          [
+            "Cu2+ + 2e- → Cu",
+            "+0,34"
+          ],
+          [
+            "Ag+ + e- → Ag",
+            "+0,80"
+          ]
+        ]
       }
     },
     {
@@ -1905,6 +1956,35 @@ export const unit21: ChemistryUnitSeedData = {
         "ar": "I صحيحة: في خلية التركيز يتأكسد النحاس في الجانب المخفف (Cu → Cu2+ + 2e-) فيرفع تركيز محلوله؛ وهذا القطب هو المصعد. II صحيحة: يخص E°cell الظروف القياسية (1 M) وهو صفر لنصفي خلية متماثلين؛ أما الجهد الفعلي فينشأ عن فرق التركيز بين المحلولين. III خاطئة: القطب في المحلول 1 M هو المهبط، ويترسب عليه النحاس بالتفاعل Cu2+ + 2e- → Cu فتزداد كتلته. العبارتان الصحيحتان هما I و II.",
         "zh": "I 正确：浓差电池中稀溶液一侧的 Cu 被氧化(Cu → Cu2+ + 2e-)，使本侧溶液浓度增大，该电极是负极。II 正确：E°电池 对应标准(1 M)条件，两个相同半电池的 E°电池 为零；实际电压来自两溶液的浓度差。III 错误：1 M 溶液中的电极是正极，Cu2+ + 2e- → Cu 使铜在其上析出，质量增加。正确的是 I 和 II。",
         "ku": "I rast e: di pîla tîrbûnê de Cu ya li aliyê sist oksîde dibe (Cu → Cu2+ + 2e-) û tîrbûna çareseriya xwe zêde dike; ev elektrod anod e. II rast e: E°pîl ji bo şertên standard (1 M) e û ji bo nîvşaneyên wek hev sifir e; voltaja rastîn ji ferqa tîrbûnê ya navbera her du çareseriyan tê. III şaş e: elektroda di çareseriya 1 M de katod e; bi Cu2+ + 2e- → Cu sifir li ser kom dibe û girseya wê zêde dibe. Gotinên rast I û II in."
+      },
+      "figure": {
+        "kind": "svg",
+        "width": 360,
+        "height": 210,
+        "markup": "<path d=\"M69 60 V35 H291 V60\" class=\"qf-line\"/><circle cx=\"180\" cy=\"35\" r=\"13\" class=\"qf-fill\"/><text x=\"180\" y=\"39\" text-anchor=\"middle\" class=\"qf-strong\">V</text><rect x=\"30\" y=\"95\" width=\"110\" height=\"105\" class=\"qf-fill\"/><rect x=\"31\" y=\"115\" width=\"108\" height=\"84\" class=\"qf-water\"/><rect x=\"220\" y=\"95\" width=\"110\" height=\"105\" class=\"qf-fill\"/><rect x=\"221\" y=\"115\" width=\"108\" height=\"84\" class=\"qf-water\"/><path d=\"M108 165 V82 H252 V165\" class=\"qf-line\"/><path d=\"M120 165 V94 H240 V165\" class=\"qf-line\"/><text x=\"180\" y=\"70\" text-anchor=\"middle\" class=\"qf-small\">{{bridge}}</text><rect x=\"62\" y=\"60\" width=\"14\" height=\"112\" class=\"qf-solid\"/><rect x=\"284\" y=\"60\" width=\"14\" height=\"112\" class=\"qf-solid\"/><text x=\"46\" y=\"82\" text-anchor=\"middle\" class=\"qf-big\">Cu</text><text x=\"314\" y=\"82\" text-anchor=\"middle\" class=\"qf-big\">Cu</text><text x=\"85\" y=\"192\" text-anchor=\"middle\">{{c1}}</text><text x=\"275\" y=\"192\" text-anchor=\"middle\">{{c2}}</text>",
+        "labels": {
+          "bridge": {
+            "tr": "tuz köprüsü",
+            "en": "salt bridge",
+            "de": "Salzbrücke",
+            "fr": "pont salin",
+            "ru": "солевой мостик",
+            "ar": "قنطرة ملحية",
+            "zh": "盐桥",
+            "ku": "pira xwê"
+          },
+          "c1": {
+            "tr": "Cu²⁺ (0,01 M)",
+            "en": "Cu²⁺ (0.01 M)",
+            "de": "Cu²⁺ (0,01 M)",
+            "fr": "Cu²⁺ (0,01 M)",
+            "ru": "Cu²⁺ (0,01 M)",
+            "ar": "Cu²⁺ (0.01 M)",
+            "zh": "Cu²⁺ (0.01 M)",
+            "ku": "Cu²⁺ (0,01 M)"
+          },
+          "c2": "Cu²⁺ (1 M)"
+        }
       }
     },
     {
@@ -2223,7 +2303,16 @@ export const unit21: ChemistryUnitSeedData = {
             "zh": "半反应",
             "ku": "Nîvreaksiyon"
           },
-          "E° (V)"
+          {
+            "tr": "E° (V)",
+            "en": "E° (V)",
+            "de": "E° (V)",
+            "fr": "E° (V)",
+            "ru": "E° (В)",
+            "ar": "E° (V)",
+            "zh": "E° (V)",
+            "ku": "E° (V)"
+          }
         ],
         "rows": [
           [
