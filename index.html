@@ -5,11 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <!-- MANDATORY: Declare support for both light and dark themes -->
     <meta name="color-scheme" content="light dark" />
+    <!-- Classic inline scripts stay ES5: they run before the bundle, also on engines too old for it. -->
     <script>
       try {
         document.querySelector('meta[name="color-scheme"]').content =
-          localStorage.getItem("kimya-color-scheme") ?? "light dark";
+          localStorage.getItem("kimya-color-scheme") || "light dark";
       } catch (_) {}
+    </script>
+    <script>
+      // The bundle targets Safari 15 / Chrome 87 (vite.config.ts). An older engine (typically an
+      // Android phone whose System WebView never got updated) cannot parse it and would show a
+      // blank screen, so explain what to update instead.
+      (function () {
+        try {
+          new Function('var a = {}; a?.b; a ?? 1; a ||= 1; return import("./x.js");');
+          return;
+        } catch (_) {}
+        var android = /Android/i.test(navigator.userAgent);
+        var T = {
+          tr: ['Bu cihazda Kimolab açılamıyor', android ? 'Uygulamanın kullandığı Android System WebView bileşeni çok eski. Google Play’den güncelleyip Kimolab’ı yeniden açın.' : 'Tarayıcınız bu uygulama için çok eski. Lütfen tarayıcınızı güncelleyin.', 'Google Play’de aç'],
+          en: ['Kimolab can’t run on this device', android ? 'The Android System WebView this app relies on is out of date. Update it from Google Play, then reopen Kimolab.' : 'Your browser is too old for this app. Please update your browser.', 'Open Google Play'],
+          de: ['Kimolab kann auf diesem Gerät nicht starten', android ? 'Die von der App genutzte Android System WebView ist veraltet. Aktualisiere sie bei Google Play und öffne Kimolab erneut.' : 'Dein Browser ist für diese App zu alt. Bitte aktualisiere deinen Browser.', 'Google Play öffnen'],
+          fr: ['Kimolab ne peut pas démarrer sur cet appareil', android ? 'Le composant Android System WebView utilisé par l’application est obsolète. Mettez-le à jour sur Google Play, puis rouvrez Kimolab.' : 'Votre navigateur est trop ancien pour cette application. Veuillez le mettre à jour.', 'Ouvrir Google Play'],
+          ru: ['Kimolab не запускается на этом устройстве', android ? 'Компонент Android System WebView, который использует приложение, устарел. Обновите его в Google Play и снова откройте Kimolab.' : 'Ваш браузер слишком старый для этого приложения. Обновите браузер.', 'Открыть Google Play'],
+          ar: ['لا يمكن تشغيل Kimolab على هذا الجهاز', android ? 'مكوّن Android System WebView الذي يعتمد عليه التطبيق قديم. حدّثه من Google Play ثم أعد فتح Kimolab.' : 'متصفحك قديم جدًا لهذا التطبيق. يُرجى تحديث المتصفح.', 'فتح Google Play'],
+          zh: ['Kimolab 无法在此设备上运行', android ? '应用所依赖的 Android System WebView 版本过旧。请在 Google Play 中更新后重新打开 Kimolab。' : '您的浏览器版本过旧，无法运行此应用。请更新浏览器。', '打开 Google Play'],
+          ku: ['Kimolab li ser vê cîhazê nayê vekirin', android ? 'Pêkhateya Android System WebView ya ku sepan bi kar tîne kevn e. Wê ji Google Play nû bike û Kimolab dîsa veke.' : 'Geroka te ji bo vê sepanê pir kevn e. Ji kerema xwe gerokê nû bike.', 'Google Play veke']
+        };
+        var lang = 'tr';
+        try {
+          var saved = JSON.parse(localStorage.getItem('kimya-yks-progress-v1') || '{}').language;
+          var nav = String(navigator.language || '').slice(0, 2).toLowerCase();
+          lang = T[saved] ? saved : T[nav] ? nav : 'tr';
+        } catch (_) {}
+        var t = T[lang];
+        document.addEventListener('DOMContentLoaded', function () {
+          var root = document.getElementById('root');
+          if (!root) return;
+          var link = android
+            ? '<a href="https://play.google.com/store/apps/details?id=com.google.android.webview" style="display:inline-block;margin-top:22px;padding:12px 20px;border-radius:12px;background:#2dd4bf;color:#04121a;font-weight:700;text-decoration:none">' + t[2] + '</a>'
+            : '';
+          root.innerHTML =
+            '<div dir="' + (lang === 'ar' ? 'rtl' : 'ltr') + '" style="position:fixed;top:0;right:0;bottom:0;left:0;display:flex;align-items:center;justify-content:center;padding:24px;background:#070b14;color:#e2e8f0;font:16px/1.5 sans-serif;text-align:center">' +
+            '<div style="max-width:420px"><div style="font-size:20px;font-weight:700;margin-bottom:10px">' + t[0] + '</div><div style="color:#94a3b8">' + t[1] + '</div>' + link + '</div></div>';
+        });
+      })();
     </script>
     <meta name="theme-color" content="#edf1f5" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#070b14" media="(prefers-color-scheme: dark)" />
