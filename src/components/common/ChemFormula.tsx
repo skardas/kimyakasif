@@ -1,5 +1,5 @@
 import React from 'react';
-import { tokenizeChemText, type ChemPart } from './chemNotation';
+import { tokenizeChemText, hasRtlScript, splitLtrNumberRuns, type ChemPart } from './chemNotation';
 import { typesetMath, isWholeEquation } from './mathTypeset';
 
 export { tokenizeChemText, renderChemDebug, chemPlainText } from './chemNotation';
@@ -59,15 +59,38 @@ function renderParts(parts: ChemPart[], keyPrefix: string): React.ReactNode[] {
  * ASCII arrows become → / ⇌, and every formula or reaction is wrapped in a <bdi dir="ltr"> isolate
  * so it keeps its left-to-right order inside Arabic text. See chemNotation.ts for the rules.
  */
-function renderChemNotation(rawText: string, keyPrefix = ''): React.ReactNode {
+/**
+ * Plain prose. In right-to-left text, signed numbers and degree values ("−0.76", "25 °C", "(°C)")
+ * become left-to-right isolates so the sign / degree sign stays on the correct side.
+ */
+function renderPlain(text: string, rtl: boolean, key: string): React.ReactNode {
+  if (!rtl) return <React.Fragment key={key}>{text}</React.Fragment>;
+  const pieces = splitLtrNumberRuns(text);
+  if (!pieces.some((p) => p.ltr)) return <React.Fragment key={key}>{text}</React.Fragment>;
+  return (
+    <React.Fragment key={key}>
+      {pieces.map((p, i) =>
+        p.ltr ? (
+          <bdi key={i} dir="ltr">
+            {p.text}
+          </bdi>
+        ) : (
+          <React.Fragment key={i}>{p.text}</React.Fragment>
+        )
+      )}
+    </React.Fragment>
+  );
+}
+
+function renderChemNotation(rawText: string, keyPrefix = '', rtl = false): React.ReactNode {
   const segments = tokenizeChemText(rawText);
   if (segments.length === 1 && segments[0].type === 'text') {
-    return segments[0].text;
+    return rtl ? renderPlain(segments[0].text, true, `${keyPrefix}p`) : segments[0].text;
   }
   return segments.map((seg, idx) => {
     const si = `${keyPrefix}${idx}`;
     if (seg.type === 'text') {
-      return <React.Fragment key={si}>{seg.text}</React.Fragment>;
+      return renderPlain(seg.text, rtl, si);
     }
     const tokens = seg.tokens.filter((t) => 'parts' in t);
     if (tokens.length === 1 && seg.tokens.length === 1) {
@@ -107,9 +130,9 @@ export interface FormatChemOptions {
 }
 
 /** One line of text: equation runs typeset with KaTeX, the rest with chemical notation. */
-function renderMixed(text: string, display: boolean, keyPrefix = ''): React.ReactNode {
+function renderMixed(text: string, display: boolean, keyPrefix = '', rtl = false): React.ReactNode {
   const segments = typesetMath(text, { display }).map((seg) => ({ ...seg }));
-  if (!segments.some((seg) => seg.type === 'math')) return renderChemNotation(text, keyPrefix);
+  if (!segments.some((seg) => seg.type === 'math')) return renderChemNotation(text, keyPrefix, rtl);
   // "CH4 (MA = 16)": a math run wrapped in parentheses takes them into its LTR isolate, so in
   // Arabic the brackets are not mirrored to the far end of the line or left behind at a wrap.
   const wrapped = new Set<number>();
@@ -126,7 +149,7 @@ function renderMixed(text: string, display: boolean, keyPrefix = ''): React.Reac
   return segments.map((seg, i) => {
     const key = `${keyPrefix}m${i}`;
     if (seg.type === 'text') {
-      return <React.Fragment key={key}>{renderChemNotation(seg.text, `${key}-`)}</React.Fragment>;
+      return <React.Fragment key={key}>{renderChemNotation(seg.text, `${key}-`, rtl)}</React.Fragment>;
     }
     // KaTeX output only (labels are HTML-escaped by mathTypeset); the original notation stays
     // available to assistive technology through aria-label.
@@ -156,21 +179,22 @@ export function formatChemText(rawText: string, options: FormatChemOptions = {})
   if (!rawText) {
     return rawText;
   }
+  const rtl = hasRtlScript(rawText);
   if (options.display === true) {
     const parts = rawText.split(/\s+\|\s+/).filter((p) => p.trim());
     if (parts.length > 1) {
       return parts.map((part, i) => (
         <span key={i} className="chem-eq-line">
-          {renderMixed(part.trim(), true, `l${i}-`)}
+          {renderMixed(part.trim(), true, `l${i}-`, rtl)}
         </span>
       ));
     }
-    return renderMixed(rawText, true);
+    return renderMixed(rawText, true, '', rtl);
   }
   if (options.display === 'auto' && isWholeEquation(rawText)) {
-    return renderMixed(rawText.trim(), true);
+    return renderMixed(rawText.trim(), true, '', rtl);
   }
-  return renderMixed(rawText, false);
+  return renderMixed(rawText, false, '', rtl);
 }
 
 /**
